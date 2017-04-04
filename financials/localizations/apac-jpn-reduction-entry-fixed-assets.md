@@ -1,0 +1,102 @@
+---
+title: "固定資産の圧縮記帳の設定"
+description: "この記事では、固定資産に減少エントリに関する情報を、Microsoft Dynamics 365で設定する方法を提供します。 圧縮記帳は、政府助成金を使用して取得される固定資産の特別な会計処理です。 耐用年数中に、これらの資産の法人所得税を繰延する場合に使用できます。"
+author: ShylaThompson
+manager: AnnBe
+ms.date: 04/04/2017
+ms.topic: article
+ms.prod: 
+ms.service: Dynamics365Operations
+ms.technology: 
+ms.search.form: AssetReductionEntryMassUpdate_JP, AssetReductionEntryProfile_JP
+audience: Application User
+ms.reviewer: ShylaThompson
+ms.search.scope: AX 7.0.0, Operations, Core
+ms.custom: 2871
+ms.assetid: 14d0b482-f71c-432a-905e-04e19eda4313
+ms.search.region: Japan
+ms.author: leguo
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+translationtype: Human Translation
+ms.sourcegitcommit: 6bb98cc72c2ec0c1551412dd39d5bea3ce10e2cd
+ms.openlocfilehash: 310b0830da04e1cabb3343d27e155271811e8233
+ms.lasthandoff: 03/31/2017
+
+
+---
+
+# <a name="set-up-reduction-entries-for-fixed-assets"></a>固定資産の圧縮記帳の設定
+
+この記事では、固定資産に減少エントリに関する情報を、Microsoft Dynamics 365で設定する方法を提供します。 圧縮記帳は、政府助成金を使用して取得される固定資産の特別な会計処理です。 耐用年数中に、これらの資産の法人所得税を繰延する場合に使用できます。 
+
+政府助成金を使用して固定資産を取得すると、助成は非課税の収益として処理されます。 ただし、すべての政府補助金を収益として説明すると、結果として法人所得税が大きくなり、補助金の助成効果が減少します。 したがって、圧縮記帳と呼ばれる特殊な会計処理が許可されています。 基本的に、圧縮記帳は、取得した固定資産の耐用年数中の法人所得税を延期します。 2 種類の会計処理が許可されています。
+
+-   **直接オフ メソッド** – 政府助成金の金額は、固定資産の取得原価から直接控除されます。
+-   **積立メソッド** – 政府助成金の金額は、貸借対照表の株主資本側面の個別の値として管理されます。 政府助成金の金額は、固定資産の正味簿価額に影響を与えません。
+
+圧縮記帳の固定資産転記プロファイルを設定できます。 または**処分**タイプのトランザクションの勘定を設定できます。 圧縮記帳の固定資産を転記する時、トランザクション金額はこれらの勘定から取得されます。
+
+## <a name="prerequisites"></a>必要条件
+次の表に、開始する前に準備が整っている必要のある前提条件を示します。
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>カテゴリ</th>
+<th>前提条件</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>国/地域</td>
+<td>法人の基本住所が日本である必要があります。 または、法人のローカライズされた機能の地域が日本である必要があります。</td>
+</tr>
+<tr class="even">
+<td>関連する設定作業</td>
+<td><ul>
+<li>基本的な固定資産パラメータを、既定の書籍などの理由コードの設定した場合、ページの番号順序、ように <strong>固定資産パラメータ</strong> なって。</li>
+<li>固定資産グループを<strong>固定資産グループ</strong>ページで定義します。</li>
+<li>減価償却量を転記するための、通貨および丸めルールを設定します。</li>
+<li><strong>固定資産の場所</strong>ページで固定資産の場所を設定します。</li>
+<li>減価償却の会計カレンダーを設定し、元帳にカレンダーを割り当てます。</li>
+<li>固定資産レコードが作成済みであることを確認します。</li>
+<li>ページの固定資産の帳簿を設定して <strong>帳簿 </strong>ください。</li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+
+、Microsoft Dynamics 365または既存の固定資産機能の先頭に減少エントリ機能を実行します。 圧縮記帳を使用するには、既存の固定資産の機能の使用に加えて次の作業を行う必要があります。
+
+### <a name="assigning-a-reduction-entry-document-to-a-fixed-asset-book"></a>固定資産帳簿に減少エントリ ドキュメントの割り当て
+
+**固定資産**ページを使用して固定資産に圧縮記帳ドキュメントを割り当てることができます。
+
+### <a name="assigning-a-reduction-entry-document-to-multiple-fixed-asset-books"></a>複数の固定資産に減少エントリ ドキュメントを割り当てると、引当します
+
+**圧縮記帳の一括更新**ページを使用して、圧縮記帳ドキュメントを複数の固定資産に割り当てます。
+
+### <a name="setting-up-a-fixed-asset-posting-profile-for-reduction-entries"></a>圧縮記帳への固定資産転記プロファイルの設定
+
+**固定資産転記プロファイル** ページを使用して、圧縮記帳の転記プロファイルを設定します。 また、圧縮記帳に適用された資産を減価償却する、転記プロファイルを設定できます。
+
+## <a name="technical-information-for-system-administrators"></a>システム管理者向け技術情報
+このタスクを完了するために使用するページに対するアクセス権限がない場合は、システム管理者に連絡し、次の表に示される情報を提供します。
+
+| カテゴリ           | 前提条件                                                                                                                                               |
+|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| コンフィギュレーション キー | ** **資産コンフィギュレーション キーが**データ ディクショナリ** **コンフィギュレーション キーで使用できる** &gt; ことを確認してくださいアプリケーション オブジェクト ツリー内のノード。 |
+
+
+
+<a name="see-also"></a>参照
+--------
+
+[設定されたMicrosoft Dynamics AX 2012 R3の固定資産のローカリゼーション機能]日本] (https://mbs.microsoft.com/partnersource/global/deployment/documentation/white-papers/msdAX2012R3JapanFixedAssets)
+
+
