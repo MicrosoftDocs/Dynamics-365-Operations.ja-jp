@@ -41,14 +41,14 @@ Dynamics 365 for Operationsでは、(POS)のPOSデバイスの製品の推奨事
 
 [![のproddetails] (。/media/proddetails.png) ] (。/media/proddetails.png) 
 
-1.  **トランザクション: **ページ
+2.  **トランザクション: **ページ
 
 -   ベスト プラクティス エンジンは、全体の品目の一覧に基づいて品目が表示されます。
 -   店舗の関連のトランザクションに顧客を追加すると、ベスト プラクティス エンジンは、の顧客のトランザクション履歴と品目の一覧を使用して個人のベスト プラクティスを提供します。
 
 **メモ**のベスト プラクティスを表示する**トランザクション**ページ、小売業者Dynamics 365 for Operationsの画面レイアウトを更新する必要があります。 **ベスト プラクティス**制御が**トランザクション**ページになる必要があります。 [![] transactionscreenmultipleproductslargemessengersbag-5 (。/media/transactionscreenmultipleproductslargemessengersbag-5.jpg) ] (。/media/transactionscreenmultipleproductslargemessengersbag-5.jpg) 
 
-1.  **顧客詳細**ページ:
+3.  **顧客詳細**ページ:
     -   ベスト プラクティス エンジンは、ユーザーidに基づいて品目および顧客の欲しいWeight品目のリストが表示されます。
 
 [![のcustomerdetailsrecommendations] (。/media/customerdetailsrecommendations.png) ] (。/media/customerdetailsrecommendations.png) 
