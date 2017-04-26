@@ -55,3 +55,5 @@ ms.lasthandoff: 04/12/2017
 ## <a name="elearning-courses"></a>eラーニング コース
 Microsoft Dynamics 365 for Operations方法については、トレーニングを参照してください<a href="https://mbspartner.microsoft.com/AX/LearningPlans/">Microsoft Dynamics学習ポータル</a>します。 (CustomerSourceアカウントが必要です) 
 
+
+

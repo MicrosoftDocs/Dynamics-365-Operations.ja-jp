@@ -75,3 +75,4 @@
 # その他のリソース
 ## [工程の用語集のdynamics 365](get-started/glossary.md)
 ## [新規または変更](/dynamics365/operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/operations/toc.json)
+

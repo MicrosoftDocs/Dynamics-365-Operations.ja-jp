@@ -98,3 +98,5 @@ Microsoft Dynamics AX は、アメリカ障害者法 (Americans with Disabilitie
 -   [View and evaluate the results of a questionnaire](evaluate-questionnaire-results.md)
 
 
+
+

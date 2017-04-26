@@ -27,6 +27,9 @@ ms.lasthandoff: 04/12/2017
 
 # <a name="cash-and-bank-management-home-page"></a>現金および銀行管理のホームページ
 
+[!include[banner](../includes/banner.md)]
+
+
 現金および銀行管理を使用し、これらの銀行口座に関連付けられた法人の銀行口座および財務証書を管理できます。 
 
 これらの証書には、預金伝票、小切手、受取手形、および支払手形が含まれます。 口座取引明細書を調整したり、標準レポートに銀行データを印刷できます。
@@ -69,4 +72,6 @@ ms.lasthandoff: 04/12/2017
 -   [Scenario: Settle a partial customer payment that has discounts on credit notes](../accounts-receivable/settle-partial-customer-payment-discounts-credit-notes.md)
 -   [Scenario: Settle a partial customer payment that has multiple discount periods](../accounts-receivable/settle-partial-customer-payment-multiple-discount-periods.md)
 -   [シナリオ: 複数の請求書をそのコンポーネントの決済する場合でも、一つの顧客支払を複数の割引期間使用して、](../accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
+
+
 
