@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="depreciation-methods-and-conventions"></a>減価償却方法
 
+[!include[banner](../includes/banner.md)]
+
+
 この記事は、Microsoft Dynamics AX にサポートされた減価償却方法および減価償却方式の概要を提供します。
 
 さまざまな減価償却方法を選択できます。 減価償却方法の目的は、固定資産の減価償却が可能な値を各会計年度期間に配賦することです。 固定資産の減価償却が可能な値は、取得価格から仕損価格 (存在する場合) を差し引いた値です。 
@@ -66,26 +69,27 @@ ms.lasthandoff: 03/31/2017
 <a name="see-also"></a>参照
 --------
 
-[Fixed asset depreciation](fixed-asset-depreciation.md)
+[固定資産減価償却](fixed-asset-depreciation.md)
 
-[Straight line service life depreciation](Straight-line-service-life-depreciation.md)
+[直線償却耐用年数](Straight-line-service-life-depreciation.md)
 
-[Reducing balance depreciation](reduce-balance-depreciation.md)
+[減価償却費残高の削減](reduce-balance-depreciation.md)
 
-[Manual depreciation](manual-depreciation.md)
+[手動減価償却](manual-depreciation.md)
 
-[Factor depreciation](factor-depreciation.md)
+[係数減価償却](factor-depreciation.md)
 
-[Consumption depreciation](consumption-depreciation.md)
+[消費減価償却](consumption-depreciation.md)
 
-[Straight line life remaining depreciation](straight-line-life-remaining-depreciation.md)
+[直線償却耐用年数](straight-line-life-remaining-depreciation.md)
 
-[逓減残高による減価償却125日] (125パーセント減らdepreciation.md残高) 
+[125% 逓減残高による減価償却](125-percent-reducing-balance-depreciation.md)
 
-[逓減残高による減価償却150日] (150パーセント減らdepreciation.md残高) 
+[150% 逓減残高による減価償却](150-percent-reducing-balance-depreciation.md)
 
-[逓減残高による減価償却175日] (175パーセント減らdepreciation.md残高) 
+[175% 逓減残高による減価償却](175-percent-reducing-balance-depreciation.md)
 
-[200 percent reducing balance depreciation](200-percent-reducing-balance-depreciation.md)
+[200% 逓減残高による減価償却](200-percent-reducing-balance-depreciation.md)
+
 
 

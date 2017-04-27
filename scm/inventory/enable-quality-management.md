@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="quality-management-overview"></a>品質管理の概要
 
+[!include[banner](../includes/banner.md)]
+
+
 この記事は、Microsoft Dynamics 365 for Operations で品質管理を使用してサプライ チェーン内の製品の品質を向上させる方法について説明します。
 
 品質管理で、不適合製品を処理する際に原産地に関係なく応答時間を管理することができます。 診断タイプは修正レポートにリンクされているため、Microsoft Dynamics 365 for Operations では、問題を修正して再発を防ぐためのタスクをスケジュールできます。
@@ -344,7 +347,7 @@ ms.lasthandoff: 03/31/2017
 </tr>
 <tr class="even">
 <td>テスト変数の結果</td>
-<td>定性試験に関連付けられているテスト変数について、発生する可能性があるテスト結果を設定、編集、および表示するには、このページを使用します。 それぞれの結果について、<strong>合格</strong>または<strong>不合格</strong>のステータスを割り当てます。 <strong>テスト</strong> ページで定義した各定性試験に対する変数とその結果を定義する必要があります。  (定性試験に、テスト タイプがページに <strong>テスト</strong> 設定されます。) 個々の <strong>テスト グループ</strong> 定性試験のテスト変数、既定の結果を割り当てる場合でも、ページを使用します。</td>
+<td>定性試験に関連付けられているテスト変数について、発生する可能性があるテスト結果を設定、編集、および表示するには、このページを使用します。 それぞれの結果について、<strong>合格</strong>または<strong>不合格</strong>のステータスを割り当てます。 <strong>テスト</strong> ページで定義した各定性試験に対する変数とその結果を定義する必要があります。 (定性試験の場合、テスト タイプは、<strong>テスト</strong> ページで [<strong>オプション</strong>] に設定されます)。個々の定性試験にテスト変数と既定の結果を割り当てるには、<strong>テスト グループ</strong> ページを使用します。</td>
 <td>クッキーを製造しているある製造会社では、完成した製品の検査テストを採用しています。 この検査テストには、複数の変数があります。 1 つ目の変数は味で、この変数に対して発生する可能性がある結果は、良および不良です。 2 つ目の変数は色で、発生する可能性がある結果は、濃すぎる、薄すぎる、および適正です。 それぞれの結果に<strong>合格</strong>または<strong>不合格</strong>のステータスが割り当てられています。 各変数の検査テスト時に、検査官はいずれかの結果を選択することによってテスト結果を報告します。</td>
 </tr>
 </tbody>
@@ -355,8 +358,10 @@ ms.lasthandoff: 03/31/2017
 <a name="see-also"></a>参照
 --------
 
-[Quality management processes](quality-management-processes.md)
+[品質管理プロセス](quality-management-processes.md)
 
 [不適合管理の有効化](enable-nonconformance-management.md)
+
+
 
 

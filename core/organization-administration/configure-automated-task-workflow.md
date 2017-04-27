@@ -1,5 +1,5 @@
 ---
-title: "作業の現在の自動化タスクを設定します。"
+title: "ワークフローの自動化タスクのコンフィギュレーション"
 description: "このトピックでは、自動化タスクのプロパティをコンフィギュレーションする方法について説明します。"
 author: sericks007
 manager: AnnBe
@@ -24,7 +24,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="configure-an-automated-task-in-a-workflow"></a>作業の現在の自動化タスクを設定します。
+# <a name="configure-an-automated-task-in-a-workflow"></a>ワークフローの自動化タスクのコンフィギュレーション
+
+[!include[banner](../includes/banner.md)]
+
 
 このトピックでは、自動化タスクのプロパティをコンフィギュレーションする方法について説明します。
 
@@ -92,16 +95,18 @@ ms.lasthandoff: 03/31/2017
     </tr>
     <tr class="odd">
     <td>ユーザー</td>
-    <td>工程のユーザーの特定のMicrosoft Dynamics 365</td>
+    <td>特定の Microsoft Dynamics 365 for Operations ユーザー</td>
     <td><ol>
     <li>[<strong>ユーザー</strong>] を選択したのち、[<strong>ユーザー</strong>] タブをクリックします。</li>
-    <li><strong>使用できるユーザー</strong> リストは、工程のユーザーのすべてのDynamics 365が含まれます。 通知の送信先のユーザーを選択して、それらのユーザーを [<strong>選択されたユーザー</strong>] リストに移動します。</li>
+    <li>[<strong>利用可能なユーザー</strong>]: 一覧には、すべての Dynamics 365 for Operations ユーザーが含まれます。 通知の送信先のユーザーを選択して、それらのユーザーを [<strong>選択されたユーザー</strong>] リストに移動します。</li>
     </ol></td>
     </tr>
     </tbody>
     </table>
 
 8.  ステップ 2 で選択したイベントごとに、ステップ 3～7 を繰り返します。
+
+
 
 
 

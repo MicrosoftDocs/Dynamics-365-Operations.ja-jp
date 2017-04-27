@@ -1,6 +1,6 @@
 ---
-title: "新しいタスク ガイド (2016年12月2) "
-description: "このWikiでは、2016年12月2におけるMicrosoft BPMのライブラリにリリースされたタスク ガイドを一覧表示します。  発行されたライブラリには、工程 (2016年12月2) 開始、Microsoft Dynamics 365の (2016年12月2) APQCで統一されるライブラリが含まれます。"
+title: "新しいタスク ガイド (2016 年 2 月)"
+description: "この Wiki には、2016 年 2 月現在に Microsoft BPM ライブラリにリリースされたタスク ガイドが掲載されています。  発行されたライブラリには、Microsoft Dynamics 365 for Operations 用の APQC 統合ライブラリ (2016 年 2 月)、および「作業の開始」(2016 年 2 月) が含まれます。"
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,14 +24,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="new-task-guides-february-2016"></a>新しいタスク ガイド (2016年12月2) 
+# <a name="new-task-guides-february-2016"></a>新しいタスク ガイド (2016 年 2 月)
 
-このWikiでは、2016年12月2におけるMicrosoft BPMのライブラリにリリースされたタスク ガイドを一覧表示します。  発行されたライブラリには、工程 (2016年12月2) 開始、Microsoft Dynamics 365の (2016年12月2) APQCで統一されるライブラリが含まれます。
+この Wiki には、2016 年 2 月現在に Microsoft BPM ライブラリにリリースされたタスク ガイドが掲載されています。  発行されたライブラリには、Microsoft Dynamics 365 for Operations 用の APQC 統合ライブラリ (2016 年 2 月)、および「作業の開始」(2016 年 2 月) が含まれます。
 
-<a name="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-365-for-operations"></a>工程のMicrosoft Dynamics 365の (2016年12月2) APQCで統一されるライブラリのガイドに作業。
+<a name="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-365-for-operations"></a>Microsoft Dynamics 365 for Operations 用の APQC 統合ライブラリ (2016 年 2 月) に含まれるタスク ガイド
 ---------------------------------------------------------------------------------
 
- (2016年12月2) APQCで統一されるライブラリでは、7.0.0リリースのDynamics 365 for Operationsヘルプに使用する予定される作業ガイドが含まれます。 これらのタスク ガイドの"ローカライズ バージョンが必要な場合は、工程に対してMicrosoft Dynamics 365の場合は (2016年12月5) APQCで統一されるライブラリで使用できます。 このガイドの"ライブラリにヘルプ システムに接続する方法の詳細については、" "を参照してください[ヘルプ]を起動します ([overview.mdと)。
+APQC 統合ライブラリ (2016 年 2 月) には、Dynamics 365 for Operations 7.0.0 リリースのヘルプの使用を想定したタスク ガイドが含まれています。 これらのタスク ガイドのローカライズされたバージョンが必要な場合、Microsoft Dynamics 365 for Operations 用の APQC 統合ライブラリ (2016 年 5 月) が利用可能です。 タスク ガイド ライブラリのヘルプ システムを接続する方法の詳細については、「[ヘルプの入門](help-overview.md)」を参照してください。
 
 ### <a name="accounts-payable"></a>買掛金管理
 
@@ -531,7 +531,7 @@ ms.lasthandoff: 03/31/2017
 | 製品コンフィギュレーション モデルへの計算の追加    | グローバル             |
 | 製品コンフィギュレーション モデルの承認                 | グローバル             |
 | リリース済み製品マスターの基本設定の完了 | グローバル             |
-| 終了.で。\financial-dimensions\dimension-based製品のマスタを作成します。               | グローバル             |
+| \financial-dimensions\dimension-based 製品マスターの作成               | グローバル             |
 | 製品分類の階層の作成          | グローバル             |
 | 製品コンフィギュレーション モデルの作成                  | グローバル             |
 | 製品マスターの作成                               | グローバル             |
@@ -544,7 +544,7 @@ ms.lasthandoff: 03/31/2017
 | 製品コンフィギュレーション モデルの BOM を管理        | グローバル             |
 | 製品モデルのルートの管理                    | グローバル             |
 | リリース済製品の管理                              | グローバル             |
-| 終了.で。\financial-dimensions\dimension-based製品のマスタをリリースします。              | グローバル             |
+| \financial-dimensions\dimension-based 製品マスターのリリース              | グローバル             |
 | 製品モデルのためのデータの転送                      | グローバル             |
 
  
@@ -718,10 +718,10 @@ ms.lasthandoff: 03/31/2017
 <a name="see-also"></a>参照
 --------
 
-[新規または更新タスク ガイド (2016年12月5) ] ([更新タスク ガイド使用している場合2016.md) 
+[新規または更新されたタスク ガイド (2016 年 5 月)](new-updated-task-guides-available-may-2016.md)
 
-[新規または更新タスク ガイド (2016年12月8) ] ([更新タスク ガイド使用できます尊厳2016.md) 
+[新規または更新されたタスク ガイド (2016 年 8 月)](new-updated-task-guides-available-august-2016.md)
 
-[新規または更新タスク ガイド (2016年12月11) ]新しいタスク (ガイド月11 2016.md) 
+[新規または更新されたタスク ガイド (2016 年 11 月)](new-task-guides-november-2016.md)
 
 

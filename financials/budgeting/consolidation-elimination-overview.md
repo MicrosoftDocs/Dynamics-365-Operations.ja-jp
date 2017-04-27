@@ -86,5 +86,5 @@ ms.lasthandoff: 03/31/2017
 [**会社の残高のエクスポート**] オプションを使用して、1 つのインスタンスからエクスポートし、次に他のインスタンスで [**インポートして連結**] オプションを使用してデータを連結できます。
 
 
-詳細については、" \finanicials\general-ledger\currency-revaluation-consolidation-company ([]) 連結会社の通貨のrevalution。
+詳細については、「[Currency revalution in a consolidation company](\finanicials\general-ledger\currency-revaluation-consolidation-company)」を参照してください。
 

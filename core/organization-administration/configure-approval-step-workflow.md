@@ -1,5 +1,5 @@
 ---
-title: "作業の現在の承認ステップをコンフィギュレーションします。"
+title: "ワークフローでの承認ステップのコンフィギュレーション"
 description: "このトピックでは、承認ステップのプロパティをコンフィギュレーションする方法について説明します。"
 author: sericks007
 manager: AnnBe
@@ -24,7 +24,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="configure-an-approval-step-in-a-workflow"></a>作業の現在の承認ステップをコンフィギュレーションします。
+# <a name="configure-an-approval-step-in-a-workflow"></a>ワークフローでの承認ステップのコンフィギュレーション
+
+[!include[banner](../includes/banner.md)]
+
 
 このトピックでは、承認ステップのプロパティをコンフィギュレーションする方法について説明します。
 
@@ -124,10 +127,10 @@ ms.lasthandoff: 03/31/2017
     </tr>
     <tr class="even">
     <td>ユーザー</td>
-    <td>工程のユーザーの特定のMicrosoft Dynamics 365</td>
+    <td>特定の Microsoft Dynamics 365 for Operations ユーザー</td>
     <td><ol>
     <li>[<strong>ユーザー</strong>] を選択したのち、[<strong>ユーザー</strong>] タブをクリックします。</li>
-    <li><strong>使用できるユーザー</strong> リストは、工程のユーザーのすべてのDynamics 365が含まれます。 ステップを割り当てるユーザーを選択し、そのユーザーを [<strong>選択されたユーザー</strong>] リストに移動します。</li>
+    <li>[<strong>利用可能なユーザー</strong>]: 一覧には、すべての Dynamics 365 for Operations ユーザーが含まれます。 ステップを割り当てるユーザーを選択し、そのユーザーを [<strong>選択されたユーザー</strong>] リストに移動します。</li>
     </ol></td>
     </tr>
     </tbody>
@@ -229,10 +232,10 @@ ms.lasthandoff: 03/31/2017
     </tr>
     <tr class="odd">
     <td>ユーザー</td>
-    <td>工程のユーザーの特定のDynamics 365</td>
+    <td>特定の Dynamics 365 for Operations ユーザー</td>
     <td><ol>
     <li>[<strong>ユーザー</strong>] を選択したのち、[<strong>ユーザー</strong>] タブをクリックします。</li>
-    <li><strong>使用できるユーザー</strong> リストは、工程のユーザーのすべてのDynamics 365が含まれます。 ドキュメントをエスカレートするユーザーを選択し、そのユーザーを [<strong>選択されたユーザー</strong>] リストに移動します。</li>
+    <li>[<strong>利用可能なユーザー</strong>]: 一覧には、すべての Dynamics 365 for Operations ユーザーが含まれます。 ドキュメントをエスカレートするユーザーを選択し、そのユーザーを [<strong>選択されたユーザー</strong>] リストに移動します。</li>
     </ol></td>
     </tr>
     </tbody>
@@ -247,6 +250,8 @@ ms.lasthandoff: 03/31/2017
 
 5.  エスカレーション パスに追加するユーザーごとに、ステップ 3～4 を繰り返します。 ユーザーの順序は、変更できます。
 6.  エスカレーション パスに含まれるユーザーが、割り当てられた時間内に対応しない場合、システムによってドキュメントが自動的に処理されます。 システムによる処理を指定するには、[**アクション**] 行を選択し、[**アクションの終了**] タブでアクションを選択します。
+
+
 
 
 

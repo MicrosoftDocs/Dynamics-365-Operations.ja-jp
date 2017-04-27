@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="default-offset-accounts-for-vendor-invoice-journals-and-invoice-approval-journals"></a>仕入先請求仕訳帳および請求書承認仕訳帳の既定の相手勘定
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 既定の相手勘定は、次の仕入先請求仕訳帳のページで使用されます:
@@ -92,6 +95,8 @@ ms.lasthandoff: 03/31/2017
 </tr>
 </tbody>
 </table>
+
+
 
 
 

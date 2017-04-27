@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="sales-tax-calculation-methods-in-the-origin-field"></a>[発生元] フィールドでの売上税計算方法
 
+[!include[banner](../includes/banner.md)]
+
+
 この記事は、[売上税コードの値] ページの [発生元] フィールドのオプション、および売上税が選択された売上税コードのオプションに基づいて計算される方法を説明します。
 
 [売上税コード] ページで作成する売上税コードごとに、税基準額に適用する計算方法を [発生元] フィールドで選択する必要があります。
@@ -124,5 +127,7 @@ SALESTAX: [発生元] = [正味金額の割合]。[売上税の前に計算] オ
 [[基準金額] および [計算方法] フィールドに基づいた、売上税の税率の決定](marginal-base-field.md)
 
 [売上税コードの合計額と間隔計算オプション](whole-amount-interval-options-sales-tax-codes.md)
+
+
 
 

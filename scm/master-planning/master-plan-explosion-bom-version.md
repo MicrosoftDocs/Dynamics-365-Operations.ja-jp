@@ -1,6 +1,6 @@
 ---
-title: "BOMバージョンの展開"
-description: "この記事では、部品表の(BOM)バージョンのBOMを含むマスタ プランのシナリオを説明します。"
+title: "BOM バージョンの展開"
+description: "この記事では、部品表 (BOM) のバージョンの展開を含むマスター プランのシナリオを説明します。"
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,9 +27,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="explosion-of-a-bom-version"></a>BOMバージョンの展開
+# <a name="explosion-of-a-bom-version"></a>BOM バージョンの展開
 
-この記事では、部品表の(BOM)バージョンのBOMを含むマスタ プランのシナリオを説明します。
+[!include[banner](../includes/banner.md)]
+
+
+この記事では、部品表 (BOM) のバージョンの展開を含むマスター プランのシナリオを説明します。
 
 BOM バージョンの需要展開は、特定サイト (および場合によっては特定倉庫) における各 BOM 明細行品目に対する需要を作ります。 サイト固有 BOM では、各 BOM 明細行に対して、特定の倉庫が定義される可能性があります。 また、各 BOM 明細行に対し、倉庫が必要かどうかが品目の分析コード設定によって決まります。 その後、結果としての各 BOM 明細行品目に対する需要は、追加の需要展開の開始点となります。 このマスター計画シナリオの前提条件を次に示します。
 
@@ -41,8 +44,10 @@ BOM バージョンの需要展開は、特定サイト (および場合によ�
 <a name="see-also"></a>参照
 --------
 
-- BOMバージョンを決定するかどのように[マスター プラン] (マスター プランbomバージョンdetermined.md) 
+[マスター プラン - BOM バージョンを決定する方法](master-plan-bom-version-determined.md)
 
-[Master planning and multisite functionality](master-plan-multisite-functionality.md)
+[マスター プランとマルチサイト機能](master-plan-multisite-functionality.md)
+
+
 
 

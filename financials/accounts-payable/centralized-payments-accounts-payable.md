@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="centralized-payments-for-accounts-payable"></a>買掛金勘定の集中支払
 
+[!include[banner](../includes/banner.md)]
+
+
 複数の法人を含む組織では、すべての支払を処理する単一の法人を使用して支払を作成および管理できます。 したがって、同じ支払を複数の法人に入力する必要はありません。 この記事は、集中支払に対する転記がさまざまなシナリオで処理される方法の例を示します。
 
 複数の法人を含む組織では、すべての支払を処理する法人を使用して支払を作成および管理できます。 したがって、同じ支払を複数の法人に入力する必要はありません。 また、組織では、支払プロセスが合理化されるため、時間を節約できます。
@@ -66,14 +69,14 @@ Fabrikam East には、仕入先 100 の Fourth Coffee に対する未処理請�
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Fabrikam East の請求書で決済される Fabrikam の支払
 
-**Fabrikam posting**
+**Fabrikam の転記**
 
 | 勘定                           | 借方金額 | 貸方金額 |
 |-----------------------------------|--------------|---------------|
 | Fabrikam East 貸し (Fabrikam) | 600.00       |               |
 | 買掛金 (Fabrikam)       |              | 600.00        |
 
-**Fabrikam East posting**
+**Fabrikam East の転記**
 
 | 勘定                          | 借方金額 | 貸方金額 |
 |----------------------------------|--------------|---------------|
@@ -99,14 +102,14 @@ Fabrikam East には、仕入先 100 の Fourth Coffee に対する未処理請�
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Fabrikam East の請求書で決済される Fabrikam の支払
 
-**Fabrikam posting**
+**Fabrikam の転記**
 
 | 勘定                           | 借方金額 | 貸方金額 |
 |-----------------------------------|--------------|---------------|
 | Fabrikam East 貸し (Fabrikam) | 580.00       |               |
 | 買掛金 (Fabrikam)       |              | 580.00        |
 
-**Fabrikam East posting**
+**Fabrikam East の転記**
 
 | 勘定                          | 借方金額 | 貸方金額 |
 |----------------------------------|--------------|---------------|
@@ -125,35 +128,35 @@ Fabrikam East には、仕入先 100 の Fourth Coffee に対する未処理請�
 
 | 勘定                          | 借方金額            | 貸方金額           |
 |----------------------------------|-------------------------|-------------------------|
-| 経費 (Fabrikam East)          | 600.00 EUR/723.72 USD)  |                         |
-| 買掛金 (Fabrikam East) |                         | 600.00 EUR/723.72 USD)  |
+| 経費 (Fabrikam East)          | 600.00 EUR / 723.72 USD |                         |
+| 買掛金 (Fabrikam East) |                         | 600.00 EUR / 723.72 USD |
 
 ### <a name="payment-is-generated-and-posted-in-fabrikam-for-fabrikam-vendor-3004"></a>Fabrikam の仕入先 3004 に対して Fabrikam で生成および転記される支払
 
 | 勘定                     | 借方金額            | 貸方金額           |
 |-----------------------------|-------------------------|-------------------------|
-| 買掛金 (Fabrikam) | 600.00 EUR/736.62 USD)  |                         |
-| 現金 (Fabrikam)             |                         | 600.00 EUR/736.62 USD)  |
+| 買掛金 (Fabrikam) | 600.00 EUR / 736.62 USD |                         |
+| 現金 (Fabrikam)             |                         | 600.00 EUR / 736.62 USD |
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Fabrikam East の請求書で決済される Fabrikam の支払
 
-**Fabrikam posting**
+**Fabrikam の転記**
 
 | 勘定                           | 借方金額            | 貸方金額           |
 |-----------------------------------|-------------------------|-------------------------|
-| Fabrikam East 貸し (Fabrikam) | 600.00 EUR/736.62 USD)  |                         |
-| 買掛金 (Fabrikam)       |                         | 600.00 EUR/736.62 USD)  |
-| 実現損失 (Fabrikam)          | 0.00 EUR/12.90 USD)     |                         |
-| Fabrikam East 貸し (Fabrikam) |                         | 0.00 EUR/12.90 USD)     |
+| Fabrikam East 貸し (Fabrikam) | 600.00 EUR / 736.62 USD |                         |
+| 買掛金 (Fabrikam)       |                         | 600.00 EUR / 736.62 USD |
+| 実現損失 (Fabrikam)          | 0.00 EUR / 12.90 USD    |                         |
+| Fabrikam East 貸し (Fabrikam) |                         | 0.00 EUR / 12.90 USD    |
 
-**Fabrikam East posting**
+**Fabrikam East の転記**
 
 | 勘定                          | 借方金額            | 貸方金額           |
 |----------------------------------|-------------------------|-------------------------|
-| 買掛金 (Fabrikam East) | 600.00 EUR/736.62 USD)  |                         |
-| Fabrikam 借り (Fabrikam East)  |                         | 600.00 EUR/736.62 USD)  |
-| Fabrikam 借り (Fabrikam East)  | 0.00 EUR/12.90 USD)     |                         |
-| 買掛金 (Fabrikam East) |                         | 0.00 EUR/12.90 USD)     |
+| 買掛金 (Fabrikam East) | 600.00 EUR / 736.62 USD |                         |
+| Fabrikam 借り (Fabrikam East)  |                         | 600.00 EUR / 736.62 USD |
+| Fabrikam 借り (Fabrikam East)  | 0.00 EUR / 12.90 USD    |                         |
+| 買掛金 (Fabrikam East) |                         | 0.00 EUR / 12.90 USD    |
 
 ## <a name="example-4-vendor-payment-of-invoice-from-another-legal-entity-with-cash-discount-and-realized-exchange-rate-loss"></a>例 4 : 現金割引と実現為替差損のある別法人からの請求書の仕入先支払
 Fabrikam East には、仕入先 100 の Fourth Coffee に対する未処理請求書があります。 請求書には現金割引があり、売上税トランザクションが生成されます。 Fabrikam は、Fabrikam 仕入先 3004 の Fourth Coffee に対する支払を転記します。 支払は、未処理の Fabrikam East の請求書で決済されます。 決済プロセスの間に、為替差損トランザクションが生成されます。 現金割引が請求の法人 (Fabrikam East) に転記され、通貨為替差損が支払の法人 (Fabrikam) に転記されます。
@@ -165,41 +168,41 @@ Fabrikam East には、仕入先 100 の Fourth Coffee に対する未処理請�
 
 | 勘定                          | 借方金額            | 貸方金額           |
 |----------------------------------|-------------------------|-------------------------|
-| 経費 (Fabrikam East)          | 564.07 EUR/680.38 USD)  |                         |
-| 売上税 (Fabrikam East)        | 35.93 EUR/43.34 USD)    |                         |
-| 買掛金 (Fabrikam East) |                         | 600.00 EUR/723.72 USD)  |
+| 経費 (Fabrikam East)          | 564.07 EUR / 680.38 USD |                         |
+| 売上税 (Fabrikam East)        | 35.93 EUR / 43.34 USD   |                         |
+| 買掛金 (Fabrikam East) |                         | 600.00 EUR / 723.72 USD |
 
 ### <a name="payment-is-generated-and-posted-in-fabrikam-for-vendor-3004"></a>仕入先 3004 に対して Fabrikam で生成および転記される支払
 
 | 勘定                     | 借方金額            | 貸方金額           |
 |-----------------------------|-------------------------|-------------------------|
-| 買掛金 (Fabrikam) | 588.72 EUR/722.77 USD)  |                         |
-| 現金 (Fabrikam East)        |                         | 588.72 EUR/722.77 USD)  |
+| 買掛金 (Fabrikam) | 588.72 EUR / 722.77 USD |                         |
+| 現金 (Fabrikam East)        |                         | 588.72 EUR / 722.77 USD |
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Fabrikam East の請求書で決済される Fabrikam の支払
 
-**Fabrikam posting**
+**Fabrikam の転記**
 
 | 勘定                           | 借方金額            | 貸方金額           |
 |-----------------------------------|-------------------------|-------------------------|
-| Fabrikam East 貸し (Fabrikam) | 588.72 EUR/722.77 USD)  |                         |
-| 買掛金 (Fabrikam)       |                         | 588.72 EUR/722.77 USD)  |
-| 実現損失 (Fabrikam)          | 0.00 EUR/12.66 USD)     |                         |
-| Fabrikam East 貸し (Fabrikam) |                         | 0.00 EUR/12.66 USD)     |
+| Fabrikam East 貸し (Fabrikam) | 588.72 EUR / 722.77 USD |                         |
+| 買掛金 (Fabrikam)       |                         | 588.72 EUR / 722.77 USD |
+| 実現損失 (Fabrikam)          | 0.00 EUR / 12.66 USD    |                         |
+| Fabrikam East 貸し (Fabrikam) |                         | 0.00 EUR / 12.66 USD    |
 
-**Fabrikam East posting**
+**Fabrikam East の転記**
 
 | 勘定                          | 借方金額            | 貸方金額           |
 |----------------------------------|-------------------------|-------------------------|
-| 買掛金 (Fabrikam East) | 588.72 EUR/722.77 USD)  |                         |
-| Fabrikam 借り (Fabrikam East)  |                         | 588.72 EUR/722.77 USD)  |
-| Fabrikam 借り (Fabrikam East)   | 0.00 EUR/12.66 USD)     |                         |
-| 買掛金 (Fabrikam East) |                         | 0.00 EUR/12.66 USD)     |
-| 買掛金 (Fabrikam East) | 11.28 EUR/13.61 USD)    |                         |
-| 現金割引 (Fabrikam East)    |                         | 11.28 EUR/13.61 USD)    |
+| 買掛金 (Fabrikam East) | 588.72 EUR / 722.77 USD |                         |
+| Fabrikam 借り (Fabrikam East)  |                         | 588.72 EUR / 722.77 USD |
+| Fabrikam 借り (Fabrikam East)   | 0.00 EUR / 12.66 USD    |                         |
+| 買掛金 (Fabrikam East) |                         | 0.00 EUR / 12.66 USD    |
+| 買掛金 (Fabrikam East) | 11.28 EUR / 13.61 USD   |                         |
+| 現金割引 (Fabrikam East)    |                         | 11.28 EUR / 13.61 USD   |
 
 ## <a name="example-5-vendor-credit-note-with-primary-payment"></a>例 5 : 基本支払のある仕入先貸方票
-Fabrikam は、仕入先 3004 の Fourth Coffee に対する 75.00 の支払を生成します。 支払は、Fabrikam West の仕入先 3004 に対する未処理請求書および Fabrikam East の仕入先 100 に対する未処理貸方票で決済されます。 支払はと**決済のトランザクション**ページの基本支払として選択されています。
+Fabrikam は、仕入先 3004 の Fourth Coffee に対する 75.00 の支払を生成します。 支払は、Fabrikam West の仕入先 3004 に対する未処理請求書および Fabrikam East の仕入先 100 に対する未処理貸方票で決済されます。 支払は、**トランザクションの決済** ページで基本支払として選択されています。
 
 ### <a name="invoice-is-posted-to-fabrikam-west-for-vendor-3004"></a>仕入先 3004 に対して Fabrikam West で転記される請求書
 
@@ -224,7 +227,7 @@ Fabrikam は、仕入先 3004 の Fourth Coffee に対する 75.00 の支払を�
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a>Fabrikam West の請求書および Fabrikam East の貸方票で決済される Fabrikam の支払
 
-**Fabrikam posting**
+**Fabrikam の転記**
 
 | 勘定                           | 借方金額 | 貸方金額 |
 |-----------------------------------|--------------|---------------|
@@ -233,14 +236,14 @@ Fabrikam は、仕入先 3004 の Fourth Coffee に対する 75.00 の支払を�
 | Fabrikam West 貸し (Fabrikam) | 100.00       |               |
 | 買掛金 (Fabrikam)       |              | 100.00        |
 
-**Fabrikam East posting**
+**Fabrikam East の転記**
 
 | 勘定                           | 借方金額 | 貸方金額 |
 |-----------------------------------|--------------|---------------|
 | Fabrikam 貸し (Fabrikam East) | 25.00        |               |
 | 買掛金 (Fabrikam East)  |              | 25.00         |
 
-**Fabrikam West posting**
+**Fabrikam West の転記**
 
 | 勘定                          | 借方金額 | 貸方金額 |
 |----------------------------------|--------------|---------------|
@@ -248,7 +251,7 @@ Fabrikam は、仕入先 3004 の Fourth Coffee に対する 75.00 の支払を�
 | Fabrikam 借り (Fabrikam West)  |              | 100.00        |
 
 ## <a name="example-6-vendor-credit-note-without-primary-payment"></a>例 6 : 基本支払のない仕入先貸方票
-Fabrikam は、仕入先 3004 の Fourth Coffee に対する 75.00 の支払を生成します。 支払は、Fabrikam West の仕入先 3004 に対する未処理請求書および Fabrikam East の仕入先 100 に対する未処理貸方票で決済されます。 支払は、**決済のトランザクション**ページで基本支払として選択されていません。
+Fabrikam は、仕入先 3004 の Fourth Coffee に対する 75.00 の支払を生成します。 支払は、Fabrikam West の仕入先 3004 に対する未処理請求書および Fabrikam East の仕入先 100 に対する未処理貸方票で決済されます。 支払は、**トランザクションの決済** ページでは基本支払として選択されません。
 
 ### <a name="invoice-is-posted-to-fabrikam-west-for-vendor-3004"></a>仕入先 3004 に対して Fabrikam West で転記される請求書
 
@@ -273,21 +276,21 @@ Fabrikam は、仕入先 3004 の Fourth Coffee に対する 75.00 の支払を�
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a>Fabrikam West の請求書および Fabrikam East の貸方票で決済される Fabrikam の支払
 
-**Fabrikam posting**
+**Fabrikam の転記**
 
 | 勘定                           | 借方金額 | 貸方金額 |
 |-----------------------------------|--------------|---------------|
 | Fabrikam West 貸し (Fabrikam) | 75.00        |               |
 | 買掛金 (Fabrikam)       |              | 75.00         |
 
-**Fabrikam East posting**
+**Fabrikam East の転記**
 
 | 勘定                                | 借方金額 | 貸方金額 |
 |----------------------------------------|--------------|---------------|
 | Fabrikam West 貸し (Fabrikam East) | 25.00        |               |
 | 買掛金 (Fabrikam East)       |              | 25.00         |
 
-**Fabrikam West posting**
+**Fabrikam West の転記**
 
 | 勘定                              | 借方金額 | 貸方金額 |
 |--------------------------------------|--------------|---------------|
@@ -295,6 +298,8 @@ Fabrikam は、仕入先 3004 の Fourth Coffee に対する 75.00 の支払を�
 | Fabrikam 借り (Fabrikam West)      |              | 75.00         |
 | 買掛金 (Fabrikam West)     | 25.00        |               |
 | Fabrikam East 借り (Fabrikam West) |              | 25.00         |
+
+
 
 
 

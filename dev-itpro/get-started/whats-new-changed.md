@@ -41,23 +41,23 @@ ms.lasthandoff: 03/31/2017
 <thead>
 <tr class="header">
 <th><strong>リリース</strong></th>
-<th><strong><strong>Version</strong></strong></th>
-<th><strong><strong>Build number</strong></strong></th>
-<th><strong><strong>Availability</strong></strong></th>
-<th><strong><strong>詳細を表示できます。</strong></strong></th>
+<th><strong><strong>バージョン</strong></strong></th>
+<th><strong><strong>ビルド番号</strong></strong></th>
+<th><strong><strong>適用対象</strong></strong></th>
+<th><strong><strong>詳細情報</strong></strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>Microsoft Dynamics 365 for Operations プラットフォーム</td>
-<td>プラットフォーム4の更新</td>
+<td>プラットフォーム更新プログラム 4</td>
 <td>7.0.4425.16160</td>
-<td>2017年12月2</td>
+<td>2017 年 2月</td>
 <td><ol>
-<li><a href="https://roadmap.dynamics.com/">Dynamics 365 for道路地図</a>にアクセスします。</li>
-<li>タブを <strong>新機能</strong> クリックします。</li>
-<li>[ <strong>アプリケーション</strong> セクションで <strong>Dynamics 365 for Operations</strong>。</li>
-<li>[ <strong>領域</strong> セクションで <strong>クラウドのプラットフォーム</strong>。</li>
+<li><a href="https://roadmap.dynamics.com/">Dynamics 365 ロードマップ</a> へ移動します。</li>
+<li><strong>新機能</strong> タブを選んで下さい。</li>
+<li><strong>アプリケーション</strong> セクションから、<strong>Dynamics 365 for Operations</strong> を選んで下さい。</li>
+<li><strong>エリア</strong> セクションから、<strong>Cloud Platform</strong> を選んで下さい。</li>
 </ol></td>
 </tr>
 <tr class="even">

@@ -1,5 +1,5 @@
 ---
-title: "POSのハードウェア周辺機器"
+title: "POS ハードウェアおよび周辺機器"
 description: "Retail Modern POS (販売時点管理) およびクラウド POS では、複数のインターフェイスとデプロイ オプションにより、小売業者のさまざまな取引シナリオに合わせて、POS ハードウェア周辺機器を活用できます。"
 author: josaw1
 manager: AnnBe
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 215234
 ms.assetid: 1893d4b3-e1b7-4b66-be58-0102addd5b36
 ms.search.region: global
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="pos-hardware-peripherals"></a>POSのハードウェア周辺機器
+# <a name="pos-hardware-peripherals"></a>POS ハードウェアおよび周辺機器
+
+[!include[banner](includes/banner.md)]
+
 
 Retail Modern POS (販売時点管理) およびクラウド POS では、複数のインターフェイスとデプロイ オプションにより、小売業者のさまざまな取引シナリオに合わせて、POS ハードウェア周辺機器を活用できます。 
 
@@ -63,6 +66,8 @@ Retail Modern POS (販売時点管理) およびクラウド POS では、複数
 
 -   バーコード – Honeywell 1900、HP LS2208
 -   MSR – Magtek PN - 21073075
+
+
 
 
 

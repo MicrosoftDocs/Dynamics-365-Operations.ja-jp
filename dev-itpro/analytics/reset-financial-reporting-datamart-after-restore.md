@@ -1,6 +1,6 @@
 ---
-title: "データベースを復元すると財務報告のデータ マートをリセットします。"
-description: "このトピックでは、データベースのMicrosoft Dynamics 365を復元すると財務報告のデータ マートをリセットする方法について説明します。"
+title: "データベースを復元した後の財務報告のデータ マートのリセット"
+description: "このトピックでは、Microsoft Dynamics 365 for Operations のデータベースを復元した後に、財務報告データ マートをリセットする方法について説明します。"
 author: twheeloc
 manager: AnnBe
 ms.date: 2016-12-08 16 - 20 - 13
@@ -24,86 +24,86 @@ ms.lasthandoff: 03/29/2017
 
 ---
 
-# <a name="reset-the-financial-reporting-data-mart-after-restoring-a-database"></a>データベースを復元すると財務報告のデータ マートをリセットします。
+# <a name="reset-the-financial-reporting-data-mart-after-restoring-a-database"></a>データベースを復元した後の財務報告のデータ マートのリセット
 
-このトピックでは、データベースのMicrosoft Dynamics 365を復元すると財務報告のデータ マートをリセットする方法について説明します。 
+このトピックでは、Microsoft Dynamics 365 for Operations のデータベースを復元した後に、財務報告データ マートをリセットする方法について説明します。 
 
-バックアップの工程のデータベース365 for Operationsを復元するか、または別の環境のデータベースをコピーする必要がある場合は、複数のシナリオがあります。 このような場合は、財務報告のデータ マート データベースが工程に対して正しく復元された365 for Operationsを使用することを保証するための適切な手順に従う必要があります。 工程のデータベース365 for Operationsの復元の外の場合に、財務報告のデータ マートの再設定の質問がある場合は、参照して、[Management Reporterデータ マート リセットします] (詳細についてはhttps://blogs.msdn.microsoft.com/dynamics_financial_reporting/2016/06/28/resetting-the-management-reporter-data-mart/)を。 このプロセスのステップが工程の月5日の2016リリース (アプリケーションの自動作成7.0.1265.23014および財務報告に基づきます7.0.10000.4)、新しいリリース365 for Operationsでサポートされていることに注意してください。 Dynamics 365 for Operationsの以前のリリースがある場合は、サポートの特定のチーム サポートに問い合わせてください。
+Dynamics 365 for Operations のデータベースをバックアップから復元するか、または別の環境のデータベースをコピーする必要がある場合があります。 これが発生した場合は、適切な手順に従って、財務報告データマートが、復元された Dynamics 365 for Operations のデータベースを正しく使用している必要があります。 Dynamics 365 for Operations のデータベースを復元する以外の理由で財務報告データマートをリセットするにおいて質問がある場合は、[財務報告のデータ マートの再設定](https://blogs.msdn.microsoft.com/dynamics_financial_reporting/2016/06/28/resetting-the-management-reporter-data-mart/) を参照してください。 このプロセスの手順は、Dynamics 365 for Operation 2016 年 5 月のリリース (アプリ ビルド 7.0.1265.23014 および財務報告ビルド 7.0.10000.4) およびそれ以降のリリースでサポートされています。 Dynamics 365 for Operations の以前のリリースを持っている場合、サポート チームに問い合わせてください。
 
-## <a name="export-report-definitions"></a>レポート定義をエクスポートします。
-最初に、次の手順を使用してレポート デザイナーで、レポートのデザインをエクスポートします:
+## <a name="export-report-definitions"></a>レポート定義のエクスポート
+最初に、次の手順を使用してレポート デザイナーにあるレポート デザインをエクスポートします:
 
-1.  レポート デザイナーで、会社レポート パーツ グループは** ** &gt; ** **実行されます。
-2.  レポート パーツ グループをエクスポートするように選択クリックして**エクスポート**。 **注記:、一つのレポート パーツ グループのみ**、Dynamics 365 for Operationsし、サポートされますが、**既定**。
+1.  レポート デザイナーで、[**会社**] &gt; [**構成要素グループ**] の順に移動します。
+2.  エクスポートする構成要素グループを選択し、[**エクスポート**] をクリックします。 **注記:** Dynamics 365 for Operation では、**既定** として 1 つの構成要素グループのみがサポートされます。
 3.  エクスポートするレポート定義を選択します:
     -   すべてのレポート定義および関連する構成要素をエクスポートするには、[**すべて選択**] をクリックします。
-    -   特定のレポート、行、列、ツリー、または分析コード セットをエクスポートするには、適切なタブをクリックしてエクスポートする項目を選択します。 タブ内の複数の項目を選択するには、Ctrl キーを押しながら選択します。 エクスポートするレポートを選択すると、関連する行、列、ツリー、分析コードセットが選択されます。
+    -   特定のレポート、行、列、ツリー、または分析コード セットをエクスポートするには、適切なタブをクリックしてエクスポートする項目を選択します。 タブ内の複数の項目を選択するには、Ctrl キーを押しながら選択します。 エクスポートするレポートを選択すると、関連する行、列、ツリー、および分析コード セットが選択されます。
 
-4.  [**エクスポート**。
-5.  ファイル名を入力し、エクスポートするレポート定義を保存する安全な場所を選択します。
-6.  Click **Save**.
+4.  [**エクスポート**] をクリックします。
+5.  ファイル名を入力し、エクスポートされたレポート定義を保存できる安全な場所を選択します。
+6.  [**保存**] をクリックします。
 
-ファイルは、安全な場所にコピーするか、またはアップロードすることができます。別のときに三つ環境にインポートするように、そのします。 MicrosoftのAzureの保管勘定の使用に関する情報が検索できますAzCopyコマンドラインUtilityの[] (https://docs.microsoft.com/en-gb/azure/storage/storage-use-azcopy)からデータを転送する。 **注記: ** Microsoftは、工程の契約に365 for Operationsの一部として保管勘定は表示されません。 記憶域勘定を購入するか、または別のAzureの定期売買の記憶域アカウントを使用する必要があります。 **重要: ** Azureの仮想機械のDのドライブの動作を確認してください。 エクスポートされたレポート パーツ グループを完全に、ここで保たないでします。 一時ドライブに関する詳細については、表示、[Windows Azureの仮想機械理解します (https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/)]の数量をドライブ。
+ファイルは、安全な場所にコピーまたはアップロードすることができ、別のときに異なる環境にインポートできるようになります。 Microsoft Azure ストレージ アカウントの使用に関する情報は、[AzCopy Command-Line Utility でデータを転送する](https://docs.microsoft.com/en-gb/azure/storage/storage-use-azcopy) を参照してください。 **注記:** Microsoft は、Dynamics 365 for Operations の契約の一部としてストレージ アカウントを提供しません。 ストレージ アカウントを購入するか、別の Azure サブスクリプションからストレージ アカウントを使用する必要があります。 **重要:** Azure 仮想マシン上の D ドライブの動作に注意してください。 エクスポートされた構成要素グループをここに永久に保管しないでください。 テンポラリー ドライブに関する詳細については、[Windows Azure 仮想マシン上のテンポラリー ドライブを理解する](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/) を参照してください。
 
-## <a name="stop-services"></a>サービスを停止します。
-環境のすべてのコンピュータに接続し、services.mscを使用して、次のWindowsサービスを停止するでリモート デスクトップを使用します:
+## <a name="stop-services"></a>サービスの停止
+リモート デスクトップを使用して、環境内のすべてのコンピュータに接続し、services.msc を使用して次の Windows サービスを停止します。
 
--   World Wide Webで配送サービス (すべてのAOSコンピュータ) 
--   工程のバッチ管理サービスのMicrosoft Dynamics 365 (、プライベートAOSコンピューターのみ) 
--   Management Reporter 2012のプロセス サービス (BIコンピューターのみ) 
+-   ワールド ワイド ウェブ公開サービス (すべての AOS コンピュータ上)
+-   Microsoft Dynamics 365 for Operations バッチ管理サービス (非プライベート AOS コンピュータ上のみ)
+-   Management Reporter 2012 のプロセス サービス (BI コンピューターのみ)
 
-これらのサービス、工程のデータベースのDynamics 365に対する未処理接続があります。
+これらのサービスでは、Dynamics 365 for Operations のデータベースへの接続が提供されます。
 
 ## <a name="reset"></a>リセット
-#### <a name="locate-the-latest-dataupgradezip-package"></a>最新のDataUpgrade.zipパッケージを指定します。
+#### <a name="locate-the-latest-dataupgradezip-package"></a>最新の DataUpgrade.zip パッケージを検索します。
 
-ある方向を使用して、最新のDataUpgrade.zipパッケージで指定します。[DataUpgrade.zipのスクリプトをダウンロードします。] (。\migration-upgrade\upgrade-data-to-latest-update.md)。 方向は、環境のデータ アップグレード梱包の正しいバージョンの検索方法を説明します。
+[DataUpgrade.zip スクリプトのダウンロード](..\migration-upgrade\upgrade-data-to-latest-update.md) に記載されている指示に従って最新の DataUpgrade.zip パッケージを検索します。 指示では、使用している環境に適したバージョンのデータ アップグレード パッケージを検索する方法を説明しています。
 
-#### <a name="execute-scripts-against-dynamics-365-for-operations-database"></a>工程のデータベースのDynamics 365に対してスクリプトを実行します。
+#### <a name="execute-scripts-against-dynamics-365-for-operations-database"></a>Dynamics 365 for Operations データベースに対してスクリプトを実行する
 
-工程のデータベースのDynamics 365に対して次のスクリプトが実行していない (財務報告のデータベースに対して)。
+財務レポート データベースに対してではなく、Dynamics 365 for Operations データベースに対して、次のスクリプトを実行します。
 
--   DataUpgrade.zip\\AosService\\\\ConfigureAxReportingIntegration.sqlのスクリプトが書き込まれます
--   DataUpgrade.zip\\AosService\\\\GrantAzViewChangeTracking.sqlのスクリプトが書き込まれます
+-   DataUpgrade.zip\\AosService\\Scripts\\ConfigureAxReportingIntegration.sql
+-   DataUpgrade.zip\\AosService\\Scripts\\GrantAzViewChangeTracking.sql
 
-これらのユーザー スクリプトは、ロールと変更の追跡の設定が正しいことを確認します。
+これらのスクリプトは、ユーザー、ロール、変更の追跡の設定が正しいことを確認します。
 
-#### <a name="execute-powershell-command-to-reset-database"></a>データベースをリセットするPowerShellコマンドを実行します。
+#### <a name="execute-powershell-command-to-reset-database"></a>PowerShell コマンドを実行してデータベースをリセットする
 
-工程と財務報告365 for Operationsの間の統合をリセットするAOSコンピューターで次のコマンドを一つずつ、実行します:
+Dynamics 365 for Operations と財務レポートとの統合をリセットするには、AOS コンピュータで直接次のコマンドを実行します。
 
-1.  管理者として開いているウィンドウPowerShell。
-2.  実行します: F:
-3.  実行します: CD F:\\MRApplicationService\\MRInstallDirectory
-4.  実行します: インポート モジュール。\\サーバー\\MRDeploy\\MRDeploy.psd1
-5.  実行します: リセットDatamartIntegrationリストの担当者は組織ReasonDetailリセットします (「&lt;の場合の理由」
-    -   確認「Y」を入力するように求められます。
+1.  Windows PowerShell を管理者として開きます。
+2.  実行: F:
+3.  実行: cd F:\\MRApplicationService\\MRInstallDirectorytory
+4.  実行: Import-Module .\\Server\\MRDeploy\\MRDeploy.psd1
+5.  実行: Reset-DatamartIntegration -Reason OTHER -ReasonDetail “&lt;リセットの理由&gt;”
+    -   確認のために「Y」を入力するよう求められます。
 
-パラメータの説明:
+パラメーターの説明:
 
--   有効な値の-理由は次のとおりです: [BADDATA、そのサービス。
--   [ReasonDetailパラメータは自由書式のです。
--   理由とreasonDetailはテレメトリー/環境では監視に記録されます。
+-   -Reason の有効な値は、SERVICING, BADDATA, OTHER です。
+-   -ReasonDetail パラメーターは自由書式です。
+-   理由と reasonDetail はテレメトリーまたは環境モニタリングに記録されます。
 
 ## <a name="start-services"></a>サービスを開始します。
-[先に停止したサービスを再起動するのにservices.mscを使用します:
+services.msc を使用して、以前に停止したサービスを再起動します。
 
--   World Wide Webで配送サービス (すべてのAOSコンピュータ) 
--   工程のバッチ管理サービスのMicrosoft Dynamics 365 (、プライベートAOSコンピューターのみ) 
--   Management Reporter 2012のプロセス サービス (BIコンピューターのみ) 
+-   ワールド ワイド ウェブ公開サービス (すべての AOS コンピュータ上)
+-   Microsoft Dynamics 365 for Operations バッチ管理サービス (非プライベート AOS コンピュータ上のみ)
+-   Management Reporter 2012 のプロセス サービス (BI コンピューターのみ)
 
-## <a name="import-report-definitions"></a>レポート定義をインポートします。
-エクスポート中に作成されたファイルを使用してレポート デザイナーでレポートのデザインをインポートします:
+## <a name="import-report-definitions"></a>レポート定義のインポート
+エクスポート中に作成されたファイルを使用して、レポート デザイナーからレポート デザインをインポートします:
 
-1.  レポート デザイナーで、会社レポート パーツ グループは** ** &gt; ** **実行されます。
-2.  レポート パーツ グループをエクスポートするように選択クリックして**エクスポート**。 **注記:、一つのレポート パーツ グループのみ**、Dynamics 365 for Operationsし、サポートされますが、**既定**。
-3.  **既定**レポート パーツを選択し、をクリックしてインポート** **。
-4.  含むファイルをエクスポートするレポート定義し、をクリックして** **開きます。
+1.  レポート デザイナーで、[**会社**] &gt; [**構成要素グループ**] の順に移動します。
+2.  エクスポートする構成要素グループを選択し、[**エクスポート**] をクリックします。 **注記:** Dynamics 365 for Operation では、**既定** として 1 つの構成要素グループのみがサポートされます。
+3.  **既定** の構成要素を選択し、[**インポート**] をクリックします。
+4.  エクスポート済みのレポート定義を選択し、[**開く**] をクリックします。
 5.  [インポート] ダイアログ ボックスで、インポートするレポート定義を選択します:
     -   すべてのレポート定義およびサポートする構成要素をインポートするには、[**すべて選択**] をクリックします。
     -   特定のレポート、行、列、ツリー、または分析コード セットをインポートするには、インポートするレポート、行、列、ツリー、または分析コード セットを選択します。
 
-6.  Click **Import**.
+6.  [**インポート**] をクリックします。
 
 
 

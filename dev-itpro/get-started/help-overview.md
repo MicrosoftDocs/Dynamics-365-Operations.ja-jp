@@ -1,5 +1,5 @@
 ---
-title: "ヘルプの概要"
+title: "ヘルプ概要"
 description: "この記事では、Microsoft Dynamics 365 for Operations のヘルプ システム コンポーネントの概要が示されます。 また、組織の独自のドキュメントやトレーニングを提供する方法について説明します。"
 author: margoc
 manager: AnnBe
@@ -25,34 +25,34 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="help-overview"></a>ヘルプの概要
+# <a name="help-overview"></a>ヘルプ概要
 
 この記事では、Microsoft Dynamics 365 for Operations のヘルプ システム コンポーネントの概要が示されます。 また、組織の独自のドキュメントやトレーニングを提供する方法について説明します。 
 
 Microsoft Dynamics 365 for Operations には、2 つの主要なコンポーネントに基づくまったく新しいヘルプ システムが含まれています。
 
--   ドキュメントのサイト
+-   ドキュメント サイト
 -   タスク ガイド
 
-次のスクリーン ショットに示すように、Dynamics 365 for Operationsのヘルプ ウィンドウから記事や作業ガイドにもアクセスできます。 [![ヘルプ ウィンドウ] (。/media/helpウィンドウopsタスク ガイド1024x741.png) ] (。/media/helpウィンドウopsタスクguides.pngは、この記事では、ヘルプ システムについて、組織にカスタム ドキュメントとトレーニング リソースを作成する方法を説明します。
+次のスクリーン ショットに示すように、記事と Dynamics Online 365 for Operations の [ヘルプ] ウィンドウのタスク ガイドの両方にアクセスできます。 [![Help pane](./media/help-pane-ops-task-guides-1024x741.png)](./media/help-pane-ops-task-guides.png) この記事は、ヘルプ システムについて説明し、組織のカスタム ドキュメントおよびトレーニング リソースの作成方法を説明します。
 
-## <a name="help-on-docsmicrosoftcom"></a>docs.microsoft.comのヘルプ
-docs.microsoft.comのサイト (docs.microsoft.com/dynamics365/operations [] (https://docs.microsoft.com/en-us/dynamics365/#pivot=solutions&panel=solutions_operations)は、Dynamics 365 for Operationsの製品ドキュメントの基本ソースです。 サイトは次の機能があります:
+## <a name="help-on-docsmicrosoftcom"></a>docs.microsoft.com のヘルプ
+docs.microsoft.com サイト ([docs.microsoft.com/dynamics365/operations](https://docs.microsoft.com/en-us/dynamics365/#pivot=solutions&panel=solutions_operations) が Dynamics 365 for Operations の製品ドキュメントの基本ソースです。 サイトには次のような機能が含まれています。
 
--   **最新のコンテンツへのアクセス– **は、サイトによってための、製品ドキュメントを作成および表示および更新できます。詳細に柔軟を示します。 したがって、最新の技術情報にアクセスできることを保証するために役立ちます。
--    **満足照合します。こうしたエキスパートによって作成された** –は、Microsoftサイトの内側と外部の両方に会員地域によって高めることができる製品ドキュメントの豊富な設定を提供します。
--   **内容のタイプへのアクセス– **は、サイトMicrosoft Officeの両方のプレゼンテーション、タスク、およびビデオ ヘルプWiki記事では、Dynamics 365 for Operationsに関する内容のタイプにアクセスすることをすぐに有効にします。
--    **満足照合します業務プロセスをサポートする** –サイトはMicrosoft Dynamics Lifecycle Services (LCS)の業務プロセスのModelerを使用する(BPM)ビジネスprocess–focusedコンテンツが含まれています。
+-   **最新のコンテンツへのアクセス** – サイトは、製品のドキュメントのより速い、より柔軟な作成、出荷、および更新方法を提供します。 したがって、最新の技術情報にアクセスできることを保証するために役立ちます。
+-    **専門家が記述した内容** – サイトは Microsoft 内外のコミュニティ メンバーによって拡張できる豊富な製品ドキュメントのセットを提供します。
+-   **異なるタイプのコンテンツへのアクセス** – サイトにより、Microsoft Office Mix プレゼンテーション、タスク ガイド、ビデオ、Wiki の記事など、Dynamics Online 365 for Operations に関する異なる内容にすばやくアクセスできるようになります。
+-    **業務プロセスをサポートするコンテンツ** – サイトには Microsoft Dynamics Lifecycle Services (LCS) のビジネス プロセス モデラー (BPM) を活用する、業務プロセス指向のコンテンツが含まれます。
 
-Microsoft、Microsoftの前のヘルプWikiのドキュメントの内容すべての移行しました。 Microsoft、Microsoftのサイトについてよく興奮、があることを望みます。
+以前のヘルプ Wiki から docs にすべてのコンテンツを移行しました。 新しいサイトを提供できることを嬉しく思います、ご期待ください。
 
 ### <a name="when-can-we-use-it"></a>いつ使用することができますか。
 
-ドキュメントのコンテンツをすぐにを読み取ることができます。。これはサインインが必要なしないで完全にパブリックと捜せます。 内容の検索にはお気に入りの検索エンジンを使用できます。 選択したサイトの技術情報についてGitHubの勘定に署名で、コメントできます。
+docs の内容は今すぐお読みいただけます。これは完全にパブリックで、サインインせずに検索できます。 内容の検索にはお気に入りの検索エンジンを使用できます。 GitHub アカウントでサインインして選択すると、サイトの記事にコメントできます。
 
 
 ## <a name="task-guides"></a>タスク ガイド
-このガイドでは、タスクの手順について説明します、または業務プロセスとして制御された、ガイド付き、対話型の経験。  (演劇) ヘルプ ウィンドウのタスク ガイド"を開くことができます。 最初にタスク ガイドをクリックすると、ヘルプ ウィンドウはタスクの手順を示します。 集中するタスク ガイドはなりました。 [!["タスクの読み取りの表示] (。/media/taskガイドOps 1024x742.png) ] (。ガイド付き、対話型の経験、[を**ガイド タスクを開始します。**ヘルプ ウィンドウの下では開始/media/taskガイドops.png)。 黒のポインタが、実行する必要があるアクションを開いて、表示します。 UI に表示される指示に従い、指示されたデータを入力します。 [タスク]!["の手順 (。/media/task "手順1 ops.png) ] (。重要な/media/task "手順1 ops.png) **: **このガイドのするときに入力されたデータは実際になります。 実稼働環境である場合、データは現在使用している会社で入力されます。
+タスク ガイドは、制御された、ガイド付きでインタラクティブな方法による、タスクまたは業務プロセスの手順の説明です。 [ヘルプ] ウィンドウからタスク ガイドを開く (再生する) ことができます。 最初にタスク ガイドをクリックすると、[ヘルプ] ウィンドウには、タスクのステップ バイ ステップの手順が表示されます。 ローカライズされたタスク ガイドが利用可能になりました。 [![Task guide reading view](./media/task-guide-ops-1024x742.png)](./media/task-guide-ops.png) ガイド付きのインタラクティブな経験を開始するには、[ヘルプ] ページ下部の [**タスク ガイドの開始**] をクリックします。 黒のポインタが、実行する必要があるアクションを開いて、表示します。 UI に表示される指示に従い、指示されたデータを入力します。 [![Task guide step instruction](./media/task-guide-step-1-ops.png)](./media/task-guide-step-1-ops.png) **重要:** タスク ガイドの再生時に入力したデータは実際のものです。 実稼働環境である場合、データは現在使用している会社で入力されます。
 
 ### <a name="it-all-begins-with-task-recorder"></a>すべてタスク レコーダーから始まります。
 
@@ -61,70 +61,70 @@ Microsoft、Microsoftの前のヘルプWikiのドキュメントの内容すべ�
 -   **タスク記録を BPM に保存** – LCS の BPM ライブラリの階層の明細行にタスク記録を保存できます。 BPM にタスク記録を保存すると、フローチャートの図が生成され、記録のステップとともに表示されます。 **メモ:** Dynamics 365 for Operations の [ヘルプ] ウィンドウに表示させてタスク ガイドとして再生するには、記録を BPM ライブラリに保存します。
 -   **タスク記録をWord文書として保存** – Microsoft Word文書としてタスク記録を保存すると、組織の印刷可能なトレーニング ガイドを簡単に作成できます。
 
-タスク レコーダに関する詳細については、" [Dynamics 365 for Operationsのタスク レコーダ] (。/user-interface/task-recorder.md)。
+タスク レコーダーの詳細については、「[Task recorder in Dynamics 365 for Operations](../user-interface/task-recorder.md)」を参照してください。
 
 ### <a name="creating-customized-task-recordings"></a>カスタマイズされたタスク記録の作成
 
-独自のタスク記録を作成するか、Microsoft の提供するタスク記録をダウンロードしてカスタマイズすることができます。 したがって、固有の Dynamics 365 for Operations の実装を反映する、組織のカスタマイズされたヘルプを作成できます。 Dynamics 365 for Operationsのタスク記録を表示するには、ウィンドウを確認し、タスク ガイドとして、LCSのBPMのライブラリに記録を保存する必要がありますします。 パートナーになり、会社のライブラリにライブラリを促進およびソリューションに含めれば、顧客が使用できます。 詳細な手順については、" "を参照してください[ドキュメントやトレーニングを作成するタスク記録を使用して] (。/user-interface/task-recorder.md)。
+独自のタスク記録を作成するか、Microsoft の提供するタスク記録をダウンロードしてカスタマイズすることができます。 したがって、固有の Dynamics 365 for Operations の実装を反映する、組織のカスタマイズされたヘルプを作成できます。 Dynamics 365 for Operations の [ヘルプ] ウィンドウにタスク記録を表示させてタスク ガイドとして再生するには、記録を LCS の BPM ライブラリに保存します。 パートナーの場合、ライブラリを会社のライブラリに昇格してソリューションに含める場合、顧客が使用できます。 詳細な手順については、「[Using task recordings to create documentation or training](../user-interface/task-recorder.md)」を参照してください。
 
 ## <a name="in-product-help"></a>製品内ヘルプ
-Dynamics 365 for Operations内のヘルプ コンテンツにアクセスするには、** **ヘルプ ([**か。** [) は、ヘルプ アイコンを選択するか、またはCtrl+Shift+を押して、または。 どちらの場合も、[ヘルプ] ウィンドウが開きます。 ヘルプ ウィンドウで、記事や作業ガイドにアクセスできます。 [![](./media/help-pane-wiki-1024x684.png)](./media/help-pane-wiki.png)
+Dynamics 365 for Operations 内のヘルプ コンテンツにアクセスするには、[**ヘルプ**] (**?**) アイコンをクリックしてからヘルプを選択するか、Ctrl + Shift + ? を押します。 どちらの場合も、[ヘルプ] ウィンドウが開きます。 [ヘルプ] ウィンドウから記事またはタスク ガイドにアクセスできます。 [![](./media/help-pane-wiki-1024x684.png)](./media/help-pane-wiki.png)
 
-### <a name="accessing-articles-from-the-help-pane"></a>ヘルプ ウィンドウのアクセスの記事
+### <a name="accessing-articles-from-the-help-pane"></a>[ヘルプ] ウィンドウから記事へのアクセス
 
-ヘルプ ウィンドウで、工程のクライアント365 for Operationsに適用される技術情報にアクセスできます。 最初にヘルプ ウィンドウを開き、** Wiki **タブをクリックすると、Dynamics 365 for Operationsで現在処理されていることページに適用される技術情報が表示されます。 技術情報がない場合、検索条件を調整するキーワードを入力できます。 ヘルプ ウィンドウの記事をクリックすると、新しいタブは、ブラウザで開き、技術情報を表示します。 
+[ヘルプ] ウィンドウから、Dynamics 365 for Operations クライアントに適用する記事にアクセスできます。 最初に [ヘルプ] ウィンドウを開いてから [**Wiki**] タブをクリックすると、Dynamics 365 for Operations の現在のページに対応する記事が表示されます。 記事がない場合は、検索するキーワードを入力できます。 [ヘルプ] ウィンドウで記事をクリックすると、ブラウザで新しいタブが開いて記事を表示します。 
 
-### <a name="accessing-task-guides-from-the-help-pane"></a>ヘルプ ウィンドウからアクセス タスク ガイド
+### <a name="accessing-task-guides-from-the-help-pane"></a>ヘルプ ウィンドウからタスク ガイドへのアクセス
 
-ヘルプ ウィンドウからタスク ガイドにアクセスできるようにシステム管理者はにDynamics 365 for Operationsで**システム パラメータ**]ページで、コンフィギュレーションする設定のステージがあります。 **メモ :**
+[ヘルプ] ウィンドウからタスク ガイドにアクセスできるようになる前に、システム管理者が Dynamics 365 for Operations の [**システム パラメーター**] ページに進み、設定をコンフィギュレーションする必要があります。 **メモ :**
 
 -   ヘルプを設定するには、Dynamics 365 for Operations を導入したテナントと同じテナントのアカウントを使用してサインインする必要があります。
 -   ローカル仮想ハード ドライブ (VHD) で実行されている Dynamics 365 for Operations のインスタンスから、LCS ライブラリに接続することはできません。
 
-[![システム![設定では、ヘルプ"] (。/media/system-parameters_ops-1024x437.png) ] (。**システム パラメータ**ページでは、/media/system-parameters_ops.png、次の手順に従います。:
+[![System Parameters form with Help settings](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png) **システム パラメーター** ページで次の手順に従います。
 
-1.  **重要: **[ヘルプ] タブを初めて開く際には、Lifecycle Services に接続する必要があります。 フォームの途中でリンクをクリックするしてくださいい接続、決算のダイアログ ボックス待ち、[パラメーターに取得するOK]をクリックします。[![はLCSに接続します] (。/media/connectにlcs穀物1024x365.png) ] (。/media/connectにlcscrop.png) 
+1.  **重要: **[ヘルプ] タブを初めて開く際には、Lifecycle Services に接続する必要があります。 フォームの中程のリンクをクリックし、接続されるまで待機し、ダイアログ ボックスを閉じ、[OK] をクリックしてパラメーター フォームを取得します。[![Connect to LCS](./media/connect-to-lcs-crop-1024x365.png)](./media/connect-to-lcs-crop.png)
 2.  接続する Lifecycle Services プロジェクトを選択します。
 3.  タスク記録を取得する BPM ライブラリ (選択したプロジェクト内) を選択します。
 4.  BPM ライブラリの表示順序を選択します。 これにより、ライブラリからのタスク記録が [ヘルプ] ウィンドウに表示される順序が決まります。
 
-システム管理者がこれらの手順を完了したら、[**ヘルプ**] ウィンドウを開いて [タスク ガイド] タブをクリックします。 これで、Dynamics 365 for Operationsで現在処理されていることページに適用するタスク ガイド"を参照してください。 タスク ガイドがない場合、検索条件を調整するキーワードを入力できます。 ヘルプ ウィンドウのタスク ガイドをクリックすると、ヘルプ ウィンドウは手順と、タスク ガイドを行うことができます。 [!["タスクの読み取りの表示] (。/media/taskガイドOps 1024x742.png) ] (。/media/taskガイドops.png) 
+システム管理者がこれらの手順を完了したら、[**ヘルプ**] ウィンドウを開いて [タスク ガイド] タブをクリックします。 これで、Dynamics 365 for Operations の現在のページに対応するタスク ガイドを表示できます。 タスク ガイドがない場合は、検索するキーワードを入力できます。 [ヘルプ] ウィンドウでタスク ガイドをクリックした後、[ヘルプ] ウィンドウにはステップ バイ ステップの手順が表示され、タスク ガイドが再生できます。 [![タスク ガイドの読み取りビュー](./media/task-guide-ops-1024x742.png)](./media/task-guide-ops.png)
 
-### <a name="where-are-the-translated-task-guides"></a>変換されたタスク ガイドでは、どの位置にあるか。
+### <a name="where-are-the-translated-task-guides"></a>翻訳されたタスク ガイドはどこにありますか。
 
-変換されたタスクはタイトル ガイドの「すべての言語」ライブラリでリリースされます。 Dynamics 365 for Operationsで、apppropriateのライブラリに接続していることを一括するタスク ガイドの"ヘルプを表示するには、確認してください。 このガイドは、な言語は**オプション** **ユーザー設定での言語設定で、ユーザーに &gt; 対してアクセスを制御します。**。 
--   このガイドでは、選択した言語でタスク ガイドのすべてのテキスト表示されます。このガイドは変換された、開いたとき。
--   タスク ガイドがまだ変換されていない場合は、それを開くと、テキスト (制御のテキスト) の一部のみが選択した言語で表示されます。
+翻訳されたタスク ガイドは、タイトルの「すべての言語」を持つライブラリでリリースされます。 Microsoft Dynamics 365 for Operations でローカライズされたタスク ガイドのヘルプを参照するには、適切なライブラリに接続できることを確認してください。 タスク ガイドの表示言語は、[**オプション**] &gt; [**基本設定**] の [言語の設定] でユーザーごとに制御されます。 
+-   タスク ガイドが翻訳されている場合、そのタスク ガイドを開くと、タスク ガイドのすべてのテキストは選択した言語で表示されます。
+-   タスク ガイドが翻訳されていない場合、それを開くと、一部のテキスト (コントロールのテキスト) のみが選択した言語で表示されます。
 
 ## <a name="additional-resources"></a>追加リソース
-次の表に、Microsoft Dynamics 365 for Operations のコンテンツを提供する Web サイトを示します。 コンテンツ Web サイトは顧客のライフ サイクルをサポートするために編成されています。 各フェーズは、別の一連のサイトによってサポートされます。 名前の横にアスタリスク (\*) を持つサイトは、サービス計画に関連付けられるアカウントの使用によって署名する必要があります。
+次の表に、Microsoft Dynamics 365 for Operations のコンテンツを提供する Web サイトを示します。 コンテンツ Web サイトは顧客のライフ サイクルをサポートするために編成されています。 各フェーズは、別の一連のサイトによってサポートされます。 名前の横にアスタリスク (\*) のあるサイトには、サービス計画と関連付けられたアカウントでサインインする必要があります。
 
 | サイト                                                                     | 説明                                                                                                                                                                                                                                |
 |--------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Docs.microsoft.com] (https://docs.microsoft.com/en-us/dynamics365/#pivot=solutions&panel=solutions_operations) | Dynamics 365 for Operations のすべての製品ドキュメントのホストまたはリンクです。                                                                                                                                                               |
-| [Lifecycle Services](http://lcs.dynamics.com/en/)\*                      | 事前販売からの実装および工程にいたるまで Dynamics 365 for Operations のプロジェクトを管理するのに、顧客とパートナーが使用できるクラウドベースの共同ワークスペースを提供します。 このサイトは、実装のすべてのフェーズに役立ちます。 |
-| [CustomerSource] (http://www.customersource.com/)\*                       | 徹底したトレーニング リソースのホストであり、Dynamics 365 for Operations の主なサポート サイトです。 サイト固有のリソースにアクセスするためにサインインが必要な場合があります。                                                                      |
-| [サポート ブログ] (http://aka.ms/AXSupportBlog)                              | Dynamics 365 for Operations のサポート チームによって投稿されるヒントおよび秘訣を提供します。                                                                                                                                                  |
-| [方法] (http://aka.ms/AXMSDN)                                             | 開発者向けに書き込まれた以前のリリースのコンテンツをホストします。                                                                                                                                                                       |
-| [TechNet] (http://aka.ms/TechNet)                                         | IT プロフェッショナルやアプリケーション ユーザー向けに書き込まれた以前のリリースのコンテンツをホストします。                                                                                                                                           |
-| [Dynamicsコミュニティ] (http://community.dynamics.com/en/)                  | ブログ、フォーラムおよびビデオをホストします。                                                                                                                                                                                                           |
-| [Microsoft.com/Dynamics/] (http://www.microsoft.com/dynamics/)                 | 評価と販売情報を提供します。                                                                                                                                                                                                 |
+| [Docs.microsoft.com](https://docs.microsoft.com/en-us/dynamics365/#pivot=solutions&panel=solutions_operations) | Dynamics 365 for Operations のすべての製品ドキュメントのホストまたはリンクです。                                                                                                                                                               |
+| [ライフサイクル サービス](http://lcs.dynamics.com/en/)\*                      | 事前販売からの実装および工程にいたるまで Dynamics 365 for Operations のプロジェクトを管理するのに、顧客とパートナーが使用できるクラウドベースの共同ワークスペースを提供します。 このサイトは、実装のすべてのフェーズに役立ちます。 |
+| [CustomerSource](http://www.customersource.com/)\*                       | 徹底したトレーニング リソースのホストであり、Dynamics 365 for Operations の主なサポート サイトです。 サイト固有のリソースにアクセスするためにサインインが必要な場合があります。                                                                      |
+| [サポート ブログ](http://aka.ms/AXSupportBlog)                              | Dynamics 365 for Operations のサポート チームによって投稿されるヒントおよび秘訣を提供します。                                                                                                                                                  |
+| [MSDN](http://aka.ms/AXMSDN)                                             | 開発者向けに書き込まれた以前のリリースのコンテンツをホストします。                                                                                                                                                                       |
+| [TechNet](http://aka.ms/TechNet)                                         | IT プロフェッショナルやアプリケーション ユーザー向けに書き込まれた以前のリリースのコンテンツをホストします。                                                                                                                                           |
+| [Dynamics コミュニティ](http://community.dynamics.com/en/)                  | ブログ、フォーラムおよびビデオをホストします。                                                                                                                                                                                                           |
+| [Microsoft.com/Dynamics/](http://www.microsoft.com/dynamics/)                 | 評価と販売情報を提供します。                                                                                                                                                                                                 |
 
 
 
 <a name="see-also"></a>参照
 --------
 
-[アクションのヘルプ システム (ダウンロードできるにファクト シート) ] 365 for Operations (https://mbs.microsoft.com/files/public/CS/AX2012R3/DynamicsAXHelpSystemFactSheet.pdf)
+[Dynamics 365 for Operations のヘルプ システム (ダウンロード可能なファクト シート)](https://mbs.microsoft.com/files/public/CS/AX2012R3/DynamicsAXHelpSystemFactSheet.pdf)
 
-[、Microsoft Dynamics 365のタスク レコーダ] (。/user-interface/task-recorder.md) 
+[Microsoft Dynamics 365 for Operations のタスク レコーダー](../user-interface/task-recorder.md)
 
 [タスク記録を使用してドキュメントやトレーニングを作成](../user-interface/task-recorder.md)
 
-[新規または更新タスク ガイド (2016年12月11) ]新しいタスク (ガイド月11 2016.md) 
-[新規または更新タスク ガイド (2016年12月8) ] ([更新タスク ガイド使用できます尊厳な2016.md) 
-[新規または更新タスク ガイド (2016年12月5) ] ([更新タスク ガイド使用している場合2016.md) 
-[新しいタスク ガイド (2016年12月2) ]新しいタスク (ガイド使用して2年2016.md) 
+[新規または更新されたタスク ガイド (2016 年 11 月)](new-task-guides-november-2016.md)
+[新規または更新されたタスク ガイド (2016 年 8 月)](new-updated-task-guides-available-august-2016.md)
+[新規または更新されたタスク ガイド (2016 年 5 月)](new-updated-task-guides-available-may-2016.md)
+[新規または更新されたタスク ガイド (2016 年 2 月)](new-task-guides-available-february-2016.md)
 
 
 

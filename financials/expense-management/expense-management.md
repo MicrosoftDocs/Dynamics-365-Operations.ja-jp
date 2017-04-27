@@ -26,8 +26,13 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="expense-management"></a>経費管理
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 [経費管理の計画](plan-expense-management.md) 詳細は今後追加されます。後でもう一度確認してください。
+
+
 
 

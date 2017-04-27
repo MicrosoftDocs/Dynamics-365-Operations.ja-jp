@@ -1,6 +1,6 @@
 ---
 title: "ワークフロー システムの概要"
-description: "この記事では、Microsoft Dynamics 365のワークフロー システムについて説明します。"
+description: "この記事では、Microsoft Dynamics 365 for Operations のワークフロー システムについて説明します。"
 author: sericks007
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="workflow-system-overview"></a>ワークフロー システムの概要
 
-この記事では、Microsoft Dynamics 365のワークフロー システムについて説明します。
+[!include[banner](../includes/banner.md)]
+
+
+この記事では、Microsoft Dynamics 365 for Operations のワークフロー システムについて説明します。
 
 <a name="what-is-workflow"></a>ワークフローについて
 -----------------
@@ -34,7 +37,7 @@ ms.lasthandoff: 03/31/2017
 *ワークフロー*という用語は 2 とおりに定義できます。それは、システムとしての定義と、業務プロセスとしての定義です。
 ### <a name="workflow-is-a-system"></a>システムとしてのワークフロー
 
-現在の作業がインストールされているDynamics 365 for OperationsとApplication Object Server (AOS)を実行し、システムです。 ワークフロー システムによって提供される機能を使用して、個々のワークフローまたは業務プロセスを作成できます。
+ワークフローは、Dynamics 365 for Operations と共にインストールされるシステムで、Application Object Server (AOS) で実行されます。 ワークフロー システムによって提供される機能を使用して、個々のワークフローまたは業務プロセスを作成できます。
 
 ### <a name="workflow-is-a-business-process"></a>業務プロセスとしてのワークフロー
 
@@ -46,6 +49,7 @@ ms.lasthandoff: 03/31/2017
 -   **一貫したプロセス** - 購買要求や経費報告書などの特定のドキュメントをどのように処理するか定義できます。 ワークフロー システムを使用することで、ドキュメントが一貫した方法で効率的に処理および承認されます。
 -   **プロセスの可視性** – ワークフロー インスタンスの状態、履歴およびパフォーマンス測定方法を追跡できます。 これは、効率を向上させるためにワークフローに変更するかどうかを決定するのに役立ちます。
 -   **集中化された作業一覧** – ユーザーは、集中化された作業一覧を表示して、自分に割り当てられているワークフロー タスクおよび承認を確認できます。
+
 
 
 

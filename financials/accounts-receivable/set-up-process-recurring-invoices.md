@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="set-up-and-process-recurring-invoices"></a>定期請求書の設定と処理
 
+[!include[banner](../includes/banner.md)]
+
+
 この記事は、定期的な請求書の設定および処理の方法を説明します。 定期的に同じ金額に対して請求書を発行する場合に、定期的な請求書を使用できます。
 
 <a name="create-a-recurring-free-text-invoice-template"></a>定期的な自由書式の請求書テンプレートの作成
@@ -61,5 +64,7 @@ ms.lasthandoff: 03/31/2017
 ----------------------------------
 
 定期請求書が転記された後、自由書式の請求書のリスト ページから請求書を印刷できます。 選択した請求書を印刷でき、また印刷する請求書の範囲を選択できます。
+
+
 
 

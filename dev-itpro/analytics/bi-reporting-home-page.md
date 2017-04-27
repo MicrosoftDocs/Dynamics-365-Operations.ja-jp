@@ -1,6 +1,6 @@
 ---
-title: "BIレポートのホーム ページ"
-description: "このトピックで &amp; は、でMicrosoft Dynamics 365 for Operationsで使用できるBIレポートのリソースを一覧表示します。"
+title: "BI &amp; レポート作成のホーム ページ"
+description: "このトピックでは、Microsoft Dynamics 365 for Operations で使用できる BI &amp; レポート作成のリソースの一覧を示します。"
 author: sericks007
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,26 +24,29 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="bi-amp-reporting-home-page"></a>BIレポートのホーム ページ
+# <a name="bi-amp-reporting-home-page"></a>BI &amp; レポート作成のホーム ページ
 
-このトピックで &amp; は、でMicrosoft Dynamics 365 for Operationsで使用できるBIレポートのリソースを一覧表示します。
+[!include[banner](../includes/banner.md)]
+
+
+このトピックでは、Microsoft Dynamics 365 for Operations で使用できる BI &amp; レポート作成のリソースの一覧を示します。 
 
 <a name="working-with-aggregate-data"></a>データの集計手順
 ---------------------------
 
--   [Analytics](analytics.md)
+-   [分析](analytics.md)
 -   [メモリ内リアルタイム集計モデルによる SSAS キューブの置換](..\migration-upgrade\in-memory-real-time-aggregate-models.md)
--   [集計データ シミュレーションし、使用する] (集計モデルdata.md) 
--   [エンティティの店舗にアップグレードしたDynamics AX 2012 R3の販売キューブを移行します。] (。\migration-upgrade\migrate-upgraded-cube-entity-store.md) 
+-   [集計データのモデリングと使用](model-aggregate-data.md)
+-   [アップグレードした Dynamics AX 2012 R3 販売キューブをエンティティの店舗へ移行する](..\migration-upgrade\migrate-upgraded-cube-entity-store.md)
 
-## <a name="self-service-reporting"></a>株主サービス レポート
--   [Power BI integration](power-bi-integration.md)
+## <a name="self-service-reporting"></a>セルフ サービス レポーティング
+-   [Power BI 統合](power-bi-integration.md)
 -   [ワークスペースの Power BI 統合のコンフィギュレーション](configure-power-bi-integration.md)
 -   [Microsoft Dynamics 365 for Operations データを使用した Power BI レポートを作成する](create-powerbi-report-data.md)
--   [Power BIとレポート作成します。ダッシュボード] (作成powerbiレポートdashboard.md) 
--   [チャンネル パフォーマンスPower BIに内容] (、チャンネル パフォーマンス ダッシュボード能力Bi data.md) 
--   [財務実績のPower BIの内容] (財務実績能力Bi内容pack.md) 
--   [販売と収益性パフォーマンスPower BIの内容] (販売収益性パフォーマンス内容pack.md) 
+-   [Power BI レポートとダッシュボードの作成](create-powerbi-report-dashboard.md)
+-   [販売チャネル パフォーマンス Power BI コンテンツ](retail-channel-performance-dashboard-power-bi-data.md)
+-   [財務パフォーマンス Power BI コンテンツ](financial-performance-power-bi-content-pack.md)
+-   [販売および収益性パフォーマンス Power BI コンテンツ](sales-profitability-performance-content-pack.md)
 -   [Dynamics Online 365 からデータを Power BI に提供する電子申告コンフィギュレーションを使用する](general-electronic-reporting-report-configuration-get-data-powerbi.md)
 
 ## <a name="building-embedded-analytical-experiences-in-the-dynamics-365-for-operations-client"></a>Dynamics 365 for Operation クライアントに埋め込まれた分析経験の作成
@@ -95,6 +98,8 @@ ms.lasthandoff: 03/31/2017
 -   [ER ドキュメント 管理ファイルをフォーマット出力で使用する (第 5 部: 形式の変更と実行) ](http://ax.help.dynamics.com/en/wiki/er-use-document-management-files-in-format-outputs-part-5-modify-and-run-format/)(タスク ガイド)
 -   [ER 書式設定のコンフィギュレーションを使用する支払の電子ドキュメントの生成](http://ax.help.dynamics.com/en/wiki/generate-electronic-documents-for-payments-using-a-format-configuration/)(タスク ガイド)
 -   [この形式の新しい基準バージョンを採用して ER 形式をアップグレード](http://ax.help.dynamics.com/en/wiki/upgrade-your-format-by-adopting-a-new-base-version-of-that-format/)(タスク ガイド)
+
+
 
 
 

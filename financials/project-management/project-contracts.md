@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="project-contracts"></a>プロジェクト契約
 
+[!include[banner](../includes/banner.md)]
+
+
 この記事では、さまざまなタイプのプロジェクトや資金調達ソースで作成できるプロジェクト契約について、また Microsoft Dynamics 365 for Operations で契約を管理しプロジェクト顧客に請求する方法についての説明と例を提供します。
 
 プロジェクト契約に作成するプロジェクト タイプで、プロジェクトの顧客への請求方法が決まります。 プロジェクト契約と関連するプロジェクトは変更できますが、プロジェクト タイプは変更できません。 
@@ -80,7 +83,7 @@ Microsoft Dynamics 365 for Operations では、1 つのトランザクション�
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><strong>Scenario</strong></td>
+<td><strong>シナリオ</strong></td>
 <td><strong>資金調達ソース</strong></td>
 <td><strong>配賦割合</strong></td>
 <td><strong>配賦優先順位</strong></td>
@@ -192,7 +195,7 @@ Microsoft Dynamics 365 for Operations では、1 つのトランザクション�
 <tbody>
 <tr class="odd">
 <td><strong>フォーカス</strong></td>
-<td><strong>Details</strong></td>
+<td><strong>詳細</strong></td>
 </tr>
 <tr class="even">
 <td>資金調達ルール</td>
@@ -220,16 +223,16 @@ Microsoft Dynamics 365 for Operations では、1 つのトランザクション�
 </tr>
 <tr class="odd">
 <td>トランザクション 2</td>
-<td><strong>トランザクション金額:</strong> 5,000.00<strong>資金供給:</strong> トランザクションは、すべての3つのルールに従って給与が支払われます。<strong>ルール1</strong>
+<td><strong>トランザクション金額:</strong> 5,000<strong>資金調達:</strong> トランザクションは、3 つのすべてのルールに従って支払われます。<strong>ルール 1</strong>
 <ul>
 <li>資金調達ソース 2: 450.00</li>
 <li>資金調達ソース 3: 450.00</li>
 </ul>
-<strong>ルール2</strong>
+<strong>ルール 2</strong>
 <ul>
 <li>資金調達ソース 3: 250.00 (= 750.00 – 50.00 – 450.00)</li>
 </ul>
-<strong>ルール3</strong>
+<strong>ルール 3</strong>
 <ul>
 <li>資金調達ソース 1: 3,850.00 (= 5,000.00 – 450.00 – 450.00 – 250.00)</li>
 </ul></td>
@@ -339,5 +342,7 @@ Microsoft Dynamics 365 for Operations では、1 つのトランザクション�
 -   プロジェクト中の各カレンダー月の最終日に顧客請求書を作成します。
 
 最初の月に、合計 800 時間がプロジェクトでコンサルタントによって記録されます。 プロジェクトに請求される事務用品のコストは 2,000 ドルです。 したがって、月末に、事務用品の 2,000 ドルと 1 時間あたり 150 ドルの 800 時間として計算された、122,000 ドルの請求書を作成します。
+
+
 
 

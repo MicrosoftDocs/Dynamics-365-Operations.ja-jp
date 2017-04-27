@@ -1,6 +1,6 @@
 ---
-title: "工程のクライアントよく寄せられる質問365 for Operations"
-description: "この記事は、クライアントにMicrosoft Dynamics 365に関するよく寄せられる質問に対する回答を提供します。"
+title: "Dynamics 365 for Operations クライアントのよく寄せられる質問"
+description: "この記事は、Microsoft Dynamics 365 for Operations クライアントについてよく寄せられる質問に対する回答を提供します。"
 author: jasongre
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,33 +24,38 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="dynamics-365-for-operations-client-faq"></a>工程のクライアントよく寄せられる質問365 for Operations
+# <a name="dynamics-365-for-operations-client-faq"></a>Dynamics 365 for Operations クライアントのよく寄せられる質問
 
-この記事は、クライアントにMicrosoft Dynamics 365に関するよく寄せられる質問に対する回答を提供します。
+[!include[banner](../includes/banner.md)]
 
-<a name="why-arent-symbols-loaded-when-i-use-dynamics-365-for-operations"></a>記号は、なぜが、Dynamics 365 for Operationsを使用すると、読み込みされません。
+
+この記事は、Microsoft Dynamics 365 for Operations クライアントについてよく寄せられる質問に対する回答を提供します。
+
+<a name="why-arent-symbols-loaded-when-i-use-dynamics-365-for-operations"></a>Dynamics 365 for Operations の使用時に、なぜ記号が読み込まれないのですか。
 -----------------------------------------------------------------
 
 ブラウザーのセキュリティ設定が、記号を正しく読み込むことを妨げている可能性があります。 この問題を解決するには、次の手順を試してください。
 
--   Internet Explorerでこの問題が発生した場合は、**ツール**クリックし、[]をクリックします。**インターネット オプション**。  インターネット オプション]ダイアログ ボックスで、**プライバシー**]タブで、**カスタム レベル**クリックし、**フォントのダウンロード**オプションが選択されていることを確認します。
--   それ以外の場合は、信頼されたサイトの一覧に工程のサイト365 for Operationsを追加する必要があるかもしがあります。
+-   Internet Explorer でこの問題が発生する場合、[**ツール**] をクリックしてから、[**インターネット オプション**] をクリックします。  [インターネット オプション] ダイアログ ボックスの [**プライバシー**] タブで [**レベルのカスタマイズ**] をクリックし、[**フォントのダウンロード**] オプションが選択されていることを確認します。
+-   それ以外の場合は、信頼済サイトのリストに Dynamics 365 for Operations サイトを追加する必要があります。
 
-## <a name="i-miss-the-ribbon-from-dynamics-ax-2012-can-i-keep-action-pane-tabs-open-all-the-time"></a>場合によっては、Dynamics AX 2012のリボンがありません。 [アクション ウィンドウのタブを開いたままにするためですか。
-ただし、この機能を同時に実行するようにしています。 ユーザーは、アクション ウィンドウのタブを開いたままにすることもできます。 それ以外の場合は、使用していないときはタブは折りたたまれ、ページの画面スペースがより広くなります。
+## <a name="i-miss-the-ribbon-from-dynamics-ax-2012-can-i-keep-action-pane-tabs-open-all-the-time"></a>Dynamics AX 2012 のリボンがありません。 [アクション ウィンドウ] のタブを常時開いておくことはできますか。
+近々この機能を搭載する予定です。 ユーザーはアクション ウィンドウのタブを常時開いておくかどうか選択できるようになります。 それ以外の場合は、使用していないときはタブは折りたたまれ、ページの画面スペースがより広くなります。
 
-## <a name="why-do-i-sometimes-see-different-shortcut-menus-when-i-rightclick"></a>、なぜ、なぜ右クリックすると、メニューを切り詰めるに表示しますか。
-編集可能なフィールドで (またはテキストが選択されている場合に) 右クリックすると、ブラウザーのショートカット メニューが表示されます。 このメニューから、[**切り取り**] 、[**コピー**] 、[**貼り付け**] コマンドにアクセスできます。 ただし、工程のショートカット メニュー365 for Operationsは、セキュリティ上の理由から、ブラウザがMicrosoftが要網的にシステム クリップボードにアクセスできるようにないので、次のコマンドを埋め込むことはできません。
+## <a name="why-do-i-sometimes-see-different-shortcut-menus-when-i-rightclick"></a>右クリックしたときに、ときどき異なるショートカット メニューが表示されるのは、なぜですか。
+編集可能なフィールドで (またはテキストが選択されている場合に) 右クリックすると、ブラウザーのショートカット メニューが表示されます。 このメニューから、[**切り取り**] 、[**コピー**] 、[**貼り付け**] コマンドにアクセスできます。 Dynamics 365 for Operations ショートカット メニューにこれらのコマンドを埋め込むことはできません。セキュリティ上の理由から、ブラウザーは、システムのクリップボードにプログラムからアクセスすることを許可していないためです。
 
-読み取り専用制御のフィールドまたはラベル値を右クリックすると、アクションのショートカット メニューについては、Dynamics 365 for Operationsが表示されます。
+読み取り専用コントロールのフィールド ラベルや値を右クリックすると、Dynamics 365 for Operations ショートカット メニューが表示されます。
 
-キーボードを行うには容易に、その工程のショートカット メニュー365 for Operationsを開くキーボード ショートカットを将来実行する計画にアクセスします。
+キーボードでのアクセスを容易にするために、Dynamics 365 for Operations ショートカット メニューを開く機能にキーボード ショートカットを実装する予定です。
 
-## <a name="where-is-the-view-details-functionality-in-dynamics-365-for-operations"></a>ビューの詳細の機能は常に365 for Operationsの工程がありますか。
+## <a name="where-is-the-view-details-functionality-in-dynamics-365-for-operations"></a>Dynamics 365 for Operations に、詳細の表示機能はありますか。
 [**詳細の表示**] オプションが、いくつかの方法で使用できます。
 
 -   コントロールに [**詳細の表示 **] 機能がある場合、およびコントロールに値がある場合、その値はハイパーリンクとして表示されます。 ハイパーリンクをクリックすると、詳細を含むページを開くことができます。
--   **表示の詳細**工程のショートカット メニュー365 for Operationsのオプションもあります。 詳細についてはに関する右クリックすると、アクションのショートカット メニューのDynamics 365が表示されたら、前の"を参照してください。
+-   また、[**詳細の表示**] は、Dynamics 365 for Operations ショートカット メニューのオプションです。 右クリックしたときに、いつ Dynamics 365 for Operations ショートカット メニューが表示されるかについては、前のセクションを参照してください。
+
+
 
 
 

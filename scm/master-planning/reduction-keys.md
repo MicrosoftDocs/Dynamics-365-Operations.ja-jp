@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="reduction-keys"></a>下方修正キー
 
+[!include[banner](../includes/banner.md)]
+
+
 この記事は、下方修正キーを設定する方法を示す例を提供します。 これには、さまざまな下方修正キーの設定とそれぞれの結果に関する情報が含まれます。 予測要求を減らす方法を定義するには下方修正キーを使用できます。
 
 <a name="example-1-percent---reduction-key-forecast-reduction-principle"></a>例 1: 割合 -下方修正キーの予測下方修正原則
@@ -58,7 +61,7 @@ ms.lasthandoff: 03/31/2017
 | 4 月                | 750                       |
 | 5 ～ 12 月 | 1.000                     |
 
-## <a name="example-2-transactions--reduction-key-forecast-reduction-principle"></a>例2: トランザクションの下方修正キーの予測下方修正原則
+## <a name="example-2-transactions--reduction-key-forecast-reduction-principle"></a>例 2: トランザクション - 下方修正キーの予測下方修正原則
 この例は、下方修正キーによって定義された期間中に実行される実際の注文が、需要予測要求を減少させる方法を示します。
 
 -   **マスター プラン** ページで、**下方修正原則**フィールドで**トランザクション - 下方修正キー**を選択します。
@@ -82,7 +85,7 @@ ms.lasthandoff: 03/31/2017
 | 4 月                | 881                       |
 | 5 ～ 12 月 | 1.000                     |
 
-## <a name="example-3-transactions--dynamic-period-forecast-reduction-principle"></a>例3: トランザクションの動的な期間の予測下方修正原則
+## <a name="example-3-transactions--dynamic-period-forecast-reduction-principle"></a>例 3: トランザクション - 動的期間の予測下方修正原則
 ほとんどの場合、トランザクションが特定の予測期間内の需要予測を下方修正するようにシステムが設定されています: 週、月など)。 これらの期間は下方修正キーで定義されます。 ただし、2 つの需要予測行の間の時間も、*暗黙に*期間ととらえることもできます。
 
 1.  次の日付および数量について需要予測を作成します。
@@ -129,6 +132,8 @@ ms.lasthandoff: 03/31/2017
 <a name="see-also"></a>参照
 --------
 
-[Master plans](master-plans.md)
+[マスタ プラン](master-plans.md)
+
+
 
 

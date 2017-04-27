@@ -1,5 +1,5 @@
 ---
-title: "高度なフィルタとクエリ構文"
+title: "高度なフィルター処理とクエリ構文"
 description: "この記事では、フィルタ処理とクエリ オプションについて説明します。[フィルタ/並べ替えの編集] ダイアログで、&quot;matches&quot; (一致) 演算子を使うときに利用できます。"
 author: jasongre
 manager: AnnBe
@@ -25,11 +25,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="advanced-filtering-and-query-syntax"></a>高度なフィルタとクエリ構文
+# <a name="advanced-filtering-and-query-syntax"></a>高度なフィルター処理とクエリ構文
+
+[!include[banner](../includes/banner.md)]
+
 
 この記事では、フィルタ処理とクエリ オプションについて説明します。[フィルタ/並べ替えの編集] ダイアログで、"matches" (一致) 演算子を使うときに利用できます。
 
-<a name="advanced-query-syntax"></a>詳細なクエリの構文
+<a name="advanced-query-syntax"></a>高度なクエリ構文
 ---------------------
 
 <table>
@@ -52,79 +55,79 @@ ms.lasthandoff: 03/31/2017
 <td><em>値</em></td>
 <td>入力値と等しい</td>
 <td>検索する値を入力します。</td>
-<td><strong>入力する</strong> 検索 &quot;する&quot;。</td>
+<td>「<strong>Smith</strong>」と入力すると &quot;Smith&quot; が検出されます。</td>
 </tr>
 <tr class="even">
-<td>。<em>値</em> (感嘆符) </td>
+<td>!<em>値</em> (感嘆符)</td>
 <td>入力値と等しくない</td>
 <td>感嘆符を入力し、次に除外する値を入力します。</td>
-<td><strong>。入力する</strong> Smithを除くすべての値が &quot;&quot;検出されます。</td>
+<td>「<strong>!Smith</strong>」と入力すると &quot;Smith&quot; 以外のすべての値が検出されます。</td>
 </tr>
 <tr class="odd">
 <td><em>入力開始値</em>..<em>入力終了値</em> (ピリオド 2 つ)</td>
 <td>2 つのピリオドで区切られた 2 つの値の間</td>
 <td>開始値、2 つのピリオド、終了値の順に入力します。</td>
-<td><strong>1..10</strong> すべての値1 ~ 10.の検出されます。 ただし、文字列] <strong>A.C</strong> フィールドで、AとサイトBから開始 &quot;します (&quot;&quot;&quot;C.にまったく同じ値は、&quot;この&quot;クエリCa.を見つけません値を &quot;すべて検索します。&quot; A*のC*に &quot;よって値を &quot;すべて検索する&quot;には、入力します <strong>A.D</strong>。</td>
+<td>「<strong>1..10</strong>」と入力すると、1 ～ 10 までのすべての値が検出されます。 ただし、文字列フィールドに「<strong>A..C</strong>」と入力すると、&quot;A&quot; および &quot;B&quot; で始まるすべての値と、値 &quot;C&quot; が検出されます。たとえば &quot;Ca&quot; は検出されません)。 &quot;A*&quot; から &quot;C*&quot; までのすべての値を検出するには、「<strong>A..D</strong>」と入力します。</td>
 </tr>
 <tr class="even">
 <td>..<em>値</em> (2 つのピリオド)</td>
 <td>入力値以下</td>
 <td>2 つのピリオド、値の順に入力します。</td>
-<td><strong>。.1000</strong> 1000以下、100など、999.95で &quot;あり&quot;&quot;、1,000を&quot;参照 &quot;番号&quot;。</td>
+<td>「<strong>..1000</strong>」と入力すると、1000 以下のすべての数値が検出されます (&quot;100&quot;、&quot;999.95&quot;、&quot;1,000&quot; など)。</td>
 </tr>
 <tr class="odd">
 <td><em>値</em>.. (2 つのピリオド)</td>
 <td>入力値以上</td>
 <td>値、2 つのピリオドの順に入力します。</td>
-<td><strong>1000..</strong> 1000により大きい値)、1,000など、1,000.01 &quot;、&quot;1,000,000を&quot;参照 &quot;番号&quot;。</td>
+<td>「<strong>1000..</strong>」と入力すると、 1000 以上のすべての数値が検出されます (&quot;1,000&quot;、&quot;1,000.01&quot;、&quot;1,000,000&quot; など)。</td>
 </tr>
 <tr class="even">
-<td>&gt;<em>値</em> (符号を超える) </td>
+<td>&gt;<em>値</em> (大なり記号)</td>
 <td>入力値より大きい</td>
-<td>[より大きいの署名 (<strong>&gt;</strong>値) と入力します。</td>
-<td><strong>&gt;1000</strong> 1000より大きい、1000.01など、20,000 &quot;、&quot;1,000,000を&quot;参照 &quot;番号&quot;。</td>
+<td>大なり記号 (<strong>&gt;</strong>)、値の順に入力します。</td>
+<td>「<strong>&gt;1000</strong>」と入力すると、&quot;1000.01&quot;、&quot;20,000&quot;、&quot;1,000,000&quot; など、1000 より大きい数値が検出されます。</td>
 </tr>
 <tr class="odd">
-<td>&lt;<em>値</em> よりより記号 (-) </td>
+<td>&lt;<em>値</em> (小なり記号)</td>
 <td>入力値より小さい</td>
-<td>[アット マーク () と値より少ないを入力します。</td>
-<td><strong>&lt;1000</strong> 期間1000、999.99など、1で &quot;あり&quot;&quot;、-200を&quot;参照 &quot;番号&quot;。</td>
+<td>小なり記号 (<strong>&lt;</strong>)、値の順に入力します。</td>
+<td>「<strong>&lt;1000</strong>」と入力すると、&quot;999.99&quot;、&quot;1&quot;、&quot;-200&quot; など、1000 より小さい数値が検出されます。</td>
 </tr>
 <tr class="even">
-<td><em>値</em>アスタリスク (*) </td>
+<td><em>値</em>* (アスタリスク)</td>
 <td>入力値で始まる</td>
-<td>[開始値、アスタリスクの順に入力します<strong>*</strong> ()。</td>
-<td><strong>S*</strong> Stockholm、Sydney、&quot;サンフランシスコ&quot;など、複数 &quot;から&quot;開始&quot;する文字列が &quot;&quot;検出されます。</td>
+<td>開始値、アスタリスク (<strong>*</strong>) の順に入力します。</td>
+<td>「<strong>S*</strong>」では、&quot;S&quot; で始まるすべての文字列が検出されます (&quot;Stockholm&quot;、&quot;Sydney&quot;、&quot;San Francisco&quot; など)。</td>
 </tr>
 <tr class="odd">
-<td>*<em>value</em> (asterisk)</td>
+<td>*<em>値</em> (アスタリスク)</td>
 <td>入力値で終わる</td>
 <td>アスタリスク、終了値の順に入力します。</td>
-<td><strong>*east</strong> Northeast " Southeast "など、East &quot;で&quot;終了 &quot;&quot; する文字列が &quot;&quot;検出されます。</td>
+<td>「<strong>*east</strong>」では、&quot;east&quot; で終了するすべての文字列が検出されます (&quot;Northeast&quot; や &quot;Southeast&quot; など)。</td>
 </tr>
 <tr class="even">
-<td>*<em>値</em>アスタリスク (*) </td>
+<td>*<em>値</em>* (アスタリスク)</td>
 <td>入力値を含む</td>
 <td>アスタリスク、値、アスタリスクの順に入力します。</td>
-<td><strong>*th*</strong> thを含むNortheast " &quot;Southeast&quot;の &quot;ような文字列が&quot;&quot;&quot;検出されます。</td>
+<td>「<strong>*th*</strong>」では、&quot;th&quot; を含むすべての文字列が検出されます (&quot;Northeast&quot; や &quot;Southeast&quot; など)。</td>
 </tr>
 <tr class="odd">
 <td>? (疑問符)</td>
 <td>不特定の文字を 1 つ以上含む</td>
 <td>値内の不特定文字の位置に疑問符を入力します。</td>
-<td><strong>Smか。th</strong> 検索 &quot;する&quot; と &quot;"&quot;。</td>
+<td>「<strong>Sm?th</strong>」と入力すると、&quot;Smith&quot; や &quot;Smyth&quot; が検出されます。</td>
 </tr>
 <tr class="even">
 <td><em>値</em>,<em>値</em> (コンマ)</td>
 <td>コンマで区切られた入力値と一致</td>
 <td>すべての条件をコンマで区切って入力します。</td>
-<td><strong>A、D、F (G</strong> 場所を検索 &quot;が&quot;A &quot;、&quot;D &quot;、&quot;および&quot;<strong>10、20、30、100</strong> F &quot;G.で検索 &quot;10、20、30、100&quot;。</td>
+<td>「<strong>A, D, F, G</strong>」と入力すると、&quot;A&quot;、&quot;D&quot;、&quot;F&quot;、&quot;G&quot; が検出されます。「<strong>10, 20, 30, 100</strong>」と入力すると、&quot;10, 20, 30, 100&quot;が検出されます。</td>
 </tr>
 <tr class="odd">
 <td>(<span class="code">SQL ステートメント</span>) (SQL ステートメントをかっこで囲む)</td>
 <td>定義されたクエリと一致</td>
 <td>クエリをかっこに囲まれた SQL ステートメントとして入力します。</td>
-<td><strong><span class="code"> (データ ソース。Fieldname。= &quot;A&quot;) </span></strong></td>
+<td><strong><span class="code">(data source.Fieldname != &quot;A&quot;)</span></strong></td>
 </tr>
 <tr class="even">
 <td>選択した</td>
@@ -137,7 +140,7 @@ ms.lasthandoff: 03/31/2017
 <td><strong>SysQueryRangeUtil</strong> メソッドのパラメーターで指定された値または値の範囲との照合</td>
 <td>値または値の範囲を指定するパラメーターを持つ <strong>SysQueryRangeUtil</strong> メソッドを入力します。</td>
 <td><ol>
-<li>[ <strong>売掛金勘定</strong> &gt; <strong>請求</strong> &gt; <strong>顧客請求書を開きます</strong>。</li>
+<li>[<strong>売掛金勘定</strong>] &gt; [<strong>請求書</strong>] &gt; [<strong>未処理の顧客請求書</strong>] の順にクリックします。</li>
 <li>Ctrl+Shift+F3 を押して、<strong>照会</strong>ページを開きます。</li>
 <li><strong>範囲</strong> タブで <strong>Add</strong> をクリックします。</li>
 <li><strong>テーブル</strong> フィールドで、<strong>未処理の顧客トランザクション</strong>を選択します。</li>
@@ -183,7 +186,7 @@ ms.lasthandoff: 03/31/2017
 </ul></td>
 </tr>
 <tr class="odd">
-<td>GreaterThanDate (_relativeDays=0) GreaterThanUtcDate (_relativeDays=0) </td>
+<td>GreaterThanDate (_relativeDays=0) GreaterThanUtcDate (_relativeDays=0)</td>
 <td>相対指定の日付より後のすべての日付を検索します。</td>
 <td><ul>
 <li><strong>30日後以上</strong> – <strong>(GreaterThanDate(30))</strong>と入力します。</li>
@@ -197,7 +200,7 @@ ms.lasthandoff: 03/31/2017
 </ul></td>
 </tr>
 <tr class="odd">
-<td>LessThanDate (_relativeDays=0) LessThanUtcDate (_relativeDays=0) </td>
+<td>LessThanDate (_relativeDays=0) LessThanUtcDate (_relativeDays=0)</td>
 <td>相対指定の日付より前のすべての日付を検索します。</td>
 <td><ul>
 <li><strong>今日から 7 日まで</strong> –「<strong>(LessThanDate(7))</strong>」と入力します。</li>
@@ -228,6 +231,8 @@ ms.lasthandoff: 03/31/2017
 </tr>
 </tbody>
 </table>
+
+
 
 
 

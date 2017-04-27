@@ -1,6 +1,6 @@
 ---
 title: "損益計算書財務諸表"
-description: "この記事では、損益計算書の既定のレポートについて説明します。 また、このレポートに関連付けられるレポート パーツを説明します。"
+description: "この記事では、損益計算書の既定のレポートについて説明します。 また、このレポートに関連付けられる構成要素を説明します。"
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="income-statement-financial-report"></a>損益計算書財務諸表
 
-この記事では、損益計算書の既定のレポートについて説明します。 また、このレポートに関連付けられるレポート パーツを説明します。 
+[!include[banner](../includes/banner.md)]
+
+
+この記事では、損益計算書の既定のレポートについて説明します。 また、このレポートに関連付けられる構成要素を説明します。 
 
 <a name="default-income-statement-report"></a>既定の損益計算書表
 -------------------------------
@@ -61,10 +64,12 @@ ms.lasthandoff: 03/31/2017
 <a name="see-also"></a>参照
 --------
 
-[Financial reporting](financial-reporting-getting-started.md)
+[財務報告](financial-reporting-getting-started.md)
 
-[View financial reports](view-financial-reports.md)
+[財務諸表の表示](view-financial-reports.md)
 
-[Dynamicsの財務Reportignのブログ] (http://blogs.msdn.com/b/dynamics_financial_reporting/)
+[Dynamics 財務報告ブログ](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+
+
 
 

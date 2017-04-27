@@ -1,5 +1,5 @@
 ---
-title: "展開に追跡を使用します。"
+title: "展開のトレースを使用する"
 description: "この記事は、注文の展開結果の背後にある原因を参照して追跡する方法について説明します。"
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="use-tracing-for-explosion"></a>展開に追跡を使用します。
+# <a name="use-tracing-for-explosion"></a>展開のトレースを使用する
+
+[!include[banner](../includes/banner.md)]
+
 
 この記事は、注文の展開結果の背後にある原因を参照して追跡する方法について説明します。
 
@@ -43,6 +46,8 @@ ms.lasthandoff: 03/31/2017
 <a name="see-also"></a>参照
 --------
 
-[Master plans](master-plans.md)
+[マスタ プラン](master-plans.md)
+
+
 
 

@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="inventory-locations"></a>在庫場所
 
+[!include[banner](../includes/banner.md)]
+
+
 在庫場所は、品目の保存場所、および WMS I 倉庫で品目がピッキングされる場所を特定するために基本倉庫 (WMS I) で使用されます。
 
 このトピックは、在庫管理モジュールの機能に適用されます。 これは、倉庫管理モジュールの機能には適用されません。
@@ -64,6 +67,8 @@ ms.lasthandoff: 03/31/2017
 <a name="see-also"></a>参照
 --------
 
-[新しい倉庫のレイアウト (作業ガイドを作成する) ] (https://ax.help.dynamics.com/en/wiki/create-a-new-warehouse-layout/)
+[新しい倉庫レイアウトの作成 (タスク ガイド)](https://ax.help.dynamics.com/en/wiki/create-a-new-warehouse-layout/)
+
+
 
 

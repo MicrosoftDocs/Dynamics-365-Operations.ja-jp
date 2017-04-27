@@ -1,5 +1,5 @@
 ---
-title: "interunitの会計の釣り合った仕訳帳"
+title: "単位間会計のバランス仕訳帳"
 description: "この記事は、差引勘定する財務分析コードを [元帳] ページで選択したときに仕訳帳がどのように自動的に差引勘定されるかを示します。"
 author: twheeloc
 manager: AnnBe
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="balanced-journals-for-interunit-accounting"></a>interunitの会計の釣り合った仕訳帳
+# <a name="balanced-journals-for-interunit-accounting"></a>単位間会計のバランス仕訳帳
+
+[!include[banner](../includes/banner.md)]
+
 
 この記事は、差引勘定する財務分析コードを [元帳] ページで選択したときに仕訳帳がどのように自動的に差引勘定されるかを示します。 
 
@@ -47,8 +50,10 @@ ms.lasthandoff: 03/31/2017
 
 |                                   |           |
 |-----------------------------------|-----------|
-|  (Interunitの借方) – MSP – OU\_256 | 100.00 DR |
-|  (Interunitの貸方) – NY – OU\_249 | 100.00 CR |
+| (単位間の借方) – MSP – OU\_256 | 100.00 DR |
+| (単位間の借方) – NY – OU\_249 | 100.00 CR |
+
+
 
 
 

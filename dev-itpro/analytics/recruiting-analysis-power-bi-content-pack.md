@@ -1,6 +1,6 @@
 ---
-title: "Power BI採用の内容"
-description: "このトピックでは、]Power BI採用の内容365 for Operationsについて説明します。 コンテンツ パックに含まれる説明し、コンテンツ パックを作成するのに使用されたエンティティとデータ モデルに関する情報を提供するレポートにアクセスする方法。"
+title: "Recruiting Power BI コンテンツの採用"
+description: "このトピックでは Dynamics 365 for Operations - Recruiting Power BI コンテンツについて説明します。 コンテンツ パックに含まれているレポートにアクセスする方法を説明し、コンテンツ パックを作成するために使用したデータ モデルおよびエンティティについての情報を提供します。"
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,49 +24,52 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="recruiting-power-bi-content"></a>Power BI採用の内容
+# <a name="recruiting-power-bi-content"></a>Recruiting Power BI コンテンツの採用
 
-このトピックでは、]Power BI採用の内容365 for Operationsについて説明します。 コンテンツ パックに含まれる説明し、コンテンツ パックを作成するのに使用されたエンティティとデータ モデルに関する情報を提供するレポートにアクセスする方法。
+[!include[banner](../includes/banner.md)]
 
-<a name="accessing-the-content-pack"></a>コンテンツPackのアクセス
+
+このトピックでは Dynamics 365 for Operations - Recruiting Power BI コンテンツについて説明します。 コンテンツ パックに含まれているレポートにアクセスする方法を説明し、コンテンツ パックを作成するために使用したデータ モデルおよびエンティティについての情報を提供します。
+
+<a name="accessing-the-content-pack"></a>コンテンツ パックへのアクセス
 --------------------------
 
-Microsoft Dynamics Lifecycle Services (LCS)の共有資産のライブラリの採用のコンテンツ パックを検索できます。 コンテンツ パックをダウンロードし、データのMicrosoft Dynamics 365に接続する方法の詳細については、" "を参照してください]、[Microsoftパートナー (能力Bi内容Microsoft partners.md) のLCSのPower BIの内容。
+Recruiting コンテンツ パックは、Microsoft Dynamics Lifecycle Services (LCS) の共有アセット ライブラリにあります。 コンテンツ パックのダウンロード方法および Microsoft Dynamics 365 for Operations データに接続する方法の詳細については、「[Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md)」を参照してください。
 
 ## <a name="reports-that-are-included-in-the-content-pack"></a>コンテンツ パックに含まれるレポート
-工程365 for OperationsデータにコンテンツPack接続されたら、レポートは、組織のデータが表示されます。 は、Microsoft Power BIの前に使用していない場合は、そのコンフィギュレーションに関する情報を入手ことができます。[導かれるPower BI説明します] (https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData)のページを。 コンテンツ パックに含まれるレポートに追加情報を含むテーブルの両方とグラフがあります。 次の表にレポートを示します。
+コンテンツ パックを Dynamics 365 for Operations データに接続した後に、レポートに組織のデータが表示されます。 Microsoft Power BI を以前に使用したことがない場合は、詳細については「[Guided Learning page for Power BI](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData)」を参照してください。 コンテンツ パックに含まれるレポートには、追加情報を含むグラフとテーブルの両方があります。 次の表にレポートを示します。
 
 | レポート                        | コンテンツ                                                                                               |
 |------------------------------|--------------------------------------------------------------------------------------------------------|
-| 申請者の分析           | 場所によってジョブ、申請者ソース、申請者、および申請者の合計数による申請者           |
-| 申請者のステータス             | タイプおよびステータスに応じて申請者、および申請者のステータス                                                    |
-| 申請者の人口統計       | 期間と性別別の申請者、および教育のレベルおよびステータスに応じて申請者                             |
-| 採用の分析          | 従業員への正味雇用率、平均日目、採用率、採用の原価                    |
-| 採用プロジェクトの分析 | 採用プロジェクト別採用プロジェクト、開始、採用プロジェクト別の申請者の数 |
+| 申請者の分析           | ジョブ別申請者、申請者ソース、場所別申請者、および申請者の合計数           |
+| 申請者のステータス             | タイプおよびステータス別申請者および申請者のステータス                                                    |
+| 申請者の人口統計       | 年齢と性別別申請者、教育レベルとステータス別申請者                             |
+| 採用分析          | 正味雇用率、平均雇用日数、悪い雇用者の割合、採用にかかる費用                    |
+| 採用プロジェクト分析 | 採用プロジェクト数、採用プロジェクトによる空き状況、採用プロジェクトによる申請者数 |
 
-これらのレポートのグラフとタイルをフィルタ処理しダッシュボードにとグラフをタイルでそのPIN。 Power BIにフィルタPINでな方法の詳細について表示する[ダッシュボード作成してコンフィギュレーション] (https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards)を。
+これらのレポートのグラフとタイルをフィルター処理し、ダッシュボードに固定することができます。 Power BI のフィルター処理と固定方法の詳細については、「[Create and Configure A Dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards)」を参照してください。
 
 ## <a name="understanding-the-data-model-and-entities"></a>データ モデルおよびエンティティの理解
-工程365 for Operationsデータが採用のコンテンツPackレポートの情報も使用されます。 次の表に、コンテンツ パックが基づいているエンティティに示します。
+Dynamics 365 for Operations のデータを使用して、採用コンテンツ パックに情報を入力します。 次の表に、コンテンツ パックが基づいているエンティティを示します。
 
 | エンティティ                          | コンテンツ                                                         | 他のエンティティとの関係                                                                                                                                                                                                                 |
 |---------------------------------|------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \_採用の申請者           | 申請者、雇用申請者は、雇用の率と原価          | \_CalendarOffset Recuriting\_する\_会社を採用する採用の\_ApplicantNameは\_RecruitmentProjectを採用する\_メディアを採用する\_ジョブを採用する\_人口統計を採用する採用の\_GeographicLocationの日付を入力します。                                |
-| 採用の\_ApplicantName       | 申請者名]ボックスに、完全名                   | \_TerminatedApplicantを採用する\_EmployedApplicantを採用する\_採用の申請者                                                                                                                                                               |
-| 採用の\_CalendarOffset      | スライス レポートへのカレンダーの相殺                                | \_TerminatedApplicantを採用する\_EmployedApplicantを採用する\_採用の申請者                                                                                                                                                               |
-| \_採用の会社             | レポートをフィルタ処理する会社                                   | \_TerminatedApplicantを採用する\_EmployedApplicantを採用する\_採用の申請者                                                                                                                                                               |
-| \_採用の日付                | 日、週、月、年                                   | \_TerminatedApplicantを採用する\_EmployedApplicantを採用する\_採用の申請者                                                                                                                                                               |
-| \_採用の人口統計        | 、性別、種族的出身と配偶者の有無誕生日         | \_TerminatedApplicantを採用する\_EmployedApplicantを採用する\_採用の申請者                                                                                                                                                               |
-| 採用の\_EmployedApplicant   | 申請者、パフォーマンス、開始日、および申請者のタイプ           | \_RecruitmentProjectを採用する\_メディアを採用する\_ジョブを採用する\_パフォーマンスを採用する\_を採用する\_ApplicantNameを採用する\_GeographicLocationを採用する\_日付を採用する\_CalendarOffsetを採用する\_採用の会社          |
-| \_採用の雇用          | 開始日、終了日、および遷移の日付                        | \_TerminatedApplicantを採用する\_EmployedApplicantを採用する\_採用の申請者                                                                                                                                                               |
-| 採用の\_GeographicLocation  | 市町村、郵便番号、市区郡、都道府県または地域                 | \_TerminatedApplicantを採用する\_EmployedApplicantを採用する\_採用の申請者                                                                                                                                                               |
-| \_採用のジョブ                 | 職務、および職位タイプ                                        | \_TerminatedApplicantを採用する\_EmployedApplicantを採用する\_採用の申請者                                                                                                                                                               |
-| \_採用のメディア               | 申請者のソース                                             | \_TerminatedApplicantを採用する\_EmployedApplicantを採用する\_採用の申請者                                                                                                                                                               |
-| \_採用のパフォーマンス         | 評価、説明、および評価モデル                            | \_TerminatedApplicantを採用する\_EmployedApplicantを採用する\_採用の申請者                                                                                                                                                               |
-| 採用の\_RecruitmentProject  | プロジェクト説明、プロジェクト ステータス、開始                | \_TerminatedApplicantを採用する\_EmployedApplicantを採用する\_採用の申請者                                                                                                                                                               |
-| 採用の\_TerminatedApplicant | 完成した申請者、理由、パフォーマンス、終了日 | \_ApplicantNameを採用する\_RecruitmentProjectを採用する\_メディアを採用する\_を採用する\_人口統計を採用する\_パフォーマンスを採用する\_GeographicLocationを採用する\_日付を採用する\_CalendarOffsetを採用する\_採用の会社 |
+| Recruiting\_Applicant           | 応募者、雇用申請者、正味雇用率、および費用          | Recruiting\_ApplicantName Recruiting\_Company Recruiting\_CalendarOffset Recuriting\_Date Recruiting\_GeographicLocation Recruiting\_Demographics Recruiting\_Job Recruiting\_Media Recruiting\_RecruitmentProject                                |
+| Recruiting\_ApplicantName       | 申請者の名、姓、フルネーム                   | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_CalendarOffset      | レポートをスライスするカレンダーのオフセット                                | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_Company             | レポートをフィルター処理する会社                                   | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_Date                | 日、週、月、年                                   | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_Demographics        | 生年月日、性別、出身民族、配偶者の有無         | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_EmployedApplicant   | 申請者、パフォーマンス、開始日、および申請者のタイプ           | Recruiting\_Company Recruiting\_CalendarOffset Recruiting\_Date Recruiting\_GeographicLocation Recruiting\_ApplicantName Recruiting\_Employment Recruiting\_Performance Recruiting\_Job Recruiting\_Media Recruiting\_RecruitmentProject          |
+| Recruiting\_Employment          | 開始日、終了日、移行日                        | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_GeographicLocation  | 市町村、市区郡、郵便番号、都道府県                 | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_Job                 | 職務、タイプ、役職                                        | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_Media               | 申請者のソース                                             | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_Performance         | 評価、説明、評価モデル                            | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_RecruitmentProject  | プロジェクト説明、プロジェクト ステータス、空き状況                | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_TerminatedApplicant | 退職済申請者、理由、パフォーマンス、終了日 | Recruiting\_Company Recruiting\_CalendarOffset Recruiting\_Date Recruiting\_GeographicLocation Recruiting\_Performance Recruiting\_Demographics Recruiting\_Employment Recruiting\_Media Recruiting\_RecruitmentProject Recruiting\_ApplicantName |
 
-これらのエンティティがと計算メジャーを作成するのに使用されます。 これらの計算メジャーは、コンテンツ パックで使用されるレポートおよび主要業績評価指標(KPIs)を計算するために使用します。 レポートおよびダッシュボードの追加の計算を含める場合は、LCSからのRecruiting.pbixファイルのダウンロードを変更できます。 このファイルはコンテンツ パックを作成するのに使用される既定のデータ モデルです。 変更をすると、追加した情報を含むダッシュボードと組織のコンテンツ パックを作成できます。
+これらのエンティティは、計算メジャーを作成するために使用されました。 これらの計算メジャーは、主要業績評価指標 (KPI) およびコンテンツ パックで使用するためのレポートを計算するために使用されます。 レポートおよびダッシュボードに追加の計算を含める場合は、LCS から Recruiting.pbix ファイルをダウンロードして変更することができます。 このファイルはコンテンツ パックを作成するために使用された既定のデータ モデルです。 変更後に、追加した情報を含む組織のコンテンツ パックとダッシュボードを作成できます。
 
 ## <a name="additional-resources"></a>追加リソース
 エンティティと建物 Power BI の内容に関連する役立つリンクを次に示します:
@@ -75,6 +78,8 @@ Microsoft Dynamics Lifecycle Services (LCS)の共有資産のライブラリの�
 -   [組織のコンテンツ パックの作成](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
 -   [Power BI を使用したデータのモデル化](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
 -   [Power BI タイルをワークスペースへ追加する](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/07/06/pinning-power-bi-reports-to-dynamics-ax-client/)
+
+
 
 
 

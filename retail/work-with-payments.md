@@ -1,5 +1,5 @@
 ---
-title: "コール センターの支払方法"
+title: "コール センターでの支払方法"
 description: "このトピックでは、[小売りとコマース] のコール センターで使用できる他のお支払方法について説明します。"
 author: josaw1
 manager: AnnBe
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 92163
 ms.assetid: 8e738907-870b-466c-ab0c-07f4a4aa47f3
 ms.search.region: global
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="payment-methods-in-a-call-center"></a>コール センターの支払方法
+# <a name="payment-methods-in-a-call-center"></a>コール センターでの支払方法
+
+[!include[banner](includes/banner.md)]
+
 
 このトピックでは、[小売りとコマース] のコール センターで使用できる他のお支払方法について説明します。
 
@@ -43,6 +46,8 @@ ms.lasthandoff: 03/31/2017
 
 -   小切手の保留により、小切手が支払方法として使用され、その小切手が保留しきい値を超えたため、財務担当者は保留にされている注文を処理することができます。 保留は手動で解除するか、または設定期間の終了時に自動的に期限が切れます。
 -   小切手およびクレジット カードを使用して発行する、手動承認を必要とする払戻しに対するしきい値を設定できます。 しきい値の量を超える払戻は、承認キューに追加されます。 払戻が承認されると、販売注文の返金を請求できます。
+
+
 
 
 

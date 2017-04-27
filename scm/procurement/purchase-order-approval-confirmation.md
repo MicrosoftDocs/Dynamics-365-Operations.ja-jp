@@ -1,5 +1,5 @@
 ---
-title: "発注書を承認、確認します。"
+title: "発注書の承認および確認"
 description: "この資料は、発注書 (PO) が作成された後の一連の状態と、変更管理の有効化の効果について説明します。"
 author: YuyuScheller
 manager: AnnBe
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="approve-and-confirm-purchase-orders"></a>発注書を承認、確認します。
+# <a name="approve-and-confirm-purchase-orders"></a>発注書の承認および確認
+
+[!include[banner](../includes/banner.md)]
+
 
 この資料は、発注書 (PO) が作成された後の一連の状態と、変更管理の有効化の効果について説明します。
 
@@ -73,12 +76,14 @@ ms.lasthandoff: 03/31/2017
 <a name="see-also"></a>参照
 --------
 
-[Purchase order overview](purchase-order-overview.md)
+[発注書の概要](purchase-order-overview.md)
 
-[Purchase order creation](purchase-order-creation.md)
+[発注書の作成](purchase-order-creation.md)
 
 [発注書に対応する製品受領書](product-receipt-against-purchase-orders.md)
 
 [仕入先請求書の概要](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
+
+
 
 

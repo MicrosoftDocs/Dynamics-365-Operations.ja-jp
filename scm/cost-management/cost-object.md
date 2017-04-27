@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="cost-objects"></a>原価オブジェクト
 
+[!include[banner](../includes/banner.md)]
+
+
 この記事は、原価オブジェクトに関する情報を提供し、原価と数量を累計する方法を説明します。 原価オブジェクトは、原価と数量を累計するエンティティです。 原価オブジェクトのエンティティは、製品またはスタイル、および色のバリアントなどの製品バリアントのいずれかです。  
 
 <a name="cost-objects"></a>原価オブジェクト
@@ -65,19 +68,21 @@ ms.lasthandoff: 03/31/2017
     -   転記された数量
 -   [**平均単位原価**] フィールドは計算済フィールドです。 この値は、[**値**] の値を [**数量**] の値で割ることにより計算されます。
 
-**注記: ** **現物価格を含めること。**パラメータは前計算には影響しません。
+**注記:** [**現物価格を含める**] パラメーターは、前の計算には影響しません。
 
 <a name="see-also"></a>参照
 --------
 
-[Product dimension group](https://technet.microsoft.com/en-us/library/aa499382.aspx)
+[製品分析コード グループ](https://technet.microsoft.com/en-us/library/aa499382.aspx)
 
-[Storage dimension group](https://technet.microsoft.com/en-us/library/hh209317.aspx)
+[記憶域分析コード グループ](https://technet.microsoft.com/en-us/library/hh209317.aspx)
 
-[Tracking dimension group](https://technet.microsoft.com/en-us/library/hh209465.aspx)
+[追跡分析コード グループ](https://technet.microsoft.com/en-us/library/hh209465.aspx)
 
-[品目をMicrosoft Dynamics AXの新機能または変更された] (/dynamics365/operations/dev-itpro/get-started/whatです-新しい変更されます) 
+[Microsoft Dynamics AX の最新情報](/dynamics365/operations/dev-itpro/get-started/whats-new-changed)
 
-[Cost entries](cost-entries.md)
+[原価エントリ](cost-entries.md)
+
+
 
 

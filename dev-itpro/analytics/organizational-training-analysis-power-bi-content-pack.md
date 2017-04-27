@@ -1,6 +1,6 @@
 ---
-title: Organizational Training Power BI content
-description: "このトピックでは、]Power BI組織のトレーニングの内容365 for Operationsについて説明します。 コンテンツ パックへのアクセス方法を説明しコンテンツ パックを作成するのに使用されたエンティティとデータ モデルについて説明します。"
+title: "Organizational Training Power BI コンテンツ"
+description: "このトピックでは、Dynamics 365 for Operations - Organizational Training Power BI コンテンツについて説明します。 コンテンツ パックにアクセスする方法、およびコンテンツ パックを構築するために使用されたデータ モデルとエンティティについて説明します。"
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,45 +24,48 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="organizational-training-power-bi-content"></a>Organizational Training Power BI content
+# <a name="organizational-training-power-bi-content"></a>Organizational Training Power BI コンテンツ
 
-このトピックでは、]Power BI組織のトレーニングの内容365 for Operationsについて説明します。 コンテンツ パックへのアクセス方法を説明しコンテンツ パックを作成するのに使用されたエンティティとデータ モデルについて説明します。
+[!include[banner](../includes/banner.md)]
 
-<a name="accessing-the-content-pack"></a>コンテンツPackのアクセス
+
+このトピックでは、Dynamics 365 for Operations - Organizational Training Power BI コンテンツについて説明します。 コンテンツ パックにアクセスする方法、およびコンテンツ パックを構築するために使用されたデータ モデルとエンティティについて説明します。
+
+<a name="accessing-the-content-pack"></a>コンテンツ パックへのアクセス
 --------------------------
 
-Microsoft Dynamics Lifecycle Services (LCS)の共有資産のライブラリの組織のトレーニングの内容Packを検索できます。 コンテンツ パックをダウンロードし、データのMicrosoft Dynamics 365に接続する方法の詳細については、" "を参照してください]、[Microsoftパートナー (能力Bi内容Microsoft partners.md) のLCSのPower BIの内容。
+Organizational Training コンテンツ パックは、Microsoft Dynamics Lifecycle Services (LCS) の共有資産ライブラリにあります。 コンテンツ パックのダウンロード方法および Microsoft Dynamics 365 for Operations データに接続する方法の詳細については、「[Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md)」を参照してください。
 
 ## <a name="reports-that-are-included-in-the-content-pack"></a>コンテンツ パックに含まれるレポート
-工程365 for OperationsデータにコンテンツPack接続されたら、レポートは、組織のデータが表示されます。 は、Microsoft Power BIの前に使用していない場合は、そのコンフィギュレーションに関する情報を入手ことができます。[導かれるPower BI説明します] (https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData)のページを。 コンテンツ パックに含まれるレポートに追加情報を含むテーブルの両方とグラフがあります。 次の表にレポートを示します。
+内容パックを Dynamics 365 for Operations データに接続した後に、レポートには組織のデータが表示されます。 Microsoft Power BI を以前に使用したことがない場合は、詳細については「[Guided Learning page for Power BI](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData)」を参照してください。 コンテンツ パックに含まれるレポートには、追加情報を含むグラフとテーブルの両方があります。 次の表にレポートを示します。
 
 | レポート           | コンテンツ                                                                    |
 |-----------------|-----------------------------------------------------------------------------|
-| コースの分析 | 場所ごとに登録、ステータス別コースの出席者、および登録リスト |
-| コース タイプ    | スキル別コース タイプ                                                       |
+| コースの分析 | 場所による登録、コース参加者のステータス、および登録リスト |
+| コースのタイプ    | スキル別コース タイプ                                                       |
 
-これらのレポートのグラフとタイルをフィルタ処理しダッシュボードにとグラフをタイルでそのPIN。 Power BIにフィルタPINでな方法の詳細について表示する[ダッシュボード作成してコンフィギュレーション] (https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards)を。
+これらのレポートのグラフとタイルをフィルター処理し、ダッシュボードに固定することができます。 Power BI のフィルター処理と固定方法の詳細については、「[Create and Configure A Dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards)」を参照してください。
 
 ## <a name="understanding-the-data-model-and-entities"></a>データ モデルおよびエンティティの理解
-工程365 for Operationsデータが組織のトレーニングの内容パックのレポートの情報も使用されます。 次の表に、コンテンツ パックが基づいているエンティティに示します。
+Dynamics 365 for Operations データを使用して、Organizational Training コンテンツ パックにレポートを入力します。 次の表に、コンテンツ パックが基づいているエンティティを示します。
 
 | エンティティ                    | コンテンツ                                                         | 他のエンティティとの関係                                                                                                                                                                  |
 |---------------------------|------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| トレーニング\_CalendarOffset  | スライス レポートへのカレンダーの相殺                                | \_CourseAttendeesを実施するトレーニング\_CourseAgenda                                                                                                                                                   |
-| トレーニングの\_の会社         | レポートをフィルタ処理する会社                                   | \_CourseAttendeesを実施するトレーニング\_CourseAgenda                                                                                                                                                   |
-| トレーニング コース\_          | コース、説明、講師名、場所、スペース、ステータス | \_CourseSkillを実施する\_CourseAttendeesを実施するトレーニング\_CourseAgenda                                                                                                                             |
-| トレーニング\_CourseAgenda    | コース日程、および開始時刻と終了時刻                          | \_コースを実施する\_日付を実施する\_CalendarOffsetを実施するトレーニングの\_会社                                                                                                                         |
-| トレーニング\_CourseAttendees | 名前、ステータス、ジョブ、および登録日付                         | \_トレーニングの\_位置を実施する\_WorkerTitleを実施する\_WorkerNameを実施する\_コースを実施する\_雇用を実施する\_人口統計を実施する\_日付を実施する\_CalendarOffsetを実施するトレーニングの\_会社 |
-| トレーニング\_CourseSkill     | スキル、スキル タイプとレベル                                     | トレーニング コース\_                                                                                                                                                                                   |
-| トレーニングの\_の日付            | 日、週、月、年                                   | \_CourseAttendeesを実施するトレーニング\_CourseAgenda                                                                                                                                                   |
-| トレーニング\_人口統計    | 、性別、種族的出身と配偶者の有無誕生日         | \_CourseAttendeesを実施するトレーニング\_CourseAgenda                                                                                                                                                   |
-| トレーニングの\_の雇用      | 開始日、終了日、および遷移の日付                        | \_CourseAttendeesを実施するトレーニング\_CourseAgenda                                                                                                                                                   |
-| トレーニングの\_ジョブ             | 職務、および職位タイプ                                        | \_CourseAttendeesを実施するトレーニング\_CourseAgenda                                                                                                                                                   |
-| トレーニングの\_の位置        | 職位、タイトルと完全に同等の(FTE)                  | \_CourseAttendeesを実施するトレーニング\_CourseAgenda                                                                                                                                                   |
-| トレーニング\_WorkerName      | 名]ボックスに、完全名                             | トレーニング\_CourseAttendees                                                                                                                                                                          |
-| トレーニング\_WorkerTitle     | タイトルと上級の日付                                         | トレーニング\_CourseAttendees                                                                                                                                                                          |
+| Training\_CalendarOffset  | レポートをスライスするカレンダーのオフセット                                | Training\_CourseAgenda Training\_CourseAttendees                                                                                                                                                   |
+| Training\_Company         | レポートをフィルター処理する会社                                   | Training\_CourseAgenda Training\_CourseAttendees                                                                                                                                                   |
+| Training\_Course          | コース、説明、講師名、場所、部屋、およびステータス | Training\_CourseAgenda Training\_CourseAttendees Training\_CourseSkill                                                                                                                             |
+| Training\_CourseAgenda    | 議題、コース、および開始時間と終了時間                          | Training\_Company Training\_CalendarOffset Training\_Date Training\_Course                                                                                                                         |
+| Training\_CourseAttendees | 名前、ステータス、ジョブ、および登録日付                         | Training\_Company Training\_CalendarOffset Training\_Date Training\_Demographics Training\_Employment Training\_Course Training\_WorkerName Training\_WorkerTitle Training\_Job Training\_Position |
+| Training\_CourseSkill     | スキル、スキル タイプ、およびレベル                                     | Training\_Course                                                                                                                                                                                   |
+| Training\_Date            | 日、週、月、年                                   | Training\_CourseAgenda Training\_CourseAttendees                                                                                                                                                   |
+| Training\_Demographics    | 生年月日、性別、出身民族、配偶者の有無         | Training\_CourseAgenda Training\_CourseAttendees                                                                                                                                                   |
+| Training\_Employment      | 開始日、終了日、移行日                        | Training\_CourseAgenda Training\_CourseAttendees                                                                                                                                                   |
+| Training\_Job             | 職務、タイプ、役職                                        | Training\_CourseAgenda Training\_CourseAttendees                                                                                                                                                   |
+| Training\_Position        | 職位、タイトル、およびフルタイム相当額 (FTE)                  | Training\_CourseAgenda Training\_CourseAttendees                                                                                                                                                   |
+| Training\_WorkerName      | 名、姓、フルネーム                             | Training\_CourseAttendees                                                                                                                                                                          |
+| Training\_WorkerTitle     | 役職と勤続日数                                         | Training\_CourseAttendees                                                                                                                                                                          |
 
-これらのエンティティがデータ モデルの計算メジャーを作成するのに使用されます。 これらの計算メジャーは、コンテンツ パックで使用されるレポートおよび主要業績評価指標(KPIs)を計算するために使用します。 レポートおよびダッシュボードの追加の計算を含める場合は、LCSからのTraining.pbixファイルのダウンロードを変更できます。 このファイルはコンテンツ パックを作成するのに使用される既定のデータ モデルです。 変更をすると、追加した情報を含むダッシュボードと組織のコンテンツ パックを作成できます。
+これらのエンティティは、データ モデルの計算メジャーを作成するために使用されました。 これらの計算メジャーは、主要業績評価指標 (KPI) およびコンテンツ パックで使用するためのレポートを計算するために使用されます。 レポートおよびダッシュボードに追加の計算を含める場合は、LCS から Training.pbix ファイルをダウンロードして変更することができます。 このファイルはコンテンツ パックを作成するために使用された既定のデータ モデルです。 変更後に、追加した情報を含む組織のコンテンツ パックとダッシュボードを作成できます。
 
 ## <a name="additional-resources"></a>追加リソース
 エンティティと建物 Power BI の内容に関連する役立つリンクを次に示します:
@@ -71,6 +74,8 @@ Microsoft Dynamics Lifecycle Services (LCS)の共有資産のライブラリの�
 -   [組織のコンテンツ パックの作成](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
 -   [Power BI を使用したデータのモデル化](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
 -   [Power BI タイルをワークスペースへ追加する](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/07/06/pinning-power-bi-reports-to-dynamics-ax-client/)
+
+
 
 
 

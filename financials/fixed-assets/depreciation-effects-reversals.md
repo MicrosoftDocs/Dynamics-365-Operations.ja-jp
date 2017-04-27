@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="depreciation-effects-with-reversals"></a>取消による減価償却の影響
 
+[!include[banner](../includes/banner.md)]
+
+
 この記事は、固定資産トランザクションの取消の潜在的な影響について説明します。 
 
 固定資産トランザクション、および固定資産に関連付けられたトランザクションを取り消すことができます。 また、取り消したトランザクションを無効にすることもできます。 
@@ -90,6 +93,8 @@ ms.lasthandoff: 03/31/2017
 <a name="see-also"></a>参照
 --------
 
-[Fixed asset depreciation](fixed-asset-depreciation.md)
+[固定資産減価償却](fixed-asset-depreciation.md)
+
+
 
 

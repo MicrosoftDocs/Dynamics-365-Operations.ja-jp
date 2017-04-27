@@ -1,6 +1,6 @@
 ---
-title: "Power BIのホーム ページ"
-description: "このトピックでは、Dynamics 365 for OperationsのPower BIの使用に役立つリソースを一覧表示します。"
+title: "Power BI ホーム ページ"
+description: "このトピックでは、Dynamics 365 での Power BI の操作に役立つリソースを示します。"
 author: sericks007
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,51 +24,56 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="power-bi-home-page"></a>Power BIのホーム ページ
+# <a name="power-bi-home-page"></a>Power BI ホーム ページ
 
-このトピックでは、Dynamics 365 for OperationsのPower BIの使用に役立つリソースを一覧表示します。
+[!include[banner](../includes/banner.md)]
 
-<a name="power-bi-content-for-dynamics-365-for-operations"></a>工程365 for OperationsのPower BIの内容
+
+このトピックでは、Dynamics 365 での Power BI の操作に役立つリソースを示します。
+
+<a name="power-bi-content-for-dynamics-365-for-operations"></a>Dynamics 365 for Operations の Power BI コンテンツ
 ------------------------------------------------
 
-| **Feature area**                  | ** Power BIの内容**                          | ** Power BIの内容の場所を**                                                                                                                                                                                         | **、**を示します。                                                                                                                                                               |
+| [**機能領域**]                  | [**Power BI コンテンツ**]                          | [**Power BI コンテンツの入手先**]                                                                                                                                                                                         | [**詳細情報**]                                                                                                                                                               |
 |-----------------------------------|-----------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 財務管理              | 財務実績                         | Microsoft Dynamics Lifecycle Services (LCS) (コンテンツPackこのバージョン工程バージョン1611では、Dynamics 365 for Operationsをサポートします。) PowerBI.com (コンテンツPackこのバージョンは、工程7.0と7.0.1はは、Microsoft Dynamics 365をサポートします)。 | [財務実績のPower BIの内容] (財務実績能力Bi内容pack.md)                                                |
+| 財務管理              | 財務パフォーマンス                         | Microsoft Dynamics Lifecycle Services (LCS) (このバージョンのコンテンツ パックは、Dynamics 365 for Operations バージョン 1611 をサポートします。) PowerBI.com (このバージョンのコンテンツ パックは、Microsoft Dynamics 365 for Operations 7.0 および 7.0.1 をサポートします。) | [財務パフォーマンス Power BI コンテンツ](financial-performance-power-bi-content-pack.md)                                               |
 |                                   | 与信および回収管理             | LCS                                                                                                                                                                                                                            |                                                                                                                                                                              |
-| 人材管理          | 採用のレポート                            | LCS                                                                                                                                                                                                                            | [Power BI採用の内容] (採用分析能力Bi内容pack.md)                                                        |
-|                                   | 従業員の能力や開発のレポート | LCS                                                                                                                                                                                                                            | [従業員の能力や開発のPower BIの内容] (従業員能力と能力開発分析Bi内容pack.md)  |
-|                                   | 組織のトレーニングのレポート               | LCS                                                                                                                                                                                                                            | [Power BI組織のトレーニングの内容] (組織トレーニング分析能力Bi内容pack.md)                              |
-|                                   | 従業員のメトリック                             | LCS                                                                                                                                                                                                                            | [従業員のメトリックスのPower BIの内容] (、従業員の能力Bi内容pack.md)                                                  |
-|                                   | 報酬とその利点のレポート             | LCS                                                                                                                                                                                                                            | [報酬とその利点のPower BIの内容] (報酬とその利点分析能力Bi内容pack.md)                          |
-| プロジェクト管理および会計 | ベスト プラクティス マネージャ                              | LCS                                                                                                                                                                                                                            |                                                                                                                                                                              |
-| Retail と Commerce               | 小売チャンネル パフォーマンス                    | PowerBI.com                                                                                                                                                                                                                    | [チャンネル パフォーマンスPower BIに内容] (、チャンネル パフォーマンス ダッシュボード能力Bi data.md)                  |
-| サプライ チェーン マネジメント           | 原価管理                               | PowerBI.com                                                                                                                                                                                                                    |  [原価管理のPower BIの内容] (原価管理内容pack.md)                                                           |
-|                                   | 販売および収益性パフォーマンス           | LCS                                                                                                                                                                                                                            | [販売と収益性パフォーマンスPower BIの内容] (販売収益性パフォーマンス内容pack.md)           |
-|                                   | 購買が分析を使います                       | LCS                                                                                                                                                                                                                            | [発注は、分析のPower BIの内容使います] (注文内容Packする機能bi.md)                                                  |
-|                                   | 原価計算の分析                      | LCS                                                                                                                                                                                                                            | [原価計算の分析のPower BIの内容] (原価-分析内容pack.md)                                          |
+| 人材管理          | 採用のレポート                            | LCS                                                                                                                                                                                                                            | [Power BI コンテンツの採用](recruiting-analysis-power-bi-content-pack.md)                                                       |
+|                                   | 従業員のコンピテンシーと開発のレポート | LCS                                                                                                                                                                                                                            | [Power BI コンテンツでの従業員のコンピテンシーと開発](employee-competencies-and-development-analysis-power-bi-content-pack.md) |
+|                                   | 組織トレーニングのレポート               | LCS                                                                                                                                                                                                                            | [Power BI コンテンツでの組織トレーニング](organizational-training-analysis-power-bi-content-pack.md)                             |
+|                                   | 従業員のメトリック                             | LCS                                                                                                                                                                                                                            | [Power BI コンテンツでの従業員のメトリック](workforce-analysis-power-bi-content-pack.md)                                                 |
+|                                   | 報酬と給付金のレポート             | LCS                                                                                                                                                                                                                            | [Power BI コンテンツでの報酬と給付金](compensation-and-benefits-analysis-power-bi-content-pack.md)                         |
+| プロジェクト管理および会計 | プラクティス マネージャー                              | LCS                                                                                                                                                                                                                            |                                                                                                                                                                              |
+| Retail と Commerce               | 小売チャネルの実績                    | PowerBI.com                                                                                                                                                                                                                    | [販売チャネル パフォーマンス Power BI コンテンツ](retail-channel-performance-dashboard-power-bi-data.md)                 |
+| サプライ チェーン マネジメント           | 原価管理                               | PowerBI.com                                                                                                                                                                                                                    |  [ Power BI コンテンツでの原価管理](cost-management-content-pack.md)                                                          |
+|                                   | 販売および収益性パフォーマンス           | LCS                                                                                                                                                                                                                            | [販売および収益性パフォーマンス Power BI コンテンツ](sales-profitability-performance-content-pack.md)          |
+|                                   | 購買先支出の分析                       | LCS                                                                                                                                                                                                                            | [Power BI コンテンツでの購買先支出分析](purchase-content-pack-for-power-bi.md)                                                 |
+|                                   | 原価会計分析                      | LCS                                                                                                                                                                                                                            | [Power BI コンテンツでの原価会計分析](cost-accounting-analysis-content-pack.md)                                         |
 |                                   | 倉庫パフォーマンス                         | LCS                                                                                                                                                                                                                            |                                                                                                                                                                              |
 |                                   | 生産パフォーマンス                        | LCS                                                                                                                                                                                                                            |                                                                                                                                                                              |
 
-## <a name="access-power-bi-content-from-lcs"></a>LCSからPower BIの内容にアクセスします。
-Power BIをダウンロードする方法については組織のデータに情報が表示されます足させ満、関連して、[Microsoftやパートナー] (能力Bi内容Microsoft partners.md) のLCSのPower BIの内容。
+## <a name="access-power-bi-content-from-lcs"></a>LCS からの Power BI コンテンツへのアクセス
+Power BI コンテンツのダウンロード方法および組織のデータに接続する方法の詳細については、「[Microsoft およびパートナーからの LCS での Power BI コンテンツ](power-bi-content-microsoft-partners.md)」を参照してください。
 
-## <a name="access-power-bi-content-from-powerbicom"></a>PowerBI.comからPower BIの内容にアクセスします。
-1.  署名して、[PowerBI.com] (https://www.powerbi.com/)。
-2.  [**データを発生させる**。
-3.  **サービス**ボックスで、[**発生させる**。
-4.  目的の選択し、[]をクリックして、コンテンツPack **発生させる**。
-5.  工程の環境365 for OperationsのURLを入力します。 URLは、** https://YourAOSTenant.cloudax.dynamics.com**にする&lt;&gt;必要があります。 Click **Next**.
-6.  ** oAuth2 **認証方法として、選択し、[]をクリックします。**署名する**します。
-7.  要求された場合は、工程の環境365 for Operationsへのアクセス許可があるMicrosoft Office 365勘定を入力します。
-8.  署名すると、インポート処理が自動的に開始されます。 インポートが完了すると、コンテンツ パックに含まれるレポートは、ナビゲーション ウィンドウに表示されます。 インポート データを表示するレポートを選択します。
+## <a name="access-power-bi-content-from-powerbicom"></a>PowerBI.com からの Power BI コンテンツへのアクセス
+1.  [PowerBI.com](https://www.powerbi.com/) にサインインします。
+2.  [**データの取得**] をクリックします。
+3.  [**サービス**] ボックスで、[**取得**] をクリックします。
+4.  必要なコンテンツ パックを選択し、[**取得**] をクリックします。
+5.  Dynamics 365 オペレーション環境の URL を入力します。 URL は、[**https://&lt;YourAOSTenant&gt;.cloudax.dynamics.com**] の形式である必要があります。 [**次へ**] をクリックします。
+6.  認証方法として [**oAuth2**] を選択し、[**署名する**] をクリックします。
+7.  プロンプトが表示されたら、Dynamics 365 for Operations 環境にアクセスする権限を持つ Microsoft Office 365 アカウントを入力します。
+8.  サインインしたら、インポート プロセスが自動的に開始されます。 インポートが完了すると、コンテンツ パックに含まれているレポートがナビゲーション ペインに表示されます。 インポートしたデータを表示するレポートを選択します。
 
-## <a name="learn-more-about-the-power-bi-integration"></a>Power BI統合に関する詳細情報を示します。
--   [Power BI integration](power-bi-integration.md)
--   [エンティティの店舗] (能力Bi統合エンティティstore.md) にPower BI統合の概要
--   [作成者はエンティティの店舗、そして] (作成者配電源Bi reports.md) にPower BIとレポート
--   [PIN Power BIは、ワークスペース報告する] (PIN能力Bi reports.md) 
--   [Microsoftやパートナー] (能力Bi内容Microsoft partners.md) のLCSのPower BIの内容
+## <a name="learn-more-about-the-power-bi-integration"></a>Power BI 統合の詳細
+-   [Power BI 統合](power-bi-integration.md)
+-   [エンティティ ストアとの Power BI の統合](power-bi-integration-entity-store.md)
+-   [エンティティ ストアで Power BI レポートを作成して配布する](author-distribute-power-bi-reports.md)
+-   [Power BI レポートをワークスペースにピン留めする](pin-power-bi-reports.md)
+-   [Microsoft およびパートナーからの LCS での Power BI コンテンツ](power-bi-content-microsoft-partners.md)
 -   [Dynamics Online 365 からデータを Power BI に提供する電子申告コンフィギュレーションを使用する](general-electronic-reporting-report-configuration-get-data-powerbi.md)
+
+
 
 
 

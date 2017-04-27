@@ -1,5 +1,5 @@
 ---
-title: "高度な口座調整MT940のインポート–構成データ エンティティのアップグレード"
+title: "詳細な口座調整 MT940 のインポート – 複合データ エンティティのアップグレード"
 description: "番号順序は、MT940 形式をサポートするために、口座取引明細書のインポート エンティティに追加する必要があります。"
 author: twheeloc
 manager: AnnBe
@@ -24,21 +24,24 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="advanced-bank-reconciliation-mt940-import--composite-data-entity-upgrade"></a>高度な口座調整MT940のインポート–構成データ エンティティのアップグレード
+# <a name="advanced-bank-reconciliation-mt940-import--composite-data-entity-upgrade"></a>詳細な口座調整 MT940 のインポート – 複合データ エンティティのアップグレード
+
+[!include[banner](../includes/banner.md)]
+
 
 番号順序は、MT940 形式をサポートするために、口座取引明細書のインポート エンティティに追加する必要があります。 
 
 次の手順で、口座取引明細書のインポート エンティティを MT940 形式をサポートするために追加します。
 
 1.  以下をコンパイルして同期します:
-    -   複合エンティティの\\BankStatementImportEntity
-    -   エンティティ\\BankStatementBalanceEntity
-    -   エンティティ\\BankStatementDocumentEntity
-    -   エンティティ\\BankStatementEntity
-    -   エンティティ\\BankStatementLineEntity
-    -   \\BankStatementStagingをテーブルにコピーします
+    -   複合エンティティ\\BankStatementImportEntity
+    -   Entity\\BankStatementBalanceEntity
+    -   Entity\\BankStatementDocumentEntity
+    -   Entity\\BankStatementEntity
+    -   Entity\\BankStatementLineEntity
+    -   Tables\\BankStatementStaging
 
-2.  データ管理の\\データ プロジェクト。
+2.  データ管理\\data projects.
     1.  MT940 のプロジェクトのインポートを読み込みます。
         1.  XSLT に変更します。
             -   [**マップの表示**]をクリックします。
@@ -58,6 +61,8 @@ ms.lasthandoff: 03/31/2017
                 -   [**SequenceNumber**] がソースからステージングにマップされたことを確認します。
 
 3.  新しい明細書をインポートします。
+
+
 
 
 

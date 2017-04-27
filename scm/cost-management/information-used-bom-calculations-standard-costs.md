@@ -1,5 +1,5 @@
 ---
-title: "標準原価でのBOM計算"
+title: "標準原価での BOM 計算"
 description: 
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="bom-calculations-with-standard-costs"></a>標準原価でのBOM計算
+# <a name="bom-calculations-with-standard-costs"></a>標準原価での BOM 計算
+
+[!include[banner](../includes/banner.md)]
+
 
 
 
@@ -78,6 +81,8 @@ ms.lasthandoff: 03/31/2017
 -   原価バージョンの内容には原価が含まれている必要がある : 内容には、原価が含まれている必要があります。 オプションで、製造品目の推奨販売価格を計算するための販売価格を含めることができます。
 
 BOM 計算を開始するときに、さまざまな情報ソースを指定できます。 サイト、計算日、原価バージョンなどを指定できます。
+
+
 
 
 

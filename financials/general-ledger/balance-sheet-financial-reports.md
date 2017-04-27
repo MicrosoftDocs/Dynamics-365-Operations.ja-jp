@@ -1,6 +1,6 @@
 ---
 title: "貸借対照表の会計報告書"
-description: "この記事では、貸借対照表の既定のレポートについて説明します。 また、これらのレポートに関連付けられるレポート パーツを説明します。"
+description: "この記事では、貸借対照表の既定のレポートについて説明します。 また、これらのレポートに関連付けられる構成要素を説明します。"
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="balance-sheet-financial-reports"></a>貸借対照表の会計報告書
 
-この記事では、貸借対照表の既定のレポートについて説明します。 また、これらのレポートに関連付けられるレポート パーツを説明します。 
+[!include[banner](../includes/banner.md)]
+
+
+この記事では、貸借対照表の既定のレポートについて説明します。 また、これらのレポートに関連付けられる構成要素を説明します。 
 
 <a name="default-balance-sheet-reports"></a>既定の貸借対照表のレポート
 -----------------------------
@@ -72,10 +75,12 @@ ms.lasthandoff: 03/31/2017
 <a name="see-also"></a>参照
 --------
 
-[Financial reporting](financial-reporting-getting-started.md)
+[財務レポート](financial-reporting-getting-started.md)
 
-[View financial reports](view-financial-reports.md)
+[財務レポートの表示](view-financial-reports.md)
 
-[Dynamicsの財務報告にブログ] (http://blogs.msdn.com/b/dynamics_financial_reporting/)
+[Dynamics Financial Reporting ブログ](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+
+
 
 

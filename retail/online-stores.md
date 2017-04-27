@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 16161
 ms.assetid: 646d560c-f856-4701-b4ca-44e357ef09b8
 ms.search.region: Global
@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 ---
 
 # <a name="online-store-overview"></a>オンライン ストアの概要
+
+[!include[banner](includes/banner.md)]
+
 
 この記事は、小売オンライン ストアに関する情報および、オンライン ストアを Microsoft Dynamics 365 for Operations で設定する方法について説明します。
 
@@ -50,5 +53,7 @@ Dynamics 365 for Operations の [小売りとコマース] は、複数の小売
 
 ## <a name="organization-hierarchies"></a>組織階層
 組織階層は、小売チャンネルを構成するために使用されます。 組織階層は、業務を構成する組織の関係を表します。 オンライン ストアを設定すると、組織階層にその店舗を追加することができます。 店舗では、品揃え、補充、およびレポートに使用されるデータを共有します。 組織階層を作成したら、目的をその階層に割り当てます。 目的は、ビジネス構造で階層を使用する方法を示します。 店舗の工程に 1 つの組織階層を作成し、品揃え、補充、およびレポートにその階層を使用できます。 また、目的ごとに組織階層を作成できます。 また、同じ目的を持つ複数の階層を作成し、それぞれにチャンネルを割り当てることもできます。 オンライン ストアに小売製品カタログを公開する場合は、少なくともオンライン ストアを品揃えの組織階層に追加する必要があります。 カタログの製品は、オンライン ストアに割り当てられている品揃えから選択します。 カタログが公開されると、公開プロセスは、オンライン ストアで使用できるようにする製品を決定するために、カタログに含まれる製品があるオンライン ストアに割り当てられている品揃えの有効日を比較します。
+
+
 
 

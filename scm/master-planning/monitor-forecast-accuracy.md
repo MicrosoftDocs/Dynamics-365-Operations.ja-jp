@@ -1,6 +1,6 @@
 ---
-title: "予測の精度を監視します。"
-description: "この記事では、Microsoft Dynamics 365を計算するついて、精度値の表示方法を説明します予測の精度のタイプを。"
+title: "予測精度を監視する"
+description: "この記事では、Microsoft Dynamics 365 for Operations によって計算される予測精度のタイプおよび精度の値の表示方法を説明しています。"
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,23 +25,28 @@ ms.lasthandoff: 03/29/2017
 
 ---
 
-# <a name="monitor-forecast-accuracy"></a>予測の精度を監視します。
+# <a name="monitor-forecast-accuracy"></a>予測精度を監視する
 
-この記事では、Microsoft Dynamics 365を計算するついて、精度値の表示方法を説明します予測の精度のタイプを。
+[!include[banner](../includes/banner.md)]
 
-Dynamics 365 for Operationsで、予測の精度の次のタイプが計算されます:
+
+この記事では、Microsoft Dynamics 365 for Operations によって計算される予測精度のタイプおよび精度の値の表示方法を説明しています。
+
+Dynamics 365 for Operations では、次のタイプの予測の正確性を計算します:
 
 -   マスター プランによって使用されている履歴予測と履歴需要を比較することによる履歴予測精度。 履歴予測精度の値 (絶対値とパーセント値の両方) を表示するには、[**需要予測の詳細**] ページの [**正確性の表示**] をクリックします。
 -   予想を生成するのに使用される予測モデルの見積精度。 精度の割合を [**需要予測の詳細**] ページの [**モデルの詳細 - MAPE**] で表示できます。 
 
-**注記: **工程の需要予測の、MicrosoftのAzureの機械学習サービスのDynamics 365を使用すると、内部モデルの精度の計算はテストデータ設定に基づいています。 テストデータ設定のサイズを指定するには、**需要予測パラメータ**ページの**テスト\_および\_のサイズを\_**パラメータを設定します。 たとえば、値を **20** に設定する場合、履歴データの最後の 20 パーセントは内部モデル精度の計算に使用されます。
+[**注記:**] Dynamics 365 for Operations Demand forecasting Microsoft Azure Machine Learning サービスを使用している場合、内部モデル精度の計算はテスト データ セットに基づきます。 テスト データ セットのサイズを指定するには、[**需要予測のパラメータ**] ページで [**TEST\_SET\_SIZE\_PERCENT**] パラメーターを設定します。 たとえば、値を **20** に設定する場合、履歴データの最後の 20 パーセントは内部モデル精度の計算に使用されます。
 
 
 <a name="see-also"></a>参照
 --------
 
-[Authorizing the adjusted forecast](authorize-adjusted-forecast.md)
+[調整された予測の承認](authorize-adjusted-forecast.md)
 
-[Remove outliers from historical transaction data when calculating a demand forecast](remove-historical-outliers-calculating-demand-forecast.md)
+[需要予測を計算するときにトランザクション履歴データから異常値を削除する](remove-historical-outliers-calculating-demand-forecast.md)
+
+
 
 

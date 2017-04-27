@@ -1,6 +1,6 @@
 ---
-title: "工程&#8211のMicrosoft Dynamics 365をインストールしてコンフィギュレーションすること; 倉庫"
-description: "このトピックでは、Microsoft Dynamics 365をインストールおよびコンフィギュレーションする方法についてする-倉庫します。"
+title: "Microsoft Dynamics 365 for Operations &#8211; Warehousing をインストールして構成する"
+description: "このトピックでは、Microsoft Dynamics 365 for Operations - Warehousing をインストールして構成する方法について説明します。"
 author: YuyuScheller
 manager: AnnBe
 ms.date: 2017-04-04
@@ -26,78 +26,78 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="install-and-configure-microsoft-dynamics-365-for-operations-8211-warehousing"></a>工程&#8211のMicrosoft Dynamics 365をインストールしてコンフィギュレーションすること; 倉庫
+# <a name="install-and-configure-microsoft-dynamics-365-for-operations-8211-warehousing"></a>Microsoft Dynamics 365 for Operations &#8211; Warehousing をインストールして構成する
 
-このトピックでは、Microsoft Dynamics 365をインストールおよびコンフィギュレーションする方法についてする-倉庫します。
+このトピックでは、Microsoft Dynamics 365 for Operations - Warehousing をインストールして構成する方法について説明します。
 
-Dynamics 365 for Operations倉庫]- Googleの演劇の店舗とWindowsの店舗で使用できるアプリケーションです。 、Microsoft Dynamics 365 for Operationsの最新のバージョンで、このアプリケーションは、倉庫作業に使用するデバイスの自己配置を意味する、スタンドアロンのコンポーネントとして表示されます。 工程の環境のDynamics 365にアプリケーションを使用するには、各デバイスのアプリケーションをダウンロードし、工程の環境365 for Operationsに接続するように設定する必要があります。 このトピックでは、デバイスにアプリケーションをインストールする方法について説明します。 工程の環境365 for Operationsに接続するアプリケーションを設定する方法を説明します。
+Dynamics 365 for Operations - Warehousing は、Google Play ストアおよび Windows ストアで利用可能なアプリケーションです。 Microsoft Dynamics 365 for Operations の最新のバージョンでは、このアプリケーションはスタンドアロン コンポーネントとして提供されています。つまり、倉庫のタスクに使用されるデバイスに自己展開することを意味します。 Dynamics 365 for Operations 環境でこのアプリを使用するには、各デバイスでアプリをダウンロードし、Dynamics 365 for Operations 環境に接続するように設定する必要があります。 このトピックでは、デバイスにアプリをインストールする方法について説明します。 また、Dynamics 365 for Operations 環境に接続するようにアプリを設定する方法についても説明します。
 
 ## <a name="prerequisites"></a>必要条件
-アプリケーションはアンドロイドおよびWindowsオペレーティング システムで使用できます。 このアプリケーションを使用するには、デバイスにインストールされる次のサポートされているオペレーティング システムの一つである必要があります。 また、Dynamics 365 for Operationsの次のサポートされているバージョンの一つである必要があります。 ハードウェアとソフトウェアの環境がインストールをサポートする準備ができたときに、評価する、次の表に従います。
+このアプリは Android および Windows オペレーティング システムで使用できます。 このアプリを使用するには、デバイスに次のサポートされているオペレーティング システムの 1 つがインストールされている必要があります。 Dynamics 365 for Operations が次のサポートされているバージョンの 1 つである必要があります。 ハードウェアとソフトウェアがインストールをサポートする環境であるかどうかを評価するために役に立つ次の表の情報を使用します。
 
 | プラットフォーム                    | バージョン                                                                                                                                                                     |
 |-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 翻訳の特徴をさらに                     | 4.4, 5.0, 6.0                                                                                                                                                               |
-| Windows (UWP)                | Windows 10 (すべてのバージョン)                                                                                                                                                    |
-| Dynamics 365 for Operations | 工程バージョン1611では、Microsoft Dynamics 365 -またはMicrosoft Dynamics Dynamics AXのバージョン7.0/7.0.1および修正KB 3210014のプラットフォーム2の更新 |
+| Android                     | 4.4, 5.0, 6.0                                                                                                                                                               |
+| Windows (UWP)               | Windows 10 (すべてのバージョン)                                                                                                                                                   |
+| Dynamics 365 for Operations | Microsoft Dynamics 365 for Operations バージョン 1611 または Microsoft Dynamics Dynamics AX バージョン 7.0/7.0.1 および Microsoft Dynamics AX プラットフォーム更新プログラム 2 (KB 3210014) |
 
-## <a name="get-the-app"></a>アプリケーションを発生させる
--   Windows UWP () - [Dynamics 365 for Operations [Windowsの店舗] (https://www.microsoft.com/store/apps/9p1bffd5tstm)を倉庫は必須
--   Googleの演劇の店舗] (https://play.google.com/store/apps/details?id=com.Microsoft.Dynamics365forOperationsWarehousing)に翻訳の特徴をさらに- [Dynamics 365 for Operations倉庫]
+## <a name="get-the-app"></a>アプリの取得
+-   Windows (UWP) - [Dynamics 365 for Operations - Warehousing on the Windows ストア](https://www.microsoft.com/store/apps/9p1bffd5tstm)
+-   Android - [Dynamics 365 for Operations - Warehousing on the Google Play ストア](https://play.google.com/store/apps/details?id=com.Microsoft.Dynamics365forOperationsWarehousing)
 
-## <a name="create-a-web-service-application-in-active-directory"></a>Active DirectoryにWebサービス アプリケーションを作成します。
-アプリケーションが、サーバーの特定のDynamics 365と連携するようにするには、テナント365 for OperationsのAzureのActive DirectoryのWebサービス アプリケーションを登録する必要があります。 セキュリティ上の理由から、使用する各デバイスのWebサービス アプリケーションを作成することをお勧めします。 AzureのActive Directory (Azureの広告) Webサービス アプリケーションを作成するには、次の手順を実行します:
+## <a name="create-a-web-service-application-in-active-directory"></a>Active Directory に Web サービス アプリケーションを作成する
+アプリケーションが特定の Dynamics 365 for Operations サーバーと対話できるようにするには、Dynamics 365 for Operations テナント用の Azure Active Directory に Web サービス アプリケーションを登録する必要があります。 セキュリティ上の理由から、使用する各デバイス用の Web サービス アプリケーションを作成するようにお勧めします。 Azure Active Directory (Azure AD) で Web サービス アプリケーションを作成するには、次の手順を実行します:
 
-1.  Webブラウザでは、https://manage.windowsazure.comに<移動します>。
-2.  Azureの定期売買にアクセスできるユーザーの名前とパスワードを入力します。
-3.  Azureのポータルでは、左側のナビゲーション ウィンドウで、をクリックして** Active Directory **。[] (。/media/wh 01有効なディレクトリexample.png) [![wh 01有効なディレクトリ例] (。/media/wh 01有効なディレクトリExample.png) ] (。/media/wh 01有効なディレクトリexample.png) 
-4.  グリッドでは、Dynamics 365 for Operationsで使用されたActive Directoryのインスタンスを選択します。
-5.  上のツール バーをクリックして、アプリケーション** **。 [![wh 02有効なアプリケーション ディレクトリ] (。/media/wh 02有効なアプリケーション ディレクトリ1024x197.png) ] (。/media/wh 02有効なディレクトリapplications.png) 
-6.  下部ウィンドウで、[**追加します。**。 **アプリケーションを追加します。**ウィザードの開始。
-7.  アプリケーションの名前を入力して選択します** WebアプリケーションやWeb API **。 [![wh 03有効なアプリケーション ディレクトリ追加] (。/media/wh 03有効なディレクトリ追加するapplication.png) ] (。/media/wh 03有効なディレクトリ追加するapplication.png) 
-8.  テナント アプリケーションのURLになる承認してURLの分割、工順工程URL入力します。 承認して分割URLは、アプリケーションの認証で現在実行中は使用されませんが、必須フィールドです。 アプリケーションID URIフィールドで同じURLを入力します。 [![のwh 04広告追加プロパティ] (。/media/wh 04広告追加するproperties.png) ] (。/media/wh 04広告追加するproperties.png) 
-9.  **コンフィギュレーションします。**タブに移動します。 [![のwh 05広告設定アプリケーション] (。/media/wh 05広告コンフィギュレーションするapp.png) ] (。/media/wh 05広告コンフィギュレーションするapp.png) 
-10. **他のアプリケーションへのアクセス許可をスクロール**セクションを表示します。 [**アプリケーションを追加します。**。 [![wh 06広告、追加のアクセス許可] (。/media/wh 06広告アプリケーション追加するpermissions.png) ] (。/media/wh 06広告アプリケーション追加するpermissions.png) 
-11. **リストでは** Microsoft Dynamics ERP選択します。 **チェックを実行します。**ボタンをクリックして、ページの右角をクリックします。 [![wh 07広告[アクセス許可] (。/media/wh 07広告[permissions.png) ] (。/media/wh 07広告[permissions.png) 
-12. では**委任のアクセス許可**すべてのチェック ボックスの一覧を選択します。 Click **Save**. [![wh 08広告委任アクセス許可] (。/media/wh 08広告委任Permissions.png) ] (。/media/wh 08広告委任permissions.png) 
+1.  Web ブラウザーで、<https://manage.windowsazure.com> にアクセスします。
+2.  Azure サブスクリプションにアクセス可能なユーザーの名前とパスワードを入力します。
+3.  Azure Portal の左のナビゲーション ウィンドウで、[**Active Directory**] をクリックします。[](./media/wh-01-active-directory-example.png)[![wh-01-active-directory-example](./media/wh-01-active-directory-example.png)](./media/wh-01-active-directory-example.png)
+4.  グリッドで、Dynamics 365 for Operations で使用されている Active Directory のインスタンスを選択します。
+5.  上部のツールバーで、[**アプリケーション**] をクリックします。 [![wh-02-active-directory-applications](./media/wh-02-active-directory-applications-1024x197.png)](./media/wh-02-active-directory-applications.png)
+6.  下部ウィンドウで、[**追加**] をクリックします。 [**アプリケーションの追加**] ウィザードが起動します。
+7.  アプリケーションの名前を入力して、[**Web アプリケーションおよび/または Web API**] を選択します。 [![wh-03-active-directory-add-application](./media/wh-03-active-directory-add-application.png)](./media/wh-03-active-directory-add-application.png)
+8.  テナントのアプリケーション URL またルート Operations URL のサインオン URL を入力します。 サインオン URL は現状アプリの承認のためにアクティブに使用されていませんが、必須のフィールドです。 [アプリ ID URI] フィールドに、同じ URL を入力します。 [![wh-04-ad-add-properties](./media/wh-04-ad-add-properties.png)](./media/wh-04-ad-add-properties.png)
+9.  [**構成**] タブに移動します。 [![wh-05-ad-configure-app](./media/wh-05-ad-configure-app.png)](./media/wh-05-ad-configure-app.png)
+10. [**他のアプリケーションへのアクセス許可**] セクションが表示されるまで下へスクロールします。 [**アプリケーションの追加**] をクリックします。 [![wh-06-ad-app-add-permissions](./media/wh-06-ad-app-add-permissions.png)](./media/wh-06-ad-app-add-permissions.png)
+11. [**Microsoft Dynamics ERP**] を一覧から選択します。 ページの右上隅にある [**完了チェック**] ボタンをクリックします。 [![wh-07-ad-select-permissions](./media/wh-07-ad-select-permissions.png)](./media/wh-07-ad-select-permissions.png)
+12. [**アクセス許可の委任**] リストで、すべてのチェック ボックスをオンにします。 [**保存**] をクリックします。 [![wh-08-ad-delegate-permissions](./media/wh-08-ad-delegate-permissions.png)](./media/wh-08-ad-delegate-permissions.png)
 13. 次の情報をメモします:
-    -   **クライアントID - **ページの上部にスクロールするため、**クライアントID **表示されて表示されます。
-    -   **キーは** - **キー**セクションで、[期間を選択して、キーおよびキーをコピーします。 このキーは、後で呼ばれます**クライアントのシークレット**。
+    -   **クライアント ID** - ページを上へスクロールすると、**クライアント ID**が表示されます。
+    -   **キー** - **キー** セクションで、期間を選択してキーを作成し、キーをコピーします。 このキーは、後で**クライアント シークレット**と呼ばれます。
 
-## <a name="create-and-configure-a-user-account-in-dynamics-365-for-operations"></a>Dynamics 365 for Operationsのユーザー アカウントを作成して設定します。
-Dynamics 365 for OperationsをAzureの広告のアプリケーションを使用できるようにするには、次の手順を実行する必要があります:
+## <a name="create-and-configure-a-user-account-in-dynamics-365-for-operations"></a>Dynamics 365 for Operations でユーザー アカウントを作成および設定する
+Dynamics 365 for Operations を Azure AD アプリケーションとして使用可能にするには、次の手順を完了する必要があります。
 
-1.  工程テナント365 for OperationsのAzureのActive Directoryに新しいユーザー アカウントを作成します。 このユーザー アカウントの目的は、サーバー365 for Operationsを公開する倉庫のアプリケーションの特定のカスタム サービスにアクセスすることです。 この手順を実行すると、WMDPの電子メール アドレスとパスワードWMDPで構成されるWMDPのユーザーの資格情報があります。 Azureの広告にユーザー、Dynamics 365 for Operationsを追加するための基本的な手順についてついては、このチュートリアルを参照してください: [アクションの定期売買の登録します] (/dynamics365/operations/dev itpro/signは定期売買) は、Microsoft Dynamics 365に。
-2.  倉庫のアプリケーションのユーザーの資格情報に対応する工程のユーザー365 for Operationsを作成します。
-    1.  Dynamics 365 for Operationsで、共通の管理は**システム** &gt; ** **実行 &gt; **ユーザー**。
-    2.  新しいユーザーを作成します。
-    3.  次のスクリーン ショットに示すように、倉庫のモバイル デバイスのユーザーを割り当てます。 [![のwh 09追加ユーザー セキュリティ ロール] (。/media/wh 09追加ユーザー セキュリティrole.png) ] (。/media/wh 09追加ユーザー セキュリティrole.png) 
+1.  Azure Active Directory で Dynamics 365 for Operations テナント用の新しいユーザー アカウントを作成します。 このユーザー アカウントの目的は、Dynamics 365 for Operations サーバーが公開する、倉庫保管アプリの特定の顧客サービスにアクセスすることです。 この手順を完了した後、WMDP 電子メール アドレスと WMDP パスワードから構成される、WMDP ユーザー資格情報が作成されます。 Azure AD および Dynamics 365 for Operations にユーザーを追加する基本的な方法については、このチュートリアルを参照してください: [Sign up for a Microsoft Dynamics 365 for Operations subscription](/dynamics365/operations/dev-itpro/sign-up-preview-subscription)。
+2.  倉庫保管アプリ ユーザー資格情報に関連する Dynamics 365 for Operations ユーザーを作成します。
+    1.  Dynamics 365 for Operations で、[**システム管理**] &gt; [**共通**] &gt; [**ユーザー**] に移動します。
+    2.  新規ユーザーを作成します。
+    3.  次のスクリーンショットに示すとおり、倉庫モバイル デバイス ユーザーを割り当てます。 [![wh-09-add-user-security-role](./media/wh-09-add-user-security-role.png)](./media/wh-09-add-user-security-role.png)
 
-3.  倉庫のアプリケーションのユーザーがActive Directory Azureのアプリケーションを関連付けます。
-    1.  Dynamics 365 for Operationsで、管理設定は**システム** &gt; ** **実行 &gt; ** Active Directory Azureのアプリケーション**。
+3.  Azure Active Directory アプリケーションを倉庫保管アプリ ユーザーに関連付けます。
+    1.  Dynamics 365 for Operations で、[**システム管理**] &gt; [**セットアップ**] &gt; [**Azure Active Directory アプリケーション**] に移動します。
     2.  新しい行を作成します。
-    3.  入力します。**クライアント** ID (最新のセクションに派生し)、名前が表示され、以前に作成したユーザーを選択します。 Microsoftでは失われますこのページから簡単に365 for Operationsへのアクセス許可を削除できるようにデバイスにすべて付けることをお勧めします。 [![wh 10広告アプリケーション (フォーム)。/media/wh 10広告アプリケーションForm.png) ] (。/media/wh 10広告アプリケーションform.png) 
+    3.  **クライアント ID** (前のセクションで取得したもの) を入力し、名前を設定し、以前に作成したユーザーを選択します。 Dynamics 365 for Operations へのアクセスを紛失した場合に備えて、このページから簡単に削除できるように、すべてのデバイスにタグを付けることをお勧めします。 [![wh-10-ad-applications-form](./media/wh-10-ad-applications-form.png)](./media/wh-10-ad-applications-form.png)
 
-## <a name="configure-the-application"></a>アプリケーションを設定します。
-Azureの広告のアプリケーションによって、サーバー365 for Operationsに接続するデバイスのアプリケーションを設定する必要があります。 これを行うには、次の手順を実行します。
+## <a name="configure-the-application"></a>アプリケーションのコンフィギュレーション
+Azure AD アプリケーションを使用して Dynamics 365 for Operations サーバーに接続するには、デバイス上でアプリを設定する必要があります。 それには、次の手順を完了します。
 
-1.  アプリケーションでは、移動する**接続設定**。
-2.  **デモ モード**このフィールドをクリアします。 [![のwh 11アプリケーション接続設定デモ モード] (。/media/wh 11アプリケーション接続設定デモ モード169x300.png) ] (。/media/wh 11アプリケーション接続設定デモmode.png) 
-3.  次の情報を入力します: - ** Azureの有効なクライアントのディレクトリID - **クライアントIDがActive Directoryに手順13で、で「作成するWebアプリケーション サービスを参照。 - ** Azureの有効なディレクトリのクライアント シークレットがActive Directoryに手順13で- **クライアントで作成しますシークレットの「Webサービス アプリケーションは」取得されます。 - ** Azureの有効なディレクトリのリソースをAzure - **の広告のリソース工程のルート ディレクトリのURL 365 for Operationsを使用します。 **注記: ** フォワード スラッシュの文字を含むこのフィールドを選択しないでください (/)。 - ** Azureの有効なディレクトリ テナント**工程サーバーに365 for Operationsで使用するAzureの広告のディレクトリ テナント: https://login.windows.net/your-AD-tenant-ID&lt;&gt;です。 例: https://login.windows.net/contosooperations.onmicrosoft.comです。 
-**注記: ** フォワード スラッシュの文字を含むこのフィールドを選択しないでください (/)。 - **会社** "をアプリケーションに接続するDynamics 365 for Operationsの法人を入力します。 [![のwh 12アプリケーション接続設定] (。/media/wh 12アプリケーション接続設定169x300.png) ] (。/media/wh 12アプリケーション接続settings.png) 
-4.  ** **戻るボタンをクリックしてアプリケーションの左上隅に選択します。 アプリケーションでは、サーバー365 for Operationsに、接続、および倉庫作業員のログイン画面が表示されます。 [![wh 13ログ[] (。/media/wh 13が画面180x300.png) ] (。/media/wh 13ログscreen.png) 
+1.  アプリで、[**接続設定**] に移動します。
+2.  [**デモ モード**] フィールドをクリアします。 [![wh-11-app-connection-settings-demo-mode](./media/wh-11-app-connection-settings-demo-mode-169x300.png)](./media/wh-11-app-connection-settings-demo-mode.png)
+3.  次の情報を入力します: - **Azure Active Directory クライアント ID** - クライアント ID は「Active Directory に Web サービス アプリケーションを作成する」のステップ 13 で取得します。 - **Azure Active Directory クライアント シークレット** - クライアント シークレットは「Active Directory に Web サービス アプリケーションを作成する」のステップ 13 で取得します。 - **Azure Active Directory リソース** - The Azure AD Directory リソースは Dynamics 365 for Operations のルート URL を示します。 **注**: スラッシュ (/) でこのフィールドを終了しないでください。 - **Azure Active Directory テナント** - Dynamics 365 for Operations サーバーで使用される Azure AD Directory のテナント: https://login.windows.net/&lt;your-AD-tenant-ID&gt;。 例: https://login.windows.net/contosooperations.onmicrosoft.com 
+**注**: スラッシュ (/) でこのフィールドを終了しないでください。 - **会社** - Dynamics 365 for Operations にアプリケーションが接続する法的エンティティを入力します。 [![wh-12-app-connection-settings](./media/wh-12-app-connection-settings-169x300.png)](./media/wh-12-app-connection-settings.png)
+4.  アプリケーションの左上隅にある [**戻る**] ボタンを選択します。 アプリケーションは Dynamics 365 for Operations サーバーに接続し、倉庫ワーカーのログイン画面が表示されます。 [![wh-13-log-in-screen](./media/wh-13-log-in-screen-180x300.png)](./media/wh-13-log-in-screen.png)
 
-## <a name="remove-access-for-a-device"></a>デバイスのアクセスを削除します。
-失注または関するされているデバイスの場合、デバイスの365 for Operationsへのアクセスを必要があります。 次の手順は、アクセス許可を削除するに推奨されるプロセスについて説明します。
+## <a name="remove-access-for-a-device"></a>デバイスへのアクセスを削除する
+デバイスの紛失またはセキュリティが侵害された場合、デバイスの Dynamics 365 for Operations のアクセスを削除する必要があります。 次の手順では、アクセスを削除するための推奨プロセスについて説明します。
 
-1.  Dynamics 365 for Operationsで、管理設定は**システム** &gt; ** **実行 &gt; ** Active Directory Azureのアプリケーション**。
-2.  [アクセスを削除するデバイスに対応する明細行を削除します。 削除されたデバイスに使用する]のメモ**クライアント** ID。
-3.  https://manage.windowsazure.comをAzureの標準的なポータルに<署名します>。
-4.  ** Active Directory **アイコンが左メニューをクリックし、必要なディレクトリをクリックします。
-5.  トップ]メニューで、[**アプリケーション**、その後、コンフィギュレーションするアプリケーションをクリックします。 **クイック開始**ページで単一の承認して分割、およびそのほかのコンフィギュレーション情報が表示されます。
-6.  **コンフィギュレーションします。**タブをクリックし、スクロール、およびクライアントID **このセクションの手順2と同じが**アプリケーションの日付であることを確認します。
-7.  **削除**バー コマンド ボタンをクリックします。
-8.  ** [はい**確認メッセージの表示します。
+1.  Dynamics 365 for Operations で、[**システム管理**] &gt; [**セットアップ**] &gt; [**Azure Active Directory アプリケーション**] に移動します。
+2.  アクセスを削除するデバイスに対応する行を削除します。 削除したデバイスに使用されている**クライアント ID**を書き留めます。
+3.  Azure クラシック ポータル <https://manage.windowsazure.com> にサインインします。
+4.  左側のメニューにある [**Active Directory**] アイコンをクリックし、目的のディレクトリをクリックします。
+5.  トップ メニューで [**アプリケーション**] をクリックし、次に設定するアプリケーションをクリックします。 **クイック スタート**ページにシングル サインオンおよび他の設定情報が表示されます。
+6.  [**構成**] タブをクリックし、スクローン ダウンして、アプリケーションの**クライアント ID**が、このセクションの手順 2 と同じことを確認します。
+7.  コマンド バーの [**削除**] ボタンをクリックします。
+8.  確認メッセージで [**はい**] をクリックします。
 
 
 

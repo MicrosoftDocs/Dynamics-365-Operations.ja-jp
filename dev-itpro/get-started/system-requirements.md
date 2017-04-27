@@ -1,6 +1,6 @@
 ---
 title: "システム要件"
-description: "このトピックでは、Microsoft Dynamics 365 for Operationsの最新のバージョンのシステム要件を一覧表示します。"
+description: "このトピックでは、現在のバージョンの Microsoft Dynamics 365 for Operations のシステム要件を一覧表示します。"
 author: sericks007
 manager: AnnBe
 ms.date: 2017-04-04
@@ -26,102 +26,102 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="system-requirements"></a>システム要件
 
-このトピックでは、Microsoft Dynamics 365 for Operationsの最新のバージョンのシステム要件を一覧表示します。
+このトピックでは、現在のバージョンの Microsoft Dynamics 365 for Operations のシステム要件を一覧表示します。
 
 <a name="supported-web-browsers"></a>サポートされている Web ブラウザー
 ----------------------
 
-工程のWebアプリケーションのMicrosoft Dynamics 365が指定オペレーティング システムで実行するには、次のWebブラウザのいずれかになります:
+Microsoft Dynamics 365 for Operations Web アプリケーションは、指定されたオペレーティング システムで実行される次のすべての Web ブラウザで実行できます。
 
--   Windows 10の、Microsoftの終了 (最新の共有利用可能なバージョン) 
+-   Windows 10 の Microsoft Edge (公開されている最新のバージョン)
 -   Windows 10、Windows 8.1、または Windows 7 の Internet Explorer 11
--   Windows 10、Windows 8.1、Windows 8、Windows 7、またはGoogleの関連10のタブレットのGoogle Chrome (最新の共有利用可能なバージョン) 
--   Mac OS x 10.10 (ヨセミテ)、10.11 (El Capitan) または10.12 (山脈)、またはAppleのiPadのApple Safari (最新の共有利用可能なバージョン) 
+-   Windows 10、Windows 8.1、Windows 8、Windows 7、または Google Nexus 10 タブレットの Google Chrome (公開されている最新のバージョン)
+-   Mac OS X 10.10 (Yosemite)、 10.11 (El Capitan) または 10.12 (Sierra)、または Apple iPad の Apple Safari (公開されている最新のバージョン)
 
 各 Web ブラウザの最新版を検索するには、ソフトウェア メーカーの Web サイトに移動します。 **メモ :**
 
--   タスク レコーダから、をMicrosoft Wordドキュメントに含めるために生成される画像をキャプチャするには、Chrome拡張機能をインストールする必要があります。 <!---For instructions about how to install the extension, see [Screenshot Extension setup](/dynamics365/operations/dev-itpro/user-interface/task-recorder).-->
--   現在の作業エディタはClickOnceアプリケーションが開始されます。 Microsoft終了、Internet Explorerのみ (Microsoft WindowsでサポートされているバージョンでClickOnceアプリケーションをサポートします。 現在の作業エディタでClickOnceアプリケーションは64ビットの互換性のあるオペレーティング システムが必要です。
--   財務報告に関するレポート デザイナーはClickOnceアプリケーションが開始されます。 これは64ビットの互換性のあるオペレーティング システムが必要です。 Chromeを使用すると、レポート デザイナのクライアントをダウンロードするにClickOnce拡張機能をインストールする必要があります。 incognitoモードのChromeを使用する場合は、ClickOnceの拡張もincognitoモードを有効になることを確認します。
+-   タスク レコーダーから生成される画像をキャプチャして Microsoft Word ドキュメントに含めるには、Chrome 拡張機能をインストールする必要があります。 <!---For instructions about how to install the extension, see [Screenshot Extension setup](/dynamics365/operations/dev-itpro/user-interface/task-recorder).-->
+-   ワークフロー エディターは ClickOnce アプリケーションとして起動されます。 Microsoft Edge と Internet Explorer (Microsoft Windows のサポートされているバージョン) のみが、ClickOnce アプリケーションをサポートします。 ワークフロー エディタ ClickOnce アプリケーションには、64 ビットの互換性のあるオペレーティング システムが必要です。
+-   財務報告のレポート デザイナーは、ClickOnce アプリケーションとして起動されます。 それには 64 ビットの互換性のあるオペレーティング システムが必要です。 Chrome を使用している場合、レポート デザイナーのクライアントをダウンロードするために ClickOnce 拡張機能をインストールする必要があります。 匿名モードで Chrome を使用している場合、ClickOnce の拡張機能が匿名モードに対しても有効化されていることを確認します。
 
 ### <a name="supported-web-browsers-for-retail-cloud-pos"></a>Retail Cloud POS でサポートされている Web ブラウザー
 
-工程365 for Operationsの小売クラウドPOSは、指定されたオペレーティング システムで実行するには、次のWebブラウザのいずれかになります:
+Dynamics 365 for Operations の Retail Cloud POS は、指定されたオペレーティング システムで実行される次のすべての Web ブラウザで実行できます。
 
--   Windows 10の、Microsoftの終了 (最新の共有利用可能なバージョン) 
+-   Windows 10 の Microsoft Edge (公開されている最新のバージョン)
 -   Windows 10、Windows 8.1、または Windows 7 の Internet Explorer 11
--   Windows 10、Windows 8.1、またはWindows 7のChrome (最新の共有利用可能なバージョン) 
+-   Windows 10、Windows 8.1、または Windows 7 の Chrome (公開されている最新のバージョン)
 
 ## <a name="network-requirements"></a>ネットワーク要件
--   Dynamics 365 for Operationsは(ms) 150未満にミリ秒の待機時間のネットワークに設計されています。 これは、ブラウザのクライアントのMicrosoftのAzureのデータ センターに待機時間工程のそのホストのDynamics 365です。 ただし、http://www.azurespeed.comにネットワーク待ち時間を確認することを<お>勧めします。
--   工程365 for Operationsの帯域幅の要件はシナリオによって異なります。 最も一般的なシナリオ (キロビット/秒) /50 Event秒以上の帯域幅が必要です。 ただし、の伝送の要件がある広範なカスタマイズを含むシナリオまたはワークスペースのような場合に、追加の帯域幅をお勧めします。
+-   Dynamics 365 for Operations は、待機時間 150 ミリ秒 (ms) 未満のネットワーク用に設計されています。 これは、ブラウザー クライアントから Dynamics 365 for Operations をホストする Microsoft Azure データ センターまでの待機時間です。 <http://www.azurespeed.com> でネットワーク待機時間をテストすることをお勧めします。
+-   Dynamics 365 for Operations の帯域幅の要件はシナリオによって異なります。 最も一般的なシナリオでは、毎秒 50 キロバイト (KBps) 以上の帯域幅が必要です。 ただし、大がかりなカスタマイズを必要とするワークスペースやシナリオなど、高度な伝送データ要件があるシナリオでは、帯域幅を増やすことをお勧めします。
 
-一般に、Dynamics 365 for Operationsは、インターネットに対して最適化されます。 ブラウザーのクライアントのAzureのデータ センターにラウンド トリップの数は非常に小さく、すべての積荷は、圧縮されます。 **警告されます: **最小の帯域幅の要件に応じてユーザーの数を掛けてクライアントの場所から帯域幅要件を計算しないでください。 指定した場所によっては計算してよくに行うです。 帯域幅の要件について心配する顧客について、Dynamics 365 for Operationsのプレビュー バージョンを使用します。
+一般に、Dynamics 365 for Operations は、インターネットに最適化されます。 ブラウザー クライアントから Azure データ センターへのラウンド トリップの数は非常に小さく、全伝送データは圧縮されます。 **警告:** ユーザー数に帯域幅要件の最小値を掛けてクライアントの場所からの帯域幅要件を計算しないでください。 特定の場所の同時使用は非常に計算が困難です。 帯域幅の要件について懸念する顧客には、Dynamics 365 for Operations のプレビュー バージョンを使用します。
 
-## <a name="net-framework-requirements"></a>.NET Frameworkの要件
-Dynamics 365 for Operationsはすべてに.NET Framework Versionをクリック4.6.2ドキュメントの工順の代理店などのアプリケーション必要です。 インストール手順については、表示、[.NET Framework] (https://msdn.microsoft.com/en-us/library/5a4x27ek(v=vs.110).aspx)をインストールします。
+## <a name="net-framework-requirements"></a>.NET Framework 要件
+Dynamics 365 for Operations では、ドキュメント回覧エージェントなどのすべてのクリック ワンス アプリケーション用に .NET Framework バージョン 4.6.2 が必要です。 インストール手順については、[.NET Framework のインストール](https://msdn.microsoft.com/en-us/library/5a4x27ek(v=vs.110).aspx) を参照してください。
 
-## <a name="supported-microsoft-office-applications"></a>Microsoft Officeサポートされているアプリケーション
--   Microsoft Excelと、アドインを実行するには、インストールするWindowsまたはMacのMicrosoft Office 2016年が必要です。 詳細については、バージョン要求については、" "を参照してください[会社の連結のトラブルシューティング] (/dynamics365/operations/dev itpro/office integration/office統合トラブルシューティング)。
--   機能を言い表わすするには、Excelへのエクスポートまたはエクスポートによって生成されたドキュメントを表示するには、インストールされているMicrosoft Office 2007年後である。
+## <a name="supported-microsoft-office-applications"></a>サポートされている Microsoft Office アプリケーション
+-   Microsoft Excel と Word のアドインを実行するには、Windows か Mac 用の Microsoft Office 2016 をインストールしておく必要があります。 バージョン要件の詳細については、[Office 統合トラブルシューティング](/dynamics365/operations/dev-itpro/office-integration/office-integration-troubleshooting) を参照してください。
+-   [Excel にエクスポート] または [Word にエクスポート] 機能によって生成されたドキュメントを表示するには、Microsoft Office 2007 以降をインストールしておく必要があります。
 
-## <a name="retail-modern-pos-requirements"></a>Retail POSの現代の要件
+## <a name="retail-modern-pos-requirements"></a>Retail Modern POS 要件
 ### <a name="supported-operating-systems"></a>サポートされるオペレーティング システム
 
--   Retail POSの現代は32ビット アプリケーションですが、x86またはx64両方のアーキテクチャ実行されます。
--   Windows 10でのみRetail POSの現代プロは、Enterprise、および企業の長期的なサービスの分岐(LTSB) Editionサポートされます。
+-   Retail Modern POS は 32 ビット アプリケーションですが、x86 と x64 アーキテクチャの両方で動作します。
+-   Retail Modern POS は Windows 10 Pro、Enterprise、また Enterprise Long Term Servicing Branch (LTSB) エディションでのみサポートされています。
 
-### <a name="minimum-system-requirements"></a>最小システム要件
+### <a name="minimum-system-requirements"></a>最少システム要件
 
--   最小でサポートされて決済のは1280 × 1024です。
--   コンピュータは現代Retail POSのする必要があります。これらの条件を満たす実行します:
-    -   これは、少なくとも小数点以下2ギガヘルツ(GHz)に実行されていない二重コア プロセッサが必要です。
-    -   これは、少なくとも、RAMの(GB) 3ギガバイトの必要です。
-    -   これは、インターネット アクセス許可が必要です。
+-   最少のサポートされている解像度は 1280 × 1024 です。
+-   Retail Modern POS を実行するコンピュータは以下の要件を満たす必要があります。
+    -   最低でも、2 ギガヘルツ (GHz) で動作するデュアルコア プロセッサが必要です。
+    -   最低でも、3 ギガバイト (GB) の RAM が必要です。
+    -   インターネットにアクセスできる必要があります。
 
-## <a name="retail-hardware-station-requirements"></a>Retailのハードウェア ステーションの要件
+## <a name="retail-hardware-station-requirements"></a>Retail hardware station 要件
 ### <a name="supported-operating-systems"></a>サポートされるオペレーティング システム
 
--   Retailのハードウェア ステーションは32ビット アプリケーションですが、x86またはx64両方のアーキテクチャ実行されます。
--   Retailのハードウェア ステーションは、オペレーティング システムでサポートされます:
-    -   Windows 7プロフェッショナル、Enterprise Edition **および最終の注記: ** Internet Explorer 11をシステムで手動でインストールされている場合にのみ、Windows 7がサポートされます。
-    -   Windows 8.1、1人のプロおよび埋め込み、Enterprise Editionが更新されます
-    -   Windows 10プロ、Enterprise、LTSB Enterprise Edition
+-   Retail hardware station は 32 ビット アプリケーションですが、x86 と x64 アーキテクチャの両方で動作します。
+-   Retail hardware station は、以下のオペレーティング システムでサポートされます。
+    -   Windows 7 Professional、Enterprise、また Ultimate エディション **注記:** Windows 7 は Internet Explorer 11 が手動でシステムにインストールされている場合にのみサポートされます。
+    -   Windows 8.1 Update 1 Professional、Enterprise また Embedded エディション
+    -   Windows 10 Pro、Enterprise、また Enterprise LTSB エディション
 
-### <a name="minimum-system-requirements"></a>最小システム要件
+### <a name="minimum-system-requirements"></a>最少システム要件
 
-コンピュータは次の項目をインストールして使用するすべてのシステム要件を満たす必要があります:
+コンピュータは、以下の項目をインストールし使用するためのすべてのシステム要件を満たす必要があります。
 
 -   インターネット インフォメーション サービス (IIS)
 -   サード パーティのハードウェア
 
-## <a name="retail-store-scale-unit-requirements"></a>Retail Storeのスケールの単位の要件
+## <a name="retail-store-scale-unit-requirements"></a>Retail Store スケール ユニット要件
 ### <a name="supported-operating-systems"></a>サポートされるオペレーティング システム
 
--   Retail Storeのスケールの単位は32ビット アプリケーションですが、x86またはx64両方のアーキテクチャ実行されます。
--   Retail Storeのスケールの単位は、オペレーティング システムでサポートされます:
-    -   Windows 7プロフェッショナル、Enterprise、最終Edition
-    -   Windows 8.1、1人のプロおよび埋め込み、Enterprise Editionが更新されます
-    -   Windows 10プロ、Enterprise、LTSB Enterprise Edition
+-   Retail Store スケール ユニットは 32 ビット アプリケーションですが、x86 と x64 アーキテクチャの両方で動作します。
+-   Retail Store スケール ユニットは、以下のオペレーティング システムでサポートされます。
+    -   Windows 7 Professional、Enterprise、また Ultimate エディション
+    -   Windows 8.1 Update 1 Professional、Enterprise また Embedded エディション
+    -   Windows 10 Pro、Enterprise、また Enterprise LTSB エディション
 
-### <a name="minimum-system-requirements"></a>最小システム要件
+### <a name="minimum-system-requirements"></a>最少システム要件
 
--   の4 GB RAM
--   コアごとの速度1.6 GHzのピーク (CPU、のコアは、最小です)。
--   空き領域の少なくとも10 GB (チャンネルのデータベースが大量の領域を要求できます)。
+-   4 GB の RAM
+-   コアごとの CPU 最大処理スピード 1.6 GHz (最少 2 コア)
+-   少なくとも 10 GB の空き領域 (チャンネル データベースが大量の領域を必要とする場合があります。）
 
 ### <a name="recommended-system-requirements"></a>推奨システム要件
 
--   の6 GB RAM
--   コアごとの速度2.4 GHzのi7 (または現金) ピークCPU (4つのコアをお勧めします)。
--   空き領域の少なくとも10 GB (チャンネルのデータベースが大量の領域を要求できます)。
+-   6 GB の RAM
+-   コアごとの最大処理スピード 2.4 GHz i7 (または同等のもの) (推奨 4 コア)
+-   少なくとも 10 GB の空き領域 (チャンネル データベースが大量の領域を必要とする場合があります。）
 
-## <a name="requirements-for-development-on-local-vms"></a>ローカルVMsの開発の要件
-ローカル コンピュータ仮想(VMs)の開発の要件については、" "を参照してください[VMの連続した分割前提] (/dynamics365/operations/dev itpro/dev tools/access instances#vmことあ実行前提)。
+## <a name="requirements-for-development-on-local-vms"></a>ローカル VM の開発要件
+ローカル仮想マシン (VM) の開発要件については、[オンプレミス実行の VM](/dynamics365/operations/dev-itpro/dev-tools/access-instances#vm-that-is-running-in-premises) を参照してください。
 
 <a name="see-also"></a>参照
 --------
 
-[アクション発生させる] (/dynamics365/operations/dev itpro/dev tools/get評価コピー) 365 for Operationsの評価をコピー
+[Dynamics 365 for Operations の評価版を取得](/dynamics365/operations/dev-itpro/dev-tools/get-evaluation-copy)
 
 

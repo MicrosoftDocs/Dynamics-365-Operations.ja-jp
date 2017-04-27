@@ -1,6 +1,6 @@
 ---
 title: "口座取引明細書ファイルのインポートのトラブルシューティング"
-description: "重要と、銀行の照合の口座取引明細書ファイル、Microsoft Dynamics 365をサポートするレイアウトです。 口座取引明細書の基準が厳しいために、ほとんどの統合が正しく動作します。 ただし、明細書ファイルがインポートできない場合または不正確な結果が含まれている場合があります。 通常、これらの問題は口座取引明細書ファイルの小さな差異によって引き起こされます。 この記事は、これらの差異を修正し問題を解決する方法を説明します。"
+description: "銀行からの口座取引明細書ファイルが、Microsoft Dynamics 365 for Operations がサポートするレイアウトと一致することが重要です。 口座取引明細書の基準が厳しいために、ほとんどの統合が正しく動作します。 ただし、明細書ファイルがインポートできない場合または不正確な結果が含まれている場合があります。 通常、これらの問題は口座取引明細書ファイルの小さな差異によって引き起こされます。 この記事は、これらの差異を修正し問題を解決する方法を説明します。"
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="bank-statement-file-import-troubleshooting"></a>口座取引明細書ファイルのインポートのトラブルシューティング
 
-重要と、銀行の照合の口座取引明細書ファイル、Microsoft Dynamics 365をサポートするレイアウトです。 口座取引明細書の基準が厳しいために、ほとんどの統合が正しく動作します。 ただし、明細書ファイルがインポートできない場合または不正確な結果が含まれている場合があります。 通常、これらの問題は口座取引明細書ファイルの小さな差異によって引き起こされます。 この記事は、これらの差異を修正し問題を解決する方法を説明します。
+[!include[banner](../includes/banner.md)]
+
+
+銀行からの口座取引明細書ファイルが、Microsoft Dynamics 365 for Operations がサポートするレイアウトと一致することが重要です。 口座取引明細書の基準が厳しいために、ほとんどの統合が正しく動作します。 ただし、明細書ファイルがインポートできない場合または不正確な結果が含まれている場合があります。 通常、これらの問題は口座取引明細書ファイルの小さな差異によって引き起こされます。 この記事は、これらの差異を修正し問題を解決する方法を説明します。
 
 <a name="what-is-the-error"></a>エラーは何ですか?
 ------------------
@@ -34,16 +37,16 @@ ms.lasthandoff: 03/31/2017
 口座取引明細書ファイルのインポートを試行した後に、データ管理ジョブ履歴および実行の詳細に移動し、エラーを検索します。 エラーは、明細書、残高、または明細行を指し示すのに役立ちます。 ただし、問題の原因となっているフィールドまたは要素を識別するために十分な情報を提供することは少ないです。
 
 ## <a name="what-are-the-differences"></a>差異は何ですか?
-銀行ファイルレイアウト定義を工程のインポート定義のMicrosoft Dynamics 365 for Operationsと比較し、フィールド、および要素の差額を確認します。 工程ファイルに関するサンプル365 for Operationsと口座取引明細書ファイルを比較します。 ISO20022ファイルでは、差額が見易い必要があります。
+銀行ファイル レイアウト定義を Microsoft Dynamics 365 for Operations のインポート定義と比較し、フィールドおよび要素の差異を確認します。 口座取引明細書ファイルを関連する Dynamics 365 for Operations ファイルのサンプルと比較します。 ISO20022 ファイルでは、差異が一目で分かります。
 
 ## <a name="transformations"></a>変換
 通常、変更は次の 3 つの変換のいずれかで行われます。 各変換は、指定された標準形式で書き込まれます。
 
 | リソース名                                         | ファイル名                          |
 |-------------------------------------------------------|------------------------------------|
-| \_BAI2XML\_のxsltへのBankStmtImport\_BAI2CSV\_            | BAI2CSV-to-BAI2XML.xslt            |
-| \_\_xsltへのBankStmtImport\_ISO20022XML\_ | ISO20022XML-to-Reconciliation.xslt |
-| \_MT940XML\_のxsltへのBankStmtImport\_MT940TXT\_          | MT940TXT-to-MT940XML.xslt          |
+| BankStmtImport\_BAI2CSV\_to\_BAI2XML\_xslt            | BAI2CSV-to-BAI2XML.xslt            |
+| BankStmtImport\_ISO20022XML\_to\_Reconciliation\_xslt | ISO20022XML-to-Reconciliation.xslt |
+| BankStmtImport\_MT940TXT\_to\_MT940XML\_xslt          | MT940TXT-to-MT940XML.xslt          |
 
 ## <a name="debugging-transformations"></a>デバッグの変換
 ### <a name="adjust-the-bai2-and-mt940-files"></a>BAI2 と MT940 ファイルの調整
@@ -68,7 +71,7 @@ BAI2 と MT940 ファイルはテキスト ベースのファイルで、XSLT (E
 5.  口座取引明細書ファイルの場所の入力を設定します。
 6.  出力の場所とファイル名を定義します。
 7.  必要な区切り点を設定します。
-8.  メニューで、[** XML ** &gt; ** XSLTのデバッグを**開始します。
+8.  メニューで、[**XML**] &gt; [**XSLT デバッグの開始**] をクリックします。
 
 ### <a name="format-the-xslt-output"></a>XSLT 出力の書式設定
 
@@ -76,7 +79,7 @@ BAI2 と MT940 ファイルはテキスト ベースのファイルで、XSLT (E
 
 ### <a name="adjust-the-transformation"></a>変換の調整
 
-口座取引明細書ファイルの適切なフィールドまたは要素を得るために変換を調整します。 [アクションの要素の適切な365 for Operationsで、フィールドまたは要素をマップします。
+口座取引明細書ファイルの適切なフィールドまたは要素を得るために変換を調整します。 次に適切な Dynamics 365 for Operations の要素にそのフィールドまたは要素をマップします。
 
 ### <a name="debitcredit-indicator"></a>借方/貸方インジケーター
 
@@ -87,7 +90,7 @@ BAI2 と MT940 ファイルはテキスト ベースのファイルで、XSLT (E
 -   MT940XML-to-Reconcilation.xslt GetCreditDebitIndicator テンプレート
 
 ## <a name="examples-of-bank-statement-formats-and-technical-layouts"></a>口座取引明細書の形式と技術的な配置の例
-次の表は、詳細な口座調整のインポート ファイルの技術的な配置の定義、および 3 つの関連する口座取引明細書のサンプル ファイルの一覧を表示します。 サンプル ファイル、技術的な配置をここにダウンロードできます: https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/exofbankstfotechlayouts  
+次の表は、詳細な口座調整のインポート ファイルの技術的な配置の定義、および 3 つの関連する口座取引明細書のサンプル ファイルの一覧を表示します。 サンプル ファイルと技術的な配置はここでダウンロードできます。https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/exofbankstfotechlayouts  
 
 
 | 技術的なレイアウトの定義                             | 口座取引明細書のサンプル ファイル          |
@@ -95,6 +98,8 @@ BAI2 と MT940 ファイルはテキスト ベースのファイルで、XSLT (E
 | DynamicsAXMT940Layout                                   | MT940StatementExample                |
 | DynamicsAXISO20022Layout                                | ISO20022StatementExample             |
 | DynamicsAXBAI2Layout                                    | BAI2StatementExample                 |
+
+
 
 
 

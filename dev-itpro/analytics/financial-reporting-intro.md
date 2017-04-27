@@ -85,6 +85,6 @@ Dynamics 365 for Operations の財務報告では、財務およびビジネス�
 
 #<a name="see-also"></a>参照
 
-[財務諸表を生成します。] ((dynamics365\operations\financials\general-ledger\generate-financial-report) 
+[財務諸表を生成します]((dynamics365\operations\financials\general-ledger\generate-financial-report)
 
 

@@ -1,6 +1,6 @@
 ---
 title: "マスター プラン"
-description: "会社の日常業務をサポートするさまざまなマスタ プランを使用して、監視対象のシミュレーションし、内部パフォーマンスまたは顧客の満足度に関するポリシーなどの会社のポリシーを実施します。各計画の戦略の。"
+description: "会社の日常業務のサポート、監視を要する多様な計画戦略のシミュレーション、社内の業績や顧客満足に関するポリシーの実装など、さまざまな目的のマスター プランを使用します。"
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -29,7 +29,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="master-plans"></a>マスター プラン
 
-会社の日常業務をサポートするさまざまなマスタ プランを使用して、監視対象のシミュレーションし、内部パフォーマンスまたは顧客の満足度に関するポリシーなどの会社のポリシーを実施します。各計画の戦略の。 
+[!include[banner](../includes/banner.md)]
+
+
+会社の日常業務のサポート、監視を要する多様な計画戦略のシミュレーション、社内の業績や顧客満足に関するポリシーの実装など、さまざまな目的のマスター プランを使用します。 
 
 **マスター プラン**ページでマスター プランを構成することができます。
 
@@ -50,8 +53,10 @@ ms.lasthandoff: 03/31/2017
 
 [補充設定](coverage-settings.md)
 
-[マスタ スケジューリングの戦術的な、工程な計画を分割します (http://blogs.msdn.com/b/axmfg/archive/2012/10/12/separating-tactical-and-operative-planning-for-master-scheduling.aspx)]
+[マスター スケジューリングの戦術的な計画と実施計画の分割](http://blogs.msdn.com/b/axmfg/archive/2012/10/12/separating-tactical-and-operative-planning-for-master-scheduling.aspx)
 
-[マスタ プラン: 空電と動的マスタ プランを使用するか、または一つの計画を使用します。] (https://community.dynamics.com/ax/b/msdynaxlessonslearned/archive/2014/01/16/master-planning-use-a-static-and-dynamic-master-plan-or-use-one-plan)
+[マスター プラン: 静的および動的マスター プランまたは 1 つの計画のどちらを使用するか。](https://community.dynamics.com/ax/b/msdynaxlessonslearned/archive/2014/01/16/master-planning-use-a-static-and-dynamic-master-plan-or-use-one-plan)
+
+
 
 

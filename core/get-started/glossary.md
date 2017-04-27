@@ -1,5 +1,5 @@
 ---
-title: "工程の用語集365 for Operations"
+title: "Dynamics 365 for Operations 用語集"
 description: "Microsoft Dynamics 365 for Operations の用語集は、Dynamics 365 for Operations の製品の重要な用語および概念を定義します。"
 author: tonyafehr
 manager: AnnBe
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="dynamics-365-for-operations-glossary"></a>工程の用語集365 for Operations
+# <a name="dynamics-365-for-operations-glossary"></a>Dynamics 365 for Operations 用語集
+
+[!include[banner](../includes/banner.md)]
+
 
 Microsoft Dynamics 365 for Operations の用語集は、Dynamics 365 for Operations の製品の重要な用語および概念を定義します。 
 
@@ -249,7 +252,7 @@ Dynamics 365 for Operations の標準的な開始ページ。 ダッシュボー
 
 モデルの要素の作成、更新、検査に使用した Visual Studio のツール。
 
-###### <a name="financial-dimensionsdimension-based-configuration"></a>**。** \financial-dimensions\dimension-basedコンフィギュレーション
+###### <a name="financial-dimensionsdimension-based-configuration"></a>**..\financial-dimensions\分析コードベースのコンフィギュレーション**
 
 製品分析コードの値を選択することで、製品バリアントの作成に使用するコンフィギュレーション技術。
 
@@ -499,7 +502,7 @@ Dynamics 365 for Operations の標準的な開始ページ。 ダッシュボー
 
 ###### <a name="product-dimension"></a>**製品分析コード**
 
-使用されるサイズ、色、または製品コンフィギュレーション特質。\financial-dimensions\dimension-basedコンフィギュレーション。
+..\financial-dimensions\分析コードベースのコンフィギュレーションに使用するサイズ、色、またはコンフィギュレーション製品属性。
 
 ###### <a name="product-family"></a>**製品ファミリ**
 
@@ -697,7 +700,7 @@ Dynamics 365 for Operations にプリインストールされたツール。 記
 
 製品マスターをモデル化し、製品バリアントのコンフィギュレーションを検索する方法。
 
-###### <a name="vat-value-added-tax"></a>** VAT (付加価値税) **
+###### <a name="vat-value-added-tax"></a>**VAT (付加価値税)**
 
 生産の各段階の付加価値税に基づいて各段階で製品に課せられる税。
 
@@ -722,5 +725,7 @@ Dynamics 365 for Operations にプリインストールされたツール。 記
 ###### <a name="workspace"></a>**ワークスペース**
 
 ユーザーが実行活動の一つの概要を表示するページ。 ページは、保留中の作業および複数ソースからの関連データを表示するためにタイル、リストおよびグラフを使用し、このデータに関連付けられる頻繁なタスクを表示します。 ワークスペースの集計セクションに表示されるタイルは、ダッシュボードの関連セクションに表示されます。
+
+
 
 

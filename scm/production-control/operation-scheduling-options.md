@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="operations-scheduling-options"></a>工程のスケジューリング オプション
 
+[!include[banner](../includes/banner.md)]
+
+
 このトピックでは、工程スケジューリングのオプションについて説明します。 この工程スケジューリングは、時間経過による生産プロセスの概算を提供する場合に使用します。
 
 工程のスケジューリングは、次の製造オーダーの情報から計算されます:
@@ -128,6 +131,8 @@ ms.lasthandoff: 03/31/2017
 <a name="see-also"></a>参照
 --------
 
-[Operations scheduling](operations-scheduling.md)
+[工程のスケジューリング](operations-scheduling.md)
+
+
 
 

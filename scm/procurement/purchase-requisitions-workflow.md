@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="purchase-requisition-workflow"></a>購買要求ワークフロー
 
+[!include[banner](../includes/banner.md)]
+
+
 ワークフロー プロセスは、レビュー プロセスを介し、[ドラフト] の状態から [承認済] の最終状態へ購買要求を移動します。 購買要求が作成されレビュー用に送信されると、ワークフロー プロセスが開始されます。 購買要求が承認されると、発注書が購買要求明細行に対して生成され、仕入先に注文処理のために送信されます。
 
 購買要求をレビューのために送信する前に、ワークフローを構成する必要があります。 ワークフロー プロセスには、任意の順序で 1 つ以上の確認ステップを含めることができます。 ワークフロー プロセスの構成により、レビュー タスを省いて自動的に購買要求を承認することもできます。 購買要求を単一ドキュメントとして送るように、ワークフローを構成できます。また、個々の購買要求明細行を適切なレビュー担当者に送ることもできます。 購買要求を一つのドキュメントとして複数のレビュー担当者に送り、選択した購買要求明細行を他のレビュー担当者に送るシナリオを作成できます。  
@@ -106,12 +109,14 @@ ms.lasthandoff: 03/31/2017
 <a name="see-also"></a>参照
 --------
 
-[消費 (作業ガイド作成) ]の (https://ax.help.dynamics.com/en/wiki/create-a-requisition-for-consumption/)
+[消費の要求の作成 (タスク ガイド)](https://ax.help.dynamics.com/en/wiki/create-a-requisition-for-consumption/)
 
 [購買要求のビジネス プロセスのワークフローの定義](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions)
 
-[Procurement and sourcing workflows](procurement-sourcing-workflows.md)
+[調達ワークフロー](procurement-sourcing-workflows.md)
 
-[Purchase requisition overview](purchase-requisitions-overview.md)
+[購買要求の概要](purchase-requisitions-overview.md)
+
+
 
 

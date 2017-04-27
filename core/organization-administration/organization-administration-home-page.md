@@ -1,6 +1,6 @@
 ---
 title: "組織管理ホーム ページ"
-description: "このトピックでは、組織で工程にMicrosoft Dynamics 365の使用に役立つリソースを示します。"
+description: "このトピックでは、組織での Microsoft Dynamics 365 for Operations の使用に役立つリソースを示します。"
 author: sericks007
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,56 +26,61 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="organization-administration-home-page"></a>組織管理ホーム ページ
 
-このトピックでは、組織で工程にMicrosoft Dynamics 365の使用に役立つリソースを示します。
+[!include[banner](../includes/banner.md)]
+
+
+このトピックでは、組織での Microsoft Dynamics 365 for Operations の使用に役立つリソースを示します。
 
 <a name="number-sequences"></a>番号順序
 ----------------
 
--   [Number sequence overview](number-sequence-overview.md)
--   [ウィザードの使用] (http://ax.help.dynamics.com/en/wiki/set-up-number-sequences-by-using-a-wizard/) (作業ガイド) 別の番号順序の設定
--   [別の番号順序の設定] (http://ax.help.dynamics.com/en/wiki/set-up-number-sequences-on-an-individual-basis/) (作業ガイド) 
+-   [番号順序の概要](number-sequence-overview.md)
+-   [ウィザードを使用した番号順序の設定](http://ax.help.dynamics.com/en/wiki/set-up-number-sequences-by-using-a-wizard/) (タスク ガイド)
+-   [番号順序を個別に設定する](http://ax.help.dynamics.com/en/wiki/set-up-number-sequences-on-an-individual-basis/) (タスク ガイド)
 
 ## <a name="address-books"></a>アドレス帳
--   [Address books](qa-address-books.md)
--   [概要: グローバル アドレス帳] (概要グローバル アドレスbook.md) 
--   [グローバル アドレス帳および追加アドレス帳を計画します] (計画のグローバル アドレス ブック追加住所books.md)。
+-   [アドレス帳](qa-address-books.md)
+-   [グローバル アドレス帳の概要](overview-global-address-book.md)
+-   [グローバル アドレス帳と追加のアドレス帳トピックのコンフィギュレーションの計画](plan-configuration-global-address-book-additional-address-books.md)
 
 ## <a name="workflow"></a>ワークフロー
--   [Overview of the workflow system](overview-workflow-system.md)
--   [Workflow system architecture](workflow-system-architecture.md)
--   [Workflow elements](workflow-elements.md)
--   [Workflow actions](workflow-actions.md)
+-   [ワークフロー システムの概要](overview-workflow-system.md)
+-   [ワークフロー システムのアーキテクチャ](workflow-system-architecture.md)
+-   [ワークフロー要素](workflow-elements.md)
+-   [ワークフロー アクション](workflow-actions.md)
 -   [ワークフローの作成](create-workflow.md)
--   [Configure the properties of a workflow](configure-workflow-properties.md)
+-   [ワークフローのプロパティをコンフィギュレーション](configure-workflow-properties.md)
 -   [手動タスクのコンフィギュレーション](configure-manual-task-workflow.md)
 -   [自動化タスクのコンフィギュレーション](configure-automated-task-workflow.md)
--   [Configure an approval process](configure-approval-process-workflow.md)
+-   [承認プロセスのコンフィギュレーション](configure-approval-process-workflow.md)
 -   [承認ステップのコンフィギュレーション](configure-approval-step-workflow.md)
 -   [手動決定のコンフィギュレーション](configure-manual-decision-workflow.md)
 -   [条件付き意思決定のコンフィギュレーション](configure-conditional-decision-workflow.md)
 -   [並列活動のコンフィギュレーション](configure-parallel-activity-workflow.md)
 -   [並列分岐のコンフィギュレーション](configure-parallel-branch-workflow.md)
--   [品目のワークフロー要素コンフィギュレーションしてください] (設定行品目workflow.md) 
+-   [行項目ワークフローの要素をコンフィギュレーション](configure-line-item-workflow.md)
 
 ## <a name="case-management"></a>ケース管理
--   [計画: 設定されている場合] (計画場合management.md) 
--   [Case管理] (例cases.md) 
+-   [計画:ケースの設定](plan-case-management.md)
+-   [ケース管理の例](cases.md)
 
 ## <a name="electronic-signatures"></a>電子署名
--   [Electronic signature overview](electronic-signature-overview.md)
--   [電子署名の設定] (http://ax.help.dynamics.com/en/wiki/set-up-electronic-signatures/) (作業ガイド) 
+-   [電子署名の概要](electronic-signature-overview.md)
+-   [電子署名の設定](http://ax.help.dynamics.com/en/wiki/set-up-electronic-signatures/) (タスク ガイド)
 
 ## <a name="organizations"></a>組織
--   [Organizations and organizational hierarchies](organizations-organizational-hierarchies.md)
--   [Plan the organizational hierarchy](plan-organizational-hierarchy.md)
--   [オペレーティングの単位作成します。] (http://ax.help.dynamics.com/en/wiki/create-an-operating-unit/) (作業ガイド) 
--   [組織階層作成します。] (http://ax.help.dynamics.com/en/wiki/create-an-organization-hierarchy/) (作業ガイド) 
--   [法人作成します。] (http://ax.help.dynamics.com/en/wiki/create-a-legal-entity/) (作業ガイド) 
+-   [組織と組織階層](organizations-organizational-hierarchies.md)
+-   [組織階層の計画](plan-organizational-hierarchy.md)
+-   [作業単位の作成](http://ax.help.dynamics.com/en/wiki/create-an-operating-unit/) (タスク ガイド)
+-   [組織階層の作成](http://ax.help.dynamics.com/en/wiki/create-an-organization-hierarchy/) (タスク ガイド)
+-   [法人の作成](http://ax.help.dynamics.com/en/wiki/create-a-legal-entity/) (タスク ガイド)
 
 ## <a name="general-administration"></a>一般管理
--   [ロゴ バナーまたは変更します。] (http://ax.help.dynamics.com/en/wiki/change-the-banner-or-logo/) (作業ガイド) 
--   [About date/time data and time zones](date-time-zones.md)
--   [Record templates](record-templates.md)
+-   [バナーまたはロゴの変更](http://ax.help.dynamics.com/en/wiki/change-the-banner-or-logo/) (タスク ガイド)
+-   [日時データとタイム ゾーンについて](date-time-zones.md)
+-   [レコード テンプレート](record-templates.md)
+
+
 
 
 

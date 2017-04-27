@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="fixed-asset-depreciation"></a>固定資産の減価償却
 
+[!include[banner](../includes/banner.md)]
+
+
 この記事は、固定資産の償却の概要を示します。
 
 減価償却は、一般に、貸借対照表の固定資産の価値を減少させる定期処理取引であり、損益勘定では支出として記帳します。 したがって、通常、主勘定を使用して貸借対照表の定期減価償却を貸方に転記します。 相手勘定は、勘定科目の損益部分の勘定です。
@@ -51,6 +54,8 @@ ms.lasthandoff: 03/31/2017
 
 総勘定元帳の [**会計カレンダー**] ページを使用して、共用カレンダーを作成できます。
 
-詳細については、" [減価償却法] (減価償却方法conventions.md)。
+詳細については、「[Depreciation methods and conventions](depreciation-methods-conventions.md)」を参照してください。
+
+
 
 

@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="configure-and-filter-workspaces"></a>ワークスペースのフィルター処理およびコンフィギュレーション
 
+[!include[banner](../includes/banner.md)]
+
+
 この記事は、ワークスペースを構成してフィルター処理する方法の概要について説明します。
 
 <a name="configuring-a-workspace"></a>ワークスペースのコンフィギュレーション
@@ -33,11 +36,11 @@ ms.lasthandoff: 03/31/2017
 
 ワークスペース全体に適用される設定を変更することにより、ワークスペースの外観と動作を変更できます。 ワークスペースが構成できる場合、[アクション] ウィンドウには設定を変更するボタンがあり、これをクリックするように指示が表示されます。 たとえば次の図では、**自分のワークスペースのコンフィギュレーション**というボタンが表示されています。 
 
-[![設定やフィルタ ワークスペース] (。/media/configureやフィルタworkspaces.png) ] (。/media/configureやフィルタworkspaces.png)    
+[![ワークスペースの構成とフィルター](./media/configure-and-filter-workspaces.png)](./media/configure-and-filter-workspaces.png)   
 
 ボタンをクリックすると、ワークスペースの定義済設定を変更できるダイアログが表示されます。 このダイアログに表示される特定の設定は、各ワークスペースによって異なり、ワークスペースで使用できる特定のコントロールや業務データによっても異なります。 
 
-[![設定のワークスペース] (。/media/configureですworkspace.png) ] (。/media/configureですworkspace.png) 
+[![マイ ワークスペースの構成](./media/configure-my-workspace.png)](./media/configure-my-workspace.png)
 
 ## <a name="filtering-a-workspace"></a>ワークスペースのフィルタ処理
 多くのワークスペースでは、表示される内容をフィルタ処理することができます。 使用できるコントロールにより、ワークスペースのすべて内容や、ワークスペースの特定のセクションにある内容をフィルタ処理できる場合があります。 ワークスペースのフィルターは、ルックアップ、コンボ ボックス、自由書式のテキスト フィールド、または他のコントロール タイプである場合があります。 ただし、次のセクションで説明するように、それぞれのフィルタのタイプは同じ効果があります。
@@ -46,11 +49,11 @@ ms.lasthandoff: 03/31/2017
 
 ワークスペース全体のフィルターを使用すると、ワークスペース全体をフィルター処理できます。 ワークスペース全体のフィルターは、ワークスペースの左上隅にあります。 ドロップダウン リストで特定の値を選択すると、その選択内容に基づいてワークスペースのコンテンツがフィルター処理されます。 
 
-[![ワークスペース フィルター] (。/media/workspace-filter.png) ] (。/media/workspace-filter.png)  
+[![ワークスペース フィルター](./media/workspace-filter.png)](./media/workspace-filter.png) 
 
 クリックしてフィルターを開くと、複数のオプションが表示されます。 
 
-[ワークスペース フィルタ展開される![] (。/media/workspaceフィルタexpanded.png) ] (。/media/workspaceフィルタexpanded.png)  
+[![展開済ワークスペース フィルター](./media/workspace-filter-expanded.png)](./media/workspace-filter-expanded.png) 
 
 オプションに基づいワークスペースのてフィルターを適用するオプションを選択します。
 
@@ -58,8 +61,10 @@ ms.lasthandoff: 03/31/2017
 
 ワークスペースのそれぞれのセクションにフィルタが存在する場合は、各セクションを個別にフィルタ処理できます。 次の図では、フィルター (テキスト「フィルター」を含むフィールド) は自由書式のテキスト フィールドのフィルターの例です。 
 
-[![ワークスペース セクション フィルター] (。/media/workspaceセクションFilters.png) ] (。/media/workspaceセクションfilters.png)  
+[![ワークスペース セクション フィルター](./media/workspace-section-filters.png)](./media/workspace-section-filters.png) 
 
 ワークスペース全体のフィルターと同じように、希望のフィルター値を選択または入力して、セクションのコンテンツを絞り込みます。
+
+
 
 

@@ -1,6 +1,6 @@
 ---
-title: "新規または更新タスク ガイド (2016年12月8) "
-description: "このトピックでは、Microsoft Dynamics AX用Microsoft (2016年12月8 -すべての言語) APQCで統一されたライブラリにリリースされた新規または更新タスク ガイドを一覧表示します。 新規の「はじめに」ライブラリは、リリースされていません。"
+title: "新規または更新されたタスク ガイド (2016 年 8 月)"
+description: "このトピックでは、Microsoft Dynamics AX の Microsoft (2016 年 8 月 - すべての言語) APQC 統合ライブラリにリリースされた新規または更新されたタスク ガイドを示します。 新規の「はじめに」ライブラリは、リリースされていません。"
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,14 +24,17 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="new-or-updated-task-guides-august-2016"></a>新規または更新タスク ガイド (2016年12月8) 
+# <a name="new-or-updated-task-guides-august-2016"></a>新規または更新されたタスク ガイド (2016 年 8 月)
 
-このトピックでは、Microsoft Dynamics AX用Microsoft (2016年12月8 -すべての言語) APQCで統一されたライブラリにリリースされた新規または更新タスク ガイドを一覧表示します。 新規の「はじめに」ライブラリは、リリースされていません。
+[!include[banner](../includes/banner.md)]
 
-<a name="task-guides-in-the-august-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>[] () Microsoft Dynamics AXの (2016年12月8 -すべての言語) APQCで統一されるライブラリのガイドに作業。
+
+このトピックでは、Microsoft Dynamics AX の Microsoft (2016 年 8 月 - すべての言語) APQC 統合ライブラリにリリースされた新規または更新されたタスク ガイドを示します。 新規の「はじめに」ライブラリは、リリースされていません。
+
+<a name="task-guides-in-the-august-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>[]()Microsoft Dynamics AX 用の APQC 統合ライブラリに含まれるタスク ガイド (2016 年 8 月 - すべての言語)
 ---------------------------------------------------------------------------------------------------
 
- (2016年12月8 -すべての言語) APQCで統一されるライブラリでは、Microsoft Dynamics AXのプラットフォームの更新は2 (2016年12月8)、Dynamics AX 2016年12月5のアプリケーションの更新、Microsoft Dynamics AX 2年1月2016日にリリースのヘルプに使用する予定される作業ガイドが含まれます。 これらに関する詳細についてはリリースし、[新規または変更することが必要] (表示することが-新しいchanged.md)。 このガイドの"ローカライズ バージョンは、ライブラリで使用できます。 このガイドの"ライブラリにヘルプ システムに接続する方法の詳細については、" "を参照してください[ヘルプ]を起動します ([overview.mdと)。
+APQC 統合ライブラリ (2016 年 8 月 - すべての言語) には、Dynamics AX プラットフォーム更新プログラム 2、2016 年 5 月に更新された Microsoft Dynamics AX アプリケーション、および 2016 年 2 月にリリースされた Microsoft Dynamics AX のヘルプの使用を想定したタスク ガイドが含まれています。 これらのリリースに関する詳細については、「[新規または変更](whats-new-changed.md)」を参照してください。 ローカライズ版のタスク ガイドは、このライブラリで使用できます。 タスク ガイド ライブラリのヘルプ システムを接続する方法の詳細については、「[ヘルプの入門](help-overview.md)」を参照してください。
 
 ### <a name="data-access"></a>データ アクセス
 
@@ -97,10 +100,12 @@ ms.lasthandoff: 03/31/2017
 <a name="see-also"></a>参照
 --------
 
-[新しいタスク ガイド (2016年12月2) ]新しいタスク (ガイド使用して2年2016.md) 
+[新しいタスク ガイド (2016 年 2 月)](new-task-guides-available-february-2016.md)
 
-[新規または更新タスク ガイド (2016年12月5) ] ([更新タスク ガイド使用している場合2016.md) 
+[新規または更新されたタスク ガイド (2016 年 5 月)](new-updated-task-guides-available-may-2016.md)
 
-[新規または更新タスク ガイド (2016年12月11) ]新しいタスク (ガイド月11 2016.md) 
+[新規または更新されたタスク ガイド (2016 年 11 月)](new-task-guides-november-2016.md)
+
+
 
 
