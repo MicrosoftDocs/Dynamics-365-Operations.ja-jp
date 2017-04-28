@@ -1,21 +1,21 @@
-# 倉庫のレイアウトを作成します。
-# Indboundプロセス
-# 発信のプロセス
-# 在庫管理の設定します。
-## [Inventory journals](inventory-journals.md)
-## [Inventory locations](inventory-locations.md)
-## [Inventory statuses](inventory-statuses.md)
-## [在庫数量を引当します。](reserve-inventory-quantities.md)
-## [同じバッチの販売注文を引当します。](../sales-marketing/reserve-same-batch-sales-order.md)
+# 倉庫レイアウトの作成
+# 入庫プロセス
+# 出荷プロセス
+# 在庫追跡の設定
+## [在庫仕訳帳](inventory-journals.md)
+## [在庫場所](inventory-locations.md)
+## [在庫状態](inventory-statuses.md)
+## [在庫数量の引当](reserve-inventory-quantities.md)
+## [販売注文に対する同じバッチの引当](../sales-marketing/reserve-same-batch-sales-order.md)
 # 委託販売在庫
-## [Consignment](consignment.md)
-## [委託販売を設定します。](set-up-consignment.md)
+## [委託販売](consignment.md)
+## [委託販売の設定](set-up-consignment.md)
 # 品質管理
-## [Enable quality management](enable-quality-management.md)
-## [Inventory blocking](inventory-blocking.md)
-## [不適合の管理](enable-nonconformance-management.md)
-## [Quarantine order](quarantine-orders.md)
+## [品質管理の有効化](enable-quality-management.md)
+## [在庫ブロック](inventory-blocking.md)
+## [不適合管理](enable-nonconformance-management.md)
+## [検査指示](quarantine-orders.md)
 ## [品質管理プロセス](quality-management-processes.md)
-# トレースの品目とバッチ
-## [在庫バッチをマージします。](merge-inventory-batches.md)
-## [トレースの品目および原材料](trace-items-raw-materials-inventory-production-sales.md)
+# 品目とバッチの追跡
+## [在庫バッチのマージ](merge-inventory-batches.md)
+## [品目と原材料の追跡](trace-items-raw-materials-inventory-production-sales.md)

@@ -1,6 +1,6 @@
 ---
-title: "Dynamics 365 for Operationsの概要"
-description: "Microsoft Dynamics 365 for Operationsは、企業向けのMicrosoftのビジネス アプリケーションです。 このページでは、説明し、製品を使用して開始できます。"
+title: "Dynamics 365 for Operations の概要"
+description: "Microsoft Dynamics 365 for Operations は、Microsoft の企業向けビジネス アプリケーションです。 このページでは、この製品を紹介し、製品の使用開始について説明します。"
 author: margoc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -23,13 +23,13 @@ ms.lasthandoff: 04/12/2017
 
 
 ---
-# <a name="introduction-to-dynamics-365-for-operations"></a>Dynamics 365 for Operationsの概要
+# <a name="introduction-to-dynamics-365-for-operations"></a>Dynamics 365 for Operations の概要
 
 [!include[banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Operationsは、企業向けのMicrosoftのビジネス アプリケーションです。 これにより、従業員は、リアルタイムの分析およびデータへのアクセスを提供するインテリジェントのユーザー インターフェイスを介した高度な意思決定を簡単にできます。 それによりに変換およびinnnovate、業務プロセスの高速のデザインを変更することができます実績のあるビジネス ロジックを提供することによりなります。 これは、柔軟性が企業、独自のペースで増大し、その業務のニーズを満たすためにグローバルにスケール設定できるようになり、いつでもどこ、業務の操作を行います。 
+Microsoft Dynamics 365 for Operations は、Microsoft の企業向けビジネス アプリケーションです。 リアルタイムな洞察とデータにアクセスできるインテリジェントなユーザー インターフェイスを介して、従業員がより高度な意思決定を迅速に行えるようにします。 また、実証済みのビジネス ロジックを提供することで企業の変革と革新を促進し、業務プロセスの迅速な再設計を実現します。 さらに、企業が自社のペースで成長し、時間と場所を問わず業務を行うことができる柔軟性を提供することで、ビジネス ニーズに応じたグローバルな業務拡大を可能にします。 
 
-このユーザー ガイドでは、Dynamics 365 for Operations自社の作業を構成する方法を説明できます。    
+このユーザー ガイドでは、Dynamics 365 for Operations を業務に役立てるための方法を紹介します。    
 
 <table>
 <colgroup>
@@ -38,52 +38,52 @@ Microsoft Dynamics 365 for Operationsは、企業向けのMicrosoftのビジネ�
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p><a href="get-started/onboarding-home.md">契約時組織</a></p>
+<td><p><a href="get-started/onboarding-home.md">組織のオンボーディング</a></p>
 <p>財務</p>
-<ul><li><a href="financials/accounts-payable/accounts-payable.md">Accounts payable</a></li>
-<li><a href="financials/accounts-receivable/accounts-receivable.md">Accounts receivable</a></li>
-<li><a href="financials/budgeting/budgeting-overview.md">Budgeting</a></li>
-<li><a href="financials/cash-bank-management/cash-bank-management.md">Cash and bank management</a></li>
-<li><a href="financials/cost-accounting/cost-accounting-home-page.md">Cost accounting</a></li>
-<li><a href="financials/fixed-assets/fixed-assets.md">Fixed assets</a></li>
-<li><a href="financials/general-ledger/general-ledger.md">General ledger</a></li>
-<li><a href="financials/project-management/overview-project-management-accounting.md">Project management</a></li>
-<li><a href="financials/public-sector/public-sector-functionality.md">Public sector</a></li></ul>
+<ul><li><a href="financials/accounts-payable/accounts-payable.md">買掛金勘定</a></li>
+<li><a href="financials/accounts-receivable/accounts-receivable.md">売掛金勘定</a></li>
+<li><a href="financials/budgeting/budgeting-overview.md">予算作成</a></li>
+<li><a href="financials/cash-bank-management/cash-bank-management.md">現金および銀行管理</a></li>
+<li><a href="financials/cost-accounting/cost-accounting-home-page.md">原価会計</a></li>
+<li><a href="financials/fixed-assets/fixed-assets.md">固定資産</a></li>
+<li><a href="financials/general-ledger/general-ledger.md">一般会計</a></li>
+<li><a href="financials/project-management/overview-project-management-accounting.md">プロジェクト管理</a></li>
+<li><a href="financials/public-sector/public-sector-functionality.md">公的機関</a></li></ul>
 <p><a href="dev-itpro/lcs-solutions/country-region.md">地域の機能</a></p>
 <p>人事管理</p>
    <ul>
-  <li><a href="human-resources/departments-jobs-positions.md">HR戦略</a></li>
+  <li><a href="human-resources/departments-jobs-positions.md">HR 戦略</a></li>
   <li><a href="human-resources/manage-recruiting-process.md">採用、雇用、および動機付け</a></li>
   <li><a href="human-resources/performance-management-overview.md">従業員のトレーニング</a></li>
-  <li><a href="human-resources/manage-benefit-program.md">Benefits</a></li>
-  <li><a href="human-resources/questionnaires.md">Questionnaire</a></li>
+  <li><a href="human-resources/manage-benefit-program.md">福利厚生</a></li>
+  <li><a href="human-resources/questionnaires.md">アンケート</a></li>
   <li><a href="human-resources/localizations/noam-usa-payroll.md">米国の機能</a></li>
 </ul></td>
   <td>
   <p>小売</p>
   <ul>
-<li><a href="retail/call-center-functionality.md">Call center</a></li>
-  <li><a href="retail/define-maintain-retail-channels.md">Channel setup and management</a></li>
-  <li><a href="retail/define-maintain-channel-clients-registers-hw-stations.md">MPOSおよびクラウドPOS</a></li>
+<li><a href="retail/call-center-functionality.md">コール センター</a></li>
+  <li><a href="retail/define-maintain-retail-channels.md">チャネルの設定と管理</a></li>
+  <li><a href="retail/define-maintain-channel-clients-registers-hw-stations.md">MPOS とクラウド POS</a></li>
   <li><a href="retail/dev-itpro/dev-retail-home-page.md">小売開発者と管理</a></li></ul>
   <p>サプライ チェーン マネジメント</p>
 <ul>
-<li><a href="supply-chain/cost-management/costing-sheets.md">Cost management</a></li>
-  <li><a href="supply-chain/inventory/inventory-locations.md">Inventory management</a></li>
-  <li><a href="supply-chain/master-planning/master-plans.md">Master planning</a></li>
-  <li><a href="supply-chain/procurement/procurement-sourcing-overview.md">Procurement and sourcing</a></li>
-  <li><a href="supply-chain/pim/set-up-maintain-product-configuration-model.md">Product information management</a></li>
-  <li><a href="supply-chain/production-control/create-production-orders">Production control</a></li>
-  <li><a href="supply-chain/sales-marketing/overview-sales-marketing.md">Sales and marketing</a></li>
-  <li><a href="supply-chain/transportation/transportation-management-overview.md">Transportation management</a></li>
-  <li><a href="supply-chain/warehousing/warehouse-configuration.md">Warehouse management</a></li></ul>
-  <p>開発者と管理者の機能</p>
-  <ul><li><a href="dev-itpro/analytics/analytics.md">Analytics</a></li>
-  <li><a href="dev-itpro/data-entities/data-entities.md">Data entities</a></li>
-  <li><a href="dev-itpro/mobile-apps/mobile-platform.md">モバイル アプリケーション</a></li>
-  <li><a href="dev-itpro/office-integration/office-integration.md">Office integration</a></li>
-  <li><a href="dev-itpro/sysadmin/system-administration-home-page.md">Administration</a></li>
-  <li><a href="dev-itpro/dev-tools/developer-home-page.md">Developer tools</a></li></ul></td>
+<li><a href="supply-chain/cost-management/costing-sheets.md">原価管理</a></li>
+  <li><a href="supply-chain/inventory/inventory-locations.md">在庫管理</a></li>
+  <li><a href="supply-chain/master-planning/master-plans.md">マスター プラン</a></li>
+  <li><a href="supply-chain/procurement/procurement-sourcing-overview.md">調達</a></li>
+  <li><a href="supply-chain/pim/set-up-maintain-product-configuration-model.md">製品情報管理</a></li>
+  <li><a href="supply-chain/production-control/create-production-orders">生産管理</a></li>
+  <li><a href="supply-chain/sales-marketing/overview-sales-marketing.md">販売とマーケティング</a></li>
+  <li><a href="supply-chain/transportation/transportation-management-overview.md">輸送管理</a></li>
+  <li><a href="supply-chain/warehousing/warehouse-configuration.md">倉庫管理</a></li></ul>
+  <p>開発者および管理者向け機能</p>
+  <ul><li><a href="dev-itpro/analytics/analytics.md">分析</a></li>
+  <li><a href="dev-itpro/data-entities/data-entities.md">データ エンティティ</a></li>
+  <li><a href="dev-itpro/mobile-apps/mobile-platform.md">モバイル アプリ</a></li>
+  <li><a href="dev-itpro/office-integration/office-integration.md">Office との統合</a></li>
+  <li><a href="dev-itpro/sysadmin/system-administration-home-page.md">管理</a></li>
+  <li><a href="dev-itpro/dev-tools/developer-home-page.md">開発者ツール</a></li></ul></td>
 </tr>
 </tbody>
 </table>

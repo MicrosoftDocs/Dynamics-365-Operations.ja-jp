@@ -1,6 +1,6 @@
 ---
 title: "財務管理ホーム ページ"
-description: "このトピックでは、ヘルプ トピックと Microsoft Dynamics 365 for Operations の財務管理機能のための他のリソースの一覧を示します。"
+description: "このトピックでは、Microsoft Dynamics 365 for Operations の財務管理機能に関するヘルプ トピックとその他のリソースの一覧を示します。"
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,18 +28,18 @@ ms.lasthandoff: 04/12/2017
 
 [!include[banner](includes/banner.md)]
 
-このトピックでは、ヘルプ トピックと Microsoft Dynamics 365 for Operations の財務管理機能のための他のリソースの一覧を示します。 
+このトピックでは、Microsoft Dynamics 365 for Operations の財務管理機能に関するヘルプ トピックとその他のリソースの一覧を示します。 
 
-詳細については、機能領域を選択します。
-- [Accounts payable](accounts-payable\accounts-payable.md) 
-- [Accounts receivable](accounts-receivable\accounts-receivable.md) 
-- [Cash and bank management](cash-bank-management\cash-bank-management.md)
-- [Cost accounting](cost-accounting\cost-accounting-home-page.md)
-- [Fixed assets](fixed-assets\fixed-assets.md)
-- [General ledger](general-ledger\general-ledger.md) 
-- [Project management](project-management\overview-project-management-accounting.md)
-- [Public sector](public-sector\public-sector-functionality.md) 
-- [Budgeting](budgeting\budgeting-overview.md) 
+機能領域を選択すると詳細が表示されます。
+- [買掛金勘定](accounts-payable\accounts-payable.md) 
+- [売掛金勘定](accounts-receivable\accounts-receivable.md) 
+- [現金および銀行管理](cash-bank-management\cash-bank-management.md)
+- [原価会計](cost-accounting\cost-accounting-home-page.md)
+- [固定資産](fixed-assets\fixed-assets.md)
+- [一般会計](general-ledger\general-ledger.md) 
+- [プロジェクト管理](project-management\overview-project-management-accounting.md)
+- [公的機関](public-sector\public-sector-functionality.md) 
+- [予算作成](budgeting\budgeting-overview.md) 
 
 
 

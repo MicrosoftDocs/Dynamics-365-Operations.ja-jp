@@ -1,6 +1,6 @@
 ---
-title: "現金および銀行管理のホームページ"
-description: "現金および銀行管理を使用し、これらの銀行口座に関連付けられた法人の銀行口座および財務証書を管理できます。"
+title: "現金および銀行管理ホーム ページ"
+description: "現金および銀行管理を使用して、法人の銀行口座と、その銀行口座に関連付けられている財務証書を管理できます。"
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,53 +25,53 @@ ms.lasthandoff: 04/12/2017
 
 ---
 
-# <a name="cash-and-bank-management-home-page"></a>現金および銀行管理のホームページ
+# <a name="cash-and-bank-management-home-page"></a>現金および銀行管理ホーム ページ
 
 [!include[banner](../includes/banner.md)]
 
 
-現金および銀行管理を使用し、これらの銀行口座に関連付けられた法人の銀行口座および財務証書を管理できます。 
+現金および銀行管理を使用して、法人の銀行口座と、その銀行口座に関連付けられている財務証書を管理できます。 
 
-これらの証書には、預金伝票、小切手、受取手形、および支払手形が含まれます。 口座取引明細書を調整したり、標準レポートに銀行データを印刷できます。
+財務証書には、預金伝票、小切手、受取手形、支払手形が含まれます。 口座取引明細書を調整したり、標準レポートに銀行データを印刷したりもできます。
 
--   [Cash discounts](cash-discounts.md)
--   [Settlement overview](settlement-overview.md)
--   [Configure settlement](configure-settlement.md)
--   [Foreign currency revaluation for Accounts payable and Accounts receivable](foreign-currency-revaluation-accounts-payable-accounts-receivable.md)
+-   [現金割引](cash-discounts.md)
+-   [決済の概要](settlement-overview.md)
+-   [決済のコンフィギュレーション](configure-settlement.md)
+-   [買掛金勘定と売掛金勘定の外貨再評価](foreign-currency-revaluation-accounts-payable-accounts-receivable.md)
 -   [信用状](letters-of-credit.md)
--   [信用状および輸入取立](letters-of-credit-import-collections.md)
+-   [信用状と輸入取立](letters-of-credit-import-collections.md)
 -   [信用保証状](letters-of-guarantee.md)
 -   [詳細な口座調整の概要](advanced-bank-reconciliation-overview.md)
--   [Configure advanced bank reconciliation](configure-advanced-bank-reconciliation.md)
--   +[詳細な口座調整のインポートの設定](set-up-advanced-bank-reconciliation-import-process.md)
--   [詳細な勘定調整を使用して口座取引明細書を調整](reconcile-bank-statements-advanced-bank-reconciliation.md)
+-   [詳細な口座調整のコンフィギュレーション](configure-advanced-bank-reconciliation.md)
+-   [詳細な口座調整のインポートの設定](set-up-advanced-bank-reconciliation-import-process.md)
+-   [詳細な口座調整を使用した口座取引明細書の調整](reconcile-bank-statements-advanced-bank-reconciliation.md)
 -   [口座調整照合ルールの設定](set-up-bank-reconciliation-matching-rules.md)
 -   [集中支払の設定](set-up-centralized-payments.md)
 
-## <a name="accounts-payable-payments-and-settlements"></a>買掛金勘定支払および決済
--   [Centralized payments for Accounts payable](../accounts-payable/centralized-payments-accounts-payable.md)
--   [支払提案を使用して、仕入先請求書を作成します。](../accounts-payable/create-vendor-payments-payment-proposal.md)
--   [Reverse a vendor payment](../accounts-payable/reverse-vendor-payment.md)
--   [Vendor payments for a partial amount](../accounts-payable/vendor-payments-partial-amount.md)
--   [前払の請求書および前払の概要](../accounts-payable/prepayments-invoices-vs-prepayments.md)
--   [Scenario: Settle a partial vendor payment and settle the final payment in full before the discount date](../accounts-payable/settle-partial-vendor-payment-or-final-payment-before-discount.md)
--   [Scenario: Settle a partial vendor payment before the discount date with a final payment after the discount date](../accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md)
--   [Scenario: Settle a partial vendor payment that has discounts on vendor credit notes](../accounts-payable/settle-partial-vendor-payment-discounts-vendor-credit-notes.md)
--   [Scenario: Settle a partial vendor payment that has multiple discount periods](../accounts-payable/settle-partial-vendor-payment-multiple-discount-periods.md)
--   [Scenario: Take a discount that is more than the calculated discount for a vendor payment](../accounts-payable/take-discount-more-calculated-discount-vendor-payment.md)
--   [Scenario: Take a cash discount outside the cash discount period](../accounts-payable/take-cash-discount-outside-cash-discount-timeframe.md)
+## <a name="accounts-payable-payments-and-settlements"></a>買掛金勘定の支払と決済
+-   [買掛金勘定の集中支払](../accounts-payable/centralized-payments-accounts-payable.md)
+-   [支払提案を使用した仕入先請求書の作成](../accounts-payable/create-vendor-payments-payment-proposal.md)
+-   [仕入先支払の取消](../accounts-payable/reverse-vendor-payment.md)
+-   [一部金額の仕入先支払](../accounts-payable/vendor-payments-partial-amount.md)
+-   [前払請求書と前払の概要](../accounts-payable/prepayments-invoices-vs-prepayments.md)
+-   [シナリオ: 一部仕入先支払を決済し、割引日より前に最終支払を全額決済](../accounts-payable/settle-partial-vendor-payment-or-final-payment-before-discount.md)
+-   [シナリオ: 割引日よりも前に一部仕入先支払を決済し割引日後に最終支払](../accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md)
+-   [シナリオ: 仕入先訂正票に割引がある一部仕入先支払を決済](../accounts-payable/settle-partial-vendor-payment-discounts-vendor-credit-notes.md)
+-   [シナリオ: 複数の割引期間を持つ一部仕入先支払を決済](../accounts-payable/settle-partial-vendor-payment-multiple-discount-periods.md)
+-   [シナリオ: 仕入先支払に計算された割引よりも大きい割引を適用](../accounts-payable/take-discount-more-calculated-discount-vendor-payment.md)
+-   [シナリオ: 現金割引期間外に現金割引を適用](../accounts-payable/take-cash-discount-outside-cash-discount-timeframe.md)
 
-## <a name="accounts-receivable-payments-and-settlements"></a>売掛金勘定支払および決済
--   [Centralized payments for Accounts receivable](../accounts-receivable/centralized-payments-accounts-receivable.md)
--   [Customer payments for a partial amount](../accounts-receivable/customer-payments-partial-amount.md)
--   [Reimburse customers](../accounts-receivable/reimburse-customers.md)
--   [Scenario: Automatic settlement and prioritization](../accounts-receivable/automatic-settlement-prioritization.md)
--   [シナリオ: 過剰支払の現金割引の処理](../cash-bank-management/cash-discount-handling-overpayments.md)
--   [Scenario: Settle a partial customer payment and settle the final payment in full before the discount date](../accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md)
--   [Scenario: Settle a partial customer payment before the discount date with a final payment after the discount date](../accounts-receivable/settle-partial-customer-payment-before-discount-or-final-payment-after.md)
--   [Scenario: Settle a partial customer payment that has discounts on credit notes](../accounts-receivable/settle-partial-customer-payment-discounts-credit-notes.md)
--   [Scenario: Settle a partial customer payment that has multiple discount periods](../accounts-receivable/settle-partial-customer-payment-multiple-discount-periods.md)
--   [シナリオ: 複数の請求書をそのコンポーネントの決済する場合でも、一つの顧客支払を複数の割引期間使用して、](../accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
+## <a name="accounts-receivable-payments-and-settlements"></a>売掛金勘定の支払と決済
+-   [売掛金勘定の集中支払](../accounts-receivable/centralized-payments-accounts-receivable.md)
+-   [一部金額の顧客支払](../accounts-receivable/customer-payments-partial-amount.md)
+-   [顧客への払戻し](../accounts-receivable/reimburse-customers.md)
+-   [シナリオ: 自動決済と優先順位付け](../accounts-receivable/automatic-settlement-prioritization.md)
+-   [シナリオ: 過剰支払の場合の現金割引の処理](../cash-bank-management/cash-discount-handling-overpayments.md)
+-   [シナリオ: 一部顧客支払を決済し、割引日より前に最終支払を全額決済](../accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md)
+-   [シナリオ: 割引日よりも前に一部顧客支払を決済し割引日後に最終支払](../accounts-receivable/settle-partial-customer-payment-before-discount-or-final-payment-after.md)
+-   [シナリオ: 訂正票に割引がある一部顧客支払を決済](../accounts-receivable/settle-partial-customer-payment-discounts-credit-notes.md)
+-   [シナリオ: 複数の割引期間を持つ一部顧客支払を決済](../accounts-receivable/settle-partial-customer-payment-multiple-discount-periods.md)
+-   [シナリオ: 複数の割引期間にまたがる複数の請求書を決済するための 1 つの顧客支払の使用](../accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
 
 
 

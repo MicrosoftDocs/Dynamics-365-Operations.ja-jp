@@ -1,6 +1,6 @@
 ---
 title: "サプライ チェーン マネジメントのホーム ページ"
-description: "このページするのに役立つリソースを使用Microsoft Dynamics 365 for Operations - サプライ チェーン マネジメントより効果的にします。"
+description: "このページでは、Microsoft Dynamics 365 for Operations - サプライチェーン マネジメントをより効果的に使用するために役立つリソースを紹介します。"
 author: yuyus
 manager: AnnBe
 ms.date: 04/04/2017
@@ -29,31 +29,31 @@ ms.lasthandoff: 04/12/2017
 
 [!include[banner](includes/banner.md)]
 
-このページするのに役立つリソースを使用Microsoft Dynamics 365 for Operations - サプライ チェーン マネジメントより効果的にします。 
+このページでは、Microsoft Dynamics 365 for Operations - サプライチェーン マネジメントをより効果的に使用するために役立つリソースを紹介します。 
 
-## <a name="whats-new-and-in-development"></a>新機能との開発
-移動します<a href="https://roadmap.dynamics.com/">Dynamics 365ロードマップ</a>にどのような新しい機能がリリースされ、開発中の新しい機能を参照してください。 
+## <a name="whats-new-and-in-development"></a>新機能および開発中の機能
+リリースされた新機能と開発中の新機能については、<a href="https://roadmap.dynamics.com/">Dynamics 365 Roadmap (Dynamics 365 ロードマップ)</a> を参照してください。 
 
 ## <a name="core-concepts-and-tasks"></a>主要な概念とタスク
-*  左ウィンドウでは、詳細情報を入手する、機能領域を選択します。 
-*  <a href="https://mix.office.com/watch/wpf78tr7rjuh/">倉庫管理で受信Asnを処理</a>(ビデオ) 
+*  左ウィンドウで機能領域を選択すると詳細が表示されます。 
+*  <a href="https://mix.office.com/watch/wpf78tr7rjuh/">倉庫管理での入荷 ASN の処理</a> (ビデオ) 
 
 
 ## <a name="blogs"></a>ブログ
-上にある製造会社やサプライ チェーン マネジメントに関する多くのトピックでは、<a href="https://blogs.msdn.microsoft.com/axmfg/">Dynamics AXの製造R & Dチーム ブログ</a>および<a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">Dynamics AX R & Dチーム ブログにサプライ チェーン マネジメント</a>します。 これらの大部分は、Dynamics 365 for Operations の以前のバージョンで書かれていますが、同じ概念を適用でき、手順も現在のバージョンと類似しています。 
+<a href="https://blogs.msdn.microsoft.com/axmfg/">Dynamics AX Manufacturing R&D Team Blog (Dynamics AX 製造研究開発チーム ブログ)</a> および <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">Supply Chain Management in Dynamics AX R&D Team Blog (Dynamics AX のサプライ チェーン マネジメント研究開発チーム ブログ)</a> には、製造およびサプライ チェーン マネジメントに関する多くのトピックがあります。 これらの投稿のほとんどは Dynamics 365 for Operations の以前のバージョンに関して書かれていますが、現在のバージョンでも同じ概念を適用でき、手順も類似しています。 
 
-たとえば、に関する最近の投稿を読み取ることができます。 
-* <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/">Announcing Dynamics 365 for Operations – Warehousing</a>
-* <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/12/01/improved-packing-functionality-dynamics-365-for-operations-1611/">改良された梱包機能 (Dynamics 365 for Operations 1611)</a>
-* <a href="https://blogs.msdn.microsoft.com/axmfg/2017/02/13/cross-docking-from-production-orders-to-transfer-orders/">移動オーダーに製造オーダーからのクロス ドッキング</a>
+たとえば、以下の内容に関する最近の投稿を読むことができます。 
+* <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/">Announcing Dynamics 365 for Operations – Warehousing (Dynamics 365 for Operations – 倉庫管理の発表)</a>
+* <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/12/01/improved-packing-functionality-dynamics-365-for-operations-1611/">Improved packing functionality (Dynamics 365 for Operations 1611) (改良された梱包機能 (Dynamics 365 for Operations 1611))</a>
+* <a href="https://blogs.msdn.microsoft.com/axmfg/2017/02/13/cross-docking-from-production-orders-to-transfer-orders/">製造オーダーから移動オーダーへのクロスドッキング</a>
 
 ## <a name="white-papers"></a>ホワイト ペーパー
-* The <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/">Microsoft Dynamics 365 for Operations - Getting Started with Cost Accounting</a> white paper provides the basic steps to configure Microsoft Dynamics 365 for Operations – Cost Accounting in order to make the actual cost analysis. また、のような順序で実行できる一連の手順を示します。
-* <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/">Dynamics 365 for Operations - リーン生産方式: 約定とかんばんジョブのスケジューリングできる</a>ホワイト ペーパーがかんばんジョブのスケジューリングの詳細を説明し、配送日管理の生産可能在庫 (CTP) 方法を使用する販売注文の作成の概念を紹介します。 また、注文を作成またはビルド オーダーのシナリオをモデル化するイベントかんばんを使用したCTPを連結する方法についても説明します。
-* <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet/">Microsoft Dynamics 365 for Operations - 原価計算表を使用してBOM計算</a>』のホワイト ペーパーを含む材料や製造原価計算表を設定する方法を説明し、設定が、BOM計算にどのように影響するかが発生します。 通知されるようにするための付録の手順を実行して、ことにより、BOM計算で分析するには、このドキュメントを読みからの情報を使用できます。
+* 『<a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/">Microsoft Dynamics 365 for Operations - Getting Started with Cost Accounting (Microsoft Dynamics 365 for Operations - 原価会計の概要)</a>』のホワイト ペーパーでは、実際原価分析を行うための Microsoft Dynamics 365 for Operations – Cost Accounting の基本的なコンフィギュレーション手順を説明しています。 また、実行できる一連の手順を順を追って示しています。
+* 『<a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/">Dynamics 365 for Operations - Lean Manufacturing: Capable to Promise and Kanban Job Scheduling (Dynamics 365 for Operations - リーン生産: 生産可能在庫とかんばん作業のスケジューリング)</a>』のホワイト ペーパーでは、かんばん作業のスケジューリングについて詳しく説明し、配送日管理に生産可能在庫 (CTP) 方式を使用した販売注文受注の概念を紹介しています。 また、CTP をイベントのかんばんと組み合わせて受注組立生産 (Assemble To Order または Build To Order) をモデル化する方法についても説明しています。
+* 『<a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet/">Microsoft Dynamics 365 for Operations - BOM Calculation by Using a Costing Sheet (Microsoft Dynamics 365 for Operations - 原価計算表を使用した BOM 計算)</a>』のホワイト ペーパーでは、材料と製造を含む原価計算表を設定する方法と、その設定が BOM 計算の結果に及ぼす影響について説明しています。 学習のために付録の演習を実行し、このドキュメントから習得した知識を利用して BOM 計算の分析を行うことができます。
 
-## <a name="elearning-courses"></a>eラーニング コース
-Microsoft Dynamics 365 for Operations方法については、トレーニングを参照してください<a href="https://mbspartner.microsoft.com/AX/LearningPlans/">Microsoft Dynamics学習ポータル</a>します。 (CustomerSourceアカウントが必要です) 
+## <a name="elearning-courses"></a>eLearning コース
+Microsoft Dynamics 365 for Operations のトレーニングの詳細については、<a href="https://mbspartner.microsoft.com/AX/LearningPlans/">Microsoft Dynamics ラーニング ポータル</a>を参照してください。 (CustomerSource アカウントが必要です) 
 
 
 
