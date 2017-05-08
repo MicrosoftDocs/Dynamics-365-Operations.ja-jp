@@ -170,6 +170,7 @@
 ## [原価要素分析コード](cost-accounting/cost-elements.md)
 ## [原価オブジェクト分析コード](cost-accounting/cost-objects.md)
 ## [分析コード メンバーの共通セットに対する原価要素分析コード メンバーのマップ](cost-accounting/map-cost-elements-dimension-members.md)
+## [間接費の計算](cost-accounting/overhead-calculation.md)
 ## [原価管理モバイル ワークスペース](cost-accounting/cost-controlling-mobile-workspace.md)
 ## [原価会計分析の Power BI コンテンツ](/dynamics365/operations/dev-itpro/analytics/cost-accounting-analysis-content-pack?toc=/dynamics365/operations/financials/toc.json)
 ## [原価会計分析の Power BI コンテンツのセキュリティ設定](/dynamics365/operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack?toc=/dynamics365/operations/financials/toc.json)
@@ -206,4 +207,18 @@
 ## [プロジェクト見積](project-management/project-quotations.md)
 ## [プロジェクト リソース](project-management/project-resourcing.md)
 ## [作業分解構造](project-management/work-breakdown-structures.md)
+## [プロジェクト時間入力モバイル ワークスペース](project-management/project-time-entry-mobile-workspace.md)
 # [ローカライズ](localizations/TOC.md)
+
+# [人事管理](/dynamics365/operations/human-resources/index)
+
+# [小売](/dynamics365/operations/retail/index)
+
+# [サプライ チェーン マネジメント](/dynamics365/operations/supply-chain/index)
+
+# [開発者と管理者](/dynamics365/operations/dev-itpro/index)
+
+# その他のリソース
+## [Dynamics 365 for Operations の用語集](/dynamics365/operations/get-started/glossary?toc=/dynamics365/operations/financials/toc.json)
+## [新機能および変更された機能](/dynamics365/operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/operations/financials/toc.json)
+

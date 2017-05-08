@@ -60,3 +60,15 @@
 #### [給与データの更新のよくある質問](localizations/noam-usa-payroll-data-updates.md)
 #### [給与レポートの生成](localizations/noam-usa-generate-payroll-reports.md)
 
+# [財務](/dynamics365/operations/financials/index)
+
+# [小売](/dynamics365/operations/retail/index)
+
+# [サプライ チェーン マネジメント](/dynamics365/operations/supply-chain/index)
+
+# [開発者と管理者](/dynamics365/operations/dev-itpro/index)
+
+# その他のリソース
+## [Dynamics 365 for Operations の用語集](/dynamics365/operations/get-started/glossary?toc=/dynamics365/operations/human-resources/toc.json)
+## [新機能および変更された機能](/dynamics365/operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/operations/human-resources/toc.json)
+

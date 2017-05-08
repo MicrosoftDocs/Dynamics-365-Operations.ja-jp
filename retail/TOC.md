@@ -68,3 +68,16 @@
 ## [Commerce エッセンシャルの概要](commerce-essentials.md)
 ## [組織と組織階層 (Commerce エッセンシャル)](organizational-hierarchies-commerce-essentials.md)
 # [IT プロフェッショナルおよび開発者向けコンテンツ](dev-itpro/TOC.md)
+
+# [財務](/dynamics365/operations/financials/index)
+
+# [人事管理](/dynamics365/operations/human-resources/index)
+
+# [サプライ チェーン マネジメント](/dynamics365/operations/supply-chain/index)
+
+# [開発者と管理者](/dynamics365/operations/dev-itpro/index)
+
+# その他のリソース
+## [Dynamics 365 for Operations の用語集](/dynamics365/operations/get-started/glossary?toc=/dynamics365/operations/retail/toc.json)
+## [新機能および変更された機能](/dynamics365/operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/operations/retail/toc.json)
+

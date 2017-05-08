@@ -1,0 +1,23 @@
+- name: "Dynamics 365"
+  tocHref: /dynamics365/
+  topicHref: /dynamics365
+  items:
+  - name: "Operations"
+    tocHref: /dynamics365/operations/
+    topicHref: /dynamics365/operations/index
+    items:
+    - name: "開発者と管理者"
+      tocHref: /dynamics365/operations/dev-itpro/
+      topicHref: /dynamics365/operations/dev-itpro/index
+    - name: "財務"
+      tocHref: /dynamics365/operations/financials/
+      topicHref: /dynamics365/operations/financials/index
+    - name: "人事管理"
+      tocHref: /dynamics365/operations/human-resources/
+      topicHref: /dynamics365/operations/human-resources/index
+    - name: "小売"
+      tocHref: /dynamics365/operations/retail/
+      topicHref: /dynamics365/operations/retail/index
+    - name: "サプライ チェーン"
+      tocHref: /dynamics365/operations/supply-chain/
+      topicHref: /dynamics365/operations/supply-chain/index

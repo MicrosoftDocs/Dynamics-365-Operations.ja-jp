@@ -42,6 +42,7 @@
 ## [販売注文の請求書 ID の編集](emea-edit-invoice-id-sales-orders.md)
 ## [EU 登録証明書](emea-entry-certificates.md)
 ## [EU 販売リストのレポート](emea-eu-sales-list.md)
+## [為替レート調整](emea-exchange-rate-adjustments.md)
 ## [支払方法のファイル形式](emea-select-file-formats-for-the-method-of-payments.md)
 ## [エストニアおよびリトアニアの固定資産の処分](emea-credit-note-reverse-fixed-asset-sale.md)
 ## [イントラスタット](emea-intrastat.md)
@@ -56,18 +57,19 @@
 ## [SEPA 口座振替の概要](../accounts-payable/sepa-credit-transfer.md)
 ## [単一ユーロ支払地域 (SEPA) 口座引落の概要](../accounts-receivable/sepa-direct-debit-overview.md)
 ## [印刷フォームの署名者の設定](emea-set-up-signers-for-printing-forms.md)
-## [定期処理仕訳帳の分割期間](emea-create-post-periodic-journals.md)
-## [レポートおよびドキュメントの金額表示方法の更新](emea-amount-printing-forms.md)
-## [VAT 報告](emea-vat-reporting.md)
+## [VAT 為替レート](emea-vat-exchange-rate.md)
 ## [決済のトランザクションの表示](emea-transactions-settlement-form.md)
 ## オーストリア
+### [半年減価償却](emea-aut-half-year-depreciation.md)
 ### [梱包材費用](emea-aut-packing-material-fee-calculation.md)
 ### [VAT 明細書](emea-aut-vat-statement-details.md)
 ## ベルギー
 ### [CODA 口座取引明細書](emea-bel-coda-bank-statement-import.md)
+### [INTERVAT 税申告](emea-bel-intervat-tax-declaration.md)
 ### [PRODCOM レポートの設定](emea-bel-prodcom-report.md)
 
 ## チェコ共和国
+### [訂正票上の現金割引](emea-cze-credit-note-cash-discount.md)
 ### [減価償却の丸め](emea-cze-depreciation-rounding.md)
 ### [減価償却停止](emea-cze-depreciation-suspension-holidays.md)
 ### [固定資産の減価償却](emea-cze-fixed-assets-depreciation.md)
@@ -94,7 +96,9 @@
 ### [仕訳リスト レポート](emea-deu-journal-list-report.md)
 ### [販売から生成されるクレジット メモの個別ラベルの印刷](emea-deu-print-separate-label-credit-memo-originating-sales.md)
 ## ハンガリー
+### [固定資産の減価償却方法](emea-hun-fixed-assets-depreciation-methods.md)    
 ### [低原価固定資産](emea-hun-low-cost-fixed-assets.md)
+### [固定資産を在庫に移動する](emea-hun-fixed-asset-to-inventory.md)
 ## イタリア
 ### [VAT 明細書の詳細](emea-ita-vat-statements-details.md)
 ### [ブラック リスト レポート](emea-ita-black-list-report.md)
@@ -103,6 +107,7 @@
 ### [請求書の梱包明細日付の検証](emea-ita-packing-slip-date-verification-on-invoice.md)
 ### [消費税帳簿](emea-ita-fiscal-books.md)
 ### [政府/自治体に対して発行された請求書の分割支払](emea-ita-split-payment-invoices-issued-public-administration.md)
+### [源泉徴収税](emea-ita-withholding tax.md)
 ## ラトビア
 ### [固定資産会計](emea-lva-fixed-assets-accounting.md)
 ### [固定資産の場所の変更の追跡](emea-lva-fixed-assets-location-fields-change.md)
@@ -119,12 +124,17 @@
 ### [売上請求書の番号付けの複製](emea-pol-sales-invoice-duplicates-numbering.md)
 ### [固定資産の減価償却](emea-pol-fixed-assets-depreciation.md)
 ### [固定資産の処分機能の拡張](emea-pol-fixed-asset-disposal-functionality-extension.md)
+### [返品可能な梱包](emea-pol-returnable-packages.md)
+### [売上税レポート](emea-pol-sales-tax-reports.md)
+### [標準監査ファイル (SAF)](emea-pol-standard-audit-file-saf.md)
 ### [売上高残高明細書](emea-pol-turnover-balances-statement.md)
 ## スペイン
-### [受取手形オプション](emea-esp-bill-of-exchange-options.md)
 ### [請求書での現金割引の適用](emea-esp-cash-discount-applied-invoice.md)
+### [受取手形オプション](emea-esp-bill-of-exchange-options.md)
+### [条件付売上税](emea-esp-conditional-sales-tax.md)
 ### [請求先/元 ID の会計データ](emea-esp-fiscal-data-invoice-account.md)
 ### [固定資産グループの再評価](emea-esp-fixed-asset-group-revaluation.md)
+### [EU 内 VAT](emea-esp-intra-community-vat.md)
 ### [一時顧客](emea-esp-no-one-time-customer-for-project-contracts.md)
 ### [支払手形オプション](emea-esp-promissory-note-options.md)
 ### [販売および購買サイクル](emea-esp-sales-purchase-cycle.md)
@@ -163,3 +173,4 @@
 
 # 北米
 ## [米国の年度末の 1099 レポート](noam-usa-year-end-1099-reporting.md)
+

@@ -22,10 +22,14 @@
 ## [加重平均日付](weighted-average-date.md)
 ## [現物価格とマーキングを使用した加重平均](weighted-average-physical-value-marking.md)
 # 製造原価計算
+## [製造品目の固定費の償却](amortize-constant-costs-manufactured-item.md)
+## [一括引き落とし原価計算](backflush-costing.md)
+## [BOM 計算](bom-calculations.md)
 ## [BOM 計算グループ](bom-calculation-groups.md)
 ## [製造差異の一般的な発生源](common-sources-of-production-variances.md)
 ## [生産工順で使用される原価カテゴリ](cost-categories-used-production-routings.md)
 ## [生産管理およびプロジェクト管理会計で使用される原価カテゴリ](cost-categories-used-production-control-project-management-accounting.md)
+## [製造品目の雑費を表示](charges-manufactured-item.md)
 ## [製造オーダーの原価分析](production-order-cost-analysis.md)
 ## [製造オーダーの原価見積](production-order-cost-estimation.md)
 ## [生産の転記](production-posting.md)
@@ -39,5 +43,6 @@
 ## [製造環境での標準原価の更新](update-standard-costs-manufacturing-environment.md)
 ## [新規製造品目の標準原価の更新](update-standard-costs-new-manufactured-item.md)
 ## [非製造環境での標準原価の更新](update-standard-costs-non-manufacturing-environment.md)
+
 
 

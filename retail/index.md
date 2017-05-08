@@ -17,10 +17,11 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 03f54d7cf25b928d51d7d382ec490295dcbbbefe
-ms.openlocfilehash: 0d00f33ce8059acd877d1c177e3def0b5f0b73b1
-ms.lasthandoff: 04/12/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: a8385e7103b74be33fd79c1143e481ad8edca31c
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -34,11 +35,9 @@ Dynamics 365 for Operations – Retail は、モバイルに適した最新の�
 このページでは、Microsoft Dynamics 365 for Operations - Retail を効果的に使用するために役立つリソースを紹介します。 左端のウィンドウで機能領域を選択すると詳細が表示されます。 
 
 ## <a name="set-up-retail-channels"></a>小売チャネルの設定
-小売エクスペリエンスを設定する際には、従来型の店舗 (Dynamics 365 for Operations では *小売店舗* と呼ばれます) とオンライン ストアのオペレーションを定義およびコンフィギュレーションする方法を決定します。 
+小売エクスペリエンスを設定する際には、店舗 (従来型の店舗、オンライン ストア、コール センター) を定義およびコンフィギュレーションする方法を決定します。 
 
-小売店舗ごとに独自の支払方法、価格グループ、POS ソリューション、収益勘定、経費勘定、スタッフを設定できます。 小売店舗を作成したら、店舗に配送される製品を割り当てます。 従業員、レジスター、顧客の店舗への割り当ても行います。 最後に、組織階層に新しい店舗を追加します。
-
-オンライン ストアを作成する際には、品揃え、属性、支払方法、出荷方法などのコンポーネントを設定する必要があります。 価格、プロモーション、割引、オンライン ストア固有の配送条件も定義できます。
+小売店舗ごとに独自の支払方法、配送方法、価格グループ、収益/経費勘定、レジスター、スタッフを設定できます。 小売店舗を作成したら、店舗に置く製品の品揃えを作成します。 特定の店舗で販売される製品に適用される、店舗に固有の価格と割引を定義することもできます。
 
 -   [小売チャネルの定義](define-maintain-retail-channels.md)
 -   [オンライン ストアの概要](online-stores.md)
@@ -49,10 +48,10 @@ Dynamics 365 for Operations – Retail は、モバイルに適した最新の�
 -   [コール センターの機能](call-center-functionality.md)
 -   [コール センター カタログの作成](create-call-center-catalogs.md)
 
-## <a name="define-your-pos-and-mpos-solutions"></a>POS ソリューションと MPOS ソリューションの定義
-Retail Modern POS (MPOS) は、PC、タブレット、携帯電話向けの販売時点管理アプリです。 販売スタッフは、PC ベースのレジスターと同様に、店舗のどこからでもモバイル デバイスを使用して販売トランザクションの処理、顧客注文の処理、日常業務、在庫管理を行うことができます。 クラウド POS は、ブラウザー ベースの POS です。 
+## <a name="define-your-pos-solutions"></a>POS ソリューションの定義
+Retail Modern POS (MPOS) は、PC、タブレット、携帯電話向けの販売時点管理アプリです。 販売スタッフは、PC ベースのレジスターと同様に、店舗のどこからでもモバイル デバイスを使用して販売トランザクションと顧客注文の処理、クライアンテリング業務、日常業務、在庫管理を行うことができます。 クラウド POS は、標準のブラウザーで起動できるブラウザー ベースの POS です。 
 
-店舗、店舗内の POS レジスターやチャネル、レジスターやチャネルでトランザクションの処理に使用される小売周辺機器の間の関係を定義するために、いくつかのコンポーネントを設定します。 また、POS の特定のインスタンスの特性も定義します。この特性には、レジスターで使用される小売周辺機器のハードウェア プロファイルまたは設定、レジスターがマップされている店舗、そのレジスターにログオンしているユーザーのビジュアル エクスペリエンスが含まれます。
+店舗、店舗内の POS レジスター、レジスターでトランザクションの処理に使用される小売周辺機器の間の関係を定義するために、いくつかのコンポーネントを設定します。 また、POS の特定のインスタンスの特性も定義します。この特性には、レジスターで使用される小売周辺機器のハードウェア プロファイルまたは設定、レジスターがマップされている店舗、そのレジスターにログオンしているユーザーのビジュアル エクスペリエンス、レジスターで有効になっている機能が含まれます。 また、レジスターが非接続状態、つまりオフライン状態で稼働できるかどうかも定義します。
 
 -   [チャネル クライアント、レジスター、ハードウェア ステーションの定義と管理](define-maintain-channel-clients-registers-hw-stations.md)
 -   [MPOS の構成とインストール](retail-modern-pos-device-activation.md)
@@ -92,4 +91,6 @@ Microsoft Dynamics 365 for Operations - Retail に関する意見、ニュース
 <a href="https://blogs.msdn.microsoft.com/dax/">Microsoft Dynamics AX product team blog (Microsoft Dynamics AX 製品チームのブログ)</a> には、小売に関する多くのトピックがあります。 これらの投稿の一部は Dynamics 365 for Operations の以前のバージョンに関して書かれていますが、現在のバージョンでも同じ概念を適用でき、手順も類似しています。
 
 <a href="https://community.dynamics.com/partner/b/operationspartnercommunityblog">Microsoft Dynamics Operations Partner Community Blog (Microsoft Dynamics Operations パートナー コミュニティのブログ)</a> では、MBS 操作に関する最新情報とトレンドを知るための単一のリソースが Microsoft Dynamics パートナー向けに提供されています。
+
+
 

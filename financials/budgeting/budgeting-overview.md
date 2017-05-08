@@ -16,10 +16,11 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: b21fd97426b331726c12ea29f89817a46dd445c3
-ms.openlocfilehash: f7b4efc06b8e64c05da026850b41cb5b68c33ec3
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: dd17842365e357ecb5cb6034ed8878fcd60be5fc
+ms.openlocfilehash: aacce0449c9490c4ab66cacb9945ed64fa40de34
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -35,14 +36,14 @@ ms.lasthandoff: 03/31/2017
 -------------------------------------
 
 通常、会社のリソース予定サイクルは、計画、予算作成、予測活動で構成されます。
-[![予算作成機能コンポーネント](./media/budgeting-functionality-components.jpg)](./media/budgeting-functionality-components.jpg) 長期戦略計画と年間予算計画の両方のプロセスは、予算計画ドキュメント経由でサポートされます。 予算計画ドキュメントは、Microsoft Excel と密に統合されています。 ユーザーは、無制限な金額と定量的なシナリオを構成することができ、予算作成の組織階層も定義してトップダウンおよびボトムアップ予算作成方法の両方をサポートできます。 予算を [Microsoft Dynamics 365 for Operations] で設定し、承認した後、予算計画を予算登録エントリに変換します。 予算登録エントリは、予算を管理し、予算コード経由で追跡できる金額を維持するためのツールを提供します。 予算登録エントリでは、元の予算の変更、転送の実行、予算金額の前年度からの繰り越しができます。 決定した予算に基づいて、会社は予算管理を有効にすることができます。 管理レベルは、組織の文化と組織の成熟度レベルに依存します。 成熟度レベルの低い組織は、予算が目標を満たしていない場合、予算を "現状のまま" とし、プロアクティブよりリアクティブです。 他の組織は、予算財源が使用できない場合、ユーザーが購入することを妨げる予算管理ポリシーを有効にする可能性があります。 最後に、非常に成熟した組織は、従業員が組織の目標について教育されている組織文化を確立し、「旅行の代わりにオンライン ミーティングを検討する」ようなポリシーを通じてこれらの目標に従う可能性があります。 Dynamics 365 for Operations には、会社の管理がハード コントロール (予算を超過する転記を避けます) またはソフト コントロール (ユーザーが利用可能な予算資源を超えると警告されますが、続行方法を決めることができます) のいずれかを選択できる予算管理フレームワークが含まれます。 最後に、ローリング予測を使用できます。 ローリング予測は、予算対実績の通常の比較で、会社が予算に対してどれだけ操作できるかを定義するために使用します。 ローリング予測は、傾向を見つけるのにも使用されます。 Microsoft Dynamics 365 for Operations では、ローリング予測は、最初の計画活動として予算計画ドキュメント経由でサポートされます。 ローリング予測は、次回の予算サイクルの計画と並列して実行できます。
+[![予算作成機能コンポーネント](./media/budgeting-functionality-components.jpg)](./media/budgeting-functionality-components.jpg) 長期戦略計画と年間予算計画の両方のプロセスは、予算計画ドキュメント経由でサポートされます。 予算計画ドキュメントは、Microsoft Excel と密に統合されています。 ユーザーは、無制限な金額と定量的なシナリオを構成することができ、予算作成の組織階層も定義してトップダウンおよびボトムアップ予算作成方法の両方をサポートできます。 予算を Microsoft Dynamics 365 for Operations で設定し、承認した後、予算計画を予算登録エントリに変換します。 予算登録エントリは、予算を管理し、予算コード経由で追跡できる金額を維持するためのツールを提供します。 予算登録エントリでは、元の予算の変更、転送の実行、予算金額の前年度からの繰り越しができます。 決定した予算に基づいて、会社は予算管理を有効にすることができます。 管理レベルは、組織の文化と組織の成熟度レベルに依存します。 成熟度レベルの低い組織は、予算が目標を満たしていない場合、予算を "現状のまま" とし、プロアクティブよりリアクティブです。 組織によっては、予算財源が使用できない場合に、ユーザーが購入することを妨げる予算管理ポリシーを有効にすることもあります。 最後に、非常に成熟した組織は、従業員が組織の目標について教育されている組織文化を確立し、「出張の代わりにオンライン ミーティングを検討する」ようなポリシーを通じてこれらの目標に従う可能性があります。 Dynamics 365 for Operations には、会社の管理がハード コントロール (予算を超過する転記を避けます) またはソフト コントロール (ユーザーが利用可能な予算資源を超えると警告されますが、続行方法を決めることができます) のいずれかを選択できる予算管理フレームワークが含まれます。 最後に、ローリング予測を使用できます。 ローリング予測は、予算対実績の定期的な比較であり、会社が予算との比較においてどの程度効果的に運営されているかを定義するために使用します。 ローリング予測はトレンドの特定にも使用されます。 Microsoft Dynamics 365 for Operations では、ローリング予測は、最初の計画活動として予算計画ドキュメント経由でサポートされます。 ローリング予測は、次回の予算サイクルの計画と並列して実行できます。
 
 -   [基本予算作成: 概要およびコンフィギュレーション](basic-budgeting-overview-configuration.md)
 -   [予算管理: 概要およびコンフィギュレーション](budget-control-overview-configuration.md)
 -   [予算計画: 概要およびコンフィギュレーション](budget-planning-overview-configuration.md)
--   [予測職位](position-forecasting.md)
--   [予算計画の妥当性ドキュメント](budget-planning-justification-docs.md)
--   [予算計画の Microsoft Excel テンプレート](budget-planning-excel-templates.md)
+-   [職位予測](position-forecasting.md)
+-   [予算計画妥当性ドキュメント](budget-planning-justification-docs.md)
+-   [予算計画用 Microsoft Excel テンプレート](budget-planning-excel-templates.md)
 
 ## <a name="budgeting-tools-in-dynamics-365-for-operations"></a>Dynamics 365 for Operations の予算作成ツール
 [![予算作成ツール](./media/budgeting-tools.jpg)](./media/budgeting-tools.jpg) 
@@ -57,7 +58,7 @@ ms.lasthandoff: 03/31/2017
 予算計画に他のモジュールから計画データを移動する方法についての情報は、[他のモジュールとの予算計画の統合](budget-planning-integration-other-modules.md)を参照してください。
 
 ## <a name="user-interface-and-reporting-capabilities"></a>ユーザー インターフェイスとレポート機能
-Dynamics 365 for Operations では、ユーザーは直接 Dynamics 365 for Operations クライアントで (コンフィギュレーション可能な予算計画ドキュメント ページを使用することにより)、または Excel を使用して、予算計画を作成できます。 Excel は、いくつかの追加機能を提供します。 たとえば、予算計画のソースとして外部データを使用し、カスタム計算を実行し、Microsoft PivotTable やグラフを使用できます。 予算計画プロセスの変数のほとんどは、コンフィギュレーションできます。 たとえば、予算作成者、予算作成する対象、プロセスの概要を定義できます。 予算計画には Excel を使用できますが、Dynamics 365 for Operations では、全くの単一のソースとして保持され、予算管理の問題を防ぐのに役立ちます。 定期処理プロセスは、予算作成の初期データを予算計画に移動するために使用できます。 レポートについては、Dynamics 365 for Operations は、予算作成データを表示および分析できる一連の標準的な照会ページを提供します。 予算計画データは、Management Reporter を使用してアクセスでき、別の予算計画シナリオは、Management Reporter レポートで列として表示できます。
+Dynamics 365 for Operations では、ユーザーは直接 Dynamics 365 for Operations クライアントで (コンフィギュレーション可能な予算計画ドキュメント ページを使用することにより)、または Excel を使用して、予算計画を作成できます。 Excel は、いくつかの追加機能を提供します。 たとえば、予算計画のソースとして外部データを使用し、カスタム計算を実行し、Microsoft PivotTable やグラフを使用できます。 予算計画プロセスの変数のほとんどは、コンフィギュレーションできます。 たとえば、予算作成者、予算作成する対象、プロセスの概要を定義できます。 予算計画には Excel を使用できますが、Dynamics 365 for Operations では、まったくの単一のソースとして保持され、予算管理の問題を防ぐのに役立ちます。 定期処理プロセスは、予算作成の初期データを予算計画に移動するために使用できます。 レポートについては、Dynamics 365 for Operations は、予算作成データを表示および分析できる一連の標準的な照会ページを提供します。 予算計画データは、Management Reporter を使用してアクセスでき、別の予算計画シナリオは、Management Reporter レポートで列として表示できます。
 
 
 
