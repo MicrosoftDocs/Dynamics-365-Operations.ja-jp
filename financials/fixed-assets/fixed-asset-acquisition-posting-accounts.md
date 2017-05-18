@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 8e89a57dda8f2d392483ed13c686ea97b74926b0
-ms.openlocfilehash: bd7f89a7dbf8aa87794f8d4b57bda54433e5feb1
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 124aa1aec7ff2cee51128ab0bc10e7f679414157
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -43,7 +44,7 @@ ms.lasthandoff: 03/31/2017
 
 [総勘定元帳] の [固定資産の在庫仕訳帳] を使用して転記された取得の場合、固定資産は外部のソースから購入されたのではなく、会社の在庫から移動されています。 したがって、相手勘定は、在庫管理の在庫品目に対する在庫払出勘定になります。
 
-詳細については、「[Acquire assets through procurement](acquire-assets-procurement.md)」を参照してください。
+詳細については、「[調達によって取得される資産の取得](acquire-assets-procurement.md)」を参照してください。
 
 
 

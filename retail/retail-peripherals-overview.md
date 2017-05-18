@@ -17,10 +17,11 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 79a43c35691f16d773b88faad63c4ab79cb93f1f
-ms.openlocfilehash: c6fb3922ba2c4b15f1043d0bcbac40ff2da9a469
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 82891b44a3ba3da23f3ce7a9b86be5e8f88d2afd
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -794,8 +795,8 @@ ServiceOPOS レジストリ内では、設定されているデバイスは OPOS
     3.  **コマンド プロンプト**ウィンドウで、**iisreset /Restart** とタイプして Enter キーを押します。
     4.  IIS の再起動後、Modern POS を再起動します。
 -   周辺機器に頻繁に変更を加え、POS クライアントを頻繁に起動および終了した場合、前の POS セッションの dllhost プロセスが現在のセッションに干渉することがあります。 この場合、前のセッションを管理するダイナミックリンク ライブラリ (DLL) のホストを閉じるまで、デバイスが使用可能にならないことがあります。 DLL ホストを終了するには、次の手順に従います。
-    1.  [**開始**] メニューから [**Task manager**] とタイプします。
-    2.  検索結果から、**Task manager** をクリックします。
+    1.  [**開始**] メニューから [**タスク マネージャ**] とタイプします。
+    2.  検索結果から、**タスク マネージャ**をクリックします。
     3.  タスク マネージャの [**詳細**] タブで [**名前**] というラベルの付いた列ヘッダーをクリックし、テーブルを名前のアルファベット順に並べ替えます。
     4.  dllhost.exe が見つかるまでスクロールします。
     5.  各 DLL ホストを選択し、[**タスクの終了**] をクリックします。

@@ -19,10 +19,11 @@ ms.search.industry: Manufacturing
 ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 7fbf69dc217a2f61ec3aeda952ff221491e9385a
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 391e62725f9652d19445e9b3ab01d738bfb64e98
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -71,7 +72,7 @@ BOM は、分析コード ベースの製品コンフィギュレーションの
 コンフィギュレーション ルールは、ある BOM の 1 つのコンフィギュレーション グループに含まれている製品が、同じ BOM の別のコンフィギュレーション グループで他の製品を包含または排除することを確認するしくみを表します。
 
 ## <a name="product-modeling-process"></a>製品モデリング プロセス
-分析コード ベースの製品の製品モデル作成のための正常な順序は、関連するコンフィギュレーション グループの定義で始まります。 BOM で使用されるすべての製品が、製品モデルが作成された会社にリリース済みであることを確認することは重要です。 ユーザーは、これらの構成要素を適切な場所で使用して、BOM を作成し、コンフィギュレーション グループを関連するすべての BOM 明細行に割り当てることができます。 BOM が完了すると、コンフィギュレーション ルートを、適切な順序でコンフィギュレーション グループの注文で定義できます。 \[caption id="attachment\_282671" align="alignnone" width="1187"\][![Dimension-based product modeling process](./media/dimension-based-product-modeling-process-v1.png)](./media/dimension-based-product-modeling-process-v1.png) 分析コード ベースの製品モデリングのプロセス\[/caption\] 一緒に使用する必要がある、または必要がない異なるコンフィギュレーション グループに製品が存在する場合、これらの製品の関係を適用するコンフィギュレーション ルールを作成できます。 BOM が BOM バージョンを介して分析コード ベースの製品マスターと結ばれ、両方とも承認され有効化されると、製品コンフィギュレーションを作成して、各コンフィギュレーションの名前を入力できます。 コンフィギュレーションは、トランザクションが生成される前に定義することができ、また特定のコンフィギュレーションの必要性が発生したときに定義することができます。
+分析コード ベースの製品の製品モデル作成のための正常な順序は、関連するコンフィギュレーション グループの定義で始まります。 BOM で使用されるすべての製品が、製品モデルが作成された会社にリリース済みであることを確認することは重要です。 ユーザーは、これらの構成要素を適切な場所で使用して、BOM を作成し、コンフィギュレーション グループを関連するすべての BOM 明細行に割り当てることができます。 BOM が完了すると、コンフィギュレーション ルートを、適切な順序でコンフィギュレーション グループの注文で定義できます。 \[caption id="attachment\_282671" align="alignnone" width="1187"\][![分析コード ベースの製品モデリングのプロセス](./media/dimension-based-product-modeling-process-v1.png)](./media/dimension-based-product-modeling-process-v1.png) 分析コード ベースの製品モデリングのプロセス\[/caption\] 一緒に使用する必要がある、または必要がない異なるコンフィギュレーション グループに製品が存在する場合、これらの製品の関係を適用するコンフィギュレーション ルールを作成できます。 BOM が BOM バージョンを介して分析コード ベースの製品マスターと結ばれ、両方とも承認され有効化されると、製品コンフィギュレーションを作成して、各コンフィギュレーションの名前を入力できます。 コンフィギュレーションは、トランザクションが生成される前に定義することができ、また特定のコンフィギュレーションの必要性が発生したときに定義することができます。
 
 ### <a name="suggested-use"></a>推奨される使用
 

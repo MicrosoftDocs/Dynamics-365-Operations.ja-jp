@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 926ee087a0e0c4743f29315b1d82c7d37e95be28
-ms.openlocfilehash: 8d4f84df5722aaff5589cb30314657578fec964f
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 0c10545db1ac13ae94f7792ac09a50437b78d4b3
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -191,7 +192,7 @@ ms.lasthandoff: 03/31/2017
 -   元の発注書には記載されていなかった請求金額を入力して、請求書情報を仕入先から受け取った請求書と照合する。 発注書の請求金額は請求書の請求金額と比較できます。 必要に応じて、請求書に請求金額を追加して、請求明細行に割り当てることができます。
 -   請求書の正味単価と発注書の正味単価の間の価格照合不一致を表示して承認する。 法人、仕入先、品目に品目を価格の許容率を設定できます。 仕入先請求書の明細行価格が価格許容範囲外にある場合は、転記の承認が得られるまで、あるいは仕入先から訂正を受け取るまで、請求書を保存できます。
 
-詳細については、「[Three-way matching policies](three-way-matching-policies.md)」を参照してください。
+詳細については、「[スリーウェイ マッチング ポリシー](three-way-matching-policies.md)」を参照してください。
 
 
 

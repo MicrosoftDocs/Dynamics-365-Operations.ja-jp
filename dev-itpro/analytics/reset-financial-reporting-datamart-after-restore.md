@@ -1,9 +1,9 @@
 ---
 title: "データベースを復元した後の財務報告のデータ マートのリセット"
 description: "このトピックでは、Microsoft Dynamics 365 for Operations のデータベースを復元した後に、財務報告データ マートをリセットする方法について説明します。"
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-12-08 16 - 20 - 13
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -16,15 +16,19 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 4d6cf88788dcc5e982e509137aa444a020137a5e
-ms.openlocfilehash: 3967cbb869fbb23d5d7716f619e4c22b4a273921
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: d4ce390c62cbfb1f693410b004aa296c0ed75eb2
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="reset-the-financial-reporting-data-mart-after-restoring-a-database"></a>データベースを復元した後の財務報告のデータ マートのリセット
+
+[!include[banner](../includes/banner.md)]
+
 
 このトピックでは、Microsoft Dynamics 365 for Operations のデータベースを復元した後に、財務報告データ マートをリセットする方法について説明します。 
 
@@ -43,7 +47,11 @@ Dynamics 365 for Operations のデータベースをバックアップから復�
 5.  ファイル名を入力し、エクスポートされたレポート定義を保存できる安全な場所を選択します。
 6.  [**保存**] をクリックします。
 
-ファイルは、安全な場所にコピーまたはアップロードすることができ、別のときに異なる環境にインポートできるようになります。 Microsoft Azure ストレージ アカウントの使用に関する情報は、[AzCopy Command-Line Utility でデータを転送する](https://docs.microsoft.com/en-gb/azure/storage/storage-use-azcopy) を参照してください。 **注記:** Microsoft は、Dynamics 365 for Operations の契約の一部としてストレージ アカウントを提供しません。 ストレージ アカウントを購入するか、別の Azure サブスクリプションからストレージ アカウントを使用する必要があります。 **重要:** Azure 仮想マシン上の D ドライブの動作に注意してください。 エクスポートされた構成要素グループをここに永久に保管しないでください。 テンポラリー ドライブに関する詳細については、[Windows Azure 仮想マシン上のテンポラリー ドライブを理解する](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/) を参照してください。
+ファイルは、安全な場所にコピーまたはアップロードすることができ、別のときに異なる環境にインポートできるようになります。 Microsoft Azure ストレージ アカウントの使用に関する情報は、[AzCopy Command-Line Utility でデータを転送する](https://docs.microsoft.com/en-gb/azure/storage/storage-use-azcopy) を参照してください。 
+> [!NOTE]
+> Microsoft は、Dynamics 365 for Operations の契約の一部としてストレージ アカウントを提供しません。 ストレージ アカウントを購入するか、別の Azure サブスクリプションからストレージ アカウントを使用する必要があります。 
+> [!WARNING]
+> Azure 仮想マシン上の D ドライブの動作に注意してください。 エクスポートされた構成要素グループをここに永久に保管しないでください。 テンポラリー ドライブに関する詳細については、[Windows Azure 仮想マシン上のテンポラリー ドライブを理解する](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/) を参照してください。
 
 ## <a name="stop-services"></a>サービスの停止
 リモート デスクトップを使用して、環境内のすべてのコンピュータに接続し、services.msc を使用して次の Windows サービスを停止します。
@@ -96,7 +104,9 @@ services.msc を使用して、以前に停止したサービスを再起動し�
 エクスポート中に作成されたファイルを使用して、レポート デザイナーからレポート デザインをインポートします:
 
 1.  レポート デザイナーで、[**会社**] &gt; [**構成要素グループ**] の順に移動します。
-2.  エクスポートする構成要素グループを選択し、[**エクスポート**] をクリックします。 **注記:** Dynamics 365 for Operation では、**既定** として 1 つの構成要素グループのみがサポートされます。
+2.  エクスポートする構成要素グループを選択し、[**エクスポート**] をクリックします。 
+    > [!NOTE]
+    > Dynamics 365 for Operation では、**既定** として 1 つの構成要素グループのみがサポートされます。
 3.  **既定** の構成要素を選択し、[**インポート**] をクリックします。
 4.  エクスポート済みのレポート定義を選択し、[**開く**] をクリックします。
 5.  [インポート] ダイアログ ボックスで、インポートするレポート定義を選択します:
@@ -104,6 +114,8 @@ services.msc を使用して、以前に停止したサービスを再起動し�
     -   特定のレポート、行、列、ツリー、または分析コード セットをインポートするには、インポートするレポート、行、列、ツリー、または分析コード セットを選択します。
 
 6.  [**インポート**] をクリックします。
+
+
 
 
 

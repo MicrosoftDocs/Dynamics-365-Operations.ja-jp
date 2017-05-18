@@ -1,6 +1,6 @@
 ---
 title: "買掛金勘定のコンフィギュレーション"
-description: "この記事は、Microsoft Dynamics AX の買掛金勘定の基本機能およびオプション機能の設定に使用するページについて説明します。 また、買掛金勘定の設定を開始する前に実行しなければならない設定手順について説明します。"
+description: "この記事は、Microsoft Dynamics 365 for Operations の買掛金勘定の基本機能およびオプション機能の設定に使用するページについて説明します。 また、買掛金勘定の設定を開始する前に実行しなければならない設定手順について説明します。"
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 926ee087a0e0c4743f29315b1d82c7d37e95be28
-ms.openlocfilehash: b06623a0eb754654f41c50b92af67dc94a069663
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 8581401bfefe4ddf29f32691b5678317e392db96
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -31,7 +32,7 @@ ms.lasthandoff: 03/31/2017
 [!include[banner](../includes/banner.md)]
 
 
-この記事は、Microsoft Dynamics AX の買掛金勘定の基本機能およびオプション機能の設定に使用するページについて説明します。 また、買掛金勘定の設定を開始する前に実行しなければならない設定手順について説明します。
+この記事は、Microsoft Dynamics 365 for Operations の買掛金勘定の基本機能およびオプション機能の設定に使用するページについて説明します。 また、買掛金勘定の設定を開始する前に実行しなければならない設定手順について説明します。
 
 <a name="prerequisites-for-accounts-payable-setup"></a>買掛金勘定設定の前提条件
 ----------------------------------------
@@ -145,6 +146,7 @@ ms.lasthandoff: 03/31/2017
 **現金および銀行管理**
 
 -   支払目的コード ページでは、中央銀行の支払目的コードを設定します。
+
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "財務諸表の表示およびデザイン"
-description: "この記事では、Microsoft Dynamics 365 for Operations の財務諸表の表示および作成の練習を提供します。 財務報告は Dynamics 365 for Operations と財務諸表を作成して編集するクリック ワンス レポート デザイナーで構成されます。"
-author: twheeloc
+description: "この記事では、Microsoft Dynamics 365 for Operations の財務諸表の表示および作成の練習を提供します。"
+author: jcart1106
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.reviewer: annbe
+ms.reviewer: shylaw
 ms.search.scope: AX 7.0.0, Operations, Core
 ms.custom: 10814
 ms.assetid: cd5f6483-c09b-4c2d-9336-d22eb6ab6e4f
@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 4d6cf88788dcc5e982e509137aa444a020137a5e
-ms.openlocfilehash: 3319fa0a919ca5e2737319f5cdc4190cf32d59b6
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 6f785ac8b9a8be503bf9122f21716f745b17115b
+ms.openlocfilehash: 635e9e90c63330b3d8b0cc46f16a36fa44ef915d
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/27/2017
 
 
 ---
@@ -96,7 +97,7 @@ ms.lasthandoff: 03/31/2017
 22. [**属性の詳細な試算表**] レポート定義から、行定義と列定義に対する、属性の詳細な試算表を選択します。
 23. 基準年を [**2012**] に変更します。
 24. レポート定義を [**保存**] し、**生成します**。 レポートの生成が完了しそれを開くと、最初の練習で実行したように、レポートを活用できます。 追加の属性がどのように表示されるかをさまざまな勘定で特定します。
-25. [**属性の詳細な試算表 **] レポートを閉じます。
+25. [**属性の詳細な試算表**] レポートを閉じます。
 26. [**レポート デザイナー**] を閉じます。
 
 ## <a name="exercise-3-create-a-multidimensional-report-using-a-reporting-tree"></a>練習 3: レポート ツリーを使用する多次元レポートの作成
@@ -105,7 +106,7 @@ ms.lasthandoff: 03/31/2017
 1.  総勘定元帳の [照会およびレポート] の下の [**財務レポート**] に移動します。
 2.  [**損益計算書 – 既定**] という名前のレポートの行を選択します
 3.  [**編集**] を選択します。 [**損益計算書 - 既定**] がレポート デザイナーで開きます。
-4.  [**ファイル**] メニューの [** 新規**] をポイントし、[**レポート ツリー定義**] をクリックします。
+4.  [**ファイル**] メニューの [**新規**] をポイントし、[**レポート ツリー定義**] をクリックします。
 5.  [**編集**] メニューの [**分析コードからレポート単位の挿入**] をクリックします。
 6.  [**原価部門**] を除き、すべての分析コードのチェック ボックスをクリアします。
 7.  [**移動元分析コード**] フィールドから、原価部門分析コードをクリックし、[**007**] と入力し、[タブ] キーを押します。 [**移動先分析コード**] フィールドで、[**018**] と入力します。
@@ -165,7 +166,7 @@ ms.lasthandoff: 03/31/2017
 6.  [**分析コード フィルター**] フィールドをダブルクリックします。
 7.  [**分析コード**] ウィンドウで、[**部門**] 列をダブルクリックします。
 8.  個々または範囲を選択したダイアログで、 [**元**] フィールドの [**省略**] をクリックして、部門の一覧を表示します。
-9.  部門 [**022**]、[**販売とマーケティング**] を選択し、[** OK**] をクリックします。
+9.  部門 [**022**]、[**販売とマーケティング**] を選択し、[**OK**] をクリックします。
 10. 部門 23 から 25 でステップ 5 から 8 を繰り返します。
 11. 各 FD 列の [**ヘッダー 2**] 行で、次の部門の説明を入力します:
     -   列 B – 販売およびマーケティング
@@ -182,8 +183,8 @@ ms.lasthandoff: 03/31/2017
 18. 変更を [**保存**] して、**生成します**。 レポートが完了し開くと、レポートを活用できます。
 
 ## <a name="additional-resources"></a>追加リソース
-[財務レポート](\financials\general-ledger\financial-reporting-getting-started.md) 
-[財務レポートの表示](\financials\general-ledger\view-financial-reports.md) 
+[財務レポート](/dynamics365/operations/financials/general-ledger/financial-reporting-getting-started) 
+[財務レポートの表示](/dynamics365/operations/financials/general-ledger/view-financial-reports) 
 [Dynamics Financial Reporting ブログ](http://blogs.msdn.com/b/dynamics_financial_reporting/)
 
 

@@ -3,7 +3,7 @@ title: "倉庫作業のモバイル デバイスの設定"
 description: "この記事では、モバイル デバイス上で作業を行う倉庫作業者が使用するメニュー項目をコンフィギュレーションする方法を説明します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,15 +17,19 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: afa59439e06aad9d669eb352a9837a013f447249
-ms.openlocfilehash: 34d7b246d74d1546b54494944903d160e31f7678
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: a964587fa5dd48f0ed4e9f2c67fb52e5071ac98d
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>倉庫作業のモバイル デバイスの設定
+
+[!include[banner](../includes/banner.md)]
+
 
 この記事では、モバイル デバイス上で作業を行う倉庫作業者が使用するメニュー項目をコンフィギュレーションする方法を説明します。
 
@@ -315,7 +319,7 @@ ms.lasthandoff: 03/31/2017
 </tr>
 <tr class="even">
 <td>在庫状態の表示</td>
-<td>このオプションを選択すると、在庫の品目の状態が表示されます。 詳細については、<a href="/inventory/inventory-statuses.md">在庫ステータスを使用する利点</a>を参照してください。 このオプションは、循環棚卸を除く、既存の作業を使用するすべてのメニュー項目で使用できます。</td>
+<td>このオプションを選択すると、在庫の品目の状態が表示されます。 このオプションは、循環棚卸を除く、既存の作業を使用するすべてのメニュー項目で使用できます。</td>
 </tr>
 <tr class="odd">
 <td>ピッキング画面の集計を表示します</td>
@@ -412,5 +416,7 @@ ms.lasthandoff: 03/31/2017
 [発注書 (タスク ガイド) タイプの作業を完了するためのモバイル デバイス メニュー アイテムの設定](https://ax.help.dynamics.com/en/wiki/set-up-a-mobile-device-menu-item-for-completing-work-of-type-purchase-order/)
 
 [モバイル デバイス メニュー アイテムを設定して、受入アイテム (タスク ガイド) を登録する](https://ax.help.dynamics.com/en/wiki/set-up-a-mobile-device-menu-item-to-register-received-items/)
+[在庫状態を使用する利点](../inventory/inventory-statuses.md)
+
 
 

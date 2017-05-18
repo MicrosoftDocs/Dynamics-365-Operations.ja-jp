@@ -3,28 +3,33 @@ title: "Microsoft Dynamics 365 for Operations アプリケーションの仕入�
 description: "仕入先のコラボレーションモバイルワークスペースを使用すると、仕入先が承認のために送られた発注書を最新の状態に保つことができ、新規および更新した発注書や連絡先に関する情報を表示することができます。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2017-01-12 16 - 36 - 37
+ms.date: 04/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
+ms.reviewer: annbe
 ms.search.scope: Operations, Core
 ms.custom: 267074
-ms.assetid: fe8e912d-8446-4584-8a24-d8892e9028cd
+ms.assetid: 1d293b3a-2fa2-418d-9347-78c2809d67fe
 ms.search.region: global
 ms.author: mkirknel
+ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: f77012e7b64b7f153103e9bbe91e8ded202b509a
-ms.openlocfilehash: 9f441508b745d22218316128572c9ec6aeb7207b
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: d5157e6f4b10b6158aa08279a9f68dae676f5666
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="vendor-collaboration-mobile-workspace-for-microsoft-dynamics-365-for-operations-app"></a>Microsoft Dynamics 365 for Operations アプリケーションの仕入先コラボレーション モバイル ワークスペース
+
+[!include[banner](../includes/banner.md)]
+
 
 仕入先のコラボレーションモバイルワークスペースを使用すると、仕入先が承認のために送られた発注書を最新の状態に保つことができ、新規および更新した発注書や連絡先に関する情報を表示することができます。
 
@@ -45,51 +50,51 @@ ms.lasthandoff: 03/31/2017
 <tbody>
 <tr class="odd">
 <td>Microsoft Dynamics 365 for Operations モバイル プラットフォームについての確認</td>
-<td><a href="/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform">Dynamics 365 for Operations モバイル プラットフォーム</a></td>
+<td><a href="https://ax.help.dynamics.com/en/wiki/mobile-development-handbook/">Dynamics 365 for Operations モバイル プラットフォーム</a></td>
 </tr>
 <tr class="even">
 <td>Dynamics 365 for Operations</td>
 <td>Microsoft Dynamics 365 for Operations バージョン 1611 および Microsoft Dynamics for Operations プラットフォーム更新プログラム 3 (2016 年 11 月) がある環境を使用していることを確認します。</td>
 </tr>
 <tr class="odd">
-<td><span style="color: #000000;">Dynamics 365 for Operations アプリがインストールされたモバイル デバイス</span></td>
-<td><span style="color: #000000;">モバイル アプリ ストアで、Microsoft Dynamics 365 for Operations アプリをダウンロードします。</span></td>
+<td><span style="color: #000000">Dynamics 365 for Operations アプリがインストールされたモバイル デバイス</span></td>
+<td><span style="color: #000000">モバイル アプリ ストアで、Microsoft Dynamics 365 for Operations アプリをダウンロードします。</span></td>
 </tr>
 <tr class="even">
-<td>修正プログラム KB 3215650</td>
+<td>修正プログラム KB 4013633</td>
 <td>Dynamics 365 for Operations で提供されるワークスペースを有効にする修正プログラムをインストールします。</td>
 </tr>
 <tr class="odd">
-<td><span style="color: #ff0000;"><span style="color: #000000;">修正プログラム KB 3216943</span> </span></td>
+<td><span style="color: #ff0000"><span style="color: #000000">修正プログラム KB 3216943</span> </span></td>
 <td>仕入先コラボレーション モバイル ワークスペースを有効にする修正プログラムをインストールします。</td>
 </tr>
 <tr class="even">
 <td>仕入先のユーザーは、Dynamics 365 for Operations の仕入先コラボレーション Web インターフェイスにアクセスし、仕入先コラボレーション ユーザーを設定する必要があります。</td>
 <td>仕入先コラボレーション Web インターフェイスの設定および使用は、次のトピックで説明されている手順に従います。
 <ul>
-<li><a href="vendor-collaboration-work-external-vendors.md">外部仕入先との作業のために仕入先コラボレーションを使用</a></li>
-<li><a href="manage-vendor-collaboration-users.md">仕入先コラボレーション ユーザーの管理</a></li>
-<li><a href="set-up-maintain-vendor-collaboration.md"> 仕入先共同作業の設定と管理</a></li>
-<li><a href="vendor-collaboration-work-customers-dynamics-365-operations.md">Dynamics 365 for Operations で仕入先コラボレーションを使用して顧客に対応</a></li>
+<li><a href="https://ax.help.dynamics.com/en/wiki/using-vendor-collaboration-to-work-with-external-vendors/">外部仕入先との作業のために仕入先コラボレーションを使用</a></li>
+<li><a href="https://ax.help.dynamics.com/en/wiki/manage-vendor-collaboration-users/">仕入先コラボレーション ユーザーの管理</a></li>
+<li><a href="https://ax.help.dynamics.com/en/wiki/set-up-and-maintain-vendor-collaboration/">仕入先コラボレーションの設定と管理</a></li>
+<li><a href="https://ax.help.dynamics.com/en/wiki/using-vendor-collaboration-to-work-with-customers-in-dynamics-365-for-operations/">Dynamics 365 for Operations で仕入先コラボレーションを使用して顧客に対応</a></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
 ## <a name="overview"></a>概要
-仕入先コラボレーション モバイル ワークスペースでは、仕入先が新しい発注書を常に把握できるようにし、Dynamics 365 for Operations の Web クライアントで発注書の表示また対応ができるようになります。  
+仕入先コラボレーション モバイル ワークスペースでは、仕入先が新しい発注書を常に把握できるようにし、Dynamics 365 for Operations の Web クライアントで発注書の表示また対応ができるようになります。 
 
-**注記:** モバイル ワークスペースは仕入先コラボレーション Web インターフェイスの置き換えとしてではなく、補足として使用されます。  
+**注記:** モバイル ワークスペースは仕入先コラボレーション Web インターフェイスの置き換えとしてではなく、補足として使用されます。 
 
-仕入先コラボレーション モバイル ワークスペースを使用すると、仕入先が承認用に送信された新しい発注書を表示できます。 これには、製品、数量、および配送指定日などの発注書情報が表示されます。 価格情報は、各仕入先のコンフィギュレーションに応じて使用できます。  
+仕入先コラボレーション モバイル ワークスペースを使用すると、仕入先が承認用に送信された新しい発注書を表示できます。 これには、製品、数量、および配送指定日などの発注書情報が表示されます。 価格情報は、各仕入先のコンフィギュレーションに応じて使用できます。 
 
-ユーザーが仕入先としてログインすると、どの発注書が応答済みか、またはどの発注書がまだ顧客のアクション待ちかを参照できます。 発注書が顧客のアクション待ちだと、仕入先は顧客とまだ合意していない別の出荷日を提案する場合があります。 仕入先は、確認済だが未出荷であるの発注書の一覧も参照することができます。  
+ユーザーが仕入先としてログインすると、どの発注書が応答済みか、またはどの発注書がまだ顧客のアクション待ちかを参照できます。 発注書が顧客のアクション待ちだと、仕入先は顧客とまだ合意していない別の出荷日を提案する場合があります。 仕入先は、確認済だが未出荷であるの発注書の一覧も参照することができます。 
 
-発注書に応答するために、仕入先は Dynamics 365 for Operations の web クライアントで使用可能な仕入先コラボレーション Web インターフェイスを使用する必要があります。 これは仕入先が、ドキュメントの添付ファイル、行ごとの配送先住所、および仕入先に関連付けられている諸費用など、注文に関する詳細情報を得られるものです。  
+発注書に応答するために、仕入先は Dynamics 365 for Operations の web クライアントで使用可能な仕入先コラボレーション Web インターフェイスを使用する必要があります。 これは仕入先が、ドキュメントの添付ファイル、行ごとの配送先住所、および仕入先に関連付けられている諸費用など、注文に関する詳細情報を得られるものです。 
 
-特別なセキュリティ ロールを使用すると、仕入先がどの連絡担当者が仕入先勘定に登録されているかを表示することができます。 同じセキュリティロールを使用すると、仕入先がすべての送信済ユーザー要求のステータスを表示できます。  
+特別なセキュリティ ロールを使用すると、仕入先がどの連絡担当者が仕入先勘定に登録されているかを表示することができます。 同じセキュリティロールを使用すると、仕入先がすべての送信済ユーザー要求のステータスを表示できます。 
 
-新しい連絡先を作成し、新しいユーザー要求を送信するには、Dynamics 365 for Operations の Web クライアント内で使用できる仕入先コラボレーション インターフェイスで行う必要があります。  
+新しい連絡先を作成し、新しいユーザー要求を送信するには、Dynamics 365 for Operations の Web クライアント内で使用できる仕入先コラボレーション インターフェイスで行う必要があります。 
 
 モバイル ワークスペースを使用すると、仕入先は次のことが実行できます。
 
@@ -106,7 +111,7 @@ ms.lasthandoff: 03/31/2017
 2.  デバイスでアプリを起動します。
 3.  Dynamics 365 の URL を入力します。
 4.  サインインする会社を入力します。 たとえば、「**USMF**」と入力します。
-5.  初回サインイン時、Microsoft Dynamics 365 for Operations のユーザー名とパスワードの入力を求められます。 
+5.  最初にサインインしたときに、Microsoft Dynamics 365 for Operations アカウントのユーザー名とパスワードが要求されます。
 
 アプリにログインすると、ワークスペースが表示されません。 モバイル アプリでワークスペースを表示するには、まず Dynamics 365 for Operations アプリに対象のワークスペースを公開する必要があります。 ワークスペースを公開するには、システム管理のアクセス許可が必要です。
 
@@ -118,7 +123,7 @@ ms.lasthandoff: 03/31/2017
 6.  公開されたワークスペースを表示するデバイスを更新します。
 7.  **仕入先コラボレーション** ワークスペースを選択します。 以下のページを表示します。
 
-[![仕入先コラボレーション モバイル アプリ](./media/vendor-collaboration-mobile-app.png)](./media/vendor-collaboration-mobile-app.png)
+    [![仕入先コラボレーション モバイル アプリ](./media/vendor-collaboration-mobile-app.png)](./media/vendor-collaboration-mobile-app.png)
 
 ## <a name="contacts"></a>連絡先
 **連絡先** ページで、仕入先に設定されているすべての連絡先を表示できるようになります。 連絡担当者の名前、基本電子メールとユーザーのエイリアスを表示します (該当する場合)。 連絡担当者のユーザー アカウントが有効かどうかも表示します。 連絡先を選択すると、個人が連絡先となっている法人などの連絡先の詳細や、電話番号または別の電子メールアドレスなどの連絡先情報が表示されます。
@@ -127,11 +132,7 @@ ms.lasthandoff: 03/31/2017
 **ユーザーの要求** ページは、仕入先コラボレーション Web インターフェイスから送信した全てのユーザー要求が表示されるので、そのステータスに従ってください。 ユーザー要求を選択すると、要求内容、ユーザーの追加または無効化、セキュリティの変更を表示でき、そのユーザーに対してどのセキュリティ ロールが要求されたかを確認できます。
 
 ## <a name="purchase-orders-ready-for-review"></a>確認準備済発注書
-**確認準備済発注書** ページは、顧客から送信されたが未回答のままのすべての発注書を表示します。 どの製品が要求され、いつ出荷するのかのような注文に関する選択された情報を表示できます。 価格情報は、仕入先に対してコンフィギュレーションされている場合にのみ使用できます。  
-
-発注書にメモや添付ファイルがあるかどうかを確認できます。 添付ファイルを開くには、Web クライアントで仕入先コラボレーションを使用する必要があります。 詳細を含む全ての行を表示するには **発注書明細行** を選択します。 各明細行に注意してください。インジケータ―には、メモや添付ファイルがあるか、またはヘッダーに示されているものとは異なる配送先住所があるかどうかが表示されます。  
-
-発注書に対応するために、仕入先コラボレーション Web クライアントを使用する必要があります。
+**確認準備済発注書** ページは、顧客から送信されたが未回答のままのすべての発注書を表示します。 どの製品が要求され、いつ出荷するのかのような注文に関する選択された情報を表示できます。 価格情報は、仕入先に対してコンフィギュレーションされている場合にのみ使用できます。 発注書にメモや添付ファイルがあるかどうかを確認できます。 添付ファイルを開くには、Web クライアントで仕入先コラボレーションを使用する必要があります。 詳細を含む全ての行を表示するには **発注書明細行** を選択します。 各明細行に注意してください。インジケータ―には、メモや添付ファイルがあるか、またはヘッダーに示されているものとは異なる配送先住所があるかどうかが表示されます。 発注書に対応するために、仕入先コラボレーション Web クライアントを使用する必要があります。
 
 ## <a name="awaiting-customer-action"></a>顧客のアクション待ち
 **顧客のアクション待ち** ページでは、自分または仕入先コラボレーションにアクセスできる社員が発注書を検索することができます。 顧客が発注書において以下の工程のうちの 1 つを実行しなくてはならない場合に、このリストの発注書にのみ表示されます。
@@ -148,11 +149,12 @@ ms.lasthandoff: 03/31/2017
 -   代替済 / 代替
 -   スケジュール / スケジュール明細行に分割
 
-インジケータが **配送中** = はい / いいえを表示しているか注意してください。これはその行が配送されないことを示す場合に使われます。 これは明細行が却下されたか、元の明細行が配送できないところに置き換えられたか、または明細行が複数のスケジュール行に分割されてしまい、元の明細行が受注済注文として配送できなくなってしまったからです。  
-
-仕入先コラボレーション Web インターフェイスを使用すると、アップロードされたメモや添付ファイルを除いた注文明細行の対応に加えたすべての変更が表示されます。
+インジケータが **配送中** = はい / いいえを表示しているか注意してください。これはその行が配送されないことを示す場合に使われます。 これは明細行が却下されたか、元の明細行が配送できないところに置き換えられたか、または明細行が複数のスケジュール行に分割されてしまい、元の明細行が受注済注文として配送できなくなってしまったからです。 仕入先コラボレーション Web インターフェイスを使用すると、アップロードされたメモや添付ファイルを除いた注文明細行の対応に加えたすべての変更が表示されます。
 
 ## <a name="open-confirmed-orders"></a>確定済受注の公開
 顧客によって発注書が確認されると、発注書が確定状態に変更され、確定済受注の公開に表示されます。 これは、顧客が受領済に登録されるまでリストに保持されます。
+
+
+
 
 

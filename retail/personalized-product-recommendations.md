@@ -17,10 +17,11 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: af1f4ba1ed5efe0e35d08d37d09e7ada4a4c1b7a
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: cff74e825b4d61f538ce02f79860413281617354
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -62,7 +63,7 @@ Dynamics 365 for Operations では、POS (営業拠点) デバイスに製品の
 1.  正しい [**法人**] を選択したことを確認してください。
 2.  [**エンティティ ストア**] にナビゲートし、[**小売販売**] を選択して、[**更新**] をクリックします。これにより、運用データベースのデモ データ (またはデータ) が使用され、エンティティ ストアに転送します。
 3.  オプション: トランザクション画面に推奨事項を表示するには、**画面レイアウト、**画面レイアウトを選択し、**画面レイアウト デザイナー**** ** を起動し、必要に応じて **レコメンデーション コントロール** を削除します。
-4.  [**小売パラメーター**] に移動し、[**機械学習**] を選択し、[** POS 推奨事項の有効化**] で [**はい**] を選択します。
+4.  [**小売パラメーター**] に移動し、[**機械学習**] を選択し、[**POS 推奨事項の有効化**] で [**はい**] を選択します。
 5.  POS に関する推奨事項を表示するには、グローバル構成ジョブ [**1110**] を実行します。 POS 画面レイアウト設計者の変更を反映するには、チャネル構成ジョブ [**1070**] を実行します。
 
 ## <a name="how-does-it-work"></a>[]() どのような仕組みですか?

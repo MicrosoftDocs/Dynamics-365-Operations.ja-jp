@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 6f4429202efd0506378d681188035c5cc69f56a1
-ms.openlocfilehash: d330f73ee9cbdd6bdcc197c3783a9230b26e04d8
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 5ba5816b65bcaa3a71ab3367cfbe6a115e52062a
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="mass-hire-projects"></a>大量雇用プロジェクト
+
+[!include[banner](includes/banner.md)]
+
 
 大量雇用プロジェクトにより、人事管理の専門家が複数の職位を作成し、これらの職位に作業者を効率的に採用することができます。
 
@@ -46,7 +50,7 @@ ms.lasthandoff: 03/31/2017
 
 インターンシップの職位に雇用する学生を選択した後、雇用する職位の [**職位の詳細**] に各学生の情報を入力します。 職位の詳細のすべてを入力して、大量雇用プロジェクト ページの職位を選択してから、[**採用**] をクリックします。 職位レコードは、各職位に作成され、作業者レコードは、雇用従業員ごとに適切な職位に作成され、割り当てられます。
 
-## <a name="masshire-project-statuses"></a>大量雇用プロジェクトのステータス
+## <a name="mass-hire-project-statuses"></a>大量採用プロジェクトのステータス
 大量採用プロジェクトでは、次のステータスを持つことができます。
 -   作成済み
 -   未解決
@@ -92,6 +96,8 @@ ms.lasthandoff: 03/31/2017
 </table>
 
  
+
+
 
 
 

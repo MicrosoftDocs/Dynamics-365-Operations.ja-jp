@@ -16,10 +16,11 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: eb32cf1b96dfef75131b8c7541e20a93615a87f7
-ms.openlocfilehash: 0e2eb6e7c130f03edbf60a185d397d94b5d61d7d
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 2ae8255a84f36af624e915e85bc769a8ca37fa7e
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -31,7 +32,7 @@ ms.lasthandoff: 03/31/2017
 
 このトピックでは、予算計画で使用できる Microsoft Excel テンプレートを作成する方法について説明します。
 
-このトピックでは、標準デモ データ セットと管理者ユーザー ログインを使用して予算計画に使用する Excel テンプレートを作成する方法を示します。 予算計画に関する詳細については、「[Budget planning overview.](budget-planning-overview-configuration.md)」を参照してください。 「[Budget planning 101](budget-plan.md)」チュートリアルに従って、基本モジュールのコンフィギュレーションと使用の原則について参照することもできます。
+このトピックでは、標準デモ データ セットと管理者ユーザー ログインを使用して予算計画に使用する Excel テンプレートを作成する方法を示します。 予算計画に関する詳細については、「[予算計画の概要](budget-planning-overview-configuration.md)」を参照してください。 「[予算計画 101](budget-plan.md)」チュートリアルに従って、基本モジュールのコンフィギュレーションと使用の原則について参照することもできます。
 
 ## <a name="generate-a-worksheet-using-budget-plan-document-layout"></a>予算計画ドキュメント レイアウトを使用したワークシートの生成
 予算計画ドキュメントは、1 つ以上のレイアウトを使用して表示、編集できます。 各レイアウトでは、Excel ワークシートで予算計画データを表示および編集する関連の予算計画ドキュメント テンプレートを使用できます。 このトピックでは、予算計画ドキュメント テンプレートは既存のレイアウト コンフィギュレーションを使用して生成されます。 [**予算計画の一覧**] ([**予算作成**] &gt; [**予算計画**]) を開きます。 [**新規**] をクリックして、新しい予算計画ドキュメントを作成します。 [![bpt1](./media/bpt11-1024x552.png)](./media/bpt11.png) 

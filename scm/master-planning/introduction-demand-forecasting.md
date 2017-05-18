@@ -18,10 +18,11 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 9152616b81e7873426f296376b5e57c94439379d
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 86f2f556d1b2d8711e7419b4e85904e297097380
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -51,7 +52,7 @@ ms.lasthandoff: 03/31/2017
 -   [**モジュール性**] – 需要予測はモジュールおよびコンフィギュレーションが簡単にできます。 [**販売**] &gt; [**在庫予測**] &gt; [**需要予測**] で構成キーの機能をオン/オフに変更できます。
 -   **Microsoft Stack の再利用** – Microsoft は 2015 年 2 月に Machine Learning プラットフォームを開始しました。 Microsoft Cortana Analytics Suite の一部である Machine Learning を使用すると、需要見積もりの試算、アルゴリズム R または Python プログラミング言語、およびシンプルなドラッグ アンド ドロップ インターフェースなど、予測分析実験をすばやく簡単に作成できます。
     -   Dynamics 365 for Operations Demand forecasting experiments をダウンロードして、ビジネス要件に適合するように変更し、Azure の Web サービスとして公開し、需要予測を生成するために使用できます。 エンタープライズ レベルのユーザーとして、生産計画担当者向けに Dynamics 365 for Operations サブスクリプションを購入した場合は、この実験をダウンロードできます。
-    -   [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/) から現在有効な需要予測実験をダウンロードできます。 Dynamics 365 for Operations Demand forecasting experiments は Dynamics 365 for Operations と自動的に統合されるので、顧客およびパートナーは [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/) からダウンロードした experiments の統合を処理する必要があります。 したがって、[Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/) からの experiments は Dynamics 365 for Operations Demand forecasting experiments として使用するほど単純ではありません。 Dynamics 365 for Operations アプリケーション プログラム インターフェイス (API) を使用するように experiments のコードを修正する必要があります。
+    -   [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/) から現在有効な需要予測実験をダウンロードできます。 Dynamics 365 for Operations Demand forecasting experiments は Dynamics 365 for Operations と自動的に統合されるので、顧客およびパートナーは [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/) からダウンロードした experiments の統合を処理する必要があります。 したがって、[Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/) の実験は Dynamics 365 for Operations の需要予測実験として使用できるほど単純ではありません。 Dynamics 365 for Operations アプリケーション プログラム インターフェイス (API) を使用するように experiments のコードを修正する必要があります。
     -   Microsoft Azure Machine Learning Studio で独自の実験を作成し、Azure のサービスとして発行、そして需要予測の生成に使用することができます。
     -   高パフォーマンスが必要でない場合、または大量のデータの処理が要求されていない場合に、Machine Learning 無料レベルを使用できます。 特に実装およびテスト フェーズの際には、このレベルから常に開始することをお勧めします。 高パフォーマンスと追加のストレージが必要な場合、Machine Learning 標準レベルを使用できます。 この層には、Azure のサブスクリプションが要求され、追加費用が含まれます。 Machine Learning 価格設定の詳細については、<http://aka.ms/machine-learning-price-info>を参照ください。
 -   **すべてのデカップリング ポイントでの予測の減少** – Dynamics 365 for Operations の需要予測はこの機能に基づいて作成されるので、すべてのデカップリング ポイントで需要に依存する、または依存しない予測が可能です。

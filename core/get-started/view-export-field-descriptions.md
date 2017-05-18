@@ -3,7 +3,7 @@ title: "フィールドの説明を表示およびエクスポートする"
 description: "この記事では、フィールドの説明を表示する方法と説明をエクスポートするフィールドの [説明] ページを使用する方法について説明します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,15 +17,19 @@ ms.search.region: Global
 ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: c8c96dc9705688308dd4a5c720700ddc17657d75
-ms.openlocfilehash: d4fc9cdee0e2160e363f9defcf6bdbc57ed4db74
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 3029cb441d124e6e5aa427f7fcd95540700254c6
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="view-and-export-field-descriptions"></a>フィールドの説明を表示およびエクスポートする
+
+[!include[banner](../includes/banner.md)]
+
 
 この記事では、フィールドの説明を表示する方法と説明をエクスポートするフィールドの [説明] ページを使用する方法について説明します。
 
@@ -80,11 +84,11 @@ Dynamics 365 for Operations の開発環境に対するアクセス権を持つ�
 
 ### <a name="i-cant-find-a-field-description"></a>フィールドの説明が見つかりません
 
-さらに複雑なフィールドに説明を追加するプロセスを実行します。 特定のフィールドでサポートが必要な場合は、この Wiki 記事にコメントを追加して、通知してください。
+さらに複雑なフィールドに説明を追加するプロセスを実行します。 特定のフィールドでサポートが必要な場合は、このトピックにコメントを追加して、通知してください。
 
 ### <a name="the-field-description-isnt-helpful"></a>フィールドの説明が役に立ちません
 
-この Wiki の記事にコメントを追加して、通知してください。 可能な場合は、必要な追加情報について説明してください。
+このトピックにコメントを追加して、通知してください。 可能な場合は、必要な追加情報について説明してください。
 
 ### <a name="i-cant-find-a-field-on-the-field-descriptions-page"></a>[フィールドの説明] ページのフィールドが表示されません。
 
@@ -97,6 +101,9 @@ Dynamics 365 for Operations の開発環境に対するアクセス権を持つ�
 <a name="see-also"></a>参照
 --------
 
-[フィールド ヘルプのカスタマイズ](https:/docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/customize-field-help.md)
+[フィールド ヘルプのカスタマイズ](/dynamics365/operations/dev-itpro/user-interface/customize-field-help)
+
+
+
 
 

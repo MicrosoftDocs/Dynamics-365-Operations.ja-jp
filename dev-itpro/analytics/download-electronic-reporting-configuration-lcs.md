@@ -17,15 +17,19 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-translationtype: Human Translation
-ms.sourcegitcommit: 388b6398488e6f316c1ec07a00182e81c1dc8d08
-ms.openlocfilehash: 9dca5dec846670da25926826f59d7bce0fa0dcea
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: e2f3a352ca70472de838271fdedfede575cb839d
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="download-electronic-reporting-configurations-from-lifecycle-services"></a>Lifecycle Services の電子申告コンフィギュレーションのダウンロード
+
+[!include[banner](../includes/banner.md)]
+
 
 このトピックは、Microsoft Dynamics Lifecycle Services (LCS) から電子申告 (ER) のコンフィギュレーションをダウンロードする方法を説明します。
 
@@ -43,14 +47,15 @@ ms.lasthandoff: 03/31/2017
     1.  [**追加**] をクリックして新しいリポジトリを追加します。
     2.  リポジトリ タイプとして、[**LCS**] を選択します。
     3.  [**リポジトリの作成**] をクリックします。
-    4.  リポジトリの名前と説明を入力します。
-    5.  [**OK**] をクリックして、新しいリポジトリ エントリを確認します。
-    6.  グリッドで、[**LCS**] タイプの新しいリポジトリを選択します。
+    4. メッセージが表示されたら、承認の指示に従います。
+    5.  リポジトリの名前と説明を入力します。
+    6.  [**OK**] をクリックして、新しいリポジトリ エントリを確認します。
+    7.  グリッドで、[**LCS**] タイプの新しいリポジトリを選択します。
 
 6.  [**開く**] をクリックして、選択したリポジトリの ER コンフィギュレーションの一覧を表示します。 [![update-er-from-lcs-for-ms-make-lcs-repository](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)
 7.  左ウィンドウのコンフィギュレーション ツリーで必要な ER コンフィギュレーションを選択します。
 8.  [**バージョン**] クイック タブで、選択した ER コンフィギュレーションの必要なバージョンを選択します。
-9.  [**インポート**] をクリックして、LCS から現在の Dynamics 365 for Operations インスタンスに選択したバージョンをダウンロードします。 **注: ** [**インポート**] ボタンは、現在の Dynamics 365 for Operations インスタンスにある ER コンフィギュレーション バージョンでは使用できません。 [![update-er-from-lcs-for-ms-download-configuration](./media/update-er-from-lcs-for-ms-download-configuration.png)](./media/update-er-from-lcs-for-ms-download-configuration.png)
+9.  [**インポート**] をクリックして、LCS から現在の Dynamics 365 for Operations インスタンスに選択したバージョンをダウンロードします。 **注:** [**インポート**] ボタンは、現在の Dynamics 365 for Operations インスタンスにある ER コンフィギュレーション バージョンでは使用できません。 [![update-er-from-lcs-for-ms-download-configuration](./media/update-er-from-lcs-for-ms-download-configuration.png)](./media/update-er-from-lcs-for-ms-download-configuration.png)
 
 **注:** ER の設定に応じて、コンフィギュレーションはインポートされた後に検証されます。 不整合の問題が検出されると、通知を受け取る場合があります。 インポートしたコンフィギュレーションのバージョンを使用する前に、それらの問題を解決する必要があります。 詳細については、このトピックの関連記事の一覧を参照してください。
 
@@ -58,5 +63,7 @@ ms.lasthandoff: 03/31/2017
 --------
 
 [電子申告の概要](general-electronic-reporting.md)
+
+
 
 

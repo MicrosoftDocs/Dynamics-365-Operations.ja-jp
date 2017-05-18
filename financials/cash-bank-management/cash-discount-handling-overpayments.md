@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: 451273a8ee98f7033795182e754f76aca3788f47
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 6379f63a367dab51fa3ed6465ed8422a44ef7a7a
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -40,7 +41,7 @@ ms.lasthandoff: 03/31/2017
 | 105.00        | 1050                   | 94.50                                               | 95.00                             |
 
 ## <a name="cash-discount-administration--specific"></a>現金割引管理オプション = 限定
-[**自動トランザクションの勘定**] ページの [**現金割引管理**] フィールドで [**特定**] が選択されている場合、完全な現金割引が適用されます。 過剰支払い額は、現金割引差分勘定科目へ転記されるか、または顧客勘定の残高になります。 動作は、過剰支払の金額が 0.00 と [** 最大の過剰支払/過少支払**] フィールドに入力されている額の間にあるか、または過剰支払金額が [**最大の過剰支払/過少支払**] 額より大きいかによって異なります。
+[**自動トランザクションの勘定**] ページの [**現金割引管理**] フィールドで [**特定**] が選択されている場合、完全な現金割引が適用されます。 過剰支払い額は、現金割引差分勘定科目へ転記されるか、または顧客勘定の残高になります。 動作は、過剰支払の金額が 0.00 と [**最大の過剰支払/過少支払**] フィールドに入力されている額の間にあるか、または過剰支払金額が [**最大の過剰支払/過少支払**] 額より大きいかによって異なります。
 
 ### <a name="scenario-1"></a>シナリオ 1
 

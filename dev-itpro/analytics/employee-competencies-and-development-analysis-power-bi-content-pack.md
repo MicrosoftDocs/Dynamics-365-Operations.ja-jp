@@ -16,10 +16,11 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 388b6398488e6f316c1ec07a00182e81c1dc8d08
-ms.openlocfilehash: 1fd6f978b6a871f9f7d3d5e91ab3e0aac789ae88
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 48a12a32fd6a0d95f50b98e6533173265b9867ab
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -34,10 +35,10 @@ ms.lasthandoff: 03/31/2017
 <a name="accessing-the-content-pack"></a>コンテンツ パックへのアクセス
 --------------------------
 
-従業員のコンピテンシーと開発コンテンツ パックは、Microsoft Dynamics Lifecycle Services (LCS) の共有アセット ライブラリにあります。 コンテンツ パックのダウンロード方法および Microsoft Dynamics 365 for Operations データに接続する方法の詳細については、「[Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md)」を参照してください。
+従業員のコンピテンシーと開発コンテンツ パックは、Microsoft Dynamics Lifecycle Services (LCS) の共有アセット ライブラリにあります。 コンテンツ パックのダウンロード方法および Microsoft Dynamics 365 for Operations データに接続する方法の詳細については、「[Microsoft およびパートナーからの LCS での Power BI コンテンツ](power-bi-content-microsoft-partners.md)」を参照してください。
 
 ## <a name="reports-that-are-included-in-the-content-pack"></a>コンテンツ パックに含まれるレポート
-コンテンツ パックを Dynamics 365 for Operations データに接続した後に、レポートに組織のデータが表示されます。 Microsoft Power BI を以前に使用したことがない場合は、詳細については「[Guided Learning page for Power BI](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData)」を参照してください。 コンテンツ パックに含まれるレポートには、追加情報を含むグラフとテーブルの両方があります。 次の表にレポートを示します。
+コンテンツ パックを Dynamics 365 for Operations データに接続した後に、レポートに組織のデータが表示されます。 Microsoft Power BI を以前に使用したことがない場合は、詳細については「[Power BI のガイド付きの学習](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData)」を参照してください。 コンテンツ パックに含まれるレポートには、追加情報を含むグラフとテーブルの両方があります。 次の表にレポートを示します。
 
 | レポート                             | コンテンツ                                               |
 |-----------------------------------|--------------------------------------------------------|
@@ -45,7 +46,7 @@ ms.lasthandoff: 03/31/2017
 | スキル プロファイル                     | 選択された従業員のスキル プロファイル                |
 | スキル分析                    | タイプ別スキルおよび評価                              |
 
-これらのレポートのグラフとタイルをフィルター処理し、ダッシュボードに固定することができます。 Power BI のフィルター処理と固定方法の詳細については、「[Create and Configure A Dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards)」を参照してください。
+これらのレポートのグラフとタイルをフィルター処理し、ダッシュボードに固定することができます。 Power BI のフィルター処理と固定方法の詳細については、「[ダッシュボードの作成およびコンフィギュレーション](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards)」を参照してください。
 
 ## <a name="understanding-the-data-model-and-entities"></a>データ モデルおよびエンティティの理解
 Dynamics 365 for Operations データを使用して、従業員のコンピテンシーと開発コンテンツ パックにレポートを入力します。 次の表に、コンテンツ パックが基づいているエンティティを示します。

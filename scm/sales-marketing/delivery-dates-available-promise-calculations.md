@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 8aa0a58b03ee18e42ca7770ea3e22311c1ddba67
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 9aba61178d050f4881c96b7a7fa62937b98b2beb
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -37,8 +38,8 @@ ms.lasthandoff: 03/31/2017
 
 -   **販売リード タイム** – 販売リード タイムは、販売注文の作成から品目の出荷までの時間です。 配送日の計算は日数の既定値に基づき、有効在庫数、既知の要求、または供給計画は考慮されません。
 -   **ATP (納期回答可能在庫)** – ATP は、顧客に特定の日付で納期を回答できる使用可能な品目の数量です。 ATP の計算には、未コミット在庫、リード タイム、計画受入と払出が含まれます。
--   **ATP + 払出安全日数 **– 出荷日は、ATP に品目の払出安全日数を加えた日付と同じになります。 払出安全日数は、品目を出荷する準備にかかる時間です。
--   **CTP (生産可能在庫) **– 在庫状態が展開して計算されます。
+-   **ATP + 払出安全日数**– 出荷日は、ATP に品目の払出安全日数を加えた日付と同じになります。 払出安全日数は、品目を出荷する準備にかかる時間です。
+-   **CTP (生産可能在庫)**– 在庫状態が展開して計算されます。
 
 ## <a name="atp-calculations"></a>ATP の計算
 ATP 数量は。"先読みによる累計 ATP" 手法を使用して計算されます。 この ATP 計算手法の主な利点は、入庫間の出庫の合計が最新の入庫よりも大きい状況 (たとえば、要求を満たすために以前の入庫からの数量を使用する必要がある場合) を処理できることです。 "先読みによる累計 ATP" 手法には、入庫する累計数量が出庫する累計数量を超えるまでのすべての出庫が含まれます。 したがって、この ATP 計算方式で、早い時期からの数量の一部をその後の期間に使用できるかどうかを評価します。  

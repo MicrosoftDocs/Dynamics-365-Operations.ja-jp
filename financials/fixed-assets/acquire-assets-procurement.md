@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 3b16ef53f9fb57a6663db0be1f7e0a57471db2fb
-ms.openlocfilehash: 8f3fb9889a0870021a9799b8a3c78237b9bc9731
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 4d4a8a1bf9de16827ca143e63455525a0c6b8dad
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -106,7 +107,7 @@ ms.lasthandoff: 03/31/2017
 -   数量の一部だけが入荷された場合は、ユーザー グループの制限により、最初の仕入先請求書では資産の取得が作成されません。 発注数量を満たす 2 番目の仕入先請求書に対して取得を転記できるのは、最初の仕入先請求書で取得トランザクションが入力されており、ユーザーが、取得を転記することができるユーザー グループのメンバである場合に限られます。
 
 
-詳細については、「[Fixed assets integration](fixed-asset-integration.md)」を参照してください。
+詳細については、「[固定資産の統合](fixed-asset-integration.md)」を参照してください。
 
 
 

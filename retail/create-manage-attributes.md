@@ -10,7 +10,7 @@ ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 16461
 ms.assetid: 2b85491c-f830-4e79-a2cb-681b7ced6988
 ms.search.region: global
@@ -18,15 +18,19 @@ ms.search.industry: Retail
 ms.author: prabhup
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: 26c628e10aaa5f47bc87d7510ca8f41ab3630204
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 6b1f91f863c8da35362ebb3036e76aa10d95ba65
+ms.openlocfilehash: a5c45bb0b9ed10c989a3222a751df3f454b14a0b
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/26/2017
 
 
 ---
 
 # <a name="create-and-manage-attributes"></a>属性の作成と管理
+
+[!include[banner](includes/banner.md)]
+
 
 この記事は、Microsoft Dynamics 365 for Operations の属性について説明します。 [属性] により、ユーザー定義フィールドを使用して製品およびその特性を説明できます。
 
@@ -34,110 +38,28 @@ ms.lasthandoff: 03/31/2017
 
 #### <a name="examples"></a>例
 
-カテゴリ
+| カテゴリ   | 属性                | 許容値          | 既定値 |
+|------------|--------------------------|-----------------------------|---------------|
+| テレビ & ビデオ | ブランド                    | [ブランド] の有効な値       | なし          |
+| テレビ         | スクリーン サイズ              | 20″–80″                     | なし          |
+| テレビ         | [垂直解像度]      | 480i、720p、1080i、または 1080p | 1080p         |
+| テレビ         | 画面の更新頻度      | 60hz、120hz、または 240hz       | 60hz          |
+| テレビ         | [HDMI 入力]              | 0–10                        | 3             |
+| テレビ         | [DVI 入力]               | 0–10                        | 1             |
+| テレビ         | [複合の入力]         | 0–10                        | 2             |
+| テレビ         | [コンポーネントの入力]         | 0–10                        | 1             |
+| LCD        | [3D 準備完了]                 | 要否                   | 有           |
+| LCD        | [3D 有効]               | 要否                   | 無            |
+| プラズマ     | [作業開始の温度]      | 32–110 度              | 32            |
+| プラズマ     | [作業終了の温度]        | 32–110 度              | 100           |
+| プロジェクション | プロジェクションの管の保証 | 6、12、または 18 か月         | 12            |
+| プロジェクション | # プロジェクションの管の     | 1–5                         | 3             |
 
-属性
-
-許容値
-
-既定値
-
-テレビ & ビデオ
-
-ブランド
-
-[**ブランド**] の有効な値
-
-なし
-
-テレビ
-
-スクリーン サイズ
-
-**20**–**80**
-
-なし
-
-[垂直解像度]
-
-**480i**、**720p**、**1080i**、または **1080p**
-
-**1080p**
-
-画面の更新頻度
-
-**60hz**、**120hz**、または **240hz**
-
-**60hz**
-
-[HDMI 入力]
-
-**0**–**10**
-
-**3**
-
-[DVI 入力]
-
-**0**–**10**
-
-**1**
-
-[複合の入力]
-
-**0**–**10**
-
-**2**
-
-[コンポーネントの入力]
-
-**0**–**10**
-
-**1**
-
-LCD
-
-[3D 準備完了]
-
-[**はい**] または [**いいえ**]
-
-**有**
-
-[3D 有効]
-
-[**はい**] または [**いいえ**]
-
-**なし**
-
-プラズマ
-
-[作業開始の温度]
-
-**32**–**110** 度
-
-**32**
-
-[作業終了の温度]
-
-**32**–**110** 度
-
-**100**
-
-プロジェクション
-
-プロジェクションの管の保証
-
-**6**、**12**、または **18** か月
-
-**12**
-
-プロジェクションの管の \#
-
-**1**–**5**
-
-**3**
 
 ## <a name="attribute-type"></a>属性タイプ
-  [![attributes-fixed-copy](./media/attributes-fixed-copy.png)](./media/attributes-fixed-copy.png) 属性は属性タイプに基づいています。 属性タイプは、特定の属性に入力できるデータのタイプを識別します。 現在、Microsoft Dynamics 365 for Operations では、次の属性タイプをサポートしています :
+  [![attributes-fixed-copy](./media/attributes-fixed-copy.png)](./media/attributes-fixed-copy.png) 
+  
+属性は、属性タイプをベースにしています。 属性タイプは、特定の属性に入力できるデータのタイプを識別します。 現在、Microsoft Dynamics 365 for Operations では、次の属性タイプをサポートしています :
 
 -   [**通貨**] – この属性タイプは、通貨の値をサポートします。 これはバインドできますし (値の範囲をサポートできる) 開いたままにもできます。
 -   [**日時**] – この属性タイプは、日付と時刻の値をサポートします。 これはバインドできますし (値の範囲をサポートできる) 開いたままにもできます。
@@ -174,5 +96,7 @@ LCD
 ### <a name="at-the-retail-channel-level"></a>小売チャネル レベルで
 
   [![createandmanageattribute-1](./media/createandmanageattribute-1.jpg)](./media/createandmanageattribute-1.jpg) 属性の既定値を、特定の小売チャンネルを対象とする特定のカタログの個々の製品に対して上書きできます。
+
+
 
 

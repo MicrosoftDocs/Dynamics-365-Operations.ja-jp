@@ -1,16 +1,16 @@
 ---
 title: "財務諸表デザイナーでのレポート定義"
 description: "この記事では、レポート定義に関する情報を示します。 レポート定義は、行定義、列定義、およびオプションのレポート ツリー定義を使用してレポートを作成するレポート コンポーネント (または構成要素) です。 レポート定義は、レポートをカスタマイズするためのオプションおよび設定も提供します。"
-author: RobinARH
+author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-03-07 18 - 58 - 18
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
 ms.technology: 
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: RobinARH
+ms.reviewer: ShylaThompson
 ms.search.scope: Management Reporter, Core
 ms.custom: 59131
 ms.assetid: 966a3f1d-c59c-4a84-acd4-5bb7e65144c8
@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-translationtype: Human Translation
-ms.sourcegitcommit: 4d6cf88788dcc5e982e509137aa444a020137a5e
-ms.openlocfilehash: 81ac503410e51672c2f97a76d37d4c567832912f
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 4b8264213cc7b8109b7300752e119d5c03d6239c
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="report-definitions-in-financial-report-designer"></a>財務諸表デザイナーでのレポート定義
+
+[!include[banner](../includes/banner.md)]
+
 
 この記事では、レポート定義に関する情報を示します。 レポート定義は、行定義、列定義、およびオプションのレポート ツリー定義を使用してレポートを作成するレポート コンポーネント (または構成要素) です。 レポート定義は、レポートをカスタマイズするためのオプションおよび設定も提供します。 
 
@@ -39,7 +43,7 @@ ms.lasthandoff: 03/29/2017
 ただし、Microsoft Dynamics ERP システムへのデータの保管方法により、トランザクションの詳細がレポートに使用できない場合があります。
 
 ## <a name="create-a-report-definition"></a>レポート定義の作成
-1.  [レポート デザイナー] の [**ファイル**] メニューで、[** 新規**] をクリックし、[**レポート定義**] を選択します。
+1.  [レポート デザイナー] の [**ファイル**] メニューで、[**新規**] をクリックし、[**レポート定義**] を選択します。
 2.  [**レポート**]、[**出荷および配送**]、[**ヘッダーおよびフッター**]、[**設定**] タブで、適切な情報を指定します。
 
 ## <a name="contents-of-a-report-definition"></a>レポート定義の内容
@@ -89,6 +93,8 @@ ms.lasthandoff: 03/29/2017
 <a name="see-also"></a>参照
 --------
 
-[Microsoft Dynamics 365 for Operations の財務レポート](financial-reporting-intro.md)
+[財務報告](financial-reporting-intro.md)
+
+
 
 

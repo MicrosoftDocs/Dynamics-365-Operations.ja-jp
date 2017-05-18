@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: f77012e7b64b7f153103e9bbe91e8ded202b509a
-ms.openlocfilehash: 380f1bcdf7109dc12fd898199033eac7710d863c
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 1f1df1e69f3933125bff3eba73d14e8615d7a2a6
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -32,9 +33,9 @@ ms.lasthandoff: 03/31/2017
 
 このトピックでは、新しい仕入先コラボレーション ユーザーのプロビジョニングの要求方法、および新しい仕入先コラボレーションの連絡先を追加する方法について説明します。 
 
-Microsoft Dynamics 365 for Operations の仕入先コラボレーション インタフェースは、発注書、請求書、委託販売在庫関する情報を外部仕入先に公開します。 **仕入先管理者 (外部)** セキュリティ ロールまたは同様の権限を持つ外部仕入先として作業する場合は、新しい仕入先コラボレーションの連絡先を作成して、新しいユーザーがプロビジョニングされるように要求できます。 調達担当者として作業する場合、これらのタスクを実行することもできます。 このトピックでは、このロールは Dynamics 365 for Operations のインスタンスを所有する会社内で作業している調達担当者を指します。 外部仕入先である場合の、仕入先コラボレーションの使用方法の詳細については、「[Vendor with customers](vendor-collaboration-work-customers-dynamics-365-operations.md)」を参照してください。  
+Microsoft Dynamics 365 for Operations の仕入先コラボレーション インタフェースは、発注書、請求書、委託販売在庫関する情報を外部仕入先に公開します。 **仕入先管理者 (外部)** セキュリティ ロールまたは同様の権限を持つ外部仕入先として作業する場合は、新しい仕入先コラボレーションの連絡先を作成して、新しいユーザーがプロビジョニングされるように要求できます。 調達担当者として作業する場合、これらのタスクを実行することもできます。 このトピックでは、このロールは Dynamics 365 for Operations のインスタンスを所有する会社内で作業している調達担当者を指します。 外部仕入先である場合の、仕入先コラボレーションの使用方法の詳細については、「[顧客に対する仕入先](vendor-collaboration-work-customers-dynamics-365-operations.md)」を参照してください。  
 
-調達担当者である場合は、仕入先コラボレーションの使用方法の詳細について、「[Vendor collaboration to with external vendors](vendor-collaboration-work-external-vendors.md)」を参照してください。
+調達担当者である場合は、仕入先コラボレーションの使用方法の詳細について、「[外部仕入先との仕入先コラボレーション](vendor-collaboration-work-external-vendors.md)」を参照してください。
 
 ## <a name="add-new-vendor-collaboration-contacts"></a>新しい仕入先コラボレーションの連絡先の追加
  仕入先コラボレーションにアクセスしようとする場合、仕入先コラボレーションの連絡先として最初に追加する必要があります。 仕入先コラボレーションを使用しない会社の従業員の連絡先を追加することもできます。 たとえば、他のタイプの調達情報の連絡先時点であることが可能です。 新しい連絡先は、[**仕入先コラボレーション**] &gt; [**連絡先**] メニューからアクセスできる [**すべての連絡先**] ページに追加されます。 新しい連絡先の追加: 

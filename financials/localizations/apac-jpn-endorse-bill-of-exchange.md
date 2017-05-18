@@ -17,10 +17,11 @@ ms.search.region: Japan
 ms.author: leguo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 6bb98cc72c2ec0c1551412dd39d5bea3ce10e2cd
-ms.openlocfilehash: de9ef9e013a730daaff313db680e5dde55e90f23
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 173d6c5760c876e04f7cbad74cd5a30fceea22c5
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---

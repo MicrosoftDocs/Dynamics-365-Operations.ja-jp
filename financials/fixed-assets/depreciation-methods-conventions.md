@@ -1,9 +1,9 @@
 ---
 title: "減価償却方法"
-description: "この記事は、Microsoft Dynamics AX にサポートされた減価償却方法および減価償却方式の概要を提供します。"
+description: "この記事は、Microsoft Dynamics 365 for Operations にサポートされた減価償却方法および減価償却方式の概要を提供します。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 04/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 8e89a57dda8f2d392483ed13c686ea97b74926b0
-ms.openlocfilehash: 51c053e6c130d20258e02284d097431a18bb38cb
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 4b32cd8cbd270424d0790e242d75dc214ffea123
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -31,7 +32,7 @@ ms.lasthandoff: 03/31/2017
 [!include[banner](../includes/banner.md)]
 
 
-この記事は、Microsoft Dynamics AX にサポートされた減価償却方法および減価償却方式の概要を提供します。
+この記事は、Microsoft Dynamics 365 for Operations にサポートされた減価償却方法および減価償却方式の概要を提供します。
 
 さまざまな減価償却方法を選択できます。 減価償却方法の目的は、固定資産の減価償却が可能な値を各会計年度期間に配賦することです。 固定資産の減価償却が可能な値は、取得価格から仕損価格 (存在する場合) を差し引いた値です。 
 
@@ -90,6 +91,7 @@ ms.lasthandoff: 03/31/2017
 [175% 逓減残高による減価償却](175-percent-reducing-balance-depreciation.md)
 
 [200% 逓減残高による減価償却](200-percent-reducing-balance-depreciation.md)
+
 
 
 

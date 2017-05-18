@@ -19,10 +19,11 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: a3d2d9d2d8dd518d04b289bb5326bcbf34f0cdc2
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: e7a2b316b7c7f153c0d41e31a0dffea1cf6f20b0
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -110,7 +111,7 @@ BOM 明細行に含まれる低レベルの BOM 品目を展開する場合は�
 
 ### <a name="pegged-supply"></a>ペギングされた供給
 
-BOM 明細行が参照する製品バリアントのための、サブ生産、BOM 明細行のイベントかんばん、または直接発注書を作成する場合は、[** ペギングされた供給**] 明細行タイプを選択します。 製造オーダーを見積ると、サブ生産、イベントかんばん、または発注書が作成されます。 必要な品目数量が消費する製造オーダーに自動的に引き当てられます。
+BOM 明細行が参照する製品バリアントのための、サブ生産、BOM 明細行のイベントかんばん、または直接発注書を作成する場合は、[**ペギングされた供給**] 明細行タイプを選択します。 製造オーダーを見積ると、サブ生産、イベントかんばん、または発注書が作成されます。 必要な品目数量が消費する製造オーダーに自動的に引き当てられます。
 
 ### <a name="vendor"></a>ベンダー
 

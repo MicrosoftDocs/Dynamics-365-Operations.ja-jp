@@ -16,15 +16,19 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 388b6398488e6f316c1ec07a00182e81c1dc8d08
-ms.openlocfilehash: 3e6b48768bb8e69d46f1555d9300f3b878b01ff1
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 35d34f9a356f8a041f2abf0aa8d6c3a6d9ca4a46
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="sales-and-profitability-performance-power-bi-content"></a>販売および収益性パフォーマンス Power BI の内容
+
+[!include[banner](../includes/banner.md)]
+
 
 このトピックでは、Dynamics 365 for Operations に何が含まれるかについて説明します - Microsoft Power BI の販売および収益性パフォーマンス コンテンツ パック。 コンテンツ パックに含まれているレポートにアクセスする方法を説明し、コンテンツ パックを作成するために使用するデータ モデルおよびエンティティについての情報を提供します。
 
@@ -44,6 +48,7 @@ ms.lasthandoff: 03/31/2017
 
 ## <a name="accessing-the-content-pack"></a>コンテンツ パックへのアクセス
 販売および収益性パフォーマンス Power BI コンテンツ パックは、Lifecycle Services (LCS) の実装資産として公開され、Dynamics 365 for Operations からアクセスできます。 Power BI レポートにどのようにアクセスし開始するかについての詳細は、[Microsoft およびパートナーからの LCS での Power BI コンテンツ](power-bi-content-microsoft-partners.md)を参照してください。
+**注記:** KB 4011327 は、この Power BI コンテンツの前提条件となります。 Lifecycle Services にサインインすると、次のサポート技術情報にアクセスできます: <a href="https://fix.lcs.dynamics.com/issue/results/?q=kb4011327">https://fix.lcs.dynamics.com/issue/results/?q=kb4011327</a>です。
 
 ## <a name="metrics-included-in-the-content-pack"></a>コンテンツ パックに含まれるメトリックス
 コンテンツ パックには、グラフ、タイル、テーブルとして視覚化する一連のメトリックスで構成されるレポートが含まれます。 次のテーブルは、コンテンツ パックでの視覚化の概要を提供します。
@@ -110,6 +115,8 @@ Dynamics 365 for Operations データは、販売および収益性パフォー�
 -   [組織のコンテンツ パックの作成](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
 -   [Power BI を使用したデータのモデル化](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
 -   [Power BI タイルをワークスペースへ追加する](configure-power-bi-integration.md)
+
+
 
 
 

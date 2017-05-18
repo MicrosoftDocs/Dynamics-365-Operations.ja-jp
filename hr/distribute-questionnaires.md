@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: a76ec0cd86bcc810b42ae3cd8efd8a584e6c4da3
-ms.openlocfilehash: 8e09c6b042d557e3b2d608fb5e278169fc3c1d88
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 4a5e6164f8aea2d4a6a063966c10f33a5e1f0cdd
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="distribute-and-complete-a-questionnaire"></a>アンケートの配布および記入
+
+[!include[banner](includes/banner.md)]
+
 
 このトピックは、設計したアンケートを、それらを実行するユーザーまたはユーザー グループが記入できるように配布する方法を説明します。 
 
@@ -53,7 +57,8 @@ ms.lasthandoff: 03/31/2017
 ## <a name="planned-answer-sessions-in-a-questionnaire"></a>アンケートの計画済回答セッション
 計画済回答セッションは、回答者をデザインおよび選択したアンケートです。 
 
-**メモ:** 計画済回答セッションを設定する前に、アンケートをデザインする必要があります。 
+> **メモ**
+>   計画済回答セッションを設定する前に、アンケートをデザインする必要があります。 
 
 [**計画済回答セッション**] ページで、個々の従業員に対して計画済回答セッションを作成できます。 ページの一覧には、計画されたすべてのアンケートが表示されます。 
 
@@ -99,7 +104,8 @@ ms.lasthandoff: 03/31/2017
 ## <a name="notifying-respondents-about-questionnaires-that-are-available-to-them"></a>回答者へ使用できるアンケートの通知
 アンケートを配布するとき、アンケートを使用できることを回答者に通知する必要があります。 
 
-**注記:** アンケートを記入するには、回答者が Microsoft Dynamics 365 for Operations のユーザーである必要があります。
+> **注記**
+>   アンケートを記入するには、回答者が Microsoft Dynamics 365 for Operations のユーザーである必要があります。
 
 ### <a name="notifying-respondents-about-a-planned-answer-session"></a>計画済回答セッションの回答者への通知
 
@@ -109,12 +115,14 @@ ms.lasthandoff: 03/31/2017
 
 アンケートに割り当てられたすべての回答者に電子メールを準備および送信するには、[**アンケートのスケジュール**] ページを使用します。 [**従業員セルフ サービス用の電子メール**] タブで電子メール テキストを入力します。 スケジュールが開始された後、電子メールを作成して回答者に送信するには [**機能**] &gt; [**電子メールの送信**] をクリックします。 その後、回答者は Web サイトにサインインしてアンケートを記入できます。 
 
-**メモ:** 電子メール機能を使用する前に、IT 管理者は [**電子メール パラメーター**] ページに電子メール設定を入力する必要があります。
+> **メモ**
+>   電子メール機能を使用する前に、IT 管理者は **電子メール パラメーター** ページに電子メール設定を入力する必要があります。
 
 ## <a name="ending-a-scheduled-questionnaire"></a>スケジュール済アンケートの終了
 すべての回答者が割り当てられた回答セッションを完了した後に、スケジュール済アンケートを終了できます。 予定のアンケートが終了すると、その設定は新しいスケジューリングにコピーできません。 
 
-**メモ:** 1 人以上の回答者がアンケートを記入していない状態で、スケジューリングを完了する場合は、まず [**Planned answer session**] ページの一覧から関係ある回答者を削除してください。 その後、スケジューリングを終了できます。
+> **メモ**
+>   1 人以上の回答者がアンケートを記入していない状態で、スケジューリングを完了する場合は、まず**計画済回答セッション**ページの一覧から関係ある回答者を削除してください。 その後、スケジューリングを終了できます。
 
 ## <a name="completing-questionnaires"></a>アンケートの記入
 アンケートを作成し、配布した後、アンケートは選択した回答者が回答することができます。 アクセスが許可されているアンケートには、次の 2 か所から記入できます。
@@ -132,5 +140,7 @@ ms.lasthandoff: 03/31/2017
 [アンケートの使用](questionnaires.md)
 
 [アンケート結果を表示して評価する](evaluate-questionnaire-results.md)
+
+
 
 

@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: eab840b2974f4e9e8cf542c146482ba8e4239079
-ms.openlocfilehash: acf7bacf6e95725024ff0a542a059349593d01a0
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 51f45ce0953f31e0573833ba41d9e0b5ac43bfbb
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -70,7 +71,7 @@ ms.lasthandoff: 03/31/2017
 7.  口座取引明細書のエンティティがアップロードされ、マッピングが完了した後、エンティティの [**マップの表示**] アクションをクリックします。
 8.  口座取引明細書のエンティティは、4 つの別々のエンティティで構成される複合エンティティです。 一覧で、[**BankStatementDocumentEntity**] を選択し、次に [**マップの表示**] アクションをクリックします。
 9.  [**変換**] タブで、[**新規**] をクリックします。
-10. シーケンス番号 1 で、[**ファイルのアップロード**] をクリックし, 先ほど保存した「** ISO20022XML-to-Reconciliation.xslt**」ファイルを選択します。 **注記:** Dynamics 365 for Operations 変換ファイルは、標準形式で作成されます。 銀行は多くの場合、この形式と異なるため、口座取引明細書の形式にマップする変換ファイルを更新する必要があるかもしれません。 <!-- For details about the expected format for ISO20022, see [Dynamics AX ISO20022 Layout](./media/dynamicsaxiso20022layout1.xlsx).-->
+10. シーケンス番号 1 で、[**ファイルのアップロード**] をクリックし, 先ほど保存した「**ISO20022XML-to-Reconciliation.xslt**」ファイルを選択します。 **注記:** Dynamics 365 for Operations 変換ファイルは、標準形式で作成されます。 銀行は多くの場合、この形式と異なるため、口座取引明細書の形式にマップする変換ファイルを更新する必要があるかもしれません。 <!-- For details about the expected format for ISO20022, see [Dynamics AX ISO20022 Layout](./media/dynamicsaxiso20022layout1.xlsx).-->
 11. **新規**をクリックします。
 12. シーケンス番号 2 で、[**ファイルのアップロード**] をクリックし, 先ほど保存した「**BankReconciliation-to-Composite.xslt**」ファイルを選択します。
 13. [**変換の適用**] をクリックします。

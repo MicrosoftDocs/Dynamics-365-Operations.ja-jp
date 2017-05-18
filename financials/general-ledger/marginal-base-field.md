@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 114dee90b0fe525f0b3efabbf651d2804a22dd7d
-ms.openlocfilehash: ad731401fe553cdc50665cc87aaac64dc48813f2
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 1d92fbe0d872cc3a2cd03623cb6285a4d438a434
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -184,7 +185,7 @@ ms.lasthandoff: 03/31/2017
 基準金額: **その他の売上税金額を含む請求合計** 計算方法: **間隔**   
 ランプにはそれぞれ 5.00 の特別税が課せられます。 この関税は、売上税が計算される前に正味金額に加算されます。 1 つ 25.00 のランプを 8 つ購入します。 請求書の正味金額は 200.00 です。 請求書の総額は、200.00 + (8 x 5.00) = 240.00 です。 税は次のように計算されます: 売上税の合計 = 50 x 0.30 + 50 x 0.20 + 140 x 0.10 = 15 + 10 + 14 = 39.00 関税の合計 = 5.00 x 8 = 40.00請求金額の合計 = 200.00 + 39.00 + 40.00 = 279.00
 
-詳細については「[Whole amount and Interval calculation options for sales tax codes](whole-amount-interval-options-sales-tax-codes.md) および [Sales tax calculation methods in the Origin field](sales-tax-calculation-methods-origin-field.md)」を参照してください。
+詳細については「[売上税コードの合計額と間隔計算オプション](whole-amount-interval-options-sales-tax-codes.md) および [発生元フィールドでの売上税計算方法](sales-tax-calculation-methods-origin-field.md)」を参照してください。
 
 
 

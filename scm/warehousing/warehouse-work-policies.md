@@ -18,10 +18,11 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-translationtype: Human Translation
-ms.sourcegitcommit: f77012e7b64b7f153103e9bbe91e8ded202b509a
-ms.openlocfilehash: 5660e5c8e3329564fc4262b5ad4f2547347bbb1a
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 32b401a6faa381c77845347db6aa5e89db5e38c3
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -35,7 +36,7 @@ ms.lasthandoff: 03/31/2017
 
 この作業ポリシーは、製造の倉庫プロセスのために倉庫作業が作成されるかどうかをコントロールします。 **作業オーダー タイプ**、**在庫場所**、および**製品**の組み合わせを使用して作業ポリシーを設定できます。 たとえば、製品 L0101 は、出荷場所 001 に完了済として報告されます。 完成品は、後に出荷場所 001 で別の製造オーダーに消費されます。 この場合、出荷場所 001 に完了済として L0101 製品の報告の際に、作成から完成品のプット アウェイの作業を回避するために作業ポリシーを設定できます。 作業ポリシーは次の情報を表すことができる個々のエンティティです:
 
--   **作業ポリシー名 ** (作業ポリシーの固有の ID)
+-   **作業ポリシー名** (作業ポリシーの固有の ID)
 -   **ワーク オーダー タイプ** と **作業作成方法**
 -   **在庫場所**
 -   **製品**
