@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 388b6398488e6f316c1ec07a00182e81c1dc8d08
-ms.openlocfilehash: f4d8994f6548119789715a4879b6bc02d25598e9
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: c6779f22699cbdb1a3ad1debd173c82a38d0f847
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -35,7 +36,7 @@ ms.lasthandoff: 03/31/2017
 <a name="overview"></a>概要
 --------
 
-電子申告 (ER) は、Microsoft Dynamics 365 for Operations の法律の要件および国固有の電子ドキュメントをサポートするエンジンです。 一般に、ER は、各電子ドキュメントに関して次のタスクの実行を想定しています。 詳細については、「[Electronic reporting overview](general-electronic-reporting.md)」を参照してください。
+電子申告 (ER) は、Microsoft Dynamics 365 for Operations の法律の要件および国固有の電子ドキュメントをサポートするエンジンです。 一般に、ER は、各電子ドキュメントに関して次のタスクの実行を想定しています。 詳細については、「[電子申告の概要](general-electronic-reporting.md)」を参照してください。
 
 -   電子ドキュメントのテンプレートを設計します:
     -   ドキュメントに表示できるデータのソースを識別します:

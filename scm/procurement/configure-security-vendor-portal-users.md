@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: f77012e7b64b7f153103e9bbe91e8ded202b509a
-ms.openlocfilehash: 3a5c6a256f8330ba238ea3c0c25f14b10a9a58e6
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 8885f40a36eed1de7b0f6a2f369b1fc5a9d3fc8a
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -32,7 +33,7 @@ ms.lasthandoff: 03/31/2017
 
 この記事では、仕入先ポータルを使用する外部仕入先のセキュリティを設定する方法を説明します。 この情報は、2016 年 2 月 &amp; 2016 年 5 月バージョンの Dynamics AX にのみ適用されます。
 
-仕入先のポータルの機能は、Dynamics 365 for Operations バージョン 1611 で拡張された仕入先コラボレーション機能に変わりました。 仕入先コラボレーションのセキュリティ設定の詳細については、「[Set up and maintain vendor collaboration](set-up-maintain-vendor-collaboration.md)」を参照してください。 仕入先ポータルは、外部仕入先に発注書 (PO) に関する限定されたセットの情報を公開します。 お使いの Dynamics AX 環境の追加情報に仕入先が誤ってアクセスしないように、Microsoft Dynamics AX の仕入先ポータルのユーザーのアクセス許可を正しく設定することは重要です。 **重要:** 他のユーザーとは異なり、外部仕入先には**システム ユーザー**ロールがあるべきではありません。 **システム ユーザー**ロールは、外部ユーザーに適していない一連の機能へのアクセスを制御します。
+仕入先のポータルの機能は、Dynamics 365 for Operations バージョン 1611 で拡張された仕入先コラボレーション機能に変わりました。 仕入先コラボレーションのセキュリティ設定の詳細については、「[仕入先共同作業の設定と管理](set-up-maintain-vendor-collaboration.md)」を参照してください。 仕入先ポータルは、外部仕入先に発注書 (PO) に関する限定されたセットの情報を公開します。 お使いの Dynamics AX 環境の追加情報に仕入先が誤ってアクセスしないように、Microsoft Dynamics AX の仕入先ポータルのユーザーのアクセス許可を正しく設定することは重要です。 **重要:** 他のユーザーとは異なり、外部仕入先には**システム ユーザー**ロールがあるべきではありません。 **システム ユーザー**ロールは、外部ユーザーに適していない一連の機能へのアクセスを制御します。
 
 ## <a name="setting-up-a-vendor-portal-user"></a>仕入先ポータルのユーザー設定
 仕入先ポータルを使用する誰かのユーザー アカウントを作成する前に、仕入先ポータルのコラボレーションを設定する仕入先を設定する必要があります。 **仕入先**ページの**概要**タブにある**発注書コラボレーション**フィールドを使用します。 仕入先ポータルを使用する外部仕入先は、次の設定をする必要があります。

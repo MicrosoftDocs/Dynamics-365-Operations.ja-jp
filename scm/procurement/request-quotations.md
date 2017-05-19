@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: f707d45290682e79ee439ba0d504852429defa90
-ms.openlocfilehash: d70b4ae0a6b177508021ee72481333cf6f265069
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 20ad50ab5c2dddf4fe07ebb5bb940954c0408f8d
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -48,7 +49,7 @@ ms.lasthandoff: 03/31/2017
 
 入札を受信したら、**見積依頼の返信**ページで入力します。 **データを返信にコピー** オプションを選択すると、数量や日付などのデータは RFQ ケースから返信にコピーされます。 仕入先の入札を反映する場合は、このデータを変更できます。  
 
-特定の仕入先について 2 回目の返信が必要な場合、**見積依頼の返信**ページの**返信 **をクリックします。 返信アクションにより新しい仕訳帳とレポートが生成され、印刷管理設定に従って印刷、アーカイブ、および送信されます。  
+特定の仕入先について 2 回目の返信が必要な場合、**見積依頼の返信**ページの**返信**をクリックします。 返信アクションにより新しい仕訳帳とレポートが生成され、印刷管理設定に従って印刷、アーカイブ、および送信されます。  
 
 RFQ ケースにスコア基準を追加した場合、RFQ の返信にはスコアを入力できるパネルが現れます。 **回答の比較**ページで返信を比較するときに合計スコアが表示されます。明細行の価格、出荷日、合計金額など他の回答データも比較できます。  
 

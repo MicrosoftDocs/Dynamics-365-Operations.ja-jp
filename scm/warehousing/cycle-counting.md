@@ -3,7 +3,7 @@ title: "循環棚卸"
 description: "この記事は、倉庫管理で使用できる倉庫ソリューションで、循環棚卸を使用する方法について説明します。 この記事は、在庫管理で使用できる倉庫ソリューションには適用されません。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-02-18 11 - 46 - 20
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,15 +17,19 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 3d02a15387231160f5b8a237aa11008b91ef1223
-ms.openlocfilehash: ffc1523d53732616d77511f39b72efc8f97744eb
-ms.lasthandoff: 03/30/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 387d114936567fc471cdcafcb2e93c1704db7ead
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="cycle-counting"></a>循環棚卸
+
+[!include[banner](../includes/banner.md)]
+
 
 この記事は、倉庫管理で使用できる倉庫ソリューションで、循環棚卸を使用する方法について説明します。 この記事は、在庫管理で使用できる倉庫ソリューションには適用されません。
 
@@ -39,7 +43,6 @@ ms.lasthandoff: 03/30/2017
 
 ## <a name="cycle-counting-prerequisites"></a>循環棚卸計画の前提条件
 次の表に、循環棚卸を使用する前に準備が整っている必要のある前提条件を示します。
-
 <table>
 <colgroup>
 <col width="50%" />
@@ -82,7 +85,7 @@ ms.lasthandoff: 03/30/2017
 <li>循環棚卸のグループ化</li>
 <li>スポット循環棚卸</li>
 </ul>
-詳細については、「<a href="configure-mobile-devices-warehouse">倉庫作業のモバイル デバイスの構成</a>」を参照してください。</li>
+</li>
 <li>モバイル デバイスのメニューを設定します。</li>
 <li>作業ユーザー アカウントを作成し、作業のユーザー ID にモバイル デバイス メニューを割り当てます。</li>
 </ul></td>
@@ -133,6 +136,9 @@ ms.lasthandoff: 03/30/2017
 -   棚卸の値は手持ち棚卸資産の数量と異なり、誤差限度は設定されません。
 
 棚卸の値の差異を調整し、棚卸の値を [**循環棚卸の検討保留**] ページで受け入れることができます。 品目の数量の変更済み総数は、[**保管場所ごとの手持在庫**] ページで確認できます。 差異を承認できない場合、棚卸の値は否認されます。
+
+# <a name="see-also"></a>参照
+[倉庫作業のモバイル デバイスの構成](configure-mobile-devices-warehouse.md)
 
 
 

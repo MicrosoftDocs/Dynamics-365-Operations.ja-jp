@@ -3,7 +3,7 @@ title: "在庫オブジェクトの値"
 description: "この記事は、在庫オブジェクトの値の計算方法についての情報を提供します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-12-07 09 - 09 - 05
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -19,19 +19,31 @@ ms.search.industry: Manufacturing
 ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 7a0a2af2094e3e5be757d3dd82255769677b96ea
-ms.openlocfilehash: 8898d5d91ffb4f73ea68f1251e1a99440e81bcd4
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: d177903e3c79226e90a1f2eb3d55e3c670446a44
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="inventory-object-values"></a>在庫オブジェクトの値
 
+[!include[banner](../includes/banner.md)]
+
+
 この記事は、在庫オブジェクトの値の計算方法についての情報を提供します。 
 
-[**現物数量**] という名前の新しい機能は、特定の在庫オブジェクトの値を表示できます。 原価オブジェクトは、在庫会計が実行されるエンティティ レベルを表します。 原価オブジェクトの詳細については、「[原価オブジェクト](cost-object.md)」を参照してください。 特定の在庫オブジェクトの値を表示するには、[**原価のオブジェクト**] ページで [**現物数量**] をクリックします。 在庫オブジェクトの値がどのように計算されるかは次のとおりです。Inventory object.Value = Cost object.Average unit cost × Inventory object.Quantity 次の例は、在庫オブジェクトの値と原価オブジェクトの計算方法です。 2 つの製品受領書イベントは、品目 A に登録されます。
+**現物数量** という名前の新しい機能は、特定の在庫オブジェクトの値を表示できます。 
+
+原価オブジェクトは、在庫会計が実行されるエンティティ レベルを表します。 原価オブジェクトの詳細については、「[原価オブジェクト](cost-object.md)」を参照してください。 
+
+特定の在庫オブジェクトの値を表示するには、[**原価のオブジェクト**] ページで [**現物数量**] をクリックします。 在庫オブジェクトの値がどのように計算されるかは次のとおりです。 
+
+在庫オブジェクト . 値 = コスト オブジェクト . 平均単位コスト × 在庫オブジェクト . 数量 
+
+次の例では、在庫オブジェクトとコスト オブジェクトの値の計算方法を示します。 2 つの製品受領書イベントは、品目 A に登録されます。
 
 -   製品受領書 1 : 数量 = 100 個、金額 = $1,000.00、サイト = 1、倉庫 =11、バッチ番号。 = B1
 -   製品受領書 2 : 数量 = 50 個、金額 = $800.00、サイト = 1、倉庫 =11、バッチ番号。 = B2
@@ -135,5 +147,7 @@ ms.lasthandoff: 03/29/2017
 [原価エントリ](cost-entries.md)
 
 [Microsoft Dynamics AX での新機能および変更された機能](/dynamics365/operations/dev-itpro/get-started/whats-new-changed)
+
+
 
 

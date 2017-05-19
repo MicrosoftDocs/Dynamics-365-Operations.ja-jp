@@ -3,7 +3,7 @@ title: "システム要件"
 description: "このトピックでは、現在のバージョンの Microsoft Dynamics 365 for Operations のシステム要件を一覧表示します。"
 author: sericks007
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -16,15 +16,19 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-translationtype: Human Translation
-ms.sourcegitcommit: c8c96dc9705688308dd4a5c720700ddc17657d75
-ms.openlocfilehash: 9220c093d3f6d6700127c93651db4083be300311
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 86053196a3aad6b7b5d7830860e1af347dd969d8
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="system-requirements"></a>システム要件
+
+[!include[banner](../includes/banner.md)]
+
 
 このトピックでは、現在のバージョンの Microsoft Dynamics 365 for Operations のシステム要件を一覧表示します。
 
@@ -43,6 +47,8 @@ Microsoft Dynamics 365 for Operations Web アプリケーションは、指定�
 -   タスク レコーダーから生成される画像をキャプチャして Microsoft Word ドキュメントに含めるには、Chrome 拡張機能をインストールする必要があります。 <!---For instructions about how to install the extension, see [Screenshot Extension setup](/dynamics365/operations/dev-itpro/user-interface/task-recorder).-->
 -   ワークフロー エディターは ClickOnce アプリケーションとして起動されます。 Microsoft Edge と Internet Explorer (Microsoft Windows のサポートされているバージョン) のみが、ClickOnce アプリケーションをサポートします。 ワークフロー エディタ ClickOnce アプリケーションには、64 ビットの互換性のあるオペレーティング システムが必要です。
 -   財務報告のレポート デザイナーは、ClickOnce アプリケーションとして起動されます。 それには 64 ビットの互換性のあるオペレーティング システムが必要です。 Chrome を使用している場合、レポート デザイナーのクライアントをダウンロードするために ClickOnce 拡張機能をインストールする必要があります。 匿名モードで Chrome を使用している場合、ClickOnce の拡張機能が匿名モードに対しても有効化されていることを確認します。
+-   PDF ファイルをプレビューするには、Windows 10 の Microsoft Edge (公開されている最新のバージョン)、もしくは Windows 10、Windows 8.1、Windows 8、Windows 7、または Google Nexus 10 タブレットの Google Chrome (公開されている最新のバージョン) などの最新のブラウザを使用することをお勧めします。
+
 
 ### <a name="supported-web-browsers-for-retail-cloud-pos"></a>Retail Cloud POS でサポートされている Web ブラウザー
 
@@ -117,11 +123,13 @@ Dynamics 365 for Operations では、ドキュメント回覧エージェント�
 -   少なくとも 10 GB の空き領域 (チャンネル データベースが大量の領域を必要とする場合があります。）
 
 ## <a name="requirements-for-development-on-local-vms"></a>ローカル VM の開発要件
-ローカル仮想マシン (VM) の開発要件については、[オンプレミス実行の VM](/dynamics365/operations/dev-itpro/dev-tools/access-instances#vm-that-is-running-in-premises) を参照してください。
+ローカル仮想マシン (VM) の開発要件については、[オンプレミス実行の VM](../dev-tools/access-instances.md) を参照してください。
 
 <a name="see-also"></a>参照
 --------
 
 [Dynamics 365 for Operations の評価版を取得](/dynamics365/operations/dev-itpro/dev-tools/get-evaluation-copy)
+
+
 
 

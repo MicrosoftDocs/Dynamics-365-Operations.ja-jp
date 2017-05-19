@@ -1,65 +1,55 @@
 ---
-title: "Microsoft Dynamics 365 for Operations アプリ用の原価管理モバイル ワークスペース"
-description: "原価管理モバイル ワークスペースを使用すると、原価部門管理者はいつでもどこでも原価部門パフォーマンスを見ることができます。"
+title: "コスト管理モバイル ワークスペース"
+description: "このトピックでは、Microsoft Dynamics 365 for Operations モバイル アプリに使用可能な、原価管理モバイル ワークスペースについて説明します。 このワークスペースにより、コスト センターの管理者は時間や場所に関わらず、コスト センターのパフォーマンスに関する情報を表示できます。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2017-01-12 16 - 53 - 04
+ms.date: 05/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
+ms.reviewer: annbe
 ms.search.scope: Operations, Core
 ms.custom: 267114
-ms.assetid: 84740472-494f-444c-9b74-f83b7342fd25
+ms.assetid: 612f2988-b2b9-420d-9825-40b99dc0e204
 ms.search.region: global
 ms.author: yuyus
+ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: c8c96dc9705688308dd4a5c720700ddc17657d75
-ms.openlocfilehash: 8136efb1d2669c39fcc0f80b60e80ecae983d5d8
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 31a9650774b2ddb70827ffa210154ca10c761236
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
-# <a name="cost-controlling-mobile-workspace-for-microsoft-dynamics-365-for-operations-app"></a>Microsoft Dynamics 365 for Operations アプリ用の原価管理モバイル ワークスペース
+# <a name="cost-controlling-mobile-workspace"></a>コスト管理モバイル ワークスペース
 
-原価管理モバイル ワークスペースを使用すると、原価部門管理者はいつでもどこでも原価部門パフォーマンスを見ることができます。 
+[!include[banner](../includes/banner.md)]
 
-<a name="prerequisites"></a>必要条件
--------------
 
-| 前提条件                                                         | 説明                                                                                                                                                                   |
-|----------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Microsoft Dynamics 365 for Operations モバイル プラットフォームについての確認 | [Dynamics 365 for Operations モバイル プラットフォーム](/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform)                                                              |
-| Dynamics 365 for Operations                                          | Microsoft Dynamics 365 for Operations バージョン 1611 および Microsoft Dynamics for Operations プラットフォーム更新プログラム 3 (2016 年 11 月) がある環境を使用していることを確認します。 |
-| 修正プログラム KB 3215650                                                     | Microsoft Dynamics 365 for Operations で提供されるワークスペースを有効にするように修正プログラムをインストールします。                                                                       |
-| Dynamics 365 for Operations アプリがインストールされたモバイル デバイス | モバイル アプリ ストアで、Dynamics 365 for Operations アプリをダウンロードします。                                                                                                      |
+このトピックでは、Microsoft Dynamics 365 for Operations モバイル アプリに使用可能な、原価管理モバイル ワークスペースについて説明します。 このワークスペースにより、コスト センターの管理者は時間や場所に関わらず、コスト センターのパフォーマンスに関する情報を表示できます。 
 
-## <a name="introduction"></a>はじめに
-原価管理モバイル ワークスペースは、予算原価に対する実際原価を比較して、原価部門の現在のパフォーマンスのインスタント ビューを提供します。 個々の原価要素のステータスにドリル ダウンすることができます。
+<a name="overview-of-the-cost-controlling-mobile-workspace"></a>原価管理モバイル ワークスペースの概要
+-------------------------------------------------
 
-### <a name="example"></a>例
-
-ある従業員が、国際カンファレンスへの招待を受け取ります。 組織は、すべての出張経費をカバーする必要があります。 その従業員は、カンファレンスに出席できるかどうか管理者に尋ねます。 管理者は、すぐに携帯電話で原価管理モバイル ワークスペースを開き、カンファレンスに出席する予算があるかどうかを確認します。
+**原価管理** モバイル ワークスペースは、予算原価に対する実際原価を比較して、原価部門の現在のパフォーマンスのインスタント ビューを提供します。 個々の原価要素のステータスにドリル ダウンすることができます。 たとえば、従業員は国際会議への招待を受けますが、組織はすべての旅費を負担する必要があります。 その従業員は、会議に出席できるかどうか管理者に尋ねます。 管理者は、すぐに携帯電話で **原価管理** モバイル ワークスペースを開き、会議に出席する予算があるかどうかを確認します。
 
 ### <a name="data-security"></a>データ セキュリティ
 
-原価管理ワークスペースのデータは、ユーザー資格情報で保護されます。 原価部門管理者は、自身の原価部門のデータだけを表示することができます。 アクセス レベルのセキュリティは、原価会計モジュール内で管理されます。 原価経理担当は、原価会計モジュールで原価管理モバイル ワークスペースのコンフィギュレーションを定義します。 ワークスペースを Microsoft Dynamics 365 for Operations アプリに公開すると、Microsoft Dynamics 365 for Operations アプリで使用できるようになります。 これで組織内のすべての原価部門管理者が同じ形式でデータを表示できるようになります。
+**原価管理** モバイル ワークスペースのデータは、ユーザー資格情報で保護されます。 原価部門管理者は、自身の原価部門のデータだけを表示することができます。 アクセス レベルのセキュリティは、**原価会計** モジュール内で管理されます。 原価経理担当は、**原価会計** モジュールで **原価管理** モバイル ワークスペースのコンフィギュレーションを定義します。 ワークスペースを Microsoft Dynamics 365 for Operations モバイル アプリに公開すると、このアプリで使用できるようになります。 これで組織内のすべての原価部門管理者が同じ形式でデータを表示できるようになります。
 
 ### <a name="actions-views-and-links"></a>操作、ビュー、リンク
 
-Dynamics 365 for Operations アプリ用の原価管理モバイル ワークスペースでは、次の操作、ビュー、リンクを使用できます。
+Dynamics 365 for Operations アプリ用の **原価管理** モバイル ワークスペースでは、次の操作、ビュー、リンクを使用できます。
 
--   操作 
-    -   [**コンフィギュレーション**] を選択してレイアウトを選択します。
-    -   [**原価オブジェクト**] を選択して、データをフィルター処理する原価部門を選択します。 **注記:** リストは原価会計モジュールで許可されたアクセスに従って表示されます。
-
-<!-- -->
-
--   [**操作**] での選択および原価会計モジュールでのコンフィギュレーションに基づいて、カードに次の情報を表示できます。 金額は、実際、予算、差異、差異の割合と同じ形式で表示されることに注意してください。 
+-   **アクション:**
+    -   レイアウトを選択するには、**構成の選択** を使用します。
+    -   データをフィルター処理する原価部門を選択するには、**原価オブジェクトの選択** を使用します。 **注:** 一覧に表示される原価部門は、**原価会計** モジュールで許可されるアクセスによって異なります。
+-   **ビュー:** 選択されたアクションと **原価計算** モジュールの設定に基づいて、カードに関する以下の情報を表示することができます。
     -   実際対予算 (現在の期間)
     -   実際対修正予算 (現在の期間)
     -   実際対予算 (前の期間)
@@ -67,46 +57,92 @@ Dynamics 365 for Operations アプリ用の原価管理モバイル ワークス
     -   実際対予算 (年度累計)
     -   実際対修正予算 (年度累計)
 
-<!-- -->
+    すべてのカードに表示される金額は、実績、予算、差異、差異の割合 (％) です。
+-   **リンク:**
+    -   現在の期間の詳細
+    -   前の期間の詳細
+    -   年度累計の詳細
 
--   リンク
-    -   現在の期間の詳細。
-    -   前の期間の詳細。
-    -   年度累計の詳細。
+    リンクを選択すると、カードが原価要素ごとに表示されます。 すべてのカードに表示される金額は、実績、予算、予算差異、予算差異 %、修正予算、修正予算差異、修正予算差異 % です。 
+    
+    [![原価要素のカード](./media/cost-controlling.png)](./media/cost-controlling.png)
 
-リンクの 1 つを選択すると、原価要素ごとのカードが表示されます。 カードの金額は、実際、予算、予算差異、予算差異 %、修正予算、修正予算差異、修正予算差異 % の形式で表示されます。  [![原価管理](./media/cost-controlling.png)](./media/cost-controlling.png)
+## <a name="prerequisites"></a>前提条件
+**原価管理** モバイル ワークスペースを使用する前に、システム管理者が次の前提条件を満たしていることを確認してください。
 
-## <a name="get-started"></a>はじめに
-モバイル デバイスで原価管理モバイル アプリを使用するには、次の手順に従います。
+<table>
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>前提条件</th>
+<th>役割</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Dynamics 365 for Operations バージョン 1611 およびプラットフォーム更新プログラム 3 以降を実装する必要があります。</td>
+<td>システム管理者</td>
+<td>Dynamics 365 for Operations をまだ組織に配置していない場合、システム管理者は <a href="http://ax.help.dynamics.com/en/wiki/deploy-an-ax7-demo-environment/">Microsoft Dynamics 365 for Operations デモ環境の配置</a> を確認する必要があります。</td>
+</tr>
+<tr class="even">
+<td>KB 4013633 を実装する必要があります。</td>
+<td>システム管理者</td>
+<td>KB 4013633 (X++ アップデートまたはメタデータ修正プログラム) には、サプライチェーン管理用の 4 つのモバイルワーク スペースが含まれています。 KB 4013633 を実装するには、システム管理者は次の手順に従う必要があります。
+<ol>
+<li>Microsoft Dynamics Lifecycle Services (LCS) から KB 4013633 をダウンロードします。</li>
+<li><a href="https://ax.help.dynamics.com/en/wiki/configuring-and-installing-a-metadata-hotfix-package/">メタデータ修正プログラムをインストールします。</a></li>
+<li><strong>SCMMobile</strong> モデルを含む<a href="https://ax.help.dynamics.com/en/wiki/create-and-apply-a-deployable-package/">配置可能パッケージを作成し</a>、配置可能パッケージを LCS にアップロードします。</li>
+<li>Dynamics 365 for Operations システムに<a href="https://ax.help.dynamics.com/en/wiki/apply-a-deployable-package-on-a-dynamics-ax-system/">配置可能パッケージを適用</a>します。</li>
+</ol></td>
+</tr>
+<tr class="odd">
+<td><strong>原価管理</strong>モバイル ワークスペースを Dynamics 365 for Operations モバイル アプリに公開しておく必要があります。</td>
+<td>システム管理者</td>
+<td><ol>
+<li>ブラウザーで、Dynamics 365 for Operations を開始します。</li>
+<li><strong>システム パラメーター</strong>ページで、<strong>モバイル ワークスペースの管理</strong>を選択します。</li>
+<li><strong>原価オブジェクトの概要</strong>ワークスペースを選択します。</li>
+<li><strong>モバイル ワークスペースの公開</strong>をクリックします。</li>
+</ol></td>
+</tr>
+</tbody>
+</table>
 
-1.  携帯電話アプリケーションの店舗で、Microsoft Dynamics 365 for Operations アプリケーションをダウンロードおよびインストールします。
-2.  デバイスでアプリを起動します。
-3.  Dynamics 365 の URL を入力します。
-4.  サインインする会社を入力します。 たとえば、「**USMF**」と入力します。
-5.  初回サインイン時、Microsoft Dynamics 365 for Operations のユーザー名とパスワードの入力を求められます。 資格情報を入力します。 サインインすると、会社の使用できるワークスペースが表示されます。
+## <a name="download-and-install-the-dynamics-365-for-operations-mobile-app"></a>Dynamics 365 for Operations モバイル アプリをダウンロードしてインストールする
+モバイル アプリ ストアで、Microsoft Dynamics 365 for Operations アプリをダウンロードおよびインストールします。
 
-モバイル アプリでワークスペースを表示するには、まず Dynamics 365 for Operations アプリに対象のワークスペースを公開する必要があります。
+-   Android 用: [Google Play ストアの Dynamics 365 for Operations](https://play.google.com/store/apps/details?id=com.microsoft.dynamics365.operations.mobile)
+-   iPhone 用: [iTunes アプリ ストアの Dynamics 365 for Operations](https://itunes.apple.com/us/app/dynamics-365-for-operations/id1180836730?mt=8)
 
-1.  Dynamics 365 for Operations を起動します。
-2.  [**システム管理**] &gt; [**設定**] &gt; [**システム パラメーター**] の順に移動します。
-3.  [**モバイル アプリの管理**] を選択します。
-4.  ワークスペース [**原価管理**] を選択して、モバイル プラットフォームに公開します。
-5.  [**ワークスペースの公開**] を選択します。
-6.  公開されたワークスペースを表示するデバイスを更新します。
+## <a name="sign-in-to-the-dynamics-365-for-operations-mobile-app"></a>Dynamics 365 for Operations モバイル アプリにサインインする
+1.  モバイル デバイスでアプリを起動します。
+2.  Dynamics 365 for Operations URL を入力します。
+3.  サインインする会社を入力します。 たとえば、「**USMF**」と入力します。
+4.  最初にサインインしたときに、Dynamics 365 for Operations アカウントのユーザー名とパスワードが要求されます。 資格情報を入力します。
+5.  サインインすると、会社の使用できるワークスペースが表示されます。 システム管理者が後で新しいワークスペースを公開すると、モバイル ワークスペースのリストを更新することができます。 
 
-## <a name="view-the-performance-of-your-cost-center"></a>原価部門のパフォーマンスを表示します。
+    [![プルして更新](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+
+## <a name="view-the-performance-of-your-cost-center-by-using-the-cost-controlling-mobile-workspace"></a>原価管理モバイル ワークスペースを使用して、原価部門のパフォーマンスを表示します。
 1.  モバイル デバイスで、[**原価管理**] ワークスペースを選択します。
 2.  [**原価オブジェクト管理**] を選択します。
-3.  [**操作**] をクリックします。
-4.  [**コンフィギュレーションの選択**] をクリックして原価管理レイアウトを選択します。
-5.  [**完了**] をクリックします。
-6.  [**操作**] をクリックします。
-7.  [**原価オブジェクトの選択**] をクリックして、アクセスが許可された原価部門を選択します。
-8.  [**完了**] をクリックします。
+3.  **操作** を選択します。
+4.  **コンフィギュレーションの選択** を選択して、原価管理レイアウトを選択します。
+5.  **完了** を選択します。
+6.  **操作** を選択します。
+7.  [**原価オブジェクトの選択**] を選択して、アクセスが許可された原価部門を選択します。
+8.  **完了** を選択します。
 9.  原価部門の全体パフォーマンスを表示します。
-10. [**現在の期間の詳細**] をクリックします。
+10. **現在の期間の詳細を** リンクを選択します。
 11. 個々の原価要素のパフォーマンスを表示します。
 12. 特定の原価要素も検索できます。
+
+
 
 
 

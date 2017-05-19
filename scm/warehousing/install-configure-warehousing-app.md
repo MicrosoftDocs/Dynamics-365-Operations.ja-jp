@@ -3,7 +3,7 @@ title: "Microsoft Dynamics 365 for Operations &#8211; Warehousing をインス�
 description: "このトピックでは、Microsoft Dynamics 365 for Operations - Warehousing をインストールして構成する方法について説明します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,15 +18,19 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: f77012e7b64b7f153103e9bbe91e8ded202b509a
-ms.openlocfilehash: 231c087ddc976aa552fc9cd6c89188f82a0247d1
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: bbf6df8d43889e7a62bfe28921997c45c8b4c632
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="install-and-configure-microsoft-dynamics-365-for-operations-8211-warehousing"></a>Microsoft Dynamics 365 for Operations &#8211; Warehousing をインストールして構成する
+
+[!include[banner](../includes/banner.md)]
+
 
 このトピックでは、Microsoft Dynamics 365 for Operations - Warehousing をインストールして構成する方法について説明します。
 
@@ -50,7 +54,7 @@ Dynamics 365 for Operations - Warehousing は、Google Play ストアおよび W
 
 1.  Web ブラウザーで、<https://manage.windowsazure.com> にアクセスします。
 2.  Azure サブスクリプションにアクセス可能なユーザーの名前とパスワードを入力します。
-3.  Azure Portal の左のナビゲーション ウィンドウで、[**Active Directory**] をクリックします。[](./media/wh-01-active-directory-example.png)[![wh-01-active-directory-example](./media/wh-01-active-directory-example.png)](./media/wh-01-active-directory-example.png)
+3.  Azure Portal の左のナビゲーション ウィンドウで、[**Active Directory**] をクリックします。[](./media/wh-01-active-directory-example.png)[![wh 01 active directory の例](./media/wh-01-active-directory-example.png)](./media/wh-01-active-directory-example.png)
 4.  グリッドで、Dynamics 365 for Operations で使用されている Active Directory のインスタンスを選択します。
 5.  上部のツールバーで、[**アプリケーション**] をクリックします。 [![wh-02-active-directory-applications](./media/wh-02-active-directory-applications-1024x197.png)](./media/wh-02-active-directory-applications.png)
 6.  下部ウィンドウで、[**追加**] をクリックします。 [**アプリケーションの追加**] ウィザードが起動します。
@@ -67,7 +71,7 @@ Dynamics 365 for Operations - Warehousing は、Google Play ストアおよび W
 ## <a name="create-and-configure-a-user-account-in-dynamics-365-for-operations"></a>Dynamics 365 for Operations でユーザー アカウントを作成および設定する
 Dynamics 365 for Operations を Azure AD アプリケーションとして使用可能にするには、次の手順を完了する必要があります。
 
-1.  Azure Active Directory で Dynamics 365 for Operations テナント用の新しいユーザー アカウントを作成します。 このユーザー アカウントの目的は、Dynamics 365 for Operations サーバーが公開する、倉庫保管アプリの特定の顧客サービスにアクセスすることです。 この手順を完了した後、WMDP 電子メール アドレスと WMDP パスワードから構成される、WMDP ユーザー資格情報が作成されます。 Azure AD および Dynamics 365 for Operations にユーザーを追加する基本的な方法については、このチュートリアルを参照してください: [Sign up for a Microsoft Dynamics 365 for Operations subscription](/dynamics365/operations/dev-itpro/sign-up-preview-subscription)。
+1.  Azure Active Directory で Dynamics 365 for Operations テナント用の新しいユーザー アカウントを作成します。 このユーザー アカウントの目的は、Dynamics 365 for Operations サーバーが公開する、倉庫保管アプリの特定の顧客サービスにアクセスすることです。 この手順を完了した後、WMDP 電子メール アドレスと WMDP パスワードから構成される、WMDP ユーザー資格情報が作成されます。 Azure AD および Dynamics 365 for Operations にユーザーを追加する基本的な方法については、このチュートリアルを参照してください: [Microsoft Dynamics 365 for Operations サブスクリプションのサインアップ](/dynamics365/operations/dev-itpro/dev-tools/sign-up-preview-subscription)。
 2.  倉庫保管アプリ ユーザー資格情報に関連する Dynamics 365 for Operations ユーザーを作成します。
     1.  Dynamics 365 for Operations で、[**システム管理**] &gt; [**共通**] &gt; [**ユーザー**] に移動します。
     2.  新規ユーザーを作成します。
@@ -98,6 +102,8 @@ Azure AD アプリケーションを使用して Dynamics 365 for Operations サ
 6.  [**構成**] タブをクリックし、スクローン ダウンして、アプリケーションの**クライアント ID**が、このセクションの手順 2 と同じことを確認します。
 7.  コマンド バーの [**削除**] ボタンをクリックします。
 8.  確認メッセージで [**はい**] をクリックします。
+
+
 
 
 

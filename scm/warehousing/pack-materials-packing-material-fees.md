@@ -18,10 +18,11 @@ ms.search.industry: Distribution
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: f77012e7b64b7f153103e9bbe91e8ded202b509a
-ms.openlocfilehash: 7c0bc5b5d86956336012096c11d0d7621abab1f9
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: d8296dd0347a325a9ff3bd06f558d161ab4030dc
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -37,7 +38,7 @@ ms.lasthandoff: 03/31/2017
 
 1 つの品目、品目の梱包グループ、またはすべての品目に対して、梱包単位を 1 つ以上定義できます。 梱包単位は、梱包材と、梱包材重量、および梱包単位に含まれる品目数から構成されます。 梱包材コードが、定義された梱包材の各タイプに割り当てられます。 梱包材コードに基づいて、指定した期間の価格を指定できます。 梱包材費用はこの情報に基づいて計算されます。
 
-| **メモ **                                                                                                                                             |
+| **メモ**                                                                                                                                             |
 |------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 梱包材費用を支払っていない会社でも、この機能を使用して、梱包材の重量の統計を計算できます。 |
 

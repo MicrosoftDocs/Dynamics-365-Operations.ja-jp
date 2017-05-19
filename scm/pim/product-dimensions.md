@@ -19,10 +19,11 @@ ms.search.industry: Retail
 ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 8854ab94a71cc363bcd073d2df47bc01a243b6cd
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 43cb4ed2ca77592fc23100fd74cb2bfa23c17f47
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -49,7 +50,7 @@ ms.lasthandoff: 03/31/2017
 -   [**製品情報管理**] &gt; [**リリースされた製品**] の順にクリックします。 製品マスターを選択します。 [**アクション ペイン**] で、[**製品**] をクリックします。 **製品マスター** グループで、**製品分析コード**をクリックします。
 
 1 つの品目に対して作成できるバリアントの数は、可能な製品分析コードの組み合わせの数により制限されます。
-| **ヒント **                                                                                                                                              |
+| **ヒント**                                                                                                                                              |
 |------------------------------------------------------------------------------------------------------------------------------------------------------|
 | たとえば、ある注文明細行上で製品を使用する場合、製品分析コードを選択して、使用する製品バリアントを特定します。 |
 

@@ -3,7 +3,7 @@ title: "BOM デザイナーの機能"
 description: "この記事は、 [BOM デザイナ] ページを使用して、部品表 (BOM) のツリー構造の設計および操作をする方法について説明します。 [設定] をクリックすると、さまざまなコンフィギュレーションの選択や、ツリーの行に表示する情報の指定ができます。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-12-08 21 - 09 - 22
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -19,15 +19,19 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 2c98039c9fa8179408394f9f66b9fca0f8cad3fe
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: ff482c183276a99a3c9a632d41d9121bf77befbf
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="bom-designer-functionality"></a>BOM デザイナーの機能
+
+[!include[banner](../includes/banner.md)]
+
 
 この記事は、 [BOM デザイナ] ページを使用して、部品表 (BOM) のツリー構造の設計および操作をする方法について説明します。 [設定] をクリックすると、さまざまなコンフィギュレーションの選択や、ツリーの行に表示する情報の指定ができます。
 
@@ -115,6 +119,8 @@ BOM 明細行または BOM を編集するには、[**BOM 明細行**] または
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | BOM         | ツリー構造に表示された基準を選択するには、このチェック ボックスを使用します。 選択した基準は、[BOM デザイナー] の両方のタブの下部に表示されます。 |
 | 工順       | 表示された工順の基準を選択するには、このチェック ボックスを使用します。                                                                                    |
+
+
 
 
 

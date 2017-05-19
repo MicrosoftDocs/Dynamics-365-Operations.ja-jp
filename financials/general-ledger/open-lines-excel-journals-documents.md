@@ -3,7 +3,7 @@ title: "Excel から仕訳帳明細行とドキュメントを発行する"
 description: "このトピックでは、Microsoft Excel の一般仕訳帳のドキュメント明細行入力および発行方法について説明します。 ここには、入力するトランザクションのタイプに応じて、使用できるさまざまなテンプレートに関する情報が含まれています。"
 author: twheeloc
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,15 +17,19 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ef99caf4570969d2b920cec8b53669ce2094965
-ms.openlocfilehash: 087339cb3002b42bcb985c2ccfc2d97c752a817c
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 9726c61b69f79bdd56803ced4c06044dd517ac13
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="publish-journal-lines-and-documents-from-excel"></a>Excel から仕訳帳明細行とドキュメントを発行する
+
+[!include[banner](../includes/banner.md)]
+
 
 このトピックでは、Microsoft Excel の一般仕訳帳のドキュメント明細行入力および発行方法について説明します。 ここには、入力するトランザクションのタイプに応じて、使用できるさまざまなテンプレートに関する情報が含まれています。
 
@@ -46,7 +50,9 @@ ms.lasthandoff: 03/31/2017
 
 行が公開されると、それらの行が財務仕訳帳に設定されているルールに準拠していることが確認されます。 行が公開されると、ユーザーは Microsoft Dynamics 365 for Operations から伝票を編集または投稿することができます。 
 
-テンプレートに財務分析コードを追加するには、追加の変更が必要です。 詳細については、「[Microsoft Excel テンプレートに分析コードを追加する](\dev-itpro\financial-dimensions\add-dimensions-excel-templates)」を参照してください。 エンティティに分析コードを追加した後は、Excel デザイナーで使用でき、テンプレートに追加することができます。
+テンプレートに財務分析コードを追加するには、追加の変更が必要です。 詳細については、「[Microsoft Excel テンプレートに分析コードを追加する](/dynamics365/operations/dev-itpro/financial/add-dimensions-excel-templates)」を参照してください。 エンティティに分析コードを追加した後は、Excel デザイナーで使用でき、テンプレートに追加することができます。
+
+
 
 
 

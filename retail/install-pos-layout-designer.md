@@ -18,21 +18,25 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: b33cbf67c00b6baea4393e82d19300085781af29
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: e60994f5c4fa38fc2be17b4021e2def904c87b7f
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="install-the-retail-pos-layout-designer"></a>Retail POS のレイアウト デザイナーをインストールする
 
+[!include[banner](includes/banner.md)]
+
+
 ワンクリック デザイナーを使用して、ランドスケープ モード、ポートレート モード、店舗、レジスター、レジ担当者、マネージャ用など、異なる Retail Modern POS (MPOS) やクラウド POS のレイアウトを作成することができます。
 
 MPOS、またはクラウド POS のグラフィカル デザイン インターフェイスは、レジ レイアウトによって制御されます。 レイアウトによって、さまざまなオブジェクトの位置が制御されます。 たとえば、合計のレイアウト、品目グリッド レイアウト、顧客のレイアウト、支払のレイアウト、各種メニュー ボタンのレイアウトがあります。 また、レイアウトには、作業者に対して表示される販売インターフェイスの全体的な外観も含まれます。
 
-## <a name="install-the-oneclick-designer"></a>ワンクリック デザイナーをインストールする
+## <a name="install-the-one-click-designer"></a>ワンクリック デザイナーをインストールする
 1.  Microsoft Dynamics 365 for Operations では、左上のメニューを使って、[**小売** **とコマース**] &gt; [**チャンネル設定**] &gt; [**POS 設定**] &gt; [**POS**] &gt; [**画面レイアウト**] へ移動します。
 2.  **Windows のモダン POS** または**クラウド POS**のアプリケーション タイプを持つレイアウトを選択し、[**レイアウト デザイナー**] をクリックします。
 3.  ワンクリック デザイナーをインストールする場合、Internet Explorer ウィンドウの下部に表示される通知バーの [**開始**] をクリックします。 (通知バーは、他のブラウザでは別の場所に表示される場合があります。)
@@ -52,5 +56,7 @@ MPOS、またはクラウド POS のグラフィカル デザイン インター
 --------
 
 [Retail Modern POS の設定、ダウンロード、インストール、および有効化。](retail-modern-pos-device-activation.md)
+
+
 
 

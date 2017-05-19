@@ -16,15 +16,19 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: f707d45290682e79ee439ba0d504852429defa90
-ms.openlocfilehash: 82d03b6bc190fb612dd2cc7a25dc11875212f1ea
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fbca041e0663fad4437207146bcfff8f93f4a7fc
+ms.openlocfilehash: 67faa02d445cc4c6e78fe5471605d8c0a2da21de
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/27/2017
 
 
 ---
 
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-version-1611-november-2016"></a>Dynamics 365 for Operations バージョン 1611 (2016 年 11 月) での新機能および変更された機能
+
+[!include[banner](../includes/banner.md)]
+
 
 このトピックでは、Dynamics 365 for Operations version 1611 の新機能または変更された機能について説明します。
 
@@ -514,6 +518,11 @@ ms.lasthandoff: 03/31/2017
 <li>スイスの ESR 口座取引明細書のインポート形式</li>
 </ul></td>
 </tr>
+<tr class="even">
+<td>ドイツ – DTAZV 形式における仕入先支払のエクスポート</td>
+<td>ドイツでは、ドイツから外国銀行の口座もしくは外国通貨を扱う国内銀行へ、国境を越えた支払明細書に従い、口座振替 (仕入先支払) のメッセージを表す外国書式指定を含む DTAZV が必要です。 
+</td>
+</tr>
 </tbody>
 </table>
 
@@ -675,7 +684,7 @@ ms.lasthandoff: 03/31/2017
 
 ### <a name="store-system-providing-a-seamless-on-premises-store-experience"></a>店舗システム: シームレスなオンプレミス店舗経験の提供
 
-店舗システムは、オンプレミス店舗、Microsoft パブリック クラウド、または顧客のプライベート クラウドにかかわらず、一連の店舗運営を推進する小売業者向けの配置選択です。 Microsoft Dynamics AX アプリケーション バージョン 7.1 の場合、範囲は店舗のみです。 遅く、信頼性の低いネットワーク接続の環境を改善するには、チャンネル データベースと、小売業者が Retailer サーバーを店舗に配置できるようにオプションを指定する必要があります。 そして、本部 (HQ) への接続がない場合、コア ビジネス シナリオの実行を続行できます。 エンジニアリング チームのディスカッション、顧客調査結果、および競合分析が含まれている様々なデータ ポイントに基づいて、ターゲット顧客にとって最適な次のソリューションの範囲を識別します:
+店舗システムは、オンプレミス店舗、Microsoft パブリック クラウド、または顧客のプライベート クラウドにかかわらず、一連の店舗運営を推進する小売業者向けの配置選択です。 このリリースに対して、スコープは店舗内のみです。 遅く、信頼性の低いネットワーク接続の環境を改善するには、チャンネル データベースと、小売業者が Retailer サーバーを店舗に配置できるようにオプションを指定する必要があります。 そして、本部 (HQ) への接続がない場合、コア ビジネス シナリオの実行を続行できます。 エンジニアリング チームのディスカッション、顧客調査結果、および競合分析が含まれている様々なデータ ポイントに基づいて、ターゲット顧客にとって最適な次のソリューションの範囲を識別します:
 
 -   セルフサービスのパッケージはストア システムで使用できます。
 -   既定のインストールはワン ボックス配置ですが、カスタム配置が許可されます。
@@ -718,7 +727,7 @@ ms.lasthandoff: 03/31/2017
 | 仕入先として、顧客に転送する委託販売在庫量に関する情報を取得します。                                                                      | 顧客に請求するには、仕入先は委託販売在庫から購入された原材料と購入日に関する情報を要求します。 また、仕入先は、仕入先コラボレーション インターフェイスを使用して、顧客サイトの手持在庫を監視できます。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | 移動仕訳帳を使用して仕入先所有の在庫を移動します。                                                                                                                       | 仕入先所有の在庫の物理的な位置を追跡するには、システム上の位置を記録する必要があります。 移動仕訳帳を使用して、倉庫内のある場所から別の場所へ移動するなどの在庫の物理移動を記録できます。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | 棚卸仕訳帳を使用して仕入先所有の在庫を調整します。                                                                                                                     | システム手持在庫を実際の現物在庫に同期化させることが重要です。 数量の調整および棚卸仕訳帳プロセスなどの棚卸プロセスを使用して、仕入先所有の在庫は調整できます。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| Dynamics 365 for Operations の委託サポートの詳細を表示します。                                                                                                         | 委託販売プロセスのサポートに関する詳細については、[委託販売](/dynamics365/operations/scm/inventory/consignment)、[委託販売の設定](/dynamics365/operations/scm/inventory/set-up-consignment)、[委託販売補充注文の作成 (タスク ガイド)](http://ax.help.dynamics.com/en/wiki/create-a-consignment-replenishment-order/)、そして [生産の需要に基づく委託販売在庫の所有権の変更 (タスク ガイド)](http://ax.help.dynamics.com/en/wiki/change-the-ownership-of-consignment-inventory-based-on-production-demand/) を参照して下さい。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| Dynamics 365 for Operations の委託サポートの詳細を表示します。                                                                                                         | 委託販売プロセスのサポートに関する詳細については、[委託販売](/dynamics365/operations/supply-chain/inventory/consignment)、[委託販売の設定](/dynamics365/operations/supply-chain/inventory/set-up-consignment)、[委託販売補充注文の作成 (タスク ガイド)](http://ax.help.dynamics.com/en/wiki/create-a-consignment-replenishment-order/)、そして [生産の需要に基づく委託販売在庫の所有権の変更 (タスク ガイド)](http://ax.help.dynamics.com/en/wiki/change-the-ownership-of-consignment-inventory-based-on-production-demand/) を参照して下さい。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 
 ### <a name="vendor-collaboration-previously-known-as-the-vendor-portal"></a>仕入先の共同作業 (以前は仕入先ポータルと呼ばれていた)
 
@@ -728,7 +737,7 @@ ms.lasthandoff: 03/31/2017
 | 仕入先が連絡担当者の情報を管理できるようにします。                                 | 仕入先は会社の連絡先情報を管理できます。 この情報には、名前、電子メール、住所、電話番号が含まれます。 この機能へのアクセスは、専用のセキュリティ ロールを通して許可されます。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | 発注書に関連するドキュメントを仕入先に共有します。                    | 要件に関するドキュメントなどのドキュメントを仕入先と共有する必要がある場合、そのドキュメントを関連する発注書にリンクすると便利です。 仕入先は、そのドキュメントを発注書への自分の回答にリンクさせることにより、メモおよび添付ファイルを顧客と共有できます。 ドキュメント管理は、基になるサポート フレームワークであり、「外部」として分類されているメモと添付ファイルのみを仕入先と共有できます。                                                                                                                                                                                                                                                                                                                              |
 | 新規仕入先ユーザーのプロビジョニング。                                                          | 仕入先が仕入先コラボレーション インターフェイスを使用すると、新しい連絡先が仕入先コラボレーションへのアクセスを必要とする場合に新規ユーザー アカウントをリクエストするシームレスな方法が仕入先に提供されます。 調達担当者は仕入先組織における連絡担当者のユーザー アカウントのリクエストを送信できます。 既に仕入先コラボレーションのユーザーである仕入先の連絡担当者は、リクエストのタイプも送信できます。 このリクエストにより、仕入先固有のセキュリティ ロールを持つ Dynamics 365 for Operations の新しいユーザーが最終的に作成されます。 また、これにより、Microsoft Azure B2B ポータルのユーザーに新しい Azure Active Directory (Azure 広告) ユーザー アカウントが簡単に提供されるようになります。 仕入先は、特定の仕入先ユーザー アカウントを無効にする、またはセキュリティ ロールを変更するよう要求できます。 |
-| Dynamics 365 for Operations の仕入先コラボレーションのサポート詳細を表示します。 | 仕入先コラボレーションに関する詳細については、[外部仕入先との仕入先コラボレーション](/dynamics365/operations/scm/procurement/vendor-collaboration-work-external-vendors)、[顧客との仕入先コラボレーション](/dynamics365/operations/scm/procurement/vendor-collaboration-work-customers-dynamics-365-operations)、[仕入先コラボレーション ユーザーの管理](/dynamics365/operations/scm/procurement/manage-vendor-collaboration-users)、[仕入先コラボレーションの設定および管理](/dynamics365/operations/scm/procurement/set-up-maintain-vendor-collaboration)、および [仕入先コラボレーションの請求ワークスペース](/dynamics365/operations/financials/accounts-payable/vendor-portal-invoicing-workspace)を参照してください。                                                         |
+| Dynamics 365 for Operations の仕入先コラボレーションのサポート詳細を表示します。 | 仕入先コラボレーションに関する詳細については、[外部仕入先との仕入先コラボレーション](/dynamics365/operations/supply-chain/procurement/vendor-collaboration-work-external-vendors)、[顧客との仕入先コラボレーション](/dynamics365/operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations)、[仕入先コラボレーション ユーザーの管理](/dynamics365/operations/supply-chain/procurement/manage-vendor-collaboration-users)、[仕入先コラボレーションの設定および管理](/dynamics365/operations/supply-chain/procurement/set-up-maintain-vendor-collaboration)、および [仕入先コラボレーションの請求ワークスペース](/dynamics365/operations/financials/accounts-payable/vendor-portal-invoicing-workspace)を参照してください。                                                         |
 
 ### <a name="intercompany-order-processing"></a>会社間注文の処理
 
@@ -774,7 +783,7 @@ ms.lasthandoff: 03/31/2017
 | 作業に関連付けられている在庫を移動します。                             | 作業に関連付けられている在庫を移動できるようになりました。 この機能は便利な場合があります。たとえば、作業者が入庫ドックのスペースをクリアにし、別の入庫場所に配置されるのを待機している登録済みパレットを移動する場合です。 ドックはクリアとなり、追加の積荷品目を受け取ることができるようになり、移動した在庫は新しいプット アウェイの情報で更新されます。 作業に関連付けられている在庫を移動し、補充スペースを作成することにより、ピッキング場所のスペースを確保するためにも、この機能を使用できます。 また、生成された積荷作業を保持したままあるステージング場所から別のステージング場所へ積荷を移動する場にも使用できます。 これにより、この機能はトラック到着時の荷積作業に必要とされる時間の最適化を図ることができます。 販売注文、移動オーダーの出庫、移動オーダーの入庫、および発注書に対して引当てられている在庫を移動できます。 明細行が分割される場合は、移動が防止されます。 たとえば、100 個の品目に対して作業行が存在する場合、別の場所にその品目 30 個のみを移動することはできません。 |
 | 作業に関連付けられているライセンス プレートを結合します。                    | 出庫作業に関連付けられているライセンス プレートを結合できます。 たとえば、ピッキングを複数に分割する場合、ライセンス プレートがステージングの場所に配送された後にライセンス プレートを結合すると便利です。 ライセンス プレートは、同じ場所にあり、同じ積荷のメンバーであり、同じ出荷情報が含まれている場合にのみ連結することができます。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | 明細行レベルで補充に関連付けられているピッキング作業を凍結させます。 | 要求補充によって凍結されないピッキング明細行を満たすために、ヘッダー レベルではなく、明細行レベルで作業を凍結できるようになりました。 したがって、大規模な販売注文を持っている卸売業者、または、大規模な販売注文または補充の移動オーダーを持っている小売業者は、補充作業対象外の明細行上でピッキング作業を開始できます。 そして、ピッキングと補充作業は並行して実行できます。 この機能は、ヘッダー レベルまたは明細行レベルで凍結するかどうかを選択できるように設定できます。 また、両方の方法を使用し、各方法の作業テンプレートを作成できます。 ヘッダー/ライン コンフィギュレーションは作業テンプレートで設定されますが、生成済の作業グループで直接変更できます。                                                                                                                                                                                                                                                                                                                                                                      |
-| モバイル デバイスを使用して作業をキャンセルします。                                      | 要求補充の有無に関係なくモバイル デバイスを使用して、作業をキャンセルできるようになりました。 以前では、リッチ クライアントを使用する必要がありました。 この機能を有効にするには、モードが **Indirect** と設定されているモバイル デバイス メニュー項目、および**作業のキャンセル**と設定されている活動コードを作成します。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| モバイル デバイスを使用して作業をキャンセルします。                                      | 要求補充の有無に関係なくモバイル デバイスを使用して、作業をキャンセルできるようになりました。 以前では、リッチ クライアントを使用する必要がありました。 この機能を有効にするには、モードが **間接** と設定されているモバイル デバイス メニュー項目、および**作業のキャンセル**と設定されている活動コードを作成します。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 
 ### <a name="warehouse-operation-enhancements"></a>倉庫操作の拡張機能
 
@@ -846,5 +855,7 @@ ms.lasthandoff: 03/31/2017
 --------
 
 [新規または変更](whats-new-changed.md)
+
+
 
 

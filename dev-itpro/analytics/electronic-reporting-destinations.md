@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-translationtype: Human Translation
-ms.sourcegitcommit: 4d6cf88788dcc5e982e509137aa444a020137a5e
-ms.openlocfilehash: d38d05fe445bf0326d408038dff84ccf8c0ff64c
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: b6b0edfbbcebed323be63d5bc892dba1170b9c67
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -118,7 +119,7 @@ Microsoft Azure ストレージまたは Microsoft SharePoint フォルダーに
 
 ### <a name="power-bi-destination"></a>Power BI 出力先
 
-[**有効**] を [**はい**] に設定し、ER コンフィギュレーションを使用して Dynamics 365 for Operations のインスタンスから Microsoft Power BI サービスへのデータ転送を調整します。 転送されたファイルは、その目的にコンフィギュレーションされている Microsoft SharePoint Server インスタンスに保存されます。 詳細については、「[Use an Electronic reporting configuration to provide Power BI with data from Dynamics 365 for Operations](general-electronic-reporting-report-configuration-get-data-powerbi.md)」を参照してください。 **ヒント:** 既定の動作を上書きする (つまり、構成のダイアログ ボックス) には、送信先の参照および主な出力コンポーネントのファイル保存先を作成し、すべての送信先を無効にします。
+[**有効**] を [**はい**] に設定し、ER コンフィギュレーションを使用して Dynamics 365 for Operations のインスタンスから Microsoft Power BI サービスへのデータ転送を調整します。 転送されたファイルは、その目的にコンフィギュレーションされている Microsoft SharePoint Server インスタンスに保存されます。 詳細については、「[Dynamics Online 365 からデータを Power BI に提供する電子申告コンフィギュレーションを使用する](general-electronic-reporting-report-configuration-get-data-powerbi.md)」を参照してください。 **ヒント:** 既定の動作を上書きする (つまり、構成のダイアログ ボックス) には、送信先の参照および主な出力コンポーネントのファイル保存先を作成し、すべての送信先を無効にします。
 
 ## <a name="security-considerations"></a>セキュリティ上の注意事項
 電子申告の送信先への権限と職務の 2 種類が使用されます。 1 つのタイプは、法人に対して構成されている全体の送信先を維持する機能を制御します (つまり、[**電子申告の送信先**] ページへのアクセスを制御します)。 その他のタイプは、実行時に、電子申告の開発者または電子申告機能コンサルタントで構成されている送信先の設定を上書きするアプリケーション ユーザーの機能を制御します。

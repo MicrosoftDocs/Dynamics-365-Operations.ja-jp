@@ -3,7 +3,7 @@ title: "購買先支出分析 Power BI コンテンツ"
 description: "このトピックでは、Microsoft Power BI の購買先支出分析コンテンツ パックについて説明します。 コンテンツ パックに含まれているレポートにアクセスする方法を説明し、コンテンツ パックを作成するために使用されるデータ モデルおよびエンティティについての情報を提供します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-12-30 09 - 40 - 51
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -16,15 +16,19 @@ ms.search.region: global
 ms.author: fdahl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 4d6cf88788dcc5e982e509137aa444a020137a5e
-ms.openlocfilehash: 8cb928cbf1316e63a8c7de833587168cd36a455c
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: d392b88942f4b7d7365b000df1cd69809060b910
+ms.openlocfilehash: e39b1677038037cd91cfad8d104d0130bc20fb9b
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/26/2017
 
 
 ---
 
 # <a name="purchase-spend-analysis-power-bi-content"></a>購買先支出分析 Power BI コンテンツ
+
+[!include[banner](../includes/banner.md)]
+
 
 このトピックでは、Microsoft Power BI の購買先支出分析コンテンツ パックについて説明します。 コンテンツ パックに含まれているレポートにアクセスする方法を説明し、コンテンツ パックを作成するために使用されるデータ モデルおよびエンティティについての情報を提供します。
 
@@ -37,7 +41,8 @@ Microsoft Power BI の購買先支出分析コンテンツ パックは購買部
 -   前年比購買の変化 (仕入先グループと調達カテゴリ)
 
 ## <a name="accessing-the-content-pack"></a>コンテンツ パックへのアクセス
-購買先支出分析 Power BI コンテンツ パックは、Microsoft Dynamics Lifecycle Services (LCS) の実装資産として公開され、Microsoft Dynamics 365 for Operations からアクセスできます。 Power BI レポートにどのようにアクセスし、開くかについての詳細は、[Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md) を参照してください。
+購買先支出分析 Power BI コンテンツ パックは、Microsoft Dynamics Lifecycle Services (LCS) の実装資産として公開され、Microsoft Dynamics 365 for Operations からアクセスできます。 Power BI レポートにどのようにアクセスし、開くかについての詳細は、[Microsoft およびパートナーからの LCS での Power BI コンテンツ](power-bi-content-microsoft-partners.md) を参照してください。
+注記: KB 4011327 は、この Power BI コンテンツの前提条件となります。 Lifecycle Services にサインインすると、次のサポート技術情報にアクセスできます: https://fix.lcs.dynamics.com/issue/results/?q=kb4011327です。
 
 ## <a name="metrics-that-are-included-in-the-content-pack"></a>コンテンツ パックに含まれるメトリックス
 購買先支出分析コンテンツ パックには、一連のメトリックスで構成されるレポートが含まれます。 これらのメトリックスはグラフ、タイル、表として視覚化されます。 次の表は、コンテンツ パックでの視覚化の概要を示しています。
@@ -129,7 +134,7 @@ Microsoft Power BI の購買先支出分析コンテンツ パックは購買部
 \* 今年度と昨年度の購買、調達カテゴリによる成長
 
 ## <a name="data-model-and-entities"></a>データ モデルおよびエンティティ
-Dynamics 365 for Operations のデータは、購買先支出分析コンテンツ パックのレポートに使用されます。 このデータは、分析用に最適化された Microsoft SQL データベースであるエンティティ格納でステージ完了である集計の測定として表されます。 エンティティ ストアに関する詳細については、[Dynamics におけるエンティティ ストアとの Power BI の統合](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/) ブログ投稿を参照してください。 このコンテンツ パックの集計の測定は Microsoft Dynamics AX 2012 および Microsoft Dynamics 365 for Operations 2012 R3 の購買キューブに使用できた集計の測定のサブセットです。 エンティティ格納でキューブの集計の測定を公開するには、それらを配置可能にする必要があります。 詳細については、[Power BI integration with Entity Store in Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/) ブログ投稿で、集計の測定をエンティティ格納へ公開する手順を参照してください。 次のキー集計の測定は、請求明細行エンティティから直接使用でき、コンテンツ パックの基準として使用されます。
+Dynamics 365 for Operations のデータは、購買先支出分析コンテンツ パックのレポートに使用されます。 このデータは、分析用に最適化された Microsoft SQL データベースであるエンティティ格納でステージ完了である集計の測定として表されます。 エンティティ ストアに関する詳細については、[Dynamics におけるエンティティ ストアとの Power BI の統合](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/) ブログ投稿を参照してください。 このコンテンツ パックの集計の測定は Microsoft Dynamics AX 2012 および Microsoft Dynamics AX 2012 R3 の購買キューブに使用できた集計の測定のサブセットです。 エンティティ格納でキューブの集計の測定を公開するには、それらを配置可能にする必要があります。 詳細については、[Dynamics におけるエンティティ ストアとの Power BI の統合](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/) ブログ投稿で、集計の測定をエンティティ格納へ公開する手順を参照してください。 次のキー集計の測定は、請求明細行エンティティから直接使用でき、コンテンツ パックの基準として使用されます。
 
 | エンティティ        | キー集計の測定 | Dynamics 365 for Operations のデータ ソース | フィールド              | 説明                           |
 |---------------|----------------------------|---------------------------------------------|--------------------|---------------------------------------|
@@ -162,6 +167,8 @@ Dynamics 365 for Operations のデータは、購買先支出分析コンテン�
 -   [組織のコンテンツ パックの作成](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
 -   [Power BI を使用したデータのモデル化](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
 -   [Power BI タイルをワークスペースへ追加する](configure-power-bi-integration.md)
+
+
 
 
 

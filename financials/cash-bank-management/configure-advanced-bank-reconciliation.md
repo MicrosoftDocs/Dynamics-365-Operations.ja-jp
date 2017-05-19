@@ -16,10 +16,11 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 3b16ef53f9fb57a6663db0be1f7e0a57471db2fb
-ms.openlocfilehash: c2fc9e858f61d7d0122393bbf306ba64ac3659b8
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 6c6b171fbba90b02b80c70783ecfd9ab57beb96d
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -31,7 +32,7 @@ ms.lasthandoff: 03/31/2017
 
 詳細な口座調整では、電子口座取引明細書をインポートし、Microsoft Dynamics 365 for Operations での銀行トランザクションに合わせて自動的に調整することができます。  この資料では、調整のプロセスの設定について説明します。  
 
-詳細な口座調整機能を使用する前に設定する必要のあるいくつかの要素があります。 口座取引明細書のインポートの設定の情報については、「[Set up the bank statement import process](set-up-advanced-bank-reconciliation-import-process.md)」を参照してください。  調整プロセスの設定の要件は、次のとおりです。
+詳細な口座調整機能を使用する前に設定する必要のあるいくつかの要素があります。 口座取引明細書のインポートの設定の情報については、「[口座取引明細書のインポート プロセスの設定](set-up-advanced-bank-reconciliation-import-process.md)」を参照してください。  調整プロセスの設定の要件は、次のとおりです。
 
 ## <a name="transaction-codes"></a>トランザクション コード
 トランザクション コードは、銀行調整の照合ルールの一部として使用できます。  トランザクション コードは Dynamics 365 と口座取引明細書間の同じタイプのトランザクションのみの照合に役立ちます。  このタイプの照合を行うには、まず Dynamics 365 for Operations の銀行トランザクションに使用するトランザクション タイプを定義し、銀行で使用する明細書の取引コードにそれらのタイプをマップします。  Dynamics 365 for Operations 銀行トランザクションのトランザクション タイプは、[**銀行トランザクション タイプ**] ページで定義されます。  またこれによって、トランザクション タイプに関連付けられた転記に使用する主勘定を定義します。 
@@ -39,7 +40,7 @@ ms.lasthandoff: 03/31/2017
 Dynamics 365 for Operations 銀行トランザクション タイプを定義した後、これらを電子口座取引明細書で使用するトランザクション コードにマップします。  このマッピング プロセスは、[**取引コード マッピング**] ページを使用を使用して実行されます。  トランザクション コードのマッピングは、銀行ごと個別に完了します。
 
 ## <a name="matching-rules-and-matching-rule-sets"></a>照合ルールおよび照合ルール セット
-照合ルールによって、Dynamics 365 for Operations 銀行トランザクションと口座取引明細書トランザクションとの間の自動調整の基準を定義できます。  照合ルールの設定は、[**調整照合ルール**] ページで行います。  詳細については、「[Set up bank reconciliation matching rules](set-up-bank-reconciliation-matching-rules.md)」を参照してください。 
+照合ルールによって、Dynamics 365 for Operations 銀行トランザクションと口座取引明細書トランザクションとの間の自動調整の基準を定義できます。  照合ルールの設定は、[**調整照合ルール**] ページで行います。  詳細については、「[口座調整照合ルールの設定](set-up-bank-reconciliation-matching-rules.md)」を参照してください。 
 
 照合ルール セットを使用して、口座調整プロセス中に順番に実行する照合ルールのグループを定義します。  照合ルール セットは、[**調整照合ルール セット**] ページで構成されています。
 

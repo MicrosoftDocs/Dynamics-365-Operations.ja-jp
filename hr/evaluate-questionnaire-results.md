@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: a76ec0cd86bcc810b42ae3cd8efd8a584e6c4da3
-ms.openlocfilehash: bcf59ea8862280675c9fb711d2aab1e8dff18806
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 0285103ef30ebf8322f2bf60941b07c7496e9c70
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="view-and-evaluate-the-results-of-a-questionnaire"></a>アンケートの結果を表示および評価
+
+[!include[banner](includes/banner.md)]
+
 
 このトピックは、回答者が完了したアンケートの結果を表示および評価する方法を説明します。 
 
@@ -56,7 +60,8 @@ ms.lasthandoff: 03/31/2017
 -   **回答集計レポート** – このレポートには、回答者がアンケートの各質問に対して選択した回答を表示します。
 -   **誤回答** – このレポートには、回答者が選択した誤回答に関連付けられる情報を表示します。
 
-**メモ:** **結果**レポートは、アンケートの結果グループを使用し、[**アンケート**] ページで [**結果ページ**] を選択している場合にのみ使用できます。 **回答集計**レポートと**誤回答**レポートは [**アンケート**] ページで [**回答集計レポート**] を選択している場合にのみ使用できます。
+> **メモ**
+>   **結果** レポートは、アンケートの結果グループを使用し、**アンケート** ページで **結果** ページを選択している場合にのみ使用できます。 **回答集計**レポートと**誤回答**レポートは [**アンケート**] ページで [**回答集計レポート**] を選択している場合にのみ使用できます。
 
 ## <a name="questionnaire-statistics"></a>アンケートの統計情報
 定義した計算が基にしたアンケート統計では、完了したアンケートの結果を分析できます。 計算を定義するには、次の作業を行う必要があります。
@@ -79,5 +84,7 @@ ms.lasthandoff: 03/31/2017
 [アンケートの使用](questionnaires.md)
 
 [アンケートの配布および記入](distribute-questionnaires.md)
+
+
 
 

@@ -1,16 +1,16 @@
 ---
 title: "財務諸表デザイナーでの行の定義"
 description: "行定義は、財務レポートの各行の内容を指定する、レポート コンポーネントまたは構成要素です。 行定義は、複数の会社が使用できる構成要素グループを作成するために、列定義、レポート ツリー定義およびレポートの定義と組み合わせることができます。"
-author: RobinARH
+author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-03-18 15 - 42 - 39
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
 ms.technology: 
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: RobinARH
+ms.reviewer: ShylaThompson
 ms.search.scope: Management Reporter, Core
 ms.custom: 68873
 ms.assetid: 2fd7b5da-700f-48cb-9003-90c0d82f818f
@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-translationtype: Human Translation
-ms.sourcegitcommit: 4d6cf88788dcc5e982e509137aa444a020137a5e
-ms.openlocfilehash: a2f92effd1cfdc1d5da2c5ec895c0487a6fc82a4
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: aa9fcc4d0c122d2355362b75ca210af4c2ef4338
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="row-definitions-in-financial-report-designer"></a>財務諸表デザイナーでの行の定義
+
+[!include[banner](../includes/banner.md)]
+
 
 行定義は、財務レポートの各行の内容を指定する、レポート コンポーネントまたは構成要素です。 行定義は、複数の会社が使用できる構成要素グループを作成するために、列定義、レポート ツリー定義およびレポートの定義と組み合わせることができます。
 
@@ -97,9 +101,9 @@ ms.lasthandoff: 03/29/2017
     -   [[**負債合計および資本の行**] – 負債合計および資本を含む貸借対照表の行の行コードです。
     -   [**調整金額の制限**] – 自動調整での制限に指定する正の整数です。 この金額は、実際の丸め誤差の絶対値と比較されます。
 
-    **注記: **これらの行コードは、財務データとリンクしている必要があります。 つまり、行の [**財務分析コードへのリンク**] セルには分析コード値が必要です。 説明 (**DESC**)、計算 (**CALC**)、または合計 (**TOT**) の行を参照**しない**でください。
+    **注記:**これらの行コードは、財務データとリンクしている必要があります。 つまり、行の [**財務分析コードへのリンク**] セルには分析コード値が必要です。 説明 (**DESC**)、計算 (**CALC**)、または合計 (**TOT**) の行を参照**しない**でください。
 
-丸めがオンの場合は、貸借対照表の金額が均等に釣り合います。 **注記: **調整の制限は、レポート定義に対して指定されている [**丸め精度**] オプションに基づいて適用されます。 たとえば、レポートで千の位で丸めるよう選択し [**調整金額の制限**] フィールドに「**2**」を入力すると、[**丸め調整行**] フィールドで識別された値が $2,000 単位で増加または減少した場合に警告メッセージが表示されます。
+丸めがオンの場合は、貸借対照表の金額が均等に釣り合います。 **注記:**調整の制限は、レポート定義に対して指定されている [**丸め精度**] オプションに基づいて適用されます。 たとえば、レポートで千の位で丸めるよう選択し [**調整金額の制限**] フィールドに「**2**」を入力すると、[**丸め調整行**] フィールドで識別された値が $2,000 単位で増加または減少した場合に警告メッセージが表示されます。
 
 ## <a name="format-row-and-column-text"></a>行および列のテキストの書式設定
 フォントを変更しテキストの書式を設定することにより、レポートの外観をカスタマイズできます。 次のセクションでは、レポートの行および列の外観の書式を設定する方法を説明します。
@@ -173,6 +177,8 @@ ms.lasthandoff: 03/29/2017
 <a name="see-also"></a>参照
 --------
 
-[Microsoft Dynamics 365 for Operations の財務レポート](financial-reporting-intro.md)
+[財務報告](financial-reporting-intro.md)
+
+
 
 

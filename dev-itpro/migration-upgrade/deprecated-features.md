@@ -3,7 +3,7 @@ title: "削除予定の機能"
 description: "このトピックでは、365 for Operations for Operations から削除された、または削除される予定の機能について説明します。 また、Dynamics AX 7.0 リリースで廃止された機能一覧も表示されます。"
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 04/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -15,16 +15,20 @@ ms.assetid: 31019808-4cbf-47d7-b1ba-d791db4281ae
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
-ms.dyn365.ops.version: Platform update 2
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: e9ba7239b9ff8b9b97c9dabc06fb2c68760d19d4
-ms.lasthandoff: 03/31/2017
+ms.dyn365.ops.version: Platform update 6
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 8fbfc8c91c836eb9922f2bf1165ec887d8a0bc8e
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="deprecated-features"></a>削除予定の機能
+
+[!include[banner](../includes/banner.md)]
+
 
 このトピックでは、365 for Operations for Operations から削除された、または削除される予定の機能について説明します。 また、Dynamics AX 7.0 リリースで廃止された機能一覧も表示されます。
 
@@ -312,7 +316,7 @@ Telepay の支払形式には、仕入先支払のエクスポート (銀行口�
 
 ### <a name="aif-axd-and-axbc-integrations"></a>AIF、AxD、および AxBC の統合
 
-アプリケーション統合フレームワーク (AIF) では、サービスとして公開されるビジネス ロジックによって外部のシステムとデータを交換できます。 Dynamics AX には、ドキュメントと .NET Business Connector (AxBC) に基づくサービスが含まれます。 ドキュメントは、XML で作成されます。 XML には、Dynamics AX で送受信可能な*メッセージ*を作成するために追加されるヘッダー情報が含まれます。 ドキュメントの例は、販売注文と発注書です。 ただし、顧客などほぼすべてのエンティティの場合を、1 つのドキュメントで表すことができます。 ドキュメントに基づくサービスは、**Axd &lt;*Document*&gt;** クラスを使用します。
+アプリケーション統合フレームワーク (AIF) では、サービスとして公開されるビジネス ロジックによって外部のシステムとデータを交換できます。 Dynamics AX には、ドキュメントと .NET Business Connector (AxBC) に基づくサービスが含まれます。 ドキュメントは、XML で作成されます。 XML には、Dynamics AX で送受信可能な*メッセージ*を作成するために追加されるヘッダー情報が含まれます。 ドキュメントの例は、販売注文と発注書です。 ただし、顧客などほぼすべてのエンティティの場合を、1 つのドキュメントで表すことができます。 ドキュメントに基づくサービスは、**Axd &lt;*ドキュメント*&gt;** クラスを使用します。
 
 |                              |                                                                                                                                                                                                          |
 |------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -473,6 +477,16 @@ ICMS の税金の連邦税明細書
 | 減価償却の理由       | Dynamics AX クライアントのエクスペリエンスは、複数のプラットフォームおよびデバイスでの使いやすさを改善するために再設計されました。                      |
 | 別の機能での置き換え? | 新しい Web クライアントは、豊富な Web プラットフォームを提供するために変更されたデスクトップ フォーム メタデータおよびプログラミング モデルに基づいています。 |
 | 影響を受けるモジュール             | すべて                                                                                                                                    |
+
+### <a name="direct-database-connection"></a>データベース ダイレクト接続
+
+Dynamics AX 2012 R3 では、Retail Modern POS は Enterprise POS と同様に Channel DB に直接接続できます。 これは、Retail Server を介して通信する Retail Modern POS の標準的な通信方法に追加されたものです。  
+
+|                              |                                                                                         |
+|------------------------------|-----------------------------------------------------------------------------------------|
+| 減価償却の理由       | データベースのダイレクト接続には、より低いセキュリティ プロトコルが必要でしたが、最高レベルのパフォーマンスを達成するために主に使用されていました。 Dynamics 365 for Operations で発生したパフォーマンスとセキュリティの強化により、この機能は現在解決している以上の問題を引き起こしています。 |
+| 別の機能での置き換え? | 一連番号 標準の Retail サーバー通信のみがサポートされるようになりました。    |
+| 影響を受けるモジュール             | チャンネル DB/Retail Modern POS                                    |
 
 ### <a name="dutch-swift-mt940"></a>オランダ SWIFT MT940
 
@@ -661,8 +675,18 @@ Microsoft Dynamics AX 2012 は、「未実現税」に対するメキシコ固�
 |                              |                                                                               |
 |------------------------------|-------------------------------------------------------------------------------|
 | 減価償却の理由       | Dynamics AX の現在のバージョンでは、実行時間でのラベルの変更はサポートされません。 |
-| 別の機能での置き換え? | 第        条                                                                            |
+| 別の機能での置き換え? | 無                                                                            |
 | 影響を受けるモジュール             | 製品情報管理                                                |
+
+### <a name="retail-server-connectivity-using-http"></a>HTTP を使用した Retail Server 接続
+
+Dynamics AX 2012 R3 では Retail サーバーは、HTTP 通信 (保護されていない) を使用して機能します。 これは、HTTPS を使用した標準の通信に追加したものです。
+
+|                              |                                                                               |
+|------------------------------|-------------------------------------------------------------------------------|
+| 減価償却の理由       | 新しいセキュリティ要件のため、TLS 1.2 以上を使用したセキュリティ保護された通信だけがサポートされるようになりました。 セルフ サービス インストーラーは、このような通信のコンピューターを自動的に設定します。 |
+| 別の機能での置き換え? | 一連番号 標準の HTTPS 通信のみがサポートされるようになりました。                                                                           |
+| 影響を受けるモジュール             | Retail サーバー                                                |
 
 ### <a name="role-center-pages"></a>ロール センター ページ
 
@@ -784,6 +808,8 @@ Microsoft Dynamics AX 2012 は、「未実現税」に対するメキシコ固�
 | 減価償却の理由       | この機能は、別の機能で置き換えられました。                                    |
 | 別の機能での置き換え? | Management Reporter (Dynamics AX の現在のバージョンでは**財務報告**となっています) |
 | 影響を受けるモジュール             | 一般会計                                                                              |
+
+
 
 
 

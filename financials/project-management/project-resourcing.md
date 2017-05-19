@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: cmercado
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: eb32cf1b96dfef75131b8c7541e20a93615a87f7
-ms.openlocfilehash: c29c95fc6abd13e668c44d3ccf437bb0e879e46b
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 11755e4ab4b3c1f55da80e57ff96e0b13c84c697
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -316,7 +317,7 @@ ms.lasthandoff: 03/31/2017
 
 > [!NOTE] 
 > 指定されたリソースが現在 2 の場合、リソース数が 1 のままのため、警告は表示されません。
-18. [**作業分解構造 **] ページで、WBS のリソース割り当てを検証し、[**保存**] をクリックします。
+18. [**作業分解構造**] ページで、WBS のリソース割り当てを検証し、[**保存**] をクリックします。
 
 ## <a name="resource-fulfillment-for-planned-resources"></a>計画されているリソースのリソースの履行
 プロジェクト マネージャは、プロジェクトの必要なリソース ロールを計画できます。 リソース マネージャーは、[**リソースの履行**] ページで、これらの計画されているリソースを要求として参照し、実際のリソースを割り当てることができます。

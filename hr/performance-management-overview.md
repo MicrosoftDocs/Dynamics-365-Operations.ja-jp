@@ -16,10 +16,11 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 81b5c9056001b26c33b2b42a95711ff5b50243e6
-ms.openlocfilehash: 4bd934091c80ab9a4d244499d2bce2c4646c3e99
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 769680aff8c018bc042ffce98ee50a9760a65fcf
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -134,7 +135,7 @@ Worker Review ワークフローを使用して確認の承認をコントロー
 
 Worker Review ワークフローには 2 つの要素があります:
 
-1.  確認を承認。 この要素を追加して、[**処理中**] から [**Ready for review**] へのステータスの変更をコントロールします。 Employee.line manager level = 1 の管理階層を使用するように割り当てを変更します。
+1.  確認を承認。 この要素を追加して、[**処理中**] から [**確認準備完了**] へのステータスの変更をコントロールします。 Employee.line manager level = 1 の管理階層を使用するように割り当てを変更します。
 2.  最終確認。 この要素を追加して、[**確認準備完了**] から [**最終確認**] へのステータスの変更を制御します。 管理者に最終確認を承認させたい場合、Employee.line manager level = 1 の管理階層を使用するように割り当てを変更します。 従業員が承認する場合は、ワークフロー ユーザーに割り当てを変更します。 管理者と従業員の両方が承認する場合は、ワークフローに 2 つのステップを追加して、承認に従う順序のステップごとに適切な割り当てをします。
 
 ## <a name="setup"></a>段取り

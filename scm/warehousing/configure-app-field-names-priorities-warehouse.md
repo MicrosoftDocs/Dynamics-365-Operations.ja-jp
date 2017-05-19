@@ -18,10 +18,11 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: f77012e7b64b7f153103e9bbe91e8ded202b509a
-ms.openlocfilehash: ce8f6d6f7090995bc44db1ba0103a7d6c0416620
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 73fcc19b9ee17a691206019efbff29c4967f4e2f
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -33,7 +34,7 @@ ms.lasthandoff: 03/31/2017
 
 このトピックでは、Dynamics 365 for Operations の倉庫アプリ フィールド名と優先順位の定義およびコンフィギュレーション方法について説明します。 
 
-**注記:** このトピックは、倉庫管理の機能に適用されます。 在庫管理の機能には適用しません。 Microsoft Dynamics 365 for Operations - Warehousing は倉庫作業の実行に使用できるアプリケーションです。 アプリで使用されるフィールド名を定義してコンフィギュレーションし、フィールド名に割り当てる優先順位をフィールド名をコンフィギュレーションできます。 このトピックでは、これらの倉庫アプリ フィールド名と優先順位の定義およびコンフィギュレーション方法、および Dynamics 365 for Operations - Warehousing での使用方法について説明します。 Dynamics 365 for Operations - Warehousing への接続をコンフィギュレーションする方法の詳細については、チュートリアル「[Install and configure Dynamics 365 for Operations - Warehousing](install-configure-warehousing-app.md)」を参照してください。
+**注記:** このトピックは、倉庫管理の機能に適用されます。 在庫管理の機能には適用しません。 Microsoft Dynamics 365 for Operations - Warehousing は倉庫作業の実行に使用できるアプリケーションです。 アプリで使用されるフィールド名を定義してコンフィギュレーションし、フィールド名に割り当てる優先順位をフィールド名をコンフィギュレーションできます。 このトピックでは、これらの倉庫アプリ フィールド名と優先順位の定義およびコンフィギュレーション方法、および Dynamics 365 for Operations - Warehousing での使用方法について説明します。 Dynamics 365 for Operations - Warehousing への接続をコンフィギュレーションする方法の詳細については、チュートリアル「[Dynamics 365 for Operations – Warehousing のインストールと構成](install-configure-warehousing-app.md)」を参照してください。
 
 <a name="configure-warehouse-app-field-names"></a>倉庫アプリ フィールド名のコンフィギュレーション
 ===================================
@@ -140,7 +141,7 @@ Dynamics 365 for Operations - Warehousing をモバイル デバイスで使用�
 -   行 2: 品目の説明
 -   行 3 : サイズ
 
-場所などの残りのメタデータは、タスク ページに表示されませんが、詳細ページに表示されます。 ユーザー インターフェイスの詳細や例については、ブログ投稿「[Announcing Dynamics 365 for Operations - Warehousing](https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/)」を参照してください。
+場所などの残りのメタデータは、タスク ページに表示されませんが、詳細ページに表示されます。 ユーザー インターフェイスの詳細や例については、ブログ投稿「[Dynamics 365 for Operations - Warehousing の発表](https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/)」を参照してください。
 
 <a name="see-also"></a>参照
 --------

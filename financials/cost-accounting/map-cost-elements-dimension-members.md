@@ -1,9 +1,9 @@
 ---
-title: "異なる原価要素分析コード メンバーに、分析コード メンバーの共通セットをマップします。"
+title: "分析コード メンバーの共通セットに対する原価要素分析コード メンバーのマップ"
 description: "異なる原価要素分析コード メンバーに、原価要素分析コード メンバーの共通セットをマッピングすると、分析に使用する共通の形式でデータをマージします。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-11-01 13 - 45 - 07
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,15 +17,19 @@ ms.search.region: global
 ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: a1e9817b6ee596ad516531d7597a2a39e115749c
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 24794f371e1914f8466cd9a7407fd263e94b00aa
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
-# <a name="map-different-cost-element-dimension-members-to-a-common-set-of-dimension-members"></a>異なる原価要素分析コード メンバーに、分析コード メンバーの共通セットをマップします。
+# <a name="map-cost-element-dimension-members-to-a-common-set-of-dimension-members"></a>分析コード メンバーの共通セットに対する原価要素分析コード メンバーのマップ
+
+[!include[banner](../includes/banner.md)]
+
 
 異なる原価要素分析コード メンバーに、原価要素分析コード メンバーの共通セットをマッピングすると、分析に使用する共通の形式でデータをマージします。
 
@@ -48,5 +52,7 @@ ms.lasthandoff: 03/31/2017
 
 ## <a name="update-mappings-at-any-time"></a>いつでもマッピングを更新
 いつでも原価要素分析コードのためのマッピングの定義を更新できます。 マッピングは、日付が有効ではないので、変更は次回原価トランザクションを処理、または原価計算を実行の時に適用されます。
+
+
 
 

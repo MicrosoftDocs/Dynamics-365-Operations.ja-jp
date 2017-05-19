@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: d13747f17b5f382b3a530b1f166681eeec0b9d73
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: d1581213bafdebf318decf035282c11ebfddde75
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -113,7 +114,7 @@ ms.lasthandoff: 03/31/2017
 [**財務報告**] メニューをクリックすると、会社の既定の財務レポートの一覧が表示されます。 これにより、レポートを開くおよび変更できます。 既定のレポートの 1 つを開くには、レポートの名前を選択します。 レポートを初めて開くと、前の月のレポートが自動的に生成されます。 たとえば、2016 年 8 月にレポートを初めて開くと、2016 年 7 月 31 日のレポートが生成されます。 レポートを開いた後、データの特定の部分をドリルダウンしたり、レポート オプションを変更することによりレポートの検討を開始できます。
 
 ## <a name="creating-and-modifying-financial-reports"></a>財務レポートの作成および変更
-財務報告リストから、新しいレポートを作成するか、既存のレポートを変更できます。 適切なアクセス許可が付与されると、[アクション] ウィンドウの [**新規**] をクリックして新しい財務諸表を作成できます。 レポート デザイナー プログラムがデバイスにダウンロードされます。 レポート デザイナー プログラムを起動すると、新しいレポートを作成できます。 新しいレポートは保存した後、財務報告リストに表示されます。 このリストには、Dynamics 365 for Operations で使用している会社に対して作成されたレポートだけが表示されます。 Dynamics 365 for Operations での財務諸表の作成および変更のプロセスの詳細については、Dynamics 財務報告ブログのこれらの [blog posts](https://blogs.msdn.microsoft.com/dynamics_financial_reporting/tag/learning/) を参照してください。 **注記:** レポート デザイナーのクライアントをダウンロードしているコンピューターには、Microsoft .NET Framework のバージョン 4.6.2 がインストールされている必要があります。 このバージョンの Microsoft .NET Framework は、[here](https://www.microsoft.com/en-us/download/details.aspx?id=53345) からダウンロードしてインストールできます。 Chrome を使用している場合、レポート デザイナーのクライアントをダウンロードするために ClickOnce 拡張機能をインストールする必要があります。 匿名モードで起動している場合、ClickOnce の拡張機能が匿名モードに対して有効化されていることを確認します。 財務報告リストに表示されるレポートは変更できます。 レポート名の周りの領域が選択されている場合、[アクション] ウィンドウの [**編集**] をクリックします。 レポート デザイナー プログラムが開始されます。
+財務報告リストから、新しいレポートを作成するか、既存のレポートを変更できます。 適切なアクセス許可が付与されると、[アクション] ウィンドウの [**新規**] をクリックして新しい財務諸表を作成できます。 レポート デザイナー プログラムがデバイスにダウンロードされます。 レポート デザイナー プログラムを起動すると、新しいレポートを作成できます。 新しいレポートは保存した後、財務報告リストに表示されます。 このリストには、Dynamics 365 for Operations で使用している会社に対して作成されたレポートだけが表示されます。 Dynamics 365 for Operations での財務諸表の作成および変更のプロセスの詳細については、Dynamics 財務報告ブログのこれらの [blog posts](https://blogs.msdn.microsoft.com/dynamics_financial_reporting/tag/learning/) を参照してください。 **注記:** レポート デザイナーのクライアントをダウンロードしているコンピューターには、Microsoft .NET Framework のバージョン 4.6.2 がインストールされている必要があります。 このバージョンの Microsoft .NET Framework は、[ここ](https://www.microsoft.com/en-us/download/details.aspx?id=53345) からダウンロードしてインストールできます。 Chrome を使用している場合、レポート デザイナーのクライアントをダウンロードするために ClickOnce 拡張機能をインストールする必要があります。 匿名モードで起動している場合、ClickOnce の拡張機能が匿名モードに対して有効化されていることを確認します。 財務報告リストに表示されるレポートは変更できます。 レポート名の周りの領域が選択されている場合、[アクション] ウィンドウの [**編集**] をクリックします。 レポート デザイナー プログラムが開始されます。
 
 <a name="see-also"></a>参照
 --------

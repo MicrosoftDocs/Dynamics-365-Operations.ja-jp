@@ -3,7 +3,7 @@ title: "SEPA 口座振替の概要"
 description: "この記事では、ISO 20022 口座振替に関する一般情報を提供します。これは単一ユーロ支払地域 (SEPA) 口座振替および仕入先に対するそのほかの電子支払を含みます。 SEPA 口座振替は、1 つの会社または個人から別の会社または個人に対する、ユーロでの特定のタイプの支払です。 このトピックは、口座振替の支払ファイルを設定して送信する方法も説明します。"
 author: twheeloc
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,15 +17,19 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 4d6cf88788dcc5e982e509137aa444a020137a5e
-ms.openlocfilehash: 848df5e3898f37284d7746c59bff8b38d35ac883
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: f7adaf2f3a14d2c0e094314f0b36b5d4bdb0a65c
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="sepa-credit-transfer-overview"></a>SEPA 口座振替の概要
+
+[!include[banner](../includes/banner.md)]
+
 
 この記事では、ISO 20022 口座振替に関する一般情報を提供します。これは単一ユーロ支払地域 (SEPA) 口座振替および仕入先に対するそのほかの電子支払を含みます。 SEPA 口座振替は、1 つの会社または個人から別の会社または個人に対する、ユーロでの特定のタイプの支払です。 このトピックは、口座振替の支払ファイルを設定して送信する方法も説明します。
 
@@ -55,7 +59,7 @@ SEPA 口座振替は、個人または 1 つの会社から別の会社または
 必要に応じていつでも Microsoft Dynamics Lifecycle services (LCS) の共有アセット ライブラリに移動して、**GER コンフィギュレーション**資産タイプのある利用可能なファイルで最新の一覧を表示する必要があります。 次のセクション、"何を設定する必要がありますか。"では、利用可能なコンフィギュレーションおよびインポート選択されているコンフィギュレーションを表示するための LCS リポジトリの作成方法について説明するトピックへのリンクを提供します。
 
 ## <a name="what-do-i-have-to-set-up"></a>何を設定する必要がありますか。
--   口座振替ファイルを作成する前に、少なくとも 1 つの有効な口座振替コンフィギュレーションを、ER コンフィギュレーションにインポートする必要があります。 手順については、[Lifecycle Services の電子申告コンフィギュレーションのダウンロード](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs)を参照してください。
+-   口座振替ファイルを作成する前に、少なくとも 1 つの有効な口座振替コンフィギュレーションを、ER コンフィギュレーションにインポートする必要があります。 手順については、[Lifecycle Services の電子申告コンフィギュレーションのダウンロード](/dynamics365/operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs)を参照してください。
 -   支払の買掛金勘定の方法をコンフィギュレーションするときに、**一般的な電子申告** チェック ボックスをオンにし、エクスポート形式のコンフィギュレーションとして適切な口座振替形式 (たとえば、**ISO 20022 口座振替 (AT)**) を選択します。
 -   Dynamics 365 for Operations で法人および銀行口座情報を設定する必要があります。
 -   銀行口座番号、IBAN、および時にはSWIFT コード (BICs) または他の ID が、有効な口座振替の支払を作成するため必要になります。 したがって、仕入先の銀行口座および振込を要求する組織の銀行口座用にそれらを設定する必要があります。
@@ -121,5 +125,7 @@ SEPA 口座振替は、個人または 1 つの会社から別の会社または
 
 ## <a name="how-do-i-transmit-a-payment-file-to-the-bank"></a>支払ファイルはどのように銀行に送信しますか。
 支払を生成すると、支払ファイルが生成され、Web ブラウザから使用可能な場所に保存するよう求められます。 次の手順として、銀行へ XML ファイルを送信します。 このプロセスは、銀行によって異なります。 銀行の指示に従って、処理用のファイルを銀行に送信します。
+
+
 
 

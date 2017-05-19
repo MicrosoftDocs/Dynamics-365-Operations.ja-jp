@@ -3,7 +3,7 @@ title: "スタート地点"
 description: "Microsoft Dynamics 365 for Operations UI を素早く導入して学習するにはここから開始します。"
 eauthor: sericks007
 manager: AnnBe
-ms.date: 2015-12-11 15 - 19 - 40
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,15 +18,19 @@ o# ms.search.industry:
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: f707d45290682e79ee439ba0d504852429defa90
-ms.openlocfilehash: 8f75131c6be6ce0f23cce456405d5e211912f19a
-ms.lasthandoff: 03/30/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 69995d2f8a463e82e7a26b673737889b4ea17402
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="where-to-start"></a>スタート地点
+
+[!include[banner](../includes/banner.md)]
+
 
 Microsoft Dynamics 365 for Operations UI を素早く導入して学習するにはここから開始します。
 
@@ -36,7 +40,7 @@ Microsoft Dynamics 365 for Operations UI を素早く導入して学習するに
 - [Microsoft FastTrack for Dynamics 365 概要](/dynamics365/operations/get-started/fasttrack-dynamics-365-overview) 
 - [サブスクリプションのサインアップ](../dev-tools/sign-up-preview-subscription.md) 
 - [ Microsoft Dynamics 365 for Operations 顧客向け Lifecycle Services (LCS)](../lifecycle-services/lcs-works-lcs.md) 
-- [クラウドのサービス プロバイダを使用して、Microsoft Dynamics 365 for Operations を購入した顧客が、オンプレミス バージョンの Dynamics 365 for Operations 2012 を取得できる方法](../deployment/csp-download-customersource.md)
+- [クラウドのサービス プロバイダを使用して Microsoft Dynamics 365 for Operations を購入した顧客が、オンプレミス バージョンの Dynamics AX 2012 を取得できる方法](../deployment/csp-download-customersource.md)
 
 ## <a name="user-interface"></a>ユーザー インターフェイス
 次のリソースでは、Dynamics 365 for Operations のユーザー インターフェイスに関する情報を提供します。 
@@ -71,12 +75,12 @@ Microsoft Dynamics 365 for Operations UI を素早く導入して学習するに
 <a name="see-also"></a>参照
 --------
 
-[タスク レコーダー (外部リンク) を使用してライフ サイクル サービス内での Dynamics 365 for Operations のトレーニングの新しいライブラリを作成](https://docs.com/mufife/163372c6-f366-4c5a-94fa-93e2c25f878a/creating-new-training-libraries-for-dynamics-ax)
-
 [新しいタスク ガイド (2016 年 2 月)](new-task-guides-available-february-2016.md)
 
 [新規または更新されたタスク ガイド (2016 年 5 月)](new-updated-task-guides-available-may-2016.md)
 
 [新規または更新されたタスク ガイド (2016 年 11 月)](new-task-guides-november-2016.md)
+
+
 
 

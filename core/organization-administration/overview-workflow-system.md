@@ -1,9 +1,9 @@
 ---
 title: "ワークフロー システムの概要"
-description: "この記事では、Microsoft Dynamics 365 for Operations のワークフロー システムについて説明します。"
+description: "このトピックでは、Microsoft Dynamics 365 for Operations のワークフロー システムについて説明します。"
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 04/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -16,10 +16,11 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: 08c36f02f88fef7508730b6c01a1c99a0f77fb0c
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 5432e67ffa41e6a38b19c9fe5bb12c5acb2c345c
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -29,7 +30,7 @@ ms.lasthandoff: 03/31/2017
 [!include[banner](../includes/banner.md)]
 
 
-この記事では、Microsoft Dynamics 365 for Operations のワークフロー システムについて説明します。
+このトピックでは、Microsoft Dynamics 365 for Operations のワークフロー システムについて説明します。
 
 <a name="what-is-workflow"></a>ワークフローについて
 -----------------
@@ -41,9 +42,13 @@ ms.lasthandoff: 03/31/2017
 
 ### <a name="workflow-is-a-business-process"></a>業務プロセスとしてのワークフロー
 
-1 つのワークフローは 1 つの業務プロセスを表します。 ここでは、タスクを完了し、決定を下し、ドキュメントを承認するユーザーを示すことによって、システムにおけるドキュメントの流れ (移動) を定義します。 たとえば、次の図は経費精算書のワークフローを示しています。 ![ユーザーに割り当てられた要素を含むワークフロー](./media/workflow_user.gif) このワークフローをわかりやすくするため、Sam が 7,000 USD の経費精算書を送信したと仮定します。 このシナリオでは、Sam から送られた領収書を Ivan が確認する必要があります。 その後、Frank と Sue が経費精算書を承認する必要があります。 次に、Sam が USD 11,000 の経費精算書を送信したとします。 このシナリオでは、Ivan が領収書を確認する必要があり、Frank、Sue、および Ann が経費精算書を承認する必要があります。
-ワークフロー システムを使用する利点
--------------------------------------
+1 つのワークフローは 1 つの業務プロセスを表します。 ここでは、タスクを完了し、決定を下し、ドキュメントを承認するユーザーを示すことによって、システムにおけるドキュメントの流れ (移動) を定義します。 たとえば、次の図は経費精算書のワークフローを示しています。 
+
+![ユーザーに割り当てられた要素を含むワークフロー](./media/workflow_user.gif) 
+
+このワークフローをよりよく理解するため、Sam が USD 7,000 の経費精算書を送信したと仮定します。 このシナリオでは、Sam から送られた領収書を Ivan が確認する必要があります。 その後、Frank と Sue が経費精算書を承認する必要があります。 次に、Sam が USD 11,000 の経費精算書を送信したとします。 このシナリオでは、Ivan が領収書を確認する必要があり、Frank、Sue、および Ann が経費精算書を承認する必要があります。
+
+## <a name="benefits-of-using-the-workflow-system"></a>ワークフロー システムを使用する利点
 
 組織でワークフロー システムを使用することにはいくつかの利点があります。
 -   **一貫したプロセス** - 購買要求や経費報告書などの特定のドキュメントをどのように処理するか定義できます。 ワークフロー システムを使用することで、ドキュメントが一貫した方法で効率的に処理および承認されます。
@@ -51,6 +56,20 @@ ms.lasthandoff: 03/31/2017
 -   **集中化された作業一覧** – ユーザーは、集中化された作業一覧を表示して、自分に割り当てられているワークフロー タスクおよび承認を確認できます。
 
 
+## <a name="workflow-content"></a>ワークフロー コンテンツ
 
-
++ [ワークフロー アーキテクチャ](workflow-system-architecture.md)
++ [ワークフロー要素](workflow-elements.md)
++ [ワークフロー アクション](workflow-actions.md)
++ [ワークフローの作成](create-workflow.md)
++ [ワークフロー プロパティのコンフィギュレーション](configure-workflow-properties.md)
++ [ワークフローでの手動タスクのコンフィギュレーション](configure-manual-task-workflow.md)
++ [ワークフローでの自動化タスクのコンフィギュレーション](configure-automated-task-workflow.md)
++ [ワークフローでの承認プロセスのコンフィギュレーション](configure-approval-process-workflow.md)
++ [ワークフローでの承認ステップのコンフィギュレーション](configure-approval-step-workflow.md)
++ [ワークフローでの手動決定のコンフィギュレーション](configure-manual-decision-workflow.md)
++ [ワークフローでの条件付き意思決定のコンフィギュレーション](configure-conditional-decision-workflow.md)
++ [ワークフローでの並列活動のコンフィギュレーション](configure-parallel-activity-workflow.md)
++ [ワークフローでの並列分岐コンフィギュレーション](configure-parallel-branch-workflow.md)
++ [品目ワークフローのコンフィギュレーション](configure-line-item-workflow.md)
 

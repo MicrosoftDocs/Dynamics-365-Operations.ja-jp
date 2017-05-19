@@ -1,6 +1,6 @@
 ---
 title: "クラウドの POS と MPOS の拡張ログオン機能の設定"
-description: "この wiki では、クラウド POS と Retail Modern POS (MPOS) の拡張ログオンを設定するためのオプションについて説明します。"
+description: "このトピックでは、クラウド POS と Retail Modern POS (MPOS) の拡張ログオンを設定するためのオプションについて説明します。"
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 92353
 ms.assetid: 7473e237-fbc8-41d5-8ba0-920242747488
 ms.search.region: global
@@ -17,17 +17,21 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: 0dc80784a5c9a7de6009826284cb68f1aee83f70
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 6b1f91f863c8da35362ebb3036e76aa10d95ba65
+ms.openlocfilehash: 499fd5947a96f4a44f09883d5dd0d6124758e47a
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/26/2017
 
 
 ---
 
 # <a name="set-up-extended-logon-functionality-for-cloud-pos-and-mpos"></a>クラウドの POS と MPOS の拡張ログオン機能の設定
 
-この wiki では、クラウド POS と Retail Modern POS (MPOS) の拡張ログオンを設定するためのオプションについて説明します。
+[!include[banner](includes/banner.md)]
+
+
+このトピックでは、クラウド POS と Retail Modern POS (MPOS) の拡張ログオンを設定するためのオプションについて説明します。
 
 <a name="setting-up-extended-logon"></a>拡張ログオンの設定
 =========================
@@ -69,5 +73,7 @@ ms.lasthandoff: 03/31/2017
 ====================
 
 拡張ログオンを構成すると、作業者にバーコードまたは磁気ストライプが割り当てられ、作業者は POS ログオン ページが表示されている間に、自分のカードを読み取るか、またはスキャンする必要があります。 ログオンを続行する前にパスワードが必要な場合、作業者は自分のパスワードを入力するように要求されます。
+
+
 
 

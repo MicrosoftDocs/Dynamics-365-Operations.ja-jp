@@ -16,10 +16,11 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ef99caf4570969d2b920cec8b53669ce2094965
-ms.openlocfilehash: a7b72dfa98758b14d303d09890bd46729b1cdbe9
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 54bd0296d2569c38fccd0ff13a2316cb18466675
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -44,7 +45,7 @@ ms.lasthandoff: 03/31/2017
 -   財務報告を使用して期末財務諸表を生成します。
 -   他の転記が発生しないように、元帳期間を [**保留中**] に設定します。 期末の活動の実行中に、使いやすさのため、期を特定のユーザー グループに制限できます。 決算済みの期間を再度開くことはできないため、期間を [**完全に閉じる**] に設定するのは、よい考えではありません。
 
-財務期間終了ワークスペースを使用して、さまざまな期末処理プロセスに必要なタスクを整理して追跡できます。 詳細については、「[Financial period close workspace](financial-period-close-workspace.md)」および「[Year end close](Year-end-close.md)」のトピックを参照してください。 
+財務期間終了ワークスペースを使用して、さまざまな期末処理プロセスに必要なタスクを整理して追跡できます。 詳細については、「[財務期間終了ワークスペース](financial-period-close-workspace.md)」および「[年度末決算](Year-end-close.md)」のトピックを参照してください。 
 
 
 

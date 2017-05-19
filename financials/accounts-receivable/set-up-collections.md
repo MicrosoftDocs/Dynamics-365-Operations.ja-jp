@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 2cb439e871d57f74c296697cfc42705fb0121bb7
-ms.openlocfilehash: 1a9bf1067d0f6e0e139ef13d939d2f0e9bf2126b
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 8dd5cc110e83e1b10db233547b0ac2081cc6c380
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -77,7 +78,7 @@ ms.lasthandoff: 03/31/2017
 NSF 支払が [**回収**] ページで指定される時に、正しい仕訳が含まれるように銀行口座を更新します。 [**通貨管理**] タブの [**NSF 支払仕訳帳**] フィールドで、支払仕訳帳を選択します。
 
 ## <a name="set-up-outlook-settings-for-users-of-the-collections-page"></a>回収ページのユーザーの Outlook 設定のセットアップ
-[**回収**] ページを使用して作業者が活動を作成したり、電子メール メッセージを送信する前に、[**Microsoft Outlook synchronization**] コンフィギュレーション キーが選択されていることと、Outlook の同期がこれらの作業者に対して設定されていることを確認する必要があります。
+[**回収**] ページを使用して作業者が活動を作成したり、電子メール メッセージを送信する前に、[**Microsoft Outlook の同期**] コンフィギュレーション キーが選択されていることと、Outlook の同期がこれらの作業者に対して設定されていることを確認する必要があります。
 
 ## <a name="set-up-email-and-address-settings-for-collections-customer-contacts"></a>回収の顧客連絡先の電子メールとアドレスの設定のセットアップ
 [**回収**] ページから顧客連絡先に電子メール メッセージを送信する場合は、それらの連絡先の電子メール アドレスを設定します。 回収連絡先は、[**回収**] ページで既定の連絡先として使用されます。 明細書の住所を基本住所以外の住所にする必要がある場合は、顧客の明細書の住所を設定できます。 

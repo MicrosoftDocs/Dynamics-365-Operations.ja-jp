@@ -3,7 +3,7 @@ title: "製品コンフィギュレーション モデルでの式の制約と�
 description: "このトピックでは、式の制約およびテーブル制約の使用について説明します。 制約は、販売注文、販売見積、発注書、または製造オーダーのための製品をコンフィギュレーションするときに選択できる属性値を制御します。 制約の作成方法に基づいて、式の制約またはテーブル制約を使用できます。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-02-24 15 - 08 - 06
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,15 +18,19 @@ ms.search.industry: Manufacturing
 ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: f707d45290682e79ee439ba0d504852429defa90
-ms.openlocfilehash: 1fe8a0d90a3f707fa7b0fea0310c819ce5040a42
-ms.lasthandoff: 03/30/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 1a08f537d87178973b3ce90bcb60b891bef1141e
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="expression-constraints-and-table-constraints-in-product-configuration-models"></a>製品コンフィギュレーション モデルでの式の制約とテーブルの制約
+
+[!include[banner](../includes/banner.md)]
+
 
 このトピックでは、式の制約およびテーブル制約の使用について説明します。 制約は、販売注文、販売見積、発注書、または製造オーダーのための製品をコンフィギュレーションするときに選択できる属性値を制御します。 制約の作成方法に基づいて、式の制約またはテーブル制約を使用できます。 
 
@@ -42,7 +46,7 @@ ms.lasthandoff: 03/30/2017
 
 この例では、スピーカーのコンフィギュレーションを特定のキャビネットの仕上げと前グリルに限定する方法を示します。 最初の表には、コンフィギュレーションで一般に使用できるキャビネットの仕上げと前グリルを示します。 値は、**キャビネットの仕上げ**と**前グリル**の属性タイプで定義されます。
 
-| 属性タイプ | 値                      |
+| 属性の型 | 値                      |
 |----------------|-----------------------------|
 | キャビネットの仕上げ | 黒、カシ、シタン、白 |
 | 前グリル    | 黒、メタル、白         |
@@ -84,7 +88,7 @@ ms.lasthandoff: 03/30/2017
 (色 == "黒" & (サイズ == "30" | サイズ == "50")) | (色 == "赤" & サイズ = "20")
 
 ## <a name="should-i-use-operators-or-infix-notation-when-i-write-expression-constraints"></a>式の制約の記述時に使用するのは演算子かまたはインフィックス表記法か
-式の制約の記述には、使用可能なプレフィックス演算子か、またはインフィックス表記法のいずれかを使用できます。 演算子 **Min**、**Max**、および **Abs ** については、インフィックス表記法を使用できません。 これらの演算子は、ほとんどのプログラム言語に標準の演算子として含まれています。
+式の制約の記述には、使用可能なプレフィックス演算子か、またはインフィックス表記法のいずれかを使用できます。 演算子 **Min**、**Max**、および **Abs** については、インフィックス表記法を使用できません。 これらの演算子は、ほとんどのプログラム言語に標準の演算子として含まれています。
 
 ## <a name="what-operators-and-infix-notation-can-i-use-when-i-write-expression-constraints"></a>式の制約の記述には、どんな演算子やインフィックス表記法を使用できますか。
 次の表は、製品コンフィギュレーション モデル内のコンポーネントの式の制約を記述するときに使用できる演算子とインフィックス表記法を示します。 この最初のテーブルの例では、インフィックス表記法または演算子のいずれかを使用して式を記述する方法を示します。
@@ -248,5 +252,7 @@ ms.lasthandoff: 03/30/2017
 [式の制約の作成 (タスク ガイド)](http://ax.help.dynamics.com/en/wiki/create-an-expression-constraint/)
 
 [製品構成モデルへの計算の追加 (タスク ガイド)](http://ax.help.dynamics.com/en/wiki/add-a-calculation-to-a-product-configuration-model/)
+
+
 
 

@@ -3,7 +3,7 @@ title: "一般仕訳帳の処理"
 description: "この記事は、一般仕訳帳の処理を容易にすることができ、正確なデータがキャプチャされ内部コントロールが悪影響を受けていないことを保証する手助けとなる Microsoft Dynamics 365 for Operations の機能について説明します。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 04/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ef99caf4570969d2b920cec8b53669ce2094965
-ms.openlocfilehash: 50cd203025be8857de943e458fc32315e494fb7a
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: c020566928cecc15bd7de504164f5adbf34eda44
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -31,7 +32,7 @@ ms.lasthandoff: 03/31/2017
 [!include[banner](../includes/banner.md)]
 
 
-この記事は、一般仕訳帳の処理を容易にすることができ、正確なデータがキャプチャされ内部コントロールが悪影響を受けていないことを保証する手助けとなる Microsoft Dynamics AX の機能について説明します。  
+この記事は、一般仕訳帳の処理を容易にすることができ、正確なデータがキャプチャされ内部コントロールが悪影響を受けていないことを保証する手助けとなる Microsoft Dynamics 365 for Operations の機能について説明します。  
 
 仕訳帳名
 
@@ -52,7 +53,7 @@ ms.lasthandoff: 03/31/2017
 [**自動取消**] オプションは、一般仕訳帳で使用できます。 たとえば、次の図に示すように、実際のドキュメントがまだ処理されていない見越計上の調整が行われます。
 [![一般仕訳帳の取り消し](./media/general-journal-reversing1.png)](./media/general-journal-reversing1.png) 
 
-仕訳帳入力のための Microsoft Excel アドインは、自動化の追加のレベルを提供し、データ入力をより簡単にします。 [**Excel で明細行を開く **] アクションは、[**一般仕訳帳**] および [**仕訳伝票**] ページで使用できます。 
+仕訳帳入力のための Microsoft Excel アドインは、自動化の追加のレベルを提供し、データ入力をより簡単にします。 [**Excel で明細行を開く**] アクションは、[**一般仕訳帳**] および [**仕訳伝票**] ページで使用できます。 
 
 [**定期処理仕訳帳**] ページで、繰返しの仕訳帳を仕訳処理の自動化に設定できます。 
 
@@ -81,7 +82,8 @@ ms.lasthandoff: 03/31/2017
 
 勘定構造および詳細ルールの構造は、財務レポートに必要とされるデータおよびパフォーマンスの追跡が、一般仕訳帳の処理とドキュメンテーションの間にキャプチャされるようにするために非常に重要です。 勘定構造および詳細ルール構造により、データ入力経験のカスタマイズが可能になります。 それぞれの状況に該当する財務分析コードにのみデータ入力を許可し、必須および正確なデータが常にキャプチャされるという条件を適用できます。
 
-詳細については、「[Planning: Chart of accounts](plan-chart-of-accounts.md)」を参照してください。 
+詳細については、「[計画: 勘定科目表](plan-chart-of-accounts.md)」を参照してください。 
+
 
 
 

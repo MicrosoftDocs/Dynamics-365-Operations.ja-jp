@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 720a1f272948eb310dc3cd02588aeec40b556d20
-ms.openlocfilehash: 31dda85ff2e4a4e5380401b031b2dd74acff394b
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 4fd6e61e88ca3ca3fa63308dead1258c0263e5aa
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="align-workforce-skills-with-business-needs"></a>個人スキルと業務ニーズの調整
+
+[!include[banner](includes/banner.md)]
+
 
 作業者、申請者、または連絡担当者がロールを効果的に遂行するために必要なスキルを追跡できます。 また、特定のジョブに必要なスキルを指定できます。
 
@@ -52,24 +56,12 @@ ms.lasthandoff: 03/31/2017
 
 スキル マッピング プロファイルを使用すると、現在の従業員から、業務のニーズに直接対応する資格を持つ候補者を検索できます。  たとえば、その組織で空いている職位のスキル マッピング プロファイルを作成できます。 特定のジョブのプロファイルを作成して、そのジョブからスキル、教育、証明書をコピーすることにより、プロファイルに入力される基準の 1 つ以上に一致する作業者、申請者、連絡担当者を簡単に検索できます。また、ジョブに要求されるスキルに最も適合する候補者を一覧表示できます。
 
-<table>
-<thead>
-<tr class="header">
-<th><strong>メモ </strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>スキル マッピング検索に含めるよう選択した作業者、申請者、および連絡担当者のみを、スキル マッピングの結果一覧に表示したり、スキル プロファイルに含めることができます。 作業者、申請者、連絡担当者をスキル マッピング検索に含める場合は、次の各ページで、<strong>スキル マッピングの対象に含める</strong>の選択を [はい] に設定します。
-<ul>
-<li>ワーカー</li>
-<li>従業員</li>
-<li>申請者</li>
-<li>連絡先</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+>**注記** スキル マッピング検索に含めるよう選択した作業者、申請者、および連絡担当者のみを、スキル マッピングの結果一覧に表示したり、スキル プロファイルに含めることができます。 作業者、申請者、連絡担当者をスキル マッピング検索に含める場合は、次の各ページで、**スキル マッピングの対象に含める**の選択を [はい] に設定します。
+
+> + ワーカー
+> + 従業員
+> + 申請者
+> + 連絡先
 
 ## <a name="skill-gap-analysis-and-skill-profile-analysis"></a>スキル ギャップ分析およびスキル プロファイル分析
 特定の日付における作業者、申請者、または連絡担当者のコンピテンシーの一覧を表示するスキル プロファイル分析を作成できます。 個人のスキルを特定のジョブに必要なスキルと比較するスキル ギャップ分析を作成できます。  
@@ -80,5 +72,7 @@ ms.lasthandoff: 03/31/2017
 --------
 
 [人事管理](index.md)
+
+
 
 

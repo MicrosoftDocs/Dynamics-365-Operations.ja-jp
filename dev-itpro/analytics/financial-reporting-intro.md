@@ -1,9 +1,9 @@
 ---
 title: "Dynamics 365 for Operations の財務報告"
 description: "Dynamics 365 for Operations の財務報告では、財務およびビジネスのプロフェッショナルが財務諸表を作成、管理、展開、および表示できます。 効率的にさまざまな種類のレポートをデザインするために従来のレポートの制約を超えて移動します。"
-author: RobinARH
+author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-03-18 15 - 31 - 29
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -16,15 +16,19 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-translationtype: Human Translation
-ms.sourcegitcommit: f707d45290682e79ee439ba0d504852429defa90
-ms.openlocfilehash: 519b3d3fb53b20d0014c97bcb1b9b21802a376d6
-ms.lasthandoff: 03/30/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: fee79dad870bfbf8852198c7e825cfaa95a8d10b
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="financial-reporting-for-dynamics-365-for-operations"></a>Dynamics 365 for Operations の財務報告
+
+[!include[banner](../includes/banner.md)]
+
 
 Dynamics 365 for Operations の財務報告では、財務およびビジネスのプロフェッショナルが財務諸表を作成、管理、展開、および表示できます。 効率的にさまざまな種類のレポートをデザインするために従来のレポートの制約を超えて移動します。
 
@@ -36,8 +40,7 @@ Dynamics 365 for Operations の財務報告では、財務およびビジネス�
 | コンポーネント        | 関数                                                                                                                                                                                                                                                                           | 追加情報                                                                          |
 |------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
 | レポート デザイナー  | レポートを定義して生成するために、組み合わせるレポートの構成要素を作成します。 レポート ウィザードで、デザイン プロセスの経験が少ないユーザーをサポートします。 上級者になると、新しいレポートの構成要素を作成したり、要求に合わせて既存の構成要素を変更したりできます。 |                                                                                                 |
-| Web ビューア       | Web ブラウザーで財務諸表を表示します。 Web ビューアーでは、財務諸表のサーバー コンポーネントがインストールされている必要はありません。                                                                                                                                                        | [Web ビューア](financial-reporter-designer-web-client.md)            |
-| レポート スケジューラ | 1 つのレポートまたはレポートのグループをスケジュールして、定期的に生成されるようにします。                                                                                                                                                                                          | [レポートの生成](/dynamics365/operations/financials/general-ledger/generate-financial-report) |
+| レポート スケジューラ | 1 つのレポートまたはレポートのグループをスケジュールして、定期的に生成されるようにします。                                                                                                                                                                                          | [財務諸表の生成](generate-financial-report.md) |
 
 ## <a name="features"></a>機能
 <table>
@@ -78,13 +81,15 @@ Dynamics 365 for Operations の財務報告では、財務およびビジネス�
 <li>レポート コンテンツに特定の分析コードまたは分析コードの組み合わせを制限するのには、分析コード フィルターを追加します。</li>
 <li>レポート コンテンツに特定の属性または属性の組み合わせを制限するのには、属性フィルターを追加します。</li>
 </ul>
-詳細については、「<a href="https://technet.microsoft.com/en-us/library/dn469079.aspx">デスクトップ ビューア インターフェイス</a>」の「対話型コンポーネントおよびナビゲーション機能」を参照してください。</td>
+</td>
 </tr>
 </tbody>
 </table>
 
 #<a name="see-also"></a>参照
+[財務諸表の生成](generate-financial-report.md)
 
-[財務諸表を生成します]((dynamics365\operations\financials\general-ledger\generate-financial-report)
+
+
 
 

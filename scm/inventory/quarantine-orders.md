@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: f77012e7b64b7f153103e9bbe91e8ded202b509a
-ms.openlocfilehash: 394276e6908f2c1f6bc72eea061facc3afe701e9
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: a6bd487e602a57272ea2943441ea4b78129b3f8d
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -47,7 +48,7 @@ ms.lasthandoff: 03/31/2017
 
 ### <a name="created"></a>作成済み
 
-検査指示のステータスが**作成済**になるのは、検査指示が手動で作成されているが、まだ品目が検査倉庫に配置されていない場合です。 2 つの在庫トランザクションが生成されます。 1 つ目のトランザクションは**注文中**、**引当済現物**、または** ピッキング済**のステータスがある払出トランザクションです。 2 つ目のトランザクションは、検査倉庫に**注文済**または** 登録済**のステータスがある受入トランザクションです。 通常のプロセスで在庫への更新を引当、ピック、または登録できます。
+検査指示のステータスが**作成済**になるのは、検査指示が手動で作成されているが、まだ品目が検査倉庫に配置されていない場合です。 2 つの在庫トランザクションが生成されます。 1 つ目のトランザクションは**注文中**、**引当済現物**、または**ピッキング済**のステータスがある払出トランザクションです。 2 つ目のトランザクションは、検査倉庫に**注文済**または**登録済**のステータスがある受入トランザクションです。 通常のプロセスで在庫への更新を引当、ピック、または登録できます。
 
 ### <a name="started"></a>開始済
 

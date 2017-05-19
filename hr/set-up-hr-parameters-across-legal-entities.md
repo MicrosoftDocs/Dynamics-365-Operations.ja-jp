@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9397e84f03ee5b340fa2aa0a64e582fc0078526e
-ms.openlocfilehash: 5df6079605d2d8d320c38d302e8e5e2cba51a3f1
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 7f856946c90be5d21a822fdefc119ce61e3f411c
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -36,7 +37,7 @@ ms.lasthandoff: 03/31/2017
 
 **人事管理の共有パラメーター**ページで、パラメータは機能に基づいて領域にグループ化されます。 
 
-**ID** タブで、ページに表示される ID 番号を表す ID タイプを選択する必要があります。 作業者の ID 情報を入力する前に、ID タイプを設定する必要があります。 社会保障番号、国民 ID 番号、外国人 ID 番号、および個人の ID コードに関する情報が** ID タイプ**ページで管理されます。 新しい ID タイプを定義する、または既存のタイプの一覧を確認するには、[**人事管理**] &gt; [**設定**] &gt; [**ID タイプ**] の順にクリックします。 簡単なコードと説明を入力できます。 
+**ID** タブで、ページに表示される ID 番号を表す ID タイプを選択する必要があります。 作業者の ID 情報を入力する前に、ID タイプを設定する必要があります。 社会保障番号、国民 ID 番号、外国人 ID 番号、および個人の ID コードに関する情報が**ID タイプ**ページで管理されます。 新しい ID タイプを定義する、または既存のタイプの一覧を確認するには、[**人事管理**] &gt; [**設定**] &gt; [**ID タイプ**] の順にクリックします。 簡単なコードと説明を入力できます。 
 
 **番号順序**タブで、次のレコードに使用する番号順序を選択できます: 個人番号、職位、ユーザー要求 ID、I-9 ドキュメント、申請者、ディスカッション、福利厚生のID、および従業員のアクション (このレコード タイプが有効な場合)。 番号順序およびコードを管理するには、**番号順序**リスト ページを使用します。 このページを検索するには、ページの検索機能を使用します。 
 

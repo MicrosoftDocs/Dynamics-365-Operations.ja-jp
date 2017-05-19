@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0d8af341c8020f756f1a736f6f74402e992d6e16
-ms.openlocfilehash: c6372e366db6abc7b586c2f1185ecd44bbf28502
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: dd9f65e045367aeba081d026da53894679ee7ed0
+ms.contentlocale: ja-jp
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -84,7 +85,7 @@ Microsoft Dynamics 365 for Operations の用語集は、Dynamics 365 for Operati
 
 勘定科目項目を銀行口座明細書項目と照合して、銀行口座を表す勘定科目を調整するプラクティス。
 
-###### <a name="batch-attribute"></a>**バッチ属性 **
+###### <a name="batch-attribute"></a>**バッチ属性**
 
 一括処理または転送バッチの製品属性。
 
@@ -174,7 +175,7 @@ Microsoft Dynamics 365 for Operations の用語集は、Dynamics 365 for Operati
 
 製品製造と在庫運搬の財務結果の合計を計算するための勘定科目カテゴリ。
 
-###### <a name="commodity-pricing"></a>**商品価格決定 **
+###### <a name="commodity-pricing"></a>**商品価格決定**
 
 頻繁に価格が変更される商品から生まれた、販売品目価格の更新価格戦略。
 
@@ -186,7 +187,7 @@ Microsoft Dynamics 365 for Operations の用語集は、Dynamics 365 for Operati
 
 法人と、契約社員と雇用主の関係を築いた個人の担うロール。
 
-###### <a name="co-product"></a>**連産品 **
+###### <a name="co-product"></a>**連産品**
 
 別のもう一つの品目と共同で生産される品目。
 
@@ -622,7 +623,7 @@ Dynamics 365 for Operations の標準的な開始ページ。 ダッシュボー
 
 不正、反則、エラーのリスクを減らすための設計原則。この原則で、資産の記録、検証、許可、保管を区分し、経済取引の財務結果の文書化、または記録にたずさわる個人の職務を定期的に見直します。
 
-###### <a name="sequencing"></a>**順番付け **
+###### <a name="sequencing"></a>**順番付け**
 
 製造施設における目標達成のためのジョブの処理順序または業務の実施順序。
 

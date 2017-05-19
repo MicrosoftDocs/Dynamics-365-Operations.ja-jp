@@ -16,10 +16,11 @@ ms.search.region: Global
 ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 3d02a15387231160f5b8a237aa11008b91ef1223
-ms.openlocfilehash: 2e46fdd869cb8651ab7ee04cf58fe6f1e0e27c0b
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 8e388e0ea758651bb74483e410385bfaa9a07046
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -51,14 +52,14 @@ ms.lasthandoff: 03/31/2017
 
 原価会計の実践的なラボでは、実際原価の分析を行うための Microsoft Dynamics 365 for Operations – Cost Accounting を設定するための基本的な手順を示します。 また、表示される順序で完了できる一連の手順も示します。
 
--   [Get started with Cost accounting](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc) (ホワイト ペーパー、CustomerSource のアカウントが必要です)
+-   [原価会計の使用を開始する](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc) (ホワイト ペーパー、CustomerSource のアカウントが必要です)
 
 自分の日常の作業に原価会計を使用する方法を理解するには、次の概念を理解する必要があります。
 
 -   [原価会計の重要な用語](terms-cost-accounting.md)
 -   [原価要素と原価要素の分析コード](cost-elements.md)
 -   [異なる原価要素分析コード メンバーに、原価要素分析コード メンバーの共通セットをマップする](map-cost-elements-dimension-members.md)
--   [Create cost elements](http://ax.help.dynamics.com/en/wiki/create-cost-elements/) (タスク ガイド)
+-   [原価要素の作成](http://ax.help.dynamics.com/en/wiki/create-cost-elements/) (タスク ガイド)
 -   [原価オブジェクト分析コード](cost-objects.md)
 -   [原価オブジェクトの作成](http://ax.help.dynamics.com/en/wiki/create-cost-objects/) (タスク ガイド)
 
