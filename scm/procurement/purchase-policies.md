@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchReqSourcingPolicyRule, SysPolicy, SysPolicyListPage
 audience: Application User
@@ -18,10 +18,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: 3df3144b08c54441699d9c0b48fe507857877586
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 5208dc64d86345de4e53c5e293fbc861351a63ef
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -59,6 +59,7 @@ Fabrikam は、2 種類の購入ポリシーを作成します。 ポリシー A
 
 前の例では、すべての購入ルールは 1 つの組織階層、この場合 [会社] 組織階層に定義されています。 ただし、複雑な組織では複数の組織階層のポリシーを定義する場合があります。  
 
+
 Contoso は要求プロセスを制御するのに複雑な購入ルールが必要な大規模な会社です。 Contoso は 2 つの組織階層のルールを定義します。部門およびグローバル購買コントロール。  
 
 ポリシー 123 は、Sales UK の 部門 (販売部門) の組織階層に対して定義されます。 ポリシー 123 で、購買要求コントロール ルールは最小注文数量が適用される制限を指定します。 このルールで、[**最小注文数量制限の実施**] オプションが選択されます。  
@@ -93,6 +94,9 @@ Samは、Sales UK つまり Contoso 社の英国オフィスの販売部門で�
 ### <a name="re-approval-rule-for-purchase-orders"></a>発注書の再承認ルール
 
 再承認ルールは、発注書を変更するときに再承認の要求の基準を定義するオプションのルールです。 "発注書の再承認が必要" 条件がワークフローで設定されている場合、選択したフィールドは発注書ワークフローで評価されます。
+
+> [!NOTE]
+> 変更管理が有効になっている承認済購買注文が変更されると、勘定配布が常にリセットされます。 したがって、特定のフィールドが変更されたときに発注書の再承認を回避する場合は、Accounting distribution.changed フィールドを、再承認のために選択されたフィールドとして含めないようにする必要があります。 
 
 ### <a name="purchase-requisition-rfq-rule"></a>購買要求 RFQ ルール
 

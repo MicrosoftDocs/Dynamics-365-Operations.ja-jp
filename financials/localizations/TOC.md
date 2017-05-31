@@ -67,6 +67,7 @@
 ### [CODA 口座取引明細書](emea-bel-coda-bank-statement-import.md)
 ### [INTERVAT 税申告](emea-bel-intervat-tax-declaration.md)
 ### [PRODCOM レポートの設定](emea-bel-prodcom-report.md)
+### [調整レポート](emea-bel-reconciliation-reports.md)
 
 ## チェコ共和国
 ### [訂正票上の現金割引](emea-cze-credit-note-cash-discount.md)
@@ -74,6 +75,7 @@
 ### [減価償却停止](emea-cze-depreciation-suspension-holidays.md)
 ### [固定資産の減価償却](emea-cze-fixed-assets-depreciation.md)
 ### [半年減価償却](emea-cze-half-depreciation-fixed-asset-disposal.md)
+### [売上税レポート](emea-cze-intra-community-vat-transactions.md)
 ### [VAT 明細書](emea-cze-vat-statement-details.md)
 ## エストニア
 ### [VAT 明細書](emea-est-vat-statement-details.md)

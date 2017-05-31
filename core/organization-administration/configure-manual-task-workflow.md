@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
 ms.search.scope: AX 7.0.0, Operations, Core
@@ -17,10 +17,10 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: a62b56bd2ac0a7484471190c5f342a1db335ab07
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 5d2a69066a1245d5b86d27d01db4b67d4a490488
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -106,13 +106,11 @@ ms.lasthandoff: 04/25/2017
     <td>特定の組織階層内のユーザー</td>
     <td><ol>
     <li>[<strong>階層タイプ</strong>] 一覧の [<strong>階層選択</strong>] タブの、[<strong>階層</strong>] を選択したのち、タスクの割り当て先の階層タイプを選択します。</li>
-    <li>システムは、一定範囲のユーザー名を階層から取得する必要があります。 これらの名前は、タスクを割り当てることができるユーザーを表します。 システムで取得するユーザー名の範囲について、その開始点と終了点を指定するには、次の手順に従います。
-    <ol>
+    <li>システムは、一定範囲のユーザー名を階層から取得する必要があります。 これらの名前は、タスクを割り当てることができるユーザーを表します。 システムで取得するユーザー名の範囲について、その開始点と終了点を指定するには、次の手順に従います。 <ol>
     <li>開始点を指定するには、[<strong>開始</strong>] 一覧から人物を選択します。</li>
     <li>終了点を指定するには、[<strong>条件の追加</strong>] をクリックします。 次に、階層のどこで名前の取得を止めるかを示す条件を入力します。</li>
     </ol></li>
-    <li>[<strong>階層オプション</strong>] で、タスクを割り当てる範囲内のユーザーを指定します。
-    <ul>
+    <li>[<strong>階層オプション</strong>] で、タスクを割り当てる範囲内のユーザーを指定します。 <ul>
     <li>[<strong>取得したすべてのユーザーに割り当てる</strong>] – タスクは範囲内のすべてのユーザーに割り当てられます。</li>
     <li>[<strong>取得した最後のユーザーのみに割り当てる</strong>] – タスクは、範囲内の最後のユーザーのみに割り当てられます。</li>
     <li>[<strong>次の条件のユーザーを除外します</strong>] – タスクは、特定の条件に該当する範囲内のユーザーには割り当てられません。 条件を指定するには、[<strong>条件の追加</strong>] をクリックします。</li>
@@ -139,18 +137,16 @@ ms.lasthandoff: 04/25/2017
     <td>作業項目キュー</td>
     <td><ol>
     <li>[<strong>キュー</strong>] を選択した後、[<strong>キュー ベース</strong>] タブをクリックします。</li>
-    <li>タスクを特定のキューに割り当てるには、次の手順に従います。:
-    <ol>
+    <li>タスクを特定のキューに割り当てるには、次の手順に従います。: <ol>
     <li>[<strong>キュー タイプ</strong>] 一覧で、[<strong>作業項目キュー</strong>] を選択します。</li>
     <li>[<strong>キュー名</strong>] の一覧でキューを選択します。</li>
     </ol></li>
-    <li>タスクを割り当てるキューを特定の条件で決定する場合は、次の手順に従います。
-    <ol>
+    <li>タスクを割り当てるキューを特定の条件で決定する場合は、次の手順に従います。 <ol>
     <li>[<strong>キュー タイプ</strong>] 一覧で、[<strong>条件付き作業項目キュー</strong>] を選択します。</li>
     <li>[<strong>キュー名</strong>] の一覧で、[<strong>条件付きキュー</strong>] を選択します。</li>
     </ol></li>
     </ol>
-    <strong>注記:</strong> このオプションは、ケース管理などのいくつかのワークフローのみで使用されます。</td>
+    <strong>注:</strong> このオプションは、ケース管理などのいくつかのワークフローのみで使用されます。</td>
     </tr>
     </tbody>
     </table>
@@ -196,13 +192,11 @@ ms.lasthandoff: 04/25/2017
     <td>特定の組織階層内のユーザー</td>
     <td><ol>
     <li>[<strong>階層タイプ</strong>] 一覧の [<strong>階層選択</strong>] タブの、[<strong>階層</strong>] を選択したのち、タスクのエスカレート先の階層タイプを選択します。</li>
-    <li>システムは、一定範囲のユーザー名を階層から取得する必要があります。 これらの名前は、タスクをエスカレートできるユーザーを表します。 システムで取得するユーザー名の範囲について、その開始点と終了点を指定するには、次の手順に従います。
-    <ol>
+    <li>システムは、一定範囲のユーザー名を階層から取得する必要があります。 これらの名前は、タスクをエスカレートできるユーザーを表します。 システムで取得するユーザー名の範囲について、その開始点と終了点を指定するには、次の手順に従います。 <ol>
     <li>開始点を指定するには、[<strong>開始</strong>] 一覧から人物を選択します。</li>
     <li>終了点を指定するには、[<strong>条件の追加</strong>] をクリックします。 次に、階層のどこで名前の取得を止めるかを示す条件を入力します。</li>
     </ol></li>
-    <li>[<strong>階層オプション</strong>] で、タスクをエスカレートできる範囲内のユーザーを指定します。
-    <ul>
+    <li>[<strong>階層オプション</strong>] で、タスクをエスカレートできる範囲内のユーザーを指定します。 <ul>
     <li>[<strong>取得したすべてのユーザーに割り当てる</strong>] – タスクは範囲内のすべてのユーザーにエスカレートされます。</li>
     <li>[<strong>取得した最後のユーザーのみに割り当てる</strong>] – タスクは、範囲内の最後のユーザーのみにエスカレートされます。</li>
     <li>[<strong>次の条件のユーザーを除外します</strong>] – タスクは、特定の条件に該当する範囲内のユーザーにはエスカレートされません。 条件を指定するには、[<strong>条件の追加</strong>] をクリックします。</li>

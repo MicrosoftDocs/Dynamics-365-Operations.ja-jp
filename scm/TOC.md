@@ -4,6 +4,7 @@
 ## 需要予測の作成
 ### [需要予測の概要](master-planning/introduction-demand-forecasting.md)
 ### [需要予測の設定](master-planning/demand-forecasting-setup.md)
+### [需要予測の履歴データのインポート](master-planning/import-historical-data.md)
 ### [統計ベースライン予測の生成](master-planning/generate-statistical-baseline-forecast.md)
 ### [ベースライン予測の手動調整](master-planning/manual-adjustments-baseline-forecast.md)
 ### [調整された需要予測の承認](master-planning/authorize-adjusted-forecast.md)

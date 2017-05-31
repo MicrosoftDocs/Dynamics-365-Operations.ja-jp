@@ -3,10 +3,10 @@ title: "コスト管理モバイル ワークスペース"
 description: "このトピックでは、Microsoft Dynamics 365 for Operations モバイル アプリに使用可能な、原価管理モバイル ワークスペースについて説明します。 このワークスペースにより、コスト センターの管理者は時間や場所に関わらず、コスト センターのパフォーマンスに関する情報を表示できます。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 05/04/2017
+ms.date: 05/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
@@ -18,10 +18,10 @@ ms.author: yuyus
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: 31a9650774b2ddb70827ffa210154ca10c761236
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 09383c24b0dd2ad61a836f6c8dc97f4389915772
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -36,11 +36,15 @@ ms.lasthandoff: 04/25/2017
 <a name="overview-of-the-cost-controlling-mobile-workspace"></a>原価管理モバイル ワークスペースの概要
 -------------------------------------------------
 
-**原価管理** モバイル ワークスペースは、予算原価に対する実際原価を比較して、原価部門の現在のパフォーマンスのインスタント ビューを提供します。 個々の原価要素のステータスにドリル ダウンすることができます。 たとえば、従業員は国際会議への招待を受けますが、組織はすべての旅費を負担する必要があります。 その従業員は、会議に出席できるかどうか管理者に尋ねます。 管理者は、すぐに携帯電話で **原価管理** モバイル ワークスペースを開き、会議に出席する予算があるかどうかを確認します。
+**原価管理** モバイル ワークスペースは、予算原価に対する実際原価を比較して、原価部門の現在のパフォーマンスのインスタント ビューを提供します。 個々の原価要素のステータスにドリル ダウンすることができます。 
+
+たとえば、従業員は国際会議への招待を受けますが、組織はすべての旅費を負担する必要があります。 その従業員は、会議に出席できるかどうか管理者に尋ねます。 管理者は、すぐに携帯電話で **原価管理** モバイル ワークスペースを開き、会議に出席する予算があるかどうかを確認します。
 
 ### <a name="data-security"></a>データ セキュリティ
 
-**原価管理** モバイル ワークスペースのデータは、ユーザー資格情報で保護されます。 原価部門管理者は、自身の原価部門のデータだけを表示することができます。 アクセス レベルのセキュリティは、**原価会計** モジュール内で管理されます。 原価経理担当は、**原価会計** モジュールで **原価管理** モバイル ワークスペースのコンフィギュレーションを定義します。 ワークスペースを Microsoft Dynamics 365 for Operations モバイル アプリに公開すると、このアプリで使用できるようになります。 これで組織内のすべての原価部門管理者が同じ形式でデータを表示できるようになります。
+**原価管理** モバイル ワークスペースのデータは、ユーザー資格情報で保護されます。 原価部門管理者は、自身の原価部門のデータだけを表示することができます。 アクセス レベルのセキュリティは、**原価会計** モジュール内で管理されます。 
+
+原価経理担当は、**原価会計** モジュールで **原価管理** モバイル ワークスペースのコンフィギュレーションを定義します。 ワークスペースを Microsoft Dynamics 365 for Operations モバイル アプリに公開すると、このアプリで使用できるようになります。 これで組織内のすべての原価部門管理者が同じ形式でデータを表示できるようになります。
 
 ### <a name="actions-views-and-links"></a>操作、ビュー、リンク
 
@@ -87,7 +91,7 @@ Dynamics 365 for Operations アプリ用の **原価管理** モバイル ワー
 <tr class="odd">
 <td>Dynamics 365 for Operations バージョン 1611 およびプラットフォーム更新プログラム 3 以降を実装する必要があります。</td>
 <td>システム管理者</td>
-<td>Dynamics 365 for Operations をまだ組織に配置していない場合、システム管理者は <a href="http://ax.help.dynamics.com/en/wiki/deploy-an-ax7-demo-environment/">Microsoft Dynamics 365 for Operations デモ環境の配置</a> を確認する必要があります。</td>
+<td>Dynamics 365 for Operations をまだ組織に配置していない場合、システム管理者は <a href="/dynamics365/operations/dev-itpro/deployment/deploy-demo-environment">Microsoft Dynamics 365 for Operations デモ環境の配置</a> を確認する必要があります。</td>
 </tr>
 <tr class="even">
 <td>KB 4013633 を実装する必要があります。</td>
@@ -95,9 +99,9 @@ Dynamics 365 for Operations アプリ用の **原価管理** モバイル ワー
 <td>KB 4013633 (X++ アップデートまたはメタデータ修正プログラム) には、サプライチェーン管理用の 4 つのモバイルワーク スペースが含まれています。 KB 4013633 を実装するには、システム管理者は次の手順に従う必要があります。
 <ol>
 <li>Microsoft Dynamics Lifecycle Services (LCS) から KB 4013633 をダウンロードします。</li>
-<li><a href="https://ax.help.dynamics.com/en/wiki/configuring-and-installing-a-metadata-hotfix-package/">メタデータ修正プログラムをインストールします。</a></li>
-<li><strong>SCMMobile</strong> モデルを含む<a href="https://ax.help.dynamics.com/en/wiki/create-and-apply-a-deployable-package/">配置可能パッケージを作成し</a>、配置可能パッケージを LCS にアップロードします。</li>
-<li>Dynamics 365 for Operations システムに<a href="https://ax.help.dynamics.com/en/wiki/apply-a-deployable-package-on-a-dynamics-ax-system/">配置可能パッケージを適用</a>します。</li>
+<li><a href="/dynamics365/operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">メタデータ修正プログラムをインストールします。</a></li>
+<li><strong>SCMMobile</strong> モデルを含む<a href="/dynamics365/operations/dev-itpro/deployment/create-apply-deployable-package">配置可能パッケージを作成し</a>、配置可能パッケージを LCS にアップロードします。</li>
+<li>Dynamics 365 for Operations システムに<a href="/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">配置可能パッケージを適用</a>します。</li>
 </ol></td>
 </tr>
 <tr class="odd">

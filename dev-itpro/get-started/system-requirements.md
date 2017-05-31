@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, Developer, IT Pro
 ms.search.scope: Core
@@ -17,10 +17,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: 86053196a3aad6b7b5d7830860e1af347dd969d8
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: de2f71a21c5aac953349559c84283d0f76082d42
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -42,7 +42,9 @@ Microsoft Dynamics 365 for Operations Web アプリケーションは、指定�
 -   Windows 10、Windows 8.1、Windows 8、Windows 7、または Google Nexus 10 タブレットの Google Chrome (公開されている最新のバージョン)
 -   Mac OS X 10.10 (Yosemite)、 10.11 (El Capitan) または 10.12 (Sierra)、または Apple iPad の Apple Safari (公開されている最新のバージョン)
 
-各 Web ブラウザの最新版を検索するには、ソフトウェア メーカーの Web サイトに移動します。 **メモ :**
+各 Web ブラウザの最新版を検索するには、ソフトウェア メーカーの Web サイトに移動します。 
+
+**メモ :**
 
 -   タスク レコーダーから生成される画像をキャプチャして Microsoft Word ドキュメントに含めるには、Chrome 拡張機能をインストールする必要があります。 <!---For instructions about how to install the extension, see [Screenshot Extension setup](/dynamics365/operations/dev-itpro/user-interface/task-recorder).-->
 -   ワークフロー エディターは ClickOnce アプリケーションとして起動されます。 Microsoft Edge と Internet Explorer (Microsoft Windows のサポートされているバージョン) のみが、ClickOnce アプリケーションをサポートします。 ワークフロー エディタ ClickOnce アプリケーションには、64 ビットの互換性のあるオペレーティング システムが必要です。
@@ -59,10 +61,12 @@ Dynamics 365 for Operations の Retail Cloud POS は、指定されたオペレ�
 -   Windows 10、Windows 8.1、または Windows 7 の Chrome (公開されている最新のバージョン)
 
 ## <a name="network-requirements"></a>ネットワーク要件
--   Dynamics 365 for Operations は、待機時間 150 ミリ秒 (ms) 未満のネットワーク用に設計されています。 これは、ブラウザー クライアントから Dynamics 365 for Operations をホストする Microsoft Azure データ センターまでの待機時間です。 <http://www.azurespeed.com> でネットワーク待機時間をテストすることをお勧めします。
+-   Dynamics 365 for Operations は、待機時間が 250 ～ 300 ミリ秒 (ms) 以下のネットワーク用に設計されています。 これは、ブラウザー クライアントから Dynamics 365 for Operations をホストする Microsoft Azure データ センターまでの待機時間です。 <http://www.azurespeed.com> でネットワーク待機時間をテストすることをお勧めします。
 -   Dynamics 365 for Operations の帯域幅の要件はシナリオによって異なります。 最も一般的なシナリオでは、毎秒 50 キロバイト (KBps) 以上の帯域幅が必要です。 ただし、大がかりなカスタマイズを必要とするワークスペースやシナリオなど、高度な伝送データ要件があるシナリオでは、帯域幅を増やすことをお勧めします。
 
-一般に、Dynamics 365 for Operations は、インターネットに最適化されます。 ブラウザー クライアントから Azure データ センターへのラウンド トリップの数は非常に小さく、全伝送データは圧縮されます。 **警告:** ユーザー数に帯域幅要件の最小値を掛けてクライアントの場所からの帯域幅要件を計算しないでください。 特定の場所の同時使用は非常に計算が困難です。 帯域幅の要件について懸念する顧客には、Dynamics 365 for Operations のプレビュー バージョンを使用します。
+一般に、Dynamics 365 for Operations は、インターネットに最適化されます。 ブラウザー クライアントから Azure データ センターへのラウンド トリップの数は非常に小さく、全伝送データは圧縮されます。 
+
+**警告:** ユーザー数に帯域幅要件の最小値を掛けてクライアントの場所からの帯域幅要件を計算しないでください。 特定の場所の同時使用は非常に計算が困難です。 帯域幅の要件について懸念する顧客には、Dynamics 365 for Operations のプレビュー バージョンを使用します。
 
 ## <a name="net-framework-requirements"></a>.NET Framework 要件
 Dynamics 365 for Operations では、ドキュメント回覧エージェントなどのすべてのクリック ワンス アプリケーション用に .NET Framework バージョン 4.6.2 が必要です。 インストール手順については、[.NET Framework のインストール](https://msdn.microsoft.com/en-us/library/5a4x27ek(v=vs.110).aspx) を参照してください。

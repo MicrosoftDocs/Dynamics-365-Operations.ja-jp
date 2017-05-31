@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.search.scope: AX 7.0.0, Operations, Core
@@ -17,10 +17,10 @@ ms.author: mfalkner
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: 1ab51f90be918ee60e99fe11e5425383beefb26e
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 6e8e87df88aace213f50db617229383eba4d86ec
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -47,13 +47,11 @@ ms.lasthandoff: 04/25/2017
 |販売注文の確認                   | 販売注文を更新します。                                                                       |
 |外貨再評価          | 外貨で転記された未処理の顧客トランザクションの値を更新するトランザクションを生成します。                                                                                                                         |
 | 仕訳帳                              | 請求書、支払、および約束手形を転記します。                                             |
-| 仕訳伝票                      | -   **支払仕訳帳** – 支払を生成、処理、および転記します。
-                                         -   **Draw bill of exchange journal** – Post bills of exchange.
-                                         -   **Protest bill of exchange journal** – Post protested bills of exchange.
-                                         -   **Redraw bill of exchange journal** – Post redrawn bills of exchange.
-                                         -   **Remittance journal** – Post remittances.
-                                         -   **Settle bill of exchange journal** – Post settled bills of exchange                   |
-| 梱包明細転記                 | 販売注文の梱包明細を更新します。                                                     | | 自由書式の請求書の転記               | 自由書式の請求書を転記します。                                                                   | | 請求書の転記                      | 販売注文の請求書を転記します。                                                            | | ピッキング リストの転記                 |販売注文のピッキング リストを更新します。                                                      |
+| 仕訳伝票                      |<ul><li>**支払仕訳帳** : 支払を生成、処理、および転記します。</li><li>**為替手形振出仕訳帳** : 為替手形を転記します。</li><li>**為替手形受取拒否仕訳帳** : 受取拒否手形を転記します。</li><li>**為替手形仕訳の振出** : 再振出済為替手形を転記します。</li><li>**送金仕訳帳** : 送金を転記します。</li><li>**為替手形仕訳帳の決済** : 決済済為替手形を転記します</li></ul>                   |
+| 梱包明細転記                 | 販売注文の梱包明細を更新します。                                                     |
+| 自由書式の請求書の転記               | 自由書式の請求書を転記します。                                                                   |
+| 請求の転記                      | 販売注文の請求書を転記します。                                                            |
+| ピッキング リストの転記                 |販売注文のピッキング リストを更新します。                                                      |
 
 **業務プロセス コンポーネント タスク**   
 

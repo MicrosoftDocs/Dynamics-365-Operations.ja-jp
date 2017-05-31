@@ -3,10 +3,10 @@ title: "集中支払の設定"
 description: 
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 05/09/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: LedgerInterCompany
 audience: Application User
@@ -18,10 +18,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: 474453e7f33526bc7bebc60ef68f560d489a1841
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 60cc59911cf2d10d73206885eb97b346ec3e3e87
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -41,7 +41,7 @@ ms.lasthandoff: 04/25/2017
 -   会社間勘定を設定します。
 
 ## <a name="set-up-an-organizational-hierarchy-for-centralized-payments"></a>集中支払用の組織階層の設定
-集中支払用の組織階層を設定する必要があります。 同一の組織階層を使用して、集中仕入先支払と集中顧客支払を処理できます。 **注:** 集中支払では、階層の構造は重要ではありません。 階層内のすべての法人が、階層内のその他の任意の法人に代わって、支払を処理できます。 **組織階層** ページで、新しい組織階層を作成できます。
+集中支払用の組織階層を設定する必要があります。 同一の組織階層を使用して、集中仕入先支払と集中顧客支払を処理できます。 **注:** 集中支払では、階層の構造は重要ではありません。 階層内のすべての法人が、階層内のその他の任意の法人に代わって、支払を処理できます。 **組織階層** ページで、新しい組織階層を作成できます。 [**目的**] フィールドで、[**集中支払**] を選択する必要があります。 
 
 ## <a name="set-up-an-intercompany-account-for-centralized-payments"></a>集中支払用の会社間勘定の設定
 現在の法人の支払トランザクションが別の法人の請求書に対して決済される場合は、適切な借トランザクションと貸トランザクションが法人ごとに作成されます。 現金割引、実現利益、または実現損失が転記される法人を指定する必要があります。 始める前に、仕入先と顧客支払の処理に使用する法人を決定します。 1 つの法人が仕入先支払を処理する場合に、別の法人が顧客支払を処理すると、それぞれの法人を切り替える必要があります。 [**会社間会計**] ページで、代わりに支払を処理する法人の会社間関係レコードを選択できます。 [**集中支払**] タブで、現金割引の支払法人への転記 (または仕入先勘定の残高を減額するその他のトランザクション)、または請求法人への転記 (または仕入先勘定の残高を増額するその他のトランザクション) のいずれを行うかを選択できます。 この選択は、**買掛金勘定パラメータ** ページと **売掛金勘定パラメータ** ページの [**現金割引管理**] フィールドと共に使用します。 過剰支払と少額の許容誤差については、支払の法人の設定が使用されます。 過少支払と少額の許容誤差については、請求書の法人の設定が使用されます。

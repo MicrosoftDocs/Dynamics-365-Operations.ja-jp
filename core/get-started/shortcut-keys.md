@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.search.scope: AX 7.0.0, Operations, Core
@@ -17,10 +17,10 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: ef434747c075a32887035fa1d3c0e6fecd4e0a0d
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 7d146f3dfe1d71e8d3031a851f47fac35d0f1a58
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -68,7 +68,7 @@ ms.lasthandoff: 04/25/2017
 | 情報ボックス ペインを開く (すでに開かれている場合は、情報ボックス ペインにフォーカスを移動) | Ctrl + F2                                   |
 | 情報ボックス ペインを閉じる (情報ボックス ペインにフォーカスがある場合)                         | Esc キー                                       |
 | 次または前の情報ボックスに移動 (情報ボックス ペインにフォーカスがある場合)              | Alt+Shift+下方向キーまたは Alt+Shift+上方向キー |
-| &lt;n&gt; 番目の情報ボックスに移動 (情報ボックス ペインにフォーカスがある場合)                | Alt+&lt;n&gt; (&lt;n&gt; は数字の 1 から 9 キー)           |
+| &lt;n&gt; 番目の情報ボックスに移動 (情報ボックス ペインにフォーカスがある場合)                | Alt + &lt;n&gt; (&lt;n&gt; = 1-9)           |
 | 情報ボックスを展開 (情報ボックスのヘッダーにフォーカスがある場合)                             | Space キーまたは Enter キー                            |
 | 現在の情報ボックスを折りたたむ                                                    | Alt + 0                                     |
 
@@ -115,8 +115,8 @@ ms.lasthandoff: 04/25/2017
 | 前後のフィールドに移動                     | Tab または Shift+Tab                              |
 | 前後のタブに移動する                       | Alt+Shift+右方向キーまたは Alt+Shift+左方向キー |
 | 前後のクイック タブに移動する                   | Alt+Shift+下方向キーまたは Alt+Shift+上方向キー    |
-| &lt;n&gt; 番目のクイック タブに移動                     | Alt+&lt;n&gt; (&lt;n&gt; は数字の 1 から 9 キー)              |
-| &lt;n&gt; 番目のタブに移動                         | Alt+Shift+&lt;n&gt; (&lt;n&gt; は数字の 1 から 9 キー)        |
+| &lt;n&gt; 番目のクイック タブに移動                     | Alt + &lt;n&gt; (&lt;n&gt; = 1-9)              |
+| &lt;n&gt; 番目のタブに移動                         | Alt + Shift + &lt;n&gt; (&lt;n&gt; = 1-9)        |
 | クイック タブを展開 (クイック タブのヘッダーにフォーカスがある場合) | Space キーまたは Enter キー                               |
 | 現在のクイック タブを折りたたむ                        | Alt + 0                                        |
 | グリッド表示に切り替え                                 | Ctrl + Shift + G                                 |

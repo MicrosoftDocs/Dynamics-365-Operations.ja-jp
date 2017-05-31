@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
 ms.search.scope: Operations, Platform, AX Platform
@@ -17,10 +17,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: d54240eb29ede3c1361f14dea186776f6d11a4d8
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: a613f5a84a7c72da3cc76eac147d4754f6259e4c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -130,7 +130,7 @@ APQC 統合ライブラリ (2016 年 5 月) には、2016 年 5 月に更新さ�
 | BPM 明細行                                                 | 国/地域 |
 |----------------------------------------------------------|----------------|
 | 新しい製品の作成                                     | グローバル         |
-| \financial-dimensions\dimension-based コンフィギュレーションの作成                    | グローバル         |
+| 分析コード ベースのコンフィギュレーションの作成                    | グローバル         |
 | 事前定義された製品バリアントの作成                       | グローバル         |
 | 販売価格の選択基準の作成                    | グローバル         |
 | コンフィギュレーション可能な製品の注文入力                   | グローバル         |

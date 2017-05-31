@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: DefaultDashboard
 audience: Application User, Developer, IT Pro
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: c9f1e32986238739fc7eee519fd1d17a6ce6731e
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 55a3252aa2d84ac5af68a1a6eebeaa909d95b33b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -34,6 +34,9 @@ ms.lasthandoff: 04/25/2017
 このページでは、最新バージョンの Microsoft Dynamics 365 for Operations の新しい機能について学ぶ役立つトピックを示します。
 
 最新バージョンにアップグレードするには、[最新の Dynamics 365 for Operations の更新プログラムにアップグレードするためのプロセス](../migration-upgrade/upgrade-latest-update.md) を参照します。
+
+最近リリースされたモバイル ワークスペースと Power BI の内容に関する詳細については、「[Dynamics 365 for Operations モバイル アプリ用に最近リリースされたモバイル ワークスペース](../mobile-apps/mobile-workspaces-released.md)」および「[Dynamics 365 for Operations 用に最近リリースされた Power BI コンテンツ](../analytics/power-bi-content-released.md)」を参照してください。
+
 <table>
 <colgroup>
 <col width="20%" />
@@ -47,12 +50,18 @@ ms.lasthandoff: 04/25/2017
 <th><strong>リリース</strong></th>
 <th><strong><strong>バージョン</strong></strong></th>
 <th><strong><strong>ビルド番号</strong></strong></th>
-<th><strong><strong>適用対象</strong></strong></th>
+<th><strong><strong>適用の対象</strong></strong></th>
 <th><strong><strong>詳細情報</strong></strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
+<td>Microsoft Dynamics 365 for Operations プラットフォーム</td>
+<td>プラットフォーム更新プログラム 7</td>
+<td> 7.0.4542.16189</td>
+<td>2017 年 5 月</td>
+<td><a href="whats-new-platform-update-7.md">Dynamics 365 for Operations プラットフォーム更新プログラム 7 の新機能および変更された機能 (2017 年 5 月)</a></td>
+</tr><tr class="odd">
 <td>Microsoft Dynamics 365 for Operations プラットフォーム</td>
 <td>プラットフォーム更新プログラム 6</td>
 <td> 7.0.4509.16180</td>

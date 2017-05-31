@@ -1,28 +1,27 @@
 ---
 title: "キャッシュ生成単位の固定資産の減損会計"
 description: "この記事では、Microsoft Dynamics AX に含まれる固定資産の減損の機能を紹介します。 この記事の主な目的は、ユーザーに減損会計の概念モデルの概要を示すことです。"
-author: ShylaThompson
+author: rake-gui
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: AssetAllocationGoodwillSharedAsset_JP, AssetCashGeneratingUnit_JP, AssetCashGeneratingUnitGroup_JP, AssetImpairmentRecognitionMethod1_JP, AssetImpairmentRecognitionMethod2_JP
 audience: Application User
-ms.reviewer: ShylaThompson
+ms.reviewer: shylaw
 ms.search.scope: AX 7.0.0, Operations, Core
 ms.custom: 25691
-ms.assetid: c87ac196-8dc6-4636-99a3-be478ddd8efe
 ms.search.region: Japan
-ms.author: leguo
+ms.author: ralin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: 4fb0fce5992356ac25bb54cffcbb7fe50dcfcfd8
+ms.sourcegitcommit: fd42fe23b30fe163a003614d6cbe9ff24ae38c5d
+ms.openlocfilehash: ca04e685e25c77a612e405720b701f7024aa46b7
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -57,11 +56,6 @@ ms.lasthandoff: 04/25/2017
 
 ## <a name="reports-and-other-required-operations"></a>レポートおよびその他の必要な工程
 ユーザーは**減損レポートおよびトランザクション**照会ページを使用して、減損トランザクションに関する詳細情報を取得できます。 会社の税務申告の調整など特定の工程が、減損の転記後に必要です。 ユーザーは、これらの工程を手動で計算して転記する必要があります。
-
-<a name="see-also"></a>参照
---------
-
-[Microsoft Dynamics AX 2012 R3 固定資産ローカライズ機能セット - 日本](https://mbs.microsoft.com/partnersource/global/deployment/documentation/white-papers/msdAX2012R3JapanFixedAssets)
 
 
 

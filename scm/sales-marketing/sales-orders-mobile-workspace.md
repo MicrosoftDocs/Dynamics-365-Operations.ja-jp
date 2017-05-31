@@ -3,10 +3,10 @@ title: "販売注文モバイル ワークスペース"
 description: "このトピックでは、Microsoft Dynamics 365 for Operations モバイル アプリに使用可能な、販売注文モバイル ワークスペースについて説明します。 このワークスペースは、どこでも、いつでも販売注文を最新の状態に保つのに役立ちます。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/21/2017
+ms.date: 05/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
@@ -19,10 +19,10 @@ ms.author: mirzaab
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: 119b80e5d8067ffbf75d8b067f4803558c2c94b0
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 11898146a13756a6bb22a769e37e8773484e0d04
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -37,7 +37,9 @@ ms.lasthandoff: 04/25/2017
 <a name="overview-of-the-sales-orders-mobile-workspace"></a>販売注文モバイル ワークスペースの概要
 ---------------------------------------------
 
-**販売注文** モバイル ワークスペースは、Microsoft Dynamics 365 for Operations にアクセスして、各販売注文に関する詳細情報を表示することができます。 この情報には、注文のステータス、顧客の連絡先情報および注文受付者の連絡先情報が含まれます。 **販売注文** モバイル ワークスペースは、販売注文のインスタント ビューを提供します。 すべての販売注文、顧客別の販売注文、または特定の販売注文に関する情報を表示できます。 モバイル ワークスペースは、より詳しい販売注文の分析に役立つ 2 つのビューを提供します。
+**販売注文** モバイル ワークスペースは、Microsoft Dynamics 365 for Operations にアクセスして、各販売注文に関する詳細情報を表示することができます。 この情報には、注文のステータス、顧客の連絡先情報および注文受付者の連絡先情報が含まれます。 **販売注文** モバイル ワークスペースは、販売注文のインスタント ビューを提供します。 すべての販売注文、顧客別の販売注文、または特定の販売注文に関する情報を表示できます。 
+
+モバイル ワークスペースは、より詳しい販売注文の分析に役立つ 2 つのビューを提供します。
 
 ### <a name="view-all-sales-orders"></a>すべての販売注文の表示
 
@@ -50,6 +52,7 @@ ms.lasthandoff: 04/25/2017
     -   ステータスで検索
     -   リリース状態で検索
     -   作成日時で検索
+    
 -   販売注文を選択したのち、特定の注文の詳細を表示できます。 具体的には、次の情報を表示できます。
     -   顧客の名前と住所情報
     -   指定出荷日や確定出荷日などの、販売注文に関するさまざまな日付
@@ -65,6 +68,7 @@ ms.lasthandoff: 04/25/2017
 -   顧客の注文を表示するため、次のフィルターのいずれかを使用します。
     -   名前で検索
     -   ID で検索
+
 -   顧客を選択したのち、次の情報を表示することができます。
     -   顧客名およびグループ
     -   顧客の連絡先情報
@@ -96,7 +100,7 @@ ms.lasthandoff: 04/25/2017
 <tr class="odd">
 <td>Dynamics 365 for Operations バージョン 1611 およびプラットフォーム更新プログラム 3 以降を実装する必要があります。</td>
 <td>システム管理者</td>
-<td>Dynamics 365 for Operations をまだ組織に配置していない場合、システム管理者は <a href="http://ax.help.dynamics.com/en/wiki/deploy-an-ax7-demo-environment/">Microsoft Dynamics 365 for Operations デモ環境の配置</a> を確認する必要があります。</td>
+<td>Dynamics 365 for Operations をまだ組織に配置していない場合、システム管理者は <a href="/dynamics365/operations/dev-itpro/deployment/deploy-demo-environment/">Microsoft Dynamics 365 for Operations デモ環境の配置</a> を確認する必要があります。</td>
 </tr>
 <tr class="even">
 <td>KB 4013633 を実装する必要があります。</td>
@@ -104,9 +108,9 @@ ms.lasthandoff: 04/25/2017
 <td>KB 4013633 (X++ アップデートまたはメタデータ修正プログラム) には、サプライチェーン管理用の 4 つのモバイルワーク スペースが含まれています。 KB 4013633 を実装するには、システム管理者は次の手順に従う必要があります。
 <ol>
 <li>Microsoft Dynamics Lifecycle Services (LCS) から KB 4013633 をダウンロードします。</li>
-<li><a href="https://ax.help.dynamics.com/en/wiki/configuring-and-installing-a-metadata-hotfix-package/">メタデータ修正プログラムをインストールします。</a></li>
-<li><strong>SCMMobile</strong> モデルを含む<a href="https://ax.help.dynamics.com/en/wiki/create-and-apply-a-deployable-package/">配置可能パッケージを作成し</a>、配置可能パッケージを LCS にアップロードします。</li>
-<li>Dynamics 365 for Operations システムに<a href="https://ax.help.dynamics.com/en/wiki/apply-a-deployable-package-on-a-dynamics-ax-system/">配置可能パッケージを適用</a>します。</li>
+<li><a href="/dynamics365/operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">メタデータ修正プログラムをインストールします。</a></li>
+<li><strong>SCMMobile</strong> モデルを含む<a href="/dynamics365/operations/dev-itpro/deployment/create-apply-deployable-package">配置可能パッケージを作成し</a>、配置可能パッケージを LCS にアップロードします。</li>
+<li>Dynamics 365 for Operations システムに<a href="/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">配置可能パッケージを適用</a>します。</li>
 </ol></td>
 </tr>
 <tr class="odd">
