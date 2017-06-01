@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: FinancialReports
 audience: Application User
@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: bf42b287e2e9235fd50f78a6fadc3f9efbd1fbe5
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: ca82d24f591aaeb0d675716857cf94a4696785ad
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -350,8 +350,7 @@ Phyllis は、次の情報を入力する [**列のヘッダー**] ダイアロ�
     <tbody>
     <tr class="odd">
     <td>FD</td>
-    <td>行定義の [<strong>財務分析コードへのリンク</strong>] 列 または、[<strong>ワークシートへのリンク</strong>] 列を使用する場合、財務データまたは Excel ワークシートのデータを表示します。 [<strong>FD</strong>] 列タイプを選択すると、既定の設定が次の行に対して自動的に指定されます :
-    <ul>
+    <td>行定義の [<strong>財務分析コードへのリンク</strong>] 列 または、[<strong>ワークシートへのリンク</strong>] 列を使用する場合、財務データまたは Excel ワークシートのデータを表示します。 [<strong>FD</strong>] 列タイプを選択すると、既定の設定が次の行に対して自動的に指定されます : <ul>
     <li>[<strong>帳簿のコード / 属性カテゴリ :</strong>][実際]</li>
     <li>[<strong>帳簿のコード / 属性カテゴリ :</strong>][実際]</li>
     <li>[<strong>会計年度 :</strong>] [基準]</li>
@@ -359,7 +358,7 @@ Phyllis は、次の情報を入力する [**列のヘッダー**] ダイアロ�
     <li>[<strong>対象となる期間 :</strong>] [定期処理]</li>
     <li>[<strong>列の幅 :</strong>] 14</li>
     </ul>
-    これらの既定の設定は変更できます。</td>
+これらの既定の設定は変更できます。</td>
     </tr>
     <tr class="even">
     <td>CALC</td>
@@ -379,7 +378,7 @@ Phyllis は、次の情報を入力する [**列のヘッダー**] ダイアロ�
     </tr>
     <tr class="even">
     <td>塗りつぶし</td>
-    <td>単一引用符に含める文字でセルを塗りつぶします。 文字を入力しない場合、列は空になります。 たとえば、省略記号 (...) で列を塗りつぶす場合、[<strong>塗りつぶし</strong>] に 「<strong>.</strong>」を入力します。</td>
+    <td>単一引用符に含める文字でセルを塗りつぶします。 文字を入力しない場合、列は空になります。 たとえば、省略記号 (...) で列を塗りつぶす場合、[<strong>塗りつぶし</strong>] に「 <strong>.</strong>」を入力します。</td>
     </tr>
     <tr class="odd">
     <td>[ページ]</td>
@@ -387,12 +386,11 @@ Phyllis は、次の情報を入力する [**列のヘッダー**] ダイアロ�
     </tr>
     <tr class="even">
     <td>WKS</td>
-    <td>Excel ワークシートから引き出されるデータを表示します。 [<strong>WKS</strong>] 列タイプを選択すると、既定の設定が次の行に対して自動的に指定されます :
-    <ul>
+    <td>Excel ワークシートから引き出されるデータを表示します。 [<strong>WKS</strong>] 列タイプを選択すると、既定の設定が次の行に対して自動的に指定されます : <ul>
     <li>[<strong>会計年度 :</strong>] [定期処理]</li>
     <li>[<strong>期間 :</strong>] [基準]</li>
     </ul>
-    これらの既定の設定は変更できます。</td>
+これらの既定の設定は変更できます。</td>
     </tr>
     <tr class="odd">
     <td>ATTR</td>

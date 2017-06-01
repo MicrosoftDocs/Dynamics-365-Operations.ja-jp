@@ -3,10 +3,10 @@ title: "Dynamics 365 for Operations アプリ用のプロジェクト時間入�
 description: "このトピックでは、プロジェクト時間入力モバイル ワークスペースに関する情報を提供します。 このワークスペースにより、ユーザーはモバイル デバイスを使用して入力をし、プロジェクトに対して時間を節約できます。"
 author: annbe
 manager: AnnBe
-ms.date: 04/21/2017
+ms.date: 05/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
 ms.reviewer: annbe
@@ -19,10 +19,10 @@ ms.author: annbe
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: e3e0be36c045acc3750efbb739d79d81ab937c65
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 9c592c301908898915164e9236850759b73543fe
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -31,7 +31,6 @@ ms.lasthandoff: 04/25/2017
 
 [!include[banner](../includes/banner.md)]
 
-"[!include[banner](../includes/banner.md)]"
 
 
 このトピックでは、Dynamics 365 for Operations モバイル アプリ用の、プロジェクト時間入力モバイル ワークスペースについて説明します。 このワークスペースにより、ユーザーはモバイル デバイスを使用して入力をし、プロジェクトに対して時間を節約できます。
@@ -71,7 +70,7 @@ ms.lasthandoff: 04/25/2017
 <tr class="odd">
 <td>Microsoft Dynamics 365 for Operations バージョン 1611 およびプラットフォーム更新プログラム 3 以降を実装する必要があります。</td>
 <td>システム管理者</td>
-<td>Dynamics 365 for Operations をまだ組織に配置していない場合、システム管理者は <a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/deployment/deploy-demo-environment">Microsoft Dynamics 365 for Operations デモ環境の配置</a> を確認する必要があります。</td>
+<td>Dynamics 365 for Operations をまだ組織に配置していない場合、システム管理者は <a href="/dynamics365/operations/dev-itpro/deployment/deploy-demo-environment">Microsoft Dynamics 365 for Operations デモ環境の配置</a> を確認する必要があります。</td>
 </tr>
 <tr class="even">
 <td>KB 4018050 を実装する必要があります。</td>
@@ -79,9 +78,9 @@ ms.lasthandoff: 04/25/2017
 <td>KB 4018050 は、<strong>プロジェクト時間入力</strong> モバイル ワークスペースを含む X++ の更新またはメタデータ修正プログラムです。 KB 4018050 を実装するには、システム管理者は次の手順に従う必要があります。
 <ol>
 <li>Microsoft Dynamics Lifecycle Services (LCS) から KB 4018050 をダウンロードします。</li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">メタデータ修正プログラムをインストールします</a>。</li>
-<li><strong>ApplicationSuite</strong> と <strong>ProjectMobile</strong> モデルを含む <a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/deployment/create-apply-deployable-package">配置可能パッケージを作成し</a>、配置可能パッケージを LCS にアップロードします。</li>
-<li>Dynamics 365 for Operations システムに <a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">配置可能パッケージを適用</a> します。</li>
+<li><a href="/dynamics365/operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">メタデータ修正プログラムをインストールします。</a></li>
+<li><strong>ApplicationSuite</strong> と <strong>ProjectMobile</strong> モデルを含む <a href="/dynamics365/operations/dev-itpro/deployment/create-apply-deployable-package">配置可能パッケージを作成し</a>、配置可能パッケージを LCS にアップロードします。</li>
+<li>Dynamics 365 for Operations システムに<a href="/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">配置可能パッケージを適用</a>します。</li>
 </ol></td>
 </tr>
 <tr class="odd">

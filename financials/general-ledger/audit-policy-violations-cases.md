@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: AuditPolicyAdditionalOption, AuditPolicyRule
 audience: Application User
@@ -19,10 +19,10 @@ ms.author: ryansand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: fbc8dd8f14bd6607081f7c479830c142a912339a
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 882f99beff256f96b6879c4af4c4ca8a6c4dbec3
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -60,7 +60,7 @@ ms.lasthandoff: 04/25/2017
 -   [**リスト検索**] クエリ タイプに基づくポリシー ルールでは、ポリシーは、ドキュメント選択の日付の範囲の最終日に有効な監視対象のエンティティのドキュメントを評価します。
 
 
-詳細については、「[Audit policy rules](audit-policy-rules.md)」を参照してください。
+詳細については、「[監査ポリシー ルール](audit-policy-rules.md)」を参照してください。
 
 
 

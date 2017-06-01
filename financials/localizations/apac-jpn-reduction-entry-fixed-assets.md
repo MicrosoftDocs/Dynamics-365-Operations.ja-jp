@@ -1,28 +1,27 @@
 ---
 title: "固定資産の圧縮記帳の設定"
 description: "この記事は、固定資産の圧縮記帳に関する情報および、固定資産の圧縮記帳を Microsoft Dynamics 365 for Operations で設定する方法について説明します。 圧縮記帳は、政府助成金を使用して取得される固定資産の特別な会計処理です。 耐用年数中に、これらの資産の法人所得税を繰延する場合に使用できます。"
-author: ShylaThompson
+author: rake-gui
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: AssetReductionEntryMassUpdate_JP, AssetReductionEntryProfile_JP
 audience: Application User
-ms.reviewer: ShylaThompson
+ms.reviewer: shylaw
 ms.search.scope: AX 7.0.0, Operations, Core
 ms.custom: 2871
-ms.assetid: 14d0b482-f71c-432a-905e-04e19eda4313
 ms.search.region: Japan
-ms.author: leguo
+ms.author: ralin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: 5416380c565d1ab75d384fb4407101def2606be8
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 0a9f333dd6ba32dec25f6d338bc247fd328511c2
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -95,14 +94,6 @@ Microsoft Dynamics 365 for Operations では、既存の固定資産の機能の
 | カテゴリ           | 前提条件                                                                                                                                               |
 |--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | コンフィギュレーション キー | **資産コンフィギュレーション** キーが、アプリケーション オブジェクト ツリーの [**データ ディクショナリ**] &gt; [**コンフィギュレーション キー**] ノードで使用可能であることを確認します。 |
-
-
-
-<a name="see-also"></a>参照
---------
-
-[Microsoft Dynamics AX 2012 R3 固定資産ローカライズ機能セット - 日本](https://mbs.microsoft.com/partnersource/global/deployment/documentation/white-papers/msdAX2012R3JapanFixedAssets)
-
 
 
 

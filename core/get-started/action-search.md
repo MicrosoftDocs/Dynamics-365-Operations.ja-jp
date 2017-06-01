@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.search.scope: AX 7.0.0, Operations, Core
@@ -17,10 +17,10 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: 2ff12088d432d3e8693dfd9662cb0ead82fd0191
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: ef5709889dcabd4c9ed760f57d210956f38c37e9
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -70,7 +70,7 @@ Ctrl + /、または Alt + Q を押しても、アクション検索を開始で
 [![手持在庫](./media/on-hand-inventory.png)](./media/on-hand-inventory.png)
 
 ## <a name="action-search-vs-navigation-search"></a>アクション検索対ナビゲーション検索
-アクション検索がページで検索し実行するアクションであるのに対し、Dynamics 365 for Operations の複数のページを検索し移動する別の検索メカニズムがあります。 この機能の詳細については、「[Navigation search](navigation-search.md)」の記事を参照してください。
+アクション検索がページで検索し実行するアクションであるのに対し、Dynamics 365 for Operations の複数のページを検索し移動する別の検索メカニズムがあります。 この機能の詳細については、「[ナビゲーション検索](navigation-search.md)」の記事を参照してください。
 
 
 

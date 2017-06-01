@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
 ms.search.scope: AX 7.0.0, Operations, Core
@@ -17,10 +17,10 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: 052cec3010c0d5ecbb9ed341fb23d0ec64682467
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 1924562f866ecdbb6fa6d3d0a9dc7627387f2d6a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -106,13 +106,11 @@ ms.lasthandoff: 04/25/2017
     <td>特定の組織階層内のユーザー</td>
     <td><ol>
     <li>[<strong>階層タイプ</strong>] 一覧の [<strong>階層選択</strong>] タブの、[<strong>階層</strong>] を選択したのち、ステップの割り当て先の階層グループを選択します。</li>
-    <li>システムは、一定範囲のユーザー名を階層から取得する必要があります。 これらの名前は、ステップを割り当てることができるユーザーを表します。 システムで取得するユーザー名の範囲について、その開始点と終了点を指定するには、次の手順に従います。
-    <ol>
+    <li>システムは、一定範囲のユーザー名を階層から取得する必要があります。 これらの名前は、ステップを割り当てることができるユーザーを表します。 システムで取得するユーザー名の範囲について、その開始点と終了点を指定するには、次の手順に従います。 <ol>
     <li>開始点を指定するには、[<strong>開始</strong>] 一覧から人物を選択します。</li>
     <li>終了点を指定するには、[<strong>条件の追加</strong>] をクリックします。 次に、階層のどこで名前の取得を止めるかを示す条件を入力します。</li>
     </ol></li>
-    <li>[<strong>階層オプション</strong>] で、ステップを割り当てる範囲内のユーザーを指定します。
-    <ul>
+    <li>[<strong>階層オプション</strong>] で、ステップを割り当てる範囲内のユーザーを指定します。 <ul>
     <li>[<strong>取得したすべてのユーザーに割り当てる</strong>] – ステップは範囲内のすべてのユーザーに割り当てられます。</li>
     <li>[<strong>取得した最後のユーザーのみに割り当てる</strong>] – ステップは、範囲内の最後のユーザーのみに割り当てられます。</li>
     <li>[<strong>次の条件のユーザーを除外します</strong>] – ステップは、特定の条件に該当する範囲内のどのユーザーにも割り当てられません。 条件を指定するには、[<strong>条件の追加</strong>] をクリックします。</li>
@@ -211,13 +209,11 @@ ms.lasthandoff: 04/25/2017
     <td>特定の組織階層内のユーザー</td>
     <td><ol>
     <li>[<strong>階層タイプ</strong>] 一覧の [<strong>階層選択</strong>] タブの、[<strong>階層</strong>] を選択したのち、ドキュメントをエスカレートする先の階層グループを選択します。</li>
-    <li>システムは、一定範囲のユーザー名を階層から取得する必要があります。 これらの名前は、ドキュメントのエスカレート先に指定できるユーザーを表します。 システムで取得するユーザー名の範囲について、その開始点と終了点を指定するには、次の手順に従います。
-    <ol>
+    <li>システムは、一定範囲のユーザー名を階層から取得する必要があります。 これらの名前は、ドキュメントのエスカレート先に指定できるユーザーを表します。 システムで取得するユーザー名の範囲について、その開始点と終了点を指定するには、次の手順に従います。 <ol>
     <li>開始点を指定するには、[<strong>開始</strong>] 一覧から人物を選択します。</li>
     <li>終了点を指定するには、[<strong>条件の追加</strong>] をクリックします。 次に、階層のどこで名前の取得を止めるかを示す条件を入力します。</li>
     </ol></li>
-    <li>[<strong>階層オプション</strong>] で、ドキュメントをエスカレートできる範囲内のユーザーを指定します。
-    <ul>
+    <li>[<strong>階層オプション</strong>] で、ドキュメントをエスカレートできる範囲内のユーザーを指定します。 <ul>
     <li>[<strong>取得したすべてのユーザーに割り当てる</strong>] – ドキュメントは範囲内のすべてのユーザーにエスカレートされます。</li>
     <li>[<strong>取得した最後のユーザーのみに割り当てる</strong>] – ドキュメントは、範囲内の最後のユーザーのみにエスカレートされます。</li>
     <li>[<strong>次の条件のユーザーを除外します</strong>] – ドキュメントは、特定の条件に該当する範囲内のどのユーザーにもエスカレートされません。 条件を指定するには、[<strong>条件の追加</strong>] をクリックします。</li>

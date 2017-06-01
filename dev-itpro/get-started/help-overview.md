@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, Developer, IT Pro
 ms.reviewer: annbe
@@ -18,10 +18,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 6f785ac8b9a8be503bf9122f21716f745b17115b
-ms.openlocfilehash: f08434b4c818460009644e77da1b37ba86cc1d54
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 181ad9a7ab4e83ce9eb34312e93b1ebdeb2e04eb
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/27/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -38,10 +38,14 @@ Microsoft Dynamics 365 for Operations には、2 つの主要なコンポーネ�
 -   ドキュメント サイト
 -   タスク ガイド
 
-次のスクリーン ショットに示すように、記事と Dynamics Online 365 for Operations の [ヘルプ] ウィンドウのタスク ガイドの両方にアクセスできます。 [![Help ウィンドウ](./media/help-pane-ops-task-guides-1024x741.png)](./media/help-pane-ops-task-guides.png) この記事は、ヘルプ システムについて説明し、組織のカスタム ドキュメントおよびトレーニング リソースの作成方法を説明します。
+次のスクリーン ショットに示すように、記事と Dynamics Online 365 for Operations の [ヘルプ] ウィンドウのタスク ガイドの両方にアクセスできます。
+
+![[ヘルプ] ウィンドウ](./media/help-pane-ops-task-guides-1024x741.png)
+
+この記事は、ヘルプ システムについて説明し、組織のカスタム ドキュメントおよびトレーニング リソースを作成方法を説明します。
 
 ## <a name="help-on-docsmicrosoftcom"></a>docs.microsoft.com のヘルプ
-docs.microsoft.com サイト ([docs.microsoft.com/dynamics365/operations](/dynamics365/#pivot=solutions&panel=solutions_operations) が Dynamics 365 for Operations の製品ドキュメントの基本ソースです。 サイトには次のような機能が含まれています。
+docs.microsoft.com サイト ([docs.microsoft.com/dynamics365/operations](/dynamics365/#pivot=solutions&panel=solutions_operations)) が Dynamics 365 for Operations の製品ドキュメントの基本ソースです。 サイトには次のような機能が含まれています。
 
 -   **最新のコンテンツへのアクセス** – サイトは、製品のドキュメントのより速い、より柔軟な作成、出荷、および更新方法を提供します。 したがって、最新の技術情報にアクセスできることを保証するために役立ちます。
 -   **専門家が記述した内容** – サイトは Microsoft 内外のコミュニティ メンバーによって拡張できる豊富な製品ドキュメントのセットを提供します。
@@ -50,13 +54,48 @@ docs.microsoft.com サイト ([docs.microsoft.com/dynamics365/operations](/dynam
 
 以前のヘルプ Wiki から docs にすべてのコンテンツを移行しました。 新しいサイトを提供できることを嬉しく思います、ご期待ください。
 
-### <a name="when-can-we-use-it"></a>いつ使用することができますか。
+### <a name="searching-on-docsmicrosoftcom"></a>docs.microsoft.com での検索
+コンテンツを検索する方法について多くの質問が寄せられています。 当サイトでは、Dynamics 365 for Operations に関するページから始めると、検索の範囲は Dynamics 365 for Operations のコンテンツに限定されます。 範囲を解除するには、検索ボックスの [Operations] の横にある [X] をクリックします。 
+![検索](./media/search-scope.png)
 
-docs の内容は今すぐお読みいただけます。これは完全にパブリックで、サインインせずに検索できます。 内容の検索にはお気に入りの検索エンジンを使用できます。 サインインすることにより、必要に応じてサイトの記事にコメントできます。
+任意の検索エンジンを使ってコンテンツを探すこともできます。 最適な結果を得るには、次のようなサイト検索を使用することをお勧めします: site:docs.microsoft.com "検索用語"  
+![サイト検索](./media/site-search.png)
+
+![サイト検索の結果](./media/site-search-results.png)
+
+
+### <a name="how-can-i-contribute"></a>どのように貢献できますか? 
+
+コメントをお送りください。 
+
+1 [**コメント**] をクリックして、ページ下部のコメントに移動します。
+
+![コメント](./media/comments.png)
+
+2 コメントを入力して、[**コメントを投稿**] をクリックします。
+
+![コメントを投稿](./media/before-signin.png)
+
+3. サインインするアカウントの種類を選択します。  
+このサイトを既存のアカウント (Twitter、Facebook、Microsoft など) に関連付けるために、左側にあるいずれかのアイコンをクリックします。 
+
+又は 
+
+このサイト用に新しいアカウントを作成するために、右側で電子メール アドレスと新しいパスワードを入力します。 
+
+![サインイン オプション](./media/signin-options.png)
 
 
 ## <a name="task-guides"></a>タスク ガイド
-タスク ガイドは、制御された、ガイド付きでインタラクティブな方法による、タスクまたは業務プロセスの手順の説明です。 [ヘルプ] ウィンドウからタスク ガイドを開く (再生する) ことができます。 最初にタスク ガイドをクリックすると、[ヘルプ] ウィンドウには、タスクのステップ バイ ステップの手順が表示されます。 ローカライズされたタスク ガイドが利用可能になりました。 [![タスク ガイドの読み取りビュー](./media/task-guide-ops-1024x742.png)](./media/task-guide-ops.png) ガイド付きのインタラクティブな経験を開始するには、[ヘルプ] ページ下部の [**タスク ガイドの開始**] をクリックします。 黒のポインタが、実行する必要があるアクションを開いて、表示します。 UI に表示される指示に従い、指示されたデータを入力します。 [![タスク ガイドの手順書](./media/task-guide-step-1-ops.png)](./media/task-guide-step-1-ops.png) **重要:** タスク ガイドの再生時に入力したデータは実際のものです。 実稼働環境である場合、データは現在使用している会社で入力されます。
+タスク ガイドは、制御された、ガイド付きでインタラクティブな方法による、タスクまたは業務プロセスの手順の説明です。 [ヘルプ] ウィンドウからタスク ガイドを開く (再生する) ことができます。 最初にタスク ガイドをクリックすると、[ヘルプ] ウィンドウには、タスクのステップ バイ ステップの手順が表示されます。 ローカライズされたタスク ガイドが利用可能になりました。 
+
+![タスク ガイドの読み取りビュー](./media/task-guide-ops-1024x742.png)
+
+ガイドのあるインタラクティブな経験を開始するには、[ヘルプ] ページ下部の [**タスク ガイドの開始**] をクリックします。 黒のポインタが、実行する必要があるアクションを開いて、表示します。 UI に表示される指示に従い、指示されたデータを入力します。 
+![タスク ガイドの手順書](./media/task-guide-step-1-ops.png)
+
+> [!IMPORTANT] 
+> タスク ガイドの再生時には、実際のデータを入力します。 実稼働環境である場合、データは現在使用している会社で入力されます。
 
 ### <a name="it-all-begins-with-task-recorder"></a>すべてタスク レコーダーから始まります。
 
@@ -72,7 +111,9 @@ docs の内容は今すぐお読みいただけます。これは完全にパブ
 独自のタスク記録を作成するか、Microsoft の提供するタスク記録をダウンロードしてカスタマイズすることができます。 したがって、固有の Dynamics 365 for Operations の実装を反映する、組織のカスタマイズされたヘルプを作成できます。 Dynamics 365 for Operations の [ヘルプ] ウィンドウにタスク記録を表示させてタスク ガイドとして再生するには、記録を LCS の BPM ライブラリに保存します。 パートナーの場合、ライブラリを会社のライブラリに昇格してソリューションに含める場合、顧客が使用できます。 詳細な手順については、「[ドキュメントとトレーニングの作成にタスク記録を使用](../user-interface/task-recorder.md)」を参照してください。
 
 ## <a name="in-product-help"></a>製品内ヘルプ
-Dynamics 365 for Operations 内のヘルプ コンテンツにアクセスするには、[**ヘルプ**] (**?**) アイコンをクリックしてからヘルプを選択するか、Ctrl + Shift + ? を押します。 どちらの場合も、[ヘルプ] ウィンドウが開きます。 [ヘルプ] ウィンドウから記事またはタスク ガイドにアクセスできます。 [![Help ウィンドウ](./media/help-pane-wiki-1024x684.png)](./media/help-pane-wiki.png)
+Dynamics 365 for Operations 内のヘルプ コンテンツにアクセスするには、[**ヘルプ**] (**?**) アイコンをクリックしてからヘルプを選択するか、Ctrl + Shift + ? を押します。 どちらの場合も、[ヘルプ] ウィンドウが開きます。 [ヘルプ] ウィンドウから記事またはタスク ガイドにアクセスできます。 
+
+![[ヘルプ] ウィンドウ](./media/help-pane-wiki-1024x684.png)
 
 ### <a name="accessing-articles-from-the-help-pane"></a>[ヘルプ] ウィンドウから記事へのアクセス
 
@@ -80,19 +121,24 @@ Dynamics 365 for Operations 内のヘルプ コンテンツにアクセスする
 
 ### <a name="accessing-task-guides-from-the-help-pane"></a>ヘルプ ウィンドウからタスク ガイドへのアクセス
 
-[ヘルプ] ウィンドウからタスク ガイドにアクセスできるようになる前に、システム管理者が Dynamics 365 for Operations の [**システム パラメーター**] ページに進み、設定をコンフィギュレーションする必要があります。 **メモ :**
+[ヘルプ] ウィンドウからタスク ガイドにアクセスできるようになる前に、システム管理者が Dynamics 365 for Operations の [**システム パラメーター**] ページに進み、設定をコンフィギュレーションする必要があります。 
 
--   ヘルプを設定するには、Dynamics 365 for Operations を導入したテナントと同じテナントのアカウントを使用してサインインする必要があります。
--   ローカル仮想ハード ドライブ (VHD) で実行されている Dynamics 365 for Operations のインスタンスから、LCS ライブラリに接続することはできません。
+> [!NOTE]
+> -   ヘルプを設定するには、Dynamics 365 for Operations を導入したテナントと同じテナントのアカウントを使用してサインインする必要があります。
+> -   ローカル仮想ハード ドライブ (VHD) で実行されている Dynamics 365 for Operations のインスタンスから、LCS ライブラリに接続することはできません。
 
-[![システム パラメーター フォームとヘルプ設定](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png) **システム パラメーター** ページで次の手順に従います。
+![システム パラメーター フォームとヘルプ設定](./media/system-parameters_ops-1024x437.png)
 
-1.  **重要:**[ヘルプ] タブを初めて開く際には、Lifecycle Services に接続する必要があります。 フォームの中程のリンクをクリックし、接続されるまで待機し、ダイアログ ボックスを閉じ、[OK] をクリックしてパラメーター フォームを取得します。[![LCS に接続](./media/connect-to-lcs-crop-1024x365.png)](./media/connect-to-lcs-crop.png)
+[**システム パラメーター**] ページで、次の手順に従います。
+
+1.  **重要:**[ヘルプ] タブを初めて開く際には、Lifecycle Services に接続する必要があります。 フォームの中程のリンクをクリックし、接続されるまで待機し、ダイアログ ボックスを閉じ、[OK] をクリックしてパラメーター フォームを取得します。
+![LCS に接続](./media/connect-to-lcs-crop-1024x365.png)
 2.  接続する Lifecycle Services プロジェクトを選択します。
 3.  タスク記録を取得する BPM ライブラリ (選択したプロジェクト内) を選択します。
 4.  BPM ライブラリの表示順序を選択します。 これにより、ライブラリからのタスク記録が [ヘルプ] ウィンドウに表示される順序が決まります。
 
-システム管理者がこれらの手順を完了したら、[**ヘルプ**] ウィンドウを開いて [タスク ガイド] タブをクリックします。 これで、Dynamics 365 for Operations の現在のページに対応するタスク ガイドを表示できます。 タスク ガイドがない場合は、検索するキーワードを入力できます。 [ヘルプ] ウィンドウでタスク ガイドをクリックした後、[ヘルプ] ウィンドウにはステップ バイ ステップの手順が表示され、タスク ガイドが再生できます。 [![タスク ガイドの読み取りビュー](./media/task-guide-ops-1024x742.png)](./media/task-guide-ops.png)
+システム管理者がこれらの手順を完了したら、[**ヘルプ**] ウィンドウを開いて [タスク ガイド] タブをクリックします。 これで、Dynamics 365 for Operations の現在のページに対応するタスク ガイドを表示できます。 タスク ガイドがない場合は、検索するキーワードを入力できます。 [ヘルプ] ウィンドウでタスク ガイドをクリックした後、[ヘルプ] ウィンドウにはステップ バイ ステップの手順が表示され、タスク ガイドが再生できます。 
+![タスク ガイドの読み取りビュー](./media/task-guide-ops-1024x742.png)
 
 ### <a name="where-are-the-translated-task-guides"></a>翻訳されたタスク ガイドはどこにありますか。
 

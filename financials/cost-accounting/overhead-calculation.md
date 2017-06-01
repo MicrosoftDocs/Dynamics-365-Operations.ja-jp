@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CAMActualVersion, CAMBudgetVersion, CAMOverheadCalculation
 audience: Application User
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: bb02e0756d675726f6c3b9f456b980a7ed695463
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: a24c24f842e4f1b1c7806c2fb2ccbd1329fe4851
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -53,7 +53,8 @@ ms.lasthandoff: 04/25/2017
 -   年度
 -   会計年度期間
 
-間接費計算は、バージョンとは無関係に実行されます。 そのため、実際のバージョンの前に予算バージョンを計算することができます。 間接費計算は、次の図に示されているように 4 つのステップで構成されます。 各ステップで、仕訳入力のある仕訳ヘッダーが作成されます。 この仕訳ヘッダーは、各計算ステップの入力データを保持します。 ポリシーやルールが各仕訳帳明細行に適用され、コスト エントリが出力として生成されます。 そのため、常に完全なトレーサビリティがあります。 [![間接費計算](./media/period-cost-calculation.png)](./media/period-cost-calculation.png)
+間接費計算は、バージョンとは無関係に実行されます。 そのため、実際のバージョンの前に予算バージョンを計算することができます。 間接費計算は、次の図に示されているように 4 つのステップで構成されます。 各ステップで、仕訳入力のある仕訳ヘッダーが作成されます。 この仕訳ヘッダーは、各計算ステップの入力データを保持します。 ポリシーやルールが各仕訳帳明細行に適用され、コスト エントリが出力として生成されます。 そのため、常に完全なトレーサビリティがあります。 
+[![間接費計算](./media/period-cost-calculation.png)](./media/period-cost-calculation.png)
 
 ## <a name="calculate-and-allocate-the-electricity-overhead-cost"></a>電気間接費の計算および配賦
 財務会計では、電気などの一部のコストは一括比例配分として登録されます。 したがって、コスト会計には詳細な管理情報は提供されません。 コスト会計では、すべての組織単位およびレベルに正確な管理情報を提供するために、コストが組織単位をフローする必要があります。 このフローは、正確な消費記録もしくは適正な評価のいずれかに基づいている必要があります。 一般会計では、電気コストは以下の表に示されているように転記できます。
@@ -622,7 +623,7 @@ ms.lasthandoff: 04/25/2017
 
 ### <a name="step-4-process-the-cost-allocation-calculation"></a>手順 4: コスト配賦計算を処理する
 
-配賦は、配賦基準を適用することによって、コスト オブジェクトの残高を他のコスト オブジェクトに配賦するために使用します。 Microsoft Dynamics 365 for Operations は、相互配賦手法をサポートしています。 相互配賦手法では、補助コスト オブジェクトが交換する相互サービスが完全に認識されます。 システムは、配賦を実行する正しい順序を自動的に決定します。 コスト オブジェクトの残高は 1 つの配賦基準によって配賦されます。 コスト オブジェクト分析コードとその各メンバーにまたがる配賦がサポートされています。 配賦の順序は、コスト制御ユニットによって制御されます。 [![](./media/reciprocal-method.png)](./media/reciprocal-method.png)
+配賦は、配賦基準を適用することによって、コスト オブジェクトの残高を他のコスト オブジェクトに配賦するために使用します。 Microsoft Dynamics 365 for Operations は、相互配賦手法をサポートしています。 相互配賦手法では、補助コスト オブジェクトが交換する相互サービスが完全に認識されます。 システムは、配賦を実行する正しい順序を自動的に決定します。 コスト オブジェクトの残高は 1 つの配賦基準によって配賦されます。 コスト オブジェクト分析コードとその各メンバーにまたがる配賦がサポートされています。 配賦の順序は、コスト制御ユニットによって制御されます。 [![相互手法](./media/reciprocal-method.png)]
 
 #### <a name="define-the-cost-allocation"></a>コスト配賦の定義
 
