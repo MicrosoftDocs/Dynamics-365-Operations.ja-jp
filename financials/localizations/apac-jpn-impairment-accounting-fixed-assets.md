@@ -1,7 +1,7 @@
 ---
 title: "固定資産の減損会計"
 description: "このトピックでは、日本の固定資産の減損会計に関する情報について説明します。"
-author: ShylaThompson
+author: RichardLuan
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
@@ -10,11 +10,11 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: AssetImpairmentAssetTransInquire_JP, AssetImpairmentIndicator_JP, AssetImpairmentManageTestResult_JP
 audience: Application User
+ms.reviewer: shylaw
 ms.search.scope: AX 7.0.0, Operations, Core
 ms.custom: 28811
 ms.assetid: db96c6bb-c2b1-4e26-b711-33caa49eb29f
 ms.search.region: Japan
-ms.author: leguo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation

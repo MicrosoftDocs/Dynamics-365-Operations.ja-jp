@@ -1,7 +1,7 @@
 ---
 title: "固定資産配賦ルール"
 description: "日本では、固定資産は管理部門に登録され、減価償却量は使用部門間で割り当てられる必要があります。 減価償却金額を割合で複数の財務分析コードに割り当てる配賦ルールを設定できます。 この記事は、固定資産配賦ルールについてよく寄せられる質問に回答します。"
-author: ShylaThompson
+author: RichardLuan
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
@@ -10,12 +10,11 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: AssetAllocationRuleSetup_CN
 audience: Application User
-ms.reviewer: ShylaThompson
+ms.reviewer: shylaw
 ms.search.scope: AX 7.0.0, Operations, Core
 ms.custom: 10194
 ms.assetid: ba1302f1-5b7d-44c4-af00-ec629f388e19
 ms.search.region: Japan
-ms.author: leguo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation

@@ -1,7 +1,7 @@
 ---
 title: "キャッシュ生成単位の固定資産の減損会計"
 description: "この記事では、Microsoft Dynamics AX に含まれる固定資産の減損の機能を紹介します。 この記事の主な目的は、ユーザーに減損会計の概念モデルの概要を示すことです。"
-author: rake-gui
+author: RichardLuan
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
@@ -14,7 +14,6 @@ ms.reviewer: shylaw
 ms.search.scope: AX 7.0.0, Operations, Core
 ms.custom: 25691
 ms.search.region: Japan
-ms.author: ralin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
