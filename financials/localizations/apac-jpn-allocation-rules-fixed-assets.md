@@ -15,6 +15,7 @@ ms.search.scope: AX 7.0.0, Operations, Core
 ms.custom: 10194
 ms.assetid: ba1302f1-5b7d-44c4-af00-ec629f388e19
 ms.search.region: Japan
+ms.author: RichardLuan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation

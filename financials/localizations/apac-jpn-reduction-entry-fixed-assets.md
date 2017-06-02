@@ -1,7 +1,7 @@
 ---
 title: "固定資産の圧縮記帳の設定"
 description: "この記事は、固定資産の圧縮記帳に関する情報および、固定資産の圧縮記帳を Microsoft Dynamics 365 for Operations で設定する方法について説明します。 圧縮記帳は、政府助成金を使用して取得される固定資産の特別な会計処理です。 耐用年数中に、これらの資産の法人所得税を繰延する場合に使用できます。"
-author: RichardLuan
+author: rake-gui
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
@@ -14,6 +14,7 @@ ms.reviewer: shylaw
 ms.search.scope: AX 7.0.0, Operations, Core
 ms.custom: 2871
 ms.search.region: Japan
+ms.author: RichardLuan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
