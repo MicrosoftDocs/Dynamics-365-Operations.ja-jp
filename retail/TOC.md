@@ -15,8 +15,9 @@
 ## [Retail ハードウェア ステーションのコンフィギュレーションとインストール](retail-hardware-station-configuration-installation.md)
 ## [小売タイムと出勤](retail-time-attendance.md)
 # Modern 販売時点管理 (MPOS) とクラウド POS
-## ハードウェア周辺機器
+## ハードウェアおよび周辺機器
 ### [小売周辺機器の概要](retail-peripherals-overview.md)
+### [小売の周辺機器シミュレーター](retail-peripheral-simulator.md)
 ### [Microsoft によってテストされた POS ハードウェア周辺機器](microsoft-tested-pos-hardware-peripherals.md)
 ### [チャネル クライアント、レジスター、ハードウェア ステーションの定義と管理](define-maintain-channel-clients-registers-hw-stations.md)
 ## 画面レイアウト
@@ -42,6 +43,7 @@
 ## レシート
 ### [レシート テンプレートの設定](receipt-templates-printing.md) 
 ### [MPOS からの電子メール レシートの送信](email-receipts.md)
+## [POS のタスク レコーダーとヘルプ](task-recorder-retail-pos.md)
 # 監視と分析
 ## [販売と利益幅のパフォーマンスの監視](monitor-sales-margin-performance.md)
 ## [販売のトレンドとパターンの分析](analyze-sales-trends-patterns.md)
@@ -53,6 +55,7 @@
 ## [価格調整と割引](price-adjustments-discounts.md)
 ## [重複する割引の最適な組み合わせの決定](optimal-combination-overlapping-discounts.md)
 ## [チャネル固有の割引の定義](define-channel-specific-discounts.md)
+## [小売販売のクーポンの作成](retail-coupons.md)
 # 製品と販売促進
 ## [小売階層](retail-hierarchies.md)
 ## [属性の作成と管理](create-manage-attributes.md)
@@ -60,6 +63,7 @@
 ## [バーコードの設定](set-up-bar-codes.md)
 ## [バーコード マスクの設定](set-up-bar-code-masks.md)
 ## [品揃えの設定](set-up-assortments.md)
+## [品揃えの範囲外の製品の販売と返品](sell-return-outside-assortments.md)
 # ロイヤルティ
 ## [顧客ロイヤルティ プログラムの設定](set-up-customer-loyalty-program.md)
 # 在庫
@@ -69,15 +73,15 @@
 ## [組織と組織階層 (Commerce エッセンシャル)](organizational-hierarchies-commerce-essentials.md)
 # [IT プロフェッショナルおよび開発者向けコンテンツ](dev-itpro/TOC.md)
 
-# [財務](/dynamics365/operations/financials/index)
+# [財務](/dynamics365/unified-operations/financials/index)
 
-# [人事管理](/dynamics365/operations/human-resources/index)
+# [人事管理](/dynamics365/unified-operations/talent/index)
 
-# [サプライ チェーン マネジメント](/dynamics365/operations/supply-chain/index)
+# [サプライ チェーン マネジメント](/dynamics365/unified-operations/supply-chain/index)
 
-# [開発者と管理者](/dynamics365/operations/dev-itpro/index)
+# [開発者と管理者](/dynamics365/unified-operations/dev-itpro/index)
 
 # その他のリソース
-## [Dynamics 365 for Operations の用語集](/dynamics365/operations/get-started/glossary?toc=/dynamics365/operations/retail/toc.json)
-## [新機能および変更された機能](/dynamics365/operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/operations/retail/toc.json)
+## [Dynamics 365 for Retail の用語集](/dynamics365/unified-operations/get-started/glossary?toc=/dynamics365/unified-operations/retail/toc.json)
+## [新機能および変更された機能](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/unified-operations/retail/toc.json)
 

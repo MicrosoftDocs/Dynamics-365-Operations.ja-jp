@@ -43,6 +43,8 @@
 ### [仕入先の設定](procurement/set-up-vendor-accounts.md)
 ### [外部仕入先との仕入先コラボレーション](procurement/vendor-collaboration-work-external-vendors.md)
 ### [顧客との仕入先コラボレーション](procurement/vendor-collaboration-work-customers-dynamics-365-operations.md)
+### [パンチアウト eProcurement の外部カタログの使用](procurement/use-external-catalogs-for-punchout.md)
+### [パンチアウト eProcurement の外部カタログの設定](procurement/set-up-external-catalog-for-punchout.md)
 ### [仕入先ポータルを使用した仕入先とのコラボレーション](procurement/collaborate-vendors-vendor-portal.md)
 ### [仕入先コラボレーションのモバイル ワークスペース](procurement/vendor-collaboration-mobile-workspace.md)
 ### [仕入先ポータルのユーザー セキュリティ](procurement/configure-security-vendor-portal-users.md)
@@ -50,19 +52,37 @@
 ### [購買契約](procurement/purchase-agreements.md)
 ## 製品受領書と請求書作成
 ### [発注書に対する製品受領書](procurement/product-receipt-against-purchase-orders.md)
-### [仕入先請求書の概要](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/operations/supply-chain/toc.json)
-### [仕入先転記プロファイル](/dynamics365/operations/financials/accounts-payable/vendor-posting-profiles?toc=/dynamics365/operations/supply-chain/toc.json)
+### [仕入先請求書の概要](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [仕入先転記プロファイル](/dynamics365/unified-operations/financials/accounts-payable/vendor-posting-profiles?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 # 製品情報管理
-## 製品情報
-### [BOM と式](production-control/bill-of-material-bom.md)
-### [BOM デザイナーの機能](production-control/bom-designer-functionality.md)
-### [製品分析コード](pim/product-dimensions.md)
-### [分析コードおよび製品バリアントの既定の注文設定](production-control/default-order-settings.md)
-### [製品番号の分類](pim/product-variant-identification-nomenclature.md)
-### [製品関連の翻訳のよくある質問](pim/translations-product-related-information.md)
-### [販売プロセスでのシリアル番号の登録](sales-marketing/register-serial-numbers-sales-process.md)
-### [注文入力時の製品検索](pim/search-products-product-variants.md)
-## 製品コンフィギュレーションの作成
+## [製品情報の概要](pim/product-information.md)
+## 製品カテゴリの管理
+## 製品情報の管理
+### 製品定義の管理
+#### [製品番号の分類](pim/product-variant-identification-nomenclature.md)
+#### 製品テンプレート
+#### [製品分析コード](pim/product-dimensions.md)
+#### 製品属性
+#### 製品の写真と添付ファイル
+#### 製品 ID
+#### [製品情報の翻訳についてよく寄せられる質問](pim/translations-product-related-information.md)
+### 製品を法人にリリース
+### 製品の検索
+#### [注文入力時の製品検索](pim/search-products-product-variants.md)
+### 計画のための製品の準備
+#### [分析コードおよび製品バリアントの既定の注文設定](production-control/default-order-settings.md)
+#### 予測モデルと品目配賦キー
+### 生産のための製品の準備
+#### BOM と式
+##### [部品表およびフォーミュラ](production-control/bill-of-material-bom.md)
+##### [BOM デザイナーの使用](production-control/bom-designer-functionality.md)
+##### [フォーミュラ デザイナーの使用](production-control/formula-designer.md)
+#### 工順
+#### リーン生産
+### 倉庫およびロジスティクスのための製品の準備
+### 製品の見積原価
+#### [BOM 計算](cost-management/bom-calculations.md)
+## 製品コンフィギュレーション モデルの管理
 ### [製品コンフィギュレーション モデルの構築](pim/build-product-configuration-model.md)
 ### [製品コンフィギュレーション モデルの計算のよくある質問](pim/calculate-product-configuration-models.md)
 ### [コンフィギュレーション ルール](pim/configuration-rules.md)
@@ -71,6 +91,8 @@
 ### [製品コンフィギュレーションの再利用](pim/reuse-product-configurations.md)
 ### [コンフィギュレーション モデルの設定](pim/set-up-maintain-product-configuration-model.md)
 ### [システム定義テーブルとユーザー定義テーブルの制約](pim/system-defined-user-defined-table-constraints.md)
+## 製品情報データのインポート
+## 製品情報データのエクスポート
 # 生産管理
 ## [生産プロセスの概要](production-control/production-process-overview.md)
 ## [ミックス モードの計画: 個別、プロセス、およびリーン調達の連結](production-control/mixed-mode-plan.md)
@@ -96,6 +118,8 @@
 #### [製造オーダー ステータスを逆行させる](production-control/reverse-production-order-status.md)
 #### [製造オーダーを完了として報告する](production-control/report-production-orders-as-finished.md)
 #### [BOM を完了として報告する](production-control/report-boms-as-finished.md)
+#### [製造オーダーから出荷ドックへのクロスドッキング](production-control/cross-docking-opportunities.md)
+#### [モバイル デバイスを使用して材料消費を登録する](production-control/register-material-consumption-hand-held-device.md)
 #### [製造における材料の置き換え](production-control/substitute-items-bom-lines.md)
 #### [製造実行での登録](production-control/registration-manufacturing-execution.md)
 #### [生産フィードバック](production-control/production-feedback.md)
@@ -111,6 +135,7 @@
 #### [リーン組織のモデル化](production-control/lean-manufacturing-modeling-lean-organization.md)
 #### [運営リソース](production-control/operations-resources.md)
 ### かんばん作業のスケジューリング
+#### [リーン生産の視覚的スケジューリング](production-control/visual-scheduling-lean-manufacturing.md)
 #### [リーン生産のかんばん作業のスケジューリング](production-control/lean-manufacturing-kanban-job-scheduling.md)
 #### [ジョブのスケジューリング](production-control/job-scheduling.md)
 ### かんばん作業の運営
@@ -128,6 +153,7 @@
 #### [工程のスケジューリング](production-control/operations-scheduling.md)
 #### [工程スケジューリング オプション](production-control/operation-scheduling-options.md)
 #### [ジョブのスケジューリング](production-control/job-scheduling.md)
+#### [ジョブ スケジュールのガント チャート](production-control/visual-scheduling-production.md)
 ### 生産ジョブの運営
 #### [連結バッチ オーダー](production-control/consolidated-batch-orders.md)
 #### [製造における材料の置き換え](production-control/substitute-items-bom-lines.md)
@@ -162,18 +188,26 @@
 ## [輸送管理](transportation/transportation-management-overview.md)
 ## [輸送エンジン](transportation/transportation-management-engines.md)
 # 倉庫管理
+## 高度な倉庫管理
+### [AX 2012 から Finance and Operations への移行](warehousing/upgrade-migration-warehouse-management-processes.md)
 ## 段取り 
 ### [作業テンプレートと場所ディレクティブを使用した管理作業](warehousing/control-warehouse-location-directives.md)
 ### [倉庫作業者の管理](warehousing/manage-warehouse-workers.md)
 ### [レイアウトの設定](warehousing/warehouse-configuration.md)
 ### [倉庫作業ポリシー](warehousing/warehouse-work-policies.md)
 ### [測定単位と在庫ポリシー](warehousing/unit-measure-stocking-policies.md)
-### [倉庫 Power BI コンテンツ](/dynamics365/operations/dev-itpro/analytics/warehouse-power-bi-content?toc=/dynamics365/operations/scm/toc.json)
+### [倉庫 Power BI コンテンツ](/dynamics365/unified-operations/dev-itpro/analytics/warehouse-power-bi-content?toc=/dynamics365/unified-operations/scm/toc.json)
+### [バッチおよびライセンス プレートの確認](warehousing/batch-and-license-plate-confirmation.md)
+### [作業が関連付けられている在庫の移動](warehousing/move-inventory-associated-work.md)
+### [オープン作業一覧のシステム グループ化](warehousing/system-group-on-open-work-list.md)
+### [クラスター ピッキングの製品の確認](warehousing/cluster-picking-item-confirmation.md)
 ## ピッキングと梱包
 ### [梱包材および費用](warehousing/pack-materials-packing-material-fees.md)
+### [ピース ピッキング確認](warehousing/piece-picking-confirmation.md)
 ## 在庫棚卸
 ### [在庫のブロック](inventory/inventory-blocking.md)
 ### [循環棚卸](warehousing/cycle-counting.md)
+### [部分的な場所の循環棚卸](warehousing/partial-location-cycle-counting.md)
 ### [在庫仕訳帳](inventory/inventory-journals.md)
 ### [在庫場所](inventory/inventory-locations.md)
 ### [在庫状態](inventory/inventory-statuses.md)
@@ -181,6 +215,7 @@
 ## コンテナー詰め 
 ## 補充
 ### [補充](warehousing/replenishment.md)
+### [引き取りかんばんを使用した補充](warehousing/material-replenishment-withdrawal-kanban.md)
 ## モバイル デバイス
 ### [倉庫管理アプリのインストールとコンフィギュレーション](warehousing/install-configure-warehousing-app.md)
 ### [倉庫管理アプリのフィールド名のコンフィギュレーション](warehousing/configure-app-field-names-priorities-warehouse.md)
@@ -188,15 +223,15 @@
 ### [倉庫モバイル デバイス ポータル (WMDP)](warehousing/warehouse-mobile-devices-portal.md)
 ### [倉庫モバイル デバイスの表示設定](warehousing/change-warehouse-mobile-device-displays.md)
 
-# [財務](/dynamics365/operations/financials/index)
+# [財務](/dynamics365/unified-operations/financials/index)
 
-# [人事管理](/dynamics365/operations/human-resources/index)
+# [人事管理](/dynamics365/unified-operations/talent/index)
 
-# [小売](/dynamics365/operations/retail/index)
+# [小売](/dynamics365/unified-operations/retail/index)
 
-# [開発者と管理者](/dynamics365/operations/dev-itpro/index)
+# [開発者と管理者](/dynamics365/unified-operations/dev-itpro/index)
 
 # その他のリソース
-## [Dynamics 365 for Operations の用語集](/dynamics365/operations/get-started/glossary?toc=/dynamics365/operations/supply-chain/toc.json)
-## [新機能および変更された機能](/dynamics365/operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/operations/supply-chain/toc.json)
+## [Finance and Operations の用語集](/dynamics365/unified-operations/get-started/glossary?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+## [新機能および変更された機能](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 

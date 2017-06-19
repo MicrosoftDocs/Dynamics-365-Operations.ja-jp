@@ -1,5 +1,5 @@
 # Power BI コンテンツ パック
-## [原価管理コンテンツ パック](/dynamics365/operations/dev-itpro/analytics/cost-management-content-pack?toc=/dynamics365/operations/supply-chain/toc.json)
+## [原価管理コンテンツ パック](/dynamics365/unified-operations/dev-itpro/analytics/cost-management-content-pack?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 # あらかじめ設定された原価
 ## [原価計算表](costing-sheets.md)
 ## [原価バージョン](costing-versions.md)

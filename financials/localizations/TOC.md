@@ -1,4 +1,4 @@
-# [ローカライズの概要](/dynamics365/operations/dev-itpro/lcs-solutions/country-region?toc=/dynamics365/operations/financials/toc.json)
+# [ローカライズの概要](/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region?toc=/dynamics365/unified-operations/financials/toc.json)
 # アジア太平洋
 ## オーストラリア
 ### [銀行ファイル形式](apac-aus-method-of-payment-pay-vendors-banks.md)
@@ -54,6 +54,7 @@
 ## [固定資産の取得前価額の転記](emea-pre-acquisition-acquisition-fixed-asset.md)
 ## [郵便番号](emea-import-create-postal-codes-manually.md)
 ## [登録 ID](emea-registration-ids.md)
+## [受取人払い VAT](emea-reverse-charge.md)
 ## [SEPA 口座振替の概要](../accounts-payable/sepa-credit-transfer.md)
 ## [単一ユーロ支払地域 (SEPA) 口座引落の概要](../accounts-receivable/sepa-direct-debit-overview.md)
 ## [印刷フォームの署名者の設定](emea-set-up-signers-for-printing-forms.md)
@@ -98,7 +99,7 @@
 ### [仕訳リスト レポート](emea-deu-journal-list-report.md)
 ### [販売から生成されるクレジット メモの個別ラベルの印刷](emea-deu-print-separate-label-credit-memo-originating-sales.md)
 ## ハンガリー
-### [固定資産の減価償却方法](emea-hun-fixed-assets-depreciation-methods.md)    
+### [固定資産の減価償却方法](emea-hun-fixed-assets-depreciation-methods.md)   
 ### [低原価固定資産](emea-hun-low-cost-fixed-assets.md)
 ### [固定資産を在庫に移動する](emea-hun-fixed-asset-to-inventory.md)
 ## イタリア
@@ -138,6 +139,7 @@
 ### [固定資産グループの再評価](emea-esp-fixed-asset-group-revaluation.md)
 ### [EU 内 VAT](emea-esp-intra-community-vat.md)
 ### [一時顧客](emea-esp-no-one-time-customer-for-project-contracts.md)
+### [スペインのレイアウトでの小切手の印刷](emea-esp-print-checks-with-spanish-layout.md)
 ### [支払手形オプション](emea-esp-promissory-note-options.md)
 ### [販売および購買サイクル](emea-esp-sales-purchase-cycle.md)
 ### [特殊エントリと期首表](emea-esp-opening-sheets-spain.md)
@@ -153,9 +155,11 @@
 ### [会計帳簿](latam-bra-fiscal-books.md)
 #### [ICMS 税の会計ドキュメント](latam-bra-icms-tax-fiscal-documents.md)
 #### [会計ドキュメントのインポート](latam-bra-import-fiscal-documents.md)
+#### [総勘定元帳の連結からの法人トランザクションのエクスポートとインポート](latam-bra-general-ledger-consolidation-transactions.md)
 #### [NF E XML ドキュメントと DANFE ファイルのインポートと確認](latam-bra-import-verify-nf-e-xml-documents-danfe-emails.md)
+#### [電子支払送金の処理](latam-bra-process-electronic-payment-remittances.md)
 #### [会計ドキュメント](latam-bra-fiscal-documents-fiscal-document-framework.md)
-#### [会計ドキュメントのテキスト プレース ホルダー](latam-bra-fiscal-document-text-placeholders.md)
+#### [会計ドキュメントのテキスト プレースホルダー](latam-bra-fiscal-document-text-placeholders.md)
 #### [購買補助会計ドキュメント](latam-bra-purchase-complementary-fiscal-documents.md)
 #### [参照される会計ドキュメント](latam-bra-referenced-fiscal-documents.md)
 #### [販売補助会計ドキュメント](latam-bra-sales-complementary-fiscal-documents.md)
@@ -163,7 +167,9 @@
 ### [電子支払の返金プロセス中に生成される仕訳帳](latam-bra-examples-journals-generated-electronic-payment-return-process.md)
 ### [NF-e プロセス](latam-bra-nf-e-process.md)
 ### [法人のパラメーター](latam-bra-legal-entity-parameters.md)
-### [税申告](latam-bra-calculate-taxes.md)
+### [CIAP 固定資産の取得](latam-bra-ciap-fixed-asset.md)
+### [CIAP 固定資産の処分](latam-bra-ciap-fixed-asset.md)
+### [税金](latam-bra-calculate-taxes.md)
 #### [税の属性](latam-bra-tax-attributes.md)
 #### [税支払](latam-bra-tax-payments.md)
 ## メキシコ

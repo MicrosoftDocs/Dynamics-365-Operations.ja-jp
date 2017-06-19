@@ -21,4 +21,5 @@
 # 品目とバッチの追跡
 ## [在庫バッチのマージ](merge-inventory-batches.md)
 ## [品目と原材料の追跡](trace-items-raw-materials-inventory-production-sales.md)
+## [販売プロセスでのシリアル番号の登録](../sales-marketing/register-serial-numbers-sales-process.md)
 
