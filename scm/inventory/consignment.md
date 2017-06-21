@@ -3,7 +3,7 @@ title: "委託販売"
 description: "このトピックでは、入庫委託販売在庫プロセスを使用する方法を説明します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

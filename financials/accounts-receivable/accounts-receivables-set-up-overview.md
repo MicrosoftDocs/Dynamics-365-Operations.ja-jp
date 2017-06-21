@@ -3,7 +3,7 @@ title: "売掛金勘定、貸方転記および取立のコンフィギュレー
 description: "売掛金管理、貸方転記および取立をコンフィギュレーションして、請求書および顧客から入金される支払を追跡します。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Dynamics AX 7.0 (2016 年 2 月) の新機能および変更された機
 description: "この記事では、Microsoft Dynamics AX 7.0 の新機能または変更された機能について説明します。 このバージョンにはプラットフォームとアプリケーションの両方の機能が含まれており、2016 年 2 月にリリースされました。"
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

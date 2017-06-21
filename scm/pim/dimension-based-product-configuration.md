@@ -3,7 +3,7 @@ title: "分析コード ベースの製品コンフィギュレーション"
 description: "分析コード ベースの製品コンフィギュレーションは、1 つの製品マスターと部品表から多くの製品バリアントを作成するための単純なソリューションを表します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "複数の割引期間を持つ一部の顧客支払を決済する"
 description: "この記事は、複数の割引期間がある場合に一部顧客支払が決済される方法を示します。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

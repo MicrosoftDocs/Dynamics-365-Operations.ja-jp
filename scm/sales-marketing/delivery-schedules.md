@@ -3,7 +3,7 @@ title: "配送スケジュール"
 description: "配送スケジュールより、1 つの販売注文、販売見積、または発注書に複数の配送を使用するときに、注文明細行数量を追跡することができます。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "見積依頼 (RFQs)"
 description: "この記事は、組織が品目やサービスを購入する必要があるときに、いくつかの仕入先を競合させてより良い条件を得ようとする場合に組織が発行する、見積依頼 (RFQs) の概要を提供します。 RFQ で、仕入先に指定した品目の数量の価格や配送時間を提供するように求めます。 また、仕入先に、送料などの雑費があるか、大型注文や仕入先請求書の早期支払に対して割引を提供するかどうかを問い合わせることもできます。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

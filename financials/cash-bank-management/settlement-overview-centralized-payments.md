@@ -3,7 +3,7 @@ title: "集中支払の決済の概要"
 description: "複数の法人を含む組織では、すべての支払を処理する法人を使用して支払を作成および管理できます。 これにより、複数の法人内の同一トランザクションを入力する必要がなくなり、集中支払の支払提案プロセス、決済プロセス、未処理トランザクションの編集、および決算済トランザクションの編集を効率化することで時間を節約できます。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

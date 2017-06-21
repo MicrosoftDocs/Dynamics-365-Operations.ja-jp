@@ -3,7 +3,7 @@ title: "品質管理プロセス"
 description: "この記事は、不適合製品に対する品質管理プロセスについての情報を提供します。 品質テスト機能の使用方法、不適合の定義および管理方法、および修正方法について説明します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

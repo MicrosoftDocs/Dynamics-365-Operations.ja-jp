@@ -3,7 +3,7 @@ title: "マスター プラン - サイトの補充、倉庫は必須ではな�
 description: "このトピックでは、サイト分析コードを品目補充用に持つ品目の計画方法について説明します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

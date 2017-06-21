@@ -3,7 +3,7 @@ title: "ワークフロー アクション"
 description: "この記事は、ワークフローの承認プロセスで各参加者が実行できるアクションを説明します。"
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

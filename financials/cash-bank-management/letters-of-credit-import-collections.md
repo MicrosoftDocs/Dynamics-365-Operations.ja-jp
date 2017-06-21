@@ -3,7 +3,7 @@ title: "信用状および輸入取立"
 description: "この記事は、信用状および輸入取立に関する一般情報を提供します。 どちらのタイプの銀行ドキュメントも、国境をまたぐ商品売買によく使用されます。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

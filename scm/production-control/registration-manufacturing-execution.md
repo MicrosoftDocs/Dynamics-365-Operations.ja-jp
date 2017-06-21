@@ -3,7 +3,7 @@ title: "製造実行での登録"
 description: "このトピックでは、製造実行を設定および使用する際に理解しておく必要がある重要な概念および用語について説明します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

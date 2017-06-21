@@ -3,7 +3,7 @@ title: "仕入先請求仕訳帳および請求書承認仕訳帳の既定の相
 description: 
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

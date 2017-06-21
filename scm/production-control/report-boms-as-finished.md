@@ -3,7 +3,7 @@ title: "BOM を完了済と報告"
 description: "この記事では、BOM を完了済と報告することに関する情報を提供しています。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

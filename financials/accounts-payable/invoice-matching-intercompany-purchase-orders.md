@@ -3,7 +3,7 @@ title: "請求書照合と会社間発注"
 description: "会社間の売買取引に関連する購買側の法人が、買掛金勘定の請求書照合を使用する設定になる場合があります。 その場合、会社間の売買取引と買掛金勘定の請求書照合の両方の転記要件が合っていないと、会社間仕入先請求書は転記できません。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

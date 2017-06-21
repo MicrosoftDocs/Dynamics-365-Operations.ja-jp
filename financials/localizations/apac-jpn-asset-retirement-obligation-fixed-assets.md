@@ -3,7 +3,7 @@ title: "固定資産の資産償却責務の設定"
 description: "日本では、資産除去債務 (ARO) は法的な除去責務のある固定資産に対して認識されます。 この記事は、ARO の負債がどのように認識、償却、および未払となるか、および固定資産と ARO の負債が除去される方法について説明します。"
 author: RichardLuan
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

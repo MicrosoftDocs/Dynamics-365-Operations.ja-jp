@@ -3,7 +3,7 @@ title: "船荷証券の作成"
 description: "このトピックでは、倉庫管理のプロセスを使用して、船荷証券の作成方法を説明します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

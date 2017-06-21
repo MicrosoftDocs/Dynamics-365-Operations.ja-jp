@@ -3,7 +3,7 @@ title: "主勘定タイプ"
 description: "主勘定タイプにより、勘定科目表での主勘定の使用方法が決まります。"
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

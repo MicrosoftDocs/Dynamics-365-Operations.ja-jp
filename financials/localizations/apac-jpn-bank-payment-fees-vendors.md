@@ -3,7 +3,7 @@ title: "仕入先負担の銀行支払手数料"
 description: "日本では、銀行支払手数料は通常、仕入先 (受領当事者) によって負担されます。 このトピックでは、仕入先負担の銀行支払手数料についてよく寄せられる質問に回答します。"
 author: RichardLuan
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

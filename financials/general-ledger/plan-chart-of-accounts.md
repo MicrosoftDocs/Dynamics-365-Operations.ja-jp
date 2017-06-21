@@ -3,7 +3,7 @@ title: "勘定科目表名の計画"
 description: "この記事では、組織の勘定科目表を計画する際に役立つ情報を提供します。"
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

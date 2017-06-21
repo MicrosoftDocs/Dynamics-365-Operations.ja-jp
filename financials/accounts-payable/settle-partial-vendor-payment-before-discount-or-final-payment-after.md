@@ -3,7 +3,7 @@ title: "割引日後の最終支払での割引日よりも前の一部の仕入
 description: "この記事は、複数の一部支払が行われるうち、いくつかが現金割引期間内に、それ以外が現金割引期間外に行われるシナリオについて説明します。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "プロジェクト請求"
 description: "この記事では、時間/実費払プロジェクトおよび固定価格プロジェクトでの、プロジェクト請求の概要を説明します。 ここには、仮発行請求書 (仮請求書)、請求の管理、分割払請求、仕入先請求、および貸方票に関する情報が含まれます。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

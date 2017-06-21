@@ -3,7 +3,7 @@ title: "ハブ連結を使用した積荷計画"
 description: "この記事では、同じ顧客に別の倉庫からの商品を配送する場合、または同じ倉庫に複数の仕入先から商品が配送された場合に、1 つのハブに出荷を統合する機能について説明します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

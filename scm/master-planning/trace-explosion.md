@@ -3,7 +3,7 @@ title: "展開のトレースを使用する"
 description: "この記事は、注文の展開結果の背後にある原因を参照して追跡する方法について説明します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

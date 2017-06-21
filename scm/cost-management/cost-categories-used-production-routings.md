@@ -3,7 +3,7 @@ title: "生産工順で使用される原価カテゴリ"
 description: "この記事は、工順を使用する製造環境に適用される原価カテゴリについて説明します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "固定資産の取得の転記勘定"
 description: "この記事は、資産の取得について総勘定元帳の転記勘定を設定する方法を説明します。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

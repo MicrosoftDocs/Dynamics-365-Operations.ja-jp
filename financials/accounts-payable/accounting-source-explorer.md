@@ -3,7 +3,7 @@ title: "会計ソース エクスプローラー"
 description: "この記事は、総勘定元帳の勘定項目の背後にあるソース情報の詳細分析に使用できる会計のソース エクスプローラに関する情報を提供します。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

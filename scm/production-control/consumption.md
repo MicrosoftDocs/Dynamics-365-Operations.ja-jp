@@ -3,7 +3,7 @@ title: "材料消費の計算"
 description: "この記事は、材料消費の計算に関するさまざまなオプションについての情報を提供します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

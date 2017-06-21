@@ -3,7 +3,7 @@ title: "固定資産の統合"
 description: "固定資産は、一般会計、在庫管理、売掛金勘定、および買掛金勘定と統合できます。 また、固定資産を発注書と統合するように設定することもできます。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

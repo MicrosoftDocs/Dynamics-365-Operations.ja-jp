@@ -3,7 +3,7 @@ title: "分析コード メンバーの共通セットに対する原価要素�
 description: "異なる原価要素分析コード メンバーに、原価要素分析コード メンバーの共通セットをマッピングすると、分析に使用する共通の形式でデータをマージします。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

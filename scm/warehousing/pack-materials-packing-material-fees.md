@@ -3,7 +3,7 @@ title: "梱包材および費用"
 description: "梱包材費用は、一定の間隔でリサイクル会社に支払われます。 梱包単位を構成する各材料について、重量単位あたりの金額が支払われます。 梱包材費用は計算および報告されますが、所轄官庁に支払う必要がある税とは見なされないため、元帳トランザクションは転記されません。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

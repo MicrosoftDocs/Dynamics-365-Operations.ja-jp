@@ -3,7 +3,7 @@ title: "ワークフロー内の並列活動のコンフィギュレーション
 description: "並列活動をコンフィギュレーションするには、ワークフロー エディターで次の手順を実行します。"
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

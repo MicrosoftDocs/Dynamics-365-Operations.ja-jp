@@ -3,7 +3,7 @@ title: "期末に一般会計を決算"
 description: "このトピックでは、一般会計の期間締めを実行する場合に通常完了するタスクについて説明します"
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

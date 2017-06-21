@@ -3,7 +3,7 @@ title: "リーン生産でのかんばん作業のスケジューリング"
 description: "この記事は、かんばん作業のスケジューリングにおける視覚コントロールおよびさまざまな方法に関する情報を提供します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

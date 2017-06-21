@@ -3,7 +3,7 @@ title: "標準原価換算の前提条件"
 description: "このトピックでは、標準コスト換算を実行する前に実行するタスクについて説明します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

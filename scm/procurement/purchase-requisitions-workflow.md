@@ -3,7 +3,7 @@ title: "購買要求ワークフロー"
 description: "ワークフロー プロセスは、レビュー プロセスを介し、[ドラフト] の状態から [承認済] の最終状態へ購買要求を移動します。 購買要求が作成されレビュー用に送信されると、ワークフロー プロセスが開始されます。 購買要求が承認されると、発注書が購買要求明細行に対して生成され、仕入先に注文処理のために送信されます。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

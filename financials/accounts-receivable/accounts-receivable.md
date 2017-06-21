@@ -3,7 +3,7 @@ title: "売掛金勘定ホーム ページ"
 description: "顧客請求書および入金される支払を追跡するには、売掛金勘定を使用します。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications

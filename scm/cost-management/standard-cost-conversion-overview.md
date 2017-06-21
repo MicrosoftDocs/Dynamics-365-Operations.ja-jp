@@ -3,7 +3,7 @@ title: "標準原価換算の概要"
 description: "この記事は、標準原価換算を設定および実行するのに役立つプロセスの概要を提供します。 説明されているステップは、標準原価換算の前提条件の完了後に実行することを意図しています。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

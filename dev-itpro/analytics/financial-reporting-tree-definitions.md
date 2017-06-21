@@ -3,7 +3,7 @@ title: "財務諸表のレポート ツリー定義"
 description: "この記事では、レポート ツリー定義に関する情報を示します。 レポート ツリー定義は、組織の構造と階層の定義に役立つレポート コンポーネント、または構成要素です。"
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

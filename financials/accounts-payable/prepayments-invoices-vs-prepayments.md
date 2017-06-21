@@ -3,7 +3,7 @@ title: "前払請求書と前払"
 description: "この記事は、組織が事前の支払 (前払) に使用できる 2 つの方法に関する説明と対比を提供します。 ひとつは、発注書に関連付けられている前払請求書を作成します。 もう 1 つの方法では、仕訳入力を作成し、前払仕訳伝票としてマークすることによって前払仕訳伝票を作成できます。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "倉庫モバイル デバイスの表示設定"
 description: "この記事では、モバイル デバイスの表示の外観を設定する方法、キーボード ショートカットをボタンのようなコントロールにマッピングする方法を説明します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

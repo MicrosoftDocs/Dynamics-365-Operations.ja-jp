@@ -3,7 +3,7 @@ title: "定期請求書の設定と処理"
 description: "この記事は、定期的な請求書の設定および処理の方法を説明します。 定期的に同じ金額に対して請求書を発行する場合に、定期的な請求書を使用できます。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "原価計算表"
 description: "原価計算表の設定には、2 つの目的があります。 最初の目的は、製品または製造オーダーに関する売却済商品の原価情報の表示形式を定義することです。 書式設定された表示は、原価計算表と呼ばれます。 2 つ目の目的は、間接原価の計算の基準を定義することです。 原価計算表設定は、情報表示用および間接原価計算式用の原価グループ機能の上に構築されます。 原価計算表設定の 2 つの目的はこの項目で説明します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

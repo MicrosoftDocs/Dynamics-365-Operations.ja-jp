@@ -3,7 +3,7 @@ title: "部品表およびフォーミュラ"
 description: "この記事では、製品および製品バリアントの定義の中心となる部品表 (BOM) およびフォーミュラについて説明します。 BOM およびフォーミュラは、特定の製品に必要な材料または成分を指定します。 フォーミュラは、特定の生産コンテキストで入庫する連産品および副産物も指定します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "複数の割引期間を持つ一部の仕入先支払を決済する"
 description: "この記事は、複数の現金割引を提供する仕入先に対して複数の一部支払が作成されるシナリオについて説明します。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "仕入先訂正票で割引がある一部の仕入先支払の決済"
 description: "この記事は、クレジット メモが請求書に対して決済されるシナリオについて説明します。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

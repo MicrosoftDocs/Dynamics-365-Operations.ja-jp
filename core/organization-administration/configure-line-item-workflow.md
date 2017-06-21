@@ -3,7 +3,7 @@ title: "行項目ワークフローのコンフィギュレーション"
 description: "このトピックでは、行項目ワークフローの要素をコンフィギュレーションする方法を説明します。"
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

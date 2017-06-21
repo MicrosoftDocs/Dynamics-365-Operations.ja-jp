@@ -3,7 +3,7 @@ title: "固定資産配賦ルール"
 description: "日本では、固定資産は管理部門に登録され、減価償却量は使用部門間で割り当てられる必要があります。 減価償却金額を割合で複数の財務分析コードに割り当てる配賦ルールを設定できます。 この記事は、固定資産配賦ルールについてよく寄せられる質問に回答します。"
 author: RichardLuan
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "仕入先請求書の概要"
 description: "この記事は、仕入先請求書に関する一般情報を示します。 仕入先請求書は、受領した製品とサービスに対する支払請求です。 仕入先請求書は、進行中のサービスの請求書を表すことができます。または特定の品目およびサービスの発注書に基づくことができます。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

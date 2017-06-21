@@ -3,7 +3,7 @@ title: "ジョブのスケジューリング"
 description: "この記事は、工程のスケジューリングよりも詳細なスケジューリング フォームであるジョブのスケジューリングに関する情報を提供します。 ジョブのスケジューリングは、個別のジョブまたは作業現場のオーダーをスケジュールして、製造環境を制御します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

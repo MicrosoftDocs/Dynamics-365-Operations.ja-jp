@@ -3,7 +3,7 @@ title: "固定資産ホーム ページ"
 description: "固定資産は、個人または組織が所有するビル、乗物、土地、設備など、価値のある品目です。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications

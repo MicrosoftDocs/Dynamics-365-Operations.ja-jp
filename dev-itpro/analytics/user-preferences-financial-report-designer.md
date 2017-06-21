@@ -3,7 +3,7 @@ title: "財務諸表デザイナーでのユーザーの基本設定"
 description: "この記事では、財務諸表デザイナーで、ユーザーとのやり取りをカスタマイズし、最初のサインイン エクスペリエンスを制御するユーザー設定を設定する方法について説明します。 個々の報告、レポート ライブラリ、および既定のファイルの場所の表示方法を制御することもできます。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

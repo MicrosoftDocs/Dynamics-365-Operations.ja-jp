@@ -3,7 +3,7 @@ title: "直納"
 description: "この記事では、直納について説明します。 仕入先から顧客に直接配送する出荷のことを、直納といいます。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

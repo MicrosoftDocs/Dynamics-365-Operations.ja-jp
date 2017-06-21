@@ -3,7 +3,7 @@ title: "製品関連の翻訳のよく寄せられる質問"
 description: "このトピックでは、製品の翻訳、製品分析コードの値、および製品属性を管理する方法について説明します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

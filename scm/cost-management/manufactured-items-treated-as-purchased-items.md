@@ -3,7 +3,7 @@ title: "生産または調達する製品を設定する"
 description: "製品はさまざまな方法で提供できます。製品は生産 (製造) または調達 (購買) できます。 この記事は、複数の調達をサポートするために、製品の構成時に考慮する一般的な点について説明します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

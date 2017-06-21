@@ -3,7 +3,7 @@ title: "購入ポリシー"
 description: "この記事は、購入ポリシーに関する情報を提供します。 購入ポリシーは、要求プロセスを制御するルールのコレクションです。 購入ポリシーは調達管理者が組織の戦略購買の要求に対応するポリシー構造を作成することによって自分の調達戦略を実行できるように助けます。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "不適合管理"
 description: "この記事は、不適合を使用するために必要な基本設定について説明します。 品質指示を使用する場合、追加の設定が必要になります。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

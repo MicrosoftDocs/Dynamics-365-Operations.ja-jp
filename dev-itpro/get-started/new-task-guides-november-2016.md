@@ -3,7 +3,7 @@ title: "新規または更新されたタスク ガイド (2016 年 11 月)"
 description: "このトピックでは、Microsoft Dynamics 365 for Operations の Microsoft (2016 年 11 月 -- すべての言語) APQC 統合ライブラリにリリースされた新規または更新されたタスク ガイドを示します。 新規の「はじめに」ライブラリは、リリースされていません。"
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

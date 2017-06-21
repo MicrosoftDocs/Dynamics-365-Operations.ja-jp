@@ -3,7 +3,7 @@ title: "補充設定"
 description: "マスタ スケジューリングでは補充設定を使用して在庫品目要求を計算します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

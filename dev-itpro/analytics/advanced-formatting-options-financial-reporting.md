@@ -3,7 +3,7 @@ title: "財務諸表の高度な形式オプション"
 description: "財務報告レポートを作成する場合は、追加の形式機能が使用できます。これには分析コードのフィルター、列とレポート単位への制限、ノン プリンティング行、計算の IF/THEN/ELSE 明細書が含まれます。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

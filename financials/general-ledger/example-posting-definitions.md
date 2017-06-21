@@ -3,7 +3,7 @@ title: "転記の定義"
 description: "この記事では、発注書の債務および予算割り当てに対する転記の定義の使用方法を示す例を示します。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

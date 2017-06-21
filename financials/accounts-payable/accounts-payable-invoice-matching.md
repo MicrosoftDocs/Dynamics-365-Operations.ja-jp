@@ -3,7 +3,7 @@ title: "買掛金請求書照合"
 description: "買掛金勘定の請求書照合は、仕入先請求書、発注書、および製品受領情報を照合するプロセスです。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

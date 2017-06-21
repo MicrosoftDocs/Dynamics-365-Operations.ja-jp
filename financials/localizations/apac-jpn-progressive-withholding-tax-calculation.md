@@ -3,7 +3,7 @@ title: "累進的源泉徴収税"
 description: "このトピックでは、日本の累進的源泉徴収税に関する情報を提供します。 日本の法的要件では、請求金額に比例する期間に基づいて税率が変化します。 支払金額に基づいて、税金の比率も変わります。"
 author: RichardLuan
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

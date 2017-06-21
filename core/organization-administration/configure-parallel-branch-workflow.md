@@ -3,7 +3,7 @@ title: "ワークフロー内の並列分岐コンフィギュレーション"
 description: "並列分岐をコンフィギュレーションするには、ワークフロー エディターで次の手順を実行します。"
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

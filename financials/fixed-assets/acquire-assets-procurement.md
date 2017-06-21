@@ -3,7 +3,7 @@ title: "調達によって取得される資産の取得"
 description: "この記事は、固定資産と買掛金の統合を設定して、発注書または仕入先請求書からの固定資産の自動作成、または固定資産の取得および取得原価調整トランザクションの自動転記を実行する方法を説明します。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

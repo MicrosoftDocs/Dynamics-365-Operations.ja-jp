@@ -3,7 +3,7 @@ title: "製造における材料の置き換え"
 description: "このトピックでは、生産プロセス中に材料を置き換える方法について説明します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

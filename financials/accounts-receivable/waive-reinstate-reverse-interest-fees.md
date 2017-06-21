@@ -3,7 +3,7 @@ title: "利息手数料の免除、再開、または取り消し"
 description: "この記事では、利息および手数料の放棄、再開、または取消の方法を説明します。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

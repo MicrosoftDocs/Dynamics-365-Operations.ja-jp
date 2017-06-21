@@ -3,7 +3,7 @@ title: "レポート デザイナーのレポートのコンポーネントを�
 description: "構成要素を設計してレポートを生成後、ユーザーがより容易に検索できるようにこれらのオブジェクトを整理するために役立ちます。 この記事では、レポート デザイナーで既存のレポート、構成要素、およびオブジェクトを整理する方法について説明します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

@@ -3,7 +3,7 @@ title: "連結バッチ オーダー (複数)"
 description: "この記事は、連結バッチ注文の概念について説明します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

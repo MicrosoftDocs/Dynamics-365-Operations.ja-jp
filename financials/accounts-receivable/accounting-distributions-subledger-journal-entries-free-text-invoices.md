@@ -3,7 +3,7 @@ title: "自由書式の請求書の勘定配布と補助元帳仕訳"
 description: "勘定配布は収益、税金、雑費などの金額がどのように自由書式の請求書に計上されるかを定義するために使用されます。 自由書式の請求書が仕訳されたときに計上する必要のあるすべての金額に勘定配布があります。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

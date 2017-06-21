@@ -3,7 +3,7 @@ title: "自由書式の請求書を訂正"
 description: "この記事では、自由書式の請求書を転記後に修正し、修正済請求書として再発行する方法を説明します。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

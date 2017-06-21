@@ -3,7 +3,7 @@ title: "システム定義およびユーザー定義のテーブル制約"
 description: "この記事では、製品コンフィギュレーション モデルのコンポーネントの 2 つのタイプのテーブル制約について説明します。ユーザー定義とシステム定義です。 テーブルの制約は、テーブルの各行が設定可能な各属性値の定義を表す許可された属性の組み合わせのマトリックスを表します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "BOM デザイナーの機能"
 description: "この記事は、 [BOM デザイナ] ページを使用して、部品表 (BOM) のツリー構造の設計および操作をする方法について説明します。 [設定] をクリックすると、さまざまなコンフィギュレーションの選択や、ツリーの行に表示する情報の指定ができます。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
