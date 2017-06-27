@@ -3,7 +3,7 @@ title: "BOM バージョンの展開"
 description: "この記事では、部品表 (BOM) のバージョンの展開を含むマスター プランのシナリオを説明します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

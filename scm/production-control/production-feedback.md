@@ -3,7 +3,7 @@ title: "生産フィードバック"
 description: "この記事は、作業者に生産ジョブに関するフィードバックを与える生産フィードバックに関する情報を提供します。 この記事には、生産フィードバックを更新するさまざまな方法に関する情報が含まれます。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

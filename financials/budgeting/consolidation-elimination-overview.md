@@ -3,7 +3,7 @@ title: "連結と削除の概要"
 description: "この記事は、連結および消去プロセスに関する一般情報を提供します。 これには、よく寄せられる質問への回答が含まれます。"
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

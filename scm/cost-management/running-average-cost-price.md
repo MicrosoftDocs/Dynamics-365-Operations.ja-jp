@@ -3,7 +3,7 @@ title: "移動平均原価価格"
 description: "在庫原価計算プロセスでは、品目の品目モデル グループで選択した在庫評価方法に基づいて、払出トランザクションを受入トランザクションへと決済します。 ただし、在庫決算を実行する前に、システムは、払出トランザクションの転記時に通常使用される移動平均原価価格を計算します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

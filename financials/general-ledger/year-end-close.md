@@ -3,7 +3,7 @@ title: "年度末決算"
 description: "このトピックでは、一般会計の年度末決算処理を実行するために必要な設定と手順について説明します。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "ジョブ バンドル内のジョブへの時間割り当て"
 description: "[製造実行] で、ジョブをバンドルできます。 これにより、[ジョブ リスト] ページで複数のジョブを同時に開始できます。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

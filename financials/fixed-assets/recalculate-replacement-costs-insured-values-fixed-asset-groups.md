@@ -3,7 +3,7 @@ title: "固定資産グループの交換費用と保証金額の再計算"
 description: "この記事は、固定資産の交換費用と保証金額を更新するプロセスを説明します。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

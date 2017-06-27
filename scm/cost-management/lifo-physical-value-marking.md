@@ -3,7 +3,7 @@ title: "現物価格とマーキングを使用した LIFO"
 description: "後入れ先出し (LIFO) は、最後 (最新) の入庫が最初に払出される在庫モデルです。 在庫からの出庫は、在庫トランザクションの日付に基づいて在庫への最後の入庫を対象として決済されます。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "工程のスケジューリング オプション"
 description: "このトピックでは、工程スケジューリングのオプションについて説明します。 この工程スケジューリングは、時間経過による生産プロセスの概算を提供する場合に使用します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

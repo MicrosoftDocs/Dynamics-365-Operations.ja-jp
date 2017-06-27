@@ -3,7 +3,7 @@ title: "150% 逓減残高による減価償却"
 description: "この記事は、減価償却の 150% 逓減残高法の概要を示します。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

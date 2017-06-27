@@ -3,7 +3,7 @@ title: "顧客転記プロファイル"
 description: "顧客転記プロファイルは、顧客トランザクションから総勘定元帳への転記を制御します。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

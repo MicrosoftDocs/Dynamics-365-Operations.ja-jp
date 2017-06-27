@@ -3,7 +3,7 @@ title: "ワークスペースのフィルター処理およびコンフィギュ
 description: "この記事は、ワークスペースを構成してフィルター処理する方法の概要について説明します。"
 author: jasongre
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

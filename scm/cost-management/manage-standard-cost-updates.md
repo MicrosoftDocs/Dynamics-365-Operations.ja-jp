@@ -3,7 +3,7 @@ title: "標準原価の更新の管理"
 description: "標準原価データの更新は、1 バージョン アプローチと 2 バージョン アプローチという 2 つの異なるアプローチを使用して管理できます。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

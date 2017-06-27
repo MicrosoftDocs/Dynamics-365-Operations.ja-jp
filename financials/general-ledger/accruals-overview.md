@@ -3,7 +3,7 @@ title: "見越計上の概要"
 description: "この記事は、見越し計上について説明し、その設定方法およびトランザクションの作成方法に関する情報を提供します。"
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

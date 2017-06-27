@@ -3,7 +3,7 @@ title: "原価バージョン"
 description: "この記事は、原価バージョン、その管理方法、そこに含めることができるデータのタイプについての情報を提供します。 原価バージョンの主な目的は、品目、原価カテゴリ、間接原価の計算式に関する原価レコードを保持することです。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

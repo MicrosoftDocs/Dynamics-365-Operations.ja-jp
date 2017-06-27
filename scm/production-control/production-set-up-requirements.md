@@ -3,7 +3,7 @@ title: "生産の設定の要件"
 description: "この記事は、生産管理を使用して作業できるようにするための、設定の要件に関する情報を提供します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

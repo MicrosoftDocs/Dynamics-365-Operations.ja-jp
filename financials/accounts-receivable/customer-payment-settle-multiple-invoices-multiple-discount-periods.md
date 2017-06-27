@@ -3,7 +3,7 @@ title: "複数の割引期間にまたがる複数の請求書を決済するた
 description: "この記事は、各請求書に現金割引の資格がある場合に、複数の請求書の支払方法を示します。 この記事のシナリオは、支払が行われたときよって、実行する現金割引がどう異なるかを取り上げます。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

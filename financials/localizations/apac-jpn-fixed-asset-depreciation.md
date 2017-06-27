@@ -1,7 +1,7 @@
 ---
 title: "日本の固定資産減価償却のよく寄せられる質問"
 description: "この記事は、日本の固定資産の減価償却についてよく寄せられる質問に回答します。"
-author: ShylaThompson
+author: RichardLuan
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
@@ -9,11 +9,12 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: shylaw
 ms.search.scope: AX 7.0.0, Operations, Core
 ms.custom: 10294
 ms.assetid: 81dab75a-3760-48f2-b453-11b487def3b2
 ms.search.region: Japan
-ms.author: leguo
+ms.author: RichardLuan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation

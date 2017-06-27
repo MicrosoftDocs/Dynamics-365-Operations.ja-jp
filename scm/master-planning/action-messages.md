@@ -3,7 +3,7 @@ title: "記載されていない"
 description: "アクション メッセージは、既存の計画オーダーまたは確定オーダーの変更についてシステムで生成される提案です。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

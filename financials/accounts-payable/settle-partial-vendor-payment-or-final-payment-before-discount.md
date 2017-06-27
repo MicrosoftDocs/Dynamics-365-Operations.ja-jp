@@ -3,7 +3,7 @@ title: "一部の仕入先支払の決済、および割引日より前の全額
 description: "この記事は、仕入先請求書に対して一部支払が作成され、現金割引が提供されるシナリオについて説明します。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

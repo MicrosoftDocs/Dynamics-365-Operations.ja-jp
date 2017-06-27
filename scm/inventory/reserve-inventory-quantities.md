@@ -3,7 +3,7 @@ title: "在庫数量の引当"
 description: "このトピックでは、在庫を引当するために使用できるさまざまなオプションについて説明します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

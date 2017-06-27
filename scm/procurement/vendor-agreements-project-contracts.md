@@ -3,7 +3,7 @@ title: "受給時支払の仕入先契約"
 description: "この記事は、仕入先の契約に使用する受給時支払 (PWP) の条件について説明します。 PWP 条件では、プロジェクトの顧客が支払うまで、仕入先への支払を一部または全部留保できます。 この記事は、プロジェクトで PWP 条件を使用する方法を説明するために実際の例を示します。"
 author: kfend
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

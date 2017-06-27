@@ -3,7 +3,7 @@ title: "在庫、生産、および販売における品目と原材料の追跡
 description: "このトピックでは、製品プロセスおよび販売プロセスで品目または原材料が使用された場所、使用されている場所、使用される予定の場所を識別するために、品目の追跡を使用する方法について説明します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

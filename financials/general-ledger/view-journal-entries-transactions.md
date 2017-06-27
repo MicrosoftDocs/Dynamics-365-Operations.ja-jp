@@ -3,7 +3,7 @@ title: "仕訳入力およびトランザクションの表示"
 description: "この記事は、仕訳入力およびトランザクションを表示するためのさまざまな方法を説明します。"
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

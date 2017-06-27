@@ -3,7 +3,7 @@ title: "耐用年数残減価償却について"
 description: "この記事は、減価償却の定額法残余耐用年数の概要を示します。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "訂正票で割引がある一部の顧客支払の決済"
 description: "この記事は、貸方票に現金割引が適用され、元の請求書にも現金割引がある場合のシナリオについて説明します。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

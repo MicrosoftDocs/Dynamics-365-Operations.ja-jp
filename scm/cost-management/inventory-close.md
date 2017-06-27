@@ -3,7 +3,7 @@ title: "在庫原価計算"
 description: "受入トランザクションと払出トランザクションを決済するプロセスの一環で、行った調整を総勘定元帳に反映して更新するように選択することもできます。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

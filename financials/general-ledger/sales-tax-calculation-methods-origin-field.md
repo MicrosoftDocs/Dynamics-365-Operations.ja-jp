@@ -3,7 +3,7 @@ title: "[発生元] フィールドでの売上税計算方法"
 description: "この記事は、[売上税コードの値] ページの [発生元] フィールドのオプション、および売上税が選択された売上税コードのオプションに基づいて計算される方法を説明します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

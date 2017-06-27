@@ -3,7 +3,7 @@ title: "原価グループ"
 description: "原価グループは、原材料、労務、および間接費に対する原価貢献度などのように、製品の計算された原価での原価貢献度を区分および分析するための基礎を提供します。 原価内訳、原価分解、原価分類など、製造環境には原価グループ区分の同義語がいくつかあります。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

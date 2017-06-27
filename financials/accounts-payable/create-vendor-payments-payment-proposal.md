@@ -3,7 +3,7 @@ title: "仕入先支払を使用して仕入先請求書を作成"
 description: "このトピックでは、支払提案オプションの概要および支払提案の機能を示す例をいくつか提供します。 多くの場合、支払提案は仕入先支払の作成に使用されます。これは、クエリを使用すると、支払の仕入先請求書を期日および現金割引などの基準に基づいて支払の仕入先請求書を素早く選択することができるためです。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

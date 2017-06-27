@@ -3,7 +3,7 @@ title: "製品コンフィギュレーション モデルを設定します。"
 description: "この記事は、製品コンフィギュレーション モデルを設定および作成するステップについて説明します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "買掛金勘定ホーム ページ"
 description: "このトピックでは、買掛金勘定の概要を示します。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications

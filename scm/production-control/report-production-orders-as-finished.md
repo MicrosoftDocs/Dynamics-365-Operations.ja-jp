@@ -3,7 +3,7 @@ title: "製造オーダーの完了済としての報告"
 description: "完了レポートは生産ステージです。 この段階では、完成品は製造オーダーから在庫へ報告され、移動されます。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

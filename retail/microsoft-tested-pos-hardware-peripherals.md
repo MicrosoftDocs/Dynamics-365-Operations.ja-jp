@@ -3,12 +3,13 @@ title: "POS ハードウェアおよび周辺機器"
 description: "Retail Modern POS (販売時点管理) およびクラウド POS では、複数のインターフェイスとデプロイ オプションにより、小売業者のさまざまな取引シナリオに合わせて、POS ハードウェア周辺機器を活用できます。"
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User, IT Pro
+ms.reviewer: josaw
 ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 215234
 ms.assetid: 1893d4b3-e1b7-4b66-be58-0102addd5b36

@@ -3,7 +3,7 @@ title: "財務諸表を生成します"
 description: "このトピックでは、財務諸表の生成に関する情報を提供します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

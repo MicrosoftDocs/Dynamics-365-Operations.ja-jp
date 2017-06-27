@@ -3,7 +3,7 @@ title: "取消による減価償却の影響"
 description: "この記事は、固定資産トランザクションの取消の潜在的な影響について説明します。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

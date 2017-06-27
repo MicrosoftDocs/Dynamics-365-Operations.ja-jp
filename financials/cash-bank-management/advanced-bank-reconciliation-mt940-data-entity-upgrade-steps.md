@@ -3,7 +3,7 @@ title: "詳細な口座調整 MT940 のインポート – 複合データ エ�
 description: "番号順序は、MT940 形式をサポートするために、口座取引明細書のインポート エンティティに追加する必要があります。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

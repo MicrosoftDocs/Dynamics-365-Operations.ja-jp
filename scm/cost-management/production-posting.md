@@ -3,7 +3,7 @@ title: "生産の転記"
 description: "この記事は、生産プロセスの、異なるタイプの転記について説明します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

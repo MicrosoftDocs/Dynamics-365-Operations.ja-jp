@@ -3,7 +3,7 @@ title: "予定原価に対する原価バージョンを使用した原価変更
 description: "この記事では、製造品目の算出原価に対する原価変更の影響を、予定原価の個別の原価バージョンを使用してシミュレーションする方法を説明します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

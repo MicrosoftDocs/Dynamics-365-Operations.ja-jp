@@ -3,7 +3,7 @@ title: "製造差異の一般的な発生源"
 description: "この記事は、製造差異のタイプごとの一般的な発生源について説明します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

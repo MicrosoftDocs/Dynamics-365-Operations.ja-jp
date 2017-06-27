@@ -3,7 +3,7 @@ title: "現金割引"
 description: "現金割引は、買掛金勘定および売掛金勘定に設定され、共有されます。  現金割引の使用可能なオプションは、顧客請求書または仕入先請求書で定義でき、現金割引日以内に請求書が支払われた場合に適用されます。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

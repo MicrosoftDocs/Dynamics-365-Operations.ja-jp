@@ -3,7 +3,7 @@ title: "Dynamics AX application version 7.0.1 (2016 年 5 月) の新機能お�
 description: "この記事では、Microsoft Dynamics AX application version 7.0.1 の新機能または変更された機能について説明します。 このバージョンは、2016 年 5 月にリリースされ、7.0.1265.23014 のビルド番号を持ちます。"
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

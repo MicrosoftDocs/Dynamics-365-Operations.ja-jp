@@ -3,7 +3,7 @@ title: "仕入先支払の取消"
 description: "この記事は、支払の取消、削除、無効化、および拒否の違いについて説明します。 また、仕入先チェックを取り消すための 2 つの方法を説明します。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

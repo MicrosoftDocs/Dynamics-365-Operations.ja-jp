@@ -3,7 +3,7 @@ title: "一部の顧客支払の決済、および割引日より前の全額最
 description: "この記事は、顧客の一部支払を記録し、現金割引期間内に現金割引を使用する方法を示すシナリオを提供します。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

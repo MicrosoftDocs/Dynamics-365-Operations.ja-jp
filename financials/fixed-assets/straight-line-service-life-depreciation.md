@@ -3,7 +3,7 @@ title: "耐用年数定額減価償却"
 description: "この記事は、耐用年数定額減価償却方法の概要を示します。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

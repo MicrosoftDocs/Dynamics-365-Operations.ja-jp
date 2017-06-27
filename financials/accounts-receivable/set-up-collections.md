@@ -3,7 +3,7 @@ title: "貸方転記および取立の設定"
 description: "この品目では、コレクション機能の設定方法が説明されます。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

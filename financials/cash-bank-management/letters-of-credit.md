@@ -3,7 +3,7 @@ title: "信用状"
 description: "信用状は、国境をまたぐ商品売買によく使用される銀行ドキュメントです。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "減価償却計算の丸め金額"
 description: "この記事は、帳簿設定ページの [減価償却の丸め] フィールドについて説明します。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

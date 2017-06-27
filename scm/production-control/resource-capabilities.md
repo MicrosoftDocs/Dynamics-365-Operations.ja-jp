@@ -3,7 +3,7 @@ title: "リソースの能力"
 description: "この記事は、リソース能力に関する情報を提供します。 能力とは、運営リソースが特定の活動を実行する能力です。 この記事では、活動に適切なリソースを選択するための実力のレベルや優先順位などの能力および関連する概念の使用方法を説明します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

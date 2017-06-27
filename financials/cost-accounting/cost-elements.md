@@ -3,7 +3,7 @@ title: "原価要素分析コード"
 description: "原価計算のコアの柱の 1 つとして、原価要素分析コードは、分類または原価がどこに流れているのかを追跡するために使用されます。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

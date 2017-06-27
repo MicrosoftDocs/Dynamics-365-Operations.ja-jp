@@ -3,7 +3,7 @@ title: "非製造環境での標準原価を更新"
 description: "この記事は、非製造環境での標準原価の更新についてのガイダンスを提供します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
