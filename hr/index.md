@@ -1,12 +1,12 @@
 ---
-title: "人事管理"
-description: "人事管理は、多くの日常的な記録タスクを合理化し、組織の多数のスタッフ配置に関連するプロセスを自動化します。 また、人事スタッフが監督すべき領域を管理するためのフレームワークも提供します。 これらの領域には、従業員の採用およびつなぎ留め、給付金管理、トレーニング、勤務評価、変更管理が含まれます。"
+title: Microsoft Dynamics 365 for Talent
+description: "才能は、多くの日常的な記録タスクを合理化し、組織の多数のスタッフ配置に関連するプロセスを自動化します。 これらのプロセスには、従業員の雇用維持、給付金管理、トレーニング、勤務評価、変更管理が含まれます。"
 author: rschloma
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/19/2017
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-talent
 ms.technology: 
 audience: Application User
 ms.reviewer: rschloma
@@ -16,23 +16,25 @@ ms.assetid: b48b1cb2-6e66-467e-9c0e-09b6a4aeb9fe
 ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 213d1dc69ac0f6dc10138e185625a142e107f073
+ms.sourcegitcommit: 6e2feeadd7cef8273d94810a13df6c5dfe6f1d4a
+ms.openlocfilehash: e0f41445c621a317fcdccef6cb08766dd6fac279
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/21/2017
 
 
 ---
 
-# <a name="welcome-to-human-resources"></a>人事管理へようこそ
+# <a name="welcome-to-microsoft-dynamics-365-for-talent"></a>Microsoft Dynamics 365 for Talent へようこそ
 
 [!include[banner](includes/banner.md)]
 
-人事管理は、多くの日常的な記録タスクを合理化し、組織の多数のスタッフ配置に関連するプロセスを自動化します。 また、人事スタッフが監督すべき領域を管理するためのフレームワークも提供します。 これらの領域には、従業員の採用およびつなぎ留め、給付金管理、トレーニング、勤務評価、変更管理が含まれます。
+Microsoft Dynamics 365 for Talent は、多くの日常的な記録タスクを合理化し、組織の多数のスタッフ配置に関連するプロセスを自動化します。これらのプロセスには、従業員の雇用維持、給付金管理、トレーニング、勤務評価、変更管理が含まれます。 また、人事スタッフが監督すべき領域を管理するためのフレームワークも提供します。
 
-人事管理を使用して、次のタスクを実行できます。
+Dynamics 365 for Talent は、Dynamics 365 for Finance and Operations Enterprise Edition の人事管理にも密接に関係しています。 どちらの製品に同じ機能があります。 このため、主に人事管理に関連するトピックの場合、製品名は Dynamics 365 for Finance and Operations Enterprise Edition になります。主に Talent に関連するトピックの場合、製品名は Dynamics 365 for Talent になります。 1 つの製品で記述されているトピックは、関連する製品の同じ機能にも当てはまる可能性があります。
+
+才能を使用して、次のタスクを実行できます。
 
 > + 組織構造の管理。
 > + 雇用から退職までの作業者の包括的情報の管理。
@@ -42,25 +44,19 @@ ms.lasthandoff: 05/25/2017
 > + 作業者の能力の管理。
 > + パフォーマンスの確認および作業者の目標の実装。
 > + 日程表、セッション、コース編成を含むトレーニング コースの設定、提供、および分析。
-> + 作業者の採用および申請者の追跡。
 
-<a name="develop-a-human-resources-strategy"></a>人材戦略の作成
+<a name="develop-a-strategy-for-managing-your-human-resources"></a>人材を管理するための戦略を立てます。
 ---------------------------------------------------------
 
-人事管理の仕事では、部門、職務、職位などの要素を使用して、組織の構造を設計する必要があります。 これらの要素は、人事管理において構成する基本要素に含まれます。 個々の従業員は、ジョブに関連付けられている職位に割り当てられます。
+才能で作業をするときは、部門、職務、職位などの要素を使用して、組織の構成方法を決定します。 これらの要素は、構成する基本要素に含まれます。 個々の従業員は、職務に関連付けられている職位に割り当てられます。
 
 -   [部門、職務、職位を使用した従業員の編成](departments-jobs-positions.md)
 -   [会社固有の HR パラメーターの設定](set-up-company-specific-hr-parameters.md)
 -   [法人間の HR パラメーターの設定](set-up-hr-parameters-across-legal-entities.md) 
 
-## <a name="recruit-hire-and-motivate-employees"></a>従業員の募集、雇用、および動機付け
+## <a name="retain-and-motivate-employees"></a>従業員の雇用維持と動機付け
 
-採用プロジェクトでは、空いている職位の広告に使用するコンテンツの管理や、空いているジョブへの応募を管理します。 これらを使用して、特定の採用プロジェクトの人材募集に対する反応、または特定の申請者を追跡し、オープンな職位の状態を更新します。 また、個別の応募者の雇用や、季節的なビジネス ニーズに合わせて複数の作業者の雇用を行うような大量雇用プロジェクトの管理ができます。
-
--   [採用プロセスの管理](manage-recruiting-process.md)
--   [大量雇用プロジェクト](mass-hire-projects.md) 
-
-スタッフを雇用した後、計画を作成して効率良く公平に報酬を管理し、組織が従業員に貸与するコンピューターや電話などの品目を管理します。 固定報酬と変動報酬の計画を作成でき、また、その計画の基準に適合する報酬プランを適用するルールを定義できます。
+計画を作成して効率良く公平に報酬を管理し、組織が従業員に貸与するコンピューターや電話などの品目を管理します。 固定報酬と変動報酬の計画を作成でき、また、その計画の基準に適合する報酬プランを適用するルールを定義できます。
 
 -   [報酬プラン](compensation-plans.md)
 -   [固定報酬プランの作成](create-fixed-compensation-plans.md)
@@ -84,10 +80,10 @@ ms.lasthandoff: 05/25/2017
 
 ## <a name="maintain-workplace-safety-and-compliance"></a>職場の安全性とコンプライアンスの管理
 
-Microsoft Dynamics AX は、アメリカ障害者法 (Americans with Disabilities Act)、移民帰化に関する法律を始めとする法律に準拠した、安全な作業環境の維持を支援します。 たとえば、特定の職務への身体的要件の管理や、職場でのスキルを組織が最適化できるよう調整するための要望を追跡できます。
+才能は、アメリカ障害者法 (Americans with Disabilities Act)、移民帰化に関する法律を始めとする法律に準拠した、安全な作業環境の維持をに役立ちます。 たとえば、特定の職務への身体的要件の管理や、職場でのスキルを組織が最適化できるよう調整するための要望を追跡できます。
 
--   [フォーム I-9 の検証](localizations/noam-usa-form-i-9-verification.md)
--   [アメリカ障害者法 (Americans with Disabilities Act) への準拠](localizations/noam-usa-comply-ada.md)
+-   [フォーム I-9 の検証](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-form-i-9-verification)
+-   [アメリカ障害者法 (Americans with Disabilities Act) への準拠](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-comply-ada)
 
 ## <a name="gather-information-using-questionnaires"></a>アンケートによる情報の収集
 
@@ -97,7 +93,4 @@ Microsoft Dynamics AX は、アメリカ障害者法 (Americans with Disabilitie
 -   [アンケートのデザイン](design-questionnaires.md)
 -   [アンケートの配布と記入](distribute-questionnaires.md)
 -   [アンケート結果の表示と評価](evaluate-questionnaire-results.md)
-
-
-
 

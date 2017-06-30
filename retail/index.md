@@ -1,96 +1,99 @@
 ---
-title: "小売ホーム ページ"
-description: "Dynamics 365 for Operations – Retail のホームページ"
+title: Microsoft Dynamics 365 for Retail
+description: "Dynamics 365 for Retail のホームページ"
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations, Retail
 ms.custom: 
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: josaw
-ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
+ms.search.validFrom: 2017-6-19
+ms.dyn365.ops.version: Version 1611, Retail Version
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: a1004022b1b9dfc43bd2ef5b9f59c759397a3af1
+ms.sourcegitcommit: c8684bf17946edff8230f0b6d324d355e61dc89b
+ms.openlocfilehash: 6684e1f3703df8eb821b442c98d187ffcf931796
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/21/2017
 
 
 ---
 
-# <a name="retail-home-page"></a>小売ホーム ページ
+# <a name="welcome-to-dynamics-365-for-retail"></a>Dynamics 365 for Retail へようこそ
 
 [!include[banner](includes/banner.md)]
 
-Dynamics 365 for Operations – Retail は、モバイルに適した最新のグローバルなシームレスかつ差別化されたオムニチャネル ソリューションによって、包括的なショッピング エクスペリエンスを実現します。 最新の販売時点管理 (POS) ソフトウェア ソリューション、店舗オペレーション、マーチャンダイジング、eコマース、コール センター、マーケティング、カスタマー ケア、サプライ チェーン、財務など、エンド ツー エンドの機能を自社のビジネスに最適な方法で展開できます。
+Microsoft Dynamics 365 for Retail は、すべてのチャネルの商取引を一元管理するエンド ツー エンドの小売用ソリューションです。 販売、モビリティ、インテリジェンス、生産性が含まれ、クラウドファースト、モバイルファーストで小売業者や作業者がより多くのことを実現するために役立ちます。 小売では、販売促進、在庫、チャネルの管理機能など、さまざまななビジネス プロセスの運用を包括的にサポートします。 また、すべてのタッチポイントで没入型のカスタマー エクスペリエンスを提供します。
 
-このページでは、Microsoft Dynamics 365 for Operations - Retail を効果的に使用するために役立つリソースを紹介します。 左端のウィンドウで機能領域を選択すると詳細が表示されます。 
+次の 3 つの製品は密接に関係しています。
 
-## <a name="set-up-retail-channels"></a>小売チャネルの設定
-小売エクスペリエンスを設定する際には、店舗 (従来型の店舗、オンライン ストア、コール センター) を定義およびコンフィギュレーションする方法を決定します。 
+- Microsoft Dynamics 365 for Finance and Operations Enterprise Edition
+- Microsoft Dynamics 365 for Retail
+- Microsoft Dynamics 365 for Talent
+
+3 つすべての製品で同じ機能が表示される可能性があります。 このため、主に Retail に関連するトピックの場合、製品名は Microsoft Dynamics 365 for Retail です。 主に Talent に関連するトピックの場合、製品名は Microsoft Dynamics 365 for Talent です。 最後に、コア製品 (Finance and Operations) に関連するトピックの場合、製品名は Microsoft Dynamics 365 for Finance and Operations Enterprise Edition です。 1 つの製品で記述されているトピックは、関連する製品の同じ機能にも当てはまる可能性があります。
+
+左ウィンドウで機能領域を選択すると詳細が表示されます。
+
+## <a name="channel-management"></a>チャネル管理
+小売のエクスペリエンスを設定すると、店舗を定義してコンフィギュレーションする方法が決定されます。 店舗には、実在する店舗、オンライン ストア、コール センターなどがあります。
 
 小売店舗ごとに独自の支払方法、配送方法、価格グループ、収益/経費勘定、レジスター、スタッフを設定できます。 小売店舗を作成したら、店舗に置く製品の品揃えを作成します。 特定の店舗で販売される製品に適用される、店舗に固有の価格と割引を定義することもできます。
 
--   [小売チャネルの定義](define-maintain-retail-channels.md)
--   [オンライン ストアの概要](online-stores.md)
+## <a name="clienteling-and-loyalty"></a>クライアンテリングとロイヤルティ
+顧客のニーズは、常に変化します。 購買習慣やトレンドの変化に迅速かつ効率的に対応できると、新しい顧客を対象として獲得できるだけでなく、既存の顧客基盤の満足度も維持することができます。
 
-## <a name="set-up-a-call-center"></a>コール センターの設定
-コール センターは小売チャネルのタイプの 1 つとして設定できます。 コール センターでは、作業者が電話で顧客の注文をとり、販売注文を作成します。 作業者の注文受付と注文処理プロセス全体にわたる顧客サービスの処理を支援するために、販売注文に含める内容、価格のコントロール方法、および顧客、製品、価格に関するデータへのアクセス許可を設定できます。 各コール センターに対してユーザー、支払方法、価格グループ、財務分析コード、荷渡方法を設定することもできます。
+さらに、顧客には、欲しいものを欲しいときに、欲しい価格で入手するためにさまざまな選択肢があります。 顧客のロイヤルティを維持するために、パーソナライズされた通知と買い物しやすい価格を利用できます。
 
--   [コール センターの機能](call-center-functionality.md)
--   [コール センター カタログの作成](create-call-center-catalogs.md)
+## <a name="hardware-and-peripherals"></a>ハードウェアおよび周辺機器
+Retail Modern 販売時点管理 (MPOS) およびクラウド POS では、さまざまなハードウェア周辺機器を使用できます。 MPOS およびクラウド POS には、複数のインターフェイスと配置オプションがあり、さまざまなビジネス シナリオで役に立ちます。
 
-## <a name="define-your-pos-solutions"></a>POS ソリューションの定義
-Retail Modern POS (MPOS) は、PC、タブレット、携帯電話向けの販売時点管理アプリです。 販売スタッフは、PC ベースのレジスターと同様に、店舗のどこからでもモバイル デバイスを使用して販売トランザクションと顧客注文の処理、クライアンテリング業務、日常業務、在庫管理を行うことができます。 クラウド POS は、標準のブラウザーで起動できるブラウザー ベースの POS です。 
+Retail の周辺機器シミュレーターには、仮想周辺機器シミュレーターや POS シミュレーターなどがあります。 仮想周辺機器シミュレーターは主に、通常は物理的に POS 周辺機器が必要なシナリオのテストをサポートします。 POS シミュレーターでは、POS クライアントを配置しなくても Retail の物理的な周辺機器との互換性をテストできます。
 
-店舗、店舗内の POS レジスター、レジスターでトランザクションの処理に使用される小売周辺機器の間の関係を定義するために、いくつかのコンポーネントを設定します。 また、POS の特定のインスタンスの特性も定義します。この特性には、レジスターで使用される小売周辺機器のハードウェア プロファイルまたは設定、レジスターがマップされている店舗、そのレジスターにログオンしているユーザーのビジュアル エクスペリエンス、レジスターで有効になっている機能が含まれます。 また、レジスターが非接続状態、つまりオフライン状態で稼働できるかどうかも定義します。
+## <a name="intelligence"></a>インテリジェンス
+高度な分析機能により、機械学習の力を小売業の課題で活用し、予測、最適化、パーソナライズされた洞察が可能になるため、成長と収益につながります。 小売では、オンラインまたはオフラインかどうかにかかわらず、任意のデバイスで視覚的なレポートを配信できます。 また、顧客が購買の前に、ニーズを満たす製品やサービスを特定するためにサポートできます。
 
--   [チャネル クライアント、レジスター、ハードウェア ステーションの定義と管理](define-maintain-channel-clients-registers-hw-stations.md)
--   [MPOS の構成とインストール](retail-modern-pos-device-activation.md)
--   [オフライン POS 機能](pos-offline-functionality.md)
+## <a name="monitoring-and-diagnosis"></a>監視および診断
+小売では、さまざまなレベルの組織階層でリアルタイムに販売と利益幅のパフォーマンスを監視できます。
 
-## <a name="set-up-a-customer-loyalty-program"></a>顧客ロイヤルティ プログラムの設定
-特定の基準に基づいて顧客にポイントを付与し、さまざまな方法でポイントを計算できるように、ロイヤルティ プログラムを設定できます。 すべての小売チャンネルの法人に適用する、簡単または複雑なロイヤルティ プログラムを設定できます。
--   [顧客ロイヤルティ プログラムの設定](set-up-customer-loyalty-program.md)
+## <a name="merchandising"></a>販売促進
+小売チャネルで製品を販売するには、小売で製品の作成とコンフィギュレーションを行う必要があります。 製品を作成し、製品のプロパティと属性を定義し、小売カテゴリ階層に製品を割り当てることができます。 製品を小売チャネルで利用可能にして有効な品揃えに追加するには、製品を利用可能にする法人に製品をリリースする必要があります。
 
-## <a name="set-up-discounts-and-price-adjustments"></a>割引の設定と価格調整
-製品の価格を調整したり、POS、コール センターの販売注文、またはオンライン注文で 1 つの品目またはトランザクションに適用される割引を設定したりできます。 
--   [価格調整と割引](price-adjustments-discounts.md)
--   [チャネル固有の割引の定義](define-channel-specific-discounts.md)
--   [重複する割引の最適な組み合わせの決定](optimal-combination-overlapping-discounts.md)
+製品の価格を調整したり、POS、コール センターの販売注文、またはオンライン注文で 1 つの品目またはトランザクションに適用される割引を設定したりできます。
 
-## <a name="set-up-retail-products"></a>小売製品の設定
-小売チャネルで製品を販売するには、Dynamics 365 for Operations で製品の作成とコンフィギュレーションを行う必要があります。 製品を作成し、製品のプロパティと属性を定義し、小売カテゴリ階層に製品を割り当てることができます。 製品を小売チャンネルで利用可能にして有効な品揃えに追加するには、製品を利用可能にする法人に製品をリリースする必要があります。
--   [小売製品の設定](set-up-retail-products.md)
+## <a name="store-operations-and-pos"></a>店舗運営および POS
+MPOS は、PC、タブレット、および電話用の POS アプリケーションです。 販売スタッフは、PC ベースのレジスターと同様に、店舗のどこからでもモバイル デバイスを使用して販売トランザクションと顧客注文の処理、クライアンテリング業務、日常業務、在庫管理を行うことができます。 クラウド POS は、標準のブラウザーで起動できるブラウザー ベースの POS です。
 
-## <a name="monitor-and-analyze-performance"></a>パフォーマンスの監視と分析
-Dynamics 365 for Operations のデータを使用して、店舗のパフォーマンス、顧客と製品の収益性、販売動向などを分析できます。
--   [顧客と製品の収益性の評価](assess-customer-product-profitability.md)
--   [店舗のパフォーマンスの分析](store-performance-information.md)
+店舗、店舗内の POS レジスター、レジスターでトランザクションの処理に使用される小売周辺機器の間の関係を定義するために、いくつかのコンポーネントを設定します。 また、POS の特定のインスタンスの特性も定義します。 特性には、レジスターで使用される小売周辺機器のハードウェア プロファイルまたは設定、レジスターがマップされている店舗、そのレジスターにログオンしているユーザーのビジュアル エクスペリエンス、レジスターで有効になっている機能などがあります。 レジスターが非接続状態、つまりオフライン状態で稼働できるかどうかも定義します。
+
+## <a name="workforce-management"></a>要員管理
+利益幅が減少している環境で利益を出すために、小売業者は常に運用コストの削減に努めています。 ほとんどの小売業者にとって運用コストの大部分は、小売スタッフのコストです。 このため、このコストを制御することにより、最終損益に大きな影響を与えることができます。 また、従業員を強化して生産性を向上させると、カスタマー エクスペリエンスも向上します。
+
+店舗のマネージャーは小売で作業者のシフトやスケジュールを作成して公開し、指示によりシフトに注釈を付け、先週のスケジュールをコピーして今週のスケジュールを作成することができます。 また、マネージャは、小売作業者が申請した休暇要求を確認して、承認または否認できます。 "シフト交換" や "シフト提示" の要求も確認して承認または否認できます。
+
+店舗の関係者は、シフトや割り当てられたスケジュールと、シフトに関する指示、シフトに割り当てられている同僚を確認できます。 休暇要求や同僚とのシフト交換の要求、シフト提示の要求も申請できます。
 
 ## <a name="customize-and-administer-retail-environments"></a>小売環境のカスタマイズと管理
-環境のカスタマイズを要求されている場合や、システムの展開と管理を担当している場合は、小売り固有の開発者およびシステム管理者向けコンテンツと、Microsoft Dynamics 365 for Operations のより一般的なコンテンツを確認してください。 
--   [Dynamics 365 for Operations - Retail IT プロおよび開発者向け](dev-itpro/dev-retail-home-page.md)
--   [IT プロおよび開発者向けの Microsoft Dynamics 365 for Operations](/dynamics365/operations/dev-itpro/dev-tools/developer-home-page)
+環境のカスタマイズを要求されている場合や、システムの展開と管理を担当している場合は、小売専用の開発者およびシステム管理者向けコンテンツと、一般的なコンテンツを確認してください。
+
+- [Dynamics 365 for Retail IT プロおよび開発者向け](dev-itpro/dev-retail-home-page.md)
+- [Microsoft Dynamics 365 for Retail 開発者および IT プロ向け](/dynamics365/unified-operations/dev-itpro/dev-tools/developer-home-page)
 
 ## <a name="additional-resources"></a>その他のリソース
 ### <a name="whats-new-and-in-development"></a>新機能および開発中の機能
-リリースされた新機能と開発中の新機能については、<a href="https://roadmap.dynamics.com/">Dynamics 365 Roadmap (Dynamics 365 ロードマップ)</a> を参照してください。 
+リリースされた新機能と開発中の新機能については、[Microsoft Dynamics 365 Roadmap (Dynamics 365 ロードマップ)](https://roadmap.dynamics.com/) を参照してください。
 
 ### <a name="blogs"></a>ブログ
-Microsoft Dynamics 365 for Operations - Retail に関する意見、ニュース、その他の情報については、<a href="https://community.dynamics.com/b/msftdynamicsblog">Microsoft Dynamics 365 blog (Microsoft Dynamics 365 ブログ)</a> を参照してください。
+Retail およびその他のソリューションに関する意見、ニュース、その他の情報については、[Microsoft Dynamics 365 blog (Microsoft Dynamics 365 ブログ)](https://community.dynamics.com/b/msftdynamicsblog) を参照してください。
 
-<a href="https://blogs.msdn.microsoft.com/dax/">Microsoft Dynamics AX product team blog (Microsoft Dynamics AX 製品チームのブログ)</a> には、小売に関する多くのトピックがあります。 これらの投稿の一部は Dynamics 365 for Operations の以前のバージョンに関して書かれていますが、現在のバージョンでも同じ概念を適用でき、手順も類似しています。
+[Microsoft Dynamics AX product team blog (Microsoft Dynamics AX 製品チームのブログ)](https://blogs.msdn.microsoft.com/dax/) には、Retail に関する多くの投稿があります。 これらの投稿の一部は、以前のバージョンの小売用に書かれたものですが、同じ概念が適用されます。 手順も、現在のバージョンと似ています。
 
-<a href="https://community.dynamics.com/partner/b/operationspartnercommunityblog">Microsoft Dynamics Operations Partner Community Blog (Microsoft Dynamics Operations パートナー コミュニティのブログ)</a> では、MBS 操作に関する最新情報とトレンドを知るための単一のリソースが Microsoft Dynamics パートナー向けに提供されています。
-
-
+[Microsoft Dynamics Operations Partner Community Blog (Microsoft Dynamics Operations パートナー コミュニティのブログ)](https://community.dynamics.com/partner/b/operationspartnercommunityblog) では、MBS Operations に関する最新情報とトレンドを知るための単一のリソースが Microsoft Dynamics パートナー向けに提供されています。
 

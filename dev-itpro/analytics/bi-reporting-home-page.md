@@ -1,15 +1,15 @@
 ---
 title: "BI とレポート作成のホーム ページ"
-description: "このトピックでは、Microsoft Dynamics 365 for Operations で使用できる BI とレポート作成のリソースの一覧を示します。"
+description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations で使用できる BI とレポート作成のリソースの一覧を示します。"
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 27681
 ms.assetid: c4624bc8-3661-49e6-9cb4-87778acdc302
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 3e97fda52acf6b61bf47eb30d53ce6597b4929d3
+ms.sourcegitcommit: c8684bf17946edff8230f0b6d324d355e61dc89b
+ms.openlocfilehash: 448517531112636d553dc895b17c5644c9c1f0bc
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/21/2017
 
 
 ---
@@ -30,7 +30,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-このトピックでは、Microsoft Dynamics 365 for Operations で使用できる BI とレポート作成のリソースの一覧を示します。 
+このトピックでは、Microsoft Dynamics 365 for Finance and Operations で使用できる BI とレポート作成のリソースの一覧を示します。 
 
 <a name="working-with-aggregate-data"></a>データの集計手順
 ---------------------------
@@ -43,14 +43,14 @@ ms.lasthandoff: 05/25/2017
 ## <a name="self-service-reporting"></a>セルフ サービス レポーティング
 -   [Power BI 統合](power-bi-integration.md)
 -   [ワークスペースの Power BI 統合のコンフィギュレーション](configure-power-bi-integration.md)
--   [Microsoft Dynamics 365 for Operations データを使用して Power BI レポートを作成する](create-powerbi-report-data.md)
+-   [Microsoft Dynamics 365 for Finance and Operations のデータを使用して Power BI レポートを作成する](create-powerbi-report-data.md)
 -   [Power BI レポートとダッシュボードを作成する](create-powerbi-report-dashboard.md)
 -   [販売チャネル パフォーマンス Power BI コンテンツ](retail-channel-performance-dashboard-power-bi-data.md)
 -   [財務パフォーマンス Power BI コンテンツ](financial-performance-power-bi-content-pack.md)
 -   [販売および収益性パフォーマンス Power BI コンテンツ](sales-profitability-performance-content-pack.md)
--   [Dynamics Online 365 からデータを Power BI に提供する電子申告コンフィギュレーションを使用する](general-electronic-reporting-report-configuration-get-data-powerbi.md)
+-   [Finance and Operations からデータを Power BI に提供する電子申告コンフィギュレーションを使用する](general-electronic-reporting-report-configuration-get-data-powerbi.md)
 
-## <a name="building-embedded-analytical-experiences-in-the-dynamics-365-for-operations-client"></a>Dynamics 365 for Operation クライアントに埋め込まれた分析経験の作成
+## <a name="building-embedded-analytical-experiences-in-the-finance-and-operations-client"></a>Finance and Operations クライアントに埋め込まれた分析経験の作成
 -   [埋め込まれたビジネス インテリジェンス](analytics.md#embedded-business-intelligence)
 -   [KPI のモデリングおよびカスタマイズ](analytics.md#kpi-modeling-and-customization)
 -   [BI をワークスペースに追加](add-bi-workspaces.md)
@@ -58,7 +58,7 @@ ms.lasthandoff: 05/25/2017
 
 ## <a name="document-reporting-and-printing"></a>ドキュメントのレポーティングおよび印刷
 -   [ドキュメントの Reporting Services の概要](document-reporting-services.md)
--   [Dynamics 365 for Operations アプリケーションでの印刷](print-documents.md)
+-   [Finance and Operations アプリケーションでの印刷](print-documents.md)
 -   [プリンター デバイスを有効にするためにドキュメント ルーティング エージェントをインストールする](install-document-routing-agent.md)
 -   [ドキュメント回覧エージェントを Windows サービスとして実行する](run-document-routing-agent-as-windows-service.md)
 -   [次世代のレポート ソリューションの作成](create-nextgen-reporting-solutions.md)
@@ -72,7 +72,7 @@ ms.lasthandoff: 05/25/2017
 -   [電子申告のフォーミュラ デザイナー](general-electronic-reporting-formula-designer.md)
 -   [電子申告の送信先](electronic-reporting-destinations.md)
 -   [Lifecycle Services から電子申告コンフィギュレーションをダウンロードする](download-electronic-reporting-configuration-lcs.md)
--   [Dynamics Online 365 からデータを Power BI に提供する電子申告コンフィギュレーションを使用する](general-electronic-reporting-report-configuration-get-data-powerbi.md)
+-   [Finance and Operations からデータを Power BI に提供する電子申告コンフィギュレーションを使用する](general-electronic-reporting-report-configuration-get-data-powerbi.md)
 -   [ER コンフィギュレーション プロバイダーを作成して有効なプロバイダーとしてマーク付けする](http://ax.help.dynamics.com/en/wiki/er-select-service-provider/) (タスク ガイド)
 -   [ER ドメイン固有のデータ モデルを設計する](http://ax.help.dynamics.com/en/wiki/er-design-domain-specific-data-model/) (タスク ガイド)
 -   [ER モデル マッピングを定義し、データ ソースを選択する](http://ax.help.dynamics.com/en/wiki/er-define-model-mapping-and-select-data-sources/) (タスク ガイド)
