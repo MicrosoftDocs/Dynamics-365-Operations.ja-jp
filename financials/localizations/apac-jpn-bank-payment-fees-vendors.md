@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: PaymFeeBankRule_JP, VendPaymFeeGroup_JP, VendPaymModeFee
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 10214
 ms.assetid: aa8a8ef3-1e5e-4174-817b-3b98e1e51509
 ms.search.region: Japan
