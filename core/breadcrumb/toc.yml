@@ -2,7 +2,7 @@
   tocHref: /dynamics365/
   topicHref: /dynamics365
   items:
-  - name: Operations
+  - name: Finance and Operations Enterprise
     tocHref: /dynamics365/unified-operations/fin-and-ops/
     topicHref: /dynamics365/unified-operations/fin-and-ops/index
     items:
@@ -12,13 +12,13 @@
     - name: 財務
       tocHref: /dynamics365/unified-operations/financials/
       topicHref: /dynamics365/unified-operations/financials/index
-    - name: 人事管理
-      tocHref: /dynamics365/unified-operations/talent/
-      topicHref: /dynamics365/unified-operations/talent/index
-    - name: 小売
-      tocHref: /dynamics365/unified-operations/retail/
-      topicHref: /dynamics365/unified-operations/retail/index
     - name: サプライ チェーン
  
       tocHref: /dynamics365/unified-operations/supply-chain/
       topicHref: /dynamics365/unified-operations/supply-chain/index
+  - name: 才能
+    tocHref: /dynamics365/unified-operations/talent/
+    topicHref: /dynamics365/unified-operations/talent/index
+  - name: 小売
+    tocHref: /dynamics365/unified-operations/retail/
+    topicHref: /dynamics365/unified-operations/retail/index
