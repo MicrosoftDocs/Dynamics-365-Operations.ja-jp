@@ -10,7 +10,7 @@ ms.service: dynamics-365-talent
 ms.technology: 
 audience: Application User
 ms.reviewer: rschloma
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 20931
 ms.assetid: b48b1cb2-6e66-467e-9c0e-09b6a4aeb9fe
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 6e2feeadd7cef8273d94810a13df6c5dfe6f1d4a
-ms.openlocfilehash: e0f41445c621a317fcdccef6cb08766dd6fac279
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: 28b5c72a174c7d40fcf1e4c348834fc532b04fcc
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/21/2017
+ms.lasthandoff: 06/29/2017
 
 
 ---
@@ -32,18 +32,19 @@ ms.lasthandoff: 06/21/2017
 
 Microsoft Dynamics 365 for Talent は、多くの日常的な記録タスクを合理化し、組織の多数のスタッフ配置に関連するプロセスを自動化します。これらのプロセスには、従業員の雇用維持、給付金管理、トレーニング、勤務評価、変更管理が含まれます。 また、人事スタッフが監督すべき領域を管理するためのフレームワークも提供します。
 
-Dynamics 365 for Talent は、Dynamics 365 for Finance and Operations Enterprise Edition の人事管理にも密接に関係しています。 どちらの製品に同じ機能があります。 このため、主に人事管理に関連するトピックの場合、製品名は Dynamics 365 for Finance and Operations Enterprise Edition になります。主に Talent に関連するトピックの場合、製品名は Dynamics 365 for Talent になります。 1 つの製品で記述されているトピックは、関連する製品の同じ機能にも当てはまる可能性があります。
-
 才能を使用して、次のタスクを実行できます。
 
-> + 組織構造の管理。
-> + 雇用から退職までの作業者の包括的情報の管理。
-> + 給付金計画の定義と管理、作業者の登録、被扶養者の補償の割り当て、および受益者の指定。
-> + 休暇ポリシーの確立および監視。
-> + プロファイル ベースの時間管理の実装および追跡と、給与システムにエクスポートする支払情報の生成。
-> + 作業者の能力の管理。
-> + パフォーマンスの確認および作業者の目標の実装。
-> + 日程表、セッション、コース編成を含むトレーニング コースの設定、提供、および分析。
++ 組織構造の管理。
++ 雇用から退職までの作業者の包括的情報の管理。
++ 給付金計画の定義と管理、作業者の登録、被扶養者の補償の割り当て、および受益者の指定。
++ 休暇ポリシーの確立および監視。
++ プロファイル ベースの時間管理の実装および追跡と、給与システムにエクスポートする支払情報の生成。
++ 作業者の能力の管理。
++ パフォーマンスの確認および作業者の目標の実装。
++ 日程表、セッション、コース編成を含むトレーニング コースの設定、提供、および分析。
+
+> [!NOTE] 
+> Dynamics 365 for Talent は、Dynamics 365 for Finance and Operations Enterprise Edition の人事管理にも密接に関係しています。 どちらの製品に同じ機能があります。 このため、主に人事管理に関連するトピックの場合、製品名は Dynamics 365 for Finance and Operations Enterprise Edition になります。主に Talent に関連するトピックの場合、製品名は Dynamics 365 for Talent になります。 1 つの製品で記述されているトピックは、関連する製品の同じ機能にも当てはまる可能性があります。
 
 <a name="develop-a-strategy-for-managing-your-human-resources"></a>人材を管理するための戦略を立てます。
 ---------------------------------------------------------
