@@ -40,7 +40,7 @@ Microsoft Dynamics 365 for Finance and Operations は、Microsoft の企業向�
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><h3>財務</h3>
+<td><h3>Financials</h3>
 <p><a href="../financials/general-ledger/audit-policy-rules">コンプライアンス</a></p>
 <p>財務管理</p>
 <ul style="list-style-type:none">

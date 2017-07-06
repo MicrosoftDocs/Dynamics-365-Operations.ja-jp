@@ -1,6 +1,6 @@
 ---
 title: Microsoft Dynamics 365 for Talent
-description: "才能は、多くの日常的な記録タスクを合理化し、組織の多数のスタッフ配置に関連するプロセスを自動化します。 これらのプロセスには、従業員の雇用維持、給付金管理、トレーニング、勤務評価、変更管理が含まれます。"
+description: "Talentは、多くの日常的な記録タスクを合理化し、組織の多数のスタッフ配置に関連するプロセスを自動化します。 これらのプロセスには、従業員の雇用維持、給付金管理、トレーニング、勤務評価、変更管理が含まれます。"
 author: rschloma
 manager: AnnBe
 ms.date: 06/19/2017
@@ -32,7 +32,7 @@ ms.lasthandoff: 06/29/2017
 
 Microsoft Dynamics 365 for Talent は、多くの日常的な記録タスクを合理化し、組織の多数のスタッフ配置に関連するプロセスを自動化します。これらのプロセスには、従業員の雇用維持、給付金管理、トレーニング、勤務評価、変更管理が含まれます。 また、人事スタッフが監督すべき領域を管理するためのフレームワークも提供します。
 
-才能を使用して、次のタスクを実行できます。
+Talentを使用して、次のタスクを実行できます。
 
 + 組織構造の管理。
 + 雇用から退職までの作業者の包括的情報の管理。
@@ -49,7 +49,7 @@ Microsoft Dynamics 365 for Talent は、多くの日常的な記録タスクを�
 <a name="develop-a-strategy-for-managing-your-human-resources"></a>人材を管理するための戦略を立てます。
 ---------------------------------------------------------
 
-才能で作業をするときは、部門、職務、職位などの要素を使用して、組織の構成方法を決定します。 これらの要素は、構成する基本要素に含まれます。 個々の従業員は、職務に関連付けられている職位に割り当てられます。
+Talentで作業をするときは、部門、職務、職位などの要素を使用して、組織の構成方法を決定します。 これらの要素は、構成する基本要素に含まれます。 個々の従業員は、職務に関連付けられている職位に割り当てられます。
 
 -   [部門、職務、職位を使用した従業員の編成](departments-jobs-positions.md)
 -   [会社固有の HR パラメーターの設定](set-up-company-specific-hr-parameters.md)
@@ -81,7 +81,7 @@ Microsoft Dynamics 365 for Talent は、多くの日常的な記録タスクを�
 
 ## <a name="maintain-workplace-safety-and-compliance"></a>職場の安全性とコンプライアンスの管理
 
-才能は、アメリカ障害者法 (Americans with Disabilities Act)、移民帰化に関する法律を始めとする法律に準拠した、安全な作業環境の維持をに役立ちます。 たとえば、特定の職務への身体的要件の管理や、職場でのスキルを組織が最適化できるよう調整するための要望を追跡できます。
+Talentは、アメリカ障害者法 (Americans with Disabilities Act)、移民帰化に関する法律を始めとする法律に準拠した、安全な作業環境の維持をに役立ちます。 たとえば、特定の職務への身体的要件の管理や、職場でのスキルを組織が最適化できるよう調整するための要望を追跡できます。
 
 -   [フォーム I-9 の検証](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-form-i-9-verification)
 -   [アメリカ障害者法 (Americans with Disabilities Act) への準拠](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-comply-ada)

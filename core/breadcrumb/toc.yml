@@ -15,16 +15,16 @@
     - name: 開発者と管理者
       tocHref: /dynamics365/unified-operations/dev-itpro/
       topicHref: /dynamics365/unified-operations/dev-itpro/index
-    - name: 財務
+    - name: Financials
       tocHref: /dynamics365/unified-operations/financials/
       topicHref: /dynamics365/unified-operations/financials/index
     - name: サプライ チェーン
  
       tocHref: /dynamics365/unified-operations/supply-chain/
       topicHref: /dynamics365/unified-operations/supply-chain/index
-  - name: 才能
+  - name: Talent
     tocHref: /dynamics365/unified-operations/talent/
     topicHref: /dynamics365/unified-operations/talent/index
-  - name: 小売
+  - name: Retail
     tocHref: /dynamics365/unified-operations/retail/
     topicHref: /dynamics365/unified-operations/retail/index
