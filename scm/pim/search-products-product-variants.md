@@ -31,6 +31,7 @@ ms.lasthandoff: 05/25/2017
 
 [!include[banner](../includes/banner.md)]
 
+[!include[Retail name](../includes/retail-name.md)]
 
 手動で販売注文明細行または購買注文明細行を作成する場合、[<strong>品目番号</strong>] フィールドを使用して製品と製品バリアントを検索します。  これにより、コンフィギュレーションの文字列のみがある場合、または製品分析コードの 1 つが利用可能な場合に、製品バリアントをすばやく検索することが可能になります。
 
