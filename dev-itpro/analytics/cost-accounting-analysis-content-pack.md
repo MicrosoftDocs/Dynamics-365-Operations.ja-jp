@@ -3,24 +3,24 @@ title: "原価会計分析 Power BI コンテンツ"
 description: "このトピックでは、原価会計分析 Power BI コンテンツの内容について説明します。 Power BI レポートにアクセスする方法を説明し、コンテンツを作成するために使用したデータ モデルおよびエンティティについての情報を提供します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: Operations
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 270274
 ms.assetid: b74549df-35d5-4f2f-b3c7-405b0d38ea78
 ms.search.region: Global
-ms.author: yuyus
+ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 5ce75a6145bde4a8c33ed785c7d2a60a52416676
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 1d19276331a4278f44ad14292ed434c49b74d727
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -29,18 +29,27 @@ ms.lasthandoff: 05/25/2017
 
 [!include[banner](../includes/banner.md)]
 
+このトピックでは、**原価会計分析** Microsoft Power BI コンテンツの内容について説明します。 Power BI レポートにアクセスする方法を説明し、コンテンツを作成するために使用したデータ モデルおよびエンティティについての情報を提供します。
 
-このトピックでは、原価会計分析 Power BI コンテンツの内容について説明します。 Power BI レポートにアクセスする方法を説明し、コンテンツを作成するために使用したデータ モデルおよびエンティティについての情報を提供します。
+## <a name="overview"></a>概要
 
-<a name="overview"></a>概要
---------
+**原価会計分析** Power BI コンテンツは、原価の管理者または組織の原価管理を担当する人物を対象としています。 これには、実際原価、予算原価、変動予算原価ごとの原価、規模、原価率などの主なメトリックスが含まれています。 これは、**原価会計** モジュールのトランザクション データを使用して、1 つのレポート通貨で組織全体のコストの集計ビューを示します。 管理者は、組織に複数の法人が含まれている場合でも、原価オブジェクトでデータをフィルター処理して、組織単位の原価管理を実行できます。 
 
-**原価会計分析** Microsoft Power BI コンテンツは、原価の管理者または組織の原価管理を担当する人物を対象としています。 これには、実際原価、予算原価、変動予算原価ごとの原価、規模、原価率などの主なメトリックスが含まれています。 これは、Microsoft Dynamics 365 for Operations での原価会計のトランザクション データを使用して、1 つのレポート通貨で組織全体の原価の集計ビューを示します。 管理者は、組織に複数の法人が含まれている場合でも、原価オブジェクトでデータをフィルター処理して、組織単位の原価管理を実行できます。 **原価会計分析** Power BI コンテンツは実際原価と予算原価の差異を強調表示するため、管理者は組織単位の上下傾向について把握できます。 管理者は、原価要素階層または個々の原価要素をドリルダウンし、どのように原価の差異が発生したのかについての詳細情報を把握して、有効な対策を行えます。 **原価会計分析** Power BI コンテンツで、原価経理担当は組織全体の原価オブジェクトを通じて原価がどのように流れているのか分析できます。 原価会計に関する詳細については、「[原価会計ホーム ページ](/dynamics365/operations/financials/cost-accounting/cost-accounting-home-page)」を参照してください。 原価会計のアクセス レベルのセキュリティを定義して、Power BI で行レベルのセキュリティと組み合わせることにより、すべての原価オブジェクトの所有者に**原価会計分析** Power BI コンテンツにアクセス権を付与できます。 表示されるすべてのデータは、原価会計で操作するアクセス レベルに基づいてフィルター処理されます。 アクセス レベルのセキュリティおよび行レベルのセキュリティの詳細については、「[Power BI の原価会計コンテンツ向けセキュリティの設定](setup-security-cost-accounting-content-pack.md)」を参照してください。
+**原価会計分析** コンテンツは実際原価と予算原価の差異を強調表示するため、管理者は組織単位の上下傾向について把握できます。 管理者は、コスト要素階層または個々のコスト要素にドリルダウンできます。 これにより、マネージャはどのように原価の差異が発生したのかについての詳細情報を把握して、有効な対策を取ることができます。 
+
+**原価会計分析** コンテンツで、コスト経理担当は組織全体のコスト オブジェクトを通じてコストがどのように流れているのか分析できます。 
+
+原価会計に関する詳細については、「[原価会計ホーム ページ](/dynamics365/unified-operations/financials/cost-accounting/cost-accounting-home-page)」を参照してください。 
+
+原価会計のアクセス レベルのセキュリティを定義して、Power BI で行レベルのセキュリティと組み合わせることにより、すべての原価オブジェクトの所有者に**原価会計分析** Power BI コンテンツにアクセス権を付与できます。 表示されるすべてのデータは、原価会計で操作するアクセス レベルに基づいてフィルター処理されます。 アクセス レベルのセキュリティおよび行レベルのセキュリティの詳細については、「[Power BI の原価会計コンテンツ向けセキュリティの設定](setup-security-cost-accounting-content-pack.md)」を参照してください。
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI コンテンツへのアクセス
-**原価会計分析** Power BI コンテンツは、Microsoft Dynamics Lifecycle Services (LCS) の共有アセット ライブラリにあります。 コンテンツのダウンロード方法および Dynamics 365 for Operations データに接続する方法の詳細については、「[Microsoft およびパートナーからの LCS での Power BI コンテンツ](power-bi-content-microsoft-partners.md)」を参照してください。 
+**原価会計分析** Power BI コンテンツは、Microsoft Dynamics Lifecycle Services (LCS) の共有アセット ライブラリにあります。 コンテンツのダウンロード方法および組織で実装する方法の詳細については、「[Microsoft およびパートナーからの LCS での Power BI コンテンツ](power-bi-content-microsoft-partners.md)」を参照してください。 Power BI コンテンツの実装方法を示すデモを視聴するには、「[Microsoft の Power BI コンテンツおよび Dynamics Lifecycle Services のパートナー](https://mix.office.com/watch/9puyb1b2xs1w)」の Office Mix を参照してください。
 
-> 注 - **KB4011327** は Power BI コンテンツの前提条件になります。 Lifecycle Services にサインインすると、次のサポート技術情報にアクセスできます: <https://fix.lcs.dynamics.com/issue/results/?q=kb4011327>です。
+ご使用のバージョンの Microsoft Dynamics 365 に適用する **原価会計分析** コンテンツをダウンロードしてください。
+
+> [!NOTE]
+> KB 4011327 は、この Power BI コンテンツの前提条件となります。 LCS にサインインすると、<https://fix.lcs.dynamics.com/issue/results/?q=kb4011327> でサポート技術情報にアクセスできます。
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Power BI コンテンツに含まれるメトリックス
 コンテンツには、レポートのページ一式が含まれます。 各ページは、グラフ、タイル、テーブルとして視覚化される一連のメトリックスで構成されています。 次の表に、**原価会計分析** Power BI コンテンツの表示の概要を示します。
@@ -64,12 +73,14 @@ ms.lasthandoff: 05/25/2017
 |                                  | 原価要素階層レベルおよび原価要素の分析コード メンバー名ごとの実際原価                                       |                                               |
 
 ## <a name="understanding-the-data-model-and-entities"></a>データ モデルおよびエンティティの理解
-Dynamics 365 for Operations データは、**原価会計分析** Power BI コンテンツのレポート ページに入力するために使用されます。 このデータは、分析用に最適化された Microsoft SQL データベースであるエンティティ格納でステージ完了である集計の測定として表されます。 詳細については、「[エンティティ ストアとの Power BI の統合](power-bi-integration-entity-store.md)」を参照してください。 以下のキー集計の測定は、コンテンツの基準として使用されます。
+次のデータは、**原価会計分析** Power BI コンテンツのレポート ページに入力するために使用されます。 このデータは、エンティティ ストアで実施される集計の測定として表されます。 エンティティ ストアは、分析に最適化された Microsoft SQL Server データベースです。 詳細については、「[エンティティ ストアとの Power BI の統合](power-bi-integration-entity-store.md)」を参照してください。 
 
-| エンティティ                  | キー集計の測定 | Dynamics 365 for Operations のデータ ソース | フィールド     | 説明                                   |
-|-------------------------|---------------------------|---------------------------------------------|-----------|-----------------------------------------------|
-| 原価会計項目 | SUM(金額)               | CAMDATAAggregatedCostEntry                  | 金額    | 原価会計元帳通貨の金額 |
-| 統計エントリ     | SUM(規模)            | CAMDATAAggregatedStatisctialEntry           | 大きさ |                                               |
+以下のキー集計の測定は、コンテンツの基準として使用されます。
+
+| エンティティ                  | キー集計の測定 | Dynamics 365 のデータ ソース      | フィールド     | 説明                                        |
+|-------------------------|---------------------------|-----------------------------------|-----------|----------------------------------------------------|
+| 原価会計項目 | SUM(金額)               | CAMDATAAggregatedCostEntry        | 金額    | 原価会計元帳通貨の金額。 |
+| 統計エントリ     | SUM(規模)            | CAMDATAAggregatedStatisctialEntry | 大きさ |                                                    |
 
 次の表は、コンテンツのデータセットで複数の計算メジャーを作成するためのキー集計の測定の使用方法を示します。
 
@@ -114,16 +125,4 @@ Dynamics 365 for Operations データは、**原価会計分析** Power BI コ�
 | 会計カレンダー                   | カレンダー、カレンダーの説明                                                                                       |
 | 年度                       | 暦年                                                                                                        |
 | 会計年度期間                     | 暦年                                                                                                 |
-
-## <a name="additional-resources"></a>追加リソース
-エンティティと建物 Power BI の内容に関連する役立つリンクを次に示します:
-
--   [データ エンティティ](..\data-entities\data-entities.md)
--   [組織のコンテンツ パックの作成](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
--   [Power BI を使用したデータのモデル化](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
--   [Power BI タイルをワークスペースへ追加する](configure-power-bi-integration.md)
--   [Power BI の原価会計コンテンツ向けセキュリティの設定](setup-security-cost-accounting-content-pack.md)
-
-
-
 

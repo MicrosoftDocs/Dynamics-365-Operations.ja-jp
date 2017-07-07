@@ -10,8 +10,8 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CAMActualVersion, CAMBudgetVersion, CAMOverheadCalculation
 audience: Application User
-ms.reviewer: annbe
-ms.search.scope: Operations, Core
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 272163
 ms.assetid: 93119afb-47ed-4786-ba44-ba93576d3e28
 ms.search.region: global
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: a24c24f842e4f1b1c7806c2fb2ccbd1329fe4851
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: c040a50d9962d7a900fbef285ea1f1baea124033
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -623,7 +623,7 @@ ms.lasthandoff: 05/25/2017
 
 ### <a name="step-4-process-the-cost-allocation-calculation"></a>手順 4: コスト配賦計算を処理する
 
-配賦は、配賦基準を適用することによって、コスト オブジェクトの残高を他のコスト オブジェクトに配賦するために使用します。 Microsoft Dynamics 365 for Operations は、相互配賦手法をサポートしています。 相互配賦手法では、補助コスト オブジェクトが交換する相互サービスが完全に認識されます。 システムは、配賦を実行する正しい順序を自動的に決定します。 コスト オブジェクトの残高は 1 つの配賦基準によって配賦されます。 コスト オブジェクト分析コードとその各メンバーにまたがる配賦がサポートされています。 配賦の順序は、コスト制御ユニットによって制御されます。 [![相互手法](./media/reciprocal-method.png)]
+配賦は、配賦基準を適用することによって、コスト オブジェクトの残高を他のコスト オブジェクトに配賦するために使用します。 Finance と Operations では、相互配賦手法をサポートします。 相互配賦手法では、補助コスト オブジェクトが交換する相互サービスが完全に認識されます。 システムは、配賦を実行する正しい順序を自動的に決定します。 コスト オブジェクトの残高は 1 つの配賦基準によって配賦されます。 コスト オブジェクト分析コードとその各メンバーにまたがる配賦がサポートされています。 配賦の順序は、コスト制御ユニットによって制御されます。 [![相互手法](./media/reciprocal-method.png)]
 
 #### <a name="define-the-cost-allocation"></a>コスト配賦の定義
 
@@ -724,7 +724,7 @@ ms.lasthandoff: 05/25/2017
 </tbody>
 </table>
 
-**注記 :** Dynamics 365 for Operations では、製品に消費される生産時間などの統計測定は、ソース データから抽出できます。 統計測定プロバイダーの詳細については、統計測定プロバイダー テンプレートを参照してください。 (このトピックはまだ完成していないものの、まもなく公開されます。) 次の表は、HR サービスが合計コスト (固定費と変動費) の配賦基準として適用される際の結果を示します。
+**注記:** Finance と Operations では、製品に消費される生産時間などの統計測定は、ソース データから抽出できます。 統計測定プロバイダーの詳細については、統計測定プロバイダー テンプレートを参照してください。 (このトピックはまだ完成していないものの、まもなく公開されます。) 次の表は、HR サービスが合計コスト (固定費と変動費) の配賦基準として適用される際の結果を示します。
 
 <table>
 <thead>

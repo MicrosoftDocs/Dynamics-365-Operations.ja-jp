@@ -1,16 +1,16 @@
 ---
 title: "倉庫作業ポリシー"
-description: "新しい倉庫作業ポリシーは、Microsoft Dynamics AX 7.0.1 で導入されます。(2016 年 5 月更新) この作業ポリシーは、製造の倉庫プロセスのために倉庫作業が作成されるかどうかをコントロールします。"
+description: "倉庫作業ポリシーは、ワーク オーダーのタイプ、在庫場所、および製品に基づいて、製造の倉庫プロセスのために倉庫作業が作成されるかどうかをコントロールします。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: WHSWorkPolicy
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 196561
 ms.assetid: cbf48ec6-1836-48d5-ad66-a9b534af1786
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: johanho
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 6c9cdf361e4d4543e6aca962e9ec712428bc76e6
+ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
+ms.openlocfilehash: 7612003bc20f91f173629893750478b034cff27b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -32,7 +32,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-新しい倉庫作業ポリシーは、Microsoft Dynamics AX 7.0.1 で導入されます。(2016 年 5 月更新) この作業ポリシーは、製造の倉庫プロセスのために倉庫作業が作成されるかどうかをコントロールします。
+Microsoft Dynamics 365 for Finance and Operations、Enterprise edition で倉庫作業ポリシーは、ワーク オーダーのタイプ、在庫場所、および製品に基づいて、製造の倉庫プロセスのために倉庫作業が作成されるかどうかをコントロールします。
 
 この作業ポリシーは、製造の倉庫プロセスのために倉庫作業が作成されるかどうかをコントロールします。 **作業オーダー タイプ**、**在庫場所**、および**製品**の組み合わせを使用して作業ポリシーを設定できます。 たとえば、製品 L0101 は、出荷場所 001 に完了済として報告されます。 完成品は、後に出荷場所 001 で別の製造オーダーに消費されます。 この場合、出荷場所 001 に完了済として L0101 製品の報告の際に、作成から完成品のプット アウェイの作業を回避するために作業ポリシーを設定できます。 作業ポリシーは次の情報を表すことができる個々のエンティティです:
 

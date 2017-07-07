@@ -1,15 +1,15 @@
 ---
 title: "予算管理の概要"
-description: "この記事は、予算管理を紹介し、財源を管理できるように、Microsoft Dynamics 365 for Operations の予算管理をコンフィギュレーションするのに役立つ情報を提供します。"
+description: "この記事は、予算管理を紹介し、財源を管理できるように、Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition の予算管理をコンフィギュレーションするのに役立つ情報を提供します。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 60493
 ms.assetid: be964167-43bc-431d-9adb-48bff32d68d5
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 48649b891be72529e6045e48f9738fe68be6cffe
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: 77d6d9afeb5669c2ae8460f0503e68a3559514ec
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
@@ -30,14 +30,14 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-この記事は、予算管理を紹介し、財源を管理できるように、Microsoft Dynamics 365 for Operations の予算管理をコンフィギュレーションするのに役立つ情報を提供します。
+この記事は、予算管理を紹介し、財源を管理できるように、Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition の予算管理をコンフィギュレーションするのに役立つ情報を提供します。
 
 <a name="overview"></a>概要
 --------
 
-Microsoft Dynamics 365 for Operations の予算管理は、勘定科目表、ワークフロー、ユーザー グループ、元伝票と仕訳帳、コンフィギュレーション可能な使用できる資金の計算、予算サイクル、しきい値などにより、組織の財源管理をサポートします。 適切に操作される場合、組織は会計年度中の財務資源の計画、測定、管理、予測が可能になります。 
+Microsoft Dynamics 365 for Finance and Operations の予算管理は、勘定科目表、ワークフロー、ユーザー グループ、元伝票と仕訳帳、コンフィギュレーション可能な使用できる資金の計算、予算サイクル、しきい値などにより、組織の財源管理をサポートします。 適切に操作される場合、組織は会計年度中の財務資源の計画、測定、管理、予測が可能になります。 
 
-Dynamics 365 for Operations で予算が承認された後に、予算計画を使用して予算登録エントリを生成し、組織の支出予算を記録できます。 または、予算計画機能を使用しないで、サード パーティ製プログラムから予算登録エントリを作成するか、またはインポートできます。 
+Finance and Operations で予算が承認された後に、予算計画を使用して予算登録エントリを生成し、組織の支出予算を記録できます。 または、予算計画機能を使用しないで、サード パーティ製プログラムから予算登録エントリを作成するか、またはインポートできます。 
 
 支出は、主勘定と財務分析コードを使用して記録することができます。 財務分析コードおよび主勘定の組み合わせをグループ化して、組織のポリシーと要件に合うよう全体的な支出予算の管理が設定できます。 
 
@@ -53,7 +53,7 @@ Dynamics 365 for Operations で予算が承認された後に、予算計画を�
 -   **使用可能な資金の計算** - 購買要求 (債務) および発注書 (債務) などの伝票は使用可能な資金の計算で考慮する必要がありますか? ドラフト ステータスの伝票は、計算で考慮されますか?
 -   **上書きのアクセス許可** - 利用可能な予算を超過する許可が与えられているのは誰ですか?
 
-予算管理は Dynamics 365 for Operations と完全に統合されます。 したがって、計画発注書と実際の購買の両方に使用できる予算を評価できます。 予算の照会およびレポートを使用できます。 したがって、予算のリビジョンや移動の形式で、ユーザーが予算サイクル中の予算を評価し、必要に応じて調整を行うことができます。 予算マネージャーは、予算と実績を Microsoft Excel にエクスポートすることにより、必要に応じてより良い分析および予測を行うことも可能です。
+予算管理は Finance and Operations と完全に統合されます。 したがって、計画発注書と実際の購買の両方に使用できる予算を評価できます。 予算の照会およびレポートを使用できます。 したがって、予算のリビジョンや移動の形式で、ユーザーが予算サイクル中の予算を評価し、必要に応じて調整を行うことができます。 予算マネージャーは、予算と実績を Microsoft Excel にエクスポートすることにより、必要に応じてより良い分析および予測を行うことも可能です。
 
 ## <a name="configuring-budget-control"></a>予算管理のコンフィギュレーション
 ### <a name="budget-cycle-time-span"></a>予算期間
@@ -128,7 +128,3 @@ Dynamics 365 for Operations で予算が承認された後に、予算計画を�
 このページから、ユーザーは [**期間別の予算管理統計**] ページを詳細表示し、予算の利用可能性の詳細および選択された予算管理分析コードの組み合わせの引当を表示できます。 ユーザーは、[**予算管理統計**] ページを詳細表示し、予算管理で使用されるすべての財務分析コードの組み合わせの予算の利用可能性を表示できます。 
 
 予算管理が発注書に対して有効化されると、予算マネージャーは [**元帳予算および予測**] ワークスペースを使用して、予算チェックの警告が付いたすべての未確認の発注書および元帳予算のエラーのキューを確認できます。 予算マネージャーが予算超過許可をコンフィギュレーションすると、ワークスペースで直接発注書を確認できます。    
-
-
-
-

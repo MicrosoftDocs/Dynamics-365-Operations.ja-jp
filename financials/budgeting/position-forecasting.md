@@ -1,16 +1,16 @@
 ---
-title: "予測職位"
-description: 
+title: "職位予測"
+description: "作業者に関連付けられる経費は、多くの場合、組織のコストの大きな割合を占めます。 予測職位を使えばそれらの経費を計画し予算計画に含めることができます。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 64413
 ms.assetid: 35e791d2-1905-4808-a579-7f181ddddd91
 ms.search.region: Global
@@ -18,18 +18,17 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 03645693c5101c48ef9d35bdbe14debef1e69fc8
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 2dffb2634701210852b4b146a762434cf6df07e3
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="position-forecasting"></a>予測職位
+# <a name="position-forecasting"></a>職位予測
 
 [!include[banner](../includes/banner.md)]
-
 
 
 
@@ -97,7 +96,7 @@ Jodi は、マネージャーが給付金額を変更しないことを希望し
 
 ### <a name="creating-forecast-positions-for-existing-positions"></a>既存の職位の予測職位の作成
 
-最も正確な予算計画については、Microsoft Dynamics 365 for Operations の既存の職位の詳細を使用して、現在職位が採用済みか空席かにかかわらず、予測職位を作成できます。 
+最も正確な予算計画については、Microsoft Dynamics 365 for Finance and Operations、Enterprise エディションの既存の職位の詳細を使用して、現在職位が採用済みか空席かにかかわらず、予測職位を作成できます。 
 
 [**既存の職位を追加**] 機能で、組織内のすべての職位を表示します。 [**現在**] の日付を設定することにより、過去のある日付に存在した職位、またはより一般的に、将来 (たとえば、次の予算サイクルの開始時) 存在する職位を含むように、職位のリストを変更できます。 予算計画プロセスおよび予算計画シナリオを選択し、リストから職位を選択し、[**OK**] をクリックして、選択した職位の予測職位を作成します。 予算計画プロセスとシナリオの個々の既存の職位について、予測職位を一つだけ作成できることに注意してください。 ただし、さまざまな予算計画シナリオを割り当てることにより、追加のバージョンを作成できます。 
 

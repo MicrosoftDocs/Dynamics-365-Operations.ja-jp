@@ -3,7 +3,7 @@ title: "削除ルール"
 description: "このトピックでは、消去ルールと、消去に関するレポートのさまざまなオプションについて説明します。"
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: LedgerEliminationRule
 audience: Application User
 ms.reviewer: RobinARH
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 13131
 ms.assetid: 08fd46ef-2eb8-4942-985d-40fd757b74a8
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: ab1d8fb5bfc9413652d222e701c44b3b91a4c842
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 76af350f37109260a757ccc0b93908637d0579dc
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -133,7 +133,7 @@ ms.lasthandoff: 05/25/2017
 これらすべてのトランザクションで、貸し勘定および借り勘定に転記されている会社間のトランザクションが作成されます。 さらに、これらのトランザクションには、会社間の販売の量が販売された商品販売コストと等しくない場合に、値上げ金額および値下げ金額が含まれる場合があります。
 
 ## <a name="set-up-elimination-rules"></a>削除ルールの設定
-Dynamics 365 for Operations で消去ルールを設定するとき、消去目的の財務分析コードを具体的に作成することをお勧めします。 ほとんどの顧客は、「取引相手」のような名前を付けます。 財務分析コードを使用しない決定をする場合、会社間トランザクション固有の主勘定を作成してください。 
+Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition で消去ルールを設定する際は、消去目的の財務分析コードを具体的に作成することをお勧めします。 ほとんどの顧客は、「取引相手」のような名前を付けます。 財務分析コードを使用しない決定をする場合、会社間トランザクション固有の主勘定を作成してください。 
 
 消去の設定は [連結] モジュールの [設定] 領域にあります。 ルールの説明を入力した後、消去仕訳帳が転記する会社を選択する必要があります。 これは、法人の設定で [**財務消去プロセスで使用**] が選択された会社である必要があります。 
 

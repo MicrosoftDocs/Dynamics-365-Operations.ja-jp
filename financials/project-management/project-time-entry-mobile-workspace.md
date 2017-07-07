@@ -1,28 +1,28 @@
 ---
-title: "Dynamics 365 for Operations アプリ用のプロジェクト時間入力モバイル ワークスペース"
+title: "プロジェクト時間入力モバイル ワークスペース"
 description: "このトピックでは、プロジェクト時間入力モバイル ワークスペースに関する情報を提供します。 このワークスペースにより、ユーザーはモバイル デバイスを使用して入力をし、プロジェクトに対して時間を節約できます。"
-author: annbe
+author: KimANelson
 manager: AnnBe
-ms.date: 05/10/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
-audience: Application User, IT Pro
-ms.reviewer: annbe
-ms.search.scope: Operations, Core
+audience: Application User
+ms.reviewer: sericks
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 272101
 ms.assetid: 4505f021-b9bb-4b87-be24-6bf0bd88ee60
 ms.search.region: Global
 ms.search.industry: Service industries
-ms.author: annbe
+ms.author: knelson
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 9c592c301908898915164e9236850759b73543fe
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: d80dea89db1fbe270b96063f3818ec3ac95239c8
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -31,16 +31,14 @@ ms.lasthandoff: 05/25/2017
 
 [!include[banner](../includes/banner.md)]
 
+このトピックでは、[**プロジェクト時間入力**] モバイル ワークスペースに関する情報を提供します。 このワークスペースにより、ユーザーはモバイル デバイスを使用して入力をし、プロジェクトに対して時間を節約できます。
 
+このモバイル ワークスペースは、Microsoft Dynamics 365 for Unified Operations モバイル アプリで使用するためのものです。 
 
-このトピックでは、Dynamics 365 for Operations モバイル アプリ用の、プロジェクト時間入力モバイル ワークスペースについて説明します。 このワークスペースにより、ユーザーはモバイル デバイスを使用して入力をし、プロジェクトに対して時間を節約できます。
-
-<a name="overview-of-the-project-time-entry-mobile-workspace"></a>プロジェクト時間入力モバイル ワークスペースの概要
----------------------------------------------------
-
+## <a name="overview"></a>概要
 毎日の作業の一環として、プロジェクト リソースは多くの場合オンサイトか、または出張します。 **プロジェクト時間入力** モバイル ワークスペースでは、選択したモバイル デバイスで、プロジェクトに対する支払請求可能または非請求可能な時間を入力できます。 そのためプロジェクト リソースは、いつでも、どこでも時間のエントリを記録できます。 既に記録されている時間のエントリを表示することもできます。 
 
-具体的には、**プロジェクト時間入力** モバイル ワークスペースは次の機能を提供します。
+具体的には、[**プロジェクト時間の入力**] モバイル ワークスペースでは、ユーザーは、これらのタスクを実行できます。
 
 -   選択された任意の日付について、特定のタスクに費やした時間数を入力します。
 -   時間を入力するプロジェクトを特定するため、プロジェクト名または顧客で検索します。
@@ -48,17 +46,16 @@ ms.lasthandoff: 05/25/2017
 -   プロジェクトに支払請求可能または非請求可能として時間を記録します。
 -   必要に応じて外部または内部コメントを入力します。
 
-**プロジェクト時間入力** モバイル ワークスペースを実装するには、このトピックの次のセクションを参照してください。
-
 ## <a name="prerequisites"></a>前提条件
-**プロジェクト時間入力** モバイル ワークスペースを実装する前に、システム管理者が次の前提条件を満たしていることを確認してください。
+組織に配置されている Microsoft Dynamics 365 のバージョンに基づいて、前提条件は異なります。
+
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update"></a>Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition 2017 年 7 月の更新プログラムを使用している場合の前提条件 
+Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition 2017 年 ７ 月の更新プログラムを組織に配置している場合、システム管理者は [**プロジェクト時間の入力**] モバイル ワークスペースを公開する必要があります。 手順については、「[モバイル ワークスペースの公開](/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace)」を参照してください。
+
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Microsoft Dynamics 365 for Operations バージョン 1611 およびプラットフォーム更新プログラム 3 以降を使用している場合の前提条件
+Microsoft Dynamics 365 for Operations バージョン 1611 およびプラットフォーム 更新プログラム 3 以降を組織に配置している場合、システム管理者は次の前提条件を満たす必要があります。 
 
 <table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>前提条件</th>
@@ -68,45 +65,38 @@ ms.lasthandoff: 05/25/2017
 </thead>
 <tbody>
 <tr class="odd">
-<td>Microsoft Dynamics 365 for Operations バージョン 1611 およびプラットフォーム更新プログラム 3 以降を実装する必要があります。</td>
-<td>システム管理者</td>
-<td>Dynamics 365 for Operations をまだ組織に配置していない場合、システム管理者は <a href="/dynamics365/operations/dev-itpro/deployment/deploy-demo-environment">Microsoft Dynamics 365 for Operations デモ環境の配置</a> を確認する必要があります。</td>
-</tr>
-<tr class="even">
-<td>KB 4018050 を実装する必要があります。</td>
+
+<td>KB 4018050 を実装します。</td>
 <td>システム管理者</td>
 <td>KB 4018050 は、<strong>プロジェクト時間入力</strong> モバイル ワークスペースを含む X++ の更新またはメタデータ修正プログラムです。 KB 4018050 を実装するには、システム管理者は次の手順に従う必要があります。
 <ol>
-<li>Microsoft Dynamics Lifecycle Services (LCS) から KB 4018050 をダウンロードします。</li>
-<li><a href="/dynamics365/operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">メタデータ修正プログラムをインストールします。</a></li>
-<li><strong>ApplicationSuite</strong> と <strong>ProjectMobile</strong> モデルを含む <a href="/dynamics365/operations/dev-itpro/deployment/create-apply-deployable-package">配置可能パッケージを作成し</a>、配置可能パッケージを LCS にアップロードします。</li>
-<li>Dynamics 365 for Operations システムに<a href="/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">配置可能パッケージを適用</a>します。</li>
+<li><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/download-hotfix-lcs">Microsoft Dynamics Lifecycle Services (LCS) からメタデータ修正プログラムをダウンロードします</a>。</li>
+<li><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">メタデータ修正プログラムをインストールします。</a></li>
+<li><strong>ApplicationSuite</strong> と <strong>ProjectMobile</strong> モデルを含む <a href="/dynamics365/unified-operations/dev-itpro/deployment/create-apply-deployable-package">配置可能パッケージを作成し</a>、配置可能パッケージを LCS にアップロードします。</li>
+<li><a href="/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system">配置可能パッケージを適用します</a>。</li>
+
 </ol></td>
 </tr>
-<tr class="odd">
-<td><strong>プロジェクト時間入力</strong> モバイル ワークスペースを Dynamics 365 for Operations モバイル アプリに公開しておく必要があります。</td>
+<tr class="even">
+<td>[<strong>プロジェクト時間の入力</strong>] モバイル ワークスペースを公開します。</td>
 <td>システム管理者</td>
-<td><ol>
-<li>ブラウザーで、Dynamics 365 for Operations を開始します。</li>
-<li><strong>システム パラメーター</strong> ページの、<strong>モバイル ワークスペースの管理</strong> タブで、<strong>プロジェクト時間入力</strong> ワークスペースを選択します。</li>
-<li><strong>モバイル ワークスペースの公開</strong>をクリックします。</li>
-</ol></td>
+<td>「<a href="/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace">モバイル ワークスペースの公開</a>」を参照してください。</td>
 </tr>
 </tbody>
 </table>
 
-## <a name="download-and-install-the-dynamics-365-for-operations-mobile-app"></a>Dynamics 365 for Operations モバイル アプリをダウンロードしてインストールする
-モバイル アプリ ストアで、Microsoft Dynamics 365 for Operations アプリをダウンロードおよびインストールします。
+## <a name="download-and-install-the-mobile-app"></a>モバイル アプリのダウンロードとインストール
 
--   Android 用: [Google Play ストアの Dynamics 365 for Operations](https://play.google.com/store/apps/details?id=com.microsoft.dynamics365.operations.mobile)
--   iPhone 用: [iTunes アプリ ストアの Dynamics 365 for Operations](https://itunes.apple.com/us/app/dynamics-365-for-operations/id1180836730?mt=8)
+Dynamics 365 for Unified Operations モバイル アプリをダウンロードしてインストールします。
 
-## <a name="sign-in-to-the-dynamics-365-for-operations-mobile-app"></a>Dynamics 365 for Operations モバイル アプリにサインインする
+-   [Android フォン用](https://go.microsoft.com/fwlink/?linkid=850662)
+-   [iPhone 用](https://go.microsoft.com/fwlink/?linkid=850663)
+
+## <a name="sign-in-to-the-mobile-app"></a>モバイル アプリにログインします。
 1.  モバイル デバイスでアプリを起動します。
-2.  Dynamics 365 for Operations URL を入力します。
-3.  サインインする会社を入力します。 たとえば、「**USMF**」と入力します。
-4.  最初にサインインしたときに、Dynamics 365 for Operations アカウントのユーザー名とパスワードが要求されます。 資格情報を入力します。
-5.  サインインすると、会社の使用できるワークスペースが表示されます。 システム管理者が後で新しいワークスペースを公開すると、モバイル ワークスペースのリストを更新することができます。
+2.  Dynamics 365 の URL を入力します。
+3.  初めてサインインすると、ユーザー名とパスワードを要求されます。 資格情報を入力します。
+4.  サインインすると、使用可能な会社のワークスペースが表示されます。 なお、システム管理者が後で新しいワークスペースを公開すると、モバイル ワークスペースのリストを更新する必要があります。
 
 [![プルして更新](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
@@ -115,18 +105,14 @@ ms.lasthandoff: 05/25/2017
 2.  **時間入力** を選択します。 現在の週のカレンダーの日付が表示されます。
 3.  選択された日付で、**アクション** &gt; **新しいエントリ** を選択します。
 4.  記録する時間数を入力します。
-5.  時間入力するプロジェクトを選択します。 オフラインで使用する場合のために、アプリにロードされたプロジェクトのリストが表示されます。 既定では、50 の品目がロードされますが、開発者はこの数値を変更できます。 詳細については、開発者は [Dynamics 365 for Operations モバイル プラットフォーム](/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform) を確認する必要があります。
-6.  プロジェクトがリストにない場合、**検索** を選択して、Dynamics 365 for Operations をオンライン サーチします。 名前で検索するか、プロジェクト名または顧客での検索に切り替えます。
-7.  カテゴリを選択します。 オフラインで使用する場合のために、アプリにロードされたカテゴリのリストが表示されます。 既定では、50 の品目がロードされますが、開発者はこの数値を変更できます。 詳細については、開発者は [Dynamics 365 for Operations モバイル プラットフォーム](/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform) を確認する必要があります。
-8.  カテゴリがリストにない場合、**検索** を選択して、Dynamics 365 for Operations をオンライン サーチします。 カテゴリで検索するか、カテゴリ名での検索に切り替えます。
-9.  活動を選択します。 オフラインで使用する場合のために、アプリにロードされた活動のリストが表示されます。 既定では、50 の品目がロードされますが、開発者はこの数値を変更できます。 詳細については、開発者は [Dynamics 365 for Operations モバイル プラットフォーム](/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform) を確認する必要があります。
-10. 活動がリストにない場合、**検索** を選択して、Dynamics 365 for Operations をオンライン サーチします。 活動番号で検索するか、目的別の検索に切り替えます。
+5.  時間入力するプロジェクトを選択します。 オフラインで使用する場合のために、アプリに読み込まれたプロジェクトのリストが表示されます。 既定では、50 の品目がロードされますが、開発者はこの数値を変更できます。 詳細については、[モバイル プラットフォーム](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform) を参照してください。
+6.  プロジェクトが一覧にない場合は、[**検索**] を選択します。 名前で検索するか、プロジェクト名または顧客での検索に切り替えます。
+7.  カテゴリを選択します。 オフラインで使用する場合のために、アプリに読み込まれたカテゴリのリストが表示されます。 既定では、50 の品目がロードされますが、開発者はこの数値を変更できます。 詳細については、[モバイル プラットフォーム](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform) を参照してください。
+8.  カテゴリが一覧にない場合は、[**検索**] を選択します。 カテゴリで検索するか、カテゴリ名での検索に切り替えます。
+9.  活動を選択します。 一覧には、オフラインで使用するためにアプリケーションに読み込まれた活動が表示されます。 既定では、50 の品目がロードされますが、開発者はこの数値を変更できます。 詳細については、[モバイル プラットフォーム](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform) を参照してください。
+10. 活動が一覧にない場合は、[**検索**] を選択します。 活動番号で検索するか、目的別の検索に切り替えます。
+
 11. 明細行プロパティを選択します。
 12. オプション: 外部または内部コメントを入力します。
 13. **完了** を選択します。
-
-
-
-
-
 

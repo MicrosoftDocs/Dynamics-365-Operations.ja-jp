@@ -3,13 +3,14 @@ title: "仕入先コラボレーションの請求ワークスペース"
 description: "このトピックでは、仕入先請求書を表示する方法、および仕入先コラボレーションの請求ワークスペースの表示から請求書を送信する方法について説明します。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: Operations, Core
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 221534
 ms.assetid: c4ed62f3-d351-41d7-a2ad-790576cde4ab
 ms.search.region: Global
@@ -17,10 +18,10 @@ ms.author: abruer
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 7c8fe2fea08dbad625cd373ca316135ac4e29e13
+ms.sourcegitcommit: 3abf4b151b177095b71d44e9a6c9fd8541eaa64e
+ms.openlocfilehash: 2171a454c763abab82f6555950994237b4de7b8b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/14/2017
 
 
 ---
@@ -32,7 +33,7 @@ ms.lasthandoff: 05/25/2017
 
 このトピックでは、仕入先請求書を表示する方法、および仕入先コラボレーションの請求ワークスペースの表示から請求書を送信する方法について説明します。
 
-[**仕入先コラボレーションの請求**] ワークスペースが、仕入先請求書の情報を表示するために使用され、ワークフロー機能を使用して Microsoft Dynamics 365 for Operations に請求書を提出するために使用されます。
+[**仕入先コラボレーションの請求**] ワークスペースが、仕入先請求書の情報を表示するために使用され、ワークフロー機能を使用して Microsoft Dynamics 365 for Finance and Operations、Enterprise edition に請求書を提出するために使用されます。
 仕入先コラボレーションの請求ワークスペース
 ----------------------------------------
 
@@ -40,9 +41,9 @@ ms.lasthandoff: 05/25/2017
 
 [**集計**] タイルには、選択された仕入先の請求書の概要が示されます。 これらの状況によって請求書を表示できます。
 -   下書きの請求書がワークフローに対して提出されませんでした。
--   提出済で承認されていない請求書が、仕入先が提出した請求書ですが、これらは Dynamics 365 for Operations には転記されていません。
--   承認され、支払されていない請求書が、Dynamics 365 for Operations には転記されましたが、完全には支払われていません。
--   支払済の請求書は、Dynamics 365 for Operations に全額支払われた請求書です。
+-   提出済で承認されていない請求書は、仕入先が提出した請求書ですが、これらは Finance and Operations には転記されていません。
+-   承認され、支払されていない請求書が、Finance and Operations には転記されましたが、完全には支払われていません。
+-   支払済の請求書は、Finance and Operations に全額支払われた請求書です。
 
 タイルをクリックすると、フィルター処理された [**請求書の一覧**] ページが開きます。
 ### <a name="tabular-lists"></a>表形式リスト
@@ -59,7 +60,7 @@ ms.lasthandoff: 05/25/2017
 
 
 
-詳細については次を参照してください。[仕入先ポータルを使用して、仕入先と連携](/dynamics365/operations/supply-chain/procurement/collaborate-vendors-vendor-portal)
+詳細については次を参照してください。[仕入先ポータルを使用して、仕入先と連携](/dynamics365/unified-operations/supply-chain/procurement/collaborate-vendors-vendor-portal)
 
 
 

@@ -1,9 +1,9 @@
 ---
 title: "クレジット カードの設定、認証、および取得"
-description: "この記事は、Microsoft Dynamics AX のクレジット カード認証の概要を提供します。 これには、支払サービスの設定、クレジット カードを販売注文に追加、および認証を無効にする方法に関する情報が含まれます。"
+description: "この記事では、Microsoft Dynamics 365 for Finance and Operations、Enterprise Editionにおけるクレジット カード認証の概要を提供します。 これには、支払サービスの設定、クレジット カードを販売注文に追加、および認証を無効にする方法に関する情報が含まれます。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: CreditCardProcessors, CustTable, SalesTable
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 3041
 ms.assetid: 678f6899-bfa5-439b-aaca-b4affcc338ba
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: mfalkner
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 96a16f2ff3d092fc9448bf607abfa28ad6cb1e6d
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: a5b3dc7710ebbce50366ca9299bfb30dffc03187
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -31,8 +31,10 @@ ms.lasthandoff: 05/25/2017
 
 [!include[banner](../includes/banner.md)]
 
+[!include[retail name](../includes/retail-name.md)]
 
-この記事は、Microsoft Dynamics AX のクレジット カード認証の概要を提供します。 これには、支払サービスの設定、クレジット カードを販売注文に追加、および認証を無効にする方法に関する情報が含まれます。
+
+この記事では、Microsoft Dynamics 365 for Finance and Operations、Enterprise Editionにおけるクレジット カード認証の概要を提供します。 これには、支払サービスの設定、クレジット カードを販売注文に追加、および認証を無効にする方法に関する情報が含まれます。
 
 <a name="setting-up-the-credit-card-payment-service"></a>クレジット カード支払サービスの設定
 ------------------------------------------

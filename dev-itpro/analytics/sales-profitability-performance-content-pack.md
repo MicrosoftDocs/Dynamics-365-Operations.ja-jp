@@ -1,15 +1,15 @@
 ---
-title: "販売および収益性パフォーマンス Power BI の内容"
-description: "このトピックでは、Dynamics 365 for Operations に何が含まれるかについて説明します - Microsoft Power BI の販売および収益性パフォーマンス コンテンツ パック。 コンテンツ パックに含まれているレポートにアクセスする方法を説明し、コンテンツ パックを作成するために使用するデータ モデルおよびエンティティについての情報を提供します。"
+title: "販売および収益性パフォーマンス Power BI コンテンツ"
+description: "このトピックでは、販売と収益性のパフォーマンス Power BI コンテンツに何が含まれているのか説明します。 Power BI レポートにアクセスする方法を説明し、コンテンツを作成するために使用するデータ モデルおよびエンティティについての情報を提供します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
-audience: Application User
-ms.search.scope: Operations, Core
+audience: Application User, IT Pro
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 260674
 ms.assetid: ab457f02-929e-4d34-b813-335be3092287
 ms.search.region: Global
@@ -17,45 +17,45 @@ ms.author: omulvad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 357f7071d801b13518c83170f8d0e7946dd9dede
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 16fef86e330a392ddd888fcb46060c3e1efa87c5
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="sales-and-profitability-performance-power-bi-content"></a>販売および収益性パフォーマンス Power BI の内容
+# <a name="sales-and-profitability-performance-power-bi-content"></a>販売および収益性パフォーマンス Power BI コンテンツ
 
 [!include[banner](../includes/banner.md)]
 
+このトピックでは、**販売と収益性のパフォーマンス** Microsoft Power BI コンテンツに何が含まれているのか説明します。 Power BI レポートにアクセスする方法を説明し、コンテンツを作成するために使用するデータ モデルおよびエンティティについての情報を提供します。
 
-このトピックでは、Dynamics 365 for Operations に何が含まれるかについて説明します - Microsoft Power BI の販売および収益性パフォーマンス コンテンツ パック。 コンテンツ パックに含まれているレポートにアクセスする方法を説明し、コンテンツ パックを作成するために使用するデータ モデルおよびエンティティについての情報を提供します。
+## <a name="overview"></a>概要
 
-<a name="overview"></a>概要
---------
+**販売と収益性のパフォーマンス** Power BI コンテンツは、販売マネージャーが、収益、粗利益、および利益率の主要な販売メトリックスを監視できるように作成されました。 販売トランザクション データを使用して、全社全体の販売実績、および顧客と製品の販売実績の内訳の両方の集計ビューを提供します。
 
-このコンテンツ パックは、販売マネージャが、収益、粗利益、および利益率の主要な販売メトリックスを監視するために作成されます。 Dynamics 365 for Operations からのトランザクション データを使用して、全社全体の販売実績、および顧客と製品の販売実績の内訳の両方の集計ビューを提供します。 時間経過に伴う収益および利益増加率の変更を強調表示することにより、マネージャーに個々の顧客や製品の正および負のトレンドに関して警告させるように、レポートを使用できます。 カテゴリおよび地域マネージャは、ラガードとリーダーを選び出すために、異なる製品カテゴリおよび顧客グループ同士の収益や収益性を比較するグラフが便利であることに気づきます。 顧客ごとの収益対利益率をプロットする包括的なレポートは、アカウント マネージャに、各顧客のそれぞれのプロファイルへ販売およびマーケティング活動を調和させるためにデータ サポートされた基盤を提供します。 販売および収益性パフォーマンス コンテンツ パックは、販売マネージャーが販売実績を次の方法で分析できるようにします。
+レポートでは、時間経過に伴う収益および利益増加率の変化が強調表示されます。 そのため、このレポートは、個々の顧客や製品の積極的および消極的な動向を管理者に警告するために使用することができます。 さらに、グラフでは、さまざまな製品カテゴリと顧客グループの収益および収益性を相互に比較します。 したがって、カテゴリおよび地域マネージャーは遅滞者とリーダーを識別できます。 最後に、包括的なレポートでは、顧客ごとの収益対利益率がプロットされます。 したがって、アカウント マネージャーは、各顧客のそれぞれのプロファイルへ販売およびマーケティング活動を調和させるためにデータ サポートされた基盤を手に入れます。 
+
+**販売と収益性のパフォーマンス** コンテンツは、販売マネージャーが販売実績を次の方法で分析できるようにします。
 
 -   収益、年間累計 (顧客グループ、各顧客、販売カテゴリ、および個々の製品や地域による) 
 -   前年比収益の変更 (顧客および販売カテゴリによる) 
 
-収益性を次の方法で分析できます。
+次の方法で収益性を分析することができます。
 
 -   粗利益および利益率 (顧客グループおよび製品販売カテゴリによる) 
 -   前年比粗利益の変更
 -   顧客の収益性 (収益対粗利による) 
 
-## <a name="accessing-the-content-pack"></a>コンテンツ パックへのアクセス
-販売および収益性パフォーマンス Power BI コンテンツ パックは、Lifecycle Services (LCS) の実装資産として公開され、Dynamics 365 for Operations からアクセスできます。 Power BI レポートにどのようにアクセスし開始するかについての詳細は、[Microsoft およびパートナーからの LCS での Power BI コンテンツ](power-bi-content-microsoft-partners.md)を参照してください。
-**注記:** KB 4011327 は、この Power BI コンテンツの前提条件となります。 Lifecycle Services にサインインすると、次のサポート技術情報にアクセスできます: <a href="https://fix.lcs.dynamics.com/issue/results/?q=kb4011327">https://fix.lcs.dynamics.com/issue/results/?q=kb4011327</a>です。
+## <a name="accessing-the-power-bi-content"></a>Power BI コンテンツへのアクセス
+Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 2017 年 7 月の更新プログラムを使用している場合、**販売と収益性のパフォーマンス** Power BI コンテンツは**販売と収益性のパフォーマンス** ページ ([**販売とマーケティング**] > [**照会およびレポート**] > [**販売パフォーマンスの分析**] > [**販売と収益性のパフォーマンス**]) に表示されます。 
 
-## <a name="metrics-included-in-the-content-pack"></a>コンテンツ パックに含まれるメトリックス
-コンテンツ パックには、グラフ、タイル、テーブルとして視覚化する一連のメトリックスで構成されるレポートが含まれます。 次のテーブルは、コンテンツ パックでの視覚化の概要を提供します。
+## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Power BI コンテンツに含まれるメトリックス
+**販売と収益性のパフォーマンス** Power BI コンテンツには、一連のメトリックスで構成されるレポートが含まれます。 これらのメトリックスはグラフ、タイル、表として視覚化されます。 次の表は、コンテンツでの視覚化の概要を示しています。
 
-|                        |                                            |                                                         |
+| レポート ページ            | グラフ                                     | タイル                                                   |
 |------------------------|--------------------------------------------|---------------------------------------------------------|
-| **レポート ページ**        | **グラフ**                                 | **タイル**                                               |
 | 顧客による収益    | 収益による上位 10 件の顧客                | 総収益                                           |
 |                        | 顧客グループによる合計収益            | YOY 収益増加                                      |
 |                        | 顧客グループによる平均顧客収入 | 粗利                                            |
@@ -76,47 +76,46 @@ ms.lasthandoff: 05/25/2017
 
 \* 本年度と昨年度の収益、および販売カテゴリごとの増加。
 
+## <a name="extending-the-power-bi-content"></a>Power BI コンテンツの拡張
+Microsoft Dynamics Lifecycle Services (LCS) で利用できるコンテンツ パックを使用すると、Microsoft Dynamics 365 にログインしない人々に関する優れた分析ができます。 ほかのレポートまたはビジュアルを含めるよう、これらのコンテンツ パックを変更できます。次いで分析のためにコンテンツ パックを Power BI.com テナントに発行します。
+
+LCS の共有資産ライブラリに**販売と収益性のパフォーマンス** Power BI コンテンツがあります。 コンテンツのダウンロード方法および組織で実装する方法の詳細については、「[Microsoft およびパートナーからの LCS での Power BI コンテンツ](power-bi-content-microsoft-partners.md)」を参照してください。 Power BI コンテンツの実装方法を示すデモを視聴するには、「[Microsoft の Power BI コンテンツおよび Dynamics Lifecycle Services のパートナー](https://mix.office.com/watch/9puyb1b2xs1w)」の Office Mix を参照してください。
+
+ご使用のバージョンの Dynamics 365 に適用する**販売と収益性のパフォーマンス** コンテンツをダウンロードしてください。
+
+> [!NOTE]
+> Microsoft Dynamics 365 for Operations バージョン 1611 を使用している場合、この Power BI コンテンツの前提条件はサポート技術情報 4011327 です。 LCS にサインインすると、https://fix.lcs.dynamics.com/issue/results/?q=kb4011327 でサポート技術情報にアクセスできます。
+
 ## <a name="understanding-the-data-model-and-entities"></a>データ モデルおよびエンティティの理解
-Dynamics 365 for Operations データは、販売および収益性パフォーマンス コンテンツ パックでレポートを格納するのに使用されます。 これはエンティティの店舗で示される総測定値として表されます。そしてそれは分析用に適化された Microsoft SQL データベースです。 詳細については [Dynamics におけるエンティティ ストアとの Power BI の統合](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/)ブログを参照してください。 このコンテンツ パックの集計の測定は Dynamics AX 2012 および AX 2012 R3 の売上キューブに使用できた集計の測定のサブセットです。 エンティティ格納でキューブの集計の測定を公開するにはそれらを配置可能にする必要があります。 詳細については、[Dynamics におけるエンティティ ストアとの Power BI の統合](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/)ブログで、どのように集計の測定をエンティティ格納へ公開するかの手順を参照してください。 請求明細行エンティティの以下のキー集計の測定は、コンテンツ パックの基準として使用されます。
+次のデータは、**販売と収益性のパフォーマンス** Power BI コンテンツのレポートに入力するために使用されます。 このデータは、エンティティ ストアで実施される集計の測定として表されます。 エンティティ ストアは、分析に最適化された Microsoft SQL Server データベースです。 詳細については、「[エンティティ ストアとの Power BI の統合](power-bi-integration-entity-store.md)」を参照してください。 
 
-|               |                                              |                                                 |                                              |                                          |
-|---------------|----------------------------------------------|-------------------------------------------------|----------------------------------------------|------------------------------------------|
-| **エンティティ**    | **キー集計の測定**               | **Dynamics 365 for Operations のデータ ソース** | **フィールド**                                    | **説明**                          |
-| 請求明細行 | 収益                                      | CustInvoiceTrans                                | 合計 (LineAmountMST)                            | 会計通貨での金額            |
-|               | 売却済商品の原価                           | InventTrans                                     | 合計 (CostAmountPosted + CostAmountAdjustment)  | 原価金額 + 調整                 |
-|               | コミッション明細金額 – 会計通貨 | CustInvoiceTrans                                | 合計 (CommissAmountMST)                         | 会計通貨のコミッション金額 |
+このコンテンツの集計の測定は Microsoft Dynamics AX 2012 および Microsoft Dynamics AX 2012 R3 の販売キューブに使用できた集計の測定のサブセットです。 エンティティ格納でキューブの集計の測定を公開するには、それらを配置可能にする必要があります。 詳細については、[Dynamics におけるエンティティ ストアとの Power BI の統合](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/) ブログ投稿で、集計の測定をエンティティ格納へ公開する手順を参照してください。 
 
-次の表は、コンテンツ パック データセットで複数の計算メジャーを作成するのに使用される請求明細行エンティティのキー集計測定を示します。
+請求明細行エンティティの以下のキー集計の測定は、コンテンツの基準として使用されます。
 
-|                   |                                                                                                  |
+| エンティティ        | キー集計の測定                   | Dynamics 365 のデータ ソース                    | フィールド                                        | 説明                                   |
+|---------------|----------------------------------------------|-------------------------------------------------|----------------------------------------------|----------------------------------------------|
+| 請求明細行 | 収益                                      | CustInvoiceTrans                                | 合計 (LineAmountMST)                            | 会計通貨での金額。            |
+|               | 売却済商品の原価                           | InventTrans                                     | 合計 (CostAmountPosted + CostAmountAdjustment)  | 原価金額の合計および調整。    |
+|               | コミッション明細金額 – 会計通貨 | CustInvoiceTrans                                | 合計 (CommissAmountMST)                         | 会計通貨でのコミッション金額。 |
+
+次の表は、コンテンツのデータセットで複数の計算メジャーを作成するのに使用される請求明細行エンティティのキー集計測定を示します。
+
+| 基準           | 計算                                                                                      |
 |-------------------|--------------------------------------------------------------------------------------------------|
-| **基準**       | **次のような計算**                                                                                |
 | 粗利益      | 合計 (収益 – COGC – コミッション – 消費税 (顧客請求書明細金額に含まれる))           |
 | 粗利      | 合計 (粗利益 / (収益 – 消費税 (顧客請求書明細金額に含まれる)))             |
 | 昨年収益 | 昨年収益 = CALCULATE(合計 ('請求明細行'\[収益\]), SAMEPERIODLASTYEAR(日付\[日付\]) |
 
-**売上キューブ** の以下のキー分析コードは、より高い粒度や深い分析洞察を達成するために集計の測定をスライスするフィルターとして使用されます。
+販売キューブの以下のキー分析コードは、より高い粒度を達成し深い分析洞察を取得できるように、集計の測定をスライスするフィルターとして使用されます。
 
-|                  |                                                      |
+| エンティティ           | 属性の例                               |
 |------------------|------------------------------------------------------|
-| **エンティティ**       | **属性の例**                           |
 | 顧客        | 顧客グループ、顧客地域、住所、産業 |
 | 製品         | 製品番号、製品名、品目グループの名前       |
 | 販売カテゴリ | 販売カテゴリ名                                 |
 | 法人   | 法人名                                   |
 | 日付            | 日付                                                |
 
-既定では、コンテンツ パックは現在の暦年のデータを表示しますが、レポートのフィルター セクションを開き、日付のフィルターを変更できます。 会社フィルターを変更することもできます。
-
-## <a name="additional-resources"></a>追加リソース
-エンティティと建物 Power BI の内容に関連する役立つリンクを次に示します:
-
--   [データ エンティティ](..\data-entities\data-entities.md)
--   [組織のコンテンツ パックの作成](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
--   [Power BI を使用したデータのモデル化](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
--   [Power BI タイルをワークスペースへ追加する](configure-power-bi-integration.md)
-
-
-
-
+既定では、コンテンツは、現在の暦年のデータが表示されます。 ただし、レポートのフィルタ セクションの日付のフィルタを変更できます。 会社フィルターを変更することもできます。
 

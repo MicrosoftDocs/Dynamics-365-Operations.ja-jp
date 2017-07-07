@@ -3,13 +3,13 @@ title: "予算計画の妥当性ドキュメント"
 description: "妥当性ドキュメントは、予算を要求する人物に対して特定の予算が必要な理由の記述を提供します。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 259594
 ms.assetid: 52576fad-32b9-48f2-8197-c11ec313fc29
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: ryansand
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 6178addb9226912feb1974793525ab4ba9441193
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 1d23c0e1725a39d25d2be8971f541b2c31bbe859
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -46,7 +46,7 @@ ms.lasthandoff: 05/25/2017
 
 1.  ログイン後、Microsoft Dynamics Office アドインの [**デザイン**] をクリックします。
 2.  ヘッダー情報については、[**フィールドの追加**] ボタンを使用します。
-3.  BudgetPlanJustification のエンティティ データ ソースを選択して、[**次へ**] をクリックします。 **注記:** このエンティティは、どの妥当性ドキュメントにも必要です。 他のエンティティを使用できますが、このエンティティが含まれていない場合は、Microsoft Dynamics 365 for Operations に戻るアップロードが失敗します。
+3.  BudgetPlanJustification のエンティティ データ ソースを選択して、[**次へ**] をクリックします。 **注記:** このエンティティは、どの妥当性ドキュメントにも必要です。 他のエンティティを使用できますが、このエンティティが含まれていない場合は、Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition に戻るアップロードが失敗します。
 4.  Word ドキュメントの BudgetPlanName、BudgetPlanPreparer、ResponsibilityCenter、DocumentNumber のラベルと値を追加します。 **注記:** 必要であれば、標準ラベルではなく独自のカスタム ラベルを使用できます。
 5.  [**完了**] をクリックして、ヘッダー セクションを完了します。
 6.  予算計画金額の明細行レベルの詳細については、[**テーブルの追加**] をクリックします。
@@ -57,7 +57,7 @@ ms.lasthandoff: 05/25/2017
 
 ##### <a name="set-up-the-budget-planning-process-to-use-the-justification-template"></a>妥当性テンプレートを使用するための予算計画プロセスの設定
 
-1.  Microsoft Dynamics 365 for Operations で、[**予算作成**] &gt; [**設定**] &gt; [**予算計画**] &gt; [**妥当性ドキュメント テンプレート**] の順に移動します。
+1.  Finance and Operations で、[**予算作成**] &gt; [**設定**] &gt; [**予算計画**] &gt; [**妥当性ドキュメント テンプレート**] の順に移動します。
 2.  [**新規**] をクリックして、新しく作成された Microsoft Word 文書を参照します。
 3.  テンプレートの表示名と説明を入力します。 [**OK**] をクリックします。
 4.  [**予算作成**] &gt; [**設定**] &gt; [**予算****計画**] &gt; [**予算計画プロセス**] の順に移動します。
@@ -66,7 +66,7 @@ ms.lasthandoff: 05/25/2017
 
 ##### <a name="edit-and-save-personalized-justification-documents"></a>カスタマイズされた妥当性ドキュメントの編集および保存
 
-1.  Dynamics 365 for Operations で、新しい予算計画を作成するか、既存の予算計画を開きます。
+1.  Finance and Operations で、新しい予算計画を作成するか、既存の予算計画を開きます。
 2.  [**妥当性**] ドロップダウン メニューで、[**妥当性の新規作成**] を選択します。
 3.  詳細を入力した後、[**妥当性**] ドロップダウン メニューからカスタマイズされたドキュメントを選択してアップロードします。
 

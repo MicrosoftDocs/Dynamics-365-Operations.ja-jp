@@ -3,14 +3,14 @@ title: "リーン組織のモデリング"
 description: "この記事は、リーン組織のモデリングにおける重要な概念に関する情報を提供します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: LeanProductionFlow, PlanActivity
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 53141
 ms.assetid: 4f272f2f-ec2c-4b0d-a652-00a63b719b9e
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: ec9191054a1b3587ebbde16acf278084cbd22660
+ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
+ms.openlocfilehash: c5bb642df692451e975be74bd8aa7d856b964a68
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -41,7 +41,7 @@ ms.lasthandoff: 05/25/2017
 
 バッチ製造が原因で発生するワークセンター間の出荷のリードタイムと過剰な在庫を減らすために、リーン生産は、製造と倉庫の補充において、かんばん補充およびかんばんスーパーマーケットを導入します。 通常、これらの機能は部分的に独立したかんばんサイクルの生産を阻みます。 半完成品のかんばんの補充は、もはや完成品の発注によっては行われません。 
 
-Microsoft Dynamics AX で提案されるさまざまなかんばんのシナリオの生産とコストのコンテキストを再構築するために、活動ベースの生産フローが、リーン生産のバックボーンとして導入されました。 すべてのかんばんルールは、この定義された構造によります。 活動ベースのモデルでは、Dynamics AX のリーン生産の以前のバージョンがサポートしていたものより広範囲のシナリオの設定にサポートしています。 ただし、このモデルでは、すべてのシナリオが同じ活動ベースのユーザー インターフェイスを使用するため、作業現場の作業がより複雑になることはありません。
+Microsoft Dynamics 365 for Finance and Operations、Enterprise edition で提案されるさまざまなかんばんのシナリオの生産とコストのコンテキストを再構築するために、活動ベースの生産フローが、リーン生産のバックボーンとして導入されました。 すべてのかんばんルールは、この定義された構造によります。 活動ベースのモデルでは、Dynamics AX のリーン生産の以前のバージョンがサポートしていたものより広範囲のシナリオの設定にサポートしています。 ただし、このモデルでは、すべてのシナリオが同じ活動ベースのユーザー インターフェイスを使用するため、作業現場の作業がより複雑になることはありません。
 
 ## <a name="semi-finished-products-non-bom-levels"></a>半完成品 (非 BOM レベル)
 Dynamics AX のリーン生産は、在庫製品と半完成品のかんばんを 1 つのフレームワークに統合し、すべてのケースにおいて同一のユーザー エクスペリエンスを提供します。 この構造のため、かんばんを半完成品に使用できるようにするために追加の BOM レベルを導入する必要はありません。 また、この構造は在庫トランザクションを最小限にします。

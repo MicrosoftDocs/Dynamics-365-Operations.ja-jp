@@ -1,15 +1,15 @@
 ---
 title: "減価償却簿のアップグレードの概要"
-description: "以前のリリースでは、固定資産には 2 つの評価概念がありました - 価値モデルおよび減価償却簿。 Microsoft Dynamics 365 for Operations 1611 のリリースでは、価値モデル機能および減価償却簿機能は帳簿と呼ばれる単一の概念に統合されました。 このトピックでは、アップグレードで考慮すべき点について説明します。"
+description: "以前のリリースでは、固定資産には 2 つの評価概念がありました - 価値モデルおよび減価償却簿。 Microsoft Dynamics 365 for Operations (1611) では、価値モデル機能および減価償却簿機能は帳簿と呼ばれる単一の概念に統合されました。 このトピックでは、アップグレードで考慮すべき点について説明します。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, Developer
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 221624
 ms.assetid: cf434099-36f9-4b0f-a7c8-bed091e34f39
 ms.search.region: global
@@ -17,10 +17,10 @@ ms.author: saraschi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 15e671a0ef746c150024f3b7ddf6872d07703961
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 116f9e8fbf8ed6ecbd2a1163f17e52ba80061694
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,7 +30,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-以前のリリースでは、固定資産には 2 つの評価概念がありました - 価値モデルおよび減価償却簿。 Microsoft Dynamics 365 for Operations 1611 のリリースでは、価値モデル機能および減価償却簿機能は帳簿と呼ばれる単一の概念に統合されました。 このトピックでは、アップグレードで考慮すべき点について説明します。 
+以前のリリースでは、固定資産には 2 つの評価概念がありました - 価値モデルおよび減価償却簿。 Microsoft Dynamics 365 for Operations (1611) では、価値モデル機能および減価償却簿機能は帳簿と呼ばれる単一の概念に統合されました。 このトピックでは、アップグレードで考慮すべき点について説明します。 
 
 アップグレード プロセスは、既存のセットアップと既存のすべてのトランザクションを新しい帳簿構造に移動します。 価値モデルは、現在のように総勘定元帳に転記する帳簿のままになります。 減価償却簿は、[**総勘定元帳への転記**] オプションが [**いいえ**] に設定されている帳簿に移動されます。 減価償却簿の仕訳帳名は、[**なし**] に設定されている転記階層の総勘定元帳の仕訳帳名に移動されます。 減価償却簿トランザクションは、固定資産トランザクションに移動します。 
 

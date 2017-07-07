@@ -3,13 +3,13 @@ title: "ワークフローでの手動決定のコンフィギュレーション
 description: "このトピックでは、手動決定のプロパティをコンフィギュレーションする方法について説明します。"
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 192101
 ms.assetid: 0bccad77-1a44-4f08-967b-12c62c02afc7
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: ac86ffa794b5fd92ca9aba24537fbc05057fe824
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 6ea8b060741ea94af16861d5bb52894a577e5521
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -152,10 +152,10 @@ ms.lasthandoff: 05/25/2017
     </tr>
     <tr class="odd">
     <td>ユーザー</td>
-    <td>特定の Microsoft Dynamics 365 for Operations ユーザー</td>
+    <td>特定の Microsoft Dynamics 365 for Finance and Operations ユーザー</td>
     <td><ol>
     <li>[<strong>ユーザー</strong>] を選択したのち、[<strong>ユーザー</strong>] タブをクリックします。</li>
-    <li>[<strong>利用可能なユーザー</strong>]: 一覧には、すべての Dynamics 365 for Operations ユーザーが含まれます。 通知の送信先のユーザーを選択して、それらのユーザーを [<strong>選択されたユーザー</strong>] リストに移動します。</li>
+    <li>[<strong>利用可能なユーザー</strong>] 一覧には、すべての Finance and Operations ユーザーが含まれます。 通知の送信先のユーザーを選択して、それらのユーザーを [<strong>選択されたユーザー</strong>] リストに移動します。</li>
     </ol></td>
     </tr>
     </tbody>
@@ -215,10 +215,10 @@ ms.lasthandoff: 05/25/2017
     </tr>
     <tr class="even">
     <td>ユーザー</td>
-    <td>特定の Dynamics 365 for Operations ユーザー</td>
+    <td>特定の Finance and Operations ユーザー</td>
     <td><ol>
     <li>[<strong>ユーザー</strong>] を選択したのち、[<strong>ユーザー</strong>] タブをクリックします。</li>
-    <li>[<strong>利用可能なユーザー</strong>]: 一覧には、すべての Dynamics 365 for Operations ユーザーが含まれます。 決定を割り当てるユーザーを選択し、そのユーザーを [<strong>選択されたユーザー</strong>] リストに移動します。</li>
+    <li>[<strong>利用可能なユーザー</strong>] 一覧には、すべての Finance and Operations ユーザーが含まれます。 決定を割り当てるユーザーを選択し、そのユーザーを [<strong>選択されたユーザー</strong>] リストに移動します。</li>
     </ol></td>
     </tr>
     <tr class="odd">
@@ -301,10 +301,10 @@ ms.lasthandoff: 05/25/2017
     </tr>
     <tr class="odd">
     <td>ユーザー</td>
-    <td>特定の Dynamics 365 for Operations ユーザー</td>
+    <td>特定の Finance and Operations ユーザー</td>
     <td><ol>
     <li>[<strong>ユーザー</strong>] を選択したのち、[<strong>ユーザー</strong>] タブをクリックします。</li>
-    <li>[<strong>利用可能なユーザー</strong>]: 一覧には、すべての Dynamics 365 for Operations ユーザーが含まれます。 決定をエスカレートするユーザーを選択し、そのユーザーを [<strong>選択されたユーザー</strong>] リストに移動します。</li>
+    <li>[<strong>利用可能なユーザー</strong>] 一覧には、すべての Finance and Operations ユーザーが含まれます。 決定をエスカレートするユーザーを選択し、そのユーザーを [<strong>選択されたユーザー</strong>] リストに移動します。</li>
     </ol></td>
     </tr>
     </tbody>

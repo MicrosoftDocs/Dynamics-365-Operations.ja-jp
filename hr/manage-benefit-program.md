@@ -3,26 +3,26 @@ title: "給付金プログラムの定義および管理"
 description: "人事管理は、給付金、控除、および組織が作業者に対して提供または処理する作業者の報酬プランを設定および管理するのに使用できる一連のツールを提供します。 この記事は、管理された給付金を設定する方法に関する情報を提供します。"
 author: rschloma
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-talent
 ms.technology: 
 ms.search.form: HcmBenefitEligibilityDetail, HcmBenefitSelection, SysPolicyListPage, SysPolicySourceDocumentRuleType
 audience: Application User
 ms.reviewer: rschloma
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 15681
 ms.assetid: 6aee97ac-29f7-4b3c-8aa1-c65810de3090
 ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 1d972f2d6bacf6f60ab3ce3bab2fcfaeb8d2e524
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 09ad9ad22c676c3b117cc39e692c64ef92637dc1
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -53,13 +53,13 @@ ms.lasthandoff: 05/25/2017
 [![給付金の図](./media/benefit-pic.png)](./media/benefit-pic.png)
 
 ## <a name="eligibility"></a>適格性
-さまざまな要因により、雇用主が提供する給付金のさまざまなタイプに対する作業者の適格性が決定します。 Microsoft Dynamics 365 for Operations を使用して給付金を作成すると、その給付金が適用される適格性のタイプを設定できます。 
+さまざまな要因により、雇用主が提供する給付金のさまざまなタイプに対する作業者の適格性が決定します。 Microsoft Talent を使用して給付金を作成すると、その給付金が適用される適格性のタイプを設定できます。 
 
 すべての作業者が給付金を使用できるようにすることができます。 たとえば、一部の会社では、駐車許可証を付加給付としてすべての従業員に提供します。 この給付金を作成する場合、**すべての作業者が適格** である適格性として設定します。 
 
 債権差し押さえ、および税徴収の処理などの他の給付金については、適格性は適用されません。 これらのタイプの給付金を作成する場合、**適格性処理のバイパス**として適格性を設定します。 
 
-最後に、福利厚生の適格性はルールに基づいています。 たとえばある会社が、従業員に生命保険の給付金の 2 つのタイプを提供するとします。 経営幹部の従業員は、1 つの生命保険プランの適格性がありますが、他のすべてのフルタイム従業員は他の生命保険プランの適格性があります。 Dynamics 365 for Operations では、すべての経営幹部の従業員を検索する適格性ルール、また他のすべてのフルタイム従業員を検索する適格性ルールを作成でき、次に適切な給付金にそれらのルールを適用します。
+最後に、福利厚生の適格性はルールに基づいています。 たとえばある会社が、従業員に生命保険の給付金の 2 つのタイプを提供するとします。 経営幹部の従業員は、1 つの生命保険プランの適格性がありますが、他のすべてのフルタイム従業員は他の生命保険プランの適格性があります。 Talent では、すべての経営幹部の従業員を検索する適格性ルール、また他のすべてのフルタイム従業員を検索する適格性ルールを作成でき、次に適切な給付金にそれらのルールを適用します。
 
 ## <a name="enrollment"></a>登録
 組織が提供する給付金を作成し、適格性を決定した後に、作業者を給付金に登録します。 給付金に 1 人の作業者を登録する、または単一のプロセス中に 1 つまたは複数の給付金に多数の作業者を登録できます。 

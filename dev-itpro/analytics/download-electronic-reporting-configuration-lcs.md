@@ -3,14 +3,14 @@ title: "Lifecycle Services の電子申告コンフィギュレーションの�
 description: "このトピックは、Microsoft Dynamics Lifecycle Services (LCS) から電子申告 (ER) のコンフィギュレーションをダウンロードする方法を説明します。"
 author: kfend
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: ERSolutionImport, ERWorkspace
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 105843
 ms.assetid: dc44dea2-22ce-401e-98b9-d289e0e2825b
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 1e73cd38c33d88feaba825abb64721bc332a4d6e
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: be77d76194e9d38589548113cc650599d5af4323
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -35,7 +35,7 @@ ms.lasthandoff: 05/25/2017
 
 このチュートリアル ガイドは Microsoft Dynamics Lifecycle Services (LCS) から Electronic reporting (ER) コンフィギュレーションの最新バージョンをダウンロードするプロセスを説明します。
 
-1.  次のロールの 1 つを使用して Dynamics 365 for Operations にサインインします。
+1.  次のロールの 1 つを使用して Dynamics 365 for Finance and Operations にサインインします。
     -   電子申告開発者
     -   電子申告機能コンサルタント
     -   システム管理者
@@ -55,7 +55,7 @@ ms.lasthandoff: 05/25/2017
 6.  [**開く**] をクリックして、選択したリポジトリの ER コンフィギュレーションの一覧を表示します。 [![update-er-from-lcs-for-ms-make-lcs-repository](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)
 7.  左ウィンドウのコンフィギュレーション ツリーで必要な ER コンフィギュレーションを選択します。
 8.  [**バージョン**] クイック タブで、選択した ER コンフィギュレーションの必要なバージョンを選択します。
-9.  [**インポート**] をクリックして、LCS から現在の Dynamics 365 for Operations インスタンスに選択したバージョンをダウンロードします。 **注:** [**インポート**] ボタンは、現在の Dynamics 365 for Operations インスタンスにある ER コンフィギュレーション バージョンでは使用できません。 [![update-er-from-lcs-for-ms-download-configuration](./media/update-er-from-lcs-for-ms-download-configuration.png)](./media/update-er-from-lcs-for-ms-download-configuration.png)
+9.  [**インポート**] をクリックして、LCS から現在の Finance and Operations インスタンスに選択したバージョンをダウンロードします。 **注:** [**インポート**] ボタンは、現在の Finance and Operations インスタンスにある ER コンフィギュレーション バージョンでは使用できません。 [![update-er-from-lcs-for-ms-download-configuration](./media/update-er-from-lcs-for-ms-download-configuration.png)](./media/update-er-from-lcs-for-ms-download-configuration.png)
 
 **注:** ER の設定に応じて、コンフィギュレーションはインポートされた後に検証されます。 不整合の問題が検出されると、通知を受け取る場合があります。 インポートしたコンフィギュレーションのバージョンを使用する前に、それらの問題を解決する必要があります。 詳細については、このトピックの関連記事の一覧を参照してください。
 

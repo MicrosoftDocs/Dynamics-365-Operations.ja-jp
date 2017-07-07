@@ -1,16 +1,16 @@
 ---
 title: "生産における外注作業の管理"
-description: "このトピックでは、Microsoft Dynamics 365 for Operations で委託された操作がどのように管理されるかについて説明します。 つまり、リソースに割り当てられた生産操作がベンダーによってどのように管理されるかを説明します。"
+description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations で委託された操作がどのように管理されるかについて説明します。 つまり、リソースに割り当てられた生産操作がベンダーによってどのように管理されるかを説明します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: LeanDocumentServiceCreation, PlanActivity, ProdBOMVendorListPage, ProdRoute, ProdTable, ProdTableListPage, PurchAgreementSubcontractorLookup, RouteTable, WrkCtrResourceGroup
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 268174
 ms.assetid: fe47c498-4f48-42a2-a0cf-5436c19ab3ea
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 582807f9f416d3e6e73226dfd2e22af2d6331acd
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 0e1368d3f637143fd47c3772c811257e8472cc74
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -32,7 +32,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-このトピックでは、Microsoft Dynamics 365 for Operations で委託された操作がどのように管理されるかについて説明します。 つまり、リソースに割り当てられた生産操作がベンダーによってどのように管理されるかを説明します。
+このトピックでは、Microsoft Dynamics 365 for Finance and Operations で委託された操作がどのように管理されるかについて説明します。 つまり、リソースに割り当てられた生産操作がベンダーによってどのように管理されるかを説明します。
 
 [production processes](production-process-overview.md) では、ベンダーが所有または管理するリソースによって作業を行うことができます。 通常ベンダーのリソースは、会社自身のリソースの利用可能なキャパシティを超過する需要超過を定期的に均等化するために使用されます。 ベンダーは特定の [リソースの能力](resource-capabilities.md) またはリソースを、低価格で提供することもできます。  
 
@@ -42,7 +42,7 @@ ms.lasthandoff: 05/25/2017
 
 内部リソースの場合、通常固定費率が一定期間割り当てられます。 対照的に、外注されたリソースのコストは、関連サービスの購入価格に基づいています。 このサービスは別の製品として定義されており、特定の外注作業の調達および購入プロセスを推進するために使用されます。  
 
-現在、Microsoft Dynamics 365 for Operations では、半製品の明示的な概念はありません。 原材料を完成製品に変換するために複数の操作を必要とする製品の受注の場合、完成製品は最後の操作時にのみ在庫に転記されます。 以前の作業で生成された半製品は、進行中の作業 (WIP) で会計処理されますが、在庫に転記されたり追跡されたりしません。 ルートと材料の請求書 (BOM) を複数のより小さな単位に分割できますが、この方法は管理する必要がある製品の数、BOM、およびルートの数が増加します。  
+現在、Microsoft Dynamics 365 for Finance and Operations では、半製品の明示的な概念はありません。 原材料を完成製品に変換するために複数の操作を必要とする製品の受注の場合、完成製品は最後の操作時にのみ在庫に転記されます。 以前の作業で生成された半製品は、進行中の作業 (WIP) で会計処理されますが、在庫に転記されたり追跡されたりしません。 ルートと材料の請求書 (BOM) を複数のより小さな単位に分割できますが、この方法は管理する必要がある製品の数、BOM、およびルートの数が増加します。  
 
 生産作業のための外注作業のモデリングには 2 つの方法があります。 これらの方法は、外注プロセスをモデル化できる方法、半製品がプロセスで表される方法、および原価管理が管理される方法によって異なります。
 

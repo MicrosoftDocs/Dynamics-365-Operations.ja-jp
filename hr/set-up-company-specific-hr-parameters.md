@@ -3,25 +3,26 @@ title: "会社固有の HR パラメータの設定"
 description: "他のパラメーター設定は会社固有ですが、人事管理 (HR) のパラメーター設定は会社間で共有されます。 この記事は、会社固有の HR パラメーターを設定する方法を説明します。"
 author: rschloma
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-talent
 ms.technology: 
 ms.search.form: HRMParameters
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: rschloma
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 51941
 ms.assetid: 2cfb061a-a616-4bf9-9d98-9cde00039eec
 ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: e1a3560013271fc1b83bdb931aef2153b1d07317
+ms.sourcegitcommit: f83bc127f7bf3cdceb39a79c1e69f4f7e96f6462
+ms.openlocfilehash: ef84ad6e90e7c58ea921930e23b67228d393bc7e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/19/2017
 
 
 ---
@@ -35,8 +36,8 @@ ms.lasthandoff: 05/25/2017
 
 2 つのページが人事管理 (HR) のパラメータの設定に使用されます。 会社間で共有されるパラメータに、**人事管理の共有パラメーター**ページを使用します。 会社固有のパラメータ (つまり、設定を単一の会社に適用する場合) に、**人事管理パラメータ**ページを使用します。 **人事管理パラメーター**ページで、設定は 6 つのタブに分割されます:
 
--   全般
--   採用
+-   一般
+-   採用 - これは Dynamics 365 for Talent には含まれていません。
 -   報酬
 -   番号順序
 -   育児介護休業法 (FMLA)
@@ -48,7 +49,11 @@ ms.lasthandoff: 05/25/2017
 
 [**報酬**] タブの設定は、ユーザーが固定または変動報酬プランの情報を保存するかどうかの確認を定義します。 [**保存の検証を有効にします**] チェック ボックスをオンにすると、そのユーザーが報酬に関連付けられたページを閉じるといつでも、レコードを保存するかどうか確認するメッセージが表示されます。 報酬管理の一部のページでは、ユーザーが情報を削除することはできません。 したがって、ユーザーに情報を保存するかどうかを確認するよう促すことにより、後で削除できない保存される情報の量を限定できる場合があります。 **保存の検証を有効にします**チェック ボックスがオフの場合、場合によってはユーザーの準備ができる前に、レコードは常にすぐに保存されます。 パフォーマンス管理を使用している場合は、**報酬**タブでも、パフォーマンスを評価するときに報酬プランに割り当てられているモデルの代わりに使用する評価モデルを選択できます。 
 
-**番号順序**タブの設定により、申請、休暇登録、報酬プロセス結果、ケース番号、コース、およびコースの議題などの人事管理の品目に ID を自動的に割り当てるのに使用される順序が決まります。 番号順序およびコードを管理するには、[**番号順序**] リスト ページを使用します。([**組織管理**] &gt; [**番号順序**] &gt; [**番号順序**] の順にクリックします)。 
+### <a name="previously-released-functionality"></a>以前にリリースされた機能
+**番号順序**タブの設定により、申請、休暇登録、報酬プロセス結果、ケース番号、コース、およびコースの議題などの人事管理の品目に ID を自動的に割り当てるのに使用される順序が決まります。 番号順序およびコードを管理するには、[**番号順序**] リスト ページを使用します。([**組織管理**] &gt; [**番号順序**] &gt; [**番号順序**] の順にクリックします)。
+
+### <a name="if-youre-using-dynamics-365-for-talent"></a>Dynamics 365 for Talent を使用している場合
+**番号順序**タブの設定により、申請、休暇登録、報酬プロセス結果、ケース番号、コース、およびコースの議題などの人事管理の品目に ID を自動的に割り当てるのに使用される順序が決まります。 番号順序およびコードを管理するには、[**番号順序**] リスト ページを使用します ([**システム管理**] &gt; [**リンク タブ**] &gt; [**番号順序**] &gt; [**番号順序**] の順にクリックします)。 
 
 **FMLA** タブの設定で、FMLA 給付金を受給できるために従業員が働く必要がある時間、適格性に必要な雇用期間、および雇用期間の決定に使用される雇用開始日を定義します。 設定は、従業員に権利がある FMLA 時間数、および従業員が使用した FMLA 時間の計算に使用される FMLA 休暇カレンダーも定義します。 **FMLA** タブは、米国の会社にのみ使用できます。 
 

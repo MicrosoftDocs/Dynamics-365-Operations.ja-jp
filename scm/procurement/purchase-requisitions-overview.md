@@ -3,14 +3,14 @@ title: "購買要求の概要"
 description: "この記事は、購買要求ワークフローと、購買要求に設定できる各種ステータスについて説明します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchReqConsolidation, PurchReqCreate, PurchReqCreatePurchDetails, PurchReqCreatePurchListPage, PurchReqTable, PurchReqTableListPage
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 2174
 ms.assetid: 77d07119-4d9f-4c0e-acbe-d319203571ab
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 38e7fba3fbd12de3a1cd9ac7b1c627834978ba30
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 8c60d870d0ca178af84919e5ebaaa13769b46f8a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -40,7 +40,7 @@ ms.lasthandoff: 05/25/2017
 ## <a name="creating-purchase-requisitions"></a>購買要求の作成
 **自分の購買要求**ページで購買要求を作成して、必要な品目とサービスを選択できます。 組織が作成した調達カタログから品目を選択するか、またはそのカタログに品目が見つからなかった場合は、調達カテゴリを選択し、製品の詳細を入力して品目を請求できます。  
 
-確認のために購買要求を送信する前に、ワークフローを Microsoft Dynamics 365 for Operations でコンフィギュレーションする必要があります。 ワークフローを使用して、確認プロセスを介して購買要求を**ドラフト**の最初のステータスから**承認済**の最後のステータスへ移動します。
+確認のために購買要求を送信する前に、ワークフローを Microsoft Dynamics 365 for Finance and Operations でコンフィギュレーションする必要があります。 ワークフローを使用して、確認プロセスを介して購買要求を**ドラフト**の最初のステータスから**承認済**の最後のステータスへ移動します。
 
 ### <a name="purchase-requisition-statuses"></a>購買要求のステータス
 
@@ -143,7 +143,7 @@ ms.lasthandoff: 05/25/2017
 
 ### <a name="requisitions-that-have-a-purpose-of-consumption"></a>消費目的の要求
 
-消費目的の要求は、組織で内部的に使用される品目またはサービスの需要を表します。 この種類の要求によって作成される需要は、常に発注書によって満たされます。 Microsoft Dynamics 365 for Operations が発注書を自動的に作成するように設定されている場合、購買要求が承認された後に発注書が作成されます。
+消費目的の要求は、組織で内部的に使用される品目またはサービスの需要を表します。 この種類の要求によって作成される需要は、常に発注書によって満たされます。 Microsoft Dynamics 365 for Finance and Operations が発注書を自動的に作成するように設定されている場合、購買要求が承認された後に発注書が作成されます。
 
 ### <a name="requisitions-that-have-a-purpose-of-replenishment"></a>補充目的の要求
 

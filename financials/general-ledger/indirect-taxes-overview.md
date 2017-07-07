@@ -3,7 +3,7 @@ title: "売上税の概要"
 description: "この記事は、売上税システムの概要を示します。 ここでは、売上税設定の要素と、それらがどのように連携して動作するのかを説明します。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: TaxAuthority, TaxPeriod, TaxTable
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 13111
 ms.assetid: fe5fdc7f-9834-49fb-a611-1dd9c289619d
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: bdb3188f533cf0cdb1e70c63891408e45d02418d
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 415928125c14dfc69020b712f281835701ba2f83
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,6 +30,8 @@ ms.lasthandoff: 05/25/2017
 # <a name="sales-tax-overview"></a>売上税の概要
 
 [!include[banner](../includes/banner.md)]
+
+[!include[retail name](../includes/retail-name.md)]
 
 
 この記事は、売上税システムの概要を示します。 ここでは、売上税設定の要素と、それらがどのように連携して動作するのかを説明します。
@@ -73,7 +75,7 @@ ms.lasthandoff: 05/25/2017
 すべてのトランザクションで、[**売上税トランザクション**] ページを開くことで計算された売上税を検索できます。 ドキュメント明細行またはドキュメント全体の売上税を検索できます。 元のドキュメントが誤差のある金額を示す場合、特定のドキュメント (たとえば、仕入先請求書と一般仕訳帳) で計算済売上税を調整できます。
 
 ## <a name="sales-tax-settlement-and-reporting"></a>売上税の決済および報告
-売上税は、税務当局に定期的に支払う必要があります (月ごと、四半期ごとなど)。 Microsoft Dynamics 365 for Operations では、期間の税金勘定を決済し、元帳転記グループに指定されている納税勘定に残高を相殺する機能を提供しています。 この機能は [**売上税の決済と転記**] ページでアクセスできます。 売上税を決済する売上税精算期間を指定する必要があります。 
+売上税は、税務当局に定期的に支払う必要があります (月ごと、四半期ごとなど)。 Microsoft Dynamics 365 for Finance and Operations、Enterprise edition では、期間の税金勘定を決済し、元帳転記グループに指定されている納税勘定に残高を相殺する機能を提供しています。 この機能は [**売上税の決済と転記**] ページでアクセスできます。 売上税を決済する売上税精算期間を指定する必要があります。 
 
 売上税が支払われた後、売上税支払勘定の決算残高が銀行口座に対して釣り合う必要があります。 売上税精算期間で指定された売上税所轄官庁が仕入先勘定に関連付けられている場合、売上税残高は未処理の仕入先請求書として転記され、通常の支払提案に含めることができます。
 

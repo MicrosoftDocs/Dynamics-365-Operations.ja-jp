@@ -3,14 +3,14 @@ title: "発注書の概要"
 description: "この記事では、発注書 (PO) の概要について説明し、発注書が実行するさまざまなステージに関連する追加の記事へのリンクが提供されます。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchTable
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 93083
 ms.assetid: e9b7bc5b-1d7e-4ec2-97be-d655274b0613
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 88fa3fb97621e0f4a226a45b36809e824c807420
+ms.sourcegitcommit: f76e431320414b508728cbe9fe20456f107cbe40
+ms.openlocfilehash: a5dd28e79cbd66e79311c0549c63ea844394ab14
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/09/2017
 
 
 ---
@@ -29,6 +29,8 @@ ms.lasthandoff: 05/25/2017
 # <a name="purchase-order-overview"></a>発注書の概要
 
 [!include[banner](../includes/banner.md)]
+
+[!include[retail name](../includes/retail-name.md)]
 
 
 この記事では、発注書 (PO) の概要について説明し、発注書が実行するさまざまなステージに関連する追加の記事へのリンクが提供されます。
@@ -46,7 +48,7 @@ ms.lasthandoff: 05/25/2017
 -   [発注書の作成](purchase-order-creation.md)
 -   [発注書の承認および確認](purchase-order-approval-confirmation.md)
 -   [発注書に対応する製品受領書](product-receipt-against-purchase-orders.md)
--   [仕入先請求書の概要](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
+-   [仕入先請求書の概要](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview)
 
 ## <a name="types-of-purchase-orders"></a>発注書のタイプ
 PO には次の 3 つのタイプがあります。 注文書を作成すると、タイプを指定する必要があります。 [**調達パラメーター**] ページで、新しい注文の既定の注文のタイプを設定できます。
@@ -90,7 +92,7 @@ PO には次の 3 つのタイプがあります。 注文書を作成すると�
 
 [発注書に対応する製品受領書](product-receipt-against-purchase-orders.md)
 
-[仕入先請求書の概要](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
+[仕入先請求書の概要](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview)
 
 
 

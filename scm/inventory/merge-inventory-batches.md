@@ -3,14 +3,14 @@ title: "在庫バッチのマージ"
 description: "この記事は、2 つ以上の棚卸資産バッチをマージされたバッチに連結する方法に関する情報を提供します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventBatchJournalListPage, InventBatchJournalMerge
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 39782
 ms.assetid: 07c5e98b-10fd-4f5c-b471-41d2150f47b0
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: pjacobse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: e97257955f4f8fa86c8bf957a182aa71d4fbc8ef
+ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
+ms.openlocfilehash: aec97976ef6a2b4c66118289f7f76b14351456f8
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -91,7 +91,7 @@ ms.lasthandoff: 05/25/2017
 いいえ、バッチの数量全体のみマージできます。 バッチのマージ機能は、生産機能ではなく在庫機能として使用されることを意図しています。
 
 ## <a name="what-if-the-batches-have-different-batch-attribute-values"></a>バッチのバッチ属性値が異なる場合はどうなりますか
-ソース バッチを選択して結合されたバッチに統合するとき、Microsoft Dynamics 365 for Operations はすべてのバッチが同じ特性または属性値を持つかどうかを検証します。 属性値が同じであるとき、結合されたバッチの値が提案されます。 その値は変更できます。 結合されたバッチの属性値が等しくない場合、その値は空白のままとなり、それらの値は手動で入力できます。 属性値のバッチ属性タイプが整数または小数で、値がすべてのソース バッチで同じでない場合、値は加重平均計算を使用して計算されます。 計算値は、最も近い増分値に四捨五入されます。 ソース バッチの値が空白の場合、そのバッチとその数量は計算には含まれません。 **例** 次の例は、結合されたバッチの加重平均計算を示します。 2 つのソース バッチについて、整数であるバッチ属性タイプの値が空白になっています。 次の属性は、ソース バッチに割り当てられます。
+ソース バッチを選択して結合されたバッチに統合するとき、Finance and Operations は、すべてのバッチが同じ特性または属性値を持つかどうかを検証します。 属性値が同じであるとき、結合されたバッチの値が提案されます。 その値は変更できます。 結合されたバッチの属性値が等しくない場合、その値は空白のままとなり、それらの値は手動で入力できます。 属性値のバッチ属性タイプが整数または小数で、値がすべてのソース バッチで同じでない場合、値は加重平均計算を使用して計算されます。 計算値は、最も近い増分値に四捨五入されます。 ソース バッチの値が空白の場合、そのバッチとその数量は計算には含まれません。 **例** 次の例は、結合されたバッチの加重平均計算を示します。 2 つのソース バッチについて、整数であるバッチ属性タイプの値が空白になっています。 次の属性は、ソース バッチに割り当てられます。
 
 | 属性 | 最小 | 増分 | 最大 |
 |-----------|---------|-----------|---------|

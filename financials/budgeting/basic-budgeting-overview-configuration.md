@@ -1,15 +1,15 @@
 ---
 title: "予算作成の概要"
-description: "Microsoft Dynamics 365 for Operations の財務機能を使用するほとんどすべての会社は、実績対予算のレポートを作成できなければなりません。 この記事では、Dynamics 365 for Operations 予算で作成したり、サード パーティ製プログラムから読み込むために必要な最低限のコンフィギュレーションを説明します。"
+description: "Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition の財務機能を使用するほとんどすべての会社は、実績対予算のレポートを作成できなければなりません。 この記事では、Finance and Operations, Enterprise Edition 予算で作成したり、サード パーティ製プログラムから読み込むために必要な最低限のコンフィギュレーションを説明します。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 60113
 ms.assetid: 28a9793e-d376-47af-a345-69046bad17df
 ms.search.region: global
@@ -17,10 +17,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: a4f9c99b8d74e20fbadc6cd9617451cfbfc06ba4
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: f35db274a6b14f6bae185b69348d3829c77801b5
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,14 +30,14 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Microsoft Dynamics 365 for Operations の財務機能を使用するほとんどすべての会社は、実績対予算のレポートを作成できなければなりません。 この記事では、Dynamics 365 for Operations 予算で作成したり、サード パーティ製プログラムから読み込むために必要な最低限のコンフィギュレーションを説明します。
+Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition の財務機能を使用するほとんどすべての会社は、実績対予算のレポートを作成できなければなりません。 この記事では、Finance and Operations 予算で作成したり、サード パーティ製プログラムから読み込むために必要な最低限のコンフィギュレーションを説明します。
 
 <a name="overview"></a>概要
 --------
 
 法人の承認済の予算は、*予算登録エントリ*として知られるドキュメントで管理されます。 予算登録エントリのドキュメント明細行は、*予算勘定*エントリとして知られ、承認済の予算の財務分析コード情報、日付、および金額が含まれます。 予算登録エントリのドキュメントは、予算金額の元帳の実際の金額を比較した基本的な財務レポートや照会のページに統合されます。 
 
-Dynamics 365 for Operations の予算登録エントリを作成するための方法は複数あります。
+Finance and Operations の予算登録エントリを作成するための方法は複数あります。
 
 -   **予算登録エントリ**ページで、ドキュメント情報を手動で入力します。
 -   **予算登録エントリ**ページの、**Excel で開く**ボタンをクリックして開くことができる Microsoft Excel テンプレートを使用します。

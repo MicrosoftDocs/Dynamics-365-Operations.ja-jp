@@ -1,9 +1,9 @@
 ---
 title: "予算計画"
-description: "このラボの目的は、予算計画領域で、Microsoft Dynamics 365 for Operations 機能の更新のガイドされたビューを提供することです。 このラボの目的は、予算計画モジュールのクイック コンフィギュレーションの例、およびこのコンフィギュレーションを使用してどのように予算計画が達成されるかのショーケースを示すことです。  この実習では、次の業務プロセスまたはタスクに特に焦点を合わせます。-    - 予算計画のための組織階層の作成およびユーザー セキュリティの構成   - 予算計画シナリオ、予算計画の列、レイアウトおよび Excel テンプレートの定義   - 予算計画プロセスの作成および有効化   - 総勘定元帳からの実績読み込みによる予算計画ドキュメントの作成   - 配賦を使用した予算計画ドキュメント データの調整   - Excel での予算計画の編集"
+description: "このラボの目的は、予算計画領域で、Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 機能の更新のガイドされたビューを提供することです。 このラボの目的は、予算計画モジュールのクイック コンフィギュレーションの例、およびこのコンフィギュレーションを使用してどのように予算計画が達成されるかのショーケースを示すことです。  この実習では、次の業務プロセスまたはタスクに特に焦点を合わせます。-    - 予算計画のための組織階層の作成およびユーザー セキュリティの構成   - 予算計画シナリオ、予算計画の列、レイアウトおよび Excel テンプレートの定義   - 予算計画プロセスの作成および有効化   - 総勘定元帳からの実績読み込みによる予算計画ドキュメントの作成   - 配賦を使用した予算計画ドキュメント データの調整   - Excel での予算計画の編集"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: dbe2b386de9e88af354015705e1444987a3f7e82
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 11b5ffacef06fd3e83c61cd14da11ad645eec335
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -31,12 +31,12 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-このラボの目的は、予算計画領域で、Microsoft Dynamics 365 for Operations 機能の更新のガイドされたビューを提供することです。 このラボの目的は、予算計画モジュールのクイック コンフィギュレーションの例、およびこのコンフィギュレーションを使用してどのように予算計画が達成されるかのショーケースを示すことです。  この実習では、次の業務プロセスまたはタスクに特に焦点を合わせます。-    - 予算計画のための組織階層の作成およびユーザー セキュリティの構成   - 予算計画シナリオ、予算計画の列、レイアウトおよび Excel テンプレートの定義   - 予算計画プロセスの作成および有効化   - 総勘定元帳からの実績読み込みによる予算計画ドキュメントの作成   - 配賦を使用した予算計画ドキュメント データの調整   - Excel での予算計画の編集 
+このラボの目的は、予算計画領域で、Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 機能の更新のガイドされたビューを提供することです。 このラボの目的は、予算計画モジュールのクイック コンフィギュレーションの例、およびこのコンフィギュレーションを使用してどのように予算計画が達成されるかのショーケースを示すことです。  この実習では、次の業務プロセスまたはタスクに特に焦点を合わせます。-    - 予算計画のための組織階層の作成およびユーザー セキュリティの構成   - 予算計画シナリオ、予算計画の列、レイアウトおよび Excel テンプレートの定義   - 予算計画プロセスの作成および有効化   - 総勘定元帳からの実績読み込みによる予算計画ドキュメントの作成   - 配賦を使用した予算計画ドキュメント データの調整   - Excel での予算計画の編集 
 
-<a name="prerequisites"></a>必要条件 
+<a name="prerequisites"></a>前提条件 
 ------------------
 
-このチュートリアルでは、Contoso のデモ データ環境を使用する Dynamics 365 for Operations にアクセスする必要があり、インスタンスの管理者としてプロビジョニングされます。 このラボにおいてプライベート ブラウザー モードを使用しないでください - 必要に応じてブラウザーの他のどのアカウントからもサインアウトし、Dynamics 365 for Operations の管理者認証情報を使用してサインインしてください。 Dynamics 365 for Operations にサインインする時には、「サインインしたままにする」チェック ボックスをオンにする**必要**があります。 これは、Excel のアプリが現在必要な永続する Cookie を作成します。 IE 以外のブラウザーを使用して Dynamics 365 for Operations にサインインする場合、Excel のアプリでサインインするように求めるメッセージが表示されます。 Excel のアプリで「サインイン」をクリックすると、IE のポップアップ ウィンドウが開きます。「サインインしたままにする」チェック ボックスをオンにする **必要** があります。 Excel のアプリで「サインイン」をクリックしても何も表示されない場合、IE の Cookie キャッシュを削除する必要があります。
+このチュートリアルでは、Contoso のデモ データ環境を使用する Finance and Operations にアクセスする必要があり、インスタンスの管理者としてプロビジョニングされます。 このラボにおいてプライベート ブラウザー モードを使用しないでください - 必要に応じてブラウザーの他のどのアカウントからもサインアウトし、Finance and Operations の管理者認証情報を使用してサインインしてください。 Finance and Operations にサインインする時には、「サインインしたままにする」チェック ボックスをオンにする**必要**があります。 これは、Excel のアプリが現在必要な永続する Cookie を作成します。 IE 以外のブラウザーを使用して Finance and Operations にサインインする場合、Excel のアプリでサインインするように求めるメッセージが表示されます。 Excel のアプリで「サインイン」をクリックすると、IE のポップアップ ウィンドウが開きます。「サインインしたままにする」チェック ボックスをオンにする **必要** があります。 Excel のアプリで「サインイン」をクリックしても何も表示されない場合、IE の Cookie キャッシュを削除する必要があります。
 
 ## <a name="scenario-overview"></a>**シナリオの概要**
 ジュリアは、ドイツ (DEMF) の Contoso Entertainment Systems の財務マネージャーとして勤務しています。 FY2016 が近づき、翌年の会社の予算を設定する業務を行う必要があります。 予算の設定は次のようになります。
@@ -148,7 +148,7 @@ ms.lasthandoff: 05/25/2017
 
 [![オートフィル](./media/screenshot22.png)](./media/screenshot22.png) 
 
-4.7. Dynamics 365 for Operations に戻り、ページを更新します。 公開された値が Dynamics 365 for Operations に表示されます。 
+4.7. Finance and Operations に戻り、ページを更新します。 公開された値が Finance and Operations に表示されます。 
 
 [![更新反映](./media/screenshot23.png)](./media/screenshot23.png)
 
@@ -233,7 +233,7 @@ ms.lasthandoff: 05/25/2017
 
 [![パブリッシュ](./media/screenshot36.png)](./media/screenshot36.png)
 
-9.3。 Dynamics 365 for Operations の予算計画のドキュメントに戻ります。 [ワークフロー] &gt; [提出] の順にクリックして、ドキュメントを自動承認します。
+9.3。 Finance and Operations の予算計画のドキュメントに戻ります。 [ワークフロー] &gt; [提出] の順にクリックして、ドキュメントを自動承認します。
 
 [![自動承認](./media/screenshot37.png)](./media/screenshot37.png) 
 

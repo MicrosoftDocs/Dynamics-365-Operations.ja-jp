@@ -1,9 +1,9 @@
 ---
 title: "Excel アドインの使用"
-description: "このトピックでは、Microsoft Excel でエンティティ データを開き、Excel 用の Microsoft Dynamics Office アドインを使用してそのデータを表示、更新、また編集する方法を説明します。 エンティティ データを開くには、Excel か Microsoft Dynamics 365 for Operations のいずれからでも開始できます。"
+description: "このトピックでは、Microsoft Excel でエンティティ データを開き、Excel 用の Microsoft Dynamics Office アドインを使用してそのデータを表示、更新、また編集する方法を説明します。"
 author: ChrisGarty
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,10 +17,10 @@ ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: c391fb70d837db9c0f167b392291fc1c5cc2bb53
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: f55e1e89d0e48819962c169a56f0f27dc0d792b4
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
@@ -30,16 +30,16 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-このトピックでは、Microsoft Excel でエンティティ データを開き、Excel 用の Microsoft Dynamics Office アドインを使用してそのデータを表示、更新、また編集する方法を説明します。 エンティティ データを開くには、Excel か Microsoft Dynamics 365 for Operations のいずれからでも開始できます。
+このトピックでは、Microsoft Excel でエンティティ データを開き、Excel 用の Microsoft Dynamics Office アドインを使用してそのデータを表示、更新、また編集する方法を説明します。 エンティティ データを開くには、Excel か Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition のいずれからでも開始できます。
 
 Microsoft Excel でエンティティ データを開くことにより、Excel 用の Microsoft Dynamics Office アドインを使用して迅速かつ簡単にデータを表示し編集することができます。 このアドインには Microsoft Excel 2016 が必要です。 **注記:** Microsoft Azure Active Directory (Azure AD) テナントが Active Directory フェデレーション サービス (AD FS) を使用するようにコンフィギュレーションされている場合は、Excel のアドインに正しくサインインできるように、2016 年 5 月の更新が適用されていることを確認する必要があります。
 
-## <a name="open-entity-data-in-excel-when-you-start-from-dynamics-365-for-operations"></a>Dynamics 365 for Operations から開始して Excel でエンティティ データを開く
-1.  Microsoft Dynamics 365 for Operations のページで、[**Microsoft Office で開く**] をクリックします。 そのページのルート データ ソース (テーブル) がエンティティのルート データ ソースと同じである場合は、既定の [**Excel で開く**] オプションがそのページに生成されます。 [**Excel で開く**] オプションは [**すべての仕入先**] や [**すべての顧客**] などの頻繁に使用するページに表示されます。
+## <a name="open-entity-data-in-excel-when-you-start-from-dynamics-365-for-finance-and-operations"></a>Dynamics 365 for Finance and Operations から開始して Excel でエンティティ データを開く
+1.  Microsoft Dynamics 365 for Finance and Operations のページで、[**Microsoft Office で開く**] をクリックします。 そのページのルート データ ソース (テーブル) がエンティティのルート データ ソースと同じである場合は、既定の [**Excel で開く**] オプションがそのページに生成されます。 [**Excel で開く**] オプションは [**すべての仕入先**] や [**すべての顧客**] などの頻繁に使用するページに表示されます。
 2.  [**Excel で開く**] オプションをクリックし、生成されるブックを開きます。 このブックには、エンティティのバインディング情報、環境へのポインター、また Excel アドインへのポインターがあります。
 3.  Excel で [**編集機能を有効にする**] をクリックし、Excel アドインが実行されるようにします。 Excel のウィンドウ右側のウィンドウで Excel アドインが実行されます。
 4.  初めて Excel アドインを実行する場合は、[**このアドインを信頼します**] をクリックします。
-5.  サインインするようにとのメッセージが表示されたら、[**サインイン**] をクリックし、Dynamics 365 for Operations へのサインインに使用するのと同じ資格情報を用いてサインインします。 可能な場合、Excel アドインは Internet Explorer のサインイン コンテキストを使用し、自動的にサインインします。 そのため、Excel アドインの右上隅のユーザー名を確認します。
+5.  サインインするようにとのメッセージが表示されたら、[**サインイン**] をクリックし、Dynamics 365 for Finance and Operations へのサインインに使用するのと同じ資格情報を用いてサインインします。 可能な場合、Excel アドインは Internet Explorer のサインイン コンテキストを使用し、自動的にサインインします。 そのため、Excel アドインの右上隅のユーザー名を確認します。
 
 Excel アドインが、選択したエンティティのデータを自動的に読み取ります。 Excel アドインが読み込むまでブックにデータはないことに注意してください。
 
@@ -48,7 +48,7 @@ Excel アドインが、選択したエンティティのデータを自動的�
 2.  Office ストアで、キーワード「Dynamics」で検索し、[**Microsoft Dynamics Office アドイン**] (Excel アドイン) の隣の [**追加**] をクリックします。
 3.  初めて Excel アドインを実行する場合は、[**このアドインを信頼します**] をクリックして Excel アドインの実行を有効化します。 Excel のウィンドウ右側のウィンドウで Excel アドインが実行されます。
 4.  [**サーバー情報の追加**] をクリックして [**オプション**] ウィンドウを開きます。
-5.  ターゲットの Dynamics 365 for Operations インスタンスからブラウザの URL をコピーし、それを **サーバー URL** フィールドに貼り付けてから、ホスト名以降をすべて消去します。 結果の URL はホスト名のみである必要があります。
+5.  ターゲットの Dynamics 365 for Finance and Operations インスタンスからブラウザの URL をコピーし、それを [**サーバー URL**] フィールドに貼り付けてから、ホスト名以降をすべて消去します。 結果の URL はホスト名のみである必要があります。
 たとえば、URL が https://xxx.dynamics.com/?cmp=usmf&amp;mi=CustTableListPage なら、**https://xxx.dynamics.com** 以外すべて消去します。
 6.  [**OK**] をクリックしてから [**はい**] をクリックし、変更を確認します。 Excel アドインが再開しメタデータを読み込みます。 [**デザイン**] ボタンが使用できるようになりました。 Excel アドインに [**アプレットの読み込み**] ボタンがある場合は、正しいユーザーとしてサインインしていない可能性があります。 詳細については、このトピックの「トラブルシューティング」セクションにある「アプレットの読み込みボタンが表示される」を参照してください。
 7.  [**デザイン**] をクリックします。 Excel アドインがエンティティ メタデータを取得します。

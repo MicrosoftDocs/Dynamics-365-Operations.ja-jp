@@ -3,14 +3,14 @@ title: "SEPA 口座振替の概要"
 description: "この記事では、ISO 20022 口座振替に関する一般情報を提供します。これは単一ユーロ支払地域 (SEPA) 口座振替および仕入先に対するそのほかの電子支払を含みます。 SEPA 口座振替は、1 つの会社または個人から別の会社または個人に対する、ユーロでの特定のタイプの支払です。 このトピックは、口座振替の支払ファイルを設定して送信する方法も説明します。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: LedgerJournalTransVendInvoice, LedgerJournalTransVendPaym, VendPaymMode
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 11124
 ms.assetid: 36b0f870-16d4-4bbb-8da5-e747e69b970d
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 8f1a220babc333fe2091e9286afc565ebeecf036
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: bc14ab554a298d09bb852e96503b4cd3f4b36d3c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -53,15 +53,15 @@ ms.lasthandoff: 05/25/2017
 SEPA 口座振替は、個人または 1 つの会社から別の会社または個人に対する支払です。 支払はユーロで、国際銀行番号 (IBAN) および両方の当事者の銀行識別コード (BIC) を含む必要があります。 (BIC は、国際銀行間通信協会 \[SWIFT\] とも呼ばれます。) また、トランザクション原価は両方の当事者間で共有する必要があります。 当事者間で発生する口座振替は、ISO 20022 支払処理標準に準拠した XML ファイル、EPC によって指定されている XML 形式を使用する必要があります。
 
 ## <a name="how-is-a-credit-transfer-implemented"></a>口座振替はどのように実装されますか。
-欧州諸国の口座振替の支払形式は、Dynamics 365 for Operations の [電子申告] (ER) および [支払方法] 機能を使用して実行されます。 ほかの地域で使用されるいくつかの口座振替の形式は、レガシ支払フレームワークを使用します。 ほかの複数のフォームの間で、使用可能な 12 の ISO 20022 口座振替のファイル形式があります。 これらのエクスポート形式は、SEPA ISO 20022 XML 標準に準拠します。 それらが使用されている国/地域の非ユーロの支払振替、および EPC がリリースする SEPA 口座振替設定ルールブックのバージョン 8.2 で指定されたユーロ支払を生成するのに使用されます。 口座振替を実装する前に、電子銀行決済のファイルをアップロードするために必要なソフトウェアを取得するために、銀行にお問い合わせください。 銀行に対する支払指図を含む XML ファイルの転送にそのソフトウェアを使用します。
+欧州諸国の口座振替の支払形式は、Microsoft Dynamics 365 for Finance and Operations, Enterprise edition の [電子申告] (ER) および [支払方法] 機能を使用して実行されます。 ほかの地域で使用されるいくつかの口座振替の形式は、レガシ支払フレームワークを使用します。 ほかの複数のフォームの間で、使用可能な 12 の ISO 20022 口座振替のファイル形式があります。 これらのエクスポート形式は、SEPA ISO 20022 XML 標準に準拠します。 それらが使用されている国/地域の非ユーロの支払振替、および EPC がリリースする SEPA 口座振替設定ルールブックのバージョン 8.2 で指定されたユーロ支払を生成するのに使用されます。 口座振替を実装する前に、電子銀行決済のファイルをアップロードするために必要なソフトウェアを取得するために、銀行にお問い合わせください。 銀行に対する支払指図を含む XML ファイルの転送にそのソフトウェアを使用します。
 
-## <a name="what-credit-transfer-formats-are-currently-supported-in-dynamics-365-for-operations"></a>Dynamics 365 for Operations で現在サポートされている口座振替の形式は何ですか。
+## <a name="what-credit-transfer-formats-are-currently-supported-in-finance-and-operations"></a>Finance and Operations で現在サポートされている口座振替の形式は何ですか。
 必要に応じていつでも Microsoft Dynamics Lifecycle services (LCS) の共有アセット ライブラリに移動して、**GER コンフィギュレーション**資産タイプのある利用可能なファイルで最新の一覧を表示する必要があります。 次のセクション、"何を設定する必要がありますか。"では、利用可能なコンフィギュレーションおよびインポート選択されているコンフィギュレーションを表示するための LCS リポジトリの作成方法について説明するトピックへのリンクを提供します。
 
 ## <a name="what-do-i-have-to-set-up"></a>何を設定する必要がありますか。
--   口座振替ファイルを作成する前に、少なくとも 1 つの有効な口座振替コンフィギュレーションを、ER コンフィギュレーションにインポートする必要があります。 手順については、[Lifecycle Services の電子申告コンフィギュレーションのダウンロード](/dynamics365/operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs)を参照してください。
+-   口座振替ファイルを作成する前に、少なくとも 1 つの有効な口座振替コンフィギュレーションを、ER コンフィギュレーションにインポートする必要があります。 手順については、[Lifecycle Services の電子申告コンフィギュレーションのダウンロード](/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs)を参照してください。
 -   支払の買掛金勘定の方法をコンフィギュレーションするときに、**一般的な電子申告** チェック ボックスをオンにし、エクスポート形式のコンフィギュレーションとして適切な口座振替形式 (たとえば、**ISO 20022 口座振替 (AT)**) を選択します。
--   Dynamics 365 for Operations で法人および銀行口座情報を設定する必要があります。
+-   Finance and Operations で法人および銀行口座情報を設定する必要があります。
 -   銀行口座番号、IBAN、および時にはSWIFT コード (BICs) または他の ID が、有効な口座振替の支払を作成するため必要になります。 したがって、仕入先の銀行口座および振込を要求する組織の銀行口座用にそれらを設定する必要があります。
 -   口座振替メッセージで参照される関係者の付加価値税 (VAT) 番号など、追加情報が必要になるかもしれません。 この情報は、必要時に仕入先と法人用に設定される必要があります。
 -   いくつかの買掛金勘定支払方法、ほとんど支払の ISO 20022 基準メソッドは、**サービス タイプ** = **SLEV**などの **支払フォーマット コード セット**の追加設定を要求するかもしれません。 これらのコードは、支払処理中に支払トランザクションに対する追加のタグ付けとして使用されます。 支払コードの既定値では、**カテゴリ目的**、**手数料負担者**、**ローカル支払方法** および **サービス レベル** などが 2 箇所に設定されます。 1 箇所は **買掛金勘定支払仕訳帳ヘッダー** および 2 箇所目は **買掛金勘定支払方法**です。 支払仕訳帳明細行の作成時に、支払仕訳帳ヘッダーで設定された支払コードの値が仕訳帳明細行に転送されます。設定されていない場合は、支払方法が使用されます。

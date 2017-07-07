@@ -3,14 +3,14 @@ title: "予算計画の概要"
 description: "この記事では予算計画を紹介し、予算計画のコンフィギュレーションと予算計画プロセスの設定に役立つ情報が含まれています。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 17251
 ms.assetid: a2e06633-a800-4840-a962-88fed8462104
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 5212c8401f26f30cf593c52eb88291463b9b8810
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: e2c956969626836fadb0a6cac6dbb1d57f169f28
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
@@ -38,7 +38,7 @@ ms.lasthandoff: 05/25/2017
 
 組織で実装される予算を作成する際には、予算計画を実行します。 組織は、予算作成のための組織のポリシー、手順および要件を満たすように、予算計画をコンフィギュレーションし、予算計画プロセスを設定します。 
 
-Microsoft Dynamics 365 for Operations で使用されている概念と用語を理解すると、組織の予算計画の実装がより簡単になります。
+Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition で使用されている概念と用語を理解すると、組織の予算計画の実装がより簡単になります。
 
 ### <a name="key-terms"></a>重要な用語
 
@@ -59,7 +59,7 @@ Microsoft Dynamics 365 for Operations で使用されている概念と用語を
 -   予算計画を、確認および承認するために、ワークシート、妥当性ドキュメント、および他の添付ファイルと一緒に自動的に送ることができます。
 -   下位レベルの組織からの複数の予算計画を、組織の高レベルの単一の親予算計画に連結します。 また、組織で高レベルの 1 つの予算計画を作成して、下位レベルの組織に予算を割り当てることもできます。
 
-予算計画は他の Microsoft Dynamics 365 for Operations モジュールと統合されます。 したがって、前の予算、実際の支出、固定資産、および人事管理の情報を取り込むことができます。 予算計画は Microsoft Excel や Microsoft Word とも統合されるので、これらのプログラムを使用して予算計画データの作業ができます。 たとえば、予算マネージャーは、部門の予算の要求を予算計画シナリオから Excel ワークシートにエクスポートできます。 データは、ワークシート内で分析、更新、および図表化され、予算計画明細行に公開できます。
+予算計画は他の Microsoft Dynamics 365 for Finance and Operations モジュールと統合されます。 したがって、前の予算、実際の支出、固定資産、および人事管理の情報を取り込むことができます。 予算計画は Microsoft Excel や Microsoft Word とも統合されるので、これらのプログラムを使用して予算計画データの作業ができます。 たとえば、予算マネージャーは、部門の予算の要求を予算計画シナリオから Excel ワークシートにエクスポートできます。 データは、ワークシート内で分析、更新、および図表化され、予算計画明細行に公開できます。
 
 ## <a name="configuring-budget-planning"></a>予算計画コンフィギュレーション
 予算計画を設定するために必要な設定の多くが **予算計画のコンフィギュレーション** ページに含まれています。 次のセクションでは、予算計画をコンフィギュレーションする際に考慮する必要がある鍵となる要素のいくつかについて説明します。 コンフィギュレーションが完了した後で、予算計画プロセスを設定します。
@@ -78,7 +78,7 @@ Microsoft Dynamics 365 for Operations で使用されている概念と用語を
 
 **組織階層** ページで、各予算計画プロセスの予算計画の階層として組織階層を指定できます。 予算計画の階層は、他の目的に使用される標準的な組織階層と一致させる必要はありません。 この階層は、データの集計および配布に使用されるため、別の構造にすることもできます。 例のスキーマでは、販売部門は予算と財務部門を含む本社より下のレベルです。 この構造は販売部門の工程を管理するために使用される構造とは異なる可能性があります。 1 つの組織階層のみを各予算計画プロセスに割り当てることができます。 
 
-詳細については、「[組織と組織階層](/dynamics365/operations/organization-administration/organizations-organizational-hierarchies)」を参照してください。
+詳細については、「[組織と組織階層](/dynamics365/unified-operations/fin-and-ops/organization-administration/organizations-organizational-hierarchies)」を参照してください。
 
 ### <a name="user-security"></a>ユーザーのセキュリティ
 
@@ -88,13 +88,13 @@ Microsoft Dynamics 365 for Operations で使用されている概念と用語を
 
 予算計画のワークフローが予算作成ワークフローと共に、予算計画の作成や発展の管理に使用されます。
 
-予算計画のワークフローは、予算計画を実行するステージの順序付けセットで構成されます。 各予算計画のワークフローは、予算作成のワークフローと関連付けられます。 予算作成ワークフローは、Microsoft Dynamics 365 for Operations 全体で使用されるワークフローのタイプの 1 つです。 予算作成ワークフローは、予算計画を、ワークシート、妥当性、および添付ファイルと一緒に、確認と承認のために、組織内で回覧させることができます。 
+予算計画のワークフローは、予算計画を実行するステージの順序付けセットで構成されます。 各予算計画のワークフローは、予算作成のワークフローと関連付けられます。 予算作成ワークフローは、Finance and Operations 全体で使用されるワークフローのタイプの 1 つです。 予算作成ワークフローは、予算計画を、ワークシート、妥当性、および添付ファイルと一緒に、確認と承認のために、組織内で回覧させることができます。 
 
 **予算計画のコンフィギュレーション** ページの**ワークフロー ステージ** セクションで予算計画ワークフローを作成します。 ここでは、使用するステージおよび予算作成ワークフローを選択し、そのほかの設定をコンフィギュレーションします。 
 
 予算の階層の各レベルで予算計画のワークフローを作成するようにお勧めします。 その後、予算計画のワークフローのステージに対応する要素を含む予算作成ワークフローを割り当てます。 先ほど示した例のスキーマでは、1 つの予算計画ワークフローが販売部門用に作成され、別の予算計画ワークフローが本社用に作成されます。 予算作成ワークフローがステージを介して予算計画を移動します。 
 
-**予算作成ワークフロー** ページで、予算計画の予算作成ワークフロー作成します。 このプロセスは、Microsoft Dynamics 365 for Operations で他のワークフローを作成するプロセスに似ています。 次の図は、本社のワークフローの例を示します。 
+**予算作成ワークフロー** ページで、予算計画の予算作成ワークフロー作成します。 このプロセスは、Finance and Operations で他のワークフローを作成するプロセスに似ています。 次の図は、本社のワークフローの例を示します。 
 
 [![予算計画用のワークフロー予算作成](./media/budgetingworkflowforbudgetplanning-300x300.png)](./media/budgetingworkflowforbudgetplanning.png) 
 

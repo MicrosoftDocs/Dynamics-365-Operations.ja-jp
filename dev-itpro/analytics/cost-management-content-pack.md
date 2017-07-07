@@ -3,13 +3,13 @@ title: "原価管理 Power BI コンテンツ"
 description: "このトピックでは、原価管理 Power BI コンテンツの内容について説明します。 Power BI レポートにアクセスする方法を説明し、コンテンツを作成するために使用するデータ モデルおよびエンティティについての情報を提供します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 270314
 ms.assetid: 9680d977-43c8-47a7-966d-2280ba21402a
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: a9449e42224d5dfb1bc1f0368a041c45afc334a2
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 387b804cb20ffdc17ad74dac5d927ecbaf421bae
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -52,7 +52,7 @@ ms.lasthandoff: 05/25/2017
 CostAggregatedCostStatementEntryEntity のプライマリ データ ソースは CostStatementCache テーブルです。 この表は、データ セット キャッシュ フレームワークで管理されます。 既定では、テーブルは 24 時間ごとに更新されますが、データ キャッシュのコンフィギュレーションで手動更新を有効にできます。 [**原価管理**] または [**コスト分析**] ワークスペースで手動更新を行うことができます。 CostStatementCache の更新の実行後、サイトで更新されたデータを表示するには Power BI.com の OData 接続を更新する必要があります。 この Power BI コンテンツの差異 (購買、製造) のメジャーは標準原価在庫方式によって評価される品目にのみ関連します。 製造差異は有効な原価と実現原価の差額として計算されます。 製造差異は、製造オーダーに [**終了**] のステータスがあるときに計算されます。 製造差異タイプおよび各タイプの計算方法の詳細については、「[完了した製造オーダーの差異の分析について](https://technet.microsoft.com/en-us/library/gg242850.aspx)」を参照してください。
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI コンテンツへのアクセス
-**原価管理** Power BI コンテンツは PowerBI.com から使用できます。 Microsoft Dynamics 365 for Operations データの接続および読み込む方法の詳細については、「[PowerBI.com からの Power BI コンテンツへのアクセス](power-bi-home-page.md)」を参照してください。
+**原価管理** Power BI コンテンツは PowerBI.com から使用できます。 Microsoft Dynamics 365 for Finance and Operations データの接続および読み込み方法の詳細については、「[PowerBI.com からの Power BI コンテンツへのアクセス](power-bi-home-page.md)」を参照してください。
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Power BI コンテンツに含まれるメトリックス
 コンテンツには、レポートのページ一式が含まれます。 各ページは、グラフ、タイル、テーブルとして視覚化される一連のメトリックスで構成されています。 次の表に、**原価管理** Power BI コンテンツの表示の概要を示します。
@@ -84,9 +84,9 @@ CostAggregatedCostStatementEntryEntity のプライマリ データ ソースは
 | |サイト名とカテゴリ名レベル 3 での製造差異 | |
 
 ## <a name="understanding-the-data-model-and-entities"></a>データ モデルおよびエンティティの理解
-Dynamics 365 for Operations データは、**原価管理** Power BI コンテンツのレポート ページに入力するために使用されます。 このデータは、分析用に最適化された Microsoft SQL データベースであるエンティティ格納でステージ完了である集計の測定として表されます。 詳細については、「[エンティティ ストアとの Power BI の統合](power-bi-integration-entity-store.md)」を参照してください。 以下のキー集計の測定は、コンテンツの基準として使用されます。
+Finance and Operations データは、**原価管理** Power BI コンテンツのレポート ページを設定するために使用されます。 このデータは、分析用に最適化された Microsoft SQL データベースであるエンティティ格納でステージ完了である集計の測定として表されます。 詳細については、「[エンティティ ストアとの Power BI の統合](power-bi-integration-entity-store.md)」を参照してください。 以下のキー集計の測定は、コンテンツの基準として使用されます。
 
-| エンティティ            | キー集計の測定 | Dynamics 365 for Operations のデータ ソース | フィールド             | 説明                       |
+| エンティティ            | キー集計の測定 | Finance and Operations のデータ ソース | フィールド             | 説明                       |
 |-------------------|---------------------------|---------------------------------------------|-------------------|-----------------------------------|
 | 明細書エントリ | 差分変更                | CostAggregatedCostStatementEntryEntity      | sum(\[金額\])   | 会計通貨での金額 |
 | 明細書エントリ | 差分変更数量       | CostAggregatedCostStatementEntryEntity      | sum(\[数量\]) |                                   |

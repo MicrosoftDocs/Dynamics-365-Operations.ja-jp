@@ -1,15 +1,15 @@
 ---
 title: "固定資産価値モデルと減価償却簿の結合"
-description: "以前のリリースでは、固定資産には 2 つの評価概念がありました - 価値モデルおよび減価償却簿。 Microsoft Dynamics 365 for Operations 1611 のリリースでは、価値モデル機能および減価償却簿機能は帳簿と呼ばれる単一の概念に統合されました。"
+description: "以前のリリースでは、固定資産には 2 つの評価概念がありました - 価値モデルおよび減価償却簿。 Microsoft Dynamics 365 for Operations (1611) のリリースでは、価値モデル機能および減価償却簿機能は帳簿と呼ばれる単一の概念に統合されました。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 221564
 ms.assetid: 7c68eb7c-8b1a-4dd9-afb8-04b4040e305e
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: saraschi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: ed01fc3c5f2f8b0870f22b39a8b0f6e98596af21
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: add41ceb1dd31d5b5aa26916114d7d7864cb1626
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,7 +30,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-以前のリリースでは、固定資産には 2 つの評価概念がありました - 価値モデルおよび減価償却簿。 Microsoft Dynamics 365 for Operations 1611 のリリースでは、価値モデル機能および減価償却簿機能は帳簿と呼ばれる単一の概念に統合されました。
+以前のリリースでは、固定資産には 2 つの評価概念がありました - 価値モデルおよび減価償却簿。 Microsoft Dynamics 365 for Operations (1611) のリリースでは、価値モデル機能および減価償却簿機能は帳簿と呼ばれる単一の概念に統合されました。
 
 新しい帳簿機能は、以前の価値モデル機能に基づいていますが、前に減価償却簿でのみ提供されたすべての機能も含まれます。 [![価値モデルと減価償却簿機能の統合の帳簿](./media/fixed-assets.png)](./media/fixed-assets.png) この結合のため、すべての固定資産プロセスのためのページ、照会、およびレポートの単一のセットを使用できるようになりました。 このトピックの表は、帳簿の新しい機能とともに、減価償却簿および価値モデルの以前の機能について説明しています。
 

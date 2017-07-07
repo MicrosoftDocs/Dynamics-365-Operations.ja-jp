@@ -3,7 +3,7 @@ title: "Excel 用予算計画テンプレート"
 description: "このトピックでは、予算計画で使用できる Microsoft Excel テンプレートを作成する方法について説明します。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 93aa0aeffad0411542f36e27745f63198c4438b2
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 9f8073a2eb0d1b61d6a168f43eba983d113cf453
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -50,7 +50,7 @@ ms.lasthandoff: 05/25/2017
 [![bpt4](./media/bpt4-1024x615.png)](./media/bpt4.png)
 
 > [!NOTE] 
-> Excel を使用した予算計画データの表示および編集で起こる可能性のある問題を回避するには、同じユーザーが、Dynamics 365 for Operations および Microsoft Dynamics Office アドインのデータ コネクタの両方にログインする必要があります。
+> Excel を使用した予算計画データの表示および編集で起こる可能性のある問題を回避するには、同じユーザーが、Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition および Microsoft Dynamics Office Add-in Data Connector の両方にログインする必要があります。
 
 ## <a name="add-a-header-to-budget-plan-document-template"></a>予算計画ドキュメント テンプレートへのヘッダーの追加
 ヘッダー情報を追加するには、Excel ファイルの一番上の行を選択し、空の行を挿入します。 [**データ コネクタ**] の [**デザイン**] をクリックして Excel ファイルにヘッダー フィールドを追加します。
@@ -79,11 +79,11 @@ Excel ファイルの挿入位置にカーソルを合わせます。 [**ラベ�
 [![bpt12](./media/bpt12-1024x565.png)](./media/bpt12.png)
 
 > [!NOTE] 
-> 式を定義するには、式をスプレッドシートで作成し、[**デザイン**] ウィンドウにコピーします。 Dynamics 365 for Operations のバインドされたテーブルは、通常「AXTable1」と呼ばれます。 たとえば、スプレッドシートの要求 Q1 : 要求 Q4 の列を集計するには、式 = AxTable1\[Request Q1\]+AxTable1\[Request Q2\]+AxTable1\[Request Q3\]+AxTable1\[Request Q4\] となります。
+> 式を定義するには、式をスプレッドシートで作成し、[**デザイン**] ウィンドウにコピーします。 Finance and Operations のバインドされたテーブルは、通常「AXTable1」と呼ばれます。 たとえば、スプレッドシートの要求 Q1 : 要求 Q4 の列を集計するには、式 = AxTable1\[Request Q1\]+AxTable1\[Request Q2\]+AxTable1\[Request Q3\]+AxTable1\[Request Q4\] となります。
 
 以上の手順を繰り返して、[**調整**] 列を挿入します。 この列では式 = AxTable1\[Total request\]\*$I$1 を使用します。 これは、セル I1 の値を取得し、[**合計要求**] 列の値をかけて、調整金額を計算します。
 
-Excel ファイルを保存して閉じます。 Dynamics 365 for Operations に戻り、[**レイアウト**] で、[**テンプレート &gt; アップロード**] をクリックし、予算計画に使用する保存した Excel テンプレートをアップロードします。 
+Excel ファイルを保存して閉じます。 Finance and Operations に戻り、[**レイアウト**] で、[**テンプレート] &gt; [アップロード**] をクリックし、予算計画に使用する保存した Excel テンプレートをアップロードします。 
 
 [![bpt10](./media/bpt10-1024x352.png)](./media/bpt10.png) 
 

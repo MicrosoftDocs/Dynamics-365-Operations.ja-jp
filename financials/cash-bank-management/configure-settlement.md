@@ -3,7 +3,7 @@ title: "決済のコンフィギュレーション"
 description: "トランザクションを決済する方法とタイミングは複雑な題目になります。そのため、業務上の要件を満たすためのパラメータを理解し、適切に定義する必要があります。 この記事は、買掛金勘定、売掛金勘定の両方の決済に使用するパラメータについて説明します。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: CustOpenTrans, CustParameters, VendOpenTrans, VendParameters
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 14601
 ms.assetid: 6b61e08c-aa8b-40c0-b904-9bca4e8096e7
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 2d3015004371aa041a7ee545df9a4c7f0e48ca31
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 059513de66827aa3a839b9eb06973ec4c1549f73
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -34,7 +34,7 @@ ms.lasthandoff: 05/25/2017
 
 トランザクションを決済する方法とタイミングは複雑な題目になります。そのため、業務上の要件を満たすためのパラメータを理解し、適切に定義する必要があります。 この記事は、買掛金勘定、売掛金勘定の両方の決済に使用するパラメータについて説明します。 
 
-このパラメーターは、Microsoft Dynamics 365 for Operations での決算の処理方法に影響を与えます。 決済は、支払票または訂正票に対する請求書を決済するプロセスです。 これらのパラメーターは、[**売掛金勘定パラメーター**] ページと [**買掛金勘定パラメーター**] ページの [**決済**] 領域にあります。
+このパラメーターは、Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition での決算の処理方法に影響を与えます。 決済は、支払票または訂正票に対する請求書を決済するプロセスです。 これらのパラメーターは、[**売掛金勘定パラメーター**] ページと [**買掛金勘定パラメーター**] ページの [**決済**] 領域にあります。
 
 -   **自動決済** – トランザクションの転記時に別の未処理トランザクションに対して自動的に決済する場合は、このオプションを [**はい**] に設定します。 このオプションが [**いいえ**] に設定されている場合、[**トランザクションの決済**] ページを使用して、支払の入力時または入力後に、手動でトランザクションを決済できます。
 -   [**現金割引管理**] – [請求書が過剰支払の場合に現金割引を処理する](cash-discount-handling-overpayments.md) の方法を指定します。 過剰支払の場合、現金割引を減額することができ、現金割引を差額として処理することができ、現金割引を仕入先または顧客の分割払としてそのままにしておくことができます。

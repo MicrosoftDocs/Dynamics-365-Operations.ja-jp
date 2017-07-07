@@ -1,16 +1,16 @@
 ---
 title: "倉庫作業者の管理"
-description: "この記事では、倉庫の従業員によって実行される作業の管理と監視に、Microsoft Dynamics AX を使用する方法について説明します。"
+description: "この記事では、倉庫の従業員によって実行される作業の管理と監視に、Dynamics 365 for Finance and Operations を使用する方法について説明します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: HcmWorker, InventLocation, WHSLaborStandards, WHSWorker, WHSWorkTable, WHSWorkTableListPage
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 72891
 ms.assetid: feaa6f15-49d2-41f5-9b87-453463c52e4e
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: b4e2cb91cac210a659f261c5fcabb5f3643cdbec
+ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
+ms.openlocfilehash: 52753c21862a2955e15140bb1cdb5ef6f6efe31a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -31,7 +31,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-この記事では、倉庫の従業員によって実行される作業の管理と監視に、Microsoft Dynamics AX を使用する方法について説明します。
+この記事では、倉庫の従業員によって実行される作業の管理と監視に、Microsoft Dynamics 365 for Finance and Operations、Enterprise edition を使用する方法について説明します。
 
 倉庫管理で機能を使用すると、すべての倉庫作業員の工程は*作業*呼ばれます。 ピッキング、移動、および手持在庫の棚卸などの作業は、モバイル デバイスを使用して記録されます。 倉庫作業者が作業を実行する前に、作業者は人事管理の作業者と関連付けられる必要があります。 各**作業者**のアカウントは、関連付けられる複数の倉庫のユーザーが使用できます。 これらの作業ユーザーは異なる倉庫で、異なるレベルのさまざまなモバイル デバイス メニューへのアクセスを使用できます。 倉庫の作業ユーザーを、選択した作業者に対しての複数のログオンとして考えることができます。 各作業ユーザーには既定の倉庫があり、作業ユーザーに利用可能なメニュー項目によって特定のワークフローが公開されます。 
 

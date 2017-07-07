@@ -1,26 +1,26 @@
 ---
 title: "会社間請求書"
-description: "この資料では、Microsoft Dynamics 365 for Operations でのプロジェクトのための会社間請求についての情報と例を提供します。"
+description: "この資料では、Microsoft Dynamics 365 for Finance and Operations、Enterprise edition でのプロジェクトのための会社間請求についての情報と例を提供します。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 94153
 ms.assetid: 33e98da7-01c1-4369-923d-aa1c8326cb80
 ms.search.region: Global
-ms.author: kfend
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 65c20479af9d2184bd7f3b92f4c0718553425502
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 205903bb68804a46414410c85eacce03c6df6fc7
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,7 +30,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-この資料では、Microsoft Dynamics 365 for Operations でのプロジェクトのための会社間請求についての情報と例を提供します。
+この資料では、Microsoft Dynamics 365 for Finance and Operations、Enterprise edition でのプロジェクトのための会社間請求についての情報と例を提供します。
 
 組織には、プロジェクトに関する製品およびサービスを相互にやり取りする複数の部門、関連会社や他の法人がある場合があります。 サービスまたは製品を提供する法人を*貸出側法人*と呼び、サービスまたは製品を受ける法人を*借入側法人*と呼びます。 
 
@@ -53,7 +53,7 @@ ms.lasthandoff: 05/25/2017
     -   [**利益率**] – [**価格決定**] フィールドに入力した数値は利益率であり、販売価格に対する割合として表されます。
 
 ## <a name="example-1-set-up-parameters-for-intercompany-invoicing"></a>例 1: 会社間請求のパラメーターの設定
-この例では、USSI は貸出側の法人であり、そのリソースが借入側の法人である FRSI に対して時間を報告しており、FRSI が最終顧客との契約を保持します。 USSI の従業員が報告する時間と経費は、FRSI が生成するプロジェクト請求書に含めることができるます。 さらに、関連会社 (FRSIなど) へ共有の仕入れ先サービスが提供されており、原価が関連会社のプロジェクトに渡される場合、貸出側の法人 (この例では USSI) に基づくトランザクションの 3 番目のソースがあります。 すべての照合請求書と税計算は、Dynamics 365 for Operations で完了します。 
+この例では、USSI は貸出側の法人であり、そのリソースが借入側の法人である FRSI に対して時間を報告しており、FRSI が最終顧客との契約を保持します。 USSI の従業員が報告する時間と経費は、FRSI が生成するプロジェクト請求書に含めることができるます。 さらに、関連会社 (FRSIなど) へ共有の仕入れ先サービスが提供されており、原価が関連会社のプロジェクトに渡される場合、貸出側の法人 (この例では USSI) に基づくトランザクションの 3 番目のソースがあります。 すべての照合請求書と税計算は、Finance and Operations で完了します。 
 
 この例では、FRSI は USSI 法人の顧客で、USSI は FRSI 法人の仕入先である必要があります。 2 つの法人の間で会社間の関係を設定できます。 次の手順では、両方の法人が会社間の請求時に参加できるように、パラメーターを設定する方法を示します。
 

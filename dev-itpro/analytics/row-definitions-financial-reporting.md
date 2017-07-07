@@ -3,7 +3,7 @@ title: "財務諸表デザイナーでの行の定義"
 description: "行定義は、財務レポートの各行の内容を指定する、レポート コンポーネントまたは構成要素です。 行定義は、複数の会社が使用できる構成要素グループを作成するために、列定義、レポート ツリー定義およびレポートの定義と組み合わせることができます。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -11,18 +11,18 @@ ms.technology:
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: ShylaThompson
-ms.search.scope: Management Reporter, Core
+ms.search.scope: Management Reporter, UnifiedOperations, Core
 ms.custom: 68873
 ms.assetid: 2fd7b5da-700f-48cb-9003-90c0d82f818f
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
+ms.search.validFrom: 2016-11-30
+ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: cf0886725e2d8d4031e19810e75755f4306b7c49
+ms.sourcegitcommit: 770a1681e4fa9974b081d0c63a10eb1961f13014
+ms.openlocfilehash: 6d4697af6f7467f25a461fae4e9320402f83b0e3
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -49,7 +49,7 @@ ms.lasthandoff: 05/25/2017
 行定義は、最大 20,000 行の財務分析コードを保有することができ、次の情報を含むことができます:
 
 -   [**現金**] または [**総収益**] などのセクションの見出し、明細行、およびスペースを作成することでレポートに意味を追加する説明用テキストです。
--   Microsoft Dynamics 365 for Operations の分析コード値を含めることができる財務データへのリンク [**注記:**] レポートが生成されるたびに財務分析コード システムからデータを取得するよう行定義を設定できます。
+-   Microsoft Dynamics 365 for Finance and Operations の分析コード値を含めることができる財務データへのリンク **注記:** レポートが生成されるたびに財務分析コード システムからデータを取得するよう行定義を設定できます。
 -   リンクされている財務データに基づく行の合計と式です
 
 通常、行定義の各行には以下の情報タイプの 1 つが含まれています:

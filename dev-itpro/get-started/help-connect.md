@@ -1,9 +1,9 @@
 ---
 title: "ヘルプ システムに接続する"
-description: "このトピックでは、Microsoft Dynamics 365 for Operations のヘルプ システムのコンポーネンツについて説明し、それらを関連付ける方法の概要や、独自のヘルプを作成する方法について説明します。"
+description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations のヘルプ システムのコンポーネンツについて説明し、それらを関連付ける方法の概要や、独自のヘルプを作成する方法について説明します。"
 author: margoc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 86c7cb3961ba5170c32979e77aaa5f506ffac8a1
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: 425e87f8b667b53fcc950730dc4ece6330503d66
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
@@ -32,15 +32,19 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-このトピックでは、Microsoft Dynamics 365 for Operations のヘルプ システムのコンポーネントについて説明します。 これらのコンポーネントを関連付ける方法の概要や、独自のヘルプを作成する方法について説明します。 
+このトピックでは、Microsoft Dynamics 365 for Finance and Operations のヘルプ システムのコンポーネントについて説明します。 これらのコンポーネントを関連付ける方法の概要や、独自のヘルプを作成する方法について説明します。 
 
-<a name="help-architecture"></a>ヘルプ アーキテクチャ
------------------
+## <a name="help-architecture"></a>ヘルプ アーキテクチャ
+次の図では、Finance and Operations のヘルプ システムの一部を示します。 製品内ヘルプ システムは https://docs.microsoft.com の Finance and Operations サイト、Lifecycle Services (LCS) のビジネス プロセス モデラーに格納されているタスク ガイドから記事を参照します。 
+> [!NOTE]
+> 図にアスタリスク (\*) 付きで表示される機能は計画されているもので、まだ使用できません。 [![ヘルプ アーキテクチャ](./media/help-architecture.png)](./media/help-architecture.png)
 
-次の図では、Microsoft Dynamics 365 for Operations のヘルプ システムの一部を示します。 製品内ヘルプ システムは https://docs.microsoft.com の Dynamics 365 for Operations サイト、Lifecycle Services (LCS) のビジネス プロセス モデラーに格納されているタスク ガイドから記事を参照します。 
-**注記:** 図にアスタリスク (\*) 付きで表示される機能は計画されているもので、まだ使用できません。 [![ヘルプ アーキテクチャ](./media/help-architecture.png)](./media/help-architecture.png)
 
 ## <a name="connecting-the-help-system"></a>ヘルプ システムの接続
+> [!NOTE]
+> [**タスク ガイド**] タブは、Microsoft Dynamics 365 for Talent および Microsoft Dynamics 365 for Retail で現在使用できません。 将来のリリースではこの機能を有効にするよう、作業が進行中です。 [Talent] での [はじめに] の経験タスク ガイドは、基本的機能をカバーするために引き続き使用可能です。 [Retail] および [Talent] の両方に関する docs.microsoft.com サイト上 ([docs.microsoft.com/dynamics365/operations](/dynamics365/#pivot=solutions&panel=solutions_operations)) でも利用可能な、手順を追ったヘルプ
+ 
+
 **システム パラメーター** ページを使用して、システム管理者は実装に向けてヘルプ システムのピースを繋ぎ合せます。 [![システム パラメーター フォームとヘルプ設定](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png) **システム パラメーター** ページで次の手順に従います。
 
 > [!IMPORTANT]
@@ -48,21 +52,27 @@ ms.lasthandoff: 05/25/2017
 
 1.  接続する Lifecycle Services プロジェクトを選択します。
 2.  タスク記録を取得する BPM ライブラリ (選択したプロジェクト内) を選択します。
+    - Finance and Operations、Microsoft のコンテンツ用に、Microsoft Dynamics 365 for Finance and Operations の「2017 年 2 月 QPC 統合ライブラリ」を選択します。 
+    - [Retail] 用に、7 月にライブラリをリリースする予定です。 
+    - [Talent] のライブラリを選択する必要はありません。適切なライブラリへの接続が確立されます。 
+
 3.  BPM ライブラリの表示順序を選択します。 これにより、ライブラリからのタスク記録が [**ヘルプ**] ウィンドウに表示される順序が決まります。
 
-これらの手順を完了したら、[**ヘルプ**] ウィンドウを開いて [**タスク ガイド** タブをクリックします。 これで、Dynamics 365 for Operations の現在のページに対応するタスク ガイドを表示できます。 タスク ガイドがない場合は、検索するキーワードを入力できます。
+これらの手順を完了したら、[**ヘルプ**] ウィンドウを開いて [**タスク ガイド** タブをクリックします。 これで、Finance and Operations の現在のページに対応するタスク ガイドを見ることができます。 タスク ガイドがない場合は、検索するキーワードを入力できます。
 
 ### <a name="showing-translated-task-guides"></a>翻訳されたタスク ガイドの表示
 
-翻訳されたタスク ガイドは、2016 年 5 月の APQC 統合ライブラリおよび「はじめに」ライブラリで初めて同梱されました。 Microsoft Dynamics 365 for Operations でローカライズされたタスク ガイドのヘルプを参照するには、5 月のライブラリに接続できることを確認してください。 タスク ガイドの表示言語は、[**オプション**] &gt; [**基本設定**] の [言語の設定] でユーザーごとに制御されます。 
+翻訳されたタスク ガイドは、2016 年 5 月の APQC 統合ライブラリおよび「はじめに」ライブラリで初めて同梱されました。 Finance and Operations でローカライズされたタスク ガイドのヘルプを参照するには、5 月のライブラリに接続できることを確認してください。 タスク ガイドの表示言語は、[**オプション**] &gt; [**基本設定**] の [言語の設定] でユーザーごとに制御されます。 
 
 > [!NOTE]
-> 多くのタスク ガイドが翻訳されていますが、現在 Dynamics 365 for Operations クライアントには翻訳済みのタスク ガイド名は表示されません。 また、現時点では 2016 年 2 月にリリースされたタスク ガイドのみが 5 月のライブラリで翻訳版として利用可能です。 翻訳の追加のあるライブラリ更新をリリース予定です。
+> 多くのタスク ガイドが翻訳されていますが、現在 Finance and Operations クライアントには翻訳済みのタスク ガイド名は表示されません。 また、現時点では 2016 年 2 月にリリースされたタスク ガイドのみが 5 月のライブラリで翻訳版として利用可能です。 翻訳の追加のあるライブラリ更新をリリース予定です。
 > -   タスク ガイドが翻訳されている場合、そのタスク ガイドを開くと、タスク ガイドのすべてのテキストは選択した言語で表示されます。
 > -   タスク ガイドが翻訳されていない場合、それを開くと、一部のテキスト (コントロールのテキスト) のみが選択した言語で表示されます。
 
 ## <a name="creating-custom-help"></a>カスタム ヘルプの作成
-実装を反映するタスク記録を作成して LCS 業務プロセス ライブラリに保存することで、Dynamics 365 for Operations の実装へ向けてカスタム ヘルプを作成できます。 パートナーの場合、ライブラリを会社のライブラリに昇格してソリューションに含める場合、顧客が使用できます。 APQC 統合グローバル ライブラリのコピーを作成して開き、タスクの記録を開いて変更し、変更がある記録を保存します。 詳細については、「[ドキュメントやトレーニングとして使用するタスク記録の作成方法](../user-interface/task-recorder.md)」を参照してください。
+実装を反映するタスク記録を作成して LCS 業務プロセス ライブラリに保存することで、Finance and Operations、および [Retail] へ向けてカスタム ヘルプを作成できます。 [Talent] のカスタム タスク ガイドを作成することはできません。 
+
+パートナーの場合、ライブラリを会社のライブラリに昇格してソリューションに含める場合、顧客が使用できます。 APQC 統合グローバル ライブラリのコピーを作成して開き、タスクの記録を開いて変更し、変更がある記録を保存します。 詳細については、「[ドキュメントやトレーニングとして使用するタスク記録の作成方法](../user-interface/task-recorder.md)」を参照してください。
 
 <a name="see-also"></a>参照
 --------

@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 50651
 ms.assetid: 17f06036-cac2-4c28-8dc6-1dff6b81a7cc
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 3a95ce92fe40f7e1c52bba554b82bd73d627c6b4
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: cf6d4756ae706316a342590ab76b4a5cbdd7e4f9
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -57,11 +57,11 @@ ms.lasthandoff: 05/25/2017
 -   [ 顧客と仕入先の共同作業](vendor-collaboration-work-customers-dynamics-365-operations.md)
 -   [仕入先コラボレーション ユーザーの管理](manage-vendor-collaboration-users.md)
 -   [ 仕入先共同作業の設定と管理](set-up-maintain-vendor-collaboration.md)
--   [ Microsoft Dynamics 365 for Operations の受信委託の在庫デモスクリプト](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/InboundConsignmentInventoryDemoScriptDynamics365Operations) (ホワイト ペーパー)
+-   [ Microsoft Dynamics 365 for Finance and Operations の受信委託の在庫デモ スクリプト](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/InboundConsignmentInventoryDemoScriptDynamics365Operations) (ホワイト ペーパー)
 -   [ 仕入先のコラボレーションを使用する、委託販売の在庫の監視](http://ax.help.dynamics.com/en/wiki/monitor-consignment-inventory-using-vendor-collaboration/)
--   [仕入先ポータルを使用して、仕入先と連携](collaborate-vendors-vendor-portal.md)  (Dynamics 365 for Operations の 2016 年 2 月と 2016 年 5 月のバージョンのみ)
--   [仕入先のポータル ユーザーのセキュリティのコンフィギュレーション](configure-security-vendor-portal-users.md) (Dynamics 365 for Operations の 2016 年および 2016 年 5 月バージョンのみ)
--   [Microsoft Dynamics 365 for Operations アプリケーションの仕入先コラボレーション モバイル ワークスペース](vendor-collaboration-mobile-workspace.md)
+-   [ 仕入先のポータルを使用した仕入先との協力](collaborate-vendors-vendor-portal.md) (Dynamics AX の 2016 年 2 月と 2016 年 5 月バージョンのみ)
+-   [ 仕入先のポータル ユーザー向けのセキュリティのコンフィギュレーション](configure-security-vendor-portal-users.md) (Finance and Operations の 2016 年および 2016 年 5 月バージョンのみ)
+-   [Microsoft Dynamics 365 for Finance and Operations アプリケーションの仕入先コラボレーション モバイル ワークスペース](vendor-collaboration-mobile-workspace.md)
 
 ## <a name="procurement-product-management"></a>調達製品管理
 -   [調達カタログ](procurement-catalogs.md)
@@ -92,8 +92,8 @@ ms.lasthandoff: 05/25/2017
 
 ## <a name="product-receipt-and-invoicing"></a>製品受領書と請求書
 -   [発注書に対応する製品受領書](product-receipt-against-purchase-orders.md)
--   [仕入先請求書の概要](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/operations/supply-chain/toc.json)
--   [仕入先転記プロファイル](/dynamics365/operations/financials/accounts-payable/vendor-posting-profiles?toc=/dynamics365/operations/supply-chain/toc.json)
+-   [仕入先請求書の概要](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+-   [仕入先転記プロファイル](/dynamics365/unified-operations/financials/accounts-payable/vendor-posting-profiles?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 
 ## <a name="procurement-and-sourcing-workflows"></a>調達ワークフロー
 -   [調達の概要](procurement-sourcing-overview.md)

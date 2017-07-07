@@ -1,15 +1,15 @@
 ---
 title: "購買先支出分析 Power BI コンテンツ"
-description: "このトピックでは、Microsoft Power BI の購買先支出分析コンテンツ パックについて説明します。 コンテンツ パックに含まれているレポートにアクセスする方法を説明し、コンテンツ パックを作成するために使用されるデータ モデルおよびエンティティについての情報を提供します。"
-author: YuyuScheller
+description: "このトピックでは、購買と支出の分析 Power BI コンテンツの内容について説明します。 コンテンツに含まれているレポートにアクセスする方法を説明し、コンテンツを作成するために使用するデータ モデルおよびエンティティについての情報を提供します。"
+author: FrankDahl
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
-audience: Application User
-ms.search.scope: Operations, Core
+audience: Application User, IT Pro
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 265434
 ms.assetid: 3cd9dfce-2687-4303-bc78-349e7cb5ea75
 ms.search.region: global
@@ -17,10 +17,10 @@ ms.author: fdahl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: ad0ee95113d05710cccc1a5e9d215b38244c2047
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: daba17aed7e6cc475a16d6100c5c99ee747ca048
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -29,23 +29,22 @@ ms.lasthandoff: 05/25/2017
 
 [!include[banner](../includes/banner.md)]
 
+このトピックでは、[**購買と支出の分析**] Microsoft Power BI コンテンツの内容について説明します。 Power BI レポートにアクセスする方法を説明し、コンテンツを作成するために使用するデータ モデルおよびエンティティについての情報を提供します。
 
-このトピックでは、Microsoft Power BI の購買先支出分析コンテンツ パックについて説明します。 コンテンツ パックに含まれているレポートにアクセスする方法を説明し、コンテンツ パックを作成するために使用されるデータ モデルおよびエンティティについての情報を提供します。
+## <a name="overview"></a>概要
 
-<a name="overview"></a>概要
---------
-
-Microsoft Power BI の購買先支出分析コンテンツ パックは購買部門のマネージャと予算を担当しているマネージャのために作成されました。 購買先支出を監視するために設計されました。 Microsoft Dynamics 365 for Operations からの購買トランザクション データを使用して、会社全体の購買数の集計ビュー、仕入先および製品の購買先支出の内訳の両方を提供します。 レポートでは時間経過に伴う購買支出の変化が強調表示されています。 そのため、このレポートは、個々の仕入先や製品の積極的および消極的な支出動向を管理者に警告するために使用することができます。 チャートは、様々な調達カテゴリおよび仕入先グループの購買支出を示します。 カテゴリ マネージャおよび地域マネージャにとって、これらのチャートは支出行動の変化を識別するのに役立つかもしれません。 このコンテンツ パックを使用して、購買部門のマネージャと予算を担当しているマネージャは、次の方法で購入支出を分析できます。
+[**購買支出の分析**] Power BI コンテンツは、予算を担当する購買部門のマネージャーおよびマネージャーが購買支出に留意するように設計されています。 マネージャーは、以下の方法で購買支出を分析できます:
 
 -   会計年度の購買 (仕入先グループと個々の仕入先、調達カテゴリと個々の製品、仕入先の場所)
 -   前年比購買の変化 (仕入先グループと調達カテゴリ)
 
-## <a name="accessing-the-content-pack"></a>コンテンツ パックへのアクセス
-購買先支出分析 Power BI コンテンツ パックは、Microsoft Dynamics Lifecycle Services (LCS) の実装資産として公開され、Microsoft Dynamics 365 for Operations からアクセスできます。 Power BI レポートにどのようにアクセスし、開くかについての詳細は、[Microsoft およびパートナーからの LCS での Power BI コンテンツ](power-bi-content-microsoft-partners.md) を参照してください。
-注記: KB 4011327 は、この Power BI コンテンツの前提条件となります。 Lifecycle Services にサインインすると、次のサポート技術情報にアクセスできます: https://fix.lcs.dynamics.com/issue/results/?q=kb4011327です。
+コンテンツは購買トランザクション データを使用して、会社全体の購買数の集計ビュー、仕入先および製品の購買先支出の内訳の両方を提供します。 レポートでは時間経過に伴う購買支出の変化が強調表示されています。 そのため、このレポートは、個々の仕入先や製品の積極的および消極的な支出動向を管理者に警告するために使用することができます。 また、チャートは、様々な調達カテゴリおよび仕入先グループの購買支出を示します。 それゆえ、カテゴリおよび地域マネージャーは、チャートを使用して支出行動の変化を識別することができます。
 
-## <a name="metrics-that-are-included-in-the-content-pack"></a>コンテンツ パックに含まれるメトリックス
-購買先支出分析コンテンツ パックには、一連のメトリックスで構成されるレポートが含まれます。 これらのメトリックスはグラフ、タイル、表として視覚化されます。 次の表は、コンテンツ パックでの視覚化の概要を示しています。
+## <a name="accessing-the-power-bi-content"></a>Power BI コンテンツへのアクセス
+Microsoft Dynamics 365 for Finance and Operations Enterprise エディション (2017 年 7 月) を使用している場合は、[**購買支出の分析**] Power BI コンテンツは、[**購買支出の分析**]ページ ([**調達**] > [**照会およびレポート**] > [**購買パフォーマンスの分析**] > [**購買支出の分析**]) に表示されます。 
+
+## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Power BI コンテンツに含まれるメトリックス
+[**購買と支出の分析**] Power BI コンテンツには、一連のメトリックスで構成されるレポートが含まれます。 これらのメトリックスはグラフ、タイル、表として視覚化されます。 次の表は、視覚エフェクトの概要を示します。
 
 <table>
 <colgroup>
@@ -133,14 +132,26 @@ Microsoft Power BI の購買先支出分析コンテンツ パックは購買部
 
 \* 今年度と昨年度の購買、調達カテゴリによる成長
 
+## <a name="extending-the-power-bi-content"></a>Power BI コンテンツの拡張
+Microsoft Dynamics Lifecycle Services (LCS) で利用できるコンテンツ パックを使用すると、Microsoft Dynamics 365 にログインしない人々に関する優れた分析ができます。 ほかのレポートまたはビジュアルを含めるよう、これらのコンテンツ パックを変更できます。次いで分析のためにコンテンツ パックを Power BI.com テナントに発行します。 
+
+LCS の共有資産ライブラリに [**購買と支出の分析**] Power BI コンテンツがあります。 コンテンツのダウンロード方法および組織で実装する方法の詳細については、「[Microsoft およびパートナーからの LCS での Power BI コンテンツ](power-bi-content-microsoft-partners.md)」を参照してください。 Power BI コンテンツの実装方法を示すデモを視聴するには、「[Microsoft の Power BI コンテンツおよび Dynamics Lifecycle Services のパートナー](https://mix.office.com/watch/9puyb1b2xs1w)」の Office Mix を参照してください。
+
+ご使用のバージョンの Microsoft Dynamics 365 に適用する [**購買と支出の分析**] コンテンツをダウンロードしてください。
+
+> [!NOTE]
+> Microsoft Dynamics 365 for Operations バージョン 1611 を使用している場合、この Power BI コンテンツの前提条件はサポート技術情報 4011327 です。 LCS にサインインすると、https://fix.lcs.dynamics.com/issue/results/?q=kb4011327 でサポート技術情報にアクセスできます。
+
 ## <a name="data-model-and-entities"></a>データ モデルおよびエンティティ
-Dynamics 365 for Operations のデータは、購買先支出分析コンテンツ パックのレポートに使用されます。 このデータは、分析用に最適化された Microsoft SQL データベースであるエンティティ格納でステージ完了である集計の測定として表されます。 エンティティ ストアに関する詳細については、[Dynamics におけるエンティティ ストアとの Power BI の統合](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/) ブログ投稿を参照してください。 このコンテンツ パックの集計の測定は Microsoft Dynamics AX 2012 および Microsoft Dynamics AX 2012 R3 の購買キューブに使用できた集計の測定のサブセットです。 エンティティ格納でキューブの集計の測定を公開するには、それらを配置可能にする必要があります。 詳細については、[Dynamics におけるエンティティ ストアとの Power BI の統合](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/) ブログ投稿で、集計の測定をエンティティ格納へ公開する手順を参照してください。 次のキー集計の測定は、請求明細行エンティティから直接使用でき、コンテンツ パックの基準として使用されます。
+次のデータは、[**購買と支出の分析**] Power BI コンテンツのレポート ページに入力するために使用されます。 このデータは、エンティティ ストアで実施される集計の測定として表されます。 エンティティ ストアは、分析に最適化された Microsoft SQL Server データベースです。 詳細については、「[エンティティ ストアとの Power BI の統合](power-bi-integration-entity-store.md)」を参照してください。
 
-| エンティティ        | キー集計の測定 | Dynamics 365 for Operations のデータ ソース | フィールド              | 説明                           |
-|---------------|----------------------------|---------------------------------------------|--------------------|---------------------------------------|
-| 請求明細行 | 購買                   | VendInvoiceTrans                            | 合計 (LineAmountMST) | 会計通貨での金額 |
+このコンテンツの集計の測定は Microsoft Dynamics AX 2012 および Microsoft Dynamics AX 2012 R3 の購買キューブに使用できた集計の測定のサブセットです。 エンティティ格納でキューブの集計の測定を公開するには、それらを配置可能にする必要があります。 詳細については、「[エンティティ ストアとの Power BI の統合](power-bi-integration-entity-store.md) ブログ投稿で、集計の測定をエンティティ格納へ公開する手順」を参照してください。 次のキー集計の測定は、請求明細行エンティティから直接使用でき、コンテンツの基準として使用されます。
 
-次の表は、請求明細行のエンティティのコンテンツ パックで計算される主要な測定単位を示します。
+| エンティティ        | キー集計の測定 | データ ソース                                 | フィールド              | 説明                            |
+|---------------|----------------------------|---------------------------------------------|--------------------|----------------------------------------|
+| 請求明細行 | 購買                   | VendInvoiceTrans                            | 合計 (LineAmountMST)  | 会計通貨での金額。 |
+
+次の表は、請求明細行のエンティティのコンテンツで計算される主要な測定単位を示します。
 
 | 基準               | 計算                                                                                         |
 |-----------------------|-----------------------------------------------------------------------------------------------------|
@@ -148,7 +159,7 @@ Dynamics 365 for Operations のデータは、購買先支出分析コンテン�
 | 昨年度の購買    | 昨年購買 = CALCULATE(合計 ('請求明細行'\[購買\]), SAMEPERIODLASTYEAR(日付\[日付\])) |
 | 前年比購買成長   | 前年比購買成長 = \[今年度の購買\] – \[昨年度の購買\]                            |
 
-コンテンツ パックの以下のキー分析コードは、より高い粒度や深い分析洞察を達成できるように、集計の測定をスライスするフィルターとして使用されます。
+コンテンツの以下のキー分析コードは、より高い粒度を達成し深い分析洞察を取得できるように、集計の測定をスライスするフィルターとして使用されます。
 
 | エンティティ                 | 属性の例                                |
 |------------------------|-------------------------------------------------------|
@@ -158,17 +169,5 @@ Dynamics 365 for Operations のデータは、購買先支出分析コンテン�
 | 法人         | 法人名                                     |
 | 日付                  | 日付、年度相殺                                    |
 
-既定では、コンテンツ パックは、現在の暦年のデータが表示されます。 ただし、レポートのフィルタ セクションの日付のフィルタを変更できます。 会社フィルターを変更することもできます。
-
-## <a name="additional-resources"></a>追加リソース
-エンティティと建物 Power BI の内容に関連する役立つリンクを次に示します:
-
--   [データ エンティティ](..\data-entities\data-entities.md)
--   [組織のコンテンツ パックの作成](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
--   [Power BI を使用したデータのモデル化](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
--   [Power BI タイルをワークスペースへ追加する](configure-power-bi-integration.md)
-
-
-
-
+既定では、コンテンツは、現在の暦年のデータが表示されます。 ただし、レポートのフィルタ セクションの日付のフィルタを変更できます。 会社フィルターを変更することもできます。
 

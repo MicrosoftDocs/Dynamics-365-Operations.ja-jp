@@ -1,27 +1,27 @@
 ---
 title: "コスト管理モバイル ワークスペース"
-description: "このトピックでは、Microsoft Dynamics 365 for Operations モバイル アプリに使用可能な、原価管理モバイル ワークスペースについて説明します。 このワークスペースにより、コスト センターの管理者は時間や場所に関わらず、コスト センターのパフォーマンスに関する情報を表示できます。"
+description: "このトピックでは、原価管理モバイル ワークスペースについての情報を提供します。 このワークスペースにより、コスト センターの管理者は時間や場所に関わらず、コスト センターのパフォーマンスに関する情報を表示できます。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 05/10/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: annbe
-ms.search.scope: Operations, Core
+ms.reviewer: sericks
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 267114
 ms.assetid: 612f2988-b2b9-420d-9825-40b99dc0e204
 ms.search.region: global
-ms.author: yuyus
+ms.author: aevengir
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 09383c24b0dd2ad61a836f6c8dc97f4389915772
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: dbedf75a6f61a9e2bc644056f0dd1e7499cedc42
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,56 +30,62 @@ ms.lasthandoff: 05/25/2017
 
 [!include[banner](../includes/banner.md)]
 
+このトピックでは、**原価管理** モバイル ワークスペースについての情報を提供します。 このワークスペースにより、コスト センターの管理者は時間や場所に関わらず、コスト センターのパフォーマンスに関する情報を表示できます。
 
-このトピックでは、Microsoft Dynamics 365 for Operations モバイル アプリに使用可能な、原価管理モバイル ワークスペースについて説明します。 このワークスペースにより、コスト センターの管理者は時間や場所に関わらず、コスト センターのパフォーマンスに関する情報を表示できます。 
+このモバイル ワークスペースは、Microsoft Dynamics 365 for Unified Operations モバイル アプリで使用するためのものです。
 
-<a name="overview-of-the-cost-controlling-mobile-workspace"></a>原価管理モバイル ワークスペースの概要
--------------------------------------------------
-
-**原価管理** モバイル ワークスペースは、予算原価に対する実際原価を比較して、原価部門の現在のパフォーマンスのインスタント ビューを提供します。 個々の原価要素のステータスにドリル ダウンすることができます。 
+## <a name="overview"></a>概要
+**原価管理** モバイル ワークスペースは、予算原価に対する実際原価を比較して、原価部門の現在のパフォーマンスのインスタント ビューを提供します。 個々のコスト要素のステータスにドリル ダウンすることができます。
 
 たとえば、従業員は国際会議への招待を受けますが、組織はすべての旅費を負担する必要があります。 その従業員は、会議に出席できるかどうか管理者に尋ねます。 管理者は、すぐに携帯電話で **原価管理** モバイル ワークスペースを開き、会議に出席する予算があるかどうかを確認します。
 
 ### <a name="data-security"></a>データ セキュリティ
+**原価管理** モバイル ワークスペースのデータは、ユーザー資格情報で保護されます。 原価部門管理者は、自身の原価部門のデータだけを表示することができます。 アクセス レベルのセキュリティは、**原価会計** モジュール内で管理されます。
 
-**原価管理** モバイル ワークスペースのデータは、ユーザー資格情報で保護されます。 原価部門管理者は、自身の原価部門のデータだけを表示することができます。 アクセス レベルのセキュリティは、**原価会計** モジュール内で管理されます。 
-
-原価経理担当は、**原価会計** モジュールで **原価管理** モバイル ワークスペースのコンフィギュレーションを定義します。 ワークスペースを Microsoft Dynamics 365 for Operations モバイル アプリに公開すると、このアプリで使用できるようになります。 これで組織内のすべての原価部門管理者が同じ形式でデータを表示できるようになります。
+原価経理担当は、**原価会計** モジュールで **原価管理** モバイル ワークスペースのコンフィギュレーションを定義します。 ワークスペースをモバイル アプリに公開すると、このアプリで使用できるようになります。 これで組織内のすべての原価部門管理者が同じ形式でデータを表示できるようになります。
 
 ### <a name="actions-views-and-links"></a>操作、ビュー、リンク
-
-Dynamics 365 for Operations アプリ用の **原価管理** モバイル ワークスペースでは、次の操作、ビュー、リンクを使用できます。
+**原価管理** モバイル ワークスペースでは、次のアクション、ビュー、およびリンクが提供されます。
 
 -   **アクション:**
+
     -   レイアウトを選択するには、**構成の選択** を使用します。
-    -   データをフィルター処理する原価部門を選択するには、**原価オブジェクトの選択** を使用します。 **注:** 一覧に表示される原価部門は、**原価会計** モジュールで許可されるアクセスによって異なります。
--   **ビュー:** 選択されたアクションと **原価計算** モジュールの設定に基づいて、カードに関する以下の情報を表示することができます。
-    -   実際対予算 (現在の期間)
-    -   実際対修正予算 (現在の期間)
+    -   データをフィルター処理する原価部門を選択するには、**原価オブジェクトの選択** を使用します。
+    
+        > [!NOTE]
+        > 一覧に表示されるコスト センターは、**原価会計** モジュールで許可されるアクセスによって異なります。
+
+-   **ビュー:** 選択されたアクションと **原価会計** モジュールの設定に基づいて、カードに関する以下の情報を表示することができます。
+
+    -   実績対予算 (現在の期間)
+    -   実績対修正予算 (現在の期間)
     -   実際対予算 (前の期間)
     -   実際対修正予算 (前の期間)
     -   実際対予算 (年度累計)
     -   実際対修正予算 (年度累計)
 
     すべてのカードに表示される金額は、実績、予算、差異、差異の割合 (％) です。
+
 -   **リンク:**
+
     -   現在の期間の詳細
     -   前の期間の詳細
     -   年度累計の詳細
 
-    リンクを選択すると、カードが原価要素ごとに表示されます。 すべてのカードに表示される金額は、実績、予算、予算差異、予算差異 %、修正予算、修正予算差異、修正予算差異 % です。 
+    リンクを選択すると、カードが原価要素ごとに表示されます。 すべてのカードに表示される金額は、実績、予算、予算差異、予算差異 %、修正予算、修正予算差異、修正予算差異 % です。
     
-    [![原価要素のカード](./media/cost-controlling.png)](./media/cost-controlling.png)
+    [![原価要素のカード](./media/Cost-controlling.png)](./media/Cost-controlling.png)
 
 ## <a name="prerequisites"></a>前提条件
-**原価管理** モバイル ワークスペースを使用する前に、システム管理者が次の前提条件を満たしていることを確認してください。
+組織に配置されている Microsoft Dynamics 365 のバージョンに基づいて、前提条件は異なります。
+
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update"></a>Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition 2017 年 7 月の更新プログラムを使用している場合の前提条件
+Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition 2017 年 ７ 月の更新プログラムを組織に配置している場合、システム管理者は **原価管理** モバイル ワークスペースを公開する必要があります。 手順については、「[モバイル ワークスペースの公開](/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace)」を参照してください。
+
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Microsoft Dynamics 365 for Operations バージョン 1611 およびプラットフォーム更新プログラム 3 以降を使用している場合の前提条件
+Microsoft Dynamics 365 for Operations バージョン 1611 およびプラットフォーム 更新プログラム 3 以降を組織に配置している場合、システム管理者は次の前提条件を満たす必要があります。
 
 <table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>前提条件</th>
@@ -89,50 +95,44 @@ Dynamics 365 for Operations アプリ用の **原価管理** モバイル ワー
 </thead>
 <tbody>
 <tr class="odd">
-<td>Dynamics 365 for Operations バージョン 1611 およびプラットフォーム更新プログラム 3 以降を実装する必要があります。</td>
+<td>KB 4013633 を実装します。</td>
 <td>システム管理者</td>
-<td>Dynamics 365 for Operations をまだ組織に配置していない場合、システム管理者は <a href="/dynamics365/operations/dev-itpro/deployment/deploy-demo-environment">Microsoft Dynamics 365 for Operations デモ環境の配置</a> を確認する必要があります。</td>
+
+<td>KB 4013633 は、<strong>原価管理</strong> モバイル ワークスペースを含む X++ の更新またはメタデータ修正プログラムです。 KB 4013633 を実装するには、システム管理者は次の手順に従う必要があります。
+<ol>
+<li><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/download-hotfix-lcs">Microsoft Dynamics Lifecycle Services (LCS) からメタデータ修正プログラムをダウンロードします</a>。</li>
+<li><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">メタデータ修正プログラムをインストールします。</a></li>
+<li><strong>SCMMobile</strong> モデルを含む<a href="/dynamics365/unified-operations/dev-itpro/deployment/create-apply-deployable-package">配置可能パッケージを作成し</a>、配置可能パッケージを LCS にアップロードします。</li>
+<li><a href="/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system">配置可能パッケージを適用します</a>。</li>
+
+</ol></td>
 </tr>
 <tr class="even">
-<td>KB 4013633 を実装する必要があります。</td>
+<td><strong>原価管理</strong> モバイル ワークスペースを公開します。</td>
 <td>システム管理者</td>
-<td>KB 4013633 (X++ アップデートまたはメタデータ修正プログラム) には、サプライチェーン管理用の 4 つのモバイルワーク スペースが含まれています。 KB 4013633 を実装するには、システム管理者は次の手順に従う必要があります。
-<ol>
-<li>Microsoft Dynamics Lifecycle Services (LCS) から KB 4013633 をダウンロードします。</li>
-<li><a href="/dynamics365/operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">メタデータ修正プログラムをインストールします。</a></li>
-<li><strong>SCMMobile</strong> モデルを含む<a href="/dynamics365/operations/dev-itpro/deployment/create-apply-deployable-package">配置可能パッケージを作成し</a>、配置可能パッケージを LCS にアップロードします。</li>
-<li>Dynamics 365 for Operations システムに<a href="/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">配置可能パッケージを適用</a>します。</li>
-</ol></td>
-</tr>
-<tr class="odd">
-<td><strong>原価管理</strong>モバイル ワークスペースを Dynamics 365 for Operations モバイル アプリに公開しておく必要があります。</td>
-<td>システム管理者</td>
-<td><ol>
-<li>ブラウザーで、Dynamics 365 for Operations を開始します。</li>
-<li><strong>システム パラメーター</strong>ページで、<strong>モバイル ワークスペースの管理</strong>を選択します。</li>
-<li><strong>原価オブジェクトの概要</strong>ワークスペースを選択します。</li>
-<li><strong>モバイル ワークスペースの公開</strong>をクリックします。</li>
-</ol></td>
+<td>「<a href="/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace">モバイル ワークスペースの公開</a>」を参照してください。</td>
 </tr>
 </tbody>
 </table>
 
-## <a name="download-and-install-the-dynamics-365-for-operations-mobile-app"></a>Dynamics 365 for Operations モバイル アプリをダウンロードしてインストールする
-モバイル アプリ ストアで、Microsoft Dynamics 365 for Operations アプリをダウンロードおよびインストールします。
 
--   Android 用: [Google Play ストアの Dynamics 365 for Operations](https://play.google.com/store/apps/details?id=com.microsoft.dynamics365.operations.mobile)
--   iPhone 用: [iTunes アプリ ストアの Dynamics 365 for Operations](https://itunes.apple.com/us/app/dynamics-365-for-operations/id1180836730?mt=8)
+## <a name="download-and-install-the-mobile-app"></a>モバイル アプリのダウンロードとインストール
+Dynamics 365 for Unified Operations モバイル アプリをダウンロードしてインストールします。
 
-## <a name="sign-in-to-the-dynamics-365-for-operations-mobile-app"></a>Dynamics 365 for Operations モバイル アプリにサインインする
+-   [Android フォン用](https://go.microsoft.com/fwlink/?linkid=850662)
+-   [iPhone 用](https://go.microsoft.com/fwlink/?linkid=850663)
+
+## <a name="sign-in-to-the-mobile-app"></a>モバイル アプリにログインします。
+
 1.  モバイル デバイスでアプリを起動します。
-2.  Dynamics 365 for Operations URL を入力します。
-3.  サインインする会社を入力します。 たとえば、「**USMF**」と入力します。
-4.  最初にサインインしたときに、Dynamics 365 for Operations アカウントのユーザー名とパスワードが要求されます。 資格情報を入力します。
-5.  サインインすると、会社の使用できるワークスペースが表示されます。 システム管理者が後で新しいワークスペースを公開すると、モバイル ワークスペースのリストを更新することができます。 
+2.  Dynamics 365 の URL を入力します。
+3.  初めてサインインすると、ユーザー名とパスワードを要求されます。 資格情報を入力します。
+4.  サインインすると、使用可能な会社のワークスペースが表示されます。 なお、システム管理者が後で新しいワークスペースを公開すると、モバイル ワークスペースのリストを更新する必要があります。
 
-    [![プルして更新](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+[![プルして更新](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## <a name="view-the-performance-of-your-cost-center-by-using-the-cost-controlling-mobile-workspace"></a>原価管理モバイル ワークスペースを使用して、原価部門のパフォーマンスを表示します。
+
 1.  モバイル デバイスで、[**原価管理**] ワークスペースを選択します。
 2.  [**原価オブジェクト管理**] を選択します。
 3.  **操作** を選択します。
@@ -145,8 +145,5 @@ Dynamics 365 for Operations アプリ用の **原価管理** モバイル ワー
 10. **現在の期間の詳細を** リンクを選択します。
 11. 個々の原価要素のパフォーマンスを表示します。
 12. 特定の原価要素も検索できます。
-
-
-
 
 

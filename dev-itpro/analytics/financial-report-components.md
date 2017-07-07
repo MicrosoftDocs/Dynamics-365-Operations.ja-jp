@@ -3,7 +3,7 @@ title: "財務諸表コンポーネント"
 description: "この記事では、財務諸表でコンポーネント、またはレポート定義の構成要素ブロックを使用する方法について説明します。 これらの構成要素には、行定義、列定義、およびレポート ツリー定義が含まれます。 記事では、構成要素を整理およびロックする方法、および構成要素グループを操作する方法について説明します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: ShylaThompson
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 59071
 ms.assetid: a201cfcb-1672-45f6-897d-2db2dd181d9a
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 057c338c11518b3a1081223e432cbfd109d5e679
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 5c09b1fc061f95cd78e9f18c2bdf846fdbfc7cf1
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -105,7 +105,7 @@ ms.lasthandoff: 05/25/2017
 
 ### <a name="export-a-building-block-group"></a>構成要素グループのエクスポート
 
-構成要素グループ、または構成要素グループの特定のレポート構成要素をエクスポートすることができます。 エクスポートされた構成要素グループをバックアップとして使用できます。 構成要素グループまたは Dynamics 365 for Operations のインストールの間でエクスポートしたデータをコピーすることもできます。 レポート デザイナーには、参照されているフォント スタイルおよび構成要素グループとともに分析コード セットが含まれています。
+構成要素グループ、または構成要素グループの特定のレポート構成要素をエクスポートすることができます。 エクスポートされた構成要素グループをバックアップとして使用できます。 構成要素グループまたは Finance および Operations のインストールの間でエクスポートしたデータをコピーすることもできます。 レポート デザイナーには、参照されているフォント スタイルおよび構成要素グループとともに分析コード セットが含まれています。
 1.  レポート デザイナーの [**会社**] メニューで、[**構成要素グループ** をクリックします。
 2.  [**構成要素グループ**] ダイアログ ボックスで、エクスポートする構成要素グループを選択し [**エクスポート**] をクリックします。
 3.  [**エクスポート**] ダイアログ ボックスで、エクスポートするレポート定義を選択します:

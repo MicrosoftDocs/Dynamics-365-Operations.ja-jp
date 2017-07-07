@@ -1,27 +1,28 @@
 ---
 title: "販売と利益幅のパフォーマンスの監視"
-description: "Microsoft Dynamics 365 for Operations を使用して、リアル タイムに販売と利益幅のパフォーマンスを監視できます。"
+description: "Microsoft Dynamics 365 for Retail を使用して、リアル タイムに販売と利益幅のパフォーマンスを監視できます。"
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.reviewer: josaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 85123
 ms.assetid: ddd15820-c3e6-4607-819e-8cef744ce9c9
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 51911a5de6a5d55c70a8a03ac75b06f9b5469dd0
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: 6c299a1297e5721119ecfb5208453f8739fb7ad0
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
@@ -31,9 +32,9 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](includes/banner.md)]
 
 
-Microsoft Dynamics 365 for Operations を使用して、リアル タイムに販売と利益幅のパフォーマンスを監視できます。
+Microsoft Dynamics 365 for Retail を使用して、リアル タイムに販売と利益幅のパフォーマンスを監視できます。
 
-Dynamics 365 for Operations の一部として、販売と利益幅のパフォーマンスを次の分析コードの組織階層のさまざまなレベルでリアル タイムに監視できます。
+Dynamics 365 for Retail の一部として、販売と利益幅のパフォーマンスを次の分析コードの組織階層のさまざまなレベルでリアル タイムに監視できます。
 
 -   製品
 -   カテゴリ
@@ -46,10 +47,10 @@ Dynamics 365 for Operations の一部として、販売と利益幅のパフォ�
 
 また、階層グリッド構造を活用する 2 つの固有のレポートにより、ユーザーは既定の小売製品カテゴリ階層でトップ カテゴリ ノードからカテゴリの個々のリーフ ノードへドリルダウンして、販売と利益幅のパフォーマンスを監視することができます。 ユーザーは、小売レポート階層のために既定の組織階層として定義された組織階層で、上位の作業単位から個々のチャンネルにドリルダウンすることもできます。 次の場所のいずれかからレポートを開くことができます。
 
--   [**小売店舗の管理**] > [ワークスペース Dynamics 365 for Operations] &gt; [**小売とコマース**] &gt; [**チャンネル**] &gt;  [**小売店舗の管理**] &gt; [**レポート**]
--   [**カテゴリと製品の管理**] > [ワークスペース Dynamics 365 for Operations] &gt; [**小売とコマース**] &gt; [**製品とカテゴリ**] &gt; [**小売店舗の管理**] &gt; [**レポート**]
--   [**価格設定および割引の管理**] > [ワークスペース Dynamics 365 for Operations] &gt; [**小売とコマース**] &gt; [**価格決定と割引**] &gt; [**小売店舗の管理**] &gt; [**レポート**]
--   [**照会およびレポート**] > [Dynamics 365 for Operations セクション] &gt; [**小売とコマース**] &gt; [**照会およびレポート**] &gt; [**売上レポート**]
+-   [**小売店舗管理**] ワークスペース &gt; [**小売**] &gt; [**チャンネル**] &gt; [**小売店舗管理**] &gt; [**レポート**]
+-   [**カテゴリと製品の管理**] ワークスペース &gt; [**小売**] &gt; [**製品とカテゴリ**] &gt; [**小売店舗の管理**] &gt; [**レポート**]
+-   [**価格設定および割引に管理**] ワークスペース &gt; [**小売**] &gt; [**価格決定と割引**] &gt; [**小売店舗の管理**] &gt; [**レポート**]
+-   [**照会とレポート**] セクション &gt; [**小売**] &gt; [**照会とレポート**] &gt; [**売上レポート**]
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: "組織管理ホーム ページ"
-description: "このトピックでは、組織での Microsoft Dynamics 365 for Operations の使用に役立つリソースを示します。"
+description: "このトピックでは、組織での Microsoft Dynamics 365 for Fianance と Operations の使用に役立つリソースを示します。"
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 20421
 ms.assetid: 7aa24a03-d172-47e9-81f8-ebd39e80bc60
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 70fe2361e6c6a2ba07f9be2b30169dd071301300
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 889a9ce79d4599a60a4503d7876276a1452a5465
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,7 +30,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-このトピックでは、組織での Microsoft Dynamics 365 for Operations の使用に役立つリソースを示します。
+このトピックでは、組織での Microsoft Dynamics 365 for Fianance と Operations の使用に役立つリソースを示します。
 
 <a name="number-sequences"></a>番号順序
 ----------------

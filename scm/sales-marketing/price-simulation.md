@@ -3,7 +3,7 @@ title: "価格のシミュレーション"
 description: "この記事では、見積の価格シミュレーションについて説明します。 価格シミュレーションを使用すると、見積プロセス中に将来の販売価格に対する控除の影響を評価してから、特定の価格を確約することができます。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: SalesQuotationPriceSimulation
 audience: Application User
 ms.reviewer: YuyuScheller
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 12254
 ms.assetid: 92be7c85-73cf-4f77-833c-d37ce779a031
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 293f09ca8758c0b1a66614eb9c75ca266b044fe7
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: c5381ab48e394702c2423de7a5b5cb9166993388
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -54,7 +54,7 @@ ms.lasthandoff: 05/25/2017
 
 ### <a name="types-of-discounts-in-trade-agreements"></a>売買契約の割引タイプ
 
-Microsoft Dynamics 365 for Operations の売買契約には、4 つのタイプの価格割引を設定できます。 これらの割引は異なる品目、顧客、または価格グループに対して設定でき、割引を日付で制限できます。 価格シミュレーションの実行時に計算ミスを防ぐには、売買契約を考慮する必要があります。 売買契約で扱う 4 タイプの割引は次のとおりです。
+Microsoft Dynamics 365 for Finance and Operations の売買契約には、4 つのタイプの価格割引を設定できます。 これらの割引は異なる品目、顧客、または価格グループに対して設定でき、割引を日付で制限できます。 価格シミュレーションの実行時に計算ミスを防ぐには、売買契約を考慮する必要があります。 売買契約で扱う 4 タイプの割引は次のとおりです。
 
 -   **販売価格** – 品目に対して別個の販売価格を指定できます。 見積書明細行が作成されると、品目の正確な販売価格が検索され、見積書明細行に転送されます。 したがって、この種類の割引がある売買契約は価格シミュレーションに影響しません。 見積書明細行で使用される販売価格には、売買契約が反映されます。
 -   **行割引** – 注文された数量により、品目に特別割引が指定されます。 明細行の量は、通常は価格シミュレーション実行前に行割引によって減らされます。 したがって、この種類の割引がある売買契約は価格シミュレーションに影響します。

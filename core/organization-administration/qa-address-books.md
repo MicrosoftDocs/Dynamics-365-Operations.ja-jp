@@ -3,7 +3,7 @@ title: "アドレス帳"
 description: 
 author: kfend
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: DirPartyCheckDuplicate, DirPartyTable
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 23601
 ms.assetid: b177fa0f-ac9a-415e-9498-15438e132f60
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 568000b37fa067dfd34b4ee0642e4ba6cbe3aa54
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 7b3bed2bec4b109c6e3b557b8c3651f15f25169c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -67,7 +67,7 @@ ms.lasthandoff: 05/25/2017
 -   **エンティティ タイプがわかっているときに関係者レコードを作成する場合** – 関係者のエンティティ タイプがわかっている場合、そのタイプに適切なページでレコードを作成できます。 たとえば、**顧客**ページで顧客のレコードを作成します。 適切なエンティティ ページを使用してレコードを作成および保存すると、レコードがグローバル アドレス帳で自動的に作成されます。
 
 ## <a name="can-i-translate-address-information-for-party-records"></a>関係者レコードの住所情報を翻訳できますか。
-Microsoft Dynamics 365 for Operations のユーザーの言語 (システム言語) で情報を表示して、販売注文などのドキュメントでは別の言語で表示するように住所情報の翻訳を設定できます。 国/地域名、住所の目的、名前の順序の翻訳を入力できます。 たとえば、システム言語がデンマーク語で、フランスの顧客に販売注文を作成するとします。 この場合、プログラムではデンマーク語で顧客レコードを表示しつつ、印刷した販売注文にはフランス語で住所情報を表示することができます。 翻訳を設定した場合、一覧に各品目の翻訳を入力する必要があります。 翻訳が入力されていない品目は、システム言語で表示されます。 たとえば、システムの言語が、デンマーク語で、スペインの顧客にドキュメントを送信するとします。 住所情報にスペイン語 (ESP) の翻訳を入力しなかった場合、その情報は、システムと印刷資料ともにデンマーク語で表示されます。
+Microsoft Dynamics 365 for Finance and Operations のユーザーの言語 (システム言語) で情報を表示して、販売注文などのドキュメントでは別の言語で表示するように住所情報の翻訳を設定できます。 国/地域名、住所の目的、名前の順序の翻訳を入力できます。 たとえば、システム言語がデンマーク語で、フランスの顧客に販売注文を作成するとします。 この場合、プログラムではデンマーク語で顧客レコードを表示しつつ、印刷した販売注文にはフランス語で住所情報を表示することができます。 翻訳を設定した場合、一覧に各品目の翻訳を入力する必要があります。 翻訳が入力されていない品目は、システム言語で表示されます。 たとえば、システムの言語が、デンマーク語で、スペインの顧客にドキュメントを送信するとします。 住所情報にスペイン語 (ESP) の翻訳を入力しなかった場合、その情報は、システムと印刷資料ともにデンマーク語で表示されます。
 
 
 

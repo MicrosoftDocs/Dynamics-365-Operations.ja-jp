@@ -1,15 +1,15 @@
 ---
 title: "口座取引明細書ファイルのインポートのトラブルシューティング"
-description: "銀行からの口座取引明細書ファイルが、Microsoft Dynamics 365 for Operations がサポートするレイアウトと一致することが重要です。 口座取引明細書の基準が厳しいために、ほとんどの統合が正しく動作します。 ただし、明細書ファイルがインポートできない場合または不正確な結果が含まれている場合があります。 通常、これらの問題は口座取引明細書ファイルの小さな差異によって引き起こされます。 この記事は、これらの差異を修正し問題を解決する方法を説明します。"
+description: "銀行からの口座取引明細書ファイルが、Microsoft Dynamics 365 for Finance and Operations、Enterprise edition がサポートするレイアウトと一致することが重要です。 口座取引明細書の基準が厳しいために、ほとんどの統合が正しく動作します。 ただし、明細書ファイルがインポートできない場合または不正確な結果が含まれている場合があります。 通常、これらの問題は口座取引明細書ファイルの小さな差異によって引き起こされます。 この記事は、これらの差異を修正し問題を解決する方法を説明します。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 141273
 ms.assetid: 3ee2f32b-02aa-420b-8990-e6aa5fc6bda3
 ms.search.region: global
@@ -17,10 +17,10 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: e2029a03cf6b46ee206417076c64a269080119ed
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 33b7a499caf9292e44c155a0e1bd6a8929558be5
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,7 +30,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-銀行からの口座取引明細書ファイルが、Microsoft Dynamics 365 for Operations がサポートするレイアウトと一致することが重要です。 口座取引明細書の基準が厳しいために、ほとんどの統合が正しく動作します。 ただし、明細書ファイルがインポートできない場合または不正確な結果が含まれている場合があります。 通常、これらの問題は口座取引明細書ファイルの小さな差異によって引き起こされます。 この記事は、これらの差異を修正し問題を解決する方法を説明します。
+銀行からの口座取引明細書ファイルが、Microsoft Dynamics 365 for Finance and Operations、Enterprise edition がサポートするレイアウトと一致することが重要です。 口座取引明細書の基準が厳しいために、ほとんどの統合が正しく動作します。 ただし、明細書ファイルがインポートできない場合または不正確な結果が含まれている場合があります。 通常、これらの問題は口座取引明細書ファイルの小さな差異によって引き起こされます。 この記事は、これらの差異を修正し問題を解決する方法を説明します。
 
 <a name="what-is-the-error"></a>エラーは何ですか?
 ------------------
@@ -38,7 +38,7 @@ ms.lasthandoff: 05/25/2017
 口座取引明細書ファイルのインポートを試行した後に、データ管理ジョブ履歴および実行の詳細に移動し、エラーを検索します。 エラーは、明細書、残高、または明細行を指し示すのに役立ちます。 ただし、問題の原因となっているフィールドまたは要素を識別するために十分な情報を提供することは少ないです。
 
 ## <a name="what-are-the-differences"></a>差異は何ですか?
-銀行ファイル レイアウト定義を Microsoft Dynamics 365 for Operations のインポート定義と比較し、フィールドおよび要素の差異を確認します。 口座取引明細書ファイルを関連する Dynamics 365 for Operations ファイルのサンプルと比較します。 ISO20022 ファイルでは、差異が一目で分かります。
+銀行ファイル レイアウト定義を Finance and Operations のインポート定義と比較し、フィールドおよび要素の差異を確認します。 口座取引明細書ファイルを関連する Finance and Operations ファイルのサンプルと比較します。 ISO20022 ファイルでは、差異が一目で分かります。
 
 ## <a name="transformations"></a>変換
 通常、変更は次の 3 つの変換のいずれかで行われます。 各変換は、指定された標準形式で書き込まれます。
@@ -80,7 +80,7 @@ BAI2 と MT940 ファイルはテキスト ベースのファイルで、XSLT (E
 
 ### <a name="adjust-the-transformation"></a>変換の調整
 
-口座取引明細書ファイルの適切なフィールドまたは要素を得るために変換を調整します。 次に適切な Dynamics 365 for Operations の要素にそのフィールドまたは要素をマップします。
+口座取引明細書ファイルの適切なフィールドまたは要素を得るために変換を調整します。 次に適切な Finance and Operations の要素にそのフィールドまたは要素をマップします。
 
 ### <a name="debitcredit-indicator"></a>借方/貸方インジケーター
 

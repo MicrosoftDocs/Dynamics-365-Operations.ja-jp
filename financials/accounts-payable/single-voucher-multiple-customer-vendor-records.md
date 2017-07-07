@@ -1,15 +1,15 @@
 ---
 title: "複数の顧客または仕入先レコードを持つ単一伝票"
-description: "このトピックでは、複数の顧客または仕入先レコードを持つ単一伝票を転記した場合の処理の概要を示します。 この機能は、Microsoft Dynamics 365 for Operations の将来のバージョンで廃止されます。そのため、決済処理への会計上の影響を考慮し、この方法で転記を行うことは推奨されません。"
+description: "このトピックでは、複数の顧客または仕入先レコードを持つ単一伝票を転記した場合の処理の概要を示します。 この機能は、Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, の将来のバージョンで廃止されます。そのため、決済処理への会計上の影響を考慮し、この方法で転記を行うことは推奨されません。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 222534
 ms.assetid: d4df11ce-4d36-4c66-8230-f5fc58e021bc
 ms.search.region: global
@@ -17,10 +17,10 @@ ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: b1038ea950141f0e7d4678cac9edd3b0bd5beb6f
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 31040ff14b99a9b351268feb88698ac706befb55
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,7 +30,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-このトピックでは、複数の顧客または仕入先レコードを持つ単一伝票を転記した場合の処理の概要を示します。 この機能は、Microsoft Dynamics 365 for Operations の将来のバージョンで廃止されます。そのため、決済処理への会計上の影響を考慮し、この方法で転記を行うことは推奨されません。 
+このトピックでは、複数の顧客または仕入先レコードを持つ単一伝票を転記した場合の処理の概要を示します。 この機能は、Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, の将来のバージョンで廃止されます。そのため、決済処理への会計上の影響を考慮し、この方法で転記を行うことは推奨されません。 
 
 複数の顧客または仕入先に単一の伝票を使用する例として、一般的に、顧客間の残高転送や、同一組織内の顧客と仕入先との間での残高相殺が挙げられます。 
 
@@ -162,7 +162,7 @@ ms.lasthandoff: 05/25/2017
 | 14000056    | 200110-001- | 仕入先残高     |                                          | -2.00                                   |
 
 ## <a name="one-voucher-for-balance-transfers-and-netting-scenarios"></a>単一伝票の残高転送および相殺のシナリオ
-複数の顧客または仕入先のある単一の伝票を使用する一般的な 2 つのシナリオには、1 つの顧客/仕入先から別の顧客/仕入先への残高転送と、同一組織内の顧客と仕入先との間の残高相殺があります。 次の 2 つの例では、単一伝票にそれらを入力する代わりとして、Dynamics 365 for Operations でこれらのシナリオを入力する推奨される方法について説明します。 
+複数の顧客または仕入先のある単一の伝票を使用する一般的な 2 つのシナリオには、1 つの顧客/仕入先から別の顧客/仕入先への残高転送と、同一組織内の顧客と仕入先との間の残高相殺があります。 次の 2 つの例では、単一伝票にそれらを入力する代わりとして、Finance and Operations でこれらのシナリオを入力する推奨される方法について説明します。 
 
 [*残高転送*] は、複数の顧客のある単一伝票で、ある顧客から別の顧客に残高を転送するために入力したものです (仕入先の場合も同様)。 このシナリオは、子会社が請求書の支払義務を親会社に移すなど、請求書の支払義務を他者に移転するときに発生します。 
 
@@ -176,7 +176,7 @@ ms.lasthandoff: 05/25/2017
 | 401100-002-023-    | 収益          |           | 100        |
 | 130100-002-        | 顧客残高 | 100       |            |
 
-次に、ユーザーは売掛金勘定支払仕訳帳で 1 通の伝票により、ACME から保険会社に未払い残高を転送します。 Dynamics 365 for Operations では、保険会社は顧客「Insurance」として設定されています。
+次に、ユーザーは売掛金勘定支払仕訳帳で 1 通の伝票により、ACME から保険会社に未払い残高を転送します。 Finance and Operations では、保険会社は顧客「Insurance」として設定されています。
 
 |             |                  |             |                 |           |            |                 |                    |
 |-------------|------------------|-------------|-----------------|-----------|------------|-----------------|--------------------|

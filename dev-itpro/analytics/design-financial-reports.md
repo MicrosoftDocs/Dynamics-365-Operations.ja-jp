@@ -1,16 +1,16 @@
 ---
 title: "財務諸表の表示およびデザイン"
-description: "この記事では、Microsoft Dynamics 365 for Operations の財務諸表の表示および作成の練習を提供します。"
+description: "この記事では、Microsoft Dynamics 365 for Finance and Operations の財務諸表の表示および作成の練習を提供します。"
 author: jcart1106
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 10814
 ms.assetid: cd5f6483-c09b-4c2d-9336-d22eb6ab6e4f
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 1c0787327830d2cdff9e8a48798165dc83493393
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 0dc453ab56a2d381afa6e22d847f0b1eb7a16e7e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -31,7 +31,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-この記事では、Microsoft Dynamics 365 for Operations の財務諸表の表示および作成の練習を提供します。 財務報告は Dynamics 365 for Operations と財務諸表を作成して編集するクリック ワンス レポート デザイナーで構成されます。  
+この記事では、Microsoft Dynamics 365 for Finance and Operations の財務諸表の表示および作成の練習を提供します。 財務報告は Finance and Operations と財務諸表を作成して編集するクリック ワンス レポート デザイナーで構成されます。  
 
 <a name="exercise-1-generate-and-explore-a-default-financial-report"></a>練習 1: 既定の財務諸表の生成と活用
 -----------------------------------------------------------
@@ -59,7 +59,7 @@ ms.lasthandoff: 05/25/2017
 13. [**レポート オプション**] を選択します。
 14. [**分析コード フィルターの追加**] を選択して、[**事業単位**] を選択します。
 15. フィールドに 001 と入力し、[**OK**] を選択します。 レポートには 001 の事業単位のデータのみが表示されます。 これは、レポートのカスタマイズされた表示で、他のレポートの表示には使用できません。
-16. フィルター処理されたレポートを閉じます。 財務諸表は、Dynamics 365 for Operations に追加されている通貨すべてで表示できます。
+16. フィルター処理されたレポートを閉じます。 財務諸表は、Finance and Operations に追加されている通貨すべてで表示できます。
 17. [**通貨**] を選択し、次に [**EUR**] を選択します。 ユーロで、レポートが表示されます。 レポートのデザインに含まれる通貨コードまたは通貨記号はすべて適用された通貨で表示されます。 通貨記号が通貨に対して定義されていない場合、通貨記号は表示されません。
 18. [**GLの詳細**] レポートを閉じます。
 19. [**レポート デザイナー**] を閉じます。
@@ -70,7 +70,7 @@ ms.lasthandoff: 05/25/2017
 1.  総勘定元帳の [照会およびレポート] の下の [**財務レポート**] に移動します。
 2.  [**集計試算表 – 既定**] という名前のレポートの行を選択します。
 3.  [**編集**] を選択します。 [**集計試算表 - 既定**] がレポート デザイナーで開きます。
-4.  [**ファイル**]、[**名前を付けて保存**] を選択し、[属性の詳細な試算表] レポートの名前を付けます。 注記: レポート デザイナーで新しいレポートが作成されると、常に Dynamics 365 for Operations で財務諸表のリストが更新されます。
+4.  [**ファイル**]、[**名前を付けて保存**] を選択し、[属性の詳細な試算表] レポートの名前を付けます。 注記: レポート デザイナーで新しいレポートが作成されると、常に Finance and Operations で財務諸表のリストが更新されます。
 5.  レポート定義から開いた場合は、行定義のアイコンを選択し、[**試算表 – 既定の行定義**] を開きます。
 6.  [**属性の詳細な試算表**] として行定義を保存します
 7.  50 行にカーソルを置いて、[**編集**]、[**分析コードからの行の挿入**] を選択します。 分析コードからの行の挿入により、行定義にどのような分析コードを設定するかを選択できます。 この練習では、主勘定を使用して行定義を構築します。
@@ -183,8 +183,8 @@ ms.lasthandoff: 05/25/2017
 18. 変更を [**保存**] して、**生成します**。 レポートが完了し開くと、レポートを活用できます。
 
 ## <a name="additional-resources"></a>追加リソース
-[財務レポート](/dynamics365/operations/financials/general-ledger/financial-reporting-getting-started) 
-[財務レポートの表示](/dynamics365/operations/financials/general-ledger/view-financial-reports) 
+[財務レポート](/dynamics365/unified-operations/financials/general-ledger/financial-reporting-getting-started) 
+[財務レポートの表示](/dynamics365/unified-operations/financials/general-ledger/view-financial-reports) 
 [Dynamics Financial Reporting ブログ](http://blogs.msdn.com/b/dynamics_financial_reporting/)
 
 

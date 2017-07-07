@@ -3,13 +3,13 @@ title: "ワークフローの作成"
 description: "このトピックでは、ワークフローの作成方法を説明します。"
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: Core
+ms.search.scope: Core, UnifiedOperations
 ms.custom: 195583
 ms.assetid: 836ddd01-cc34-45c3-a4b0-20647357dbc6
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: donaldc
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: bf8f87fffa655b0e8566147af31c8fff02e045ad
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 138cf8d60f5a6e1ec1e46837a516e981c8ff4c19
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -35,7 +35,7 @@ ms.lasthandoff: 05/25/2017
 <a name="open-the-workflow-editor"></a>ワークフロー エディターを開く
 ------------------------
 
-使用している Microsoft Dynamics 365 for Operations モジュールで、作成できるワークフローのタイプが決まります。 次の手順に従って、作成するワークフローのタイプを選択し、ワークフロー エディターを開きます。
+使用している Microsoft Dynamics 365 for Finance and Operations モジュールで、作成できるワークフローのタイプが決まります。 次の手順に従って、作成するワークフローのタイプを選択し、ワークフロー エディターを開きます。
 
 1.  新しいワークフローを作成するモジュールを開きます。 たとえば、購買要求ワークフローを作成するには、[**調達**] をクリックします。
 2.  [**設定**] &gt; [**\[モジュール名\] ワークフロー**] の順にクリックします。

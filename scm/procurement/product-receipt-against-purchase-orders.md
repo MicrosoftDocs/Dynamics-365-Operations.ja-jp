@@ -3,14 +3,14 @@ title: "発注書に対応する製品受領書"
 description: "この資料では、入庫の際の、製品を登録するためのさまざまなオプションについて説明します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchTable
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 93113
 ms.assetid: d4ec3e86-fce2-4546-911b-e0acf64c8887
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 5d1b063344d4191facf2ddace5f5c9d592fb0942
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: a192688315adb2d83f349c525c5d8f70309375db
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -29,6 +29,8 @@ ms.lasthandoff: 05/25/2017
 # <a name="product-receipt-against-purchase-orders"></a>発注書に対応する製品受領書
 
 [!include[banner](../includes/banner.md)]
+
+[!include[retail name](../includes/retail-name.md)]
 
 
 この資料では、入庫の際の、製品を登録するためのさまざまなオプションについて説明します。
@@ -54,7 +56,7 @@ ms.lasthandoff: 05/25/2017
 
 複数の注文およびそれらのすべての注文の受入の処理をまとめて選択できます。 この方法は通常使用されませんが、仕入先が出荷を 1 つの積荷に統合する場合に使用することもできます。 購入の製品受領書の中に集計更新を実行するための関数があります。 集計の更新では、複数の発注書の仕入先から 1 つの梱包明細を転記できます。  
 
-発注書は、[**直納**] オプションが選択された販売注文から作成される場合があります。 直納を使用すると、製品は倉庫に入庫することはありませんが、仕入先から顧客に直接出荷されます。 この場合、受領は通常、発注書に直接記録されます。 受入は、仕入先との電子データ交換 (EDI) の統合などを通して、自動的に実行できます。 また、発注書が会社間発注書の場合は、Microsoft Dynamics 365 for Operations が出荷されたときに会社間販売注文書の受領が自動的に行われます。 直納を使用すると、製品は、倉庫に物理的に到着しない場合でも、在庫としても計上されます。 したがって、発注書の製品受領書を登録すると、販売注文が梱包明細を使用して自動的に更新され、在庫の全体的な変更が 0 (ゼロ) になります。 直納の場合、事前登録をする必要がありません。 倉庫管理が有効になっている倉庫を使用している場合は、代わりに仮想倉庫を指定することによってライセンス プレートの登録の要件を取得できます。 製品の [**直納倉庫**] フィールドで、この倉庫を指定します。 
+発注書は、[**直納**] オプションが選択された販売注文から作成される場合があります。 直納を使用すると、製品は倉庫に入庫することはありませんが、仕入先から顧客に直接出荷されます。 この場合、受領は通常、発注書に直接記録されます。 受入は、仕入先との電子データ交換 (EDI) の統合などを通して、自動的に実行できます。 また、発注書が会社間発注書の場合は、Microsoft Dynamics 365 for Finance and Operations が出荷されたときに会社間販売注文書の受領が自動的に行われます。 直納を使用すると、製品は、倉庫に物理的に到着しない場合でも、在庫としても計上されます。 したがって、発注書の製品受領書を登録すると、販売注文が梱包明細を使用して自動的に更新され、在庫の全体的な変更が 0 (ゼロ) になります。 直納の場合、事前登録をする必要がありません。 倉庫管理が有効になっている倉庫を使用している場合は、代わりに仮想倉庫を指定することによってライセンス プレートの登録の要件を取得できます。 製品の [**直納倉庫**] フィールドで、この倉庫を指定します。 
 
 発注書で製品受領書が処理された後、発注書のステータスは [**受取済**] として設定され、注文に対して請求書を処理できることを示します。 [**製品受領書仕訳帳**] ページを使用して、既に入庫した製品についての詳細を確認できます。  
 
@@ -69,7 +71,7 @@ ms.lasthandoff: 05/25/2017
 
 [発注書の承認および確認](purchase-order-approval-confirmation.md)
 
-[仕入先請求書の概要](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
+[仕入先請求書の概要](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview)
 
 
 

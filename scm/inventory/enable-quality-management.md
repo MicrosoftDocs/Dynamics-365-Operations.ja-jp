@@ -1,16 +1,16 @@
 ---
 title: "品質管理の概要"
-description: "この記事は、Microsoft Dynamics 365 for Operations で品質管理を使用してサプライ チェーン内の製品の品質を向上させる方法について説明します。"
+description: "この記事は、Microsoft Dynamics 365 for Finance および Operations で品質管理を使用してサプライ チェーン内の製品の品質を向上させる方法について説明します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventTestAssociationTable, InventTestGroup, InventTestItemQualityGroup, InventTestTable, InventTestVariable, InventTestVariableOutcome
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 94003
 ms.assetid: a1d9417b-268f-4334-8ab6-8499d6c3acf0
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: bb3f36bb425adffa7e055eba4e8732866cb67c49
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: 255035bf13155190e59088a7f64f798c7462b885
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
@@ -32,13 +32,13 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-この記事は、Microsoft Dynamics 365 for Operations で品質管理を使用してサプライ チェーン内の製品の品質を向上させる方法について説明します。
+この記事は、Microsoft Dynamics 365 for Finance および Operations で品質管理を使用してサプライ チェーン内の製品の品質を向上させる方法について説明します。
 
-品質管理で、不適合製品を処理する際に原産地に関係なく応答時間を管理することができます。 診断タイプは修正レポートにリンクされているため、Microsoft Dynamics 365 for Operations では、問題を修正して再発を防ぐためのタスクをスケジュールできます。
+品質管理で、不適合製品を処理する際に原産地に関係なく応答時間を管理することができます。 診断タイプは修正レポートにリンクされているため、Microsoft Dynamics 365 for Finance および Operations では、問題を修正して再発を防ぐためのタスクをスケジュールできます。
 
 不適合を管理するための機能に加えて、品質管理には、問題タイプ (内部の問題も含む) で問題を追跡し、短期または長期でソリューションを識別する機能が含まれています。 主要業績評価指標 (KPI) に関する統計で、以前の不適合問題の履歴と修正に使用されたソリューションを分析できます。 履歴データを使用して、以前の品質尺度の有効性を確認し、今後使用する適切な尺度を決定することができます。
 
-品質関連を設定すると、Microsoft Dynamics 365 for Operations でさまざまな業務プロセス、イベントおよび条件の品質指示を生成できます。 品質アソシエーションは、特定の品目、特定の品目のグループ、またはすべての品目をカバーできます。
+品質関連を設定すると、Finance および Operations でさまざまな業務プロセス、イベントおよび条件の品質指示を生成できます。 品質アソシエーションは、特定の品目、特定の品目のグループ、またはすべての品目をカバーできます。
 
 ## <a name="examples-of-the-use-of-quality-management"></a>品質管理の使用例
 品質管理は柔軟で、サプライ チェーン工程の特定のレベルの要件を満たすさまざまな方法で実行できます。 次の例では、これらの機能で可能な使用方法について説明します。

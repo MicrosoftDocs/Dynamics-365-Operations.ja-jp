@@ -1,15 +1,15 @@
 ---
 title: "Organizational Training Power BI コンテンツ"
-description: "このトピックでは、Dynamics 365 for Operations - Organizational Training Power BI コンテンツについて説明します。 コンテンツ パックにアクセスする方法、およびコンテンツ パックを構築するために使用されたデータ モデルとエンティティについて説明します。"
+description: "このトピックでは、Finance と Operations - Organizational Training Power BI コンテンツについて説明します。 コンテンツ パックにアクセスする方法、およびコンテンツ パックを構築するために使用されたデータ モデルとエンティティについて説明します。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: Operations
+ms.search.scope: Operations, UnifiedOperations
 ms.custom: 263874
 ms.assetid: 45dbba14-aba6-4571-be0d-5d1aba3515d9
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: e1bfe405e2e4bf6445567d966ab20bd8645f8dbf
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 26499bf5423bc3711d110bd7e548eda238162b7a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,15 +30,15 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-このトピックでは、Dynamics 365 for Operations - Organizational Training Power BI コンテンツについて説明します。 コンテンツ パックにアクセスする方法、およびコンテンツ パックを構築するために使用されたデータ モデルとエンティティについて説明します。
+このトピックでは、Finance と Operations - Organizational Training Power BI コンテンツについて説明します。 コンテンツ パックにアクセスする方法、およびコンテンツ パックを構築するために使用されたデータ モデルとエンティティについて説明します。
 
 <a name="accessing-the-content-pack"></a>コンテンツ パックへのアクセス
 --------------------------
 
-Organizational Training コンテンツ パックは、Microsoft Dynamics Lifecycle Services (LCS) の共有資産ライブラリにあります。 コンテンツ パックのダウンロード方法および Microsoft Dynamics 365 for Operations データに接続する方法の詳細については、「[Microsoft およびパートナーからの LCS での Power BI コンテンツ](power-bi-content-microsoft-partners.md)」を参照してください。
+Organizational Training コンテンツ パックは、Microsoft Dynamics Lifecycle Services (LCS) の共有資産ライブラリにあります。 コンテンツ パックのダウンロード方法および Microsoft Dynamics 365 for Finance and Operations データに接続する方法の詳細については、「[Microsoft およびパートナーからの LCS での Power BI コンテンツ](power-bi-content-microsoft-partners.md)」を参照してください。
 
 ## <a name="reports-that-are-included-in-the-content-pack"></a>コンテンツ パックに含まれるレポート
-内容パックを Dynamics 365 for Operations データに接続した後に、レポートには組織のデータが表示されます。 Microsoft Power BI を以前に使用したことがない場合は、詳細については「[Power BI のガイド付きの学習](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData)」を参照してください。 コンテンツ パックに含まれるレポートには、追加情報を含むグラフとテーブルの両方があります。 次の表にレポートを示します。
+コンテンツ パックを Finance and Operations データに接続した後に、レポートには組織のデータが表示されます。 Microsoft Power BI を以前に使用したことがない場合は、詳細については「[Power BI のガイド付きの学習](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData)」を参照してください。 コンテンツ パックに含まれるレポートには、追加情報を含むグラフとテーブルの両方があります。 次の表にレポートを示します。
 
 | レポート           | コンテンツ                                                                    |
 |-----------------|-----------------------------------------------------------------------------|
@@ -48,7 +48,7 @@ Organizational Training コンテンツ パックは、Microsoft Dynamics Lifecy
 これらのレポートのグラフとタイルをフィルター処理し、ダッシュボードに固定することができます。 Power BI のフィルター処理と固定方法の詳細については、「[ダッシュボードの作成およびコンフィギュレーション](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards)」を参照してください。
 
 ## <a name="understanding-the-data-model-and-entities"></a>データ モデルおよびエンティティの理解
-Dynamics 365 for Operations データを使用して、Organizational Training コンテンツ パックにレポートを入力します。 次の表に、コンテンツ パックが基づいているエンティティを示します。
+Finance と Operations データを使用して、Organizational Training コンテンツ パックにレポートを入力します。 次の表に、コンテンツ パックが基づいているエンティティを示します。
 
 | エンティティ                    | コンテンツ                                                         | 他のエンティティとの関係                                                                                                                                                                  |
 |---------------------------|------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

@@ -1,27 +1,29 @@
 ---
 title: "注文処理オプションの設定"
-description: "このトピックでは、Microsoft Dynamics 365 for Operations - Retail を使用したコール センターの注文処理方法を説明します。"
+description: "このトピックでは、Microsoft Dynamics 365 for Retail を使用したコール センターの注文処理方法を説明します。"
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.reviewer: josaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 78973
 ms.assetid: 09fca083-ac0d-4f30-baf2-bb00a626be12
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 52b56274c8b72c67bc0a50f23114cebc510f1667
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: afdea84b7016fcc3214dc94f2d393a5f3d256370
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 
 ---
@@ -31,9 +33,9 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](includes/banner.md)]
 
 
-このトピックでは、Microsoft Dynamics 365 for Operations - Retail を使用したコール センターの注文処理方法を説明します。 
+このトピックでは、Microsoft Dynamics 365 for Retail を使用したコール センターの注文処理方法を説明します。 
 
-Dynamics 365 for Operations の小売りとコマースは、オンライン ストア、従来型の店舗、またコール センターなどの複数の小売チャンネルをサポートします。 コール センターでは、作業者は電話で顧客の注文をとり販売注文を作成します。 このトピックでは、コール センターを作成およびコール センターのオプションをコンフィギュレーションする方法を説明します。 各コール センターは、独自のユーザー、支払方法、価格グループ、財務分析コード、配達のモードを使用できます。 コール センターを作成するとき、これらのオプションをコンフィギュレーションできます。 **重要:** 現在の Dynamics AX ユーザーが販売注文を作成する場合、コール センターのワークフローを使用する前に、コール センター ユーザーとしてコール センターに割り当てられている必要があります。 **コール センター**ページは、コール センターに固有の機能グループを有効または無効にするために使用できます。 次の機能グループを有効にできます。
+Retail は、オンライン ストア、実店舗とコール センターなどの、複数の小売チャンネルをサポートします。 コール センターでは、作業者は電話で顧客の注文をとり販売注文を作成します。 このトピックでは、コール センターを作成およびコール センターのオプションをコンフィギュレーションする方法を説明します。 各コール センターは、独自のユーザー、支払方法、価格グループ、財務分析コード、配達のモードを使用できます。 コール センターを作成するとき、これらのオプションをコンフィギュレーションできます。 **重要:** 現在のユーザーが販売注文を作成する場合、コール センターのワークフローを使用する前に、コール センター ユーザーとしてコール センターに割り当てられている必要があります。 **コール センター**ページは、コール センターに固有の機能グループを有効または無効にするために使用できます。 次の機能グループを有効にできます。
 
 -   [**注文完了**] – このグループには [**販売注文**] ページの支払いおよび注文完了に関連する機能が含まれます。
 -   [**主導販売**] – このグループにはソース コード、スクリプト、カタログ要求に関連する機能が含まれます。 

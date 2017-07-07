@@ -1,9 +1,9 @@
 ---
 title: "グローバル アドレス帳のコンフィギュレーション"
-description: "この記事は、Microsoft Dynamics 365 for Operations のグローバル アドレス帳と追加のアドレス帳を設定しコンフィギュレーションする前に、計画プロセス中に決定する必要のある考慮事項について説明します。 決定の中には、組織階層など、製品の他の領域に対して行われている決定を確認する必要があります。"
+description: "この記事は、Microsoft Dynamics 365 for Finance and Operations のグローバル アドレス帳と追加のアドレス帳を設定しコンフィギュレーションする前に、計画プロセス中に決定する必要のある考慮事項について説明します。 決定の中には、組織階層など、製品の他の領域に対して行われている決定を確認する必要があります。"
 author: kfend
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: DirAddressBook, DirAddressBookTeam, DirParameters, DirPartyTable
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 23341
 ms.assetid: a41cd8de-9ee0-4275-aea5-131db5326e5b
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: dabac8a899a07192d31f4a8f4f70b12ed5410093
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 93a9c35b82a8bacd0295416015e783cb6348f550
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -32,7 +32,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-この記事は、Microsoft Dynamics 365 for Operations のグローバル アドレス帳と追加のアドレス帳を設定しコンフィギュレーションする前に、計画プロセス中に決定する必要のある考慮事項について説明します。 決定の中には、組織階層など、製品の他の領域に対して行われている決定を確認する必要があります。
+この記事は、Microsoft Dynamics 365 for Finance and Operations のグローバル アドレス帳と追加のアドレス帳を設定しコンフィギュレーションする前に、計画プロセス中に決定する必要のある考慮事項について説明します。 決定の中には、組織階層など、製品の他の領域に対して行われている決定を確認する必要があります。
 
 <a name="global-address-book"></a>グローバル アドレス帳
 -------------------

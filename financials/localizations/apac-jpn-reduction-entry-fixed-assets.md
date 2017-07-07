@@ -1,9 +1,9 @@
 ---
 title: "固定資産の圧縮記帳の設定"
-description: "この記事は、固定資産の圧縮記帳に関する情報および、固定資産の圧縮記帳を Microsoft Dynamics 365 for Operations で設定する方法について説明します。 圧縮記帳は、政府助成金を使用して取得される固定資産の特別な会計処理です。 耐用年数中に、これらの資産の法人所得税を繰延する場合に使用できます。"
+description: "この記事は、固定資産の圧縮記帳に関する情報および、固定資産の圧縮記帳を Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition で設定する方法について説明します。 圧縮記帳は、政府助成金を使用して取得される固定資産の特別な会計処理です。 耐用年数中に、これらの資産の法人所得税を繰延する場合に使用できます。"
 author: rake-gui
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,17 +11,17 @@ ms.technology:
 ms.search.form: AssetReductionEntryMassUpdate_JP, AssetReductionEntryProfile_JP
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 2871
 ms.search.region: Japan
 ms.author: RichardLuan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 0a9f333dd6ba32dec25f6d338bc247fd328511c2
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 95b62d12041bde095a92080e33cde74a69b45d85
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -31,7 +31,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-この記事は、固定資産の圧縮記帳に関する情報および、固定資産の圧縮記帳を Microsoft Dynamics 365 for Operations で設定する方法について説明します。 圧縮記帳は、政府助成金を使用して取得される固定資産の特別な会計処理です。 耐用年数中に、これらの資産の法人所得税を繰延する場合に使用できます。 
+この記事は、固定資産の圧縮記帳に関する情報および、固定資産の圧縮記帳を Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition で設定する方法について説明します。 圧縮記帳は、政府助成金を使用して取得される固定資産の特別な会計処理です。 耐用年数中に、これらの資産の法人所得税を繰延する場合に使用できます。 
 
 政府助成金を使用して固定資産を取得すると、助成は非課税の収益として処理されます。 ただし、すべての政府補助金を収益として説明すると、結果として法人所得税が大きくなり、補助金の助成効果が減少します。 したがって、圧縮記帳と呼ばれる特殊な会計処理が許可されています。 基本的に、圧縮記帳は、取得した固定資産の耐用年数中の法人所得税を延期します。 2 種類の会計処理が許可されています。
 
@@ -74,7 +74,7 @@ ms.lasthandoff: 05/25/2017
 </tbody>
 </table>
 
-Microsoft Dynamics 365 for Operations では、既存の固定資産の機能の最上部で、圧縮記帳の機能を実行します。 圧縮記帳を使用するには、既存の固定資産の機能の使用に加えて次の作業を行う必要があります。
+Finance and Operations では、既存の固定資産の機能の最上部で、圧縮記帳の機能を実行します。 圧縮記帳を使用するには、既存の固定資産の機能の使用に加えて次の作業を行う必要があります。
 
 ### <a name="assigning-a-reduction-entry-document-to-a-fixed-asset-book"></a>固定資産帳簿への圧縮記帳ドキュメントの割り当て
 

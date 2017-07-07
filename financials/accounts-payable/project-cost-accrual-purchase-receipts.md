@@ -1,15 +1,15 @@
 ---
 title: "購買入庫におけるプロジェクト費用の発生"
-description: "このトピックでは、購買入庫での未収プロジェクト費用を、Microsoft Dynamics 365 for Operations で追跡する方法を説明します。"
+description: "このトピックでは、購買入庫での未収プロジェクト費用を、Microsoft Dynamics 365 for Finance and Operations,Enterprise エディションで追跡する方法について説明します。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 266984
 ms.assetid: 61e7d2a3-5aab-4113-bccc-213f932885d2
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: acb14deb9d77927ffc95500e4e97763ba3ad7826
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: b46929d2991f3ec1b38d54ddc57de632aa9b01b9
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,7 +30,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-このトピックでは、購買入庫での未収プロジェクト費用を、Microsoft Dynamics 365 for Operations で追跡する方法を説明します。 
+このトピックでは、購買入庫での未収プロジェクト費用を、Microsoft Dynamics 365 for Finance and Operations,Enterprise エディションで追跡する方法について説明します。 
 
 プロジェクトの請求書は、商品やサービスが提供された後に到着することが多く、プロジェクトの主要業績評価指標 (KPIs) に重大な影響を及ぼす可能性があります。 財務およびプロジェクト レポート両方におけるトランザクションを追跡できるのは重要なことです。
 
@@ -38,7 +38,7 @@ ms.lasthandoff: 05/25/2017
 
 Contoso コンサルティングは新しいクラウド配置プロジェクトを開始しました。 プロジェクトのためのコンピューターを購入するために発注書が作成されます。 コンピューターは 1500 ドル、インストール サービスは 150 ドルかかります。 仕入先からコンピュータが届き、インストールしましたが、請求書がまだ Contoso コンサルティングに届いていません。 プロジェクト マネージャーは、請求書が送信される前にプロジェクト費用が 1650 ドルであることを期待しています。 この原価は会社の月末財務諸表にも反映される必要があります。 
 
-未払費用は、報告目的のために財務レベルとプロジェクトレベルの両方に記録する必要があります。 Dynamics 365 for Operations では、製品入庫における財務更新は品目および調達カテゴリに対して追跡できます。 
+未払費用は、報告目的のために財務レベルとプロジェクトレベルの両方に記録する必要があります。 Finance and Operations では、製品入庫における財務更新は品目および調達カテゴリに対して追跡できます。 
 
 品目に対して、[**買掛金勘定パラメーター**] ページで、[**製品入庫を元帳に転記**] オプションを選択します。
 [![accruals1](./media/accruals1-1024x409.png)](./media/accruals1.png) 
@@ -73,7 +73,7 @@ Contoso コンサルティングは新しいクラウド配置プロジェクト
 
 **ステップ 3:** 仕入先請求書の下書きを作成します。 
 
-Dynamics 365 for Operations では、製品入庫を転記すると、プロジェクト情報には影響しません。 回避手段として、購買入庫の転記の直後に仕入先請求書の下書きを生成できます。 [**発注書**] ページ &gt; [**請求書のタブ**] &gt; [**生成**] &gt; [**請求書**] の順に移動します。 これにより、プロジェクト情報を更新する保留中の請求書ドキュメントが作成されます。 
+Finance and Operations では、製品入庫を転記すると、プロジェクト情報には影響しません。 回避手段として、購買入庫の転記の直後に仕入先請求書の下書きを生成できます。 [**発注書**] ページ &gt; [**請求書のタブ**] &gt; [**生成**] &gt; [**請求書**] の順に移動します。 これにより、プロジェクト情報を更新する保留中の請求書ドキュメントが作成されます。 
 
 仕入先請求書の草案を作成すると、保留中のプロジェクト トランザクションが生成されます。 
 [![accruals8](./media/accruals8-1024x225.png)](./media/accruals8.png) 
