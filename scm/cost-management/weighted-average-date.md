@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
 ms.reviewer: YuyuScheller
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 28991
 ms.assetid: 945d5088-a99d-4e54-bc42-d2bd61c61e22
 ms.search.region: Global
@@ -31,6 +31,8 @@ ms.lasthandoff: 05/25/2017
 # <a name="weighted-average-date"></a>加重平均日付
 
 [!include[banner](../includes/banner.md)]
+
+[!include[retail name](../includes/retail-name.md)]
 
 
 加重平均日は加重平均原則に基づく在庫モデルです。 加重平均原則では、在庫からの出庫は、在庫原価計算期間に毎日受け取って入庫された品目の平均値で評価されます。 加重平均日付を使用して在庫原価計算を実行すると、1 日のすべての入庫が、仮想出庫に対して決済されます。 この仮想出庫は、その日の合計入庫数量と金額を保持します。 仮想出庫には対応する仮想入庫があり、この仮想入庫に対して出庫が決済されます。 そのため、すべての出庫が同じ平均原価を取得します。 仮想の払出と入庫は仮想の転送と見なすことができ、*加重平均在庫原価計算転送*と呼ばれます。 

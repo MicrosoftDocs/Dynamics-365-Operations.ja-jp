@@ -17,10 +17,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: c8684bf17946edff8230f0b6d324d355e61dc89b
-ms.openlocfilehash: 8703b3bc5642e6dbe9dd399ced5af6da25f9b226
+ms.sourcegitcommit: bb0700ad317fa8faf5dc83ea523dd151f0f4a811
+ms.openlocfilehash: 713178e79000e4358104038295452db0ba025195
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/21/2017
+ms.lasthandoff: 06/28/2017
 
 
 ---
@@ -40,22 +40,22 @@ Microsoft Dynamics 365 for Finance and Operations は、Microsoft の企業向�
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><h3>財務</h3>
-<p>コンプライアンス</p>
+<td><h3>Financials</h3>
+<p><a href="../financials/general-ledger/audit-policy-rules">コンプライアンス</a></p>
 <p>財務管理</p>
-<ul><li><a href="../financials/accounts-payable/accounts-payable">買掛金管理</a></li>
+<ul style="list-style-type:none">
+<li><a href="../financials/accounts-payable/accounts-payable">買掛金管理</a></li>
 <li><a href="../financials/accounts-receivable/accounts-receivable">売掛金</a></li>
 <li><a href="../financials/budgeting/budgeting-overview">予算作成</a></li>
 <li><a href="../financials/cash-bank-management/cash-bank-management">現金および銀行管理</a></li>
 <li><a href="../financials/cost-accounting/cost-accounting-home-page">原価計算</a></li>
 <li><a href="../financials/fixed-assets/fixed-assets">固定資産</a></li>
 <li><a href="../financials/general-ledger/general-ledger">一般会計</a></li>
-
 <li><a href="../financials/public-sector/public-sector-functionality">公的機関</a></li>
 <li><a href="../dev-itpro/lcs-solutions/country-region">地域の規制機能</a></li></ul>
 <p><a href="../financials/project-management/overview-project-management-accounting">プロジェクト管理</a></p>
 <H3>人事管理</h3>
-  <ul>
+  <ul style="list-style-type:none">
 <li><a href="hr/manage-recruiting-process">採用</a></li>
 <li><a href="hr/localizations/noam-usa-payroll">米国の給与</a></li>
 </ul>
@@ -63,19 +63,19 @@ Microsoft Dynamics 365 for Finance and Operations は、Microsoft の企業向�
 <p><a href="../supply-chain/cost-management/costing-sheets">原価管理</a></p>
 <p><a href="../supply-chain/inventory/inventory-locations">在庫管理</a></p>
 <p>物流</p>
-<ul><li><a href="../supply-chain/transportation/transportation-management-overview">輸送管理</a></li>
-<li><a href="../supply-chain/warehousing/warehouse-configuration">倉庫管理</a></li></ul></li>
+<ul style="list-style-type:none"><li><a href="../supply-chain/transportation/transportation-management-overview">輸送管理</a></li>
+<li><a href="../supply-chain/warehousing/warehouse-configuration">倉庫管理</a></li></ul>
 <p><a href="../supply-chain/master-planning/master-plans">計画</a></p>
   <p><a href="../supply-chain/pim/set-up-maintain-product-configuration-model">製品情報管理</a></p>
   <p><a href="../supply-chain/production-control/create-production-orders">生産管理</a></p>
 <p>注文管理</p>
-  <ul><li><a href="../supply-chain/procurement/procurement-sourcing-overview">調達</a></li>
+  <ul style="list-style-type:none"><li><a href="../supply-chain/procurement/procurement-sourcing-overview">調達</a></li>
   <li><a href="../supply-chain/sales-marketing/overview-sales-marketing">販売とマーケティング</a></li></ul>
 </td>
 <td>
 <h3>Unified Operations プラットフォーム</h3>
 <p>インテリジェンス</p>
-<ul><li><a href="../dev-itpro/analytics/analytics">分析</a></li>
+<ul style="list-style-type:none"><li><a href="../dev-itpro/analytics/analytics">分析</a></li>
  <li><a href="../dev-itpro/analytics/document-reporting-services">ビジネス ドキュメント</a></li>
 <li><a href="../dev-itpro/analytics/financial-reporting-intro">財務報告</a></li>
 <li><a href="../dev-itpro/analytics/general-electronic-reporting">規制に関する報告</a></li></ul>
@@ -83,33 +83,34 @@ Microsoft Dynamics 365 for Finance and Operations は、Microsoft の企業向�
 <p><a href="../dev-itpro/mobile-apps/mobile-platform">モバイル プラットフォーム</a></p>
 
  <p>開発者向け機能</p>
-<ul>
-<li><a href="../dev-itpro/continuous-delivery-home-page">継続的な配信</a></li>
+<ul style="list-style-type:none">
+<li><a href="../dev-itpro/dev-tools/continuous-delivery-home-page">継続的な配信</a></li>
 <li><a href="../dev-itpro/get-started/demo-data">デモ データ</a></li>
 <li><a href="../dev-itpro/dev-tools/developer-home-page">開発者ツール</a></li>
 <li><a href="../dev-itpro/extensibility/customize-model-elements-extensions">拡張性</a></li>
 <li><p>統合</p>
-<ul><li><a href="../dev-itpro/data-entities/data-entities">データ エンティティ</a></li>
+<ul style="list-style-type:none"><li><a href="../dev-itpro/data-entities/data-entities">データ エンティティ</a></li>
 <li><a href="../dev-itpro/office-integration/office-integration">Office 統合</a></li></ul></li></ul>
 
 <p>管理者向け機能<p>
-<ul>
-<li><a href="../get-started/onboarding-home">組織のオンボーディング</a></li>
-<li><a href="../dev-itpro/deploy-demo-environment">配置およびサービス</a></li>
+<ul style="list-style-type:none">
+<li><a href="../fin-and-ops/get-started/onboarding-home">組織のオンボーディング</a></li>
+<li><a href="../dev-itpro/deployment/deploy-demo-environment">配置およびサービス</a></li>
 <li><a href="../dev-itpro/migration-upgrade/upgrade-home-page">アップグレード</a></li>
 <li><a href="../dev-itpro/data-entities/data-management-integration-data-entity">データ管理</a></li>
 <li><a href="../dev-itpro/lifecycle-services/lcs">Lifecycle Services</a></li>
 <li><a href="../fin-and-ops/organization-administration/organization-administration-home-page">組織管理</a></li>
 <li><a href="../dev-itpro/sysadmin/system-administration-home-page">システム管理</a></li>
-<ul>
+</ul>
 </td>
 <td>
-<h3>Dynamics 365 for Talent</h3>
+<h3>関連製品</h3>
+<h4>Dynamics 365 for Talent</h4>
 <p><a href="../talent/manage-benefit-program">福利厚生</a></p>
 <p><a href="../talent/performance-management-overview">Employee の開発とトレーニング</a></p>
 <p><a href="../talent/questionnaires">アンケート</a></p>
 
-<h3>Dynamics 365 for Retail</h3>
+<h4>Dynamics 365 for Retail</h4>
 <p><a href="../retail/call-center-functionality">コール センター</p>
 <p><a href="../retail/define-maintain-retail-channels">チャネルの設定と管理</p>
 <p><a href="../retail/retail-peripherals-overview">MPOS とクラウド POS</p>

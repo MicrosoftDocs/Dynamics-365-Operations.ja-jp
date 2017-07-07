@@ -6,22 +6,21 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-ax-platform
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: ShylaThompson
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: shylaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 104173
-ms.assetid: 2e299a38-16e5-474e-b993-d88cebfadca0
 ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 6e2feeadd7cef8273d94810a13df6c5dfe6f1d4a
-ms.openlocfilehash: 25a9885a31871a19285cdd30987e3d1caa99bc04
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: ac77d2d374dc77aa4cf43ae2621b3692e556c9d0
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/21/2017
+ms.lasthandoff: 06/29/2017
 
 
 ---
@@ -54,6 +53,9 @@ Microsoft Dynamics 365 for Finance and Operations には、[製品可用性ガ�
 -   [規制の監視と規制の更新の通知](regulatory-watch-communication.md)
 -   [国/地域の規制警告の Microsoft への通知および規制機能のステータスの追跡](submit-localization-alerts.md)
 
+### <a name="dynamics-365-roadmap"></a>Dynamics 365 ロードマップ
+[Dynamics 365 ロードマップ](https://roadmap.dynamics.com/) 作業中のスナップショットを提供します。 このロードマップを使用して、一般的に利用可能なものと開発中のものを見つけます。 開発中のすべての日付と機能は暫定的なものであり、現時点の予測に基づいているため、予告なしに変更されることがあります。
+
 ## <a name="electronic-reporting"></a>電子申告
 電子申告 (ER) ツールを使用すると、さまざまな国/地域の法的要件に従って電子ドキュメントの形式を構成できます。 ER では、これらの形式をライフ サイクル中に管理できます。 詳細については、次のいずれかのトピックを参照してください。
 -   [電子申告の概要](../analytics/general-electronic-reporting.md)
@@ -62,7 +64,9 @@ Microsoft Dynamics 365 for Finance and Operations には、[製品可用性ガ�
 -   [電子申告機能の一覧の拡張](../analytics/general-electronic-reporting-formulas-list-extension.md)
 -   [電子申告の送信先](../analytics/electronic-reporting-destinations.md)
 -   [Lifecycle Services から電子申告コンフィギュレーションをダウンロードする](../analytics/download-electronic-reporting-configuration-lcs.md)
+-   [電子申告コンフィギュレーションのインポート](../analytics/electronic-reporting-import-ger-configurations.md)
 -   [Power BI にデータをプルするよう電子申告を構成する](../analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md)
+-   [電子申告ツールを使用して電子ドキュメントを生成し、アプリケーション データを更新](../analytics/generate-electronic-documents-update-application-data.md)
 
 ## <a name="task-guides"></a>タスク ガイド
 タスク ガイドは製品のヘルプ ペインから入手でき、主要ビジネス プロセスの手順を段階的に説明します。 タスク ガイドを開いてビジネス プロセスの手順を読むか、タスク ガイドを再生してビジネス プロセスのウォークスルーを行って、データを入力することができます。
@@ -83,9 +87,10 @@ Microsoft Dynamics 365 for Finance and Operations には、[製品可用性ガ�
 
 ### <a name="austria"></a>オーストリア
 
--   [半年減価償却](/dynamics365/unified-operations/financials/localizations/emea-aut-half-year-depreciation)
--   [梱包材費用](/dynamics365/unified-operations/financials/localizations/emea-aut-packing-material-fee-calculation)
--   [VAT 明細書](/dynamics365/unified-operations/financials/localizations/emea-aut-vat-statement-details)
+- [半年減価償却](/dynamics365/unified-operations/financials/localizations/emea-aut-half-year-depreciation)
+- [梱包材費用](/dynamics365/unified-operations/financials/localizations/emea-aut-packing-material-fee-calculation)
+- [仕入関税](/dynamics365/unified-operations/financials/localizations/emea-aut-purchase-duties)
+- [VAT 明細書](/dynamics365/unified-operations/financials/localizations/emea-aut-vat-statement-details)
 
 ### <a name="belgium"></a>ベルギー
 
@@ -130,7 +135,6 @@ Microsoft Dynamics 365 for Finance and Operations には、[製品可用性ガ�
 -   [チェコ共和国の固定資産処分に対する半年減価償却](/dynamics365/unified-operations/financials/localizations/emea-cze-half-depreciation-fixed-asset-disposal)
 -   [減価償却停止 (休日)](/dynamics365/unified-operations/financials/localizations/emea-cze-depreciation-suspension-holidays)
 -   [チェコ共和国の固定資産の減価償却方法](/dynamics365/unified-operations/financials/localizations/emea-cze-fixed-assets-depreciation)
-
 -   [固定資産の取得前価額の転記](/dynamics365/unified-operations/financials/localizations/emea-pre-acquisition-acquisition-fixed-asset)
 -   [チェコ共和国の VAT 明細書](/dynamics365/unified-operations/financials/localizations/emea-cze-vat-statement-details)
 -   [売上税レポート](/dynamics365/unified-operations/financials/localizations/emea-cze-intra-community-vat-transactions)
@@ -144,30 +148,39 @@ Microsoft Dynamics 365 for Finance and Operations には、[製品可用性ガ�
 -   [固定資産の処分](/dynamics365/unified-operations/financials/localizations/emea-credit-note-reverse-fixed-asset-sale)
 
 ### <a name="europe"></a>ヨーロッパ
--   [前貸し保有者](/dynamics365/unified-operations/financials/localizations/emea-advance-holders)
--   [販売注文の請求書 ID の編集](/dynamics365/unified-operations/financials/localizations/emea-edit-invoice-id-sales-orders)
--   [EU 登録証明書](/dynamics365/unified-operations/financials/localizations/emea-entry-certificates)
--   [EU 販売リストのレポート](/dynamics365/unified-operations/financials/localizations/emea-eu-sales-list)
--   [為替レート調整](/dynamics365/unified-operations/financials/localizations/emea-exchange-rate-adjustments)
--   [支払方法のファイル形式](/dynamics365/unified-operations/financials/localizations/emea-select-file-formats-for-the-method-of-payments)
--   [エストニアおよびリトアニアの固定資産の処分](/dynamics365/unified-operations/financials/localizations/emea-credit-note-reverse-fixed-asset-sale)
--   [イントラスタット](/dynamics365/unified-operations/financials/localizations/emea-intrastat)
--   [ラトビアおよびリトアニアの請求書と梱包明細の番号付け](/dynamics365/unified-operations/financials/localizations/emea-invoices-packing-slips-numbering)
--   [請求書発行の期限](/dynamics365/unified-operations/financials/localizations/emea-invoice-issue-deadline)
--   [OIOUBL 標準](/dynamics365/unified-operations/financials/localizations/emea-oioubl-standards-electronic-invoicing)
--   [支払伝票レポート](/dynamics365/unified-operations/financials/localizations/emea-eur-payment-slip-report-giro)
--   [小口現金](/dynamics365/unified-operations/financials/localizations/emea-petty-cash)
--   [固定資産の取得前価額の転記](/dynamics365/unified-operations/financials/localizations/emea-pre-acquisition-acquisition-fixed-asset)
--   [郵便番号](/dynamics365/unified-operations/financials/localizations/emea-import-create-postal-codes-manually)
--   [登録 ID](/dynamics365/unified-operations/financials/localizations/emea-registration-ids)
--   [SEPA 口座振替の概要](/dynamics365/unified-operations/financials/accounts-payable/sepa-credit-transfer)
--   [単一ユーロ支払地域 (SEPA) 口座引落の概要](/dynamics365/unified-operations/financials/accounts-receivable/sepa-direct-debit-overview)
--   [印刷フォームの署名者の設定](/dynamics365/unified-operations/financials/localizations/emea-set-up-signers-for-printing-forms)
--   [定期処理仕訳帳の分割期間](/dynamics365/unified-operations/financials/localizations/emea-create-post-periodic-journals)
--   [レポートおよびドキュメントの金額表示方法の更新](/dynamics365/unified-operations/financials/localizations/emea-amount-printing-forms)
--   [VAT 為替レート](/dynamics365/unified-operations/financials/localizations/emea-vat-exchange-rate)
--   [ヨーロッパの VAT 報告書](/dynamics365/unified-operations/financials/localizations/emea-vat-reporting)
--   [決済のトランザクションの表示](/dynamics365/unified-operations/financials/localizations/emea-transactions-settlement-form)
+- [前貸し保有者](/dynamics365/unified-operations/financials/localizations/emea-advance-holders)
+- [前貸し保有者トランザクション](/dynamics365/unified-operations/financials/localizations/emea-advance-holders-transactions)
+- [高度な請求](/dynamics365/unified-operations/financials/localizations/emea-advance-invoice)
+- [口座調整](/dynamics365/unified-operations/financials/localizations/emea-bank-reconciliation)
+- [修正請求書](/dynamics365/unified-operations/financials/localizations/emea-corrective-invoice)
+- [定期処理仕訳帳の作成と転記](/dynamics365/unified-operations/financials/localizations/emea-create-post-periodic-journals)
+- [販売注文の請求書 ID の編集](/dynamics365/unified-operations/financials/localizations/emea-edit-invoice-id-sales-orders)
+- [EU 登録証明書](/dynamics365/unified-operations/financials/localizations/emea-entry-certificates)
+- [EU 販売リストのレポート](/dynamics365/unified-operations/financials/localizations/emea-eu-sales-list)
+- [為替レート調整](/dynamics365/unified-operations/financials/localizations/emea-exchange-rate-adjustments)
+- [支払方法のファイル形式](/dynamics365/unified-operations/financials/localizations/emea-select-file-formats-for-the-method-of-payments)
+- [エストニアおよびリトアニアの固定資産の処分](/dynamics365/unified-operations/financials/localizations/emea-credit-note-reverse-fixed-asset-sale)
+- [イントラスタット](/dynamics365/unified-operations/financials/localizations/emea-intrastat)
+- [在庫仕訳レポート](/dynamics365/unified-operations/financials/localizations/emea-set-up-report-inventory-journal-names)
+- [ラトビアおよびリトアニアの請求書と梱包明細の番号付け](/dynamics365/unified-operations/financials/localizations/emea-invoices-packing-slips-numbering)
+- [請求書発行の期限](/dynamics365/unified-operations/financials/localizations/emea-invoice-issue-deadline)
+- [OIOUBL 標準](/dynamics365/unified-operations/financials/localizations/emea-oioubl-standards-electronic-invoicing)
+- [支払伝票レポート](/dynamics365/unified-operations/financials/localizations/emea-eur-payment-slip-report-giro)
+- [小口現金](/dynamics365/unified-operations/financials/localizations/emea-petty-cash)
+- [固定資産の取得前価額の転記](/dynamics365/unified-operations/financials/localizations/emea-pre-acquisition-acquisition-fixed-asset)
+- [郵便番号](/dynamics365/unified-operations/financials/localizations/emea-import-create-postal-codes-manually)
+- [登録 ID](/dynamics365/unified-operations/financials/localizations/emea-registration-ids)
+- [逆請求](/dynamics365/unified-operations/financials/localizations/emea-reverse-charge)
+- [SEPA 口座振替の概要](/dynamics365/unified-operations/financials/accounts-payable/sepa-credit-transfer)
+- [単一ユーロ支払地域 (SEPA) 口座引落の概要](/dynamics365/unified-operations/financials/accounts-receivable/sepa-direct-debit-overview)
+- [顧客および仕入先補償の設定](/dynamics365/unified-operations/financials/localizations/emea-compensation-customer-vendor-transactions)
+- [印刷フォームの署名者の設定](/dynamics365/unified-operations/financials/localizations/emea-set-up-signers-for-printing-forms)
+- [税指示](/dynamics365/unified-operations/financials/localizations/emea-tax-directives)
+- [レポートおよびドキュメントの金額表示方法の更新](/dynamics365/unified-operations/financials/localizations/emea-amount-printing-forms) 
+- [VAT 為替レート](/dynamics365/unified-operations/financials/localizations/emea-vat-exchange-rate)
+- [東ヨーロッパの VAT 登録トランザクション](/dynamics365/unified-operations/financials/localizations/emea-vat-register-transactions)
+- [VAT 報告](/dynamics365/unified-operations/financials/localizations/emea-vat-reporting)
+- [決済のトランザクションの表示](/dynamics365/unified-operations/financials/localizations/emea-transactions-settlement-form)
 
 ### <a name="france"></a>フランス
 -   [時系列の請求書と伝票番号](/dynamics365/unified-operations/financials/localizations/emea-fra-chronological-invoices-vouchers)
@@ -180,6 +193,7 @@ Microsoft Dynamics 365 for Finance and Operations には、[製品可用性ガ�
 #### <a name="public-sector"></a>公的機関
    -   [公的機関での確約](/dynamics365/unified-operations/financials/localizations/emea-fra-commitments-public-sector)
    -   [公的機関での Mandats de paiement](/dynamics365/unified-operations/financials/localizations/emea-fra-mandats-de-paiement)
+   -   [調達](/dynamics365/unified-operations/financials/localizations/emea-fra-procurement-sourcing-public-sector?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
    -   [公的機関会計](/dynamics365/unified-operations/financials/localizations/emea-fra-public-sector-accounting)
    -   [titres de recette](/dynamics365/unified-operations/financials/localizations/emea-fra-titres-de-recette-public-sector)
    -   [仕入先請求書の支払保留](/dynamics365/unified-operations/financials/localizations/emea-fra-vendor-invoice-payment-holds-public-sector)
@@ -205,22 +219,21 @@ Microsoft Dynamics 365 for Finance and Operations には、[製品可用性ガ�
 -   [イタリアの請求書の梱包明細日付の検証](/dynamics365/unified-operations/financials/localizations/emea-ita-packing-slip-date-verification-on-invoice)
 -   [イタリアの売上税帳簿](/dynamics365/unified-operations/financials/localizations/emea-ita-fiscal-books)
 -   [政府/自治体に対して発行された請求書の分割支払](/dynamics365/unified-operations/financials/localizations/emea-ita-split-payment-invoices-issued-public-administration)
--   [源泉徴収税](/dynamics365/unified-operations/financials/localizations/emea-ita-withholding tax)
+-   [源泉徴収税](/dynamics365/unified-operations/financials/localizations/emea-ita-withholding-tax)
 
 ### <a name="japan"></a>日本
 
--   [仕入先負担の銀行支払手数料](/dynamics365/unified-operations/financials/localizations/apac-jpn-bank-payment-fees-vendors)
--   [月次締め請求書](/dynamics365/unified-operations/financials/localizations/apac-jpn-consolidate-invoices)
-
-#### <a name="fixed-assets"></a>固定資産
-   -  [固定資産の配賦ルール](/dynamics365/unified-operations/financials/localizations/apac-jpn-allocation-rules-fixed-assets)
-   -  [均等償却方法](/dynamics365/unified-operations/financials/localizations/apac-jpn-equally-divided-depreciation-method)
-   -  [固定資産の減価償却](/dynamics365/unified-operations/financials/localizations/apac-jpn-fixed-asset-depreciation)
-   -  [キャッシュ生成単位の固定資産減損管理](/dynamics365/unified-operations/financials/localizations/apac-jpn-impairment-accounting-cash-generating-unit)
-   -  [固定資産の資産除去責務の設定](/dynamics365/unified-operations/financials/localizations/apac-jpn-asset-retirement-obligation-fixed-assets)
-   -  [固定資産の圧縮記帳の設定](/dynamics365/unified-operations/financials/localizations/apac-jpn-reduction-entry-fixed-assets)
--   [受取手形の裏書による仕入先への支払](/dynamics365/unified-operations/financials/localizations/apac-jpn-endorse-bill-of-exchange)
--   [累進的源泉徴収税の計算](/dynamics365/unified-operations/financials/localizations/apac-jpn-progressive-withholding-tax-calculation)
+-  [仕入先負担の銀行支払手数料](/dynamics365/unified-operations/financials/localizations/apac-jpn-bank-payment-fees-vendors)
+-  [月次締め請求書](/dynamics365/unified-operations/financials/localizations/apac-jpn-consolidate-invoices)
+-  [固定資産の配賦ルール](/dynamics365/unified-operations/financials/localizations/apac-jpn-allocation-rules-fixed-assets)
+-  [均等償却方法](/dynamics365/unified-operations/financials/localizations/apac-jpn-equally-divided-depreciation-method)
+-  [固定資産の減価償却](/dynamics365/unified-operations/financials/localizations/apac-jpn-fixed-asset-depreciation)
+-  [キャッシュ生成単位の固定資産減損管理](/dynamics365/unified-operations/financials/localizations/apac-jpn-impairment-accounting-cash-generating-unit)
+-  [郵便番号のインポート](/dynamics365/unified-operations/financials/localizations/apac-jpn-import-postal-codes)
+-  [固定資産の資産除去責務の設定](/dynamics365/unified-operations/financials/localizations/apac-jpn-asset-retirement-obligation-fixed-assets)
+-  [固定資産の圧縮記帳の設定](/dynamics365/unified-operations/financials/localizations/apac-jpn-reduction-entry-fixed-assets)
+-  [受取手形の裏書による仕入先への支払](/dynamics365/unified-operations/financials/localizations/apac-jpn-endorse-bill-of-exchange)
+-  [累進的源泉徴収税の計算](/dynamics365/unified-operations/financials/localizations/apac-jpn-progressive-withholding-tax-calculation)
 
 ### <a name="latvia"></a>ラトビア
 
@@ -254,6 +267,7 @@ Microsoft Dynamics 365 for Finance and Operations には、[製品可用性ガ�
 ### <a name="norway"></a>ノルウェー
 
 -   [Nets インポート形式](/dynamics365/unified-operations/financials/localizations/emea-nor-nets-import-format)
+-   [VAT 明細書](/dynamics365/unified-operations/financials/localizations/emea-nor-sales-tax-payment-report)
 
 ### <a name="poland"></a>ポーランド
 
@@ -291,6 +305,7 @@ Microsoft Dynamics 365 for Finance and Operations には、[製品可用性ガ�
 ### <a name="sweden"></a>スウェーデン
 
 -   [スウェーデンの支払インポート形式](/dynamics365/unified-operations/financials/localizations/emea-swe-payment-formats-import)
+-   [スウェーデンのキャッシュ レジスター](/dynamics365/unified-operations/retail/localizations/emea-swe-cash-registers)
 
 ### <a name="switzerland"></a>スイス
 
