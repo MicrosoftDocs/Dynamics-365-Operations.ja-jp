@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: TaxTable
 audience: Application User
 ms.reviewer: ShylaThompson
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
@@ -30,6 +30,8 @@ ms.lasthandoff: 05/25/2017
 # <a name="sales-tax-calculation-methods-in-the-origin-field"></a>[発生元] フィールドでの売上税計算方法
 
 [!include[banner](../includes/banner.md)]
+
+[!include[retail name](../includes/retail-name.md)]
 
 
 この記事は、[売上税コードの値] ページの [発生元] フィールドのオプション、および売上税が選択された売上税コードのオプションに基づいて計算される方法を説明します。

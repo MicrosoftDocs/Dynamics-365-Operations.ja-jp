@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: EcoResProductDimension, EcoResProductDimensionGroup, EcoResProductMasterDimension, RetailEcoResColor, RetailEcoResSize, RetailEcoResStyle
 audience: Application User
 ms.reviewer: YuyuScheller
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 19171
 ms.assetid: 81fa3709-4ab8-4fbf-9806-359892a05985
 ms.search.region: Global
@@ -31,6 +31,8 @@ ms.lasthandoff: 05/25/2017
 # <a name="product-dimensions"></a>製品分析コード
 
 [!include[banner](../includes/banner.md)]
+
+[!include[Retail name](../includes/retail-name.md)]
 
 
 4 つの製品分析コードがあります - 色、構成、サイズ、およびスタイルです。 分析コード グループで製品分析コードを組み合わせて、製品マスターに分析コード グループを割り当てます。 製品分析コードの組み合わせは、製品バリアントの定義方法を決定します。
