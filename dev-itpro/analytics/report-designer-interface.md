@@ -3,7 +3,7 @@ title: "レポート デザイナー インターフェイス"
 description: "この記事では、レポート デザイナー内を移動する方法と、特定の要件を満たすためにさまざまなオプションを使用する方法について説明します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: ShylaThompson
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 59041
 ms.assetid: 054de5b0-8618-4195-be12-f031b4bb4d74
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 775a836748949a86b64a0ddec15ee4519b1c5127
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: aad8f2617d94e9abc77dafe96cb95f7e191873bd
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -53,7 +53,7 @@ ms.lasthandoff: 05/25/2017
 | 名前を付けて保存                           | 現在の行定義、列定義、レポート ツリー定義、またはレポート定義を新しい名前で保存します。                                                                            |
 | プロパティ                        | レポートの名前と説明を変更するための [**プロパティ**] ダイアログ ボックスを開きます。                                                                                                   |
 | 作成                          | 最新のレポートを生成します。 このコマンドはレポート定義から使用できます。                                                                                                                 |
-| [レポートの表示]                       | 生成されたレポートの最新バージョンを Dynamics 365 for Operations で開きます。 少なくとも 1 つのレポートが生成済であれば、このコマンドをレポート定義から使用できます。                                 |
+| [レポートの表示]                       | 生成されたレポートの最新バージョンを Finance and Operations で開きます。 少なくとも 1 つのレポートが生成済であれば、このコマンドをレポート定義から使用できます。                                 |
 | [最新のレポート定義]         | 最近作成または変更されたレポートの一覧を表示します。 これで、一覧からレポートを選択できます。                                                                                    |
 | [最新の行定義]            | 最近作成または変更された行定義の一覧を表示します。 これで、一覧から行定義を選択できます。                                                                    |
 | [最新の列定義]         | 最近作成または変更された列定義の一覧を表示します。 これで、一覧から列定義を選択できます。                                                              |
@@ -163,7 +163,7 @@ ms.lasthandoff: 05/25/2017
 
 | コマンド | 説明                                                  |
 |---------|--------------------------------------------------------------|
-| ヘルプ    | 財務報告書の Dynamics 365 for Operations ヘルプ トピック ページを開きます。 |
+| ヘルプ    | 財務報告書の Finance and Operations ヘルプ トピック ページを開きます。 |
 |         |                                                              |
 
 ## <a name="report-designer-toolbar-buttons"></a>レポート デザイナのツール バーのボタン

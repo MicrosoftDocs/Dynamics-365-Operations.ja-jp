@@ -1,16 +1,16 @@
 ---
 title: "顧客対応における仕入先コラボレーション"
-description: "このトピックでは、Microsoft Dynamics 365 for Operations で仕入先コラボレーションを使用して発注書を処理し委託販売在庫を監視する方法について説明します。"
+description: "このトピックでは、Finance and Operations で仕入先コラボレーションを使用して発注書を処理し委託販売在庫を監視する方法について説明します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: ConsignmentProductReceiptLines, ConsignmentVendorPortalOnHand, PurchVendorPortalConfirmedOrders, PurchVendorPortalOriginalOrder, PurchVendorPortalResponsesHistoryList, PurchVendorPortalResponsesPart
 audience: Application User
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 221234
 ms.assetid: 6e69fb8b-6d3a-46ef-88cf-6d01212aa7c3
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 1649014855d8d5e0f1225a661c9b6bae6490f597
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 41436dab710a5fee0fe0800dff1ebefefa841afc
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -31,9 +31,9 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-このトピックでは、Microsoft Dynamics 365 for Operations で仕入先コラボレーションを使用して発注書を処理し委託販売在庫を監視する方法について説明します。
+このトピックでは、Finance and Operations で仕入先コラボレーションを使用して発注書を処理し委託販売在庫を監視する方法について説明します。
 
-このトピックでは、Microsoft Dynamics 365 for Operations で仕入先コラボレーションを使用して顧客に対応する方法について説明します。 これには、発注書を監視して対応する方法、および委託販売在庫を監視する方法に関する情報が含まれます。 請求書の作業で仕入先コラボレーションを使用することもできます。 詳細については次を参照してください。[仕入先コラボレーションの請求ワークスペース](/dynamics365/operations/financials/accounts-payable/vendor-portal-invoicing-workspace)
+このトピックでは、Microsoft Finance and Operations で仕入先コラボレーションを使用して顧客に対応する方法について説明します。 これには、発注書を監視して対応する方法、および委託販売在庫を監視する方法に関する情報が含まれます。 請求書の作業で仕入先コラボレーションを使用することもできます。 詳細については次を参照してください。[仕入先コラボレーションの請求ワークスペース](/dynamics365/unified-operations/financials/accounts-payable/vendor-portal-invoicing-workspace)
 
 ## <a name="working-with-purchase-orders"></a>発注書に関連した作業
 **発注書確認**ワークスペースにより、確認のために送られてきた発注書に対応することができます。 顧客からのアクションを待っている発注書、および、確認済みではあるが未処理の発注書についての情報を確認することもできます。 **発注書確認**ワークスペースには、3 つのリストがあります。

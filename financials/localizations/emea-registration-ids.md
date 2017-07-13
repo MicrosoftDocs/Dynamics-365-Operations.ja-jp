@@ -3,7 +3,7 @@ title: "登録 ID"
 description: "このトピックでは、登録 ID の設定と使用に関する情報を提供します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,17 +11,17 @@ ms.technology:
 ms.search.form: DirPartTaxRegistrationSearch, LogisticsPostalAddress, TaxRegistrationLegislationTypes, TaxRegistrationType
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 264824
 ms.search.region: Global
 ms.author: vlru
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: fc4a56eceb75673b7a044bd8392f8d0cc675e869
+ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
+ms.openlocfilehash: 55c25b005e9dc73713f3d4a30eab5148b17c2fec
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
@@ -57,10 +57,12 @@ ms.lasthandoff: 05/25/2017
 |-----------------------|----------------|
 | 登録タイプ     | 特定の国/地域での登録タイプ。|
 | 次のものに制限         | 制限の種類は、なし、個人、組織の税登録タイプに適用されます。|
-| 登録カテゴリ | 国で使用するために承認された固有の登録 ID。 AX7.1 カテゴリでのサポートの完全な一覧は以下のとおりです。 |
+| 登録カテゴリ | 国で使用するために承認された固有の登録 ID。 Microsoft Dynamics 365 for Finance および Operations、Enterprise Edition カテゴリでのサポートの完全な一覧は以下のとおりです。 |
 
 ## <a name="enter-registration-ids-for-global-address-book-records"></a>グローバル アドレス帳レコードの登録 ID を入力します。
-Microsoft Dynamics 365 for Operations のグローバル アドレス帳 (GAB) には、顧客、仕入先、連絡先、取引関係、法人の連結された住所情報が含まれます。 詳細については、「[グローバル アドレス帳の概要](/dynamics365/operations/organization-administration/overview-global-address-book)」を参照してください。 グローバル アドレス帳に格納されている関係者レコードは、1 つ以上の住所レコードを格納できます。 これらの住所は、請求または配送など、さまざまな目的で使用されます。 顧客、仕入先、作業者、法人の住所情報に対する登録 ID を設定できます。 登録 ID を入力する関係者 (法人、仕入先、顧客、作業者) レコードを検索し、関係者、法人、仕入先、顧客、作業者に関連するフォームでの**登録 ID** をクリックして、**アドレスの管理**ページを開きます。 [**税登録**] タブで、[**追加**] をクリックし、登録 ID に関する次の情報を入力します。
+
+Microsoft Finance および Operations のグローバル アドレス帳 (GAB) には、顧客、仕入先、連絡先、取引関係、法人の連結された住所情報が含まれます。 詳細については、「[グローバル アドレス帳の概要](/dynamics365/unified-operations/fin-and-ops/organization-administration/overview-global-address-book)」を参照してください。 グローバル アドレス帳に格納されている関係者レコードは、1 つ以上の住所レコードを格納できます。 これらの住所は、請求または配送など、さまざまな目的で使用されます。 顧客、仕入先、作業者、法人の住所情報に対する登録 ID を設定できます。 登録 ID を入力する関係者 (法人、仕入先、顧客、作業者) レコードを検索し、関係者、法人、仕入先、顧客、作業者に関連するフォームでの**登録 ID** をクリックして、**アドレスの管理**ページを開きます。 [**税登録**] タブで、[**追加**] をクリックし、登録 ID に関する次の情報を入力します。
+
 
 |フィールド                |説明                                                |
 |---------------------|-----------------------------------------------------------|
@@ -80,23 +82,23 @@ Microsoft Dynamics 365 for Operations のグローバル アドレス帳 (GAB) �
 登録 ID に基づいた関係者レコードの検索が、関係者、法人、仕入先、顧客、および作業者に関連するフォームで使用できます。 [**登録 ID 検索**] をクリックして、**登録 ID 検索基準**ページを開きます。 検索基準を指定して [**検索**] をクリックします。 グローバル アドレス帳から選択されたレコードと関係者レコードに関連付けられているタイプがシステムによって表示されます。
 
 ## <a name="supported-registration-categories"></a>サポートされる登録カテゴリ
-次の表に、Dynamics 365 for Operations でサポートされている登録タイプを示します。 登録 ID について Microsoft Dynamics AX 2012 のフィールドで使い慣れている場合、この表を使って Dynamics 365 for Operations の登録カテゴリにそれらのフィールドをマップします。
+次の表に、Finance および Operations でサポートされている登録タイプを示します。 登録 ID について Microsoft Dynamics AX 2012 のフィールドで使い慣れている場合、この表を使って Finance および Operations の登録カテゴリにそれらのフィールドをマップします。
 
-| Dynamics 365 for Operations の登録カテゴリ         |国/地域  | Dynamics AX 2012 の用語/フィールド|
+| Finance および Operations の登録カテゴリ         |国/地域  | Dynamics AX 2012 の用語/フィールド|
 |---------------------------------------------------------------|---------------------|---------------------------------|
-| VAT                                                        | 欧州連合 (EU) のすべての国|  課税控除番号 (AX2012 R3 での法律タイプ TAX ID)|
-| エンタープライズ ID (COID)                                          | ベルギー チェコ共和国 エストニア ハンガリー ラトビア リトアニア ポーランド スイス | 企業番号 (EnterpriseNumber) 登録番号 (RegNum\_W) 登録番号 (RegNum\_W) 登録番号 (RegNum\_W) 登録番号 (RegNum\_W) 企業コード (EnterpriseCode) 登録番号 (RegNum\_W) UID (AX2012 R3 での法律タイプ UID) |
+| VAT                                                        | 欧州連合 (EU) のすべての国|  課税控除番号 (AX 2012 R3 での法律タイプ TAX ID)|
+| エンタープライズ ID (COID)                                          | ベルギー チェコ共和国 エストニア ハンガリー ラトビア リトアニア ポーランド スイス | 企業番号 (EnterpriseNumber) 登録番号 (RegNum\_W) 登録番号 (RegNum\_W) 登録番号 (RegNum\_W) 登録番号 (RegNum\_W) 企業コード (EnterpriseCode) 登録番号 (RegNum\_W) UID (AX 2012 R3 での法律タイプ UID) |
 | 支店 ID                                                     | ベルギー            | 支店番号 (BranchNumber)|
 | Spisová značka (登録番号、発行機関、セクション) | チェコ共和国     | 挿入番号 (CommercialRegisterInsetNumber) 商業登記で維持 (CommercialRegister) 商業登記のセクション (CommercialRegisterSection)|
 | 税関顧客 ID                                           | フィンランド | 税関顧客番号 (CustomsCustomerNumber\_FI)|
-| INN                                                           | ロシア連邦| INN (AX2012 R3 での法律タイプ INN)|
-| RRC                                                           | ロシア連邦| RRC (AX2012 R3 での法律タイプ RRC)|
-| OKDP                                                          | ロシア連邦| OKDP (AX2012 R3 での法律タイプ OKDP)|
-| OKPO                                                          | ロシア連邦| OKPO (AX2012 R3 での法律タイプ OKPO)|
-| RCOAD                                                         | ロシア連邦| RCOAD (AX2012 R3 での法律タイプ RCOAD)|
-| OGRN                                                          | ロシア連邦| OGRN (AX2012 R3 での法律タイプ OGRN) |
-| SNILS                                                         | ロシア連邦| SNILS (AX2012 R3 での法律タイプ SNILS)|
-| CIFTS                                                         | ロシア連邦| CIFTS (AX2012 R3 での法律タイプ CIFTS)|
+| INN                                                           | ロシア連邦| INN (AX 2012 R3 での法律タイプ INN)|
+| RRC                                                           | ロシア連邦| RRC (AX 2012 R3 での法律タイプ RRC)|
+| OKDP                                                          | ロシア連邦| OKDP (AX 2012 R3 での法律タイプ OKDP)|
+| OKPO                                                          | ロシア連邦| OKPO (AX 2012 R3 での法律タイプ OKPO)|
+| RCOAD                                                         | ロシア連邦| RCOAD (AX 2012 R3 での法律タイプ RCOAD)|
+| OGRN                                                          | ロシア連邦| OGRN (AX 2012 R3 での法律タイプ OGRN) |
+| SNILS                                                         | ロシア連邦| SNILS (AX 2012 R3 での法律タイプ SNILS)|
+| CIFTS                                                         | ロシア連邦| CIFTS (AX 2012 R3 での法律タイプ CIFTS)|
 
 必須の前提条件を含む登録 ID 処理の詳細については、Lifecycle Services (LCS) での VAT ID に関する次のタスク記録を参照してください。
 

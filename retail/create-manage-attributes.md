@@ -1,28 +1,29 @@
 ---
 title: "属性の作成と管理"
-description: "この記事は、Microsoft Dynamics 365 for Operations の属性について説明します。 [属性] により、ユーザー定義フィールドを使用して製品およびその特性を説明できます。"
+description: "この記事は、Microsoft Dynamics 365 for Retail の属性について説明します。 [属性] により、ユーザー定義フィールドを使用して製品およびその特性を説明できます。"
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 16461
 ms.assetid: 2b85491c-f830-4e79-a2cb-681b7ced6988
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: prabhup
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: eaee0edb4822a386c8781d9929999cea326f0a40
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: 4493c2f9e9e9dfe990f3b1670d3cd35e3bbaa38d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 
 ---
@@ -32,7 +33,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](includes/banner.md)]
 
 
-この記事は、Microsoft Dynamics 365 for Operations の属性について説明します。 [属性] により、ユーザー定義フィールドを使用して製品およびその特性を説明できます。
+この記事は、Microsoft Dynamics 365 for Retail の属性について説明します。 [属性] により、ユーザー定義フィールドを使用して製品およびその特性を説明できます。
 
 [属性] により、ユーザー定義フィールドを使用して製品およびその特性を説明できます。 たとえば、製品のメモリ サイズとハード ディスク能力を指定できます。製品が [エネルギー スター] に準拠しているかどうかを示します。 属性は、製品カテゴリ、小売チャンネルなどのさまざまな小売エンティティに関連付けられており、それらに対して既定値を設定できます。 製品は、製品カテゴリまたは小売チャンネルに関連付けられる場合、それらの属性および属性の既定値を継承します。 既定値は、個々の製品レベルや小売チャンネル レベル、または小売カタログで上書きできます。
 
@@ -59,7 +60,7 @@ ms.lasthandoff: 05/25/2017
 ## <a name="attribute-type"></a>属性タイプ
   [![attributes-fixed-copy](./media/attributes-fixed-copy.png)](./media/attributes-fixed-copy.png) 
   
-属性は、属性タイプをベースにしています。 属性タイプは、特定の属性に入力できるデータのタイプを識別します。 現在、Microsoft Dynamics 365 for Operations では、次の属性タイプをサポートしています :
+属性は、属性タイプをベースにしています。 属性タイプは、特定の属性に入力できるデータのタイプを識別します。 現在、Microsoft Dynamics 365 for Retail では、次の属性タイプをサポートしています :
 
 -   [**通貨**] – この属性タイプは、通貨の値をサポートします。 これはバインドできますし (値の範囲をサポートできる) 開いたままにもできます。
 -   [**日時**] – この属性タイプは、日付と時刻の値をサポートします。 これはバインドできますし (値の範囲をサポートできる) 開いたままにもできます。

@@ -3,7 +3,7 @@ title: "生産プロセスの概要"
 description: "この記事では、生産プロセスの概要を示します。 製造オーダー、バッチ オーダー、およびかんばんのオーダーの作成から財務期間の決算までのさまざまなステージについて説明します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: JmgProdStatusListPage, JmgShopSupervisorWorkspace, Kanban, ProdTable, ProdTableOverview
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 19832
 ms.assetid: 0e83c7ea-feba-4ed6-8717-8b48a3b8804a
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 311debe610b58af7cd986bd33ce9473e41cb3d8b
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: b73ec05442c8b089435d5813ea93b997c473cbb4
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -39,12 +39,12 @@ ms.lasthandoff: 05/25/2017
 
 [**生産管理**] モジュールは、他のモジュールにリンクされています。たとえば [**製品情報管理**]、[**在庫管理**]、[**総勘定元帳**]、[**倉庫管理**]、[**プロジェクト会計**]、および [**組織管理**] などです。 この統合では、完成品目の製造に必要な情報フローをサポートしています。  
 
-生産プロセスは、通常、特定の生産プロセスに対して選択された原価計算と在庫評価方法からの影響を受けます。 Dynamics 365 for Operations は、実績原価 (先入れ先出し \[FIFO\]、後入れ先出し \[LIFO\]、移動平均、および周期加重平均) と標準原価方法の両方をサポートしています。 リーン生産は、一括引き落とし原価計算原則に基づいて実行されます。  
+生産プロセスは、通常、特定の生産プロセスに対して選択された原価計算と在庫評価方法からの影響を受けます。 Finance and Operations は、実績原価 (先入れ先出し \[FIFO\]、後入れ先出し \[LIFO\]、移動平均、および周期加重平均) と標準原価方法の両方をサポートしています。 リーン生産は、一括引き落とし原価計算原則に基づいて実行されます。  
 
 原価計算方法の選択は、生産プロセス中の材料およびリソースの消費に関する報告の要件も定義します。 通常、実績原価法ではジョブ レベルの正確なレポートが必要で、周期原価計算法ではより粗い粒度の材料およびリソースの消費報告でも可能です。
 
 ## <a name="mixed-mode-manufacturing"></a>混合モード製造
-さまざまな製品と生産のトポロジーで、さまざまな注文タイプの適用が要求されます。 Dynamics 365 for Operations では、混合モードで、さまざまな注文タイプに対応します。 つまり、すべての注文タイプが、1 つの製品を製造するエンド ツー エンドのプロセス中に使用することができます。
+さまざまな製品と生産のトポロジーで、さまざまな注文タイプの適用が要求されます。 Finance and Operations では、混合モードで、さまざまな注文タイプに対応します。 つまり、すべての注文タイプが、1 つの製品を製造するエンド ツー エンドのプロセス中に使用することができます。
 
 -   **製造オーダー** – これは、古典的な注文タイプで、特定の製品または製品バリアントを、数量と日付を指定して製造します。 製造オーダーは、部品表 (BOM) と工順に基づきます。
 -   **バッチ オーダー** – この注文タイプは、プロセス産業と個別プロセスに使用します。そこでは、式に基づいた生産変換が行われるか、主要製品に加えてまたは代わりとして連産品と副産物が最終製品になります。 バッチ オーダーが**式**タイプの BOM および工順を使用します。

@@ -3,13 +3,13 @@ title: "販売とマーケティング"
 description: "販売およびマーケティングを使用して、販売フローのさまざまなタイプのデータを取得、保存、および使用できます。 このデータには、元の販売戦略、将来のフォローアップ アクション、および追加販売が含まれます。"
 author: kfend
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 92303
 ms.assetid: 65ca9992-bbfa-4224-bf0e-067a25c7e6a4
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 25ea6e64453b22d664dd65a1f1bb18e3a1997bc5
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: dddcc764bb11540b8207350c463d1adb2533e1c0
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -43,7 +43,7 @@ ms.lasthandoff: 05/25/2017
 
 ### <a name="campaigns"></a>キャンペーン
 
-キャンペーンは、見込顧客、潜在顧客、営業案件、およびキャンペーンに参加するように選択されているお客様の連絡先をターゲットとします。 Microsoft Dynamics 365 for Operations では、潜在的な顧客を最大化するため、テレマーケティング、メーリングおよびメールでのキャンペーンなどのキャンペーンのいくつかの種類を作成できます。 キャンペーンが進行して積極的な反応を受け取ると、キャンペーンに積極的に反応したこれらの受信者への営業プロセスを開始できます。
+キャンペーンは、見込顧客、潜在顧客、営業案件、およびキャンペーンに参加するように選択されているお客様の連絡先をターゲットとします。 Microsoft Dynamics 365 for Finance and Operations では、潜在的な顧客を最大化するため、テレマーケティング、メーリングおよびメールでのキャンペーンなどのキャンペーンのいくつかの種類を作成できます。 キャンペーンが進行して積極的な反応を受け取ると、キャンペーンに積極的に反応したこれらの受信者への営業プロセスを開始できます。
 
 ## <a name="sales"></a>販売注文
 販売機能を使用して、見積、新規および既存のお客様のアップセル/クロスセルを作成し、販売注文の作成および顧客の売上請求書を作成します。 次のプロセス フローは、販売の業務プロセスを表しています。 [![販売の業務プロセス](./media/sales01.jpg)](./media/sales01.jpg)

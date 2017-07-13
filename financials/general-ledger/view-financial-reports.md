@@ -1,27 +1,27 @@
 ---
 title: "財務諸表の表示"
-description: "この記事では、Microsoft Dynamics AX での財務報告書を表示、および検討する方法について説明します。 外観とを含まれるデータを変更するために、財務報告書に適用できるさまざまなオプションに関する情報が含まれています。"
-author: RobinARH
+description: "この記事では、Microsoft Dynamics 365 for Finance and Operations、Enterprise edition で財務報告書を表示、および検討する方法について説明します。 外観とを含まれるデータを変更するために、財務報告書に適用できるさまざまなオプションに関する情報が含まれています。"
+author: kweekley
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: RobinARH
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: shylaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 10334
 ms.assetid: d20f435f-fb65-4068-ab09-7efc7be683a6
 ms.search.region: Global
-ms.author: aolson
+ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 8b02dbc0181c08611674cdf571075c20d78cebdc
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 102031174417a33b12c32f6b8185556b8c4701e5
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -31,7 +31,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-この記事では、Microsoft Dynamics AX での財務報告書を表示、および検討する方法について説明します。 外観とを含まれるデータを変更するために、財務報告書に適用できるさまざまなオプションに関する情報が含まれています。
+この記事では、Microsoft Dynamics 365 for Finance and Operations、Enterprise edition で財務報告書を表示、および検討する方法について説明します。 外観とを含まれるデータを変更するために、財務報告書に適用できるさまざまなオプションに関する情報が含まれています。
 
 <a name="financial-reporting-overview"></a>財務諸表の概要
 ----------------------------
@@ -64,7 +64,7 @@ ms.lasthandoff: 05/25/2017
 財務諸表は更新後に、公開できます。 組織内の他のユーザーは、それを表示できます。 レポートを公開するには、アクション ウィンドウで [**公開**] をクリックします。
 
 ## <a name="display-a-financial-report-in-a-different-currency"></a>別の通貨での財務諸表の表示
-財務諸表は、いつでも任意の通貨で表示できます。 別の通貨でレポートを表示するには、アクション ウィンドウで、[**通貨**] をクリックし、通貨を選択します。 レポートがその通貨に変換され、結果が表示されます。 レポートのデザインの一部として含まれる通貨コードまたは記号は、新しい通貨を反映するように更新されます。 一覧に表示される通貨は、Microsoft Dynamics AX でコンフィギュレーションされたレポート通貨です。
+財務諸表は、いつでも任意の通貨で表示できます。 別の通貨でレポートを表示するには、アクション ウィンドウで、[**通貨**] をクリックし、通貨を選択します。 レポートがその通貨に変換され、結果が表示されます。 レポートのデザインの一部として含まれる通貨コードまたは記号は、新しい通貨を反映するように更新されます。 一覧に表示される通貨は、Finance and Operations でコンフィギュレーションされたレポート通貨です。
 
 ## <a name="display-a-summarized-view-of-the-financial-report"></a>財務諸表の集計済みビューの表示
 財務諸表には、明細行と集計行を含めることができます。 明細行は、主勘定または分析コードを含む行です。 集計行は、説明、合計、計算行です。 レポートの集計行を表示するには、[**表示**] をクリック、[**集計行のみ**] をクリックします。 レポートは折りたたまれ、集計行のみが表示されます。 集計行と共に明細行を表示するには、[**表示**] をクリックし、再度 [**集計行のみ**] をクリックします。
@@ -88,7 +88,8 @@ ms.lasthandoff: 05/25/2017
 <a name="see-also"></a>参照
 --------
 
-[Microsoft Dynamics AX の財務報告書](/dynamics365/operations/dev-itpro/analytics/financial-reporting-intro)
+[Microsoft Dynamics AX の財務報告書](/dynamics365/unified-operations/dev-itpro/analytics/financial-reporting-intro)
+
 
 
 

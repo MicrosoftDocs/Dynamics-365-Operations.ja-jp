@@ -1,6 +1,6 @@
 ---
 title: "減価償却方法"
-description: "この記事は、Microsoft Dynamics 365 for Operations にサポートされた減価償却方法および減価償却方式の概要を提供します。"
+description: "この記事は、Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition にサポートされた減価償却方法および減価償却方式の概要を提供します。"
 author: twheeloc
 manager: AnnBe
 ms.date: 04/25/2017
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: AssetDepreciationProfile, AssetGroupBookSetup, AssetGroupDepBookSetup
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 3441
 ms.assetid: 1d8267b1-86a8-44bf-8814-f56b5d45a0ae
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 6ddd496aecf850a4c98043780f98e9fba8e62b49
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 8b0361edb0f2dc7484fb9046ce4793fe9397e3d1
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -32,7 +32,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-この記事は、Microsoft Dynamics 365 for Operations にサポートされた減価償却方法および減価償却方式の概要を提供します。
+この記事は、Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition にサポートされた減価償却方法および減価償却方式の概要を提供します。
 
 さまざまな減価償却方法を選択できます。 減価償却方法の目的は、固定資産の減価償却が可能な値を各会計年度期間に配賦することです。 固定資産の減価償却が可能な値は、取得価格から仕損価格 (存在する場合) を差し引いた値です。 
 

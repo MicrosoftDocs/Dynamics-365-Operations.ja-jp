@@ -3,14 +3,14 @@ title: "倉庫作業のモバイル デバイスの設定"
 description: "この記事では、モバイル デバイス上で作業を行う倉庫作業者が使用するメニュー項目をコンフィギュレーションする方法を説明します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: WHSRFMenuItem
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 29941
 ms.assetid: 6dff6313-dc6e-4f06-9c0c-dab24eefe4da
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 6a7658c56e2d0712c6aa27a4bb8ffc02bbd01d6c
+ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
+ms.openlocfilehash: dfb738e41f4b3f7d475a551dca0aba7a071dd989
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -165,7 +165,7 @@ ms.lasthandoff: 05/25/2017
 </tr>
 <tr>
 <td>テンプレートによる移動</td>
-<td>一つの場所から別の場所に、半自動の方法で品目を移動します。 作業者が品目の移動元の場所を選択し、Microsoft Dynamics 365 for Operations が場所ディレクティブを使用して品目の移動先の場所を決定します。</td>
+<td>一つの場所から別の場所に、半自動の方法で品目を移動します。 作業者が品目の移動元の場所を選択し、Finance and Operations が場所ディレクティブを使用して品目の移動先の場所を決定します。</td>
 </tr>
 <tr>
 <td>倉庫間の移動</td>
@@ -214,7 +214,7 @@ ms.lasthandoff: 05/25/2017
 </tr>
 <tr class="even">
 <td>システム主導</td>
-<td>Microsoft Dynamics 365 for Operations では、作業者に割り当てられた作業のタイプ、および作業者が作業を実行する注文を管理します。 このオプションを選択すると、[アクション] ペインで [<strong>システム主導の作業</strong>] をクリックして、[<strong>システム主導の並べ替え順</strong>] ページで作業の並べ替え基準を設定できるようになります。 並べ替え基準は、作業者が作業を実行する順序を制御します。 必要な数だけ基準を追加できます。</td>
+<td>Microsoft Dynamics 365 for Finance and Operations では、作業者に割り当てられた作業のタイプ、および作業者が作業を実行する注文を管理します。 このオプションを選択すると、[アクション] ペインで [<strong>システム主導の作業</strong>] をクリックして、[<strong>システム主導の並べ替え順</strong>] ページで作業の並べ替え基準を設定できるようになります。 並べ替え基準は、作業者が作業を実行する順序を制御します。 必要な数だけ基準を追加できます。</td>
 </tr>
 <tr class="odd">
 <td>ユーザー主導</td>
@@ -226,7 +226,7 @@ ms.lasthandoff: 05/25/2017
 </tr>
 <tr class="odd">
 <td>システム グループ化</td>
-<td>Microsoft Dynamics 365 for Operations は、指定したフィールドに基づいて作業者の作業をグループ化します。 たとえば、作業者が出荷 ID、積荷 ID、または各作業単位をリンクできる値をスキャンするときに、ピッキング作業がグループ化されます。 このオプションを選択する場合、次のフィールドが要求されます。
+<td>Microsoft Dynamics 365 for Finance and Operations は、指定したフィールドに基づいて作業者の作業をグループ化します。 たとえば、作業者が出荷 ID、積荷 ID、または各作業単位をリンクできる値をスキャンするときに、ピッキング作業がグループ化されます。 このオプションを選択する場合、次のフィールドが要求されます。
 <ul>
 <li><strong>システム グループ化フィールド</strong> – 作業者が作業をグループ化するためにスキャンするフィールドを選択します。</li>
 <li><strong>システム グループ化ラベル</strong> – 作業をグループ化するためにスキャンする内容を作業者に指示するテキストを入力します。</li>
@@ -247,7 +247,7 @@ ms.lasthandoff: 05/25/2017
 </tr>
 <tr class="even">
 <td>循環棚卸のグループ化</td>
-<td>作業者がゾーン、作業プール、または場所を選択すると、その選択に基づいて Microsoft Dynamics 365 for Operations が作業を割り当てます。 このオプションを選択すると、[アクション] ペインの<strong>循環棚卸</strong>をクリックすることで、表示する追加情報を指定でき、また、計数に相違が見つかった場合に作業者が計数を繰り返す必要のある回数を指定できます。</td>
+<td>作業者がゾーン、作業プール、または場所を選択すると、その選択に基づいて Microsoft Dynamics 365 for Finance and Operations が作業を割り当てます。 このオプションを選択すると、[アクション] ペインの<strong>循環棚卸</strong>をクリックすることで、表示する追加情報を指定でき、また、計数に相違が見つかった場合に作業者が計数を繰り返す必要のある回数を指定できます。</td>
 </tr>
 </tbody>
 </table>
@@ -331,7 +331,7 @@ ms.lasthandoff: 05/25/2017
 </tr>
 <tr class="odd">
 <td>グループ プット アウェイ</td>
-<td>プット アウェイ作業をグループ化するには、このオプションを選択します。 このオプションは、作業が作業者または Microsoft Dynamics 365 for Operations によってグループ化された場合に使用できます。 作業者がグループ内のすべてのピッキング作業を終了すると、プット アウェイ作業がその同じグループに対して作成されます。</td>
+<td>プット アウェイ作業をグループ化するには、このオプションを選択します。 このオプションは、作業が作業者または Microsoft Dynamics 365 for Finance and Operations によってグループ化された場合に使用できます。 作業者がグループ内のすべてのピッキング作業を終了すると、プット アウェイ作業がその同じグループに対して作成されます。</td>
 </tr>
 <tr class="even">
 <td>在庫調整タイプ</td>
@@ -364,11 +364,11 @@ ms.lasthandoff: 05/25/2017
 </tr>
 <tr class="even">
 <td>システム グループ化フィールド</td>
-<td>Microsoft Dynamics 365 for Operations が作業者のピッキング作業をグループ化する方法を決定するためのフィールドを選択します。 たとえば、<strong>[ShipmentId]</strong> フィールドを選択した場合、作業者はピッキング作業をグループ化する出荷 ID をスキャンします。 出荷のすべての作業が作業者に割り当てられます。 このフィールドは、システムによってグループ化された既存の作業を使用するメニュー項目の作成を要求します。 また、<strong>システム グループ化ラベル</strong> フィールドに、スキャンする内容を作業者に指示するテキストを入力する必要があります。</td>
+<td>Microsoft Dynamics 365 for Finance and Operations が作業者のピッキング作業をグループ化する方法を決定するためのフィールドを選択します。 たとえば、<strong>[ShipmentId]</strong> フィールドを選択した場合、作業者はピッキング作業をグループ化する出荷 ID をスキャンします。 出荷のすべての作業が作業者に割り当てられます。 このフィールドは、システムによってグループ化された既存の作業を使用するメニュー項目の作成を要求します。 また、<strong>システム グループ化ラベル</strong> フィールドに、スキャンする内容を作業者に指示するテキストを入力する必要があります。</td>
 </tr>
 <tr class="odd">
 <td>システム グループ化ラベル</td>
-<td>Microsoft Dynamics 365 for Operations によってピッキング作業がグループ化されるときにスキャンする内容を作業者に指示するテキストを入力します。 たとえば、<strong>ShipmentId</strong> フィールドを使用して出荷別にピッキング作業をグループ化する場合、このフィールドに <strong>出荷 ID</strong> を入力することができます。 このフィールドは、システムによってグループ化された既存の作業を使用するメニュー項目の作成を要求します。 また、<strong>システム グループ化フィールド</strong> フィールドでグループ化するフィールドを選択する必要があります。</td>
+<td>Microsoft Dynamics 365 for Finance and Operations によってピッキング作業がグループ化されるときにスキャンする内容を作業者に指示するテキストを入力します。 たとえば、<strong>ShipmentId</strong> フィールドを使用して出荷別にピッキング作業をグループ化する場合、このフィールドに <strong>出荷 ID</strong> を入力することができます。 このフィールドは、システムによってグループ化された既存の作業を使用するメニュー項目の作成を要求します。 また、<strong>システム グループ化フィールド</strong> フィールドでグループ化するフィールドを選択する必要があります。</td>
 </tr>
 <tr class="even">
 <td>既定のデータを使用します</td>
@@ -384,13 +384,13 @@ ms.lasthandoff: 05/25/2017
 </tr>
 <tr class="odd">
 <td>作業テンプレートのコード</td>
-<td>プロセスの作業を作成する作業テンプレートを選択します。 たとえば、発注書の品目を受け取る場合、プット アウェイ作業は、作業テンプレートに基づいて生成されます。 作業テンプレートを選択しない場合、クエリ基準に基づいて Microsoft Dynamics 365 for Operations がテンプレートを割り当てます。 作業のテンプレートの詳細については、<a href="control-warehouse-location-directives.md">作業テンプレートと場所ディレクティブでの倉庫作業の制御</a> を参照してください。</td>
+<td>プロセスの作業を作成する作業テンプレートを選択します。 たとえば、発注書の品目を受け取る場合、プット アウェイ作業は、作業テンプレートに基づいて生成されます。 作業テンプレートを選択しない場合、クエリ基準に基づいて Microsoft Dynamics 365 for Finance and Operations がテンプレートを割り当てます。 作業のテンプレートの詳細については、<a href="control-warehouse-location-directives.md">作業テンプレートと場所ディレクティブでの倉庫作業の制御</a> を参照してください。</td>
 </tr>
 </tbody>
 </table>
 
 ## <a name="require-workers-to-confirm-the-product-location-or-quantity-when-they-pick-items"></a>品目のピッキング時に製品、場所、または数量の確認を作業者に要求
-倉庫内での作業時に場所や数量をモバイル デバイスで登録することを作業者に要求する、作業の確認を設定できます。 作業確認によって、作業者が正しい場所にいるか、または品目の正しい数量を処理しているかを確認することができます。 また、作業者の登録を自動的に確認するように Microsoft Dynamics 365 for Operations を設定することができます。 自動確認を有効にする場合は、場所または数量に対する確認を同時に要求することはできません。 作業の確認には製品と製品バリアントも含まれます。 また、バーコードのスキャンによって確認を登録できます。 製品および製品バリアントを確認するには、製品または製品バリアントの ID を入力する必要があります。 この ID には、製品 ID、製品検索 ID、外部 ID、GTIN、またはバーコードがあります。 ID の入力後、またはバーコードのスキャン後、製品バリアントの分析コードがモバイル デバイスに表示されます。 
+倉庫内での作業時に場所や数量をモバイル デバイスで登録することを作業者に要求する、作業の確認を設定できます。 作業確認によって、作業者が正しい場所にいるか、または品目の正しい数量を処理しているかを確認することができます。 また、作業者の登録を自動的に確認するように Microsoft Dynamics 365 for Finance and Operations を設定することができます。 自動確認を有効にする場合は、場所または数量に対する確認を同時に要求することはできません。 作業の確認には製品と製品バリアントも含まれます。 また、バーコードのスキャンによって確認を登録できます。 製品および製品バリアントを確認するには、製品または製品バリアントの ID を入力する必要があります。 この ID には、製品 ID、製品検索 ID、外部 ID、GTIN、またはバーコードがあります。 ID の入力後、またはバーコードのスキャン後、製品バリアントの分析コードがモバイル デバイスに表示されます。 
 
 次の表では、作業確認に使用できるさまざまな作業タイプを示します。
 

@@ -1,27 +1,27 @@
 ---
 title: "プロジェクト契約"
-description: "この記事では、さまざまなタイプのプロジェクトや資金調達ソースで作成できるプロジェクト契約について、また Microsoft Dynamics 365 for Operations で契約を管理しプロジェクト顧客に請求する方法についての説明と例を提供します。"
+description: "この記事では、さまざまなタイプのプロジェクトや資金調達ソースで作成できるプロジェクト契約について、また Microsoft Dynamics 365 for Finance and Operations,Enterprise エディションで契約を管理しプロジェクト顧客に請求する方法についての説明および例を提供します。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: ProjProjectContractsListPage, ProjProjectsListPage
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 23561
 ms.assetid: bfd18d9b-d9a6-4e21-bc95-bf4af45f617f
 ms.search.region: Global
-ms.author: kfend
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 9f3bdbd147f3132d64e3b9ac2bdd37f7278ae18d
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 2aa70e050bf068a26e2d0d86c26045fc000931eb
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -31,7 +31,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-この記事では、さまざまなタイプのプロジェクトや資金調達ソースで作成できるプロジェクト契約について、また Microsoft Dynamics 365 for Operations で契約を管理しプロジェクト顧客に請求する方法についての説明と例を提供します。
+この記事では、さまざまなタイプのプロジェクトや資金調達ソースで作成できるプロジェクト契約について、また Microsoft Dynamics 365 for Finance and Operations,Enterprise エディションで契約を管理しプロジェクト顧客に請求する方法についての説明および例を提供します。
 
 プロジェクト契約に作成するプロジェクト タイプで、プロジェクトの顧客への請求方法が決まります。 プロジェクト契約と関連するプロジェクトは変更できますが、プロジェクト タイプは変更できません。 
 
@@ -49,7 +49,7 @@ ms.lasthandoff: 05/25/2017
 -   道路プロジェクトは、2 つの自治体によって共同出資されます。
 -   橋プロジェクトは、政府補助金および私法人によって資金調達されます。
 
-Microsoft Dynamics 365 for Operations では、1 つのトランザクションまたはプロジェクト全体の請求を複数の顧客、付与、または組織の間で分割できます。 
+Finance and Operations では、1 つのトランザクションまたはプロジェクト全体の請求を複数の顧客、付与、または組織の間で分割できます。 
 
 複数の出資者が存在するプロジェクトでは、高度な資金調達プロジェクトの資金調達に寄与するすべての関係者は 資金調達ソース と呼ばれます。 顧客、組織、または付与が資金調達ソースとして定義されたら、1 つ以上の資金調達ルールに割り当てることができます。 資金調達ルールには、プロジェクトのさまざまな資金調達ソースに雑費を配賦する方法を決定する基準が含まれます。 
 

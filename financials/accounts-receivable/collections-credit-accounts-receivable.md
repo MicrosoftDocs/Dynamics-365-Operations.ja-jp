@@ -1,9 +1,9 @@
 ---
 title: "売掛金勘定の貸方転記と取立"
-description: "売掛金勘定回収情報は、Microsoft Dynamics 365 for Operations のコレクションのページを使用して 1 つの中央ビューで管理されます。 貸方および取立マネージャが回収を管理するには、この中央ビューを使用できます。 回収代行業者は、定義済の回収基準または [顧客] ページを使用して生成された、顧客リストから回収プロセスを開始することができます。"
+description: "売掛金勘定回収情報は、Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition のコレクションのページを使用して 1 つの中央ビューで管理されます。 貸方および取立マネージャが回収を管理するには、この中央ビューを使用できます。 回収代行業者は、定義済の回収基準または [顧客] ページを使用して生成された、顧客リストから回収プロセスを開始することができます。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: CustAgingSnapshot, CustBankAccounts, CustCollections, CustCollectionsActivitiesListPage, CustCollectionsAgent, CustCollectionsCaseListPage, CustCollectionsPool, CustCollectionsPoolsListPage, CustTable
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 3061
 ms.assetid: fd851520-8d93-434b-845b-be127d6ac3a6
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: mfalkner
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 74f671a35fa1dbeeb120fe968b1bcc09868f57d5
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: 49bc7ca4e5fff4c2686a8b7396d5bd2bcdd0c51a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
@@ -32,7 +32,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-売掛金勘定回収情報は、Microsoft Dynamics 365 for Operations のコレクションのページを使用して 1 つの中央ビューで管理されます。 貸方および取立マネージャが回収を管理するには、この中央ビューを使用できます。 回収代行業者は、定義済の回収基準または [顧客] ページを使用して生成された、顧客リストから回収プロセスを開始することができます。
+売掛金勘定回収情報は、Finance and Operations のコレクションのページを使用して 1 つの中央ビューで管理されます。 貸方および取立マネージャが回収を管理するには、この中央ビューを使用できます。 回収代行業者は、定義済の回収基準または [顧客] ページを使用して生成された、顧客リストから回収プロセスを開始することができます。
 
 回収を設定または作業を開始する前に、次の概念を理解する必要があります:
 -   顧客の経過期間スナップショットには、ある時点でのエイジングした残高の情報が含まれます
@@ -59,9 +59,9 @@ ms.lasthandoff: 05/25/2017
 顧客プールとは、回収またはエイジング プロセスで表示および管理できる顧客レポートのグループを定義するクエリです。 [指定の期間に達している残高] ページ、[回収活動] ページ、[回収ケースのリスト] ページで、顧客プールを使用して情報をフィルタ処理します。 経過期間スナップショットの作成時に含まれている顧客 ID をフィルタ処理するのにも、顧客プールを使用できます。
 
 ## <a name="collections-agents"></a>回収代行業者
-既定では、Microsoft Dynamics 365 for Operations のユーザーには、回収リスト ページのすべての顧客情報を表示できます。 回収代行業者のレコードを使用して、回収リスト ページと [回収] ページの情報をフィルタ処理して使用できる顧客プールを決定できます。 
+既定では、Microsoft Dynamics 365 for Finance and Operations のユーザーには、回収リスト ページのすべての顧客情報を表示できます。 回収代行業者のレコードを使用して、回収リスト ページと [回収] ページの情報をフィルタ処理して使用できる顧客プールを決定できます。 
 
-回収代行業者とは、回収が時間通りに行われるように顧客ために動く担当者です。 Microsoft Dynamics 365 for Operations では、回収代行業者は、[ユーザー設定] ページでユーザーに割り当てられている作業者です。
+回収代行業者とは、回収が時間通りに行われるように顧客ために動く担当者です。 Finance and Operations では、回収代行業者は、[ユーザー設定] ページでユーザーに割り当てられている作業者です。
 
 ## <a name="collections-list-pages"></a>回収リストのページ
 次のリスト ページでは、回収情報を整理することができます。
@@ -71,7 +71,7 @@ ms.lasthandoff: 05/25/2017
 
 > [!NOTE]
 > 経過期間スナップショットは、これらのリスト ページの情報を表示する前に、作成する必要があります。 経過期間スナップショットが作成されている顧客に対してのみ、情報が表示されます。リスト ページで表示されるレコードは、次のようにしてさらにフィルタ処理できます。
-<li>既定では、Microsoft Dynamics 365 for Operations のユーザーは、経過期間スナップショットのあるすべての顧客にアクセスできます。</li>
+<li>既定では、Finance and Operations のユーザーは、経過期間スナップショットのあるすべての顧客にアクセスできます。</li>
 <li>顧客プールが存在する場合、ユーザーは回収代行業者として設定され、プールを使用して回収リスト ページの情報をフィルタ処理する必要があります。 情報は、選択した顧客プールに含まれる顧客に限定されます。</li>
 <li>ユーザーが回収代行業者として設定されている場合、その回収代行業者に選択したプールのみがリスト ページで使用できます。 回収代行業者について、[回収代行業者] ページで [エージェントがすべての顧客プールを表示できるようにする] の切り替えを選択した場合、すべてのプールがその業者で使用できます。</li>
 

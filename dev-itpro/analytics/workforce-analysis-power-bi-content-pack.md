@@ -1,15 +1,15 @@
 ---
-title: "Workforce Metrics Power BI コンテンツ"
-description: "このトピックでは Dynamics 365 for Operations - Workforce Metrics Power BI コンテンツについて説明します。 コンテンツ パックに含まれているレポートにアクセスする方法を説明し、コンテンツ パックを作成するために使用したデータ モデルおよびエンティティについての情報を提供します。"
-author: twheeloc
+title: "従業員のメトリック Power BI コンテンツ"
+description: "このトピックでは、従業員のメトリック Power BI コンテンツについて説明します。 レポートにアクセスする方法を説明し、コンテンツを作成するために使用したデータ モデルおよびエンティティについての情報を提供します。"
+author: jcart1106
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: Operations
+ms.search.scope: Operations, UnifiedOperations, Talent, Core
 ms.custom: 264084
 ms.assetid: 8e700583-3a7d-4f5f-9ac8-58c4feed1a02
 ms.search.region: Global
@@ -17,85 +17,81 @@ ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 2a3f611d29e041a5f05e3f93fd2330f4218b9dd1
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 1f732a53eee17317417058b92706a9228d783cb5
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="workforce-metrics-power-bi-content"></a>Workforce Metrics Power BI コンテンツ
+# <a name="workforce-metrics-power-bi-content"></a>従業員のメトリック Power BI コンテンツ
 
 [!include[banner](../includes/banner.md)]
 
+このトピックでは、[**従業員のメトリック**] Microsoft Power BI コンテンツについて説明します。 Power BI レポートにアクセスする方法を説明し、コンテンツを作成するために使用したデータ モデルおよびエンティティについての情報を提供します。
 
-このトピックでは Dynamics 365 for Operations - Workforce Metrics Power BI コンテンツについて説明します。 コンテンツ パックに含まれているレポートにアクセスする方法を説明し、コンテンツ パックを作成するために使用したデータ モデルおよびエンティティについての情報を提供します。
+## <a name="accessing-the-power-bi-content"></a>Power BI コンテンツへのアクセス
+これらの製品のいずれかを使用する場合、[**従業員のメトリック**] Power BI コンテンツは [**人事管理**] ワークスペースに表示されます。
 
-<a name="accessing-the-content-pack"></a>コンテンツ パックへのアクセス
---------------------------
+- Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 2017 年 ７ 月の更新プログラム
+- Microsoft Dynamics 365 for Talent
 
-Workforce Metrics コンテンツ パックは、Microsoft Dynamics Lifecycle Services (LCS) の共有アセット ライブラリにあります。 コンテンツ パックのダウンロード方法および Microsoft Dynamics 365 for Operations データに接続する方法の詳細については、「[Microsoft およびパートナーからの LCS での Power BI コンテンツ](power-bi-content-microsoft-partners.md)」を参照してください。
+## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Power BI コンテンツに含まれるメトリックス
+次の表に、各レポートで表示されるメトリックの一覧を示します。
 
-## <a name="reports-that-are-included-in-the-content-pack"></a>コンテンツ パックに含まれるレポート
-コンテンツ パックを Dynamics 365 for Operations データに接続した後に、レポートに組織のデータが表示されます。 Microsoft Power BI を以前に使用したことがない場合は、詳細については「[Power BI のガイド付きの学習](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData)」を参照してください。 コンテンツ パックに含まれるレポートには、追加情報を含むグラフとテーブルの両方があります。 次の表にレポートを示します。
-
-| レポート                                            | コンテンツ                                                                                                                                                                                                            |
+| レポート                                            | メトリックス                                                                                                                                                                                                            |
 |--------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 人員メトリック                                   | 他のレポートの集計                                                                                                                           |
 | 会社、部門、場所人数分析 | 会社別の人数、部門別の人数、場所別の人数、および総人数                                                                                                                           |
 | 職務、ステップ、管理者人数分析            | 職務別の人数、ステップ別の人数、管理者別の人数、および総人数                                                                                                                                      |
 | 人数傾向分析                         | 会社別の今年対去年の人数、および過去 12 か月のローリング人数                                                                                                                        |
-| 従業員の人口統計                           | 年齢と性別ごとの人数、出身民族別の人数、ベテラン状態別の人数、配偶者の有無別の人数、フルタイム学生の数、平均勤続期間、平均年齢、男性従業員に対する女性の比率 |
+| FTE 分析                                     | フルタイム相当 (FTE) の合計、割り当て済み FTE の合計、部門別 FTE、過去 12 か月の FTE、およびジョブごとの FTE |
+| 従業員の人口統計                           | 年齢と性別ごとの人数、出身民族別の人数、ベテラン状態別の人数、配偶者の有無別の人数、フルタイム学生の数、平均勤続期間、平均年齢、男性従業員に対する女性の比率、および従業員によって話されている言語 |
 | 職位分析                                | 部門別の空いている職位、欠員から採用済みになった職位、有効から無効になった職位、部門別の職位                                                                                                   |
-| 縮小分析                               | 今年対去年の縮小、縮小、退職人員の平均勤続期間、退職人員の平均年齢、および理由があって退職する従業員                                                                   |
+| 縮小分析                               | 今年対去年の縮小、縮小、年齢および性別ごとの退職する従業員、退職人員の平均勤続期間、今月退職する従業員、および理由があって退職する従業員                                                                   |
 | 部署ごとの人員                             | 部門別の従業員の個人番号、職位、および割り当て開始日と終了日                                                                                                                       |
-| 勤続分析                               | 会社と勤続リスト別の平均勤続年数                                                                                                                                                              |
-| 記念日および勤続年数               | 勤続年数、記念日別の従業員                                                                                                                                                                    |
+| 勤続分析                               | 会社と勤続リスト別の平均勤続期間、平均年数                                                                                                                                                              |
+| 従業員の記念日                           | 今月の記念日、来月の記念日、勤続年数および記念日別の従業員、部門別の勤続年数                                                                                                                                                                    |
+| 従業員の誕生日                               | 今月の誕生日、来月の誕生日、従業員の誕生日、および月と部門別の誕生日                                                                                                                                                                    |
+| 大量雇用プロジェクト                               | 大量雇用プロジェクトの合計、ステータス別大量雇用プロジェクト、部門および所有者別の大量雇用プロジェクト、ジョブ別の大量雇用プロジェクト、および大量雇用プロジェクト                                                                                                                                                                    |
 
 これらのレポートのグラフとタイルをフィルター処理し、ダッシュボードに固定することができます。 Power BI のフィルター処理と固定方法の詳細については、「[ダッシュボードの作成およびコンフィギュレーション](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards)」を参照してください。
 
+## <a name="extending-the-power-bi-content"></a>Power BI コンテンツの拡張
+Microsoft Dynamics Lifecycle Services (LCS) で利用できるコンテンツ パックを使用すると、Finance and Operations にログインしない人々に関する優れた分析ができます。 ほかのレポートまたはビジュアルを含めるよう、これらのコンテンツ パックを変更できます。次いで分析のためにコンテンツ パックを Power BI.com テナントに発行します。
+
+LCS の共有資産ライブラリに [**従業員のメトリック**] Power BI コンテンツがあります。 コンテンツのダウンロード方法および組織で実装する方法の詳細については、「[Microsoft およびパートナーからの LCS での Power BI コンテンツ](power-bi-content-microsoft-partners.md)」を参照してください。 Power BI コンテンツの実装方法を示すデモを視聴するには、「[Microsoft の Power BI コンテンツおよび Dynamics Lifecycle Services のパートナー](https://mix.office.com/watch/9puyb1b2xs1w)」の Office Mix を参照してください。
+
+ご使用のバージョンの Microsoft Dynamics 365 に適用する [**従業員のメトリック**] Power BI コンテンツをダウンロードしてください。
+
+>[!NOTE]
+>Lifecycle Services で使用できる .pbix ファイルは、Finance and Operations にのみ適用されます。
+
 ## <a name="understanding-the-data-model-and-entities"></a>データ モデルおよびエンティティの理解
-Dynamics 365 for Operations のデータを使用して、従業員メトリックス コンテンツ パックに情報を入力します。 次の表に、コンテンツ パックが基づいているエンティティを示します。
+次の表に、コンテンツが基づいているエンティティを示します。
 
-| エンティティ                            | コンテンツ                                                                                                   | 他のエンティティとの関係                                                                                                                                                                                                                                                                                                |
-|-----------------------------------|------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Workforce\_CalendarOffset         | レポートをスライスするカレンダーのオフセット                                                                          | Workforce\_PastPositionAssignment Workforce\_PositionTrend Workorce\_WorkerTrend Workforce\_TerminatedWorker                                                                                                                                                                                                                     |
-| Workforce\_Company                | レポートをフィルター処理する会社                                                                             | Workforce\_CurrentCompensation Workforce\_CurrentWorker Workforce\_TerminatedWorker Workorce\_WorkerTrend                                                                                                                                                                                                                        |
-| Workforce\_Compensation           | 時間経過に伴う支払レートと頻度                                                                           | Workforce\_CurrentCompensation Workforce\_CurrentWorker Workforce\_TerminatedWorker Workorce\_WorkerTrend                                                                                                                                                                                                                        |
-| Workforce\_CurrentCompensation    | 現在の日付時点の支払レートと頻度                                                              | Workforce\_Company Workforce\_Compensation Workforce\_Demographics Workforce\_Job Workforce\_Position                                                                                                                                                                                                                            |
-| Workforce\_CurrentPosition        | 現在の日付時点での職位、フルタイム相当 (FTE)、空いている職位、欠員から採用済みになった職位 | Workforce\_Job Workforce\_Position                                                                                                                                                                                                                                                                                               |
-| Workforce\_CurrentWorker          | 現在の日付時点での作業者、期日経過日数、人員                                                         | Workforce\_Company Workforce\_Compensation Workforce\_GeographicLocation Workforce\_Performance Workforce\_WorkerName Workforce\_ReportsToWorkerName Workforce\_WorkerTitle Workforce\_Demographics Workforce\_Job Workforce\_Employment Workforce\_Position Workforce\_WorkerBenefit                                            |
-| Workforce\_Date                   | 日、週、月、年                                                                             | Workforce\_PastPositionAssignment Workforce\_PositionTrend Workforce\_TerminatedWorker Workorce\_WorkerTrend                                                                                                                                                                                                                     |
-| Workforce\_Demographics           | 生年月日、性別、出身民族、配偶者の有無                                                   | Workforce\_CurrentWorker Workforce\_TerminatedWorker Workorce\_WorkerTrend                                                                                                                                                                                                                                                       |
-| Workforce\_Employment             | 開始日、終了日、移行日                                                                  | Workforce\_CurrentWorker Workforce\_TerminatedWorker Workorce\_WorkerTrend                                                                                                                                                                                                                                                       |
-| Workforce\_GeographicLocation     | 市町村、市区郡、郵便番号、都道府県                                                           | Workforce\_CurrentWorker Workforce\_TerminatedWorker Workorce\_WorkerTrend                                                                                                                                                                                                                                                       |
-| Workforce\_Job                    | 職務、タイプ、役職                                                                                  | Workforce\_CurrentPosition Workforce\_CurrentWorker                                                                                                                                                                                                                                                                              |
-| Workforce\_JobPerferredSkill      |                                                                                                            |                                                                                                                                                                                                                                                                                                                                  |
-| Workforce\_PastPositionAssignment | 割り当て理由、開始日、終了日、職務                                                           | Workforce\_CalendarOffset Workforce\_Date Workforce\_Job Workforce\_Position                                                                                                                                                                                                                                                     |
-| Workforce\_Performance            | 評価、説明、評価モデル                                                                      | Workforce\_CurrentWorker Workforce\_TerminatedWorker Workorce\_WorkerTrend                                                                                                                                                                                                                                                       |
-| Workforce\_PersonSkill            | レベルおよびスキル                                                                                            | Workforce\_Skill                                                                                                                                                                                                                                                                                                                 |
-| Workforce\_PersonSkillAnalysis    | 認定済みレベルおよびスキル                                                                                | Workforce\_Skill Workforce\_WorkerName                                                                                                                                                                                                                                                                                           |
-| Workforce\_Position               | 部門、FTE、職位、職位のタイプ、役職                                                        | Workforce\_CurrentPosition Workforce\_CurrentWorker                                                                                                                                                                                                                                                                              |
-| Workforce\_PositionTrend          | 時間経過に伴う職位、FTE、職務                                                                          | Workforce\_CalendarOffset Workforce\_Date Workforce\_Job Workforce\_Position                                                                                                                                                                                                                                                     |
-| Workforce\_ReportsToWorkerName    | 名、姓、フルネーム                                                                       | Workforce\_CurrentWorker Workforce\_TerminatedWorker Workorce\_WorkerTrend                                                                                                                                                                                                                                                       |
-| Workforce\_Skill                  | スキル、スキル タイプおよび評価                                                                              | Workforce\_PersonSkill Workforce\_PersonSkillAnalysis                                                                                                                                                                                                                                                                            |
-| Workforce\_TerminatedWorker       | 退職済作業者、退職日、役職、職位、職務                                             | Workforce\_Company Workforce\_Compensation Workforce\_GeographicLocation Workforce\_Performance Workforce\_WorkerName Workforce\_ReportsToWorkerName Workforce\_CalendarOffset Workforces\_Date Workforce\_WorkerTitle Workforce\_Demographics Workforce\_Employment Workforce\_Job Workforce\_Position Workforce\_WorkerBenefit |
-| Workforce\_WorkerBenefit          | 有効日、福利厚生オプション、福利厚生計画、福利厚生タイプ                                             | Workforce\_CurrentWorker Workforce\_TerminatedWorker Workorce\_WorkerTrend                                                                                                                                                                                                                                                       |
-| Workforce\_WorkerName             | 名、姓、フルネーム                                                                       | Workforce\_CurrentWorker Workforce\_TerminatedWorker Workorce\_WorkerTrend Workforce\_PersonSkillAnalysis                                                                                                                                                                                                                        |
-| Workforce\_WorkerTitle            | 役職と勤続日数                                                                                   | Workforce\_CurrentWorker Workforce\_TerminatedWorker Workorce\_WorkerTrend                                                                                                                                                                                                                                                       |
-| Workorce\_WorkerTrend             | 時間経過に伴う作業者、人員、会社、職位                                                        | Workforce\_Company Workforce\_Compensation Workforce\_GeographicLocation Workforce\_Performance Workforce\_WorkerName Workforce\_ReportsToWorkerName Workforce\_CalendarOffset Workforces\_Date Workforce\_WorkerTitle Workforce\_Demographics Workforce\_Employment Workforce\_Job Workforce\_WorkerBenefit                     |
+| エンティティ                   | コンテンツ                                                                            | 他のエンティティとの関係 |
+|--------------------------|-------------------------------------------------------------------------------------|-----------------------------------|
+| カレンダーのオフセット          | レポートをスライスするカレンダーのオフセット                                                   | 過去の職位の割り当て、職位のトレンド、従業員のトレンド、退職済従業員 |
+| 法人                  | レポートをフィルター処理する会社                                                      | 現在の従業員、退職済従業員、従業員のトレンド |
+| 現在の職位         | 現在の日付時点での職位、FTE、空いている職位、欠員から採用済みになった職位 | 職務、職位 |
+| 現在の従業員         | 現在の日付時点での作業者、期日経過日数、人員                                  | 会社、地理的な場所、従業員名、レポート先、従業員の肩書き、従業員層、職務、雇用、職位 |
+| 日                     | 日、週、月、年                                                      | 過去の職位の割り当て、職位のトレンド、退職済従業員、従業員のトレンド |
+| 顧客情報             | 生年月日、性別、出身民族、配偶者の有無                            | 現在の従業員、退職済従業員、従業員のトレンド |
+| 雇用               | 開始日、終了日、移行日                                           | 現在の従業員、退職済従業員、従業員のトレンド |
+| 地理的な場所      | 市町村、市区郡、郵便番号、都道府県                                    | 現在の従業員、退職済従業員、従業員のトレンド |
+| ジョブ                      | 職務、タイプ、役職                                                           | 現在の職位、現在の従業員 |
+| 過去の職位の割り当て | 割り当て理由、開始日、終了日、職務                                    | カレンダーのオフセット、日付、ジョブ、職位 |
+| 配置                 | 部門、FTE、職位、職位のタイプ、役職                                 | 現在の職位、現在の従業員 |
+| 職位のトレンド           | 時間経過に伴う職位、FTE、職務                                                   | カレンダーのオフセット、日付、ジョブ、職位 |
+| レポート先               | 名、姓、フルネーム                                                | 現在の従業員、退職済従業員、従業員のトレンド |
+| 退職済従業員      | 退職済作業者、退職日、役職、職位、職務                      | 会社、地理的な場所、従業員名、レポート先、カレンダーのオフセット、日付、従業員の肩書き、従業員層、雇用、職務、職位 |
+| 従業員名            | 名、姓、フルネーム                                                | 現在の作業者、退職済従業員、従業員のトレンド |
+| 従業員の肩書き           | 役職と勤続日数                                                            | 現在の従業員、退職済従業員、従業員のトレンド |
+| 従業員のトレンド           | 時間経過に伴う作業者、人員、会社、職位                                 | 会社、地理的な場所、従業員名、レポート先、カレンダーのオフセット、日付、従業員の肩書き、従業員層、雇用、職務 |
+| 大量雇用プロジェクト        | 大量雇用プロジェクト、プロジェクトの所有者、およびプロジェクトのステータスの数                     | 会社、大量雇用ライン |
+| 大量雇用ライン           | 部門、雇用タイプ、および職位                                           | 日付、職務、大量採用プロジェクト |
 
-これらのエンティティは、データ モデルの計算メジャーを作成するために使用されました。 これらの計算メジャーは、主要業績評価指標 (KPI) およびコンテンツ パックで使用するためのレポートを計算するために使用されます。 レポートおよびダッシュボードに追加の計算を含める場合は、LCS から CompensationandBenefits.pbix ファイルをダウンロードして変更することができます。 このファイルはコンテンツ パックを作成するために使用された既定のデータ モデルです。 変更後に、追加した情報を含む組織のコンテンツ パックとダッシュボードを作成できます。
-
-## <a name="additional-resources"></a>追加リソース
-エンティティと建物 Power BI の内容に関連する役立つリンクを次に示します:
-
--   [データ エンティティ](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/)
--   [組織のコンテンツ パックの作成](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
--   [Power BI を使用したデータのモデル化](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
--   [Power BI タイルをワークスペースへ追加する](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/07/06/pinning-power-bi-reports-to-dynamics-ax-client/)
-
-
-
-
+これらのエンティティは、データ モデルの計算メジャーを作成するために使用されました。 これらの計算メジャーは、主要業績評価指標 (KPI) および POWER BI コンテンツで使用するためのレポートを計算するために使用されます。 レポートおよびダッシュボードに追加の計算を含める場合は、LCS から .pbix ファイルをダウンロードして変更することができます。 このファイルは POWER BI コンテンツを作成するために使用された既定のデータ モデルです。 変更後に、追加した情報を含む組織のコンテンツ パックとダッシュボードを作成できます。
 

@@ -1,40 +1,41 @@
 ---
 title: "コール センター機能"
-description: "この記事は、Microsoft Dynamics 365 for Operations でのコール センターの販売機能の概要を示します。"
+description: "この記事は、Microsoft Dynamics 365 for Retail でのコール センターの販売機能の概要を示します。"
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 16361
 ms.assetid: c8ed2ba4-8d06-4d99-9728-2a83e6d95ca9
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 40d7c1a95f33c189639c12279a8e3a286f0c6761
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: befbf43a0af8016895e570f5d8cf3a51983692f2
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 
 ---
 
-# <a name="call-center-functionality"></a>コール センター機能
+# <a name="call-center-functionality"></a>コール センターの機能
 
 [!include[banner](includes/banner.md)]
 
 
-この記事は、Microsoft Dynamics 365 for Operations でのコール センターの販売機能の概要を示します。
+この記事は、Microsoft Dynamics 365 for Retail でのコール センターの販売機能の概要を示します。
 
-Microsoft Dynamics AX の [小売りとコマース] は、小売チャンネルのタイプとしてコール センターをサポートします。 コール センターでは、作業者は電話で顧客の注文をとり、販売注文を作成します。 コール センター機能には、電話で注文を受け付けて、注文処理プロセス全体の顧客サービスの処理を容易にするための機能が含まれています。 たとえば、コール センターの作業者は、販売注文に支払い情報を直接入力でき、注文を送信する前に請求金額と支払の詳細な集計を表示できます。 作業者は価格決定を制御するための選択肢を持っており、[**販売注文**] ページの顧客、製品、および価格に関するさまざまなデータにアクセスできます。 また、コール センターには、顧客履歴と注文の状態を追跡するために強化された機能もあります。 各コール センターは、独自のユーザー、支払方法、価格グループ、財務分析コード、配達のモードを使用できます。 コール センターを作成するとき、これらのオプションをコンフィギュレーションできます。 また、[**コール センター**] ページを使用して、コール センター固有の次の機能グループを有効または無効にできます。
+Dynamics 365 for Retail は、小売チャンネルのタイプとしてコール センターもサポートします。 コール センターでは、作業者が電話で顧客の注文をとり、販売注文を作成します。 コール センター機能には、電話で注文を受け付けて、注文処理プロセス全体の顧客サービスの処理を容易にするための機能が含まれています。 たとえば、コール センターの作業者は、販売注文に支払い情報を直接入力でき、注文を送信する前に請求金額と支払の詳細な集計を表示できます。 作業者は価格決定を制御するための選択肢を持っており、[**販売注文**] ページの顧客、製品、および価格に関するさまざまなデータにアクセスできます。 また、コール センターには、顧客履歴と注文の状態を追跡するために強化された機能もあります。 各コール センターは、独自のユーザー、支払方法、価格グループ、財務分析コード、配達のモードを使用できます。 コール センターを作成するとき、これらのオプションをコンフィギュレーションできます。 また、[**コール センター**] ページを使用して、コール センター固有の次の機能グループを有効または無効にできます。
 
 -   [**注文完了**] – このグループには [**販売注文**] ページの支払いおよび注文完了に関連する機能が含まれます。
 -   [**主導販売**] – このグループにはソース コード、スクリプト、カタログ要求に関連する機能が含まれます。 

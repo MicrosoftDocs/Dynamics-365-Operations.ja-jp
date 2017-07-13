@@ -3,14 +3,14 @@ title: "倉庫のコンフィギュレーション"
 description: "この記事は、倉庫をコンフィギュレーションする方法について説明します。 これには、倉庫レイアウトおよび倉庫プロセスを有効にする方法に関する情報が含まれます。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventLocation, WHSLocation, WHSLocationBuild, WHSLocationProfile, WHSLocationType, WHSLocDirTable, WHSParameters, WHSWaveTemplateTable, WHSWorkPool, WHSWorkTemplateTable, WHSZone, WHSZoneGroup
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 11554
 ms.assetid: 262b7b88-2cce-44f7-9a5b-77c12af1be20
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 08c086767303f6f52e085f8f56b5d09f1e46878f
+ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
+ms.openlocfilehash: 17608d373fbedd20efe0b525ec141989a50a40a2
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -36,7 +36,7 @@ ms.lasthandoff: 05/25/2017
 **メモ:** この記事は、**倉庫管理**モジュールの機能が対象です (詳細な倉庫保管)。 **在庫管理**モジュールの倉庫機能は対象外です。
 
 ## <a name="warehouse-layout"></a>倉庫レイアウト
-Microsoft Dynamics 365 for Operations の倉庫管理システムは、最適な倉庫効率を達成できるよう、変化するニーズを満たす倉庫レイアウトを定義する柔軟な方法を提供します。
+Microsoft Dynamics 365 Finance and Operations、Enterprise edition の倉庫管理システムは、最適な倉庫効率を達成できるよう、変化するニーズを満たす倉庫レイアウトを定義する柔軟な方法を提供します。
 
 -   商品を最適に配置するために、優先順位が高い保管エリアと優先順位の低い保管エリアを設定できます。
 -   品目の温度条件や回転率など、さまざまな倉庫のニーズに対応するため、倉庫をゾーンに分割できます。
@@ -44,7 +44,7 @@ Microsoft Dynamics 365 for Operations の倉庫管理システムは、最適な
 -   物理的能力制約の設定を使用して場所をグループ化できます。
 -   クエリ定義したルールに基づいて品目の保管、ピッキング方法を制御できます。
 
-Microsoft Dynamics 365 for Operations で倉庫管理を使用するには、倉庫を作成し、詳細またはより特別な倉庫管理の活動に対して有効にする必要があります。 [**倉庫**] ページで、[**倉庫管理プロセスの使用**] オプションを選択します。
+Finance and Operations で倉庫管理を使用するには、倉庫を作成し、詳細またはより特別な倉庫管理の活動に対して有効にする必要があります。 [**倉庫**] ページで、[**倉庫管理プロセスの使用**] オプションを選択します。
 
 ### <a name="zone-groups-zones-location-types-and-locations"></a>ゾーン グループ、ゾーン、場所のタイプと場所
 
@@ -56,7 +56,7 @@ Microsoft Dynamics 365 for Operations で倉庫管理を使用するには、倉
 -   [**場所タイプ**] – 倉庫の場所の論理的または物理的グループ。 たとえば、すべてのステージング場所の場所タイプを作成できます。 [**倉庫管理パラメーター**] ページの必須の設定は、ステージング場所のタイプおよび最終出荷場所タイプを定義するプロセスをドライブします。
 -   [**場所**] – 場所情報の最下位レベル。 場所は、手持在庫が倉庫のどこに格納され、どこでピッキングされるかの追跡に使用されます。
 
-自分の倉庫レイアウトを定義するために作成するエンティティは、、倉庫内で作業注文をドライブするための作業テンプレートで設定するクエリで使用されます。 したがって、ゾーンや場所タイプなど定義するとき、倉庫のさまざまな領域が異なるプロセスにどのように使用されるかを検討してください。 また、特定の領域の物理的特性などの要素を検討してください。 たとえば、特定のタイプのフォークリフトのみ使用できる領域がある場合があります。 または、会社が同じ施設内に製造と完成製品の両方がある場合、Dynamics 365 for Operations での 1 つの倉庫を作成し、ゾーン グループを作成して 2 つの工程を分割するのが望ましい場合があります。 テンプレートのクエリで使用するときに識別することが容易になるように、エンティティに内容を示す名前を指定します。
+自分の倉庫レイアウトを定義するために作成するエンティティは、、倉庫内で作業注文をドライブするための作業テンプレートで設定するクエリで使用されます。 したがって、ゾーンや場所タイプなど定義するとき、倉庫のさまざまな領域が異なるプロセスにどのように使用されるかを検討してください。 また、特定の領域の物理的特性などの要素を検討してください。 たとえば、特定のタイプのフォークリフトのみ使用できる領域がある場合があります。 または、会社が同じ施設内に製造と完成製品の両方がある場合、Finance and Operations での 1 つの倉庫を作成し、ゾーン グループを作成して 2 つの工程を分割するのが望ましい場合があります。 テンプレートのクエリで使用するときに識別することが容易になるように、エンティティに内容を示す名前を指定します。
 
 ### <a name="location-stocking-limits-location-profiles-and-fixed-picking-locations"></a>場所別在庫限度、場所プロファイルと固定のピッキング場所
 

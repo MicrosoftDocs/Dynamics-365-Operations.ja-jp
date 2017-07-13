@@ -3,14 +3,14 @@ title: "現在の通貨為替レートをインポート"
 description: "法人が外貨で請求書を受け取った場合は、外貨を国内通貨に変換する必要があります。 これは異なる通貨に対する最新の為替レートが必要であることを意味します。 このトピックでは、ヨーロッパ中央銀行やロシア中央銀行などの為替レート プロバイダーによってインターネット経由で公開されている為替レートをインポートするために必要な設定と処理の概要を説明します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: ExchangeRateProviderConfiguration
 audience: Application User
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 261374
 ms.assetid: b2b22868-de68-439f-914c-78c6930b7340
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 69a622f54581504989504a06f90d443a98ad2f63
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 2d0654d6dbed3b4fe56b8918194132787f66af80
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -36,7 +36,7 @@ ms.lasthandoff: 05/25/2017
 次のセクションでは、外国為替のレートのインポートを設定して処理するために使用される情報の流れについて説明します。
 
 ## <a name="configure-an-exchange-rate-provider"></a>為替レート プロバイダーの設定
-為替レートをインポートする前に、為替レートを提供するプロバイダーに必要な情報を設定する必要があります。 **為替レート プロバイダーの設定**ページを使用して、為替レート プロバイダーを選択します。 一部の為替レート プロバイダーは、Microsoft Dynamics 365 for Operations のデモ データに含まれています。 次の表に、このページのコントロールの説明を示します。
+為替レートをインポートする前に、為替レートを提供するプロバイダーに必要な情報を設定する必要があります。 **為替レート プロバイダーの設定**ページを使用して、為替レート プロバイダーを選択します。 一部の為替レート プロバイダーは、Microsoft Dynamics 365 for Finance and Operations、Enterprise edition のデモ データに含まれています。 次の表に、このページのコントロールの説明を示します。
 
 |           |                                                                                                                                                                                                                             |
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

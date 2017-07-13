@@ -3,7 +3,7 @@ title: "仕入れ先の設定"
 description: "このトピックでは、新しい仕入先を作成する際に指定する必要がある情報のタイプを説明します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: bee95a2f3d9727e9123aa0abcf41325e6cac1efd
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 4c97f11fa85b8eee54daea8ccaa183859a89fe7f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -62,13 +62,13 @@ ms.lasthandoff: 05/25/2017
 
 仕入先の連絡先を追加するには、[**すべての仕入先**] ページの [**仕入先**] タブで、[**設定**] グループにある [**連絡先**] &gt; [**連絡先の追加**] の順にクリックします。  
 
-仕入先連絡先を最初から作成できます。 または、Microsoft Dynamics 365 for Operations で既に登録されている他の人の詳細をコピーすること、および必要とする情報を編集することができます。  
+仕入先連絡先を最初から作成できます。 または、Microsoft Dynamics 365 for Finance and Operations で既に登録されている他の人の詳細をコピーすること、および必要とする情報を編集することができます。  
 
 [**注記:**] 仕入先の連絡先を追加することは、仕入先の連絡先情報を追加することと同じではありません。 仕入先の一般的な連絡先情報を追加するかもしれませんが、その会社の複数の特定の人の連絡先、および個々の連絡先情報も含めるかもしれません。  
 
 連絡先がドキュメントで参照される連絡担当者レコードは削除できません。 代わりに、連絡先を無効にできます。  
 
-Microsoft Office 365の個人連絡先に仕入先の連絡先を追加できます。 ただし、最初に Microsoft Exchange Server の同期と Microsoft Outlook セットアップ ウィザードの両方で、Dynamics 365 for Operations と Office 365 間の同期を設定する必要があります。
+Microsoft Office 365の個人連絡先に仕入先の連絡先を追加できます。 ただし、最初に Microsoft Exchange Server の同期と Microsoft Outlook セットアップ ウィザードの両方で、Finance and Operations と Office 365 間の同期を設定する必要があります。
 
 ## <a name="vendors-in-different-legal-entities"></a>異なる法人の仕入先
 仕入先が組織の一つの法人として登録される場合、他の法人は同じ仕入先を登録する必要があります。[**別の法人の仕入先の追加**] ページを使用して、別の法人と取引がある仕入先をコンフィギュレーションします。 仕入先グループ、通貨、および選択された法人に対する仕入先の保留状態を選択する必要があります。  

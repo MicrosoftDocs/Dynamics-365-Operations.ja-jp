@@ -1,16 +1,16 @@
 ---
 title: "在庫ブロック"
-description: "この記事は、Microsoft Dynamics AX の品質検査プロセスの一部である在庫ブロックの概要を示します。 在庫ブロックは、品目が処理または消費されるのを防ぐために使用できます。"
+description: "この記事は、Microsoft Dynamics 365 for Finance and Operations、Enterprise edition の品質検査プロセスの一部である在庫ブロックの概要を示します。 在庫ブロックは、品目が処理または消費されるのを防ぐために使用できます。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventBlocking, InventQualityOrderTable
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 2094
 ms.assetid: 1968e32f-eff9-4c17-8f7f-a870f0c38fbc
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 089198f0197427654740da74985001b979f090a3
+ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
+ms.openlocfilehash: 4c5ebea58630188615fb4c22cc9da5215461e513
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -32,7 +32,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-この記事は、Microsoft Dynamics AX の品質検査プロセスの一部である在庫ブロックの概要を示します。 在庫ブロックは、品目が処理または消費されるのを防ぐために使用できます。
+この記事は、Microsoft Dynamics 365 for Finance and Operations、Enterprise edition の品質検査プロセスの一部である在庫ブロックの概要を示します。 在庫ブロックは、品目が処理または消費されるのを防ぐために使用できます。
 
 在庫品目は、次の方法でブロックできます。
 -   手動

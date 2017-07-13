@@ -1,9 +1,9 @@
 ---
 title: "リーン生産の概要"
-description: "この記事では、Microsoft Dynamics AX のリーン生産の機能の概要と説明を提供します。"
+description: "この記事では、Dynamics 365 for Finance and Operations のリーン生産の機能の概要と説明を提供します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: KanbanBoardTransferJob, KanbanBoardWorkCell, KanbanJobSchedulingListPage, LeanProductionFlow
 audience: Application User
 ms.reviewer: YuyuScheller
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 19371
 ms.assetid: 026c5605-6be7-4fdb-a6f2-8e37a806796c
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: dd29e601cb78b6903e09e63182196427183f6dbe
+ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
+ms.openlocfilehash: 376b521a7527b4f60bc01c080f8eabb5cb231b30
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -33,17 +33,17 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-この記事では、Microsoft Dynamics AX のリーン生産の機能の概要と説明を提供します。
+この記事では、Microsoft Dynamics 365 for Finance and Operations、Enterprise edition のリーン生産の機能の概要と説明を提供します。
 
 Lean manufacturing は、リーン操作をモデル化するために使用できるツールを提供します。 これらのツールは、以下のコンセプトおよびビジネス活動をサポートし推進します。
 -   生産および物流を生産フローとしてモデリングすることにより、lean manufacturing の土台を作成します。
 -   かんばんを使用して要望要求シグナルを送り、リーン プル システムを実行します。
 -   かんばん作業を監視および管理します。
 
-Microsoft Dynamics AX 7 のリーン生産構造は、生産フロー、活動、およびかんばんルールで構成されます。 これらの構造は Microsoft Dynamics AX 7 プロセスと完全に統合されます。 さまざまな供給品、生産、および調達の戦略を組み合わせるミックス モードの製造環境で lean manufacturing を使用できます。 これらの戦略には、製造オーダー、プロセス産業のバッチ オーダー、発注書、および転送オーダーが含まれます。
+Finance and Operations のリーン生産構造は、生産フロー、活動、およびかんばんルールで構成されます。 これらの構造は Finance and Operations プロセスと完全に統合されます。 さまざまな供給品、生産、および調達の戦略を組み合わせるミックス モードの製造環境で lean manufacturing を使用できます。 これらの戦略には、製造オーダー、プロセス産業のバッチ オーダー、発注書、および転送オーダーが含まれます。
 | **重要**                                                                                                                                                                                                                                                                |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Microsoft Dynamics AX 7 を使用してかんばんのリーン生産の実装をサポートできます。 ただし、リーン原則の正常に実装は、使用する内部ビジネス プロセス、および実際の生産状況および環境により異なります。 |
+| Finance and Operations を使用してかんばんのリーン生産の実装をサポートできます。 ただし、リーン原則の正常に実装は、使用する内部ビジネス プロセス、および実際の生産状況および環境により異なります。 |
 
 ## <a name="modeling-manufacturing-and-logistics-processes-as-production-flows"></a>製造および物流プロセスの生産フローとしてのモデリング
 lean manufacturing の土台を作成するには、生産および物流プロセスを生産フローとしてモデリングします。 この活動は次のタスクで構成されています。
@@ -71,8 +71,8 @@ Lean manufacturing は、かんばんルールで管理される製造および�
 -   配送ジョブのかんばんボード – このボードでは、現在の配送ジョブの概要を提供します。 ピッキング リストの更新および登録、配送ジョブの開始および完了、および他のタスクを実行できます。
 -   プロセス ジョブのかんばんボード – このボードは通常生産フローをサポートし、1 つまたは複数の作業セルに現在のステータスの概要を示すように設計されています。 このボードからかんばんは優先順位付け、ピッキング、または製造ができます。 かんばんボードには、かんばんをレポートするためのバーコードのスキャンをサポートするように設計されています。
 
-## <a name="kanban-jobs-and-integration-with-microsoft-dynamics-ax-processes"></a>かんばん作業および Microsoft Dynamics AX プロセスとの統合
-かんばん作業は Microsoft Dynamics AX の在庫トランザクションのための現在のプロセスと完全に統合されます。
+## <a name="kanban-jobs-and-integration-with-finance-and-operations-processes"></a>かんばん作業と Finance and Operations プロセスとの統合
+かんばん作業は Finance and Operations の在庫トランザクションのための現在のプロセスと完全に統合されます。
 -   ピッキング活動を実行し、かんばん作業の条件を満たすために使用される材料を補充できます。
 -   かんばんカード、循環かんばんカード、およびピッキング リストを印刷して、かんばんの使用をサポートできます。 これらのドキュメントは、倉庫および生産のフロアのかんばん作業を説明、追跡、および登録するために使用されます。
 -   バーコードをスキャンして、在庫のピッキングおよび配送活動を登録できます。

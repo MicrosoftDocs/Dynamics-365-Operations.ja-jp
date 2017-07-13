@@ -1,16 +1,16 @@
 ---
 title: "詳細な口座調整のインポート プロセスの設定"
-description: "詳細な口座調整機能では、電子口座取引明細書をインポートし、Microsoft Dynamics 365 for Operations での銀行トランザクションに合わせて自動的に調整することができます。 この資料では、口座取引明細書のインポート機能を設定する方法について説明します。"
+description: "詳細な口座調整機能では、電子口座取引明細書をインポートし、Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition での銀行トランザクションに合わせて自動的に調整することができます。 この資料では、口座取引明細書のインポート機能を設定する方法について説明します。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 106853
 ms.assetid: 45dae275-ea45-4c7e-b38f-89297c7b5352
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: fda4dca4339c09757477b04166b17d5f92f46a7c
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: a4d1c81386c0ef03391f3127fa51a6b09a5142b3
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -31,12 +31,12 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-詳細な口座調整機能では、電子口座取引明細書をインポートし、Microsoft Dynamics 365 for Operations での銀行トランザクションに合わせて自動的に調整することができます。 この資料では、口座取引明細書のインポート機能を設定する方法について説明します。 
+詳細な口座調整機能では、電子口座取引明細書をインポートし、Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition での銀行トランザクションに合わせて自動的に調整することができます。 この資料では、口座取引明細書のインポート機能を設定する方法について説明します。 
 
-口座取引明細書のインポートの設定は、電子口座取引明細書の形式によって異なります。 Microsoft Dynamics 365 for Operations は、ISO20022、MT940、および BAI2 の 3 つの口座取引明細書の形式を包括的にサポートしています。
+口座取引明細書のインポートの設定は、電子口座取引明細書の形式によって異なります。 Finance and Operations は、ISO20022、MT940、および BAI2 の 3 つの口座取引明細書の形式を包括的にサポートしています。
 
 ## <a name="sample-files"></a>サンプル ファイル
-すべての 3 つの形式には、電子口座取引明細書を元の形式から、Dynamics 365 for Operations で使用できる形式に変換するファイルが必要です。 Microsoft Visual Studio のアプリケーション エクスプローラーの [**リソース**] ノードの下に必要なリソース ファイルがあります。 ファイルを見つけたら、1 つのわかる場所にコピーして、設定プロセス中に容易にアップロードできるようにします。
+すべての 3 つの形式には、電子口座取引明細書を元の形式から、Finance and Operations で使用できる形式に変換するファイルが必要です。 Microsoft Visual Studio のアプリケーション エクスプローラーの [**リソース**] ノードの下に必要なリソース ファイルがあります。 ファイルを見つけたら、1 つのわかる場所にコピーして、設定プロセス中に容易にアップロードできるようにします。
 
 | リソース名                                           | ファイル名                            |
 |---------------------------------------------------------|--------------------------------------|
@@ -71,7 +71,7 @@ ms.lasthandoff: 05/25/2017
 7.  口座取引明細書のエンティティがアップロードされ、マッピングが完了した後、エンティティの [**マップの表示**] アクションをクリックします。
 8.  口座取引明細書のエンティティは、4 つの別々のエンティティで構成される複合エンティティです。 一覧で、[**BankStatementDocumentEntity**] を選択し、次に [**マップの表示**] アクションをクリックします。
 9.  [**変換**] タブで、[**新規**] をクリックします。
-10. シーケンス番号 1 で、[**ファイルのアップロード**] をクリックし, 先ほど保存した「**ISO20022XML-to-Reconciliation.xslt**」ファイルを選択します。 **注記:** Dynamics 365 for Operations 変換ファイルは、標準形式で作成されます。 銀行は多くの場合、この形式と異なるため、口座取引明細書の形式にマップする変換ファイルを更新する必要があるかもしれません。 <!-- For details about the expected format for ISO20022, see [Dynamics AX ISO20022 Layout](./media/dynamicsaxiso20022layout1.xlsx).-->
+10. シーケンス番号 1 で、[**ファイルのアップロード**] をクリックし, 先ほど保存した「**ISO20022XML-to-Reconciliation.xslt**」ファイルを選択します。 **注記:** Finance and Operations 変換ファイルは、標準形式で作成されます。 銀行は多くの場合、この形式と異なるため、口座取引明細書の形式にマップする変換ファイルを更新する必要があるかもしれません。 <!-- For details about the expected format for ISO20022, see [Dynamics AX ISO20022 Layout](./media/dynamicsaxiso20022layout1.xlsx).-->
 11. **新規**をクリックします。
 12. シーケンス番号 2 で、[**ファイルのアップロード**] をクリックし, 先ほど保存した「**BankReconciliation-to-Composite.xslt**」ファイルを選択します。
 13. [**変換の適用**] をクリックします。
@@ -106,7 +106,7 @@ ms.lasthandoff: 05/25/2017
 9.  [**変換**] タブで、[**新規**] をクリックします。
 10. シーケンス番号 1 で、[**ファイルのアップロード**] をクリックし、先ほど保存した「**MT940TXT-to-MT940XML.xslt**」ファイルを選択します。
 11. [**新規**] をクリックします。
-12. シーケンス番号 2 で、[**ファイルのアップロード**] をクリックし、先ほど保存した「**MT940XML-to-Reconciliation.xslt**」ファイルを選択します。 **注記:** Dynamics 365 for Operations 変換ファイルは、標準形式で作成されます。 銀行は多くの場合、この形式と異なるため、口座取引明細書の形式にマップする変換ファイルを更新する必要があるかもしれません。 <!--- For details about the expected format for MT940, see [Dynamics AX MT940 Layout](./media/dynamicsaxmt940layout1.xlsx)-->
+12. シーケンス番号 2 で、[**ファイルのアップロード**] をクリックし、先ほど保存した「**MT940XML-to-Reconciliation.xslt**」ファイルを選択します。 **注記:** Finance and Operations 変換ファイルは、標準形式で作成されます。 銀行は多くの場合、この形式と異なるため、口座取引明細書の形式にマップする変換ファイルを更新する必要があるかもしれません。 <!--- For details about the expected format for MT940, see [Dynamics AX MT940 Layout](./media/dynamicsaxmt940layout1.xlsx)-->
 13. **新規**をクリックします。
 14. シーケンス番号 3 で、[**ファイルのアップロード**] をクリックし、先ほど保存した「**BankReconciliation-to-Composite.xslt**」ファイルを選択します。
 15. [**変換の適用**] をクリックします。
@@ -142,7 +142,7 @@ ms.lasthandoff: 05/25/2017
 9.  [**変換**] タブで、[**新規**] をクリックします。
 10. シーケンス番号 1 で、[**ファイルのアップロード**] をクリックし、先ほど保存した「**BAI2CSV-to-BAI2XML.xslt**」ファイルを選択します。
 11. [**新規**] をクリックします。
-12. シーケンス番号 2 で、[**ファイルのアップロード**] をクリックし、先ほど保存した「**BAI2XML-to-Reconciliation.xslt**」ファイルを選択します。 **注記:** Dynamics 365 for Operations 変換ファイルは、標準形式で作成されます。 銀行は多くの場合、この形式と異なるため、口座取引明細書の形式にマップする変換ファイルを更新する必要があるかもしれません。 <!--- For details about the expected format for BAI2, see [Dynamics AX BAI2 Layout](./media/dynamicsaxbai2layout1.xlsx).-->
+12. シーケンス番号 2 で、[**ファイルのアップロード**] をクリックし、先ほど保存した「**BAI2XML-to-Reconciliation.xslt**」ファイルを選択します。 **注記:** Finance and Operations 変換ファイルは、標準形式で作成されます。 銀行は多くの場合、この形式と異なるため、口座取引明細書の形式にマップする変換ファイルを更新する必要があるかもしれません。 <!--- For details about the expected format for BAI2, see [Dynamics AX BAI2 Layout](./media/dynamicsaxbai2layout1.xlsx).-->
 13. **新規**をクリックします。
 14. シーケンス番号 3 で、[**ファイルのアップロード**] をクリックし、先ほど保存した「**BankReconciliation-to-Composite.xslt**」ファイルを選択します。
 15. [**変換の適用**] をクリックします。

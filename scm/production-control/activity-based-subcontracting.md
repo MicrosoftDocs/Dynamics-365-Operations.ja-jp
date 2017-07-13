@@ -3,14 +3,14 @@ title: "活動ベースの外注"
 description: "このトピックでは、リーン生産の生産フローにおける外注活動の使用方法について詳しく説明します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: KanbanJobSchedulingListPage, LeanRuleReassignmentWizard, PlanActivity, ReqSupplyDemandSchedule
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 267034
 ms.assetid: 15c76a51-fa6d-42d2-994a-c67df6bae6a9
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 4cf93c861345ad11b995ac2fe50c9a94dddcbd56
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 43c95c8ab8599a048b1c8c732d6dcac1c3e8b9e9
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -34,7 +34,7 @@ ms.lasthandoff: 05/25/2017
 
 このトピックでは、リーン生産の生産フローにおける外注活動の使用方法について詳しく説明します。
 
-Microsoft Dynamics 365 for Operations では、製造オーダーおよびリーン生産という外注に関する 2 つのアプローチがあります。 リーン生産のアプローチでは、外注業務は、生産フローの活動に関連するサービスとしてモデル化されます。 [**直接外部委託**] と呼ばれる特別な種類の原価グループ タイプが導入され、外注サービスは部品表 (BOM) の一部ではなくなりました。 外注業務の原価計算は、リーン生産の原価計算ソリューションに完全に統合されます。
+Microsoft Dynamics 365 for Finance and Operations では、製造オーダーおよびリーン生産という外注に関する 2 つのアプローチがあります。 リーン生産のアプローチでは、外注業務は、生産フローの活動に関連するサービスとしてモデル化されます。 [**直接外部委託**] と呼ばれる特別な種類の原価グループ タイプが導入され、外注サービスは部品表 (BOM) の一部ではなくなりました。 外注業務の原価計算は、リーン生産の原価計算ソリューションに完全に統合されます。
 
 ## <a name="production-flows-that-involve-subcontractors"></a>下請業者に関係する生産フロー
 生産フローの基本原則は、活動が外注されると変更されません。 材料は場所間を流れ、プロセス活動は材料を製品に変え、移動活動は 1 つの場所から別の場所に材料や製品を移動します。 仕入先を倉庫やリソース グループのリソースに割り当てることによって、仕入先管理として場所や作業セルをモデル化できます。  
@@ -104,7 +104,7 @@ Microsoft Dynamics 365 for Operations では、製造オーダーおよびリー
 
 リーン生産の活動ベースの外注は、生産フローの場所間で材料および製品を移動する配送業者と輸送仕入先を統合できます。 移動活動のモデル化によって、配送業者または仕入先を割り当てることができます。 移動活動またはジョブは、サービスや購買契約に基づいており、実際の転送ジョブに基づいて発注書と受領通知を作成できます。 この機能は、外注プロセス活動の機能と同じです。  
 
-したがって、Dynamics 365 for Operations では、運輸サービス、関連する発注書の作成、統合された入庫登録、運輸サービスの生産フローの原価計算への統合を含む BOM 計算をサポートするようになりました。
+したがって、Finance and Operations では、運輸サービス、関連する発注書の作成、統合された入庫登録、運輸サービスの生産フローの原価計算への統合を含む BOM 計算をサポートするようになりました。
 
 
 

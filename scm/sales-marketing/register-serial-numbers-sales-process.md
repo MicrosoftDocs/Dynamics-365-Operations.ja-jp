@@ -3,15 +3,15 @@ title: "販売プロセスでのシリアル番号の登録"
 description: "この記事は、販売プロセス中に梱包明細または請求書のシリアル番号を登録する方法を説明します。 この機能は、会社がシリアル番号をサービスおよび保証のために取得する一方、シリアル番号を在庫の入庫から払出まで管理する必要がない場合に役立ちます。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: EcoResTrackingDimensionGroup, InventTrackingRegisterTrans, SalesEditLines, SalesTable
 audience: Application User
-ms.reviewer: YuyuScheller
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: yuyus
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 28931
 ms.assetid: 5d39630f-607e-492b-8c1e-790ca53effa0
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: d984a6af2b48f02120ea61b385522a6400d93d4a
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: ffb567c0ba9c95d059e64e24cbe0ea53ec9f7bc9
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -32,14 +32,15 @@ ms.lasthandoff: 05/25/2017
 
 [!include[banner](../includes/banner.md)]
 
+[!include[retail name](../includes/retail-name.md)]
 
 この記事は、販売プロセス中に梱包明細または請求書のシリアル番号を登録する方法を説明します。 この機能は、会社がシリアル番号をサービスおよび保証のために取得する一方、シリアル番号を在庫の入庫から払出まで管理する必要がない場合に役立ちます。
 
-多くの会社では、シリアル番号はサービスおよび保証のために取得するもので、在庫の入庫から払出まででシリアル番号を管理する必要がありません。 これらのシナリオでは、Microsoft Dynamics 365 for Operations を使用して、製品を販売するときに梱包明細や請求書にシリアル番号を登録することができます。 製品が後に返品された場合、実際に製品を販売したかどうか、またサービスや保証の責務が有効であるかどうかを確認するために、請求書で製品を追跡できます。
+多くの会社では、シリアル番号はサービスおよび保証のために取得するもので、在庫の入庫から払出まででシリアル番号を管理する必要がありません。 これらのシナリオでは、Microsoft Dynamics 365 for Finance and Operations を使用して、製品を販売するときに梱包明細や請求書にシリアル番号を登録することができます。 製品が後に返品された場合、実際に製品を販売したかどうか、またサービスや保証の責務が有効であるかどうかを確認するために、請求書で製品を追跡できます。
 前提条件がありますか
 ----------------------------
 
-**追跡用分析コード グループ**ページの**販売プロセスで有効**オプションをオンにして、追跡用分析コード グループの販売プロセスのシリアル番号を有効にする必要があります。 その後、Microsoft Dynamics 365 for Operations で次のイベントが発生します:
+**追跡用分析コード グループ**ページの**販売プロセスで有効**オプションをオンにして、追跡用分析コード グループの販売プロセスのシリアル番号を有効にする必要があります。 その後、Microsoft Dynamics 365 for Finance and Operations で次のイベントが発生します:
 -   **シリアル番号**クイック タブで、**シリアル番号の管理**オプションが選択されます。 このオプションがオンの場合、梱包明細品または請求書の品目ごとに 1 つのシリアル番号を登録する必要があります。
 -   シリアル番号の追跡用分析コード グループのオプションは、**払出時空白可**オプションを除いて、すべてクリアされます。 **払出時空白可**オプションをオンにすると、シリアル番号制御が上書きされ、シリアル番号を登録せずに製品を梱包または請求できます。
 

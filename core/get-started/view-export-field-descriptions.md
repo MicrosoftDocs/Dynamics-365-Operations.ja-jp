@@ -3,14 +3,14 @@ title: "フィールドの説明を表示およびエクスポートする"
 description: "この記事では、フィールドの説明を表示する方法と説明をエクスポートするフィールドの [説明] ページを使用する方法について説明します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: FieldDescriptions
 audience: Application User, Developer, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 11534
 ms.assetid: e2795f51-a8a7-4c74-bdb9-b1be93bdd358
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: cd84c03baa4f7a9d38e380c37ed2020ee3387954
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 7898ff427ede4447a5798d4989ffd3088a776d9c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -33,14 +33,14 @@ ms.lasthandoff: 05/25/2017
 
 この記事では、フィールドの説明を表示する方法と説明をエクスポートするフィールドの [説明] ページを使用する方法について説明します。
 
-Microsoft Dynamics 365 for Operations には、いくつかのさらに複雑なフィールドについての説明があります。 フィールド上に置くと、これらの説明が表示されます。 **[フィールドの説明]** ページを使用すると、フィールドの説明を表示およびエクスポートすることもできます。 
+Microsoft Dynamics 365 for Finance and Operations には、いくつかのさらに複雑なフィールドについての説明があります。 フィールド上に置くと、これらの説明が表示されます。 **[フィールドの説明]** ページを使用すると、フィールドの説明を表示およびエクスポートすることもできます。 
 
 すべてのページにフィールドの説明があるわけではありません。 より複雑なフィールドだけに説明を提供し、フィールドの使用が明確な場合は提供しません。 したがって、一部のページは、任意のフィールドの説明がない、一部のページには説明がある、多くのパラメーターのページなど複雑なページには多くの説明があります。 
 
-Dynamics 365 for Operations の開発環境に対するアクセス権を持つ場合、新しいフィールドの説明を追加して既存の説明をカスタマイズすることができます。 たとえば、フィールドの説明に会社固有の情報を追加できます。 詳細については、「[のフィールド ヘルプのカスタマイズ](/dynamics365/operations/dev-itpro/user-interface/customize-field-help)」を参照してください。
+Finance and Operations の開発環境に対するアクセス権を持つ場合、新しいフィールドの説明を追加して既存の説明をカスタマイズすることができます。 たとえば、フィールドの説明に会社固有の情報を追加できます。 詳細については、「[のフィールド ヘルプのカスタマイズ](/dynamics365/unified-operations/dev-itpro/user-interface/customize-field-help)」を参照してください。
 
 ## <a name="see-field-descriptions-in-the-user-interface"></a>ユーザー インターフェイスのフィールドの説明を参照してください。
-フィールドの上にマウス ポインターを移動するとフィールド名が表示されます。 説明がない場合、フィールドの上にマウス ポインターを移動するとフィールド名が表示されます。 (注記: バージョン 7.0.0 のフィールドの説明では、**フィールドの説明** ページでのみ表示できます。) 次の図は、**カウント中に品目をロック** フィールドの上に置くときに表示されるフィールドの説明を示しています。 
+フィールドの上にマウス ポインターを移動するとフィールド名が表示されます。 説明がない場合、フィールドの上にマウス ポインターを移動するとフィールド名が表示されます。 (注記: Dynamics AX 7.0 (2016 年 2 月) のフィールドの説明では、[**フィールドの説明**] ページでのみ表示できます。) 次の図は、[**カウント中に品目をロック**] フィールドの上に置くときに表示されるフィールドの説明を示しています。 
 
 [![フィールドの説明の例](./media/field-description.png)](./media/field-description.png)
 
@@ -101,7 +101,7 @@ Dynamics 365 for Operations の開発環境に対するアクセス権を持つ�
 <a name="see-also"></a>参照
 --------
 
-[フィールド ヘルプのカスタマイズ](/dynamics365/operations/dev-itpro/user-interface/customize-field-help)
+[フィールド ヘルプのカスタマイズ](/dynamics365/unified-operations/dev-itpro/user-interface/customize-field-help)
 
 
 

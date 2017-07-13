@@ -3,7 +3,7 @@ title: "自動決済と優先順位付け"
 description: "この記事は、[売掛金勘定パラメーター] ページの [自動決済] を選択した場合にトランザクションが決済される方法について説明します。 自動決済を支払の優先順位と組み合わせた使用方法も説明します。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: CustOpenTrans, CustParameters, LedgerJournalTransCustPaym
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 14531
 ms.assetid: e7837cf6-ec69-44b4-8d47-eba38d5c7b1f
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 890de45f8425bdc59ca2fd2ed8297ab3690cc98d
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: 3e2ca11eef4246d5abfd77351325ac2b4440b446
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
@@ -34,7 +34,7 @@ ms.lasthandoff: 05/25/2017
 
 この記事は、[売掛金勘定パラメーター] ページの [自動決済] を選択した場合にトランザクションが決済される方法について説明します。 自動決済を支払の優先順位と組み合わせた使用方法も説明します。
 
-請求書や他のトランザクションの支払を決済する場合、2 種類のオプションがあります。 決済するトランザクションを手動で選択するか、Microsoft Dynamics 365 for Operations により、自動決済機能を使用してトランザクションを自動的に選択します。 また、**決済の優先順位付け**オプションを使用すると、自動決済の処理方法をカスタマイズできます。 これらのオプションは、すべて**売掛金勘定パラメーター** ページで定義された決済パラメーターの一部です。 トランザクションが自動的に決済される方法は、自動決済に使用する方法によって異なる場合があります。 次の方法を選択できます。
+請求書や他のトランザクションの支払を決済する場合、2 種類のオプションがあります。 決済するトランザクションを手動で選択するか、Microsoft Dynamics 365 for Finance and Operations により、自動決済機能を使用してトランザクションを自動的に選択します。 また、**決済の優先順位付け**オプションを使用すると、自動決済の処理方法をカスタマイズできます。 これらのオプションは、すべて**売掛金勘定パラメーター** ページで定義された決済パラメーターの一部です。 トランザクションが自動的に決済される方法は、自動決済に使用する方法によって異なる場合があります。 次の方法を選択できます。
 
 -   ユーザー定義の決済の優先順位
 -   既定の自動決済

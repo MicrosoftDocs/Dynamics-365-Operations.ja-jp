@@ -1,9 +1,9 @@
 ---
 title: "削除予定の機能"
-description: "このトピックでは、365 for Operations for Operations から削除された、または削除される予定の機能について説明します。 また、Dynamics AX 7.0 リリースで廃止された機能一覧も表示されます。"
+description: "このトピックでは、削除された、または削除される予定の機能について説明します。"
 author: sericks007
 manager: AnnBe
-ms.date: 04/18/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,10 +17,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 6
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 46a6f054f1cc5162e19d962964eb6eeb780087a6
+ms.sourcegitcommit: 3267bd1cbd738b5ced9996fc3b28eee211627591
+ms.openlocfilehash: 8feffb27b5d08a9c90e97ac0d7e00abf0448d0df
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/16/2017
 
 
 ---
@@ -29,8 +29,40 @@ ms.lasthandoff: 05/25/2017
 
 [!include[banner](../includes/banner.md)]
 
+このトピックでは、削除された、または削除される予定の機能について説明します。
 
-このトピックでは、365 for Operations for Operations から削除された、または削除される予定の機能について説明します。 また、Dynamics AX 7.0 リリースで廃止された機能一覧も表示されます。
+## <a name="features-that-have-been-deprecated-in-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update"></a>Dynamics 365 for Finance and Operations, Enterprise Edition 2017 年 ７ 月の更新プログラムで廃止されている機能
+
+### <a name="warehouse-mobile-devices-portal"></a>倉庫モバイル デバイス ポータル
+
+倉庫モバイル デバイス ポータル (WMDP) は、オンプレミス自己展開を目的としたスタンドアロン コンポーネントでした。 このコンポーネントは Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition ではサポートされなくなりました。 WMDP の機能は、ユーザー エクスペリエンスを向上させるネイティブ アプリケーションで置き換えられました。 
+
+|                                  |                                                 |
+|----------------------------------|-------------------------------------------------|
+| **廃止の理由**       | 機能の重複。                        |
+| **別の機能で置き換えられているか?** | はい。 この機能は Finance and Operations - Warehousing で置き換えられました。 設定および前提条件の詳細については、「[Microsoft Dynamics 365 for Finance and Operations - Warehousing のインストールと構成](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/install-configure-warehousing-app)」を参照してください。 |
+| **影響を受けるモジュール**             | 倉庫管理、輸送管理 |
+
+### <a name="advanced-bank-reconciliation-matching-rule-for-manual-matching"></a>手動の照合の詳細な口座調整の照合ルール
+
+照合ルールは、調整ワークシートでドキュメントを手動で照合するときに、銀行ドキュメントを選択およびマークするのに使用されていました。
+
+|                                  |                                                                                        |
+|----------------------------------|----------------------------------------------------------------------------------------|
+| **廃止の理由**       | 使用が限定的。                                                                         |
+| **別の機能で置き換えられているか?** | いいえ。 調整のためドキュメントを検索するには、列のフィルター処理機能を使用してください。 |
+| **影響を受けるモジュール**             | 現金および銀行管理                                                               |
+
+### <a name="windows-8-tablet-app"></a>Windows 8 タブレット アプリケーション
+
+Windows 8 タブレット アプリケーションは経費入力と承認のための機能を提供していました。
+
+|                                  |                                                                                          |
+|----------------------------------|------------------------------------------------------------------------------------------|
+| **廃止の理由**       | Finance and Operations はタブレットと互換性があります。 タブレット アプリケーションは不要になりました。 |
+| **別の機能で置き換えられているか?** | 一連番号                                                                                      |
+| **影響を受けるモジュール**             | 経費管理                                                                       |
+
 
 <a name="features-that-have-been-deprecated-in-dynamics-365-for-operations-1611-with-platform-update-3"></a>Dynamics 365 for Operations 1611 およびプラットフォーム更新プログラム 3 で使用されなくなった機能
 ---------------------------------------------------------------------------------------------
@@ -301,7 +333,7 @@ Telepay の支払形式には、仕入先支払のエクスポート (銀行口�
 
 |                              |                                                                                                                                                                                                                                                                                                                                        |
 |------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 減価償却の理由       | パフォーマンス管理は、Microsoft Dynamics 365 for Operations では完全に再設計されました。                                                                                                                                                                                                                                        |
+| 減価償却の理由       | パフォーマンス管理は、Microsoft Dynamics 365 for Finance and Operations では完全に再設計されました。                                                                                                                                                                                                                                        |
 | 別の機能での置き換え? | 再設計されたパフォーマンス管理機能では、目標の内容、進行状況の追跡、サポート ドキュメントの添付の追跡に使用される測定をさらに管理できるようになりました。 目標をテンプレートとして保存し、再利用できます。 この機能により、従業員がより迅速に追加目標を設定できるようになります。 |
 | 影響を受けるモジュール             | 人材管理                                                                                                                                                                                                                                                                                                               |
 
@@ -484,7 +516,7 @@ Dynamics AX 2012 R3 では、Retail Modern POS は Enterprise POS と同様に C
 
 |                              |                                                                                         |
 |------------------------------|-----------------------------------------------------------------------------------------|
-| 減価償却の理由       | データベースのダイレクト接続には、より低いセキュリティ プロトコルが必要でしたが、最高レベルのパフォーマンスを達成するために主に使用されていました。 Dynamics 365 for Operations で発生したパフォーマンスとセキュリティの強化により、この機能は現在解決している以上の問題を引き起こしています。 |
+| 減価償却の理由       | データベースのダイレクト接続には、より低いセキュリティ プロトコルが必要でしたが、最高レベルのパフォーマンスを達成するために主に使用されていました。 Finance and Operations で発生したパフォーマンスとセキュリティの強化により、この機能は現在解決している以上の問題を引き起こしています。 |
 | 別の機能での置き換え? | 一連番号 標準の Retail サーバー通信のみがサポートされるようになりました。    |
 | 影響を受けるモジュール             | チャンネル DB/Retail Modern POS                                    |
 
@@ -808,9 +840,5 @@ Dynamics AX 2012 R3 では Retail サーバーは、HTTP 通信 (保護されて
 | 減価償却の理由       | この機能は、別の機能で置き換えられました。                                    |
 | 別の機能での置き換え? | Management Reporter (Dynamics AX の現在のバージョンでは**財務報告**となっています) |
 | 影響を受けるモジュール             | 一般会計                                                                              |
-
-
-
-
 
 

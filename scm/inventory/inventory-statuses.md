@@ -3,14 +3,14 @@ title: "在庫状態"
 description: "この記事は、在庫を分類し、追跡する在庫状態を使用する方法について説明します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: EcoResStorageDimensionGroup, WHSInventStatus
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 21331
 ms.assetid: b35f495f-de4f-48a0-9d09-4d06781d7650
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 1565b7738260270a986b515dfd21931296ce83bd
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: b3ec66c805d028c20f3d3f95e7af9d78252828c7
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -44,7 +44,7 @@ ms.lasthandoff: 05/25/2017
 
 棚卸資産の状態は保管分析コード グループの分析コードの 1 つです。 在庫状態が使用できるか使用できないかを分類できます。また、[**在庫ブロック**] パラメーターを使用して、使用できない在庫状態の品目をブロックできます。 ブロックされた状態の品目は現物在庫と見なされ、製造オーダー、販売注文、移動オーダー、または出荷トランザクションで使用できません。 
 
-入荷作業のために使用できるか、使用できないかいずれかの在庫状態の倉庫品目を使用できます。 たとえば、「**準備完了**」という名前の使用可能な状態、「**破損**」という名前の使用できない状態、「**ブロック**」という名前のブロックされた状態を作成します。 入庫品目または返品品目の発注書を作成するときに、品目が破損したり、または壊れていれば、購買注文明細行の [**破損**] で、これらの品目の在庫状態を変更できます。 これらの品目を受領したら、状態が自動的に [**ブロック**] に設定されます。 モバイル デバイスを使用して破損した品目をスキャンすると、Microsoft Dynamics 365 for Operations では、場所ディレクティブおよび作業テンプレートを使用することができ、これらの品目をプット アウェイするための適切な場所または場所の範囲に関する情報を表示します。 返品品目の場合、[**在庫トランザクション**] ページで [**引当**] 払出タイプが作成されます。 
+入荷作業のために使用できるか、使用できないかいずれかの在庫状態の倉庫品目を使用できます。 たとえば、「**準備完了**」という名前の使用可能な状態、「**破損**」という名前の使用できない状態、「**ブロック**」という名前のブロックされた状態を作成します。 入庫品目または返品品目の発注書を作成するときに、品目が破損したり、または壊れていれば、購買注文明細行の [**破損**] で、これらの品目の在庫状態を変更できます。 これらの品目を受領したら、状態が自動的に [**ブロック**] に設定されます。 モバイル デバイスを使用して破損した品目をスキャンすると、Microsoft Dynamics 365 for Finance and Operations では、場所ディレクティブおよび作業テンプレートを使用することができ、これらの品目をプット アウェイするための適切な場所または場所の範囲に関する情報を表示します。 返品品目の場合、[**在庫トランザクション**] ページで [**引当**] 払出タイプが作成されます。 
 
 出荷作業の場合、使用可能な在庫状態の品目を使用します。 状態が [**破損**] の品目で、これらの品目にマスタ プランが実行されている場合、品目は存在しないと見なされ、在庫が自動的に補充されます。 
 

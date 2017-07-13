@@ -3,14 +3,14 @@ title: "発注書の承認および確認"
 description: "この資料は、発注書 (PO) が作成された後の一連の状態と、変更管理の有効化の効果について説明します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchTable
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 93143
 ms.assetid: cd12a944-c52c-4579-a301-7abe1d237c72
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 346dde3acdaca367c80cc092f0d8faa2dc28c6b6
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 0ec91bcf0ab334585eefae2fe54750c45419682e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,6 +30,7 @@ ms.lasthandoff: 05/25/2017
 
 [!include[banner](../includes/banner.md)]
 
+[!include[retail name](../includes/retail-name.md)]
 
 この資料は、発注書 (PO) が作成された後の一連の状態と、変更管理の有効化の効果について説明します。
 
@@ -38,7 +39,7 @@ ms.lasthandoff: 05/25/2017
 ## <a name="approval-of-purchase-orders"></a>発注書の状態
 変更管理を使用していない発注書では、作成後すぐに [**承認済**] の状態となります。一方、変更管理を使用している発注書の場合、初めて作成されるなら [**ドラフト**] の状態になります。 マスター プランから計画オーダーを確定することによって作成された発注書は、変更管理の設定に関係なく [**承認済**] に、常に設定されます。 発注書では、[**承認済**] 状態に達したときのみ、在庫トランザクションが作成されます。 したがってその在庫は注文が承諾されるまで、予約またはマーク向けに、在庫ありと表示されません。  
 
-[**変更管理の有効化**] オプションを、[**調達パラメーター**] ページで設定することで、発注書の変更管理が可能になります。 変更管理が有効化されると発注書は作成完了後、承認ワークフローを経る必要があります。 Microsoft Dynamics 365 for Operations には、承認プロセスを表すワークフローを定義できるワークフロー プロセス エディターがあります。 このワークフローには、自動承認のルールを特定の発注書に割り当てる承認を決定するルール、長期間承認待ちのワークフローのエスカレーション向けのルールを含めることができます。 すべての仕入先、または特定仕入先の変更管理プロセスを有効にできます。 個々の発注書が上書きできるようプロセスを設定することもできます。  
+[**変更管理の有効化**] オプションを、[**調達パラメーター**] ページで設定することで、発注書の変更管理が可能になります。 変更管理が有効化されると発注書は作成完了後、承認ワークフローを経る必要があります。 Microsoft Dynamics 365 for Finance and Operations には、承認プロセスを表すワークフローを定義できるワークフロー プロセス エディターがあります。 このワークフローには、自動承認のルールを特定の発注書に割り当てる承認を決定するルール、長期間承認待ちのワークフローのエスカレーション向けのルールを含めることができます。 すべての仕入先、または特定仕入先の変更管理プロセスを有効にできます。 個々の発注書が上書きできるようプロセスを設定することもできます。  
 
 変更管理が有効化されると、発注書は、[**ドラフト**] から [**完了**] までの 6 つの承認状態へと変化していきます。 注文が承認されると、それを修正したいユーザーは [**変更の要求**] アクションを使用する必要があります。
 
@@ -54,7 +55,7 @@ ms.lasthandoff: 05/25/2017
 ## <a name="confirming-purchase-orders"></a>発注書の確認
 [**承認済**] 状態の発注書では、確認前に追加の手順を実施できます。 例えば、価格、割引、配送日程について照会できるよう仕入先に購買の照会を送信する必要があるかもしれません。 この場合、[**購買の照会**] アクションを使用して、発注書を [**外部レビュー中**] の状態に設定できます。  
 
-仕入先ポータルを使用できるよう設定されている仕入先は、ポータルで発注書を確認、承認、または却下できます。 このレビュー プロセス中、発注書は [**外部レビュー中**] の状態になります。 仕入先からの確認により Dynamics 365 for Operations で注文が自動的に確定されるよう、仕入先ポータルをコンフィギュレーションできます。 代わりに、仕入先からの確認を受信した後、発注書を手動で確認できます。 仕入先が発注書を拒否する場合、この拒否と共に、拒否理由と変更提案もあわせて受信します。 この場合、発注書の状態は [**外部レビュー中**] のままです。  
+仕入先ポータルを使用できるよう設定されている仕入先は、ポータルで発注書を確認、承認、または却下できます。 このレビュー プロセス中、発注書は [**外部レビュー中**] の状態になります。 仕入先からの確認により Finance and Operations で注文が自動的に確定されるよう、仕入先ポータルをコンフィギュレーションできます。 代わりに、仕入先からの確認を受信した後、発注書を手動で確認できます。 仕入先が発注書を拒否する場合、この拒否と共に、拒否理由と変更提案もあわせて受信します。 この場合、発注書の状態は [**外部レビュー中**] のままです。  
 
 実際の確認の処理が完了する前に、注文の見積確認を生成するオプションもあります。 このオプションでは、仕入先と共有できるレポートが作成されます。 仕訳帳情報は作成されません。  
 
@@ -83,7 +84,7 @@ ms.lasthandoff: 05/25/2017
 
 [発注書に対応する製品受領書](product-receipt-against-purchase-orders.md)
 
-[仕入先請求書の概要](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
+[仕入先請求書の概要](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview)
 
 
 

@@ -3,26 +3,26 @@ title: "固定報酬計画の作成"
 description: "固定報酬は、従業員の通常の全体の給与や賃金を示します。 この記事は、固定報酬プランを作成し、従業員を登録する前に設定する必要があるコンポーネントを説明します。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-talent
 ms.technology: 
 ms.search.form: HRCCompGrid, HRCCompRefPointSetup, HRMCompEligibility, HRMCompEvent, HRMFixedCompPlanTable
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 15991
 ms.assetid: ef8cf992-176c-4c98-9dff-6510e1eb9f1c
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: e71e22cef2b65c4cf89b8fe0ea55e092e259c6dc
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 92237f2dda486f71cabe414e88e7ee4b69fb4485
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -34,7 +34,7 @@ ms.lasthandoff: 05/25/2017
 
 固定報酬は、従業員の通常の全体の給与や賃金を示します。 このトピックは、固定報酬プランを作成し、従業員を登録する前に設定する必要があるコンポーネントを説明します。
 
-固定報酬金額は、パフォーマンス、地域、昇給予算などの係数に基づいて、従業員に対して計算できます。 Microsoft Dynamics 365 for Operations では、ステップ、等級、およびバンド報酬のタイプがサポートされます。
+固定報酬金額は、パフォーマンス、地域、昇給予算などの係数に基づいて、従業員に対して計算できます。 Microsoft Talent では、ステップ、等級、およびバンド報酬のタイプがサポートされます。
 
 ## <a name="fixed-compensation-components"></a>固定報酬コンポーネント
 ### <a name="compensation-levels"></a>報酬レベル

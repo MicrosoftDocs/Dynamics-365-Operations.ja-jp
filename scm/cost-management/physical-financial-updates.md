@@ -3,14 +3,14 @@ title: "現物更新と財務更新"
 description: "このトピックでは、在庫数量を増減させるトランザクションのタイプについて、その概要を説明します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventTrans, InventTransVoucher
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 75023
 ms.assetid: 128340e1-c573-48e6-b835-6c350d8dd0fb
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 72984b951b88bef565377a7470194437ad0137ce
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: a0eeb5a57f9b82150150752c64e89c2c91856889
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -34,7 +34,7 @@ ms.lasthandoff: 05/25/2017
 
 このトピックでは、在庫数量を増減させるトランザクションのタイプについて、その概要を説明します。 
 
-在庫トランザクションは、Microsoft Dynamics 365 for Operations で現物更新および財務更新できます。 現物トランザクションと財務トランザクションによっては、在庫数量を増加または減少させるものがあります。
+在庫トランザクションは、Microsoft Dynamics 365 for Finance and Operations で現物更新および財務更新できます。 現物トランザクションと財務トランザクションによっては、在庫数量を増加または減少させるものがあります。
 
 ## <a name="physical-increases"></a>現物の増加
 現物トランザクションが転記されると、トランザクション レコードのステータスは [**入庫済**] になります。 次のトランザクションは現物の増加と見なされます。
@@ -53,10 +53,10 @@ ms.lasthandoff: 05/25/2017
 -   振替、損益、棚卸、部品表、移動などの正の数量の在庫仕訳帳
 
 ## <a name="transactions-that-increase-quantity"></a>数量を増加させるトランザクション
-数量を増加させるトランザクションは移動平均原価価格で転記されます。 Dynamics 365 for Operations は、財務的に追跡される在庫分析コードごとに、各トランザクションの原価を基準とする移動平均原価価格を計算します。 移動平均原価価格については、[[移動平均原価価格](running-average-cost-price.md)] を参照ください。
+数量を増加させるトランザクションは移動平均原価価格で転記されます。 Finance and Operations は、財務的に追跡される在庫分析コードごとに、各トランザクションの原価を基準とする移動平均原価価格を計算します。 移動平均原価価格については、[[移動平均原価価格](running-average-cost-price.md)] を参照ください。
 
 ## <a name="transactions-that-decrease-quantity"></a>数量を減少させるトランザクション
-Dynamics 365 for Operations は、在庫にどの在庫モデルが関連付けられているかに関係なく、数量を減少させるトランザクションが転記されるときは、計算済みの移動平均原価価格を使用します。 転記される前に、数量を減少させるトランザクションが別のトランザクションにすでにマークされていてはいけません。 現物手持在庫がマイナスになる場合、Dynamics 365 for Operations は [**品目**] ページで品目に対して定義されている在庫原価を使用します。 **メモ:** マルチサイト機能が有効になっている場合、この原価は、[**既定の注文設定**] ページでサイトに対して定義されている在庫原価になります。
+Finance and Operations は、在庫にどの在庫モデルが関連付けられているかに関係なく、数量を減少させるトランザクションが転記されるときは、計算済みの移動平均原価価格を使用します。 転記される前に、数量を減少させるトランザクションが別のトランザクションにすでにマークされていてはいけません。 現物手持在庫がマイナスになる場合、Finance and Operations は [**品目**] ページで品目に対して定義されている在庫原価を使用します。 **メモ:** マルチサイト機能が有効になっている場合、この原価は、[**既定の注文設定**] ページでサイトに対して定義されている在庫原価になります。
 
 ## <a name="physical-issues-vs-financial-issues"></a>現物払出と財務払出
 現物払出トランザクションが転記されると、トランザクション レコードのステータスは [**控除済**] になります。 次のトランザクションは現物払出と見なされます。

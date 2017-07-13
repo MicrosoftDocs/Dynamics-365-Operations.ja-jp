@@ -1,9 +1,9 @@
 ---
 title: "為替手形の裏書による仕入先への支払"
-description: "日本では、多くの場合、為替手形 (BOEs) は仕入先に裏書きされ、支払方法として使用されます。 Microsoft Dynamics 365 for Operations の BOE のリスト ページでは、BOE のライフ サイクルの集中管理を提供します。"
+description: "日本では、多くの場合、為替手形 (BOEs) は仕入先に裏書きされ、支払方法として使用されます。 Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition の BOE のリスト ページでは、BOE のライフ サイクルの集中管理を提供します。"
 author: RichardLuan
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: CustBillOfExchangeEndorseListPage, CustBillOfExchangeEndorseToVendor
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 28791
 ms.assetid: f0ed3209-2d1a-4208-ba45-192e88baed53
 ms.search.region: Japan
@@ -19,10 +19,10 @@ ms.author: RichardLuan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 66b64a1c297c0cdab9855dc1c89570ae01e1fa5c
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 6af0603e654280d9687b9dcc593e5183928bcea1
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -32,9 +32,9 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-日本では、多くの場合、為替手形 (BOEs) は仕入先に裏書きされ、支払方法として使用されます。 Microsoft Dynamics 365 for Operations の BOE のリスト ページでは、BOE のライフ サイクルの集中管理を提供します。
+日本では、多くの場合、為替手形 (BOEs) は仕入先に裏書きされ、支払方法として使用されます。 Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition の BOE のリスト ページでは、BOE のライフ サイクルの集中管理を提供します。
 
-Dynamics 365 for Operations の BOE の管理を開始するには、受取手形振出仕訳帳を開きます。 このタイプの仕訳帳を転記すると、BOE ステータスが**振出**の場合、次のステージの BOE のライフ サイクルを管理できます。
+Finance and Operations の BOE の管理を開始するには、受取手形振出仕訳帳を開きます。 このタイプの仕訳帳を転記すると、BOE ステータスが**振出**の場合、次のステージの BOE のライフ サイクルを管理できます。
 
 ## <a name="endorse-a-boe-to-a-vendor"></a>仕入先に対する BOE の裏書
 リスト ページには、振り出された顧客の BOE が表示されます。 一つ以上の仕入先に裏書きする BOE を選択できます。 ただし、複数の BOE がオンの場合、それらに裏書きする前に、**振出**ステータスがすべてに必要です。 会計伝票は裏書きした BOE の勘定と買掛金勘定の残高の変更を記録するために生成されます。

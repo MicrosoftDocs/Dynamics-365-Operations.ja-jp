@@ -1,27 +1,29 @@
 ---
 title: "小売タイムと出勤"
-description: "このトピックでは、Microsoft Dynamics 365 for Operations - Retail のタイムと出勤管理でサポートされているシナリオについて説明します。"
+description: "このトピックでは、Microsoft Dynamics 365 for Retail の時間と出勤管理でサポートされているシナリオについて説明します。"
 author: MargoC
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.reviewer: josaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 62813
 ms.assetid: 821994a6-cd29-45a3-a526-ce204064f080
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: aamiral
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 021f0ce8ee73ede482b2b74fce93f61a886288fc
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: b458d1938f49a2f33f7dd3ce3062880f0d4d7bfc
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 
 ---
@@ -31,7 +33,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](includes/banner.md)]
 
 
-このトピックでは、Microsoft Dynamics 365 for Operations - Retail のタイムと出勤管理でサポートされているシナリオについて説明します。 
+このトピックでは、Microsoft Dynamics 365 for Retail の時間と出勤管理でサポートされているシナリオについて説明します。 
 
 <a name="manage-worker-setup-and-scheduling"></a>作業者設定およびスケジュールの管理
 ----------------------------------
@@ -122,7 +124,7 @@ POS で:
 -   活動タイプを使用して、時間登録をフィルター処理するフィルターを保存できます。
 
 ## <a name="process-and-manage-time-registrations"></a>時間登録の処理と管理
-A Dynamics 365 for Operations - Retail ユーザーは、計算、承認および給与への時間登録の転送のためのワークフローに従います。
+Dynamics 365 for Retail ユーザーは、計算、承認および給与への時間登録の転送のためのワークフローに従います。
 
 ### <a name="primary-operations"></a>基本工程
 

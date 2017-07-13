@@ -1,37 +1,38 @@
 ---
-title: "パーソナライズされた製品の推奨事項の概要"
-description: "Dynamics 365 for Operations では、POS (営業拠点) デバイスに製品の推奨事項を表示することができます。 推奨事項は、顧客の購買履歴、欲しい物のリストの品目、他の顧客がオンラインや従来型の店舗で購入した品目に基づいた興味を持ちそうな品目のことです。 大規模カタログの小売業者には、製品の発見に役立つ推奨事項があります。 製品の推奨事項は、顧客の関心と購買習慣を対象とした製品を展示することで、アップセルおよびクロスセルを行う小売業者を支援し、顧客維持を強化することができます。 Dynamics 365 for Operations では、認識サービスと Microsoft Azure 機械学習によって製品の推奨が強化されます。"
+title: "カスタマイズされた製品の推奨事項の概要"
+description: "Dynamics 365 for Retail では、POS (営業拠点) デバイスに製品の推奨事項を表示することができます。 推奨事項は、顧客の購買履歴、欲しい物のリストの品目、他の顧客がオンラインや従来型の店舗で購入した品目に基づいた興味を持ちそうな品目のことです。 大規模カタログの小売業者には、製品の発見に役立つ推奨事項があります。 製品の推奨事項は、顧客の関心と購買習慣を対象とした製品を展示することで、アップセルおよびクロスセルを行う小売業者を支援し、顧客維持を強化することができます。 Dynamics 365 for Retail では、認知サービスと Microsoft Azure 機械学習によって、小売りと製品の推奨が強化されます。"
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
-ms.search.scope: Operations, Core
+ms.reviewer: josaw
+ms.search.scope: Retail, Operations, Core, UnifiedOperations
 ms.custom: 259664
 ms.assetid: 5dd8db08-cd96-4f7e-9e65-b05ca815d580
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
+ms.dyn365.ops.version: Version 1611, Retail Version
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: edacd4cc9f9db59617bc579cb106e8e1017b8957
+ms.sourcegitcommit: 52a16be4b07eafb493c7fd7ad52a6d9d1bb9ee89
+ms.openlocfilehash: 492e498572f875da8ee0387b4d9aa52571211bec
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
 
-# <a name="personalized-product-recommendations-overview"></a>パーソナライズされた製品の推奨事項の概要
+# <a name="personalized-product-recommendations-overview"></a>カスタマイズされた製品の推奨事項の概要
 
 [!include[banner](includes/banner.md)]
 
 
-Dynamics 365 for Operations では、POS (営業拠点) デバイスに製品の推奨事項を表示することができます。 推奨事項は、顧客の購買履歴、欲しい物のリストの品目、他の顧客がオンラインや従来型の店舗で購入した品目に基づいた興味を持ちそうな品目のことです。 大規模カタログの小売業者には、製品の発見に役立つ推奨事項があります。 製品の推奨事項は、顧客の関心と購買習慣を対象とした製品を展示することで、アップセルおよびクロスセルを行う小売業者を支援し、顧客維持を強化することができます。 Dynamics 365 for Operations では、認識サービスと Microsoft Azure 機械学習によって製品の推奨が強化されます。
+Dynamics 365 for Retail では、POS (営業拠点) デバイスに製品の推奨事項を表示することができます。 推奨事項は、顧客の購買履歴、欲しい物のリストの品目、他の顧客がオンラインや従来型の店舗で購入した品目に基づいた興味を持ちそうな品目のことです。 大規模カタログの小売業者には、製品の発見に役立つ推奨事項があります。 製品の推奨事項は、顧客の関心と購買習慣を対象とした製品を展示することで、アップセルおよびクロスセルを行う小売業者を支援し、顧客維持を強化することができます。 Dynamics 365 for Retail では、認知サービスと Microsoft Azure 機械学習によって、小売りと製品の推奨が強化されます。
 
 <a name="scenarios"></a>シナリオ
 ---------
@@ -50,14 +51,14 @@ Dynamics 365 for Operations では、POS (営業拠点) デバイスに製品の
 -   推薦エンジンは、バスケット内のアイテムの全リストに基づいて品目を提案します。
 -   店舗スタッフが顧客をトランザクションに追加する場合、推奨エンジンは、顧客のトランザクション履歴とバスケット内の品目のリストを使用して個人的な推奨を提供します。
 
-[**注記**] [**トランザクション**] ページに推奨事項を表示するには、小売業者は Dynamics 365 の画面レイアウトを更新する必要があります。 [**推奨事項**] コントロールは、[**トランザクション**] ページにドロップする必要があります。 [![transactionscreenmultipleproductslargemessengersbag-5](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
+[**注記**] [**トランザクション**] ページに推奨事項を表示するには、小売業者は Dynamics 365 for Retail の画面レイアウトを更新する必要があります。 [**推奨事項**] コントロールは、[**トランザクション**] ページにドロップする必要があります。 [![transactionscreenmultipleproductslargemessengersbag-5](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
 
 3.  [**顧客の詳細**] ページ:
     -   推薦エンジンは、ユーザ ID および顧客の希望リストの品目に基づいて、品目を提案します。
 
 [![customerdetailsrecommendations](./media/customerdetailsrecommendations.png)](./media/customerdetailsrecommendations.png)
 
-## <a name="configure-dynamics-365-for-operations-to-enable-pos-recommendations"></a>Dynamics 365 for Operations を構成して POS 推奨事項を有効にします。
+## <a name="configure-dynamics-365-for-retail-to-enable-pos-recommendations"></a>Dynamics 365 for Retail を構成して POS 推奨事項を有効にします。
 製品の推奨事項を設定するには、次の設定を行う必要があります。
 
 1.  正しい [**法人**] を選択したことを確認してください。
@@ -69,13 +70,13 @@ Dynamics 365 for Operations では、POS (営業拠点) デバイスに製品の
 ## <a name="how-does-it-work"></a>[]() どのような仕組みですか?
 [**エンティティ ストア**] エンティティを更新すると、次のアクションが実行されます。
 
--   認識サービスによって必要とされる形式のデータは、Dynamics 365 for Operations 運用データベースから抽出され、エンティティ ストアに送信されます。
+-   認識サービスによって必要とされる形式のデータは、Dynamics 365 for Retail 運用データベースから抽出され、エンティティ ストアに送信されます。
 -   このデータは、Azure Data Factory (ADF) によって ADF アクティビティの一部として Hive スクリプトを使用してデータをクレンジングするために使用されます。 クレンジングされたデータは、BLOB ストレージに保存されます。
 -   BLOB ストレージからのデータは、Cognitive サービス API によって推奨モデルをトレーニングするために使用されます。
 
 [**推奨事項の有効化**] をオンにして構成ジョブを実行すると、次の操作が実行されます。
 
--   モデル資格情報と ID は API から取得され、Dynamics 365 for Operations 運用データベース、AOS 用 web.config、および小売サーバーに格納されます。
+-   モデル資格情報と ID は API から取得され、Dynamics 365 for Retail 運用データベース、AOS 用 web.config、および小売サーバーに格納されます。
 -   モデルの資格情報と ID は CRT で利用できるようになっており、オンライン モードで Cloud POS と MPOS からの製品推奨事項を守ることができます。
 
 

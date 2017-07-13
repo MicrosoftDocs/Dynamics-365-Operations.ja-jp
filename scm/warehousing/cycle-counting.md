@@ -3,14 +3,14 @@ title: "循環棚卸"
 description: "この記事は、倉庫管理で使用できる倉庫ソリューションで、循環棚卸を使用する方法について説明します。 この記事は、在庫管理で使用できる倉庫ソリューションには適用されません。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: WHSCycleCountPlan, WHSCycleCountPlanListPage, WHSCycleCountThreshold, WHSWorkTableListPage
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 50671
 ms.assetid: 49f5c431-b043-4170-aa24-b7d5d1ee063e
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 4446dfec1fa8eabb45e14b3f2ff685b3b1d68e2c
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: ebc7789d7b0be5db4a0faf4309bc3640f51956c6
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -36,7 +36,7 @@ ms.lasthandoff: 05/25/2017
 循環棚卸は、手持在庫品目を監査するために使用できる倉庫プロセスです。 循環棚卸プロセスは 3 つの手順で表すことができます。
 
 1.  **循環棚卸作業の作成** – 循環棚卸作業は、品目のしきい値パラメーターに基づいて、または循環棚卸計画を使用して自動的に作成できます。 または、[**品目別循環棚卸作業**] ページまたは [**場所別循環棚卸作業**] ページの品目パラメーターまたは倉庫パラメーターを使用して、手動で循環棚卸作業を作成することもできます。
-2.  [**プロセス循環棚卸**] – 循環棚卸作業の作成後、倉庫の場所の品目の棚卸をし、Microsoft Dynamics 365 for Operations への結果の入力にモバイル デバイスを使用して、循環棚卸作業を実行します。 または、循環棚卸作業を作成せずに、倉庫の場所の品目を棚卸できます。 このプロセスは*スポット循環棚卸*と呼ばれます。
+2.  [**プロセス循環棚卸**] – 循環棚卸作業の作成後、倉庫の場所の品目の棚卸をし、Microsoft Dynamics 365 for Finance and Operations への結果の入力にモバイル デバイスを使用して、循環棚卸作業を実行します。 または、循環棚卸作業を作成せずに、倉庫の場所の品目を棚卸できます。 このプロセスは*スポット循環棚卸*と呼ばれます。
 3.  **循環棚卸値の差異の解決** – 循環棚卸後、棚卸値の差異がある品目は、[**すべての作業**] ページの作業状態が [**検討保留**] です。 これらの差異は [**循環棚卸作業が検討保留**] ページで解決できます。
 
 次の図は、循環棚卸プロセスを示します。 ![循環棚卸のプロセス フロー](./media/performcyclecountinginawarehouselocation.jpg)
@@ -115,10 +115,10 @@ ms.lasthandoff: 05/25/2017
 循環棚卸作業を手動で作成するには、[**品目別循環棚卸作業**] または [**場所別循環棚卸作業**] ページを使用します。 作成する循環棚卸の最大数を指定できます。 たとえば、倉庫マネージャーが値 **5** を指定すると、その品目が 10 の場所にある場合でも、循環棚卸作業は 5 つの場所に対して作成されます。 作成された循環棚卸作業 ID を割り当てる作業プール ID も選択できます。 循環棚卸のために作業プール ID が処理されると、作業プールに割り当てられた循環棚卸作業の ID は、グループとして処理されます。
 
 ## <a name="perform-a-cycle-count-by-using-a-mobile-device"></a>モバイル デバイスを使用して循環棚卸を実行する
-モバイル デバイスの Dynamics 365 for Operations を使用した循環棚卸作業のプロセス処理には複数の方法があります。
+モバイル デバイスの Finance and Operations を使用した循環棚卸作業のプロセス処理には複数の方法があります。
 
 -   **ユーザー主導** – 作業者は [**オープン**] 状態の循環棚卸作業の ID を指定できます。
--   [**システム主導**] – Dynamics 365 for Operations が作業者に循環棚卸作業の ID を割当てます。
+-   [**システム主導**] – Finance and Operations が作業者に循環棚卸作業の ID を割当てます。
 -   **循環棚卸のグループ化** – 作業者は特定の場所、ゾーン、または作業プールに固有の、循環棚卸作業の ID をグループ化できます。
 -   **スポット循環棚卸** – 作業者は循環棚卸作業を作成せずに、いつでも倉庫の場所の品目を棚卸できます。 場所で循環棚卸を実行するには、作業者が場所の ID を入力します。
 

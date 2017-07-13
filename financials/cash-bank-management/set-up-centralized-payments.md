@@ -1,6 +1,6 @@
 ---
 title: "集中支払の設定"
-description: 
+description: "ある 1 つの法人で組織内の他の法人に代わって支払を処理するように準備するには、次の手順に従います。"
 author: twheeloc
 manager: AnnBe
 ms.date: 05/09/2017
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: LedgerInterCompany
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 62243
 ms.assetid: ffd17b5f-9aea-40e0-be49-d8702f615256
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 60cc59911cf2d10d73206885eb97b346ec3e3e87
+ms.sourcegitcommit: 975497e8ed0c9738c225bad4db9165bf2ebc0192
+ms.openlocfilehash: 0b33e37699fb9b81ad1803f670a4dedbce6a9c29
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/05/2017
 
 
 ---
@@ -29,8 +29,6 @@ ms.lasthandoff: 05/25/2017
 # <a name="set-up-centralized-payments"></a>集中支払の設定
 
 [!include[banner](../includes/banner.md)]
-
-
 
 
 ある 1 つの法人で組織内の他の法人に代わって支払を処理するように準備するには、次の手順に従います。 始める前に、次の設定を完了する必要があります。

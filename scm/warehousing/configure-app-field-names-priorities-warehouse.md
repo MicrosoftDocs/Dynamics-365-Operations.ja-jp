@@ -1,16 +1,16 @@
 ---
 title: "倉庫アプリのアプリ フィールド名のコンフィギュレーション"
-description: "このトピックでは、Dynamics 365 for Operations の倉庫アプリ フィールド名と優先順位の定義およびコンフィギュレーション方法について説明します。"
+description: "このトピックでは、Finance and Operations の倉庫アプリ フィールド名と優先順位の定義およびコンフィギュレーション方法について説明します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: WHSMobileAppField, WHSMobileAppFieldPriority
 audience: Application User
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 269434
 ms.assetid: 6cf3d7da-29bb-4d3d-aaf5-544ca9cc2980
 ms.search.region: global
@@ -19,10 +19,10 @@ ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: edcbf8a0921e0eb08d0f970e681c9d098b354c0b
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 49db5ad10914897b2157e123c5803ca51e4e66e7
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -32,14 +32,14 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-このトピックでは、Dynamics 365 for Operations の倉庫アプリ フィールド名と優先順位の定義およびコンフィギュレーション方法について説明します。 
+このトピックでは、Finance and Operations の倉庫アプリ フィールド名と優先順位の定義およびコンフィギュレーション方法について説明します。 
 
-**注記:** このトピックは、倉庫管理の機能に適用されます。 在庫管理の機能には適用しません。 Microsoft Dynamics 365 for Operations - Warehousing は倉庫作業の実行に使用できるアプリケーションです。 アプリで使用されるフィールド名を定義してコンフィギュレーションし、フィールド名に割り当てる優先順位をフィールド名をコンフィギュレーションできます。 このトピックでは、これらの倉庫アプリ フィールド名と優先順位の定義およびコンフィギュレーション方法、および Dynamics 365 for Operations - Warehousing での使用方法について説明します。 Dynamics 365 for Operations - Warehousing への接続をコンフィギュレーションする方法の詳細については、チュートリアル「[Dynamics 365 for Operations – Warehousing のインストールと構成](install-configure-warehousing-app.md)」を参照してください。
+**注記:** このトピックは、倉庫管理の機能に適用されます。 在庫管理の機能には適用しません。 Finance and Operations - Warehousing は倉庫作業の実行に使用できるアプリケーションです。 アプリで使用されるフィールド名を定義してコンフィギュレーションし、フィールド名に割り当てる優先順位をフィールド名をコンフィギュレーションできます。 このトピックでは、これらの倉庫アプリ フィールド名と優先順位の定義およびコンフィギュレーション方法、および Finance and Operations - Warehousing での使用方法について説明します。 Finance and Operations - Warehousing への接続をコンフィギュレーションする方法の詳細については、チュートリアル「[Finance and Operations – Warehousing のインストールと構成](install-configure-warehousing-app.md)」を参照してください。
 
 <a name="configure-warehouse-app-field-names"></a>倉庫アプリ フィールド名のコンフィギュレーション
 ===================================
 
-Dynamics 365 for Operations - Warehousing をモバイル デバイスで使用するときに、[**倉庫アプリ フィールド名**] ページでお使いのデバイスにメタデータをどのように表示するかをコンフィギュレーションできます。 Dynamics 365 for Operations の新しい会社で、[**既定の設定の作成**] をクリックして倉庫モバイル デバイス ワークフローで使用されるすべてのフィールド名を生成してから、優先される入力モードと入力タイプを割り当てます。 すべてのフィールド名を生成すると、次の入力オプションを選択できます。
+Finance and Operations - Warehousing をモバイル デバイスで使用するときに、[**倉庫アプリ フィールド名**] ページでお使いのデバイスにメタデータをどのように表示するかをコンフィギュレーションできます。 Finance and Operations の新しい会社で、[**既定の設定の作成**] をクリックして倉庫モバイル デバイス ワークフローで使用されるすべてのフィールド名を生成してから、優先される入力モードと入力タイプを割り当てます。 すべてのフィールド名を生成すると、次の入力オプションを選択できます。
 
 <table>
 <colgroup>
@@ -73,7 +73,7 @@ Dynamics 365 for Operations - Warehousing をモバイル デバイスで使用�
 <a name="configure-warehouse-app-field-priority"></a>倉庫アプリ フィールドの優先順位のコンフィギュレーション
 ======================================
 
-[**倉庫アプリ フィールドの優先順位**] ページで、フィールド名を異なる優先順位グループに配置できます。 これにより、倉庫作業者がアプリを使用してタスクを実行する際に、どの情報を主要なタスク ページに表示すべきかを決定することができます。 [**既定の設定の作成**] をクリックすると、優先順位グループの既定の設定が生成されます。 必要な数だけ優先順位グループを作成することもできますが、3 つの優先順位グループだけがタスク ページに表示されます。 Dynamics 365 for Operations はアプリにメタデータを送信する際に、優先順位グループに応じて各フィールドに相対的な優先順位を割り当てて、アプリはメタデータを含む上位 3 つの優先順位グループをタスク ページに表示します。 オーバーフローしているメタデータの残りは、2 番目の詳細ページに表示されます。 次の表に、5 つの優先順位グループの例を示します。
+[**倉庫アプリ フィールドの優先順位**] ページで、フィールド名を異なる優先順位グループに配置できます。 これにより、倉庫作業者がアプリを使用してタスクを実行する際に、どの情報を主要なタスク ページに表示すべきかを決定することができます。 [**既定の設定の作成**] をクリックすると、優先順位グループの既定の設定が生成されます。 必要な数だけ優先順位グループを作成することもできますが、3 つの優先順位グループだけがタスク ページに表示されます。 Finance and Operations はアプリにメタデータを送信する際に、優先順位グループに応じて各フィールドに相対的な優先順位を割り当てて、アプリはメタデータを含む上位 3 つの優先順位グループをタスク ページに表示します。 オーバーフローしているメタデータの残りは、2 番目の詳細ページに表示されます。 次の表に、5 つの優先順位グループの例を示します。
 
 <table>
 <colgroup>
@@ -141,12 +141,12 @@ Dynamics 365 for Operations - Warehousing をモバイル デバイスで使用�
 -   行 2: 品目の説明
 -   行 3 : サイズ
 
-場所などの残りのメタデータは、タスク ページに表示されませんが、詳細ページに表示されます。 ユーザー インターフェイスの詳細や例については、ブログ投稿「[Dynamics 365 for Operations - Warehousing の発表](https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/)」を参照してください。
+場所などの残りのメタデータは、タスク ページに表示されませんが、詳細ページに表示されます。 ユーザー インターフェイスの詳細や例については、ブログ投稿「[Finance and Operations - Warehousing の発表](https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/)」を参照してください。
 
 <a name="see-also"></a>参照
 --------
 
-[Microsoft Dynamics 365 for Operations – Warehousing のインストールと構成](install-configure-warehousing-app.md)
+[Microsoft Dynamics 365 for Finance and Operations – Warehousing のインストールと構成](install-configure-warehousing-app.md)
 
 
 

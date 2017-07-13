@@ -114,7 +114,7 @@ Microsoft Dynamics 365 for Finance and Operations は、Microsoft の企業向�
 <p><a href="../retail/call-center-functionality">コール センター</p>
 <p><a href="../retail/define-maintain-retail-channels">チャネルの設定と管理</p>
 <p><a href="../retail/retail-peripherals-overview">MPOS とクラウド POS</p>
-<p><a href="../retail/dev-itpro/dev-retail-home-page">小売開発者と管理</p>
+<p><a href="../retail/dev-itpro/dev-retail-home-page">Retail 開発者と管理</p>
 
 </td>
 </tr>

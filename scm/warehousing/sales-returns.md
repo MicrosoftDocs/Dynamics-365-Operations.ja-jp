@@ -3,13 +3,13 @@ title: "販売返品"
 description: "このトピックでは、返品注文のプロセスについての情報を提供します。 これは顧客の返品に関する情報、および返品による原価計算と手持在庫数量への影響に関する情報が含まれます。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 269384
 ms.assetid: 98a4b517-e606-4036-b55f-1ab248898bdf
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: bdec28ba1fe3650f59520cb42a71497c54a7d93e
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: b66bf79413ad21f12f789eabafe8413af3f58c9c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -32,7 +32,7 @@ ms.lasthandoff: 05/25/2017
 
 このトピックでは、返品注文のプロセスについての情報を提供します。 これは顧客の返品に関する情報、および返品による原価計算と手持在庫数量への影響に関する情報が含まれます。
 
-顧客はさまざまな理由で品目を返品できます。 たとえば、品目に欠陥があるかもしれず、または品目が顧客の期待に応えない場合もあります。 返品プロセスは、顧客が品目の返品要求を発行するとき開始します。 顧客の要求を受領後、Microsoft Dynamics 365 for Operations で返品注文が作成されます。
+顧客はさまざまな理由で品目を返品できます。 たとえば、品目に欠陥があるかもしれず、または品目が顧客の期待に応えない場合もあります。 返品プロセスは、顧客が品目の返品要求を発行するとき開始します。 顧客の要求を受領後、Microsoft Dynamics 365 for Finance and Operations で返品注文が作成されます。
 
 ## <a name="return-order-process"></a>返品注文のプロセス
 次の図は、返品注文プロセスの概要を表示します。  
@@ -264,7 +264,7 @@ ms.lasthandoff: 05/25/2017
 
 [![簡易な会社間返品](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn07.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn07.png)  
 
-注文チェーンは、仕入先の返品注文が仕入元会社で作成されるか、または顧客の返品注文が販売会社で作成されるときに確立されます。 Dynamics 365 for Operations は、ほかの会社で対応する注文を作成し、仕入先の返品注文のヘッダーおよび明細行情報が顧客の返品注文の設定を反映するようにします。 設定された返品注文は、既存の顧客請求書への参照 (**販売注文の検索**) を含める、または除外することができます。 2 つの注文の梱包明細と請求は、個別に処理されます。 たとえば、顧客の返品注文の梱包明細を生成する前に、仕入先の返品注文の梱包明細を生成する必要はありません。
+注文チェーンは、仕入先の返品注文が仕入元会社で作成されるか、または顧客の返品注文が販売会社で作成されるときに確立されます。 Finance and Operations は、ほかの会社で対応する注文を作成し、仕入先の返品注文のヘッダーおよび明細行情報が顧客の返品注文の設定を反映するようにします。 設定された返品注文は、既存の顧客請求書への参照 (**販売注文の検索**) を含める、または除外することができます。 2 つの注文の梱包明細と請求は、個別に処理されます。 たとえば、顧客の返品注文の梱包明細を生成する前に、仕入先の返品注文の梱包明細を生成する必要はありません。
 
 ### <a name="direct-delivery-shipment-returns-among-three-parties"></a>3 つの関係者間の直納の出荷返品
 

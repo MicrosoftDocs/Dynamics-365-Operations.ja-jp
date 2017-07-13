@@ -3,14 +3,14 @@ title: "在庫仕訳帳"
 description: "この記事では、在庫仕訳帳を使用してさまざまなタイプの物理在庫トランザクションを転記する方法について説明します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventJournalBOM, InventJournalCount, InventJournalCountTag, InventJournalLossProfit, InventJournalMovement, InventJournalTransfer, WMSJournalTable
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 51631
 ms.assetid: 3fedeaaf-502f-483c-93d2-ab266828189e
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: d947b184fd61af3b997182f0a39a8c13c58d6a5a
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: fa629b4b8f7fcbd15ee89bc66cbc0bd7ca45215c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,10 +30,12 @@ ms.lasthandoff: 05/25/2017
 
 [!include[banner](../includes/banner.md)]
 
+[!include[retail name](../includes/retail-name.md)]
+
 
 この記事では、在庫仕訳帳を使用してさまざまなタイプの物理在庫トランザクションを転記する方法について説明します。 
 
-Microsoft Dynamics 365 for Operations の在庫仕訳帳は、払出と入荷の転記、在庫移動、部品表 (BOM) の作成など、さまざまなタイプの現物在庫トランザクション転記に使用されます。 これらの在庫仕訳帳はすべて同様の方法で使用されますが、異なるタイプに分類されます。
+Microsoft Dynamics 365 for Finance and Operations の在庫仕訳帳は、払出と入荷の転記、在庫移動、部品表 (BOM) の作成など、さまざまなタイプの現物在庫トランザクション転記に使用されます。 これらの在庫仕訳帳はすべて同様の方法で使用されますが、異なるタイプに分類されます。
 
 ## <a name="types-of-inventory-journals"></a>在庫仕訳帳のタイプ
 次の在庫仕訳帳タイプを使用できます。
@@ -68,7 +70,7 @@ BOM を完了済と報告する場合、BOM 仕訳帳を作成できます。 BO
 
 ### <a name="item-arrival"></a>品目到着
 
-着荷仕訳帳を使用して、品目の入庫を登録することができます (たとえば、発注書から)。 着荷仕訳帳は、**着荷の概要**ページから着荷管理の一部として作成するか、**品目到着**ページから手動で仕訳入力を作成できます。 着荷仕訳帳名を有効にしてピッキング場所を確認する場合、Dynamics 365 for Operations は受け取った品目の場所を検索し、スペースがある場合、受入品目の行先の場所を生成します。
+着荷仕訳帳を使用して、品目の入庫を登録することができます (たとえば、発注書から)。 着荷仕訳帳は、**着荷の概要**ページから着荷管理の一部として作成するか、**品目到着**ページから手動で仕訳入力を作成できます。 着荷仕訳帳名を有効にしてピッキング場所を確認する場合、Finance and Operations は受け取った品目の場所を検索し、スペースがある場合、受入品目の行先の場所を生成します。
 
 ### <a name="production-input"></a>生産入力
 

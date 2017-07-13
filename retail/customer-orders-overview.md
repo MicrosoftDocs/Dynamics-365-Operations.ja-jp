@@ -3,25 +3,27 @@ title: "顧客注文の概要"
 description: "このトピックでは、Retail Modern POS (MPOS) の顧客注文に関する情報を提供します。 顧客注文は、特別注文としても知られています。 このトピックには、関連パラメーターおよびトランザクション フローのディスカッションが含まれています。"
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.reviewer: josaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 260594
 ms.assetid: 6fc835ef-d62e-4f23-9d49-50299be642ca
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: e96579437ab59e99268263a51fc589eaacb98cc1
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: 89e79c7227e05eec539d9bb142b8f41de092f01b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 
 ---
@@ -46,8 +48,8 @@ ms.lasthandoff: 05/25/2017
 
 -   **既定の預金率** – 注文を確定する前に、顧客が前金として支払う必要のある金額を指定します。 既定の前金の額は、注文金額の割合として計算されます。 権限によって、店舗スタッフは [**前金の上書き**] を使用して金額を上書きできる場合があります。
 -   **キャンセル料率** – 顧客注文がキャンセルされた際に料金が発生する場合、その料金の金額を指定します。
--   **キャンセル料コード** – 顧客注文がキャンセルされた際に料金が発生する場合、その料金は Microsoft Dynamics AX の販売注文の請求額コードに反映されます。 このパラメーターを使用して、キャンセル料コードを定義します。
--   **出荷費用コード** – 小売業者が顧客に出荷手数料を請求することができます。 その出荷費用は、Dynamics AX の販売注文の請求額コードに反映されます。 このパラメーターを使用して、顧客注文の出荷費用に出荷費用コードをマップします。
+-   **キャンセル料コード** – 顧客注文がキャンセルされた際に料金が発生する場合、その料金は販売注文の請求額コードに反映されます。 このパラメーターを使用して、キャンセル料コードを定義します。
+-   **出荷費用コード** – 小売業者が顧客に出荷手数料を請求することができます。 その出荷費用は、販売注文の請求額コードに反映されます。 このパラメーターを使用して、顧客注文の出荷費用に出荷費用コードをマップします。
 -   **出荷費用の返金** – 顧客注文に関連付けられる出荷費用が払戻可能かどうかを指定します。
 -   **承認なしで返金可能な最高額** – 出荷費用が払戻可能である場合、返品注文時の出荷費用払戻の最大金額を指定します。 この金額を超えた場合、払戻を進めるにはマネージャー オーバーライドが必要です。 次のシナリオに対応するには、出荷費用の払戻がもともと支払われた金額を超える場合があります。
     -   費用は、販売注文ヘッダーのレベルで適用され、製品ラインの数個が返品される場合、すべての小売顧客を対象とする方法で、製品と数量に許可されている出荷費用の最大払戻額を決定することはできません。
@@ -90,10 +92,10 @@ ms.lasthandoff: 05/25/2017
 
 ### <a name="enable-customer-orders-to-be-created-in-asynchronous-mode"></a>非同期モードで作成する顧客注文の有効化
 
-1.  Dynamics AX で、[**小売りとコマース**] &gt; [**チャンネル設定**] &gt; [**POS 設定**] &gt; [**POS プロファイル**] &gt; [**機能プロファイル**] の順に移動します。
+1.  [**小売り**] &gt; [**チャンネル設定**] &gt; [**POS 設定**] &gt; [**POS プロファイル**] &gt; [**機能プロファイル**] をクリックします。
 2.  [**一般**] クイック タブで、[**非同期モードで顧客注文を作成**] オプションを [**はい**] に設定します。
 
-[**非同期モードで顧客注文を作成**] オプションを [**はい**] に設定すると、顧客注文は Retail Transaction Service (RTS) が使用できる場合でも常に非同期モードで作成されます。 このオプションを [**いいえ**] に設定した場合、顧客注文は RTS を使用して常に同期モードで作成されます。 顧客注文が非同期モードで作成されると、プル (P) ジョブによって Dynamics AX に引っ張られ、挿入されます。 [**注文の同期**] が手動またはバッチ処理で実行される場合、対応する販売注文は Dynamics AX で作成されます。
+[**非同期モードで顧客注文を作成**] オプションを [**はい**] に設定すると、顧客注文は Retail Transaction Service (RTS) が使用できる場合でも常に非同期モードで作成されます。 このオプションを [**いいえ**] に設定した場合、顧客注文は RTS を使用して常に同期モードで作成されます。 顧客注文が非同期モードで作成されると、プル (P) ジョブによって Retail に引っ張られ、挿入されます。 [**注文の同期**] が手動またはバッチ処理で実行される場合、対応する販売注文は Retail で作成されます。
 
 <a name="see-also"></a>参照
 --------

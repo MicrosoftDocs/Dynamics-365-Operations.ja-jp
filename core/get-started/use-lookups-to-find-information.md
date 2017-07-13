@@ -1,15 +1,15 @@
 ---
 title: "情報の検索におけるルックアップの使用"
-description: "Microsoft Dynamics 365 for Operations では多数のフィールドに適切な修正または目的の値の検索が容易なルックアップがあります。 複数の拡張機能は、これらのコントロールの使用可能により、ユーザーにルックアップが表示されます。 このトピックでは、これらの新しいルックアップ機能について情報と、システムのルックアップから業務の使用を取得するために、必要な情報が表示されます。"
+description: "Microsoft Dynamics 365 for Finance and Operations では多数のフィールドに適切な修正または目的の値の検索が容易なルックアップがあります。 複数の拡張機能は、これらのコントロールの使用可能により、ユーザーにルックアップが表示されます。 このトピックでは、これらの新しいルックアップ機能について情報と、システムのルックアップから業務の使用を取得するために、必要な情報が表示されます。"
 author: jasongre
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 269934
 ms.assetid: f20cbd2c-14e0-47e7-b351-8e60d3537f96
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 652fbdb7a96c516ca1fc17357683d94b85cd93f3
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: a5d0a9edd2cb5747fc799c6fdca45dd9ba5720f7
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,12 +30,12 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Microsoft Dynamics 365 for Operations では多数のフィールドに適切な修正または目的の値の検索が容易なルックアップがあります。 複数の拡張機能は、これらのコントロールの使用可能により、ユーザーにルックアップが表示されます。 このトピックでは、これらの新しいルックアップ機能について情報と、システムのルックアップから業務の使用を取得するために、必要な情報が表示されます。  
+Microsoft Dynamics 365 for Finance and Operations では多数のフィールドに適切な修正または目的の値の検索が容易なルックアップがあります。 複数の拡張機能は、これらのコントロールの使用可能により、ユーザーにルックアップが表示されます。 このトピックでは、これらの新しいルックアップ機能について情報と、システムのルックアップから業務の使用を取得するために、必要な情報が表示されます。  
 
 <a name="responsive-lookups"></a>関連するルックアップ
 ------------------
 
-Dynamics 365 for Operations の以前のバージョンでは、ルックアップ制御と連携している場合、ユーザーがドロップダウンメニューを開き明示的アクションをとる必要があります。 これは、コントロールでアスタリスク (\*) を入力したり、またはドロップダウンボタンをクリックしたり、**Alt**+**下矢印** キーボード ショートカットを使用することで、コントロールの現在の値に基づいてルックアップをフィルター処理されている場合があります。 ルックアップ制御は、現在の Web 推奨事項に対応するために、次のように変更されました。
+Finance and Operations の以前のバージョンでは、ルックアップ制御と連携している場合、ユーザーがドロップダウンメニューを開き明示的アクションをとる必要があります。 これは、コントロールでアスタリスク (\*) を入力したり、またはドロップダウンボタンをクリックしたり、**Alt**+**下矢印** キーボード ショートカットを使用することで、コントロールの現在の値に基づいてルックアップをフィルター処理されている場合があります。 ルックアップ制御は、現在の Web 推奨事項に対応するために、次のように変更されました。
 
 -   ルックアップのドロップダウン メニューでは、入力時に少し一時停止して、ルックアップ制御の値に基づくフィルター処理されたドロップダウン メニューのコンテンツを自動的に開きます。
     -   アスタリスク (\*) を入力した後、以前の動作であるドロップダウンの自動開始が使用されていないことに注意してください。
@@ -58,7 +58,7 @@ Dynamics 365 for Operations の以前のバージョンでは、ルックアッ�
 ![changingSelectionLookup](./media/changingselectionlookup.png)
 
 ## <a name="typing-in-more-than-ids"></a>詳細 ID の入力
-データを入力するとき、ユーザーは大抵、エンティティを表す ID よりもむしろ、顧客または仕入先などの名前でエンティティを識別することを試みます。 Dynamics 365 for Operations の現在のバージョンでは、多数の (全てではない) ルックアップは、コンテキストでのデータ入力ができます。 この強力な機能によって、ユーザーがルックアップ 制御に対応する名前または ID を入力することもできます。 
+データを入力するとき、ユーザーは大抵、エンティティを表す ID よりもむしろ、顧客または仕入先などの名前でエンティティを識別することを試みます。 Finance and Operations の現在のバージョンでは、多数の (全てではない) ルックアップは、コンテキストでのデータ入力ができます。 この強力な機能によって、ユーザーがルックアップ 制御に対応する名前または ID を入力することもできます。 
 
 たとえば、販売注文の作成時に **顧客口座** フィールドを考慮します。 このフィールドは、顧客の **口座 ID** を表示しますが、ユーザーは「US-003」の代わりに、「Forest Wholesales」のような販売注文を作成するとき、通常は**口座 ID** よりも **アカウント名** を入力します。
 

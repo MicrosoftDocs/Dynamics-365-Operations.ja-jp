@@ -3,14 +3,14 @@ title: "原価会計用語"
 description: "このトピックでは、原価計算で使用する重要な用語を定義します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CAMCostControlWorkspace, CAMCostControlWorkspaceConfiguration
 audience: Application User
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 223114
 ms.assetid: 1c798592-77d0-4a8f-beaa-9159c75957da
 ms.search.region: global
@@ -19,10 +19,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 7ce12337c22542aea2002ffc5abd09e4f4d770c1
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 35b8e510e7e2c13aebb73f46d20b16275d097432
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -36,7 +36,7 @@ ms.lasthandoff: 05/25/2017
 
 **原価会計**
 
-原価計算では、総勘定元帳、補助元帳、予算、および統計情報などのさまざまなソースから、データを収集することができます。 次に分析、集計、および原価データを評価し、管理者が価格の更新、予算、原価管理などの最善の決定ができるようにします。 原価分析に使用されるソース データは、原価計算では別に処理されます。 したがって、原価計算の更新はソース データに影響しません。 ただし、さまざまなソースから原価データを収集し、特に原価要素として、Microsoft Dynamics 365 for Operation の総勘定元帳から主勘定をインポートすると、同じデータが総勘定元帳と原価計算の両方に存在するため、データ冗長があります。 この冗長性は、外部レポートでの財務管理および内部レポートでの原価計算を使用するために必要です。
+原価計算では、総勘定元帳、補助元帳、予算、および統計情報などのさまざまなソースから、データを収集することができます。 次に分析、集計、および原価データを評価し、管理者が価格の更新、予算、原価管理などの最善の決定ができるようにします。 原価分析に使用されるソース データは、原価計算では別に処理されます。 したがって、原価計算の更新はソース データに影響しません。 ただし、さまざまなソースから原価データを収集し、特に原価要素として、Microsoft Dynamics 365 for Finance および Operation, Enterprise Edition の一般会計から主勘定をインポートすると、同じデータが一般会計と原価計算の両方に存在するため、データ冗長があります。 この冗長性は、外部レポートでの財務管理および内部レポートでの原価計算を使用するために必要です。
 
 **原価会計元帳**
 

@@ -3,27 +3,26 @@ title: "コール センターのカタログ作成"
 description: "この記事は、コール センターのカタログを作成するプロセスの概要を提供します。"
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 16212
 ms.assetid: c9d1b9df-82e8-4b3a-a13c-166df8b9718e
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: ef58d4b2028aee5bccd9f060abed8342381888eb
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: 28aaa84c11a897b895b2a106ca5f0cd6168997b2
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 06/20/2017
 
 ---
 
@@ -34,7 +33,7 @@ ms.lasthandoff: 05/25/2017
 
 この記事は、コール センターのカタログを作成するプロセスの概要を提供します。 
 
-コール センターで、顧客に提供する製品を識別するために小売製品カタログを使用できます。 コール センターは、通常、印刷したカタログを使用します。 印刷したカタログのデザインと生産は、Microsoft Dynamics 365 for Operations の範囲外で処理されます。 ただし、Dynamics 365 for Operations の [小売りとコマース] で、オンライン小売カタログの設定で使用するのと同じフォームを使用して、カタログのデジタル フォームを作成および格納できます。 カタログを作成する前に、製品の品揃えを設定し、コール センターにその品揃えを割り当てる必要があります。 これらの品揃えから製品を選択して、カタログに製品を追加します。 製品がカタログに追加され、カタログが完成したら、カタログを検証してデータを確認する必要があります。 それから、確認および承認のためにカタログを送信する必要があります。 カタログが承認されたら、公開できます。 コール センターのカタログが作成されたら、カタログが発行される時にカタログ データのスナップショットを取ることができます。 このスナップショットの機能により、カタログが後で変更および更新されても、カタログの特定のバージョンにアクセスできるようになります。 コール センターのカタログは、次のオプション機能を含めるように設定できます。
+コール センターで、顧客に提供する製品を識別するために小売製品カタログを使用できます。 コール センターは、通常、印刷したカタログを使用します。 印刷したカタログのデザインと生産は、Microsoft Dynamics 365 for Retail の範囲外で処理されます。 ただし、オンライン小売カタログの設定で使用するのと同じフォームを使用して、カタログのデジタル フォームを作成および格納できます。 カタログを作成する前に、製品の品揃えを設定し、コール センターにその品揃えを割り当てる必要があります。 これらの品揃えから製品を選択して、カタログに製品を追加します。 製品がカタログに追加され、カタログが完成したら、カタログを検証してデータを確認する必要があります。 それから、確認および承認のためにカタログを送信する必要があります。 カタログが承認されたら、公開できます。 コール センターのカタログが作成されたら、カタログが発行される時にカタログ データのスナップショットを取ることができます。 このスナップショットの機能により、カタログが後で変更および更新されても、カタログの特定のバージョンにアクセスできるようになります。 コール センターのカタログは、次のオプション機能を含めるように設定できます。
 
 -   **ソース コード** – 特定のカタログ メーリングへの顧客の応答を追跡するのに使用するコード。
 -   **無料製品** – 追加料金なしで顧客の注文に含まれる製品。 これらの製品は、カタログのソース コードが注文に入力されると自動的に注文に追加されます。

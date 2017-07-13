@@ -3,14 +3,14 @@ title: "検査指示"
 description: "この記事は、在庫をブロックする検査指示の使用方法について説明します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventLocation, InventModelGroup, InventQuarantineOrder, InventQuarantineParmEnd, InventQuarantineParmReportFinished, InventQuarantineParmStartUp, InventTrans
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 30021
 ms.assetid: d5047727-653c-49da-b489-6fd3fe50445e
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 63d8c5827a95693a903428322367a4eec61f17d8
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: ec3d54e8e08850cd81891e7058b2b787e08b0fb9
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -36,7 +36,7 @@ ms.lasthandoff: 05/25/2017
 検査指示は、在庫をブロックするのに使用できます。 たとえば、 品質テストの理由で品目を検査する場合があります。 検査された在庫は、検査倉庫に転送されます。 **注記:** 高度な倉庫管理プロセス (倉庫管理で) を使用している場合、検査指示の処理は返品販売注文に対してのみ使用されます。
 
 ## <a name="quarantine-onhand-inventory-items"></a>手持在庫品目の検査
-品目を検査する場合、検査指示を手動で作成するか、受信処理時に検査指示を自動的に作成するようにシステムを設定するかのいずれかが可能です。 検査指示を自動的に作成するには、[**品目モデル グループ**] ページの [**在庫ポリシー**] タブの [**検査管理**] オプションを選択します。 また、入荷倉庫について、[**検査倉庫**] フィールドで既定の検査倉庫を指定する必要があります。 Microsoft Dynamics 365 for Operations では、現物手持在庫が発注書または製造オーダーで記録されると、検査品目は検査倉庫に自動的に移動されます。 この移動は、検査指示のステータスが**開始済**に変更されるため、実行されます。 検査指示を手動で作成する場合、品目は、関連する品目モデル グループで検査管理のために設定する必要はありません。 このプロセスでは、検査する手持在庫と、使用する検査倉庫を指定する必要があります。 プロセスの計画を支援するために、検査指示のステータスを使用できます。
+品目を検査する場合、検査指示を手動で作成するか、受信処理時に検査指示を自動的に作成するようにシステムを設定するかのいずれかが可能です。 検査指示を自動的に作成するには、[**品目モデル グループ**] ページの [**在庫ポリシー**] タブの [**検査管理**] オプションを選択します。 また、入荷倉庫について、[**検査倉庫**] フィールドで既定の検査倉庫を指定する必要があります。 Microsoft Dynamics 365 for Finance and Operations では、現物手持在庫が発注書または製造オーダーで記録されると、検査品目は検査倉庫に自動的に移動されます。 この移動は、検査指示のステータスが**開始済**に変更されるため、実行されます。 検査指示を手動で作成する場合、品目は、関連する品目モデル グループで検査管理のために設定する必要はありません。 このプロセスでは、検査する手持在庫と、使用する検査倉庫を指定する必要があります。 プロセスの計画を支援するために、検査指示のステータスを使用できます。
 
 ## <a name="quarantine-order-statuses"></a>検査指示のステータス
 検査指示には次のステータスがあります。

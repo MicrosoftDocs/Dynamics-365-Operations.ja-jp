@@ -1,27 +1,28 @@
 ---
 title: "POS デバイスのトランザクション ページへのレコメンデーション コントロールの追加"
-description: "このトピックでは、Microsoft Dynamics 365 for Operations の画面レイアウト デザイナーを使用して販売時点管理 (POS) デバイスのトランザクション画面にレコメンデーション コントロールを追加する方法について説明します。"
+description: "このトピックでは、Microsoft Dynamics 365 for Retail の画面レイアウト デザイナーを使用して販売時点管理 (POS) デバイスのトランザクション画面にレコメンデーション コントロールを追加する方法について説明します。"
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
-ms.search.scope: Operations, Core
+ms.reviewer: josaw
+ms.search.scope: Retail, Operations, Core, UnifiedOperations
 ms.custom: 260624
 ms.assetid: a4f9d315-9951-451c-8ee6-37f9b3b15ef0
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
+ms.dyn365.ops.version: Version 1611, Retail Version
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: db17231a27c85193dd95dfe32575f598e00873b1
+ms.sourcegitcommit: 52a16be4b07eafb493c7fd7ad52a6d9d1bb9ee89
+ms.openlocfilehash: 1cb80decf8ef0f182feec5d4cbe76b37b106dcd2
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
@@ -31,12 +32,12 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](includes/banner.md)]
 
 
-このトピックでは、Microsoft Dynamics 365 for Operations の画面レイアウト デザイナーを使用して販売時点管理 (POS) デバイスのトランザクション画面にレコメンデーション コントロールを追加する方法について説明します。
+このトピックでは、Microsoft Dynamics 365 for Retail の画面レイアウト デザイナーを使用して販売時点管理 (POS) デバイスのトランザクション画面にレコメンデーション コントロールを追加する方法について説明します。
 
-Microsoft Dynamics 365 for Operations を使用するときに、POS デバイスに製品レコメンデーションを表示できます。 [*レコメンデーション*] は、顧客の購買履歴、欲しい物のリストの品目、他の顧客がオンラインや従来型の店舗で購入した品目に基づいた興味を持ちそうな品目です。 製品レコメンデーションを表示するには、画面レイアウト デザイナーを使用してトランザクション画面にコントロールを追加する必要があります。
+Microsoft Dynamics 365 for Retail を使用するときに、POS デバイスに製品レコメンデーションを表示できます。 [*レコメンデーション*] は、顧客の購買履歴、欲しい物のリストの品目、他の顧客がオンラインや従来型の店舗で購入した品目に基づいた興味を持ちそうな品目です。 製品レコメンデーションを表示するには、画面レイアウト デザイナーを使用してトランザクション画面にコントロールを追加する必要があります。
 
 ## <a name="open-layout-designer"></a>レイアウト デザイナーを開く
-1.  [**小売りとコマース**] &gt; [**チャンネル設定**] &gt; [**POS 設定**] &gt; [**POS**] &gt; [**画面レイアウト**] の順に移動します。
+1.  [**小売り**] &gt; [**チャンネル設定**] &gt; [**POS 設定**] &gt; [**POS**] &gt; [**画面レイアウト**] の順に移動します。
 2.  クイック フィルターを使用して、コントロールを追加する画面を検索します。 たとえば、「F2CP16:9M」の値を使用して [**画面レイアウト ID**] フィールドをフィルター処理します。
 3.  一覧で、目的のレコードを見つけ、選択します。 たとえば、「名前: F2CP16:9M 画面レイアウト ID: F2CP16:9M」を選択します。
 4.  [**レイアウト デザイナー**] をクリックします。
@@ -55,7 +56,7 @@ Microsoft Dynamics 365 for Operations を使用するときに、POS デバイ�
 1.  左側が顧客パネルと同じ高さになるように、トランザクション明細行の詳細領域の高さを下げます。[](./media/pic-2.png)[![screenlayout-pic-2](./media/screenlayout-pic-2.png)](./media/screenlayout-pic-2.png)
 2.  左側のメニューから、トランザクション明細行の詳細領域とトランザクション画面の中央下にあるボタン グリッドの間にレコメンデーション コントロールをドラッグ アンド ドロップします。 そのスペースに合うようにコントロールのサイズを変更します。[](./media/pic-3.png)[![screenlayout-pic-3](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)
 3.  [**X**] をクリックして、レイアウト デザイナーを保存して終了します。
-4.  Dynamics 365 for Operations で、[**小売りとコマース**] &gt; [**小売 IT**] &gt; [**配送スケジュール**] に移動します。
+4.  Dynamics 365 for Retail で、[**小売り**] &gt; [**小売 IT**] &gt; [**配送スケジュール**] に移動します。
 5.  ボックスの一覧で、[**1090 レジスター**] を選択します。
 6.  [**今すぐ実行**] をクリックします。
 
@@ -70,7 +71,7 @@ Microsoft Dynamics 365 for Operations を使用するときに、POS デバイ�
 7.  [**画像**] フィールドで、タブで表示する画像を選択します。
 8.  [**OK**] をクリックします。 新しいタブがボタン グリッドに表示されます。
 9.  [**X**] をクリックして、レイアウト デザイナーを保存して終了します。
-10. Dynamics 365 for Operations で、[**小売りとコマース**] &gt; [**小売 IT**] &gt; [**配送スケジュール**] に移動します。
+10. Dynamics 365 for Retail で、[**小売り**] &gt; [**小売 IT**] &gt; [**配送スケジュール**] に移動します。
 11. ボックスの一覧で、[**1090 レジスター**] を選択します。
 12. [**今すぐ実行**] をクリックします。
 

@@ -3,14 +3,14 @@ title: "日本の固定資産減価償却のよく寄せられる質問"
 description: "この記事は、日本の固定資産の減価償却についてよく寄せられる質問に回答します。"
 author: RichardLuan
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 10294
 ms.assetid: 81dab75a-3760-48f2-b453-11b487def3b2
 ms.search.region: Japan
@@ -18,10 +18,10 @@ ms.author: RichardLuan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 7cabd644a93a82d9592d9275550d1e248892e31f
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 797fcbc84e7ce09b917f0bb03d50e8fc6dfdd1f3
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -70,7 +70,7 @@ ms.lasthandoff: 05/25/2017
 -   **減価償却累計額の最大許容限度** – この限度は、定額法または古い定率法以外の減価償却方法を使用して減価償却される、有形および無形資産の両方に適用されます。 有形資産の場合、減価償却累計額の最大許容限度は資産の取得コストです。 無形資産の減価償却累計額の最大許容限度は、1 円を差し引いた資産の取得コストです。
 
 ## <a name="can-i-calculate-depreciation-for-a-fixed-asset-for-a-fiscal-year-that-has-fewer-than-12-months"></a>12 か月未満の会計年に対して固定資産の減価償却を計算できますか。
-はい。 Microsoft Dynamics 365 for Operations は会計年度の月数が 12 か月に満たない場合でも減価償却の計算をサポートします。 複数の減価償却カレンダーを設定し、それらの間で変更できます。 減価償却のカレンダーの変更後に現在の会計年度が 12 か月未満となる場合、現在の会計年度および 12 か月ある会計年度に基づいて減価償却の割合が比例的に調整されます。 次の例は、12 か月に満たない会計年度における減価償却の計算例を示します。 元の会計年度が 2010 年 4 月 1 日から 2011 年 3 月 31 日までの期間であり、減価償却が会計年度全体に対して計算されます。 減価償却のカレンダーを変更した後、会計年度は 2011 年 1 月 1 日から 2011 年 12 月 31 日までになります。 このシナリオでは、1 月、2 月、3 月は前の会計カレンダーの一部になり、現在の会計年度は 9 か月のみで構成されます。 残りの 9 か月の減価償却 (2011 年 4 月 1 日から 2011 年 12 月 31 日まで) は、比例分割方法を使用して、前年度の会計年度からの減価償却比率を使用して計算されます。
+はい。 Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition は会計年度の月数が 12 か月に満たない場合でも減価償却の計算をサポートします。 複数の減価償却カレンダーを設定し、それらの間で変更できます。 減価償却のカレンダーの変更後に現在の会計年度が 12 か月未満となる場合、現在の会計年度および 12 か月ある会計年度に基づいて減価償却の割合が比例的に調整されます。 次の例は、12 か月に満たない会計年度における減価償却の計算例を示します。 元の会計年度が 2010 年 4 月 1 日から 2011 年 3 月 31 日までの期間であり、減価償却が会計年度全体に対して計算されます。 減価償却のカレンダーを変更した後、会計年度は 2011 年 1 月 1 日から 2011 年 12 月 31 日までになります。 このシナリオでは、1 月、2 月、3 月は前の会計カレンダーの一部になり、現在の会計年度は 9 か月のみで構成されます。 残りの 9 か月の減価償却 (2011 年 4 月 1 日から 2011 年 12 月 31 日まで) は、比例分割方法を使用して、前年度の会計年度からの減価償却比率を使用して計算されます。
 
 ## <a name="what-is-the-catchup-rule-for-depreciation-and-how-does-it-work"></a>減価償却の差額計上方式とは何ですか。どのような仕組みですか。
 減価償却の差額計上方式は、年次減価償却の経費を各期間の減価償却の経費に配分するための効果的な方法として提供されます。 差額計上方式を有効にするには、**固定資産パラメーター** ページの**差額計上方式**チェック ボックスをオンにします。 また、差額計上方式を会計期間の終了時または会計年度末に適用するかどうかを指定できます。

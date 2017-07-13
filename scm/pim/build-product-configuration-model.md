@@ -3,14 +3,14 @@ title: "製品コンフィギュレーション モデルの構築"
 description: "特別な条件を満たすために製品をコンフィギュレーションする必要は、企業間および企業と顧客間の関係、両方において例外ではなくルールになってきました。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PCProductConfigurationModelDetails
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 75083
 ms.assetid: f08072b8-cb0b-43aa-9509-f5ec32caecd9
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 901d5dd18f0da6f05c185c24b3f11fe32fdc400b
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 5bc19e95266e8f1bec8744da688387dca559373f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -72,7 +72,7 @@ ms.lasthandoff: 05/25/2017
 
 ユーザー定義のテーブル制約は、ユーザーによって構築されます。 ユーザーは属性タイプの組み合わせを選択して、テーブルの列を表し、選択した属性タイプのドメインから値を入力して、テーブル制約の行を作ります。  
 
-システム定義のテーブル制約は参照として使用する [Microsoft Dynamics 365 for Operations] テーブルを選択することによって定義され、このテーブルからフィールドを選択して、制限の列を作ります。 テーブル制約の行は、コンフィギュレーション時に存在する [Dynamics 365 for Operations] のテーブルの行です。  
+システム定義のテーブル制約は参照として使用する [Microsoft Dynamics 365 for Finance and Operations] テーブルを選択することによって定義され、このテーブルからフィールドを選択して、制限の列を作ります。 テーブル制約の行は、コンフィギュレーション時に存在する [Finance and Operations] テーブルの行です。  
 
 テーブル制約は、テーブル制約定義を参照し、モデルの中で該当する属性をテーブル制限の列へマッピングすることによって製品コンフィギュレーション モデルに含まれます。
 

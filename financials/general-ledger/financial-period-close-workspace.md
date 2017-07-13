@@ -3,7 +3,7 @@ title: "財務期間終了ワークスペース"
 description: "この記事は、財務期間終了ワークスペースおよび関連するコンフィギュレーションの概要を提供します。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: LedgerPeriodCloseProjectWorkspace
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 13791
 ms.assetid: 6ee51758-639b-448e-9cb2-56cf1d804273
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 788b0af30eb750cad8f958ecc4c33cf989b2a417
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: 5de5e3aad0b7a5853653ae53326dac078ec94fea
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
@@ -65,7 +65,7 @@ ms.lasthandoff: 05/25/2017
 **すべての財務期間終了タスク** リスト ページで、すべての現在のタスクと以前の期間に決算したタスクを表示できます。 このリスト ページは、決算処理時の履歴分析に最もよく使用されます。なぜなら予定期日、実際の完了日、タスクを完了した従業員に関する情報が含まれるためです。 レポーティングおよび監査目的で Microsoft Excel にこのリスト ページの情報を簡単にエクスポートできます。
 
 ## <a name="financial-period-close-configuration-page"></a>財務期間終了コンフィギュレーション ページ
-[**財務期間終了**] ワークスペースを使用する前に、**財務期間終了コンフィギュレーション** ページを使用して、Microsoft Dynamics 365 for Operations のプロセスをコンフィギュレーションする必要があります。 ([**総勘定元帳**] &gt; [**期間終了**] &gt; [**財務期間終了コンフィギュレーション**] の順にクリックします。)
+[**財務期間終了**] ワークスペースを使用する前に、**財務期間終了コンフィギュレーション**ページを使用して、Microsoft Dynamics 365 for Finance および Operations のプロセスをコンフィギュレーションする必要があります。 ([**総勘定元帳**] &gt; [**期間終了**] &gt; [**財務期間終了コンフィギュレーション**] の順にクリックします。)
 
 ### <a name="resources"></a>リソース
 
@@ -90,7 +90,7 @@ ms.lasthandoff: 05/25/2017
 
 テンプレートのタスクは、そのタスクが適用される複数の会社に割り当てることができます。 それぞれの会社でその作業工数を完了するために異なる担当者が割り当てられている場合、同じ作業工数に対して複数のタスクを作成することをお勧めします。 各会社に 1 つのタスクを作成します。 
 
-[**タスク リンク**] メニュー項目は、作業工数に関連付けられ、ワークスペースのタスク リンクから関連するページに直接移動することができます。 たとえば、買掛金勘定の通貨の再評価プロセスを実行する決算タスクは、Microsoft Dynamics 365 for Operations の関連する [**外貨再評価**] ページにリンクできます。 外部のURLにリンクすることもできます。 
+[**タスク リンク**] メニュー項目は、作業工数に関連付けられ、ワークスペースのタスク リンクから関連するページに直接移動することができます。 たとえば、買掛金勘定の通貨の再評価プロセスを実行する決算タスクは、Microsoft Dynamics 365 for Finance および Operations、Enterprise Edition の関連する [**外貨再評価**] ページにリンクできます。 外部のURLにリンクすることもできます。 
 
 > [!ヒント] 特定の Management Reporter レポートを財務期間終了タスクにリンクする場合は、レポート URL を使用します。 レポート URL にアクセスするには、レポート デザイナーのレポートを開き、[**ファイル**] &gt; [**レポートの表示**] の順にクリックして、Web ブラウザのレポートを開きます。 次にブラウザーのアドレス バーの URL をコピーし、[**タスク リンク** **URL**] フィールドに貼り付けます。 
 

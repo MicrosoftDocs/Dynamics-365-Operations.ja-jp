@@ -3,7 +3,7 @@ title: "詳細な口座調整の概要"
 description: "この記事は、高度な口座調整プロセスのフローについて説明します。 高度な口座調整機能では、銀行トランザクション内で自動的に調整できる口座取引明細書をインポートできます。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: BankReconciliationMatchRule
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 22104
 ms.assetid: b0705653-1fa6-4d94-9728-bcf9fb387ad1
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: leguo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: deba55d5e1e376f3f4063f372bfe853fcaf20498
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 67cd622d7766e5b177ccc58398431b007e8bda4e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -42,12 +42,12 @@ ms.lasthandoff: 05/25/2017
     -   機能は、任意の形式に拡張できます。
 
 2.  詳細な口座調整に使用する番号順序を設定して、口座調整の照合ルールを定義します。
-    -   調整の照合ルールは、調整プロセス中に口座取引明細行および Microsoft Dynamics 365 for Operations 銀行トランザクション明細行をフィルタ処理するために使用される一連の基準です。 業務内容によって、1 つ以上の照合ルールを設定して、調整プロセスを自動化また最適化できます。
+    -   調整の照合ルールは、調整プロセス中に口座取引明細行および Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 銀行トランザクション明細行をフィルタ処理するために使用される一連の基準です。 業務内容によって、1 つ以上の照合ルールを設定して、調整プロセスを自動化また最適化できます。
 
-3.  Dynamics 365 for Operations の銀行トランザクションを使用して、口座取引明細書を調整します。
+3.  Finance and Operations の銀行トランザクションを使用して、口座取引明細書を調整します。
     -   口座調整仕訳の自動照合と作成を実行します。
-    -   口座取引明細書と Dynamics 365 for Operations の銀行トランザクションを並べて表示します。
-    -   口座取引明細書には表示されるが、Dynamics 365 for Operations には表示されない場合には、Dynamics 365 for Operations に銀行のトランザクションを自動的に転記します。
+    -   口座取引明細書と Finance and Operations の銀行トランザクションを並べて表示します。
+    -   口座取引明細書には表示されるが Finance and Operations には表示されない場合、Finance and Operations に銀行のトランザクションを自動的に転記します。
     -   調整明細書を生成します。
 
 

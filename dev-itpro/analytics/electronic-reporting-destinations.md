@@ -3,14 +3,14 @@ title: "電子申告の送信先"
 description: "各電子レポート (ER) 形式のコンフィギュレーション、および生産物コンポーネント (フォルダやファイル) の出力先をコンフィギュレーションできます。 適切なアクセス権が与えられているユーザーは、実行時に送信先の設定を変更することもできます。 この資料では、電子申告の送信先の管理、サポートされている送信先の種類とセキュリティに関する考慮事項について説明します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: DocuType, ERSolutionTable
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 97423
 ms.assetid: f3055a27-717a-4c94-a912-f269a1288be6
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 5fb008420f82abd7983ee26854f84330705c0c01
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: fb2aeee1f38823e7ea96071f773e8448d65ba8ff
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -36,9 +36,9 @@ ms.lasthandoff: 05/25/2017
 電子申告 (ER) 形式の構成には、通常少なくとも 1 つの出力のコンポーネント (ファイル) が含まれます。 通常、構成には 1 つのフォルダーまたは複数のフォルダーのいずれかにグループ化された、異なる種類 (たとえば、XML、TXT、または XLSX) の複数のファイル出力コンポーネントが含まれています。 電子申告の送信先管理では、各コンポーネントの実行時に発生する内容を事前に構成することができます。 既定では、構成を実行すると、ファイルを保存または開くためのダイアログ ボックスが表示されます。 同様の動作は、電子申告の構成をインポートし、任意の特定の宛先を構成しない場合にも使用されます。 主な出力コンポーネントの送信先が作成されると、その送信先は既定の動作を上書きし、フォルダーまたはファイルは宛先の設定に従って送信されます。
 
 ## <a name="availability-and-general-prerequisites"></a>可用性と一般的な前提条件
-電子申告の宛先の機能は、Microsoft Dynamics 365 for Operations 7.0 (2016 年 2 月) のリリースでは利用できません。 したがって、このトピックに記載されているすべての機能を使用するには Microsoft Dynamics 365 for Operations (2016 年 11 月リリース) をインストールする必要があります。 または、次の前提条件のいずれかをインストールできます。 ただし、これらの代替条件は、ER 出力先のエクスペリエンスがさらに制限されることに注意してください。
+電子申告の宛先の機能は、Microsoft Dynamics AX 7.0 (2016 年 2 月) では利用できません。 したがって、このトピックに記載されているすべての機能を使用するには Microsoft Dynamics 365 for Operations バージョン 1611 (2016 年 11 月) をインストールする必要があります。 または、次の前提条件のいずれかをインストールできます。 ただし、これらの代替条件は、ER 出力先のエクスペリエンスがさらに制限されることに注意してください。
 
--   Microsoft Dynamics 365 for Operations application version 7.0.1 (2016 年 5 月)
+-   Microsoft Dynamics AX application version 7.0.1 (2016 年 5 月)
 -   電子申告宛先管理[アプリケーションの修正プログラム](https://fix.lcs.dynamics.com/issue/results/?q=3160213)
 
 インポートされた電子申告構成、および [**電子申告コンフィギュレーション**] ページで利用可能な形式に対してのみ送信先を設定することができます。
@@ -61,7 +61,7 @@ ms.lasthandoff: 05/25/2017
 
 ### <a name="email-destination"></a>電子メールの送信先
 
-[**有効**]を[**はい**]に設定し、出力ファイルを電子メールで送信します。 このオプションを有効にすると、電子メールの受信者を指定して、電子メールの件名および本文を編集できます。 電子メールの件名および本文の定型文を設定したり、ER フォーミュラを使用して電子メールのテキストを動的に作成したりできます。 2 つの方法で ER の電子メール アドレスを構成できます。 構成は、Dynamics 365 for Operations の印刷管理機能での入力と同じ方法で入力できます。 または、フォーミュラでの ER コンフィギュレーションの直接参照を使用して電子メール アドレスを解決できます。
+[**有効**]を[**はい**]に設定し、出力ファイルを電子メールで送信します。 このオプションを有効にすると、電子メールの受信者を指定して、電子メールの件名および本文を編集できます。 電子メールの件名および本文の定型文を設定したり、ER フォーミュラを使用して電子メールのテキストを動的に作成したりできます。 2 つの方法で ER の電子メール アドレスを構成できます。 構成は Finance and Operations の印刷管理機能と同じ方法で完了できます。 または、フォーミュラでの ER コンフィギュレーションの直接参照を使用して電子メール アドレスを解決できます。
 
 ### <a name="email-address-types"></a>電子メール アドレス タイプ
 
@@ -89,7 +89,7 @@ ms.lasthandoff: 05/25/2017
 
 [![電子メールの宛先用に電子メールのデータ ソースを割り当てる](./media/ger-destinations-email-4-1611-1024x587.jpg)](./media/ger-destinations-email-4-1611.jpg) 
 
-**注:**Simple Mail Transfer Protocol (SMTP) サーバーを構成し、利用可能にする必要があります。 SMTP サーバーは、Dynamics 365 for Operations の [**システム管理**] &gt; [**セットアップ**] &gt; [**電子メール**] &gt; [**電子メール パラメーター**] で指定できます。
+**注:**Simple Mail Transfer Protocol (SMTP) サーバーを構成し、利用可能にする必要があります。 SMTP サーバーは、Finance and Operations の [**システム管理**] &gt; [**セットアップ**] &gt; [**電子メール**] &gt; [**電子メール パラメーター**] で指定できます。
 
 ### <a name="archive-destination"></a>アーカイブ先
 
@@ -97,7 +97,7 @@ Microsoft Azure ストレージまたは Microsoft SharePoint フォルダーに
 
 [![ドキュメント タイプ ページ](./media/ger_documenttypefile-1024x542.jpg)](./media/ger_documenttypefile.jpg) 
 
-場所は、ファイルの保存場所を決定します。 [**アーカイブ**] 先を有効にすると、コンフィギュレーション実行の結果をジョブ アーカイブに保存できます。 結果は、[**組織管理**] &gt; [**電子申告**] &gt; [**電子申告アーカイブ済ジョブ**] で表示できます。 **注記:** ジョブ アーカイブのドキュメント タイプは、Dynamics 365 for Operations の [**組織管理**] &gt; [**ワークスペース**] &gt; [**電子申告**] &gt; [**電子申告のパラメーター**] で選択できます。
+場所は、ファイルの保存場所を決定します。 [**アーカイブ**] 先を有効にすると、コンフィギュレーション実行の結果をジョブ アーカイブに保存できます。 結果は、[**組織管理**] &gt; [**電子申告**] &gt; [**電子申告アーカイブ済ジョブ**] で表示できます。 **注記:** ジョブ アーカイブのドキュメント タイプは、Finance and Operations の [**組織管理**] &gt; [**ワークスペース**] &gt; [**電子申告**] &gt; [**電子申告のパラメーター**] で選択できます。
 
 #### <a name="sharepoint"></a>SharePoint
 
@@ -119,7 +119,7 @@ Microsoft Azure ストレージまたは Microsoft SharePoint フォルダーに
 
 ### <a name="power-bi-destination"></a>Power BI 出力先
 
-[**有効**] を [**はい**] に設定し、ER コンフィギュレーションを使用して Dynamics 365 for Operations のインスタンスから Microsoft Power BI サービスへのデータ転送を調整します。 転送されたファイルは、その目的にコンフィギュレーションされている Microsoft SharePoint Server インスタンスに保存されます。 詳細については、「[Dynamics Online 365 からデータを Power BI に提供する電子申告コンフィギュレーションを使用する](general-electronic-reporting-report-configuration-get-data-powerbi.md)」を参照してください。 **ヒント:** 既定の動作を上書きする (つまり、構成のダイアログ ボックス) には、送信先の参照および主な出力コンポーネントのファイル保存先を作成し、すべての送信先を無効にします。
+[**有効**] を [**はい**] に設定し、ER コンフィギュレーションを使用して Finance and Operations のインスタンスから Microsoft Power BI サービスへのデータ転送を調整します。 転送されたファイルは、その目的にコンフィギュレーションされている Microsoft SharePoint Server インスタンスに保存されます。 詳細については、「[Finance and Operations からデータを Power BI に提供する電子申告コンフィギュレーションを使用する](general-electronic-reporting-report-configuration-get-data-powerbi.md)」を参照してください。 **ヒント:** 既定の動作を上書きする (つまり、構成のダイアログ ボックス) には、送信先の参照および主な出力コンポーネントのファイル保存先を作成し、すべての送信先を無効にします。
 
 ## <a name="security-considerations"></a>セキュリティ上の注意事項
 電子申告の送信先への権限と職務の 2 種類が使用されます。 1 つのタイプは、法人に対して構成されている全体の送信先を維持する機能を制御します (つまり、[**電子申告の送信先**] ページへのアクセスを制御します)。 その他のタイプは、実行時に、電子申告の開発者または電子申告機能コンサルタントで構成されている送信先の設定を上書きするアプリケーション ユーザーの機能を制御します。

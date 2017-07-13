@@ -1,27 +1,28 @@
 ---
 title: "経費管理の構成"
-description: "この記事は、Microsoft Dynamics AX の経費管理をコンフィギュレーションする前に、計画プロセス中に決定する必要のある考慮事項について説明します。 [経費管理] 領域で、支払方法、出張費要求、経費精算書、ポリシー、およびその他の情報を格納できます。"
-author: kfend
+description: "この記事は、Microsoft Dynamics 365 for Finance and Operations、Enterprise エディションの経費管理をコンフィギュレーションする前に、計画プロセス中に決定する必要のある考慮事項について説明します。 [経費管理] 領域で、支払方法、出張費要求、経費精算書、ポリシー、およびその他の情報を格納できます。"
+author: KimANelson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: GlobalCategory, ProjCategory, TrvLocations, TrvParameters, TrvPaymethod, TrvPerDiems
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: twheeloc
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 23001
 ms.assetid: aa3fd14d-7e94-4603-985f-ca26d6f860ea
 ms.search.region: Global
-ms.author: kfend
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 62bef78c143f7ad83e78982dbecb1c9e4542187d
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: edd3d8ca760c1453ae7cf8d5ff2fdfdedbb022c4
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -31,7 +32,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-この記事は、Microsoft Dynamics AX の経費管理をコンフィギュレーションする前に、計画プロセス中に決定する必要のある考慮事項について説明します。 [経費管理] 領域で、支払方法、出張費要求、経費精算書、ポリシー、およびその他の情報を格納できます。 
+この記事は、Microsoft Dynamics 365 for Finance and Operations、Enterprise エディションの経費管理をコンフィギュレーションする前に、計画プロセス中に決定する必要のある考慮事項について説明します。 [経費管理] 領域で、支払方法、出張費要求、経費精算書、ポリシー、およびその他の情報を格納できます。 
 
 経費管理に対するコンフィギュレーションを計画する場合の決定の多くが、組織の階層と財務構造に基づいているため、これらの領域の計画文書を参照する必要があります。
 

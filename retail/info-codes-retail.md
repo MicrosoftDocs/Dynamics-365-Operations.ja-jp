@@ -3,26 +3,27 @@ title: "情報コード"
 description: "この記事は、情報コード、情報コード グループとその使用方法に関する概要を示します。"
 author: mugunthanm
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 22761
 ms.assetid: 99877dba-a6e3-4d88-ba0a-ee5913aea17e
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 5790f54a531336b30ee140ebf8b9c782d8b347f7
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: b7417a8fece55963dcde53e7016e4d41793a6102
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 
 ---
@@ -41,8 +42,8 @@ ms.lasthandoff: 05/25/2017
 -   通常の販売、割引販売、または無料製品として製品を販売します。
 -   販売操作を行なわずにレジスタのドロワーを開くと、キャッシャーは値を入力またはサブコードの一覧から選択するように促されます。
 
-## <a name="info-codes-group-in-retail-and-commerce"></a>[小売りとコマース] の情報コード グループ
-Dynamics 365 for Operations では、小売は情報コードのグループを作成できます。 情報コード グループは、少ない情報コードを定義してより多目的な方法で情報コードを使用できるようにすることによって、柔軟性を増加させます。 情報コード グループは次の方法で使用できます。
+## <a name="info-codes-group"></a>情報コード グループ
+Dynamics 365 for Retail では、小売は情報コードのグループを作成できます。 情報コード グループは、少ない情報コードを定義してより多目的な方法で情報コードを使用できるようにすることによって、柔軟性を増加させます。 情報コード グループは次の方法で使用できます。
 -   少ない情報コードを定義して、簡単に再利用します。 情報コード グループに含まれる情報コードは、他の情報コードとは定義済みの依存関係はありません。 同じ情報コードを複数の情報コード グループに含め、次に優先順位を使用してどの特定の状態でも意味の通る順序で同じ情報コードを表示できます。
 -   情報コードをそのほかの情報コードまたは情報コード グループに関連付けて、シナリオごとに個別の情報コードまたはリンク情報コードを定義することなく必要とする方法で、製品またはトランザクションに関する情報を収集します。
 
