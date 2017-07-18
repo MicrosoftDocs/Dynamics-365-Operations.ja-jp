@@ -9,19 +9,19 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: twheeloc
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 60493
 ms.assetid: be964167-43bc-431d-9adb-48bff32d68d5
 ms.search.region: Global
 ms.author: sigitac
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
 ms.openlocfilehash: 77d6d9afeb5669c2ae8460f0503e68a3559514ec
 ms.contentlocale: ja-jp
 ms.lasthandoff: 06/20/2017
-
 
 ---
 
@@ -128,3 +128,4 @@ Finance and Operations で予算が承認された後に、予算計画を使用
 このページから、ユーザーは [**期間別の予算管理統計**] ページを詳細表示し、予算の利用可能性の詳細および選択された予算管理分析コードの組み合わせの引当を表示できます。 ユーザーは、[**予算管理統計**] ページを詳細表示し、予算管理で使用されるすべての財務分析コードの組み合わせの予算の利用可能性を表示できます。 
 
 予算管理が発注書に対して有効化されると、予算マネージャーは [**元帳予算および予測**] ワークスペースを使用して、予算チェックの警告が付いたすべての未確認の発注書および元帳予算のエラーのキューを確認できます。 予算マネージャーが予算超過許可をコンフィギュレーションすると、ワークスペースで直接発注書を確認できます。    
+
