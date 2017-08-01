@@ -24,9 +24,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-<a id="cost-accounting-home-page" class="xliff"></a>
-
-# 原価会計ホーム ページ
+# <a name="cost-accounting-home-page"></a>原価会計ホーム ページ
 
 [!include[banner](../includes/banner.md)]
 
@@ -49,9 +47,7 @@ ms.lasthandoff: 06/13/2017
 -   ワーク スペースに表示可能である明細書の作成。
 -   Excel を使用してレポートを作成する。
 
-<a id="get-started" class="xliff"></a>
-
-## はじめに
+## <a name="get-started"></a>はじめに
 
 > [!Video https://www.youtube.com/embed/https://www.youtube.com/embed/1pUDtJQZ8FU]
 
@@ -68,16 +64,12 @@ ms.lasthandoff: 06/13/2017
 -   [原価オブジェクト分析コード](cost-objects.md)
 -   [原価オブジェクトの作成](http://ax.help.dynamics.com/en/wiki/create-cost-objects/) (タスク ガイド)
 
-<a id="cost-control-mobile-workspace" class="xliff"></a>
-
-## 原価管理モバイル ワークスペース
+## <a name="cost-control-mobile-workspace"></a>原価管理モバイル ワークスペース
 原価管理モバイル ワークスペースを使用すると、原価部門管理者はいつでもどこでも原価部門パフォーマンスを見ることができます。
 
 -   [原価管理モバイル ワークスペース](cost-controlling-mobile-workspace.md)
 
-<a id="cost-accounting-analysis-power-bi-content" class="xliff"></a>
-
-## 原価会計分析 Power BI コンテンツ
+## <a name="cost-accounting-analysis-power-bi-content"></a>原価会計分析 Power BI コンテンツ
 原価会計分析 Microsoft Power BI コンテンツは、原価の管理者または組織の原価管理を担当する人物を対象としています。 これには、実際原価、予算原価、変動予算原価ごとの原価、規模、原価率などの主なメトリックスが含まれています。 これは、Finance and Operations の原価会計のトランザクション データを使用して、1 つのレポート通貨で組織全体のコストの集計ビューを示します。 管理者は、組織に複数の法人が含まれている場合でも、原価オブジェクトでデータをフィルター処理して、組織単位の原価管理を実行できます。
 
 -   [原価会計分析 Power BI コンテンツ](/dynamics365/unified-operations/dev-itpro/analytics/cost-accounting-analysis-content-pack)
