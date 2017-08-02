@@ -1,37 +1,35 @@
 ---
-title: "Dynamics 365 for Operations の用語集"
-description: "Microsoft Dynamics 365 for Operations の用語集では、Dynamics 365 for Operations 製品の主な用語と概念を定義します。"
+title: "Finance and Operations の用語集"
+description: "この用語集は、Microsoft Dynamics 365 for Finance and Operations Enterprise Edition の重要な用語および概念を定義します。"
 author: tonyafehr
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 07/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 44101
 ms.assetid: d4e01957-69a0-4c92-91c5-4646c8b0cad8
 ms.search.region: Global
 ms.author: tfehr
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 4f3015ed4f8dc165d988b2b63ed9ad89d6d6f578
+ms.translationtype: HT
+ms.sourcegitcommit: 84ee9110fa32a551133a6ab4b7c6feb9ea9c017a
+ms.openlocfilehash: 0b4d5285cc1aa44da566ec5d7fa7ebe568729fdf
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
-# <a name="dynamics-365-for-operations-glossary"></a>Dynamics 365 for Operations の用語集
+# <a name="finance-and-operations-glossary"></a>Finance and Operations の用語集
 
 [!include[banner](../includes/banner.md)]
 
-
-Microsoft Dynamics 365 for Operations の用語集では、Dynamics 365 for Operations 製品の主な用語と概念を定義します。 
+この用語集は、Microsoft Dynamics 365 for Finance and Operations Enterprise Edition の重要な用語および概念を定義します。 
 
 ### <a name="a"></a>**A**
 
@@ -51,17 +49,9 @@ Microsoft Dynamics 365 for Operations の用語集では、Dynamics 365 for Oper
 
 活動に入力または活動から出力された測定数量。
 
-###### <a name="address-verification-service"></a>**住所検証サービス**
+###### <a name="address-verification"></a>**住所の検証**
 
 クレジット カード プロセッサから提供され、カード所有者が提供した請求先住所が発行銀行に登録されている情報と一致することを検証するサービス。
-
-###### <a name="adjusted-unit-price"></a>**調整済単価**
-
-属性ベースの価格および実際の入庫済ポテンシーに基づいて計算された単価。
-
-###### <a name="advanced-pricing"></a>**詳細価格決定**
-
-ポテンシー品目の購買価格を計算するために使用されるロジック。
 
 ###### <a name="aging"></a>**エイジング**
 
@@ -89,9 +79,9 @@ Microsoft Dynamics 365 for Operations の用語集では、Dynamics 365 for Oper
 
 一括処理または転送バッチの製品属性。
 
-###### <a name="best-before-date"></a>**消費期限**
+###### <a name="best-before-date"></a>**品質保持期限日**
 
-製品の最適な品質または特性を得るための推奨の日付。
+製品の最適な品質または特性を得るために推奨される日付。
 
 ###### <a name="best-before-period"></a>**賞味期間**
 
@@ -101,14 +91,13 @@ Microsoft Dynamics 365 for Operations の用語集では、Dynamics 365 for Oper
 
 要求に応じて 2 番目の関係者に支払いを行うように相手先に求める無条件要求を記録する元伝票。
 
-###### <a name="bill-of-materials"></a>**部品表**
-
-1 つの製品の生産に必要な製品およびその数量のリスト。
-
 ###### <a name="blocking"></a>**ブロック**
 
 ドキュメントまたは製品を保留にするアクション。
 
+###### <a name="bom-bill-of-materials"></a>**BOM (部品表)**
+
+1 つの製品の生産に必要な製品およびその数量のリスト。
 ###### <a name="budget-control"></a>**予算管理**
 
 将来の支払の確約を満たすために予算財源を予約できるときにのみ、支出を承認するプラクティス。
@@ -175,14 +164,6 @@ Microsoft Dynamics 365 for Operations の用語集では、Dynamics 365 for Oper
 
 製品の製造と在庫の維持の財務結果を合計するために使用される勘定科目カテゴリ。
 
-###### <a name="commodity-pricing"></a>**商品価格設定**
-
-頻繁な価格変更によって商品から作成された販売品目の価格を更新するための価格戦略。
-
-###### <a name="consolidated-order"></a>**連結注文**
-
-複数の参照注文を記録する元伝票。
-
 ###### <a name="contractor"></a>**契約社員**
 
 契約社員と雇用主のリレーションシップを法人との間で結ぶ社員が引き受けるロール。
@@ -194,10 +175,6 @@ Microsoft Dynamics 365 for Operations の用語集では、Dynamics 365 for Oper
 ###### <a name="cost-center"></a>**コスト センター**
 
 マネージャーが予算支出および実際の支出について責任を持つ作業単位。
-
-###### <a name="cost-of-goods-sold"></a>**売却済商品の原価**
-
-製品の製造と在庫の維持の財務結果を合計するために使用される勘定科目カテゴリ。
 
 ###### <a name="cost-variance"></a>**原価の差異**
 
@@ -223,7 +200,7 @@ Microsoft Dynamics 365 for Operations の用語集では、Dynamics 365 for Oper
 
 ###### <a name="dashboard"></a>**ダッシュボード**
 
-Dynamics 365 for Operations の標準的な開始ページ。 ダッシュボードには、自分がアクセスできる各ワークスペースのセクションのみがユーザーに表示されます。 各セクションには、関連ワークスペースの概要セクションのタイルが表示されます。 ダッシュボードは、名前とセクション、およびタイルで構成されます。
+Finance and Operations の標準的な開始ページ。 ダッシュボードには、自分がアクセスできる各ワークスペースのセクションのみがユーザーに表示されます。 各セクションには、関連ワークスペースの概要セクションのタイルが表示されます。 ダッシュボードは、名前とセクション、およびタイルで構成されます。
 
 ###### <a name="data-entity"></a>**データ エンティティ**
 
@@ -260,10 +237,6 @@ Dynamics 365 for Operations の標準的な開始ページ。 ダッシュボー
 ###### <a name="distinct-product"></a>**特徴的製品**
 
 一意に識別できる製品。
-
-###### <a name="document-blocking"></a>**ドキュメント ブロック**
-
-注文済の品目が品質保証プロセスにある間に業務プロセスを保留にする方法。
 
 ###### <a name="document-management-system"></a>**ドキュメント管理システム**
 
@@ -316,10 +289,6 @@ Dynamics 365 for Operations の標準的な開始ページ。 ダッシュボー
 ###### <a name="fixed-quantity-kanban"></a>**固定数量かんばん**
 
 かんばんルールに割り当てられたかんばんの数が一定の場合に使用されるタイプのかんばん。
-
-###### <a name="flexible-authentication"></a>**可変認証**
-
-さまざまな ID 管理システムのユーザーを認証できる認証プロセス。
 
 ###### <a name="formula"></a>**フォーミュラ**
 
@@ -379,10 +348,6 @@ Dynamics 365 for Operations の標準的な開始ページ。 ダッシュボー
 
 かんばん生産ジョブを完了するために、在庫から製品コンポーネントを引き出すこと。
 
-###### <a name="kanban-product-quantity"></a>**かんばん製品数量**
-
-かんばんルールに基づいてかんばんで伝えらえる品目要件の数。
-
 ###### <a name="kanban-rule"></a>**かんばんルール**
 
 生産フローでプロセスと転送活動を調整する方法を管理して、材料の計画と補充ポリシーを実現する、リーン生産システムのルール。
@@ -410,10 +375,6 @@ Dynamics 365 for Operations の標準的な開始ページ。 ダッシュボー
 流動資産を使用して流動負債を精算する関係者の機能。
 
 ### <a name="m"></a>**M**
-
-###### <a name="manufacturing-overhead-based-on-material"></a>**原材料に基づく製造間接費**
-
-製造間接費は、割増率に対する間接原価計算式として表されます。 原材料コンポーネントに割り当てられた原価グループは、計算式の基準として機能します。 計算式は、個々の製品または製品に割り当てられた品目グループに対して定義でき、原材料に基づく製造間接費の計算を非常に柔軟に実行できます。
 
 ###### <a name="master-scheduling"></a>**マスター スケジューリング**
 
@@ -455,11 +416,7 @@ Dynamics 365 for Operations の標準的な開始ページ。 ダッシュボー
 
 ###### <a name="package"></a>**梱包**
 
-パッケージは、1 つまたは複数のモデルの順守可能および配布可能な単位です。
-
-###### <a name="party"></a>**関係者**
-
-契約リレーションシップに参加するときに法的に拘束力のあるロールを引き受けるエンティティ。
+パッケージは、1 つまたは複数のモデルのコンパイル可能および配布可能な単位です。
 
 ###### <a name="party"></a>**関係者**
 
@@ -473,10 +430,6 @@ Dynamics 365 for Operations の標準的な開始ページ。 ダッシュボー
 
 製品の需要を示すリソース フロー イベント。
 
-###### <a name="phantom-item"></a>**ファントム品目**
-
-生産されるが、在庫されない品目。
-
 ###### <a name="planned-intercompany-demand"></a>**計画企業内需要**
 
 仕入先のロールを引き受ける法人によって予測された製品の需要。 計画需要は、下流の法人からの製品の計画需要から生成されます。
@@ -489,17 +442,9 @@ Dynamics 365 for Operations の標準的な開始ページ。 ダッシュボー
 
 元伝票を作成し、経済資源の要求を開始する人。
 
-###### <a name="privilege"></a>**権限**
-
-タスクを実行するためにユーザーが必要とする 1 つまたは複数のアクセス許可。
-
 ###### <a name="procurement-catalog"></a>**調達カタログ**
 
 調達カテゴリ別にグループ化された提供製品の一覧。 調達カタログは、組織が内部的に使用する製品の要求に使用されます。
-
-###### <a name="product-component"></a>**製品コンポーネント**
-
-製品の一部。
 
 ###### <a name="product-dimension"></a>**製品分析コード**
 
@@ -507,7 +452,7 @@ Dynamics 365 for Operations の標準的な開始ページ。 ダッシュボー
 
 ###### <a name="product-family"></a>**製品ファミリ**
 
-同じ生産または配送活動に参加するか、同じ市場セグメントに提供される品目、サービス、または権限の一意のグループ化。 Dynamics 365 for Operations では、グループ化は予測配賦キーを使用して表されます。
+同じ生産または配送活動に参加するか、同じ市場セグメントに提供される品目、サービス、または権限の一意のグループ化。 Finance and Operations では、グループ化は予測配賦キーを使用して表されます。
 
 ###### <a name="product-master"></a>**製品マスター**
 
@@ -581,10 +526,6 @@ Dynamics 365 for Operations の標準的な開始ページ。 ダッシュボー
 
 会計システムでリソース フロー イベントの実践的、法的、および財務結果を記録するために使用される記録。
 
-###### <a name="regulated-product"></a>**規制製品**
-
-コンプライアンスと監査レポートを必要とする公的機関によって規制されている製品。
-
 ###### <a name="rfq-request-for-quotation"></a>**RFQ (見積依頼)**
 
 指定された価格および指定された日付までの製品数量の供給に対する入札を記録する元伝票。
@@ -593,9 +534,6 @@ Dynamics 365 for Operations の標準的な開始ページ。 ダッシュボー
 
 経済資源の要求者。
 
-###### <a name="restricted-product"></a>**制限製品**
-
-公的機関によって流通が制限または制約されている製品。
 
 ### <a name="s"></a>**S**
 
@@ -647,13 +585,6 @@ Dynamics 365 for Operations の標準的な開始ページ。 ダッシュボー
 
 トランザクション履歴データに予測アルゴリズムを適用して作成される、将来の需要の見積。
 
-###### <a name="supermarket"></a>**スーパーマーケット**
-
-有限能力があり、消費地の近くで原材料を一括処理するために使用される、ジャスト イン タイム在庫場所。
-
-###### <a name="system-defined-financial-dimension-type"></a>**システム定義の財務分析コード タイプ**
-
-エンティティ タイプを表し、値がそのエンティティ タイプの 1 つの属性のドメインにあるデータベース内のテーブルまたはビューにマップされた財務分析コード。
 
 ### <a name="t"></a>**T**
 
@@ -667,11 +598,11 @@ Dynamics 365 for Operations の標準的な開始ページ。 ダッシュボー
 
 ###### <a name="task-recorder"></a>**タスク レコーダー**
 
-Dynamics 365 for Operations にプレインストールされているツール。 記録中に、Dynamics 365 for Operations ユーザー インターフェイスにユーザーが入力し、サーバーに対して実行されたすべてのイベントが記録されます。これには、追加された値、変更された設定、削除されたデータなどが含まれます。
+Finance and Operations にプレインストールされているツール。 記録中に、Finance and Operations ユーザー インターフェイスにユーザーが入力し、サーバーに対して実行されたすべてのイベントが記録されます。これには、追加された値、変更された設定、削除されたデータなどが含まれます。
 
 ###### <a name="task-recording"></a>**タスクの記録**
 
-Microsoft Dynamics 365 for Operations でタスク レコーダーを実行したときにキャプチャされたアクションと注釈を含むファイル。
+Finance and Operations でタスク レコーダーを実行したときにキャプチャされたアクションと注釈を含むファイル。
 
 ###### <a name="three-way-matching-policy"></a>**スリーウェイ マッチングポリシー**
 
@@ -684,12 +615,6 @@ Microsoft Dynamics 365 for Operations でタスク レコーダーを実行し�
 ###### <a name="two-way-matching-policy"></a>**ツーウェイ マッチングポリシー**
 
 1 つまたは複数の仕入先請求書価格が、1 つまたは複数の発注書価格と一致することを要求する照合ポリシー。
-
-### <a name="u"></a>**U**
-
-###### <a name="user-defined-financial-dimension-type"></a>**ユーザー定義の財務分析コード タイプ**
-
-ユーザー定義の値のリストにマップされた財務分析コード。
 
 ### <a name="v"></a>**V**
 
@@ -726,7 +651,4 @@ Microsoft Dynamics 365 for Operations でタスク レコーダーを実行し�
 ###### <a name="workspace"></a>**ワークスペース**
 
 ユーザーが実行するいずれかの活動の概要を提供するページ。 このページでは、タイル、リスト、およびグラフを使用して、複数のソースから保留中の作業と関連データが表示され、このデータに関連する頻繁なタスクが示されます。 ワークスペースの概要セクションに表示されるタイルは、ダッシュボードの関連セクションにも表示されます。
-
-
-
 
