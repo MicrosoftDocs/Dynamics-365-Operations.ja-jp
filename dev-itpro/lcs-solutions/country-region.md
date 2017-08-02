@@ -14,14 +14,13 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 104173
 ms.search.region: Global
 ms.author: shylaw
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
-ms.openlocfilehash: ac77d2d374dc77aa4cf43ae2621b3692e556c9d0
+ms.translationtype: HT
+ms.sourcegitcommit: 9f4b007c174961a8e6794ab532d733584f492758
+ms.openlocfilehash: ead315d2e07818b35dd2806fca7e242f4028be07
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/29/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -35,7 +34,7 @@ Microsoft Dynamics 365 for Finance and Operations には、[製品可用性ガ�
 このトピックでは、国/地域固有の機能について詳しく説明しているリソースの一覧を示します。 
 
 ## <a name="developing-localized-solutions"></a>ローカライズ版ソリューションの開発
-以下のリソースは、国/地域に固有のカスタマイゼーションを作成しているか、または Microsoft によってサポートされていない国向けのソリューションを作成している開発者および ISV にとって有益なガイダンスと情報を提供します。
+以下のリソースは、国/地域に固有のカスタマイズを作成しているか、または Microsoft によってサポートされていない国向けのソリューションを作成している開発者および ISV にとって有益なガイダンスと情報を提供します。
 -   [個別のローカライズ モデル](separate-localization-models.md)
 -   [国/地域コンテキストの適用](apply-country-context.md)
 -   [規制認証](regulatory-certifications.md)

@@ -17,11 +17,11 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
-ms.openlocfilehash: 745abbfde09bab40f032c13d1b0293e0990a3de3
+ms.translationtype: HT
+ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
+ms.openlocfilehash: 85000ee4507e1d716c6118441d77d94091494f33
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/29/2017
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -73,32 +73,32 @@ ms.lasthandoff: 06/29/2017
 -   [電子申告の送信先](electronic-reporting-destinations.md)
 -   [Lifecycle Services から電子申告コンフィギュレーションをダウンロードする](download-electronic-reporting-configuration-lcs.md)
 -   [Finance and Operations からデータを Power BI に提供する電子申告コンフィギュレーションを使用する](general-electronic-reporting-report-configuration-get-data-powerbi.md)
--   [ER コンフィギュレーション プロバイダーを作成して有効なプロバイダーとしてマーク付けする](http://ax.help.dynamics.com/en/wiki/er-select-service-provider/) (タスク ガイド)
--   [ER ドメイン固有のデータ モデルを設計する](http://ax.help.dynamics.com/en/wiki/er-design-domain-specific-data-model/) (タスク ガイド)
--   [ER モデル マッピングを定義し、データ ソースを選択する](http://ax.help.dynamics.com/en/wiki/er-define-model-mapping-and-select-data-sources/) (タスク ガイド)
--   [ER 選択したデータ ソースにデータ モデルをマップする](http://ax.help.dynamics.com/en/wiki/er-map-data-model-to-selected-data-sources/) (タスク ガイド)
--   [ER ドメイン固有の形式を設計する](http://ax.help.dynamics.com/en/wiki/er-design-domain-specific-format/) (タスク ガイド)
--   [ER Lifecycle Services にコンフィギュレーションをアップロードする](http://ax.help.dynamics.com/en/wiki/upload-a-configuration-into-lifecycle-services/) (タスク ガイド)
--   [ER Lifecycle Services からコンフィギュレーションをインポートする](http://ax.help.dynamics.com/en/wiki/import-a-configuration-from-lifecycle-services/) (タスク ガイド)
--   [ER OPENXML 形式でレポートを生成するコンフィギュレーションを設計する](http://ax.help.dynamics.com/en/wiki/design-a-configuration-for-generating-reports-in-openxml-format/) (タスク ガイド)
--   [ER 宛先を構成する](http://ax.help.dynamics.com/en/wiki/configure-destinations/) (タスク ガイド)
--   [ER 財務分析コードをデータ ソースとして使用する (第 1 部: データ モデルの設計)](http://ax.help.dynamics.com/en/wiki/er-use-financial-dimensions-as-a-data-source-part-1-design-data-model/) (タスク ガイド)
--   [ER 財務分析コードをデータ ソースとして使用する (第 2 部: マッピングのモデル化)](http://ax.help.dynamics.com/en/wiki/er-use-financial-dimensions-as-a-data-source-part-2-model-mapping/) (タスク ガイド)
--   [ER 財務分析コードをデータ ソースとして使用する (第 3 部: レポートのデザイン)](http://ax.help.dynamics.com/en/wiki/er-use-financial-dimensions-as-a-data-source-part-3-design-the-report/) (タスク ガイド)
--   [ER 財務分析コードをデータ ソースとして使用する (第 4 部: レポートの実行)](http://ax.help.dynamics.com/en/wiki/er-use-financial-dimensions-as-a-data-source-part-4-run-the-report/) (タスク ガイド)
--   [ER 棚卸および集計を行うための形式を構成する (第 1 部: 形式の作成)](http://ax.help.dynamics.com/en/wiki/er-configure-format-to-do-counting-and-summing-part-1-create-format/) (タスク ガイド)
--   [ER 棚卸および集計を行うための形式を構成する (第 2 部: 計算の構成)](http://ax.help.dynamics.com/en/wiki/er-configure-format-to-do-counting-and-summing-part-2-configure-computations/) (タスク ガイド)
--   [ER 棚卸および集計を行うための形式を構成する (第 3 部: 出力するために計算を使用する)](http://ax.help.dynamics.com/en/wiki/er-configure-format-to-do-counting-and-summing-part-3-use-computations-to-make-the-output/) (タスク ガイド)
--   [ER 棚卸および集計を行うための形式を構成する (第 4 部: 形式の実行)](http://ax.help.dynamics.com/en/wiki/er-configure-format-to-do-counting-and-summing-part-4-run-format/) (タスク ガイド)
--   [ER 水平に拡張された範囲を使用して Excel のレポートに列を動的に追加する (第 1 部: 形式の設計)](http://ax.help.dynamics.com/en/wiki/er-use-horizontally-expandable-ranges-to-dynamically-add-columns-in-excel-reports-part-1-design-format/) (タスク ガイド)
--   [ER 水平に拡張された範囲を使用して Excel のレポートに列を動的に追加する (第 2 部: 形式の実行)](http://ax.help.dynamics.com/en/wiki/er-use-horizontally-expandable-ranges-to-dynamically-add-columns-in-excel-reports-part-2-run-format/) (タスク ガイド)
--   [ER ドキュメント管理ファイルを形式出力で使用する (第 1 部: データ モデルの準備)](http://ax.help.dynamics.com/en/wiki/er-use-document-management-files-in-format-outputs-part-1-prepare-data-model/) (タスク ガイド)
--   [ER ドキュメント管理ファイルを形式出力で使用する (第 2 部: データ モデルの拡張)](http://ax.help.dynamics.com/en/wiki/er-use-document-management-files-in-format-outputs-part-2-extend-data-model/) (タスク ガイド)
--   [ER ドキュメント管理ファイルを形式出力で使用する (第 3 部: 形式の作成)](http://ax.help.dynamics.com/en/wiki/er-use-document-management-files-in-format-outputs-part-3-create-format/) (タスク ガイド)
--   [ER ドキュメント管理ファイルを形式出力で使用する (第 4 部: 形式の実行)](http://ax.help.dynamics.com/en/wiki/er-use-document-management-files-in-format-outputs-part-4-run-format/) (タスク ガイド)
--   [ER ドキュメント管理ファイルを形式出力で使用する (第 5 部: 形式の変更と実行)](http://ax.help.dynamics.com/en/wiki/er-use-document-management-files-in-format-outputs-part-5-modify-and-run-format/) (タスク ガイド)
--   [ER 形式コンフィギュレーションを使用して支払の電子ドキュメントを生成する](http://ax.help.dynamics.com/en/wiki/generate-electronic-documents-for-payments-using-a-format-configuration/) (タスク ガイド)
--   [ER 形式の新しい基準バージョンを採用してその形式をアップグレードする](http://ax.help.dynamics.com/en/wiki/upgrade-your-format-by-adopting-a-new-base-version-of-that-format/) (タスク ガイド)
+-   [ER コンフィギュレーション プロバイダーを作成して有効なプロバイダーとしてマーク付けする](/dynamics365/unified-operations/do-not-publish/er-configuration-provider-mark-it-active-2016-02) (タスク ガイド)
+-   [ER ドメイン固有のデータ モデルを設計する](/dynamics365/unified-operations/do-not-publish/er-design-domain-specific-data-model-2016-02-05) (タスク ガイド)
+-   [ER モデル マッピングを定義し、データ ソースを選択する](/dynamics365/unified-operations/do-not-publish/er-define-model-mapping-select-data-sources-2016-02-05) (タスク ガイド)
+-   [ER 選択したデータ ソースにデータ モデルをマップする](/dynamics365/unified-operations/do-not-publish/er-map-data-model-selected-data-sources-2016-02-05) (タスク ガイド)
+-   [ER ドメイン固有の形式を設計する](/dynamics365/unified-operations/do-not-publish/er-design-domain-specific-format-2016-02-05) (タスク ガイド)
+-   [ER Lifecycle Services にコンフィギュレーションをアップロードする](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services) (タスク ガイド)
+-   [ER Lifecycle Services からコンフィギュレーションをインポートする](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services) (タスク ガイド)
+-   [ER OPENXML 形式でレポートを生成するコンフィギュレーションを設計する](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11) (タスク ガイド)
+-   [ER 宛先を構成する](/dynamics365/unified-operations/do-not-publish/er-destinations-2016-05) (タスク ガイド)
+-   [ER 財務分析コードをデータ ソースとして使用する (第 1 部: データ モデルの設計)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1) (タスク ガイド)
+-   [ER 財務分析コードをデータ ソースとして使用する (第 2 部: マッピングのモデル化)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2) (タスク ガイド)
+-   [ER 財務分析コードをデータ ソースとして使用する (第 3 部: レポートのデザイン)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3) (タスク ガイド)
+-   [ER 財務分析コードをデータ ソースとして使用する (第 4 部: レポートの実行)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4) (タスク ガイド)
+-   [ER 棚卸および集計を行うための形式を構成する (第 1 部: 形式の作成)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-format-counting-summing-1) (タスク ガイド)
+-   [ER 棚卸および集計を行うための形式を構成する (第 2 部: 計算の構成)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-format-counting-summing-2) (タスク ガイド)
+-   [ER 棚卸および集計を行うための形式を構成する (第 3 部: 出力するために計算を使用する)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-format-counting-summing-3) (タスク ガイド)
+-   [ER 棚卸および集計を行うための形式を構成する (第 4 部: 形式の実行)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-format-counting-summing-4) (タスク ガイド)
+-   [ER 水平に拡張された範囲を使用して Excel のレポートに列を動的に追加する (第 1 部: 形式の設計)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-horizontal-1) (タスク ガイド)
+-   [ER 水平に拡張された範囲を使用して Excel のレポートに列を動的に追加する (第 2 部: 形式の実行)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-horizontal-2) (タスク ガイド)
+-   [ER ドキュメント管理ファイルを形式出力で使用する (第 1 部: データ モデルの準備)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-document-management-files-1) (タスク ガイド)
+-   [ER ドキュメント管理ファイルを形式出力で使用する (第 2 部: データ モデルの拡張)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-document-management-files-2) (タスク ガイド)
+-   [ER ドキュメント管理ファイルを形式出力で使用する (第 3 部: 形式の作成)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-document-management-files-3) (タスク ガイド)
+-   [ER ドキュメント管理ファイルを形式出力で使用する (第 4 部: 形式の実行)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-document-management-files-4) (タスク ガイド)
+-   [ER ドキュメント管理ファイルを形式出力で使用する (第 5 部: 形式の変更と実行)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-document-management-files-5) (タスク ガイド)
+-   [ER 形式コンフィギュレーションを使用して支払の電子ドキュメントを生成する](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-electronic-payments) (タスク ガイド)
+-   [ER 形式の新しい基準バージョンを採用してその形式をアップグレードする](/dynamics365/unified-operations/do-not-publish/er-upgrade-format--2016-05) (タスク ガイド)
 
 
 
