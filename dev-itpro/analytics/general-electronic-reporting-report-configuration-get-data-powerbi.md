@@ -9,19 +9,19 @@ ms.prod:
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, Developer, IT Pro
+ms.reviewer: kfend
 ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 220314
 ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ms.search.region: Global
 ms.author: nselin
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 36c5e78f4b85d0c763c35b62a6592365501db325
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 6be91dfc02b728ffdf0f9d3baf1d41d3d2c10fea
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -103,7 +103,7 @@ Power BI レポートで使用されるビジネス データのソースとし�
 [**コンフィギュレーション**] ページ ([**組織管理**] &gt; [**電子申告**] &gt; [**コンフィギュレーション**]) のコンフィギュレーション ツリーで、以前に作成した [**インポート/エクスポート活動**] のコンフィギュレーションを選択します。 この形式を使用できるように、バージョン 1.1 の状態を [**ドラフト**] から [**完了**] に変更します。 [![コンフィギュレーションのページ](./media/ger-power-bi-format-configuration-complete-1024x401.png)](./media/ger-power-bi-format-configuration-complete.png) [**インポート/エクスポート活動**] コンフィギュレーションの完了したバージョンを選択し、[**実行**] をクリックします。 コンフィギュレーションした送信先は、Excel 形式で生成される出力結果に適用されることに注意してください。 無人モードでこのレポートを実行するには、[**バッチ処理**] オプションを [**はい**] に設定します。 このバッチ実行の必要な再実行をスケジュールするために [**再実行**] をクリックします。 再実行は、更新されたデータが Finance and Operations から Power BI に転送される頻度を定義します。 [![電子申告パラメーター ダイアログ ボックス](./media/ger-power-bi-format-configuration-run-to-schedule-1024x413.png)](./media/ger-power-bi-format-configuration-run-to-schedule.png) これをコンフィギュレーションした後、[**バッチ ジョブ**] のページ (**[システム管理] &gt; [照会] &gt; [バッチ ジョブ]**) に ER レポートの実行ジョブを見つけることができます。 [![バッチ ジョブのページ](./media/ger-power-bi-format-configuration-running-job-1024x410.png)](./media/ger-power-bi-format-configuration-running-job.png) このジョブを初めて実行すると、送信先は、選択した SharePoint のフォルダーにコンフィギュレーションされた名前を持つ新しい Excel ファイルを作成します。 その後ジョブが実行されるたびに、送信先は新しいバージョンの Excel ファイルを作成します。 [![Excel ファイルの新しいバージョン](./media/ger-power-bi-output-file-in-sharepoint-server-folder-2-1024x412.png)](./media/ger-power-bi-output-file-in-sharepoint-server-folder-2.png)
 
 ## <a name="create-a-power-bi-dataset-by-using-the-output-result-of-the-er-format"></a>ER 形式の出力結果を使用して Power BI データセットを作成
-Power BI にサイン インして、既存の Power BI グループ (ワークスペース) を開くか、新しいグループを作成します。 [**データにインポートまたは接続**] セクションの [**ファイル**] の下の [**追加**] をクリックするか、左ウィンドウの [**データセット**] の横にあるプラス記号 ([**+**]) をクリックします。 [![データセットの作成](./media/ger-power-bi-add-dataset-1024x524.png)](./media/ger-power-bi-add-dataset.png) [**SharePoint – チーム サイト**] オプションを選択してから、使用している SharePoint Server のパス (上記の例では、[**https://ax7partner.spoppe.com**]) を入力します。 次に、[**/共有ドキュメント/GER データ/PowerBI**] フォルダを参照し、新しい Power BI データセットのためのデータのソースとして作成した Excel ファイルを選択します。 [![Excel ファイルの選択](./media/ger-power-bi-add-dataset-select-excel-file-1024x522.png)](./media/ger-power-bi-add-dataset-select-excel-file.png) [**接続**] をクリックし、[**インポート**] をクリックします。 新しいデータセットは、選択された Excel ファイルに基づいて作成されます。 データセットは、新しく作成されたダッシュボードに自動的に追加できます。 [![ダッシュボードのデータセット](./media/ger-power-bi-added-dataset-1024x489.png)](./media/ger-power-bi-added-dataset.png) このデータセットの更新スケジュールをコンフィギュレーションして、定期更新を強制します。 定期更新により、SharePoint Server 上に作成された Excel ファイル の新しいバージョンを使用して ER レポートの定期実行による Finance and Operations からの新しいビジネス データの消費が可能になります。
+Power BI にサイン インして、既存の Power BI グループ (ワークスペース) を開くか、新しいグループを作成します。 [**データにインポートまたは接続**] セクションの [**ファイル**] の下の [**追加**] をクリックするか、左ウィンドウの [**データセット**] の横にあるプラス記号 ([**+**]) をクリックします。 [![データセットの作成](./media/ger-power-bi-add-dataset-1024x524.png)](./media/ger-power-bi-add-dataset.png) [**SharePoint – チーム サイト**] オプションを選択してから、使用している SharePoint Server のパス (上記の例では、[**https://ax7partner.litware.com**]) を入力します。 次に、[**/共有ドキュメント/GER データ/PowerBI**] フォルダを参照し、新しい Power BI データセットのためのデータのソースとして作成した Excel ファイルを選択します。 [![Excel ファイルの選択](./media/ger-power-bi-add-dataset-select-excel-file-1024x522.png)](./media/ger-power-bi-add-dataset-select-excel-file.png) [**接続**] をクリックし、[**インポート**] をクリックします。 新しいデータセットは、選択された Excel ファイルに基づいて作成されます。 データセットは、新しく作成されたダッシュボードに自動的に追加できます。 [![ダッシュボードのデータセット](./media/ger-power-bi-added-dataset-1024x489.png)](./media/ger-power-bi-added-dataset.png) このデータセットの更新スケジュールをコンフィギュレーションして、定期更新を強制します。 定期更新により、SharePoint Server 上に作成された Excel ファイル の新しいバージョンを使用して ER レポートの定期実行による Finance and Operations からの新しいビジネス データの消費が可能になります。
 
 ## <a name="create-a-power-bi-report-by-using-the-new-dataset"></a>新しいデータセットを使用して Power BI レポートを作成
 新しい Power BI レポートを作成するには、作成した [**インポートとエクスポートの詳細**] Power BI データセットをクリックします。 次に、視覚化をコンフィギュレーションします。 たとえば [**入力済マップ**] の視覚化を選択して、次のようにコンフィギュレーションします:

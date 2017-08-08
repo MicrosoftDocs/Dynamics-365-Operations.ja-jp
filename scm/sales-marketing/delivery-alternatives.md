@@ -18,13 +18,12 @@ ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.dyn365.ops.intro: Version 1611
-ms.search.validFrom: 2016-11-30
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 79d1e7349df7e5042af016f9b595f9cf9bcfc294
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.translationtype: HT
+ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
+ms.openlocfilehash: 33fe96562777443bffc5dac30fd3a273bcffb6e0
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -113,7 +112,7 @@ Microsoft Dynamics 365 for Operations バージョン 1611 (2016 年 11 月) で
 
 ### <a name="delivery-alternatives"></a>代替配送先
 
-このタブには、受領書データで並べ替えられた代替配送処理が一覧表示されます。 リストの上では、提案のベースとなるオプションを選択できます。 配送日数を指定する荷渡方法を選択することもできます。  次のオプションを使用できます。
+このタブには、受領書データで並べ替えられた代替配送処理が一覧表示されます。 リストの上では、提案のベースとなるオプションを選択できます。 配送日数を指定する荷渡方法を選択することもできます。 次のオプションを使用できます。
 
 -   **その他の製品バリアントを含める**: このオプションは、製品バリアントがある製品に対して使用可能です。 その製品の他のバリアントの代替配送処理が含まれています。 このオプションは、CTP には使用できません。
 -   **部分的な数量を含める場合**: 既定では、販売明細行の全数量を満たす提案のみが含まれています。 このオプションを選択すると、注文明細行を一部のみ満たすための提案を含めることができます。 このオプションは、顧客がより早い納期を要求し、部分配送を受け入れる場合に便利です。
@@ -151,7 +150,7 @@ Microsoft Dynamics 365 for Operations バージョン 1611 (2016 年 11 月) で
 <a name="see-also"></a>参照
 --------
 
-[注文納期日](http://ax.help.dynamics.com/en/wiki/delivery-dates-and-available-to-promise-calculations/)
+[注文納期日](/dynamics365/unified-operations/supplychain/sales-marketing/delivery-dates-available-promise-calculations)
 
 
 

@@ -10,20 +10,20 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventTestAssociationTable, InventTestGroup, InventTestItemQualityGroup, InventTestTable, InventTestVariable, InventTestVariableOutcome
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 94003
 ms.assetid: a1d9417b-268f-4334-8ab6-8499d6c3acf0
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
-ms.openlocfilehash: 255035bf13155190e59088a7f64f798c7462b885
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: c2c7a9c82809bd989eb362995dfe8e6d7829e89d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -45,7 +45,8 @@ ms.lasthandoff: 06/20/2017
 
 -   (特定の仕入先からの発注書の倉庫の登録の際に) 事前に定義された基準に基づいて品質テスト プロセスを自動的に開始します。
 -   未承認の在庫が使用されないように検査中の在庫をブロックします (発注書数量の完全なブロック)。
--   検査しなければならない現在の現物在庫の数量を定義するために、品質関連の一部として品目サンプリングを使用します。 サンプリングは、固定数量または割合に基づいて設定できます。
+-   検査しなければならない現在の現物在庫の数量を定義するために、品質関連の一部として品目サンプリングを使用します。 サンプリングは、固定数量または割合に基づいて設定できます。 
+-   部分的な入庫の品質指示を作成します。 注文に対して現物入庫した数量の基準となる品質指示を作成するには、[**品目サンプリング**] フォームの [**更新済数量別**] チェック ボックスをオンにします 
 -   最小、最大とターゲットのテスト値を含むテスト タイプを作成し、事前に定義された検証結果がある定性試験と定量試験を実行します。
 -   品質の測定許容を制御する許容可能な品質レベル (AQL) を指定します。
 -   テスト領域およびテスト機器といった検査の工程で必要とするリソースを指定します。

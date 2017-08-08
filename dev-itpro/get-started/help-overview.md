@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, Developer, IT Pro
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 16381
 ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
 ms.search.region: Global
 ms.author: margoc
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
-ms.openlocfilehash: 91207e03902fa8a45ab44270cc61b58ef9e3c98c
+ms.translationtype: HT
+ms.sourcegitcommit: 9c083fd26a58e96b3bb810df11eadace184f9dbf
+ms.openlocfilehash: eaa3317acf7df84d06ad3641486df1c096b26a56
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -32,33 +31,31 @@ ms.lasthandoff: 06/20/2017
 
 この記事では、Microsoft Dynamics 365 for Finance and Operations のヘルプ システム コンポーネントの概要が示されます。 また、組織の独自のドキュメントやトレーニングを提供する方法について説明します。 
 
-> [!IMPORTANT] 
-> 次の製品間には密接な関係があります: Dynamics 365 for Finance and Operations、Enterprise edition、Dynamics 365 for Retail、および Dynamics 365 for Talent。 すべての 3 つの製品上に同じ機能が表示されることがあります。 結果として、主に [Retail] に関連するトピックでの製品名は Dynamics 365 for Retail、主に [Talent] に関連するトピックでの製品名は Dynamics 365 for Talent、コア製品に関連するトピックでの製品名は、Dynamics 365 for Finance and Operations となります。 1 つの製品用に書かれたトピックは、関連する製品での同じ機能に適用されます
+> [!NOTE] 
+> 次の製品間には密接な関係があります: Dynamics 365 for Finance and Operations、Enterprise edition、Dynamics 365 for Retail、および Dynamics 365 for Talent。 すべての 3 つの製品上に同じ機能が表示されることがあります。 結果として、主に [Retail] に関連するトピックでの製品名は Dynamics 365 for Retail、主に [Talent] に関連するトピックでの製品名は Dynamics 365 for Talent、コア製品に関連するトピックでの製品名は、Dynamics 365 for Finance and Operations となります。 1 つの製品用に書かれたトピックは、関連する製品での同じ機能に適用されます。
+
+ヘルプ システムは、すべての Unified Operations 製品により共有されます。
+- Dynamics 365 for Finance and Operations, Enterprise エディション
+- Dynamics 365 for Retail
+- Dynamics 365 for Talent
 
 Finance and Operations には、2 つの主要なコンポーネントに基づくまったく新しいヘルプ システムが含まれています。
 
 -   ドキュメント サイト
 -   タスク ガイド
 
-次の製品間には密接な関係があります: Dynamics 365 for Finance and Operations、Enterprise edition、Dynamics 365 for Retail、および Dynamics 365 for Talent。 すべての 3 つの製品上に同じ機能が表示されることがあります。 結果として、主に [Retail] に関連するトピックでの製品名は Dynamics 365 for Retail、主に [Talent] に関連するトピックでの製品名は Dynamics 365 for Talent、コア製品に関連するトピックでの製品名は、Dynamics 365 for Finance and Operations となります。 1 つの製品用に書かれたトピックは、関連する製品での同じ機能に適用されます。 
-
-ヘルプ システムは、すべての Unified Operations 製品により共有されます。
-- Dynamics 365 for Finance and Operations、Enterprise Edition
-- Dynamics 365 for Retail
-- Dynamics 365 for Talent
-
 使用しているどの製品においても [ヘルプ] ウィンドウからヘルプ トピックおよびタスク ガイドの両方にアクセスできます。 次のスクリーンショットは、Dynamics 365 for Finance and Operations を示します。
 
-![[ヘルプ] ウィンドウ](./media/help-pane-ops-task-guides-1024x741.png)
+![[ヘルプ] ウィンドウ](./media/help-pane-ops-task-guides.png)
 
 このトピックは、ヘルプ システムについて説明し、組織のカスタム ドキュメントおよびトレーニング リソースを作成方法を説明します。
 
 > [!IMPORTANT]
-> [**タスク ガイド**] タブは、Microsoft Dynamics 365 for Talent および Microsoft Dynamics 365 for Retail で現在使用できません。 将来のリリースではこの機能を有効にするよう、作業が進行中です。 [Talent] での [はじめに] の経験タスク ガイドは、基本的機能をカバーするために引き続き使用可能です。 [Retail] および [Talent] の両方に関する docs.microsoft.com サイト上 ([docs.microsoft.com/dynamics365/operations](/dynamics365/#pivot=solutions&panel=solutions_operations)) でも利用可能な、手順を追ったヘルプ
+> [**タスク ガイド**] タブは、Microsoft Dynamics 365 for Talent および Microsoft Dynamics 365 for Retail で現在使用できません。 将来のリリースではこの機能を有効にするよう、作業が進行中です。 [Talent] での [はじめに] の経験タスク ガイドは、基本的機能をカバーするために引き続き使用可能です。 [Retail] および [Talent] の両方に関する docs.microsoft.com サイト上 ([docs.microsoft.com/dynamics365/operations](/dynamics365/unified-operations/fin-and-ops/index)) でも利用可能な、手順を追ったヘルプ。
 
 ## <a name="help-on-docsmicrosoftcom"></a>docs.microsoft.com のヘルプ
 
-docs.microsoft.com サイト ([docs.microsoft.com/dynamics365/operations](/dynamics365/#pivot=solutions&panel=solutions_operations)) が Finance and Operations の製品ドキュメントの基本ソースです。 サイトには次のような機能が含まれています。
+docs.microsoft.com サイト ([docs.microsoft.com/dynamics365/operations](/dynamics365/unified-operations/fin-and-ops/index)) が Finance and Operations の製品ドキュメントの基本ソースです。 サイトには次のような機能が含まれています。
 
 -   **最新のコンテンツへのアクセス** – サイトは、製品のドキュメントのより速い、より柔軟な作成、出荷、および更新方法を提供します。 したがって、最新の技術情報にアクセスできることを確実にするために役立ちます。
 -   **専門家が記述した内容** – サイトは Microsoft 内外のコミュニティ メンバーによって拡張できる豊富な製品ドキュメントのセットを提供します。
@@ -68,12 +65,13 @@ docs.microsoft.com サイト ([docs.microsoft.com/dynamics365/operations](/dynam
 ### <a name="searching-on-docsmicrosoftcom"></a>docs.microsoft.com での検索
 コンテンツを検索する方法について多くの質問が寄せられています。 当サイトでは、Finance and Operations に関するページから始めると、検索の範囲は Finance and Operations のコンテンツに限定されます。 範囲を解除するには、検索ボックスの [Operations] の横にある [X] をクリックします。 
 
-![検索](./media/search-scope.png)
+![検索](./media/search-scope-2.png)
 
 任意の検索エンジンを使ってコンテンツを探すこともできます。 最適な結果を得るには、次のようなサイト検索を使用することをお勧めします: site:docs.microsoft.com dynamics 365 "検索用語"。  
-![サイト検索](./media/site-search.png)
 
-![サイト検索の結果](./media/site-search-results.png)
+![サイト検索](./media/site-search-1.png)
+
+![サイト検索の結果](./media/site-search-results-2.png)
 
 ### <a name="the-docsmicrosoftcom-table-of-contents-for-unified-operations"></a>Unified Operations の docs.microsoft.com 目次
 すべての製品は docs サイトの 1 つの目次を共有し、顧客がトピックのコンテキストを確認できるようにします。 探しているトピックを検索するフィルター コントロールを使用できるようにもします。
@@ -105,7 +103,7 @@ docs.microsoft.com サイト ([docs.microsoft.com/dynamics365/operations](/dynam
 
 Unified Operations 製品ごとにさまざまなタスク ガイドのセットを提供します。 [ヘルプ ウィンドウからタスク ガイドへのアクセス] セクションでは、製品の正しいタスク ガイドを検索する方法について説明します。 
 
-![タスク ガイドの読み取りビュー](./media/task-guide-ops-1024x742.png)
+![タスク ガイドの読み取りビュー](./media/task-guide-ops.png)
 
 ガイドのあるインタラクティブな経験を開始するには、[ヘルプ] ページ下部の [**タスク ガイドの開始**] をクリックします。 黒のポインタが、実行する必要があるアクションを開いて、表示します。 UI に表示される指示に従い、指示されたデータを入力します。 
 ![タスク ガイドの手順書](./media/task-guide-step-1-ops.png)
@@ -129,7 +127,7 @@ Unified Operations 製品ごとにさまざまなタスク ガイドのセット
 ## <a name="in-product-help"></a>製品内ヘルプ
 Finance and Operations 内のヘルプ コンテンツにアクセスするには、[**ヘルプ**] (**?**) アイコンをクリックしてからヘルプを選択するか、Ctrl + Shift + ? を押します。 どちらの場合も、[ヘルプ] ウィンドウが開きます。 [ヘルプ] ウィンドウから記事またはタスク ガイドにアクセスできます。 
 
-![[ヘルプ] ウィンドウ](./media/help-pane-wiki-1024x684.png)
+![[ヘルプ] ウィンドウ](./media/help-pane-wiki.png)
 
 ### <a name="accessing-help-topics-from-the-help-pane"></a>ヘルプ ウィンドウからヘルプ トピックへのアクセス
 
@@ -162,7 +160,7 @@ Finance and Operations 内のヘルプ コンテンツにアクセスするに�
 
 システム管理者がこれらの手順を完了したら、[**ヘルプ**] ウィンドウを開いて [タスク ガイド] タブをクリックします。 これで、Finance and Operations の現在のページに対応するタスク ガイドを見ることができます。 タスク ガイドがない場合は、検索するキーワードを入力できます。 [ヘルプ] ウィンドウでタスク ガイドをクリックした後、[ヘルプ] ウィンドウにはステップ バイ ステップの手順が表示され、タスク ガイドが再生できます。 
 
-![タスク ガイドの読み取りビュー](./media/task-guide-ops-1024x742.png)
+![タスク ガイドの読み取りビュー](./media/task-guide-ops.png)
 
 ### <a name="where-are-the-translated-task-guides"></a>翻訳されたタスク ガイドはどこにありますか。
 
