@@ -5,8 +5,10 @@
 #### [プレビュー サブスクリプションのサインアップ](/dynamics365/unified-operations/dev-itpro/dev-tools/sign-up-preview-subscription?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [デモ環境の配置](/dynamics365/unified-operations/dev-itpro/deployment/deploy-demo-environment?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [配置オプションの選択](/dynamics365/unified-operations/dev-itpro/deployment/choose-deployment-type?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [クラウド配置](/dynamics365/unified-operations/dev-itpro/deployment/cloud-deployment-overview)
-##### [オンプレミス配置](/dynamics365/unified-operations/dev-itpro/deployment/on-premises-deployment-landing-page)
+##### [クラウド配置](/dynamics365/unified-operations/dev-itpro/deployment/cloud-deployment-overview?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [クラウド配置のシステム要件](/dynamics365/unified-operations/dev-itpro/get-started/system-requirements?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [オンプレミス配置](/dynamics365/unified-operations/dev-itpro/deployment/on-premises-deployment-landing-page?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [オンプレミス配置のシステム要件](/dynamics365/unified-operations/dev-itpro/get-started/system-requirements-on-prem?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 #### Finance and Operations の購入
 ##### [Microsoft FastTrack for Dynamics 365](/dynamics365/unified-operations/fin-and-ops/get-started/fasttrack-dynamics-365-overview?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -18,6 +20,7 @@
 #### [オンプレミス配置で実装されていない機能](/dynamics365/unified-operations/dev-itpro/get-started/features-not-implemented-on-prem?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [ライフサイクル ポリシー](/dynamics365/unified-operations/dev-itpro/migration-upgrade/versions-update-policy?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Finance and Operations, Enterprise edition 2017 年 7 月の更新プログラム](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-application-July-2017-update?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Operations プラットフォーム更新プログラム 9 (2017 年 7 月)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-9?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Operations プラットフォーム更新プログラム 8 (2017 年 6 月)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-8?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Operations プラットフォーム更新プログラム 7 (2017 年 5 月)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-7?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Operations プラットフォーム更新プログラム 6 (2017 年 4 月)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-6?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -71,6 +74,7 @@
 #### [原価計算表](/dynamics365/unified-operations/supply-chain/cost-management/costing-sheets?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [原価バージョン](/dynamics365/unified-operations/supply-chain/cost-management/costing-versions?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [予定原価に対する原価バージョンを使用した原価変更のシミュレーション](/dynamics365/unified-operations/supply-chain/cost-management/simulate-cost-changes-costing-version-planned-costs?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+
 ### 在庫原価計算
 #### [手持在庫原価価値の調整](/dynamics365/unified-operations/supply-chain/cost-management/adjust-hand-inventory-cost-values?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [原価オブジェクト](/dynamics365/unified-operations/supply-chain/cost-management/cost-object?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -153,6 +157,7 @@
 
 #### エンティティの移行
 ##### [コンフィギュレーション データ プロジェクト](/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-projects?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [コンフィギュレーション データ パッケージ](/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-packages?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ###### [コンフィギュレーション データ テンプレート](/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-templates?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ###### [会社間でのコンフィギュレーション データのコピー](/dynamics365/unified-operations/dev-itpro/data-entities/copy-configuration?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [一般仕訳エンティティを使用して伝票をインポートするためのベスト プラクティス](/dynamics365/unified-operations/dev-itpro/data-entities/tips-tricks-import-general-journal-entity?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -181,9 +186,9 @@
 #### [サービス認証のトラブルシューティング](/dynamics365/unified-operations/dev-itpro/data-entities/troubleshoot-service-authentication?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ### [OData](/dynamics365/unified-operations/dev-itpro/data-entities/odata?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [定期統合](/dynamics365/unified-operations/dev-itpro/data-entities/recurring-integrations?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [定期統合](/dynamics365/unified-operations/dev-itpro/data-entities/recurring-integrations?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
-### [Common Data Service を使用したデータの統合](/common-data-service/entity-referencedynamics-365-integration) 
+### [Common Data Service を使用したデータの統合](/common-data-service/entity-reference/dynamics-365-integration) 
 #### [見込顧客から入金のシナリオのコンフィギュレーション](/dynamics365/unified-operations/supply-chain/sales-marketing/prospect-to-cash?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Sales 製品への Finance and Operations の製品の同期](/dynamics365/unified-operations/supply-chain/sales-marketing/products-template-mapping?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Finance and Operations の顧客への Sales の勘定の同期](/dynamics365/unified-operations/supply-chain/sales-marketing/accounts-template-mapping?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -739,7 +744,7 @@
 #### [単一ユーロ支払地域 (SEPA) 口座引落の概要](/dynamics365/unified-operations/financials/accounts-receivable/sepa-direct-debit-overview?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [ISO20022 口座振替用の会社の銀行口座の設定](/dynamics365/unified-operations/financials/localizations/tasks/set-up-company-bank-accounts-iso20022-credit-transfers?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [ISO20022 口座引落用の会社の銀行口座の設定](/dynamics365/unified-operations/financials/localizations/tasks/set-up-company-bank-accounts-iso20022-direct-debits?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [顧客および仕入先補償の設定](/dynamics365/unified-operations/financials/accounts-receivable/emea-compensation-customer-vendor-transactions?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [顧客および仕入先補償の設定](/dynamics365/unified-operations/financials/localizations/emea-compensation-customer-vendor-transactions?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [顧客の設定と ISO20022 口座引落用の顧客銀行口座の設定](/dynamics365/unified-operations/financials/localizations/tasks/set-up-bank-accounts-iso20022-direct-debits?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [EU 販売リストのレポートの設定](/dynamics365/unified-operations/financials/localizations/tasks/eur-00011-eu-sales-list-reporting?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [ISO20022 口座振替用の支払方法の設定](/dynamics365/unified-operations/financials/localizations/tasks/set-up-method-payment-iso20022-credit-transfer?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -804,21 +809,21 @@
 ###### [調達](/dynamics365/unified-operations/financials/localizations/emea-fra-procurement-sourcing-public-sector?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ###### [Titres de recette](/dynamics365/unified-operations/financials/localizations/emea-fra-titres-de-recette-public-sector?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ###### [仕入先請求書の支払保留](/dynamics365/unified-operations/financials/localizations/emea-fra-vendor-invoice-payment-holds-public-sector?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [振出受取手形の承認および転記 (フランス)](/dynamics365/unified-operations/financials/localizations/tasks/fr-00004-approve-post-draw-bill-exchange?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [振出受取手形の承認および転記](/dynamics365/unified-operations/financials/localizations/tasks/fr-00004-approve-post-draw-bill-exchange?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [時系列の請求書伝票](/dynamics365/unified-operations/financials/localizations/emea-fra-chronological-invoices-vouchers?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [顧客および仕入先の勘定明細書 (フランス)](/dynamics365/unified-operations/financials/localizations/tasks/fr-00002-customer-vendor-account-statements?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [請求書や督促状の支払遅延の一日当たりの利息計算および総額 (フランス)](/dynamics365/unified-operations/financials/localizations/tasks/fr-00018-daily-interest?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [顧客および仕入先の勘定明細書](/dynamics365/unified-operations/financials/localizations/tasks/fr-00002-customer-vendor-account-statements?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [請求書や督促状の支払遅延の一日当たりの利息計算および総額](/dynamics365/unified-operations/financials/localizations/tasks/fr-00018-daily-interest?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [特別減価償却](/dynamics365/unified-operations/financials/localizations/emea-fra-derogatory-depreciation?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [フランスの為替手形および支払手形 (フランス)](/dynamics365/unified-operations/financials/localizations/tasks/fr-00004-french-bills-exchange-promissory-notes?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [フランスの為替手形および支払手形](/dynamics365/unified-operations/financials/localizations/tasks/fr-00004-french-bills-exchange-promissory-notes?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [NAF コードと Siret 番号](/dynamics365/unified-operations/financials/localizations/emea-fra-naf-codes-siret-numbers?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [NAF コードと Siret 番号の設定 (フランス)](/dynamics365/unified-operations/financials/localizations/tasks/fr-00003-naf-codes-siret-numbers?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [NAF コードと Siret 番号の設定](/dynamics365/unified-operations/financials/localizations/tasks/fr-00003-naf-codes-siret-numbers?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [期日経過の顧客支払のペナルティ](/dynamics365/unified-operations/financials/localizations/emea-fra-apply-penalty-customer-payment-past-due?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [受取拒否振出受取手形仕訳帳の転記 (フランス)](/dynamics365/unified-operations/financials/localizations/tasks/fr-00004-post-protest-draw-bill-exchange-journal?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [再振出受取手形仕訳帳の転記 (フランス)](/dynamics365/unified-operations/financials/localizations/tasks/fr-00004-post-re-draw-bill-exchange-journal?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [受取拒否振出受取手形仕訳帳の転記](/dynamics365/unified-operations/financials/localizations/tasks/fr-00004-post-protest-draw-bill-exchange-journal?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [再振出受取手形仕訳帳の転記](/dynamics365/unified-operations/financials/localizations/tasks/fr-00004-post-re-draw-bill-exchange-journal?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [顧客請求書での一括比例配分復旧テキストの印刷](/dynamics365/unified-operations/financials/localizations/emea-fra-print-lump-sum-recovery-text?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [RB/SL 減価償却](/dynamics365/unified-operations/financials/localizations/emea-fra-rbsl-depreciation?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [支払方法の設定 (フランス)](/dynamics365/unified-operations/financials/localizations/tasks/fr-00004-setup-method-payment?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [顧客の支払方法の更新 (フランス)](/dynamics365/unified-operations/financials/localizations/tasks/fr-00004-update-method-payment-customer?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [支払方法の設定](/dynamics365/unified-operations/financials/localizations/tasks/fr-00004-setup-method-payment?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [顧客の支払方法の更新](/dynamics365/unified-operations/financials/localizations/tasks/fr-00004-update-method-payment-customer?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### ドイツ
 ##### [追加取得の減価償却](/dynamics365/unified-operations/financials/localizations/emea-deu-additional-acquisition-depreciation?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [監査ファイル](/dynamics365/unified-operations/financials/localizations/emea-deu-gdpdu-audit-data-export?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -859,7 +864,7 @@
 ##### [VAT 明細書の詳細](/dynamics365/unified-operations/financials/localizations/emea-lva-vat-statement-details?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### リトアニア
 ##### [固定資産修復明細書](/dynamics365/unified-operations/financials/localizations/emea-ltu-fixed-asset-repair-statement?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [倉庫間の固定資産移動ドキュメントの生成 (リトアニア)](/dynamics365/unified-operations/financials/localizations/tasks/lt-00003-fixed-asset-transfer?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [倉庫間の固定資産移動ドキュメントの生成](/dynamics365/unified-operations/financials/localizations/tasks/lt-00003-fixed-asset-transfer?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [VAT 明細書の詳細](/dynamics365/unified-operations/financials/localizations/emea-ltu-vat-statement-details?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 #### オランダ
@@ -879,7 +884,7 @@
 ##### [固定資産の処分機能の拡張](/dynamics365/unified-operations/financials/localizations/emea-pol-fixed-asset-disposal-functionality-extension?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [返品可能な梱包](/dynamics365/unified-operations/financials/localizations/emea-pol-returnable-packages?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [売上税レポート](/dynamics365/unified-operations/financials/localizations/emea-pol-sales-tax-reports?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [標準の監査ファイル (/dynamics365/unified-operations/financials/localizations/SAF)](/dynamics365/unified-operations/financials/localizations/emea-pol-standard-audit-file-saf?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [標準監査ファイル](/dynamics365/unified-operations/financials/localizations/emea-pol-standard-audit-file-saf?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [売上高残高明細書](/dynamics365/unified-operations/financials/localizations/emea-pol-turnover-balances-statement?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### スペイン
 ##### [請求書での現金割引の適用](/dynamics365/unified-operations/financials/localizations/emea-esp-cash-discount-applied-invoice?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -902,7 +907,6 @@
 ##### [決済割引の貸方票の作成](/dynamics365/unified-operations/financials/localizations/tasks/gb-00009-credit-note-settlement-discount?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [受取人払い VAT 対象品目を含む発注書の作成](/dynamics365/unified-operations/financials/localizations/tasks/purchase-order-reverse-charge-vat?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [受取人払い VAT 対象品目を含む販売注文の作成](/dynamics365/unified-operations/financials/localizations/tasks/gb-00002-sales-order?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [採用による既存の従業員の雇用](/dynamics365/unified-operations/financials/localizations/tasks/hire-existing-employee-through-recruiting?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [受取人払い VAT の品目売上税グループの設定](/dynamics365/unified-operations/financials/localizations/tasks/gb-00002-item-sales-tax-groups-reverse-charge-vat?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [受取人払い VAT 品目のグループ、ルール、およびパラメーターの設定](/dynamics365/unified-operations/financials/localizations/tasks/gb-00002-reverse-charge-vat-item-groups?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [受取人払い VAT の売上税グループの設定](/dynamics365/unified-operations/financials/localizations/tasks/gb-00002-sales-tax-groups-reverse-charge-vat?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -1118,6 +1122,7 @@
 #### [プロジェクト タイムシートの入力](/dynamics365/unified-operations/fin-and-ops/hr/tasks/enter-project-timesheets?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [作業者情報の入力](/dynamics365/unified-operations/fin-and-ops/hr/tasks/enter-worker-information?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [採用による候補者の雇用](/dynamics365/unified-operations/fin-and-ops/hr/tasks/hire-candidate-through-recruiting?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [採用による既存の従業員の雇用](/dynamics365/unified-operations/fin-and-ops/hr/tasks/hire-existing-employee-through-recruiting?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [候補者採用手段の確認と配置](/dynamics365/unified-operations/fin-and-ops/hr/tasks/identify-deploy-candidate-selection-tools?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [作業者への貸与品目](/dynamics365/unified-operations/fin-and-ops/hr/tasks/loan-item-worker?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [従業員のけが/病気の情報の管理](/dynamics365/unified-operations/fin-and-ops/hr/tasks/maintain-employee-injury-illness-information?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -1133,7 +1138,7 @@
 ## [インテリジェンス](/dynamics365/unified-operations/dev-itpro/analytics/information-access-reporting?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Power BI コンテンツへのアクセス](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-content-microsoft-partners?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
-### [リリースされた Power BI コンテンツ](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Power BI コンテンツ](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [実績対予算](/dynamics365/unified-operations/dev-itpro/analytics/ledger-budgets-power-bi?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [福利厚生](/dynamics365/unified-operations/dev-itpro/analytics/benefits-power-bi?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [ケースの概要](/dynamics365/unified-operations/financials/cash-bank-management/Cash-Overview-Power-BI-content)
@@ -1162,7 +1167,8 @@
 
 ### ドキュメントのレポーティングおよび印刷
 #### [ドキュメントの Reporting Services の概要](/dynamics365/unified-operations/dev-itpro/analytics/document-reporting-services?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [印刷中](/dynamics365/unified-operations/dev-itpro/analytics/print-documents?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [オンプレミスの配置の SSRS のコンフィギュレーション](/dynamics365/unified-operations/dev-itpro/analytics/configure-ssrs-on-premises?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [印刷](/dynamics365/unified-operations/dev-itpro/analytics/print-documents?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [ネットワーク プリンター デバイスの有効化](/dynamics365/unified-operations/dev-itpro/analytics/install-document-routing-agent?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [オンプレミス配置でのドキュメントの生成、発行、および印刷機能](/dynamics365/unified-operations/dev-itpro/analytics/printing-capabilities-on-premises?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [ドキュメント回覧エージェントを Windows サービスとして実行する](/dynamics365/unified-operations/dev-itpro/analytics/run-document-routing-agent-as-windows-service?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -1187,6 +1193,48 @@
 #### [行先](/dynamics365/unified-operations/dev-itpro/analytics/electronic-reporting-destinations?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Power BI を使用した電子申告の設定](/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [電子申告ツールを使用して電子ドキュメントを生成し、アプリケーション データを更新](/dynamics365/unified-operations/dev-itpro/analytics/generate-electronic-documents-update-application-data?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### 電子申告タスク
+##### [コンフィギュレーション プロバイダーを作成し、電子申告が有効なプロバイダーとしてマーク付けする](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [電子申告用の他のコンポーネントからのコンフィギュレーションの依存関係を定義する](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [モデル マッピングを定義し、電子申告用のデータ ソースを選択する](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [電子申告用に Microsoft Word 形式のレポートを生成するためのコンフィギュレーションを設計する](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [電子申告用にドメイン固有のデータ モデルを設計する](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [電子申告用に OpenXML 形式のレポートを生成するためのコンフィギュレーションを設計する](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [電子申告の提出先を構成する](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-destinations-2016-11?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [電子申告用の形式出力でドキュメント管理ファイルを使用するためのデータ モデルを準備する](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-document-management-files-1?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [電子申告用の形式出力でドキュメント管理ファイルを使用するためのデータ モデルを拡張する](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-document-management-files-2?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [電子申告用の形式出力でドキュメント管理ファイルを使用するための形式を作成する](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-document-management-files-3?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [電子申告用の形式出力でドキュメント管理ファイルを使用するための形式を実行する](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-document-management-files-4?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [電子申告用の形式出力でドキュメント管理ファイルを使用するための形式を変更して実行する](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-document-management-files-5?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [電子申告用の形式コンフィギュレーションを使用して支払の電子ドキュメントを生成する](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-electronic-payments?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [電子申告用のデータ ソースとして財務分析コードを使用するためのデータ モデルを設計する](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [電子申告用のデータ ソースとして財務分析コードを使用するためのモデルをマップする](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [電子申告用のデータ ソースとして財務分析コードを使用するためのレポートを設計する](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [電子申告用のデータ ソースとして財務分析コードを使用するレポートを実行する](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [電子申告用の形式コンフィギュレーションを作成する](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-format-configuration-2016-11?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [電子申告用の棚卸および集計を行うための形式を作成する](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-format-counting-summing-1?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [電子申告用の棚卸および集計を行うための計算を構成する](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-format-counting-summing-2?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [電子申告用の棚卸および集計の出力を作成するための計算を使用する](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-format-counting-summing-3?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [電子申告用の棚卸および集計を行うための形式を実行する](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-format-counting-summing-4?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [電子申告用のアプリケーション データ更新でドキュメントを生成するためのコンフィギュレーションをインポートする](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-1-import-configurations?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [電子申告用のアプリケーション データ更新でドキュメントを生成する](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-2-generate-documents?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [電子申告用のアプリケーション データ更新でドキュメントを生成するためのモデルとマッピングを変更する](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-3-modify-model-mapping?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [電子申告用のアプリケーション データ更新でドキュメントを生成するための形式を変更する](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-4-modify-format?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [電子申告用のアプリケーション データ更新でドキュメントを生成する](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-5-generate-documents-application-data-update?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [電子申告用の Excel レポートで水平に拡張された範囲を使用して列を動的に追加するための形式を設計する](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-horizontal-1?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [電子申告用の Excel レポートで水平に拡張された範囲を使用して列を動的に追加する形式を実行する](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-horizontal-2?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [電子申告用の Lifecycle Services からコンフィギュレーションをインポートする](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [電子申告用の画像が埋め込まれた Microsoft Office 形式のレポートを作成する (第 1 部)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [電子申告用の画像が埋め込まれた Microsoft Office 形式のレポートを作成するためのコンフィギュレーションを確認する](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [電子申告用の画像が埋め込まれた Microsoft Office 形式のレポートを生成する](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [電子申告用のモデル マッピング コンフィギュレーションを管理する](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [作成された形式のコンポーネントを電子申告用のデータ モデル要素にマッピングする](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-map-components-data-model-elements--2016-11?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [データ モデルを選択された電子申告用データ ソースにマッピングする](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-map-data-model-selected-data-sources-2016-11?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [電子申告用の Microsoft Excel テンプレートを再適用して形式を変更する](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-modify-format-by-reapplying-microsoft-excel-template-july-2017?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [電子申告用の外部ファイルからデータをインポートするために必要なコンフィギュレーションを作成する](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-required-configurations-import-data?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [電子申告用の形式を作成するときにデータ モデルの定義を選択する](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [電子申告用の形式の新しい基準バージョンを採用してその形式をアップグレードする](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-upgrade-format?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [電子申告用の Lifecycle Services にコンフィギュレーションをアップロードする](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ### 分析ツールおよび視覚エフェクト
 #### [分析、集計の測定、および KPI モデリング](/dynamics365/unified-operations/dev-itpro/analytics/analytics?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -1197,16 +1245,19 @@
 #### [データ エンティティの集計レポート](/dynamics365/unified-operations/dev-itpro/analytics/aggregate-data-entities-report?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [主要業績評価指標 (KPI) レポート](/dynamics365/unified-operations/dev-itpro/analytics/key-performance-indicators-report?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Power BI 統合](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-integration?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Power BI レポートとダッシュボードを作成する](/dynamics365/unified-operations/dev-itpro/analytics/create-powerbi-report-dashboard?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Finance and Operations のデータを使用して Power BI レポートを作成する](/dynamics365/unified-operations/dev-itpro/analytics/create-powerbi-report-data?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [ワークスペースの Power BI 統合のコンフィギュレーション](/dynamics365/unified-operations/dev-itpro/analytics/configure-power-bi-integration?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Power BI Embedded 統合](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-embedded-integration?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [ワークスペースの Power BI Embedded](/dynamics365/unified-operations/dev-itpro/analytics/embed-power-bi-workspaces?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [ワークスペースの埋め込み Power BI](/dynamics365/unified-operations/dev-itpro/analytics/embed-power-bi-workspaces?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Power BI Embedded を使用したワークスペースへの分析の追加](/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Power BI Embedded を使用して分析ワークスペースおよびレポートをセキュリティで保護](/dynamics365/unified-operations/dev-itpro/analytics/secure-analytical-workspaces?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Power BI をワークスペースに追加](/dynamics365/unified-operations/dev-itpro/analytics/add-bi-workspaces?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Power BI レポートをワークスペースにピン留めする](/dynamics365/unified-operations/dev-itpro/analytics/pin-power-bi-reports?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [エンティティ格納と Power BI の統合](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-integration-entity-store?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [エンティティ ストアで Power BI レポートを作成して配布する](/dynamics365/unified-operations/dev-itpro/analytics/author-distribute-power-bi-reports?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [独自の Azure SQL データベースにエンティティをエクスポートする](/dynamics365/unified-operations/dev-itpro/analytics/export-entities-to-your-own-database?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Power BI Desktop を使用して分析レポートを作成する](/dynamics365/unified-operations/dev-itpro/analytics/author-distribute-power-bi-reports?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Power BI で分析アプリケーションを発行する](/dynamics365/unified-operations/dev-itpro/analytics/publish-apps-powerbi?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 
 ## 在庫管理
@@ -1380,10 +1431,18 @@
 
 ## モバイル アプリ
 ### [モバイル アプリのホーム ページ](/dynamics365/unified-operations/dev-itpro/mobile-apps/Mobile-app-home-page?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [最近リリースされたモバイル ワークスペース](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-workspaces-released?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [モバイル ワークスペース](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-workspaces-released?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [会社のディレクトリ](/dynamics365/unified-operations/dev-itpro/mobile-apps/company-directory-mobile-workspace?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [原価管理](/dynamics365/unified-operations/financials/cost-accounting/cost-controlling-mobile-workspace?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [経費管理](/dynamics365/unified-operations/financials/expense-management/expense-management-mobile-workspace?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [手持在庫](/dynamics365/unified-operations/supply-chain/inventory/inventory-on-hand-mobile-workspace?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [請求書の承認](/dynamics365/unified-operations/dev-itpro/mobile-apps/invoice-approval-mobile-workspace?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [自分のチーム](/dynamics365/unified-operations/dev-itpro/mobile-apps/manager-self-service-mobile-workspace?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [プロジェクト時間の入力](/dynamics365/unified-operations/financials/project-management/project-time-entry-mobile-workspace?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [発注書の承認](/dynamics365/unified-operations/supply-chain/procurement/purchase-order-mobile-workspace?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [販売注文](/dynamics365/unified-operations/supply-chain/sales-marketing/sales-orders-mobile-workspace?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [仕入先コラボレーション](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-mobile-workspace?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [モバイル ワークスペースの公開](/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [モバイル プラットフォーム](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [モバイル ワークスペース X++ API](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-workspace-xpp-apis?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ## Office 統合
 ### [Office 統合](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -1396,8 +1455,7 @@
 ### [トラブルシューティング](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-troubleshooting?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ## 注文管理
-### 調達
-#### [調達の概要](/dynamics365/unified-operations/supply-chain/procurement/procurement-sourcing-overview?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [調達](/dynamics365/unified-operations/supply-chain/procurement/procurement-sourcing-overview?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [調達ワークフロー](/dynamics365/unified-operations/supply-chain/procurement/procurement-sourcing-workflows?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [購入ポリシー](/dynamics365/unified-operations/supply-chain/procurement/purchase-policies?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [調達カタログ](/dynamics365/unified-operations/supply-chain/procurement/procurement-catalogs?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -1457,11 +1515,10 @@
 ##### [調達カテゴリ階層の設定](/dynamics365/unified-operations/supply-chain/procurement/tasks/set-up-procurement-category-hierarchy?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [プロジェクト リソース情報の設定](/dynamics365/unified-operations/supply-chain/procurement/tasks/set-up-project-resource-information?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [プロジェクト予算の送信および承認](/dynamics365/unified-operations/supply-chain/procurement/tasks/submit-approve-project-budget?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [プロジェクト予算のリビジョンの送信および承認](/dynamics365/unified-operations/supply-chain/procurement/tasks/submit-approve-project-budget-revision?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [プロジェクト予算の修正の送信および承認](/dynamics365/unified-operations/supply-chain/procurement/tasks/submit-approve-project-budget-revision?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 
-### 販売とマーケティング
-#### [マーケティング](/dynamics365/unified-operations/supply-chain/sales-marketing/overview-sales-marketing?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [販売とマーケティング](/dynamics365/unified-operations/supply-chain/sales-marketing/overview-sales-marketing?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### 販売注文
 ##### [注文納期日](/dynamics365/unified-operations/supply-chain/sales-marketing/delivery-dates-available-promise-calculations?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [代替配送先](/dynamics365/unified-operations/supply-chain/sales-marketing/delivery-alternatives?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -1499,10 +1556,16 @@
 ## [組織管理](/dynamics365/unified-operations/fin-and-ops/organization-administration/organization-administration-home-page?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [組織と組織階層](/dynamics365/unified-operations/fin-and-ops/organization-administration/organizations-organizational-hierarchies?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [組織階層のコンフィギュレーション](/dynamics365/unified-operations/fin-and-ops/organization-administration/plan-organizational-hierarchy?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [組織階層を作成する](/dynamics365/unified-operations/core/organization-administration/tasks/create-organization-hierarchy?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [法人を作成する](/dynamics365/unified-operations/core/organization-administration/tasks/create-legal-entity?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [作業単位を作成する](/dynamics365/unified-operations/core/organization-administration/tasks/create-operating-unit?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [アドレス帳](/dynamics365/unified-operations/fin-and-ops/organization-administration/qa-address-books?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [グローバル アドレス帳](/dynamics365/unified-operations/fin-and-ops/organization-administration/overview-global-address-book?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [グローバル アドレス帳のコンフィギュレーション](/dynamics365/unified-operations/fin-and-ops/organization-administration/plan-configuration-global-address-book-additional-address-books?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [グローバル アドレス帳を計画する](/dynamics365/unified-operations/fin-and-ops/organization-administration/plan-configuration-global-address-book-additional-address-books?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [グローバル アドレス帳を構成する](/dynamics365/unified-operations/core/organization-administration/tasks/configure-global-address-book?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [番号順序の概要](/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [番号順序を個別に設定する](/dynamics365/unified-operations/core/organization-administration/tasks/set-up-number-sequences-individual-basis?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [ウィザードを使用した番号順序の設定](/dynamics365/unified-operations/core/organization-administration/tasks/set-up-number-sequences-wizard?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [電子署名の概要](/dynamics365/unified-operations/fin-and-ops/organization-administration/electronic-signature-overview?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [電子署名の設定](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-up-electronic-signatures?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [ケース管理の概要](/dynamics365/unified-operations/fin-and-ops/organization-administration/cases?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -1529,6 +1592,9 @@
 ##### [並列分岐のコンフィギュレーション](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-parallel-branch-workflow?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [ワークフロー プロパティのコンフィギュレーション](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-workflow-properties?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [メッセージ処理バッチ ジョブのコンフィギュレーション](/dynamics365/unified-operations/fin-and-ops/organization-administration/workflow-batch-job-critical?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [ワークフローの作業項目をデリゲート](/dynamics365/unified-operations/core/organization-administration/tasks/delegate-work-items-workflow?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [ワークフロー履歴の表示](/dynamics365/unified-operations/core/organization-administration/tasks/view-workflow-history?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [ワークフロー関連の電子メール メッセージを受信するためのユーザーを有効にする](/dynamics365/unified-operations/core/organization-administration/tasks/users-receive-workflow-related-email-messages?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [ワークフロー タイプのレポート](/dynamics365/unified-operations/fin-and-ops/organization-administration/workflow-types-report?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ## 生産
@@ -1766,6 +1832,7 @@
 ## 支払
 ### [支払方法](/dynamics365/unified-operations/retail/payment-methods?toc=dynamics365/unified-operations/retail/toc.json)
 ### [クレジット カードの設定、認証、および取得](/dynamics365/unified-operations/financials/accounts-receivable/credit-card-authorizations?toc=dynamics365/unified-operations/retail/toc.json)
+### [POS の支払方法を構成する](/dynamics365/unified-operations/retail/cash-denominations?toc=dynamics365/unified-operations/retail/toc.json)
 ### [支払利息のよく寄せられる質問](/dynamics365/unified-operations/retail/dev-itpro/payments-retail?toc=dynamics365/unified-operations/retail/toc.json)
 
 ## 発注書
@@ -1920,7 +1987,7 @@
 
 ### アーキテクチャ
 #### [Microsoft Dynamics 365 for Finance and Operations, Enterprise edition のコンポーネント - Retail](/dynamics365/unified-operations/retail/retail-components?toc=dynamics365/unified-operations/retail/toc.json)
-#### [Retail サーバーのアーキテクチャ](/dynamics365/unified-operations/retail/dev-itpro/retail-server-architecture?toc=dynamics365/unified-operations/retail/toc.json)
+#### [レポート サーバーのアーキテクチャ](/dynamics365/unified-operations/retail/dev-itpro/retail-server-architecture?toc=dynamics365/unified-operations/retail/toc.json)
 #### [小売チャネルのコミュニケーション](/dynamics365/unified-operations/retail/dev-itpro/define-retail-channel-communications-cdx?toc=dynamics365/unified-operations/retail/toc.json)
 #### [MPOS アーキテクチャ](/dynamics365/unified-operations/retail/dev-itpro/retail-modern-pos-architecture?toc=dynamics365/unified-operations/retail/toc.json)
 #### [小売オンライン ストア発行アーキテクチャ](/dynamics365/unified-operations/retail/dev-itpro/retail-online-store-publishing-architecture?toc=dynamics365/unified-operations/retail/toc.json)
@@ -1977,6 +2044,7 @@
 #### [Retail SDK の概要](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/retail-sdk-overview?toc=dynamics365/unified-operations/retail/toc.json)
 #### [Retail SDK を継続的ビルド システムと統合](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build?toc=dynamics365/unified-operations/retail/toc.json)
 #### [Retail SDK の拡張機能サンプル](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/retail-sdk-extensibility-samples?toc=dynamics365/unified-operations/retail/toc.json)
+#### [スウェーデンのキャッシュ レジスター](/dynamics365/unified-operations/retail/localizations/emea-swe-cash-registers?toc=dynamics365/unified-operations/retail/toc.json)
 #### [スウェーデン用の管理単位との Retail POS の統合](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/retail-sdk-control-unit-sample?toc=dynamics365/unified-operations/retail/toc.json)
 #### [Retail SDK 小売パッケージ](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/retail-sdk-packaging?toc=dynamics365/unified-operations/retail/toc.json)
 #### [Retail SDK サンプル](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/retail-sdk-samples?toc=dynamics365/unified-operations/retail/toc.json)
@@ -1986,6 +2054,9 @@
 
 # [Dynamics 365 for Talent](/dynamics365/unified-operations/talent/index?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
+## はじめに
+### [システム要件と更新ポリシー](/dynamics365/unified-operations/talent/talent-versions-update-policy?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+
 ## 人材戦略の作成
 ### [部門、職務、職位を使用した従業員の編成](/dynamics365/unified-operations/talent/departments-jobs-positions?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [職務コンポーネントの設定](/dynamics365/unified-operations/talent/create-job?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -1994,6 +2065,7 @@
 ### [会社固有の HR パラメーターの設定](/dynamics365/unified-operations/talent/set-up-company-specific-hr-parameters?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [個人のアクションのよく寄せられる質問](/dynamics365/unified-operations/talent/personnel-actions-faq?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [ワークフローを使用した従業員情報の管理](/dynamics365/unified-operations/talent/workflow-manage-employee-information?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [休暇の概要](/dynamics365/unified-operations/talent/leave-and-absence-overview?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ## 従業員の動機付け
 ### [報酬プラン](/dynamics365/unified-operations/talent/compensation-plans?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -2023,7 +2095,8 @@
 
 # [Unified Operations プラットフォームを使用した開発と管理](/dynamics365/unified-operations/dev-itpro/index?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
-## [システム要件](/dynamics365/unified-operations/dev-itpro/get-started/system-requirements?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+## [クラウド配置のシステム要件](/dynamics365/unified-operations/dev-itpro/get-started/system-requirements?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+## [オンプレミス配置のシステム要件](/dynamics365/unified-operations/dev-itpro/get-started/system-requirements-on-prem?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ## [デモ データ](/dynamics365/unified-operations/dev-itpro/get-started/demo-data?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 
@@ -2277,6 +2350,116 @@
 #### [タスク レコーダーのクイック リファレンス](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder-quick-reference?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [タスク レコーダーを使用してドキュメントまたはトレーニングを作成](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder-training-docs?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
+## [モバイル プラットフォーム](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### はじめに
+#### [はじめに](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-getting-started?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [アーキテクチャと設計の考慮事項](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-architecture?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### モバイル ワークスペースのコンフィギュレーション
+#### [SysAppWorkspace クラスを使用してワークスペースを構成する](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/scenarios/mobile-workspace-configuration?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [サーバーのワークスペースをローカライズする](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/scenarios/localize-workspaces-on-server?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [モバイル アプリ ワークスペースのセキュリティを強化する](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/scenarios/secure-mobile-workspace?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [クリックできるようにフィールドの表示をカスタマイズする](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/scenarios/make-workspace-field-clickable?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [ワークスペースのクラスを使用してフィールドを必須にする](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/scenarios/make-field-mandatory?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### モバイル ワークスペースの最適化
+#### [フィールドに数を表示する](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/scenarios/display-count-workspace?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### サーバー側の開発のリファレンス
+#### [サーバー側の開発 (ワークスペース X++ API)](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-workspace-server-apis?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### クライアント側の開発のリファレンス
+#### [クライアント側の設計 API の概要](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/scenarios/client-api-design-overview?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [クライアント API](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/client-apis-reference?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [アプリケーション](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/modules/services-application?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Application](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/services-application-iapplication?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [ApplicationMetadata](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/services-application-iapplicationmetadata?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [main](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/modules/services-application.md#main)
+#### [コントロール](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-basecontrol-icontrol?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [コンテナー](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-container-icontainercontrol?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [ContainerControl](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-container-icontainercontrol-icontainercontrol?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [ContainerControlDesign](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-container-icontainercontrol-icontainercontroldesign?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [ContainerControlMetadata](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-container-icontainercontrol-icontainercontrolmetadata?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [フィールド](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-field-ifield?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Field](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-field-ifield-ifield?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [FieldDesign](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-field-ifield-ifielddesign?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [FieldMetadata](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-field-ifield-ifieldmetadata?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [ファイル アップローダー](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-fileuploader-ifileuploader?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [FileUploader](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-fileuploader-ifileuploader-ifileuploader?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [FileUploaderDesign](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-fileuploader-ifileuploader-ifileuploaderdesign?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [FileUploaderMetadata](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-fileuploader-ifileuploader-ifileuploadermetadata?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [グループ](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-group-igroup?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [グループ](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-group-igroup-igroup?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [GroupDesign](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-group-igroup-igroupdesign?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [GroupMetadata](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-group-igroup-igroupmetadata?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [ハイパーリンク](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-hyperlink-ihyperlink?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [HyperLink](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-hyperlink-ihyperlink-ihyperlink?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [HyperLinkDesign](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-hyperlink-ihyperlink-ihyperlinkdesign?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [HyperLinkMetadata](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-hyperlink-ihyperlink-ihyperlinkmetadata?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [画像](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-image-iimage?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [Image](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-image-iimage-iimage?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [ImageDesign](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-image-iimage-iimagedesign?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [ImageMetadata](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/ interfaces/view-model-control-image-iimage-iimagemetadata?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [ImageStyleType](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-image-iimage.md#imagestyletype)
+##### [入力](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-basecontrol-iinputcontrol?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [InputControl](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontrol?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [InputControlDesign](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontroldesign?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [InputControlMetadata](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontrolmetadata?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [NumberSequenceConfig](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-iinputcontrol-inumbersequenceconfig?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [リスト](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-list-ilist?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [List](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-list-ilist-ilist?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [ListDesign](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-list-ilist-ilistdesign?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [ListMetadata](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-list-ilist-ilistmetadata?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [Row](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-list-ilist-irow?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [ルックアップ](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-lookup-ilookup?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [Lookup](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-ilookup-ilookup?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [LookupDesign](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-ilookup-ilookupdesign?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [LookupMetadata](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-ilookup-ilookupmetadata?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [複数ルックアップ](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-lookup-imultilookup?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [MultiLookup](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-imultilookup-imultilookup?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [MultiLookupDesign](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-imultilookup-imultilookupdesign?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [MultiLookupMetadata](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [ページリンク](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-pagelink-ipagelink?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [PageLink](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-pagelink-ipagelink-ipagelink?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [PageLinkDesign](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-pagelink-ipagelink-ipagelinkdesign?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [PageLinkMetadata](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-pagelink-ipagelink-ipagelinkmetadata?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [パーツ](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-part-ipart?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [Part](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-part-ipart-ipart?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [PartDesign](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-part-ipart-ipartdesign?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [PartMetadata](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-part-ipart-ipartmetadata?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [値](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-value-ivalue?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [GenericValue](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-igenericvalue?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [Value](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivalue?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [ValueDesign](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluedesign?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [ValueMetadata](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluemetadata?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Control](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-icontrol-icontrol?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [ControlMetadata](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [ControlType](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-basecontrol-icontrol.md#controltype)
+#### [延期](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/modules/defer?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [すべて](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/modules/defer.md#all)
+##### [延期](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/modules/defer.md#defer)
+##### [Deferred](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/defer-ideferred?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [否認](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/modules/defer.md#reject)
+##### [解決](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/modules/defer.md#resolve)
+#### [イベント](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/modules/event-ievent?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [EventHook](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/event-ievent-ieventhook?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [IEventListener](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/modules/event-ievent.md#ieventlistener)
+#### [ページ](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/modules/view-model-ipage?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [CompleteEventArgs](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-ipage-icompleteeventargs?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Design](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-ipage-idesign?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [NavigationArgs](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-ipage-inavigationargs?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Page](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-ipage-ipage?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [PageDataState](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/enums/view-model-ipage-pagedatastate?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [PageLoadState](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/enums/view-model-ipage-pageloadstate?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [PageMetadata](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-ipage-ipagemetadata?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [PageOptions](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-ipage-ipageoptions?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [PageSubmitArgs](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-ipage-ipagesubmitargs?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [PageTarget](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-ipage-ipagetarget?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [サービス](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/modules/services-business-logic-services?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [AsyncService](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/services-business-logic-services-iasyncservice?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [CacheService](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/services-business-logic-services-icacheservice?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [DataService](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/services-business-logic-services-idataservice?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [ExpressionOperator](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/modules/services-business-logic-services.md#expressionoperator)
+##### [MetadataService](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/services-business-logic-services-imetadataservice?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [PageData](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/services-business-logic-services-ipagedata?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+
+
 ## Lifecycle Services を使用したリリースのソリューション
 ### [開発とリリース](/dynamics365/unified-operations/dev-itpro/lcs-solutions/lcs-solutions-app-source?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [ステージおよび公開](/dynamics365/unified-operations/dev-itpro/lcs-solutions/marketing-content-lcs-solutions?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -2329,6 +2512,10 @@
 #### [Azure ExpressRoute と Dynamics 365 for Finance and Operations Enterprise Edition](/dynamics365/unified-operations/dev-itpro/deployment/expressroute?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ### [オンプレミス配置](/dynamics365/unified-operations/dev-itpro/deployment/on-premises-deployment-landing-page)
+#### [オンプレミスの概要](/dynamics365/unified-operations/dev-itpro/deployment/on-premises-overview?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [ハードウェアのサイズ](/dynamics365/unified-operations/dev-itpro/get-started/hardware-sizing-on-premises-environments?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [オンプレミスのプロジェクトを作成する](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lbd-create-lcs-on-prem-project?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [オンプレミス環境の設定と配置](/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-environments?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ### カスタム コードの配置
 #### [配置可能パッケージの作成](/dynamics365/unified-operations/dev-itpro/deployment/create-apply-deployable-package?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -2340,8 +2527,8 @@
 #### [分析 - アップグレード アナライザー ツールを使用したアップグレードの計画](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-analyzer-tool?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [分析 - コードのアップグレード サービスを使用したコードのアップグレードの工数見積](/dynamics365/unified-operations/dev-itpro/migration-upgrade/analyze-code-upgrade?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [分析 - サンド ボックス環境の配置](/dynamics365/unified-operations/dev-itpro/migration-upgrade/analysis-sandbox?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [アップグレード - 開発環境でのデータ アップグレード](/dynamics365/unified-operations/dev-itpro/migration-upgrade/prepare-data-upgrade?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [アップグレード - AX 2012 データ アップグレード タスク](/dynamics365/unified-operations/dev-itpro/migration-upgrade/data-upgrade-2012?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [アップグレード - 開発環境でのデータ アップグレード](/dynamics365/unified-operations/dev-itpro/migration-upgrade/data-upgrade-2012?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [アップグレード - AX 2012 データ アップグレード タスク](/dynamics365/unified-operations/dev-itpro/migration-upgrade/prepare-data-upgrade?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [アップグレード - サンドボックス環境でのデータ アップグレード](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-data-sandbox?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [検証 - 切替テスト](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-cutover-testing?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [検証 - アップグレード後に実行するタスク](/dynamics365/unified-operations/dev-itpro/migration-upgrade/app-validation-process?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -2375,14 +2562,11 @@
 ### 修正プログラムとサービス
 #### [Lifecycle Services からの修正プログラムのダウンロード](/dynamics365/unified-operations/dev-itpro/migration-upgrade/download-hotfix-lcs?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [メタデータ修正プログラムのインストール](/dynamics365/unified-operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [財務レポート バイナリ修正プログラムのインストール](/dynamics365/unified-operations/dev-itpro/migration-upgrade/install-financial-reporting-binary-hotfix?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [1 ボックス環境の Reporting Services への修正プログラムの適用](/dynamics365/unified-operations/dev-itpro/migration-upgrade/patch-reporting-service-environment?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ### 減価償却
 #### [非推奨 API](/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-apis?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [削除予定の機能](/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-
-
 
 ## システム管理
 ### [プラットフォームの毎月の更新プログラムのよく寄せられる質問](/dynamics365/unified-operations/dev-itpro/sysadmin/faq-platform-monthly-updates?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -2394,6 +2578,11 @@
 #### [ロールベース セキュリティ](/dynamics365/unified-operations/dev-itpro/sysadmin/role-based-security?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [セキュリティ アーキテクチャ](/dynamics365/unified-operations/dev-itpro/sysadmin/security-architecture?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [セキュリティ レポート](/dynamics365/unified-operations/dev-itpro/sysadmin/security-reports?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [新規ユーザーの作成](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [職務分掌を設定する](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/set-up-segregation-duties?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [職務分掌の競合の識別と解決](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/identify-resolve-conflicts-segregation-duties?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [ユーザーをセキュリティ ロールに割り当てる](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+
 ### バッチ処理
 #### [バッチ処理の概要](/dynamics365/unified-operations/dev-itpro/sysadmin/batch-processing-overview?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [バッチ サーバーの概要](/dynamics365/unified-operations/dev-itpro/sysadmin/batch-server-overview?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -2467,46 +2656,6 @@
 ##### [システム診断のインストールと実行](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/install-run-system-diagnostics-lcs?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [アップグレード分析](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/upgrade-analysis-lcs?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [使用状況プロファイラー](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/usage-profiler-lcs?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### Dynamics AX 2012 ダウンロード可能ツール
-##### [コード アップグレード ツールのユーザー ガイド (非推奨)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/code-upgrade-tool-user-guide?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Lifecycle Services のダウンロード可能ツール](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/lcs-downloadable-tools-formerly-informationsource?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [テスト データ転送ツール (ベータ)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/test-data-transfer-tool-beta-2012?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-###### [インストール](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/install-test-data-transfer-tool-beta?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-###### [実行](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/run-test-data-transfer-tool-beta?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-###### [AX 2012 R3 のデモ データのインポート](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/import-demo-data-ax-2012-r3-test-data-transfer-tool?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [セキュリティ開発ツール](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/overview-security-development-tool-user-interface?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-###### [インストール](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/install-security-development-tool?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-###### [ユーザー ガイド](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/security-development-tool-user-guide?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-###### [エントリ ポイントのアクセス許可の定義または編集](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/define-edit-entry-point-permissions?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [パフォーマンス ベンチマーク ソフトウェア開発ツールキット](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/performance-benchmark-software-development-toolkit-sdk-2012?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [セキュリティ アップグレード アドバイザー ツール](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/security-upgrade-advisor-tool-user-guide?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Intelligent Data Management Framework (IDMF)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/microsoft-idmf?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-###### [概要](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/overview-idmf?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-###### [インストール ガイド](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/installation-guide-idmf?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-###### [コンフィギュレーション](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/configuration-functionality-idmf-workspace?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-###### [分析](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/analysis-functionality-idmf-workspace?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-###### [オブジェクトの削除とアーカイブ](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/work-with-purge-objects-archive-objects?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-###### [アーカイブ オブジェクトの作成](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/create-archive-objects?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-###### [削除オブジェクトの作成](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/create-purge-objects?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-###### [削除および分析タスクのスケジュール](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/schedule-purge-analysis-tasks?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-###### [削除またはアーカイブ ジョブの表示](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/view-status-purge-archive-jobs?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-###### [メンテナンス](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/maintain-idmf?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-###### [トラブルシューティング](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/troubleshoot-idmf?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-
-## データベース管理
-### [Azure SQL データベースから SQL Server 環境へのデータベースのコピー](/dynamics365/unified-operations/dev-itpro/database/copy-database-from-azure-sql-to-sql-server?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [SQL Server から実稼働 Azure SQL データベース環境へのデータベースのコピー](/dynamics365/unified-operations/dev-itpro/database/copy-database-from-sql-server-to-azure-sql?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [非実稼働環境でのデータベースの復元](/dynamics365/unified-operations/dev-itpro/database/request-point-in-time-restore?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [復元するデータベースのコピーを後でエクスポート](/dynamics365/unified-operations/dev-itpro/database/copy-operations-database?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-
-## サポート
-### [Dynamics 365 for Finance and Operations, Enterprise edition および Lifecycle Services のサポートの入手](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-support?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [プレミア サポート チケットの記録](/dynamics365/unified-operations/dev-itpro/lifecycle-services/premier-support?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [Dynamics サービス エンジニアリング チームへの要求の送信](/dynamics365/unified-operations/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [Dynamics 365 for Finance and Operations, Enterprise edition の技術サポートの設定](/dynamics365/unified-operations/dev-itpro/lifecycle-services/support-experience?toc=dynamics365/unified-operations/fin-and-ops/toc.json) 
-### [予定された保守ウィンドウのよく寄せられる質問](/dynamics365/unified-operations/dev-itpro/lifecycle-services/planned-maintenance-window-faq?toc=dynamics365/unified-operations/fin-and-ops/toc.json) 
-### [クラウドの工程とサービス](/dynamics365/unified-operations/dev-itpro/lifecycle-services/cloud-operations-servicing?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [Finance and Operations サポート エクスペリエンスの管理](/dynamics365/unified-operations/dev-itpro/lifecycle-services/cloud-powered-support-lcs?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Dynamics AX 2012 ダウンロード可能ツール
 ##### [コード アップグレード ツールのユーザー ガイド (非推奨)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/code-upgrade-tool-user-guide?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Lifecycle Services のダウンロード可能ツール](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/lcs-downloadable-tools-formerly-informationsource?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
