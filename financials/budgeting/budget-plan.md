@@ -10,19 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 10763
 ms.assetid: 0f2ba752-1f6d-4f28-b9e9-b2e97d10b6d1
 ms.search.region: Global
 ms.author: sigitac
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 11b5ffacef06fd3e83c61cd14da11ad645eec335
+ms.translationtype: HT
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: 608ec87233acb05b0d46e367bcb7cd14985d7813
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -88,9 +87,8 @@ ms.lasthandoff: 06/13/2017
 ## <a name="task-2-configure-user-security"></a>タスク 2: ユーザーのセキュリティのコンフィギュレーション
 予算計画は、予算計画のデータへのアクセスを構成する際に特別なセキュリティ ポリシーを使用します。 ジュリアは、自分自身に対して、財務予算計画へのアクセス権を与える必要があります。 
 
-2.1。 DEMF の法人のコンテキストに切り替えます: 
+2.1。 DEMF の法人のコンテキストに切り替えます。 
 
-[![DEMF](./media/screenshot10.png)](./media/screenshot10.png) 
 
 2.2. [予算作成] &gt; [設定] &gt; [予算計画] &gt; [予算計画のコンフィギュレーション] の順に移動します。 パラメータータブで、セキュリティ モデルの値を、セキュリティの組織に基づいて設定します 
 

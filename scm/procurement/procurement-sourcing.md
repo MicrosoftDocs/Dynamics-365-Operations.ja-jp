@@ -17,11 +17,11 @@ ms.search.region: Global
 ms.author: yuyus
 ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: cf6d4756ae706316a342590ab76b4a5cbdd7e4f9
+ms.translationtype: HT
+ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
+ms.openlocfilehash: 6e9402eb1fd559784a9013f91205503d806e2a44
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -36,58 +36,58 @@ ms.lasthandoff: 06/13/2017
 
 ## <a name="purchase-requisitions"></a>購買要求
 -   [購買要求の概要](purchase-requisitions-overview.md)
--   [消費の要求の作成](http://ax.help.dynamics.com/en/wiki/create-a-requisition-for-consumption/)
--   [RFQ を使用する要求の作成](http://ax.help.dynamics.com/en/wiki/create-a-requisition-that-uses-an-rfq/)
--   [誰かの代わりに製品注文のアクセス許可を設定する](http://ax.help.dynamics.com/en/wiki/set-up-permissions-for-ordering-products-on-behalf-of-someone-else/)
+-   [消費の要求の作成](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-requisition-consumption)
+-   [RFQ を使用する要求の作成](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-requisition-uses-rfq)
+-   [誰かの代わりに製品注文のアクセス許可を設定する](/dynamics365/unified-operations/supply-chain/procurement/tasks/set-up-permissions-ordering-products)
 
 ## <a name="requests-for-quotation"></a>見積依頼
 -   [見積依頼](request-quotations.md)
--   [見積依頼の作成](http://ax.help.dynamics.com/en/wiki/create-a-request-for-quotation/)
--   [RFQ 入札価格を入力し、比較し、契約を授与してください。](http://ax.help.dynamics.com/en/wiki/enter-and-compare-rfq-bids-and-award-contracts/)
--   [RFQ のスコア方法を作成](http://ax.help.dynamics.com/en/wiki/create-a-scoring-method-for-rfqs/)
--   [入札タイプ、および RFQ に対するスコア基準の作成](http://ax.help.dynamics.com/en/wiki/create-solicitation-types-and-scoring-criteria-for-rfqs/)
+-   [見積依頼の作成](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-request-quotation)
+-   [RFQ 入札価格を入力し、比較し、契約を授与してください。](/dynamics365/unified-operations/supply-chain/procurement/tasks/enter-compare-rfq-bids-award-contracts)
+-   [RFQ のスコア方法を作成](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-scoring-method-rfqs)
+-   [入札タイプ、および RFQ に対するスコア基準の作成](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-solicitation-types-scoring-criteria-rfqs)
 
 ## <a name="vendor-management-and-collaboration"></a>仕入先管理と共同作業
 -   [仕入先勘定の設定](set-up-vendor-accounts.md)
--   [仕入先勘定の作成](http://ax.help.dynamics.com/en/wiki/create-a-vendor-account/)
--   [仕入先銀行口座の作成](http://ax.help.dynamics.com/en/wiki/create-a-vendor-bank-account/)
--   [仕入先の検索](http://ax.help.dynamics.com/en/wiki/search-for-vendors/)
--   [特定の製品の仕入先を承認する](http://ax.help.dynamics.com/en/wiki/approve-vendors-for-specific-products/)
+-   [仕入先勘定の作成](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-vendor-account)
+-   [仕入先銀行口座の作成](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-vendor-bank-account)
+-   [仕入先の検索](/dynamics365/unified-operations/supply-chain/procurement/tasks/search-vendors)
+-   [特定の製品の仕入先を承認する](/dynamics365/unified-operations/supply-chain/procurement/tasks/approve-vendors-specific-products)
 -   [ 外部仕入先との仕入先共同作業](vendor-collaboration-work-external-vendors.md)
 -   [ 顧客と仕入先の共同作業](vendor-collaboration-work-customers-dynamics-365-operations.md)
 -   [仕入先コラボレーション ユーザーの管理](manage-vendor-collaboration-users.md)
 -   [ 仕入先共同作業の設定と管理](set-up-maintain-vendor-collaboration.md)
 -   [ Microsoft Dynamics 365 for Finance and Operations の受信委託の在庫デモ スクリプト](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/InboundConsignmentInventoryDemoScriptDynamics365Operations) (ホワイト ペーパー)
--   [ 仕入先のコラボレーションを使用する、委託販売の在庫の監視](http://ax.help.dynamics.com/en/wiki/monitor-consignment-inventory-using-vendor-collaboration/)
+-   [ 仕入先のコラボレーションを使用する、委託販売の在庫の監視](/dynamics365/unified-operations/supply-chain/inventory/tasks/monitor-consignment-inventory-vendor-collaboration)
 -   [ 仕入先のポータルを使用した仕入先との協力](collaborate-vendors-vendor-portal.md) (Dynamics AX の 2016 年 2 月と 2016 年 5 月バージョンのみ)
 -   [ 仕入先のポータル ユーザー向けのセキュリティのコンフィギュレーション](configure-security-vendor-portal-users.md) (Finance and Operations の 2016 年および 2016 年 5 月バージョンのみ)
 -   [Microsoft Dynamics 365 for Finance and Operations アプリケーションの仕入先コラボレーション モバイル ワークスペース](vendor-collaboration-mobile-workspace.md)
 
 ## <a name="procurement-product-management"></a>調達製品管理
 -   [調達カタログ](procurement-catalogs.md)
--   [調達カタログの作成](http://ax.help.dynamics.com/en/wiki/create-a-procurement-catalog/)
+-   [調達カタログの作成](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-procurement-catalog)
 -   [仕入先カタログのインポート](https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/05/25/vendor-catalogs-in-dynamics-ax/) (ブログ投稿)
--   [調達カテゴリ階層の設定](http://ax.help.dynamics.com/en/wiki/set-up-a-procurement-category-hierarchy/)
--   [調達カテゴリ階層に対するポリシーの設定](http://ax.help.dynamics.com/en/wiki/set-up-policies-for-procurement-category-hierarchies/)
--   [特定の調達カテゴリに対する仕入先の承認](http://ax.help.dynamics.com/en/wiki/approve-vendors-for-specific-procurement-categories/)
+-   [調達カテゴリ階層の設定](/dynamics365/unified-operations/supply-chain/procurement/tasks/set-up-procurement-category-hierarchy)
+-   [調達カテゴリ階層に対するポリシーの設定](/dynamics365/unified-operations/supply-chain/procurement/tasks/set-up-policies-procurement-category-hierarchies)
+-   [特定の調達カテゴリに対する仕入先の承認](/dynamics365/unified-operations/supply-chain/procurement/tasks/approve-vendors-specific-procurement-categories)
 
 ## <a name="procurement"></a>調達
 -   [発注書の概要](purchase-order-overview.md)
 -   [発注書の作成](purchase-order-creation.md)
 -   [発注書の承認および確認](purchase-order-approval-confirmation.md)
--   [発注書の作成](http://ax.help.dynamics.com/en/wiki/create-a-purchase-order/)
--   [リピート発注書の作成](http://ax.help.dynamics.com/en/wiki/create-a-repeat-purchase-order/)
--   [販売注文からの発注書の作成](http://ax.help.dynamics.com/en/wiki/create-a-purchase-order-from-a-sales-order/)
--   [一時仕入先に対する発注書の作成](http://ax.help.dynamics.com/en/wiki/create-a-purchase-order-for-a-one-time-supplier/)
--   [配送スケジュールと発注書の作成](http://ax.help.dynamics.com/en/wiki/create-a-purchase-order-with-a-delivery-schedule/)
--   [購買返品注文の作成](http://ax.help.dynamics.com/en/wiki/create-a-purchase-return-order/)
--   [購買契約書からの購買リリース注文の作成](http://ax.help.dynamics.com/en/wiki/create-a-purchase-release-order-from-a-purchase-agreement/)
--   [発注書の作成時に購買リリース注文を作成](http://ax.help.dynamics.com/en/wiki/create-a-purchase-release-order-when-creating-the-purchase-order/)
--   [ 委託販売補充注文の作成](http://ax.help.dynamics.com/en/wiki/create-a-consignment-replenishment-order/)
+-   [発注書の作成](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-purchase-order)
+-   [リピート発注書の作成](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-repeat-purchase-order)
+-   [販売注文からの発注書の作成](/dynamics365/unified-operations/supply-chain/sales-marketing/tasks/create-purchase-order-sales-order)
+-   [一時仕入先に対する発注書の作成](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-purchase-order-one-time-supplier)
+-   [配送スケジュールと発注書の作成](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-purchase-order-delivery-schedule)
+-   [購買返品注文の作成](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-purchase-return-order)
+-   [購買契約書からの購買リリース注文の作成](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-purchase-release-order-purchase-agreement)
+-   [発注書の作成時に購買リリース注文を作成](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-purchase-release-order-creating-purchase-order)
+-   [ 委託販売補充注文の作成](/dynamics365/unified-operations/supply-chain/inventory/tasks/create-consignment-replenishment-order)
 
 ## <a name="prices-and-discounts"></a>価格と割引
 -   [購買契約](purchase-agreements.md)
--   [購買契約の作成](http://ax.help.dynamics.com/en/wiki/create-a-purchase-agreement/)
+-   [購買契約の作成](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-purchase-agreement)
 -   [仕入リベート](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/Vendor_rebates) (ホワイト ペーパー)
 
 ## <a name="product-receipt-and-invoicing"></a>製品受領書と請求書
@@ -98,11 +98,11 @@ ms.lasthandoff: 06/13/2017
 ## <a name="procurement-and-sourcing-workflows"></a>調達ワークフロー
 -   [調達の概要](procurement-sourcing-overview.md)
 -   [調達ワークフロー](procurement-sourcing-workflows.md)
--   [発注書に記載されている商品の受取の記録](http://ax.help.dynamics.com/en/wiki/record-receipt-of-goods-on-a-purchase-order/)
+-   [発注書に記載されている商品の受取の記録](/dynamics365/unified-operations/supply-chain/procurement/tasks/record-receipt-goods-purchase-order)
 -   [購買要求ワークフロー](purchase-requisitions-workflow.md)
 -   [購買要求のビジネス プロセスのワークフローの定義](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions) (ホワイト ペーパー)
 -   [購入ポリシー](purchase-policies.md)
--   [購入ポリシーの作成](http://ax.help.dynamics.com/en/wiki/create-purchasing-policies/)
+-   [購入ポリシーの作成](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-purchasing-policies)
 
 
 

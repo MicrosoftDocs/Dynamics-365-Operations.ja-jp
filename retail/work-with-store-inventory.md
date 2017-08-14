@@ -3,26 +3,26 @@ title: "店舗在庫の管理"
 description: "この記事では、在庫の管理に使用できるドキュメントのタイプについて説明します。"
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.reviewer: josaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 21391
 ms.assetid: bfef3717-d0e0-491d-8466-d8a9c995177d
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: rubendel
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0, Retail Version
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
-ms.openlocfilehash: 1a5f2cd60e09b67cee4bab211bba4e07e9ef181f
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 42091a5ec94bae3015fd9afca3ddcf1ef24f6eb4
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -45,7 +45,7 @@ ms.lasthandoff: 06/20/2017
 在庫棚卸は、計画済または計画外のいずれかです。 計画済の在庫棚卸は、棚卸を行う必要がある品目を指定する本社で開始されます。 本社で店舗に送信可能な棚卸ドキュメントが作成され、実際の手持在庫数量が店舗で MPOS またはクラウド POS に入力されます。 手動在庫棚卸は店舗で開始され、MPOS またはクラウド POS で実際の手持在庫数量が更新されます。 計画済在庫棚卸とは異なり、計画外在庫棚卸に品目の定義済リストはありません。 いずれかのタイプの在庫棚卸が完了すると、その在庫棚卸が確定され、本社に送信されます。 本社でその在庫棚卸が検証され、転記されます。
 
 ## <a name="inventory-lookup"></a>在庫検索
-複数の店舗および倉庫の現在の手持在庫製品の数量は、在庫検索ページで表示できます。 手持在庫の現在の数量に加えて、将来の納期回答可能在庫 (ATP) 数量は、各店舗ごとに表示できます。 そのためには、表示したい ATP の店舗を選択し、[**店舗の使用可能性を表示**] をクリックします。
+複数の店舗および倉庫の現在の手持在庫製品の数量は、在庫検索ページで表示できます。 手持在庫の現在の数量に加えて、将来の納期回答可能在庫 (ATP) 数量は、各店舗ごとに表示できます。 これを行うには、表示したい ATP の店舗を選択して、次に [**店舗の使用可能性を表示**] をクリックします。
 
 
 

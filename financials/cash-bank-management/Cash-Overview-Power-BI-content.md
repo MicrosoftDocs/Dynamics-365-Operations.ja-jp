@@ -3,21 +3,23 @@ title: "キャッシュの概要 Power BI コンテンツ"
 description: "このトピックでは、キャッシュの概要 Microsoft Power BI コンテンツについて説明します。 コンテンツに含まれているレポートにアクセスする方法を説明し、コンテンツを作成するために使用したデータ モデルおよびエンティティについての情報を提供します。"
 author: saraschi2
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 06/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: sericks
+ms.search.scope: Operations, UnifiedOperations
 ms.search.region: Global
 ms.author: saraschi
-ms.search.validFrom: 2017-06-30
+ms.search.validFrom: 2017-06-30T00:00:00.000Z
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
-ms.openlocfilehash: e969c2033463d565ce782c7dc8cfc4b458349289
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 367fe61492648ee3ee629a8121e664dfaa0c6c99
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -35,10 +37,14 @@ ms.lasthandoff: 06/20/2017
 
 Dynamics 365 for Finance and Operations, Enterprise Edition 2017 年 7 月の更新プログラムを使用している場合、**キャッシュの概要** Power BI content コンテンツからのレポートは**キャッシュの概要**および**銀行管理**ワークスペースで表示されます。
 
+データでキャッシュ フロー予測レポートを表示するには、まず、現金および銀行管理領域から**キャッシュ フロー予測の計算** 機能を使用して、予測計算プロセスを実行する必要があります。  これは、予測に含める会社ごとに完了する必要があります。  [**エンティティ格納**] ページで [LedgerCovLiquidityMeasurement] 集計の測定を更新する必要があります。  
+
+説明するには、[**データの生成**] ページをデモ データ モジュールから使用し、キャッシュ フロー予測デモ データを追加できます。  このスクリプトは、キャッシュ フロー予測テーブルにデータを挿入して、レポートに必要な情報をすばやく入力します。  このモジュールは、デモ データ スイート モデルが環境に展開されている場合にのみ使用できます。 
+
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Power BI コンテンツに含まれるレポート
 次の表は、**キャッシュの概要** Power BI コンテンツの各レポート ページに表示されるメトリックスの詳細について説明しています。
 
-| レポート                                 | コンテンツ |
+| レポート                                | コンテンツ |
 |---------------------------------------|----------|
 | 現金の概要 – すべての会社         | <ul><li>システム通貨の現金収支</li><li>予測される通貨残高</li><li>システム通貨での銀行預金残高の合計</li><li>法人ごとの残高</li><li>銀行口座通貨での、現在の実績対予測残高</li></ul> |
 | 現金の概要 – 現在の会社       | <ul><li>会計通貨の現金収支</li><li>予測される通貨残高</li><li>会計通貨での銀行預金残高の合計</li><li>銀行口座通貨での、現在の実績対予測残高</li></ul> |

@@ -18,11 +18,11 @@ ms.search.region: Global
 ms.author: maertenm
 ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
-ms.openlocfilehash: 0cebd30a560ff033efab89c2055827b62cf31576
+ms.translationtype: HT
+ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
+ms.openlocfilehash: 9bc4dba3c31e82da2285ef5e339ace634fbd6fde
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -39,7 +39,7 @@ ms.lasthandoff: 06/20/2017
 電子署名は、コンピューティング プロセスの開始者または承認者を確認するための ID です。 一部の業界では、電子署名は手書きの署名と同じだけの法的拘束力があります。 製薬、飲食料品、航空防衛などの規制対象業界では、規制準拠要件として電子署名が義務付けられています。 また、米国の食品医薬品局 (FDA) の規制である CFR 第 21 章第 11 部に準拠するためにも必要です。 **注記:** 電子署名自体は、デジタル署名と同一ではありません。 電子署名は単純に手書きの署名の代わりであり、一方、デジタル署名には追加のセキュリティ対策が用意されています。 デジタル署名は、他のユーザーまたはプロセスによってデータが改ざんされていないことを確認するのに役立ちます。 また、デジタル署名は検証することができ、データに署名するために使用された証明書の所有者が、この検証に異議を唱えることはできません。 以下に説明するように、Microsoft Dynamics 365 for Finance and Operations の電子署名には組み込みのデジタル署名機能があります。
 
 ## <a name="electronic-signatures-in-dynamics-365-for-finance-and-operations"></a>Dynamics 365 for Finance and Operations の電子署名
-Finance and Operations では、重要なビジネス プロセスに電子署名を使用できます。 組み込みの電子署名機能を持つプロセスもあります。 任意のデータベース テーブルおよびフィールド用にカスタム署名要求を作成することもできます。 電子署名には組み込みのデジタル署名機能があります。 ドキュメントに署名する各ユーザーは、有効な暗号証明書を取得する必要があります。 ドキュメントに署名するときに、その証明書に関連付けられたプライベート キーが検証されます。 Finance and Operations は、監査証跡を提供するために電子署名の情報をログに記録します。 電子署名を設定するには、「[電子署名の設定 (タスク ガイド)](http://ax.help.dynamics.com/en/wiki/set-up-electronic-signatures/)」を参照してください。
+Finance and Operations では、重要なビジネス プロセスに電子署名を使用できます。 組み込みの電子署名機能を持つプロセスもあります。 任意のデータベース テーブルおよびフィールド用にカスタム署名要求を作成することもできます。 電子署名には組み込みのデジタル署名機能があります。 ドキュメントに署名する各ユーザーは、有効な暗号証明書を取得する必要があります。 ドキュメントに署名するときに、その証明書に関連付けられたプライベート キーが検証されます。 Finance and Operations は、監査証跡を提供するために電子署名の情報をログに記録します。 電子署名を設定するには、「[電子署名の設定 (タスク ガイド)](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-up-electronic-signatures)」を参照してください。
 
 ## <a name="users-who-require-access-to-electronic-signatures"></a>電子署名へのアクセスを必要とするユーザー
 通常、3 種類のユーザーが、電子署名に対するセキュリティ アクセス権を必要としています。こららのユーザーとは、電子署名の管理者、署名者、電子署名の監査担当者です。

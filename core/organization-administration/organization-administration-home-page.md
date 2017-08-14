@@ -17,11 +17,11 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 889a9ce79d4599a60a4503d7876276a1452a5465
+ms.translationtype: HT
+ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
+ms.openlocfilehash: 84243a91d8b76873cd33651bbdff900b14d9c76e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -36,8 +36,8 @@ ms.lasthandoff: 06/13/2017
 ----------------
 
 -   [番号順序の概要](number-sequence-overview.md)
--   [ウィザードを使用した番号順序の設定](http://ax.help.dynamics.com/en/wiki/set-up-number-sequences-by-using-a-wizard/) (タスク ガイド)
--   [番号順序を個別に設定する](http://ax.help.dynamics.com/en/wiki/set-up-number-sequences-on-an-individual-basis/) (タスク ガイド)
+-   [ウィザードを使用した番号順序の設定](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-up-number-sequences-wizard) (タスク ガイド)
+-   [番号順序を個別に設定する](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-up-number-sequences-individual-basis) (タスク ガイド)
 
 ## <a name="address-books"></a>アドレス帳
 -   [アドレス帳](qa-address-books.md)
@@ -67,17 +67,17 @@ ms.lasthandoff: 06/13/2017
 
 ## <a name="electronic-signatures"></a>電子署名
 -   [電子署名の概要](electronic-signature-overview.md)
--   [電子署名の設定](http://ax.help.dynamics.com/en/wiki/set-up-electronic-signatures/) (タスク ガイド)
+-   [電子署名の設定](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-up-electronic-signatures) (タスク ガイド)
 
 ## <a name="organizations"></a>組織
 -   [組織と組織階層](organizations-organizational-hierarchies.md)
 -   [組織階層の計画](plan-organizational-hierarchy.md)
--   [作業単位の作成](http://ax.help.dynamics.com/en/wiki/create-an-operating-unit/) (タスク ガイド)
--   [組織階層の作成](http://ax.help.dynamics.com/en/wiki/create-an-organization-hierarchy/) (タスク ガイド)
--   [法人の作成](http://ax.help.dynamics.com/en/wiki/create-a-legal-entity/) (タスク ガイド)
+-   [作業単位の作成](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/create-operating-unit) (タスク ガイド)
+-   [組織階層の作成](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/create-organization-hierarchy) (タスク ガイド)
+-   [法人の作成](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/create-legal-entity) (タスク ガイド)
 
 ## <a name="general-administration"></a>一般管理
--   [バナーまたはロゴの変更](http://ax.help.dynamics.com/en/wiki/change-the-banner-or-logo/) (タスク ガイド)
+-   [バナーまたはロゴの変更](/dynamics365/unified-operations/fin-and-ops/get-started/tasks/change-banner-or-logo) (タスク ガイド)
 -   [日時データとタイム ゾーンについて](date-time-zones.md)
 -   [レコード テンプレート](record-templates.md)
 

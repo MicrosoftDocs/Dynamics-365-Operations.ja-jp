@@ -1,28 +1,28 @@
 ---
 title: "高度なフィルター処理とクエリ構文"
-description: "この記事では、フィルタ処理とクエリ オプションについて説明します。[フィルタ/並べ替えの編集] ダイアログで、&quot;matches&quot; (一致) 演算子を使うときに利用できます。"
+description: "この記事では、フィルタ処理とクエリ オプションについて説明します。[フィルタ/並べ替えの編集] ダイアログで、\"matches\" (一致) 演算子を使うときに利用できます。"
 author: jasongre
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: SysQueryForm
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: sericks
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 3811
 ms.assetid: b4969b30-2fe1-4a3c-bbea-725dc37c8b60
 ms.search.region: Global
 ms.author: jasongre
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 48b2049c3f5025d7e8d3fc7e944aa9360786d18a
+ms.translationtype: HT
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: 616366009ce7bf7135704e980becc331617cf5af
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -68,7 +68,7 @@ ms.lasthandoff: 05/25/2017
 <td><em>入力開始値</em>..<em>入力終了値</em> (ピリオド 2 つ)</td>
 <td>2 つのピリオドで区切られた 2 つの値の間</td>
 <td>開始値、2 つのピリオド、終了値の順に入力します。</td>
-<td>「<strong>1..10</strong>」と入力すると、1 ～ 10 までのすべての値が検出されます。 ただし、文字列フィールドに「<strong>A..C</strong>」と入力すると、&quot;A&quot; および &quot;B&quot; で始まるすべての値と、値 &quot;C&quot; が検出されます。たとえば &quot;Ca&quot; は検出されません)。 &quot;A*&quot; から &quot;C*&quot; までのすべての値を検出するには、「<strong>A..D</strong>」と入力します。</td>
+<td>「<strong>1..10</strong>」と入力すると、1 ～ 10 までのすべての値が検出されます。 ただし、文字列フィールドに <strong>A..C</strong> と入力すると、&quot;A&quot; および &quot;B&quot; で始まるすべての値と、値  &quot;C&quot; が検出されます。 たとえば、このクエリでは &quot;Ca&quot; が検出されません。 &quot;A*&quot; から &quot;C*&quot; までのすべての値を検出するには、「<strong>A..D</strong>」と入力します。</td>
 </tr>
 <tr class="even">
 <td>..<em>値</em> (2 つのピリオド)</td>
@@ -122,7 +122,7 @@ ms.lasthandoff: 05/25/2017
 <td><em>値</em>,<em>値</em> (コンマ)</td>
 <td>コンマで区切られた入力値と一致</td>
 <td>すべての条件をコンマで区切って入力します。</td>
-<td>「<strong>A, D, F, G</strong>」と入力すると、&quot;A&quot;、&quot;D&quot;、&quot;F&quot;、&quot;G&quot; が検出されます。「<strong>10, 20, 30, 100</strong>」と入力すると、&quot;10, 20, 30, 100&quot;が検出されます。</td>
+<td><strong>A、D、F、G</strong> と入力すると、&quot;A&quot;、&quot;D&quot;、&quot;F&quot; および &quot;G&quot; が検出されます。 <strong>10、20、30、100</strong> と入力すると、&quot;10、20、30、100&quot; が検出されます。</td>
 </tr>
 <tr class="odd">
 <td>(<span class="code">SQL ステートメント</span>) (SQL ステートメントをかっこで囲む)</td>

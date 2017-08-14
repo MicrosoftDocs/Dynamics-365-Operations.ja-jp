@@ -1,7 +1,7 @@
 ---
 title: "パンチアウト eProcurement の外部カタログの設定"
 description: "このトピックでは、外部カタログまたはパンチアウト カタログを使用して仕入先からの見積情報を収集し、要求に追加する方法について説明します。"
-author: BibiSp
+author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,19 +10,19 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchTable, PurchVendorPortalRequests
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: bis
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 30211
 ms.assetid: 3c7e0e1c-703c-4bbf-b90c-84d29a131360
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
-ms.openlocfilehash: 2d853cb963471f81d7a2a09a0f7913722de8a417
+ms.translationtype: HT
+ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
+ms.openlocfilehash: 4c89f6f168825f7767b836be09fa73b8659b00c6
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -40,9 +40,9 @@ ms.lasthandoff: 06/20/2017
 
 ### <a name="to-set-up-an-external-vendor-catalog-complete-the-following-tasks"></a>外部仕入先カタログを設定するには、次の作業を行います。:
 
-1. 調達カテゴリ階層を設定します。 詳細については、[調達カテゴリ階層に対するポリシーの設定](/https://ax.help.dynamics.com/en/wiki/set-up-policies-for-procurement-category-hierarchies/) を参照してください。
-2. 仕入先を Finance and Operations に登録します。 外部仕入先のカタログにアクセスするコンフィギュレーションを設定する前に、まず仕入先と仕入先の連絡先を Microsoft Dynamics 365 で設定する必要があります。 外部カタログの仕入先は、選択した調達カテゴリにも追加する必要があります。 Microsoft Dynamics 365 で仕入先を登録することに関する詳細については、[仕入先コラボレーション ユーザーの管理](/procurement/manage-vendor-collaboration-users.md) を参照してください。 仕入先の調達カテゴリに割り当てる方法については、[特定の調達カテゴリに対する仕入先の承認](/https://ax.help.dynamics.com/en/wiki/approve-vendors-for-specific-procurement-categories/) を参照してください。
-3. ベンダーが使用する測定単位と通貨が設定されていることを確認します。 測定単位を作成する方法の詳細については、[測定単位の作成](/https://ax.help.dynamics.com/en/wiki/manage-unit-of-measure/) を参照してください。
+1. 調達カテゴリ階層を設定します。 詳細については、[調達カテゴリ階層に対するポリシーの設定](/dynamics365/unified-operations/supply-chain/procurement/tasks/set-up-policies-procurement-category-hierarchies) を参照してください。
+2. 仕入先を Finance and Operations に登録します。 外部仕入先のカタログにアクセスするコンフィギュレーションを設定する前に、まず仕入先と仕入先の連絡先を Microsoft Dynamics 365 で設定する必要があります。 外部カタログの仕入先は、選択した調達カテゴリにも追加する必要があります。 Microsoft Dynamics 365 で仕入先を登録することに関する詳細については、[仕入先コラボレーション ユーザーの管理](manage-vendor-collaboration-users.md) を参照してください。 仕入先の調達カテゴリに割り当てる方法については、[特定の調達カテゴリに対する仕入先の承認](/dynamics365/unified-operations/supply-chain/procurement/tasks/approve-vendors-specific-procurement-categories) を参照してください。
+3. ベンダーが使用する測定単位と通貨が設定されていることを確認します。 測定単位を作成する方法の詳細については、[測定単位の管理](/dynamics365/unified-operations/supply-chain/pim/tasks/manage-unit-measure) を参照してください。
 4. 仕入先の外部カタログ サイトの要件に基づいて、外部仕入先カタログをコンフィギュレーションします。 このタスクの詳細については、次のセクションを参照してください。
 5. 仕入先の外部カタログのコンフィギュレーションをテストして、設定が有効であることと、仕入先の外部カタログにアクセスできることを確認します。 [**設定の検証**] アクションを使用して、定義した要求の設定メッセージを検証します。 このメッセージにより、仕入先の外部カタログ サイトがブラウザー ウィンドウで開かれるはずです。 検証中は、仕入先からアイテムやサービスを注文することはできません。 品目およびサービスを注文するには、購買要求を通じて仕入先のカタログにアクセスする必要があります。
 6. 外部のカタログを有効化するには、[**外部カタログ**] ページの [**カタログの有効化**] ボタンを使用します。 外部カタログは、従業員が使用する前にアクティブにする必要があります。 外部カタログはいつでも無効にすることができます。

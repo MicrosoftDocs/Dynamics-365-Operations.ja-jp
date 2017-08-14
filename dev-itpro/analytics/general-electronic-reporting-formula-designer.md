@@ -10,19 +10,19 @@ ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: kfend
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
 ms.author: nselin
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
-ms.openlocfilehash: 655a6fd99c0688b13c31c79f3322a287f902e7f1
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 2c04bbccf22ab830404206cd54b4cb8e97b6a822
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -104,7 +104,7 @@ ER の式は、次のいずれかまたはすべての要素を含めること�
 
 #### <a name="constants"></a>定数
 
-式の設計時にテキストおよび数値定数 (計算されない定数) を使用できます。 たとえば、**VALUE ("100") + 20 **の式では、数値定数 20 および文字列定数 “100” を使用し、**120** という数値を返します。 ER フォーミュラ デザイナーは、エスケープ シーケンスにサポートしており、別の方法で処理する必要がある式の文字列を指定できます。 たとえば、**「レフ トルストイ」「戦争と平和」「ボリューム 1」** の式は、[**レフ トルストイ「戦争と平和」ボリューム 1**] という文字列を返します。
+式の設計時にテキストおよび数値定数 (計算されない定数) を使用できます。 たとえば、**VALUE ("100") + 20**の式では、数値定数 20 および文字列定数 “100” を使用し、**120** という数値を返します。 ER フォーミュラ デザイナーは、エスケープ シーケンスにサポートしており、別の方法で処理する必要がある式の文字列を指定できます。 たとえば、**「レフ トルストイ」「戦争と平和」「ボリューム 1」** の式は、[**レフ トルストイ「戦争と平和」ボリューム 1**] という文字列を返します。
 
 #### <a name="operators"></a>演算子
 
@@ -196,8 +196,8 @@ ER の式は、次のいずれかまたはすべての要素を含めること�
 | SESSIONNOW ()                              | 日時値として現在の Dynamics 365 for Finance and Operations セッションの日時を返します。                                                                                                                                                                                                                                                                         |                                                                                                                                                                                                                                                                                                       |
 | DATEFORMAT (日付, 形式)                  | 指定された形式を使用して日付の文字列形式を返します。                                                                                                                                                                                                                                                                                                    | [**DATEFORMAT (SESSIONTODAY (), "dd-MM-yyyy")**] は、指定されたカスタム形式に従って現在の Dynamics 365 for Finance and Operations セッションの日付 12/24/2015 を [**24-12-2015**] として返します。                                                                                                                      |
 | DATEFORMAT (日付, 形式, カルチャ)         | 指定された形式および[カルチャ](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx)の文字列に指定された日付値を変換します。 (サポートされている形式の詳細については、「[標準](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx)」と「[カスタム](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx)」を参照してください)。     | [**DATETIMEFORMAT (SESSIONNOW (), "d", "de")**] は、選択されたドイツのカルチャに従って現在の Finance and Operations セッションの日付 12/24/2015 を [**“24.12.2015”**] として返します。                                                                                                                       |
-| DAYOFYEAR (日付)              | 1 月 1 日から指定された日までの日数の整数表現を返します。       | [**DAYOFYEAR (DATEVALUE ("01-03-2016", "dd-MM-yyyy"))**] は [**61**] を返します。
-[**DAYOFYEAR (DATEVALUE ("01-01-2016", "dd-MM-yyyy"))**] は [**1**] を返します。                                                                                                                       |
+| DAYOFYEAR (日付)              | 1 月 1 日から指定された日までの日数の整数表現を返します。       | [**DAYOFYEAR (DATEVALUE ("01-03-2016", "dd-MM-yyyy"))**] は [**61**] を返します。 [**DAYOFYEAR (DATEVALUE ("01-01-2016", "dd-MM-yyyy"))**] は [**1**] を返します。 
+                                                                                                                      |
 
 **データ変換機能**
 
@@ -236,7 +236,14 @@ ER の式は、次のいずれかまたはすべての要素を含めること�
 <li>通常のリストとしてのバッチ (<strong>値</strong>コンポーネント)</li>
 <li>現在のバッチ番号 (<strong>BatchNumber</strong>コンポーネント)</li>
 </ul></td>
-<td>次の例では、<strong>行</strong>データ ソースは、最大 2 つのレコードを含むバッチに分割された 3 つのレコードのレコード リストとして作成されます。 <a href="./media/picture-splitlist-datasource.jpg"><img src="./media/picture-splitlist-datasource.jpg" alt="Data source that is divided into batches" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a> 設計された形式レイアウトで、<strong>行</strong>データ ソースへのバインディングが作成され、各バッチおよびレコードの個々のノードを示す XML 形式の出力が生成されることを示します。 <a href="./media/picture-splitlist-format.jpg"><img src="./media/picture-splitlist-format.jpg" alt="Format layout that has bindings to a data source" class="alignnone wp-image-290691 size-full" width="374" height="161" /></a> 以下は、設計された形式を実行した結果です。 <a href="./media/picture-splitlist-result.jpg"><img src="./media/picture-splitlist-result.jpg" alt="Result of running the format" class="alignnone wp-image-290701 size-full" width="358" height="191" /></a></td>
+<td>次の例では、<strong>行</strong>データ ソースは、最大 2 つのレコードを含むバッチに分割された 3 つのレコードのレコード リストとして作成されます。 
+<a href="./media/picture-splitlist-datasource.jpg"><img src="./media/picture-splitlist-datasource.jpg" alt="Data source that is divided into batches" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a> 
+
+バッチに分割されたデータ ソース 設計された形式レイアウトで、<strong>行</strong>データ ソースへのバインディングが作成され、各バッチおよびレコードの個々のノードを示す XML 形式の出力が生成されることを示します。 
+<a href="./media/picture-splitlist-format.jpg"><img src="./media/picture-splitlist-format.jpg" alt="Format layout that has bindings to a data source" class="alignnone wp-image-290691 size-full" width="374" height="161" /></a> 
+
+以下は、設計された形式を実行した結果です。 
+<a href="./media/picture-splitlist-result.jpg"><img src="./media/picture-splitlist-result.jpg" alt="Result of running the format" class="alignnone wp-image-290701 size-full" width="358" height="191" /></a></td>
 </tr>
 <tr class="odd">
 <td>LIST (レコード 1 [, レコード 2, ...])</td>
@@ -300,7 +307,14 @@ ER の式は、次のいずれかまたはすべての要素を含めること�
 <li>通常のリストとして指定されたリスト レコード (<strong>値 </strong>コンポーネント)</li>
 <li>現在のレコード インデックス (<strong>番号 </strong>コンポーネント)</li>
 </ul></td>
-<td>次の例では、<strong>列挙型</strong>データ ソースは、<strong>VendTable</strong> テーブルを参照する<strong>仕入先</strong>データ ソースの仕入先レコードの列挙型リストとして作成されます。 <a href="./media/picture-enumerate-datasource.jpg"><img src="./media/picture-enumerate-datasource.jpg" alt="Enumerated data source" class="alignnone wp-image-290711 size-full" width="387" height="136" /></a>データ バインディングが作成され、列挙型ノードとして個々の仕入先を示す XML 形式の出力が生成されます。 <a href="./media/picture-enumerate-format.jpg"><img src="./media/picture-enumerate-format.jpg" alt="Format that has data bindings" class="alignnone wp-image-290721 size-full" width="414" height="138" /></a> これは、設計された形式を実行した結果です。 <a href="./media/picture-enumerate-result.jpg"><img src="./media/picture-enumerate-result.jpg" alt="Result of running the format" class="alignnone wp-image-290731 size-full" width="567" height="176" /></a></td>
+<td>次の例では、<strong>列挙型</strong>データ ソースは、<strong>VendTable</strong> テーブルを参照する<strong>仕入先</strong>データ ソースの仕入先レコードの列挙型リストとして作成されます。 
+<a href="./media/picture-enumerate-datasource.jpg"><img src="./media/picture-enumerate-datasource.jpg" alt="Enumerated data source" class="alignnone wp-image-290711 size-full" width="387" height="136" /></a> 
+
+データ バインディングが作成され、列挙型ノードとして個々の仕入先を示す XML 形式の出力が生成されます。 
+<a href="./media/picture-enumerate-format.jpg"><img src="./media/picture-enumerate-format.jpg" alt="Format that has data bindings" class="alignnone wp-image-290721 size-full" width="414" height="138" /></a> 
+
+これは、設計された形式を実行した結果です。 
+<a href="./media/picture-enumerate-result.jpg"><img src="./media/picture-enumerate-result.jpg" alt="Result of running the format" class="alignnone wp-image-290731 size-full" width="567" height="176" /></a></td>
 </tr>
 <tr class="odd">
 <td>COUNT (リスト)</td>
@@ -322,13 +336,24 @@ ER の式は、次のいずれかまたはすべての要素を含めること�
 <li>説明</li>
 </ul>
 ラベルおよび説明フィールドは、形式の言語設定に基づいてランタイム値で返します。</td>
-<td>次の例は、データ モデルで導入された列挙を示します。 <a href="./media/ger-listoffields-function-model-enumeration.png"><img src="./media/ger-listoffields-function-model-enumeration-e1474545790761.png" alt="GER LISTOFFIELDS function - model enumeration" class="alignnone wp-image-1203943 size-full" width="514" height="155" /></a>以下に例を示します。
+<td>次の例は、データ モデルで導入された列挙を示します。 
+<a href="./media/ger-listoffields-function-model-enumeration.png"><img src="./media/ger-listoffields-function-model-enumeration-e1474545790761.png" alt="GER LISTOFFIELDS function - model enumeration" class="alignnone wp-image-1203943 size-full" width="514" height="155" /></a>
+
+以下に例を示します。
 <ul>
 <li>データ ソースとしてレポートに挿入されるモデル列挙。</li>
 <li>この関数のパラメーターとしてモデル列挙を使用するように設計されている ER の式。</li>
 <li>作成された ER の式を使用してレポートに挿入されるレコード リスト タイプのデータ ソース。</li>
 </ul>
-<a href="./media/ger-listoffields-function-in-format-expression.png"><img src="./media/ger-listoffields-function-in-format-expression-e1474546110395.png" alt="GER LISTOFFIELDS function - in format expression" class="alignnone wp-image-1204033 size-full" width="549" height="318" /></a> 次の例では、LISTOFFIELDS 関数を使用して作成されたレコード リスト タイプのデータ ソースにバインドされた ER 形式の要素を示します。<a href="./media/ger-listoffields-function-format-design.png"><img src="./media/ger-listoffields-function-format-design.png" alt="GER LISTOFFIELDS function - format design" class="alignnone size-full wp-image-1204043" width="466" height="221" /></a>これは、設計された形式を実行した結果です。<a href="./media/ger-listoffields-function-format-output.png"><img src="./media/ger-listoffields-function-format-output.png" alt="GER LISTOFFIELDS function - format output" class="alignnone size-full wp-image-1204053" width="585" height="158" /></a><strong>注記:</strong> ラベルおよび説明の翻訳済テキストは、親ファイルおよびフォルダーの形式の要素にコンフィギュレーションされた言語の設定に従って ER 形式の出力に設定されます。</td>
+<a href="./media/ger-listoffields-function-in-format-expression.png"><img src="./media/ger-listoffields-function-in-format-expression-e1474546110395.png" alt="GER LISTOFFIELDS function - in format expression" class="alignnone wp-image-1204033 size-full" width="549" height="318" /></a> 
+
+次の例では、LISTOFFIELDS 機能を使用して作成されたレコードのリストの種類のデータ ソースにバインドされている ER 形式要素を示します。
+<a href="./media/ger-listoffields-function-format-design.png"><img src="./media/ger-listoffields-function-format-design.png" alt="GER LISTOFFIELDS function - format design" class="alignnone size-full wp-image-1204043" width="466" height="221" /></a>
+
+これは、設計された形式を実行した結果です。
+<a href="./media/ger-listoffields-function-format-output.png"><img src="./media/ger-listoffields-function-format-output.png" alt="GER LISTOFFIELDS function - format output" class="alignnone size-full wp-image-1204053" width="585" height="158" /></a><strong>
+
+注:</strong> ラベルと説明の翻訳文は、親ファイルおよびフォルダー形式要素に対して設定されている言語設定に従って、ER 形式出力で入力されます。</td>
 </tr>
 <tr class="odd">
 <td>STRINGJOIN (リスト, フィールド名, 区切り記号)</td>
@@ -338,7 +363,18 @@ ER の式は、次のいずれかまたはすべての要素を含めること�
 <tr class="even">
 <td>SPLITLISTBYLIMIT (リスト, 制限値, 制限のソース)</td>
 <td>指定されたリストをサブリストの新しいリストに分割し、レコード リストの内容の結果を返します。 制限値のパラメーターは、元のリストを分割する制限値を指定します。 制限のソースのパラメーターは、合計が増加するステップを指定します。 制限は、制限のソースが定義済み制限を超えると特定のリストの 1 つの項目に適用されません。</td>
-<td>次の例では、データ ソースを使用してサンプル形式を示します。 <a href="./media/ger-splitlistbylimit-format.png"><img src="./media/ger-splitlistbylimit-format.png" alt="GER SPLITLISTBYLIMIT - format" class="alignnone size-full wp-image-1204063" width="396" height="195" /></a><a href="./media/ger-splitlistbylimit-datasources.png"><img src="./media/ger-splitlistbylimit-datasources.png" alt="GER SPLITLISTBYLIMIT - datasources" class="alignnone size-full wp-image-1204073" width="320" height="208" /></a>これは、商品のフラット リストを示す形式実行の結果です。<a href="./media/ger-splitlistbylimit-output.png"><img src="./media/ger-splitlistbylimit-output.png" alt="GER SPLITLISTBYLIMIT - output" class="alignnone size-full wp-image-1204083" width="462" height="204" /></a>次の例では、1 つのバッチに 9 の制限を超えてはならない総重量の商品を含める必要がある場合、商品のリストをバッチで表すように調整された同じ形式を示します。<a href="./media/ger-splitlistbylimit-format-1.png"><img src="./media/ger-splitlistbylimit-format-1.png" alt="GER SPLITLISTBYLIMIT - format 1" class="alignnone size-full wp-image-1204103" width="466" height="438" /></a><a href="./media/ger-splitlistbylimit-datasources-1.png"><img src="./media/ger-splitlistbylimit-datasources-1.png" alt="GER SPLITLISTBYLIMIT - datasources 1" class="alignnone size-full wp-image-1204093" width="645" height="507" /></a>これは、調整済み形式実行の結果です。 <a href="./media/ger-splitlistbylimit-output-1.png"><img src="./media/ger-splitlistbylimit-output-1.png" alt="GER SPLITLISTBYLIMIT - output 1" class="alignnone size-full wp-image-1204113" width="676" height="611" /></a><strong>注記:</strong> 制限は、制限のソース (重量) の値 (11) が定義済みの制限 (9) を超えるため、元のリストの最後の項目に適用されません。 関数 <strong>WHERE</strong> または対応する形式の要素で<strong>有効</strong>な式を使用して、レポート生成時 (必要な場合) サブリストを無視 (スキップ) できます。</td>
+<td>次の例では、データ ソースを使用してサンプル形式を示します。 
+<a href="./media/ger-splitlistbylimit-format.png"><img src="./media/ger-splitlistbylimit-format.png" alt="GER SPLITLISTBYLIMIT - format" class="alignnone size-full wp-image-1204063" width="396" height="195" /></a><a href="./media/ger-splitlistbylimit-datasources.png"><img src="./media/ger-splitlistbylimit-datasources.png" alt="GER SPLITLISTBYLIMIT - datasources" class="alignnone size-full wp-image-1204073" width="320" height="208" /></a>
+
+これは、商品のフラット リストを示す形式実行の結果です
+<a href="./media/ger-splitlistbylimit-output.png"><img src="./media/ger-splitlistbylimit-output.png" alt="GER SPLITLISTBYLIMIT - output" class="alignnone size-full wp-image-1204083" width="462" height="204" /></a>
+
+次の例は、1 つのバッチに合計重量が 9 を超えない商品を含める必要がある場合、商品アイテムのリストをバッチに表示するために調整されたフォーマットと同じフォーマットを示しています。
+<a href="./media/ger-splitlistbylimit-format-1.png"><img src="./media/ger-splitlistbylimit-format-1.png" alt="GER SPLITLISTBYLIMIT - format 1" class="alignnone size-full wp-image-1204103" width="466" height="438" /></a><a href="./media/ger-splitlistbylimit-datasources-1.png"><img src="./media/ger-splitlistbylimit-datasources-1.png" alt="GER SPLITLISTBYLIMIT - datasources 1" class="alignnone size-full wp-image-1204093" width="645" height="507" /></a>
+
+これは、調整された形式を実行した結果です。 <a href="./media/ger-splitlistbylimit-output-1.png"><img src="./media/ger-splitlistbylimit-output-1.png" alt="GER SPLITLISTBYLIMIT - output 1" class="alignnone size-full wp-image-1204113" width="676" height="611" /></a>
+
+<strong>注記:</strong> 制限は、制限のソース (重量) の値 (11) が定義済みの制限 (9) を超えるため、元のリストの最後の項目に適用されません。 関数 <strong>WHERE</strong> または対応する形式の要素で<strong>有効</strong>な式を使用して、レポート生成時 (必要な場合) サブリストを無視 (スキップ) できます。</td>
 </tr>
 <tr class="odd">
 <td>FILTER (リスト, 条件)</td>
@@ -511,7 +547,10 @@ ER の式は、次のいずれかまたはすべての要素を含めること�
 <tr class="even">
 <td>FORMAT (文字列 1, 文字列 2[, 文字列 3, ...])</td>
 <td>すべての <strong>%N</strong> を <em>n</em> 番目の引数に置き換えて書式設定し、指定された文字列を返します。 引数は文字列です。 パラメーターに引数が指定されない場合は、文字列内では <strong>&quot;%N&quot;</strong> として返されます。 <strong>実数</strong>型の値では、文字列変換が小数点第 2 位に制限されます。</td>
-<td>この例では、<strong>PaymentModel</strong> データ ソースは <strong>顧客</strong>コンポーネント経由で顧客のリスト、[<strong>ProcessingDate</strong>] フィールド経由で処理日の値を返します。 <a href="./media/picture-format-datasource.jpg"><img src="./media/picture-format-datasource.jpg" alt="PaymentModel data source" class="alignnone wp-image-290751 size-full" width="293" height="143" /></a> 選択した顧客の電子ファイルを生成するよう設計されている ER 形式では、<strong>PaymentModel</strong> がデータ ソースとして選択され、プロセス フローを制御します。 選択した顧客がレポートが処理される日付に停止されている場合、例外がエンド ユーザーにスローされます。 このタイプの処理制御のために設計された式は、次のリソースを使用できます。
+<td>この例では、<strong>PaymentModel</strong> データ ソースは <strong>顧客</strong>コンポーネント経由で顧客のリスト、[<strong>ProcessingDate</strong>] フィールド経由で処理日の値を返します。 
+<a href="./media/picture-format-datasource.jpg"><img src="./media/picture-format-datasource.jpg" alt="PaymentModel data source" class="alignnone wp-image-290751 size-full" width="293" height="143" /></a> 
+
+選択した顧客の電子ファイルを生成するよう設計されている ER 形式では、<strong>PaymentModel</strong> がデータ ソースとして選択され、プロセス フローを制御します。 選択した顧客がレポートが処理される日付に停止されている場合、例外がエンド ユーザーにスローされます。 このタイプの処理制御のために設計された式は、次のリソースを使用できます。
 <ul>
 <li>次のテキストを含む Finance and Operations ラベル SYS70894:
 <ul>
@@ -526,8 +565,8 @@ ER の式は、次のいずれかまたはすべての要素を含めること�
 </ul>
 設計できる式を次に示します。FORMAT (CONCATENATE (@&quot;SYS70894&quot;, &quot;. &quot;, @&quot;SYS18389&quot;), model.Customer.Name, DATETIMEFORMAT (model.ProcessingDate, &quot;d&quot;)) レポートが 2015 年 12 月 17 日に <strong>EN-US</strong> カルチャおよび <strong>EN-US</strong> 言語で <strong>Litware Retail の顧客</strong>に対して処理される場合、この式はエンド ユーザーへの例外メッセージとして示すことができる次のテキストを返します。&quot;Nothing to print. 顧客の Litware Retail は 2015 年 12 月 17 日に停止されます。&quot; 同じレポートが 2015 年 12 月 17 日に [<strong>DE</strong>] カルチャおよび [<strong>DE</strong>] 言語で [<strong> Litware Retail の顧客</strong>] に対して処理される場合、この式は別の日付形式を使用する次のテキストを返します。&quot;Nichts zu drucken. Debitor ' Litware Retail' wird für 17.12.2015 gesperrt.&quot;<strong>注記:</strong> 次の構文は ER の式でラベルに適用されます。
 <ul>
-<li>[<strong>Finance and Operations リソースのラベルの場合:</strong>]  <strong>@&quot;X&quot;</strong> はアプリケーション オブジェクト ツリー (AOT) のラベル ID です</li>
-<li><strong>ER コンフィギュレーションに存在するラベルの場合:</strong> <strong>@&quot;GER_LABEL:X&quot;</strong>、X は、ER コンフィギュレーションのラベル ID です</li>
+<li><strong>Finance and Operations リソースのラベルの場合: </strong><strong>@&quot;X&quot;</strong>、X はアプリケーション オブジェクト ツリー (AOT) のラベル ID です</li>
+<li><strong>ER コンフィギュレーションに存在するラベルの場合: </strong><strong>@&quot;GER_LABEL:X&quot;</strong>、X は、ER コンフィギュレーションのラベル ID です</li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -549,7 +588,8 @@ ER の式は、次のいずれかまたはすべての要素を含めること�
 <td>TRIM (文字列)</td>
 <td>先頭と末尾のスペースを切り捨て、単語間の複数のスペースを削除してから、指定されたテキストを返します。 </td>
 <td>[<strong>TRIM (「     サンプル     テキスト     」)</strong>] は [<strong>「サンプル テキスト」。</strong>] を返します</td>
-=======
+</tr>
+<tr class="odd">
 <td>GETENUMVALUEBYNAME (列挙データ ソースのパス、列挙値のラベル テキスト)</td>
 <td>この列挙ラベルの指定されたテキストで、指定された列挙データ ソースの値を返します。</td>
 <td>次の例は、データ モデルで導入された列挙 ReportDirection を示します。 列挙値のラベルが定義されていることに注意してください。

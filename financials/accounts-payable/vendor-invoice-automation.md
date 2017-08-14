@@ -12,13 +12,13 @@ audience: Application User
 ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: sunilg
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
-ms.openlocfilehash: 5bfde00f88a12711c2519aaea19dd7a48196a828
+ms.translationtype: HT
+ms.sourcegitcommit: 172d952c79347e7dd563cfda70729750fa0ddde9
+ms.openlocfilehash: c47ca406e2c8be98f26f1c78d6f5e0a3f66690a5
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 07/27/2017
 
 ---
 # <a name="vendor-invoice-automation"></a>仕入先請求書の自動化
@@ -57,7 +57,7 @@ ms.lasthandoff: 06/20/2017
 
 仕入先請求書ドキュメントの添付ファイルは、この機能の一部として導入される新しいデータ エンティティです。 添付ファイルをサポートできるように、仕入先請求書ヘッダーのエンティティが変更されました。 この機能に関して、仕入先請求書の明細行のエンティティは変更されていません。
 
-このトピックでは、データ パッケージの詳細な定義は説明されません。 データ パッケージを作成する方法も説明しません。 この情報に関しては「[データ エンティティとパッケージのフレームワーク](/dynamics365/en-us/unified-operations/dev-itpro/data-entities/data-entities-data-packages)」を参照してください。
+このトピックでは、データ パッケージの詳細な定義は説明されません。 データ パッケージを作成する方法も説明しません。 この情報に関しては「[データ エンティティとパッケージのフレームワーク](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages)」を参照してください。
 
 請求書および添付ファイルを含むテスト データを簡単に生成するには、以下の手順を実行します。
 

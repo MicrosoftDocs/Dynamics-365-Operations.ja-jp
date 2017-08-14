@@ -10,20 +10,20 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CAMCostControlWorkspace, CAMCostControlWorkspaceConfiguration
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 223114
 ms.assetid: 1c798592-77d0-4a8f-beaa-9159c75957da
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: yuyus
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 35b8e510e7e2c13aebb73f46d20b16275d097432
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 1f12e8e82430c79ee93f2284e5fdf47ac559525d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -121,11 +121,15 @@ ms.lasthandoff: 06/13/2017
 -   税申告
 -   光熱費
 
-**原価配賦**
+[**原価配分**]
 
-原価配賦は、共通の原価の根本理由に基づいて原価の割り当ておよび配賦を行うプロセスです。 1 つの原価オブジェクトから 1 つまたは他の複数の原価オブジェクトへと原価金額と数量を配賦します。 たとえば、すべての融資サービス原価は、一般的な事業所用家屋を使用するさまざまな部門に割り当てられます。
+コスト配分は、関連する配賦基準を適用することによって、1 つのコスト オブジェクトから 1 つまたは複数の他のコスト オブジェクトへコストを再配分するために使用されます。 コスト配分とコスト配賦は、コスト配分は常に元のコストの主要コスト要素レベルで起こるという点が異なります。
 
-**原価配賦ポリシー**
+[**原価配賦**]
+
+配賦は、配賦基準を適用することによって、コスト オブジェクトの残高を他のコスト オブジェクトに配賦するために使用します。 Finance と Operations では、相互配賦手法をサポートします。 相互配賦手法では、補助コスト オブジェクトが交換する相互サービスが完全に認識されます。 システムは、配賦を実行する正しい順序を自動的に決定します。 コスト オブジェクトの残高は 1 つの配賦基準によって配賦されます。 コスト オブジェクト分析コードとその各メンバーにまたがる配賦がサポートされています。 配賦の順序は、コスト制御ユニットによって制御されます。
+
+[**原価配賦ポリシー**]
 
 原価配賦のポリシーは、配賦する必要がある数量と金額を定義します。 配賦ルールには配賦元のルールが含まれます。これは配賦されている原価の決定、および原価が割り当てられるところを決定する配賦先のルールを決定します。 たとえば、融資サービスのすべての原価は、組織 (つまり、配賦ターゲット) のさまざまな部門に割り当てることができる配賦ソースです。
 

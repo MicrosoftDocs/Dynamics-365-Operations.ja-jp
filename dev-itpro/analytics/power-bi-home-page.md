@@ -9,19 +9,19 @@ ms.prod:
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: Operations
+ms.reviewer: sericks
+ms.search.scope: Operations, UnifiedOperations
 ms.custom: 265694
 ms.assetid: 0095a7cf-8cc9-41f6-bf00-b59868fa6ea2
 ms.search.region: Global
 ms.author: sericks
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
-ms.openlocfilehash: 2df0c6dc9b41dde861f5361bfcc1226786e7aa76
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 282973618e56db3feb0103a7021a66d137218a7a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 07/25/2017
 
 ---
 
@@ -35,28 +35,30 @@ ms.lasthandoff: 06/20/2017
 Microsoft Dynamics 365 for Finance and Operations,Enterprise エディション 2017 年 7 月の更新プログラムを使用している場合、以下の Power BI コンテンツを使用できます。
 
 - [給付金 Power BI コンテンツ](benefits-power-bi.md)
-- [キャッシュの概要 Power BI コンテンツ](/dynamics365/operations/financials/cash-bank-management/Cash-Overview-Power-BI-content)
+- [キャッシュの概要 Power BI コンテンツ](/dynamics365/unified-operations/financials/cash-bank-management/Cash-Overview-Power-BI-content)
 - [CFO の概要 Power BI コンテンツ](CFO-power-bi.md)
 - [報酬 Power BI コンテンツ](compensation-power-bi.md)
 - [原価会計分析の Power BI コンテンツ*](cost-accounting-analysis-content-pack.md) 
-- [与信および回収管理 Power BI コンテンツ](/dynamics365/operations/financials/accounts-receivable/credit-collections-power-bi)
+- [与信および回収管理 Power BI コンテンツ](/dynamics365/unified-operations/financials/accounts-receivable/credit-collections-power-bi)
 - [従業員の開発 Power BI コンテンツ](employee-development-PBI.md) 
 - [財務パフォーマンス Power BI コンテンツ*](financial-performance-power-bi-content-pack.md)
-- [固定資産管理 Power BI コンテンツ](/dynamics365/operations/financials/fixed-assets/Fixed-asset-management-workspace)
+- [固定資産管理 Power BI コンテンツ](/dynamics365/unified-operations/financials/fixed-assets/Fixed-asset-management-workspace)
 - [学習 Power BI コンテンツ](learning-power-bi.md)
 - [プラクティス マネージャー Power BI コンテンツ](practice-manager-power-bi.md)
 - [生産パフォーマンス Power BI コンテンツ](production-performance-power-bi.md)
 - [Power BI コンテンツでの購買先支出分析](purchase-content-pack-for-power-bi.md) 
 - [Power BI コンテンツの採用](recruiting-analysis-power-bi-content-pack.md) 
 - [販売および収益性パフォーマンス Power BI コンテンツ](sales-profitability-performance-content-pack.md)
-- [仕入先支払 Power BI コンテンツ](/dynamics365/operations/financials/accounts-payable/Vendor-payments-workspace)
+- [仕入先支払 Power BI コンテンツ](/dynamics365/unified-operations/financials/accounts-payable/Vendor-payments-workspace)
 - [倉庫パフォーマンス Power BI コンテンツ](warehouse-power-bi-content.md)
 - [従業員のメトリック Power BI コンテンツ](workforce-analysis-power-bi-content-pack.md)  
 
 ### <a name="accessing-the-content"></a>コンテンツへのアクセス
 
 #### <a name="embedded-content"></a>埋め込みコンテンツ
-アスタリスク (\*) で表示されているコンテンツを除いて、以前の一覧のすべてのコンテンツがアプリケーションに埋め込まれています。 Power BI コンテンツを表示する場所の詳細については、リンクをクリックします。
+アスタリスク (\*) で表示されているコンテンツを除いて、以前の一覧のすべてのコンテンツがアプリケーションに埋め込まれています。 Power BI コンテンツを表示する場所の詳細については、上のリンクをクリックします。
+
+Power BI レポートでデータを表示するには、エンティティ格納を更新します。 詳細については、[エンティティ格納と Power BI の統合の概要](power-bi-integration-entity-store.md)の [*Update Entity store*] セクションを参照してください。
 
 #### <a name="files-available-in-lifecycle-services"></a>Lifecycle Services で使用可能なファイル
 この Power BI コンテンツは、Microsoft Dynamics Lifecycle Services (LCS) の共有資産ライブラリで使用可能です。 コンテンツのダウンロード方法およびデータに接続する方法の詳細については、「[Microsoft およびパートナーからの LCS での Power BI コンテンツ](power-bi-content-microsoft-partners.md)」を参照してください。 Power BI コンテンツの実装方法を示すデモを視聴するには、「[Microsoft の Power BI コンテンツおよび Dynamics Lifecycle Services のパートナー](https://mix.office.com/watch/9puyb1b2xs1w)」の Office Mix を参照してください。
@@ -66,7 +68,7 @@ Microsoft Dynamics 365 for Operations バージョン 1611 を使用している
 
 - [報酬と給付金 Power BI コンテンツ](compensation-and-benefits-analysis-power-bi-content-pack.md)   
 - [原価会計分析の Power BI コンテンツ](cost-accounting-analysis-content-pack.md) 
-- [与信および回収管理 Power BI コンテンツ](/dynamics365/operations/financials/accounts-receivable/credit-collections-power-bi)
+- [与信および回収管理 Power BI コンテンツ](/dynamics365/unified-operations/financials/accounts-receivable/credit-collections-power-bi)
 - [従業員のコンピテンシーと開発 Power BI コンテンツ](employee-competencies-and-development-analysis-power-bi-content-pack.md) 
 - [財務パフォーマンス Power BI コンテンツ](financial-performance-power-bi-content-pack.md)
 - [組織トレーニング Power BI コンテンツ](organizational-training-analysis-power-bi-content-pack.md) 
