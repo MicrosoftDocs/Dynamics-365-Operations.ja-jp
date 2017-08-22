@@ -1,9 +1,9 @@
 ---
 title: "仕入先支払の計算済割引より大幅な割引を行う"
 description: "この記事は、請求書で最初に使用できた割引を超えた金額の現金割引を行うシナリオについて説明します。 このシナリオは、組織が請求書の減額した金額を支払う契約を仕入先とした場合に発生することがあります。"
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -15,7 +15,7 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 14281
 ms.assetid: 7f0a4197-95dd-4969-ade9-154815cf659e
 ms.search.region: Global
-ms.author: kweekley
+ms.author: Shiva.Pandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
@@ -23,7 +23,6 @@ ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
 ms.openlocfilehash: 08d7c4981aba7e7c092a6f21d3b63635e76437bf
 ms.contentlocale: ja-jp
 ms.lasthandoff: 05/25/2017
-
 
 ---
 
