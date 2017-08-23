@@ -13,17 +13,15 @@ audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 10174
-ms.assetid: f14ac15f-b99b-4853-9648-de31f3cb36cf
 ms.search.region: Japan
 ms.author: RichardLuan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: cba53384e80a7c7459d3df73af6b7cd752f4094e
+ms.translationtype: HT
+ms.sourcegitcommit: cb5ab0e64b2a663af627d4d46e3a74aa526058b8
+ms.openlocfilehash: 39b19bf9af2704f8603f0333c5d76f8f39a3e579
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 07/28/2017
 
 ---
 
@@ -60,6 +58,9 @@ ARO を使用するには、次の設定手順を完了する必要がありま�
 -   ARO の見積償却原価計画を設定し、資産の耐用年数の会計期間ごとに ARO 金額をシミュレーションします
 -   **資本化資産償却責務**と**資産償却債務 - 増加****経費**のドキュメント タイプで使用する転記プロファイルを設定します
 -   **処分する ARO** のトランザクション タイプである固定資産を転記する際に、トランザクション金額の取得元の勘定を設定します
+
+## <a name="set-up-asset-retirement-obligation-documents-and-enter-aro-amount-on-a-fixed-asset"></a>資産除去責務ドキュメントの設定と固定資産の ARO 金額の入力
+[資産除去責務ドキュメントの設定](./tasks/set-up-asset-retirement-obligation.md)を参照してください。
 
 ## <a name="technical-information-for-system-administrators"></a>システム管理者向け技術情報
 このタスクを完了するために使用するページに対するアクセス権限がない場合は、システム管理者に連絡し、次の表に示される情報を提供します。

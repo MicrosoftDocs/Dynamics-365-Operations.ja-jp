@@ -3,7 +3,7 @@ title: "一般仕訳帳の処理"
 description: "この記事は、Microsoft Dynamics 365 for Finance and Operations で、一般仕訳帳の処理を容易にすることができ、正確なデータがキャプチャされ内部コントロールが悪影響を受けていないことを保証する手助けとなる Enterprise エディションの機能について説明します。"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/25/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,12 +18,11 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 244eada4202106b65198e3d6e3d0dedaa5486632
+ms.translationtype: HT
+ms.sourcegitcommit: c4f5dae90c5fcaaa52a7087d7c20b2de343b7da0
+ms.openlocfilehash: 68da281cb4793ed83f70c68d061d327aa8a8c772
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 08/01/2017
 
 ---
 
@@ -82,8 +81,13 @@ ms.lasthandoff: 06/13/2017
 
 勘定構造および詳細ルールの構造は、財務レポートに必要とされるデータおよびパフォーマンスの追跡が、一般仕訳帳の処理とドキュメンテーションの間にキャプチャされるようにするために非常に重要です。 勘定構造および詳細ルール構造により、データ入力経験のカスタマイズが可能になります。 それぞれの状況に該当する財務分析コードにのみデータ入力を許可し、必須および正確なデータが常にキャプチャされるという条件を適用できます。
 
-詳細については、「[計画: 勘定科目表](plan-chart-of-accounts.md)」を参照してください。 
-
+詳細については、次のトピックを参照してください。
+- [計画: 勘定科目表](plan-chart-of-accounts.md)。 
+- [仕訳帳の詳細なルールの作成](tasks/create-advanced-rules-journals.md)
+- [テンプレートを使用した仕訳入力の作成](tasks/create-journal-entry-template.md)
+- [仕訳帳の作成および検証](tasks/create-validate-journals.md)
+- [定期処理仕訳帳の転記](tasks/post-periodic-journals.md)
+- [元帳配賦仕訳帳の処理](tasks/process-ledger-allocation-journal.md)
 
 
 

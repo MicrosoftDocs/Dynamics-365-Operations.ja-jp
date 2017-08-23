@@ -1,9 +1,9 @@
 ---
 title: "売掛金勘定の貸方転記と取立"
 description: "売掛金勘定回収情報は、Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition のコレクションのページを使用して 1 つの中央ビューで管理されます。 貸方および取立マネージャが回収を管理するには、この中央ビューを使用できます。 回収代行業者は、定義済の回収基準または [顧客] ページを使用して生成された、顧客リストから回収プロセスを開始することができます。"
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -15,15 +15,14 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 3061
 ms.assetid: fd851520-8d93-434b-845b-be127d6ac3a6
 ms.search.region: Global
-ms.author: mfalkner
+ms.author: Shiva.Pandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
-ms.openlocfilehash: 49bc7ca4e5fff4c2686a8b7396d5bd2bcdd0c51a
+ms.translationtype: HT
+ms.sourcegitcommit: 1982e495f740d6061b9574aa9f40f38180e8d110
+ms.openlocfilehash: 282084b9d4e63795ec475690e5b22e06c23bb704
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 08/03/2017
 
 ---
 
@@ -90,6 +89,8 @@ ms.lasthandoff: 06/20/2017
 
 これらの調整は、利子計算書とその利息および手数料にのみ影響します。 「一つのステップで、損金処理トランザクションを作成する」のセクションの手順で、顧客が負っている課金の損金処理を行います。
 
+詳細については、「[範囲のある利息コードを作成](tasks/create-interest-code-range.md) および [利息の処理](tasks/process-interest.md)」を参照してください。 
+
 ## <a name="create-writeoff-transactions"></a>損金処理トランザクションの作成
 [回収] フォームで [損金処理] をクリックして貸倒損失を損金処理できます。[エイジングした残高]、[顧客]、[未処理の顧客請求書] のリスト ページでも行うことができます。 
 
@@ -100,7 +101,10 @@ ms.lasthandoff: 06/20/2017
 -   仕訳帳明細行の 3 番目のタイプには、売上税の一般会計の損金処理の情報が含まれます。 この仕訳帳明細行は、[売掛金勘定パラメーター] ページで [売上税を分離する] の切り替えが選択されている場合にのみ作成されます。 マークしたトランザクションに、支払い売上税勘定、分析コード、売上税コードの複数の組み合わせが含まれる場合、組み合わせごとに独立した仕訳明細行が作成されます。
 
 損金処理トランザクションがトランザクション通貨で作成されます。
-預金不足 (NSF) 支払の処理 
+
+詳細については、「[顧客の損金処理仕訳帳の作成](tasks/create-write-off-journal-customer.md)」を参照してください。
+
+<a name="process-not-sufficient-funds-nsf-payments"></a>預金不足 (NSF) 支払の処理 
 --------------------------------------------
 
 [回収] ページで NSF 支払をクリックして、NSF 支払を処理できます。 このボタンをクリックすると、支払をキャンセルします。 NSF 手数料を顧客に適用する場合は、費用トランザクションが支払仕訳帳で作成されます。 手数料の金額は、自動請求の設定に基づきます。 NSF 支払に適用される自動請求は、当該銀行口座の [銀行口座] ページで選択した費用グループで指定します。

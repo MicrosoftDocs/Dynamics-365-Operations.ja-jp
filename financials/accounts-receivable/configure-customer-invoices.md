@@ -1,9 +1,9 @@
 ---
 title: "顧客請求書の作成"
 description: 
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -14,14 +14,14 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 77772
 ms.assetid: 00b4b40c-1576-4098-9aed-ac376fdeb8c5
 ms.search.region: Global
-ms.author: mfalkner
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.author: Shiva.Pandey
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: fd89921a97782c4d09807a730ab077809304159f
+ms.translationtype: HT
+ms.sourcegitcommit: 1982e495f740d6061b9574aa9f40f38180e8d110
+ms.openlocfilehash: 249b1f331d6889d3b9ed2ace2e5db21d7a5d3e46
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/03/2017
 
 ---
 
@@ -30,11 +30,20 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-
-
-**販売注文の顧客請求書**は、売上に関連し、組織が顧客に提供する請求書です。 この種類の顧客請求書は、注文明細行および品目番号を含む販売注文に基づいて作成されます。 品目番号が指定され、元帳に転記されます。 補助元帳仕訳帳は、販売注文の顧客請求書では使用できません。 
+**販売注文の顧客請求書**は、売上に関連し、組織が顧客に提供する請求書です。 この種類の顧客請求書は、注文明細行および品目番号を含む販売注文に基づいて作成されます。 品目番号が指定され、元帳に転記されます。 補助元帳仕訳帳は、販売注文の顧客請求書では使用できません。 詳細については、「[販売注文請求書の作成](tasks/create-sales-order-invoices.md)」を参照してください。
 
 **自由書式の請求書**は販売注文に関連しません。 この請求書には、勘定科目、自由書式の説明、および自分で入力する売上金額を含む注文明細行が含まれています。 この種類の請求書では、品目番号を入力することはできません。 適切な売上税情報を入力する必要があります。 販売の主勘定は、各請求明細行に表示されます。その明細行は、**自由書式の請求書**ページの [**金額の配分**] をクリックすると、複数の勘定科目に配分できます。 また、顧客残高は自由書式の請求書に使用される転記プロファイルの集計勘定に転記されます。
+
+詳細については、「」を参照してください。
+
+[自由書式の請求書の作成](tasks/create-free-text-invoice.md)
+
+[自由書式のテンプレートの作成](tasks/create-free-text-invoice-template.md)
+
+[顧客への自由書式の請求書テンプレートの割り当て](tasks/assign-free-text-invoice-template-customer.md)
+
+[定期的な自由書式の請求書の生成と転記](tasks/post-recurring-free-text-invoices.md)
+
 
 **見積送り状**は、請求書が転記される前に実際の請求金額の見積として準備される請求書です。 販売注文か自由書式の請求書いずれかの顧客請求書用に見積送り状を印刷できます。
 

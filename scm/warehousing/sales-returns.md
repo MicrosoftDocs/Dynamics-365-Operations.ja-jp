@@ -15,13 +15,13 @@ ms.custom: 269384
 ms.assetid: 98a4b517-e606-4036-b55f-1ab248898bdf
 ms.search.region: Global
 ms.author: omulvad
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: b66bf79413ad21f12f789eabafe8413af3f58c9c
+ms.translationtype: HT
+ms.sourcegitcommit: 04f8cb1a6375be9371bca2af7e4044392ce7322b
+ms.openlocfilehash: 0484723217ccff2ebf717d059429d863ececb797
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 08/02/2017
 
 ---
 
@@ -37,7 +37,7 @@ ms.lasthandoff: 06/13/2017
 ## <a name="return-order-process"></a>返品注文のプロセス
 次の図は、返品注文プロセスの概要を表示します。  
 
-[![salesreturns01](./media/salesreturns01.jpg)](./media/salesreturns01.jpg)  
+[![返品注文のプロセス](./media/salesreturns01.jpg)](./media/salesreturns01.jpg)  
 
 返品注文プロセスの 2 つのタイプがあります: 現物返品および貸方のみ。
 
@@ -213,7 +213,7 @@ ms.lasthandoff: 06/13/2017
 
 事前交換では、品目が返品される前に、交換品目を顧客に出荷することができます。 この方法は、たとえば、品目が機械部品で、代わりになる予備部品が利用可能でない限り取り外せない場合、または顧客にすぐにでも交換製品を必要とする場合に役に立ちます。 事前交換注文は、独立した販売注文です。 ヘッダー情報は顧客から初期化され、明細行情報は返品注文から初期化されます。 返品注文の交換注文を個別に編集し、処理し、または削除できます。 交換注文を削除すると、交換注文として注文が作成されたというメッセージが表示されます。 次の図は、事前交換のプロセスを示します。  
 
-[![事前交換プロセス](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn04.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn04.png)  
+![事前交換プロセス](./media/SalesReturn04.png)
 
 返品注文には、交換注文への出典が含まれます。 欠陥品目の返品前に事前交換注文が返品注文に対して作成されている場合は、欠陥品目が返品された後に交換の廃棄コードを選択することはできません。
 
@@ -221,7 +221,7 @@ ms.lasthandoff: 06/13/2017
 
 顧客に交換品目を出荷し、返品注文の **置換と仕損** または **置換と貸方転記** 処分アクションを使用する場合、次の図に表示されるプロセスを使用します。  
 
-[![廃棄コード使用時の交換プロセス](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn05.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn05.png)  
+![廃棄コード使用時の交換プロセス](./media/SalesReturn05.png)
 
 交換品目は、独立した販売注文、交換販売注文を使用して配送されます。 この販売注文は、返品注文の梱包明細が生成されると作成されます。 注文ヘッダーは、返品注文ヘッダーで参照される顧客からの情報を使用します。 明細行情報は **交換品目** ページで入力された情報から収集されます。 「交換」の語で始まる処分アクションのある明細行に対して **交換品目** ページが入力されている必要があります。 ただし、交換品目の数量または ID は検証されておらず、または限定されていません。 この動作は、顧客が異なるコンフィギュレーションまたはサイズの同じ品目が欲しい、および顧客が全く別の品目が欲しい場合に可能になります。 既定では、同一品目は **交換品目** ページで入力されます。 ただし、機能が設定されて提供された異なる品目を選択できます。 **メモ:** 作成した後、交換販売注文を編集、または削除できます。
 
@@ -254,7 +254,7 @@ ms.lasthandoff: 06/13/2017
 
 次の図は 2 つの会社が会社間関係に関与し、会社間取引を活用するのに必要な最小限の設定です。  
 
-[![最小限の設定](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn06.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn06.png)  
+![最小限の設定](./media/SalesReturn06.png)
 
 次のシナリオでは、CompBuy は仕入元会社で、CompSell は販売会社です。 通常、販売会社が仕入元会社に、または直納の出荷シナリオでは、直接最終顧客に商品を出荷します。 CompBuy で、仕入先 IC\_CompSell は、会社 CompSell に関連付けられる会社間エンドポイントとして定義されます。 同時に CompBuy で、顧客 IC\_CompSell は、会社 CompBuy に関連付けられる会社間エンドポイントとして定義されます。 適切なアクション ポリシーの詳細および値のマッピングは、両方の会社で定義される必要があります。 直納の出荷シナリオでは、会社間販売注文でもある会社間返品注文は販売会社で作成されます。 会社間返品注文の RMA 番号は、CompSell の RMA 整理番号から選択できます。または CompBuy の元の返品注文に割り当てられた RMA 番号からコピーすることができます。 CompBuy の **PurchaseRequisition** アクション ポリシーの RMA 番号設定がこれらのアクションを決定します。 RMA 番号が同期しているなら、2 つの会社が同じ整理番号を使用する場合の数の衝突リスクを軽減するよう計画する必要があります。
 
@@ -262,7 +262,7 @@ ms.lasthandoff: 06/13/2017
 
 次の図に示すように、このシナリオには、同じ組織内の 2 つの会社が含まれます。  
 
-[![簡易な会社間返品](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn07.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn07.png)  
+![簡易な会社間返品](./media/SalesReturn07.png)
 
 注文チェーンは、仕入先の返品注文が仕入元会社で作成されるか、または顧客の返品注文が販売会社で作成されるときに確立されます。 Finance and Operations は、ほかの会社で対応する注文を作成し、仕入先の返品注文のヘッダーおよび明細行情報が顧客の返品注文の設定を反映するようにします。 設定された返品注文は、既存の顧客請求書への参照 (**販売注文の検索**) を含める、または除外することができます。 2 つの注文の梱包明細と請求は、個別に処理されます。 たとえば、顧客の返品注文の梱包明細を生成する前に、仕入先の返品注文の梱包明細を生成する必要はありません。
 
@@ -270,7 +270,7 @@ ms.lasthandoff: 06/13/2017
 
 このシナリオは、**直納** タイプの前回の販売が完了した場合、および顧客と連携する会社で顧客に対する請求が存在する場合に確立されます。 次の図では、会社 CompBuy は顧客 Extern に対して、過去に販売し請求した製品があります。 製品は、会社間注文チェーンを介して会社 CompSell から顧客に直接出荷されました。  
 
-[![3 つの関係者間の直納の出荷返品](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn08.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn08.png)  
+![3 つの関係者間の直納の出荷返品](./media/SalesReturn08.png)
 
 顧客 Extern が製品を返品する場合は、返品注文 (RMA02) が、会社 CompBuy で顧客に対して作成されます。 会社間グループを確立するには、返品注文が直納用にマークされる必要があります。 **販売注文の検索** 機能を使用して顧客請求書を返品するよう選択する場合、次のドキュメントで構成される会社間注文チェーンが確立されます。
 
@@ -292,7 +292,7 @@ ms.lasthandoff: 06/13/2017
 
 返品注文は顧客請求書を参照しません。 返品品目が貸方に転記されます。 返品注文請求書または貸方票が生成されるとき、**貸方訂正** パラメータは選択されません。  
 
-[![返品注文は顧客請求書を参照しません](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn09.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn09.png)  
+![返品注文は顧客請求書を参照しません。](./media/SalesReturn09.png)  
 
 **注記:** 品目マスタの価格が **返品原価価格** パラメータの既定値として使用されます。 既定の価格は、在庫払出時に原価価格と異なります。 したがって、3 つの損失が発生するという影響が生じます。 さらに、返品注文には、販売注文で顧客に適用された割引は含まれません。 したがって、過大な貸方が発生します。
 
@@ -300,7 +300,7 @@ ms.lasthandoff: 06/13/2017
 
 例 2 は例 1 と同じですが、返品注文請求書が生成されると **貸方訂正** パラメータが選択されます。  
 
-[![貸方訂正が選択されている返品注文 ](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn10.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn10.png)  
+![貸方訂正が選択されている返品注文 ](./media/SalesReturn10.png)  
 
 **注記:** 元帳転記がマイナス修正として入力されます。
 
@@ -308,7 +308,7 @@ ms.lasthandoff: 06/13/2017
 
 この例では、返品注文明細行は **販売注文の検索** 機能を使用して作成されます。 **貸方訂正** パラメータは、請求書の作成時に選択されません。  
 
-[![販売注文の検索を使用して作成される返品注文明細行 ](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn11.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn11.png)  
+![販売注文の検索を使用して作成される返品注文明細行 ](./media/SalesReturn11.png)  
 
 **注記:** **割引** および **返品原価価格** が正確に設定されます。 したがって、顧客請求書の的確な取消が発生します。
 

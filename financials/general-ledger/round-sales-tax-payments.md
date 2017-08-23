@@ -3,7 +3,7 @@ title: "売上税の支払と丸めのルール"
 description: "この記事は、売上税所轄官庁の丸めに関するルールの設定の機能と、売上税の決済と転記のジョブ中に売上税残高を丸める方法を説明します。"
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,12 +18,11 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 7ec117598a6a008e5b274179659b515824029874
+ms.translationtype: HT
+ms.sourcegitcommit: c4f5dae90c5fcaaa52a7087d7c20b2de343b7da0
+ms.openlocfilehash: 8de01b77fcbeb65321e60614b6a11d264460208f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 08/01/2017
 
 ---
 
@@ -65,8 +64,11 @@ ms.lasthandoff: 05/25/2017
 > [!NOTE]                                                                                  
 > [自社の利益] を選択した場合、丸めは常に、法人の利益になります。 
 
-詳細については、「[売上税の概要](indirect-taxes-overview.md)」を参照してください。 
-
+詳細については、次のトピックを参照してください。
+- [消費税の概要](indirect-taxes-overview.md)
+- [売上税支払の作成](tasks/create-sales-tax-payment.md)
+- [ドキュメントの売上トランザクションの作成](tasks/create-sales-tax-transactions-documents.md)
+- [転記された消費税トランザクションの表示](tasks/view-posted-sales-tax-transactions.md)
 
 
 

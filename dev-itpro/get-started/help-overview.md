@@ -15,13 +15,13 @@ ms.custom: 16381
 ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
 ms.search.region: Global
 ms.author: margoc
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9c083fd26a58e96b3bb810df11eadace184f9dbf
-ms.openlocfilehash: eaa3317acf7df84d06ad3641486df1c096b26a56
+ms.sourcegitcommit: 529751c09b8f99f986cad23a633bea661929d558
+ms.openlocfilehash: 171d006e20834ea4ad6d5651ec27fc305eac4bc6
 ms.contentlocale: ja-jp
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/09/2017
 
 ---
 
@@ -32,10 +32,10 @@ ms.lasthandoff: 07/27/2017
 この記事では、Microsoft Dynamics 365 for Finance and Operations のヘルプ システム コンポーネントの概要が示されます。 また、組織の独自のドキュメントやトレーニングを提供する方法について説明します。 
 
 > [!NOTE] 
-> 次の製品間には密接な関係があります: Dynamics 365 for Finance and Operations、Enterprise edition、Dynamics 365 for Retail、および Dynamics 365 for Talent。 すべての 3 つの製品上に同じ機能が表示されることがあります。 結果として、主に [Retail] に関連するトピックでの製品名は Dynamics 365 for Retail、主に [Talent] に関連するトピックでの製品名は Dynamics 365 for Talent、コア製品に関連するトピックでの製品名は、Dynamics 365 for Finance and Operations となります。 1 つの製品用に書かれたトピックは、関連する製品での同じ機能に適用されます。
+> 次の製品間には密接な関係があります: Dynamics 365 for Finance and Operations、Enterprise edition、Dynamics 365 for Retail、および Dynamics 365 for Talent。 すべての 3 つの製品上に同じ機能が表示されることがあります。 結果として、主に [Retail] に関連するトピックでの製品名は Dynamics 365 for Retail、主に [Talent] に関連するトピックでの製品名は Dynamics 365 for Talent、コア製品に関連するトピックでの製品名は、Dynamics 365 for Finance and Operations となります。 1 つの製品で記述されているトピックは、関連する製品の同じ機能にも当てはまる可能性があります。
 
-ヘルプ システムは、すべての Unified Operations 製品により共有されます。
-- Dynamics 365 for Finance and Operations, Enterprise エディション
+ヘルプ システムは、次の製品により共有されます。
+- Dynamics 365 for Finance and Operations, Enterprise edition
 - Dynamics 365 for Retail
 - Dynamics 365 for Talent
 
@@ -73,7 +73,7 @@ docs.microsoft.com サイト ([docs.microsoft.com/dynamics365/operations](/dynam
 
 ![サイト検索の結果](./media/site-search-results-2.png)
 
-### <a name="the-docsmicrosoftcom-table-of-contents-for-unified-operations"></a>Unified Operations の docs.microsoft.com 目次
+### <a name="the-docsmicrosoftcom-table-of-contents"></a>docs.microsoft.com の目次
 すべての製品は docs サイトの 1 つの目次を共有し、顧客がトピックのコンテキストを確認できるようにします。 探しているトピックを検索するフィルター コントロールを使用できるようにもします。
 
 ### <a name="how-can-i-contribute"></a>どのように貢献できますか? 
@@ -101,7 +101,7 @@ docs.microsoft.com サイト ([docs.microsoft.com/dynamics365/operations](/dynam
 ## <a name="task-guides"></a>タスク ガイド
 タスク ガイドは、制御された、ガイド付きでインタラクティブな方法による、タスクまたは業務プロセスの手順の説明です。 [ヘルプ] ウィンドウからタスク ガイドを開く (再生する) ことができます。 最初にタスク ガイドをクリックすると、[ヘルプ] ウィンドウには、タスクのステップ バイ ステップの手順が表示されます。 ローカライズされたタスク ガイドが利用可能になりました。 
 
-Unified Operations 製品ごとにさまざまなタスク ガイドのセットを提供します。 [ヘルプ ウィンドウからタスク ガイドへのアクセス] セクションでは、製品の正しいタスク ガイドを検索する方法について説明します。 
+Dynamics 365 for Retail、Dynamics 365 for Finance and Operations、Dynamics 365 for Talent といった製品ごとに、さまざまなタスク ガイドのセットを提供します。 [ヘルプ ウィンドウからタスク ガイドへのアクセス] セクションでは、製品の正しいタスク ガイドを検索する方法について説明します。 
 
 ![タスク ガイドの読み取りビュー](./media/task-guide-ops.png)
 
@@ -169,7 +169,7 @@ Finance and Operations 内のヘルプ コンテンツにアクセスするに�
 -   タスク ガイドが翻訳されていない場合、それを開くと、一部のテキスト (コントロールのテキスト) のみが選択した言語で表示されます。
 
 ## <a name="additional-resources"></a>その他のリソース
-次の表に、Unified Operations のコンテンツを提供する Web サイトを示します。 コンテンツ Web サイトは顧客のライフ サイクルをサポートするために編成されています。 各フェーズは、別の一連のサイトによってサポートされます。 名前の横にアスタリスク (\*) のあるサイトには、サービス計画と関連付けられたアカウントでサインインする必要があります。
+次の表に Web サイトの一覧を示します。 コンテンツ Web サイトは顧客のライフ サイクルをサポートするために編成されています。 各フェーズは、別の一連のサイトによってサポートされます。 名前の横にアスタリスク (\*) のあるサイトには、サービス計画と関連付けられたアカウントでサインインする必要があります。
 
 | サイト                                                                     | 説明                                                                                                                                                                                                                                |
 |--------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

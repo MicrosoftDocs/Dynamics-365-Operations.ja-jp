@@ -13,17 +13,15 @@ audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 28811
-ms.assetid: db96c6bb-c2b1-4e26-b711-33caa49eb29f
 ms.search.region: Japan
 ms.author: RichardLuan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 05428b341320d5ae5349cc0c9bbee428eebd18ed
+ms.translationtype: HT
+ms.sourcegitcommit: cb5ab0e64b2a663af627d4d46e3a74aa526058b8
+ms.openlocfilehash: 657f96646451f965c268c30cac93c57be5608fc1
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 07/28/2017
 
 ---
 
@@ -67,7 +65,13 @@ Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition を使用�
 -   固定資産減損トランザクション レポート
 -   減損損失レポートのための固定資産の確認
 
-
+## <a name="additional-resources"></a>その他のリソース
+- [キャッシュ生成単位の固定資産の減損会計](apac-jpn-impairment-accounting-cash-generating-unit.md)
+- [個別資産の減損インジケーターの管理](./tasks/maintain-impairment-indicators-individual-assets.md)
+- [バッチごとの減損損失の提案と転記](./tasks/propose-post-impairment-amount-batch.md)
+- [固定資産仕訳帳を使用した減損損失の提案と転記](./tasks/propose-post-impairment-amount-fixed-asset-journal.md)
+- [認識テストの実行と個別資産の減損損失の計算](./tasks/run-recognition-test-calculate.md)
+- [減損会計の共通パラメーターおよび転記プロファイルの設定](./tasks/impairment-accounting.md)
 
 
 

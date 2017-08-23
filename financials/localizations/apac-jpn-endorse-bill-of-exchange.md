@@ -13,17 +13,15 @@ audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 28791
-ms.assetid: f0ed3209-2d1a-4208-ba45-192e88baed53
 ms.search.region: Japan
 ms.author: RichardLuan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 6af0603e654280d9687b9dcc593e5183928bcea1
+ms.translationtype: HT
+ms.sourcegitcommit: cb5ab0e64b2a663af627d4d46e3a74aa526058b8
+ms.openlocfilehash: 800b1579e8e83c54dc8407aaeefe2009fbb84742
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 07/28/2017
 
 ---
 
@@ -48,6 +46,10 @@ BOE のライフ サイクルは、BOE が支払われる、または期限切�
 ## <a name="reserve-endorsement"></a>裏書の引当
 BOE の状態が**裏書済**の場合、裏書引当を行うことができます。
 
-
+## <a name="additional-resources"></a>その他のリソース
+- [顧客の受取手形の裏書による仕入先トランザクションの支払](./tasks/pay-vendor-transaction.md)
+- [裏書済受取手形の取消](./tasks/reverse-endorsed-bill-exchange.md)
+- [顧客受取手形の裏書による日本の支払の設定](./tasks/setup-japan-payment-endorsing-customer-bill-exchange.md)
+- [裏書済受取手形の決済](./tasks/settle-endorsed-bill-exchange.md)
 
 

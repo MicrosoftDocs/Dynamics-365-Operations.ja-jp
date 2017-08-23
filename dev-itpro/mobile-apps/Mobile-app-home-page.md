@@ -16,12 +16,12 @@ ms.assetid: c99f818f-27b3-4e45-92b4-74272dad0e17
 ms.search.region: Global
 ms.author: sericks
 ms.dyn365.ops.intro: Platform update 4
-ms.search.validFrom: 2017-02-28T00:00:00.000Z
+ms.search.validFrom: 2017-02-28
 ms.translationtype: HT
-ms.sourcegitcommit: 9ea9eb66abf7898ce735e1204259fcc9b9523c52
-ms.openlocfilehash: 8674a237878d4358c7f9ce4d4dfcace302536063
+ms.sourcegitcommit: 5230911e1febc66b294f1331846373a472789adf
+ms.openlocfilehash: 46a77f2757bee9f688d8c0d23f15cd7eb27ebcb3
 ms.contentlocale: ja-jp
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/04/2017
 
 ---
 
@@ -113,11 +113,8 @@ ms.lasthandoff: 07/27/2017
 <tr class="even">
 <td>4</td>
 <td>開発者もしくは独立系ソフトウェア ベンダー (ISV)</td>
-<td>モバイル フレームワークを使用して、カスタム モバイル ワークスペースを作成します。</td>
-<td><ul>
-<li><a href="mobile-platform.md">モバイル フレームワーク</a></li>
-<li><a href="mobile-workspace-xpp-apis.md">ワークスペース X++ APIs</a></li>
-</ul></td>
+<td>モバイル プラットフォームを使用して、カスタム モバイル ワークスペースを作成します。</td>
+<td><a href="platform/mobile-platform-home-page.md">モバイル プラットフォーム</a></td>
 </tr>
 <tr class="odd">
 <td>5</td>
@@ -142,7 +139,7 @@ ms.lasthandoff: 07/27/2017
 <td>ユーザー</td>
 <td>モバイル アプリのダウンロードとインストール。</td>
 <td><ul>
-<li><a href="https://go.microsoft.com/fwlink/?linkid=850662">Andriod フォン用</a></li>
+<li><a href="https://go.microsoft.com/fwlink/?linkid=850662">Android フォン用</a></li>
 <li><a href="https://go.microsoft.com/fwlink/?linkid=850663">iPhone 用</a></li></ul>
 </td>
 </tr>

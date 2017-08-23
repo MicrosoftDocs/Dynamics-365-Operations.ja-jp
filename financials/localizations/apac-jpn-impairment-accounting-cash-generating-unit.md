@@ -17,12 +17,11 @@ ms.search.region: Japan
 ms.author: RichardLuan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 5a4d25356b8659cae0f5ac136abc4f40c399259b
+ms.translationtype: HT
+ms.sourcegitcommit: cb5ab0e64b2a663af627d4d46e3a74aa526058b8
+ms.openlocfilehash: 6a9b1dcf7ad911f068a6d54ffcfaa24dca700a72
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 07/28/2017
 
 ---
 
@@ -57,6 +56,8 @@ ms.lasthandoff: 06/13/2017
 ## <a name="reports-and-other-required-operations"></a>レポートおよびその他の必要な工程
 ユーザーは**減損レポートおよびトランザクション**照会ページを使用して、減損トランザクションに関する詳細情報を取得できます。 会社の税務申告の調整など特定の工程が、減損の転記後に必要です。 ユーザーは、これらの工程を手動で計算して転記する必要があります。
 
-
+## <a name="additional-resources"></a>その他のリソース
+- [固定資産の減損会計](apac-jpn-impairment-accounting-fixed-assets.md)
+- [資産グループの減損損失の提案と転記](./tasks/propose-post-impairment-amount-cash-generating-unit.md)
 
 

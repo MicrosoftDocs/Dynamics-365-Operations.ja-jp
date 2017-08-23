@@ -1,35 +1,33 @@
 ---
 title: " 会計またはレポートの通貨換算"
 description: 
-author: RobinARH
+author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: robinr
+ms.reviewer: twheeloc
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 78223
 ms.assetid: 31c56f9a-9c64-40a2-90e3-1969a760614b
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 728af2fff6317c17e47d48ea07dbeb57068fbf3f
+ms.translationtype: HT
+ms.sourcegitcommit: c4f5dae90c5fcaaa52a7087d7c20b2de343b7da0
+ms.openlocfilehash: c738207f3088da151ec2317ce2b445f83278ec79
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/01/2017
 
 ---
 
 # <a name="convert-accounting-or-reporting-currencies"></a> 会計またはレポートの通貨換算
 
 [!include[banner](../includes/banner.md)]
-
-
 
 
 会計通貨やレポート通貨を変更する必要のある会社には、2 つの選択肢があります。 1 つ目の選択肢は、新しい会社を作成して新規に開始することです。 2 番目の選択肢は、会計通貨とレポート通貨の換算プロセスを実行することです。 これは、システムのすべてのトランザクションを変更する、長い実行時間のプロセスです。 また、プロセスを実行する前に、設定が必要です。
@@ -77,6 +75,6 @@ ms.lasthandoff: 05/25/2017
 
 元帳トランザクション仕訳帳がすべて削除されたら、元帳トランザクションを仕訳入力できます。 [**総勘定元帳**] &gt; [**定期処理**] &gt; [**仕訳帳**] &gt; [**仕訳**] の順にクリックします。 再評価が必要な場合、通貨換算後に外貨金額を再評価できます。 外貨金額の再評価は、再評価の**方法**フィールドで**標準**を選択して行います。
 
-
+詳細については、[転記された仕訳入力の仕訳](tasks/journalize-posted-journal-entries.md)を参照してください。
 
 

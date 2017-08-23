@@ -15,13 +15,13 @@ ms.custom: 261824
 ms.assetid: d0784b2c-fe10-428d-8d07-fd474ca50fcc
 ms.search.region: Global
 ms.author: kweekley
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: c132c04bc64f02201252f03830d3f8309306f19c
+ms.translationtype: HT
+ms.sourcegitcommit: 9953d2f29a67b35f4bb43f577df1c4d910e379a1
+ms.openlocfilehash: 08a420a776f47119a5dc47f9119545aa448ffdbd
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 08/03/2017
 
 ---
 
@@ -30,15 +30,20 @@ ms.lasthandoff: 06/13/2017
 [!include[banner](../includes/banner.md)]
 
 
-このトピックでは、Microsoft Dynamics 365 for Finance and Operations のデータベースを復元した後に、財務報告データ マートをリセットする方法について説明します。 
+このトピックでは、Microsoft Dynamics 365 for Finance and Operations のデータベースを復元した後に、財務報告データ マートをリセットする方法について説明します。
 
-Finance and Operations のデータベースをバックアップから復元するか、または別の環境のデータベースをコピーする必要がある場合があります。 これが発生した場合は、適切な手順に従って、財務報告データ マートが、復元された Finance and Operations のデータベースを正しく使用している必要があります。 Finance and Operations のデータベースを復元する以外の理由で財務報告データ マートをリセットするにおいて質問がある場合は、[財務報告のデータ マートの再設定](https://blogs.msdn.microsoft.com/dynamics_financial_reporting/2016/06/28/resetting-the-management-reporter-data-mart/) を参照してください。 このプロセスの手順は、Dynamics 365 for Operation 2016 年 5 月のリリース (アプリ ビルド 7.0.1265.23014 および財務報告ビルド 7.0.10000.4) およびそれ以降のリリースでサポートされています。 Finance and Operations の以前のリリースを持っている場合、サポート チームに問い合わせてください。
+Finance and Operations データベースをバックアップから復元したか別の環境からデータベースをコピーした場合、このトピックのステップに従って、財務報告のデータ マートが復元したFinance and Operations データベースを正しく使用していることを確認する必要があります。 
+<!--If you have questions about resetting the financial reporting data mart for a reason outside of restoring a Finance and Operations database, refer to the [Resetting the Management Reporter data mart](https://blogs.msdn.microsoft.com/dynamics_financial_reporting/2016/06/28/resetting-the-management-reporter-data-mart/) for more information. -->
+> [!Note] 
+> このプロセスのステップは、Dynamics 365 for Operation 2016 年 5 月のリリース (アプリ ビルド 7.0.1265.23014 および財務報告ビルド 7.0.10000.4) およびそれ以降のリリースでサポートされています。 Finance and Operations の以前のリリースを持っている場合は、サポート チームに問い合わせてください。
 
 ## <a name="export-report-definitions"></a>レポート定義のエクスポート
 最初に、次の手順を使用してレポート デザイナーにあるレポート デザインをエクスポートします:
 
 1.  レポート デザイナーで、[**会社**] &gt; [**構成要素グループ**] の順に移動します。
-2.  エクスポートする構成要素グループを選択し、[**エクスポート**] をクリックします。 **注記:** Finance and Operations では、**既定** として 1 つの構成要素グループのみがサポートされます。
+2.  エクスポートする構成要素グループを選択し、[**エクスポート**] をクリックします。 
+    > [!Note] 
+    > Finance and Operations では、**既定** として 1 つの構成要素グループのみがサポートされます。
 3.  エクスポートするレポート定義を選択します:
     -   すべてのレポート定義および関連する構成要素をエクスポートするには、[**すべて選択**] をクリックします。
     -   特定のレポート、行、列、ツリー、または分析コード セットをエクスポートするには、適切なタブをクリックしてエクスポートする項目を選択します。 タブ内の複数の項目を選択するには、Ctrl キーを押しながら選択します。 エクスポートするレポートを選択すると、関連する行、列、ツリー、および分析コード セットが選択されます。
@@ -63,9 +68,9 @@ Finance and Operations のデータベースをバックアップから復元す
 これらのサービスでは、Finance and Operations のデータベースへの接続が提供されます。
 
 ## <a name="reset"></a>リセット
-#### <a name="locate-the-latest-dataupgradezip-package"></a>最新の DataUpgrade.zip パッケージを検索します。
+#### <a name="locate-and-download-the-latest-minorversiondataupgradezip-package"></a>最新の MinorVersionDataUpgrade.zip パッケージを検索してダウンロードする
 
-[DataUpgrade.zip スクリプトのダウンロード](..\migration-upgrade\upgrade-data-to-latest-update.md) に記載されている指示に従って最新の DataUpgrade.zip パッケージを検索します。 指示では、使用している環境に適したバージョンのデータ アップグレード パッケージを検索する方法を説明しています。
+「[最新のデータ アップグレード配置可能パッケージをダウンロードする](..\migration-upgrade\upgrade-data-to-latest-update.md#download-the-latest-data-upgrade-deployable-package)」に記載されている指示に従って、最新の MinorVersionDataUpgrade.zip パッケージを検索します。 指示では、正しいバージョンのデータ アップグレード パッケージを検索してダウンロードする方法を説明しています。 MinorVersionDataUpgrade.zip パッケージをダウンロードするのにアップグレードは必要ありません。 MinorVersionDataUpgrade.zip パッケージのコピーを取得するには、記事の他のステップは実行せずに、ただ「最新のデータ アップグレード配置可能パッケージをダウンロードする」セクションにあるステップのみ完了する必要があります。
 
 #### <a name="execute-scripts-against-finance-and-operations-database"></a>Finance and Operations データベースに対してスクリプトを実行する
 
@@ -105,8 +110,10 @@ services.msc を使用して、以前に停止したサービスを再起動し�
 
 1.  レポート デザイナーで、[**会社**] &gt; [**構成要素グループ**] の順に移動します。
 2.  エクスポートする構成要素グループを選択し、[**エクスポート**] をクリックします。 
+
     > [!NOTE]
     > Finance and Operations では、**既定** として 1 つの構成要素グループのみがサポートされます。
+    
 3.  **既定** の構成要素を選択し、[**インポート**] をクリックします。
 4.  エクスポート済みのレポート定義を選択し、[**開く**] をクリックします。
 5.  [インポート] ダイアログ ボックスで、インポートするレポート定義を選択します:

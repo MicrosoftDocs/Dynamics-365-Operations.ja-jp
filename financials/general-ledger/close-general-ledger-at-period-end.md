@@ -3,7 +3,7 @@ title: "期末に一般会計を決算"
 description: "このトピックでは、一般会計の期間締めを実行する場合に通常完了するタスクについて説明します"
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -15,13 +15,13 @@ ms.custom: 14111
 ms.assetid: cec9e039-c1a2-482c-bea6-e11d896eea9d
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 81d687cc16ef43442c8c1c166cc6f0d8b171e28f
+ms.translationtype: HT
+ms.sourcegitcommit: c4f5dae90c5fcaaa52a7087d7c20b2de343b7da0
+ms.openlocfilehash: bcf58b0ca995883bc466eec66a3d75c73c0be79e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/01/2017
 
 ---
 
@@ -45,8 +45,13 @@ ms.lasthandoff: 05/25/2017
 -   財務報告を使用して期末財務諸表を生成します。
 -   他の転記が発生しないように、元帳期間を [**保留中**] に設定します。 期末の活動の実行中に、使いやすさのため、期を特定のユーザー グループに制限できます。 決算済みの期間を再度開くことはできないため、期間を [**完全に閉じる**] に設定するのは、よい考えではありません。
 
-財務期間終了ワークスペースを使用して、さまざまな期末処理プロセスに必要なタスクを整理して追跡できます。 詳細については、「[財務期間終了ワークスペース](financial-period-close-workspace.md)」および「[年度末決算](Year-end-close.md)」のトピックを参照してください。 
+財務期間終了ワークスペースを使用して、さまざまな期末処理プロセスに必要なタスクを整理して追跡できます。 
 
+
+詳細については、次のトピックを参照してください。
+- [財務期間終了ワークスペース](financial-period-close-workspace.md) 
+- [年度末決算](Year-end-close.md)  
+- [財務期間一括終了](tasks/mass-financial-period-close.md)
 
 
 

@@ -17,12 +17,11 @@ ms.search.region: Global
 ms.author: leguo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: bd61cd2a5fa7705f3f9152323281e6f4ca520dc1
+ms.translationtype: HT
+ms.sourcegitcommit: 45d28110ca93875eb534c69886ac2074ea4fe737
+ms.openlocfilehash: 64446efd518390ee2a7204e2c977fa4174581808
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 08/09/2017
 
 ---
 
@@ -46,6 +45,13 @@ ms.lasthandoff: 05/25/2017
 
 信用状は [取消可能] または [取消不可] のいずれかです。 信用状の種類は、譲渡可、譲渡付加、またはリボルビングのいずれかです。 一般に、信用状は取消不能な確定契約であり、完全で正確な船積書類が提出されたときに、特定の受益者に支払がなされます。
 
+詳細については、次のトピックを参照してください。
+
+[信用状のインポート](tasks/import-letter-credit.md)
+
+[信用状のエクスポート](tasks/export-letter-credit.md)
+
+[信用状の銀行融資の作成](tasks/create-bank-facility-agreement-letter-credit.md)
 
 
 

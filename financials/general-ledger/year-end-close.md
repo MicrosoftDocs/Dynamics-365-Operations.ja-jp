@@ -3,7 +3,7 @@ title: "年度末決算"
 description: "このトピックでは、一般会計の年度末決算処理を実行するために必要な設定と手順について説明します。"
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,13 +16,13 @@ ms.custom: 14091
 ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 ms.search.region: Global
 ms.author: kweekley
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 50a6a23febc725eb05d30d5db4f97ca699607461
+ms.translationtype: HT
+ms.sourcegitcommit: c4f5dae90c5fcaaa52a7087d7c20b2de343b7da0
+ms.openlocfilehash: 4aad946f51c0c9a0a4c0ea1249e6e876cc628e20
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/01/2017
 
 ---
 
@@ -86,7 +86,7 @@ ms.lasthandoff: 05/25/2017
 
 年度末決算処理は既定ではバッチ モードで実行されます。 推奨設定は、ユーザーが他の活動に戻れるようバッチ モードで処理を実行することです。 年度末決算処理が完了すると、**昨年の年度末決算処理の日付** フィールドがセッションの日付で更新されます。
 
-詳細については、[期末に一般会計を決算](close-general-ledger-at-period-end.md) を参照してください。
+詳細については、[期末に一般会計を決算](close-general-ledger-at-period-end.md) と [会計年度期間を終了](tasks/close-fiscal-year.md) を参照してください。
 
 
 

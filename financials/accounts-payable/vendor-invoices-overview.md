@@ -1,9 +1,9 @@
 ---
 title: "仕入先請求書の概要"
 description: "この記事は、仕入先請求書に関する一般情報を示します。 仕入先請求書は、受領した製品とサービスに対する支払請求です。 仕入先請求書は、進行中のサービスの請求書を表すことができます。または特定の品目およびサービスの発注書に基づくことができます。"
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -14,15 +14,14 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 13971
 ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
 ms.search.region: Global
-ms.author: mfalkner
+ms.author: Shiva.Pandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 16ff8ebb0e620f45c4d290ee5076d5505abf3436
+ms.translationtype: HT
+ms.sourcegitcommit: 1982e495f740d6061b9574aa9f40f38180e8d110
+ms.openlocfilehash: 4c27b5a8ab1a7aeab31b48937dcaf4a86d798689
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 08/03/2017
 
 ---
 
@@ -75,11 +74,23 @@ ms.lasthandoff: 05/25/2017
 
 このオプションでは、発注書に対して少なくとも 1 つの製品受領書が転記されていることを前提としています。 それらの製品受領書に基づいて仕入先請求書が作成され、その数量が反映されます。 請求書の財務情報は、請求書の転記時に入力する情報に基づいて指定されます。
 
+詳細については、[仕入先の請求書を記録し、入庫済数量と一致](../accounts-receivable/tasks/record-vendor-invoice-match-against-received-quantity.md) を参照してください。
+
 ## <a name="working-with-multiple-invoices"></a>複数の請求書の処理
 
 複数の請求書で同時に作業し、それらの請求書をすべて同時に転記できます。 複数の請求書を作成する必要がある場合、**保留中の仕入先請求書**ページを使用します。 複数の仕入先請求書の転記および印刷が必要な場合、請求書承認仕訳帳ページを使用します。 請求書承認仕訳帳を使用している場合、発注書に対して少なくとも 1 つの製品受領書を転記し、発注書に対する請求書を仕入帳に転記している必要があります。 請求書の財務情報は、仕入帳に転記された請求書から取得されます。
 
 
+詳細については、「」を参照してください。
 
+ - [仕入先請求ポリシーの設定](../accounts-receivable/tasks/set-up-vendor-invoice-policies.md) 
+
+ - [仕入先請求書を使用した買掛金勘定への請求書データの入力](tasks/key-invoice-data-ap-system-vendor-invoice.md)
+ 
+ - [承認仕訳帳を使用した買掛金勘定への請求書データの入力](tasks/key-invoice-data-into-ap-system-approval-journal.md)
+  
+ - [請求管理グループを使用した AP システムへの請求書データの入力](tasks/key-invoice-data-into-ap-system-invoice-pool.md)
+ 
+ - [請求仕訳帳の仕入先請求書の記録](tasks/record-vendor-invoice-invoice-journal.md)
 
 

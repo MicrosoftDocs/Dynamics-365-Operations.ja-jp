@@ -12,17 +12,15 @@ audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 10294
-ms.assetid: 81dab75a-3760-48f2-b453-11b487def3b2
 ms.search.region: Japan
 ms.author: RichardLuan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 797fcbc84e7ce09b917f0bb03d50e8fc6dfdd1f3
+ms.translationtype: HT
+ms.sourcegitcommit: cb5ab0e64b2a663af627d4d46e3a74aa526058b8
+ms.openlocfilehash: 70009afaa3888e888ffb7f2b02a37cdba76907b4
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 07/28/2017
 
 ---
 
@@ -141,6 +139,23 @@ ms.lasthandoff: 06/13/2017
 
 インポートする減価償却率スケジュールは、固定資産に使用する減価償却方法のタイプによって異なります。
 
+## <a name="additional-resources"></a>その他のリソース
+
+- [均等償却を使用した一括比例配分減価償却資産の作成](./tasks/create-lump-sum-depreciation-assets-equally-divided-method.md)
+- [帳簿の資産耐用年数期間中の減価償却方法の変更](./tasks/change-depreciation-method-during-asset-life-book.md)
+- [単一資産の資産耐用年数期間中の減価償却方法の変更](./tasks/change-depreciation-method-during-asset-life-one-asset.md)
+- [増加償却パラメーターおよび転記プロファイルのコンフィギュレーション](./tasks/accelerated-depreciation-posting-profiles.md)
+- [割増償却に対する減価償却プロファイルおよび転記プロファイルのコンフィギュレーション](./tasks/configure-depreciation-profile-posting.md)
+- [割増償却を使用する固定資産の作成](./tasks/create-fixed-asset-additional-depreciation.md)
+- [特別償却プロファイルのある固定資産の作成](./tasks/create-fixed-asset-special-depreciation-profile.md)
+- [増加償却ドキュメントの作成および使用状況データの入力](./tasks/create-accelerated-depreciation-document-enter-usage-data.md)
+- [増加償却プロファイルの作成および帳簿への割り当て](./tasks/create-accelerated-depreciation-profile-assign-it-book.md)
+- [資産のアイドル期間の定義および減価償却プロセスの検証](./tasks/define-asset-idle-period-validate-depreciation-process.md)
+- [償却率表の入力および減価償却プロファイルへの関連付け](./tasks/enter-depreciation-rate-schedule.md)
+- [償却超過額/償却不足額の定期決済](./tasks/periodic-settlement-over-under-depreciation.md)
+- [割増償却の提案](./tasks/propose-additional-depreciation.md)
+- [増加償却の提案と転記](./tasks/propose-post-accelerated-depreciation.md)
+- [特別償却の提案](./tasks/propose-special-depreciation.md)
 
 
 

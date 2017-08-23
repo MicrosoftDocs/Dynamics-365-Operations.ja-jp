@@ -1,9 +1,9 @@
 ---
 title: "一部金額の顧客支払"
 description: "顧客は、請求金額未満の支払を行う場合があります。 この記事は、この状況を処理するためのさまざまなオプションについて説明します。 利用できるオプションは、業務要件とコンフィギュレーションによって異なります。"
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -14,15 +14,14 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 13011
 ms.assetid: 20423a2d-6997-4e1c-a596-a77016600071
 ms.search.region: Global
-ms.author: kweekley
+ms.author: Shiva.Pandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 795d13a07065a125a750970beaff85b59307f623
+ms.translationtype: HT
+ms.sourcegitcommit: 1982e495f740d6061b9574aa9f40f38180e8d110
+ms.openlocfilehash: ebfa8aaed6f82e9c3142540d0850c59d49328d59
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 08/03/2017
 
 ---
 
@@ -61,5 +60,5 @@ ms.lasthandoff: 05/25/2017
 顧客は、残り金額は支払われないものの**買掛金勘定パラメーター** ページで指定された過少支払金額よりも大きな一部支払を行う場合があります。 完全に決済されるように請求書にマークするには、**トランザクションの決済**ページの [**全額決済**] オプションを使用できます。 (コンフィギュレーション キーを使用して全額決済機能を有効にできます)。 たとえば、請求書に 1,000.00 が転記され、顧客は 990.00 の支払を行います。 顧客が残りの 10.00 を支払う必要がないことに合意します。 決済の請求書にマークした後、選択をマーク**全額決済**することができます。 請求書は、完全に決済されたとみなされます。 差額 10.00 が、追加の現金割引量として現金割引口座に転記されます。
 
 
-
+詳細については、「[顧客支払の預金](tasks/deposit-customer-payments.md)」を参照してください。
 

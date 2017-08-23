@@ -17,12 +17,11 @@ ms.search.region: Global
 ms.author: leguo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
-ms.openlocfilehash: f7cf2b7996d113f0f883b39f3603de8236e8ad2c
+ms.translationtype: HT
+ms.sourcegitcommit: 45d28110ca93875eb534c69886ac2074ea4fe737
+ms.openlocfilehash: 6a535b5f1192b7c27383cb8ece53f76a9c76f047
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 08/09/2017
 
 ---
 
@@ -52,7 +51,7 @@ Microsoft Dynamics 365 for Finance and Operations では、次の表に示すよ
 </tr>
 <tr class="even">
 <td>仕入先からの先日付小切手を登録および転記</td>
-<td>仕入先に発行した先日付小切手の詳細を登録します。 支払を転記すると、仕入先負債が認識されますが、銀行口座は、貸方とは見なされません。 代わりに、精算勘定がこの目的に使用されます。</td>
+<td>仕入先に発行した先日付小切手の詳細を登録します。 支払を転記すると、仕入先負債が認識されますが、銀行口座は、貸方とは見なされません。 代わりに、精算勘定がこの目的に使用されます。 </td>
 </tr>
 <tr class="odd">
 <td>顧客の先日付小切手の登録と転記</td>
@@ -87,6 +86,17 @@ Microsoft Dynamics 365 for Finance and Operations では、次の表に示すよ
 
 
 
+詳細については、次のトピックを参照してください。
+
+[先日付小切手の設定](tasks/set-up-postdated-checks.md)
+
+[顧客の先日付小切手の登録および転記](tasks/register-post-postdated-check-customer.md)
+
+[顧客からの先日付小切手の決済](tasks/settle-postdated-check-customer.md)
+
+[仕入先の先日付小切手の登録および転記](tasks/register-post-postdated-check-vendor.md) 
+
+[仕入先の先日付小切手の決済](tasks/settle-postdated-check-vendor.md)
 
 
 
