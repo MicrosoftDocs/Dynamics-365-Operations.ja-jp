@@ -1,9 +1,9 @@
 ---
 title: "複数の顧客または仕入先レコードを持つ単一伝票"
 description: "このトピックでは、複数の顧客または仕入先レコードを持つ単一伝票を転記した場合の処理の概要を示します。 この機能は、Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, の将来のバージョンで廃止されます。そのため、決済処理への会計上の影響を考慮し、この方法で転記を行うことは推奨されません。"
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -14,8 +14,8 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 222534
 ms.assetid: d4df11ce-4d36-4c66-8230-f5fc58e021bc
 ms.search.region: global
-ms.author: abruer
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.author: Shiva.Pandey
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008

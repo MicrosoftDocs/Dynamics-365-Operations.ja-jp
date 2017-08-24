@@ -1,7 +1,7 @@
 ---
 title: "仕入先支払を使用して仕入先請求書を作成"
 description: "このトピックでは、支払提案オプションの概要および支払提案の機能を示す例をいくつか提供します。 多くの場合、支払提案は仕入先支払の作成に使用されます。これは、クエリを使用すると、支払の仕入先請求書を期日および現金割引などの基準に基づいて支払の仕入先請求書を素早く選択することができるためです。"
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 07/17/2017
 ms.topic: article
@@ -15,8 +15,8 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 14312
 ms.assetid: 585d5b0b-1b79-4a03-ab18-528918070377
 ms.search.region: Global
-ms.author: kweekley
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.author: Shiva.Pandey
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
 ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786

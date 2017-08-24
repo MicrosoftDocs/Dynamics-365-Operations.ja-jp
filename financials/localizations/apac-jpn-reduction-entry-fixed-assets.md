@@ -17,12 +17,11 @@ ms.search.region: Japan
 ms.author: RichardLuan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 95b62d12041bde095a92080e33cde74a69b45d85
+ms.translationtype: HT
+ms.sourcegitcommit: cb5ab0e64b2a663af627d4d46e3a74aa526058b8
+ms.openlocfilehash: 6ab9a786a5f181a2bfd0bc6d0b6af270fc043382
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 07/28/2017
 
 ---
 
@@ -88,12 +87,25 @@ Finance and Operations では、既存の固定資産の機能の最上部で、
 
 **固定資産転記プロファイル** ページを使用して、圧縮記帳の転記プロファイルを設定します。 また、圧縮記帳に適用された資産を減価償却する、転記プロファイルを設定できます。
 
+## <a name="depreciate-fixed-assets-with-reduction-entry-posted"></a>圧縮記帳が転記されている固定資産の減価償却
+
+[圧縮記帳が転記されている固定資産の減価償却](./tasks/depreciation-fixed-assets-reduction-entry-posted.md)を参照してください。
+
+## <a name="create-and-assign-a-reduction-entry-document-for-a-government-grant-subsidy"></a>政府助成金の圧縮記帳ドキュメントの作成および割り当て
+
+[政府助成金の圧縮記帳ドキュメントの作成および割り当て](./tasks/create-assign-reduction-document.md)を参照してください。
+
+## <a name="dispose-of-a-fixed-asset-with-reduction-entry"></a>圧縮記帳のある固定資産の処分
+
+[圧縮記帳のある固定資産の処分](./tasks/dispose-fixed-asset-reduction-entry.md)を参照してください
+
+
 ## <a name="technical-information-for-system-administrators"></a>システム管理者向け技術情報
 このタスクを完了するために使用するページに対するアクセス権限がない場合は、システム管理者に連絡し、次の表に示される情報を提供します。
 
 | カテゴリ           | 前提条件                                                                                                                                               |
 |--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| コンフィギュレーション キー | **資産コンフィギュレーション** キーが、アプリケーション オブジェクト ツリーの [**データ ディクショナリ**] &gt; [**コンフィギュレーション キー**] ノードで使用可能であることを確認します。 |
+| コンフィギュレーション キー | **資産コンフィギュレーション** キーが、[**データ ディクショナリ**] &gt; [**コンフィギュレーション キー**] ノードで使用可能であることを確認します。 |
 
 
 

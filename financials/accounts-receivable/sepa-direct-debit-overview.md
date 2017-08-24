@@ -1,9 +1,9 @@
 ---
 title: "SEPA の口座引落の概要"
 description: "単一ユーロ支払地域 (SEPA) は欧州委員会によって設定され、個人、事業または組織および銀行がどの国または地域にあるかに関係なく、すべての電子支払は国内と見なされます。 国内支払と国境を越えた支払の間に違いはありません。 SEPA には、28 の欧州連合 (EU) の加盟国とアイスランド、リヒテンシュタイン、ノルウェー、スイス、およびモナコとサンマリノが含まれます。 SEPA により、欧州経済領域 (EEA) 内の支払トランザクションの単一市場が形成されます。 最終的に、SEPA により、銀行、事業、および個人が扱う支払形式の数を減らすと予想されます。"
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -15,7 +15,7 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 11144
 ms.assetid: 3277c9b6-e46e-40c9-aa76-9b0449467842
 ms.search.region: Global
-ms.author: mfalkner
+ms.author: Shiva.Pandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
@@ -23,7 +23,6 @@ ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
 ms.openlocfilehash: f3b20b033fc701204cbb3f62468a421b3bdd6a80
 ms.contentlocale: ja-jp
 ms.lasthandoff: 05/25/2017
-
 
 ---
 

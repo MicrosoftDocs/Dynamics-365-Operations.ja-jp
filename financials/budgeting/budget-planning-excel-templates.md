@@ -1,9 +1,9 @@
 ---
 title: "Excel 用予算計画テンプレート"
 description: "このトピックでは、予算計画で使用できる Microsoft Excel テンプレートを作成する方法について説明します。"
-author: twheeloc
+author: ryansandness
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -14,12 +14,12 @@ ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 261794
 ms.assetid: 1d8e99c1-b70d-41ba-991e-ab50b16797e0
 ms.search.region: Global
-ms.author: sigitac
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.author: ryansand
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
-ms.openlocfilehash: 734c8930f239d8c9d220601bb2103bd55dd5bfd8
+ms.sourcegitcommit: 1945d137b337508a1850e3e679a60487aecb6b84
+ms.openlocfilehash: 7cec40859a8c68cb8a9751c5531c67cef7706258
 ms.contentlocale: ja-jp
 ms.lasthandoff: 07/27/2017
 
@@ -38,22 +38,27 @@ ms.lasthandoff: 07/27/2017
 
 予算計画ドキュメントは、1 つ以上のレイアウトを使用して表示、編集できます。 各レイアウトでは、Excel ワークシートで予算計画データを表示および編集する関連の予算計画ドキュメント テンプレートを使用できます。 このトピックでは、予算計画ドキュメント テンプレートは既存のレイアウト コンフィギュレーションを使用して生成されます。 
 
-[**予算計画の一覧**] ([**予算作成**] &gt; [**予算計画**]) を開きます。 [**新規**] をクリックして、新しい予算計画ドキュメントを作成します。 
+1. [**予算計画の一覧**] ([**予算作成**] &gt; [**予算計画**]) を開きます。 
+2. [**新規**] をクリックして、新しい予算計画ドキュメントを作成します。 
 
-[![bpt1](./media/bpt11-1024x552.png)](./media/bpt11.png) 
+  [![予算計画の一覧](./media/bpt11-1024x552.png)](./media/bpt11.png) 
 
-[**追加**] の行オプションを使用して、行を追加します。 [**レイアウト**] をクリックして、予算計画ドキュメントのレイアウト コンフィギュレーションを表示します。 
+3. [**追加**] の行オプションを使用して、行を追加します。 [**レイアウト**] をクリックして、予算計画ドキュメントのレイアウト コンフィギュレーションを表示します。 
 
-[![bpt2](./media/bpt2-1024x274.png)](./media/bpt2.png) 
+  [![予算計画の追加](./media/bpt2-1024x274.png)](./media/bpt2.png) 
 
-レイアウト コンフィギュレーションを確認し、必要に応じて調整できます。 [**テンプレート**] &gt; [**生成**] の順に移動して、このレイアウトの Excel ファイルを作成します。 テンプレートが生成された後、[**テンプレート**] &gt; [**表示**] の順に移動して予算計画ドキュメント テンプレートを開いて確認します。 ローカル ドライブに Excel ファイルを保存できます。 [![bpt3](./media/bpt3-1024x545.png)](./media/bpt3.png)
+レイアウト コンフィギュレーションを確認し、必要に応じて調整できます。 
+1. [**テンプレート**] &gt; [**生成**] の順に移動して、このレイアウトの Excel ファイルを作成します。 
+2. テンプレートが生成された後、[**テンプレート**] &gt; [**表示**] の順に移動して予算計画ドキュメント テンプレートを開いて確認します。 ローカル ドライブに Excel ファイルを保存できます。 
+
+[![名前を付けて保存](./media/bpt3-1024x545.png)](./media/bpt3.png)
 
 > [!NOTE] 
 > 予算計画ドキュメント レイアウトは、Excel テンプレートが関連付けられると編集できません。 レイアウトを変更するには、関連する Excel テンプレート ファイルを削除して再生成します。 これはレイアウトやワークシートのフィールドの同期を維持するために必要です。 
 
 [**ワークシートで利用可能**] 列が True になっている場合、Excel テンプレートには予算計画ドキュメント レイアウトのすべての要素が含まれます。 重複する要素は、Excel テンプレートで許可されません。 たとえば、レイアウトに要求 Q1、要求 Q2、要求 Q3、要求 Q4 の列、4 つすべての四半期の列の合計を表す合計要求列が含まれている場合、その四半期列または合計列は Excel テンプレートで使用できます。 Excel ファイルは、テーブルのデータが期限切れおよび不正確になることがあるため、更新時に重複する列を更新することはできません。
 
-[![bpt4](./media/bpt4-1024x615.png)](./media/bpt4.png)
+[![例](./media/bpt4-1024x615.png)](./media/bpt4.png)
 
 > [!NOTE] 
 > Excel を使用した予算計画データの表示および編集で起こる可能性のある問題を回避するには、同じユーザーが、Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition および Microsoft Dynamics Office Add-in Data Connector の両方にログインする必要があります。
@@ -63,7 +68,7 @@ ms.lasthandoff: 07/27/2017
 
 [![bpt5](./media/bpt5-1024x615.png)](./media/bpt5.png) 
 
-[**デザイン**] タブで、** ** [**追加**] フィールドをクリックしてから、[**BudgetPlanHeader**] をエンティティ データ ソースとして選択します。
+[**デザイン**] タブで、[**追加**] フィールドをクリックしてから、[**BudgetPlanHeader**] をエンティティ データ ソースとして選択します。
 
 [![bpt6](./media/bpt6-1024x615.png)](./media/bpt6.png)
 

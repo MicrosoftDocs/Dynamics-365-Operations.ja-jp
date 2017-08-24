@@ -18,12 +18,11 @@ ms.search.region: Japan
 ms.author: RichardLuan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 66b1cd48dfeb87c43afeaf8544fc44734aca17e4
+ms.translationtype: HT
+ms.sourcegitcommit: cb5ab0e64b2a663af627d4d46e3a74aa526058b8
+ms.openlocfilehash: 5c99cf111759445ffa3ec7e0479894299964ed59
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 07/28/2017
 
 ---
 
@@ -103,10 +102,9 @@ Finance and Operations が均等減価償却法を使用して減価償却を計
 ## <a name="can-i-change-the-depreciation-period-for-an-equally-divided-depreciation-profile"></a>均等減価償却法プロファイルの減価償却期間を変更できますか。
 一連番号 **減価償却簿**ページで均等減価償却法プロファイルを選択した場合、減価償却プロファイルの**減価償却プロファイル** ページの [**均等償却年数**] フィールドの値は変更できません。
 
-<a name="see-also"></a>参照
---------
-
-[固定資産減価償却の FAQ](apac-jpn-fixed-asset-depreciation.md)
+## <a name="see-also"></a>参照
+- [固定資産減価償却の FAQ](apac-jpn-fixed-asset-depreciation.md)
+- [均等償却を使用した一括比例配分減価償却資産の作成](./tasks/create-lump-sum-depreciation-assets-equally-divided-method.md)
 
 
 

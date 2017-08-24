@@ -1,9 +1,9 @@
 ---
 title: "買掛金勘定のコンフィギュレーション"
 description: "この記事は、Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition の買掛金勘定の基本機能およびオプション機能の設定に使用するページについて説明します。 また、買掛金勘定の設定を開始する前に実行しなければならない設定手順について説明します。"
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -15,15 +15,14 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 24671
 ms.assetid: 82561fe7-b2d6-464c-9347-79d0ce0f9743
 ms.search.region: Global
-ms.author: mfalkner
+ms.author: Shiva.Pandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 2a61cb86a4f2cfc6d701445c139e22df0db44f8c
+ms.translationtype: HT
+ms.sourcegitcommit: 45d28110ca93875eb534c69886ac2074ea4fe737
+ms.openlocfilehash: 9b29fec7fadbb1ac699f1144f011df1bfd2f511a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 08/09/2017
 
 ---
 
@@ -47,7 +46,7 @@ ms.lasthandoff: 06/13/2017
 ## <a name="setup-pages-for-accounts-payable"></a>買掛金勘定の設定ページ
 
 次のページを使用して、法人ごとの買掛金勘定の基本機能を設定します。 このページは推奨される設定の順に列挙されています。 設定プロセスを簡略化するには、作成した最初のレコードからテンプレートを作成できます。 通常、テンプレートには組織が特定のタイプの仕入先に対して実装したい機能を反映させるために、多数のフィールドに値が入力されています。
-1.  支払条件ページで、販売注文、発注書、顧客、および仕入先に対して割り当てる支払条件を定義します。請求書の期限もこの条件によって決まります。
+1.  支払条件ページで、販売注文、発注書、顧客、および仕入先に対して割り当てる支払条件を定義します。請求書の期限もこの条件によって決まります。 詳細については、「[仕入先の支払手数料の定義](tasks/define-vendor-payment-fees.md)」を参照してください。
 2.  支払方法 - 仕入先ページでは、組織から仕入先への支払方法に関する情報を作成および管理します。
 3.  仕入先グループ ページでは、転記、決済、支払、レポート、予測に必要な重要なパラメータを共有する仕入先のグループを作成および管理します。
 4.  仕入先転記プロファイル ページでは、仕入先トランザクションの総勘定元帳への転記方法を設定します。

@@ -18,12 +18,11 @@ ms.search.region: Japan
 ms.author: RichardLuan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: e25198348f27c82064310099f85f9af119989a0a
+ms.translationtype: HT
+ms.sourcegitcommit: cb5ab0e64b2a663af627d4d46e3a74aa526058b8
+ms.openlocfilehash: 918e105acbc59cc9576821ddd8543d978a40b54a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 07/28/2017
 
 ---
 
@@ -71,6 +70,7 @@ ms.lasthandoff: 05/25/2017
 ## <a name="how-can-i-differentiate-bank-accounts-from-the-same-bank"></a>同じ銀行の銀行口座を区別することができますか。
 同じ銀行内の 2 つの銀行口座を区別するには、銀行ルールのフィルターとして銀行グループを使用できます。 [**銀行手数料組合せ**] ページの [**サード パーティ銀行グループ**] と [**会社の銀行グループ**] フィールドで [**銀行グループ**] を選択します。 [**リレーションシップ**] フィールドで [**&lt;&gt;**] を選択します。
 
-
+## <a name="additional-resources"></a>その他のリソース
+- [支払手数料の生成および転記](./tasks/post-payment-fee.md)
 
 

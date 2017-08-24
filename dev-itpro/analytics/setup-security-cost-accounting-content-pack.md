@@ -15,13 +15,13 @@ ms.custom: 270294
 ms.assetid: 3a7ba8b0-ac57-4159-9cd8-4308f6021f36
 ms.search.region: Global
 ms.author: yuyus
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: ea4ee6cfdca6e65f289db32ca41305a39b186033
+ms.translationtype: HT
+ms.sourcegitcommit: 04f8cb1a6375be9371bca2af7e4044392ce7322b
+ms.openlocfilehash: 12fd8e11211b701304f9f4a68ff31f3b42e3e8ee
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 08/02/2017
 
 ---
 
@@ -45,11 +45,11 @@ Power BI にアクセス レベルのセキュリティを反映するには、P
 3.  **原価会計分析** Power BI コンテンツのデータセットを検索します。
 4.  セキュリティ ページを開きます。 
 
-    [![セキュリティ ページを開く](https://msdynamics.blob.core.windows.net/media/2017/02/CA-picture-1.png)](https://msdynamics.blob.core.windows.net/media/2017/02/CA-picture-1.png)
+    ![セキュリティ ページを開く](./media/CA-picture-1.png)
 
 5.  **原価オブジェクト コントローラー** ロールが既に作成されています。 原価会計のアクセス レベル組織階層の一部であるほかのメンバを追加します。 
 
-    [![メンバーの追加](https://msdynamics.blob.core.windows.net/media/2017/02/CA-picture-2.png)](https://msdynamics.blob.core.windows.net/media/2017/02/CA-picture-2.png)
+    ![メンバーの追加](./media/CA-picture-2.png)
 
 **原価オブジェクト コントローラー** ロールに追加されているユーザーには、原価会計のアクセス レベル組織階層の定義に従って、許可されたデータのみが表示されます。 **注記:** 行レベル セキュリティは、Power BI から埋め込まれた Microsoft Dynamics 365 for Finance and Operations のタイルとレポートに適用されます。
 

@@ -1,9 +1,9 @@
 ---
 title: "SEPA の口座引落の委任状の設定"
 description: 
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -14,14 +14,14 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 59491
 ms.assetid: 653a135f-c515-4ae3-9da2-82b5e1f103b5
 ms.search.region: Global
-ms.author: mfalkner
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.author: Shiva.Pandey
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: ebf80efa32b21184a8effdde4d46c4d0d2179efd
+ms.translationtype: HT
+ms.sourcegitcommit: 17dc0cc19c4c58e6c795e085e2e8985598d403a0
+ms.openlocfilehash: 4ea72cf6410eb30d83103bceb4a1628bafd33ac7
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/09/2017
 
 ---
 
@@ -51,7 +51,10 @@ ms.lasthandoff: 05/25/2017
 -   オプション: 顧客のそれぞれに複数の委任状があると予測される場合、**期間** フィールドで **請求書**を選択します。 各請求書ごとの個別の支払を作成し、支払ごとに各請求書に指定された委任状が使用されます。
 -   口座引落の委任状を使用して支払を作成するには、[**委任状の要求**] オプションを選択します。 [**委任状の要求**] オプションは、[**支払タイプ**] フィールドで [**電子支払**] を選択している場合にのみ使用できます。
 
-[口座引落の概要](sepa-direct-debit-overview.md)も参照してください 
+参照
 
+[口座引落の概要](sepa-direct-debit-overview.md) 
+
+[顧客の口座引落の委任状の作成](tasks/create-direct-debit-mandate-customer.md) 
 
 

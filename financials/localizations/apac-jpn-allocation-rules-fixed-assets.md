@@ -13,17 +13,15 @@ audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 10194
-ms.assetid: ba1302f1-5b7d-44c4-af00-ec629f388e19
 ms.search.region: Japan
 ms.author: RichardLuan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: fa42356923718a29f99cd8a986a4f08496018b43
+ms.translationtype: HT
+ms.sourcegitcommit: cb5ab0e64b2a663af627d4d46e3a74aa526058b8
+ms.openlocfilehash: 450b17969e534a6d0ee6d3c81cb9dac2433caa9c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 07/28/2017
 
 ---
 
@@ -63,6 +61,8 @@ ms.lasthandoff: 05/25/2017
 
 各分析コードに割り当てる合計の切り下げた減価償却費が丸める額よりも小さい場合、この配賦ルールは減価償却に適用しません。 代わりに、減価償却額は主勘定に転記されるか、**固定資産転記プロファイル**  ページで設定する転記プロファイルを使用して相殺されます。 これらおよび同様のシナリオを回避するために、固定資産減価償却の丸めルールを**通貨**ページで手動で調整できます。
 
+## <a name="additional-resources"></a>その他のリソース
+- [資産グループへの共有資産とのれんの帳簿価額の配賦](./tasks/allocate-carrying-amount.md)
 
 
 

@@ -1,9 +1,9 @@
 ---
 title: "確認後支払ファイルの設定と生成"
 description: "この記事は、確認後支払を設定し、確認後支払ファイルを生成する方法を説明します。"
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -14,8 +14,8 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 88433
 ms.assetid: 73f3dcf6-040a-44ad-9512-7b3e0d17a571
 ms.search.region: Global
-ms.author: abruer
-ms.search.validFrom: 2016-05-31T00:00:00.000Z
+ms.author: Shiva.Pandey
+ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008

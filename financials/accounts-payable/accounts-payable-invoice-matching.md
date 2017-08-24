@@ -3,7 +3,7 @@ title: "買掛金請求書照合"
 description: "買掛金勘定の請求書照合は、仕入先請求書、発注書、および製品受領情報を照合するプロセスです。"
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,12 +18,11 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 6d1348ad43f8170f29bfc2f3df8a2ec60f9f8912
+ms.translationtype: HT
+ms.sourcegitcommit: 1982e495f740d6061b9574aa9f40f38180e8d110
+ms.openlocfilehash: aa195f6057ae4ea511d661ffb47b1feeed58d2f9
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 08/03/2017
 
 ---
 
@@ -192,7 +191,7 @@ ms.lasthandoff: 05/25/2017
 -   元の発注書には記載されていなかった請求金額を入力して、請求書情報を仕入先から受け取った請求書と照合する。 発注書の請求金額は請求書の請求金額と比較できます。 必要に応じて、請求書に請求金額を追加して、請求明細行に割り当てることができます。
 -   請求書の正味単価と発注書の正味単価の間の価格照合不一致を表示して承認する。 法人、仕入先、品目に品目を価格の許容率を設定できます。 仕入先請求書の明細行価格が価格許容範囲外にある場合は、転記の承認が得られるまで、あるいは仕入先から訂正を受け取るまで、請求書を保存できます。
 
-詳細については、「[スリーウェイ マッチング ポリシー](three-way-matching-policies.md)」を参照してください。
+詳細については、[3状況照合ポリシー](three-way-matching-policies.md) および [買掛金請求書照合の検証の設定](tasks/set-up-accounts-payable-invoice-matching-validation.md)を参照してください。 
 
 
 

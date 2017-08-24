@@ -1,9 +1,9 @@
 ---
 title: "定期請求書の設定と処理"
 description: "この記事は、定期的な請求書の設定および処理の方法を説明します。 定期的に同じ金額に対して請求書を発行する場合に、定期的な請求書を使用できます。"
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -15,7 +15,7 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 14011
 ms.assetid: 9cc37003-adf1-413d-b2b2-2badcf512e3b
 ms.search.region: Global
-ms.author: mfalkner
+ms.author: Shiva.Pandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
@@ -23,7 +23,6 @@ ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
 ms.openlocfilehash: 463a81d615e6820b6ab45592cd21e28a76c6c04d
 ms.contentlocale: ja-jp
 ms.lasthandoff: 05/25/2017
-
 
 ---
 

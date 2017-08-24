@@ -1,7 +1,7 @@
 ---
 title: "前払請求書と前払"
 description: "この記事は、組織が事前の支払 (前払) に使用できる 2 つの方法に関する説明と対比を提供します。 ひとつは、発注書に関連付けられている前払請求書を作成します。 もう 1 つの方法では、仕訳入力を作成し、前払仕訳伝票としてマークすることによって前払仕訳伝票を作成できます。"
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,7 +15,7 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 15871
 ms.assetid: a0bb5220-73d4-48ae-84d0-46a171c224fa
 ms.search.region: Global
-ms.author: kweekley
+ms.author: Shiva.Pandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
@@ -23,7 +23,6 @@ ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
 ms.openlocfilehash: c4f127007cea1d8ccd0b4e9ea637f0674775278d
 ms.contentlocale: ja-jp
 ms.lasthandoff: 05/25/2017
-
 
 ---
 

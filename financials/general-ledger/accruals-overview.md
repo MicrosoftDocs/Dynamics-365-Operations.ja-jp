@@ -3,7 +3,7 @@ title: "見越計上の概要"
 description: "この記事は、見越し計上について説明し、その設定方法およびトランザクションの作成方法に関する情報を提供します。"
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,13 +16,13 @@ ms.custom: 14131
 ms.assetid: 0489b59a-37a7-4a78-87bf-4b597e9efad9
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 5ad5030da963ca961d49e645b1d9ad19453376b8
+ms.translationtype: HT
+ms.sourcegitcommit: c4f5dae90c5fcaaa52a7087d7c20b2de343b7da0
+ms.openlocfilehash: 87d9f7fbdbc06a3399a6ec5c2492de0f053b1513
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/01/2017
 
 ---
 
@@ -47,5 +47,5 @@ ms.lasthandoff: 05/25/2017
 仕訳帳を入力すると、[**機能**] メニューの [**元帳計**] をクリックできます。 その後、発生主義スキーマを選択すると、発生主義スキーマによって決定される、その期間にわたって分割される仕訳帳からの基準額が表示されます。 たとえば、1 月に 1 年間全体の従業員の保険料を 12,000 支払う場合、各月の保険料を確認する必要があります。 開始日は選択できます。 また、金額が勘定または相手勘定に基づくかどうかを指定できます。 選択後に、[**トランザクション**] をクリックして、発生主義スキーマに基づいて作成されたすべてのトランザクションを表示します。 たとえば、1 年間の保険料 12,000 を分割する場合、各月では 1,000 が表示されます。 仕訳帳を転記した後、[**伝票トランザクション**] 照会ページを使用して、トランザクションを表示できます。 発生主義スキーマが適用できない場合 (たとえば、販売注文請求書または発注請求書が含まれる場合)、前払金額を貸方転記し、経費金額を借方転記できます。 その後、発生主義スキーマの適用時に [**相殺**] を選択できます。
 
 
-
+詳細については、[発生主義スキーマの作成](tasks/create-accrual-schemes.md) および [元帳発生トランザクションの作成](tasks/create-ledger-accrual-transactions.md)を参照してください。
 

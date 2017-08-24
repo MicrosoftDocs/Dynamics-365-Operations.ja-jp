@@ -16,10 +16,10 @@ ms.assetid: 1d293b3a-2fa2-418d-9347-78c2809d67fe
 ms.search.region: global
 ms.author: mkirknel
 ms.dyn365.ops.intro: Version 1611
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 9ea9eb66abf7898ce735e1204259fcc9b9523c52
-ms.openlocfilehash: d76b3592ed8274498a7a58c46cc83619f2f668f5
+ms.sourcegitcommit: 1945d137b337508a1850e3e679a60487aecb6b84
+ms.openlocfilehash: fc8b7f6901ffd5c97fb864dbd3f87c5c70a31487
 ms.contentlocale: ja-jp
 ms.lasthandoff: 07/27/2017
 
@@ -102,10 +102,10 @@ Microsoft Dynamics 365 for Operations バージョン 1611 およびプラット
 <td>仕入先のユーザーは、Web クライアントで仕入先コラボレーション Web インターフェイスにアクセスし、仕入先コラボレーション ユーザーを設定する必要があります。</td><td>購買担当者およびシステム管理者</td>
 <td>仕入先コラボレーション Web インターフェイスの設定および作業では、以下のトピックでの手順に従います。
 <ul>
-<li><a href="/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-external-vendors">外部仕入先との作業のために仕入先コラボレーションを使用</a></li>
-<li><a href="/dynamics365/unified-operations/supply-chain/procurement/manage-vendor-collaboration-user">仕入先コラボレーション ユーザーの管理</a></li>
-<li><a href="/dynamics365/unified-operations/supply-chain/procurement/set-up-maintain-vendor-collaboration">仕入先コラボレーションの設定と管理</a></li>
-<li><a href="/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations">Finance and Operations で仕入先コラボレーションを使用して顧客に対応</a></li>
+<li><a href="vendor-collaboration-work-external-vendors.md">外部仕入先との作業のために仕入先コラボレーションを使用</a></li>
+<li><a href="manage-vendor-collaboration-users.md">仕入先コラボレーション ユーザーの管理</a></li>
+<li><a href="set-up-maintain-vendor-collaboration.md">仕入先コラボレーションの設定と管理</a></li>
+<li><a href="vendor-collaboration-work-customers-dynamics-365-operations.md">Finance and Operations で仕入先コラボレーションを使用して顧客に対応</a></li>
 </ul></td>
 </tr>
 </tbody>

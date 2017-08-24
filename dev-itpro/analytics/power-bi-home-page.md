@@ -1,9 +1,9 @@
 ---
-title: "使用可能な Power BI コンテンツ"
+title: "[Power BI コンテンツ]"
 description: "このトピックでは、使用可能な Power BI コンテンツの一覧を示し、リソースについて詳しく知ることができます。"
 author: sericks007
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 08/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -15,17 +15,17 @@ ms.custom: 265694
 ms.assetid: 0095a7cf-8cc9-41f6-bf00-b59868fa6ea2
 ms.search.region: Global
 ms.author: sericks
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
-ms.openlocfilehash: 282973618e56db3feb0103a7021a66d137218a7a
+ms.sourcegitcommit: 0574c8c1164ef54095135bd9b3f2a946320f8996
+ms.openlocfilehash: f6401406981abc3252b7247510e80f12f2c4510d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 07/25/2017
+ms.lasthandoff: 08/07/2017
 
 ---
 
-# <a name="power-bi-content-available"></a>使用可能な Power BI コンテンツ
+# <a name="power-bi-content"></a>[Power BI コンテンツ]
 [!include[banner](../includes/banner.md)]
 
 
@@ -34,6 +34,7 @@ ms.lasthandoff: 07/25/2017
 ## <a name="power-bi-content-for-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update"></a>Dynamics 365 for Finance and Operations の Power BI コンテンツ、Enterprise エディション 2017 年 ７ 月の更新プログラム
 Microsoft Dynamics 365 for Finance and Operations,Enterprise エディション 2017 年 7 月の更新プログラムを使用している場合、以下の Power BI コンテンツを使用できます。
 
+- [実績対予算 Power BI コンテンツ](ledger-budgets-power-bi.md)
 - [給付金 Power BI コンテンツ](benefits-power-bi.md)
 - [キャッシュの概要 Power BI コンテンツ](/dynamics365/unified-operations/financials/cash-bank-management/Cash-Overview-Power-BI-content)
 - [CFO の概要 Power BI コンテンツ](CFO-power-bi.md)
@@ -58,7 +59,7 @@ Microsoft Dynamics 365 for Finance and Operations,Enterprise エディション 
 #### <a name="embedded-content"></a>埋め込みコンテンツ
 アスタリスク (\*) で表示されているコンテンツを除いて、以前の一覧のすべてのコンテンツがアプリケーションに埋め込まれています。 Power BI コンテンツを表示する場所の詳細については、上のリンクをクリックします。
 
-Power BI レポートでデータを表示するには、エンティティ格納を更新します。 詳細については、[エンティティ格納と Power BI の統合の概要](power-bi-integration-entity-store.md)の [*Update Entity store*] セクションを参照してください。
+Power BI レポートでデータを表示するには、エンティティ格納を更新します。 詳細については、[エンティティ格納と Power BI の統合の概要](power-bi-integration-entity-store.md)の [*エンティティ格納の更新*] セクションを参照してください。
 
 #### <a name="files-available-in-lifecycle-services"></a>Lifecycle Services で使用可能なファイル
 この Power BI コンテンツは、Microsoft Dynamics Lifecycle Services (LCS) の共有資産ライブラリで使用可能です。 コンテンツのダウンロード方法およびデータに接続する方法の詳細については、「[Microsoft およびパートナーからの LCS での Power BI コンテンツ](power-bi-content-microsoft-partners.md)」を参照してください。 Power BI コンテンツの実装方法を示すデモを視聴するには、「[Microsoft の Power BI コンテンツおよび Dynamics Lifecycle Services のパートナー](https://mix.office.com/watch/9puyb1b2xs1w)」の Office Mix を参照してください。

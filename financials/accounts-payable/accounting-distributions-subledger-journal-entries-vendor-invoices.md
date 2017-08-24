@@ -1,9 +1,9 @@
 ---
 title: "仕入先請求書の勘定配布と補助元帳仕訳"
 description: "勘定配布は、仕入先請求書における経費、税金、または手数料などの計上方法など、金額をどのように計上するかを定義します。 仕入先請求書を仕訳入力するときに計上しなければならない金額にはいずれも一つ以上の勘定配布があります。"
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -15,7 +15,7 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 26891
 ms.assetid: 93dc608a-b5b4-4ec3-83c2-618e3d80a583
 ms.search.region: Global
-ms.author: mfalkner
+ms.author: Shiva.Pandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
@@ -23,7 +23,6 @@ ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
 ms.openlocfilehash: 35133c305457b53abdf761f7fd557bf81bc28cde
 ms.contentlocale: ja-jp
 ms.lasthandoff: 05/25/2017
-
 
 ---
 
