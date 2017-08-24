@@ -14,13 +14,13 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 104173
 ms.search.region: Global
 ms.author: shylaw
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9f4b007c174961a8e6794ab532d733584f492758
-ms.openlocfilehash: ead315d2e07818b35dd2806fca7e242f4028be07
+ms.sourcegitcommit: db41b3873755f93895aea7a32b65f2a8ed6a57fd
+ms.openlocfilehash: 25cba59dfbab2e1030660840e85d278452e39e52
 ms.contentlocale: ja-jp
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/10/2017
 
 ---
 
@@ -29,9 +29,9 @@ ms.lasthandoff: 07/27/2017
 [!include[banner](../includes/banner.md)]
 
 
-Microsoft Dynamics 365 for Finance and Operations には、[製品可用性ガイド](http://download.microsoft.com/documents/en-us/dynamics/Microsoft%20Dynamics%20AX%20Product%20Availability%20Guide.pdf)に記載されている国/地域向けの機能が用意されています。 この機能は、現在有効な法人の基本住所に基づいて有効になります。 
+Microsoft Dynamics 365 for Finance and Operations には、[製品可用性ガイド](http://download.microsoft.com/documents/en-us/dynamics/Microsoft%20Dynamics%20AX%20Product%20Availability%20Guide.pdf) に記載されている国/地域向けの機能が用意されています。 この機能は、現在有効な法人の基本住所に基づいて有効になります。 
 
-このトピックでは、国/地域固有の機能について詳しく説明しているリソースの一覧を示します。 
+このトピックでは、国/地域固有のソリューション、更新プログラム、アラートおよび機能について詳しく説明しているリソースの一覧を示します。 
 
 ## <a name="developing-localized-solutions"></a>ローカライズ版ソリューションの開発
 以下のリソースは、国/地域に固有のカスタマイズを作成しているか、または Microsoft によってサポートされていない国向けのソリューションを作成している開発者および ISV にとって有益なガイダンスと情報を提供します。
@@ -96,11 +96,15 @@ Microsoft Dynamics 365 for Finance and Operations には、[製品可用性ガ�
 -   [CODA 口座取引明細書](/dynamics365/unified-operations/financials/localizations/emea-bel-coda-bank-statement-import)
 -   [INTERVAT 税申告](/dynamics365/unified-operations/financials/localizations/emea-bel-intervat-tax-declaration)
 -   [PRODCOM レポートの設定](/dynamics365/unified-operations/financials/localizations/emea-bel-prodcom-report)
+-   [調整レポート](/dynamics365/unified-operations/financials/localizations/emea-bel-reconciliation-reports)
 
 ### <a name="brazil"></a>ブラジル
 
+-   [CIAP 固定資産](/dynamics365/unified-operations/financials/localizations/latam-bra-ciap-fixed-asset)
+-   [会計帳簿のコンフィギュレーション](/dynamics365/unified-operations/financials/localizations/latam-bra-configure-fiscal-books)
+-   [総勘定元帳連結のトランザクションのエクスポートとインポート (ブラジル用)](/dynamics365/unified-operations/financials/localizations/latam-bra-general-ledger-consolidation-transactions)
 -   [会計帳簿](/dynamics365/unified-operations/financials/localizations/latam-bra-fiscal-books)
--   [会計ドキュメントのテキスト プレース ホルダー](/dynamics365/unified-operations/financials/localizations/latam-bra-fiscal-document-text-placeholders)
+-   [会計ドキュメントのテキスト プレースホルダー](/dynamics365/unified-operations/financials/localizations/latam-bra-fiscal-document-text-placeholders)
 -   [会計ドキュメント](/dynamics365/unified-operations/financials/localizations/latam-bra-fiscal-documents-fiscal-document-framework)
 -   [ICMS 税の会計ドキュメント](/dynamics365/unified-operations/financials/localizations/latam-bra-icms-tax-fiscal-documents)
 -   [NF E XML ドキュメントと DANFE ファイルのインポートと確認](/dynamics365/unified-operations/financials/localizations/latam-bra-import-verify-nf-e-xml-documents-danfe-emails)
@@ -108,13 +112,15 @@ Microsoft Dynamics 365 for Finance and Operations には、[製品可用性ガ�
 -   [電子支払の返金プロセス中に生成される仕訳帳](/dynamics365/unified-operations/financials/localizations/latam-bra-examples-journals-generated-electronic-payment-return-process)
 -   [NF-e プロセス](/dynamics365/unified-operations/financials/localizations/latam-bra-nf-e-process)
 -   [法人のパラメーター](/dynamics365/unified-operations/financials/localizations/latam-bra-legal-entity-parameters)
+-   [電子支払送金の処理 (ブラジル用)](/dynamics365/unified-operations/financials/localizations/latam-bra-process-electronic-payment-remittances)
 -   [購買補助会計ドキュメント](/dynamics365/unified-operations/financials/localizations/latam-bra-purchase-complementary-fiscal-documents)
 -   [参照される会計ドキュメント](/dynamics365/unified-operations/financials/localizations/latam-bra-referenced-fiscal-documents)
 -   [販売補助会計ドキュメント](/dynamics365/unified-operations/financials/localizations/latam-bra-sales-complementary-fiscal-documents)
 -   [サービスの電子会計ドキュメント](/dynamics365/unified-operations/financials/localizations/latam-bra-service-electronic-fiscal-document)
+-   [NF E XML ドキュメントと DANFE の設定、インポートおよび確認](/dynamics365/unified-operations/financials/localizations/latam-bra-set-up-import-nfe)
 -   [税の属性](/dynamics365/unified-operations/financials/localizations/latam-bra-tax-attributes)
 -   [税支払](/dynamics365/unified-operations/financials/localizations/latam-bra-tax-payments)
--   [税](/dynamics365/unified-operations/financials/localizations/latam-bra-calculate-taxes)
+-   [税申告](/dynamics365/unified-operations/financials/localizations/latam-bra-calculate-taxes)
 
 ### <a name="china"></a>中国
 -   [部品表の比較](/dynamics365/unified-operations/financials/localizations/apac-chn-bom-comparison)
@@ -159,6 +165,7 @@ Microsoft Dynamics 365 for Finance and Operations には、[製品可用性ガ�
 - [為替レート調整](/dynamics365/unified-operations/financials/localizations/emea-exchange-rate-adjustments)
 - [支払方法のファイル形式](/dynamics365/unified-operations/financials/localizations/emea-select-file-formats-for-the-method-of-payments)
 - [エストニアおよびリトアニアの固定資産の処分](/dynamics365/unified-operations/financials/localizations/emea-credit-note-reverse-fixed-asset-sale)
+- [ISO20022 ファイルのインポート](/dynamics365/unified-operations/financials/localizations/emea-ISO20022-file-formats)
 - [イントラスタット](/dynamics365/unified-operations/financials/localizations/emea-intrastat)
 - [在庫仕訳レポート](/dynamics365/unified-operations/financials/localizations/emea-set-up-report-inventory-journal-names)
 - [ラトビアおよびリトアニアの請求書と梱包明細の番号付け](/dynamics365/unified-operations/financials/localizations/emea-invoices-packing-slips-numbering)
@@ -174,6 +181,7 @@ Microsoft Dynamics 365 for Finance and Operations には、[製品可用性ガ�
 - [単一ユーロ支払地域 (SEPA) 口座引落の概要](/dynamics365/unified-operations/financials/accounts-receivable/sepa-direct-debit-overview)
 - [顧客および仕入先補償の設定](/dynamics365/unified-operations/financials/localizations/emea-compensation-customer-vendor-transactions)
 - [印刷フォームの署名者の設定](/dynamics365/unified-operations/financials/localizations/emea-set-up-signers-for-printing-forms)
+- [逆仕訳会計](/dynamics365/unified-operations/financials/localizations/emea-storno)
 - [税指示](/dynamics365/unified-operations/financials/localizations/emea-tax-directives)
 - [レポートおよびドキュメントの金額表示方法の更新](/dynamics365/unified-operations/financials/localizations/emea-amount-printing-forms) 
 - [VAT 為替レート](/dynamics365/unified-operations/financials/localizations/emea-vat-exchange-rate)
@@ -246,6 +254,7 @@ Microsoft Dynamics 365 for Finance and Operations には、[製品可用性ガ�
 
 -   [固定資産修復明細書](/dynamics365/unified-operations/financials/localizations/emea-ltu-fixed-asset-repair-statement)
 -   [請求書と梱包明細の番号付け](/dynamics365/unified-operations/financials/localizations/emea-invoices-packing-slips-numbering)
+-   [VAT 明細書の詳細](/dynamics365/unified-operations/financials/localizations/emea-ltu-vat-statement-details)
 
 ### <a name="mexico"></a>メキシコ
 
@@ -296,6 +305,7 @@ Microsoft Dynamics 365 for Finance and Operations には、[製品可用性ガ�
 -   [固定資産の再評価グループ](/dynamics365/unified-operations/financials/localizations/emea-esp-fixed-asset-group-revaluation)
 -   [EU 内 VAT](/dynamics365/unified-operations/financials/localizations/emea-esp-intra-community-vat)
 -   [一時顧客](/dynamics365/unified-operations/financials/localizations/emea-esp-no-one-time-customer-for-project-contracts)
+-   [スペインのレイアウトを使用して小切手を印刷](/dynamics365/unified-operations/financials/localizations/emea-esp-print-checks-with-spanish-layout)
 -   [スペインの支払手形のオプション](/dynamics365/unified-operations/financials/localizations/emea-esp-promissory-note-options)
 -   [販売および購買サイクル](/dynamics365/unified-operations/financials/localizations/emea-esp-sales-purchase-cycle)
 -   [特殊エントリと期首表](/dynamics365/unified-operations/financials/localizations/emea-esp-opening-sheets-spain)
@@ -313,6 +323,7 @@ Microsoft Dynamics 365 for Finance and Operations には、[製品可用性ガ�
 ### <a name="thailand"></a>タイ
 
 -   [在庫カード レポート](/dynamics365/unified-operations/financials/localizations/apac-tha-stock-card-reports)
+-   [税金請求書の代用/調整 (タイ用)](/dynamics365/unified-operations/financials/localizations/apac-tha-substitution-and-adjustment-invoices)
 -   [未実現 VAT](/dynamics365/unified-operations/financials/localizations/apac-tha-unrealized-vat)
 -   [源泉徴収税](/dynamics365/unified-operations/financials/localizations/apac-tha-withholding-tax)
 
@@ -322,6 +333,7 @@ Microsoft Dynamics 365 for Finance and Operations には、[製品可用性ガ�
 
 ### <a name="united-states"></a>米国
 
+-   [公的機関のフォーム 1099](/dynamics365/unified-operations/financials/localizations/noam-usa-form-1099-public-sector)   
 -   [フォーム I-9 の検証](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-form-i-9-verification)
 -   [年度末の 1099 レポート](/dynamics365/unified-operations/financials/localizations/noam-usa-year-end-1099-reporting)
 -   [給与](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-payroll)
