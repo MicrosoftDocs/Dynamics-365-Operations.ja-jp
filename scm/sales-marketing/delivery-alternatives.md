@@ -1,7 +1,7 @@
 ---
 title: "代替配送先"
 description: "受注管理者は、代替配送処理ページを使用して、代替注文処理オプションを検出できます。"
-author: YuyuScheller
+author: ChristianRytt
 manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: SalesLineDeliveryDetails
 audience: Application User
-ms.reviewer: annbe
+ms.reviewer: yuyus
 ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 271623
 ms.assetid: 527f6084-44fe-41bb-924f-4386e926358a

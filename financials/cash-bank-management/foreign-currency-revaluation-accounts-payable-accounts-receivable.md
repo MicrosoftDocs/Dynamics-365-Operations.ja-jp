@@ -1,7 +1,7 @@
 ---
 title: "[買掛金勘定] および [売掛金勘定] の外貨再評価"
 description: "為替レートの変動は、外貨での未処理トランザクションの計算上の金額 (簿価額) が時間の経過と共に変化する原因になります。 この記事は、[買掛金勘定] および [売掛金勘定] の未処理トランザクションの値を更新するために実行する外貨再評価プロセスに関する情報を提供します。"
-author: twheeloc
+author: kweekley
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -23,7 +23,6 @@ ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
 ms.openlocfilehash: f09589a6f0a684752c7c9b98528e9546fedf341e
 ms.contentlocale: ja-jp
 ms.lasthandoff: 05/25/2017
-
 
 ---
 

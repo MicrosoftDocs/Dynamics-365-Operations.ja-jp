@@ -1,7 +1,7 @@
 ---
 title: "仕訳入力およびトランザクションの表示"
 description: "この記事は、仕訳入力およびトランザクションを表示するためのさまざまな方法を説明します。"
-author: RobinARH
+author: aprilolson
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article

@@ -1,7 +1,7 @@
 ---
 title: "年度末決算"
 description: "このトピックでは、一般会計の年度末決算処理を実行するために必要な設定と手順について説明します。"
-author: twheeloc
+author: kweekley
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article

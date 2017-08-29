@@ -1,7 +1,7 @@
 ---
 title: "給与の期首残高を入力します。"
 description: "所得コード、控除、福利厚生、および税額の期首残高を入力するための手順を説明します。 この情報は、パートナーが別のシステムから新しい給与実装のデータを移行または転送する場合に役立ちます。"
-author: kherr
+author: kherr75
 manager: AnnBe
 ms.date: 07/01/2017
 ms.topic: article
@@ -15,7 +15,7 @@ ms.custom: 20931
 ms.assetid: b48b1cb2-6e66-467e-9c0e-09b6a4aeb9fe
 ms.search.region: Global
 ms.author: kherr
-ms.search.validFrom: 2017-07-01T00:00:00.000Z
+ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
 ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e

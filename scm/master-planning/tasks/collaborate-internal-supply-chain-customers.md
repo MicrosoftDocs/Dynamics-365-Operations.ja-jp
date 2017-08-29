@@ -1,7 +1,7 @@
 --- 
 title: "社内サプライ チェーンの顧客との共同作業"
 description: "この手順では、会社間仕入先によって達成されるすべての計画オーダーを表示する方法を示します。"
-author: YuyuScheller
+author: roxanadiaconu
 manager: AnnBe
 ms.date: 10/17/2016
 ms.topic: business-process
@@ -14,7 +14,7 @@ ms.search.scope: Operations
 ms.search.region: Global
 ms.author: yuyus
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
+ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
 ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
 ms.openlocfilehash: 27181443dcf682fc2409ae3b5ca537f653047a57

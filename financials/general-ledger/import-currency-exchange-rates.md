@@ -1,7 +1,7 @@
 ---
 title: "現在の通貨為替レートをインポート"
 description: "法人が外貨で請求書を受け取った場合は、外貨を国内通貨に変換する必要があります。 これは異なる通貨に対する最新の為替レートが必要であることを意味します。 このトピックでは、ヨーロッパ中央銀行やロシア中央銀行などの為替レート プロバイダーによってインターネット経由で公開されている為替レートをインポートするために必要な設定と処理の概要を説明します。"
-author: ShylaThompson
+author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -16,7 +16,7 @@ ms.custom: 261374
 ms.assetid: b2b22868-de68-439f-914c-78c6930b7340
 ms.search.region: Global
 ms.author: epopov
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008

@@ -1,7 +1,7 @@
 ---
 title: "集中支払の設定"
 description: "ある 1 つの法人で組織内の他の法人に代わって支払を処理するように準備するには、次の手順に従います。"
-author: twheeloc
+author: kweekley
 manager: AnnBe
 ms.date: 05/09/2017
 ms.topic: article

@@ -1,7 +1,7 @@
 ---
 title: "主勘定タイプ"
 description: "主勘定タイプにより、勘定科目表での主勘定の使用方法が決まります。"
-author: twheeloc
+author: aprilolson
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article

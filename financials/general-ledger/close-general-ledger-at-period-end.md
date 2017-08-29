@@ -1,7 +1,7 @@
 ---
 title: "期末に一般会計を決算"
 description: "このトピックでは、一般会計の期間締めを実行する場合に通常完了するタスクについて説明します"
-author: RobinARH
+author: aprilolson
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article

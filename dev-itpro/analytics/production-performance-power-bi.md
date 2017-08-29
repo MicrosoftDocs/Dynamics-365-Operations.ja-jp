@@ -1,7 +1,7 @@
 ---
 title: "生産パフォーマンス Power BI コンテンツ"
 description: "このトピックでは、生産パフォーマンス Power BI コンテンツに何が含まれているのか説明します。 Power BI レポートにアクセスする方法を説明し、コンテンツを作成するために使用したデータ モデルおよびエンティティについての情報を提供します。"
-author: sericks
+author: AndersGirke
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article

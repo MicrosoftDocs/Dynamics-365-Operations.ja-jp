@@ -1,7 +1,7 @@
 ---
 title: "見越計上の概要"
 description: "この記事は、見越し計上について説明し、その設定方法およびトランザクションの作成方法に関する情報を提供します。"
-author: RobinARH
+author: aprilolson
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article

@@ -1,7 +1,7 @@
 ---
 title: "顧客ロイヤルティー プログラムの設定"
 description: "この記事では、ロイヤルティ プログラムの設定方法について説明します。 ロイヤルティ プログラムを使用すると、小売店舗で製品を購買する顧客に対して報酬を与え、顧客のロイヤルティを高めることができます。 Microsoft Dynamics 365 for Retail では、すべての小売チャンネルの法人に適用する、簡単または複雑なロイヤルティ プログラムを設定できます。"
-author: josaw1
+author: scott-tucker
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -23,8 +23,6 @@ ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
 ms.openlocfilehash: 710f8ae3a6a2b5072f37879aad066dc699ede8f0
 ms.contentlocale: ja-jp
 ms.lasthandoff: 06/20/2017
-
-
 
 ---
 

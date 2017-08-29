@@ -1,7 +1,7 @@
 ---
 title: "売上グループを使用して POS のコミッションを追跡する"
 description: "顧客からの支援、アップセリング、クロスセリング、トランザクションの処理を担当したアソシエイトの売上を追跡するのは、一般的な小売業務です。"
-author: josaw1
+author: jblucher
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,13 +17,12 @@ ms.search.region: global
 ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611, Retail Version
+ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
 ms.openlocfilehash: 31f57519aa55a06256d2b31cc64d4a964d889555
 ms.contentlocale: ja-jp
 ms.lasthandoff: 05/25/2017
-
 
 ---
 

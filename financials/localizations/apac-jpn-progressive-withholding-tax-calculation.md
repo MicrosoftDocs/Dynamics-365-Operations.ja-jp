@@ -14,7 +14,7 @@ ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 265164
 ms.assetid: 5ee3e381-31c4-48ac-9488-0eb1bc524cf5
 ms.search.region: Japan
-ms.author: RichardLuan
+ms.author: riluan
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
@@ -22,7 +22,6 @@ ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
 ms.openlocfilehash: f7a2d7983ba29d6f495ad0ea5ab9b2711dffc4e7
 ms.contentlocale: ja-jp
 ms.lasthandoff: 05/25/2017
-
 
 ---
 
