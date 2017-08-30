@@ -1,7 +1,7 @@
 ---
 title: "小売チャンネルの定義と管理"
 description: "この記事では、Microsoft Dynamics 365 for Retail では小売店舗とも呼ばれる、従来型の店舗を設定するプロセスの概要を説明します。 ここでは、小売店舗を設定する前と後の、実施する必要のあるタスクについて説明します。"
-author: josaw1
+author: mugunthanm
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,7 +17,7 @@ ms.assetid: 14496d96-1c72-43ce-a2e7-8467bab4ae46
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: mumani
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
