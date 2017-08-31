@@ -1,7 +1,7 @@
 ---
 title: "バーコード マスクの設定"
 description: "このトピックでは、バーコード マスク文字、バーコード マスクの設定方法、バーコードにバーコード マスクを割り当てる方法について説明します。"
-author: josaw1
+author: rubencdelgado
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -23,8 +23,6 @@ ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
 ms.openlocfilehash: 958cac2e85ae7fa514f6f26cbb6178d8fdec9783
 ms.contentlocale: ja-jp
 ms.lasthandoff: 06/20/2017
-
-
 
 ---
 

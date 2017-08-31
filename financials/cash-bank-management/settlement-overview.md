@@ -1,7 +1,7 @@
 ---
 title: "決済の概要"
 description: "この記事は、決済プロセスに関する一般情報を提供します。 決済できるトランザクションのタイプ、トランザクションの決済時期と決済方法、および決済プロセスの結果について説明します。"
-author: twheeloc
+author: kweekley
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -23,7 +23,6 @@ ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
 ms.openlocfilehash: ab12ef4127daf57fb0816ae1585876b50d1e81ed
 ms.contentlocale: ja-jp
 ms.lasthandoff: 06/20/2017
-
 
 ---
 

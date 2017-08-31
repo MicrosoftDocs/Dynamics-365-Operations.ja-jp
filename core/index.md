@@ -13,13 +13,13 @@ ms.reviewer: margoc
 ms.custom: 62303
 ms.search.region: Global
 ms.author: margoc
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: fc446f381850f4f42b6dbc886646d3d32f2d5dd7
-ms.openlocfilehash: 1b46d24a0f671502c9dc3d46849240342d680468
+ms.sourcegitcommit: 8ae84f23744947cf49365d318a208802c6db95a9
+ms.openlocfilehash: 5c40e4bf1d2defeeb656348e1bc3886d5423ca12
 ms.contentlocale: ja-jp
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/16/2017
 
 ---
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 07/27/2017
 
 Microsoft Dynamics 365 for Finance and Operations は、Microsoft の企業向けビジネス アプリケーションです。 リアルタイムな洞察とデータにアクセスできるインテリジェントなユーザー インターフェイスを介して、従業員がより高度な意思決定を迅速に行えるようにします。 また、実証済みのビジネス ロジックを提供することで企業の変革と革新を促進し、業務プロセスの迅速な再設計を実現します。 さらに、企業が自社のペースで成長し、時間と場所を問わず業務を行うことができる柔軟性を提供することで、ビジネス ニーズに応じたグローバルな業務拡大を可能にします。 
 
-このドキュメントでは、Dynamics 365 for Finance and Operations を業務に役立てるための方法を紹介します。 Unified Operations スイート、Dynamics 365 for Retail、Dynamics 365 for Talent の関連製品のドキュメントに関連付けられています。 
+このドキュメントでは、Dynamics 365 for Finance and Operations を業務に役立てるための方法を紹介します。 関連製品 Dynamics 365 for Retail、Dynamics 365 for Talent のドキュメントに関連付けられています。 
 
 <table>
 <colgroup>
@@ -86,7 +86,7 @@ Microsoft Dynamics 365 for Finance and Operations は、Microsoft の企業向�
 <p><a href="../dev-itpro/analytics/financial-reporting-intro">財務報告</a></p>
 <p><a href="../dev-itpro/analytics/general-electronic-reporting">規制に関する報告</a></p>
 
-<h3><a href="../dev-itpro/mobile-apps/mobile-platform">モバイル プラットフォーム</a></h3>
+<h3><a href="../dev-itpro/mobile-apps/platform/mobile-platform-home-page">モバイル プラットフォーム</a></h3>
 
 <h3>開発者向け機能</h3>
 <p><a href="../dev-itpro/dev-tools/developer-home-page">開発者ホーム ページ</a></p>

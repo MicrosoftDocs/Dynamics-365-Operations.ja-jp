@@ -1,7 +1,7 @@
 ---
 title: "総勘定元帳残高"
 description: "この記事は、試算表のリスト ページと財務レポートという、総勘定元帳勘定の残高を表示する 2 つの方法を説明します。 また、分析コード セットの残高を更新する方法について説明します。"
-author: RobinARH
+author: aprilolson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -16,7 +16,7 @@ ms.custom: 13191
 ms.assetid: ea3650ac-34a0-4516-b75b-801c2164107d
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670

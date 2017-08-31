@@ -1,7 +1,7 @@
 ---
 title: "レシートのテンプレートおよび印刷"
 description: "この記事は、フォーム レイアウトを変更して、レシート、請求書、およびその他の文書の印刷方法を制御する方法について説明します。 Microsoft Dynamics 365 for Retail ではさまざまな種類のフォーム レイアウトを簡単に作成および変更するフォーム レイアウト デザイナーが用意されています。"
-author: josaw1
+author: rubencdelgado
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -23,8 +23,6 @@ ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
 ms.openlocfilehash: 6f1ec982522c6fe677b1921b69d5d04c4e783725
 ms.contentlocale: ja-jp
 ms.lasthandoff: 06/20/2017
-
-
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "勘定科目表名の計画"
 description: "この記事では、組織の勘定科目表を計画する際に役立つ情報を提供します。"
-author: twheeloc
+author: aprilolson
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article

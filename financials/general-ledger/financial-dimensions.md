@@ -1,7 +1,7 @@
 ---
 title: "財務分析コード"
 description: "このトピックは、財務分析コードのさまざまなタイプと設定方法を説明します。"
-author: twheeloc
+author: aprilolson
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
