@@ -1,7 +1,7 @@
 ---
 title: "バーコード スキャナー用かんばん転送ボードのサポート"
 description: "かんばん転送ボードは、かんばん作業を選択、開始、完了、および空にするためのウィジェット バーコード スキャナーのスキャナー入力をサポートします。"
-author: YuyuScheller
+author: ChristianRytt
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,7 +17,7 @@ ms.assetid: a426f645-d59b-4c98-8d78-eba8d64a562e
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
