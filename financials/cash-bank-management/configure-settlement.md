@@ -1,7 +1,7 @@
 ---
 title: "決済のコンフィギュレーション"
 description: "トランザクションを決済する方法とタイミングは複雑な題目になります。そのため、業務上の要件を満たすためのパラメータを理解し、適切に定義する必要があります。 この記事は、買掛金勘定、売掛金勘定の両方の決済に使用するパラメータについて説明します。"
-author: twheeloc
+author: kweekley
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -23,7 +23,6 @@ ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
 ms.openlocfilehash: 059513de66827aa3a839b9eb06973ec4c1549f73
 ms.contentlocale: ja-jp
 ms.lasthandoff: 06/13/2017
-
 
 ---
 
