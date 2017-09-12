@@ -1,4 +1,4 @@
---- 
+---
 title: "倉庫内の現物在庫の移動"
 description: "この手順では、倉庫内の場所間で行われる品目の移動を登録する在庫振替仕訳帳を作成して転記するプロセスを説明します。"
 author: MarkusFogelberg
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -67,5 +67,4 @@ ms.lasthandoff: 07/27/2017
 1. [在庫] をクリックします。
 2. [トランザクション] をクリックします。
     * ここで、仕訳帳の転記時に作成されたトランザクションを確認できます。  
-
 

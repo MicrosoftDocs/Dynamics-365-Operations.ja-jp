@@ -1,7 +1,7 @@
 ---
 title: "委託販売"
 description: "このトピックでは、入庫委託販売在庫プロセスを使用する方法を説明します。"
-author: YuyuScheller
+author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,13 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: ConsignmentDraftReplenishmentOrderJournal, ConsignmentProductReceiptLines, ConsignmentReplenishmentOrder, ConsignmentVendorPortalOnHand, InventJournalOwnershipChange, InventOnHandItemListPage, PurchTable, PurchVendorPortalConfirmedOrders
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 220834
 ms.assetid: 3c9d6de4-45d4-459a-aef7-0d9ad2c22b3a
 ms.search.region: Global
 ms.author: perlynne
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
@@ -61,7 +61,7 @@ USMF は追加の定期的なプロセスを実行します:
 仕入先 US-104 は、[**手持委託販売在庫**] ページを使用して更新を監視できます。
 
 ## <a name="consignment-replenishment-orders"></a>委託販売補充注文
-委託販売補充注文は、仕入先が注文済在庫トランザクションを作成して特定の日付範囲内で配送する予定の製品在庫数量を要求および追跡するために使用されるドキュメントです。 通常は、これは特定の製品の予測と実需に基づいています。 委託販売補充注文に対して入庫する在庫は仕入先に所有権があります。 現物入庫の更新に関連する製品の財産のみ記録されるため、総勘定元帳トランザクションの更新は発生しません。 **所有者**分析コードは、仕入先が所有する在庫および受領する法人によって所有される在庫に関する情報を区別するために使用されます。 委託販売補充明細行は、明細行の全数量を入庫またはキャンセルされない限り、**オープン注文**ステータスになります。 全数量を入庫またはキャンセルされた場合は、ステータスは**完了**に変更されます。 委託販売補充注文に関連する現物手持在庫は、製品受領更新プロセスと共に登録プロセスを使用して記録できます。 登録は品目到着プロセスの一部として、または手動で注文明細行を更新することができます。 製品受領更新プロセスを使用すると、レコードは仕入先に商品の受領を確認するのに使用できる製品受領書仕訳帳で作成されます。 
+委託販売補充注文は、仕入先が注文済在庫トランザクションを作成して特定の日付範囲内で配送する予定の製品在庫数量を要求および追跡するために使用されるドキュメントです。 通常は、これは特定の製品の予測と実需に基づいています。 委託販売補充注文に対して入庫する在庫は仕入先に所有権があります。 現物入庫の更新に関連する製品の財産のみ記録されるため、総勘定元帳トランザクションの更新は発生しません。 **所有者**分析コードは、仕入先が所有する在庫および受領する法人によって所有される在庫に関する情報を区別するために使用されます。 委託販売補充明細行は、明細行の全数量を入庫またはキャンセルされない限り、**オープン注文**ステータスになります。 全数量を入庫またはキャンセルされた場合は、ステータスは**完了**に変更されます。 委託販売補充注文に関連する現物手持在庫は、製品受領更新プロセスと共に登録プロセスを使用して記録できます。 登録は品目到着プロセスの一部として、または手動で注文明細行を更新することができます。 製品受領更新プロセスを使用すると、レコードは仕入先に商品の受領を確認するのに使用できる製品受領書仕訳帳で作成されます。
 
 [![委託補充オーダー](./media/consignment-replenishment-order.png)](./media/consignment-replenishment-order.png)
 
@@ -71,7 +71,7 @@ USMF は追加の定期的なプロセスを実行します:
 -   仕入先所有の在庫は、**売却済**ステータスの**所有権の変更**の参照を使用して発行されます。
 -   手持在庫は、注文書上の製品受領書の更新された在庫トランザクションを使用して消費している法人によって受領されます。 これにより注文のステータスが [**受入済**] に設定されます。 委託販売に使用する発注書は、[**発生元**] フィールドが [**委託**] に設定されます。。
 
-注文が作成された後、委託販売注文明細行の数量を更新することはできません。 
+注文が作成された後、委託販売注文明細行の数量を更新することはできません。
 
 [![在庫所有権変更仕訳帳](./media/inventory-ownership-change-journal.png)](./media/inventory-ownership-change-journal.png)
 
@@ -81,8 +81,4 @@ USMF は追加の定期的なプロセスを実行します:
 -   [**委託販売在庫を消費する****発注書**] - 委託販売プロセスからの所有権変更に関連する発注書情報の詳細を表示します。
 -   **委託販売在庫から受領された製品** - 所有権変更プロセス中に更新された商品の領収書がある品目および数量に関する情報を表示します。
 -   **手持委託販売在庫** - 配送予定の委託販売品目、およびすでに顧客サイトで現物を利用できる品目に関する情報を表示します。
-
-
-
-
 

@@ -1,4 +1,4 @@
---- 
+---
 title: "倉庫の在庫レベルの初期化"
 description: "この手順では、在庫移動仕訳帳を使用して手持在庫を手動で更新する方法を示します。"
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -58,5 +58,4 @@ ms.lasthandoff: 07/27/2017
 24. [OK] をクリックします。
 25. ページを閉じます。
 26. ページを閉じます。
-
 

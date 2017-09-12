@@ -1,4 +1,4 @@
---- 
+---
 title: "在庫棚卸プロセスの定義"
 description: "この手順は、棚卸グループおよび棚卸仕訳帳を作成することによって、基本的な在庫棚卸処理のコンフィギュレーションについて説明します。"
 author: MarkusFogelberg
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -84,5 +84,4 @@ ms.lasthandoff: 07/27/2017
 7. 一覧で棚卸グループの選択
     * 選択した特定倉庫の品目に適用される特定棚卸グループをここで選択できます。 その倉庫で棚卸が実行される場合、この棚卸ポリシーによって、品目における一般的な棚卸ポリシーは上書きされます。  
 8. [保存] をクリックします。
-
 

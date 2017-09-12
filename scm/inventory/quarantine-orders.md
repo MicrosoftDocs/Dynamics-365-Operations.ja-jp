@@ -1,7 +1,7 @@
 ---
 title: "検査指示"
 description: "この記事は、在庫をブロックする検査指示の使用方法について説明します。"
-author: YuyuScheller
+author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,13 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventLocation, InventModelGroup, InventQuarantineOrder, InventQuarantineParmEnd, InventQuarantineParmReportFinished, InventQuarantineParmStartUp, InventTrans
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 30021
 ms.assetid: d5047727-653c-49da-b489-6fd3fe50445e
 ms.search.region: Global
 ms.author: perlynne
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -31,7 +31,7 @@ ms.lasthandoff: 06/13/2017
 [!include[banner](../includes/banner.md)]
 
 
-この記事は、在庫をブロックする検査指示の使用方法について説明します。 
+この記事は、在庫をブロックする検査指示の使用方法について説明します。
 
 検査指示は、在庫をブロックするのに使用できます。 たとえば、 品質テストの理由で品目を検査する場合があります。 検査された在庫は、検査倉庫に転送されます。 **注記:** 高度な倉庫管理プロセス (倉庫管理で) を使用している場合、検査指示の処理は返品販売注文に対してのみ使用されます。
 
@@ -69,7 +69,4 @@ ms.lasthandoff: 06/13/2017
 --------
 
 [在庫ブロック](inventory-blocking.md)
-
-
-
 

@@ -1,4 +1,4 @@
---- 
+---
 title: "在庫ブロックの作成および管理"
 description: "この手順では、在庫ブロックを使用することによって、現物手持在庫が他の元伝票に引当されないようにする方法を説明します。"
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -34,7 +34,7 @@ ms.lasthandoff: 07/27/2017
 1. [在庫管理] > [定期処理タスク] > [在庫ブロック] に移動します。
 2. [新規] をクリックします。
 3. [品目番号] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。
-4. 一覧で、目的の品目を選択します。 
+4. 一覧で、目的の品目を選択します。
     * ブロックする現物手持在庫の品目番号を選択します。 USMF を使用している場合、品目「M9201」を選択できます。  
 5. [数量] フィールドに数値を入力します。
     * 品目「M9201」を使用する場合、200 より小さい品目を選択する必要があります。  
@@ -55,5 +55,4 @@ ms.lasthandoff: 07/27/2017
 1. [削除] をクリックします。
 2. [はい] をクリックします。
 3. ページを閉じます。
-
 

@@ -1,4 +1,4 @@
---- 
+---
 title: "管理の前提条件の設定"
 description: "この手順を使用して不適合管理プロセスを有効化します。"
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -101,5 +101,4 @@ ms.lasthandoff: 07/27/2017
 3. [検査ゾーン] フィールドに値を入力します。
 4. [説明] フィールドに値を入力します。
 5. ページを閉じます。
-
 

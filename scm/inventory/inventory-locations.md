@@ -1,7 +1,7 @@
 ---
 title: "在庫場所"
 description: "在庫場所は、品目の保存場所、および WMS I 倉庫で品目がピッキングされる場所を特定するために基本倉庫 (WMS I) で使用されます。"
-author: YuyuScheller
+author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,14 +10,14 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: WMSLocation
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 2134
 ms.assetid: 69bf6922-4151-447f-b678-4ba95637f54c
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
 ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
@@ -40,7 +40,6 @@ ms.lasthandoff: 07/27/2017
 
 各在庫場所に対し、品目の挿入先も指定できます。 既定では、どちらも同じです。 通常、品目の挿入と取り出しが行われるのは在庫場所の同じ側ですが、常にそうであるわけではありません。 たとえば、常用保管ラックに格納される品目は、一方の通路から挿入されて、別の通路から取り出されます。 主な入力は、倉庫、通路、ラック、棚、および在庫置場などの座標によって決まる場所の名前で指定されます。 この名前または ID は、手動で入力することも、[在庫場所] ページの保管場所の座標から生成することもできます。たとえば、通路 1、ラック 2、棚 3、在庫置場 4 という座標の場合、ID は 01-02-03-4 になります。
 在庫場所のプロパティ
--------------------
 
 在庫場所には次のような特性があります。
 -   サイズ (高さ、幅、奥行き、およびこれらによる体積)
@@ -54,12 +53,12 @@ ms.lasthandoff: 07/27/2017
 
 ## <a name="blocked-locations"></a>ブロックされた在庫場所
 たとえば、修理などのために、在庫場所が一時的にブロックされていることを示す必要が生じることがあります。 他には、入力または出力のいずれか一方のみがブロックされていることを表示したい場合もあります。
-ツリー構造
---------------
+
+## <a name="tree-structure"></a>ツリー構造
 
 [在庫場所] ページでは、倉庫のレイアウトを、在庫場所の座標に基づいて、設定した形式でツリー構造で表示できます。
-倉庫フォームで在庫場所を管理
----------------------------------------------------
+
+## <a name="maintain-inventory-locations-via-the-warehouse-form"></a>倉庫フォームで在庫場所を管理
 
 1 つの倉庫から別の倉庫に場所をコピーし、ウィザードによって場所を作成することができます。 ウィザードを実行する前に、[倉庫] ページで既定の場所の名前を定義してあることを確認する必要があります。
 
@@ -69,7 +68,4 @@ ms.lasthandoff: 07/27/2017
 --------
 
 [新しい倉庫レイアウトの作成 (タスク ガイド)](/dynamics365/unified-operations/supply-chain/inventory/tasks/create-new-warehouse-layout)
-
-
-
 

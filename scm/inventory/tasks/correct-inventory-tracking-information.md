@@ -1,4 +1,4 @@
---- 
+---
 title: "在庫追跡情報の修正"
 description: "この手順は、在庫追跡情報を修正するための在庫振替仕訳帳の作成および転記プロセスについて説明します。"
 author: MarkusFogelberg
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -62,5 +62,4 @@ ms.lasthandoff: 07/27/2017
 1. [在庫] をクリックします。
 2. [トランザクション] をクリックします。
     * ここで、仕訳帳の転記時に作成されたトランザクションを確認できます。   
-
 

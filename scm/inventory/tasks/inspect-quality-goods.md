@@ -1,4 +1,4 @@
---- 
+---
 title: "商品の品質の調査"
 description: "この手順では、品質指示を処理する方法を説明します。"
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -55,5 +55,4 @@ ms.lasthandoff: 07/27/2017
 4. [選択] をクリックします。
 5. [OK] をクリックします。
 6. ページを閉じます。
-
 

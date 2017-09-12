@@ -1,4 +1,4 @@
---- 
+---
 title: "新しい倉庫レイアウトの作成"
 description: "この手順は、倉庫での場所に関する情報を設定する方法を示します。"
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -49,7 +49,7 @@ ms.lasthandoff: 07/27/2017
 7. 場所の名前セクションの展開を切り替えます。
     * このセクションのオプションは、場所の名前の既定の形式を定義します。 上記の例では、通路番号、ラック番号、棚番号が含まれます。  
 8. [通路を含める] オプションをオンに設定します。
-9. [ラックを含める] オプションをオンに設定します。 
+9. [ラックを含める] オプションをオンに設定します。
 10. ラックの [形式] フィールドに値を入力します。
     * 例: -##  
 11. [棚を含める] オプションをオンに設定します。
@@ -74,5 +74,4 @@ ms.lasthandoff: 07/27/2017
 14. [完了] をクリックします。
 15. ページを閉じます。
 16. ページを更新します。
-
 

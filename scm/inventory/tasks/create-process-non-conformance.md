@@ -1,4 +1,4 @@
---- 
+---
 title: "不適合の作成および処理"
 description: "この手順を使用して、既存の品質指示に基づき不適合管理を実行します。"
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -27,7 +27,7 @@ ms.lasthandoff: 07/27/2017
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-この手順を使用して、既存の品質指示に基づき不適合管理を実行します。 USMF のデモの会社でこの記録を実行することができ、提案された値を使用することができます。 通常この手順は品質担当者が実施します。  前提条件として、「商品の品質の調査」タスクの記録を実行します。 不適合の承認を処理する場合、タスクの記録を実行するユーザーには、[ユーザー] ページで「名前」の値が割り当てられている必要があります。 ドキュメントのメモを使用するには、ユーザー オプションで [ドキュメントの処理] も有効化されている必要があります。 
+この手順を使用して、既存の品質指示に基づき不適合管理を実行します。 USMF のデモの会社でこの記録を実行することができ、提案された値を使用することができます。 通常この手順は品質担当者が実施します。  前提条件として、「商品の品質の調査」タスクの記録を実行します。 不適合の承認を処理する場合、タスクの記録を実行するユーザーには、[ユーザー] ページで「名前」の値が割り当てられている必要があります。 ドキュメントのメモを使用するには、ユーザー オプションで [ドキュメントの処理] も有効化されている必要があります。
 
 
 ## <a name="select-a-quality-order"></a>品質指示の選択
@@ -78,5 +78,4 @@ ms.lasthandoff: 07/27/2017
 3. [はい] をクリックします。
 4. ページを閉じます。
 5. ページを閉じます。
-
 

@@ -1,7 +1,7 @@
 ---
 title: "在庫、生産、および販売における品目と原材料の追跡"
 description: "このトピックでは、製品プロセスおよび販売プロセスで品目または原材料が使用された場所、使用されている場所、使用される予定の場所を識別するために、品目の追跡を使用する方法について説明します。"
-author: YuyuScheller
+author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,13 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventTrackingDimTracing, InventTrackingDimTracingCriteria
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 30191
 ms.assetid: fdd0939a-855c-430f-a684-94f3baea1df4
 ms.search.region: Global
 ms.author: pjacobse
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
@@ -31,7 +31,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-このトピックでは、製品プロセスおよび販売プロセスで品目または原材料が使用された場所、使用されている場所、使用される予定の場所を識別するために、品目の追跡を使用する方法について説明します。 
+このトピックでは、製品プロセスおよび販売プロセスで品目または原材料が使用された場所、使用されている場所、使用される予定の場所を識別するために、品目の追跡を使用する方法について説明します。
 
 品目の追跡機能は [**品目の追跡**] ページで使用できます。 次のセクションでは、品目の追跡の使用方法、どのようなオプションおよび制限があるかを示します。
 
@@ -142,7 +142,4 @@ ms.lasthandoff: 05/25/2017
 
 ## <a name="can-i-trace-coproducts-and-byproducts"></a>連産品および副産物を追跡できますか。
 連産品を追跡できますが、追跡用分析コードは通常副産物に割り当てられていないので、副産物を追跡することはできません。 品目を追跡する場合は、関連する連産品が追跡の詳細に含まれます。 連産品を含むノードには、詳細に「連産品」という語が含まれます。 追跡の詳細のノードを選択し、[**生産**] クイック タブをクリックして、連産品に関する詳細を表示できます。
-
-
-
 

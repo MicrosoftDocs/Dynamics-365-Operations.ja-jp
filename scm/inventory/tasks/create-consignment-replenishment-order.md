@@ -1,4 +1,4 @@
---- 
+---
 title: "委託販売補充注文の作成"
 description: "この手順では、委託製品の補充注文の作成方法が説明され、仕入先から該当する委託製品在庫までの予定配送を追跡確認できます。"
 author: mkirknel
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -60,7 +60,7 @@ ms.lasthandoff: 07/28/2017
 ## <a name="receive-items"></a>品目の受信 (複数)
 1. [製品受領書] をクリックします。
 2. [外部製品受領] フィールドで、値を入力します。
-3. [数量] フィールドにおいて、ここに表示される数値より小さい数値を入力します。 
+3. [数量] フィールドにおいて、ここに表示される数値より小さい数値を入力します。
 4. [OK] をクリックします。
 
 ## <a name="check-the-on-hand-inventory"></a>手持在庫を確認します。
@@ -70,5 +70,4 @@ ms.lasthandoff: 07/28/2017
     * 仕入先が所有する委託製品在庫として受領された品目は手持在庫として使用できます。 委託製品補充注文の残余数量は [合計] フィールドの [注文済] に表示されます。  
 4. ページを閉じます。
 5. [閉じる] をクリックします。
-
 

@@ -1,4 +1,4 @@
---- 
+---
 title: "バーコード タイプの管理"
 description: "この手順は、ピッキング リスト レポートの一部として使用される、新しいバーコードの定義を設定する方法を示します。"
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -44,5 +44,4 @@ ms.lasthandoff: 07/27/2017
     * 以前に作成したバーコード設定を選択します。しかしバーコード形式は、プロセスで使用されているレコード タイプに対する固有識別子の形式と一致している必要があることに注意してください。 たとえば、ピッキング ルートに対するバーコード形式は、通常番号順序であるピッキング ルート参照の形式と一致する必要があります。  
 12. [保存] をクリックします。
 13. ページを閉じます。
-
 

@@ -1,7 +1,7 @@
 ---
 title: "在庫バッチのマージ"
 description: "この記事は、2 つ以上の棚卸資産バッチをマージされたバッチに連結する方法に関する情報を提供します。"
-author: YuyuScheller
+author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,13 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventBatchJournalListPage, InventBatchJournalMerge
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 39782
 ms.assetid: 07c5e98b-10fd-4f5c-b471-41d2150f47b0
 ms.search.region: Global
 ms.author: pjacobse
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
@@ -31,7 +31,7 @@ ms.lasthandoff: 06/13/2017
 [!include[banner](../includes/banner.md)]
 
 
-この記事は、2 つ以上の棚卸資産バッチをマージされたバッチに連結する方法に関する情報を提供します。 
+この記事は、2 つ以上の棚卸資産バッチをマージされたバッチに連結する方法に関する情報を提供します。
 
 バッチをマージするとき、マージされたバッチの特性とバッチ属性の最適化に計算が役立ちます。 ソース バッチを選択した後、結合されたバッチを転記する前に確認および変更できます。 承認用に在庫仕訳帳にバッチのマージを転送することもできます。 在庫は、その在庫仕訳帳から直接引当または転記できます。 マージされたバッチを転記するとき、棚卸資産がソース バッチとマージされたバッチについて調整されます。
 
@@ -142,7 +142,4 @@ ms.lasthandoff: 06/13/2017
 
 ## <a name="after-i-merged-a-catchweight-item-why-cant-i-see-the-catchweight-information-in-the-inventory-journal"></a>CW 品目の結合後に在庫仕訳帳上でその CW 情報を確認できないのはどうしてですか。
 他のすべての品目と同様に、CW 品目のバッチを結合できます。 ただし、CW 情報は在庫仕訳帳に表示されません。 バッチ マージを在庫仕訳帳に転送する前に、CW 情報を確認することをお勧めします。
-
-
-
 

@@ -1,4 +1,4 @@
---- 
+---
 title: "品質指示の設定"
 description: "この手順では、受け取る在庫を着荷登録の直後に検査する必要のある品質管理プロセスを有効にする方法を示します。"
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -142,5 +142,4 @@ ms.lasthandoff: 07/27/2017
 15. 一覧で、目的のレコードを見つけ、選択します。
 16. [保存] をクリックします。
 17. ページを閉じます。
-
 

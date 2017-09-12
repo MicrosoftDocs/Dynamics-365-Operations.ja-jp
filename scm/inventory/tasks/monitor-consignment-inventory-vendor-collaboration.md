@@ -1,4 +1,4 @@
---- 
+---
 title: "仕入先コラボレーションを使用した委託販売在庫の監視"
 description: "この手順は、顧客との委託販売で置いた製品の在庫レベルに関する情報を表示する際の仕入先との連携方法を示します。"
 author: mkirknel
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -41,5 +41,4 @@ ms.lasthandoff: 07/27/2017
 ## <a name="view-on-hand-inventory"></a>手持在庫の表示
 1. [仕入先コラボレーション] > [委託販売在庫] > [手持委託販売在庫] の順に移動します。
     * 手持委託製品在庫のページは、その在庫が顧客の倉庫で所有していることを示します。 [規模のタブを表示] をクリックして、サイトや倉庫などその他の規模を表示できます。   
-
 

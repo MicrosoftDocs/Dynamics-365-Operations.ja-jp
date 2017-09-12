@@ -1,4 +1,4 @@
---- 
+---
 title: "倉庫の在庫棚卸"
 description: "この手順では、倉庫内のある場所にある特定の品目を棚卸しするために、在庫棚卸仕訳帳を作成して転記するプロセスを説明します。"
 author: MarkusFogelberg
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -68,5 +68,4 @@ ms.lasthandoff: 07/27/2017
 1. [在庫] をクリックします。
 2. [トランザクション] をクリックします。
     * ここで、在庫棚卸仕訳帳を転記するときに作成されるすべての関連トランザクションを確認できます。   
-
 

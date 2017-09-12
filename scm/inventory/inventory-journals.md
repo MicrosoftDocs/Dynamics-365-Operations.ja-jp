@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventJournalBOM, InventJournalCount, InventJournalCountTag, InventJournalLossProfit, InventJournalMovement, InventJournalTransfer, WMSJournalTable
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 51631
 ms.assetid: 3fedeaaf-502f-483c-93d2-ab266828189e
@@ -33,7 +33,7 @@ ms.lasthandoff: 07/27/2017
 [!include[retail name](../includes/retail-name.md)]
 
 
-この記事では、在庫仕訳帳を使用してさまざまなタイプの物理在庫トランザクションを転記する方法について説明します。 
+この記事では、在庫仕訳帳を使用してさまざまなタイプの物理在庫トランザクションを転記する方法について説明します。
 
 Microsoft Dynamics 365 for Finance and Operations の在庫仕訳帳は、払出と入荷の転記、在庫移動、部品表 (BOM) の作成など、さまざまなタイプの現物在庫トランザクション転記に使用されます。 これらの在庫仕訳帳はすべて同様の方法で使用されますが、異なるタイプに分類されます。
 
@@ -95,7 +95,4 @@ BOM を完了済と報告する場合、BOM 仕訳帳を作成できます。 BO
 
 ## <a name="posting-journal-lines"></a>仕訳帳明細行の転記
 追加トランザクションから品目をロックするまで、作成した仕訳帳明細行をいつでも転記できます。 明細行を転記せずに仕訳帳を閉じても、仕訳帳に入力したデータはその仕訳帳にそのまま残ります。
-
-
-
 

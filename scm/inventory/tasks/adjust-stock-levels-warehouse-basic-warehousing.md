@@ -1,4 +1,4 @@
---- 
+---
 title: "倉庫の在庫レベルの調整 (基本倉庫)"
 description: "この手順では、倉庫にある製品の在庫レベルを調整するために、在庫調整仕訳帳を作成して転記するプロセスを説明します。"
 author: MarkusFogelberg
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -58,5 +58,4 @@ ms.lasthandoff: 07/27/2017
 4. [OK] をクリックします。
 5. フォームを閉じます。
 6. ページを閉じます。
-
 

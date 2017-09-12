@@ -1,4 +1,4 @@
---- 
+---
 title: "品目または原材料の追跡"
 description: "この手順は、品目の追跡を使用して、品目または原材料が使用された場所または使用されている場所を識別する方法を示します。"
 author: pjacobse
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -54,5 +54,4 @@ ms.lasthandoff: 07/27/2017
 8. [アクション] ウィンドウで、[追跡] をクリックします。
 9. [未出荷の販売注文] をクリックします。
 10. ページを閉じます。
-
 
