@@ -16,107 +16,107 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 47c7bea976d1052f537068b6bcf79c78ac3befbf
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 5548839c4d394d45cfb39da50ca78dab4b4e08e4
 ms.contentlocale: ja-jp
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-format-to-use-document-management-files-in-format-outputs-for-electronic-reporting-er"></a>電子申告 (ER) 用の形式出力でドキュメント管理ファイルを使用するための形式を作成する
+# <a name="create-format-to-use-document-management-files-in-format-outputs-for-electronic-reporting-er"></a><span data-ttu-id="85c89-103">電子申告 (ER) 用の形式出力でドキュメント管理ファイルを使用するための形式を作成する</span><span class="sxs-lookup"><span data-stu-id="85c89-103">Create format to use Document Management files in format outputs for electronic reporting (ER)</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-次の手順では、システム管理者または電子レポート開発者のロールに指定されたユーザーが、ER出力のドキュメント管理ファイル（添付）を使用するために電子レポート（ER）フォーマットをどのように環境設定しているのか説明します。 これらの手順はどのタイプの企業でも実施できます。
+<span data-ttu-id="85c89-104">次の手順では、システム管理者または電子レポート開発者のロールに指定されたユーザーが、ER出力のドキュメント管理ファイル（添付）を使用するために電子レポート（ER）フォーマットをどのように環境設定しているのか説明します。</span><span class="sxs-lookup"><span data-stu-id="85c89-104">The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to use Document Management files (attachments) in ER output.</span></span> <span data-ttu-id="85c89-105">これらの手順はどのタイプの企業でも実施できます。</span><span class="sxs-lookup"><span data-stu-id="85c89-105">These steps can be performed in any company.</span></span>
 
-これらの手順を完了するには、まず「フォーマット出力のドキュメント管理ファイルをER使用する (パート2：データモデルを拡張）」の作業ガイドの手順を完了する必要があります。
+<span data-ttu-id="85c89-106">これらの手順を完了するには、まず「フォーマット出力のドキュメント管理ファイルをER使用する (パート2：データモデルを拡張）」の作業ガイドの手順を完了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="85c89-106">To complete these steps, you must first complete the steps in the “ER Use Document Management files in format outputs (Part 2: Extend data model” procedure.</span></span>
 
-この手順は、Dynamics 365 for Operations、バージョン 1611 に追加された機能です。
+<span data-ttu-id="85c89-107">この手順は、Dynamics 365 for Operations、バージョン 1611 に追加された機能です。</span><span class="sxs-lookup"><span data-stu-id="85c89-107">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
 
 
-## <a name="create-a-format-to-process-invoices"></a>請求書を処理するフォーマットを作成する
-1. [組織管理] > [ワークスペース] > [電子申告] の順に移動します。
-2. [コンフィギュレーションをレポートする] をクリックします。
-3. ツリーで、「Customer invoice model」を選択します。
-4. ツリーで、「Customer invoice model\Customer invoice model (custom)]を選択します。
-    * 販売注文に添付されるファイル情報がある電子メッセージを生成するにはフォーマットを作成します。当該ファイルは電子処理請求書に関連付けられています。  
-5. [コンフィギュレーションの作成] をクリックすると、ドロップ ダイアログが開きます。
-6. [新規] フィールドで、「データモデル・顧客請求書モデル（カスタム）に基づくフォーマット」を入力します。
-7. [名称] フィールドに、「電子請求書サンプル メッセージ」を入力します。
-    * 電子請求書のサンプル メッセージ  
-8. [データモデル定義] フィールドで、値を入力または選択します。
-    * 顧客への請求  
-9. [コンフィギュレーションの作成] をクリックします。
+## <a name="create-a-format-to-process-invoices"></a><span data-ttu-id="85c89-108">請求書を処理するフォーマットを作成する</span><span class="sxs-lookup"><span data-stu-id="85c89-108">Create a format to process invoices</span></span>
+1. <span data-ttu-id="85c89-109">[組織管理] > [ワークスペース] > [電子申告] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="85c89-109">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
+2. <span data-ttu-id="85c89-110">[コンフィギュレーションをレポートする] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="85c89-110">Click Reporting configurations.</span></span>
+3. <span data-ttu-id="85c89-111">ツリーで、「Customer invoice model」を選択します。</span><span class="sxs-lookup"><span data-stu-id="85c89-111">In the tree, expand 'Customer invoice model'.</span></span>
+4. <span data-ttu-id="85c89-112">ツリーで、「Customer invoice model\Customer invoice model (custom)]を選択します。</span><span class="sxs-lookup"><span data-stu-id="85c89-112">In the tree, select 'Customer invoice model\Customer invoice model (custom)'.</span></span>
+    * <span data-ttu-id="85c89-113">販売注文に添付されるファイル情報がある電子メッセージを生成するにはフォーマットを作成します。当該ファイルは電子処理請求書に関連付けられています。</span><span class="sxs-lookup"><span data-stu-id="85c89-113">You will create a format to generate electronic messages with information about any files that have been attached to a sales order that is related to an electronically processing invoice.</span></span>  
+5. <span data-ttu-id="85c89-114">[コンフィギュレーションの作成] をクリックすると、ドロップ ダイアログが開きます。</span><span class="sxs-lookup"><span data-stu-id="85c89-114">Click Create configuration to open the drop dialog.</span></span>
+6. <span data-ttu-id="85c89-115">[新規] フィールドで、「データモデル・顧客請求書モデル（カスタム）に基づくフォーマット」を入力します。</span><span class="sxs-lookup"><span data-stu-id="85c89-115">In the New field, enter 'Format based on data model Customer invoice model (custom)'.</span></span>
+7. <span data-ttu-id="85c89-116">[名称] フィールドに、「電子請求書サンプル メッセージ」を入力します。</span><span class="sxs-lookup"><span data-stu-id="85c89-116">In the Name field, type 'Electronic invoice sample message'.</span></span>
+    * <span data-ttu-id="85c89-117">電子請求書のサンプル メッセージ</span><span class="sxs-lookup"><span data-stu-id="85c89-117">Electronic invoice sample message</span></span>  
+8. <span data-ttu-id="85c89-118">[データモデル定義] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="85c89-118">In the Data model definition field, enter or select a value.</span></span>
+    * <span data-ttu-id="85c89-119">顧客への請求</span><span class="sxs-lookup"><span data-stu-id="85c89-119">InvoiceCustomer</span></span>  
+9. <span data-ttu-id="85c89-120">[コンフィギュレーションの作成] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="85c89-120">Click Create configuration.</span></span>
 
-## <a name="design-a-format-to-populate-attachments-into-generating-a-message-in-mime-format"></a>添付ファイルをMIME形式のメッセージにする設定のフォーマットをデザインする
-1. [デザイナー] をクリックします。
-2. [ルートの追加] をクリックして、ドロップ ダイアログを開きます。
-3. ツリーで、[XML\Element] を選択します。
-4. [名称] フィールドに、「Invoice」を入力します。
-    * 請求書  
-5. [OK] をクリックします。
-6. [追加] をクリックしてドロップ ダイアログを開きます。
-7. ツリーで、[XML\Attribute] を選択します。
-8. [名称] フィールドに、「SalesOrder」を入力します。
-    * SalesOrder  
-9. [OK] をクリックします。
-10. [属性を加える] をクリックします。
-11. [名称] フィールドで、「InvoiceNumber」を入力します。
-    * InvoiceNumber  
-12. [OK] をクリックします。
-13. [属性を加える] をクリックします。
-14. [名称] フィールドに、「'InvoiceAmount」を入力します。
-    * InvoiceAmount  
-15. [OK] をクリックします。
-16. [追加] をクリックしてドロップ ダイアログを開きます。
-17. ツリーで、[XML\Element] を選択します。
-18. [名称] フィールドに、「EnclosedDocs」を入力します。
-    * EnclosedDocs  
-19. [OK] をクリックします。
-20. ツリーで、「Invoice\EnclosedDocs」を選択します。
-21. [エレメントの追加] をクリックします。
-22. [名前] フィールドで、「Document」を入力します。
-    * 書類  
-23. [OK] をクリックします。
-24. ツリーで、「Invoice\EnclosedDocs\Document」を選択します。
-25. [追加] をクリックしてドロップ ダイアログを開きます。
-26. ツリーで、[XML\Attribute] を選択します。
-27. [名称] フィールドで、「FileName」を入力します。
-    * FileName  
-28. [OK] をクリックします。
-29. [追加] をクリックしてドロップ ダイアログを開きます。
-30. ツリーで、[XML\Element] を選択します。
-31. [名称] フィールドで、「FileContent」を入力します。
-    * FileContent  
-32. [OK] をクリックします。
-33. ツリーで、「Invoice\EnclosedDocs\Document\FileContent」を選択します。
-34. [追加] をクリックしてドロップ ダイアログを開きます。
-35. ツリーで、「'Text\Base64」を選択します。
-36. [OK] をクリックします。
+## <a name="design-a-format-to-populate-attachments-into-generating-a-message-in-mime-format"></a><span data-ttu-id="85c89-121">添付ファイルをMIME形式のメッセージにする設定のフォーマットをデザインする</span><span class="sxs-lookup"><span data-stu-id="85c89-121">Design a format to populate attachments into generating a message in MIME format</span></span>
+1. <span data-ttu-id="85c89-122">[デザイナー] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="85c89-122">Click Designer.</span></span>
+2. <span data-ttu-id="85c89-123">[ルートの追加] をクリックして、ドロップ ダイアログを開きます。</span><span class="sxs-lookup"><span data-stu-id="85c89-123">Click Add root to open the drop dialog.</span></span>
+3. <span data-ttu-id="85c89-124">ツリーで、[XML\Element] を選択します。</span><span class="sxs-lookup"><span data-stu-id="85c89-124">In the tree, select 'XML\Element'.</span></span>
+4. <span data-ttu-id="85c89-125">[名称] フィールドに、「Invoice」を入力します。</span><span class="sxs-lookup"><span data-stu-id="85c89-125">In the Name field, type 'Invoice'.</span></span>
+    * <span data-ttu-id="85c89-126">請求書</span><span class="sxs-lookup"><span data-stu-id="85c89-126">Invoice</span></span>  
+5. <span data-ttu-id="85c89-127">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="85c89-127">Click OK.</span></span>
+6. <span data-ttu-id="85c89-128">[追加] をクリックしてドロップ ダイアログを開きます。</span><span class="sxs-lookup"><span data-stu-id="85c89-128">Click Add to open the drop dialog.</span></span>
+7. <span data-ttu-id="85c89-129">ツリーで、[XML\Attribute] を選択します。</span><span class="sxs-lookup"><span data-stu-id="85c89-129">In the tree, select 'XML\Attribute'.</span></span>
+8. <span data-ttu-id="85c89-130">[名称] フィールドに、「SalesOrder」を入力します。</span><span class="sxs-lookup"><span data-stu-id="85c89-130">In the Name field, type 'SalesOrder'.</span></span>
+    * <span data-ttu-id="85c89-131">SalesOrder</span><span class="sxs-lookup"><span data-stu-id="85c89-131">SalesOrder</span></span>  
+9. <span data-ttu-id="85c89-132">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="85c89-132">Click OK.</span></span>
+10. <span data-ttu-id="85c89-133">[属性を加える] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="85c89-133">Click Add Attribute.</span></span>
+11. <span data-ttu-id="85c89-134">[名称] フィールドで、「InvoiceNumber」を入力します。</span><span class="sxs-lookup"><span data-stu-id="85c89-134">In the Name field, type 'InvoiceNumber'.</span></span>
+    * <span data-ttu-id="85c89-135">InvoiceNumber</span><span class="sxs-lookup"><span data-stu-id="85c89-135">InvoiceNumber</span></span>  
+12. <span data-ttu-id="85c89-136">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="85c89-136">Click OK.</span></span>
+13. <span data-ttu-id="85c89-137">[属性を加える] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="85c89-137">Click Add Attribute.</span></span>
+14. <span data-ttu-id="85c89-138">[名称] フィールドに、「'InvoiceAmount」を入力します。</span><span class="sxs-lookup"><span data-stu-id="85c89-138">In the Name field, type 'InvoiceAmount'.</span></span>
+    * <span data-ttu-id="85c89-139">InvoiceAmount</span><span class="sxs-lookup"><span data-stu-id="85c89-139">InvoiceAmount</span></span>  
+15. <span data-ttu-id="85c89-140">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="85c89-140">Click OK.</span></span>
+16. <span data-ttu-id="85c89-141">[追加] をクリックしてドロップ ダイアログを開きます。</span><span class="sxs-lookup"><span data-stu-id="85c89-141">Click Add to open the drop dialog.</span></span>
+17. <span data-ttu-id="85c89-142">ツリーで、[XML\Element] を選択します。</span><span class="sxs-lookup"><span data-stu-id="85c89-142">In the tree, select 'XML\Element'.</span></span>
+18. <span data-ttu-id="85c89-143">[名称] フィールドに、「EnclosedDocs」を入力します。</span><span class="sxs-lookup"><span data-stu-id="85c89-143">In the Name field, type 'EnclosedDocs'.</span></span>
+    * <span data-ttu-id="85c89-144">EnclosedDocs</span><span class="sxs-lookup"><span data-stu-id="85c89-144">EnclosedDocs</span></span>  
+19. <span data-ttu-id="85c89-145">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="85c89-145">Click OK.</span></span>
+20. <span data-ttu-id="85c89-146">ツリーで、「Invoice\EnclosedDocs」を選択します。</span><span class="sxs-lookup"><span data-stu-id="85c89-146">In the tree, select 'Invoice\EnclosedDocs'.</span></span>
+21. <span data-ttu-id="85c89-147">[エレメントの追加] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="85c89-147">Click Add Element.</span></span>
+22. <span data-ttu-id="85c89-148">[名前] フィールドで、「Document」を入力します。</span><span class="sxs-lookup"><span data-stu-id="85c89-148">In the Name field, type 'Document'.</span></span>
+    * <span data-ttu-id="85c89-149">書類</span><span class="sxs-lookup"><span data-stu-id="85c89-149">Document</span></span>  
+23. <span data-ttu-id="85c89-150">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="85c89-150">Click OK.</span></span>
+24. <span data-ttu-id="85c89-151">ツリーで、「Invoice\EnclosedDocs\Document」を選択します。</span><span class="sxs-lookup"><span data-stu-id="85c89-151">In the tree, select 'Invoice\EnclosedDocs\Document'.</span></span>
+25. <span data-ttu-id="85c89-152">[追加] をクリックしてドロップ ダイアログを開きます。</span><span class="sxs-lookup"><span data-stu-id="85c89-152">Click Add to open the drop dialog.</span></span>
+26. <span data-ttu-id="85c89-153">ツリーで、[XML\Attribute] を選択します。</span><span class="sxs-lookup"><span data-stu-id="85c89-153">In the tree, select 'XML\Attribute'.</span></span>
+27. <span data-ttu-id="85c89-154">[名称] フィールドで、「FileName」を入力します。</span><span class="sxs-lookup"><span data-stu-id="85c89-154">In the Name field, type 'FileName'.</span></span>
+    * <span data-ttu-id="85c89-155">FileName</span><span class="sxs-lookup"><span data-stu-id="85c89-155">FileName</span></span>  
+28. <span data-ttu-id="85c89-156">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="85c89-156">Click OK.</span></span>
+29. <span data-ttu-id="85c89-157">[追加] をクリックしてドロップ ダイアログを開きます。</span><span class="sxs-lookup"><span data-stu-id="85c89-157">Click Add to open the drop dialog.</span></span>
+30. <span data-ttu-id="85c89-158">ツリーで、[XML\Element] を選択します。</span><span class="sxs-lookup"><span data-stu-id="85c89-158">In the tree, select 'XML\Element'.</span></span>
+31. <span data-ttu-id="85c89-159">[名称] フィールドで、「FileContent」を入力します。</span><span class="sxs-lookup"><span data-stu-id="85c89-159">In the Name field, type 'FileContent'.</span></span>
+    * <span data-ttu-id="85c89-160">FileContent</span><span class="sxs-lookup"><span data-stu-id="85c89-160">FileContent</span></span>  
+32. <span data-ttu-id="85c89-161">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="85c89-161">Click OK.</span></span>
+33. <span data-ttu-id="85c89-162">ツリーで、「Invoice\EnclosedDocs\Document\FileContent」を選択します。</span><span class="sxs-lookup"><span data-stu-id="85c89-162">In the tree, select 'Invoice\EnclosedDocs\Document\FileContent'.</span></span>
+34. <span data-ttu-id="85c89-163">[追加] をクリックしてドロップ ダイアログを開きます。</span><span class="sxs-lookup"><span data-stu-id="85c89-163">Click Add to open the drop dialog.</span></span>
+35. <span data-ttu-id="85c89-164">ツリーで、「'Text\Base64」を選択します。</span><span class="sxs-lookup"><span data-stu-id="85c89-164">In the tree, select 'Text\Base64'.</span></span>
+36. <span data-ttu-id="85c89-165">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="85c89-165">Click OK.</span></span>
 
-## <a name="map-format-elements-to-data-model-as-data-source"></a>フォーマットエレメントをデータソースとしてデータ モデルにマッピングする
-1. ツリーで、「Invoice\SalesOrder」を選択します。
-2. [マッピング] タブをクリックします。
-3. ツリーで、[model] を展開します。
-4. ツリーで、「model\Sales order number(SalesId)」を選択します。
-5. [バインド] をクリックします。
-6. ツリーで、「Invoice\InvoiceNumber」を選択します。
-7. ツリーで、「model\Base invoice(InvoiceBase)」を展開します。
-8. ツリーで、「model\Base invoice(InvoiceBase)\Invoice number(Id)」を選択します。
-9. [バインド] をクリックします。
-10. ツリーで、「Invoice\InvoiceAmount」を選択します。
-11. ツリーで、「model\Base invoice(InvoiceBase)\Invoice amount(Amount)」を選択します。
-12. [バインド] をクリックします。
-13. ツリーで、「model\Invoice attachments」を展開します。
-14. ツリーで、「model\Invoice attachments\File content」を選択します。
-15. ツリーで、「Invoice\EnclosedDocs\Document\FileContent\Base64」を選択します。
-16. [バインド] をクリックします。
-17. ツリーで、「model\Invoice attachments\File name」を選択します。
-18. ツリーで、「Invoice\EnclosedDocs\Document\FileName」を選択します。
-19. [バインド] をクリックします。
-20. ツリーで、「model\Invoice attachments」を選択します。
-21. ツリーで、「Invoice\EnclosedDocs\Document」を選択します。
-22. [バインド] をクリックします。
-23. [保存] をクリックします。
-24. ページを閉じます。
+## <a name="map-format-elements-to-data-model-as-data-source"></a><span data-ttu-id="85c89-166">フォーマットエレメントをデータソースとしてデータ モデルにマッピングする</span><span class="sxs-lookup"><span data-stu-id="85c89-166">Map format elements to data model as data source</span></span>
+1. <span data-ttu-id="85c89-167">ツリーで、「Invoice\SalesOrder」を選択します。</span><span class="sxs-lookup"><span data-stu-id="85c89-167">In the tree, select 'Invoice\SalesOrder'.</span></span>
+2. <span data-ttu-id="85c89-168">[マッピング] タブをクリックします。</span><span class="sxs-lookup"><span data-stu-id="85c89-168">Click the Mapping tab.</span></span>
+3. <span data-ttu-id="85c89-169">ツリーで、[model] を展開します。</span><span class="sxs-lookup"><span data-stu-id="85c89-169">In the tree, expand 'model'.</span></span>
+4. <span data-ttu-id="85c89-170">ツリーで、「model\Sales order number(SalesId)」を選択します。</span><span class="sxs-lookup"><span data-stu-id="85c89-170">In the tree, select 'model\Sales order number(SalesId)'.</span></span>
+5. <span data-ttu-id="85c89-171">[バインド] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="85c89-171">Click Bind.</span></span>
+6. <span data-ttu-id="85c89-172">ツリーで、「Invoice\InvoiceNumber」を選択します。</span><span class="sxs-lookup"><span data-stu-id="85c89-172">In the tree, select 'Invoice\InvoiceNumber'.</span></span>
+7. <span data-ttu-id="85c89-173">ツリーで、「model\Base invoice(InvoiceBase)」を展開します。</span><span class="sxs-lookup"><span data-stu-id="85c89-173">In the tree, expand 'model\Base invoice(InvoiceBase)'.</span></span>
+8. <span data-ttu-id="85c89-174">ツリーで、「model\Base invoice(InvoiceBase)\Invoice number(Id)」を選択します。</span><span class="sxs-lookup"><span data-stu-id="85c89-174">In the tree, select 'model\Base invoice(InvoiceBase)\Invoice number(Id)'.</span></span>
+9. <span data-ttu-id="85c89-175">[バインド] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="85c89-175">Click Bind.</span></span>
+10. <span data-ttu-id="85c89-176">ツリーで、「Invoice\InvoiceAmount」を選択します。</span><span class="sxs-lookup"><span data-stu-id="85c89-176">In the tree, select 'Invoice\InvoiceAmount'.</span></span>
+11. <span data-ttu-id="85c89-177">ツリーで、「model\Base invoice(InvoiceBase)\Invoice amount(Amount)」を選択します。</span><span class="sxs-lookup"><span data-stu-id="85c89-177">In the tree, select 'model\Base invoice(InvoiceBase)\Invoice amount(Amount)'.</span></span>
+12. <span data-ttu-id="85c89-178">[バインド] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="85c89-178">Click Bind.</span></span>
+13. <span data-ttu-id="85c89-179">ツリーで、「model\Invoice attachments」を展開します。</span><span class="sxs-lookup"><span data-stu-id="85c89-179">In the tree, expand 'model\Invoice attachments'.</span></span>
+14. <span data-ttu-id="85c89-180">ツリーで、「model\Invoice attachments\File content」を選択します。</span><span class="sxs-lookup"><span data-stu-id="85c89-180">In the tree, select 'model\Invoice attachments\File content'.</span></span>
+15. <span data-ttu-id="85c89-181">ツリーで、「Invoice\EnclosedDocs\Document\FileContent\Base64」を選択します。</span><span class="sxs-lookup"><span data-stu-id="85c89-181">In the tree, select 'Invoice\EnclosedDocs\Document\FileContent\Base64'.</span></span>
+16. <span data-ttu-id="85c89-182">[バインド] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="85c89-182">Click Bind.</span></span>
+17. <span data-ttu-id="85c89-183">ツリーで、「model\Invoice attachments\File name」を選択します。</span><span class="sxs-lookup"><span data-stu-id="85c89-183">In the tree, select 'model\Invoice attachments\File name'.</span></span>
+18. <span data-ttu-id="85c89-184">ツリーで、「Invoice\EnclosedDocs\Document\FileName」を選択します。</span><span class="sxs-lookup"><span data-stu-id="85c89-184">In the tree, select 'Invoice\EnclosedDocs\Document\FileName'.</span></span>
+19. <span data-ttu-id="85c89-185">[バインド] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="85c89-185">Click Bind.</span></span>
+20. <span data-ttu-id="85c89-186">ツリーで、「model\Invoice attachments」を選択します。</span><span class="sxs-lookup"><span data-stu-id="85c89-186">In the tree, select 'model\Invoice attachments'.</span></span>
+21. <span data-ttu-id="85c89-187">ツリーで、「Invoice\EnclosedDocs\Document」を選択します。</span><span class="sxs-lookup"><span data-stu-id="85c89-187">In the tree, select 'Invoice\EnclosedDocs\Document'.</span></span>
+22. <span data-ttu-id="85c89-188">[バインド] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="85c89-188">Click Bind.</span></span>
+23. <span data-ttu-id="85c89-189">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="85c89-189">Click Save.</span></span>
+24. <span data-ttu-id="85c89-190">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="85c89-190">Close the page.</span></span>
 
 

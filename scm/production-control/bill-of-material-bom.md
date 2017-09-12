@@ -20,103 +20,103 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 5a23acfa95bb93dbc5990bf3839bbc629f15cc2f
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 3137d93dd91ec3e58937e97bdddb5ca51ec4084c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="bills-of-materials-and-formulas"></a>部品表およびフォーミュラ
+# <a name="bills-of-materials-and-formulas"></a><span data-ttu-id="4d4a7-105">部品表およびフォーミュラ</span><span class="sxs-lookup"><span data-stu-id="4d4a7-105">Bills of materials and formulas</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-この記事では、製品および製品バリアントの定義の中心となる部品表 (BOM) およびフォーミュラについて説明します。 BOM およびフォーミュラは、特定の製品に必要な材料または成分を指定します。 フォーミュラは、特定の生産コンテキストで入庫する連産品および副産物も指定します。 
+<span data-ttu-id="4d4a7-106">この記事では、製品および製品バリアントの定義の中心となる部品表 (BOM) およびフォーミュラについて説明します。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-106">This article provides information about bills of materials (BOMs) and formulas, which are a central part of the definition of products and product variants.</span></span> <span data-ttu-id="4d4a7-107">BOM およびフォーミュラは、特定の製品に必要な材料または成分を指定します。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-107">BOMs and formulas specify the required materials or ingredients for a specific product.</span></span> <span data-ttu-id="4d4a7-108">フォーミュラは、特定の生産コンテキストで入庫する連産品および副産物も指定します。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-108">Formulas also specify the co-products and by-products that are received in a specific production context.</span></span> 
 
-<a name="bills-of-materials"></a>部品表
+<a name="bills-of-materials"></a><span data-ttu-id="4d4a7-109">部品表</span><span class="sxs-lookup"><span data-stu-id="4d4a7-109">Bills of materials</span></span>
 ------------------
 
-部品表 (BOM) は、製品の製造に必要なコンポーネントを定義します。 コンポーネントは、原材料、半完成製品、または材料のいずれかです。 場合によっては、サービスを BOM 内で参照できます。 ただし、一般的に、BOM は、必要な*原材料リソース* について説明しています。  
+<span data-ttu-id="4d4a7-110">部品表 (BOM) は、製品の製造に必要なコンポーネントを定義します。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-110">A bill of materials (BOM) defines the components that are required in order to produce a product.</span></span> <span data-ttu-id="4d4a7-111">コンポーネントは、原材料、半完成製品、または材料のいずれかです。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-111">The components can be raw materials, semifinished products, or ingredients.</span></span> <span data-ttu-id="4d4a7-112">場合によっては、サービスを BOM 内で参照できます。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-112">In some cases, services can be referenced in a BOM.</span></span> <span data-ttu-id="4d4a7-113">ただし、一般的に、BOM は、必要な*原材料リソース* について説明しています。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-113">However, BOMs typically describe the *material resources* that are required.</span></span>  
 
-製品の作成のために必要な工程とリソースを説明するルートまたは生産フローと BOM を組み合わせた場合、BOM は、製品の見積原価を計算するための基礎になります。  
+<span data-ttu-id="4d4a7-114">製品の作成のために必要な工程とリソースを説明するルートまたは生産フローと BOM を組み合わせた場合、BOM は、製品の見積原価を計算するための基礎になります。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-114">When it's combined with a route or production flow that describes the operations and resources that are required in order to build a product, the BOM forms the foundation for calculating the estimated cost of the product.</span></span>  
 
-BOM は次の情報によって説明される個別のエンティティです。
+<span data-ttu-id="4d4a7-115">BOM は次の情報によって説明される個別のエンティティです。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-115">A BOM is an individual entity that is described by the following information:</span></span>
 
--   BOM
--   BOM 名
--   コンポーネントと材料を説明する BOM 明細行
--   BOM を使用できる製品と期間を定義する BOM バージョン
+-   <span data-ttu-id="4d4a7-116">BOM</span><span class="sxs-lookup"><span data-stu-id="4d4a7-116">BOM ID</span></span>
+-   <span data-ttu-id="4d4a7-117">BOM 名</span><span class="sxs-lookup"><span data-stu-id="4d4a7-117">BOM name</span></span>
+-   <span data-ttu-id="4d4a7-118">コンポーネントと材料を説明する BOM 明細行</span><span class="sxs-lookup"><span data-stu-id="4d4a7-118">The BOM lines that describe the components and ingredients</span></span>
+-   <span data-ttu-id="4d4a7-119">BOM を使用できる製品と期間を定義する BOM バージョン</span><span class="sxs-lookup"><span data-stu-id="4d4a7-119">The BOM versions, which define the product and period that the BOM can be used for</span></span>
 
-1 つの BOM は、固有 ID によって識別される単一レベルについて説明しています。 コンポーネントには、BOM バージョンによって参照される固有の BOM が存在する可能性があります。 BOM デザイナーの特定の製品のために、BOM の完全な階層を表示および編集できます。
+<span data-ttu-id="4d4a7-120">1 つの BOM は、固有 ID によって識別される単一レベルについて説明しています。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-120">A single BOM describes a single level that is identified by a unique ID.</span></span> <span data-ttu-id="4d4a7-121">コンポーネントには、BOM バージョンによって参照される固有の BOM が存在する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-121">Components might have their own BOMs that are referenced by BOM versions.</span></span> <span data-ttu-id="4d4a7-122">BOM デザイナーの特定の製品のために、BOM の完全な階層を表示および編集できます。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-122">You can display and edit the complete hierarchy of BOMs for a specific product in the BOM designer.</span></span>
 
-### <a name="formulas-co-products-and-by-products"></a>フォーミュラ、連産品、および副産物
+### <a name="formulas-co-products-and-by-products"></a><span data-ttu-id="4d4a7-123">フォーミュラ、連産品、および副産物</span><span class="sxs-lookup"><span data-stu-id="4d4a7-123">Formulas, co-products, and by-products</span></span>
 
-フォーミュラは、通常プロセス製造に使用される BOM のサブタイプです。 コンポーネント、材料、フォーミュラに加えて、連産品と副産物について説明します。 実際のバージョンでは、フォーミュラの連産品と副産物の定義には、フォーミュラ バージョンが必要です。 フォーミュラは、通常、フォーミュラ バージョンで定義されている 1 つの特定の完成品 (フォーミュラまたは計画品目) に定義されます。
+<span data-ttu-id="4d4a7-124">フォーミュラは、通常プロセス製造に使用される BOM のサブタイプです。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-124">A formula is a subtype of BOM that is typically used for process manufacturing.</span></span> <span data-ttu-id="4d4a7-125">コンポーネント、材料、フォーミュラに加えて、連産品と副産物について説明します。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-125">In addition to components and ingredients, a formula describes co-products and by-products.</span></span> <span data-ttu-id="4d4a7-126">実際のバージョンでは、フォーミュラの連産品と副産物の定義には、フォーミュラ バージョンが必要です。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-126">In the actual version, the definition of co-products and by-products for the formula requires the formula version.</span></span> <span data-ttu-id="4d4a7-127">フォーミュラは、通常、フォーミュラ バージョンで定義されている 1 つの特定の完成品 (フォーミュラまたは計画品目) に定義されます。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-127">A formula is typically defined for one specific finished product (a formula or planning item) that is defined in the formula version.</span></span>
 
-### <a name="boms-in-the-product-lifecycle"></a>製品ライフ サイクルの BOM
+### <a name="boms-in-the-product-lifecycle"></a><span data-ttu-id="4d4a7-128">製品ライフ サイクルの BOM</span><span class="sxs-lookup"><span data-stu-id="4d4a7-128">BOMs in the product lifecycle</span></span>
 
-製品ライフ サイクルで、さまざまなタイプの BOM が、さまざまな理由で作成される場合があります。
+<span data-ttu-id="4d4a7-129">製品ライフ サイクルで、さまざまなタイプの BOM が、さまざまな理由で作成される場合があります。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-129">In the product lifecycle, many types of BOM might be created for various reasons:</span></span>
 
--   **スケッチ/ドラフトの BOM** – この BOM は、早期設計フェーズに必要な材料の見積のドラフトを提供します。また、原価のおおまかな見積と見積済製品属性に役立ちます。 通常、この BOM は、エンタープライズ リソース プランニング (ERP) では使用されません。
--   **エンジニアリング BOM** – このBOMは、通常、既存の製品のポートフォリオに基づく製品を作成するときに使用されます。 エンジニアリング BOM は、設計プロセスを簡素化し、複雑な製品をエンジニアリング モジュールにグループ化するために構造化されます。 簡単な製品の場合、実際の生産プロセスにエンジニアリング BOM が使用できる場合があります。 ただし、他の製品の場合、エンジニアリング BOM は実際の生産 BOM に変換する必要があります。 エンジニアリング BOM は、通常 BOM 階層のファントムにより表されます。 エンジニアリング BOM は製造工程の計画と実行に使用されますが、この方法は、特に多くの注文を作成する反復的な工程の場合には、非能率を発生する可能性があります。
--   **計画 BOM** – この BOM は、必要な材料の計画に使用されます。 コンポーネントと材料の需要は、完成品の需要に基づいて計算されます。 BOM の原価計算と同様に、計画 BOMは、期間内に使用される材料の特定の組み合わせを表す場合があります。
--   **生産 BOM** – これは、特定の生産に使用される実際の BOM です。 生産 BOM は、製品の生産で使用される実際のリソースを考慮する必要があります。 製造オーダー、バッチ オーダー、またはかんばんが作成されると、ファントムで表される BOM の複数のレベルは、1 つのレベルに折りたたまれ、注文の工程に配分されます。
--   **原価計算 BOM** – この BOM は、製品の見積原価の計算に使用されます。 たとえば、標準原価を使用する場合、または特定の製品の予定原価見積を計算する場合に、原価計算 BOM を使用できます。 原価計算 BOM は、使用すると想定されている材料とリソースの特定の組み合わせを参照できます。 したがって、ある期間の代表的な見積原価を作成し、時間経過に伴う差異を回避するために、原価計算 BOM を使用できます。
+-   <span data-ttu-id="4d4a7-130">**スケッチ/ドラフトの BOM** – この BOM は、早期設計フェーズに必要な材料の見積のドラフトを提供します。また、原価のおおまかな見積と見積済製品属性に役立ちます。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-130">**Sketching/Draft BOM** – This BOM gives a draft estimation of required materials in an early design phase and helps you do a rough estimate of cost and estimated product attributes.</span></span> <span data-ttu-id="4d4a7-131">通常、この BOM は、エンタープライズ リソース プランニング (ERP) では使用されません。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-131">This BOM isn't usually used in enterprise resource planning (ERP).</span></span>
+-   <span data-ttu-id="4d4a7-132">**エンジニアリング BOM** – このBOMは、通常、既存の製品のポートフォリオに基づく製品を作成するときに使用されます。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-132">**Engineering BOM** – This BOM is typically used when you design products that are based on existing product portfolios.</span></span> <span data-ttu-id="4d4a7-133">エンジニアリング BOM は、設計プロセスを簡素化し、複雑な製品をエンジニアリング モジュールにグループ化するために構造化されます。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-133">Engineering BOMs are structured to simplify the design process and group complex products into engineering modules.</span></span> <span data-ttu-id="4d4a7-134">簡単な製品の場合、実際の生産プロセスにエンジニアリング BOM が使用できる場合があります。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-134">For simple products, it might be possible to engineering BOMs for the actual production process.</span></span> <span data-ttu-id="4d4a7-135">ただし、他の製品の場合、エンジニアリング BOM は実際の生産 BOM に変換する必要があります。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-135">However, for other products, the engineering BOM must be converted to an actual production BOM.</span></span> <span data-ttu-id="4d4a7-136">エンジニアリング BOM は、通常 BOM 階層のファントムにより表されます。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-136">Engineering BOMS are typically represented by phantoms in the BOM hierarchy.</span></span> <span data-ttu-id="4d4a7-137">エンジニアリング BOM は製造工程の計画と実行に使用されますが、この方法は、特に多くの注文を作成する反復的な工程の場合には、非能率を発生する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-137">Although engineering BOMs can be used for the planning and execution of manufacturing operations, this approach can lead to inefficiencies, especially in repetitive operations where many orders are created.</span></span>
+-   <span data-ttu-id="4d4a7-138">**計画 BOM** – この BOM は、必要な材料の計画に使用されます。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-138">**Planning BOM** – This BOM is used to do planning for material requirements.</span></span> <span data-ttu-id="4d4a7-139">コンポーネントと材料の需要は、完成品の需要に基づいて計算されます。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-139">The demand of components and ingredients is calculated based on the demand of the finished products.</span></span> <span data-ttu-id="4d4a7-140">BOM の原価計算と同様に、計画 BOMは、期間内に使用される材料の特定の組み合わせを表す場合があります。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-140">Like costing BOMs, planning BOMs might represent a specific mix of material that is used in a period.</span></span>
+-   <span data-ttu-id="4d4a7-141">**生産 BOM** – これは、特定の生産に使用される実際の BOM です。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-141">**Production BOM** – This is the actual BOM that is used for a specific production.</span></span> <span data-ttu-id="4d4a7-142">生産 BOM は、製品の生産で使用される実際のリソースを考慮する必要があります。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-142">A production BOM must take into account the actual resources that are used to produce the product.</span></span> <span data-ttu-id="4d4a7-143">製造オーダー、バッチ オーダー、またはかんばんが作成されると、ファントムで表される BOM の複数のレベルは、1 つのレベルに折りたたまれ、注文の工程に配分されます。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-143">When a production order, batch order, or kanban is created, the multiple levels of BOMs that are represented by phantoms are collapsed into one level and distributed over the operations for the order.</span></span>
+-   <span data-ttu-id="4d4a7-144">**原価計算 BOM** – この BOM は、製品の見積原価の計算に使用されます。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-144">**Costing BOM** – This BOM is used to calculated the estimated cost of a product.</span></span> <span data-ttu-id="4d4a7-145">たとえば、標準原価を使用する場合、または特定の製品の予定原価見積を計算する場合に、原価計算 BOM を使用できます。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-145">For example, you can use a costing BOM when standard cost is used or the estimated planned cost of a given product is calculated.</span></span> <span data-ttu-id="4d4a7-146">原価計算 BOM は、使用すると想定されている材料とリソースの特定の組み合わせを参照できます。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-146">Costing BOMs can refer to a specific mix of materials and resources that is expected to be used.</span></span> <span data-ttu-id="4d4a7-147">したがって、ある期間の代表的な見積原価を作成し、時間経過に伴う差異を回避するために、原価計算 BOM を使用できます。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-147">Therefore, you can use the costing BOM to create a representative estimated cost for a period and help avoid variances over time.</span></span>
 
-実装に実際に使用される BOM のタイプは、実装や取引シナリオと要件によって異なります。 簡単な実装では、計画 BOM、生産 BOM、原価計算 BOM は、1 つの BOM としてモデル化できます。 頻繁な技術変更、複数の代替工順がある環境では、大規模な一連の BOM タイプが要求される可能性があります。
+<span data-ttu-id="4d4a7-148">実装に実際に使用される BOM のタイプは、実装や取引シナリオと要件によって異なります。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-148">The types of BOM that are actually used in an implementation depend on the implementation, and also on the business scenarios and requirements.</span></span> <span data-ttu-id="4d4a7-149">簡単な実装では、計画 BOM、生産 BOM、原価計算 BOM は、1 つの BOM としてモデル化できます。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-149">In simple implementations, a planning BOM, production BOM, and costing BOM can be modeled as one BOM.</span></span> <span data-ttu-id="4d4a7-150">頻繁な技術変更、複数の代替工順がある環境では、大規模な一連の BOM タイプが要求される可能性があります。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-150">In environments that have frequent engineering changes and multiple alternative routes, a larger set of BOM types will probably be required.</span></span>
 
-### <a name="approval-of-boms-and-formulas"></a>BOM とフォーミュラの承認
+### <a name="approval-of-boms-and-formulas"></a><span data-ttu-id="4d4a7-151">BOM とフォーミュラの承認</span><span class="sxs-lookup"><span data-stu-id="4d4a7-151">Approval of BOMs and formulas</span></span>
 
-各 BOM とフォーミュラは、個別に承認または未承認にすることができます。 通常、最初に関連する BOM バージョンが承認されると、BOM またはフォーミュラの承認が発生します。 ただし、一部の業務シナリオでは、これらの承認は、プロセスで異なるステップがあったり、異なるプロセス オーナーを含む場合があります。  
+<span data-ttu-id="4d4a7-152">各 BOM とフォーミュラは、個別に承認または未承認にすることができます。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-152">Each BOM and formula can be separately approved or unapproved.</span></span> <span data-ttu-id="4d4a7-153">通常、最初に関連する BOM バージョンが承認されると、BOM またはフォーミュラの承認が発生します。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-153">Typically, approval of a BOM or formula occurs when the first relevant BOM version is approved.</span></span> <span data-ttu-id="4d4a7-154">ただし、一部の業務シナリオでは、これらの承認は、プロセスで異なるステップがあったり、異なるプロセス オーナーを含む場合があります。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-154">However, in some business scenarios, these approvals might be different steps in the process and might involve different process owners.</span></span>  
 
-BOM が承認されない場合は、すべての関連する BOM バージョンも承認されないことに注意してください。
+<span data-ttu-id="4d4a7-155">BOM が承認されない場合は、すべての関連する BOM バージョンも承認されないことに注意してください。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-155">Note that, if a BOM is unapproved, all related BOM versions are also unapproved.</span></span>
 
-## <a name="bom-and-formula-versions"></a>BOM とフォーミュラのバージョン
-生産できる製品バリアントに特定の BOM またはフォーミュラを関連付けるには、BOM バージョンまたはフォーミュラ バージョンを作成する必要があります。 BOM バージョンとフォーミュラ バージョンの有効性は、期間、数量、サイト、特定の製品分析コード、およびその他の基準によって制約することができます。 フォーミュラ バージョンには、歩留まり、連産品と副産物の定義などの追加の重要な属性があり、またフォーミュラの原価配分の指示があります。
+## <a name="bom-and-formula-versions"></a><span data-ttu-id="4d4a7-156">BOM とフォーミュラのバージョン</span><span class="sxs-lookup"><span data-stu-id="4d4a7-156">BOM and formula versions</span></span>
+<span data-ttu-id="4d4a7-157">生産できる製品バリアントに特定の BOM またはフォーミュラを関連付けるには、BOM バージョンまたはフォーミュラ バージョンを作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-157">To relate a specific BOM or formula to a product variant that can be produced, you must create a BOM version or formula version.</span></span> <span data-ttu-id="4d4a7-158">BOM バージョンとフォーミュラ バージョンの有効性は、期間、数量、サイト、特定の製品分析コード、およびその他の基準によって制約することができます。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-158">The validity of BOM versions and formula versions can be constrained by period, quantity, site, specific product dimensions, and other criteria.</span></span> <span data-ttu-id="4d4a7-159">フォーミュラ バージョンには、歩留まり、連産品と副産物の定義などの追加の重要な属性があり、またフォーミュラの原価配分の指示があります。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-159">Formula versions have additional important attributes, such as yield, co-product and by-product definitions, and the cost distribution instructions for the formula.</span></span>
 
-### <a name="approval-of-bom-and-formula-versions"></a>BOM とフォーミュラ バージョンの承認
+### <a name="approval-of-bom-and-formula-versions"></a><span data-ttu-id="4d4a7-160">BOM とフォーミュラ バージョンの承認</span><span class="sxs-lookup"><span data-stu-id="4d4a7-160">Approval of BOM and formula versions</span></span>
 
-BOM バージョンは、計画プロセスまたは製造プロセスで使用する前に、承認される必要があります。 BOM バージョンが承認されると、関連する BOM もユーザーの選択と認証権限に応じて承認できます。 関連する BOM 自体が承認されている場合のみ、BOM バージョンを承認できることに注意してください。
+<span data-ttu-id="4d4a7-161">BOM バージョンは、計画プロセスまたは製造プロセスで使用する前に、承認される必要があります。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-161">Before a BOM version can be used in the planning or manufacturing process, it must be approved.</span></span> <span data-ttu-id="4d4a7-162">BOM バージョンが承認されると、関連する BOM もユーザーの選択と認証権限に応じて承認できます。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-162">When a BOM version is approved, the related BOM can also be approved, depending on the user's selection and authentication rights.</span></span> <span data-ttu-id="4d4a7-163">関連する BOM 自体が承認されている場合のみ、BOM バージョンを承認できることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-163">Note that a BOM version can be approved only if the related BOM itself is approved.</span></span>
 
-### <a name="activation-of-the-default-bom-or-formula-version"></a>既定の BOM またはフォーミュラ バージョンの有効化
+### <a name="activation-of-the-default-bom-or-formula-version"></a><span data-ttu-id="4d4a7-164">既定の BOM またはフォーミュラ バージョンの有効化</span><span class="sxs-lookup"><span data-stu-id="4d4a7-164">Activation of the default BOM or formula version</span></span>
 
-マスタ プランで使用する、または製造オーダーの作成に使用する既定の BOM バージョンまたはフォーミュラ バージョンとして、特定の BOM またはフォーミュラを設定するには、そのバージョンを有効化する必要があります。 バージョンが有効になると、指定された制約 (たとえば、期間、サイト、または数量) のバージョンの独自性が確認されます。 有効化しようとしているバージョンが、すでに有効なバージョンと競合している場合には、エラー メッセージを受信します。 競合するバージョンを無効にするか、バージョンの制約 (通常は期間) を変更して、あいまいな有効化を禁止する必要があります。
+<span data-ttu-id="4d4a7-165">マスタ プランで使用する、または製造オーダーの作成に使用する既定の BOM バージョンまたはフォーミュラ バージョンとして、特定の BOM またはフォーミュラを設定するには、そのバージョンを有効化する必要があります。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-165">To set a specific BOM or formula as the default BOM version or formula version that will be used by master planning or used to create of production orders, you must activate the version.</span></span> <span data-ttu-id="4d4a7-166">バージョンが有効になると、指定された制約 (たとえば、期間、サイト、または数量) のバージョンの独自性が確認されます。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-166">When a version is activated, the uniqueness of the version for the given constraints (for example, period, site, or quantity) is verified.</span></span> <span data-ttu-id="4d4a7-167">有効化しようとしているバージョンが、すでに有効なバージョンと競合している場合には、エラー メッセージを受信します。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-167">You receive an error message if the version that you're trying to activate conflicts with a version that is already active.</span></span> <span data-ttu-id="4d4a7-168">競合するバージョンを無効にするか、バージョンの制約 (通常は期間) を変更して、あいまいな有効化を禁止する必要があります。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-168">You must then either inactivate the conflicting version or modify the version constraints (usually the period) to prevent an ambiguous activation.</span></span>
 
-### <a name="product-change-with-case-management"></a>ケース管理を使用した製品変更
+### <a name="product-change-with-case-management"></a><span data-ttu-id="4d4a7-169">ケース管理を使用した製品変更</span><span class="sxs-lookup"><span data-stu-id="4d4a7-169">Product change with case management</span></span>
 
-新しい、または変更された BOM および BOM バージョンの承認や有効化のための製品変更ケースは、BOM バージョンの制約の概要を簡単に表示する方法を提供します。 また、1 つの有効化日付の特定の変更に関連するすべての BOM やフォーミュラを、承認して有効化することができます。
+<span data-ttu-id="4d4a7-170">新しい、または変更された BOM および BOM バージョンの承認や有効化のための製品変更ケースは、BOM バージョンの制約の概要を簡単に表示する方法を提供します。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-170">The product change case for approval and activation of new or changed BOMs and BOM versions provides an easy way to see an overview of the BOM version constraints.</span></span> <span data-ttu-id="4d4a7-171">また、1 つの有効化日付の特定の変更に関連するすべての BOM やフォーミュラを、承認して有効化することができます。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-171">You can also approve and activate all BOMs and formulas that are related to a specific change for one activation date.</span></span>
 
-### <a name="alternative-bom-versions"></a>代替 BOM バージョン
+### <a name="alternative-bom-versions"></a><span data-ttu-id="4d4a7-172">代替 BOM バージョン</span><span class="sxs-lookup"><span data-stu-id="4d4a7-172">Alternative BOM versions</span></span>
 
-場合によっては、有効な BOM バージョンまたはフォーミュラ バージョンは、予測、販売、または親製品で使用できません。 この場合、代替 BOM またはフォーミュラに、承認済 BOM バージョンまたはフォーミュラ バージョンが存在するときには、要件 (予測明細行、販売明細行、または BOM 明細行) の一部として、特定の承認済 BOM を選択できます。  
+<span data-ttu-id="4d4a7-173">場合によっては、有効な BOM バージョンまたはフォーミュラ バージョンは、予測、販売、または親製品で使用できません。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-173">Sometimes, the active BOM version or formula version should not be used in forecasts, sales, or a parent product.</span></span> <span data-ttu-id="4d4a7-174">この場合、代替 BOM またはフォーミュラに、承認済 BOM バージョンまたはフォーミュラ バージョンが存在するときには、要件 (予測明細行、販売明細行、または BOM 明細行) の一部として、特定の承認済 BOM を選択できます。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-174">In this case, you can select a specific approved BOM as part of the requirement (forecast line, sales line, or BOM line) if an approved BOM version or formula version exists for the alternative BOM or formula.</span></span>  
 
-計画オーダー、製造オーダー、またはかんばんが作成されると、プランナーまたは作業現場の監督は、特定の製品を計画または製造するために必要な計画製造日付で有効になる承認済 BOM バージョンを使用できます。 使用する BOM バージョンは、既定の BOM バージョンとして有効化する必要はありません。
+<span data-ttu-id="4d4a7-175">計画オーダー、製造オーダー、またはかんばんが作成されると、プランナーまたは作業現場の監督は、特定の製品を計画または製造するために必要な計画製造日付で有効になる承認済 BOM バージョンを使用できます。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-175">When planned orders, production orders, or kanbans are created, the planner or shop floor supervisor can use any approved BOM version that is valid on the requested planned production date to plan for or produce a specific product.</span></span> <span data-ttu-id="4d4a7-176">使用する BOM バージョンは、既定の BOM バージョンとして有効化する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-176">The BOM version that is used doesn't have to be activated as the default BOM version.</span></span>
 
-## <a name="bom-and-formula-lines"></a>BOM 明細行とフォーミュラ明細行
-BOM 明細行は、各材料、サービス、または成分に対して作成されます。 明細行は、指定された製品バリアントの予定消費を定義し、予定消費に関連付けられるさまざまな属性を定義します。  
+## <a name="bom-and-formula-lines"></a><span data-ttu-id="4d4a7-177">BOM 明細行とフォーミュラ明細行</span><span class="sxs-lookup"><span data-stu-id="4d4a7-177">BOM and formula lines</span></span>
+<span data-ttu-id="4d4a7-178">BOM 明細行は、各材料、サービス、または成分に対して作成されます。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-178">A BOM line is created for each material, service, or ingredient.</span></span> <span data-ttu-id="4d4a7-179">明細行は、指定された製品バリアントの予定消費を定義し、予定消費に関連付けられるさまざまな属性を定義します。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-179">The line defines the planned consumption of the specified product variant and also defines the various attributes that are related to the planned consumption.</span></span>  
 
-BOM 明細行は、次の明細行タイプを使用できます。**品目**、**ファントム**、**ペギングされた供給**、**仕入先**。
+<span data-ttu-id="4d4a7-180">BOM 明細行は、次の明細行タイプを使用できます。**品目**、**ファントム**、**ペギングされた供給**、**仕入先**。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-180">BOM lines can have the following line types: **Item**, **Phantom**, **Pegged supply**, **Vendor**.</span></span>
 
-### <a name="item"></a>品目
+### <a name="item"></a><span data-ttu-id="4d4a7-181">品目</span><span class="sxs-lookup"><span data-stu-id="4d4a7-181">Item</span></span>
 
-直接消費される、さらに展開する必要がないまたはペギングされた供給がない、材料やサービスに対しては、[**品目**] 明細行タイプを選択します。
+<span data-ttu-id="4d4a7-182">直接消費される、さらに展開する必要がないまたはペギングされた供給がない、材料やサービスに対しては、[**品目**] 明細行タイプを選択します。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-182">Select the **Item** line type for materials or services that are directly consumed, and that don't require further explosion or pegged supply.</span></span>
 
-### <a name="phantom"></a>ファントム
+### <a name="phantom"></a><span data-ttu-id="4d4a7-183">ファントム</span><span class="sxs-lookup"><span data-stu-id="4d4a7-183">Phantom</span></span>
 
-BOM 明細行に含まれる低レベルの BOM 品目を展開する場合は、[**ファントム**] 明細行タイプを選択します。 マスター スケジューリングの場合、予定原価の計算では、**ファントム**タイプの BOM 明細行を使用する製造オーダーの見積で、ファントム BOM をもつ製品バリアントを参照する親 BOM 明細行が、その製品バリアントに適用できる有効な BOM バージョンによって決定される BOM で BOM 明細行として表示されているコンポーネント品目と置き換えられます。 製品バリアントが適用できる有効な工順を持つ場合、その工順の工程は親の工順にマージされます。  
+<span data-ttu-id="4d4a7-184">BOM 明細行に含まれる低レベルの BOM 品目を展開する場合は、[**ファントム**] 明細行タイプを選択します。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-184">Select the **Phantom** line type when you want to explode any lower-level BOM items that are contained on the BOM line.</span></span> <span data-ttu-id="4d4a7-185">マスター スケジューリングの場合、予定原価の計算では、**ファントム**タイプの BOM 明細行を使用する製造オーダーの見積で、ファントム BOM をもつ製品バリアントを参照する親 BOM 明細行が、その製品バリアントに適用できる有効な BOM バージョンによって決定される BOM で BOM 明細行として表示されているコンポーネント品目と置き換えられます。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-185">In Master scheduling, in planned cost calculation, or on estimation of a production order that uses BOM lines of the **Phantom** type, the parent BOM line that refers to a product variant that has a phantom BOM is replaced by the component items that are listed as BOM lines in that BOM, as determined by the applicable active BOM version of that product variant.</span></span> <span data-ttu-id="4d4a7-186">製品バリアントが適用できる有効な工順を持つ場合、その工順の工程は親の工順にマージされます。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-186">If the product variant has an applicable active route, the operations of that route are merged into the parent route.</span></span>  
 
-通常、ファントムは、エンジニアリング プロセスを簡略化するために使用されることに注意してください。 多くのレベルのファントム BOM を広い範囲で使用すると、特に非常に反復的な製造シナリオではパフォーマンスに影響を与えます。 パフォーマンスを改善するには、ファントムの階層が深くなることを避ける必要があります。 代わりに、事前に展開される生産 BOM および工順を使用します。
+<span data-ttu-id="4d4a7-187">通常、ファントムは、エンジニアリング プロセスを簡略化するために使用されることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-187">Note that phantoms are typically used to simplify the engineering process.</span></span> <span data-ttu-id="4d4a7-188">多くのレベルのファントム BOM を広い範囲で使用すると、特に非常に反復的な製造シナリオではパフォーマンスに影響を与えます。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-188">Extensive use of phantom BOMs in many levels has an effect on performance, especially in highly repetitive manufacturing scenarios.</span></span> <span data-ttu-id="4d4a7-189">パフォーマンスを改善するには、ファントムの階層が深くなることを避ける必要があります。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-189">To improve performance, you should avoid deep hierarchies of phantoms.</span></span> <span data-ttu-id="4d4a7-190">代わりに、事前に展開される生産 BOM および工順を使用します。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-190">Instead, use pre-exploded production BOMs and routes.</span></span>
 
-### <a name="pegged-supply"></a>ペギングされた供給
+### <a name="pegged-supply"></a><span data-ttu-id="4d4a7-191">ペギングされた供給</span><span class="sxs-lookup"><span data-stu-id="4d4a7-191">Pegged supply</span></span>
 
-BOM 明細行が参照する製品バリアントのための、サブ生産、BOM 明細行のイベントかんばん、または直接発注書を作成する場合は、[**ペギングされた供給**] 明細行タイプを選択します。 製造オーダーを見積ると、サブ生産、イベントかんばん、または発注書が作成されます。 必要な品目数量が消費する製造オーダーに自動的に引き当てられます。
+<span data-ttu-id="4d4a7-192">BOM 明細行が参照する製品バリアントのための、サブ生産、BOM 明細行のイベントかんばん、または直接発注書を作成する場合は、[**ペギングされた供給**] 明細行タイプを選択します。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-192">Select the **Pegged supply** line type when you want to create a subproduction, a BOM line event kanban, or a direct purchase order for any product variant that the BOM line references.</span></span> <span data-ttu-id="4d4a7-193">製造オーダーを見積ると、サブ生産、イベントかんばん、または発注書が作成されます。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-193">The subproduction, event kanban, or purchase order is created when you estimate the production order.</span></span> <span data-ttu-id="4d4a7-194">必要な品目数量が消費する製造オーダーに自動的に引き当てられます。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-194">The required item quantities are automatically reserved for the consuming production order.</span></span>
 
-### <a name="vendor"></a>ベンダー
+### <a name="vendor"></a><span data-ttu-id="4d4a7-195">ベンダー</span><span class="sxs-lookup"><span data-stu-id="4d4a7-195">Vendor</span></span>
 
-生産プロセスが下請業者を使用し、下請業者にサブ生産や発注書を自動的に作成したい場合は、[**仕入先**] 明細行タイプを選択します。  
+<span data-ttu-id="4d4a7-196">生産プロセスが下請業者を使用し、下請業者にサブ生産や発注書を自動的に作成したい場合は、[**仕入先**] 明細行タイプを選択します。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-196">Select the **Vendor** line type if the production process uses a subcontractor, and you want a subproduction or purchase order to be created automatically for the subcontractor.</span></span>  
 
-**BOM の外注した工程に関する注記:** 下請業者が実行するサービスや作業は、在庫を追跡されるサービス品目として作成する必要があります。 BOM 明細行として親品目にサービス品目を関連付ける必要があります。 工順には、協力会社の運営ソースに割り当てられる工程を含める必要があります。
+<span data-ttu-id="4d4a7-197">**BOM の外注した工程に関する注記:** 下請業者が実行するサービスや作業は、在庫を追跡されるサービス品目として作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-197">**Note about subcontracted operations in a BOM:** The service or work that is performed by the subcontractor must be created as service item that is tracked in inventory.</span></span> <span data-ttu-id="4d4a7-198">BOM 明細行として親品目にサービス品目を関連付ける必要があります。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-198">You must attach the service item to the parent item as a BOM line.</span></span> <span data-ttu-id="4d4a7-199">工順には、協力会社の運営ソースに割り当てられる工程を含める必要があります。</span><span class="sxs-lookup"><span data-stu-id="4d4a7-199">The route must contain an operation that is assigned to the subcontractor's operations resource.</span></span>
 
 
 

@@ -17,7 +17,7 @@ ms.assetid:
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: YuyuScheller
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
 ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
@@ -27,84 +27,84 @@ ms.lasthandoff: 07/27/2017
 
 ---
 
-## <a name="access-rights-of-a-cost-object-controller"></a>原価オブジェクト コントローラーのアクセス権
+## <a name="access-rights-of-a-cost-object-controller"></a><span data-ttu-id="b3c6f-103">原価オブジェクト コントローラーのアクセス権</span><span class="sxs-lookup"><span data-stu-id="b3c6f-103">Access rights of a cost object controller</span></span>
 
 [!include[banner](../includes/banner.md)]
 
-**原価管理**ワークスペースは、マネージャーが原価オブジェクトのパフォーマンスを表示できる中心点です。 このワークスペースでは、マネージャーが原価経理担当者でない場合でも原価会計データを使用できます。 セキュリティ上の理由から、マネージャは自分が担当する特定の原価オブジェクトに関連付けられている原価計算データのみの参照が許可されます。
+<span data-ttu-id="b3c6f-104">**原価管理**ワークスペースは、マネージャーが原価オブジェクトのパフォーマンスを表示できる中心点です。</span><span class="sxs-lookup"><span data-stu-id="b3c6f-104">The **Cost control** workspace is a central point where managers can view the performance of their cost objects.</span></span> <span data-ttu-id="b3c6f-105">このワークスペースでは、マネージャーが原価経理担当者でない場合でも原価会計データを使用できます。</span><span class="sxs-lookup"><span data-stu-id="b3c6f-105">This workspace lets managers consume Cost accounting data even though they aren't cost accountants.</span></span> <span data-ttu-id="b3c6f-106">セキュリティ上の理由から、マネージャは自分が担当する特定の原価オブジェクトに関連付けられている原価計算データのみの参照が許可されます。</span><span class="sxs-lookup"><span data-stu-id="b3c6f-106">For security reasons, managers should be allowed to see only the Cost accounting data that is related to the specific cost objects that they are responsible for.</span></span>
 
-原価計算には、次の 4 つの固有のロールがあります。
+<span data-ttu-id="b3c6f-107">原価計算には、次の 4 つの固有のロールがあります。</span><span class="sxs-lookup"><span data-stu-id="b3c6f-107">There are four unique roles in Cost accounting.</span></span>
 
-| ロール名               | ライセンス      |
+| <span data-ttu-id="b3c6f-108">ロール名</span><span class="sxs-lookup"><span data-stu-id="b3c6f-108">Role name</span></span>               | <span data-ttu-id="b3c6f-109">ライセンス</span><span class="sxs-lookup"><span data-stu-id="b3c6f-109">License</span></span>      |
 |-------------------------|--------------|
-| 原価会計マネージャー | 活動     |
-| 原価経理担当         | Operations   |
-| 原価経理担当係   | Operations   |
-| 原価オブジェクト コントローラー  | チーム メンバー |
+| <span data-ttu-id="b3c6f-110">原価会計マネージャー</span><span class="sxs-lookup"><span data-stu-id="b3c6f-110">Cost accounting manager</span></span> | <span data-ttu-id="b3c6f-111">活動</span><span class="sxs-lookup"><span data-stu-id="b3c6f-111">Activity</span></span>     |
+| <span data-ttu-id="b3c6f-112">原価経理担当</span><span class="sxs-lookup"><span data-stu-id="b3c6f-112">Cost accountant</span></span>         | <span data-ttu-id="b3c6f-113">Operations</span><span class="sxs-lookup"><span data-stu-id="b3c6f-113">Operations</span></span>   |
+| <span data-ttu-id="b3c6f-114">原価経理担当係</span><span class="sxs-lookup"><span data-stu-id="b3c6f-114">Cost accountant clerk</span></span>   | <span data-ttu-id="b3c6f-115">Operations</span><span class="sxs-lookup"><span data-stu-id="b3c6f-115">Operations</span></span>   |
+| <span data-ttu-id="b3c6f-116">原価オブジェクト コントローラー</span><span class="sxs-lookup"><span data-stu-id="b3c6f-116">Cost object controller</span></span>  | <span data-ttu-id="b3c6f-117">チーム メンバー</span><span class="sxs-lookup"><span data-stu-id="b3c6f-117">Team members</span></span> |
 
-ここでは**原価オブジェクト コントローラー** ロールをマネージャーに割り当てる方法について説明します
+<span data-ttu-id="b3c6f-118">ここでは**原価オブジェクト コントローラー** ロールをマネージャーに割り当てる方法について説明します</span><span class="sxs-lookup"><span data-stu-id="b3c6f-118">This topic explains how to assign the **Cost object controller** role to a manager.</span></span>
 
-**原価オブジェクト コントローラー** ロールがマネージャーに割り当てられると、マネージャーは次の作業を実行できます。
+<span data-ttu-id="b3c6f-119">**原価オブジェクト コントローラー** ロールがマネージャーに割り当てられると、マネージャーは次の作業を実行できます。</span><span class="sxs-lookup"><span data-stu-id="b3c6f-119">When the **Cost object controller** role is assigned to a manager, the manager can perform the following tasks:</span></span>
 
-- **原価管理**ワークスペースにアクセス (クライアントで)。
+- <span data-ttu-id="b3c6f-120">**原価管理**ワークスペースにアクセス (クライアントで)。</span><span class="sxs-lookup"><span data-stu-id="b3c6f-120">Access the **Cost control** workspace (in the client).</span></span>
 
-    - ドリルスルー経験をサポートするページへのドリルスルーおよび表示アクセス。
+    - <span data-ttu-id="b3c6f-121">ドリルスルー経験をサポートするページへのドリルスルーおよび表示アクセス。</span><span class="sxs-lookup"><span data-stu-id="b3c6f-121">Drill through and have view access to the pages that support the drill-through experience.</span></span>
 
-- **原価管理**ワークスペースにアクセス (モバイル アプリケーションで)。
+- <span data-ttu-id="b3c6f-122">**原価管理**ワークスペースにアクセス (モバイル アプリケーションで)。</span><span class="sxs-lookup"><span data-stu-id="b3c6f-122">Access the **Cost control** workspace (in the mobile application).</span></span>
 
 > [!NOTE]
-> **原価オブジェクト コントローラー**ロールは、ユーザーがどの原価オブジェクトへのアクセスや表示ができるかを制御しません。 行レベル セキュリティは、分析コード階層とアクセス リスト階層によって提供されます。
+> <span data-ttu-id="b3c6f-123">**原価オブジェクト コントローラー**ロールは、ユーザーがどの原価オブジェクトへのアクセスや表示ができるかを制御しません。</span><span class="sxs-lookup"><span data-stu-id="b3c6f-123">The **Cost object controller** role doesn't control which cost objects the user can access and view data for.</span></span> <span data-ttu-id="b3c6f-124">行レベル セキュリティは、分析コード階層とアクセス リスト階層によって提供されます。</span><span class="sxs-lookup"><span data-stu-id="b3c6f-124">Row-level security is provided via dimension hierarchies and the Access list hierarchy.</span></span>
 
-## <a name="grant-access-rights"></a>アクセス権の付与
-次の例は、分析コード階層がどのように見えるかを示します。
+## <a name="grant-access-rights"></a><span data-ttu-id="b3c6f-125">アクセス権の付与</span><span class="sxs-lookup"><span data-stu-id="b3c6f-125">Grant access rights</span></span>
+<span data-ttu-id="b3c6f-126">次の例は、分析コード階層がどのように見えるかを示します。</span><span class="sxs-lookup"><span data-stu-id="b3c6f-126">The following example shows what a dimension hierarchy can look like.</span></span>
 
-**分析コード階層の詳細**
+<span data-ttu-id="b3c6f-127">**分析コード階層の詳細**</span><span class="sxs-lookup"><span data-stu-id="b3c6f-127">**Dimension hierarchy details**</span></span>
 
-| 分析コード階層名 | 分析コード    | 分析コード階層タイプ名      | アクセス リスト階層 |
+| <span data-ttu-id="b3c6f-128">分析コード階層名</span><span class="sxs-lookup"><span data-stu-id="b3c6f-128">Dimension hierarchy name</span></span> | <span data-ttu-id="b3c6f-129">分析コード</span><span class="sxs-lookup"><span data-stu-id="b3c6f-129">Dimension</span></span>    | <span data-ttu-id="b3c6f-130">分析コード階層タイプ名</span><span class="sxs-lookup"><span data-stu-id="b3c6f-130">Dimension hierarchy type name</span></span>      | <span data-ttu-id="b3c6f-131">アクセス リスト階層</span><span class="sxs-lookup"><span data-stu-id="b3c6f-131">Access list hierarchy</span></span> |
 |--------------------------|--------------|------------------------------------|-----------------------|
-| 組織             | コスト センター | 分析コード分類階層 | **有**               |
+| <span data-ttu-id="b3c6f-132">組織</span><span class="sxs-lookup"><span data-stu-id="b3c6f-132">Organization</span></span>             | <span data-ttu-id="b3c6f-133">コスト センター</span><span class="sxs-lookup"><span data-stu-id="b3c6f-133">Cost centers</span></span> | <span data-ttu-id="b3c6f-134">分析コード分類階層</span><span class="sxs-lookup"><span data-stu-id="b3c6f-134">Dimension classification hierarchy</span></span> | <span data-ttu-id="b3c6f-135">**有**</span><span class="sxs-lookup"><span data-stu-id="b3c6f-135">**Yes**</span></span>               |
 
-階層デザイナーの [**ユーザー**] クイック タブで、各ノードに 1 つまたは複数のユーザー ID を挿入できます。
+<span data-ttu-id="b3c6f-136">階層デザイナーの [**ユーザー**] クイック タブで、各ノードに 1 つまたは複数のユーザー ID を挿入できます。</span><span class="sxs-lookup"><span data-stu-id="b3c6f-136">You can use the **Users** FastTab in the hierarchy designer to insert one or more user IDs on each node.</span></span>
 
-|                                   | ユーザー            | 分析コード メンバーの範囲   |                         |
+|                                   | <span data-ttu-id="b3c6f-137">ユーザー</span><span class="sxs-lookup"><span data-stu-id="b3c6f-137">Users</span></span>            | <span data-ttu-id="b3c6f-138">分析コード メンバーの範囲</span><span class="sxs-lookup"><span data-stu-id="b3c6f-138">Dimension member ranges</span></span>   |                         |
 |-----------------------------------|------------------|---------------------------|-------------------------|
-| **ノード**                         | **ユーザー ID**      | **移動元分析コード メンバー** | **移動先分析コード メンバー** |
-| 組織                      | ベンジャミン、クレア |                           |                         |
-| &nbsp;&nbsp;管理者                 | 4 月            |                           |                         |
-| &nbsp;&nbsp;&nbsp;&nbsp;財務   | アリシア           | CC002                     | CC003                   |
-|                                   |                  | CC007                     | CC007                   |
-| &nbsp;&nbsp;&nbsp;&nbsp;HR        | アーニー            | CC001                     | CC001                   |
-| &nbsp;&nbsp;生産            | デビッド            |                           |                         |
-| &nbsp;&nbsp;&nbsp;&nbsp;梱包業 | エレン            | CC005                     | CC005                   |
-| &nbsp;&nbsp;&nbsp;&nbsp;組み立て  | クリス            | CC006                     | CC006                   |
+| <span data-ttu-id="b3c6f-139">**ノード**</span><span class="sxs-lookup"><span data-stu-id="b3c6f-139">**Nodes**</span></span>                         | <span data-ttu-id="b3c6f-140">**ユーザー ID**</span><span class="sxs-lookup"><span data-stu-id="b3c6f-140">**User ID**</span></span>      | <span data-ttu-id="b3c6f-141">**移動元分析コード メンバー**</span><span class="sxs-lookup"><span data-stu-id="b3c6f-141">**From dimension member**</span></span> | <span data-ttu-id="b3c6f-142">**移動先分析コード メンバー**</span><span class="sxs-lookup"><span data-stu-id="b3c6f-142">**To dimension member**</span></span> |
+| <span data-ttu-id="b3c6f-143">組織</span><span class="sxs-lookup"><span data-stu-id="b3c6f-143">Organization</span></span>                      | <span data-ttu-id="b3c6f-144">ベンジャミン、クレア</span><span class="sxs-lookup"><span data-stu-id="b3c6f-144">Benjamin, Claire</span></span> |                           |                         |
+| <span data-ttu-id="b3c6f-145">&nbsp;&nbsp;管理者</span><span class="sxs-lookup"><span data-stu-id="b3c6f-145">&nbsp;&nbsp;Admin</span></span>                 | <span data-ttu-id="b3c6f-146">4 月</span><span class="sxs-lookup"><span data-stu-id="b3c6f-146">April</span></span>            |                           |                         |
+| <span data-ttu-id="b3c6f-147">&nbsp;&nbsp;&nbsp;&nbsp;財務</span><span class="sxs-lookup"><span data-stu-id="b3c6f-147">&nbsp;&nbsp;&nbsp;&nbsp;Finance</span></span>   | <span data-ttu-id="b3c6f-148">アリシア</span><span class="sxs-lookup"><span data-stu-id="b3c6f-148">Alicia</span></span>           | <span data-ttu-id="b3c6f-149">CC002</span><span class="sxs-lookup"><span data-stu-id="b3c6f-149">CC002</span></span>                     | <span data-ttu-id="b3c6f-150">CC003</span><span class="sxs-lookup"><span data-stu-id="b3c6f-150">CC003</span></span>                   |
+|                                   |                  | <span data-ttu-id="b3c6f-151">CC007</span><span class="sxs-lookup"><span data-stu-id="b3c6f-151">CC007</span></span>                     | <span data-ttu-id="b3c6f-152">CC007</span><span class="sxs-lookup"><span data-stu-id="b3c6f-152">CC007</span></span>                   |
+| <span data-ttu-id="b3c6f-153">&nbsp;&nbsp;&nbsp;&nbsp;HR</span><span class="sxs-lookup"><span data-stu-id="b3c6f-153">&nbsp;&nbsp;&nbsp;&nbsp;HR</span></span>        | <span data-ttu-id="b3c6f-154">アーニー</span><span class="sxs-lookup"><span data-stu-id="b3c6f-154">Arnie</span></span>            | <span data-ttu-id="b3c6f-155">CC001</span><span class="sxs-lookup"><span data-stu-id="b3c6f-155">CC001</span></span>                     | <span data-ttu-id="b3c6f-156">CC001</span><span class="sxs-lookup"><span data-stu-id="b3c6f-156">CC001</span></span>                   |
+| <span data-ttu-id="b3c6f-157">&nbsp;&nbsp;生産</span><span class="sxs-lookup"><span data-stu-id="b3c6f-157">&nbsp;&nbsp;Production</span></span>            | <span data-ttu-id="b3c6f-158">デビッド</span><span class="sxs-lookup"><span data-stu-id="b3c6f-158">David</span></span>            |                           |                         |
+| <span data-ttu-id="b3c6f-159">&nbsp;&nbsp;&nbsp;&nbsp;梱包業</span><span class="sxs-lookup"><span data-stu-id="b3c6f-159">&nbsp;&nbsp;&nbsp;&nbsp;Packaging</span></span> | <span data-ttu-id="b3c6f-160">エレン</span><span class="sxs-lookup"><span data-stu-id="b3c6f-160">Ellen</span></span>            | <span data-ttu-id="b3c6f-161">CC005</span><span class="sxs-lookup"><span data-stu-id="b3c6f-161">CC005</span></span>                     | <span data-ttu-id="b3c6f-162">CC005</span><span class="sxs-lookup"><span data-stu-id="b3c6f-162">CC005</span></span>                   |
+| <span data-ttu-id="b3c6f-163">&nbsp;&nbsp;&nbsp;&nbsp;組み立て</span><span class="sxs-lookup"><span data-stu-id="b3c6f-163">&nbsp;&nbsp;&nbsp;&nbsp;Assembly</span></span>  | <span data-ttu-id="b3c6f-164">クリス</span><span class="sxs-lookup"><span data-stu-id="b3c6f-164">Chris</span></span>            | <span data-ttu-id="b3c6f-165">CC006</span><span class="sxs-lookup"><span data-stu-id="b3c6f-165">CC006</span></span>                     | <span data-ttu-id="b3c6f-166">CC006</span><span class="sxs-lookup"><span data-stu-id="b3c6f-166">CC006</span></span>                   |
 
 > [!NOTE]
-> 原価計算のすべてのエントリを表示できるように、原価経理担当者は階層の最上部に割り当てられる必要があります。
+> <span data-ttu-id="b3c6f-167">原価計算のすべてのエントリを表示できるように、原価経理担当者は階層の最上部に割り当てられる必要があります。</span><span class="sxs-lookup"><span data-stu-id="b3c6f-167">Cost accountants should be assigned to the top level of the hierarchy, so that they can see all entries in Cost accounting.</span></span>
 
-アクセス リスト階層およびセキュリティ設定を適用する前に、[**原価会計パラメーター**] ページの [**一般**] タブにある [**原価オブジェクト分析コード メンバーに対する表示アクセスの有効化**] オプションを [**はい**] に設定する必要があります ([**原価会計**] > [**設定**] > [**パラメータ**])。
+<span data-ttu-id="b3c6f-168">アクセス リスト階層およびセキュリティ設定を適用する前に、[**原価会計パラメーター**] ページの [**一般**] タブにある [**原価オブジェクト分析コード メンバーに対する表示アクセスの有効化**] オプションを [**はい**] に設定する必要があります ([**原価会計**] > [**設定**] > [**パラメータ**])。</span><span class="sxs-lookup"><span data-stu-id="b3c6f-168">Before the Access list hierarchy and its security settings can be applied, the **Enable view access for cost object dimension members** option must be set to **Yes** on the **General** tab of the **Cost accounting parameters** page (**Cost accounting** > **Setup** > **Parameters**).</span></span>
 
-アクセス リスト階層の設定は、次の領域に表示されるデータを制御するために使用されます。
+<span data-ttu-id="b3c6f-169">アクセス リスト階層の設定は、次の領域に表示されるデータを制御するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="b3c6f-169">The settings for the Access list hierarchy are used to control the data that is shown in following areas:</span></span>
 
-- **原価管理**ワークスペース (クライアント内):
+- <span data-ttu-id="b3c6f-170">**原価管理**ワークスペース (クライアント内):</span><span class="sxs-lookup"><span data-stu-id="b3c6f-170">**Cost control** workspace (in the client):</span></span>
 
-    - ドリルスルーに使用されるページのデータ
+    - <span data-ttu-id="b3c6f-171">ドリルスルーに使用されるページのデータ</span><span class="sxs-lookup"><span data-stu-id="b3c6f-171">Data on the pages that are used for drill-through</span></span>
 
-- **原価管理**ワークスペース (モバイル アプリケーション内):
+- <span data-ttu-id="b3c6f-172">**原価管理**ワークスペース (モバイル アプリケーション内):</span><span class="sxs-lookup"><span data-stu-id="b3c6f-172">**Cost control** workspace (in the mobile application):</span></span>
 
-    - カードの残高
+    - <span data-ttu-id="b3c6f-173">カードの残高</span><span class="sxs-lookup"><span data-stu-id="b3c6f-173">Balances in cards</span></span>
 
-- Microsoft Power BI:
+- <span data-ttu-id="b3c6f-174">Microsoft Power BI:</span><span class="sxs-lookup"><span data-stu-id="b3c6f-174">Microsoft Power BI:</span></span>
 
-    - Power BI ビジュアル化に表示されるデータ
-    - Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition、クライアントに埋め込まれている Power BI ビジュアル化データ
+    - <span data-ttu-id="b3c6f-175">Power BI ビジュアル化に表示されるデータ</span><span class="sxs-lookup"><span data-stu-id="b3c6f-175">Data that is shown in Power BI visualizations</span></span>
+    - <span data-ttu-id="b3c6f-176">Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition、クライアントに埋め込まれている Power BI ビジュアル化データ</span><span class="sxs-lookup"><span data-stu-id="b3c6f-176">Data Power BI visualizations that are embedded in the Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, client</span></span>
 
 > [!IMPORTANT]
-> - アクセス リスト階層が Power BI のデータに影響を及ぼす前に、アクセス リスト階層と Power BI の行レベルのセキュリティがペアリングされる必要があります。 詳細については、「[原価会計コンテンツ パックのセキュリティ設定](/dynamics365/unified-operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack)」を参照してください。
-> - このトピックでは、**原価管理**ワークスペースを使用するための前提条件を説明します。
+> - <span data-ttu-id="b3c6f-177">アクセス リスト階層が Power BI のデータに影響を及ぼす前に、アクセス リスト階層と Power BI の行レベルのセキュリティがペアリングされる必要があります。</span><span class="sxs-lookup"><span data-stu-id="b3c6f-177">Before the Access list hierarchy can affect data in Power BI, the Access list hierarchy and row-level security in Power BI must be paired.</span></span> <span data-ttu-id="b3c6f-178">詳細については、「[原価会計コンテンツ パックのセキュリティ設定](/dynamics365/unified-operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b3c6f-178">For more information, see [Set up security for Cost accounting content pack](/dynamics365/unified-operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack).</span></span>
+> - <span data-ttu-id="b3c6f-179">このトピックでは、**原価管理**ワークスペースを使用するための前提条件を説明します。</span><span class="sxs-lookup"><span data-stu-id="b3c6f-179">This topic shows the prerequisites that must be in place before you can use the **Cost control** workspace.</span></span>
 
-参照
+<span data-ttu-id="b3c6f-180">参照</span><span class="sxs-lookup"><span data-stu-id="b3c6f-180">See also</span></span>
 
-- [原価管理ワークスペース](cost-control-workspace.md)
-- [分析コード階層](dimension-hierarchy.md)
-- [原価会計コンテンツ パックのセキュリティ設定](/dynamics365/unified-operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack)
+- [<span data-ttu-id="b3c6f-181">原価管理ワークスペース</span><span class="sxs-lookup"><span data-stu-id="b3c6f-181">Cost control workspace</span></span>](cost-control-workspace.md)
+- [<span data-ttu-id="b3c6f-182">分析コード階層</span><span class="sxs-lookup"><span data-stu-id="b3c6f-182">Dimension hierarchy</span></span>](dimension-hierarchy.md)
+- [<span data-ttu-id="b3c6f-183">原価会計コンテンツ パックのセキュリティ設定</span><span class="sxs-lookup"><span data-stu-id="b3c6f-183">Set up security for Cost accounting content pack</span></span>](/dynamics365/unified-operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack)
 

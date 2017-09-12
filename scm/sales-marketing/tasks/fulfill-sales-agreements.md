@@ -16,77 +16,77 @@ ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 4e6c597446c16b73846ee84636d2517f09620f36
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: a975cb63f988823233e7fc54ce5f7bf334e32fc1
 ms.contentlocale: ja-jp
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="fulfill-sales-agreements"></a>販売契約書の履行
+# <a name="fulfill-sales-agreements"></a><span data-ttu-id="f0317-103">販売契約書の履行</span><span class="sxs-lookup"><span data-stu-id="f0317-103">Fulfill sales agreements</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-この手順は、販売注文と関連付けることによって販売契約書を履行する方法について説明します。 この手順は、デモ データの会社 USMF で、または独自のデータで実行できます。 このガイドを開始する前に、「製品価値確約」タイプの有効な販売契約書を持っていることを確認します。 または、かわりに「販売契約書の作成」というタスク ガイドを実行することもできます。  
+<span data-ttu-id="f0317-104">この手順は、販売注文と関連付けることによって販売契約書を履行する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="f0317-104">This procedure shows you how to fulfill a sales agreement by associating sales orders with it.</span></span> <span data-ttu-id="f0317-105">この手順は、デモ データの会社 USMF で、または独自のデータで実行できます。</span><span class="sxs-lookup"><span data-stu-id="f0317-105">You can run this procedure in demo data company USMF or on your own data.</span></span> <span data-ttu-id="f0317-106">このガイドを開始する前に、「製品価値確約」タイプの有効な販売契約書を持っていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="f0317-106">Before starting this guide, make sure you have an effective sales agreement of type "Product value commitment".</span></span> <span data-ttu-id="f0317-107">または、かわりに「販売契約書の作成」というタスク ガイドを実行することもできます。</span><span class="sxs-lookup"><span data-stu-id="f0317-107">Alternatively, you can run the task guide called "Create sales agreements".</span></span>  
 
 
 
 
-## <a name="release-a-sales-order-from-the-agreement"></a>契約書からの販売注文のリリース
-1. [販売とマーケティング] > [販売契約書] > [販売契約書] に移動します。
-2. リストで、注文をリリースする契約書を開きます。
-3. [アクション ペイン] で、[販売契約書] をクリックします。
-4. [リリース注文] をクリックします。
-    * [リリース注文の作成] ページ上部のテキストが指摘するとおり、販売注文明細行に必要な詳細は、契約が数量ベースか値ベースかによって異なります。  
-    * このガイドの契約は、[製品価値確約] タイプです。 そのため、このページの [明細行] セクションは空白になります。 確約が数量に基づく場合は、明細行情報は契約書からコピーされます。  
-5. [作成] をクリックします。
-    * メッセージは、販売注文が作成されたことを通知します。 明細行が含まれていないため、リリース プロセスを完了するために、注文明細行の詳細を追加する必要があります。   
-6. ページを閉じます。
-7. ページを閉じます。
-8. [販売とマーケティング] > [販売注文] > [すべての販売注文] の順に移動します。
-9. リストで、前のタスクでの注文リリースの結果作成された注文を検索し、開きます。
-10. [行の追加] をクリックします。
-11. [品目番号] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。
-12. [品目番号] フィールドで、関連する販売契約書で指定された品目を入力または選択します。
-13. [数量] フィールドに数値を入力します。
-    * 関連付けられている販売契約書の値未満の [正味金額] になる数量の入力を確認します。  
-    * 販売注文が契約にリンクされているため、交渉された割引率が注文明細行に適用されていることを確認します。  
-14. [明細行の更新] をクリックします。
-15. [添付済] をクリックします。
-    * [添付契約書] のページは、明細行がリリースされる ID と契約条件を表示します。  
-16. ページを閉じます。
-17. アクション ウィンドウで、[一般] をクリックします。
-18. [関連付けられている販売契約書] をクリックします。
-19. [明細行の詳細] セクションを展開します。
-20. [履行] タブをクリックします。
-    * [履行] タブは、この確約と関連付けられるすべての販売注文明細行の概要、その履行状態、および、まだリリースされていない金額または数量を表示します。   
-21. ページを閉じます。
-22. ページを閉じます。
-23. ページを閉じます。
+## <a name="release-a-sales-order-from-the-agreement"></a><span data-ttu-id="f0317-108">契約書からの販売注文のリリース</span><span class="sxs-lookup"><span data-stu-id="f0317-108">Release a sales order from the agreement</span></span>
+1. <span data-ttu-id="f0317-109">[販売とマーケティング] > [販売契約書] > [販売契約書] に移動します。</span><span class="sxs-lookup"><span data-stu-id="f0317-109">Go to Sales and marketing > Sales agreements > Sales agreements.</span></span>
+2. <span data-ttu-id="f0317-110">リストで、注文をリリースする契約書を開きます。</span><span class="sxs-lookup"><span data-stu-id="f0317-110">In the list, open the agreement against which you want to release the order.</span></span>
+3. <span data-ttu-id="f0317-111">[アクション ペイン] で、[販売契約書] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f0317-111">On the Action Pane, click Sales agreement.</span></span>
+4. <span data-ttu-id="f0317-112">[リリース注文] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f0317-112">Click Release order.</span></span>
+    * <span data-ttu-id="f0317-113">[リリース注文の作成] ページ上部のテキストが指摘するとおり、販売注文明細行に必要な詳細は、契約が数量ベースか値ベースかによって異なります。</span><span class="sxs-lookup"><span data-stu-id="f0317-113">As the text on top of the  Create release order page points out, the details required for the sales order lines will differ depending on whether the agreement is quantity- or value-based.</span></span>  
+    * <span data-ttu-id="f0317-114">このガイドの契約は、[製品価値確約] タイプです。</span><span class="sxs-lookup"><span data-stu-id="f0317-114">The agreement in this guide is of type "Product value commitment".</span></span> <span data-ttu-id="f0317-115">そのため、このページの [明細行] セクションは空白になります。</span><span class="sxs-lookup"><span data-stu-id="f0317-115">This is why the Lines section of this page is blank.</span></span> <span data-ttu-id="f0317-116">確約が数量に基づく場合は、明細行情報は契約書からコピーされます。</span><span class="sxs-lookup"><span data-stu-id="f0317-116">If the commitment was based on quantity, the line information would be copied from the agreement.</span></span>  
+5. <span data-ttu-id="f0317-117">[作成] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f0317-117">Click Create.</span></span>
+    * <span data-ttu-id="f0317-118">メッセージは、販売注文が作成されたことを通知します。</span><span class="sxs-lookup"><span data-stu-id="f0317-118">The message informs you that a sales order has been created.</span></span> <span data-ttu-id="f0317-119">明細行が含まれていないため、リリース プロセスを完了するために、注文明細行の詳細を追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f0317-119">Since the order does not contain any lines, you must add order line details to complete the release process.</span></span>   
+6. <span data-ttu-id="f0317-120">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="f0317-120">Close the page.</span></span>
+7. <span data-ttu-id="f0317-121">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="f0317-121">Close the page.</span></span>
+8. <span data-ttu-id="f0317-122">[販売とマーケティング] > [販売注文] > [すべての販売注文] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="f0317-122">Go to Sales and marketing > Sales orders > All sales orders.</span></span>
+9. <span data-ttu-id="f0317-123">リストで、前のタスクでの注文リリースの結果作成された注文を検索し、開きます。</span><span class="sxs-lookup"><span data-stu-id="f0317-123">In the list, find and open the order that was created as the result of the order release in the previous task.</span></span>
+10. <span data-ttu-id="f0317-124">[行の追加] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f0317-124">Click Add line.</span></span>
+11. <span data-ttu-id="f0317-125">[品目番号] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="f0317-125">In the Item number field, click the drop-down button to open the lookup.</span></span>
+12. <span data-ttu-id="f0317-126">[品目番号] フィールドで、関連する販売契約書で指定された品目を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="f0317-126">In the Item number field, type or select the item that is specified on the associated sales agreement.</span></span>
+13. <span data-ttu-id="f0317-127">[数量] フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="f0317-127">In the Quantity field, enter a number.</span></span>
+    * <span data-ttu-id="f0317-128">関連付けられている販売契約書の値未満の [正味金額] になる数量の入力を確認します。</span><span class="sxs-lookup"><span data-stu-id="f0317-128">Make sure that you enter a quantity that brings the Net amount under the value of the associated sales agreement.</span></span>  
+    * <span data-ttu-id="f0317-129">販売注文が契約にリンクされているため、交渉された割引率が注文明細行に適用されていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="f0317-129">Notice that because the sales order is linked to the agreement, the negotiated discount percent is applied to the order line.</span></span>  
+14. <span data-ttu-id="f0317-130">[明細行の更新] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f0317-130">Click Update line.</span></span>
+15. <span data-ttu-id="f0317-131">[添付済] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f0317-131">Click Attached.</span></span>
+    * <span data-ttu-id="f0317-132">[添付契約書] のページは、明細行がリリースされる ID と契約条件を表示します。</span><span class="sxs-lookup"><span data-stu-id="f0317-132">The Attached agreement page shows the ID and terms of the agreement from which the line is released.</span></span>  
+16. <span data-ttu-id="f0317-133">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="f0317-133">Close the page.</span></span>
+17. <span data-ttu-id="f0317-134">アクション ウィンドウで、[一般] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f0317-134">On the Action Pane, click General.</span></span>
+18. <span data-ttu-id="f0317-135">[関連付けられている販売契約書] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f0317-135">Click Attached sales agreement.</span></span>
+19. <span data-ttu-id="f0317-136">[明細行の詳細] セクションを展開します。</span><span class="sxs-lookup"><span data-stu-id="f0317-136">Expand the Line details section.</span></span>
+20. <span data-ttu-id="f0317-137">[履行] タブをクリックします。</span><span class="sxs-lookup"><span data-stu-id="f0317-137">Click the Fulfillment tab.</span></span>
+    * <span data-ttu-id="f0317-138">[履行] タブは、この確約と関連付けられるすべての販売注文明細行の概要、その履行状態、および、まだリリースされていない金額または数量を表示します。</span><span class="sxs-lookup"><span data-stu-id="f0317-138">The Fulfillment tab shows a summary of all the sales order lines that are associated with this commitment, and their fulfillment state, as well as the amount or quantity that has not yet been released.</span></span>   
+21. <span data-ttu-id="f0317-139">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="f0317-139">Close the page.</span></span>
+22. <span data-ttu-id="f0317-140">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="f0317-140">Close the page.</span></span>
+23. <span data-ttu-id="f0317-141">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="f0317-141">Close the page.</span></span>
 
-## <a name="apply-sales-agreement-in-the-order-process"></a>注文プロセスでの販売契約書の適用
-1. [販売とマーケティング] > [販売注文] > [すべての販売注文] の順に移動します。
-2. [新規] をクリックします。
-3. [顧客口座] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。
-4. リストで、販売契約書で指定された顧客を検索、選択します。
-5. 一覧で、選択された行のリンクをクリックします。
-6. [一般] セクションを展開します。
-7. [販売契約書 ID] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。
-8. 一覧で、選択された行のリンクをクリックします。
-9. [はい] をクリックします。
-10. [OK] をクリックします。
-11. 一覧で、選択された行をマークします。
-12. [品目番号] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。
-13. [品目番号] フィールドで、関連する販売契約書で指定された品目を入力または選択します。
-14. 一覧で、選択された行のリンクをクリックします。
-15. [保存] をクリックします。
-16. アクション ウィンドウで、[ピッキングと梱包] をクリックします。
-17. [梱包明細の転記] をクリックします。
-18. [パラメーター] セクションを展開します。
-19. [転記] フィールドで、[はい] を選択します。
-20. [OK] をクリックします。
-21. [OK] をクリックします。
-22. アクション ウィンドウで、[一般] をクリックします。
-23. [関連付けられている販売契約書] をクリックします。
-24. [履行] タブをクリックします。
+## <a name="apply-sales-agreement-in-the-order-process"></a><span data-ttu-id="f0317-142">注文プロセスでの販売契約書の適用</span><span class="sxs-lookup"><span data-stu-id="f0317-142">Apply sales agreement in the order process</span></span>
+1. <span data-ttu-id="f0317-143">[販売とマーケティング] > [販売注文] > [すべての販売注文] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="f0317-143">Go to Sales and marketing > Sales orders > All sales orders.</span></span>
+2. <span data-ttu-id="f0317-144">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f0317-144">Click New.</span></span>
+3. <span data-ttu-id="f0317-145">[顧客口座] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="f0317-145">In the Customer account field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="f0317-146">リストで、販売契約書で指定された顧客を検索、選択します。</span><span class="sxs-lookup"><span data-stu-id="f0317-146">In the list, find and select the customer specified on the sales agreement.</span></span>
+5. <span data-ttu-id="f0317-147">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="f0317-147">In the list, click the link in the selected row.</span></span>
+6. <span data-ttu-id="f0317-148">[一般] セクションを展開します。</span><span class="sxs-lookup"><span data-stu-id="f0317-148">Expand the General section.</span></span>
+7. <span data-ttu-id="f0317-149">[販売契約書 ID] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="f0317-149">In the Sales agreement ID field, click the drop-down button to open the lookup.</span></span>
+8. <span data-ttu-id="f0317-150">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="f0317-150">In the list, click the link in the selected row.</span></span>
+9. <span data-ttu-id="f0317-151">[はい] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f0317-151">Click Yes.</span></span>
+10. <span data-ttu-id="f0317-152">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f0317-152">Click OK.</span></span>
+11. <span data-ttu-id="f0317-153">一覧で、選択された行をマークします。</span><span class="sxs-lookup"><span data-stu-id="f0317-153">In the list, mark the selected row.</span></span>
+12. <span data-ttu-id="f0317-154">[品目番号] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="f0317-154">In the Item number field, click the drop-down button to open the lookup.</span></span>
+13. <span data-ttu-id="f0317-155">[品目番号] フィールドで、関連する販売契約書で指定された品目を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="f0317-155">In the Item number field, type or select the item that is specified on the associated sales agreement.</span></span>
+14. <span data-ttu-id="f0317-156">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="f0317-156">In the list, click the link in the selected row.</span></span>
+15. <span data-ttu-id="f0317-157">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f0317-157">Click Save.</span></span>
+16. <span data-ttu-id="f0317-158">アクション ウィンドウで、[ピッキングと梱包] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f0317-158">On the Action Pane, click Pick and pack.</span></span>
+17. <span data-ttu-id="f0317-159">[梱包明細の転記] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f0317-159">Click Post packing slip.</span></span>
+18. <span data-ttu-id="f0317-160">[パラメーター] セクションを展開します。</span><span class="sxs-lookup"><span data-stu-id="f0317-160">Expand the Parameters section.</span></span>
+19. <span data-ttu-id="f0317-161">[転記] フィールドで、[はい] を選択します。</span><span class="sxs-lookup"><span data-stu-id="f0317-161">Select Yes in the Posting field.</span></span>
+20. <span data-ttu-id="f0317-162">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f0317-162">Click OK.</span></span>
+21. <span data-ttu-id="f0317-163">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f0317-163">Click OK.</span></span>
+22. <span data-ttu-id="f0317-164">アクション ウィンドウで、[一般] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f0317-164">On the Action Pane, click General.</span></span>
+23. <span data-ttu-id="f0317-165">[関連付けられている販売契約書] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f0317-165">Click Attached sales agreement.</span></span>
+24. <span data-ttu-id="f0317-166">[履行] タブをクリックします。</span><span class="sxs-lookup"><span data-stu-id="f0317-166">Click the Fulfillment tab.</span></span>
 
 

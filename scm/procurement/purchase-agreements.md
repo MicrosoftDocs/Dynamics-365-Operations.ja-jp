@@ -19,85 +19,85 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: e7412eb1be4b1f5431fc0dd07aa2f778f461a74b
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 0506d4ed0bc1345be5d5c78c2b55a52aff5625e9
 ms.contentlocale: ja-jp
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="purchase-agreements"></a>購買契約
+# <a name="purchase-agreements"></a><span data-ttu-id="40685-105">購買契約</span><span class="sxs-lookup"><span data-stu-id="40685-105">Purchase agreements</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-この記事は、購買契約書に関する情報を提供します。 購買契約とは、長期にわたって複数の発注書を使用して指定された数量または金額を購入することを組織に確約する契約です。 この確約と引き換えに、購買担当者は特別価格と割引を受けます。 
+<span data-ttu-id="40685-106">この記事は、購買契約書に関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="40685-106">This article provides information about purchase agreements.</span></span> <span data-ttu-id="40685-107">購買契約とは、長期にわたって複数の発注書を使用して指定された数量または金額を購入することを組織に確約する契約です。</span><span class="sxs-lookup"><span data-stu-id="40685-107">A purchase agreement is a contract that commits an organization to buy a specified quantity or amount by using multiple purchase orders over time.</span></span> <span data-ttu-id="40685-108">この確約と引き換えに、購買担当者は特別価格と割引を受けます。</span><span class="sxs-lookup"><span data-stu-id="40685-108">In exchange for this commitment, the buyer receives special prices and discounts.</span></span> 
 
-購買契約は、製品の特定数量、製品の特定通貨金額、または調達カテゴリの製品の特定の通貨金額に適用できます。 購買契約の価格と割引は、既存の売買契約で指定された価格と割引よりも優先されます。  
+<span data-ttu-id="40685-109">購買契約は、製品の特定数量、製品の特定通貨金額、または調達カテゴリの製品の特定の通貨金額に適用できます。</span><span class="sxs-lookup"><span data-stu-id="40685-109">Purchase agreements can apply to a specific quantity of a product, a specific currency amount of a product, or a specific currency amount of the products in a procurement category.</span></span> <span data-ttu-id="40685-110">購買契約の価格と割引は、既存の売買契約で指定された価格と割引よりも優先されます。</span><span class="sxs-lookup"><span data-stu-id="40685-110">The prices and discounts of the purchase agreement override the prices and discounts that are specified in any trade agreements that exist.</span></span>  
 
-[**購買契約**] ページで、組織と仕入先間に存在する購買契約書の作成、適用、およびフォローアップを行うことができます。 たとえば、購買契約書を作成したら、そこから直接注文できます。 各購買契約には、購買契約書を作成する担当者によって定義された有効期間があります。 購買の配送日はこの有効期間の有効日の範囲内にする必要があります。  
+<span data-ttu-id="40685-111">[**購買契約**] ページで、組織と仕入先間に存在する購買契約書の作成、適用、およびフォローアップを行うことができます。</span><span class="sxs-lookup"><span data-stu-id="40685-111">On the **Purchase agreements** page, you can create, apply, and follow up on purchase agreements that exist between your organization and your vendors.</span></span> <span data-ttu-id="40685-112">たとえば、購買契約書を作成したら、そこから直接注文できます。</span><span class="sxs-lookup"><span data-stu-id="40685-112">For example, after you create a purchase agreement, you can order directly from it.</span></span> <span data-ttu-id="40685-113">各購買契約には、購買契約書を作成する担当者によって定義された有効期間があります。</span><span class="sxs-lookup"><span data-stu-id="40685-113">Each purchase agreement has a validity period that is defined by the person who creates the purchase agreement.</span></span> <span data-ttu-id="40685-114">購買の配送日はこの有効期間の有効日の範囲内にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="40685-114">The delivery date of a purchase must be within the effective dates of this validity period.</span></span>  
 
-購買契約書を作成したら、有効になる前に、有効化する必要があります。 購買契約書を有効にするには、[**契約を有効としてマークします**] オプションに [**はい**] を設定します。
+<span data-ttu-id="40685-115">購買契約書を作成したら、有効になる前に、有効化する必要があります。</span><span class="sxs-lookup"><span data-stu-id="40685-115">After you create a purchase agreement, you must activate it before it becomes effective.</span></span> <span data-ttu-id="40685-116">購買契約書を有効にするには、[**契約を有効としてマークします**] オプションに [**はい**] を設定します。</span><span class="sxs-lookup"><span data-stu-id="40685-116">To activate a purchase agreement, set the **Mark agreement as effective** option to **Yes**.</span></span>
 
-## <a name="commitment-types"></a>確約のタイプ
-購買契約書の各行は、購入確約を示します。 複数の発注書 (PO) の行を使用して確約を履行することができます。 確約には次の 4 つのタイプがあります。
+## <a name="commitment-types"></a><span data-ttu-id="40685-117">確約のタイプ</span><span class="sxs-lookup"><span data-stu-id="40685-117">Commitment types</span></span>
+<span data-ttu-id="40685-118">購買契約書の各行は、購入確約を示します。</span><span class="sxs-lookup"><span data-stu-id="40685-118">Each line in a purchase agreement is a commitment to buy something.</span></span> <span data-ttu-id="40685-119">複数の発注書 (PO) の行を使用して確約を履行することができます。</span><span class="sxs-lookup"><span data-stu-id="40685-119">You can use lines from multiple purchase orders (POs) to fulfill the commitment.</span></span> <span data-ttu-id="40685-120">確約には次の 4 つのタイプがあります。</span><span class="sxs-lookup"><span data-stu-id="40685-120">There are four types of commitments:</span></span>
 
--   **製品の特定数量** – 製品の特定数量を購入します。
--   **製品価値確約** – 製品の特定通貨金額を購入します。
--   **製品カテゴリ価値確約** – 調達カテゴリの特定通貨金額を購入します。 金額はカタログ品目またはカタログ以外の品目で設定できます。
--   **価値確約** – 製品または調達カテゴリの製品の特定通貨金額を購入します。
+-   <span data-ttu-id="40685-121">**製品の特定数量** – 製品の特定数量を購入します。</span><span class="sxs-lookup"><span data-stu-id="40685-121">**Product quantity commitment** – You purchase a specific quantity of a product.</span></span>
+-   <span data-ttu-id="40685-122">**製品価値確約** – 製品の特定通貨金額を購入します。</span><span class="sxs-lookup"><span data-stu-id="40685-122">**Product value commitment** – You purchase a specific currency amount of a product.</span></span>
+-   <span data-ttu-id="40685-123">**製品カテゴリ価値確約** – 調達カテゴリの特定通貨金額を購入します。</span><span class="sxs-lookup"><span data-stu-id="40685-123">**Product category value commitment** – You purchase a specific currency amount in a procurement category.</span></span> <span data-ttu-id="40685-124">金額はカタログ品目またはカタログ以外の品目で設定できます。</span><span class="sxs-lookup"><span data-stu-id="40685-124">The amount can be for a catalog item or a non-catalog item.</span></span>
+-   <span data-ttu-id="40685-125">**価値確約** – 製品または調達カテゴリの製品の特定通貨金額を購入します。</span><span class="sxs-lookup"><span data-stu-id="40685-125">**Value commitment** – You purchase a specific currency amount of any product or products in any procurement category.</span></span>
 
-## <a name="pricing-terms-for-purchase-agreements"></a>購買契約書の価格条件
-価格決定条件は、確約のタイプに応じて異なる場合があります。 購買契約書の価格決定条件は、売買契約で設定された他の価格決定条件よりも優先されます。 次の表に、各確約タイプによって影響を受ける価格関連フィールドを示します。 「**はい**」を含むフィールドは、注文明細行で更新できます。
+## <a name="pricing-terms-for-purchase-agreements"></a><span data-ttu-id="40685-126">購買契約書の価格条件</span><span class="sxs-lookup"><span data-stu-id="40685-126">Pricing terms for purchase agreements</span></span>
+<span data-ttu-id="40685-127">価格決定条件は、確約のタイプに応じて異なる場合があります。</span><span class="sxs-lookup"><span data-stu-id="40685-127">Pricing terms can vary, depending on the type of commitment.</span></span> <span data-ttu-id="40685-128">購買契約書の価格決定条件は、売買契約で設定された他の価格決定条件よりも優先されます。</span><span class="sxs-lookup"><span data-stu-id="40685-128">The pricing terms from purchase agreements override any other pricing terms that are set up for trade agreements.</span></span> <span data-ttu-id="40685-129">次の表に、各確約タイプによって影響を受ける価格関連フィールドを示します。</span><span class="sxs-lookup"><span data-stu-id="40685-129">The following table describes the price-related fields that are affected by each commitment type.</span></span> <span data-ttu-id="40685-130">「**はい**」を含むフィールドは、注文明細行で更新できます。</span><span class="sxs-lookup"><span data-stu-id="40685-130">Fields that contain **Yes** can be updated on an order line.</span></span>
 
-| 取引契約のタイプ                   | 単価 | 価格単位 | 割引率 | 現金割引金額 |
+| <span data-ttu-id="40685-131">取引契約のタイプ</span><span class="sxs-lookup"><span data-stu-id="40685-131">Commitment type</span></span>                   | <span data-ttu-id="40685-132">単価</span><span class="sxs-lookup"><span data-stu-id="40685-132">Unit price</span></span> | <span data-ttu-id="40685-133">価格単位</span><span class="sxs-lookup"><span data-stu-id="40685-133">Price unit</span></span> | <span data-ttu-id="40685-134">割引率</span><span class="sxs-lookup"><span data-stu-id="40685-134">Discount percent</span></span> | <span data-ttu-id="40685-135">現金割引金額</span><span class="sxs-lookup"><span data-stu-id="40685-135">Cash discount amount</span></span> |
 |-----------------------------------|------------|------------|------------------|----------------------|
-| 製品数量確約       | 有        | 有        | 有              | 有                  |
-| 製品価値確約          |            |            | 有              |                      |
-| 製品カテゴリ価値確約 |            |            | 有              |                      |
-| 価値確約                  |            |            | 有              |                      |
+| <span data-ttu-id="40685-136">製品数量確約</span><span class="sxs-lookup"><span data-stu-id="40685-136">Product quantity commitment</span></span>       | <span data-ttu-id="40685-137">有</span><span class="sxs-lookup"><span data-stu-id="40685-137">Yes</span></span>        | <span data-ttu-id="40685-138">有</span><span class="sxs-lookup"><span data-stu-id="40685-138">Yes</span></span>        | <span data-ttu-id="40685-139">有</span><span class="sxs-lookup"><span data-stu-id="40685-139">Yes</span></span>              | <span data-ttu-id="40685-140">有</span><span class="sxs-lookup"><span data-stu-id="40685-140">Yes</span></span>                  |
+| <span data-ttu-id="40685-141">製品価値確約</span><span class="sxs-lookup"><span data-stu-id="40685-141">Product value commitment</span></span>          |            |            | <span data-ttu-id="40685-142">有</span><span class="sxs-lookup"><span data-stu-id="40685-142">Yes</span></span>              |                      |
+| <span data-ttu-id="40685-143">製品カテゴリ価値確約</span><span class="sxs-lookup"><span data-stu-id="40685-143">Product category value commitment</span></span> |            |            | <span data-ttu-id="40685-144">有</span><span class="sxs-lookup"><span data-stu-id="40685-144">Yes</span></span>              |                      |
+| <span data-ttu-id="40685-145">価値確約</span><span class="sxs-lookup"><span data-stu-id="40685-145">Value commitment</span></span>                  |            |            | <span data-ttu-id="40685-146">有</span><span class="sxs-lookup"><span data-stu-id="40685-146">Yes</span></span>              |                      |
 
-## <a name="policies-for-purchase-agreements"></a>購買契約ポリシー
-次のポリシーは、購買契約書の確約と対応する購買注文 (PO) 明細行間のリンクの動作方法に影響します。
+## <a name="policies-for-purchase-agreements"></a><span data-ttu-id="40685-147">購買契約ポリシー</span><span class="sxs-lookup"><span data-stu-id="40685-147">Policies for purchase agreements</span></span>
+<span data-ttu-id="40685-148">次のポリシーは、購買契約書の確約と対応する購買注文 (PO) 明細行間のリンクの動作方法に影響します。</span><span class="sxs-lookup"><span data-stu-id="40685-148">The following policies affect the way that the link between a purchase agreement commitment and the corresponding PO lines works:</span></span>
 
--   **最大値の適用** – すべての注文明細行の合計数量または合計金額が、関連する確約で指定された数量または金額を超えることはできません。
--   **価格/割引の固定** – 注文明細行の価格および関連する確約の価格は同じである必要があります。 注文明細行で価格を変更すると、確約へのリンクが破損します。 そのリンクが破損すると、注文明細行が確約の履行に使用されません。
--   **最小リリース金額と最大リリース金額** – 金額を指定したときに、注文明細行が関連する確約と異なるために注文明細行を変更した場合にメッセージを受信します。
+-   <span data-ttu-id="40685-149">**最大値の適用** – すべての注文明細行の合計数量または合計金額が、関連する確約で指定された数量または金額を超えることはできません。</span><span class="sxs-lookup"><span data-stu-id="40685-149">**Max is enforced** – The total quantity or amount for all order lines can't exceed the quantity or amount that is specified on the related commitment.</span></span>
+-   <span data-ttu-id="40685-150">**価格/割引の固定** – 注文明細行の価格および関連する確約の価格は同じである必要があります。</span><span class="sxs-lookup"><span data-stu-id="40685-150">**Price and discount is fixed** – The price on an order line and the price on the related commitment must be the same.</span></span> <span data-ttu-id="40685-151">注文明細行で価格を変更すると、確約へのリンクが破損します。</span><span class="sxs-lookup"><span data-stu-id="40685-151">If the price is changed on the order line, the link to the commitment is broken.</span></span> <span data-ttu-id="40685-152">そのリンクが破損すると、注文明細行が確約の履行に使用されません。</span><span class="sxs-lookup"><span data-stu-id="40685-152">If the link is broken, the order line doesn't contribute to the fulfillment of the commitment.</span></span>
+-   <span data-ttu-id="40685-153">**最小リリース金額と最大リリース金額** – 金額を指定したときに、注文明細行が関連する確約と異なるために注文明細行を変更した場合にメッセージを受信します。</span><span class="sxs-lookup"><span data-stu-id="40685-153">**Minimum release amount and Maximum release amount** – If an amount is specified, you receive a message if you make any change to an order line that causes the order line to differ from the related commitment.</span></span>
 
-## <a name="fulfillment-calculations-for-purchase-agreements"></a>購買契約のフルフィルメント計算
-フルフィルメントの数量および金額は、**購買契約書**ページの [**行の詳細**] クイック タブにある [**履行**] タブに表示されます。  
+## <a name="fulfillment-calculations-for-purchase-agreements"></a><span data-ttu-id="40685-154">購買契約のフルフィルメント計算</span><span class="sxs-lookup"><span data-stu-id="40685-154">Fulfillment calculations for purchase agreements</span></span>
+<span data-ttu-id="40685-155">フルフィルメントの数量および金額は、**購買契約書**ページの [**行の詳細**] クイック タブにある [**履行**] タブに表示されます。</span><span class="sxs-lookup"><span data-stu-id="40685-155">Fulfillment quantities and amounts are shown on the **Fulfillment** tab on the **Line details** FastTab of the **Purchase agreements** page.</span></span>  
 
-**履行**領域には、確約の履行に必要な残余金額または残余数量が表示されます。  
+<span data-ttu-id="40685-156">**履行**領域には、確約の履行に必要な残余金額または残余数量が表示されます。</span><span class="sxs-lookup"><span data-stu-id="40685-156">The **Fulfillment** area shows the remaining amount or quantity that is required to fulfill the commitment.</span></span>  
 
-**契約**領域には、販売契約明細行で有効な合計数量または合計価格が表示されます。  
+<span data-ttu-id="40685-157">**契約**領域には、販売契約明細行で有効な合計数量または合計価格が表示されます。</span><span class="sxs-lookup"><span data-stu-id="40685-157">The **Agreement** area shows the total quantity or the total amount that the sales agreement line is valid for.</span></span>  
 
-購買契約書の行またはヘッダーの **関連情報**アクションを選択することによって、フルフィルメント計算に含まれる購買注文明細行と請求明細行にアクセスできます。
+<span data-ttu-id="40685-158">購買契約書の行またはヘッダーの **関連情報**アクションを選択することによって、フルフィルメント計算に含まれる購買注文明細行と請求明細行にアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="40685-158">You can access the PO lines and the invoice lines that contribute to the fulfillment calculation by selecting the **Related information** action on the lines or on the header of a purchase agreement.</span></span>
 
-## <a name="confirmations-and-version-history-for-purchase-agreements"></a>購買契約書の確認およびバージョン履歴
-購買契約書を確認すると、購買契約書の現在のバージョンが履歴テーブルに保存されます。 購買契約書を変更した場合、その契約書を再確認してその別のバージョンを履歴に保存できます。 購買契約書を確認しない場合は、その契約書を使用して PO を作成することができます。 ただし、購買契約書の履歴情報は保存されません。 契約書のすべてのバージョンをプレビュー表示したり、印刷したりできます。 その後、承認を得るためにそれらの変更を仕入先と共有できます。
+## <a name="confirmations-and-version-history-for-purchase-agreements"></a><span data-ttu-id="40685-159">購買契約書の確認およびバージョン履歴</span><span class="sxs-lookup"><span data-stu-id="40685-159">Confirmations and version history for purchase agreements</span></span>
+<span data-ttu-id="40685-160">購買契約書を確認すると、購買契約書の現在のバージョンが履歴テーブルに保存されます。</span><span class="sxs-lookup"><span data-stu-id="40685-160">When you confirm a purchase agreement, the current version of the purchase agreement is stored in a history table.</span></span> <span data-ttu-id="40685-161">購買契約書を変更した場合、その契約書を再確認してその別のバージョンを履歴に保存できます。</span><span class="sxs-lookup"><span data-stu-id="40685-161">If you change the purchase agreement, you can confirm it again to store another version of the purchase agreement in the history.</span></span> <span data-ttu-id="40685-162">購買契約書を確認しない場合は、その契約書を使用して PO を作成することができます。</span><span class="sxs-lookup"><span data-stu-id="40685-162">If you don't confirm a purchase agreement, you can still use it to create POs.</span></span> <span data-ttu-id="40685-163">ただし、購買契約書の履歴情報は保存されません。</span><span class="sxs-lookup"><span data-stu-id="40685-163">However, the history information for the purchase agreement isn't stored.</span></span> <span data-ttu-id="40685-164">契約書のすべてのバージョンをプレビュー表示したり、印刷したりできます。</span><span class="sxs-lookup"><span data-stu-id="40685-164">You can preview or print all versions of the agreement.</span></span> <span data-ttu-id="40685-165">その後、承認を得るためにそれらの変更を仕入先と共有できます。</span><span class="sxs-lookup"><span data-stu-id="40685-165">You can then share the revisions with your vendor to obtain approval.</span></span>
 
-## <a name="applying-purchase-agreements-in-the-ordering-process"></a>注文プロセスでの購買契約書の適用
-発注書を作成すると、購買契約書を適用できます。 支払条件、配送条件、および配送先住所などの契約条件の情報は発注書ヘッダーにコピーされます。 契約の対象となる製品またはカテゴリの明細行が発注書に 1 つ以上含まれている場合は、購買契約書の価格と割引はその明細行に使用されます。 注文明細行の金額または数量は購買契約書の確約の履行に使用されます。 同一の発注書に、購買契約書に関連しない明細行と購買契約書の確約がある明細行の両方を含めることができます。  
+## <a name="applying-purchase-agreements-in-the-ordering-process"></a><span data-ttu-id="40685-166">注文プロセスでの購買契約書の適用</span><span class="sxs-lookup"><span data-stu-id="40685-166">Applying purchase agreements in the ordering process</span></span>
+<span data-ttu-id="40685-167">発注書を作成すると、購買契約書を適用できます。</span><span class="sxs-lookup"><span data-stu-id="40685-167">When you create a PO, you can apply a purchase agreement to it.</span></span> <span data-ttu-id="40685-168">支払条件、配送条件、および配送先住所などの契約条件の情報は発注書ヘッダーにコピーされます。</span><span class="sxs-lookup"><span data-stu-id="40685-168">Information from the terms for the agreement, such as the payment terms, delivery terms, and delivery address, is then copied to the header of the PO.</span></span> <span data-ttu-id="40685-169">契約の対象となる製品またはカテゴリの明細行が発注書に 1 つ以上含まれている場合は、購買契約書の価格と割引はその明細行に使用されます。</span><span class="sxs-lookup"><span data-stu-id="40685-169">If the PO contains one or more lines for products or categories that are covered by the agreement, the prices and discounts from the purchase agreement are used for those lines.</span></span> <span data-ttu-id="40685-170">注文明細行の金額または数量は購買契約書の確約の履行に使用されます。</span><span class="sxs-lookup"><span data-stu-id="40685-170">The amount or quantity on the order line contributes to the fulfillment of the commitment in the purchase agreement.</span></span> <span data-ttu-id="40685-171">同一の発注書に、購買契約書に関連しない明細行と購買契約書の確約がある明細行の両方を含めることができます。</span><span class="sxs-lookup"><span data-stu-id="40685-171">The same PO can include both lines that aren't related to a purchase agreement and lines that have a commitment for a purchase agreement.</span></span>  
 
-発注書を再作成しているときにのみ購買契約書を選択できます。 発注書が作成された後に購買契約書を選択できません。  
-発注書が間接的に作成される場合には、Finance and Operations が適切な購買契約書を自動的に検索するかどうかを制御できます。 たとえば、自動的に計画発注書を確定したり、販売注文に基づいて発注書を作成したりするときに、この制御を行う場合があります。
+<span data-ttu-id="40685-172">発注書を再作成しているときにのみ購買契約書を選択できます。</span><span class="sxs-lookup"><span data-stu-id="40685-172">You can select a purchase agreement only when you're creating a PO.</span></span> <span data-ttu-id="40685-173">発注書が作成された後に購買契約書を選択できません。</span><span class="sxs-lookup"><span data-stu-id="40685-173">You can't select a purchase agreement after the PO has been created.</span></span>  
+<span data-ttu-id="40685-174">発注書が間接的に作成される場合には、Finance and Operations が適切な購買契約書を自動的に検索するかどうかを制御できます。</span><span class="sxs-lookup"><span data-stu-id="40685-174">In some situations where POs are created indirectly, you can control whether Finance and Operations automatically searches for applicable purchase agreements.</span></span> <span data-ttu-id="40685-175">たとえば、自動的に計画発注書を確定したり、販売注文に基づいて発注書を作成したりするときに、この制御を行う場合があります。</span><span class="sxs-lookup"><span data-stu-id="40685-175">For example, you might do this when you're automatically firming planned POs or creating POs that are based on sales orders.</span></span>
 
-## <a name="purchase-agreements-and-intercompany-trade"></a>購買契約書と会社間取引
-会社間取引関係は、異なる法人の仕入先勘定と顧客勘定の間で作成できます。 関係者の 1 つに販売注文または発注書が作成されると、会社間注文チェーンが作成されます。 注文チェーンでは、販売注文と発注書が適切な法人で作成されます。  
+## <a name="purchase-agreements-and-intercompany-trade"></a><span data-ttu-id="40685-176">購買契約書と会社間取引</span><span class="sxs-lookup"><span data-stu-id="40685-176">Purchase agreements and intercompany trade</span></span>
+<span data-ttu-id="40685-177">会社間取引関係は、異なる法人の仕入先勘定と顧客勘定の間で作成できます。</span><span class="sxs-lookup"><span data-stu-id="40685-177">Intercompany trading relationships can be created between vendor accounts and customer accounts that are in different legal entities.</span></span> <span data-ttu-id="40685-178">関係者の 1 つに販売注文または発注書が作成されると、会社間注文チェーンが作成されます。</span><span class="sxs-lookup"><span data-stu-id="40685-178">When a sales order or PO is created for one of the parties, an intercompany order chain is created.</span></span> <span data-ttu-id="40685-179">注文チェーンでは、販売注文と発注書が適切な法人で作成されます。</span><span class="sxs-lookup"><span data-stu-id="40685-179">In the order chain, the sales order and PO are created in the appropriate legal entities.</span></span>  
 
-会社間取引関係者の 1 つに購買契約書または販売契約書を作成できます。 その後、他の法人の他の会社間取引関係者に対応する販売契約書または購買契約書を生成できます。  
+<span data-ttu-id="40685-180">会社間取引関係者の 1 つに購買契約書または販売契約書を作成できます。</span><span class="sxs-lookup"><span data-stu-id="40685-180">You can create a purchase agreement or sales agreement for one of the intercompany trading parties.</span></span> <span data-ttu-id="40685-181">その後、他の法人の他の会社間取引関係者に対応する販売契約書または購買契約書を生成できます。</span><span class="sxs-lookup"><span data-stu-id="40685-181">You can then generate the corresponding sales agreement or purchase agreement for the other intercompany trading party in the other legal entity.</span></span>  
 
-1 つの法人の会社間購買契約書を使用する会社間販売注文書を作成した場合、対応する会社間販売注文書は他の法人の対応する会社間販売契約書を使用します。 会社間販売契約書の確約の履行と購買契約書の確約の履行は、会社間販売販売注文書と会社間発注書の同期と同様に同期されます。
+<span data-ttu-id="40685-182">1 つの法人の会社間購買契約書を使用する会社間販売注文書を作成した場合、対応する会社間販売注文書は他の法人の対応する会社間販売契約書を使用します。</span><span class="sxs-lookup"><span data-stu-id="40685-182">If you create an intercompany PO that uses the intercompany purchase agreement in one legal entity, the corresponding intercompany sales order uses the corresponding intercompany sales agreement in the other legal entity.</span></span> <span data-ttu-id="40685-183">会社間販売契約書の確約の履行と購買契約書の確約の履行は、会社間販売販売注文書と会社間発注書の同期と同様に同期されます。</span><span class="sxs-lookup"><span data-stu-id="40685-183">The fulfillment of the sales agreement commitments and the fulfillment of the purchase agreements are synchronized, just as the intercompany sales order and the intercompany PO are synchronized.</span></span>
 
-## <a name="financial-dimensions-on-purchase-agreements"></a>購買契約書の財務分析コード
-購買契約書のドキュメント ヘッダーまたは個々の明細行に財務分析コードをコピーできます。 契約ヘッダーまたは契約明細行にある分析コードを変更する場合、変更はリリースされた注文に影響はしませんが、すべての新しい注文に反映されます。
+## <a name="financial-dimensions-on-purchase-agreements"></a><span data-ttu-id="40685-184">購買契約書の財務分析コード</span><span class="sxs-lookup"><span data-stu-id="40685-184">Financial dimensions on purchase agreements</span></span>
+<span data-ttu-id="40685-185">購買契約書のドキュメント ヘッダーまたは個々の明細行に財務分析コードをコピーできます。</span><span class="sxs-lookup"><span data-stu-id="40685-185">You can copy financial dimensions to document headers or to individual lines of a purchase agreement.</span></span> <span data-ttu-id="40685-186">契約ヘッダーまたは契約明細行にある分析コードを変更する場合、変更はリリースされた注文に影響はしませんが、すべての新しい注文に反映されます。</span><span class="sxs-lookup"><span data-stu-id="40685-186">If you change the dimensions in the agreement header or on the agreement line, the change doesn't affect any released orders, but it will be reflected on any new orders.</span></span>
 
-<a name="see-also"></a>参照
+<a name="see-also"></a><span data-ttu-id="40685-187">参照</span><span class="sxs-lookup"><span data-stu-id="40685-187">See also</span></span>
 --------
 
-[購買契約の作成 (タスク ガイド)](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-purchase-agreement)
+[<span data-ttu-id="40685-188">購買契約の作成 (タスク ガイド)</span><span class="sxs-lookup"><span data-stu-id="40685-188">Create a purchase agreement (Task guide)</span></span>](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-purchase-agreement)
 
-[購買契約書からの購買リリース注文の作成 (タスク ガイド)](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-purchase-release-order-purchase-agreement)
+[<span data-ttu-id="40685-189">購買契約書からの購買リリース注文の作成 (タスク ガイド)</span><span class="sxs-lookup"><span data-stu-id="40685-189">Create a purchase release order from a purchase agreement (Task guide)</span></span>](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-purchase-release-order-purchase-agreement)
 
 
 

@@ -25,21 +25,21 @@ ms.lasthandoff: 08/08/2017
 
 ---
 
-# <a name="find-support-for-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-and-dynamics-lifecycle-services"></a>Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition および Dynamics Lifecycle Services のサポートの検索
+# <a name="find-support-for-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-and-dynamics-lifecycle-services"></a><span data-ttu-id="88977-103">Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition および Dynamics Lifecycle Services のサポートの検索</span><span class="sxs-lookup"><span data-stu-id="88977-103">Find support for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition and Dynamics Lifecycle Services</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-この記事では、Finance and Operations または Microsoft Dynamics Lifecycle Services (LCS) のヘルプを入手する方法について説明します。 
+<span data-ttu-id="88977-104">この記事では、Finance and Operations または Microsoft Dynamics Lifecycle Services (LCS) のヘルプを入手する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="88977-104">This article explains how to get help with Finance and Operations or Microsoft Dynamics Lifecycle Services (LCS).</span></span> 
 
-<a name="contact-support"></a>サポートへの問い合わせ
+<a name="contact-support"></a><span data-ttu-id="88977-105">サポートへの問い合わせ</span><span class="sxs-lookup"><span data-stu-id="88977-105">Contact support</span></span>
 ---------------
 
-Finance and Operations に関する技術的な質問がおありの場合、または Microsoft Dynamics Lifecycle Services (LCS) にアクセスするのにサポートが必要な場合は、この記事にある情報を使用して Microsoft にお問い合わせください。
+<span data-ttu-id="88977-106">Finance and Operations に関する技術的な質問がおありの場合、または Microsoft Dynamics Lifecycle Services (LCS) にアクセスするのにサポートが必要な場合は、この記事にある情報を使用して Microsoft にお問い合わせください。</span><span class="sxs-lookup"><span data-stu-id="88977-106">Use the information in this article to contact Microsoft if you have technical questions about Finance and Operations, or if you need help accessing Microsoft Dynamics Lifecycle Services (LCS).</span></span>
 
-### <a name="finance-and-operations-support"></a>Finance and Operations のサポート
+### <a name="finance-and-operations-support"></a><span data-ttu-id="88977-107">Finance and Operations のサポート</span><span class="sxs-lookup"><span data-stu-id="88977-107">Finance and Operations support</span></span>
 
-Finance and Operations または LCS のサポートを入手するには、次の表にあるリソースを使用します。 これらのリソースは、トラブルシューティングの際に従うことを推奨する順序で一覧表示されています。
+<span data-ttu-id="88977-108">Finance and Operations または LCS のサポートを入手するには、次の表にあるリソースを使用します。</span><span class="sxs-lookup"><span data-stu-id="88977-108">To obtain support for Finance and Operations or LCS, use the resources in the following table.</span></span> <span data-ttu-id="88977-109">これらのリソースは、トラブルシューティングの際に従うことを推奨する順序で一覧表示されています。</span><span class="sxs-lookup"><span data-stu-id="88977-109">These resources are listed in the order that we recommend that you follow when you're troubleshooting.</span></span>
 
 <table>
 <colgroup>
@@ -48,49 +48,49 @@ Finance and Operations または LCS のサポートを入手するには、次�
 </colgroup>
 <thead>
 <tr class="header">
-<th>タスク</th>
-<th>詳細情報</th>
+<th><span data-ttu-id="88977-110">タスク</span><span class="sxs-lookup"><span data-stu-id="88977-110">Task</span></span></th>
+<th><span data-ttu-id="88977-111">詳細情報</span><span class="sxs-lookup"><span data-stu-id="88977-111">More information</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>コミュニティに質問します。</td>
-<td>[<a href="http://go.microsoft.com/fwlink/?LinkId=221068"><span style="color: #0066cc;">コミュニティに質問する</span></a>] ページに移動して Dynamics コミュニティから質問のヘルプを検索します。</td>
+<td><span data-ttu-id="88977-112">コミュニティに質問します。</span><span class="sxs-lookup"><span data-stu-id="88977-112">Ask the community.</span></span></td>
+<td><span data-ttu-id="88977-113">[<a href="http://go.microsoft.com/fwlink/?LinkId=221068"><span style="color: #0066cc;">コミュニティに質問する</span></a>] ページに移動して Dynamics コミュニティから質問のヘルプを検索します。</span><span class="sxs-lookup"><span data-stu-id="88977-113">Go to the <a href="http://go.microsoft.com/fwlink/?LinkId=221068"><span style="color: #0066cc;">Ask The Community</span></a> page to find help with your questions from the Dynamics community.</span></span></td>
 </tr>
 <tr class="even">
-<td>問題検索ツールを使用します。</td>
-<td><a href="https://lcs.dynamics.com/"><span style="color: #0066cc;">LCS</span></a> では、問題検索を使用して Microsoft Knowledge Base (KB) 記事、修正プログラム、および Finance and Operations の報告された問題の回避策をすぐに検索します。 特定の機能領域について、どの報告された問題が修正処理中か、あるいは修正済みかを表示できます。 詳細については、「<a href="issue-search-lcs.md"><span style="color: #0066cc;">問題検索 (Lifecycle Services, LCS)</span></a>」を参照してください。</td>
+<td><span data-ttu-id="88977-114">問題検索ツールを使用します。</span><span class="sxs-lookup"><span data-stu-id="88977-114">Use the Issue search tool.</span></span></td>
+<td><span data-ttu-id="88977-115"><a href="https://lcs.dynamics.com/"><span style="color: #0066cc;">LCS</span></a> では、問題検索を使用して Microsoft Knowledge Base (KB) 記事、修正プログラム、および Finance and Operations の報告された問題の回避策をすぐに検索します。</span><span class="sxs-lookup"><span data-stu-id="88977-115">In <a href="https://lcs.dynamics.com/"><span style="color: #0066cc;">LCS</span></a>, use Issue search to quickly search for Microsoft Knowledge Base (KB) articles, hotfixes, and workarounds for reported issues in Finance and Operations.</span></span> <span data-ttu-id="88977-116">特定の機能領域について、どの報告された問題が修正処理中か、あるいは修正済みかを表示できます。</span><span class="sxs-lookup"><span data-stu-id="88977-116">You can see which reported issues are in the process of being fixed or have already been fixed for a specific functional area .</span></span> <span data-ttu-id="88977-117">詳細については、「<a href="issue-search-lcs.md"><span style="color: #0066cc;">問題検索 (Lifecycle Services, LCS)</span></a>」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="88977-117">For more information, see <a href="issue-search-lcs.md"><span style="color: #0066cc;">Issue search (Lifecycle Services, LCS)</span></a>.</span></span></td>
 </tr>
 <tr class="odd">
-<td>クラウドを利用したサポート ツールを使用します。</td>
-<td><a href="https://lcs.dynamics.com/"><span style="color: #0066cc;">LCS</span></a> では、[<strong>サポート</strong>] タイルはサポート インシデント管理の支援ツールです。 Microsoft に直接問題を送信するには、LCS プロジェクトで [<strong>サポート</strong>] タイルに移動します。 そこからは、2 つの方法で問題を送信することができます。
+<td><span data-ttu-id="88977-118">クラウドを利用したサポート ツールを使用します。</span><span class="sxs-lookup"><span data-stu-id="88977-118">Use the Cloud-powered support tool.</span></span></td>
+<td><span data-ttu-id="88977-119"><a href="https://lcs.dynamics.com/"><span style="color: #0066cc;">LCS</span></a> では、[<strong>サポート</strong>] タイルはサポート インシデント管理の支援ツールです。</span><span class="sxs-lookup"><span data-stu-id="88977-119">In <a href="https://lcs.dynamics.com/"><span style="color: #0066cc;">LCS</span></a>, the <strong>Support</strong> tile is a tool that helps you manage support incidents.</span></span> <span data-ttu-id="88977-120">Microsoft に直接問題を送信するには、LCS プロジェクトで [<strong>サポート</strong>] タイルに移動します。</span><span class="sxs-lookup"><span data-stu-id="88977-120">To submit issues directly to Microsoft, go to the <strong>Support</strong> tile in your LCS project.</span></span> <span data-ttu-id="88977-121">そこからは、2 つの方法で問題を送信することができます。</span><span class="sxs-lookup"><span data-stu-id="88977-121">From there, you can submit issues in two ways:</span></span>
 <ul>
-<li>[<strong>アクティブな問題</strong>] タブで問題を選択し、次に [<strong>Microsoft に送信</strong>] をクリックします。</li>
-<li>[<strong>Microsoft に送信</strong>] タブで、[<strong>新しいインシデントを送信</strong>] をクリックして問題を送信します。</li>
+<li><span data-ttu-id="88977-122">[<strong>アクティブな問題</strong>] タブで問題を選択し、次に [<strong>Microsoft に送信</strong>] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="88977-122">On the <strong>Active issue</strong> tab, select your issue, and then click <strong>Submit to Microsoft</strong>.</span></span></li>
+<li><span data-ttu-id="88977-123">[<strong>Microsoft に送信</strong>] タブで、[<strong>新しいインシデントを送信</strong>] をクリックして問題を送信します。</span><span class="sxs-lookup"><span data-stu-id="88977-123">On the <strong>Submitted to Microsoft</strong> tab, click <strong>Submit a new Incident</strong> to submit the issue.</span></span></li>
 </ul>
-注記: Microsoft Premier の顧客やパートナーも、上記の手順を使用してプレミア サポート チケットを送信できます。</td>
+<span data-ttu-id="88977-124">注記: Microsoft Premier の顧客やパートナーも、上記の手順を使用してプレミア サポート チケットを送信できます。</span><span class="sxs-lookup"><span data-stu-id="88977-124">Note: Microsoft Premier Customers and Partners can also submit premier support tickets using the steps above.</span></span></td>
 </tr>
 <tr class="even">
-<td>Finance and Operations サポート チームでサポート チケットを開きます。</td>
-<td>LCS の [<strong>サポート</strong>] タイルから Microsoft にチケットを送信しようとする際に問題が生じる場合は、「<a href="https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/global_support_contacts_eng"><span style="color: #0066cc;">Microsoft Business Solutions Support に問い合わせる</span></a>」を参照して Microsoft Dynamics Regional Operations Center への問い合わせに関する情報を入手してください。 サポート チームは、次のタイプの技術的な問題を解決するのに役立ちます。
+<td><span data-ttu-id="88977-125">Finance and Operations サポート チームでサポート チケットを開きます。</span><span class="sxs-lookup"><span data-stu-id="88977-125">Open a support ticket with the Finance and Operations support team.</span></span></td>
+<td><span data-ttu-id="88977-126">LCS の [<strong>サポート</strong>] タイルから Microsoft にチケットを送信しようとする際に問題が生じる場合は、「<a href="https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/global_support_contacts_eng"><span style="color: #0066cc;">Microsoft Business Solutions Support に問い合わせる</span></a>」を参照して Microsoft Dynamics Regional Operations Center への問い合わせに関する情報を入手してください。</span><span class="sxs-lookup"><span data-stu-id="88977-126">If you have issues when you try to submit a ticket to Microsoft from the <strong>Support</strong> tile in LCS, see <a href="https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/global_support_contacts_eng"><span style="color: #0066cc;">Contact Microsoft Business Solutions Support</span></a> for information about to contact a Microsoft Dynamics Regional Operations Center.</span></span> <span data-ttu-id="88977-127">サポート チームは、次のタイプの技術的な問題を解決するのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="88977-127">The support team can help you resolve the following types of technical issues:</span></span>
 <ul>
-<li>LCS を使用するときに発生するエラー、または LCS にアクセスしようとするときに発生する問題。</li>
-<li>Finance and Operations を使用するときに発生するエラー。</li>
+<li><span data-ttu-id="88977-128">LCS を使用するときに発生するエラー、または LCS にアクセスしようとするときに発生する問題。</span><span class="sxs-lookup"><span data-stu-id="88977-128">Errors that occur when you use LCS or issues that occur when you try to access LCS.</span></span></li>
+<li><span data-ttu-id="88977-129">Finance and Operations を使用するときに発生するエラー。</span><span class="sxs-lookup"><span data-stu-id="88977-129">Errors that occur when you use Finance and Operations.</span></span></li>
 </ul>
-CustomerSource へのサインインやアクセス、e ラーニング、検索、サポート技術情報、ファイル ダウンロードおよびページまたはシステム エラーに関連する技術的な質問については、「<a href="https://mbs2.microsoft.com/members/VoiceSupport/VoiceSupportInternal.aspx"><span style="color: #0066cc;">Web サイト サポート</span></a>」にアクセスしてください。</td>
+<span data-ttu-id="88977-130">CustomerSource へのサインインやアクセス、e ラーニング、検索、サポート技術情報、ファイル ダウンロードおよびページまたはシステム エラーに関連する技術的な質問については、「<a href="https://mbs2.microsoft.com/members/VoiceSupport/VoiceSupportInternal.aspx"><span style="color: #0066cc;">Web サイト サポート</span></a>」にアクセスしてください。</span><span class="sxs-lookup"><span data-stu-id="88977-130">For technical questions that are related to signing in to and accessing CustomerSource, e-learning, Search, Knowledge Base, file download, and page or system errors, go to <a href="https://mbs2.microsoft.com/members/VoiceSupport/VoiceSupportInternal.aspx"><span style="color: #0066cc;">Website Support</span></a>.</span></span></td>
 </tr>
 <tr class="odd">
-<td>Finance and Operations のライセンスに関する質問のヘルプを入手します。</td>
-<td>パートナー、ラージ アカウント リセラー (LAR)、または Microsoft 販売担当者に問い合わせます。</td>
+<td><span data-ttu-id="88977-131">Finance and Operations のライセンスに関する質問のヘルプを入手します。</span><span class="sxs-lookup"><span data-stu-id="88977-131">Get help with questions about Finance and Operations licensing.</span></span></td>
+<td><span data-ttu-id="88977-132">パートナー、ラージ アカウント リセラー (LAR)、または Microsoft 販売担当者に問い合わせます。</span><span class="sxs-lookup"><span data-stu-id="88977-132">Contact your partner, large account reseller (LAR), or Microsoft sales representative.</span></span></td>
 </tr>
 <tr class="even">
-<td>LCS イベント監視ダッシュボードを使用します。</td>
-<td>プラットフォームとサービスの現在の正常性の状態を確認するには、LCS プロジェクトの [<strong>環境</strong>] セクションに移動します。</td>
+<td><span data-ttu-id="88977-133">LCS イベント監視ダッシュボードを使用します。</span><span class="sxs-lookup"><span data-stu-id="88977-133">Use the LCS Event monitoring dashboard.</span></span></td>
+<td><span data-ttu-id="88977-134">プラットフォームとサービスの現在の正常性の状態を確認するには、LCS プロジェクトの [<strong>環境</strong>] セクションに移動します。</span><span class="sxs-lookup"><span data-stu-id="88977-134">To see the current health status of the platform and services, go to the <strong>Environments</strong> section of your LCS project.</span></span></td>
 </tr>
 </tbody>
 </table>
 
-Microsoft Dynamics サポート提供の詳細については、「[Microsoft Dynamics Online サポート](https://www.microsoft.com/en-us/dynamics/dynamics-online-support.aspx)」を参照してください。
+<span data-ttu-id="88977-135">Microsoft Dynamics サポート提供の詳細については、「[Microsoft Dynamics Online サポート](https://www.microsoft.com/en-us/dynamics/dynamics-online-support.aspx)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="88977-135">For more information about Microsoft Dynamics support offerings, see [Microsoft Dynamics Online support](https://www.microsoft.com/en-us/dynamics/dynamics-online-support.aspx).</span></span>
 
 
 

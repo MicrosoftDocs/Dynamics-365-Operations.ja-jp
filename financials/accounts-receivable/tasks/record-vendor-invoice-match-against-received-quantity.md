@@ -16,52 +16,52 @@ ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 3b0ba3a29514351a89cf83f1ce7a3e147626e721
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 2247edfd803ce238b3b7ca57d9d47dda9c3b0cae
 ms.contentlocale: ja-jp
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="record-vendor-invoice-and-match-against-received-quantity"></a>仕入先請求書の受領記録および入庫済数量との照合
+# <a name="record-vendor-invoice-and-match-against-received-quantity"></a><span data-ttu-id="ba00e-103">仕入先請求書の受領記録および入庫済数量との照合</span><span class="sxs-lookup"><span data-stu-id="ba00e-103">Record vendor invoice and match against received quantity</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-発注書の商品またはサービスに対する請求書を仕入先から受け取ったときに、請求書の支払を承認する前に商品またはサービスをすでに受け取っていることが、業務プロセスで要求されている場合があります。 始める前に、[請求書照合] コンフィギュレーション キーが選択されていることを確認します。 
+<span data-ttu-id="ba00e-104">発注書の商品またはサービスに対する請求書を仕入先から受け取ったときに、請求書の支払を承認する前に商品またはサービスをすでに受け取っていることが、業務プロセスで要求されている場合があります。</span><span class="sxs-lookup"><span data-stu-id="ba00e-104">When you receive an invoice from a vendor for goods or services on a purchase order, the business processes might require that the goods or services be received before the invoice can be approved for payment.</span></span> <span data-ttu-id="ba00e-105">始める前に、[請求書照合] コンフィギュレーション キーが選択されていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="ba00e-105">Before you begin, make sure that the Invoice matching configuration key is selected.</span></span> 
 
-[買掛金勘定パラメータ] ページで、[請求書照合の検証を有効にする] オプションがオンで、[明細行照合ポリシー] のフィールドが [承認の要求] に設定され、[明細行照合ポリシー] が [スリーウェイ マッチング] に設定されていることを確認します。
+<span data-ttu-id="ba00e-106">[買掛金勘定パラメータ] ページで、[請求書照合の検証を有効にする] オプションがオンで、[明細行照合ポリシー] のフィールドが [承認の要求] に設定され、[明細行照合ポリシー] が [スリーウェイ マッチング] に設定されていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="ba00e-106">In the Accounts payable parameters page, ensure that the Enable invoice matching validation option is selected, the Post invoice with discrepancies field is set to Require approval, and the Line matching policy field is set to Three-way matching.</span></span>
 
-この手順では、USMF というデモ会社を使用します。 買掛金勘定マネージャーまたは会計マネージャーのロールでは、次の手順を実行します。
+<span data-ttu-id="ba00e-107">この手順では、USMF というデモ会社を使用します。</span><span class="sxs-lookup"><span data-stu-id="ba00e-107">This procedure uses the USMF demo company.</span></span> <span data-ttu-id="ba00e-108">買掛金勘定マネージャーまたは会計マネージャーのロールでは、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="ba00e-108">The accounts payable manager or accounting manager role would perform these steps.</span></span>
 
 
-## <a name="create-a-purchase-order"></a>発注書の作成
-1. [すべての発注書] に移動します。
-2. [新規] をクリックします。
-3. [仕入先] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。
-4. [仕入先] フィールドに値を入力します。
-5. [OK] をクリックします。
-6. [明細行の追加] をクリックします。
-7. [品目番号] フィールドに値を入力します。
-8. アクション ウィンドウで、[購買] をクリックします。
-9. [確認] をクリックします。
+## <a name="create-a-purchase-order"></a><span data-ttu-id="ba00e-109">発注書の作成</span><span class="sxs-lookup"><span data-stu-id="ba00e-109">Create a purchase order</span></span>
+1. <span data-ttu-id="ba00e-110">[すべての発注書] に移動します。</span><span class="sxs-lookup"><span data-stu-id="ba00e-110">Go to All purchase orders.</span></span>
+2. <span data-ttu-id="ba00e-111">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ba00e-111">Click New.</span></span>
+3. <span data-ttu-id="ba00e-112">[仕入先] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="ba00e-112">In the Vendor account field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="ba00e-113">[仕入先] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="ba00e-113">In the Vendor account field, type a value.</span></span>
+5. <span data-ttu-id="ba00e-114">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ba00e-114">Click OK.</span></span>
+6. <span data-ttu-id="ba00e-115">[明細行の追加] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ba00e-115">Click Add line.</span></span>
+7. <span data-ttu-id="ba00e-116">[品目番号] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="ba00e-116">In the Item number field, type a value.</span></span>
+8. <span data-ttu-id="ba00e-117">アクション ウィンドウで、[購買] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ba00e-117">On the Action Pane, click Purchase.</span></span>
+9. <span data-ttu-id="ba00e-118">[確認] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ba00e-118">Click Confirm.</span></span>
 
-## <a name="post-a-product-receipt"></a>製品受領書の転記
-1. アクション ウィンドウで、[入庫] をクリックします。
-2. [製品受領書] をクリックします。
-3. 一覧で、選択された行をマークします。
-4. [製品受領書] フィールドで、値を入力します。
-5. [OK] をクリックします。
+## <a name="post-a-product-receipt"></a><span data-ttu-id="ba00e-119">製品受領書の転記</span><span class="sxs-lookup"><span data-stu-id="ba00e-119">Post a product receipt</span></span>
+1. <span data-ttu-id="ba00e-120">アクション ウィンドウで、[入庫] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ba00e-120">On the Action Pane, click Receive.</span></span>
+2. <span data-ttu-id="ba00e-121">[製品受領書] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ba00e-121">Click Product receipt.</span></span>
+3. <span data-ttu-id="ba00e-122">一覧で、選択された行をマークします。</span><span class="sxs-lookup"><span data-stu-id="ba00e-122">In the list, mark the selected row.</span></span>
+4. <span data-ttu-id="ba00e-123">[製品受領書] フィールドで、値を入力します。</span><span class="sxs-lookup"><span data-stu-id="ba00e-123">In the Product receipt field, type a value.</span></span>
+5. <span data-ttu-id="ba00e-124">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ba00e-124">Click OK.</span></span>
 
-## <a name="record-and-match-a-vendor-invoice-to-a-product-receipt"></a>仕入先請求書の製品受領書との記録および照合
-1. アクション ウィンドウで、[請求書] をクリックします。
-2. [請求書] をクリックします。
-3. [数] フィールドに値を入力します。
-4. [既定の取得元: 注文済数量] をクリックして、ドロップ ダイアログを開きます。
-5. [明細行の既定の数量] フィールドで、オプションを選択します。
-6. [OK] をクリックします。
-7. [はい] をクリックします。
-8. [製品受領書の照合] をクリックします。
-9. [OK] をクリックします。
-10. アクション ウィンドウで、[確認] をクリックします。
-11. [照合の詳細] をクリックします。
+## <a name="record-and-match-a-vendor-invoice-to-a-product-receipt"></a><span data-ttu-id="ba00e-125">仕入先請求書の製品受領書との記録および照合</span><span class="sxs-lookup"><span data-stu-id="ba00e-125">Record and match a vendor invoice to a product receipt</span></span>
+1. <span data-ttu-id="ba00e-126">アクション ウィンドウで、[請求書] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ba00e-126">On the Action Pane, click Invoice.</span></span>
+2. <span data-ttu-id="ba00e-127">[請求書] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ba00e-127">Click Invoice.</span></span>
+3. <span data-ttu-id="ba00e-128">[数] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="ba00e-128">In the Number field, type a value.</span></span>
+4. <span data-ttu-id="ba00e-129">[既定の取得元: 注文済数量] をクリックして、ドロップ ダイアログを開きます。</span><span class="sxs-lookup"><span data-stu-id="ba00e-129">Click Default from: Ordered quantity to open the drop dialog.</span></span>
+5. <span data-ttu-id="ba00e-130">[明細行の既定の数量] フィールドで、オプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="ba00e-130">In the Default quantity for lines field, select an option.</span></span>
+6. <span data-ttu-id="ba00e-131">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ba00e-131">Click OK.</span></span>
+7. <span data-ttu-id="ba00e-132">[はい] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ba00e-132">Click Yes.</span></span>
+8. <span data-ttu-id="ba00e-133">[製品受領書の照合] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ba00e-133">Click Match product receipts.</span></span>
+9. <span data-ttu-id="ba00e-134">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ba00e-134">Click OK.</span></span>
+10. <span data-ttu-id="ba00e-135">アクション ウィンドウで、[確認] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ba00e-135">On the Action Pane, click Review.</span></span>
+11. <span data-ttu-id="ba00e-136">[照合の詳細] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ba00e-136">Click Matching details.</span></span>
 
 

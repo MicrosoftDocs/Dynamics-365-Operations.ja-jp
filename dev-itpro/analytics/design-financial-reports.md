@@ -18,174 +18,176 @@ ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 0dc453ab56a2d381afa6e22d847f0b1eb7a16e7e
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: 98e616b6a239fc94654c5a197e06ab6644f34139
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 06/29/2017
 
 
 ---
 
-# <a name="view-and-design-financial-reports"></a>財務諸表の表示およびデザイン
+# <a name="view-and-design-financial-reports"></a><span data-ttu-id="4381c-103">財務諸表の表示およびデザイン</span><span class="sxs-lookup"><span data-stu-id="4381c-103">View and design financial reports</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-この記事では、Microsoft Dynamics 365 for Finance and Operations の財務諸表の表示および作成の練習を提供します。 財務報告は Finance and Operations と財務諸表を作成して編集するクリック ワンス レポート デザイナーで構成されます。  
+<span data-ttu-id="4381c-104">この記事では、Microsoft Dynamics 365 for Finance and Operations の財務諸表の表示および作成の練習を提供します。</span><span class="sxs-lookup"><span data-stu-id="4381c-104">This article provides exercises that walk you through viewing and creating financial reports for Microsoft Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="4381c-105">財務報告は Finance and Operations と財務諸表を作成して編集するクリック ワンス レポート デザイナーで構成されます。</span><span class="sxs-lookup"><span data-stu-id="4381c-105">Financial reporting consists of a viewing experience within Finance and Operations and a click-once report designer that lets you create and edit financial reports.</span></span>  
 
-<a name="exercise-1-generate-and-explore-a-default-financial-report"></a>練習 1: 既定の財務諸表の生成と活用
+<a name="exercise-1-generate-and-explore-a-default-financial-report"></a><span data-ttu-id="4381c-106">練習 1: 既定の財務諸表の生成と活用</span><span class="sxs-lookup"><span data-stu-id="4381c-106">Exercise 1: Generate and explore a default financial report</span></span>
 -----------------------------------------------------------
 
-この練習では、既存の既定のレポートを生成および検討します。 このレポートには、すべての勘定と、勘定の勘定プロパティ (属性) も含まれます。 トランザクションの詳細を表示し、分析コード フィルターを適用し、レポートの通貨を変更します。 最初に、財務報告の分析コードの表示順序を更新します。 これにより、財務諸表の設計および表示だけでなく、分析コードをどのように表示するかも選択できます。
+<span data-ttu-id="4381c-107">この練習では、既存の既定のレポートを生成および検討します。</span><span class="sxs-lookup"><span data-stu-id="4381c-107">For this exercise, you will be generating and exploring an existing default report.</span></span> <span data-ttu-id="4381c-108">このレポートには、すべての勘定と、勘定の勘定プロパティ (属性) も含まれます。</span><span class="sxs-lookup"><span data-stu-id="4381c-108">This report includes all accounts and also contains account properties (attributes) for the accounts.</span></span> <span data-ttu-id="4381c-109">トランザクションの詳細を表示し、分析コード フィルターを適用し、レポートの通貨を変更します。</span><span class="sxs-lookup"><span data-stu-id="4381c-109">You’ll be drilling into transaction detail, applying dimension filters, changing the currency on the report.</span></span> <span data-ttu-id="4381c-110">最初に、財務報告の分析コードの表示順序を更新します。</span><span class="sxs-lookup"><span data-stu-id="4381c-110">First, we’ll update the display order of dimensions for financial reporting.</span></span> <span data-ttu-id="4381c-111">これにより、財務諸表の設計および表示だけでなく、分析コードをどのように表示するかも選択できます。</span><span class="sxs-lookup"><span data-stu-id="4381c-111">This allows you to choose how the dimensions display not only while designing and viewing financial reports.</span></span>
 
-1.  総勘定元帳の、[**勘定科目表の分析コード**]、[**アプリケーション統合用の財務分析コードの構成**] に移動します。
-2.  次の順序で分析コードを移動します:
-    1.  主勘定
-    2.  事業単位
-    3.  コスト センター
-    4.  部門
+1.  <span data-ttu-id="4381c-112">総勘定元帳の、[**勘定科目表の分析コード**]、[**アプリケーション統合用の財務分析コードの構成**] に移動します。</span><span class="sxs-lookup"><span data-stu-id="4381c-112">Go to **Financial dimension configuration for integrating applications** under the **Dimensions of Chart of Accounts** in General ledger.</span></span>
+2.  <span data-ttu-id="4381c-113">次の順序で分析コードを移動します:</span><span class="sxs-lookup"><span data-stu-id="4381c-113">Move the dimensions to be in the following order:</span></span>
+    1.  <span data-ttu-id="4381c-114">主勘定</span><span class="sxs-lookup"><span data-stu-id="4381c-114">Main Account</span></span>
+    2.  <span data-ttu-id="4381c-115">事業単位</span><span class="sxs-lookup"><span data-stu-id="4381c-115">Business Unit</span></span>
+    3.  <span data-ttu-id="4381c-116">コスト センター</span><span class="sxs-lookup"><span data-stu-id="4381c-116">Cost Center</span></span>
+    4.  <span data-ttu-id="4381c-117">部門</span><span class="sxs-lookup"><span data-stu-id="4381c-117">Department</span></span>
 
-    注: 他の分析コードは現状の順序に残すことができます。
-3.  分析コード コンフィギュレーションを保存します。 次に、レポートを生成し、レポートのデータを活用します。
-4.  総勘定元帳の [**照会およびレポート**] の下の [**財務レポート**] に移動します。
-5.  [**GL の詳細 – 既定**] という名前のレポートの行を選択します。
-6.  [**編集**] を選択します。 注記: クリック ワンス レポート デザイナーをダウンロードすると、ログインするように求めるメッセージが表示されます。 資格情報を使用してログインします。
-7.  基準年を 2012 に変更し、[**生成**] を選択します。 レポート デザイナーからレポートが生成された場合、新しいブラウザーのタブで開きます。 新しいブラウザー タブのレポートを活用するか、または元のブラウザー タブに移動し、[**財務レポート**] リストからそのレポートを選択して任意のレポートを開きます。
-8.  開いたレポートで、レポートの勘定の詳細に調査する金額の 1 つを選択します。
-9.  勘定の詳細で 1 回、データがある勘定を選択し、**レポート トランザクション レベルを表示** します。 レポートのトランザクション レベルで、このレポートのデザインに含まれているプロパティ (属性) を確認できます。 トランザクションおよび勘定に応じて、属性のいくつかまたはすべてが表示されます。
-10. レポート トランザクション レベルを閉じます。
-11. 同じ勘定または別の勘定を選択し、**伝票トランザクションを開きます。** 伝票トランザクションは、選択した勘定の期間、年および口座と分析コードの組み合わせでフィルタ処理されます。 伝票トランザクションでは、トランザクションに関する他の情報を活用するために選択できます。
-12. 伝票トランザクションを閉じます。 財務諸表の中で、別の期間と年に対するデータ、または異なる属性および分析コードが適用されたデータを表示するように選択できます。 これは [**レポート オプション**] を使用して実行されます。
-13. [**レポート オプション**] を選択します。
-14. [**分析コード フィルターの追加**] を選択して、[**事業単位**] を選択します。
-15. フィールドに 001 と入力し、[**OK**] を選択します。 レポートには 001 の事業単位のデータのみが表示されます。 これは、レポートのカスタマイズされた表示で、他のレポートの表示には使用できません。
-16. フィルター処理されたレポートを閉じます。 財務諸表は、Finance and Operations に追加されている通貨すべてで表示できます。
-17. [**通貨**] を選択し、次に [**EUR**] を選択します。 ユーロで、レポートが表示されます。 レポートのデザインに含まれる通貨コードまたは通貨記号はすべて適用された通貨で表示されます。 通貨記号が通貨に対して定義されていない場合、通貨記号は表示されません。
-18. [**GLの詳細**] レポートを閉じます。
-19. [**レポート デザイナー**] を閉じます。
+    <span data-ttu-id="4381c-118">注: 他の分析コードは現状の順序に残すことができます。</span><span class="sxs-lookup"><span data-stu-id="4381c-118">Note: The other dimensions can remain in the order they are currently in.</span></span>
+3.  <span data-ttu-id="4381c-119">分析コード コンフィギュレーションを保存します。</span><span class="sxs-lookup"><span data-stu-id="4381c-119">Save the dimension configuration.</span></span> <span data-ttu-id="4381c-120">次に、レポートを生成し、レポートのデータを活用します。</span><span class="sxs-lookup"><span data-stu-id="4381c-120">Next, we’ll generate a report and explore the data in the report.</span></span>
+4.  <span data-ttu-id="4381c-121">総勘定元帳の [**照会およびレポート**] の下の [**財務レポート**] に移動します。</span><span class="sxs-lookup"><span data-stu-id="4381c-121">Go to **Financial reports** under **Inquiries and reports** in General ledger.</span></span>
+5.  <span data-ttu-id="4381c-122">[**GL の詳細 – 既定**] という名前のレポートの行を選択します。</span><span class="sxs-lookup"><span data-stu-id="4381c-122">Select the row for the report named **GL Detail – Default.**</span></span>
+6.  <span data-ttu-id="4381c-123">[**編集**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="4381c-123">Select **Edit.**</span></span> <span data-ttu-id="4381c-124">注記: クリック ワンス レポート デザイナーをダウンロードすると、ログインするように求めるメッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="4381c-124">Note: You’ll be prompted to download the click-once report designer and to log in.</span></span> <span data-ttu-id="4381c-125">資格情報を使用してログインします。</span><span class="sxs-lookup"><span data-stu-id="4381c-125">Use your credentials to log in.</span></span>
+7.  <span data-ttu-id="4381c-126">基準年を 2012 に変更し、[**生成**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="4381c-126">Change the base year to 2012 and select **Generate**.</span></span> <span data-ttu-id="4381c-127">レポート デザイナーからレポートが生成された場合、新しいブラウザーのタブで開きます。</span><span class="sxs-lookup"><span data-stu-id="4381c-127">When a report is generated from the report designer, it will open in a new browser tab.</span></span> <span data-ttu-id="4381c-128">新しいブラウザー タブのレポートを活用するか、または元のブラウザー タブに移動し、[**財務レポート**] リストからそのレポートを選択して任意のレポートを開きます。</span><span class="sxs-lookup"><span data-stu-id="4381c-128">You can either explorer the report in the new browser tab, or go to your original browser tab and open the report from there by selecting it from the **Financial reports** list.</span></span>
+8.  <span data-ttu-id="4381c-129">開いたレポートで、レポートの勘定の詳細に調査する金額の 1 つを選択します。</span><span class="sxs-lookup"><span data-stu-id="4381c-129">In the opened report, select one of the amounts to drill into the account detail for the report.</span></span>
+9.  <span data-ttu-id="4381c-130">勘定の詳細で 1 回、データがある勘定を選択し、**レポート トランザクション レベルを表示** します。</span><span class="sxs-lookup"><span data-stu-id="4381c-130">Once in account detail, select an account with data and **drill to report transaction level**.</span></span> <span data-ttu-id="4381c-131">レポートのトランザクション レベルで、このレポートのデザインに含まれているプロパティ (属性) を確認できます。</span><span class="sxs-lookup"><span data-stu-id="4381c-131">At the report transaction level, you can see the properties (attributes) that are included in the design of this report.</span></span> <span data-ttu-id="4381c-132">トランザクションおよび勘定に応じて、属性のいくつかまたはすべてが表示されます。</span><span class="sxs-lookup"><span data-stu-id="4381c-132">Depending on the transaction and account, some or all of the attributes may be displayed.</span></span>
+10. <span data-ttu-id="4381c-133">レポート トランザクション レベルを閉じます。</span><span class="sxs-lookup"><span data-stu-id="4381c-133">Close the report transaction level.</span></span>
+11. <span data-ttu-id="4381c-134">同じ勘定または別の勘定を選択し、**伝票トランザクションを開きます。**</span><span class="sxs-lookup"><span data-stu-id="4381c-134">Select the same or a different account and **open voucher transactions.**</span></span> <span data-ttu-id="4381c-135">伝票トランザクションは、選択した勘定の期間、年および口座と分析コードの組み合わせでフィルタ処理されます。</span><span class="sxs-lookup"><span data-stu-id="4381c-135">Voucher transactions is filtered to the period, year and account + dimension combination of the account selected.</span></span> <span data-ttu-id="4381c-136">伝票トランザクションでは、トランザクションに関する他の情報を活用するために選択できます。</span><span class="sxs-lookup"><span data-stu-id="4381c-136">From voucher transactions, you can choose to explore other information about the transaction.</span></span>
+12. <span data-ttu-id="4381c-137">伝票トランザクションを閉じます。</span><span class="sxs-lookup"><span data-stu-id="4381c-137">Close voucher transactions.</span></span> <span data-ttu-id="4381c-138">財務諸表の中で、別の期間と年に対するデータ、または異なる属性および分析コードが適用されたデータを表示するように選択できます。</span><span class="sxs-lookup"><span data-stu-id="4381c-138">Within a financial report, you can choose to view the data either for a different period and year or with different attributes and dimensions applied.</span></span> <span data-ttu-id="4381c-139">これは [**レポート オプション**] を使用して実行されます。</span><span class="sxs-lookup"><span data-stu-id="4381c-139">This is done by using **Report Options**.</span></span>
+13. <span data-ttu-id="4381c-140">[**レポート オプション**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="4381c-140">Select **Report Options**.</span></span>
+14. <span data-ttu-id="4381c-141">[**分析コード フィルターの追加**] を選択して、[**事業単位**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="4381c-141">Select **Add a dimension filter** and choose **Business Unit**.</span></span>
+15. <span data-ttu-id="4381c-142">フィールドに 001 と入力し、[**OK**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="4381c-142">Type 001 into the field and select **OK**.</span></span> <span data-ttu-id="4381c-143">レポートには 001 の事業単位のデータのみが表示されます。</span><span class="sxs-lookup"><span data-stu-id="4381c-143">The report now displays only the data for the 001 Business Unit.</span></span> <span data-ttu-id="4381c-144">これは、レポートのカスタマイズされた表示で、他のレポートの表示には使用できません。</span><span class="sxs-lookup"><span data-stu-id="4381c-144">This is a personalized view of the report and isn’t available for others to view.</span></span>
+16. <span data-ttu-id="4381c-145">フィルター処理されたレポートを閉じます。</span><span class="sxs-lookup"><span data-stu-id="4381c-145">Close the filtered report.</span></span> <span data-ttu-id="4381c-146">財務諸表は、Finance and Operations に追加されている通貨すべてで表示できます。</span><span class="sxs-lookup"><span data-stu-id="4381c-146">Financial reports can be displayed in any currency that has been added to Finance and Operations.</span></span>
+17. <span data-ttu-id="4381c-147">[**通貨**] を選択し、次に [**EUR**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="4381c-147">Select **Currency**, then select **EUR.**</span></span> <span data-ttu-id="4381c-148">ユーロで、レポートが表示されます。</span><span class="sxs-lookup"><span data-stu-id="4381c-148">The report now displays in Euros.</span></span> <span data-ttu-id="4381c-149">レポートのデザインに含まれる通貨コードまたは通貨記号はすべて適用された通貨で表示されます。</span><span class="sxs-lookup"><span data-stu-id="4381c-149">Any currency codes or currency symbols included in the report design now display in the applied currency.</span></span> <span data-ttu-id="4381c-150">通貨記号が通貨に対して定義されていない場合、通貨記号は表示されません。</span><span class="sxs-lookup"><span data-stu-id="4381c-150">If no currency symbol is defined for a currency, the currency symbol is not displayed.</span></span>
+18. <span data-ttu-id="4381c-151">[**GLの詳細**] レポートを閉じます。</span><span class="sxs-lookup"><span data-stu-id="4381c-151">Close the **GL Detail** report.</span></span>
+19. <span data-ttu-id="4381c-152">[**レポート デザイナー**] を閉じます。</span><span class="sxs-lookup"><span data-stu-id="4381c-152">Close **Report Designer**.</span></span>
 
-## <a name="exercise-2-add-additional-account-properties-to-a-report-design"></a>練習 2: レポート デザインへの追加の勘定プロパティの追加
-この練習では、既存の既定のレポートを変更します。 両方の行定義がすべての勘定を含むか、勘定属性を含むように列の定義を更新します。 更新が完了したら、新しく作成されたレポートを生成し、レポートを活用します。 財務レポートの一覧から開始します。
+## <a name="exercise-2-add-additional-account-properties-to-a-report-design"></a><span data-ttu-id="4381c-153">練習 2: レポート デザインへの追加の勘定プロパティの追加</span><span class="sxs-lookup"><span data-stu-id="4381c-153">Exercise 2: Add additional account properties to a report design</span></span>
+<span data-ttu-id="4381c-154">この練習では、既存の既定のレポートを変更します。</span><span class="sxs-lookup"><span data-stu-id="4381c-154">In this exercise, you will be modifying an existing default report.</span></span> <span data-ttu-id="4381c-155">両方の行定義がすべての勘定を含むか、勘定属性を含むように列の定義を更新します。</span><span class="sxs-lookup"><span data-stu-id="4381c-155">You will be updating both row definition to include all accounts and you’ll update the column definition to contain account attributes.</span></span> <span data-ttu-id="4381c-156">更新が完了したら、新しく作成されたレポートを生成し、レポートを活用します。</span><span class="sxs-lookup"><span data-stu-id="4381c-156">Once the updates are complete, you’ll generate the newly created report and explore the report.</span></span> <span data-ttu-id="4381c-157">財務レポートの一覧から開始します。</span><span class="sxs-lookup"><span data-stu-id="4381c-157">We’ll start from the Financial reports list.</span></span>
 
-1.  総勘定元帳の [照会およびレポート] の下の [**財務レポート**] に移動します。
-2.  [**集計試算表 – 既定**] という名前のレポートの行を選択します。
-3.  [**編集**] を選択します。 [**集計試算表 - 既定**] がレポート デザイナーで開きます。
-4.  [**ファイル**]、[**名前を付けて保存**] を選択し、[属性の詳細な試算表] レポートの名前を付けます。 注記: レポート デザイナーで新しいレポートが作成されると、常に Finance and Operations で財務諸表のリストが更新されます。
-5.  レポート定義から開いた場合は、行定義のアイコンを選択し、[**試算表 – 既定の行定義**] を開きます。
-6.  [**属性の詳細な試算表**] として行定義を保存します
-7.  50 行にカーソルを置いて、[**編集**]、[**分析コードからの行の挿入**] を選択します。 分析コードからの行の挿入により、行定義にどのような分析コードを設定するかを選択できます。 この練習では、主勘定を使用して行定義を構築します。
-8.  [**主勘定**] がすべてのアンパサンドを含むことを確認し [**OK**] を選択します。 今回の行の定義には、USMF 法人の主勘定すべてが含まれます。
-9.  行 11110 にスクロールし、行 11110 を削除します。
-10. 11080 行で、[**--- (アンダースコア金額)**] を選択します。
-11. 11140 行で、列 B に [**すべての勘定の合計**] と入力します。
-12. 列 C で、ドロップダウンから [**TOT**] を選択します。
-13. 列 D で、[**50:11080**] と入力します。
-14. 行定義を [**保存**] します。 今回の行の定義には、すべての勘定とすべての勘定を一緒に追加する合計行が含まれます。 次に、追加の勘定の属性を含む、列定義を更新します。
-15. [**属性の詳細な試算表**] レポート定義から、列定義アイコンを選択して、[**試算表の集計 - 既定**] 列定義を開きます。
-16. [**属性の詳細な試算表**] として列定義を保存します。 列定義には、財務データの列、列の説明、および計算列が含まれます。 列定義に属性列を追加して、勘定に関する追加情報を提供します。
-17. 次の属性が列定義に追加されます。
-    -   仕訳帳番号
-    -   仕訳帳の説明
-    -   トランザクション日付
-    -   作成者
-    -   最終更新者
+1.  <span data-ttu-id="4381c-158">総勘定元帳の [照会およびレポート] の下の [**財務レポート**] に移動します。</span><span class="sxs-lookup"><span data-stu-id="4381c-158">Go to **Financial reports** under Inquiries and reports in General ledger.</span></span>
+2.  <span data-ttu-id="4381c-159">[**集計試算表 – 既定**] という名前のレポートの行を選択します。</span><span class="sxs-lookup"><span data-stu-id="4381c-159">Select the row for the report named **Summary Trial Balance – Default**</span></span>
+3.  <span data-ttu-id="4381c-160">[**編集**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="4381c-160">Select **Edit**.</span></span> <span data-ttu-id="4381c-161">[**集計試算表 - 既定**] がレポート デザイナーで開きます。</span><span class="sxs-lookup"><span data-stu-id="4381c-161">**Summary Trial Balance – Default** will open in the report designer.</span></span>
+4.  <span data-ttu-id="4381c-162">[**ファイル**]、[**名前を付けて保存**] を選択し、[属性の詳細な試算表] レポートの名前を付けます。</span><span class="sxs-lookup"><span data-stu-id="4381c-162">Select **File**, then **Save As** and name the report Detailed Trial Balance with Attributes.</span></span> <span data-ttu-id="4381c-163">注記: レポート デザイナーで新しいレポートが作成されると、常に Finance and Operations で財務諸表のリストが更新されます。</span><span class="sxs-lookup"><span data-stu-id="4381c-163">Note: Any time a new report is created in report designer, the financial reports list is updated in Finance and Operations.</span></span>
+5.  <span data-ttu-id="4381c-164">レポート定義から開いた場合は、行定義のアイコンを選択し、[**試算表 – 既定の行定義**] を開きます。</span><span class="sxs-lookup"><span data-stu-id="4381c-164">From the report definition, select the row definition icon to open the **Trial Balance – Default row definition**.</span></span>
+6.  <span data-ttu-id="4381c-165">[**属性の詳細な試算表**] として行定義を保存します</span><span class="sxs-lookup"><span data-stu-id="4381c-165">Save the row definition as **Detailed Trial Balance with Attributes**</span></span>
+7.  <span data-ttu-id="4381c-166">50 行にカーソルを置いて、[**編集**]、[**分析コードからの行の挿入**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="4381c-166">With the cursor on row 50, select **Edit**, then **Insert Rows from Dimensions**.</span></span> <span data-ttu-id="4381c-167">分析コードからの行の挿入により、行定義にどのような分析コードを設定するかを選択できます。</span><span class="sxs-lookup"><span data-stu-id="4381c-167">Insert rows from dimensions allows you to choose what dimensions you’d like to have in your row definition.</span></span> <span data-ttu-id="4381c-168">この練習では、主勘定を使用して行定義を構築します。</span><span class="sxs-lookup"><span data-stu-id="4381c-168">For this exercise, we are going to build the row definition using Main Account.</span></span>
+8.  <span data-ttu-id="4381c-169">[**主勘定**] がすべてのアンパサンドを含むことを確認し [**OK**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="4381c-169">Make sure **Main Account** contains all ampersands and select **OK**.</span></span> <span data-ttu-id="4381c-170">今回の行の定義には、USMF 法人の主勘定すべてが含まれます。</span><span class="sxs-lookup"><span data-stu-id="4381c-170">The row definition now contains all of the main accounts for legal entity USMF.</span></span>
+9.  <span data-ttu-id="4381c-171">行 11110 にスクロールし、行 11110 を削除します。</span><span class="sxs-lookup"><span data-stu-id="4381c-171">Scroll down to row 11110 and delete row 11110.</span></span>
+10. <span data-ttu-id="4381c-172">11080 行で、[**--- (アンダースコア金額)**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="4381c-172">In row 11080, select **--- (Underscore amounts)**.</span></span>
+11. <span data-ttu-id="4381c-173">11140 行で、列 B に [**すべての勘定の合計**] と入力します。</span><span class="sxs-lookup"><span data-stu-id="4381c-173">In row 11140, type **Total of all accounts** in column B.</span></span>
+12. <span data-ttu-id="4381c-174">列 C で、ドロップダウンから [**TOT**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="4381c-174">In column C, select **TOT** from the drop down.</span></span>
+13. <span data-ttu-id="4381c-175">列 D で、[**50:11080**] と入力します。</span><span class="sxs-lookup"><span data-stu-id="4381c-175">Type **50:11080** in column D.</span></span>
+14. <span data-ttu-id="4381c-176">行定義を [**保存**] します。</span><span class="sxs-lookup"><span data-stu-id="4381c-176">**Save** the row definition.</span></span> <span data-ttu-id="4381c-177">今回の行の定義には、すべての勘定とすべての勘定を一緒に追加する合計行が含まれます。</span><span class="sxs-lookup"><span data-stu-id="4381c-177">The row definition now contains all of the accounts plus a total row to add all of the accounts together.</span></span> <span data-ttu-id="4381c-178">次に、追加の勘定の属性を含む、列定義を更新します。</span><span class="sxs-lookup"><span data-stu-id="4381c-178">Next, we’ll update the column definition to include additional account attributes.</span></span>
+15. <span data-ttu-id="4381c-179">[**属性の詳細な試算表**] レポート定義から、列定義アイコンを選択して、[**試算表の集計 - 既定**] 列定義を開きます。</span><span class="sxs-lookup"><span data-stu-id="4381c-179">From the **Detailed Trial Balance with Attributes** report definition, select the column definition icon to open the **Summary Trial Balance – Default** column definition.</span></span>
+16. <span data-ttu-id="4381c-180">[**属性の詳細な試算表**] として列定義を保存します。</span><span class="sxs-lookup"><span data-stu-id="4381c-180">Save the column definition as **Detailed Trial Balance with Attributes**.</span></span> <span data-ttu-id="4381c-181">列定義には、財務データの列、列の説明、および計算列が含まれます。</span><span class="sxs-lookup"><span data-stu-id="4381c-181">The column definition contains financial data columns, a description column and calculation columns.</span></span> <span data-ttu-id="4381c-182">列定義に属性列を追加して、勘定に関する追加情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="4381c-182">We are going to add attribute columns to the column definition to provide additional detail about the accounts.</span></span>
+17. <span data-ttu-id="4381c-183">次の属性が列定義に追加されます。</span><span class="sxs-lookup"><span data-stu-id="4381c-183">The following attributes are going to be added to the column definition:</span></span>
+    -   <span data-ttu-id="4381c-184">仕訳帳番号</span><span class="sxs-lookup"><span data-stu-id="4381c-184">Journal Number</span></span>
+    -   <span data-ttu-id="4381c-185">仕訳帳の説明</span><span class="sxs-lookup"><span data-stu-id="4381c-185">Journal Description</span></span>
+    -   <span data-ttu-id="4381c-186">トランザクション日付</span><span class="sxs-lookup"><span data-stu-id="4381c-186">Transaction Date</span></span>
+    -   <span data-ttu-id="4381c-187">作成者</span><span class="sxs-lookup"><span data-stu-id="4381c-187">Created by</span></span>
+    -   <span data-ttu-id="4381c-188">最終更新者</span><span class="sxs-lookup"><span data-stu-id="4381c-188">Last modified by</span></span>
 
-18. 列 I で、[**ATTR**] を列タイプとして選択します。 次に、[**仕訳帳番号**] を属性のカテゴリとして選択します。
-19. 残りの属性に対して列を追加し続けます。
-20. [**ヘッダー 2**] 行で、追加された新しい列それぞれの説明を追加します。
-21. 列定義を保存します。 行定義と列定義が更新されたため、レポート定義にそれらを追加する必要があります。
-22. [**属性の詳細な試算表**] レポート定義から、行定義と列定義に対する、属性の詳細な試算表を選択します。
-23. 基準年を [**2012**] に変更します。
-24. レポート定義を [**保存**] し、**生成します**。 レポートの生成が完了しそれを開くと、最初の練習で実行したように、レポートを活用できます。 追加の属性がどのように表示されるかをさまざまな勘定で特定します。
-25. [**属性の詳細な試算表**] レポートを閉じます。
-26. [**レポート デザイナー**] を閉じます。
+18. <span data-ttu-id="4381c-189">列 I で、[**ATTR**] を列タイプとして選択します。</span><span class="sxs-lookup"><span data-stu-id="4381c-189">In column I, select **ATTR** as the column type.</span></span> <span data-ttu-id="4381c-190">次に、[**仕訳帳番号**] を属性のカテゴリとして選択します。</span><span class="sxs-lookup"><span data-stu-id="4381c-190">Then, select **Journal Number** as the attribute category.</span></span>
+19. <span data-ttu-id="4381c-191">残りの属性に対して列を追加し続けます。</span><span class="sxs-lookup"><span data-stu-id="4381c-191">Continue adding columns for the remaining attributes.</span></span>
+20. <span data-ttu-id="4381c-192">[**ヘッダー 2**] 行で、追加された新しい列それぞれの説明を追加します。</span><span class="sxs-lookup"><span data-stu-id="4381c-192">In the **Header 2** row, add descriptions for each of the new columns that have been added.</span></span>
+21. <span data-ttu-id="4381c-193">列定義を保存します。</span><span class="sxs-lookup"><span data-stu-id="4381c-193">Save the column definition.</span></span> <span data-ttu-id="4381c-194">行定義と列定義が更新されたため、レポート定義にそれらを追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="4381c-194">Now that the row definition and column definition have been updated, we’ll need to add them to the report definition.</span></span>
+22. <span data-ttu-id="4381c-195">[**属性の詳細な試算表**] レポート定義から、行定義と列定義に対する、属性の詳細な試算表を選択します。</span><span class="sxs-lookup"><span data-stu-id="4381c-195">From the **Detailed Trial Balance with Attributes** report definition, select Detailed Trial Balance with Attributes for both the row definition and column definition.</span></span>
+23. <span data-ttu-id="4381c-196">基準年を [**2012**] に変更します。</span><span class="sxs-lookup"><span data-stu-id="4381c-196">Change the base year to **2012.**</span></span>
+24. <span data-ttu-id="4381c-197">レポート定義を [**保存**] し、**生成します**。</span><span class="sxs-lookup"><span data-stu-id="4381c-197">**Save** the report definition and **generate**.</span></span> <span data-ttu-id="4381c-198">レポートの生成が完了しそれを開くと、最初の練習で実行したように、レポートを活用できます。</span><span class="sxs-lookup"><span data-stu-id="4381c-198">Once the report completes generating and opens, you can explore the report as you did in the first exercise.</span></span> <span data-ttu-id="4381c-199">追加の属性がどのように表示されるかをさまざまな勘定で特定します。</span><span class="sxs-lookup"><span data-stu-id="4381c-199">Drill down on different accounts to see how the additional attributes are displayed.</span></span>
+25. <span data-ttu-id="4381c-200">[**属性の詳細な試算表**] レポートを閉じます。</span><span class="sxs-lookup"><span data-stu-id="4381c-200">Close the **Detailed Trial Balance with Attributes** report.</span></span>
+26. <span data-ttu-id="4381c-201">[**レポート デザイナー**] を閉じます。</span><span class="sxs-lookup"><span data-stu-id="4381c-201">Close **Report Designer**.</span></span>
 
-## <a name="exercise-3-create-a-multidimensional-report-using-a-reporting-tree"></a>練習 3: レポート ツリーを使用する多次元レポートの作成
-この練習では、既存の既定のレポートを変更します。 レポート ツリーを作成し、原価部門の明細書または部分的な損益の明細書を生成するレポートの定義を追加します。 更新が完了したら、原価部門の明細書または部分的な損益の明細書を生成し、レポート ツリーを使用して、レポートを活用します。 財務レポートの一覧から開始します。
+## <a name="exercise-3-create-a-multidimensional-report-using-a-reporting-tree"></a><span data-ttu-id="4381c-202">練習 3: レポート ツリーを使用する多次元レポートの作成</span><span class="sxs-lookup"><span data-stu-id="4381c-202">Exercise 3: Create a multidimensional report using a reporting tree</span></span>
+<span data-ttu-id="4381c-203">この練習では、既存の既定のレポートを変更します。</span><span class="sxs-lookup"><span data-stu-id="4381c-203">For this exercise, you will be modifying an existing default report.</span></span> <span data-ttu-id="4381c-204">レポート ツリーを作成し、原価部門の明細書または部分的な損益の明細書を生成するレポートの定義を追加します。</span><span class="sxs-lookup"><span data-stu-id="4381c-204">You will be creating a reporting tree and adding to a report definition to produce a Cost Center/Divisional Income Statement.</span></span> <span data-ttu-id="4381c-205">更新が完了したら、原価部門の明細書または部分的な損益の明細書を生成し、レポート ツリーを使用して、レポートを活用します。</span><span class="sxs-lookup"><span data-stu-id="4381c-205">Once the updates are complete, you’ll generate the Cost Center/Divisional Income Statement and explore the report using the reporting tree.</span></span> <span data-ttu-id="4381c-206">財務レポートの一覧から開始します。</span><span class="sxs-lookup"><span data-stu-id="4381c-206">We’ll start from the Financial reports list.</span></span>
 
-1.  総勘定元帳の [照会およびレポート] の下の [**財務レポート**] に移動します。
-2.  [**損益計算書 – 既定**] という名前のレポートの行を選択します
-3.  [**編集**] を選択します。 [**損益計算書 - 既定**] がレポート デザイナーで開きます。
-4.  [**ファイル**] メニューの [**新規**] をポイントし、[**レポート ツリー定義**] をクリックします。
-5.  [**編集**] メニューの [**分析コードからレポート単位の挿入**] をクリックします。
-6.  [**原価部門**] を除き、すべての分析コードのチェック ボックスをクリアします。
-7.  [**移動元分析コード**] フィールドから、原価部門分析コードをクリックし、[**007**] と入力し、[タブ] キーを押します。 [**移動先分析コード**] フィールドで、[**018**] と入力します。
-8.  [**区分別原価部門**] という名前で、生成されるツリーを [**保存**] します。 レポート ツリーが作成されたので、3 つの新しいロールアップの単位、マーケティング、工程、小売を含むように、レポート ツリーを変更します。
-9.  [**ウィンドウ**] メニューの [**区分別原価部門**] をクリックします。 レポート ツリーを閉じた場合、ナビゲーション ウィンドウの [レポート ツリー定義] から選択します。
-10. 2 番目の単位をクリックし、[**取引の表示**] をクリックし、[**レポート単位の挿入**] アイコンをクリックします。
-11. 空白の行のエンティティの列をダブルクリックし、[**USMF**] を選択します。
-12. 列 B および列 C に **マーケティング** と入力します。
-13. 5 番目の単位、[**サービス工程**] をクリックして、右クリックします。 **レポート単位の挿入を選択します**。
-14. ステップ 11 を繰り返します。
-15. 列 B および列 C に **操作** と入力します。
-16. 12 番目の単位をクリックし、[**アウトレット**] をクリックし、右クリックします。 [**レポート単位の挿入**] を選択します。
-17. ステップ 11 を繰り返します。
-18. 列 B および列 C に **小売** と入力します。現在のロールアップの単位と同じレベルで、マーケティング、工程、小売単位が表示されていることに注意してください。 新しい単位が、次に組織されます。 レポート単位は右クリックすると表示されるオプションの昇格および降格を使用するか、またはドラッグ アンド ドロップを使用して組織します。
-19. 3 つめの単位 [**取引の表示**] が有効なことを確認し、右クリックします。
-20. [**レポート単位の降格**] を選択します。 単位が [**販売**] の子として今回は表示されていることに注意します。
-21. 単位 4、[**販売****キャンペーン**] をクリックして、右クリックします。
-22. [**レポート単位の降格**] を選択します。
-23. グラフィカル表示で、[**サービス工程**] をクリックします。 マウスの左ボタンをクリックし押しながら、[**工程**] まで単位をドラッグします。 マウスの左クリックを離し、単位を工程のロールアップにドロップします。 **生産、品質管理、物流、調達および管理** についても同じ手順を繰り返します。
-24. 降格またはドラッグ アンド ドロップを使用して **小売** の子の、**アウトレット**、**スーパー**、**モール**、**オンライン** を作成します。
-25. 結果の再編成を保存します。 レポート ツリーが作成され組織されたので、レポート定義に追加できます。
-26. [**ウィンドウ**] メニューで、[**損益計算書 - 既定**] を選択し、レポート定義を開きます。
-27. [**ツリー タイプ**] ドロップダウン矢印をクリックし、[**レポート ツリー**] を選択します 。
-28. ツリーのドロップダウン矢印をクリックし、[**区分別原価部門**] を選択します。
-29. 基準年を [**2012**] に変更し、変更を [**保存**] し、レポートを [**生成**] します。 レポートが完了し開くと、レポートを活用できます。
-30. [**レポート ツリー**] ドロップダウンを選択し、レポート単位を表示します。 または、レポート ツリーのすべての単位の残高を表示するために、レポートの行をドリルダウンすることもできます。
-31. [**損益計算書 - 既定**] を閉じます。
-32. [**レポート デザイナー**] を閉じます。
+1.  <span data-ttu-id="4381c-207">総勘定元帳の [照会およびレポート] の下の [**財務レポート**] に移動します。</span><span class="sxs-lookup"><span data-stu-id="4381c-207">Go to **Financial reports** under Inquiries and reports in General ledger.</span></span>
+2.  <span data-ttu-id="4381c-208">[**損益計算書 – 既定**] という名前のレポートの行を選択します</span><span class="sxs-lookup"><span data-stu-id="4381c-208">Select the row for the report named **Income Statement – Default**</span></span>
+3.  <span data-ttu-id="4381c-209">[**編集**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="4381c-209">Select **Edit**.</span></span> <span data-ttu-id="4381c-210">[**損益計算書 - 既定**] がレポート デザイナーで開きます。</span><span class="sxs-lookup"><span data-stu-id="4381c-210">**Income Statement – Default** will open in the report designer.</span></span>
+4.  <span data-ttu-id="4381c-211">[**ファイル**] メニューの [**新規**] をポイントし、[**レポート ツリー定義**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4381c-211">On the **File** menu, point to **New**, and then click **Reporting Tree Definition**</span></span>
+5.  <span data-ttu-id="4381c-212">[**編集**] メニューの [**分析コードからレポート単位の挿入**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4381c-212">On the **Edit** menu, click **Insert Reporting Units from Dimensions**...</span></span>
+6.  <span data-ttu-id="4381c-213">[**原価部門**] を除き、すべての分析コードのチェック ボックスをクリアします。</span><span class="sxs-lookup"><span data-stu-id="4381c-213">Clear check boxes for all dimensions, except **Cost Center**.</span></span>
+7.  <span data-ttu-id="4381c-214">[**移動元分析コード**] フィールドから、原価部門分析コードをクリックし、[**007**] と入力し、[タブ] キーを押します。</span><span class="sxs-lookup"><span data-stu-id="4381c-214">Click the **From Dimension** field for the Cost Center dimension, type **007**, and then press the Tab key.</span></span> <span data-ttu-id="4381c-215">[**移動先分析コード**] フィールドで、[**018**] と入力します。</span><span class="sxs-lookup"><span data-stu-id="4381c-215">In the **To Dimension** field, type **018**.</span></span>
+8.  <span data-ttu-id="4381c-216">[**区分別原価部門**] という名前で、生成されるツリーを [**保存**] します。</span><span class="sxs-lookup"><span data-stu-id="4381c-216">**Save** the resulting tree with the name **Cost Centers by Division.**</span></span> <span data-ttu-id="4381c-217">レポート ツリーが作成されたので、3 つの新しいロールアップの単位、マーケティング、工程、小売を含むように、レポート ツリーを変更します。</span><span class="sxs-lookup"><span data-stu-id="4381c-217">Now that the reporting tree has been created, you’ll modify the reporting tree to contain three new rollup units; Marketing, Operations and Retail.</span></span>
+9.  <span data-ttu-id="4381c-218">[**ウィンドウ**] メニューの [**区分別原価部門**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4381c-218">On the **Window** menu, click **Cost Centers by Division**.</span></span> <span data-ttu-id="4381c-219">レポート ツリーを閉じた場合、ナビゲーション ウィンドウの [レポート ツリー定義] から選択します。</span><span class="sxs-lookup"><span data-stu-id="4381c-219">(If the reporting tree has been closed, select it from the Reporting Tree Definitions in the navigation pane.)</span></span>
+10. <span data-ttu-id="4381c-220">2 番目の単位をクリックし、[**取引の表示**] をクリックし、[**レポート単位の挿入**] アイコンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="4381c-220">Click unit number two, **Trade Shows**, and click the **Insert Reporting Unit** icon.</span></span>
+11. <span data-ttu-id="4381c-221">空白の行のエンティティの列をダブルクリックし、[**USMF**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="4381c-221">Double-click the entity column on the blank row, and select **USMF**.</span></span>
+12. <span data-ttu-id="4381c-222">列 B および列 C に **マーケティング** と入力します。</span><span class="sxs-lookup"><span data-stu-id="4381c-222">Type **Marketing** in columns B and C.</span></span>
+13. <span data-ttu-id="4381c-223">5 番目の単位、[**サービス工程**] をクリックして、右クリックします。</span><span class="sxs-lookup"><span data-stu-id="4381c-223">Click unit number five, **Service Operations**, and right-click.</span></span> <span data-ttu-id="4381c-224">**レポート単位の挿入を選択します**。</span><span class="sxs-lookup"><span data-stu-id="4381c-224">**Select Insert Reporting Unit**.</span></span>
+14. <span data-ttu-id="4381c-225">ステップ 11 を繰り返します。</span><span class="sxs-lookup"><span data-stu-id="4381c-225">Repeat step 11.</span></span>
+15. <span data-ttu-id="4381c-226">列 B および列 C に **操作** と入力します。</span><span class="sxs-lookup"><span data-stu-id="4381c-226">Type **Operations** in columns B and C.</span></span>
+16. <span data-ttu-id="4381c-227">12 番目の単位をクリックし、[**アウトレット**] をクリックし、右クリックします。</span><span class="sxs-lookup"><span data-stu-id="4381c-227">Click unit number twelve, **Outlet**, and right-click.</span></span> <span data-ttu-id="4381c-228">[**レポート単位の挿入**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="4381c-228">Select **Insert Reporting Unit**.</span></span>
+17. <span data-ttu-id="4381c-229">ステップ 11 を繰り返します。</span><span class="sxs-lookup"><span data-stu-id="4381c-229">Repeat step 11.</span></span>
+18. <span data-ttu-id="4381c-230">列 B および列 C に **小売** と入力します。現在のロールアップの単位と同じレベルで、マーケティング、工程、小売単位が表示されていることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="4381c-230">Type **Retail** in columns B and C. Notice the Marketing, Operations and Retail units display at the same level as the current rollup units.</span></span> <span data-ttu-id="4381c-231">新しい単位が、次に組織されます。</span><span class="sxs-lookup"><span data-stu-id="4381c-231">The new units are organized next.</span></span> <span data-ttu-id="4381c-232">レポート単位は右クリックすると表示されるオプションの昇格および降格を使用するか、またはドラッグ アンド ドロップを使用して組織します。</span><span class="sxs-lookup"><span data-stu-id="4381c-232">Reporting units are organized through the right-click options; promote and demote, or by drag and drop.</span></span>
+19. <span data-ttu-id="4381c-233">3 つめの単位 [**取引の表示**] が有効なことを確認し、右クリックします。</span><span class="sxs-lookup"><span data-stu-id="4381c-233">Verify unit three, **Trade Shows**, is active and right-click.</span></span>
+20. <span data-ttu-id="4381c-234">[**レポート単位の降格**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="4381c-234">Select **Demote Reporting Unit**.</span></span> <span data-ttu-id="4381c-235">単位が [**販売**] の子として今回は表示されていることに注意します。</span><span class="sxs-lookup"><span data-stu-id="4381c-235">Notice the unit now displays as a child of **Marketing**.</span></span>
+21. <span data-ttu-id="4381c-236">単位 4、[**販売****キャンペーン**] をクリックして、右クリックします。</span><span class="sxs-lookup"><span data-stu-id="4381c-236">Click unit four, **Marketing** **Campaign**, and right-click.</span></span>
+22. <span data-ttu-id="4381c-237">[**レポート単位の降格**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="4381c-237">Select **Demote Reporting Unit**.</span></span>
+23. <span data-ttu-id="4381c-238">グラフィカル表示で、[**サービス工程**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4381c-238">Click **Service Operations** in the graphical display.</span></span> <span data-ttu-id="4381c-239">マウスの左ボタンをクリックし押しながら、[**工程**] まで単位をドラッグします。</span><span class="sxs-lookup"><span data-stu-id="4381c-239">Press and hold down the left mouse button while dragging the unit up to **Operations**.</span></span> <span data-ttu-id="4381c-240">マウスの左クリックを離し、単位を工程のロールアップにドロップします。</span><span class="sxs-lookup"><span data-stu-id="4381c-240">Release the left mouse to drop the unit into Operation’s rollup.</span></span> <span data-ttu-id="4381c-241">**生産、品質管理、物流、調達および管理** についても同じ手順を繰り返します。</span><span class="sxs-lookup"><span data-stu-id="4381c-241">Repeat for **Production, Quality Control, Logistics, Procurement and Administration**.</span></span>
+24. <span data-ttu-id="4381c-242">降格またはドラッグ アンド ドロップを使用して **小売** の子の、**アウトレット**、**スーパー**、**モール**、**オンライン** を作成します。</span><span class="sxs-lookup"><span data-stu-id="4381c-242">Make **Outlet**, **Super**, **Mall**, and **Online** children of **Retail** by either demoting them or dragging and dropping them.</span></span>
+25. <span data-ttu-id="4381c-243">結果の再編成を保存します。</span><span class="sxs-lookup"><span data-stu-id="4381c-243">Save the resulting re-organization.</span></span> <span data-ttu-id="4381c-244">レポート ツリーが作成され組織されたので、レポート定義に追加できます。</span><span class="sxs-lookup"><span data-stu-id="4381c-244">Now that we have the reporting tree created and organized, it can be added to the report definition.</span></span>
+26. <span data-ttu-id="4381c-245">[**ウィンドウ**] メニューで、[**損益計算書 - 既定**] を選択し、レポート定義を開きます。</span><span class="sxs-lookup"><span data-stu-id="4381c-245">On the **Window** menu, select **Income Statement – Default** to open the report definition.</span></span>
+27. <span data-ttu-id="4381c-246">[**ツリー タイプ**] ドロップダウン矢印をクリックし、[**レポート ツリー**] を選択します 。</span><span class="sxs-lookup"><span data-stu-id="4381c-246">Click the **Tree type** drop-down arrow and select **Reporting tree**.</span></span>
+28. <span data-ttu-id="4381c-247">ツリーのドロップダウン矢印をクリックし、[**区分別原価部門**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="4381c-247">Click the Tree drop-down arrow and select **Cost Centers by Division**.</span></span>
+29. <span data-ttu-id="4381c-248">基準年を [**2012**] に変更し、変更を [**保存**] し、レポートを [**生成**] します。</span><span class="sxs-lookup"><span data-stu-id="4381c-248">Change the base year to **2012**, **save** the changes and **generate** the report.</span></span> <span data-ttu-id="4381c-249">レポートが完了し開くと、レポートを活用できます。</span><span class="sxs-lookup"><span data-stu-id="4381c-249">After the report completes generating and opens, you can explore the report.</span></span>
+30. <span data-ttu-id="4381c-250">[**レポート ツリー**] ドロップダウンを選択し、レポート単位を表示します。</span><span class="sxs-lookup"><span data-stu-id="4381c-250">Select the **Reporting Tree** drop down to view the reporting units.</span></span> <span data-ttu-id="4381c-251">または、レポート ツリーのすべての単位の残高を表示するために、レポートの行をドリルダウンすることもできます。</span><span class="sxs-lookup"><span data-stu-id="4381c-251">Alternatively, you can drill down on a row of the report to see all the balances for all units of the reporting tree.</span></span>
+31. <span data-ttu-id="4381c-252">[**損益計算書 - 既定**] を閉じます。</span><span class="sxs-lookup"><span data-stu-id="4381c-252">Close **Income Statement – Default**.</span></span>
+32. <span data-ttu-id="4381c-253">[**レポート デザイナー**] を閉じます。</span><span class="sxs-lookup"><span data-stu-id="4381c-253">Close **Report Designer**.</span></span>
 
-## <a name="exercise-4-create-a-consolidated-report-using-an-organization-hierarchy"></a>練習 4: 組織階層を使用する連結レポートの作成
-この練習では、既存の既定のレポートを変更します。 レポート定義で組織階層を追加し、連結損益計算書と貸借対照表を生成します。 更新が完了したら、連結レポートを生成し、レポート ツリーを使用して、レポートを活用します。 財務レポートの一覧から開始します。
+## <a name="exercise-4-create-a-consolidated-report-using-an-organization-hierarchy"></a><span data-ttu-id="4381c-254">練習 4: 組織階層を使用する連結レポートの作成</span><span class="sxs-lookup"><span data-stu-id="4381c-254">Exercise 4: Create a consolidated report using an organization hierarchy</span></span>
+<span data-ttu-id="4381c-255">この練習では、既存の既定のレポートを変更します。</span><span class="sxs-lookup"><span data-stu-id="4381c-255">For this exercise, you will be modifying an existing default report.</span></span> <span data-ttu-id="4381c-256">レポート定義で組織階層を追加し、連結損益計算書と貸借対照表を生成します。</span><span class="sxs-lookup"><span data-stu-id="4381c-256">You will be adding an organization hierarchy in the report definition to produce a Consolidated Income Statement and Balance Sheet.</span></span> <span data-ttu-id="4381c-257">更新が完了したら、連結レポートを生成し、レポート ツリーを使用して、レポートを活用します。</span><span class="sxs-lookup"><span data-stu-id="4381c-257">Once the updates are complete, you’ll generate the consolidated report and explore the report using the reporting tree.</span></span> <span data-ttu-id="4381c-258">財務レポートの一覧から開始します。</span><span class="sxs-lookup"><span data-stu-id="4381c-258">We’ll start from the Financial reports list.</span></span>
 
-1.  総勘定元帳の [照会およびレポート] の下の [**財務レポート**] に移動します。
-2.  [**貸借対照表と損益計算書の並行表示 – 既定**] という名前のレポートの行を選択します。
-3.  [**編集**] を選択します。 [**貸借対照表と損益計算書の並行表示 – 既定**] が、レポート デザイナーで開きます。
-4.  [**ファイル**] &gt; [**名前を付けて保存**] を選択し、[**貸借対照表と損益計算書の並行表示**] レポートの名前を付けます。
-5.  基準年を 2012 に変更します。
-6.  ツリー タイプのドロップダウン矢印をクリックし、[**組織階層**] を選択します。
-7.  ツリーのドロップダウン矢印をクリックし、[**Contoso Holdings**] を選択します。
-8.  変更を保存し、レポートを生成します。 求められた場合は、すべてのレポート単位を選択します。 レポートが完了し開くと、レポートを活用できます。
-9.  [**レポート オプション**] を選択します。
-10. [**分析コード フィルターの追加**] を選択して、[**部門**] を選択します。
-11. フィールドに [**022**] と入力し、 [**OK**] を選択します。
-12. フィルター処理されたレポートを閉じます。
-13. [**レポート ツリー**] ドロップダウンを選択し、レポート単位を表示します。 または、レポート ツリーのすべての単位の残高を表示するために、レポートの行をドリルダウンすることもできます。
-14. [**連結貸借対照表と損益計算書の並行表示**] を閉じます。
-15. [**レポート デザイナー**] を閉じます。
+1.  <span data-ttu-id="4381c-259">総勘定元帳の [照会およびレポート] の下の [**財務レポート**] に移動します。</span><span class="sxs-lookup"><span data-stu-id="4381c-259">Go to **Financial reports** under Inquiries and reports in General ledger.</span></span>
+2.  <span data-ttu-id="4381c-260">[**貸借対照表と損益計算書の並行表示 – 既定**] という名前のレポートの行を選択します。</span><span class="sxs-lookup"><span data-stu-id="4381c-260">Select the row for the report named **Balance Sheet and Income Statement Side by Side – Default**</span></span>
+3.  <span data-ttu-id="4381c-261">[**編集**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="4381c-261">Select **Edit**.</span></span> <span data-ttu-id="4381c-262">[**貸借対照表と損益計算書の並行表示 – 既定**] が、レポート デザイナーで開きます。</span><span class="sxs-lookup"><span data-stu-id="4381c-262">**Balance Sheet and Income Statement Side by Side – Default** will open in the report designer.</span></span>
+4.  <span data-ttu-id="4381c-263">[**ファイル**] &gt; [**名前を付けて保存**] を選択し、[**貸借対照表と損益計算書の並行表示**] レポートの名前を付けます。</span><span class="sxs-lookup"><span data-stu-id="4381c-263">Select **File** &gt; **Save As** and name the report **Consolidated Balance Sheet and Income Statement Side by Side**.</span></span>
+5.  <span data-ttu-id="4381c-264">基準年を 2012 に変更します。</span><span class="sxs-lookup"><span data-stu-id="4381c-264">Change the base year to 2012.</span></span>
+6.  <span data-ttu-id="4381c-265">ツリー タイプのドロップダウン矢印をクリックし、[**組織階層**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="4381c-265">Click the Tree type drop-down arrow, and select **Organization Hierarchies**.</span></span>
+7.  <span data-ttu-id="4381c-266">ツリーのドロップダウン矢印をクリックし、[**Contoso Holdings**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="4381c-266">Click the Tree drop-down arrow and select **Contoso Holdings.**</span></span>
+8.  <span data-ttu-id="4381c-267">変更を保存し、レポートを生成します。</span><span class="sxs-lookup"><span data-stu-id="4381c-267">Save the changes and generate the report.</span></span> <span data-ttu-id="4381c-268">求められた場合は、すべてのレポート単位を選択します。</span><span class="sxs-lookup"><span data-stu-id="4381c-268">If prompted, select all reporting units.</span></span> <span data-ttu-id="4381c-269">レポートが完了し開くと、レポートを活用できます。</span><span class="sxs-lookup"><span data-stu-id="4381c-269">After the report completes generating and opens, you can explore the report.</span></span>
+9.  <span data-ttu-id="4381c-270">[**レポート オプション**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="4381c-270">Select **Report Options**.</span></span>
+10. <span data-ttu-id="4381c-271">[**分析コード フィルターの追加**] を選択して、[**部門**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="4381c-271">Select **Add a dimension filter** and choose **Department**</span></span>
+11. <span data-ttu-id="4381c-272">フィールドに [**022**] と入力し、 [**OK**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="4381c-272">Type **022** into the field and select **OK**.</span></span>
+12. <span data-ttu-id="4381c-273">フィルター処理されたレポートを閉じます。</span><span class="sxs-lookup"><span data-stu-id="4381c-273">Close the filtered report.</span></span>
+13. <span data-ttu-id="4381c-274">[**レポート ツリー**] ドロップダウンを選択し、レポート単位を表示します。</span><span class="sxs-lookup"><span data-stu-id="4381c-274">Select the Reporting Tre**e** drop down to view the reporting units.</span></span> <span data-ttu-id="4381c-275">または、レポート ツリーのすべての単位の残高を表示するために、レポートの行をドリルダウンすることもできます。</span><span class="sxs-lookup"><span data-stu-id="4381c-275">Alternatively, you can drill down on a row of the report to see all the balances for all units of the reporting tree.</span></span>
+14. <span data-ttu-id="4381c-276">[**連結貸借対照表と損益計算書の並行表示**] を閉じます。</span><span class="sxs-lookup"><span data-stu-id="4381c-276">Close **Consolidated Balance Sheet and Income Statement Side by Side**.</span></span>
+15. <span data-ttu-id="4381c-277">[**レポート デザイナー**] を閉じます。</span><span class="sxs-lookup"><span data-stu-id="4381c-277">Close **Report Designer**.</span></span>
 
-## <a name="exercise-5-create-a-sidebyside-departmental-report"></a>練習 5: 並行部門レポートの作成
-この練習では、新しいレポートを作成します。 このレポートは、並行部門の損益計算書です。 既存の行定義を使用しますが、新しいレポート定義および分析コード フィルタを使用する新しい列定義を作成します。 財務レポートの一覧から開始します。
+## <a name="exercise-5-create-a-sidebyside-departmental-report"></a><span data-ttu-id="4381c-278">練習 5: 並行部門レポートの作成</span><span class="sxs-lookup"><span data-stu-id="4381c-278">Exercise 5: Create a sidebyside departmental report</span></span>
+<span data-ttu-id="4381c-279">この練習では、新しいレポートを作成します。</span><span class="sxs-lookup"><span data-stu-id="4381c-279">In this exercise, you’ll be creating a new report.</span></span> <span data-ttu-id="4381c-280">このレポートは、並行部門の損益計算書です。</span><span class="sxs-lookup"><span data-stu-id="4381c-280">The report is a side-by-side departmental income statement.</span></span> <span data-ttu-id="4381c-281">既存の行定義を使用しますが、新しいレポート定義および分析コード フィルタを使用する新しい列定義を作成します。</span><span class="sxs-lookup"><span data-stu-id="4381c-281">You’ll use an existing row definition, but create a new report definition and a new column definition that uses dimension filters.</span></span> <span data-ttu-id="4381c-282">財務レポートの一覧から開始します。</span><span class="sxs-lookup"><span data-stu-id="4381c-282">We’ll start from the Financial reports list.</span></span>
 
-1.  総勘定元帳の [照会およびレポート] の下の [**財務レポート**] に移動します。
-2.  [**新規**] を選択します。 レポート デザイナーは、空白のレポート定義を開きます。 最初のタスクは、列定義の作成です。
-3.  [**ファイル**]、[**新規**]、[**列定義**] の順にクリックして新しい列定義を作成します。
-4.  [**列 A**] で、[**DESC**] を列タイプとして選択します。
-5.  [**列 B**] で、[**FD**] を列タイプとして選択します。
-6.  [**分析コード フィルター**] フィールドをダブルクリックします。
-7.  [**分析コード**] ウィンドウで、[**部門**] 列をダブルクリックします。
-8.  個々または範囲を選択したダイアログで、 [**元**] フィールドの [**省略**] をクリックして、部門の一覧を表示します。
-9.  部門 [**022**]、[**販売とマーケティング**] を選択し、[**OK**] をクリックします。
-10. 部門 23 から 25 でステップ 5 から 8 を繰り返します。
-11. 各 FD 列の [**ヘッダー 2**] 行で、次の部門の説明を入力します:
-    -   列 B – 販売およびマーケティング
-    -   列 C - 工程
-    -   列 D - 財務
-    -   列 E - IT
+1.  <span data-ttu-id="4381c-283">総勘定元帳の [照会およびレポート] の下の [**財務レポート**] に移動します。</span><span class="sxs-lookup"><span data-stu-id="4381c-283">Go to **Financial reports** under Inquiries and reports in General ledger.</span></span>
+2.  <span data-ttu-id="4381c-284">[**新規**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="4381c-284">Select **New**.</span></span> <span data-ttu-id="4381c-285">レポート デザイナーは、空白のレポート定義を開きます。</span><span class="sxs-lookup"><span data-stu-id="4381c-285">Report designer will open with a blank report definition open.</span></span> <span data-ttu-id="4381c-286">最初のタスクは、列定義の作成です。</span><span class="sxs-lookup"><span data-stu-id="4381c-286">Your first task will be creating the column definition.</span></span>
+3.  <span data-ttu-id="4381c-287">[**ファイル**]、[**新規**]、[**列定義**] の順にクリックして新しい列定義を作成します。</span><span class="sxs-lookup"><span data-stu-id="4381c-287">Create a new column definition by clicking **File**, then **New**, and then **Column Definition**.</span></span>
+4.  <span data-ttu-id="4381c-288">[**列 A**] で、[**DESC**] を列タイプとして選択します。</span><span class="sxs-lookup"><span data-stu-id="4381c-288">In **Column A**, select **DESC** for the column type.</span></span>
+5.  <span data-ttu-id="4381c-289">[**列 B**] で、[**FD**] を列タイプとして選択します。</span><span class="sxs-lookup"><span data-stu-id="4381c-289">In **Column B**, select **FD** for the column type.</span></span>
+6.  <span data-ttu-id="4381c-290">[**分析コード フィルター**] フィールドをダブルクリックします。</span><span class="sxs-lookup"><span data-stu-id="4381c-290">Double click in **the Dimension Filter** field.</span></span>
+7.  <span data-ttu-id="4381c-291">[**分析コード**] ウィンドウで、[**部門**] 列をダブルクリックします。</span><span class="sxs-lookup"><span data-stu-id="4381c-291">In the **Dimension** window, double click the **Department** column.</span></span>
+8.  <span data-ttu-id="4381c-292">個々または範囲を選択したダイアログで、 [**元**] フィールドの [**省略**] をクリックして、部門の一覧を表示します。</span><span class="sxs-lookup"><span data-stu-id="4381c-292">In the Individual or range section of the dialog, click the **ellipsis** for the **From** field to display a list of departments.</span></span>
+9.  <span data-ttu-id="4381c-293">部門 [**022**]、[**販売とマーケティング**] を選択し、[**OK**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4381c-293">Select department **022**, **Sales & Marketing** and then click **OK**.</span></span>
+10. <span data-ttu-id="4381c-294">部門 23 から 25 でステップ 5 から 8 を繰り返します。</span><span class="sxs-lookup"><span data-stu-id="4381c-294">Repeat steps 5 to 8 for Departments 23-25.</span></span>
+11. <span data-ttu-id="4381c-295">各 FD 列の [**ヘッダー 2**] 行で、次の部門の説明を入力します:</span><span class="sxs-lookup"><span data-stu-id="4381c-295">On the **Header 2** row for each FD column, type the following department descriptions:</span></span>
+    -   <span data-ttu-id="4381c-296">列 B – 販売およびマーケティング</span><span class="sxs-lookup"><span data-stu-id="4381c-296">Column B – Sales and Marketing</span></span>
+    -   <span data-ttu-id="4381c-297">列 C - 工程</span><span class="sxs-lookup"><span data-stu-id="4381c-297">Column C – Operations</span></span>
+    -   <span data-ttu-id="4381c-298">列 D - 財務</span><span class="sxs-lookup"><span data-stu-id="4381c-298">Column D – Finance</span></span>
+    -   <span data-ttu-id="4381c-299">列 E - IT</span><span class="sxs-lookup"><span data-stu-id="4381c-299">Column E - IT</span></span>
 
-12. 並行部門として列定義を保存します。 既存の行定義を使用するため、レポート定義は、新しく作成された列定義および既存の行定義を使用するように変更できます。
-13. [**ウィンドウ**] メニューで、[**新しいレポート定義**] を選択し、レポート定義を開きます。
-14. 行定義として [**損益計算書 - 既定**] を選択し、列定義として [**並行部門**] を選択します。
-15. [**並行部門損益計算書**] としてレポート定義を保存します。
-16. 基準年を [**2012**] に変更します。
-17. 詳細レベルを **[財務]、[勘定] および [トランザクション]** に変更します 。
-18. 変更を [**保存**] して、**生成します**。 レポートが完了し開くと、レポートを活用できます。
+12. <span data-ttu-id="4381c-300">並行部門として列定義を保存します。</span><span class="sxs-lookup"><span data-stu-id="4381c-300">Save the column definition as Side by Side Departments.</span></span> <span data-ttu-id="4381c-301">既存の行定義を使用するため、レポート定義は、新しく作成された列定義および既存の行定義を使用するように変更できます。</span><span class="sxs-lookup"><span data-stu-id="4381c-301">Since we are using an existing row definition, the report definition can now be modified to have use the newly created column definition and the existing row definition.</span></span>
+13. <span data-ttu-id="4381c-302">[**ウィンドウ**] メニューで、[**新しいレポート定義**] を選択し、レポート定義を開きます。</span><span class="sxs-lookup"><span data-stu-id="4381c-302">On the **Window** menu, select **New Report Definition** to open the report definition.</span></span>
+14. <span data-ttu-id="4381c-303">行定義として [**損益計算書 - 既定**] を選択し、列定義として [**並行部門**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="4381c-303">Select **Income Statement – Default** as the row definition and **Side by Side Departments** as the column definition.</span></span>
+15. <span data-ttu-id="4381c-304">[**並行部門損益計算書**] としてレポート定義を保存します。</span><span class="sxs-lookup"><span data-stu-id="4381c-304">Save the report definition as **Side by Side Departmental Income Statement**.</span></span>
+16. <span data-ttu-id="4381c-305">基準年を [**2012**] に変更します。</span><span class="sxs-lookup"><span data-stu-id="4381c-305">Change the base year to **2012**.</span></span>
+17. <span data-ttu-id="4381c-306">詳細レベルを **[財務]、[勘定] および [トランザクション]** に変更します 。</span><span class="sxs-lookup"><span data-stu-id="4381c-306">Change the detail level to **Financial, Account and Transaction**.</span></span>
+18. <span data-ttu-id="4381c-307">変更を [**保存**] して、**生成します**。</span><span class="sxs-lookup"><span data-stu-id="4381c-307">**Save** your changes and **generate**.</span></span> <span data-ttu-id="4381c-308">レポートが完了し開くと、レポートを活用できます。</span><span class="sxs-lookup"><span data-stu-id="4381c-308">Once the report completes generating and opens, you can explore the report.</span></span>
 
-## <a name="additional-resources"></a>追加リソース
-[財務レポート](/dynamics365/unified-operations/financials/general-ledger/financial-reporting-getting-started) 
+## <a name="additional-resources"></a><span data-ttu-id="4381c-309">追加リソース</span><span class="sxs-lookup"><span data-stu-id="4381c-309">Additional resources</span></span>
+<span data-ttu-id="4381c-310">[財務レポート](/dynamics365/unified-operations/financials/general-ledger/financial-reporting-getting-started) 
 [財務レポートの表示](/dynamics365/unified-operations/financials/general-ledger/view-financial-reports) 
-[Dynamics Financial Reporting ブログ](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+[Dynamics Financial Reporting ブログ](http://blogs.msdn.com/b/dynamics_financial_reporting/)</span><span class="sxs-lookup"><span data-stu-id="4381c-310">[Financial reporting](/dynamics365/unified-operations/financials/general-ledger/financial-reporting-getting-started) 
+[View financial reports](/dynamics365/unified-operations/financials/general-ledger/view-financial-reports) 
+[Dynamics Financial Reporting Blog](http://blogs.msdn.com/b/dynamics_financial_reporting/)</span></span>
 
 
 

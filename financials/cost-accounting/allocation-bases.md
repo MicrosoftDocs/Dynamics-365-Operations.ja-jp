@@ -17,416 +17,416 @@ ms.assetid:
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: YuyuScheller
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
-ms.openlocfilehash: 74a3033ffbdba2efc6c5ecd6c55019898751a146
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: fa1e72ad46142198aad98742d35a46180f3d380c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="allocation-bases"></a>配賦基準 
+# <a name="allocation-bases"></a><span data-ttu-id="f07aa-104">配賦基準</span><span class="sxs-lookup"><span data-stu-id="f07aa-104">Allocation bases</span></span> 
 
 [!include[banner](../includes/banner.md)]
 
-配賦基準は、原価計算で間接費を配賦する基盤です。 配賦基準は、たとえば使用された機械の時間、消費されたキロワット時間 (kWh)、または占有された平方フィートなどの数量の場合があります。 配賦基準は、生産される在庫に間接費を割り当てる場合に主に使用されます。 たとえば IT 部門は、各部門で使用しているコンピューターの数に応じて経費を割り当てます。
+<span data-ttu-id="f07aa-105">配賦基準は、原価計算で間接費を配賦する基盤です。</span><span class="sxs-lookup"><span data-stu-id="f07aa-105">An allocation base is the basis on which Cost accounting allocates overhead costs.</span></span> <span data-ttu-id="f07aa-106">配賦基準は、たとえば使用された機械の時間、消費されたキロワット時間 (kWh)、または占有された平方フィートなどの数量の場合があります。</span><span class="sxs-lookup"><span data-stu-id="f07aa-106">An allocation base can be a quantity, such as machine hours that are used, kilowatt hours (kWh) that are consumed, or square footage that is occupied.</span></span> <span data-ttu-id="f07aa-107">配賦基準は、生産される在庫に間接費を割り当てる場合に主に使用されます。</span><span class="sxs-lookup"><span data-stu-id="f07aa-107">Allocation bases are mostly used to assign overhead costs to inventory that is produced.</span></span> <span data-ttu-id="f07aa-108">たとえば IT 部門は、各部門で使用しているコンピューターの数に応じて経費を割り当てます。</span><span class="sxs-lookup"><span data-stu-id="f07aa-108">For example, an IT department allocates its expenses according to the number of computers that each department uses.</span></span>
 
-原価計算の配賦基準には 3 つのタイプがあります。
+<span data-ttu-id="f07aa-109">原価計算の配賦基準には 3 つのタイプがあります。</span><span class="sxs-lookup"><span data-stu-id="f07aa-109">There are three types of allocation bases in Cost accounting:</span></span>
 
-- 事前に定義された分析コード メンバー配賦基準
-- 階層配賦基準
-- フォーミュラの配賦基準
+- <span data-ttu-id="f07aa-110">事前に定義された分析コード メンバー配賦基準</span><span class="sxs-lookup"><span data-stu-id="f07aa-110">Predefined dimension member allocation bases</span></span>
+- <span data-ttu-id="f07aa-111">階層配賦基準</span><span class="sxs-lookup"><span data-stu-id="f07aa-111">Hierarchy allocation bases</span></span>
+- <span data-ttu-id="f07aa-112">フォーミュラの配賦基準</span><span class="sxs-lookup"><span data-stu-id="f07aa-112">Formula allocation bases</span></span>
 
-## <a name="predefined-dimension-member-allocation-bases"></a>事前に定義された分析コード メンバー配賦基準
+## <a name="predefined-dimension-member-allocation-bases"></a><span data-ttu-id="f07aa-113">事前に定義された分析コード メンバー配賦基準</span><span class="sxs-lookup"><span data-stu-id="f07aa-113">Predefined dimension member allocation bases</span></span>
 
-事前に定義された分析コード メンバー配賦基準は、次のどれか 1 つのタイプの分析コード メンバーが作成された場合、自動的に作成されます。
+<span data-ttu-id="f07aa-114">事前に定義された分析コード メンバー配賦基準は、次のどれか 1 つのタイプの分析コード メンバーが作成された場合、自動的に作成されます。</span><span class="sxs-lookup"><span data-stu-id="f07aa-114">The predefined dimension member allocation bases are created automatically when a dimension member of one the following types is created:</span></span>
 
-- 統計分析コード メンバー
-- 原価要素分析コード メンバー
+- <span data-ttu-id="f07aa-115">統計分析コード メンバー</span><span class="sxs-lookup"><span data-stu-id="f07aa-115">Statistical dimension members</span></span>
+- <span data-ttu-id="f07aa-116">原価要素分析コード メンバー</span><span class="sxs-lookup"><span data-stu-id="f07aa-116">Cost element dimension members</span></span>
 
 > [!NOTE]
-> 原価要素分析コード メンバーに基づく事前に定義された分析コード メンバー配賦基準は、総勘定元帳や一般予算などのデータ ソース プロバイダーからの値のみを考慮します。
+> <span data-ttu-id="f07aa-117">原価要素分析コード メンバーに基づく事前に定義された分析コード メンバー配賦基準は、総勘定元帳や一般予算などのデータ ソース プロバイダーからの値のみを考慮します。</span><span class="sxs-lookup"><span data-stu-id="f07aa-117">The predefined dimension member allocation bases that are based on a cost element dimension member consider the values only from the data source provider, such as the general ledger or budget.</span></span>
 
-### <a name="example-1-use-a-cost-element-dimension-member-as-the-allocation-base"></a>例 1: 配賦基準として原価要素分析コード メンバーを使用
-この例では、原価要素10002 (従業員の保険) を原価要素10001 (給与) に記録されている残高に配賦する原価配賦ルールを作成する方法を示します。 配賦ルールは、給与全体に対する各部門の給与の比率に基づいて定義されます。 (レビュー必要)
+### <a name="example-1-use-a-cost-element-dimension-member-as-the-allocation-base"></a><span data-ttu-id="f07aa-118">例 1: 配賦基準として原価要素分析コード メンバーを使用</span><span class="sxs-lookup"><span data-stu-id="f07aa-118">Example 1: Use a cost element dimension member as the allocation base</span></span>
+<span data-ttu-id="f07aa-119">この例では、原価要素10002 (従業員の保険) を原価要素10001 (給与) に記録されている残高に配賦する原価配賦ルールを作成する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="f07aa-119">This example shows how to create a cost allocation rule to allocate cost element 10002 (Employee insurance) to the balance that is recorded on cost element 10001 (Salaries).</span></span> <span data-ttu-id="f07aa-120">配賦ルールは、給与全体に対する各部門の給与の比率に基づいて定義されます。</span><span class="sxs-lookup"><span data-stu-id="f07aa-120">The allocation rule is defined based on the ratio of each department's salaries to total salaries.</span></span> <span data-ttu-id="f07aa-121">(レビュー必要)</span><span class="sxs-lookup"><span data-stu-id="f07aa-121">(Review needed!)</span></span>
 
-総勘定元帳で、勘定科目表は次のように定義されています。
+<span data-ttu-id="f07aa-122">総勘定元帳で、勘定科目表は次のように定義されています。</span><span class="sxs-lookup"><span data-stu-id="f07aa-122">In the general ledger, the chart of account is defined as follows.</span></span>
 
-| 勘定科目表 | 主勘定 | 説明        | 主勘定タイプ |
+| <span data-ttu-id="f07aa-123">勘定科目表</span><span class="sxs-lookup"><span data-stu-id="f07aa-123">Chart of account</span></span> | <span data-ttu-id="f07aa-124">主勘定</span><span class="sxs-lookup"><span data-stu-id="f07aa-124">Main account</span></span> | <span data-ttu-id="f07aa-125">説明</span><span class="sxs-lookup"><span data-stu-id="f07aa-125">Description</span></span>        | <span data-ttu-id="f07aa-126">主勘定タイプ</span><span class="sxs-lookup"><span data-stu-id="f07aa-126">Main account type</span></span> |
 |------------------|--------------|--------------------|-------------------|
-| 共有           | 10001        | 給与           | 支出           |
-| 共有           | 10002        | 従業員の保険 | 支出           |
+| <span data-ttu-id="f07aa-127">共有</span><span class="sxs-lookup"><span data-stu-id="f07aa-127">Shared</span></span>           | <span data-ttu-id="f07aa-128">10001</span><span class="sxs-lookup"><span data-stu-id="f07aa-128">10001</span></span>        | <span data-ttu-id="f07aa-129">給与</span><span class="sxs-lookup"><span data-stu-id="f07aa-129">Salaries</span></span>           | <span data-ttu-id="f07aa-130">支出</span><span class="sxs-lookup"><span data-stu-id="f07aa-130">Expense</span></span>           |
+| <span data-ttu-id="f07aa-131">共有</span><span class="sxs-lookup"><span data-stu-id="f07aa-131">Shared</span></span>           | <span data-ttu-id="f07aa-132">10002</span><span class="sxs-lookup"><span data-stu-id="f07aa-132">10002</span></span>        | <span data-ttu-id="f07aa-133">従業員の保険</span><span class="sxs-lookup"><span data-stu-id="f07aa-133">Employee insurance</span></span> | <span data-ttu-id="f07aa-134">支出</span><span class="sxs-lookup"><span data-stu-id="f07aa-134">Expense</span></span>           |
 
-原価要素分析コードを定義し、データ コネクタをコンフィギュレーションします。 データがインポートされると、次のエントリが原価計算に作成されます。
+<span data-ttu-id="f07aa-135">原価要素分析コードを定義し、データ コネクタをコンフィギュレーションします。</span><span class="sxs-lookup"><span data-stu-id="f07aa-135">Define a cost element dimension, and configure the data connector.</span></span> <span data-ttu-id="f07aa-136">データがインポートされると、次のエントリが原価計算に作成されます。</span><span class="sxs-lookup"><span data-stu-id="f07aa-136">After the data is imported, the following entries are created in Cost accounting.</span></span>
 
-**原価要素分析コード メンバー**
+<span data-ttu-id="f07aa-137">**原価要素分析コード メンバー**</span><span class="sxs-lookup"><span data-stu-id="f07aa-137">**Cost element dimension members**</span></span>
 
-| 原価要素分析コード名 | 原価要素 |  説明       | 種類    |
+| <span data-ttu-id="f07aa-138">原価要素分析コード名</span><span class="sxs-lookup"><span data-stu-id="f07aa-138">Cost element dimension name</span></span> | <span data-ttu-id="f07aa-139">原価要素</span><span class="sxs-lookup"><span data-stu-id="f07aa-139">Cost element</span></span> |  <span data-ttu-id="f07aa-140">説明</span><span class="sxs-lookup"><span data-stu-id="f07aa-140">Description</span></span>       | <span data-ttu-id="f07aa-141">種類</span><span class="sxs-lookup"><span data-stu-id="f07aa-141">Type</span></span>    |
 |-----------------------------|--------------|--------------------|---------|
-| 原価要素               | 10001        | 給与           | 主要 |
-| 原価要素               | 10002        | 従業員の保険 | 主要 |
+| <span data-ttu-id="f07aa-142">原価要素</span><span class="sxs-lookup"><span data-stu-id="f07aa-142">Cost elements</span></span>               | <span data-ttu-id="f07aa-143">10001</span><span class="sxs-lookup"><span data-stu-id="f07aa-143">10001</span></span>        | <span data-ttu-id="f07aa-144">給与</span><span class="sxs-lookup"><span data-stu-id="f07aa-144">Salaries</span></span>           | <span data-ttu-id="f07aa-145">主要</span><span class="sxs-lookup"><span data-stu-id="f07aa-145">Primary</span></span> |
+| <span data-ttu-id="f07aa-146">原価要素</span><span class="sxs-lookup"><span data-stu-id="f07aa-146">Cost elements</span></span>               | <span data-ttu-id="f07aa-147">10002</span><span class="sxs-lookup"><span data-stu-id="f07aa-147">10002</span></span>        | <span data-ttu-id="f07aa-148">従業員の保険</span><span class="sxs-lookup"><span data-stu-id="f07aa-148">Employee insurance</span></span> | <span data-ttu-id="f07aa-149">主要</span><span class="sxs-lookup"><span data-stu-id="f07aa-149">Primary</span></span> |
 
-**事前に定義された分析コード メンバー配賦基準** 
+<span data-ttu-id="f07aa-150">**事前に定義された分析コード メンバー配賦基準**</span><span class="sxs-lookup"><span data-stu-id="f07aa-150">**Predefined dimension member allocation bases**</span></span> 
 
-| 氏名  | 説明        | 原価要素分析コード |
+| <span data-ttu-id="f07aa-151">氏名</span><span class="sxs-lookup"><span data-stu-id="f07aa-151">Name</span></span>  | <span data-ttu-id="f07aa-152">説明</span><span class="sxs-lookup"><span data-stu-id="f07aa-152">Description</span></span>        | <span data-ttu-id="f07aa-153">原価要素分析コード</span><span class="sxs-lookup"><span data-stu-id="f07aa-153">Cost element dimension</span></span> |
 |-------|--------------------|------------------------|
-| 10001 | 給与           | 原価要素          |
-| 10002 | 従業員の保険 | 原価要素          |
+| <span data-ttu-id="f07aa-154">10001</span><span class="sxs-lookup"><span data-stu-id="f07aa-154">10001</span></span> | <span data-ttu-id="f07aa-155">給与</span><span class="sxs-lookup"><span data-stu-id="f07aa-155">Salaries</span></span>           | <span data-ttu-id="f07aa-156">原価要素</span><span class="sxs-lookup"><span data-stu-id="f07aa-156">Cost elements</span></span>          |
+| <span data-ttu-id="f07aa-157">10002</span><span class="sxs-lookup"><span data-stu-id="f07aa-157">10002</span></span> | <span data-ttu-id="f07aa-158">従業員の保険</span><span class="sxs-lookup"><span data-stu-id="f07aa-158">Employee insurance</span></span> | <span data-ttu-id="f07aa-159">原価要素</span><span class="sxs-lookup"><span data-stu-id="f07aa-159">Cost elements</span></span>          |
 
-総勘定元帳には次のエントリが転記されています。
+<span data-ttu-id="f07aa-160">総勘定元帳には次のエントリが転記されています。</span><span class="sxs-lookup"><span data-stu-id="f07aa-160">In the general ledger, the following entries have been posted:</span></span>
 
-- 給与主勘定を示すエントリは給与システムから来ていて、原価部門に転記されています。
-- 従業員の保険の費用は、既定の原価部門に手動で転記されます。
+- <span data-ttu-id="f07aa-161">給与主勘定を示すエントリは給与システムから来ていて、原価部門に転記されています。</span><span class="sxs-lookup"><span data-stu-id="f07aa-161">The entries that show the Salaries main account come from the Payroll system and are posted to cost centers.</span></span>
+- <span data-ttu-id="f07aa-162">従業員の保険の費用は、既定の原価部門に手動で転記されます。</span><span class="sxs-lookup"><span data-stu-id="f07aa-162">The expense for employee insurance is manually posted to a default cost center.</span></span>
 
-| 会計日 | コスト センター |  説明        | 主勘定 |  説明       | 会計通貨での金額 |
+| <span data-ttu-id="f07aa-163">会計日</span><span class="sxs-lookup"><span data-stu-id="f07aa-163">Accounting date</span></span> | <span data-ttu-id="f07aa-164">コスト センター</span><span class="sxs-lookup"><span data-stu-id="f07aa-164">Cost center</span></span> |  <span data-ttu-id="f07aa-165">説明</span><span class="sxs-lookup"><span data-stu-id="f07aa-165">Description</span></span>        | <span data-ttu-id="f07aa-166">主勘定</span><span class="sxs-lookup"><span data-stu-id="f07aa-166">Main account</span></span> |  <span data-ttu-id="f07aa-167">説明</span><span class="sxs-lookup"><span data-stu-id="f07aa-167">Description</span></span>       | <span data-ttu-id="f07aa-168">会計通貨での金額</span><span class="sxs-lookup"><span data-stu-id="f07aa-168">Amount in accounting currency</span></span> |
 |-----------------|-------------|---------------------|--------------|--------------------|-------------------------------|
-| 2017 年 1 月 3 日      | CC001       | HR                  | 10001        | 給与           | 2,000.00                      |
-| 2017 年 1 月 3 日      | CC002       | FI                  | 10001        | 給与           | 5,000.00                      |
-| 2017 年 1 月 3 日      | CC003       | IT                  | 10001        | 給与           | 3,000.00                      |
-| 2017 年 1 月 3 日      | CC099       | 既定のコスト センター | 10002        | 従業員の保険 | 1,000.00                      |
+| <span data-ttu-id="f07aa-169">2017 年 1 月 3 日</span><span class="sxs-lookup"><span data-stu-id="f07aa-169">03-01-2017</span></span>      | <span data-ttu-id="f07aa-170">CC001</span><span class="sxs-lookup"><span data-stu-id="f07aa-170">CC001</span></span>       | <span data-ttu-id="f07aa-171">HR</span><span class="sxs-lookup"><span data-stu-id="f07aa-171">HR</span></span>                  | <span data-ttu-id="f07aa-172">10001</span><span class="sxs-lookup"><span data-stu-id="f07aa-172">10001</span></span>        | <span data-ttu-id="f07aa-173">給与</span><span class="sxs-lookup"><span data-stu-id="f07aa-173">Salaries</span></span>           | <span data-ttu-id="f07aa-174">2,000.00</span><span class="sxs-lookup"><span data-stu-id="f07aa-174">2,000.00</span></span>                      |
+| <span data-ttu-id="f07aa-175">2017 年 1 月 3 日</span><span class="sxs-lookup"><span data-stu-id="f07aa-175">03-01-2017</span></span>      | <span data-ttu-id="f07aa-176">CC002</span><span class="sxs-lookup"><span data-stu-id="f07aa-176">CC002</span></span>       | <span data-ttu-id="f07aa-177">FI</span><span class="sxs-lookup"><span data-stu-id="f07aa-177">FI</span></span>                  | <span data-ttu-id="f07aa-178">10001</span><span class="sxs-lookup"><span data-stu-id="f07aa-178">10001</span></span>        | <span data-ttu-id="f07aa-179">給与</span><span class="sxs-lookup"><span data-stu-id="f07aa-179">Salaries</span></span>           | <span data-ttu-id="f07aa-180">5,000.00</span><span class="sxs-lookup"><span data-stu-id="f07aa-180">5,000.00</span></span>                      |
+| <span data-ttu-id="f07aa-181">2017 年 1 月 3 日</span><span class="sxs-lookup"><span data-stu-id="f07aa-181">03-01-2017</span></span>      | <span data-ttu-id="f07aa-182">CC003</span><span class="sxs-lookup"><span data-stu-id="f07aa-182">CC003</span></span>       | <span data-ttu-id="f07aa-183">IT</span><span class="sxs-lookup"><span data-stu-id="f07aa-183">IT</span></span>                  | <span data-ttu-id="f07aa-184">10001</span><span class="sxs-lookup"><span data-stu-id="f07aa-184">10001</span></span>        | <span data-ttu-id="f07aa-185">給与</span><span class="sxs-lookup"><span data-stu-id="f07aa-185">Salaries</span></span>           | <span data-ttu-id="f07aa-186">3,000.00</span><span class="sxs-lookup"><span data-stu-id="f07aa-186">3,000.00</span></span>                      |
+| <span data-ttu-id="f07aa-187">2017 年 1 月 3 日</span><span class="sxs-lookup"><span data-stu-id="f07aa-187">03-01-2017</span></span>      | <span data-ttu-id="f07aa-188">CC099</span><span class="sxs-lookup"><span data-stu-id="f07aa-188">CC099</span></span>       | <span data-ttu-id="f07aa-189">既定のコスト センター</span><span class="sxs-lookup"><span data-stu-id="f07aa-189">Default cost center</span></span> | <span data-ttu-id="f07aa-190">10002</span><span class="sxs-lookup"><span data-stu-id="f07aa-190">10002</span></span>        | <span data-ttu-id="f07aa-191">従業員の保険</span><span class="sxs-lookup"><span data-stu-id="f07aa-191">Employee insurance</span></span> | <span data-ttu-id="f07aa-192">1,000.00</span><span class="sxs-lookup"><span data-stu-id="f07aa-192">1,000.00</span></span>                      |
 
-一般会計ソース データが処理されると、次のエントリが原価計算に作成されます。
+<span data-ttu-id="f07aa-193">一般会計ソース データが処理されると、次のエントリが原価計算に作成されます。</span><span class="sxs-lookup"><span data-stu-id="f07aa-193">After the general ledger source data is processed, the following entries are created in Cost accounting.</span></span>
 
-**原価エントリ**
+<span data-ttu-id="f07aa-194">**原価エントリ**</span><span class="sxs-lookup"><span data-stu-id="f07aa-194">**Cost entries**</span></span>
 
-| 原価オブジェクト |  説明        | 原価要素  |  説明       | 原価動作   |金額|会計日|
+| <span data-ttu-id="f07aa-195">原価オブジェクト</span><span class="sxs-lookup"><span data-stu-id="f07aa-195">Cost object</span></span> |  <span data-ttu-id="f07aa-196">説明</span><span class="sxs-lookup"><span data-stu-id="f07aa-196">Description</span></span>        | <span data-ttu-id="f07aa-197">原価要素</span><span class="sxs-lookup"><span data-stu-id="f07aa-197">Cost element</span></span>  |  <span data-ttu-id="f07aa-198">説明</span><span class="sxs-lookup"><span data-stu-id="f07aa-198">Description</span></span>       | <span data-ttu-id="f07aa-199">原価動作</span><span class="sxs-lookup"><span data-stu-id="f07aa-199">Cost behavior</span></span>   |<span data-ttu-id="f07aa-200">金額</span><span class="sxs-lookup"><span data-stu-id="f07aa-200">Amount</span></span>|<span data-ttu-id="f07aa-201">会計日</span><span class="sxs-lookup"><span data-stu-id="f07aa-201">Accounting date</span></span>|
 |-------------|---------------------|---------------|--------------------|-----------------|------|---------------|
-| CC001       | HR                  | 10001         | 給与           | 未分類    |2,000.00|  2017 年 1 月 3 日    |
-| CC002       | FI                  | 10001         | 給与           | 未分類    |5,000.00|     2017 年 1 月 3 日         |
-| CC003       | IT                  | 10001         | 給与           | 未分類    |3,000.00|      2017 年 1 月 3 日        |
-| CC099       | 既定のコスト センター | 10002         | 従業員の保険 | 未分類    |1,000.00|      2017 年 1 月 3 日       |
+| <span data-ttu-id="f07aa-202">CC001</span><span class="sxs-lookup"><span data-stu-id="f07aa-202">CC001</span></span>       | <span data-ttu-id="f07aa-203">HR</span><span class="sxs-lookup"><span data-stu-id="f07aa-203">HR</span></span>                  | <span data-ttu-id="f07aa-204">10001</span><span class="sxs-lookup"><span data-stu-id="f07aa-204">10001</span></span>         | <span data-ttu-id="f07aa-205">給与</span><span class="sxs-lookup"><span data-stu-id="f07aa-205">Salaries</span></span>           | <span data-ttu-id="f07aa-206">未分類</span><span class="sxs-lookup"><span data-stu-id="f07aa-206">Unclassified</span></span>    |<span data-ttu-id="f07aa-207">2,000.00</span><span class="sxs-lookup"><span data-stu-id="f07aa-207">2,000.00</span></span>|  <span data-ttu-id="f07aa-208">2017 年 1 月 3 日</span><span class="sxs-lookup"><span data-stu-id="f07aa-208">03-01-2017</span></span>    |
+| <span data-ttu-id="f07aa-209">CC002</span><span class="sxs-lookup"><span data-stu-id="f07aa-209">CC002</span></span>       | <span data-ttu-id="f07aa-210">FI</span><span class="sxs-lookup"><span data-stu-id="f07aa-210">FI</span></span>                  | <span data-ttu-id="f07aa-211">10001</span><span class="sxs-lookup"><span data-stu-id="f07aa-211">10001</span></span>         | <span data-ttu-id="f07aa-212">給与</span><span class="sxs-lookup"><span data-stu-id="f07aa-212">Salaries</span></span>           | <span data-ttu-id="f07aa-213">未分類</span><span class="sxs-lookup"><span data-stu-id="f07aa-213">Unclassified</span></span>    |<span data-ttu-id="f07aa-214">5,000.00</span><span class="sxs-lookup"><span data-stu-id="f07aa-214">5,000.00</span></span>|     <span data-ttu-id="f07aa-215">2017 年 1 月 3 日</span><span class="sxs-lookup"><span data-stu-id="f07aa-215">03-01-2017</span></span>         |
+| <span data-ttu-id="f07aa-216">CC003</span><span class="sxs-lookup"><span data-stu-id="f07aa-216">CC003</span></span>       | <span data-ttu-id="f07aa-217">IT</span><span class="sxs-lookup"><span data-stu-id="f07aa-217">IT</span></span>                  | <span data-ttu-id="f07aa-218">10001</span><span class="sxs-lookup"><span data-stu-id="f07aa-218">10001</span></span>         | <span data-ttu-id="f07aa-219">給与</span><span class="sxs-lookup"><span data-stu-id="f07aa-219">Salaries</span></span>           | <span data-ttu-id="f07aa-220">未分類</span><span class="sxs-lookup"><span data-stu-id="f07aa-220">Unclassified</span></span>    |<span data-ttu-id="f07aa-221">3,000.00</span><span class="sxs-lookup"><span data-stu-id="f07aa-221">3,000.00</span></span>|      <span data-ttu-id="f07aa-222">2017 年 1 月 3 日</span><span class="sxs-lookup"><span data-stu-id="f07aa-222">03-01-2017</span></span>        |
+| <span data-ttu-id="f07aa-223">CC099</span><span class="sxs-lookup"><span data-stu-id="f07aa-223">CC099</span></span>       | <span data-ttu-id="f07aa-224">既定のコスト センター</span><span class="sxs-lookup"><span data-stu-id="f07aa-224">Default cost center</span></span> | <span data-ttu-id="f07aa-225">10002</span><span class="sxs-lookup"><span data-stu-id="f07aa-225">10002</span></span>         | <span data-ttu-id="f07aa-226">従業員の保険</span><span class="sxs-lookup"><span data-stu-id="f07aa-226">Employee insurance</span></span> | <span data-ttu-id="f07aa-227">未分類</span><span class="sxs-lookup"><span data-stu-id="f07aa-227">Unclassified</span></span>    |<span data-ttu-id="f07aa-228">1,000.00</span><span class="sxs-lookup"><span data-stu-id="f07aa-228">1,000.00</span></span>|      <span data-ttu-id="f07aa-229">2017 年 1 月 3 日</span><span class="sxs-lookup"><span data-stu-id="f07aa-229">03-01-2017</span></span>       |
 
-この単純化された例では、原価要素10002 (従業員の保険) を原価要素10001 (給与) に記録されている残高に相対して配賦する原価配賦ルールが作成されています。
+<span data-ttu-id="f07aa-230">この単純化された例では、原価要素10002 (従業員の保険) を原価要素10001 (給与) に記録されている残高に相対して配賦する原価配賦ルールが作成されています。</span><span class="sxs-lookup"><span data-stu-id="f07aa-230">In this simplified example, a cost allocation rule is created to allocate cost element 10002 (Employee insurance) relative to the balance that is recorded on cost element 10001 (Salaries).</span></span>
 
-**原価配分ルール**
+<span data-ttu-id="f07aa-231">**原価配分ルール**</span><span class="sxs-lookup"><span data-stu-id="f07aa-231">**Cost distribution rule**</span></span>
 
-| 原価オブジェクト分析コード階層ノード | 原価要素分析コード階層ノード | 原価動作 | 配賦基準 |
+| <span data-ttu-id="f07aa-232">原価オブジェクト分析コード階層ノード</span><span class="sxs-lookup"><span data-stu-id="f07aa-232">Cost object dimension hierarchy node</span></span> | <span data-ttu-id="f07aa-233">原価要素分析コード階層ノード</span><span class="sxs-lookup"><span data-stu-id="f07aa-233">Cost element dimension hierarchy node</span></span> | <span data-ttu-id="f07aa-234">原価動作</span><span class="sxs-lookup"><span data-stu-id="f07aa-234">Cost behavior</span></span> | <span data-ttu-id="f07aa-235">配賦基準</span><span class="sxs-lookup"><span data-stu-id="f07aa-235">Allocation base</span></span> |
 |--------------------------------------|---------------------------------------|---------------|-----------------|
-| CC099                                | 10002                                 | 未分類  | 10001           |
+| <span data-ttu-id="f07aa-236">CC099</span><span class="sxs-lookup"><span data-stu-id="f07aa-236">CC099</span></span>                                | <span data-ttu-id="f07aa-237">10002</span><span class="sxs-lookup"><span data-stu-id="f07aa-237">10002</span></span>                                 | <span data-ttu-id="f07aa-238">未分類</span><span class="sxs-lookup"><span data-stu-id="f07aa-238">Unclassified</span></span>  | <span data-ttu-id="f07aa-239">10001</span><span class="sxs-lookup"><span data-stu-id="f07aa-239">10001</span></span>           |
 
-**間接費計算を実行する**
+<span data-ttu-id="f07aa-240">**間接費計算を実行する**</span><span class="sxs-lookup"><span data-stu-id="f07aa-240">**Perform overhead calculation**</span></span>
 
-配賦基準として原価要素10001 (給与) が適用された後、間接費の計算結果は次のとおりです。
+<span data-ttu-id="f07aa-241">配賦基準として原価要素10001 (給与) が適用された後、間接費の計算結果は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="f07aa-241">After cost element 10001 (Salaries) is applied as the allocation base, the result of the overhead calculation is as follows.</span></span>
 
-| 原価オブジェクト | 説明 | 大きさ |   配賦係数         | 金額 |
+| <span data-ttu-id="f07aa-242">原価オブジェクト</span><span class="sxs-lookup"><span data-stu-id="f07aa-242">Cost object</span></span> | <span data-ttu-id="f07aa-243">説明</span><span class="sxs-lookup"><span data-stu-id="f07aa-243">Description</span></span> | <span data-ttu-id="f07aa-244">大きさ</span><span class="sxs-lookup"><span data-stu-id="f07aa-244">Magnitude</span></span> |   <span data-ttu-id="f07aa-245">配賦係数</span><span class="sxs-lookup"><span data-stu-id="f07aa-245">Allocation factor</span></span>         | <span data-ttu-id="f07aa-246">金額</span><span class="sxs-lookup"><span data-stu-id="f07aa-246">Amount</span></span> |
 |-------------|-------------|-----------|-----------------------------|--------|
-| CC001       | HR          | 2,000     | (2,000 ÷ 10,000) × 1,000.00 | 200.00 |
-| CC002       | FI          | 5,000     | (5,000 ÷ 10,000) × 1,000.00 | 500.00 |
-| CC003       | IT          | 3,000     | (3,000 ÷ 10,000) × 1,000.00 | 300.00 |
+| <span data-ttu-id="f07aa-247">CC001</span><span class="sxs-lookup"><span data-stu-id="f07aa-247">CC001</span></span>       | <span data-ttu-id="f07aa-248">HR</span><span class="sxs-lookup"><span data-stu-id="f07aa-248">HR</span></span>          | <span data-ttu-id="f07aa-249">2,000</span><span class="sxs-lookup"><span data-stu-id="f07aa-249">2,000</span></span>     | <span data-ttu-id="f07aa-250">(2,000 ÷ 10,000) × 1,000.00</span><span class="sxs-lookup"><span data-stu-id="f07aa-250">(2,000 ÷ 10,000) × 1,000.00</span></span> | <span data-ttu-id="f07aa-251">200.00</span><span class="sxs-lookup"><span data-stu-id="f07aa-251">200.00</span></span> |
+| <span data-ttu-id="f07aa-252">CC002</span><span class="sxs-lookup"><span data-stu-id="f07aa-252">CC002</span></span>       | <span data-ttu-id="f07aa-253">FI</span><span class="sxs-lookup"><span data-stu-id="f07aa-253">FI</span></span>          | <span data-ttu-id="f07aa-254">5,000</span><span class="sxs-lookup"><span data-stu-id="f07aa-254">5,000</span></span>     | <span data-ttu-id="f07aa-255">(5,000 ÷ 10,000) × 1,000.00</span><span class="sxs-lookup"><span data-stu-id="f07aa-255">(5,000 ÷ 10,000) × 1,000.00</span></span> | <span data-ttu-id="f07aa-256">500.00</span><span class="sxs-lookup"><span data-stu-id="f07aa-256">500.00</span></span> |
+| <span data-ttu-id="f07aa-257">CC003</span><span class="sxs-lookup"><span data-stu-id="f07aa-257">CC003</span></span>       | <span data-ttu-id="f07aa-258">IT</span><span class="sxs-lookup"><span data-stu-id="f07aa-258">IT</span></span>          | <span data-ttu-id="f07aa-259">3,000</span><span class="sxs-lookup"><span data-stu-id="f07aa-259">3,000</span></span>     | <span data-ttu-id="f07aa-260">(3,000 ÷ 10,000) × 1,000.00</span><span class="sxs-lookup"><span data-stu-id="f07aa-260">(3,000 ÷ 10,000) × 1,000.00</span></span> | <span data-ttu-id="f07aa-261">300.00</span><span class="sxs-lookup"><span data-stu-id="f07aa-261">300.00</span></span> |
 
-**仕訳帳**
+<span data-ttu-id="f07aa-262">**仕訳帳**</span><span class="sxs-lookup"><span data-stu-id="f07aa-262">**Journal**</span></span>
 
-| 仕訳帳 | 仕訳帳タイプ                          | 会計カレンダー期間 | 年 | 期間   | バージョン                                                                 |
+| <span data-ttu-id="f07aa-263">仕訳帳</span><span class="sxs-lookup"><span data-stu-id="f07aa-263">Journal</span></span> | <span data-ttu-id="f07aa-264">仕訳帳タイプ</span><span class="sxs-lookup"><span data-stu-id="f07aa-264">Journal type</span></span>                          | <span data-ttu-id="f07aa-265">会計カレンダー期間</span><span class="sxs-lookup"><span data-stu-id="f07aa-265">Fiscal calendar period</span></span> | <span data-ttu-id="f07aa-266">年</span><span class="sxs-lookup"><span data-stu-id="f07aa-266">Year</span></span> | <span data-ttu-id="f07aa-267">期間</span><span class="sxs-lookup"><span data-stu-id="f07aa-267">Period</span></span>   | <span data-ttu-id="f07aa-268">バージョン</span><span class="sxs-lookup"><span data-stu-id="f07aa-268">Version</span></span>                                                                 |
 |---------|---------------------------------------|------------------------|------|----------|-------------------------------------------------------------------------|
-| 00001   | コスト配分計算仕訳 | 会計年度                 | 2017 | 期間 1 | 間接費計算 / 01-02-2017 午後 11:51:00 / 元帳 / 2017 / 期間 1 |
+| <span data-ttu-id="f07aa-269">00001</span><span class="sxs-lookup"><span data-stu-id="f07aa-269">00001</span></span>   | <span data-ttu-id="f07aa-270">コスト配分計算仕訳</span><span class="sxs-lookup"><span data-stu-id="f07aa-270">Cost distribution calculation journal</span></span> | <span data-ttu-id="f07aa-271">会計年度</span><span class="sxs-lookup"><span data-stu-id="f07aa-271">Fiscal</span></span>                 | <span data-ttu-id="f07aa-272">2017</span><span class="sxs-lookup"><span data-stu-id="f07aa-272">2017</span></span> | <span data-ttu-id="f07aa-273">期間 1</span><span class="sxs-lookup"><span data-stu-id="f07aa-273">Period 1</span></span> | <span data-ttu-id="f07aa-274">間接費計算 / 01-02-2017 午後 11:51:00 / 元帳 / 2017 / 期間 1</span><span class="sxs-lookup"><span data-stu-id="f07aa-274">Overhead calculation / 01-02-2017 11:51:00 PM / Ledger /2017 / Period 1</span></span> |
 
-**原価オブジェクト残高の仕訳入力**
+<span data-ttu-id="f07aa-275">**原価オブジェクト残高の仕訳入力**</span><span class="sxs-lookup"><span data-stu-id="f07aa-275">**Cost object balance journal entries**</span></span>
 
-| 会計日 | 原価オブジェクト | 説明         | 原価要素 | 説明        | 原価動作 |  金額  |
+| <span data-ttu-id="f07aa-276">会計日</span><span class="sxs-lookup"><span data-stu-id="f07aa-276">Accounting date</span></span> | <span data-ttu-id="f07aa-277">原価オブジェクト</span><span class="sxs-lookup"><span data-stu-id="f07aa-277">Cost object</span></span> | <span data-ttu-id="f07aa-278">説明</span><span class="sxs-lookup"><span data-stu-id="f07aa-278">Description</span></span>         | <span data-ttu-id="f07aa-279">原価要素</span><span class="sxs-lookup"><span data-stu-id="f07aa-279">Cost element</span></span> | <span data-ttu-id="f07aa-280">説明</span><span class="sxs-lookup"><span data-stu-id="f07aa-280">Description</span></span>        | <span data-ttu-id="f07aa-281">原価動作</span><span class="sxs-lookup"><span data-stu-id="f07aa-281">Cost behavior</span></span> |  <span data-ttu-id="f07aa-282">金額</span><span class="sxs-lookup"><span data-stu-id="f07aa-282">Amount</span></span>  |
 |-----------------|-------------|---------------------|--------------|--------------------|---------------|----------|
-| 2017 年 1 月 31 日      | CC099       | 既定のコスト センター | 10002        | 従業員の保険 | 未分類  | 1,000.00 |
+| <span data-ttu-id="f07aa-283">2017 年 1 月 31 日</span><span class="sxs-lookup"><span data-stu-id="f07aa-283">31-01-2017</span></span>      | <span data-ttu-id="f07aa-284">CC099</span><span class="sxs-lookup"><span data-stu-id="f07aa-284">CC099</span></span>       | <span data-ttu-id="f07aa-285">既定のコスト センター</span><span class="sxs-lookup"><span data-stu-id="f07aa-285">Default cost center</span></span> | <span data-ttu-id="f07aa-286">10002</span><span class="sxs-lookup"><span data-stu-id="f07aa-286">10002</span></span>        | <span data-ttu-id="f07aa-287">従業員の保険</span><span class="sxs-lookup"><span data-stu-id="f07aa-287">Employee insurance</span></span> | <span data-ttu-id="f07aa-288">未分類</span><span class="sxs-lookup"><span data-stu-id="f07aa-288">Unclassified</span></span>  | <span data-ttu-id="f07aa-289">1,000.00</span><span class="sxs-lookup"><span data-stu-id="f07aa-289">1,000.00</span></span> |
 
-**原価エントリ**
+<span data-ttu-id="f07aa-290">**原価エントリ**</span><span class="sxs-lookup"><span data-stu-id="f07aa-290">**Cost entries**</span></span>
 
-| 原価オブジェクト |  説明        | 原価要素 |    説明     | 原価動作 | 金額    | 会計日 |
+| <span data-ttu-id="f07aa-291">原価オブジェクト</span><span class="sxs-lookup"><span data-stu-id="f07aa-291">Cost object</span></span> |  <span data-ttu-id="f07aa-292">説明</span><span class="sxs-lookup"><span data-stu-id="f07aa-292">Description</span></span>        | <span data-ttu-id="f07aa-293">原価要素</span><span class="sxs-lookup"><span data-stu-id="f07aa-293">Cost element</span></span> |    <span data-ttu-id="f07aa-294">説明</span><span class="sxs-lookup"><span data-stu-id="f07aa-294">Description</span></span>     | <span data-ttu-id="f07aa-295">原価動作</span><span class="sxs-lookup"><span data-stu-id="f07aa-295">Cost behavior</span></span> | <span data-ttu-id="f07aa-296">金額</span><span class="sxs-lookup"><span data-stu-id="f07aa-296">Amount</span></span>    | <span data-ttu-id="f07aa-297">会計日</span><span class="sxs-lookup"><span data-stu-id="f07aa-297">Accounting date</span></span> |
 |-------------|---------------------|--------------|--------------------|---------------|-----------|-----------------|
-| CC099       | 既定のコスト センター | 10002        | 従業員の保険 | 未分類  | -1,000.00 | 2017 年 1 月 31 日      |
-| CC001       | HR                  | 10002        | 従業員の保険 | 未分類  | 200.00    | 2017 年 1 月 31 日      |
-| CC002       | FI                  | 10002        | 従業員の保険 | 未分類  | 500.00    | 2017 年 1 月 31 日      |
-| CC099       | IT                  | 10002        | 従業員の保険 | 未分類  | 300.00    | 2017 年 1 月 31 日      |
+| <span data-ttu-id="f07aa-298">CC099</span><span class="sxs-lookup"><span data-stu-id="f07aa-298">CC099</span></span>       | <span data-ttu-id="f07aa-299">既定のコスト センター</span><span class="sxs-lookup"><span data-stu-id="f07aa-299">Default cost center</span></span> | <span data-ttu-id="f07aa-300">10002</span><span class="sxs-lookup"><span data-stu-id="f07aa-300">10002</span></span>        | <span data-ttu-id="f07aa-301">従業員の保険</span><span class="sxs-lookup"><span data-stu-id="f07aa-301">Employee insurance</span></span> | <span data-ttu-id="f07aa-302">未分類</span><span class="sxs-lookup"><span data-stu-id="f07aa-302">Unclassified</span></span>  | <span data-ttu-id="f07aa-303">-1,000.00</span><span class="sxs-lookup"><span data-stu-id="f07aa-303">-1,000.00</span></span> | <span data-ttu-id="f07aa-304">2017 年 1 月 31 日</span><span class="sxs-lookup"><span data-stu-id="f07aa-304">31-01-2017</span></span>      |
+| <span data-ttu-id="f07aa-305">CC001</span><span class="sxs-lookup"><span data-stu-id="f07aa-305">CC001</span></span>       | <span data-ttu-id="f07aa-306">HR</span><span class="sxs-lookup"><span data-stu-id="f07aa-306">HR</span></span>                  | <span data-ttu-id="f07aa-307">10002</span><span class="sxs-lookup"><span data-stu-id="f07aa-307">10002</span></span>        | <span data-ttu-id="f07aa-308">従業員の保険</span><span class="sxs-lookup"><span data-stu-id="f07aa-308">Employee insurance</span></span> | <span data-ttu-id="f07aa-309">未分類</span><span class="sxs-lookup"><span data-stu-id="f07aa-309">Unclassified</span></span>  | <span data-ttu-id="f07aa-310">200.00</span><span class="sxs-lookup"><span data-stu-id="f07aa-310">200.00</span></span>    | <span data-ttu-id="f07aa-311">2017 年 1 月 31 日</span><span class="sxs-lookup"><span data-stu-id="f07aa-311">31-01-2017</span></span>      |
+| <span data-ttu-id="f07aa-312">CC002</span><span class="sxs-lookup"><span data-stu-id="f07aa-312">CC002</span></span>       | <span data-ttu-id="f07aa-313">FI</span><span class="sxs-lookup"><span data-stu-id="f07aa-313">FI</span></span>                  | <span data-ttu-id="f07aa-314">10002</span><span class="sxs-lookup"><span data-stu-id="f07aa-314">10002</span></span>        | <span data-ttu-id="f07aa-315">従業員の保険</span><span class="sxs-lookup"><span data-stu-id="f07aa-315">Employee insurance</span></span> | <span data-ttu-id="f07aa-316">未分類</span><span class="sxs-lookup"><span data-stu-id="f07aa-316">Unclassified</span></span>  | <span data-ttu-id="f07aa-317">500.00</span><span class="sxs-lookup"><span data-stu-id="f07aa-317">500.00</span></span>    | <span data-ttu-id="f07aa-318">2017 年 1 月 31 日</span><span class="sxs-lookup"><span data-stu-id="f07aa-318">31-01-2017</span></span>      |
+| <span data-ttu-id="f07aa-319">CC099</span><span class="sxs-lookup"><span data-stu-id="f07aa-319">CC099</span></span>       | <span data-ttu-id="f07aa-320">IT</span><span class="sxs-lookup"><span data-stu-id="f07aa-320">IT</span></span>                  | <span data-ttu-id="f07aa-321">10002</span><span class="sxs-lookup"><span data-stu-id="f07aa-321">10002</span></span>        | <span data-ttu-id="f07aa-322">従業員の保険</span><span class="sxs-lookup"><span data-stu-id="f07aa-322">Employee insurance</span></span> | <span data-ttu-id="f07aa-323">未分類</span><span class="sxs-lookup"><span data-stu-id="f07aa-323">Unclassified</span></span>  | <span data-ttu-id="f07aa-324">300.00</span><span class="sxs-lookup"><span data-stu-id="f07aa-324">300.00</span></span>    | <span data-ttu-id="f07aa-325">2017 年 1 月 31 日</span><span class="sxs-lookup"><span data-stu-id="f07aa-325">31-01-2017</span></span>      |
 
-### <a name="example-2-use-a-statistical-dimension-member-as-the-allocation-base"></a>例 2: 配賦基準として統計分析コード メンバーを使用
+### <a name="example-2-use-a-statistical-dimension-member-as-the-allocation-base"></a><span data-ttu-id="f07aa-326">例 2: 配賦基準として統計分析コード メンバーを使用</span><span class="sxs-lookup"><span data-stu-id="f07aa-326">Example 2: Use a statistical dimension member as the allocation base</span></span>
 
-統計分析コード メンバーは、原価オブジェクトごとのポリシーの定義または非金銭消費のレポートとして、配賦基準として使用できます。 手動で統計分析コード メンバーを作成したり、データ管理インポート/エクスポート ツールを使用してファイルからインポートできます。
+<span data-ttu-id="f07aa-327">統計分析コード メンバーは、原価オブジェクトごとのポリシーの定義または非金銭消費のレポートとして、配賦基準として使用できます。</span><span class="sxs-lookup"><span data-stu-id="f07aa-327">Statistical dimension members can be used as allocation bases to define policies or report non-monetary consumption by cost objects.</span></span> <span data-ttu-id="f07aa-328">手動で統計分析コード メンバーを作成したり、データ管理インポート/エクスポート ツールを使用してファイルからインポートできます。</span><span class="sxs-lookup"><span data-stu-id="f07aa-328">You can manually create statistical dimension members or import them from a file by using the Data management import/export tool.</span></span>
 
-**統計分析コード メンバー**
+<span data-ttu-id="f07aa-329">**統計分析コード メンバー**</span><span class="sxs-lookup"><span data-stu-id="f07aa-329">**Statistical dimension members**</span></span>
 
-| 統計分析コード名 | 統計要素 | 説明               | 単位 |
+| <span data-ttu-id="f07aa-330">統計分析コード名</span><span class="sxs-lookup"><span data-stu-id="f07aa-330">Statistical dimension name</span></span> | <span data-ttu-id="f07aa-331">統計要素</span><span class="sxs-lookup"><span data-stu-id="f07aa-331">Statistical element</span></span> | <span data-ttu-id="f07aa-332">説明</span><span class="sxs-lookup"><span data-stu-id="f07aa-332">Description</span></span>               | <span data-ttu-id="f07aa-333">単位</span><span class="sxs-lookup"><span data-stu-id="f07aa-333">Unit</span></span> |
 |----------------------------|---------------------|---------------------------|------|
-| 統計要素       | FTE                 | フルタイム従業員       | Ea   |
-| 統計要素       | 電気         | 電気消費   | kWh  |
+| <span data-ttu-id="f07aa-334">統計要素</span><span class="sxs-lookup"><span data-stu-id="f07aa-334">Statistical elements</span></span>       | <span data-ttu-id="f07aa-335">FTE</span><span class="sxs-lookup"><span data-stu-id="f07aa-335">FTE</span></span>                 | <span data-ttu-id="f07aa-336">フルタイム従業員</span><span class="sxs-lookup"><span data-stu-id="f07aa-336">Full time employees</span></span>       | <span data-ttu-id="f07aa-337">Ea</span><span class="sxs-lookup"><span data-stu-id="f07aa-337">Ea</span></span>   |
+| <span data-ttu-id="f07aa-338">統計要素</span><span class="sxs-lookup"><span data-stu-id="f07aa-338">Statistical elements</span></span>       | <span data-ttu-id="f07aa-339">電気</span><span class="sxs-lookup"><span data-stu-id="f07aa-339">Electricity</span></span>         | <span data-ttu-id="f07aa-340">電気消費</span><span class="sxs-lookup"><span data-stu-id="f07aa-340">Electricity consumption</span></span>   | <span data-ttu-id="f07aa-341">kWh</span><span class="sxs-lookup"><span data-stu-id="f07aa-341">kWh</span></span>  |
 
-統計分析コード メンバーを保存すると、事前に定義された分析コード メンバー配賦基準に対応するレコードが作成されます。
+<span data-ttu-id="f07aa-342">統計分析コード メンバーを保存すると、事前に定義された分析コード メンバー配賦基準に対応するレコードが作成されます。</span><span class="sxs-lookup"><span data-stu-id="f07aa-342">When a statistical dimension member is saved, a corresponding record is created in the predefined dimension member allocation bases.</span></span>
 
-**事前に定義された分析コード メンバー配賦基準**
+<span data-ttu-id="f07aa-343">**事前に定義された分析コード メンバー配賦基準**</span><span class="sxs-lookup"><span data-stu-id="f07aa-343">**Predefined dimension member allocation bases**</span></span>
 
-| 氏名        | 説明             | 統計要素分析コード |
+| <span data-ttu-id="f07aa-344">氏名</span><span class="sxs-lookup"><span data-stu-id="f07aa-344">Name</span></span>        | <span data-ttu-id="f07aa-345">説明</span><span class="sxs-lookup"><span data-stu-id="f07aa-345">Description</span></span>             | <span data-ttu-id="f07aa-346">統計要素分析コード</span><span class="sxs-lookup"><span data-stu-id="f07aa-346">Statistical element dimension</span></span> |
 |-------------|-------------------------|-------------------------------|
-| FTE         | フルタイム従業員     | 統計要素          |
-| 電気 | 電気消費 | 統計要素          |
+| <span data-ttu-id="f07aa-347">FTE</span><span class="sxs-lookup"><span data-stu-id="f07aa-347">FTE</span></span>         | <span data-ttu-id="f07aa-348">フルタイム従業員</span><span class="sxs-lookup"><span data-stu-id="f07aa-348">Full time employees</span></span>     | <span data-ttu-id="f07aa-349">統計要素</span><span class="sxs-lookup"><span data-stu-id="f07aa-349">Statistical elements</span></span>          |
+| <span data-ttu-id="f07aa-350">電気</span><span class="sxs-lookup"><span data-stu-id="f07aa-350">Electricity</span></span> | <span data-ttu-id="f07aa-351">電気消費</span><span class="sxs-lookup"><span data-stu-id="f07aa-351">Electricity consumption</span></span> | <span data-ttu-id="f07aa-352">統計要素</span><span class="sxs-lookup"><span data-stu-id="f07aa-352">Statistical elements</span></span>          |
 
-統計測定は、さまざまなソースから取得できます。
+<span data-ttu-id="f07aa-353">統計測定は、さまざまなソースから取得できます。</span><span class="sxs-lookup"><span data-stu-id="f07aa-353">Statistical measures can come from various sources:</span></span>
 
-- 電気消費は、会社のさまざまな領域にインストールされているメーターで計測できます。
-- テーブルには統計測定が保持されます。 たとえば、HcmEmployment の表には、すべての従業員の一覧および従業員が働くコスト センターが含まれます。
+- <span data-ttu-id="f07aa-354">電気消費は、会社のさまざまな領域にインストールされているメーターで計測できます。</span><span class="sxs-lookup"><span data-stu-id="f07aa-354">Electricity consumption can be measured by meters that are installed in different areas of the company.</span></span>
+- <span data-ttu-id="f07aa-355">テーブルには統計測定が保持されます。</span><span class="sxs-lookup"><span data-stu-id="f07aa-355">Tables hold statistical measures.</span></span> <span data-ttu-id="f07aa-356">たとえば、HcmEmployment の表には、すべての従業員の一覧および従業員が働くコスト センターが含まれます。</span><span class="sxs-lookup"><span data-stu-id="f07aa-356">For example, the HcmEmployment table holds a list of all employees and the cost centers that they work for.</span></span>
 
-| 氏名       | コスト センター |  説明  | 作業者タイプ |
+| <span data-ttu-id="f07aa-357">氏名</span><span class="sxs-lookup"><span data-stu-id="f07aa-357">Name</span></span>       | <span data-ttu-id="f07aa-358">コスト センター</span><span class="sxs-lookup"><span data-stu-id="f07aa-358">Cost center</span></span> |  <span data-ttu-id="f07aa-359">説明</span><span class="sxs-lookup"><span data-stu-id="f07aa-359">Description</span></span>  | <span data-ttu-id="f07aa-360">作業者タイプ</span><span class="sxs-lookup"><span data-stu-id="f07aa-360">Worker type</span></span> |
 |------------|-------------|----|-------------|
-| 従業員 A | CC001       | HR | 従業員    |
-| 従業員 B | CC002       | FI | 従業員    |
-| 従業員 C | CC002       | FI | 従業員    |
-| 従業員 D | CC003       | IT | 従業員    |
-| 従業員 F | CC003       | IT | 従業員    |
+| <span data-ttu-id="f07aa-361">従業員 A</span><span class="sxs-lookup"><span data-stu-id="f07aa-361">Employee A</span></span> | <span data-ttu-id="f07aa-362">CC001</span><span class="sxs-lookup"><span data-stu-id="f07aa-362">CC001</span></span>       | <span data-ttu-id="f07aa-363">HR</span><span class="sxs-lookup"><span data-stu-id="f07aa-363">HR</span></span> | <span data-ttu-id="f07aa-364">従業員</span><span class="sxs-lookup"><span data-stu-id="f07aa-364">Employee</span></span>    |
+| <span data-ttu-id="f07aa-365">従業員 B</span><span class="sxs-lookup"><span data-stu-id="f07aa-365">Employee B</span></span> | <span data-ttu-id="f07aa-366">CC002</span><span class="sxs-lookup"><span data-stu-id="f07aa-366">CC002</span></span>       | <span data-ttu-id="f07aa-367">FI</span><span class="sxs-lookup"><span data-stu-id="f07aa-367">FI</span></span> | <span data-ttu-id="f07aa-368">従業員</span><span class="sxs-lookup"><span data-stu-id="f07aa-368">Employee</span></span>    |
+| <span data-ttu-id="f07aa-369">従業員 C</span><span class="sxs-lookup"><span data-stu-id="f07aa-369">Employee C</span></span> | <span data-ttu-id="f07aa-370">CC002</span><span class="sxs-lookup"><span data-stu-id="f07aa-370">CC002</span></span>       | <span data-ttu-id="f07aa-371">FI</span><span class="sxs-lookup"><span data-stu-id="f07aa-371">FI</span></span> | <span data-ttu-id="f07aa-372">従業員</span><span class="sxs-lookup"><span data-stu-id="f07aa-372">Employee</span></span>    |
+| <span data-ttu-id="f07aa-373">従業員 D</span><span class="sxs-lookup"><span data-stu-id="f07aa-373">Employee D</span></span> | <span data-ttu-id="f07aa-374">CC003</span><span class="sxs-lookup"><span data-stu-id="f07aa-374">CC003</span></span>       | <span data-ttu-id="f07aa-375">IT</span><span class="sxs-lookup"><span data-stu-id="f07aa-375">IT</span></span> | <span data-ttu-id="f07aa-376">従業員</span><span class="sxs-lookup"><span data-stu-id="f07aa-376">Employee</span></span>    |
+| <span data-ttu-id="f07aa-377">従業員 F</span><span class="sxs-lookup"><span data-stu-id="f07aa-377">Employee F</span></span> | <span data-ttu-id="f07aa-378">CC003</span><span class="sxs-lookup"><span data-stu-id="f07aa-378">CC003</span></span>       | <span data-ttu-id="f07aa-379">IT</span><span class="sxs-lookup"><span data-stu-id="f07aa-379">IT</span></span> | <span data-ttu-id="f07aa-380">従業員</span><span class="sxs-lookup"><span data-stu-id="f07aa-380">Employee</span></span>    |
 
 > [!NOTE]
-> 財務分析コードを含むすべてのテーブルは、統計測定のソースとして使用できます。
+> <span data-ttu-id="f07aa-381">財務分析コードを含むすべてのテーブルは、統計測定のソースとして使用できます。</span><span class="sxs-lookup"><span data-stu-id="f07aa-381">All the tables that contain financial dimensions can be used as sources for statistical measures.</span></span>
 
-原価計算では、次のデータ接続を使用して統計測定のコレクションをサポートしています。
+<span data-ttu-id="f07aa-382">原価計算では、次のデータ接続を使用して統計測定のコレクションをサポートしています。</span><span class="sxs-lookup"><span data-stu-id="f07aa-382">Cost accounting supports a collection of statistical measures by using the following data connections:</span></span>
 
-- データ管理インポート/エクスポート ツール
-- 統計測定
+- <span data-ttu-id="f07aa-383">データ管理インポート/エクスポート ツール</span><span class="sxs-lookup"><span data-stu-id="f07aa-383">Data management import/export tool</span></span>
+- <span data-ttu-id="f07aa-384">統計測定</span><span class="sxs-lookup"><span data-stu-id="f07aa-384">Statistical measures</span></span>
 
-システムから統計測定を取得するには、統計測定プロバイダー テンプレートが必要です。 詳しくは、「統計測定プロバイダー テンプレート」を参照してください。 (このトピックの作成後にリンクを追加)。
+<span data-ttu-id="f07aa-385">システムから統計測定を取得するには、統計測定プロバイダー テンプレートが必要です。</span><span class="sxs-lookup"><span data-stu-id="f07aa-385">To pull statistical measures from the system, a statistical measure provider template is required.</span></span> <span data-ttu-id="f07aa-386">詳しくは、「統計測定プロバイダー テンプレート」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f07aa-386">For more information, see Statistical measure provider template.</span></span> <span data-ttu-id="f07aa-387">(このトピックの作成後にリンクを追加)。</span><span class="sxs-lookup"><span data-stu-id="f07aa-387">(Will add a link once this topic is written.)</span></span>
 
-**統計測定プロバイダー テンプレート**
+<span data-ttu-id="f07aa-388">**統計測定プロバイダー テンプレート**</span><span class="sxs-lookup"><span data-stu-id="f07aa-388">**Statistical measure provider templates**</span></span>
 
-| 氏名  | 職務 | ソース テーブル  | 合計フィールド      | 日付フィールド     |
+| <span data-ttu-id="f07aa-389">氏名</span><span class="sxs-lookup"><span data-stu-id="f07aa-389">Name</span></span>  | <span data-ttu-id="f07aa-390">職務</span><span class="sxs-lookup"><span data-stu-id="f07aa-390">Function</span></span> | <span data-ttu-id="f07aa-391">ソース テーブル</span><span class="sxs-lookup"><span data-stu-id="f07aa-391">Source table</span></span>  | <span data-ttu-id="f07aa-392">合計フィールド</span><span class="sxs-lookup"><span data-stu-id="f07aa-392">Sum field</span></span>      | <span data-ttu-id="f07aa-393">日付フィールド</span><span class="sxs-lookup"><span data-stu-id="f07aa-393">Date field</span></span>     |
 |-------|----------|---------------|----------------|----------------|
-| FTE の | カウント    | HcmEmployment | 適用できません | 適用できません |
+| <span data-ttu-id="f07aa-394">FTE の</span><span class="sxs-lookup"><span data-stu-id="f07aa-394">FTE’s</span></span> | <span data-ttu-id="f07aa-395">カウント</span><span class="sxs-lookup"><span data-stu-id="f07aa-395">Count</span></span>    | <span data-ttu-id="f07aa-396">HcmEmployment</span><span class="sxs-lookup"><span data-stu-id="f07aa-396">HcmEmployment</span></span> | <span data-ttu-id="f07aa-397">適用できません</span><span class="sxs-lookup"><span data-stu-id="f07aa-397">Not applicable</span></span> | <span data-ttu-id="f07aa-398">適用できません</span><span class="sxs-lookup"><span data-stu-id="f07aa-398">Not applicable</span></span> |
 
-統計測定ソース データが処理された後、次のエントリが原価計算に作成されます。
+<span data-ttu-id="f07aa-399">統計測定ソース データが処理された後、次のエントリが原価計算に作成されます。</span><span class="sxs-lookup"><span data-stu-id="f07aa-399">After the statistical measure source data is processed, the following entries will be created in Cost accounting.</span></span>
 
-**統計エントリ**
+<span data-ttu-id="f07aa-400">**統計エントリ**</span><span class="sxs-lookup"><span data-stu-id="f07aa-400">**Statistical entries**</span></span>
 
-| 原価オブジェクト | 説明      | 会計日 | 統計分析コード メンバー | 説明         | 大きさ |
+| <span data-ttu-id="f07aa-401">原価オブジェクト</span><span class="sxs-lookup"><span data-stu-id="f07aa-401">Cost object</span></span> | <span data-ttu-id="f07aa-402">説明</span><span class="sxs-lookup"><span data-stu-id="f07aa-402">Description</span></span>      | <span data-ttu-id="f07aa-403">会計日</span><span class="sxs-lookup"><span data-stu-id="f07aa-403">Accounting date</span></span> | <span data-ttu-id="f07aa-404">統計分析コード メンバー</span><span class="sxs-lookup"><span data-stu-id="f07aa-404">Statistical dimension member</span></span> | <span data-ttu-id="f07aa-405">説明</span><span class="sxs-lookup"><span data-stu-id="f07aa-405">Description</span></span>         | <span data-ttu-id="f07aa-406">大きさ</span><span class="sxs-lookup"><span data-stu-id="f07aa-406">Magnitude</span></span> |
 |-------------|------------------|-----------------|------------------------------|---------------------|-----------|
-| CC001       | HR               | 2017 年 1 月 31 日      | FTE の                        | フルタイム従業員 | 1.00      |
-| CC002       | FI               | 2017 年 1 月 31 日      | FTE の                        | フルタイム従業員 | 2.00      |
-| CC003       | IT               | 2017 年 1 月 31 日      | FTE の                        | フルタイム従業員 | 2.00      |
+| <span data-ttu-id="f07aa-407">CC001</span><span class="sxs-lookup"><span data-stu-id="f07aa-407">CC001</span></span>       | <span data-ttu-id="f07aa-408">HR</span><span class="sxs-lookup"><span data-stu-id="f07aa-408">HR</span></span>               | <span data-ttu-id="f07aa-409">2017 年 1 月 31 日</span><span class="sxs-lookup"><span data-stu-id="f07aa-409">31-01-2017</span></span>      | <span data-ttu-id="f07aa-410">FTE の</span><span class="sxs-lookup"><span data-stu-id="f07aa-410">FTE’s</span></span>                        | <span data-ttu-id="f07aa-411">フルタイム従業員</span><span class="sxs-lookup"><span data-stu-id="f07aa-411">Full time employees</span></span> | <span data-ttu-id="f07aa-412">1.00</span><span class="sxs-lookup"><span data-stu-id="f07aa-412">1.00</span></span>      |
+| <span data-ttu-id="f07aa-413">CC002</span><span class="sxs-lookup"><span data-stu-id="f07aa-413">CC002</span></span>       | <span data-ttu-id="f07aa-414">FI</span><span class="sxs-lookup"><span data-stu-id="f07aa-414">FI</span></span>               | <span data-ttu-id="f07aa-415">2017 年 1 月 31 日</span><span class="sxs-lookup"><span data-stu-id="f07aa-415">31-01-2017</span></span>      | <span data-ttu-id="f07aa-416">FTE の</span><span class="sxs-lookup"><span data-stu-id="f07aa-416">FTE’s</span></span>                        | <span data-ttu-id="f07aa-417">フルタイム従業員</span><span class="sxs-lookup"><span data-stu-id="f07aa-417">Full time employees</span></span> | <span data-ttu-id="f07aa-418">2.00</span><span class="sxs-lookup"><span data-stu-id="f07aa-418">2.00</span></span>      |
+| <span data-ttu-id="f07aa-419">CC003</span><span class="sxs-lookup"><span data-stu-id="f07aa-419">CC003</span></span>       | <span data-ttu-id="f07aa-420">IT</span><span class="sxs-lookup"><span data-stu-id="f07aa-420">IT</span></span>               | <span data-ttu-id="f07aa-421">2017 年 1 月 31 日</span><span class="sxs-lookup"><span data-stu-id="f07aa-421">31-01-2017</span></span>      | <span data-ttu-id="f07aa-422">FTE の</span><span class="sxs-lookup"><span data-stu-id="f07aa-422">FTE’s</span></span>                        | <span data-ttu-id="f07aa-423">フルタイム従業員</span><span class="sxs-lookup"><span data-stu-id="f07aa-423">Full time employees</span></span> | <span data-ttu-id="f07aa-424">2.00</span><span class="sxs-lookup"><span data-stu-id="f07aa-424">2.00</span></span>      |
 
-次のコスト配分ルールの例は、FTE の事前に定義された分析コード メンバー配賦基準が配賦基準として割り当てられた場合です。
+<span data-ttu-id="f07aa-425">次のコスト配分ルールの例は、FTE の事前に定義された分析コード メンバー配賦基準が配賦基準として割り当てられた場合です。</span><span class="sxs-lookup"><span data-stu-id="f07aa-425">Here is an example of a cost distribution rule if the FTE’s predefined dimension member allocation basis is assigned as the allocation base in it.</span></span>
 
-| 原価オブジェクト | 説明  | 大きさ | 配賦係数 |
+| <span data-ttu-id="f07aa-426">原価オブジェクト</span><span class="sxs-lookup"><span data-stu-id="f07aa-426">Cost object</span></span> | <span data-ttu-id="f07aa-427">説明</span><span class="sxs-lookup"><span data-stu-id="f07aa-427">Description</span></span>  | <span data-ttu-id="f07aa-428">大きさ</span><span class="sxs-lookup"><span data-stu-id="f07aa-428">Magnitude</span></span> | <span data-ttu-id="f07aa-429">配賦係数</span><span class="sxs-lookup"><span data-stu-id="f07aa-429">Allocation factor</span></span> |
 |-------------|------|-----------|-------------------|
-| CC001       | HR   | 1.00      | (1/5) × 金額    |
-| CC002       | FI   | 2.00      | (2/5) × 金額    |
-| CC003       | IT   | 2.00      | (2/5) × 金額    |
+| <span data-ttu-id="f07aa-430">CC001</span><span class="sxs-lookup"><span data-stu-id="f07aa-430">CC001</span></span>       | <span data-ttu-id="f07aa-431">HR</span><span class="sxs-lookup"><span data-stu-id="f07aa-431">HR</span></span>   | <span data-ttu-id="f07aa-432">1.00</span><span class="sxs-lookup"><span data-stu-id="f07aa-432">1.00</span></span>      | <span data-ttu-id="f07aa-433">(1/5) × 金額</span><span class="sxs-lookup"><span data-stu-id="f07aa-433">(1/5) × Amount</span></span>    |
+| <span data-ttu-id="f07aa-434">CC002</span><span class="sxs-lookup"><span data-stu-id="f07aa-434">CC002</span></span>       | <span data-ttu-id="f07aa-435">FI</span><span class="sxs-lookup"><span data-stu-id="f07aa-435">FI</span></span>   | <span data-ttu-id="f07aa-436">2.00</span><span class="sxs-lookup"><span data-stu-id="f07aa-436">2.00</span></span>      | <span data-ttu-id="f07aa-437">(2/5) × 金額</span><span class="sxs-lookup"><span data-stu-id="f07aa-437">(2/5) × Amount</span></span>    |
+| <span data-ttu-id="f07aa-438">CC003</span><span class="sxs-lookup"><span data-stu-id="f07aa-438">CC003</span></span>       | <span data-ttu-id="f07aa-439">IT</span><span class="sxs-lookup"><span data-stu-id="f07aa-439">IT</span></span>   | <span data-ttu-id="f07aa-440">2.00</span><span class="sxs-lookup"><span data-stu-id="f07aa-440">2.00</span></span>      | <span data-ttu-id="f07aa-441">(2/5) × 金額</span><span class="sxs-lookup"><span data-stu-id="f07aa-441">(2/5) × Amount</span></span>    |
 
-インポートされた統計測定データ エンティティを使用して、原価計算に統計測定をインポートできます。 データ管理インポート/エクスポート ツールも使用できます。 Excel では、電気の消費が次のように記録されます。
+<span data-ttu-id="f07aa-442">インポートされた統計測定データ エンティティを使用して、原価計算に統計測定をインポートできます。</span><span class="sxs-lookup"><span data-stu-id="f07aa-442">You can use the Imported statistical measures data entity to import statistical measures into Cost accounting.</span></span> <span data-ttu-id="f07aa-443">データ管理インポート/エクスポート ツールも使用できます。</span><span class="sxs-lookup"><span data-stu-id="f07aa-443">You can also use the Data management import/export tool.</span></span> <span data-ttu-id="f07aa-444">Excel では、電気の消費が次のように記録されます。</span><span class="sxs-lookup"><span data-stu-id="f07aa-444">In Excel, the consumption of electricity is recorded as follows.</span></span>
 
-| 会計日 | 分析コード メンバー | 大きさ | ソース識別子 |
+| <span data-ttu-id="f07aa-445">会計日</span><span class="sxs-lookup"><span data-stu-id="f07aa-445">Accounting date</span></span> | <span data-ttu-id="f07aa-446">分析コード メンバー</span><span class="sxs-lookup"><span data-stu-id="f07aa-446">Dimension member</span></span> | <span data-ttu-id="f07aa-447">大きさ</span><span class="sxs-lookup"><span data-stu-id="f07aa-447">Magnitude</span></span> | <span data-ttu-id="f07aa-448">ソース識別子</span><span class="sxs-lookup"><span data-stu-id="f07aa-448">Source identifier</span></span> |
 |-----------------|------------------|-----------|-------------------|
-| 2017 年 1 月 31 日      | CC001            | 2,450.00  | 電気       |
-| 2017 年 1 月 31 日      | CC002            | 4,100.00  | 電気       |
-| 2017 年 1 月 31 日      | CC003            | 15,000.00 | 電気       |
+| <span data-ttu-id="f07aa-449">2017 年 1 月 31 日</span><span class="sxs-lookup"><span data-stu-id="f07aa-449">31-01-2017</span></span>      | <span data-ttu-id="f07aa-450">CC001</span><span class="sxs-lookup"><span data-stu-id="f07aa-450">CC001</span></span>            | <span data-ttu-id="f07aa-451">2,450.00</span><span class="sxs-lookup"><span data-stu-id="f07aa-451">2,450.00</span></span>  | <span data-ttu-id="f07aa-452">電気</span><span class="sxs-lookup"><span data-stu-id="f07aa-452">Electricity</span></span>       |
+| <span data-ttu-id="f07aa-453">2017 年 1 月 31 日</span><span class="sxs-lookup"><span data-stu-id="f07aa-453">31-01-2017</span></span>      | <span data-ttu-id="f07aa-454">CC002</span><span class="sxs-lookup"><span data-stu-id="f07aa-454">CC002</span></span>            | <span data-ttu-id="f07aa-455">4,100.00</span><span class="sxs-lookup"><span data-stu-id="f07aa-455">4,100.00</span></span>  | <span data-ttu-id="f07aa-456">電気</span><span class="sxs-lookup"><span data-stu-id="f07aa-456">Electricity</span></span>       |
+| <span data-ttu-id="f07aa-457">2017 年 1 月 31 日</span><span class="sxs-lookup"><span data-stu-id="f07aa-457">31-01-2017</span></span>      | <span data-ttu-id="f07aa-458">CC003</span><span class="sxs-lookup"><span data-stu-id="f07aa-458">CC003</span></span>            | <span data-ttu-id="f07aa-459">15,000.00</span><span class="sxs-lookup"><span data-stu-id="f07aa-459">15,000.00</span></span> | <span data-ttu-id="f07aa-460">電気</span><span class="sxs-lookup"><span data-stu-id="f07aa-460">Electricity</span></span>       |
 
-統計測定ソース データが処理された後、次のエントリが原価計算に作成されます。
+<span data-ttu-id="f07aa-461">統計測定ソース データが処理された後、次のエントリが原価計算に作成されます。</span><span class="sxs-lookup"><span data-stu-id="f07aa-461">After the statistical measure source data is processed, the following entries will be created in Cost accounting.</span></span>
 
-**統計エントリ**
+<span data-ttu-id="f07aa-462">**統計エントリ**</span><span class="sxs-lookup"><span data-stu-id="f07aa-462">**Statistical entries**</span></span>
 
-| 原価オブジェクト |    | 会計日 | 統計分析コード メンバー |    説明          | 大きさ |
+| <span data-ttu-id="f07aa-463">原価オブジェクト</span><span class="sxs-lookup"><span data-stu-id="f07aa-463">Cost object</span></span> |    | <span data-ttu-id="f07aa-464">会計日</span><span class="sxs-lookup"><span data-stu-id="f07aa-464">Accounting date</span></span> | <span data-ttu-id="f07aa-465">統計分析コード メンバー</span><span class="sxs-lookup"><span data-stu-id="f07aa-465">Statistical dimension member</span></span> |    <span data-ttu-id="f07aa-466">説明</span><span class="sxs-lookup"><span data-stu-id="f07aa-466">Description</span></span>          | <span data-ttu-id="f07aa-467">大きさ</span><span class="sxs-lookup"><span data-stu-id="f07aa-467">Magnitude</span></span> |
 |-------------|----|-----------------|------------------------------|-------------------------|-----------|
-| CC001       | HR | 2017 年 1 月 31 日      | 電気                  | 電気消費 | 2,450.00  |
-| CC002       | FI | 2017 年 1 月 31 日      | 電気                  | 電気消費 | 4,100.00  |
-| CC003       | IT | 2017 年 1 月 31 日      | 電気                  | 電気消費 | 15,000.00 |
+| <span data-ttu-id="f07aa-468">CC001</span><span class="sxs-lookup"><span data-stu-id="f07aa-468">CC001</span></span>       | <span data-ttu-id="f07aa-469">HR</span><span class="sxs-lookup"><span data-stu-id="f07aa-469">HR</span></span> | <span data-ttu-id="f07aa-470">2017 年 1 月 31 日</span><span class="sxs-lookup"><span data-stu-id="f07aa-470">31-01-2017</span></span>      | <span data-ttu-id="f07aa-471">電気</span><span class="sxs-lookup"><span data-stu-id="f07aa-471">Electricity</span></span>                  | <span data-ttu-id="f07aa-472">電気消費</span><span class="sxs-lookup"><span data-stu-id="f07aa-472">Electricity consumption</span></span> | <span data-ttu-id="f07aa-473">2,450.00</span><span class="sxs-lookup"><span data-stu-id="f07aa-473">2,450.00</span></span>  |
+| <span data-ttu-id="f07aa-474">CC002</span><span class="sxs-lookup"><span data-stu-id="f07aa-474">CC002</span></span>       | <span data-ttu-id="f07aa-475">FI</span><span class="sxs-lookup"><span data-stu-id="f07aa-475">FI</span></span> | <span data-ttu-id="f07aa-476">2017 年 1 月 31 日</span><span class="sxs-lookup"><span data-stu-id="f07aa-476">31-01-2017</span></span>      | <span data-ttu-id="f07aa-477">電気</span><span class="sxs-lookup"><span data-stu-id="f07aa-477">Electricity</span></span>                  | <span data-ttu-id="f07aa-478">電気消費</span><span class="sxs-lookup"><span data-stu-id="f07aa-478">Electricity consumption</span></span> | <span data-ttu-id="f07aa-479">4,100.00</span><span class="sxs-lookup"><span data-stu-id="f07aa-479">4,100.00</span></span>  |
+| <span data-ttu-id="f07aa-480">CC003</span><span class="sxs-lookup"><span data-stu-id="f07aa-480">CC003</span></span>       | <span data-ttu-id="f07aa-481">IT</span><span class="sxs-lookup"><span data-stu-id="f07aa-481">IT</span></span> | <span data-ttu-id="f07aa-482">2017 年 1 月 31 日</span><span class="sxs-lookup"><span data-stu-id="f07aa-482">31-01-2017</span></span>      | <span data-ttu-id="f07aa-483">電気</span><span class="sxs-lookup"><span data-stu-id="f07aa-483">Electricity</span></span>                  | <span data-ttu-id="f07aa-484">電気消費</span><span class="sxs-lookup"><span data-stu-id="f07aa-484">Electricity consumption</span></span> | <span data-ttu-id="f07aa-485">15,000.00</span><span class="sxs-lookup"><span data-stu-id="f07aa-485">15,000.00</span></span> |
 
-次のコスト配分ルールの例は、電気の事前に定義された分析コード メンバー配賦基準が配賦基準として割り当てられた場合です。
+<span data-ttu-id="f07aa-486">次のコスト配分ルールの例は、電気の事前に定義された分析コード メンバー配賦基準が配賦基準として割り当てられた場合です。</span><span class="sxs-lookup"><span data-stu-id="f07aa-486">Here is an example of a cost distribution rule if the Electricity predefined dimension member allocation basis is assigned as the allocation base in it.</span></span>
 
-| 原価オブジェクト | 説明  | 大きさ | 配賦係数          |
+| <span data-ttu-id="f07aa-487">原価オブジェクト</span><span class="sxs-lookup"><span data-stu-id="f07aa-487">Cost object</span></span> | <span data-ttu-id="f07aa-488">説明</span><span class="sxs-lookup"><span data-stu-id="f07aa-488">Description</span></span>  | <span data-ttu-id="f07aa-489">大きさ</span><span class="sxs-lookup"><span data-stu-id="f07aa-489">Magnitude</span></span> | <span data-ttu-id="f07aa-490">配賦係数</span><span class="sxs-lookup"><span data-stu-id="f07aa-490">Allocation factor</span></span>          |
 |-------------|------|-----------|----------------------------|
-| CC001       | HR   | 2,450.00  | (2,450 ÷ 21,550) × 金額  |
-| CC002       | FI   | 4,100.00  | (4,100 ÷ 21,550) × 金額  |
-| CC003       | IT   | 15,000.00 | (15,000 ÷ 21,550) × 金額 |
+| <span data-ttu-id="f07aa-491">CC001</span><span class="sxs-lookup"><span data-stu-id="f07aa-491">CC001</span></span>       | <span data-ttu-id="f07aa-492">HR</span><span class="sxs-lookup"><span data-stu-id="f07aa-492">HR</span></span>   | <span data-ttu-id="f07aa-493">2,450.00</span><span class="sxs-lookup"><span data-stu-id="f07aa-493">2,450.00</span></span>  | <span data-ttu-id="f07aa-494">(2,450 ÷ 21,550) × 金額</span><span class="sxs-lookup"><span data-stu-id="f07aa-494">(2,450 ÷ 21,550) × Amount</span></span>  |
+| <span data-ttu-id="f07aa-495">CC002</span><span class="sxs-lookup"><span data-stu-id="f07aa-495">CC002</span></span>       | <span data-ttu-id="f07aa-496">FI</span><span class="sxs-lookup"><span data-stu-id="f07aa-496">FI</span></span>   | <span data-ttu-id="f07aa-497">4,100.00</span><span class="sxs-lookup"><span data-stu-id="f07aa-497">4,100.00</span></span>  | <span data-ttu-id="f07aa-498">(4,100 ÷ 21,550) × 金額</span><span class="sxs-lookup"><span data-stu-id="f07aa-498">(4,100 ÷ 21,550) × Amount</span></span>  |
+| <span data-ttu-id="f07aa-499">CC003</span><span class="sxs-lookup"><span data-stu-id="f07aa-499">CC003</span></span>       | <span data-ttu-id="f07aa-500">IT</span><span class="sxs-lookup"><span data-stu-id="f07aa-500">IT</span></span>   | <span data-ttu-id="f07aa-501">15,000.00</span><span class="sxs-lookup"><span data-stu-id="f07aa-501">15,000.00</span></span> | <span data-ttu-id="f07aa-502">(15,000 ÷ 21,550) × 金額</span><span class="sxs-lookup"><span data-stu-id="f07aa-502">(15,000 ÷ 21,550) × Amount</span></span> |
 
-## <a name="hierarchy-allocation-bases"></a>階層配賦基準
+## <a name="hierarchy-allocation-bases"></a><span data-ttu-id="f07aa-503">階層配賦基準</span><span class="sxs-lookup"><span data-stu-id="f07aa-503">Hierarchy allocation bases</span></span>
 
-原価オブジェクト分析コード階層ノードを既存の配賦基準に適用することで、会計士は階層配賦基準を手動で作成できます。 この方法では、元の事前に定義された分析コード メンバー配賦基準の範囲を制限できます。 1 つの事前に定義された分析コード メンバー配賦基準を使用して、複数の階層配賦基準を作成できます。 階層配賦基準に関連付けられている原価オブジェクト分析コード階層で、範囲を維持できます。
+<span data-ttu-id="f07aa-504">原価オブジェクト分析コード階層ノードを既存の配賦基準に適用することで、会計士は階層配賦基準を手動で作成できます。</span><span class="sxs-lookup"><span data-stu-id="f07aa-504">Cost accountants can manually create the hierarchy allocation bases by applying a cost object dimension hierarchy node to an existing allocation base.</span></span> <span data-ttu-id="f07aa-505">この方法では、元の事前に定義された分析コード メンバー配賦基準の範囲を制限できます。</span><span class="sxs-lookup"><span data-stu-id="f07aa-505">In this way, you can limit the range of the original predefined dimension member allocation basis.</span></span> <span data-ttu-id="f07aa-506">1 つの事前に定義された分析コード メンバー配賦基準を使用して、複数の階層配賦基準を作成できます。</span><span class="sxs-lookup"><span data-stu-id="f07aa-506">One predefined dimension member allocation basis can be used to create several hierarchy allocation bases.</span></span> <span data-ttu-id="f07aa-507">階層配賦基準に関連付けられている原価オブジェクト分析コード階層で、範囲を維持できます。</span><span class="sxs-lookup"><span data-stu-id="f07aa-507">Ranges can be maintained in the cost object dimension hierarchy that is associated with the hierarchy allocation bases.</span></span>
 
-### <a name="example-hierarchy-allocation-bases-that-are-based-on-full-time-employees-in-the-organization"></a>例: 組織のフルタイム従業員に基づく階層配賦基準
-これは、簡略化された組織を記述するために作成できる原価オブジェクト分析コード階層の例です。
+### <a name="example-hierarchy-allocation-bases-that-are-based-on-full-time-employees-in-the-organization"></a><span data-ttu-id="f07aa-508">例: 組織のフルタイム従業員に基づく階層配賦基準</span><span class="sxs-lookup"><span data-stu-id="f07aa-508">Example: Hierarchy allocation bases that are based on full-time employees in the organization</span></span>
+<span data-ttu-id="f07aa-509">これは、簡略化された組織を記述するために作成できる原価オブジェクト分析コード階層の例です。</span><span class="sxs-lookup"><span data-stu-id="f07aa-509">Here is an example of a cost object dimension hierarchy that can be created to describe a simplified organization.</span></span>
 
-| 階層名 | ノード レベル 0 | ノード レベル 1 | ノード レベル 2 | 分析コード メンバー |
+| <span data-ttu-id="f07aa-510">階層名</span><span class="sxs-lookup"><span data-stu-id="f07aa-510">Hierarchy name</span></span> | <span data-ttu-id="f07aa-511">ノード レベル 0</span><span class="sxs-lookup"><span data-stu-id="f07aa-511">Node level 0</span></span> | <span data-ttu-id="f07aa-512">ノード レベル 1</span><span class="sxs-lookup"><span data-stu-id="f07aa-512">Node level 1</span></span> | <span data-ttu-id="f07aa-513">ノード レベル 2</span><span class="sxs-lookup"><span data-stu-id="f07aa-513">Node level 2</span></span> | <span data-ttu-id="f07aa-514">分析コード メンバー</span><span class="sxs-lookup"><span data-stu-id="f07aa-514">Dimension members</span></span> |
 |----------------|--------------|--------------|--------------|-------------------|
-| 組織   | 最高経営責任者          | CFO          | FICO         | CC001             |
-| 組織   | 最高経営責任者          | CFO          | HR           | CC002             |
-| 組織   | 最高経営責任者          | CIO          | IT           | CC003             |
+| <span data-ttu-id="f07aa-515">組織</span><span class="sxs-lookup"><span data-stu-id="f07aa-515">Organization</span></span>   | <span data-ttu-id="f07aa-516">最高経営責任者</span><span class="sxs-lookup"><span data-stu-id="f07aa-516">CEO</span></span>          | <span data-ttu-id="f07aa-517">CFO</span><span class="sxs-lookup"><span data-stu-id="f07aa-517">CFO</span></span>          | <span data-ttu-id="f07aa-518">FICO</span><span class="sxs-lookup"><span data-stu-id="f07aa-518">FICO</span></span>         | <span data-ttu-id="f07aa-519">CC001</span><span class="sxs-lookup"><span data-stu-id="f07aa-519">CC001</span></span>             |
+| <span data-ttu-id="f07aa-520">組織</span><span class="sxs-lookup"><span data-stu-id="f07aa-520">Organization</span></span>   | <span data-ttu-id="f07aa-521">最高経営責任者</span><span class="sxs-lookup"><span data-stu-id="f07aa-521">CEO</span></span>          | <span data-ttu-id="f07aa-522">CFO</span><span class="sxs-lookup"><span data-stu-id="f07aa-522">CFO</span></span>          | <span data-ttu-id="f07aa-523">HR</span><span class="sxs-lookup"><span data-stu-id="f07aa-523">HR</span></span>           | <span data-ttu-id="f07aa-524">CC002</span><span class="sxs-lookup"><span data-stu-id="f07aa-524">CC002</span></span>             |
+| <span data-ttu-id="f07aa-525">組織</span><span class="sxs-lookup"><span data-stu-id="f07aa-525">Organization</span></span>   | <span data-ttu-id="f07aa-526">最高経営責任者</span><span class="sxs-lookup"><span data-stu-id="f07aa-526">CEO</span></span>          | <span data-ttu-id="f07aa-527">CIO</span><span class="sxs-lookup"><span data-stu-id="f07aa-527">CIO</span></span>          | <span data-ttu-id="f07aa-528">IT</span><span class="sxs-lookup"><span data-stu-id="f07aa-528">IT</span></span>           | <span data-ttu-id="f07aa-529">CC003</span><span class="sxs-lookup"><span data-stu-id="f07aa-529">CC003</span></span>             |
 
-前のセクションで作成された、FTE の事前に定義された分析コード メンバー配賦基準には、次のエントリが含まれます。
+<span data-ttu-id="f07aa-530">前のセクションで作成された、FTE の事前に定義された分析コード メンバー配賦基準には、次のエントリが含まれます。</span><span class="sxs-lookup"><span data-stu-id="f07aa-530">The FTE’s predefined dimension member allocation basis that was created in the previous section holds the following entries.</span></span>
 
-**統計エントリ**
+<span data-ttu-id="f07aa-531">**統計エントリ**</span><span class="sxs-lookup"><span data-stu-id="f07aa-531">**Statistical entries**</span></span>
 
-| 原価オブジェクト | 説明  | 会計日 | 統計分析コード メンバー | 説明 | 大きさ |
+| <span data-ttu-id="f07aa-532">原価オブジェクト</span><span class="sxs-lookup"><span data-stu-id="f07aa-532">Cost object</span></span> | <span data-ttu-id="f07aa-533">説明</span><span class="sxs-lookup"><span data-stu-id="f07aa-533">Description</span></span>  | <span data-ttu-id="f07aa-534">会計日</span><span class="sxs-lookup"><span data-stu-id="f07aa-534">Accounting date</span></span> | <span data-ttu-id="f07aa-535">統計分析コード メンバー</span><span class="sxs-lookup"><span data-stu-id="f07aa-535">Statistical dimension member</span></span> | <span data-ttu-id="f07aa-536">説明</span><span class="sxs-lookup"><span data-stu-id="f07aa-536">Description</span></span> | <span data-ttu-id="f07aa-537">大きさ</span><span class="sxs-lookup"><span data-stu-id="f07aa-537">Magnitude</span></span> |
 |-------------|------|-----------------|------------------------------|---------------------|-----------|
-| CC001       | HR   | 2017 年 1 月 31 日      | FTE の                        | フルタイム従業員 | 1.00      |
-| CC002       | FI   | 2017 年 1 月 31 日      | FTE の                        | フルタイム従業員 | 2.00      |
-| CC003       | IT   | 2017 年 1 月 31 日      | FTE の                        | フルタイム従業員 | 2.00      |
+| <span data-ttu-id="f07aa-538">CC001</span><span class="sxs-lookup"><span data-stu-id="f07aa-538">CC001</span></span>       | <span data-ttu-id="f07aa-539">HR</span><span class="sxs-lookup"><span data-stu-id="f07aa-539">HR</span></span>   | <span data-ttu-id="f07aa-540">2017 年 1 月 31 日</span><span class="sxs-lookup"><span data-stu-id="f07aa-540">31-01-2017</span></span>      | <span data-ttu-id="f07aa-541">FTE の</span><span class="sxs-lookup"><span data-stu-id="f07aa-541">FTE’s</span></span>                        | <span data-ttu-id="f07aa-542">フルタイム従業員</span><span class="sxs-lookup"><span data-stu-id="f07aa-542">Full time employees</span></span> | <span data-ttu-id="f07aa-543">1.00</span><span class="sxs-lookup"><span data-stu-id="f07aa-543">1.00</span></span>      |
+| <span data-ttu-id="f07aa-544">CC002</span><span class="sxs-lookup"><span data-stu-id="f07aa-544">CC002</span></span>       | <span data-ttu-id="f07aa-545">FI</span><span class="sxs-lookup"><span data-stu-id="f07aa-545">FI</span></span>   | <span data-ttu-id="f07aa-546">2017 年 1 月 31 日</span><span class="sxs-lookup"><span data-stu-id="f07aa-546">31-01-2017</span></span>      | <span data-ttu-id="f07aa-547">FTE の</span><span class="sxs-lookup"><span data-stu-id="f07aa-547">FTE’s</span></span>                        | <span data-ttu-id="f07aa-548">フルタイム従業員</span><span class="sxs-lookup"><span data-stu-id="f07aa-548">Full time employees</span></span> | <span data-ttu-id="f07aa-549">2.00</span><span class="sxs-lookup"><span data-stu-id="f07aa-549">2.00</span></span>      |
+| <span data-ttu-id="f07aa-550">CC003</span><span class="sxs-lookup"><span data-stu-id="f07aa-550">CC003</span></span>       | <span data-ttu-id="f07aa-551">IT</span><span class="sxs-lookup"><span data-stu-id="f07aa-551">IT</span></span>   | <span data-ttu-id="f07aa-552">2017 年 1 月 31 日</span><span class="sxs-lookup"><span data-stu-id="f07aa-552">31-01-2017</span></span>      | <span data-ttu-id="f07aa-553">FTE の</span><span class="sxs-lookup"><span data-stu-id="f07aa-553">FTE’s</span></span>                        | <span data-ttu-id="f07aa-554">フルタイム従業員</span><span class="sxs-lookup"><span data-stu-id="f07aa-554">Full time employees</span></span> | <span data-ttu-id="f07aa-555">2.00</span><span class="sxs-lookup"><span data-stu-id="f07aa-555">2.00</span></span>      |
 
-コストは、組織の最高財務責任者 (CFO) に報告するコスト センター間で配分する必要があります。 正しい配賦率は、コスト センターごとのフルタイム従業員 (Fte) の数であることを認識できます。
+<span data-ttu-id="f07aa-556">コストは、組織の最高財務責任者 (CFO) に報告するコスト センター間で配分する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f07aa-556">A cost must be distributed between cost centers that report to the organization's chief financial officer (CFO).</span></span> <span data-ttu-id="f07aa-557">正しい配賦率は、コスト センターごとのフルタイム従業員 (Fte) の数であることを認識できます。</span><span class="sxs-lookup"><span data-stu-id="f07aa-557">It's acknowledged that the correct allocation ratio is the number of full-time employees (FTEs) by cost center.</span></span>
 
-**階層配賦基準**
+<span data-ttu-id="f07aa-558">**階層配賦基準**</span><span class="sxs-lookup"><span data-stu-id="f07aa-558">**Hierarchy allocation bases**</span></span>
 
-| 氏名                  | 配賦基準 | 原価オブジェクト分析コード階層 | 原価オブジェクト分析コード階層ノード |
+| <span data-ttu-id="f07aa-559">氏名</span><span class="sxs-lookup"><span data-stu-id="f07aa-559">Name</span></span>                  | <span data-ttu-id="f07aa-560">配賦基準</span><span class="sxs-lookup"><span data-stu-id="f07aa-560">Allocation base</span></span> | <span data-ttu-id="f07aa-561">原価オブジェクト分析コード階層</span><span class="sxs-lookup"><span data-stu-id="f07aa-561">Cost object dimension hierarchy</span></span> | <span data-ttu-id="f07aa-562">原価オブジェクト分析コード階層ノード</span><span class="sxs-lookup"><span data-stu-id="f07aa-562">Cost object dimension hierarchy node</span></span> |
 |-----------------------|-----------------|---------------------------------|--------------------------------------|
-| CFO の FTE の数 | FTE の           | 組織                    | CFO                                  |
+| <span data-ttu-id="f07aa-563">CFO の FTE の数</span><span class="sxs-lookup"><span data-stu-id="f07aa-563">Number of FTEs in CFO</span></span> | <span data-ttu-id="f07aa-564">FTE の</span><span class="sxs-lookup"><span data-stu-id="f07aa-564">FTE’s</span></span>           | <span data-ttu-id="f07aa-565">組織</span><span class="sxs-lookup"><span data-stu-id="f07aa-565">Organization</span></span>                    | <span data-ttu-id="f07aa-566">CFO</span><span class="sxs-lookup"><span data-stu-id="f07aa-566">CFO</span></span>                                  |
 
-プレビュー機能を使用すると、作成された階層配賦基準を、システム内の統計エントリに基づいて検証できます。
+<span data-ttu-id="f07aa-567">プレビュー機能を使用すると、作成された階層配賦基準を、システム内の統計エントリに基づいて検証できます。</span><span class="sxs-lookup"><span data-stu-id="f07aa-567">A Preview function lets you validate the hierarchy allocation basis that is created, based on statistical entries in the system.</span></span>
 
-**配賦基準の詳細**
+<span data-ttu-id="f07aa-568">**配賦基準の詳細**</span><span class="sxs-lookup"><span data-stu-id="f07aa-568">**Allocation base details**</span></span>
 
-| 原価オブジェクト | 説明  |  大きさ |
+| <span data-ttu-id="f07aa-569">原価オブジェクト</span><span class="sxs-lookup"><span data-stu-id="f07aa-569">Cost object</span></span> | <span data-ttu-id="f07aa-570">説明</span><span class="sxs-lookup"><span data-stu-id="f07aa-570">Description</span></span>  |  <span data-ttu-id="f07aa-571">大きさ</span><span class="sxs-lookup"><span data-stu-id="f07aa-571">Magnitude</span></span> |
 |-------------|------|------------|
-| CC001       | HR   | 1.00       |
-| CC002       | FI   | 2.00       |
+| <span data-ttu-id="f07aa-572">CC001</span><span class="sxs-lookup"><span data-stu-id="f07aa-572">CC001</span></span>       | <span data-ttu-id="f07aa-573">HR</span><span class="sxs-lookup"><span data-stu-id="f07aa-573">HR</span></span>   | <span data-ttu-id="f07aa-574">1.00</span><span class="sxs-lookup"><span data-stu-id="f07aa-574">1.00</span></span>       |
+| <span data-ttu-id="f07aa-575">CC002</span><span class="sxs-lookup"><span data-stu-id="f07aa-575">CC002</span></span>       | <span data-ttu-id="f07aa-576">FI</span><span class="sxs-lookup"><span data-stu-id="f07aa-576">FI</span></span>   | <span data-ttu-id="f07aa-577">2.00</span><span class="sxs-lookup"><span data-stu-id="f07aa-577">2.00</span></span>       |
 
-次のコスト配分ルールの例は、CFO 階層配賦基準内の FTE の数が配賦基準として割り当てられた場合です。
+<span data-ttu-id="f07aa-578">次のコスト配分ルールの例は、CFO 階層配賦基準内の FTE の数が配賦基準として割り当てられた場合です。</span><span class="sxs-lookup"><span data-stu-id="f07aa-578">Here is an example of a cost distribution rule if the Number of FTEs in CFO hierarchy allocation basis is assigned as the allocation base in it.</span></span>
 
-| 原価オブジェクト | 説明  | 大きさ | 配賦係数 |
+| <span data-ttu-id="f07aa-579">原価オブジェクト</span><span class="sxs-lookup"><span data-stu-id="f07aa-579">Cost object</span></span> | <span data-ttu-id="f07aa-580">説明</span><span class="sxs-lookup"><span data-stu-id="f07aa-580">Description</span></span>  | <span data-ttu-id="f07aa-581">大きさ</span><span class="sxs-lookup"><span data-stu-id="f07aa-581">Magnitude</span></span> | <span data-ttu-id="f07aa-582">配賦係数</span><span class="sxs-lookup"><span data-stu-id="f07aa-582">Allocation factor</span></span> |
 |-------------|------|-----------|-------------------|
-| CC001       | HR   | 1.00      | (1/3) × 金額    |
-| CC002       | FI   | 2.00      | (2/3) × 金額    |
+| <span data-ttu-id="f07aa-583">CC001</span><span class="sxs-lookup"><span data-stu-id="f07aa-583">CC001</span></span>       | <span data-ttu-id="f07aa-584">HR</span><span class="sxs-lookup"><span data-stu-id="f07aa-584">HR</span></span>   | <span data-ttu-id="f07aa-585">1.00</span><span class="sxs-lookup"><span data-stu-id="f07aa-585">1.00</span></span>      | <span data-ttu-id="f07aa-586">(1/3) × 金額</span><span class="sxs-lookup"><span data-stu-id="f07aa-586">(1/3) × Amount</span></span>    |
+| <span data-ttu-id="f07aa-587">CC002</span><span class="sxs-lookup"><span data-stu-id="f07aa-587">CC002</span></span>       | <span data-ttu-id="f07aa-588">FI</span><span class="sxs-lookup"><span data-stu-id="f07aa-588">FI</span></span>   | <span data-ttu-id="f07aa-589">2.00</span><span class="sxs-lookup"><span data-stu-id="f07aa-589">2.00</span></span>      | <span data-ttu-id="f07aa-590">(2/3) × 金額</span><span class="sxs-lookup"><span data-stu-id="f07aa-590">(2/3) × Amount</span></span>    |
 
-## <a name="formula-allocation-bases"></a>フォーミュラの配賦基準
+## <a name="formula-allocation-bases"></a><span data-ttu-id="f07aa-591">フォーミュラの配賦基準</span><span class="sxs-lookup"><span data-stu-id="f07aa-591">Formula allocation bases</span></span>
 
-フォーミュラの配賦基準では、正しい配賦基準を実現する高度な式を定義できます。 フォーミュラ配賦基準を手動で作成することができます。
+<span data-ttu-id="f07aa-592">フォーミュラの配賦基準では、正しい配賦基準を実現する高度な式を定義できます。</span><span class="sxs-lookup"><span data-stu-id="f07aa-592">Formula allocation bases let you define advanced formulas to achieve the correct allocation basis.</span></span> <span data-ttu-id="f07aa-593">フォーミュラ配賦基準を手動で作成することができます。</span><span class="sxs-lookup"><span data-stu-id="f07aa-593">You can manually create formula allocation bases.</span></span>
 
-フォーミュラ配賦基準を作成するときは、どの統計分析コードと原価要素分析コードを式の基準にするかを選択します。 以前に選択した分析コードに起因するすべての配賦基準は、フォーミュラ配賦基準で使用できます。
+<span data-ttu-id="f07aa-594">フォーミュラ配賦基準を作成するときは、どの統計分析コードと原価要素分析コードを式の基準にするかを選択します。</span><span class="sxs-lookup"><span data-stu-id="f07aa-594">When you create a formula allocation base, you select which statistical dimension and cost element dimension should be the basis for the formula.</span></span> <span data-ttu-id="f07aa-595">以前に選択した分析コードに起因するすべての配賦基準は、フォーミュラ配賦基準で使用できます。</span><span class="sxs-lookup"><span data-stu-id="f07aa-595">All allocation bases that come from the previously selected dimensions can be used in a formula allocation base.</span></span>
 
 > [!NOTE]
-> 以前に定義されているフォーミュラ配賦基準は、新しいフォーミュラ配賦基準の定義に使用できます。
+> <span data-ttu-id="f07aa-596">以前に定義されているフォーミュラ配賦基準は、新しいフォーミュラ配賦基準の定義に使用できます。</span><span class="sxs-lookup"><span data-stu-id="f07aa-596">Previously defined formula allocation bases can be used to define a new formula allocation base.</span></span>
 
-フォーミュラ配賦基準の係数では、エイリアスを作成し、配賦基準または定数のどちらかに関連付けます。 エイリアスを使用して式を定義します。
+<span data-ttu-id="f07aa-597">フォーミュラ配賦基準の係数では、エイリアスを作成し、配賦基準または定数のどちらかに関連付けます。</span><span class="sxs-lookup"><span data-stu-id="f07aa-597">In formula allocation base factors, you create an alias, and associate it with either an allocation base or a constant.</span></span> <span data-ttu-id="f07aa-598">エイリアスを使用して式を定義します。</span><span class="sxs-lookup"><span data-stu-id="f07aa-598">The aliases are then used to define the formula.</span></span>
 
-式の定義には次の演算子を使用できます。
+<span data-ttu-id="f07aa-599">式の定義には次の演算子を使用できます。</span><span class="sxs-lookup"><span data-stu-id="f07aa-599">You can use the following operators to define your formula.</span></span>
 
-| 記号:  | テキスト           |
+| <span data-ttu-id="f07aa-600">記号: </span><span class="sxs-lookup"><span data-stu-id="f07aa-600">Symbols</span></span> | <span data-ttu-id="f07aa-601">テキスト</span><span class="sxs-lookup"><span data-stu-id="f07aa-601">Text</span></span>           |
 |---------|----------------|
-| ( )     | かっこ    |
-| \<      | より小さい   |
-| \>      | より大きい    |
-| +       | 追加       |
-| -       | 減算    |
-| \*      | 乗算 |
+| <span data-ttu-id="f07aa-602">( )</span><span class="sxs-lookup"><span data-stu-id="f07aa-602">( )</span></span>     | <span data-ttu-id="f07aa-603">かっこ</span><span class="sxs-lookup"><span data-stu-id="f07aa-603">Parentheses</span></span>    |
+| \<      | <span data-ttu-id="f07aa-604">より小さい</span><span class="sxs-lookup"><span data-stu-id="f07aa-604">Smaller than</span></span>   |
+| \>      | <span data-ttu-id="f07aa-605">より大きい</span><span class="sxs-lookup"><span data-stu-id="f07aa-605">Larger than</span></span>    |
+| +       | <span data-ttu-id="f07aa-606">追加</span><span class="sxs-lookup"><span data-stu-id="f07aa-606">Addition</span></span>       |
+| <span data-ttu-id="f07aa-607">-</span><span class="sxs-lookup"><span data-stu-id="f07aa-607">–</span></span>       | <span data-ttu-id="f07aa-608">減算</span><span class="sxs-lookup"><span data-stu-id="f07aa-608">Subtraction</span></span>    |
+| \*      | <span data-ttu-id="f07aa-609">乗算</span><span class="sxs-lookup"><span data-stu-id="f07aa-609">Multiplication</span></span> |
 
-従来型の **IF** ステートメントはサポートされていません。 ただし、ステートメントを作成し、それが正しいかを検証できます。
+<span data-ttu-id="f07aa-610">従来型の **IF** ステートメントはサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="f07aa-610">Traditional **IF** statements aren't supported.</span></span> <span data-ttu-id="f07aa-611">ただし、ステートメントを作成し、それが正しいかを検証できます。</span><span class="sxs-lookup"><span data-stu-id="f07aa-611">However, you can create statements and validate whether they are true.</span></span>
 
-| ステートメント | 検証 | 結果 |
+| <span data-ttu-id="f07aa-612">ステートメント</span><span class="sxs-lookup"><span data-stu-id="f07aa-612">Statement</span></span> | <span data-ttu-id="f07aa-613">検証</span><span class="sxs-lookup"><span data-stu-id="f07aa-613">Validation</span></span> | <span data-ttu-id="f07aa-614">結果</span><span class="sxs-lookup"><span data-stu-id="f07aa-614">Result</span></span> |
 |-----------|------------|--------|
-| a \> b    | True       | 1      |
-| a \> b    | いいえ      | 0      |
+| <span data-ttu-id="f07aa-615">a \> b</span><span class="sxs-lookup"><span data-stu-id="f07aa-615">a \> b</span></span>    | <span data-ttu-id="f07aa-616">True</span><span class="sxs-lookup"><span data-stu-id="f07aa-616">True</span></span>       | <span data-ttu-id="f07aa-617">1</span><span class="sxs-lookup"><span data-stu-id="f07aa-617">1</span></span>      |
+| <span data-ttu-id="f07aa-618">a \> b</span><span class="sxs-lookup"><span data-stu-id="f07aa-618">a \> b</span></span>    | <span data-ttu-id="f07aa-619">いいえ</span><span class="sxs-lookup"><span data-stu-id="f07aa-619">False</span></span>      | <span data-ttu-id="f07aa-620">0</span><span class="sxs-lookup"><span data-stu-id="f07aa-620">0</span></span>      |
 
-### <a name="example-1-a-simple-formula"></a>例 1: 単純な式
+### <a name="example-1-a-simple-formula"></a><span data-ttu-id="f07aa-621">例 1: 単純な式</span><span class="sxs-lookup"><span data-stu-id="f07aa-621">Example 1: A simple formula</span></span>
 
-電気代は多くの場合 2 つの部分で構成されます。
+<span data-ttu-id="f07aa-622">電気代は多くの場合 2 つの部分で構成されます。</span><span class="sxs-lookup"><span data-stu-id="f07aa-622">Electricity bills often consist of two parts:</span></span>
 
-- グリッドに接続されている固定料金
-- kWh あたりの消費に関連付けられているコスト
+- <span data-ttu-id="f07aa-623">グリッドに接続されている固定料金</span><span class="sxs-lookup"><span data-stu-id="f07aa-623">A fixed fee for being connected to grid</span></span>
+- <span data-ttu-id="f07aa-624">kWh あたりの消費に関連付けられているコスト</span><span class="sxs-lookup"><span data-stu-id="f07aa-624">A cost that is associated with consumption per kWh</span></span>
 
-電気の事前に定義された分析コード メンバー配賦基準は既に定義され、これらの値を保持しています。
+<span data-ttu-id="f07aa-625">電気の事前に定義された分析コード メンバー配賦基準は既に定義され、これらの値を保持しています。</span><span class="sxs-lookup"><span data-stu-id="f07aa-625">The Electricity predefined dimension member allocation basis has already been defined and holds these values.</span></span>
 
-**統計エントリ**
+<span data-ttu-id="f07aa-626">**統計エントリ**</span><span class="sxs-lookup"><span data-stu-id="f07aa-626">**Statistical entries**</span></span>
 
-| 原価オブジェクト | 氏名 | 会計日 | 統計分析コード メンバー | 説明             | 大きさ |
+| <span data-ttu-id="f07aa-627">原価オブジェクト</span><span class="sxs-lookup"><span data-stu-id="f07aa-627">Cost object</span></span> | <span data-ttu-id="f07aa-628">氏名</span><span class="sxs-lookup"><span data-stu-id="f07aa-628">Name</span></span> | <span data-ttu-id="f07aa-629">会計日</span><span class="sxs-lookup"><span data-stu-id="f07aa-629">Accounting date</span></span> | <span data-ttu-id="f07aa-630">統計分析コード メンバー</span><span class="sxs-lookup"><span data-stu-id="f07aa-630">Statistical dimension member</span></span> | <span data-ttu-id="f07aa-631">説明</span><span class="sxs-lookup"><span data-stu-id="f07aa-631">Description</span></span>             | <span data-ttu-id="f07aa-632">大きさ</span><span class="sxs-lookup"><span data-stu-id="f07aa-632">Magnitude</span></span> |
 |-------------|------|-----------------|------------------------------|-------------------------|-----------|
-| CC001       | HR   | 2017 年 1 月 31 日      | 電気                  | 電気消費 | 2,450.00  |
-| CC002       | FI   | 2017 年 1 月 31 日      | 電気                  | 電気消費 | 4,100.00  |
-| CC003       | IT   | 2017 年 1 月 31 日      | 電気                  | 電気消費 | 15,000.00 |
+| <span data-ttu-id="f07aa-633">CC001</span><span class="sxs-lookup"><span data-stu-id="f07aa-633">CC001</span></span>       | <span data-ttu-id="f07aa-634">HR</span><span class="sxs-lookup"><span data-stu-id="f07aa-634">HR</span></span>   | <span data-ttu-id="f07aa-635">2017 年 1 月 31 日</span><span class="sxs-lookup"><span data-stu-id="f07aa-635">31-01-2017</span></span>      | <span data-ttu-id="f07aa-636">電気</span><span class="sxs-lookup"><span data-stu-id="f07aa-636">Electricity</span></span>                  | <span data-ttu-id="f07aa-637">電気消費</span><span class="sxs-lookup"><span data-stu-id="f07aa-637">Electricity consumption</span></span> | <span data-ttu-id="f07aa-638">2,450.00</span><span class="sxs-lookup"><span data-stu-id="f07aa-638">2,450.00</span></span>  |
+| <span data-ttu-id="f07aa-639">CC002</span><span class="sxs-lookup"><span data-stu-id="f07aa-639">CC002</span></span>       | <span data-ttu-id="f07aa-640">FI</span><span class="sxs-lookup"><span data-stu-id="f07aa-640">FI</span></span>   | <span data-ttu-id="f07aa-641">2017 年 1 月 31 日</span><span class="sxs-lookup"><span data-stu-id="f07aa-641">31-01-2017</span></span>      | <span data-ttu-id="f07aa-642">電気</span><span class="sxs-lookup"><span data-stu-id="f07aa-642">Electricity</span></span>                  | <span data-ttu-id="f07aa-643">電気消費</span><span class="sxs-lookup"><span data-stu-id="f07aa-643">Electricity consumption</span></span> | <span data-ttu-id="f07aa-644">4,100.00</span><span class="sxs-lookup"><span data-stu-id="f07aa-644">4,100.00</span></span>  |
+| <span data-ttu-id="f07aa-645">CC003</span><span class="sxs-lookup"><span data-stu-id="f07aa-645">CC003</span></span>       | <span data-ttu-id="f07aa-646">IT</span><span class="sxs-lookup"><span data-stu-id="f07aa-646">IT</span></span>   | <span data-ttu-id="f07aa-647">2017 年 1 月 31 日</span><span class="sxs-lookup"><span data-stu-id="f07aa-647">31-01-2017</span></span>      | <span data-ttu-id="f07aa-648">電気</span><span class="sxs-lookup"><span data-stu-id="f07aa-648">Electricity</span></span>                  | <span data-ttu-id="f07aa-649">電気消費</span><span class="sxs-lookup"><span data-stu-id="f07aa-649">Electricity consumption</span></span> | <span data-ttu-id="f07aa-650">15,000.00</span><span class="sxs-lookup"><span data-stu-id="f07aa-650">15,000.00</span></span> |
 
-電気を消費する原価オブジェクトに固定費を均等に振り分ける必要がある場合、コストを配賦する 2 つのオプションがあります。
+<span data-ttu-id="f07aa-651">電気を消費する原価オブジェクトに固定費を均等に振り分ける必要がある場合、コストを配賦する 2 つのオプションがあります。</span><span class="sxs-lookup"><span data-stu-id="f07aa-651">If the fixed fee must now be evenly spread over cost objects that consume electricity, you have two options for allocating the costs:</span></span>
 
-- 電気固定費という事前に定義された配賦基準を新たに作成し、電気を消費する各原価オブジェクトに 1.00 の統計測定を適用します。
-- 電気固定費というフォーミュラ配賦基準を作成し、システムで既に定義されている電気の事前に定義された配賦基準を利用します。 このオプションのメリットは、1 つの電気統計分析コード メンバーだけに原価計算にデータを読み込む必要があるということです。
+- <span data-ttu-id="f07aa-652">電気固定費という事前に定義された配賦基準を新たに作成し、電気を消費する各原価オブジェクトに 1.00 の統計測定を適用します。</span><span class="sxs-lookup"><span data-stu-id="f07aa-652">Create a new predefined allocation base, Electricity fixed, and then apply a statistical measure of 1.00 for each cost object that consumed electricity.</span></span>
+- <span data-ttu-id="f07aa-653">電気固定費というフォーミュラ配賦基準を作成し、システムで既に定義されている電気の事前に定義された配賦基準を利用します。</span><span class="sxs-lookup"><span data-stu-id="f07aa-653">Create a formula allocation base, Electricity fixed, that takes advantage of the Electricity predefined allocation base that is already defined in the system.</span></span> <span data-ttu-id="f07aa-654">このオプションのメリットは、1 つの電気統計分析コード メンバーだけに原価計算にデータを読み込む必要があるということです。</span><span class="sxs-lookup"><span data-stu-id="f07aa-654">The benefit of this option is that data must be loaded into Cost accounting for only one Electricity statistical dimension member.</span></span>
 
-**フォーミュラ配賦基準** 
+<span data-ttu-id="f07aa-655">**フォーミュラ配賦基準**</span><span class="sxs-lookup"><span data-stu-id="f07aa-655">**Formula allocation base**</span></span> 
 
-| 氏名              | 原価要素分析コード | 統計分析コード | フォーミュラ |
+| <span data-ttu-id="f07aa-656">氏名</span><span class="sxs-lookup"><span data-stu-id="f07aa-656">Name</span></span>              | <span data-ttu-id="f07aa-657">原価要素分析コード</span><span class="sxs-lookup"><span data-stu-id="f07aa-657">Cost element dimension</span></span> | <span data-ttu-id="f07aa-658">統計分析コード</span><span class="sxs-lookup"><span data-stu-id="f07aa-658">Statistical dimension</span></span> | <span data-ttu-id="f07aa-659">フォーミュラ</span><span class="sxs-lookup"><span data-stu-id="f07aa-659">Formula</span></span> |
 |-------------------|------------------------|-----------------------|---------|
-| 電気固定費 |                        | 統計要素  |         |
+| <span data-ttu-id="f07aa-660">電気固定費</span><span class="sxs-lookup"><span data-stu-id="f07aa-660">Electricity fixed</span></span> |                        | <span data-ttu-id="f07aa-661">統計要素</span><span class="sxs-lookup"><span data-stu-id="f07aa-661">Statistical elements</span></span>  |         |
 
-[**フォーミュラ**] フィールドに入力する前に、フォーミュラで使用する必要があるエイリアスを指定する必要があります。
+<span data-ttu-id="f07aa-662">[**フォーミュラ**] フィールドに入力する前に、フォーミュラで使用する必要があるエイリアスを指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f07aa-662">Before the **Formula** field can be filled, you must specify the alias that should be used in the formula.</span></span>
 
-**フォーミュラ配賦基準係数**
+<span data-ttu-id="f07aa-663">**フォーミュラ配賦基準係数**</span><span class="sxs-lookup"><span data-stu-id="f07aa-663">**Formula allocation base factors**</span></span>
 
-| エイリアス | 定数 | 配賦基準 |
+| <span data-ttu-id="f07aa-664">エイリアス</span><span class="sxs-lookup"><span data-stu-id="f07aa-664">Alias</span></span> | <span data-ttu-id="f07aa-665">定数</span><span class="sxs-lookup"><span data-stu-id="f07aa-665">Constant</span></span> | <span data-ttu-id="f07aa-666">配賦基準</span><span class="sxs-lookup"><span data-stu-id="f07aa-666">Allocation base</span></span> |
 |-------|----------|-----------------|
-| a     |          | 電気     |
-| b     | 0.01     |                 |
+| <span data-ttu-id="f07aa-667">a</span><span class="sxs-lookup"><span data-stu-id="f07aa-667">a</span></span>     |          | <span data-ttu-id="f07aa-668">電気</span><span class="sxs-lookup"><span data-stu-id="f07aa-668">Electricity</span></span>     |
+| <span data-ttu-id="f07aa-669">b</span><span class="sxs-lookup"><span data-stu-id="f07aa-669">b</span></span>     | <span data-ttu-id="f07aa-670">0.01</span><span class="sxs-lookup"><span data-stu-id="f07aa-670">0.01</span></span>     |                 |
 
-0 (ゼロ) が定数としてサポートされていないことに注意してください。
+<span data-ttu-id="f07aa-671">0 (ゼロ) が定数としてサポートされていないことに注意してください。</span><span class="sxs-lookup"><span data-stu-id="f07aa-671">Note that 0 (zero) isn't supported as a constant.</span></span>
 
-**フォーミュラ配賦基準**
+<span data-ttu-id="f07aa-672">**フォーミュラ配賦基準**</span><span class="sxs-lookup"><span data-stu-id="f07aa-672">**Formula allocation base**</span></span>
 
-| 氏名              | 原価要素分析コード | 統計分析コード | フォーミュラ |
+| <span data-ttu-id="f07aa-673">氏名</span><span class="sxs-lookup"><span data-stu-id="f07aa-673">Name</span></span>              | <span data-ttu-id="f07aa-674">原価要素分析コード</span><span class="sxs-lookup"><span data-stu-id="f07aa-674">Cost element dimension</span></span> | <span data-ttu-id="f07aa-675">統計分析コード</span><span class="sxs-lookup"><span data-stu-id="f07aa-675">Statistical dimension</span></span> | <span data-ttu-id="f07aa-676">フォーミュラ</span><span class="sxs-lookup"><span data-stu-id="f07aa-676">Formula</span></span> |
 |-------------------|------------------------|-----------------------|---------|
-| 電気固定費 |                        | 統計要素  | a \> b  |
+| <span data-ttu-id="f07aa-677">電気固定費</span><span class="sxs-lookup"><span data-stu-id="f07aa-677">Electricity fixed</span></span> |                        | <span data-ttu-id="f07aa-678">統計要素</span><span class="sxs-lookup"><span data-stu-id="f07aa-678">Statistical elements</span></span>  | <span data-ttu-id="f07aa-679">a \> b</span><span class="sxs-lookup"><span data-stu-id="f07aa-679">a \> b</span></span>  |
 
-プレビュー機能を使用すると、作成されたフォーミュラ配賦基を、システム内の統計エントリに基づいて検証できます。
+<span data-ttu-id="f07aa-680">プレビュー機能を使用すると、作成されたフォーミュラ配賦基を、システム内の統計エントリに基づいて検証できます。</span><span class="sxs-lookup"><span data-stu-id="f07aa-680">A Preview function lets you validate the formula allocation base that is created, based on statistical entries in the system.</span></span>
 
-**配賦基準の詳細**
+<span data-ttu-id="f07aa-681">**配賦基準の詳細**</span><span class="sxs-lookup"><span data-stu-id="f07aa-681">**Allocation base details**</span></span>
 
-| 原価オブジェクト | 説明  | フォーミュラ           | 大きさ |
+| <span data-ttu-id="f07aa-682">原価オブジェクト</span><span class="sxs-lookup"><span data-stu-id="f07aa-682">Cost object</span></span> | <span data-ttu-id="f07aa-683">説明</span><span class="sxs-lookup"><span data-stu-id="f07aa-683">Description</span></span>  | <span data-ttu-id="f07aa-684">フォーミュラ</span><span class="sxs-lookup"><span data-stu-id="f07aa-684">Formula</span></span>           | <span data-ttu-id="f07aa-685">大きさ</span><span class="sxs-lookup"><span data-stu-id="f07aa-685">Magnitude</span></span> |
 |-------------|------|-------------------|-----------|
-| CC001       | HR   | 2,450.00 \> 0.01  | 1.00      |
-| CC002       | FI   | 4,100.00 \> 0.01  | 1.00      |
-| CC003       | IT   | 15,000.00 \> 0.01 | 1.00      |
+| <span data-ttu-id="f07aa-686">CC001</span><span class="sxs-lookup"><span data-stu-id="f07aa-686">CC001</span></span>       | <span data-ttu-id="f07aa-687">HR</span><span class="sxs-lookup"><span data-stu-id="f07aa-687">HR</span></span>   | <span data-ttu-id="f07aa-688">2,450.00 \> 0.01</span><span class="sxs-lookup"><span data-stu-id="f07aa-688">2,450.00 \> 0.01</span></span>  | <span data-ttu-id="f07aa-689">1.00</span><span class="sxs-lookup"><span data-stu-id="f07aa-689">1.00</span></span>      |
+| <span data-ttu-id="f07aa-690">CC002</span><span class="sxs-lookup"><span data-stu-id="f07aa-690">CC002</span></span>       | <span data-ttu-id="f07aa-691">FI</span><span class="sxs-lookup"><span data-stu-id="f07aa-691">FI</span></span>   | <span data-ttu-id="f07aa-692">4,100.00 \> 0.01</span><span class="sxs-lookup"><span data-stu-id="f07aa-692">4,100.00 \> 0.01</span></span>  | <span data-ttu-id="f07aa-693">1.00</span><span class="sxs-lookup"><span data-stu-id="f07aa-693">1.00</span></span>      |
+| <span data-ttu-id="f07aa-694">CC003</span><span class="sxs-lookup"><span data-stu-id="f07aa-694">CC003</span></span>       | <span data-ttu-id="f07aa-695">IT</span><span class="sxs-lookup"><span data-stu-id="f07aa-695">IT</span></span>   | <span data-ttu-id="f07aa-696">15,000.00 \> 0.01</span><span class="sxs-lookup"><span data-stu-id="f07aa-696">15,000.00 \> 0.01</span></span> | <span data-ttu-id="f07aa-697">1.00</span><span class="sxs-lookup"><span data-stu-id="f07aa-697">1.00</span></span>      |
 
-次のコスト配分ルールの例は、電気のフォーミュラ配賦基準が配賦基準として割り当てられた場合です。
+<span data-ttu-id="f07aa-698">次のコスト配分ルールの例は、電気のフォーミュラ配賦基準が配賦基準として割り当てられた場合です。</span><span class="sxs-lookup"><span data-stu-id="f07aa-698">Here is an example of a cost distribution rule if the Electricity formula allocation base is assigned as the allocation base in it.</span></span>
 
-**コスト オブジェクト規模配賦係数**
+<span data-ttu-id="f07aa-699">**コスト オブジェクト規模配賦係数**</span><span class="sxs-lookup"><span data-stu-id="f07aa-699">**Cost object magnitude allocation factor**</span></span>
 
-| 原価オブジェクト | 氏名 | 大きさ |  配賦係数 |
+| <span data-ttu-id="f07aa-700">原価オブジェクト</span><span class="sxs-lookup"><span data-stu-id="f07aa-700">Cost object</span></span> | <span data-ttu-id="f07aa-701">氏名</span><span class="sxs-lookup"><span data-stu-id="f07aa-701">Name</span></span> | <span data-ttu-id="f07aa-702">大きさ</span><span class="sxs-lookup"><span data-stu-id="f07aa-702">Magnitude</span></span> |  <span data-ttu-id="f07aa-703">配賦係数</span><span class="sxs-lookup"><span data-stu-id="f07aa-703">Allocation factor</span></span> |
 |-------------|------|-----------|--------------------|
-| CC001       | HR   | 1.00      | (1/3) × 金額     |
-| CC002       | FI   | 1.00      | (1/3) × 金額     |
-| CC003       | IT   | 1.00      | (1/3) × 金額     |
+| <span data-ttu-id="f07aa-704">CC001</span><span class="sxs-lookup"><span data-stu-id="f07aa-704">CC001</span></span>       | <span data-ttu-id="f07aa-705">HR</span><span class="sxs-lookup"><span data-stu-id="f07aa-705">HR</span></span>   | <span data-ttu-id="f07aa-706">1.00</span><span class="sxs-lookup"><span data-stu-id="f07aa-706">1.00</span></span>      | <span data-ttu-id="f07aa-707">(1/3) × 金額</span><span class="sxs-lookup"><span data-stu-id="f07aa-707">(1/3) × Amount</span></span>     |
+| <span data-ttu-id="f07aa-708">CC002</span><span class="sxs-lookup"><span data-stu-id="f07aa-708">CC002</span></span>       | <span data-ttu-id="f07aa-709">FI</span><span class="sxs-lookup"><span data-stu-id="f07aa-709">FI</span></span>   | <span data-ttu-id="f07aa-710">1.00</span><span class="sxs-lookup"><span data-stu-id="f07aa-710">1.00</span></span>      | <span data-ttu-id="f07aa-711">(1/3) × 金額</span><span class="sxs-lookup"><span data-stu-id="f07aa-711">(1/3) × Amount</span></span>     |
+| <span data-ttu-id="f07aa-712">CC003</span><span class="sxs-lookup"><span data-stu-id="f07aa-712">CC003</span></span>       | <span data-ttu-id="f07aa-713">IT</span><span class="sxs-lookup"><span data-stu-id="f07aa-713">IT</span></span>   | <span data-ttu-id="f07aa-714">1.00</span><span class="sxs-lookup"><span data-stu-id="f07aa-714">1.00</span></span>      | <span data-ttu-id="f07aa-715">(1/3) × 金額</span><span class="sxs-lookup"><span data-stu-id="f07aa-715">(1/3) × Amount</span></span>     |
 
-### <a name="example-2-an-advanced-formula"></a>例 2: 高度な式
-この例では、電気のコストは実際に消費される kWh だけによるわけではありません。 管理は、電気使用量を減らすためのインセンティブを組み込みたいと思っています。 
+### <a name="example-2-an-advanced-formula"></a><span data-ttu-id="f07aa-716">例 2: 高度な式</span><span class="sxs-lookup"><span data-stu-id="f07aa-716">Example 2: An advanced formula</span></span>
+<span data-ttu-id="f07aa-717">この例では、電気のコストは実際に消費される kWh だけによるわけではありません。</span><span class="sxs-lookup"><span data-stu-id="f07aa-717">For this example, the cost of electricity should not just follow the actual electricity that is consumed in kWh.</span></span> <span data-ttu-id="f07aa-718">管理は、電気使用量を減らすためのインセンティブを組み込みたいと思っています。</span><span class="sxs-lookup"><span data-stu-id="f07aa-718">Management wants to incorporate incentive for lowering electricity usage.</span></span> 
 
-| ルール              | 率 | 
+| <span data-ttu-id="f07aa-719">ルール</span><span class="sxs-lookup"><span data-stu-id="f07aa-719">Rule</span></span>              | <span data-ttu-id="f07aa-720">率</span><span class="sxs-lookup"><span data-stu-id="f07aa-720">Rate</span></span> | 
 |-------------------|------|
-| a <= 10000,00 kWh | 0.75 |
-| a > 10000,00 kWh  | 1.15 |
+| <span data-ttu-id="f07aa-721">a <= 10000,00 kWh</span><span class="sxs-lookup"><span data-stu-id="f07aa-721">a <= 10000,00 kWh</span></span> | <span data-ttu-id="f07aa-722">0.75</span><span class="sxs-lookup"><span data-stu-id="f07aa-722">0.75</span></span> |
+| <span data-ttu-id="f07aa-723">a > 10000,00 kWh</span><span class="sxs-lookup"><span data-stu-id="f07aa-723">a > 10000,00 kWh</span></span>  | <span data-ttu-id="f07aa-724">1.15</span><span class="sxs-lookup"><span data-stu-id="f07aa-724">1.15</span></span> |
 
-新しいフォーミュラ配賦基準、電気使用量、が作成されます。
+<span data-ttu-id="f07aa-725">新しいフォーミュラ配賦基準、電気使用量、が作成されます。</span><span class="sxs-lookup"><span data-stu-id="f07aa-725">A new formula allocation base, Electricity usage, is created.</span></span>
 
-**フォーミュラ配賦基準**
+<span data-ttu-id="f07aa-726">**フォーミュラ配賦基準**</span><span class="sxs-lookup"><span data-stu-id="f07aa-726">**Formula allocation base**</span></span>
 
-| 氏名              | 原価要素分析コード | 統計分析コード | フォーミュラ |
+| <span data-ttu-id="f07aa-727">氏名</span><span class="sxs-lookup"><span data-stu-id="f07aa-727">Name</span></span>              | <span data-ttu-id="f07aa-728">原価要素分析コード</span><span class="sxs-lookup"><span data-stu-id="f07aa-728">Cost element dimension</span></span> | <span data-ttu-id="f07aa-729">統計分析コード</span><span class="sxs-lookup"><span data-stu-id="f07aa-729">Statistical dimension</span></span> | <span data-ttu-id="f07aa-730">フォーミュラ</span><span class="sxs-lookup"><span data-stu-id="f07aa-730">Formula</span></span> |
 |-------------------|------------------------|-----------------------|---------|
-| 電気使用量 |                        | 統計要素  |         |
+| <span data-ttu-id="f07aa-731">電気使用量</span><span class="sxs-lookup"><span data-stu-id="f07aa-731">Electricity usage</span></span> |                        | <span data-ttu-id="f07aa-732">統計要素</span><span class="sxs-lookup"><span data-stu-id="f07aa-732">Statistical elements</span></span>  |         |
 
-[**フォーミュラ**] フィールドに入力する前に、フォーミュラで使用する必要があるエイリアスを指定する必要があります。
+<span data-ttu-id="f07aa-733">[**フォーミュラ**] フィールドに入力する前に、フォーミュラで使用する必要があるエイリアスを指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f07aa-733">Before the **Formula** field can be filled, you must specify the alias that should be used in the formula.</span></span>
 
-**フォーミュラ配賦基準係数**
+<span data-ttu-id="f07aa-734">**フォーミュラ配賦基準係数**</span><span class="sxs-lookup"><span data-stu-id="f07aa-734">**Formula allocation base factors**</span></span>
 
-| エイリアス | 定数  | 配賦基準 |
+| <span data-ttu-id="f07aa-735">エイリアス</span><span class="sxs-lookup"><span data-stu-id="f07aa-735">Alias</span></span> | <span data-ttu-id="f07aa-736">定数</span><span class="sxs-lookup"><span data-stu-id="f07aa-736">Constant</span></span>  | <span data-ttu-id="f07aa-737">配賦基準</span><span class="sxs-lookup"><span data-stu-id="f07aa-737">Allocation base</span></span> |
 |-------|-----------|-----------------|
-| a     |           | 電気     |
-| b     | 10,000.00 |                 |
-| 貸方     | 0.75      |                 |
-| d     | 1.15      |                 |
+| <span data-ttu-id="f07aa-738">a</span><span class="sxs-lookup"><span data-stu-id="f07aa-738">a</span></span>     |           | <span data-ttu-id="f07aa-739">電気</span><span class="sxs-lookup"><span data-stu-id="f07aa-739">Electricity</span></span>     |
+| <span data-ttu-id="f07aa-740">b</span><span class="sxs-lookup"><span data-stu-id="f07aa-740">b</span></span>     | <span data-ttu-id="f07aa-741">10,000.00</span><span class="sxs-lookup"><span data-stu-id="f07aa-741">10,000.00</span></span> |                 |
+| <span data-ttu-id="f07aa-742">貸方</span><span class="sxs-lookup"><span data-stu-id="f07aa-742">c</span></span>     | <span data-ttu-id="f07aa-743">0.75</span><span class="sxs-lookup"><span data-stu-id="f07aa-743">0.75</span></span>      |                 |
+| <span data-ttu-id="f07aa-744">d</span><span class="sxs-lookup"><span data-stu-id="f07aa-744">d</span></span>     | <span data-ttu-id="f07aa-745">1.15</span><span class="sxs-lookup"><span data-stu-id="f07aa-745">1.15</span></span>      |                 |
 
-**フォーミュラ配賦基準**
+<span data-ttu-id="f07aa-746">**フォーミュラ配賦基準**</span><span class="sxs-lookup"><span data-stu-id="f07aa-746">**Formula allocation base**</span></span>
 
-| 氏名              | 原価要素分析コード | 統計分析コード | フォーミュラ                                                    |
+| <span data-ttu-id="f07aa-747">氏名</span><span class="sxs-lookup"><span data-stu-id="f07aa-747">Name</span></span>              | <span data-ttu-id="f07aa-748">原価要素分析コード</span><span class="sxs-lookup"><span data-stu-id="f07aa-748">Cost element dimension</span></span> | <span data-ttu-id="f07aa-749">統計分析コード</span><span class="sxs-lookup"><span data-stu-id="f07aa-749">Statistical dimension</span></span> | <span data-ttu-id="f07aa-750">フォーミュラ</span><span class="sxs-lookup"><span data-stu-id="f07aa-750">Formula</span></span>                                                    |
 |-------------------|------------------------|-----------------------|------------------------------------------------------------|
-| 電気固定費 |                        | 統計要素  | ((a \> b) × ((b × c) + (a – b) × d)) + ((a \<= b] × a × c) |
+| <span data-ttu-id="f07aa-751">電気固定費</span><span class="sxs-lookup"><span data-stu-id="f07aa-751">Electricity fixed</span></span> |                        | <span data-ttu-id="f07aa-752">統計要素</span><span class="sxs-lookup"><span data-stu-id="f07aa-752">Statistical elements</span></span>  | <span data-ttu-id="f07aa-753">((a \> b) × ((b × c) + (a – b) × d)) + ((a \<= b] × a × c)</span><span class="sxs-lookup"><span data-stu-id="f07aa-753">((a \> b) × ((b × c) + (a – b) × d)) + ((a \<= b] × a × c)</span></span> |
 
-プレビュー機能を使用すると、作成されたフォーミュラ配賦基を、システム内の統計エントリに基づいて検証できます。
+<span data-ttu-id="f07aa-754">プレビュー機能を使用すると、作成されたフォーミュラ配賦基を、システム内の統計エントリに基づいて検証できます。</span><span class="sxs-lookup"><span data-stu-id="f07aa-754">A Preview function lets you validate the formula allocation base that is created, based on statistical entries in the system.</span></span>
 
-**配賦基準の詳細**
+<span data-ttu-id="f07aa-755">**配賦基準の詳細**</span><span class="sxs-lookup"><span data-stu-id="f07aa-755">**Allocation base details**</span></span>
 
-| 原価オブジェクト |    | フォーミュラ                                                                                                                             | 大きさ |
+| <span data-ttu-id="f07aa-756">原価オブジェクト</span><span class="sxs-lookup"><span data-stu-id="f07aa-756">Cost object</span></span> |    | <span data-ttu-id="f07aa-757">フォーミュラ</span><span class="sxs-lookup"><span data-stu-id="f07aa-757">Formula</span></span>                                                                                                                             | <span data-ttu-id="f07aa-758">大きさ</span><span class="sxs-lookup"><span data-stu-id="f07aa-758">Magnitude</span></span> |
 |-------------|----|-------------------------------------------------------------------------------------------------------------------------------------|-----------|
-| CC001       | HR | ((2,450.00 \> 10.000.00) × ((10,000.00 × 0.75) + (2,450.00 – 10,000.00) × 1.15)) + ((2,450.00 \<= 10,000.00) × 2,450.00 × 0.75)     | 1,837.50  |
-| CC002       | FI | ((4,100.00 \> 10.000.00) × ((10,000.00 × 0.75) + (4,100.00 – 10,000.00) × 1.15)) + ((4,100.00 \<= 10,000.00) × 4,100.00 × 0.75)     | 3,075.00  |
-| CC003       | IT | ((15,000.00 \> 10.000.00) × ((10,000.00 × 0.75) + (15,000.00 – 10,000.00) × 1.15)) + ((15,000.00 \<= 10,000.00) × 15,000.00 × 0.75) | 1,3250.00 |
+| <span data-ttu-id="f07aa-759">CC001</span><span class="sxs-lookup"><span data-stu-id="f07aa-759">CC001</span></span>       | <span data-ttu-id="f07aa-760">HR</span><span class="sxs-lookup"><span data-stu-id="f07aa-760">HR</span></span> | <span data-ttu-id="f07aa-761">((2,450.00 \> 10.000.00) × ((10,000.00 × 0.75) + (2,450.00 – 10,000.00) × 1.15)) + ((2,450.00 \<= 10,000.00) × 2,450.00 × 0.75)</span><span class="sxs-lookup"><span data-stu-id="f07aa-761">((2,450.00 \> 10.000.00) × ((10,000.00 × 0.75) + (2,450.00 – 10,000.00) × 1.15)) + ((2,450.00 \<= 10,000.00) × 2,450.00 × 0.75)</span></span>     | <span data-ttu-id="f07aa-762">1,837.50</span><span class="sxs-lookup"><span data-stu-id="f07aa-762">1,837.50</span></span>  |
+| <span data-ttu-id="f07aa-763">CC002</span><span class="sxs-lookup"><span data-stu-id="f07aa-763">CC002</span></span>       | <span data-ttu-id="f07aa-764">FI</span><span class="sxs-lookup"><span data-stu-id="f07aa-764">FI</span></span> | <span data-ttu-id="f07aa-765">((4,100.00 \> 10.000.00) × ((10,000.00 × 0.75) + (4,100.00 – 10,000.00) × 1.15)) + ((4,100.00 \<= 10,000.00) × 4,100.00 × 0.75)</span><span class="sxs-lookup"><span data-stu-id="f07aa-765">((4,100.00 \> 10.000.00) × ((10,000.00 × 0.75) + (4,100.00 – 10,000.00) × 1.15)) + ((4,100.00 \<= 10,000.00) × 4,100.00 × 0.75)</span></span>     | <span data-ttu-id="f07aa-766">3,075.00</span><span class="sxs-lookup"><span data-stu-id="f07aa-766">3,075.00</span></span>  |
+| <span data-ttu-id="f07aa-767">CC003</span><span class="sxs-lookup"><span data-stu-id="f07aa-767">CC003</span></span>       | <span data-ttu-id="f07aa-768">IT</span><span class="sxs-lookup"><span data-stu-id="f07aa-768">IT</span></span> | <span data-ttu-id="f07aa-769">((15,000.00 \> 10.000.00) × ((10,000.00 × 0.75) + (15,000.00 – 10,000.00) × 1.15)) + ((15,000.00 \<= 10,000.00) × 15,000.00 × 0.75)</span><span class="sxs-lookup"><span data-stu-id="f07aa-769">((15,000.00 \> 10.000.00) × ((10,000.00 × 0.75) + (15,000.00 – 10,000.00) × 1.15)) + ((15,000.00 \<= 10,000.00) × 15,000.00 × 0.75)</span></span> | <span data-ttu-id="f07aa-770">1,3250.00</span><span class="sxs-lookup"><span data-stu-id="f07aa-770">1,3250.00</span></span> |
 
-ここでは、CC003 (IT) の式の詳細を確認します。
+<span data-ttu-id="f07aa-771">ここでは、CC003 (IT) の式の詳細を確認します。</span><span class="sxs-lookup"><span data-stu-id="f07aa-771">Here is a closer look at the formula for CC003 (IT):</span></span>
 
-((15,000.00 \> 10,000.00) × ((10,000.00 × 0.75) + (15,000.00 – 10,000.00) × 1.15)) + ((15,000.00 \<= 10,000.00) × 15,000.00 × 0.75) = 13,250.00
+<span data-ttu-id="f07aa-772">((15,000.00 \> 10,000.00) × ((10,000.00 × 0.75) + (15,000.00 – 10,000.00) × 1.15)) + ((15,000.00 \<= 10,000.00) × 15,000.00 × 0.75) = 13,250.00</span><span class="sxs-lookup"><span data-stu-id="f07aa-772">((15,000.00 \> 10,000.00) × ((10,000.00 × 0.75) + (15,000.00 – 10,000.00) × 1.15)) + ((15,000.00 \<= 10,000.00) × 15,000.00 × 0.75) = 13,250.00</span></span>
 
-(1 × (7,500.00 + 5,000.00 × 1.15)) + (0 × 15,000.00 × 0.75)            
+<span data-ttu-id="f07aa-773">(1 × (7,500.00 + 5,000.00 × 1.15)) + (0 × 15,000.00 × 0.75)</span><span class="sxs-lookup"><span data-stu-id="f07aa-773">(1 × (7,500.00 + 5,000.00 × 1.15)) + (0 × 15,000.00 × 0.75)</span></span>            
 
-1 × 7,500.00 + 5,750.00 + 0 
+<span data-ttu-id="f07aa-774">1 × 7,500.00 + 5,750.00 + 0</span><span class="sxs-lookup"><span data-stu-id="f07aa-774">1 × 7,500.00 + 5,750.00 + 0</span></span> 
 
-次のコスト配分ルールの例は、電気固定費のフォーミュラ配賦基準が配賦基準として割り当てられた場合です。
+<span data-ttu-id="f07aa-775">次のコスト配分ルールの例は、電気固定費のフォーミュラ配賦基準が配賦基準として割り当てられた場合です。</span><span class="sxs-lookup"><span data-stu-id="f07aa-775">Here is an example of a cost distribution rule if the Electricity fixed formula allocation base is assigned as the allocation base in it.</span></span>
 
-| 原価オブジェクト |  説明  | 大きさ | 配賦係数                |
+| <span data-ttu-id="f07aa-776">原価オブジェクト</span><span class="sxs-lookup"><span data-stu-id="f07aa-776">Cost object</span></span> |  <span data-ttu-id="f07aa-777">説明</span><span class="sxs-lookup"><span data-stu-id="f07aa-777">Description</span></span>  | <span data-ttu-id="f07aa-778">大きさ</span><span class="sxs-lookup"><span data-stu-id="f07aa-778">Magnitude</span></span> | <span data-ttu-id="f07aa-779">配賦係数</span><span class="sxs-lookup"><span data-stu-id="f07aa-779">Allocation factor</span></span>                |
 |-------------|----|-----------|----------------------------------|
-| CC001       | HR | 1,837.50  | (1,837.50 ÷ 18,162.50) × 金額  |
-| CC002       | FI | 3,075.00  | (3,075.00 ÷ 18,162.50) × 金額  |
-| CC003       | IT | 13,250.00 | (13,250.00 ÷ 18,162.50) × 金額 |
+| <span data-ttu-id="f07aa-780">CC001</span><span class="sxs-lookup"><span data-stu-id="f07aa-780">CC001</span></span>       | <span data-ttu-id="f07aa-781">HR</span><span class="sxs-lookup"><span data-stu-id="f07aa-781">HR</span></span> | <span data-ttu-id="f07aa-782">1,837.50</span><span class="sxs-lookup"><span data-stu-id="f07aa-782">1,837.50</span></span>  | <span data-ttu-id="f07aa-783">(1,837.50 ÷ 18,162.50) × 金額</span><span class="sxs-lookup"><span data-stu-id="f07aa-783">(1,837.50 ÷ 18,162.50) × Amount</span></span>  |
+| <span data-ttu-id="f07aa-784">CC002</span><span class="sxs-lookup"><span data-stu-id="f07aa-784">CC002</span></span>       | <span data-ttu-id="f07aa-785">FI</span><span class="sxs-lookup"><span data-stu-id="f07aa-785">FI</span></span> | <span data-ttu-id="f07aa-786">3,075.00</span><span class="sxs-lookup"><span data-stu-id="f07aa-786">3,075.00</span></span>  | <span data-ttu-id="f07aa-787">(3,075.00 ÷ 18,162.50) × 金額</span><span class="sxs-lookup"><span data-stu-id="f07aa-787">(3,075.00 ÷ 18,162.50) × Amount</span></span>  |
+| <span data-ttu-id="f07aa-788">CC003</span><span class="sxs-lookup"><span data-stu-id="f07aa-788">CC003</span></span>       | <span data-ttu-id="f07aa-789">IT</span><span class="sxs-lookup"><span data-stu-id="f07aa-789">IT</span></span> | <span data-ttu-id="f07aa-790">13,250.00</span><span class="sxs-lookup"><span data-stu-id="f07aa-790">13,250.00</span></span> | <span data-ttu-id="f07aa-791">(13,250.00 ÷ 18,162.50) × 金額</span><span class="sxs-lookup"><span data-stu-id="f07aa-791">(13,250.00 ÷ 18,162.50) × Amount</span></span> |
 

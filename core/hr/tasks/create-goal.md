@@ -16,47 +16,47 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 46661449fcff01e417c788d3cc1d5d39ac39cba0
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 0c84003fa2326c68978dae698ae7c91c0c62b0f7
 ms.contentlocale: ja-jp
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-goal"></a>目標の作成
+# <a name="create-a-goal"></a><span data-ttu-id="bd185-103">目標の作成</span><span class="sxs-lookup"><span data-stu-id="bd185-103">Create a goal</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-目標を作成し、目標に活動を追加し、測定を追跡し、目標をレビューににリンクすることができます。 この手順は、デモ データ会社 USMF を使用して作成されました。 この手順は、Dynamics 365 for Operations、バージョン 1611 に追加された機能です。
+<span data-ttu-id="bd185-104">目標を作成し、目標に活動を追加し、測定を追跡し、目標をレビューににリンクすることができます。</span><span class="sxs-lookup"><span data-stu-id="bd185-104">You can create goals, add activities to goals, track measurements, and link the goals to a review.</span></span> <span data-ttu-id="bd185-105">この手順は、デモ データ会社 USMF を使用して作成されました。</span><span class="sxs-lookup"><span data-stu-id="bd185-105">This procedure was created using the USMF demo data company.</span></span> <span data-ttu-id="bd185-106">この手順は、Dynamics 365 for Operations、バージョン 1611 に追加された機能です。</span><span class="sxs-lookup"><span data-stu-id="bd185-106">This procedure is for a feature that was added in Dynamics 365 for Operations, version 1611.</span></span>
 
-1. [すべてのワークスペース] > [従業員セルフ サービス] に移動します。
-2. [すべての目標の表示] をクリックします。
-3. [新規] をクリックします。
-4. [名前] フィールドに、「Contoso プロジェクトの完了」と入力します。
-5. [概要] フィールドで、「Contoso プロジェクトを 30 日以内に完了する」と入力します。
-    * 目標は個人、チーム、または会社にも適用できます。 [従業員の目標] の既定の設定は [個別] です。  
-6. [目標カテゴリ] フィールドで値を入力または選択します。
-7. [開始日] フィールドで、表示する日付を変更します。
-8. [終了日] フィールドで、表示する日付を変更します。
-    * 目標を達成した場合、目標を完了した日付をここに入力します。  
-9. [保存] をクリックします。
-10. [測定] セクションを展開します。 これが既に展開されている場合、[展開] の矢印を 2 回クリックします。
-11. [測定の追加] をクリックして、ドロップ ダイアログを開きます。
-12. [測定] フィールドで値を入力または選択します。
-13. [目標額] フィールドに数値を入力します。
-14. [OK] をクリックします。
-15. [活動] セクションを展開します。 これが既に展開されている場合、[展開] の矢印を 2 回クリックします。
-16. [追加] をクリックします。
-17. [タイトル] フィールドに値を入力します。
-18. [説明] フィールドに値を入力します。
-19. [保存] をクリックします。
-20. [セクションの表示] をクリックすると、ドロップ ダイアログが開きます。
-21. [測定の表示] フィールドで [いいえ] を選択します。
-22. [保存] をクリックします。
-23. [セクションの表示] をクリックすると、ドロップ ダイアログが開きます。
-24. [測定の表示] フィールドで、[はい] を選択します。
-25. [保存] をクリックします。
-    * チーム メンバーまたはすべての従業員に対して、同じまたは類似した目標を設定する場合が多くあります。     HR の管理者またはマネージャーは、これらの目標に対して目標テンプレートを作成できます。 テンプレートから目標を追加して、その後に時間帯に合わせて変更します。  
-    * チーム メンバーまたはすべての従業員に対して、同じまたは類似した複数の目標を設定する場合が多くあります。     HR の管理者またはマネージャーは、1 つ以上の目標テンプレートが含まれた目標のグループを作成できます。 目標のグループから目標を追加して、その後に時間帯に合わせて変更します。  
-    * レビューを作成すると、そのレビューに目標を追加できます。 レビューに目標を追加する方法は、タスク ガイドを参照してください。  
+1. <span data-ttu-id="bd185-107">[すべてのワークスペース] > [従業員セルフ サービス] に移動します。</span><span class="sxs-lookup"><span data-stu-id="bd185-107">Go to All workspaces > Employee self service.</span></span>
+2. <span data-ttu-id="bd185-108">[すべての目標の表示] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bd185-108">Click View all goals</span></span>
+3. <span data-ttu-id="bd185-109">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bd185-109">Click New.</span></span>
+4. <span data-ttu-id="bd185-110">[名前] フィールドに、「Contoso プロジェクトの完了」と入力します。</span><span class="sxs-lookup"><span data-stu-id="bd185-110">In the Name field, type 'Complete the Contoso project'.</span></span>
+5. <span data-ttu-id="bd185-111">[概要] フィールドで、「Contoso プロジェクトを 30 日以内に完了する」と入力します。</span><span class="sxs-lookup"><span data-stu-id="bd185-111">In the Overview field, enter 'I will finish the Contoso project in 30 days'.</span></span>
+    * <span data-ttu-id="bd185-112">目標は個人、チーム、または会社にも適用できます。</span><span class="sxs-lookup"><span data-stu-id="bd185-112">Goals can apply to an individual, a team, or even a corporation.</span></span> <span data-ttu-id="bd185-113">[従業員の目標] の既定の設定は [個別] です。</span><span class="sxs-lookup"><span data-stu-id="bd185-113">The default setting for Employee goals is Individual.</span></span>  
+6. <span data-ttu-id="bd185-114">[目標カテゴリ] フィールドで値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="bd185-114">In the Goal category field, enter or select a value.</span></span>
+7. <span data-ttu-id="bd185-115">[開始日] フィールドで、表示する日付を変更します。</span><span class="sxs-lookup"><span data-stu-id="bd185-115">In the Start date field, change the date shown.</span></span>
+8. <span data-ttu-id="bd185-116">[終了日] フィールドで、表示する日付を変更します。</span><span class="sxs-lookup"><span data-stu-id="bd185-116">In the End date field, change the date shown.</span></span>
+    * <span data-ttu-id="bd185-117">目標を達成した場合、目標を完了した日付をここに入力します。</span><span class="sxs-lookup"><span data-stu-id="bd185-117">When you complete a goal, enter the date that you completed the goal here.</span></span>  
+9. <span data-ttu-id="bd185-118">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bd185-118">Click Save.</span></span>
+10. <span data-ttu-id="bd185-119">[測定] セクションを展開します。</span><span class="sxs-lookup"><span data-stu-id="bd185-119">Expand the Measurements section.</span></span> <span data-ttu-id="bd185-120">これが既に展開されている場合、[展開] の矢印を 2 回クリックします。</span><span class="sxs-lookup"><span data-stu-id="bd185-120">If it is already expanded, click the Expand arrow twice.</span></span>
+11. <span data-ttu-id="bd185-121">[測定の追加] をクリックして、ドロップ ダイアログを開きます。</span><span class="sxs-lookup"><span data-stu-id="bd185-121">Click Add measurement to open the drop dialog.</span></span>
+12. <span data-ttu-id="bd185-122">[測定] フィールドで値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="bd185-122">In the Measurement field, enter or select a value.</span></span>
+13. <span data-ttu-id="bd185-123">[目標額] フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="bd185-123">In the Target amount field, enter a number.</span></span>
+14. <span data-ttu-id="bd185-124">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bd185-124">Click OK.</span></span>
+15. <span data-ttu-id="bd185-125">[活動] セクションを展開します。</span><span class="sxs-lookup"><span data-stu-id="bd185-125">Expand the Activities section.</span></span> <span data-ttu-id="bd185-126">これが既に展開されている場合、[展開] の矢印を 2 回クリックします。</span><span class="sxs-lookup"><span data-stu-id="bd185-126">If it is already expanded, click the Expand arrow twice.</span></span>
+16. <span data-ttu-id="bd185-127">[追加] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bd185-127">Click Add.</span></span>
+17. <span data-ttu-id="bd185-128">[タイトル] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="bd185-128">In the Title field, type a value.</span></span>
+18. <span data-ttu-id="bd185-129">[説明] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="bd185-129">In the Description field, type a value.</span></span>
+19. <span data-ttu-id="bd185-130">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bd185-130">Click Save.</span></span>
+20. <span data-ttu-id="bd185-131">[セクションの表示] をクリックすると、ドロップ ダイアログが開きます。</span><span class="sxs-lookup"><span data-stu-id="bd185-131">Click Show sections to open the drop dialog.</span></span>
+21. <span data-ttu-id="bd185-132">[測定の表示] フィールドで [いいえ] を選択します。</span><span class="sxs-lookup"><span data-stu-id="bd185-132">Select No in the Show measurements field.</span></span>
+22. <span data-ttu-id="bd185-133">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bd185-133">Click Save.</span></span>
+23. <span data-ttu-id="bd185-134">[セクションの表示] をクリックすると、ドロップ ダイアログが開きます。</span><span class="sxs-lookup"><span data-stu-id="bd185-134">Click Show sections to open the drop dialog.</span></span>
+24. <span data-ttu-id="bd185-135">[測定の表示] フィールドで、[はい] を選択します。</span><span class="sxs-lookup"><span data-stu-id="bd185-135">Select Yes in the Show measurements field.</span></span>
+25. <span data-ttu-id="bd185-136">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bd185-136">Click Save.</span></span>
+    * <span data-ttu-id="bd185-137">チーム メンバーまたはすべての従業員に対して、同じまたは類似した目標を設定する場合が多くあります。</span><span class="sxs-lookup"><span data-stu-id="bd185-137">There are often goals that are the same or similar for team members or all employees.</span></span>     <span data-ttu-id="bd185-138">HR の管理者またはマネージャーは、これらの目標に対して目標テンプレートを作成できます。</span><span class="sxs-lookup"><span data-stu-id="bd185-138">Your HR administrator or manager can create goal templates for those goals.</span></span> <span data-ttu-id="bd185-139">テンプレートから目標を追加して、その後に時間帯に合わせて変更します。</span><span class="sxs-lookup"><span data-stu-id="bd185-139">You can add a goal from a template, and then modify it to match your timelines.</span></span>  
+    * <span data-ttu-id="bd185-140">チーム メンバーまたはすべての従業員に対して、同じまたは類似した複数の目標を設定する場合が多くあります。</span><span class="sxs-lookup"><span data-stu-id="bd185-140">There are often several goals that are the same or similar for team members or all employees.</span></span>     <span data-ttu-id="bd185-141">HR の管理者またはマネージャーは、1 つ以上の目標テンプレートが含まれた目標のグループを作成できます。</span><span class="sxs-lookup"><span data-stu-id="bd185-141">Your HR administrator or manager can create goal groups that contain one or more goal templates.</span></span> <span data-ttu-id="bd185-142">目標のグループから目標を追加して、その後に時間帯に合わせて変更します。</span><span class="sxs-lookup"><span data-stu-id="bd185-142">You can add goals from a goal group, and then modify them to match your timelines.</span></span>  
+    * <span data-ttu-id="bd185-143">レビューを作成すると、そのレビューに目標を追加できます。</span><span class="sxs-lookup"><span data-stu-id="bd185-143">When you create a review, you can add goals to that review.</span></span> <span data-ttu-id="bd185-144">レビューに目標を追加する方法は、タスク ガイドを参照してください。</span><span class="sxs-lookup"><span data-stu-id="bd185-144">Refer to the task guide for reviews to see how you can add goals to your reviews.</span></span>  
 
 

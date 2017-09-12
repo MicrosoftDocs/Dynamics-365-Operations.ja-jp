@@ -17,92 +17,92 @@ ms.assetid: 8993f9a1-d1c0-49f5-afd3-5e1077ded0fe
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: yuyus
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: f13d03e5d1a26a5c87d71732b692537be94bdfb8
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 9c587df80edf40e3cbbd3edde83586f167db2fbc
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="calculations-for-product-configuration-models-faq"></a>製品コンフィギュレーション モデルの計算についてよく寄せられる質問
+# <a name="calculations-for-product-configuration-models-faq"></a><span data-ttu-id="64c51-103">製品コンフィギュレーション モデルの計算についてよく寄せられる質問</span><span class="sxs-lookup"><span data-stu-id="64c51-103">Calculations for product configuration models FAQ</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-この記事では、製品コンフィギュレーション モデルの計算および計算と制約の使用方法について説明します。
+<span data-ttu-id="64c51-104">この記事では、製品コンフィギュレーション モデルの計算および計算と制約の使用方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="64c51-104">This article describes calculations for product configuration models and explains how to use calculations together with constraints.</span></span>
 
-計算は、算術または論理工程に使用できます。 これらは、製品コンフィギュレーション モデルの式の制約を補足します。 計算を [**制約ベースの製品コンフィギュレーション モデルの詳細**] ページで定義し、式エディターで計算式を作成できます。 計算の詳細については、「計算の作成」を参照してください。
+<span data-ttu-id="64c51-105">計算は、算術または論理工程に使用できます。</span><span class="sxs-lookup"><span data-stu-id="64c51-105">Calculations can be used for arithmetic or logical operations.</span></span> <span data-ttu-id="64c51-106">これらは、製品コンフィギュレーション モデルの式の制約を補足します。</span><span class="sxs-lookup"><span data-stu-id="64c51-106">They complement expression constraints in product configuration models.</span></span> <span data-ttu-id="64c51-107">計算を [**制約ベースの製品コンフィギュレーション モデルの詳細**] ページで定義し、式エディターで計算式を作成できます。</span><span class="sxs-lookup"><span data-stu-id="64c51-107">You can define calculations on the **Constraint-based product configuration model details** page and then build expressions for the calculations in the expression editor.</span></span> <span data-ttu-id="64c51-108">計算の詳細については、「計算の作成」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="64c51-108">For more information, see Create calculations.</span></span>
 
-## <a name="what-is-a-calculation"></a>計算とは
-計算とは、製品コンフィギュレーション モデルで使用できる要素のことです。 計算は、製品をコンフィギュレーションする際に、小数を使用した値の計算を可能にして、制約を補完します。 さらに、計算には、制約よりも多くの演算子を使用できます。  
+## <a name="what-is-a-calculation"></a><span data-ttu-id="64c51-109">計算とは</span><span class="sxs-lookup"><span data-stu-id="64c51-109">What is a calculation?</span></span>
+<span data-ttu-id="64c51-110">計算とは、製品コンフィギュレーション モデルで使用できる要素のことです。</span><span class="sxs-lookup"><span data-stu-id="64c51-110">A calculation is an element that you can use in a product configuration model.</span></span> <span data-ttu-id="64c51-111">計算は、製品をコンフィギュレーションする際に、小数を使用した値の計算を可能にして、制約を補完します。</span><span class="sxs-lookup"><span data-stu-id="64c51-111">Calculations complement constraints by letting you use decimal numbers to calculate values when you configure a product.</span></span> <span data-ttu-id="64c51-112">さらに、計算には、制約よりも多くの演算子を使用できます。</span><span class="sxs-lookup"><span data-stu-id="64c51-112">Additionally, calculations have a larger set of available operators than constraints have.</span></span>  
 
-制約と同様に、計算は、製品コンフィギュレーション モデルの特定のコンポーネントに関連付けられ、別のコンポーネントが再利用することも共有することもできません。 計算と制約の重要な違いの 1 つは、計算は必須 (単一方向) で、制約は宣言です (双方向)。 制約に関する詳細については、「[式の制約およびテーブル制約](expression-constraints-table-constraints-product-configuration-models.md)」を参照してください。  
+<span data-ttu-id="64c51-113">制約と同様に、計算は、製品コンフィギュレーション モデルの特定のコンポーネントに関連付けられ、別のコンポーネントが再利用することも共有することもできません。</span><span class="sxs-lookup"><span data-stu-id="64c51-113">Like a constraint, a calculation is associated with a specific component in a product configuration model, and can’t be reused by or shared with another component.</span></span> <span data-ttu-id="64c51-114">計算と制約の重要な違いの 1 つは、計算は必須 (単一方向) で、制約は宣言です (双方向)。</span><span class="sxs-lookup"><span data-stu-id="64c51-114">One important difference between calculations and constraints is that calculations are imperative (unidirectional), whereas constraints are declarative (bi-directional).</span></span> <span data-ttu-id="64c51-115">制約に関する詳細については、「[式の制約およびテーブル制約](expression-constraints-table-constraints-product-configuration-models.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="64c51-115">For more information about constraints, see [Expression constraints and table constraints](expression-constraints-table-constraints-product-configuration-models.md).</span></span>  
 
-計算は、ターゲット属性と計算式で構成されます。
+<span data-ttu-id="64c51-116">計算は、ターゲット属性と計算式で構成されます。</span><span class="sxs-lookup"><span data-stu-id="64c51-116">A calculation consists of a target attribute and a calculation expression.</span></span>
 
-## <a name="what-is-a-target-attribute"></a>ターゲット属性とは
-ターゲット属性とは、計算式の結果を受け取る属性のことです。  
+## <a name="what-is-a-target-attribute"></a><span data-ttu-id="64c51-117">ターゲット属性とは</span><span class="sxs-lookup"><span data-stu-id="64c51-117">What is a target attribute?</span></span>
+<span data-ttu-id="64c51-118">ターゲット属性とは、計算式の結果を受け取る属性のことです。</span><span class="sxs-lookup"><span data-stu-id="64c51-118">A target attribute is an attribute that receives the result of the calculation expression.</span></span>  
 
-次の式で、ターゲット属性はテーブルクロスの測定です:  
+<span data-ttu-id="64c51-119">次の式で、ターゲット属性はテーブルクロスの測定です:</span><span class="sxs-lookup"><span data-stu-id="64c51-119">In the following expression, the target attribute is a tablecloth measurement:</span></span>  
 
-**式:** If\[decimalAttribute1 &lt;= decimalAttribute2, True, False\]  
+<span data-ttu-id="64c51-120">**式:** If\[decimalAttribute1 &lt;= decimalAttribute2, True, False\]</span><span class="sxs-lookup"><span data-stu-id="64c51-120">**Expression:** If\[decimalAttribute1 &lt;= decimalAttribute2, True, False\]</span></span>  
 
-**DecimalAttribute1** はテーブルの長さで、**decimalAttribute2** はテーブルクロスの長さです。 この式は、**decimalAttribute2** が **decimalAttribute1** より大きいか等しい場合は **True** 値をターゲット属性に返します。 それ以外の場合は、**False** が返されます。 したがって、テーブルクロスの測定は、テーブルクロスの長さがテーブルの長さに等しいかまたは超える場合に受け入れることができます。
+<span data-ttu-id="64c51-121">**DecimalAttribute1** はテーブルの長さで、**decimalAttribute2** はテーブルクロスの長さです。</span><span class="sxs-lookup"><span data-stu-id="64c51-121">**DecimalAttribute1** is the table length, and **decimalAttribute2** is the tablecloth length.</span></span> <span data-ttu-id="64c51-122">この式は、**decimalAttribute2** が **decimalAttribute1** より大きいか等しい場合は **True** 値をターゲット属性に返します。</span><span class="sxs-lookup"><span data-stu-id="64c51-122">The expression returns the value **True** to the target attribute if **decimalAttribute2** is greater than or equal to **decimalAttribute1**.</span></span> <span data-ttu-id="64c51-123">それ以外の場合は、**False** が返されます。</span><span class="sxs-lookup"><span data-stu-id="64c51-123">Otherwise, the expression returns **False**.</span></span> <span data-ttu-id="64c51-124">したがって、テーブルクロスの測定は、テーブルクロスの長さがテーブルの長さに等しいかまたは超える場合に受け入れることができます。</span><span class="sxs-lookup"><span data-stu-id="64c51-124">Therefore, the tablecloth measurement is acceptable if the tablecloth length is the same as or exceeds the length of the table.</span></span>
 
-## <a name="what-attribute-types-can-be-set-to-target-attributes"></a>ターゲット属性に設定できるのはどの属性タイプか
-固定リストのないテキストを除いて、製品コンフィギュレーターでサポートされているすべての属性タイプはターゲット属性に設定できます。
+## <a name="what-attribute-types-can-be-set-to-target-attributes"></a><span data-ttu-id="64c51-125">ターゲット属性に設定できるのはどの属性タイプか</span><span class="sxs-lookup"><span data-stu-id="64c51-125">What attribute types can be set to target attributes?</span></span>
+<span data-ttu-id="64c51-126">固定リストのないテキストを除いて、製品コンフィギュレーターでサポートされているすべての属性タイプはターゲット属性に設定できます。</span><span class="sxs-lookup"><span data-stu-id="64c51-126">All attribute types that the product configurator supports can be set to target attributes, except text without a fixed list.</span></span>
 
-## <a name="can-the-value-of-a-target-attribute-restrict-the-values-of-the-input-attributes-in-a-calculation"></a>ターゲット属性の値は計算の入力属性の値を制限できますか
-計算は一方向なので、ターゲット属性の値は入力属性の値を制限できません。 したがって、入力属性値の変更に基づいてターゲット属性の値が設定されますが、ターゲットの値を変更しても入力属性の値には影響しません。 この動作は制約の動作とは異なります。 制約は両方の方向で行います。
+## <a name="can-the-value-of-a-target-attribute-restrict-the-values-of-the-input-attributes-in-a-calculation"></a><span data-ttu-id="64c51-127">ターゲット属性の値は計算の入力属性の値を制限できますか</span><span class="sxs-lookup"><span data-stu-id="64c51-127">Can the value of a target attribute restrict the values of the input attributes in a calculation?</span></span>
+<span data-ttu-id="64c51-128">計算は一方向なので、ターゲット属性の値は入力属性の値を制限できません。</span><span class="sxs-lookup"><span data-stu-id="64c51-128">No, the value of a target attribute can’t restrict the values of the input attributes, because calculations are unidirectional.</span></span> <span data-ttu-id="64c51-129">したがって、入力属性値の変更に基づいてターゲット属性の値が設定されますが、ターゲットの値を変更しても入力属性の値には影響しません。</span><span class="sxs-lookup"><span data-stu-id="64c51-129">Therefore, the value of the target attribute is set based on changes in the value of the input attributes, but a change in the value of the target doesn’t affect the value of the input attributes.</span></span> <span data-ttu-id="64c51-130">この動作は制約の動作とは異なります。</span><span class="sxs-lookup"><span data-stu-id="64c51-130">This behavior differs from the behavior for constraints.</span></span> <span data-ttu-id="64c51-131">制約は両方の方向で行います。</span><span class="sxs-lookup"><span data-stu-id="64c51-131">Constraints occur in both directions.</span></span>
 
-### <a name="example"></a>例
+### <a name="example"></a><span data-ttu-id="64c51-132">例</span><span class="sxs-lookup"><span data-stu-id="64c51-132">Example</span></span>
 
-次の式では、計算のターゲットは電源コードの長さで、入力値は色です。  
+<span data-ttu-id="64c51-133">次の式では、計算のターゲットは電源コードの長さで、入力値は色です。</span><span class="sxs-lookup"><span data-stu-id="64c51-133">In the following expression, the target for the calculation is the length of a power cord, and the input value is a color:</span></span>  
 
-**式:** \[If Color == "Green", 1.5, 1.0\]  
+<span data-ttu-id="64c51-134">**式:** \[If Color == "Green", 1.5, 1.0\]</span><span class="sxs-lookup"><span data-stu-id="64c51-134">**Expression:** \[If Color == "Green", 1.5, 1.0\]</span></span>  
 
-品目のコンフィギュレーション時、[**Green**] を色の属性の値として指定する場合、電源コードの長さは、**1.5** に設定されます。 他の色を指定した場合、長さは **1.0** に設定されます。 ただし、計算は一方向なので、**1.5** の長さを指定するとき、計算では色の属性値は [**緑**] に設定されません。
+<span data-ttu-id="64c51-135">品目のコンフィギュレーション時、[**Green**] を色の属性の値として指定する場合、電源コードの長さは、**1.5** に設定されます。</span><span class="sxs-lookup"><span data-stu-id="64c51-135">When you configure the item, the length of the power cord is set to **1.5** if you specify **Green** as the value of color attribute.</span></span> <span data-ttu-id="64c51-136">他の色を指定した場合、長さは **1.0** に設定されます。</span><span class="sxs-lookup"><span data-stu-id="64c51-136">If you specify any other color, the length is set to **1.0**.</span></span> <span data-ttu-id="64c51-137">ただし、計算は一方向なので、**1.5** の長さを指定するとき、計算では色の属性値は [**緑**] に設定されません。</span><span class="sxs-lookup"><span data-stu-id="64c51-137">However, because calculations are unidirectional, the calculation doesn't set the value of the color attribute to **Green** if you specify a length of **1.5**.</span></span>
 
-## <a name="what-happens-if-a-calculation-has-a-target-attribute-of-the-integer-type-but-a-calculation-generates-a-decimal-number"></a>計算のターゲット属性が整数タイプで、計算で小数を生成するとき、何が起きますか
-ターゲットの属性が整数タイプで、計算が小数を生成した場合、計算結果の整数部分だけが返されます。 小数部分は削除され、結果を丸められません。 たとえば、12.70 の結果は 12 として表示されます。
+## <a name="what-happens-if-a-calculation-has-a-target-attribute-of-the-integer-type-but-a-calculation-generates-a-decimal-number"></a><span data-ttu-id="64c51-138">計算のターゲット属性が整数タイプで、計算で小数を生成するとき、何が起きますか</span><span class="sxs-lookup"><span data-stu-id="64c51-138">What happens if a calculation has a target attribute of the integer type but a calculation generates a decimal number?</span></span>
+<span data-ttu-id="64c51-139">ターゲットの属性が整数タイプで、計算が小数を生成した場合、計算結果の整数部分だけが返されます。</span><span class="sxs-lookup"><span data-stu-id="64c51-139">If a target attribute is of the integer type, but a calculation generates a decimal number, only the integer part of the calculated result is returned.</span></span> <span data-ttu-id="64c51-140">小数部分は削除され、結果を丸められません。</span><span class="sxs-lookup"><span data-stu-id="64c51-140">The decimal part is removed, and the result isn't rounded.</span></span> <span data-ttu-id="64c51-141">たとえば、12.70 の結果は 12 として表示されます。</span><span class="sxs-lookup"><span data-stu-id="64c51-141">For example, a result of 12.70 is shown as 12.</span></span>
 
-## <a name="when-do-calculations-occur"></a>計算はいつ発生しますか
-計算は、すべて入力属性の値が用意されたときに発生します。
+## <a name="when-do-calculations-occur"></a><span data-ttu-id="64c51-142">計算はいつ発生しますか</span><span class="sxs-lookup"><span data-stu-id="64c51-142">When do calculations occur?</span></span>
+<span data-ttu-id="64c51-143">計算は、すべて入力属性の値が用意されたときに発生します。</span><span class="sxs-lookup"><span data-stu-id="64c51-143">Calculations occur when a value has been provided for all input attributes.</span></span>
 
-## <a name="can-i-overwrite-the-value-that-is-calculated-for-the-target-attribute"></a>ターゲット属性に対して計算された値を上書きできますか
-ターゲット属性が非表示または読み取り専用に設定されていなければ、ターゲット属性に対して計算された値を上書きできます。
+## <a name="can-i-overwrite-the-value-that-is-calculated-for-the-target-attribute"></a><span data-ttu-id="64c51-144">ターゲット属性に対して計算された値を上書きできますか</span><span class="sxs-lookup"><span data-stu-id="64c51-144">Can I overwrite the value that is calculated for the target attribute?</span></span>
+<span data-ttu-id="64c51-145">ターゲット属性が非表示または読み取り専用に設定されていなければ、ターゲット属性に対して計算された値を上書きできます。</span><span class="sxs-lookup"><span data-stu-id="64c51-145">You can overwrite the value that is calculated for the target attribute, unless the target attribute is set as hidden or read-only.</span></span>
 
-## <a name="how-do-i-set-a-target-attribute-as-hidden-or-readonly"></a>ターゲット属性を非表示または読み取り専用に設定する方法
-属性を非表示または読み取り専用に設定するには、次の手順に従います。
+## <a name="how-do-i-set-a-target-attribute-as-hidden-or-readonly"></a><span data-ttu-id="64c51-146">ターゲット属性を非表示または読み取り専用に設定する方法</span><span class="sxs-lookup"><span data-stu-id="64c51-146">How do I set a target attribute as hidden or readonly?</span></span>
+<span data-ttu-id="64c51-147">属性を非表示または読み取り専用に設定するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="64c51-147">To set an attribute as hidden or read-only, follow these steps.</span></span>
 
-1.  [**製品情報管理**] &gt; [**共通**] &gt; [**製品コンフィギュレーション モデル**] をクリックします。
-2.  製品コンフィギュレーション モデルを選択し、[アクション ペイン] で、[**編集**] をクリックします。
-3.  [**制約ベースの製品コンフィギュレーション モデルの詳細**] ページで、ターゲット属性として使用する属性を選択します。
-4.  [**属性**] クイック タブで、[**非表示**] または [**読み取り専用**] を選択します。
+1.  <span data-ttu-id="64c51-148">[**製品情報管理**] &gt; [**共通**] &gt; [**製品コンフィギュレーション モデル**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="64c51-148">Click **Product information management** &gt; **Common** &gt; **Product configuration models**.</span></span>
+2.  <span data-ttu-id="64c51-149">製品コンフィギュレーション モデルを選択し、[アクション ペイン] で、[**編集**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="64c51-149">Select a product configuration model, and then, on the Action Pane, click **Edit**.</span></span>
+3.  <span data-ttu-id="64c51-150">[**制約ベースの製品コンフィギュレーション モデルの詳細**] ページで、ターゲット属性として使用する属性を選択します。</span><span class="sxs-lookup"><span data-stu-id="64c51-150">On the **Constraint-based product configuration model details** page, select the attribute to use as a target attribute.</span></span>
+4.  <span data-ttu-id="64c51-151">[**属性**] クイック タブで、[**非表示**] または [**読み取り専用**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="64c51-151">On the **Attributes** FastTab, select **Hidden** or **Read-only**.</span></span>
 
-## <a name="can-a-calculation-overwrite-the-values-that-i-set"></a>計算はユーザーが設定した値を上書きできますか
-一連番号 製品をコンフィギュレーションした際に設定した値が使用される値です。 計算の入力値を変更したときに行われる計算は、特定の属性に対して与えた値を上書きすることはできません。
+## <a name="can-a-calculation-overwrite-the-values-that-i-set"></a><span data-ttu-id="64c51-152">計算はユーザーが設定した値を上書きできますか</span><span class="sxs-lookup"><span data-stu-id="64c51-152">Can a calculation overwrite the values that I set?</span></span>
+<span data-ttu-id="64c51-153">一連番号</span><span class="sxs-lookup"><span data-stu-id="64c51-153">No.</span></span> <span data-ttu-id="64c51-154">製品をコンフィギュレーションした際に設定した値が使用される値です。</span><span class="sxs-lookup"><span data-stu-id="64c51-154">The values that you set when you configure a product are the values that are used.</span></span> <span data-ttu-id="64c51-155">計算の入力値を変更したときに行われる計算は、特定の属性に対して与えた値を上書きすることはできません。</span><span class="sxs-lookup"><span data-stu-id="64c51-155">The calculation that occurs when the input values in a calculation are changed can’t overwrite the values that you provide for a specific attribute.</span></span>
 
-## <a name="what-happens-if-i-remove-an-input-value-in-a-calculation"></a>計算の入力値を削除すると、何が発生しますか
-計算の入力値を削除すると、ターゲット属性の値も削除されます。
+## <a name="what-happens-if-i-remove-an-input-value-in-a-calculation"></a><span data-ttu-id="64c51-156">計算の入力値を削除すると、何が発生しますか</span><span class="sxs-lookup"><span data-stu-id="64c51-156">What happens if I remove an input value in a calculation?</span></span>
+<span data-ttu-id="64c51-157">計算の入力値を削除すると、ターゲット属性の値も削除されます。</span><span class="sxs-lookup"><span data-stu-id="64c51-157">If you remove an input value in a calculation, the value of the target attribute is also removed.</span></span>
 
-## <a name="why-do-i-receive-an-error-message-that-says-that-my-model-is-in-contradiction"></a>自分のモデルが矛盾しているというエラー メッセージが表示される理由は
-このメッセージは、計算にエラーがあるか、または矛盾が 1 つ以上の制約に存在する場合に表示されます。 制約での矛盾の詳細については、「[式の制約およびテーブル制約](expression-constraints-table-constraints-product-configuration-models.md)」を参照してください。 次に、計算でエラーが発生する状況を示します。
+## <a name="why-do-i-receive-an-error-message-that-says-that-my-model-is-in-contradiction"></a><span data-ttu-id="64c51-158">自分のモデルが矛盾しているというエラー メッセージが表示される理由は</span><span class="sxs-lookup"><span data-stu-id="64c51-158">Why do I receive an error message that says that my model is in contradiction?</span></span>
+<span data-ttu-id="64c51-159">このメッセージは、計算にエラーがあるか、または矛盾が 1 つ以上の制約に存在する場合に表示されます。</span><span class="sxs-lookup"><span data-stu-id="64c51-159">This message is shown when a calculation includes an error, or when a contradiction exists in one or more constraints.</span></span> <span data-ttu-id="64c51-160">制約での矛盾の詳細については、「[式の制約およびテーブル制約](expression-constraints-table-constraints-product-configuration-models.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="64c51-160">For more information about contradictions in constraints, see [Expression constraints and table constraints](expression-constraints-table-constraints-product-configuration-models.md).</span></span> <span data-ttu-id="64c51-161">次に、計算でエラーが発生する状況を示します。</span><span class="sxs-lookup"><span data-stu-id="64c51-161">Here are some situations where errors can occur in calculations:</span></span>
 
--   値を 0 (ゼロ) で割る。
--   次の 2 つの要素間に不一致が存在する。
-    -   属性に対して使用できて、制約によって限定されている値。
-    -   計算によって生成される値
--   計算によって返される値が属性の範囲外にある。 例は 0 に計算される \[1..10\] からの整数です。
+-   <span data-ttu-id="64c51-162">値を 0 (ゼロ) で割る。</span><span class="sxs-lookup"><span data-stu-id="64c51-162">A value is divided by 0 (zero).</span></span>
+-   <span data-ttu-id="64c51-163">次の 2 つの要素間に不一致が存在する。</span><span class="sxs-lookup"><span data-stu-id="64c51-163">A conflict exists between the following two elements:</span></span>
+    -   <span data-ttu-id="64c51-164">属性に対して使用できて、制約によって限定されている値。</span><span class="sxs-lookup"><span data-stu-id="64c51-164">The values that are available for an attribute and are limited by a constraint</span></span>
+    -   <span data-ttu-id="64c51-165">計算によって生成される値</span><span class="sxs-lookup"><span data-stu-id="64c51-165">A value that is generated by a calculation</span></span>
+-   <span data-ttu-id="64c51-166">計算によって返される値が属性の範囲外にある。</span><span class="sxs-lookup"><span data-stu-id="64c51-166">The values that are returned by the calculation are outside the domain of the attribute.</span></span> <span data-ttu-id="64c51-167">例は 0 に計算される \[1..10\] からの整数です。</span><span class="sxs-lookup"><span data-stu-id="64c51-167">An example is an integer from \[1..10\] that is calculated to 0.</span></span>
 
-## <a name="why-do-i-receive-an-error-message-even-though-i-successfully-validated-my-product-model"></a>自分のプロダクト モデルの検証に成功しても、エラー メッセージが出力される理由は
-計算は検証に含まれていません。 計算エラーを探すには、製品コンフィギュレーション モデルをテストする必要があります。 製品コンフィギュレーション モデルをテストするには、次の手順に従います。
+## <a name="why-do-i-receive-an-error-message-even-though-i-successfully-validated-my-product-model"></a><span data-ttu-id="64c51-168">自分のプロダクト モデルの検証に成功しても、エラー メッセージが出力される理由は</span><span class="sxs-lookup"><span data-stu-id="64c51-168">Why do I receive an error message even though I successfully validated my product model?</span></span>
+<span data-ttu-id="64c51-169">計算は検証に含まれていません。</span><span class="sxs-lookup"><span data-stu-id="64c51-169">Calculations aren't included in the validation.</span></span> <span data-ttu-id="64c51-170">計算エラーを探すには、製品コンフィギュレーション モデルをテストする必要があります。</span><span class="sxs-lookup"><span data-stu-id="64c51-170">You must test the product configuration model to find errors in calculations.</span></span> <span data-ttu-id="64c51-171">製品コンフィギュレーション モデルをテストするには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="64c51-171">To test a product configuration model, follow these steps.</span></span>
 
-1.  [**製品情報管理**] &gt; [**共通**] &gt; [**製品コンフィギュレーション モデル**] をクリックします。
-2.  製品コンフィギュレーション モデルを選択し、[アクション ペイン] で、[**実行**] グループ内の [**テスト**] をクリックします。
+1.  <span data-ttu-id="64c51-172">[**製品情報管理**] &gt; [**共通**] &gt; [**製品コンフィギュレーション モデル**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="64c51-172">Click **Product information management** &gt; **Common** &gt; **Product configuration models**.</span></span>
+2.  <span data-ttu-id="64c51-173">製品コンフィギュレーション モデルを選択し、[アクション ペイン] で、[**実行**] グループ内の [**テスト**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="64c51-173">Select a product configuration model, and then, on the Action Pane, in the **Run** group, click **Test**.</span></span>
 
 
 

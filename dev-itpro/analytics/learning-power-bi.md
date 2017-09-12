@@ -16,58 +16,58 @@ ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: a3f28d21a7e73d3ad462c5cc37198dd2b6f5f8af
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: b74e32d9a751adedd8e0e9c2a01834fec759c650
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="learning-power-bi-content"></a>学習 Power BI コンテンツ
+# <a name="learning-power-bi-content"></a><span data-ttu-id="34062-104">学習 Power BI コンテンツ</span><span class="sxs-lookup"><span data-stu-id="34062-104">Learning Power BI content</span></span>
 
 [!include[banner](../includes/banner.md)]
 
-このトピックでは、[**学習**] Microsoft Power BI コンテンツについて説明します。 コンテンツにアクセスする方法、およびコンテンツを構築するために使用されたデータ モデルとエンティティについて説明します。
+<span data-ttu-id="34062-105">このトピックでは、[**学習**] Microsoft Power BI コンテンツについて説明します。</span><span class="sxs-lookup"><span data-stu-id="34062-105">This topic describes the **Learning** Microsoft Power BI content.</span></span> <span data-ttu-id="34062-106">コンテンツにアクセスする方法、およびコンテンツを構築するために使用されたデータ モデルとエンティティについて説明します。</span><span class="sxs-lookup"><span data-stu-id="34062-106">It explains how to access the content, and describes the data model and entities that were used to build the content.</span></span>
 
-## <a name="accessing-the-power-bi-content"></a>Power BI コンテンツへのアクセス
+## <a name="accessing-the-power-bi-content"></a><span data-ttu-id="34062-107">Power BI コンテンツへのアクセス</span><span class="sxs-lookup"><span data-stu-id="34062-107">Accessing the Power BI content</span></span>
 
-Microsoft Dynamics 365 for Finance および Operations、Enterprise Edition 2017 年 7 月の更新プログラムを使用している場合は、[**学習**] Power BI コンテンツは Microsoft Dynamics Lifecycle Services (LCS) 内の共有アセットライブラリにあります。 コンテンツのダウンロード方法および組織で実装する方法の詳細については、「[Microsoft およびパートナーからの LCS での Power BI コンテンツ](power-bi-content-microsoft-partners.md)」を参照してください。 Power BI コンテンツの実装方法を示すデモを視聴するには、「[Microsoft の Power BI コンテンツおよび Dynamics Lifecycle Services のパートナー](https://mix.office.com/watch/9puyb1b2xs1w)」の Office Mix を参照してください。
+<span data-ttu-id="34062-108">Microsoft Dynamics 365 for Finance および Operations、Enterprise Edition 2017 年 7 月の更新プログラムを使用している場合は、[**学習**] Power BI コンテンツは Microsoft Dynamics Lifecycle Services (LCS) 内の共有アセットライブラリにあります。</span><span class="sxs-lookup"><span data-stu-id="34062-108">If you're using Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update, you can find the **Learning** Power BI content in the Shared assets library in Microsoft Dynamics Lifecycle Services (LCS).</span></span> <span data-ttu-id="34062-109">コンテンツのダウンロード方法および組織で実装する方法の詳細については、「[Microsoft およびパートナーからの LCS での Power BI コンテンツ](power-bi-content-microsoft-partners.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="34062-109">For more information about how to download the content and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md).</span></span> <span data-ttu-id="34062-110">Power BI コンテンツの実装方法を示すデモを視聴するには、「[Microsoft の Power BI コンテンツおよび Dynamics Lifecycle Services のパートナー](https://mix.office.com/watch/9puyb1b2xs1w)」の Office Mix を参照してください。</span><span class="sxs-lookup"><span data-stu-id="34062-110">To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.</span></span>
 
-## <a name="reports-that-are-included-in-the-power-bi-content"></a>Power BI コンテンツに含まれるレポート
+## <a name="reports-that-are-included-in-the-power-bi-content"></a><span data-ttu-id="34062-111">Power BI コンテンツに含まれるレポート</span><span class="sxs-lookup"><span data-stu-id="34062-111">Reports that are included in the Power BI content</span></span>
 
-[**学習**] Power BI コンテンツに含まれるレポートには、追加情報を含むグラフとテーブルの両方があります。 次の表にレポートを示します。
+<span data-ttu-id="34062-112">[**学習**] Power BI コンテンツに含まれるレポートには、追加情報を含むグラフとテーブルの両方があります。</span><span class="sxs-lookup"><span data-stu-id="34062-112">The reports that are included in the **Learning** Power BI content have both charts and tables that contain additional information.</span></span> <span data-ttu-id="34062-113">次の表にレポートを示します。</span><span class="sxs-lookup"><span data-stu-id="34062-113">The following table describes the reports.</span></span>
 
-| レポート                 | コンテンツ |
+| <span data-ttu-id="34062-114">レポート </span><span class="sxs-lookup"><span data-stu-id="34062-114">Report</span></span>                | <span data-ttu-id="34062-115">コンテンツ</span><span class="sxs-lookup"><span data-stu-id="34062-115">Contents</span></span> |
 |-----------------------|----------|
-| 学習の概要     | 他のレポートの集計 |
-| コースの分析       | 場所による登録、ステータスによる出席者、コース、会社ごとのタイプによるコース、およびジョブによるコースの出席 |
-| 登録分析 | 登録リスト |
-| コースのタイプ          | スキル別コース タイプ |
-| 講師分析   | 講師に対してコースの比率、講師の数、講師によるコース、講師あたりのコース、および講師によるコース議題 |
-| 提供されているコース       | コースの一覧 |
-| コースのデザイン        | コースの議題 |
+| <span data-ttu-id="34062-116">学習の概要</span><span class="sxs-lookup"><span data-stu-id="34062-116">Learning Overview</span></span>     | <span data-ttu-id="34062-117">他のレポートの集計</span><span class="sxs-lookup"><span data-stu-id="34062-117">Summary of other reports</span></span> |
+| <span data-ttu-id="34062-118">コースの分析</span><span class="sxs-lookup"><span data-stu-id="34062-118">Course Analysis</span></span>       | <span data-ttu-id="34062-119">場所による登録、ステータスによる出席者、コース、会社ごとのタイプによるコース、およびジョブによるコースの出席</span><span class="sxs-lookup"><span data-stu-id="34062-119">Registration by location, attendee by status, courses by type per company, and course attendance by job</span></span> |
+| <span data-ttu-id="34062-120">登録分析</span><span class="sxs-lookup"><span data-stu-id="34062-120">Registration Analysis</span></span> | <span data-ttu-id="34062-121">登録リスト</span><span class="sxs-lookup"><span data-stu-id="34062-121">Registration list</span></span> |
+| <span data-ttu-id="34062-122">コースのタイプ</span><span class="sxs-lookup"><span data-stu-id="34062-122">Course Types</span></span>          | <span data-ttu-id="34062-123">スキル別コース タイプ</span><span class="sxs-lookup"><span data-stu-id="34062-123">Course types by skill</span></span> |
+| <span data-ttu-id="34062-124">講師分析</span><span class="sxs-lookup"><span data-stu-id="34062-124">Instructor Analysis</span></span>   | <span data-ttu-id="34062-125">講師に対してコースの比率、講師の数、講師によるコース、講師あたりのコース、および講師によるコース議題</span><span class="sxs-lookup"><span data-stu-id="34062-125">Ratio of courses to instructors, number of instructors, courses by instructor, courses per instructor, and course agenda by instructor</span></span> |
+| <span data-ttu-id="34062-126">提供されているコース</span><span class="sxs-lookup"><span data-stu-id="34062-126">Courses Offered</span></span>       | <span data-ttu-id="34062-127">コースの一覧</span><span class="sxs-lookup"><span data-stu-id="34062-127">List of courses</span></span> |
+| <span data-ttu-id="34062-128">コースのデザイン</span><span class="sxs-lookup"><span data-stu-id="34062-128">Courses Design</span></span>        | <span data-ttu-id="34062-129">コースの議題</span><span class="sxs-lookup"><span data-stu-id="34062-129">Course agenda</span></span> |
 
-これらのレポートのグラフとタイルをフィルター処理し、ダッシュボードに固定することができます。 Power BI のフィルター処理と固定方法の詳細については、「[ダッシュボードの作成およびコンフィギュレーション](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards)」を参照してください。
+<span data-ttu-id="34062-130">これらのレポートのグラフとタイルをフィルター処理し、ダッシュボードに固定することができます。</span><span class="sxs-lookup"><span data-stu-id="34062-130">You can filter the charts and tiles on these reports, and pin the charts and tiles to the dashboard.</span></span> <span data-ttu-id="34062-131">Power BI のフィルター処理と固定方法の詳細については、「[ダッシュボードの作成およびコンフィギュレーション](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="34062-131">For more information about how to filter and pin in Power BI, see [Create and Configure A Dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).</span></span>
 
-## <a name="understanding-the-data-model-and-entities"></a>データ モデルおよびエンティティの理解
+## <a name="understanding-the-data-model-and-entities"></a><span data-ttu-id="34062-132">データ モデルおよびエンティティの理解</span><span class="sxs-lookup"><span data-stu-id="34062-132">Understanding the data model and entities</span></span>
 
-次のデータを使用して、[**学習**] Power BI コンテンツのレポートを入力します。 この表に、コンテンツが基づいているエンティティを示します。
+<span data-ttu-id="34062-133">次のデータを使用して、[**学習**] Power BI コンテンツのレポートを入力します。</span><span class="sxs-lookup"><span data-stu-id="34062-133">The following data is used to fill the reports in the **Learning** Power BI content.</span></span> <span data-ttu-id="34062-134">この表に、コンテンツが基づいているエンティティを示します。</span><span class="sxs-lookup"><span data-stu-id="34062-134">This table shows the entities that the content was based on.</span></span>
 
-| エンティティ           | コンテンツ                                                         | 他のエンティティとの関係 |
+| <span data-ttu-id="34062-135">エンティティ</span><span class="sxs-lookup"><span data-stu-id="34062-135">Entity</span></span>           | <span data-ttu-id="34062-136">コンテンツ</span><span class="sxs-lookup"><span data-stu-id="34062-136">Contents</span></span>                                                         | <span data-ttu-id="34062-137">他のエンティティとの関係</span><span class="sxs-lookup"><span data-stu-id="34062-137">Relationships with other entities</span></span> |
 |------------------|------------------------------------------------------------------|-----------------------------------|
-| カレンダーのオフセット  | レポートをスライスするカレンダーのオフセット                                | コース議題、コース参加者 |
-| 法人          | レポートをフィルター処理する会社                                   | コース議題、コース参加者 |
-| コース           | コース、説明、講師名、場所、部屋、およびステータス | コース議題、コース参加者、コース スキル |
-| コース議題    | 議題、コース、および開始時間と終了時間                          | 会社、カレンダーのオフセット、日付、コース |
-| コース出席者 | 名前、ステータス、ジョブ、および登録日付                         | 会社、カレンダーのオフセット、日付、コース、従業員層、雇用、コース、従業員名、従業員の肩書き、職務、職位 |
-| コース スキル     | スキル、スキル タイプ、およびレベル                                     | コース |
-| 日             | 日、週、月、年                                   | コース議題、コース参加者 |
-| 顧客情報     | 生年月日、性別、出身民族、配偶者の有無         | コース議題、コース参加者 |
-| 雇用       | 開始日、終了日、移行日                        | コース議題、コース参加者 |
-| ジョブ              | 職務、タイプ、役職                                        | コース議題、コース参加者 |
-| 配置         | 職位、タイトル、およびフルタイム相当額 (FTE)                  | コース議題、コース参加者 |
-| 従業員名    | 名、姓、フルネーム                             | コース出席者 |
-| 従業員の肩書き   | 役職と勤続日数                                         | コース出席者 |
+| <span data-ttu-id="34062-138">カレンダーのオフセット</span><span class="sxs-lookup"><span data-stu-id="34062-138">Calendar Offset</span></span>  | <span data-ttu-id="34062-139">レポートをスライスするカレンダーのオフセット</span><span class="sxs-lookup"><span data-stu-id="34062-139">Calendar offsets to slice reports</span></span>                                | <span data-ttu-id="34062-140">コース議題、コース参加者</span><span class="sxs-lookup"><span data-stu-id="34062-140">Course Agenda, Course Attendees</span></span> |
+| <span data-ttu-id="34062-141">法人</span><span class="sxs-lookup"><span data-stu-id="34062-141">Company</span></span>          | <span data-ttu-id="34062-142">レポートをフィルター処理する会社</span><span class="sxs-lookup"><span data-stu-id="34062-142">Companies to filter reports by</span></span>                                   | <span data-ttu-id="34062-143">コース議題、コース参加者</span><span class="sxs-lookup"><span data-stu-id="34062-143">Course Agenda, Course Attendees</span></span> |
+| <span data-ttu-id="34062-144">コース</span><span class="sxs-lookup"><span data-stu-id="34062-144">Course</span></span>           | <span data-ttu-id="34062-145">コース、説明、講師名、場所、部屋、およびステータス</span><span class="sxs-lookup"><span data-stu-id="34062-145">Course, description, instructor name, location, room, and status</span></span> | <span data-ttu-id="34062-146">コース議題、コース参加者、コース スキル</span><span class="sxs-lookup"><span data-stu-id="34062-146">Course Agenda, Course Attendees, Course Skill</span></span> |
+| <span data-ttu-id="34062-147">コース議題</span><span class="sxs-lookup"><span data-stu-id="34062-147">Course Agenda</span></span>    | <span data-ttu-id="34062-148">議題、コース、および開始時間と終了時間</span><span class="sxs-lookup"><span data-stu-id="34062-148">Agenda, course, and start and end times</span></span>                          | <span data-ttu-id="34062-149">会社、カレンダーのオフセット、日付、コース</span><span class="sxs-lookup"><span data-stu-id="34062-149">Company, Calendar Offset, Date, Course</span></span> |
+| <span data-ttu-id="34062-150">コース出席者</span><span class="sxs-lookup"><span data-stu-id="34062-150">Course Attendees</span></span> | <span data-ttu-id="34062-151">名前、ステータス、ジョブ、および登録日付</span><span class="sxs-lookup"><span data-stu-id="34062-151">Name, status, job, and registration date</span></span>                         | <span data-ttu-id="34062-152">会社、カレンダーのオフセット、日付、コース、従業員層、雇用、コース、従業員名、従業員の肩書き、職務、職位</span><span class="sxs-lookup"><span data-stu-id="34062-152">Company, Calendar Offset, Date, Course, Demographics, Employment, Course, Employee Name, Employee Title, Job, Position</span></span> |
+| <span data-ttu-id="34062-153">コース スキル</span><span class="sxs-lookup"><span data-stu-id="34062-153">Course Skill</span></span>     | <span data-ttu-id="34062-154">スキル、スキル タイプ、およびレベル</span><span class="sxs-lookup"><span data-stu-id="34062-154">Skill, skill type, and level</span></span>                                     | <span data-ttu-id="34062-155">コース</span><span class="sxs-lookup"><span data-stu-id="34062-155">Course</span></span> |
+| <span data-ttu-id="34062-156">日</span><span class="sxs-lookup"><span data-stu-id="34062-156">Date</span></span>             | <span data-ttu-id="34062-157">日、週、月、年</span><span class="sxs-lookup"><span data-stu-id="34062-157">Days, weeks, months, and years</span></span>                                   | <span data-ttu-id="34062-158">コース議題、コース参加者</span><span class="sxs-lookup"><span data-stu-id="34062-158">Course Agenda, Course Attendees</span></span> |
+| <span data-ttu-id="34062-159">顧客情報</span><span class="sxs-lookup"><span data-stu-id="34062-159">Demographics</span></span>     | <span data-ttu-id="34062-160">生年月日、性別、出身民族、配偶者の有無</span><span class="sxs-lookup"><span data-stu-id="34062-160">Date of birth, gender, ethnic origin, and marital status</span></span>         | <span data-ttu-id="34062-161">コース議題、コース参加者</span><span class="sxs-lookup"><span data-stu-id="34062-161">Course Agenda, Course Attendees</span></span> |
+| <span data-ttu-id="34062-162">雇用</span><span class="sxs-lookup"><span data-stu-id="34062-162">Employment</span></span>       | <span data-ttu-id="34062-163">開始日、終了日、移行日</span><span class="sxs-lookup"><span data-stu-id="34062-163">Start date, end date, and transition date</span></span>                        | <span data-ttu-id="34062-164">コース議題、コース参加者</span><span class="sxs-lookup"><span data-stu-id="34062-164">Course Agenda, Course Attendees</span></span> |
+| <span data-ttu-id="34062-165">ジョブ</span><span class="sxs-lookup"><span data-stu-id="34062-165">Job</span></span>              | <span data-ttu-id="34062-166">職務、タイプ、役職</span><span class="sxs-lookup"><span data-stu-id="34062-166">Function, type, and title</span></span>                                        | <span data-ttu-id="34062-167">コース議題、コース参加者</span><span class="sxs-lookup"><span data-stu-id="34062-167">Course Agenda, Course Attendees</span></span> |
+| <span data-ttu-id="34062-168">配置</span><span class="sxs-lookup"><span data-stu-id="34062-168">Position</span></span>         | <span data-ttu-id="34062-169">職位、タイトル、およびフルタイム相当額 (FTE)</span><span class="sxs-lookup"><span data-stu-id="34062-169">Position, title, and full-time equivalent (FTE)</span></span>                  | <span data-ttu-id="34062-170">コース議題、コース参加者</span><span class="sxs-lookup"><span data-stu-id="34062-170">Course Agenda, Course Attendees</span></span> |
+| <span data-ttu-id="34062-171">従業員名</span><span class="sxs-lookup"><span data-stu-id="34062-171">Employee Name</span></span>    | <span data-ttu-id="34062-172">名、姓、フルネーム</span><span class="sxs-lookup"><span data-stu-id="34062-172">First name, last name, and full name</span></span>                             | <span data-ttu-id="34062-173">コース出席者</span><span class="sxs-lookup"><span data-stu-id="34062-173">Course Attendees</span></span> |
+| <span data-ttu-id="34062-174">従業員の肩書き</span><span class="sxs-lookup"><span data-stu-id="34062-174">Employee Title</span></span>   | <span data-ttu-id="34062-175">役職と勤続日数</span><span class="sxs-lookup"><span data-stu-id="34062-175">Title and seniority date</span></span>                                         | <span data-ttu-id="34062-176">コース出席者</span><span class="sxs-lookup"><span data-stu-id="34062-176">Course Attendees</span></span> |
 
-これらのエンティティは、データ モデルの計算メジャーを作成するために使用されました。 これらの計算メジャーは、主要業績評価指標 (KPI) およびコンテンツで使用するためのレポートを計算するために使用されます。 レポートおよびダッシュボードに追加の計算を含める場合は、LCS から .pbix ファイルをダウンロードして変更することができます。 このファイルはコンテンツを作成するために使用された既定のデータ モデルです。 変更後に、追加した情報を含む組織のコンテンツ パックとダッシュボードを作成できます。
+<span data-ttu-id="34062-177">これらのエンティティは、データ モデルの計算メジャーを作成するために使用されました。</span><span class="sxs-lookup"><span data-stu-id="34062-177">These entities were used to create calculated measures in the data model.</span></span> <span data-ttu-id="34062-178">これらの計算メジャーは、主要業績評価指標 (KPI) およびコンテンツで使用するためのレポートを計算するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="34062-178">These calculated measures are then used to calculate the key performance indicators (KPIs) and reports that are used in the content.</span></span> <span data-ttu-id="34062-179">レポートおよびダッシュボードに追加の計算を含める場合は、LCS から .pbix ファイルをダウンロードして変更することができます。</span><span class="sxs-lookup"><span data-stu-id="34062-179">If you want to include additional calculations on your reports and dashboard, you can download and modify the .pbix file from LCS.</span></span> <span data-ttu-id="34062-180">このファイルはコンテンツを作成するために使用された既定のデータ モデルです。</span><span class="sxs-lookup"><span data-stu-id="34062-180">This file is the default data model that was used to create the content.</span></span> <span data-ttu-id="34062-181">変更後に、追加した情報を含む組織のコンテンツ パックとダッシュボードを作成できます。</span><span class="sxs-lookup"><span data-stu-id="34062-181">After you've made modifications, you can create an organizational content pack and dashboard that contain the information that you’ve added.</span></span>
 

@@ -16,35 +16,35 @@ ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 066604417f842de84054a9ee56646fff242f303b
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 97a28069f8d560c98099a667852c932ba7658996
 ms.contentlocale: ja-jp
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="settle-transactions-between-ledger-accounts"></a>勘定科目間でのトランザクションの決済
+# <a name="settle-transactions-between-ledger-accounts"></a><span data-ttu-id="1aff4-103">勘定科目間でのトランザクションの決済</span><span class="sxs-lookup"><span data-stu-id="1aff4-103">Settle transactions between ledger accounts</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-この手順は、勘定科目間でトランザクションを決済する方法、また元帳決済をキャンセルする方法を示します。 この手順では、デモ データの会社 USMF を使用します。
+<span data-ttu-id="1aff4-104">この手順は、勘定科目間でトランザクションを決済する方法、また元帳決済をキャンセルする方法を示します。</span><span class="sxs-lookup"><span data-stu-id="1aff4-104">This procedure shows how to settle transactions between ledger accounts and cancel a ledger settlement.</span></span> <span data-ttu-id="1aff4-105">この手順では、デモ データの会社 USMF を使用します。</span><span class="sxs-lookup"><span data-stu-id="1aff4-105">This procedure uses the USMF demo data company.</span></span>
 
 
-## <a name="settle-transaction-between-ledger-accounts"></a>勘定科目間でのトランザクションの決済
-1. [総勘定元帳] > [定期処理タスク] > [元帳決済] の順に移動します。
-2. 一覧で、決済するトランザクションを見つけます。
-    * 残額は 0 にする必要があります。  
-3. [含む] をクリックします。
-4. [承認] をクリックします。
+## <a name="settle-transaction-between-ledger-accounts"></a><span data-ttu-id="1aff4-106">勘定科目間でのトランザクションの決済</span><span class="sxs-lookup"><span data-stu-id="1aff4-106">Settle transaction between ledger accounts</span></span>
+1. <span data-ttu-id="1aff4-107">[総勘定元帳] > [定期処理タスク] > [元帳決済] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="1aff4-107">Go to General ledger > Periodic tasks > Ledger settlements.</span></span>
+2. <span data-ttu-id="1aff4-108">一覧で、決済するトランザクションを見つけます。</span><span class="sxs-lookup"><span data-stu-id="1aff4-108">In the list, find the transaction that you want to settle.</span></span>
+    * <span data-ttu-id="1aff4-109">残額は 0 にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="1aff4-109">The amount balance must be zero.</span></span>  
+3. <span data-ttu-id="1aff4-110">[含む] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="1aff4-110">Click Include.</span></span>
+4. <span data-ttu-id="1aff4-111">[承認] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="1aff4-111">Click Accept.</span></span>
 
-## <a name="cancel-a-ledger-settlement"></a>元帳決済のキャンセル
-1. ページを閉じます。
-2. [総勘定元帳] > [照会およびレポート] > [試算表] の順に移動します。
-3. [パラメーター] をクリックして、ドロップ ダイアログを開きます。
-4. [更新] をクリックします。
-5. 一覧で、トランザクションが決済した勘定を見つけます。
-6. [すべてのトランザクション] をクリックします。
-7. フィルターを使用すると、一覧内のトランザクションを簡単に見つけることができます。
-8. [元帳決済] をクリックします。
-9. 一覧で、選択された行をマークします。
+## <a name="cancel-a-ledger-settlement"></a><span data-ttu-id="1aff4-112">元帳決済のキャンセル</span><span class="sxs-lookup"><span data-stu-id="1aff4-112">Cancel a ledger settlement</span></span>
+1. <span data-ttu-id="1aff4-113">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="1aff4-113">Close the page.</span></span>
+2. <span data-ttu-id="1aff4-114">[総勘定元帳] > [照会およびレポート] > [試算表] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="1aff4-114">Go to General ledger > Inquiries and reports > Trial balance.</span></span>
+3. <span data-ttu-id="1aff4-115">[パラメーター] をクリックして、ドロップ ダイアログを開きます。</span><span class="sxs-lookup"><span data-stu-id="1aff4-115">Click Parameters to open the drop dialog.</span></span>
+4. <span data-ttu-id="1aff4-116">[更新] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="1aff4-116">Click Update.</span></span>
+5. <span data-ttu-id="1aff4-117">一覧で、トランザクションが決済した勘定を見つけます。</span><span class="sxs-lookup"><span data-stu-id="1aff4-117">In the list, find the account that has the settled transaction.</span></span>
+6. <span data-ttu-id="1aff4-118">[すべてのトランザクション] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="1aff4-118">Click All transactions.</span></span>
+7. <span data-ttu-id="1aff4-119">フィルターを使用すると、一覧内のトランザクションを簡単に見つけることができます。</span><span class="sxs-lookup"><span data-stu-id="1aff4-119">Use a filter to easily find the transaction in the list.</span></span>
+8. <span data-ttu-id="1aff4-120">[元帳決済] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="1aff4-120">Click Ledger settlements.</span></span>
+9. <span data-ttu-id="1aff4-121">一覧で、選択された行をマークします。</span><span class="sxs-lookup"><span data-stu-id="1aff4-121">In the list, mark the selected row.</span></span>
 
 

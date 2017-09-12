@@ -16,24 +16,24 @@ ms.assetid: 7c00dc35-73e5-400a-8587-22f37ddfc0e0
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: josaw
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
-ms.openlocfilehash: c0c0e9a0f863eb33d544f63e40e0531cdaaf6426
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 14dab07075a3f042e0095b912e51768ccb086f0e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="order-holds"></a>注文保留
+# <a name="order-holds"></a><span data-ttu-id="073ae-103">注文保留</span><span class="sxs-lookup"><span data-stu-id="073ae-103">Order holds</span></span>
 
 [!include[banner](includes/banner.md)]
 
 
-このトピックでは、Dynamics 365 for Retail を使用して、注文の保留について説明します。
+<span data-ttu-id="073ae-104">このトピックでは、Dynamics 365 for Retail を使用して、注文の保留について説明します。</span><span class="sxs-lookup"><span data-stu-id="073ae-104">This topic describes holds on orders using Dynamics 365 for Retail.</span></span>
 
-注文はさまざまな理由で保留にすることができます。 たとえば、顧客の住所や支払方法が確認できるまで、またはマネージャーが顧客の与信限度額を確認できるまで、注文を保留にすることがあります。 販売プロセスの間は、販売注文は保留中にすることが必要な場合があります。 たとえば、顧客の支払いに関する問題のために、または管理者の確認が必要なために、販売注文を保留中にすることが必要な場合があります。 販売注文を保留中にすると、保留の理由を示す注文保留コードが販売注文に割り当てられます。 **販売とマーケティング** &gt; **設定** &gt; **販売注文** &gt; **注文保留コード** で販売注文保留コードがコンフィギュレーションされます。 販売注文は注文の作成時に、または後で手動で保留にすることができます。 また、注文を不正ルールに基づいて、自動的に保留にすることができます。 販売注文が保留中の間、詳細情報に基いてそれを更新する必要がある場合があります。 または、販売注文をチェック アウトして作業を続行することもできます。 販売注文をチェックアウト、もう一度確認、および注文保留ワークベンチを使用して、別のユーザーのチェックアウトを上書きすることができます (**小売** &gt; **顧客** &gt; **注文保留**)。 注文を完了する準備が整ったら、注文プロセスを完了する前に、保留を解除する必要があります。
+<span data-ttu-id="073ae-105">注文はさまざまな理由で保留にすることができます。</span><span class="sxs-lookup"><span data-stu-id="073ae-105">An order can be put on hold for various reasons.</span></span> <span data-ttu-id="073ae-106">たとえば、顧客の住所や支払方法が確認できるまで、またはマネージャーが顧客の与信限度額を確認できるまで、注文を保留にすることがあります。</span><span class="sxs-lookup"><span data-stu-id="073ae-106">For example, you might put an order on hold until the customer address or payment method can be verified, or until a manager can review the customer’s credit limit.</span></span> <span data-ttu-id="073ae-107">販売プロセスの間は、販売注文は保留中にすることが必要な場合があります。</span><span class="sxs-lookup"><span data-stu-id="073ae-107">During the sales process, there are times when sales orders must be put on hold.</span></span> <span data-ttu-id="073ae-108">たとえば、顧客の支払いに関する問題のために、または管理者の確認が必要なために、販売注文を保留中にすることが必要な場合があります。</span><span class="sxs-lookup"><span data-stu-id="073ae-108">For example, a sales order might be put on hold because of issues with a customer payment, because of suspected fraud, or because a manager must review the order.</span></span> <span data-ttu-id="073ae-109">販売注文を保留中にすると、保留の理由を示す注文保留コードが販売注文に割り当てられます。</span><span class="sxs-lookup"><span data-stu-id="073ae-109">When a sales order is put on hold, an order hold code is assigned to the sales order to indicate the reason for the hold.</span></span> <span data-ttu-id="073ae-110">**販売とマーケティング** &gt; **設定** &gt; **販売注文** &gt; **注文保留コード** で販売注文保留コードがコンフィギュレーションされます。</span><span class="sxs-lookup"><span data-stu-id="073ae-110">Sales order hold codes are configured at **Sales and marketing** &gt; **Setup** &gt; **Sales orders** &gt; **Order holds codes**.</span></span> <span data-ttu-id="073ae-111">販売注文は注文の作成時に、または後で手動で保留にすることができます。</span><span class="sxs-lookup"><span data-stu-id="073ae-111">A sales order can be put on hold manually at the time of order creation or later.</span></span> <span data-ttu-id="073ae-112">また、注文を不正ルールに基づいて、自動的に保留にすることができます。</span><span class="sxs-lookup"><span data-stu-id="073ae-112">Additionally, an order can be put on hold automatically, based on fraud rules.</span></span> <span data-ttu-id="073ae-113">販売注文が保留中の間、詳細情報に基いてそれを更新する必要がある場合があります。</span><span class="sxs-lookup"><span data-stu-id="073ae-113">While a sales order is on hold, you might have to update it with more information.</span></span> <span data-ttu-id="073ae-114">または、販売注文をチェック アウトして作業を続行することもできます。</span><span class="sxs-lookup"><span data-stu-id="073ae-114">Alternatively, you might want to check out the sales order as you continue to work on it.</span></span> <span data-ttu-id="073ae-115">販売注文をチェックアウト、もう一度確認、および注文保留ワークベンチを使用して、別のユーザーのチェックアウトを上書きすることができます (**小売** &gt; **顧客** &gt; **注文保留**)。</span><span class="sxs-lookup"><span data-stu-id="073ae-115">You can check out a sales order, check it back in, and even override the checkout of another user by using the order hold workbench (**Retail** &gt; **Customers** &gt; **Order holds**).</span></span> <span data-ttu-id="073ae-116">注文を完了する準備が整ったら、注文プロセスを完了する前に、保留を解除する必要があります。</span><span class="sxs-lookup"><span data-stu-id="073ae-116">When an order is ready to be completed, you must remove the hold before you can complete the order process.</span></span>
 
 
 

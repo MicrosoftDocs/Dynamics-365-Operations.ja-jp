@@ -15,56 +15,56 @@ ms.custom: 192061
 ms.assetid: c0aceb57-b5e6-4ef3-91e7-89a21c9f048a
 ms.search.region: Global
 ms.author: donaldc
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 66f1b8e03cc0da5d21fea9b3c795d8f4097c8cfc
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 56e29bd2e875b8bb729e5dfe0c5ac03fc997ecbe
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="configure-an-automated-task-in-a-workflow"></a>ワークフローの自動化タスクのコンフィギュレーション
+# <a name="configure-an-automated-task-in-a-workflow"></a><span data-ttu-id="41f40-103">ワークフローの自動化タスクのコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="41f40-103">Configure an automated task in a workflow</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-このトピックでは、自動化タスクのプロパティをコンフィギュレーションする方法について説明します。
+<span data-ttu-id="41f40-104">このトピックでは、自動化タスクのプロパティをコンフィギュレーションする方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="41f40-104">This topic explains how to configure the properties for an automated task.</span></span>
 
-ワークフロー エディターで自動化タスクをコンフィギュレーションするには、タスクを右クリックし、[**プロパティ**] をクリックして、[**プロパティ**] ページを開きます。 それから次の手順に従って、自動化タスクのプロパティをコンフィギュレーションします。
+<span data-ttu-id="41f40-105">ワークフロー エディターで自動化タスクをコンフィギュレーションするには、タスクを右クリックし、[**プロパティ**] をクリックして、[**プロパティ**] ページを開きます。</span><span class="sxs-lookup"><span data-stu-id="41f40-105">To configure an automated task in the workflow editor, right-click the task, and then click **Properties** to open the **Properties** page.</span></span> <span data-ttu-id="41f40-106">それから次の手順に従って、自動化タスクのプロパティをコンフィギュレーションします。</span><span class="sxs-lookup"><span data-stu-id="41f40-106">Then use the following procedures to configure the properties for the automated task.</span></span>
 
-## <a name="name-the-task"></a>タスクに名前を付ける
-自動化タスクの名前を入力するには、次の手順に従います。
+## <a name="name-the-task"></a><span data-ttu-id="41f40-107">タスクに名前を付ける</span><span class="sxs-lookup"><span data-stu-id="41f40-107">Name the task</span></span>
+<span data-ttu-id="41f40-108">自動化タスクの名前を入力するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="41f40-108">Follow these steps to enter a name for the automated task.</span></span>
 
-1.  左ウィンドウで [**基本設定**] をクリックします。
-2.  [**名前**] フィールドに、タスクの固有名を入力します。
+1.  <span data-ttu-id="41f40-109">左ウィンドウで [**基本設定**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="41f40-109">In the left pane, click **Basic Settings**.</span></span>
+2.  <span data-ttu-id="41f40-110">[**名前**] フィールドに、タスクの固有名を入力します。</span><span class="sxs-lookup"><span data-stu-id="41f40-110">In the **Name** field, enter a unique name for the task.</span></span>
 
-## <a name="specify-when-notifications-are-sent"></a>いつ通知を送信するかを指定する
-自動化タスクが実行されたときまたはキャンセルされたときに、ユーザーに通知を送信できます。 通知の送信条件と送信先のユーザーを指定するには、次の手順に従います。
+## <a name="specify-when-notifications-are-sent"></a><span data-ttu-id="41f40-111">いつ通知を送信するかを指定する</span><span class="sxs-lookup"><span data-stu-id="41f40-111">Specify when notifications are sent</span></span>
+<span data-ttu-id="41f40-112">自動化タスクが実行されたときまたはキャンセルされたときに、ユーザーに通知を送信できます。</span><span class="sxs-lookup"><span data-stu-id="41f40-112">You can send notifications to people when an automated task has been run or canceled.</span></span> <span data-ttu-id="41f40-113">通知の送信条件と送信先のユーザーを指定するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="41f40-113">Follow these steps to specify when notifications are sent, and who they are sent to.</span></span>
 
-1.  左ウィンドウで、[**通知**] をクリックします。
-2.  通知の送信するイベントの横にあるチェック ボックスをオンにします。
-    -   [**実行**] – タスクが実行されたときに通知が送信されます。
-    -   [**キャンセル済**] – タスクがキャンセルされたときに通知が送信されます。
+1.  <span data-ttu-id="41f40-114">左ウィンドウで、[**通知**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="41f40-114">In the left pane, click **Notifications**.</span></span>
+2.  <span data-ttu-id="41f40-115">通知の送信するイベントの横にあるチェック ボックスをオンにします。</span><span class="sxs-lookup"><span data-stu-id="41f40-115">Select the check box next to the events to send notifications for:</span></span>
+    -   <span data-ttu-id="41f40-116">[**実行**] – タスクが実行されたときに通知が送信されます。</span><span class="sxs-lookup"><span data-stu-id="41f40-116">**Execution** – Notifications are sent when the task has been run.</span></span>
+    -   <span data-ttu-id="41f40-117">[**キャンセル済**] – タスクがキャンセルされたときに通知が送信されます。</span><span class="sxs-lookup"><span data-stu-id="41f40-117">**Canceled** – Notifications are sent when the task has been canceled.</span></span>
 
-3.  ステップ 2 で選択したイベントの行を選択します。
-4.  [**通知テキスト**] タブのテキスト ボックス内で、通知のテキストを入力します。
-5.  通知を個人向けのものにするには、プレースホルダーを挿入します。 プレースホルダーは、通知がユーザーに表示されるときに、適切なデータに置き換えられます。 次の手順に従って、プレースホルダーを挿入します。
-    1.  テキスト ボックス内で、プレースホルダを表示する場所をクリックします。
-    2.  [**プレースホルダーの挿入**] をクリックします。
-    3.  表示されるリストで、挿入するプレースホルダーを選択します。
-    4.  [**挿入**] をクリックします。
+3.  <span data-ttu-id="41f40-118">ステップ 2 で選択したイベントの行を選択します。</span><span class="sxs-lookup"><span data-stu-id="41f40-118">Select the row for an event that you selected in step 2.</span></span>
+4.  <span data-ttu-id="41f40-119">[**通知テキスト**] タブのテキスト ボックス内で、通知のテキストを入力します。</span><span class="sxs-lookup"><span data-stu-id="41f40-119">On the **Notification text** tab, in the text box, enter the text of the notification.</span></span>
+5.  <span data-ttu-id="41f40-120">通知を個人向けのものにするには、プレースホルダーを挿入します。</span><span class="sxs-lookup"><span data-stu-id="41f40-120">To personalize the notification, you can insert placeholders.</span></span> <span data-ttu-id="41f40-121">プレースホルダーは、通知がユーザーに表示されるときに、適切なデータに置き換えられます。</span><span class="sxs-lookup"><span data-stu-id="41f40-121">Placeholders are replaced with appropriate data when the notification is shown to users.</span></span> <span data-ttu-id="41f40-122">次の手順に従って、プレースホルダーを挿入します。</span><span class="sxs-lookup"><span data-stu-id="41f40-122">Follow these steps to insert a placeholder:</span></span>
+    1.  <span data-ttu-id="41f40-123">テキスト ボックス内で、プレースホルダを表示する場所をクリックします。</span><span class="sxs-lookup"><span data-stu-id="41f40-123">In the text box, click where the placeholder should appear.</span></span>
+    2.  <span data-ttu-id="41f40-124">[**プレースホルダーの挿入**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="41f40-124">Click **Insert placeholder**.</span></span>
+    3.  <span data-ttu-id="41f40-125">表示されるリストで、挿入するプレースホルダーを選択します。</span><span class="sxs-lookup"><span data-stu-id="41f40-125">In the list that appears, select the placeholder to insert.</span></span>
+    4.  <span data-ttu-id="41f40-126">[**挿入**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="41f40-126">Click **Insert**.</span></span>
 
-6.  通知の翻訳を追加するには、次の手順に従います。
-    1.  [**翻訳**] をクリックします。
-    2.  表示されるページで、[**追加**] をクリックします。
-    3.  表示される一覧で、テキストを入力する言語を選択します。
-    4.  [**翻訳テキスト**] フィールドで、テキストを入力します。
-    5.  テキストをカスタマイズする場合は、ステップ 5 の説明に従い、プレースホルダーを挿入します。
-    6.  [**閉じる**] をクリックします。
+6.  <span data-ttu-id="41f40-127">通知の翻訳を追加するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="41f40-127">To add translations of the notification, follow these steps:</span></span>
+    1.  <span data-ttu-id="41f40-128">[**翻訳**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="41f40-128">Click **Translations**.</span></span>
+    2.  <span data-ttu-id="41f40-129">表示されるページで、[**追加**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="41f40-129">On the page that appears, click **Add**.</span></span>
+    3.  <span data-ttu-id="41f40-130">表示される一覧で、テキストを入力する言語を選択します。</span><span class="sxs-lookup"><span data-stu-id="41f40-130">In the list that appears, select the language that you're entering the text in.</span></span>
+    4.  <span data-ttu-id="41f40-131">[**翻訳テキスト**] フィールドで、テキストを入力します。</span><span class="sxs-lookup"><span data-stu-id="41f40-131">In the **Translated text** field, enter the text.</span></span>
+    5.  <span data-ttu-id="41f40-132">テキストをカスタマイズする場合は、ステップ 5 の説明に従い、プレースホルダーを挿入します。</span><span class="sxs-lookup"><span data-stu-id="41f40-132">To personalize the text, you can insert placeholders as described in step 5.</span></span>
+    6.  <span data-ttu-id="41f40-133">[**閉じる**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="41f40-133">Click **Close**.</span></span>
 
-7.  [**受信者**] タブで、通知の送信先ユーザーを指定します。 次の表のいずれかのオプションを選択し、オプションの追加ステップを実行してから、ステップ 8 に進みます。
+7.  <span data-ttu-id="41f40-134">[**受信者**] タブで、通知の送信先ユーザーを指定します。</span><span class="sxs-lookup"><span data-stu-id="41f40-134">On the **Recipient** tab, specify who the notifications are sent to.</span></span> <span data-ttu-id="41f40-135">次の表のいずれかのオプションを選択し、オプションの追加ステップを実行してから、ステップ 8 に進みます。</span><span class="sxs-lookup"><span data-stu-id="41f40-135">Select one of the options in the following table, and then follow the additional steps for that option before you go to step 8.</span></span>
     <table>
     <colgroup>
     <col width="33%" />
@@ -73,39 +73,39 @@ ms.lasthandoff: 06/13/2017
     </colgroup>
     <thead>
     <tr class="header">
-    <th>オプション</th>
-    <th>通知の受信者</th>
-    <th>追加手順</th>
+    <th><span data-ttu-id="41f40-136">オプション</span><span class="sxs-lookup"><span data-stu-id="41f40-136">Option</span></span></th>
+    <th><span data-ttu-id="41f40-137">通知の受信者</span><span class="sxs-lookup"><span data-stu-id="41f40-137">Notification recipients</span></span></th>
+    <th><span data-ttu-id="41f40-138">追加手順</span><span class="sxs-lookup"><span data-stu-id="41f40-138">Additional steps</span></span></th>
     </tr>
     </thead>
     <tbody>
     <tr class="odd">
-    <td>参加者</td>
-    <td>特定のグループまたはロールに割り当てられたユーザー</td>
+    <td><span data-ttu-id="41f40-139">参加者</span><span class="sxs-lookup"><span data-stu-id="41f40-139">Participant</span></span></td>
+    <td><span data-ttu-id="41f40-140">特定のグループまたはロールに割り当てられたユーザー</span><span class="sxs-lookup"><span data-stu-id="41f40-140">Users who are assigned to a specific group or role</span></span></td>
     <td><ol>
-    <li>[<strong>参加者のタイプ</strong>] 一覧の [<strong>ロール ベース</strong>] タブの、[<strong>参加者</strong>] を選択したのち、通知の送信先のグループまたはロールのタイプを選択します。</li>
-    <li>[<strong>参加者</strong>] の一覧で、通知の送信先のグループまたはロールのタイプを選択します。</li>
+    <li><span data-ttu-id="41f40-141">[<strong>参加者のタイプ</strong>] 一覧の [<strong>ロール ベース</strong>] タブの、[<strong>参加者</strong>] を選択したのち、通知の送信先のグループまたはロールのタイプを選択します。</span><span class="sxs-lookup"><span data-stu-id="41f40-141">After you select <strong>Participant</strong>, on the <strong>Role based</strong> tab, in the <strong>Type of participant</strong> list, select the type of group or role to send notifications to.</span></span></li>
+    <li><span data-ttu-id="41f40-142">[<strong>参加者</strong>] の一覧で、通知の送信先のグループまたはロールのタイプを選択します。</span><span class="sxs-lookup"><span data-stu-id="41f40-142">In the <strong>Participant</strong> list, select the group or role to send notifications to.</span></span></li>
     </ol></td>
     </tr>
     <tr class="even">
-    <td>ワークフロー ユーザー</td>
-    <td>現在のワークフローに参加しているユーザー</td>
+    <td><span data-ttu-id="41f40-143">ワークフロー ユーザー</span><span class="sxs-lookup"><span data-stu-id="41f40-143">Workflow user</span></span></td>
+    <td><span data-ttu-id="41f40-144">現在のワークフローに参加しているユーザー</span><span class="sxs-lookup"><span data-stu-id="41f40-144">Users who participate in the current workflow</span></span></td>
     <td><ul>
-    <li>[<strong>ワークフロー ユーザー</strong>] 一覧の、[<strong>ワークフロー ユーザー</strong>] タブの、[<strong>ワークフロー ユーザー</strong>] を選択したのち、ワークフローに参加するユーザーを選択します。</li>
+    <li><span data-ttu-id="41f40-145">[<strong>ワークフロー ユーザー</strong>] 一覧の、[<strong>ワークフロー ユーザー</strong>] タブの、[<strong>ワークフロー ユーザー</strong>] を選択したのち、ワークフローに参加するユーザーを選択します。</span><span class="sxs-lookup"><span data-stu-id="41f40-145">After you select <strong>Workflow user</strong>, on the <strong>Workflow user</strong> tab, in the <strong>Workflow user</strong> list, select a user who participates in the workflow.</span></span></li>
     </ul></td>
     </tr>
     <tr class="odd">
-    <td>ユーザー</td>
-    <td>特定の Microsoft Dynamics 365 for Finance and Operations ユーザー</td>
+    <td><span data-ttu-id="41f40-146">ユーザー</span><span class="sxs-lookup"><span data-stu-id="41f40-146">User</span></span></td>
+    <td><span data-ttu-id="41f40-147">特定の Microsoft Dynamics 365 for Finance and Operations ユーザー</span><span class="sxs-lookup"><span data-stu-id="41f40-147">Specific Microsoft Dynamics 365 for Finance and Operations users</span></span></td>
     <td><ol>
-    <li>[<strong>ユーザー</strong>] を選択したのち、[<strong>ユーザー</strong>] タブをクリックします。</li>
-    <li>[<strong>利用可能なユーザー</strong>] 一覧には、すべての Finance and Operations ユーザーが含まれます。 通知の送信先のユーザーを選択して、それらのユーザーを [<strong>選択されたユーザー</strong>] リストに移動します。</li>
+    <li><span data-ttu-id="41f40-148">[<strong>ユーザー</strong>] を選択したのち、[<strong>ユーザー</strong>] タブをクリックします。</span><span class="sxs-lookup"><span data-stu-id="41f40-148">After you select <strong>User</strong>, click the <strong>User</strong> tab.</span></span></li>
+    <li><span data-ttu-id="41f40-149">[<strong>利用可能なユーザー</strong>] 一覧には、すべての Finance and Operations ユーザーが含まれます。</span><span class="sxs-lookup"><span data-stu-id="41f40-149">The <strong>Available users</strong> list includes all Finance and Operations users.</span></span> <span data-ttu-id="41f40-150">通知の送信先のユーザーを選択して、それらのユーザーを [<strong>選択されたユーザー</strong>] リストに移動します。</span><span class="sxs-lookup"><span data-stu-id="41f40-150">Select the users to send notifications to, and then move those users to the <strong>Selected users</strong> list.</span></span></li>
     </ol></td>
     </tr>
     </tbody>
     </table>
 
-8.  ステップ 2 で選択したイベントごとに、ステップ 3～7 を繰り返します。
+8.  <span data-ttu-id="41f40-151">ステップ 2 で選択したイベントごとに、ステップ 3～7 を繰り返します。</span><span class="sxs-lookup"><span data-stu-id="41f40-151">Repeat steps 3 through 7 for each event that you selected in step 2.</span></span>
 
 
 

@@ -17,334 +17,334 @@ ms.assetid:
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: YuyuScheller
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
-ms.openlocfilehash: 180863b5c3b8fe7870ab58f3849e52583f5880c1
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: b4d8ddf1990377e46502a49ffa38e7afa46273da
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="statistical-dimension-members-and-statistical-measure-provider-templates"></a>統計分析コード メンバーと統計測定プロバイダー テンプレート
+# <a name="statistical-dimension-members-and-statistical-measure-provider-templates"></a><span data-ttu-id="c263f-105">統計分析コード メンバーと統計測定プロバイダー テンプレート</span><span class="sxs-lookup"><span data-stu-id="c263f-105">Statistical dimension members and statistical measure provider templates</span></span>
 
 [!include[banner](../includes/banner.md)]
 
-統計分析コードとそのメンバーは、原価会計の非通貨入力を登録および制御するために使用されます。 統計分析コードのメンバーは、次の 2 つの目的で使用できます。
+<span data-ttu-id="c263f-106">統計分析コードとそのメンバーは、原価会計の非通貨入力を登録および制御するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="c263f-106">A statistical dimension and its members are used to register and control non-monetary entries in Cost accounting.</span></span> <span data-ttu-id="c263f-107">統計分析コードのメンバーは、次の 2 つの目的で使用できます。</span><span class="sxs-lookup"><span data-stu-id="c263f-107">Statistical dimension members can be used for two purposes:</span></span>
 
-- コスト配分やコスト配賦などのポリシーにおける配賦基準として
-- 非金銭消費の報告として
+- <span data-ttu-id="c263f-108">コスト配分やコスト配賦などのポリシーにおける配賦基準として</span><span class="sxs-lookup"><span data-stu-id="c263f-108">As an allocation base in policies such as cost distribution or cost allocation</span></span>
+- <span data-ttu-id="c263f-109">非金銭消費の報告として</span><span class="sxs-lookup"><span data-stu-id="c263f-109">For reporting of non-monetary consumption</span></span>
 
-## <a name="statistical-dimension"></a>統計分析コード
+## <a name="statistical-dimension"></a><span data-ttu-id="c263f-110">統計分析コード</span><span class="sxs-lookup"><span data-stu-id="c263f-110">Statistical dimension</span></span>
 
-統計ディメンションには、一意の名前と一意の分析コード メンバーのセットがあります。 統計の分析コードが原価会計元帳 ID に割り当てられています。 この関係により、対応するすべての統計分析コード メンバーが原価会計元帳に関連付けられます。 したがって、すべての統計エントリは、原価会計元帳のコンテキストに作成されます。
+<span data-ttu-id="c263f-111">統計ディメンションには、一意の名前と一意の分析コード メンバーのセットがあります。</span><span class="sxs-lookup"><span data-stu-id="c263f-111">A statistical dimension has a unique name and a set of unique dimension members.</span></span> <span data-ttu-id="c263f-112">統計の分析コードが原価会計元帳 ID に割り当てられています。</span><span class="sxs-lookup"><span data-stu-id="c263f-112">The statistical dimension is assigned to a Cost accounting ledger ID.</span></span> <span data-ttu-id="c263f-113">この関係により、対応するすべての統計分析コード メンバーが原価会計元帳に関連付けられます。</span><span class="sxs-lookup"><span data-stu-id="c263f-113">This relationship ties all corresponding statistical dimension members to the Cost accounting ledger.</span></span> <span data-ttu-id="c263f-114">したがって、すべての統計エントリは、原価会計元帳のコンテキストに作成されます。</span><span class="sxs-lookup"><span data-stu-id="c263f-114">Therefore, all statistical entries will be created in the context of the Cost accounting ledger.</span></span>
 
 > [!NOTE]
-> 統計の分析コードは、複数の原価会計元帳に割り当てられます。
+> <span data-ttu-id="c263f-115">統計の分析コードは、複数の原価会計元帳に割り当てられます。</span><span class="sxs-lookup"><span data-stu-id="c263f-115">A statistical dimension can be assigned to more than one Cost accounting ledger.</span></span>
 
-統計の分析コードの例を次に示します。
+<span data-ttu-id="c263f-116">統計の分析コードの例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="c263f-116">Here is an example of a statistical dimension.</span></span>
 
-| 氏名                        | 分析コード メンバーのデータ コネクタ |
+| <span data-ttu-id="c263f-117">氏名</span><span class="sxs-lookup"><span data-stu-id="c263f-117">Name</span></span>                        | <span data-ttu-id="c263f-118">分析コード メンバーのデータ コネクタ</span><span class="sxs-lookup"><span data-stu-id="c263f-118">Data connector for dimension members</span></span> |
 |-----------------------------|--------------------------------------|
-| 共有統計要素 | インポートされた分析コード メンバー           |
+| <span data-ttu-id="c263f-119">共有統計要素</span><span class="sxs-lookup"><span data-stu-id="c263f-119">Shared Statistical elements</span></span> | <span data-ttu-id="c263f-120">インポートされた分析コード メンバー</span><span class="sxs-lookup"><span data-stu-id="c263f-120">Imported dimension members</span></span>           |
 
-原価会計元帳に割り当てられた統計分析コードの例を次に示します。
+<span data-ttu-id="c263f-121">原価会計元帳に割り当てられた統計分析コードの例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="c263f-121">Here is an example of a statistical dimension that has been assigned to a Cost accounting ledger.</span></span>
 
-| 氏名                  | 会計通貨 | 為替レート タイプ | 会計カレンダー | 原価要素分析コード | 統計分析コード       |
+| <span data-ttu-id="c263f-122">氏名</span><span class="sxs-lookup"><span data-stu-id="c263f-122">Name</span></span>                  | <span data-ttu-id="c263f-123">会計通貨</span><span class="sxs-lookup"><span data-stu-id="c263f-123">Accounting currency</span></span> | <span data-ttu-id="c263f-124">為替レート タイプ</span><span class="sxs-lookup"><span data-stu-id="c263f-124">Exchange rate type</span></span> | <span data-ttu-id="c263f-125">会計カレンダー</span><span class="sxs-lookup"><span data-stu-id="c263f-125">Fiscal calendar</span></span> | <span data-ttu-id="c263f-126">原価要素分析コード</span><span class="sxs-lookup"><span data-stu-id="c263f-126">Cost element dimension</span></span> | <span data-ttu-id="c263f-127">統計分析コード</span><span class="sxs-lookup"><span data-stu-id="c263f-127">Statistical dimension</span></span>       |
 |-----------------------|---------------------|--------------------|-----------------|------------------------|-----------------------------|
-| 管理会計 | USD                 | 一定通貨  | 会計年度期間   | 共有原価要素   | 共有統計要素 |
+| <span data-ttu-id="c263f-128">管理会計</span><span class="sxs-lookup"><span data-stu-id="c263f-128">Managerial accounting</span></span> | <span data-ttu-id="c263f-129">USD</span><span class="sxs-lookup"><span data-stu-id="c263f-129">USD</span></span>                 | <span data-ttu-id="c263f-130">一定通貨</span><span class="sxs-lookup"><span data-stu-id="c263f-130">Constant currency</span></span>  | <span data-ttu-id="c263f-131">会計年度期間</span><span class="sxs-lookup"><span data-stu-id="c263f-131">Fiscal period</span></span>   | <span data-ttu-id="c263f-132">共有原価要素</span><span class="sxs-lookup"><span data-stu-id="c263f-132">Shared Cost elements</span></span>   | <span data-ttu-id="c263f-133">共有統計要素</span><span class="sxs-lookup"><span data-stu-id="c263f-133">Shared Statistical elements</span></span> |
 
-## <a name="statistical-dimension-members"></a>統計分析コード メンバー
+## <a name="statistical-dimension-members"></a><span data-ttu-id="c263f-134">統計分析コード メンバー</span><span class="sxs-lookup"><span data-stu-id="c263f-134">Statistical dimension members</span></span>
 
-統計分析コード メンバーは、非貨幣の測定を登録するエンティティを表します。 これらの測定は、配賦基準として、または非貨幣価値のみを報告するために使用できます。
+<span data-ttu-id="c263f-135">統計分析コード メンバーは、非貨幣の測定を登録するエンティティを表します。</span><span class="sxs-lookup"><span data-stu-id="c263f-135">A statistical dimension member represents an entity that you want to register non-monetary measures for.</span></span> <span data-ttu-id="c263f-136">これらの測定は、配賦基準として、または非貨幣価値のみを報告するために使用できます。</span><span class="sxs-lookup"><span data-stu-id="c263f-136">These measures can be used either as an allocation base or just to report non-monetary values.</span></span>
 
-統計分析コード メンバーは、手動で作成することができます。 または、データ管理インポート/エクスポート ツールを使用してファイルからインポートすることもできます。
+<span data-ttu-id="c263f-137">統計分析コード メンバーは、手動で作成することができます。</span><span class="sxs-lookup"><span data-stu-id="c263f-137">Statistical dimension members can be created manually.</span></span> <span data-ttu-id="c263f-138">または、データ管理インポート/エクスポート ツールを使用してファイルからインポートすることもできます。</span><span class="sxs-lookup"><span data-stu-id="c263f-138">Alternatively, they can be imported from a file by using the Data management import/export tool.</span></span>
 
-統計分析コード メンバーは、自動的に事前定義された配賦基準になります。 これは、ポリシーの配賦基準として、または他のタイプの配賦基準の入力として使用することができます。
+<span data-ttu-id="c263f-139">統計分析コード メンバーは、自動的に事前定義された配賦基準になります。</span><span class="sxs-lookup"><span data-stu-id="c263f-139">A statistical dimension member automatically becomes a predefined allocation base.</span></span> <span data-ttu-id="c263f-140">これは、ポリシーの配賦基準として、または他のタイプの配賦基準の入力として使用することができます。</span><span class="sxs-lookup"><span data-stu-id="c263f-140">It can be used as an allocation base in policies or as input in other types of allocation bases.</span></span>
 
-典型的な統計分析コード メンバーの例をいくつか示します。
+<span data-ttu-id="c263f-141">典型的な統計分析コード メンバーの例をいくつか示します。</span><span class="sxs-lookup"><span data-stu-id="c263f-141">Here are some examples of typical statistical dimension members.</span></span>
 
-| 統計分析コード名  | 統計要素 | 説明             | 単位 |
+| <span data-ttu-id="c263f-142">統計分析コード名</span><span class="sxs-lookup"><span data-stu-id="c263f-142">Statistical dimension name</span></span>  | <span data-ttu-id="c263f-143">統計要素</span><span class="sxs-lookup"><span data-stu-id="c263f-143">Statistical elements</span></span> | <span data-ttu-id="c263f-144">説明</span><span class="sxs-lookup"><span data-stu-id="c263f-144">Description</span></span>             | <span data-ttu-id="c263f-145">単位</span><span class="sxs-lookup"><span data-stu-id="c263f-145">Unit</span></span> |
 |-----------------------------|----------------------|-------------------------|------|
-| 共有統計要素 | FTE                  | フルタイム従業員     | 各々。  |
-| 共有統計要素 | 電気          | 電気消費 | kWh  |
-| 共有統計要素 | 梱包 CC              | 梱包コスト センター   | 時間。 |
+| <span data-ttu-id="c263f-146">共有統計要素</span><span class="sxs-lookup"><span data-stu-id="c263f-146">Shared Statistical elements</span></span> | <span data-ttu-id="c263f-147">FTE</span><span class="sxs-lookup"><span data-stu-id="c263f-147">FTE</span></span>                  | <span data-ttu-id="c263f-148">フルタイム従業員</span><span class="sxs-lookup"><span data-stu-id="c263f-148">Full time employees</span></span>     | <span data-ttu-id="c263f-149">各々。</span><span class="sxs-lookup"><span data-stu-id="c263f-149">Ea.</span></span>  |
+| <span data-ttu-id="c263f-150">共有統計要素</span><span class="sxs-lookup"><span data-stu-id="c263f-150">Shared Statistical elements</span></span> | <span data-ttu-id="c263f-151">電気</span><span class="sxs-lookup"><span data-stu-id="c263f-151">Electricity</span></span>          | <span data-ttu-id="c263f-152">電気消費</span><span class="sxs-lookup"><span data-stu-id="c263f-152">Electricity consumption</span></span> | <span data-ttu-id="c263f-153">kWh</span><span class="sxs-lookup"><span data-stu-id="c263f-153">kWh</span></span>  |
+| <span data-ttu-id="c263f-154">共有統計要素</span><span class="sxs-lookup"><span data-stu-id="c263f-154">Shared Statistical elements</span></span> | <span data-ttu-id="c263f-155">梱包 CC</span><span class="sxs-lookup"><span data-stu-id="c263f-155">Pack CC</span></span>              | <span data-ttu-id="c263f-156">梱包コスト センター</span><span class="sxs-lookup"><span data-stu-id="c263f-156">Packaging Cost center</span></span>   | <span data-ttu-id="c263f-157">時間。</span><span class="sxs-lookup"><span data-stu-id="c263f-157">Hrs.</span></span> |
 
-## <a name="statistical-measure-provider-template"></a>統計測定プロバイダー テンプレート
+## <a name="statistical-measure-provider-template"></a><span data-ttu-id="c263f-158">統計測定プロバイダー テンプレート</span><span class="sxs-lookup"><span data-stu-id="c263f-158">Statistical measure provider template</span></span>
 
-統計的尺度は、多くの種類のソースから発生します。 Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition は、統計的尺度を抽出するための素晴らしいソースです。 統計測定プロバイダー テンプレートを使用して、簡単に抽出する統計情報をコンフィギュレーションすることができます。
+<span data-ttu-id="c263f-159">統計的尺度は、多くの種類のソースから発生します。</span><span class="sxs-lookup"><span data-stu-id="c263f-159">Statistical measures can originate from many kinds of sources.</span></span> <span data-ttu-id="c263f-160">Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition は、統計的尺度を抽出するための素晴らしいソースです。</span><span class="sxs-lookup"><span data-stu-id="c263f-160">Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, is a great source to extract statistical measures from.</span></span> <span data-ttu-id="c263f-161">統計測定プロバイダー テンプレートを使用して、簡単に抽出する統計情報をコンフィギュレーションすることができます。</span><span class="sxs-lookup"><span data-stu-id="c263f-161">You can use a statistical measure provider template to easily configure the statistical measures that you want to extract.</span></span>
 
-統計測定プロバイダー テンプレートの定義は汎用的で、複数の統計分析コード メンバーで再利用することができます。
+<span data-ttu-id="c263f-162">統計測定プロバイダー テンプレートの定義は汎用的で、複数の統計分析コード メンバーで再利用することができます。</span><span class="sxs-lookup"><span data-stu-id="c263f-162">The definition of a statistical measure provider template is generic and can be reused in multiple statistical dimension members.</span></span>
 
 > [!NOTE]
-> 財務分析コードを含むすべてのテーブルは、統計測定のソースとして使用できます。
+> <span data-ttu-id="c263f-163">財務分析コードを含むすべてのテーブルは、統計測定のソースとして使用できます。</span><span class="sxs-lookup"><span data-stu-id="c263f-163">All tables that contain financial dimensions can be used as sources for statistical measures.</span></span>
 
-**例: コスト センターごとの従業員数**
+<span data-ttu-id="c263f-164">**例: コスト センターごとの従業員数**</span><span class="sxs-lookup"><span data-stu-id="c263f-164">**Example: Count of employees per cost center**</span></span>
 
-コスト センターあたりの従業員数は、経営管理の情報を提供するさまざまな目的で使用できる統計測定です。
+<span data-ttu-id="c263f-165">コスト センターあたりの従業員数は、経営管理の情報を提供するさまざまな目的で使用できる統計測定です。</span><span class="sxs-lookup"><span data-stu-id="c263f-165">The count of employees per cost center is a statistical measure that can be used for various purposes that provide managerial insight:</span></span>
 
-- コスト センター別の統計レポート
-- 各種費用の配賦基準
-- コスト センター別の内部コスト比率:
+- <span data-ttu-id="c263f-166">コスト センター別の統計レポート</span><span class="sxs-lookup"><span data-stu-id="c263f-166">A statistical reporting measure by cost center</span></span>
+- <span data-ttu-id="c263f-167">各種費用の配賦基準</span><span class="sxs-lookup"><span data-stu-id="c263f-167">An allocation base for various types of expenses</span></span>
+- <span data-ttu-id="c263f-168">コスト センター別の内部コスト比率:</span><span class="sxs-lookup"><span data-stu-id="c263f-168">Internal cost rates by cost center:</span></span>
 
-    - 従業員ごとのコスト
-    - 従業員ごとの収入
+    - <span data-ttu-id="c263f-169">従業員ごとのコスト</span><span class="sxs-lookup"><span data-stu-id="c263f-169">Cost by employee</span></span>
+    - <span data-ttu-id="c263f-170">従業員ごとの収入</span><span class="sxs-lookup"><span data-stu-id="c263f-170">Revenue by employee</span></span>
 
-HcmEmployment テーブルには、インスタンス内のすべての従業員のリストが保持されます。 このテーブルは、グローバル テーブルです。 したがって、レコードは特定のデータ エリア ID に関連付けられていません。
+<span data-ttu-id="c263f-171">HcmEmployment テーブルには、インスタンス内のすべての従業員のリストが保持されます。</span><span class="sxs-lookup"><span data-stu-id="c263f-171">The HcmEmployment table holds a list of all employees in the instance.</span></span> <span data-ttu-id="c263f-172">このテーブルは、グローバル テーブルです。</span><span class="sxs-lookup"><span data-stu-id="c263f-172">This table is a global table.</span></span> <span data-ttu-id="c263f-173">したがって、レコードは特定のデータ エリア ID に関連付けられていません。</span><span class="sxs-lookup"><span data-stu-id="c263f-173">Therefore, the records aren't related to a specific data area ID.</span></span>
 
-次に、HcmEmployment テーブルの従業員の例を示します。
+<span data-ttu-id="c263f-174">次に、HcmEmployment テーブルの従業員の例を示します。</span><span class="sxs-lookup"><span data-stu-id="c263f-174">Here is an example of employees in the HcmEmployment table.</span></span>
 
-| 氏名       | コスト センター | 説明   | 作業者タイプ |
+| <span data-ttu-id="c263f-175">氏名</span><span class="sxs-lookup"><span data-stu-id="c263f-175">Name</span></span>       | <span data-ttu-id="c263f-176">コスト センター</span><span class="sxs-lookup"><span data-stu-id="c263f-176">Cost center</span></span> | <span data-ttu-id="c263f-177">説明</span><span class="sxs-lookup"><span data-stu-id="c263f-177">Description</span></span>   | <span data-ttu-id="c263f-178">作業者タイプ</span><span class="sxs-lookup"><span data-stu-id="c263f-178">Worker type</span></span> |
 |------------|-------------|----|-------------|
-| 従業員 1 | CC001       | HR | 従業員    |
-| 従業員 2 | CC002       | FI | 従業員    |
-| 従業員 3 | CC002       | FI | 従業員    |
-| 従業員 4 | CC003       | IT | 従業員    |
-| 従業員 5 | CC003       | IT | 従業員    |
-| 従業員 6 | CC002       | FI | 契約社員  |
+| <span data-ttu-id="c263f-179">従業員 1</span><span class="sxs-lookup"><span data-stu-id="c263f-179">Employee 1</span></span> | <span data-ttu-id="c263f-180">CC001</span><span class="sxs-lookup"><span data-stu-id="c263f-180">CC001</span></span>       | <span data-ttu-id="c263f-181">HR</span><span class="sxs-lookup"><span data-stu-id="c263f-181">HR</span></span> | <span data-ttu-id="c263f-182">従業員</span><span class="sxs-lookup"><span data-stu-id="c263f-182">Employee</span></span>    |
+| <span data-ttu-id="c263f-183">従業員 2</span><span class="sxs-lookup"><span data-stu-id="c263f-183">Employee 2</span></span> | <span data-ttu-id="c263f-184">CC002</span><span class="sxs-lookup"><span data-stu-id="c263f-184">CC002</span></span>       | <span data-ttu-id="c263f-185">FI</span><span class="sxs-lookup"><span data-stu-id="c263f-185">FI</span></span> | <span data-ttu-id="c263f-186">従業員</span><span class="sxs-lookup"><span data-stu-id="c263f-186">Employee</span></span>    |
+| <span data-ttu-id="c263f-187">従業員 3</span><span class="sxs-lookup"><span data-stu-id="c263f-187">Employee 3</span></span> | <span data-ttu-id="c263f-188">CC002</span><span class="sxs-lookup"><span data-stu-id="c263f-188">CC002</span></span>       | <span data-ttu-id="c263f-189">FI</span><span class="sxs-lookup"><span data-stu-id="c263f-189">FI</span></span> | <span data-ttu-id="c263f-190">従業員</span><span class="sxs-lookup"><span data-stu-id="c263f-190">Employee</span></span>    |
+| <span data-ttu-id="c263f-191">従業員 4</span><span class="sxs-lookup"><span data-stu-id="c263f-191">Employee 4</span></span> | <span data-ttu-id="c263f-192">CC003</span><span class="sxs-lookup"><span data-stu-id="c263f-192">CC003</span></span>       | <span data-ttu-id="c263f-193">IT</span><span class="sxs-lookup"><span data-stu-id="c263f-193">IT</span></span> | <span data-ttu-id="c263f-194">従業員</span><span class="sxs-lookup"><span data-stu-id="c263f-194">Employee</span></span>    |
+| <span data-ttu-id="c263f-195">従業員 5</span><span class="sxs-lookup"><span data-stu-id="c263f-195">Employee 5</span></span> | <span data-ttu-id="c263f-196">CC003</span><span class="sxs-lookup"><span data-stu-id="c263f-196">CC003</span></span>       | <span data-ttu-id="c263f-197">IT</span><span class="sxs-lookup"><span data-stu-id="c263f-197">IT</span></span> | <span data-ttu-id="c263f-198">従業員</span><span class="sxs-lookup"><span data-stu-id="c263f-198">Employee</span></span>    |
+| <span data-ttu-id="c263f-199">従業員 6</span><span class="sxs-lookup"><span data-stu-id="c263f-199">Employee 6</span></span> | <span data-ttu-id="c263f-200">CC002</span><span class="sxs-lookup"><span data-stu-id="c263f-200">CC002</span></span>       | <span data-ttu-id="c263f-201">FI</span><span class="sxs-lookup"><span data-stu-id="c263f-201">FI</span></span> | <span data-ttu-id="c263f-202">契約社員</span><span class="sxs-lookup"><span data-stu-id="c263f-202">Contractor</span></span>  |
 
-[**統計測定プロバイダー テンプレート**] レコードを作成するときは、使用する関数を決定する必要があります。
+<span data-ttu-id="c263f-203">[**統計測定プロバイダー テンプレート**] レコードを作成するときは、使用する関数を決定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="c263f-203">When you create a **Statistical measure provider template** record, you must decide which function to use:</span></span>
 
-- [**カウント**] – 原価対象ごとのレコード数が転送されます。
-- [**合計**] – 原価対象ごとのレコード合計が転送されます。 ([**合計**] フィールドおよび [**日付**] フィールドが必要です。)
+- <span data-ttu-id="c263f-204">[**カウント**] – 原価対象ごとのレコード数が転送されます。</span><span class="sxs-lookup"><span data-stu-id="c263f-204">**Count** – A count of records per cost object is transferred.</span></span>
+- <span data-ttu-id="c263f-205">[**合計**] – 原価対象ごとのレコード合計が転送されます。</span><span class="sxs-lookup"><span data-stu-id="c263f-205">**Sum** – A sum for records per cost object is transferred.</span></span> <span data-ttu-id="c263f-206">([**合計**] フィールドおよび [**日付**] フィールドが必要です。)</span><span class="sxs-lookup"><span data-stu-id="c263f-206">(The **Sum** field and **Date** field are required.)</span></span>
 
-## <a name="using-the-count-function"></a>集計関数の使用
+## <a name="using-the-count-function"></a><span data-ttu-id="c263f-207">集計関数の使用</span><span class="sxs-lookup"><span data-stu-id="c263f-207">Using the Count function</span></span>
 
-たとえば、統計測定プロバイダー テンプレートは、次のように設定できます。
+<span data-ttu-id="c263f-208">たとえば、統計測定プロバイダー テンプレートは、次のように設定できます。</span><span class="sxs-lookup"><span data-stu-id="c263f-208">For example, a statistical measure provider template can be set up as follows.</span></span>
 
-| 氏名  | 職務 | ソース テーブル  | 合計フィールド      | 日付フィールド     |
+| <span data-ttu-id="c263f-209">氏名</span><span class="sxs-lookup"><span data-stu-id="c263f-209">Name</span></span>  | <span data-ttu-id="c263f-210">職務</span><span class="sxs-lookup"><span data-stu-id="c263f-210">Function</span></span> | <span data-ttu-id="c263f-211">ソース テーブル</span><span class="sxs-lookup"><span data-stu-id="c263f-211">Source table</span></span>  | <span data-ttu-id="c263f-212">合計フィールド</span><span class="sxs-lookup"><span data-stu-id="c263f-212">Sum field</span></span>      | <span data-ttu-id="c263f-213">日付フィールド</span><span class="sxs-lookup"><span data-stu-id="c263f-213">Date field</span></span>     |
 |-------|----------|---------------|----------------|----------------|
-| FTE  | カウント    | HcmEmployment | 適用できません | 適用できません |
+| <span data-ttu-id="c263f-214">FTE</span><span class="sxs-lookup"><span data-stu-id="c263f-214">FTEs</span></span>  | <span data-ttu-id="c263f-215">カウント</span><span class="sxs-lookup"><span data-stu-id="c263f-215">Count</span></span>    | <span data-ttu-id="c263f-216">HcmEmployment</span><span class="sxs-lookup"><span data-stu-id="c263f-216">HcmEmployment</span></span> | <span data-ttu-id="c263f-217">適用できません</span><span class="sxs-lookup"><span data-stu-id="c263f-217">Not applicable</span></span> | <span data-ttu-id="c263f-218">適用できません</span><span class="sxs-lookup"><span data-stu-id="c263f-218">Not applicable</span></span> |
 
-複数の範囲を追加して、ソース テーブルから測定を絞り込むこともできます。
+<span data-ttu-id="c263f-219">複数の範囲を追加して、ソース テーブルから測定を絞り込むこともできます。</span><span class="sxs-lookup"><span data-stu-id="c263f-219">You can also add one or more ranges to narrow the measures from the source table.</span></span>
 
-この例では、フルタイム従業員 (FTE) を数えたい場合は、[**作業者タイプ**] フィールドに範囲を追加できます。 [**基準**] フィールドで、[**従業員**] を選択して、以下のように出力範囲を制限します。
+<span data-ttu-id="c263f-220">この例では、フルタイム従業員 (FTE) を数えたい場合は、[**作業者タイプ**] フィールドに範囲を追加できます。</span><span class="sxs-lookup"><span data-stu-id="c263f-220">In this example, if you just want a count of all full-time employees (FTEs), you can add a range in the **Worker type** field.</span></span> <span data-ttu-id="c263f-221">[**基準**] フィールドで、[**従業員**] を選択して、以下のように出力範囲を制限します。</span><span class="sxs-lookup"><span data-stu-id="c263f-221">In the **Criteria** field, select **Employee** to limit the output range as follows.</span></span>
 
-[**範囲**]
+<span data-ttu-id="c263f-222">[**範囲**]</span><span class="sxs-lookup"><span data-stu-id="c263f-222">**Ranges**</span></span>
 
-| ソース テーブル  | フィールド       | 基準 |
+| <span data-ttu-id="c263f-223">ソース テーブル</span><span class="sxs-lookup"><span data-stu-id="c263f-223">Source table</span></span>  | <span data-ttu-id="c263f-224">フィールド</span><span class="sxs-lookup"><span data-stu-id="c263f-224">Field</span></span>       | <span data-ttu-id="c263f-225">基準</span><span class="sxs-lookup"><span data-stu-id="c263f-225">Criteria</span></span> |
 |---------------|-------------|----------|
-| HcmEmployment | 作業者タイプ | 従業員 |
+| <span data-ttu-id="c263f-226">HcmEmployment</span><span class="sxs-lookup"><span data-stu-id="c263f-226">HcmEmployment</span></span> | <span data-ttu-id="c263f-227">作業者タイプ</span><span class="sxs-lookup"><span data-stu-id="c263f-227">Worker type</span></span> | <span data-ttu-id="c263f-228">従業員</span><span class="sxs-lookup"><span data-stu-id="c263f-228">Employee</span></span> |
 
-原価計算に統計的手段を導入する前に、統計測定プロバイダー テンプレートと統計分析コード メンバーの間の関係を確立する必要があります。 このリレーションは、原価会計元帳およびバージョンごとに作成されます。 この関係は、データ コネクタとデータ プロバイダーで構成されます。 統計分析コード メンバーごとに、複数のデータ コネクタとデータ プロバイダーを選択できます。
+<span data-ttu-id="c263f-229">原価計算に統計的手段を導入する前に、統計測定プロバイダー テンプレートと統計分析コード メンバーの間の関係を確立する必要があります。</span><span class="sxs-lookup"><span data-stu-id="c263f-229">Before you can get statistical measures into Cost accounting, you must establish the relation between the statistical measure provider template and the statistical dimension member.</span></span> <span data-ttu-id="c263f-230">このリレーションは、原価会計元帳およびバージョンごとに作成されます。</span><span class="sxs-lookup"><span data-stu-id="c263f-230">This relation is created per Cost accounting ledger and version.</span></span> <span data-ttu-id="c263f-231">この関係は、データ コネクタとデータ プロバイダーで構成されます。</span><span class="sxs-lookup"><span data-stu-id="c263f-231">The relation consists of a data connector and a data provider.</span></span> <span data-ttu-id="c263f-232">統計分析コード メンバーごとに、複数のデータ コネクタとデータ プロバイダーを選択できます。</span><span class="sxs-lookup"><span data-stu-id="c263f-232">You can have several data connectors and data providers per statistical dimension member.</span></span>
 
 > [!NOTE]
-> この例では、[**実際のバージョン**] のリレーションのみを作成します
+> <span data-ttu-id="c263f-233">この例では、[**実際のバージョン**] のリレーションのみを作成します</span><span class="sxs-lookup"><span data-stu-id="c263f-233">In this example, we will create a relation only for the **Actual version**.</span></span>
 
-[**原価会計元帳**] \> [**実際のバージョン**] \> [**管理**] \> [**統計測定**] に移動して、関係を確立します。 このシナリオでは、Finance and Operations からデータを抽出するため、[**Dynamics 365 for Finance and Operations, Enterprise Edition – 統計測定**] データ コネクタを選択します。
+<span data-ttu-id="c263f-234">[**原価会計元帳**] \> [**実際のバージョン**] \> [**管理**] \> [**統計測定**] に移動して、関係を確立します。</span><span class="sxs-lookup"><span data-stu-id="c263f-234">Go to **Cost accounting ledger** \> **Actual version** \> **Manage** \> **Statistical measures** to establish the relation.</span></span> <span data-ttu-id="c263f-235">このシナリオでは、Finance and Operations からデータを抽出するため、[**Dynamics 365 for Finance and Operations, Enterprise Edition – 統計測定**] データ コネクタを選択します。</span><span class="sxs-lookup"><span data-stu-id="c263f-235">For this scenario, select the **Dynamics 365 for Finance and Operations, Enterprise edition – Statistical measures** data connector, because we want to extract data from Finance and Operations.</span></span>
 
-**データ ソース**
+<span data-ttu-id="c263f-236">**データ ソース**</span><span class="sxs-lookup"><span data-stu-id="c263f-236">**Data source**</span></span>
 
-| 氏名        | データ コネクタ                                                                     | 統計分析コード メンバー |
+| <span data-ttu-id="c263f-237">氏名</span><span class="sxs-lookup"><span data-stu-id="c263f-237">Name</span></span>        | <span data-ttu-id="c263f-238">データ コネクタ</span><span class="sxs-lookup"><span data-stu-id="c263f-238">Data connector</span></span>                                                                     | <span data-ttu-id="c263f-239">統計分析コード メンバー</span><span class="sxs-lookup"><span data-stu-id="c263f-239">Statistical dimension member</span></span> |
 |-------------|------------------------------------------------------------------------------------|------------------------------|
-| FTE D365FO | Dynamics 365 for Finance and Operations, Enterprise Edition - 統計測定 | FTE                         |
+| <span data-ttu-id="c263f-240">FTE D365FO</span><span class="sxs-lookup"><span data-stu-id="c263f-240">FTEs D365FO</span></span> | <span data-ttu-id="c263f-241">Dynamics 365 for Finance and Operations, Enterprise Edition - 統計測定</span><span class="sxs-lookup"><span data-stu-id="c263f-241">Dynamics 365 for Finance and Operations, Enterprise edition – Statistical measures</span></span> | <span data-ttu-id="c263f-242">FTE</span><span class="sxs-lookup"><span data-stu-id="c263f-242">FTEs</span></span>                         |
 
-**データ プロバイダーのコンフィギュレーション**
+<span data-ttu-id="c263f-243">**データ プロバイダーのコンフィギュレーション**</span><span class="sxs-lookup"><span data-stu-id="c263f-243">**Data provider configuration**</span></span>
 
-| 統計テンプレート名 |
+| <span data-ttu-id="c263f-244">統計テンプレート名</span><span class="sxs-lookup"><span data-stu-id="c263f-244">Statistical template name</span></span> |
 |---------------------------|
-| FTE                      |
+| <span data-ttu-id="c263f-245">FTE</span><span class="sxs-lookup"><span data-stu-id="c263f-245">FTEs</span></span>                      |
 
-統計測定のソース データが処理された後、次の統計エントリが原価計算に作成されます。
+<span data-ttu-id="c263f-246">統計測定のソース データが処理された後、次の統計エントリが原価計算に作成されます。</span><span class="sxs-lookup"><span data-stu-id="c263f-246">After the source data for the statistical measure is processed, the following statistical entries are created in Cost accounting.</span></span>
 
-**仕訳帳**
+<span data-ttu-id="c263f-247">**仕訳帳**</span><span class="sxs-lookup"><span data-stu-id="c263f-247">**Journal**</span></span>
 
-| 仕訳帳 | 仕訳帳タイプ                       | 会計カレンダー期間 | 年   |  期間  |  バージョン | データ コネクタ ソース エントリ|
+| <span data-ttu-id="c263f-248">仕訳帳</span><span class="sxs-lookup"><span data-stu-id="c263f-248">Journal</span></span> | <span data-ttu-id="c263f-249">仕訳帳タイプ</span><span class="sxs-lookup"><span data-stu-id="c263f-249">Journal type</span></span>                       | <span data-ttu-id="c263f-250">会計カレンダー期間</span><span class="sxs-lookup"><span data-stu-id="c263f-250">Fiscal calendar period</span></span> | <span data-ttu-id="c263f-251">年</span><span class="sxs-lookup"><span data-stu-id="c263f-251">Year</span></span>   |  <span data-ttu-id="c263f-252">期間</span><span class="sxs-lookup"><span data-stu-id="c263f-252">Period</span></span>  |  <span data-ttu-id="c263f-253">バージョン</span><span class="sxs-lookup"><span data-stu-id="c263f-253">Version</span></span> | <span data-ttu-id="c263f-254">データ コネクタ ソース エントリ</span><span class="sxs-lookup"><span data-stu-id="c263f-254">Data connector source entries</span></span>|
 |---------|------------------------------------|------------------------|--------|----------|----------|------------------------------|
-| 00001   | 統計エントリ振替仕訳帳 | 会計年度                 | 2017   | 期間 1 | CA 元帳 USMF | FTE                   |
+| <span data-ttu-id="c263f-255">00001</span><span class="sxs-lookup"><span data-stu-id="c263f-255">00001</span></span>   | <span data-ttu-id="c263f-256">統計エントリ振替仕訳帳</span><span class="sxs-lookup"><span data-stu-id="c263f-256">Statistical entry transfer journal</span></span> | <span data-ttu-id="c263f-257">会計年度</span><span class="sxs-lookup"><span data-stu-id="c263f-257">Fiscal</span></span>                 | <span data-ttu-id="c263f-258">2017</span><span class="sxs-lookup"><span data-stu-id="c263f-258">2017</span></span>   | <span data-ttu-id="c263f-259">期間 1</span><span class="sxs-lookup"><span data-stu-id="c263f-259">Period 1</span></span> | <span data-ttu-id="c263f-260">CA 元帳 USMF</span><span class="sxs-lookup"><span data-stu-id="c263f-260">CA ledger USMF</span></span> | <span data-ttu-id="c263f-261">FTE</span><span class="sxs-lookup"><span data-stu-id="c263f-261">FTEs</span></span>                   |
 
-**統計エントリ振替仕訳入力**
+<span data-ttu-id="c263f-262">**統計エントリ振替仕訳入力**</span><span class="sxs-lookup"><span data-stu-id="c263f-262">**Statistical entry transfer journal entries**</span></span>
 
-| 会計日 | 大きさ | 統計要素 |   説明       | コスト センター |
+| <span data-ttu-id="c263f-263">会計日</span><span class="sxs-lookup"><span data-stu-id="c263f-263">Accounting date</span></span> | <span data-ttu-id="c263f-264">大きさ</span><span class="sxs-lookup"><span data-stu-id="c263f-264">Magnitude</span></span> | <span data-ttu-id="c263f-265">統計要素</span><span class="sxs-lookup"><span data-stu-id="c263f-265">Statistical element</span></span> |   <span data-ttu-id="c263f-266">説明</span><span class="sxs-lookup"><span data-stu-id="c263f-266">Description</span></span>       | <span data-ttu-id="c263f-267">コスト センター</span><span class="sxs-lookup"><span data-stu-id="c263f-267">Cost center</span></span> |
 |-----------------|-----------|---------------------|---------------------|-------------|
-| 2017 年 1 月 31 日      | 1.00      | FTE                | フルタイム従業員 | CC001       |
-| 2017 年 1 月 31 日      | 2.00      | FTE                | フルタイム従業員 | CC002       |
-| 2017 年 1 月 31 日      | 2.00      | FTE                | フルタイム従業員 | CC003       |
+| <span data-ttu-id="c263f-268">2017 年 1 月 31 日</span><span class="sxs-lookup"><span data-stu-id="c263f-268">31-01-2017</span></span>      | <span data-ttu-id="c263f-269">1.00</span><span class="sxs-lookup"><span data-stu-id="c263f-269">1.00</span></span>      | <span data-ttu-id="c263f-270">FTE</span><span class="sxs-lookup"><span data-stu-id="c263f-270">FTEs</span></span>                | <span data-ttu-id="c263f-271">フルタイム従業員</span><span class="sxs-lookup"><span data-stu-id="c263f-271">Full time employees</span></span> | <span data-ttu-id="c263f-272">CC001</span><span class="sxs-lookup"><span data-stu-id="c263f-272">CC001</span></span>       |
+| <span data-ttu-id="c263f-273">2017 年 1 月 31 日</span><span class="sxs-lookup"><span data-stu-id="c263f-273">31-01-2017</span></span>      | <span data-ttu-id="c263f-274">2.00</span><span class="sxs-lookup"><span data-stu-id="c263f-274">2.00</span></span>      | <span data-ttu-id="c263f-275">FTE</span><span class="sxs-lookup"><span data-stu-id="c263f-275">FTEs</span></span>                | <span data-ttu-id="c263f-276">フルタイム従業員</span><span class="sxs-lookup"><span data-stu-id="c263f-276">Full time employees</span></span> | <span data-ttu-id="c263f-277">CC002</span><span class="sxs-lookup"><span data-stu-id="c263f-277">CC002</span></span>       |
+| <span data-ttu-id="c263f-278">2017 年 1 月 31 日</span><span class="sxs-lookup"><span data-stu-id="c263f-278">31-01-2017</span></span>      | <span data-ttu-id="c263f-279">2.00</span><span class="sxs-lookup"><span data-stu-id="c263f-279">2.00</span></span>      | <span data-ttu-id="c263f-280">FTE</span><span class="sxs-lookup"><span data-stu-id="c263f-280">FTEs</span></span>                | <span data-ttu-id="c263f-281">フルタイム従業員</span><span class="sxs-lookup"><span data-stu-id="c263f-281">Full time employees</span></span> | <span data-ttu-id="c263f-282">CC003</span><span class="sxs-lookup"><span data-stu-id="c263f-282">CC003</span></span>       |
 
-**統計エントリ**
+<span data-ttu-id="c263f-283">**統計エントリ**</span><span class="sxs-lookup"><span data-stu-id="c263f-283">**Statistical entries**</span></span>
 
-| 原価オブジェクト |    | 会計日 | 統計分析コード メンバー |  説明        | 大きさ |
+| <span data-ttu-id="c263f-284">原価オブジェクト</span><span class="sxs-lookup"><span data-stu-id="c263f-284">Cost object</span></span> |    | <span data-ttu-id="c263f-285">会計日</span><span class="sxs-lookup"><span data-stu-id="c263f-285">Accounting date</span></span> | <span data-ttu-id="c263f-286">統計分析コード メンバー</span><span class="sxs-lookup"><span data-stu-id="c263f-286">Statistical dimension member</span></span> |  <span data-ttu-id="c263f-287">説明</span><span class="sxs-lookup"><span data-stu-id="c263f-287">Description</span></span>        | <span data-ttu-id="c263f-288">大きさ</span><span class="sxs-lookup"><span data-stu-id="c263f-288">Magnitude</span></span> |
 |-------------|----|-----------------|------------------------------|---------------------|-----------|
-| CC001       | HR | 2017 年 1 月 31 日      | FTE                         | フルタイム従業員 | 1.00      |
-| CC002       | FI | 2017 年 1 月 31 日      | FTE                         | フルタイム従業員 | 2.00      |
-| CC003       | IT | 2017 年 1 月 31 日      | FTE                         | フルタイム従業員 | 2.00      |
+| <span data-ttu-id="c263f-289">CC001</span><span class="sxs-lookup"><span data-stu-id="c263f-289">CC001</span></span>       | <span data-ttu-id="c263f-290">HR</span><span class="sxs-lookup"><span data-stu-id="c263f-290">HR</span></span> | <span data-ttu-id="c263f-291">2017 年 1 月 31 日</span><span class="sxs-lookup"><span data-stu-id="c263f-291">31-01-2017</span></span>      | <span data-ttu-id="c263f-292">FTE</span><span class="sxs-lookup"><span data-stu-id="c263f-292">FTEs</span></span>                         | <span data-ttu-id="c263f-293">フルタイム従業員</span><span class="sxs-lookup"><span data-stu-id="c263f-293">Full time employees</span></span> | <span data-ttu-id="c263f-294">1.00</span><span class="sxs-lookup"><span data-stu-id="c263f-294">1.00</span></span>      |
+| <span data-ttu-id="c263f-295">CC002</span><span class="sxs-lookup"><span data-stu-id="c263f-295">CC002</span></span>       | <span data-ttu-id="c263f-296">FI</span><span class="sxs-lookup"><span data-stu-id="c263f-296">FI</span></span> | <span data-ttu-id="c263f-297">2017 年 1 月 31 日</span><span class="sxs-lookup"><span data-stu-id="c263f-297">31-01-2017</span></span>      | <span data-ttu-id="c263f-298">FTE</span><span class="sxs-lookup"><span data-stu-id="c263f-298">FTEs</span></span>                         | <span data-ttu-id="c263f-299">フルタイム従業員</span><span class="sxs-lookup"><span data-stu-id="c263f-299">Full time employees</span></span> | <span data-ttu-id="c263f-300">2.00</span><span class="sxs-lookup"><span data-stu-id="c263f-300">2.00</span></span>      |
+| <span data-ttu-id="c263f-301">CC003</span><span class="sxs-lookup"><span data-stu-id="c263f-301">CC003</span></span>       | <span data-ttu-id="c263f-302">IT</span><span class="sxs-lookup"><span data-stu-id="c263f-302">IT</span></span> | <span data-ttu-id="c263f-303">2017 年 1 月 31 日</span><span class="sxs-lookup"><span data-stu-id="c263f-303">31-01-2017</span></span>      | <span data-ttu-id="c263f-304">FTE</span><span class="sxs-lookup"><span data-stu-id="c263f-304">FTEs</span></span>                         | <span data-ttu-id="c263f-305">フルタイム従業員</span><span class="sxs-lookup"><span data-stu-id="c263f-305">Full time employees</span></span> | <span data-ttu-id="c263f-306">2.00</span><span class="sxs-lookup"><span data-stu-id="c263f-306">2.00</span></span>      |
 
-コスト配分ルールで、配賦の基準として、FTE の事前に定義された分析コード メンバーが割り当てられた場合は、次の配賦係数を使用して、コストが配分されます。
+<span data-ttu-id="c263f-307">コスト配分ルールで、配賦の基準として、FTE の事前に定義された分析コード メンバーが割り当てられた場合は、次の配賦係数を使用して、コストが配分されます。</span><span class="sxs-lookup"><span data-stu-id="c263f-307">If the FTEs predefined dimension member allocation basis is assigned as an allocation base in a cost distribution rule, the cost will be distributed by using the following allocation factor.</span></span>
 
-| 原価オブジェクト | 説明    | 大きさ | 配賦係数 |
+| <span data-ttu-id="c263f-308">原価オブジェクト</span><span class="sxs-lookup"><span data-stu-id="c263f-308">Cost object</span></span> | <span data-ttu-id="c263f-309">説明</span><span class="sxs-lookup"><span data-stu-id="c263f-309">Description</span></span>    | <span data-ttu-id="c263f-310">大きさ</span><span class="sxs-lookup"><span data-stu-id="c263f-310">Magnitude</span></span> | <span data-ttu-id="c263f-311">配賦係数</span><span class="sxs-lookup"><span data-stu-id="c263f-311">Allocation factor</span></span> |
 |-------------|----|-----------|-------------------|
-| CC001       | HR | 1.00      | (1/5) × 金額    |
-| CC002       | FI | 2.00      | (2/5) × 金額    |
-| CC003       | IT | 2.00      | (2/5) × 金額    |
+| <span data-ttu-id="c263f-312">CC001</span><span class="sxs-lookup"><span data-stu-id="c263f-312">CC001</span></span>       | <span data-ttu-id="c263f-313">HR</span><span class="sxs-lookup"><span data-stu-id="c263f-313">HR</span></span> | <span data-ttu-id="c263f-314">1.00</span><span class="sxs-lookup"><span data-stu-id="c263f-314">1.00</span></span>      | <span data-ttu-id="c263f-315">(1/5) × 金額</span><span class="sxs-lookup"><span data-stu-id="c263f-315">(1/5) × Amount</span></span>    |
+| <span data-ttu-id="c263f-316">CC002</span><span class="sxs-lookup"><span data-stu-id="c263f-316">CC002</span></span>       | <span data-ttu-id="c263f-317">FI</span><span class="sxs-lookup"><span data-stu-id="c263f-317">FI</span></span> | <span data-ttu-id="c263f-318">2.00</span><span class="sxs-lookup"><span data-stu-id="c263f-318">2.00</span></span>      | <span data-ttu-id="c263f-319">(2/5) × 金額</span><span class="sxs-lookup"><span data-stu-id="c263f-319">(2/5) × Amount</span></span>    |
+| <span data-ttu-id="c263f-320">CC003</span><span class="sxs-lookup"><span data-stu-id="c263f-320">CC003</span></span>       | <span data-ttu-id="c263f-321">IT</span><span class="sxs-lookup"><span data-stu-id="c263f-321">IT</span></span> | <span data-ttu-id="c263f-322">2.00</span><span class="sxs-lookup"><span data-stu-id="c263f-322">2.00</span></span>      | <span data-ttu-id="c263f-323">(2/5) × 金額</span><span class="sxs-lookup"><span data-stu-id="c263f-323">(2/5) × Amount</span></span>    |
 
-## <a name="using-the-sum-function"></a>合計関数の使用
+## <a name="using-the-sum-function"></a><span data-ttu-id="c263f-324">合計関数の使用</span><span class="sxs-lookup"><span data-stu-id="c263f-324">Using the Sum function</span></span>
 
-製造コスト センター、CC010 (梱包) は、顧客に出荷される前に製品を梱包する責任があります。 直接労働コストは、部品表 (BOM) と工順を介して製品に追加されます。 実行中のコスト センターの間接原価は、生産された製品にも割り当てる必要があります。 多くの場合、このような配賦の最適な統計測定は、特定の期間内の製品当たりの登録生産時間の数です。
+<span data-ttu-id="c263f-325">製造コスト センター、CC010 (梱包) は、顧客に出荷される前に製品を梱包する責任があります。</span><span class="sxs-lookup"><span data-stu-id="c263f-325">A production cost center, CC010 (Packaging), is responsible for packaging the products before they are shipped to customers.</span></span> <span data-ttu-id="c263f-326">直接労働コストは、部品表 (BOM) と工順を介して製品に追加されます。</span><span class="sxs-lookup"><span data-stu-id="c263f-326">The direct labor cost is added to the products via the bill of materials (BOM) and route.</span></span> <span data-ttu-id="c263f-327">実行中のコスト センターの間接原価は、生産された製品にも割り当てる必要があります。</span><span class="sxs-lookup"><span data-stu-id="c263f-327">The indirect cost of running the cost center must also be allocated to the produced products.</span></span> <span data-ttu-id="c263f-328">多くの場合、このような配賦の最適な統計測定は、特定の期間内の製品当たりの登録生産時間の数です。</span><span class="sxs-lookup"><span data-stu-id="c263f-328">Often, the best statistical measure for such an allocation is the number of registered production hours per product within the given period.</span></span>
 
-ProdRouteTrans テーブルには、法人 DataAreadID ごとのすべての生産労働トランザクションが含まれます。
+<span data-ttu-id="c263f-329">ProdRouteTrans テーブルには、法人 DataAreadID ごとのすべての生産労働トランザクションが含まれます。</span><span class="sxs-lookup"><span data-stu-id="c263f-329">The ProdRouteTrans table holds all production labor transactions per legal entity DataAreadID.</span></span>
 
-次に、ProdRouteTrans テーブルの例を示します。
+<span data-ttu-id="c263f-330">次に、ProdRouteTrans テーブルの例を示します。</span><span class="sxs-lookup"><span data-stu-id="c263f-330">Here is an example of the ProdRouteTrans table.</span></span>
 
-| 参照        | 数値 | 工程 | 種類 | 時刻  | 現物日付 | 製品グループ (財務分析コード) | 個法 |
+| <span data-ttu-id="c263f-331">参照</span><span class="sxs-lookup"><span data-stu-id="c263f-331">Reference</span></span>        | <span data-ttu-id="c263f-332">数値</span><span class="sxs-lookup"><span data-stu-id="c263f-332">Number</span></span> | <span data-ttu-id="c263f-333">工程</span><span class="sxs-lookup"><span data-stu-id="c263f-333">Operation</span></span> | <span data-ttu-id="c263f-334">種類</span><span class="sxs-lookup"><span data-stu-id="c263f-334">Type</span></span> | <span data-ttu-id="c263f-335">時刻</span><span class="sxs-lookup"><span data-stu-id="c263f-335">Time</span></span>  | <span data-ttu-id="c263f-336">現物日付</span><span class="sxs-lookup"><span data-stu-id="c263f-336">Physical date</span></span> | <span data-ttu-id="c263f-337">製品グループ (財務分析コード)</span><span class="sxs-lookup"><span data-stu-id="c263f-337">Product group (Financial dimension)</span></span> | <span data-ttu-id="c263f-338">個法</span><span class="sxs-lookup"><span data-stu-id="c263f-338">Legal entity</span></span> |
 |------------------|--------|-----------|------|-------|---------------|-------------------------------------|--------------|
-| 製造オーダー | P0001  | 梱包業 | 時刻 | 8.00  | 2017 年 1 月 1 日    | オレンジ ジュース B2B                    | USMF         |
-| 製造オーダー | P0001  | 梱包業 | 時刻 | 8.00  | 2017 年 1 月 2 日    | オレンジ ジュース B2B                    | USMF         |
-| 製造オーダー | P0002  | 梱包業 | 時刻 | 4.00  | 2017 年 1 月 3 日    | オレンジ ジュース消費者               | USMF         |
-| 製造オーダー | P0003  | 梱包業 | 時刻 | 4.00  | 2017 年 1 月 3 日    | オレンジ ジュース消費者               | USMF         |
-| 製造オーダー | P0004  | 再構成する。  | 時刻 | 10.00 | 2017 年 1 月 3 日    | オレンジ ジュース消費者               | USMF         |
+| <span data-ttu-id="c263f-339">製造オーダー</span><span class="sxs-lookup"><span data-stu-id="c263f-339">Production order</span></span> | <span data-ttu-id="c263f-340">P0001</span><span class="sxs-lookup"><span data-stu-id="c263f-340">P0001</span></span>  | <span data-ttu-id="c263f-341">梱包業</span><span class="sxs-lookup"><span data-stu-id="c263f-341">Packaging</span></span> | <span data-ttu-id="c263f-342">時刻</span><span class="sxs-lookup"><span data-stu-id="c263f-342">Time</span></span> | <span data-ttu-id="c263f-343">8.00</span><span class="sxs-lookup"><span data-stu-id="c263f-343">8.00</span></span>  | <span data-ttu-id="c263f-344">2017 年 1 月 1 日</span><span class="sxs-lookup"><span data-stu-id="c263f-344">01-01-2017</span></span>    | <span data-ttu-id="c263f-345">オレンジ ジュース B2B</span><span class="sxs-lookup"><span data-stu-id="c263f-345">Orange juice B2B</span></span>                    | <span data-ttu-id="c263f-346">USMF</span><span class="sxs-lookup"><span data-stu-id="c263f-346">USMF</span></span>         |
+| <span data-ttu-id="c263f-347">製造オーダー</span><span class="sxs-lookup"><span data-stu-id="c263f-347">Production order</span></span> | <span data-ttu-id="c263f-348">P0001</span><span class="sxs-lookup"><span data-stu-id="c263f-348">P0001</span></span>  | <span data-ttu-id="c263f-349">梱包業</span><span class="sxs-lookup"><span data-stu-id="c263f-349">Packaging</span></span> | <span data-ttu-id="c263f-350">時刻</span><span class="sxs-lookup"><span data-stu-id="c263f-350">Time</span></span> | <span data-ttu-id="c263f-351">8.00</span><span class="sxs-lookup"><span data-stu-id="c263f-351">8.00</span></span>  | <span data-ttu-id="c263f-352">2017 年 1 月 2 日</span><span class="sxs-lookup"><span data-stu-id="c263f-352">02-01-2017</span></span>    | <span data-ttu-id="c263f-353">オレンジ ジュース B2B</span><span class="sxs-lookup"><span data-stu-id="c263f-353">Orange juice B2B</span></span>                    | <span data-ttu-id="c263f-354">USMF</span><span class="sxs-lookup"><span data-stu-id="c263f-354">USMF</span></span>         |
+| <span data-ttu-id="c263f-355">製造オーダー</span><span class="sxs-lookup"><span data-stu-id="c263f-355">Production order</span></span> | <span data-ttu-id="c263f-356">P0002</span><span class="sxs-lookup"><span data-stu-id="c263f-356">P0002</span></span>  | <span data-ttu-id="c263f-357">梱包業</span><span class="sxs-lookup"><span data-stu-id="c263f-357">Packaging</span></span> | <span data-ttu-id="c263f-358">時刻</span><span class="sxs-lookup"><span data-stu-id="c263f-358">Time</span></span> | <span data-ttu-id="c263f-359">4.00</span><span class="sxs-lookup"><span data-stu-id="c263f-359">4.00</span></span>  | <span data-ttu-id="c263f-360">2017 年 1 月 3 日</span><span class="sxs-lookup"><span data-stu-id="c263f-360">03-01-2017</span></span>    | <span data-ttu-id="c263f-361">オレンジ ジュース消費者</span><span class="sxs-lookup"><span data-stu-id="c263f-361">Orange juice Consumer</span></span>               | <span data-ttu-id="c263f-362">USMF</span><span class="sxs-lookup"><span data-stu-id="c263f-362">USMF</span></span>         |
+| <span data-ttu-id="c263f-363">製造オーダー</span><span class="sxs-lookup"><span data-stu-id="c263f-363">Production order</span></span> | <span data-ttu-id="c263f-364">P0003</span><span class="sxs-lookup"><span data-stu-id="c263f-364">P0003</span></span>  | <span data-ttu-id="c263f-365">梱包業</span><span class="sxs-lookup"><span data-stu-id="c263f-365">Packaging</span></span> | <span data-ttu-id="c263f-366">時刻</span><span class="sxs-lookup"><span data-stu-id="c263f-366">Time</span></span> | <span data-ttu-id="c263f-367">4.00</span><span class="sxs-lookup"><span data-stu-id="c263f-367">4.00</span></span>  | <span data-ttu-id="c263f-368">2017 年 1 月 3 日</span><span class="sxs-lookup"><span data-stu-id="c263f-368">03-01-2017</span></span>    | <span data-ttu-id="c263f-369">オレンジ ジュース消費者</span><span class="sxs-lookup"><span data-stu-id="c263f-369">Orange juice Consumer</span></span>               | <span data-ttu-id="c263f-370">USMF</span><span class="sxs-lookup"><span data-stu-id="c263f-370">USMF</span></span>         |
+| <span data-ttu-id="c263f-371">製造オーダー</span><span class="sxs-lookup"><span data-stu-id="c263f-371">Production order</span></span> | <span data-ttu-id="c263f-372">P0004</span><span class="sxs-lookup"><span data-stu-id="c263f-372">P0004</span></span>  | <span data-ttu-id="c263f-373">再構成する。</span><span class="sxs-lookup"><span data-stu-id="c263f-373">Reconst.</span></span>  | <span data-ttu-id="c263f-374">時刻</span><span class="sxs-lookup"><span data-stu-id="c263f-374">Time</span></span> | <span data-ttu-id="c263f-375">10.00</span><span class="sxs-lookup"><span data-stu-id="c263f-375">10.00</span></span> | <span data-ttu-id="c263f-376">2017 年 1 月 3 日</span><span class="sxs-lookup"><span data-stu-id="c263f-376">03-01-2017</span></span>    | <span data-ttu-id="c263f-377">オレンジ ジュース消費者</span><span class="sxs-lookup"><span data-stu-id="c263f-377">Orange juice Consumer</span></span>               | <span data-ttu-id="c263f-378">USMF</span><span class="sxs-lookup"><span data-stu-id="c263f-378">USMF</span></span>         |
 
-[**統計測定プロバイダー テンプレート**] レコードを作成するときは、使用する関数を決定する必要があります。
+<span data-ttu-id="c263f-379">[**統計測定プロバイダー テンプレート**] レコードを作成するときは、使用する関数を決定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="c263f-379">When you create a **Statistical measure provider template** record, you must decide which function to use:</span></span>
 
-- [**カウント**] – 原価対象ごとのレコード数が転送されます。
-- [**合計**] – 原価対象ごとのレコード合計が転送されます。 ([**合計**] フィールドおよび [**日付**] フィールドが必要です。)
+- <span data-ttu-id="c263f-380">[**カウント**] – 原価対象ごとのレコード数が転送されます。</span><span class="sxs-lookup"><span data-stu-id="c263f-380">**Count** – A count of records per cost object is transferred.</span></span>
+- <span data-ttu-id="c263f-381">[**合計**] – 原価対象ごとのレコード合計が転送されます。</span><span class="sxs-lookup"><span data-stu-id="c263f-381">**Sum** – A sum for records per cost object is transferred.</span></span> <span data-ttu-id="c263f-382">([**合計**] フィールドおよび [**日付**] フィールドが必要です。)</span><span class="sxs-lookup"><span data-stu-id="c263f-382">(The **Sum** field and **Date** field are required.)</span></span>
 
-統計測定プロバイダー テンプレートは、次のように設定できます。
+<span data-ttu-id="c263f-383">統計測定プロバイダー テンプレートは、次のように設定できます。</span><span class="sxs-lookup"><span data-stu-id="c263f-383">The statistical measure provider template can be set up as follows.</span></span>
 
-| 氏名    | 職務 | ソース テーブル   | 合計フィールド | 日付フィールド    |
+| <span data-ttu-id="c263f-384">氏名</span><span class="sxs-lookup"><span data-stu-id="c263f-384">Name</span></span>    | <span data-ttu-id="c263f-385">職務</span><span class="sxs-lookup"><span data-stu-id="c263f-385">Function</span></span> | <span data-ttu-id="c263f-386">ソース テーブル</span><span class="sxs-lookup"><span data-stu-id="c263f-386">Source table</span></span>   | <span data-ttu-id="c263f-387">合計フィールド</span><span class="sxs-lookup"><span data-stu-id="c263f-387">Sum field</span></span> | <span data-ttu-id="c263f-388">日付フィールド</span><span class="sxs-lookup"><span data-stu-id="c263f-388">Date field</span></span>    |
 |---------|----------|----------------|-----------|---------------|
-| 梱包 CC | 計      | ProdRouteTrans | 時間     | 現物日付 |
+| <span data-ttu-id="c263f-389">梱包 CC</span><span class="sxs-lookup"><span data-stu-id="c263f-389">Pack CC</span></span> | <span data-ttu-id="c263f-390">計</span><span class="sxs-lookup"><span data-stu-id="c263f-390">Sum</span></span>      | <span data-ttu-id="c263f-391">ProdRouteTrans</span><span class="sxs-lookup"><span data-stu-id="c263f-391">ProdRouteTrans</span></span> | <span data-ttu-id="c263f-392">時間</span><span class="sxs-lookup"><span data-stu-id="c263f-392">Hours</span></span>     | <span data-ttu-id="c263f-393">現物日付</span><span class="sxs-lookup"><span data-stu-id="c263f-393">Physical date</span></span> |
 
-範囲を追加して、ソース テーブルから測定を絞り込むこともできます。
+<span data-ttu-id="c263f-394">範囲を追加して、ソース テーブルから測定を絞り込むこともできます。</span><span class="sxs-lookup"><span data-stu-id="c263f-394">You can also add ranges to narrow the measures from the source table.</span></span>
 
-この例では、CC010 梱包コスト センターに関連する時間の合計を求めるだけの場合は、[**操作**] フィールドに範囲を追加することができます。 [**条件**] フィールドで、[**梱包**] を選択して出力範囲を制限します。
+<span data-ttu-id="c263f-395">この例では、CC010 梱包コスト センターに関連する時間の合計を求めるだけの場合は、[**操作**] フィールドに範囲を追加することができます。</span><span class="sxs-lookup"><span data-stu-id="c263f-395">In this example, if you just want the sum of hours that are related to the CC010 Packaging cost center, you can add a range in the **Operation** field.</span></span> <span data-ttu-id="c263f-396">[**条件**] フィールドで、[**梱包**] を選択して出力範囲を制限します。</span><span class="sxs-lookup"><span data-stu-id="c263f-396">In the **Criteria** field, select **Packaging** to limit the output range.</span></span>
 
-**範囲**
+<span data-ttu-id="c263f-397">**範囲**</span><span class="sxs-lookup"><span data-stu-id="c263f-397">**Ranges**</span></span>
 
-| ソース テーブル   | フィールド     | 基準  |
+| <span data-ttu-id="c263f-398">ソース テーブル</span><span class="sxs-lookup"><span data-stu-id="c263f-398">Source table</span></span>   | <span data-ttu-id="c263f-399">フィールド</span><span class="sxs-lookup"><span data-stu-id="c263f-399">Field</span></span>     | <span data-ttu-id="c263f-400">基準</span><span class="sxs-lookup"><span data-stu-id="c263f-400">Criteria</span></span>  |
 |----------------|-----------|-----------|
-| ProdRouteTrans | 工程 | 梱包業 |
+| <span data-ttu-id="c263f-401">ProdRouteTrans</span><span class="sxs-lookup"><span data-stu-id="c263f-401">ProdRouteTrans</span></span> | <span data-ttu-id="c263f-402">工程</span><span class="sxs-lookup"><span data-stu-id="c263f-402">Operation</span></span> | <span data-ttu-id="c263f-403">梱包業</span><span class="sxs-lookup"><span data-stu-id="c263f-403">Packaging</span></span> |
 
-原価計算に統計的手段を導入する前に、統計測定プロバイダー テンプレートと統計分析コード メンバーの間の関係を確立する必要があります。 このリレーションは、原価会計元帳およびバージョンごとに作成されます。 この関係は、データ コネクタとデータ プロバイダーで構成されます。 統計分析コード メンバーごとに、複数のデータ コネクタとデータ プロバイダーを選択できます。
+<span data-ttu-id="c263f-404">原価計算に統計的手段を導入する前に、統計測定プロバイダー テンプレートと統計分析コード メンバーの間の関係を確立する必要があります。</span><span class="sxs-lookup"><span data-stu-id="c263f-404">Before you can get statistical measures into Cost accounting, you must establish the relation between the statistical measure provider template and the statistical dimension member.</span></span> <span data-ttu-id="c263f-405">このリレーションは、原価会計元帳およびバージョンごとに作成されます。</span><span class="sxs-lookup"><span data-stu-id="c263f-405">This relation is created per Cost accounting ledger and version.</span></span> <span data-ttu-id="c263f-406">この関係は、データ コネクタとデータ プロバイダーで構成されます。</span><span class="sxs-lookup"><span data-stu-id="c263f-406">The relation consists of a data connector and a data provider.</span></span> <span data-ttu-id="c263f-407">統計分析コード メンバーごとに、複数のデータ コネクタとデータ プロバイダーを選択できます。</span><span class="sxs-lookup"><span data-stu-id="c263f-407">You can have several data connectors and data providers per statistical dimension member.</span></span>
 
 > [!NOTE]
-> この例では、[**実際のバージョン**] のリレーションのみを作成します
+> <span data-ttu-id="c263f-408">この例では、[**実際のバージョン**] のリレーションのみを作成します</span><span class="sxs-lookup"><span data-stu-id="c263f-408">In this example, we will create a relation only for the **Actual version**.</span></span>
 
-[**原価会計元帳**] \> [**実際のバージョン**] \> [**管理**] \> [**統計測定**] に移動して、関係を確立します。 このシナリオでは、Finance and Operations からデータを抽出するため、[**Dynamics 365 for Finance and Operations, Enterprise Edition – 統計測定**] データ コネクタを選択します。
+<span data-ttu-id="c263f-409">[**原価会計元帳**] \> [**実際のバージョン**] \> [**管理**] \> [**統計測定**] に移動して、関係を確立します。</span><span class="sxs-lookup"><span data-stu-id="c263f-409">Go to **Cost accounting ledger** \> **Actual version** \> **Manage** \> **Statistical measures** to establish the relation.</span></span> <span data-ttu-id="c263f-410">このシナリオでは、Finance and Operations からデータを抽出するため、[**Dynamics 365 for Finance and Operations, Enterprise Edition – 統計測定**] データ コネクタを選択します。</span><span class="sxs-lookup"><span data-stu-id="c263f-410">For this scenario, select the **Dynamics 365 for Finance and Operations, Enterprise edition – Statistical measures** data connector, because we want to extract data from Finance and Operations.</span></span>
 
-**データ ソース**
+<span data-ttu-id="c263f-411">**データ ソース**</span><span class="sxs-lookup"><span data-stu-id="c263f-411">**Data source**</span></span>
 
-| 氏名           | データ コネクタ                                                                     | 統計分析コード メンバー |
+| <span data-ttu-id="c263f-412">氏名</span><span class="sxs-lookup"><span data-stu-id="c263f-412">Name</span></span>           | <span data-ttu-id="c263f-413">データ コネクタ</span><span class="sxs-lookup"><span data-stu-id="c263f-413">Data connector</span></span>                                                                     | <span data-ttu-id="c263f-414">統計分析コード メンバー</span><span class="sxs-lookup"><span data-stu-id="c263f-414">Statistical dimension member</span></span> |
 |----------------|------------------------------------------------------------------------------------|------------------------------|
-| 梱包 CC D365FO | Dynamics 365 for Finance and Operations, Enterprise Edition - 統計測定 | 梱包 CC                      |
+| <span data-ttu-id="c263f-415">梱包 CC D365FO</span><span class="sxs-lookup"><span data-stu-id="c263f-415">Pack CC D365FO</span></span> | <span data-ttu-id="c263f-416">Dynamics 365 for Finance and Operations, Enterprise Edition - 統計測定</span><span class="sxs-lookup"><span data-stu-id="c263f-416">Dynamics 365 for Finance and Operations, Enterprise edition – Statistical measures</span></span> | <span data-ttu-id="c263f-417">梱包 CC</span><span class="sxs-lookup"><span data-stu-id="c263f-417">Pack CC</span></span>                      |
 
-システムは ProdRouteTrans が、各レコードの別個の法人組織に属するテーブルであることを認識します。 したがって、取引をインポートする法人を選択するよう求められます。
+<span data-ttu-id="c263f-418">システムは ProdRouteTrans が、各レコードの別個の法人組織に属するテーブルであることを認識します。</span><span class="sxs-lookup"><span data-stu-id="c263f-418">The system recognizes that ProdRouteTrans is a table where each record belongs to a separate legal entity.</span></span> <span data-ttu-id="c263f-419">したがって、取引をインポートする法人を選択するよう求められます。</span><span class="sxs-lookup"><span data-stu-id="c263f-419">Therefore, you will be asked to select the legal entity that transactions should be imported from.</span></span>
 
-**データ プロバイダーの構成**
+<span data-ttu-id="c263f-420">**データ プロバイダーの構成**</span><span class="sxs-lookup"><span data-stu-id="c263f-420">**Data provider configuration**</span></span>
 
-| 統計テンプレート名 | 個法 |
+| <span data-ttu-id="c263f-421">統計テンプレート名</span><span class="sxs-lookup"><span data-stu-id="c263f-421">Statistical template name</span></span> | <span data-ttu-id="c263f-422">個法</span><span class="sxs-lookup"><span data-stu-id="c263f-422">Legal entity</span></span> |
 |---------------------------|--------------|
-| 梱包 CC                   | USMF         |
+| <span data-ttu-id="c263f-423">梱包 CC</span><span class="sxs-lookup"><span data-stu-id="c263f-423">Pack CC</span></span>                   | <span data-ttu-id="c263f-424">USMF</span><span class="sxs-lookup"><span data-stu-id="c263f-424">USMF</span></span>         |
 
-統計測定のソース データが処理された後に、次の統計エントリが原価会計に作成されます。
+<span data-ttu-id="c263f-425">統計測定のソース データが処理された後に、次の統計エントリが原価会計に作成されます。</span><span class="sxs-lookup"><span data-stu-id="c263f-425">After the source data for the statistical measure processed, the following statistical entries are created in Cost accounting.</span></span>
 
-**仕訳帳**
+<span data-ttu-id="c263f-426">**仕訳帳**</span><span class="sxs-lookup"><span data-stu-id="c263f-426">**Journal**</span></span>
 
-| 仕訳帳 | 仕訳帳タイプ                     | 会計カレンダー期間 | 年   | 期間 | バージョン   |   データ コネクタ ソース エントリ  |
+| <span data-ttu-id="c263f-427">仕訳帳</span><span class="sxs-lookup"><span data-stu-id="c263f-427">Journal</span></span> | <span data-ttu-id="c263f-428">仕訳帳タイプ</span><span class="sxs-lookup"><span data-stu-id="c263f-428">Journal type</span></span>                     | <span data-ttu-id="c263f-429">会計カレンダー期間</span><span class="sxs-lookup"><span data-stu-id="c263f-429">Fiscal calendar period</span></span> | <span data-ttu-id="c263f-430">年</span><span class="sxs-lookup"><span data-stu-id="c263f-430">Year</span></span>   | <span data-ttu-id="c263f-431">期間</span><span class="sxs-lookup"><span data-stu-id="c263f-431">Period</span></span> | <span data-ttu-id="c263f-432">バージョン</span><span class="sxs-lookup"><span data-stu-id="c263f-432">Version</span></span>   |   <span data-ttu-id="c263f-433">データ コネクタ ソース エントリ</span><span class="sxs-lookup"><span data-stu-id="c263f-433">Data connector source entries</span></span>  |
 |---------|----------------------------------|------------------------|--------|---------|----------------|---------|
-| 00002   | 統計エントリ振替仕訳帳 | 会計年度               | 2017    | 期間 1  | CA 会計 USMF | 梱包 CC |
+| <span data-ttu-id="c263f-434">00002</span><span class="sxs-lookup"><span data-stu-id="c263f-434">00002</span></span>   | <span data-ttu-id="c263f-435">統計エントリ振替仕訳帳</span><span class="sxs-lookup"><span data-stu-id="c263f-435">Statistical entry transfer journal</span></span> | <span data-ttu-id="c263f-436">会計年度</span><span class="sxs-lookup"><span data-stu-id="c263f-436">Fiscal</span></span>               | <span data-ttu-id="c263f-437">2017</span><span class="sxs-lookup"><span data-stu-id="c263f-437">2017</span></span>    | <span data-ttu-id="c263f-438">期間 1</span><span class="sxs-lookup"><span data-stu-id="c263f-438">Period 1</span></span>  | <span data-ttu-id="c263f-439">CA 会計 USMF</span><span class="sxs-lookup"><span data-stu-id="c263f-439">CA ledger USMF</span></span> | <span data-ttu-id="c263f-440">梱包 CC</span><span class="sxs-lookup"><span data-stu-id="c263f-440">Pack CC</span></span> |
 
-**統計エントリ振替仕訳入力**
+<span data-ttu-id="c263f-441">**統計エントリ振替仕訳入力**</span><span class="sxs-lookup"><span data-stu-id="c263f-441">**Statistical entry transfer journal entries**</span></span>
 
-| 会計日 | 大きさ | 統計要素 |  説明          | 製品グループ         |
+| <span data-ttu-id="c263f-442">会計日</span><span class="sxs-lookup"><span data-stu-id="c263f-442">Accounting date</span></span> | <span data-ttu-id="c263f-443">大きさ</span><span class="sxs-lookup"><span data-stu-id="c263f-443">Magnitude</span></span> | <span data-ttu-id="c263f-444">統計要素</span><span class="sxs-lookup"><span data-stu-id="c263f-444">Statistical element</span></span> |  <span data-ttu-id="c263f-445">説明</span><span class="sxs-lookup"><span data-stu-id="c263f-445">Description</span></span>          | <span data-ttu-id="c263f-446">製品グループ</span><span class="sxs-lookup"><span data-stu-id="c263f-446">Product group</span></span>         |
 |-----------------|-----------|---------------------|-----------------------|-----------------------|
-| 2017 年 1 月 31 日      | 16.00     | 梱包 CC             | 梱包コスト センター | オレンジ ジュース B2B      |
-| 2017 年 1 月 31 日      | 8.00      | 梱包 CC             | 梱包コスト センター | オレンジ ジュース 消費者 |
+| <span data-ttu-id="c263f-447">2017 年 1 月 31 日</span><span class="sxs-lookup"><span data-stu-id="c263f-447">31-01-2017</span></span>      | <span data-ttu-id="c263f-448">16.00</span><span class="sxs-lookup"><span data-stu-id="c263f-448">16.00</span></span>     | <span data-ttu-id="c263f-449">梱包 CC</span><span class="sxs-lookup"><span data-stu-id="c263f-449">Pack CC</span></span>             | <span data-ttu-id="c263f-450">梱包コスト センター</span><span class="sxs-lookup"><span data-stu-id="c263f-450">Packaging Cost center</span></span> | <span data-ttu-id="c263f-451">オレンジ ジュース B2B</span><span class="sxs-lookup"><span data-stu-id="c263f-451">Orange juice B2B</span></span>      |
+| <span data-ttu-id="c263f-452">2017 年 1 月 31 日</span><span class="sxs-lookup"><span data-stu-id="c263f-452">31-01-2017</span></span>      | <span data-ttu-id="c263f-453">8.00</span><span class="sxs-lookup"><span data-stu-id="c263f-453">8.00</span></span>      | <span data-ttu-id="c263f-454">梱包 CC</span><span class="sxs-lookup"><span data-stu-id="c263f-454">Pack CC</span></span>             | <span data-ttu-id="c263f-455">梱包コスト センター</span><span class="sxs-lookup"><span data-stu-id="c263f-455">Packaging Cost center</span></span> | <span data-ttu-id="c263f-456">オレンジ ジュース 消費者</span><span class="sxs-lookup"><span data-stu-id="c263f-456">Orange juice Consumer</span></span> |
 
-**統計エントリ**
+<span data-ttu-id="c263f-457">**統計エントリ**</span><span class="sxs-lookup"><span data-stu-id="c263f-457">**Statistical entries**</span></span>
 
-| 原価オブジェクト           | 会計日 | 統計分析コード メンバー |    説明        | 大きさ |
+| <span data-ttu-id="c263f-458">原価オブジェクト</span><span class="sxs-lookup"><span data-stu-id="c263f-458">Cost object</span></span>           | <span data-ttu-id="c263f-459">会計日</span><span class="sxs-lookup"><span data-stu-id="c263f-459">Accounting date</span></span> | <span data-ttu-id="c263f-460">統計分析コード メンバー</span><span class="sxs-lookup"><span data-stu-id="c263f-460">Statistical dimension member</span></span> |    <span data-ttu-id="c263f-461">説明</span><span class="sxs-lookup"><span data-stu-id="c263f-461">Description</span></span>        | <span data-ttu-id="c263f-462">大きさ</span><span class="sxs-lookup"><span data-stu-id="c263f-462">Magnitude</span></span> |
 |-----------------------|-----------------|------------------------------|-----------------------|-----------|
-| オレンジ ジュース B2B      | 2017 年 1 月 31 日      | 梱包 CC                      | 梱包コスト センター | 16.00     |
-| オレンジ ジュース 消費者 | 2017 年 1 月 31 日      | 梱包 CC                      | 梱包コスト センター | 8.00      |
+| <span data-ttu-id="c263f-463">オレンジ ジュース B2B</span><span class="sxs-lookup"><span data-stu-id="c263f-463">Orange juice B2B</span></span>      | <span data-ttu-id="c263f-464">2017 年 1 月 31 日</span><span class="sxs-lookup"><span data-stu-id="c263f-464">31-01-2017</span></span>      | <span data-ttu-id="c263f-465">梱包 CC</span><span class="sxs-lookup"><span data-stu-id="c263f-465">Pack CC</span></span>                      | <span data-ttu-id="c263f-466">梱包コスト センター</span><span class="sxs-lookup"><span data-stu-id="c263f-466">Packaging Cost center</span></span> | <span data-ttu-id="c263f-467">16.00</span><span class="sxs-lookup"><span data-stu-id="c263f-467">16.00</span></span>     |
+| <span data-ttu-id="c263f-468">オレンジ ジュース 消費者</span><span class="sxs-lookup"><span data-stu-id="c263f-468">Orange juice Consumer</span></span> | <span data-ttu-id="c263f-469">2017 年 1 月 31 日</span><span class="sxs-lookup"><span data-stu-id="c263f-469">31-01-2017</span></span>      | <span data-ttu-id="c263f-470">梱包 CC</span><span class="sxs-lookup"><span data-stu-id="c263f-470">Pack CC</span></span>                      | <span data-ttu-id="c263f-471">梱包コスト センター</span><span class="sxs-lookup"><span data-stu-id="c263f-471">Packaging Cost center</span></span> | <span data-ttu-id="c263f-472">8.00</span><span class="sxs-lookup"><span data-stu-id="c263f-472">8.00</span></span>      |
 
-コスト配分ルールで、配賦の基準として、梱包 CC の事前に定義された分析コード メンバーが割り当てられた場合は、次の配賦係数を使用して、コストが配分されます。
+<span data-ttu-id="c263f-473">コスト配分ルールで、配賦の基準として、梱包 CC の事前に定義された分析コード メンバーが割り当てられた場合は、次の配賦係数を使用して、コストが配分されます。</span><span class="sxs-lookup"><span data-stu-id="c263f-473">If the Pack CC predefined dimension member allocation basis is assigned as an allocation base in a cost distribution rule, the cost will be distributed by using the following allocation factor.</span></span>
 
-| 原価オブジェクト           | 大きさ | 配賦係数  |
+| <span data-ttu-id="c263f-474">原価オブジェクト</span><span class="sxs-lookup"><span data-stu-id="c263f-474">Cost object</span></span>           | <span data-ttu-id="c263f-475">大きさ</span><span class="sxs-lookup"><span data-stu-id="c263f-475">Magnitude</span></span> | <span data-ttu-id="c263f-476">配賦係数</span><span class="sxs-lookup"><span data-stu-id="c263f-476">Allocation factor</span></span>  |
 |-----------------------|-----------|--------------------|
-| オレンジ ジュース B2B      | 16.00     | (16 ÷ 24) × 金額 |
-| オレンジ ジュース消費者 | 8.00      | (8 ÷ 24) × 金額  |
+| <span data-ttu-id="c263f-477">オレンジ ジュース B2B</span><span class="sxs-lookup"><span data-stu-id="c263f-477">Orange juice B2B</span></span>      | <span data-ttu-id="c263f-478">16.00</span><span class="sxs-lookup"><span data-stu-id="c263f-478">16.00</span></span>     | <span data-ttu-id="c263f-479">(16 ÷ 24) × 金額</span><span class="sxs-lookup"><span data-stu-id="c263f-479">(16 ÷ 24) × Amount</span></span> |
+| <span data-ttu-id="c263f-480">オレンジ ジュース消費者</span><span class="sxs-lookup"><span data-stu-id="c263f-480">Orange juice Consumer</span></span> | <span data-ttu-id="c263f-481">8.00</span><span class="sxs-lookup"><span data-stu-id="c263f-481">8.00</span></span>      | <span data-ttu-id="c263f-482">(8 ÷ 24) × 金額</span><span class="sxs-lookup"><span data-stu-id="c263f-482">(8 ÷ 24) × Amount</span></span>  |
 
-## <a name="imported-statistical-measures"></a>インポートされた統計測定
+## <a name="imported-statistical-measures"></a><span data-ttu-id="c263f-483">インポートされた統計測定</span><span class="sxs-lookup"><span data-stu-id="c263f-483">Imported statistical measures</span></span>
 
-データ管理インポート/エクスポート ツールを使用して、統計測定値を原価計算にインポートすることができます。
+<span data-ttu-id="c263f-484">データ管理インポート/エクスポート ツールを使用して、統計測定値を原価計算にインポートすることができます。</span><span class="sxs-lookup"><span data-stu-id="c263f-484">You can import statistical measures into Cost accounting by using the Data management import/export tool.</span></span>
 
-インポートに使用されるデータ エンティティの名前は、Imported statistical measures です。
+<span data-ttu-id="c263f-485">インポートに使用されるデータ エンティティの名前は、Imported statistical measures です。</span><span class="sxs-lookup"><span data-stu-id="c263f-485">The data entity that is used for the import is named Imported statistical measures.</span></span>
 
 > [!NOTE]
-> このデータ エンティティは、エントリごとに最大 5 つの一意な分析コード値を使用できるように設計されています。
+> <span data-ttu-id="c263f-486">このデータ エンティティは、エントリごとに最大 5 つの一意な分析コード値を使用できるように設計されています。</span><span class="sxs-lookup"><span data-stu-id="c263f-486">This data entity is designed to allow a maximum of five unique dimension values per entry.</span></span>
 
-電力消費は、データ エンティティの事前定義されたフォーマットを使用して Microsoft Excel に記録されます。 次に例を示します。
+<span data-ttu-id="c263f-487">電力消費は、データ エンティティの事前定義されたフォーマットを使用して Microsoft Excel に記録されます。</span><span class="sxs-lookup"><span data-stu-id="c263f-487">The consumption of electricity is recorded in Microsoft Excel by using the predefined format of the data entity.</span></span> <span data-ttu-id="c263f-488">次に例を示します。</span><span class="sxs-lookup"><span data-stu-id="c263f-488">Here is an example.</span></span>
 
-| 会計日 | 分析コード メンバー名 1 | 分析コード メンバー名 2 | 分析コード メンバー名 5 | 大きさ  | ソース識別子 |
+| <span data-ttu-id="c263f-489">会計日</span><span class="sxs-lookup"><span data-stu-id="c263f-489">Accounting date</span></span> | <span data-ttu-id="c263f-490">分析コード メンバー名 1</span><span class="sxs-lookup"><span data-stu-id="c263f-490">Dimension member name1</span></span> | <span data-ttu-id="c263f-491">分析コード メンバー名 2</span><span class="sxs-lookup"><span data-stu-id="c263f-491">Dimension member name2</span></span> | <span data-ttu-id="c263f-492">分析コード メンバー名 5</span><span class="sxs-lookup"><span data-stu-id="c263f-492">Dimension member name5</span></span> | <span data-ttu-id="c263f-493">大きさ</span><span class="sxs-lookup"><span data-stu-id="c263f-493">Magnitude</span></span>  | <span data-ttu-id="c263f-494">ソース識別子</span><span class="sxs-lookup"><span data-stu-id="c263f-494">Source identifier</span></span> |
 |-----------------|------------------------|------------------------|------------------------|------------|-------------------|
-| 2017 年 1 月 31 日      | CC001                  |                        |                        | 2,450.00   | 電気       |
-| 2017 年 1 月 31 日      | CC002                  |                        |                        | 4,100.00   | 電気       |
-| 2017 年 1 月 31 日      | CC003                  |                        |                        | 15,000.00  | 電気       |
+| <span data-ttu-id="c263f-495">2017 年 1 月 31 日</span><span class="sxs-lookup"><span data-stu-id="c263f-495">31-01-2017</span></span>      | <span data-ttu-id="c263f-496">CC001</span><span class="sxs-lookup"><span data-stu-id="c263f-496">CC001</span></span>                  |                        |                        | <span data-ttu-id="c263f-497">2,450.00</span><span class="sxs-lookup"><span data-stu-id="c263f-497">2,450.00</span></span>   | <span data-ttu-id="c263f-498">電気</span><span class="sxs-lookup"><span data-stu-id="c263f-498">Electricity</span></span>       |
+| <span data-ttu-id="c263f-499">2017 年 1 月 31 日</span><span class="sxs-lookup"><span data-stu-id="c263f-499">31-01-2017</span></span>      | <span data-ttu-id="c263f-500">CC002</span><span class="sxs-lookup"><span data-stu-id="c263f-500">CC002</span></span>                  |                        |                        | <span data-ttu-id="c263f-501">4,100.00</span><span class="sxs-lookup"><span data-stu-id="c263f-501">4,100.00</span></span>   | <span data-ttu-id="c263f-502">電気</span><span class="sxs-lookup"><span data-stu-id="c263f-502">Electricity</span></span>       |
+| <span data-ttu-id="c263f-503">2017 年 1 月 31 日</span><span class="sxs-lookup"><span data-stu-id="c263f-503">31-01-2017</span></span>      | <span data-ttu-id="c263f-504">CC003</span><span class="sxs-lookup"><span data-stu-id="c263f-504">CC003</span></span>                  |                        |                        | <span data-ttu-id="c263f-505">15,000.00</span><span class="sxs-lookup"><span data-stu-id="c263f-505">15,000.00</span></span>  | <span data-ttu-id="c263f-506">電気</span><span class="sxs-lookup"><span data-stu-id="c263f-506">Electricity</span></span>       |
 
-データ管理を使用してデータをインポートすると、そのデータはコスト計算ステージング テーブルに保存されます。 したがって、インポートされたデータを複数の原価計算元帳で使用することができます。 データの再読み込みは必要ありません。
+<span data-ttu-id="c263f-507">データ管理を使用してデータをインポートすると、そのデータはコスト計算ステージング テーブルに保存されます。</span><span class="sxs-lookup"><span data-stu-id="c263f-507">When you've imported your data via Data management, the data will be stored in a Cost accounting staging table.</span></span> <span data-ttu-id="c263f-508">したがって、インポートされたデータを複数の原価計算元帳で使用することができます。</span><span class="sxs-lookup"><span data-stu-id="c263f-508">Therefore, the imported data can be used in multiple Cost accounting ledgers.</span></span> <span data-ttu-id="c263f-509">データの再読み込みは必要ありません。</span><span class="sxs-lookup"><span data-stu-id="c263f-509">A reload of data isn't required.</span></span>
 
-データをインポートするには、[**インポートされたデータ**] \> [**Data entity**] \> [**インポートされた統計測定**] に移動します。
+<span data-ttu-id="c263f-510">データをインポートするには、[**インポートされたデータ**] \> [**Data entity**] \> [**インポートされた統計測定**] に移動します。</span><span class="sxs-lookup"><span data-stu-id="c263f-510">To import the data, go to **Imported data** \> **Data entity** \> **Imported statistical measures**.</span></span>
 
-| ソース識別子 | 会計日 | 大きさ  | 分析コード メンバー名 1 | 分析コード メンバー名 2 | 分析コード メンバー名 5 |
+| <span data-ttu-id="c263f-511">ソース識別子</span><span class="sxs-lookup"><span data-stu-id="c263f-511">Source identifier</span></span> | <span data-ttu-id="c263f-512">会計日</span><span class="sxs-lookup"><span data-stu-id="c263f-512">Accounting date</span></span> | <span data-ttu-id="c263f-513">大きさ</span><span class="sxs-lookup"><span data-stu-id="c263f-513">Magnitude</span></span>  | <span data-ttu-id="c263f-514">分析コード メンバー名 1</span><span class="sxs-lookup"><span data-stu-id="c263f-514">Dimension member name1</span></span> | <span data-ttu-id="c263f-515">分析コード メンバー名 2</span><span class="sxs-lookup"><span data-stu-id="c263f-515">Dimension member name2</span></span> | <span data-ttu-id="c263f-516">分析コード メンバー名 5</span><span class="sxs-lookup"><span data-stu-id="c263f-516">Dimension member name5</span></span> |
 |-------------------|-----------------|------------|------------------------|------------------------|------------------------|
-| 電気       | 2017 年 1 月 31 日      | 2,450.00   | CC001                  |                        |                        |
-| 電気       | 2017 年 1 月 31 日      | 4,100.00   | CC002                  |                        |                        |
-| 電気       | 2017 年 1 月 31 日      | 15,000.00  | CC003                  |                        |                        |
+| <span data-ttu-id="c263f-517">電気</span><span class="sxs-lookup"><span data-stu-id="c263f-517">Electricity</span></span>       | <span data-ttu-id="c263f-518">2017 年 1 月 31 日</span><span class="sxs-lookup"><span data-stu-id="c263f-518">31-01-2017</span></span>      | <span data-ttu-id="c263f-519">2,450.00</span><span class="sxs-lookup"><span data-stu-id="c263f-519">2,450.00</span></span>   | <span data-ttu-id="c263f-520">CC001</span><span class="sxs-lookup"><span data-stu-id="c263f-520">CC001</span></span>                  |                        |                        |
+| <span data-ttu-id="c263f-521">電気</span><span class="sxs-lookup"><span data-stu-id="c263f-521">Electricity</span></span>       | <span data-ttu-id="c263f-522">2017 年 1 月 31 日</span><span class="sxs-lookup"><span data-stu-id="c263f-522">31-01-2017</span></span>      | <span data-ttu-id="c263f-523">4,100.00</span><span class="sxs-lookup"><span data-stu-id="c263f-523">4,100.00</span></span>   | <span data-ttu-id="c263f-524">CC002</span><span class="sxs-lookup"><span data-stu-id="c263f-524">CC002</span></span>                  |                        |                        |
+| <span data-ttu-id="c263f-525">電気</span><span class="sxs-lookup"><span data-stu-id="c263f-525">Electricity</span></span>       | <span data-ttu-id="c263f-526">2017 年 1 月 31 日</span><span class="sxs-lookup"><span data-stu-id="c263f-526">31-01-2017</span></span>      | <span data-ttu-id="c263f-527">15,000.00</span><span class="sxs-lookup"><span data-stu-id="c263f-527">15,000.00</span></span>  | <span data-ttu-id="c263f-528">CC003</span><span class="sxs-lookup"><span data-stu-id="c263f-528">CC003</span></span>                  |                        |                        |
 
-原価計算に統計的手段を導入する前に、ソース ID と統計分析コード メンバーの間の関係を確立する必要があります。 このリレーションは、原価会計元帳およびバージョンごとに作成されます。 この関係は、データ コネクタとデータ プロバイダーで構成されます。 統計分析コード メンバーごとに、複数のデータ コネクタとデータ プロバイダーを選択できます。
+<span data-ttu-id="c263f-529">原価計算に統計的手段を導入する前に、ソース ID と統計分析コード メンバーの間の関係を確立する必要があります。</span><span class="sxs-lookup"><span data-stu-id="c263f-529">Before you can get statistical measures into Cost accounting, you must establish the relation between the source identifier and the statistical dimension member.</span></span> <span data-ttu-id="c263f-530">このリレーションは、原価会計元帳およびバージョンごとに作成されます。</span><span class="sxs-lookup"><span data-stu-id="c263f-530">This relation is created per Cost accounting ledger and version.</span></span> <span data-ttu-id="c263f-531">この関係は、データ コネクタとデータ プロバイダーで構成されます。</span><span class="sxs-lookup"><span data-stu-id="c263f-531">The relation consists of a data connector and a data provider.</span></span> <span data-ttu-id="c263f-532">統計分析コード メンバーごとに、複数のデータ コネクタとデータ プロバイダーを選択できます。</span><span class="sxs-lookup"><span data-stu-id="c263f-532">You can have several data connectors and data providers per statistical dimension member.</span></span>
 
 > [!NOTE]
-> この例では、[**実際のバージョン**] のリレーションのみを作成します
+> <span data-ttu-id="c263f-533">この例では、[**実際のバージョン**] のリレーションのみを作成します</span><span class="sxs-lookup"><span data-stu-id="c263f-533">In this example, we will create a relation only for the **Actual version**.</span></span>
 
-[**原価会計元帳**] \> [**実際のバージョン**] \> [**管理**] \> [**統計測定**] に移動して、関係を確立します。 このシナリオでは、データがサード パーティ システムから Excel 経由で原価計算にインポートされているため、[**インポートされた統計測定**] データ コネクタを選択します。
+<span data-ttu-id="c263f-534">[**原価会計元帳**] \> [**実際のバージョン**] \> [**管理**] \> [**統計測定**] に移動して、関係を確立します。</span><span class="sxs-lookup"><span data-stu-id="c263f-534">Go to **Cost accounting ledger** \> **Actual version** \> **Manage** \> **Statistical measures** to establish the relation.</span></span> <span data-ttu-id="c263f-535">このシナリオでは、データがサード パーティ システムから Excel 経由で原価計算にインポートされているため、[**インポートされた統計測定**] データ コネクタを選択します。</span><span class="sxs-lookup"><span data-stu-id="c263f-535">For this scenario, select the **Imported statistical measures** data connector, because data has been imported from a third-party system into Cost accounting via Excel.</span></span>
 
-**データ ソース**
+<span data-ttu-id="c263f-536">**データ ソース**</span><span class="sxs-lookup"><span data-stu-id="c263f-536">**Data source**</span></span>
 
-| 氏名        | データ コネクタ                | 統計分析コード メンバー |
+| <span data-ttu-id="c263f-537">氏名</span><span class="sxs-lookup"><span data-stu-id="c263f-537">Name</span></span>        | <span data-ttu-id="c263f-538">データ コネクタ</span><span class="sxs-lookup"><span data-stu-id="c263f-538">Data connector</span></span>                | <span data-ttu-id="c263f-539">統計分析コード メンバー</span><span class="sxs-lookup"><span data-stu-id="c263f-539">Statistical dimension member</span></span> |
 |-------------|-------------------------------|------------------------------|
-| 電気 | インポートされた統計測定 | 電気                  |
+| <span data-ttu-id="c263f-540">電気</span><span class="sxs-lookup"><span data-stu-id="c263f-540">Electricity</span></span> | <span data-ttu-id="c263f-541">インポートされた統計測定</span><span class="sxs-lookup"><span data-stu-id="c263f-541">Imported statistical measures</span></span> | <span data-ttu-id="c263f-542">電気</span><span class="sxs-lookup"><span data-stu-id="c263f-542">Electricity</span></span>                  |
 
-**データ プロバイダーのコンフィギュレーション**
+<span data-ttu-id="c263f-543">**データ プロバイダーのコンフィギュレーション**</span><span class="sxs-lookup"><span data-stu-id="c263f-543">**Data provider configuration**</span></span>
 
-| ソース ID のインポート | 職務 | 分析コード 1   | 分析コード 2 | 分析コード 5 |
+| <span data-ttu-id="c263f-544">ソース ID のインポート</span><span class="sxs-lookup"><span data-stu-id="c263f-544">Import source identifier</span></span> | <span data-ttu-id="c263f-545">職務</span><span class="sxs-lookup"><span data-stu-id="c263f-545">Function</span></span> | <span data-ttu-id="c263f-546">分析コード 1</span><span class="sxs-lookup"><span data-stu-id="c263f-546">Dimension1</span></span>   | <span data-ttu-id="c263f-547">分析コード 2</span><span class="sxs-lookup"><span data-stu-id="c263f-547">Dimension2</span></span> | <span data-ttu-id="c263f-548">分析コード 5</span><span class="sxs-lookup"><span data-stu-id="c263f-548">Dimension5</span></span> |
 |--------------------------|----------|--------------|------------|------------|
-| 電気              | 計      | コスト センター |            |            |
+| <span data-ttu-id="c263f-549">電気</span><span class="sxs-lookup"><span data-stu-id="c263f-549">Electricity</span></span>              | <span data-ttu-id="c263f-550">計</span><span class="sxs-lookup"><span data-stu-id="c263f-550">Sum</span></span>      | <span data-ttu-id="c263f-551">コスト センター</span><span class="sxs-lookup"><span data-stu-id="c263f-551">Cost centers</span></span> |            |            |
 
 > [!NOTE]
-> データ プロバイダーのコンフィギュレーションを定義するときは、インポートされたトランザクションと一致させるコスト対象の分析コードを指定する必要があります。 統計測定のソース データが処理された後、次の統計エントリが原価計算に作成されます。
+> <span data-ttu-id="c263f-552">データ プロバイダーのコンフィギュレーションを定義するときは、インポートされたトランザクションと一致させるコスト対象の分析コードを指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="c263f-552">When you define the data provider configuration, you must specify which cost object dimensions to match against the imported transactions.</span></span> <span data-ttu-id="c263f-553">統計測定のソース データが処理された後、次の統計エントリが原価計算に作成されます。</span><span class="sxs-lookup"><span data-stu-id="c263f-553">After the source data for the statistical measure is processed, the following statistical entries are created in Cost accounting.</span></span>
 
-**仕訳帳**
+<span data-ttu-id="c263f-554">**仕訳帳**</span><span class="sxs-lookup"><span data-stu-id="c263f-554">**Journal**</span></span>
 
-| 仕訳帳 | 仕訳帳タイプ                       | 会計カレンダー期間 | 年  | 期間  |バージョン      |データ コネクタ ソース エントリ |
+| <span data-ttu-id="c263f-555">仕訳帳</span><span class="sxs-lookup"><span data-stu-id="c263f-555">Journal</span></span> | <span data-ttu-id="c263f-556">仕訳帳タイプ</span><span class="sxs-lookup"><span data-stu-id="c263f-556">Journal type</span></span>                       | <span data-ttu-id="c263f-557">会計カレンダー期間</span><span class="sxs-lookup"><span data-stu-id="c263f-557">Fiscal calendar period</span></span> | <span data-ttu-id="c263f-558">年</span><span class="sxs-lookup"><span data-stu-id="c263f-558">Year</span></span>  | <span data-ttu-id="c263f-559">期間</span><span class="sxs-lookup"><span data-stu-id="c263f-559">Perid</span></span>  |<span data-ttu-id="c263f-560">バージョン</span><span class="sxs-lookup"><span data-stu-id="c263f-560">Version</span></span>      |<span data-ttu-id="c263f-561">データ コネクタ ソース エントリ</span><span class="sxs-lookup"><span data-stu-id="c263f-561">Data connector source entries</span></span> |
 |---------|------------------------------------|------------------------|-------|--------|---------------|-------------|
-| 00002   | 統計エントリ振替仕訳帳 | 会計年度                 | 2017  | 期間 1 | CA 元帳 USMF | 電気 |
+| <span data-ttu-id="c263f-562">00002</span><span class="sxs-lookup"><span data-stu-id="c263f-562">00002</span></span>   | <span data-ttu-id="c263f-563">統計エントリ振替仕訳帳</span><span class="sxs-lookup"><span data-stu-id="c263f-563">Statistical entry transfer journal</span></span> | <span data-ttu-id="c263f-564">会計年度</span><span class="sxs-lookup"><span data-stu-id="c263f-564">Fiscal</span></span>                 | <span data-ttu-id="c263f-565">2017</span><span class="sxs-lookup"><span data-stu-id="c263f-565">2017</span></span>  | <span data-ttu-id="c263f-566">期間 1</span><span class="sxs-lookup"><span data-stu-id="c263f-566">Period 1</span></span> | <span data-ttu-id="c263f-567">CA 元帳 USMF</span><span class="sxs-lookup"><span data-stu-id="c263f-567">CA ledger USMF</span></span> | <span data-ttu-id="c263f-568">電気</span><span class="sxs-lookup"><span data-stu-id="c263f-568">Electricity</span></span> |
 
-**統計エントリ振替仕訳入力**
+<span data-ttu-id="c263f-569">**統計エントリ振替仕訳入力**</span><span class="sxs-lookup"><span data-stu-id="c263f-569">**Statistical entry transfer journal entries**</span></span>
 
-| 会計日 | 大きさ  | 原価要素 |   説明           | コスト センター |
+| <span data-ttu-id="c263f-570">会計日</span><span class="sxs-lookup"><span data-stu-id="c263f-570">Accounting date</span></span> | <span data-ttu-id="c263f-571">大きさ</span><span class="sxs-lookup"><span data-stu-id="c263f-571">Magnitude</span></span>  | <span data-ttu-id="c263f-572">原価要素</span><span class="sxs-lookup"><span data-stu-id="c263f-572">Cost element</span></span> |   <span data-ttu-id="c263f-573">説明</span><span class="sxs-lookup"><span data-stu-id="c263f-573">Description</span></span>           | <span data-ttu-id="c263f-574">コスト センター</span><span class="sxs-lookup"><span data-stu-id="c263f-574">Cost center</span></span> |
 |-----------------|------------|--------------|-------------------------|-------------|
-| 2017 年 1 月 31 日      | 2,450.00   | 電気  | 電気消費 | CC001       |
-| 2017 年 1 月 31 日      | 4,100.00   | 電気  | 電気消費 | CC002       |
-| 2017 年 1 月 31 日      | 15,000.00  | 電気  | 電気消費 | CC003       |
+| <span data-ttu-id="c263f-575">2017 年 1 月 31 日</span><span class="sxs-lookup"><span data-stu-id="c263f-575">31-01-2017</span></span>      | <span data-ttu-id="c263f-576">2,450.00</span><span class="sxs-lookup"><span data-stu-id="c263f-576">2,450.00</span></span>   | <span data-ttu-id="c263f-577">電気</span><span class="sxs-lookup"><span data-stu-id="c263f-577">Electricity</span></span>  | <span data-ttu-id="c263f-578">電気消費</span><span class="sxs-lookup"><span data-stu-id="c263f-578">Electricity consumption</span></span> | <span data-ttu-id="c263f-579">CC001</span><span class="sxs-lookup"><span data-stu-id="c263f-579">CC001</span></span>       |
+| <span data-ttu-id="c263f-580">2017 年 1 月 31 日</span><span class="sxs-lookup"><span data-stu-id="c263f-580">31-01-2017</span></span>      | <span data-ttu-id="c263f-581">4,100.00</span><span class="sxs-lookup"><span data-stu-id="c263f-581">4,100.00</span></span>   | <span data-ttu-id="c263f-582">電気</span><span class="sxs-lookup"><span data-stu-id="c263f-582">Electricity</span></span>  | <span data-ttu-id="c263f-583">電気消費</span><span class="sxs-lookup"><span data-stu-id="c263f-583">Electricity consumption</span></span> | <span data-ttu-id="c263f-584">CC002</span><span class="sxs-lookup"><span data-stu-id="c263f-584">CC002</span></span>       |
+| <span data-ttu-id="c263f-585">2017 年 1 月 31 日</span><span class="sxs-lookup"><span data-stu-id="c263f-585">31-01-2017</span></span>      | <span data-ttu-id="c263f-586">15,000.00</span><span class="sxs-lookup"><span data-stu-id="c263f-586">15,000.00</span></span>  | <span data-ttu-id="c263f-587">電気</span><span class="sxs-lookup"><span data-stu-id="c263f-587">Electricity</span></span>  | <span data-ttu-id="c263f-588">電気消費</span><span class="sxs-lookup"><span data-stu-id="c263f-588">Electricity consumption</span></span> | <span data-ttu-id="c263f-589">CC003</span><span class="sxs-lookup"><span data-stu-id="c263f-589">CC003</span></span>       |
 
-**統計エントリ**
+<span data-ttu-id="c263f-590">**統計エントリ**</span><span class="sxs-lookup"><span data-stu-id="c263f-590">**Statistical entries**</span></span>
 
-| 原価オブジェクト |    | 会計日 | 統計分析コード メンバー |      説明                   | 大きさ  |
+| <span data-ttu-id="c263f-591">原価オブジェクト</span><span class="sxs-lookup"><span data-stu-id="c263f-591">Cost object</span></span> |    | <span data-ttu-id="c263f-592">会計日</span><span class="sxs-lookup"><span data-stu-id="c263f-592">Accounting date</span></span> | <span data-ttu-id="c263f-593">統計分析コード メンバー</span><span class="sxs-lookup"><span data-stu-id="c263f-593">Statistical dimension member</span></span> |      <span data-ttu-id="c263f-594">説明</span><span class="sxs-lookup"><span data-stu-id="c263f-594">Description</span></span>                   | <span data-ttu-id="c263f-595">大きさ</span><span class="sxs-lookup"><span data-stu-id="c263f-595">Magnitude</span></span>  |
 |-------------|----|-----------------|------------------------------|-------------------------|------------|
-| CC001       | HR | 2017 年 1 月 31 日      | 電気                  | 電気消費 | 2,450.00   |
-| CC002       | FI | 2017 年 1 月 31 日      | 電気                  | 電気消費 | 4,100.00   |
-| CC003       | IT | 2017 年 1 月 31 日      | 電気                  | 電気消費 | 15,000.00  |
+| <span data-ttu-id="c263f-596">CC001</span><span class="sxs-lookup"><span data-stu-id="c263f-596">CC001</span></span>       | <span data-ttu-id="c263f-597">HR</span><span class="sxs-lookup"><span data-stu-id="c263f-597">HR</span></span> | <span data-ttu-id="c263f-598">2017 年 1 月 31 日</span><span class="sxs-lookup"><span data-stu-id="c263f-598">31-01-2017</span></span>      | <span data-ttu-id="c263f-599">電気</span><span class="sxs-lookup"><span data-stu-id="c263f-599">Electricity</span></span>                  | <span data-ttu-id="c263f-600">電気消費</span><span class="sxs-lookup"><span data-stu-id="c263f-600">Electricity consumption</span></span> | <span data-ttu-id="c263f-601">2,450.00</span><span class="sxs-lookup"><span data-stu-id="c263f-601">2,450.00</span></span>   |
+| <span data-ttu-id="c263f-602">CC002</span><span class="sxs-lookup"><span data-stu-id="c263f-602">CC002</span></span>       | <span data-ttu-id="c263f-603">FI</span><span class="sxs-lookup"><span data-stu-id="c263f-603">FI</span></span> | <span data-ttu-id="c263f-604">2017 年 1 月 31 日</span><span class="sxs-lookup"><span data-stu-id="c263f-604">31-01-2017</span></span>      | <span data-ttu-id="c263f-605">電気</span><span class="sxs-lookup"><span data-stu-id="c263f-605">Electricity</span></span>                  | <span data-ttu-id="c263f-606">電気消費</span><span class="sxs-lookup"><span data-stu-id="c263f-606">Electricity consumption</span></span> | <span data-ttu-id="c263f-607">4,100.00</span><span class="sxs-lookup"><span data-stu-id="c263f-607">4,100.00</span></span>   |
+| <span data-ttu-id="c263f-608">CC003</span><span class="sxs-lookup"><span data-stu-id="c263f-608">CC003</span></span>       | <span data-ttu-id="c263f-609">IT</span><span class="sxs-lookup"><span data-stu-id="c263f-609">IT</span></span> | <span data-ttu-id="c263f-610">2017 年 1 月 31 日</span><span class="sxs-lookup"><span data-stu-id="c263f-610">31-01-2017</span></span>      | <span data-ttu-id="c263f-611">電気</span><span class="sxs-lookup"><span data-stu-id="c263f-611">Electricity</span></span>                  | <span data-ttu-id="c263f-612">電気消費</span><span class="sxs-lookup"><span data-stu-id="c263f-612">Electricity consumption</span></span> | <span data-ttu-id="c263f-613">15,000.00</span><span class="sxs-lookup"><span data-stu-id="c263f-613">15,000.00</span></span>  |
 
-コスト配分ルールで、配賦の基準として、電気が事前に定義された分析コード メンバーが割り当てられた場合は、次の配賦係数を使用して、コストが配分されます。
+<span data-ttu-id="c263f-614">コスト配分ルールで、配賦の基準として、電気が事前に定義された分析コード メンバーが割り当てられた場合は、次の配賦係数を使用して、コストが配分されます。</span><span class="sxs-lookup"><span data-stu-id="c263f-614">If the Electricity predefined dimension member allocation basis is assigned as an allocation base in a cost distribution rule, the cost will be distributed by using the following allocation factor.</span></span>
 
-| 原価オブジェクト |    | 大きさ | 配賦係数          |
+| <span data-ttu-id="c263f-615">原価オブジェクト</span><span class="sxs-lookup"><span data-stu-id="c263f-615">Cost object</span></span> |    | <span data-ttu-id="c263f-616">大きさ</span><span class="sxs-lookup"><span data-stu-id="c263f-616">Magnitude</span></span> | <span data-ttu-id="c263f-617">配賦係数</span><span class="sxs-lookup"><span data-stu-id="c263f-617">Allocation factor</span></span>          |
 |-------------|----|-----------|----------------------------|
-| CC001       | HR | 2,450.00  | (2,450 ÷ 21,550) × 金額  |
-| CC002       | FI | 4,100.00  | (4,100 ÷ 21,550) × 金額  |
-| CC003       | IT | 15,000.00 | (15,000 ÷ 21,550) × 金額 |
+| <span data-ttu-id="c263f-618">CC001</span><span class="sxs-lookup"><span data-stu-id="c263f-618">CC001</span></span>       | <span data-ttu-id="c263f-619">HR</span><span class="sxs-lookup"><span data-stu-id="c263f-619">HR</span></span> | <span data-ttu-id="c263f-620">2,450.00</span><span class="sxs-lookup"><span data-stu-id="c263f-620">2,450.00</span></span>  | <span data-ttu-id="c263f-621">(2,450 ÷ 21,550) × 金額</span><span class="sxs-lookup"><span data-stu-id="c263f-621">(2,450 ÷ 21,550) × Amount</span></span>  |
+| <span data-ttu-id="c263f-622">CC002</span><span class="sxs-lookup"><span data-stu-id="c263f-622">CC002</span></span>       | <span data-ttu-id="c263f-623">FI</span><span class="sxs-lookup"><span data-stu-id="c263f-623">FI</span></span> | <span data-ttu-id="c263f-624">4,100.00</span><span class="sxs-lookup"><span data-stu-id="c263f-624">4,100.00</span></span>  | <span data-ttu-id="c263f-625">(4,100 ÷ 21,550) × 金額</span><span class="sxs-lookup"><span data-stu-id="c263f-625">(4,100 ÷ 21,550) × Amount</span></span>  |
+| <span data-ttu-id="c263f-626">CC003</span><span class="sxs-lookup"><span data-stu-id="c263f-626">CC003</span></span>       | <span data-ttu-id="c263f-627">IT</span><span class="sxs-lookup"><span data-stu-id="c263f-627">IT</span></span> | <span data-ttu-id="c263f-628">15,000.00</span><span class="sxs-lookup"><span data-stu-id="c263f-628">15,000.00</span></span> | <span data-ttu-id="c263f-629">(15,000 ÷ 21,550) × 金額</span><span class="sxs-lookup"><span data-stu-id="c263f-629">(15,000 ÷ 21,550) × Amount</span></span> |
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a><span data-ttu-id="c263f-630">参照</span><span class="sxs-lookup"><span data-stu-id="c263f-630">See also</span></span>
 
-[配賦基準](allocation-bases.md)
+[<span data-ttu-id="c263f-631">配賦基準</span><span class="sxs-lookup"><span data-stu-id="c263f-631">Allocation bases</span></span>](allocation-bases.md)
 

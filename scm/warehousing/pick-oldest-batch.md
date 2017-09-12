@@ -14,31 +14,31 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 269384
 ms.search.region: Global
 ms.author: mirzaab
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
-ms.openlocfilehash: ee45fed40b10dbe913c73e1186b726a39831816d
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 25056886b1a18dbaef12c8732a1fd0bd92a6d04b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="pick-oldest-batch-on-a-mobile-device"></a>モバイル デバイスで最も古いバッチをピッキング
+# <a name="pick-oldest-batch-on-a-mobile-device"></a><span data-ttu-id="3e1f3-103">モバイル デバイスで最も古いバッチをピッキング</span><span class="sxs-lookup"><span data-stu-id="3e1f3-103">Pick oldest batch on a mobile device</span></span>
 
 [!include[banner](../includes/banner.md)]
 
-モバイル デバイス メニューから [**最も古いバッチをピッキング**] の構成にアクセスすることができるため、これにより、倉庫作業者が現在の場所で一番古いバッチを選択するように強制するまたは警告することができます。  
+<span data-ttu-id="3e1f3-104">モバイル デバイス メニューから [**最も古いバッチをピッキング**] の構成にアクセスすることができるため、これにより、倉庫作業者が現在の場所で一番古いバッチを選択するように強制するまたは警告することができます。</span><span class="sxs-lookup"><span data-stu-id="3e1f3-104">You can access the configuration **Pick oldest batch** via a mobile device menu and it allows you to force or warn warehouse workers to pick the oldest batch in their current location.</span></span>  
 
-## <a name="where-it-applies"></a>該当する場合
-最も古いバッチをピッキングがモバイル デバイスのメニュー項目で構成され、下記にある項目のバッチのピッキングに影響を与えます。
+## <a name="where-it-applies"></a><span data-ttu-id="3e1f3-105">該当する場合</span><span class="sxs-lookup"><span data-stu-id="3e1f3-105">Where it applies</span></span>
+<span data-ttu-id="3e1f3-106">最も古いバッチをピッキングがモバイル デバイスのメニュー項目で構成され、下記にある項目のバッチのピッキングに影響を与えます。</span><span class="sxs-lookup"><span data-stu-id="3e1f3-106">Pick oldest batch is configured on mobile device menu items and effects the pick for batch below items.</span></span>
 
-## <a name="how-to-set-up-the-configuration-for-pick-oldest-batch"></a>最も古いバッチをピッキングの構成を設定する方法 
-既存の作業を使用するように設定されている品目については、モバイル デバイス メニューで [**最も古いバッチをピッキング**] を [**なし**]、[**警告**]、または [**強制**] に設定できます。
+## <a name="how-to-set-up-the-configuration-for-pick-oldest-batch"></a><span data-ttu-id="3e1f3-107">最も古いバッチをピッキングの構成を設定する方法</span><span class="sxs-lookup"><span data-stu-id="3e1f3-107">How to set up the configuration for Pick oldest batch</span></span> 
+<span data-ttu-id="3e1f3-108">既存の作業を使用するように設定されている品目については、モバイル デバイス メニューで [**最も古いバッチをピッキング**] を [**なし**]、[**警告**]、または [**強制**] に設定できます。</span><span class="sxs-lookup"><span data-stu-id="3e1f3-108">For items that are set to use existing work, **Pick oldest batch** can be set to **None**, **Warn**, or **Force** from a mobile device menu.</span></span>
 
-[**なし**]: 作業者にはメッセージは表示されず、現在の場所にあるどのバッチでもピッキングが許可されています。
+<span data-ttu-id="3e1f3-109">[**なし**]: 作業者にはメッセージは表示されず、現在の場所にあるどのバッチでもピッキングが許可されています。</span><span class="sxs-lookup"><span data-stu-id="3e1f3-109">**None**: Workers will not receive any messages and they will be allowed to pick any batch in their location.</span></span>
 
-[**警告**] および [**強制**]: 作業者が、バッチを選択すると、有効期限日がもっとも古いバッチの一覧がバッチ コントロールの上に表示されます。 場所がライセンス プレートで制御されている場合、最も古いバッチを持つナンバー プレートのリストがナンバー プレート コントロールの上に表示されます。 
--   [**警告**]: 表示されている一覧の上にあるライセンス プレートまたはバッチを選択すると、コントロールが非表示になり、古いバッチを選択できるという警告が表示されます。 作業を続行できるようにするには、作業者は同じライセンス プレートまたはバッチを再度選択できます。  
--   **強制**: 作業者には、さらに古いバッチのピッキングがあるというメッセージが引き続き表示されます。
+<span data-ttu-id="3e1f3-110">[**警告**] および [**強制**]: 作業者が、バッチを選択すると、有効期限日がもっとも古いバッチの一覧がバッチ コントロールの上に表示されます。</span><span class="sxs-lookup"><span data-stu-id="3e1f3-110">**Warn** and **Force**:  A list of the batch(es) with the oldest expiration date will be displayed above the batch control when the worker selects a batch.</span></span> <span data-ttu-id="3e1f3-111">場所がライセンス プレートで制御されている場合、最も古いバッチを持つナンバー プレートのリストがナンバー プレート コントロールの上に表示されます。</span><span class="sxs-lookup"><span data-stu-id="3e1f3-111">If the location is license plate controlled, a list of license plates that have the oldest batch will be displayed above the license plate control.</span></span> 
+-   <span data-ttu-id="3e1f3-112">[**警告**]: 表示されている一覧の上にあるライセンス プレートまたはバッチを選択すると、コントロールが非表示になり、古いバッチを選択できるという警告が表示されます。</span><span class="sxs-lookup"><span data-stu-id="3e1f3-112">**Warn**: If a worker chooses a license plate or batch that is not on the shown list, the control will be blanked and a warning will be shown that there is an older batch to select.</span></span> <span data-ttu-id="3e1f3-113">作業を続行できるようにするには、作業者は同じライセンス プレートまたはバッチを再度選択できます。</span><span class="sxs-lookup"><span data-stu-id="3e1f3-113">To be allowed to continue the work, the worker can select the same license plate or batch again.</span></span>  
+-   <span data-ttu-id="3e1f3-114">**強制**: 作業者には、さらに古いバッチのピッキングがあるというメッセージが引き続き表示されます。</span><span class="sxs-lookup"><span data-stu-id="3e1f3-114">**Force**: Workers will continue to receive the message that there is an older batch to pick.</span></span>
 

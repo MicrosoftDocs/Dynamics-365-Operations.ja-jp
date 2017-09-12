@@ -19,82 +19,82 @@ ms.author: prabhup
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
-ms.openlocfilehash: 4493c2f9e9e9dfe990f3b1670d3cd35e3bbaa38d
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: a1a254827051bf37f7b87d1db4ccf09ac47cbbfb
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="create-and-manage-attributes"></a>属性の作成と管理
+# <a name="create-and-manage-attributes"></a><span data-ttu-id="2960a-104">属性の作成と管理</span><span class="sxs-lookup"><span data-stu-id="2960a-104">Create and manage attributes</span></span>
 
 [!include[banner](includes/banner.md)]
 
 
-この記事は、Microsoft Dynamics 365 for Retail の属性について説明します。 [属性] により、ユーザー定義フィールドを使用して製品およびその特性を説明できます。
+<span data-ttu-id="2960a-105">この記事は、Microsoft Dynamics 365 for Retail の属性について説明します。</span><span class="sxs-lookup"><span data-stu-id="2960a-105">This article describes attributes in Microsoft Dynamics 365 for Retail.</span></span> <span data-ttu-id="2960a-106">[属性] により、ユーザー定義フィールドを使用して製品およびその特性を説明できます。</span><span class="sxs-lookup"><span data-stu-id="2960a-106">Attributes let you describe a product and its characteristics through user-defined fields.</span></span>
 
-[属性] により、ユーザー定義フィールドを使用して製品およびその特性を説明できます。 たとえば、製品のメモリ サイズとハード ディスク能力を指定できます。製品が [エネルギー スター] に準拠しているかどうかを示します。 属性は、製品カテゴリ、小売チャンネルなどのさまざまな小売エンティティに関連付けられており、それらに対して既定値を設定できます。 製品は、製品カテゴリまたは小売チャンネルに関連付けられる場合、それらの属性および属性の既定値を継承します。 既定値は、個々の製品レベルや小売チャンネル レベル、または小売カタログで上書きできます。
+<span data-ttu-id="2960a-107">[属性] により、ユーザー定義フィールドを使用して製品およびその特性を説明できます。</span><span class="sxs-lookup"><span data-stu-id="2960a-107">Attributes let you describe a product and its characteristics through user-defined fields.</span></span> <span data-ttu-id="2960a-108">たとえば、製品のメモリ サイズとハード ディスク能力を指定できます。製品が [エネルギー スター] に準拠しているかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="2960a-108">For example, you can specify the product's memory size and hard disk capacity, and indicate whether the product is Energy star–compliant.</span></span> <span data-ttu-id="2960a-109">属性は、製品カテゴリ、小売チャンネルなどのさまざまな小売エンティティに関連付けられており、それらに対して既定値を設定できます。</span><span class="sxs-lookup"><span data-stu-id="2960a-109">Attributes can be associated with various retail entities, such as product categories and retail channels, and default values can be set for them.</span></span> <span data-ttu-id="2960a-110">製品は、製品カテゴリまたは小売チャンネルに関連付けられる場合、それらの属性および属性の既定値を継承します。</span><span class="sxs-lookup"><span data-stu-id="2960a-110">Products inherit their attributes and the default values for those attributes when they are associated with product categories or retail channels.</span></span> <span data-ttu-id="2960a-111">既定値は、個々の製品レベルや小売チャンネル レベル、または小売カタログで上書きできます。</span><span class="sxs-lookup"><span data-stu-id="2960a-111">The default values can be overridden at the level of the individual product, at the retail channel level, or in a retail catalog.</span></span>
 
-#### <a name="examples"></a>例
+#### <a name="examples"></a><span data-ttu-id="2960a-112">例</span><span class="sxs-lookup"><span data-stu-id="2960a-112">Examples</span></span>
 
-| カテゴリ   | 属性                | 許容値          | 既定値 |
+| <span data-ttu-id="2960a-113">カテゴリ</span><span class="sxs-lookup"><span data-stu-id="2960a-113">Category</span></span>   | <span data-ttu-id="2960a-114">属性</span><span class="sxs-lookup"><span data-stu-id="2960a-114">Attribute</span></span>                | <span data-ttu-id="2960a-115">許容値</span><span class="sxs-lookup"><span data-stu-id="2960a-115">Permissible values</span></span>          | <span data-ttu-id="2960a-116">既定値</span><span class="sxs-lookup"><span data-stu-id="2960a-116">Default value</span></span> |
 |------------|--------------------------|-----------------------------|---------------|
-| テレビ & ビデオ | ブランド                    | [ブランド] の有効な値       | なし          |
-| テレビ         | スクリーン サイズ              | 20″–80″                     | なし          |
-| テレビ         | [垂直解像度]      | 480i、720p、1080i、または 1080p | 1080p         |
-| テレビ         | 画面の更新頻度      | 60hz、120hz、または 240hz       | 60hz          |
-| テレビ         | [HDMI 入力]              | 0–10                        | 3             |
-| テレビ         | [DVI 入力]               | 0–10                        | 1             |
-| テレビ         | [複合の入力]         | 0–10                        | 2             |
-| テレビ         | [コンポーネントの入力]         | 0–10                        | 1             |
-| LCD        | [3D 準備完了]                 | 要否                   | 有           |
-| LCD        | [3D 有効]               | 要否                   | 無            |
-| プラズマ     | [作業開始の温度]      | 32–110 度              | 32            |
-| プラズマ     | [作業終了の温度]        | 32–110 度              | 100           |
-| プロジェクション | プロジェクションの管の保証 | 6、12、または 18 か月         | 12            |
-| プロジェクション | プロジェクションの管の #    | 1–5                         | 3             |
+| <span data-ttu-id="2960a-117">テレビ & ビデオ</span><span class="sxs-lookup"><span data-stu-id="2960a-117">TV & Video</span></span> | <span data-ttu-id="2960a-118">ブランド</span><span class="sxs-lookup"><span data-stu-id="2960a-118">Brand</span></span>                    | <span data-ttu-id="2960a-119">[ブランド] の有効な値</span><span class="sxs-lookup"><span data-stu-id="2960a-119">Any valid Brand value</span></span>       | <span data-ttu-id="2960a-120">なし</span><span class="sxs-lookup"><span data-stu-id="2960a-120">None</span></span>          |
+| <span data-ttu-id="2960a-121">テレビ</span><span class="sxs-lookup"><span data-stu-id="2960a-121">TV</span></span>         | <span data-ttu-id="2960a-122">スクリーン サイズ</span><span class="sxs-lookup"><span data-stu-id="2960a-122">Screen Size</span></span>              | <span data-ttu-id="2960a-123">20″–80″</span><span class="sxs-lookup"><span data-stu-id="2960a-123">20″–80″</span></span>                     | <span data-ttu-id="2960a-124">なし</span><span class="sxs-lookup"><span data-stu-id="2960a-124">None</span></span>          |
+| <span data-ttu-id="2960a-125">テレビ</span><span class="sxs-lookup"><span data-stu-id="2960a-125">TV</span></span>         | <span data-ttu-id="2960a-126">[垂直解像度]</span><span class="sxs-lookup"><span data-stu-id="2960a-126">Vertical Resolution</span></span>      | <span data-ttu-id="2960a-127">480i、720p、1080i、または 1080p</span><span class="sxs-lookup"><span data-stu-id="2960a-127">480i, 720p, 1080i, or 1080p</span></span> | <span data-ttu-id="2960a-128">1080p</span><span class="sxs-lookup"><span data-stu-id="2960a-128">1080p</span></span>         |
+| <span data-ttu-id="2960a-129">テレビ</span><span class="sxs-lookup"><span data-stu-id="2960a-129">TV</span></span>         | <span data-ttu-id="2960a-130">画面の更新頻度</span><span class="sxs-lookup"><span data-stu-id="2960a-130">Screen Refresh Rate</span></span>      | <span data-ttu-id="2960a-131">60hz、120hz、または 240hz</span><span class="sxs-lookup"><span data-stu-id="2960a-131">60hz, 120hz, or 240hz</span></span>       | <span data-ttu-id="2960a-132">60hz</span><span class="sxs-lookup"><span data-stu-id="2960a-132">60hz</span></span>          |
+| <span data-ttu-id="2960a-133">テレビ</span><span class="sxs-lookup"><span data-stu-id="2960a-133">TV</span></span>         | <span data-ttu-id="2960a-134">[HDMI 入力]</span><span class="sxs-lookup"><span data-stu-id="2960a-134">HDMI Inputs</span></span>              | <span data-ttu-id="2960a-135">0–10</span><span class="sxs-lookup"><span data-stu-id="2960a-135">0–10</span></span>                        | <span data-ttu-id="2960a-136">3</span><span class="sxs-lookup"><span data-stu-id="2960a-136">3</span></span>             |
+| <span data-ttu-id="2960a-137">テレビ</span><span class="sxs-lookup"><span data-stu-id="2960a-137">TV</span></span>         | <span data-ttu-id="2960a-138">[DVI 入力]</span><span class="sxs-lookup"><span data-stu-id="2960a-138">DVI Inputs</span></span>               | <span data-ttu-id="2960a-139">0–10</span><span class="sxs-lookup"><span data-stu-id="2960a-139">0–10</span></span>                        | <span data-ttu-id="2960a-140">1</span><span class="sxs-lookup"><span data-stu-id="2960a-140">1</span></span>             |
+| <span data-ttu-id="2960a-141">テレビ</span><span class="sxs-lookup"><span data-stu-id="2960a-141">TV</span></span>         | <span data-ttu-id="2960a-142">[複合の入力]</span><span class="sxs-lookup"><span data-stu-id="2960a-142">Composite Inputs</span></span>         | <span data-ttu-id="2960a-143">0–10</span><span class="sxs-lookup"><span data-stu-id="2960a-143">0–10</span></span>                        | <span data-ttu-id="2960a-144">2</span><span class="sxs-lookup"><span data-stu-id="2960a-144">2</span></span>             |
+| <span data-ttu-id="2960a-145">テレビ</span><span class="sxs-lookup"><span data-stu-id="2960a-145">TV</span></span>         | <span data-ttu-id="2960a-146">[コンポーネントの入力]</span><span class="sxs-lookup"><span data-stu-id="2960a-146">Component Inputs</span></span>         | <span data-ttu-id="2960a-147">0–10</span><span class="sxs-lookup"><span data-stu-id="2960a-147">0–10</span></span>                        | <span data-ttu-id="2960a-148">1</span><span class="sxs-lookup"><span data-stu-id="2960a-148">1</span></span>             |
+| <span data-ttu-id="2960a-149">LCD</span><span class="sxs-lookup"><span data-stu-id="2960a-149">LCD</span></span>        | <span data-ttu-id="2960a-150">[3D 準備完了]</span><span class="sxs-lookup"><span data-stu-id="2960a-150">3D Ready</span></span>                 | <span data-ttu-id="2960a-151">要否</span><span class="sxs-lookup"><span data-stu-id="2960a-151">Yes or No</span></span>                   | <span data-ttu-id="2960a-152">有</span><span class="sxs-lookup"><span data-stu-id="2960a-152">Yes</span></span>           |
+| <span data-ttu-id="2960a-153">LCD</span><span class="sxs-lookup"><span data-stu-id="2960a-153">LCD</span></span>        | <span data-ttu-id="2960a-154">[3D 有効]</span><span class="sxs-lookup"><span data-stu-id="2960a-154">3D Enabled</span></span>               | <span data-ttu-id="2960a-155">要否</span><span class="sxs-lookup"><span data-stu-id="2960a-155">Yes or No</span></span>                   | <span data-ttu-id="2960a-156">無</span><span class="sxs-lookup"><span data-stu-id="2960a-156">No</span></span>            |
+| <span data-ttu-id="2960a-157">プラズマ</span><span class="sxs-lookup"><span data-stu-id="2960a-157">Plasma</span></span>     | <span data-ttu-id="2960a-158">[作業開始の温度]</span><span class="sxs-lookup"><span data-stu-id="2960a-158">Operating Temp From</span></span>      | <span data-ttu-id="2960a-159">32–110 度</span><span class="sxs-lookup"><span data-stu-id="2960a-159">32–110 degrees</span></span>              | <span data-ttu-id="2960a-160">32</span><span class="sxs-lookup"><span data-stu-id="2960a-160">32</span></span>            |
+| <span data-ttu-id="2960a-161">プラズマ</span><span class="sxs-lookup"><span data-stu-id="2960a-161">Plasma</span></span>     | <span data-ttu-id="2960a-162">[作業終了の温度]</span><span class="sxs-lookup"><span data-stu-id="2960a-162">Operating Temp To</span></span>        | <span data-ttu-id="2960a-163">32–110 度</span><span class="sxs-lookup"><span data-stu-id="2960a-163">32–110 degrees</span></span>              | <span data-ttu-id="2960a-164">100</span><span class="sxs-lookup"><span data-stu-id="2960a-164">100</span></span>           |
+| <span data-ttu-id="2960a-165">プロジェクション</span><span class="sxs-lookup"><span data-stu-id="2960a-165">Projection</span></span> | <span data-ttu-id="2960a-166">プロジェクションの管の保証</span><span class="sxs-lookup"><span data-stu-id="2960a-166">Projection Tube Warranty</span></span> | <span data-ttu-id="2960a-167">6、12、または 18 か月</span><span class="sxs-lookup"><span data-stu-id="2960a-167">6, 12, or 18 months</span></span>         | <span data-ttu-id="2960a-168">12</span><span class="sxs-lookup"><span data-stu-id="2960a-168">12</span></span>            |
+| <span data-ttu-id="2960a-169">プロジェクション</span><span class="sxs-lookup"><span data-stu-id="2960a-169">Projection</span></span> | <span data-ttu-id="2960a-170">プロジェクションの管の #</span><span class="sxs-lookup"><span data-stu-id="2960a-170"># of Projection Tubes</span></span>    | <span data-ttu-id="2960a-171">1–5</span><span class="sxs-lookup"><span data-stu-id="2960a-171">1–5</span></span>                         | <span data-ttu-id="2960a-172">3</span><span class="sxs-lookup"><span data-stu-id="2960a-172">3</span></span>             |
 
 
-## <a name="attribute-type"></a>属性タイプ
-  [![attributes-fixed-copy](./media/attributes-fixed-copy.png)](./media/attributes-fixed-copy.png) 
+## <a name="attribute-type"></a><span data-ttu-id="2960a-173">属性タイプ</span><span class="sxs-lookup"><span data-stu-id="2960a-173">Attribute type</span></span>
+  <span data-ttu-id="2960a-174">[![attributes-fixed-copy](./media/attributes-fixed-copy.png)](./media/attributes-fixed-copy.png)</span><span class="sxs-lookup"><span data-stu-id="2960a-174">[![attributes-fixed-copy](./media/attributes-fixed-copy.png)](./media/attributes-fixed-copy.png)</span></span> 
   
-属性は、属性タイプをベースにしています。 属性タイプは、特定の属性に入力できるデータのタイプを識別します。 現在、Microsoft Dynamics 365 for Retail では、次の属性タイプをサポートしています :
+<span data-ttu-id="2960a-175">属性は、属性タイプをベースにしています。</span><span class="sxs-lookup"><span data-stu-id="2960a-175">Attributes are based on attribute types.</span></span> <span data-ttu-id="2960a-176">属性タイプは、特定の属性に入力できるデータのタイプを識別します。</span><span class="sxs-lookup"><span data-stu-id="2960a-176">Attribute types identify the type of data that can be entered for a specific attribute.</span></span> <span data-ttu-id="2960a-177">現在、Microsoft Dynamics 365 for Retail では、次の属性タイプをサポートしています :</span><span class="sxs-lookup"><span data-stu-id="2960a-177">Currently, Microsoft Dynamics 365 for Retail supports the following attribute types:</span></span>
 
--   [**通貨**] – この属性タイプは、通貨の値をサポートします。 これはバインドできますし (値の範囲をサポートできる) 開いたままにもできます。
--   [**日時**] – この属性タイプは、日付と時刻の値をサポートします。 これはバインドできますし (値の範囲をサポートできる) 開いたままにもできます。
--   [**小数点**] – この属性タイプは、小数点以下を含む数値をサポートします。 また、測定単位もサポートします。 これはバインドできますし、(値の範囲をサポートできる) 開いたままにもできます。
--   [**整数**] – この属性タイプは、数値の値をサポートします。 また、測定単位もサポートします。 これはバインドできますし (値の範囲をサポートできる) 開いたままにもできます。
--   [**テキスト**] – この属性タイプは、テキストの値をサポートします。 また、事前定義された一連の使用可能な値 (列挙型) がサポートされます。
--   **ブール値** – この属性タイプは、バイナリ値をサポートします (**true**/**false**)。
--   [**参照**]
+-   <span data-ttu-id="2960a-178">[**通貨**] – この属性タイプは、通貨の値をサポートします。</span><span class="sxs-lookup"><span data-stu-id="2960a-178">**Currency** – This attribute type supports currency values.</span></span> <span data-ttu-id="2960a-179">これはバインドできますし (値の範囲をサポートできる) 開いたままにもできます。</span><span class="sxs-lookup"><span data-stu-id="2960a-179">It can be bounded (that is, it can support a value range), or it can be left open.</span></span>
+-   <span data-ttu-id="2960a-180">[**日時**] – この属性タイプは、日付と時刻の値をサポートします。</span><span class="sxs-lookup"><span data-stu-id="2960a-180">**DateTime** – This attribute type supports date and time values.</span></span> <span data-ttu-id="2960a-181">これはバインドできますし (値の範囲をサポートできる) 開いたままにもできます。</span><span class="sxs-lookup"><span data-stu-id="2960a-181">It can be bounded (that is, it can support a value range), or it can be left open.</span></span>
+-   <span data-ttu-id="2960a-182">[**小数点**] – この属性タイプは、小数点以下を含む数値をサポートします。</span><span class="sxs-lookup"><span data-stu-id="2960a-182">**Decimal** – This attribute type supports numerical values that include decimal places.</span></span> <span data-ttu-id="2960a-183">また、測定単位もサポートします。</span><span class="sxs-lookup"><span data-stu-id="2960a-183">It also supports units of measure.</span></span> <span data-ttu-id="2960a-184">これはバインドできますし、(値の範囲をサポートできる) 開いたままにもできます。</span><span class="sxs-lookup"><span data-stu-id="2960a-184">It can be bounded (that is, it can support a value range), or it can be left open.</span></span>
+-   <span data-ttu-id="2960a-185">[**整数**] – この属性タイプは、数値の値をサポートします。</span><span class="sxs-lookup"><span data-stu-id="2960a-185">**Integer** – This attribute type supports numerical values.</span></span> <span data-ttu-id="2960a-186">また、測定単位もサポートします。</span><span class="sxs-lookup"><span data-stu-id="2960a-186">It also supports units of measure.</span></span> <span data-ttu-id="2960a-187">これはバインドできますし (値の範囲をサポートできる) 開いたままにもできます。</span><span class="sxs-lookup"><span data-stu-id="2960a-187">It can be bounded (that is, it can support a value range), or it can be left open.</span></span>
+-   <span data-ttu-id="2960a-188">[**テキスト**] – この属性タイプは、テキストの値をサポートします。</span><span class="sxs-lookup"><span data-stu-id="2960a-188">**Text** – This attribute type supports text values.</span></span> <span data-ttu-id="2960a-189">また、事前定義された一連の使用可能な値 (列挙型) がサポートされます。</span><span class="sxs-lookup"><span data-stu-id="2960a-189">It also supports a predefined set of possible values (enumeration).</span></span>
+-   <span data-ttu-id="2960a-190">**ブール値** – この属性タイプは、バイナリ値をサポートします (**true**/**false**)。</span><span class="sxs-lookup"><span data-stu-id="2960a-190">**Boolean** – This attribute type supports binary values (**true**/**false**).</span></span>
+-   <span data-ttu-id="2960a-191">[**参照**]</span><span class="sxs-lookup"><span data-stu-id="2960a-191">**Reference**.</span></span>
 
-## <a name="attribute"></a>属性
-  [![createandmanageattribute-8](./media/createandmanageattribute-8.png)](./media/createandmanageattribute-8.png) 名前、フレンドリ名、説明、ヘルプ テキストに加えて、次の情報のうち 1 つ以上を属性にキャプチャすることができます :
+## <a name="attribute"></a><span data-ttu-id="2960a-192">属性</span><span class="sxs-lookup"><span data-stu-id="2960a-192">Attribute</span></span>
+  <span data-ttu-id="2960a-193">[![createandmanageattribute-8](./media/createandmanageattribute-8.png)](./media/createandmanageattribute-8.png) 名前、フレンドリ名、説明、ヘルプ テキストに加えて、次の情報のうち 1 つ以上を属性にキャプチャすることができます :</span><span class="sxs-lookup"><span data-stu-id="2960a-193">[![createandmanageattribute-8](./media/createandmanageattribute-8.png)](./media/createandmanageattribute-8.png) In addition to the name, friendly name, description, and Help text, one or more of the following types of information can be captured for an attribute:</span></span>
 
--   既定値
--   属性の検索、絞り込み、並べ替えができるかどうかを示すメタデータなどの属性メタデータ
+-   <span data-ttu-id="2960a-194">既定値</span><span class="sxs-lookup"><span data-stu-id="2960a-194">Default value</span></span>
+-   <span data-ttu-id="2960a-195">属性の検索、絞り込み、並べ替えができるかどうかを示すメタデータなどの属性メタデータ</span><span class="sxs-lookup"><span data-stu-id="2960a-195">Attribute metadata, such as metadata that indicates whether the attribute can be searched, refined, or sorted</span></span>
 
-## <a name="attribute-group"></a>属性グループ
-  [![createandmanageattribute-10](./media/createandmanageattribute-10.png)](./media/createandmanageattribute-10.png) 属性が定義されると、属性グループにグループ化できます。 属性グループは、個々の属性のグループを提供し、小売カテゴリまたは小売チャンネルに割り当てることができます。
+## <a name="attribute-group"></a><span data-ttu-id="2960a-196">属性グループ</span><span class="sxs-lookup"><span data-stu-id="2960a-196">Attribute group</span></span>
+  <span data-ttu-id="2960a-197">[![createandmanageattribute-10](./media/createandmanageattribute-10.png)](./media/createandmanageattribute-10.png) 属性が定義されると、属性グループにグループ化できます。</span><span class="sxs-lookup"><span data-stu-id="2960a-197">[![createandmanageattribute-10](./media/createandmanageattribute-10.png)](./media/createandmanageattribute-10.png) After attributes have been defined, they can be grouped into attribute groups.</span></span> <span data-ttu-id="2960a-198">属性グループは、個々の属性のグループを提供し、小売カテゴリまたは小売チャンネルに割り当てることができます。</span><span class="sxs-lookup"><span data-stu-id="2960a-198">Attribute groups provide groupings of individual attributes, and can be assigned to retail categories or retail channels.</span></span>
 
-## <a name="assigning-attribute-groups-to-retail-categories"></a>小売カテゴリへの属性グループの割り当て
-  [![createandmanageattribute-12](./media/createandmanageattribute-12.png)](./media/createandmanageattribute-12.png) 1 つ以上の属性グループを小売製品カテゴリ階層のカテゴリ ノードに関連付けることができます。 製品を分類されている場合、属性グループに含まれる属性を継承します。
+## <a name="assigning-attribute-groups-to-retail-categories"></a><span data-ttu-id="2960a-199">小売カテゴリへの属性グループの割り当て</span><span class="sxs-lookup"><span data-stu-id="2960a-199">Assigning attribute groups to retail categories</span></span>
+  <span data-ttu-id="2960a-200">[![createandmanageattribute-12](./media/createandmanageattribute-12.png)](./media/createandmanageattribute-12.png) 1 つ以上の属性グループを小売製品カテゴリ階層のカテゴリ ノードに関連付けることができます。</span><span class="sxs-lookup"><span data-stu-id="2960a-200">[![createandmanageattribute-12](./media/createandmanageattribute-12.png)](./media/createandmanageattribute-12.png) One or more attribute groups can be associated with category nodes in the retail product category hierarchy.</span></span> <span data-ttu-id="2960a-201">製品を分類されている場合、属性グループに含まれる属性を継承します。</span><span class="sxs-lookup"><span data-stu-id="2960a-201">When products have been categorized, they inherit the attributes that are included in the attribute groups.</span></span>
 
-## <a name="assigning-attribute-groups-to-retail-stores"></a>小売店舗への属性グループの割り当て
-  [![createandmanageattribute-13-1024x576](./media/createandmanageattribute-13-1024x576.png)](./media/createandmanageattribute-13-1024x576.png) 1 つ以上の属性グループを小売店舗階層の 1 つ以上の小売店舗に関連付けることができます。 製品が特定の小売店舗に対して強化されている場合、属性グループに含まれる属性を継承します。
+## <a name="assigning-attribute-groups-to-retail-stores"></a><span data-ttu-id="2960a-202">小売店舗への属性グループの割り当て</span><span class="sxs-lookup"><span data-stu-id="2960a-202">Assigning attribute groups to retail stores</span></span>
+  <span data-ttu-id="2960a-203">[![createandmanageattribute-13-1024x576](./media/createandmanageattribute-13-1024x576.png)](./media/createandmanageattribute-13-1024x576.png) 1 つ以上の属性グループを小売店舗階層の 1 つ以上の小売店舗に関連付けることができます。</span><span class="sxs-lookup"><span data-stu-id="2960a-203">[![createandmanageattribute-13-1024x576](./media/createandmanageattribute-13-1024x576.png)](./media/createandmanageattribute-13-1024x576.png) One or more attribute groups can be associated with one or more retail stores in the retail stores hierarchy.</span></span> <span data-ttu-id="2960a-204">製品が特定の小売店舗に対して強化されている場合、属性グループに含まれる属性を継承します。</span><span class="sxs-lookup"><span data-stu-id="2960a-204">When products have been enriched for specific retail stores, they inherit the attributes that are included in the attribute groups.</span></span>
 
-## <a name="overriding-attribute-values"></a>属性値の上書き
-### <a name="at-the-product-level"></a>製品レベルで
+## <a name="overriding-attribute-values"></a><span data-ttu-id="2960a-205">属性値の上書き</span><span class="sxs-lookup"><span data-stu-id="2960a-205">Overriding attribute values</span></span>
+### <a name="at-the-product-level"></a><span data-ttu-id="2960a-206">製品レベルで</span><span class="sxs-lookup"><span data-stu-id="2960a-206">At the product level</span></span>
 
-  [![createandmanageattribute-14-1024x576](./media/createandmanageattribute-14-1024x576.png)](./media/createandmanageattribute-14-1024x576.png) 属性の既定値を製品レベルで上書きできます (個々の製品にに対して)。
+  <span data-ttu-id="2960a-207">[![createandmanageattribute-14-1024x576](./media/createandmanageattribute-14-1024x576.png)](./media/createandmanageattribute-14-1024x576.png) 属性の既定値を製品レベルで上書きできます (個々の製品にに対して)。</span><span class="sxs-lookup"><span data-stu-id="2960a-207">[![createandmanageattribute-14-1024x576](./media/createandmanageattribute-14-1024x576.png)](./media/createandmanageattribute-14-1024x576.png) The default values of attributes can be overridden at the product level (that is, for individual products).</span></span>
 
-### <a name="in-a-retail-catalog"></a>小売カタログで
+### <a name="in-a-retail-catalog"></a><span data-ttu-id="2960a-208">小売カタログで</span><span class="sxs-lookup"><span data-stu-id="2960a-208">In a retail catalog</span></span>
 
-  [![createandmanageattribute-2](./media/createandmanageattribute-2.png)](./media/createandmanageattribute-2.png) 属性の既定値を、特定の小売チャンネルを対象とする特定のカタログの個々の製品に対して上書きできます。
+  <span data-ttu-id="2960a-209">[![createandmanageattribute-2](./media/createandmanageattribute-2.png)](./media/createandmanageattribute-2.png) 属性の既定値を、特定の小売チャンネルを対象とする特定のカタログの個々の製品に対して上書きできます。</span><span class="sxs-lookup"><span data-stu-id="2960a-209">[![createandmanageattribute-2](./media/createandmanageattribute-2.png)](./media/createandmanageattribute-2.png) The default values of attributes can be overridden for individual products in specific catalogs that are targeted for specific retail channels.</span></span>
 
-### <a name="at-the-retail-channel-level"></a>小売チャネル レベルで
+### <a name="at-the-retail-channel-level"></a><span data-ttu-id="2960a-210">小売チャネル レベルで</span><span class="sxs-lookup"><span data-stu-id="2960a-210">At the retail channel level</span></span>
 
-  [![createandmanageattribute-1](./media/createandmanageattribute-1.jpg)](./media/createandmanageattribute-1.jpg) 属性の既定値を、特定の小売チャンネルを対象とする特定のカタログの個々の製品に対して上書きできます。
+  <span data-ttu-id="2960a-211">[![createandmanageattribute-1](./media/createandmanageattribute-1.jpg)](./media/createandmanageattribute-1.jpg) 属性の既定値を、特定の小売チャンネルを対象とする特定のカタログの個々の製品に対して上書きできます。</span><span class="sxs-lookup"><span data-stu-id="2960a-211">[![createandmanageattribute-1](./media/createandmanageattribute-1.jpg)](./media/createandmanageattribute-1.jpg) The default values of attributes can be overridden for individual products in specific catalogs that are targeted for specific retail channels.</span></span>
 
 
 

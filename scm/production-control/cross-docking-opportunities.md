@@ -18,112 +18,112 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: b424be5396df9434cd799ca7e7e9342a7c476e29
-ms.openlocfilehash: 231808260eeab73120bab43558ab5745f9fdbe46
+ms.sourcegitcommit: 97d374230cc6e833b9f585de000e1252f2a78b9d
+ms.openlocfilehash: a1e20eb2bded903949a2586b9273dea63476f372
 ms.contentlocale: ja-jp
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/30/2017
 
 ---
 
-# <a name="cross-docking-from-production-orders-to-outbound-docks"></a>製造オーダーから出荷ドックへのクロスドッキング
+# <a name="cross-docking-from-production-orders-to-outbound-docks"></a><span data-ttu-id="e9014-103">製造オーダーから出荷ドックへのクロスドッキング</span><span class="sxs-lookup"><span data-stu-id="e9014-103">Cross-docking from production orders to outbound docks</span></span>
 
-このトピックでは、生産ラインから出荷輸送ドックまでの完了レポートがされているクロスドッキング材料のプロセスを管理する方法について説明します。
+<span data-ttu-id="e9014-104">このトピックでは、生産ラインから出荷輸送ドックまでの完了レポートがされているクロスドッキング材料のプロセスを管理する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="e9014-104">This topic describes how to manage the process of cross-docking material that is being reported as finished from a production line to an outbound transportation dock.</span></span>
 
-<a name="introduction"></a>はじめに
+<a name="introduction"></a><span data-ttu-id="e9014-105">はじめに</span><span class="sxs-lookup"><span data-stu-id="e9014-105">Introduction</span></span>
 ------------
 
-生産から出荷場所へのクロスドッキングは、大量生産しており、生産ラインから完了レポートされ次第完成品を出荷することを理想とするメーカーに適しています。 製造サイトで在庫を増やすのではなく、物理的に顧客需要の近くに位置した物流センターに製品を出荷することを目的としています。
+<span data-ttu-id="e9014-106">生産から出荷場所へのクロスドッキングは、大量生産しており、生産ラインから完了レポートされ次第完成品を出荷することを理想とするメーカーに適しています。</span><span class="sxs-lookup"><span data-stu-id="e9014-106">Cross-docking from production to an outbound location is relevant for manufacturers who produce high volume and ideally want to ship the finished products as soon as they are reported as finished from the production lines.</span></span> <span data-ttu-id="e9014-107">製造サイトで在庫を増やすのではなく、物理的に顧客需要の近くに位置した物流センターに製品を出荷することを目的としています。</span><span class="sxs-lookup"><span data-stu-id="e9014-107">The purpose is to ship the products to distribution centers that are physically located close to the customer demand, rather than build up inventory at the manufacturing site.</span></span>
 
-製品に対する当座の需要がない場合、製造サイトの倉庫場所に保管する必要があります。 このプロセスは *便乗クロスドッキング* とも呼ばれますが、それは製品出荷の需要があった場合には、内部保管用にその製品をしまい込むのではなく、その機会に便乗するべきだということを示しています。
+<span data-ttu-id="e9014-108">製品に対する当座の需要がない場合、製造サイトの倉庫場所に保管する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e9014-108">In case there is no immediate demand for a product, it must be put away to warehouse locations on the manufacturing site.</span></span> <span data-ttu-id="e9014-109">このプロセスは *便乗クロスドッキング* とも呼ばれますが、それは製品出荷の需要があった場合には、内部保管用にその製品をしまい込むのではなく、その機会に便乗するべきだということを示しています。</span><span class="sxs-lookup"><span data-stu-id="e9014-109">This process is also known as *opportunistic cross-docking*, which indicates that if there is a demand for shipping the product, then this opportunity should be used instead of putting the product away for internal storage.</span></span>
 
-次の例では、生産ライン (2) の最後に開始するフローの 3 つのバリエーションを示します。
+<span data-ttu-id="e9014-110">次の例では、生産ライン (2) の最後に開始するフローの 3 つのバリエーションを示します。</span><span class="sxs-lookup"><span data-stu-id="e9014-110">The following example shows three variations of a flow that starts at the end of the production line (2).</span></span>
 
-製品が生産出荷場所 (3) に完了レポートされると、フォーク リフト ドライバーは、この場所 (3) でパレットをピックアップします。
+<span data-ttu-id="e9014-111">製品が生産出荷場所 (3) に完了レポートされると、フォーク リフト ドライバーは、この場所 (3) でパレットをピックアップします。</span><span class="sxs-lookup"><span data-stu-id="e9014-111">A product is reported as finished to the production output location (3) and a fork lift driver will pick up the pallet at this location (3).</span></span>
 
--   製品を生産 (1) から物流センター (7) へ移す計画活動 (6) がある場合、トラック ドライバーはシステムによりパレットをベイ ドア場所 (4) のそばに置くよう指示されます。
--   既にトレーラーがそのベイ ドアに割り当てられている場合、トラック ドライバーはそのトレーラに直接製品を積み込むよう指示されます。
--   製品を移す計画活動がない場合、フォーク リフト ドライバは製品を内部倉庫 (5) 内の場所に保管するよう指示されます。
+-   <span data-ttu-id="e9014-112">製品を生産 (1) から物流センター (7) へ移す計画活動 (6) がある場合、トラック ドライバーはシステムによりパレットをベイ ドア場所 (4) のそばに置くよう指示されます。</span><span class="sxs-lookup"><span data-stu-id="e9014-112">If there is a planned activity (6) for transferring the product from manufacturing (1) to a distribution center (7), then the truck driver will be directed by the system to put the pallet by a bay-door location (4).</span></span>
+-   <span data-ttu-id="e9014-113">既にトレーラーがそのベイ ドアに割り当てられている場合、トラック ドライバーはそのトレーラに直接製品を積み込むよう指示されます。</span><span class="sxs-lookup"><span data-stu-id="e9014-113">If a trailer is already assigned to the bay door, the truck driver will be directed to load the product directly to the trailer.</span></span>
+-   <span data-ttu-id="e9014-114">製品を移す計画活動がない場合、フォーク リフト ドライバは製品を内部倉庫 (5) 内の場所に保管するよう指示されます。</span><span class="sxs-lookup"><span data-stu-id="e9014-114">If there is no planned activity for transferring the product, the fork lift driver will be directed to put the product away to a location in the internal warehouse (5).</span></span>
 
 [![](./media/scenario1.png)](./media/scenario1.png)
 
-## <a name="configure-cross-docking"></a>クロスドッキングのコンフィギュレーション
-**作業ポリシー** でクロスドッキング プロセスをコンフィギュレーションします。 作業ポリシーには、ワーク オーダー タイプ、場所、および製品が含まれます。 次の例では、クロスドッキングは製品 X と場所 Y 用にコンフィギュレーションされています。
+## <a name="configure-cross-docking"></a><span data-ttu-id="e9014-115">クロスドッキングのコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="e9014-115">Configure cross-docking</span></span>
+<span data-ttu-id="e9014-116">**作業ポリシー** でクロスドッキング プロセスをコンフィギュレーションします。</span><span class="sxs-lookup"><span data-stu-id="e9014-116">You configure the cross-docking process in **work policies**.</span></span> <span data-ttu-id="e9014-117">作業ポリシーには、ワーク オーダー タイプ、場所、および製品が含まれます。</span><span class="sxs-lookup"><span data-stu-id="e9014-117">A work policy includes a work order type, location, and product.</span></span> <span data-ttu-id="e9014-118">次の例では、クロスドッキングは製品 X と場所 Y 用にコンフィギュレーションされています。</span><span class="sxs-lookup"><span data-stu-id="e9014-118">In the following example, cross-docking is configured for product X and location Y.</span></span>
 
-#### <a name="work-order-types"></a>ワーク オーダー タイプ
+#### <a name="work-order-types"></a><span data-ttu-id="e9014-119">ワーク オーダー タイプ</span><span class="sxs-lookup"><span data-stu-id="e9014-119">Work order types</span></span>
 
--   ワーク オーダー タイプ: 完成品のプット アウェイ
--   作業作成方法: クロスドッキング
--   クロスドッキング ポリシー名: 移動オーダー
+-   <span data-ttu-id="e9014-120">ワーク オーダー タイプ: 完成品のプット アウェイ</span><span class="sxs-lookup"><span data-stu-id="e9014-120">Work order type: Finished goods put way</span></span>
+-   <span data-ttu-id="e9014-121">作業作成方法: クロスドッキング</span><span class="sxs-lookup"><span data-stu-id="e9014-121">Work creation method: Cross docking</span></span>
+-   <span data-ttu-id="e9014-122">クロスドッキング ポリシー名: 移動オーダー</span><span class="sxs-lookup"><span data-stu-id="e9014-122">Cross docking policy name: Transfer orders</span></span>
 
-#### <a name="inventory-locations"></a>在庫場所
+#### <a name="inventory-locations"></a><span data-ttu-id="e9014-123">在庫場所</span><span class="sxs-lookup"><span data-stu-id="e9014-123">Inventory locations</span></span>
 
--   倉庫: 51
--   場所: Y
+-   <span data-ttu-id="e9014-124">倉庫: 51</span><span class="sxs-lookup"><span data-stu-id="e9014-124">Warehouse: 51</span></span>
+-   <span data-ttu-id="e9014-125">場所: Y</span><span class="sxs-lookup"><span data-stu-id="e9014-125">Location: Y</span></span>
 
-#### <a name="products"></a>製品
+#### <a name="products"></a><span data-ttu-id="e9014-126">製品</span><span class="sxs-lookup"><span data-stu-id="e9014-126">Products</span></span>
 
--   品目番号: X
+-   <span data-ttu-id="e9014-127">品目番号: X</span><span class="sxs-lookup"><span data-stu-id="e9014-127">Item number: X</span></span>
 
-現在、クロスドッキングは 2 つのワーク オーダー タイプでのみコンフィギュレーションすることができます。
+<span data-ttu-id="e9014-128">現在、クロスドッキングは 2 つのワーク オーダー タイプでのみコンフィギュレーションすることができます。</span><span class="sxs-lookup"><span data-stu-id="e9014-128">Currently, cross-docking can be configured for only two work order types:</span></span>
 
--   完成品のプット アウェイ
--   連産物と副産物のプット アウェイ
+-   <span data-ttu-id="e9014-129">完成品のプット アウェイ</span><span class="sxs-lookup"><span data-stu-id="e9014-129">Finished goods put away</span></span>
+-   <span data-ttu-id="e9014-130">連産物と副産物のプット アウェイ</span><span class="sxs-lookup"><span data-stu-id="e9014-130">Co-product and by-product put away</span></span>
 
-**クロスドッキング ポリシー** では、どのドキュメント タイプがクロスドッキングに適用可能かを定義します。 現在、サポートされている唯一のドキュメント タイプは **移動オーダー** です。 次の例では、クロスドッキング ポリシーのコンフィギュレーションを示します。
+<span data-ttu-id="e9014-131">**クロスドッキング ポリシー** では、どのドキュメント タイプがクロスドッキングに適用可能かを定義します。</span><span class="sxs-lookup"><span data-stu-id="e9014-131">In the **cross-docking policy**, you define which document types are applicable for cross-docking.</span></span> <span data-ttu-id="e9014-132">現在、サポートされている唯一のドキュメント タイプは **移動オーダー** です。</span><span class="sxs-lookup"><span data-stu-id="e9014-132">Currently, the only document type that is supported is **Transfer orders**.</span></span> <span data-ttu-id="e9014-133">次の例では、クロスドッキング ポリシーのコンフィギュレーションを示します。</span><span class="sxs-lookup"><span data-stu-id="e9014-133">The following example shows the configuration of a cross-docking policy.</span></span>
 
-### <a name="cross-docking-policy-name-transfer-order"></a>クロスドッキング ポリシー名: 移動オーダー
+### <a name="cross-docking-policy-name-transfer-order"></a><span data-ttu-id="e9014-134">クロスドッキング ポリシー名: 移動オーダー</span><span class="sxs-lookup"><span data-stu-id="e9014-134">Cross-docking policy name: Transfer order</span></span>
 
--   順序番号: 10
--   ワーク オーダー タイプ: 移動の出庫
--   クロスドッキング需要には場所が必要です: いいえ
--   クロスドッキング戦略: 日時
+-   <span data-ttu-id="e9014-135">順序番号: 10</span><span class="sxs-lookup"><span data-stu-id="e9014-135">Sequence number: 10</span></span>
+-   <span data-ttu-id="e9014-136">ワーク オーダー タイプ: 移動の出庫</span><span class="sxs-lookup"><span data-stu-id="e9014-136">Work order type: Transfer issue</span></span>
+-   <span data-ttu-id="e9014-137">クロスドッキング需要には場所が必要です: いいえ</span><span class="sxs-lookup"><span data-stu-id="e9014-137">Cross docking demand requires location: False</span></span>
+-   <span data-ttu-id="e9014-138">クロスドッキング戦略: 日時</span><span class="sxs-lookup"><span data-stu-id="e9014-138">Cross docking strategy: Date and time</span></span>
 
-### <a name="sequence-number"></a>一連番号
+### <a name="sequence-number"></a><span data-ttu-id="e9014-139">一連番号</span><span class="sxs-lookup"><span data-stu-id="e9014-139">Sequence number</span></span>
 
-**順序番号** はドキュメント タイプの優先順位を示します。 現在、**移動の出庫** がサポートされている唯一のタイプです。 したがって、複数のワーク オーダー タイプがサポートされている場合にのみ、順序番号が意味を持つことになります。
+<span data-ttu-id="e9014-140">**順序番号** はドキュメント タイプの優先順位を示します。</span><span class="sxs-lookup"><span data-stu-id="e9014-140">The **sequence number** indicates the priority of the document type.</span></span> <span data-ttu-id="e9014-141">現在、**移動の出庫** がサポートされている唯一のタイプです。</span><span class="sxs-lookup"><span data-stu-id="e9014-141">Currently, **Transfer issue** is the only type that is supported.</span></span> <span data-ttu-id="e9014-142">したがって、複数のワーク オーダー タイプがサポートされている場合にのみ、順序番号が意味を持つことになります。</span><span class="sxs-lookup"><span data-stu-id="e9014-142">Therefore, the sequence number will become relevant only when more work order types are supported.</span></span>
 
-### <a name="cross-docking-policy"></a>クロスドッキング ポリシー
+### <a name="cross-docking-policy"></a><span data-ttu-id="e9014-143">クロスドッキング ポリシー</span><span class="sxs-lookup"><span data-stu-id="e9014-143">Cross-docking policy</span></span>
 
-クロスドッキング ポリシーでは、移動オーダーの需要の優先順位付けのポリシーも設定します。 たとえば、同じ製品に対して複数の移動オーダーがある場合、積荷に設定され移動オーダーに関連付けられた予定の日時がオーダー間の優先順位を決定します。 予定の日付と時刻は直接積荷に設定するか、積荷に関連付けられている **予定のスケジュール** で設定できます。 優先順位は、クロスドッキング戦略によって決定されます。 現在、**日時** という 1 つの戦略しかありません。
+<span data-ttu-id="e9014-144">クロスドッキング ポリシーでは、移動オーダーの需要の優先順位付けのポリシーも設定します。</span><span class="sxs-lookup"><span data-stu-id="e9014-144">The cross-docking policy also sets the policy for the prioritization of transfer order demand.</span></span> <span data-ttu-id="e9014-145">たとえば、同じ製品に対して複数の移動オーダーがある場合、積荷に設定され移動オーダーに関連付けられた予定の日時がオーダー間の優先順位を決定します。</span><span class="sxs-lookup"><span data-stu-id="e9014-145">For example, if multiple transfer orders exist for the same product, the scheduled date and time that are set on the load, and associated with the transfer order, determine the prioritization between the orders.</span></span> <span data-ttu-id="e9014-146">予定の日付と時刻は直接積荷に設定するか、積荷に関連付けられている **予定のスケジュール** で設定できます。</span><span class="sxs-lookup"><span data-stu-id="e9014-146">The scheduled date and time can be set directly on the load, or they can be set on an **appointment schedule** that is associated with the load.</span></span> <span data-ttu-id="e9014-147">優先順位は、クロスドッキング戦略によって決定されます。</span><span class="sxs-lookup"><span data-stu-id="e9014-147">The prioritization is determined by the cross-docking strategy.</span></span> <span data-ttu-id="e9014-148">現在、**日時** という 1 つの戦略しかありません。</span><span class="sxs-lookup"><span data-stu-id="e9014-148">Currently, there is only one strategy: **Date and time**.</span></span>
 
-### <a name="cross-docking-demand-requires-location"></a>クロスドッキング需要には場所が必要です
+### <a name="cross-docking-demand-requires-location"></a><span data-ttu-id="e9014-149">クロスドッキング需要には場所が必要です</span><span class="sxs-lookup"><span data-stu-id="e9014-149">Cross-docking demand requires location</span></span>
 
-クロスドッキング ポリシーでは、移動オーダーがクロスドッキング用に適格となるため割り当てられた場所を持つよう、条件を設定することができます。 この条件は [**クロスドッキング需要には場所が必要です**] フィールドで設定されます。 積荷に関連付けられている予定のスケジュール上の場所は、クロスドッキングされている商品の最終場所として使用されます。 クロスドッキングされている商品の最終場所は **プット** ワーク オーダー タイプの **移動の出庫** の場所ディレクティブによって決定されます。 トレーラーがベイ ドアに割り当てられた場合にのみ完成品をクロスドッキングするというシナリオでは、[**クロスドッキング需要には場所が必要です**] フィールドを設定すると役立つかもしれません。 このシナリオでは、商品は直接生産ラインからトレーラーに移されます。 ベイ ドアにトレーラーが割り当てられると、ユーザーは場所を予定のスケジュールに割り当て、結果その場所をクロスドッキングに適用可能にします。 次のセクションでは 2 つの例を説明します。
+<span data-ttu-id="e9014-150">クロスドッキング ポリシーでは、移動オーダーがクロスドッキング用に適格となるため割り当てられた場所を持つよう、条件を設定することができます。</span><span class="sxs-lookup"><span data-stu-id="e9014-150">In the cross-docking policy, you can set up a criterion to require that transfer orders have an assigned location in order to be eligible for cross-docking.</span></span> <span data-ttu-id="e9014-151">この条件は [**クロスドッキング需要には場所が必要です**] フィールドで設定されます。</span><span class="sxs-lookup"><span data-stu-id="e9014-151">This criterion is set in the **Cross docking demand requires location** field.</span></span> <span data-ttu-id="e9014-152">積荷に関連付けられている予定のスケジュール上の場所は、クロスドッキングされている商品の最終場所として使用されます。</span><span class="sxs-lookup"><span data-stu-id="e9014-152">The location on the appointment schedule that is associated with the load is used as the final location for the goods that are being cross-docked.</span></span> <span data-ttu-id="e9014-153">クロスドッキングされている商品の最終場所は **プット** ワーク オーダー タイプの **移動の出庫** の場所ディレクティブによって決定されます。</span><span class="sxs-lookup"><span data-stu-id="e9014-153">The final location for the goods that are being cross-docked is determined by the location directive for **Transfer issue** for the **Put** work order type.</span></span> <span data-ttu-id="e9014-154">トレーラーがベイ ドアに割り当てられた場合にのみ完成品をクロスドッキングするというシナリオでは、[**クロスドッキング需要には場所が必要です**] フィールドを設定すると役立つかもしれません。</span><span class="sxs-lookup"><span data-stu-id="e9014-154">You might find it useful to set the **Cross docking demand requires location** field in a scenario where the finished goods should be cross-docked only if a trailer is assigned to a bay door.</span></span> <span data-ttu-id="e9014-155">このシナリオでは、商品は直接生産ラインからトレーラーに移されます。</span><span class="sxs-lookup"><span data-stu-id="e9014-155">In this scenario, the goods are moved directly from the production line into the trailer.</span></span> <span data-ttu-id="e9014-156">ベイ ドアにトレーラーが割り当てられると、ユーザーは場所を予定のスケジュールに割り当て、結果その場所をクロスドッキングに適用可能にします。</span><span class="sxs-lookup"><span data-stu-id="e9014-156">When a trailer is assigned to the bay door, a user will assign the location to the appointment schedule and will therefore make the location applicable for cross-docking.</span></span> <span data-ttu-id="e9014-157">次のセクションでは 2 つの例を説明します。</span><span class="sxs-lookup"><span data-stu-id="e9014-157">The following sections walk you through two examples.</span></span>
 
-#### <a name="scenario-1--cross-docking-from-production-to-transfer-orders"></a>シナリオ 1 – 製造から移動オーダーへのクロスドッキング
+#### <a name="scenario-1--cross-docking-from-production-to-transfer-orders"></a><span data-ttu-id="e9014-158">シナリオ 1 – 製造から移動オーダーへのクロスドッキング</span><span class="sxs-lookup"><span data-stu-id="e9014-158">Scenario 1 – Cross-docking from production to transfer orders</span></span>
 
-製品は生産ラインで完了レポートされた後、トラックに積み込むベイ ドア場所に移され、物流センターへ移されます。 会社の USMF を使用します。
+<span data-ttu-id="e9014-159">製品は生産ラインで完了レポートされた後、トラックに積み込むベイ ドア場所に移され、物流センターへ移されます。</span><span class="sxs-lookup"><span data-stu-id="e9014-159">After a product is reported as finished at the production line it is transferred to a bay-door location where it is loaded to a truck and transferred to a distribution center.</span></span> <span data-ttu-id="e9014-160">会社の USMF を使用します。</span><span class="sxs-lookup"><span data-stu-id="e9014-160">Use company USMF.</span></span>
 
-1.  クロスドッキング用に新しい順序番号を有効にします。 [**番号順序**] ページに移動し、[**生成**] ボタンを選択します。 ウィザードでプロセスを説明します。
-2.  クロスドッキング ポリシーを作成します。 [**クロスドッキング ポリシー**] ページに移動し、「**移動オーダーへのクロスドッキング**」という新しいポリシーを作成します。 なお、選択できる唯一のワーク オーダー タイプは **移動の出庫** で、使用可能な唯一のクロスドッキング戦略は **日時** です。
-3.  作業ポリシーを作成します。 [**作業ポリシー**] ページに移動し、「**クロスドッキング L0101**」という名前の新しい作業ポリシーを作成します。
-4.  自動的に移動オーダーに作成されるように、積荷を設定します。 倉庫パラメーターでは、移動オーダーの作成時に自動的に作成されるよう積荷を設定します。 積荷は移動オーダーをクロスドッキングの対象とするための前提条件です。
-5.  品目と積荷のマッピングを設定します。 [**品目と積荷のマッピング**] ページに移動し、**CarAudio** 品目グループに標準の積荷テンプレートを設定します。 このマッピングは、移動オーダーが作成される際に自動的に積荷テンプレートを積荷に挿入します。
-6.  移動オーダーを作成します。 品目番号 L0101 の移動オーダーを作成します。 数量 = 20。
-7.  積荷計画ワークベンチから移動オーダーをリリースします。 [**出荷**] タブで積荷計画ワークベンチのメニュー項目を選択して、積荷明細行の [**リリース**] メニューで [**倉庫にリリース**] を選択します。 移動オーダーに **移動の出庫** タイプのオープン ウェーブ明細行ができました。
-8.  製造オーダーを作成します。 [**製造オーダー**] リスト ページに移動し、製品 L0101 の製造オーダーを作成します。 数量 = 20。 製造オーダーを見積もりして開始します。 なお、[**ピッキング リスト転記**] フィールドは [**いいえ**] に設定されたままです。
-9.  モバイル デバイスから完了レポートをします。 モバイル デバイス ポータルに移動し、メニュー項目 [**完了レポートとプット アウェイ**] を選択します。 次はハンドヘルド デバイスから L0101 の完了レポートをします。 なお、プット場所は **ベイ ドア** です。 この場所は **プット** ワーク オーダー タイプの **移動の出庫** 場所のディレクティブから検出されます。 なお、タイプ **移動の出庫** の作業が作成され完了していることにも注意してください。 移動オーダー作業の詳細に移動して作業を確認します。
-10. 次は製造オーダーでさらに 20 個を開始し、ハンドヘルド デバイスを使用して 20 個の完了レポートをしてみます。 今回は、場所 **LP 001** がプット場所として提示されます。 この場所は **完成品のプット アウェイ** の場所のディレクティブから検出されます。 クロスドッキングの営業案件が存在しないため、この場所のディレクティブが使用されています。 LP-001 の移動オーダーは最初のクロスドッキング活動によって完全に処理されました。
+1.  <span data-ttu-id="e9014-161">クロスドッキング用に新しい順序番号を有効にします。</span><span class="sxs-lookup"><span data-stu-id="e9014-161">Enable a new number sequence for cross-docking.</span></span> <span data-ttu-id="e9014-162">[**番号順序**] ページに移動し、[**生成**] ボタンを選択します。</span><span class="sxs-lookup"><span data-stu-id="e9014-162">Go to the **Number sequences** page, and select the **Generate** button.</span></span> <span data-ttu-id="e9014-163">ウィザードでプロセスを説明します。</span><span class="sxs-lookup"><span data-stu-id="e9014-163">A wizard will guide you through the process.</span></span>
+2.  <span data-ttu-id="e9014-164">クロスドッキング ポリシーを作成します。</span><span class="sxs-lookup"><span data-stu-id="e9014-164">Create a cross-docking policy.</span></span> <span data-ttu-id="e9014-165">[**クロスドッキング ポリシー**] ページに移動し、「**移動オーダーへのクロスドッキング**」という新しいポリシーを作成します。</span><span class="sxs-lookup"><span data-stu-id="e9014-165">Go to the **Cross docking policy** page, and create a new policy that is named **Cross docking to transfer order**.</span></span> <span data-ttu-id="e9014-166">なお、選択できる唯一のワーク オーダー タイプは **移動の出庫** で、使用可能な唯一のクロスドッキング戦略は **日時** です。</span><span class="sxs-lookup"><span data-stu-id="e9014-166">Note that the only work order type that you can select is **Transfer issue**, and the only cross-docking strategy that is available is **Date and time**.</span></span>
+3.  <span data-ttu-id="e9014-167">作業ポリシーを作成します。</span><span class="sxs-lookup"><span data-stu-id="e9014-167">Create a work policy.</span></span> <span data-ttu-id="e9014-168">[**作業ポリシー**] ページに移動し、「**クロスドッキング L0101**」という名前の新しい作業ポリシーを作成します。</span><span class="sxs-lookup"><span data-stu-id="e9014-168">Go to the **Work policies** page, and create a new work policy that is named **Cross Dock L0101**.</span></span>
+4.  <span data-ttu-id="e9014-169">自動的に移動オーダーに作成されるように、積荷を設定します。</span><span class="sxs-lookup"><span data-stu-id="e9014-169">Set up loads so that they are created automatically for transfer orders.</span></span> <span data-ttu-id="e9014-170">倉庫パラメーターでは、移動オーダーの作成時に自動的に作成されるよう積荷を設定します。</span><span class="sxs-lookup"><span data-stu-id="e9014-170">In the warehouse parameters, set up loads so that they are created automatically when transfer orders are created.</span></span> <span data-ttu-id="e9014-171">積荷は移動オーダーをクロスドッキングの対象とするための前提条件です。</span><span class="sxs-lookup"><span data-stu-id="e9014-171">A load is a prerequisite for making the transfer order eligible for cross-docking.</span></span>
+5.  <span data-ttu-id="e9014-172">品目と積荷のマッピングを設定します。</span><span class="sxs-lookup"><span data-stu-id="e9014-172">Set up the item load mapping.</span></span> <span data-ttu-id="e9014-173">[**品目と積荷のマッピング**] ページに移動し、**CarAudio** 品目グループに標準の積荷テンプレートを設定します。</span><span class="sxs-lookup"><span data-stu-id="e9014-173">Go to the **Item load mapping** page, and set up a standard load template for the **CarAudio** item group.</span></span> <span data-ttu-id="e9014-174">このマッピングは、移動オーダーが作成される際に自動的に積荷テンプレートを積荷に挿入します。</span><span class="sxs-lookup"><span data-stu-id="e9014-174">This mapping will automatically insert the load template on the load when the transfer order is created.</span></span>
+6.  <span data-ttu-id="e9014-175">移動オーダーを作成します。</span><span class="sxs-lookup"><span data-stu-id="e9014-175">Create a transfer order.</span></span> <span data-ttu-id="e9014-176">品目番号 L0101 の移動オーダーを作成します。</span><span class="sxs-lookup"><span data-stu-id="e9014-176">Create the transfer order for item number L0101.</span></span> <span data-ttu-id="e9014-177">数量 = 20。</span><span class="sxs-lookup"><span data-stu-id="e9014-177">Quantity = 20.</span></span>
+7.  <span data-ttu-id="e9014-178">積荷計画ワークベンチから移動オーダーをリリースします。</span><span class="sxs-lookup"><span data-stu-id="e9014-178">Release the transfer order from the load planning workbench.</span></span> <span data-ttu-id="e9014-179">[**出荷**] タブで積荷計画ワークベンチのメニュー項目を選択して、積荷明細行の [**リリース**] メニューで [**倉庫にリリース**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="e9014-179">On the **Ship** tab, select the menu item for the load planning workbench and on the **Release** menu of the load line, select **Release to warehouse**.</span></span> <span data-ttu-id="e9014-180">移動オーダーに **移動の出庫** タイプのオープン ウェーブ明細行ができました。</span><span class="sxs-lookup"><span data-stu-id="e9014-180">An open wave line of type **Transfer issue** now exists for the transfer order.</span></span>
+8.  <span data-ttu-id="e9014-181">製造オーダーを作成します。</span><span class="sxs-lookup"><span data-stu-id="e9014-181">Create a production order.</span></span> <span data-ttu-id="e9014-182">[**製造オーダー**] リスト ページに移動し、製品 L0101 の製造オーダーを作成します。</span><span class="sxs-lookup"><span data-stu-id="e9014-182">Go to the **Production order** list page, and create a production order for product L0101.</span></span> <span data-ttu-id="e9014-183">数量 = 20。</span><span class="sxs-lookup"><span data-stu-id="e9014-183">Quantity = 20.</span></span> <span data-ttu-id="e9014-184">製造オーダーを見積もりして開始します。</span><span class="sxs-lookup"><span data-stu-id="e9014-184">Estimate and start the production order.</span></span> <span data-ttu-id="e9014-185">なお、[**ピッキング リスト転記**] フィールドは [**いいえ**] に設定されたままです。</span><span class="sxs-lookup"><span data-stu-id="e9014-185">Note that the **Post picking list now** field remains set to **No**.</span></span>
+9.  <span data-ttu-id="e9014-186">モバイル デバイスから完了レポートをします。</span><span class="sxs-lookup"><span data-stu-id="e9014-186">Report as finished from the mobile device.</span></span> <span data-ttu-id="e9014-187">モバイル デバイス ポータルに移動し、メニュー項目 [**完了レポートとプット アウェイ**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="e9014-187">Go to the mobile device portal and select menu item **Report as finished and put away**.</span></span> <span data-ttu-id="e9014-188">次はハンドヘルド デバイスから L0101 の完了レポートをします。</span><span class="sxs-lookup"><span data-stu-id="e9014-188">Now report as finished L0101 from the handheld device.</span></span> <span data-ttu-id="e9014-189">なお、プット場所は **ベイ ドア** です。</span><span class="sxs-lookup"><span data-stu-id="e9014-189">Note that the put location is **BAYDOOR**.</span></span> <span data-ttu-id="e9014-190">この場所は **プット** ワーク オーダー タイプの **移動の出庫** 場所のディレクティブから検出されます。</span><span class="sxs-lookup"><span data-stu-id="e9014-190">This location is found from the **Transfer issue** location directive for the **Put** work order type.</span></span> <span data-ttu-id="e9014-191">なお、タイプ **移動の出庫** の作業が作成され完了していることにも注意してください。</span><span class="sxs-lookup"><span data-stu-id="e9014-191">Also notice that work of the type **Transfer issue** has been created and completed.</span></span> <span data-ttu-id="e9014-192">移動オーダー作業の詳細に移動して作業を確認します。</span><span class="sxs-lookup"><span data-stu-id="e9014-192">Go to the transfer order work details to verify the work.</span></span>
+10. <span data-ttu-id="e9014-193">次は製造オーダーでさらに 20 個を開始し、ハンドヘルド デバイスを使用して 20 個の完了レポートをしてみます。</span><span class="sxs-lookup"><span data-stu-id="e9014-193">Now try to start 20 pieces more on the production order and then try to report 20 ea as finished by using the handheld device.</span></span> <span data-ttu-id="e9014-194">今回は、場所 **LP 001** がプット場所として提示されます。</span><span class="sxs-lookup"><span data-stu-id="e9014-194">This time, location **LP-001** is suggested as the put location.</span></span> <span data-ttu-id="e9014-195">この場所は **完成品のプット アウェイ** の場所のディレクティブから検出されます。</span><span class="sxs-lookup"><span data-stu-id="e9014-195">This location is found from the location directive for **Finished goods put away**.</span></span> <span data-ttu-id="e9014-196">クロスドッキングの営業案件が存在しないため、この場所のディレクティブが使用されています。</span><span class="sxs-lookup"><span data-stu-id="e9014-196">This location directive is being used, because no opportunity for cross-docking exists.</span></span> <span data-ttu-id="e9014-197">LP-001 の移動オーダーは最初のクロスドッキング活動によって完全に処理されました。</span><span class="sxs-lookup"><span data-stu-id="e9014-197">The transfer order for LP-001 was completely fulfilled by the first cross-docking activity.</span></span>
 
-タイプ **完成品のプット アウェイ** の作業が作成され処理されました。
+<span data-ttu-id="e9014-198">タイプ **完成品のプット アウェイ** の作業が作成され処理されました。</span><span class="sxs-lookup"><span data-stu-id="e9014-198">Work of the type **Finished goods put away** was created and processed.</span></span>
 
-#### <a name="scenario-2---cross-docking-from-production-to-transfer-orders-with-an-appointment-schedule"></a>シナリオ 2 - 予定のスケジュールを用いた生産から移動オーダーへのクロスドッキング
+#### <a name="scenario-2---cross-docking-from-production-to-transfer-orders-with-an-appointment-schedule"></a><span data-ttu-id="e9014-199">シナリオ 2 - 予定のスケジュールを用いた生産から移動オーダーへのクロスドッキング</span><span class="sxs-lookup"><span data-stu-id="e9014-199">Scenario 2 - Cross-docking from production to transfer orders with an appointment schedule</span></span>
 
-製品は、生産ラインで完了レポートされた後、ベイ ドア場所の予定のスケジュールによって識別されるベイ ドア場所に移されます。 会社の USMF を使用します。
+<span data-ttu-id="e9014-200">製品は、生産ラインで完了レポートされた後、ベイ ドア場所の予定のスケジュールによって識別されるベイ ドア場所に移されます。</span><span class="sxs-lookup"><span data-stu-id="e9014-200">After a product is reported as finished at the production line it is transferred to a bay-door location that is identified by an appointment schedule for the bay-door locations.</span></span> <span data-ttu-id="e9014-201">会社の USMF を使用します。</span><span class="sxs-lookup"><span data-stu-id="e9014-201">Use company USMF.</span></span>
 
-1.  クロスドッキング ポリシーを変更します。 [**クロスドッキング需要には場所が必要です**] チェック ボックスを選択して、シナリオ 1 で作成したクロスドッキングのポリシーを変更します。
-2.  新しい移動オーダーを作成します。
-3.  **積荷計画ワークベンチ** を開きます。
-4.  積荷計画ワークベンチから [**積荷**] セクションに移動し、[**輸送**] メニューの [**予定のスケジュール**] を選択して新しい予定のスケジュールを作成します。 なお、予定のスケジュールは [**注文番号**] フィールドの移動オーダーを参照しています。 [**場所での計画された開始日時**] フィールドで、予定の日時を設定できます。 この日時は、クロスドッキング需要がクロスドッキング プロセス中に優先されているときに使用されます。 このフィールドで設定した日時は、対応する積荷の [**出荷予定日時**] フィールドを更新します。 [**出荷詳細**] クイック タブ上の場所が、移動オーダーの出荷場所を決定します。
-5.  **積荷計画ワークベンチ** 上で倉庫へリリースします。
-6.  品目番号 **L0101** の製造オーダーを作成し、数量 20 で状態を **開始済** に設定します。
-7.  モバイル デバイスから完了レポートをします。
-8.  モバイル デバイス ポータルに移動し、[**完了レポートとプット アウェイ**] メニュー項目を選択します。
-9.  ハンドヘルド デバイスから品目番号 **L0101** の完了レポートをします。 なお、今回のプット場所は **ベイ ドア 2** です。 この場所は、**移動入庫** 場所のディレクティブではなく、予定のスケジュールから検出されます。
+1.  <span data-ttu-id="e9014-202">クロスドッキング ポリシーを変更します。</span><span class="sxs-lookup"><span data-stu-id="e9014-202">Change the cross-docking policy.</span></span> <span data-ttu-id="e9014-203">[**クロスドッキング需要には場所が必要です**] チェック ボックスを選択して、シナリオ 1 で作成したクロスドッキングのポリシーを変更します。</span><span class="sxs-lookup"><span data-stu-id="e9014-203">Change the cross-docking policy that you created in scenario 1 by selecting the **Cross docking demand requires location** check box.</span></span>
+2.  <span data-ttu-id="e9014-204">新しい移動オーダーを作成します。</span><span class="sxs-lookup"><span data-stu-id="e9014-204">Create a new transfer order.</span></span>
+3.  <span data-ttu-id="e9014-205">**積荷計画ワークベンチ** を開きます。</span><span class="sxs-lookup"><span data-stu-id="e9014-205">Open the **Load planning workbench**.</span></span>
+4.  <span data-ttu-id="e9014-206">積荷計画ワークベンチから [**積荷**] セクションに移動し、[**輸送**] メニューの [**予定のスケジュール**] を選択して新しい予定のスケジュールを作成します。</span><span class="sxs-lookup"><span data-stu-id="e9014-206">From the load planning workbench, go to the **Loads** section, and select **Appointment schedule** on the **Transportation** menu to create a new appointment schedule.</span></span> <span data-ttu-id="e9014-207">なお、予定のスケジュールは [**注文番号**] フィールドの移動オーダーを参照しています。</span><span class="sxs-lookup"><span data-stu-id="e9014-207">Note that the appointment schedule has a reference to the transfer order in the **Order number** field.</span></span> <span data-ttu-id="e9014-208">[**場所での計画された開始日時**] フィールドで、予定の日時を設定できます。</span><span class="sxs-lookup"><span data-stu-id="e9014-208">In the **Planned start date/time at location** field, you can set the date and time for the appointment.</span></span> <span data-ttu-id="e9014-209">この日時は、クロスドッキング需要がクロスドッキング プロセス中に優先されているときに使用されます。</span><span class="sxs-lookup"><span data-stu-id="e9014-209">This date and time will be used when cross-docking demand is prioritized during the cross-docking process.</span></span> <span data-ttu-id="e9014-210">このフィールドで設定した日時は、対応する積荷の [**出荷予定日時**] フィールドを更新します。</span><span class="sxs-lookup"><span data-stu-id="e9014-210">The date and time that you set in this field will update the **Scheduled load shipping date and time** field on the corresponding load.</span></span> <span data-ttu-id="e9014-211">[**出荷詳細**] クイック タブ上の場所が、移動オーダーの出荷場所を決定します。</span><span class="sxs-lookup"><span data-stu-id="e9014-211">The location on the **Shipping details** FastTab determines the location that the transfer order is shipped on.</span></span>
+5.  <span data-ttu-id="e9014-212">**積荷計画ワークベンチ** 上で倉庫へリリースします。</span><span class="sxs-lookup"><span data-stu-id="e9014-212">On the **Load planning workbench** release to the warehouse.</span></span>
+6.  <span data-ttu-id="e9014-213">品目番号 **L0101** の製造オーダーを作成し、数量 20 で状態を **開始済** に設定します。</span><span class="sxs-lookup"><span data-stu-id="e9014-213">Create a production order for item number **L0101**, and set the status to **Started**, with a quantity of 20.</span></span>
+7.  <span data-ttu-id="e9014-214">モバイル デバイスから完了レポートをします。</span><span class="sxs-lookup"><span data-stu-id="e9014-214">Report as finished from the mobile device.</span></span>
+8.  <span data-ttu-id="e9014-215">モバイル デバイス ポータルに移動し、[**完了レポートとプット アウェイ**] メニュー項目を選択します。</span><span class="sxs-lookup"><span data-stu-id="e9014-215">Go to the mobile device portal, and select the **Report as finished and put away** menu item.</span></span>
+9.  <span data-ttu-id="e9014-216">ハンドヘルド デバイスから品目番号 **L0101** の完了レポートをします。</span><span class="sxs-lookup"><span data-stu-id="e9014-216">Report item number **L0101** as finished from the handheld device.</span></span> <span data-ttu-id="e9014-217">なお、今回のプット場所は **ベイ ドア 2** です。</span><span class="sxs-lookup"><span data-stu-id="e9014-217">Note that the put location is now **BAYDOOR 2**.</span></span> <span data-ttu-id="e9014-218">この場所は、**移動入庫** 場所のディレクティブではなく、予定のスケジュールから検出されます。</span><span class="sxs-lookup"><span data-stu-id="e9014-218">This location is found from the appointment schedule instead of the **Transfer receipt** location directive.</span></span>
 
-### <a name="additional-information"></a>追加情報
+### <a name="additional-information"></a><span data-ttu-id="e9014-219">追加情報</span><span class="sxs-lookup"><span data-stu-id="e9014-219">Additional information</span></span>
 
--   クロスドッキング シナリオは、バッチおよびシリアル番号分析コードが引当階層の場所の上と下の両方で定義されている、バッチおよびシリアル制御された品目でサポートされています。
+-   <span data-ttu-id="e9014-220">クロスドッキング シナリオは、バッチおよびシリアル番号分析コードが引当階層の場所の上と下の両方で定義されている、バッチおよびシリアル制御された品目でサポートされています。</span><span class="sxs-lookup"><span data-stu-id="e9014-220">The cross docking scenario is supported for batch and serial controlled items, both with the batch and serial number dimensions defined above and below location in the reservation hierarchy.</span></span>
 
 
 

@@ -18,321 +18,219 @@ ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 52a16be4b07eafb493c7fd7ad52a6d9d1bb9ee89
-ms.openlocfilehash: 77049ba4c9c39cd44f1919b672deaf700b91357d
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: e886411421fda17bb67f8ecedc1f7f3420e1fa72
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="retail-peripherals-overview"></a>小売周辺機器の概要
+# <a name="retail-peripherals-overview"></a><span data-ttu-id="38b90-104">小売周辺機器の概要</span><span class="sxs-lookup"><span data-stu-id="38b90-104">Retail peripherals overview</span></span>
 
 [!include[banner](includes/banner.md)]
 
 
-このトピックでは、小売周辺機器に関連する概念を説明します。 周辺機器を販売時点管理 (POS) と接続するさまざまな方法、および POS との接続の管理を担当するコンポーネントについて説明します。
+<span data-ttu-id="38b90-105">このトピックでは、小売周辺機器に関連する概念を説明します。</span><span class="sxs-lookup"><span data-stu-id="38b90-105">This topic explains the concepts that are related to retail peripherals.</span></span> <span data-ttu-id="38b90-106">周辺機器を販売時点管理 (POS) と接続するさまざまな方法、および POS との接続の管理を担当するコンポーネントについて説明します。</span><span class="sxs-lookup"><span data-stu-id="38b90-106">It describes the various ways that peripherals can be connected to the point of sale (POS) and the components that are responsible for managing the connection with the POS.</span></span>
 
-## <a name="concepts"></a>概念
+## <a name="concepts"></a><span data-ttu-id="38b90-107">概念</span><span class="sxs-lookup"><span data-stu-id="38b90-107">Concepts</span></span>
 
-### <a name="pos-registers"></a>POS レジスター
+### <a name="pos-registers"></a><span data-ttu-id="38b90-108">POS レジスター</span><span class="sxs-lookup"><span data-stu-id="38b90-108">POS registers</span></span>
 
-ナビゲーション: [**小売**] &gt; [**チャネル設定**] &gt; [**POS 設定**] &gt; [**レジスター**] をクリックします。 販売時点管理 (POS) レジは、POS の特定のインスタンスの特性を定義するのに使用するエンティティです。 これらの特性には、レジスターで使用される小売周辺機器のハードウェア プロファイルまたはセットアップ、レジスターがマップされているストア、そのレジスターにログオンしているユーザーのビジュアル エクスペリエンスが含まれます。
+<span data-ttu-id="38b90-109">ナビゲーション: [**小売**] &gt; [**チャネル設定**] &gt; [**POS 設定**] &gt; [**レジスター**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="38b90-109">Navigation: Click **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **Registers**.</span></span> <span data-ttu-id="38b90-110">販売時点管理 (POS) レジは、POS の特定のインスタンスの特性を定義するのに使用するエンティティです。</span><span class="sxs-lookup"><span data-stu-id="38b90-110">The point of sale (POS) register is an entity that is used to define the characteristics of a specific instance of the POS.</span></span> <span data-ttu-id="38b90-111">これらの特性には、レジスターで使用される小売周辺機器のハードウェア プロファイルまたはセットアップ、レジスターがマップされているストア、そのレジスターにログオンしているユーザーのビジュアル エクスペリエンスが含まれます。</span><span class="sxs-lookup"><span data-stu-id="38b90-111">These characteristics include the hardware profile or setup for retail peripherals that will be used at the register, the store that the register is mapped to, and the visual experience for the user who signs in to that register.</span></span>
 
-### <a name="devices"></a>デバイス
+### <a name="devices"></a><span data-ttu-id="38b90-112">デバイス</span><span class="sxs-lookup"><span data-stu-id="38b90-112">Devices</span></span>
 
-ナビゲーション: [**小売**] &gt; [**チャネル設定**] &gt; [**POS 設定**] &gt; [**デバイス**] をクリックします。 デバイスとは、POS レジスターにマップされているデバイスの物理的なインスタンスを表すエンティティです。 デバイスが作成されると、POS レジスターにマップされます。 デバイス エンティティは、POS レジスターが有効化された時間、使用しているクライアントのタイプ、および特定のデバイスに配置されているアプリケーション パッケージに関する情報を追跡します。 デバイスは、次のアプリケーション タイプにマップすることができます: Retail Modern POS、小売クラウド POS、 Retail Modern POS – Windows Phone、Retail Modern POS – Android、Retail Modern POS – iOS。
+<span data-ttu-id="38b90-113">ナビゲーション: [**小売**] &gt; [**チャネル設定**] &gt; [**POS 設定**] &gt; [**デバイス**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="38b90-113">Navigation: Click **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **Devices**.</span></span> <span data-ttu-id="38b90-114">デバイスとは、POS レジスターにマップされているデバイスの物理的なインスタンスを表すエンティティです。</span><span class="sxs-lookup"><span data-stu-id="38b90-114">A device is an entity that represents a physical instance of a device that is mapped to a POS register.</span></span> <span data-ttu-id="38b90-115">デバイスが作成されると、POS レジスターにマップされます。</span><span class="sxs-lookup"><span data-stu-id="38b90-115">When a device is created, it’s mapped to a POS register.</span></span> <span data-ttu-id="38b90-116">デバイス エンティティは、POS レジスターが有効化された時間、使用しているクライアントのタイプ、および特定のデバイスに配置されているアプリケーション パッケージに関する情報を追跡します。</span><span class="sxs-lookup"><span data-stu-id="38b90-116">The device entity tracks information about when a POS register is activated, the type of client that is being used, and the application package that has been deployed to a specific device.</span></span> <span data-ttu-id="38b90-117">デバイスは、次のアプリケーション タイプにマップすることができます: Retail Modern POS、小売クラウド POS、 Retail Modern POS – Windows Phone、Retail Modern POS – Android、Retail Modern POS – iOS。</span><span class="sxs-lookup"><span data-stu-id="38b90-117">Devices can be mapped to the following application types: Retail Modern POS, Retail Cloud POS, Retail Modern POS – Windows Phone, Retail Modern POS – Android, and Retail Modern POS – iOS.</span></span>
 
-### <a name="retail-modern-pos"></a>Retail Modern POS
+### <a name="retail-modern-pos"></a><span data-ttu-id="38b90-118">Retail Modern POS</span><span class="sxs-lookup"><span data-stu-id="38b90-118">Retail Modern POS</span></span>
 
-Modern POS は、Microsoft Windows の POS プログラムです。 これは、Windows 10 オペレーティング システム (OS) に配置できます。
+<span data-ttu-id="38b90-119">Modern POS は、Microsoft Windows の POS プログラムです。</span><span class="sxs-lookup"><span data-stu-id="38b90-119">Modern POS is the POS program for Microsoft Windows.</span></span> <span data-ttu-id="38b90-120">これは、Windows 10 オペレーティング システム (OS) に配置できます。</span><span class="sxs-lookup"><span data-stu-id="38b90-120">It can be deployed on Windows 10 operating systems (OSs).</span></span>
 
-### <a name="cloud-pos"></a>クラウド POS
+### <a name="cloud-pos"></a><span data-ttu-id="38b90-121">クラウド POS</span><span class="sxs-lookup"><span data-stu-id="38b90-121">Cloud POS</span></span>
 
-クラウド POS は Modern POS プログラムのブラウザ ベースのバージョンで、Web ブラウザでアクセスできます。
+<span data-ttu-id="38b90-122">クラウド POS は Modern POS プログラムのブラウザ ベースのバージョンで、Web ブラウザでアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="38b90-122">Cloud POS is a browser-based version of the Modern POS program that can be accessed in a web browser.</span></span>
 
-### <a name="modern-pos-for-ios"></a>iOS 用 Modern POS
+### <a name="modern-pos-for-ios"></a><span data-ttu-id="38b90-123">iOS 用 Modern POS</span><span class="sxs-lookup"><span data-stu-id="38b90-123">Modern POS for iOS</span></span>
 
-iOS 用 Modern POS は iOS ベース バージョンの Modern POS で、iOS デバイスに配置できます。
+<span data-ttu-id="38b90-124">iOS 用 Modern POS は iOS ベース バージョンの Modern POS で、iOS デバイスに配置できます。</span><span class="sxs-lookup"><span data-stu-id="38b90-124">Modern POS for iOS is an iOS-based version of the Modern POS program that can be deployed on iOS devices.</span></span>
 
-### <a name="modern-pos-for-android"></a>Android 用 Modern POS
+### <a name="modern-pos-for-android"></a><span data-ttu-id="38b90-125">Android 用 Modern POS</span><span class="sxs-lookup"><span data-stu-id="38b90-125">Modern POS for Android</span></span>
 
-Android 用 Modern POS はAndroid ベース バージョンの Modern POS で、Android デバイスに配置できます。
+<span data-ttu-id="38b90-126">Android 用 Modern POS はAndroid ベース バージョンの Modern POS で、Android デバイスに配置できます。</span><span class="sxs-lookup"><span data-stu-id="38b90-126">Modern POS for Android is an Android-based version of the Modern POS program that can be deployed on Android devices.</span></span>
 
-### <a name="pos-peripherals"></a>POS 周辺機器
+### <a name="pos-peripherals"></a><span data-ttu-id="38b90-127">POS 周辺機器</span><span class="sxs-lookup"><span data-stu-id="38b90-127">POS peripherals</span></span>
 
-POS 周辺機器は、POS 機能用に明示的にサポートされているデバイスです。 これらの周辺機器は、特定のクラスに分けられます。 これらのクラスに関する詳細については、このトピックの「デバイス クラス」を参照してください。
+<span data-ttu-id="38b90-128">POS 周辺機器は、POS 機能用に明示的にサポートされているデバイスです。</span><span class="sxs-lookup"><span data-stu-id="38b90-128">POS peripherals are devices that are explicitly supported for POS functions.</span></span> <span data-ttu-id="38b90-129">これらの周辺機器は、特定のクラスに分けられます。</span><span class="sxs-lookup"><span data-stu-id="38b90-129">These peripherals are typically divided into specific classes.</span></span> <span data-ttu-id="38b90-130">これらのクラスに関する詳細については、このトピックの「デバイス クラス」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="38b90-130">For more information about these classes, see the “Device classes” section of this topic.</span></span>
 
-### <a name="hardware-station"></a>ハードウェア ステーション
+### <a name="hardware-station"></a><span data-ttu-id="38b90-131">ハードウェア ステーション</span><span class="sxs-lookup"><span data-stu-id="38b90-131">Hardware station</span></span>
 
-ナビゲーション: [**小売**] &gt; [**チャネル**] &gt; [**小売店舗**] &gt; [**すべての小売店舗**] をクリックします。 店舗を選択して、[**ハードウェア ステーション**] クイック タブをクリックします。 **ハードウェア ステーション** 設定は、小売周辺機器ロジックを配置するインスタンスを定義するのに使用されるチャンネル レベルの設定です。 チャンネル レベルのこの設定は、ハードウェア ステーションの特性を決定するのに使用されます。 また、特定の店舗で Modern POS インスタンスに使用するハードウェア ステーションを一覧表示するために使用されます。 ハードウェア ステーションは、Windows 用 Modern POS プログラムに組み込まれています。 ハードウェア ステーションは、Microsoft インターネット インフォメーション サービス (IIS) のスタンドアロン プログラムとして別に配置することもできます。 この場合は、ネットワークからアクセスできます。
+<span data-ttu-id="38b90-132">ナビゲーション: [**小売**] &gt; [**チャネル**] &gt; [**小売店舗**] &gt; [**すべての小売店舗**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="38b90-132">Navigation: Click **Retail** &gt; **Channels** &gt; **Retail stores** &gt; **All retail stores**.</span></span> <span data-ttu-id="38b90-133">店舗を選択して、[**ハードウェア ステーション**] クイック タブをクリックします。</span><span class="sxs-lookup"><span data-stu-id="38b90-133">Select a store, and then click the **Hardware stations** FastTab.</span></span> <span data-ttu-id="38b90-134">**ハードウェア ステーション** 設定は、小売周辺機器ロジックを配置するインスタンスを定義するのに使用されるチャンネル レベルの設定です。</span><span class="sxs-lookup"><span data-stu-id="38b90-134">The **Hardware station** setting is a channel-level setting that is used to define instances where the retail peripheral logic will be deployed.</span></span> <span data-ttu-id="38b90-135">チャンネル レベルのこの設定は、ハードウェア ステーションの特性を決定するのに使用されます。</span><span class="sxs-lookup"><span data-stu-id="38b90-135">This setting at the channel level is used to determine characteristics of the hardware station.</span></span> <span data-ttu-id="38b90-136">また、特定の店舗で Modern POS インスタンスに使用するハードウェア ステーションを一覧表示するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="38b90-136">It's also used to list hardware stations that are available for a Modern POS instance in a given store.</span></span> <span data-ttu-id="38b90-137">ハードウェア ステーションは、Windows 用 Modern POS プログラムに組み込まれています。</span><span class="sxs-lookup"><span data-stu-id="38b90-137">The hardware station is built into the Modern POS program for Windows.</span></span> <span data-ttu-id="38b90-138">ハードウェア ステーションは、Microsoft インターネット インフォメーション サービス (IIS) のスタンドアロン プログラムとして別に配置することもできます。</span><span class="sxs-lookup"><span data-stu-id="38b90-138">The hardware station can also be deployed independently as a stand-alone Microsoft Internet Information Services (IIS) program.</span></span> <span data-ttu-id="38b90-139">この場合は、ネットワークからアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="38b90-139">In this case, it can be accessed via a network.</span></span>
 
-### <a name="hardware-profile"></a>ハードウェア プロファイル
+### <a name="hardware-profile"></a><span data-ttu-id="38b90-140">ハードウェア プロファイル</span><span class="sxs-lookup"><span data-stu-id="38b90-140">Hardware profile</span></span>
 
-ナビゲーション: [**小売**] &gt; [**チャネル設定**] &gt; [**POS 設定**] &gt; [**POS プロファイル**] &gt; [**ハードウェア プロファイル**] をクリックします。 ハードウェア プロファイルは、POS レジスター用またはハードウェア ステーション用にコンフィギュレーションされているデバイスのリストです。 ハードウェア プロファイルは、POS レジスターまたはハードウェア ステーションに直接マップできます。
+<span data-ttu-id="38b90-141">ナビゲーション: [**小売**] &gt; [**チャネル設定**] &gt; [**POS 設定**] &gt; [**POS プロファイル**] &gt; [**ハードウェア プロファイル**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="38b90-141">Navigation: Click **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Hardware profiles**.</span></span> <span data-ttu-id="38b90-142">ハードウェア プロファイルは、POS レジスター用またはハードウェア ステーション用にコンフィギュレーションされているデバイスのリストです。</span><span class="sxs-lookup"><span data-stu-id="38b90-142">The hardware profile is a list of devices that are configured for a POS register or a hardware station.</span></span> <span data-ttu-id="38b90-143">ハードウェア プロファイルは、POS レジスターまたはハードウェア ステーションに直接マップできます。</span><span class="sxs-lookup"><span data-stu-id="38b90-143">The hardware profile can be mapped directly to a POS register or a hardware station.</span></span>
 
-## <a name="devices-classes"></a>デバイス クラス
-POS 周辺機器は、クラスに分けられています。 このセクションでは、Modern POS をサポートするデバイスの概要について説明します。
+## <a name="devices-classes"></a><span data-ttu-id="38b90-144">デバイス クラス</span><span class="sxs-lookup"><span data-stu-id="38b90-144">Devices classes</span></span>
+<span data-ttu-id="38b90-145">POS 周辺機器は、クラスに分けられています。</span><span class="sxs-lookup"><span data-stu-id="38b90-145">POS peripherals are typically divided into classes.</span></span> <span data-ttu-id="38b90-146">このセクションでは、Modern POS をサポートするデバイスの概要について説明します。</span><span class="sxs-lookup"><span data-stu-id="38b90-146">This section describes and gives an overview of the devices that Modern POS supports.</span></span>
 
-### <a name="printer"></a>プリンター
+### <a name="printer"></a><span data-ttu-id="38b90-147">プリンター</span><span class="sxs-lookup"><span data-stu-id="38b90-147">Printer</span></span>
 
-プリンタには、従来型の POS レシート プリンターおよび全ページ プリンタが含まれます。 プリンタは、Retail POS 用 Object linking and embedding (OPOS) および Microsoft Windows ドライバ インターフェースを通してサポートされます。 2 つまでのプリンタを同時に使用できます。 この機能により、現金店頭払いの顧客のレシートがレシート プリンタで印刷されるている間に、詳細情報を伴う顧客の注文全体が別のプリンタで印刷されるというシナリオをサポートします。 レシート プリンタは、コンピュータに USB で直接接続するか、ネットワークにイーサネットで接続するか、または Bluetooth で接続できます。
+<span data-ttu-id="38b90-148">プリンタには、従来型の POS レシート プリンターおよび全ページ プリンタが含まれます。</span><span class="sxs-lookup"><span data-stu-id="38b90-148">Printers include traditional POS receipt printers and full-page printers.</span></span> <span data-ttu-id="38b90-149">プリンタは、Retail POS 用 Object linking and embedding (OPOS) および Microsoft Windows ドライバ インターフェースを通してサポートされます。</span><span class="sxs-lookup"><span data-stu-id="38b90-149">Printer are supported through Object Linking and Embedding for Retail POS (OPOS) and Microsoft Windows driver interfaces.</span></span> <span data-ttu-id="38b90-150">2 つまでのプリンタを同時に使用できます。</span><span class="sxs-lookup"><span data-stu-id="38b90-150">Up to two printers can be used at the same time.</span></span> <span data-ttu-id="38b90-151">この機能により、現金店頭払いの顧客のレシートがレシート プリンタで印刷されるている間に、詳細情報を伴う顧客の注文全体が別のプリンタで印刷されるというシナリオをサポートします。</span><span class="sxs-lookup"><span data-stu-id="38b90-151">This capability supports scenarios where cash-and-carry customer receipts are printed on receipt printers, whereas customer orders, which carry more information, are printed on a full-page printer.</span></span> <span data-ttu-id="38b90-152">レシート プリンタは、コンピュータに USB で直接接続するか、ネットワークにイーサネットで接続するか、または Bluetooth で接続できます。</span><span class="sxs-lookup"><span data-stu-id="38b90-152">Receipt printers can be connected directly to a computer via USB, connected to a network via Ethernet, or connected via Bluetooth.</span></span>
 
-### <a name="scanner"></a>スキャナー
+### <a name="scanner"></a><span data-ttu-id="38b90-153">スキャナー</span><span class="sxs-lookup"><span data-stu-id="38b90-153">Scanner</span></span>
 
-2 つまでのバーコード スキャナーを同時に使用できます。 この機能により、チェック アウトの時間の時間短縮のため、大きなあるいは重い品目のスキャンのために携帯式のスキャナーが必要で、同時にほとんどの標準サイズの品目に対しては固定埋め込みスキャナーを使用する場合のシナリオをサポートします。 スキャナーは、OPOS、Universal Windows Platform (UWP)、またはキーボード ウェッジ インターフェイスでサポートすることができます。 スキャナーをコンピューターに接続するために、USB または Bluetooth も使用できます。
+<span data-ttu-id="38b90-154">2 つまでのバーコード スキャナーを同時に使用できます。</span><span class="sxs-lookup"><span data-stu-id="38b90-154">Up to two bar code scanners can be used at the same time.</span></span> <span data-ttu-id="38b90-155">この機能により、チェック アウトの時間の時間短縮のため、大きなあるいは重い品目のスキャンのために携帯式のスキャナーが必要で、同時にほとんどの標準サイズの品目に対しては固定埋め込みスキャナーを使用する場合のシナリオをサポートします。</span><span class="sxs-lookup"><span data-stu-id="38b90-155">This capability supports scenarios where a scanner that is more mobile is required in order to scan large or heavy items, whereas a fixed embedded scanner is used for most standard-sized items, to speed up checkout times.</span></span> <span data-ttu-id="38b90-156">スキャナーは、OPOS、Universal Windows Platform (UWP)、またはキーボード ウェッジ インターフェイスでサポートすることができます。</span><span class="sxs-lookup"><span data-stu-id="38b90-156">Scanners can be supported through OPOS, Universal Windows Platform (UWP), or keyboard wedge interfaces.</span></span> <span data-ttu-id="38b90-157">スキャナーをコンピューターに接続するために、USB または Bluetooth も使用できます。</span><span class="sxs-lookup"><span data-stu-id="38b90-157">USB or Bluetooth can be used to connect a scanner to a computer.</span></span>
 
-### <a name="msr"></a>MSR
+### <a name="msr"></a><span data-ttu-id="38b90-158">MSR</span><span class="sxs-lookup"><span data-stu-id="38b90-158">MSR</span></span>
 
-OPOS ドライバを使用して、1 つの USB 磁気ストライプ リーダー (MSR) を設定できます。 電子決済 (EFT) の支払トランザクションにスタンドアロン MSR を使用する場合、MSR は支払コネクタで管理する必要があります。 支払コネクタとは別のスタンドアロン MSR は、顧客ロイヤルティ エントリ、従業員のサインイン、およびギフト カード エントリに使用できます。
+<span data-ttu-id="38b90-159">OPOS ドライバを使用して、1 つの USB 磁気ストライプ リーダー (MSR) を設定できます。</span><span class="sxs-lookup"><span data-stu-id="38b90-159">One USB magnetic stripe reader (MSR) can be set up by using OPOS drivers.</span></span> <span data-ttu-id="38b90-160">電子決済 (EFT) の支払トランザクションにスタンドアロン MSR を使用する場合、MSR は支払コネクタで管理する必要があります。</span><span class="sxs-lookup"><span data-stu-id="38b90-160">If you want to use a stand-alone MSR for electronic funds transfer (EFT) payment transactions, the MSR must be managed by a payment connector.</span></span> <span data-ttu-id="38b90-161">支払コネクタとは別のスタンドアロン MSR は、顧客ロイヤルティ エントリ、従業員のサインイン、およびギフト カード エントリに使用できます。</span><span class="sxs-lookup"><span data-stu-id="38b90-161">Stand-alone MSRs can be used for customer loyalty entry, employee sign-in, and gift card entry, independently of the payment connector.</span></span>
 
-### <a name="cash-drawer"></a>キャッシュ ドロワー
+### <a name="cash-drawer"></a><span data-ttu-id="38b90-162">キャッシュ ドロワー</span><span class="sxs-lookup"><span data-stu-id="38b90-162">Cash drawer</span></span>
 
-ハードウェア プロファイルごとに、2 つのキャッシュ ドロワーをサポートすることができます。 この機能により、レジスターごとに 2 つの有効なシフトを同時に使用することが可能になります。 共有シフトの場合、または複数のモバイル POS デバイスでキャッシュ ドロワーを同時に使用する場合、ハードウェア プロファイルごとに 1 つのキャッシュ ドロワーのみが使用可能です。 キャッシュ ドロワーは、コンピュータに USB で直接接続するか、ネットワークにイーサネットで接続するか、またはレシート プリンターに RJ12 インターフェースで接続できます。 場合によっては、キャッシュ ドロワーは Bluetooth でも接続できます。
+<span data-ttu-id="38b90-163">ハードウェア プロファイルごとに、2 つのキャッシュ ドロワーをサポートすることができます。</span><span class="sxs-lookup"><span data-stu-id="38b90-163">Two cash drawers can be supported per hardware profile.</span></span> <span data-ttu-id="38b90-164">この機能により、レジスターごとに 2 つの有効なシフトを同時に使用することが可能になります。</span><span class="sxs-lookup"><span data-stu-id="38b90-164">This capability enables two active shifts per register to be available at the same time.</span></span> <span data-ttu-id="38b90-165">共有シフトの場合、または複数のモバイル POS デバイスでキャッシュ ドロワーを同時に使用する場合、ハードウェア プロファイルごとに 1 つのキャッシュ ドロワーのみが使用可能です。</span><span class="sxs-lookup"><span data-stu-id="38b90-165">In the case of a shared shift, or a cash drawer that is used by multiple mobile POS devices at the same time, only one cash drawer is allowed per hardware profile.</span></span> <span data-ttu-id="38b90-166">キャッシュ ドロワーは、コンピュータに USB で直接接続するか、ネットワークにイーサネットで接続するか、またはレシート プリンターに RJ12 インターフェースで接続できます。</span><span class="sxs-lookup"><span data-stu-id="38b90-166">Cash drawers can be connected directly to a computer via USB, connected to a network, or connected to a receipt printer via an RJ12 interface.</span></span> <span data-ttu-id="38b90-167">場合によっては、キャッシュ ドロワーは Bluetooth でも接続できます。</span><span class="sxs-lookup"><span data-stu-id="38b90-167">In some cases, cash drawers can also be connected via Bluetooth.</span></span>
 
-### <a name="line-display"></a>ライン ディスプレイ
+### <a name="line-display"></a><span data-ttu-id="38b90-168">ライン ディスプレイ</span><span class="sxs-lookup"><span data-stu-id="38b90-168">Line display</span></span>
 
-ライン ディスプレイは、製品、トランザクションの残高などの必要な情報をトランザクションの間に顧客に示すのに使用されます。 1 つのライン ディスプレイは、OPOS ドライバーを使用して USB でコンピュータに接続できます。
+<span data-ttu-id="38b90-169">ライン ディスプレイは、製品、トランザクションの残高などの必要な情報をトランザクションの間に顧客に示すのに使用されます。</span><span class="sxs-lookup"><span data-stu-id="38b90-169">Line displays are used to show products, transaction balances, and other useful information to the customer during a transaction.</span></span> <span data-ttu-id="38b90-170">1 つのライン ディスプレイは、OPOS ドライバーを使用して USB でコンピュータに接続できます。</span><span class="sxs-lookup"><span data-stu-id="38b90-170">One line display can be connected to the computer via USB by using OPOS drivers.</span></span>
 
-### <a name="signature-capture"></a>署名キャプチャ
+### <a name="signature-capture"></a><span data-ttu-id="38b90-171">署名キャプチャ</span><span class="sxs-lookup"><span data-stu-id="38b90-171">Signature capture</span></span>
 
-署名の取得デバイスは、OPOS ドライバを使用して USB で直接コンピュータに接続できます。 署名の取得デバイスが設定されている場合、顧客はデバイスに署名するように要求されます。 署名がなされると、承認用にレジ担当者に表示されます。
+<span data-ttu-id="38b90-172">署名の取得デバイスは、OPOS ドライバを使用して USB で直接コンピュータに接続できます。</span><span class="sxs-lookup"><span data-stu-id="38b90-172">Signature capture devices can be connected directly to a computer via USB by using OPOS drivers.</span></span> <span data-ttu-id="38b90-173">署名の取得デバイスが設定されている場合、顧客はデバイスに署名するように要求されます。</span><span class="sxs-lookup"><span data-stu-id="38b90-173">When signature capture is configured, the customer is prompted to sign on the device.</span></span> <span data-ttu-id="38b90-174">署名がなされると、承認用にレジ担当者に表示されます。</span><span class="sxs-lookup"><span data-stu-id="38b90-174">After the signature is provided, it's shown to the cashier for acceptance.</span></span>
 
-### <a name="scale"></a>スケール
+### <a name="scale"></a><span data-ttu-id="38b90-175">スケール</span><span class="sxs-lookup"><span data-stu-id="38b90-175">Scale</span></span>
 
-スケールは、OPOS ドライバーを使用して USP でコンピュータに接続できます。 「計量」製品とマークされた製品がトランザクションに追加されると、POS は スケールの重量を読み、トランザクションに製品を追加し、スケールから得られる数値を使用します。
+<span data-ttu-id="38b90-176">スケールは、OPOS ドライバーを使用して USP でコンピュータに接続できます。</span><span class="sxs-lookup"><span data-stu-id="38b90-176">Scales can be connected to the computer via USP by using OPOS drivers.</span></span> <span data-ttu-id="38b90-177">「計量」製品とマークされた製品がトランザクションに追加されると、POS は スケールの重量を読み、トランザクションに製品を追加し、スケールから得られる数値を使用します。</span><span class="sxs-lookup"><span data-stu-id="38b90-177">When a product that is marked as a “Weighed” product is added to a transaction, the POS reads the weight from the scale, adds the product to the transaction, and uses the quantity that the scale provided.</span></span>
 
-### <a name="pin-pad"></a>PIN パッド
+### <a name="pin-pad"></a><span data-ttu-id="38b90-178">PIN パッド</span><span class="sxs-lookup"><span data-stu-id="38b90-178">PIN pad</span></span>
 
-個人 ID 番号 (PIN) パッドは、OPOS でサポートされますが、支払コネクタで管理する必要があります。
+<span data-ttu-id="38b90-179">個人 ID 番号 (PIN) パッドは、OPOS でサポートされますが、支払コネクタで管理する必要があります。</span><span class="sxs-lookup"><span data-stu-id="38b90-179">Personal identification number (PIN) pads are supported through OPOS, but they must be managed via a payment connector.</span></span>
 
-### <a name="secondary-display"></a>二次表示
+### <a name="secondary-display"></a><span data-ttu-id="38b90-180">二次表示</span><span class="sxs-lookup"><span data-stu-id="38b90-180">Secondary display</span></span>
 
-二次表示が設定された場合、基本情報は 2 番目の Windows ディスプレイに表示されます。 二次表示の目的は、独立系ソフトウェア ベンダー (ISV) による拡張をサポートすることです。追加設定なしの場合、二次表示はコンフィギュレーション不可能で、限定的な内容しか表示しません。
+<span data-ttu-id="38b90-181">二次表示が設定された場合、基本情報は 2 番目の Windows ディスプレイに表示されます。</span><span class="sxs-lookup"><span data-stu-id="38b90-181">When a secondary display is configured, the number 2 Windows display is used to show basic information.</span></span> <span data-ttu-id="38b90-182">二次表示の目的は、独立系ソフトウェア ベンダー (ISV) による拡張をサポートすることです。追加設定なしの場合、二次表示はコンフィギュレーション不可能で、限定的な内容しか表示しません。</span><span class="sxs-lookup"><span data-stu-id="38b90-182">The purpose of the secondary display is to support independent software vendor (ISV) extension, because out of the box, the secondary display isn't configurable and shows limited content.</span></span>
 
-### <a name="payment-device"></a>支払デバイス
+### <a name="payment-device"></a><span data-ttu-id="38b90-183">支払デバイス</span><span class="sxs-lookup"><span data-stu-id="38b90-183">Payment device</span></span>
 
-支払デバイスのサポートは、支払コネクタを通して実装されます。 支払デバイスは、他のデバイス クラスが提供する機能の 1 つまたは複数を実行できます。 支払デバイスは、MSR/カード リーダー、ライン ディスプレイ、署名キャプチャ デバイスまたは PIN パッド として機能します。 支払デバイスのサポートは、ハードウェア プロファイルに含まれる他のデバイスのスタンドアロン デバイス サポートとは関係なく実装されています。
+<span data-ttu-id="38b90-184">支払デバイスのサポートは、支払コネクタを通して実装されます。</span><span class="sxs-lookup"><span data-stu-id="38b90-184">Payment device support is implemented through the payment connector.</span></span> <span data-ttu-id="38b90-185">支払デバイスは、他のデバイス クラスが提供する機能の 1 つまたは複数を実行できます。</span><span class="sxs-lookup"><span data-stu-id="38b90-185">Payment devices can perform one or many of the functions that other device classes provide.</span></span> <span data-ttu-id="38b90-186">支払デバイスは、MSR/カード リーダー、ライン ディスプレイ、署名キャプチャ デバイスまたは PIN パッド として機能します。</span><span class="sxs-lookup"><span data-stu-id="38b90-186">For example, a payment device can function as an MSR/card reader, line display, signature capture device, or PIN pad.</span></span> <span data-ttu-id="38b90-187">支払デバイスのサポートは、ハードウェア プロファイルに含まれる他のデバイスのスタンドアロン デバイス サポートとは関係なく実装されています。</span><span class="sxs-lookup"><span data-stu-id="38b90-187">Support for payment devices is implemented independently of the stand-alone device support that is provided for other devices that are included in the hardware profile.</span></span>
 
-## <a name="supported-interfaces"></a>サポートされているインターフェース
-### <a name="opos"></a>OPOS
+## <a name="supported-interfaces"></a><span data-ttu-id="38b90-188">サポートされているインターフェース</span><span class="sxs-lookup"><span data-stu-id="38b90-188">Supported interfaces</span></span>
+### <a name="opos"></a><span data-ttu-id="38b90-189">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-189">OPOS</span></span>
 
-できるだけ多くのデバイスが Microsoft Dynamics 365 for Retail で使用できることを保証するため、POS 業界標準用 OLE が Microsoft Dynamics 365 for Retail の基本小売周辺機器プラットフォームです。 POS 業界標準用 OLE は、小売周辺機器の業界標準の通信プロトコルを設定する National Retail Federation (NRF) により作成されました。 OPOS は、POS標準用 OLE の実装として広く採用されています。 これは 90 年代半ばに作成され、それ以降、数回更新されています。 OPOS は、Windows ベースの POS システムに POS ハードウェアを簡単に統合できるデバイス ドライバ アーキテクチャを提供します。 OPOSは、互換性のある POS ハードウェアとソフトウェアの間の処理通信を制御します。 OPOS コントロールは、2 つ部分から構成されます:
+<span data-ttu-id="38b90-190">できるだけ多くのデバイスが Microsoft Dynamics 365 for Retail で使用できることを保証するため、POS 業界標準用 OLE が Microsoft Dynamics 365 for Retail の基本小売周辺機器プラットフォームです。</span><span class="sxs-lookup"><span data-stu-id="38b90-190">To help guarantee that the largest range of devices can be used with Microsoft Dynamics 365 for Retail, the OLE for POS industry standard is the primary retail peripheral device platform that is supported in Microsoft Dynamics 365 for Retail.</span></span> <span data-ttu-id="38b90-191">POS 業界標準用 OLE は、小売周辺機器の業界標準の通信プロトコルを設定する National Retail Federation (NRF) により作成されました。</span><span class="sxs-lookup"><span data-stu-id="38b90-191">The OLE for POS standard was produced by the National Retail Federation (NRF), which establishes industry-standard communication protocols for retail peripheral devices.</span></span> <span data-ttu-id="38b90-192">OPOS は、POS標準用 OLE の実装として広く採用されています。</span><span class="sxs-lookup"><span data-stu-id="38b90-192">OPOS is a widely adopted implementation of the OLE for POS standard.</span></span> <span data-ttu-id="38b90-193">これは 90 年代半ばに作成され、それ以降、数回更新されています。</span><span class="sxs-lookup"><span data-stu-id="38b90-193">It was developed in the mid-1990s and has been updated several times since then.</span></span> <span data-ttu-id="38b90-194">OPOS は、Windows ベースの POS システムに POS ハードウェアを簡単に統合できるデバイス ドライバ アーキテクチャを提供します。</span><span class="sxs-lookup"><span data-stu-id="38b90-194">OPOS provides a device driver architecture that enables easy integration of POS hardware with Windows–based POS systems.</span></span> <span data-ttu-id="38b90-195">OPOSは、互換性のある POS ハードウェアとソフトウェアの間の処理通信を制御します。</span><span class="sxs-lookup"><span data-stu-id="38b90-195">OPOS controls handle communication between compatible hardware and the POS software.</span></span> <span data-ttu-id="38b90-196">OPOS コントロールは、2 つ部分から構成されます:</span><span class="sxs-lookup"><span data-stu-id="38b90-196">An OPOS control consists of two parts:</span></span>
 
--   **コントロール オブジェクト** – デバイス クラス (ライン ディスプレイなど) のコントロール オブジェクトは、ソフトウェアプログラムにインターフェイスを提供します。 Monroe Consulting Services ([www.monroecs.com](http://www.monroecs.com/)) は、コモン コントロール オブジェクト (CCO) と呼ばれる標準化された一式の OPOS コントロール オブジェクトを提供します。 CCO は、Microsoft Dynamics 365 for Retail の POS コンポーネントをテストするのに使用されます。 したがって、メーカーが OPOS 用にサービス オブジェクトを作成する限り、Microsoft Dynamics 365 for Retail が OPOS によってデバイス クラスをサポートなら、このテストにより多くのデバイス タイプがサポートされることを保証します。 各デバイス タイプを明示的にテストする必要はありません。
--   **サービス オブジェクト** – サービス オブジェクトはコントロール オブジェクト (CCO) とデバイス間の通信を提供します。 通常、デバイスのサービス オブジェクトはデバイス メーカーによって提供されます。 ただし、場合によっては、製造元のサイトからサービス オブジェクトをダウンロードする必要があるかもしれません。 たとえば、最新のサービス オブジェクトが利用可能かもしれません。 メーカーの Web サイトのアドレスを特定するには、ハードウェアのドキュメントを参照してください。
+-   <span data-ttu-id="38b90-197">**コントロール オブジェクト** – デバイス クラス (ライン ディスプレイなど) のコントロール オブジェクトは、ソフトウェアプログラムにインターフェイスを提供します。</span><span class="sxs-lookup"><span data-stu-id="38b90-197">**Control object** – The control object for a device class (such as line displays) provides the interface for the software program.</span></span> <span data-ttu-id="38b90-198">Monroe Consulting Services ([www.monroecs.com](http://www.monroecs.com/)) は、コモン コントロール オブジェクト (CCO) と呼ばれる標準化された一式の OPOS コントロール オブジェクトを提供します。</span><span class="sxs-lookup"><span data-stu-id="38b90-198">Monroe Consulting Services ([www.monroecs.com](http://www.monroecs.com/)) provides a standardized set of OPOS control objects that are known as the common control objects (CCOs).</span></span> <span data-ttu-id="38b90-199">CCO は、Microsoft Dynamics 365 for Retail の POS コンポーネントをテストするのに使用されます。</span><span class="sxs-lookup"><span data-stu-id="38b90-199">The CCOs are used to test the POS component of Microsoft Dynamics 365 for Retail.</span></span> <span data-ttu-id="38b90-200">したがって、メーカーが OPOS 用にサービス オブジェクトを作成する限り、Microsoft Dynamics 365 for Retail が OPOS によってデバイス クラスをサポートなら、このテストにより多くのデバイス タイプがサポートされることを保証します。</span><span class="sxs-lookup"><span data-stu-id="38b90-200">Therefore, the testing helps guarantee that, if Microsoft Dynamics 365 for Retail supports a device class through OPOS, many device types can be supported, provided that the manufacturer provides a service object that is built for OPOS.</span></span> <span data-ttu-id="38b90-201">各デバイス タイプを明示的にテストする必要はありません。</span><span class="sxs-lookup"><span data-stu-id="38b90-201">You don't have to explicitly test each device type.</span></span>
+-   <span data-ttu-id="38b90-202">**サービス オブジェクト** – サービス オブジェクトはコントロール オブジェクト (CCO) とデバイス間の通信を提供します。</span><span class="sxs-lookup"><span data-stu-id="38b90-202">**Service object** – The service object provides communication between the control object (CCO) and the device.</span></span> <span data-ttu-id="38b90-203">通常、デバイスのサービス オブジェクトはデバイス メーカーによって提供されます。</span><span class="sxs-lookup"><span data-stu-id="38b90-203">Typically, the service object for a device is provided by the device manufacturer.</span></span> <span data-ttu-id="38b90-204">ただし、場合によっては、製造元のサイトからサービス オブジェクトをダウンロードする必要があるかもしれません。</span><span class="sxs-lookup"><span data-stu-id="38b90-204">However, in some cases, you might have to download the service object from the manufacturer’s website.</span></span> <span data-ttu-id="38b90-205">たとえば、最新のサービス オブジェクトが利用可能かもしれません。</span><span class="sxs-lookup"><span data-stu-id="38b90-205">For example, a more recent service object might be available.</span></span> <span data-ttu-id="38b90-206">メーカーの Web サイトのアドレスを特定するには、ハードウェアのドキュメントを参照してください。</span><span class="sxs-lookup"><span data-stu-id="38b90-206">To find the address of the manufacturer's website, see your hardware documentation.</span></span>
 
-[![コントロール オブジェクトおよびサービス オブジェクト](./media/retail_peripherals_overview01.png)](./media/retail_peripherals_overview01.png) POS 用 OLE の OPOS での実装をサポートすることで、デバイス メーカーと POS のパブリッシャーが標準を正しく実装している限り、以前に組み合わせテストされていない POS システムとサポート デバイスの組み合わせでも正しく動作することが保証されます。 **注記:** OPOS サポートは、OPOS ドライバがあるすべてのデバイスのサポートを保証するものではありません。 Microsoft Dynamics 365 for Retail は最初に OPOS によりそのデバイス タイプまたはクラスをサポートする必要があります。 また、サービス オブジェクトが最新バージョンの CCO に対応した最新のものではないかもしれません。 一般に、サービス オブジェクトのクオリティには差異があります。
+<span data-ttu-id="38b90-207">[![コントロール オブジェクトおよびサービス オブジェクト](./media/retail_peripherals_overview01.png)](./media/retail_peripherals_overview01.png) POS 用 OLE の OPOS での実装をサポートすることで、デバイス メーカーと POS のパブリッシャーが標準を正しく実装している限り、以前に組み合わせテストされていない POS システムとサポート デバイスの組み合わせでも正しく動作することが保証されます。</span><span class="sxs-lookup"><span data-stu-id="38b90-207">[![Control object and service object](./media/retail_peripherals_overview01.png)](./media/retail_peripherals_overview01.png) Support for the OPOS implementation of OLE for POS helps guarantee that, if the device manufacturers and POS publishers implement the standard correctly, POS systems and supported devices can work together, even if they weren't previously tested together.</span></span> <span data-ttu-id="38b90-208">**注記:** OPOS サポートは、OPOS ドライバがあるすべてのデバイスのサポートを保証するものではありません。</span><span class="sxs-lookup"><span data-stu-id="38b90-208">**Note:** OPOS support doesn't guarantee support for all devices that have OPOS drivers.</span></span> <span data-ttu-id="38b90-209">Microsoft Dynamics 365 for Retail は最初に OPOS によりそのデバイス タイプまたはクラスをサポートする必要があります。</span><span class="sxs-lookup"><span data-stu-id="38b90-209">Microsoft Dynamics 365 for Retail must first support that device type, or class, through OPOS.</span></span> <span data-ttu-id="38b90-210">また、サービス オブジェクトが最新バージョンの CCO に対応した最新のものではないかもしれません。</span><span class="sxs-lookup"><span data-stu-id="38b90-210">In addition, service objects might not always be up to date with the latest version of the CCOs.</span></span> <span data-ttu-id="38b90-211">一般に、サービス オブジェクトのクオリティには差異があります。</span><span class="sxs-lookup"><span data-stu-id="38b90-211">You should also be aware that, in general, the quality of service objects varies.</span></span>
 
-### <a name="windows"></a>ウィンドウ(&W)
+### <a name="windows"></a><span data-ttu-id="38b90-212">ウィンドウ(&W)</span><span class="sxs-lookup"><span data-stu-id="38b90-212">Windows</span></span>
 
-POS レシートの印刷は、OPOS に最適化されています。 一般に、OPOS による印刷は Windows による印刷より高速です。 したがって、40 列のレシートを高速のトランザクション タイムで印刷する必要のある小売環境では、OPOS を使用することが最善です。 ほとんどのデバイスについては、OPOS コントロールを使用します。 ただし、一部の OPOS レシート プリンターは Windows ドライバもサポートします。 Windows ドライバを使用する場合、最新のフォントにアクセス可能で、複数のレジスターと 1 つのプリンターをネットワーク化できます。 ただし、Windows ドライバーの使用には短所があります。 短所の例を次に示します。
+<span data-ttu-id="38b90-213">POS レシートの印刷は、OPOS に最適化されています。</span><span class="sxs-lookup"><span data-stu-id="38b90-213">Receipt printing at the POS is optimized for OPOS.</span></span> <span data-ttu-id="38b90-214">一般に、OPOS による印刷は Windows による印刷より高速です。</span><span class="sxs-lookup"><span data-stu-id="38b90-214">OPOS tends to be much faster than printing through Windows.</span></span> <span data-ttu-id="38b90-215">したがって、40 列のレシートを高速のトランザクション タイムで印刷する必要のある小売環境では、OPOS を使用することが最善です。</span><span class="sxs-lookup"><span data-stu-id="38b90-215">Therefore, it's a good idea to use OPOS, especially in retail environments where 40-column receipts are printed and transaction times must be fast.</span></span> <span data-ttu-id="38b90-216">ほとんどのデバイスについては、OPOS コントロールを使用します。</span><span class="sxs-lookup"><span data-stu-id="38b90-216">For most devices, you will use OPOS controls.</span></span> <span data-ttu-id="38b90-217">ただし、一部の OPOS レシート プリンターは Windows ドライバもサポートします。</span><span class="sxs-lookup"><span data-stu-id="38b90-217">However, some OPOS receipt printers also support Windows drivers.</span></span> <span data-ttu-id="38b90-218">Windows ドライバを使用する場合、最新のフォントにアクセス可能で、複数のレジスターと 1 つのプリンターをネットワーク化できます。</span><span class="sxs-lookup"><span data-stu-id="38b90-218">By using a Windows driver, you can access the latest fonts and network one printer for multiple registers.</span></span> <span data-ttu-id="38b90-219">ただし、Windows ドライバーの使用には短所があります。</span><span class="sxs-lookup"><span data-stu-id="38b90-219">However, there are drawbacks to using Windows drivers.</span></span> <span data-ttu-id="38b90-220">短所の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="38b90-220">Here are some examples of these drawbacks:</span></span>
 
--   Windows ドライバを使用する場会、画像は印刷開始前にレンダリングされます。 したがって、印刷は OPOS コントロールを使用するプリンタより遅くなる傾向があります。
--   プリンタを通して接続されているデバイス (「デイジー チェーン」) は 、Windows ドライバを使用している間、正しく動作しないかもしれません。 たとえば、キャッシュ ドロワーが開かないかもしれず、伝票プリンタが指示通り動かないかもしれません。
--   OPOS は、紙切断または伝票印刷など小売レシート プリンターに特有の広範な変数をサポートします。
+-   <span data-ttu-id="38b90-221">Windows ドライバを使用する場会、画像は印刷開始前にレンダリングされます。</span><span class="sxs-lookup"><span data-stu-id="38b90-221">When Windows drivers are used, images are rendered before printing occurs.</span></span> <span data-ttu-id="38b90-222">したがって、印刷は OPOS コントロールを使用するプリンタより遅くなる傾向があります。</span><span class="sxs-lookup"><span data-stu-id="38b90-222">Therefore, printing tends to be slower than it is on printers that use OPOS controls.</span></span>
+-   <span data-ttu-id="38b90-223">プリンタを通して接続されているデバイス (「デイジー チェーン」) は 、Windows ドライバを使用している間、正しく動作しないかもしれません。</span><span class="sxs-lookup"><span data-stu-id="38b90-223">Devices that are connected through the printer (“daisy-chained”) might not work correctly when Windows drivers are used.</span></span> <span data-ttu-id="38b90-224">たとえば、キャッシュ ドロワーが開かないかもしれず、伝票プリンタが指示通り動かないかもしれません。</span><span class="sxs-lookup"><span data-stu-id="38b90-224">For example, the cash drawer might not open, or the slip printer might not word as you expect.</span></span>
+-   <span data-ttu-id="38b90-225">OPOS は、紙切断または伝票印刷など小売レシート プリンターに特有の広範な変数をサポートします。</span><span class="sxs-lookup"><span data-stu-id="38b90-225">OPOS also supports a more extensive set of variables that are specific to retail receipt printers, such as paper cutting or slip printing.</span></span>
 
-使用している Windows プリンターで OPOS コントロールが使用できる場合、Microsoft Dynamics 365 for Retail でプリンターを正しく使用できるはずです。
+<span data-ttu-id="38b90-226">使用している Windows プリンターで OPOS コントロールが使用できる場合、Microsoft Dynamics 365 for Retail でプリンターを正しく使用できるはずです。</span><span class="sxs-lookup"><span data-stu-id="38b90-226">If OPOS controls are available for the Windows printer that you're using, the printer should still work correctly with Microsoft Dynamics 365 for Retail.</span></span>
 
-### <a name="universal-windows-platform"></a>Universal Windows Platform
+### <a name="universal-windows-platform"></a><span data-ttu-id="38b90-227">Universal Windows Platform</span><span class="sxs-lookup"><span data-stu-id="38b90-227">Universal Windows Platform</span></span>
 
-小売周辺機器の場合の UWP は、プラグ アンド プレイ デバイス用 Windows サポートに関連しています。 プラグ アンド プレイ デバイスがそのデバイス タイプをサポートする Windows OS バージョンに接続された場合、デバイスを使用するためのドライバーは必要はありません。 たとえば、Windows が Bluetooth のスピーカー デバイスを検出すると、OS はそのデバイスが **スピーカー** クラス タイプを持つことを認識します。 したがって、そのデバイスをスピーカーとして処理します。 追加の設定は必要ありません。 POS デバイスの場合、多くの USB デバイスを接続でき、Windows はヒューマン インターフェイス デバイス (HID) として認識します。 ただし、デバイスがクラスまたはタイプを指定しないため、そのデバイスの機能を認識することができない場合があります。 Windows 10 で、バーコード スキャナーおよび MSR のデバイス クラスが追加されました。 したがって、デバイスがこれらのクラスの 1 つのデバイスとして Windows 10 に自分を申告すると、Windows は適切なタイミングでデバイスのイベントを聞き取ります。 Modern POS は MSR およびスキャナーの UWP をサポートします。 したがって、これらのデバイスの 1 つからの入力を受け入れられるようになり、これらのクラスの 1 つに属するデバイスが接続されると、デバイスは使用できるようになります。 たとえば、UWP バーコード スキャナーが Windows 10 のコンピュータに接続された場合、Modern POS 用にバーコード サインインが設定され、サインイン画面でバーコード スキャナーが有効になります。 追加の設定は必要ありません。 ポイント オブ サービス UWP デバイスの追加クラスが Windows に追加されています。 これらのクラスには、キャッシュ ドロワーやレシート プリンターのクラスが含まれます。 これらの新しいデバイス クラスの Modern POS でのサポートは保留中です。
+<span data-ttu-id="38b90-228">小売周辺機器の場合の UWP は、プラグ アンド プレイ デバイス用 Windows サポートに関連しています。</span><span class="sxs-lookup"><span data-stu-id="38b90-228">UWP, in the case of retail peripherals, is related to Windows support for Plug and Play devices.</span></span> <span data-ttu-id="38b90-229">プラグ アンド プレイ デバイスがそのデバイス タイプをサポートする Windows OS バージョンに接続された場合、デバイスを使用するためのドライバーは必要はありません。</span><span class="sxs-lookup"><span data-stu-id="38b90-229">When a Plug and Play device is connected to a Windows OS version that supports that type of device, no driver is required for the device to be used as intended.</span></span> <span data-ttu-id="38b90-230">たとえば、Windows が Bluetooth のスピーカー デバイスを検出すると、OS はそのデバイスが **スピーカー** クラス タイプを持つことを認識します。</span><span class="sxs-lookup"><span data-stu-id="38b90-230">For example, if Windows detects a Bluetooth speaker device, the OS knows that the device has the **Speaker** class type.</span></span> <span data-ttu-id="38b90-231">したがって、そのデバイスをスピーカーとして処理します。</span><span class="sxs-lookup"><span data-stu-id="38b90-231">Therefore, and it treats that device as a speaker.</span></span> <span data-ttu-id="38b90-232">追加の設定は必要ありません。</span><span class="sxs-lookup"><span data-stu-id="38b90-232">No additional setup is required.</span></span> <span data-ttu-id="38b90-233">POS デバイスの場合、多くの USB デバイスを接続でき、Windows はヒューマン インターフェイス デバイス (HID) として認識します。</span><span class="sxs-lookup"><span data-stu-id="38b90-233">In the case of POS devices, many USB devices can be plugged in, and Windows will recognize them as Human Interface Devices (HIDs).</span></span> <span data-ttu-id="38b90-234">ただし、デバイスがクラスまたはタイプを指定しないため、そのデバイスの機能を認識することができない場合があります。</span><span class="sxs-lookup"><span data-stu-id="38b90-234">However, it might not be able to determine the capabilities that the device provides, because the device doesn't specify the class, or type, of device.</span></span> <span data-ttu-id="38b90-235">Windows 10 で、バーコード スキャナーおよび MSR のデバイス クラスが追加されました。</span><span class="sxs-lookup"><span data-stu-id="38b90-235">In Windows 10, device classes for bar code scanners and MSRs have been added.</span></span> <span data-ttu-id="38b90-236">したがって、デバイスがこれらのクラスの 1 つのデバイスとして Windows 10 に自分を申告すると、Windows は適切なタイミングでデバイスのイベントを聞き取ります。</span><span class="sxs-lookup"><span data-stu-id="38b90-236">Therefore, if a device declares itself to Windows 10 as a device of one of these classes, Windows will listen for events from the device at the appropriate times.</span></span> <span data-ttu-id="38b90-237">Modern POS は MSR およびスキャナーの UWP をサポートします。</span><span class="sxs-lookup"><span data-stu-id="38b90-237">Modern POS supports UWP MSRs and scanners.</span></span> <span data-ttu-id="38b90-238">したがって、これらのデバイスの 1 つからの入力を受け入れられるようになり、これらのクラスの 1 つに属するデバイスが接続されると、デバイスは使用できるようになります。</span><span class="sxs-lookup"><span data-stu-id="38b90-238">Therefore, when it's ready for input from one of these devices, and a device that belongs to one of these classes is connected, the device can be used.</span></span> <span data-ttu-id="38b90-239">たとえば、UWP バーコード スキャナーが Windows 10 のコンピュータに接続された場合、Modern POS 用にバーコード サインインが設定され、サインイン画面でバーコード スキャナーが有効になります。</span><span class="sxs-lookup"><span data-stu-id="38b90-239">For example, if a UWP bar code scanner is plugged into a Windows 10 computer, and bar code sign-in is configured for Modern POS, the bar code scanner will become active on the sign-in screen.</span></span> <span data-ttu-id="38b90-240">追加の設定は必要ありません。</span><span class="sxs-lookup"><span data-stu-id="38b90-240">No additional setup is required.</span></span> <span data-ttu-id="38b90-241">ポイント オブ サービス UWP デバイスの追加クラスが Windows に追加されています。</span><span class="sxs-lookup"><span data-stu-id="38b90-241">Additional classes of point of service UWP devices are being added to Windows.</span></span> <span data-ttu-id="38b90-242">これらのクラスには、キャッシュ ドロワーやレシート プリンターのクラスが含まれます。</span><span class="sxs-lookup"><span data-stu-id="38b90-242">These classes include classes for cash drawers and receipt printers.</span></span> <span data-ttu-id="38b90-243">これらの新しいデバイス クラスの Modern POS でのサポートは保留中です。</span><span class="sxs-lookup"><span data-stu-id="38b90-243">Support for these new device classes in Modern POS is pending.</span></span>
 
-### <a name="keyboard-wedge"></a>キーボード ウェッジ
+### <a name="keyboard-wedge"></a><span data-ttu-id="38b90-244">キーボード ウェッジ</span><span class="sxs-lookup"><span data-stu-id="38b90-244">Keyboard wedge</span></span>
 
-キーボード ウェッジのデバイスは、データがキーボードで入力されているかのようにコンピューターにそのデータを送信します。 したがって既定では、POS で有効なフィールドが、スキャンまたは読み取りされたデータを受け取ります。 場合によっては、この動作により誤ったタイプのデータが誤ったフィールドにスキャンされることがあります。 たとえば、クレジット カードのデータ入力を対象とするフィールドにバーコードがスキャン入力されるかもしれません。 多くの場合、スキャンまたは読み取りされたデータが、バーコードなのかカードの読み取りなのかを決定するロジックが POS にあります。 したがって、データが正しく処理されます。 ただしデバイスがキーボード ウェッジ デバイスの代わりに OPOS として設定されている場合は、そのデバイスのデータをどのように処理するかを詳細に制御できます。なぜなら、データが送られてくるデバイスについて多くのことが「知られている」からです。 たとえば、バーコード スキャナーのデータはバーコードとして自動的に認識され、キーボード ウェッジ デバイスを使用した一般的なストリング検索の場合より、データベースの関連レコードは早く簡単に検索できます。
+<span data-ttu-id="38b90-245">キーボード ウェッジのデバイスは、データがキーボードで入力されているかのようにコンピューターにそのデータを送信します。</span><span class="sxs-lookup"><span data-stu-id="38b90-245">Keyboard wedge devices send data to the computer as if that data were typed on a keyboard.</span></span> <span data-ttu-id="38b90-246">したがって既定では、POS で有効なフィールドが、スキャンまたは読み取りされたデータを受け取ります。</span><span class="sxs-lookup"><span data-stu-id="38b90-246">Therefore, by default, the field that is active at the POS will receive the data that is scanned or swiped.</span></span> <span data-ttu-id="38b90-247">場合によっては、この動作により誤ったタイプのデータが誤ったフィールドにスキャンされることがあります。</span><span class="sxs-lookup"><span data-stu-id="38b90-247">In some cases, this behavior can cause the wrong type of data to be scanned into the wrong field.</span></span> <span data-ttu-id="38b90-248">たとえば、クレジット カードのデータ入力を対象とするフィールドにバーコードがスキャン入力されるかもしれません。</span><span class="sxs-lookup"><span data-stu-id="38b90-248">For example, a bar code might be scanned into a field that is intended for input of credit card data.</span></span> <span data-ttu-id="38b90-249">多くの場合、スキャンまたは読み取りされたデータが、バーコードなのかカードの読み取りなのかを決定するロジックが POS にあります。</span><span class="sxs-lookup"><span data-stu-id="38b90-249">In many cases, there is logic at the POS that determines whether the data that is scanned or swiped is a bar code or card swipe.</span></span> <span data-ttu-id="38b90-250">したがって、データが正しく処理されます。</span><span class="sxs-lookup"><span data-stu-id="38b90-250">Therefore, the data is handled correctly.</span></span> <span data-ttu-id="38b90-251">ただしデバイスがキーボード ウェッジ デバイスの代わりに OPOS として設定されている場合は、そのデバイスのデータをどのように処理するかを詳細に制御できます。なぜなら、データが送られてくるデバイスについて多くのことが「知られている」からです。</span><span class="sxs-lookup"><span data-stu-id="38b90-251">However, when devices are set up as OPOS instead of keyboard wedge devices, there is more control over how the data from those devices can be consumed, because more is “known” about the device that the data originates from.</span></span> <span data-ttu-id="38b90-252">たとえば、バーコード スキャナーのデータはバーコードとして自動的に認識され、キーボード ウェッジ デバイスを使用した一般的なストリング検索の場合より、データベースの関連レコードは早く簡単に検索できます。</span><span class="sxs-lookup"><span data-stu-id="38b90-252">For example, data from a bar code scanner is automatically recognized as a bar code, and the associated record in the database is found more easily and faster than if a generic string search were used, as in the case of keyboard wedge devices.</span></span>
 
-### <a name="native-printer"></a>ネイティブ プリンタ
+### <a name="native-printer"></a><span data-ttu-id="38b90-253">ネイティブ プリンタ</span><span class="sxs-lookup"><span data-stu-id="38b90-253">Native printer</span></span>
 
-ネイティブ (または、タイプがハードウェア プロファイルで指定されている「デバイス」の) プリンタは、ユーザーがコンピュータで設定されているプリンタを選択することを求めるように設定できます。 **デバイス**タイプのプリンタが設定され、Modern POS が印刷のコマンドを検出した場合、ユーザーはリストからプリンターを選択するように要求されます。 この動作は、Windows ドライバーの動作とは異なります。ハードウェア プロファイルの **Windows** プリンター タイプは、プリンターの一覧を表示しません。 代わりに、指定されたプリンタが**デバイス名**フィールドに入力されていることが必要です。
+<span data-ttu-id="38b90-254">ネイティブ (または、タイプがハードウェア プロファイルで指定されている「デバイス」の) プリンタは、ユーザーがコンピュータで設定されているプリンタを選択することを求めるように設定できます。</span><span class="sxs-lookup"><span data-stu-id="38b90-254">Native (or "Device" as the type is named in the hardware profile) printers can be configured to prompt the user to select a printer that is configured for the computer.</span></span> <span data-ttu-id="38b90-255">**デバイス**タイプのプリンタが設定され、Modern POS が印刷のコマンドを検出した場合、ユーザーはリストからプリンターを選択するように要求されます。</span><span class="sxs-lookup"><span data-stu-id="38b90-255">When a printer of the **Device** type is configured, if Modern POS encounters a print command, the user is prompted to select a printer in a list.</span></span> <span data-ttu-id="38b90-256">この動作は、Windows ドライバーの動作とは異なります。ハードウェア プロファイルの **Windows** プリンター タイプは、プリンターの一覧を表示しません。</span><span class="sxs-lookup"><span data-stu-id="38b90-256">This behavior differs from the behavior for Windows drivers, because the **Windows** printer type in the hardware profile doesn't show a list of printers.</span></span> <span data-ttu-id="38b90-257">代わりに、指定されたプリンタが**デバイス名**フィールドに入力されていることが必要です。</span><span class="sxs-lookup"><span data-stu-id="38b90-257">Instead, it requires that a named printer be provided in the **Device name** field.</span></span>
 
-### <a name="windows"></a>ウィンドウ(&W)
+### <a name="windows"></a><span data-ttu-id="38b90-258">ウィンドウ(&W)</span><span class="sxs-lookup"><span data-stu-id="38b90-258">Windows</span></span>
 
-**Windows** デバイス タイプは、プリンターにのみ使用されます。 Windows プリンターがハードウェア プロファイルに設定されている場合、特定のプリンター名を指定する必要があります。 Modern POS が印刷のイベントを検出した時、Windows プリンターが設定されている場合、イベントは指定された Windows プリンターに渡されます。 ユーザーがプリンタを選択するよう促すメッセージは表示されません。
+<span data-ttu-id="38b90-259">**Windows** デバイス タイプは、プリンターにのみ使用されます。</span><span class="sxs-lookup"><span data-stu-id="38b90-259">The **Windows** device type is used for printers only.</span></span> <span data-ttu-id="38b90-260">Windows プリンターがハードウェア プロファイルに設定されている場合、特定のプリンター名を指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="38b90-260">When a Windows printer is configured in the hardware profile, the specific printer name must be provided.</span></span> <span data-ttu-id="38b90-261">Modern POS が印刷のイベントを検出した時、Windows プリンターが設定されている場合、イベントは指定された Windows プリンターに渡されます。</span><span class="sxs-lookup"><span data-stu-id="38b90-261">When Modern POS encounters print events, if a Windows printer is configured, the event will be passed to the specified Windows printer.</span></span> <span data-ttu-id="38b90-262">ユーザーがプリンタを選択するよう促すメッセージは表示されません。</span><span class="sxs-lookup"><span data-stu-id="38b90-262">The user won't be prompted to select a printer.</span></span>
 
-### <a name="network"></a>ネットワーク
+### <a name="network"></a><span data-ttu-id="38b90-263">ネットワーク</span><span class="sxs-lookup"><span data-stu-id="38b90-263">Network</span></span>
 
-ネットワーク対応のキャッシュ ドロワー、レシート プリンター、支払ターミナルは、Windows アプリケーションの Modern POS に組み込まれたプロセス間通信 (IPC) のハードウェア ステーションを経由して直接、あるいは他の Modern POS クライアントの IIS ハードウェア ステーションを経由して、ネットワークで使用できます。
+<span data-ttu-id="38b90-264">ネットワーク対応のキャッシュ ドロワー、レシート プリンター、支払ターミナルは、Windows アプリケーションの Modern POS に組み込まれたプロセス間通信 (IPC) のハードウェア ステーションを経由して直接、あるいは他の Modern POS クライアントの IIS ハードウェア ステーションを経由して、ネットワークで使用できます。</span><span class="sxs-lookup"><span data-stu-id="38b90-264">Network-addressable cash drawers, receipt printers, and payment terminals can be used over a network, either directly through the Interprocess Communications (IPC) hardware station that is built into the Modern POS for Windows application or through the IIS hardware station for other Modern POS clients.</span></span>
 
-## <a name="hardware-station-deployment-options"></a>ハードウェア ステーションの配置オプション
-### <a name="ipc-built-in"></a>IPC (組み込み)
+## <a name="hardware-station-deployment-options"></a><span data-ttu-id="38b90-265">ハードウェア ステーションの配置オプション</span><span class="sxs-lookup"><span data-stu-id="38b90-265">Hardware station deployment options</span></span>
+### <a name="ipc-built-in"></a><span data-ttu-id="38b90-266">IPC (組み込み)</span><span class="sxs-lookup"><span data-stu-id="38b90-266">IPC (built-in)</span></span>
 
-プロセス間通信 (IPC) ハードウェア ステーションは、Windows アプリケーション用 Modern POS プログラムに組み込まれています。 IPC のハードウェア ステーションを使用するには、Windows アプリケーション用 Modern POS を使用するレジスターにハードウェア プロファイルを割り当てます。 次に、レジスタが使用される店舗用に**専用**タイプのハードウェア ステーションを作成します。 Modern POS を起動すると、IPC のハードウェア ステーションが有効になり、次いで設定された POS の周辺機器が使用できるようになります。 一時的に何らかの理由でローカル ハードウエアが必要でない場合、**ハードウェア ステーションの管理**操作を使用して、ハードウェア ステーションの機能をオフにします。 Modern POS は、ネットワーク周辺機器と直接通信するためにも IPC ハードウェア ステーションを使用します。
+<span data-ttu-id="38b90-267">プロセス間通信 (IPC) ハードウェア ステーションは、Windows アプリケーション用 Modern POS プログラムに組み込まれています。</span><span class="sxs-lookup"><span data-stu-id="38b90-267">The Interprocess Communications (IPC) hardware station is built into the Modern POS for Windows application.</span></span> <span data-ttu-id="38b90-268">IPC のハードウェア ステーションを使用するには、Windows アプリケーション用 Modern POS を使用するレジスターにハードウェア プロファイルを割り当てます。</span><span class="sxs-lookup"><span data-stu-id="38b90-268">To use the IPC hardware station, assign a hardware profile to a register that will use the Modern POS for Windows application.</span></span> <span data-ttu-id="38b90-269">次に、レジスタが使用される店舗用に**専用**タイプのハードウェア ステーションを作成します。</span><span class="sxs-lookup"><span data-stu-id="38b90-269">Then create a hardware station of the **Dedicated** type for the store where the register will be used.</span></span> <span data-ttu-id="38b90-270">Modern POS を起動すると、IPC のハードウェア ステーションが有効になり、次いで設定された POS の周辺機器が使用できるようになります。</span><span class="sxs-lookup"><span data-stu-id="38b90-270">When you start Modern POS, the IPC hardware station will be active, and the POS peripherals that have been configured will be ready to use.</span></span> <span data-ttu-id="38b90-271">一時的に何らかの理由でローカル ハードウエアが必要でない場合、**ハードウェア ステーションの管理**操作を使用して、ハードウェア ステーションの機能をオフにします。</span><span class="sxs-lookup"><span data-stu-id="38b90-271">If you temporarily don't require the local hardware for some reason, use the **Manage hardware stations** operation to turn off the hardware station capabilities.</span></span> <span data-ttu-id="38b90-272">Modern POS は、ネットワーク周辺機器と直接通信するためにも IPC ハードウェア ステーションを使用します。</span><span class="sxs-lookup"><span data-stu-id="38b90-272">Modern POS can also use the IPC hardware station to communicate directly with network peripherals.</span></span>
 
-### <a name="iis"></a>IIS
+### <a name="iis"></a><span data-ttu-id="38b90-273">IIS</span><span class="sxs-lookup"><span data-stu-id="38b90-273">IIS</span></span>
 
-2 つの方法で、スタンドアロンのバージョンのハードウェア ステーションまたは IIS を使用できます。 記述子「IIS」は、POS アプリケーションが Microsoft Internet Information Services を介してハードウェア ステーションと接続していることを意味します。 POS アプリケーションは、デバイスが接続されているコンピュータで実行される Web サービスを介して IIS ハードウェア ステーションに接続します。 IIS を使用すると、ハードウェア ステーションに接続されている小売周辺機器は、IIS ハードウェア ステーションと同じネットワークにつながるどの POS レジスターでも使用できます。 Windows 用 Modern POS のみに小売周辺機器サポートが組み込まれているため、他のすべての Modern POS アプリケーションは、ハードウェア プロファイルでコンフィギュレーションされたPOS周辺機器と通信するために IIS ハードウェア ステーションを使用する必要があります。 したがって、IIS ハードウェア ステーションの各インスタンスは、Web サービスおよびデバイスと通信するアプリケーションを実行するコンピュータが必要です。 IIS ハードウェア ステーションは、すべての非 Windows Modern POS アプリケーションに必要です。
+<span data-ttu-id="38b90-274">2 つの方法で、スタンドアロンのバージョンのハードウェア ステーションまたは IIS を使用できます。</span><span class="sxs-lookup"><span data-stu-id="38b90-274">You can use the IIS or stand-alone version of the hardware station in two ways.</span></span> <span data-ttu-id="38b90-275">記述子「IIS」は、POS アプリケーションが Microsoft Internet Information Services を介してハードウェア ステーションと接続していることを意味します。</span><span class="sxs-lookup"><span data-stu-id="38b90-275">The descriptor “IIS” implies that the POS application connects to the hardware station via Microsoft Internet Information Services.</span></span> <span data-ttu-id="38b90-276">POS アプリケーションは、デバイスが接続されているコンピュータで実行される Web サービスを介して IIS ハードウェア ステーションに接続します。</span><span class="sxs-lookup"><span data-stu-id="38b90-276">The POS application connects to the IIS hardware station via web services that run on a computer where the devices are connected.</span></span> <span data-ttu-id="38b90-277">IIS を使用すると、ハードウェア ステーションに接続されている小売周辺機器は、IIS ハードウェア ステーションと同じネットワークにつながるどの POS レジスターでも使用できます。</span><span class="sxs-lookup"><span data-stu-id="38b90-277">When IIS is used, the retail peripherals that are connected to a hardware station can be used by any POS register that is on the same network as the IIS hardware station.</span></span> <span data-ttu-id="38b90-278">Windows 用 Modern POS のみに小売周辺機器サポートが組み込まれているため、他のすべての Modern POS アプリケーションは、ハードウェア プロファイルでコンフィギュレーションされたPOS周辺機器と通信するために IIS ハードウェア ステーションを使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="38b90-278">Because only Modern POS for Windows includes built-in support for retail peripherals, all other Modern POS applications must use the IIS hardware station to communicate with POS peripherals that are configured in the hardware profile.</span></span> <span data-ttu-id="38b90-279">したがって、IIS ハードウェア ステーションの各インスタンスは、Web サービスおよびデバイスと通信するアプリケーションを実行するコンピュータが必要です。</span><span class="sxs-lookup"><span data-stu-id="38b90-279">Therefore, each instance of the IIS hardware station requires a computer that runs the web service and application that communicates with the devices.</span></span> <span data-ttu-id="38b90-280">IIS ハードウェア ステーションは、すべての非 Windows Modern POS アプリケーションに必要です。</span><span class="sxs-lookup"><span data-stu-id="38b90-280">The IIS hardware station is required for all non-Windows Modern POS applications.</span></span>
 
-#### <a name="dedicated"></a>専用
+#### <a name="dedicated"></a><span data-ttu-id="38b90-281">専用</span><span class="sxs-lookup"><span data-stu-id="38b90-281">Dedicated</span></span>
 
-Modern POS は**専用**タイプのハードウェア ステーションを、アプリケーションが使用しているコンピュータに直接接続されている周辺機器を検出するのに使用します。 ただし、**専用**タイプは、IIS のハードウェア ステーションにも使用できます。 従来の固定 POS のシナリオでは、POS アプリケーションとしてクラウド POS を使用し、**専用**タイプのハードウェア ステーションがクラウド POS を実行するのと同じコンピュータに配置される IIS ハードウェア ステーションとして使用されていました。 小売周辺機器の視点から見ると、従来の固定 POS のシナリオの小売周辺機器サポートより、専用 IIS ハードウェア ステーションの方が優れています。 専用ハードウェア ステーションは、ハードウェア プロファイルでサポートされているすべての周辺機器をサポートします。
+<span data-ttu-id="38b90-282">Modern POS は**専用**タイプのハードウェア ステーションを、アプリケーションが使用しているコンピュータに直接接続されている周辺機器を検出するのに使用します。</span><span class="sxs-lookup"><span data-stu-id="38b90-282">Modern POS uses hardware stations of the **Dedicated** type to detect that peripherals are directly connected to the computer where the app is being used.</span></span> <span data-ttu-id="38b90-283">ただし、**専用**タイプは、IIS のハードウェア ステーションにも使用できます。</span><span class="sxs-lookup"><span data-stu-id="38b90-283">However, the **Dedicated** type can also be used for IIS hardware stations.</span></span> <span data-ttu-id="38b90-284">従来の固定 POS のシナリオでは、POS アプリケーションとしてクラウド POS を使用し、**専用**タイプのハードウェア ステーションがクラウド POS を実行するのと同じコンピュータに配置される IIS ハードウェア ステーションとして使用されていました。</span><span class="sxs-lookup"><span data-stu-id="38b90-284">In a traditional, fixed POS scenario that uses Cloud POS as the POS application, the **Dedicated** hardware station type is used for IIS hardware stations that are deployed on the same computer that is running Cloud POS.</span></span> <span data-ttu-id="38b90-285">小売周辺機器の視点から見ると、従来の固定 POS のシナリオの小売周辺機器サポートより、専用 IIS ハードウェア ステーションの方が優れています。</span><span class="sxs-lookup"><span data-stu-id="38b90-285">From a retail peripherals perspective, the dedicated IIS hardware station has better retail peripheral support for traditional, fixed POS scenarios.</span></span> <span data-ttu-id="38b90-286">専用ハードウェア ステーションは、ハードウェア プロファイルでサポートされているすべての周辺機器をサポートします。</span><span class="sxs-lookup"><span data-stu-id="38b90-286">Dedicated hardware stations support all peripherals that are supported in the hardware profile.</span></span>
 
-#### <a name="shared"></a>共有
+#### <a name="shared"></a><span data-ttu-id="38b90-287">共有</span><span class="sxs-lookup"><span data-stu-id="38b90-287">Shared</span></span>
 
-共有ハードウェア ステーションは、1日の間に複数の POS デバイスで使用されることを想定しています。 共有ハードウェア ステーションは、キャッシュ ドロワー、レシート プリンター、支払ターミナルのみをサポートするよう最適化されています。 スタンドアロンのバーコード スキャナー、MSR、ライン ディスプレイ、スケール、その他のデバイスを直接接続することはできません。 接続すると、複数の POS デバイスがそれらの周辺機器を同時に使用しようとして競合が生じます。 サポートされているデバイス用の競合は、以下のように管理されています:
+<span data-ttu-id="38b90-288">共有ハードウェア ステーションは、1日の間に複数の POS デバイスで使用されることを想定しています。</span><span class="sxs-lookup"><span data-stu-id="38b90-288">Shared hardware stations are intended to be used by multiple POS devices through the course of the day.</span></span> <span data-ttu-id="38b90-289">共有ハードウェア ステーションは、キャッシュ ドロワー、レシート プリンター、支払ターミナルのみをサポートするよう最適化されています。</span><span class="sxs-lookup"><span data-stu-id="38b90-289">Shared hardware stations are optimized to support only cash drawers, receipt printers, and payment terminals.</span></span> <span data-ttu-id="38b90-290">スタンドアロンのバーコード スキャナー、MSR、ライン ディスプレイ、スケール、その他のデバイスを直接接続することはできません。</span><span class="sxs-lookup"><span data-stu-id="38b90-290">You can't directly connect stand-alone bar code scanners, MSRs, line displays, scales, or other devices.</span></span> <span data-ttu-id="38b90-291">接続すると、複数の POS デバイスがそれらの周辺機器を同時に使用しようとして競合が生じます。</span><span class="sxs-lookup"><span data-stu-id="38b90-291">Otherwise, conflicts will occur when multiple POS devices try to claim those peripherals at the same time.</span></span> <span data-ttu-id="38b90-292">サポートされているデバイス用の競合は、以下のように管理されています:</span><span class="sxs-lookup"><span data-stu-id="38b90-292">Here is how conflicts are managed for supported devices:</span></span>
 
--   **キャッシュ ドロワー** – キャッシュ ドロワーはデバイスに送信されるイベントによって開きます。 キャッシュ ドロワーが呼び出されたときに発生する唯一の問題は、キャッシュ ドロワーがすでに開いている場合です。 共有ハードウェア ステーションの場合、キャッシュ ドロワーはハードウェア プロファイルで**共有**と設定されている必要があります。 この設定は、POS が [open] コマンドを送信する時に、キャッシュ ドロワーがすでに開いているかどうかの確認をすることを防ぎます。
--   **レシート プリンター** – 2つのレシート印刷コマンドがハードウェア ステーションに同時に送信されると、デバイスによってはどちらかのコマンドが失われてしまうことがあります。 デバイスによっては、この問題を防ぐための内部メモリまたはプールがあります。 印刷コマンドが正常に終了しない場合、レジ担当者はエラー メッセージを受信し、POS から印刷コマンドを再試行できます。
--   **支払ターミナル** – レジ担当者が既に使用中の支払ターミナルに支払/入金のトランザクションを送信しようとした場合、ターミナルが使用中であり後でもう一度試すようにレジ担当者に求めるメッセージがレジ担当者に通知されます。 通常、レジ担当者はターミナルが既に使用中であることがわかり、他のトランザクションが完了するまで待機してから、支払/入金を再度送信します。
+-   <span data-ttu-id="38b90-293">**キャッシュ ドロワー** – キャッシュ ドロワーはデバイスに送信されるイベントによって開きます。</span><span class="sxs-lookup"><span data-stu-id="38b90-293">**Cash drawer** – The cash drawer is opened via an event that is sent to the device.</span></span> <span data-ttu-id="38b90-294">キャッシュ ドロワーが呼び出されたときに発生する唯一の問題は、キャッシュ ドロワーがすでに開いている場合です。</span><span class="sxs-lookup"><span data-stu-id="38b90-294">The only issue that can occur when a cash drawer is called occurs if the cash drawer is already open.</span></span> <span data-ttu-id="38b90-295">共有ハードウェア ステーションの場合、キャッシュ ドロワーはハードウェア プロファイルで**共有**と設定されている必要があります。</span><span class="sxs-lookup"><span data-stu-id="38b90-295">In the case of shared hardware stations, the cash drawer should be set to **Shared** in the hardware profile.</span></span> <span data-ttu-id="38b90-296">この設定は、POS が [open] コマンドを送信する時に、キャッシュ ドロワーがすでに開いているかどうかの確認をすることを防ぎます。</span><span class="sxs-lookup"><span data-stu-id="38b90-296">This setting prevents the POS from checking whether the cash drawer is already open when it sends open commands.</span></span>
+-   <span data-ttu-id="38b90-297">**レシート プリンター** – 2つのレシート印刷コマンドがハードウェア ステーションに同時に送信されると、デバイスによってはどちらかのコマンドが失われてしまうことがあります。</span><span class="sxs-lookup"><span data-stu-id="38b90-297">**Receipt printer** – If two receipt printing commands are sent to the hardware station at the same time, one of the commands can be lost, depending on the device.</span></span> <span data-ttu-id="38b90-298">デバイスによっては、この問題を防ぐための内部メモリまたはプールがあります。</span><span class="sxs-lookup"><span data-stu-id="38b90-298">Some devices have internal memory or pooling that can prevent this issue.</span></span> <span data-ttu-id="38b90-299">印刷コマンドが正常に終了しない場合、レジ担当者はエラー メッセージを受信し、POS から印刷コマンドを再試行できます。</span><span class="sxs-lookup"><span data-stu-id="38b90-299">If a print command isn't successful, the cashier receives an error message and can retry the print command from the POS.</span></span>
+-   <span data-ttu-id="38b90-300">**支払ターミナル** – レジ担当者が既に使用中の支払ターミナルに支払/入金のトランザクションを送信しようとした場合、ターミナルが使用中であり後でもう一度試すようにレジ担当者に求めるメッセージがレジ担当者に通知されます。</span><span class="sxs-lookup"><span data-stu-id="38b90-300">**Payment terminal** – If a cashier tries to tender a transaction on a payment terminal that is already being used, a message notifies the cashier that the terminal is being used and asks the cashier to try again later.</span></span> <span data-ttu-id="38b90-301">通常、レジ担当者はターミナルが既に使用中であることがわかり、他のトランザクションが完了するまで待機してから、支払/入金を再度送信します。</span><span class="sxs-lookup"><span data-stu-id="38b90-301">Usually, cashiers can see that a terminal is already being used and will wait until the other transaction is completed before they try to tender again.</span></span>
 
-将来のリリースでは、サポートされていないデバイスが共有ハードウェア ステーションにマップされているハードウェア プロファイルで設定されているかどうかを検証する予定です。 サポートされていないデバイスが検出された場合、デバイスが共有ハードウェア ステーションでサポートされていないことを知らせるメッセージがユーザーに表示されます。 共有ハードウェア ステーションの場合、[**支払/入金での選択**] オプションは、レジスター レベルで [**はい**] と設定されます。 これにより、POS のトランザクションで支払/入金が選択された場合、POS ユーザーはハードウェア ステーションを選択するように求められます。 ハードウェア ステーションが支払/入金時にのみ選択された場合、ハードウェア ステーションの選択はモバイルのシナリオの POS ワークフローに直接追加されます。 付加的なメリットとして、共有シナリオの場合には支払ターミナルのライン ディスプレイは使用されません。 支払ターミナルがライン ディスプレイとして使用されると、トランザクションが完了するまでそのターミナルの他のユーザーの使用がブロックされる場合があります。 モバイルのシナリオでは、ラインはトランザクションに長期に渡って追加されることがあります。 したがって、デバイスの最適な使用を保証するために [**支払/入金での選択**] オプションが必要です。
+<span data-ttu-id="38b90-302">将来のリリースでは、サポートされていないデバイスが共有ハードウェア ステーションにマップされているハードウェア プロファイルで設定されているかどうかを検証する予定です。</span><span class="sxs-lookup"><span data-stu-id="38b90-302">Validation is planned for a future release, to detect whether unsupported devices are set up for a hardware profile that is mapped to a shared hardware station.</span></span> <span data-ttu-id="38b90-303">サポートされていないデバイスが検出された場合、デバイスが共有ハードウェア ステーションでサポートされていないことを知らせるメッセージがユーザーに表示されます。</span><span class="sxs-lookup"><span data-stu-id="38b90-303">If any unsupported devices are detected, the user will receive a message that states that the devices aren't supported for shared hardware stations.</span></span> <span data-ttu-id="38b90-304">共有ハードウェア ステーションの場合、[**支払/入金での選択**] オプションは、レジスター レベルで [**はい**] と設定されます。</span><span class="sxs-lookup"><span data-stu-id="38b90-304">In the case of shared hardware stations, the **Select upon tendering** option is set to **Yes** at the register level.</span></span> <span data-ttu-id="38b90-305">これにより、POS のトランザクションで支払/入金が選択された場合、POS ユーザーはハードウェア ステーションを選択するように求められます。</span><span class="sxs-lookup"><span data-stu-id="38b90-305">The POS user is then prompted to select a hardware station when a tender is selected for a transaction at the POS.</span></span> <span data-ttu-id="38b90-306">ハードウェア ステーションが支払/入金時にのみ選択された場合、ハードウェア ステーションの選択はモバイルのシナリオの POS ワークフローに直接追加されます。</span><span class="sxs-lookup"><span data-stu-id="38b90-306">When the hardware station is selected only at the time of tender, the hardware station selection is added directly to the POS workflow for mobile scenarios.</span></span> <span data-ttu-id="38b90-307">付加的なメリットとして、共有シナリオの場合には支払ターミナルのライン ディスプレイは使用されません。</span><span class="sxs-lookup"><span data-stu-id="38b90-307">As an additional benefit, the line display on the payment terminal isn't used for shared scenarios.</span></span> <span data-ttu-id="38b90-308">支払ターミナルがライン ディスプレイとして使用されると、トランザクションが完了するまでそのターミナルの他のユーザーの使用がブロックされる場合があります。</span><span class="sxs-lookup"><span data-stu-id="38b90-308">If the payment terminal is used as a line display, other users might be blocked from using that terminal until the transaction is completed.</span></span> <span data-ttu-id="38b90-309">モバイルのシナリオでは、ラインはトランザクションに長期に渡って追加されることがあります。</span><span class="sxs-lookup"><span data-stu-id="38b90-309">In mobile scenarios, lines might be added to a transaction over a longer period.</span></span> <span data-ttu-id="38b90-310">したがって、デバイスの最適な使用を保証するために [**支払/入金での選択**] オプションが必要です。</span><span class="sxs-lookup"><span data-stu-id="38b90-310">Therefore, the **Select upon tendering** option is required in order to ensure optimum device availability.</span></span>
 
-### <a name="network-peripherals"></a>ネットワーク周辺機器
+### <a name="network-peripherals"></a><span data-ttu-id="38b90-311">ネットワーク周辺機器</span><span class="sxs-lookup"><span data-stu-id="38b90-311">Network peripherals</span></span>
 
-ハードウェア プロファイルのデバイスのネットワーク指定は、キャッシュ ドロワー、レシート プリンター、支払ターミナルのネットワーク経由での接続を有効にします。
+<span data-ttu-id="38b90-312">ハードウェア プロファイルのデバイスのネットワーク指定は、キャッシュ ドロワー、レシート プリンター、支払ターミナルのネットワーク経由での接続を有効にします。</span><span class="sxs-lookup"><span data-stu-id="38b90-312">The network designation for devices in the hardware profile enables cash drawers, receipt printers, and payment terminals to be connected via a network connection.</span></span>
 
-#### <a name="modern-pos-for-windows"></a>Windows 用の Modern POS
+#### <a name="modern-pos-for-windows"></a><span data-ttu-id="38b90-313">Windows 用の Modern POS</span><span class="sxs-lookup"><span data-stu-id="38b90-313">Modern POS for Windows</span></span>
 
-ネットワーク周辺機器の IP アドレスは、2 箇所で指定できます。 Modern POS の Windows クライアントが一式のネットワーク周辺機器を使用している場合、レジスタ自体のアクション ペインの [**IP コンフィギュレーション**] オプションを使用してこれらのデバイスの IP アドレスを設定する必要があります。 POS レジスタで共有されているネットワーク デバイスの場合、ネットワーク デバイスを割り当てているハードウェア プロファイルを共有ハードウェア ステーションに直接マップすることができます。 IP アドレスを割り当てるには、[**小売店舗**] ページでハードウェア ステーションを選択し、[**ハードウェア ステーション**] セクションの [**IP コンフィギュレーション**] オプションを使用し、そのハードウェア ステーションに割り当てられているネットワーク デバイスを指定します。 ネットワーク デバイスのみを使用するハードウェア ステーションの場合、ハードウェア ステーション自体を配置する必要はありません。 この場合、小売店舗内の場所に従ってネットワーク対応可能なデバイスを概念的にグループ化するためにのみ、ハードウェア ステーションは必要となります。
+<span data-ttu-id="38b90-314">ネットワーク周辺機器の IP アドレスは、2 箇所で指定できます。</span><span class="sxs-lookup"><span data-stu-id="38b90-314">You can specify IP addresses for network peripherals in two places.</span></span> <span data-ttu-id="38b90-315">Modern POS の Windows クライアントが一式のネットワーク周辺機器を使用している場合、レジスタ自体のアクション ペインの [**IP コンフィギュレーション**] オプションを使用してこれらのデバイスの IP アドレスを設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="38b90-315">If the Modern POS Windows client is using a single set of network peripherals, you should set the IP addresses for those devices by using the **IP configuration** option on the Action Pane for the register itself.</span></span> <span data-ttu-id="38b90-316">POS レジスタで共有されているネットワーク デバイスの場合、ネットワーク デバイスを割り当てているハードウェア プロファイルを共有ハードウェア ステーションに直接マップすることができます。</span><span class="sxs-lookup"><span data-stu-id="38b90-316">In the case of network devices that will be shared among POS registers, a hardware profile that has network devices assigned to it can be mapped directly to a shared hardware station.</span></span> <span data-ttu-id="38b90-317">IP アドレスを割り当てるには、[**小売店舗**] ページでハードウェア ステーションを選択し、[**ハードウェア ステーション**] セクションの [**IP コンフィギュレーション**] オプションを使用し、そのハードウェア ステーションに割り当てられているネットワーク デバイスを指定します。</span><span class="sxs-lookup"><span data-stu-id="38b90-317">To assign IP addresses, select that hardware station on the **Retail stores** page, and then use the **IP configuration** option in the **Hardware stations** section to specify the network devices that are assigned to that hardware station.</span></span> <span data-ttu-id="38b90-318">ネットワーク デバイスのみを使用するハードウェア ステーションの場合、ハードウェア ステーション自体を配置する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="38b90-318">For hardware stations that have only network devices, you don't have to deploy the hardware station itself.</span></span> <span data-ttu-id="38b90-319">この場合、小売店舗内の場所に従ってネットワーク対応可能なデバイスを概念的にグループ化するためにのみ、ハードウェア ステーションは必要となります。</span><span class="sxs-lookup"><span data-stu-id="38b90-319">In this case, the hardware station is required only in order to conceptually group network-addressable devices according to their location in the retail store.</span></span>
 
-#### <a name="cloud-pos-modern-pos-for-ios-and-modern-pos-for-android"></a>クラウド POS、iOS 用 Modern POS、アンドロイド用 Modern POS
+#### <a name="cloud-pos-modern-pos-for-ios-and-modern-pos-for-android"></a><span data-ttu-id="38b90-320">クラウド POS、iOS 用 Modern POS、アンドロイド用 Modern POS</span><span class="sxs-lookup"><span data-stu-id="38b90-320">Cloud POS, Modern POS for iOS, and Modern POS for Android</span></span>
 
-物理的に接続されている周辺機器およびネットワーク対応可能な周辺機器の駆動ロジックは、ハードウェア ステーションに含まれています。 したがって Windows 用 以外の Modern POS クライアントの場合、周辺機器がハードウェア ステーションに物理的に接続されているかネットワークに対応しているかに関係なく、POS とそれらの周辺機器との通信を可能にするためには、IIS ハードウェア ステーションを配置し有効化する必要があります。
+<span data-ttu-id="38b90-321">物理的に接続されている周辺機器およびネットワーク対応可能な周辺機器の駆動ロジックは、ハードウェア ステーションに含まれています。</span><span class="sxs-lookup"><span data-stu-id="38b90-321">The logic that drives physically connected and network-addressable peripherals is contained in the hardware station.</span></span> <span data-ttu-id="38b90-322">したがって Windows 用 以外の Modern POS クライアントの場合、周辺機器がハードウェア ステーションに物理的に接続されているかネットワークに対応しているかに関係なく、POS とそれらの周辺機器との通信を可能にするためには、IIS ハードウェア ステーションを配置し有効化する必要があります。</span><span class="sxs-lookup"><span data-stu-id="38b90-322">Therefore, for all POS clients except Modern POS for Windows, an IIS hardware station must be deployed and active to enable the POS to communicate with peripherals, regardless of whether those peripherals are physically connected to a hardware station or addressed over the network.</span></span>
 
-## <a name="setup-and-configuration"></a>設定およびコンフィギュレーション
-### <a name="hardware-station-installation"></a>ハードウェア ステーションのインストール
+## <a name="setup-and-configuration"></a><span data-ttu-id="38b90-323">設定およびコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="38b90-323">Setup and configuration</span></span>
+### <a name="hardware-station-installation"></a><span data-ttu-id="38b90-324">ハードウェア ステーションのインストール</span><span class="sxs-lookup"><span data-stu-id="38b90-324">Hardware station installation</span></span>
 
-詳細については、 [Retail ハードウェア ステーションのコンフィギュレーションとインストール](retail-hardware-station-configuration-installation.md) を参照してください。
+<span data-ttu-id="38b90-325">詳細については、 [Retail ハードウェア ステーションのコンフィギュレーションとインストール](retail-hardware-station-configuration-installation.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="38b90-325">For information, see [Retail hardware station configuration and installation](retail-hardware-station-configuration-installation.md).</span></span>
 
-### <a name="modern-pos-for-windows-setup-and-configuration"></a>Windows 用 Modern POS の設定とコンフィギュレーション
+### <a name="modern-pos-for-windows-setup-and-configuration"></a><span data-ttu-id="38b90-326">Windows 用 Modern POS の設定とコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="38b90-326">Modern POS for Windows setup and configuration</span></span>
 
-詳細については、[Retail Modern POS のコンフィギュレーションとインストール](retail-modern-pos-device-activation.md) を参照してください。
+<span data-ttu-id="38b90-327">詳細については、[Retail Modern POS のコンフィギュレーションとインストール](retail-modern-pos-device-activation.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="38b90-327">For information, see [Retail Modern POS configuration and installation](retail-modern-pos-device-activation.md).</span></span>
 
-### <a name="opos-device-setup-and-configuration"></a>OPOS デバイスの設定とコンフィギュレーション
+### <a name="opos-device-setup-and-configuration"></a><span data-ttu-id="38b90-328">OPOS デバイスの設定とコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="38b90-328">OPOS device setup and configuration</span></span>
 
-OPOS コンポーネントに関する詳細については、このドキュメントの「サポートされているインターフェース」のセクションを参照してください。 通常、OPOS ドライバーはデバイス メーカーから提供されます。 OPOS デバイス ドライバをインストールすると、Windows レジストリの以下のどこか 1 つの場所にキーを追加します:
+<span data-ttu-id="38b90-329">OPOS コンポーネントに関する詳細については、このドキュメントの「サポートされているインターフェース」のセクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="38b90-329">For more information about OPOS components, see the "Supported interfaces" section of this document.</span></span> <span data-ttu-id="38b90-330">通常、OPOS ドライバーはデバイス メーカーから提供されます。</span><span class="sxs-lookup"><span data-stu-id="38b90-330">Typically, OPOS drivers are provided by the device manufacturer.</span></span> <span data-ttu-id="38b90-331">OPOS デバイス ドライバをインストールすると、Windows レジストリの以下のどこか 1 つの場所にキーを追加します:</span><span class="sxs-lookup"><span data-stu-id="38b90-331">When an OPOS device driver is installed, it adds a key to the Windows registry in one of the following locations:</span></span>
 
--   **32 ビット システム:** HKEY\_LOCAL\_MACHINESOFTWAREOLEforRetailServiceOPOS
--   **64 ビット システム:** HKEY\_LOCAL\_MACHINESOFTWAREWOW6432NodeOLEforRetailServiceOPOS
+-   <span data-ttu-id="38b90-332">**32 ビット システム:** HKEY\_LOCAL\_MACHINESOFTWAREOLEforRetailServiceOPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-332">**32-bit system:** HKEY\_LOCAL\_MACHINESOFTWAREOLEforRetailServiceOPOS</span></span>
+-   <span data-ttu-id="38b90-333">**64 ビット システム:** HKEY\_LOCAL\_MACHINESOFTWAREWOW6432NodeOLEforRetailServiceOPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-333">**64-bit system:** HKEY\_LOCAL\_MACHINESOFTWAREWOW6432NodeOLEforRetailServiceOPOS</span></span>
 
-ServiceOPOS レジストリ内では、設定されているデバイスは OPOS デバイス クラスに従って編成されます。 複数のデバイス ドライバが保存されます。
+<span data-ttu-id="38b90-334">ServiceOPOS レジストリ内では、設定されているデバイスは OPOS デバイス クラスに従って編成されます。</span><span class="sxs-lookup"><span data-stu-id="38b90-334">Within the ServiceOPOS registry location, configured devices are organized according to the OPOS device class.</span></span> <span data-ttu-id="38b90-335">複数のデバイス ドライバが保存されます。</span><span class="sxs-lookup"><span data-stu-id="38b90-335">Multiple device drivers are saved.</span></span>
 
-## <a name="supported-scenarios-by-hardware-station-type"></a>ハードウェア ステーションのタイプによりサポートされるシナリオ
-### <a name="client-support--ipc-hardware-station-vs-iis-hardware-station"></a>クライアント サポート – IPC ハードウェア ステーション対 IIS ハードウェア ステーション
+## <a name="supported-scenarios-by-hardware-station-type"></a><span data-ttu-id="38b90-336">ハードウェア ステーションのタイプによりサポートされるシナリオ</span><span class="sxs-lookup"><span data-stu-id="38b90-336">Supported scenarios by hardware station type</span></span>
+### <a name="client-support--ipc-hardware-station-vs-iis-hardware-station"></a><span data-ttu-id="38b90-337">クライアント サポート – IPC ハードウェア ステーション対 IIS ハードウェア ステーション</span><span class="sxs-lookup"><span data-stu-id="38b90-337">Client support – IPC hardware station vs. IIS hardware station</span></span>
 
-次の表に、サポートされるトポロジや配置シナリオを示しています。
+<span data-ttu-id="38b90-338">次の表に、サポートされるトポロジや配置シナリオを示しています。</span><span class="sxs-lookup"><span data-stu-id="38b90-338">The following table shows the topologies and deployment scenarios that are supported.</span></span>
 
-| クライアント      | IPC ハードウェア ステーション | IIS ハードウェア ステーション |
+| <span data-ttu-id="38b90-339">クライアント</span><span class="sxs-lookup"><span data-stu-id="38b90-339">Client</span></span>      | <span data-ttu-id="38b90-340">IPC ハードウェア ステーション</span><span class="sxs-lookup"><span data-stu-id="38b90-340">IPC hardware station</span></span> | <span data-ttu-id="38b90-341">IIS ハードウェア ステーション</span><span class="sxs-lookup"><span data-stu-id="38b90-341">IIS hardware station</span></span> |
 |-------------|----------------------|----------------------|
-| Windows アプリケーション | 有                  | 有                  |
-| クラウド POS   | 無                   | 有                  |
-| Android     | 無                   | 有                  |
-| iOS         | 無                   | 有                  |
+| <span data-ttu-id="38b90-342">Windows アプリケーション</span><span class="sxs-lookup"><span data-stu-id="38b90-342">Windows app</span></span> | <span data-ttu-id="38b90-343">有</span><span class="sxs-lookup"><span data-stu-id="38b90-343">Yes</span></span>                  | <span data-ttu-id="38b90-344">有</span><span class="sxs-lookup"><span data-stu-id="38b90-344">Yes</span></span>                  |
+| <span data-ttu-id="38b90-345">クラウド POS</span><span class="sxs-lookup"><span data-stu-id="38b90-345">Cloud POS</span></span>   | <span data-ttu-id="38b90-346">無</span><span class="sxs-lookup"><span data-stu-id="38b90-346">No</span></span>                   | <span data-ttu-id="38b90-347">有</span><span class="sxs-lookup"><span data-stu-id="38b90-347">Yes</span></span>                  |
+| <span data-ttu-id="38b90-348">Android</span><span class="sxs-lookup"><span data-stu-id="38b90-348">Android</span></span>     | <span data-ttu-id="38b90-349">無</span><span class="sxs-lookup"><span data-stu-id="38b90-349">No</span></span>                   | <span data-ttu-id="38b90-350">有</span><span class="sxs-lookup"><span data-stu-id="38b90-350">Yes</span></span>                  |
+| <span data-ttu-id="38b90-351">iOS</span><span class="sxs-lookup"><span data-stu-id="38b90-351">iOS</span></span>         | <span data-ttu-id="38b90-352">無</span><span class="sxs-lookup"><span data-stu-id="38b90-352">No</span></span>                   | <span data-ttu-id="38b90-353">有</span><span class="sxs-lookup"><span data-stu-id="38b90-353">Yes</span></span>                  |
 
-### <a name="network-peripherals"></a>ネットワーク周辺機器
+### <a name="network-peripherals"></a><span data-ttu-id="38b90-354">ネットワーク周辺機器</span><span class="sxs-lookup"><span data-stu-id="38b90-354">Network peripherals</span></span>
 
-ネットワーク周辺機器は、Windows アプリケーション用 Modern POSに組み込まれたハードウェア ステーションを通じて直接サポートすることができます。 他のすべてのクライアントの場合、IIS ハードウェア ステーションを配置する必要があります。
+<span data-ttu-id="38b90-355">ネットワーク周辺機器は、Windows アプリケーション用 Modern POSに組み込まれたハードウェア ステーションを通じて直接サポートすることができます。</span><span class="sxs-lookup"><span data-stu-id="38b90-355">Network peripherals can be supported directly through the hardware station that is built into the Modern POS for Windows application.</span></span> <span data-ttu-id="38b90-356">他のすべてのクライアントの場合、IIS ハードウェア ステーションを配置する必要があります。</span><span class="sxs-lookup"><span data-stu-id="38b90-356">For all other clients, you must deploy an IIS hardware station.</span></span>
 
-| クライアント      | IPC ハードウェア ステーション | IIS ハードウェア ステーション |
+| <span data-ttu-id="38b90-357">クライアント</span><span class="sxs-lookup"><span data-stu-id="38b90-357">Client</span></span>      | <span data-ttu-id="38b90-358">IPC ハードウェア ステーション</span><span class="sxs-lookup"><span data-stu-id="38b90-358">IPC hardware station</span></span> | <span data-ttu-id="38b90-359">IIS ハードウェア ステーション</span><span class="sxs-lookup"><span data-stu-id="38b90-359">IIS hardware station</span></span> |
 |-------------|----------------------|----------------------|
-| Windows アプリケーション | 有                  | 有                  |
-| クラウド POS   | 無                   | 有                  |
-| Android     | 無                   | 有                  |
-| iOS         | 無                   | 有                  |
+| <span data-ttu-id="38b90-360">Windows アプリケーション</span><span class="sxs-lookup"><span data-stu-id="38b90-360">Windows app</span></span> | <span data-ttu-id="38b90-361">有</span><span class="sxs-lookup"><span data-stu-id="38b90-361">Yes</span></span>                  | <span data-ttu-id="38b90-362">有</span><span class="sxs-lookup"><span data-stu-id="38b90-362">Yes</span></span>                  |
+| <span data-ttu-id="38b90-363">クラウド POS</span><span class="sxs-lookup"><span data-stu-id="38b90-363">Cloud POS</span></span>   | <span data-ttu-id="38b90-364">無</span><span class="sxs-lookup"><span data-stu-id="38b90-364">No</span></span>                   | <span data-ttu-id="38b90-365">有</span><span class="sxs-lookup"><span data-stu-id="38b90-365">Yes</span></span>                  |
+| <span data-ttu-id="38b90-366">Android</span><span class="sxs-lookup"><span data-stu-id="38b90-366">Android</span></span>     | <span data-ttu-id="38b90-367">無</span><span class="sxs-lookup"><span data-stu-id="38b90-367">No</span></span>                   | <span data-ttu-id="38b90-368">有</span><span class="sxs-lookup"><span data-stu-id="38b90-368">Yes</span></span>                  |
+| <span data-ttu-id="38b90-369">iOS</span><span class="sxs-lookup"><span data-stu-id="38b90-369">iOS</span></span>         | <span data-ttu-id="38b90-370">無</span><span class="sxs-lookup"><span data-stu-id="38b90-370">No</span></span>                   | <span data-ttu-id="38b90-371">有</span><span class="sxs-lookup"><span data-stu-id="38b90-371">Yes</span></span>                  |
 
-## <a name="supported-device-types-by-hardware-station-type"></a>ハードウェア ステーションのタイプによりサポートされるデバイス タイプ
-### <a name="modern-pos-for-windows-with-an-ipc-built-in-hardware-station"></a>IPC (組み込み) ハードウェア ステーションを含む Windows 用 Modern POS
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>サポートされているデバイス クラス</th>
-<th>サポートされているインターフェース</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>プリンター</td>
-<td><ul>
-<li>OPOS</li>
-<li>Windows ドライバー</li>
-<li>デバイス</li>
-<li>ネットワーク</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>プリンター 2</td>
-<td><ul>
-<li>OPOS</li>
-<li>Windows ドライバー</li>
-<li>デバイス</li>
-<li>ネットワーク</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>ライン ディスプレイ</td>
-<td>OPOS</td>
-</tr>
-<tr class="even">
-<td>デュアル ディスプレイ</td>
-<td>Windows ドライバー</td>
-</tr>
-<tr class="odd">
-<td>MSR</td>
-<td><ul>
-<li>OPOS</li>
-<li>UWP (設定の必要はありません)。</li>
-<li>キーボード ウェッジ (設定の必要はありません)。</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>手形振出人</td>
-<td><ul>
-<li>OPOS</li>
-<li>ネットワーク <strong>注記:</strong> ドロワーに [<strong>共有シフトを使用</strong>] が設定されている場合、ドロワーは 1 つだけ設定できます。</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>ドロワー 2</td>
-<td><ul>
-<li>OPOS</li>
-<li>ネットワーク <strong>注記:</strong> ドロワーに [<strong>共有シフトを使用</strong>] が設定されている場合、ドロワーは 1 つだけ設定できます。</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>スキャナー</td>
-<td><ul>
-<li>OPOS</li>
-<li>UWP (設定の必要はありません)。</li>
-<li>キーボード ウェッジ (設定の必要はありません)。</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>スキャナー 2</td>
-<td><ul>
-<li>OPOS</li>
-<li>UWP (設定の必要はありません)。</li>
-<li>キーボード ウェッジ (設定の必要はありません)。</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>スケール</td>
-<td>OPOS</td>
-</tr>
-<tr class="odd">
-<td>PIN パッド</td>
-<td>OPOS (サポートは、支払コネクタのカスタマイズによって提供されます)。</td>
-</tr>
-<tr class="even">
-<td>署名キャプチャ</td>
-<td>OPOS</td>
-</tr>
-<tr class="odd">
-<td>支払ターミナル</td>
-<td><ul>
-<li>カスタム デバイス サポート</li>
-<li>ネットワーク (詳細については、 支払コネクタのドキュメントを参照してください。)</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
-### <a name="all-modern-pos-clients-that-have-a-dedicated-iis-hardware-station"></a>専用 IIS ハードウェア ステーションを持つすべての Modern POS クライアント
-
-**注記:** IIS ハードウェア ステーションが「専用」である場合、POS クライアントとハードウェア ステーション間には 1 対 1 の関係があります。
+## <a name="supported-device-types-by-hardware-station-type"></a><span data-ttu-id="38b90-372">ハードウェア ステーションのタイプによりサポートされるデバイス タイプ</span><span class="sxs-lookup"><span data-stu-id="38b90-372">Supported device types by hardware station type</span></span>
+### <a name="modern-pos-for-windows-with-an-ipc-built-in-hardware-station"></a><span data-ttu-id="38b90-373">IPC (組み込み) ハードウェア ステーションを含む Windows 用 Modern POS</span><span class="sxs-lookup"><span data-stu-id="38b90-373">Modern POS for Windows with an IPC (built-in) hardware station</span></span>
 
 <table>
 <colgroup>
@@ -341,82 +239,100 @@ ServiceOPOS レジストリ内では、設定されているデバイスは OPOS
 </colgroup>
 <thead>
 <tr class="header">
-<th>サポートされているデバイス クラス</th>
-<th>サポートされているインターフェース</th>
+<th><span data-ttu-id="38b90-374">サポートされているデバイス クラス</span><span class="sxs-lookup"><span data-stu-id="38b90-374">Supported device class</span></span></th>
+<th><span data-ttu-id="38b90-375">サポートされているインターフェース</span><span class="sxs-lookup"><span data-stu-id="38b90-375">Supported interfaces</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>プリンター</td>
+<td><span data-ttu-id="38b90-376">プリンター</span><span class="sxs-lookup"><span data-stu-id="38b90-376">Printer</span></span></td>
 <td><ul>
-<li>OPOS</li>
-<li>Windows ドライバー <strong>注記:</strong> ネットワーク上の Windows プリンターの場合、ハードウェア ステーションのユーザーはプリンタへのアクセス許可が必要です。</li>
-<li>ネットワーク</li>
+<li><span data-ttu-id="38b90-377">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-377">OPOS</span></span></li>
+<li><span data-ttu-id="38b90-378">Windows ドライバー</span><span class="sxs-lookup"><span data-stu-id="38b90-378">Windows driver</span></span></li>
+<li><span data-ttu-id="38b90-379">デバイス</span><span class="sxs-lookup"><span data-stu-id="38b90-379">Device</span></span></li>
+<li><span data-ttu-id="38b90-380">ネットワーク</span><span class="sxs-lookup"><span data-stu-id="38b90-380">Network</span></span></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>プリンター 2</td>
+<td><span data-ttu-id="38b90-381">プリンター 2</span><span class="sxs-lookup"><span data-stu-id="38b90-381">Printer 2</span></span></td>
 <td><ul>
-<li>OPOS</li>
-<li>Windows ドライバー</li>
-<li>ネットワーク</li>
+<li><span data-ttu-id="38b90-382">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-382">OPOS</span></span></li>
+<li><span data-ttu-id="38b90-383">Windows ドライバー</span><span class="sxs-lookup"><span data-stu-id="38b90-383">Windows driver</span></span></li>
+<li><span data-ttu-id="38b90-384">デバイス</span><span class="sxs-lookup"><span data-stu-id="38b90-384">Device</span></span></li>
+<li><span data-ttu-id="38b90-385">ネットワーク</span><span class="sxs-lookup"><span data-stu-id="38b90-385">Network</span></span></li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td>ライン ディスプレイ</td>
-<td>OPOS</td>
+<td><span data-ttu-id="38b90-386">ライン ディスプレイ</span><span class="sxs-lookup"><span data-stu-id="38b90-386">Line display</span></span></td>
+<td><span data-ttu-id="38b90-387">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-387">OPOS</span></span></td>
 </tr>
 <tr class="even">
-<td>MSR</td>
-<td>OPOS</td>
+<td><span data-ttu-id="38b90-388">デュアル ディスプレイ</span><span class="sxs-lookup"><span data-stu-id="38b90-388">Dual display</span></span></td>
+<td><span data-ttu-id="38b90-389">Windows ドライバー</span><span class="sxs-lookup"><span data-stu-id="38b90-389">Windows driver</span></span></td>
 </tr>
 <tr class="odd">
-<td>手形振出人</td>
+<td><span data-ttu-id="38b90-390">MSR</span><span class="sxs-lookup"><span data-stu-id="38b90-390">MSR</span></span></td>
 <td><ul>
-<li>OPOS</li>
-<li>ネットワーク <strong>注記:</strong> ドロワーに [<strong>共有シフトを使用</strong>] が設定されている場合、ハードウェア プロファイル毎にドロワーは 1 つだけ設定できます。</li>
+<li><span data-ttu-id="38b90-391">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-391">OPOS</span></span></li>
+<li><span data-ttu-id="38b90-392">UWP (設定の必要はありません)。</span><span class="sxs-lookup"><span data-stu-id="38b90-392">UWP (No setup is required.)</span></span></li>
+<li><span data-ttu-id="38b90-393">キーボード ウェッジ (設定の必要はありません)。</span><span class="sxs-lookup"><span data-stu-id="38b90-393">Keyboard wedge (No setup is required.)</span></span></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>ドロワー 2</td>
+<td><span data-ttu-id="38b90-394">手形振出人</span><span class="sxs-lookup"><span data-stu-id="38b90-394">Drawer</span></span></td>
 <td><ul>
-<li>OPOS</li>
-<li>ネットワーク</li>
+<li><span data-ttu-id="38b90-395">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-395">OPOS</span></span></li>
+<li><span data-ttu-id="38b90-396">ネットワーク <strong>注記:</strong> ドロワーに [<strong>共有シフトを使用</strong>] が設定されている場合、ドロワーは 1 つだけ設定できます。</span><span class="sxs-lookup"><span data-stu-id="38b90-396">Network <strong>Note:</strong> Only one drawer can be set up if <strong>Use shared shift</strong> is configured on the drawer.</span></span></li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td>スキャナー</td>
-<td>OPOS</td>
-</tr>
-<tr class="even">
-<td>スキャナー 2</td>
-<td>OPOS</td>
-</tr>
-<tr class="odd">
-<td>スケール</td>
-<td>OPOS</td>
-</tr>
-<tr class="even">
-<td>PIN パッド</td>
-<td>OPOS (サポートは、支払コネクタのカスタマイズによって提供されます)。</td>
-</tr>
-<tr class="odd">
-<td>Sig. キャプチャ</td>
-<td>OPOS</td>
-</tr>
-<tr class="even">
-<td>支払ターミナル</td>
+<td><span data-ttu-id="38b90-397">ドロワー 2</span><span class="sxs-lookup"><span data-stu-id="38b90-397">Drawer 2</span></span></td>
 <td><ul>
-<li>カスタム デバイス サポート</li>
-<li>ネットワーク (詳細については、 支払コネクタのドキュメントを参照してください。)</li>
+<li><span data-ttu-id="38b90-398">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-398">OPOS</span></span></li>
+<li><span data-ttu-id="38b90-399">ネットワーク <strong>注記:</strong> ドロワーに [<strong>共有シフトを使用</strong>] が設定されている場合、ドロワーは 1 つだけ設定できます。</span><span class="sxs-lookup"><span data-stu-id="38b90-399">Network <strong>Note:</strong> Only one drawer can be set up if <strong>Use shared shift</strong> is configured on the drawer.</span></span></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><span data-ttu-id="38b90-400">スキャナー</span><span class="sxs-lookup"><span data-stu-id="38b90-400">Scanner</span></span></td>
+<td><ul>
+<li><span data-ttu-id="38b90-401">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-401">OPOS</span></span></li>
+<li><span data-ttu-id="38b90-402">UWP (設定の必要はありません)。</span><span class="sxs-lookup"><span data-stu-id="38b90-402">UWP (No setup is required.)</span></span></li>
+<li><span data-ttu-id="38b90-403">キーボード ウェッジ (設定の必要はありません)。</span><span class="sxs-lookup"><span data-stu-id="38b90-403">Keyboard wedge (No setup is required.)</span></span></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><span data-ttu-id="38b90-404">スキャナー 2</span><span class="sxs-lookup"><span data-stu-id="38b90-404">Scanner 2</span></span></td>
+<td><ul>
+<li><span data-ttu-id="38b90-405">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-405">OPOS</span></span></li>
+<li><span data-ttu-id="38b90-406">UWP (設定の必要はありません)。</span><span class="sxs-lookup"><span data-stu-id="38b90-406">UWP (No setup is required.)</span></span></li>
+<li><span data-ttu-id="38b90-407">キーボード ウェッジ (設定の必要はありません)。</span><span class="sxs-lookup"><span data-stu-id="38b90-407">Keyboard wedge (No setup is required.)</span></span></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><span data-ttu-id="38b90-408">スケール</span><span class="sxs-lookup"><span data-stu-id="38b90-408">Scale</span></span></td>
+<td><span data-ttu-id="38b90-409">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-409">OPOS</span></span></td>
+</tr>
+<tr class="odd">
+<td><span data-ttu-id="38b90-410">PIN パッド</span><span class="sxs-lookup"><span data-stu-id="38b90-410">PIN pad</span></span></td>
+<td><span data-ttu-id="38b90-411">OPOS (サポートは、支払コネクタのカスタマイズによって提供されます)。</span><span class="sxs-lookup"><span data-stu-id="38b90-411">OPOS (Support is provided through customization of the payment connector.)</span></span></td>
+</tr>
+<tr class="even">
+<td><span data-ttu-id="38b90-412">署名キャプチャ</span><span class="sxs-lookup"><span data-stu-id="38b90-412">Signature capture</span></span></td>
+<td><span data-ttu-id="38b90-413">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-413">OPOS</span></span></td>
+</tr>
+<tr class="odd">
+<td><span data-ttu-id="38b90-414">支払ターミナル</span><span class="sxs-lookup"><span data-stu-id="38b90-414">Payment terminal</span></span></td>
+<td><ul>
+<li><span data-ttu-id="38b90-415">カスタム デバイス サポート</span><span class="sxs-lookup"><span data-stu-id="38b90-415">Custom device support</span></span></li>
+<li><span data-ttu-id="38b90-416">ネットワーク (詳細については、 支払コネクタのドキュメントを参照してください。)</span><span class="sxs-lookup"><span data-stu-id="38b90-416">Network (For more information, see the payment connector documentation.)</span></span></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
-### <a name="all-modern-pos-clients-that-have-a-shared-iis-hardware-station"></a>共有 IIS ハードウェア ステーションを持つすべての Modern POS クライアント
+### <a name="all-modern-pos-clients-that-have-a-dedicated-iis-hardware-station"></a><span data-ttu-id="38b90-417">専用 IIS ハードウェア ステーションを持つすべての Modern POS クライアント</span><span class="sxs-lookup"><span data-stu-id="38b90-417">All Modern POS clients that have a dedicated IIS hardware station</span></span>
 
-**注記:** IIS ハードウェア ステーションが「共有」の場合、複数のデバイスがハードウェア ステーションを同時に使用できます。 このシナリオでは、次の表に示すデバイスのみを使用する必要があります。 バーコード スキャナーや MSR など、この表にないデバイスを共有しようとする場合、複数のデバイスが同じ周辺機器を要求しようとするとエラーが発生します。 将来、そのようなコンフィギュレーションは明示的に禁止されます。
+<span data-ttu-id="38b90-418">**注記:** IIS ハードウェア ステーションが「専用」である場合、POS クライアントとハードウェア ステーション間には 1 対 1 の関係があります。</span><span class="sxs-lookup"><span data-stu-id="38b90-418">**Note:** When the IIS hardware station is “dedicated,” there is a one-to-one relationship between the POS client and the hardware station.</span></span>
 
 <table>
 <colgroup>
@@ -425,386 +341,470 @@ ServiceOPOS レジストリ内では、設定されているデバイスは OPOS
 </colgroup>
 <thead>
 <tr class="header">
-<th>サポートされているデバイス クラス</th>
-<th>サポートされているインターフェース</th>
+<th><span data-ttu-id="38b90-419">サポートされているデバイス クラス</span><span class="sxs-lookup"><span data-stu-id="38b90-419">Supported device class</span></span></th>
+<th><span data-ttu-id="38b90-420">サポートされているインターフェース</span><span class="sxs-lookup"><span data-stu-id="38b90-420">Supported interfaces</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>プリンター</td>
+<td><span data-ttu-id="38b90-421">プリンター</span><span class="sxs-lookup"><span data-stu-id="38b90-421">Printer</span></span></td>
 <td><ul>
-<li>OPOS</li>
-<li>Windows ドライバー <strong>注記:</strong> ネットワーク上の Windows プリンターの場合、ハードウェア ステーションのユーザーはプリンタへのアクセス許可が必要です。</li>
-<li>ネットワーク</li>
+<li><span data-ttu-id="38b90-422">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-422">OPOS</span></span></li>
+<li><span data-ttu-id="38b90-423">Windows ドライバー <strong>注記:</strong> ネットワーク上の Windows プリンターの場合、ハードウェア ステーションのユーザーはプリンタへのアクセス許可が必要です。</span><span class="sxs-lookup"><span data-stu-id="38b90-423">Windows driver <strong>Note:</strong> For Windows printers on a network, the user of the hardware station must have permission to access the printer.</span></span></li>
+<li><span data-ttu-id="38b90-424">ネットワーク</span><span class="sxs-lookup"><span data-stu-id="38b90-424">Network</span></span></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>プリンター 2</td>
+<td><span data-ttu-id="38b90-425">プリンター 2</span><span class="sxs-lookup"><span data-stu-id="38b90-425">Printer 2</span></span></td>
 <td><ul>
-<li>OPOS</li>
-<li>Windows ドライバー</li>
-<li>ネットワーク</li>
+<li><span data-ttu-id="38b90-426">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-426">OPOS</span></span></li>
+<li><span data-ttu-id="38b90-427">Windows ドライバー</span><span class="sxs-lookup"><span data-stu-id="38b90-427">Windows driver</span></span></li>
+<li><span data-ttu-id="38b90-428">ネットワーク</span><span class="sxs-lookup"><span data-stu-id="38b90-428">Network</span></span></li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td>手形振出人</td>
+<td><span data-ttu-id="38b90-429">ライン ディスプレイ</span><span class="sxs-lookup"><span data-stu-id="38b90-429">Line display</span></span></td>
+<td><span data-ttu-id="38b90-430">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-430">OPOS</span></span></td>
+</tr>
+<tr class="even">
+<td><span data-ttu-id="38b90-431">MSR</span><span class="sxs-lookup"><span data-stu-id="38b90-431">MSR</span></span></td>
+<td><span data-ttu-id="38b90-432">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-432">OPOS</span></span></td>
+</tr>
+<tr class="odd">
+<td><span data-ttu-id="38b90-433">手形振出人</span><span class="sxs-lookup"><span data-stu-id="38b90-433">Drawer</span></span></td>
 <td><ul>
-<li>OPOS</li>
-<li>ネットワーク <strong>注記:</strong> ドロワーに [<strong>共有シフトを使用</strong>] が設定されている場合、ハードウェア プロファイル毎にドロワーは 1 つだけ設定できます。</li>
+<li><span data-ttu-id="38b90-434">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-434">OPOS</span></span></li>
+<li><span data-ttu-id="38b90-435">ネットワーク <strong>注記:</strong> ドロワーに [<strong>共有シフトを使用</strong>] が設定されている場合、ハードウェア プロファイル毎にドロワーは 1 つだけ設定できます。</span><span class="sxs-lookup"><span data-stu-id="38b90-435">Network <strong>Note:</strong> Only one drawer per hardware profile can be set up if <strong>Use shared shift</strong> is configured on the drawer.</span></span></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>ドロワー 2</td>
+<td><span data-ttu-id="38b90-436">ドロワー 2</span><span class="sxs-lookup"><span data-stu-id="38b90-436">Drawer 2</span></span></td>
 <td><ul>
-<li>OPOS</li>
-<li>ネットワーク</li>
+<li><span data-ttu-id="38b90-437">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-437">OPOS</span></span></li>
+<li><span data-ttu-id="38b90-438">ネットワーク</span><span class="sxs-lookup"><span data-stu-id="38b90-438">Network</span></span></li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td>支払ターミナル</td>
+<td><span data-ttu-id="38b90-439">スキャナー</span><span class="sxs-lookup"><span data-stu-id="38b90-439">Scanner</span></span></td>
+<td><span data-ttu-id="38b90-440">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-440">OPOS</span></span></td>
+</tr>
+<tr class="even">
+<td><span data-ttu-id="38b90-441">スキャナー 2</span><span class="sxs-lookup"><span data-stu-id="38b90-441">Scanner 2</span></span></td>
+<td><span data-ttu-id="38b90-442">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-442">OPOS</span></span></td>
+</tr>
+<tr class="odd">
+<td><span data-ttu-id="38b90-443">スケール</span><span class="sxs-lookup"><span data-stu-id="38b90-443">Scale</span></span></td>
+<td><span data-ttu-id="38b90-444">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-444">OPOS</span></span></td>
+</tr>
+<tr class="even">
+<td><span data-ttu-id="38b90-445">PIN パッド</span><span class="sxs-lookup"><span data-stu-id="38b90-445">PIN pad</span></span></td>
+<td><span data-ttu-id="38b90-446">OPOS (サポートは、支払コネクタのカスタマイズによって提供されます)。</span><span class="sxs-lookup"><span data-stu-id="38b90-446">OPOS (Support is provided through customization of the payment connector.)</span></span></td>
+</tr>
+<tr class="odd">
+<td><span data-ttu-id="38b90-447">Sig.</span><span class="sxs-lookup"><span data-stu-id="38b90-447">Sig.</span></span> <span data-ttu-id="38b90-448">キャプチャ</span><span class="sxs-lookup"><span data-stu-id="38b90-448">capture</span></span></td>
+<td><span data-ttu-id="38b90-449">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-449">OPOS</span></span></td>
+</tr>
+<tr class="even">
+<td><span data-ttu-id="38b90-450">支払ターミナル</span><span class="sxs-lookup"><span data-stu-id="38b90-450">Payment terminal</span></span></td>
 <td><ul>
-<li>カスタム デバイス サポート</li>
-<li>ネットワーク (詳細については、 支払コネクタのドキュメントを参照してください。)</li>
+<li><span data-ttu-id="38b90-451">カスタム デバイス サポート</span><span class="sxs-lookup"><span data-stu-id="38b90-451">Custom device support</span></span></li>
+<li><span data-ttu-id="38b90-452">ネットワーク (詳細については、 支払コネクタのドキュメントを参照してください。)</span><span class="sxs-lookup"><span data-stu-id="38b90-452">Network (For more information, see the payment connector documentation.)</span></span></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="configuration-for-supported-scenarios"></a>サポートされるシナリオのコンフィギュレーション
-ハードウェア プロファイルの作成方法の詳細については、[レジスターとハードウェア ステーションを含むチャネル クライアントの定義と管理](define-maintain-channel-clients-registers-hw-stations.md)を参照してください。 **注記:** Microsoft Dynamics 365 for Retail バージョン 1611 では、ハードウェア ステーションのプロファイルは使用されなくなりました。 これまでハードウェア ステーションのプロファイルで設定されていた属性は、ハードウェア ステーション自体の一部になりました。
+### <a name="all-modern-pos-clients-that-have-a-shared-iis-hardware-station"></a><span data-ttu-id="38b90-453">共有 IIS ハードウェア ステーションを持つすべての Modern POS クライアント</span><span class="sxs-lookup"><span data-stu-id="38b90-453">All Modern POS clients that have a shared IIS hardware station</span></span>
 
-### <a name="modern-pos-for-windows-with-an-ipc-built-in-hardware-station"></a>IPC (組み込み) ハードウェア ステーションを含む Windows 用 Modern POS
+<span data-ttu-id="38b90-454">**注記:** IIS ハードウェア ステーションが「共有」の場合、複数のデバイスがハードウェア ステーションを同時に使用できます。</span><span class="sxs-lookup"><span data-stu-id="38b90-454">**Note:** When the IIS hardware station is “shared,” multiple devices can use the hardware station at the same time.</span></span> <span data-ttu-id="38b90-455">このシナリオでは、次の表に示すデバイスのみを使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="38b90-455">For this scenario, you should use only the devices that are listed in the following table.</span></span> <span data-ttu-id="38b90-456">バーコード スキャナーや MSR など、この表にないデバイスを共有しようとする場合、複数のデバイスが同じ周辺機器を要求しようとするとエラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="38b90-456">If you try to share devices that aren't listed here, such as bar code scanners and MSRs, errors will occur when multiple devices try to claim the same peripheral.</span></span> <span data-ttu-id="38b90-457">将来、そのようなコンフィギュレーションは明示的に禁止されます。</span><span class="sxs-lookup"><span data-stu-id="38b90-457">In the future, such a configuration will be explicitly prevented.</span></span>
 
-このコンフィギュレーションは、従来の固定 POS レジスターの最も一般的なコンフィギュレーションです。 このシナリオでは、ハードウェア プロファイルの情報は、レジスタ自体に直接マップされます。 EFT ターミナル番号も、レジスタ自体に設定する必要があります。 このコンフィギュレーションを設定するには、次の手順に従います。
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><span data-ttu-id="38b90-458">サポートされているデバイス クラス</span><span class="sxs-lookup"><span data-stu-id="38b90-458">Supported device class</span></span></th>
+<th><span data-ttu-id="38b90-459">サポートされているインターフェース</span><span class="sxs-lookup"><span data-stu-id="38b90-459">Supported interfaces</span></span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span data-ttu-id="38b90-460">プリンター</span><span class="sxs-lookup"><span data-stu-id="38b90-460">Printer</span></span></td>
+<td><ul>
+<li><span data-ttu-id="38b90-461">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-461">OPOS</span></span></li>
+<li><span data-ttu-id="38b90-462">Windows ドライバー <strong>注記:</strong> ネットワーク上の Windows プリンターの場合、ハードウェア ステーションのユーザーはプリンタへのアクセス許可が必要です。</span><span class="sxs-lookup"><span data-stu-id="38b90-462">Windows driver <strong>Note:</strong> For Windows printers on a network, the user of the hardware station must have permission to access the printer.</span></span></li>
+<li><span data-ttu-id="38b90-463">ネットワーク</span><span class="sxs-lookup"><span data-stu-id="38b90-463">Network</span></span></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><span data-ttu-id="38b90-464">プリンター 2</span><span class="sxs-lookup"><span data-stu-id="38b90-464">Printer 2</span></span></td>
+<td><ul>
+<li><span data-ttu-id="38b90-465">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-465">OPOS</span></span></li>
+<li><span data-ttu-id="38b90-466">Windows ドライバー</span><span class="sxs-lookup"><span data-stu-id="38b90-466">Windows driver</span></span></li>
+<li><span data-ttu-id="38b90-467">ネットワーク</span><span class="sxs-lookup"><span data-stu-id="38b90-467">Network</span></span></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><span data-ttu-id="38b90-468">手形振出人</span><span class="sxs-lookup"><span data-stu-id="38b90-468">Drawer</span></span></td>
+<td><ul>
+<li><span data-ttu-id="38b90-469">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-469">OPOS</span></span></li>
+<li><span data-ttu-id="38b90-470">ネットワーク <strong>注記:</strong> ドロワーに [<strong>共有シフトを使用</strong>] が設定されている場合、ハードウェア プロファイル毎にドロワーは 1 つだけ設定できます。</span><span class="sxs-lookup"><span data-stu-id="38b90-470">Network <strong>Note:</strong> Only one drawer per hardware profile can be set up if <strong>Use shared shift</strong> is configured on the drawer.</span></span></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><span data-ttu-id="38b90-471">ドロワー 2</span><span class="sxs-lookup"><span data-stu-id="38b90-471">Drawer 2</span></span></td>
+<td><ul>
+<li><span data-ttu-id="38b90-472">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-472">OPOS</span></span></li>
+<li><span data-ttu-id="38b90-473">ネットワーク</span><span class="sxs-lookup"><span data-stu-id="38b90-473">Network</span></span></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><span data-ttu-id="38b90-474">支払ターミナル</span><span class="sxs-lookup"><span data-stu-id="38b90-474">Payment terminal</span></span></td>
+<td><ul>
+<li><span data-ttu-id="38b90-475">カスタム デバイス サポート</span><span class="sxs-lookup"><span data-stu-id="38b90-475">Custom device support</span></span></li>
+<li><span data-ttu-id="38b90-476">ネットワーク (詳細については、 支払コネクタのドキュメントを参照してください。)</span><span class="sxs-lookup"><span data-stu-id="38b90-476">Network (For more information, see the payment connector documentation.)</span></span></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
 
-1.  すべての必須の周辺機器が設定されたハードウェア プロファイルを作成します。
-2.  POS レジスターにハードウェア プロファイルをマップします。
-3.  POS レジスタが使用される小売店舗用に**専用**タイプのハードウェア ステーションを作成します。 説明がオプションです。 **注記:***ハードウェア ステーションその他のプロパティを設定する必要はありません。 ハードウェア プロファイルなど他の必須情報はすべて、レジスタ自体から取得されます。
-4.  [**小売**] &gt; [**小売 IT**] &gt; [**配送スケジュール**] の順にクリックします。
-5.  店舗に新しいハードウェア プロファイルを同期させるため、[**1090**] 配分スケジュールを選択します。 POS に変更を同期させるため、[**今すぐ実行**] をクリックします。
-6.  店舗に新しいハードウェア ステーションを同期させるため、[**1040**] 配分スケジュールを選択します。 POS に変更を同期させるため、[**今すぐ実行**] をクリックします。
-7.  Windows 用 Modern POS をインストールして有効化します。
-8.  Windows 用 Modern POS を起動し、接続されている周辺機器の使用を開始します。
+## <a name="configuration-for-supported-scenarios"></a><span data-ttu-id="38b90-477">サポートされるシナリオのコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="38b90-477">Configuration for supported scenarios</span></span>
+<span data-ttu-id="38b90-478">ハードウェア プロファイルの作成方法の詳細については、[レジスターとハードウェア ステーションを含むチャネル クライアントの定義と管理](define-maintain-channel-clients-registers-hw-stations.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="38b90-478">For more information about how to create hardware profiles, see [Define and maintain channel clients, including registers and hardware stations](define-maintain-channel-clients-registers-hw-stations.md).</span></span> <span data-ttu-id="38b90-479">**注記:** Microsoft Dynamics 365 for Retail バージョン 1611 では、ハードウェア ステーションのプロファイルは使用されなくなりました。</span><span class="sxs-lookup"><span data-stu-id="38b90-479">**Note:** For Microsoft Dynamics 365 for Retail version 1611, the hardware station profile is no longer used.</span></span> <span data-ttu-id="38b90-480">これまでハードウェア ステーションのプロファイルで設定されていた属性は、ハードウェア ステーション自体の一部になりました。</span><span class="sxs-lookup"><span data-stu-id="38b90-480">Attributes that you previously set up in the hardware station profile are now part of the hardware station itself.</span></span>
 
-### <a name="all-modern-pos-clients-that-have-a-dedicated-iis-hardware-station"></a>専用 IIS ハードウェア ステーションを持つすべての Modern POS クライアント
+### <a name="modern-pos-for-windows-with-an-ipc-built-in-hardware-station"></a><span data-ttu-id="38b90-481">IPC (組み込み) ハードウェア ステーションを含む Windows 用 Modern POS</span><span class="sxs-lookup"><span data-stu-id="38b90-481">Modern POS for Windows with an IPC (built-in) hardware station</span></span>
 
-1 つの POS レジスター専用で使用されているハードウェア ステーションを持つすべての Modern POS クライアントに、このコンフィギュレーションは使用できます。 このコンフィギュレーションを設定するには、次の手順に従います。
+<span data-ttu-id="38b90-482">このコンフィギュレーションは、従来の固定 POS レジスターの最も一般的なコンフィギュレーションです。</span><span class="sxs-lookup"><span data-stu-id="38b90-482">This configuration is the most typical configuration for traditional, fixed POS registers.</span></span> <span data-ttu-id="38b90-483">このシナリオでは、ハードウェア プロファイルの情報は、レジスタ自体に直接マップされます。</span><span class="sxs-lookup"><span data-stu-id="38b90-483">For this scenario, the hardware profile information is mapped directly to the register itself.</span></span> <span data-ttu-id="38b90-484">EFT ターミナル番号も、レジスタ自体に設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="38b90-484">The EFT terminal number should also be set on the register itself.</span></span> <span data-ttu-id="38b90-485">このコンフィギュレーションを設定するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="38b90-485">To set up this configuration, follow these steps.</span></span>
 
-1.  すべての必須の周辺機器が設定されたハードウェア プロファイルを作成します。
-2.  POS レジスタが使用される小売店舗用に**専用**タイプのハードウェア ステーションを作成します。
-3.  専用のハードウェア ステーションで、次のプロパティを設定します:
-    -   **ホスト名** – ハードウェア ステーションをホストするコンピュータの名前。 **注記:** クラウド POS の場合、クラウド POS が実行されているローカル コンピュータの特定は [**localhost**] の使用で解決できます。 ただし、クラウド POS とハードウェア ステーションのペアリングに必要な証明書は、コンピュータ名が「Localhost」となっている必要があります。 問題を回避するには、必要に応じて、店舗の各専用ハードウェア ステーションのインスタンス一覧をリストすることをお勧めします。 各ハードウェア ステーション毎に、ハードウェア ステーションが配置される特定のコンピュータ名がホスト名となる必要があります。
-    -   **ポート** – ハードウェア ステーションが Modern POS クライアントとの通信に使用するポート。
-    -   **ハードウェア プロファイル** – ハードウェア ステーション自体にハードウェア プロファイルが提供されない場合、レジスターに割り当てられているハードウェア プロファイルが使用されます。
-    -   **EFT POS の数** – EFT 認証の送信に使用する EFT ターミナル ID。 この ID は、クレジット カード プロセッサによって提供されます。
-    -   **パッケージ名** – ハードウェア ステーションの配置に使用するハードウェア ステーション パッケージ。
+1.  <span data-ttu-id="38b90-486">すべての必須の周辺機器が設定されたハードウェア プロファイルを作成します。</span><span class="sxs-lookup"><span data-stu-id="38b90-486">Create a hardware profile where all the required peripherals are configured.</span></span>
+2.  <span data-ttu-id="38b90-487">POS レジスターにハードウェア プロファイルをマップします。</span><span class="sxs-lookup"><span data-stu-id="38b90-487">Map the hardware profile to the POS register.</span></span>
+3.  <span data-ttu-id="38b90-488">POS レジスタが使用される小売店舗用に**専用**タイプのハードウェア ステーションを作成します。</span><span class="sxs-lookup"><span data-stu-id="38b90-488">Create a hardware station of the **Dedicated** type for the retail store where the POS register will be used.</span></span> <span data-ttu-id="38b90-489">説明がオプションです。</span><span class="sxs-lookup"><span data-stu-id="38b90-489">A description is optional.</span></span> <span data-ttu-id="38b90-490">**注記:***ハードウェア ステーションその他のプロパティを設定する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="38b90-490">**Note:** You don't have to set any other properties on the hardware station.</span></span> <span data-ttu-id="38b90-491">ハードウェア プロファイルなど他の必須情報はすべて、レジスタ自体から取得されます。</span><span class="sxs-lookup"><span data-stu-id="38b90-491">All other required information, such as the hardware profile, will come from the register itself.</span></span>
+4.  <span data-ttu-id="38b90-492">[**小売**] &gt; [**小売 IT**] &gt; [**配送スケジュール**] の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="38b90-492">Click **Retail** &gt; **Retail IT** &gt; **Distribution schedule**.</span></span>
+5.  <span data-ttu-id="38b90-493">店舗に新しいハードウェア プロファイルを同期させるため、[**1090**] 配分スケジュールを選択します。</span><span class="sxs-lookup"><span data-stu-id="38b90-493">Select the **1090** distribution schedule to sync the new hardware profile to the store.</span></span> <span data-ttu-id="38b90-494">POS に変更を同期させるため、[**今すぐ実行**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="38b90-494">Click **Run now** to sync changes to the POS.</span></span>
+6.  <span data-ttu-id="38b90-495">店舗に新しいハードウェア ステーションを同期させるため、[**1040**] 配分スケジュールを選択します。</span><span class="sxs-lookup"><span data-stu-id="38b90-495">Select the **1040** distribution schedule to sync the new hardware station to the store.</span></span> <span data-ttu-id="38b90-496">POS に変更を同期させるため、[**今すぐ実行**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="38b90-496">Click **Run now** to sync changes to the POS.</span></span>
+7.  <span data-ttu-id="38b90-497">Windows 用 Modern POS をインストールして有効化します。</span><span class="sxs-lookup"><span data-stu-id="38b90-497">Install and activate Modern POS for Windows.</span></span>
+8.  <span data-ttu-id="38b90-498">Windows 用 Modern POS を起動し、接続されている周辺機器の使用を開始します。</span><span class="sxs-lookup"><span data-stu-id="38b90-498">Start Modern POS for Windows, and begin to use the connected peripheral devices.</span></span>
 
-4.  [**小売**] &gt; [**小売 IT**] &gt; [**配送スケジュール**] の順にクリックします。
-5.  店舗に新しいハードウェア プロファイルを同期させるため、[**1090**] 配分スケジュールを選択します。 POS に変更を同期させるため、[**今すぐ実行**] をクリックします。
-6.  店舗に新しいハードウェア ステーションを同期させるため、[**1040**] 配分スケジュールを選択します。 POS に変更を同期させるため、[**今すぐ実行**] をクリックします。
-7.  ハードウェア ステーションをインストールします。 ハードウェア ステーションをインストールする方法の詳細については、[Retail ハードウェア ステーションのコンフィギュレーションとインストール](retail-hardware-station-configuration-installation.md) を参照してください。
-8.  Modern POS をインストールして有効化します。 Modern POS をインストールする方法の詳細については、 [Retail Modern POS のコンフィギュレーションとインストール](retail-modern-pos-device-activation.md) を参照してください。
-9.  Modern POS にサイン インするには、[**非ドロワー操作の実行**] を選択します。
-10. **ハードウェア ステーションの管理**操作を開始します。
-11. [**管理**] をクリックします。
-12. ハードウェア ステーションの管理ページで、ハードウェア ステーションを起動するオプションを設定します。
-13. 使用するハードウェア ステーションを選択し、[**ペア**] をクリックします。
-14. ハードウェア ステーションのペアリングが終わった後、[**閉じる**] をクリックします。
-15. ハードウェア ステータスの選択ページで、最後に選択されたハードウェア ステーションをクリックして有効にします。
+### <a name="all-modern-pos-clients-that-have-a-dedicated-iis-hardware-station"></a><span data-ttu-id="38b90-499">専用 IIS ハードウェア ステーションを持つすべての Modern POS クライアント</span><span class="sxs-lookup"><span data-stu-id="38b90-499">All Modern POS clients that have a dedicated IIS hardware station</span></span>
 
-### <a name="all-modern-pos-clients-that-have-a-shared-iis-hardware-station"></a>共有 IIS ハードウェア ステーションを持つすべての Modern POS クライアント
+<span data-ttu-id="38b90-500">1 つの POS レジスター専用で使用されているハードウェア ステーションを持つすべての Modern POS クライアントに、このコンフィギュレーションは使用できます。</span><span class="sxs-lookup"><span data-stu-id="38b90-500">This configuration can be used for all Modern POS clients that have a hardware station that is used exclusively by one POS register.</span></span> <span data-ttu-id="38b90-501">このコンフィギュレーションを設定するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="38b90-501">To set up this configuration, follow these steps.</span></span>
 
-このコンフィギュレーションは、他のデバイスとハードウェア ステーションを共有するすべての Modern POS クライアントで使用できます。 このコンフィギュレーションを設定するには、次の手順に従います。
+1.  <span data-ttu-id="38b90-502">すべての必須の周辺機器が設定されたハードウェア プロファイルを作成します。</span><span class="sxs-lookup"><span data-stu-id="38b90-502">Create a hardware profile where all the required peripherals are configured.</span></span>
+2.  <span data-ttu-id="38b90-503">POS レジスタが使用される小売店舗用に**専用**タイプのハードウェア ステーションを作成します。</span><span class="sxs-lookup"><span data-stu-id="38b90-503">Create a hardware station of the **Dedicated** type for the retail store where the POS register will be used.</span></span>
+3.  <span data-ttu-id="38b90-504">専用のハードウェア ステーションで、次のプロパティを設定します:</span><span class="sxs-lookup"><span data-stu-id="38b90-504">On the dedicated hardware station, set the following properties:</span></span>
+    -   <span data-ttu-id="38b90-505">**ホスト名** – ハードウェア ステーションをホストするコンピュータの名前。</span><span class="sxs-lookup"><span data-stu-id="38b90-505">**Host name** – The name of the host computer where the hardware station will run.</span></span> <span data-ttu-id="38b90-506">**注記:** クラウド POS の場合、クラウド POS が実行されているローカル コンピュータの特定は [**localhost**] の使用で解決できます。</span><span class="sxs-lookup"><span data-stu-id="38b90-506">**Note:** Cloud POS can resolve **localhost** to determine the local computer where Cloud POS is running.</span></span> <span data-ttu-id="38b90-507">ただし、クラウド POS とハードウェア ステーションのペアリングに必要な証明書は、コンピュータ名が「Localhost」となっている必要があります。</span><span class="sxs-lookup"><span data-stu-id="38b90-507">However, the certificate that is required in order to pair Cloud POS with the hardware station must also have "Localhost" as the computer name.</span></span> <span data-ttu-id="38b90-508">問題を回避するには、必要に応じて、店舗の各専用ハードウェア ステーションのインスタンス一覧をリストすることをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="38b90-508">To avoid issues, we recommend that you list an instance of each dedicated hardware station for the store, as required.</span></span> <span data-ttu-id="38b90-509">各ハードウェア ステーション毎に、ハードウェア ステーションが配置される特定のコンピュータ名がホスト名となる必要があります。</span><span class="sxs-lookup"><span data-stu-id="38b90-509">For each hardware station, the host name should be the specific computer name where the hardware station will be deployed.</span></span>
+    -   <span data-ttu-id="38b90-510">**ポート** – ハードウェア ステーションが Modern POS クライアントとの通信に使用するポート。</span><span class="sxs-lookup"><span data-stu-id="38b90-510">**Port** – The port to use for the hardware station to communicate with the Modern POS client.</span></span>
+    -   <span data-ttu-id="38b90-511">**ハードウェア プロファイル** – ハードウェア ステーション自体にハードウェア プロファイルが提供されない場合、レジスターに割り当てられているハードウェア プロファイルが使用されます。</span><span class="sxs-lookup"><span data-stu-id="38b90-511">**Hardware profile** – If the hardware profile isn't provided on the hardware station itself, the hardware profile that is assigned to the register will be used.</span></span>
+    -   <span data-ttu-id="38b90-512">**EFT POS の数** – EFT 認証の送信に使用する EFT ターミナル ID。</span><span class="sxs-lookup"><span data-stu-id="38b90-512">**EFT POS number** – The EFT terminal ID to use when EFT authorizations are sent.</span></span> <span data-ttu-id="38b90-513">この ID は、クレジット カード プロセッサによって提供されます。</span><span class="sxs-lookup"><span data-stu-id="38b90-513">This ID is provided by the credit card processor.</span></span>
+    -   <span data-ttu-id="38b90-514">**パッケージ名** – ハードウェア ステーションの配置に使用するハードウェア ステーション パッケージ。</span><span class="sxs-lookup"><span data-stu-id="38b90-514">**Package name** – The hardware station package to use when the hardware station is deployed.</span></span>
 
-1.  必須の周辺機器が設定されたハードウェア プロファイルを作成します。
-2.  POS レジスタが使用される小売店舗用に**共有**タイプのハードウェア ステーションを作成します。
-3.  共有のハードウェア ステーションで、次のプロパティを設定します:
-    -   **ホスト名** – ハードウェア ステーションをホストするコンピュータの名前。
-    -   **説明** – ハードウェア ステーションを識別する助けとなるテキスト、**返品**または**店の前**など。
-    -   **ポート** – ハードウェア ステーションが Modern POS クライアントとの通信に使用するポート。
-    -   **ハードウェア プロファイル** – 共有ハードウェア ステーションの場合、各ハードウェア ステーションにハードウェア プロファイルが必要です。 ハードウェア プロファイルはハードウェア ステーション間で共有できます。しかし、各ハードウェア ステーションにマップされている必要があります。 また、複数のデバイスが同じ共有ハードウェア ステーションを使用する場合、共有シフトの使用をお勧めします。 共有シフトの設定には、[**小売**] &gt; [**チャネル設定**] &gt; [**POS 設定**] &gt; [**POS プロファイル**] &gt; [**ハードウェア プロファイル**] をクリックします。 個々の共有ハードウェア プロファイルでキャッシュ ドロワーを選択し、[**共有シフト ドロワー**] オプションを [**はい**] に設定します。
-    -   **EFT POS の数** – EFT 認証の送信に使用する EFT ターミナル ID。 この ID は、クレジット カード プロセッサによって提供されます。
-    -   **パッケージ名** – ハードウェア ステーションの配置に使用するハードウェア ステーション パッケージ。
+4.  <span data-ttu-id="38b90-515">[**小売**] &gt; [**小売 IT**] &gt; [**配送スケジュール**] の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="38b90-515">Click **Retail** &gt; **Retail IT** &gt; **Distribution schedule**.</span></span>
+5.  <span data-ttu-id="38b90-516">店舗に新しいハードウェア プロファイルを同期させるため、[**1090**] 配分スケジュールを選択します。</span><span class="sxs-lookup"><span data-stu-id="38b90-516">Select the **1090** distribution schedule to sync the new hardware profile to the store.</span></span> <span data-ttu-id="38b90-517">POS に変更を同期させるため、[**今すぐ実行**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="38b90-517">Click **Run now** to sync changes to the POS.</span></span>
+6.  <span data-ttu-id="38b90-518">店舗に新しいハードウェア ステーションを同期させるため、[**1040**] 配分スケジュールを選択します。</span><span class="sxs-lookup"><span data-stu-id="38b90-518">Select the **1040** distribution schedule to sync the new hardware station to the store.</span></span> <span data-ttu-id="38b90-519">POS に変更を同期させるため、[**今すぐ実行**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="38b90-519">Click **Run now** to sync changes to the POS.</span></span>
+7.  <span data-ttu-id="38b90-520">ハードウェア ステーションをインストールします。</span><span class="sxs-lookup"><span data-stu-id="38b90-520">Install the hardware station.</span></span> <span data-ttu-id="38b90-521">ハードウェア ステーションをインストールする方法の詳細については、[Retail ハードウェア ステーションのコンフィギュレーションとインストール](retail-hardware-station-configuration-installation.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="38b90-521">For more information about how to install the hardware station, see [Retail hardware station configuration and installation](retail-hardware-station-configuration-installation.md).</span></span>
+8.  <span data-ttu-id="38b90-522">Modern POS をインストールして有効化します。</span><span class="sxs-lookup"><span data-stu-id="38b90-522">Install and activate Modern POS.</span></span> <span data-ttu-id="38b90-523">Modern POS をインストールする方法の詳細については、 [Retail Modern POS のコンフィギュレーションとインストール](retail-modern-pos-device-activation.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="38b90-523">For more information about how to install Modern POS, see [Retail Modern POS configuration and installation](retail-modern-pos-device-activation.md).</span></span>
+9.  <span data-ttu-id="38b90-524">Modern POS にサイン インするには、[**非ドロワー操作の実行**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="38b90-524">Sign in to Modern POS, and select **Perform non-drawer operations**.</span></span>
+10. <span data-ttu-id="38b90-525">**ハードウェア ステーションの管理**操作を開始します。</span><span class="sxs-lookup"><span data-stu-id="38b90-525">Start the **Manage hardware stations** operation.</span></span>
+11. <span data-ttu-id="38b90-526">[**管理**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="38b90-526">Click **Manage**.</span></span>
+12. <span data-ttu-id="38b90-527">ハードウェア ステーションの管理ページで、ハードウェア ステーションを起動するオプションを設定します。</span><span class="sxs-lookup"><span data-stu-id="38b90-527">On the hardware station management page, set the option to turn on the hardware station.</span></span>
+13. <span data-ttu-id="38b90-528">使用するハードウェア ステーションを選択し、[**ペア**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="38b90-528">Select the hardware station to use, and then click **Pair**.</span></span>
+14. <span data-ttu-id="38b90-529">ハードウェア ステーションのペアリングが終わった後、[**閉じる**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="38b90-529">After the hardware station is paired, click **Close**.</span></span>
+15. <span data-ttu-id="38b90-530">ハードウェア ステータスの選択ページで、最後に選択されたハードウェア ステーションをクリックして有効にします。</span><span class="sxs-lookup"><span data-stu-id="38b90-530">On the hardware station selection page, click the recently selected hardware station to make it active.</span></span>
 
-4.  店舗に必要な各追加ハードウェア ステーションについて、手順 2 と 3 を繰り返します。
-5.  [**小売**] &gt; [**小売 IT**] &gt; [**配送スケジュール**] の順にクリックします。
-6.  店舗に新しいハードウェア プロファイルを同期させるため、[**1090**] 配分スケジュールを選択します。 POS に変更を同期させるため、[**今すぐ実行**] をクリックします。
-7.  店舗に新しいハードウェア ステーションを同期させるため、[**1040**] 配分スケジュールを選択します。 POS に変更を同期させるため、[**今すぐ実行**] をクリックします。
-8.  手順 2 と 3 で設定したハードウェア ステーションを、各ホスト コンピューターにインストールします。 ハードウェア ステーションをインストールする方法の詳細については、[Retail ハードウェア ステーションのコンフィギュレーションとインストール](retail-hardware-station-configuration-installation.md) を参照してください。
-9.  Modern POS をインストールして有効化します。 Modern POS をインストールする方法の詳細については、 [Retail Modern POS のコンフィギュレーションとインストール](retail-modern-pos-device-activation.md) を参照してください。
-10. Modern POS にサイン インするには、[**非ドロワー操作の実行**] を選択します。
-11. **ハードウェア ステーションの管理**操作を開始します。
+### <a name="all-modern-pos-clients-that-have-a-shared-iis-hardware-station"></a><span data-ttu-id="38b90-531">共有 IIS ハードウェア ステーションを持つすべての Modern POS クライアント</span><span class="sxs-lookup"><span data-stu-id="38b90-531">All Modern POS clients that have a shared IIS hardware station</span></span>
 
-12. [**管理**] をクリックします。
-13. ハードウェア ステーションの管理ページで、ハードウェア ステーションを起動するオプションを設定します。
-14. 使用するハードウェア ステーションを選択し、[**ペア**] をクリックします。
-15. Modern POS が使用する各ハードウェア ステーションについて、手順 14 を繰り返します。
-16. すべての必要なハードウェア ステーションのペアリングが終了したら、[**閉じる**] をクリックします。
-17. ハードウェア ステータスの選択ページで、最後に選択されたハードウェア ステーションをクリックして有効にします。 **注記:** デバイスが異なるハードウェア ステーションをしばしば使用する場合、支払/入金プロセスを開始するときにレジ担当者がハードウェア ステーションを選択するよう促すようにように Modern POS を設定することをお勧めします。 [**小売**] &gt; [**チャネル設定**] &gt; [**POS 設定**] &gt; [**レジスター**] をクリックします。 レジスターを選択し、[**支払/入金での選択**] オプションを [**はい**] に設定します。 チャンネル データベースへの同期変更に、[**1090**] 配送スケジュールを使用します。
+<span data-ttu-id="38b90-532">このコンフィギュレーションは、他のデバイスとハードウェア ステーションを共有するすべての Modern POS クライアントで使用できます。</span><span class="sxs-lookup"><span data-stu-id="38b90-532">This configuration can be used for all Modern POS clients that share hardware stations with other devices.</span></span> <span data-ttu-id="38b90-533">このコンフィギュレーションを設定するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="38b90-533">To set up this configuration, follow these steps.</span></span>
 
-## <a name="extensibility"></a>拡張性
-ハードウェア ステーションの拡張性のシナリオの情報については [ハードウェア ステーションの拡張](dev-itpro/hardware-station-extensibility.md) を参照してください。
+1.  <span data-ttu-id="38b90-534">必須の周辺機器が設定されたハードウェア プロファイルを作成します。</span><span class="sxs-lookup"><span data-stu-id="38b90-534">Create a hardware profile where the required peripherals are configured.</span></span>
+2.  <span data-ttu-id="38b90-535">POS レジスタが使用される小売店舗用に**共有**タイプのハードウェア ステーションを作成します。</span><span class="sxs-lookup"><span data-stu-id="38b90-535">Create a hardware station of the **Shared** type for the retail store where the POS register will be used.</span></span>
+3.  <span data-ttu-id="38b90-536">共有のハードウェア ステーションで、次のプロパティを設定します:</span><span class="sxs-lookup"><span data-stu-id="38b90-536">On the shared hardware station, set the following properties:</span></span>
+    -   <span data-ttu-id="38b90-537">**ホスト名** – ハードウェア ステーションをホストするコンピュータの名前。</span><span class="sxs-lookup"><span data-stu-id="38b90-537">**Host name** – The name of the host computer where the hardware station will run.</span></span>
+    -   <span data-ttu-id="38b90-538">**説明** – ハードウェア ステーションを識別する助けとなるテキスト、**返品**または**店の前**など。</span><span class="sxs-lookup"><span data-stu-id="38b90-538">**Description** – Text that will help identify the hardware station, such as **Returns** or **Front of store**.</span></span>
+    -   <span data-ttu-id="38b90-539">**ポート** – ハードウェア ステーションが Modern POS クライアントとの通信に使用するポート。</span><span class="sxs-lookup"><span data-stu-id="38b90-539">**Port** – The port to use for the hardware station to communicate with the Modern POS client.</span></span>
+    -   <span data-ttu-id="38b90-540">**ハードウェア プロファイル** – 共有ハードウェア ステーションの場合、各ハードウェア ステーションにハードウェア プロファイルが必要です。</span><span class="sxs-lookup"><span data-stu-id="38b90-540">**Hardware profile** – For shared hardware stations, each hardware station should have a hardware profile.</span></span> <span data-ttu-id="38b90-541">ハードウェア プロファイルはハードウェア ステーション間で共有できます。しかし、各ハードウェア ステーションにマップされている必要があります。</span><span class="sxs-lookup"><span data-stu-id="38b90-541">Hardware profiles can be shared among hardware stations, but they must be mapped to each hardware station.</span></span> <span data-ttu-id="38b90-542">また、複数のデバイスが同じ共有ハードウェア ステーションを使用する場合、共有シフトの使用をお勧めします。</span><span class="sxs-lookup"><span data-stu-id="38b90-542">In addition, we recommend that you use shared shifts when multiple devices use the same shared hardware station.</span></span> <span data-ttu-id="38b90-543">共有シフトの設定には、[**小売**] &gt; [**チャネル設定**] &gt; [**POS 設定**] &gt; [**POS プロファイル**] &gt; [**ハードウェア プロファイル**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="38b90-543">To set up a shared shift, click **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Hardware profiles**.</span></span> <span data-ttu-id="38b90-544">個々の共有ハードウェア プロファイルでキャッシュ ドロワーを選択し、[**共有シフト ドロワー**] オプションを [**はい**] に設定します。</span><span class="sxs-lookup"><span data-stu-id="38b90-544">For each shared hardware profile, select the cash drawer, and set the **Shared shift drawer** option to **Yes**.</span></span>
+    -   <span data-ttu-id="38b90-545">**EFT POS の数** – EFT 認証の送信に使用する EFT ターミナル ID。</span><span class="sxs-lookup"><span data-stu-id="38b90-545">**EFT POS number** – The EFT terminal ID to use when EFT authorizations are sent.</span></span> <span data-ttu-id="38b90-546">この ID は、クレジット カード プロセッサによって提供されます。</span><span class="sxs-lookup"><span data-stu-id="38b90-546">This ID is provided by the credit card processor.</span></span>
+    -   <span data-ttu-id="38b90-547">**パッケージ名** – ハードウェア ステーションの配置に使用するハードウェア ステーション パッケージ。</span><span class="sxs-lookup"><span data-stu-id="38b90-547">**Package name** – The hardware station package to use when the hardware station is deployed.</span></span>
 
-## <a name="security"></a>セキュリティ
-現在のセキュリティ標準に従って、実稼働環境では次の設定を使用する必要があります: **注記:** ハードウェア ステーション インストーラーは、インストールの一部として自動的にレジストリ編集をセルフサービスで行います。
+4.  <span data-ttu-id="38b90-548">店舗に必要な各追加ハードウェア ステーションについて、手順 2 と 3 を繰り返します。</span><span class="sxs-lookup"><span data-stu-id="38b90-548">Repeat steps 2 and 3 for each additional hardware station that is required in the store.</span></span>
+5.  <span data-ttu-id="38b90-549">[**小売**] &gt; [**小売 IT**] &gt; [**配送スケジュール**] の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="38b90-549">Click **Retail** &gt; **Retail IT** &gt; **Distribution schedule**.</span></span>
+6.  <span data-ttu-id="38b90-550">店舗に新しいハードウェア プロファイルを同期させるため、[**1090**] 配分スケジュールを選択します。</span><span class="sxs-lookup"><span data-stu-id="38b90-550">Select the **1090** distribution schedule to sync the new hardware profile to the store.</span></span> <span data-ttu-id="38b90-551">POS に変更を同期させるため、[**今すぐ実行**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="38b90-551">Click **Run now** to sync changes to the POS.</span></span>
+7.  <span data-ttu-id="38b90-552">店舗に新しいハードウェア ステーションを同期させるため、[**1040**] 配分スケジュールを選択します。</span><span class="sxs-lookup"><span data-stu-id="38b90-552">Select the **1040** distribution schedule to sync the new hardware station to the store.</span></span> <span data-ttu-id="38b90-553">POS に変更を同期させるため、[**今すぐ実行**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="38b90-553">Click **Run now** to sync changes to the POS.</span></span>
+8.  <span data-ttu-id="38b90-554">手順 2 と 3 で設定したハードウェア ステーションを、各ホスト コンピューターにインストールします。</span><span class="sxs-lookup"><span data-stu-id="38b90-554">Install the hardware station on each host computer that you set up in steps 2 and 3.</span></span> <span data-ttu-id="38b90-555">ハードウェア ステーションをインストールする方法の詳細については、[Retail ハードウェア ステーションのコンフィギュレーションとインストール](retail-hardware-station-configuration-installation.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="38b90-555">For more information about how to install the hardware station, see [Retail hardware station configuration and installation](retail-hardware-station-configuration-installation.md).</span></span>
+9.  <span data-ttu-id="38b90-556">Modern POS をインストールして有効化します。</span><span class="sxs-lookup"><span data-stu-id="38b90-556">Install and activate Modern POS.</span></span> <span data-ttu-id="38b90-557">Modern POS をインストールする方法の詳細については、 [Retail Modern POS のコンフィギュレーションとインストール](retail-modern-pos-device-activation.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="38b90-557">For more information about how to install Modern POS, see [Retail Modern POS configuration and installation](retail-modern-pos-device-activation.md).</span></span>
+10. <span data-ttu-id="38b90-558">Modern POS にサイン インするには、[**非ドロワー操作の実行**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="38b90-558">Sign in to Modern POS, and select **Perform non-drawer operations**.</span></span>
+11. <span data-ttu-id="38b90-559">**ハードウェア ステーションの管理**操作を開始します。</span><span class="sxs-lookup"><span data-stu-id="38b90-559">Start the **Manage hardware stations** operation.</span></span>
 
--   Secure Sockets Layer (SSL) は無効にする必要があります。
--   Transport Layer Security (TLS) version 1.2 (または現行最新バージョン) のみを有効にして使用する必要があります。 **注記:** 既定では、SSL および TLS 1.2 を除くすべてのバージョンの TLS は無効になります。 これらを値の編集または有効化するには、次の手順に従います。
-    1.  Windows ロゴキーと R キーを同時に押して、**実行**ウィンドウを開きます。
-    2.  [**オープン**] フィールドで [**Regedit**] とタイプし、次に [**OK**] をクリックします。
-    3.  [**ユーザー アカウント コントロール**] メッセージ ボックス現われたら、[**はい**] をクリックします。
-    4.  [**Registry Editor**] ウィンドウで、[**HKEY\_LOCAL\_MACHINESystemCurrentControlSetSecurityProvidersSCHANNELProtocols**] に移動します。 TLS 1.2 のみを有効にするために、以下のキーは自動的に挿入されています:
-        -   TLS 1.2Server:Enabled=1
-        -   TLS 1.2Server:DisabledByDefault=0
-        -   TLS 1.2Client:Enabled=1
-        -   TLS 1.2Client:DisabledByDefault=0
-        -   TLS 1.1Server:Enabled=0
-        -   TLS 1.1Client:Enabled=0
-        -   TLS 1.0Server:Enabled=0
-        -   TLS 1.0Client:Enabled=0
-        -   SSL 3.0Server:Enabled=0
-        -   SSL 3.0Client:Enabled=0
-        -   SSL 2.0Server:Enabled=0
-        -   SSL 2.0Client:Enabled=0
--   知られている特定の理由で必要とされない限り、追加のネットワーク ポートを開かないでください。
--   クロスオリジンのリソース共有を無効にし、許可され承認されたオリジンを指定する必要があります。
--   ハードウェア ステーションを実行するコンピュータで使用する証明書の取得には、信頼された証明機関のみを使用してください。
+12. <span data-ttu-id="38b90-560">[**管理**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="38b90-560">Click **Manage**.</span></span>
+13. <span data-ttu-id="38b90-561">ハードウェア ステーションの管理ページで、ハードウェア ステーションを起動するオプションを設定します。</span><span class="sxs-lookup"><span data-stu-id="38b90-561">On the hardware station management page, set the option to turn on the hardware station.</span></span>
+14. <span data-ttu-id="38b90-562">使用するハードウェア ステーションを選択し、[**ペア**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="38b90-562">Select the hardware station to use, and then click **Pair**.</span></span>
+15. <span data-ttu-id="38b90-563">Modern POS が使用する各ハードウェア ステーションについて、手順 14 を繰り返します。</span><span class="sxs-lookup"><span data-stu-id="38b90-563">Repeat step 14 for each hardware station that Modern POS will use.</span></span>
+16. <span data-ttu-id="38b90-564">すべての必要なハードウェア ステーションのペアリングが終了したら、[**閉じる**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="38b90-564">After all the required hardware stations are paired, click **Close**.</span></span>
+17. <span data-ttu-id="38b90-565">ハードウェア ステータスの選択ページで、最後に選択されたハードウェア ステーションをクリックして有効にします。</span><span class="sxs-lookup"><span data-stu-id="38b90-565">On the hardware station selection page, click the recently selected hardware station to make it active.</span></span> <span data-ttu-id="38b90-566">**注記:** デバイスが異なるハードウェア ステーションをしばしば使用する場合、支払/入金プロセスを開始するときにレジ担当者がハードウェア ステーションを選択するよう促すようにように Modern POS を設定することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="38b90-566">**Note:** If devices often use different hardware stations, we recommend that you configure Modern POS to prompt cashiers to select a hardware station when they begin the tender process.</span></span> <span data-ttu-id="38b90-567">[**小売**] &gt; [**チャネル設定**] &gt; [**POS 設定**] &gt; [**レジスター**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="38b90-567">Click **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **Registers**.</span></span> <span data-ttu-id="38b90-568">レジスターを選択し、[**支払/入金での選択**] オプションを [**はい**] に設定します。</span><span class="sxs-lookup"><span data-stu-id="38b90-568">Select the register, and then set the **Select upon tender** option to **Yes**.</span></span> <span data-ttu-id="38b90-569">チャンネル データベースへの同期変更に、[**1090**] 配送スケジュールを使用します。</span><span class="sxs-lookup"><span data-stu-id="38b90-569">Use the **1090** distribution schedule to sync changes to the channel database.</span></span>
 
-***注記:** IIS と Payment Card Industry (PCI) 要件のセキュリティ ガイドラインを確認することが非常に重要です。
+## <a name="extensibility"></a><span data-ttu-id="38b90-570">拡張性</span><span class="sxs-lookup"><span data-stu-id="38b90-570">Extensibility</span></span>
+<span data-ttu-id="38b90-571">ハードウェア ステーションの拡張性のシナリオの情報については [ハードウェア ステーションの拡張](dev-itpro/hardware-station-extensibility.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="38b90-571">For information about extensibility scenarios for the hardware station, see [Hardware Station extensibility](dev-itpro/hardware-station-extensibility.md).</span></span>
 
-## <a name="peripheral-simulator"></a>周辺機器シミュレーター
-詳細については、[Retail 周辺機器シミュレーター](dev-itpro/retail-peripheral-simulator.md) を参照してください。
+## <a name="security"></a><span data-ttu-id="38b90-572">セキュリティ</span><span class="sxs-lookup"><span data-stu-id="38b90-572">Security</span></span>
+<span data-ttu-id="38b90-573">現在のセキュリティ標準に従って、実稼働環境では次の設定を使用する必要があります: **注記:** ハードウェア ステーション インストーラーは、インストールの一部として自動的にレジストリ編集をセルフサービスで行います。</span><span class="sxs-lookup"><span data-stu-id="38b90-573">According to current security standards, the following settings should be used in a production environment: **Note:** The hardware station installer will automatically make these registry edits as part of the installation through self-service.</span></span>
 
-## <a name="microsofttested-peripheral-devices"></a>マイクロソフトでテストされた周辺機器
-### <a name="ipc-built-in-hardware-station"></a>IPC (組み込み) ハードウェア ステーション
+-   <span data-ttu-id="38b90-574">Secure Sockets Layer (SSL) は無効にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="38b90-574">Secure Sockets Layer (SSL) should be disabled.</span></span>
+-   <span data-ttu-id="38b90-575">Transport Layer Security (TLS) version 1.2 (または現行最新バージョン) のみを有効にして使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="38b90-575">Only Transport Layer Security (TLS) version 1.2 (or the current highest version) should be enabled and used.</span></span> <span data-ttu-id="38b90-576">**注記:** 既定では、SSL および TLS 1.2 を除くすべてのバージョンの TLS は無効になります。</span><span class="sxs-lookup"><span data-stu-id="38b90-576">**Note:** By default, SSL and all version of TLS except TLS 1.2 are disabled.</span></span> <span data-ttu-id="38b90-577">これらを値の編集または有効化するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="38b90-577">To edit or enable these values, follow these steps:</span></span>
+    1.  <span data-ttu-id="38b90-578">Windows ロゴキーと R キーを同時に押して、**実行**ウィンドウを開きます。</span><span class="sxs-lookup"><span data-stu-id="38b90-578">Press the Windows logo key+R to open a **Run** window.</span></span>
+    2.  <span data-ttu-id="38b90-579">[**オープン**] フィールドで [**Regedit**] とタイプし、次に [**OK**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="38b90-579">In the **Open** field, type **Regedit**, and then click **OK**.</span></span>
+    3.  <span data-ttu-id="38b90-580">[**ユーザー アカウント コントロール**] メッセージ ボックス現われたら、[**はい**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="38b90-580">If a **User Account Control** message box appears, click **Yes**.</span></span>
+    4.  <span data-ttu-id="38b90-581">[**Registry Editor**] ウィンドウで、[**HKEY\_LOCAL\_MACHINESystemCurrentControlSetSecurityProvidersSCHANNELProtocols**] に移動します。</span><span class="sxs-lookup"><span data-stu-id="38b90-581">In the **Registry Editor** window, navigate to **HKEY\_LOCAL\_MACHINESystemCurrentControlSetSecurityProvidersSCHANNELProtocols**.</span></span> <span data-ttu-id="38b90-582">TLS 1.2 のみを有効にするために、以下のキーは自動的に挿入されています:</span><span class="sxs-lookup"><span data-stu-id="38b90-582">The following keys have been automatically entered to allow for TLS 1.2 only:</span></span>
+        -   <span data-ttu-id="38b90-583">TLS 1.2Server:Enabled=1</span><span class="sxs-lookup"><span data-stu-id="38b90-583">TLS 1.2Server:Enabled=1</span></span>
+        -   <span data-ttu-id="38b90-584">TLS 1.2Server:DisabledByDefault=0</span><span class="sxs-lookup"><span data-stu-id="38b90-584">TLS 1.2Server:DisabledByDefault=0</span></span>
+        -   <span data-ttu-id="38b90-585">TLS 1.2Client:Enabled=1</span><span class="sxs-lookup"><span data-stu-id="38b90-585">TLS 1.2Client:Enabled=1</span></span>
+        -   <span data-ttu-id="38b90-586">TLS 1.2Client:DisabledByDefault=0</span><span class="sxs-lookup"><span data-stu-id="38b90-586">TLS 1.2Client:DisabledByDefault=0</span></span>
+        -   <span data-ttu-id="38b90-587">TLS 1.1Server:Enabled=0</span><span class="sxs-lookup"><span data-stu-id="38b90-587">TLS 1.1Server:Enabled=0</span></span>
+        -   <span data-ttu-id="38b90-588">TLS 1.1Client:Enabled=0</span><span class="sxs-lookup"><span data-stu-id="38b90-588">TLS 1.1Client:Enabled=0</span></span>
+        -   <span data-ttu-id="38b90-589">TLS 1.0Server:Enabled=0</span><span class="sxs-lookup"><span data-stu-id="38b90-589">TLS 1.0Server:Enabled=0</span></span>
+        -   <span data-ttu-id="38b90-590">TLS 1.0Client:Enabled=0</span><span class="sxs-lookup"><span data-stu-id="38b90-590">TLS 1.0Client:Enabled=0</span></span>
+        -   <span data-ttu-id="38b90-591">SSL 3.0Server:Enabled=0</span><span class="sxs-lookup"><span data-stu-id="38b90-591">SSL 3.0Server:Enabled=0</span></span>
+        -   <span data-ttu-id="38b90-592">SSL 3.0Client:Enabled=0</span><span class="sxs-lookup"><span data-stu-id="38b90-592">SSL 3.0Client:Enabled=0</span></span>
+        -   <span data-ttu-id="38b90-593">SSL 2.0Server:Enabled=0</span><span class="sxs-lookup"><span data-stu-id="38b90-593">SSL 2.0Server:Enabled=0</span></span>
+        -   <span data-ttu-id="38b90-594">SSL 2.0Client:Enabled=0</span><span class="sxs-lookup"><span data-stu-id="38b90-594">SSL 2.0Client:Enabled=0</span></span>
+-   <span data-ttu-id="38b90-595">知られている特定の理由で必要とされない限り、追加のネットワーク ポートを開かないでください。</span><span class="sxs-lookup"><span data-stu-id="38b90-595">No additional network ports should be open, unless they are required for known, specified reasons.</span></span>
+-   <span data-ttu-id="38b90-596">クロスオリジンのリソース共有を無効にし、許可され承認されたオリジンを指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="38b90-596">Cross-origin resource sharing must be disabled and must specify the allowed origins that are accepted.</span></span>
+-   <span data-ttu-id="38b90-597">ハードウェア ステーションを実行するコンピュータで使用する証明書の取得には、信頼された証明機関のみを使用してください。</span><span class="sxs-lookup"><span data-stu-id="38b90-597">Only trusted certificate authorities should be used to obtain certificates that will be used on computers that run the hardware station.</span></span>
 
-次の周辺機器は、Windows 用 Modern POS に組み込まれた IPC ハードウェア ステーションを使用してテストされています。
+<span data-ttu-id="38b90-598">***注記:** IIS と Payment Card Industry (PCI) 要件のセキュリティ ガイドラインを確認することが非常に重要です。</span><span class="sxs-lookup"><span data-stu-id="38b90-598">**Note:** It’s very important that you review security guidelines for IIS and the Payment Card Industry (PCI) requirements.</span></span>
 
-#### <a name="printer"></a>プリンター
+## <a name="peripheral-simulator"></a><span data-ttu-id="38b90-599">周辺機器シミュレーター</span><span class="sxs-lookup"><span data-stu-id="38b90-599">Peripheral simulator</span></span>
+<span data-ttu-id="38b90-600">詳細については、[Retail 周辺機器シミュレーター](dev-itpro/retail-peripheral-simulator.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="38b90-600">For information, see [Retail peripheral simulator](dev-itpro/retail-peripheral-simulator.md).</span></span>
 
-| メーカー | モデル    | インターフェイス | コメント                |
+## <a name="microsofttested-peripheral-devices"></a><span data-ttu-id="38b90-601">マイクロソフトでテストされた周辺機器</span><span class="sxs-lookup"><span data-stu-id="38b90-601">Microsofttested peripheral devices</span></span>
+### <a name="ipc-built-in-hardware-station"></a><span data-ttu-id="38b90-602">IPC (組み込み) ハードウェア ステーション</span><span class="sxs-lookup"><span data-stu-id="38b90-602">IPC (built-in) hardware station</span></span>
+
+<span data-ttu-id="38b90-603">次の周辺機器は、Windows 用 Modern POS に組み込まれた IPC ハードウェア ステーションを使用してテストされています。</span><span class="sxs-lookup"><span data-stu-id="38b90-603">The following peripherals were tested by using the IPC hardware station that is built into Modern POS for Windows.</span></span>
+
+#### <a name="printer"></a><span data-ttu-id="38b90-604">プリンター</span><span class="sxs-lookup"><span data-stu-id="38b90-604">Printer</span></span>
+
+| <span data-ttu-id="38b90-605">メーカー</span><span class="sxs-lookup"><span data-stu-id="38b90-605">Manufacturer</span></span> | <span data-ttu-id="38b90-606">モデル</span><span class="sxs-lookup"><span data-stu-id="38b90-606">Model</span></span>    | <span data-ttu-id="38b90-607">インターフェイス</span><span class="sxs-lookup"><span data-stu-id="38b90-607">Interface</span></span> | <span data-ttu-id="38b90-608">コメント</span><span class="sxs-lookup"><span data-stu-id="38b90-608">Comments</span></span>                |
 |--------------|----------|-----------|-------------------------|
-| Epson        | Tm-T88IV | OPOS      |                         |
-| Epson        | TM-T88V  | OPOS      |                         |
-| Star         | TSP650II | OPOS      |                         |
-| Star         | TSP650II | ユーザー設定    | ネットワーク経由で接続   |
-| Star         | mPOP     | OPOS      | Bluetooth 経由で接続 |
-| HP           | F7M67AA  | OPOS      | Powered USB             |
+| <span data-ttu-id="38b90-609">Epson</span><span class="sxs-lookup"><span data-stu-id="38b90-609">Epson</span></span>        | <span data-ttu-id="38b90-610">Tm-T88IV</span><span class="sxs-lookup"><span data-stu-id="38b90-610">Tm-T88IV</span></span> | <span data-ttu-id="38b90-611">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-611">OPOS</span></span>      |                         |
+| <span data-ttu-id="38b90-612">Epson</span><span class="sxs-lookup"><span data-stu-id="38b90-612">Epson</span></span>        | <span data-ttu-id="38b90-613">TM-T88V</span><span class="sxs-lookup"><span data-stu-id="38b90-613">TM-T88V</span></span>  | <span data-ttu-id="38b90-614">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-614">OPOS</span></span>      |                         |
+| <span data-ttu-id="38b90-615">Star</span><span class="sxs-lookup"><span data-stu-id="38b90-615">Star</span></span>         | <span data-ttu-id="38b90-616">TSP650II</span><span class="sxs-lookup"><span data-stu-id="38b90-616">TSP650II</span></span> | <span data-ttu-id="38b90-617">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-617">OPOS</span></span>      |                         |
+| <span data-ttu-id="38b90-618">Star</span><span class="sxs-lookup"><span data-stu-id="38b90-618">Star</span></span>         | <span data-ttu-id="38b90-619">TSP650II</span><span class="sxs-lookup"><span data-stu-id="38b90-619">TSP650II</span></span> | <span data-ttu-id="38b90-620">ユーザー設定</span><span class="sxs-lookup"><span data-stu-id="38b90-620">Custom</span></span>    | <span data-ttu-id="38b90-621">ネットワーク経由で接続</span><span class="sxs-lookup"><span data-stu-id="38b90-621">Connected via network</span></span>   |
+| <span data-ttu-id="38b90-622">Star</span><span class="sxs-lookup"><span data-stu-id="38b90-622">Star</span></span>         | <span data-ttu-id="38b90-623">mPOP</span><span class="sxs-lookup"><span data-stu-id="38b90-623">mPOP</span></span>     | <span data-ttu-id="38b90-624">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-624">OPOS</span></span>      | <span data-ttu-id="38b90-625">Bluetooth 経由で接続</span><span class="sxs-lookup"><span data-stu-id="38b90-625">Connected via Bluetooth</span></span> |
+| <span data-ttu-id="38b90-626">HP</span><span class="sxs-lookup"><span data-stu-id="38b90-626">HP</span></span>           | <span data-ttu-id="38b90-627">F7M67AA</span><span class="sxs-lookup"><span data-stu-id="38b90-627">F7M67AA</span></span>  | <span data-ttu-id="38b90-628">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-628">OPOS</span></span>      | <span data-ttu-id="38b90-629">Powered USB</span><span class="sxs-lookup"><span data-stu-id="38b90-629">Powered USB</span></span>             |
 
-#### <a name="bar-code-scanner"></a>バーコード スキャナー
+#### <a name="bar-code-scanner"></a><span data-ttu-id="38b90-630">バーコード スキャナー</span><span class="sxs-lookup"><span data-stu-id="38b90-630">Bar code scanner</span></span>
 
-| メーカー  | モデル         | インターフェイス | コメント |
+| <span data-ttu-id="38b90-631">メーカー</span><span class="sxs-lookup"><span data-stu-id="38b90-631">Manufacturer</span></span>  | <span data-ttu-id="38b90-632">モデル</span><span class="sxs-lookup"><span data-stu-id="38b90-632">Model</span></span>         | <span data-ttu-id="38b90-633">インターフェイス</span><span class="sxs-lookup"><span data-stu-id="38b90-633">Interface</span></span> | <span data-ttu-id="38b90-634">コメント</span><span class="sxs-lookup"><span data-stu-id="38b90-634">Comments</span></span> |
 |---------------|---------------|-----------|----------|
-| Motorola      | DS9208        | OPOS      |          |
-| ハネウェル     | 1900          | UWP       |          |
-| 記号        | LS2208        | OPOS      |          |
-| HP 統合済 | E1L07AA       | OPOS      |          |
-| Datalogic     | Magellan 8400 | OPOS      |          |
+| <span data-ttu-id="38b90-635">Motorola</span><span class="sxs-lookup"><span data-stu-id="38b90-635">Motorola</span></span>      | <span data-ttu-id="38b90-636">DS9208</span><span class="sxs-lookup"><span data-stu-id="38b90-636">DS9208</span></span>        | <span data-ttu-id="38b90-637">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-637">OPOS</span></span>      |          |
+| <span data-ttu-id="38b90-638">ハネウェル</span><span class="sxs-lookup"><span data-stu-id="38b90-638">Honeywell</span></span>     | <span data-ttu-id="38b90-639">1900</span><span class="sxs-lookup"><span data-stu-id="38b90-639">1900</span></span>          | <span data-ttu-id="38b90-640">UWP</span><span class="sxs-lookup"><span data-stu-id="38b90-640">UWP</span></span>       |          |
+| <span data-ttu-id="38b90-641">記号</span><span class="sxs-lookup"><span data-stu-id="38b90-641">Symbol</span></span>        | <span data-ttu-id="38b90-642">LS2208</span><span class="sxs-lookup"><span data-stu-id="38b90-642">LS2208</span></span>        | <span data-ttu-id="38b90-643">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-643">OPOS</span></span>      |          |
+| <span data-ttu-id="38b90-644">HP 統合済</span><span class="sxs-lookup"><span data-stu-id="38b90-644">HP Integrated</span></span> | <span data-ttu-id="38b90-645">E1L07AA</span><span class="sxs-lookup"><span data-stu-id="38b90-645">E1L07AA</span></span>       | <span data-ttu-id="38b90-646">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-646">OPOS</span></span>      |          |
+| <span data-ttu-id="38b90-647">Datalogic</span><span class="sxs-lookup"><span data-stu-id="38b90-647">Datalogic</span></span>     | <span data-ttu-id="38b90-648">Magellan 8400</span><span class="sxs-lookup"><span data-stu-id="38b90-648">Magellan 8400</span></span> | <span data-ttu-id="38b90-649">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-649">OPOS</span></span>      |          |
 
-#### <a name="pin-pad"></a>PIN パッド
+#### <a name="pin-pad"></a><span data-ttu-id="38b90-650">PIN パッド</span><span class="sxs-lookup"><span data-stu-id="38b90-650">PIN pad</span></span>
 
-| メーカー | モデル  | インターフェイス | コメント                                        |
+| <span data-ttu-id="38b90-651">メーカー</span><span class="sxs-lookup"><span data-stu-id="38b90-651">Manufacturer</span></span> | <span data-ttu-id="38b90-652">モデル</span><span class="sxs-lookup"><span data-stu-id="38b90-652">Model</span></span>  | <span data-ttu-id="38b90-653">インターフェイス</span><span class="sxs-lookup"><span data-stu-id="38b90-653">Interface</span></span> | <span data-ttu-id="38b90-654">コメント</span><span class="sxs-lookup"><span data-stu-id="38b90-654">Comments</span></span>                                        |
 |--------------|--------|-----------|-------------------------------------------------|
-| VeriFone     | 1000SE | OPOS      | 支払コネクターのカスタマイズが必要 |
+| <span data-ttu-id="38b90-655">VeriFone</span><span class="sxs-lookup"><span data-stu-id="38b90-655">VeriFone</span></span>     | <span data-ttu-id="38b90-656">1000SE</span><span class="sxs-lookup"><span data-stu-id="38b90-656">1000SE</span></span> | <span data-ttu-id="38b90-657">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-657">OPOS</span></span>      | <span data-ttu-id="38b90-658">支払コネクターのカスタマイズが必要</span><span class="sxs-lookup"><span data-stu-id="38b90-658">Requires customization of the payment connector</span></span> |
 
-#### <a name="payment-terminal"></a>支払ターミナル
+#### <a name="payment-terminal"></a><span data-ttu-id="38b90-659">支払ターミナル</span><span class="sxs-lookup"><span data-stu-id="38b90-659">Payment terminal</span></span>
 
-| メーカー | モデル | インターフェイス | コメント                                                                       |
+| <span data-ttu-id="38b90-660">メーカー</span><span class="sxs-lookup"><span data-stu-id="38b90-660">Manufacturer</span></span> | <span data-ttu-id="38b90-661">モデル</span><span class="sxs-lookup"><span data-stu-id="38b90-661">Model</span></span> | <span data-ttu-id="38b90-662">インターフェイス</span><span class="sxs-lookup"><span data-stu-id="38b90-662">Interface</span></span> | <span data-ttu-id="38b90-663">コメント</span><span class="sxs-lookup"><span data-stu-id="38b90-663">Comments</span></span>                                                                       |
 |--------------|-------|-----------|--------------------------------------------------------------------------------|
-| Equinox      | L5300 | ユーザー設定    | 支払コネクターのカスタマイズが必要                                |
-| VeriFone     | MX925 | ユーザー設定    | 支払コネクターのカスタマイズが必要。ネットワークおよびUSB接続 |
-| VeriFone     | MX915 | ユーザー設定    | 支払コネクターのカスタマイズが必要。ネットワークおよびUSB接続 |
+| <span data-ttu-id="38b90-664">Equinox</span><span class="sxs-lookup"><span data-stu-id="38b90-664">Equinox</span></span>      | <span data-ttu-id="38b90-665">L5300</span><span class="sxs-lookup"><span data-stu-id="38b90-665">L5300</span></span> | <span data-ttu-id="38b90-666">ユーザー設定</span><span class="sxs-lookup"><span data-stu-id="38b90-666">Custom</span></span>    | <span data-ttu-id="38b90-667">支払コネクターのカスタマイズが必要</span><span class="sxs-lookup"><span data-stu-id="38b90-667">Requires customization of the payment connector</span></span>                                |
+| <span data-ttu-id="38b90-668">VeriFone</span><span class="sxs-lookup"><span data-stu-id="38b90-668">VeriFone</span></span>     | <span data-ttu-id="38b90-669">MX925</span><span class="sxs-lookup"><span data-stu-id="38b90-669">MX925</span></span> | <span data-ttu-id="38b90-670">ユーザー設定</span><span class="sxs-lookup"><span data-stu-id="38b90-670">Custom</span></span>    | <span data-ttu-id="38b90-671">支払コネクターのカスタマイズが必要。ネットワークおよびUSB接続</span><span class="sxs-lookup"><span data-stu-id="38b90-671">Requires customization of the payment connector; connected via network and USB</span></span> |
+| <span data-ttu-id="38b90-672">VeriFone</span><span class="sxs-lookup"><span data-stu-id="38b90-672">VeriFone</span></span>     | <span data-ttu-id="38b90-673">MX915</span><span class="sxs-lookup"><span data-stu-id="38b90-673">MX915</span></span> | <span data-ttu-id="38b90-674">ユーザー設定</span><span class="sxs-lookup"><span data-stu-id="38b90-674">Custom</span></span>    | <span data-ttu-id="38b90-675">支払コネクターのカスタマイズが必要。ネットワークおよびUSB接続</span><span class="sxs-lookup"><span data-stu-id="38b90-675">Requires customization of the payment connector; connected via network and USB</span></span> |
 
-#### <a name="cash-drawer"></a>キャッシュ ドロワー
+#### <a name="cash-drawer"></a><span data-ttu-id="38b90-676">キャッシュ ドロワー</span><span class="sxs-lookup"><span data-stu-id="38b90-676">Cash drawer</span></span>
 
-| メーカー | モデル     | インターフェイス | コメント                |
+| <span data-ttu-id="38b90-677">メーカー</span><span class="sxs-lookup"><span data-stu-id="38b90-677">Manufacturer</span></span> | <span data-ttu-id="38b90-678">モデル</span><span class="sxs-lookup"><span data-stu-id="38b90-678">Model</span></span>     | <span data-ttu-id="38b90-679">インターフェイス</span><span class="sxs-lookup"><span data-stu-id="38b90-679">Interface</span></span> | <span data-ttu-id="38b90-680">コメント</span><span class="sxs-lookup"><span data-stu-id="38b90-680">Comments</span></span>                |
 |--------------|-----------|-----------|-------------------------|
-| Star         | mPOP      | OPOS      | Bluetooth 経由で接続 |
-| APG          | Atwood    | ユーザー設定    | ネットワーク経由で接続   |
-| Star         | SMD2-1317 | OPOS      |                         |
-| HP           | QT457AA   | OPOS      |                         |
+| <span data-ttu-id="38b90-681">Star</span><span class="sxs-lookup"><span data-stu-id="38b90-681">Star</span></span>         | <span data-ttu-id="38b90-682">mPOP</span><span class="sxs-lookup"><span data-stu-id="38b90-682">mPOP</span></span>      | <span data-ttu-id="38b90-683">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-683">OPOS</span></span>      | <span data-ttu-id="38b90-684">Bluetooth 経由で接続</span><span class="sxs-lookup"><span data-stu-id="38b90-684">Connected via Bluetooth</span></span> |
+| <span data-ttu-id="38b90-685">APG</span><span class="sxs-lookup"><span data-stu-id="38b90-685">APG</span></span>          | <span data-ttu-id="38b90-686">Atwood</span><span class="sxs-lookup"><span data-stu-id="38b90-686">Atwood</span></span>    | <span data-ttu-id="38b90-687">ユーザー設定</span><span class="sxs-lookup"><span data-stu-id="38b90-687">Custom</span></span>    | <span data-ttu-id="38b90-688">ネットワーク経由で接続</span><span class="sxs-lookup"><span data-stu-id="38b90-688">Connected via network</span></span>   |
+| <span data-ttu-id="38b90-689">Star</span><span class="sxs-lookup"><span data-stu-id="38b90-689">Star</span></span>         | <span data-ttu-id="38b90-690">SMD2-1317</span><span class="sxs-lookup"><span data-stu-id="38b90-690">SMD2-1317</span></span> | <span data-ttu-id="38b90-691">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-691">OPOS</span></span>      |                         |
+| <span data-ttu-id="38b90-692">HP</span><span class="sxs-lookup"><span data-stu-id="38b90-692">HP</span></span>           | <span data-ttu-id="38b90-693">QT457AA</span><span class="sxs-lookup"><span data-stu-id="38b90-693">QT457AA</span></span>   | <span data-ttu-id="38b90-694">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-694">OPOS</span></span>      |                         |
 
-#### <a name="line-display"></a>ライン ディスプレイ
+#### <a name="line-display"></a><span data-ttu-id="38b90-695">ライン ディスプレイ</span><span class="sxs-lookup"><span data-stu-id="38b90-695">Line display</span></span>
 
-| メーカー  | モデル   | インターフェイス | コメント |
+| <span data-ttu-id="38b90-696">メーカー</span><span class="sxs-lookup"><span data-stu-id="38b90-696">Manufacturer</span></span>  | <span data-ttu-id="38b90-697">モデル</span><span class="sxs-lookup"><span data-stu-id="38b90-697">Model</span></span>   | <span data-ttu-id="38b90-698">インターフェイス</span><span class="sxs-lookup"><span data-stu-id="38b90-698">Interface</span></span> | <span data-ttu-id="38b90-699">コメント</span><span class="sxs-lookup"><span data-stu-id="38b90-699">Comments</span></span> |
 |---------------|---------|-----------|----------|
-| HP 統合済 | G6U79AA | OPOS      |          |
-| Epson         | M58DC   | OPOS      |          |
+| <span data-ttu-id="38b90-700">HP 統合済</span><span class="sxs-lookup"><span data-stu-id="38b90-700">HP integrated</span></span> | <span data-ttu-id="38b90-701">G6U79AA</span><span class="sxs-lookup"><span data-stu-id="38b90-701">G6U79AA</span></span> | <span data-ttu-id="38b90-702">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-702">OPOS</span></span>      |          |
+| <span data-ttu-id="38b90-703">Epson</span><span class="sxs-lookup"><span data-stu-id="38b90-703">Epson</span></span>         | <span data-ttu-id="38b90-704">M58DC</span><span class="sxs-lookup"><span data-stu-id="38b90-704">M58DC</span></span>   | <span data-ttu-id="38b90-705">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-705">OPOS</span></span>      |          |
 
-#### <a name="signature-capture"></a>署名キャプチャ
+#### <a name="signature-capture"></a><span data-ttu-id="38b90-706">署名キャプチャ</span><span class="sxs-lookup"><span data-stu-id="38b90-706">Signature capture</span></span>
 
-| メーカー | モデル  | インターフェイス | コメント |
+| <span data-ttu-id="38b90-707">メーカー</span><span class="sxs-lookup"><span data-stu-id="38b90-707">Manufacturer</span></span> | <span data-ttu-id="38b90-708">モデル</span><span class="sxs-lookup"><span data-stu-id="38b90-708">Model</span></span>  | <span data-ttu-id="38b90-709">インターフェイス</span><span class="sxs-lookup"><span data-stu-id="38b90-709">Interface</span></span> | <span data-ttu-id="38b90-710">コメント</span><span class="sxs-lookup"><span data-stu-id="38b90-710">Comments</span></span> |
 |--------------|--------|-----------|----------|
-| Scriptel     | ST1550 | OPOS      |          |
+| <span data-ttu-id="38b90-711">Scriptel</span><span class="sxs-lookup"><span data-stu-id="38b90-711">Scriptel</span></span>     | <span data-ttu-id="38b90-712">ST1550</span><span class="sxs-lookup"><span data-stu-id="38b90-712">ST1550</span></span> | <span data-ttu-id="38b90-713">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-713">OPOS</span></span>      |          |
 
-#### <a name="scale"></a>スケール
+#### <a name="scale"></a><span data-ttu-id="38b90-714">スケール</span><span class="sxs-lookup"><span data-stu-id="38b90-714">Scale</span></span>
 
-| メーカー | モデル         | インターフェイス | コメント |
+| <span data-ttu-id="38b90-715">メーカー</span><span class="sxs-lookup"><span data-stu-id="38b90-715">Manufacturer</span></span> | <span data-ttu-id="38b90-716">モデル</span><span class="sxs-lookup"><span data-stu-id="38b90-716">Model</span></span>         | <span data-ttu-id="38b90-717">インターフェイス</span><span class="sxs-lookup"><span data-stu-id="38b90-717">Interface</span></span> | <span data-ttu-id="38b90-718">コメント</span><span class="sxs-lookup"><span data-stu-id="38b90-718">Comments</span></span> |
 |--------------|---------------|-----------|----------|
-| Datalogic    | Magellan 8400 | OPOS      |          |
+| <span data-ttu-id="38b90-719">Datalogic</span><span class="sxs-lookup"><span data-stu-id="38b90-719">Datalogic</span></span>    | <span data-ttu-id="38b90-720">Magellan 8400</span><span class="sxs-lookup"><span data-stu-id="38b90-720">Magellan 8400</span></span> | <span data-ttu-id="38b90-721">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-721">OPOS</span></span>      |          |
 
-#### <a name="msr"></a>MSR
+#### <a name="msr"></a><span data-ttu-id="38b90-722">MSR</span><span class="sxs-lookup"><span data-stu-id="38b90-722">MSR</span></span>
 
-| メーカー | モデル       | インターフェイス | コメント |
+| <span data-ttu-id="38b90-723">メーカー</span><span class="sxs-lookup"><span data-stu-id="38b90-723">Manufacturer</span></span> | <span data-ttu-id="38b90-724">モデル</span><span class="sxs-lookup"><span data-stu-id="38b90-724">Model</span></span>       | <span data-ttu-id="38b90-725">インターフェイス</span><span class="sxs-lookup"><span data-stu-id="38b90-725">Interface</span></span> | <span data-ttu-id="38b90-726">コメント</span><span class="sxs-lookup"><span data-stu-id="38b90-726">Comments</span></span> |
 |--------------|-------------|-----------|----------|
-| Magtek       | 21073075    | UWP       |          |
-| Magtek       | 21073062    | OPOS      |          |
-| HP           | IDRA-334133 | OPOS      |          |
+| <span data-ttu-id="38b90-727">Magtek</span><span class="sxs-lookup"><span data-stu-id="38b90-727">Magtek</span></span>       | <span data-ttu-id="38b90-728">21073075</span><span class="sxs-lookup"><span data-stu-id="38b90-728">21073075</span></span>    | <span data-ttu-id="38b90-729">UWP</span><span class="sxs-lookup"><span data-stu-id="38b90-729">UWP</span></span>       |          |
+| <span data-ttu-id="38b90-730">Magtek</span><span class="sxs-lookup"><span data-stu-id="38b90-730">Magtek</span></span>       | <span data-ttu-id="38b90-731">21073062</span><span class="sxs-lookup"><span data-stu-id="38b90-731">21073062</span></span>    | <span data-ttu-id="38b90-732">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-732">OPOS</span></span>      |          |
+| <span data-ttu-id="38b90-733">HP</span><span class="sxs-lookup"><span data-stu-id="38b90-733">HP</span></span>           | <span data-ttu-id="38b90-734">IDRA-334133</span><span class="sxs-lookup"><span data-stu-id="38b90-734">IDRA-334133</span></span> | <span data-ttu-id="38b90-735">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-735">OPOS</span></span>      |          |
 
-### <a name="dedicated-iis-hardware-station"></a>専用 IIS ハードウェア ステーション
+### <a name="dedicated-iis-hardware-station"></a><span data-ttu-id="38b90-736">専用 IIS ハードウェア ステーション</span><span class="sxs-lookup"><span data-stu-id="38b90-736">Dedicated IIS hardware station</span></span>
 
-次の周辺機器は、専用 (共有ではない) IIS ハードウェア ステーションを使用して、Windows 用 Modern POS およびクラウド POS とともにテストされています。
+<span data-ttu-id="38b90-737">次の周辺機器は、専用 (共有ではない) IIS ハードウェア ステーションを使用して、Windows 用 Modern POS およびクラウド POS とともにテストされています。</span><span class="sxs-lookup"><span data-stu-id="38b90-737">The following peripherals were tested by using a dedicated (not shared) IIS hardware station together with Modern POS for Windows and Cloud POS.</span></span>
 
-#### <a name="printer"></a>プリンター
+#### <a name="printer"></a><span data-ttu-id="38b90-738">プリンター</span><span class="sxs-lookup"><span data-stu-id="38b90-738">Printer</span></span>
 
-| メーカー | モデル    | インターフェイス | コメント                  |
+| <span data-ttu-id="38b90-739">メーカー</span><span class="sxs-lookup"><span data-stu-id="38b90-739">Manufacturer</span></span> | <span data-ttu-id="38b90-740">モデル</span><span class="sxs-lookup"><span data-stu-id="38b90-740">Model</span></span>    | <span data-ttu-id="38b90-741">インターフェイス</span><span class="sxs-lookup"><span data-stu-id="38b90-741">Interface</span></span> | <span data-ttu-id="38b90-742">コメント</span><span class="sxs-lookup"><span data-stu-id="38b90-742">Comments</span></span>                  |
 |--------------|----------|-----------|---------------------------|
-| Epson        | Tm-T88IV | OPOS      |                           |
-| Epson        | TM-T88V  | OPOS      |                           |
-| Star         | TSP650II | OPOS      |                           |
-| Star         | TSP650II | ユーザー設定    | ネットワーク経由で接続     |
-| Star         | TSP100   | OPOS      | TSP650II ドライバが必要 |
-| HP           | F7M67AA  | OPOS      | Powered USB               |
+| <span data-ttu-id="38b90-743">Epson</span><span class="sxs-lookup"><span data-stu-id="38b90-743">Epson</span></span>        | <span data-ttu-id="38b90-744">Tm-T88IV</span><span class="sxs-lookup"><span data-stu-id="38b90-744">Tm-T88IV</span></span> | <span data-ttu-id="38b90-745">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-745">OPOS</span></span>      |                           |
+| <span data-ttu-id="38b90-746">Epson</span><span class="sxs-lookup"><span data-stu-id="38b90-746">Epson</span></span>        | <span data-ttu-id="38b90-747">TM-T88V</span><span class="sxs-lookup"><span data-stu-id="38b90-747">TM-T88V</span></span>  | <span data-ttu-id="38b90-748">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-748">OPOS</span></span>      |                           |
+| <span data-ttu-id="38b90-749">Star</span><span class="sxs-lookup"><span data-stu-id="38b90-749">Star</span></span>         | <span data-ttu-id="38b90-750">TSP650II</span><span class="sxs-lookup"><span data-stu-id="38b90-750">TSP650II</span></span> | <span data-ttu-id="38b90-751">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-751">OPOS</span></span>      |                           |
+| <span data-ttu-id="38b90-752">Star</span><span class="sxs-lookup"><span data-stu-id="38b90-752">Star</span></span>         | <span data-ttu-id="38b90-753">TSP650II</span><span class="sxs-lookup"><span data-stu-id="38b90-753">TSP650II</span></span> | <span data-ttu-id="38b90-754">ユーザー設定</span><span class="sxs-lookup"><span data-stu-id="38b90-754">Custom</span></span>    | <span data-ttu-id="38b90-755">ネットワーク経由で接続</span><span class="sxs-lookup"><span data-stu-id="38b90-755">Connected via network</span></span>     |
+| <span data-ttu-id="38b90-756">Star</span><span class="sxs-lookup"><span data-stu-id="38b90-756">Star</span></span>         | <span data-ttu-id="38b90-757">TSP100</span><span class="sxs-lookup"><span data-stu-id="38b90-757">TSP100</span></span>   | <span data-ttu-id="38b90-758">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-758">OPOS</span></span>      | <span data-ttu-id="38b90-759">TSP650II ドライバが必要</span><span class="sxs-lookup"><span data-stu-id="38b90-759">Requires TSP650II drivers</span></span> |
+| <span data-ttu-id="38b90-760">HP</span><span class="sxs-lookup"><span data-stu-id="38b90-760">HP</span></span>           | <span data-ttu-id="38b90-761">F7M67AA</span><span class="sxs-lookup"><span data-stu-id="38b90-761">F7M67AA</span></span>  | <span data-ttu-id="38b90-762">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-762">OPOS</span></span>      | <span data-ttu-id="38b90-763">Powered USB</span><span class="sxs-lookup"><span data-stu-id="38b90-763">Powered USB</span></span>               |
 
-#### <a name="bar-code-scanner"></a>バーコード スキャナー
+#### <a name="bar-code-scanner"></a><span data-ttu-id="38b90-764">バーコード スキャナー</span><span class="sxs-lookup"><span data-stu-id="38b90-764">Bar code scanner</span></span>
 
-| メーカー  | モデル   | インターフェイス | コメント |
+| <span data-ttu-id="38b90-765">メーカー</span><span class="sxs-lookup"><span data-stu-id="38b90-765">Manufacturer</span></span>  | <span data-ttu-id="38b90-766">モデル</span><span class="sxs-lookup"><span data-stu-id="38b90-766">Model</span></span>   | <span data-ttu-id="38b90-767">インターフェイス</span><span class="sxs-lookup"><span data-stu-id="38b90-767">Interface</span></span> | <span data-ttu-id="38b90-768">コメント</span><span class="sxs-lookup"><span data-stu-id="38b90-768">Comments</span></span> |
 |---------------|---------|-----------|----------|
-| Motorola      | DS9208  | OPOS      |          |
-| 記号        | LS2208  | OPOS      |          |
-| HP 統合済 | E1L07AA | OPOS      |          |
+| <span data-ttu-id="38b90-769">Motorola</span><span class="sxs-lookup"><span data-stu-id="38b90-769">Motorola</span></span>      | <span data-ttu-id="38b90-770">DS9208</span><span class="sxs-lookup"><span data-stu-id="38b90-770">DS9208</span></span>  | <span data-ttu-id="38b90-771">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-771">OPOS</span></span>      |          |
+| <span data-ttu-id="38b90-772">記号</span><span class="sxs-lookup"><span data-stu-id="38b90-772">Symbol</span></span>        | <span data-ttu-id="38b90-773">LS2208</span><span class="sxs-lookup"><span data-stu-id="38b90-773">LS2208</span></span>  | <span data-ttu-id="38b90-774">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-774">OPOS</span></span>      |          |
+| <span data-ttu-id="38b90-775">HP 統合済</span><span class="sxs-lookup"><span data-stu-id="38b90-775">HP Integrated</span></span> | <span data-ttu-id="38b90-776">E1L07AA</span><span class="sxs-lookup"><span data-stu-id="38b90-776">E1L07AA</span></span> | <span data-ttu-id="38b90-777">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-777">OPOS</span></span>      |          |
 
-#### <a name="pin-pad"></a>PIN パッド
+#### <a name="pin-pad"></a><span data-ttu-id="38b90-778">PIN パッド</span><span class="sxs-lookup"><span data-stu-id="38b90-778">PIN pad</span></span>
 
-| メーカー | モデル  | インターフェイス | コメント                                        |
+| <span data-ttu-id="38b90-779">メーカー</span><span class="sxs-lookup"><span data-stu-id="38b90-779">Manufacturer</span></span> | <span data-ttu-id="38b90-780">モデル</span><span class="sxs-lookup"><span data-stu-id="38b90-780">Model</span></span>  | <span data-ttu-id="38b90-781">インターフェイス</span><span class="sxs-lookup"><span data-stu-id="38b90-781">Interface</span></span> | <span data-ttu-id="38b90-782">コメント</span><span class="sxs-lookup"><span data-stu-id="38b90-782">Comments</span></span>                                        |
 |--------------|--------|-----------|-------------------------------------------------|
-| VeriFone     | 1000SE | OPOS      | 支払コネクターのカスタマイズが必要 |
+| <span data-ttu-id="38b90-783">VeriFone</span><span class="sxs-lookup"><span data-stu-id="38b90-783">VeriFone</span></span>     | <span data-ttu-id="38b90-784">1000SE</span><span class="sxs-lookup"><span data-stu-id="38b90-784">1000SE</span></span> | <span data-ttu-id="38b90-785">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-785">OPOS</span></span>      | <span data-ttu-id="38b90-786">支払コネクターのカスタマイズが必要</span><span class="sxs-lookup"><span data-stu-id="38b90-786">Requires customization of the payment connector</span></span> |
 
-#### <a name="payment-terminal"></a>支払ターミナル
+#### <a name="payment-terminal"></a><span data-ttu-id="38b90-787">支払ターミナル</span><span class="sxs-lookup"><span data-stu-id="38b90-787">Payment terminal</span></span>
 
-| メーカー | モデル | インターフェイス | コメント                                                                       |
+| <span data-ttu-id="38b90-788">メーカー</span><span class="sxs-lookup"><span data-stu-id="38b90-788">Manufacturer</span></span> | <span data-ttu-id="38b90-789">モデル</span><span class="sxs-lookup"><span data-stu-id="38b90-789">Model</span></span> | <span data-ttu-id="38b90-790">インターフェイス</span><span class="sxs-lookup"><span data-stu-id="38b90-790">Interface</span></span> | <span data-ttu-id="38b90-791">コメント</span><span class="sxs-lookup"><span data-stu-id="38b90-791">Comments</span></span>                                                                       |
 |--------------|-------|-----------|--------------------------------------------------------------------------------|
-| Equinox      | L5300 | ユーザー設定    | 支払コネクターのカスタマイズが必要                                |
-| VeriFone     | MX925 | ユーザー設定    | 支払コネクターのカスタマイズが必要。ネットワークおよびUSB接続 |
-| VeriFone     | MX915 | ユーザー設定    | 支払コネクターのカスタマイズが必要。ネットワークおよびUSB接続 |
+| <span data-ttu-id="38b90-792">Equinox</span><span class="sxs-lookup"><span data-stu-id="38b90-792">Equinox</span></span>      | <span data-ttu-id="38b90-793">L5300</span><span class="sxs-lookup"><span data-stu-id="38b90-793">L5300</span></span> | <span data-ttu-id="38b90-794">ユーザー設定</span><span class="sxs-lookup"><span data-stu-id="38b90-794">Custom</span></span>    | <span data-ttu-id="38b90-795">支払コネクターのカスタマイズが必要</span><span class="sxs-lookup"><span data-stu-id="38b90-795">Requires customization of the payment connector</span></span>                                |
+| <span data-ttu-id="38b90-796">VeriFone</span><span class="sxs-lookup"><span data-stu-id="38b90-796">VeriFone</span></span>     | <span data-ttu-id="38b90-797">MX925</span><span class="sxs-lookup"><span data-stu-id="38b90-797">MX925</span></span> | <span data-ttu-id="38b90-798">ユーザー設定</span><span class="sxs-lookup"><span data-stu-id="38b90-798">Custom</span></span>    | <span data-ttu-id="38b90-799">支払コネクターのカスタマイズが必要。ネットワークおよびUSB接続</span><span class="sxs-lookup"><span data-stu-id="38b90-799">Requires customization of the payment connector; connected via network and USB</span></span> |
+| <span data-ttu-id="38b90-800">VeriFone</span><span class="sxs-lookup"><span data-stu-id="38b90-800">VeriFone</span></span>     | <span data-ttu-id="38b90-801">MX915</span><span class="sxs-lookup"><span data-stu-id="38b90-801">MX915</span></span> | <span data-ttu-id="38b90-802">ユーザー設定</span><span class="sxs-lookup"><span data-stu-id="38b90-802">Custom</span></span>    | <span data-ttu-id="38b90-803">支払コネクターのカスタマイズが必要。ネットワークおよびUSB接続</span><span class="sxs-lookup"><span data-stu-id="38b90-803">Requires customization of the payment connector; connected via network and USB</span></span> |
 
-#### <a name="cash-drawer"></a>キャッシュ ドロワー
+#### <a name="cash-drawer"></a><span data-ttu-id="38b90-804">キャッシュ ドロワー</span><span class="sxs-lookup"><span data-stu-id="38b90-804">Cash drawer</span></span>
 
-| メーカー | モデル     | インターフェイス | コメント              |
+| <span data-ttu-id="38b90-805">メーカー</span><span class="sxs-lookup"><span data-stu-id="38b90-805">Manufacturer</span></span> | <span data-ttu-id="38b90-806">モデル</span><span class="sxs-lookup"><span data-stu-id="38b90-806">Model</span></span>     | <span data-ttu-id="38b90-807">インターフェイス</span><span class="sxs-lookup"><span data-stu-id="38b90-807">Interface</span></span> | <span data-ttu-id="38b90-808">コメント</span><span class="sxs-lookup"><span data-stu-id="38b90-808">Comments</span></span>              |
 |--------------|-----------|-----------|-----------------------|
-| APG          | Atwood    | ユーザー設定    | ネットワーク経由で接続 |
-| Star         | SMD2-1317 | OPOS      |                       |
-| HP           | QT457AA   | OPOS      |                       |
+| <span data-ttu-id="38b90-809">APG</span><span class="sxs-lookup"><span data-stu-id="38b90-809">APG</span></span>          | <span data-ttu-id="38b90-810">Atwood</span><span class="sxs-lookup"><span data-stu-id="38b90-810">Atwood</span></span>    | <span data-ttu-id="38b90-811">ユーザー設定</span><span class="sxs-lookup"><span data-stu-id="38b90-811">Custom</span></span>    | <span data-ttu-id="38b90-812">ネットワーク経由で接続</span><span class="sxs-lookup"><span data-stu-id="38b90-812">Connected via network</span></span> |
+| <span data-ttu-id="38b90-813">Star</span><span class="sxs-lookup"><span data-stu-id="38b90-813">Star</span></span>         | <span data-ttu-id="38b90-814">SMD2-1317</span><span class="sxs-lookup"><span data-stu-id="38b90-814">SMD2-1317</span></span> | <span data-ttu-id="38b90-815">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-815">OPOS</span></span>      |                       |
+| <span data-ttu-id="38b90-816">HP</span><span class="sxs-lookup"><span data-stu-id="38b90-816">HP</span></span>           | <span data-ttu-id="38b90-817">QT457AA</span><span class="sxs-lookup"><span data-stu-id="38b90-817">QT457AA</span></span>   | <span data-ttu-id="38b90-818">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-818">OPOS</span></span>      |                       |
 
-#### <a name="line-display"></a>ライン ディスプレイ
+#### <a name="line-display"></a><span data-ttu-id="38b90-819">ライン ディスプレイ</span><span class="sxs-lookup"><span data-stu-id="38b90-819">Line display</span></span>
 
-| メーカー  | モデル   | インターフェイス | コメント |
+| <span data-ttu-id="38b90-820">メーカー</span><span class="sxs-lookup"><span data-stu-id="38b90-820">Manufacturer</span></span>  | <span data-ttu-id="38b90-821">モデル</span><span class="sxs-lookup"><span data-stu-id="38b90-821">Model</span></span>   | <span data-ttu-id="38b90-822">インターフェイス</span><span class="sxs-lookup"><span data-stu-id="38b90-822">Interface</span></span> | <span data-ttu-id="38b90-823">コメント</span><span class="sxs-lookup"><span data-stu-id="38b90-823">Comments</span></span> |
 |---------------|---------|-----------|----------|
-| HP 統合済 | G6U79AA | OPOS      |          |
-| Epson         | M58DC   | OPOS      |          |
+| <span data-ttu-id="38b90-824">HP 統合済</span><span class="sxs-lookup"><span data-stu-id="38b90-824">HP integrated</span></span> | <span data-ttu-id="38b90-825">G6U79AA</span><span class="sxs-lookup"><span data-stu-id="38b90-825">G6U79AA</span></span> | <span data-ttu-id="38b90-826">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-826">OPOS</span></span>      |          |
+| <span data-ttu-id="38b90-827">Epson</span><span class="sxs-lookup"><span data-stu-id="38b90-827">Epson</span></span>         | <span data-ttu-id="38b90-828">M58DC</span><span class="sxs-lookup"><span data-stu-id="38b90-828">M58DC</span></span>   | <span data-ttu-id="38b90-829">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-829">OPOS</span></span>      |          |
 
-#### <a name="signature-capture"></a>署名キャプチャ
+#### <a name="signature-capture"></a><span data-ttu-id="38b90-830">署名キャプチャ</span><span class="sxs-lookup"><span data-stu-id="38b90-830">Signature capture</span></span>
 
-| メーカー | モデル  | インターフェイス | コメント |
+| <span data-ttu-id="38b90-831">メーカー</span><span class="sxs-lookup"><span data-stu-id="38b90-831">Manufacturer</span></span> | <span data-ttu-id="38b90-832">モデル</span><span class="sxs-lookup"><span data-stu-id="38b90-832">Model</span></span>  | <span data-ttu-id="38b90-833">インターフェイス</span><span class="sxs-lookup"><span data-stu-id="38b90-833">Interface</span></span> | <span data-ttu-id="38b90-834">コメント</span><span class="sxs-lookup"><span data-stu-id="38b90-834">Comments</span></span> |
 |--------------|--------|-----------|----------|
-| Scriptel     | ST1550 | OPOS      |          |
+| <span data-ttu-id="38b90-835">Scriptel</span><span class="sxs-lookup"><span data-stu-id="38b90-835">Scriptel</span></span>     | <span data-ttu-id="38b90-836">ST1550</span><span class="sxs-lookup"><span data-stu-id="38b90-836">ST1550</span></span> | <span data-ttu-id="38b90-837">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-837">OPOS</span></span>      |          |
 
-#### <a name="scale"></a>スケール
+#### <a name="scale"></a><span data-ttu-id="38b90-838">スケール</span><span class="sxs-lookup"><span data-stu-id="38b90-838">Scale</span></span>
 
-| メーカー | モデル         | インターフェイス | コメント |
+| <span data-ttu-id="38b90-839">メーカー</span><span class="sxs-lookup"><span data-stu-id="38b90-839">Manufacturer</span></span> | <span data-ttu-id="38b90-840">モデル</span><span class="sxs-lookup"><span data-stu-id="38b90-840">Model</span></span>         | <span data-ttu-id="38b90-841">インターフェイス</span><span class="sxs-lookup"><span data-stu-id="38b90-841">Interface</span></span> | <span data-ttu-id="38b90-842">コメント</span><span class="sxs-lookup"><span data-stu-id="38b90-842">Comments</span></span> |
 |--------------|---------------|-----------|----------|
-| Datalogic    | Magellan 8400 | OPOS      |          |
+| <span data-ttu-id="38b90-843">Datalogic</span><span class="sxs-lookup"><span data-stu-id="38b90-843">Datalogic</span></span>    | <span data-ttu-id="38b90-844">Magellan 8400</span><span class="sxs-lookup"><span data-stu-id="38b90-844">Magellan 8400</span></span> | <span data-ttu-id="38b90-845">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-845">OPOS</span></span>      |          |
 
-#### <a name="msr"></a>MSR
+#### <a name="msr"></a><span data-ttu-id="38b90-846">MSR</span><span class="sxs-lookup"><span data-stu-id="38b90-846">MSR</span></span>
 
-| メーカー | モデル       | インターフェイス | コメント |
+| <span data-ttu-id="38b90-847">メーカー</span><span class="sxs-lookup"><span data-stu-id="38b90-847">Manufacturer</span></span> | <span data-ttu-id="38b90-848">モデル</span><span class="sxs-lookup"><span data-stu-id="38b90-848">Model</span></span>       | <span data-ttu-id="38b90-849">インターフェイス</span><span class="sxs-lookup"><span data-stu-id="38b90-849">Interface</span></span> | <span data-ttu-id="38b90-850">コメント</span><span class="sxs-lookup"><span data-stu-id="38b90-850">Comments</span></span> |
 |--------------|-------------|-----------|----------|
-| Magtek       | 21073075    | UWP       |          |
-| Magtek       | 21073062    | OPOS      |          |
-| HP           | IDRA-334133 | OPOS      |          |
+| <span data-ttu-id="38b90-851">Magtek</span><span class="sxs-lookup"><span data-stu-id="38b90-851">Magtek</span></span>       | <span data-ttu-id="38b90-852">21073075</span><span class="sxs-lookup"><span data-stu-id="38b90-852">21073075</span></span>    | <span data-ttu-id="38b90-853">UWP</span><span class="sxs-lookup"><span data-stu-id="38b90-853">UWP</span></span>       |          |
+| <span data-ttu-id="38b90-854">Magtek</span><span class="sxs-lookup"><span data-stu-id="38b90-854">Magtek</span></span>       | <span data-ttu-id="38b90-855">21073062</span><span class="sxs-lookup"><span data-stu-id="38b90-855">21073062</span></span>    | <span data-ttu-id="38b90-856">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-856">OPOS</span></span>      |          |
+| <span data-ttu-id="38b90-857">HP</span><span class="sxs-lookup"><span data-stu-id="38b90-857">HP</span></span>           | <span data-ttu-id="38b90-858">IDRA-334133</span><span class="sxs-lookup"><span data-stu-id="38b90-858">IDRA-334133</span></span> | <span data-ttu-id="38b90-859">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-859">OPOS</span></span>      |          |
 
-### <a name="shared-iis-hardware-station"></a>共有 IIS ハードウェア ステーション
+### <a name="shared-iis-hardware-station"></a><span data-ttu-id="38b90-860">共有 IIS ハードウェア ステーション</span><span class="sxs-lookup"><span data-stu-id="38b90-860">Shared IIS hardware station</span></span>
 
-次の周辺機器は、共有 IIS ハードウェア ステーションを使用して、Windows 用 Modern POS およびクラウド POS とともにテストされています。 **注記:**プリンター、支払ターミナル、キャッシュ ドロワーのみサポートされます。
+<span data-ttu-id="38b90-861">次の周辺機器は、共有 IIS ハードウェア ステーションを使用して、Windows 用 Modern POS およびクラウド POS とともにテストされています。</span><span class="sxs-lookup"><span data-stu-id="38b90-861">The following peripherals were tested by using a shared IIS hardware station together with Modern POS for Windows and Cloud POS.</span></span> <span data-ttu-id="38b90-862">**注記:**プリンター、支払ターミナル、キャッシュ ドロワーのみサポートされます。</span><span class="sxs-lookup"><span data-stu-id="38b90-862">**Note:** Only a printer, payment terminal, and cash drawer are supported.</span></span>
 
-#### <a name="printer"></a>プリンター
+#### <a name="printer"></a><span data-ttu-id="38b90-863">プリンター</span><span class="sxs-lookup"><span data-stu-id="38b90-863">Printer</span></span>
 
-| メーカー | モデル    | インターフェイス | コメント                  |
+| <span data-ttu-id="38b90-864">メーカー</span><span class="sxs-lookup"><span data-stu-id="38b90-864">Manufacturer</span></span> | <span data-ttu-id="38b90-865">モデル</span><span class="sxs-lookup"><span data-stu-id="38b90-865">Model</span></span>    | <span data-ttu-id="38b90-866">インターフェイス</span><span class="sxs-lookup"><span data-stu-id="38b90-866">Interface</span></span> | <span data-ttu-id="38b90-867">コメント</span><span class="sxs-lookup"><span data-stu-id="38b90-867">Comments</span></span>                  |
 |--------------|----------|-----------|---------------------------|
-| Epson        | Tm-T88IV | OPOS      |                           |
-| Epson        | TM-T88V  | OPOS      |                           |
-| Star         | TSP650II | OPOS      |                           |
-| Star         | TSP650II | ユーザー設定    | ネットワーク経由で接続     |
-| Star         | TSP100   | OPOS      | TSP650II ドライバが必要 |
-| HP           | F7M67AA  | OPOS      | Powered USB               |
+| <span data-ttu-id="38b90-868">Epson</span><span class="sxs-lookup"><span data-stu-id="38b90-868">Epson</span></span>        | <span data-ttu-id="38b90-869">Tm-T88IV</span><span class="sxs-lookup"><span data-stu-id="38b90-869">Tm-T88IV</span></span> | <span data-ttu-id="38b90-870">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-870">OPOS</span></span>      |                           |
+| <span data-ttu-id="38b90-871">Epson</span><span class="sxs-lookup"><span data-stu-id="38b90-871">Epson</span></span>        | <span data-ttu-id="38b90-872">TM-T88V</span><span class="sxs-lookup"><span data-stu-id="38b90-872">TM-T88V</span></span>  | <span data-ttu-id="38b90-873">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-873">OPOS</span></span>      |                           |
+| <span data-ttu-id="38b90-874">Star</span><span class="sxs-lookup"><span data-stu-id="38b90-874">Star</span></span>         | <span data-ttu-id="38b90-875">TSP650II</span><span class="sxs-lookup"><span data-stu-id="38b90-875">TSP650II</span></span> | <span data-ttu-id="38b90-876">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-876">OPOS</span></span>      |                           |
+| <span data-ttu-id="38b90-877">Star</span><span class="sxs-lookup"><span data-stu-id="38b90-877">Star</span></span>         | <span data-ttu-id="38b90-878">TSP650II</span><span class="sxs-lookup"><span data-stu-id="38b90-878">TSP650II</span></span> | <span data-ttu-id="38b90-879">ユーザー設定</span><span class="sxs-lookup"><span data-stu-id="38b90-879">Custom</span></span>    | <span data-ttu-id="38b90-880">ネットワーク経由で接続</span><span class="sxs-lookup"><span data-stu-id="38b90-880">Connected via network</span></span>     |
+| <span data-ttu-id="38b90-881">Star</span><span class="sxs-lookup"><span data-stu-id="38b90-881">Star</span></span>         | <span data-ttu-id="38b90-882">TSP100</span><span class="sxs-lookup"><span data-stu-id="38b90-882">TSP100</span></span>   | <span data-ttu-id="38b90-883">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-883">OPOS</span></span>      | <span data-ttu-id="38b90-884">TSP650II ドライバが必要</span><span class="sxs-lookup"><span data-stu-id="38b90-884">Requires TSP650II drivers</span></span> |
+| <span data-ttu-id="38b90-885">HP</span><span class="sxs-lookup"><span data-stu-id="38b90-885">HP</span></span>           | <span data-ttu-id="38b90-886">F7M67AA</span><span class="sxs-lookup"><span data-stu-id="38b90-886">F7M67AA</span></span>  | <span data-ttu-id="38b90-887">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-887">OPOS</span></span>      | <span data-ttu-id="38b90-888">Powered USB</span><span class="sxs-lookup"><span data-stu-id="38b90-888">Powered USB</span></span>               |
 
-#### <a name="payment-terminal"></a>支払ターミナル
+#### <a name="payment-terminal"></a><span data-ttu-id="38b90-889">支払ターミナル</span><span class="sxs-lookup"><span data-stu-id="38b90-889">Payment terminal</span></span>
 
-| メーカー | モデル | インターフェイス | コメント                                                                       |
+| <span data-ttu-id="38b90-890">メーカー</span><span class="sxs-lookup"><span data-stu-id="38b90-890">Manufacturer</span></span> | <span data-ttu-id="38b90-891">モデル</span><span class="sxs-lookup"><span data-stu-id="38b90-891">Model</span></span> | <span data-ttu-id="38b90-892">インターフェイス</span><span class="sxs-lookup"><span data-stu-id="38b90-892">Interface</span></span> | <span data-ttu-id="38b90-893">コメント</span><span class="sxs-lookup"><span data-stu-id="38b90-893">Comments</span></span>                                                                       |
 |--------------|-------|-----------|--------------------------------------------------------------------------------|
-| VeriFone     | MX925 | ユーザー設定    | 支払コネクターのカスタマイズが必要。ネットワークおよびUSB接続 |
-| VeriFone     | MX915 | ユーザー設定    | 支払コネクターのカスタマイズが必要。ネットワークおよびUSB接続 |
+| <span data-ttu-id="38b90-894">VeriFone</span><span class="sxs-lookup"><span data-stu-id="38b90-894">VeriFone</span></span>     | <span data-ttu-id="38b90-895">MX925</span><span class="sxs-lookup"><span data-stu-id="38b90-895">MX925</span></span> | <span data-ttu-id="38b90-896">ユーザー設定</span><span class="sxs-lookup"><span data-stu-id="38b90-896">Custom</span></span>    | <span data-ttu-id="38b90-897">支払コネクターのカスタマイズが必要。ネットワークおよびUSB接続</span><span class="sxs-lookup"><span data-stu-id="38b90-897">Requires customization of the payment connector; connected via network and USB</span></span> |
+| <span data-ttu-id="38b90-898">VeriFone</span><span class="sxs-lookup"><span data-stu-id="38b90-898">VeriFone</span></span>     | <span data-ttu-id="38b90-899">MX915</span><span class="sxs-lookup"><span data-stu-id="38b90-899">MX915</span></span> | <span data-ttu-id="38b90-900">ユーザー設定</span><span class="sxs-lookup"><span data-stu-id="38b90-900">Custom</span></span>    | <span data-ttu-id="38b90-901">支払コネクターのカスタマイズが必要。ネットワークおよびUSB接続</span><span class="sxs-lookup"><span data-stu-id="38b90-901">Requires customization of the payment connector; connected via network and USB</span></span> |
 
-#### <a name="cash-drawer"></a>キャッシュ ドロワー
+#### <a name="cash-drawer"></a><span data-ttu-id="38b90-902">キャッシュ ドロワー</span><span class="sxs-lookup"><span data-stu-id="38b90-902">Cash drawer</span></span>
 
-| メーカー | モデル     | インターフェイス | コメント              |
+| <span data-ttu-id="38b90-903">メーカー</span><span class="sxs-lookup"><span data-stu-id="38b90-903">Manufacturer</span></span> | <span data-ttu-id="38b90-904">モデル</span><span class="sxs-lookup"><span data-stu-id="38b90-904">Model</span></span>     | <span data-ttu-id="38b90-905">インターフェイス</span><span class="sxs-lookup"><span data-stu-id="38b90-905">Interface</span></span> | <span data-ttu-id="38b90-906">コメント</span><span class="sxs-lookup"><span data-stu-id="38b90-906">Comments</span></span>              |
 |--------------|-----------|-----------|-----------------------|
-| APG          | Atwood    | ユーザー設定    | ネットワーク経由で接続 |
-| Star         | SMD2-1317 | OPOS      |                       |
-| HP           | QT457AA   | OPOS      |                       |
+| <span data-ttu-id="38b90-907">APG</span><span class="sxs-lookup"><span data-stu-id="38b90-907">APG</span></span>          | <span data-ttu-id="38b90-908">Atwood</span><span class="sxs-lookup"><span data-stu-id="38b90-908">Atwood</span></span>    | <span data-ttu-id="38b90-909">ユーザー設定</span><span class="sxs-lookup"><span data-stu-id="38b90-909">Custom</span></span>    | <span data-ttu-id="38b90-910">ネットワーク経由で接続</span><span class="sxs-lookup"><span data-stu-id="38b90-910">Connected via network</span></span> |
+| <span data-ttu-id="38b90-911">Star</span><span class="sxs-lookup"><span data-stu-id="38b90-911">Star</span></span>         | <span data-ttu-id="38b90-912">SMD2-1317</span><span class="sxs-lookup"><span data-stu-id="38b90-912">SMD2-1317</span></span> | <span data-ttu-id="38b90-913">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-913">OPOS</span></span>      |                       |
+| <span data-ttu-id="38b90-914">HP</span><span class="sxs-lookup"><span data-stu-id="38b90-914">HP</span></span>           | <span data-ttu-id="38b90-915">QT457AA</span><span class="sxs-lookup"><span data-stu-id="38b90-915">QT457AA</span></span>   | <span data-ttu-id="38b90-916">OPOS</span><span class="sxs-lookup"><span data-stu-id="38b90-916">OPOS</span></span>      |                       |
 
-## <a name="troubleshooting"></a>トラブルシューティング
-### <a name="modern-pos-can-detect-the-hardware-station-in-its-list-for-selection-but-it-cant-complete-the-pairing"></a>Modern POS は、選択リストにあるハードウェア ステーションを検出できますが、ペアリングを完了することはできません
+## <a name="troubleshooting"></a><span data-ttu-id="38b90-917">トラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="38b90-917">Troubleshooting</span></span>
+### <a name="modern-pos-can-detect-the-hardware-station-in-its-list-for-selection-but-it-cant-complete-the-pairing"></a><span data-ttu-id="38b90-918">Modern POS は、選択リストにあるハードウェア ステーションを検出できますが、ペアリングを完了することはできません</span><span class="sxs-lookup"><span data-stu-id="38b90-918">Modern POS can detect the hardware station in its list for selection, but it can’t complete the pairing</span></span>
 
-**ソリューション:** 以下の潜在的障害ポイントを確認してください:
+<span data-ttu-id="38b90-919">**ソリューション:** 以下の潜在的障害ポイントを確認してください:</span><span class="sxs-lookup"><span data-stu-id="38b90-919">**Solution:** Verify the following list of potential failure points:</span></span>
 
--   Modern POS を実行しているコンピュータは、ハードウェア ステーションを実行しているコンピュータで使用される証明書を信頼します。
-    -   この設定を確認するには、Web ブラウザで以下の URL を開きます: https://&lt;Computer Name&gt;:&lt;Port Number&gt;/HardwareStation/ping.
-    -   この URL は ping を使用してコンピュータにアクセスできるかどうかを確認し、ブラウザは証明書が信頼できるかどうかを示します。 (たとえば、Internet Explorer ではカギのアイコンがアドレス バーに表示されます。 このアイコンをクリックすると、Internet Explorer は証明書が現在信頼されているかどうかを確認します。 表示される証明書の詳細を見ることで、ローカル コンピュータに証明書をインストールできます)。
--   ハードウェア ステーションを実行するコンピュータで、ハードウェア ステーションで使用されるポートはファイアウォールで開かれます。
--   ハードウェア ステーションのインストールの最後に実行される支払商社情報インストール ツールを使用して、ハードウェア ステーションに支払商社情報が正しくインストールされます。
+-   <span data-ttu-id="38b90-920">Modern POS を実行しているコンピュータは、ハードウェア ステーションを実行しているコンピュータで使用される証明書を信頼します。</span><span class="sxs-lookup"><span data-stu-id="38b90-920">The computer that is running Modern POS trusts the certificate that is used on the computer that runs the hardware station.</span></span>
+    -   <span data-ttu-id="38b90-921">この設定を確認するには、Web ブラウザで以下の URL を開きます: https://&lt;Computer Name&gt;:&lt;Port Number&gt;/HardwareStation/ping.</span><span class="sxs-lookup"><span data-stu-id="38b90-921">To verify this setup, in a web browser, go to the following URL: https://&lt;Computer Name&gt;:&lt;Port Number&gt;/HardwareStation/ping.</span></span>
+    -   <span data-ttu-id="38b90-922">この URL は ping を使用してコンピュータにアクセスできるかどうかを確認し、ブラウザは証明書が信頼できるかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="38b90-922">This URL uses a ping to verify that the computer can be accessed, and the browser indicates whether the certificate is trusted.</span></span> <span data-ttu-id="38b90-923">(たとえば、Internet Explorer ではカギのアイコンがアドレス バーに表示されます。</span><span class="sxs-lookup"><span data-stu-id="38b90-923">(For example, in Internet Explorer, a lock icon appears in the address bar.</span></span> <span data-ttu-id="38b90-924">このアイコンをクリックすると、Internet Explorer は証明書が現在信頼されているかどうかを確認します。</span><span class="sxs-lookup"><span data-stu-id="38b90-924">When you click this icon, Internet Explorer verifies whether the certificate is currently trusted.</span></span> <span data-ttu-id="38b90-925">表示される証明書の詳細を見ることで、ローカル コンピュータに証明書をインストールできます)。</span><span class="sxs-lookup"><span data-stu-id="38b90-925">You can install the certificate on the local computer by viewing the details of the certificate that is shown.)</span></span>
+-   <span data-ttu-id="38b90-926">ハードウェア ステーションを実行するコンピュータで、ハードウェア ステーションで使用されるポートはファイアウォールで開かれます。</span><span class="sxs-lookup"><span data-stu-id="38b90-926">On the computer that runs the hardware station, the port that will be used by the hardware station is opened in the firewall.</span></span>
+-   <span data-ttu-id="38b90-927">ハードウェア ステーションのインストールの最後に実行される支払商社情報インストール ツールを使用して、ハードウェア ステーションに支払商社情報が正しくインストールされます。</span><span class="sxs-lookup"><span data-stu-id="38b90-927">The hardware station has correctly installed merchant account information through the Install merchant information tool that runs at the end of the hardware station installer.</span></span>
 
-### <a name="modern-pos-cant-detect-the-hardware-station-in-its-list-for-selection"></a>Modern POS が選択リストにあるハードウェア ステーションを検出できない
+### <a name="modern-pos-cant-detect-the-hardware-station-in-its-list-for-selection"></a><span data-ttu-id="38b90-928">Modern POS が選択リストにあるハードウェア ステーションを検出できない</span><span class="sxs-lookup"><span data-stu-id="38b90-928">Modern POS can’t detect the hardware station in its list for selection</span></span>
 
-**ソリューション:** 次の要素のいずれかによりこの問題が生じることがあります:
+<span data-ttu-id="38b90-929">**ソリューション:** 次の要素のいずれかによりこの問題が生じることがあります:</span><span class="sxs-lookup"><span data-stu-id="38b90-929">**Solution:** Either of the following factors can cause this issue:</span></span>
 
--   ハードウェア ステーションが本社に正しく設定されていない。 このトピックで説明した手順を使用して、ハードウェア ステーションのプロファイルとハードウェア ステーションが正しく入力されていることを確認します。
--   チャンネル構成を更新するジョブが実行されていない。 この場合、チャンネル構成用に 1070 のジョブを実行します。
+-   <span data-ttu-id="38b90-930">ハードウェア ステーションが本社に正しく設定されていない。</span><span class="sxs-lookup"><span data-stu-id="38b90-930">The hardware station hasn’t been set up correctly in headquarters.</span></span> <span data-ttu-id="38b90-931">このトピックで説明した手順を使用して、ハードウェア ステーションのプロファイルとハードウェア ステーションが正しく入力されていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="38b90-931">Use the steps earlier in this topic to verify that the hardware station profile and the hardware station are correctly entered.</span></span>
+-   <span data-ttu-id="38b90-932">チャンネル構成を更新するジョブが実行されていない。</span><span class="sxs-lookup"><span data-stu-id="38b90-932">The jobs haven’t been run to update the channel configuration.</span></span> <span data-ttu-id="38b90-933">この場合、チャンネル構成用に 1070 のジョブを実行します。</span><span class="sxs-lookup"><span data-stu-id="38b90-933">In this case, run the 1070 job for channel configuration.</span></span>
 
-### <a name="modern-pos-doesnt-reflect-new-cash-drawer-settings"></a>Modern POS が新しいキャッシュ ドロワーの設定を反映していない
+### <a name="modern-pos-doesnt-reflect-new-cash-drawer-settings"></a><span data-ttu-id="38b90-934">Modern POS が新しいキャッシュ ドロワーの設定を反映していない</span><span class="sxs-lookup"><span data-stu-id="38b90-934">Modern POS doesn't reflect new cash drawer settings</span></span>
 
-**ソリューション:**現在のバッチを閉じます。 キャッシュ ドロワーへの変更は、現在のバッチが閉じられるまで Modern POS では更新されません。
+<span data-ttu-id="38b90-935">**ソリューション:**現在のバッチを閉じます。</span><span class="sxs-lookup"><span data-stu-id="38b90-935">**Solution:** Close the current batch.</span></span> <span data-ttu-id="38b90-936">キャッシュ ドロワーへの変更は、現在のバッチが閉じられるまで Modern POS では更新されません。</span><span class="sxs-lookup"><span data-stu-id="38b90-936">Changes to the cash drawer aren't updated to Modern POS until the current batch is closed.</span></span>
 
-### <a name="modern-pos-is-reporting-an-issue-with-a-retail-peripheral"></a>Modern POS が周辺機器の問題を報告している
+### <a name="modern-pos-is-reporting-an-issue-with-a-retail-peripheral"></a><span data-ttu-id="38b90-937">Modern POS が周辺機器の問題を報告している</span><span class="sxs-lookup"><span data-stu-id="38b90-937">Modern POS is reporting an issue with a retail peripheral</span></span>
 
-**ソリューション:** この問題の一般的な原因を挙げます。
+<span data-ttu-id="38b90-938">**ソリューション:** この問題の一般的な原因を挙げます。</span><span class="sxs-lookup"><span data-stu-id="38b90-938">**Solution:** Here are some typical causes of this issue:</span></span>
 
--   他のデバイス ドライバの Configuration Utility が終了していることを確認します。 これらのユーティリティが開かれている場合、Modern POS またはハードウェア ステーションのデバイス要求を邪魔することがあります。
--   小売周辺機器が複数の POS のデバイスで共有されている場合、次のカテゴリの 1 つに属していることを確認してください。
-    -   キャッシュ ドロワー
-    -   レシート プリンター
-    -   支払ターミナル
+-   <span data-ttu-id="38b90-939">他のデバイス ドライバの Configuration Utility が終了していることを確認します。</span><span class="sxs-lookup"><span data-stu-id="38b90-939">Make sure that other device driver configuration utilities are closed.</span></span> <span data-ttu-id="38b90-940">これらのユーティリティが開かれている場合、Modern POS またはハードウェア ステーションのデバイス要求を邪魔することがあります。</span><span class="sxs-lookup"><span data-stu-id="38b90-940">If these utilities are open, they might prevent Modern POS or the hardware station from claiming the device.</span></span>
+-   <span data-ttu-id="38b90-941">小売周辺機器が複数の POS のデバイスで共有されている場合、次のカテゴリの 1 つに属していることを確認してください。</span><span class="sxs-lookup"><span data-stu-id="38b90-941">If the retail peripheral is shared with multiple POS devices, make sure that it belongs to one of the following categories:</span></span>
+    -   <span data-ttu-id="38b90-942">キャッシュ ドロワー</span><span class="sxs-lookup"><span data-stu-id="38b90-942">Cash drawer</span></span>
+    -   <span data-ttu-id="38b90-943">レシート プリンター</span><span class="sxs-lookup"><span data-stu-id="38b90-943">Receipt printer</span></span>
+    -   <span data-ttu-id="38b90-944">支払ターミナル</span><span class="sxs-lookup"><span data-stu-id="38b90-944">Payment terminal</span></span>
 
-    周辺機器がこれらのカテゴリのいずれかに属していない場合、ハードウェア ステーションは周辺機器を複数の POS デバイスで共有するようにはデザインされていません。
--   場合によっては、デバイス ドライバによってコモン コントロール オブジェクト (CCO) が正しく動作できなくなることがあります。 新たにインストールされたデバイスが正しく作動していない場合、またはそのほかの問題に気づく場合、通常は CCO を再インストールすることで問題を解決できます。 CCO をダウンロードするには、<http://monroecs.com/oposccos_current.htm> を参照してください。
--   テストまたはトラブルシューティングのために頻繁に周辺機器を変更する場合、キャッシュが自然に更新されるのを待つ代わりに IIS をリセットする必要があるかもしれません。 IIS のリセットには、次の手順に従います。
-    1.  [**開始**] メニューから [**CMD**] とタイプします。
-    2.  検索結果で、右クリックで [**コマンド プロンプト**]、次いで [**管理者として実行**] をクリックします。
-    3.  **コマンド プロンプト**ウィンドウで、**iisreset /Restart** とタイプして Enter キーを押します。
-    4.  IIS の再起動後、Modern POS を再起動します。
--   周辺機器に頻繁に変更を加え、POS クライアントを頻繁に起動および終了した場合、前の POS セッションの dllhost プロセスが現在のセッションに干渉することがあります。 この場合、前のセッションを管理するダイナミックリンク ライブラリ (DLL) のホストを閉じるまで、デバイスが使用可能にならないことがあります。 DLL ホストを終了するには、次の手順に従います。
-    1.  [**開始**] メニューから [**タスク マネージャ**] とタイプします。
-    2.  検索結果から、**タスク マネージャ**をクリックします。
-    3.  タスク マネージャの [**詳細**] タブで [**名前**] というラベルの付いた列ヘッダーをクリックし、テーブルを名前のアルファベット順に並べ替えます。
-    4.  dllhost.exe が見つかるまでスクロールします。
-    5.  各 DLL ホストを選択し、[**タスクの終了**] をクリックします。
-    6.  DLL ホストが終了したら、Modern POS を再起動します。
+    <span data-ttu-id="38b90-945">周辺機器がこれらのカテゴリのいずれかに属していない場合、ハードウェア ステーションは周辺機器を複数の POS デバイスで共有するようにはデザインされていません。</span><span class="sxs-lookup"><span data-stu-id="38b90-945">If the peripheral doesn't belong to one of these categories, the hardware station isn't designed to enable the peripheral to be shared among multiple POS devices.</span></span>
+-   <span data-ttu-id="38b90-946">場合によっては、デバイス ドライバによってコモン コントロール オブジェクト (CCO) が正しく動作できなくなることがあります。</span><span class="sxs-lookup"><span data-stu-id="38b90-946">Sometimes, device drivers can cause the common control objects (CCOs) to stop working correctly.</span></span> <span data-ttu-id="38b90-947">新たにインストールされたデバイスが正しく作動していない場合、またはそのほかの問題に気づく場合、通常は CCO を再インストールすることで問題を解決できます。</span><span class="sxs-lookup"><span data-stu-id="38b90-947">If a device has recently been installed, but it isn't working properly or you notice other issues, you can often resolve the issue by reinstalling the CCOs.</span></span> <span data-ttu-id="38b90-948">CCO をダウンロードするには、<http://monroecs.com/oposccos_current.htm> を参照してください。</span><span class="sxs-lookup"><span data-stu-id="38b90-948">To download the CCOs, visit <http://monroecs.com/oposccos_current.htm>.</span></span>
+-   <span data-ttu-id="38b90-949">テストまたはトラブルシューティングのために頻繁に周辺機器を変更する場合、キャッシュが自然に更新されるのを待つ代わりに IIS をリセットする必要があるかもしれません。</span><span class="sxs-lookup"><span data-stu-id="38b90-949">If you make frequent peripheral changes during testing or troubleshooting, you might have to reset IIS instead of waiting for the cache to refresh itself.</span></span> <span data-ttu-id="38b90-950">IIS のリセットには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="38b90-950">To reset IIS, follow these steps:</span></span>
+    1.  <span data-ttu-id="38b90-951">[**開始**] メニューから [**CMD**] とタイプします。</span><span class="sxs-lookup"><span data-stu-id="38b90-951">From the **Start** menu, type **CMD**.</span></span>
+    2.  <span data-ttu-id="38b90-952">検索結果で、右クリックで [**コマンド プロンプト**]、次いで [**管理者として実行**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="38b90-952">In the search results, right-click **Command prompt**, and then click **Run as administrator**.</span></span>
+    3.  <span data-ttu-id="38b90-953">**コマンド プロンプト**ウィンドウで、**iisreset /Restart** とタイプして Enter キーを押します。</span><span class="sxs-lookup"><span data-stu-id="38b90-953">In the **Command prompt** window, type **iisreset /Restart** and then press Enter.</span></span>
+    4.  <span data-ttu-id="38b90-954">IIS の再起動後、Modern POS を再起動します。</span><span class="sxs-lookup"><span data-stu-id="38b90-954">After IIS has restarted, restart Modern POS.</span></span>
+-   <span data-ttu-id="38b90-955">周辺機器に頻繁に変更を加え、POS クライアントを頻繁に起動および終了した場合、前の POS セッションの dllhost プロセスが現在のセッションに干渉することがあります。</span><span class="sxs-lookup"><span data-stu-id="38b90-955">While you're making frequent changes to peripheral devices, if you also frequently start and exit the POS client, the dllhost process from a previous POS session can interfere with the current session.</span></span> <span data-ttu-id="38b90-956">この場合、前のセッションを管理するダイナミックリンク ライブラリ (DLL) のホストを閉じるまで、デバイスが使用可能にならないことがあります。</span><span class="sxs-lookup"><span data-stu-id="38b90-956">In this case, a device might not be usable until you close the dynamic-link library (DLL) host that is managing the previous session.</span></span> <span data-ttu-id="38b90-957">DLL ホストを終了するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="38b90-957">To close the DLL host, follow these steps:</span></span>
+    1.  <span data-ttu-id="38b90-958">[**開始**] メニューから [**タスク マネージャ**] とタイプします。</span><span class="sxs-lookup"><span data-stu-id="38b90-958">From the **Start** menu, type **Task manager**.</span></span>
+    2.  <span data-ttu-id="38b90-959">検索結果から、**タスク マネージャ**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="38b90-959">In the search results, click **Task manager**.</span></span>
+    3.  <span data-ttu-id="38b90-960">タスク マネージャの [**詳細**] タブで [**名前**] というラベルの付いた列ヘッダーをクリックし、テーブルを名前のアルファベット順に並べ替えます。</span><span class="sxs-lookup"><span data-stu-id="38b90-960">In Task manager, on the **Details** tab, click the column header that is labeled **Name** to sort the table alphabetically by name.</span></span>
+    4.  <span data-ttu-id="38b90-961">dllhost.exe が見つかるまでスクロールします。</span><span class="sxs-lookup"><span data-stu-id="38b90-961">Scroll down until you find dllhost.exe.</span></span>
+    5.  <span data-ttu-id="38b90-962">各 DLL ホストを選択し、[**タスクの終了**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="38b90-962">Select each DLL host, and then click **End task**.</span></span>
+    6.  <span data-ttu-id="38b90-963">DLL ホストが終了したら、Modern POS を再起動します。</span><span class="sxs-lookup"><span data-stu-id="38b90-963">After the DLL hosts have been closed, restart Modern POS.</span></span>
 
 
-<a name="see-also"></a>参照
+<a name="see-also"></a><span data-ttu-id="38b90-964">参照</span><span class="sxs-lookup"><span data-stu-id="38b90-964">See also</span></span>
 --------
 
-[Retail 周辺機器シミュレーター](dev-itpro/retail-peripheral-simulator.md)
+[<span data-ttu-id="38b90-965">Retail 周辺機器シミュレーター</span><span class="sxs-lookup"><span data-stu-id="38b90-965">Retail peripheral simulator</span></span>](dev-itpro/retail-peripheral-simulator.md)
 
 
 

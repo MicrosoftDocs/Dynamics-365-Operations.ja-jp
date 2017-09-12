@@ -17,41 +17,41 @@ ms.assetid: 41de0250-4a96-412e-a412-aa06615b6b1d
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: yuyus
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 80e64323700dad5cb93539a46fdc858a6f555a34
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 0c3f5115377178941984e53749c18cc1c9179812
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="batch-attributes"></a>バッチ属性 (複数)
+# <a name="batch-attributes"></a><span data-ttu-id="4228e-105">バッチ属性 (複数)</span><span class="sxs-lookup"><span data-stu-id="4228e-105">Batch attributes</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-この記事は、バッチ属性に関する情報を提供します。 バッチ属性は、在庫バッチを構成する原材料および完成製品の特性です。 この記事は、バッチ属性の割り当て方法と、バッチの引当を行うときにそれらを検索する方法も説明します。
+<span data-ttu-id="4228e-106">この記事は、バッチ属性に関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="4228e-106">This article provides information about batch attributes.</span></span> <span data-ttu-id="4228e-107">バッチ属性は、在庫バッチを構成する原材料および完成製品の特性です。</span><span class="sxs-lookup"><span data-stu-id="4228e-107">Batch attributes are characteristics of raw materials and finished products that make up inventory batches.</span></span> <span data-ttu-id="4228e-108">この記事は、バッチ属性の割り当て方法と、バッチの引当を行うときにそれらを検索する方法も説明します。</span><span class="sxs-lookup"><span data-stu-id="4228e-108">The article also explains how to assign batch attributes, and how you can search on them when you reserve batches.</span></span>
 
-バッチ属性は、在庫バッチを構成する原材料および完成製品の特性です。 バッチ属性は環境条件、バッチの生産に使用される原材料の品質、完成品の結果などの要因によって異なります。 使用されるバッチ属性の数とタイプは、業界によって大きく異なります。 以下はバッチ属性の 2 つの使用例です。
+<span data-ttu-id="4228e-109">バッチ属性は、在庫バッチを構成する原材料および完成製品の特性です。</span><span class="sxs-lookup"><span data-stu-id="4228e-109">Batch attributes are characteristics of raw materials and finished products that make up inventory batches.</span></span> <span data-ttu-id="4228e-110">バッチ属性は環境条件、バッチの生産に使用される原材料の品質、完成品の結果などの要因によって異なります。</span><span class="sxs-lookup"><span data-stu-id="4228e-110">Batch attributes can vary, depending on factors such as environmental conditions, the quality of the raw materials that are used to produce the batch, or the outcome of the finished product.</span></span> <span data-ttu-id="4228e-111">使用されるバッチ属性の数とタイプは、業界によって大きく異なります。</span><span class="sxs-lookup"><span data-stu-id="4228e-111">The number and types of batch attributes that are used can vary widely from one industry to another.</span></span> <span data-ttu-id="4228e-112">以下はバッチ属性の 2 つの使用例です。</span><span class="sxs-lookup"><span data-stu-id="4228e-112">Here are two examples that show how to use batch attributes:</span></span>
 
--   チーズ業界でチーズを生産するための原材料の 1 つとして使用される牛乳は、脂肪分や重量パーセントなどの属性を持つ場合があります。 牛乳から生産されたチーズは、水分や年数などの属性を持つ場合があります。
--   鉄鋼業界で生産される鉄は、マグネシウム、銀、および亜鉛の含有比率などの属性を持つ場合があります。
+-   <span data-ttu-id="4228e-113">チーズ業界でチーズを生産するための原材料の 1 つとして使用される牛乳は、脂肪分や重量パーセントなどの属性を持つ場合があります。</span><span class="sxs-lookup"><span data-stu-id="4228e-113">In the cheese industry, milk, which is one of the raw materials that are used to produce the cheese, can have attributes such as fat content and percentage weight.</span></span> <span data-ttu-id="4228e-114">牛乳から生産されたチーズは、水分や年数などの属性を持つ場合があります。</span><span class="sxs-lookup"><span data-stu-id="4228e-114">The cheese that is produced from the milk can have other attributes, such as moisture and age.</span></span>
+-   <span data-ttu-id="4228e-115">鉄鋼業界で生産される鉄は、マグネシウム、銀、および亜鉛の含有比率などの属性を持つ場合があります。</span><span class="sxs-lookup"><span data-stu-id="4228e-115">In the steel industry, the iron that is produced might have attributes such as the percentages of magnesium content, silver content, and zinc content.</span></span>
 
-属性の数とタイプをより上手に管理するために、バッチ属性グループを使用できます。 これにより、各属性を個別に追加する必要がなくなります。
+<span data-ttu-id="4228e-116">属性の数とタイプをより上手に管理するために、バッチ属性グループを使用できます。</span><span class="sxs-lookup"><span data-stu-id="4228e-116">To better manage the number and types of attributes, you can use batch attribute groups.</span></span> <span data-ttu-id="4228e-117">これにより、各属性を個別に追加する必要がなくなります。</span><span class="sxs-lookup"><span data-stu-id="4228e-117">In this way, you don't have to add each attribute individually.</span></span>
 
-## <a name="assign-batch-attributes"></a>バッチ属性の割り当て
-在庫バッチの属性を在庫バッチで扱われる個々の製品に割り当てるか、それらを特定の顧客に関連付けられた製品に割り当てることができます。 顧客レベルでバッチ属性を割り当てる前に、製品レベルで割り当てる必要があります。 製品は、 追跡用分析コード グループで**有効**に設定されたバッチ分析コードが必要です。 個々の製品にバッチ属性を割り当てるには、製品固有ページを使用します。 属性が顧客の製品に固有な場合、顧客固有ページを使用します。 製品に属性を追加する場合、他のパラメータを定義します。 次にいくつか例を挙げます。
+## <a name="assign-batch-attributes"></a><span data-ttu-id="4228e-118">バッチ属性の割り当て</span><span class="sxs-lookup"><span data-stu-id="4228e-118">Assign batch attributes</span></span>
+<span data-ttu-id="4228e-119">在庫バッチの属性を在庫バッチで扱われる個々の製品に割り当てるか、それらを特定の顧客に関連付けられた製品に割り当てることができます。</span><span class="sxs-lookup"><span data-stu-id="4228e-119">You can assign batch attributes to individual products that are held in inventory batches, or you can assign them to products that are associated with specific customers.</span></span> <span data-ttu-id="4228e-120">顧客レベルでバッチ属性を割り当てる前に、製品レベルで割り当てる必要があります。</span><span class="sxs-lookup"><span data-stu-id="4228e-120">Before you can assign a batch attribute at the customer level, you must assign it at the product level.</span></span> <span data-ttu-id="4228e-121">製品は、 追跡用分析コード グループで**有効**に設定されたバッチ分析コードが必要です。</span><span class="sxs-lookup"><span data-stu-id="4228e-121">The product must have the batch dimension set to **Active** in the tracking dimension group.</span></span> <span data-ttu-id="4228e-122">個々の製品にバッチ属性を割り当てるには、製品固有ページを使用します。</span><span class="sxs-lookup"><span data-stu-id="4228e-122">To assign a batch attribute to an individual product, use the product-specific page.</span></span> <span data-ttu-id="4228e-123">属性が顧客の製品に固有な場合、顧客固有ページを使用します。</span><span class="sxs-lookup"><span data-stu-id="4228e-123">If the attribute is specific to a product for a customer, use the customer-specific page.</span></span> <span data-ttu-id="4228e-124">製品に属性を追加する場合、他のパラメータを定義します。</span><span class="sxs-lookup"><span data-stu-id="4228e-124">When you add an attribute to a product, you also define other parameters.</span></span> <span data-ttu-id="4228e-125">次にいくつか例を挙げます。</span><span class="sxs-lookup"><span data-stu-id="4228e-125">Here are some examples:</span></span>
 
--   **整数**または**小数**タイプ属性の最小値と最大値幅。
--   [**整数**] または [**小数**] タイプの属性の許容アクション。 属性の値が最小と最大の範囲外にある場合、アクションは警告メッセージまたはエラー メッセージのいずれかです。
--   属性のターゲット値。 この値は、属性の最適な値であり、すべての属性タイプに適用されます。
+-   <span data-ttu-id="4228e-126">**整数**または**小数**タイプ属性の最小値と最大値幅。</span><span class="sxs-lookup"><span data-stu-id="4228e-126">The minimum and maximum ranges for an attribute of the **Integer** or **Fraction** type.</span></span>
+-   <span data-ttu-id="4228e-127">[**整数**] または [**小数**] タイプの属性の許容アクション。</span><span class="sxs-lookup"><span data-stu-id="4228e-127">The tolerance actions for an attribute of the **Integer** or **Fraction** type.</span></span> <span data-ttu-id="4228e-128">属性の値が最小と最大の範囲外にある場合、アクションは警告メッセージまたはエラー メッセージのいずれかです。</span><span class="sxs-lookup"><span data-stu-id="4228e-128">If the value of the attribute falls outside the minimum and maximum range, the action can be either a warning message or an error message.</span></span>
+-   <span data-ttu-id="4228e-129">属性のターゲット値。</span><span class="sxs-lookup"><span data-stu-id="4228e-129">The target value for the attribute.</span></span> <span data-ttu-id="4228e-130">この値は、属性の最適な値であり、すべての属性タイプに適用されます。</span><span class="sxs-lookup"><span data-stu-id="4228e-130">This value is the optimal value of the attribute, and it applies to all attribute types.</span></span>
 
-[製品情報管理] の**リリースされた製品**リスト ページで選択する商品についてのページを使用できます。 製品へのバッチ属性を割り当てた後、**在庫バッチ属性**ページの属性に特定の値を追加できます。
+<span data-ttu-id="4228e-131">[製品情報管理] の**リリースされた製品**リスト ページで選択する商品についてのページを使用できます。</span><span class="sxs-lookup"><span data-stu-id="4228e-131">You can access the pages for products that you select on the **Released products** page in Product information management.</span></span> <span data-ttu-id="4228e-132">製品へのバッチ属性を割り当てた後、**在庫バッチ属性**ページの属性に特定の値を追加できます。</span><span class="sxs-lookup"><span data-stu-id="4228e-132">After you assign batch attributes to a product, you can add specific values to the attributes on the **Inventory batch attributes** page.</span></span>
 
-## <a name="reserve-batches"></a>バッチ引当
-顧客の注文を満たすための販売注文のバッチの引当を行うときや、製造オーダーでバッチのピッキングや引当を行うとき、バッチ属性で検索できます。 検索では、必要なバッチ属性を持つ製品を含む在庫バッチを見つけます。 バッチを見つけた後、元の在庫トランザクション明細行に製品を引当できます。
+## <a name="reserve-batches"></a><span data-ttu-id="4228e-133">バッチ引当</span><span class="sxs-lookup"><span data-stu-id="4228e-133">Reserve batches</span></span>
+<span data-ttu-id="4228e-134">顧客の注文を満たすための販売注文のバッチの引当を行うときや、製造オーダーでバッチのピッキングや引当を行うとき、バッチ属性で検索できます。</span><span class="sxs-lookup"><span data-stu-id="4228e-134">You can search on batch attributes when you do batch reservations for a sales order to fullfill a customer's order, or when you pick and reserve batches for a production order.</span></span> <span data-ttu-id="4228e-135">検索では、必要なバッチ属性を持つ製品を含む在庫バッチを見つけます。</span><span class="sxs-lookup"><span data-stu-id="4228e-135">The search helps locate an inventory batch that contains the product that has the batch attribute that you want.</span></span> <span data-ttu-id="4228e-136">バッチを見つけた後、元の在庫トランザクション明細行に製品を引当できます。</span><span class="sxs-lookup"><span data-stu-id="4228e-136">After you locate the batch or batches, you can reserve the product to the originating inventory transaction line.</span></span>
 
 
 

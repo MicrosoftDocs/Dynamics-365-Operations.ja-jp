@@ -19,117 +19,117 @@ ms.author: mirzaab
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: a0edbad63c51d111d7c8985aa7fdf7312da6149d
-ms.openlocfilehash: d14f3510df45169e3b77ee9c4f3d0d9d389e6036
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: 938b51011c3367b757b9f815b1c1996661e75a37
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 06/29/2017
 
 
 ---
 
-# <a name="inventory-on-hand-mobile-workspace"></a>手持ち在庫モバイル ワークスペース
+# <a name="inventory-on-hand-mobile-workspace"></a><span data-ttu-id="79cce-104">手持ち在庫モバイル ワークスペース</span><span class="sxs-lookup"><span data-stu-id="79cce-104">Inventory on-hand mobile workspace</span></span>
 
 [!include[banner](../includes/banner.md)]
 
-このトピックでは、[**手持ち在庫**] モバイル ワークスペースに関する情報を提供します。 このワークスペースは、予約済みの在庫や利用可能な在庫に関するモバイル情報を、いつでも、どこでも取得するのに役立ちます。
+<span data-ttu-id="79cce-105">このトピックでは、[**手持ち在庫**] モバイル ワークスペースに関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="79cce-105">This topic provides information about the **Inventory on-hand** mobile workspace.</span></span> <span data-ttu-id="79cce-106">このワークスペースは、予約済みの在庫や利用可能な在庫に関するモバイル情報を、いつでも、どこでも取得するのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="79cce-106">This workspace helps you gain insights into reserved and available inventory anytime and anywhere.</span></span>
 
-このモバイル ワークスペースは、Microsoft Dynamics 365 for Unified Operations モバイル アプリで使用するためのものです。
+<span data-ttu-id="79cce-107">このモバイル ワークスペースは、Microsoft Dynamics 365 for Unified Operations モバイル アプリで使用するためのものです。</span><span class="sxs-lookup"><span data-stu-id="79cce-107">This mobile workspace is intended to be used with the Microsoft Dynamics 365 for Unified Operations mobile app.</span></span>
 
-## <a name="overview"></a>概要
-通常、企業は毎日複数の出荷と在庫の複数の領収書を持っています。 これらの動きは、常に手持ちの在庫ステータスを変更します。 [**手持ち在庫**] モバイル ワークスペースにより、社内の手持ちの在庫状態を把握し、選択したモバイル デバイス上で在庫データに関する最新の情報を取得できます。 倉庫、購買、営業、製造または管理のいずれで作業していようがそれ以外の役割を担っていようが関係なく、いつでもどこでも手持ちの在庫データにアクセスすることができます。 
+## <a name="overview"></a><span data-ttu-id="79cce-108">概要</span><span class="sxs-lookup"><span data-stu-id="79cce-108">Overview</span></span>
+<span data-ttu-id="79cce-109">通常、企業は毎日複数の出荷と在庫の複数の領収書を持っています。</span><span class="sxs-lookup"><span data-stu-id="79cce-109">Typically, companies have multiple shipments and multiple receipts of inventory every day.</span></span> <span data-ttu-id="79cce-110">これらの動きは、常に手持ちの在庫ステータスを変更します。</span><span class="sxs-lookup"><span data-stu-id="79cce-110">These movements constantly change the on-hand inventory status.</span></span> <span data-ttu-id="79cce-111">[**手持ち在庫**] モバイル ワークスペースにより、社内の手持ちの在庫状態を把握し、選択したモバイル デバイス上で在庫データに関する最新の情報を取得できます。</span><span class="sxs-lookup"><span data-stu-id="79cce-111">The **Inventory on-hand** mobile workspace lets you see the cross-company on-hand inventory status, so that you can gain the latest insights into inventory data on the mobile device of your choice.</span></span> <span data-ttu-id="79cce-112">倉庫、購買、営業、製造または管理のいずれで作業していようがそれ以外の役割を担っていようが関係なく、いつでもどこでも手持ちの在庫データにアクセスすることができます。</span><span class="sxs-lookup"><span data-stu-id="79cce-112">Regardless of whether you work in the warehouse, purchasing, sales, manufacturing, or management, or have other roles, you can access on-hand inventory data anytime and anywhere.</span></span> 
 
-モバイル ワークスペースは、複数の設備の手持ち状態のインスタント ビューを提供します。 複数の設備での手持ち在庫、現在の原料の予約、および予約されていない手持ち在庫を表示できます。 また、品目番号を入力して手持ち在庫を照会したり、手持ち製品やバリアントのフィルター検索を行うこともできます。 
+<span data-ttu-id="79cce-113">モバイル ワークスペースは、複数の設備の手持ち状態のインスタント ビューを提供します。</span><span class="sxs-lookup"><span data-stu-id="79cce-113">The mobile workspace provides an instant view of the on-hand status across facilities.</span></span> <span data-ttu-id="79cce-114">複数の設備での手持ち在庫、現在の原料の予約、および予約されていない手持ち在庫を表示できます。</span><span class="sxs-lookup"><span data-stu-id="79cce-114">It lets you view on-hand inventory across facilities, current material reservations, and unreserved on-hand inventory.</span></span> <span data-ttu-id="79cce-115">また、品目番号を入力して手持ち在庫を照会したり、手持ち製品やバリアントのフィルター検索を行うこともできます。</span><span class="sxs-lookup"><span data-stu-id="79cce-115">You can also enter item numbers to query on-hand inventory, and can do a filtered search for on-hand products or variants.</span></span> 
 
-具体的には、モバイル ワークスペースは次の機能を提供します。
+<span data-ttu-id="79cce-116">具体的には、モバイル ワークスペースは次の機能を提供します。</span><span class="sxs-lookup"><span data-stu-id="79cce-116">Specifically, the mobile workspace provides these features:</span></span>
 
--   製品番号または製品名で検索し、手持ちの在庫状況を表示して、製品を見つけることができます。
--   選択された製品に対して、次の情報を表示できます。
+-   <span data-ttu-id="79cce-117">製品番号または製品名で検索し、手持ちの在庫状況を表示して、製品を見つけることができます。</span><span class="sxs-lookup"><span data-stu-id="79cce-117">You can search by product number or product name to find products to view the on-hand inventory status for.</span></span>
+-   <span data-ttu-id="79cce-118">選択された製品に対して、次の情報を表示できます。</span><span class="sxs-lookup"><span data-stu-id="79cce-118">For the selected products, you can view the following information:</span></span>
 
-    -   サイトごとの手持ち在庫
-    -   倉庫ごとの手持ち在庫
-    -   場所ごとの手持ち在庫
-    -   バッチごとの手持ち在庫 (バッチ管理されている製品の場合)
-    -   在庫状態ごとの手持ち在庫
+    -   <span data-ttu-id="79cce-119">サイトごとの手持ち在庫</span><span class="sxs-lookup"><span data-stu-id="79cce-119">On-hand inventory per site</span></span>
+    -   <span data-ttu-id="79cce-120">倉庫ごとの手持ち在庫</span><span class="sxs-lookup"><span data-stu-id="79cce-120">On-hand inventory per warehouse</span></span>
+    -   <span data-ttu-id="79cce-121">場所ごとの手持ち在庫</span><span class="sxs-lookup"><span data-stu-id="79cce-121">On-hand inventory per location</span></span>
+    -   <span data-ttu-id="79cce-122">バッチごとの手持ち在庫 (バッチ管理されている製品の場合)</span><span class="sxs-lookup"><span data-stu-id="79cce-122">On-hand inventory per batch (for batch-controlled products)</span></span>
+    -   <span data-ttu-id="79cce-123">在庫状態ごとの手持ち在庫</span><span class="sxs-lookup"><span data-stu-id="79cce-123">On-hand inventory per inventory status</span></span>
     
--   製品の手持ち在庫は、次の方法で表示されます:
+-   <span data-ttu-id="79cce-124">製品の手持ち在庫は、次の方法で表示されます:</span><span class="sxs-lookup"><span data-stu-id="79cce-124">Product on-hand inventory is shown in the following ways:</span></span>
 
-    -   現物在庫による (このビューは、合計金額を表します)。
-    -   現物引当済による (このビューは、引当済金額を表します)。
-    -   引当可能現物数による (このビューは予約がない使用可能な残りの金額を表します)。
+    -   <span data-ttu-id="79cce-125">現物在庫による (このビューは、合計金額を表します)。</span><span class="sxs-lookup"><span data-stu-id="79cce-125">By physical inventory (This view represents the total amount.)</span></span>
+    -   <span data-ttu-id="79cce-126">現物引当済による (このビューは、引当済金額を表します)。</span><span class="sxs-lookup"><span data-stu-id="79cce-126">By physical reserved (This view represents the reserved amount.)</span></span>
+    -   <span data-ttu-id="79cce-127">引当可能現物数による (このビューは予約がない使用可能な残りの金額を表します)。</span><span class="sxs-lookup"><span data-stu-id="79cce-127">By available physical (This view represents available amount that has no reservations.)</span></span>
 
-## <a name="prerequisites"></a>前提条件
-組織に配置されている Microsoft Dynamics 365 のバージョンに基づいて、前提条件は異なります。
+## <a name="prerequisites"></a><span data-ttu-id="79cce-128">前提条件</span><span class="sxs-lookup"><span data-stu-id="79cce-128">Prerequisites</span></span>
+<span data-ttu-id="79cce-129">組織に配置されている Microsoft Dynamics 365 のバージョンに基づいて、前提条件は異なります。</span><span class="sxs-lookup"><span data-stu-id="79cce-129">The prerequisites differ, based on the version of Microsoft Dynamics 365 that has been deployed for your organization.</span></span>
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update"></a>Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition 2017 年 7 月の更新プログラムを使用している場合の前提条件 
-Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition 2017 年 7 月の更新プログラムを組織に配置している場合、システム管理者は [**手持ち在庫**] モバイル ワークスペースを公開する必要があります。 手順については、「[モバイル ワークスペースの公開](/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace)」を参照してください。
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update"></a><span data-ttu-id="79cce-130">Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition 2017 年 7 月の更新プログラムを使用している場合の前提条件</span><span class="sxs-lookup"><span data-stu-id="79cce-130">Prerequisites if you use Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update</span></span> 
+<span data-ttu-id="79cce-131">Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition 2017 年 7 月の更新プログラムを組織に配置している場合、システム管理者は [**手持ち在庫**] モバイル ワークスペースを公開する必要があります。</span><span class="sxs-lookup"><span data-stu-id="79cce-131">If Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update has been deployed for your organization, the system administrator must publish the **Inventory on-hand** mobile workspace.</span></span> <span data-ttu-id="79cce-132">手順については、「[モバイル ワークスペースの公開](/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="79cce-132">For instructions, see [Publish a mobile workspace](/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace).</span></span>
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Microsoft Dynamics 365 for Operations バージョン 1611 およびプラットフォーム更新プログラム 3 以降を使用している場合の前提条件
-Microsoft Dynamics 365 for Operations バージョン 1611 およびプラットフォーム 更新プログラム 3 以降を組織に配置している場合、システム管理者は次の前提条件を満たす必要があります。 
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a><span data-ttu-id="79cce-133">Microsoft Dynamics 365 for Operations バージョン 1611 およびプラットフォーム更新プログラム 3 以降を使用している場合の前提条件</span><span class="sxs-lookup"><span data-stu-id="79cce-133">Prerequisites if you use Microsoft Dynamics 365 for Operations version 1611 with platform update 3 or later</span></span>
+<span data-ttu-id="79cce-134">Microsoft Dynamics 365 for Operations バージョン 1611 およびプラットフォーム 更新プログラム 3 以降を組織に配置している場合、システム管理者は次の前提条件を満たす必要があります。</span><span class="sxs-lookup"><span data-stu-id="79cce-134">If Microsoft Dynamics 365 for Operations version 1611 with platform update 3 or later has been deployed for your organization, the system administrator must complete the following prerequisites.</span></span> 
 
 <table>
 <thead>
 <tr class="header">
-<th>前提条件</th>
-<th>役割</th>
-<th>説明</th>
+<th><span data-ttu-id="79cce-135">前提条件</span><span class="sxs-lookup"><span data-stu-id="79cce-135">Prerequisite</span></span></th>
+<th><span data-ttu-id="79cce-136">役割</span><span class="sxs-lookup"><span data-stu-id="79cce-136">Role</span></span></th>
+<th><span data-ttu-id="79cce-137">説明</span><span class="sxs-lookup"><span data-stu-id="79cce-137">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>KB 4013633 を実装します。</td>
-<td>システム管理者</td>
+<td><span data-ttu-id="79cce-138">KB 4013633 を実装します。</span><span class="sxs-lookup"><span data-stu-id="79cce-138">Implement KB 4013633.</span></span></td>
+<td><span data-ttu-id="79cce-139">システム管理者</span><span class="sxs-lookup"><span data-stu-id="79cce-139">System administrator</span></span></td>
 
-<td>KB 4013633 は、[<strong>手持ち在庫</strong>] モバイル ワークスペースを含む X++ の更新またはメタデータ修正プログラムです。 KB 4013633 を実装するには、システム管理者は次の手順に従う必要があります。
+<td><span data-ttu-id="79cce-140">KB 4013633 は、[<strong>手持ち在庫</strong>] モバイル ワークスペースを含む X++ の更新またはメタデータ修正プログラムです。</span><span class="sxs-lookup"><span data-stu-id="79cce-140">KB 4013633 is an X++ update or metadata hotfix that contains the <strong>Inventory on-hand</strong> mobile workspace.</span></span> <span data-ttu-id="79cce-141">KB 4013633 を実装するには、システム管理者は次の手順に従う必要があります。</span><span class="sxs-lookup"><span data-stu-id="79cce-141">To implement KB 4013633, your system administrator must follow these steps.</span></span>
 <ol>
-<li><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/download-hotfix-lcs">Microsoft Dynamics Lifecycle Services (LCS) からメタデータ修正プログラムをダウンロードします</a>。</li>
-<li><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">メタデータ修正プログラムをインストールします。</a></li>
-<li><strong>SCMMobile</strong> モデルを含む<a href="/dynamics365/unified-operations/dev-itpro/deployment/create-apply-deployable-package">配置可能パッケージを作成し</a>、配置可能パッケージを LCS にアップロードします。</li>
-<li><a href="/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system">配置可能パッケージを適用します</a>。</li>
+<li><span data-ttu-id="79cce-142"><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/download-hotfix-lcs">Microsoft Dynamics Lifecycle Services (LCS) からメタデータ修正プログラムをダウンロードします</a>。</span><span class="sxs-lookup"><span data-stu-id="79cce-142"><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/download-hotfix-lcs">Download the metadata hotfix from Microsoft Dynamics Lifecycle Services (LCS)</a>.</span></span></li>
+<li><span data-ttu-id="79cce-143"><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">メタデータ修正プログラムをインストールします。</a></span><span class="sxs-lookup"><span data-stu-id="79cce-143"><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Install the metadata hotfix</a>.</span></span></li>
+<li><span data-ttu-id="79cce-144"><strong>SCMMobile</strong> モデルを含む<a href="/dynamics365/unified-operations/dev-itpro/deployment/create-apply-deployable-package">配置可能パッケージを作成し</a>、配置可能パッケージを LCS にアップロードします。</span><span class="sxs-lookup"><span data-stu-id="79cce-144"><a href="/dynamics365/unified-operations/dev-itpro/deployment/create-apply-deployable-package">Create a deployable package</a> that contains the <strong>SCMMobile</strong> model, and then upload the deployable package to LCS.</span></span></li>
+<li><span data-ttu-id="79cce-145"><a href="/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system">配置可能パッケージを適用します</a>。</span><span class="sxs-lookup"><span data-stu-id="79cce-145"><a href="/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system">Apply the deployable package</a>.</span></span></li>
 
 </ol></td>
 </tr>
 <tr class="even">
-<td>[<strong>手持在庫</strong>] モバイル ワークスペースを公開します。</td>
-<td>システム管理者</td>
-<td>「<a href="/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace">モバイル ワークスペースの公開</a>」を参照してください。</td>
+<td><span data-ttu-id="79cce-146">[<strong>手持在庫</strong>] モバイル ワークスペースを公開します。</span><span class="sxs-lookup"><span data-stu-id="79cce-146">Publish the <strong>Inventory on-hand</strong> mobile workspace.</span></span></td>
+<td><span data-ttu-id="79cce-147">システム管理者</span><span class="sxs-lookup"><span data-stu-id="79cce-147">System administrator</span></span></td>
+<td><span data-ttu-id="79cce-148">「<a href="/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace">モバイル ワークスペースの公開</a>」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="79cce-148">See <a href="/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace">Publish a mobile workspace</a>.</span></span></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="download-and-install-the-mobile-app"></a>モバイル アプリのダウンロードとインストール
+## <a name="download-and-install-the-mobile-app"></a><span data-ttu-id="79cce-149">モバイル アプリのダウンロードとインストール</span><span class="sxs-lookup"><span data-stu-id="79cce-149">Download and install the mobile app</span></span>
 
-Dynamics 365 for Unified Operations モバイル アプリをダウンロードしてインストールします。
+<span data-ttu-id="79cce-150">Dynamics 365 for Unified Operations モバイル アプリをダウンロードしてインストールします。</span><span class="sxs-lookup"><span data-stu-id="79cce-150">Download and install the Dynamics 365 for Unified Operations mobile app:</span></span>
 
--   [Android フォン用](https://go.microsoft.com/fwlink/?linkid=850662)
--   [iPhone 用](https://go.microsoft.com/fwlink/?linkid=850663)
+-   [<span data-ttu-id="79cce-151">Android フォン用</span><span class="sxs-lookup"><span data-stu-id="79cce-151">For Android phones</span></span>](https://go.microsoft.com/fwlink/?linkid=850662)
+-   [<span data-ttu-id="79cce-152">iPhone 用</span><span class="sxs-lookup"><span data-stu-id="79cce-152">For iPhones</span></span>](https://go.microsoft.com/fwlink/?linkid=850663)
 
-## <a name="sign-in-to-the-mobile-app"></a>モバイル アプリにログインします。
+## <a name="sign-in-to-the-mobile-app"></a><span data-ttu-id="79cce-153">モバイル アプリにログインします。</span><span class="sxs-lookup"><span data-stu-id="79cce-153">Sign in to the mobile app</span></span>
 
-1.  モバイル デバイスでアプリを起動します。
-2.  Dynamics 365 の URL を入力します。
-3.  初めてサインインすると、ユーザー名とパスワードを要求されます。 資格情報を入力します。
-4.  サインインすると、使用可能な会社のワークスペースが表示されます。 なお、システム管理者が後で新しいワークスペースを公開すると、モバイル ワークスペースのリストを更新する必要があります。
+1.  <span data-ttu-id="79cce-154">モバイル デバイスでアプリを起動します。</span><span class="sxs-lookup"><span data-stu-id="79cce-154">Start the app on your mobile device.</span></span>
+2.  <span data-ttu-id="79cce-155">Dynamics 365 の URL を入力します。</span><span class="sxs-lookup"><span data-stu-id="79cce-155">Enter your Dynamics 365 URL.</span></span>
+3.  <span data-ttu-id="79cce-156">初めてサインインすると、ユーザー名とパスワードを要求されます。</span><span class="sxs-lookup"><span data-stu-id="79cce-156">The first time that you sign in, you're prompted for your user name and password.</span></span> <span data-ttu-id="79cce-157">資格情報を入力します。</span><span class="sxs-lookup"><span data-stu-id="79cce-157">Enter your credentials.</span></span>
+4.  <span data-ttu-id="79cce-158">サインインすると、使用可能な会社のワークスペースが表示されます。</span><span class="sxs-lookup"><span data-stu-id="79cce-158">After you sign in, the available workspaces for your company are shown.</span></span> <span data-ttu-id="79cce-159">なお、システム管理者が後で新しいワークスペースを公開すると、モバイル ワークスペースのリストを更新する必要があります。</span><span class="sxs-lookup"><span data-stu-id="79cce-159">Note that if your system administrator publishes a new workspace later, you will have to refresh the list of mobile workspaces.</span></span>
 
-    [![プルして更新](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+    <span data-ttu-id="79cce-160">[![プルして更新](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)</span><span class="sxs-lookup"><span data-stu-id="79cce-160">[![Pull to refresh](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)</span></span>
 
-## <a name="view-the-on-hand-inventory-for-a-product-by-using-the-inventory-on-hand-mobile-workspace"></a>手持ち在庫モバイル ワークスペースを使用して、製品の手持ち在庫を表示します。
+## <a name="view-the-on-hand-inventory-for-a-product-by-using-the-inventory-on-hand-mobile-workspace"></a><span data-ttu-id="79cce-161">手持ち在庫モバイル ワークスペースを使用して、製品の手持ち在庫を表示します。</span><span class="sxs-lookup"><span data-stu-id="79cce-161">View the on-hand inventory for a product by using the Inventory on-hand mobile workspace</span></span>
 
-1.  モバイル デバイスで、[**手持ち在庫**] ワークスペースを選択します。
+1.  <span data-ttu-id="79cce-162">モバイル デバイスで、[**手持ち在庫**] ワークスペースを選択します。</span><span class="sxs-lookup"><span data-stu-id="79cce-162">On your mobile device, select the **Inventory on-hand** workspace.</span></span>
 
-2.  [**品目の手持ち在庫の確認**] を選択します。 オフラインで使用する場合のために、アプリにロードされた製品のリストが表示されます。 既定では、50 の品目がロードされますが、開発者はこの数値を変更できます。 詳細については、開発者は [モバイル プラットフォーム](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform) を確認する必要があります。
-3.  品目が一覧にない場合は、[**検索を続ける**] を選択します。 製品番号で検索するか、または製品名での検索に切り替えます。
+2.  <span data-ttu-id="79cce-163">[**品目の手持ち在庫の確認**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="79cce-163">Select **Check on-hand for an item**.</span></span> <span data-ttu-id="79cce-164">オフラインで使用する場合のために、アプリにロードされた製品のリストが表示されます。</span><span class="sxs-lookup"><span data-stu-id="79cce-164">You see a list of the products that are loaded into your app for offline use.</span></span> <span data-ttu-id="79cce-165">既定では、50 の品目がロードされますが、開発者はこの数値を変更できます。</span><span class="sxs-lookup"><span data-stu-id="79cce-165">By default, 50 items are loaded, but a developer can change this number.</span></span> <span data-ttu-id="79cce-166">詳細については、開発者は [モバイル プラットフォーム](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform) を確認する必要があります。</span><span class="sxs-lookup"><span data-stu-id="79cce-166">For more information, developers should see [Mobile platform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform).</span></span>
+3.  <span data-ttu-id="79cce-167">品目が一覧にない場合は、[**検索を続ける**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="79cce-167">If your item isn't in the list, select **Search more**.</span></span> <span data-ttu-id="79cce-168">製品番号で検索するか、または製品名での検索に切り替えます。</span><span class="sxs-lookup"><span data-stu-id="79cce-168">Search by product number, or switch to a search by product name.</span></span>
 
-4.  製品を選択します。 品目に画像が含まれる場合、画像が表示されます。
-5.  手持ち在庫の状態を表示するために次のオプションの 1 つを選択します。
+4.  <span data-ttu-id="79cce-169">製品を選択します。</span><span class="sxs-lookup"><span data-stu-id="79cce-169">Select a product.</span></span> <span data-ttu-id="79cce-170">品目に画像が含まれる場合、画像が表示されます。</span><span class="sxs-lookup"><span data-stu-id="79cce-170">If the item has an image, the image is shown.</span></span>
+5.  <span data-ttu-id="79cce-171">手持ち在庫の状態を表示するために次のオプションの 1 つを選択します。</span><span class="sxs-lookup"><span data-stu-id="79cce-171">Select one of the following options to view the status of on-hand inventory:</span></span>
 
-    -   サイトごとに手持ち在庫を表示する
-    -   倉庫ごとに手持ち在庫を表示する
-    -   場所ごとに手持ち在庫を表示する
-    -   バッチ (バッチで制御された製品に対して) ごとに手持ち在庫を表示する
-    -   在庫の状態ごとに手持ち在庫を表示する
+    -   <span data-ttu-id="79cce-172">サイトごとに手持ち在庫を表示する</span><span class="sxs-lookup"><span data-stu-id="79cce-172">View on-hand per site</span></span>
+    -   <span data-ttu-id="79cce-173">倉庫ごとに手持ち在庫を表示する</span><span class="sxs-lookup"><span data-stu-id="79cce-173">View on-hand per warehouse</span></span>
+    -   <span data-ttu-id="79cce-174">場所ごとに手持ち在庫を表示する</span><span class="sxs-lookup"><span data-stu-id="79cce-174">View on-hand per location</span></span>
+    -   <span data-ttu-id="79cce-175">バッチ (バッチで制御された製品に対して) ごとに手持ち在庫を表示する</span><span class="sxs-lookup"><span data-stu-id="79cce-175">View on-hand per batch (for batch-controlled products)</span></span>
+    -   <span data-ttu-id="79cce-176">在庫の状態ごとに手持ち在庫を表示する</span><span class="sxs-lookup"><span data-stu-id="79cce-176">View on-hand per inventory status</span></span>
 
-    製品の手持ち在庫は、次の方法で表示されます:
-    -   現物在庫による (このビューは、合計金額を表します)。
-    -   現物引当済による (このビューは、引当済金額を表します)。
-    -   物理的に利用可能ごと (この表示は予約なしの利用可能な金額を表します。)
+    <span data-ttu-id="79cce-177">製品の手持ち在庫は、次の方法で表示されます:</span><span class="sxs-lookup"><span data-stu-id="79cce-177">Product on-hand inventory is shown in the following ways:</span></span>
+    -   <span data-ttu-id="79cce-178">現物在庫による (このビューは、合計金額を表します)。</span><span class="sxs-lookup"><span data-stu-id="79cce-178">By physical inventory (This view represents the total amount.)</span></span>
+    -   <span data-ttu-id="79cce-179">現物引当済による (このビューは、引当済金額を表します)。</span><span class="sxs-lookup"><span data-stu-id="79cce-179">By physical reserved (This view represents the reserved amount.)</span></span>
+    -   <span data-ttu-id="79cce-180">物理的に利用可能ごと (この表示は予約なしの利用可能な金額を表します。)</span><span class="sxs-lookup"><span data-stu-id="79cce-180">By available physical (This view represents the available amount that has no reservations.)</span></span>
 

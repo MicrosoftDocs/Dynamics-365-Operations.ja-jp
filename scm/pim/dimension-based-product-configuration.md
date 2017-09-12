@@ -17,65 +17,65 @@ ms.assetid: 4db9890b-306b-4be7-ba98-3be2094d561f
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: yuyus
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: d13fc55342030d96d38f264f6bff9586832b4ab5
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 89f01401f1d937a72ae7e59b784cf034b48aaf1f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="dimension-based-product-configuration"></a>分析コード ベースの製品コンフィギュレーション
+# <a name="dimension-based-product-configuration"></a><span data-ttu-id="6752f-103">分析コード ベースの製品コンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="6752f-103">Dimension-based product configuration</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-分析コード ベースの製品コンフィギュレーションは、1 つの製品マスターと部品表から多くの製品バリアントを作成するための単純なソリューションを表します。
+<span data-ttu-id="6752f-104">分析コード ベースの製品コンフィギュレーションは、1 つの製品マスターと部品表から多くの製品バリアントを作成するための単純なソリューションを表します。</span><span class="sxs-lookup"><span data-stu-id="6752f-104">Dimension-based product configuration represents a simple solution for creating many product variants from a single product master and its bill of materials.</span></span>
 
-分析コード ベースの製品コンフィギュレーションは、3 つの組み込みの製品コンフィギュレーション テクノロジーの 1 つです。 他の 2 つのテクノロジは、定義済バリアントと制約ベースのコンフィギュレーションです。 3 つのテクノロジはすべて開始点として製品マスターを使用し、ユーザーは 1 つの製品マスターに多くの製品バリアントを作成できます。
+<span data-ttu-id="6752f-105">分析コード ベースの製品コンフィギュレーションは、3 つの組み込みの製品コンフィギュレーション テクノロジーの 1 つです。</span><span class="sxs-lookup"><span data-stu-id="6752f-105">Dimension-based product configuration is one of the three built-in product configuration technologies.</span></span> <span data-ttu-id="6752f-106">他の 2 つのテクノロジは、定義済バリアントと制約ベースのコンフィギュレーションです。</span><span class="sxs-lookup"><span data-stu-id="6752f-106">The two other technologies are predefined variants and constraint-based configuration.</span></span> <span data-ttu-id="6752f-107">3 つのテクノロジはすべて開始点として製品マスターを使用し、ユーザーは 1 つの製品マスターに多くの製品バリアントを作成できます。</span><span class="sxs-lookup"><span data-stu-id="6752f-107">All three technologies use a product master as the starting point and allow the user to create many product variants for one product master.</span></span>
 
-## <a name="key-concepts"></a>重要な概念
-分析コード ベースの製品コンフィギュレーションは次の重要な概念に基づいています。
+## <a name="key-concepts"></a><span data-ttu-id="6752f-108">重要な概念</span><span class="sxs-lookup"><span data-stu-id="6752f-108">Key concepts</span></span>
+<span data-ttu-id="6752f-109">分析コード ベースの製品コンフィギュレーションは次の重要な概念に基づいています。</span><span class="sxs-lookup"><span data-stu-id="6752f-109">Dimension-based product configuration is based on the following key concepts:</span></span>
 
--   製品マスター
--   製品分析コードのコンフィギュレーション
--   コンフィギュレーション グループ
--   部品表 (BOM)
--   コンフィギュレーション ルート
--   コンフィギュレーション ルール
+-   <span data-ttu-id="6752f-110">製品マスター</span><span class="sxs-lookup"><span data-stu-id="6752f-110">Product masters</span></span>
+-   <span data-ttu-id="6752f-111">製品分析コードのコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="6752f-111">Configuration product dimension</span></span>
+-   <span data-ttu-id="6752f-112">コンフィギュレーション グループ</span><span class="sxs-lookup"><span data-stu-id="6752f-112">Configuration groups</span></span>
+-   <span data-ttu-id="6752f-113">部品表 (BOM)</span><span class="sxs-lookup"><span data-stu-id="6752f-113">Bill of materials (BOM)</span></span>
+-   <span data-ttu-id="6752f-114">コンフィギュレーション ルート</span><span class="sxs-lookup"><span data-stu-id="6752f-114">Configuration route</span></span>
+-   <span data-ttu-id="6752f-115">コンフィギュレーション ルール</span><span class="sxs-lookup"><span data-stu-id="6752f-115">Configuration rules</span></span>
 
-### <a name="product-masters"></a>製品マスター
+### <a name="product-masters"></a><span data-ttu-id="6752f-116">製品マスター</span><span class="sxs-lookup"><span data-stu-id="6752f-116">Product masters</span></span>
 
-製品マスターは、製品コンフィギュレーション プロセスの開始点です。 分析コード ベースの製品コンフィギュレーションでは、この特定のコンフィギュレーション テクノロジを使用した製品マスターとコンフィギュレーション製品分析コードを含む製品分析コード グループが必要です。
+<span data-ttu-id="6752f-117">製品マスターは、製品コンフィギュレーション プロセスの開始点です。</span><span class="sxs-lookup"><span data-stu-id="6752f-117">A product master is the starting point for any product configuration process.</span></span> <span data-ttu-id="6752f-118">分析コード ベースの製品コンフィギュレーションでは、この特定のコンフィギュレーション テクノロジを使用した製品マスターとコンフィギュレーション製品分析コードを含む製品分析コード グループが必要です。</span><span class="sxs-lookup"><span data-stu-id="6752f-118">For the dimension-based product configuration, you need a product master with this particular configuration technology and a product dimension group that includes the configuration product dimension.</span></span>
 
-### <a name="configuration-product-dimension"></a>製品分析コードのコンフィギュレーション
+### <a name="configuration-product-dimension"></a><span data-ttu-id="6752f-119">製品分析コードのコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="6752f-119">Configuration product dimension</span></span>
 
-製品分析コードのコンフィギュレーションは、分析コード ベースのコンフィギュレーション テクノロジを使用した製品マスターの製品バリアントを識別するために使用します。 コンフィギュレーション分析コード値はユーザーが入力し、個々の製品バリアントの識別に役立ちます。
+<span data-ttu-id="6752f-120">製品分析コードのコンフィギュレーションは、分析コード ベースのコンフィギュレーション テクノロジを使用した製品マスターの製品バリアントを識別するために使用します。</span><span class="sxs-lookup"><span data-stu-id="6752f-120">The configuration product dimension is used to identify the product variants for a product master with the dimension-based configuration technology.</span></span> <span data-ttu-id="6752f-121">コンフィギュレーション分析コード値はユーザーが入力し、個々の製品バリアントの識別に役立ちます。</span><span class="sxs-lookup"><span data-stu-id="6752f-121">The configuration dimension value is entered by the user and should help to identify the individual product variants.</span></span>
 
-### <a name="configuration-groups"></a>コンフィギュレーション グループ
+### <a name="configuration-groups"></a><span data-ttu-id="6752f-122">コンフィギュレーション グループ</span><span class="sxs-lookup"><span data-stu-id="6752f-122">Configuration groups</span></span>
 
-コンフィギュレーション グループは、中央レポジトリで定義され、すべての分析コード ベースの製品コンフィギュレーション モデルに使用できます。 コンフィギュレーション グループは、個々の BOM 明細行に関連付けられ、相互に排他的な明細行のグループをまとめます。 これは、1 つの製品バリアントに 1 つのグループの 1 つの明細行だけが選択できることを意味します。
+<span data-ttu-id="6752f-123">コンフィギュレーション グループは、中央レポジトリで定義され、すべての分析コード ベースの製品コンフィギュレーション モデルに使用できます。</span><span class="sxs-lookup"><span data-stu-id="6752f-123">Configuration groups are defined in a central repository and can be used for all dimension-based product configuration models.</span></span> <span data-ttu-id="6752f-124">コンフィギュレーション グループは、個々の BOM 明細行に関連付けられ、相互に排他的な明細行のグループをまとめます。</span><span class="sxs-lookup"><span data-stu-id="6752f-124">Configuration groups are associated to the individual BOM lines and hold together a group of lines that are mutually exclusive.</span></span> <span data-ttu-id="6752f-125">これは、1 つの製品バリアントに 1 つのグループの 1 つの明細行だけが選択できることを意味します。</span><span class="sxs-lookup"><span data-stu-id="6752f-125">This means that only one line in a group can be selected for a single product variant.</span></span>
 
-### <a name="bill-of-materials-bom"></a>部品表 (BOM)
+### <a name="bill-of-materials-bom"></a><span data-ttu-id="6752f-126">部品表 (BOM)</span><span class="sxs-lookup"><span data-stu-id="6752f-126">Bill of materials (BOM)</span></span>
 
-BOM は、分析コード ベースの製品コンフィギュレーションの構成要素を表します。 これには、製品バリアントに使用できるすべての異なる製品を含める必要があります。 BOM の各行は、コンフィギュレーション グループを参照できます。 明細行がコンフィギュレーション グループを参照しない場合は、すべての製品バリアントに含まれます。
+<span data-ttu-id="6752f-127">BOM は、分析コード ベースの製品コンフィギュレーションの構成要素を表します。</span><span class="sxs-lookup"><span data-stu-id="6752f-127">The BOM represent the building blocks for a dimension-based product configuration.</span></span> <span data-ttu-id="6752f-128">これには、製品バリアントに使用できるすべての異なる製品を含める必要があります。</span><span class="sxs-lookup"><span data-stu-id="6752f-128">It must include all the different products that can be used in any product variant.</span></span> <span data-ttu-id="6752f-129">BOM の各行は、コンフィギュレーション グループを参照できます。</span><span class="sxs-lookup"><span data-stu-id="6752f-129">Each line in the BOM can reference a configuration group.</span></span> <span data-ttu-id="6752f-130">明細行がコンフィギュレーション グループを参照しない場合は、すべての製品バリアントに含まれます。</span><span class="sxs-lookup"><span data-stu-id="6752f-130">If a line doesn’t reference a configuration group, it will be included in all product variants.</span></span>
 
-### <a name="configuration-route"></a>コンフィギュレーション ルート
+### <a name="configuration-route"></a><span data-ttu-id="6752f-131">コンフィギュレーション ルート</span><span class="sxs-lookup"><span data-stu-id="6752f-131">Configuration route</span></span>
 
-コンフィギュレーション ルートは、製品コンフィギュレーション プロセス中にユーザーが表示するときのコンフィギュレーション グループの順序を決定します。
+<span data-ttu-id="6752f-132">コンフィギュレーション ルートは、製品コンフィギュレーション プロセス中にユーザーが表示するときのコンフィギュレーション グループの順序を決定します。</span><span class="sxs-lookup"><span data-stu-id="6752f-132">The configuration route determines the sequence of the configuration groups, as they will be displayed to the user during the product configuration process.</span></span>
 
-### <a name="configuration-rules"></a>コンフィギュレーション ルール
+### <a name="configuration-rules"></a><span data-ttu-id="6752f-133">コンフィギュレーション ルール</span><span class="sxs-lookup"><span data-stu-id="6752f-133">Configuration rules</span></span>
 
-コンフィギュレーション ルールは、ある BOM の 1 つのコンフィギュレーション グループに含まれている製品が、同じ BOM の別のコンフィギュレーション グループで他の製品を包含または排除することを確認するしくみを表します。
+<span data-ttu-id="6752f-134">コンフィギュレーション ルールは、ある BOM の 1 つのコンフィギュレーション グループに含まれている製品が、同じ BOM の別のコンフィギュレーション グループで他の製品を包含または排除することを確認するしくみを表します。</span><span class="sxs-lookup"><span data-stu-id="6752f-134">The configuration rules represent a mechanism for ensuring that a product included in one configuration group in a BOM enforces either an inclusion or an exclusion of a product in a different configuration group in the same BOM.</span></span>
 
-## <a name="product-modeling-process"></a>製品モデリング プロセス
-分析コード ベースの製品の製品モデル作成のための正常な順序は、関連するコンフィギュレーション グループの定義で始まります。 BOM で使用されるすべての製品が、製品モデルが作成された会社にリリース済みであることを確認することは重要です。 ユーザーは、これらの構成要素を適切な場所で使用して、BOM を作成し、コンフィギュレーション グループを関連するすべての BOM 明細行に割り当てることができます。 BOM が完了すると、コンフィギュレーション ルートを、適切な順序でコンフィギュレーション グループの注文で定義できます。 \[caption id="attachment\_282671" align="alignnone" width="1187"\][![分析コード ベースの製品モデリングのプロセス](./media/dimension-based-product-modeling-process-v1.png)](./media/dimension-based-product-modeling-process-v1.png) 分析コード ベースの製品モデリングのプロセス\[/caption\] 一緒に使用する必要がある、または必要がない異なるコンフィギュレーション グループに製品が存在する場合、これらの製品の関係を適用するコンフィギュレーション ルールを作成できます。 BOM が BOM バージョンを介して分析コード ベースの製品マスターと結ばれ、両方とも承認され有効化されると、製品コンフィギュレーションを作成して、各コンフィギュレーションの名前を入力できます。 コンフィギュレーションは、トランザクションが生成される前に定義することができ、また特定のコンフィギュレーションの必要性が発生したときに定義することができます。
+## <a name="product-modeling-process"></a><span data-ttu-id="6752f-135">製品モデリング プロセス</span><span class="sxs-lookup"><span data-stu-id="6752f-135">Product modeling process</span></span>
+<span data-ttu-id="6752f-136">分析コード ベースの製品の製品モデル作成のための正常な順序は、関連するコンフィギュレーション グループの定義で始まります。</span><span class="sxs-lookup"><span data-stu-id="6752f-136">The natural sequence for building a product model for a dimension-based product starts with defining the relevant configuration groups.</span></span> <span data-ttu-id="6752f-137">BOM で使用されるすべての製品が、製品モデルが作成された会社にリリース済みであることを確認することは重要です。</span><span class="sxs-lookup"><span data-stu-id="6752f-137">It is important to ensure that all products which will be used in the BOM have been relased to the company that the product model is built for.</span></span> <span data-ttu-id="6752f-138">ユーザーは、これらの構成要素を適切な場所で使用して、BOM を作成し、コンフィギュレーション グループを関連するすべての BOM 明細行に割り当てることができます。</span><span class="sxs-lookup"><span data-stu-id="6752f-138">With these building blocks in place, the user can create the BOM and assign configuration groups to all relevant BOM lines.</span></span> <span data-ttu-id="6752f-139">BOM が完了すると、コンフィギュレーション ルートを、適切な順序でコンフィギュレーション グループの注文で定義できます。</span><span class="sxs-lookup"><span data-stu-id="6752f-139">When the BOM is complete, a configuration route can be defined for ordering the configuration groups in the proper sequence.</span></span> <span data-ttu-id="6752f-140">\[caption id="attachment\_282671" align="alignnone" width="1187"\][![分析コード ベースの製品モデリングのプロセス](./media/dimension-based-product-modeling-process-v1.png)](./media/dimension-based-product-modeling-process-v1.png) 分析コード ベースの製品モデリングのプロセス\[/caption\] 一緒に使用する必要がある、または必要がない異なるコンフィギュレーション グループに製品が存在する場合、これらの製品の関係を適用するコンフィギュレーション ルールを作成できます。</span><span class="sxs-lookup"><span data-stu-id="6752f-140">\[caption id="attachment\_282671" align="alignnone" width="1187"\][![Dimension-based product modeling process](./media/dimension-based-product-modeling-process-v1.png)](./media/dimension-based-product-modeling-process-v1.png) Dimension-based product modeling process\[/caption\] If there are certain products from different configuration groups that either must or must not be used together, you can create configuration rules that will enforce these product relationships.</span></span> <span data-ttu-id="6752f-141">BOM が BOM バージョンを介して分析コード ベースの製品マスターと結ばれ、両方とも承認され有効化されると、製品コンフィギュレーションを作成して、各コンフィギュレーションの名前を入力できます。</span><span class="sxs-lookup"><span data-stu-id="6752f-141">After the BOM has been tied together with a dimension-based product master through a BOM version and both have been approved and activated, you can create product configurations and enter a name for each configuration.</span></span> <span data-ttu-id="6752f-142">コンフィギュレーションは、トランザクションが生成される前に定義することができ、また特定のコンフィギュレーションの必要性が発生したときに定義することができます。</span><span class="sxs-lookup"><span data-stu-id="6752f-142">The configurations can be defined before any transactions are generated or it can be done when the need for a certain configuration occurs.</span></span>
 
-### <a name="suggested-use"></a>推奨される使用
+### <a name="suggested-use"></a><span data-ttu-id="6752f-143">推奨される使用</span><span class="sxs-lookup"><span data-stu-id="6752f-143">Suggested use</span></span>
 
-分析コード ベースのコンフィギュレーション テクノロジは、限られた可変性の製品に使用されます。また、標準的な製品分析コード サイズ、色、スタイル、およびコンフィギュレーションの組み合わせは、特定の製品バリアントを識別するのに不適切です。 例として、フレームの高さ、ホイールのサイズ、ブレーキ タイプ、およびさまざまなギヤを含む自転車が考えられます。
+<span data-ttu-id="6752f-144">分析コード ベースのコンフィギュレーション テクノロジは、限られた可変性の製品に使用されます。また、標準的な製品分析コード サイズ、色、スタイル、およびコンフィギュレーションの組み合わせは、特定の製品バリアントを識別するのに不適切です。</span><span class="sxs-lookup"><span data-stu-id="6752f-144">The dimension-based configuration technology is best used for products with limited variability and the combination of the standard product dimensions size, color, style, and configuration is unsuitable for identifying a specific product variant.</span></span> <span data-ttu-id="6752f-145">例として、フレームの高さ、ホイールのサイズ、ブレーキ タイプ、およびさまざまなギヤを含む自転車が考えられます。</span><span class="sxs-lookup"><span data-stu-id="6752f-145">An example could be bicycle with frame height, wheel size, brake types, and different gears.</span></span>
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "在庫バッチのマージ"
 description: "この記事は、2 つ以上の棚卸資産バッチをマージされたバッチに連結する方法に関する情報を提供します。"
-author: YuyuScheller
+author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,33 +10,33 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventBatchJournalListPage, InventBatchJournalMerge
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 39782
 ms.assetid: 07c5e98b-10fd-4f5c-b471-41d2150f47b0
 ms.search.region: Global
 ms.author: pjacobse
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
-ms.openlocfilehash: aec97976ef6a2b4c66118289f7f76b14351456f8
+ms.sourcegitcommit: 0e7f66cccd76e5326fce75d1a13aff294c16fb9b
+ms.openlocfilehash: 230d9e8f1378accac8726df08003413e8ce5dac6
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/12/2017
 
 ---
 
-# <a name="merge-inventory-batches"></a>在庫バッチのマージ
+# <a name="merge-inventory-batches"></a><span data-ttu-id="0f0e0-103">在庫バッチのマージ</span><span class="sxs-lookup"><span data-stu-id="0f0e0-103">Merge inventory batches</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-この記事は、2 つ以上の棚卸資産バッチをマージされたバッチに連結する方法に関する情報を提供します。 
+<span data-ttu-id="0f0e0-104">この記事は、2 つ以上の棚卸資産バッチをマージされたバッチに連結する方法に関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-104">This article provides information about how to consolidate two or more inventory batches into a merged batch.</span></span>
 
-バッチをマージするとき、マージされたバッチの特性とバッチ属性の最適化に計算が役立ちます。 ソース バッチを選択した後、結合されたバッチを転記する前に確認および変更できます。 承認用に在庫仕訳帳にバッチのマージを転送することもできます。 在庫は、その在庫仕訳帳から直接引当または転記できます。 マージされたバッチを転記するとき、棚卸資産がソース バッチとマージされたバッチについて調整されます。
+<span data-ttu-id="0f0e0-105">バッチをマージするとき、マージされたバッチの特性とバッチ属性の最適化に計算が役立ちます。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-105">When you merge batches, calculations can help optimize the characteristics and batch attributes of the merged batch.</span></span> <span data-ttu-id="0f0e0-106">ソース バッチを選択した後、結合されたバッチを転記する前に確認および変更できます。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-106">After you select the source batches, you can review and change the merged batch before you post it.</span></span> <span data-ttu-id="0f0e0-107">承認用に在庫仕訳帳にバッチのマージを転送することもできます。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-107">You can also transfer the batch merge to an inventory journal for approval.</span></span> <span data-ttu-id="0f0e0-108">在庫は、その在庫仕訳帳から直接引当または転記できます。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-108">Inventory can then be reserved or posted directly from that inventory journal.</span></span> <span data-ttu-id="0f0e0-109">マージされたバッチを転記するとき、棚卸資産がソース バッチとマージされたバッチについて調整されます。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-109">When you post a merged batch, the inventory is adjusted for the source batches and the merged batch.</span></span>
 
-## <a name="are-there-any-prerequisites"></a>前提条件がありますか
-はい。バッチ マージ ツールを使用するには、その前に、いくつかのことを設定する必要があります。 次の表に、前提条件を説明します。
+## <a name="are-there-any-prerequisites"></a><span data-ttu-id="0f0e0-110">前提条件がありますか</span><span class="sxs-lookup"><span data-stu-id="0f0e0-110">Are there any prerequisites?</span></span>
+<span data-ttu-id="0f0e0-111">はい。バッチ マージ ツールを使用するには、その前に、いくつかのことを設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-111">Yes, there are some things that you must set up before you can use the merge batch tools.</span></span> <span data-ttu-id="0f0e0-112">次の表に、前提条件を説明します。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-112">The following table describes the prerequisites.</span></span>
 
 <table>
 <colgroup>
@@ -45,104 +45,101 @@ ms.lasthandoff: 06/13/2017
 </colgroup>
 <thead>
 <tr class="header">
-<th>ページ</th>
-<th>説明</th>
+<th><span data-ttu-id="0f0e0-113">ページ</span><span class="sxs-lookup"><span data-stu-id="0f0e0-113">Page</span></span></th>
+<th><span data-ttu-id="0f0e0-114">説明</span><span class="sxs-lookup"><span data-stu-id="0f0e0-114">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>仕訳帳名、在庫</td>
-<td>在庫仕訳帳のバッチ マージを転記するときに既定で使用されている仕訳帳名を作成する必要があります。 次はオプションですが、推奨されます。バッチ マージが在庫仕訳帳に移動されるときに、引当が自動的に行われるように指定できます。 そうでない場合は、バッチ マージの詳細が設定され、仕訳帳が転記された後に、手持在庫が変更されるリスクがあります。 仕訳帳名の自動割り当てを有効にするには、[<strong><strong>引当</strong></strong>] フィールドで、[<strong>自動</strong>] を選択します。</td>
+<td><span data-ttu-id="0f0e0-115">仕訳帳名、在庫</span><span class="sxs-lookup"><span data-stu-id="0f0e0-115">Journal names, inventory</span></span></td>
+<td><span data-ttu-id="0f0e0-116">在庫仕訳帳のバッチ マージを転記するときに既定で使用されている仕訳帳名を作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-116">You must create the journal name that is used by default when you post batch merges in inventory journals.</span></span> <span data-ttu-id="0f0e0-117">次はオプションですが、推奨されます。バッチ マージが在庫仕訳帳に移動されるときに、引当が自動的に行われるように指定できます。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-117">Optional but recommended: You can specify that reservations should be made automatically when the batch merge is transferred to the inventory journal.</span></span> <span data-ttu-id="0f0e0-118">そうでない場合は、バッチ マージの詳細が設定され、仕訳帳が転記された後に、手持在庫が変更されるリスクがあります。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-118">Otherwise, there is a risk that the on-hand inventory might be changed after the batch merge details are set up and the journal is posted.</span></span> <span data-ttu-id="0f0e0-119">仕訳帳名の自動割り当てを有効にするには、[<strong><strong>引当</strong></strong>] フィールドで、[<strong>自動</strong>] を選択します。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-119">To enable automatic reservations for the journal name, select <strong>Automatic</strong> in the <strong><strong>Reservation</strong></strong> field.</span></span></td>
 </tr>
 <tr class="even">
-<td>在庫および倉庫管理パラメーター</td>
-<td>在庫仕訳帳の既定の仕訳帳名を指定する必要があります。</td>
+<td><span data-ttu-id="0f0e0-120">在庫および倉庫管理パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f0e0-120">Inventory and warehouse management parameters</span></span></td>
+<td><span data-ttu-id="0f0e0-121">在庫仕訳帳の既定の仕訳帳名を指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-121">You must specify the default journal name for the inventory journal.</span></span></td>
 </tr>
 <tr class="odd">
-<td>リリースされた製品</td>
-<td>品目の推奨設定を次に示します。
+<td><span data-ttu-id="0f0e0-122">リリースされた製品</span><span class="sxs-lookup"><span data-stu-id="0f0e0-122">Released products</span></span></td>
+<td><span data-ttu-id="0f0e0-123">品目の推奨設定を次に示します。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-123">Here are the recommended settings for the item:</span></span>
 <ul>
-<li>マージされたバッチのバッチ番号を自動的に生成するには、リリースされた製品をバッチ番号グループに割り当てる必要があります。 結合されたバッチを作成するとき、または既存のバッチ番号を選択するとき、バッチ番号を手動で入力することもできます。 既存のバッチ番号を選択する場合は、選択したバッチがどの在庫トランザクションにも含まれていないことを確認します。</li>
-<li>リリースされた製品について有効期限または出庫期限を使用する場合、マージされたバッチの日付は [<strong>バッチ マージ日付計算</strong>] フィールドの選択に基づいて計算されます。 次のオプションがあります。
+<li><span data-ttu-id="0f0e0-124">マージされたバッチのバッチ番号を自動的に生成するには、リリースされた製品をバッチ番号グループに割り当てる必要があります。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-124">To automatically generate batch numbers for merged batches, you must assign the released product to a batch number group.</span></span> <span data-ttu-id="0f0e0-125">結合されたバッチを作成するとき、または既存のバッチ番号を選択するとき、バッチ番号を手動で入力することもできます。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-125">You can also enter a batch number manually when you create a merged batch, or select an existing batch number.</span></span> <span data-ttu-id="0f0e0-126">既存のバッチ番号を選択する場合は、選択したバッチがどの在庫トランザクションにも含まれていないことを確認します。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-126">If you select an existing batch number, make sure that the selected batch hasn't been included in any inventory transactions.</span></span></li>
+<li><span data-ttu-id="0f0e0-127">リリースされた製品について有効期限または出庫期限を使用する場合、マージされたバッチの日付は [<strong>バッチ マージ日付計算</strong>] フィールドの選択に基づいて計算されます。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-127">If you're using shelf life or best-before dates for the released product, the dates for a merged batch are calculated based on the selection in the <strong>Batch merge date calculation</strong> field.</span></span> <span data-ttu-id="0f0e0-128">次のオプションがあります。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-128">The following options are available:</span></span>
 <ul>
-<li><strong>最短</strong> – 計算は、バッチ マージに対して選択されたソース バッチに指定されるもっとも早い日付に基づきます。</li>
-<li><strong>最新</strong> – 計算は、バッチ マージに対して選択されたソース バッチに指定される最新の日付に基づきます。</li>
-<li><strong>手動</strong> - 計算は行われません。 日付がすべてのソース バッチで同じ場合、日付が提案されます。 その日付は変更できます。 ソース バッチの日付が同じでない場合は、日付を手動で入力できます。</li>
+<li><span data-ttu-id="0f0e0-129"><strong>最短</strong> – 計算は、バッチ マージに対して選択されたソース バッチに指定されるもっとも早い日付に基づきます。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-129"><strong>Earliest</strong> – The calculation is based on the earliest date that is specified for a source batch that is selected for the batch merge.</span></span></li>
+<li><span data-ttu-id="0f0e0-130"><strong>最新</strong> – 計算は、バッチ マージに対して選択されたソース バッチに指定される最新の日付に基づきます。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-130"><strong>Latest</strong> – The calculation is based on the latest date that is specified for a source batch that is selected for the batch merge.</span></span></li>
+<li><span data-ttu-id="0f0e0-131"><strong>手動</strong> - 計算は行われません。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-131"><strong>Manual</strong> – No calculation is done.</span></span> <span data-ttu-id="0f0e0-132">日付がすべてのソース バッチで同じ場合、日付が提案されます。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-132">If a date is the same on all source batches, a date is suggested.</span></span> <span data-ttu-id="0f0e0-133">その日付は変更できます。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-133">You can change that date.</span></span> <span data-ttu-id="0f0e0-134">ソース バッチの日付が同じでない場合は、日付を手動で入力できます。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-134">If a date isn't the same on the source batches, you can manually enter the date.</span></span></li>
 </ul></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>バッチ番号グループ</td>
-<td>オプション: マージされたバッチを作成するときバッチ番号を生成するには、リリースされた製品にバッチ番号グループを割り当てる必要があります。 そうでない場合は、バッチ番号を手動で入力できます。</td>
+<td><span data-ttu-id="0f0e0-135">バッチ番号グループ</span><span class="sxs-lookup"><span data-stu-id="0f0e0-135">Batch number group</span></span></td>
+<td><span data-ttu-id="0f0e0-136">オプション: マージされたバッチを作成するときバッチ番号を生成するには、リリースされた製品にバッチ番号グループを割り当てる必要があります。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-136">Optional: To generate a batch number when you create a merged batch, you must assign a batch number group to the released product.</span></span> <span data-ttu-id="0f0e0-137">そうでない場合は、バッチ番号を手動で入力できます。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-137">Otherwise, you can enter a batch number manually.</span></span></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="when-might-i-want-to-merge-batches-of-inventory"></a>在庫のバッチをマージする必要がありますか。
-バッチのマージが有用になるときを示すシナリオの例を次に示します。
+## <a name="when-might-i-want-to-merge-batches-of-inventory"></a><span data-ttu-id="0f0e0-138">在庫のバッチをマージする必要がありますか。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-138">When might I want to merge batches of inventory?</span></span>
+<span data-ttu-id="0f0e0-139">バッチのマージが有用になるときを示すシナリオの例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-139">Here are some examples of scenarios where it might be useful to merge batches:</span></span>
 
--   サミーが倉庫の中を歩いていると、同じ品目のいくつかのバッチの数量が少ないことに気付きます。 彼は複数の新しい出荷を受け取る予定であり、半端な数量を 1 つの新しいバッチにマージすることでフロア面積を解放できることが分かっています。
--   サミーは在庫を受け取ると、その新しいバッチを受入済のバッチと結合して、既存のバッチのバッチ属性値を改善することを望んでいます。
+-   <span data-ttu-id="0f0e0-140">サミーが倉庫の中を歩いていると、同じ品目のいくつかのバッチの数量が少ないことに気付きます。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-140">As Sammy is walking through his warehouse, he notices that several batches of the same item have low quantities.</span></span> <span data-ttu-id="0f0e0-141">彼は複数の新しい出荷を受け取る予定であり、半端な数量を 1 つの新しいバッチにマージすることでフロア面積を解放できることが分かっています。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-141">He is expecting to receive several new shipments, and he realizes that he can free some floor space by merging the odd quantities into a new batch.</span></span>
+-   <span data-ttu-id="0f0e0-142">サミーは在庫を受け取ると、その新しいバッチを受入済のバッチと結合して、既存のバッチのバッチ属性値を改善することを望んでいます。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-142">Sammy is receiving inventory, and he wants to combine the new batch with one that he has already received, to improve the batch attribute value of the existing batch.</span></span>
 
-## <a name="can-i-merge-batches-across-sites-and-legal-entities"></a>サイトと法人の全部のバッチを結合できますか
-いいえ。1 つの法人の同じサイトと倉庫の保管分析コードを持つバッチのみをマージできます。 ただし、結合されたバッチに、別の場所とパレット ID を指定できます。
+## <a name="can-i-merge-batches-across-sites-and-legal-entities"></a><span data-ttu-id="0f0e0-143">サイトと法人の全部のバッチを結合できますか</span><span class="sxs-lookup"><span data-stu-id="0f0e0-143">Can I merge batches across sites and legal entities?</span></span>
+<span data-ttu-id="0f0e0-144">いいえ。1 つの法人の同じサイトと倉庫の保管分析コードを持つバッチのみをマージできます。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-144">No, you can merge only batches that have the same site and warehouse storage dimensions in one legal entity.</span></span> <span data-ttu-id="0f0e0-145">ただし、結合されたバッチに、別の場所とパレット ID を指定できます。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-145">However, you can specify a different location and pallet ID for the merged batch.</span></span>
 
-## <a name="can-i-merge-partial-quantities"></a>一部の数量をマージできますか。
-いいえ、バッチの数量全体のみマージできます。 バッチのマージ機能は、生産機能ではなく在庫機能として使用されることを意図しています。
+## <a name="can-i-merge-partial-quantities"></a><span data-ttu-id="0f0e0-146">一部の数量をマージできますか。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-146">Can I merge partial quantities?</span></span>
+<span data-ttu-id="0f0e0-147">いいえ、バッチの数量全体のみマージできます。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-147">No, you can merge only the full quantity of batches.</span></span> <span data-ttu-id="0f0e0-148">バッチのマージ機能は、生産機能ではなく在庫機能として使用されることを意図しています。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-148">The batch merge functionality is intended as an inventory feature, not a production feature.</span></span>
 
-## <a name="what-if-the-batches-have-different-batch-attribute-values"></a>バッチのバッチ属性値が異なる場合はどうなりますか
-ソース バッチを選択して結合されたバッチに統合するとき、Finance and Operations は、すべてのバッチが同じ特性または属性値を持つかどうかを検証します。 属性値が同じであるとき、結合されたバッチの値が提案されます。 その値は変更できます。 結合されたバッチの属性値が等しくない場合、その値は空白のままとなり、それらの値は手動で入力できます。 属性値のバッチ属性タイプが整数または小数で、値がすべてのソース バッチで同じでない場合、値は加重平均計算を使用して計算されます。 計算値は、最も近い増分値に四捨五入されます。 ソース バッチの値が空白の場合、そのバッチとその数量は計算には含まれません。 **例** 次の例は、結合されたバッチの加重平均計算を示します。 2 つのソース バッチについて、整数であるバッチ属性タイプの値が空白になっています。 次の属性は、ソース バッチに割り当てられます。
+## <a name="what-if-the-batches-have-different-batch-attribute-values"></a><span data-ttu-id="0f0e0-149">バッチのバッチ属性値が異なる場合はどうなりますか</span><span class="sxs-lookup"><span data-stu-id="0f0e0-149">What if the batches have different batch attribute values?</span></span>
+<span data-ttu-id="0f0e0-150">ソース バッチを選択して結合されたバッチに統合するとき、Finance and Operations は、すべてのバッチが同じ特性または属性値を持つかどうかを検証します。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-150">When you select the source batches to combine in the merged batch, Finance and Operations verifies whether all the batches have the characteristics or attribute values.</span></span> <span data-ttu-id="0f0e0-151">属性値が同じであるとき、結合されたバッチの値が提案されます。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-151">When an attribute value is the same, a value is suggested for the merged batch.</span></span> <span data-ttu-id="0f0e0-152">その値は変更できます。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-152">You can change that value.</span></span> <span data-ttu-id="0f0e0-153">結合されたバッチの属性値が等しくない場合、その値は空白のままとなり、それらの値は手動で入力できます。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-153">Attribute values that aren't the same are left blank for the merged batch, and you can enter those values manually.</span></span> <span data-ttu-id="0f0e0-154">属性値のバッチ属性タイプが整数または小数で、値がすべてのソース バッチで同じでない場合、値は加重平均計算を使用して計算されます。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-154">If the batch attribute type for the attribute value is an integer or a fraction, and the values aren't the same for all the source batches, the value is calculated by using a weighted average calculation.</span></span> <span data-ttu-id="0f0e0-155">計算値は、最も近い増分値に四捨五入されます。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-155">The calculated value is rounded up or down to the nearest increment.</span></span> <span data-ttu-id="0f0e0-156">ソース バッチの値が空白の場合、そのバッチとその数量は計算には含まれません。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-156">If the value is blank for a source batch, the batch and its quantity aren't included in the calculation.</span></span> <span data-ttu-id="0f0e0-157">**例** 次の例は、結合されたバッチの加重平均計算を示します。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-157">**Example** The following example shows a weighted average calculation for a merged batch.</span></span> <span data-ttu-id="0f0e0-158">2 つのソース バッチについて、整数であるバッチ属性タイプの値が空白になっています。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-158">Two of the source batches have a blank value for a batch attribute type that is an integer.</span></span> <span data-ttu-id="0f0e0-159">次の属性は、ソース バッチに割り当てられます。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-159">The following attribute is assigned to the source batches.</span></span>
 
-| 属性 | 最小 | 増分 | 最大 |
+| <span data-ttu-id="0f0e0-160">属性</span><span class="sxs-lookup"><span data-stu-id="0f0e0-160">Attribute</span></span> | <span data-ttu-id="0f0e0-161">最小</span><span class="sxs-lookup"><span data-stu-id="0f0e0-161">Minimum</span></span> | <span data-ttu-id="0f0e0-162">増分</span><span class="sxs-lookup"><span data-stu-id="0f0e0-162">Increment</span></span> | <span data-ttu-id="0f0e0-163">最大</span><span class="sxs-lookup"><span data-stu-id="0f0e0-163">Maximum</span></span> |
 |-----------|---------|-----------|---------|
-| 等級     | 3       | 3         | 30      |
+| <span data-ttu-id="0f0e0-164">等級</span><span class="sxs-lookup"><span data-stu-id="0f0e0-164">Grade</span></span>     | <span data-ttu-id="0f0e0-165">3</span><span class="sxs-lookup"><span data-stu-id="0f0e0-165">3</span></span>       | <span data-ttu-id="0f0e0-166">3</span><span class="sxs-lookup"><span data-stu-id="0f0e0-166">3</span></span>         | <span data-ttu-id="0f0e0-167">30</span><span class="sxs-lookup"><span data-stu-id="0f0e0-167">30</span></span>      |
 
-ソース バッチの**等級バッチ**属性の属性値は次のようになります。
+<span data-ttu-id="0f0e0-168">ソース バッチの**等級バッチ**属性の属性値は次のようになります。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-168">The source batches have the following attribute values for the **Grade batch** attribute.</span></span>
 
-| バッチ | 件数 | 属性 | 属性値 |
+| <span data-ttu-id="0f0e0-169">バッチ</span><span class="sxs-lookup"><span data-stu-id="0f0e0-169">Batch</span></span> | <span data-ttu-id="0f0e0-170">件数</span><span class="sxs-lookup"><span data-stu-id="0f0e0-170">Quantity</span></span> | <span data-ttu-id="0f0e0-171">属性</span><span class="sxs-lookup"><span data-stu-id="0f0e0-171">Attribute</span></span> | <span data-ttu-id="0f0e0-172">属性値</span><span class="sxs-lookup"><span data-stu-id="0f0e0-172">Attribute value</span></span> |
 |-------|----------|-----------|-----------------|
-| B1    | 10       | 等級     | 空白           |
-| B2    | 15       | 等級     | 15              |
-| B3    | 20       | 等級     | 20              |
-| B4    | 25       | 等級     | 空白           |
-| B5    | 30       | 等級     | 25              |
+| <span data-ttu-id="0f0e0-173">B1</span><span class="sxs-lookup"><span data-stu-id="0f0e0-173">B1</span></span>    | <span data-ttu-id="0f0e0-174">10</span><span class="sxs-lookup"><span data-stu-id="0f0e0-174">10</span></span>       | <span data-ttu-id="0f0e0-175">等級</span><span class="sxs-lookup"><span data-stu-id="0f0e0-175">Grade</span></span>     | <span data-ttu-id="0f0e0-176">空白</span><span class="sxs-lookup"><span data-stu-id="0f0e0-176">Blank</span></span>           |
+| <span data-ttu-id="0f0e0-177">B2</span><span class="sxs-lookup"><span data-stu-id="0f0e0-177">B2</span></span>    | <span data-ttu-id="0f0e0-178">15</span><span class="sxs-lookup"><span data-stu-id="0f0e0-178">15</span></span>       | <span data-ttu-id="0f0e0-179">等級</span><span class="sxs-lookup"><span data-stu-id="0f0e0-179">Grade</span></span>     | <span data-ttu-id="0f0e0-180">15</span><span class="sxs-lookup"><span data-stu-id="0f0e0-180">15</span></span>              |
+| <span data-ttu-id="0f0e0-181">B3</span><span class="sxs-lookup"><span data-stu-id="0f0e0-181">B3</span></span>    | <span data-ttu-id="0f0e0-182">20</span><span class="sxs-lookup"><span data-stu-id="0f0e0-182">20</span></span>       | <span data-ttu-id="0f0e0-183">等級</span><span class="sxs-lookup"><span data-stu-id="0f0e0-183">Grade</span></span>     | <span data-ttu-id="0f0e0-184">20</span><span class="sxs-lookup"><span data-stu-id="0f0e0-184">20</span></span>              |
+| <span data-ttu-id="0f0e0-185">B4</span><span class="sxs-lookup"><span data-stu-id="0f0e0-185">B4</span></span>    | <span data-ttu-id="0f0e0-186">25</span><span class="sxs-lookup"><span data-stu-id="0f0e0-186">25</span></span>       | <span data-ttu-id="0f0e0-187">等級</span><span class="sxs-lookup"><span data-stu-id="0f0e0-187">Grade</span></span>     | <span data-ttu-id="0f0e0-188">空白</span><span class="sxs-lookup"><span data-stu-id="0f0e0-188">Blank</span></span>           |
+| <span data-ttu-id="0f0e0-189">B5</span><span class="sxs-lookup"><span data-stu-id="0f0e0-189">B5</span></span>    | <span data-ttu-id="0f0e0-190">30</span><span class="sxs-lookup"><span data-stu-id="0f0e0-190">30</span></span>       | <span data-ttu-id="0f0e0-191">等級</span><span class="sxs-lookup"><span data-stu-id="0f0e0-191">Grade</span></span>     | <span data-ttu-id="0f0e0-192">25</span><span class="sxs-lookup"><span data-stu-id="0f0e0-192">25</span></span>              |
 
-これらのバッチをソース バッチとして追加するとき、次の値が結合されたバッチに割り当てられます。
+<span data-ttu-id="0f0e0-193">これらのバッチをソース バッチとして追加するとき、次の値が結合されたバッチに割り当てられます。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-193">When you add these batches as source batches, the following values are assigned to the merged batch.</span></span>
 
-| バッチ | 件数 | 属性 | 属性値 |
+| <span data-ttu-id="0f0e0-194">バッチ</span><span class="sxs-lookup"><span data-stu-id="0f0e0-194">Batch</span></span> | <span data-ttu-id="0f0e0-195">件数</span><span class="sxs-lookup"><span data-stu-id="0f0e0-195">Quantity</span></span> | <span data-ttu-id="0f0e0-196">属性</span><span class="sxs-lookup"><span data-stu-id="0f0e0-196">Attribute</span></span> | <span data-ttu-id="0f0e0-197">属性値</span><span class="sxs-lookup"><span data-stu-id="0f0e0-197">Attribute value</span></span> |
 |-------|----------|-----------|-----------------|
-| B6    | 100      | 等級     | 21              |
+| <span data-ttu-id="0f0e0-198">B6</span><span class="sxs-lookup"><span data-stu-id="0f0e0-198">B6</span></span>    | <span data-ttu-id="0f0e0-199">100</span><span class="sxs-lookup"><span data-stu-id="0f0e0-199">100</span></span>      | <span data-ttu-id="0f0e0-200">等級</span><span class="sxs-lookup"><span data-stu-id="0f0e0-200">Grade</span></span>     | <span data-ttu-id="0f0e0-201">21</span><span class="sxs-lookup"><span data-stu-id="0f0e0-201">21</span></span>              |
 
-バッチ B1 と B4 の値と数量は、加重平均の計算に含まれません。 したがって、結合されたバッチの値は次のように計算されます。
+<span data-ttu-id="0f0e0-202">バッチ B1 と B4 の値と数量は、加重平均の計算に含まれません。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-202">The values and quantities for batches B1 and B4 aren't included in the weighted average calculation.</span></span> <span data-ttu-id="0f0e0-203">したがって、結合されたバッチの値は次のように計算されます。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-203">Therefore, here is how the value for the merged batch is calculated.</span></span>
 
-| 値 | 数量 (重量)                              | 相対重量 | 相対重量 × 値                                               |
+| <span data-ttu-id="0f0e0-204">値</span><span class="sxs-lookup"><span data-stu-id="0f0e0-204">Value</span></span> | <span data-ttu-id="0f0e0-205">数量 (重量)</span><span class="sxs-lookup"><span data-stu-id="0f0e0-205">Quantity (weight)</span></span>                              | <span data-ttu-id="0f0e0-206">相対重量</span><span class="sxs-lookup"><span data-stu-id="0f0e0-206">Relative weight</span></span> | <span data-ttu-id="0f0e0-207">相対重量 × 値</span><span class="sxs-lookup"><span data-stu-id="0f0e0-207">Relative weight × Value</span></span>                                               |
 |-------|------------------------------------------------|-----------------|-----------------------------------------------------------------------|
-| 15    | 15                                             | 0.230769231     | 3.461538462                                                           |
-| 20    | 20                                             | 0.307692308     | 6.153846154                                                           |
-| 25    | 30                                             | 0.461538462     | 11.53846154                                                           |
-|       | **合計:** 65 (総重量) |                 | **合計:** 21.5384615、四処分五入すると 21 (最も近い増分値) です。 |
+| <span data-ttu-id="0f0e0-208">15</span><span class="sxs-lookup"><span data-stu-id="0f0e0-208">15</span></span>    | <span data-ttu-id="0f0e0-209">15</span><span class="sxs-lookup"><span data-stu-id="0f0e0-209">15</span></span>                                             | <span data-ttu-id="0f0e0-210">0.230769231</span><span class="sxs-lookup"><span data-stu-id="0f0e0-210">0.230769231</span></span>     | <span data-ttu-id="0f0e0-211">3.461538462</span><span class="sxs-lookup"><span data-stu-id="0f0e0-211">3.461538462</span></span>                                                           |
+| <span data-ttu-id="0f0e0-212">20</span><span class="sxs-lookup"><span data-stu-id="0f0e0-212">20</span></span>    | <span data-ttu-id="0f0e0-213">20</span><span class="sxs-lookup"><span data-stu-id="0f0e0-213">20</span></span>                                             | <span data-ttu-id="0f0e0-214">0.307692308</span><span class="sxs-lookup"><span data-stu-id="0f0e0-214">0.307692308</span></span>     | <span data-ttu-id="0f0e0-215">6.153846154</span><span class="sxs-lookup"><span data-stu-id="0f0e0-215">6.153846154</span></span>                                                           |
+| <span data-ttu-id="0f0e0-216">25</span><span class="sxs-lookup"><span data-stu-id="0f0e0-216">25</span></span>    | <span data-ttu-id="0f0e0-217">30</span><span class="sxs-lookup"><span data-stu-id="0f0e0-217">30</span></span>                                             | <span data-ttu-id="0f0e0-218">0.461538462</span><span class="sxs-lookup"><span data-stu-id="0f0e0-218">0.461538462</span></span>     | <span data-ttu-id="0f0e0-219">11.53846154</span><span class="sxs-lookup"><span data-stu-id="0f0e0-219">11.53846154</span></span>                                                           |
+|       | <span data-ttu-id="0f0e0-220">**合計:** 65 (総重量)</span><span class="sxs-lookup"><span data-stu-id="0f0e0-220">**Total:** 65, which is the sum of the weights</span></span> |                 | <span data-ttu-id="0f0e0-221">**合計:** 21.5384615、四処分五入すると 21 (最も近い増分値) です。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-221">**Total:** 21.5384615, which is rounded to 21 (the nearest increment)</span></span> |
 
-## <a name="what-if-the-batches-have-different-batch-dates"></a>バッチのバッチ日付が異なる場合どうなりますか
-バッチが異なるバッチ日付を持つ場合、いくつかの日付は、[**バッチ マージ**] ページの [**マージ済みバッチ**] クイック タブの [**バッチ日付**] グループの値に基づいて計算されます。 [**バッチ日付**] グループで、フィールドの値が計算されます。 これらの値には、製造日、有効期限、在庫通知日、および出庫期限の日付が含まれます。 日付は、[**リリース済製品の詳細**] ページの [**品目データ**] フィールド グループの品目の設定に基づいて計算されます。 値を変更したり、手動で入力できます。 他のすべての日付については、計算は行われません。 同じ原則が、バッチ属性値に使用されます。 日付がソース バッチすべてで同じ場合、その日付が結合されたバッチに対して提案されます。 日付がすべてのソース バッチで同じでない場合、結合されたバッチの日付は空白になり、手動で入力できます。
+## <a name="what-if-the-batches-have-different-batch-dates"></a><span data-ttu-id="0f0e0-222">バッチのバッチ日付が異なる場合どうなりますか</span><span class="sxs-lookup"><span data-stu-id="0f0e0-222">What if the batches have different batch dates?</span></span>
+<span data-ttu-id="0f0e0-223">バッチが異なるバッチ日付を持つ場合、いくつかの日付は、[**バッチ マージ**] ページの [**マージ済みバッチ**] クイック タブの [**バッチ日付**] グループの値に基づいて計算されます。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-223">If the batches have different batch dates, some of the dates are calculated based on the values in the **Batch dates** group on the **Merged batch** FastTab of the **Batch merge** page.</span></span> <span data-ttu-id="0f0e0-224">[**バッチ日付**] グループで、フィールドの値が計算されます。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-224">The system calculates values for the fields in the **Batch dates** group.</span></span> <span data-ttu-id="0f0e0-225">これらの値には、製造日、有効期限、在庫通知日、および出庫期限の日付が含まれます。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-225">These values include the manufacturing date, expiration date, shelf advice date, and best-before date.</span></span> <span data-ttu-id="0f0e0-226">日付は、[**リリース済製品の詳細**] ページの [**品目データ**] フィールド グループの品目の設定に基づいて計算されます。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-226">The dates are calculated based on settings for the item in the **Item data** field group of the **Released product details** page.</span></span> <span data-ttu-id="0f0e0-227">値を変更したり、手動で入力できます。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-227">You can change the values or enter them manually.</span></span> <span data-ttu-id="0f0e0-228">他のすべての日付については、計算は行われません。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-228">For all other dates, no calculation is done.</span></span> <span data-ttu-id="0f0e0-229">同じ原則が、バッチ属性値に使用されます。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-229">The same principle is used for batch attribute values.</span></span> <span data-ttu-id="0f0e0-230">日付がソース バッチすべてで同じ場合、その日付が結合されたバッチに対して提案されます。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-230">If a date is the same for all the source batches, that date is suggested for the merged batch.</span></span> <span data-ttu-id="0f0e0-231">日付がすべてのソース バッチで同じでない場合、結合されたバッチの日付は空白になり、手動で入力できます。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-231">If the date isn't the same for all source batches, the date is blank on the merged batch, and you can enter it manually.</span></span>
 
-## <a name="what-if-the-dimensions-are-different-on-the-batches-that-i-want-to-merge"></a>分析コードが結合するバッチで異なる場合はどうなりますか
-製品分析コード、追跡用分析コード、保管分析コードは次のように処理されます。
+## <a name="what-if-the-dimensions-are-different-on-the-batches-that-i-want-to-merge"></a><span data-ttu-id="0f0e0-232">分析コードが結合するバッチで異なる場合はどうなりますか</span><span class="sxs-lookup"><span data-stu-id="0f0e0-232">What if the dimensions are different on the batches that I want to merge?</span></span>
+<span data-ttu-id="0f0e0-233">製品分析コード、追跡用分析コード、保管分析コードは次のように処理されます。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-233">Here is how product dimensions, tracking dimensions, and storage dimensions are handled:</span></span>
 
--   **製品分析コード** – 選択した品目のすべての製品分析コードは同じであることが必要です。 製品分析コード全体のバッチを結合することはできません。
--   **追跡用分析コード** – 品目のバッチ番号グループが指定されると、新しいバッチ番号が自動的に生成されます。 品目にバッチ番号グループが割り当てられない場合、既存のバッチを選択したり、番号を手動で入力できます。 シリアル番号が、ソース バッチから、結合されたバッチの在庫仕訳帳明細行へ移動されます。
--   **保管分析コード** – サイトと倉庫の保管分析コードは、ソース バッチと結合されたバッチのすべてに対して同じであることが必要です。 ただし、結合されたバッチに、新しい場所とパレット ID を指定できます。
+-   <span data-ttu-id="0f0e0-234">**製品分析コード** – 選択した品目のすべての製品分析コードは同じであることが必要です。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-234">**Product dimensions** – All product dimensions for the selected item must be the same.</span></span> <span data-ttu-id="0f0e0-235">製品分析コード全体のバッチを結合することはできません。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-235">You can't merge batches across product dimensions.</span></span>
+-   <span data-ttu-id="0f0e0-236">**追跡用分析コード** – 品目のバッチ番号グループが指定されると、新しいバッチ番号が自動的に生成されます。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-236">**Tracking dimensions** – A new batch number is automatically generated if a batch number group is specified for the item.</span></span> <span data-ttu-id="0f0e0-237">品目にバッチ番号グループが割り当てられない場合、既存のバッチを選択したり、番号を手動で入力できます。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-237">If a batch number group isn't assigned to an item, you can select an existing batch or enter the number manually.</span></span> <span data-ttu-id="0f0e0-238">シリアル番号が、ソース バッチから、結合されたバッチの在庫仕訳帳明細行へ移動されます。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-238">Serial numbers are transferred from the source batch to the inventory journal lines for the merged batch.</span></span>
+-   <span data-ttu-id="0f0e0-239">**保管分析コード** – サイトと倉庫の保管分析コードは、ソース バッチと結合されたバッチのすべてに対して同じであることが必要です。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-239">**Storage dimensions** – The site and warehouse storage dimensions must be the same for all the source batches and the merged batch.</span></span> <span data-ttu-id="0f0e0-240">ただし、結合されたバッチに、新しい場所とパレット ID を指定できます。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-240">However, you can specify a new location and pallet ID for the merged batch.</span></span>
 
-## <a name="how-does-posting-work"></a>転記はどのように機能しますか
-転記は、仕訳帳に承認プロセスを使用するかどうかに基づいて、次の 2 つの方法で機能します。 [**仕訳帳への転送**] および [**バッチ マージの転記**] アクションを使用してバッチ マージを確認して転記することができる仕訳帳へバッチ マージを移動するか、またはバッチ マージを直接転記できます。 2 つのアクションとの大きな違いは、仕訳帳への移動でバッチ マージを転記しないことです。 どちらのアクションでも、既存のバッチが選択されない場合は新しいバッチが作成され、すべてのバッチの詳細と属性値が更新され、在庫仕訳帳が作成されます。
+## <a name="how-does-posting-work"></a><span data-ttu-id="0f0e0-241">転記はどのように機能しますか</span><span class="sxs-lookup"><span data-stu-id="0f0e0-241">How does posting work?</span></span>
+<span data-ttu-id="0f0e0-242">転記は、仕訳帳に承認プロセスを使用するかどうかに基づいて、次の 2 つの方法で機能します。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-242">Posting works in two ways, depending on whether you use an approval process for journals.</span></span> <span data-ttu-id="0f0e0-243">[**仕訳帳への転送**] および [**バッチ マージの転記**] アクションを使用してバッチ マージを確認して転記することができる仕訳帳へバッチ マージを移動するか、またはバッチ マージを直接転記できます。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-243">You can use the **Transfer to journal** and **Post the batch merge** actions to transfer the batch merge to a journal where it can be verified and posted, or you can post the batch merge directly.</span></span> <span data-ttu-id="0f0e0-244">2 つのアクションとの大きな違いは、仕訳帳への移動でバッチ マージを転記しないことです。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-244">The main difference between the two actions is that a transfer to a journal doesn't post the batch merge.</span></span> <span data-ttu-id="0f0e0-245">どちらのアクションでも、既存のバッチが選択されない場合は新しいバッチが作成され、すべてのバッチの詳細と属性値が更新され、在庫仕訳帳が作成されます。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-245">Both actions create a new batch if an existing batch isn't selected, update all batch details and attribute values, and create an inventory journal.</span></span>
 
--   **仕訳帳への転送** – バッチ マージの詳細を新しい在庫仕訳帳に転送します。 自動引当を設定していた場合は、ソース バッチの数量が引き当てられます。 バッチ マージの詳細は変更できません。 バッチ マージを変更するには、仕訳帳を削除する必要があります。 仕訳帳は、別の従業員が後で実行するタスクとして使用できます。 仕訳帳明細行に対するバッチ数量の引当は保護されています。 この割り当てにより、品質プランナーまたは倉庫マネージャが自分の従業員のタスクを作成することができます。
--   **バッチ マージの転記** – バッチ マージを直接転記します。 このアクションは現物マージの発生後に実行できます。
+-   <span data-ttu-id="0f0e0-246">**仕訳帳への転送** – バッチ マージの詳細を新しい在庫仕訳帳に転送します。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-246">**Transfer to journal** – Transfer the batch merge details to a new inventory journal.</span></span> <span data-ttu-id="0f0e0-247">自動引当を設定していた場合は、ソース バッチの数量が引き当てられます。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-247">If you've set up automatic reservations, the quantities in the source batches are reserved.</span></span> <span data-ttu-id="0f0e0-248">バッチ マージの詳細は変更できません。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-248">The details of the batch merge can't be changed.</span></span> <span data-ttu-id="0f0e0-249">バッチ マージを変更するには、仕訳帳を削除する必要があります。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-249">To modify the batch merge, you must delete the journal.</span></span> <span data-ttu-id="0f0e0-250">仕訳帳は、別の従業員が後で実行するタスクとして使用できます。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-250">The journal can be used as a task that another employee must perform later.</span></span> <span data-ttu-id="0f0e0-251">仕訳帳明細行に対するバッチ数量の引当は保護されています。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-251">The reservation of the batch quantity to the journal line is secured.</span></span> <span data-ttu-id="0f0e0-252">この割り当てにより、品質プランナーまたは倉庫マネージャが自分の従業員のタスクを作成することができます。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-252">This allocation lets a quality planner or a warehouse manager create tasks for his or her employees.</span></span>
+-   <span data-ttu-id="0f0e0-253">**バッチ マージの転記** – バッチ マージを直接転記します。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-253">**Post the batch merge** – Post the batch merge directly.</span></span> <span data-ttu-id="0f0e0-254">このアクションは現物マージの発生後に実行できます。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-254">This action can be performed after the physical merge has occurred.</span></span>
 
-バッチ マージの在庫仕訳帳を [**すべてのバッチ マージ**] リスト ページから承認できます。 [**仕訳帳**] &gt; [**転記**] をクリックします。 仕訳帳の転記後、結合されたバッチの詳細を変更できません。 バッチ マージを在庫仕訳帳へ転送した後は、その仕訳帳が削除された場合にのみ詳細を変更できます。
+<span data-ttu-id="0f0e0-255">バッチ マージの在庫仕訳帳を [**すべてのバッチ マージ**] リスト ページから承認できます。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-255">You can approve the inventory journal for the batch merge from the **All batch merges** list page.</span></span> <span data-ttu-id="0f0e0-256">[**仕訳帳**] &gt; [**転記**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-256">Click **Journal** &gt; **Post**.</span></span> <span data-ttu-id="0f0e0-257">仕訳帳の転記後、結合されたバッチの詳細を変更できません。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-257">After a journal is posted, you can't change the details in the merged batch.</span></span> <span data-ttu-id="0f0e0-258">バッチ マージを在庫仕訳帳へ転送した後は、その仕訳帳が削除された場合にのみ詳細を変更できます。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-258">After you transfer a batch merge to an inventory journal, you can change the details only if the journal is deleted.</span></span>
 
-## <a name="after-i-merged-a-catchweight-item-why-cant-i-see-the-catchweight-information-in-the-inventory-journal"></a>CW 品目の結合後に在庫仕訳帳上でその CW 情報を確認できないのはどうしてですか。
-他のすべての品目と同様に、CW 品目のバッチを結合できます。 ただし、CW 情報は在庫仕訳帳に表示されません。 バッチ マージを在庫仕訳帳に転送する前に、CW 情報を確認することをお勧めします。
-
-
-
+## <a name="after-i-merged-a-catchweight-item-why-cant-i-see-the-catchweight-information-in-the-inventory-journal"></a><span data-ttu-id="0f0e0-259">CW 品目の結合後に在庫仕訳帳上でその CW 情報を確認できないのはどうしてですか。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-259">After I merged a catchweight item, why can’t I see the catchweight information in the inventory journal?</span></span>
+<span data-ttu-id="0f0e0-260">他のすべての品目と同様に、CW 品目のバッチを結合できます。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-260">You can merge batches of catch-weight items just like all other items.</span></span> <span data-ttu-id="0f0e0-261">ただし、CW 情報は在庫仕訳帳に表示されません。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-261">However, the catch-weight information doesn't appear in the inventory journal.</span></span> <span data-ttu-id="0f0e0-262">バッチ マージを在庫仕訳帳に転送する前に、CW 情報を確認することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="0f0e0-262">We recommend that you verify the catch-weight information before you transfer the batch merge to the inventory journal.</span></span>
 

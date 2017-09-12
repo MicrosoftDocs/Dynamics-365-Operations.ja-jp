@@ -17,99 +17,99 @@ ms.assetid: dfd10099-8f7f-44b1-917e-df37c2fe8773
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: yuyus
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 0018f5df3d0d2882c300b6458bfb8adfba84e2ad
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: afc8f4922810983a6582558f0577a05aa21cbdbb
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="moving-average"></a>移動平均
+# <a name="moving-average"></a><span data-ttu-id="8a9d6-102">移動平均</span><span class="sxs-lookup"><span data-stu-id="8a9d6-102">Moving average</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-次に、移動平均原価を原価計算方法として使用するときの前提条件を示します。
-1.  **品目モデル グループ** ページの**在庫モデル** フィールドで、[移動平均] がオンになっている品目モデル グループを設定します。 **注記 :** 既定では、移動平均 を選択した場合、**現物在庫の転記** フィールドおよび **資産在庫の転記** フィールドも選択されます。 
+<span data-ttu-id="8a9d6-103">次に、移動平均原価を原価計算方法として使用するときの前提条件を示します。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-103">The following are prerequisites when you use moving average cost as a costing method.</span></span>
+1.  <span data-ttu-id="8a9d6-104">**品目モデル グループ** ページの**在庫モデル** フィールドで、[移動平均] がオンになっている品目モデル グループを設定します。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-104">In the **Item model groups** page, set up an item model group that has Moving average selected in the **Inventory model** field.</span></span> <span data-ttu-id="8a9d6-105">**注記 :** 既定では、移動平均 を選択した場合、**現物在庫の転記** フィールドおよび **資産在庫の転記** フィールドも選択されます。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-105">**Note:** By default, when Moving average is selected, the **Post physical inventory** and **Post financial inventory** fields are also selected.</span></span> 
 
-2.  **転記**ページの**在庫**タブで、勘定を**移動平均の価格差異**および**移動平均の原価再評価**の勘定に割り当てます。 原価を比例して経費処理する場合は、**移動平均の価格差異**の勘定が使用できます。 これが起きるのは、購買入庫と仕入請求書の原価に差異があるためであり、また元の在庫数量と現在の手持在庫数量に差異があるためです。 製品の移動平均原価を新しい単価に合わせて調整するときは、**移動平均の原価の再評価**の勘定を使用します。
-3.  **リリースされた製品**ページで、移動平均品目モデル グループを製品に割り当てます。 **注記 :** 在庫決算プロセスは、会計期間のみをクローズします。 これは、品目モデル グループとして割り当てられた移動平均がある製品には影響しません。
+2.  <span data-ttu-id="8a9d6-106">**転記**ページの**在庫**タブで、勘定を**移動平均の価格差異**および**移動平均の原価再評価**の勘定に割り当てます。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-106">In the **Posting** page, assign accounts to the **Price difference for moving average** and the **Cost revaluation for moving average** accounts on the **Inventory** tab.</span></span> <span data-ttu-id="8a9d6-107">原価を比例して経費処理する場合は、**移動平均の価格差異**の勘定が使用できます。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-107">You use the **Price difference for moving average** account when cost has to be proportionally expensed.</span></span> <span data-ttu-id="8a9d6-108">これが起きるのは、購買入庫と仕入請求書の原価に差異があるためであり、また元の在庫数量と現在の手持在庫数量に差異があるためです。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-108">This occurs because of a difference in cost between a purchase receipt and the purchase invoice, and because of a difference between the original inventory quantity and the current on-hand quantity.</span></span> <span data-ttu-id="8a9d6-109">製品の移動平均原価を新しい単価に合わせて調整するときは、**移動平均の原価の再評価**の勘定を使用します。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-109">Use the **Cost revaluation for moving average** account when you want to adjust the moving average cost for a product to a new unit price.</span></span>
+3.  <span data-ttu-id="8a9d6-110">**リリースされた製品**ページで、移動平均品目モデル グループを製品に割り当てます。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-110">In the **Released products** page, assign the moving average item model group to the product.</span></span> <span data-ttu-id="8a9d6-111">**注記 :** 在庫決算プロセスは、会計期間のみをクローズします。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-111">**Note:** The inventory close process only closes the accounting period.</span></span> <span data-ttu-id="8a9d6-112">これは、品目モデル グループとして割り当てられた移動平均がある製品には影響しません。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-112">It does not affect products that have moving average assigned to them as an item model group.</span></span>
 
-## <a name="convert-to-the-moving-average-costing-method"></a>移動平均原価計算方法への換算
-製品は、移動平均在庫評価方法を使用するように変換できます。 このタイプの変換は、通常、現年度の最後の月を締めた後の年度の最後に行われます。 これには、製品の現在の価格モデルが使用されます。 在庫原価計算方法を、平均原価または標準原価に基づく原価計算方法から移動平均に基づくメソッドへ変更できます。 
+## <a name="convert-to-the-moving-average-costing-method"></a><span data-ttu-id="8a9d6-113">移動平均原価計算方法への換算</span><span class="sxs-lookup"><span data-stu-id="8a9d6-113">Convert to the moving average costing method</span></span>
+<span data-ttu-id="8a9d6-114">製品は、移動平均在庫評価方法を使用するように変換できます。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-114">Products can be converted to use the moving average inventory valuation method.</span></span> <span data-ttu-id="8a9d6-115">このタイプの変換は、通常、現年度の最後の月を締めた後の年度の最後に行われます。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-115">This type of conversion is usually done at the end of the year, after the last month of the current year is closed.</span></span> <span data-ttu-id="8a9d6-116">これには、製品の現在の価格モデルが使用されます。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-116">It is done by using the product’s current costing model.</span></span> <span data-ttu-id="8a9d6-117">在庫原価計算方法を、平均原価または標準原価に基づく原価計算方法から移動平均に基づくメソッドへ変更できます。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-117">You can change your inventory costing method from a costing method that is based on average cost or standard cost to a method that is based on moving average.</span></span> 
 
-原価計算方法を標準原価計算方法から移動平均方法に変更する場合、次の作業を行う必要があります。
+<span data-ttu-id="8a9d6-118">原価計算方法を標準原価計算方法から移動平均方法に変更する場合、次の作業を行う必要があります。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-118">If you are changing your costing method from a standard costing method to a moving average method, you have to complete the following tasks:</span></span>
 
-1.  在庫数量と値が 0 (ゼロ) になるように調整します。
-2.  在庫金額と数量が 0 (ゼロ) の後に、品目モデル グループを移動平均に変更します。
-3.  数量と価格が在庫に戻るように調整します。
+1.  <span data-ttu-id="8a9d6-119">在庫数量と値が 0 (ゼロ) になるように調整します。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-119">Make adjustments to get inventory quantities and values down to 0 (zero).</span></span>
+2.  <span data-ttu-id="8a9d6-120">在庫金額と数量が 0 (ゼロ) の後に、品目モデル グループを移動平均に変更します。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-120">After the inventory value and quantity are 0 (zero), change the item model group to moving average.</span></span>
+3.  <span data-ttu-id="8a9d6-121">数量と価格が在庫に戻るように調整します。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-121">Make adjustments to get the quantity and value back into inventory.</span></span>
 
-在庫原価計算方法を、移動平均方法から、先入れ先出し (FIFO) 方法、後入れ先出し (LIFO)、または加重平均方法には変更できません。
+<span data-ttu-id="8a9d6-122">在庫原価計算方法を、移動平均方法から、先入れ先出し (FIFO) 方法、後入れ先出し (LIFO)、または加重平均方法には変更できません。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-122">You cannot change your inventory costing method from a moving average method to a First in, First out (FIFO) method, a Last in, First out (LIFO) method, or a weighted average method.</span></span>
 
-**注記 :** 標準コストから移動加重平均への換算は、手動プロセスです。
+<span data-ttu-id="8a9d6-123">**注記 :** 標準コストから移動加重平均への換算は、手動プロセスです。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-123">**Note:** Converting from standard cost to moving weighted average is a manual process.</span></span>
 
-次の例では、移動平均原価計算方法を使用した効果について説明します。 コンフィギュレーションには次の 4 つがあります。
--   発注書と比例して経理処理する原価との差異
--   移動平均の製品および在庫調整
--   生産での移動平均
--   前の日付のトランザクションでの移動平均
+<span data-ttu-id="8a9d6-124">次の例では、移動平均原価計算方法を使用した効果について説明します。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-124">The following examples illustrate the effect of using the moving average costing method.</span></span> <span data-ttu-id="8a9d6-125">コンフィギュレーションには次の 4 つがあります。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-125">There are four configurations:</span></span>
+-   <span data-ttu-id="8a9d6-126">発注書と比例して経理処理する原価との差異</span><span class="sxs-lookup"><span data-stu-id="8a9d6-126">Purchase order and proportionally expensed cost difference</span></span>
+-   <span data-ttu-id="8a9d6-127">移動平均の製品および在庫調整</span><span class="sxs-lookup"><span data-stu-id="8a9d6-127">Moving average product and inventory adjustment</span></span>
+-   <span data-ttu-id="8a9d6-128">生産での移動平均</span><span class="sxs-lookup"><span data-stu-id="8a9d6-128">Moving average with production</span></span>
+-   <span data-ttu-id="8a9d6-129">前の日付のトランザクションでの移動平均</span><span class="sxs-lookup"><span data-stu-id="8a9d6-129">Moving average with a backdated transaction</span></span>
 
-## <a name="purchase-order-and-proportionally-expensed-cost-difference"></a>発注書と比例して経理処理する原価との差異
-移動平均では、製品の原価は購買入庫によって決まります。 仕入請求書を転記するとき、購買入庫と仕入請求書の原価に違いがある場合、差額は在庫の現在の製品に合わせて調整され、残りの金額が経費として処理されます。 
+## <a name="purchase-order-and-proportionally-expensed-cost-difference"></a><span data-ttu-id="8a9d6-130">発注書と比例して経理処理する原価との差異</span><span class="sxs-lookup"><span data-stu-id="8a9d6-130">Purchase order and proportionally expensed cost difference</span></span>
+<span data-ttu-id="8a9d6-131">移動平均では、製品の原価は購買入庫によって決まります。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-131">With moving average, the product’s cost is determined by the purchase receipt.</span></span> <span data-ttu-id="8a9d6-132">仕入請求書を転記するとき、購買入庫と仕入請求書の原価に違いがある場合、差額は在庫の現在の製品に合わせて調整され、残りの金額が経費として処理されます。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-132">When the purchase invoice is posted, if there is a difference in cost between the purchase receipt and the purchase invoice, the difference is proportionally adjusted to the current products in stock, and any remaining amount is expensed.</span></span> 
 
-この例では、発注書が作成され、ある原価で入庫され、仕入請求書は異なる原価で転記されます。
+<span data-ttu-id="8a9d6-133">この例では、発注書が作成され、ある原価で入庫され、仕入請求書は異なる原価で転記されます。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-133">In this example, a purchase order is created and received at one cost, and the purchase invoice is posted with a different cost.</span></span>
 
-1.  数量 2、単価 10.00 の発注書を作成します。
-2.  その製品の購買入庫を作成します。
-3.  数量 1、単価 10.00 の販売注文を作成します。
-4.  数量 2、単価 12.00 の発注書を作成します。
+1.  <span data-ttu-id="8a9d6-134">数量 2、単価 10.00 の発注書を作成します。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-134">Create a purchase order for a quantity of 2 and a unit price of 10.00.</span></span>
+2.  <span data-ttu-id="8a9d6-135">その製品の購買入庫を作成します。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-135">Create a purchase receipt of the product.</span></span>
+3.  <span data-ttu-id="8a9d6-136">数量 1、単価 10.00 の販売注文を作成します。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-136">Create a sales order for a quantity of 1 and a unit price of 10.00.</span></span>
+4.  <span data-ttu-id="8a9d6-137">数量 2、単価 12.00 の発注書を作成します。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-137">Create a purchase invoice for a quantity of 2 and a unit price of 12.00.</span></span>
 
-単価 2.00 の差額は、仕入請求書の転記時に、[移動平均の価格差異] 勘定に転記されます。 その理由は、2 つの製品を 20.00 の原価で購入したことによります。 製品の 1 つは、単価 10.00 で販売されました。 仕入請求書は、数量 2 が単価 12.00 で転記されました。 製品の単価は 14.00 で転記することはできません。
+<span data-ttu-id="8a9d6-138">単価 2.00 の差額は、仕入請求書の転記時に、[移動平均の価格差異] 勘定に転記されます。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-138">The difference in unit price, 2.00, is posted to the Price difference for moving average account when the purchase invoice is posted.</span></span> <span data-ttu-id="8a9d6-139">その理由は、2 つの製品を 20.00 の原価で購入したことによります。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-139">The reason is that two products were purchased for a cost of 20.00.</span></span> <span data-ttu-id="8a9d6-140">製品の 1 つは、単価 10.00 で販売されました。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-140">One of the products was sold for a unit price of 10.00.</span></span> <span data-ttu-id="8a9d6-141">仕入請求書は、数量 2 が単価 12.00 で転記されました。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-141">The purchase invoice was posted at a unit price of 12.00 with a quantity of 2.</span></span> <span data-ttu-id="8a9d6-142">製品の単価は 14.00 で転記することはできません。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-142">The unit price of the product cannot be posted at 14.00.</span></span>
 
-## <a name="moving-average-product-and-inventory-adjustment"></a>移動平均の製品および在庫調整
-製品の移動平均原価を調整する必要がある場合、在庫調整は今日の日付に許可されます。 在庫調整の日付をさかのぼって、製品の移動平均原価を訂正することができません。 後続のトランザクションによる原価フローを設定することはできません。 
+## <a name="moving-average-product-and-inventory-adjustment"></a><span data-ttu-id="8a9d6-143">移動平均の製品および在庫調整</span><span class="sxs-lookup"><span data-stu-id="8a9d6-143">Moving average product and inventory adjustment</span></span>
+<span data-ttu-id="8a9d6-144">製品の移動平均原価を調整する必要がある場合、在庫調整は今日の日付に許可されます。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-144">If you need to adjust the moving average cost of a product, inventory adjustments are allowed as of today’s date.</span></span> <span data-ttu-id="8a9d6-145">在庫調整の日付をさかのぼって、製品の移動平均原価を訂正することができません。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-145">You cannot backdate an inventory adjustment to correct the moving average cost of a product.</span></span> <span data-ttu-id="8a9d6-146">後続のトランザクションによる原価フローを設定することはできません。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-146">You cannot have the cost flow through subsequent transactions.</span></span> 
 
-この例では、移動平均原価は製品に合わせて調整されます。
+<span data-ttu-id="8a9d6-147">この例では、移動平均原価は製品に合わせて調整されます。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-147">In this example, the moving average cost is adjusted for a product.</span></span>
 
-1.  移動平均原価の調整の対象となる製品を選択します。 **注記 :** **移動平均の再評価** ページでは、製品に使用可能な在庫を確認できます。 選択した製品は、転記数量が 1、転記価格が 12.00、転記された単位原価が 12.00、そして単位原価が 12.00 です。
-2.  ここで、**単位原価**フィールドを 16.00 に更新します。 システムは残りのフィールドを計算します。
-3.  調整が転記されます。
+1.  <span data-ttu-id="8a9d6-148">移動平均原価の調整の対象となる製品を選択します。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-148">Select the product that you want to adjust the moving average cost for.</span></span> <span data-ttu-id="8a9d6-149">**注記 :** **移動平均の再評価** ページでは、製品に使用可能な在庫を確認できます。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-149">**Note:** The **Revaluation for moving average** page examines the inventory available for a product.</span></span> <span data-ttu-id="8a9d6-150">選択した製品は、転記数量が 1、転記価格が 12.00、転記された単位原価が 12.00、そして単位原価が 12.00 です。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-150">The product selected has a posted quantity of 1, a posted a value of 12.00, a posted unit cost of 12.00, and a unit cost of 12.00.</span></span>
+2.  <span data-ttu-id="8a9d6-151">ここで、**単位原価**フィールドを 16.00 に更新します。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-151">Update the **Unit cost** field to 16.00.</span></span> <span data-ttu-id="8a9d6-152">システムは残りのフィールドを計算します。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-152">The system calculates the remaining fields.</span></span>
+3.  <span data-ttu-id="8a9d6-153">調整が転記されます。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-153">The adjustment is posted.</span></span>
 
-**注記 :** 移動平均コストは、今日の日付でのみ調整できます。
+<span data-ttu-id="8a9d6-154">**注記 :** 移動平均コストは、今日の日付でのみ調整できます。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-154">**Note:** You can only adjust the moving average cost as of today’s date.</span></span>
 
-**伝票の決済**ページで、[移動平均の原価の再評価] の勘定に転記された 4.00 の調整を確認できます。
+<span data-ttu-id="8a9d6-155">**伝票の決済**ページで、[移動平均の原価の再評価] の勘定に転記された 4.00 の調整を確認できます。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-155">In the **Settlements for voucher** page, you can see an adjustment of 4.00 posted to the Cost revaluation for moving average account.</span></span>
 
-## <a name="moving-average-with-production"></a>生産での移動平均
-移動平均で、生産された品目がサポートされます。 実稼働環境で移動平均を使用する予定の場合は、**生産管理パラメーター** ページの**見積原価価格の使用**のスライダーを選択する必要があります。 すなわち、見積時に計算された原価価格が、実際の BOM 計算原価価格の代わりに使用されるということです。
+## <a name="moving-average-with-production"></a><span data-ttu-id="8a9d6-156">生産での移動平均</span><span class="sxs-lookup"><span data-stu-id="8a9d6-156">Moving average with production</span></span>
+<span data-ttu-id="8a9d6-157">移動平均で、生産された品目がサポートされます。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-157">Moving average supports produced items.</span></span> <span data-ttu-id="8a9d6-158">実稼働環境で移動平均を使用する予定の場合は、**生産管理パラメーター** ページの**見積原価価格の使用**のスライダーを選択する必要があります。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-158">If you plan to use moving average in a production environment, the **Use estimated cost price** slider in the **Production control parameters** page should be selcted.</span></span> <span data-ttu-id="8a9d6-159">すなわち、見積時に計算された原価価格が、実際の BOM 計算原価価格の代わりに使用されるということです。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-159">This means that the cost price that is calculated during estimation is used instead of the actual BOM calculation cost price.</span></span>
 
-## <a name="moving-average-with-a-backdated-transaction"></a>前の日付のトランザクションでの移動平均
-さかのぼった日付のトランザクションが現在の移動平均原価に割り当てられ、製品の現物の数量が更新されますが、製品の移動平均原価には影響しません。 この移動平均の例では、移動平均の製品に対してさかのぼったトランザクションが転記されます。
+## <a name="moving-average-with-a-backdated-transaction"></a><span data-ttu-id="8a9d6-160">前の日付のトランザクションでの移動平均</span><span class="sxs-lookup"><span data-stu-id="8a9d6-160">Moving average with a backdated transaction</span></span>
+<span data-ttu-id="8a9d6-161">さかのぼった日付のトランザクションが現在の移動平均原価に割り当てられ、製品の現物の数量が更新されますが、製品の移動平均原価には影響しません。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-161">Backdated transactions are assigned the current moving average cost, and the product’s physical quantity is updated, but the product’s moving average cost is not affected.</span></span> <span data-ttu-id="8a9d6-162">この移動平均の例では、移動平均の製品に対してさかのぼったトランザクションが転記されます。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-162">In this moving average example, a backdated transaction for a moving average product is posted.</span></span>
 
-1.  数量 1、原価 20.00 の移動平均製品の在庫調整を作成します。
-2.  製品の在庫トランザクション履歴は、次のようになります。
-    -   在庫トランザクションは 1、原価は 16.00、転記日付は 1 月 15 日、トランザクションの日付は 1 月 15 日。
-    -   在庫調整は 1、原価は 20.00、転記日付は 1 月 1 日、トランザクションの日付は 1 月 15 日。
-3.  調整を転記します。
+1.  <span data-ttu-id="8a9d6-163">数量 1、原価 20.00 の移動平均製品の在庫調整を作成します。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-163">Create an inventory adjustment for the moving average product for a quantity of 1 and a cost of 20.00.</span></span>
+2.  <span data-ttu-id="8a9d6-164">製品の在庫トランザクション履歴は、次のようになります。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-164">The inventory transaction history for the product would resemble the following:</span></span>
+    -   <span data-ttu-id="8a9d6-165">在庫トランザクションは 1、原価は 16.00、転記日付は 1 月 15 日、トランザクションの日付は 1 月 15 日。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-165">An inventory transaction of 1, a cost of 16.00, a posting date of January 15, and a transaction date of January 15.</span></span>
+    -   <span data-ttu-id="8a9d6-166">在庫調整は 1、原価は 20.00、転記日付は 1 月 1 日、トランザクションの日付は 1 月 15 日。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-166">An inventory adjustment of 1, a cost of 20.00, a posting date of January 1, and a transaction date of January 15.</span></span>
+3.  <span data-ttu-id="8a9d6-167">調整を転記します。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-167">Post the adjustment.</span></span>
 
-**在庫トランザクション** ページで、製品の現在の移動平均が 16.00 のままで、4.00 が経費として処理されたことを確認できます。 過去の日付で転記することが可能ですが、原価の差額は経費として処理され、移動平均原価には影響しません。
+<span data-ttu-id="8a9d6-168">**在庫トランザクション** ページで、製品の現在の移動平均が 16.00 のままで、4.00 が経費として処理されたことを確認できます。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-168">In the **Inventory transactions** page, you can see that 4.00 is expensed as the current moving average for the product is 16.00.</span></span> <span data-ttu-id="8a9d6-169">過去の日付で転記することが可能ですが、原価の差額は経費として処理され、移動平均原価には影響しません。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-169">You can post in the past, but the difference in cost is expensed, so the moving average cost is not affected.</span></span>
 
-## <a name="inventory-value-report"></a>在庫金額レポート
-この移動平均の例では、製品の現在の移動平均の計算をサポートするために、在庫金額のレポートが印刷されます。 [在庫金額] レポートは、トランザクションを古い順に印刷して、原価とともに、製品の移動平均原価計算をサポートできます。 レポートは、製品の移動平均原価を表示します。 **在庫金額のレポート**ダイアログ ボックスで [日付範囲] を使用すると、**トランザクションの時刻**や**転記日付**でレポートを並び替えることができます。 **転記日付** オプションは、従来から使用されているレポートの印刷方法です。 **トランザクションが時刻**オプションは、トランザクションが報告され、製品の移動平均原価が更新される実際の日付です。 移動平均原価計算を経時的に表示する場合は、**トランザクション時刻で並べ替え** オプションを使用して、[在庫金額レポート] を印刷します。 次の表は、**トランザクション時刻で並べ替え**オプションを使用してレポートを印刷した製品のトランザクションを表示しています。
+## <a name="inventory-value-report"></a><span data-ttu-id="8a9d6-170">在庫金額レポート</span><span class="sxs-lookup"><span data-stu-id="8a9d6-170">Inventory value report</span></span>
+<span data-ttu-id="8a9d6-171">この移動平均の例では、製品の現在の移動平均の計算をサポートするために、在庫金額のレポートが印刷されます。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-171">In this moving average example, the inventory value report is printed to support the current moving average calculation for a product.</span></span> <span data-ttu-id="8a9d6-172">[在庫金額] レポートは、トランザクションを古い順に印刷して、原価とともに、製品の移動平均原価計算をサポートできます。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-172">The Inventory value report can print the transactions in chronological order, together with the cost to support the moving average cost calculation of a product.</span></span> <span data-ttu-id="8a9d6-173">レポートは、製品の移動平均原価を表示します。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-173">The report displays the moving average cost for the product.</span></span> <span data-ttu-id="8a9d6-174">**在庫金額のレポート**ダイアログ ボックスで [日付範囲] を使用すると、**トランザクションの時刻**や**転記日付**でレポートを並び替えることができます。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-174">In the **Inventory value reports** dialog box, a Date interval allows you to select the **Transaction time** or the **Posting date** to sort the report by.</span></span> <span data-ttu-id="8a9d6-175">**転記日付** オプションは、従来から使用されているレポートの印刷方法です。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-175">The **Posting date** option is how the report is traditionally printed.</span></span> <span data-ttu-id="8a9d6-176">**トランザクションが時刻**オプションは、トランザクションが報告され、製品の移動平均原価が更新される実際の日付です。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-176">The **Transaction time** option is the actual date that the transaction is reported and the moving average cost for the product is updated.</span></span> <span data-ttu-id="8a9d6-177">移動平均原価計算を経時的に表示する場合は、**トランザクション時刻で並べ替え** オプションを使用して、[在庫金額レポート] を印刷します。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-177">You can print the Inventory value report by using the **Transaction time sorting** option if you want to see the moving average cost calculation over time.</span></span> <span data-ttu-id="8a9d6-178">次の表は、**トランザクション時刻で並べ替え**オプションを使用してレポートを印刷した製品のトランザクションを表示しています。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-178">The following table displays the transactions for the product that the report is printed for when the **Transaction time sorting** option is used.</span></span>
 
-| トランザクションの時刻 | 日         | トランザクション タイプ           | 梱包明細から | 金額 | 平均単位原価 |
+| <span data-ttu-id="8a9d6-179">トランザクションの時刻</span><span class="sxs-lookup"><span data-stu-id="8a9d6-179">Transaction time</span></span> | <span data-ttu-id="8a9d6-180">日</span><span class="sxs-lookup"><span data-stu-id="8a9d6-180">Date</span></span>         | <span data-ttu-id="8a9d6-181">トランザクション タイプ</span><span class="sxs-lookup"><span data-stu-id="8a9d6-181">Transaction type</span></span>           | <span data-ttu-id="8a9d6-182">梱包明細から</span><span class="sxs-lookup"><span data-stu-id="8a9d6-182">Quantity</span></span> | <span data-ttu-id="8a9d6-183">金額</span><span class="sxs-lookup"><span data-stu-id="8a9d6-183">Amount</span></span> | <span data-ttu-id="8a9d6-184">平均単位原価</span><span class="sxs-lookup"><span data-stu-id="8a9d6-184">Average unit cost</span></span> |
 |------------------|--------------|----------------------------|----------|--------|-------------------|
-|                  | 10 月 1 日    | 期首残高          | 0        | 0.00   | 0.00              |
-| 10 月 8 日        | 9 月 28 日 | さかのぼった日付の入庫          | 1        | 16.00  | 16.00             |
-| 10 月 3 日        | 10 月 3 日    | 購買入庫           | 2        | 20.00  | 12.00             |
-| 10 月 5 日        | 10 月 5 日    | 販売注文                | -1       | -10.00 | 13.00             |
-| 10 月 7 日        | 10 月 7 日    | 仕入請求書           |          | 2.00   | 14.00             |
-| 10 月 8 日        | 10 月 8 日    | 移動平均の再評価 |          | 4.00   | 16.00             |
-|                  | 10 月 31 日   | 小計                      | 2        | 32.00  | 16.00             |
+|                  | <span data-ttu-id="8a9d6-185">10 月 1 日</span><span class="sxs-lookup"><span data-stu-id="8a9d6-185">October 1</span></span>    | <span data-ttu-id="8a9d6-186">期首残高</span><span class="sxs-lookup"><span data-stu-id="8a9d6-186">Beginning balance</span></span>          | <span data-ttu-id="8a9d6-187">0</span><span class="sxs-lookup"><span data-stu-id="8a9d6-187">0</span></span>        | <span data-ttu-id="8a9d6-188">0.00</span><span class="sxs-lookup"><span data-stu-id="8a9d6-188">0.00</span></span>   | <span data-ttu-id="8a9d6-189">0.00</span><span class="sxs-lookup"><span data-stu-id="8a9d6-189">0.00</span></span>              |
+| <span data-ttu-id="8a9d6-190">10 月 8 日</span><span class="sxs-lookup"><span data-stu-id="8a9d6-190">October 8</span></span>        | <span data-ttu-id="8a9d6-191">9 月 28 日</span><span class="sxs-lookup"><span data-stu-id="8a9d6-191">September 28</span></span> | <span data-ttu-id="8a9d6-192">さかのぼった日付の入庫</span><span class="sxs-lookup"><span data-stu-id="8a9d6-192">Backdated receipt</span></span>          | <span data-ttu-id="8a9d6-193">1</span><span class="sxs-lookup"><span data-stu-id="8a9d6-193">1</span></span>        | <span data-ttu-id="8a9d6-194">16.00</span><span class="sxs-lookup"><span data-stu-id="8a9d6-194">16.00</span></span>  | <span data-ttu-id="8a9d6-195">16.00</span><span class="sxs-lookup"><span data-stu-id="8a9d6-195">16.00</span></span>             |
+| <span data-ttu-id="8a9d6-196">10 月 3 日</span><span class="sxs-lookup"><span data-stu-id="8a9d6-196">October 3</span></span>        | <span data-ttu-id="8a9d6-197">10 月 3 日</span><span class="sxs-lookup"><span data-stu-id="8a9d6-197">October 3</span></span>    | <span data-ttu-id="8a9d6-198">購買入庫</span><span class="sxs-lookup"><span data-stu-id="8a9d6-198">Purchase receipt</span></span>           | <span data-ttu-id="8a9d6-199">2</span><span class="sxs-lookup"><span data-stu-id="8a9d6-199">2</span></span>        | <span data-ttu-id="8a9d6-200">20.00</span><span class="sxs-lookup"><span data-stu-id="8a9d6-200">20.00</span></span>  | <span data-ttu-id="8a9d6-201">12.00</span><span class="sxs-lookup"><span data-stu-id="8a9d6-201">12.00</span></span>             |
+| <span data-ttu-id="8a9d6-202">10 月 5 日</span><span class="sxs-lookup"><span data-stu-id="8a9d6-202">October 5</span></span>        | <span data-ttu-id="8a9d6-203">10 月 5 日</span><span class="sxs-lookup"><span data-stu-id="8a9d6-203">October 5</span></span>    | <span data-ttu-id="8a9d6-204">販売注文</span><span class="sxs-lookup"><span data-stu-id="8a9d6-204">Sales order</span></span>                | <span data-ttu-id="8a9d6-205">-1</span><span class="sxs-lookup"><span data-stu-id="8a9d6-205">-1</span></span>       | <span data-ttu-id="8a9d6-206">-10.00</span><span class="sxs-lookup"><span data-stu-id="8a9d6-206">-10.00</span></span> | <span data-ttu-id="8a9d6-207">13.00</span><span class="sxs-lookup"><span data-stu-id="8a9d6-207">13.00</span></span>             |
+| <span data-ttu-id="8a9d6-208">10 月 7 日</span><span class="sxs-lookup"><span data-stu-id="8a9d6-208">October 7</span></span>        | <span data-ttu-id="8a9d6-209">10 月 7 日</span><span class="sxs-lookup"><span data-stu-id="8a9d6-209">October 7</span></span>    | <span data-ttu-id="8a9d6-210">仕入請求書</span><span class="sxs-lookup"><span data-stu-id="8a9d6-210">Purchase invoice</span></span>           |          | <span data-ttu-id="8a9d6-211">2.00</span><span class="sxs-lookup"><span data-stu-id="8a9d6-211">2.00</span></span>   | <span data-ttu-id="8a9d6-212">14.00</span><span class="sxs-lookup"><span data-stu-id="8a9d6-212">14.00</span></span>             |
+| <span data-ttu-id="8a9d6-213">10 月 8 日</span><span class="sxs-lookup"><span data-stu-id="8a9d6-213">October 8</span></span>        | <span data-ttu-id="8a9d6-214">10 月 8 日</span><span class="sxs-lookup"><span data-stu-id="8a9d6-214">October 8</span></span>    | <span data-ttu-id="8a9d6-215">移動平均の再評価</span><span class="sxs-lookup"><span data-stu-id="8a9d6-215">Moving average revaluation</span></span> |          | <span data-ttu-id="8a9d6-216">4.00</span><span class="sxs-lookup"><span data-stu-id="8a9d6-216">4.00</span></span>   | <span data-ttu-id="8a9d6-217">16.00</span><span class="sxs-lookup"><span data-stu-id="8a9d6-217">16.00</span></span>             |
+|                  | <span data-ttu-id="8a9d6-218">10 月 31 日</span><span class="sxs-lookup"><span data-stu-id="8a9d6-218">October 31</span></span>   | <span data-ttu-id="8a9d6-219">小計</span><span class="sxs-lookup"><span data-stu-id="8a9d6-219">Total</span></span>                      | <span data-ttu-id="8a9d6-220">2</span><span class="sxs-lookup"><span data-stu-id="8a9d6-220">2</span></span>        | <span data-ttu-id="8a9d6-221">32.00</span><span class="sxs-lookup"><span data-stu-id="8a9d6-221">32.00</span></span>  | <span data-ttu-id="8a9d6-222">16.00</span><span class="sxs-lookup"><span data-stu-id="8a9d6-222">16.00</span></span>             |
 
- **注記 :** **トランザクション時刻で並べ替え** オプションを使用して一般会計を在庫と一致させることはできません。 レポートは、**転記日付**オプションを使用して印刷する必要があります。
+ <span data-ttu-id="8a9d6-223">**注記 :** **トランザクション時刻で並べ替え** オプションを使用して一般会計を在庫と一致させることはできません。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-223">**Note:** You cannot reconcile the general ledger with inventory by using the **Transaction time sorting** option.</span></span> <span data-ttu-id="8a9d6-224">レポートは、**転記日付**オプションを使用して印刷する必要があります。</span><span class="sxs-lookup"><span data-stu-id="8a9d6-224">The report must be printed by using the **Posting date** option.</span></span>
 
 
 

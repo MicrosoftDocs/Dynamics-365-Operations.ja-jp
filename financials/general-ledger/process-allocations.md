@@ -19,33 +19,33 @@ ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
-ms.openlocfilehash: e6d88503972850f6163aba6b45547a111f44abab
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: 8859359f70132e9116e6a2d534a0f5f1d0bfeb80
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 06/29/2017
 
 
 ---
 
-# <a name="process-allocations"></a>配賦の処理
+# <a name="process-allocations"></a><span data-ttu-id="3de44-105">配賦の処理</span><span class="sxs-lookup"><span data-stu-id="3de44-105">Process allocations</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-この記事では、配賦を Microsoft Dynamics 365 for Finance and Operations、Enterprise エディションで処理するオプション、および予算の計画で使用する方法に関する情報を提供します。 配賦は、複数の勘定科目の組み合わせ全体で金額を配分するのに使用されます。 経費、または収益が正しい会計のオブジェクトに付けられることを保証します。
+<span data-ttu-id="3de44-106">この記事では、配賦を Microsoft Dynamics 365 for Finance and Operations、Enterprise エディションで処理するオプション、および予算の計画で使用する方法に関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="3de44-106">This article provides information about allocations, the options for processing them in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, and how they can be used in budget planning.</span></span> <span data-ttu-id="3de44-107">配賦は、複数の勘定科目の組み合わせ全体で金額を配分するのに使用されます。</span><span class="sxs-lookup"><span data-stu-id="3de44-107">Allocations are used to distribute amounts across multiple ledger account combinations.</span></span> <span data-ttu-id="3de44-108">経費、または収益が正しい会計のオブジェクトに付けられることを保証します。</span><span class="sxs-lookup"><span data-stu-id="3de44-108">They help guarantee that expenses or revenue is charged to the correct object in accounting.</span></span>
 
-Microsoft Dynamics 365 for Finance and Operations では、このプロセスをサポートするために、次の機能を提供します:
+<span data-ttu-id="3de44-109">Microsoft Dynamics 365 for Finance and Operations では、このプロセスをサポートするために、次の機能を提供します:</span><span class="sxs-lookup"><span data-stu-id="3de44-109">Microsoft Dynamics 365 for Finance and Operations provides the following capabilities to support this process:</span></span>
 
--   勘定配布で分割アクションを使用する、またはドキュメントに財務分析コードの既定のテンプレートを適用することにより、トランザクション金額を手動で割り当てます。 詳細については、「[勘定配布](../accounts-payable/accounting-distributions.md)」を参照してください。
--   個別の主勘定で定義された配賦条件に基づいてトランザクション金額を自動的に割り当てます。 配賦勘定項目は、勘定項目がソースの勘定科目に定義した条件を満たす場合に、割合と相手方の勘定科目に基づいて仕訳帳ごとに生成されます。
--   元帳配賦ルールに基づいて元帳残高または固定金額を自動的に割り当てます。 元帳配賦ルールは、配賦仕訳帳を使用して定期的に処理されます。 
+-   <span data-ttu-id="3de44-110">勘定配布で分割アクションを使用する、またはドキュメントに財務分析コードの既定のテンプレートを適用することにより、トランザクション金額を手動で割り当てます。</span><span class="sxs-lookup"><span data-stu-id="3de44-110">Manually allocate transaction amounts by using the Split action in accounting distributions, or by applying financial dimension default templates to a document.</span></span> <span data-ttu-id="3de44-111">詳細については、「[勘定配布](../accounts-payable/accounting-distributions.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="3de44-111">For more information, see [Accounting distributions.](../accounts-payable/accounting-distributions.md)</span></span>
+-   <span data-ttu-id="3de44-112">個別の主勘定で定義された配賦条件に基づいてトランザクション金額を自動的に割り当てます。</span><span class="sxs-lookup"><span data-stu-id="3de44-112">Automatically allocate transactions amounts based on allocation terms defined on individual main account.</span></span> <span data-ttu-id="3de44-113">配賦勘定項目は、勘定項目がソースの勘定科目に定義した条件を満たす場合に、割合と相手方の勘定科目に基づいて仕訳帳ごとに生成されます。</span><span class="sxs-lookup"><span data-stu-id="3de44-113">Allocation account entries will be generated for each journal based on the percentage and destination ledger account whenever an accounting entry meets the criteria defined as the source ledger account.</span></span>
+-   <span data-ttu-id="3de44-114">元帳配賦ルールに基づいて元帳残高または固定金額を自動的に割り当てます。</span><span class="sxs-lookup"><span data-stu-id="3de44-114">Automatically allocate ledger balances or fixed amounts based on ledger allocation rules.</span></span> <span data-ttu-id="3de44-115">元帳配賦ルールは、配賦仕訳帳を使用して定期的に処理されます。</span><span class="sxs-lookup"><span data-stu-id="3de44-115">The ledger allocation rules are processed on a periodic basis using allocation journals.</span></span> 
 
-###  <a name="allocations-in-budget-planning"></a>予算計画での配賦
+###  <a name="allocations-in-budget-planning"></a><span data-ttu-id="3de44-116">予算計画での配賦</span><span class="sxs-lookup"><span data-stu-id="3de44-116">Allocations in budget planning</span></span>
 
-元帳配賦ルールは、予算計画に使用できます。 予算計画で元帳配賦ルールを使用するとき、配賦ルールは元帳と同じ動作をしますが、データ ソースと相手方のデータは予算計画から取得されます。 手動で予算計画に使用する元帳配賦ルールを選択できます。 また、ワークフロー プロセスの一部として実行される配賦スケジュールを使用できます。
+<span data-ttu-id="3de44-117">元帳配賦ルールは、予算計画に使用できます。</span><span class="sxs-lookup"><span data-stu-id="3de44-117">Ledger allocation rules can be used for budget plans.</span></span> <span data-ttu-id="3de44-118">予算計画で元帳配賦ルールを使用するとき、配賦ルールは元帳と同じ動作をしますが、データ ソースと相手方のデータは予算計画から取得されます。</span><span class="sxs-lookup"><span data-stu-id="3de44-118">When you use ledger allocation rules in budget planning, the allocation rules work the same way they would in the ledger, but the source data and destination data comes from the budget plan.</span></span> <span data-ttu-id="3de44-119">手動で予算計画に使用する元帳配賦ルールを選択できます。</span><span class="sxs-lookup"><span data-stu-id="3de44-119">You can manually select ledger allocation rules to use for budget plans.</span></span> <span data-ttu-id="3de44-120">また、ワークフロー プロセスの一部として実行される配賦スケジュールを使用できます。</span><span class="sxs-lookup"><span data-stu-id="3de44-120">Alternatively, you can use an allocation schedule that runs as part of a workflow process.</span></span>
 
 > [!NOTE]
-> 会社間元帳配賦ルールは予算計画には使用できません。
+> <span data-ttu-id="3de44-121">会社間元帳配賦ルールは予算計画には使用できません。</span><span class="sxs-lookup"><span data-stu-id="3de44-121">You can’t use intercompany ledger allocation rules for budget planning.</span></span>
 
 
 

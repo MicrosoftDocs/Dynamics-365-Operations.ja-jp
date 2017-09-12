@@ -16,43 +16,43 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 05b61a6914e4481bea92af49e2c1bd5535cb8ca5
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: a8ab85975f2894f2caa055150a3fae0f0b854b9b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="inquire-on-asset-retirement-obligation-related-transactions-japan"></a>資産除去責務関連トランザクションの照会 (日本)
+# <a name="inquire-on-asset-retirement-obligation-related-transactions-japan"></a><span data-ttu-id="3852a-103">資産除去責務関連トランザクションの照会 (日本)</span><span class="sxs-lookup"><span data-stu-id="3852a-103">Inquire on asset retirement obligation-related transactions (Japan)</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-日本では、資産除去責務 (ARO) のトランザクションと金額は、基になる固定資産とは別にレポートする必要があります。 
+<span data-ttu-id="3852a-104">日本では、資産除去責務 (ARO) のトランザクションと金額は、基になる固定資産とは別にレポートする必要があります。</span><span class="sxs-lookup"><span data-stu-id="3852a-104">For Japan, transactions and amounts of asset retirement obligations (ARO) need to be reported separately from the underlying fixed assets.</span></span> 
 
 
 
-このタスクでは、ARO 固有の金額とトランザクションの表示方法について説明します。 
+<span data-ttu-id="3852a-105">このタスクでは、ARO 固有の金額とトランザクションの表示方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="3852a-105">Use this task to learn how to view the ARO-specific amounts and transactions.</span></span> 
 
 
 
-このタスクを完了するためには、[固定資産コンフィギュレーション キー] を選択する必要があります。
+<span data-ttu-id="3852a-106">このタスクを完了するためには、[固定資産コンフィギュレーション キー] を選択する必要があります。</span><span class="sxs-lookup"><span data-stu-id="3852a-106">In order to complete this task, the Fixed Assets configuration key must be selected.</span></span>
 
 
 
-この手順では、JPMF デモ会社のデータを使用します。
+<span data-ttu-id="3852a-107">この手順では、JPMF デモ会社のデータを使用します。</span><span class="sxs-lookup"><span data-stu-id="3852a-107">This task uses the JPMF demo company data.</span></span>
 
 
-## <a name="view-aro-transaction"></a>[ARO トランザクション] の表示
-1. [固定資産] > [資産除去責務] > [資産除去責務トランザクションの照会] の順に移動します。
-    * ARO 関連のトランザクションは、集計のためタイプに分類されます。  
+## <a name="view-aro-transaction"></a><span data-ttu-id="3852a-108">[ARO トランザクション] の表示</span><span class="sxs-lookup"><span data-stu-id="3852a-108">View ARO transaction</span></span>
+1. <span data-ttu-id="3852a-109">[固定資産] > [資産除去責務] > [資産除去責務トランザクションの照会] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="3852a-109">Go to Fixed assets > Asset retirement obligations > Asset retirement obligation transaction inquiry.</span></span>
+    * <span data-ttu-id="3852a-110">ARO 関連のトランザクションは、集計のためタイプに分類されます。</span><span class="sxs-lookup"><span data-stu-id="3852a-110">ARO-related transactions are categorized into types for summarization.</span></span>  
 
-## <a name="explore-aro"></a>ARO の明細表示
-1. クリックして [固定資産番号] フィールドのリンク先を表示します。
-    * [固定資産] ページから固定資産番号を検索して開くことができます。  
-2. [アクション] ウィンドウで、[固定資産] をクリックします。
-3. [資産除去責務] をクリックします。
-4. [明細] をクリックします。
-    * これらのタブは、[予定金額]、[転記 (実際の) 金額] および差額をそれぞれ表示します。  
-5. [転記金額] セクションを展開または折りたたみます。
-6. [差異] セクションを展開または折りたたみます。
+## <a name="explore-aro"></a><span data-ttu-id="3852a-111">ARO の明細表示</span><span class="sxs-lookup"><span data-stu-id="3852a-111">Explore ARO</span></span>
+1. <span data-ttu-id="3852a-112">クリックして [固定資産番号] フィールドのリンク先を表示します。</span><span class="sxs-lookup"><span data-stu-id="3852a-112">Click to follow the link in the Fixed asset number field.</span></span>
+    * <span data-ttu-id="3852a-113">[固定資産] ページから固定資産番号を検索して開くことができます。</span><span class="sxs-lookup"><span data-stu-id="3852a-113">You also can find the fixed asset number and open it from the Fixed assets page.</span></span>  
+2. <span data-ttu-id="3852a-114">[アクション] ウィンドウで、[固定資産] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3852a-114">On the Action Pane, click Fixed asset.</span></span>
+3. <span data-ttu-id="3852a-115">[資産除去責務] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3852a-115">Click Asset retirement obligation.</span></span>
+4. <span data-ttu-id="3852a-116">[明細] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3852a-116">Click Explore.</span></span>
+    * <span data-ttu-id="3852a-117">これらのタブは、[予定金額]、[転記 (実際の) 金額] および差額をそれぞれ表示します。</span><span class="sxs-lookup"><span data-stu-id="3852a-117">The tabs display the Planned amount, Posted (actual) amount and Difference respectively.</span></span>  
+5. <span data-ttu-id="3852a-118">[転記金額] セクションを展開または折りたたみます。</span><span class="sxs-lookup"><span data-stu-id="3852a-118">Expand or collapse the Posted amount section.</span></span>
+6. <span data-ttu-id="3852a-119">[差異] セクションを展開または折りたたみます。</span><span class="sxs-lookup"><span data-stu-id="3852a-119">Expand or collapse the Difference section.</span></span>
 
 

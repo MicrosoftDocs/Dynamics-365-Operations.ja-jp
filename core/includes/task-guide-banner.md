@@ -1,2 +1,2 @@
 > [!NOTE]
-> このトピックは Lifecycle Services の業務プロセスから生成されるため、これに対する編集を受け入れることはできません。
+> <span data-ttu-id="218e4-101">このトピックは Lifecycle Services の業務プロセスから生成されるため、これに対する編集を受け入れることはできません。</span><span class="sxs-lookup"><span data-stu-id="218e4-101">We will not be accepting edits to this topic, because it is generated from a business process in Lifecycle Services.</span></span>

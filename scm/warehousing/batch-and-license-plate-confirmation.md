@@ -14,32 +14,32 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 269384
 ms.search.region: Global
 ms.author: mirzaab
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
-ms.openlocfilehash: 70a8c18560f0cfc7a44625520f2f035a6004618a
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: bf9447f81d6c1ff543ceb5a058428ed1c0090da0
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="batch-and-license-plate-confirmation"></a>バッチおよびライセンス プレートの確認
+# <a name="batch-and-license-plate-confirmation"></a><span data-ttu-id="c8d52-103">バッチおよびライセンス プレートの確認</span><span class="sxs-lookup"><span data-stu-id="c8d52-103">Batch and license plate confirmation</span></span>
 
 [!include[banner](../includes/banner.md)]
 
-バッチの確認では、適切なバッチがピッキングされていることをモバイル デバイスから確認することができます。 上の品目のみのバッチ作業の最初のピッキング時、*上のバッチ*の表示は、検索階層内のバッチ範囲の場所を超えることを示し、ピッキングされているバッチが作業明細行のバッチと一致していることを確認する必要があります。 
+<span data-ttu-id="c8d52-104">バッチの確認では、適切なバッチがピッキングされていることをモバイル デバイスから確認することができます。</span><span class="sxs-lookup"><span data-stu-id="c8d52-104">Batch confirmation allows you to confirm that the correct batch is being picked from the mobile device.</span></span> <span data-ttu-id="c8d52-105">上の品目のみのバッチ作業の最初のピッキング時、*上のバッチ*の表示は、検索階層内のバッチ範囲の場所を超えることを示し、ピッキングされているバッチが作業明細行のバッチと一致していることを確認する必要があります。</span><span class="sxs-lookup"><span data-stu-id="c8d52-105">On the initial pick of work for batch above-items only, where *batch above* indicates that batch ranges higher than location in the search hierarchy, you must verify that the batch that is picked matches the batch on the work line.</span></span> 
 
-ライセンス プレートの確認では、適切なライセンス プレートがピッキングされていることをモバイル デバイスから確認することができます。 ステージの場所からのピッキング作業時に、ピッキングされるライセンス プレートが作業に関連付けられているライセンス プレートと一致していることを確認する必要があります。 ライセンス プレートをスキャンして作業を起動する場合、この確認手順はスキップされます。
+<span data-ttu-id="c8d52-106">ライセンス プレートの確認では、適切なライセンス プレートがピッキングされていることをモバイル デバイスから確認することができます。</span><span class="sxs-lookup"><span data-stu-id="c8d52-106">License plate confirmation allows you to confirm that the correct license plate is being picked from the mobile device.</span></span> <span data-ttu-id="c8d52-107">ステージの場所からのピッキング作業時に、ピッキングされるライセンス プレートが作業に関連付けられているライセンス プレートと一致していることを確認する必要があります。</span><span class="sxs-lookup"><span data-stu-id="c8d52-107">When picking work from a stage location, you must verify that the license plate that is picked matches the license plate that is associated with the work.</span></span> <span data-ttu-id="c8d52-108">ライセンス プレートをスキャンして作業を起動する場合、この確認手順はスキップされます。</span><span class="sxs-lookup"><span data-stu-id="c8d52-108">If the work is started by scanning a license plate, this confirmation step will be skipped.</span></span>
 
-## <a name="where-it-applies"></a>該当する場合
-確認は、以下のシナリオで適用されます。
+## <a name="where-it-applies"></a><span data-ttu-id="c8d52-109">該当する場合</span><span class="sxs-lookup"><span data-stu-id="c8d52-109">Where it applies</span></span>
+<span data-ttu-id="c8d52-110">確認は、以下のシナリオで適用されます。</span><span class="sxs-lookup"><span data-stu-id="c8d52-110">Confirmation applies in the following scenarios:</span></span>
 
-- バッチ確認は、上の品目のバッチ作業の最初のピッキング時に適用されます。
-- ライセンス プレートの確認は、ステージの場所からのピッキングに適用されます。
+- <span data-ttu-id="c8d52-111">バッチ確認は、上の品目のバッチ作業の最初のピッキング時に適用されます。</span><span class="sxs-lookup"><span data-stu-id="c8d52-111">Batch confirmation applies to the initial picks of work for batch above-items.</span></span>
+- <span data-ttu-id="c8d52-112">ライセンス プレートの確認は、ステージの場所からのピッキングに適用されます。</span><span class="sxs-lookup"><span data-stu-id="c8d52-112">License plate confirmation applies to picks from stage locations.</span></span>
 
-## <a name="set-up-batch-and-license-plate-confirmation"></a>バッチおよびライセンス プレートの確認の設定
-モバイル デバイスのメニュー項目から、バッチとライセンス プレートの確認をコンフィギュレーションできます。  
-1.  モバイル デバイス メニュー項目から、[作業確認の設定] に進みます。  
-2.  バッチの確認またはライセンス プレートの確認のどちらかのオプションを選択します。 自動確認が有効でない作業タイプのピッキングでは、両方のオプションが有効です。  
+## <a name="set-up-batch-and-license-plate-confirmation"></a><span data-ttu-id="c8d52-113">バッチおよびライセンス プレートの確認の設定</span><span class="sxs-lookup"><span data-stu-id="c8d52-113">Set up batch and license plate confirmation</span></span>
+<span data-ttu-id="c8d52-114">モバイル デバイスのメニュー項目から、バッチとライセンス プレートの確認をコンフィギュレーションできます。</span><span class="sxs-lookup"><span data-stu-id="c8d52-114">You can configure batch and license plate confirmation from the mobile device menu items.</span></span>  
+1.  <span data-ttu-id="c8d52-115">モバイル デバイス メニュー項目から、[作業確認の設定] に進みます。</span><span class="sxs-lookup"><span data-stu-id="c8d52-115">From the mobile device menu items, enter the work confirmation setup.</span></span>  
+2.  <span data-ttu-id="c8d52-116">バッチの確認またはライセンス プレートの確認のどちらかのオプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="c8d52-116">Select the option for either batch or license plate confirmation.</span></span> <span data-ttu-id="c8d52-117">自動確認が有効でない作業タイプのピッキングでは、両方のオプションが有効です。</span><span class="sxs-lookup"><span data-stu-id="c8d52-117">Both options are available for work type picks that do not have automatic confirmation enabled.</span></span>  
 

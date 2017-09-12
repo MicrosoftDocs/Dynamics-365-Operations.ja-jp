@@ -16,53 +16,53 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 55f3f6830895018c4a49dd41fed4061a76677719
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: aacd7146dbdf260e11b6d70d5e6c0976132a4452
 ms.contentlocale: ja-jp
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="set-up-master-data-for-inclusion-of-deductible-expenses-for-multiple-posting-layers-japan"></a>複数の転記階層の損金算入額のマスター データの設定 (日本)
+# <a name="set-up-master-data-for-inclusion-of-deductible-expenses-for-multiple-posting-layers-japan"></a><span data-ttu-id="5e16b-103">複数の転記階層の損金算入額のマスター データの設定 (日本)</span><span class="sxs-lookup"><span data-stu-id="5e16b-103">Set up master data for inclusion of deductible expenses for multiple posting layers (Japan)</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-この手順では、固定資産ルールと、複数の転記階層の損金算入額に必要なマスター データの作成について説明します。 この手順を完了する前に、 [固定資産コンフィギュレーション キー] を選択する必要があります。 この手順は、デモ データ会社 JPMF を使用して作成されました。
+<span data-ttu-id="5e16b-104">この手順では、固定資産ルールと、複数の転記階層の損金算入額に必要なマスター データの作成について説明します。</span><span class="sxs-lookup"><span data-stu-id="5e16b-104">This procedure walks you through creating fixed asset rules with required master data for inclusion of deductible expenses for multiple posting layers.</span></span> <span data-ttu-id="5e16b-105">この手順を完了する前に、 [固定資産コンフィギュレーション キー] を選択する必要があります。</span><span class="sxs-lookup"><span data-stu-id="5e16b-105">Before you can complete this procedure, the Fixed Assets configuration key must be selected.</span></span> <span data-ttu-id="5e16b-106">この手順は、デモ データ会社 JPMF を使用して作成されました。</span><span class="sxs-lookup"><span data-stu-id="5e16b-106">This procedure was created using the demo data company JPMF.</span></span>
 
 
-## <a name="depreciation-settlement-rules"></a>減価償却決済ルール
-1. [固定資産] > [設定] > [減価償却決済ルール] の順に移動します。
-    * オプション: 決済ルール テーブルが空の場合、既定のルールをインポートするかどうかの確認を求められます。 [OK] をクリックして、既定のルールをインポートします。  
-2. [新規] をクリックします。
-3. [償却超過額] フィールドで、オプションを選択します。
-    * [償却超過額] = [普通償却] を選択します。  
-4. [償却不足額] フィールドで、オプションを選択します。
-    * [償却不足額] = [割増償却 (準備金)] を選択します。  
-5. [OK] をクリックします。
-6. [ルール タイプでフィルター] フィールドで、オプションを選択します。
-    * [ルール タイプでフィルター] = [償却超過額/償却不足額の繰越] を選択します。  
-7. [ルールの編集] をクリックします。
-8. [繰越期間 (年)] フィールドに番号を入力します。
-    * この例では、 5 を入力します。  
-9. [OK] をクリックします。
+## <a name="depreciation-settlement-rules"></a><span data-ttu-id="5e16b-107">減価償却決済ルール</span><span class="sxs-lookup"><span data-stu-id="5e16b-107">Depreciation settlement rules</span></span>
+1. <span data-ttu-id="5e16b-108">[固定資産] > [設定] > [減価償却決済ルール] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="5e16b-108">Go to Fixed assets > Setup > Depreciation settlement rules.</span></span>
+    * <span data-ttu-id="5e16b-109">オプション: 決済ルール テーブルが空の場合、既定のルールをインポートするかどうかの確認を求められます。</span><span class="sxs-lookup"><span data-stu-id="5e16b-109">Optional: If the settlement rule table is empty, you will be asked if you want to import the default set of rules.</span></span> <span data-ttu-id="5e16b-110">[OK] をクリックして、既定のルールをインポートします。</span><span class="sxs-lookup"><span data-stu-id="5e16b-110">Click OK to import the default set of rules.</span></span>  
+2. <span data-ttu-id="5e16b-111">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5e16b-111">Click New.</span></span>
+3. <span data-ttu-id="5e16b-112">[償却超過額] フィールドで、オプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="5e16b-112">In the Over depreciation field, select an option.</span></span>
+    * <span data-ttu-id="5e16b-113">[償却超過額] = [普通償却] を選択します。</span><span class="sxs-lookup"><span data-stu-id="5e16b-113">Select Over depreciation = Ordinary depreciation.</span></span>  
+4. <span data-ttu-id="5e16b-114">[償却不足額] フィールドで、オプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="5e16b-114">In the Under depreciation field, select an option.</span></span>
+    * <span data-ttu-id="5e16b-115">[償却不足額] = [割増償却 (準備金)] を選択します。</span><span class="sxs-lookup"><span data-stu-id="5e16b-115">Select Under depreciation = Additional depreciation (reserve).</span></span>  
+5. <span data-ttu-id="5e16b-116">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5e16b-116">Click OK.</span></span>
+6. <span data-ttu-id="5e16b-117">[ルール タイプでフィルター] フィールドで、オプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="5e16b-117">In the Filter by rule type field, select an option.</span></span>
+    * <span data-ttu-id="5e16b-118">[ルール タイプでフィルター] = [償却超過額/償却不足額の繰越] を選択します。</span><span class="sxs-lookup"><span data-stu-id="5e16b-118">Select Filter by rule type = Carry forward of over depreciation or under depreciation amount.</span></span>  
+7. <span data-ttu-id="5e16b-119">[ルールの編集] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5e16b-119">Click Edit rule.</span></span>
+8. <span data-ttu-id="5e16b-120">[繰越期間 (年)] フィールドに番号を入力します。</span><span class="sxs-lookup"><span data-stu-id="5e16b-120">In the Periods to carry forward(years) field, enter a number.</span></span>
+    * <span data-ttu-id="5e16b-121">この例では、 5 を入力します。</span><span class="sxs-lookup"><span data-stu-id="5e16b-121">For this example, enter 5.</span></span>  
+9. <span data-ttu-id="5e16b-122">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5e16b-122">Click OK.</span></span>
 
-## <a name="book"></a>予約
-1. [固定資産] > [設定] > [帳簿] の順に移動します。
-2. [新規] をクリックします。
-3. [帳簿] フィールドに値を入力します。
-    * この例では、Book = RBです。  
-4. [説明] フィールドに値を入力します。
-5. [一般] セクションを展開します。
-    * コアの固定資産の機能に従ってパラメーターをコンフィギュレーションします。  
-6. 取得済み帳簿のセクションを展開します。
-7. これを参照する税関連帳簿を選択します。
-    * 取得タイプで取得済みの帳簿を追加する場合、税関連帳簿を自動的に取得することによって作業が簡素化されます。  例: NSL_TAX  
-8. [保存] をクリックします。
-9. クイック フィルターを使用して、レコードを見つけます。 たとえば、「NSL_TAX」の値を含む [帳簿] フィールドでフィルターします。
-    * 現在の関連帳簿で精算が実行される税関連帳簿を検索します。  
-10. [一般] セクションを展開します。
-11. [参照先帳簿] フィールドで、値を入力します。
-    * 作成した帳簿を入力します。  
-12. [保存] をクリックします。
-13. ページを閉じます。
+## <a name="book"></a><span data-ttu-id="5e16b-123">予約</span><span class="sxs-lookup"><span data-stu-id="5e16b-123">Book</span></span>
+1. <span data-ttu-id="5e16b-124">[固定資産] > [設定] > [帳簿] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="5e16b-124">Go to Fixed assets > Setup > Books.</span></span>
+2. <span data-ttu-id="5e16b-125">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5e16b-125">Click New.</span></span>
+3. <span data-ttu-id="5e16b-126">[帳簿] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="5e16b-126">In the Book field, type a value.</span></span>
+    * <span data-ttu-id="5e16b-127">この例では、Book = RBです。</span><span class="sxs-lookup"><span data-stu-id="5e16b-127">For this example, Book = RB.</span></span>  
+4. <span data-ttu-id="5e16b-128">[説明] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="5e16b-128">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="5e16b-129">[一般] セクションを展開します。</span><span class="sxs-lookup"><span data-stu-id="5e16b-129">Expand the General section.</span></span>
+    * <span data-ttu-id="5e16b-130">コアの固定資産の機能に従ってパラメーターをコンフィギュレーションします。</span><span class="sxs-lookup"><span data-stu-id="5e16b-130">Configure the parameters according to the core fixed asset features.</span></span>  
+6. <span data-ttu-id="5e16b-131">取得済み帳簿のセクションを展開します。</span><span class="sxs-lookup"><span data-stu-id="5e16b-131">Expand the Derived books section.</span></span>
+7. <span data-ttu-id="5e16b-132">これを参照する税関連帳簿を選択します。</span><span class="sxs-lookup"><span data-stu-id="5e16b-132">Select the book on the tax layer that will be referencing this one.</span></span>
+    * <span data-ttu-id="5e16b-133">取得タイプで取得済みの帳簿を追加する場合、税関連帳簿を自動的に取得することによって作業が簡素化されます。</span><span class="sxs-lookup"><span data-stu-id="5e16b-133">If you add a derived book for the Acquisition type, it will simplify the operation by automatically acquiring the tax layer book.</span></span>  <span data-ttu-id="5e16b-134">例: NSL_TAX</span><span class="sxs-lookup"><span data-stu-id="5e16b-134">Example: NSL_TAX</span></span>  
+8. <span data-ttu-id="5e16b-135">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5e16b-135">Click Save.</span></span>
+9. <span data-ttu-id="5e16b-136">クイック フィルターを使用して、レコードを見つけます。</span><span class="sxs-lookup"><span data-stu-id="5e16b-136">Use the Quick Filter to find records.</span></span> <span data-ttu-id="5e16b-137">たとえば、「NSL_TAX」の値を含む [帳簿] フィールドでフィルターします。</span><span class="sxs-lookup"><span data-stu-id="5e16b-137">For example, filter on the Book field with a value of 'NSL_TAX'.</span></span>
+    * <span data-ttu-id="5e16b-138">現在の関連帳簿で精算が実行される税関連帳簿を検索します。</span><span class="sxs-lookup"><span data-stu-id="5e16b-138">Search for the Tax layer book that you want to run settlement with the Current layer book.</span></span>  
+10. <span data-ttu-id="5e16b-139">[一般] セクションを展開します。</span><span class="sxs-lookup"><span data-stu-id="5e16b-139">Expand the General section.</span></span>
+11. <span data-ttu-id="5e16b-140">[参照先帳簿] フィールドで、値を入力します。</span><span class="sxs-lookup"><span data-stu-id="5e16b-140">In the Referenced book field, type a value.</span></span>
+    * <span data-ttu-id="5e16b-141">作成した帳簿を入力します。</span><span class="sxs-lookup"><span data-stu-id="5e16b-141">Type the book that you have just created.</span></span>  
+12. <span data-ttu-id="5e16b-142">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5e16b-142">Click Save.</span></span>
+13. <span data-ttu-id="5e16b-143">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="5e16b-143">Close the page.</span></span>
 
 

@@ -27,17 +27,17 @@ ms.lasthandoff: 07/27/2017
 
 ---
 
-# <a name="prospect-to-cash"></a>見込顧客を現金化  
+# <a name="prospect-to-cash"></a><span data-ttu-id="77118-103">見込顧客を現金化</span><span class="sxs-lookup"><span data-stu-id="77118-103">Prospect to cash</span></span>  
 
 [!include[banner](../includes/banner.md)]
 
-見込顧客を現金化ソリューションにより、[データ インテグレーター](https://docs.microsoft.com/en-us/common-data-service/entity-reference/dynamics-365-integration)を使用し、一般的なデータ サービス経由で Dynamics 365 Finance and Operations または Dynamics 365 for Sales インスタンス間でデータを同期します。 データ インテグレータで利用可能な見込み顧客を現金化するテンプレートは、Dynamics 365 for Finance and Operations と Dynamics 365 for Sales 間での製品、勘定、連絡先および販売見積りデータの流れを可能にします。 データは Finance and Operations と Dynamics 365 for Sales との間を流れていますが、Dynamics 365 for Sales のセールスおよびマーケティング活動を行い、Finance and Operations の在庫管理で注文の履行を処理することができます。 
+<span data-ttu-id="77118-104">見込顧客を現金化ソリューションにより、[データ インテグレーター](https://docs.microsoft.com/en-us/common-data-service/entity-reference/dynamics-365-integration)を使用し、一般的なデータ サービス経由で Dynamics 365 Finance and Operations または Dynamics 365 for Sales インスタンス間でデータを同期します。</span><span class="sxs-lookup"><span data-stu-id="77118-104">The Prospect to cash solution uses [Data Integrator](https://docs.microsoft.com/en-us/common-data-service/entity-reference/dynamics-365-integration) to synchronize data across Dynamics 365 Finance and Operations or Dynamics 365 for Sales instances via the Common Data Service.</span></span> <span data-ttu-id="77118-105">データ インテグレータで利用可能な見込み顧客を現金化するテンプレートは、Dynamics 365 for Finance and Operations と Dynamics 365 for Sales 間での製品、勘定、連絡先および販売見積りデータの流れを可能にします。</span><span class="sxs-lookup"><span data-stu-id="77118-105">The Prospect to cash templates available with the Data Integrator enable the flow of product, account, contact, and sales quote data between Dynamics 365 for Finance and Operations and Dynamics 365 for Sales.</span></span> <span data-ttu-id="77118-106">データは Finance and Operations と Dynamics 365 for Sales との間を流れていますが、Dynamics 365 for Sales のセールスおよびマーケティング活動を行い、Finance and Operations の在庫管理で注文の履行を処理することができます。</span><span class="sxs-lookup"><span data-stu-id="77118-106">While the data is flowing between Finance and Operations and Dynamics 365 for Sales, you can carry out sales and marketing activities in Dynamics 365 for Sales and handle the order fulfillment with inventory management in Finance and Operations.</span></span> 
 
-このソリューションは、次の領域での統合を提供します。 
+<span data-ttu-id="77118-107">このソリューションは、次の領域での統合を提供します。</span><span class="sxs-lookup"><span data-stu-id="77118-107">This solution provides integration in the following areas:</span></span> 
 
--   Dynamics 365 for Sales でアカウントを管理し、Finance and Operations に同期させます。
--   Dynamics 365 for Sales で連絡先を管理し、Finance and Operations に同期させます。
--   Dynamics 365 for Sales で販売見積を作成し、Finance and Operations に同期させます。
--   Finance and Operations で製品を管理し、Dynamics 365 for Sales で同期させます。
+-   <span data-ttu-id="77118-108">Dynamics 365 for Sales でアカウントを管理し、Finance and Operations に同期させます。</span><span class="sxs-lookup"><span data-stu-id="77118-108">Maintain accounts in Dynamics 365 for Sales and sync them to Finance and Operations.</span></span>
+-   <span data-ttu-id="77118-109">Dynamics 365 for Sales で連絡先を管理し、Finance and Operations に同期させます。</span><span class="sxs-lookup"><span data-stu-id="77118-109">Maintain contacts in Dynamics 365 for Sales and sync them to Finance and Operations.</span></span>
+-   <span data-ttu-id="77118-110">Dynamics 365 for Sales で販売見積を作成し、Finance and Operations に同期させます。</span><span class="sxs-lookup"><span data-stu-id="77118-110">Create sales quotes in Dynamics 365 for Sales and sync them to Finance and Operations.</span></span>
+-   <span data-ttu-id="77118-111">Finance and Operations で製品を管理し、Dynamics 365 for Sales で同期させます。</span><span class="sxs-lookup"><span data-stu-id="77118-111">Maintain products in Finance and Operations and sync them to Dynamics 365 for Sales.</span></span>
 
 

@@ -1,7 +1,7 @@
 ---
 title: "不適合管理"
 description: "この記事は、不適合を使用するために必要な基本設定について説明します。 品質指示を使用する場合、追加の設定が必要になります。"
-author: YuyuScheller
+author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,53 +10,50 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventParameters, InventProblemType, InventProblemTypeSetup, InventQuarantineZone, InventTestDiagnosticType, InventTestReportSetup, SysUserManagement
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 28951
 ms.assetid: a62d4ba8-eebc-4b14-b587-630be7298522
 ms.search.region: Global
 ms.author: perlynne
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 7a6f7c12ab5fe5e67ffb844c1dbc6cd688ecd4d5
+ms.sourcegitcommit: 0e7f66cccd76e5326fce75d1a13aff294c16fb9b
+ms.openlocfilehash: ce9dbbb79d4281c004e4c052774eb4776218f1ef
 ms.contentlocale: ja-jp
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/12/2017
 
 ---
 
-# <a name="nonconformance-management"></a>不適合管理
+# <a name="nonconformance-management"></a><span data-ttu-id="63174-104">不適合管理</span><span class="sxs-lookup"><span data-stu-id="63174-104">Nonconformance management</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-この記事は、不適合を使用するために必要な基本設定について説明します。 品質指示を使用する場合、追加の設定が必要になります。 
+<span data-ttu-id="63174-105">この記事は、不適合を使用するために必要な基本設定について説明します。</span><span class="sxs-lookup"><span data-stu-id="63174-105">This article describes the basic setup that is required in order to use nonconformances.</span></span> <span data-ttu-id="63174-106">品質指示を使用する場合、追加の設定が必要になります。</span><span class="sxs-lookup"><span data-stu-id="63174-106">Additional setup is required if you want to use quality orders.</span></span>
 
-不適合管理を有効化するには、次の手順に従います。
+<span data-ttu-id="63174-107">不適合管理を有効化するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="63174-107">To enable nonconformance management, follow these steps:</span></span>
 
-1.  不適合に関連した在庫および倉庫管理パラメーターを定義します。
-    -   **品質管理を使用する**オプションを**はい**に設定します。
-    -   **時間レート** フィールドに、国内通貨で時給レートを入力します。 時給レートは、不適合に関連する工程の原価計算に使用されます。 時間あたりのレートと算出原価は、不適合の参照情報を提供するものです。 これらは、他の機能に作用することはありません。
-    -   **レポートの設定**ページの [**品質管理**] タブを使用して、印刷する文書のタイプを定義します。 不適合レポート、不適合タグ、または修正レポートを印刷できます。 複数のレコードを定義して、1 つのレポートに複数のドキュメント タイプを印刷したり、社内ノートや社外ノートを印刷できます。 通常は、**文書の種類**ページで、不適合用と訂正用にそれぞれ固有の文書タイプを定義することをお勧めします。 たとえば、不適合用の固有の文書タイプを使用すると、不適合に関するメモを入力できます。 この場合、レポート オプションで、一意の文書タイプを識別します。
-    -   不適合および訂正参照に使用する番号順序を有効にします。
+1.  <span data-ttu-id="63174-108">不適合に関連した在庫および倉庫管理パラメーターを定義します。</span><span class="sxs-lookup"><span data-stu-id="63174-108">Define the Inventory and warehouse management parameters that are related to nonconformances:</span></span>
+    -   <span data-ttu-id="63174-109">**品質管理を使用する**オプションを**はい**に設定します。</span><span class="sxs-lookup"><span data-stu-id="63174-109">Set the **Use quality management** option to **Yes**.</span></span>
+    -   <span data-ttu-id="63174-110">**時間レート** フィールドに、国内通貨で時給レートを入力します。</span><span class="sxs-lookup"><span data-stu-id="63174-110">In the **Hourly rate** field, enter an hourly labor rate in the local currency.</span></span> <span data-ttu-id="63174-111">時給レートは、不適合に関連する工程の原価計算に使用されます。</span><span class="sxs-lookup"><span data-stu-id="63174-111">The hourly rate is used to calculate costs for operations that are related to a nonconformance.</span></span> <span data-ttu-id="63174-112">時間あたりのレートと算出原価は、不適合の参照情報を提供するものです。</span><span class="sxs-lookup"><span data-stu-id="63174-112">The hourly rate and calculated costs provide reference information for a nonconformance.</span></span> <span data-ttu-id="63174-113">これらは、他の機能に作用することはありません。</span><span class="sxs-lookup"><span data-stu-id="63174-113">They don't interact with other functionality.</span></span>
+    -   <span data-ttu-id="63174-114">**レポートの設定**ページの [**品質管理**] タブを使用して、印刷する文書のタイプを定義します。</span><span class="sxs-lookup"><span data-stu-id="63174-114">Use the **Quality management** tab on the **Report setup** page to define the type of document to print.</span></span> <span data-ttu-id="63174-115">不適合レポート、不適合タグ、または修正レポートを印刷できます。</span><span class="sxs-lookup"><span data-stu-id="63174-115">You can print a nonconformance report, a nonconformance tag, or a correction report.</span></span> <span data-ttu-id="63174-116">複数のレコードを定義して、1 つのレポートに複数のドキュメント タイプを印刷したり、社内ノートや社外ノートを印刷できます。</span><span class="sxs-lookup"><span data-stu-id="63174-116">You can define more than one record to print different document types on a report, or to print internal and external notes.</span></span> <span data-ttu-id="63174-117">通常は、**文書の種類**ページで、不適合用と訂正用にそれぞれ固有の文書タイプを定義することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="63174-117">You might find it helpful to use the **Document type** page to define a unique document type for nonconformances and a unique document type for corrections.</span></span> <span data-ttu-id="63174-118">たとえば、不適合用の固有の文書タイプを使用すると、不適合に関するメモを入力できます。</span><span class="sxs-lookup"><span data-stu-id="63174-118">For example, want to enter notes about a nonconformance by using the unique document type for nonconformances.</span></span> <span data-ttu-id="63174-119">この場合、レポート オプションで、一意の文書タイプを識別します。</span><span class="sxs-lookup"><span data-stu-id="63174-119">In this case, identify the unique document type in the report options.</span></span>
+    -   <span data-ttu-id="63174-120">不適合および訂正参照に使用する番号順序を有効にします。</span><span class="sxs-lookup"><span data-stu-id="63174-120">Enable number sequences for nonconformance and correction references.</span></span>
 
-2.  不適合のユーザー承認を有効にします。 不適合を承認する必要がある各ユーザーに従業員を割り当てるには、**ユーザー** ページの**名前**フィールドを使用します。 システムは、不適合状態を変更する従業員を使用して、不適合履歴を追跡します。 ユーザーは、従業員 ID が割り当てられていない限り不適合を承認できません。
-3.  不適合に割り当てられる問題タイプを定義します。 各種の不適合タイプで遭遇する品質上の問題の分類を定義するためには、**問題タイプ** ページを使用します。 次の不適合タイプを設定できます: **内部**、**顧客**、**仕入先**、**サービス要求**、**生産**、**連産品の生産**。 **不適合タイプ** ページを使用して、1 つ以上の不適合タイプで使用する問題タイプを承認します。 たとえば、欠陥コードに関連した問題タイプは、すべての不適合タイプに適用できます。一方、顧客の苦情に関する問題タイプは、**顧客**および**サービス要求**の不適合タイプにしか適用できません。
-4.  欠陥材料の処理に関連した指示を提供する検査ゾーンを定義します。 不適合に割り当てることができるゾーンを定義するためには、**検査ゾーン** ページを使用します。 印刷された不適合タグには、割り当てられている検査ゾーンと欠陥材料をどのように扱うべきかの指示として使用する情報が表示されます。 ゾーンは在庫場所または運営リソースに対応する場合があります。
-5.  訂正に割り当てられる診断タイプを定義します。 診断アクションの分類を定義するためには、**診断タイプ** ページを使用します。 訂正は、承認された不適合に対して行う必要のある診断アクションのタイプ、担当者などを指定します。 また、要求された完了日、予定完了日を指定します。
-6.  不適合に割り当てられる、関連する工程を定義します。 **工程**ページを使用して、承認済の不適合に対して実行される作業の分類を定義します。 関連する工程を不適合に割り当てるときに、関連する材料、労働時間、雑費など、その工程を実行するために必要な条件についての詳細情報を指定することもできます。 この情報は、工程の見積原価を計算するのに使用されます。 詳細情報および見積原価は、参考目的で提供されます。 品質に関連する工程は、生産工順に対して定義できる工程とは異なります。
+2.  <span data-ttu-id="63174-121">不適合のユーザー承認を有効にします。</span><span class="sxs-lookup"><span data-stu-id="63174-121">Enable user approval of nonconformances.</span></span> <span data-ttu-id="63174-122">不適合を承認する必要がある各ユーザーに従業員を割り当てるには、**ユーザー** ページの**名前**フィールドを使用します。</span><span class="sxs-lookup"><span data-stu-id="63174-122">Use the **Name** field on the **Users** page to assign an employee to each user who must approve a nonconformance.</span></span> <span data-ttu-id="63174-123">システムは、不適合状態を変更する従業員を使用して、不適合履歴を追跡します。</span><span class="sxs-lookup"><span data-stu-id="63174-123">The system uses the employees who change the status of a noncomformance to track the nonconformance history.</span></span> <span data-ttu-id="63174-124">ユーザーは、従業員 ID が割り当てられていない限り不適合を承認できません。</span><span class="sxs-lookup"><span data-stu-id="63174-124">Users can't approve a nonconformance unless they have been assigned an employee identifier.</span></span>
+3.  <span data-ttu-id="63174-125">不適合に割り当てられる問題タイプを定義します。</span><span class="sxs-lookup"><span data-stu-id="63174-125">Define the problem types that will be assigned to nonconformances.</span></span> <span data-ttu-id="63174-126">各種の不適合タイプで遭遇する品質上の問題の分類を定義するためには、**問題タイプ** ページを使用します。</span><span class="sxs-lookup"><span data-stu-id="63174-126">Use the **Problem types** page to define a classification of quality problems that are encountered for the various nonconformance types.</span></span> <span data-ttu-id="63174-127">次の不適合タイプを設定できます: **内部**、**顧客**、**仕入先**、**サービス要求**、**生産**、**連産品の生産**。</span><span class="sxs-lookup"><span data-stu-id="63174-127">You can set up the following nonconformance types: **Internal**, **Customer**, **Vendor**, **Service request**, **Production**, and **Co-product production**.</span></span> <span data-ttu-id="63174-128">**不適合タイプ** ページを使用して、1 つ以上の不適合タイプで使用する問題タイプを承認します。</span><span class="sxs-lookup"><span data-stu-id="63174-128">Use the **Non conformance types** page to authorize a problem type to be used in one or more nonconformance types.</span></span> <span data-ttu-id="63174-129">たとえば、欠陥コードに関連した問題タイプは、すべての不適合タイプに適用できます。一方、顧客の苦情に関する問題タイプは、**顧客**および**サービス要求**の不適合タイプにしか適用できません。</span><span class="sxs-lookup"><span data-stu-id="63174-129">For example, a problem type that is related to a defect code might apply to all nonconformance types, whereas a problem type that is related to customer complaints might apply only to the **Customer** and **Service request** nonconformance types.</span></span>
+4.  <span data-ttu-id="63174-130">欠陥材料の処理に関連した指示を提供する検査ゾーンを定義します。</span><span class="sxs-lookup"><span data-stu-id="63174-130">Define quarantine zones to provide guidance about defective material should be handled.</span></span> <span data-ttu-id="63174-131">不適合に割り当てることができるゾーンを定義するためには、**検査ゾーン** ページを使用します。</span><span class="sxs-lookup"><span data-stu-id="63174-131">Use the **Quarantine zones** page to define zones that can be assigned to a nonconformance.</span></span> <span data-ttu-id="63174-132">印刷された不適合タグには、割り当てられている検査ゾーンと欠陥材料をどのように扱うべきかの指示として使用する情報が表示されます。</span><span class="sxs-lookup"><span data-stu-id="63174-132">The printed nonconformance tag will show the assigned quarantine zone and information about usage, to provide guidance about how to handle defective material.</span></span> <span data-ttu-id="63174-133">ゾーンは在庫場所または運営リソースに対応する場合があります。</span><span class="sxs-lookup"><span data-stu-id="63174-133">The zones might correspond to inventory locations or operations resources.</span></span>
+5.  <span data-ttu-id="63174-134">訂正に割り当てられる診断タイプを定義します。</span><span class="sxs-lookup"><span data-stu-id="63174-134">Define the diagnostic types that will be assigned to corrections.</span></span> <span data-ttu-id="63174-135">診断アクションの分類を定義するためには、**診断タイプ** ページを使用します。</span><span class="sxs-lookup"><span data-stu-id="63174-135">Use the **Diagnostic types** page to define a classification of diagnostic actions.</span></span> <span data-ttu-id="63174-136">訂正は、承認された不適合に対して行う必要のある診断アクションのタイプ、担当者などを指定します。</span><span class="sxs-lookup"><span data-stu-id="63174-136">A correction specifies what type of diagnostic action should be taken for an approved nonconformance, and who should take that action.</span></span> <span data-ttu-id="63174-137">また、要求された完了日、予定完了日を指定します。</span><span class="sxs-lookup"><span data-stu-id="63174-137">It also specifies the requested completion date and the planned completion date.</span></span>
+6.  <span data-ttu-id="63174-138">不適合に割り当てられる、関連する工程を定義します。</span><span class="sxs-lookup"><span data-stu-id="63174-138">Define the related operations that will be assigned to nonconformances.</span></span> <span data-ttu-id="63174-139">**工程**ページを使用して、承認済の不適合に対して実行される作業の分類を定義します。</span><span class="sxs-lookup"><span data-stu-id="63174-139">Use the **Operations** page to define a classification of the work that can be performed for an approved nonconformance.</span></span> <span data-ttu-id="63174-140">関連する工程を不適合に割り当てるときに、関連する材料、労働時間、雑費など、その工程を実行するために必要な条件についての詳細情報を指定することもできます。</span><span class="sxs-lookup"><span data-stu-id="63174-140">When you assign a related operation to a nonconformance, you can provide detailed information, such as information about the associated material, labor hours, and miscellaneous charges that are required in order to perform the operation.</span></span> <span data-ttu-id="63174-141">この情報は、工程の見積原価を計算するのに使用されます。</span><span class="sxs-lookup"><span data-stu-id="63174-141">This information is used to calculate an estimated cost for the operation.</span></span> <span data-ttu-id="63174-142">詳細情報および見積原価は、参考目的で提供されます。</span><span class="sxs-lookup"><span data-stu-id="63174-142">The detailed information and estimated costs are for reference.</span></span> <span data-ttu-id="63174-143">品質に関連する工程は、生産工順に対して定義できる工程とは異なります。</span><span class="sxs-lookup"><span data-stu-id="63174-143">The related operations for quality differ from the operations that can be defined for a production route.</span></span>
 
 
-<a name="see-also"></a>参照
+<a name="see-also"></a><span data-ttu-id="63174-144">参照</span><span class="sxs-lookup"><span data-stu-id="63174-144">See also</span></span>
 --------
 
-[不適合 (タスク ガイド) を作成して処理する](/dynamics365/unified-operations/supply-chain/inventory/tasks/create-process-non-conformance)
+[<span data-ttu-id="63174-145">不適合 (タスク ガイド) を作成して処理する</span><span class="sxs-lookup"><span data-stu-id="63174-145">Create and process a non conformance (Task guide)</span></span>](/dynamics365/unified-operations/supply-chain/inventory/tasks/create-process-non-conformance)
 
-[品質管理プロセス](quality-management-processes.md)
+[<span data-ttu-id="63174-146">品質管理プロセス</span><span class="sxs-lookup"><span data-stu-id="63174-146">Quality management processes</span></span>](quality-management-processes.md)
 
-[不適合管理の前提条件の確認 (タスク ガイド)](/dynamics365/unified-operations/supply-chain/inventory/tasks/set-up-prerequisites-nonconformance-management)
-
-
-
+[<span data-ttu-id="63174-147">不適合管理の前提条件の確認 (タスク ガイド)</span><span class="sxs-lookup"><span data-stu-id="63174-147">Set up prerequisites for non-conformance management (Task guide)</span></span>](/dynamics365/unified-operations/supply-chain/inventory/tasks/set-up-prerequisites-nonconformance-management)
 

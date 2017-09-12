@@ -22,181 +22,181 @@ ms.contentlocale: ja-jp
 ms.lasthandoff: 07/27/2017
 
 ---
-# <a name="upgrade-your-format-by-adopting-of-new-base-version-of-that-format-for-electronic-reporting-er"></a>電子申告 (ER) のその形式の新しい基準バージョンの採用により、形式をアップグレードする
+# <a name="upgrade-your-format-by-adopting-of-new-base-version-of-that-format-for-electronic-reporting-er"></a><span data-ttu-id="090dd-103">電子申告 (ER) のその形式の新しい基準バージョンの採用により、形式をアップグレードする</span><span class="sxs-lookup"><span data-stu-id="090dd-103">Upgrade your format by adopting of new base version of that format for electronic reporting (ER)</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-次のステップでは、システム管理者または電子申告開発者のロールに割り当てられているユーザーが、電子申告 (ER) の形式のコンフィギュレーションを維持管理する方法について説明します。 この手順では、コンフィギュレーション プロバイダー (CP) から受領した形式を基にカスタム バージョンの形式を作成する方法を説明します。 また、その形式の新しい基準バージョンの採用方法についても説明します。
+<span data-ttu-id="090dd-104">次のステップでは、システム管理者または電子申告開発者のロールに割り当てられているユーザーが、電子申告 (ER) の形式のコンフィギュレーションを維持管理する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="090dd-104">The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can maintain an Electronic reporting (ER) format configuration.</span></span> <span data-ttu-id="090dd-105">この手順では、コンフィギュレーション プロバイダー (CP) から受領した形式を基にカスタム バージョンの形式を作成する方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="090dd-105">This procedure explains how a custom version of a format can be created based on the format received from a configuration provider (CP).</span></span> <span data-ttu-id="090dd-106">また、その形式の新しい基準バージョンの採用方法についても説明します。</span><span class="sxs-lookup"><span data-stu-id="090dd-106">It also explains how to adopt a new, base version of that format.</span></span>
 
 
 
-これらのステップを完了するには、まず「コンフィギュレーション プロバイダーを作成し有効としてマーク付けする」ステップ、および「作成済みの形式を使用して支払用の電子ドキュメントを生成」手順を実行する必要があります。 これらのステップは GBSI 会社で実行できます。
+<span data-ttu-id="090dd-107">これらのステップを完了するには、まず「コンフィギュレーション プロバイダーを作成し有効としてマーク付けする」ステップ、および「作成済みの形式を使用して支払用の電子ドキュメントを生成」手順を実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="090dd-107">To complete these steps, you must first complete the steps in the “Create a configuration provider and mark it as active” and “Use created format to generate electronic documents for payments” procedures.</span></span> <span data-ttu-id="090dd-108">これらのステップは GBSI 会社で実行できます。</span><span class="sxs-lookup"><span data-stu-id="090dd-108">These steps can be performed in the GBSI company.</span></span>
 
 
-## <a name="select-format-configuration-for-customization"></a>カスタマイズする形式のコンフィギュレーションを選択
-1. [組織管理] > [ワークスペース] > [電子申告] の順に移動します。
-    * この例では、サンプル会社 Litware, Inc. (http://www.litware.com) が特定の国に対する電子支払の形式コンフィギュレーションをサポートするコンフィギュレーション プロバイダーとして機能します。    サンプル会社 Proseware, Inc. (http://www.proseware.com) は、Liteware, Inc. が提供した形式コンフィギュレーションの消費者として機能します。 Proseware, Inc. はその国の特定の地域の形式を使用します。  
-2. [コンフィギュレーションをレポートする] をクリックします。
-3. [フィルターの表示] をクリックします。
-4. [名前] フィールドで "次の値で始まる" フィルター演算子を使用して、値 "BACS (英国企業)" でフィルターを適用します。
-    * BACS (英国企業)  
-    * 選択された形式のコンフィギュレーション BACS (英国企業) は、プロバイダーである Litware, Inc. が所有しています。  
-5. [フィルターの表示] をクリックします。
-6. 一覧で、目的のレコードを見つけ、選択します。
-    * [完了] 状態の形式のバージョンは、カスタマイズ用に Proseware Inc. で使用されます 。  
+## <a name="select-format-configuration-for-customization"></a><span data-ttu-id="090dd-109">カスタマイズする形式のコンフィギュレーションを選択</span><span class="sxs-lookup"><span data-stu-id="090dd-109">Select format configuration for customization</span></span>
+1. <span data-ttu-id="090dd-110">[組織管理] > [ワークスペース] > [電子申告] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="090dd-110">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
+    * <span data-ttu-id="090dd-111">この例では、サンプル会社 Litware, Inc. (http://www.litware.com) が特定の国に対する電子支払の形式コンフィギュレーションをサポートするコンフィギュレーション プロバイダーとして機能します。</span><span class="sxs-lookup"><span data-stu-id="090dd-111">In this example, sample company Litware, Inc. (http://www.litware.com) will act as a configuration provider that supports format configurations for electronic payments for a particular country.</span></span>    <span data-ttu-id="090dd-112">サンプル会社 Proseware, Inc. (http://www.proseware.com) は、Liteware, Inc. が提供した形式コンフィギュレーションの消費者として機能します。</span><span class="sxs-lookup"><span data-stu-id="090dd-112">Sample company Proseware, Inc. (http://www.proseware.com) will act as a consumer of the format configuration that Litware, Inc. provided.</span></span> <span data-ttu-id="090dd-113">Proseware, Inc. はその国の特定の地域の形式を使用します。</span><span class="sxs-lookup"><span data-stu-id="090dd-113">Proseware, Inc. uses formats in certain regions of that country.</span></span>  
+2. <span data-ttu-id="090dd-114">[コンフィギュレーションをレポートする] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="090dd-114">Click Reporting configurations.</span></span>
+3. <span data-ttu-id="090dd-115">[フィルターの表示] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="090dd-115">Click Show filters.</span></span>
+4. <span data-ttu-id="090dd-116">[名前] フィールドで "次の値で始まる" フィルター演算子を使用して、値 "BACS (英国企業)" でフィルターを適用します。</span><span class="sxs-lookup"><span data-stu-id="090dd-116">Apply the following filters: Enter a filter value of "BACS (UK fictitious)" on the "Name" field using the "begins with" filter operator</span></span>
+    * <span data-ttu-id="090dd-117">BACS (英国企業)</span><span class="sxs-lookup"><span data-stu-id="090dd-117">BACS (UK fictitious)</span></span>  
+    * <span data-ttu-id="090dd-118">選択された形式のコンフィギュレーション BACS (英国企業) は、プロバイダーである Litware, Inc. が所有しています。</span><span class="sxs-lookup"><span data-stu-id="090dd-118">The selected format configuration BACS (UK fictitious) is owned by provider Litware, Inc.</span></span>  
+5. <span data-ttu-id="090dd-119">[フィルターの表示] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="090dd-119">Click Show filters.</span></span>
+6. <span data-ttu-id="090dd-120">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="090dd-120">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="090dd-121">[完了] 状態の形式のバージョンは、カスタマイズ用に Proseware Inc. で使用されます 。</span><span class="sxs-lookup"><span data-stu-id="090dd-121">The version of the format with the status of Completed will be used by Proseware, Inc. for customization.</span></span>  
 
-## <a name="create-a-new-configuration-for-your-custom-format-of-electronic-document"></a>電子ドキュメントのカスタム形式の新規コンフィギュレーションを作成
-    * Proseware、Inc. は、自身のサービスの定期売買に従って電子支払ドキュメントを生成するための初期形式が含まれている BACS (英国企業) コンフィギュレーションの バージョン 1.1 を受領済です。 Proseware, Inc. は、これを自身の国の標準として使い始めようとしますが、特定の地域の要件をサポートするためのカスタマイズが必要です。 Proseware, Inc. は、その新しいバージョン (新しい国固有の要件をサポートするための変更を含む) が Litware, Inc. からリリースされ次第、カスタム形式をアップグレードする能力も維持したいと考えています。さらに、このアップグレードを最低限の費用で実行したいと考えています。  これを実現するため Proseware, Inc. は、基準として Litware, Inc. のコンフィギュレーション BACS (英国企業) を使用してコンフィギュレーションを作成する必要があります。  
-1. ページを閉じます。
-2. Proseware, Inc を選択して 有効なプロバイダーとします。
-3. [有効に設定] をクリックします。
-4. [コンフィギュレーションをレポートする] をクリックします。
-5. ツリーで、「支払 (単純化モデル)」を展開します。
-6. ツリーで、「支払 (単純化モデル)」 \BACS (英国の企業) を選択します。
-    * Litware, Inc. から BACS (英国企業) コンフィギュレーションを選択します。Proseware, Inc. は、バージョン 1.1 をカスタム バージョンの基準として使用します。  
-7. [コンフィギュレーションの作成] をクリックすると、ドロップ ダイアログが開きます。
-    * これにより、カスタムの支払形式用の新しいコンフィギュレーションを作成することができます。  
-8. [新規] フィールドに「Derive from Name: BACS (英国の企業)、Litware, Inc.」と入力します。
-    * [派生] オプションを選択して、カスタム バージョンを作成する基準として BACS (英国企業) の使用を確認します。  
-9. [名前] フィールドに、「BACS (英国関税)」と入力します。
-    * BACS (英国企業の関税)  
-10. [説明] フィールドに、「BACS の仕入先支払 (英国関税) 」を入力します。
-    * BACS の仕入先支払 (英国関税)  
-    * ここでは、有効なコンフィギュレーション プロバイダー (Proseware, Inc.) が自動的に入力されます。 このプロバイダーはこのコンフィギュレーションを管理できます。 他のプロバイダーはこのコンフィギュレーションを使用できますが、管理できません。  
-11. [コンフィギュレーションの作成] をクリックします。
+## <a name="create-a-new-configuration-for-your-custom-format-of-electronic-document"></a><span data-ttu-id="090dd-122">電子ドキュメントのカスタム形式の新規コンフィギュレーションを作成</span><span class="sxs-lookup"><span data-stu-id="090dd-122">Create a new configuration for your custom format of electronic document</span></span>
+    * <span data-ttu-id="090dd-123">Proseware、Inc. は、自身のサービスの定期売買に従って電子支払ドキュメントを生成するための初期形式が含まれている BACS (英国企業) コンフィギュレーションの バージョン 1.1 を受領済です。</span><span class="sxs-lookup"><span data-stu-id="090dd-123">Proseware, Inc. received version 1.1 of BACS (UK fictitious) configuration that contains the initial format to generate electronic payment documents from Litware, Inc. in accordance to their service subscription.</span></span> <span data-ttu-id="090dd-124">Proseware, Inc. は、これを自身の国の標準として使い始めようとしますが、特定の地域の要件をサポートするためのカスタマイズが必要です。</span><span class="sxs-lookup"><span data-stu-id="090dd-124">Proseware, Inc. wants to start using this as a standard for their country but some customization is required to support specific regional requirements.</span></span> <span data-ttu-id="090dd-125">Proseware, Inc. は、その新しいバージョン (新しい国固有の要件をサポートするための変更を含む) が Litware, Inc. からリリースされ次第、カスタム形式をアップグレードする能力も維持したいと考えています。さらに、このアップグレードを最低限の費用で実行したいと考えています。</span><span class="sxs-lookup"><span data-stu-id="090dd-125">Proseware, Inc. also wants to keep the ability to upgrade a custom format as soon as a new version of it (with changes to support new country-specific requirements) comes from Litware, Inc. and they want to perform this upgrade with the lowest cost.</span></span>  <span data-ttu-id="090dd-126">これを実現するため Proseware, Inc. は、基準として Litware, Inc. のコンフィギュレーション BACS (英国企業) を使用してコンフィギュレーションを作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="090dd-126">To do this, Proseware, Inc. needs to create a configuration using the Litware, Inc. configuration BACS (UK fictitious) as a base.</span></span>  
+1. <span data-ttu-id="090dd-127">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="090dd-127">Close the page.</span></span>
+2. <span data-ttu-id="090dd-128">Proseware, Inc を選択して 有効なプロバイダーとします。</span><span class="sxs-lookup"><span data-stu-id="090dd-128">Select Proseware, Inc. to make it an active provider.</span></span>
+3. <span data-ttu-id="090dd-129">[有効に設定] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="090dd-129">Click Set active.</span></span>
+4. <span data-ttu-id="090dd-130">[コンフィギュレーションをレポートする] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="090dd-130">Click Reporting configurations.</span></span>
+5. <span data-ttu-id="090dd-131">ツリーで、「支払 (単純化モデル)」を展開します。</span><span class="sxs-lookup"><span data-stu-id="090dd-131">In the tree, expand 'Payments (simplified model)'.</span></span>
+6. <span data-ttu-id="090dd-132">ツリーで、「支払 (単純化モデル)」 \BACS (英国の企業) を選択します。</span><span class="sxs-lookup"><span data-stu-id="090dd-132">In the tree, select 'Payments (simplified model)\BACS (UK fictitious)'.</span></span>
+    * <span data-ttu-id="090dd-133">Litware, Inc. から BACS (英国企業) コンフィギュレーションを選択します。Proseware, Inc. は、バージョン 1.1 をカスタム バージョンの基準として使用します。</span><span class="sxs-lookup"><span data-stu-id="090dd-133">Select the BACS (UK fictitious) configuration from Litware, Inc.     Proseware, Inc. will use version 1.1 as a base for the custom version.</span></span>  
+7. <span data-ttu-id="090dd-134">[コンフィギュレーションの作成] をクリックすると、ドロップ ダイアログが開きます。</span><span class="sxs-lookup"><span data-stu-id="090dd-134">Click Create configuration to open the drop dialog.</span></span>
+    * <span data-ttu-id="090dd-135">これにより、カスタムの支払形式用の新しいコンフィギュレーションを作成することができます。</span><span class="sxs-lookup"><span data-stu-id="090dd-135">This lets you create a new configuration for a custom payment format.</span></span>  
+8. <span data-ttu-id="090dd-136">[新規] フィールドに「Derive from Name: BACS (英国の企業)、Litware, Inc.」と入力します。</span><span class="sxs-lookup"><span data-stu-id="090dd-136">In the New field, enter 'Derive from Name: BACS (UK fictitious), Litware, Inc.'.</span></span>
+    * <span data-ttu-id="090dd-137">[派生] オプションを選択して、カスタム バージョンを作成する基準として BACS (英国企業) の使用を確認します。</span><span class="sxs-lookup"><span data-stu-id="090dd-137">Select the Derive option to confirm the usage of BACS (UK fictitious) as the base for creating the custom version.</span></span>  
+9. <span data-ttu-id="090dd-138">[名前] フィールドに、「BACS (英国関税)」と入力します。</span><span class="sxs-lookup"><span data-stu-id="090dd-138">In the Name field, type 'BACS (UK fictitious custom)'.</span></span>
+    * <span data-ttu-id="090dd-139">BACS (英国企業の関税)</span><span class="sxs-lookup"><span data-stu-id="090dd-139">BACS (UK fictitious custom)</span></span>  
+10. <span data-ttu-id="090dd-140">[説明] フィールドに、「BACS の仕入先支払 (英国関税) 」を入力します。</span><span class="sxs-lookup"><span data-stu-id="090dd-140">In the Description field, type 'BACS vendor payment (UK fictitious custom)'.</span></span>
+    * <span data-ttu-id="090dd-141">BACS の仕入先支払 (英国関税)</span><span class="sxs-lookup"><span data-stu-id="090dd-141">BACS vendor payment (UK fictitious custom)</span></span>  
+    * <span data-ttu-id="090dd-142">ここでは、有効なコンフィギュレーション プロバイダー (Proseware, Inc.) が自動的に入力されます。</span><span class="sxs-lookup"><span data-stu-id="090dd-142">The active configuration provider (Proseware, Inc.) is automatically entered here.</span></span> <span data-ttu-id="090dd-143">このプロバイダーはこのコンフィギュレーションを管理できます。</span><span class="sxs-lookup"><span data-stu-id="090dd-143">This provider will be able to maintain this configuration.</span></span> <span data-ttu-id="090dd-144">他のプロバイダーはこのコンフィギュレーションを使用できますが、管理できません。</span><span class="sxs-lookup"><span data-stu-id="090dd-144">Other providers can use this configuration, but will not be able to maintain it.</span></span>  
+11. <span data-ttu-id="090dd-145">[コンフィギュレーションの作成] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="090dd-145">Click Create configuration.</span></span>
 
-## <a name="customize-your-format-for-the-electronic-document"></a>電子ドキュメントの形式のカスタマイズ
-1. [デザイナー] をクリックします。
-2. [展開] / [折りたたみ] をクリックします。
-3. [展開] / [折りたたみ] をクリックします。
-4. ツリーで、「Xml\Message\Payments\Item\Vendor\Bank」を選択します。
-5. [追加] をクリックしてドロップ ダイアログを開きます。
-6. ツリーで、[XML\Element] を選択します。
-7. [名前] フィールドに、「IBAN」と入力します。
-    * IBAN  
-8. [OK] をクリックします。
-9. ツリーで、「Xml\Message\Payments\Item\Vendor\Bank\IBAN」を選択します。
-10. [追加] をクリックしてドロップ ダイアログを開きます。
-11. ツリーで、[Text\String] を選択します。
-12. [OK] をクリックします。
-13. ツリーで、「Xml\Message\Payments\Item\Vendor\Name\String」を選択します。
-14. [最大の長さ] フィールドに「60」を入力します。
-15. [マッピング] タブをクリックします。
-16. ツリーで、[model] を展開します。
-17. ツリーで、[model\Payments] を展開します。
-18. ツリーで、[model\Payments\Creditor] を展開します。
-19. ツリーで、[model\Payments\Creditor\Account] を展開します。
-20. ツリーで、「model\Payments\Creditor\Account\IBAN」を選択します。
-21. ツリーで、「Xml\Message\Payments\Item = model.Payments\Vendor\Bank\IBAN\String」を選択します。
-22. [バインド] をクリックします。
-23. [保存] をクリックします。
+## <a name="customize-your-format-for-the-electronic-document"></a><span data-ttu-id="090dd-146">電子ドキュメントの形式のカスタマイズ</span><span class="sxs-lookup"><span data-stu-id="090dd-146">Customize your format for the electronic document</span></span>
+1. <span data-ttu-id="090dd-147">[デザイナー] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="090dd-147">Click Designer.</span></span>
+2. <span data-ttu-id="090dd-148">[展開] / [折りたたみ] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="090dd-148">Click Expand/collapse.</span></span>
+3. <span data-ttu-id="090dd-149">[展開] / [折りたたみ] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="090dd-149">Click Expand/collapse.</span></span>
+4. <span data-ttu-id="090dd-150">ツリーで、「Xml\Message\Payments\Item\Vendor\Bank」を選択します。</span><span class="sxs-lookup"><span data-stu-id="090dd-150">In the tree, select 'Xml\Message\Payments\Item\Vendor\Bank'.</span></span>
+5. <span data-ttu-id="090dd-151">[追加] をクリックしてドロップ ダイアログを開きます。</span><span class="sxs-lookup"><span data-stu-id="090dd-151">Click Add to open the drop dialog.</span></span>
+6. <span data-ttu-id="090dd-152">ツリーで、[XML\Element] を選択します。</span><span class="sxs-lookup"><span data-stu-id="090dd-152">In the tree, select 'XML\Element'.</span></span>
+7. <span data-ttu-id="090dd-153">[名前] フィールドに、「IBAN」と入力します。</span><span class="sxs-lookup"><span data-stu-id="090dd-153">In the Name field, type 'IBAN'.</span></span>
+    * <span data-ttu-id="090dd-154">IBAN</span><span class="sxs-lookup"><span data-stu-id="090dd-154">IBAN</span></span>  
+8. <span data-ttu-id="090dd-155">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="090dd-155">Click OK.</span></span>
+9. <span data-ttu-id="090dd-156">ツリーで、「Xml\Message\Payments\Item\Vendor\Bank\IBAN」を選択します。</span><span class="sxs-lookup"><span data-stu-id="090dd-156">In the tree, select 'Xml\Message\Payments\Item\Vendor\Bank\IBAN'.</span></span>
+10. <span data-ttu-id="090dd-157">[追加] をクリックしてドロップ ダイアログを開きます。</span><span class="sxs-lookup"><span data-stu-id="090dd-157">Click Add to open the drop dialog.</span></span>
+11. <span data-ttu-id="090dd-158">ツリーで、[Text\String] を選択します。</span><span class="sxs-lookup"><span data-stu-id="090dd-158">In the tree, select 'Text\String'.</span></span>
+12. <span data-ttu-id="090dd-159">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="090dd-159">Click OK.</span></span>
+13. <span data-ttu-id="090dd-160">ツリーで、「Xml\Message\Payments\Item\Vendor\Name\String」を選択します。</span><span class="sxs-lookup"><span data-stu-id="090dd-160">In the tree, select 'Xml\Message\Payments\Item\Vendor\Name\String'.</span></span>
+14. <span data-ttu-id="090dd-161">[最大の長さ] フィールドに「60」を入力します。</span><span class="sxs-lookup"><span data-stu-id="090dd-161">In the Maximum length field, enter '60'.</span></span>
+15. <span data-ttu-id="090dd-162">[マッピング] タブをクリックします。</span><span class="sxs-lookup"><span data-stu-id="090dd-162">Click the Mapping tab.</span></span>
+16. <span data-ttu-id="090dd-163">ツリーで、[model] を展開します。</span><span class="sxs-lookup"><span data-stu-id="090dd-163">In the tree, expand 'model'.</span></span>
+17. <span data-ttu-id="090dd-164">ツリーで、[model\Payments] を展開します。</span><span class="sxs-lookup"><span data-stu-id="090dd-164">In the tree, expand 'model\Payments'.</span></span>
+18. <span data-ttu-id="090dd-165">ツリーで、[model\Payments\Creditor] を展開します。</span><span class="sxs-lookup"><span data-stu-id="090dd-165">In the tree, expand 'model\Payments\Creditor'.</span></span>
+19. <span data-ttu-id="090dd-166">ツリーで、[model\Payments\Creditor\Account] を展開します。</span><span class="sxs-lookup"><span data-stu-id="090dd-166">In the tree, expand 'model\Payments\Creditor\Account'.</span></span>
+20. <span data-ttu-id="090dd-167">ツリーで、「model\Payments\Creditor\Account\IBAN」を選択します。</span><span class="sxs-lookup"><span data-stu-id="090dd-167">In the tree, select 'model\Payments\Creditor\Account\IBAN'.</span></span>
+21. <span data-ttu-id="090dd-168">ツリーで、「Xml\Message\Payments\Item = model.Payments\Vendor\Bank\IBAN\String」を選択します。</span><span class="sxs-lookup"><span data-stu-id="090dd-168">In the tree, select 'Xml\Message\Payments\Item =  model.Payments\Vendor\Bank\IBAN\String'.</span></span>
+22. <span data-ttu-id="090dd-169">[バインド] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="090dd-169">Click Bind.</span></span>
+23. <span data-ttu-id="090dd-170">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="090dd-170">Click Save.</span></span>
 
-## <a name="validate-the-customized-format"></a>カスタマイズされた形式の検証
-1. [検証] をクリックします。
-    * すべてのバインディングに問題がないことを確認するために、カスタマイズされた形式レイアウトおよびデータ マッピングの変更を検証します。  
-2. ページを閉じます。
+## <a name="validate-the-customized-format"></a><span data-ttu-id="090dd-171">カスタマイズされた形式の検証</span><span class="sxs-lookup"><span data-stu-id="090dd-171">Validate the customized format</span></span>
+1. <span data-ttu-id="090dd-172">[検証] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="090dd-172">Click Validate.</span></span>
+    * <span data-ttu-id="090dd-173">すべてのバインディングに問題がないことを確認するために、カスタマイズされた形式レイアウトおよびデータ マッピングの変更を検証します。</span><span class="sxs-lookup"><span data-stu-id="090dd-173">Validate the customized format layout and data mapping changes to make sure that all bindings are okay.</span></span>  
+2. <span data-ttu-id="090dd-174">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="090dd-174">Close the page.</span></span>
 
-## <a name="change-the-status-of-the-current-version-of-the-custom-format-configuration"></a>カスタム形式のコンフィギュレーションの現行バージョンの状態を変更
-    * 支払ドキュメントの生成に使用できるように、指定の形式のコンフィギュレーションの状態を [ドラフト] から [完了] に変更します。  
-1. [状態の変更] をクリックします。
-    * 選択したコンフィギュレーションの現在のバージョンが [ドラフト] 状態であることに注意してください。  
-2. [完了] をクリックします。
-3. [説明] フィールドに値を入力します。
-4. [OK] をクリックします。
-5. 一覧で、目的のレコードを見つけ、選択します。
-    * 作成したコンフィギュレーションが完了したバージョン 1.1.1 として保存されることに注意してください。 これは、BACS の関税 (英国企業の関税) 形式のバージョン 1 であることを意味します。これは BACS (英国企業) 形式のバージョン 1、および支払 (単純化モデル) データ モデルのバージョン 1 に基づきます。  
+## <a name="change-the-status-of-the-current-version-of-the-custom-format-configuration"></a><span data-ttu-id="090dd-175">カスタム形式のコンフィギュレーションの現行バージョンの状態を変更</span><span class="sxs-lookup"><span data-stu-id="090dd-175">Change the status of the current version of the custom format configuration</span></span>
+    * <span data-ttu-id="090dd-176">支払ドキュメントの生成に使用できるように、指定の形式のコンフィギュレーションの状態を [ドラフト] から [完了] に変更します。</span><span class="sxs-lookup"><span data-stu-id="090dd-176">Change the status of the designed format configuration from Draft to Completed to make it available for payment document generation.</span></span>  
+1. <span data-ttu-id="090dd-177">[状態の変更] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="090dd-177">Click Change status.</span></span>
+    * <span data-ttu-id="090dd-178">選択したコンフィギュレーションの現在のバージョンが [ドラフト] 状態であることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="090dd-178">Note that the current version of the selected configuration is in Draft status.</span></span>  
+2. <span data-ttu-id="090dd-179">[完了] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="090dd-179">Click Complete.</span></span>
+3. <span data-ttu-id="090dd-180">[説明] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="090dd-180">In the Description field, type a value.</span></span>
+4. <span data-ttu-id="090dd-181">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="090dd-181">Click OK.</span></span>
+5. <span data-ttu-id="090dd-182">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="090dd-182">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="090dd-183">作成したコンフィギュレーションが完了したバージョン 1.1.1 として保存されることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="090dd-183">Note that the created configuration is saved as completed version 1.1.1.</span></span> <span data-ttu-id="090dd-184">これは、BACS の関税 (英国企業の関税) 形式のバージョン 1 であることを意味します。これは BACS (英国企業) 形式のバージョン 1、および支払 (単純化モデル) データ モデルのバージョン 1 に基づきます。</span><span class="sxs-lookup"><span data-stu-id="090dd-184">This means it is version 1 of the custom BACS (UK fictitious custom) format, which is based on version 1 of the BACS (UK fictitious) format, which is based on version 1 of the Payments (simplified model) data model.</span></span>  
 
-## <a name="test-the-customized-format-to-generate-payment-files"></a>カスタマイズされた形式の支払ファイル生成テストの実行
-    * Dynamics 365 for Finance and Operations, Enterprise Edition 並列セッション内の手順「作成済みの形式を使用して支払用の電子ドキュメントを生成」にあるステップを実行します。 電子支払方法のパラメーターで BACS (英国関税) 形式を選択します。 作成した支払ファイルに、地域要件に対応した IBAN コードを表す最新の XML ノードが含まれていることを確認します。  
+## <a name="test-the-customized-format-to-generate-payment-files"></a><span data-ttu-id="090dd-185">カスタマイズされた形式の支払ファイル生成テストの実行</span><span class="sxs-lookup"><span data-stu-id="090dd-185">Test the customized format to generate payment files</span></span>
+    * <span data-ttu-id="090dd-186">Dynamics 365 for Finance and Operations, Enterprise Edition 並列セッション内の手順「作成済みの形式を使用して支払用の電子ドキュメントを生成」にあるステップを実行します。</span><span class="sxs-lookup"><span data-stu-id="090dd-186">Complete the steps in the “Use created format to generate electronic documents for payments” procedure in a parallel Dynamics 365 for Finance and Operations, Enterprise edition session.</span></span> <span data-ttu-id="090dd-187">電子支払方法のパラメーターで BACS (英国関税) 形式を選択します。</span><span class="sxs-lookup"><span data-stu-id="090dd-187">Select the BACS (UK fictitious custom) format in electronic payment method parameters.</span></span> <span data-ttu-id="090dd-188">作成した支払ファイルに、地域要件に対応した IBAN コードを表す最新の XML ノードが含まれていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="090dd-188">Make sure that the created payment file contains the recently introduced XML node presenting IBAN code in accordance to regional requirements.</span></span>  
 
-## <a name="update-the-existing-country-specific-configuration"></a>既存の国固有のコンフィギュレーションの更新
-    * 電子ドキュメントの形式を管理するために、Litware, Inc. は BACS (英国の企業) コンフィギュレーションを更新し、新しい国要件を採用する必要があります。 これは後に、Proseware, Inc. を含むサービスのサブスクライバーに提供される、このコンフィギュレーションの新しいバージョンに取り入れられます。  
-    * 実際のサービス プロビジョン関連のプロセスでは、Proseware Inc. は BACS (英国企業) の各新規バージョンを Litware, Inc. コンフィギュレーションの LCS レポジトリからインポートできます。 本手順では、サービス プロバイダーに代わり BACS (英国の企業) を更新してこれをシミュレーションします。  
-1. ページを閉じます。
-2. Litware, Inc. の選択 プロバイダー
-3. [有効に設定] をクリックします。
-4. [コンフィギュレーションをレポートする] をクリックします。
-5. ツリーで、「支払 (単純化モデル)」を展開します。
-6. ツリーで、「支払 (単純化モデル)」 \BACS (英国の企業) を選択します。
-    * Litware、Inc. が所有する プロバイダー BACKS (英国企業) のドラフト バージョンは、国固有の新しい要件をサポートする変更点を取り入れるため選択されます。  
+## <a name="update-the-existing-country-specific-configuration"></a><span data-ttu-id="090dd-189">既存の国固有のコンフィギュレーションの更新</span><span class="sxs-lookup"><span data-stu-id="090dd-189">Update the existing country-specific configuration</span></span>
+    * <span data-ttu-id="090dd-190">電子ドキュメントの形式を管理するために、Litware, Inc. は BACS (英国の企業) コンフィギュレーションを更新し、新しい国要件を採用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="090dd-190">Litware, Inc. needs to update the BACS (UK fictitious) configuration and adopt new country requirements for managing the format of the electronic document.</span></span> <span data-ttu-id="090dd-191">これは後に、Proseware, Inc. を含むサービスのサブスクライバーに提供される、このコンフィギュレーションの新しいバージョンに取り入れられます。</span><span class="sxs-lookup"><span data-stu-id="090dd-191">Later, this will be enclosed in a new version of this configuration that will be offered for service subscribers, including Proseware, Inc.</span></span>  
+    * <span data-ttu-id="090dd-192">実際のサービス プロビジョン関連のプロセスでは、Proseware Inc. は BACS (英国企業) の各新規バージョンを Litware, Inc. コンフィギュレーションの LCS レポジトリからインポートできます。</span><span class="sxs-lookup"><span data-stu-id="090dd-192">In real service provision related processes, each new version of BACS (UK fictitious) can be imported by Proseware, Inc. from Litware, Inc. configurations’ LCS repository.</span></span> <span data-ttu-id="090dd-193">本手順では、サービス プロバイダーに代わり BACS (英国の企業) を更新してこれをシミュレーションします。</span><span class="sxs-lookup"><span data-stu-id="090dd-193">In this procedure we will simulate this by updating BACS (UK fictitious) on behalf of a service provider.</span></span>  
+1. <span data-ttu-id="090dd-194">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="090dd-194">Close the page.</span></span>
+2. <span data-ttu-id="090dd-195">Litware, Inc. の選択</span><span class="sxs-lookup"><span data-stu-id="090dd-195">Select Litware, inc.</span></span> <span data-ttu-id="090dd-196">プロバイダー</span><span class="sxs-lookup"><span data-stu-id="090dd-196">provider.</span></span>
+3. <span data-ttu-id="090dd-197">[有効に設定] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="090dd-197">Click Set active.</span></span>
+4. <span data-ttu-id="090dd-198">[コンフィギュレーションをレポートする] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="090dd-198">Click Reporting configurations.</span></span>
+5. <span data-ttu-id="090dd-199">ツリーで、「支払 (単純化モデル)」を展開します。</span><span class="sxs-lookup"><span data-stu-id="090dd-199">In the tree, expand 'Payments (simplified model)'.</span></span>
+6. <span data-ttu-id="090dd-200">ツリーで、「支払 (単純化モデル)」 \BACS (英国の企業) を選択します。</span><span class="sxs-lookup"><span data-stu-id="090dd-200">In the tree, select 'Payments (simplified model)\BACS (UK fictitious)'.</span></span>
+    * <span data-ttu-id="090dd-201">Litware、Inc. が所有する プロバイダー BACKS (英国企業) のドラフト バージョンは、国固有の新しい要件をサポートする変更点を取り入れるため選択されます。</span><span class="sxs-lookup"><span data-stu-id="090dd-201">The draft version owned by Litware, Inc. provider BACS (UK fictitious) is selected to bring in changes to support new country-specific requirements.</span></span>  
 
-## <a name="localize-the-base-format-of-the-electronic-document"></a>電子ドキュメントの基準形式のローカライズ
-    * Litware Inc. がサポートする国固有の新しい要件があると想定します: - 支払トランザクション毎の債権者の銀行 SWIFT コードの値。  - 生成ファイルの仕入先名のテキストの長さの 100 文字制限。  
-    * 国固有の新しい要件  
-    * 必要な変更を取り入れるため、必要なコンフィギュレーションのドラフト バージョンを選択します。  
-1. [デザイナー] をクリックします。
-2. [展開] / [折りたたみ] をクリックします。
-3. [展開] / [折りたたみ] をクリックします。
-4. ツリーで、「Xml\Message\Payments\Item\Vendor\Bank」を選択します。
-5. [追加] をクリックしてドロップ ダイアログを開きます。
-6. ツリーで、[XML\Element] を選択します。
-7. [名前] フィールドに、「SWIFT」と入力します。
-    * SWIFT  
-8. [OK] をクリックします。
-9. ツリーで、「Xml\Message\Payments\Item\Vendor\Bank\SWIFT」を選択します。
-10. [追加] をクリックしてドロップ ダイアログを開きます。
-11. ツリーで、[Text\String] を選択します。
-12. [OK] をクリックします。
-13. ツリーで、「Xml\Message\Payments\Item\Vendor\Name\String」を選択します。
-14. [最大の長さ] フィールドに「100」を入力します。
-15. [マッピング] タブをクリックします。
-16. ツリーで、[model] を展開します。
-17. ツリーで、[model\Payments] を展開します。
-18. ツリーで、[model\Payments\Creditor] を展開します。
-19. ツリーで、[model\Payments\Creditor\Agent] を展開します。
-20. ツリーで、「model\Payments\Creditor\Agent\SWIFT」を選択します。
-21. ツリーで、「Xml\Message\Payments\Item = model.Payments\Vendor\Bank\SWIFT\String」を選択します。
-22. [バインド] をクリックします。
-23. [保存] をクリックします。
+## <a name="localize-the-base-format-of-the-electronic-document"></a><span data-ttu-id="090dd-202">電子ドキュメントの基準形式のローカライズ</span><span class="sxs-lookup"><span data-stu-id="090dd-202">Localize the base format of the electronic document</span></span>
+    * <span data-ttu-id="090dd-203">Litware Inc. がサポートする国固有の新しい要件があると想定します: - 支払トランザクション毎の債権者の銀行 SWIFT コードの値。</span><span class="sxs-lookup"><span data-stu-id="090dd-203">Assume that there are new country-specific requirements to be supported by Litware, Inc.:  - A value for the creditor’s bank SWIFT code in each payment transaction.</span></span>  <span data-ttu-id="090dd-204">- 生成ファイルの仕入先名のテキストの長さの 100 文字制限。</span><span class="sxs-lookup"><span data-stu-id="090dd-204">- A limit of 100 characters for the length of text for the vendor’s name in a generating file.</span></span>  
+    * <span data-ttu-id="090dd-205">国固有の新しい要件</span><span class="sxs-lookup"><span data-stu-id="090dd-205">New country-specific requirements</span></span>  
+    * <span data-ttu-id="090dd-206">必要な変更を取り入れるため、必要なコンフィギュレーションのドラフト バージョンを選択します。</span><span class="sxs-lookup"><span data-stu-id="090dd-206">Select the draft version of the desired configuration to introduce required changes.</span></span>  
+1. <span data-ttu-id="090dd-207">[デザイナー] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="090dd-207">Click Designer.</span></span>
+2. <span data-ttu-id="090dd-208">[展開] / [折りたたみ] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="090dd-208">Click Expand/collapse.</span></span>
+3. <span data-ttu-id="090dd-209">[展開] / [折りたたみ] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="090dd-209">Click Expand/collapse.</span></span>
+4. <span data-ttu-id="090dd-210">ツリーで、「Xml\Message\Payments\Item\Vendor\Bank」を選択します。</span><span class="sxs-lookup"><span data-stu-id="090dd-210">In the tree, select 'Xml\Message\Payments\Item\Vendor\Bank'.</span></span>
+5. <span data-ttu-id="090dd-211">[追加] をクリックしてドロップ ダイアログを開きます。</span><span class="sxs-lookup"><span data-stu-id="090dd-211">Click Add to open the drop dialog.</span></span>
+6. <span data-ttu-id="090dd-212">ツリーで、[XML\Element] を選択します。</span><span class="sxs-lookup"><span data-stu-id="090dd-212">In the tree, select 'XML\Element'.</span></span>
+7. <span data-ttu-id="090dd-213">[名前] フィールドに、「SWIFT」と入力します。</span><span class="sxs-lookup"><span data-stu-id="090dd-213">In the Name field, type 'SWIFT'.</span></span>
+    * <span data-ttu-id="090dd-214">SWIFT</span><span class="sxs-lookup"><span data-stu-id="090dd-214">SWIFT</span></span>  
+8. <span data-ttu-id="090dd-215">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="090dd-215">Click OK.</span></span>
+9. <span data-ttu-id="090dd-216">ツリーで、「Xml\Message\Payments\Item\Vendor\Bank\SWIFT」を選択します。</span><span class="sxs-lookup"><span data-stu-id="090dd-216">In the tree, select 'Xml\Message\Payments\Item\Vendor\Bank\SWIFT'.</span></span>
+10. <span data-ttu-id="090dd-217">[追加] をクリックしてドロップ ダイアログを開きます。</span><span class="sxs-lookup"><span data-stu-id="090dd-217">Click Add to open the drop dialog.</span></span>
+11. <span data-ttu-id="090dd-218">ツリーで、[Text\String] を選択します。</span><span class="sxs-lookup"><span data-stu-id="090dd-218">In the tree, select 'Text\String'.</span></span>
+12. <span data-ttu-id="090dd-219">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="090dd-219">Click OK.</span></span>
+13. <span data-ttu-id="090dd-220">ツリーで、「Xml\Message\Payments\Item\Vendor\Name\String」を選択します。</span><span class="sxs-lookup"><span data-stu-id="090dd-220">In the tree, select 'Xml\Message\Payments\Item\Vendor\Name\String'.</span></span>
+14. <span data-ttu-id="090dd-221">[最大の長さ] フィールドに「100」を入力します。</span><span class="sxs-lookup"><span data-stu-id="090dd-221">In the Maximum length field, enter '100'.</span></span>
+15. <span data-ttu-id="090dd-222">[マッピング] タブをクリックします。</span><span class="sxs-lookup"><span data-stu-id="090dd-222">Click the Mapping tab.</span></span>
+16. <span data-ttu-id="090dd-223">ツリーで、[model] を展開します。</span><span class="sxs-lookup"><span data-stu-id="090dd-223">In the tree, expand 'model'.</span></span>
+17. <span data-ttu-id="090dd-224">ツリーで、[model\Payments] を展開します。</span><span class="sxs-lookup"><span data-stu-id="090dd-224">In the tree, expand 'model\Payments'.</span></span>
+18. <span data-ttu-id="090dd-225">ツリーで、[model\Payments\Creditor] を展開します。</span><span class="sxs-lookup"><span data-stu-id="090dd-225">In the tree, expand 'model\Payments\Creditor'.</span></span>
+19. <span data-ttu-id="090dd-226">ツリーで、[model\Payments\Creditor\Agent] を展開します。</span><span class="sxs-lookup"><span data-stu-id="090dd-226">In the tree, expand 'model\Payments\Creditor\Agent'.</span></span>
+20. <span data-ttu-id="090dd-227">ツリーで、「model\Payments\Creditor\Agent\SWIFT」を選択します。</span><span class="sxs-lookup"><span data-stu-id="090dd-227">In the tree, select 'model\Payments\Creditor\Agent\SWIFT'.</span></span>
+21. <span data-ttu-id="090dd-228">ツリーで、「Xml\Message\Payments\Item = model.Payments\Vendor\Bank\SWIFT\String」を選択します。</span><span class="sxs-lookup"><span data-stu-id="090dd-228">In the tree, select 'Xml\Message\Payments\Item =  model.Payments\Vendor\Bank\SWIFT\String'.</span></span>
+22. <span data-ttu-id="090dd-229">[バインド] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="090dd-229">Click Bind.</span></span>
+23. <span data-ttu-id="090dd-230">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="090dd-230">Click Save.</span></span>
 
-## <a name="validate-the-localized-format"></a>ローカライズされた形式の検証
-1. [検証] をクリックします。
-2. ページを閉じます。
+## <a name="validate-the-localized-format"></a><span data-ttu-id="090dd-231">ローカライズされた形式の検証</span><span class="sxs-lookup"><span data-stu-id="090dd-231">Validate the localized format</span></span>
+1. <span data-ttu-id="090dd-232">[検証] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="090dd-232">Click Validate.</span></span>
+2. <span data-ttu-id="090dd-233">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="090dd-233">Close the page.</span></span>
 
-## <a name="change-the-status-of-the-current-version-of-the-base-format-configuration"></a>基準形式のコンフィギュレーションの現行バージョンの状態を変更
-    * 支払ドキュメントの生成および、そこから派生する形式のコンフィギュレーションの更新に使用できるよう、更新された基準形式のコンフィギュレーションの状態を [ドラフト] から [完了] に変更します。  
-1. [状態の変更] をクリックします。
-    * 選択したコンフィギュレーションの現在のバージョンが [ドラフト] 状態であることに注意してください。  
-2. [完了] をクリックします。
-3. [説明] フィールドに値を入力します。
-4. [OK] をクリックします。
-5. 一覧で、目的のレコードを見つけ、選択します。
+## <a name="change-the-status-of-the-current-version-of-the-base-format-configuration"></a><span data-ttu-id="090dd-234">基準形式のコンフィギュレーションの現行バージョンの状態を変更</span><span class="sxs-lookup"><span data-stu-id="090dd-234">Change the status of the current version of the base format configuration</span></span>
+    * <span data-ttu-id="090dd-235">支払ドキュメントの生成および、そこから派生する形式のコンフィギュレーションの更新に使用できるよう、更新された基準形式のコンフィギュレーションの状態を [ドラフト] から [完了] に変更します。</span><span class="sxs-lookup"><span data-stu-id="090dd-235">Change the status of the updated base format configuration from Draft to Completed to make it available for generation of payment documents and updates of format configurations derived from it.</span></span>  
+1. <span data-ttu-id="090dd-236">[状態の変更] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="090dd-236">Click Change status.</span></span>
+    * <span data-ttu-id="090dd-237">選択したコンフィギュレーションの現在のバージョンが [ドラフト] 状態であることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="090dd-237">Note that the current version of the selected configuration is in Draft status.</span></span>  
+2. <span data-ttu-id="090dd-238">[完了] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="090dd-238">Click Complete.</span></span>
+3. <span data-ttu-id="090dd-239">[説明] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="090dd-239">In the Description field, type a value.</span></span>
+4. <span data-ttu-id="090dd-240">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="090dd-240">Click OK.</span></span>
+5. <span data-ttu-id="090dd-241">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="090dd-241">In the list, find and select the desired record.</span></span>
 
-## <a name="change-the-base-version-for-the-custom-format-configuration"></a>カスタム形式のコンフィギュレーションの基準バージョンの変更
-    * Proseware, Inc. は最近発表された国固有の要件に従った電子支払ドキュメントの生成に使用できる BACS (英国の企業) コンフィギュレーションの新しいバージョン 1.2 が使用できることを通知されています。 Proseware, Inc. は国の標準としてこの使用を開始することを考えています。  これを実現するには、Proseware, Inc. はカスタム コンフィギュレーション BACS (英国関税) の基準コンフィギュレーション バージョンを変更する必要があります。 BACS (英国の企業) のバージョン 1.1 の代わりに 1.2 を使用します。  
-1. [組織管理] > [ワークスペース] > [電子申告] の順に移動します。
-2. Proseware, Inc. プロバイダーを選択し、有効なプロバイダーとしてマーク付けします。
-3. [有効に設定] をクリックします。
-4. [コンフィギュレーションをレポートする] をクリックします。
-5. ツリーで、「支払 (単純化モデル)」を展開します。
-6. ツリーで、「支払 (単純化モデル)」 \BACS (英国の企業)」を展開します。
-7. ツリーで、「支払 (単純化モデル)\BACS (英国の企業)\BACS (英国関税」を選択します。
-    * Proseware, Inc. が所有する BACS (英国関税) コンフィギュレーションを選択します。  
-    * 必要な変更を取り入れるため、選択したコンフィギュレーションのドラフト バージョンを使用します。  
-8. [再ベース] をクリックします。
-    * コンフィギュレーションを更新する新しい基準として適用されるよう、基準コンフィギュレーションの新しいバージョン 1.2 を選択します。  
-9. [OK] をクリックします。
-    * カスタム バージョンのマージと、自動手的にマージできない形式の変更を含む新しい基準バージョンのマージ間で競合が発見されていることに注意してください。  
+## <a name="change-the-base-version-for-the-custom-format-configuration"></a><span data-ttu-id="090dd-242">カスタム形式のコンフィギュレーションの基準バージョンの変更</span><span class="sxs-lookup"><span data-stu-id="090dd-242">Change the base version for the custom format configuration</span></span>
+    * <span data-ttu-id="090dd-243">Proseware, Inc. は最近発表された国固有の要件に従った電子支払ドキュメントの生成に使用できる BACS (英国の企業) コンフィギュレーションの新しいバージョン 1.2 が使用できることを通知されています。</span><span class="sxs-lookup"><span data-stu-id="090dd-243">Proseware, Inc. is informed that a new version 1.2 of BACS (UK fictitious) configuration is available to generate electronic payment documents in accordance to recently announced country-specific requirements.</span></span> <span data-ttu-id="090dd-244">Proseware, Inc. は国の標準としてこの使用を開始することを考えています。</span><span class="sxs-lookup"><span data-stu-id="090dd-244">Proseware, Inc. wants to start using it as a standard for the country.</span></span>  <span data-ttu-id="090dd-245">これを実現するには、Proseware, Inc. はカスタム コンフィギュレーション BACS (英国関税) の基準コンフィギュレーション バージョンを変更する必要があります。</span><span class="sxs-lookup"><span data-stu-id="090dd-245">To do this, Proseware, Inc. needs to change the base configuration version for the custom configuration BACS (UK fictitious custom).</span></span> <span data-ttu-id="090dd-246">BACS (英国の企業) のバージョン 1.1 の代わりに 1.2 を使用します。</span><span class="sxs-lookup"><span data-stu-id="090dd-246">Instead of version 1.1 of BACS (UK fictitious) use new version 1.2.</span></span>  
+1. <span data-ttu-id="090dd-247">[組織管理] > [ワークスペース] > [電子申告] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="090dd-247">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
+2. <span data-ttu-id="090dd-248">Proseware, Inc. プロバイダーを選択し、有効なプロバイダーとしてマーク付けします。</span><span class="sxs-lookup"><span data-stu-id="090dd-248">Select the Proseware, Inc. provider to mark it as active.</span></span>
+3. <span data-ttu-id="090dd-249">[有効に設定] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="090dd-249">Click Set active.</span></span>
+4. <span data-ttu-id="090dd-250">[コンフィギュレーションをレポートする] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="090dd-250">Click Reporting configurations.</span></span>
+5. <span data-ttu-id="090dd-251">ツリーで、「支払 (単純化モデル)」を展開します。</span><span class="sxs-lookup"><span data-stu-id="090dd-251">In the tree, expand 'Payments (simplified model)'.</span></span>
+6. <span data-ttu-id="090dd-252">ツリーで、「支払 (単純化モデル)」 \BACS (英国の企業)」を展開します。</span><span class="sxs-lookup"><span data-stu-id="090dd-252">In the tree, expand 'Payments (simplified model)\BACS (UK fictitious)'.</span></span>
+7. <span data-ttu-id="090dd-253">ツリーで、「支払 (単純化モデル)\BACS (英国の企業)\BACS (英国関税」を選択します。</span><span class="sxs-lookup"><span data-stu-id="090dd-253">In the tree, select 'Payments (simplified model)\BACS (UK fictitious)\BACS (UK fictitious custom)'.</span></span>
+    * <span data-ttu-id="090dd-254">Proseware, Inc. が所有する BACS (英国関税) コンフィギュレーションを選択します。</span><span class="sxs-lookup"><span data-stu-id="090dd-254">Select the BACS (UK fictitious custom) configuration, which is owned by Proseware, Inc.</span></span>  
+    * <span data-ttu-id="090dd-255">必要な変更を取り入れるため、選択したコンフィギュレーションのドラフト バージョンを使用します。</span><span class="sxs-lookup"><span data-stu-id="090dd-255">Use the draft version of the selected configuration to introduce required changes.</span></span>  
+8. <span data-ttu-id="090dd-256">[再ベース] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="090dd-256">Click Rebase.</span></span>
+    * <span data-ttu-id="090dd-257">コンフィギュレーションを更新する新しい基準として適用されるよう、基準コンフィギュレーションの新しいバージョン 1.2 を選択します。</span><span class="sxs-lookup"><span data-stu-id="090dd-257">Select the new version 1.2 of the base configuration to be applied as a new base for updating the configuration.</span></span>  
+9. <span data-ttu-id="090dd-258">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="090dd-258">Click OK.</span></span>
+    * <span data-ttu-id="090dd-259">カスタム バージョンのマージと、自動手的にマージできない形式の変更を含む新しい基準バージョンのマージ間で競合が発見されていることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="090dd-259">Note that some conflicts have been discovered between merging the custom version and a new base version representing some format changes that can’t be merged automatically.</span></span>  
 
-## <a name="resolve-rebase-conflicts"></a>再ベースの競合の解決
-1. [デザイナー] をクリックします。
-    * 仕入先名のテキストの長さ制限の変更が自動的に解決されていないことに注意してください。 したがって、これは競合の一覧に表示されます。 タイプの更新の各競合に対して、次のオプションが使用できます: - 前の基準値を適用して (グリッド上部にあるボタンを使用)、前の基準バージョンの値 (このケースでは 0) を用いる。  - 基準値を適用して (グリッド上部にあるボタンを使用)、新しいバージョンの値 (このケースでは 100) を用いる。  - 独自 (カスタム) の値 (ここでは 60) を保持します。  [基準値の適用] をクリックして仕入先名のテキストの長さに国固有の 100 文字の制限を適用します。  
-    * Proseware, Inc. および Litware, Inc. には、 管理形式に自動的にマージされる関連コンポーネントを含む IBAN および SWIFT コードを使用したこの形式のカスタムおよびローカル バージョンがあることに注意してください。  
-2. [基準値の適用] をクリックします。
-    * [基準値の適用] をクリックして仕入先名の国固有の 100 文字の制限を適用します。  
-3. [保存] をクリックします。
-    * 形式を保存すると、競合の一覧から解決済の競合が削除されます。  
-4. ページを閉じます。
+## <a name="resolve-rebase-conflicts"></a><span data-ttu-id="090dd-260">再ベースの競合の解決</span><span class="sxs-lookup"><span data-stu-id="090dd-260">Resolve rebase conflicts</span></span>
+1. <span data-ttu-id="090dd-261">[デザイナー] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="090dd-261">Click Designer.</span></span>
+    * <span data-ttu-id="090dd-262">仕入先名のテキストの長さ制限の変更が自動的に解決されていないことに注意してください。</span><span class="sxs-lookup"><span data-stu-id="090dd-262">Note that changes to the vendor’s name text length limit couldn’t be resolved automatically.</span></span> <span data-ttu-id="090dd-263">したがって、これは競合の一覧に表示されます。</span><span class="sxs-lookup"><span data-stu-id="090dd-263">Therefore, this is presented in a conflicts list.</span></span> <span data-ttu-id="090dd-264">タイプの更新の各競合に対して、次のオプションが使用できます: - 前の基準値を適用して (グリッド上部にあるボタンを使用)、前の基準バージョンの値 (このケースでは 0) を用いる。</span><span class="sxs-lookup"><span data-stu-id="090dd-264">For each conflict of type Update, the following options are available:  - Apply a prior base value (button on top of the grid) to bring in the previous base version value (0 in our case).</span></span>  <span data-ttu-id="090dd-265">- 基準値を適用して (グリッド上部にあるボタンを使用)、新しいバージョンの値 (このケースでは 100) を用いる。</span><span class="sxs-lookup"><span data-stu-id="090dd-265">- Apply a base value (button on top of the grid) to bring in the new base version value (100 in our case).</span></span>  <span data-ttu-id="090dd-266">- 独自 (カスタム) の値 (ここでは 60) を保持します。</span><span class="sxs-lookup"><span data-stu-id="090dd-266">- Keep your own (custom) value (60 in our case).</span></span>  <span data-ttu-id="090dd-267">[基準値の適用] をクリックして仕入先名のテキストの長さに国固有の 100 文字の制限を適用します。</span><span class="sxs-lookup"><span data-stu-id="090dd-267">Click Apply base value to apply a country-specific limit of 100 characters for vendor’s name text length.</span></span>  
+    * <span data-ttu-id="090dd-268">Proseware, Inc. および Litware, Inc. には、 管理形式に自動的にマージされる関連コンポーネントを含む IBAN および SWIFT コードを使用したこの形式のカスタムおよびローカル バージョンがあることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="090dd-268">Note that Proseware, Inc. and Litware, Inc. have custom and local versions of this format using IBAN and SWIFT codes with related components that are automatically merged in the managing format.</span></span>  
+2. <span data-ttu-id="090dd-269">[基準値の適用] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="090dd-269">Click Apply base value.</span></span>
+    * <span data-ttu-id="090dd-270">[基準値の適用] をクリックして仕入先名の国固有の 100 文字の制限を適用します。</span><span class="sxs-lookup"><span data-stu-id="090dd-270">Click Apply base value to apply the country-specific limit of 100 characters for vendor names.</span></span>  
+3. <span data-ttu-id="090dd-271">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="090dd-271">Click Save.</span></span>
+    * <span data-ttu-id="090dd-272">形式を保存すると、競合の一覧から解決済の競合が削除されます。</span><span class="sxs-lookup"><span data-stu-id="090dd-272">Saving the format will remove resolved conflicts from the conflicts list.</span></span>  
+4. <span data-ttu-id="090dd-273">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="090dd-273">Close the page.</span></span>
 
-## <a name="change-the-status-of-the-new-version-of-the-custom-format-configuration"></a>カスタム形式のコンフィギュレーションの新規バージョンの状態を変更
-1. [状態の変更] をクリックします。
-    * 更新されたカスタム形式のコンフィギュレーションの状態を [ドラフト] から [完了] に変更します。 この結果、支払ドキュメントの生成に形式のコンフィギュレーションを使用することができます。 選択したコンフィギュレーションの現在のバージョンが [ドラフト] 状態であることに注意してください。  
-2. [完了] をクリックします。
-3. [説明] フィールドに値を入力します。
-4. [OK] をクリックします。
-    * 作成したコンフィギュレーションが完了済のバージョン 1.2.2 として保存されていることに注意してください: 支払 (単純化モデル) データ モデルのバージョン 1 に基づく基準 BACS (英国関税) 形式のバージョン 2 に基づく基準 BACS (英国の企業) 形式のバージョン 2。  
+## <a name="change-the-status-of-the-new-version-of-the-custom-format-configuration"></a><span data-ttu-id="090dd-274">カスタム形式のコンフィギュレーションの新規バージョンの状態を変更</span><span class="sxs-lookup"><span data-stu-id="090dd-274">Change the status of the new version of the custom format configuration</span></span>
+1. <span data-ttu-id="090dd-275">[状態の変更] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="090dd-275">Click Change status.</span></span>
+    * <span data-ttu-id="090dd-276">更新されたカスタム形式のコンフィギュレーションの状態を [ドラフト] から [完了] に変更します。</span><span class="sxs-lookup"><span data-stu-id="090dd-276">Change the status of the updated, custom format configuration from Draft to Completed.</span></span> <span data-ttu-id="090dd-277">この結果、支払ドキュメントの生成に形式のコンフィギュレーションを使用することができます。</span><span class="sxs-lookup"><span data-stu-id="090dd-277">This will make the format configuration available for generating payment documents.</span></span> <span data-ttu-id="090dd-278">選択したコンフィギュレーションの現在のバージョンが [ドラフト] 状態であることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="090dd-278">Note that the current version of the selected configuration is in Draft status.</span></span>  
+2. <span data-ttu-id="090dd-279">[完了] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="090dd-279">Click Complete.</span></span>
+3. <span data-ttu-id="090dd-280">[説明] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="090dd-280">In the Description field, type a value.</span></span>
+4. <span data-ttu-id="090dd-281">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="090dd-281">Click OK.</span></span>
+    * <span data-ttu-id="090dd-282">作成したコンフィギュレーションが完了済のバージョン 1.2.2 として保存されていることに注意してください: 支払 (単純化モデル) データ モデルのバージョン 1 に基づく基準 BACS (英国関税) 形式のバージョン 2 に基づく基準 BACS (英国の企業) 形式のバージョン 2。</span><span class="sxs-lookup"><span data-stu-id="090dd-282">Note that the created configuration is saved as completed version 1.2.2: version 2 of base BACS (UK fictitious custom) format, which is based on version 2 of base BACS (UK fictitious) format, which is based on version 1 of Payments (simplified model) data model.</span></span>  
 
-## <a name="test-the-customized-format-for-payment-files-generation"></a>カスタマイズされた形式の支払ファイル生成テストの実行
-    * Dynamics 365 for Finance and Operations, Enterprise Edition 並列セッション内の手順「作成済みの形式を使用して支払用の電子ドキュメントを生成」にあるステップを実行します。 電子支払方法のパラメーターで作成した「BACS (英国関税)」形式を選択します。 Proseware, Inc. が最近導入した、地域要件に対応した IBAN 口座コードを表す XML ノードが作成した支払ファイルに含まれていることを確認します。 ファイルには Litware, Inc. が最近導入した、国要件に沿った SWIFT 銀行コードを表す XML ノードも含まれている必要があります。  
+## <a name="test-the-customized-format-for-payment-files-generation"></a><span data-ttu-id="090dd-283">カスタマイズされた形式の支払ファイル生成テストの実行</span><span class="sxs-lookup"><span data-stu-id="090dd-283">Test the customized format for payment files generation</span></span>
+    * <span data-ttu-id="090dd-284">Dynamics 365 for Finance and Operations, Enterprise Edition 並列セッション内の手順「作成済みの形式を使用して支払用の電子ドキュメントを生成」にあるステップを実行します。</span><span class="sxs-lookup"><span data-stu-id="090dd-284">Complete the steps in the “Use created format to generate electronic documents for payments” procedure in parallel Dynamics 365 for Finance and Operations, Enterprise edition session.</span></span> <span data-ttu-id="090dd-285">電子支払方法のパラメーターで作成した「BACS (英国関税)」形式を選択します。</span><span class="sxs-lookup"><span data-stu-id="090dd-285">Select the created ‘BACS (UK fictitious custom)’ format in electronic payment method parameters.</span></span> <span data-ttu-id="090dd-286">Proseware, Inc. が最近導入した、地域要件に対応した IBAN 口座コードを表す XML ノードが作成した支払ファイルに含まれていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="090dd-286">Make sure that the created payment file contains recently introduced by Proseware, Inc. XML node presenting IBAN account code in accordance to regional requirements.</span></span> <span data-ttu-id="090dd-287">ファイルには Litware, Inc. が最近導入した、国要件に沿った SWIFT 銀行コードを表す XML ノードも含まれている必要があります。</span><span class="sxs-lookup"><span data-stu-id="090dd-287">The file also should contain the recently introduced by Litware, Inc. XML node presenting SWIFT bank code in accordance to country requirements.</span></span>  
 
 

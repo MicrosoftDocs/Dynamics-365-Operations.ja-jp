@@ -15,718 +15,718 @@ ms.custom: 102083
 ms.assetid: f50585e8-4ef6-4cd8-90d8-c8d6a65b22b8
 ms.search.region: global
 ms.author: josaw
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: cdad1d6c2466b47b07133a5335866ef6881609ca
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: f43b3cc1d41d96b2236d07d05bacc1e1bc25af87
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="new-task-guides-february-2016"></a>新しいタスク ガイド (2016 年 2 月)
+# <a name="new-task-guides-february-2016"></a><span data-ttu-id="867c4-104">新しいタスク ガイド (2016 年 2 月)</span><span class="sxs-lookup"><span data-stu-id="867c4-104">New task guides (February 2016)</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-このトピックには、2016 年 2 月現在に Microsoft BPM ライブラリにリリースされたタスク ガイドが掲載されています。  発行されたライブラリには、Microsoft Dynamics AX 用の APQC 統合ライブラリ (2016 年 2 月)、および「作業の開始」(2016 年 2 月) が含まれます。
+<span data-ttu-id="867c4-105">このトピックには、2016 年 2 月現在に Microsoft BPM ライブラリにリリースされたタスク ガイドが掲載されています。</span><span class="sxs-lookup"><span data-stu-id="867c4-105">This topic lists the Task guides that were released to the Microsoft BPM libraries as of February 2016.</span></span>  <span data-ttu-id="867c4-106">発行されたライブラリには、Microsoft Dynamics AX 用の APQC 統合ライブラリ (2016 年 2 月)、および「作業の開始」(2016 年 2 月) が含まれます。</span><span class="sxs-lookup"><span data-stu-id="867c4-106">The libraries that were published include the (February 2016) APQC Unified Library for Microsoft Dynamics AX and (February 2016) Getting started.</span></span>
 
-<a name="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-ax"></a>Microsoft Dynamics AX 用の APQC 統合ライブラリに含まれるタスク ガイド (2016 年 2 月)
+<a name="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-ax"></a><span data-ttu-id="867c4-107">Microsoft Dynamics AX 用の APQC 統合ライブラリに含まれるタスク ガイド (2016 年 2 月)</span><span class="sxs-lookup"><span data-stu-id="867c4-107">Task guides in the (February 2016) APQC Unified Library for Microsoft Dynamics AX</span></span>
 ---------------------------------------------------------------------------------
 
-APQC 統合ライブラリ (2016 年 2 月) には、Dynamics AX 7.0.0 リリースのヘルプの使用を想定したタスク ガイドが含まれています。 これらのタスク ガイドのローカライズされたバージョンが必要な場合、Microsoft Dynamics AX 用の APQC 統合ライブラリ (2016 年 5 月) が利用可能です。 タスク ガイド ライブラリのヘルプ システムを接続する方法の詳細については、「[ヘルプの入門](help-overview.md)」を参照してください。
+<span data-ttu-id="867c4-108">APQC 統合ライブラリ (2016 年 2 月) には、Dynamics AX 7.0.0 リリースのヘルプの使用を想定したタスク ガイドが含まれています。</span><span class="sxs-lookup"><span data-stu-id="867c4-108">The (February 2016) APQC Unified library contains the Task guides that are intended to be used for Help with the Dynamics AX 7.0.0 release.</span></span> <span data-ttu-id="867c4-109">これらのタスク ガイドのローカライズされたバージョンが必要な場合、Microsoft Dynamics AX 用の APQC 統合ライブラリ (2016 年 5 月) が利用可能です。</span><span class="sxs-lookup"><span data-stu-id="867c4-109">If you need localized versions of these Task guides, they are available in the (May 2016) APQC Unified Library for Microsoft Dynamics AX.</span></span> <span data-ttu-id="867c4-110">タスク ガイド ライブラリのヘルプ システムを接続する方法の詳細については、「[ヘルプの入門](help-overview.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="867c4-110">For more information about how to connect the help system to a Task guide library, see [Get started with Help](help-overview.md).</span></span>
 
-### <a name="accounts-payable"></a>買掛金管理
+### <a name="accounts-payable"></a><span data-ttu-id="867c4-111">買掛金管理</span><span class="sxs-lookup"><span data-stu-id="867c4-111">Accounts payable</span></span>
 
 |                                                           |                    |
 |-----------------------------------------------------------|--------------------|
-| **BPM 行**                                              | **国/地域** |
-| 仕入先請求書を使用した AP システムの主請求書データ        | グローバル             |
-| 請求仕訳帳を使用した AP システムの主請求書データ     | グローバル             |
-| 請求管理グループを使用した AP システムの主請求書データ        | グローバル             |
-| 仕入帳を使用した AP システムの主請求書データ    | グローバル             |
-| 仕入先請求書の受領記録および入庫済数量との照合 | グローバル             |
-| 買掛金請求書照合の検証の設定       | グローバル             |
-| 仕入先請求ポリシーを設定します                            | グローバル             |
+| <span data-ttu-id="867c4-112">**BPM 行**</span><span class="sxs-lookup"><span data-stu-id="867c4-112">**BPM Line**</span></span>                                              | <span data-ttu-id="867c4-113">**国/地域**</span><span class="sxs-lookup"><span data-stu-id="867c4-113">**Country/Region**</span></span> |
+| <span data-ttu-id="867c4-114">仕入先請求書を使用した AP システムの主請求書データ</span><span class="sxs-lookup"><span data-stu-id="867c4-114">Key invoice data in AP system using vendor invoice</span></span>        | <span data-ttu-id="867c4-115">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-115">Global</span></span>             |
+| <span data-ttu-id="867c4-116">請求仕訳帳を使用した AP システムの主請求書データ</span><span class="sxs-lookup"><span data-stu-id="867c4-116">Key invoice data into AP system using invoice journal</span></span>     | <span data-ttu-id="867c4-117">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-117">Global</span></span>             |
+| <span data-ttu-id="867c4-118">請求管理グループを使用した AP システムの主請求書データ</span><span class="sxs-lookup"><span data-stu-id="867c4-118">Key invoice data into AP system using invoice pool</span></span>        | <span data-ttu-id="867c4-119">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-119">Global</span></span>             |
+| <span data-ttu-id="867c4-120">仕入帳を使用した AP システムの主請求書データ</span><span class="sxs-lookup"><span data-stu-id="867c4-120">Key invoice data into AP system using invoice register</span></span>    | <span data-ttu-id="867c4-121">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-121">Global</span></span>             |
+| <span data-ttu-id="867c4-122">仕入先請求書の受領記録および入庫済数量との照合</span><span class="sxs-lookup"><span data-stu-id="867c4-122">Record vendor invoice and match against received quantity</span></span> | <span data-ttu-id="867c4-123">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-123">Global</span></span>             |
+| <span data-ttu-id="867c4-124">買掛金請求書照合の検証の設定</span><span class="sxs-lookup"><span data-stu-id="867c4-124">Set up Accounts payable invoice matching validation</span></span>       | <span data-ttu-id="867c4-125">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-125">Global</span></span>             |
+| <span data-ttu-id="867c4-126">仕入先請求ポリシーを設定します</span><span class="sxs-lookup"><span data-stu-id="867c4-126">Set up vendor invoice policies</span></span>                            | <span data-ttu-id="867c4-127">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-127">Global</span></span>             |
 
  
 
-### <a name="accounts-receivable"></a>売掛金管理
+### <a name="accounts-receivable"></a><span data-ttu-id="867c4-128">売掛金管理</span><span class="sxs-lookup"><span data-stu-id="867c4-128">Accounts receivable</span></span>
 
 |                                                             |                    |
 |-------------------------------------------------------------|--------------------|
-| **BPM 行**                                                | **国/地域** |
-| 定期的な自由書式の請求書のテンプレートの顧客への割り当て | グローバル             |
-| 督促状の順序の作成                         | グローバル             |
-| 顧客の口座引落の委任状の作成                | グローバル             |
-| 自由書式の請求書テンプレートを作成します                         | グローバル             |
-| 顧客の損金処理仕訳帳の作成                   | グローバル             |
-| 範囲のある利息コードを作成                        | グローバル             |
-| 自由書式の請求書の作成および処理                       | グローバル             |
-| 販売注文請求書の作成                                 | グローバル             |
-| 定期的な自由書式の請求書の生成と転記              | グローバル             |
-| 督促状の処理                                  | グローバル             |
-| 利息の処理                                            | グローバル             |
-| 回収情報の確認                              | グローバル             |
-| 売掛金勘定のエイジング情報の設定および生成   | グローバル             |
+| <span data-ttu-id="867c4-129">**BPM 行**</span><span class="sxs-lookup"><span data-stu-id="867c4-129">**BPM Line**</span></span>                                                | <span data-ttu-id="867c4-130">**国/地域**</span><span class="sxs-lookup"><span data-stu-id="867c4-130">**Country/Region**</span></span> |
+| <span data-ttu-id="867c4-131">定期的な自由書式の請求書のテンプレートの顧客への割り当て</span><span class="sxs-lookup"><span data-stu-id="867c4-131">Assign a recurring free text invoice template to a customer</span></span> | <span data-ttu-id="867c4-132">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-132">Global</span></span>             |
+| <span data-ttu-id="867c4-133">督促状の順序の作成</span><span class="sxs-lookup"><span data-stu-id="867c4-133">Create a collection letter sequence</span></span>                         | <span data-ttu-id="867c4-134">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-134">Global</span></span>             |
+| <span data-ttu-id="867c4-135">顧客の口座引落の委任状の作成</span><span class="sxs-lookup"><span data-stu-id="867c4-135">Create a direct debit mandate for a customer</span></span>                | <span data-ttu-id="867c4-136">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-136">Global</span></span>             |
+| <span data-ttu-id="867c4-137">自由書式の請求書テンプレートを作成します</span><span class="sxs-lookup"><span data-stu-id="867c4-137">Create a free text invoice template</span></span>                         | <span data-ttu-id="867c4-138">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-138">Global</span></span>             |
+| <span data-ttu-id="867c4-139">顧客の損金処理仕訳帳の作成</span><span class="sxs-lookup"><span data-stu-id="867c4-139">Create a write off journal for a customer</span></span>                   | <span data-ttu-id="867c4-140">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-140">Global</span></span>             |
+| <span data-ttu-id="867c4-141">範囲のある利息コードを作成</span><span class="sxs-lookup"><span data-stu-id="867c4-141">Create an interest code with a range</span></span>                        | <span data-ttu-id="867c4-142">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-142">Global</span></span>             |
+| <span data-ttu-id="867c4-143">自由書式の請求書の作成および処理</span><span class="sxs-lookup"><span data-stu-id="867c4-143">Create and process free text invoices</span></span>                       | <span data-ttu-id="867c4-144">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-144">Global</span></span>             |
+| <span data-ttu-id="867c4-145">販売注文請求書の作成</span><span class="sxs-lookup"><span data-stu-id="867c4-145">Create sales order invoices</span></span>                                 | <span data-ttu-id="867c4-146">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-146">Global</span></span>             |
+| <span data-ttu-id="867c4-147">定期的な自由書式の請求書の生成と転記</span><span class="sxs-lookup"><span data-stu-id="867c4-147">Generate and post recurring free text invoices</span></span>              | <span data-ttu-id="867c4-148">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-148">Global</span></span>             |
+| <span data-ttu-id="867c4-149">督促状の処理</span><span class="sxs-lookup"><span data-stu-id="867c4-149">Process collection letters</span></span>                                  | <span data-ttu-id="867c4-150">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-150">Global</span></span>             |
+| <span data-ttu-id="867c4-151">利息の処理</span><span class="sxs-lookup"><span data-stu-id="867c4-151">Process interest</span></span>                                            | <span data-ttu-id="867c4-152">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-152">Global</span></span>             |
+| <span data-ttu-id="867c4-153">回収情報の確認</span><span class="sxs-lookup"><span data-stu-id="867c4-153">Review collections information</span></span>                              | <span data-ttu-id="867c4-154">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-154">Global</span></span>             |
+| <span data-ttu-id="867c4-155">売掛金勘定のエイジング情報の設定および生成</span><span class="sxs-lookup"><span data-stu-id="867c4-155">Set up and generate accounts receivable aging information</span></span>   | <span data-ttu-id="867c4-156">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-156">Global</span></span>             |
 
  
 
-### <a name="cash-and-bank-management"></a>現金および銀行管理
+### <a name="cash-and-bank-management"></a><span data-ttu-id="867c4-157">現金および銀行管理</span><span class="sxs-lookup"><span data-stu-id="867c4-157">Cash and bank management</span></span>
 
 |                                                                      |                    |
 |----------------------------------------------------------------------|--------------------|
-| **BPM 行**                                                         | **国/地域** |
-| 信用状の銀行融資契約を作成                | グローバル             |
-| 信用保証状の銀行融資契約を作成             | グローバル             |
-| 顧客の支払の概要                                           | グローバル             |
-| 仕入先の支払手数料の定義                                           | グローバル             |
-| 仕入先の支払条件の定義                                          | グローバル             |
-| 顧客支払の預金                                            | グローバル             |
-| 顧客の支払方法の設定                                 | グローバル             |
-| 顧客支払手数料の設定                                      | グローバル             |
-| 顧客支払条件の設定                                     | グローバル             |
-| 輸出信用状                                              | グローバル             |
-| 輸入信用状                                              | グローバル             |
-| 信用保証状のトランザクション                                      | グローバル             |
-| 顧客の先日付小切手の登録と転記                   | グローバル             |
-| 仕入先からの先日付小切手を登録および転記                     | グローバル             |
-| 信用状についての銀行融資と転記プロファイルの設定     | グローバル             |
-| 信用保証状についての銀行融資と転記プロファイルの設定 | グローバル             |
-| 先日付小切手の設定                                              | グローバル             |
-| 仕入先の先日付小切手を決済                                | グローバル             |
-| 顧客からの先日付小切手を決済                             | グローバル             |
-| 仕入先の支払の概要                                              | グローバル             |
+| <span data-ttu-id="867c4-158">**BPM 行**</span><span class="sxs-lookup"><span data-stu-id="867c4-158">**BPM Line**</span></span>                                                         | <span data-ttu-id="867c4-159">**国/地域**</span><span class="sxs-lookup"><span data-stu-id="867c4-159">**Country/Region**</span></span> |
+| <span data-ttu-id="867c4-160">信用状の銀行融資契約を作成</span><span class="sxs-lookup"><span data-stu-id="867c4-160">Create a bank facility agreement for letter of credit</span></span>                | <span data-ttu-id="867c4-161">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-161">Global</span></span>             |
+| <span data-ttu-id="867c4-162">信用保証状の銀行融資契約を作成</span><span class="sxs-lookup"><span data-stu-id="867c4-162">Create a bank facility agreement for letter of guarantee</span></span>             | <span data-ttu-id="867c4-163">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-163">Global</span></span>             |
+| <span data-ttu-id="867c4-164">顧客の支払の概要</span><span class="sxs-lookup"><span data-stu-id="867c4-164">Customer payments overview</span></span>                                           | <span data-ttu-id="867c4-165">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-165">Global</span></span>             |
+| <span data-ttu-id="867c4-166">仕入先の支払手数料の定義</span><span class="sxs-lookup"><span data-stu-id="867c4-166">Define vendor payment fees</span></span>                                           | <span data-ttu-id="867c4-167">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-167">Global</span></span>             |
+| <span data-ttu-id="867c4-168">仕入先の支払条件の定義</span><span class="sxs-lookup"><span data-stu-id="867c4-168">Define vendor payment terms</span></span>                                          | <span data-ttu-id="867c4-169">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-169">Global</span></span>             |
+| <span data-ttu-id="867c4-170">顧客支払の預金</span><span class="sxs-lookup"><span data-stu-id="867c4-170">Deposit customer payments</span></span>                                            | <span data-ttu-id="867c4-171">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-171">Global</span></span>             |
+| <span data-ttu-id="867c4-172">顧客の支払方法の設定</span><span class="sxs-lookup"><span data-stu-id="867c4-172">Establish customer method of payment</span></span>                                 | <span data-ttu-id="867c4-173">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-173">Global</span></span>             |
+| <span data-ttu-id="867c4-174">顧客支払手数料の設定</span><span class="sxs-lookup"><span data-stu-id="867c4-174">Establish customer payment fees</span></span>                                      | <span data-ttu-id="867c4-175">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-175">Global</span></span>             |
+| <span data-ttu-id="867c4-176">顧客支払条件の設定</span><span class="sxs-lookup"><span data-stu-id="867c4-176">Establish customer payment terms</span></span>                                     | <span data-ttu-id="867c4-177">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-177">Global</span></span>             |
+| <span data-ttu-id="867c4-178">輸出信用状</span><span class="sxs-lookup"><span data-stu-id="867c4-178">Export letter of credit</span></span>                                              | <span data-ttu-id="867c4-179">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-179">Global</span></span>             |
+| <span data-ttu-id="867c4-180">輸入信用状</span><span class="sxs-lookup"><span data-stu-id="867c4-180">Import letter of credit</span></span>                                              | <span data-ttu-id="867c4-181">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-181">Global</span></span>             |
+| <span data-ttu-id="867c4-182">信用保証状のトランザクション</span><span class="sxs-lookup"><span data-stu-id="867c4-182">Letter of guarantee transaction</span></span>                                      | <span data-ttu-id="867c4-183">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-183">Global</span></span>             |
+| <span data-ttu-id="867c4-184">顧客の先日付小切手の登録と転記</span><span class="sxs-lookup"><span data-stu-id="867c4-184">Register and post a postdated check for a customer</span></span>                   | <span data-ttu-id="867c4-185">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-185">Global</span></span>             |
+| <span data-ttu-id="867c4-186">仕入先からの先日付小切手を登録および転記</span><span class="sxs-lookup"><span data-stu-id="867c4-186">Register and post a postdated check for a vendor</span></span>                     | <span data-ttu-id="867c4-187">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-187">Global</span></span>             |
+| <span data-ttu-id="867c4-188">信用状についての銀行融資と転記プロファイルの設定</span><span class="sxs-lookup"><span data-stu-id="867c4-188">Set up bank facilities and posting profiles for letter of credit</span></span>     | <span data-ttu-id="867c4-189">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-189">Global</span></span>             |
+| <span data-ttu-id="867c4-190">信用保証状についての銀行融資と転記プロファイルの設定</span><span class="sxs-lookup"><span data-stu-id="867c4-190">Set up bank facilities and posting profiles for letters of guarantee</span></span> | <span data-ttu-id="867c4-191">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-191">Global</span></span>             |
+| <span data-ttu-id="867c4-192">先日付小切手の設定</span><span class="sxs-lookup"><span data-stu-id="867c4-192">Set up postdated checks</span></span>                                              | <span data-ttu-id="867c4-193">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-193">Global</span></span>             |
+| <span data-ttu-id="867c4-194">仕入先の先日付小切手を決済</span><span class="sxs-lookup"><span data-stu-id="867c4-194">Settle a postdated check for a vendor</span></span>                                | <span data-ttu-id="867c4-195">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-195">Global</span></span>             |
+| <span data-ttu-id="867c4-196">顧客からの先日付小切手を決済</span><span class="sxs-lookup"><span data-stu-id="867c4-196">Settle a postdated check from a customer</span></span>                             | <span data-ttu-id="867c4-197">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-197">Global</span></span>             |
+| <span data-ttu-id="867c4-198">仕入先の支払の概要</span><span class="sxs-lookup"><span data-stu-id="867c4-198">Vendor payment overview</span></span>                                              | <span data-ttu-id="867c4-199">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-199">Global</span></span>             |
 
  
 
-### <a name="compliance"></a>コンプライアンス
+### <a name="compliance"></a><span data-ttu-id="867c4-200">コンプライアンス</span><span class="sxs-lookup"><span data-stu-id="867c4-200">Compliance</span></span>
 
 |                                            |                    |
 |--------------------------------------------|--------------------|
-| **BPM 行**                               | **国/地域** |
-| 元伝票の監査ポリシーの定義 | グローバル             |
+| <span data-ttu-id="867c4-201">**BPM 行**</span><span class="sxs-lookup"><span data-stu-id="867c4-201">**BPM Line**</span></span>                               | <span data-ttu-id="867c4-202">**国/地域**</span><span class="sxs-lookup"><span data-stu-id="867c4-202">**Country/Region**</span></span> |
+| <span data-ttu-id="867c4-203">元伝票の監査ポリシーの定義</span><span class="sxs-lookup"><span data-stu-id="867c4-203">Define audit policies for source documents</span></span> | <span data-ttu-id="867c4-204">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-204">Global</span></span>             |
 
  
 
-### <a name="cost-management"></a>原価管理
+### <a name="cost-management"></a><span data-ttu-id="867c4-205">原価管理</span><span class="sxs-lookup"><span data-stu-id="867c4-205">Cost management</span></span>
 
 |                                                                     |                    |
 |---------------------------------------------------------------------|--------------------|
-| **BPM 行**                                                        | **国/地域** |
-| 製造オーダーの有効原価、見積原価、実現原価を比較 | グローバル             |
-| 原価対象の原価のエントリの表示                                 | グローバル             |
-| 原価オブジェクト残高の表示                                            | グローバル             |
-| 製造オーダーの現在の仕掛品ステータスの表示                       | グローバル             |
-| 原価オブジェクトによる在庫明細書および KPI の表示                     | グローバル             |
+| <span data-ttu-id="867c4-206">**BPM 行**</span><span class="sxs-lookup"><span data-stu-id="867c4-206">**BPM Line**</span></span>                                                        | <span data-ttu-id="867c4-207">**国/地域**</span><span class="sxs-lookup"><span data-stu-id="867c4-207">**Country/Region**</span></span> |
+| <span data-ttu-id="867c4-208">製造オーダーの有効原価、見積原価、実現原価を比較</span><span class="sxs-lookup"><span data-stu-id="867c4-208">Compare active, estimated, and realized costs on a production order</span></span> | <span data-ttu-id="867c4-209">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-209">Global</span></span>             |
+| <span data-ttu-id="867c4-210">原価対象の原価のエントリの表示</span><span class="sxs-lookup"><span data-stu-id="867c4-210">View cost entries for a cost object</span></span>                                 | <span data-ttu-id="867c4-211">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-211">Global</span></span>             |
+| <span data-ttu-id="867c4-212">原価オブジェクト残高の表示</span><span class="sxs-lookup"><span data-stu-id="867c4-212">View cost object balance</span></span>                                            | <span data-ttu-id="867c4-213">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-213">Global</span></span>             |
+| <span data-ttu-id="867c4-214">製造オーダーの現在の仕掛品ステータスの表示</span><span class="sxs-lookup"><span data-stu-id="867c4-214">View current WIP status on a production order</span></span>                       | <span data-ttu-id="867c4-215">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-215">Global</span></span>             |
+| <span data-ttu-id="867c4-216">原価オブジェクトによる在庫明細書および KPI の表示</span><span class="sxs-lookup"><span data-stu-id="867c4-216">View inventory statement and KPI by cost object</span></span>                     | <span data-ttu-id="867c4-217">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-217">Global</span></span>             |
 
  
 
-### <a name="countryregion-functionality"></a>国/地域の機能
+### <a name="countryregion-functionality"></a><span data-ttu-id="867c4-218">国/地域の機能</span><span class="sxs-lookup"><span data-stu-id="867c4-218">Country/Region functionality</span></span>
 
 |                                                                                                        |                                 |
 |--------------------------------------------------------------------------------------------------------|---------------------------------|
-| **BPM 行**                                                                                           | **国/地域**              |
-| BAS 報告書ボックスの追加とオーストラリア Business Activity Statement (BAS) の生成                        | オーストラリアおよびニュージーランド       |
-| オーストラリアの BAS に使用する理由コードの設定                                                                  | オーストラリアおよびニュージーランド       |
-| 顧客 ID への支払伝票形式の割り当て                                                     | デンマーク                         |
-| 公的機関顧客の顧客請求書の作成および転記                                        | デンマーク                         |
-| 公的機関顧客の自由書式の請求書の作成および転記                                       | デンマーク                         |
-| 公的機関顧客のプロジェクト請求書の作成および転記                                         | デンマーク                         |
-| OIOUBL 電子請求のコンフィギュレーションのインポート                                                      | デンマーク                         |
-| 支払伝票がある自由書式の請求書を転記                                                           | デンマーク                         |
-| 支払伝票があるプロジェクト請求書を転記                                                             | デンマーク                         |
-| 支払伝票がある売上請求書の転記                                                               | デンマーク                         |
-| OIOUBL 電子請求用の顧客 ID の設定                                               | デンマーク                         |
-| 支払伝票形式の設定                                                                             | デンマーク                         |
-| プロジェクト請求書の支払伝票形式の設定                                                         | デンマーク                         |
-| SEPA 支払形式を使用した仕入先支払の作成およびエクスポート                                          | ヨーロッパ                          |
-| 口座引落命令がある顧客の支払の作成                                            | ヨーロッパ                          |
-| EUR-00011 EU 販売リスト レポートの生成                                                            | ヨーロッパ                          |
-| EUR-00011 EU 販売リスト レポートの設定                                                               | ヨーロッパ                          |
-| EUR-00012 EU エントリの証明書を発行                                                                | ヨーロッパ                          |
-| EU 登録証明書を受信する EUR-00012                                                              | ヨーロッパ                          |
-| SEPA 口座振替のコンフィギュレーションのインポート                                                              | ヨーロッパ                          |
-| SEPA 口座引落コンフィギュレーションのインポート                                                                 | ヨーロッパ                          |
-| SEPA 口座振替用の会社の銀行口座の設定                                                 | ヨーロッパ                          |
-| SEPA 口座引落用の会社の銀行口座の設定                                                    | ヨーロッパ                          |
-| 顧客の設定と SEPA 口座引落用の顧客の銀行口座の設定                                     | ヨーロッパ                          |
-| SEPA 口座振替用の支払方法の設定                                                      | ヨーロッパ                          |
-| SEPA 口座引落用の支払方法の設定                                                         | ヨーロッパ                          |
-| SEPA 口座振替のベンダーおよびベンダーの銀行口座の設定                                      | ヨーロッパ                          |
-| FR-00002 顧客および仕入先の勘定明細書                                                        | フランス                          |
-| FR-00004 受取拒否振出受取手形仕訳帳の転記                                                    | フランス                          |
-| FR-00004 再振出受取手形仕訳帳の転記                                                         | フランス                          |
-| FR-00004 支払方法の設定                                                                       | フランス                          |
-| FR-00018 支払遅延の一日当たり利息計算および請求書や督促状の総額 | フランス                          |
-| ドイツの監査ファイルの構成のカスタマイズ                                                              | ドイツ                         |
-| DE-00002 2 年目の追加取得の減価償却調整                       | ドイツ                         |
-| DE-00003 VAT 申告電子送信 (ELSTER)                                           | ドイツ                         |
-| ドイツの監査ファイルを生成                                                                             | ドイツ                         |
-| ドイツの監査ファイル構成のインポート                                                                 | ドイツ                         |
-| 仕入先勘定の作成および請求書申告の関連付け                                             | アイスランド                         |
-| IS-00005 VAT 調整レポート                                                                     | アイスランド                         |
-| 仕入先の請求書申告を設定                                                              | アイスランド                         |
-| 必須支払参照の設定                                                                    | アイスランド                         |
-| 仕入先請求書申告の更新およびレポートの生成                                             | アイスランド                         |
-| 資産除去責務がある固定資産の取得                                                | 日本                           |
-| 固定資産の取得、政府補助金の要求、および圧縮記帳の適用                         | 日本                           |
-| 資産除去債務見積の調整                                                 | 日本                           |
-| 共有資産の帳簿価額および資産グループへの営業権の配賦                         | 日本                           |
-| 1 つの資産の資産耐用年数期間中の減価償却方法の変更                                     | 日本                           |
-| 価値モデルの資産の耐用年数期間中の減価償却方法の変更                                   | 日本                           |
-| CN-00004 固定資産減価償却配賦 (JP-)                                                     | 日本                           |
-| 割増償却に対する減価償却プロファイルおよび転記プロファイルのコンフィギュレーション                         | 日本                           |
-| 特別減価償却の減価償却プロファイルおよび転記プロファイルを構成します                            | 日本                           |
-| 資産除去責務の転記および市場の割引率のための主勘定のコンフィギュレーション              | 日本                           |
-| 割増償却を使用する固定資産の作成                                                      | 日本                           |
-| 特別償却プロファイルがある固定資産の作成                                                 | 日本                           |
-| 加速減価償却プロファイルを作成し、価値モデルに割り当てます                                   | 日本                           |
-| 加速償却ドキュメントの作成および使用状況データの入力                                       | 日本                           |
-| 設備グループの作成および適用                                                                      | 日本                           |
-| 圧縮記帳ドキュメントの作成および適用                                                             | 日本                           |
-| 顧客の月次締め請求書の作成と確定                                                     | 日本                           |
-| 仕入先の月次締め請求書の作成と確定                                                       | 日本                           |
-| 認識テストの作成および確認                                                                    | 日本                           |
-| CGU グループおよび資産グループの作成                                                            | 日本                           |
-| 均等償却を使用した一括比例配分の減価償却資産の作成                                       | 日本                           |
-| 資産除去責務の支払利子の減価償却および見越計上                            | 日本                           |
-| 圧縮記帳の転記が存在する固定資産の減価償却                                               | 日本                           |
-| JBA 支払ファイル フォーマットを有効にする                                                                         | 日本                           |
-| 償却率表の入力および減価償却プロファイルへの関連付け                                 | 日本                           |
-| 支払手数料の生成および転記                                                                          | 日本                           |
-| JBA 形式で EFT 支払ファイルを生成                                                              | 日本                           |
-| 日本消費税レポートの生成                                                                  | 日本                           |
-| JBA のファイル形式の顧客支払のインポート                                                           | 日本                           |
-| 仕訳帳の支払手数料の照会                                                                    | 日本                           |
-| 資産除去責務に関連するトランザクションの照会                                      | 日本                           |
-| 損金の照会                                                                         | 日本                           |
-| JP-00005 T 勘定フォームでの仕訳帳入力 (日本)                                                       | 日本                           |
-| 損金の固定資産マスター データ ファイルの管理                                         | 日本                           |
-| 個別資産の減損インジケーターの管理                                                    | 日本                           |
-| 顧客の為替手形の裏書きによる仕入先トランザクションの支払                                      | 日本                           |
-| 償却超過/償却不足額の定期決済                                                     | 日本                           |
-| 割増償却の提案                                                                        | 日本                           |
-| 加速償却の提案と転記                                                              | 日本                           |
-| バッチごとの減損損失額の提案と転記                                                        | 日本                           |
-| 固定資産仕訳帳を使用した減損損失額の提案と転記                                    | 日本                           |
-| 資産グループへの減損金額の提案と転記                                       | 日本                           |
-| 特別償却の提案                                                                           | 日本                           |
-| 顧客の月次締め請求書の再オープンと編集                                                        | 日本                           |
-| 仕入先の月次締め請求書の再オープンと編集                                                          | 日本                           |
-| 裏書済受取手形の取消                                                                   | 日本                           |
-| 認識テストの実行と個別資産の減損損失額の計算                      | 日本                           |
-| 月次締め請求書の対象にする顧客および販売注文を設定します                                 | 日本                           |
-| 資産除去責務ドキュメントの設定および固定資産の ARO 金額の入力                     | 日本                           |
-| 月次締め請求書の設定                                                                           | 日本                           |
-| 複数の転記階層の損金算入額のマスター データの設定                    | 日本                           |
-| 裏書済為替手形の決済                                                                    | 日本                           |
-| 支払仕訳帳を使用した顧客の月次締め請求書の決済                                       | 日本                           |
-| 決済トランザクションを使用した顧客の月次締め請求書の決済                                     | 日本                           |
-| 支払仕訳帳を使用した仕入先の月次締め請求書の決済                                         | 日本                           |
-| 決済トランザクションを使用した仕入先の月次締め請求書の決済                                       | 日本                           |
-| 減損会計の共通パラメーターおよび転記プロファイルの設定                                      | 日本                           |
-| 日本の消費税レポートの設定                                                                     | 日本                           |
-| 顧客の為替手形の裏書きによって日本の支払を設定します                                           | 日本                           |
-| 日本の支払手数料の設定                                                                            | 日本                           |
-| 月次締め請求書の対象にする仕入先マスターおよび発注書の設定                            | 日本                           |
-| 固定資産の組み立て一覧の使用                                                                     | 日本                           |
-| 固定資産の分解一覧の使用                                                                  | 日本                           |
-| MX-00006 売上税コードの設定                                                                         | メキシコ                          |
-| MX-00007 顧客登録 ID などの情報                                               | メキシコ                          |
-| MX-00008 : 仕入先登録 ID                                                                      | メキシコ                          |
-| MX-00010 電子請求書のキャンセル                                                                  | メキシコ                          |
-| MX-00010 電子請求 CFDI                                                                              | メキシコ                          |
-| MX-00010 メキシコの法人の税登録 ID の入力                                         | メキシコ                          |
-| MX-00010 電子請求書の照会、印刷                                                       | メキシコ                          |
-| MX-00010 自由書式の請求書の転記                                                                      | メキシコ                          |
-| MX-00010 電子請求書のパラメーターの設定                                                      | メキシコ                          |
-| MX-00020 ー メキシコの銀行口座の RFC 登録 ID を指定                                   | メキシコ                          |
-| MX-00020 メキシコの電子元帳計算レポート バージョン 1.1 の作成                               | メキシコ                          |
-| MX-00020 メキシコの法人の勘定科目表の設定                                     | メキシコ                          |
-| NL-00003 Semansys XBRL 統合                                                                     | オランダ                     |
-| NL-00010 電子税申告 (EVAT)                                                            | オランダ                     |
-| MY-00004 販売税の仕入先の借方票および貸方票の管理                                              | シンガポール、マレーシアおよびタイ |
-| MY-00005 販売税請求書の印刷                                                                        | シンガポール、マレーシアおよびタイ |
-| MY-00006 01 販売税の控除条件の設定                                                                  | シンガポール、マレーシアおよびタイ |
-| MY-00006 02 販売税の顧客請求書を控除条件とともに印刷                                           | シンガポール、マレーシアおよびタイ |
-| MY-00007 自動請求の請求書                                                                          | シンガポール、マレーシアおよびタイ |
-| MY-00010 GST ー 必要な形式の GAF ファイルの作成                                               | シンガポール、マレーシアおよびタイ |
-| MY-00011 02 プロジェクト販売の顧客借方票の作成                                             | シンガポール、マレーシアおよびタイ |
-| MY-00011 03 プロジェクト販売の顧客貸方票の作成                                            | シンガポール、マレーシアおよびタイ |
-| GB-00002 VAT の逆請求対象品目を含む発注書の作成                     | 英国                  |
-| GB-00002 逆請求 VAT の対象となる品目を含む販売注文の作成                        | 英国                  |
-| GB-00002 VAT の逆請求の品目売上税グループの設定                                           | 英国                  |
-| GB-00002 VAT の逆請求品目グループ、ルール、およびパラメータの設定                                  | 英国                  |
-| GB-00002 VAT の逆請求の売上税コードの設定                                                | 英国                  |
-| GB-00009 決済割引に対する貸方票の作成                                               | 英国                  |
-| GB-00009 即時支払割引の貸方票のパラメーターの設定                                   | 英国                  |
+| <span data-ttu-id="867c4-219">**BPM 行**</span><span class="sxs-lookup"><span data-stu-id="867c4-219">**BPM Line**</span></span>                                                                                           | <span data-ttu-id="867c4-220">**国/地域**</span><span class="sxs-lookup"><span data-stu-id="867c4-220">**Country/Region**</span></span>              |
+| <span data-ttu-id="867c4-221">BAS 報告書ボックスの追加とオーストラリア Business Activity Statement (BAS) の生成</span><span class="sxs-lookup"><span data-stu-id="867c4-221">Add BAS report boxes and generate the Australia Business Activity Statement BAS</span></span>                        | <span data-ttu-id="867c4-222">オーストラリアおよびニュージーランド</span><span class="sxs-lookup"><span data-stu-id="867c4-222">Australia and New Zealand</span></span>       |
+| <span data-ttu-id="867c4-223">オーストラリアの BAS に使用する理由コードの設定</span><span class="sxs-lookup"><span data-stu-id="867c4-223">Set up reason codes for Australia BAS</span></span>                                                                  | <span data-ttu-id="867c4-224">オーストラリアおよびニュージーランド</span><span class="sxs-lookup"><span data-stu-id="867c4-224">Australia and New Zealand</span></span>       |
+| <span data-ttu-id="867c4-225">顧客 ID への支払伝票形式の割り当て</span><span class="sxs-lookup"><span data-stu-id="867c4-225">Assign a payment slip format to a customer account</span></span>                                                     | <span data-ttu-id="867c4-226">デンマーク</span><span class="sxs-lookup"><span data-stu-id="867c4-226">Denmark</span></span>                         |
+| <span data-ttu-id="867c4-227">公的機関顧客の顧客請求書の作成および転記</span><span class="sxs-lookup"><span data-stu-id="867c4-227">Create and post a customer invoice for a public sector customer</span></span>                                        | <span data-ttu-id="867c4-228">デンマーク</span><span class="sxs-lookup"><span data-stu-id="867c4-228">Denmark</span></span>                         |
+| <span data-ttu-id="867c4-229">公的機関顧客の自由書式の請求書の作成および転記</span><span class="sxs-lookup"><span data-stu-id="867c4-229">Create and post a free text invoice for a public sector customer</span></span>                                       | <span data-ttu-id="867c4-230">デンマーク</span><span class="sxs-lookup"><span data-stu-id="867c4-230">Denmark</span></span>                         |
+| <span data-ttu-id="867c4-231">公的機関顧客のプロジェクト請求書の作成および転記</span><span class="sxs-lookup"><span data-stu-id="867c4-231">Create and post a project invoice for a public sector customer</span></span>                                         | <span data-ttu-id="867c4-232">デンマーク</span><span class="sxs-lookup"><span data-stu-id="867c4-232">Denmark</span></span>                         |
+| <span data-ttu-id="867c4-233">OIOUBL 電子請求のコンフィギュレーションのインポート</span><span class="sxs-lookup"><span data-stu-id="867c4-233">Import OIOUBL electronic invoicing configurations</span></span>                                                      | <span data-ttu-id="867c4-234">デンマーク</span><span class="sxs-lookup"><span data-stu-id="867c4-234">Denmark</span></span>                         |
+| <span data-ttu-id="867c4-235">支払伝票がある自由書式の請求書を転記</span><span class="sxs-lookup"><span data-stu-id="867c4-235">Post a free text invoice with a payment slip</span></span>                                                           | <span data-ttu-id="867c4-236">デンマーク</span><span class="sxs-lookup"><span data-stu-id="867c4-236">Denmark</span></span>                         |
+| <span data-ttu-id="867c4-237">支払伝票があるプロジェクト請求書を転記</span><span class="sxs-lookup"><span data-stu-id="867c4-237">Post a project invoice with a payment slip</span></span>                                                             | <span data-ttu-id="867c4-238">デンマーク</span><span class="sxs-lookup"><span data-stu-id="867c4-238">Denmark</span></span>                         |
+| <span data-ttu-id="867c4-239">支払伝票がある売上請求書の転記</span><span class="sxs-lookup"><span data-stu-id="867c4-239">Post a sales invoice with a payment slip</span></span>                                                               | <span data-ttu-id="867c4-240">デンマーク</span><span class="sxs-lookup"><span data-stu-id="867c4-240">Denmark</span></span>                         |
+| <span data-ttu-id="867c4-241">OIOUBL 電子請求用の顧客 ID の設定</span><span class="sxs-lookup"><span data-stu-id="867c4-241">Set up customer accounts for OIOUBL electronic invoicing</span></span>                                               | <span data-ttu-id="867c4-242">デンマーク</span><span class="sxs-lookup"><span data-stu-id="867c4-242">Denmark</span></span>                         |
+| <span data-ttu-id="867c4-243">支払伝票形式の設定</span><span class="sxs-lookup"><span data-stu-id="867c4-243">Set up payment slip format</span></span>                                                                             | <span data-ttu-id="867c4-244">デンマーク</span><span class="sxs-lookup"><span data-stu-id="867c4-244">Denmark</span></span>                         |
+| <span data-ttu-id="867c4-245">プロジェクト請求書の支払伝票形式の設定</span><span class="sxs-lookup"><span data-stu-id="867c4-245">Setup payment slip format for project invoices</span></span>                                                         | <span data-ttu-id="867c4-246">デンマーク</span><span class="sxs-lookup"><span data-stu-id="867c4-246">Denmark</span></span>                         |
+| <span data-ttu-id="867c4-247">SEPA 支払形式を使用した仕入先支払の作成およびエクスポート</span><span class="sxs-lookup"><span data-stu-id="867c4-247">Create and export vendor payments using a SEPA payment format</span></span>                                          | <span data-ttu-id="867c4-248">ヨーロッパ</span><span class="sxs-lookup"><span data-stu-id="867c4-248">Europe</span></span>                          |
+| <span data-ttu-id="867c4-249">口座引落命令がある顧客の支払の作成</span><span class="sxs-lookup"><span data-stu-id="867c4-249">Create payments for customer who have direct debit mandates</span></span>                                            | <span data-ttu-id="867c4-250">ヨーロッパ</span><span class="sxs-lookup"><span data-stu-id="867c4-250">Europe</span></span>                          |
+| <span data-ttu-id="867c4-251">EUR-00011 EU 販売リスト レポートの生成</span><span class="sxs-lookup"><span data-stu-id="867c4-251">EUR-00011 Generate the EU sales list report</span></span>                                                            | <span data-ttu-id="867c4-252">ヨーロッパ</span><span class="sxs-lookup"><span data-stu-id="867c4-252">Europe</span></span>                          |
+| <span data-ttu-id="867c4-253">EUR-00011 EU 販売リスト レポートの設定</span><span class="sxs-lookup"><span data-stu-id="867c4-253">EUR-00011 Set up EU sales list reporting</span></span>                                                               | <span data-ttu-id="867c4-254">ヨーロッパ</span><span class="sxs-lookup"><span data-stu-id="867c4-254">Europe</span></span>                          |
+| <span data-ttu-id="867c4-255">EUR-00012 EU エントリの証明書を発行</span><span class="sxs-lookup"><span data-stu-id="867c4-255">EUR-00012 Issue an EU entry certificate</span></span>                                                                | <span data-ttu-id="867c4-256">ヨーロッパ</span><span class="sxs-lookup"><span data-stu-id="867c4-256">Europe</span></span>                          |
+| <span data-ttu-id="867c4-257">EU 登録証明書を受信する EUR-00012</span><span class="sxs-lookup"><span data-stu-id="867c4-257">EUR-00012 Receive an EU entry certificate</span></span>                                                              | <span data-ttu-id="867c4-258">ヨーロッパ</span><span class="sxs-lookup"><span data-stu-id="867c4-258">Europe</span></span>                          |
+| <span data-ttu-id="867c4-259">SEPA 口座振替のコンフィギュレーションのインポート</span><span class="sxs-lookup"><span data-stu-id="867c4-259">Import SEPA credit transfer configuration</span></span>                                                              | <span data-ttu-id="867c4-260">ヨーロッパ</span><span class="sxs-lookup"><span data-stu-id="867c4-260">Europe</span></span>                          |
+| <span data-ttu-id="867c4-261">SEPA 口座引落コンフィギュレーションのインポート</span><span class="sxs-lookup"><span data-stu-id="867c4-261">Import SEPA direct debit configuration</span></span>                                                                 | <span data-ttu-id="867c4-262">ヨーロッパ</span><span class="sxs-lookup"><span data-stu-id="867c4-262">Europe</span></span>                          |
+| <span data-ttu-id="867c4-263">SEPA 口座振替用の会社の銀行口座の設定</span><span class="sxs-lookup"><span data-stu-id="867c4-263">Set up company bank accounts for SEPA credit transfers</span></span>                                                 | <span data-ttu-id="867c4-264">ヨーロッパ</span><span class="sxs-lookup"><span data-stu-id="867c4-264">Europe</span></span>                          |
+| <span data-ttu-id="867c4-265">SEPA 口座引落用の会社の銀行口座の設定</span><span class="sxs-lookup"><span data-stu-id="867c4-265">Set up company bank accounts for SEPA direct debits</span></span>                                                    | <span data-ttu-id="867c4-266">ヨーロッパ</span><span class="sxs-lookup"><span data-stu-id="867c4-266">Europe</span></span>                          |
+| <span data-ttu-id="867c4-267">顧客の設定と SEPA 口座引落用の顧客の銀行口座の設定</span><span class="sxs-lookup"><span data-stu-id="867c4-267">Set up customers and customer bank accounts for SEPA direct debits</span></span>                                     | <span data-ttu-id="867c4-268">ヨーロッパ</span><span class="sxs-lookup"><span data-stu-id="867c4-268">Europe</span></span>                          |
+| <span data-ttu-id="867c4-269">SEPA 口座振替用の支払方法の設定</span><span class="sxs-lookup"><span data-stu-id="867c4-269">Set up method of payment for SEPA credit transfer</span></span>                                                      | <span data-ttu-id="867c4-270">ヨーロッパ</span><span class="sxs-lookup"><span data-stu-id="867c4-270">Europe</span></span>                          |
+| <span data-ttu-id="867c4-271">SEPA 口座引落用の支払方法の設定</span><span class="sxs-lookup"><span data-stu-id="867c4-271">Set up method of payment for SEPA Direct debit</span></span>                                                         | <span data-ttu-id="867c4-272">ヨーロッパ</span><span class="sxs-lookup"><span data-stu-id="867c4-272">Europe</span></span>                          |
+| <span data-ttu-id="867c4-273">SEPA 口座振替のベンダーおよびベンダーの銀行口座の設定</span><span class="sxs-lookup"><span data-stu-id="867c4-273">Set up vendors and vendor bank accounts for SEPA credit transfers</span></span>                                      | <span data-ttu-id="867c4-274">ヨーロッパ</span><span class="sxs-lookup"><span data-stu-id="867c4-274">Europe</span></span>                          |
+| <span data-ttu-id="867c4-275">FR-00002 顧客および仕入先の勘定明細書</span><span class="sxs-lookup"><span data-stu-id="867c4-275">FR-00002 Customer and vendor account statements</span></span>                                                        | <span data-ttu-id="867c4-276">フランス</span><span class="sxs-lookup"><span data-stu-id="867c4-276">France</span></span>                          |
+| <span data-ttu-id="867c4-277">FR-00004 受取拒否振出受取手形仕訳帳の転記</span><span class="sxs-lookup"><span data-stu-id="867c4-277">FR-00004 Post protest draw bill of exchange journal</span></span>                                                    | <span data-ttu-id="867c4-278">フランス</span><span class="sxs-lookup"><span data-stu-id="867c4-278">France</span></span>                          |
+| <span data-ttu-id="867c4-279">FR-00004 再振出受取手形仕訳帳の転記</span><span class="sxs-lookup"><span data-stu-id="867c4-279">FR-00004 Post re-draw bill of exchange journal</span></span>                                                         | <span data-ttu-id="867c4-280">フランス</span><span class="sxs-lookup"><span data-stu-id="867c4-280">France</span></span>                          |
+| <span data-ttu-id="867c4-281">FR-00004 支払方法の設定</span><span class="sxs-lookup"><span data-stu-id="867c4-281">FR-00004 Setup method of payment</span></span>                                                                       | <span data-ttu-id="867c4-282">フランス</span><span class="sxs-lookup"><span data-stu-id="867c4-282">France</span></span>                          |
+| <span data-ttu-id="867c4-283">FR-00018 支払遅延の一日当たり利息計算および請求書や督促状の総額</span><span class="sxs-lookup"><span data-stu-id="867c4-283">FR-00018 Daily interest calculation for late payment and lump sum in the invoice and collection letter</span></span> | <span data-ttu-id="867c4-284">フランス</span><span class="sxs-lookup"><span data-stu-id="867c4-284">France</span></span>                          |
+| <span data-ttu-id="867c4-285">ドイツの監査ファイルの構成のカスタマイズ</span><span class="sxs-lookup"><span data-stu-id="867c4-285">Customize German audit file configuration</span></span>                                                              | <span data-ttu-id="867c4-286">ドイツ</span><span class="sxs-lookup"><span data-stu-id="867c4-286">Germany</span></span>                         |
+| <span data-ttu-id="867c4-287">DE-00002 2 年目の追加取得の減価償却調整</span><span class="sxs-lookup"><span data-stu-id="867c4-287">DE-00002 Depreciation adjustments for additional acquisitions in the second year</span></span>                       | <span data-ttu-id="867c4-288">ドイツ</span><span class="sxs-lookup"><span data-stu-id="867c4-288">Germany</span></span>                         |
+| <span data-ttu-id="867c4-289">DE-00003 VAT 申告電子送信 (ELSTER)</span><span class="sxs-lookup"><span data-stu-id="867c4-289">DE-00003 Electronic transmission of VAT declaration (ELSTER)</span></span>                                           | <span data-ttu-id="867c4-290">ドイツ</span><span class="sxs-lookup"><span data-stu-id="867c4-290">Germany</span></span>                         |
+| <span data-ttu-id="867c4-291">ドイツの監査ファイルを生成</span><span class="sxs-lookup"><span data-stu-id="867c4-291">Generate German audit file</span></span>                                                                             | <span data-ttu-id="867c4-292">ドイツ</span><span class="sxs-lookup"><span data-stu-id="867c4-292">Germany</span></span>                         |
+| <span data-ttu-id="867c4-293">ドイツの監査ファイル構成のインポート</span><span class="sxs-lookup"><span data-stu-id="867c4-293">Import German audit file configuration</span></span>                                                                 | <span data-ttu-id="867c4-294">ドイツ</span><span class="sxs-lookup"><span data-stu-id="867c4-294">Germany</span></span>                         |
+| <span data-ttu-id="867c4-295">仕入先勘定の作成および請求書申告の関連付け</span><span class="sxs-lookup"><span data-stu-id="867c4-295">Create a vendor account and attach the invoice declaration</span></span>                                             | <span data-ttu-id="867c4-296">アイスランド</span><span class="sxs-lookup"><span data-stu-id="867c4-296">Iceland</span></span>                         |
+| <span data-ttu-id="867c4-297">IS-00005 VAT 調整レポート</span><span class="sxs-lookup"><span data-stu-id="867c4-297">IS-00005 VAT reconciliation report</span></span>                                                                     | <span data-ttu-id="867c4-298">アイスランド</span><span class="sxs-lookup"><span data-stu-id="867c4-298">Iceland</span></span>                         |
+| <span data-ttu-id="867c4-299">仕入先の請求書申告を設定</span><span class="sxs-lookup"><span data-stu-id="867c4-299">Set up an invoice declaration for vendors</span></span>                                                              | <span data-ttu-id="867c4-300">アイスランド</span><span class="sxs-lookup"><span data-stu-id="867c4-300">Iceland</span></span>                         |
+| <span data-ttu-id="867c4-301">必須支払参照の設定</span><span class="sxs-lookup"><span data-stu-id="867c4-301">Set up mandatory payment references</span></span>                                                                    | <span data-ttu-id="867c4-302">アイスランド</span><span class="sxs-lookup"><span data-stu-id="867c4-302">Iceland</span></span>                         |
+| <span data-ttu-id="867c4-303">仕入先請求書申告の更新およびレポートの生成</span><span class="sxs-lookup"><span data-stu-id="867c4-303">Update vendor invoice declarations and generate the report</span></span>                                             | <span data-ttu-id="867c4-304">アイスランド</span><span class="sxs-lookup"><span data-stu-id="867c4-304">Iceland</span></span>                         |
+| <span data-ttu-id="867c4-305">資産除去責務がある固定資産の取得</span><span class="sxs-lookup"><span data-stu-id="867c4-305">Acquire a fixed asset with asset retirement obligations</span></span>                                                | <span data-ttu-id="867c4-306">日本</span><span class="sxs-lookup"><span data-stu-id="867c4-306">Japan</span></span>                           |
+| <span data-ttu-id="867c4-307">固定資産の取得、政府補助金の要求、および圧縮記帳の適用</span><span class="sxs-lookup"><span data-stu-id="867c4-307">Acquire fixed assets, claim for the government grant and apply reduction entry</span></span>                         | <span data-ttu-id="867c4-308">日本</span><span class="sxs-lookup"><span data-stu-id="867c4-308">Japan</span></span>                           |
+| <span data-ttu-id="867c4-309">資産除去債務見積の調整</span><span class="sxs-lookup"><span data-stu-id="867c4-309">Adjustment of the asset retirement obligation estimate</span></span>                                                 | <span data-ttu-id="867c4-310">日本</span><span class="sxs-lookup"><span data-stu-id="867c4-310">Japan</span></span>                           |
+| <span data-ttu-id="867c4-311">共有資産の帳簿価額および資産グループへの営業権の配賦</span><span class="sxs-lookup"><span data-stu-id="867c4-311">Allocate carrying amount of shared asset and goodwill to cash generating units</span></span>                         | <span data-ttu-id="867c4-312">日本</span><span class="sxs-lookup"><span data-stu-id="867c4-312">Japan</span></span>                           |
+| <span data-ttu-id="867c4-313">1 つの資産の資産耐用年数期間中の減価償却方法の変更</span><span class="sxs-lookup"><span data-stu-id="867c4-313">Change the depreciation method during the asset life for one asset</span></span>                                     | <span data-ttu-id="867c4-314">日本</span><span class="sxs-lookup"><span data-stu-id="867c4-314">Japan</span></span>                           |
+| <span data-ttu-id="867c4-315">価値モデルの資産の耐用年数期間中の減価償却方法の変更</span><span class="sxs-lookup"><span data-stu-id="867c4-315">Change the depreciation method during the asset life for value model</span></span>                                   | <span data-ttu-id="867c4-316">日本</span><span class="sxs-lookup"><span data-stu-id="867c4-316">Japan</span></span>                           |
+| <span data-ttu-id="867c4-317">CN-00004 固定資産減価償却配賦 (JP-)</span><span class="sxs-lookup"><span data-stu-id="867c4-317">CN-00004 Fixed asset depreciation allocation (JP-)</span></span>                                                     | <span data-ttu-id="867c4-318">日本</span><span class="sxs-lookup"><span data-stu-id="867c4-318">Japan</span></span>                           |
+| <span data-ttu-id="867c4-319">割増償却に対する減価償却プロファイルおよび転記プロファイルのコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="867c4-319">Configure depreciation profile and posting profile for additional depreciation</span></span>                         | <span data-ttu-id="867c4-320">日本</span><span class="sxs-lookup"><span data-stu-id="867c4-320">Japan</span></span>                           |
+| <span data-ttu-id="867c4-321">特別減価償却の減価償却プロファイルおよび転記プロファイルを構成します</span><span class="sxs-lookup"><span data-stu-id="867c4-321">Configure depreciation profile and posting profile for special depreciation</span></span>                            | <span data-ttu-id="867c4-322">日本</span><span class="sxs-lookup"><span data-stu-id="867c4-322">Japan</span></span>                           |
+| <span data-ttu-id="867c4-323">資産除去責務の転記および市場の割引率のための主勘定のコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="867c4-323">Configure main accounts for asset retirement obligation posting and market discount rates</span></span>              | <span data-ttu-id="867c4-324">日本</span><span class="sxs-lookup"><span data-stu-id="867c4-324">Japan</span></span>                           |
+| <span data-ttu-id="867c4-325">割増償却を使用する固定資産の作成</span><span class="sxs-lookup"><span data-stu-id="867c4-325">Create a fixed asset with additional depreciation</span></span>                                                      | <span data-ttu-id="867c4-326">日本</span><span class="sxs-lookup"><span data-stu-id="867c4-326">Japan</span></span>                           |
+| <span data-ttu-id="867c4-327">特別償却プロファイルがある固定資産の作成</span><span class="sxs-lookup"><span data-stu-id="867c4-327">Create a fixed asset with special depreciation profile</span></span>                                                 | <span data-ttu-id="867c4-328">日本</span><span class="sxs-lookup"><span data-stu-id="867c4-328">Japan</span></span>                           |
+| <span data-ttu-id="867c4-329">加速減価償却プロファイルを作成し、価値モデルに割り当てます</span><span class="sxs-lookup"><span data-stu-id="867c4-329">Create accelerated depreciation profile and assign it to value model</span></span>                                   | <span data-ttu-id="867c4-330">日本</span><span class="sxs-lookup"><span data-stu-id="867c4-330">Japan</span></span>                           |
+| <span data-ttu-id="867c4-331">加速償却ドキュメントの作成および使用状況データの入力</span><span class="sxs-lookup"><span data-stu-id="867c4-331">Create an accelerated depreciation document and enter usage data</span></span>                                       | <span data-ttu-id="867c4-332">日本</span><span class="sxs-lookup"><span data-stu-id="867c4-332">Japan</span></span>                           |
+| <span data-ttu-id="867c4-333">設備グループの作成および適用</span><span class="sxs-lookup"><span data-stu-id="867c4-333">Create and assign equipment group</span></span>                                                                      | <span data-ttu-id="867c4-334">日本</span><span class="sxs-lookup"><span data-stu-id="867c4-334">Japan</span></span>                           |
+| <span data-ttu-id="867c4-335">圧縮記帳ドキュメントの作成および適用</span><span class="sxs-lookup"><span data-stu-id="867c4-335">Create and assign reduction entry document</span></span>                                                             | <span data-ttu-id="867c4-336">日本</span><span class="sxs-lookup"><span data-stu-id="867c4-336">Japan</span></span>                           |
+| <span data-ttu-id="867c4-337">顧客の月次締め請求書の作成と確定</span><span class="sxs-lookup"><span data-stu-id="867c4-337">Create and confirm a customer consolidated invoice</span></span>                                                     | <span data-ttu-id="867c4-338">日本</span><span class="sxs-lookup"><span data-stu-id="867c4-338">Japan</span></span>                           |
+| <span data-ttu-id="867c4-339">仕入先の月次締め請求書の作成と確定</span><span class="sxs-lookup"><span data-stu-id="867c4-339">Create and confirm a vendor consolidated invoice</span></span>                                                       | <span data-ttu-id="867c4-340">日本</span><span class="sxs-lookup"><span data-stu-id="867c4-340">Japan</span></span>                           |
+| <span data-ttu-id="867c4-341">認識テストの作成および確認</span><span class="sxs-lookup"><span data-stu-id="867c4-341">Create and confirm recognition test</span></span>                                                                    | <span data-ttu-id="867c4-342">日本</span><span class="sxs-lookup"><span data-stu-id="867c4-342">Japan</span></span>                           |
+| <span data-ttu-id="867c4-343">CGU グループおよび資産グループの作成</span><span class="sxs-lookup"><span data-stu-id="867c4-343">Create CGU groups and cash generating units</span></span>                                                            | <span data-ttu-id="867c4-344">日本</span><span class="sxs-lookup"><span data-stu-id="867c4-344">Japan</span></span>                           |
+| <span data-ttu-id="867c4-345">均等償却を使用した一括比例配分の減価償却資産の作成</span><span class="sxs-lookup"><span data-stu-id="867c4-345">Create lump sum depreciation assets using equally divided method</span></span>                                       | <span data-ttu-id="867c4-346">日本</span><span class="sxs-lookup"><span data-stu-id="867c4-346">Japan</span></span>                           |
+| <span data-ttu-id="867c4-347">資産除去責務の支払利子の減価償却および見越計上</span><span class="sxs-lookup"><span data-stu-id="867c4-347">Depreciate and accrue the interest expense for asset retirement obligations</span></span>                            | <span data-ttu-id="867c4-348">日本</span><span class="sxs-lookup"><span data-stu-id="867c4-348">Japan</span></span>                           |
+| <span data-ttu-id="867c4-349">圧縮記帳の転記が存在する固定資産の減価償却</span><span class="sxs-lookup"><span data-stu-id="867c4-349">Depreciation of fixed assets with reduction entry posted</span></span>                                               | <span data-ttu-id="867c4-350">日本</span><span class="sxs-lookup"><span data-stu-id="867c4-350">Japan</span></span>                           |
+| <span data-ttu-id="867c4-351">JBA 支払ファイル フォーマットを有効にする</span><span class="sxs-lookup"><span data-stu-id="867c4-351">Enable JBA payment file format</span></span>                                                                         | <span data-ttu-id="867c4-352">日本</span><span class="sxs-lookup"><span data-stu-id="867c4-352">Japan</span></span>                           |
+| <span data-ttu-id="867c4-353">償却率表の入力および減価償却プロファイルへの関連付け</span><span class="sxs-lookup"><span data-stu-id="867c4-353">Enter depreciation rate schedule and associate to depreciation profile</span></span>                                 | <span data-ttu-id="867c4-354">日本</span><span class="sxs-lookup"><span data-stu-id="867c4-354">Japan</span></span>                           |
+| <span data-ttu-id="867c4-355">支払手数料の生成および転記</span><span class="sxs-lookup"><span data-stu-id="867c4-355">Generate and post payment fee</span></span>                                                                          | <span data-ttu-id="867c4-356">日本</span><span class="sxs-lookup"><span data-stu-id="867c4-356">Japan</span></span>                           |
+| <span data-ttu-id="867c4-357">JBA 形式で EFT 支払ファイルを生成</span><span class="sxs-lookup"><span data-stu-id="867c4-357">Generate EFT payment file with JBA format</span></span>                                                              | <span data-ttu-id="867c4-358">日本</span><span class="sxs-lookup"><span data-stu-id="867c4-358">Japan</span></span>                           |
+| <span data-ttu-id="867c4-359">日本消費税レポートの生成</span><span class="sxs-lookup"><span data-stu-id="867c4-359">Generate Japan consumption tax report</span></span>                                                                  | <span data-ttu-id="867c4-360">日本</span><span class="sxs-lookup"><span data-stu-id="867c4-360">Japan</span></span>                           |
+| <span data-ttu-id="867c4-361">JBA のファイル形式の顧客支払のインポート</span><span class="sxs-lookup"><span data-stu-id="867c4-361">Import customer payment with JBA file format</span></span>                                                           | <span data-ttu-id="867c4-362">日本</span><span class="sxs-lookup"><span data-stu-id="867c4-362">Japan</span></span>                           |
+| <span data-ttu-id="867c4-363">仕訳帳の支払手数料の照会</span><span class="sxs-lookup"><span data-stu-id="867c4-363">Inquiries of payment fee on journal</span></span>                                                                    | <span data-ttu-id="867c4-364">日本</span><span class="sxs-lookup"><span data-stu-id="867c4-364">Japan</span></span>                           |
+| <span data-ttu-id="867c4-365">資産除去責務に関連するトランザクションの照会</span><span class="sxs-lookup"><span data-stu-id="867c4-365">Inquiries of the asset retirement obligation related transactions</span></span>                                      | <span data-ttu-id="867c4-366">日本</span><span class="sxs-lookup"><span data-stu-id="867c4-366">Japan</span></span>                           |
+| <span data-ttu-id="867c4-367">損金の照会</span><span class="sxs-lookup"><span data-stu-id="867c4-367">Inquiry on deductible expenses</span></span>                                                                         | <span data-ttu-id="867c4-368">日本</span><span class="sxs-lookup"><span data-stu-id="867c4-368">Japan</span></span>                           |
+| <span data-ttu-id="867c4-369">JP-00005 T 勘定フォームでの仕訳帳入力 (日本)</span><span class="sxs-lookup"><span data-stu-id="867c4-369">JP-00005 Input journal in T account form (Japan)</span></span>                                                       | <span data-ttu-id="867c4-370">日本</span><span class="sxs-lookup"><span data-stu-id="867c4-370">Japan</span></span>                           |
+| <span data-ttu-id="867c4-371">損金の固定資産マスター データ ファイルの管理</span><span class="sxs-lookup"><span data-stu-id="867c4-371">Maintain fixed-asset master data files for deductible expenses</span></span>                                         | <span data-ttu-id="867c4-372">日本</span><span class="sxs-lookup"><span data-stu-id="867c4-372">Japan</span></span>                           |
+| <span data-ttu-id="867c4-373">個別資産の減損インジケーターの管理</span><span class="sxs-lookup"><span data-stu-id="867c4-373">Maintain impairment indicators on individual assets</span></span>                                                    | <span data-ttu-id="867c4-374">日本</span><span class="sxs-lookup"><span data-stu-id="867c4-374">Japan</span></span>                           |
+| <span data-ttu-id="867c4-375">顧客の為替手形の裏書きによる仕入先トランザクションの支払</span><span class="sxs-lookup"><span data-stu-id="867c4-375">Pay a vendor transaction by endorsing a customer bill of exchange</span></span>                                      | <span data-ttu-id="867c4-376">日本</span><span class="sxs-lookup"><span data-stu-id="867c4-376">Japan</span></span>                           |
+| <span data-ttu-id="867c4-377">償却超過/償却不足額の定期決済</span><span class="sxs-lookup"><span data-stu-id="867c4-377">Periodic settlement of over and under depreciation</span></span>                                                     | <span data-ttu-id="867c4-378">日本</span><span class="sxs-lookup"><span data-stu-id="867c4-378">Japan</span></span>                           |
+| <span data-ttu-id="867c4-379">割増償却の提案</span><span class="sxs-lookup"><span data-stu-id="867c4-379">Propose additional depreciation</span></span>                                                                        | <span data-ttu-id="867c4-380">日本</span><span class="sxs-lookup"><span data-stu-id="867c4-380">Japan</span></span>                           |
+| <span data-ttu-id="867c4-381">加速償却の提案と転記</span><span class="sxs-lookup"><span data-stu-id="867c4-381">Propose and post accelerated depreciation</span></span>                                                              | <span data-ttu-id="867c4-382">日本</span><span class="sxs-lookup"><span data-stu-id="867c4-382">Japan</span></span>                           |
+| <span data-ttu-id="867c4-383">バッチごとの減損損失額の提案と転記</span><span class="sxs-lookup"><span data-stu-id="867c4-383">Propose and post the impairment amount by batch</span></span>                                                        | <span data-ttu-id="867c4-384">日本</span><span class="sxs-lookup"><span data-stu-id="867c4-384">Japan</span></span>                           |
+| <span data-ttu-id="867c4-385">固定資産仕訳帳を使用した減損損失額の提案と転記</span><span class="sxs-lookup"><span data-stu-id="867c4-385">Propose and post the impairment amount by using fixed asset journal</span></span>                                    | <span data-ttu-id="867c4-386">日本</span><span class="sxs-lookup"><span data-stu-id="867c4-386">Japan</span></span>                           |
+| <span data-ttu-id="867c4-387">資産グループへの減損金額の提案と転記</span><span class="sxs-lookup"><span data-stu-id="867c4-387">Propose and post the impairment amount on a cash generating unit</span></span>                                       | <span data-ttu-id="867c4-388">日本</span><span class="sxs-lookup"><span data-stu-id="867c4-388">Japan</span></span>                           |
+| <span data-ttu-id="867c4-389">特別償却の提案</span><span class="sxs-lookup"><span data-stu-id="867c4-389">Propose special depreciation</span></span>                                                                           | <span data-ttu-id="867c4-390">日本</span><span class="sxs-lookup"><span data-stu-id="867c4-390">Japan</span></span>                           |
+| <span data-ttu-id="867c4-391">顧客の月次締め請求書の再オープンと編集</span><span class="sxs-lookup"><span data-stu-id="867c4-391">Reopen and edit a customer consolidated invoice</span></span>                                                        | <span data-ttu-id="867c4-392">日本</span><span class="sxs-lookup"><span data-stu-id="867c4-392">Japan</span></span>                           |
+| <span data-ttu-id="867c4-393">仕入先の月次締め請求書の再オープンと編集</span><span class="sxs-lookup"><span data-stu-id="867c4-393">Reopen and edit a vendor consolidated invoice</span></span>                                                          | <span data-ttu-id="867c4-394">日本</span><span class="sxs-lookup"><span data-stu-id="867c4-394">Japan</span></span>                           |
+| <span data-ttu-id="867c4-395">裏書済受取手形の取消</span><span class="sxs-lookup"><span data-stu-id="867c4-395">Reverse an endorsed bill of exchange</span></span>                                                                   | <span data-ttu-id="867c4-396">日本</span><span class="sxs-lookup"><span data-stu-id="867c4-396">Japan</span></span>                           |
+| <span data-ttu-id="867c4-397">認識テストの実行と個別資産の減損損失額の計算</span><span class="sxs-lookup"><span data-stu-id="867c4-397">Run the recognition test and calculate the impairment amount on individual assets</span></span>                      | <span data-ttu-id="867c4-398">日本</span><span class="sxs-lookup"><span data-stu-id="867c4-398">Japan</span></span>                           |
+| <span data-ttu-id="867c4-399">月次締め請求書の対象にする顧客および販売注文を設定します</span><span class="sxs-lookup"><span data-stu-id="867c4-399">Set up a customer and sales order to be target of consolidated invoice</span></span>                                 | <span data-ttu-id="867c4-400">日本</span><span class="sxs-lookup"><span data-stu-id="867c4-400">Japan</span></span>                           |
+| <span data-ttu-id="867c4-401">資産除去責務ドキュメントの設定および固定資産の ARO 金額の入力</span><span class="sxs-lookup"><span data-stu-id="867c4-401">Set up asset retirement obligation documents and enter ARO amount on a fixed asset</span></span>                     | <span data-ttu-id="867c4-402">日本</span><span class="sxs-lookup"><span data-stu-id="867c4-402">Japan</span></span>                           |
+| <span data-ttu-id="867c4-403">月次締め請求書の設定</span><span class="sxs-lookup"><span data-stu-id="867c4-403">Set up consolidated invoices</span></span>                                                                           | <span data-ttu-id="867c4-404">日本</span><span class="sxs-lookup"><span data-stu-id="867c4-404">Japan</span></span>                           |
+| <span data-ttu-id="867c4-405">複数の転記階層の損金算入額のマスター データの設定</span><span class="sxs-lookup"><span data-stu-id="867c4-405">Set up master data for inclusion of deductible expenses for multiple posting layers</span></span>                    | <span data-ttu-id="867c4-406">日本</span><span class="sxs-lookup"><span data-stu-id="867c4-406">Japan</span></span>                           |
+| <span data-ttu-id="867c4-407">裏書済為替手形の決済</span><span class="sxs-lookup"><span data-stu-id="867c4-407">Settle an endorsed bill of exchange</span></span>                                                                    | <span data-ttu-id="867c4-408">日本</span><span class="sxs-lookup"><span data-stu-id="867c4-408">Japan</span></span>                           |
+| <span data-ttu-id="867c4-409">支払仕訳帳を使用した顧客の月次締め請求書の決済</span><span class="sxs-lookup"><span data-stu-id="867c4-409">Settle customer consolidated invoices by using a payment journal</span></span>                                       | <span data-ttu-id="867c4-410">日本</span><span class="sxs-lookup"><span data-stu-id="867c4-410">Japan</span></span>                           |
+| <span data-ttu-id="867c4-411">決済トランザクションを使用した顧客の月次締め請求書の決済</span><span class="sxs-lookup"><span data-stu-id="867c4-411">Settle customer consolidated invoices by using settle transactions</span></span>                                     | <span data-ttu-id="867c4-412">日本</span><span class="sxs-lookup"><span data-stu-id="867c4-412">Japan</span></span>                           |
+| <span data-ttu-id="867c4-413">支払仕訳帳を使用した仕入先の月次締め請求書の決済</span><span class="sxs-lookup"><span data-stu-id="867c4-413">Settle vendor consolidated invoices by using a payment journal</span></span>                                         | <span data-ttu-id="867c4-414">日本</span><span class="sxs-lookup"><span data-stu-id="867c4-414">Japan</span></span>                           |
+| <span data-ttu-id="867c4-415">決済トランザクションを使用した仕入先の月次締め請求書の決済</span><span class="sxs-lookup"><span data-stu-id="867c4-415">Settle vendor consolidated invoices by using settle transactions</span></span>                                       | <span data-ttu-id="867c4-416">日本</span><span class="sxs-lookup"><span data-stu-id="867c4-416">Japan</span></span>                           |
+| <span data-ttu-id="867c4-417">減損会計の共通パラメーターおよび転記プロファイルの設定</span><span class="sxs-lookup"><span data-stu-id="867c4-417">Setup impairment accounting common parameters and posting profile</span></span>                                      | <span data-ttu-id="867c4-418">日本</span><span class="sxs-lookup"><span data-stu-id="867c4-418">Japan</span></span>                           |
+| <span data-ttu-id="867c4-419">日本の消費税レポートの設定</span><span class="sxs-lookup"><span data-stu-id="867c4-419">Setup Japan consumption tax report</span></span>                                                                     | <span data-ttu-id="867c4-420">日本</span><span class="sxs-lookup"><span data-stu-id="867c4-420">Japan</span></span>                           |
+| <span data-ttu-id="867c4-421">顧客の為替手形の裏書きによって日本の支払を設定します</span><span class="sxs-lookup"><span data-stu-id="867c4-421">Setup Japan payment by endorsing a customer bill of exchange</span></span>                                           | <span data-ttu-id="867c4-422">日本</span><span class="sxs-lookup"><span data-stu-id="867c4-422">Japan</span></span>                           |
+| <span data-ttu-id="867c4-423">日本の支払手数料の設定</span><span class="sxs-lookup"><span data-stu-id="867c4-423">Setup payment fee for Japan</span></span>                                                                            | <span data-ttu-id="867c4-424">日本</span><span class="sxs-lookup"><span data-stu-id="867c4-424">Japan</span></span>                           |
+| <span data-ttu-id="867c4-425">月次締め請求書の対象にする仕入先マスターおよび発注書の設定</span><span class="sxs-lookup"><span data-stu-id="867c4-425">Setup vendor master and purchase order to be target of consolidated invoice</span></span>                            | <span data-ttu-id="867c4-426">日本</span><span class="sxs-lookup"><span data-stu-id="867c4-426">Japan</span></span>                           |
+| <span data-ttu-id="867c4-427">固定資産の組み立て一覧の使用</span><span class="sxs-lookup"><span data-stu-id="867c4-427">Use assemble list of a fixed asset</span></span>                                                                     | <span data-ttu-id="867c4-428">日本</span><span class="sxs-lookup"><span data-stu-id="867c4-428">Japan</span></span>                           |
+| <span data-ttu-id="867c4-429">固定資産の分解一覧の使用</span><span class="sxs-lookup"><span data-stu-id="867c4-429">Use disassemble list for fixed assets</span></span>                                                                  | <span data-ttu-id="867c4-430">日本</span><span class="sxs-lookup"><span data-stu-id="867c4-430">Japan</span></span>                           |
+| <span data-ttu-id="867c4-431">MX-00006 売上税コードの設定</span><span class="sxs-lookup"><span data-stu-id="867c4-431">MX-00006 Set up sales tax code</span></span>                                                                         | <span data-ttu-id="867c4-432">メキシコ</span><span class="sxs-lookup"><span data-stu-id="867c4-432">Mexico</span></span>                          |
+| <span data-ttu-id="867c4-433">MX-00007 顧客登録 ID などの情報</span><span class="sxs-lookup"><span data-stu-id="867c4-433">MX-00007 Customer registration IDs and other information</span></span>                                               | <span data-ttu-id="867c4-434">メキシコ</span><span class="sxs-lookup"><span data-stu-id="867c4-434">Mexico</span></span>                          |
+| <span data-ttu-id="867c4-435">MX-00008 : 仕入先登録 ID</span><span class="sxs-lookup"><span data-stu-id="867c4-435">MX-00008: Vendor registration IDs</span></span>                                                                      | <span data-ttu-id="867c4-436">メキシコ</span><span class="sxs-lookup"><span data-stu-id="867c4-436">Mexico</span></span>                          |
+| <span data-ttu-id="867c4-437">MX-00010 電子請求書のキャンセル</span><span class="sxs-lookup"><span data-stu-id="867c4-437">MX-00010 Cancel an electronic invoice</span></span>                                                                  | <span data-ttu-id="867c4-438">メキシコ</span><span class="sxs-lookup"><span data-stu-id="867c4-438">Mexico</span></span>                          |
+| <span data-ttu-id="867c4-439">MX-00010 電子請求 CFDI</span><span class="sxs-lookup"><span data-stu-id="867c4-439">MX-00010 E-invoicing CFDI</span></span>                                                                              | <span data-ttu-id="867c4-440">メキシコ</span><span class="sxs-lookup"><span data-stu-id="867c4-440">Mexico</span></span>                          |
+| <span data-ttu-id="867c4-441">MX-00010 メキシコの法人の税登録 ID の入力</span><span class="sxs-lookup"><span data-stu-id="867c4-441">MX-00010 Enter tax registration IDs for Mexican legal entities</span></span>                                         | <span data-ttu-id="867c4-442">メキシコ</span><span class="sxs-lookup"><span data-stu-id="867c4-442">Mexico</span></span>                          |
+| <span data-ttu-id="867c4-443">MX-00010 電子請求書の照会、印刷</span><span class="sxs-lookup"><span data-stu-id="867c4-443">MX-00010 Inquire and print an electronic invoice</span></span>                                                       | <span data-ttu-id="867c4-444">メキシコ</span><span class="sxs-lookup"><span data-stu-id="867c4-444">Mexico</span></span>                          |
+| <span data-ttu-id="867c4-445">MX-00010 自由書式の請求書の転記</span><span class="sxs-lookup"><span data-stu-id="867c4-445">MX-00010 Post a free text invoice</span></span>                                                                      | <span data-ttu-id="867c4-446">メキシコ</span><span class="sxs-lookup"><span data-stu-id="867c4-446">Mexico</span></span>                          |
+| <span data-ttu-id="867c4-447">MX-00010 電子請求書のパラメーターの設定</span><span class="sxs-lookup"><span data-stu-id="867c4-447">MX-00010 Set parameters for an electronic invoice</span></span>                                                      | <span data-ttu-id="867c4-448">メキシコ</span><span class="sxs-lookup"><span data-stu-id="867c4-448">Mexico</span></span>                          |
+| <span data-ttu-id="867c4-449">MX-00020 ー メキシコの銀行口座の RFC 登録 ID を指定</span><span class="sxs-lookup"><span data-stu-id="867c4-449">MX-00020 – Specify the RFC registration ID for Mexican bank accounts</span></span>                                   | <span data-ttu-id="867c4-450">メキシコ</span><span class="sxs-lookup"><span data-stu-id="867c4-450">Mexico</span></span>                          |
+| <span data-ttu-id="867c4-451">MX-00020 メキシコの電子元帳計算レポート バージョン 1.1 の作成</span><span class="sxs-lookup"><span data-stu-id="867c4-451">MX-00020 Produce Mexican electronic ledger accounting report version 1.1</span></span>                               | <span data-ttu-id="867c4-452">メキシコ</span><span class="sxs-lookup"><span data-stu-id="867c4-452">Mexico</span></span>                          |
+| <span data-ttu-id="867c4-453">MX-00020 メキシコの法人の勘定科目表の設定</span><span class="sxs-lookup"><span data-stu-id="867c4-453">MX-00020 Set up the chart of accounts for a legal entity in Mexico</span></span>                                     | <span data-ttu-id="867c4-454">メキシコ</span><span class="sxs-lookup"><span data-stu-id="867c4-454">Mexico</span></span>                          |
+| <span data-ttu-id="867c4-455">NL-00003 Semansys XBRL 統合</span><span class="sxs-lookup"><span data-stu-id="867c4-455">NL-00003 Semansys XBRL integration</span></span>                                                                     | <span data-ttu-id="867c4-456">オランダ</span><span class="sxs-lookup"><span data-stu-id="867c4-456">Netherlands</span></span>                     |
+| <span data-ttu-id="867c4-457">NL-00010 電子税申告 (EVAT)</span><span class="sxs-lookup"><span data-stu-id="867c4-457">NL-00010 Electronic tax declarations (EVAT)</span></span>                                                            | <span data-ttu-id="867c4-458">オランダ</span><span class="sxs-lookup"><span data-stu-id="867c4-458">Netherlands</span></span>                     |
+| <span data-ttu-id="867c4-459">MY-00004 販売税の仕入先の借方票および貸方票の管理</span><span class="sxs-lookup"><span data-stu-id="867c4-459">MY-00004 Manage vendor Debit note and Credit note for GST</span></span>                                              | <span data-ttu-id="867c4-460">シンガポール、マレーシアおよびタイ</span><span class="sxs-lookup"><span data-stu-id="867c4-460">Singapore Malaysia and Thailand</span></span> |
+| <span data-ttu-id="867c4-461">MY-00005 販売税請求書の印刷</span><span class="sxs-lookup"><span data-stu-id="867c4-461">MY-00005 Print GST tax invoices</span></span>                                                                        | <span data-ttu-id="867c4-462">シンガポール、マレーシアおよびタイ</span><span class="sxs-lookup"><span data-stu-id="867c4-462">Singapore Malaysia and Thailand</span></span> |
+| <span data-ttu-id="867c4-463">MY-00006 01 販売税の控除条件の設定</span><span class="sxs-lookup"><span data-stu-id="867c4-463">MY-00006 01 Set up GST relief clauses</span></span>                                                                  | <span data-ttu-id="867c4-464">シンガポール、マレーシアおよびタイ</span><span class="sxs-lookup"><span data-stu-id="867c4-464">Singapore Malaysia and Thailand</span></span> |
+| <span data-ttu-id="867c4-465">MY-00006 02 販売税の顧客請求書を控除条件とともに印刷</span><span class="sxs-lookup"><span data-stu-id="867c4-465">MY-00006 02 Print GST customer invoices with a relief clause</span></span>                                           | <span data-ttu-id="867c4-466">シンガポール、マレーシアおよびタイ</span><span class="sxs-lookup"><span data-stu-id="867c4-466">Singapore Malaysia and Thailand</span></span> |
+| <span data-ttu-id="867c4-467">MY-00007 自動請求の請求書</span><span class="sxs-lookup"><span data-stu-id="867c4-467">MY-00007 Self-billed invoices</span></span>                                                                          | <span data-ttu-id="867c4-468">シンガポール、マレーシアおよびタイ</span><span class="sxs-lookup"><span data-stu-id="867c4-468">Singapore Malaysia and Thailand</span></span> |
+| <span data-ttu-id="867c4-469">MY-00010 GST ー 必要な形式の GAF ファイルの作成</span><span class="sxs-lookup"><span data-stu-id="867c4-469">MY-00010 GST – Generate GAF files in the required format</span></span>                                               | <span data-ttu-id="867c4-470">シンガポール、マレーシアおよびタイ</span><span class="sxs-lookup"><span data-stu-id="867c4-470">Singapore Malaysia and Thailand</span></span> |
+| <span data-ttu-id="867c4-471">MY-00011 02 プロジェクト販売の顧客借方票の作成</span><span class="sxs-lookup"><span data-stu-id="867c4-471">MY-00011 02 Generate Customer Debit Note for Project sales</span></span>                                             | <span data-ttu-id="867c4-472">シンガポール、マレーシアおよびタイ</span><span class="sxs-lookup"><span data-stu-id="867c4-472">Singapore Malaysia and Thailand</span></span> |
+| <span data-ttu-id="867c4-473">MY-00011 03 プロジェクト販売の顧客貸方票の作成</span><span class="sxs-lookup"><span data-stu-id="867c4-473">MY-00011 03 Generate Customer Credit note for Project sales</span></span>                                            | <span data-ttu-id="867c4-474">シンガポール、マレーシアおよびタイ</span><span class="sxs-lookup"><span data-stu-id="867c4-474">Singapore Malaysia and Thailand</span></span> |
+| <span data-ttu-id="867c4-475">GB-00002 VAT の逆請求対象品目を含む発注書の作成</span><span class="sxs-lookup"><span data-stu-id="867c4-475">GB-00002 Create a purchase order that includes items subject to reverse charge VAT</span></span>                     | <span data-ttu-id="867c4-476">英国</span><span class="sxs-lookup"><span data-stu-id="867c4-476">United Kingdom</span></span>                  |
+| <span data-ttu-id="867c4-477">GB-00002 逆請求 VAT の対象となる品目を含む販売注文の作成</span><span class="sxs-lookup"><span data-stu-id="867c4-477">GB-00002 Create a sales order that includes items subject to reverse charge VAT</span></span>                        | <span data-ttu-id="867c4-478">英国</span><span class="sxs-lookup"><span data-stu-id="867c4-478">United Kingdom</span></span>                  |
+| <span data-ttu-id="867c4-479">GB-00002 VAT の逆請求の品目売上税グループの設定</span><span class="sxs-lookup"><span data-stu-id="867c4-479">GB-00002 Set up item sales tax groups for reverse charge VAT</span></span>                                           | <span data-ttu-id="867c4-480">英国</span><span class="sxs-lookup"><span data-stu-id="867c4-480">United Kingdom</span></span>                  |
+| <span data-ttu-id="867c4-481">GB-00002 VAT の逆請求品目グループ、ルール、およびパラメータの設定</span><span class="sxs-lookup"><span data-stu-id="867c4-481">GB-00002 Set up reverse charge VAT item groups, rules, and parameters</span></span>                                  | <span data-ttu-id="867c4-482">英国</span><span class="sxs-lookup"><span data-stu-id="867c4-482">United Kingdom</span></span>                  |
+| <span data-ttu-id="867c4-483">GB-00002 VAT の逆請求の売上税コードの設定</span><span class="sxs-lookup"><span data-stu-id="867c4-483">GB-00002 Set up sales tax groups for reverse charge VAT</span></span>                                                | <span data-ttu-id="867c4-484">英国</span><span class="sxs-lookup"><span data-stu-id="867c4-484">United Kingdom</span></span>                  |
+| <span data-ttu-id="867c4-485">GB-00009 決済割引に対する貸方票の作成</span><span class="sxs-lookup"><span data-stu-id="867c4-485">GB-00009 Create a credit note on the settlement discount</span></span>                                               | <span data-ttu-id="867c4-486">英国</span><span class="sxs-lookup"><span data-stu-id="867c4-486">United Kingdom</span></span>                  |
+| <span data-ttu-id="867c4-487">GB-00009 即時支払割引の貸方票のパラメーターの設定</span><span class="sxs-lookup"><span data-stu-id="867c4-487">GB-00009 Setup parameters for credit note on prompt payment discount</span></span>                                   | <span data-ttu-id="867c4-488">英国</span><span class="sxs-lookup"><span data-stu-id="867c4-488">United Kingdom</span></span>                  |
 
  
 
-### <a name="develop-vision-and-strategy"></a>ビジョンと戦略の策定
+### <a name="develop-vision-and-strategy"></a><span data-ttu-id="867c4-489">ビジョンと戦略の策定</span><span class="sxs-lookup"><span data-stu-id="867c4-489">Develop Vision and Strategy</span></span>
 
 |                                                                                          |                    |
 |------------------------------------------------------------------------------------------|--------------------|
-| **BPM 行**                                                                             | **国/地域** |
-| アンケート結果の分析                                                            | グローバル             |
-| 選択式の質問を作成します                                                           | グローバル             |
-| 自由回答式の質問を作成します                                                            | グローバル             |
-| 前の質問の回答に応じて質問を作成 (条件付き質問) | グローバル             |
-| パーセンテージに基づくアンケートの評価                                                   | グローバル             |
+| <span data-ttu-id="867c4-490">**BPM 行**</span><span class="sxs-lookup"><span data-stu-id="867c4-490">**BPM Line**</span></span>                                                                             | <span data-ttu-id="867c4-491">**国/地域**</span><span class="sxs-lookup"><span data-stu-id="867c4-491">**Country/Region**</span></span> |
+| <span data-ttu-id="867c4-492">アンケート結果の分析</span><span class="sxs-lookup"><span data-stu-id="867c4-492">Analyze questionnaire results</span></span>                                                            | <span data-ttu-id="867c4-493">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-493">Global</span></span>             |
+| <span data-ttu-id="867c4-494">選択式の質問を作成します</span><span class="sxs-lookup"><span data-stu-id="867c4-494">Create a closed ended question</span></span>                                                           | <span data-ttu-id="867c4-495">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-495">Global</span></span>             |
+| <span data-ttu-id="867c4-496">自由回答式の質問を作成します</span><span class="sxs-lookup"><span data-stu-id="867c4-496">Create an open ended question</span></span>                                                            | <span data-ttu-id="867c4-497">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-497">Global</span></span>             |
+| <span data-ttu-id="867c4-498">前の質問の回答に応じて質問を作成 (条件付き質問)</span><span class="sxs-lookup"><span data-stu-id="867c4-498">Make a question dependent on the answer of the previous question (Conditional questions)</span></span> | <span data-ttu-id="867c4-499">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-499">Global</span></span>             |
+| <span data-ttu-id="867c4-500">パーセンテージに基づくアンケートの評価</span><span class="sxs-lookup"><span data-stu-id="867c4-500">Score a questionnaire based on Percent</span></span>                                                   | <span data-ttu-id="867c4-501">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-501">Global</span></span>             |
 
  
 
-### <a name="electronic-reporting"></a>電子申告
+### <a name="electronic-reporting"></a><span data-ttu-id="867c4-502">電子申告</span><span class="sxs-lookup"><span data-stu-id="867c4-502">Electronic reporting</span></span>
 
 |                                                 |                    |
 |-------------------------------------------------|--------------------|
-| **BPM 行**                                    | **国/地域** |
-| ER モデル マッピングを定義し、データ ソースを選択します | グローバル             |
-| ER 設計ドメイン固有のデータ モデル            | グローバル             |
-| ER 設計ドメイン固有の形式                | グローバル             |
-| ER データ モデルを選択したデータ ソースにマップする      | グローバル             |
-| ER サービス プロバイダを選択する                      | グローバル             |
+| <span data-ttu-id="867c4-503">**BPM 行**</span><span class="sxs-lookup"><span data-stu-id="867c4-503">**BPM Line**</span></span>                                    | <span data-ttu-id="867c4-504">**国/地域**</span><span class="sxs-lookup"><span data-stu-id="867c4-504">**Country/Region**</span></span> |
+| <span data-ttu-id="867c4-505">ER モデル マッピングを定義し、データ ソースを選択します</span><span class="sxs-lookup"><span data-stu-id="867c4-505">ER Define model mapping and select data sources</span></span> | <span data-ttu-id="867c4-506">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-506">Global</span></span>             |
+| <span data-ttu-id="867c4-507">ER 設計ドメイン固有のデータ モデル</span><span class="sxs-lookup"><span data-stu-id="867c4-507">ER Design domain specific data model</span></span>            | <span data-ttu-id="867c4-508">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-508">Global</span></span>             |
+| <span data-ttu-id="867c4-509">ER 設計ドメイン固有の形式</span><span class="sxs-lookup"><span data-stu-id="867c4-509">ER Design domain specific format</span></span>                | <span data-ttu-id="867c4-510">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-510">Global</span></span>             |
+| <span data-ttu-id="867c4-511">ER データ モデルを選択したデータ ソースにマップする</span><span class="sxs-lookup"><span data-stu-id="867c4-511">ER Map data model to selected data sources</span></span>      | <span data-ttu-id="867c4-512">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-512">Global</span></span>             |
+| <span data-ttu-id="867c4-513">ER サービス プロバイダを選択する</span><span class="sxs-lookup"><span data-stu-id="867c4-513">ER Select service provider</span></span>                      | <span data-ttu-id="867c4-514">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-514">Global</span></span>             |
 
  
 
-### <a name="expense-management"></a>経費管理
+### <a name="expense-management"></a><span data-ttu-id="867c4-515">経費管理</span><span class="sxs-lookup"><span data-stu-id="867c4-515">Expense management</span></span>
 
 |                              |                    |
 |------------------------------|--------------------|
-| **BPM 行**                 | **国/地域** |
-| 経費管理の構成 | グローバル             |
+| <span data-ttu-id="867c4-516">**BPM 行**</span><span class="sxs-lookup"><span data-stu-id="867c4-516">**BPM Line**</span></span>                 | <span data-ttu-id="867c4-517">**国/地域**</span><span class="sxs-lookup"><span data-stu-id="867c4-517">**Country/Region**</span></span> |
+| <span data-ttu-id="867c4-518">経費管理の構成</span><span class="sxs-lookup"><span data-stu-id="867c4-518">Configure expense management</span></span> | <span data-ttu-id="867c4-519">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-519">Global</span></span>             |
 
  
 
-### <a name="fixed-assets"></a>固定資産
+### <a name="fixed-assets"></a><span data-ttu-id="867c4-520">固定資産</span><span class="sxs-lookup"><span data-stu-id="867c4-520">Fixed assets</span></span>
 
 |                                                           |                    |
 |-----------------------------------------------------------|--------------------|
-| **BPM 行**                                              | **国/地域** |
-| 複数の固定資産の減価償却方法の変更 | グローバル             |
-| 固定資産の作成                                      | グローバル             |
-| 買掛金勘定からの資産の作成と取得           | グローバル             |
-| 償却提案を作成します                              | グローバル             |
-| 自由書式の請求書を使用して固定資産を処分する        | グローバル             |
-| 固定資産への追加物の入力                        | グローバル             |
-| 固定資産取得の提案                          | グローバル             |
-| 減価償却プロファイルの設定および作成                   | グローバル             |
-| 特別償却の設定                                 | グローバル             |
-| 減価償却簿の設定                                 | グローバル             |
-| 固定資産グループを設定します                                 | グローバル             |
-| 固定資産転記プロファイルの設定                       | グローバル             |
-| 価値モデルの設定                                       | グローバル             |
-| 固定資産の分割                                       | グローバル             |
-| 固定資産の移動                                    | グローバル             |
+| <span data-ttu-id="867c4-521">**BPM 行**</span><span class="sxs-lookup"><span data-stu-id="867c4-521">**BPM Line**</span></span>                                              | <span data-ttu-id="867c4-522">**国/地域**</span><span class="sxs-lookup"><span data-stu-id="867c4-522">**Country/Region**</span></span> |
+| <span data-ttu-id="867c4-523">複数の固定資産の減価償却方法の変更</span><span class="sxs-lookup"><span data-stu-id="867c4-523">Change depreciation conventions for multiple fixed assets</span></span> | <span data-ttu-id="867c4-524">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-524">Global</span></span>             |
+| <span data-ttu-id="867c4-525">固定資産の作成</span><span class="sxs-lookup"><span data-stu-id="867c4-525">Create a fixed asset</span></span>                                      | <span data-ttu-id="867c4-526">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-526">Global</span></span>             |
+| <span data-ttu-id="867c4-527">買掛金勘定からの資産の作成と取得</span><span class="sxs-lookup"><span data-stu-id="867c4-527">Create and acquire assets from Accounts payable</span></span>           | <span data-ttu-id="867c4-528">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-528">Global</span></span>             |
+| <span data-ttu-id="867c4-529">償却提案を作成します</span><span class="sxs-lookup"><span data-stu-id="867c4-529">Create depreciation proposal</span></span>                              | <span data-ttu-id="867c4-530">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-530">Global</span></span>             |
+| <span data-ttu-id="867c4-531">自由書式の請求書を使用して固定資産を処分する</span><span class="sxs-lookup"><span data-stu-id="867c4-531">Dispose of a fixed asset using a free text invoice</span></span>        | <span data-ttu-id="867c4-532">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-532">Global</span></span>             |
+| <span data-ttu-id="867c4-533">固定資産への追加物の入力</span><span class="sxs-lookup"><span data-stu-id="867c4-533">Enter an addition to a fixed asset</span></span>                        | <span data-ttu-id="867c4-534">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-534">Global</span></span>             |
+| <span data-ttu-id="867c4-535">固定資産取得の提案</span><span class="sxs-lookup"><span data-stu-id="867c4-535">Propose fixed asset acquisitions</span></span>                          | <span data-ttu-id="867c4-536">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-536">Global</span></span>             |
+| <span data-ttu-id="867c4-537">減価償却プロファイルの設定および作成</span><span class="sxs-lookup"><span data-stu-id="867c4-537">Set up and create depreciation profiles</span></span>                   | <span data-ttu-id="867c4-538">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-538">Global</span></span>             |
+| <span data-ttu-id="867c4-539">特別償却の設定</span><span class="sxs-lookup"><span data-stu-id="867c4-539">Set up bonus depreciation</span></span>                                 | <span data-ttu-id="867c4-540">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-540">Global</span></span>             |
+| <span data-ttu-id="867c4-541">減価償却簿の設定</span><span class="sxs-lookup"><span data-stu-id="867c4-541">Set up depreciation books</span></span>                                 | <span data-ttu-id="867c4-542">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-542">Global</span></span>             |
+| <span data-ttu-id="867c4-543">固定資産グループを設定します</span><span class="sxs-lookup"><span data-stu-id="867c4-543">Set up fixed asset groups</span></span>                                 | <span data-ttu-id="867c4-544">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-544">Global</span></span>             |
+| <span data-ttu-id="867c4-545">固定資産転記プロファイルの設定</span><span class="sxs-lookup"><span data-stu-id="867c4-545">Set up fixed asset posting profiles</span></span>                       | <span data-ttu-id="867c4-546">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-546">Global</span></span>             |
+| <span data-ttu-id="867c4-547">価値モデルの設定</span><span class="sxs-lookup"><span data-stu-id="867c4-547">Set up value models</span></span>                                       | <span data-ttu-id="867c4-548">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-548">Global</span></span>             |
+| <span data-ttu-id="867c4-549">固定資産の分割</span><span class="sxs-lookup"><span data-stu-id="867c4-549">Split a fixed asset</span></span>                                       | <span data-ttu-id="867c4-550">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-550">Global</span></span>             |
+| <span data-ttu-id="867c4-551">固定資産の移動</span><span class="sxs-lookup"><span data-stu-id="867c4-551">Transfer a fixed asset</span></span>                                    | <span data-ttu-id="867c4-552">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-552">Global</span></span>             |
 
  
 
-### <a name="general-ledger"></a>総勘定元帳
+### <a name="general-ledger"></a><span data-ttu-id="867c4-553">総勘定元帳</span><span class="sxs-lookup"><span data-stu-id="867c4-553">General ledger</span></span>
 
 |                                                                   |                    |
 |-------------------------------------------------------------------|--------------------|
-| **BPM 行**                                                      | **国/地域** |
-| 会計年度の終了                                             | グローバル             |
-| テンプレートを使用した仕訳入力の作成                           | グローバル             |
-| 主勘定の作成                                             | グローバル             |
-| 勘定構造の作成                                         | グローバル             |
-| 発生主義スキーマの作成                                            | グローバル             |
-| 仕訳帳の詳細なルールの作成                                | グローバル             |
-| 詳細ルール構造の作成と割当                        | グローバル             |
-| 仕訳帳の作成および検証                                      | グローバル             |
-| 連結グループ、および追加の連結勘定の作成 | グローバル             |
-| 元帳発生トランザクションの作成                                | グローバル             |
-| 財務分析コードの定義                                       | グローバル             |
-| 転記された仕訳入力の仕訳                                 | グローバル             |
-| 財務分析コード用の既定テンプレートの管理                    | グローバル             |
-| 一括の財務期間の終了                                       | グローバル             |
-| オンライン連結の実行                                   | グローバル             |
-| 定期処理仕訳帳の転記                                            | グローバル             |
-| 連結プロセスで使用するために法人を準備       | グローバル             |
-| 削除トランザクションの処理                                  | グローバル             |
-| 元帳配賦仕訳帳の処理                                 | グローバル             |
-| 勘定科目のエイリアスを設定                                     | グローバル             |
-| 削除ルールの設定                                          | グローバル             |
-| 主勘定カテゴリの設定                                    | グローバル             |
-| 勘定科目間でのトランザクションの決済                       | グローバル             |
-| 仕訳入力またはトランザクションの表示                              | グローバル             |
-| 仕訳帳からの関連する会社間伝票の表示                    | グローバル             |
+| <span data-ttu-id="867c4-554">**BPM 行**</span><span class="sxs-lookup"><span data-stu-id="867c4-554">**BPM Line**</span></span>                                                      | <span data-ttu-id="867c4-555">**国/地域**</span><span class="sxs-lookup"><span data-stu-id="867c4-555">**Country/Region**</span></span> |
+| <span data-ttu-id="867c4-556">会計年度の終了</span><span class="sxs-lookup"><span data-stu-id="867c4-556">Close the fiscal year</span></span>                                             | <span data-ttu-id="867c4-557">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-557">Global</span></span>             |
+| <span data-ttu-id="867c4-558">テンプレートを使用した仕訳入力の作成</span><span class="sxs-lookup"><span data-stu-id="867c4-558">Create a journal entry using   template</span></span>                           | <span data-ttu-id="867c4-559">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-559">Global</span></span>             |
+| <span data-ttu-id="867c4-560">主勘定の作成</span><span class="sxs-lookup"><span data-stu-id="867c4-560">Create a main account</span></span>                                             | <span data-ttu-id="867c4-561">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-561">Global</span></span>             |
+| <span data-ttu-id="867c4-562">勘定構造の作成</span><span class="sxs-lookup"><span data-stu-id="867c4-562">Create account structures</span></span>                                         | <span data-ttu-id="867c4-563">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-563">Global</span></span>             |
+| <span data-ttu-id="867c4-564">発生主義スキーマの作成</span><span class="sxs-lookup"><span data-stu-id="867c4-564">Create accrual schemes</span></span>                                            | <span data-ttu-id="867c4-565">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-565">Global</span></span>             |
+| <span data-ttu-id="867c4-566">仕訳帳の詳細なルールの作成</span><span class="sxs-lookup"><span data-stu-id="867c4-566">Create advanced rules for journals</span></span>                                | <span data-ttu-id="867c4-567">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-567">Global</span></span>             |
+| <span data-ttu-id="867c4-568">詳細ルール構造の作成と割当</span><span class="sxs-lookup"><span data-stu-id="867c4-568">Create and assign advanced rule structures</span></span>                        | <span data-ttu-id="867c4-569">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-569">Global</span></span>             |
+| <span data-ttu-id="867c4-570">仕訳帳の作成および検証</span><span class="sxs-lookup"><span data-stu-id="867c4-570">Create and validate journals</span></span>                                      | <span data-ttu-id="867c4-571">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-571">Global</span></span>             |
+| <span data-ttu-id="867c4-572">連結グループ、および追加の連結勘定の作成</span><span class="sxs-lookup"><span data-stu-id="867c4-572">Create consolidation groups and additional consolidation accounts</span></span> | <span data-ttu-id="867c4-573">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-573">Global</span></span>             |
+| <span data-ttu-id="867c4-574">元帳発生トランザクションの作成</span><span class="sxs-lookup"><span data-stu-id="867c4-574">Create ledger accrual transactions</span></span>                                | <span data-ttu-id="867c4-575">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-575">Global</span></span>             |
+| <span data-ttu-id="867c4-576">財務分析コードの定義</span><span class="sxs-lookup"><span data-stu-id="867c4-576">Define financial dimensions</span></span>                                       | <span data-ttu-id="867c4-577">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-577">Global</span></span>             |
+| <span data-ttu-id="867c4-578">転記された仕訳入力の仕訳</span><span class="sxs-lookup"><span data-stu-id="867c4-578">Journalize posted journal entries</span></span>                                 | <span data-ttu-id="867c4-579">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-579">Global</span></span>             |
+| <span data-ttu-id="867c4-580">財務分析コード用の既定テンプレートの管理</span><span class="sxs-lookup"><span data-stu-id="867c4-580">Maintain financial dimension default templates</span></span>                    | <span data-ttu-id="867c4-581">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-581">Global</span></span>             |
+| <span data-ttu-id="867c4-582">一括の財務期間の終了</span><span class="sxs-lookup"><span data-stu-id="867c4-582">Mass financial period close</span></span>                                       | <span data-ttu-id="867c4-583">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-583">Global</span></span>             |
+| <span data-ttu-id="867c4-584">オンライン連結の実行</span><span class="sxs-lookup"><span data-stu-id="867c4-584">Perform an online consolidation</span></span>                                   | <span data-ttu-id="867c4-585">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-585">Global</span></span>             |
+| <span data-ttu-id="867c4-586">定期処理仕訳帳の転記</span><span class="sxs-lookup"><span data-stu-id="867c4-586">Post periodic journals</span></span>                                            | <span data-ttu-id="867c4-587">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-587">Global</span></span>             |
+| <span data-ttu-id="867c4-588">連結プロセスで使用するために法人を準備</span><span class="sxs-lookup"><span data-stu-id="867c4-588">Prepare a legal entity for use in the consolidation process</span></span>       | <span data-ttu-id="867c4-589">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-589">Global</span></span>             |
+| <span data-ttu-id="867c4-590">削除トランザクションの処理</span><span class="sxs-lookup"><span data-stu-id="867c4-590">Process elimination transactions</span></span>                                  | <span data-ttu-id="867c4-591">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-591">Global</span></span>             |
+| <span data-ttu-id="867c4-592">元帳配賦仕訳帳の処理</span><span class="sxs-lookup"><span data-stu-id="867c4-592">Process ledger allocation journal</span></span>                                 | <span data-ttu-id="867c4-593">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-593">Global</span></span>             |
+| <span data-ttu-id="867c4-594">勘定科目のエイリアスを設定</span><span class="sxs-lookup"><span data-stu-id="867c4-594">Set up a ledger account alias</span></span>                                     | <span data-ttu-id="867c4-595">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-595">Global</span></span>             |
+| <span data-ttu-id="867c4-596">削除ルールの設定</span><span class="sxs-lookup"><span data-stu-id="867c4-596">Set up elimination rules</span></span>                                          | <span data-ttu-id="867c4-597">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-597">Global</span></span>             |
+| <span data-ttu-id="867c4-598">主勘定カテゴリの設定</span><span class="sxs-lookup"><span data-stu-id="867c4-598">Set up main account categories</span></span>                                    | <span data-ttu-id="867c4-599">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-599">Global</span></span>             |
+| <span data-ttu-id="867c4-600">勘定科目間でのトランザクションの決済</span><span class="sxs-lookup"><span data-stu-id="867c4-600">Settle transactions between ledger accounts</span></span>                       | <span data-ttu-id="867c4-601">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-601">Global</span></span>             |
+| <span data-ttu-id="867c4-602">仕訳入力またはトランザクションの表示</span><span class="sxs-lookup"><span data-stu-id="867c4-602">View journal entries or transactions</span></span>                              | <span data-ttu-id="867c4-603">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-603">Global</span></span>             |
+| <span data-ttu-id="867c4-604">仕訳帳からの関連する会社間伝票の表示</span><span class="sxs-lookup"><span data-stu-id="867c4-604">View related intercompany voucher from journal</span></span>                    | <span data-ttu-id="867c4-605">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-605">Global</span></span>             |
 
  
 
-### <a name="human-capital-management"></a>人材管理
+### <a name="human-capital-management"></a><span data-ttu-id="867c4-606">人材管理</span><span class="sxs-lookup"><span data-stu-id="867c4-606">Human capital management</span></span>
 
 |                                                                  |                    |
 |------------------------------------------------------------------|--------------------|
-| **BPM 行**                                                     | **国/地域** |
-| アンケート結果の分析                                    | グローバル             |
-| 申請受信トレイ レコードの承認                                | グローバル             |
-| 給付金適格性処理                                      | グローバル             |
-| 大量採用プロジェクトの作成                                       | グローバル             |
-| 貸与品目の作成                                                | グローバル             |
-| 給付金の適格性ルールおよびポリシーの定義                    | グローバル             |
-| 報酬プロセスの定義および結果の計算                | グローバル             |
-| 新しい部門の定義                                           | グローバル             |
-| 新しいジョブの定義                                                  | グローバル             |
-| 従業員手当プログラムの提供                                | グローバル             |
-| 求人の作成と実施                                 | グローバル             |
-| 継続的計画の作成                                          | グローバル             |
-| 雇用検証 i9 検証                          | グローバル             |
-| 作業者の福利厚生の登録および削除                          | グローバル             |
-| 固定報酬プランへの従業員登録                    | グローバル             |
-| 変動報酬プランへの従業員登録                 | グローバル             |
-| 申請者およびアプリケーション データを手動で入力します                    | グローバル             |
-| 作業者情報の入力                                         | グローバル             |
-| 採用により、既存の候補者を雇用                    | グローバル             |
-| 採用によって候補者を雇用                                | グローバル             |
-| 複数の従業員を雇用                                          | グローバル             |
-| 候補者採用手段の確認と配置                    | グローバル             |
-| 作業者への貸与品目                                            | グローバル             |
-| 従業員のけが/病気の情報を管理                 | グローバル             |
-| 前の質問の回答に応じて質問を作成 | グローバル             |
-| 給付金の有効期限の管理                                  | グローバル             |
-| 電子メール テンプレートの管理                                           | グローバル             |
-| 従業員の遷移および移動の管理                        | グローバル             |
-| 休暇の管理                                          | グローバル             |
-| 作業者の特別設備の管理                                     | グローバル             |
-| 職位の報告関係の修正                    | グローバル             |
-| 報酬グリッドの設定                                        | グローバル             |
-| けが/病気の情報を設定します                            | グローバル             |
-| けが/病気の情報を設定します                            | グローバル             |
-| 給付金の適格性ポリシーの設定                             | グローバル             |
-| i9ドキュメント タイプの設定                                     | グローバル             |
+| <span data-ttu-id="867c4-607">**BPM 行**</span><span class="sxs-lookup"><span data-stu-id="867c4-607">**BPM Line**</span></span>                                                     | <span data-ttu-id="867c4-608">**国/地域**</span><span class="sxs-lookup"><span data-stu-id="867c4-608">**Country/Region**</span></span> |
+| <span data-ttu-id="867c4-609">アンケート結果の分析</span><span class="sxs-lookup"><span data-stu-id="867c4-609">Analyze questionnaire results</span></span>                                    | <span data-ttu-id="867c4-610">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-610">Global</span></span>             |
+| <span data-ttu-id="867c4-611">申請受信トレイ レコードの承認</span><span class="sxs-lookup"><span data-stu-id="867c4-611">Approve application inbox records</span></span>                                | <span data-ttu-id="867c4-612">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-612">Global</span></span>             |
+| <span data-ttu-id="867c4-613">給付金適格性処理</span><span class="sxs-lookup"><span data-stu-id="867c4-613">Benefit eligibility process</span></span>                                      | <span data-ttu-id="867c4-614">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-614">Global</span></span>             |
+| <span data-ttu-id="867c4-615">大量採用プロジェクトの作成</span><span class="sxs-lookup"><span data-stu-id="867c4-615">Create a mass hire project</span></span>                                       | <span data-ttu-id="867c4-616">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-616">Global</span></span>             |
+| <span data-ttu-id="867c4-617">貸与品目の作成</span><span class="sxs-lookup"><span data-stu-id="867c4-617">Create loan items</span></span>                                                | <span data-ttu-id="867c4-618">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-618">Global</span></span>             |
+| <span data-ttu-id="867c4-619">給付金の適格性ルールおよびポリシーの定義</span><span class="sxs-lookup"><span data-stu-id="867c4-619">Define benefit eligibility rules and policies</span></span>                    | <span data-ttu-id="867c4-620">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-620">Global</span></span>             |
+| <span data-ttu-id="867c4-621">報酬プロセスの定義および結果の計算</span><span class="sxs-lookup"><span data-stu-id="867c4-621">Define compensation process and calculate results</span></span>                | <span data-ttu-id="867c4-622">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-622">Global</span></span>             |
+| <span data-ttu-id="867c4-623">新しい部門の定義</span><span class="sxs-lookup"><span data-stu-id="867c4-623">Define new departments</span></span>                                           | <span data-ttu-id="867c4-624">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-624">Global</span></span>             |
+| <span data-ttu-id="867c4-625">新しいジョブの定義</span><span class="sxs-lookup"><span data-stu-id="867c4-625">Define new jobs</span></span>                                                  | <span data-ttu-id="867c4-626">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-626">Global</span></span>             |
+| <span data-ttu-id="867c4-627">従業員手当プログラムの提供</span><span class="sxs-lookup"><span data-stu-id="867c4-627">Deliver employee benefits program</span></span>                                | <span data-ttu-id="867c4-628">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-628">Global</span></span>             |
+| <span data-ttu-id="867c4-629">求人の作成と実施</span><span class="sxs-lookup"><span data-stu-id="867c4-629">Develop and open job requisition</span></span>                                 | <span data-ttu-id="867c4-630">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-630">Global</span></span>             |
+| <span data-ttu-id="867c4-631">継続的計画の作成</span><span class="sxs-lookup"><span data-stu-id="867c4-631">Develop succession plan</span></span>                                          | <span data-ttu-id="867c4-632">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-632">Global</span></span>             |
+| <span data-ttu-id="867c4-633">雇用検証 i9 検証</span><span class="sxs-lookup"><span data-stu-id="867c4-633">Employment verification i9 verification</span></span>                          | <span data-ttu-id="867c4-634">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-634">Global</span></span>             |
+| <span data-ttu-id="867c4-635">作業者の福利厚生の登録および削除</span><span class="sxs-lookup"><span data-stu-id="867c4-635">Enroll and remove benefits for a worker</span></span>                          | <span data-ttu-id="867c4-636">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-636">Global</span></span>             |
+| <span data-ttu-id="867c4-637">固定報酬プランへの従業員登録</span><span class="sxs-lookup"><span data-stu-id="867c4-637">Enroll employees in a fixed compensation plan</span></span>                    | <span data-ttu-id="867c4-638">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-638">Global</span></span>             |
+| <span data-ttu-id="867c4-639">変動報酬プランへの従業員登録</span><span class="sxs-lookup"><span data-stu-id="867c4-639">Enroll employees in a variable compensation plan</span></span>                 | <span data-ttu-id="867c4-640">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-640">Global</span></span>             |
+| <span data-ttu-id="867c4-641">申請者およびアプリケーション データを手動で入力します</span><span class="sxs-lookup"><span data-stu-id="867c4-641">Enter applicant and application data manually</span></span>                    | <span data-ttu-id="867c4-642">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-642">Global</span></span>             |
+| <span data-ttu-id="867c4-643">作業者情報の入力</span><span class="sxs-lookup"><span data-stu-id="867c4-643">Enter worker information</span></span>                                         | <span data-ttu-id="867c4-644">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-644">Global</span></span>             |
+| <span data-ttu-id="867c4-645">採用により、既存の候補者を雇用</span><span class="sxs-lookup"><span data-stu-id="867c4-645">Hire an existing candidate through recruiting</span></span>                    | <span data-ttu-id="867c4-646">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-646">Global</span></span>             |
+| <span data-ttu-id="867c4-647">採用によって候補者を雇用</span><span class="sxs-lookup"><span data-stu-id="867c4-647">Hire candidate through recruiting</span></span>                                | <span data-ttu-id="867c4-648">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-648">Global</span></span>             |
+| <span data-ttu-id="867c4-649">複数の従業員を雇用</span><span class="sxs-lookup"><span data-stu-id="867c4-649">Hire multiple employees</span></span>                                          | <span data-ttu-id="867c4-650">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-650">Global</span></span>             |
+| <span data-ttu-id="867c4-651">候補者採用手段の確認と配置</span><span class="sxs-lookup"><span data-stu-id="867c4-651">Identify and deploy candidate selection tools</span></span>                    | <span data-ttu-id="867c4-652">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-652">Global</span></span>             |
+| <span data-ttu-id="867c4-653">作業者への貸与品目</span><span class="sxs-lookup"><span data-stu-id="867c4-653">Loan item to a worker</span></span>                                            | <span data-ttu-id="867c4-654">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-654">Global</span></span>             |
+| <span data-ttu-id="867c4-655">従業員のけが/病気の情報を管理</span><span class="sxs-lookup"><span data-stu-id="867c4-655">Maintain employee injury and illness information</span></span>                 | <span data-ttu-id="867c4-656">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-656">Global</span></span>             |
+| <span data-ttu-id="867c4-657">前の質問の回答に応じて質問を作成</span><span class="sxs-lookup"><span data-stu-id="867c4-657">Make a question dependent on the answer of the previous question</span></span> | <span data-ttu-id="867c4-658">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-658">Global</span></span>             |
+| <span data-ttu-id="867c4-659">給付金の有効期限の管理</span><span class="sxs-lookup"><span data-stu-id="867c4-659">Manage benefit expiration dates</span></span>                                  | <span data-ttu-id="867c4-660">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-660">Global</span></span>             |
+| <span data-ttu-id="867c4-661">電子メール テンプレートの管理</span><span class="sxs-lookup"><span data-stu-id="867c4-661">Manage email templates</span></span>                                           | <span data-ttu-id="867c4-662">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-662">Global</span></span>             |
+| <span data-ttu-id="867c4-663">従業員の遷移および移動の管理</span><span class="sxs-lookup"><span data-stu-id="867c4-663">Manage employee transitions and transfers</span></span>                        | <span data-ttu-id="867c4-664">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-664">Global</span></span>             |
+| <span data-ttu-id="867c4-665">休暇の管理</span><span class="sxs-lookup"><span data-stu-id="867c4-665">Manage leave of absence</span></span>                                          | <span data-ttu-id="867c4-666">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-666">Global</span></span>             |
+| <span data-ttu-id="867c4-667">作業者の特別設備の管理</span><span class="sxs-lookup"><span data-stu-id="867c4-667">Manage worker accommodations</span></span>                                     | <span data-ttu-id="867c4-668">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-668">Global</span></span>             |
+| <span data-ttu-id="867c4-669">職位の報告関係の修正</span><span class="sxs-lookup"><span data-stu-id="867c4-669">Modify reporting relationships for a position</span></span>                    | <span data-ttu-id="867c4-670">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-670">Global</span></span>             |
+| <span data-ttu-id="867c4-671">報酬グリッドの設定</span><span class="sxs-lookup"><span data-stu-id="867c4-671">Set up compensation grids</span></span>                                        | <span data-ttu-id="867c4-672">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-672">Global</span></span>             |
+| <span data-ttu-id="867c4-673">けが/病気の情報を設定します</span><span class="sxs-lookup"><span data-stu-id="867c4-673">Set up injury and illness information</span></span>                            | <span data-ttu-id="867c4-674">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-674">Global</span></span>             |
+| <span data-ttu-id="867c4-675">けが/病気の情報を設定します</span><span class="sxs-lookup"><span data-stu-id="867c4-675">Set up injury and illness information</span></span>                            | <span data-ttu-id="867c4-676">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-676">Global</span></span>             |
+| <span data-ttu-id="867c4-677">給付金の適格性ポリシーの設定</span><span class="sxs-lookup"><span data-stu-id="867c4-677">Setting benefit eligibility policies</span></span>                             | <span data-ttu-id="867c4-678">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-678">Global</span></span>             |
+| <span data-ttu-id="867c4-679">i9ドキュメント タイプの設定</span><span class="sxs-lookup"><span data-stu-id="867c4-679">Setting up i9 document types</span></span>                                     | <span data-ttu-id="867c4-680">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-680">Global</span></span>             |
 
  
 
-### <a name="inventory-management"></a>在庫管理
+### <a name="inventory-management"></a><span data-ttu-id="867c4-681">在庫管理</span><span class="sxs-lookup"><span data-stu-id="867c4-681">Inventory management</span></span>
 
 |                                                                                   |                    |
 |-----------------------------------------------------------------------------------|--------------------|
-| **BPM 行**                                                                      | **国/地域** |
-| 倉庫の在庫レベルの調整                                              | グローバル             |
-| 有効在庫数の確認                                                   | グローバル             |
-| 在庫追跡情報の修正                                            | グローバル             |
-| 倉庫の在庫集計                                                    | グローバル             |
-| 新しい倉庫レイアウトの作成                                                     | グローバル             |
-| 在庫ブロックの作成および管理                                         | グローバル             |
-| 不適合の作成および処理                                              | グローバル             |
-| 在庫棚卸プロセスの定義                                               | グローバル             |
-| 倉庫の在庫レベルの初期化                                          | グローバル             |
-| 商品の品質の調査                                                      | グローバル             |
-| バーコード タイプの管理                                                            | グローバル             |
-| 品目着荷仕訳帳を使用して、基本倉庫が有効な品目を登録します。 | グローバル             |
-| 着荷の概要プロファイルの設定                                                  | グローバル             |
-| 品質指示の設定                                                             | グローバル             |
-| 品目または原材料を追跡する                                                     | グローバル             |
-| 倉庫内の現物在庫の転送                                  | グローバル             |
+| <span data-ttu-id="867c4-682">**BPM 行**</span><span class="sxs-lookup"><span data-stu-id="867c4-682">**BPM Line**</span></span>                                                                      | <span data-ttu-id="867c4-683">**国/地域**</span><span class="sxs-lookup"><span data-stu-id="867c4-683">**Country/Region**</span></span> |
+| <span data-ttu-id="867c4-684">倉庫の在庫レベルの調整</span><span class="sxs-lookup"><span data-stu-id="867c4-684">Adjust stock levels in the warehouse</span></span>                                              | <span data-ttu-id="867c4-685">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-685">Global</span></span>             |
+| <span data-ttu-id="867c4-686">有効在庫数の確認</span><span class="sxs-lookup"><span data-stu-id="867c4-686">Check the availability of stock</span></span>                                                   | <span data-ttu-id="867c4-687">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-687">Global</span></span>             |
+| <span data-ttu-id="867c4-688">在庫追跡情報の修正</span><span class="sxs-lookup"><span data-stu-id="867c4-688">Correct inventory tracking information</span></span>                                            | <span data-ttu-id="867c4-689">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-689">Global</span></span>             |
+| <span data-ttu-id="867c4-690">倉庫の在庫集計</span><span class="sxs-lookup"><span data-stu-id="867c4-690">Count inventory in a warehouse</span></span>                                                    | <span data-ttu-id="867c4-691">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-691">Global</span></span>             |
+| <span data-ttu-id="867c4-692">新しい倉庫レイアウトの作成</span><span class="sxs-lookup"><span data-stu-id="867c4-692">Create a new warehouse layout</span></span>                                                     | <span data-ttu-id="867c4-693">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-693">Global</span></span>             |
+| <span data-ttu-id="867c4-694">在庫ブロックの作成および管理</span><span class="sxs-lookup"><span data-stu-id="867c4-694">Create and maintain an inventory blocking</span></span>                                         | <span data-ttu-id="867c4-695">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-695">Global</span></span>             |
+| <span data-ttu-id="867c4-696">不適合の作成および処理</span><span class="sxs-lookup"><span data-stu-id="867c4-696">Create and process a non conformance</span></span>                                              | <span data-ttu-id="867c4-697">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-697">Global</span></span>             |
+| <span data-ttu-id="867c4-698">在庫棚卸プロセスの定義</span><span class="sxs-lookup"><span data-stu-id="867c4-698">Define inventory counting processes</span></span>                                               | <span data-ttu-id="867c4-699">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-699">Global</span></span>             |
+| <span data-ttu-id="867c4-700">倉庫の在庫レベルの初期化</span><span class="sxs-lookup"><span data-stu-id="867c4-700">Initialize stock levels in the warehouse</span></span>                                          | <span data-ttu-id="867c4-701">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-701">Global</span></span>             |
+| <span data-ttu-id="867c4-702">商品の品質の調査</span><span class="sxs-lookup"><span data-stu-id="867c4-702">Inspect the quality of goods</span></span>                                                      | <span data-ttu-id="867c4-703">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-703">Global</span></span>             |
+| <span data-ttu-id="867c4-704">バーコード タイプの管理</span><span class="sxs-lookup"><span data-stu-id="867c4-704">Maintain barcode types</span></span>                                                            | <span data-ttu-id="867c4-705">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-705">Global</span></span>             |
+| <span data-ttu-id="867c4-706">品目着荷仕訳帳を使用して、基本倉庫が有効な品目を登録します。</span><span class="sxs-lookup"><span data-stu-id="867c4-706">Register items for a basic warehousing enabled item using an item arrival journal</span></span> | <span data-ttu-id="867c4-707">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-707">Global</span></span>             |
+| <span data-ttu-id="867c4-708">着荷の概要プロファイルの設定</span><span class="sxs-lookup"><span data-stu-id="867c4-708">Set up arrival overview profiles</span></span>                                                  | <span data-ttu-id="867c4-709">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-709">Global</span></span>             |
+| <span data-ttu-id="867c4-710">品質指示の設定</span><span class="sxs-lookup"><span data-stu-id="867c4-710">Set up quality orders</span></span>                                                             | <span data-ttu-id="867c4-711">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-711">Global</span></span>             |
+| <span data-ttu-id="867c4-712">品目または原材料を追跡する</span><span class="sxs-lookup"><span data-stu-id="867c4-712">Trace an item or raw material</span></span>                                                     | <span data-ttu-id="867c4-713">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-713">Global</span></span>             |
+| <span data-ttu-id="867c4-714">倉庫内の現物在庫の転送</span><span class="sxs-lookup"><span data-stu-id="867c4-714">Transfer physical inventory within the warehouse</span></span>                                  | <span data-ttu-id="867c4-715">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-715">Global</span></span>             |
 
  
 
-### <a name="manufacturing"></a>製造
+### <a name="manufacturing"></a><span data-ttu-id="867c4-716">製造</span><span class="sxs-lookup"><span data-stu-id="867c4-716">Manufacturing</span></span>
 
 |                                                               |                    |
 |---------------------------------------------------------------|--------------------|
-| **BPM 行**                                                  | **国/地域** |
-| かんばん数量計算ポリシーをかんばんルールへ追加する     | グローバル             |
-| 作成から開始までのバッチ オーダーのライフサイクル                    | グローバル             |
-| かんばん数量修正候補の計算                         | グローバル             |
-| プロセス ジョブのかんばんルールの変更                         | グローバル             |
-| モバイル ジョブ デバイスを使用する作業者を構成                | グローバル             |
-| フォーミュラのコピー                                                | グローバル             |
-| 既存のフォーミュラをコピーしてフォーミュラを作成          | グローバル             |
-| 生産フロー バージョンの作成                              | グローバル             |
-| 製造オーダーの作成                                     | グローバル             |
-| 販売イベントのかんばんルールの作成                              | グローバル             |
-| バリュー ストリームの作成                                         | グローバル             |
-| 活動リレーションの作成: 後続処理                           | グローバル             |
-| 運営リソースの作成                                 | グローバル             |
-| 固定数量かんばんルールの作成                            | グローバル             |
-| 既存のかんばんルールを複製して新しいかんばんルールを作成  | グローバル             |
-| リーン生産のプロセス活動の作成              | グローバル             |
-| リソース能力の作成                                  | グローバル             |
-| リーン生産の移動活動の作成             | グローバル             |
-| 作業時間スケジューリング プロパティーの作成                     | グローバル             |
-| 作業時間テンプレートの作成                                 | グローバル             |
-| カレンダーおよび作業項目の定義                            | グローバル             |
-| 個別の製造リソース グループの定義                  | グローバル             |
-| リーン生産作業セルの定義                          | グローバル             |
-| リーン スケジュール グループの定義                                   | グローバル             |
-| 生産フロー モデルの定義                                 | グローバル             |
-| リソースの能力の定義                                  | グローバル             |
-| 時刻と出勤の給与プロセスの有効化                | グローバル             |
-| 製造オーダーの終了                                        | グローバル             |
-| 製造オーダーの見積もり                                   | グローバル             |
-| 販売注文のリーン ペギング                                | グローバル             |
-| 測定単位の管理                                        | グローバル             |
-| スケジュール済みかんばん作業の移動                                    | グローバル             |
-| 材料が利用可能な場合にプロセスかんばん作業を準備する     | グローバル             |
-| 材料が利用不可能な場合にプロセスかんばん作業を準備する | グローバル             |
-| 製造オーダーのリリース                                    | グローバル             |
-| かんばん作業をスケジュールから削除する                         | グローバル             |
-| 製造オーダーの終了を報告します                         | グローバル             |
-| 携帯ジョブ デバイスでの進捗のレポート                        | グローバル             |
-| かんばん作業状態を元に戻す                                      | グローバル             |
-| 製造オーダーのスケジュール                                   | グローバル             |
-| かんばん作業のスケジュール                                          | グローバル             |
-| 製造オーダーの開始                                      | グローバル             |
-| かんばん作業のある材料の転送                            | グローバル             |
-| 生産フローおよびバージョンの検証                          | グローバル             |
+| <span data-ttu-id="867c4-717">**BPM 行**</span><span class="sxs-lookup"><span data-stu-id="867c4-717">**BPM Line**</span></span>                                                  | <span data-ttu-id="867c4-718">**国/地域**</span><span class="sxs-lookup"><span data-stu-id="867c4-718">**Country/Region**</span></span> |
+| <span data-ttu-id="867c4-719">かんばん数量計算ポリシーをかんばんルールへ追加する</span><span class="sxs-lookup"><span data-stu-id="867c4-719">Add a kanban quantity calculation policy to a kanban rule</span></span>     | <span data-ttu-id="867c4-720">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-720">Global</span></span>             |
+| <span data-ttu-id="867c4-721">作成から開始までのバッチ オーダーのライフサイクル</span><span class="sxs-lookup"><span data-stu-id="867c4-721">Batch order lifecycle from create to start</span></span>                    | <span data-ttu-id="867c4-722">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-722">Global</span></span>             |
+| <span data-ttu-id="867c4-723">かんばん数量修正候補の計算</span><span class="sxs-lookup"><span data-stu-id="867c4-723">Calculate Kanban quantity suggestions</span></span>                         | <span data-ttu-id="867c4-724">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-724">Global</span></span>             |
+| <span data-ttu-id="867c4-725">プロセス ジョブのかんばんルールの変更</span><span class="sxs-lookup"><span data-stu-id="867c4-725">Change Kanban rules for a process job</span></span>                         | <span data-ttu-id="867c4-726">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-726">Global</span></span>             |
+| <span data-ttu-id="867c4-727">モバイル ジョブ デバイスを使用する作業者を構成</span><span class="sxs-lookup"><span data-stu-id="867c4-727">Configure a worker using the mobile job device</span></span>                | <span data-ttu-id="867c4-728">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-728">Global</span></span>             |
+| <span data-ttu-id="867c4-729">フォーミュラのコピー</span><span class="sxs-lookup"><span data-stu-id="867c4-729">Copy a formula</span></span>                                                | <span data-ttu-id="867c4-730">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-730">Global</span></span>             |
+| <span data-ttu-id="867c4-731">既存のフォーミュラをコピーしてフォーミュラを作成</span><span class="sxs-lookup"><span data-stu-id="867c4-731">Create a formula by copying from an existing formula</span></span>          | <span data-ttu-id="867c4-732">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-732">Global</span></span>             |
+| <span data-ttu-id="867c4-733">生産フロー バージョンの作成</span><span class="sxs-lookup"><span data-stu-id="867c4-733">Create a production flow version</span></span>                              | <span data-ttu-id="867c4-734">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-734">Global</span></span>             |
+| <span data-ttu-id="867c4-735">製造オーダーの作成</span><span class="sxs-lookup"><span data-stu-id="867c4-735">Create a production order</span></span>                                     | <span data-ttu-id="867c4-736">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-736">Global</span></span>             |
+| <span data-ttu-id="867c4-737">販売イベントのかんばんルールの作成</span><span class="sxs-lookup"><span data-stu-id="867c4-737">Create a sales event Kanban rule</span></span>                              | <span data-ttu-id="867c4-738">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-738">Global</span></span>             |
+| <span data-ttu-id="867c4-739">バリュー ストリームの作成</span><span class="sxs-lookup"><span data-stu-id="867c4-739">Create a value stream</span></span>                                         | <span data-ttu-id="867c4-740">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-740">Global</span></span>             |
+| <span data-ttu-id="867c4-741">活動リレーションの作成: 後続処理</span><span class="sxs-lookup"><span data-stu-id="867c4-741">Create activity relation: Successor</span></span>                           | <span data-ttu-id="867c4-742">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-742">Global</span></span>             |
+| <span data-ttu-id="867c4-743">運営リソースの作成</span><span class="sxs-lookup"><span data-stu-id="867c4-743">Create an operations resource</span></span>                                 | <span data-ttu-id="867c4-744">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-744">Global</span></span>             |
+| <span data-ttu-id="867c4-745">固定数量かんばんルールの作成</span><span class="sxs-lookup"><span data-stu-id="867c4-745">Create fixed quantity kanban rules</span></span>                            | <span data-ttu-id="867c4-746">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-746">Global</span></span>             |
+| <span data-ttu-id="867c4-747">既存のかんばんルールを複製して新しいかんばんルールを作成</span><span class="sxs-lookup"><span data-stu-id="867c4-747">Create new Kanban rules by duplicating existing Kanban rules</span></span>  | <span data-ttu-id="867c4-748">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-748">Global</span></span>             |
+| <span data-ttu-id="867c4-749">リーン生産のプロセス活動の作成</span><span class="sxs-lookup"><span data-stu-id="867c4-749">Create process activities for lean manufacturing</span></span>              | <span data-ttu-id="867c4-750">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-750">Global</span></span>             |
+| <span data-ttu-id="867c4-751">リソース能力の作成</span><span class="sxs-lookup"><span data-stu-id="867c4-751">Create resource capabilities</span></span>                                  | <span data-ttu-id="867c4-752">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-752">Global</span></span>             |
+| <span data-ttu-id="867c4-753">リーン生産の移動活動の作成</span><span class="sxs-lookup"><span data-stu-id="867c4-753">Create transfer activities for lean manufacturing</span></span>             | <span data-ttu-id="867c4-754">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-754">Global</span></span>             |
+| <span data-ttu-id="867c4-755">作業時間スケジューリング プロパティーの作成</span><span class="sxs-lookup"><span data-stu-id="867c4-755">Create working time scheduling properties</span></span>                     | <span data-ttu-id="867c4-756">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-756">Global</span></span>             |
+| <span data-ttu-id="867c4-757">作業時間テンプレートの作成</span><span class="sxs-lookup"><span data-stu-id="867c4-757">Create working time templates</span></span>                                 | <span data-ttu-id="867c4-758">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-758">Global</span></span>             |
+| <span data-ttu-id="867c4-759">カレンダーおよび作業項目の定義</span><span class="sxs-lookup"><span data-stu-id="867c4-759">Define calendars and working items</span></span>                            | <span data-ttu-id="867c4-760">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-760">Global</span></span>             |
+| <span data-ttu-id="867c4-761">個別の製造リソース グループの定義</span><span class="sxs-lookup"><span data-stu-id="867c4-761">Define discrete manufacturing resource group</span></span>                  | <span data-ttu-id="867c4-762">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-762">Global</span></span>             |
+| <span data-ttu-id="867c4-763">リーン生産作業セルの定義</span><span class="sxs-lookup"><span data-stu-id="867c4-763">Define lean manufacturing work cells</span></span>                          | <span data-ttu-id="867c4-764">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-764">Global</span></span>             |
+| <span data-ttu-id="867c4-765">リーン スケジュール グループの定義</span><span class="sxs-lookup"><span data-stu-id="867c4-765">Define lean schedule groups</span></span>                                   | <span data-ttu-id="867c4-766">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-766">Global</span></span>             |
+| <span data-ttu-id="867c4-767">生産フロー モデルの定義</span><span class="sxs-lookup"><span data-stu-id="867c4-767">Define production flow models</span></span>                                 | <span data-ttu-id="867c4-768">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-768">Global</span></span>             |
+| <span data-ttu-id="867c4-769">リソースの能力の定義</span><span class="sxs-lookup"><span data-stu-id="867c4-769">Define resource capabilities</span></span>                                  | <span data-ttu-id="867c4-770">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-770">Global</span></span>             |
+| <span data-ttu-id="867c4-771">時刻と出勤の給与プロセスの有効化</span><span class="sxs-lookup"><span data-stu-id="867c4-771">Enable the time and attendance payroll process</span></span>                | <span data-ttu-id="867c4-772">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-772">Global</span></span>             |
+| <span data-ttu-id="867c4-773">製造オーダーの終了</span><span class="sxs-lookup"><span data-stu-id="867c4-773">End a production order</span></span>                                        | <span data-ttu-id="867c4-774">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-774">Global</span></span>             |
+| <span data-ttu-id="867c4-775">製造オーダーの見積もり</span><span class="sxs-lookup"><span data-stu-id="867c4-775">Estimate a production order</span></span>                                   | <span data-ttu-id="867c4-776">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-776">Global</span></span>             |
+| <span data-ttu-id="867c4-777">販売注文のリーン ペギング</span><span class="sxs-lookup"><span data-stu-id="867c4-777">Lean pegging from sales orders</span></span>                                | <span data-ttu-id="867c4-778">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-778">Global</span></span>             |
+| <span data-ttu-id="867c4-779">測定単位の管理</span><span class="sxs-lookup"><span data-stu-id="867c4-779">Manage unit of measure</span></span>                                        | <span data-ttu-id="867c4-780">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-780">Global</span></span>             |
+| <span data-ttu-id="867c4-781">スケジュール済みかんばん作業の移動</span><span class="sxs-lookup"><span data-stu-id="867c4-781">Move scheduled Kanban jobs</span></span>                                    | <span data-ttu-id="867c4-782">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-782">Global</span></span>             |
+| <span data-ttu-id="867c4-783">材料が利用可能な場合にプロセスかんばん作業を準備する</span><span class="sxs-lookup"><span data-stu-id="867c4-783">Prepare a process kanban job when materials are available</span></span>     | <span data-ttu-id="867c4-784">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-784">Global</span></span>             |
+| <span data-ttu-id="867c4-785">材料が利用不可能な場合にプロセスかんばん作業を準備する</span><span class="sxs-lookup"><span data-stu-id="867c4-785">Prepare a process kanban job when materials are not available</span></span> | <span data-ttu-id="867c4-786">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-786">Global</span></span>             |
+| <span data-ttu-id="867c4-787">製造オーダーのリリース</span><span class="sxs-lookup"><span data-stu-id="867c4-787">Release a production order</span></span>                                    | <span data-ttu-id="867c4-788">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-788">Global</span></span>             |
+| <span data-ttu-id="867c4-789">かんばん作業をスケジュールから削除する</span><span class="sxs-lookup"><span data-stu-id="867c4-789">Remove a Kanban job from the schedule</span></span>                         | <span data-ttu-id="867c4-790">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-790">Global</span></span>             |
+| <span data-ttu-id="867c4-791">製造オーダーの終了を報告します</span><span class="sxs-lookup"><span data-stu-id="867c4-791">Report a production order as finished</span></span>                         | <span data-ttu-id="867c4-792">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-792">Global</span></span>             |
+| <span data-ttu-id="867c4-793">携帯ジョブ デバイスでの進捗のレポート</span><span class="sxs-lookup"><span data-stu-id="867c4-793">Report progress on a mobile job device</span></span>                        | <span data-ttu-id="867c4-794">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-794">Global</span></span>             |
+| <span data-ttu-id="867c4-795">かんばん作業状態を元に戻す</span><span class="sxs-lookup"><span data-stu-id="867c4-795">Revert Kanban job status</span></span>                                      | <span data-ttu-id="867c4-796">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-796">Global</span></span>             |
+| <span data-ttu-id="867c4-797">製造オーダーのスケジュール</span><span class="sxs-lookup"><span data-stu-id="867c4-797">Schedule a production order</span></span>                                   | <span data-ttu-id="867c4-798">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-798">Global</span></span>             |
+| <span data-ttu-id="867c4-799">かんばん作業のスケジュール</span><span class="sxs-lookup"><span data-stu-id="867c4-799">Schedule Kanban jobs</span></span>                                          | <span data-ttu-id="867c4-800">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-800">Global</span></span>             |
+| <span data-ttu-id="867c4-801">製造オーダーの開始</span><span class="sxs-lookup"><span data-stu-id="867c4-801">Start a production order</span></span>                                      | <span data-ttu-id="867c4-802">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-802">Global</span></span>             |
+| <span data-ttu-id="867c4-803">かんばん作業のある材料の転送</span><span class="sxs-lookup"><span data-stu-id="867c4-803">Transfer material with Kanban jobs</span></span>                            | <span data-ttu-id="867c4-804">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-804">Global</span></span>             |
+| <span data-ttu-id="867c4-805">生産フローおよびバージョンの検証</span><span class="sxs-lookup"><span data-stu-id="867c4-805">Validate production flow and version</span></span>                          | <span data-ttu-id="867c4-806">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-806">Global</span></span>             |
 
  
 
-### <a name="master-planning"></a>マスター プラン
+### <a name="master-planning"></a><span data-ttu-id="867c4-807">マスター プラン</span><span class="sxs-lookup"><span data-stu-id="867c4-807">Master planning</span></span>
 
 |                                                   |                    |
 |---------------------------------------------------|--------------------|
-| **BPM 行**                                      | **国/地域** |
-| 品目の補充ルールの定義                   | グローバル             |
-| ベースライン予測の作成                         | グローバル             |
-| 制約付き計画の生成                       | グローバル             |
-| 重要な材料と仕入先の能力の特定 | グローバル             |
-| 需要予測の手動変更                 | グローバル             |
+| <span data-ttu-id="867c4-808">**BPM 行**</span><span class="sxs-lookup"><span data-stu-id="867c4-808">**BPM Line**</span></span>                                      | <span data-ttu-id="867c4-809">**国/地域**</span><span class="sxs-lookup"><span data-stu-id="867c4-809">**Country/Region**</span></span> |
+| <span data-ttu-id="867c4-810">品目の補充ルールの定義</span><span class="sxs-lookup"><span data-stu-id="867c4-810">Define coverage rules for items</span></span>                   | <span data-ttu-id="867c4-811">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-811">Global</span></span>             |
+| <span data-ttu-id="867c4-812">ベースライン予測の作成</span><span class="sxs-lookup"><span data-stu-id="867c4-812">Develop baseline forecast</span></span>                         | <span data-ttu-id="867c4-813">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-813">Global</span></span>             |
+| <span data-ttu-id="867c4-814">制約付き計画の生成</span><span class="sxs-lookup"><span data-stu-id="867c4-814">Generate a constrained plan</span></span>                       | <span data-ttu-id="867c4-815">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-815">Global</span></span>             |
+| <span data-ttu-id="867c4-816">重要な材料と仕入先の能力の特定</span><span class="sxs-lookup"><span data-stu-id="867c4-816">Identify critical materials and supplier capacity</span></span> | <span data-ttu-id="867c4-817">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-817">Global</span></span>             |
+| <span data-ttu-id="867c4-818">需要予測の手動変更</span><span class="sxs-lookup"><span data-stu-id="867c4-818">Modify a demand forecast manually</span></span>                 | <span data-ttu-id="867c4-819">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-819">Global</span></span>             |
 
  
 
-### <a name="organization-administration"></a>組織管理
+### <a name="organization-administration"></a><span data-ttu-id="867c4-820">組織管理</span><span class="sxs-lookup"><span data-stu-id="867c4-820">Organization administration</span></span>
 
 |                                           |                    |
 |-------------------------------------------|--------------------|
-| **BPM 行**                              | **国/地域** |
-| バナーまたはロゴの変更                 | グローバル             |
-| アドレス帳の構成                   | グローバル             |
-| グローバル アドレス帳のコンフィギュレーション         | グローバル             |
-| 作業単位の作成                  | グローバル             |
-| 電子署名の設定              | グローバル             |
-| ウィザードを使用した番号順序の設定 | グローバル             |
+| <span data-ttu-id="867c4-821">**BPM 行**</span><span class="sxs-lookup"><span data-stu-id="867c4-821">**BPM Line**</span></span>                              | <span data-ttu-id="867c4-822">**国/地域**</span><span class="sxs-lookup"><span data-stu-id="867c4-822">**Country/Region**</span></span> |
+| <span data-ttu-id="867c4-823">バナーまたはロゴの変更</span><span class="sxs-lookup"><span data-stu-id="867c4-823">Change the banner or logo</span></span>                 | <span data-ttu-id="867c4-824">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-824">Global</span></span>             |
+| <span data-ttu-id="867c4-825">アドレス帳の構成</span><span class="sxs-lookup"><span data-stu-id="867c4-825">Configure address books</span></span>                   | <span data-ttu-id="867c4-826">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-826">Global</span></span>             |
+| <span data-ttu-id="867c4-827">グローバル アドレス帳のコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="867c4-827">Configure the global address book</span></span>         | <span data-ttu-id="867c4-828">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-828">Global</span></span>             |
+| <span data-ttu-id="867c4-829">作業単位の作成</span><span class="sxs-lookup"><span data-stu-id="867c4-829">Create an operating unit</span></span>                  | <span data-ttu-id="867c4-830">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-830">Global</span></span>             |
+| <span data-ttu-id="867c4-831">電子署名の設定</span><span class="sxs-lookup"><span data-stu-id="867c4-831">Set up electronic signatures</span></span>              | <span data-ttu-id="867c4-832">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-832">Global</span></span>             |
+| <span data-ttu-id="867c4-833">ウィザードを使用した番号順序の設定</span><span class="sxs-lookup"><span data-stu-id="867c4-833">Set up number sequences by using a wizard</span></span> | <span data-ttu-id="867c4-834">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-834">Global</span></span>             |
 
  
 
-### <a name="planning"></a>計画
+### <a name="planning"></a><span data-ttu-id="867c4-835">計画</span><span class="sxs-lookup"><span data-stu-id="867c4-835">Planning</span></span>
 
 |                        |                    |
 |------------------------|--------------------|
-| **BPM 行**           | **国/地域** |
-| 使用可能性の確認 | グローバル             |
+| <span data-ttu-id="867c4-836">**BPM 行**</span><span class="sxs-lookup"><span data-stu-id="867c4-836">**BPM Line**</span></span>           | <span data-ttu-id="867c4-837">**国/地域**</span><span class="sxs-lookup"><span data-stu-id="867c4-837">**Country/Region**</span></span> |
+| <span data-ttu-id="867c4-838">使用可能性の確認</span><span class="sxs-lookup"><span data-stu-id="867c4-838">Determine availability</span></span> | <span data-ttu-id="867c4-839">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-839">Global</span></span>             |
 
  
 
-### <a name="procurement-and-sourcing"></a>調達
+### <a name="procurement-and-sourcing"></a><span data-ttu-id="867c4-840">調達</span><span class="sxs-lookup"><span data-stu-id="867c4-840">Procurement and sourcing</span></span>
 
 |                                                                  |                    |
 |------------------------------------------------------------------|--------------------|
-| **BPM 行**                                                     | **国/地域** |
-| 購買契約の作成                                      | グローバル             |
-| 購買契約書からの購買リリース注文の作成        | グローバル             |
-| 発注書の作成時に購買リリース注文を作成 | グローバル             |
-| 消費の要求の作成                             | グローバル             |
-| 仕入先勘定の作成                                          | グローバル             |
-| 仕入先の検索                                               | グローバル             |
-| 調達カテゴリ階層の設定                          | グローバル             |
+| <span data-ttu-id="867c4-841">**BPM 行**</span><span class="sxs-lookup"><span data-stu-id="867c4-841">**BPM Line**</span></span>                                                     | <span data-ttu-id="867c4-842">**国/地域**</span><span class="sxs-lookup"><span data-stu-id="867c4-842">**Country/Region**</span></span> |
+| <span data-ttu-id="867c4-843">購買契約の作成</span><span class="sxs-lookup"><span data-stu-id="867c4-843">Create a purchase agreement</span></span>                                      | <span data-ttu-id="867c4-844">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-844">Global</span></span>             |
+| <span data-ttu-id="867c4-845">購買契約書からの購買リリース注文の作成</span><span class="sxs-lookup"><span data-stu-id="867c4-845">Create a purchase release order from a purchase agreement</span></span>        | <span data-ttu-id="867c4-846">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-846">Global</span></span>             |
+| <span data-ttu-id="867c4-847">発注書の作成時に購買リリース注文を作成</span><span class="sxs-lookup"><span data-stu-id="867c4-847">Create a purchase release order when creating the purchase order</span></span> | <span data-ttu-id="867c4-848">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-848">Global</span></span>             |
+| <span data-ttu-id="867c4-849">消費の要求の作成</span><span class="sxs-lookup"><span data-stu-id="867c4-849">Create a requisition for consumption</span></span>                             | <span data-ttu-id="867c4-850">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-850">Global</span></span>             |
+| <span data-ttu-id="867c4-851">仕入先勘定の作成</span><span class="sxs-lookup"><span data-stu-id="867c4-851">Create a vendor account</span></span>                                          | <span data-ttu-id="867c4-852">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-852">Global</span></span>             |
+| <span data-ttu-id="867c4-853">仕入先の検索</span><span class="sxs-lookup"><span data-stu-id="867c4-853">Search for vendors</span></span>                                               | <span data-ttu-id="867c4-854">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-854">Global</span></span>             |
+| <span data-ttu-id="867c4-855">調達カテゴリ階層の設定</span><span class="sxs-lookup"><span data-stu-id="867c4-855">Set up a procurement category hierarchy</span></span>                          | <span data-ttu-id="867c4-856">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-856">Global</span></span>             |
 
  
 
-### <a name="product-information-and-configuration"></a>製品情報およびコンフィギュレーション
+### <a name="product-information-and-configuration"></a><span data-ttu-id="867c4-857">製品情報およびコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="867c4-857">Product information and configuration</span></span>
 
 |                                                       |                    |
 |-------------------------------------------------------|--------------------|
-| **BPM 行**                                          | **国/地域** |
-| 製品コンフィギュレーション モデルへの計算の追加    | グローバル             |
-| 製品コンフィギュレーション モデルの承認                 | グローバル             |
-| リリース済み製品マスターの基本設定の完了 | グローバル             |
-| \financial-dimensions\dimension-based 製品マスターの作成               | グローバル             |
-| 製品分類の階層の作成          | グローバル             |
-| 製品コンフィギュレーション モデルの作成                  | グローバル             |
-| 製品マスターの作成                               | グローバル             |
-| 式の制約の作成                       | グローバル             |
-| 製品のバッチ属性の作成                 | グローバル             |
-| コンフィギュレーション ルールの作成                            | グローバル             |
-| 製品モデル コンポーネントの作成                       | グローバル             |
-| コンフィギュレーション グループの定義                           | グローバル             |
-| コンフィギュレーション ルートの定義                            | グローバル             |
-| 製品コンフィギュレーション モデルの BOM を管理        | グローバル             |
-| 製品モデルのルートの管理                    | グローバル             |
-| リリース済製品の管理                              | グローバル             |
-| \financial-dimensions\dimension-based 製品マスターのリリース              | グローバル             |
-| 製品モデルのためのデータの転送                      | グローバル             |
+| <span data-ttu-id="867c4-858">**BPM 行**</span><span class="sxs-lookup"><span data-stu-id="867c4-858">**BPM Line**</span></span>                                          | <span data-ttu-id="867c4-859">**国/地域**</span><span class="sxs-lookup"><span data-stu-id="867c4-859">**Country/Region**</span></span> |
+| <span data-ttu-id="867c4-860">製品コンフィギュレーション モデルへの計算の追加</span><span class="sxs-lookup"><span data-stu-id="867c4-860">Add a calculation to a product configuration model</span></span>    | <span data-ttu-id="867c4-861">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-861">Global</span></span>             |
+| <span data-ttu-id="867c4-862">製品コンフィギュレーション モデルの承認</span><span class="sxs-lookup"><span data-stu-id="867c4-862">Approve a product configuration model</span></span>                 | <span data-ttu-id="867c4-863">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-863">Global</span></span>             |
+| <span data-ttu-id="867c4-864">リリース済み製品マスターの基本設定の完了</span><span class="sxs-lookup"><span data-stu-id="867c4-864">Complete the basic setup of a released product master</span></span> | <span data-ttu-id="867c4-865">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-865">Global</span></span>             |
+| <span data-ttu-id="867c4-866">\financial-dimensions\dimension-based 製品マスターの作成</span><span class="sxs-lookup"><span data-stu-id="867c4-866">Create a ..\financial-dimensions\dimension-based product master</span></span>               | <span data-ttu-id="867c4-867">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-867">Global</span></span>             |
+| <span data-ttu-id="867c4-868">製品分類の階層の作成</span><span class="sxs-lookup"><span data-stu-id="867c4-868">Create a hierarchy of product classification</span></span>          | <span data-ttu-id="867c4-869">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-869">Global</span></span>             |
+| <span data-ttu-id="867c4-870">製品コンフィギュレーション モデルの作成</span><span class="sxs-lookup"><span data-stu-id="867c4-870">Create a product configuration model</span></span>                  | <span data-ttu-id="867c4-871">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-871">Global</span></span>             |
+| <span data-ttu-id="867c4-872">製品マスターの作成</span><span class="sxs-lookup"><span data-stu-id="867c4-872">Create a product master</span></span>                               | <span data-ttu-id="867c4-873">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-873">Global</span></span>             |
+| <span data-ttu-id="867c4-874">式の制約の作成</span><span class="sxs-lookup"><span data-stu-id="867c4-874">Create an expression constraint</span></span>                       | <span data-ttu-id="867c4-875">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-875">Global</span></span>             |
+| <span data-ttu-id="867c4-876">製品のバッチ属性の作成</span><span class="sxs-lookup"><span data-stu-id="867c4-876">Create batch attributes for a product</span></span>                 | <span data-ttu-id="867c4-877">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-877">Global</span></span>             |
+| <span data-ttu-id="867c4-878">コンフィギュレーション ルールの作成</span><span class="sxs-lookup"><span data-stu-id="867c4-878">Create configuration rules</span></span>                            | <span data-ttu-id="867c4-879">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-879">Global</span></span>             |
+| <span data-ttu-id="867c4-880">製品モデル コンポーネントの作成</span><span class="sxs-lookup"><span data-stu-id="867c4-880">Create product model components</span></span>                       | <span data-ttu-id="867c4-881">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-881">Global</span></span>             |
+| <span data-ttu-id="867c4-882">コンフィギュレーション グループの定義</span><span class="sxs-lookup"><span data-stu-id="867c4-882">Define configuration groups</span></span>                           | <span data-ttu-id="867c4-883">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-883">Global</span></span>             |
+| <span data-ttu-id="867c4-884">コンフィギュレーション ルートの定義</span><span class="sxs-lookup"><span data-stu-id="867c4-884">Define configuration route</span></span>                            | <span data-ttu-id="867c4-885">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-885">Global</span></span>             |
+| <span data-ttu-id="867c4-886">製品コンフィギュレーション モデルの BOM を管理</span><span class="sxs-lookup"><span data-stu-id="867c4-886">Maintain BOM for a product configuration model</span></span>        | <span data-ttu-id="867c4-887">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-887">Global</span></span>             |
+| <span data-ttu-id="867c4-888">製品モデルのルートの管理</span><span class="sxs-lookup"><span data-stu-id="867c4-888">Maintain route for a product model</span></span>                    | <span data-ttu-id="867c4-889">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-889">Global</span></span>             |
+| <span data-ttu-id="867c4-890">リリース済製品の管理</span><span class="sxs-lookup"><span data-stu-id="867c4-890">Manage released products</span></span>                              | <span data-ttu-id="867c4-891">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-891">Global</span></span>             |
+| <span data-ttu-id="867c4-892">\financial-dimensions\dimension-based 製品マスターのリリース</span><span class="sxs-lookup"><span data-stu-id="867c4-892">Release a ..\financial-dimensions\dimension-based product master</span></span>              | <span data-ttu-id="867c4-893">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-893">Global</span></span>             |
+| <span data-ttu-id="867c4-894">製品モデルのためのデータの転送</span><span class="sxs-lookup"><span data-stu-id="867c4-894">Transfer data for product models</span></span>                      | <span data-ttu-id="867c4-895">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-895">Global</span></span>             |
 
  
 
-### <a name="public-sector"></a>公的機関
+### <a name="public-sector"></a><span data-ttu-id="867c4-896">公的機関</span><span class="sxs-lookup"><span data-stu-id="867c4-896">Public sector</span></span>
 
 |                                                                                         |                    |
 |-----------------------------------------------------------------------------------------|--------------------|
-| **BPM 行**                                                                            | **国/地域** |
-| 公的機関の仕入先証明タイプの追加                                  | グローバル             |
-| 公的部門の購買契約書へのアクセスを制御                                 | グローバル             |
-| 公的部門の請求分類を作成します                                       | グローバル             |
-| 公的部門の請求コードを作成します                                                 | グローバル             |
-| 公的部門の予算財源を確保する確約を作成します                           | グローバル             |
-| 公的部門の請求コードのカスタム フィールドを作成します                              | グローバル             |
-| 公的部門の資金タイプを作成します                                                    | グローバル             |
-| 一時仕入先を作成し、公的部門の請求を行います                                  | グローバル             |
-| 公的機関の暫定予算の作成                                           | グローバル             |
-| 公的機関の仕入先証明のタイプを作成                                    | グローバル             |
-| 公的機関の詳細な元帳エントリを作成します                                       | グローバル             |
-| 元の予算を作成し、公的機関の暫定予算エントリをリバースします | グローバル             |
-| 公的部門の取引相手コードを作成および適用します                              | グローバル             |
-| 公的部門の支払レポートの署名とカバー ページの作成                 | グローバル             |
-| 公的部門の複数の一時仕入先および請求書のインポートと作成              | グローバル             |
-| 公的部門の財務分析階層を設定します                                  | グローバル             |
-| 公的部門の資金を設定します                                                         | グローバル             |
-| 公的部門の購買契約の分類を設定します                             | グローバル             |
+| <span data-ttu-id="867c4-897">**BPM 行**</span><span class="sxs-lookup"><span data-stu-id="867c4-897">**BPM Line**</span></span>                                                                            | <span data-ttu-id="867c4-898">**国/地域**</span><span class="sxs-lookup"><span data-stu-id="867c4-898">**Country/Region**</span></span> |
+| <span data-ttu-id="867c4-899">公的機関の仕入先証明タイプの追加</span><span class="sxs-lookup"><span data-stu-id="867c4-899">Add a certification type to a vendor for Public Sector</span></span>                                  | <span data-ttu-id="867c4-900">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-900">Global</span></span>             |
+| <span data-ttu-id="867c4-901">公的部門の購買契約書へのアクセスを制御</span><span class="sxs-lookup"><span data-stu-id="867c4-901">Control access to purchase agreements for Public sector</span></span>                                 | <span data-ttu-id="867c4-902">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-902">Global</span></span>             |
+| <span data-ttu-id="867c4-903">公的部門の請求分類を作成します</span><span class="sxs-lookup"><span data-stu-id="867c4-903">Create a billing classification for Public sector</span></span>                                       | <span data-ttu-id="867c4-904">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-904">Global</span></span>             |
+| <span data-ttu-id="867c4-905">公的部門の請求コードを作成します</span><span class="sxs-lookup"><span data-stu-id="867c4-905">Create a billing code for Public sector</span></span>                                                 | <span data-ttu-id="867c4-906">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-906">Global</span></span>             |
+| <span data-ttu-id="867c4-907">公的部門の予算財源を確保する確約を作成します</span><span class="sxs-lookup"><span data-stu-id="867c4-907">Create a commitment to reserve budget funds for Public Sector</span></span>                           | <span data-ttu-id="867c4-908">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-908">Global</span></span>             |
+| <span data-ttu-id="867c4-909">公的部門の請求コードのカスタム フィールドを作成します</span><span class="sxs-lookup"><span data-stu-id="867c4-909">Create a custom field for a billing code for Public sector</span></span>                              | <span data-ttu-id="867c4-910">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-910">Global</span></span>             |
+| <span data-ttu-id="867c4-911">公的部門の資金タイプを作成します</span><span class="sxs-lookup"><span data-stu-id="867c4-911">Create a fund type for Public sector</span></span>                                                    | <span data-ttu-id="867c4-912">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-912">Global</span></span>             |
+| <span data-ttu-id="867c4-913">一時仕入先を作成し、公的部門の請求を行います</span><span class="sxs-lookup"><span data-stu-id="867c4-913">Create a one-time vendor and invoice for Public sector</span></span>                                  | <span data-ttu-id="867c4-914">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-914">Global</span></span>             |
+| <span data-ttu-id="867c4-915">公的機関の暫定予算の作成</span><span class="sxs-lookup"><span data-stu-id="867c4-915">Create a preliminary budget for Public sector</span></span>                                           | <span data-ttu-id="867c4-916">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-916">Global</span></span>             |
+| <span data-ttu-id="867c4-917">公的機関の仕入先証明のタイプを作成</span><span class="sxs-lookup"><span data-stu-id="867c4-917">Create a vendor certification type for Public Sector</span></span>                                    | <span data-ttu-id="867c4-918">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-918">Global</span></span>             |
+| <span data-ttu-id="867c4-919">公的機関の詳細な元帳エントリを作成します</span><span class="sxs-lookup"><span data-stu-id="867c4-919">Create an advanced ledger entry for Public sector</span></span>                                       | <span data-ttu-id="867c4-920">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-920">Global</span></span>             |
+| <span data-ttu-id="867c4-921">元の予算を作成し、公的機関の暫定予算エントリをリバースします</span><span class="sxs-lookup"><span data-stu-id="867c4-921">Create an original budget and then reverse preliminary budget entries for Public sector</span></span> | <span data-ttu-id="867c4-922">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-922">Global</span></span>             |
+| <span data-ttu-id="867c4-923">公的部門の取引相手コードを作成および適用します</span><span class="sxs-lookup"><span data-stu-id="867c4-923">Create and assign a trading partner code for Public sector</span></span>                              | <span data-ttu-id="867c4-924">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-924">Global</span></span>             |
+| <span data-ttu-id="867c4-925">公的部門の支払レポートの署名とカバー ページの作成</span><span class="sxs-lookup"><span data-stu-id="867c4-925">Create cover and signature pages for payments reports for Public sector</span></span>                 | <span data-ttu-id="867c4-926">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-926">Global</span></span>             |
+| <span data-ttu-id="867c4-927">公的部門の複数の一時仕入先および請求書のインポートと作成</span><span class="sxs-lookup"><span data-stu-id="867c4-927">Import and create multiple one-time vendors and invoices for Public sector</span></span>              | <span data-ttu-id="867c4-928">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-928">Global</span></span>             |
+| <span data-ttu-id="867c4-929">公的部門の財務分析階層を設定します</span><span class="sxs-lookup"><span data-stu-id="867c4-929">Set up a derived financial hierarchy for Public sector</span></span>                                  | <span data-ttu-id="867c4-930">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-930">Global</span></span>             |
+| <span data-ttu-id="867c4-931">公的部門の資金を設定します</span><span class="sxs-lookup"><span data-stu-id="867c4-931">Set up a fund for Public sector</span></span>                                                         | <span data-ttu-id="867c4-932">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-932">Global</span></span>             |
+| <span data-ttu-id="867c4-933">公的部門の購買契約の分類を設定します</span><span class="sxs-lookup"><span data-stu-id="867c4-933">Set up purchase agreement classifications for Public Sector</span></span>                             | <span data-ttu-id="867c4-934">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-934">Global</span></span>             |
 
  
 
-### <a name="retail-and-commerce"></a>Retail と Commerce
+### <a name="retail-and-commerce"></a><span data-ttu-id="867c4-935">Retail と Commerce</span><span class="sxs-lookup"><span data-stu-id="867c4-935">Retail and commerce</span></span>
 
 |                                                                                           |                    |
 |-------------------------------------------------------------------------------------------|--------------------|
-| **BPM 行**                                                                              | **国/地域** |
-| バリアント重量を使用した発注書へのバリアント製品の追加                              | グローバル             |
-| 基準価格と売買契約                                                           | グローバル             |
-| 売買契約を作成するカテゴリの価格決定ルール                                         | グローバル             |
-| 明細書を計算するジョブの構成および実行                                             | グローバル             |
-| 明細書を転記するジョブの構成および実行                                                  | グローバル             |
-| クレジット カード処理の構成                                                          | グローバル             |
-| リンクされた製品の構成                                                                 | グローバル             |
-| POS 視覚プロファイルの作成                                                               | グローバル             |
-| 製品の作成                                                                          | グローバル             |
-| 製品マスターの作成                                                                   | グローバル             |
-| デバイスの作成と関連付け                                                             | グローバル             |
-| ハードウェアの場所の作成および関連付け                                                   | グローバル             |
-| POS レジスターの財務分析コードの作成およびレジの分析コード値の構成 | グローバル             |
-| 小売チャンネルの財務分析コードの作成および店舗の分析コード値の構成  | グローバル             |
-| オンライン チャンネルの作成およびチャンネルの属性の定義                                       | グローバル             |
-| POS アクセス許可グループの作成                                                              | グローバル             |
-| 製品パッケージの作成および発注書での使用                                         | グローバル             |
-| コールセンター チャンネルおよびチャンネル属性の定義                                         | グローバル             |
-| チャンネル属性の定義                                                                 | グローバル             |
-| ロイヤルティ プログラムの定義                                                                   | グローバル             |
-| ロイヤルティ報酬ポイントの定義                                                              | グローバル             |
-| ロイヤルティ スキーマの定義                                                                    | グローバル             |
-| 組織単位間のリレーションシップのデザイン                                     | グローバル             |
-| 最初から用意されているレポートを生成および実行                                                       | グローバル             |
-| 顧客の業者間割引の管理                                                      | グローバル             |
-| 小売明細書のパラメーター構成                                            | グローバル             |
-| 小売明細書の支払構成                                              | グローバル             |
-| ハードウェア ステーションをダウンロードするセルフサービスの実行                                         | グローバル             |
-| オンラインの販売と支払の転記                                                      | グローバル             |
-| ロイヤルティ報酬ポイント調整の処理                                                  | グローバル             |
-| 集中的購買を使用して、物流センターから店舗に製品を配送します。                        | グローバル             |
-| 法人に対して製品 / 製品マスターをリリース                                        | グローバル             |
-| 小売価格調整                                                                  | グローバル             |
-| 小売明細書のコンフィギュレーションを保存します                                                | グローバル             |
+| <span data-ttu-id="867c4-936">**BPM 行**</span><span class="sxs-lookup"><span data-stu-id="867c4-936">**BPM Line**</span></span>                                                                              | <span data-ttu-id="867c4-937">**国/地域**</span><span class="sxs-lookup"><span data-stu-id="867c4-937">**Country/Region**</span></span> |
+| <span data-ttu-id="867c4-938">バリアント重量を使用した発注書へのバリアント製品の追加</span><span class="sxs-lookup"><span data-stu-id="867c4-938">Add variant products to purchase order using variant weights</span></span>                              | <span data-ttu-id="867c4-939">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-939">Global</span></span>             |
+| <span data-ttu-id="867c4-940">基準価格と売買契約</span><span class="sxs-lookup"><span data-stu-id="867c4-940">Base price and trade agreements</span></span>                                                           | <span data-ttu-id="867c4-941">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-941">Global</span></span>             |
+| <span data-ttu-id="867c4-942">売買契約を作成するカテゴリの価格決定ルール</span><span class="sxs-lookup"><span data-stu-id="867c4-942">Category pricing rules to create trade agreements</span></span>                                         | <span data-ttu-id="867c4-943">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-943">Global</span></span>             |
+| <span data-ttu-id="867c4-944">明細書を計算するジョブの構成および実行</span><span class="sxs-lookup"><span data-stu-id="867c4-944">Configure and run job to calculate statements</span></span>                                             | <span data-ttu-id="867c4-945">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-945">Global</span></span>             |
+| <span data-ttu-id="867c4-946">明細書を転記するジョブの構成および実行</span><span class="sxs-lookup"><span data-stu-id="867c4-946">Configure and run job to post statements</span></span>                                                  | <span data-ttu-id="867c4-947">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-947">Global</span></span>             |
+| <span data-ttu-id="867c4-948">クレジット カード処理の構成</span><span class="sxs-lookup"><span data-stu-id="867c4-948">Configure credit card processing</span></span>                                                          | <span data-ttu-id="867c4-949">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-949">Global</span></span>             |
+| <span data-ttu-id="867c4-950">リンクされた製品の構成</span><span class="sxs-lookup"><span data-stu-id="867c4-950">Configure linked products</span></span>                                                                 | <span data-ttu-id="867c4-951">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-951">Global</span></span>             |
+| <span data-ttu-id="867c4-952">POS 視覚プロファイルの作成</span><span class="sxs-lookup"><span data-stu-id="867c4-952">Create a POS visual profile</span></span>                                                               | <span data-ttu-id="867c4-953">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-953">Global</span></span>             |
+| <span data-ttu-id="867c4-954">製品の作成</span><span class="sxs-lookup"><span data-stu-id="867c4-954">Create a product</span></span>                                                                          | <span data-ttu-id="867c4-955">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-955">Global</span></span>             |
+| <span data-ttu-id="867c4-956">製品マスターの作成</span><span class="sxs-lookup"><span data-stu-id="867c4-956">Create a product master</span></span>                                                                   | <span data-ttu-id="867c4-957">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-957">Global</span></span>             |
+| <span data-ttu-id="867c4-958">デバイスの作成と関連付け</span><span class="sxs-lookup"><span data-stu-id="867c4-958">Create and associate a device</span></span>                                                             | <span data-ttu-id="867c4-959">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-959">Global</span></span>             |
+| <span data-ttu-id="867c4-960">ハードウェアの場所の作成および関連付け</span><span class="sxs-lookup"><span data-stu-id="867c4-960">Create and associate a hardware station</span></span>                                                   | <span data-ttu-id="867c4-961">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-961">Global</span></span>             |
+| <span data-ttu-id="867c4-962">POS レジスターの財務分析コードの作成およびレジの分析コード値の構成</span><span class="sxs-lookup"><span data-stu-id="867c4-962">Create financial dimensions for POS Registers and configure dimension values on registers</span></span> | <span data-ttu-id="867c4-963">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-963">Global</span></span>             |
+| <span data-ttu-id="867c4-964">小売チャンネルの財務分析コードの作成および店舗の分析コード値の構成</span><span class="sxs-lookup"><span data-stu-id="867c4-964">Create financial dimensions for Retail channels and configure dimension values on stores</span></span>  | <span data-ttu-id="867c4-965">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-965">Global</span></span>             |
+| <span data-ttu-id="867c4-966">オンライン チャンネルの作成およびチャンネルの属性の定義</span><span class="sxs-lookup"><span data-stu-id="867c4-966">Create online channel and define channel attributes</span></span>                                       | <span data-ttu-id="867c4-967">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-967">Global</span></span>             |
+| <span data-ttu-id="867c4-968">POS アクセス許可グループの作成</span><span class="sxs-lookup"><span data-stu-id="867c4-968">Create POS permission groups</span></span>                                                              | <span data-ttu-id="867c4-969">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-969">Global</span></span>             |
+| <span data-ttu-id="867c4-970">製品パッケージの作成および発注書での使用</span><span class="sxs-lookup"><span data-stu-id="867c4-970">Create product packages and use in purchase order</span></span>                                         | <span data-ttu-id="867c4-971">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-971">Global</span></span>             |
+| <span data-ttu-id="867c4-972">コールセンター チャンネルおよびチャンネル属性の定義</span><span class="sxs-lookup"><span data-stu-id="867c4-972">Define call center channel and channel attributes</span></span>                                         | <span data-ttu-id="867c4-973">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-973">Global</span></span>             |
+| <span data-ttu-id="867c4-974">チャンネル属性の定義</span><span class="sxs-lookup"><span data-stu-id="867c4-974">Define channel attributes</span></span>                                                                 | <span data-ttu-id="867c4-975">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-975">Global</span></span>             |
+| <span data-ttu-id="867c4-976">ロイヤルティ プログラムの定義</span><span class="sxs-lookup"><span data-stu-id="867c4-976">Define loyalty programs</span></span>                                                                   | <span data-ttu-id="867c4-977">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-977">Global</span></span>             |
+| <span data-ttu-id="867c4-978">ロイヤルティ報酬ポイントの定義</span><span class="sxs-lookup"><span data-stu-id="867c4-978">Define loyalty reward points</span></span>                                                              | <span data-ttu-id="867c4-979">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-979">Global</span></span>             |
+| <span data-ttu-id="867c4-980">ロイヤルティ スキーマの定義</span><span class="sxs-lookup"><span data-stu-id="867c4-980">Define loyalty schemes</span></span>                                                                    | <span data-ttu-id="867c4-981">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-981">Global</span></span>             |
+| <span data-ttu-id="867c4-982">組織単位間のリレーションシップのデザイン</span><span class="sxs-lookup"><span data-stu-id="867c4-982">Design the relationships between organizational units</span></span>                                     | <span data-ttu-id="867c4-983">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-983">Global</span></span>             |
+| <span data-ttu-id="867c4-984">最初から用意されているレポートを生成および実行</span><span class="sxs-lookup"><span data-stu-id="867c4-984">Generate and run out of box reports</span></span>                                                       | <span data-ttu-id="867c4-985">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-985">Global</span></span>             |
+| <span data-ttu-id="867c4-986">顧客の業者間割引の管理</span><span class="sxs-lookup"><span data-stu-id="867c4-986">Manage trade discounts for customers</span></span>                                                      | <span data-ttu-id="867c4-987">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-987">Global</span></span>             |
+| <span data-ttu-id="867c4-988">小売明細書のパラメーター構成</span><span class="sxs-lookup"><span data-stu-id="867c4-988">Parameter configurations for Retail statements</span></span>                                            | <span data-ttu-id="867c4-989">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-989">Global</span></span>             |
+| <span data-ttu-id="867c4-990">小売明細書の支払構成</span><span class="sxs-lookup"><span data-stu-id="867c4-990">Payment configurations for Retail statements</span></span>                                              | <span data-ttu-id="867c4-991">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-991">Global</span></span>             |
+| <span data-ttu-id="867c4-992">ハードウェア ステーションをダウンロードするセルフサービスの実行</span><span class="sxs-lookup"><span data-stu-id="867c4-992">Perform Self service to download hardware station</span></span>                                         | <span data-ttu-id="867c4-993">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-993">Global</span></span>             |
+| <span data-ttu-id="867c4-994">オンラインの販売と支払の転記</span><span class="sxs-lookup"><span data-stu-id="867c4-994">Posting of online sales and payments</span></span>                                                      | <span data-ttu-id="867c4-995">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-995">Global</span></span>             |
+| <span data-ttu-id="867c4-996">ロイヤルティ報酬ポイント調整の処理</span><span class="sxs-lookup"><span data-stu-id="867c4-996">Process loyalty reward point adjustments</span></span>                                                  | <span data-ttu-id="867c4-997">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-997">Global</span></span>             |
+| <span data-ttu-id="867c4-998">集中的購買を使用して、物流センターから店舗に製品を配送します。</span><span class="sxs-lookup"><span data-stu-id="867c4-998">Push products from distribution center to store using buyer's push</span></span>                        | <span data-ttu-id="867c4-999">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-999">Global</span></span>             |
+| <span data-ttu-id="867c4-1000">法人に対して製品 / 製品マスターをリリース</span><span class="sxs-lookup"><span data-stu-id="867c4-1000">Release a product/product master to legal entities</span></span>                                        | <span data-ttu-id="867c4-1001">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-1001">Global</span></span>             |
+| <span data-ttu-id="867c4-1002">小売価格調整</span><span class="sxs-lookup"><span data-stu-id="867c4-1002">Retail price adjustments</span></span>                                                                  | <span data-ttu-id="867c4-1003">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-1003">Global</span></span>             |
+| <span data-ttu-id="867c4-1004">小売明細書のコンフィギュレーションを保存します</span><span class="sxs-lookup"><span data-stu-id="867c4-1004">Store configurations for Retail statements</span></span>                                                | <span data-ttu-id="867c4-1005">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-1005">Global</span></span>             |
 
  
 
-### <a name="sales"></a>販売注文
+### <a name="sales"></a><span data-ttu-id="867c4-1006">販売注文</span><span class="sxs-lookup"><span data-stu-id="867c4-1006">Sales</span></span>
 
 |                                            |                    |
 |--------------------------------------------|--------------------|
-| **BPM 行**                               | **国/地域** |
-| 販売注文の確認                       | グローバル             |
-| 新しい売買契約の作成               | グローバル             |
-| 販売注文からの発注書の作成 | グローバル             |
-| 販売見積の作成および編集           | グローバル             |
-| 配送スケジュールの作成                   | グローバル             |
-| 販売契約書を入力します                     | グローバル             |
-| 販売契約書の履行                   | グローバル             |
-| 顧客リベートの生成と処理      | グローバル             |
-| 適用できる価格および割引の検索    | グローバル             |
-| 販売見積の一括作成               | グローバル             |
-| 支払リベートの処理                | グローバル             |
-| 販売コミッションの登録                 | グローバル             |
-| 販売コミッション ルールの設定              | グローバル             |
-| 直納として注文を出荷           | グローバル             |
-| 倉庫なしの販売注文の出荷      | グローバル             |
+| <span data-ttu-id="867c4-1007">**BPM 行**</span><span class="sxs-lookup"><span data-stu-id="867c4-1007">**BPM Line**</span></span>                               | <span data-ttu-id="867c4-1008">**国/地域**</span><span class="sxs-lookup"><span data-stu-id="867c4-1008">**Country/Region**</span></span> |
+| <span data-ttu-id="867c4-1009">販売注文の確認</span><span class="sxs-lookup"><span data-stu-id="867c4-1009">Confirm sales orders</span></span>                       | <span data-ttu-id="867c4-1010">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-1010">Global</span></span>             |
+| <span data-ttu-id="867c4-1011">新しい売買契約の作成</span><span class="sxs-lookup"><span data-stu-id="867c4-1011">Create a new trade agreement</span></span>               | <span data-ttu-id="867c4-1012">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-1012">Global</span></span>             |
+| <span data-ttu-id="867c4-1013">販売注文からの発注書の作成</span><span class="sxs-lookup"><span data-stu-id="867c4-1013">Create a purchase order from a sales order</span></span> | <span data-ttu-id="867c4-1014">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-1014">Global</span></span>             |
+| <span data-ttu-id="867c4-1015">販売見積の作成および編集</span><span class="sxs-lookup"><span data-stu-id="867c4-1015">Create and edit sales quotations</span></span>           | <span data-ttu-id="867c4-1016">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-1016">Global</span></span>             |
+| <span data-ttu-id="867c4-1017">配送スケジュールの作成</span><span class="sxs-lookup"><span data-stu-id="867c4-1017">Create delivery schedule</span></span>                   | <span data-ttu-id="867c4-1018">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-1018">Global</span></span>             |
+| <span data-ttu-id="867c4-1019">販売契約書を入力します</span><span class="sxs-lookup"><span data-stu-id="867c4-1019">Enter sales agreements</span></span>                     | <span data-ttu-id="867c4-1020">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-1020">Global</span></span>             |
+| <span data-ttu-id="867c4-1021">販売契約書の履行</span><span class="sxs-lookup"><span data-stu-id="867c4-1021">Fulfill sales agreements</span></span>                   | <span data-ttu-id="867c4-1022">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-1022">Global</span></span>             |
+| <span data-ttu-id="867c4-1023">顧客リベートの生成と処理</span><span class="sxs-lookup"><span data-stu-id="867c4-1023">Generate and process customer rebates</span></span>      | <span data-ttu-id="867c4-1024">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-1024">Global</span></span>             |
+| <span data-ttu-id="867c4-1025">適用できる価格および割引の検索</span><span class="sxs-lookup"><span data-stu-id="867c4-1025">Look up applicable prices and discounts</span></span>    | <span data-ttu-id="867c4-1026">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-1026">Global</span></span>             |
+| <span data-ttu-id="867c4-1027">販売見積の一括作成</span><span class="sxs-lookup"><span data-stu-id="867c4-1027">Mass create sales quotations</span></span>               | <span data-ttu-id="867c4-1028">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-1028">Global</span></span>             |
+| <span data-ttu-id="867c4-1029">支払リベートの処理</span><span class="sxs-lookup"><span data-stu-id="867c4-1029">Process rebates for payment</span></span>                | <span data-ttu-id="867c4-1030">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-1030">Global</span></span>             |
+| <span data-ttu-id="867c4-1031">販売コミッションの登録</span><span class="sxs-lookup"><span data-stu-id="867c4-1031">Register sales commissions</span></span>                 | <span data-ttu-id="867c4-1032">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-1032">Global</span></span>             |
+| <span data-ttu-id="867c4-1033">販売コミッション ルールの設定</span><span class="sxs-lookup"><span data-stu-id="867c4-1033">Set up sales commission rules</span></span>              | <span data-ttu-id="867c4-1034">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-1034">Global</span></span>             |
+| <span data-ttu-id="867c4-1035">直納として注文を出荷</span><span class="sxs-lookup"><span data-stu-id="867c4-1035">Ship orders as direct deliveries</span></span>           | <span data-ttu-id="867c4-1036">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-1036">Global</span></span>             |
+| <span data-ttu-id="867c4-1037">倉庫なしの販売注文の出荷</span><span class="sxs-lookup"><span data-stu-id="867c4-1037">Ship sales orders without warehousing</span></span>      | <span data-ttu-id="867c4-1038">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-1038">Global</span></span>             |
 
  
 
-### <a name="sales-tax"></a>消費税
+### <a name="sales-tax"></a><span data-ttu-id="867c4-1039">消費税</span><span class="sxs-lookup"><span data-stu-id="867c4-1039">Sales tax</span></span>
 
 |                                                    |                    |
 |----------------------------------------------------|--------------------|
-| **BPM 行**                                       | **国/地域** |
-| 仕入先請求書の売上税の計算と調整 | グローバル             |
-| 売上税支払の作成                         | グローバル             |
-| ドキュメントの売上税トランザクションの作成         | グローバル             |
-| 売上税の元帳転記グループの設定         | グローバル             |
-| 売上税所轄官庁の設定                       | グローバル             |
-| 消費税コードを設定します                             | グローバル             |
-| 売上税グループと品目売上税グループの設定  | グローバル             |
-| 消費税レポート コードを設定します                   | グローバル             |
-| 消費税精算期間を設定します                | グローバル             |
-| 源泉徴収税の設定                             | グローバル             |
-| 転記された消費税トランザクションの表示                 | グローバル             |
+| <span data-ttu-id="867c4-1040">**BPM 行**</span><span class="sxs-lookup"><span data-stu-id="867c4-1040">**BPM Line**</span></span>                                       | <span data-ttu-id="867c4-1041">**国/地域**</span><span class="sxs-lookup"><span data-stu-id="867c4-1041">**Country/Region**</span></span> |
+| <span data-ttu-id="867c4-1042">仕入先請求書の売上税の計算と調整</span><span class="sxs-lookup"><span data-stu-id="867c4-1042">Calculate and adjust sales tax on a vendor invoice</span></span> | <span data-ttu-id="867c4-1043">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-1043">Global</span></span>             |
+| <span data-ttu-id="867c4-1044">売上税支払の作成</span><span class="sxs-lookup"><span data-stu-id="867c4-1044">Create a sales tax payment</span></span>                         | <span data-ttu-id="867c4-1045">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-1045">Global</span></span>             |
+| <span data-ttu-id="867c4-1046">ドキュメントの売上税トランザクションの作成</span><span class="sxs-lookup"><span data-stu-id="867c4-1046">Create sales tax transactions on documents</span></span>         | <span data-ttu-id="867c4-1047">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-1047">Global</span></span>             |
+| <span data-ttu-id="867c4-1048">売上税の元帳転記グループの設定</span><span class="sxs-lookup"><span data-stu-id="867c4-1048">Set up ledger posting groups for sales tax</span></span>         | <span data-ttu-id="867c4-1049">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-1049">Global</span></span>             |
+| <span data-ttu-id="867c4-1050">売上税所轄官庁の設定</span><span class="sxs-lookup"><span data-stu-id="867c4-1050">Set up sales tax authorities</span></span>                       | <span data-ttu-id="867c4-1051">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-1051">Global</span></span>             |
+| <span data-ttu-id="867c4-1052">消費税コードを設定します</span><span class="sxs-lookup"><span data-stu-id="867c4-1052">Set up sales tax codes</span></span>                             | <span data-ttu-id="867c4-1053">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-1053">Global</span></span>             |
+| <span data-ttu-id="867c4-1054">売上税グループと品目売上税グループの設定</span><span class="sxs-lookup"><span data-stu-id="867c4-1054">Set up sales tax groups and item sales tax groups</span></span>  | <span data-ttu-id="867c4-1055">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-1055">Global</span></span>             |
+| <span data-ttu-id="867c4-1056">消費税レポート コードを設定します</span><span class="sxs-lookup"><span data-stu-id="867c4-1056">Set up sales tax reporting codes</span></span>                   | <span data-ttu-id="867c4-1057">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-1057">Global</span></span>             |
+| <span data-ttu-id="867c4-1058">消費税精算期間を設定します</span><span class="sxs-lookup"><span data-stu-id="867c4-1058">Set up sales tax settlement periods</span></span>                | <span data-ttu-id="867c4-1059">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-1059">Global</span></span>             |
+| <span data-ttu-id="867c4-1060">源泉徴収税の設定</span><span class="sxs-lookup"><span data-stu-id="867c4-1060">Set up withholding tax</span></span>                             | <span data-ttu-id="867c4-1061">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-1061">Global</span></span>             |
+| <span data-ttu-id="867c4-1062">転記された消費税トランザクションの表示</span><span class="sxs-lookup"><span data-stu-id="867c4-1062">View posted sales tax transactions</span></span>                 | <span data-ttu-id="867c4-1063">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-1063">Global</span></span>             |
 
  
 
-### <a name="security"></a>セキュリティ
+### <a name="security"></a><span data-ttu-id="867c4-1064">セキュリティ</span><span class="sxs-lookup"><span data-stu-id="867c4-1064">Security</span></span>
 
 |                                                         |                    |
 |---------------------------------------------------------|--------------------|
-| **BPM 行**                                            | **国/地域** |
-| 新規ユーザーの作成                                        | グローバル             |
-| 職務分掌の競合の識別と解決 | グローバル             |
-| 職務分掌の設定                            | グローバル             |
+| <span data-ttu-id="867c4-1065">**BPM 行**</span><span class="sxs-lookup"><span data-stu-id="867c4-1065">**BPM Line**</span></span>                                            | <span data-ttu-id="867c4-1066">**国/地域**</span><span class="sxs-lookup"><span data-stu-id="867c4-1066">**Country/Region**</span></span> |
+| <span data-ttu-id="867c4-1067">新規ユーザーの作成</span><span class="sxs-lookup"><span data-stu-id="867c4-1067">Create new users</span></span>                                        | <span data-ttu-id="867c4-1068">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-1068">Global</span></span>             |
+| <span data-ttu-id="867c4-1069">職務分掌の競合の識別と解決</span><span class="sxs-lookup"><span data-stu-id="867c4-1069">Identify and resolve conflicts in segregation of duties</span></span> | <span data-ttu-id="867c4-1070">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-1070">Global</span></span>             |
+| <span data-ttu-id="867c4-1071">職務分掌の設定</span><span class="sxs-lookup"><span data-stu-id="867c4-1071">Set up segregation of duties</span></span>                            | <span data-ttu-id="867c4-1072">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-1072">Global</span></span>             |
 
  
 
-### <a name="warehouse-and-transportation"></a>在庫および輸送
+### <a name="warehouse-and-transportation"></a><span data-ttu-id="867c4-1073">在庫および輸送</span><span class="sxs-lookup"><span data-stu-id="867c4-1073">Warehouse and transportation</span></span>
 
 |                                                                                   |                    |
 |-----------------------------------------------------------------------------------|--------------------|
-| **BPM 行**                                                                      | **国/地域** |
-| 付帯サービス請求金額としての燃料インデックスの配送業者への関連付け                    | グローバル             |
-| WMS が有効な倉庫での位置の構成                                    | グローバル             |
-| ワーク クラスの作成                                                               | グローバル             |
-| 循環棚卸の定義                                                             | グローバル             |
-| ライセンス プレート ラベルの印刷を有効にする                                               | グローバル             |
-| 品目着荷仕訳帳を使用して、基本倉庫が有効な品目を登録します。 | グローバル             |
-| 配送業者の燃料インデックスの設定                                                       | グローバル             |
-| 発注書のプット アウェイ場所のディレクティブを設定します                           | グローバル             |
-| タイプが発注書のタスクを完了するためのモバイル デバイスのメニュー項目を設定します。       | グローバル             |
-| 入庫済品目を登録するためのモバイル デバイスのメニュー項目を設定します。                       | グローバル             |
-| 発注書の作業テンプレートの設定                                        | グローバル             |
-| 付帯サービス割り当ての設定                                                    | グローバル             |
-| 廃棄コードの設定                                                         | グローバル             |
-| ハブ付帯サービス請求金額および付帯サービス マスターの設定                            | グローバル             |
-| レート マスターを設定する                                                               | グローバル             |
-| 出荷配送業者の設定                                                          | グローバル             |
-| 積荷および出荷を計画するには、積荷計画ワークベンチを使用します。                       | グローバル             |
+| <span data-ttu-id="867c4-1074">**BPM 行**</span><span class="sxs-lookup"><span data-stu-id="867c4-1074">**BPM Line**</span></span>                                                                      | <span data-ttu-id="867c4-1075">**国/地域**</span><span class="sxs-lookup"><span data-stu-id="867c4-1075">**Country/Region**</span></span> |
+| <span data-ttu-id="867c4-1076">付帯サービス請求金額としての燃料インデックスの配送業者への関連付け</span><span class="sxs-lookup"><span data-stu-id="867c4-1076">Associate a fuel index with a carrier as an accessorial charge</span></span>                    | <span data-ttu-id="867c4-1077">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-1077">Global</span></span>             |
+| <span data-ttu-id="867c4-1078">WMS が有効な倉庫での位置の構成</span><span class="sxs-lookup"><span data-stu-id="867c4-1078">Configure locations in a WMS enabled warehouse</span></span>                                    | <span data-ttu-id="867c4-1079">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-1079">Global</span></span>             |
+| <span data-ttu-id="867c4-1080">ワーク クラスの作成</span><span class="sxs-lookup"><span data-stu-id="867c4-1080">Create a work class</span></span>                                                               | <span data-ttu-id="867c4-1081">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-1081">Global</span></span>             |
+| <span data-ttu-id="867c4-1082">循環棚卸の定義</span><span class="sxs-lookup"><span data-stu-id="867c4-1082">Define cycle counting</span></span>                                                             | <span data-ttu-id="867c4-1083">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-1083">Global</span></span>             |
+| <span data-ttu-id="867c4-1084">ライセンス プレート ラベルの印刷を有効にする</span><span class="sxs-lookup"><span data-stu-id="867c4-1084">Enable license plate label printing</span></span>                                               | <span data-ttu-id="867c4-1085">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-1085">Global</span></span>             |
+| <span data-ttu-id="867c4-1086">品目着荷仕訳帳を使用して、基本倉庫が有効な品目を登録します。</span><span class="sxs-lookup"><span data-stu-id="867c4-1086">Register items for a basic warehousing enabled item using an item arrival journal</span></span> | <span data-ttu-id="867c4-1087">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-1087">Global</span></span>             |
+| <span data-ttu-id="867c4-1088">配送業者の燃料インデックスの設定</span><span class="sxs-lookup"><span data-stu-id="867c4-1088">Set up a carrier fuel index</span></span>                                                       | <span data-ttu-id="867c4-1089">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-1089">Global</span></span>             |
+| <span data-ttu-id="867c4-1090">発注書のプット アウェイ場所のディレクティブを設定します</span><span class="sxs-lookup"><span data-stu-id="867c4-1090">Set up a location directive for purchase order put-away</span></span>                           | <span data-ttu-id="867c4-1091">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-1091">Global</span></span>             |
+| <span data-ttu-id="867c4-1092">タイプが発注書のタスクを完了するためのモバイル デバイスのメニュー項目を設定します。</span><span class="sxs-lookup"><span data-stu-id="867c4-1092">Set up a mobile device menu item for completing work of type Purchase order</span></span>       | <span data-ttu-id="867c4-1093">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-1093">Global</span></span>             |
+| <span data-ttu-id="867c4-1094">入庫済品目を登録するためのモバイル デバイスのメニュー項目を設定します。</span><span class="sxs-lookup"><span data-stu-id="867c4-1094">Set up a mobile device menu item to register received items</span></span>                       | <span data-ttu-id="867c4-1095">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-1095">Global</span></span>             |
+| <span data-ttu-id="867c4-1096">発注書の作業テンプレートの設定</span><span class="sxs-lookup"><span data-stu-id="867c4-1096">Set up a work template for purchase orders</span></span>                                        | <span data-ttu-id="867c4-1097">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-1097">Global</span></span>             |
+| <span data-ttu-id="867c4-1098">付帯サービス割り当ての設定</span><span class="sxs-lookup"><span data-stu-id="867c4-1098">Set up accessorial assignments</span></span>                                                    | <span data-ttu-id="867c4-1099">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-1099">Global</span></span>             |
+| <span data-ttu-id="867c4-1100">廃棄コードの設定</span><span class="sxs-lookup"><span data-stu-id="867c4-1100">Set up dispositions codes</span></span>                                                         | <span data-ttu-id="867c4-1101">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-1101">Global</span></span>             |
+| <span data-ttu-id="867c4-1102">ハブ付帯サービス請求金額および付帯サービス マスターの設定</span><span class="sxs-lookup"><span data-stu-id="867c4-1102">Set up hub accessorial charges and accessorial masters</span></span>                            | <span data-ttu-id="867c4-1103">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-1103">Global</span></span>             |
+| <span data-ttu-id="867c4-1104">レート マスターを設定する</span><span class="sxs-lookup"><span data-stu-id="867c4-1104">Set up rate masters</span></span>                                                               | <span data-ttu-id="867c4-1105">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-1105">Global</span></span>             |
+| <span data-ttu-id="867c4-1106">出荷配送業者の設定</span><span class="sxs-lookup"><span data-stu-id="867c4-1106">Set up shipping carriers</span></span>                                                          | <span data-ttu-id="867c4-1107">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-1107">Global</span></span>             |
+| <span data-ttu-id="867c4-1108">積荷および出荷を計画するには、積荷計画ワークベンチを使用します。</span><span class="sxs-lookup"><span data-stu-id="867c4-1108">Use the Load Planning Workbench to plan loads and shipments</span></span>                       | <span data-ttu-id="867c4-1109">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-1109">Global</span></span>             |
 
  
 
-## <a name="task-guides-in-the-february-2016-getting-started-library"></a>「はじめに」ライブラリに含まれるタスク ガイド (2016 年 2 月)
+## <a name="task-guides-in-the-february-2016-getting-started-library"></a><span data-ttu-id="867c4-1110">「はじめに」ライブラリに含まれるタスク ガイド (2016 年 2 月)</span><span class="sxs-lookup"><span data-stu-id="867c4-1110">Task guides in the (February 2016) Getting started library</span></span>
 |                                                    |                    |
 |----------------------------------------------------|--------------------|
-| **BPM 行**                                       | **国/地域** |
-| 元帳残高の分析                            | グローバル             |
-| 1 つの会社に対するリリース済製品の作成     | グローバル             |
-| 製造オーダーの作成とスケジュール設定             | グローバル             |
-| 効果的な販売促進                            | グローバル             |
-| 電子申告                               | グローバル             |
-| 従業員セルフサービス                              | グローバル             |
-| 売掛債権回転日数の削減方法          | グローバル             |
-| AX のローカライズ機能の概要      | グローバル             |
-| 日本向けの国特有の機能の概要 | 日本              |
-| 価格設定およびプロモーションの管理                      | グローバル             |
-| マネージャー セルフサービス                               | グローバル             |
-| プロジェクトの概要                                  | グローバル             |
-| チャンネルの設定およびコンフィギュレーション                      | グローバル             |
+| <span data-ttu-id="867c4-1111">**BPM 行**</span><span class="sxs-lookup"><span data-stu-id="867c4-1111">**BPM Line**</span></span>                                       | <span data-ttu-id="867c4-1112">**国/地域**</span><span class="sxs-lookup"><span data-stu-id="867c4-1112">**Country/Region**</span></span> |
+| <span data-ttu-id="867c4-1113">元帳残高の分析</span><span class="sxs-lookup"><span data-stu-id="867c4-1113">Analyze ledger balances</span></span>                            | <span data-ttu-id="867c4-1114">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-1114">Global</span></span>             |
+| <span data-ttu-id="867c4-1115">1 つの会社に対するリリース済製品の作成</span><span class="sxs-lookup"><span data-stu-id="867c4-1115">Create a released product for a single company</span></span>     | <span data-ttu-id="867c4-1116">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-1116">Global</span></span>             |
+| <span data-ttu-id="867c4-1117">製造オーダーの作成とスケジュール設定</span><span class="sxs-lookup"><span data-stu-id="867c4-1117">Create and schedule a production order</span></span>             | <span data-ttu-id="867c4-1118">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-1118">Global</span></span>             |
+| <span data-ttu-id="867c4-1119">効果的な販売促進</span><span class="sxs-lookup"><span data-stu-id="867c4-1119">Effective merchandising</span></span>                            | <span data-ttu-id="867c4-1120">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-1120">Global</span></span>             |
+| <span data-ttu-id="867c4-1121">電子申告</span><span class="sxs-lookup"><span data-stu-id="867c4-1121">Electronic reporting</span></span>                               | <span data-ttu-id="867c4-1122">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-1122">Global</span></span>             |
+| <span data-ttu-id="867c4-1123">従業員セルフサービス</span><span class="sxs-lookup"><span data-stu-id="867c4-1123">Employee self-service</span></span>                              | <span data-ttu-id="867c4-1124">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-1124">Global</span></span>             |
+| <span data-ttu-id="867c4-1125">売掛債権回転日数の削減方法</span><span class="sxs-lookup"><span data-stu-id="867c4-1125">How to reduce your days sales outstanding</span></span>          | <span data-ttu-id="867c4-1126">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-1126">Global</span></span>             |
+| <span data-ttu-id="867c4-1127">AX のローカライズ機能の概要</span><span class="sxs-lookup"><span data-stu-id="867c4-1127">Introduction to AX localization functionality</span></span>      | <span data-ttu-id="867c4-1128">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-1128">Global</span></span>             |
+| <span data-ttu-id="867c4-1129">日本向けの国特有の機能の概要</span><span class="sxs-lookup"><span data-stu-id="867c4-1129">Introduction to country-specific features to Japan</span></span> | <span data-ttu-id="867c4-1130">日本</span><span class="sxs-lookup"><span data-stu-id="867c4-1130">Japan</span></span>              |
+| <span data-ttu-id="867c4-1131">価格設定およびプロモーションの管理</span><span class="sxs-lookup"><span data-stu-id="867c4-1131">Manage pricing and promotions</span></span>                      | <span data-ttu-id="867c4-1132">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-1132">Global</span></span>             |
+| <span data-ttu-id="867c4-1133">マネージャー セルフサービス</span><span class="sxs-lookup"><span data-stu-id="867c4-1133">Manager self-service</span></span>                               | <span data-ttu-id="867c4-1134">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-1134">Global</span></span>             |
+| <span data-ttu-id="867c4-1135">プロジェクトの概要</span><span class="sxs-lookup"><span data-stu-id="867c4-1135">Projects overview</span></span>                                  | <span data-ttu-id="867c4-1136">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-1136">Global</span></span>             |
+| <span data-ttu-id="867c4-1137">チャンネルの設定およびコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="867c4-1137">Set up and configure channels</span></span>                      | <span data-ttu-id="867c4-1138">グローバル</span><span class="sxs-lookup"><span data-stu-id="867c4-1138">Global</span></span>             |
 
  
 
-<a name="see-also"></a>参照
+<a name="see-also"></a><span data-ttu-id="867c4-1139">参照</span><span class="sxs-lookup"><span data-stu-id="867c4-1139">See also</span></span>
 --------
 
-[新規または更新されたタスク ガイド (2016 年 5 月)](new-updated-task-guides-available-may-2016.md)
+[<span data-ttu-id="867c4-1140">新規または更新されたタスク ガイド (2016 年 5 月)</span><span class="sxs-lookup"><span data-stu-id="867c4-1140">New or updated Task guides (May 2016)</span></span>](new-updated-task-guides-available-may-2016.md)
 
-[新規または更新されたタスク ガイド (2016 年 8 月)](new-updated-task-guides-available-august-2016.md)
+[<span data-ttu-id="867c4-1141">新規または更新されたタスク ガイド (2016 年 8 月)</span><span class="sxs-lookup"><span data-stu-id="867c4-1141">New or updated Task guides (August 2016)</span></span>](new-updated-task-guides-available-august-2016.md)
 
-[新規または更新されたタスク ガイド (2016 年 11 月)](new-task-guides-november-2016.md)
+[<span data-ttu-id="867c4-1142">新規または更新されたタスク ガイド (2016 年 11 月)</span><span class="sxs-lookup"><span data-stu-id="867c4-1142">New or updated Task guides (November 2016)</span></span>](new-task-guides-november-2016.md)
 
 
 

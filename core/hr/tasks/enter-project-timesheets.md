@@ -17,49 +17,49 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: fbbcbadc2ab777ae615ef13db6d6ecdb9e5d37a6
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 1f88fbbacde9c0bd2b3499df5682a717d0b804ab
 ms.contentlocale: ja-jp
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="enter-project-timesheets"></a>プロジェクト タイムシートの入力
+# <a name="enter-project-timesheets"></a><span data-ttu-id="5c035-103">プロジェクト タイムシートの入力</span><span class="sxs-lookup"><span data-stu-id="5c035-103">Enter project timesheets</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-この手順で、空のタイム シートのフォームを使用して、タイム シートを作成できます。 新しいタイムシートは、以前のタイム シート、またはプロジェクトおよび [お気に入り] ページの活動の割り当てからの情報に基づくこともできます。 既定では、[すべてのタイムシート] リスト ページに現在のタイム シートをすべて表示します。 期間またはプロジェクトでタイムシートの一覧をフィルター処理、または他の作業者に代わって作成されたタイム シートを表示する場合にも、[自分のタイムシート] ページの [表示] フィールドのドロップダウン リストを使用できます。 この手順の作成に使用するデモ データの会社は USSI です。 この手順を開始するには、[プロジェクト管理] および [会計] > [タイムシート] > [自分のタイムシート] に移動します。
+<span data-ttu-id="5c035-104">この手順で、空のタイム シートのフォームを使用して、タイム シートを作成できます。</span><span class="sxs-lookup"><span data-stu-id="5c035-104">This procedure lets you create a timesheet by using an empty timesheet form.</span></span> <span data-ttu-id="5c035-105">新しいタイムシートは、以前のタイム シート、またはプロジェクトおよび [お気に入り] ページの活動の割り当てからの情報に基づくこともできます。</span><span class="sxs-lookup"><span data-stu-id="5c035-105">The new timesheet can be based on information from a previous timesheet, or from project and activity assignments in the My favourites page.</span></span> <span data-ttu-id="5c035-106">既定では、[すべてのタイムシート] リスト ページに現在のタイム シートをすべて表示します。</span><span class="sxs-lookup"><span data-stu-id="5c035-106">By default, the All timesheets list page displays all your timesheets for the current period.</span></span> <span data-ttu-id="5c035-107">期間またはプロジェクトでタイムシートの一覧をフィルター処理、または他の作業者に代わって作成されたタイム シートを表示する場合にも、[自分のタイムシート] ページの [表示] フィールドのドロップダウン リストを使用できます。</span><span class="sxs-lookup"><span data-stu-id="5c035-107">You can use the drop-down list for the Show field in the My timesheets page to filter the timesheet list by time period or project, or to view timesheets that were created on behalf of other workers.</span></span> <span data-ttu-id="5c035-108">この手順の作成に使用するデモ データの会社は USSI です。</span><span class="sxs-lookup"><span data-stu-id="5c035-108">The demo data company used to create this procedure is USSI.</span></span> <span data-ttu-id="5c035-109">この手順を開始するには、[プロジェクト管理] および [会計] > [タイムシート] > [自分のタイムシート] に移動します。</span><span class="sxs-lookup"><span data-stu-id="5c035-109">To begin this procedure, go to Project management and accounting > Timesheets >My timesheets</span></span>
 
-1. 新しいタイムシートを入力するには、[新規] をクリックします。
-    * リソースのドロップダウン リストは既定で、現在のユーザーに割り当てられている作業者を示します。  
-    * ユーザーがデリゲートとして指定されている場合は、ユーザーが代わりにタイムシートを入力できるように名前が表示されます。  
-2. [日付] フィールドに日付を入力します。
-    * このオプションを選択した場合、新しいタイムシートの行はお気に入りとしてコンフィギュレーションされたタイムシートの設定を使用して作成されます。  
-3. [OK] をクリックします。
-4. [新しい明細行] をクリックします。
-5. 一覧で、選択された行をマークします。
-    * [法人] フィールドでは、既定で現在の [法人] が表示されます。   
-6. [プロジェクト] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。
-7. 一覧で、目的のレコードを見つけ、選択します。
-8. 一覧で、選択された行のリンクをクリックします。
-9. [活動] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。
-10. 一覧で、目的のレコードを見つけ、選択します。
-11. 一覧で、選択された行のリンクをクリックします。
-12. [カテゴリ] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。
-13. 一覧で、目的のレコードを見つけ、選択します。
-14. 一覧で、選択された行のリンクをクリックします。
-15. 毎日の勤務時間を入力します。
-    * 時間は、小数点形式で入力する必要があります。  たとえば、2 時間 15 分間働いたら、2.25 を入力します。   
-16. 毎日の勤務時間を入力します。
-    * 時間は、小数点形式で入力する必要があります。  たとえば、2 時間 15 分間働いたら、2.25 を入力します。   
-17. 毎日の勤務時間を入力します。
-    * 時間は、小数点形式で入力する必要があります。  たとえば、2 時間 15 分間働いたら、2.25 を入力します。   
-18. 毎日の勤務時間を入力します。
-    * 時間は、小数点形式で入力する必要があります。  たとえば、2 時間 15 分間働いたら、2.25 を入力します。   
-19. 毎日の勤務時間を入力します。
-    * 時間は、小数点形式で入力する必要があります。  たとえば、2 時間 15 分間働いたら、2.25 を入力します。   
-    * [行の詳細] で、次のオプションを選択できます。o 税および財務分析コードに関する情報を追加します。  o    タイムシート行に関するコメントを追加します。  
-20. [ワークフロー] をクリックすると、ドロップ ダイアログを開きます。
-21. [送信] をクリックします。
-22. [送信] をクリックします。
+1. <span data-ttu-id="5c035-110">新しいタイムシートを入力するには、[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5c035-110">To enter a new timesheet, click New.</span></span>
+    * <span data-ttu-id="5c035-111">リソースのドロップダウン リストは既定で、現在のユーザーに割り当てられている作業者を示します。</span><span class="sxs-lookup"><span data-stu-id="5c035-111">The Resource drop-down list shows the worker assigned to the current user, by default.</span></span>  
+    * <span data-ttu-id="5c035-112">ユーザーがデリゲートとして指定されている場合は、ユーザーが代わりにタイムシートを入力できるように名前が表示されます。</span><span class="sxs-lookup"><span data-stu-id="5c035-112">If the user is designated as a delegate, this will list the names so that a user can enter a timesheet on their behalf.</span></span>  
+2. <span data-ttu-id="5c035-113">[日付] フィールドに日付を入力します。</span><span class="sxs-lookup"><span data-stu-id="5c035-113">In the Date field, enter a date.</span></span>
+    * <span data-ttu-id="5c035-114">このオプションを選択した場合、新しいタイムシートの行はお気に入りとしてコンフィギュレーションされたタイムシートの設定を使用して作成されます。</span><span class="sxs-lookup"><span data-stu-id="5c035-114">If this option is selected, new timesheet lines will be created by using the timesheet settings that were configured as favourites.</span></span>  
+3. <span data-ttu-id="5c035-115">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5c035-115">Click OK.</span></span>
+4. <span data-ttu-id="5c035-116">[新しい明細行] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5c035-116">Click New line.</span></span>
+5. <span data-ttu-id="5c035-117">一覧で、選択された行をマークします。</span><span class="sxs-lookup"><span data-stu-id="5c035-117">In the list, mark the selected row.</span></span>
+    * <span data-ttu-id="5c035-118">[法人] フィールドでは、既定で現在の [法人] が表示されます。</span><span class="sxs-lookup"><span data-stu-id="5c035-118">The Legal Entity field displays the current Legal entity by default.</span></span>   
+6. <span data-ttu-id="5c035-119">[プロジェクト] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="5c035-119">In the Project field, click the drop-down button to open the lookup.</span></span>
+7. <span data-ttu-id="5c035-120">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="5c035-120">In the list, find and select the desired record.</span></span>
+8. <span data-ttu-id="5c035-121">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="5c035-121">In the list, click the link in the selected row.</span></span>
+9. <span data-ttu-id="5c035-122">[活動] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="5c035-122">In the Activity field, click the drop-down button to open the lookup.</span></span>
+10. <span data-ttu-id="5c035-123">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="5c035-123">In the list, find and select the desired record.</span></span>
+11. <span data-ttu-id="5c035-124">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="5c035-124">In the list, click the link in the selected row.</span></span>
+12. <span data-ttu-id="5c035-125">[カテゴリ] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。</span><span class="sxs-lookup"><span data-stu-id="5c035-125">In the Category field, click the drop-down button to open the lookup.</span></span>
+13. <span data-ttu-id="5c035-126">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="5c035-126">In the list, find and select the desired record.</span></span>
+14. <span data-ttu-id="5c035-127">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="5c035-127">In the list, click the link in the selected row.</span></span>
+15. <span data-ttu-id="5c035-128">毎日の勤務時間を入力します。</span><span class="sxs-lookup"><span data-stu-id="5c035-128">Enter the number of hours worked each day.</span></span>
+    * <span data-ttu-id="5c035-129">時間は、小数点形式で入力する必要があります。</span><span class="sxs-lookup"><span data-stu-id="5c035-129">Hours should be entered in a decimal format.</span></span>  <span data-ttu-id="5c035-130">たとえば、2 時間 15 分間働いたら、2.25 を入力します。</span><span class="sxs-lookup"><span data-stu-id="5c035-130">For example, if you worked for two hours and fifteen minutes, enter 2.25.</span></span>   
+16. <span data-ttu-id="5c035-131">毎日の勤務時間を入力します。</span><span class="sxs-lookup"><span data-stu-id="5c035-131">Enter the number of hours worked each day.</span></span>
+    * <span data-ttu-id="5c035-132">時間は、小数点形式で入力する必要があります。</span><span class="sxs-lookup"><span data-stu-id="5c035-132">Hours should be entered in a decimal format.</span></span>  <span data-ttu-id="5c035-133">たとえば、2 時間 15 分間働いたら、2.25 を入力します。</span><span class="sxs-lookup"><span data-stu-id="5c035-133">For example, if you worked for two hours and fifteen minutes, enter 2.25.</span></span>   
+17. <span data-ttu-id="5c035-134">毎日の勤務時間を入力します。</span><span class="sxs-lookup"><span data-stu-id="5c035-134">Enter the number of hours worked each day.</span></span>
+    * <span data-ttu-id="5c035-135">時間は、小数点形式で入力する必要があります。</span><span class="sxs-lookup"><span data-stu-id="5c035-135">Hours should be entered in a decimal format.</span></span>  <span data-ttu-id="5c035-136">たとえば、2 時間 15 分間働いたら、2.25 を入力します。</span><span class="sxs-lookup"><span data-stu-id="5c035-136">For example, if you worked for two hours and fifteen minutes, enter 2.25.</span></span>   
+18. <span data-ttu-id="5c035-137">毎日の勤務時間を入力します。</span><span class="sxs-lookup"><span data-stu-id="5c035-137">Enter the number of hours worked each day.</span></span>
+    * <span data-ttu-id="5c035-138">時間は、小数点形式で入力する必要があります。</span><span class="sxs-lookup"><span data-stu-id="5c035-138">Hours should be entered in a decimal format.</span></span>  <span data-ttu-id="5c035-139">たとえば、2 時間 15 分間働いたら、2.25 を入力します。</span><span class="sxs-lookup"><span data-stu-id="5c035-139">For example, if you worked for two hours and fifteen minutes, enter 2.25.</span></span>   
+19. <span data-ttu-id="5c035-140">毎日の勤務時間を入力します。</span><span class="sxs-lookup"><span data-stu-id="5c035-140">Enter the number of hours worked each day.</span></span>
+    * <span data-ttu-id="5c035-141">時間は、小数点形式で入力する必要があります。</span><span class="sxs-lookup"><span data-stu-id="5c035-141">Hours should be entered in a decimal format.</span></span>  <span data-ttu-id="5c035-142">たとえば、2 時間 15 分間働いたら、2.25 を入力します。</span><span class="sxs-lookup"><span data-stu-id="5c035-142">For example, if you worked for two hours and fifteen minutes, enter 2.25.</span></span>   
+    * <span data-ttu-id="5c035-143">[行の詳細] で、次のオプションを選択できます。o 税および財務分析コードに関する情報を追加します。</span><span class="sxs-lookup"><span data-stu-id="5c035-143">In Line details, the following options are available:  o  Add information about taxes and financial dimensions.</span></span>  <span data-ttu-id="5c035-144">o    タイムシート行に関するコメントを追加します。</span><span class="sxs-lookup"><span data-stu-id="5c035-144">o    Add comments about the timesheet line.</span></span>  
+20. <span data-ttu-id="5c035-145">[ワークフロー] をクリックすると、ドロップ ダイアログを開きます。</span><span class="sxs-lookup"><span data-stu-id="5c035-145">Click Workflow to open the drop dialog.</span></span>
+21. <span data-ttu-id="5c035-146">[送信] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5c035-146">Click Submit.</span></span>
+22. <span data-ttu-id="5c035-147">[送信] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5c035-147">Click Submit.</span></span>
 
 

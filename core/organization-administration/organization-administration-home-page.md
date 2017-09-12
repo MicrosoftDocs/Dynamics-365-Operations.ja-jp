@@ -15,7 +15,7 @@ ms.custom: 20421
 ms.assetid: 7aa24a03-d172-47e9-81f8-ebd39e80bc60
 ms.search.region: Global
 ms.author: sericks
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
 ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
@@ -25,61 +25,61 @@ ms.lasthandoff: 07/27/2017
 
 ---
 
-# <a name="organization-administration-home-page"></a>組織管理ホーム ページ
+# <a name="organization-administration-home-page"></a><span data-ttu-id="b2584-103">組織管理ホーム ページ</span><span class="sxs-lookup"><span data-stu-id="b2584-103">Organization administration home page</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-このトピックでは、組織での Microsoft Dynamics 365 for Fianance と Operations の使用に役立つリソースを示します。
+<span data-ttu-id="b2584-104">このトピックでは、組織での Microsoft Dynamics 365 for Fianance と Operations の使用に役立つリソースを示します。</span><span class="sxs-lookup"><span data-stu-id="b2584-104">This topic points to resources that will help you use Microsoft Dynamics 365 for Finance and Operations in your organization.</span></span>
 
-<a name="number-sequences"></a>番号順序
+<a name="number-sequences"></a><span data-ttu-id="b2584-105">番号順序</span><span class="sxs-lookup"><span data-stu-id="b2584-105">Number sequences</span></span>
 ----------------
 
--   [番号順序の概要](number-sequence-overview.md)
--   [ウィザードを使用した番号順序の設定](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-up-number-sequences-wizard) (タスク ガイド)
--   [番号順序を個別に設定する](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-up-number-sequences-individual-basis) (タスク ガイド)
+-   [<span data-ttu-id="b2584-106">番号順序の概要</span><span class="sxs-lookup"><span data-stu-id="b2584-106">Number sequence overview</span></span>](number-sequence-overview.md)
+-   <span data-ttu-id="b2584-107">[ウィザードを使用した番号順序の設定](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-up-number-sequences-wizard) (タスク ガイド)</span><span class="sxs-lookup"><span data-stu-id="b2584-107">[Set up number sequences by using a wizard](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-up-number-sequences-wizard) (Task guide)</span></span>
+-   <span data-ttu-id="b2584-108">[番号順序を個別に設定する](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-up-number-sequences-individual-basis) (タスク ガイド)</span><span class="sxs-lookup"><span data-stu-id="b2584-108">[Set up number sequences on an individual basis](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-up-number-sequences-individual-basis) (Task guide)</span></span>
 
-## <a name="address-books"></a>アドレス帳
--   [アドレス帳](qa-address-books.md)
--   [グローバル アドレス帳の概要](overview-global-address-book.md)
--   [グローバル アドレス帳と追加のアドレス帳トピックのコンフィギュレーションの計画](plan-configuration-global-address-book-additional-address-books.md)
+## <a name="address-books"></a><span data-ttu-id="b2584-109">アドレス帳</span><span class="sxs-lookup"><span data-stu-id="b2584-109">Address books</span></span>
+-   [<span data-ttu-id="b2584-110">アドレス帳</span><span class="sxs-lookup"><span data-stu-id="b2584-110">Address books</span></span>](qa-address-books.md)
+-   [<span data-ttu-id="b2584-111">グローバル アドレス帳の概要</span><span class="sxs-lookup"><span data-stu-id="b2584-111">Overview: Global address book</span></span>](overview-global-address-book.md)
+-   [<span data-ttu-id="b2584-112">グローバル アドレス帳と追加のアドレス帳トピックのコンフィギュレーションの計画</span><span class="sxs-lookup"><span data-stu-id="b2584-112">Planning the configuration of the global address book and additional address book</span></span>](plan-configuration-global-address-book-additional-address-books.md)
 
-## <a name="workflow"></a>ワークフロー
--   [ワークフロー システムの概要](overview-workflow-system.md)
--   [ワークフロー システムのアーキテクチャ](workflow-system-architecture.md)
--   [ワークフロー要素](workflow-elements.md)
--   [ワークフロー アクション](workflow-actions.md)
--   [ワークフローの作成](create-workflow.md)
--   [ワークフローのプロパティをコンフィギュレーション](configure-workflow-properties.md)
--   [手動タスクのコンフィギュレーション](configure-manual-task-workflow.md)
--   [自動化タスクのコンフィギュレーション](configure-automated-task-workflow.md)
--   [承認プロセスのコンフィギュレーション](configure-approval-process-workflow.md)
--   [承認ステップのコンフィギュレーション](configure-approval-step-workflow.md)
--   [手動決定のコンフィギュレーション](configure-manual-decision-workflow.md)
--   [条件付き意思決定のコンフィギュレーション](configure-conditional-decision-workflow.md)
--   [並列活動のコンフィギュレーション](configure-parallel-activity-workflow.md)
--   [並列分岐のコンフィギュレーション](configure-parallel-branch-workflow.md)
--   [行項目ワークフローの要素をコンフィギュレーション](configure-line-item-workflow.md)
+## <a name="workflow"></a><span data-ttu-id="b2584-113">ワークフロー</span><span class="sxs-lookup"><span data-stu-id="b2584-113">Workflow</span></span>
+-   [<span data-ttu-id="b2584-114">ワークフロー システムの概要</span><span class="sxs-lookup"><span data-stu-id="b2584-114">Overview of the workflow system</span></span>](overview-workflow-system.md)
+-   [<span data-ttu-id="b2584-115">ワークフロー システムのアーキテクチャ</span><span class="sxs-lookup"><span data-stu-id="b2584-115">Workflow system architecture</span></span>](workflow-system-architecture.md)
+-   [<span data-ttu-id="b2584-116">ワークフロー要素</span><span class="sxs-lookup"><span data-stu-id="b2584-116">Workflow elements</span></span>](workflow-elements.md)
+-   [<span data-ttu-id="b2584-117">ワークフロー アクション</span><span class="sxs-lookup"><span data-stu-id="b2584-117">Workflow actions</span></span>](workflow-actions.md)
+-   [<span data-ttu-id="b2584-118">ワークフローの作成</span><span class="sxs-lookup"><span data-stu-id="b2584-118">Create a workflow</span></span>](create-workflow.md)
+-   [<span data-ttu-id="b2584-119">ワークフローのプロパティをコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="b2584-119">Configure the properties of a workflow</span></span>](configure-workflow-properties.md)
+-   [<span data-ttu-id="b2584-120">手動タスクのコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="b2584-120">Configure a manual task</span></span>](configure-manual-task-workflow.md)
+-   [<span data-ttu-id="b2584-121">自動化タスクのコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="b2584-121">Configure an automated task</span></span>](configure-automated-task-workflow.md)
+-   [<span data-ttu-id="b2584-122">承認プロセスのコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="b2584-122">Configure an approval process</span></span>](configure-approval-process-workflow.md)
+-   [<span data-ttu-id="b2584-123">承認ステップのコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="b2584-123">Configure an approval step</span></span>](configure-approval-step-workflow.md)
+-   [<span data-ttu-id="b2584-124">手動決定のコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="b2584-124">Configure a manual decision</span></span>](configure-manual-decision-workflow.md)
+-   [<span data-ttu-id="b2584-125">条件付き意思決定のコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="b2584-125">Configure a conditional decision</span></span>](configure-conditional-decision-workflow.md)
+-   [<span data-ttu-id="b2584-126">並列活動のコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="b2584-126">Configure a parallel activity</span></span>](configure-parallel-activity-workflow.md)
+-   [<span data-ttu-id="b2584-127">並列分岐のコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="b2584-127">Configure a parallel branch</span></span>](configure-parallel-branch-workflow.md)
+-   [<span data-ttu-id="b2584-128">行項目ワークフローの要素をコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="b2584-128">Configure a line-item workflow element</span></span>](configure-line-item-workflow.md)
 
-## <a name="case-management"></a>ケース管理
--   [計画:ケースの設定](plan-case-management.md)
--   [ケース管理の例](cases.md)
+## <a name="case-management"></a><span data-ttu-id="b2584-129">ケース管理</span><span class="sxs-lookup"><span data-stu-id="b2584-129">Case management</span></span>
+-   [<span data-ttu-id="b2584-130">計画:ケースの設定</span><span class="sxs-lookup"><span data-stu-id="b2584-130">Planning: Case setup</span></span>](plan-case-management.md)
+-   [<span data-ttu-id="b2584-131">ケース管理の例</span><span class="sxs-lookup"><span data-stu-id="b2584-131">Case management examples</span></span>](cases.md)
 
-## <a name="electronic-signatures"></a>電子署名
--   [電子署名の概要](electronic-signature-overview.md)
--   [電子署名の設定](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-up-electronic-signatures) (タスク ガイド)
+## <a name="electronic-signatures"></a><span data-ttu-id="b2584-132">電子署名</span><span class="sxs-lookup"><span data-stu-id="b2584-132">Electronic signatures</span></span>
+-   [<span data-ttu-id="b2584-133">電子署名の概要</span><span class="sxs-lookup"><span data-stu-id="b2584-133">Electronic signature overview</span></span>](electronic-signature-overview.md)
+-   <span data-ttu-id="b2584-134">[電子署名の設定](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-up-electronic-signatures) (タスク ガイド)</span><span class="sxs-lookup"><span data-stu-id="b2584-134">[Set up electronic signatures](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-up-electronic-signatures) (Task guide)</span></span>
 
-## <a name="organizations"></a>組織
--   [組織と組織階層](organizations-organizational-hierarchies.md)
--   [組織階層の計画](plan-organizational-hierarchy.md)
--   [作業単位の作成](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/create-operating-unit) (タスク ガイド)
--   [組織階層の作成](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/create-organization-hierarchy) (タスク ガイド)
--   [法人の作成](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/create-legal-entity) (タスク ガイド)
+## <a name="organizations"></a><span data-ttu-id="b2584-135">組織</span><span class="sxs-lookup"><span data-stu-id="b2584-135">Organizations</span></span>
+-   [<span data-ttu-id="b2584-136">組織と組織階層</span><span class="sxs-lookup"><span data-stu-id="b2584-136">Organizations and organizational hierarchies</span></span>](organizations-organizational-hierarchies.md)
+-   [<span data-ttu-id="b2584-137">組織階層の計画</span><span class="sxs-lookup"><span data-stu-id="b2584-137">Plan the organizational hierarchy</span></span>](plan-organizational-hierarchy.md)
+-   <span data-ttu-id="b2584-138">[作業単位の作成](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/create-operating-unit) (タスク ガイド)</span><span class="sxs-lookup"><span data-stu-id="b2584-138">[Create an operating unit](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/create-operating-unit) (Task guide)</span></span>
+-   <span data-ttu-id="b2584-139">[組織階層の作成](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/create-organization-hierarchy) (タスク ガイド)</span><span class="sxs-lookup"><span data-stu-id="b2584-139">[Create an organization hierarchy](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/create-organization-hierarchy) (Task guide)</span></span>
+-   <span data-ttu-id="b2584-140">[法人の作成](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/create-legal-entity) (タスク ガイド)</span><span class="sxs-lookup"><span data-stu-id="b2584-140">[Create a legal entity](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/create-legal-entity) (Task guide)</span></span>
 
-## <a name="general-administration"></a>一般管理
--   [バナーまたはロゴの変更](/dynamics365/unified-operations/fin-and-ops/get-started/tasks/change-banner-or-logo) (タスク ガイド)
--   [日時データとタイム ゾーンについて](date-time-zones.md)
--   [レコード テンプレート](record-templates.md)
+## <a name="general-administration"></a><span data-ttu-id="b2584-141">一般管理</span><span class="sxs-lookup"><span data-stu-id="b2584-141">General administration</span></span>
+-   <span data-ttu-id="b2584-142">[バナーまたはロゴの変更](/dynamics365/unified-operations/fin-and-ops/get-started/tasks/change-banner-or-logo) (タスク ガイド)</span><span class="sxs-lookup"><span data-stu-id="b2584-142">[Change the banner or logo](/dynamics365/unified-operations/fin-and-ops/get-started/tasks/change-banner-or-logo) (Task guide)</span></span>
+-   [<span data-ttu-id="b2584-143">日時データとタイム ゾーンについて</span><span class="sxs-lookup"><span data-stu-id="b2584-143">About date/time data and time zones</span></span>](date-time-zones.md)
+-   [<span data-ttu-id="b2584-144">レコード テンプレート</span><span class="sxs-lookup"><span data-stu-id="b2584-144">Record templates</span></span>](record-templates.md)
 
 
 
