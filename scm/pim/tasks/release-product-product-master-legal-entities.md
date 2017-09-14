@@ -1,7 +1,7 @@
 --- 
 title: "法人に対する製品/製品マスターのリリース"
 description: "この手順では、一つ以上の法人に製品または製品マスターをリリースする方法を説明します。"
-author: BibiSp
+author: josaw1
 manager: AnnBe
 ms.date: 11/14/2016
 ms.topic: business-process
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: josaw1
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: bis

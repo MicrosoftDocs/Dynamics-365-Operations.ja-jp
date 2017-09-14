@@ -1,7 +1,7 @@
 ---
 title: "製品関連の翻訳のよく寄せられる質問"
 description: "このトピックでは、製品の翻訳、製品分析コードの値、および製品属性を管理する方法について説明します。"
-author: YuyuScheller
+author: cvocph
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,14 +10,14 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: SysTranslationDetail, SysTranslationLanguage, SysTranslationList
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 201853
 ms.assetid: c0286bba-f54b-42de-904c-81fd796bdd1d
 ms.search.region: global
 ms.search.industry: Product information
 ms.author: yuyus
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670

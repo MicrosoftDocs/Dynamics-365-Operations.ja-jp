@@ -1,7 +1,7 @@
 --- 
 title: "コンフィギュレーション可能な製品の属性ベースの価格決定の設定"
 description: "この手順では、属性ベースの価格を設定する方法を示します。"
-author: BibiSp
+author: YuyuScheller
 manager: AnnBe
 ms.date: 10/12/2016
 ms.topic: business-process
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: bis
