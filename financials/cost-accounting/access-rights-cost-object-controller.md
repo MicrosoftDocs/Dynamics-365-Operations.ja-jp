@@ -27,7 +27,7 @@ ms.lasthandoff: 07/27/2017
 
 ---
 
-## <a name="access-rights-of-a-cost-object-controller"></a>原価オブジェクト コントローラーのアクセス権
+# <a name="access-rights-of-a-cost-object-controller"></a>原価オブジェクト コントローラーのアクセス権
 
 [!include[banner](../includes/banner.md)]
 
