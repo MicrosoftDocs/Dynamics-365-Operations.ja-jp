@@ -1,7 +1,7 @@
 ---
 title: "統計分析コード メンバーと統計測定プロバイダー テンプレート"
 description: "このトピックでは、統計分析コード メンバーと統計測定プロバイダー テンプレートについて説明します。 統計分析コード メンバーは、コスト配分やコスト配賦などのポリシーの配賦基準として使用できます。 また、非金銭的コスト消費を報告するために使用することもできます。"
-author: YuyuScheller
+author: AndersGirke
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
@@ -17,7 +17,7 @@ ms.assetid:
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: YuyuScheller
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f

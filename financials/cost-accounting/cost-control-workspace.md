@@ -1,7 +1,7 @@
 ---
 title: "原価管理ワークスペース"
 description: "このトピックでは、原価管理ワークスペースについての情報を提供します。 このワークスペースは、分析コード内または分析コード間のコスト オブジェクトまたは一連のコスト オブジェクトの管理を担当するマネージャーがレポートにアクセスできる中心点です。"
-author: YuyuScheller
+author: AndersGirke
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
@@ -17,7 +17,7 @@ ms.assetid:
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: YuyuScheller
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f

@@ -1,7 +1,7 @@
 ---
 title: "間接費の計算"
 description: "このトピックでは、間接費を計算し配賦するための標準的なプロセスについて説明します。"
-author: YuyuScheller
+author: AndersGirke
 manager: AnnBe
 ms.date: 04/20/2017
 ms.topic: article
@@ -24,7 +24,6 @@ ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
 ms.openlocfilehash: c040a50d9962d7a900fbef285ea1f1baea124033
 ms.contentlocale: ja-jp
 ms.lasthandoff: 06/13/2017
-
 
 ---
 
