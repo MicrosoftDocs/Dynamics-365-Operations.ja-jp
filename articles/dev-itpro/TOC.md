@@ -451,6 +451,7 @@
 ### [モデルの分割](dev-tools/model-split.md)
 ### [デリゲートを使用したモデル間の依存関係の解決](migration-upgrade/delegates-migration.md)
 
+
 ## 最新の更新プログラムへのアップグレード
 ### [最新の更新プログラムに移行するためのプロセス](migration-upgrade/upgrade-latest-update.md)
 ### [ライフサイクル ポリシー](migration-upgrade/versions-update-policy.md)
@@ -511,6 +512,8 @@
 ## [独自の業務プロセスのアップロード](lifecycle-services/upload-business-processes-bpm-task-recorder.md)
 ## [モニタリングおよび診断](lifecycle-services/monitoring-diagnostics.md)
 ## [アセット ライブラリ](lifecycle-services/asset-library.md)
+## [Microsoft Dynamics 365 - 翻訳サービスの概要](lifecycle-services/translation-service-overview.md)
+### [Microsoft Dynamics 365 翻訳サービス ユーザー ガイド](lifecycle-services/use-translation-service.md)
 
 ## Dynamics AX 2012 Lifecycle Services の機能
 ### 配置

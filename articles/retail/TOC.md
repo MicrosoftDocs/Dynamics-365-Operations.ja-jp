@@ -1,6 +1,9 @@
 # [Dynamics 365 for Retail へようこそ](index.md)
 
-# 支払
+# 使用開始
+## [新機能および変更された機能](get-started/whats-new.md)
+
+# 支払利息
 ## [支払方法](payment-methods.md)
 ## [クレジット カードの設定、認証、および取得](../financials/accounts-receivable/credit-card-authorizations.md)
 ## [POS の支払方法を構成する](cash-denominations.md)
@@ -173,8 +176,9 @@
 ### [Retail Modern POS のコンフィギュレーションとインストール](retail-modern-pos-device-activation.md)
 #### [本社からの小売アカウントとデバイスの管理](set-up-activation-accounts-validate-devices-hq.md)
 #### [Retail POS デバイスのライセンス認証](dev-itpro/retail-device-activation.md)
-#### [小売クラウド POS のセキュリティ保護](dev-itpro/secure-retail-cloud-pos.md)
+#### [Retail クラウド POS のセキュリティ保護](dev-itpro/secure-retail-cloud-pos.md)
 ### [Retail Hardware Station のコンフィギュレーションとインストール](retail-hardware-station-configuration-installation.md)
+### [Retail セルフサービス コンポーネントの一括配置](dev-itpro/retail-mass-deployment.md)
 ### [診断とトラブルシューティングの Retail コンポーネント イベント](dev-itpro/retail-component-events-diagnostics-troubleshooting.md)
 ### [配置可能パッケージの適用](../dev-itpro/deployment/apply-deployable-package-system.md)
 
