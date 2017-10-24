@@ -1,7 +1,7 @@
 ---
 title: "移動平均"
 description: 
-author: YuyuScheller
+author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,13 +17,13 @@ ms.assetid: dfd10099-8f7f-44b1-917e-df37c2fe8773
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: yuyus
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 0018f5df3d0d2882c300b6458bfb8adfba84e2ad
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: afc8f4922810983a6582558f0577a05aa21cbdbb
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -35,7 +35,7 @@ ms.lasthandoff: 05/25/2017
 次に、移動平均原価を原価計算方法として使用するときの前提条件を示します。
 1.  **品目モデル グループ** ページの**在庫モデル** フィールドで、[移動平均] がオンになっている品目モデル グループを設定します。 **注記 :** 既定では、移動平均 を選択した場合、**現物在庫の転記** フィールドおよび **資産在庫の転記** フィールドも選択されます。 
 
-2.  **転記**ページの**在庫**タブで、勘定を**移動平均の価格差異**および**移動平均の原価再評価**の勘定に割り当てます。 原価を比例して経費処理する場合は、**移動平均の価格差異**の勘定が使用できます。 これが起きるのは、購買入庫と仕入請求書の原価に差異があるためであり、また元の在庫数量と現在の手持在庫数量に差異があるためです。 製品の移動平均原価を新しい単価に合わせて調整するときは、**移動平均の原価の再評価**の勘定を使用します。
+2.  [**転記**] ページの [**在庫**] タブで、勘定を [**移動平均の価格差異**] および [**移動平均の原価の再評価**] の勘定に割り当てます。原価を比例して経費処理する場合は、 [**移動平均の価格差異**] の勘定が使用できます。 これが起きるのは、購買入庫と仕入請求書の原価に差異があるためであり、また元の在庫数量と現在の手持在庫数量に差異があるためです。 製品の移動平均原価を新しい単価に合わせて調整するときは、**移動平均の原価の再評価**の勘定を使用します。
 3.  **リリースされた製品**ページで、移動平均品目モデル グループを製品に割り当てます。 **注記 :** 在庫決算プロセスは、会計期間のみをクローズします。 これは、品目モデル グループとして割り当てられた移動平均がある製品には影響しません。
 
 ## <a name="convert-to-the-moving-average-costing-method"></a>移動平均原価計算方法への換算

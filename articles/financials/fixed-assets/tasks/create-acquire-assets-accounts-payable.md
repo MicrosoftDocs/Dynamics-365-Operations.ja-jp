@@ -16,17 +16,17 @@ ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: f814d20bc16bb3334ae4bc449cc0d45843487023
+ms.sourcegitcommit: 9149378047fc22efbd401b7af86df07c1403e4f5
+ms.openlocfilehash: cfe920b2ef493ab3ae36a9557001086ed99c3e4e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 10/05/2017
 
 ---
 # <a name="create-and-acquire-assets-from-accounts-payable"></a>買掛金勘定からの資産の作成および取得
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-このタスク ガイドでは、購買プロセスで固定資産を作成し、取得する方法を説明します。  ここでは、経理担当者、買掛金勘定係、デモ会社 USMF を使用します。
+このタスク ガイドでは、購買プロセスで固定資産を作成し、取得する方法を説明します。 ここでは、経理担当者、買掛金勘定係、デモ会社 USMF を使用します。
 
 
 ## <a name="set-fixed-assets-parameters"></a>固定資産パラメーターの設定

@@ -16,13 +16,13 @@ ms.assetid: 9680d977-43c8-47a7-966d-2280ba21402a
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: yuyus
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 387b804cb20ffdc17ad74dac5d927ecbaf421bae
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: fb5c39a65ea59acda05b0828f84bfaea4ad75062
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -52,7 +52,7 @@ ms.lasthandoff: 06/13/2017
 CostAggregatedCostStatementEntryEntity のプライマリ データ ソースは CostStatementCache テーブルです。 この表は、データ セット キャッシュ フレームワークで管理されます。 既定では、テーブルは 24 時間ごとに更新されますが、データ キャッシュのコンフィギュレーションで手動更新を有効にできます。 [**原価管理**] または [**コスト分析**] ワークスペースで手動更新を行うことができます。 CostStatementCache の更新の実行後、サイトで更新されたデータを表示するには Power BI.com の OData 接続を更新する必要があります。 この Power BI コンテンツの差異 (購買、製造) のメジャーは標準原価在庫方式によって評価される品目にのみ関連します。 製造差異は有効な原価と実現原価の差額として計算されます。 製造差異は、製造オーダーに [**終了**] のステータスがあるときに計算されます。 製造差異タイプおよび各タイプの計算方法の詳細については、「[完了した製造オーダーの差異の分析について](https://technet.microsoft.com/en-us/library/gg242850.aspx)」を参照してください。
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI コンテンツへのアクセス
-**原価管理** Power BI コンテンツは PowerBI.com から使用できます。 Microsoft Dynamics 365 for Finance and Operations データの接続および読み込み方法の詳細については、「[PowerBI.com からの Power BI コンテンツへのアクセス](power-bi-home-page.md)」を参照してください。
+**原価管理** Power BI コンテンツは PowerBI.com から使用できます。Microsoft Dynamics 365 for Finance and Operations データの接続および読み込み方法の詳細については、「[PowerBI.com から Power BI コンテンツへのアクセス](power-bi-home-page.md)」を参照してください。
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Power BI コンテンツに含まれるメトリックス
 コンテンツには、レポートのページ一式が含まれます。 各ページは、グラフ、タイル、テーブルとして視覚化される一連のメトリックスで構成されています。 次の表に、**原価管理** Power BI コンテンツの表示の概要を示します。

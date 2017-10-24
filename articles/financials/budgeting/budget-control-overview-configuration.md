@@ -15,13 +15,13 @@ ms.custom: 60493
 ms.assetid: be964167-43bc-431d-9adb-48bff32d68d5
 ms.search.region: Global
 ms.author: sigitac
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
-ms.openlocfilehash: 77d6d9afeb5669c2ae8460f0503e68a3559514ec
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: d8565ec692036d7a9411cb8663d7293d3ab91a44
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -104,7 +104,7 @@ Finance and Operations で予算が承認された後に、予算計画を使用
 
 ### <a name="select-main-accounts"></a>主勘定の選択
 
-**主勘定**が [**パラメーターの定義**] ペーで予算管理分析コードとして選択されていないが、特定の経費が管理されている場合、[**主勘定の選択**] タブで支出を選択できます。 **主勘定**が予算管理分析コードとして選択されている場合、エントリは必要ありません。  
+**主勘定**が [**パラメーターの定義**] ページで予算管理分析コードとして選択されていないものの、特定の経費が管理されている場合、[**主勘定の選択**] タブで支出を選択できます。**主勘定**が予算管理分析コードとして選択されている場合、エントリは必要ありません。  
 
 ### <a name="define-budget-groups"></a>予算グループの定義
 
@@ -116,7 +116,7 @@ Finance and Operations で予算が承認された後に、予算計画を使用
 
 ### <a name="activate-budget-control"></a>予算管理の有効化
 
-予算管理をコンフィギュレーションした後、[**予算管理の有効化**] タブでオンにして有効にできます。 すると、ドラフト バージョンが有効になります。
+予算管理は、コンフィギュレーション後、[**予算管理の有効化**] タブでオンにして有効にできます。すると、ドラフト バージョンが有効になります。
 > [!Important]
 > 予算管理がオンになり有効化されトランザクションが転記された後は、年半ばに無効にしないでください。 予算管理を無効になると、活動が予算管理目的で記録されず、予算チェックが実行されません。 したがって、既に転記されている伝票は、削除された金額、予算管理に関連した照会およびレポートなどの残高を正確に反映していない可能性があります。 これらには、下流の予算管理統計または調整伝票および仕訳帳が含まれます。 
 

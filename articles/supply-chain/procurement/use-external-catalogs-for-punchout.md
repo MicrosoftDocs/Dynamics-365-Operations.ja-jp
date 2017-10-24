@@ -16,13 +16,13 @@ ms.custom: 30211
 ms.assetid: 3c7e0e1c-703c-4bbf-b90c-84d29a131360
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
-ms.openlocfilehash: 01955aefb27bd18809b35fd025c9dd1b8eb70520
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 035c5d15e5508c78dd66a349defd534bfecc96bb
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -42,7 +42,7 @@ ms.lasthandoff: 06/20/2017
 ポリシーの詳細については、「[購買ポリシー](../procurement/purchase-policies.md)」を参照してください。
 
 - 特定の調達カテゴリの外部カタログを検索するには、カタログ検索フィールドにテキストを入力します。
-- 仕入先の Web サイトで仕入先の外部カタログから製品を追加するには、その外部カタログをクリックします。 その後、製品をショッピング カートに追加し、チェックアウトします。 ショッピング カート明細行が Microsoft Dynamics 365 に転送されます。
+- 仕入先の Web サイトで仕入先の外部カタログから製品を追加するには、その外部カタログをクリックします。 その後、製品をショッピング カートに追加し、チェックアウトします。ショッピング カート明細行が Microsoft Dynamics 365 に転送されます。
 
 調達カテゴリの複数のオプションがある場合は、要求に明細行を追加する前に、正しい調達カテゴリを選択します。
 明細行が要求に追加されると、外部カタログを使用せずにさらに明細行を追加することができます。 または、外部カタログを使用して明細行の追加を続行することができます。

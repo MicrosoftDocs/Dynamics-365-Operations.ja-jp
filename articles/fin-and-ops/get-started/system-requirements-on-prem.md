@@ -18,10 +18,10 @@ ms.author: kfend
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 5230911e1febc66b294f1331846373a472789adf
-ms.openlocfilehash: 721c5851cd399398a8dcec5ae110b97a4f17ae0a
+ms.sourcegitcommit: 25a6f326c57e84d6a7c356ac5407be7ed3095f83
+ms.openlocfilehash: 5edc6f0b2240e9dd2d3b72a13f35e96f016aa013
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 10/04/2017
 
 ---
 
@@ -87,7 +87,7 @@ Finance and Operations (オンプレミス) をインストールする場合は
 - 同時ユーザー数
 
 ## <a name="minimum-infrastructure-requirements"></a>最小限のインフラストラクチャ要件
-Finance and Operations (オンプレミス) では、Service Fabric を使用して、AOS、バッチ、データ管理、Management reporter、および環境オーケストレータ サービスをホストします。 Microsoft SQL Server Reporting Services (SSRS) は、Service Fabric クラスターではホストされません。
+Finance and Operations (オンプレミス) では、Service Fabric を使用して、AOS、バッチ、データ管理、Management reporter、および環境オーケストレータ サービスをホストします。 
 
 SQL Server は、生産用として少なくとも 2 つのノードを持つ高可用性 HADRON の設定が必要です。
 
@@ -225,6 +225,12 @@ Finance and Operations (オンプレミス) コンポーネントをインスト
 |------------------------------------------------------------------|-------|
 | Microsoft SQL Server 2016 Standard エディションまたは Enterprise エディション | SQL Server 2016 のハードウェア要件については、「[SQL Server 2016 インストール用のハードウェアおよびソフトウェア要件](/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server)」を参照してください。 |
 
+## <a name="software-requirements-for-application-object-server-aos"></a>Application Object Server (AOS) のソフトウェア要件 
+- SQL Server Integation Services (SSIS)
+
+## <a name="software-requirements-for-reporting-server-bi"></a>レポート サーバー (BI) のソフトウェア要件
+- SQL Server Reporting Services (SSRS)
+
 ## <a name="software-requirements-for-client-computers"></a>クライアント コンピュータのソフトウェア要件
 Finance and Operations Web アプリケーションは、HTML 5.0 に準拠している Web ブラウザーを備えた任意のデバイス上で実行できます。 Microsoft が確認した特定のデバイス / ブラウザーの組み合わせは、次の通りです。
 
@@ -244,7 +250,7 @@ Windows Server 2016 の Active Directory Federation Services (AD FS) は必要�
 ## <a name="supported-microsoft-office-applications"></a>サポートされている Microsoft Office アプリケーション
 次の Microsoft Office アプリケーションは、Finance and Operations のクラウドおよびオンプレミス配置でサポートされています。
 
--   Microsoft Excel と Microsoft Word のアドインを実行するには、Windows か Mac 用の Microsoft Office 2016 をインストールしておく必要があります。 バージョン要求の詳細については、[Office 統合トラブルシューティング](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-troubleshooting) を参照してください。
+-   Microsoft Excel と Microsoft Word のアドインを実行するには、Windows か Mac 用の Microsoft Office 2016 をインストールしておく必要があります。 バージョン要求の詳細については、[Office 統合トラブルシューティング](../../dev-itpro/office-integration/office-integration-troubleshooting.md) を参照してください。
 -   [Excel にエクスポート] または [Word にエクスポート] 機能によって生成されたドキュメントを表示するには、Microsoft Office 2007 以降をインストールしておく必要があります。
  
 ## <a name="hardware-and-software-requirements-for-retail-components"></a>小売コンポーネントのハードウェアおよびソフトウェア要件

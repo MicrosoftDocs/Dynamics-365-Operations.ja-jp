@@ -14,11 +14,11 @@ ms.search.scope:
 ms.assetid: 
 ms.search.region: Global
 ms.author: bking
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
-ms.openlocfilehash: e105c4b171979a03c20718c1fa9d558c921cd704
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 447fd87cb2f71147d7a9f6476f4ed9e12d75640a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -37,7 +37,7 @@ ms.lasthandoff: 06/20/2017
 
 ### <a name="summary-tiles"></a>概要タイル
 
-[**概要**] タイルはプロセスの概要を示し、インジケーターがデータ検証プロセスを順調に進めるのに役立ちます。 そのプロセスについて、すべての残余タスク、完了タスク、進行中のタスク、および開始されていないタスクを表示できます。 この情報は、選択されたデータ検証プロジェクトに含まれるすべての会社で使用されます。
+[**概要**] タイルはプロセスの概要を示し、インジケーターがデータ検証プロセスを順調に進めるのに役立ちます。そのプロセスについて、すべての残余タスク、完了タスク、進行中のタスク、および開始されていないタスクを表示できます。 この情報は、選択されたデータ検証プロジェクトに含まれるすべての会社で使用されます。
 
 ### <a name="tasks-and-status-section"></a>タスクと状態のセクション
 

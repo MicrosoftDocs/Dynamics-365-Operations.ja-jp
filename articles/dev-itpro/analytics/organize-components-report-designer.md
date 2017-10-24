@@ -16,13 +16,13 @@ ms.custom: 59161
 ms.assetid: 32e728c5-3b06-4049-8070-ade01e951d49
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: a8739f426c401aacbab56179bad429a231060f57
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: fade9e2acdb94daa6a908d949c578fd7ed439882
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -106,7 +106,7 @@ ms.lasthandoff: 05/25/2017
 <td>詳細レベル</td>
 <td>レポートが含む詳細レベルを指定します。
 <ul>
-<li>[<strong>財務</strong>] − 上位レベル集計レポート。 レポート ツリーに追加された勘定および分析コード以外、勘定および分析コードにドリルダウンできません。</li>
+<li><strong>財務</strong>− 高レベルの集計レポート。 レポート ツリーに追加された勘定および分析コード以外、勘定および分析コードにドリルダウンできません。</li>
 <li>[<strong>財務&amp; 勘定</strong>] ー 上位レベルの集計および勘定の詳細を含むレポート。</li>
 <li>[[<strong>財務、勘定、&amp; トランザクション</strong>] ー 上位レベルの集計およびトランザクションの詳細を含むレポート。</li>
 </ul></td>
@@ -122,7 +122,7 @@ ms.lasthandoff: 05/25/2017
 </tr>
 <tr class="odd">
 <td>[すべてのレポート通貨を含める]</td>
-<td>Microsoft Dynamics ERP システムでコンフィギュレーションされている追加のレポート通貨は、ここに記載されます。 このチェック ボックスを選択して、指定された通貨で追加のレポートを生成します。 Web ビューアでこれらのレポートを表示するには、[<strong>通貨</strong>] ボタンをクリックし、通貨を選択します。</td>
+<td>Microsoft Dynamics ERP システムでコンフィギュレーションされている追加のレポート通貨は、ここに記載されます。 このチェック ボックスを選択して、指定された通貨で追加のレポートを生成します。 これらのレポートをWeb ビューアーで表示する場合は、[<strong>通貨</strong>] ボタンをクリックして通貨を選択します。</td>
 </tr>
 <tr class="even">
 <td>[レポート定義への日付情報の未保存]</td>
@@ -144,8 +144,8 @@ ms.lasthandoff: 05/25/2017
 <td>[グループのレポート]</td>
 <td>レポート グループのレポートを追加、削除、再発注します。
 <ul>
-<li>レポート定義をレポート グループに追加するには、レポート グループをダブルクリックして開き、[<strong>追加</strong>] をクリックします。 レポート グループに含めるレポートを選択し、[<strong>OK</strong>] をクリックします。</li>
-<li>レポート グループからレポートを削除するには、それを選択してから、[<strong>削除</strong>] をクリックします。</li>
+<li>レポート グループにレポート定義を追加するには、レポート グループをダブルクリックして開き、[<strong>追加</strong>] をクリックします。 レポート グループに含めるレポートを選択し、[<strong>OK</strong>] をクリックします。</li>
+<li>レポート グループからレポートを削除するには、そのレポートを選択し、[<strong>削除</strong>] をクリックします。</li>
 <li>レポートを生成する順序を変更するには、リストからレポートを選択して、[<strong>上へ移動</strong>] または [<strong>下へ移動</strong>] をクリックします。</li>
 </ul></td>
 </tr>

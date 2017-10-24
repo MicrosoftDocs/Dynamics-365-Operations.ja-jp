@@ -16,13 +16,13 @@ ms.custom: 3421
 ms.assetid: f5187c21-eec5-4148-b178-b8a5feff7f23
 ms.search.region: Global
 ms.author: saraschi
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: aaacf596f2ea1107a53647d779e9d2b6c37ab530
 ms.contentlocale: ja-jp
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -48,7 +48,7 @@ ms.lasthandoff: 07/27/2017
     -   会計用の帳簿: VM 1、現在の転記階層
     -   税務用の帳簿: VM 2、税の転記階層
 
-2.  VM 1 で、[派生帳簿] タブをクリックします。 [帳簿] フィールドで VM 2 を選択し、[トランザクション タイプ] フィールドで [取得] を選択します。
+2.  [VM 1] で、[派生帳簿] タブをクリックします。[帳簿] フィールドで [VM 2] を、[トランザクション タイプ] フィールドで [取得] を選択します。
 
 これにより、特定の固定資産に帳簿を関連付けることができるようになります。 
 

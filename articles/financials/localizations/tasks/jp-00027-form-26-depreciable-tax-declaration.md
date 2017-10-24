@@ -16,10 +16,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 9eb93975848177d07b7ba9dba8c5f89dbc652137
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 3e6bc8267c6adb9e82f0c11885b211be3bd75c9a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 # <a name="form-26-for-depreciable-tax-declaration-japan"></a>減価償却税申告のフォーム 26 (日本)
