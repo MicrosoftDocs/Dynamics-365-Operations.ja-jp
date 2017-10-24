@@ -18,13 +18,15 @@ ms.author: kfend
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 5230911e1febc66b294f1331846373a472789adf
-ms.openlocfilehash: 4399dc7374ae11f2eca3add37b60c50574dfad9d
+ms.sourcegitcommit: 61395e0e57eb02aaa1c95a7dbd9c15082b822701
+ms.openlocfilehash: 15992b1666caea21cdcf440fefcf65ff18111801
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 10/05/2017
 
 ---
 # <a name="on-premises-deployment-landing-page"></a>オンプレミス配置のランディング ページ
+
+[!include[banner](../includes/banner.md)]
 
 Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (オンプレミス型) を配置できます。 オンプレミスの配置タイプを選択すると、システム要件、ハードウェアのサイジング、および機能がクラウド展開と異なります。 このトピックでは、オンプレミス展開に固有の情報を含むコンテンツへのリンクを提供します。
 
@@ -32,10 +34,10 @@ Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (オンプ
 
 ## <a name="get-started"></a>使用開始
 - [Dynamics 365 for Finance and Operations, Enterprise edition (オンプレミス) の概要](on-premises-overview.md)
-- [オンプレミス配置のシステム要件](../get-started/system-requirements-on-prem.md)
-- [オンプレミス環境のハードウェアのサイズ設定](../get-started/hardware-sizing-on-premises-environments.md)
+- [オンプレミス配置のシステム要件](../../fin-and-ops/get-started/system-requirements-on-prem.md)
+- [オンプレミス環境のハードウェアのサイズ設定](../../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md)
 - [オンライン サービスおよびオンプレミス ソフトウェアのライフサイクル ポリシー](../migration-upgrade/versions-update-policy.md)
-- [Dynamics 365 for Finance and Operations, Enterprise edition (オンプレミス) の購入](../get-started/purchase-on-premises.md)
+- [Dynamics 365 for Finance and Operations, Enterprise edition (オンプレミス) の購入](../../fin-and-ops/get-started/purchase-on-premises.md)
 
 ## <a name="onboard"></a>Onboard
 - [Lifecycle Services でのオンプレミス プロジェクトの作成](../lifecycle-services/lbd-create-lcs-on-prem-project.md)
@@ -44,14 +46,14 @@ Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (オンプ
 - [カスタム モデルの開発とオンプレミス環境への配置](develop-deploy-custom-models-on-premises.md)
 
 ## <a name="work-in-your-on-premises-deployment"></a>オンプレミス配置で作業する
-- [ドキュメント管理のコンフィギュレーション](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-document-management)
+- [ドキュメント管理のコンフィギュレーション](../../fin-and-ops/organization-administration/configure-document-management.md)
 - [電子申告コンフィギュレーションのインポート](../analytics/electronic-reporting-import-ger-configurations.md)
 - [オンプレミス配置でのドキュメントの生成、発行、および印刷機能](../analytics/printing-capabilities-on-premises.md)
 - [テクニカル サポートの設定](../lifecycle-services/support-experience.md)
 - [クライアントのインターネット接続のトラブルシューティング](../user-interface/client-disconnected.md)
 
 ## <a name="other-resources"></a>その他のリソース
-- [オンプレミス配置で実装されていない機能](../get-started/features-not-implemented-on-prem.md)
+- [オンプレミス配置で実装されていない機能](../../fin-and-ops/get-started/features-not-implemented-on-prem.md)
 - [削除予定の機能](../migration-upgrade/deprecated-features.md)
  
 

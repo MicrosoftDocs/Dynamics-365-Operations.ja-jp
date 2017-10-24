@@ -17,11 +17,11 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 52a16be4b07eafb493c7fd7ad52a6d9d1bb9ee89
-ms.openlocfilehash: 77049ba4c9c39cd44f1919b672deaf700b91357d
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: e886411421fda17bb67f8ecedc1f7f3420e1fa72
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -570,7 +570,7 @@ ServiceOPOS レジストリ内では、設定されているデバイスは OPOS
 -   クロスオリジンのリソース共有を無効にし、許可され承認されたオリジンを指定する必要があります。
 -   ハードウェア ステーションを実行するコンピュータで使用する証明書の取得には、信頼された証明機関のみを使用してください。
 
-***注記:** IIS と Payment Card Industry (PCI) 要件のセキュリティ ガイドラインを確認することが非常に重要です。
+**注記:** IIS と Payment Card Industry (PCI) 要件のセキュリティ ガイドラインを確認することが非常に重要です。
 
 ## <a name="peripheral-simulator"></a>周辺機器シミュレーター
 詳細については、[Retail 周辺機器シミュレーター](dev-itpro/retail-peripheral-simulator.md) を参照してください。

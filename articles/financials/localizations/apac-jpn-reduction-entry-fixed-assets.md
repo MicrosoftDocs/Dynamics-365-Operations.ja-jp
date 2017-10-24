@@ -18,10 +18,10 @@ ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: cb5ab0e64b2a663af627d4d46e3a74aa526058b8
-ms.openlocfilehash: 6ab9a786a5f181a2bfd0bc6d0b6af270fc043382
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 8afa215915606fe3924a640ee629ae5a6f8f7286
 ms.contentlocale: ja-jp
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 

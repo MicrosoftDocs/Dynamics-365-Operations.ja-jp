@@ -18,10 +18,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
-ms.openlocfilehash: cbd099403f48b502ca74bcb38ae12decedb8f2da
+ms.sourcegitcommit: 9036b7f9863871915f9ad39d76bf027ae4c2f4bf
+ms.openlocfilehash: aee8db8ddaeac135ed1f9d8b1b8a621609c6d358
 ms.contentlocale: ja-jp
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 10/05/2017
 
 ---
 
@@ -34,9 +34,9 @@ ms.lasthandoff: 07/27/2017
 
 [**仕入先コラボレーション**] モジュールは、Microsoft Dynamics 365 for Finance and Operations での電子データ交換 (EDI) の統合がない仕入先が対象とします。 仕入先は、発注書、請求書、および委託販売在庫情報で作業できます。 このトピックでは、仕入先コラボレーション インタフェースを使用して、発注書および委託販売在庫を使用している外部仕入先とコラボレーションする方法について説明します。 また、特定の仕入先が仕入先コラボレーションを使用できるようにする方法、すべての仕入先が発注書に応答する際に表示する情報を定義する方法についても説明します。 外部仕入先が仕入先コラボレーション インタフェースで実行する内容の詳細については、「[顧客との仕入先コラボレーション](vendor-collaboration-work-customers-dynamics-365-operations.md)」を参照してください。  
 
-仕入先が請求プロセスで仕入先コラボレーションを使用する方法の詳細については、「[仕入先コラボレーションの請求ワークスペース](/dynamics365/unified-operations/financials/accounts-payable/vendor-portal-invoicing-workspace)」を参照してください。 新しい仕入先コラボレーション ユーザーをプロビジョニングする方法の詳細については、「[仕入先コラボレーション ユーザーの管理](manage-vendor-collaboration-users.md)」を参照してください。
+仕入先が請求プロセスで仕入先コラボレーションを使用する方法の詳細については、「[仕入先コラボレーションの請求ワークスペース](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md)」を参照してください。 新しい仕入先コラボレーション ユーザーをプロビジョニングする方法の詳細については、「[仕入先コラボレーション ユーザーの管理](manage-vendor-collaboration-users.md)」を参照してください。
 
-仕入先が請求プロセスで仕入先コラボレーションを使用する方法の詳細については、「[仕入先コラボレーションの請求ワークスペース](/dynamics365/unified-operations/financials/accounts-payable/vendor-portal-invoicing-workspace)」を参照してください。 
+仕入先が請求プロセスで仕入先コラボレーションを使用する方法の詳細については、「[仕入先コラボレーションの請求ワークスペース](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md)」を参照してください。 
 
 新しい仕入先コラボレーション ユーザーをプロビジョニングする方法の詳細については、「[仕入先コラボレーション ユーザーの管理](manage-vendor-collaboration-users.md)」を参照してください。
 
@@ -131,7 +131,7 @@ Finance and Operations の仕入先コラボレーションの全般的な設定
 
 ### <a name="cancelling-a-po"></a>注文書のキャンセル
 
-発注書をキャンセルすると、状態が**承認済**に変更されます。 発注書は、仕入先が取消を確認または否認できるように、仕入先ポータルで仕入先に返送する必要があります。 取消が確認されると、発注書は、仕入先の確認済の発注書の一覧で**キャンセル済**として表示されます。
+発注書をキャンセルすると、状態が**承認済**に変更されます。 仕入先が取消を確認、または否認できるように、仕入先に発注書を返送する必要があります。 取消が確認されると、発注書は、仕入先の確認済の発注書の一覧で**キャンセル済**として表示されます。
 
 ### <a name="adding-attachments-to-a-po"></a>注文書に添付ファイルを追加
 
