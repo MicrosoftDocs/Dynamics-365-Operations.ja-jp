@@ -1,0 +1,44 @@
+---
+title: "シリアル化された製品の POS 改善"
+description: "このトピックでは、時間の節約および生産性を向上するため、シリアル化された製品に対して実行された改善を一覧にします。"
+author: ShalabhjainMSFT
+manager: AnnBe
+ms.date: 06/20/2017
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+audience: Application User
+ms.reviewer: josaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
+ms.search.region: Global
+ms.search.industry: Retail
+ms.author: shajain
+ms.search.validFrom: 2017-08-01
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 214452d0f40265c0ed9fac7a74844ad89782257d
+ms.contentlocale: ja-jp
+ms.lasthandoff: 09/29/2017
+
+---
+
+# <a name="pos-improvements-for-serialized-products"></a><span data-ttu-id="4ad1a-103">シリアル化された製品の POS 改善</span><span class="sxs-lookup"><span data-stu-id="4ad1a-103">POS improvements for serialized products</span></span>
+
+[!include[banner](includes/banner.md)]
+
+## <a name="overview"></a><span data-ttu-id="4ad1a-104">概要</span><span class="sxs-lookup"><span data-stu-id="4ad1a-104">Overview</span></span> 
+<span data-ttu-id="4ad1a-105">小売用バックオフィスでの設定に基づいて、製品はシリアル化またはシリアル化されていないとして分類されます。</span><span class="sxs-lookup"><span data-stu-id="4ad1a-105">Based on the settings in Retail headquarters, products can be classified as either serialized or non-serialized.</span></span> <span data-ttu-id="4ad1a-106">製品がシリアル化されるとき場合、各品目には保証の追跡、追跡項目、および所有権の確認を助ける固有の番号が割り当てられます。</span><span class="sxs-lookup"><span data-stu-id="4ad1a-106">When products are serialized, each item can be assigned a unique number that helps track warranties, trace items, and confirm ownership.</span></span> <span data-ttu-id="4ad1a-107">シリアル化された製品のシリアル番号を提供する機能は Modern/クラウド販売時点管理 (POS) に存在していますが、レジ担当者が時間の節約および生産性を向上するのに役立つよう、いくつかの改善点が加えられています。</span><span class="sxs-lookup"><span data-stu-id="4ad1a-107">Although, the ability to provide serial numbers for serialized products existed in our Modern/Cloud Point of Sale (POS), some improvements have been added to help cashiers save time and be more productive.</span></span>  
+
+## <a name="pos-improvements"></a><span data-ttu-id="4ad1a-108">POS 改善</span><span class="sxs-lookup"><span data-stu-id="4ad1a-108">POS improvements</span></span>
+
+- <span data-ttu-id="4ad1a-109">[**チェックアウトまでシリアル番号は必要ありません**] – 以前には、トランザクションにシリアル化された製品を追加したレジ担当者が、シリアル番号を提供する必要がありました。</span><span class="sxs-lookup"><span data-stu-id="4ad1a-109">**Serial numbers aren't required until checkout** – Previously, a cashier who added a serialized product to the transaction was required to provide a serial number.</span></span> <span data-ttu-id="4ad1a-110">この要件は、レジ担当者および店員に製品のアップセルの機会があった場合、クライアンテリング シナリオでの問題点となりました。</span><span class="sxs-lookup"><span data-stu-id="4ad1a-110">This requirement became an issue in clienteling scenarios, if cashiers and sales associates had an opportunity to up-sell products.</span></span> <span data-ttu-id="4ad1a-111">支払ステップまで、多くの場合、製品がカートで更新されていました。</span><span class="sxs-lookup"><span data-stu-id="4ad1a-111">Until the payment step, the products were often updated in the cart.</span></span> <span data-ttu-id="4ad1a-112">したがって、レジ担当者が新しい製品を追加するたびに、システムはそのシリアル番号のメッセージを表示していました。</span><span class="sxs-lookup"><span data-stu-id="4ad1a-112">Therefore, every time that a cashier added a new product, the system prompted him or her for the serial number.</span></span> <span data-ttu-id="4ad1a-113">シリアル番号ダイアログ ボックスには、[**後で追加**] ボタンが含まれています。</span><span class="sxs-lookup"><span data-stu-id="4ad1a-113">The serial number dialog box now includes an **Add later** button.</span></span> <span data-ttu-id="4ad1a-114">したがって、店員はトランザクションに品目を追加できますが、後でシリアル番号を提供できます。</span><span class="sxs-lookup"><span data-stu-id="4ad1a-114">Therefore, the sales associates can add the item to the transaction but can provide the serial number later.</span></span> <span data-ttu-id="4ad1a-115">店員は、カートにシリアル化された品目をすばやく追加し置き換えることができ、次にチェックアウトの前にシリアル番号を提供できます。</span><span class="sxs-lookup"><span data-stu-id="4ad1a-115">Sales associates can quickly add and replace serialized items in the cart, and then provide the serial number just before checkout.</span></span> <span data-ttu-id="4ad1a-116">任意のシリアル化された製品のシリアル番号が提供されていない場合、トランザクションを完了しようとするレジ担当者はエラー メッセージを受け取ります。</span><span class="sxs-lookup"><span data-stu-id="4ad1a-116">If the serial number isn't provided for any serialized product, a cashier who tries to complete the transaction receives an error message.</span></span> <span data-ttu-id="4ad1a-117">このメッセージは、レジ担当者が続行する前に、欠落しているシリアル番号を提供する必要があることを示します。</span><span class="sxs-lookup"><span data-stu-id="4ad1a-117">This messages that states that the cashier must provide the missing serial numbers before he or she can continue.</span></span>
+
+    <span data-ttu-id="4ad1a-118">シリアル番号がスキップされたシリアル化された各品目については、トランザクション明細行の下で、コメントが表示されます。</span><span class="sxs-lookup"><span data-stu-id="4ad1a-118">For each serialized item where the serial number was skipped, a comment appears under the transaction line.</span></span> <span data-ttu-id="4ad1a-119">このコメントは、品目用のシリアル番号が指定されていないことを示します。</span><span class="sxs-lookup"><span data-stu-id="4ad1a-119">This comment states that the serial number hasn't been provided for the item.</span></span> <span data-ttu-id="4ad1a-120">したがって、レジ担当者は、シリアル番号のない品目をすばやく見つけることができます。</span><span class="sxs-lookup"><span data-stu-id="4ad1a-120">Therefore, the cashier can quickly find items that are missing a serial number.</span></span>
+
+    <span data-ttu-id="4ad1a-121">新しい [**シリアル番号の追加**] オプションは、シリアル番号のない品目のシリアル番号も提供します。</span><span class="sxs-lookup"><span data-stu-id="4ad1a-121">A new **Add serial number** operation also provides the serial number for items that are missing a serial number.</span></span> <span data-ttu-id="4ad1a-122">シリアル番号が提供された後は、編集できません。</span><span class="sxs-lookup"><span data-stu-id="4ad1a-122">After the serial number is provided, it can't be edited.</span></span> <span data-ttu-id="4ad1a-123">レジ担当者は明細行を無効化し、もう一度製品を追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="4ad1a-123">The cashier must void the line and add the product again.</span></span> 
+    
+- <span data-ttu-id="4ad1a-124">[**シリアル番号は顧客注文をするために必要ではありません**] – 顧客注文は 1 つの店舗で実行され別の店舗で達成されます。</span><span class="sxs-lookup"><span data-stu-id="4ad1a-124">**Serial numbers aren't required in order to place customer orders** – Customer orders can be placed in one store and fulfilled from another.</span></span> <span data-ttu-id="4ad1a-125">顧客注文を実行するレジ担当者は、シリアル番号を提供する必要がありません。</span><span class="sxs-lookup"><span data-stu-id="4ad1a-125">A cashier who places a customer order doesn't have to provide the serial number.</span></span> <span data-ttu-id="4ad1a-126">ピッキングまたは集荷手順の際、シリアル番号が提供されます。</span><span class="sxs-lookup"><span data-stu-id="4ad1a-126">The serial number will be provided during the picking or pickup step.</span></span> <span data-ttu-id="4ad1a-127">ただし、[**実行**] 配送タイプが選択されているすべての明細行品目のシリアル番号が提供される必要があります。</span><span class="sxs-lookup"><span data-stu-id="4ad1a-127">However, a serial number must be provided for all line items that the **Carry out** delivery type is selected for.</span></span> <span data-ttu-id="4ad1a-128">それ以外の場合、トランザクションを完了することはできません。</span><span class="sxs-lookup"><span data-stu-id="4ad1a-128">Otherwise, the transaction can't be completed.</span></span>    
+- <span data-ttu-id="4ad1a-129">[**シリアル化された製品は、トランザクション画面で集計されません**] – [**機能プロファイル**] ページの [**ターミナル**] フィールド グループでの [**製品の集計**] 設定は、トランザクション画面でシリアル化されていない同じ製品を集計できるようにします。</span><span class="sxs-lookup"><span data-stu-id="4ad1a-129">**Serialized products aren't aggregated on the transaction screen** – The **Aggregate products** setting in the **Terminal** field group on the **Functionality profile** page lets you aggregate the same non-serialized products on the transaction screen.</span></span> <span data-ttu-id="4ad1a-130">同じ商品を集計すると、トランザクション グリッドで簡単に確認できます。</span><span class="sxs-lookup"><span data-stu-id="4ad1a-130">When the same products are aggregated, they are easier to see in the transaction grid.</span></span> <span data-ttu-id="4ad1a-131">ただし、通常シリアル番号は固有であるため、店員はチェック アウトまでシリアル番号を入力する必要がなく、[**製品の集計**] 設定はシリアル化された製品には適用されません。</span><span class="sxs-lookup"><span data-stu-id="4ad1a-131">However, because serial numbers are generally unique, and sales associates don't have to enter serial numbers until checkout, the **Aggregate products** setting doesn't apply to serialized products.</span></span> <span data-ttu-id="4ad1a-132">したがって、[**製品の集計**] 設定が選択されると、シリアル化された製品はトランザクション画面に集計されません。</span><span class="sxs-lookup"><span data-stu-id="4ad1a-132">Therefore, serialized products won't be aggregated on the transaction screen if the **Aggregate products** setting is selected.</span></span>
+

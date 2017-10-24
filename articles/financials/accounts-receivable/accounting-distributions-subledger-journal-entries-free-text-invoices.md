@@ -18,34 +18,34 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: 6485642d27156dfb37f9e30335369e3287f92148
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/29/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
-# <a name="accounting-distributions-and-subledger-journal-entries-for-free-text-invoices"></a><span data-ttu-id="8a401-104">自由書式の請求書の勘定配布と補助元帳仕訳</span><span class="sxs-lookup"><span data-stu-id="8a401-104">Accounting distributions and subledger journal entries for free text invoices</span></span>
+# <a name="accounting-distributions-and-subledger-journal-entries-for-free-text-invoices"></a><span data-ttu-id="729d4-104">自由書式の請求書の勘定配布と補助元帳仕訳</span><span class="sxs-lookup"><span data-stu-id="729d4-104">Accounting distributions and subledger journal entries for free text invoices</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-<span data-ttu-id="8a401-105">勘定配布は収益、税金、雑費などの金額がどのように自由書式の請求書に計上されるかを定義するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="8a401-105">Accounting distributions are used to define how an amount will be accounted for, such as how the revenue, tax, or charges will be accounted for on a free text invoice.</span></span> <span data-ttu-id="8a401-106">自由書式の請求書が仕訳されたときに計上する必要のあるすべての金額に勘定配布があります。</span><span class="sxs-lookup"><span data-stu-id="8a401-106">Every amount that must be accounted for when the free text invoice is journalized will have one or more accounting distributions.</span></span>
+<span data-ttu-id="729d4-105">勘定配布は収益、税金、雑費などの金額がどのように自由書式の請求書に計上されるかを定義するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="729d4-105">Accounting distributions are used to define how an amount will be accounted for, such as how the revenue, tax, or charges will be accounted for on a free text invoice.</span></span> <span data-ttu-id="729d4-106">自由書式の請求書が仕訳されたときに計上する必要のあるすべての金額に勘定配布があります。</span><span class="sxs-lookup"><span data-stu-id="729d4-106">Every amount that must be accounted for when the free text invoice is journalized will have one or more accounting distributions.</span></span>
 
-<a name="accounting-distributions"></a><span data-ttu-id="8a401-107">勘定配布</span><span class="sxs-lookup"><span data-stu-id="8a401-107">Accounting distributions</span></span>
+<a name="accounting-distributions"></a><span data-ttu-id="729d4-107">勘定配布</span><span class="sxs-lookup"><span data-stu-id="729d4-107">Accounting distributions</span></span>
 ------------------------
 
-<span data-ttu-id="8a401-108">自由書式の請求書ページで次のボタンを使用して、自由書式の請求の各金額の勘定配布を表示すること、また場合によっては変更することができます。</span><span class="sxs-lookup"><span data-stu-id="8a401-108">You can use the following buttons in the Free text invoice page to view, and possibly change, the accounting distributions for each amount on the free text invoice.</span></span>
+<span data-ttu-id="729d4-108">自由書式の請求書ページで次のボタンを使用して、自由書式の請求の各金額の勘定配布を表示すること、また場合によっては変更することができます。</span><span class="sxs-lookup"><span data-stu-id="729d4-108">You can use the following buttons in the Free text invoice page to view, and possibly change, the accounting distributions for each amount on the free text invoice.</span></span>
 
--   <span data-ttu-id="8a401-109">**金額の配分**—税または請求金額などの明細行と子明細行の勘定配布を表示または変更します。</span><span class="sxs-lookup"><span data-stu-id="8a401-109">**Distribute amounts**—View and change the accounting distributions for an individual line and any child lines, such as taxes or charges.</span></span> <span data-ttu-id="8a401-110">売上税トランザクション ページまたは諸費用トランザクション ページから子明細行の勘定配布を直接表示または変更することもできます。</span><span class="sxs-lookup"><span data-stu-id="8a401-110">You can also view and change the accounting distributions for the child line directly from the Sales tax transactions page or the Charges transactions page.</span></span>
-    -   <span data-ttu-id="8a401-111">請求金額または通貨の丸めなど、自由書式の請求書ヘッダーの金額を変更します。</span><span class="sxs-lookup"><span data-stu-id="8a401-111">Change free text invoice header amounts, such as charges or currency rounding amounts.</span></span>
-    -   <span data-ttu-id="8a401-112">自由書式の請求明細行金額を変更します。</span><span class="sxs-lookup"><span data-stu-id="8a401-112">Change free text invoice line amounts.</span></span>
--   <span data-ttu-id="8a401-113">**配分の表示**—すべての伝票の明細行の勘定配布を表示します。</span><span class="sxs-lookup"><span data-stu-id="8a401-113">**View distributions**—View the accounting distributions for all lines on the document.</span></span> <span data-ttu-id="8a401-114">このビューで勘定配布を変更できません。</span><span class="sxs-lookup"><span data-stu-id="8a401-114">You can't change the accounting distributions from this view.</span></span>
-    -   <span data-ttu-id="8a401-115">表示のヘッダーと明細金額。</span><span class="sxs-lookup"><span data-stu-id="8a401-115">View header and line amounts.</span></span>
+-   <span data-ttu-id="729d4-109">**金額の配分**—税または請求金額などの明細行と子明細行の勘定配布を表示または変更します。</span><span class="sxs-lookup"><span data-stu-id="729d4-109">**Distribute amounts**—View and change the accounting distributions for an individual line and any child lines, such as taxes or charges.</span></span> <span data-ttu-id="729d4-110">売上税トランザクション ページまたは諸費用トランザクション ページから子明細行の勘定配布を直接表示または変更することもできます。</span><span class="sxs-lookup"><span data-stu-id="729d4-110">You can also view and change the accounting distributions for the child line directly from the Sales tax transactions page or the Charges transactions page.</span></span>
+    -   <span data-ttu-id="729d4-111">請求金額または通貨の丸めなど、自由書式の請求書ヘッダーの金額を変更します。</span><span class="sxs-lookup"><span data-stu-id="729d4-111">Change free text invoice header amounts, such as charges or currency rounding amounts.</span></span>
+    -   <span data-ttu-id="729d4-112">自由書式の請求明細行金額を変更します。</span><span class="sxs-lookup"><span data-stu-id="729d4-112">Change free text invoice line amounts.</span></span>
+-   <span data-ttu-id="729d4-113">**配分の表示**—すべての伝票の明細行の勘定配布を表示します。</span><span class="sxs-lookup"><span data-stu-id="729d4-113">**View distributions**—View the accounting distributions for all lines on the document.</span></span> <span data-ttu-id="729d4-114">このビューで勘定配布を変更できません。</span><span class="sxs-lookup"><span data-stu-id="729d4-114">You can't change the accounting distributions from this view.</span></span>
+    -   <span data-ttu-id="729d4-115">表示のヘッダーと明細金額。</span><span class="sxs-lookup"><span data-stu-id="729d4-115">View header and line amounts.</span></span>
 
-## <a name="distributing-amounts"></a><span data-ttu-id="8a401-116">金額の配分</span><span class="sxs-lookup"><span data-stu-id="8a401-116">Distributing amounts</span></span>
-<span data-ttu-id="8a401-117">自由書式の請求書を入力すると、各金額は次のように配分されます。</span><span class="sxs-lookup"><span data-stu-id="8a401-117">When you enter a free text invoice, each amount will be distributed as follows.</span></span>
+## <a name="distributing-amounts"></a><span data-ttu-id="729d4-116">金額の配分</span><span class="sxs-lookup"><span data-stu-id="729d4-116">Distributing amounts</span></span>
+<span data-ttu-id="729d4-117">自由書式の請求書を入力すると、各金額は次のように配分されます。</span><span class="sxs-lookup"><span data-stu-id="729d4-117">When you enter a free text invoice, each amount will be distributed as follows.</span></span>
 
 <table>
 <colgroup>
@@ -55,86 +55,86 @@ ms.lasthandoff: 08/29/2017
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="8a401-118">金額のタイプ</span><span class="sxs-lookup"><span data-stu-id="8a401-118">Type of monetary amount</span></span></th>
-<th><span data-ttu-id="8a401-119">主勘定の表示元</span><span class="sxs-lookup"><span data-stu-id="8a401-119">Where the main account is displayed from</span></span></th>
-<th><span data-ttu-id="8a401-120">表示される既定の財務分析コードを決定する優先順位</span><span class="sxs-lookup"><span data-stu-id="8a401-120">Order of priority that determines which default financial dimension is displayed</span></span></th>
+<th><span data-ttu-id="729d4-118">金額のタイプ</span><span class="sxs-lookup"><span data-stu-id="729d4-118">Type of monetary amount</span></span></th>
+<th><span data-ttu-id="729d4-119">主勘定の表示元</span><span class="sxs-lookup"><span data-stu-id="729d4-119">Where the main account is displayed from</span></span></th>
+<th><span data-ttu-id="729d4-120">表示される既定の財務分析コードを決定する優先順位</span><span class="sxs-lookup"><span data-stu-id="729d4-120">Order of priority that determines which default financial dimension is displayed</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span data-ttu-id="8a401-121">自由書式の請求明細行</span><span class="sxs-lookup"><span data-stu-id="8a401-121">Free text invoice line</span></span></td>
-<td><span data-ttu-id="8a401-122">自由書式の請求明細行の勘定科目。</span><span class="sxs-lookup"><span data-stu-id="8a401-122">The ledger account on the free text invoice line.</span></span></td>
+<td><span data-ttu-id="729d4-121">自由書式の請求明細行</span><span class="sxs-lookup"><span data-stu-id="729d4-121">Free text invoice line</span></span></td>
+<td><span data-ttu-id="729d4-122">自由書式の請求明細行の勘定科目。</span><span class="sxs-lookup"><span data-stu-id="729d4-122">The ledger account on the free text invoice line.</span></span></td>
 <td><ol>
-<li><span data-ttu-id="8a401-123">主勘定が配賦勘定の場合、配賦勘定定義の既定値を使用します。</span><span class="sxs-lookup"><span data-stu-id="8a401-123">If the main account is an allocation account, use the default value from the allocation account definition.</span></span></li>
-<li><span data-ttu-id="8a401-124">主勘定が配賦勘定でない場合は、自由書式の請求明細行の財務分析コードの既定のテンプレートを使用します。</span><span class="sxs-lookup"><span data-stu-id="8a401-124">If the main account is not an allocation account, use the financial dimension default template on the free text invoice line.</span></span></li>
-<li><span data-ttu-id="8a401-125">自由書式の請求明細行の既定の財務分析コードの値を使用します。</span><span class="sxs-lookup"><span data-stu-id="8a401-125">Use the default financial dimension values on the free text invoice line.</span></span></li>
-<li><span data-ttu-id="8a401-126">勘定科目表ページで、勘定科目の既定の財務分析コードの値を使用します。</span><span class="sxs-lookup"><span data-stu-id="8a401-126">Use the default financial dimension values from the ledger account in the Chart of accounts page.</span></span></li>
+<li><span data-ttu-id="729d4-123">主勘定が配賦勘定の場合、配賦勘定定義の既定値を使用します。</span><span class="sxs-lookup"><span data-stu-id="729d4-123">If the main account is an allocation account, use the default value from the allocation account definition.</span></span></li>
+<li><span data-ttu-id="729d4-124">主勘定が配賦勘定でない場合は、自由書式の請求明細行の財務分析コードの既定のテンプレートを使用します。</span><span class="sxs-lookup"><span data-stu-id="729d4-124">If the main account is not an allocation account, use the financial dimension default template on the free text invoice line.</span></span></li>
+<li><span data-ttu-id="729d4-125">自由書式の請求明細行の既定の財務分析コードの値を使用します。</span><span class="sxs-lookup"><span data-stu-id="729d4-125">Use the default financial dimension values on the free text invoice line.</span></span></li>
+<li><span data-ttu-id="729d4-126">勘定科目表ページで、勘定科目の既定の財務分析コードの値を使用します。</span><span class="sxs-lookup"><span data-stu-id="729d4-126">Use the default financial dimension values from the ledger account in the Chart of accounts page.</span></span></li>
 </ol></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="8a401-127">固定資産番号と価値モデルの組み合わせの自由書式の請求明細行</span><span class="sxs-lookup"><span data-stu-id="8a401-127">Free text invoice line for a fixed asset number and value model combination</span></span>
+<td><span data-ttu-id="729d4-127">固定資産番号と価値モデルの組み合わせの自由書式の請求明細行</span><span class="sxs-lookup"><span data-stu-id="729d4-127">Free text invoice line for a fixed asset number and value model combination</span></span>
 <div class="alert">
 <table>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="8a401-128"><strong>メモ </strong></span><span class="sxs-lookup"><span data-stu-id="8a401-128"><strong>Note</strong></span></span></th>
+<th><span data-ttu-id="729d4-128"><strong>メモ </strong></span><span class="sxs-lookup"><span data-stu-id="729d4-128"><strong>Note</strong></span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span data-ttu-id="8a401-129">自由書式の請求明細行の主勘定は固定資産の処分勘定になります。</span><span class="sxs-lookup"><span data-stu-id="8a401-129">The main account on the free text invoice line will be the fixed asset disposal account.</span></span></td>
+<td><span data-ttu-id="729d4-129">自由書式の請求明細行の主勘定は固定資産の処分勘定になります。</span><span class="sxs-lookup"><span data-stu-id="729d4-129">The main account on the free text invoice line will be the fixed asset disposal account.</span></span></td>
 </tr>
 </tbody>
 </table>
 </div></td>
-<td><span data-ttu-id="8a401-130">自由書式の請求明細行の勘定科目。</span><span class="sxs-lookup"><span data-stu-id="8a401-130">The ledger account on the free text invoice line.</span></span></td>
+<td><span data-ttu-id="729d4-130">自由書式の請求明細行の勘定科目。</span><span class="sxs-lookup"><span data-stu-id="729d4-130">The ledger account on the free text invoice line.</span></span></td>
 <td><ol>
-<li><span data-ttu-id="8a401-131">自由書式の請求明細行の既定の財務分析コードの値を使用します。</span><span class="sxs-lookup"><span data-stu-id="8a401-131">Use the default financial dimension values on the free text invoice line.</span></span></li>
-<li><span data-ttu-id="8a401-132">勘定科目表ページで、勘定科目の既定の財務分析コードの値を使用します。</span><span class="sxs-lookup"><span data-stu-id="8a401-132">Use the default financial dimension values from the ledger account in the Chart of accounts page.</span></span></li>
+<li><span data-ttu-id="729d4-131">自由書式の請求明細行の既定の財務分析コードの値を使用します。</span><span class="sxs-lookup"><span data-stu-id="729d4-131">Use the default financial dimension values on the free text invoice line.</span></span></li>
+<li><span data-ttu-id="729d4-132">勘定科目表ページで、勘定科目の既定の財務分析コードの値を使用します。</span><span class="sxs-lookup"><span data-stu-id="729d4-132">Use the default financial dimension values from the ledger account in the Chart of accounts page.</span></span></li>
 </ol></td>
 </tr>
 <tr class="odd">
-<td><span data-ttu-id="8a401-133">自由書式の請求書の割引金額</span><span class="sxs-lookup"><span data-stu-id="8a401-133">Free text invoice discount amount</span></span></td>
-<td><span data-ttu-id="8a401-134">現金割引ページの [顧客割引の主勘定] フィールド。</span><span class="sxs-lookup"><span data-stu-id="8a401-134">The Main account for customer discounts field in the Cash discounts page.</span></span></td>
+<td><span data-ttu-id="729d4-133">自由書式の請求書の割引金額</span><span class="sxs-lookup"><span data-stu-id="729d4-133">Free text invoice discount amount</span></span></td>
+<td><span data-ttu-id="729d4-134">現金割引ページの [顧客割引の主勘定] フィールド。</span><span class="sxs-lookup"><span data-stu-id="729d4-134">The Main account for customer discounts field in the Cash discounts page.</span></span></td>
 <td><ol>
-<li><span data-ttu-id="8a401-135">主勘定が配賦勘定の場合、配賦勘定定義の既定値を使用します。</span><span class="sxs-lookup"><span data-stu-id="8a401-135">If the main account is an allocation account, use the default value from the allocation account definition.</span></span></li>
-<li><span data-ttu-id="8a401-136">主勘定が配賦勘定でない場合は、自由書式の請求明細行の財務分析コードの既定のテンプレートを使用します。</span><span class="sxs-lookup"><span data-stu-id="8a401-136">If the main account is not an allocation account, use the financial dimension default template on the free text invoice line.</span></span></li>
-<li><span data-ttu-id="8a401-137">自由書式の請求明細行の既定の財務分析コードの値を使用します。</span><span class="sxs-lookup"><span data-stu-id="8a401-137">Use the default financial dimension values on the free text invoice line.</span></span></li>
-<li><span data-ttu-id="8a401-138">勘定科目表ページで、勘定科目の既定の財務分析コードの値を使用します。</span><span class="sxs-lookup"><span data-stu-id="8a401-138">Use the default financial dimension values from the ledger account in the Chart of accounts page.</span></span></li>
+<li><span data-ttu-id="729d4-135">主勘定が配賦勘定の場合、配賦勘定定義の既定値を使用します。</span><span class="sxs-lookup"><span data-stu-id="729d4-135">If the main account is an allocation account, use the default value from the allocation account definition.</span></span></li>
+<li><span data-ttu-id="729d4-136">主勘定が配賦勘定でない場合は、自由書式の請求明細行の財務分析コードの既定のテンプレートを使用します。</span><span class="sxs-lookup"><span data-stu-id="729d4-136">If the main account is not an allocation account, use the financial dimension default template on the free text invoice line.</span></span></li>
+<li><span data-ttu-id="729d4-137">自由書式の請求明細行の既定の財務分析コードの値を使用します。</span><span class="sxs-lookup"><span data-stu-id="729d4-137">Use the default financial dimension values on the free text invoice line.</span></span></li>
+<li><span data-ttu-id="729d4-138">勘定科目表ページで、勘定科目の既定の財務分析コードの値を使用します。</span><span class="sxs-lookup"><span data-stu-id="729d4-138">Use the default financial dimension values from the ledger account in the Chart of accounts page.</span></span></li>
 </ol></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="8a401-139">自由書式の請求書の売上税金額</span><span class="sxs-lookup"><span data-stu-id="8a401-139">Free text invoice sales tax amount</span></span></td>
-<td><span data-ttu-id="8a401-140">元帳転記グループ ページの [売上税支払] フィールド。</span><span class="sxs-lookup"><span data-stu-id="8a401-140">The Sales tax payable field in the Ledger posting groups page.</span></span></td>
+<td><span data-ttu-id="729d4-139">自由書式の請求書の売上税金額</span><span class="sxs-lookup"><span data-stu-id="729d4-139">Free text invoice sales tax amount</span></span></td>
+<td><span data-ttu-id="729d4-140">元帳転記グループ ページの [売上税支払] フィールド。</span><span class="sxs-lookup"><span data-stu-id="729d4-140">The Sales tax payable field in the Ledger posting groups page.</span></span></td>
 <td><ol>
-<li><span data-ttu-id="8a401-141">自由書式の請求明細行金額または費用明細金額の配賦で定義された財務分析コードを使用します。</span><span class="sxs-lookup"><span data-stu-id="8a401-141">Use the financial dimensions that are defined on the free text invoice line amount or the distributions for the charge line amount.</span></span></li>
-<li><span data-ttu-id="8a401-142">自由書式の請求明細行の既定の財務分析コードの値を使用します。</span><span class="sxs-lookup"><span data-stu-id="8a401-142">Use the default financial dimension values on the free text invoice line.</span></span></li>
-<li><span data-ttu-id="8a401-143">勘定科目表ページで、勘定科目の既定の財務分析コードの値を使用します。</span><span class="sxs-lookup"><span data-stu-id="8a401-143">Use the default financial dimension values from the ledger account in the Chart of accounts page.</span></span></li>
+<li><span data-ttu-id="729d4-141">自由書式の請求明細行金額または費用明細金額の配賦で定義された財務分析コードを使用します。</span><span class="sxs-lookup"><span data-stu-id="729d4-141">Use the financial dimensions that are defined on the free text invoice line amount or the distributions for the charge line amount.</span></span></li>
+<li><span data-ttu-id="729d4-142">自由書式の請求明細行の既定の財務分析コードの値を使用します。</span><span class="sxs-lookup"><span data-stu-id="729d4-142">Use the default financial dimension values on the free text invoice line.</span></span></li>
+<li><span data-ttu-id="729d4-143">勘定科目表ページで、勘定科目の既定の財務分析コードの値を使用します。</span><span class="sxs-lookup"><span data-stu-id="729d4-143">Use the default financial dimension values from the ledger account in the Chart of accounts page.</span></span></li>
 </ol></td>
 </tr>
 <tr class="odd">
-<td><span data-ttu-id="8a401-144">自由書式の請求書の費用明細金額</span><span class="sxs-lookup"><span data-stu-id="8a401-144">Free text invoice charge line amount</span></span></td>
-<td><span data-ttu-id="8a401-145">諸費用コード ページの [貸方勘定] フィールド。</span><span class="sxs-lookup"><span data-stu-id="8a401-145">The Credit account field in the Charges code page.</span></span></td>
+<td><span data-ttu-id="729d4-144">自由書式の請求書の費用明細金額</span><span class="sxs-lookup"><span data-stu-id="729d4-144">Free text invoice charge line amount</span></span></td>
+<td><span data-ttu-id="729d4-145">諸費用コード ページの [貸方勘定] フィールド。</span><span class="sxs-lookup"><span data-stu-id="729d4-145">The Credit account field in the Charges code page.</span></span></td>
 <td><ol>
-<li><span data-ttu-id="8a401-146">主勘定が配賦勘定の場合、配賦勘定定義の既定値を使用します。</span><span class="sxs-lookup"><span data-stu-id="8a401-146">If the main account is an allocation account, use the default value from the allocation account definition.</span></span></li>
-<li><span data-ttu-id="8a401-147">主勘定が配賦勘定でない場合は、自由書式の請求明細行の財務分析コードの既定のテンプレートを使用します。</span><span class="sxs-lookup"><span data-stu-id="8a401-147">If the main account is not an allocation account, use the financial dimension default template on the free text invoice line.</span></span></li>
-<li><span data-ttu-id="8a401-148">自由書式の請求明細行の既定の財務分析コードの値を使用します。</span><span class="sxs-lookup"><span data-stu-id="8a401-148">Use the default financial dimension values on the free text invoice line.</span></span></li>
-<li><span data-ttu-id="8a401-149">勘定科目表ページで、勘定科目の既定の財務分析コードの値を使用します。</span><span class="sxs-lookup"><span data-stu-id="8a401-149">Use the default financial dimension values from the ledger account in the Chart of accounts page.</span></span></li>
+<li><span data-ttu-id="729d4-146">主勘定が配賦勘定の場合、配賦勘定定義の既定値を使用します。</span><span class="sxs-lookup"><span data-stu-id="729d4-146">If the main account is an allocation account, use the default value from the allocation account definition.</span></span></li>
+<li><span data-ttu-id="729d4-147">主勘定が配賦勘定でない場合は、自由書式の請求明細行の財務分析コードの既定のテンプレートを使用します。</span><span class="sxs-lookup"><span data-stu-id="729d4-147">If the main account is not an allocation account, use the financial dimension default template on the free text invoice line.</span></span></li>
+<li><span data-ttu-id="729d4-148">自由書式の請求明細行の既定の財務分析コードの値を使用します。</span><span class="sxs-lookup"><span data-stu-id="729d4-148">Use the default financial dimension values on the free text invoice line.</span></span></li>
+<li><span data-ttu-id="729d4-149">勘定科目表ページで、勘定科目の既定の財務分析コードの値を使用します。</span><span class="sxs-lookup"><span data-stu-id="729d4-149">Use the default financial dimension values from the ledger account in the Chart of accounts page.</span></span></li>
 </ol></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="distributing-taxes"></a><span data-ttu-id="8a401-150">税の配分</span><span class="sxs-lookup"><span data-stu-id="8a401-150">Distributing taxes</span></span>
-<span data-ttu-id="8a401-151">税金の勘定配布は、税金が計算されるまで作成できません。</span><span class="sxs-lookup"><span data-stu-id="8a401-151">Accounting distributions for taxes cannot be created until taxes are calculated.</span></span> <span data-ttu-id="8a401-152">売上税を計算するには、[自由書式の請求書] フォームで次の作業のいずれかを完了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="8a401-152">To calculate sales taxes, you must complete one of the following tasks in the Free text invoice form:</span></span>
--   <span data-ttu-id="8a401-153">売上税を表示する。</span><span class="sxs-lookup"><span data-stu-id="8a401-153">View the sales tax.</span></span>
--   <span data-ttu-id="8a401-154">請求金額の合計を表示する。</span><span class="sxs-lookup"><span data-stu-id="8a401-154">View the invoice total.</span></span>
--   <span data-ttu-id="8a401-155">キャッシュ フローを表示する。</span><span class="sxs-lookup"><span data-stu-id="8a401-155">View the cash flow.</span></span>
--   <span data-ttu-id="8a401-156">自由書式の請求書全体の勘定配布を表示する。</span><span class="sxs-lookup"><span data-stu-id="8a401-156">View accounting distributions for the whole free text invoice.</span></span>
--   <span data-ttu-id="8a401-157">補助元帳を表示する。</span><span class="sxs-lookup"><span data-stu-id="8a401-157">View the subledger journal.</span></span>
+## <a name="distributing-taxes"></a><span data-ttu-id="729d4-150">税の配分</span><span class="sxs-lookup"><span data-stu-id="729d4-150">Distributing taxes</span></span>
+<span data-ttu-id="729d4-151">税金の勘定配布は、税金が計算されるまで作成できません。</span><span class="sxs-lookup"><span data-stu-id="729d4-151">Accounting distributions for taxes cannot be created until taxes are calculated.</span></span> <span data-ttu-id="729d4-152">売上税を計算するには、[自由書式の請求書] フォームで次の作業のいずれかを完了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="729d4-152">To calculate sales taxes, you must complete one of the following tasks in the Free text invoice form:</span></span>
+-   <span data-ttu-id="729d4-153">売上税を表示する。</span><span class="sxs-lookup"><span data-stu-id="729d4-153">View the sales tax.</span></span>
+-   <span data-ttu-id="729d4-154">請求金額の合計を表示する。</span><span class="sxs-lookup"><span data-stu-id="729d4-154">View the invoice total.</span></span>
+-   <span data-ttu-id="729d4-155">キャッシュ フローを表示する。</span><span class="sxs-lookup"><span data-stu-id="729d4-155">View the cash flow.</span></span>
+-   <span data-ttu-id="729d4-156">自由書式の請求書全体の勘定配布を表示する。</span><span class="sxs-lookup"><span data-stu-id="729d4-156">View accounting distributions for the whole free text invoice.</span></span>
+-   <span data-ttu-id="729d4-157">補助元帳を表示する。</span><span class="sxs-lookup"><span data-stu-id="729d4-157">View the subledger journal.</span></span>
 
-## <a name="subledger-journals-for-free-text-invoices"></a><span data-ttu-id="8a401-158">自由書式の請求書の補助元帳</span><span class="sxs-lookup"><span data-stu-id="8a401-158">Subledger journals for free text invoices</span></span>
-<span data-ttu-id="8a401-159">自由書式の請求書を転記する前に、請求書が適切な勘定に転記されることを保証するために借方と貸方が含まれる請求書の完全な勘定項目を表示できます。</span><span class="sxs-lookup"><span data-stu-id="8a401-159">Before you post a free text invoice, you can view the full accounting entry of the invoice, which includes debits and credits, to verify that the invoice is being posted to the correct accounts.</span></span> <span data-ttu-id="8a401-160">全勘定項目の表示は補助元帳と呼ばれます。</span><span class="sxs-lookup"><span data-stu-id="8a401-160">This view of the full accounting entry is called a subledger journal.</span></span> <span data-ttu-id="8a401-161">自由書式の請求書を仕訳入力する前に、プレビューした結果、補助元帳仕訳が正しくない場合、補助元帳仕訳は変更できません。</span><span class="sxs-lookup"><span data-stu-id="8a401-161">If the subledger journal entry is incorrect when you preview it before you journalize the free text invoice, you can't change the subledger journal entry.</span></span> <span data-ttu-id="8a401-162">代わりに、勘定配布または転記プロファイルを変更する必要があります。</span><span class="sxs-lookup"><span data-stu-id="8a401-162">Instead, you must change the accounting distributions or the posting profile.</span></span> <span data-ttu-id="8a401-163">勘定配布は、勘定項目の借方または貸方のいずれか一方を定義するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="8a401-163">The accounting distributions are used to define one side of the accounting entry, the debit or the credit.</span></span> <span data-ttu-id="8a401-164">相殺補助元帳仕訳勘定項目は、顧客勘定または税などの転記プロファイルから作成されます。</span><span class="sxs-lookup"><span data-stu-id="8a401-164">The offsetting subledger journal account entry is created from the posting profiles, such as from the customer account or the tax.</span></span>
+## <a name="subledger-journals-for-free-text-invoices"></a><span data-ttu-id="729d4-158">自由書式の請求書の補助元帳</span><span class="sxs-lookup"><span data-stu-id="729d4-158">Subledger journals for free text invoices</span></span>
+<span data-ttu-id="729d4-159">自由書式の請求書を転記する前に、請求書が適切な勘定に転記されることを保証するために借方と貸方が含まれる請求書の完全な勘定項目を表示できます。</span><span class="sxs-lookup"><span data-stu-id="729d4-159">Before you post a free text invoice, you can view the full accounting entry of the invoice, which includes debits and credits, to verify that the invoice is being posted to the correct accounts.</span></span> <span data-ttu-id="729d4-160">全勘定項目の表示は補助元帳と呼ばれます。</span><span class="sxs-lookup"><span data-stu-id="729d4-160">This view of the full accounting entry is called a subledger journal.</span></span> <span data-ttu-id="729d4-161">自由書式の請求書を仕訳入力する前に、プレビューした結果、補助元帳仕訳が正しくない場合、補助元帳仕訳は変更できません。</span><span class="sxs-lookup"><span data-stu-id="729d4-161">If the subledger journal entry is incorrect when you preview it before you journalize the free text invoice, you can't change the subledger journal entry.</span></span> <span data-ttu-id="729d4-162">代わりに、勘定配布または転記プロファイルを変更する必要があります。</span><span class="sxs-lookup"><span data-stu-id="729d4-162">Instead, you must change the accounting distributions or the posting profile.</span></span> <span data-ttu-id="729d4-163">勘定配布は、勘定項目の借方または貸方のいずれか一方を定義するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="729d4-163">The accounting distributions are used to define one side of the accounting entry, the debit or the credit.</span></span> <span data-ttu-id="729d4-164">相殺補助元帳仕訳勘定項目は、顧客勘定または税などの転記プロファイルから作成されます。</span><span class="sxs-lookup"><span data-stu-id="729d4-164">The offsetting subledger journal account entry is created from the posting profiles, such as from the customer account or the tax.</span></span>
 
 
 

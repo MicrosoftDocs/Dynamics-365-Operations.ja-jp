@@ -16,27 +16,27 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 6dd2aa1ebc713287120106a9d1ec7dc15c24def9
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: 6cb4803cc862d4eb508316ac49f1ea92b910f43a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 09/29/2017
 
 ---
-# <a name="define-configuration-groups"></a><span data-ttu-id="93eda-103">コンフィギュレーション グループの定義</span><span class="sxs-lookup"><span data-stu-id="93eda-103">Define configuration groups</span></span>
+# <a name="define-configuration-groups"></a><span data-ttu-id="63c2e-103">コンフィギュレーション グループの定義</span><span class="sxs-lookup"><span data-stu-id="63c2e-103">Define configuration groups</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="93eda-104">この手順では、デモ データの会社 USMF に 2 つのグループを作成することにより、製品コンフィギュレーション グループを定義する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="93eda-104">This procedure shows how to define product configuration groups by creating two groups in the demo data company USMF Company.</span></span> <span data-ttu-id="93eda-105">これは、分析コードベースのコンフィギュレーションでの組み合わせの作成方法を説明する 8 つの手順の 4 番目です。</span><span class="sxs-lookup"><span data-stu-id="93eda-105">This is the fourth procedure out of eight which explains how to build combinations for dimension-based configuration.</span></span>
+<span data-ttu-id="63c2e-104">この手順では、デモ データの会社 USMF に 2 つのグループを作成することにより、製品コンフィギュレーション グループを定義する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="63c2e-104">This procedure shows how to define product configuration groups by creating two groups in the demo data company USMF Company.</span></span> <span data-ttu-id="63c2e-105">これは、分析コードベースのコンフィギュレーションでの組み合わせの作成方法を説明する 8 つの手順の 4 番目です。</span><span class="sxs-lookup"><span data-stu-id="63c2e-105">This is the fourth procedure out of eight which explains how to build combinations for dimension-based configuration.</span></span>
 
-1. <span data-ttu-id="93eda-106">[製品情報管理] > [設定] > [部品表およびフォーミュラ] > [コンフィギュレーション グループ] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="93eda-106">Go to Product information management > Setup > Bills of materials and formulas > Configuration groups.</span></span>
-2. <span data-ttu-id="93eda-107">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="93eda-107">Click New.</span></span>
-3. <span data-ttu-id="93eda-108">[コンフィギュレーション グループ] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="93eda-108">In the Configuration group field, type a value.</span></span>
-    * <span data-ttu-id="93eda-109">部品表に使用するコンフィギュレーション グループの名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="93eda-109">Type a name for the configuration group that will be used for the bill of material lines.</span></span>  
-4. <span data-ttu-id="93eda-110">[名前] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="93eda-110">In the Name field, type a value.</span></span>
-5. <span data-ttu-id="93eda-111">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="93eda-111">Click New.</span></span>
-6. <span data-ttu-id="93eda-112">[コンフィギュレーション グループ] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="93eda-112">In the Configuration group field, type a value.</span></span>
-    * <span data-ttu-id="93eda-113">部品表に使用するコンフィギュレーション グループの名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="93eda-113">Type a name for the configuration group that will be used for the bill of material lines.</span></span>  
-7. <span data-ttu-id="93eda-114">[名前] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="93eda-114">In the Name field, type a value.</span></span>
-8. <span data-ttu-id="93eda-115">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="93eda-115">Close the page.</span></span>
+1. <span data-ttu-id="63c2e-106">[製品情報管理] > [設定] > [部品表およびフォーミュラ] > [コンフィギュレーション グループ] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="63c2e-106">Go to Product information management > Setup > Bills of materials and formulas > Configuration groups.</span></span>
+2. <span data-ttu-id="63c2e-107">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="63c2e-107">Click New.</span></span>
+3. <span data-ttu-id="63c2e-108">[コンフィギュレーション グループ] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="63c2e-108">In the Configuration group field, type a value.</span></span>
+    * <span data-ttu-id="63c2e-109">部品表に使用するコンフィギュレーション グループの名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="63c2e-109">Type a name for the configuration group that will be used for the bill of material lines.</span></span>  
+4. <span data-ttu-id="63c2e-110">[名前] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="63c2e-110">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="63c2e-111">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="63c2e-111">Click New.</span></span>
+6. <span data-ttu-id="63c2e-112">[コンフィギュレーション グループ] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="63c2e-112">In the Configuration group field, type a value.</span></span>
+    * <span data-ttu-id="63c2e-113">部品表に使用するコンフィギュレーション グループの名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="63c2e-113">Type a name for the configuration group that will be used for the bill of material lines.</span></span>  
+7. <span data-ttu-id="63c2e-114">[名前] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="63c2e-114">In the Name field, type a value.</span></span>
+8. <span data-ttu-id="63c2e-115">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="63c2e-115">Close the page.</span></span>
 
 

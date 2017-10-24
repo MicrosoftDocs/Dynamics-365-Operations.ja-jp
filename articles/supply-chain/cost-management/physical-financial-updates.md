@@ -1,7 +1,7 @@
 ---
 title: "現物更新と財務更新"
 description: "このトピックでは、在庫数量を増減させるトランザクションのタイプについて、その概要を説明します。"
-author: YuyuScheller
+author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -19,60 +19,60 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
-ms.openlocfilehash: 07ed503b7c441cb594e8e96ddcd9a81c0745a963
+ms.translationtype: HT
+ms.sourcegitcommit: a61761a5c9d98befd67682e1790af5377b7a55e1
+ms.openlocfilehash: 01121e7330efe00daa84ca274e4e94bb324175bb
 ms.contentlocale: ja-jp
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 10/13/2017
 
 ---
 
-# <a name="physical-and-financial-updates"></a><span data-ttu-id="8b45b-103">現物更新と財務更新</span><span class="sxs-lookup"><span data-stu-id="8b45b-103">Physical and financial updates</span></span>
+# <a name="physical-and-financial-updates"></a><span data-ttu-id="63b72-103">現物更新と財務更新</span><span class="sxs-lookup"><span data-stu-id="63b72-103">Physical and financial updates</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-<span data-ttu-id="8b45b-104">このトピックでは、在庫数量を増減させるトランザクションのタイプについて、その概要を説明します。</span><span class="sxs-lookup"><span data-stu-id="8b45b-104">This topic provides an overview of which types of transactions increase or decrease inventory quantities.</span></span> 
+<span data-ttu-id="63b72-104">このトピックでは、在庫数量を増減させるトランザクションのタイプについて、その概要を説明します。</span><span class="sxs-lookup"><span data-stu-id="63b72-104">This topic provides an overview of which types of transactions increase or decrease inventory quantities.</span></span> 
 
-<span data-ttu-id="8b45b-105">在庫トランザクションは、Microsoft Dynamics 365 for Finance and Operations で現物更新および財務更新できます。</span><span class="sxs-lookup"><span data-stu-id="8b45b-105">Inventory transactions can be physically updated and financially updated in Microsoft Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="8b45b-106">現物トランザクションと財務トランザクションによっては、在庫数量を増加または減少させるものがあります。</span><span class="sxs-lookup"><span data-stu-id="8b45b-106">Some types of physical and financial transactions increase inventory quantities, whereas others decrease the quantity.</span></span>
+<span data-ttu-id="63b72-105">在庫トランザクションは、Microsoft Dynamics 365 for Finance and Operations で現物更新および財務更新できます。</span><span class="sxs-lookup"><span data-stu-id="63b72-105">Inventory transactions can be physically updated and financially updated in Microsoft Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="63b72-106">現物トランザクションと財務トランザクションによっては、在庫数量を増加または減少させるものがあります。</span><span class="sxs-lookup"><span data-stu-id="63b72-106">Some types of physical and financial transactions increase inventory quantities, whereas others decrease the quantity.</span></span>
 
-## <a name="physical-increases"></a><span data-ttu-id="8b45b-107">現物の増加</span><span class="sxs-lookup"><span data-stu-id="8b45b-107">Physical increases</span></span>
-<span data-ttu-id="8b45b-108">現物トランザクションが転記されると、トランザクション レコードのステータスは [**入庫済**] になります。</span><span class="sxs-lookup"><span data-stu-id="8b45b-108">When a physical transaction is posted, the status of the transaction record is **Received**.</span></span> <span data-ttu-id="8b45b-109">次のトランザクションは現物の増加と見なされます。</span><span class="sxs-lookup"><span data-stu-id="8b45b-109">The following transactions are considered physical increases:</span></span>
+## <a name="physical-increases"></a><span data-ttu-id="63b72-107">現物の増加</span><span class="sxs-lookup"><span data-stu-id="63b72-107">Physical increases</span></span>
+<span data-ttu-id="63b72-108">現物トランザクションが転記されると、トランザクション レコードのステータスは [**入庫済**] になります。</span><span class="sxs-lookup"><span data-stu-id="63b72-108">When a physical transaction is posted, the status of the transaction record is **Received**.</span></span> <span data-ttu-id="63b72-109">次のトランザクションは現物の増加と見なされます。</span><span class="sxs-lookup"><span data-stu-id="63b72-109">The following transactions are considered physical increases:</span></span>
 
--   <span data-ttu-id="8b45b-110">発注書入庫</span><span class="sxs-lookup"><span data-stu-id="8b45b-110">Purchase order receipt</span></span>
--   <span data-ttu-id="8b45b-111">販売注文梱包明細票返品</span><span class="sxs-lookup"><span data-stu-id="8b45b-111">Sales order packing slip return</span></span>
--   <span data-ttu-id="8b45b-112">製造オーダーの終了を報告</span><span class="sxs-lookup"><span data-stu-id="8b45b-112">Reporting a production order as finished</span></span>
--   <span data-ttu-id="8b45b-113">製造オーダー ピッキング リストの副産物</span><span class="sxs-lookup"><span data-stu-id="8b45b-113">By-product on a production order picking list</span></span>
+-   <span data-ttu-id="63b72-110">発注書入庫</span><span class="sxs-lookup"><span data-stu-id="63b72-110">Purchase order receipt</span></span>
+-   <span data-ttu-id="63b72-111">販売注文梱包明細票返品</span><span class="sxs-lookup"><span data-stu-id="63b72-111">Sales order packing slip return</span></span>
+-   <span data-ttu-id="63b72-112">製造オーダーの終了を報告</span><span class="sxs-lookup"><span data-stu-id="63b72-112">Reporting a production order as finished</span></span>
+-   <span data-ttu-id="63b72-113">製造オーダー ピッキング リストの副産物</span><span class="sxs-lookup"><span data-stu-id="63b72-113">By-product on a production order picking list</span></span>
 
-## <a name="financial-increases"></a><span data-ttu-id="8b45b-114">財務上の増加</span><span class="sxs-lookup"><span data-stu-id="8b45b-114">Financial increases</span></span>
-<span data-ttu-id="8b45b-115">財務入庫トランザクションが転記されると、数量を増加させるトランザクション レコードのステータスは [**購買済**] になります。</span><span class="sxs-lookup"><span data-stu-id="8b45b-115">When a financial receipt transaction is posted, the status of the transaction record that increases the quantity is **Purchased**.</span></span> <span data-ttu-id="8b45b-116">次のトランザクションは、財務上の増加と見なされます。</span><span class="sxs-lookup"><span data-stu-id="8b45b-116">The following transactions are considered financial increases:</span></span>
+## <a name="financial-increases"></a><span data-ttu-id="63b72-114">財務上の増加</span><span class="sxs-lookup"><span data-stu-id="63b72-114">Financial increases</span></span>
+<span data-ttu-id="63b72-115">財務入庫トランザクションが転記されると、数量を増加させるトランザクション レコードのステータスは [**購買済**] になります。</span><span class="sxs-lookup"><span data-stu-id="63b72-115">When a financial receipt transaction is posted, the status of the transaction record that increases the quantity is **Purchased**.</span></span> <span data-ttu-id="63b72-116">次のトランザクションは、財務上の増加と見なされます。</span><span class="sxs-lookup"><span data-stu-id="63b72-116">The following transactions are considered financial increases:</span></span>
 
--   <span data-ttu-id="8b45b-117">仕入先請求書</span><span class="sxs-lookup"><span data-stu-id="8b45b-117">Vendor invoice</span></span>
--   <span data-ttu-id="8b45b-118">返品用販売注文請求書</span><span class="sxs-lookup"><span data-stu-id="8b45b-118">Sales order invoice for a return</span></span>
--   <span data-ttu-id="8b45b-119">製造オーダー原価計算</span><span class="sxs-lookup"><span data-stu-id="8b45b-119">Production order costing</span></span>
--   <span data-ttu-id="8b45b-120">振替、損益、棚卸、部品表、移動などの正の数量の在庫仕訳帳</span><span class="sxs-lookup"><span data-stu-id="8b45b-120">Positive quantity inventory journals, such as movement, profit and loss, counting, bill of materials, and transfer</span></span>
+-   <span data-ttu-id="63b72-117">仕入先請求書</span><span class="sxs-lookup"><span data-stu-id="63b72-117">Vendor invoice</span></span>
+-   <span data-ttu-id="63b72-118">返品用販売注文請求書</span><span class="sxs-lookup"><span data-stu-id="63b72-118">Sales order invoice for a return</span></span>
+-   <span data-ttu-id="63b72-119">製造オーダー原価計算</span><span class="sxs-lookup"><span data-stu-id="63b72-119">Production order costing</span></span>
+-   <span data-ttu-id="63b72-120">振替、損益、棚卸、部品表、移動などの正の数量の在庫仕訳帳</span><span class="sxs-lookup"><span data-stu-id="63b72-120">Positive quantity inventory journals, such as movement, profit and loss, counting, bill of materials, and transfer</span></span>
 
-## <a name="transactions-that-increase-quantity"></a><span data-ttu-id="8b45b-121">数量を増加させるトランザクション</span><span class="sxs-lookup"><span data-stu-id="8b45b-121">Transactions that increase quantity</span></span>
-<span data-ttu-id="8b45b-122">数量を増加させるトランザクションは移動平均原価価格で転記されます。</span><span class="sxs-lookup"><span data-stu-id="8b45b-122">Transactions that increase quantity are posted at the running average cost price.</span></span> <span data-ttu-id="8b45b-123">Finance and Operations は、財務的に追跡される在庫分析コードごとに、各トランザクションの原価を基準とする移動平均原価価格を計算します。</span><span class="sxs-lookup"><span data-stu-id="8b45b-123">Finance and Operations calculates a running average cost price that is based on the cost of each of these transactions for each inventory dimension that is being tracked financially.</span></span> <span data-ttu-id="8b45b-124">移動平均原価価格については、[[移動平均原価価格](running-average-cost-price.md)] を参照ください。</span><span class="sxs-lookup"><span data-stu-id="8b45b-124">For information about running average cost prices, see [Running average cost price](running-average-cost-price.md).</span></span>
+## <a name="transactions-that-increase-quantity"></a><span data-ttu-id="63b72-121">数量を増加させるトランザクション</span><span class="sxs-lookup"><span data-stu-id="63b72-121">Transactions that increase quantity</span></span>
+<span data-ttu-id="63b72-122">数量を増加させるトランザクションは移動平均原価価格で転記されます。</span><span class="sxs-lookup"><span data-stu-id="63b72-122">Transactions that increase quantity are posted at the running average cost price.</span></span> <span data-ttu-id="63b72-123">Finance and Operations は、財務的に追跡される在庫分析コードごとに、各トランザクションの原価を基準とする移動平均原価価格を計算します。</span><span class="sxs-lookup"><span data-stu-id="63b72-123">Finance and Operations calculates a running average cost price that is based on the cost of each of these transactions for each inventory dimension that is being tracked financially.</span></span> <span data-ttu-id="63b72-124">移動平均原価価格については、[[移動平均原価価格](running-average-cost-price.md)] を参照ください。</span><span class="sxs-lookup"><span data-stu-id="63b72-124">For information about running average cost prices, see [Running average cost price](running-average-cost-price.md).</span></span>
 
-## <a name="transactions-that-decrease-quantity"></a><span data-ttu-id="8b45b-125">数量を減少させるトランザクション</span><span class="sxs-lookup"><span data-stu-id="8b45b-125">Transactions that decrease quantity</span></span>
-<span data-ttu-id="8b45b-126">Finance and Operations は、在庫にどの在庫モデルが関連付けられているかに関係なく、数量を減少させるトランザクションが転記されるときは、計算済みの移動平均原価価格を使用します。</span><span class="sxs-lookup"><span data-stu-id="8b45b-126">Finance and Operations uses the calculated running average cost price when a transaction that decreases quantity is posted, regardless of the inventory model that is associated with that inventory.</span></span> <span data-ttu-id="8b45b-127">転記される前に、数量を減少させるトランザクションが別のトランザクションにすでにマークされていてはいけません。</span><span class="sxs-lookup"><span data-stu-id="8b45b-127">The transaction that decreases quantity must not have been marked to another transaction before it was posted.</span></span> <span data-ttu-id="8b45b-128">現物手持在庫がマイナスになる場合、Finance and Operations は [**品目**] ページで品目に対して定義されている在庫原価を使用します。</span><span class="sxs-lookup"><span data-stu-id="8b45b-128">If the physical on-hand inventory becomes negative, Finance and Operations uses the inventory cost that is defined for the item on the **Item** page.</span></span> <span data-ttu-id="8b45b-129">**メモ:** マルチサイト機能が有効になっている場合、この原価は、[**既定の注文設定**] ページでサイトに対して定義されている在庫原価になります。</span><span class="sxs-lookup"><span data-stu-id="8b45b-129">**Note:** If multisite functionality is enabled, this cost will instead be the inventory cost that is defined for a site on the **Default order settings** page.</span></span>
+## <a name="transactions-that-decrease-quantity"></a><span data-ttu-id="63b72-125">数量を減少させるトランザクション</span><span class="sxs-lookup"><span data-stu-id="63b72-125">Transactions that decrease quantity</span></span>
+<span data-ttu-id="63b72-126">Finance and Operations は、在庫にどの在庫モデルが関連付けられているかに関係なく、数量を減少させるトランザクションが転記されるときは、計算済みの移動平均原価価格を使用します。</span><span class="sxs-lookup"><span data-stu-id="63b72-126">Finance and Operations uses the calculated running average cost price when a transaction that decreases quantity is posted, regardless of the inventory model that is associated with that inventory.</span></span> <span data-ttu-id="63b72-127">転記される前に、数量を減少させるトランザクションが別のトランザクションにすでにマークされていてはいけません。</span><span class="sxs-lookup"><span data-stu-id="63b72-127">The transaction that decreases quantity must not have been marked to another transaction before it was posted.</span></span> <span data-ttu-id="63b72-128">現物手持在庫がマイナスになる場合、Finance and Operations は [**品目**] ページで品目に対して定義されている在庫原価を使用します。</span><span class="sxs-lookup"><span data-stu-id="63b72-128">If the physical on-hand inventory becomes negative, Finance and Operations uses the inventory cost that is defined for the item on the **Item** page.</span></span> <span data-ttu-id="63b72-129">**メモ:** マルチサイト機能が有効になっている場合、この原価は、[**既定の注文設定**] ページでサイトに対して定義されている在庫原価になります。</span><span class="sxs-lookup"><span data-stu-id="63b72-129">**Note:** If multisite functionality is enabled, this cost will instead be the inventory cost that is defined for a site on the **Default order settings** page.</span></span>
 
-## <a name="physical-issues-vs-financial-issues"></a><span data-ttu-id="8b45b-130">現物払出と財務払出</span><span class="sxs-lookup"><span data-stu-id="8b45b-130">Physical issues vs. financial issues</span></span>
-<span data-ttu-id="8b45b-131">現物払出トランザクションが転記されると、トランザクション レコードのステータスは [**控除済**] になります。</span><span class="sxs-lookup"><span data-stu-id="8b45b-131">When a physical issue transaction is posted, the status of the transaction record is **Deducted**.</span></span> <span data-ttu-id="8b45b-132">次のトランザクションは現物払出と見なされます。</span><span class="sxs-lookup"><span data-stu-id="8b45b-132">The following transactions are considered physical issues:</span></span>
+## <a name="physical-issues-vs-financial-issues"></a><span data-ttu-id="63b72-130">現物払出と財務払出</span><span class="sxs-lookup"><span data-stu-id="63b72-130">Physical issues vs. financial issues</span></span>
+<span data-ttu-id="63b72-131">現物払出トランザクションが転記されると、トランザクション レコードのステータスは [**控除済**] になります。</span><span class="sxs-lookup"><span data-stu-id="63b72-131">When a physical issue transaction is posted, the status of the transaction record is **Deducted**.</span></span> <span data-ttu-id="63b72-132">次のトランザクションは現物払出と見なされます。</span><span class="sxs-lookup"><span data-stu-id="63b72-132">The following transactions are considered physical issues:</span></span>
 
--   <span data-ttu-id="8b45b-133">製造オーダー ピッキング リスト仕訳帳</span><span class="sxs-lookup"><span data-stu-id="8b45b-133">Production order picking list journal</span></span>
--   <span data-ttu-id="8b45b-134">販売注文梱包明細票</span><span class="sxs-lookup"><span data-stu-id="8b45b-134">Sales order packing slip</span></span>
--   <span data-ttu-id="8b45b-135">発注書梱包明細返品</span><span class="sxs-lookup"><span data-stu-id="8b45b-135">Purchase order packing slip return</span></span>
+-   <span data-ttu-id="63b72-133">製造オーダー ピッキング リスト仕訳帳</span><span class="sxs-lookup"><span data-stu-id="63b72-133">Production order picking list journal</span></span>
+-   <span data-ttu-id="63b72-134">販売注文梱包明細票</span><span class="sxs-lookup"><span data-stu-id="63b72-134">Sales order packing slip</span></span>
+-   <span data-ttu-id="63b72-135">発注書梱包明細返品</span><span class="sxs-lookup"><span data-stu-id="63b72-135">Purchase order packing slip return</span></span>
 
-<span data-ttu-id="8b45b-136">財務トランザクションを転記すると、トランザクション レコードのステータスが [**売却済**] になります。</span><span class="sxs-lookup"><span data-stu-id="8b45b-136">When a financial transaction is posted, the status of the transaction record is **Sold**.</span></span> <span data-ttu-id="8b45b-137">次のトランザクションは財務払出と見なされます。</span><span class="sxs-lookup"><span data-stu-id="8b45b-137">The following transactions are considered financial issues:</span></span>
+<span data-ttu-id="63b72-136">財務トランザクションを転記すると、トランザクション レコードのステータスが [**売却済**] になります。</span><span class="sxs-lookup"><span data-stu-id="63b72-136">When a financial transaction is posted, the status of the transaction record is **Sold**.</span></span> <span data-ttu-id="63b72-137">次のトランザクションは財務払出と見なされます。</span><span class="sxs-lookup"><span data-stu-id="63b72-137">The following transactions are considered financial issues:</span></span>
 
--   <span data-ttu-id="8b45b-138">製造オーダーの終了</span><span class="sxs-lookup"><span data-stu-id="8b45b-138">Ending a production order</span></span>
--   <span data-ttu-id="8b45b-139">販売注文請求書</span><span class="sxs-lookup"><span data-stu-id="8b45b-139">Sales order invoice</span></span>
--   <span data-ttu-id="8b45b-140">仕入先請求書返品</span><span class="sxs-lookup"><span data-stu-id="8b45b-140">Vendor invoice return</span></span>
--   <span data-ttu-id="8b45b-141">振替、損益、棚卸、部品表、移動などの負の数量の在庫仕訳帳</span><span class="sxs-lookup"><span data-stu-id="8b45b-141">Negative quantity inventory journals, such as movement, profit and loss, counting, bill of materials, and transfer</span></span>
+-   <span data-ttu-id="63b72-138">製造オーダーの終了</span><span class="sxs-lookup"><span data-stu-id="63b72-138">Ending a production order</span></span>
+-   <span data-ttu-id="63b72-139">販売注文請求書</span><span class="sxs-lookup"><span data-stu-id="63b72-139">Sales order invoice</span></span>
+-   <span data-ttu-id="63b72-140">仕入先請求書返品</span><span class="sxs-lookup"><span data-stu-id="63b72-140">Vendor invoice return</span></span>
+-   <span data-ttu-id="63b72-141">振替、損益、棚卸、部品表、移動などの負の数量の在庫仕訳帳</span><span class="sxs-lookup"><span data-stu-id="63b72-141">Negative quantity inventory journals, such as movement, profit and loss, counting, bill of materials, and transfer</span></span>
 
-<span data-ttu-id="8b45b-142">数量を減少させるトランザクションは移動平均原価価格で転記されます。</span><span class="sxs-lookup"><span data-stu-id="8b45b-142">Transactions that decrease quantity are posted at the running average cost price.</span></span> <span data-ttu-id="8b45b-143">したがって、各品目に割り当てられている在庫モデルに基づいて、出庫トランザクションが入庫トランザクションに対して決済されるために、在庫原価計算手順が必要です。</span><span class="sxs-lookup"><span data-stu-id="8b45b-143">Therefore, the inventory close procedure is required in order to settle issue transactions to receipt transactions, based on the inventory model that is assigned to each item.</span></span>
+<span data-ttu-id="63b72-142">数量を減少させるトランザクションは移動平均原価価格で転記されます。</span><span class="sxs-lookup"><span data-stu-id="63b72-142">Transactions that decrease quantity are posted at the running average cost price.</span></span> <span data-ttu-id="63b72-143">したがって、各品目に割り当てられている在庫モデルに基づいて、出庫トランザクションが入庫トランザクションに対して決済されるために、在庫原価計算手順が必要です。</span><span class="sxs-lookup"><span data-stu-id="63b72-143">Therefore, the inventory close procedure is required in order to settle issue transactions to receipt transactions, based on the inventory model that is assigned to each item.</span></span>
 
 
 
