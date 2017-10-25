@@ -1,7 +1,7 @@
 ---
 title: "均等減価償却法"
 description: "日本では、一括比例配分資産、低価額資産、および繰延資産は耐用年数期間中、毎年均等額で減価償却されます。 この記事は、均等減価償却についてよく寄せられる質問に回答します。"
-author: RichardLuan
+author: yijialuan
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
