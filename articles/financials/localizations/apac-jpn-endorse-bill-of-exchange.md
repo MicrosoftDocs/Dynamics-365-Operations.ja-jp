@@ -1,7 +1,7 @@
 ---
 title: "為替手形の裏書による仕入先への支払"
 description: "日本では、多くの場合、為替手形 (BOEs) は仕入先に裏書きされ、支払方法として使用されます。 Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition の BOE のリスト ページでは、BOE のライフ サイクルの集中管理を提供します。"
-author: RichardLuan
+author: yijialuan
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -18,10 +18,10 @@ ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 9de4233a1775cfe8c6250f2506ef179143da69e6
+ms.sourcegitcommit: f944258e7efdd5c9eba7daf9a80c67058a6cc055
+ms.openlocfilehash: eadd504a25e6f98bcaac204184cca7c335125da6
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/25/2017
 
 ---
 

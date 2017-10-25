@@ -1,7 +1,7 @@
 ---
 title: "日本向け月次締め請求書"
 description: "日本では、支払の請求書は毎月統合されます。 この記事は、月次締め請求書に関する情報を提供し、請求金額および期日の計算方法を説明します。"
-author: RichardLuan
+author: yijialuan
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -19,10 +19,10 @@ ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 9360487303e1b26c5e221f41fe036f7b412dfbb8
+ms.sourcegitcommit: f944258e7efdd5c9eba7daf9a80c67058a6cc055
+ms.openlocfilehash: 9f5864936fdfacaee34dffccecd5b61749cefe26
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/25/2017
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "日本の郵便番号のインポート"
 description: "このトピックでは、日本の郵便番号をインポートする方法について説明します。"
-author: RichardLuan
+author: yijialuan
 manager: AnnBe
 ms.date: 05/29/2017
 ms.topic: article
@@ -16,10 +16,10 @@ ms.author: riluan
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 0746b930ee4c98816d2c4c4f86515d923405552b
+ms.sourcegitcommit: f944258e7efdd5c9eba7daf9a80c67058a6cc055
+ms.openlocfilehash: 7819eaf9641513aa971eba5245d6ad16f685d1d6
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/25/2017
 
 ---
 
