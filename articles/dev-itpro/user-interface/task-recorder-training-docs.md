@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 529751c09b8f99f986cad23a633bea661929d558
-ms.openlocfilehash: d5e4857081134808b194d3248dd8739f83b57d6e
+ms.sourcegitcommit: b49cfe39732a450e4723419c50d8bcc3d64b7ec9
+ms.openlocfilehash: 297fe730a432e05e1ab490be4802c37f9402b0a7
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -116,14 +116,14 @@ Microsoft のタスク記録をダウンロードおよび編集し、自分の�
 11. タスク記録を保存する方法を選択してください。
 
 ## <a name="include-your-task-recordings-in-the-help-pane"></a>ヘルプ ウィンドウにタスク記録を盛り込む
-独自のカスタマイズされたタスク記録をタスクガイドとして再生またはテキストとして表示するためにヘルプ ウィンドウに表示するには、タスク記録を BPM ライブラリに保存して、ヘルプ システム パラメーターを BPM ライブラリにポイントするように更新します。 詳細については、[ヘルプ システムの接続](../get-started/help-connect.md) を参照してください。
+独自のカスタマイズされたタスク記録をタスクガイドとして再生またはテキストとして表示するためにヘルプ ウィンドウに表示するには、タスク記録を BPM ライブラリに保存して、ヘルプ システム パラメーターを BPM ライブラリにポイントするように更新します。 詳細については、[ヘルプ システムの接続](../../fin-and-ops/get-started/help-connect.md) を参照してください。
 
 <a name="see-also"></a>参照
 --------
 
-[ヘルプの概要](..\get-started\help-overview.md)
+[ヘルプの概要](../../fin-and-ops/get-started/help-overview.md)
 
-[ヘルプへの接続](..\get-started\help-connect.md)
+[ヘルプへの接続](../../fin-and-ops/get-started/help-connect.md)
 
 [タスク レコーダー](task-recorder.md)
 

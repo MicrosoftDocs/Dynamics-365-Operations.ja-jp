@@ -15,18 +15,18 @@ ms.custom: 55651
 ms.assetid: 
 ms.search.region: Global
 ms.author: chwolf
-ms.search.validFrom: 2016-08-30T00:00:00.000Z
+ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
-ms.openlocfilehash: 4a1cab8c126ad063a52827421d2ea1104d0c7287
+ms.sourcegitcommit: c73eeaaf28df8db720431d4bcd317c9721baa99d
+ms.openlocfilehash: 5be9b195754d6c8315342c83451128092f64a241
 ms.contentlocale: ja-jp
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
 # <a name="hardware-sizing-for-on-premises-environments"></a>オンプレミス環境のハードウェアのサイズ設定
-オンプレミス環境におけるハードウェアおよびインフラストラチャのサイズ設定のプロセスを開始する前に、[システム要件](../get-started/system-requirements.md)および[セットアップおよび配置の指示](../deployment/setup-deploy-on-premises-environments.md)に精通し、基盤となるインフラストラクチャを確実に把握します。 
+オンプレミス環境におけるハードウェアおよびインフラストラチャのサイズ設定のプロセスを開始する前に、[システム要件](system-requirements.md)および[セットアップおよび配置の指示](../../dev-itpro/deployment/setup-deploy-on-premises-environments.md)に精通し、基盤となるインフラストラクチャを確実に把握します。 
 
   **注:** 最適なパフォーマンスを得るには、システム設定のベストプラクティスに十分注意します。 
 
@@ -89,7 +89,7 @@ ms.lasthandoff: 07/27/2017
 クラスタまたはミラーリングの設定で常に SQL Server を使用することをお勧めします。 2 番目の SQL ノードは、1 次ノードと同じ数のコアを持つ必要があります。 
 
 ### <a name="active-directory-federation-services-ad-fs"></a>Active Directory フェデレーション サービス (AD FS)
-広告のサイズ変更について、[広告のサーバーの処理能力ドキュメント](https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/design/planning-for-ad-fs-server-capacity)を参照してください。
+広告のサイズ変更について、[広告のサーバーの処理能力ドキュメント](/windows-server/identity/ad-fs/design/planning-for-ad-fs-server-capacity)を参照してください。
 
 A[サイズ変更スプレッドシート](http://adfsdocs.blob.core.windows.net/adfs/ADFSCapacity2016.xlsx)は、展開内のインスタンスの数を計画するために使用できます。
 

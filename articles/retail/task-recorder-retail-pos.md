@@ -18,11 +18,11 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
-ms.openlocfilehash: 007a7e8a34f3f5a2d0d18eb3955822a8fd8bdd0a
+ms.translationtype: HT
+ms.sourcegitcommit: 04d459a2fd0fdf9c201d9e96b37234846eb9ccf0
+ms.openlocfilehash: 9a1e3f08eeda93adeac4509edad244754770db65
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -126,7 +126,7 @@ POS でタスク記録を有効化するには、次の手順に従います。
 [**メモ**] フィールドに入力するテキストは、タスク ガイドのステップのテキストの*下*に表示されます。 メモのテキストを読み取るには、ユーザーはポップアップ ウィンドウでステップのテキストを展開する必要があります。 この場所は、ユーザーにとって役立つ可能性があるが、アクションを完了するために必要とはしない、オプションの参考資料またはその他の情報に適しています。
 
 ## <a name="help-in-retail-modern-pos-and-cloud-pos"></a>Retail Modern POS およびクラウド POS のヘルプ
-独自のタスク記録をテキストとして表示するために、Retail Modern POS およびクラウド POS の [ヘルプ] ウィンドウに表示するには、タスク記録を BPM ライブラリに保存して、ヘルプ システム パラメーターを BPM ライブラリにポイントするように更新します。 詳細については、「[ヘルプ システムの接続](/dynamics365/unified-operations/dev-itpro/get-started/help-connect)」を参照してください。 Retail Modern POS およびクラウド POS のヘルプでは、リアルタイムで LCS を検索します。 Microsoft Dynamics 365 for Retail のヘルプ システムのパラメーターで選択されているすべての BPM ライブラリを検索し、関連する結果を示します。 [**ヘルプ**] メニューにアクセスするには、画面の上部にある [**ヘルプ**] ボタン (疑問符) をクリックし、検索ボックスにプロセス名を入力して、検索ボタンをクリックします。 
+独自のタスク記録をテキストとして表示するために、Retail Modern POS およびクラウド POS の [ヘルプ] ウィンドウに表示するには、タスク記録を BPM ライブラリに保存して、ヘルプ システム パラメーターを BPM ライブラリにポイントするように更新します。 詳細については、「[ヘルプ システムの接続](../fin-and-ops/get-started/help-connect.md)」を参照してください。 Retail Modern POS およびクラウド POS のヘルプでは、リアルタイムで LCS を検索します。 Microsoft Dynamics 365 for Retail のヘルプ システムのパラメーターで選択されているすべての BPM ライブラリを検索し、関連する結果を示します。 [**ヘルプ**] メニューにアクセスするには、画面の上部にある [**ヘルプ**] ボタン (疑問符) をクリックし、検索ボックスにプロセス名を入力して、検索ボタンをクリックします。 
 
 [![ヘルプ ボタン](./media/help.jpg)](./media/help.jpg) 
 

@@ -19,10 +19,10 @@ ms.author: maertenm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 9bc4dba3c31e82da2285ef5e339ace634fbd6fde
+ms.sourcegitcommit: d67ad79c068651f32ce7dc776bc460698557bc29
+ms.openlocfilehash: 069af29012f75aa1a15ba9df86fe1fc9e04eaf41
 ms.contentlocale: ja-jp
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -45,7 +45,7 @@ ms.lasthandoff: 07/27/2017
 ## <a name="electronic-signatures-in-dynamics-365-for-finance-and-operations"></a>Dynamics 365 for Finance and Operations の電子署名
 Finance and Operations では、重要なビジネス プロセスに電子署名を使用できます。 組み込みの電子署名機能を持つプロセスもあります。 任意のデータベース テーブルおよびフィールド用にカスタム署名要求を作成することもできます。 
 
-電子署名には組み込みのデジタル署名機能があります。 ドキュメントに署名する各ユーザーは、有効な暗号証明書を取得する必要があります。 ドキュメントに署名するときに、その証明書に関連付けられたプライベート キーが検証されます。 Finance and Operations は、監査証跡を提供するために電子署名の情報をログに記録します。 電子署名を設定するには、「[電子署名の設定 (タスク ガイド)](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-up-electronic-signatures)」を参照してください。
+電子署名には組み込みのデジタル署名機能があります。 ドキュメントに署名する各ユーザーは、有効な暗号証明書を取得する必要があります。 ドキュメントに署名するときに、その証明書に関連付けられたプライベート キーが検証されます。 Finance and Operations は、監査証跡を提供するために電子署名の情報をログに記録します。 電子署名を設定するには、「[電子署名の設定 (タスク ガイド)](tasks/set-up-electronic-signatures.md)」を参照してください。
 
 ## <a name="users-who-require-access-to-electronic-signatures"></a>電子署名へのアクセスを必要とするユーザー
 通常、3 種類のユーザーが、電子署名に対するセキュリティ アクセス権を必要としています。こららのユーザーとは、電子署名の管理者、署名者、電子署名の監査担当者です。

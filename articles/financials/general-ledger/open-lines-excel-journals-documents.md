@@ -18,11 +18,11 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 1fed8d162a37736883365fa765a059e5beff06be
+ms.translationtype: HT
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: a4f9e2c5203881f3faeebe4d33e72c7b3bcaa591
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -50,7 +50,7 @@ ms.lasthandoff: 06/13/2017
 
 行が公開されると、それらの行が財務仕訳帳に設定されているルールに準拠していることが確認されます。 行が公開されると、ユーザーは Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition から伝票を編集または投稿することができます。 
 
-テンプレートに財務分析コードを追加するには、追加の変更が必要です。 詳細については、「[Microsoft Excel テンプレートに分析コードを追加する](/dynamics365/unified-operations/dev-itpro/financial/add-dimensions-excel-templates)」を参照してください。 エンティティに分析コードを追加した後は、Excel デザイナーで使用でき、テンプレートに追加することができます。
+テンプレートに財務分析コードを追加するには、追加の変更が必要です。 詳細については、「[Microsoft Excel テンプレートに分析コードを追加する](../../dev-itpro/financial/add-dimensions-excel-templates.md)」を参照してください。 エンティティに分析コードを追加した後は、Excel デザイナーで使用でき、テンプレートに追加することができます。
 
 
 

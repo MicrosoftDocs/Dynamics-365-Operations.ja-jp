@@ -18,11 +18,11 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: f76e431320414b508728cbe9fe20456f107cbe40
-ms.openlocfilehash: a5dd28e79cbd66e79311c0549c63ea844394ab14
+ms.translationtype: HT
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: c36795a071cc72721558bfa8984ecf1f47501c91
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/09/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -48,7 +48,7 @@ ms.lasthandoff: 06/09/2017
 -   [発注書の作成](purchase-order-creation.md)
 -   [発注書の承認および確認](purchase-order-approval-confirmation.md)
 -   [発注書に対応する製品受領書](product-receipt-against-purchase-orders.md)
--   [仕入先請求書の概要](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview)
+-   [仕入先請求書の概要](../../financials/accounts-payable/vendor-invoices-overview.md)
 
 ## <a name="types-of-purchase-orders"></a>発注書のタイプ
 PO には次の 3 つのタイプがあります。 注文書を作成すると、タイプを指定する必要があります。 [**調達パラメーター**] ページで、新しい注文の既定の注文のタイプを設定できます。
@@ -92,7 +92,7 @@ PO には次の 3 つのタイプがあります。 注文書を作成すると�
 
 [発注書に対応する製品受領書](product-receipt-against-purchase-orders.md)
 
-[仕入先請求書の概要](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview)
+[仕入先請求書の概要](../../financials/accounts-payable/vendor-invoices-overview.md)
 
 
 

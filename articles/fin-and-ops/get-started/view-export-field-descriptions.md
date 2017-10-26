@@ -16,13 +16,13 @@ ms.custom: 11534
 ms.assetid: e2795f51-a8a7-4c74-bdb9-b1be93bdd358
 ms.search.region: Global
 ms.author: yuyus
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 7898ff427ede4447a5798d4989ffd3088a776d9c
+ms.translationtype: HT
+ms.sourcegitcommit: 908f854e5ca50f4298110c08c87fefd9427b5cc9
+ms.openlocfilehash: 841c18630a59c3f5a7b51cd005962fa8a7f7163f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -37,7 +37,7 @@ Microsoft Dynamics 365 for Finance and Operations には、いくつかのさら
 
 すべてのページにフィールドの説明があるわけではありません。 より複雑なフィールドだけに説明を提供し、フィールドの使用が明確な場合は提供しません。 したがって、一部のページは、任意のフィールドの説明がない、一部のページには説明がある、多くのパラメーターのページなど複雑なページには多くの説明があります。 
 
-Finance and Operations の開発環境に対するアクセス権を持つ場合、新しいフィールドの説明を追加して既存の説明をカスタマイズすることができます。 たとえば、フィールドの説明に会社固有の情報を追加できます。 詳細については、「[のフィールド ヘルプのカスタマイズ](/dynamics365/unified-operations/dev-itpro/user-interface/customize-field-help)」を参照してください。
+Finance and Operations の開発環境に対するアクセス権を持つ場合、新しいフィールドの説明を追加して既存の説明をカスタマイズすることができます。 たとえば、フィールドの説明に会社固有の情報を追加できます。 詳細については、「[のフィールド ヘルプのカスタマイズ](../../dev-itpro/user-interface/customize-field-help.md)」を参照してください。
 
 ## <a name="see-field-descriptions-in-the-user-interface"></a>ユーザー インターフェイスのフィールドの説明を参照してください。
 フィールドの上にマウス ポインターを移動するとフィールド名が表示されます。 説明がない場合、フィールドの上にマウス ポインターを移動するとフィールド名が表示されます。 (注記: Dynamics AX 7.0 (2016 年 2 月) のフィールドの説明では、[**フィールドの説明**] ページでのみ表示できます。) 次の図は、[**カウント中に品目をロック**] フィールドの上に置くときに表示されるフィールドの説明を示しています。 
@@ -101,7 +101,7 @@ Finance and Operations の開発環境に対するアクセス権を持つ場合
 <a name="see-also"></a>参照
 --------
 
-[フィールド ヘルプのカスタマイズ](/dynamics365/unified-operations/dev-itpro/user-interface/customize-field-help)
+[フィールド ヘルプのカスタマイズ](../../dev-itpro/user-interface/customize-field-help.md)
 
 
 

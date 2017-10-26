@@ -20,10 +20,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: ebcae0e323203a98a9b8ed1113db945fceaaa4af
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: e1c29f597b190bd36b6fc64b16913ecdd02daf75
 ms.contentlocale: ja-jp
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -68,7 +68,7 @@ ms.lasthandoff: 07/27/2017
 製造指図には多くの作業があり、各作業を別のベンダーに割り当てることができます。 したがって、エンド ツーエンドの製造指図で複数の購買発注が発生する可能性があります。
 
 ## <a name="subcontracting-of-production-flow-activities"></a>生産フロー活動の委託
-[リーン生産](lean-manufacturing-overview.md) ソリューションは、[生産フロー](/dynamics365/unified-operations/supply-chain/production-control/tasks/create-production-flow-version) (タスク ガイド トピック) 活動に関連するサービスとして外注作業をモデル化します。 したがって、この種類の外注は [activity-based subcontracting](activity-based-subcontracting.md) とも呼ばれます。 特殊原価グループ タイプの**直接アウトソーシング**が導入され、外注サービスは完成品の BOM の一部ではありません。 リーン製造を使用する場合、すべてのアクティビティは、1 つまたは複数の生産フロー アクティビティに関連するかんばんによって定義されます。 これまでの説明は、製造指図の説明と同じように思えます。 ただし、製造指図は常に完成品で終了する必要がありますが、半製品を供給するためにかんばんを登録することができます。 新しい製品と BOM レベルを導入する必要はありません。  
+[リーン生産](lean-manufacturing-overview.md) ソリューションは、[生産フロー](tasks/create-production-flow-version.md) (タスク ガイド トピック) 活動に関連するサービスとして外注作業をモデル化します。 したがって、この種類の外注は [activity-based subcontracting](activity-based-subcontracting.md) とも呼ばれます。 特殊原価グループ タイプの**直接アウトソーシング**が導入され、外注サービスは完成品の BOM の一部ではありません。 リーン製造を使用する場合、すべてのアクティビティは、1 つまたは複数の生産フロー アクティビティに関連するかんばんによって定義されます。 これまでの説明は、製造指図の説明と同じように思えます。 ただし、製造指図は常に完成品で終了する必要がありますが、半製品を供給するためにかんばんを登録することができます。 新しい製品と BOM レベルを導入する必要はありません。  
 
 かんばんルールは非常に動的なものであるため、生産フロー上で同じ製品のさまざまな供給形態をモデル化できます。 リーン下請けを使用する場合、品目フローと財務フローは厳密に分離されます。 すべての物質フローは、かんばん活動によって表されます。 サービス プロダクトの購買発注とそれらのサービスのレシート転記は、生産フローのかんばんジョブのステータスに基づいて自動化することができます。 かんばんジョブは発注書が作成される前でも開始および完了できます。 外注伝票（購買発注とサービスの購買受領）は、期間とサービスによって集計することができます。 したがって、ベンダーが単一部品フローで外注サービスを提供する反復性の高い業務であっても、購買伝票および明細の数を少なく抑えることができます。
 

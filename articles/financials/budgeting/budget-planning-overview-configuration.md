@@ -17,12 +17,11 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
-ms.openlocfilehash: e2c956969626836fadb0a6cac6dbb1d57f169f28
+ms.translationtype: HT
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: 64d915a5e039ba242f6d5ae5f43c8e09d6ca282e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -78,7 +77,7 @@ Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition で使用�
 
 **組織階層** ページで、各予算計画プロセスの予算計画の階層として組織階層を指定できます。 予算計画の階層は、他の目的に使用される標準的な組織階層と一致させる必要はありません。 この階層は、データの集計および配布に使用されるため、別の構造にすることもできます。 例のスキーマでは、販売部門は予算と財務部門を含む本社より下のレベルです。 この構造は販売部門の工程を管理するために使用される構造とは異なる可能性があります。 1 つの組織階層のみを各予算計画プロセスに割り当てることができます。 
 
-詳細については、「[組織と組織階層](/dynamics365/unified-operations/fin-and-ops/organization-administration/organizations-organizational-hierarchies)」を参照してください。
+詳細については、「[組織と組織階層](../../fin-and-ops/organization-administration/organizations-organizational-hierarchies.md)」を参照してください。
 
 ### <a name="user-security"></a>ユーザーのセキュリティ
 

@@ -18,11 +18,11 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 41436dab710a5fee0fe0800dff1ebefefa841afc
+ms.translationtype: HT
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: 6119f1c85b68e6ed5dce01a266c4e681dfc4cd30
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 06/13/2017
 
 このトピックでは、Finance and Operations で仕入先コラボレーションを使用して発注書を処理し委託販売在庫を監視する方法について説明します。
 
-このトピックでは、Microsoft Finance and Operations で仕入先コラボレーションを使用して顧客に対応する方法について説明します。 これには、発注書を監視して対応する方法、および委託販売在庫を監視する方法に関する情報が含まれます。 請求書の作業で仕入先コラボレーションを使用することもできます。 詳細については次を参照してください。[仕入先コラボレーションの請求ワークスペース](/dynamics365/unified-operations/financials/accounts-payable/vendor-portal-invoicing-workspace)
+このトピックでは、Microsoft Finance and Operations で仕入先コラボレーションを使用して顧客に対応する方法について説明します。 これには、発注書を監視して対応する方法、および委託販売在庫を監視する方法に関する情報が含まれます。 請求書の作業で仕入先コラボレーションを使用することもできます。 詳細については次を参照してください。[仕入先コラボレーションの請求ワークスペース](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md)
 
 ## <a name="working-with-purchase-orders"></a>発注書に関連した作業
 **発注書確認**ワークスペースにより、確認のために送られてきた発注書に対応することができます。 顧客からのアクションを待っている発注書、および、確認済みではあるが未処理の発注書についての情報を確認することもできます。 **発注書確認**ワークスペースには、3 つのリストがあります。

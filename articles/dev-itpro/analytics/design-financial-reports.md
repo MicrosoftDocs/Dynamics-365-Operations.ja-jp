@@ -17,12 +17,11 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 0dc453ab56a2d381afa6e22d847f0b1eb7a16e7e
+ms.translationtype: HT
+ms.sourcegitcommit: b49cfe39732a450e4723419c50d8bcc3d64b7ec9
+ms.openlocfilehash: d1fbcefd80f1c48fafbbcb6315406856eaae68a0
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -50,7 +49,7 @@ ms.lasthandoff: 06/13/2017
 4.  総勘定元帳の [**照会およびレポート**] の下の [**財務レポート**] に移動します。
 5.  [**GL の詳細 – 既定**] という名前のレポートの行を選択します。
 6.  [**編集**] を選択します。 注記: クリック ワンス レポート デザイナーをダウンロードすると、ログインするように求めるメッセージが表示されます。 資格情報を使用してログインします。
-7.  基準年を 2012 に変更し、[**生成**] を選択します。 レポート デザイナーからレポートが生成された場合、新しいブラウザーのタブで開きます。 新しいブラウザー タブのレポートを活用するか、または元のブラウザー タブに移動し、[**財務レポート**] リストからそのレポートを選択して任意のレポートを開きます。
+7.  基準年を 2012 に変更し、[**生成**] を選択します。 レポート デザイナーからレポートが生成された場合、新しいブラウザーのタブで開きます。新しいブラウザー タブのレポートを活用するか、元のブラウザー タブに移動し、[**財務レポート**] リストからそのレポートを選択して任意のレポートを開きます。
 8.  開いたレポートで、レポートの勘定の詳細に調査する金額の 1 つを選択します。
 9.  勘定の詳細で 1 回、データがある勘定を選択し、**レポート トランザクション レベルを表示** します。 レポートのトランザクション レベルで、このレポートのデザインに含まれているプロパティ (属性) を確認できます。 トランザクションおよび勘定に応じて、属性のいくつかまたはすべてが表示されます。
 10. レポート トランザクション レベルを閉じます。
@@ -183,8 +182,8 @@ ms.lasthandoff: 06/13/2017
 18. 変更を [**保存**] して、**生成します**。 レポートが完了し開くと、レポートを活用できます。
 
 ## <a name="additional-resources"></a>追加リソース
-[財務レポート](/dynamics365/unified-operations/financials/general-ledger/financial-reporting-getting-started) 
-[財務レポートの表示](/dynamics365/unified-operations/financials/general-ledger/view-financial-reports) 
+[財務レポート](../../financials/general-ledger/financial-reporting-getting-started.md) 
+[財務レポートの表示](../../financials/general-ledger/view-financial-reports.md) 
 [Dynamics Financial Reporting ブログ](http://blogs.msdn.com/b/dynamics_financial_reporting/)
 
 

@@ -17,10 +17,10 @@ ms.author: twheeloc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
-ms.openlocfilehash: a8ba439ff643fce4811be9224a3edf96b2b9025c
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: c27960254a8e5f748935dfb51ada88af24f098a4
 ms.contentlocale: ja-jp
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -38,11 +38,11 @@ Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition には、
 
 ## <a name="what-do-i-have-to-set-up"></a>何を設定する必要がありますか。
 
-- ER を使用して小切手を印刷するには、少なくとも 1 つの有効な小切手コンフィギュレーションを ER コンフィギュレーションにインポートしておく必要があります。 手順については、[Lifecycle Services の電子申告コンフィギュレーションのダウンロード](/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs)を参照してください。
+- ER を使用して小切手を印刷するには、少なくとも 1 つの有効な小切手コンフィギュレーションを ER コンフィギュレーションにインポートしておく必要があります。 手順については、[Lifecycle Services の電子申告コンフィギュレーションのダウンロード](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)を参照してください。
 - 銀行口座に現金および銀行管理小切手をコンフィギュレーションする時は、[**一般的な電子エクスポート形式**] チェック ボックスを選択してから、適切な小切手フォーマットをエクスポート形式コンフィギュレーションとして選択します。
 - 送金に印刷される伝票の明細行の数を指定する必要もあります。 この数を計算する際は確実にヘッダー行も含めるようにします。 2 つのサンプル小切手フォーマットについては、推奨される明細行の数は 17 です。 ただし、小切手ストックおよびプリンター ドライバーによってこの番号は異なります。
 - テスト用小切手を印刷して小切手のレイアウトを検証することをお勧めします。 テスト用小切手を印刷するには、[**印刷テスト**] オプションを選択します。 サンプル小切手フォーマットは、Microsoft Excel の詳細なプリンターのプロパティで [**余白**] を [**なし**] に設定すると最適に機能します。 テスト用小切手が生成されてから、Excel 出力の編集機能を有効にし、すべての余白が **0** (ゼロ) に設定されるようにページ レイアウトを構成します。 小切手のテスト コピーを小切手ストックと比較し、配置に問題がなくなるまで設定を調整します。
 - 支払仕訳でコンフィギュレーションしてある銀行口座に対する支払を生成する時、小切手は指定されたフォーマットを使用して印刷されます。
 
-詳細については、「[電子レポートのフォーマットを修正する](/dynamics365/unified-operations/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template)」を参照してください。
+詳細については、「[電子レポートのフォーマットを修正する](../../dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md)」を参照してください。
 

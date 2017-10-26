@@ -14,13 +14,13 @@ ms.search.scope: AX 7.0.0, Operations, Core
 ms.custom: 21761
 ms.search.region: Global
 ms.author: margoc
-ms.search.validFrom: 2017-06-30T00:00:00.000Z
+ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
 ms.translationtype: HT
-ms.sourcegitcommit: fc446f381850f4f42b6dbc886646d3d32f2d5dd7
-ms.openlocfilehash: 831550256176df6fa8542b9985eba1b9b1282fcb
+ms.sourcegitcommit: c73eeaaf28df8db720431d4bcd317c9721baa99d
+ms.openlocfilehash: 75e2a31f1c0e82c6f0dcf92309d7673243e1bdc9
 ms.contentlocale: ja-jp
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -35,7 +35,7 @@ Dynamics 365 for Finance and Operations は、簡単な E メールでのサイ�
 
 ## <a name="step-two-choose-a-deployment-option"></a>ステップ 2: 配置オプションを選択
 これで、クラウドまたはオンプレミスの Microsoft Dynamics 365 for Finance and Operations、Enterprise エディションを配置できます。 クラウド配置では、顧客のデータ センター内にオンプレミス配置がローカルに配置されたときに、Microsoft で完全に管理されている ERP サービスが提供されます。
-詳細については、[配置オプション](/dynamics365/unified-operations/dev-itpro/deployment/choose-deployment-type)を参照してください。 
+詳細については、[配置オプション](../../dev-itpro/deployment/choose-deployment-type.md)を参照してください。 
 
 ## <a name="step-three-buy-and-manage-a-subscription"></a>ステップ 3: 定期売買の購入と管理
 定期売買のオプションを表示するには、[Dynamics 365](https://www.microsoft.com/en-us/dynamics365/pricing) の価格ページに移動します。 このページには、組織のニーズに合わせて複数の異なる計画が含まれています。
@@ -60,7 +60,7 @@ Dynamics 365 for Finance and Operations の定期売買には多くのオプシ�
 Microsoft クラウド ソリューション プロバイダーはお客様と密接に協力して、企業や組織のニーズを理解します。 [Microsoft パートナー センター ポータルを使用し、ニーズに合わせてパートナーを検索する](https://partnercenter.microsoft.com/en-us/partner/home)。 
 
 ### <a name="buy-through-a-dynamics-partner-on-premises"></a>Dynamics パートナー (オンプレミス) から購入
-Finance and Operations オンプレミスを購入するにはパートナーと協力する必要があります。 詳細については、[Dynamics 365 for Finance and Operations, Enterprise Edition (オンプレミス) の購入](/dynamics365/unified-operations/dev-itpro/get-started/purchase-on-premises)を参照してください。
+Finance and Operations オンプレミスを購入するにはパートナーと協力する必要があります。 詳細については、[Dynamics 365 for Finance and Operations, Enterprise Edition (オンプレミス) の購入](purchase-on-premises.md)を参照してください。
 
 ### <a name="choose-your-support-option"></a>サポート オプションの選択
 Microsoft は柔軟性の高い、業界をリードするサポート、サービス、およびリソースを提供することにより、ユーザーが技術的な問題に素早く対処し、Dynamics 365 の投資収益率を最大限に高めます。 業務要件を最大限に満たす計画を選択します。 
