@@ -1,7 +1,7 @@
 ---
 title: "日本の固定資産減価償却のよく寄せられる質問"
 description: "この記事は、日本の固定資産の減価償却についてよく寄せられる質問に回答します。"
-author: RichardLuan
+author: yijialuan
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

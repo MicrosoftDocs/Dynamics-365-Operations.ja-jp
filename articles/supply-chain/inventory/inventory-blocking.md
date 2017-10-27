@@ -20,10 +20,10 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 7d00aaa272de32d4ef2082bf1822125800ca8a1e
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: a59a382f90cb34c9479d64931790137f00040c6b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -64,9 +64,9 @@ ms.lasthandoff: 07/27/2017
 <a name="see-also"></a>参照
 --------
 
-[在庫ブロックの作成および管理 (タスク ガイド)](/dynamics365/unified-operations/supply-chain/inventory/tasks/create-maintain-inventory-blocking)
+[在庫ブロックの作成および管理 (タスク ガイド)](tasks/create-maintain-inventory-blocking.md)
 
 [品質管理プロセス](quality-management-processes.md)
 
-[商品の品質の調査 (タスク ガイド)](/dynamics365/unified-operations/supply-chain/inventory/tasks/inspect-quality-goods)
+[商品の品質の調査 (タスク ガイド)](tasks/inspect-quality-goods.md)
 

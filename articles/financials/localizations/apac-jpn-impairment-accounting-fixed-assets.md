@@ -1,7 +1,7 @@
 ---
 title: "固定資産の減損会計"
 description: "このトピックでは、日本の固定資産の減損会計に関する情報について説明します。"
-author: RichardLuan
+author: yijialuan
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

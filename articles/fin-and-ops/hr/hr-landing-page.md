@@ -17,10 +17,10 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 04f8cb1a6375be9371bca2af7e4044392ce7322b
-ms.openlocfilehash: 49f7a8f69729002812e78de757ae889266327ff4
+ms.sourcegitcommit: 04d459a2fd0fdf9c201d9e96b37234846eb9ccf0
+ms.openlocfilehash: e074426f4b863e692b91ce1ebf3b428435dadd94
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/02/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -47,38 +47,38 @@ ms.lasthandoff: 08/02/2017
 
 人事管理の仕事では、部門、職務、職位などの要素を使用して、組織の構造を設計する必要があります。 これらの要素は、人事管理において構成する基本要素に含まれます。 個々の従業員は、ジョブに関連付けられている職位に割り当てられます。
 
--   [部門、職務、職位を使用した従業員の編成](/dynamics365/unified-operations/talent/departments-jobs-positions)
--   [会社固有の HR パラメーターの設定](/dynamics365/unified-operations/talent/set-up-company-specific-hr-parameters)
--   [法人間の HR パラメーターの設定](/dynamics365/unified-operations/talent/set-up-hr-parameters-across-legal-entities) 
+-   [部門、職務、職位を使用した従業員の編成](../../talent/departments-jobs-positions.md)
+-   [会社固有の HR パラメーターの設定](../../talent/set-up-company-specific-hr-parameters.md)
+-   [法人間の HR パラメーターの設定](../../talent/set-up-hr-parameters-across-legal-entities.md) 
 
 ## <a name="recruit-hire-and-motivate-employees"></a>従業員の募集、雇用、および動機付け
 
 採用プロジェクトでは、空いている職位の広告に使用するコンテンツの管理や、空いているジョブへの応募を管理します。 これらを使用して、特定の採用プロジェクトの人材募集に対する反応、または特定の申請者を追跡し、オープンな職位の状態を更新します。 また、個別の応募者の雇用や、季節的なビジネス ニーズに合わせて複数の作業者の雇用を行うような大量雇用プロジェクトの管理ができます。
 
--   [採用プロセスの管理](/dynamics365/unified-operations/talent/manage-recruiting-process)
--   [大量雇用プロジェクト](/dynamics365/unified-operations/talent/mass-hire-projects) 
+-   [採用プロセスの管理](manage-recruiting-process.md)
+-   [大量雇用プロジェクト](mass-hire-projects.md) 
 
 スタッフを雇用した後、計画を作成して効率良く公平に報酬を管理し、組織が従業員に貸与するコンピューターや電話などの品目を管理します。 固定報酬と変動報酬の計画を作成でき、また、その計画の基準に適合する報酬プランを適用するルールを定義できます。
 
--   [報酬プラン](/dynamics365/unified-operations/talent/compensation-plans)
--   [固定報酬プランの作成](/dynamics365/unified-operations/talent/create-fixed-compensation-plans)
--   [変動報酬プランの作成](/dynamics365/unified-operations/talent/create-variable-compensation-plans)
+-   [報酬プラン](../../talent/compensation-plans.md)
+-   [固定報酬プランの作成](../../talent/create-fixed-compensation-plans.md)
+-   [変動報酬プランの作成](../../talent/create-variable-compensation-plans.md)
 
 ## <a name="develop-and-train-employees"></a>従業員の開発とトレーニング
 
 従業員が重要なビジネス ニーズを満たしながらキャリア目標を達成できるように、目標の設定、業績評価の作成、フィードバックの管理を行うことができます。また、従業員が必要なスキルを開発できるように、講師をコースに割り当てる前、または誰かをコースに登録する前に、講師、コースのタイプ、コースの説明、議事録、追跡、およびセッションを設定することもできます。 講師は、作業者、申請者、または連絡先として既に存在する必要があります。
 
--   [パフォーマンス管理](/dynamics365/unified-operations/talent/performance-management-overview)
--   [要員のスキルとビジネス ニーズの調整](/dynamics365/unified-operations/talent/skills)
--   [コースを通じたトレーニングの管理](/dynamics365/unified-operations/talent/courses)
+-   [パフォーマンス管理](../../talent/performance-management-overview.md)
+-   [要員のスキルとビジネス ニーズの調整](../../talent/skills.md)
+-   [コースを通じたトレーニングの管理](../../talent/courses.md)
 
 ## <a name="create-and-maintain-benefits"></a>福利厚生の作成と維持
 
 賃金、給与、賞与といった従業員への報酬のほかに、健康保険、退職後の計画などの福利厚生プログラムを作成できます。 また、貸与プログラムなど、会社が従業員にコンピューターや電話などのアイテムを貸与する福利厚生を管理することもできます。
 
--   [福利厚生プログラムの管理](/dynamics365/unified-operations/talent/manage-benefit-program)
--   [給付金の適格性ポリシー](/dynamics365/unified-operations/talent/benefit-eligibility-policies)
--   [作業者への貸与品目の管理](/dynamics365/unified-operations/talent/loan-items)
+-   [福利厚生プログラムの管理](../../talent/manage-benefit-program.md)
+-   [給付金の適格性ポリシー](../../talent/benefit-eligibility-policies.md)
+-   [作業者への貸与品目の管理](../../talent/loan-items.md)
 
 ## <a name="maintain-workplace-safety-and-compliance"></a>職場の安全性とコンプライアンスの管理
 
@@ -92,10 +92,10 @@ Microsoft Dynamics AX は、アメリカ障害者法 (Americans with Disabilitie
 
 アンケートをデザインおよび管理して、さまざまな目的のために情報を収集できます。 アンケート機能では、アンケートをデザインおよび作成できます。 アンケートの準備ができたら、広範囲または特定の回答者のセットに配布して回答をもらいます。 回答者から回答を受け取ったら、結果を確認して分析できます。
 
--   [アンケート](/dynamics365/unified-operations/talent/questionnaires)
--   [アンケートのデザイン](/dynamics365/unified-operations/talent/design-questionnaires)
--   [アンケートの配布と記入](/dynamics365/unified-operations/talent/distribute-questionnaires)
--   [アンケート結果の表示と評価](/dynamics365/unified-operations/talent/evaluate-questionnaire-results)
+-   [アンケート](../../talent/questionnaires.md)
+-   [アンケートのデザイン](../../talent/design-questionnaires.md)
+-   [アンケートの配布と記入](../../talent/distribute-questionnaires.md)
+-   [アンケート結果の表示と評価](../../talent/evaluate-questionnaire-results.md)
 
 
 

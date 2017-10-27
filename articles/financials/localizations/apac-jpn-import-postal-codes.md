@@ -1,7 +1,7 @@
 ---
 title: "日本の郵便番号のインポート"
 description: "このトピックでは、日本の郵便番号をインポートする方法について説明します。"
-author: RichardLuan
+author: yijialuan
 manager: AnnBe
 ms.date: 05/29/2017
 ms.topic: article

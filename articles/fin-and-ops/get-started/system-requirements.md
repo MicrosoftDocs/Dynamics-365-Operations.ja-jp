@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 5230911e1febc66b294f1331846373a472789adf
-ms.openlocfilehash: 46eacb2a01c3bfcc7144c7d8c39ee0189fd72e16
+ms.sourcegitcommit: d67ad79c068651f32ce7dc776bc460698557bc29
+ms.openlocfilehash: 7fe11966b27eb0793a47835e05e465d809bf3407
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -42,7 +42,7 @@ Web アプリケーションは、指定されたオペレーティング シス
 各 Web ブラウザの最新版を検索するには、ソフトウェア メーカーの Web サイトに移動します。 
 
 > [!NOTE]
-> -   Task Recorder からスクリーンショットのキャプチャを有効にし、生成された Microsoft Word ドキュメントに含めるには、プレリリース版の Chrome 拡張機能をインストールする必要があります。 <!---For instructions about how to install the extension, see [Screenshot Extension setup](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder).-->
+> -   Task Recorder からスクリーンショットのキャプチャを有効にし、生成された Microsoft Word ドキュメントに含めるには、プレリリース版の Chrome 拡張機能をインストールする必要があります。 <!---For instructions about how to install the extension, see [Screenshot Extension setup](../../dev-itpro/user-interface/task-recorder).-->
 > -   ワークフロー エディターは ClickOnce アプリケーションとして起動されます。 Microsoft Edge と Internet Explorer (Microsoft Windows のサポートされているバージョン) のみが、ClickOnce アプリケーションをサポートします。 ワークフロー エディター ClickOnce アプリケーションには、64 ビットの互換性のあるオペレーティング システムが必要です。
 > -   財務報告のレポート デザイナーは、ClickOnce アプリケーションとして起動されます。 それには 64 ビットの互換性のあるオペレーティング システムが必要です。 Chrome を使用している場合、レポート デザイナーのクライアントをダウンロードするために ClickOnce 拡張機能をインストールする必要があります。 匿名モードで Chrome を使用する場合、ClickOnce の拡張機能が匿名モードに対しても有効化されていることを確認します。
 > -   PDF ファイルをプレビューするには、Windows 10 の Microsoft Edge (公開されている最新のバージョン)、もしくは Windows 10、Windows 8.1、Windows 8、Windows 7、または Google Nexus 10 タブレットの Google Chrome (公開されている最新のバージョン) などの最新のブラウザを使用することをお勧めします。
@@ -70,7 +70,7 @@ Finance and Operations では、ドキュメント回覧エージェントなど
 ## <a name="supported-microsoft-office-applications"></a>サポートされている Microsoft Office アプリケーション
 次の Microsoft Office アプリケーションは、Finance and Operations のクラウドおよびオンプレミス配置でサポートされています。
 
--   Microsoft Excel と Word のアドインを実行するには、Windows か Mac 用の Microsoft Office 2016 をインストールしておく必要があります。 バージョン要求の詳細については、[Office 統合トラブルシューティング](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-troubleshooting) を参照してください。
+-   Microsoft Excel と Word のアドインを実行するには、Windows か Mac 用の Microsoft Office 2016 をインストールしておく必要があります。 バージョン要求の詳細については、[Office 統合トラブルシューティング](../../dev-itpro/office-integration/office-integration-troubleshooting.md) を参照してください。
 -   [Excel にエクスポート] または [Word にエクスポート] 機能によって生成されたドキュメントを表示するには、Microsoft Office 2007 以降をインストールしておく必要があります。
 
 ## <a name="retail-modern-pos-requirements"></a>Retail Modern POS 要件
@@ -153,10 +153,10 @@ Finance and Operations では、ドキュメント回覧エージェントなど
 -   少なくとも 10 GB の空き領域 (チャンネル データベースが大量の領域を必要とする場合があります。）
 
 ## <a name="requirements-for-development-on-local-vms"></a>ローカル VM の開発要件
-ローカル仮想マシン (VM) の開発要件については、[オンプレミス実行の VM](../dev-tools/access-instances.md) を参照してください。
+ローカル仮想マシン (VM) の開発要件については、[オンプレミス実行の VM](../../dev-itpro/dev-tools/access-instances.md) を参照してください。
 
 
 ## <a name="see-also"></a>参照
 
-[Dynamics 365 for Finance and Operations, Enterprise Edition の評価版を取得](/dynamics365/unified-operations/dev-itpro/dev-tools/get-evaluation-copy)
+[Dynamics 365 for Finance and Operations, Enterprise Edition の評価版を取得](../../dev-itpro/dev-tools/get-evaluation-copy.md)
 

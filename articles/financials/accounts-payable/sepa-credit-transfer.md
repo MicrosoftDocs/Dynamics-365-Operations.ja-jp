@@ -16,13 +16,13 @@ ms.custom: 11124
 ms.assetid: 36b0f870-16d4-4bbb-8da5-e747e69b970d
 ms.search.region: Global
 ms.author: mrolecki
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: bc14ab554a298d09bb852e96503b4cd3f4b36d3c
+ms.translationtype: HT
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: 49dfae79fe3914bcac9447d4fe3959128ff434ec
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -35,7 +35,7 @@ ms.lasthandoff: 06/13/2017
 
 ## <a name="what-is-a-credit-transfer-message"></a>口座振替メッセージとは何ですか。
 口座振替メッセージとは、開始側 (会社) が自身の口座から債権者に資金移動を送信する要求です。 口座振替メッセージの国/地域固有のおよび銀行固有の実装が数多くあります。 そのいくつかは 1 つの国/地域内で使用され、いくつかは標準となります。 1 つの確立されているグローバル基準は、口座振替などの ISO 20022 およびその起動開始メッセージです。 次の図は、選択された口座振替メッセージの関係と補償を示します。 
-![口座振替](./media/credit-transfer.jpg) 口座振替メッセージ\[/ キャプション\] 
+![口座振替](./media/credit-transfer.jpg) 口座振替メッセージ 
 
 ## <a name="what-are-iso-20022-and-sepa-payments"></a>ISO 20022 および SEPA 支払とは何ですか。
 単一ユーロ支払地域 (SEPA) は欧州委員会によって設定され、個人、事業または組織および銀行がどの国または地域にあるかに関係なく、すべての電子支払は国内と見なされます。 国内支払と国境を越えた支払の間に違いはありません。 SEPA には、28 の欧州連合 (EU) の加盟国とアイスランド、リヒテンシュタイン、ノルウェー、スイス、およびモナコとサンマリノが含まれます。 SEPA により、欧州経済領域 (EEA) 内の支払トランザクションの単一市場が形成されます。 最終的に、SEPA により、銀行、事業、および個人が扱う支払形式の数を減らすと予想されます。 指令への支払サービス ディレクティブ (PSD) を介した SEPA 支払の法的根拠は欧州委員会が設定しました。 欧州決済協議会 (EPC) は、次の活動で SEPA をサポートしています。
@@ -59,7 +59,7 @@ SEPA 口座振替は、個人または 1 つの会社から別の会社または
 必要に応じていつでも Microsoft Dynamics Lifecycle services (LCS) の共有アセット ライブラリに移動して、**GER コンフィギュレーション**資産タイプのある利用可能なファイルで最新の一覧を表示する必要があります。 次のセクション、"何を設定する必要がありますか。"では、利用可能なコンフィギュレーションおよびインポート選択されているコンフィギュレーションを表示するための LCS リポジトリの作成方法について説明するトピックへのリンクを提供します。
 
 ## <a name="what-do-i-have-to-set-up"></a>何を設定する必要がありますか。
--   口座振替ファイルを作成する前に、少なくとも 1 つの有効な口座振替コンフィギュレーションを、ER コンフィギュレーションにインポートする必要があります。 手順については、[Lifecycle Services の電子申告コンフィギュレーションのダウンロード](/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs)を参照してください。
+-   口座振替ファイルを作成する前に、少なくとも 1 つの有効な口座振替コンフィギュレーションを、ER コンフィギュレーションにインポートする必要があります。 手順については、[Lifecycle Services の電子申告コンフィギュレーションのダウンロード](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)を参照してください。
 -   支払の買掛金勘定の方法をコンフィギュレーションするときに、**一般的な電子申告** チェック ボックスをオンにし、エクスポート形式のコンフィギュレーションとして適切な口座振替形式 (たとえば、**ISO 20022 口座振替 (AT)**) を選択します。
 -   Finance and Operations で法人および銀行口座情報を設定する必要があります。
 -   銀行口座番号、IBAN、および時にはSWIFT コード (BICs) または他の ID が、有効な口座振替の支払を作成するため必要になります。 したがって、仕入先の銀行口座および振込を要求する組織の銀行口座用にそれらを設定する必要があります。
