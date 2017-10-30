@@ -1,7 +1,7 @@
 ---
 title: "変動報酬プランの作成"
 description: "変動報酬は賞与または株式報奨などの従業員の不規則な支払を構成します。 このトピックは、変動報酬を使用し、従業員を変動報酬プランに登録する前に設定する必要があるコンポーネントを説明します。"
-author: twheeloc
+author: kherr75
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,19 +10,19 @@ ms.service: dynamics-365-talent
 ms.technology: 
 ms.search.form: HCMCompEligibility, HcmJobFunction, HcmWorker, HRMCompPerfPlan
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: rschloma
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 16011
 ms.assetid: fc3a394e-9ac6-4f8c-9162-dc16ec22720f
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: kherr75
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 2be3dc22977d6c00a9542211bfb7aaf649b17e1a
+ms.sourcegitcommit: e57db8f4b692aa9c27916625897e268f63031782
+ms.openlocfilehash: 62026b7a448d20ae357c2d7c6b770c216836afb1
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/30/2017
 
 ---
 
