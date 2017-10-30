@@ -1,7 +1,7 @@
 ---
 title: "アンケートのデザイン"
 description: "このトピックは、アンケートを作成するプロセスについて説明します。 最初の手順では、アンケートを設計します。 アンケートを設計する場合は、質問と回答を書き込むだけでなく、回答を記録し、表にする構造を作成します。"
-author: twheeloc
+author: kherr75
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,12 +10,12 @@ ms.service: Dynamics365Operations
 ms.technology: 
 ms.search.form: KCMCollectionType, KMAnswerCollection, KMCollection
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: rschloma
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 17341
 ms.assetid: b27e2f12-c7a0-4a54-b8d8-17819f8a1c72
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: kherr75
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
