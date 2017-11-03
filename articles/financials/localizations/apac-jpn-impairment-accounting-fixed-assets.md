@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: AssetImpairmentAssetTransInquire_JP, AssetImpairmentIndicator_JP, AssetImpairmentManageTestResult_JP
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 28811
 ms.search.region: Japan
 ms.author: riluan

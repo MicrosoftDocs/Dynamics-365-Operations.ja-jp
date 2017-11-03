@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: CustBillOfExchangeEndorseListPage, CustBillOfExchangeEndorseToVendor
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 28791
 ms.search.region: Japan
 ms.author: riluan

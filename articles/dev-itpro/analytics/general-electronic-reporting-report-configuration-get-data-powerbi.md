@@ -1,7 +1,7 @@
 ---
 title: "電子申告をコンフィギュレーションして Power BI にデータを取り込む"
 description: "このトピックでは、電子申告 (ER) コンフィギュレーションを使用して Finance and Operations のインスタンスから Power BI サービスへのデータ転送を調整する方法について説明します。 たとえば、このトピックでは、転送する必要があるビジネス データとしてのイントラスタット トランザクションを使用します。 Power BI マップの視覚化は、このイントラスタット トランザクション データを使用して Power BI レポートで会社のインポート/エクスポート活動の分析のためのビューを表示します。"
-author: kfend
+author: NickSelin
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 220314
 ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ms.search.region: Global

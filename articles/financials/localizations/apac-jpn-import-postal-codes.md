@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: riluan
 ms.search.validFrom: 2017-06-30

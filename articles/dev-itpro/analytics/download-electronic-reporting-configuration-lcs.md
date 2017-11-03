@@ -1,7 +1,7 @@
 ---
 title: "Lifecycle Services の電子申告コンフィギュレーションのダウンロード"
 description: "このトピックは、Microsoft Dynamics Lifecycle Services (LCS) から電子申告 (ER) のコンフィギュレーションをダウンロードする方法を説明します。"
-author: kfend
+author: NickSelin
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: ERSolutionImport, ERWorkspace
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 105843
 ms.assetid: dc44dea2-22ce-401e-98b9-d289e0e2825b
 ms.search.region: Global
