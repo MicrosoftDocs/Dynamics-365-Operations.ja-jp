@@ -11,17 +11,17 @@ ms.technology:
 ms.search.form: AssetRetirementObligation_JP, AssetRetirementObligationDocument_JP, AssetRetirementObligationExplorer_JP, AssetRetirementObligationLine_JP, AssetTable
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 10174
 ms.search.region: Japan
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f944258e7efdd5c9eba7daf9a80c67058a6cc055
-ms.openlocfilehash: df59b74c8bfe57bff52cf885dc1b2ebd7181e53b
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 94fbf1411255ede23b5bda53c4506a0a083ea326
 ms.contentlocale: ja-jp
-ms.lasthandoff: 10/25/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
