@@ -1,7 +1,7 @@
 --- 
 title: "製品モデル コンポーネントの作成"
 description: "制約ベースの製品コンフィギュレーション モデルでは、製品モデル構造を構築する構成要素としてコンポーネントを使用します。"
-author: BibiSp
+author: YuyuScheller
 manager: AnnBe
 ms.date: 03/02/2016
 ms.topic: business-process
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: bis
