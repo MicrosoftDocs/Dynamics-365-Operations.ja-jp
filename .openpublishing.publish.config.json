@@ -7,7 +7,6 @@
       "build_output_subfolder": "d365F-O",
       "locale": "ja-jp",
       "monikers": [],
-      "moniker_ranges": [],
       "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content",
@@ -35,7 +34,8 @@
     {
       "path_to_root": "_themes.pdf",
       "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
-      "branch": "master"
+      "branch": "master",
+      "branch_mapping": {}
     },
     {
       "path_to_root": "_repo.en-us",
@@ -57,7 +57,7 @@
       "Pdf"
     ]
   },
-  "need_generate_pdf_url_template": true,
+  "need_generate_pdf_url_template": false,
   "need_generate_intellisense": false,
   "Targets": {
     "Pdf": {
