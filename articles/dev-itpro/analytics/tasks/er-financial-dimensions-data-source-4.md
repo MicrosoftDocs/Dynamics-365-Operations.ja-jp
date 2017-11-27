@@ -3,7 +3,7 @@ title: "電子申告 (ER) 用のデータ ソースとして財務分析コー�
 description: "次の手順では、システム管理者に指定されたユーザーまたは電子レポート開発者のロールが、電子レポート・データソースとしての財務分析コードを使用するために 電子レポート（ER）モデルをどのように環境設定しているのか説明します。"
 author: NickSelin
 manager: AnnBe
-ms.date: 10/14/2016
+ms.date: 11/02/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: cdecf5fb3f3047a56353ee6d4a8f94957f508e4b
+ms.sourcegitcommit: 5d4f57ae2a309d9e15c1afe60c3e91d7d7eb3870
+ms.openlocfilehash: c5aefc44adc24f9d216f9470e4307a3723690173
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/02/2017
 
 ---
 # <a name="run-a-report-that-uses-financial-dimensions-as-a-data-source-for-electronic-reporting-er"></a>電子申告 (ER) 用のデータ ソースとして財務分析コードを使用するレポートを実行する
@@ -36,7 +36,7 @@ ms.lasthandoff: 09/29/2017
 2. [ツリー] フィールドで、「Financial dimensions sample model」を展開します。
 3. ツリーで、「Financial dimensions sample model\Ledger journal report」を選択します。
 4. [実行] をクリックします。
-5. 「分析コード名」フィールドに、値を入力するか選択します。
+5. [ディメンション名] フィールドに値を入力または選択します。
     * 現在の会社のすべての分析コードを選択するには、次を入力します: 事業単位、コストセンター、部門、品目グループ、主勘定、プロジェクト  
 6. [対象に含めるレコード] セクションを展開します。
 7. [フィルター] をクリックします。

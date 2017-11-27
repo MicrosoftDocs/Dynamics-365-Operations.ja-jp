@@ -1,27 +1,27 @@
 ---
 title: "ワークフロー要素"
-description: "この記事は、ワークフローを構成するさまざまな要素について説明します。"
+description: "このトピックは、ワークフローを構成するさまざまな要素について説明します。"
 author: sericks007
 manager: AnnBe
-ms.date: 08/23/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 56441
 ms.assetid: de740262-6ffd-42b9-a325-540eae5cec94
 ms.search.region: Global
-ms.author: tjvass
+ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 255777651a45b899850fc870c9da288f65df702c
+ms.sourcegitcommit: 8bbdbf882f6f73d03be0a036cb975109396e4a0d
+ms.openlocfilehash: 15cac09a97305c1b467cbb97da2d4b8a864ccbc7
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/14/2017
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-この記事は、ワークフローを構成するさまざまな要素について説明します。
+このトピックは、ワークフローを構成するさまざまな要素について説明します。
 
 ワークフローは "要素" から構成されます。 次のセクションでは、要素の各タイプについて説明します。
 
@@ -59,7 +59,7 @@ ms.lasthandoff: 09/29/2017
 -   ドキュメントに対する変更依頼。
 -   別のユーザーへの承認対象ドキュメントの割り当て。
 
-## <a name="lineitem-workflow-elements"></a>行項目ワークフローの要素
+## <a name="line-item-workflow-elements"></a>行項目ワークフローの要素
 ワークフローを作成して、ドキュメントやドキュメントの行項目を処理できます。 たとえば、タイムシートの承認ワークフローが作成済みであるとします。 (このワークフローを*ドキュメント ワークフロー*と呼びます。) そのドキュメント ワークフローには、*行項目 ワークフロー* 要素を追加できます。 行項目要素の実行時には、ドキュメントの各行項目が処理のために送信されます。 すべての行項目を同じ行項目ワークフローで処理することも、各行項目を異なる行項目ワークフローで処理することもできます。 従業員が、次の図のようなタイム シートを提出したとします。
 
 ![行項目を含むワークフロー](./media/workflow_lineitemworkflow.gif) 
@@ -70,7 +70,7 @@ ms.lasthandoff: 09/29/2017
 -   **行項目ワークフロー 2** – このワークフローは、プロジェクト ID が 2222 の行項目の処理に使用されます。
 -   **行項目ワークフロー 3** – このワークフローは、プロジェクト ID が 3333 の行項目の処理に使用されます。
 
-## <a name="flowcontrol-elements"></a>フロー制御要素
+## <a name="flow-control-elements"></a>フロー制御要素
 次の要素を使用すると、同時に実行される代替分岐または分岐があるワークフローを設計できます。
 
 ### <a name="manual-decision"></a>手動決定

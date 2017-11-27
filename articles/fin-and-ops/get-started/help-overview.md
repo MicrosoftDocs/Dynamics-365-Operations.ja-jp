@@ -1,16 +1,16 @@
 ---
-title: "ヘルプ概要"
-description: "この記事では、Microsoft Dynamics 365 for Finance and Operations のヘルプ システム コンポーネントの概要が示されます。 また、組織の独自のドキュメントやトレーニングを提供する方法について説明します。"
+title: "ヘルプの概要"
+description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations のヘルプ システム コンポーネントの概要が示されます。 また、組織の独自のドキュメントやトレーニングを提供する方法について説明します。"
 author: margoc
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, Developer, IT Pro
 ms.reviewer: margoc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 16381
 ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
 ms.search.region: Global
@@ -18,18 +18,18 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d67ad79c068651f32ce7dc776bc460698557bc29
-ms.openlocfilehash: 2df27a23d31ecde99bb31b4f8a19295c331cae09
+ms.sourcegitcommit: d2063cd0ae592357d57fb3c787450c604fb9be58
+ms.openlocfilehash: 549d059e549ba470eb299753fd7b87920e6dd43d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/11/2017
 
 ---
 
-# <a name="help-overview"></a>ヘルプ概要
+# <a name="help-system-overview"></a>システム ヘルプの概要
 
 [!include[banner](../includes/banner.md)]
 
-この記事では、Microsoft Dynamics 365 for Finance and Operations のヘルプ システム コンポーネントの概要が示されます。 また、組織の独自のドキュメントやトレーニングを提供する方法について説明します。 
+このトピックでは、Microsoft Dynamics 365 for Finance and Operations のヘルプ システム コンポーネントの概要が示されます。 また、組織の独自のドキュメントやトレーニングを提供する方法について説明します。 
 
 > [!NOTE] 
 > 次の製品間には密接な関係があります: Dynamics 365 for Finance and Operations、Enterprise edition、Dynamics 365 for Retail、および Dynamics 365 for Talent。 すべての 3 つの製品上に同じ機能が表示されることがあります。 結果として、主に [Retail] に関連するトピックでの製品名は Dynamics 365 for Retail、主に [Talent] に関連するトピックでの製品名は Dynamics 365 for Talent、コア製品に関連するトピックでの製品名は、Dynamics 365 for Finance and Operations となります。 1 つの製品で記述されているトピックは、関連する製品の同じ機能にも当てはまる可能性があります。
@@ -69,16 +69,17 @@ docs.microsoft.com サイト ([docs.microsoft.com/dynamics365/unified-operations
 
 任意の検索エンジンを使ってコンテンツを探すこともできます。 最適な結果を得るには、次のようなサイト検索を使用することをお勧めします: site:docs.microsoft.com dynamics 365 "検索用語"。  
 
-![サイト検索](./media/site-search-1.png)
-
-![サイト検索の結果](./media/site-search-results-2.png)
-
 ### <a name="the-docsmicrosoftcom-table-of-contents"></a>docs.microsoft.com の目次
-すべての製品は docs サイトの 1 つの目次を共有し、顧客がトピックのコンテキストを確認できるようにします。 探しているトピックを検索するフィルター コントロールを使用できるようにもします。
+Finance and Operations、Retail、Talent のすべては docs サイトの 単一の目次を共有し、顧客がトピックのコンテキストを確認できるようになっています。 また、目次上のフィルタコントロールを使用して、探しているトピックを検索することもできます。
 
-### <a name="how-can-i-contribute"></a>どのように貢献できますか? 
+### <a name="follow-a-topic"></a>次のトピック
+トピックをフォローするには、コメント ボックスの下の +Follow ボタンをクリックします。 次のトピックにログインする必要があります。 詳細については、[コメントをお送りください](#leave-us-a-comment) を参照してください。  
 
-コメントをお送りください。 
+### <a name="give-feedback"></a>フィードバックを送る 
+お客様からのフィードバックをぜひいただきたいです。 GitHub を通じて、コメントを投稿したり、コンテンツへの変更を提案することができます。
+
+##### <a name="leave-us-a-comment"></a>コメントをお送りください。 
+フィードバックまたはトピックに関するご質問がある場合は、ページ下部にコメントを記入してください。  
 
 1 [**コメント**] をクリックして、ページ下部のコメントに移動します。
 
@@ -96,6 +97,19 @@ docs.microsoft.com サイト ([docs.microsoft.com/dynamics365/unified-operations
 このサイト用に新しいアカウントを作成するために、右側で電子メール アドレスと新しいパスワードを入力します。 
 
 ![サインイン オプション](./media/signin-options.png)
+
+
+##### <a name="suggest-a-change-or-contribute-content-through-github"></a>GitHub を通じてコンテンツの変更や提案を投稿する
+変更を提案するには、GitHub アカウントを所有し、コントリビューター ライセンス契約に署名する必要があります。  プル要求が送信された後、提案された変更が確認されます。 必要に応じて、内部的に検討してから返答します。  
+
+開始するには、トピックの**編集** (ペンシル) ボタンをクリック、または https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public にあるリポジトリへ移動します。 
+
+詳細については、https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/live/CONTRIBUTING.md にある寄稿者のガイドを参照してください。 
+
+
+> [!NOTE]
+> 現時点では英語のリポジトリへの寄稿のみを受け付けています。  
+> GitHub を通して報告された問題は受け付けません。コンテンツの提案にはプルリクエストを必ず使用してください。 製品および機能のフィードバックは、Dynamics 365 Ideas Portal の https://ideas.dynamics.com/ideas/ で適切に処理されます。 
 
 
 ## <a name="task-guides"></a>タスク ガイド
@@ -196,9 +210,4 @@ Finance and Operations 内のヘルプ コンテンツにアクセスするに�
 [新規または更新されたタスク ガイド (2016 年 8 月)](new-updated-task-guides-available-august-2016.md)
 [新規または更新されたタスク ガイド (2016 年 5 月)](new-updated-task-guides-available-may-2016.md)
 [新規または更新されたタスク ガイド (2016 年 2 月)](new-task-guides-available-february-2016.md)
-
-
-
-
-
 

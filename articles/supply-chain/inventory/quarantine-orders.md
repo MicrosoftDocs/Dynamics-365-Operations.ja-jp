@@ -1,9 +1,9 @@
 ---
 title: "検査指示"
-description: "この記事は、在庫をブロックする検査指示の使用方法について説明します。"
+description: "このトピックは、在庫をブロックする検査指示の使用方法について説明します。"
 author: perlynne
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: InventLocation, InventModelGroup, InventQuarantineOrder, InventQuarantineParmEnd, InventQuarantineParmReportFinished, InventQuarantineParmStartUp, InventTrans
 audience: Application User
 ms.reviewer: YuyuScheller
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 30021
 ms.assetid: d5047727-653c-49da-b489-6fd3fe50445e
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 17dde4a4e3380beb98eeb71c719fb898b40a94f7
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 515f14e72137f7299093cc6e75cb8e6eec2893fb
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -31,11 +31,11 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-この記事は、在庫をブロックする検査指示の使用方法について説明します。
+このトピックは、在庫をブロックする検査指示の使用方法について説明します。
 
 検査指示は、在庫をブロックするのに使用できます。 たとえば、 品質テストの理由で品目を検査する場合があります。 検査された在庫は、検査倉庫に転送されます。 **注記:** 高度な倉庫管理プロセス (倉庫管理で) を使用している場合、検査指示の処理は返品販売注文に対してのみ使用されます。
 
-## <a name="quarantine-onhand-inventory-items"></a>手持在庫品目の検査
+## <a name="quarantine-on-hand-inventory-items"></a>手持在庫品目の検査
 品目を検査する場合、検査指示を手動で作成するか、受信処理時に検査指示を自動的に作成するようにシステムを設定するかのいずれかが可能です。 検査指示を自動的に作成するには、[**品目モデル グループ**] ページの [**在庫ポリシー**] タブの [**検査管理**] オプションを選択します。 また、入荷倉庫について、[**検査倉庫**] フィールドで既定の検査倉庫を指定する必要があります。 Microsoft Dynamics 365 for Finance and Operations では、現物手持在庫が発注書または製造オーダーで記録されると、検査品目は検査倉庫に自動的に移動されます。 この移動は、検査指示のステータスが**開始済**に変更されるため、実行されます。 検査指示を手動で作成する場合、品目は、関連する品目モデル グループで検査管理のために設定する必要はありません。 このプロセスでは、検査する手持在庫と、使用する検査倉庫を指定する必要があります。 プロセスの計画を支援するために、検査指示のステータスを使用できます。
 
 ## <a name="quarantine-order-statuses"></a>検査指示のステータス

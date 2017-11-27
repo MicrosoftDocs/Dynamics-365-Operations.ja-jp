@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: WMSOrder, WMSShipment, MCRPickingWorkbench, WMSPickingRegistration, CustomFilterGroup
 audience: Application User
 ms.reviewer: YuyuScheller
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 274363
 ms.assetid: 375807b2-a426-4f1b-bc1f-2fe00fd48413
 ms.search.region: global
@@ -20,10 +20,10 @@ ms.author: perlynne
 ms.dyn365.ops.intro: AX 7.0.0
 ms.search.validFrom: 2016-02-28
 ms.translationtype: HT
-ms.sourcegitcommit: 9c09a7bd314bb9005eb0b6c69d7cccad1c30cfdb
-ms.openlocfilehash: 7b395cab2184f8f9f3f50a7a595c6ed782645323
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 1b8b17b719713097d77a117cca53eff6886ff1c7
 ms.contentlocale: ja-jp
-ms.lasthandoff: 10/04/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -63,7 +63,7 @@ ms.lasthandoff: 10/04/2017
 
 [![在庫出荷注文の終了オプション](./media//end-output-inventory-order.png)](./media//end-output-inventory-order.png)
 
-場合によっては、在庫内のいくつかの品目はピッキング リストのプロセスの一部としてピッキングすることはできません。 たとえば、倉庫作業者が、ピッキング明細行の数量を削減してピッキング リストを処理する場合に、この状況が発生する可能性があります。 [**在庫出荷注文の終了**] オプションが [**はい**] に設定されると、残りの未処理のピッキング数量は注文レベルに戻ります。 オプションが [**いいえ**] に設定されると、残りの未処理のピッキング数量は、出荷注文の数量として維持されます。 この場合、数量は倉庫にリリースされ、[**出荷注文を開く**] 機能の一部として新しいピッキング リストに追加される必要があります。
+倉庫作業員が、ピッキング リスト数量を削減するときに、対応する在庫注文数量は出荷から削除されます。 ピッキング リストがある時点で更新されると、**在庫出荷注文の終了**オプションが**はい**に設定されている場合、残りの数量は注文に戻ります。 **在庫出荷注文の終了**オプションが**いいえ**に設定されている場合、残りの数量は出荷注文の数量として維持され、**出荷注文を開く**機能の一部として新しいピッキング リストに追加する必要があります。 
 
 [![[機能] メニューで [出荷注文を開く] コマンド](./media/open-output-order.png)](./media/open-output-order.png)
 

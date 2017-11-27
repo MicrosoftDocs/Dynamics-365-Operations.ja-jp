@@ -1,9 +1,9 @@
 ---
 title: "生産プロセスの概要"
-description: "この記事では、生産プロセスの概要を示します。 製造オーダー、バッチ オーダー、およびかんばんのオーダーの作成から財務期間の決算までのさまざまなステージについて説明します。"
+description: "このトピックでは、生産プロセスの概要を示します。 製造オーダー、バッチ オーダー、およびかんばんのオーダーの作成から財務期間の決算までのさまざまなステージについて説明します。"
 author: cvocph
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: JmgProdStatusListPage, JmgShopSupervisorWorkspace, Kanban, ProdTable, ProdTableOverview
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 19832
 ms.assetid: 0e83c7ea-feba-4ed6-8717-8b48a3b8804a
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: e50e64057d19d0e1fbf5645c2abc31fbd19ea43a
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 779b27574a9d6d7e7aa6b71f468ba3cff8d4085a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-この記事では、生産プロセスの概要を示します。 製造オーダー、バッチ オーダー、およびかんばんのオーダーの作成から財務期間の決算までのさまざまなステージについて説明します。 
+このトピックでは、生産プロセスの概要を示します。 製造オーダー、バッチ オーダー、およびかんばんのオーダーの作成から財務期間の決算までのさまざまなステージについて説明します。 
 
 製品の生産 (生産ライフ サイクルとも呼ばれるプロセス) は、品目の製造に必要な手順に従って行われます。 ライフ サイクルは、製造オーダー、バッチ オーダー、またはかんばんの作成で始まります。 完成した、顧客への提供または別の生産フェーズへの準備が整っている製品により終了します。 ライフ サイクルの各ステップでプロセスを実行するにはさまざまな情報が必要です。 各ステップが完了すると、製造オーダー、バッチ オーダー、かんばんでの生産状態に変化が生じます。 さまざまな製品タイプごとに、異なる製造プロセスが要求されます。  
 

@@ -3,7 +3,7 @@ title: "電子申告 (ER) 用の形式出力でドキュメント管理ファイ
 description: "次の手順では、システム管理者または電子レポート開発者のロールに指定されたユーザーが、ER出力のドキュメント管理ファイル（添付）を使用するために電子レポート（ER）フォーマットをどのように環境設定しているのか説明します。"
 author: NickSelin
 manager: AnnBe
-ms.date: 10/31/2016
+ms.date: 11/02/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 76915a7294e078d76ed3ca9c41755e12b0791f3c
+ms.sourcegitcommit: 5d4f57ae2a309d9e15c1afe60c3e91d7d7eb3870
+ms.openlocfilehash: e145c4c7a1f3fd88481ad32d0af05511437e21dc
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/02/2017
 
 ---
 # <a name="modify-and-run-format-to-use-document-management-files-in-format-outputs-for-electronic-reporting-er"></a>電子申告 (ER) 用の形式出力でドキュメント管理ファイルを使用するための形式を変更して実行する
@@ -94,6 +94,6 @@ ms.lasthandoff: 09/29/2017
     * 000148  
 6. [OK] をクリックします。
 7. [OK] をクリックします。
-    * 生成された出荷を確認します。 XML形式の請求書メッセージに加えて、各添付ファイルに対して単一ファイルが作成されたことに注意していください。 添付ファイルは、バイナリ形式のZIP出力で設定されます。  
+    * 生成された出荷を確認します。 XML 形式の請求書メッセージに加えて、各添付ファイルに対して単一ファイルが作成されたことに注意してください。 添付ファイルは、バイナリ形式のZIP出力で設定されます。  
 
 

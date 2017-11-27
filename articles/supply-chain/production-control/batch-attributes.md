@@ -1,9 +1,9 @@
 ---
 title: "バッチ属性 (複数)"
-description: "この記事は、バッチ属性に関する情報を提供します。 バッチ属性は、在庫バッチを構成する原材料および完成製品の特性です。 この記事は、バッチ属性の割り当て方法と、バッチの引当を行うときにそれらを検索する方法も説明します。"
+description: "このトピックは、バッチ属性に関する情報を提供します。 バッチ属性は、在庫バッチを構成する原材料および完成製品の特性です。 この記事は、バッチ属性の割り当て方法と、バッチの引当を行うときにそれらを検索する方法も説明します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: PdsBatchAttrib, PdsBatchAttribAssociate, PdsBatchAttribByAttribGroup, PdsBatchAttribByItem, PdsBatchAttribByitemCustomer, PdsBatchAttribGroup
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 19271
 ms.assetid: 41de0250-4a96-412e-a412-aa06615b6b1d
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 0c3f5115377178941984e53749c18cc1c9179812
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 6c18b007a72686b1ede69b750e930d72e86f0aba
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-この記事は、バッチ属性に関する情報を提供します。 バッチ属性は、在庫バッチを構成する原材料および完成製品の特性です。 この記事は、バッチ属性の割り当て方法と、バッチの引当を行うときにそれらを検索する方法も説明します。
+このトピックは、バッチ属性に関する情報を提供します。 バッチ属性は、在庫バッチを構成する原材料および完成製品の特性です。 この記事は、バッチ属性の割り当て方法と、バッチの引当を行うときにそれらを検索する方法も説明します。
 
 バッチ属性は、在庫バッチを構成する原材料および完成製品の特性です。 バッチ属性は環境条件、バッチの生産に使用される原材料の品質、完成品の結果などの要因によって異なります。 使用されるバッチ属性の数とタイプは、業界によって大きく異なります。 以下はバッチ属性の 2 つの使用例です。
 

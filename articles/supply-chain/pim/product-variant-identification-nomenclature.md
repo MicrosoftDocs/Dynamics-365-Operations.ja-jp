@@ -1,9 +1,9 @@
 ---
 title: "製品バリアント番号と名前の分類"
-description: "このトピックでは、固定形式 [製品マスター番号 - コンフィギュレーション - サイズ - 色 - スタイル] を置換するために製品番号の分類を設定する方法を説明します。 新しい分類には、製品マスター番号、有効な製品分析コード、および選択したテキストの区切り記号を含む対象の形式があります。 製品名の分類を作成することもできます。 最後に、制約ベースの製品コンフィギュレーターによって作成されるコンフィギュレーションを識別するための分類を構築できます。 これらの分類は、選択した属性を含めることができます。"
+description: "このトピックでは、固定形式 [製品マスター番号 - コンフィギュレーション - サイズ - 色 - スタイル] を置換するために製品番号の分類を設定する方法を説明します。"
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 05/10/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: roxanad
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
-ms.openlocfilehash: 4ebebc1d287908dbe8ac7557c34fc6693c88bfae
+ms.sourcegitcommit: 3a1bfd4bd5f396c05277159ac112eaa8197d5818
+ms.openlocfilehash: 067e14d8a0ab9cb5b703c1d2596dab3e20487336
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -68,7 +68,7 @@ T シャツ (TS1234) は、3 つのサイズ (S、M、L)、4 つの色 (赤、�
 
 この場合、赤、S、ポロの製品バリアント番号は TS1234-Red-Small-Polo になります。
 
-## <a name="nomenclature-of-constraintbased-configurations"></a>制約ベースのコンフィギュレーションの分類
+## <a name="nomenclature-of-constraint-based-configurations"></a>制約ベースのコンフィギュレーションの分類
 制約ベースのコンフィギュレーションの場合、製品分析コードのコンフィギュレーションに対して専門の分類を作成できます。 [**製品の分類**] ページで次の区分を選択できます。
 
 -   番号順序値
@@ -92,7 +92,7 @@ T シャツ (TS1234) は、3 つのサイズ (S、M、L)、4 つの色 (赤、�
 
 この場合、78 の長さの木材が材料のコンフィギュレーション ID は WoodAAA78 になります。
 
-## <a name="nomenclature-of-dimensionbased-configurations"></a>分析コードベースのコンフィギュレーションの分類
+## <a name="nomenclature-of-dimension-based-configurations"></a>分析コードベースのコンフィギュレーションの分類
 分析コードベースのコンフィギュレーションの場合、製品分析コードのコンフィギュレーションに対して専門の分類を作成できます。 [**製品の分類**] ページで次の区分を選択できます。
 
 -   番号順序値

@@ -1,9 +1,9 @@
 ---
 title: "小売チャンネルの定義と管理"
-description: "この記事では、Microsoft Dynamics 365 for Retail では小売店舗とも呼ばれる、従来型の店舗を設定するプロセスの概要を説明します。 ここでは、小売店舗を設定する前と後の、実施する必要のあるタスクについて説明します。"
+description: "このトピックでは、Microsoft Dynamics 365 for Retail では小売店舗とも呼ばれる、従来型の店舗を設定するプロセスの概要を説明します。 ここでは、小売店舗を設定する前と後の、実施する必要のあるタスクについて説明します。"
 author: mugunthanm
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -20,10 +20,10 @@ ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 700b8868a68be7f0172202d737b4f1ae9813ecf3
+ms.sourcegitcommit: 52b3e2e78a03ac67507ee65a03e0884e5ed44678
+ms.openlocfilehash: b6dd6d929d771e0b1fc2604b90a2a1522447e168
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/14/2017
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](includes/banner.md)]
 
 
-この記事では、Microsoft Dynamics 365 for Retail では小売店舗とも呼ばれる、従来型の店舗を設定するプロセスの概要を説明します。 ここでは、小売店舗を設定する前と後の、実施する必要のあるタスクについて説明します。
+このトピックでは、Microsoft Dynamics 365 for Retail では小売店舗とも呼ばれる、従来型の店舗を設定するプロセスの概要を説明します。 ここでは、小売店舗を設定する前と後の、実施する必要のあるタスクについて説明します。
 
 Dynamics 365 for Retail は、オンライン ストア、コール センター、また実店舗などの、複数の小売チャンネルをサポートします。 従来型の店舗は、小売店舗とも呼ばれます。 各小売店舗は、独自の支払方法、価格グループ、POS レジスタ、収入/経費勘定、およびスタッフを持つことができます。 作成する前に、小売店舗のこれらすべての要素を設定する必要があります。 小売店舗を作成したら、店舗に配送される製品を割り当てます。 また、店舗への従業員、レジスター、および顧客の割り当ても行います。 最後に、組織階層に新しい店舗を追加します。
 

@@ -1,7 +1,7 @@
 ---
 title: "電子申告のフォーミュラ デザイナー"
-description: "このトピックでは、電子申告 (ER) でのフォーミュラ デザイナーの使用方法を説明します。 ER の特定の電子ドキュメントの形式を設計する場合、データ変換に Microsoft Excel のような式を使用して、そのドキュメントのフルフィルメントおよび書式設定の要件を満たすことができます。 テキスト、日時、算術論理、情報、データ型変換、およびその他 (ビジネス ドメインの特定の関数) といったさまざまなタイプの関数がサポートされています。"
-author: kfend
+description: "このトピックでは、電子申告 (ER) でのフォーミュラ デザイナーの使用方法を説明します。"
+author: NickSelin
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 37c860599ad555846d11711e9f3cfb29c599131e
-ms.openlocfilehash: 7704b0545f4264be1f844ed6ad9e4b44df0c4ef8
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 58bef33642d83def841eaa8334ea6f942063e0b3
 ms.contentlocale: ja-jp
-ms.lasthandoff: 10/05/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -593,11 +593,12 @@ ER の式は、次のいずれかまたはすべての要素を含めること�
 <td>GETENUMVALUEBYNAME (列挙データ ソースのパス、列挙値のラベル テキスト)</td>
 <td>この列挙ラベルの指定されたテキストで、指定された列挙データ ソースの値を返します。</td>
 <td>次の例は、データ モデルで導入された列挙 ReportDirection を示します。 列挙値のラベルが定義されていることに注意してください。
-<a href="./media/ER-data-model-enumeration-values.PNG"><img src="./media/ER-data-model-enumeration-values.PNG" alt="Available values for data model enumeration" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a> 以下に例を示します。
+<a href="./media/ER-data-model-enumeration-values.PNG"><img src="./media/ER-data-model-enumeration-values.PNG" alt="Available values for data model enumeration" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a>  
+<p>以下に例を示します。</p>
 <ul><li>データ ソース [<strong>$Direction</strong>] としてレポートに挿入されるモデル列挙 [<strong>ReportDirection</strong>]</li>
 <li>この関数のパラメーターとしてモデル列挙を使用するように設計されている ER の式 [<strong>$IsArrivals</strong>]。 この式の値は [<strong>TRUE</strong>] です。
-
-<a href="./media/ER-data-model-enumeration-usage.PNG"><img src="./media/ER-data-model-enumeration-usage.PNG" alt="Example of data model enumeration" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a></li></ul></td>
+</li></ul>
+<a href="./media/ER-data-model-enumeration-usage.PNG"><img src="./media/ER-data-model-enumeration-usage.PNG" alt="Example of data model enumeration" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a></td>
 </tr>
 </tbody>
 </table>

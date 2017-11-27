@@ -3,7 +3,7 @@ title: "月次締め請求書のパラメーターのコンフィギュレーシ
 description: "日本では、日本の商習慣に合わせて月次締め請求書を有効にできます。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 02/18/2016
+ms.date: 10/30/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 60f3cf72651f5c2302d374faa742da08345ef3ca
+ms.sourcegitcommit: 66f10523fe3fb104550a88f735a9644613ec861b
+ms.openlocfilehash: 23f312f2ad075b773c334c0d8c807ec0f6577a28
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/30/2017
 
 ---
 # <a name="configure-consolidated-invoice-parameters-and-setup-for-accounts-payable-japan"></a>月次締め請求書のパラメーターのコンフィギュレーションと買掛金勘定の設定 (日本)

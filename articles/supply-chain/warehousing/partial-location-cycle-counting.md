@@ -3,7 +3,7 @@ title: "部分的な場所の循環棚卸"
 description: "循環棚卸計画は、実際のカウント操作をガイドします。 ある特定の場所にあるすべての手持在庫の代わりに、特定の製品と製品の種類のみをカウントするように要求することができます。"
 author: perlynne
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: WHSCycleCountPlan, WHSWorkLineCycleCount, WHSWorkTemplateLineGroup, WHSWorkTemplateTable
 audience: Application User
 ms.reviewer: bis
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
@@ -20,10 +20,10 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 626b2f9f35b94124168adb7bb09c75a086d38a97
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 0e0f9d81f4d5943a89d8ac87776e05acb32cb8d9
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -54,7 +54,7 @@ ms.lasthandoff: 09/29/2017
 
 1.  循環棚卸用の新しい作業時間テンプレートが作成されます。 [**作業明細行内訳**] オプションは、品目番号を使用して棚卸作業明細行をグループ化するために使用されます。 したがって、作成された循環棚卸作業には、品目番号ごとに明細行が提供されます。 製品バリアント番号で明細行をグループ化することもできます。
 2.  新たに作成された作業テンプレートを参照する新しい循環棚卸計画が作成されます。 循環棚卸計画には、品目番号 A0001 の在庫を保持する倉庫 61 内のすべての場所 (**場所の選択** クエリ) が含まれます。 特定の製品の選択は、[**循環棚卸製品の選択**] セクションで定義されています。
-3.  [**空の場所**] フィールドを [**空白を除外する**] に設定すると、循環棚卸計画の製品を選択できます。循環棚卸計画が処理されると、品目番号 A0001 の部分的な循環棚卸作業が作成されます。 実際の棚卸プロセスは、ガイド付き循環棚卸のためのモバイル デバイス メニュー項目を使用することによって実行できます。
+3.  [空の場所] フィールドを [空白を除外する] に設定すると、循環棚卸計画の製品を選択できます。 循環棚卸計画が処理されると、品目番号 A0001 の部分的な循環棚卸作業が作成されます。 実際の棚卸プロセスは、ガイド付き循環棚卸のためのモバイル デバイス メニュー項目を使用することによって実行できます。
 
 
 

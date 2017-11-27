@@ -16,10 +16,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: d602e07548d22bcdee3f375c3c327c0e8963c3b4
+ms.sourcegitcommit: 7f80dc8411d38d051b01d77e35635a920d8803a6
+ms.openlocfilehash: 300cf6ed1a5a7098e71b812d682c1b51c2cf786c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/06/2017
 
 ---
 # <a name="design-a-configuration-for-generating-reports-in-microsoft-word-format-for-electronic-reporting-er"></a>電子申告 (ER) 用に Microsoft Word 形式のレポートを生成するためのコンフィギュレーションを設計する
@@ -30,9 +30,9 @@ ms.lasthandoff: 09/29/2017
 
 これらのステップを完了するには、「OPENXML 形式でレポートを生成する ER コンフィギュレーションの作成」タスク ガイドの手順を最初に完了する必要があります。 また事前に、サンプル レポート用に次のテンプレートをダウンロードしてローカルに保存する必要があります。
 
-http://msdynamics.blob.core.windows.net/media/2016/10/SampleVendPaymDocReport.docx
+[支払レポートのテンプレート](https://go.microsoft.com/fwlink/?linkid=862266)
 
-http://msdynamics.blob.core.windows.net/media/2016/10/SampleVendPaymDocReportBounded.docx
+[支払レポートのバインドされたテンプレート](https://go.microsoft.com/fwlink/?linkid=862266)
 
 この手順は、Microsoft Dynamics 365 for Operations バージョン 1611 に追加された機能です。
 
@@ -49,7 +49,7 @@ http://msdynamics.blob.core.windows.net/media/2016/10/SampleVendPaymDocReportBou
 ## <a name="replace-the-excel-template-with-the-word-template"></a>Excel テンプレートを Word テンプレートに置き換えます
     * 現在は、OPENXML 形式で出力を生成するテンプレートとして Excel ドキュメントが使用されます。 レポートのテンプレートを Word 形式でインポートします。  
 1. [添付ファイル] クリックします。
-    * 既存の Excel テンプレートを、以前ダウンロードした Word テンプレート SampleVendPaymDocReport.docx に置き換えます。 このテンプレートには、ER 出力を生成するドキュメントのレイアウトのみが含まれていることに注意してください。  
+    * 既存の Excel テンプレートを、以前ダウンロードした Word テンプレート 支払いレポートテンプレートに置き換えます。 このテンプレートには、ER 出力を生成するドキュメントのレイアウトのみが含まれていることに注意してください。  
 2. [削除] をクリックします。
 3. [はい] をクリックします。
 4. [新規] をクリックします。

@@ -1,9 +1,9 @@
 ---
 title: "基準金額および計算方法に基づいた、売上税の税率"
-description: "この記事は、フィールドの基準金額および計算方法の値が、どのように販売および購買トランザクションの税率を決定するかを説明します。"
+description: "このトピックは、フィールドの基準金額および計算方法の値が、どのように販売および購買トランザクションの税率を決定するかを説明します。"
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: TaxTable
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 7171
 ms.assetid: 381fc309-b32a-4927-b5b8-fa1c31b0bd72
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: e16e91208cdd6c1a5c904fb763454371b02c71fd
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: bf0f8f2e3f553ea181e8cc9ab5b712fce64a89d4
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-この記事は、フィールドの基準金額および計算方法の値が、どのように販売および購買トランザクションの税率を決定するかを説明します。
+このトピックは、フィールドの基準金額および計算方法の値が、どのように販売および購買トランザクションの税率を決定するかを説明します。
 
 売上税コードのページのクイック タブの計算基準金額は、売上税コード値のページのレートから適切な税率をピッキングして、金額が使用されるかが決まります。 計算方法フィールドで選択した方法と基準金額フィールドで設定した金額タイプの組み合わせにより、トランザクションの正確な税率を検索するロジックが決まります。 
 
@@ -140,7 +140,7 @@ ms.lasthandoff: 09/29/2017
 | 50 ～ 100           | 20%      |
 | 100 - 0 (&gt; 100) | 10%      |
 
-基準金額: **ラインごとの総額** 計算方法: **間隔**また、それぞれ 5.00 のランプの特別税に対して計算されたその他のコードがあります。 この関税は、売上税が計算される前に正味金額に加算されます。 1 つ 25.00 のランプを 8 つ購入します。 請求明細行の正味金額は 200.00 です。 請求明細行の総額は、8 x 25.00 + 8 x 5.00 = 240.00 です。 税は次のように計算されます: 売上税の合計 = 50 x 0.30 + 50 x 0.20 + 140 x 0.10 = 15 + 20 + 14 = 39.00 関税の合計 = 5.00 x 8 = 40.00請求金額の合計 = 200.00 + 39.00 + 40.00 = 279.00
+基準金額: **ラインごとの総額** 計算方法: **間隔** また、それぞれ 5.00 のランプの特別税に対して計算された別のコードがあります。 この関税は、売上税が計算される前に正味金額に加算されます。 1 つ 25.00 のランプを 8 つ購入します。 請求明細行の正味金額は 200.00 です。 請求明細行の総額は、8 x 25.00 + 8 x 5.00 = 240.00 です。 税は次のように計算されます: 売上税の合計 = 50 x 0.30 + 50 x 0.20 + 140 x 0.10 = 15 + 20 + 14 = 39.00 関税の合計 = 5.00 x 8 = 40.00請求金額の合計 = 200.00 + 39.00 + 40.00 = 279.00
 
 **バリエーション** 
 

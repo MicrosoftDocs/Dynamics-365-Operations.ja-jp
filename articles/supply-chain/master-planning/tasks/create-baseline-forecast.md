@@ -3,7 +3,7 @@ title: "ベースライン予測の作成"
 description: "タイム シリーズの予測モデルを使用するか、または履歴需要をコピーするかのいずれかの方法を使用して、生産計画担当者はベースライン予測を作成できます。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 10/27/2016
+ms.date: 111/02/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: e6363ee48c0d13c79a6c623205dfa10f50d6070f
+ms.sourcegitcommit: 76334f7ee4efe33df4a86aaa11a59748387cec89
+ms.openlocfilehash: 6a712077fed4a94ae6ae6ce7ea2cfba8848e5fa5
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/02/2017
 
 ---
 # <a name="create-a-baseline-forecast"></a>ベースライン予測の作成
@@ -42,7 +42,7 @@ ms.lasthandoff: 09/29/2017
 7. ページを閉じます。
 8. ページを閉じます。
 
-## <a name="set-up-the-demand-forecasting-paramters"></a>需要予測のパラメーターの設定
+## <a name="set-up-the-demand-forecasting-parameters"></a>需要予測のパラメーターの設定
 1. [マスター プラン] > [設定] > [需要予測] > [需要予測のパラメーター] の順に移動します。
 2. 予測アルゴリズム パラメータ セクションを展開します。
 3. [予測生成戦略] フィールドで、[履歴需要の上書き] を選択します。

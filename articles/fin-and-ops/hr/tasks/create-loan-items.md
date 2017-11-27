@@ -3,7 +3,7 @@ title: "貸与品目の作成"
 description: "貸与品目は、会社が作業者に貸与する電話やコンピューターを含む現物品目を追跡するのに役立つレコードです。"
 author: kherr75
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 11/01/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: cef1f9b2e3d202d7eea3a967fa8a6c371c6ac3a5
+ms.sourcegitcommit: 950237499441e7f1d5b9e3355c4bd9513ad3783e
+ms.openlocfilehash: aa5824a7a56136b6d09860f2ff493359dbeab9f9
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/01/2017
 
 ---
 # <a name="create-loan-items"></a>貸与品目の作成

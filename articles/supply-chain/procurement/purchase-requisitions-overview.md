@@ -1,9 +1,9 @@
 ---
 title: "購買要求の概要"
-description: "この記事は、購買要求ワークフローと、購買要求に設定できる各種ステータスについて説明します。"
+description: "このトピックでは、購買要求ワークフローと、購買要求で発生する可能性のあるさまざまな状態について説明します。"
 author: mkirknel
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: PurchReqConsolidation, PurchReqCreate, PurchReqCreatePurchDetails, PurchReqCreatePurchListPage, PurchReqTable, PurchReqTableListPage
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 2174
 ms.assetid: 77d07119-4d9f-4c0e-acbe-d319203571ab
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
-ms.openlocfilehash: 6fb8bbc7340650341618f3a9613f4234ef1e9c04
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: b96a89bcabdaa3e3a3be3786dda15f9725f5a50d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-この記事は、購買要求ワークフローと、購買要求に設定できる各種ステータスについて説明します。
+このトピックでは、購買要求ワークフローと、購買要求で発生する可能性のあるさまざまな状態について説明します。
 
 組織の設定に基づいて、組織で使用される製品の購買要求を作成できます。 購買要求は、購買部門が品目またはサービスを購入することを承認する内部ドキュメントです。  
 
@@ -70,7 +70,7 @@ ms.lasthandoff: 09/29/2017
 <tr class="odd">
 <td>ドラフト</td>
 <td>ドラフト</td>
-<td>購買要求と購買要求明細行は作成済ですが、確認を受けるための送信は行われていません。 <strong>ドラフト</strong>のステータスの購買要求明細行と購買要求明細行は変更できます。取り消されているが、確認用に再送信されていない場合も、<strong>ドラフト</strong>のステータスになります。<strong>注記:</strong> 購買要求の送信や取り消しができるのは、ドキュメント レベルです。 ただし、購買要求明細行を一行のみ送信または取り消すことはできません。</td>
+<td>購買要求と購買要求明細行は作成済ですが、確認を受けるための送信は行われていません。 [<strong>ドラフト</strong>] のステータスを持つ購買依頼と購買依頼行は変更することができます。 購買依頼または購買依頼行は、リコールされたがレビュー用に再送信されていない場合は、[<strong>ドラフト</strong>] のステータスも持っています。 <strong>注意:</strong> 伝票レベルで購買要求を送信または呼び出すことができます。 ただし、購買要求明細行を一行のみ送信または取り消すことはできません。</td>
 </tr>
 <tr class="even">
 <td>確認中</td>
@@ -111,7 +111,7 @@ ms.lasthandoff: 09/29/2017
 <tr class="odd">
 <td>取消済</td>
 <td>取消済</td>
-<td>購買要求、およびすべての購買要求明細行がキャンセルされました。<strong>注記:</strong> 購買要求明細行の品目が不要になった場合、購買要求明細行がすでに承認済であればキャンセルする必要があります。 承認済の購買要求のみをキャンセルできます。 確認中の購買要求明細行がある場合は、購買要求のステータスは<strong>確認中</strong>になります。 この場合、購買要求を取り消すと、適切な購買要求明細行を削除できます。</td>
+<td>購買要求、およびすべての購買要求明細行がキャンセルされています。 <strong>注意:</strong> 購買要求明細行の品目が不要になった場合、承認済であれば購買要求明細行をキャンセルする必要があります。 承認済の購買要求のみをキャンセルできます。 確認中の購買要求明細行がある場合は、購買要求のステータスは<strong>確認中</strong>になります。 この場合、購買要求を取り消すと、適切な購買要求明細行を削除できます。</td>
 </tr>
 <tr class="even">
 <td>クローズ</td>

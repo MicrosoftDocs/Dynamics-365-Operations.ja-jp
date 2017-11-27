@@ -3,7 +3,7 @@ title: "月次締め請求書の設定 (日本)"
 description: "日本では、日本の商習慣に合わせて月次締め請求書を有効にできます。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 02/16/2016
+ms.date: 10/31/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: f7f35b941a5da8a37605fe6455537b5db42ff272
+ms.sourcegitcommit: 858cbf5f5beee4c02ebbb670f35386d26a0883f4
+ms.openlocfilehash: 4858c2dd5f78d68546cb0c958cdb5ac9847fd4e3
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/31/2017
 
 ---
 # <a name="set-up-consolidated-invoices-japan"></a>月次締め請求書の設定 (日本)

@@ -1,9 +1,9 @@
 ---
-title: "売上税の概要"
-description: "この記事は、売上税システムの概要を示します。 ここでは、売上税設定の要素と、それらがどのように連携して動作するのかを説明します。"
+title: "消費税の概要"
+description: "このトピックは、売上税システムの概要を示します。 ここでは、売上税設定の要素と、それらがどのように連携して動作するのかを説明します。"
 author: twheeloc
 manager: AnnBe
-ms.date: 08/01/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: TaxAuthority, TaxPeriod, TaxTable
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
+ms.search.scope: Core, Operations, Retail
 ms.custom: 13111
 ms.assetid: fe5fdc7f-9834-49fb-a611-1dd9c289619d
 ms.search.region: Global
@@ -19,21 +19,21 @@ ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: f4838dade6b2694a11f4b9775fe53560b1332f18
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 1eb30ccbaa51bf794c7b3ea2be3fe749fb8ff88d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
-# <a name="sales-tax-overview"></a>売上税の概要
+# <a name="sales-tax-overview"></a>消費税の概要
 
 [!include[banner](../includes/banner.md)]
 
 [!include[retail name](../includes/retail-name.md)]
 
 
-この記事は、売上税システムの概要を示します。 ここでは、売上税設定の要素と、それらがどのように連携して動作するのかを説明します。
+このトピックは、売上税システムの概要を示します。 ここでは、売上税設定の要素と、それらがどのように連携して動作するのかを説明します。
 
 <a name="overview"></a>概要
 --------
@@ -59,7 +59,7 @@ ms.lasthandoff: 09/29/2017
 | 設定作業                                                  | 必須/オプションおよび説明                                                                                                                                                                                                                                                                                         |
 |-----------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 主勘定を作成します。                                           | 必須です。 売上税機能を設定する前に、会社で税の支払いと記録に使用する主勘定を作成する必要があります。                                                                                                                                                                             |
-| 売上税の元帳転記グループの設定。                     | 必須です。 元帳転記グループは、売上税を記録および支払うための主勘定を定義します。   詳細については、「[売上税の元帳転記グループの設定](tasks/set-up-ledger-posting-groups-sales-tax.md)」を参照してください。                                                                                 |
+| 売上税の元帳転記グループの設定。                     | 必須です。 元帳転記グループは、売上税を記録および支払うための主勘定を定義します。   詳細については、[売上税の元帳転記グループの設定](tasks/set-up-ledger-posting-groups-sales-tax.md) を参照してください。                                                                                 |
 | 売上税所轄官庁の設定。                                   | 必須です。 売上税務当局は、税が報告され、支払われる必要がある法人です。    詳細については、「[売上税所轄官庁の設定](tasks/set-up-sales-tax-authorities.md)」を参照してください。                                                                                                                                          |
 | 売上税精算期間を設定します。                            | 必須です。 売上税精算期間には、売上税がいつどれくらいの頻度で報告および支払う必要があるかの情報が含まれます。 これらは、売上税所轄官庁へ関連付けられます。                                                                                                                                                       |
 | 売上税レポート コードの設定。                               | このフィールドは省略可能です。 売上税レポート コードは、1 つの売上税レポート コードの下で複数の売上税コードの金額をレポートする売上税コードに割り当てることができます。 詳細については、「[消費税レポート コードの設定](tasks/set-up-sales-tax-reporting-codes.md)」を参照してください。                                         |

@@ -1,9 +1,9 @@
 ---
 title: "175% 逓減残高による減価償却"
-description: "この記事は、減価償却の 175% 逓減残高法の概要を示します。"
+description: "このトピックは、減価償却の 175% 逓減残高法の概要を示します。"
 author: saraschi2
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 13911
 ms.assetid: cc5d001f-bcfe-4602-9ec1-9e265e9fd188
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 318e111f784157666c2853bcd6d5b3af2c9ffdc5
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: a61e743898e3e65c0012a7aeb9837e55e9143d01
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-この記事は、減価償却の 175% 逓減残高法の概要を示します。
+このトピックは、減価償却の 175% 逓減残高法の概要を示します。
 
 固定資産減価償却プロファイルを設定し、[**減価償却プロファイル**] ページの [**方法**] フィールドで、[**175% 逓減残高**] を選択すると、減価償却プロファイルが割り当てられる固定資産は各減価償却期間で適用される比率と同じ比率で減価償却されます。 
 
@@ -58,7 +58,7 @@ ms.lasthandoff: 09/29/2017
 
 ### <a name="fiscal"></a>会計年度
 
-[**償却年**] フィールドで [**会計年度**] を選択すると、175% 逓減残高による減価償却は、帳簿で指定した会計カレンダーまたは [**元帳**] ページで選択した会計カレンダーの会計年度に基づいて計算します。 会計カレンダーは、[**会計カレンダー**] ページで設定します。 詳細については、「[会計カレンダー、会計年度、および会計年度期間](..\budgeting\fiscal-calendars-fiscal-years-periods.md)」を参照してください。
+[**償却年**] フィールドで [**会計年度**] を選択すると、175% 逓減残高による減価償却は、帳簿で指定した会計カレンダーまたは [**元帳**] ページで選択した会計カレンダーの会計年度に基づいて計算します。 会計カレンダーは、[**会計カレンダー**] ページで設定します。 詳細については、[会計カレンダー、会計年度、および期間](..\budgeting\fiscal-calendars-fiscal-years-periods.md) を参照してください。
 
 たとえば、会計年度 7 月 1 日から 6 月 30 日の場合、減価償却計算は 7 月 1 日に開始されます。 会計年度の期間は 12 か月よりも長くすることも短くすることもできます。 減価償却は各期間に合わせて自動的に調整され、次の会計年度の長さは、[**会計カレンダー**] ページで設定された期間で決定されます。 
 

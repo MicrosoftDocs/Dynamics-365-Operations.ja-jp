@@ -3,7 +3,7 @@ title: "製品関連の翻訳のよく寄せられる質問"
 description: "このトピックでは、製品の翻訳、製品分析コードの値、および製品属性を管理する方法について説明します。"
 author: cvocph
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: b2976d4fc62a71039da0bc8be5b50be92a95959c
+ms.sourcegitcommit: 3a1bfd4bd5f396c05277159ac112eaa8197d5818
+ms.openlocfilehash: 2c58e3e2f60c00d8d834c1d80b347e2e7087809d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -47,7 +47,7 @@ ms.lasthandoff: 09/29/2017
 ## <a name="where-can-i-view-the-translated-information"></a>翻訳された情報はどこで表示できますか。
 製品関連情報の翻訳は、翻訳で利用可能な言語を使用する、請求書などの外部元伝票すべてで表示できます。
 
-## <a name="how-do-i-create-translations-for-productrelated-information"></a>製品関連情報の翻訳はどのように作成しますか。
+## <a name="how-do-i-create-translations-for-product-related-information"></a>製品関連情報の翻訳を作成する方法。
 製品の翻訳を作成するには、次の手順に従います。
 1.  [**製品情報管理**] &gt; [**共通**] &gt; [**リリースされた製品**] の順にクリックします。
 2.  製品を選択して、[アクション ペイン] の、[**言語**] グループで [**翻訳**] をクリックします。
@@ -124,7 +124,7 @@ ms.lasthandoff: 09/29/2017
 1.  分析コード値グループを作成するための以前の手順に従い、[**サイズ グループ明細行**]、[**色グループ明細行**] または [**スタイル グループ明細行**] ページを開くます。
 2.  [**テキストの翻訳**] をクリックします。 [**テキストの翻訳**] ページの [**翻訳テキスト**] グループで、[**名前**] および [**説明**] フィールドに翻訳を入力します。
 
-## <a name="when-can-translations-of-productrelated-information-be-managed"></a>製品関連情報の翻訳はいつ管理できますか。
+## <a name="when-can-translations-of-product-related-information-be-managed"></a>製品関連情報の翻訳はいつ管理できますか。
 製品関連情報の翻訳はいつでも管理できます。 製品と関連付けられている分析コード値の翻訳が更新されると、製品に翻訳があるかどうかに関係なく、製品情報が更新されます。
 
 

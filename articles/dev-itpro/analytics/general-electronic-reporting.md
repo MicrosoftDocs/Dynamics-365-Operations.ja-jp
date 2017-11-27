@@ -1,17 +1,17 @@
 ---
 title: "電子申告の概要"
-description: "この記事では、電子申告 (ER) ツールの概要を示します。 重要な概念、ER がサポートするシナリオについて説明し、ソリューションの一部として設計およびリリースされているフォーマットの一覧も掲載しています。"
-author: kfend
+description: "このトピックでは、電子申告 (ER) ツールの概要を示します。 重要な概念、ER がサポートするシナリオについて説明し、ソリューションの一部として設計およびリリースされているフォーマットの一覧も掲載しています。"
+author: NickSelin
 manager: AnnBe
-ms.date: 06/15/2017
+ms.date: 11/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: ERWorkspace
 audience: Application User, Developer, IT Pro
-ms.reviewer: sericks
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.custom: 58941
 ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
 ms.search.region: global
@@ -19,10 +19,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 704235fb1aacb7e3101d4b1feca1e36051059ade
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: ea9550b7209064a2842d7e5efe55e9e51c23b9f8
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -198,7 +198,7 @@ ER は、特定のビジネス ドメインのデータ モデルの作成に使
 
 ### <a name="configuring-data-model-mappings-for-outgoing-documents"></a>送信ドキュメントのデータ モデル マッピングをコンフィギュレーションします
 
-ER には、特定の Finance and Operations のデータ ソースに設計されているデータ モデルにマップすることができるモデル マッピング デザイナーが用意されています。 マッピングに基づき、実行時に、選択されたデータ ソースからデータ モデルにデータがインポートされます。 データ モデルは、送信する電子ドキュメントを生成する ER 形式の抽象データ ソースとして使用されます。 次の図は、このタイプのデータ モデル マッピングの例を示しています ([**SEPA 口座振替**] 支払のドメイン データ モデルのモデル マッピング)。 
+ER には、特定の Finance and Operations のデータ ソースに設計されているデータ モデルにマップすることができるモデル マッピング デザイナーが用意されています。 マッピングに基づき、実行時に、選択されたデータ ソースからデータ モデルにデータがインポートされます。 データ モデルは、送信する電子ドキュメントを生成する ER 形式の抽象データ ソースとして使用されます。 次の図は、このタイプのデータ モデル マッピングの例を示しています (**SEPA 口座振替** 支払のドメイン データ モデルのモデル マッピング)。 
 
 [![データ モデル マッピングの例](./media/ER-overview-07.png)](./media/ER-overview-07.png)
 

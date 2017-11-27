@@ -3,7 +3,7 @@ title: "個人スキルと業務ニーズの調整"
 description: "作業者、申請者、または連絡担当者がロールを効果的に遂行するために必要なスキルを追跡できます。 また、特定のジョブに必要なスキルを指定できます。"
 author: kherr75
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: HcmSkill, HcmSkillGapProfile, HcmSkillMapping, HcmSkillType
 audience: Application User
 ms.reviewer: rschloma
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 3361
 ms.assetid: c2ce94c0-933d-4edb-822c-7f0e7b49e4ee
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 2b76064049daccdcdff04c9f2fdde9a8b9c9e8e0
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: e9e66d3c6309c195e076fd86c31aa0adade97394
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 

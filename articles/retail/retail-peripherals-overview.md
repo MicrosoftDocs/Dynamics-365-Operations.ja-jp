@@ -1,9 +1,8 @@
 ---
 title: "小売周辺機器の概要"
-description: "このトピックでは、小売周辺機器に関連する概念を説明します。 周辺機器を販売時点管理 (POS) と接続するさまざまな方法、および POS との接続の管理を担当するコンポーネントについて説明します。"
-author: rubencdelgado
+description: "このトピックでは、小売周辺機器に関連する概念を説明します。"
 manager: AnnBe
-ms.date: 06/19/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -18,10 +17,10 @@ ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: e886411421fda17bb67f8ecedc1f7f3420e1fa72
+ms.sourcegitcommit: 52b3e2e78a03ac67507ee65a03e0884e5ed44678
+ms.openlocfilehash: 347100651302bb97806783d00559f2396d031fcc
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/14/2017
 
 ---
 
@@ -575,7 +574,7 @@ ServiceOPOS レジストリ内では、設定されているデバイスは OPOS
 ## <a name="peripheral-simulator"></a>周辺機器シミュレーター
 詳細については、[Retail 周辺機器シミュレーター](dev-itpro/retail-peripheral-simulator.md) を参照してください。
 
-## <a name="microsofttested-peripheral-devices"></a>マイクロソフトでテストされた周辺機器
+## <a name="microsoft-tested-peripheral-devices"></a>マイクロソフトでテストされた周辺機器
 ### <a name="ipc-built-in-hardware-station"></a>IPC (組み込み) ハードウェア ステーション
 
 次の周辺機器は、Windows 用 Modern POS に組み込まれた IPC ハードウェア ステーションを使用してテストされています。

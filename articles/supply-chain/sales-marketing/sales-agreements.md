@@ -1,9 +1,9 @@
 ---
 title: "販売契約書"
-description: "この記事は、販売契約書に関する情報を提供します。 販売契約書は、特定の数量または特定の量の製品を、一定期間に特別価格と割引で購入することを顧客と約束する契約です。"
+description: "このトピックでは、販売契約書について説明します。 販売契約書は、特定の数量または特定の量の製品を、一定期間に特別価格と割引で購入することを顧客と約束する契約です。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: SalesAgreement, SalesAgreementGenerateReleaseOrder, SalesAgreementListPage
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 9554
 ms.assetid: c5d55c8d-99f2-44f9-a897-5b0dee85fc81
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 15e3f872e4ded027734ee73081ba7af68be5107d
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 21e9c53f39b0f4def0052bf7f04c77279bfc610b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-この記事は、販売契約書に関する情報を提供します。 販売契約書は、特定の数量または特定の量の製品を、一定期間に特別価格と割引で購入することを顧客と約束する契約です。
+このトピックでは、販売契約書について説明します。 販売契約書は、特定の数量または特定の量の製品を、一定期間に特別価格と割引で購入することを顧客と約束する契約です。
 
 販売契約書は、特定の価格、特別割引、支払や配送条件などのそのほかの特別な条件と引き換えに、長期にわたって特定の数量または特定の金額で製品を購入できることを顧客に約束する契約です。 販売契約書の価格と割引により、存在する売買契約で指定された価格や割引は上書きされます。  
 

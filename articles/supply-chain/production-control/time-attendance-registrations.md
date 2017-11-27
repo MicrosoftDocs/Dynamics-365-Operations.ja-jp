@@ -1,9 +1,9 @@
 ---
 title: "時刻と出勤の登録"
-description: "時間登録作業者は、さまざまなタイプの時間登録を入力できます (出勤、退勤、間接活動の登録、および休暇登録時など)。 この記事は、登録とその計算、承認、およびタイムシートの承認プロセスに構造と自動承認を追加するためのワークフローの使用について説明します。"
+description: "時間登録作業者は、さまざまなタイプの時間登録を入力できます (出勤、退勤、間接活動の登録、および休暇登録時など)。 このトピックは、登録とその計算、承認、およびタイムシートの承認プロセスに構造と自動承認を追加するためのワークフローの使用について説明します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: HcmWorker, JmgCalcApprovePickDialog, JmgGroupApprove, JmgGroupCalc, JmgGroupSigningTable, JmgRegistration, JmgTimeCalcParmeters, WorkflowTableListPageRnr
 audience: Application User
 ms.reviewer: rschloma
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 53351
 ms.assetid: 885b0cdf-53d7-4cb4-92fe-da1b9e32b39f
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 83603b1f8d20c18b7f10cd7224d491b558ee1b8b
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 29040d0c96183898672bc405364ec59707bff53a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-時間登録作業者は、さまざまなタイプの時間登録を入力できます (出勤、退勤、間接活動の登録、および休暇登録時など)。 この記事は、登録とその計算、承認、およびタイムシートの承認プロセスに構造と自動承認を追加するためのワークフローの使用について説明します。 
+時間登録作業者は、さまざまなタイプの時間登録を入力できます (出勤、退勤、間接活動の登録、および休暇登録時など)。 このトピックは、登録とその計算、承認、およびタイムシートの承認プロセスに構造と自動承認を追加するためのワークフローの使用について説明します。 
 
 <a name="registrations"></a>登録
 -------------
@@ -66,7 +66,7 @@ ms.lasthandoff: 09/29/2017
 -   作業者が作業日に従事する可能性のある非生産活動の間接活動。 これらの活動の例には、会議やワークスペースの掃除が含まれます。
 -   追加時間、フレックス時間、または残業として登録される時間外の時間。
 
-## <a name="adding-clockout-registrations"></a>退勤登録の追加
+## <a name="adding-clock-out-registrations"></a>退勤登録の追加
 作業者が各自の作業日の終わりに退勤時間の記録を忘れた場合、バッチ ジョブを実行して、漏れている退勤登録を作成できます。 システムは、作業者のプロファイルに従って出勤時間、退勤時間を比較し、プロファイルの終了時刻に合わせて自動的に漏れている退勤登録を挿入します。 出勤/退勤登録の両方が、後続の計算、時間登録の承認、給与への転送のために不可欠です。
 
 ## <a name="calculating-registrations"></a>登録の計算

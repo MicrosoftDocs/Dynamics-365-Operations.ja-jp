@@ -1,9 +1,9 @@
 ---
 title: "キャッシュ生成単位の固定資産の減損会計"
-description: "この記事では、Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition に含まれる固定資産の減損の機能を紹介します。 この記事の主な目的は、ユーザーに減損会計の概念モデルの概要を示すことです。"
+description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition に含まれる固定資産の減損の機能を紹介します。 この記事の主な目的は、ユーザーに減損会計の概念モデルの概要を示すことです。"
 author: rake-gui
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,17 +11,17 @@ ms.technology:
 ms.search.form: AssetAllocationGoodwillSharedAsset_JP, AssetCashGeneratingUnit_JP, AssetCashGeneratingUnitGroup_JP, AssetImpairmentRecognitionMethod1_JP, AssetImpairmentRecognitionMethod2_JP
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 25691
 ms.search.region: Japan
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 1655a1b2d62fefc1f46fee6dceea3180e103e6e0
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 6000f63fbbfeb89e2361a6165ab800b320a4e084
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-この記事では、Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition に含まれる固定資産の減損の機能を紹介します。 この記事の主な目的は、ユーザーに減損会計の概念モデルの概要を示すことです。 
+このトピックでは、Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition に含まれる固定資産の減損の機能を紹介します。 この記事の主な目的は、ユーザーに減損会計の概念モデルの概要を示すことです。 
 
 固定資産は、管理不良、新規競合、および技術革新などの要因によって、その価値の減損 (減少) の影響を受けやすい場合があります。 減損損失は損益勘定で表示されます。 減損価値は、固定資産または利益生成単位の値を回収可能金額と比較して測定されます。 回収可能金額は、固定資産またはその工程から生成される収益の売上から取得できる最大値です。 日本では、固定資産の減損は、日本の一般会計原則 (GAAP) の 第 6 項目に従って行い、2 つのステップがある方法を使用します。 最初のステップは、減損損失の認識テストで、2 つ目のステップは減損損失の測定です。 減損後、回収可能金額は、将来の減価償却計算のための固定資産の新しい正味簿価額となります。 減損の作業プロセスには次の主要タスクが含まれます。
 

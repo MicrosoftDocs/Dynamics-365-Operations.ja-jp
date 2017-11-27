@@ -3,14 +3,14 @@ title: "外部仕入先との仕入先コラボレーション"
 description: "このトピックでは、購買担当者が外部仕入先とコラボレーションして、発注書および委託販売在庫に関する情報を交換する方法について説明します。"
 author: mkirknel
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: bis
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 221264
 ms.assetid: dde49743-1541-4353-a030-63ca3069cd7d
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 9036b7f9863871915f9ad39d76bf027ae4c2f4bf
-ms.openlocfilehash: aee8db8ddaeac135ed1f9d8b1b8a621609c6d358
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: abff906bcdf31c91ce696afbcd651a1d7a87ea8a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 10/05/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -33,6 +33,8 @@ ms.lasthandoff: 10/05/2017
 このトピックでは、購買担当者が外部仕入先とコラボレーションして、発注書および委託販売在庫に関する情報を交換する方法について説明します。
 
 [**仕入先コラボレーション**] モジュールは、Microsoft Dynamics 365 for Finance and Operations での電子データ交換 (EDI) の統合がない仕入先が対象とします。 仕入先は、発注書、請求書、および委託販売在庫情報で作業できます。 このトピックでは、仕入先コラボレーション インタフェースを使用して、発注書および委託販売在庫を使用している外部仕入先とコラボレーションする方法について説明します。 また、特定の仕入先が仕入先コラボレーションを使用できるようにする方法、すべての仕入先が発注書に応答する際に表示する情報を定義する方法についても説明します。 外部仕入先が仕入先コラボレーション インタフェースで実行する内容の詳細については、「[顧客との仕入先コラボレーション](vendor-collaboration-work-customers-dynamics-365-operations.md)」を参照してください。  
+
+このトピックで仕入先コラボレーションへの適用に関する情報は、Dynamics 365 for Finance and Operations の現在のバージョンにのみ適用されます。 Microsoft Dynamics AX の 2016 年 2 月と 2016 年 5 月バージョンでは、仕入先ポータル モジュールを使用して別の仕入先とコラボレーションします。 仕入先ポータル モジュールについては、「[仕入先ポータルを使用して別の仕入先とのコラボレーション](collaborate-vendors-vendor-portal.md)」を参照してください。
 
 仕入先が請求プロセスで仕入先コラボレーションを使用する方法の詳細については、「[仕入先コラボレーションの請求ワークスペース](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md)」を参照してください。 新しい仕入先コラボレーション ユーザーをプロビジョニングする方法の詳細については、「[仕入先コラボレーション ユーザーの管理](manage-vendor-collaboration-users.md)」を参照してください。
 
@@ -148,7 +150,7 @@ Finance and Operations の仕入先コラボレーションの全般的な設定
 
 仕入先はメモや添付ファイルを追加することもできます。
 
-明細行で、仕入先は数量や出荷日を変更したり、メモと添付ファイルの追加、明細行の否認、テキストとしてキー入力される別の製品と明細行の置き換え、および明細行を複数の配送に分割できます。 仕入先によって提案される変更によって、明細行のステータスはさまざまなステータスとなります。
+明細行で、仕入先は数量や出荷日を変更したり、メモと添付ファイルの追加、明細行の否認、テキストとしてキー入力される別の製品と明細行の置き換え、および明細行を複数の配送に分割したりできます。 仕入先によって提案される変更によって、明細行のステータスはさまざまなステータスとなります。
     
 -   [**変更内容承認済**]
 -   [**否認済み**]

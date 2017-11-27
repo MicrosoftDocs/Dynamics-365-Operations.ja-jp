@@ -3,14 +3,14 @@ title: "削除予定の機能"
 description: "このトピックでは、削除された、または削除される予定の機能について説明します。"
 author: sericks007
 manager: AnnBe
-ms.date: 07/10/2017
+ms.date: 10/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations, Platform, UnifiedOperations
+ms.search.scope: Operations
 ms.custom: 21821
 ms.assetid: 31019808-4cbf-47d7-b1ba-d791db4281ae
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 6
 ms.translationtype: HT
-ms.sourcegitcommit: c73eeaaf28df8db720431d4bcd317c9721baa99d
-ms.openlocfilehash: 3ebe8f2869b93050d320456ff457c0b5692c5eae
+ms.sourcegitcommit: 9ee81bbdd22fed4ef6ea97080fe1f6b3d82bcaf5
+ms.openlocfilehash: ee051bbf50a6124fe1700a244b36b5f9c599e714
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/06/2017
 
 ---
 
@@ -382,7 +382,7 @@ ICMS の税金の連邦税明細書
 
 |                              |                                                                                                                       |
 |------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| **減価償却の理由**       | 本明細書は、ブラジルの一部の官庁では適用されません。                                                     |
+| **減価償却の理由**       | 本明細書は、ブラジルの一部の州では適用されません。                                                     |
 | **別の機能での置き換え?** | 一連番号 ユーザーは、特定の状況で必要とされる場合、Generic Electronic レポートツールを使用して明細書を設定できます。 |
 | **影響を受けるモジュール**             | 会計帳簿                                                                                                          |
 

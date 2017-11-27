@@ -3,24 +3,24 @@ title: "人事管理"
 description: "人事管理は、多くの日常的な記録タスクを合理化し、組織の多数のスタッフ配置に関連するプロセスを自動化します。 また、人事スタッフが監督すべき領域を管理するためのフレームワークも提供します。 これらの領域には、従業員の採用およびつなぎ留め、給付金管理、トレーニング、勤務評価、変更管理が含まれます。"
 author: rschloma
 manager: AnnBe
-ms.date: 07/06/2017
+ms.date: 11/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: rschloma
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Operations, Core
 ms.custom: 20931
 ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 04d459a2fd0fdf9c201d9e96b37234846eb9ccf0
-ms.openlocfilehash: e074426f4b863e692b91ce1ebf3b428435dadd94
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 217eef722383cf0ad9dfdfbe5ca2973eb1337fe1
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -66,7 +66,7 @@ ms.lasthandoff: 09/29/2017
 
 ## <a name="develop-and-train-employees"></a>従業員の開発とトレーニング
 
-従業員が重要なビジネス ニーズを満たしながらキャリア目標を達成できるように、目標の設定、業績評価の作成、フィードバックの管理を行うことができます。また、従業員が必要なスキルを開発できるように、講師をコースに割り当てる前、または誰かをコースに登録する前に、講師、コースのタイプ、コースの説明、議事録、追跡、およびセッションを設定することもできます。 講師は、作業者、申請者、または連絡先として既に存在する必要があります。
+重要なビジネスニーズを提供しながら、従業員のキャリア目標を達成するために、目標を設定し、パフォーマンスレビューを作成し、フィードバックを追跡することができます。 従業員が必要なスキルを身につけるため、講師をコースに割り当てたり誰かをコースに登録する前に、講師、コースのタイプ、コースの説明、議事録、追跡、およびセッションを設定することもできます。 講師は、作業者、申請者、または連絡先として既に存在する必要があります。
 
 -   [パフォーマンス管理](../../talent/performance-management-overview.md)
 -   [要員のスキルとビジネス ニーズの調整](../../talent/skills.md)

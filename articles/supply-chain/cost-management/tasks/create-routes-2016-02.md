@@ -16,17 +16,17 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 1c2801af8201865f5ae9233c9729a4d59ef84bcd
-ms.openlocfilehash: 2df913543d89a502aecfe7e2fe61265a8a1a121c
+ms.sourcegitcommit: 273ced77a61d485426c0830556e4401e782e86c4
+ms.openlocfilehash: 1ba2ae3ad92149636714701448d4dac8296d6613
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/24/2017
 
 ---
 # <a name="create-routes-february-2016-only"></a>ルートの作成 (2016 年 2 月のみ)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-このタスクでは、完成品と半完成品の部品表の生産工順の作成について説明します。 これは、BOM 計算シリーズの 5 番目のタスクです。 このタスクの作成に使用するデモ データの会社は USMF です。
+このタスクでは、完成品と半完成品の生産工順の作成について説明します。 これは、BOM 計算シリーズの 5 番目のタスクです。 このタスクの作成に使用するデモ データの会社は USMF です。
 
 
 ## <a name="create-a-route-for-a-semi-finished-product"></a>半完成品の工順の作成

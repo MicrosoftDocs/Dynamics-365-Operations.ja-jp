@@ -1,9 +1,9 @@
 ---
 title: "自動決済と優先順位付け"
-description: "この記事は、[売掛金勘定パラメーター] ページの [自動決済] を選択した場合にトランザクションが決済される方法について説明します。 自動決済を支払の優先順位と組み合わせた使用方法も説明します。"
+description: "このトピックは、[売掛金勘定パラメーター] ページの [自動決済] を選択した場合にトランザクションが決済される方法について説明します。 自動決済を支払の優先順位と組み合わせた使用方法も説明します。"
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/22/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: CustOpenTrans, CustParameters, LedgerJournalTransCustPaym
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 14531
 ms.assetid: e7837cf6-ec69-44b4-8d47-eba38d5c7b1f
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 7a0f87aca78f1263f1f6ce65e2629b91312716cb
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: fc091e401f84ce2ac425897ad6cbd92fd7399736
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-この記事は、[売掛金勘定パラメーター] ページの [自動決済] を選択した場合にトランザクションが決済される方法について説明します。 自動決済を支払の優先順位と組み合わせた使用方法も説明します。
+このトピックは、[売掛金勘定パラメーター] ページの [自動決済] を選択した場合にトランザクションが決済される方法について説明します。 自動決済を支払の優先順位と組み合わせた使用方法も説明します。
 
 請求書や他のトランザクションの支払を決済する場合、2 種類のオプションがあります。 決済するトランザクションを手動で選択するか、Microsoft Dynamics 365 for Finance and Operations により、自動決済機能を使用してトランザクションを自動的に選択します。 また、**決済の優先順位付け**オプションを使用すると、自動決済の処理方法をカスタマイズできます。 これらのオプションは、すべて**売掛金勘定パラメーター** ページで定義された決済パラメーターの一部です。 トランザクションが自動的に決済される方法は、自動決済に使用する方法によって異なる場合があります。 次の方法を選択できます。
 
@@ -50,7 +50,7 @@ ms.lasthandoff: 09/29/2017
 | 請求書 3     | 10 月 15 日  | 500.00 | 2% 14/正味 30        | 10 月 29 日         |                                                                                                                                                                                               |
 | 利子計算書 | 10 月 15 日  | 7.00   |                     |                    | この利子計算書は請求書 1 と請求書 2 で使用されます。 金額は 30 日以上期日が過ぎた金額に 2 % の利息として計算されます。 例: 0.02 × (100.00 + 250.00) = 7.00。 |
 
-## <a name="userdefined-settlement-priority"></a>ユーザー定義の決済の優先順位
+## <a name="user-defined-settlement-priority"></a>ユーザー定義の決済の優先順位
 **売掛金勘定パラメーター**ページで、**自動決済の優先順位の使用**を**はい**に設定すると、トランザクションを自動決済の対象として選択した場合、**決済の優先順位**ページで指定された決済の優先順位が使用されます。 この例では、決済の優先順位を次のように定義します。
 
 1.  トランザクション タイプ

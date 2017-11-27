@@ -16,10 +16,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 04def14ddf9b079005bf11acbcaf64b21aa80fdb
+ms.sourcegitcommit: 8bbdbf882f6f73d03be0a036cb975109396e4a0d
+ms.openlocfilehash: 09789957839097ba2898544102af908c198090c7
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/14/2017
 
 ---
 # <a name="design-a-configuration-for-generating-reports-in-openxml-format-for-electronic-reporting-er"></a>電子申告 (ER) 用に OpenXML 形式のレポートを生成するためのコンフィギュレーションを設計する
@@ -34,8 +34,7 @@ ms.lasthandoff: 09/29/2017
 
 
 
-これらの手順を完了するには、先に「コンフィギュレーション プロバイダーの作成および有効なプロバイダーとしてのマーク付け」の手順の各ステップを完了する必要があります。 テンプレートを作成するときにインポートされる Excel ファイルも必要です。 このファイルは次のリンクからアクセスできます。  https://msdynamics.blob.core.windows.net/media/2016/04/SampleVendPaymWsReport.xlsx
-
+これらの手順を完了するには、先に「コンフィギュレーション プロバイダーの作成および有効なプロバイダーとしてのマーク付け」の手順の各ステップを完了する必要があります。 Microsoft Excel ファイル、[支払レポートのテンプレート](https://go.microsoft.com/fwlink/?linkid=862266) をダウンロードして保存する必要もあります。 
 
 ## <a name="upload-the-payments-data-model-configuration"></a>支払データ モデルのコンフィギュレーションをアップロードします。
 1. [組織管理] > [ワークスペース] > [電子申告] の順に移動します。

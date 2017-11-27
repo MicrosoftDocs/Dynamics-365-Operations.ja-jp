@@ -3,7 +3,7 @@ title: "モバイル ジョブ デバイスでの進捗のレポート"
 description: "この手順では、ジョブ デバイスの登録フォームで生産ジョブの進行を開始してレポートする方法を示します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 11/11/2016
+ms.date: 11/03/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: acbedc6d27624d9a8d1e6fb9bb0d9abed1b4377f
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 8a0432b5ff01bf88b9c18de0cac0661618c654ba
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 # <a name="report-progress-on-a-mobile-job-device"></a>モバイル ジョブ デバイスでの進捗のレポート

@@ -3,7 +3,7 @@ title: "梱包材および費用"
 description: "梱包材費用は、一定の間隔でリサイクル会社に支払われます。 梱包単位を構成する各材料について、重量単位あたりの金額が支払われます。 梱包材費用は計算および報告されますが、所轄官庁に支払う必要がある税とは見なされないため、元帳トランザクションは転記されません。"
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: InventPackagingGroup, InventPackagingMaterialCode, InventPackagingMaterialFee, InventPackagingMaterialTrans, InventPackagingMaterialTransPurch, InventPackagingUnit
 audience: Application User
 ms.reviewer: bis
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 2194
 ms.assetid: 040b65dc-43c9-4256-b69f-b2d6e736fbe9
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 5d7cd7b3d60e9c265a766695b53d8d27ee2a8d0a
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: b131cdfa2f0e3b6a8f116464323d49eaa4584634
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -56,7 +56,7 @@ ms.lasthandoff: 09/29/2017
 ## <a name="packing-units-on-purchase-order-lines"></a>購買注文明細行の梱包単位
 購買注文明細行の梱包材トランザクションは自動的には作成されません。 **梱包材の購買トランザクションの作成**ページで、請求済購買注文明細行に対するトランザクションを手動で作成します。
 
-## <a name="set-up-customer-packagingmaterialfee-license-numbers"></a>顧客の梱包材費用ライセンス番号の設定
+## <a name="set-up-customer-packaging-material-fee-license-numbers"></a>顧客の梱包材費用ライセンス番号の設定
 顧客が梱包材費用を支払う場合は、**顧客**ページで顧客の梱包材費用ライセンス番号を指定します。 ライセンス番号が顧客に割り当てられている場合、販売注文が請求されるときに梱包材費用は自動的に計算されます。 請求後は、レポートの計算および印刷を行う必要がないため、**梱包材トランザクション** ページの [**手数料計算**] チェック ボックスがオフになります。 梱包材重量を請求書に印刷し、顧客が費用を支払うことを顧客に通知するように選択できます。 
 
 法人が梱包材費用を支払う場合、顧客のライセンス番号を指定しないでください。 請求後は、**梱包材トランザクション** ページの [**手数料計算**] チェック ボックスが選択されます。 これにより、レポートが作成されるときに費用が計算されることが示されます。 請求書に重量を印刷し、法人が費用を支払うことを示すように選択できます。

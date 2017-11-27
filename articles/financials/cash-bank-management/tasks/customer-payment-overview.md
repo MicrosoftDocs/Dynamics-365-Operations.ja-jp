@@ -3,7 +3,7 @@ title: "顧客支払の概要"
 description: "このタスク ガイドでは、顧客支払の入力に使用するさまざまな方法を説明します。"
 author: kweekley
 manager: AnnBe
-ms.date: 11/11/2016
+ms.date: 10/26/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: e6e10d0d0a05b0594ba5cf6a77f474b461bd9dca
+ms.sourcegitcommit: 621ad64c06a6cebff90e888ac89bba922052cf35
+ms.openlocfilehash: de2526d5c674de9505174d3f40f9ae597b8a0a6b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/26/2017
 
 ---
 # <a name="customer-payment-overview"></a>顧客支払の概要

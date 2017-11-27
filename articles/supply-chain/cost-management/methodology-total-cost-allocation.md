@@ -1,9 +1,9 @@
 ---
-title: "原価配賦合計の方法"
-description: "この記事は、原価配賦の合計 (TCA) を使用するためのガイドラインを提供します。 TCA は、バッチ オーダーの主要式品目および式に定義される連産品の間のコストを計算する方法です。"
+title: "合計原価配賦方法"
+description: "このトピックは、原価配賦の合計 (TCA) を使用するためのガイドラインを提供します。 TCA は、バッチ オーダーの主要式品目および式に定義される連産品の間のコストを計算する方法です。"
 author: AndersGirke
 manager: AnnBe
-ms.date: 04/20/2017
+ms.date: 10/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: BOMConsistOf, PmfFormulaCoBy
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 83852
 ms.assetid: 7c14c3e5-9476-4a79-a210-e77fc91cc7fc
 ms.search.region: Global
@@ -20,19 +20,19 @@ ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: b070aaeecacdee7af08d8136dc4232449b8f988b
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 4f3d75411e8c99365f1aba8214c78e93b4741871
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
-# <a name="total-cost-allocation-method"></a>原価配賦合計の方法
+# <a name="total-cost-allocation-method"></a>合計原価配賦方法
 
 [!include[banner](../includes/banner.md)]
 
 
-この記事は、原価配賦の合計 (TCA) を使用するためのガイドラインを提供します。 TCA は、バッチ オーダーの主要式品目および式に定義される連産品の間のコストを計算する方法です。
+このトピックは、原価配賦の合計 (TCA) を使用するためのガイドラインを提供します。 TCA は、バッチ オーダーの主要式品目および式に定義される連産品の間のコストを計算する方法です。
 
 原価配賦の合計 (TCA) は、バッチ オーダーの主要式品目および式に定義される連産品の間のコストを計算する方法です。 このメソッドは動的になります。 式品目と連産品に対して完了報告された数量間の加重平均としてコストを計算します。 TCA を使用すると、バッチ オーダーのコスト配賦を確認する必要がありません。 TCA を使用しない場合、式計算は既存の機能を使用します。
 

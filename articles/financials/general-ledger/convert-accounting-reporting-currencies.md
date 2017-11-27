@@ -1,16 +1,16 @@
 ---
-title: " 会計またはレポートの通貨換算"
-description: 
+title: "会計またはレポートの通貨換算"
+description: "会計通貨やレポート通貨を変更する必要のある会社には、2 つの選択肢があります。"
 author: aprilolson
 manager: AnnBe
-ms.date: 08/01/2017
+ms.date: 10/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 78223
 ms.assetid: 31c56f9a-9c64-40a2-90e3-1969a760614b
 ms.search.region: Global
@@ -18,14 +18,14 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 363543f8befacbf2e1b3ab28e6b9f14a5caf3c10
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: ad840f4ed2cf27615e699a13fcd8be7f3c2cd5c8
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
-# <a name="convert-accounting-or-reporting-currencies"></a> 会計またはレポートの通貨換算
+# <a name="convert-accounting-or-reporting-currencies"></a>会計またはレポートの通貨換算
 
 [!include[banner](../includes/banner.md)]
 
