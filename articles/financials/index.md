@@ -25,22 +25,22 @@ ms.lasthandoff: 11/03/2017
 
 ---
 
-# <a name="financial-management-home-page"></a>財務管理ホーム ページ
+# <a name="financial-management-home-page"></a><span data-ttu-id="e8142-103">財務管理ホーム ページ</span><span class="sxs-lookup"><span data-stu-id="e8142-103">Financial management home page</span></span>
 
 [!include[banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Finance and Operations Enterprise Edition の財務管理機能に関するヘルプ トピックとその他のリソースの一覧を示します。 
+<span data-ttu-id="e8142-104">このトピックでは、Microsoft Dynamics 365 for Finance and Operations Enterprise Edition の財務管理機能に関するヘルプ トピックとその他のリソースの一覧を示します。</span><span class="sxs-lookup"><span data-stu-id="e8142-104">This topic provides a list of the help topics and other resources for the financial management features in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.</span></span> 
 
-機能領域を選択すると詳細が表示されます。
-- [買掛金勘定](accounts-payable\accounts-payable.md) 
-- [売掛金勘定](accounts-receivable\accounts-receivable.md) 
-- [現金および銀行管理](cash-bank-management\cash-bank-management.md)
-- [原価会計](cost-accounting\cost-accounting-home-page.md)
-- [固定資産](fixed-assets\fixed-assets.md)
-- [一般会計](general-ledger\general-ledger.md) 
-- [プロジェクト管理](project-management\overview-project-management-accounting.md)
-- [公的機関](public-sector\public-sector-functionality.md) 
-- [予算作成](budgeting\budgeting-overview.md) 
+<span data-ttu-id="e8142-105">機能領域を選択すると詳細が表示されます。</span><span class="sxs-lookup"><span data-stu-id="e8142-105">Select a feature area to learn more about it.</span></span>
+- [<span data-ttu-id="e8142-106">買掛金勘定</span><span class="sxs-lookup"><span data-stu-id="e8142-106">Accounts payable</span></span>](accounts-payable\accounts-payable.md) 
+- [<span data-ttu-id="e8142-107">売掛金勘定</span><span class="sxs-lookup"><span data-stu-id="e8142-107">Accounts receivable</span></span>](accounts-receivable\accounts-receivable.md) 
+- [<span data-ttu-id="e8142-108">現金および銀行管理</span><span class="sxs-lookup"><span data-stu-id="e8142-108">Cash and bank management</span></span>](cash-bank-management\cash-bank-management.md)
+- [<span data-ttu-id="e8142-109">原価会計</span><span class="sxs-lookup"><span data-stu-id="e8142-109">Cost accounting</span></span>](cost-accounting\cost-accounting-home-page.md)
+- [<span data-ttu-id="e8142-110">固定資産</span><span class="sxs-lookup"><span data-stu-id="e8142-110">Fixed assets</span></span>](fixed-assets\fixed-assets.md)
+- [<span data-ttu-id="e8142-111">一般会計</span><span class="sxs-lookup"><span data-stu-id="e8142-111">General ledger</span></span>](general-ledger\general-ledger.md) 
+- [<span data-ttu-id="e8142-112">プロジェクト管理</span><span class="sxs-lookup"><span data-stu-id="e8142-112">Project management</span></span>](project-management\overview-project-management-accounting.md)
+- [<span data-ttu-id="e8142-113">公的機関</span><span class="sxs-lookup"><span data-stu-id="e8142-113">Public sector</span></span>](public-sector\public-sector-functionality.md) 
+- [<span data-ttu-id="e8142-114">予算作成</span><span class="sxs-lookup"><span data-stu-id="e8142-114">Budgeting</span></span>](budgeting\budgeting-overview.md) 
 
 
 
