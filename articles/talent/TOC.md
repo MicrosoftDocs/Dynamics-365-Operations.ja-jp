@@ -1,10 +1,9 @@
 # [Dynamics 365 for Talent へようこそ](index.md)
 
-# はじめに
+# [はじめに](talent-get-started.md)
 ## [システム要件と更新ポリシー](talent-versions-update-policy.md)
 
-# 人材戦略の作成
-## [部門、職務、職位を使用した従業員の編成](departments-jobs-positions.md)
+# [人材戦略の作成](departments-jobs-positions.md)
 ## [職務コンポーネントの設定](create-job.md)
 ## [部門の作成と部門階層への関連付け](create-department-add-department-hierarchy.md)
 ## [法人間の HR パラメーターの設定](set-up-hr-parameters-across-legal-entities.md)
@@ -28,13 +27,11 @@
 ## [要員のスキルとビジネス ニーズの調整](skills.md)
 ## [トレーニング コースの設定](courses.md)
 
-# 福利厚生の作成と維持
-## [福利厚生プログラムの管理](manage-benefit-program.md)
-## [給付金の適格性ポリシー](benefit-eligibility-policies.md)
+# [福利厚生の作成と維持](manage-benefit-program.md)
+# [給付金の適格性ポリシー](benefit-eligibility-policies.md)
 ## [作業者への貸与品目の管理](loan-items.md)
 
-# アンケートによる情報の収集
-## [アンケート](questionnaires.md)
+# [アンケートによる情報の収集](questionnaires.md)
 ## [アンケートのデザイン](design-questionnaires.md)
 ## [アンケートの配布と記入](distribute-questionnaires.md)
 ## [アンケート結果の評価](evaluate-questionnaire-results.md)

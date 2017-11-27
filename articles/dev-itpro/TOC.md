@@ -54,57 +54,54 @@
 #### [X++ 属性クラス](dev-ref/xpp-attribute-classes.md)
 #### [X++ と C\# の比較](dev-ref/xpp-cs-comparison.md)
 #### [X++ 構文](dev-ref/xpp-syntax.md)
-## コンパイル時関数
+## [API、クラス、およびテーブルの参照](dev-ref/api-reference.md)
 ### [X++ コンパイル時関数](dev-ref/xpp-compile-time-functions.md)
-## ランタイム関数
-### [X++ ビジネス ランタイム関数](dev-ref/xpp-business-run-time-functions.md)
-### [X++ コンテナー ランタイム関数](dev-ref/xpp-container-run-time-functions.md)
-### [X++ 変換ランタイム関数](dev-ref/xpp-conversion-run-time-functions.md)
-### [X++ 日付ランタイム関数](dev-ref/xpp-date-run-time-functions.md)
-### [X++ 数学ランタイム関数](dev-ref/xpp-math-run-time-functions.md)
-### [X++ リフレクション ランタイム関数](dev-ref/xpp-reflection-run-time-functions.md)
 ### [X++ ランタイム関数](dev-ref/xpp-run-time-functions.md)
-### [X++ セッション ランタイム関数](dev-ref/xpp-session-run-time-functions.md)
-### [X++ 文字列ランタイム関数](dev-ref/xpp-string-run-time-functions.md)
-## システム テーブル
+#### [X++ ビジネス ランタイム関数](dev-ref/xpp-business-run-time-functions.md)
+#### [X++ コンテナー ランタイム関数](dev-ref/xpp-container-run-time-functions.md)
+#### [X++ 変換ランタイム関数](dev-ref/xpp-conversion-run-time-functions.md)
+#### [X++ 日付ランタイム関数](dev-ref/xpp-date-run-time-functions.md)
+#### [X++ 数学ランタイム関数](dev-ref/xpp-math-run-time-functions.md)
+#### [X++ リフレクション ランタイム関数](dev-ref/xpp-reflection-run-time-functions.md)
+#### [X++ セッション ランタイム関数](dev-ref/xpp-session-run-time-functions.md)
+#### [X++ 文字列ランタイム関数](dev-ref/xpp-string-run-time-functions.md)
 ### [システム テーブル](dev-ref/system-tables.md)
-## システム クラス
-### [API、クラス、およびテーブルの参照](dev-ref/api-reference.md)
-### [A クラス](dev-ref/a-classes.md)
-### [B クラス](dev-ref/b-classes.md)
-### [C クラス](dev-ref/c-classes.md)
-### [D クラス](dev-ref/d-classes.md)
-### [E クラス](dev-ref/e-classes.md)
-### [F クラス: FormBuildAnimateControl への FieldBinding](dev-ref/fieldbinding-classes.md)
-### [F クラス: FormBuildFastTabSummarySeparator への FormBuildButtonControl](dev-ref/formbuildbuttoncontrol-classes.md)
-### [F クラス: FormBuildRealControl への FormBuildFilterPaneControl](dev-ref/formbuildfilterpanecontrol-classes.md)
-### [F クラス: FormButtonSeparatorControl への FormBuildReferenceControl](dev-ref/formbuildreferencecontrol-classes.md)
-### [F クラス: FormControlEventArgs への FormChangeTracker](dev-ref/formchangetracker-classes.md)
-### [F クラス: FormFastTabHeaderControl への FormDataObject](dev-ref/formdataobject-classes.md)
-### [F クラス: FormGridControl への FormFastTabSummarySeparator](dev-ref/formfasttabsummaryseparator-classes.md)
-### [F クラス: FormIntControl への FormGroupControl](dev-ref/formgroupcontrol-classes.md)
-### [F クラス: FormNotifyEventArgs への FormListBoxControl](dev-ref/formlistboxcontrol-classes.md)
-### [F クラス: FormRealControl への FormObject](dev-ref/formobject-classes.md)
-### [F クラス: FormStringControl への FormReferenceControl](dev-ref/formreferencecontrol-classes.md)
-### [F クラス: FormWindowControl への FormTabControl](dev-ref/formtabcontrol-classes.md)
-### [G クラス](dev-ref/g-classes.md)
-### [H クラス](dev-ref/h-classes.md)
-### [I クラス](dev-ref/i-classes.md)
-### [J クラス](dev-ref/j-classes.md)
-### [K クラス](dev-ref/k-classes.md)
-### [L クラス](dev-ref/l-classes.md)
-### [M クラス](dev-ref/m-classes.md)
-### [N クラス](dev-ref/n-classes.md)
-### [O クラス](dev-ref/o-classes.md)
-### [P クラス](dev-ref/p-classes.md)
-### [Q クラス](dev-ref/q-classes.md)
-### [R クラス](dev-ref/r-classes.md)
-### [S クラス](dev-ref/s-classes.md)
-### [T クラス](dev-ref/t-classes.md)
-### [U クラス](dev-ref/u-classes.md)
-### [V クラス](dev-ref/v-classes.md)
-### [W クラス](dev-ref/w-classes.md)
-### [X クラス](dev-ref/x-classes.md)
+### システム クラス
+#### [A クラス](dev-ref/a-classes.md)
+#### [B クラス](dev-ref/b-classes.md)
+#### [C クラス](dev-ref/c-classes.md)
+#### [D クラス](dev-ref/d-classes.md)
+#### [E クラス](dev-ref/e-classes.md)
+#### [F クラス: FormBuildAnimateControl への FieldBinding](dev-ref/fieldbinding-classes.md)
+#### [F クラス: FormBuildFastTabSummarySeparator への FormBuildButtonControl](dev-ref/formbuildbuttoncontrol-classes.md)
+#### [F クラス: FormBuildRealControl への FormBuildFilterPaneControl](dev-ref/formbuildfilterpanecontrol-classes.md)
+#### [F クラス: FormButtonSeparatorControl への FormBuildReferenceControl](dev-ref/formbuildreferencecontrol-classes.md)
+#### [F クラス: FormControlEventArgs への FormChangeTracker](dev-ref/formchangetracker-classes.md)
+#### [F クラス: FormFastTabHeaderControl への FormDataObject](dev-ref/formdataobject-classes.md)
+#### [F クラス: FormGridControl への FormFastTabSummarySeparator](dev-ref/formfasttabsummaryseparator-classes.md)
+#### [F クラス: FormIntControl への FormGroupControl](dev-ref/formgroupcontrol-classes.md)
+#### [F クラス: FormNotifyEventArgs への FormListBoxControl](dev-ref/formlistboxcontrol-classes.md)
+#### [F クラス: FormRealControl への FormObject](dev-ref/formobject-classes.md)
+#### [F クラス: FormStringControl への FormReferenceControl](dev-ref/formreferencecontrol-classes.md)
+#### [F クラス: FormWindowControl への FormTabControl](dev-ref/formtabcontrol-classes.md)
+#### [G クラス](dev-ref/g-classes.md)
+#### [H クラス](dev-ref/h-classes.md)
+#### [I クラス](dev-ref/i-classes.md)
+#### [J クラス](dev-ref/j-classes.md)
+#### [K クラス](dev-ref/k-classes.md)
+#### [L クラス](dev-ref/l-classes.md)
+#### [M クラス](dev-ref/m-classes.md)
+#### [N クラス](dev-ref/n-classes.md)
+#### [O クラス](dev-ref/o-classes.md)
+#### [P クラス](dev-ref/p-classes.md)
+#### [Q クラス](dev-ref/q-classes.md)
+#### [R クラス](dev-ref/r-classes.md)
+#### [S クラス](dev-ref/s-classes.md)
+#### [T クラス](dev-ref/t-classes.md)
+#### [U クラス](dev-ref/u-classes.md)
+#### [V クラス](dev-ref/v-classes.md)
+#### [W クラス](dev-ref/w-classes.md)
+#### [X クラス](dev-ref/x-classes.md)
 
 ## [拡張機能のホーム ページ](extensibility/extensibility-home-page.md)
 ### 概要と使用開始
@@ -140,13 +137,10 @@
 #### [ラベルの変更](extensibility/change-label.md)
 #### [番号順序スコープの拡張](extensibility/extend-number-sequence-scope.md)
 
-## [継続的な配信ホーム ページ](dev-tools/continuous-delivery-home-page.md)
-### [開発と継続的な配信のよく寄せられる質問](dev-tools/continuous-delivery-faq.md)
-### [ビルド出力からテスト パッケージを除外](dev-tools/exclude-test-packages.md)
-### [ソース コントロールを使用してサード パーティ モデルとランタイム パッケージを管理](dev-tools/manage-runtime-packages.md)
-### [自動ビルドのバージョン モデル](dev-tools/version-models-build.md)
 
-## パフォーマンスのホーム ページ
+
+
+## パフォーマンス
 ### [Trace Parser を使用してトレースを実行する](perf-test/trace-trace-tutorial.md)
 ### [Visual Studio Team Services を使用した PerfSDK とマルチユーザー テスト](perf-test/perfsdk-tutorial.md)
 ### [Trace Parser を使用した問題点の診断およびパフォーマンスの問題の分析](perf-test/trace-parser.md)
@@ -155,10 +149,8 @@
 ### [テストと検証](perf-test/testing-validation.md)
 ### [Visual Studio のプロジェクトのテスト](perf-test/testing-support.md)
 ### [継続的ビルドとテストの自動化を使用した配置](perf-test/continuous-build-test-automation.md)
-## 日付
-### [日付の有効期間](dev-tools/date-effectivity.md)
-## ライセンス
-### [ISV ライセンス](dev-tools/isv-licensing.md)
+## [日付の有効期間](dev-tools/date-effectivity.md)
+## [ISV ライセンス](dev-tools/isv-licensing.md)
 
 # [ユーザー インターフェイス開発](user-interface/user-interface-development-home-page.md)
 ## チュートリアル
@@ -359,6 +351,104 @@
 #### [ValueDesign タイプ](mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluedesign.md)
 #### [ValueMetadata タイプ](mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluemetadata.md)
 
+# データ統合
+## [統合パターン](data-entities/integration-overview.md)
+
+## データ統合 API
+### [データ管理パッケージ API](data-entities/data-management-api.md)
+### [サービス エンドポイント](data-entities/services-home-page.md)
+#### [サービス認証のトラブルシューティング](data-entities/troubleshoot-service-authentication.md)
+### [OData](data-entities/odata.md)
+### [顧客サービス](data-entities/custom-services.md)
+### [定期統合](data-entities/recurring-integrations.md)
+
+## 統合のための開発
+### [データ エンティティを使用したデータの統合](data-entities/data-management-integration-data-entity.md)
+#### [データ移行のエンティティの開発](data-entities/develop-entity-for-data-migration.md)
+#### [複合データ エンティティの開発](data-entities/develop-composite-data-entities.md)
+#### [会社間財務データ共有のコンフィギュレーション](data-entities/tasks/configure-financial-cross-company-data-sharing.md)
+#### [データ入力を容易にするレコード テンプレートの作成](data-entities/tasks/create-record-template-facilitate-data-entry.md)
+#### [レコード テンプレートを使用した新しいレコードの作成](data-entities/tasks/use-record-template-new-record.md)
+
+### [Common Data Service を使用したデータの統合](data-entities/data-integration-cds.md) 
+#### [見込顧客から入金のシナリオのコンフィギュレーション](../supply-chain/sales-marketing/prospect-to-cash.md)
+##### [Sales 製品への Finance and Operations の製品の同期](../supply-chain/sales-marketing/products-template-mapping.md)
+##### [Finance and Operations の顧客への Sales の勘定の同期](../supply-chain/sales-marketing/accounts-template-mapping.md)
+##### [Finance and Operations の連絡先または顧客への Sales の連絡先の同期](../supply-chain/sales-marketing/contacts-template-mapping.md)
+##### [販売見積ヘッダーおよび明細行の Sales から Finance and Operations への同期](../supply-chain/sales-marketing/sales-quotation-template-mapping.md)
+##### [販売注文ヘッダーおよび明細行の Finance and Operations から Sales への同期](../supply-chain/sales-marketing/sales-order-template-mapping.md)
+##### [売上請求書ヘッダーおよび明細行の Finance and Operations から Sales への同期](../supply-chain/sales-marketing/sales-invoice-template-mapping.md)
+##### [Finance and Operations の顧客への Sales の勘定の直接同期](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
+##### [Sales 製品への Finance and Operations の製品の直接同期](../supply-chain/sales-marketing/products-template-mapping-direct.md)
+##### [Finance and Operations の連絡先または顧客への Sales の連絡先の直接同期](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
+##### [販売注文ヘッダーおよび明細行の Finance and Operations から Sales への直接同期](../supply-chain/sales-marketing/sales-order-template-mapping-direct.md)
+##### [売上請求書ヘッダーおよび明細行の Finance and Operations から Sales への直接同期](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
+
+### [外部 Web サービスの使用](data-entities/consume-external-web-service.md)
+
+
+# [データ管理](data-entities/data-entities-data-packages.md)
+
+## [データ エンティティ](data-entities/data-entities.md)
+
+### [コンフィギュレーション データ プロジェクト](data-entities/configuration-data-projects.md)
+### [コンフィギュレーション データ パッケージ](data-entities/configuration-data-packages.md)
+### [会社間でのコンフィギュレーション データのコピー](data-entities/copy-configuration.md)
+### [コンフィギュレーション データ テンプレート](data-entities/configuration-data-templates.md)
+### [エンティティの変更の追跡](data-entities/entity-change-track.md)
+
+## 標準データ エンティティ
+### [データ エンティティ レポート](data-entities/data-entities-report.md)
+### [データ エンティティ: 買掛金勘定および税金](data-entities/data-entities-accounts-payable-taxes.md)
+### [データ エンティティ: 売掛金勘定](data-entities/data-entities-accounts-receivable.md)
+### [データ エンティティ: 銀行](data-entities/data-entities-bank.md)
+### [データ エンティティ: 期首残高](data-entities/data-entities-beginning-balances.md)
+### [データ エンティティ: 予算計画](data-entities/data-entities-budget-plan.md)
+### [データ エンティティ: 予算](data-entities/data-entities-budgeting.md)
+### [データ エンティティ: 原価計算](data-entities/data-entities-costing.md)
+### [データ エンティティ: 経費の管理](data-entities/data-entities-expense-management.md)
+### [データ エンティティ: 固定資産](data-entities/data-entities-fixed-assets.md)
+### [データ エンティティ: 一般会計](data-entities/data-entities-general-ledger.md)
+### [データ エンティティ: グローバル アドレス帳](data-entities/data-entities-global-address-book.md)
+### [データ エンティティ: 人事管理](data-entities/data-entities-human-resources.md)
+### [データ エンティティ: 在庫の管理](data-entities/data-entities-inventory-management.md)
+### [データ エンティティ: マスター計画](data-entities/data-entities-master-plan.md)
+### [データ エンティティ: 調達](data-entities/data-entities-procurement-sourcing.md)
+### [データ エンティティ: 製品情報管理](data-entities/data-entities-product-information-management.md)
+### [データ エンティティ: 生産管理](data-entities/data-entities-production-control.md)
+### [データ エンティティ: プロジェクト会計](data-entities/data-entities-project-accounting.md)
+### [データ エンティティ: 公的機関](data-entities/data-entities-public-sector.md)
+### [データ エンティティ: Retail](data-entities/data-entities-retail.md)
+### [データ エンティティ: 販売とマーケティングの実行](data-entities/data-entities-sales-marketing.md)
+### [データ エンティティ: 販売とマーケティングのプリセールス](data-entities/data-entities-sales-marketing-pre-sales.md)
+### [データ エンティティ: システム管理](data-entities/data-entities-system-administration.md)
+### [データ エンティティ: ワークフロー](data-entities/data-entities-workflow.md)
+
+## [データ インポート/エクスポート ジョブ](data-entities/data-import-export-job.md)
+
+### [一般仕訳エンティティを使用して伝票をインポートするためのベスト プラクティス](data-entities/tips-tricks-import-general-journal-entity.md)
+
+## データ エンティティの開発
+### [新しいデータ エンティティの作成](data-entities/build-consuming-data-entities.md)
+### [データ エンティティのプロパティ](data-entities/behavioral-properties-data-entities.md)
+### [計算列と仮想フィールドの作成](data-entities/data-entity-computed-columns-virtual-fields.md)
+### [会社間動作](data-entities/cross-company-behavior.md)
+### [国/地域コードの処理](data-entities/countryregion-codes-configuration-keys.md)
+### [継承パターン](data-entities/support-super-type-sub-type.md)
+### [データ エンティティ ウィザード ルール](data-entities/data-entity-wizard-rules.md)
+### [メタデータのプロパティ](data-entities/behavioral-properties-data-entities.md)
+### [検証、既定値、およびマップされていないフィールド](data-entities/validations-defaults-unmapped-fields.md)
+### [セキュリティとデータ エンティティ](data-entities/security-data-entities.md)
+
+## [自分のデータベースの持ち込み](analytics/export-entities-to-your-own-database.md)
+
+# [継続的な配信ホーム ページ](dev-tools/continuous-delivery-home-page.md)
+## [開発と継続的な配信のよく寄せられる質問](dev-tools/continuous-delivery-faq.md)
+## [ビルド出力からテスト パッケージを除外](dev-tools/exclude-test-packages.md)
+## [ソース コントロールを使用してサード パーティ モデルとランタイム パッケージを管理](dev-tools/manage-runtime-packages.md)
+## [自動ビルドのバージョン モデル](dev-tools/version-models-build.md)
+
+
 # Lifecycle Services を使用したリリースのソリューション
 ## [開発とリリース](lcs-solutions/lcs-solutions-app-source.md)
 ## [ステージおよび公開](lcs-solutions/marketing-content-lcs-solutions.md)
@@ -377,9 +467,7 @@
 ### [個別のローカライズ モデル](lcs-solutions/separate-localization-models.md)
 ### [規制の警告の送信](lcs-solutions/submit-localization-alerts.md)
 
-
-
-# 財務開発
+# [財務開発](financial/financial-dev-home-page.md)
 ## [分析コード](financial/dimensions.md)
 ## [Excel テンプレートへの分析コードの追加](financial/dimensions-overview.md)
 ## [分析コード エントリ コントロール ダイアログのサポート](financial/dimension-entry-control-dialog-support.md)
@@ -416,6 +504,7 @@
 ### [オンプレミスのプロジェクトを作成する](lifecycle-services/lbd-create-lcs-on-prem-project.md)
 ### [オンプレミス環境の設定と配置](deployment/setup-deploy-on-premises-environments.md)
 ### [カスタム モデルの開発とオンプレミス環境への配置](deployment/develop-deploy-custom-models-on-premises.md)
+### [オンプレミス配置への更新プログラムの適用](deployment/apply-updates-on-premises.md)
 
 ## カスタム コードの配置
 ### [配置可能パッケージの作成](deployment/create-apply-deployable-package.md)
@@ -445,7 +534,7 @@
 #### [アップグレードした販売キューブをエンティティ格納へ移行する](migration-upgrade/migrate-upgraded-cube-entity-store.md)
 #### [予算計画のアップグレード](migration-upgrade/upgrade-budget-planning.md)
 
-## コードの移行とアップグレード
+## [コードの移行とアップグレード](migration-upgrade/code-migration-home-page.md)
 ### [コード移行の準備](migration-upgrade/prepare-migration.md)
 ### [コードの移行中に Visual Studio Team Services マッピングをコンフィギュレーション](migration-upgrade/configure-vso-solution.md)
 ### [モデルの分割](dev-tools/model-split.md)
@@ -476,6 +565,7 @@
 ## [ライセンス コードとコンフィギュレーション キーのレポート](sysadmin/license-codes-configuration-keys-report.md)
 ## [会社間データ共有](sysadmin/cross-company-data-sharing.md)
 ## [メンテナンス モード](sysadmin/maintenance-mode.md)
+## [コンフィギュレーション済みのシステム アカウント](sysadmin/pre-configured-system-accounts.md)
 ## [ロールベース セキュリティ](sysadmin/role-based-security.md)
 ### [セキュリティ アークテクチャ](sysadmin/security-architecture.md)
 ### [セキュリティ レポート](sysadmin/security-reports.md)
@@ -496,6 +586,7 @@
 ### [新機能](lifecycle-services/whats-new-lcs.md)
 ### [既知の問題](lifecycle-services/known-issues.md)
 ## [Dynamics Lifecycle Services ユーザー ガイド](lifecycle-services/lcs-user-guide.md)
+## [サブスクリプション見積もりツール](lifecycle-services/subscription-estimator.md)
 ## [セキュリティのコンフィギュレーション](lifecycle-services/configure-lcs-security.md)
 ## [問題検索](lifecycle-services/issue-search-lcs.md)
 ## [構成マネージャー](lifecycle-services/configuration-manager-lcs.md)
@@ -506,12 +597,13 @@
 ## [ビジネス プロセス モデラーの業務プロセス ライブラリ](lifecycle-services/business-process-libraries-business-process-modeler.md)
 ## [BPM ライブラリの作成、編集、または参照](lifecycle-services/creating-editing-browsing.md)
 ## [BPM ライブラリ内のタスクの完了](lifecycle-services/complete-tasks-bpm.md)
-## [アクティビティ図の使用](lifecycle-services/using-activity-diagrams.md)
+## [活動ダイアグラムの使用](lifecycle-services/using-activity-diagrams.md)
 ## [BPM ライブラリと Visual Studio Team Services (VSTS) の同期](lifecycle-services/synchronize-bpm-vsts.md)
 ## [ビジネス プロセス モデラーのフローチャート](lifecycle-services/flowcharts-business-process-modeler.md)
 ## [独自の業務プロセスのアップロード](lifecycle-services/upload-business-processes-bpm-task-recorder.md)
 ## [モニタリングおよび診断](lifecycle-services/monitoring-diagnostics.md)
-## [アセット ライブラリ](lifecycle-services/asset-library.md)
+## [ユーザー ログインの追跡](lifecycle-services/user-logins.md)
+## [資産ライブラリ](lifecycle-services/asset-library.md)
 ## [Microsoft Dynamics 365 - 翻訳サービスの概要](lifecycle-services/translation-service-overview.md)
 ### [Microsoft Dynamics 365 翻訳サービス ユーザー ガイド](lifecycle-services/use-translation-service.md)
 
@@ -594,6 +686,7 @@
 ## [SQL Server から実稼働 Azure SQL データベース環境へのデータベースのコピー](database/copy-database-from-sql-server-to-azure-sql.md)
 ## [非実稼働環境でのデータベースの復元](database/request-point-in-time-restore.md)
 ## [復元するデータベースのコピーを後でエクスポート](database/copy-operations-database.md)
+## [サンドボックス データベース更新の要求](database/database-refresh.md)
 
 # サポート
 ## [Dynamics 365 for Finance and Operations, Enterprise edition および Lifecycle Services のサポートの入手](lifecycle-services/lcs-support.md)

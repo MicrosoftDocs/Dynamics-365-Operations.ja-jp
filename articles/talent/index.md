@@ -18,10 +18,10 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 04d459a2fd0fdf9c201d9e96b37234846eb9ccf0
-ms.openlocfilehash: 358f5bf6194f5dd3f1639425e6633aa1a855bdc1
+ms.sourcegitcommit: 64f0a9a44b97a9980f8d1b76ff158f1ac9cbc114
+ms.openlocfilehash: 449643cc34e67388210e0b4e9d04d615d2420610
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/14/2017
 
 ---
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 09/29/2017
 
 [!include[banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent は、多くの日常的な記録タスクを合理化し、組織の多数のスタッフ配置に関連するプロセスを自動化します。これらのプロセスには、従業員の雇用維持、給付金管理、トレーニング、勤務評価、変更管理が含まれます。 また、人事スタッフが監督すべき領域を管理するためのフレームワークも提供します。
+Microsoft Dynamics 365 for Talent は、多くの日常的な記録タスクを合理化し、組織の多数のスタッフ配置に関連するプロセスを自動化します。 これらのプロセスには、従業員の雇用維持、給付金管理、トレーニング、勤務評価、変更管理が含まれます。 また、人事スタッフが監督すべき領域を管理するためのフレームワークも提供します。
 
 Talentを使用して、次のタスクを実行できます。
 

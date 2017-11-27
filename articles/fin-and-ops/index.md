@@ -3,7 +3,7 @@ title: "Microsoft Dynamics 365 for Finance and Operations Enterprise Edition の
 description: "Microsoft Dynamics 365 for Finance and Operations Enterprise Edition のドキュメント"
 author: margoc
 manager: AnnBe
-ms.date: 09/29/2017
+ms.date: 11/13/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: cb040b28078e5072fdb695e7b39e82557219addc
-ms.openlocfilehash: ca1658a9dc7594168476298132274b2c5910b012
+ms.sourcegitcommit: bb258999e072dc280bccfe64fb0dbd41d6577a0e
+ms.openlocfilehash: dbcbd7f7b0c23545eec74de538f1d7ec96ac98b6
 ms.contentlocale: ja-jp
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 11/13/2017
 
 ---
 
@@ -67,7 +67,7 @@ ms.lasthandoff: 10/10/2017
 
 <h3><a href="../supply-chain/index.md">サプライ チェーン マネジメント</a></h3>
 <p><a href="../supply-chain/cost-management/costing-sheets.md">原価管理</a></p>
-<p><a href="../supply-chain/inventory/inventory-locations.md">在庫管理</a></p>
+<p><a href="../supply-chain/inventory/inventory-home-page.md">在庫管理</a></p>
 <p><a href="../supply-chain/master-planning/master-plans.md">マスター プラン</a></p>
 <p><a href="../supply-chain/procurement/procurement-sourcing-overview.md">調達</a></p>
 <p><a href="../supply-chain/pim/product-information.md">製品情報管理</a></p>
@@ -88,7 +88,10 @@ ms.lasthandoff: 10/10/2017
 
 <h3><a href="../dev-itpro/dev-tools/developer-home-page.md">開発</h3>
 <p><a href="../dev-itpro/extensibility/extensibility-home-page.md">拡張性</a></p>
-<p><a href="../dev-itpro/data-entities/data-entities.md">データの管理および統合</a></p>
+
+<p><a href="../dev-itpro/data-entities/integration-overview.md">データ統合</a></p>
+<p><a href="../dev-itpro/data-entities/data-entities.md">データ管理</a></p>
+
 <p><a href="../dev-itpro/office-integration/office-integration.md">Office 統合</a></p>
 <p><a href="../dev-itpro/dev-tools/continuous-delivery-home-page.md">継続的な配信</a></p>
 <p><a href="../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md">モバイル プラットフォーム</a></p>
@@ -97,8 +100,8 @@ ms.lasthandoff: 10/10/2017
 <h3><a href="../dev-itpro/sysadmin/system-administration-home-page.md">管理</h3>
 <p><a href="../dev-itpro/deployment/choose-deployment-type.md">配置</a></p>
 <p><a href="../dev-itpro/migration-upgrade/upgrade-home-page.md">アップグレード</a></p>
-<p><a href="../dev-itpro/dev-tools/developer-home-page.md#service-environments">サービス</a></p>
-<p><a href="../dev-itpro/data-entities/data-management-integration-data-entity.md">データ管理</a></p>
+<p><a href="../dev-itpro/dev-tools/continuous-delivery-home-page.md#servicing">サービス</a></p>
+<p><a href="../dev-itpro/data-entities/data-entities.md">データ管理フレームワーク</a></p>
 <p><a href="../dev-itpro/lifecycle-services/lcs.md">Lifecycle Services</a></p>
 <p><a href="organization-administration/organization-administration-home-page.md">組織管理</a></p>
 </td>

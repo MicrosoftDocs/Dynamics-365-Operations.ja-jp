@@ -3,24 +3,24 @@ title: "ローカライズと規制の機能"
 description: "このトピックでは、国/地域固有の機能について詳しく説明しているリソースの一覧を示します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/30/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 104173
 ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: c73eeaaf28df8db720431d4bcd317c9721baa99d
-ms.openlocfilehash: fd01d40d3e74503e3e310132882306ed8c23ad1d
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 25c8c6c9bbccf07ce94a909824ecc8096081cd2c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -53,7 +53,7 @@ Microsoft Dynamics 365 for Finance and Operations には、[製品可用性ガ�
 -   [国/地域の規制警告の Microsoft への通知および規制機能のステータスの追跡](submit-localization-alerts.md)
 
 ### <a name="dynamics-365-roadmap"></a>Dynamics 365 ロードマップ
-[Dynamics 365 ロードマップ](https://roadmap.dynamics.com/) 作業中のスナップショットを提供します。 このロードマップを使用して、一般的に利用可能なものと開発中のものを見つけます。 開発中のすべての日付と機能は暫定的なものであり、現時点の予測に基づいているため、予告なしに変更されることがあります。
+[Dynamics 365 ロードマップ](https://roadmap.dynamics.com/)作業中のスナップショットを提供します。 このロードマップを使用して、一般的に利用可能なものと開発中のものを見つけます。 開発中のすべての日付と機能は暫定的なものであり、現時点の予測に基づいているため、予告なしに変更されることがあります。
 
 ## <a name="electronic-reporting"></a>電子申告
 電子申告 (ER) ツールを使用すると、さまざまな国/地域の法的要件に従って電子ドキュメントの形式を構成できます。 ER では、これらの形式をライフ サイクル中に管理できます。 詳細については、次のいずれかのトピックを参照してください。

@@ -2,8 +2,13 @@
 
 # 使用開始
 ## [新機能および変更された機能](get-started/whats-new.md)
+## [Dynamics 365 for Retail を購入する前に](get-started/before-you-buy.md)
+## [プレビュー サブスクリプションのサインアップ](../dev-itpro/dev-tools/sign-up-preview-subscription.md)
+## [デモ環境の配置](../dev-itpro/deployment/deploy-demo-environment.md)
+## [配置オプション](dev-itpro/choose-deployment.md)
 
-# 支払利息
+
+# 支払
 ## [支払方法](payment-methods.md)
 ## [クレジット カードの設定、認証、および取得](../financials/accounts-receivable/credit-card-authorizations.md)
 ## [POS の支払方法を構成する](cash-denominations.md)
@@ -39,6 +44,8 @@
 ## [小売タイムと出勤](retail-time-attendance.md)
 
 # Modern 販売時点管理 (MPOS) とクラウド POS
+## [POS 操作](POS-operations.md)
+## [MPOS/CPOS のデモ データ画面レイアウト](demo-data.md)
 ## ハードウェア周辺機器
 ### [小売周辺機器の概要](retail-peripherals-overview.md)
 ### [Microsoft によってテストされた POS ハードウェア周辺機器](microsoft-tested-pos-hardware-peripherals.md)
@@ -60,10 +67,11 @@
 ### [ハイブリッド顧客注文](hybrid-customer-orders.md)
 ## 店員
 ### [売上グループを使用した POS でのコミッションの追跡](pos-sales-groups-track-commissions.md)
+## [別の店舗からの注文の出荷](charge-send.md)
 ## デバイスの有効化
 ### [MPOS の構成とインストール](retail-modern-pos-device-activation.md)
 ### [クラウド POS および MPOS の拡張ログオンの設定](extended-logon.md)
-### [本社からの小売アカウントとデバイスの管理](set-up-activation-accounts-validate-devices-hq.md)
+### [本社からの Retail アカウントとデバイスの管理](set-up-activation-accounts-validate-devices-hq.md)
 ## レシート
 ### [レシート テンプレートの設定](receipt-templates-printing.md) 
 ### [MPOS からの電子メール レシートの送信](email-receipts.md)
@@ -171,10 +179,10 @@
 ### [販売チャネル パフォーマンス Power BI コンテンツ](../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)
 
 ## 配置と修正プログラム
-### [小売店舗スケール ユニットのコンフィギュレーションとインストール](dev-itpro/retail-store-scale-unit-configuration-installation.md)
-#### [小売店舗システム、開始する前に](dev-itpro/retail-store-system-begin.md)
+### [小売店舗スケール ユニットの概要](dev-itpro/retail-store-system-begin.md)
+#### [小売店舗スケール ユニットのコンフィギュレーションとインストール](dev-itpro/retail-store-scale-unit-configuration-installation.md)
 ### [Retail Modern POS のコンフィギュレーションとインストール](retail-modern-pos-device-activation.md)
-#### [本社からの小売アカウントとデバイスの管理](set-up-activation-accounts-validate-devices-hq.md)
+#### [本社からの Retail アカウントとデバイスの管理](set-up-activation-accounts-validate-devices-hq.md)
 #### [Retail POS デバイスのライセンス認証](dev-itpro/retail-device-activation.md)
 #### [Retail クラウド POS のセキュリティ保護](dev-itpro/secure-retail-cloud-pos.md)
 ### [Retail Hardware Station のコンフィギュレーションとインストール](retail-hardware-station-configuration-installation.md)
@@ -187,6 +195,7 @@
 ### [N-1 コンポーネントのインストール](dev-itpro/n-1-installation-configuration.md)
 
 ## 環境のコンフィギュレーション
+### [組織の法律条項およびプライバシーに関する声明へのリンクの追加](../dev-itpro/sysadmin/legal-terms-privacy-statement.md)
 ### [Bing マップの管理](dev-itpro/manage-bing-maps.md)
 
 ## 拡張性
@@ -197,6 +206,7 @@
 #### [MPOS およびクラウド POS のトリガー拡張機能](dev-itpro/modern-pos-trigger-extensibility.md)
 #### [POS ビューへのカスタム コントロールの追加](dev-itpro/pos-custom-control.md)
 #### [POS 支払拡張機能](dev-itpro/pos-payment-extension.md)
+#### [外部ギフト カードのサポート](dev-itpro/gift-card.md)
 ### [小売エクスペリエンス アプリの作成](dev-itpro/create-retail-experience-app.md)
 ### [ハードウェア ステーションの概要および拡張機能](dev-itpro/hardware-station-extensibility.md)
 
@@ -230,10 +240,16 @@
 ### [Retail SDK の拡張機能サンプル](dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md)
 ### [スウェーデンのキャッシュ レジスター](localizations/emea-swe-cash-registers.md)
 ### [スウェーデン用の管理単位との Retail POS の統合サンプル](dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md)
-### [Retail SDK 小売パッケージ](dev-itpro/retail-sdk/retail-sdk-packaging.md)
+### [ノルウェーのキャッシュ レジスター](localizations/emea-nor-cash-registers.md)
+### [ノルウェーのキャッシュ レジスターの配置ガイドライン](localizations/emea-nor-loc-deployment-guidelines.md)
+### [Retail SDK パッケージ](dev-itpro/retail-sdk/retail-sdk-packaging.md)
 ### [Retail SDK サンプル](dev-itpro/retail-sdk/retail-sdk-samples.md)
 ### [チャネル データベース (DB) 拡張機能](dev-itpro/channel-db-extensions.md)
 ### [CDX の拡張性](dev-itpro/cdx-extensibility.md)
+### [注文属性](dev-itpro/order-attributes.md)
+### [顧客属性](dev-itpro/customer-attributes.md)
+### [Retail の Typescript プロキシと C# プロキシ](dev-itpro/typescript-proxy-retail-pos.md)
+
 
 ## Commerce Runtime
 ### [ロイヤルティの拡張機能](dev-itpro/retail-sdk/loyalty-extension-sample.md)
