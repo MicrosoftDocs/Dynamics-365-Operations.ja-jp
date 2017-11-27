@@ -22,19 +22,19 @@ ms.contentlocale: ja-jp
 ms.lasthandoff: 11/14/2017
 
 ---
-# <a name="create-product-model-components"></a><span data-ttu-id="7563f-103">製品モデル コンポーネントの作成</span><span class="sxs-lookup"><span data-stu-id="7563f-103">Create product model components</span></span>
+# <a name="create-product-model-components"></a><span data-ttu-id="5e183-103">製品モデル コンポーネントの作成</span><span class="sxs-lookup"><span data-stu-id="5e183-103">Create product model components</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="7563f-104">制約ベースの製品コンフィギュレーション モデルでは、製品モデル構造を構築する構成要素としてコンポーネントを使用します。</span><span class="sxs-lookup"><span data-stu-id="7563f-104">Constraint-based product configuration models use components as building blocks to establish the product model structure.</span></span> <span data-ttu-id="7563f-105">製品モデルを作成するには、コンポーネントがあらかじめ作成されている必要があります。</span><span class="sxs-lookup"><span data-stu-id="7563f-105">The components must be created before a product model can be built.</span></span> <span data-ttu-id="7563f-106">この手順の作成に使用するデモ データの会社は USMF です。</span><span class="sxs-lookup"><span data-stu-id="7563f-106">The demo data company used to create this procedure is USMF.</span></span>
+<span data-ttu-id="5e183-104">制約ベースの製品コンフィギュレーション モデルでは、製品モデル構造を構築する構成要素としてコンポーネントを使用します。</span><span class="sxs-lookup"><span data-stu-id="5e183-104">Constraint-based product configuration models use components as building blocks to establish the product model structure.</span></span> <span data-ttu-id="5e183-105">製品モデルを作成するには、コンポーネントがあらかじめ作成されている必要があります。</span><span class="sxs-lookup"><span data-stu-id="5e183-105">The components must be created before a product model can be built.</span></span> <span data-ttu-id="5e183-106">この手順の作成に使用するデモ データの会社は USMF です。</span><span class="sxs-lookup"><span data-stu-id="5e183-106">The demo data company used to create this procedure is USMF.</span></span>
 
-1. <span data-ttu-id="7563f-107">[製品バリアント モデルの定義] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7563f-107">Click Product variant model definition.</span></span>
-2. <span data-ttu-id="7563f-108">[製品コンフィギュレーション モデル] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7563f-108">Click Product configuration models.</span></span>
-3. <span data-ttu-id="7563f-109">[アクション] ウィンドウで、[モデル] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7563f-109">On the Action Pane, click Model.</span></span>
-4. <span data-ttu-id="7563f-110">[コンポーネント] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7563f-110">Click Components.</span></span>
-5. <span data-ttu-id="7563f-111">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7563f-111">Click New.</span></span>
-6. <span data-ttu-id="7563f-112">[名前] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="7563f-112">In the Name field, type a value.</span></span>
-7. <span data-ttu-id="7563f-113">[説明] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="7563f-113">In the Description field, type a value.</span></span>
-8. <span data-ttu-id="7563f-114">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="7563f-114">Close the page.</span></span>
+1. <span data-ttu-id="5e183-107">[製品バリアント モデルの定義] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5e183-107">Click Product variant model definition.</span></span>
+2. <span data-ttu-id="5e183-108">[製品コンフィギュレーション モデル] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5e183-108">Click Product configuration models.</span></span>
+3. <span data-ttu-id="5e183-109">[アクション] ウィンドウで、[モデル] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5e183-109">On the Action Pane, click Model.</span></span>
+4. <span data-ttu-id="5e183-110">[コンポーネント] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5e183-110">Click Components.</span></span>
+5. <span data-ttu-id="5e183-111">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5e183-111">Click New.</span></span>
+6. <span data-ttu-id="5e183-112">[名前] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="5e183-112">In the Name field, type a value.</span></span>
+7. <span data-ttu-id="5e183-113">[説明] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="5e183-113">In the Description field, type a value.</span></span>
+8. <span data-ttu-id="5e183-114">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="5e183-114">Close the page.</span></span>
 
 
