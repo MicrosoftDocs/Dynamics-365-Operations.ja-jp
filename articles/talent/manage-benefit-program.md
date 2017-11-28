@@ -3,7 +3,7 @@ title: "給付金プログラムの定義および管理"
 description: "人事管理は、給付金、控除、および組織が作業者に対して提供または処理する作業者の報酬プランを設定および管理するのに使用できる一連のツールを提供します。 この記事は、管理された給付金を設定する方法に関する情報を提供します。"
 author: kherr75
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: HcmBenefitEligibilityDetail, HcmBenefitSelection, SysPolicyListPage, SysPolicySourceDocumentRuleType
 audience: Application User
 ms.reviewer: rschloma
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 15681
 ms.assetid: 6aee97ac-29f7-4b3c-8aa1-c65810de3090
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 6de99fc6aea808fddbec047cc74e533c4e5f9ee9
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: ecb9b246b0421d2f869c49634714f7cbb35ae3f7
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](includes/banner.md)]
 
 
-人事管理は、給付金、控除、および組織が作業者に対して提供または処理する作業者の報酬プランを設定および管理するのに使用できる一連のツールを提供します。 このトピックは、管理された給付金を設定する方法に関する情報を提供します。
+人事管理は、給付金、控除、および組織が作業者に対して提供または処理する作業者の報酬プランを設定および管理するのに使用できる一連のツールを提供します。 このトピックは、給付金を管理および設定する方法に関する情報を提供します。
 
 <a name="benefit-setup"></a>Benefit の設定
 -------------

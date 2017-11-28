@@ -1,9 +1,9 @@
 ---
 title: "調達によって取得される資産の取得"
-description: "この記事は、固定資産と買掛金の統合を設定して、発注書または仕入先請求書からの固定資産の自動作成、または固定資産の取得および取得原価調整トランザクションの自動転記を実行する方法を説明します。"
+description: "このトピックでは、固定資産と買掛金の統合を設定して、発注書または仕入先請求書から固定資産を自動作成する方法、また固定資産の取得および取得原価調整トランザクションの自動転記を実行する方法を説明します。"
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: AssetParameters
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 3481
 ms.assetid: d4e73a3f-633b-48b2-b8db-7a4a59a4d7ec
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 84e7e6eb17e5741a2984c570786a495864ffbc74
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 1e9b1dc6297f33ea25ca498895740596ebd020b8
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-この記事は、固定資産と買掛金の統合を設定して、発注書または仕入先請求書からの固定資産の自動作成、または固定資産の取得および取得原価調整トランザクションの自動転記を実行する方法を説明します。
+このトピックでは、固定資産と買掛金の統合を設定して、発注書または仕入先請求書から固定資産を自動作成する方法、また固定資産の取得および取得原価調整トランザクションの自動転記を実行する方法を説明します。
 
  固定資産と買掛金を統合するために使用できる次の方法があります。すべての固定資産で同一の方法を使用する必要があります。:
 -   発注書または仕入先請求書の明細行に固定資産番号を追加する前に、固定資産を手動で作成します。 仕入先請求書の転記時に、資産取得トランザクションが資産に自動的に転記されます。 既定では、この方法が選択されます。

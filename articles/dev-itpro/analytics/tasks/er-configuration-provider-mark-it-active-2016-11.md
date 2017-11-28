@@ -3,7 +3,7 @@ title: "コンフィギュレーション プロバイダーを作成し、電�
 description: "次の手順では、システム管理者または電子レポート開発者に割り当てられたユーザーが、電子レポート (ER) のコンフィギュレーション プロバイダーを作成する方法を説明します。"
 author: NickSelin
 manager: AnnBe
-ms.date: 10/18/2016
+ms.date: 11/01/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: bdb3a3857a7293828a7766b6988c123a43e0673c
+ms.sourcegitcommit: 809a1466b0f4674f503bc654175d8f94b37a6508
+ms.openlocfilehash: 2dfa04f280249884af2a237807fb283059444a6c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/02/2017
 
 ---
-# <a name="create-a-configuration-providand-mark-it-as-active-for-electronic-reporting-er"></a>コンフィギュレーション プロバイダーを作成し、電子申告 (ER) が有効なプロバイダーとしてマーク付けする
+# <a name="create-a-configuration-provider-and-mark-it-as-active-for-electronic-reporting-er"></a>コンフィギュレーション プロバイダーを作成し、電子申告 (ER) が有効なプロバイダーとしてマーク付けする
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

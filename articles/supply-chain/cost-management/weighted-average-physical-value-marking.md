@@ -1,9 +1,9 @@
 ---
 title: "現物価格とマーキングを使用した加重平均"
-description: 
+description: "加重平均は加重平均原則に基づく在庫モデルであり、在庫原価計算期間中に受け入れて在庫となった品目の平均価値に、前の期間からの手持在庫を加えて、在庫からの払出の価値を決めます。"
 author: AndersGirke
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
+ms.search.scope: Core, Operations, Retail
 ms.custom: 65501
 ms.assetid: 25041ff0-bafe-484d-a94a-e1772ad43204
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: c9db625e5af77b8f5d1569e35ce2d4c20e5be646
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 69876a9d1daec4e6980728527c784a5404239cc2
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 09/29/2017
 
 [!include[retail name](../includes/retail-name.md)]
 
-
+加重平均は加重平均原則に基づく在庫モデルであり、在庫原価計算期間中に受け入れて在庫となった品目の平均価値に、前の期間からの手持在庫を加えて、在庫からの払出の価値を決めます。
 
 在庫原価計算を実行するときは、すべての受入が仮想払出に対して決済され、仮想払出は受け入れた合計の数量と価値を保持します。 この仮想払出には、対応する仮想受入があり、そこから払出を決済します。 このようにして、すべての出庫が同じ平均原価を取得します。 仮想の払出と入庫は仮想の転送と見なすことができ、加重平均在庫原価計算転送と呼ばれます。
 

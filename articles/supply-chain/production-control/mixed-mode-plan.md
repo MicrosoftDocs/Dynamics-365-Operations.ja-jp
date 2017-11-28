@@ -1,9 +1,9 @@
 ---
 title: "ミックス モードの計画 - ディスクリート、プロセス、およびリーン ソーシングを組み合わせる"
-description: "この記事は、ミックス モードの計画に関する情報を提供します。 ミックス モードの計画では、材料フローに基づいてサプライ チェーンをシミュレーションできます。 Microsoft Dynamics 365 for Finance and Operations は、選択された供給ポリシー (かんばん、製造指図、購買発注、バッチ注文、または転送指図) にかかわらず、材料フローがモデルに従っていることを確認します。"
+description: "このトピックは、ミックス モードの計画に関する情報を提供します。"
 author: cvocph
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: EcoResStorageDimensionGroup, InventItemOrderSetup, ReqItemTable
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 52931
 ms.assetid: 2e8b5fd1-cee9-45da-a3ae-6961fb020b89
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 09ced68ffe8ff300a04beb65fdf8527e63456f04
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: bb8fa816d48ee808b92a5bf80c2c39c51f33a195
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-この記事は、ミックス モードの計画に関する情報を提供します。 ミックス モードの計画では、材料フローに基づいてサプライ チェーンをシミュレーションできます。 Microsoft Dynamics 365 for Finance and Operations は、選択された供給ポリシー (かんばん、製造指図、購買発注、バッチ注文、または転送指図) にかかわらず、材料フローがモデルに従っていることを確認します。 
+このトピックは、ミックス モードの計画に関する情報を提供します。 ミックス モードの計画では、材料フローに基づいてサプライ チェーンをシミュレーションできます。 Microsoft Dynamics 365 for Finance and Operations は、選択された供給ポリシー (かんばん、製造指図、購買発注、バッチ注文、または転送指図) にかかわらず、材料フローがモデルに従っていることを確認します。 
 
 製品構造に関係なく製品を供給するための全体的な戦略を選択できます。  
 
@@ -59,7 +59,7 @@ Finance and Operations では、材料フローがモデルに従っているこ
 
 同じロジックは、他のすべての供給ポリシー タイプに見られます。 したがって、材料の長期計画は、生産と供給が承認された後に、実際の注文で実行されると想定する同じロジックに基づきます。
 
-## <a name="materials-allocation-crosssupply-policy--resource-consumption-on-boms"></a>供給ポリシー全体にわたる材料の配賦 – BOM のリソース消費
+## <a name="materials-allocation-cross-supply-policy--resource-consumption-on-boms"></a>供給ポリシー全体にわたる材料の配賦 – BOM のリソース消費
 リソース消費は重要な機能です。 リソース消費により、供給ポリシー (注文タイプ) に基づき材料のピッキングを行う倉庫を動的に選択することが可能になり、また、基本データの管理も容易になります。  
 
 リソース消費には、材料のピッキングをする倉庫を製品の供給方法に基づいて割り当てることが必要です。 つまり、実行時にシステムが製造に使用するリソースを検索します。 これらのリソースに基づいて、システムは、ピッキング倉庫を検出します。  

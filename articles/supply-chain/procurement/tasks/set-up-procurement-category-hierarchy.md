@@ -3,7 +3,7 @@ title: "調達カテゴリ階層の設定"
 description: "この手順では、調達カテゴリ階層に新しいノードを作成する方法、および調達プロセスに使用する調達カテゴリをコンフィギュレーションする方法を示します。"
 author: mkirknel
 manager: AnnBe
-ms.date: 11/11/2016
+ms.date: 11/06/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: b9897b1184e8159b20a45d4cedbba56baef31a3c
+ms.sourcegitcommit: 6ad5c8552a6989e9093d0b1325754bc0f6d19372
+ms.openlocfilehash: 4541d029c9c3be3ee42332e5d8ff183dd503f13e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/06/2017
 
 ---
 # <a name="set-up-a-procurement-category-hierarchy"></a>調達カテゴリ階層の設定
@@ -30,7 +30,7 @@ ms.lasthandoff: 09/29/2017
 
 
 ## <a name="add-a-new-procurement-category"></a>新しい調達カテゴリを追加します。
-1. 次の順に移動します: [調達] > [..] > [調達カテゴリ]。
+1. [調達] > [調達カテゴリ] の順に移動します。
 2. [カテゴリ階層の編集] をクリックします。
     * 現在の調達カテゴリ階層が、ページの左側に表示されます。 階層を修正しようとしています。  
 3. [新しいカテゴリ ノード] をクリックします。
@@ -42,7 +42,7 @@ ms.lasthandoff: 09/29/2017
 7. [保存] をクリックします。
 
 ## <a name="add-products-to-your-new-procurement-category"></a>新しい調達カテゴリへの製品の追加
-1. 次の順に移動します: [調達] > [..] > [調達カテゴリ]。
+1. [調達] > [調達カテゴリ] の順に移動します。
     * 追加したノードを選択します。 タスク ガイドの手順を実行している場合は、ノードを選択するために、タスク ガイドのロック解除が必要な場合があります。  
 2. [製品] セクションの展開を切り替えます。
 3. 調達カテゴリに製品を関連付けるには、[追加] をクリックします。

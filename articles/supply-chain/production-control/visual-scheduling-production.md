@@ -3,7 +3,7 @@ title: "ジョブ スケジュールのガント チャート"
 description: "生産プランナーはガント チャートを使用して、生産計画のコントロールおよび最適化を行うことができます。"
 author: johanhoffmann
 manager: AnnBe
-ms.date: 08/23/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: JmgShopSupervisorWorkspace, ProdTable, ProdTableListPage
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
@@ -20,10 +20,10 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: cc7543305ac634dfed3779bb83806ee4fd97d7fa
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 5a4b0450cc76c8d9307b9b21b78a170afcc298e4
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -39,7 +39,7 @@ ms.lasthandoff: 09/29/2017
 -   計画製造オーダーからのジョブ。
 -   時間予測タイプのジョブ スケジューリング済のプロジェクト活動。
 
-ガント チャートは、**注文の表示** および **リソース ビュー**[の 2 つの異なるビューで開くことができます。](https://authoring.help.dynamics.com/en/?post_type=incsub_wiki&p=1665154&preview=true) **注文の表示** では、活動は製造オーダーの下にグループ化されます。 これは、たとえば、同じ注文に属するすべてのジョブの概要を管理したい場合に役立ちます。 **リソース ビュー** では、すべてのジョブが個々のリソースの下にグループ化されます。 たとえば、機械や機械のグループなど、リソース レベルでの計画の最適化を行う場合、このビューは役に立ちます。 次に示す図で、ガント チャートは次の主要な要素とともに **注文の表示** および **リソース ビュー** を表示します。
+ガント チャートは、**発注ビュー** および **リソース ビュー**[](https://authoring.help.dynamics.com/en/?post_type=incsub_wiki&p=1665154&preview=true) の 2 つの異なるビューで開くことができます。 **注文の表示** では、活動は製造オーダーの下にグループ化されます。 これは、たとえば、同じ注文に属するすべてのジョブの概要を管理したい場合に役立ちます。 **リソース ビュー** では、すべてのジョブが個々のリソースの下にグループ化されます。 たとえば、機械や機械のグループなど、リソース レベルでの計画の最適化を行う場合、このビューは役に立ちます。 次に示す図で、ガント チャートは次の主要な要素とともに **注文の表示** および **リソース ビュー** を表示します。
 
 1.  ガント チャートの活動
 2.  材料不足アイコン
@@ -156,5 +156,7 @@ ms.lasthandoff: 09/29/2017
 | **リリースする製造オーダー** (**生産フロアの管理** ワークスペースから開く) | リリースする製造オーダー ページは、**生産フロアの管理** ワークスペースから開きます。 このページでは、スケジュールされているリリース保留中状態の製造オーダーおよびバッチ オーダーが表示されます。 このページでは、選択した製造オーダーのガント チャートを開くことができます。                                                                                                                                                                                                                                                        |
 ## <a name="see-also"></a>参照  
 [Visual scheduling with Gantt chart for production and batch orders (ビデオ)](https://youtu.be/BtbuShkGj4I)
+
+[生産 (デモ スクリプト) の視覚的スケジューリング](https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/how-to-articles/365finoptvisschep)
 
 

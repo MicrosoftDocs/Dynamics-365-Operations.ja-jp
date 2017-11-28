@@ -3,7 +3,7 @@ title: "連続プログラムの使用"
 description: "この手順では、連続プログラムの販売と関連する販売注文の処理について説明します。"
 author: scott-tucker
 manager: AnnBe
-ms.date: 10/26/2016
+ms.date: 11/14/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: scotttuc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 5d3b5690bfbd10b77e784d35d0c4f4518de58333
+ms.sourcegitcommit: 8bbdbf882f6f73d03be0a036cb975109396e4a0d
+ms.openlocfilehash: e94d9ded5cefc731e28af6898004419a00e0c189
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/14/2017
 
 ---
 # <a name="use-a-continuity-program"></a>連続プログラムの使用
@@ -58,7 +58,7 @@ ms.lasthandoff: 09/29/2017
 19. [連続品目] フィールドに、「88000」を入力し、[タブ] キーを押します。
     * 品目「88000」は、USRT デモ データの連続品目です。  
 20. [販売注文] フィールドで、値を入力または選択します。
-    * 前の手順でメモした販売注文番号を入力します。 これにより、この手順の処理時間は最小限に抑えられます。 [販売注文] フィールドはオプションです--いずれかのプログラムのすべての注文を処理することができます。  
+    * 前の手順でメモした販売注文番号を入力します。 これにより、この手順の処理時間は最小限に抑えられます。 [販売注文] フィールドはオプションです -- いずれかのプログラムですべての注文を処理することができます。  
 21. [OK] をクリックします。
 
 

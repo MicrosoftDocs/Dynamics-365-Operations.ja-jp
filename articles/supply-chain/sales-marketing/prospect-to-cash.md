@@ -3,7 +3,7 @@ title: "見込顧客を現金化"
 description: "トピックでは、Dynamics 365 for Sales and Dynamics 365 for Finance and Operations, Enterprise edition および Dynamics 365 for Sales における見込顧客を現金化するソリューションの概要を提供します。"
 author: ChristianRytt
 manager: AnnBe
-ms.date: 08/28/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: 
 audience: Application User, IT Pro
 ms.reviewer: yuyus
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.intro: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 47e70cb1291e390b42b7feff844b2aca141f09b7
-ms.openlocfilehash: a5f1ecd5f8b46287839439a963e571531ae161a7
+ms.sourcegitcommit: 674d2e1f2c5cdbccf43618a9083ca01abed0735a
+ms.openlocfilehash: 2accf77c5241adff7ad1648737dde451153fde46
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/14/2017
 
 ---
 
@@ -42,25 +42,39 @@ ms.lasthandoff: 09/29/2017
 -   [Finance and Operations で販売注文の作成、および Sales への同期](sales-order-template-mapping.md)
 -   [Finance and Operations で販売請求書の作成、および Sales への同期](sales-invoice-template-mapping.md)
 
+このソリューションは、次の領域で直接同期を提供します。
+
+-   [Sales でアカウントの管理、および Sales から Finance and Operations への直接同期](accounts-template-mapping-direct.md)
+-   [Finance and Operations で製品の管理、および Sales への直接同期](products-template-mapping-direct.md)
+-   [Sales の連絡先を管理し、Finance and Operations の連絡先または顧客に直接同期させる](contacts-template-mapping-direct.md)
+-   [販売見積ヘッダーおよび明細行の Sales から Finance and Operations への直接同期](sales-quotation-template-mapping-sales-fin.md)
+-   [Finance and Operations で販売注文の作成、および Sales への直接同期](sales-order-template-mapping-direct.md)
+-  [販売注文ヘッダーおよび明細行の Sales と Finance and Operations の間の直接同期](sales-order-template-mapping-between-sales-fin.md)
+-   [販売注文の Sales と Finance and Operations の間の直接同期](sales-order-template-mapping-direct-two-ways.md)
+-   [Finance and Operations で販売請求書の作成および Sales への直接同期](sales-invoice-template-mapping-direct.md)
+
+
 ## <a name="system-requirements-for-dynamics-365-for-finance-and-operations-enterprise-edition"></a>Dynamics 365 for Finance and Operations, Enterprise Edition のシステム要件
 
 見込顧客を現金化するソリューションを使用するには、以下をインストールする必要があります。
 
 - プラットフォーム アップデート 8 (App 7.2.11792.56024 w/ Platform 7.0.4565.16212) による Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (2017 年 7 月)
 
-- Dynamics 365 for Finance and Operations, Enterprise edition (2017 年 ７ 月) の 2 つの修正プログラム。
+- Dynamics 365 for Finance and Operations、Enterprise edition (2017 年 7 月) の修正プログラム。
+        
+    -  [KB4045570](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4045570&bugId=3851320&qc=ac1145034fd04ab71ccc4d14aa012f245176712c9af7c36bb77a118726d46160) - この修正プログラムは、Sales から Finance and Operations へのデータ統合機能を使用して販売注文の同期をサポートし、他にも多くの拡張機能を提供します。
 
     -  [KB4036524](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4036524&bugId=3847504&qc=e2fcfae08b1a5d5ce9f53f330e8c212b0636c375368ff7d8d9b5ec6701523ad2) - この修正プログラムは Finance and Operations から Sales へのデータ統合機能による販売注文明細行の同期を有効にします。
         
     -  [KB4036461](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4036461&bugId=3847029&qc=e2fcfae08b1a5d5ce9f53f330e8c212b0636c375368ff7d8d9b5ec6701523ad2) - この修正プログラムは Finance and Operations から Sales へのデータ統合機能による販売注文の同期を有効にします。
-    
-[**注記**]: インストールには KB4036461 からの変更が含まれているため、KB4036524 のみをインストールする必要があります。
+
+\[**注記**\]: インストールに他の KB からの変更が含まれているため、KB4045570 のみをインストールする必要があります。
  
 ## <a name="system-requirements-for-dynamics-365-for-sales"></a>Dynamics 365 for Sales のシステム要件
 
 見込顧客を現金化するソリューションを使用するには、以下をインストールする必要があります。
 
-- Dynamics 365 for Sales バージョン 1612 (8.2.1.207) (DB 8.2.1.207) オンラインまたはそれ以降。
+- Dynamics 365 for Sales バージョン 1612 (8.2.1.207) (DB 8.2.1.207) オンライン。
 - Dynamics 365 for Sales バージョン 1.14.0.0 (v14) またはそれ以降の見込顧客を現金化するソリューション。
 
 ### <a name="install-the-prospect-to-cash-solution-for-sales"></a>Sales の見込顧客を現金化するソリューションのインストール
@@ -70,14 +84,14 @@ ms.lasthandoff: 09/29/2017
 - zip ファイルがブロックされていないことを確認し、リューション パッケージをインストールする際に、「インポート パッケージが見つかりませんでした」のエラー メッセージが出ないようにします。 ファイルをブロック解除するには、次の点を行います。
 
     -  zip ファイルを右クリックします。
-    -  [**プロパティ**] を選択し、次に [**ブロック解除**] を選択します。 
+    -  [プロパティ] を選択し、次に [ブロック解除] を選択します。 
 
 - 解凍して、PackageDeployer.exe を実行します。
 
 - 売上インスタンスで見込顧客を現金化するソリューションのインストール
 
-    - [**Office 365**] 配置タイプを選択します。
-    - [**高度な表示**] を選択します。
-    - クイック インストールするには、[**地域**] を選択します。 [**わからない**] を選択する場合、システムはすべての地域を検索するためインストールに時間がかかります。
-    - インストールするユーザーの権限を持つ管理者ユーザーに対して [**ユーザー名**] および [**パスワード**] を入力します。
+    - [Office 365] 配置タイプを選択します。
+    - [高度な表示] を選択します。
+    - クイック インストールするには、[地域] を選択します。 [わからない] を選択する場合、システムはすべての地域を検索するためインストールに時間がかかります。
+    - インストールするユーザーの権限を持つ管理者ユーザーに対して [ユーザー名] および [パスワード] を入力します。
 

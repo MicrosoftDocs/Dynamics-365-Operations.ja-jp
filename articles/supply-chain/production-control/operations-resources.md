@@ -3,7 +3,7 @@ title: "Operations リソース"
 description: "運営リソースはプロジェクトまたは生産プロセス活動を実行します。 これらはさまざまなタイプ、さまざまな能力が指定できます。"
 author: sorenva
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: WrkCtrCapability
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 61943
 ms.assetid: a3847f07-fca4-4140-a26f-d83c6ac68dde
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 7a333c4d9c0e614c513bf3e1a02b943b186fb1e5
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: c4018632e5e20470948ee59e4bb2a1cab905d829
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -63,7 +63,7 @@ ms.lasthandoff: 09/29/2017
 
 -   **能力** – 1 時間あたりの運営リソースの能力を、能力単位で指定します。
 -   **バッチ能力** – 運営リソースが実行ごとに処理できる区分の最大数を指定します。
--   **効率** – その運営リソースから期待される効率を指定します。 効率はリソースのスループットを調整します。これにより、運営リソースに対して予約される時間に影響を与えます。 運営リソースを使用する工程のリード タイムも、それに応じて調整されます。 次の式が計算に使用されます。スケジューリング時間 = 時間 × 100 ÷ このフォーミュラの効率、*時間*には実行時間と段取り時間の両方が含まれます。
+-   **効率** – その運営リソースから期待される効率を指定します。 効率はリソースのスループットを調整します。これにより、運営リソースに対して予約される時間に影響を与えます。 運営リソースを使用する工程のリード タイムも、それに応じて調整されます。 計算に使用される式: スケジューリング時間 = 時間 × 100 ÷ 効率 *時間* には、実行時間とセットアップ時間の両方が含まれます。
 -   **工程のスケジューリング率** – 工程のスケジューリングで使用する運営リソース能力の最大割合を指定します。 ジョブのスケジューリング時に流動性を考慮するには、この率を 100% 未満にする必要があります。
 -   **有限能力** – 利用可能な実際の能力に基づいてスケジュールを立てる場合、かつ既存の確保済能力を考慮する場合は、このオプションを**はい**にします。 このオプションが**いいえ**に設定されている場合、運営リソースには無限の能力があるとされ、それによりリソースが予約超過になることがあります。
 -   **作業タイプ指定** – 必要な作業時間のスケジューリングのプロパティーについて使用可能な実際の能力に基づいて運営リソースのスケジュールを設定する場合は、このオプションを**はい**に設定します。

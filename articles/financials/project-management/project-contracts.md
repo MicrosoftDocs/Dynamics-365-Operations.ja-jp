@@ -1,9 +1,9 @@
 ---
 title: "プロジェクト契約"
-description: "この記事では、さまざまなタイプのプロジェクトや資金調達ソースで作成できるプロジェクト契約について、また Microsoft Dynamics 365 for Finance and Operations,Enterprise エディションで契約を管理しプロジェクト顧客に請求する方法についての説明および例を提供します。"
+description: "このトピックでは、さまざまなタイプのプロジェクトや資金調達ソースで作成できるプロジェクト契約について、また Microsoft Dynamics 365 for Finance and Operations, Enterprise edition で契約を管理しプロジェクト顧客に請求する方法についての説明と例を提供します。"
 author: KimANelson
 manager: AnnBe
-ms.date: 09/14/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 0d7d3b64b0d6a662246074b12e3a3fe105dfae47
+ms.sourcegitcommit: 3a1bfd4bd5f396c05277159ac112eaa8197d5818
+ms.openlocfilehash: c8328bd2d93bbe763e629248edc1b7b4576005ae
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-この記事では、さまざまなタイプのプロジェクトや資金調達ソースで作成できるプロジェクト契約について、また Microsoft Dynamics 365 for Finance and Operations,Enterprise エディションで契約を管理しプロジェクト顧客に請求する方法についての説明および例を提供します。
+この記事では、さまざまなタイプのプロジェクトや資金調達ソースで作成できるプロジェクト契約について、また Microsoft Dynamics 365 for Finance and Operations, Enterprise edition で契約を管理しプロジェクト顧客に請求する方法についての説明と例を提供します。
 
 プロジェクト契約に作成するプロジェクト タイプで、プロジェクトの顧客への請求方法が決まります。 プロジェクト契約と関連するプロジェクトは変更できますが、プロジェクト タイプは変更できません。 
 
@@ -224,7 +224,7 @@ Finance and Operations では、1 つのトランザクションまたはプロ�
 </tr>
 <tr class="odd">
 <td>トランザクション 2</td>
-<td><strong>トランザクション金額:</strong> 5,000<strong>資金調達:</strong> トランザクションは、3 つのすべてのルールに従って支払われます。<strong>ルール 1</strong>
+<td><strong>トランザクション金額:</strong> 5,000 <strong>資金調達:</strong> トランザクションは、3 つのすべてのルールに従って支払われます。 <strong>ルール 1</strong>
 <ul>
 <li>資金調達ソース 2: 450.00</li>
 <li>資金調達ソース 3: 450.00</li>

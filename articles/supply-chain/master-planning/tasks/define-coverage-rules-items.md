@@ -3,7 +3,7 @@ title: "品目の補充ルールの定義"
 description: "この手順の作成に使用するデモ データの会社は USMF です。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 11/11/2016
+ms.date: 11/02/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 14f56c30753da9458d66a46da8935305619fd0b8
+ms.sourcegitcommit: 76334f7ee4efe33df4a86aaa11a59748387cec89
+ms.openlocfilehash: fe92393cc264df68f084db6974f7d4607d37d3ab
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/02/2017
 
 ---
 # <a name="define-coverage-rules-for-items"></a>品目の補充ルールの定義
@@ -100,7 +100,7 @@ ms.lasthandoff: 09/29/2017
 4. [一般] タブをクリックします。
 5. [補充グループ設定の上書き] のヘッダーのチェック ボックスをオンにします。
 6. [補充タイム フェンス (日)] フィールドに「60」と入力します。
-    * 補充グループ [必要] の品目は90日先まで計画されますが、この品目は 60 日先までの計画となります。  
+    * 補充グループ [必要] の品目は 90 日先まで計画されますが、この品目は 60 日先までの計画となります。  
 7. [マイナス在庫日数] フィールドに「2」を入力します。
 8. [プラス在庫日数] フィールドに「2」を入力します。
 9. [リード タイム] タブをクリックします。

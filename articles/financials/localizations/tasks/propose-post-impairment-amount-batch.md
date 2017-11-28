@@ -3,7 +3,7 @@ title: "バッチごとの減損損失の提案と転記 (日本)"
 description: "このタスクは、バッチによる減損損失額の提案と転記について説明します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 02/26/2016
+ms.date: 10/31/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: ffec2afbeb0cb8b30f4186ac3350c36a754cc4e8
+ms.sourcegitcommit: 858cbf5f5beee4c02ebbb670f35386d26a0883f4
+ms.openlocfilehash: d44d47e88924bed5cca871b160c770d87f4dbeb1
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/31/2017
 
 ---
 # <a name="propose-and-post-the-impairment-amount-by-batch-japan"></a>バッチごとの減損損失の提案と転記 (日本)

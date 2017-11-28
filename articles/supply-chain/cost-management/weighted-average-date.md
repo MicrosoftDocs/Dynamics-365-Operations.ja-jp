@@ -1,9 +1,9 @@
 ---
 title: "加重平均日付"
-description: 
+description: "加重平均日付とは加重平均原則に基づく在庫モデルで、在庫からの出庫は、在庫原価計算期間の 1 日ごとに、在庫に入庫された品目の平均額で決定されます。"
 author: AndersGirke
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
+ms.search.scope: Core, Operations, Retail
 ms.custom: 28991
 ms.assetid: 945d5088-a99d-4e54-bc42-d2bd61c61e22
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 95cc937a97596e4f6ce28636fb30b86e9b328220
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: a258c7d6314546262a3f9d07d06da5cad797d99b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -33,8 +33,9 @@ ms.lasthandoff: 09/29/2017
 
 [!include[retail name](../includes/retail-name.md)]
 
+加重平均日は加重平均原則に基づく在庫モデルです。 加重平均原則では、在庫からの出庫は、在庫原価計算期間に毎日受け取って入庫された品目の平均値で評価されます。 
 
-加重平均日は加重平均原則に基づく在庫モデルです。 加重平均原則では、在庫からの出庫は、在庫原価計算期間に毎日受け取って入庫された品目の平均値で評価されます。 加重平均日付を使用して在庫原価計算を実行すると、1 日のすべての入庫が、仮想出庫に対して決済されます。 この仮想出庫は、その日の合計入庫数量と金額を保持します。 仮想出庫には対応する仮想入庫があり、この仮想入庫に対して出庫が決済されます。 そのため、すべての出庫が同じ平均原価を取得します。 仮想の払出と入庫は仮想の転送と見なすことができ、*加重平均在庫原価計算転送*と呼ばれます。 
+加重平均日付を使用して在庫原価計算を実行すると、1 日のすべての入庫が、仮想出庫に対して決済されます。 この仮想出庫は、その日の合計入庫数量と金額を保持します。 仮想出庫には対応する仮想入庫があり、この仮想入庫に対して出庫が決済されます。 そのため、すべての出庫が同じ平均原価を取得します。 仮想の払出と入庫は仮想の転送と見なすことができ、*加重平均在庫原価計算転送*と呼ばれます。 
 
 その日付以前に発生した入庫が 1 つしかない場合、平均を求める必要はありません。 すべての出庫がその入庫から決済されるため、仮想移動は作成されません。 同様に、その日付に出庫しか発生しない場合、平均を求めるための入庫がなく、仮想移動は作成されません。 加重平均日付を使用する場合、特定の品目の受入が特定の払出を対象に決済されるように、在庫トランザクションをマークすることもできます。 この場合、加重平均日付のルールを使用しません。 加重平均日付の在庫モデルを使用する場合は、在庫原価計算を毎月行うことをお勧めします。 
 

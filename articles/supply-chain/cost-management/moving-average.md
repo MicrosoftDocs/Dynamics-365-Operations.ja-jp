@@ -1,9 +1,9 @@
 ---
 title: "移動平均"
-description: 
+description: "移動平均は、平均原則に基づく永久原価法であり、購買原価が変化するとき、在庫払出の原価は変化しません。 差額は資本化され、比例計算に基づきます。 残りの金額が経費となります。"
 author: AndersGirke
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: InventModelGroup
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 65531
 ms.assetid: dfd10099-8f7f-44b1-917e-df37c2fe8773
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: afc8f4922810983a6582558f0577a05aa21cbdbb
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: c1f8a8cf4a58177d423709f245760a5ba9ca7e4e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -31,8 +31,12 @@ ms.lasthandoff: 09/29/2017
 
 [!include[banner](../includes/banner.md)]
 
+移動平均は、平均原則に基づく永久原価法であり、購買原価が変化するとき、在庫払出の原価は変化しません。 差額は資本化され、比例計算に基づきます。 残りの金額が経費となります。 
+
+移動平均を使用する場合、在庫の決済および在庫のマーキングはサポートされていません。 在庫原価計算は、在庫モデル グループとして移動平均がある製品には影響を与えず、トランザクション間で決済を生成しません
 
 次に、移動平均原価を原価計算方法として使用するときの前提条件を示します。
+
 1.  **品目モデル グループ** ページの**在庫モデル** フィールドで、[移動平均] がオンになっている品目モデル グループを設定します。 **注記 :** 既定では、移動平均 を選択した場合、**現物在庫の転記** フィールドおよび **資産在庫の転記** フィールドも選択されます。 
 
 2.  [**転記**] ページの [**在庫**] タブで、勘定を [**移動平均の価格差異**] および [**移動平均の原価の再評価**] の勘定に割り当てます。原価を比例して経費処理する場合は、 [**移動平均の価格差異**] の勘定が使用できます。 これが起きるのは、購買入庫と仕入請求書の原価に差異があるためであり、また元の在庫数量と現在の手持在庫数量に差異があるためです。 製品の移動平均原価を新しい単価に合わせて調整するときは、**移動平均の原価の再評価**の勘定を使用します。
@@ -83,7 +87,7 @@ ms.lasthandoff: 09/29/2017
 **伝票の決済**ページで、[移動平均の原価の再評価] の勘定に転記された 4.00 の調整を確認できます。
 
 ## <a name="moving-average-with-production"></a>生産での移動平均
-移動平均で、生産された品目がサポートされます。 実稼働環境で移動平均を使用する予定の場合は、**生産管理パラメーター** ページの**見積原価価格の使用**のスライダーを選択する必要があります。 すなわち、見積時に計算された原価価格が、実際の BOM 計算原価価格の代わりに使用されるということです。
+移動平均で、生産された品目がサポートされます。 実稼働環境で移動平均を使用する場合は、**生産管理パラメーター**ページの**見積原価価格の使用**のスライダーを選択する必要があります。 すなわち、見積時に計算された原価価格が、実際の BOM 計算原価価格の代わりに使用されるということです。
 
 ## <a name="moving-average-with-a-backdated-transaction"></a>前の日付のトランザクションでの移動平均
 さかのぼった日付のトランザクションが現在の移動平均原価に割り当てられ、製品の現物の数量が更新されますが、製品の移動平均原価には影響しません。 この移動平均の例では、移動平均の製品に対してさかのぼったトランザクションが転記されます。

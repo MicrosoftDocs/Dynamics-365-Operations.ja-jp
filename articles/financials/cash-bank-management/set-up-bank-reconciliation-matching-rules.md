@@ -1,9 +1,9 @@
 ---
 title: "口座調整照合ルールの設定"
-description: "この記事では、口座調整プロセスを容易にするために、調整の照合ルールと調整の照合ルール セットを設定する方法を説明します。 調整の照合ルールは、調整プロセス中に口座取引明細書行および銀行ドキュメント明細行をフィルタ処理するために使用される一連の基準です。"
+description: "このトピックでは、口座調整プロセスを容易にするために、調整の照合ルールと調整の照合ルール セットを設定する方法を説明します。 調整の照合ルールは、調整プロセス中に口座取引明細書行および銀行ドキュメント明細行をフィルタ処理するために使用される一連の基準です。"
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: BankReconciliationMatchRule, BankReconciliationMatchRuleSet
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 12971
 ms.assetid: b5073f83-31dc-404f-af42-3fd84a02a7c6
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: leguo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: b721c8b9d8b0286beeb651d5185aa8e6a35d7f79
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 93438840123f02dd36927e044ff5ddbe60a76176
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-この記事では、口座調整プロセスを容易にするために、調整の照合ルールと調整の照合ルール セットを設定する方法を説明します。 調整の照合ルールは、調整プロセス中に口座取引明細書行および銀行ドキュメント明細行をフィルタ処理するために使用される一連の基準です。
+このトピックでは、口座調整プロセスを容易にするために、調整の照合ルールと調整の照合ルール セットを設定する方法を説明します。 調整の照合ルールは、調整プロセス中に口座取引明細書行および銀行ドキュメント明細行をフィルタ処理するために使用される一連の基準です。
 
 口座調整プロセスを容易にするために、調整の照合ルールと調整の照合ルール セットを設定できます。 調整の照合ルールは、調整プロセス中に口座取引明細行および Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 銀行トランザクション明細行をフィルタ処理するために使用される一連の基準です。 **調整照合ルール** ページを使用して、調整照合ルールを設定します。 複数の照合ルールを設定し、**調整照合ルール セット** ページで調整の照合ルール セットを作成します。 
 

@@ -1,16 +1,16 @@
 ---
 title: "売掛金勘定の決算"
-description: 
+description: "次の見出しに売掛金勘定の決算業務プロセスをサポートしているページの一覧を示します。"
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/22/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 59372
 ms.assetid: c18d83e5-4adb-422a-91be-82a665d8288b
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 2b2e827df0c679855af9624f8a2fb36cb23f359a
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 8532b778c89c972a833ac9ffe28243f15f01426c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -43,7 +43,7 @@ ms.lasthandoff: 09/29/2017
 
 | ページ名                            | 用途                                                                                      |
 |--------------------------------------|--------------------------------------------------------------------------------------------|
-|バッチ ジョブ                             | バッチ ジョブを表示または作成します。 バッチ ジョブを完了できなかったため、すべての転記が完了したことを確認します。                                                                                                               |
+|バッチ ジョブ                             | バッチ ジョブを表示または作成します。 バッチ ジョブを完了できなかった可能性があるため、すべての転記が完了したことを確認します。                                                                                                               |
 |販売注文の確認                   | 販売注文を更新します。                                                                       |
 |外貨再評価          | 外貨で転記された未処理の顧客トランザクションの値を更新するトランザクションを生成します。                                                                                                                         |
 | 仕訳帳                              | 請求書、支払、および約束手形を転記します。                                             |

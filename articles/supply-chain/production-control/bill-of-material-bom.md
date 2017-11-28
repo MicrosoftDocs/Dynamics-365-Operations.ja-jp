@@ -1,9 +1,9 @@
 ---
 title: "部品表およびフォーミュラ"
-description: "この記事では、製品および製品バリアントの定義の中心となる部品表 (BOM) およびフォーミュラについて説明します。 BOM およびフォーミュラは、特定の製品に必要な材料または成分を指定します。 フォーミュラは、特定の生産コンテキストで入庫する連産品および副産物も指定します。"
+description: "このトピックでは、製品および製品バリアントの定義の中心となる部品表 (BOM) およびフォーミュラについて説明します。"
 author: cvocph
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: BOMConsistOf, BOMDesigner, BOMTable, EcoResProductProcessManufacturingWorkspace
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 19331
 ms.assetid: c19b437a-2de2-4728-9477-2bcb0c2b1f5e
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 3137d93dd91ec3e58937e97bdddb5ca51ec4084c
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 430e2ab0c4438222ceb9102c011940af803acfbc
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-この記事では、製品および製品バリアントの定義の中心となる部品表 (BOM) およびフォーミュラについて説明します。 BOM およびフォーミュラは、特定の製品に必要な材料または成分を指定します。 フォーミュラは、特定の生産コンテキストで入庫する連産品および副産物も指定します。 
+このトピックでは、製品および製品バリアントの定義の中心となる部品表 (BOM) およびフォーミュラについて説明します。 BOM およびフォーミュラは、特定の製品に必要な材料または成分を指定します。 フォーミュラは、特定の生産コンテキストで入庫する連産品および副産物も指定します。 
 
 <a name="bills-of-materials"></a>部品表
 ------------------

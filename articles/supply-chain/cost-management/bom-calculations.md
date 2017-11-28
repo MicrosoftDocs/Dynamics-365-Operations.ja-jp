@@ -1,7 +1,7 @@
 ---
 title: "BOM の計算"
 description: "原価ロールアップおよび販売価格計算は部品表 (BOM) 計算と呼ばれ、計算ページから開始します。 このトピックでは、BOM 計算について説明します。"
-author: YuyuScheller
+author: AndersGirke
 manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: BOMCalcDialog, BOMCalcTable, CostingVersion, InventItemPrice, SalesQuotationTable, SalesTable, SMAServiceOrderTable
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 273763
 ms.assetid: c6fa3348-eafa-4847-9132-e65c5f55cbf4
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.dyn365.ops.intro: AX 7.0.0
 ms.search.validFrom: 2016-02-28
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: b1bcf11a8f6fc4921e8659fe1d00c093e3ad5b74
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: ad00a3b5e41892aaa705fd8eafa52cc199e1d806
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -87,7 +87,7 @@ BOM 計算では、警告メッセージおよびその他の種類のメッセ�
 -   **品目および指定されている原価バージョンに対する BOM 計算** - BOM 計算は、原価バージョン内の保留中販売価格レコードを生成します。 この販売価格レコードは、計算の詳細を表示するための開始点を提供します (**品目原価の計算**ページなど)。 販売価格レコードは、主に参照情報として機能し、販売注文の販売価格の基礎としては使用されません。
 -   **注文固有の BOM 計算** - **BOM 計算**ページのバリエーションが販売注文、販売見積、またはサービス注文明細行のコンテキストで使用されます。 注文固有 BOM 計算では、原価バージョン内にレコードが生成されません。 代わりに、**BOM 計算の結果**ページに表示される計算レコードが生成されます。 この計算レコードは、計算の詳細を表示するための開始点を提供します (**品目原価の計算**ページなど)。 選択された計算レコードに関する情報は、計算元の明細行品目に転送できます。 たとえば、計算された販売価格は、販売注文明細行品目に転送できます。
 
-## <a name="orderspecific-bom-calculations"></a>注文固有の BOM 計算
+## <a name="order-specific-bom-calculations"></a>注文ごとの BOM 計算
 注文ごとの BOM 計算は、製造が完了した品目の BOM 計算の変動を表します。 注文ごとの BOM 計算は、販売注文、販売見積、またはサービス注文明細行の品目に関連して行われます。 注文固有 BOM 計算は、**BOM 計算の結果**ページに表示される計算レコードを生成します。 計算レコードには、重量、有効な原価レコードに基づいて計算された原価、および販売価格の計算結果が含まれます。 注文固有 BOM 計算を実行するたびに**BOM 計算の結果**ページに生成される計算レコードは、計算番号で一意に識別されます。 オプションで、計算レコードの結果を元の明細行品目に転送することができます。 注文ごとの BOM 計算は、製造が完了した品目の BOM 計算とは、2 つの点で異なります。
 
 -   注文固有 BOM 計算では、原価バージョン内に品目の原価レコードが生成されません。 そのため、BOM 計算ポリシーは品目原価レコードの作成や原価レコードの上書きには適用されません。

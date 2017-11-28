@@ -1,9 +1,9 @@
 ---
 title: "ベースライン予測に対して手動調整を行う"
-description: "この記事では、ベースライン予測に手動調整を加えたり、予測の詳細を表示したりする方法を説明します。"
+description: "このトピックでは、ベースライン予測に手動調整を加えたり、予測の詳細を表示したりする方法を説明します。"
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: ReqDemPlanForecastViewer
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 72704
 ms.assetid: e7c5d44e-07bc-40b1-a4b3-8ba46483ef9e
 ms.search.region: global
@@ -20,10 +20,10 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 218374cdb6b5588648422d97c04fb60f26e47ac7
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: dbc195da36d31e01400fe66a1c02ea49609400eb
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-この記事では、ベースライン予測に手動調整を加えたり、予測の詳細を表示したりする方法を説明します。 
+このトピックでは、ベースライン予測に手動調整を加えたり、予測の詳細を表示したりする方法を説明します。 
 
 手動調整を行う前に、さまざまなページでいくつかの概念を理解することが重要です。
 
@@ -43,7 +43,7 @@ ms.lasthandoff: 09/29/2017
 -   後続の列は、予測が生成された予測バケットを表します。 各列のヘッダーは、列を示す予測バケットの最初の日付です。
 -   セルの値は、その特定の予測バケットの一つの品目や品目配賦キーの予測などを表します。
 
-## <a name="forecast-aggregation-and-deaggregation"></a>予測の集計と非集計
+## <a name="forecast-aggregation-and-de-aggregation"></a>予測の集計と非集計
 ページのサブタイトルでは、予測の集計レベルを表示します。 
 
 たとえば、ページのサブタイトルが **会社/サイト/配賦キー/品目番号/色/サイズ/コンフィギュレーション/スタイル** の場合は、予測の集計はなく、予測は品目および分析コードのレベルに表示されます。 集計を変更するには、アプリケーション メニューから開くことができる [**予測分析コードの変更**] ページを使用します。 

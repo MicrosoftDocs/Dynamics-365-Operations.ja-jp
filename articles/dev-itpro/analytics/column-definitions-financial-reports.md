@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 924177f4974358d2283dfd46306d663c27ccd87b
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 8c877a4ad6d4c29607159da52bf1cedae1476f92
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -255,7 +255,7 @@ Phyllis は、次の情報を入力する [**列のヘッダー**] ダイアロ�
 ## <a name="add-special-formatting-options"></a>特別な書式オプションの追加
 列定義で、書式列の詳細行は選択済列に特別な書式を適用します。 [**印刷コントロール**] オプションや [**列の制限**] オプションの一部は [**FD**] 列特定ですが、ほとんどのオプションはすべての列タイプに適用します。 列定義で指定された書式は、レポート定義で指定された書式を上書きします。 ただし、行定義で指定された形式は、列定義で指定された形式を上書きします。 次の行は、行を書式行と見なされます :
 
--   [列の幅]
+-   列の幅
 -   列の前の余分な項目
 -   書式 / 通貨の上書き
 -   印刷コントロール

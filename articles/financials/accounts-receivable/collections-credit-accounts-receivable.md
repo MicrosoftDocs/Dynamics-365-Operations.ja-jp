@@ -3,7 +3,7 @@ title: "売掛金勘定の貸方転記と取立"
 description: "売掛金勘定回収情報は、Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition のコレクションのページを使用して 1 つの中央ビューで管理されます。 貸方および取立マネージャが回収を管理するには、この中央ビューを使用できます。 回収代行業者は、定義済の回収基準または [顧客] ページを使用して生成された、顧客リストから回収プロセスを開始することができます。"
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/22/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: CustAgingSnapshot, CustBankAccounts, CustCollections, CustCollectionsActivitiesListPage, CustCollectionsAgent, CustCollectionsCaseListPage, CustCollectionsPool, CustCollectionsPoolsListPage, CustTable
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 3061
 ms.assetid: fd851520-8d93-434b-845b-be127d6ac3a6
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 62f659d6e4529adce10e6eb2699dfc84a7329143
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: a071d3151fbcc9e29bd138b096b34b88bc405a4f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -69,7 +69,7 @@ ms.lasthandoff: 09/29/2017
 -   [回収ケース] – リスト ページの列には、[回収] ケース タイプのケース カテゴリがあるケースの情報を表示します。
 
 > [!NOTE]
-> 経過期間スナップショットは、これらのリスト ページの情報を表示する前に、作成する必要があります。 経過期間スナップショットが作成されている顧客に対してのみ、情報が表示されます。リスト ページで表示されるレコードは、次のようにしてさらにフィルタ処理できます。
+> 経過期間スナップショットは、これらのリスト ページの情報を表示する前に、作成する必要があります。 情報は、経過期間スナップショットを作成した顧客に対してのみ表示されます。 リスト ページに表示されるレコードは、次のようにしてさらにフィルタできます。
 <li>既定では、Finance and Operations のユーザーは、経過期間スナップショットのあるすべての顧客にアクセスできます。</li>
 <li>顧客プールが存在する場合、ユーザーは回収代行業者として設定され、プールを使用して回収リスト ページの情報をフィルタ処理する必要があります。 情報は、選択した顧客プールに含まれる顧客に限定されます。</li>
 <li>ユーザーが回収代行業者として設定されている場合、その回収代行業者に選択したプールのみがリスト ページで使用できます。 回収代行業者について、[回収代行業者] ページで [エージェントがすべての顧客プールを表示できるようにする] の切り替えを選択した場合、すべてのプールがその業者で使用できます。</li>

@@ -1,9 +1,9 @@
 ---
 title: "販売プロセスでのシリアル番号の登録"
-description: "この記事は、販売プロセス中に梱包明細または請求書のシリアル番号を登録する方法を説明します。 この機能は、会社がシリアル番号をサービスおよび保証のために取得する一方、シリアル番号を在庫の入庫から払出まで管理する必要がない場合に役立ちます。"
+description: "このトピックでは、販売プロセス中に梱包明細または請求書のシリアル番号を登録する方法を説明します。 この機能は、会社がシリアル番号をサービスおよび保証のために取得する一方、シリアル番号を在庫の入庫から払出まで管理する必要がない場合に役立ちます。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: EcoResTrackingDimensionGroup, InventTrackingRegisterTrans, SalesEditLines, SalesTable
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
+ms.search.scope: Core, Operations, Retail
 ms.custom: 28931
 ms.assetid: 5d39630f-607e-492b-8c1e-790ca53effa0
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 9b8f66d4b62b43b3a62af8d39631e7cd7f688a11
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 23683ff3b232d485d0e4386963b3dcf37cd96c6f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 09/29/2017
 
 [!include[retail name](../includes/retail-name.md)]
 
-この記事は、販売プロセス中に梱包明細または請求書のシリアル番号を登録する方法を説明します。 この機能は、会社がシリアル番号をサービスおよび保証のために取得する一方、シリアル番号を在庫の入庫から払出まで管理する必要がない場合に役立ちます。
+このトピックでは、販売プロセス中に梱包明細または請求書のシリアル番号を登録する方法を説明します。 この機能は、会社がシリアル番号をサービスおよび保証のために取得する一方、シリアル番号を在庫の入庫から払出まで管理する必要がない場合に役立ちます。
 
 多くの会社では、シリアル番号はサービスおよび保証のために取得するもので、在庫の入庫から払出まででシリアル番号を管理する必要がありません。 これらのシナリオでは、Microsoft Dynamics 365 for Finance and Operations を使用して、製品を販売するときに梱包明細や請求書にシリアル番号を登録することができます。 製品が後に返品された場合、実際に製品を販売したかどうか、またサービスや保証の責務が有効であるかどうかを確認するために、請求書で製品を追跡できます。
 前提条件がありますか

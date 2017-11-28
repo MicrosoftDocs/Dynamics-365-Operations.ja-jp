@@ -1,9 +1,9 @@
 ---
 title: "BOM デザイナーの機能"
-description: "この記事は、 [BOM デザイナ] ページを使用して、部品表 (BOM) のツリー構造の設計および操作をする方法について説明します。 [設定] をクリックすると、さまざまなコンフィギュレーションの選択や、ツリーの行に表示する情報の指定ができます。"
+description: "このトピックは、[BOM デザイナ] ページを使用して、部品表 (BOM) のツリー構造の設計および操作をする方法について説明します。"
 author: cvocph
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: BOMDesigner
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 20981
 ms.assetid: 2b92eec1-d28c-4965-9086-939c77b3c62b
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 011e8220e155a5202b7b0a18bbfa9581826645d0
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 41f629401731920a9cb6443ada8b1a34a70e8da9
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-この記事は、 [BOM デザイナ] ページを使用して、部品表 (BOM) のツリー構造の設計および操作をする方法について説明します。 [設定] をクリックすると、さまざまなコンフィギュレーションの選択や、ツリーの行に表示する情報の指定ができます。
+このトピックは、[BOM デザイナ] ページを使用して、部品表 (BOM) のツリー構造の設計および操作をする方法について説明します。 [設定] をクリックすると、さまざまなコンフィギュレーションの選択や、ツリーの行に表示する情報の指定ができます。
 
 **[リリースされた製品]** ページから **[BOM デザイナー]** ページを開くと、選択した品目、品目の既定の注文サイト、および実際の日付で有効、承認済である部品表 (BOMs) の階層が表示されます。  
 
@@ -66,7 +66,7 @@ BOM および工順に適用されるフィルタは、[BOM デザイナー] の
 <tbody>
 <tr class="odd">
 <td>製品分析コード</td>
-<td>選択した完成品が製品マスターの場合、主要な選択の有効な製品分析コードを定義できます。<strong>メモ:</strong> 製品マスターではない製品の [BOM デザイナー] を開くと、製品分析コードは <strong>[フィルタ]</strong> ダイアログ ボックスで選択することはできません。</td>
+<td>選択された完成品が製品マスターの場合、主要な選択に対する有効な製品分析コードを定義できます。 <strong>注意: </strong>製品マスターではない製品の [フォーミュラ デザイナー] を開いた場合は、[<strong>フィルター</strong>] ダイアログ ボックスで製品分析コードを選択できません。</td>
 </tr>
 <tr class="even">
 <td>サービス拠点</td>

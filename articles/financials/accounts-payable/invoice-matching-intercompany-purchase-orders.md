@@ -3,7 +3,7 @@ title: "請求書照合と会社間発注"
 description: "会社間の売買取引に関連する購買側の法人が、買掛金勘定の請求書照合を使用する設定になる場合があります。 その場合、会社間の売買取引と買掛金勘定の請求書照合の両方の転記要件が合っていないと、会社間仕入先請求書は転記できません。"
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/20/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: PurchLineMatchingPolicy
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 3101
 ms.assetid: 9c7c2e44-45f8-4325-b6de-a09fe790f9cf
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: affdffd5e73958788ed2a5a4959eea71024140ab
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 3d0eb5c19c07313f4d4c0bac1b9c48375446afd9
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -52,7 +52,7 @@ ms.lasthandoff: 09/29/2017
 2.  Fabrikam Sales に、品目が受領済みであると登録し、梱包明細を転記します。 ICSO888 の状態が [出荷済み] に変更されます。 ICPO222 の状態が [受入済] に変更されます。
 3.  Fabrikam Sales で、ICSO888 の請求書を更新します。 単価 0.45 で数量 100 が更新されます。
 4.  Fabrikam Purchase で、ICPO222 の請求書を作成します。 誤って正味価格を 45.00 から 54.00 に変更しました。 価格が 2% の価格許容率を超えていることを示すアイコンが表示されます。
-5.  請求書照合の詳細ページで、[照合不一致を伴う転記を承認する] オプションを選択します。 仕入先請求書ページで、[OK] をクリックします。仕入先請求書が会社間仕入先請求書ではない場合、転記できません。 しかし、処理しているのは会社間仕入先請求書なので、転記できません。 会社間の売買取引で、会社間販売注文書の請求合計金額は、対応する会社間発注の請求合計金額と一致していなければなりません。 この問題を解決するため、正味価格を既定の金額 45.00 に戻して、請求書の正味価格を修正する必要があります。
+5.  請求書照合の詳細ページで、[照合不一致を伴う転記を承認する] オプションを選択します。 仕入先請求書ページで、[OK] をクリックします。 仕入先請求書が会社間仕入先請求書ではない場合、転記できます。 しかし、処理しているのは会社間仕入先請求書なので、転記できません。 会社間の売買取引で、会社間販売注文書の請求合計金額は、対応する会社間発注の請求合計金額と一致していなければなりません。 この問題を解決するため、正味価格を既定の金額 45.00 に戻して、請求書の正味価格を修正する必要があります。
 
 ## <a name="example-quantity-matching-with-intercompany-trade"></a>例 : 会社間取引の数量照合
 会社間発注書と会社間販売注文書の数量は一致していなければなりません。 この要件は、該当する請求書照合のいかなる承認よりも優先します。 この例では、会社間取引で以下の追加設定を使用します。

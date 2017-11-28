@@ -1,9 +1,9 @@
 ---
 title: "前払請求書と前払"
-description: "この記事は、組織が事前の支払 (前払) に使用できる 2 つの方法に関する説明と対比を提供します。 ひとつは、発注書に関連付けられている前払請求書を作成します。 もう 1 つの方法では、仕訳入力を作成し、前払仕訳伝票としてマークすることによって前払仕訳伝票を作成できます。"
+description: "このトピックは、組織が事前の支払 (前払) に使用できる 2 つの方法に関する説明と対比を提供します。 ひとつは、発注書に関連付けられている前払請求書を作成します。 もう 1 つの方法では、仕訳入力を作成し、前払仕訳伝票としてマークすることによって前払仕訳伝票を作成できます。"
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: LedgerJournalTransVendPaym, PurchTable
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 15871
 ms.assetid: a0bb5220-73d4-48ae-84d0-46a171c224fa
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: e6bf67fb17363f7b61e782ed6d8e7b6310433ffd
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: c1f30e375b759641875ed6a5a7d2f77132715c57
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-この記事は、組織が事前の支払 (前払) に使用できる 2 つの方法に関する説明と対比を提供します。 ひとつは、発注書に関連付けられている前払請求書を作成します。 もう 1 つの方法では、仕訳入力を作成し、前払仕訳伝票としてマークすることによって前払仕訳伝票を作成できます。
+このトピックは、組織が事前の支払 (前払) に使用できる 2 つの方法に関する説明と対比を提供します。 ひとつは、発注書に関連付けられている前払請求書を作成します。 もう 1 つの方法では、仕訳入力を作成し、前払仕訳伝票としてマークすることによって前払仕訳伝票を作成できます。
 
 組織は、商品またはサービスが履行される前に、仕入先へ前払を払出す場合があります。 仕入先に前払を払出す場合に 2 つの方法を使用できます。 リスクを最小限にするには、発注書の前払を定義して前払を追跡できます。 この方法では、発注書に関連付けられている前払請求書を作成する必要があります。 この方法は前払請求と呼ばれます。 細部まで前払を追跡しない、または仕入先からの前払請求書を受信しない組織は、前払請求方法に代わって前払仕訳伝票を使用できます。 仕訳入力を作成し、前払仕訳伝票としてマークすることによって、前払仕訳伝票を作成できます。 この方法では、どの発注書に対してどの前払を仕入先に行ったかは追跡できません。 しかし、決済する転記済の前払を発注書に対してマークすることができます。
 

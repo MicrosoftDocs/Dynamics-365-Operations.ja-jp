@@ -1,9 +1,9 @@
 ---
 title: "製品コンフィギュレーション モデルの計算についてよく寄せられる質問"
-description: "この記事では、製品コンフィギュレーション モデルの計算および計算と制約の使用方法について説明します。"
+description: "このトピックでは、製品コンフィギュレーション モデルの計算に加えて、制約と計算を一緒に使用する方法について説明します。"
 author: cvocph
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: fea4e139d32c780769bafe08d603b828d366550c
+ms.sourcegitcommit: 3a1bfd4bd5f396c05277159ac112eaa8197d5818
+ms.openlocfilehash: 0763e5a02e7a14b6ef369103aa25e435559abe19
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-この記事では、製品コンフィギュレーション モデルの計算および計算と制約の使用方法について説明します。
+このトピックでは、製品コンフィギュレーション モデルの計算に加えて、制約と計算を一緒に使用する方法について説明します。
 
 計算は、算術または論理工程に使用できます。 これらは、製品コンフィギュレーション モデルの式の制約を補足します。 計算を [**制約ベースの製品コンフィギュレーション モデルの詳細**] ページで定義し、式エディターで計算式を作成できます。 計算の詳細については、「計算の作成」を参照してください。
 
@@ -75,7 +75,7 @@ ms.lasthandoff: 09/29/2017
 ## <a name="can-i-overwrite-the-value-that-is-calculated-for-the-target-attribute"></a>ターゲット属性に対して計算された値を上書きできますか
 ターゲット属性が非表示または読み取り専用に設定されていなければ、ターゲット属性に対して計算された値を上書きできます。
 
-## <a name="how-do-i-set-a-target-attribute-as-hidden-or-readonly"></a>ターゲット属性を非表示または読み取り専用に設定する方法
+## <a name="how-do-i-set-a-target-attribute-as-hidden-or-read-only"></a>ターゲット属性を非表示または読み取り専用に設定する方法
 属性を非表示または読み取り専用に設定するには、次の手順に従います。
 
 1.  [**製品情報管理**] &gt; [**共通**] &gt; [**製品コンフィギュレーション モデル**] をクリックします。

@@ -3,7 +3,7 @@ title: "タスク記録を使用してドキュメントやトレーニングを
 description: "このトピックでは、タスク レコーダーとタスク ガイド、タスク記録の作成方法、また Microsoft タスク ガイドのカスタマイズ方法とそれをヘルプに含める方法について説明します。"
 author: josaw1
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 10/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: SysHelpSetup
 audience: Application User, IT Pro
 ms.reviewer: robinr
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 25391
 ms.assetid: 59bf39f8-1464-441e-8b23-9a856c73471b
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: b49cfe39732a450e4723419c50d8bcc3d64b7ec9
-ms.openlocfilehash: 297fe730a432e05e1ab490be4802c37f9402b0a7
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: b744a895bbd494212c4c388362dd7290207af938
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -85,7 +85,7 @@ ms.lasthandoff: 09/29/2017
 
 [![画面 4](./media/screen4.png)](./media/screen4.png)
 
--   **参考ステップ**: これらの注釈は、コントロールまたはフォーム &lt; [**タスク レコーダー**] &lt; [**参考ステップの追加] の任意の場所を右クリックすることで作成されます。 **参考ステップは、アクションが UI で記録されていない場合でも、どこに挿入しても番号付きの手順として表示されます。 フォーム レベル参考ステップまたはコントロールと関連付けられた参考ステップを追加できます。 参考ステップがフォームに関連付けられている場合にタスク ガイドを再生すると、タスク ガイドの「バブル」がポインタがない状態でフォームのどこかに表示されます。 参考ステップがコントロールに関連付けられている場合にタスク ガイドを再生すると、タスク ガイドの「バブル」がコントロールをポイントします。 ヘルプ ウィンドウで、参考ステップの注釈が入力した任意のテキストとともに番号付きの手順として表示されます。 参考ステップは、次の手順のためのユーザーの準備、Microsoft Dynamics 365 for Finance および Operations, Enterprise Edition の外部で行う必要があるステップの説明、他の記録の参照に使用します。(ただし注釈にハイパーリンクを作成することはできません。)
+-   **参考ステップ**: これらの注釈は、コントロールまたはフォーム &lt; [**タスク レコーダー**] &lt; [**参考ステップの追加] の任意の場所を右クリックすることで作成されます。 **参考ステップは、アクションが UI で記録されていない場合でも、どこに挿入しても番号付きの手順として表示されます。 フォーム レベル参考ステップまたはコントロールと関連付けられた参考ステップを追加できます。 参考ステップがフォームに関連付けられている場合にタスク ガイドを再生すると、タスク ガイドの「バブル」がポインタがない状態でフォームのどこかに表示されます。 参考ステップがコントロールに関連付けられている場合にタスク ガイドを再生すると、タスク ガイドの「バブル」がコントロールをポイントします。 ヘルプ ウィンドウで、参考ステップの注釈が入力した任意のテキストとともに番号付きの手順として表示されます。 参考ステップは、次の手順のためのユーザーの準備、Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition の外部で行う必要があるステップの説明、他の記録の参照に使用します。(ただし注釈にハイパーリンクを作成することはできません。)
 
 **記録の長さを決定**
 

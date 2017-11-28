@@ -3,7 +3,7 @@ title: "財務期間一括終了"
 description: "この手順では、保留中期間の設定方法、または期間の完全な終了方法、または複数の法人を一度に扱う方法を示します。"
 author: aprilolson
 manager: AnnBe
-ms.date: 10/24/2016
+ms.date: 10/25/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 8d7151cbcd02f9312ca6b0de5e27231a0b0dc9d6
+ms.sourcegitcommit: ef3cad6538d9efbd1c1881f4b7d771382d9b1ba8
+ms.openlocfilehash: 1954bfdf4807e91d275e3a1ba80f959bdf9464a8
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/26/2017
 
 ---
 # <a name="mass-financial-period-close"></a>財務期間一括終了

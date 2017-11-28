@@ -1,5 +1,5 @@
 ---
-title: "委託販売"
+title: "委託販売の設定"
 description: "このトピックでは、入庫委託販売在庫プロセスを使用する方法を説明します。"
 author: perlynne
 manager: AnnBe
@@ -8,10 +8,10 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
-ms.search.form: ConsignmentDraftReplenishmentOrderJournal, ConsignmentProductReceiptLines, ConsignmentReplenishmentOrder, ConsignmentVendorPortalOnHand, InventJournalOwnershipChange, InventOnHandItemListPage, PurchTable, PurchVendorPortalConfirmedOrders
+ms.search.form: ConsignmentDraftReplenishmentOrderJournal, ConsignmentProductReceiptLines, ConsignmentReplenishmentOrder, ConsignmentVendorPortalOnHand, InventJournalOwnershipChange, InventOnHandItemListPage, PurchTable, PurchVendorPortalConfirmedOrders, DirPartyTable, EcoResTrackingDimensionGroup, InventJournalName, InventOwner, InventTableInventoryDimensionGroups, VendTable
 audience: Application User
 ms.reviewer: YuyuScheller
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 220834
 ms.assetid: 3c9d6de4-45d4-459a-aef7-0d9ad2c22b3a
 ms.search.region: Global
@@ -19,21 +19,21 @@ ms.author: perlynne
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: b5f2f6d24537a6e28a820b298a88525553e1cd18
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: df5862a75646976d315fa77531d7c4fe9b1ec499
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
-# <a name="consignment"></a>委託販売
+# <a name="set-up-consignment"></a>委託販売の設定
 
 [!include[banner](../includes/banner.md)]
 
 
 このトピックでは、入庫委託販売在庫プロセスを使用する方法を説明します。
 
-委託販売在庫は、仕入先によって所有されているが、サイトで保管されている在庫です。 在庫を消費するか、または使用する準備ができたら、在庫の所有権を引き継ぎます。 このトピックでは、総勘定元帳トランザクションを作成せずに仕入先所有の手持在庫を現物入庫する方法、現物引当できる仕入先所有の在庫の生産プロセスの開始方法、 および生産注文処理の一部として消費を処理するために原材料の所有権を変更する方法について説明します。 また、仕入先が仕入先コラボレーション インターフェイスを使用して在庫の消費を監視する方法についても説明されます。 入庫委託販売プロセスを有効にしてコンフィギュレーションする方法にの詳細については、「[委託販売の設定](set-up-consignment.md)」を参照してください。
+委託販売在庫は、仕入先によって所有されているが、サイトで保管されている在庫です。 在庫を消費するか、または使用する準備ができたら、在庫の所有権を引き継ぎます。 このトピックでは、総勘定元帳トランザクションを作成せずに仕入先所有の手持在庫を現物入庫する方法、現物引当できる仕入先所有の在庫の生産プロセスの開始方法、 および生産注文処理の一部として消費を処理するために原材料の所有権を変更する方法について説明します。 また、仕入先が仕入先コラボレーション インターフェイスを使用して在庫の消費を監視する方法についても説明されます。 
 
 ## <a name="overview-of-the-consignment-process"></a>委託販売プロセスの概要
 このシナリオ例では、USMF 社は、原材料 M9211CI の仕入れ先 US-104 との委託販売契約を結んでいます。
@@ -43,7 +43,6 @@ ms.lasthandoff: 09/29/2017
     -   USMF の作業者は仕入先に注文情報を送信します。
     -   仕入先は、仕入先コラボレーション インターフェイスを使用して、予想手持在庫を監視できます。
     -   USMF の作業者は、[**手持在庫**] ページのデータをフィルター処理して、受領ステータスが **注文済**である仕入先 US-104 の記録だけを表示し、この情報を仕入先に送信します。
-
 3.  在庫は、US-104 から USMF に配送されます。
 4.  材料が USMF に到着したときに、委託販売補充注文は、製品受領書で更新されます。 仕入先所有の在庫の現物数量のみが記録されます。 在庫は依然として仕入先によって所有されているため、総勘定元帳トランザクションは登録されていません。
 5.  仕入先は、[**手持委託販売在庫**] ページを使用して現物の手持在庫の更新を監視します。
@@ -61,7 +60,9 @@ USMF は追加の定期的なプロセスを実行します:
 仕入先 US-104 は、[**手持委託販売在庫**] ページを使用して更新を監視できます。
 
 ## <a name="consignment-replenishment-orders"></a>委託販売補充注文
-委託販売補充注文は、仕入先が注文済在庫トランザクションを作成して特定の日付範囲内で配送する予定の製品在庫数量を要求および追跡するために使用されるドキュメントです。 通常は、これは特定の製品の予測と実需に基づいています。 委託販売補充注文に対して入庫する在庫は仕入先に所有権があります。 現物入庫の更新に関連する製品の財産のみ記録されるため、総勘定元帳トランザクションの更新は発生しません。 **所有者**分析コードは、仕入先が所有する在庫および受領する法人によって所有される在庫に関する情報を区別するために使用されます。 委託販売補充明細行は、明細行の全数量を入庫またはキャンセルされない限り、**オープン注文**ステータスになります。 全数量を入庫またはキャンセルされた場合は、ステータスは**完了**に変更されます。 委託販売補充注文に関連する現物手持在庫は、製品受領更新プロセスと共に登録プロセスを使用して記録できます。 登録は品目到着プロセスの一部として、または手動で注文明細行を更新することができます。 製品受領更新プロセスを使用すると、レコードは仕入先に商品の受領を確認するのに使用できる製品受領書仕訳帳で作成されます。
+委託販売補充注文は、仕入先が注文済在庫トランザクションを作成して特定の日付範囲内で配送する予定の製品在庫数量を要求および追跡するために使用されるドキュメントです。 通常は、これは特定の製品の予測と実需に基づいています。 委託販売補充注文に対して入庫する在庫は仕入先に所有権があります。 現物入庫の更新に関連する製品の財産のみ記録されるため、総勘定元帳トランザクションの更新は発生しません。 
+
+**所有者**分析コードは、仕入先が所有する在庫および受領する法人によって所有される在庫に関する情報を区別するために使用されます。 委託販売補充明細行は、明細行の全数量を入庫またはキャンセルされない限り、**オープン注文**ステータスになります。 全数量を入庫またはキャンセルされた場合は、ステータスは**完了**に変更されます。 委託販売補充注文に関連する現物手持在庫は、製品受領更新プロセスと共に登録プロセスを使用して記録できます。 登録は品目到着プロセスの一部として、または手動で注文明細行を更新することができます。 製品受領更新プロセスを使用すると、レコードは仕入先に商品の受領を確認するのに使用できる製品受領書仕訳帳で作成されます。
 
 [![委託補充オーダー](./media/consignment-replenishment-order.png)](./media/consignment-replenishment-order.png)
 
@@ -81,4 +82,27 @@ USMF は追加の定期的なプロセスを実行します:
 -   [**委託販売在庫を消費する****発注書**] - 委託販売プロセスからの所有権変更に関連する発注書情報の詳細を表示します。
 -   **委託販売在庫から受領された製品** - 所有権変更プロセス中に更新された商品の領収書がある品目および数量に関する情報を表示します。
 -   **手持委託販売在庫** - 配送予定の委託販売品目、およびすでに顧客サイトで現物を利用できる品目に関する情報を表示します。
+
+## <a name="inventory-owners"></a>在庫所有者
+現物入庫の委託販売の在庫を記録するには、仕入先の所有者を定義する必要があります。 これは、[**在庫所有者**] のページで行われます。 [**仕入先口座**] を選択すると、[**名前**] と [**所有者**] のフィールドの規定値が生成されます。 [**所有者**] フィールドの値が仕入先に表示されるので、仕入先口座名が外部ユーザーに認識されにくい場合は変更することができます。 [**所有者**] フィールドを編集できますが、**在庫所有者**記録を保存する時点までです。 [**名前**] フィールドには、仕入先口座が関連付けられている当事者名を入力できますが、変更できません。
+
+[![在庫所有者](./media/inventory-owners.png)](./media/inventory-owners.png)
+
+## <a name="tracking-dimension-group"></a>追跡用分析コード グループ
+委託販売プロセスで使用される品目は、**所有者**分析コードが**有効**に設定されている**追跡用分析コード グループ**に関連付けられている必要があります。 所有者分析コードは、常に [**現物在庫**] と [**資産在庫**] オプションが選択されます。 [**分析コード別補充計画**] は選択されません。
+
+[![追跡用分析コード グループ](./media/tracking-dimension-group.png)](./media/tracking-dimension-group.png)
+
+## <a name="inventory-ownership-change-journal"></a>在庫所有権変更仕訳
+**在庫所有権変更**仕訳張は、委託販売在庫の所有権の仕入先から消費している法人への移転の記録に使用されます。 在庫仕訳帳のように、在庫仕訳帳の名前で識別する必要があります。 これらの名前は、[**在庫仕訳帳の名前**] ページで作成され、[**仕訳帳タイプ**] は、[**所有権変更**] に設定する必要があります。
+
+[![在庫所有権変更仕訳](./media/inventory-ownership-change-journal.png)](./media/inventory-ownership-change-journal.png)
+
+## <a name="vendor-collaboration-in-consignment-processes"></a>委託販売プロセスでの仕入先コラボレーション
+仕入先コラボレーション インターフェイスを使用している仕入れ先は、サイトで在庫の消費を監視するために、これを使用することもできます。 仕入先コラボレーションを使用する仕入先の設定については、「[仕入先コラボレーション ユーザーのセキュリティのコンフィギュレーション](../procurement/configure-security-vendor-portal-users.md)」を参照してください。
+
+
+
+
+
 

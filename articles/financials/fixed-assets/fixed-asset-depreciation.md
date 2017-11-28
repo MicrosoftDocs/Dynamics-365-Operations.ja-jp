@@ -1,9 +1,9 @@
 ---
 title: "固定資産の減価償却"
-description: "この記事は、固定資産の償却の概要を示します。"
+description: "このトピックは、固定資産の償却の概要を示します。"
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: AssetBonus, AssetBookTable
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 3121
 ms.assetid: 98ff891f-e0e2-4184-b618-28107a50851f
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 536acd6b2c9f046c2459aec27a1e3b1b56fd5cc9
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: e362d80f5c4a33ad604c717333777e7c5fdef489
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-この記事は、固定資産の償却の概要を示します。
+このトピックは、固定資産の償却の概要を示します。
 
 減価償却は、一般に、貸借対照表の固定資産の価値を減少させる定期処理取引であり、損益勘定では支出として記帳します。 したがって、通常、主勘定を使用して貸借対照表の定期減価償却を貸方に転記します。 相手勘定は、勘定科目の損益部分の勘定です。
 
@@ -55,7 +55,7 @@ ms.lasthandoff: 09/29/2017
 
 総勘定元帳の [**会計カレンダー**] ページを使用して、共用カレンダーを作成できます。
 
-詳細については、「[減価償却方法](depreciation-methods-conventions.md)」を参照してください。
+詳細については、[減価償却方法](depreciation-methods-conventions.md) を参照してください。
 
 
 

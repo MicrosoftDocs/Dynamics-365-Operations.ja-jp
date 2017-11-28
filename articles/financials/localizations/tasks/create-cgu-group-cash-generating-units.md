@@ -3,7 +3,7 @@ title: "CGU グループおよび資産グループの作成 (日本)"
 description: "日本では、固定資産の減損は、個々の固定資産または資産グループに基づき決定することができます。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 09/22/2016
+ms.date: 10/30/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 095641fad4e5359f4153e480e3039c07e114867d
+ms.sourcegitcommit: 66f10523fe3fb104550a88f735a9644613ec861b
+ms.openlocfilehash: cee8cf43d79bbf24219bd4662ace29e85afd39a0
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/30/2017
 
 ---
 # <a name="create-cgu-group-and-cash-generating-units-japan"></a>CGU グループおよび資産グループの作成 (日本)
@@ -77,7 +77,7 @@ ms.lasthandoff: 09/29/2017
 2. [クイック フィルター] を使用して編集する CGU を検索します。
     * 以前にメモした最初の資産グループ番号を入力します。  
 3. [一括インポート] をクリックします。
-    * その条件と一致するすべての資産を一度に追加する条件を指定することをお勧めします。   グリッドに、資産を 1 つずつ入力することもできます。  
+    * その条件と一致するすべての資産を一度に追加する条件を指定することをお勧めします。 グリッドに、資産を 1 つずつ入力することもできます。  
 4. [基準] フィールドに値を入力します。
     * 例: 場所 = 福岡  
 5. [OK] をクリックします。

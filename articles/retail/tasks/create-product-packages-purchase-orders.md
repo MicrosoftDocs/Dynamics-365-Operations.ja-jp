@@ -3,7 +3,7 @@ title: "発注書の製品パッケージの作成"
 description: "この手順では、製品パッケージを作成し、発注書を使用する方法を説明します。"
 author: josaw1
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 11/14/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: a3be1e7aca7f0382aea55fa8a371c33c8b53df95
+ms.sourcegitcommit: 8bbdbf882f6f73d03be0a036cb975109396e4a0d
+ms.openlocfilehash: 9d3ea8702c79d8aa6bb7cf7caa922277697610fa
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/14/2017
 
 ---
 # <a name="create-product-packages-for-purchase-orders"></a>発注書の製品パッケージの作成
@@ -53,7 +53,7 @@ ms.lasthandoff: 09/29/2017
 20. [保存] をクリックします。
 21. ページを閉じます。
 
-## <a name="add-package-to-puchase-order"></a>発注書にパッケージを追加
+## <a name="add-package-to-purchase-order"></a>発注書にパッケージを追加
 1. [買掛金勘定] > [発注書] > [すべての発注書] に移動します。
 2. [新規] をクリックします。
 3. [仕入先] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。
