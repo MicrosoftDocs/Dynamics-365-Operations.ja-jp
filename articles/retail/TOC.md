@@ -180,11 +180,11 @@
 
 ## 配置と修正プログラム
 ### [小売店舗スケール ユニットの概要](dev-itpro/retail-store-system-begin.md)
-#### [小売店舗スケール ユニットのコンフィギュレーションとインストール](dev-itpro/retail-store-scale-unit-configuration-installation.md)
+### [小売店舗スケール ユニットのコンフィギュレーションとインストール](dev-itpro/retail-store-scale-unit-configuration-installation.md)
 ### [Retail Modern POS のコンフィギュレーションとインストール](retail-modern-pos-device-activation.md)
-#### [本社からの Retail アカウントとデバイスの管理](set-up-activation-accounts-validate-devices-hq.md)
-#### [Retail POS デバイスのライセンス認証](dev-itpro/retail-device-activation.md)
-#### [Retail クラウド POS のセキュリティ保護](dev-itpro/secure-retail-cloud-pos.md)
+### [本社からの Retail アカウントとデバイスの管理](set-up-activation-accounts-validate-devices-hq.md)
+### [Retail POS デバイスのライセンス認証](dev-itpro/retail-device-activation.md)
+### [Retail クラウド POS のセキュリティ保護](dev-itpro/secure-retail-cloud-pos.md)
 ### [Retail Hardware Station のコンフィギュレーションとインストール](retail-hardware-station-configuration-installation.md)
 ### [Retail セルフサービス コンポーネントの一括配置](dev-itpro/retail-mass-deployment.md)
 ### [診断とトラブルシューティングの Retail コンポーネント イベント](dev-itpro/retail-component-events-diagnostics-troubleshooting.md)
@@ -194,48 +194,52 @@
 ### [アップグレードおよび N-1 のサポートの概要](dev-itpro/overview-upgrade-n-minus1.md)
 ### [N-1 コンポーネントのインストール](dev-itpro/n-1-installation-configuration.md)
 
+## 実装ガイダンス
+### [デバイス管理実装ガイダンス](implementation-considerations-devices.md)
+
 ## 環境のコンフィギュレーション
 ### [組織の法律条項およびプライバシーに関する声明へのリンクの追加](../dev-itpro/sysadmin/legal-terms-privacy-statement.md)
 ### [Bing マップの管理](dev-itpro/manage-bing-maps.md)
 
-## 拡張性
-### 販売時点管理
-#### [Retail POS 画面レイアウト](pos-screen-layouts.md)
-##### [POS のレイアウト デザイナーのインストール](install-pos-layout-designer.md)
-#### [オフライン モード用の MPOS のコンフィギュレーション](dev-itpro/retail-modern-pos-offline.md)
-#### [MPOS およびクラウド POS のトリガー拡張機能](dev-itpro/modern-pos-trigger-extensibility.md)
-#### [POS ビューへのカスタム コントロールの追加](dev-itpro/pos-custom-control.md)
-#### [POS 支払拡張機能](dev-itpro/pos-payment-extension.md)
-#### [外部ギフト カードのサポート](dev-itpro/gift-card.md)
+## 販売時点管理の拡張機能
+### [Retail POS 画面レイアウト](pos-screen-layouts.md)
+### [POS のレイアウト デザイナーのインストール](install-pos-layout-designer.md)
+### [オフライン モード用の MPOS のコンフィギュレーション](dev-itpro/retail-modern-pos-offline.md)
+### [MPOS およびクラウド POS のトリガー拡張機能](dev-itpro/modern-pos-trigger-extensibility.md)
+### [POS ビューへのカスタム コントロールの追加](dev-itpro/pos-custom-control.md)
+### [POS 支払拡張機能](dev-itpro/pos-payment-extension.md)
+### [外部ギフト カードのサポート](dev-itpro/gift-card.md)
 ### [小売エクスペリエンス アプリの作成](dev-itpro/create-retail-experience-app.md)
 ### [ハードウェア ステーションの概要および拡張機能](dev-itpro/hardware-station-extensibility.md)
 
-### Retail サーバー
-#### [Retail Server OData コントローラーの拡張](dev-itpro/extend-retail-server-odata-controller.md)
-#### [Web API および OData コントローラー](dev-itpro/odata-controllers-api.md)
-#### [Retail サーバーの顧客およびコンシューマー API](dev-itpro/retail-server-customer-consumer-api.md)
-#### [メタデータの拡張](dev-itpro/extend-metadata.md)
-#### [POS のオフライン モードをサポートするために Commerce Runtime を拡張](dev-itpro/call-crt-service-offline.md)
-### Commerce Runtime
-#### [Commerce Runtime の概要](dev-itpro/commerce-runtime-overview.md)
-#### [Commerce Runtime および Retail サーバーの拡張機能](dev-itpro/commerce-runtime-extensibility.md)
-#### [顧客の基本設定データをチャンネル データベースに追加](dev-itpro/add-customer-preference-channel.md)
-#### [プロパティを販売注文に追加](dev-itpro/add-properties-sales-order.md)
-#### [Commerce Rumtime の拡張機能とトリガー](dev-itpro/commerce-runtime-extensibility-trigger.md)
-#### [トリガーの例: ブロック トランザクション](dev-itpro/trigger-example-blocking-transaction.md)
-#### [トリガーの例: 返品ポリシー](dev-itpro/trigger-example-return-policy.md)
-### E コマース
-#### [オンライン ストアのコンフィギュレーション](dev-itpro/configure-online-store.md)
-#### [認証プロバイダーのコンフィギュレーション](dev-itpro/configure-authentication-providers.md)
-#### [E コマース プラットフォーム](dev-itpro/ecommerce-platform.md)
-#### [E コマース プラットフォーム SDK](dev-itpro/ecommerce-platform-sdk.md)
-### 支払コネクタ
-#### [支払コネクタと支払デバイスの実装 (ホワイト ペーパー)](http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx)
-#### [支払コネクタの配置](dev-itpro/deploy-payment-connector.md)
-#### [支払コネクタ用の Windows インストーラーの作成](dev-itpro/create-windows-installer-payment-connector.md)
+## Retail サーバーの拡張機能
+### [Retail Server OData コントローラーの拡張](dev-itpro/extend-retail-server-odata-controller.md)
+### [Web API および OData コントローラー](dev-itpro/odata-controllers-api.md)
+### [Retail サーバーの顧客およびコンシューマー API](dev-itpro/retail-server-customer-consumer-api.md)
+### [メタデータの拡張](dev-itpro/extend-metadata.md)
+### [POS のオフライン モードをサポートするために Commerce Runtime を拡張](dev-itpro/call-crt-service-offline.md)
 
-## Retail SDK
-### [Retail SDK の概要](dev-itpro/retail-sdk/retail-sdk-overview.md)
+## Commerce Runtime の拡張機能
+### [Commerce Runtime の概要](dev-itpro/commerce-runtime-overview.md)
+### [Commerce Runtime および Retail サーバーの拡張機能](dev-itpro/commerce-runtime-extensibility.md)
+### [顧客の基本設定データをチャンネル データベースに追加](dev-itpro/add-customer-preference-channel.md)
+### [プロパティを販売注文に追加](dev-itpro/add-properties-sales-order.md)
+### [Commerce Rumtime の拡張機能とトリガー](dev-itpro/commerce-runtime-extensibility-trigger.md)
+### [トリガーの例: ブロック トランザクション](dev-itpro/trigger-example-blocking-transaction.md)
+### [トリガーの例: 返品ポリシー](dev-itpro/trigger-example-return-policy.md)
+
+## E コマースの拡張機能
+### [オンライン ストアのコンフィギュレーション](dev-itpro/configure-online-store.md)
+### [認証プロバイダーのコンフィギュレーション](dev-itpro/configure-authentication-providers.md)
+### [E コマース プラットフォーム](dev-itpro/ecommerce-platform.md)
+### [E コマース プラットフォーム SDK](dev-itpro/ecommerce-platform-sdk.md)
+
+## 支払コネクタの拡張機能
+### [支払コネクタと支払デバイスの実装 (ホワイト ペーパー)](http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx)
+### [支払コネクタの配置](dev-itpro/deploy-payment-connector.md)
+### [支払コネクタ用の Windows インストーラーの作成](dev-itpro/create-windows-installer-payment-connector.md)
+
+## [Retail SDK](dev-itpro/retail-sdk/retail-sdk-overview.md)
 ### [Retail SDK を継続的ビルド システムと統合](dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md)
 ### [Retail SDK の拡張機能サンプル](dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md)
 ### [スウェーデンのキャッシュ レジスター](localizations/emea-swe-cash-registers.md)
@@ -249,7 +253,13 @@
 ### [注文属性](dev-itpro/order-attributes.md)
 ### [顧客属性](dev-itpro/customer-attributes.md)
 ### [Retail の Typescript プロキシと C# プロキシ](dev-itpro/typescript-proxy-retail-pos.md)
-
+### [Retail POS サンプルの実行](dev-itpro/pos-run-samples.md)
+### [既存の POS ビューの拡張によるカスタム列およびアプリ バー ボタンの追加](dev-itpro/pos-view-extension.md)
+### [Retail Modern POS トランザクション ページへのカスタム コントロールの追加](dev-itpro/pos-custom-transaction.md)
+### [POS トランザクション グリッドへのカスタム列の追加](dev-itpro/pos-custom-transaction-column.md)
+### [POS 拡張機能からの POS API または操作の呼び出し](dev-itpro/pos-api-extension.md)
+### [既存の POS ビューの拡張によるカスタム列およびアプリ バー ボタンの追加](dev-itpro/pos-view-extension.md)
+### [Retail Modern POS のトリガーと印刷](dev-itpro/pos-trigger-printing.md)
 
 ## Commerce Runtime
 ### [ロイヤルティの拡張機能](dev-itpro/retail-sdk/loyalty-extension-sample.md)

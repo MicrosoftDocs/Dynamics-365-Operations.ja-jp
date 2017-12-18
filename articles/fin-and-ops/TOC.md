@@ -10,6 +10,7 @@
 ##### [クラウド配置のシステム要件](get-started/system-requirements.md)
 ##### [オンプレミス配置](../dev-itpro/deployment/on-premises-deployment-landing-page.md)
 ##### [オンプレミス配置のシステム要件](get-started/system-requirements-on-prem.md)
+##### [オンプレミス配置の倉庫管理](../dev-itpro/deployment/warehousing-for-on-premise-deployments.md)
 
 #### Finance and Operations の購入
 ##### [Microsoft FastTrack for Dynamics 365](get-started/fasttrack-dynamics-365-overview.md)
@@ -20,8 +21,9 @@
 #### [延期されたAX 2012 の機能](get-started/ax-2012-features-not-implemented-but-not-deprecated.md)
 #### [オンプレミス配置で実装されていない機能](get-started/features-not-implemented-on-prem.md)
 #### [ライフサイクル ポリシー](../dev-itpro/migration-upgrade/versions-update-policy.md)
+#### [プラットフォーム更新プログラム 12 (2017 年 11 月)](get-started/whats-new-platform-update-12.md)
 #### [プラットフォーム update 11 (2017 年 10 月)](get-started/whats-new-platform-update-11.md)
-#### [プラットフォーム update 10 (2017 年 8 月)](get-started/whats-new-platform-update-10.md)
+#### [プラットフォーム更新プログラム 10 (2017 年 8 月)](get-started/whats-new-platform-update-10.md)
 #### [Finance and Operations, Enterprise Edition (2017 年 7 月)](get-started/whats-new-application-July-2017-update.md)
 #### [プラットフォーム更新プログラム 9 (2017 年 7 月)](get-started/whats-new-platform-update-9.md)
 #### [プラットフォーム更新プログラム 8 (2017 年 6 月)](get-started/whats-new-platform-update-8.md)
@@ -42,6 +44,7 @@
 ##### [2016 年 2 月タスク ガイド](get-started/new-task-guides-available-february-2016.md)
 
 ### ユーザー インターフェイスの操作
+#### [ユーザー補助機能](get-started/accessibility-features.md)
 #### [クライアント UI のよく寄せられる質問](get-started/client-faq.md)
 #### [アクション検索](get-started/action-search.md)
 #### [高度なフィルター処理とクエリ構文](get-started/advanced-filtering-query-options.md)
@@ -56,7 +59,7 @@
 #### [ユーザーの優先タイム ゾーンの設定](organization-administration/tasks/set-users-preferred-time-zone.md)
 #### [Lifecycle Services の理解](../dev-itpro/lifecycle-services/lcs-works-lcs.md)
 
-### ヘルプとサポート
+### ドキュメントを読んで実行
 #### [ヘルプの概要](get-started/help-overview.md)
 #### [ヘルプへの接続](get-started/help-connect.md)
 #### [フィールド説明の表示およびエクスポート](get-started/view-export-field-descriptions.md)
@@ -152,17 +155,21 @@
 
 #### [Common Data Service を使用したデータの統合](../dev-itpro/data-entities/data-integration-cds.md) 
 ##### [見込顧客から入金のシナリオのコンフィギュレーション](../supply-chain/sales-marketing/prospect-to-cash.md)
-###### [Sales 製品への Finance and Operations の製品の同期](../supply-chain/sales-marketing/products-template-mapping.md)
-###### [Finance and Operations の顧客への Sales の勘定の同期](../supply-chain/sales-marketing/accounts-template-mapping.md)
-###### [Finance and Operations の連絡先または顧客への Sales の連絡先の同期](../supply-chain/sales-marketing/contacts-template-mapping.md)
-###### [販売見積ヘッダーおよび明細行の Sales から Finance and Operations への同期](../supply-chain/sales-marketing/sales-quotation-template-mapping.md)
-###### [販売注文ヘッダーおよび明細行の Finance and Operations から Sales への同期](../supply-chain/sales-marketing/sales-order-template-mapping.md)
-###### [売上請求書ヘッダーおよび明細行の Finance and Operations から Sales への同期](../supply-chain/sales-marketing/sales-invoice-template-mapping.md)
-###### [Finance and Operations の顧客への Sales の勘定の直接同期](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
-###### [Sales 製品への Finance and Operations の製品の直接同期](../supply-chain/sales-marketing/products-template-mapping-direct.md)
-###### [Finance and Operations の連絡先または顧客への Sales の連絡先の直接同期](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
-###### [販売注文ヘッダーおよび明細行の Finance and Operations から Sales への直接同期](../supply-chain/sales-marketing/sales-order-template-mapping-direct.md)
-###### [売上請求書ヘッダーおよび明細行の Finance and Operations から Sales への直接同期](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
+###### [Sales でアカウントの管理、および Sales から Finance and Operations への直接同期](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
+###### [Finance and Operations での製品の管理、および Sales への直接同期](../supply-chain/sales-marketing/products-template-mapping-direct.md)
+###### [Sales の連絡先の管理、および Finance and Operations の連絡先または顧客への直接同期](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
+###### [販売見積の Sales から Finance and Operations への直接同期](../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md)
+###### [販売注文の Finance and Operations から Sales への直接同期](../supply-chain/sales-marketing/sales-order-template-mapping-direct.md)
+###### [販売注文の Sales と Finance and Operations の間の直接同期](../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md)
+###### [売上請求書の Finance and Operations から Sales への直接同期](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
+###### [Sales での勘定の管理、および Finance and Operations への同期](../supply-chain/sales-marketing/accounts-template-mapping.md)
+###### [Sales での連絡先の管理、および Finance and Operations への同期](../supply-chain/sales-marketing/contacts-template-mapping.md)
+###### [Finance and Operations での製品の管理、および Sales への同期](../supply-chain/sales-marketing/products-template-mapping.md)
+###### [Sales での販売見積の作成、および Finance and Operations への同期](../supply-chain/sales-marketing/sales-quotation-template-mapping.md)
+###### [Finance and Operations での販売注文の作成、および Sales への同期](../supply-chain/sales-marketing/sales-order-template-mapping.md)
+###### [Finance and Operations での売上請求書の作成、および Sales への同期](../supply-chain/sales-marketing/sales-invoice-template-mapping.md)
+
+
 
 #### [外部 Web サービスの使用](../dev-itpro/data-entities/consume-external-web-service.md)
 
@@ -894,6 +901,7 @@
 ##### [ブラック リスト レポート](../financials/localizations/emea-ita-black-list-report.md)
 ##### [報告日](../financials/localizations/emea-ita-competence-date.md)
 ##### [固定資産の減価償却](../financials/localizations/emea-ita-depreciation-of-fixed-assets.md)
+##### [Modello 770](../financials/localizations/emea-ita-modello770.md)
 ##### [請求書の梱包明細日付の検証](../financials/localizations/emea-ita-packing-slip-date-verification-on-invoice.md)
 ##### [消費税帳簿](../financials/localizations/emea-ita-fiscal-books.md)
 ##### [政府/自治体に対して発行された請求書の分割支払](../financials/localizations/emea-ita-split-payment-invoices-issued-public-administration.md)
@@ -1347,7 +1355,29 @@
 ### [在庫分析コード当たりの移動平均原価の追跡](../supply-chain/cost-management/track-running-average-cost-per-inventory-dimension.md)
 
 
-## マスター プラン
+## [マスター プラン](../supply-chain/master-planning/master-planning-home-page.md)
+### [マスター プラン](../supply-chain/master-planning/master-plans.md)
+#### [補充設定](../supply-chain/master-planning/coverage-settings.md)
+#### [品目の補充ルールの定義 (タスク ガイド)](../supply-chain/master-planning/tasks/define-coverage-rules-items.md)
+#### [制約付き計画の生成 (タスク ガイド)](../supply-chain/master-planning/tasks/constrained-plan.md)
+#### [連産品の材料計画の作成 (タスク ガイド)](../supply-chain/master-planning/tasks/create-material-plan-co-products.md)
+#### [計画オーダーの管理](../supply-chain/master-planning/maintain-planned-orders.md)
+#### [遅延の処理](../supply-chain/master-planning/delays.md)
+#### [展開の追跡](../supply-chain/master-planning/trace-explosion.md)
+#### [アクション メッセージ](../supply-chain/master-planning/action-messages.md)
+#### [マスター プランの実行の監視 (タスク ガイド)](../supply-chain/master-planning/tasks/monitor-master-planning-run.md)
+#### [サイトのスケジュールの作成 (タスク ガイド)](../supply-chain/master-planning/tasks/create-schedule-site.md)
+#### [サイトの計画の作成 (タスク ガイド)](../supply-chain/master-planning/tasks/create-plan-site.md)
+#### [マスター プランとマルチサイト機能](../supply-chain/master-planning/master-plan-multisite-functionality.md)
+##### [サイトの補充計画、必須の倉庫](../supply-chain/master-planning/master-plan-site-coverage-warehouse-mandatory.md)
+##### [サイトの補充計画、必須ではない倉庫](../supply-chain/master-planning/master-plan-site-coverage-warehouse-not-mandatory.md)
+##### [サイトと倉庫の補充計画、必須の倉庫](../supply-chain/master-planning/master-plan-site-warehouse-coverage-warehouse-mandatory.md)
+##### [サイトと倉庫の補充計画、必須ではない倉庫](../supply-chain/master-planning/master-plan-site-warehouse-coverage-warehouse-not-mandatory.md)
+##### [BOM バージョンの決定](../supply-chain/master-planning/master-plan-bom-version-determined.md)
+##### [BOM バージョンの展開](../supply-chain/master-planning/master-plan-explosion-bom-version.md)
+#### [会社間計画の作成 (タスク ガイド)](../supply-chain/master-planning/tasks/create-intercompany-plan.md)
+#### [計画企業内需要 (アウトバウンド) の表示 (タスク ガイド)](../supply-chain/master-planning/tasks/view-outbound-planned-intercompany-demand.md)
+#### [社内サプライ チェーンの顧客との共同作業 (タスク ガイド)](../supply-chain/master-planning/tasks/collaborate-internal-supply-chain-customers.md)
 ### [需要予測](../supply-chain/master-planning/introduction-demand-forecasting.md)
 #### [需要予測の設定](../supply-chain/master-planning/demand-forecasting-setup.md)
 #### [需要予測の履歴データのインポート](../supply-chain/master-planning/import-historical-data.md)
@@ -1359,29 +1389,6 @@
 #### [下方修正キー](../supply-chain/master-planning/reduction-keys.md)
 #### [ベースライン予測の作成 (タスク ガイド)](../supply-chain/master-planning/tasks/create-baseline-forecast.md)
 #### [需要予測の手動変更 (タスク ガイド)](../supply-chain/master-planning/tasks/modify-demand-forecast-manually.md)
-
-### [マスター プラン](../supply-chain/master-planning/master-plans.md)
-#### [補充設定](../supply-chain/master-planning/coverage-settings.md)
-#### [計画オーダーの管理](../supply-chain/master-planning/maintain-planned-orders.md)
-#### [遅延](../supply-chain/master-planning/delays.md)
-#### [アクション メッセージ](../supply-chain/master-planning/action-messages.md)
-#### [展開の追跡](../supply-chain/master-planning/trace-explosion.md)
-#### [マスター プランとマルチサイト機能](../supply-chain/master-planning/master-plan-multisite-functionality.md)
-##### [サイトの補充計画、必須の倉庫](../supply-chain/master-planning/master-plan-site-coverage-warehouse-mandatory.md)
-##### [サイトの補充計画、必須ではない倉庫](../supply-chain/master-planning/master-plan-site-coverage-warehouse-not-mandatory.md)
-##### [サイトと倉庫の補充計画、必須の倉庫](../supply-chain/master-planning/master-plan-site-warehouse-coverage-warehouse-mandatory.md)
-##### [サイトと倉庫の補充計画、必須ではない倉庫](../supply-chain/master-planning/master-plan-site-warehouse-coverage-warehouse-not-mandatory.md)
-##### [BOM バージョンの決定](../supply-chain/master-planning/master-plan-bom-version-determined.md)
-##### [BOM バージョンの展開](../supply-chain/master-planning/master-plan-explosion-bom-version.md)
-#### [マスター プランの実行の監視 (タスク ガイド)](../supply-chain/master-planning/tasks/monitor-master-planning-run.md)
-#### [品目の補充ルールの定義 (タスク ガイド)](../supply-chain/master-planning/tasks/define-coverage-rules-items.md)
-#### [サイトの計画の作成 (タスク ガイド)](../supply-chain/master-planning/tasks/create-plan-site.md)
-#### [サイトのスケジュールの作成 (タスク ガイド)](../supply-chain/master-planning/tasks/create-schedule-site.md)
-#### [制約付き計画の生成 (タスク ガイド)](../supply-chain/master-planning/tasks/constrained-plan.md)
-#### [会社間計画の作成 (タスク ガイド)](../supply-chain/master-planning/tasks/create-intercompany-plan.md)
-#### [連産品の材料計画の作成 (タスク ガイド)](../supply-chain/master-planning/tasks/create-material-plan-co-products.md)
-#### [計画企業内需要 (アウトバウンド) の表示 (タスク ガイド)](../supply-chain/master-planning/tasks/view-outbound-planned-intercompany-demand.md)
-#### [社内サプライ チェーンの顧客との共同作業 (タスク ガイド)](../supply-chain/master-planning/tasks/collaborate-internal-supply-chain-customers.md)
 
 
 ## [モバイル アプリ](../dev-itpro/mobile-apps/Mobile-app-home-page.md)
@@ -1853,7 +1860,7 @@
 #### [発注書の作業テンプレートの設定](../supply-chain/warehousing/tasks/set-up-work-template-purchase-orders.md)
 #### [積荷計画ワークベンチを使用した積荷および出荷の計画](../supply-chain/warehousing/tasks/use-load-planning-workbench-plan-loads-shipments.md)
 
-# [開発と管理](../dev-itpro/toc.md)
+# [Finance and Operations の開発と管理](../dev-itpro/toc.md)
 
 # [Dynamics 365 for Retail](../retail/toc.md)
 
