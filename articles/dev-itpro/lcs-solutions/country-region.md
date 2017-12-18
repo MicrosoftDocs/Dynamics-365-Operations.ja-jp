@@ -17,10 +17,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 25c8c6c9bbccf07ce94a909824ecc8096081cd2c
+ms.sourcegitcommit: 3d3ad89f80c3e3f42e117109f4a76232795b7d64
+ms.openlocfilehash: 9322b970eea9ab5ac01ae8461285b4dbcc1624a3
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 11/28/2017
 
 ---
 
@@ -223,6 +223,7 @@ Microsoft Dynamics 365 for Finance and Operations には、[製品可用性ガ�
 -   [VAT 明細書の詳細](../../financials/localizations/emea-ita-vat-statements-details.md)
 -   [トランザクションの報告日](../../financials/localizations/emea-ita-competence-date.md)
 -   [固定資産の手動減価償却](../../financials/localizations/emea-ita-depreciation-of-fixed-assets.md)
+-   [Modello 770](../../financials/localizations/emea-ita-modello770.md)
 -   [イタリアの請求書の梱包明細日付の検証](../../financials/localizations/emea-ita-packing-slip-date-verification-on-invoice.md)
 -   [イタリアの売上税帳簿](../../financials/localizations/emea-ita-fiscal-books.md)
 -   [政府/自治体に対して発行された請求書の分割支払](../../financials/localizations/emea-ita-split-payment-invoices-issued-public-administration.md)
