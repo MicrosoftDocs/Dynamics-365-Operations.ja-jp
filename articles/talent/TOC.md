@@ -2,6 +2,8 @@
 
 # [はじめに](talent-get-started.md)
 ## [システム要件と更新ポリシー](talent-versions-update-policy.md)
+## [Microsoft Dynamics 365 for Talent のプロビジョニング](provisioning-talent.md)
+## [Talent 機能の拡張](extend-talent-functionality.md)
 
 # [人材戦略の作成](departments-jobs-positions.md)
 ## [職務コンポーネントの設定](create-job.md)

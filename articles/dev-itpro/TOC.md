@@ -124,6 +124,7 @@
 #### [ファクトリ メソッドのサブクラスの登録](extensibility/register-subclass-factory-methods.md)
 #### [EventHandlerResult を使用した応答](extensibility/respond-event-handler-result.md)
 #### [RunBase クラスの拡張](extensibility/extend-runbase-class.md)
+#### [委任を使用したアプリケーション起動のカスタマイズ](extensibility/startup-customizations.md)
 #### [テーブルの既存のフィールドの変更](extensibility/modify-existing-field.md)
 #### [既存のテーブルへの新しいフィールドの追加](extensibility/add-field-extension.md)
 #### [既存のテーブルへのインデックスの追加](extensibility/add-index.md)
@@ -505,10 +506,12 @@
 ### [オンプレミス環境の設定と配置](deployment/setup-deploy-on-premises-environments.md)
 ### [カスタム モデルの開発とオンプレミス環境への配置](deployment/develop-deploy-custom-models-on-premises.md)
 ### [オンプレミス配置への更新プログラムの適用](deployment/apply-updates-on-premises.md)
+### [オンプレミス配置の再配置](deployment/redeploy-on-prem.md)
+### [Dynamics 365 for Finance and Operations, Enterprise Edition (オンプレミス) のトラブルシューティング](deployment/troubleshoot-on-prem.md)
 
 ## カスタム コードの配置
 ### [配置可能パッケージの作成](deployment/create-apply-deployable-package.md)
-### [配置可能パッケージの適用](deployment/apply-deployable-package-system.md)
+### [クラウド環境への更新プログラムの適用](deployment/apply-deployable-package-system.md)
 ### [配置可能パッケージのインストール](deployment/install-deployable-package.md)
 ### [パッケージ アプリケーションの問題のトラブルシューティング](deployment/deployable-package-troubleshooting.md)
 
@@ -544,11 +547,13 @@
 ## 最新の更新プログラムへのアップグレード
 ### [最新の更新プログラムに移行するためのプロセス](migration-upgrade/upgrade-latest-update.md)
 ### [ライフサイクル ポリシー](migration-upgrade/versions-update-policy.md)
-### [最新のプラットフォーム更新プログラムへのアップグレード](migration-upgrade/upgrade-latest-platform-update.md)
+### [最新のプラットフォーム更新プログラムの環境への適用](migration-upgrade/upgrade-latest-platform-update.md)
 ### [2016 年 8 月リリースへの Dynamics プラットフォームのアップグレード](migration-upgrade/update-platform-each-release.md)
 ### [サンドボックス環境のアップグレード](migration-upgrade/upgrade-sandbox-environment.md)
 ### [開発またはデモ環境でのデータのアップグレード](migration-upgrade/upgrade-data-to-latest-update.md)
 ### [開発ツールの更新](dev-tools/update-development-tools.md)
+### [オンプレミス配置への更新プログラムの適用](deployment/apply-updates-on-premises.md)
+### [オンプレミス配置の再配置](deployment/redeploy-on-prem.md)
 
 ## 修正プログラムとサービス
 ### [Lifecycle Services からの修正プログラムのダウンロード](migration-upgrade/download-hotfix-lcs.md)
@@ -566,6 +571,7 @@
 ## [会社間データ共有](sysadmin/cross-company-data-sharing.md)
 ## [メンテナンス モード](sysadmin/maintenance-mode.md)
 ## [コンフィギュレーション済みのシステム アカウント](sysadmin/pre-configured-system-accounts.md)
+## [B2B ユーザーの Azure AD へのエクスポート](sysadmin/implement-b2b.md)
 ## [ロールベース セキュリティ](sysadmin/role-based-security.md)
 ### [セキュリティ アークテクチャ](sysadmin/security-architecture.md)
 ### [セキュリティ レポート](sysadmin/security-reports.md)
