@@ -3,7 +3,7 @@ title: "給付金 Power BI コンテンツ"
 description: "このトピックでは、給付金 Power BI コンテンツについて説明します。 含まれているレポートへのアクセス方法、およびコンテンツを作成するために使用したデータモデルとエンティティについて説明します。"
 author: jcart1106
 manager: AnnBe
-ms.date: 05/24/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 21f7f77148728a6e7584af76ec053250f52bc73c
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: 25111ac7ae07e04bc81ac23a348464bcbe1393af
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 11/03/2017
 ## <a name="accessing-the-power-bi-content"></a>Power BI コンテンツへのアクセス
 次の製品のいずれかを使用する場合、**給付金** Power BI コンテンツは **給付金管理** ワークスペースに表示されます。
 
-- Microsoft Dynamics 365 for Finance and Operations Enterprise Edition (2017 年 7 月)
+- Microsoft Dynamics 365 for Finance and Operations Enterprise Edition
 - Microsoft Dynamics 365 for Talent
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Power BI コンテンツに含まれるレポート

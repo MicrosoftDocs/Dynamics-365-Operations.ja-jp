@@ -1,6 +1,6 @@
 ---
 title: "販売注文の Sales、Finance and Operations 間の直接同期"
-description: "このトピックでは、Microsoft Dynamics 365 for Sales と、Microsoft Dynamics 365 for Finance and Operations, Enterprise edition との間で販売注文ヘッダーの販売明細行の双方向同期を実行させるために使用されるテンプレートと基本的なタスクについて説明します。"
+description: "このトピックでは、Microsoft Dynamics 365 for Sales と Microsoft Dynamics 365 for Finance and Operations, Enterprise edition との間で、販売注文の直接同期を実行させるために使用されるテンプレートと基本的なタスクについて説明します。"
 author: ChristianRytt
 manager: AnnBe
 ms.date: 10/31/2017
@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.intro: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 568c33a63efdc58a179dadcb617634dcf533fd4b
-ms.openlocfilehash: c31d65328250539fbe172f220272eec9d8b59bbf
+ms.sourcegitcommit: 7a828090fa34eb96d2b557eb06e48ad05b421ae8
+ms.openlocfilehash: 9aa8c78f5aea5a818d517c2baa9051750b132fc6
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 11/20/2017
 
 ---
 
@@ -31,13 +31,13 @@ ms.lasthandoff: 11/13/2017
 
 [!include[banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Sales と、Microsoft Dynamics 365 for Finance and Operations, Enterprise edition との間で販売注文ヘッダーの販売明細行の双方向同期を実行させるために使用されるテンプレートと基本的なタスクについて説明します。
+このトピックでは、Microsoft Dynamics 365 for Sales と Microsoft Dynamics 365 for Finance and Operations, Enterprise edition との間で、販売注文の直接同期を実行させるために使用されるテンプレートと基本的なタスクについて説明します。
 
 ## <a name="templates-and-tasks"></a>テンプレートおよびタスク
 
 利用可能なテンプレートにアクセスするには、[PowerApps 管理者センター](https://preview.admin.powerapps.com/dataintegration) を開きます。 **プロジェクト**を選択した後、右上隅にある **新しいプロジェクト** を選択してパブリック テンプレートを選択します。
 
-Sales と Finance and Operations との間で販売注文ヘッダーと販売明細行の双方向の直接同期には、以下のテンプレートと基本的なタスクが使用されます。
+Finance and Operations と Sales の間での販売注文の直接同期の実行には、以下のテンプレートと基本的なタスクが使用されます。
 
 - **データ統合でのテンプレートの名前:** 
 
@@ -70,7 +70,7 @@ Sales で注文を作成する必要はありません。 代わりに、Finance
 
 Finance and Operations では、テンプレートのフィルタは関連する販売注文のみが同期に含まれていることを保証します。
 
-- 販売注文では、受注顧客と請求顧客の両方が Sales から生成されて同期に含める必要があります。 Finance and Operations で、[OrderingCustomerIsExternallyMaintained] および [InvoiceCustomerIsExternallyMaintained] フィールドは、データ エンティティからの販売注文をフィルタするために使用されます。
+- 販売注文では、受注顧客と請求顧客の両方が Sales から生成されて同期に含める必要があります。 Finance and Operations で、[**OrderingCustomerIsExternallyMaintained**] および [**InvoiceCustomerIsExternallyMaintained**] フィールドは、データ エンティティからの販売注文をフィルタするために使用されます。
 - Finance and Operations で [販売注文] を確定する必要があります。 [**出荷済**] や [**請求済**] など、確認済の販売注文または処理ステータスの高い販売注文のみが Sales に同期されます。
 - 販売注文を作成または変更した後、Finance and Operations で [**販売合計の計算**] のバッチ ジョブを実行する必要があります。 販売合計が計算された販売注文のみが Sales に同期されます。
 
@@ -116,9 +116,9 @@ Sales での割引計算モデルは、Finance and Operations の割引計算モ
     - **一部請求済**
     - **キャンセル済**
 
-[外部で管理される製品のみ] 設定が注文時に使用され、販売注文が外部から管理された製品で完全に構成されているかどうかが一貫して追跡されます。 受注が外部から管理された製品で完全に構成されている場合、製品は Finance and Operations で管理されます。 この設定は、Finance and Operations に不明な製品を含む販売注文明細行を有効化したり、同期化しようとするのを防ぐのに役立ちます。
+[**外部で管理される製品のみ**] 設定が注文時に使用され、販売注文が外部から管理された製品で完全に構成されているかどうかが一貫して追跡されます。 受注が外部から管理された製品で完全に構成されている場合、製品は Finance and Operations で管理されます。 この設定は、Finance and Operations に不明な製品を含む販売注文明細行を有効化したり、同期化しようとするのを防ぐのに役立ちます。
 
-[販売注文] ページで、[請求書の作成]、[注文のキャンセル]、[再計算]、[製品の取得] および [ルックアップ アドレス] ボタンは外部で管理される注文用に非表示となります。それは Finance and Operations で請求書が作成され Sales に同期されるためです。 これらの注文は、販売注文情報が有効化後に Finance and Operations から同期されるため編集することができません。
+[**販売注文**] ページで、[**請求書の作成**]、[**注文のキャンセル**]、[**再計算**]、[**製品の取得**] および [**ルックアップ アドレス**] ボタンは外部で管理される注文用に非表示となります。それは Finance and Operations で請求書が作成され Sales に同期されるためです。 これらの注文は、販売注文情報が有効化後に Finance and Operations から同期されるため編集することができません。
 
 販売発注状況は**有効** のままにすると、Finance and Operations からの変更が Sales の販売注文に流れることを保証します。 この動作を制御するためには、データ統合プロジェクトで、既定の [**Statecode\[状態\]**] を [**有効**] に設定します。
 

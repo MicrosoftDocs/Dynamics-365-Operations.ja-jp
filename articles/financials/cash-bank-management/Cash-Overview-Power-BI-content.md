@@ -3,7 +3,7 @@ title: "キャッシュの概要 Power BI コンテンツ"
 description: "このトピックでは、キャッシュの概要 Microsoft Power BI コンテンツについて説明します。 コンテンツに含まれているレポートにアクセスする方法を説明し、コンテンツを作成するために使用したデータ モデルおよびエンティティについての情報を提供します。"
 author: saraschi2
 manager: AnnBe
-ms.date: 06/22/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: fdcd3083f475967ec2e5f94dad850a1bf98c864a
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: 8a3d12b3b0f71ea8b84b1618d9bb6bbc416e3b1d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -35,7 +35,7 @@ ms.lasthandoff: 11/03/2017
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI コンテンツへのアクセス
 
-Dynamics 365 for Finance and Operations, Enterprise Edition (2017 年 7 月) を使用している場合、**キャッシュの概要** Power BI content コンテンツからのレポートは**キャッシュの概要**および**銀行管理**ワークスペースで表示されます。
+**現金の概要** Power BI コンテンツからのレポートが、**現金の概要** および **銀行管理** ワークスペースで表示されます。
 
 データでキャッシュ フロー予測レポートを表示するには、まず、現金および銀行管理領域から**キャッシュ フロー予測の計算** 機能を使用して、予測計算プロセスを実行する必要があります。  これは、予測に含める会社ごとに完了する必要があります。  [**エンティティ格納**] ページで [LedgerCovLiquidityMeasurement] 集計の測定を更新する必要があります。  
 

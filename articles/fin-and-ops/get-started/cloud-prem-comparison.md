@@ -3,7 +3,7 @@ title: "クラウドとオンプレミスの機能比較"
 description: "このトピックでは、クラウドとオンプレミスでサポートされる機能を示します。"
 author: robinarh
 manager: AnnBe
-ms.date: 07/13/2017
+ms.date: 11/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -15,13 +15,13 @@ ms.custom: 89563
 ms.assetid: 
 ms.search.region: Global
 ms.author: robinr
-ms.search.validFrom: 2017-07-13
+ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
 ms.translationtype: HT
-ms.sourcegitcommit: 9ee81bbdd22fed4ef6ea97080fe1f6b3d82bcaf5
-ms.openlocfilehash: efe06929db414475f6457dfe49ff1791a3d609d5
+ms.sourcegitcommit: cfd3b475b113fdab4ceeb3e636fea6c9134ab982
+ms.openlocfilehash: 32cc0c01a096cd678c605f57e0cccfe42d0479aa
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -59,6 +59,9 @@ ms.lasthandoff: 11/06/2017
 | | PowerBI.com との統合| 有 | 無 |
 | | 分析ワークスペース | 有 | 無 |
 | | インテリジェントなビジネス プロセス: Recommendations| 有 | 無 |
+| | Power BI desktop または Excel PowerQuery ツールを使用して OData の Power BI レポートの作成 | 有 | 無 |
+| | SQL Server Reporting Services (SSRS) は、スケール アウトをサポートします。  | 有 | 無 |
+| | テレメトリがクラウドへ転送されます | 有 | 無 |
 | 在庫管理| | 有 | 有 |
 | Lifecycle サービス| | 有 | 有 |
 | | コンフィギュレーション可能な業務プロセス | 有 | 無 |
@@ -86,7 +89,7 @@ ms.lasthandoff: 11/06/2017
 | 輸送管理| | 有 | 有 |
 | 仕入先コラボレーション| | 有 | 有|
 | 倉庫管理| | 有 | 有 |
-| | モバイル倉庫アプリ| 有 | 無 |
+| | モバイル倉庫アプリ| 有 | 有 |
 | | Warehousing Power BI レポート| 有 | 無 |
 | Web クライアント | | 有 | 有 |
 | | タスク レコーダー - BPM ライブラリからのタスク記録の保存または読み込み| 有 | 無 |
@@ -103,6 +106,7 @@ ms.lasthandoff: 11/06/2017
 | プラットフォーム互換性  || 有 | 有 |
 | サービス | | 有 | 有 |
 | | サービス環境 | 有 | 無 |
+| Trace Parser および PerfTimer | | 有 | 無 |
 | アップグレード | | 有 | 有 |
 | | アップグレード | 有 | 無 |
 | | アップグレードおよび以前のバージョンのサポート | 有 | 無 |
@@ -121,6 +125,8 @@ ms.lasthandoff: 11/06/2017
 |---|---|---|---|
 | すべての Talent エリア | すべての Talent 機能 | 有 | 無 |
 
+## <a name="see-also"></a>参照
 
+- [オンプレミス配置で実装されていない機能](features-not-implemented-on-prem.md)
 
 

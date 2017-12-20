@@ -3,7 +3,7 @@ title: "財務期間終了ワークスペース"
 description: "この記事は、財務期間終了ワークスペースおよび関連するコンフィギュレーションの概要を提供します。"
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b5dbefc953c0f1608b6f5b5676850a0e9aba36cc
+ms.sourcegitcommit: 6a03274da9b81bf71b32a62f4ebba2a374688ae5
+ms.openlocfilehash: 8b6c14d41cac13e7c1fb5a580759514d46d776ee
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 11/29/2017
 
 ---
 
@@ -91,7 +91,8 @@ ms.lasthandoff: 11/03/2017
 
 [**タスク リンク**] メニュー項目は、作業工数に関連付けられ、ワークスペースのタスク リンクから関連するページに直接移動することができます。 たとえば、買掛金勘定の通貨の再評価プロセスを実行する決算タスクは、Microsoft Dynamics 365 for Finance および Operations、Enterprise Edition の関連する [**外貨再評価**] ページにリンクできます。 外部のURLにリンクすることもできます。 
 
-> [!ヒント] 特定の Management Reporter レポートを財務期間終了タスクにリンクする場合は、レポート URL を使用します。 レポート URL にアクセスするには、レポート デザイナーのレポートを開き、[**ファイル**] &gt; [**レポートの表示**] の順にクリックして、Web ブラウザのレポートを開きます。 次にブラウザーのアドレス バーの URL をコピーし、[**タスク リンク** **URL**] フィールドに貼り付けます。 
+> [!TIP]
+> 特定の Management Reporter レポートを財務期間終了タスクにリンクする場合は、レポート URL を使用します。 レポート URL にアクセスするには、レポート デザイナーのレポートを開き、[**ファイル**] &gt; [**レポートの表示**] の順にクリックして、Web ブラウザのレポートを開きます。 次にブラウザーのアドレス バーの URL をコピーし、[**タスク リンク** **URL**] フィールドに貼り付けます。 
 
 テンプレートのタスクの依存関係を定義できます。 タスクが複数のタスクに依存するように設定されている場合は、すべての依存関係にあるタスクが完了するまで完了済みとしてマークされません。 
 

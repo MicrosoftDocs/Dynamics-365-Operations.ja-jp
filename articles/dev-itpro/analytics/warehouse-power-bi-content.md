@@ -3,7 +3,7 @@ title: "倉庫パフォーマンス Power BI コンテンツ"
 description: "このトピックでは、倉庫パフォーマンス Power BI コンテンツに何が含まれているのか説明します。 Power BI レポートにアクセスする方法を説明し、コンテンツを作成するために使用するデータ モデルおよびエンティティについての情報を提供します。"
 author: Mirzaab
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: mirzaab
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d30a14e78e35c94b9f8945d2fcc973f921698953
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: ea53e2bcd01cd06ccdd836ead1671b54aa9e9750
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -42,7 +42,7 @@ ms.lasthandoff: 11/03/2017
 -   [**位置在庫の精度**] – 在庫精度とは、重要な内部倉庫のビジネス インテリジェンス (BI) です。 一般に、集計精度を知ることは非常に重要です。 もちろん、品目のより良い位置発見や特定品目の合計着手ができるように、どの程度正確に品目を適切な場所で保管しているのか確認し、その上データの不一致を強調表示することも重要です。 (現時点では、集計機能に基づく新しい品目は修正プログラムとして配信されます。) 場所ごとの手持在庫データが正しいかどうか確認するためにこの Power BI コンテンツを使用する場合は、店舗での盗難を識別することもできます。 また、すべての場所にエンタープライズ リソース プランニング (ERP) データとは異なる手持数量があるかどうかを確認することもできます。 それらの場所が大きすぎるか、または集計不可能なのかもしれません。 または、いくつかの物理的な位置が間違っているので、手持データと同期して単一タイプの品目を保持することが困難なのかもしれません。
 
 ## <a name="accessing-the-power-bi-content-pack"></a>Power BI コンテンツ パックへのアクセス
-Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (2017 年 7 月) を使用している場合、[**倉庫パフォーマンス**] Power BI コンテンツは、[**倉庫パフォーマンス**] ページ ([**倉庫管理**] > [**照会およびレポート**] > [**倉庫パフォーマンスの分析**] > [**倉庫パフォーマンス**]) に表示されます。 
+**倉庫のパフォーマンス** Power BI コンテンツ は、**倉庫のパフォーマンス** ページ (**倉庫管理** > **照会およびレポート** > **倉庫パフォーマンスの分析** > **倉庫のパフォーマンス**) に表示されます。 
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Power BI コンテンツに含まれるメトリックス
 Power BI コンテンツの **倉庫パフォーマンス** には、レポートが含まれています。 このレポートは、グラフやタイル、テーブルとして視覚化される一連のメトリックスで構成されています。 次の表は、**倉庫パフォーマンス** Power BI コンテンツの表示の概要を示します。

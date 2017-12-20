@@ -3,7 +3,7 @@ title: "キーボード ショートカット"
 description: "以下のキーボード ショートカットは、Dynamics 365 for Finance and Operations, Enterprise edition 全体に適用されます。"
 author: jasongre
 manager: AnnBe
-ms.date: 09/12/2017
+ms.date: 10/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 39ffbe81c0cc9ecb3f91f791442bfd27231a0516
+ms.sourcegitcommit: 7a828090fa34eb96d2b557eb06e48ad05b421ae8
+ms.openlocfilehash: 8e87721af34e1527d1d8eb254f0443e37d137730
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 11/20/2017
 
 ---
 
@@ -33,6 +33,10 @@ ms.lasthandoff: 11/03/2017
 以下のキーボード ショートカットは、Dynamics 365 for Finance and Operations, Enterprise edition 全体に適用されます。 
 
 **注記:** ここで説明するショートカット キーは、米国のキーボード レイアウトのものです。 他のキーボード レイアウト キーは、米国のキーボード キーとまったく同じではない場合があります。
+
+## <a name="finding-a-shorcut"></a>ショートカットの検索
+現在のプラットフォーム更新プログラム 11 では、ユーザー インターフェイスから直接、現在利用可能なショートカットを見つけることができます。 コントロールを右クリックし、[**ショートカットの表示**] を選択します。 これにより、ページの場所によって使用できるショートカットを表示するダイアログ ボックスが開きます。 
+
 
 ## <a name="action-shortcuts"></a>アクションのショートカット
 |                                                   |                                  |
@@ -48,13 +52,14 @@ ms.lasthandoff: 11/03/2017
 | フォームまたはダイアログ ボックスの既定のボタンを実行する   | Alt + Enter                        |
 | ボタンまたはタイルをクリック                            | Enter キーまたは Space キー                   |
 | カウント タイルの更新情報を表示する         | Alt+ 上方向キー                     |
+| 現在利用可能なショートカットの表示                | Alt + Shift + K                      |                              
 
 ## <a name="date-picker-shortcuts"></a>日付選択のショートカット
 |                                       |                                           |
 |---------------------------------------|-------------------------------------------|
 | **目的**                        | **キー**                                 |
 | 日付選択を開く                  | Alt+ 下方向キー                            |
-| 日付選択で日付間の移動 | Ctrl+ 方向キー                               |
+| 日付選択で日付間の移動 | Ctrl+ 方向キー                           |
 | 前後の月に移動する       | Page down キーまたは Page up キー                       |
 | 前後の年に移動する        | Ctrl+Shift+Page down または Ctrl+Shift+Page up |
 | 本日へ移動                         | Ctrl + Home                                 |
@@ -65,6 +70,7 @@ ms.lasthandoff: 11/03/2017
 ## <a name="factbox-shortcuts"></a>情報ボックスのショートカット
 |                                                                                 |                                           |
 |---------------------------------------------------------------------------------|-------------------------------------------|
+| **目的**                                                                  | **キー**                                 |
 | 情報ボックス ペインを開く (すでに開かれている場合は、情報ボックス ペインにフォーカスを移動) | Alt+M、B または Ctrl+F2                        |
 | 情報ボックス ペインを閉じる (情報ボックス ペインにフォーカスがある場合)                         | Esc キー                                       |
 | 次または前の情報ボックスに移動 (情報ボックス ペインにフォーカスがある場合)              | Alt+Shift+下方向キーまたは Alt+Shift+上方向キー |

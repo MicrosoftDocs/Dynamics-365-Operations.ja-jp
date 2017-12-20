@@ -3,7 +3,7 @@ title: "Recruiting Power BI コンテンツの採用"
 description: "このトピックでは、Recruiting Power BI コンテンツについて説明します。 レポートにアクセスする方法を説明し、コンテンツを作成するために使用したデータ モデルおよびエンティティについての情報を提供します。"
 author: jcart1106
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 42d7b94e655799596f478e7592a17437b336099e
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: 22138ab34243aa5f8c74f785ce3aaf68b27b9622
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 11/03/2017
 このトピックでは、**Recruiting** Microsoft Power BI コンテンツについて説明します。 Power BI レポートにアクセスする方法を説明し、コンテンツを作成するために使用したデータ モデルおよびエンティティについての情報を提供します。
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI コンテンツへのアクセス
-Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (2017 年 7 月) を使用している場合、[**Recruiting**] Power BI コンテンツは**採用管理**ワークスペースで表示されます。 
+**採用** Power BI コンテンツが**採用管理**ワークスペースで表示されます。 
 
 ## <a name="reports-and-visuals-in-the-recruitment-management-workspace"></a>採用管理ワークスペースでのレポートおよびビジュアル
 [**採用管理**] ワークスペースは、[**分析**] タブを含みます。このタブには、採用のための埋め込み Power BI コンテンツが含まれています。 このコンテンツには、[概要] タブと詳細が含まれる追加のタブがあります。 次の表に各タブのレポートを示します。

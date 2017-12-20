@@ -1,15 +1,15 @@
 ---
 title: "Finance および Operations の財務分析"
 description: "Finance および Operations の財務報告では、財務およびビジネスのプロフェッショナルが財務諸表を作成、管理、展開、および表示できます。 効率的にさまざまな種類のレポートをデザインするために従来のレポートの制約を超えて移動します。"
-author: ShylaThompson
+author: aprilolson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: twheeloc
 ms.search.scope: Operations
 ms.custom: 68813
 ms.assetid: fe8b27e7-a40a-4689-ac6a-7f7401c387f5
@@ -18,10 +18,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d1e1ec9fff9f1a41fd8a219c9fbbf8a26ad3d7b6
+ms.sourcegitcommit: 81c09c551dfa4238782c3796f5d08990b30ca575
+ms.openlocfilehash: b23883c1f66cda8a719db64a2f50e00605f6bfe9
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -33,6 +33,17 @@ ms.lasthandoff: 11/03/2017
 Finance および Operations の財務報告では、財務およびビジネスのプロフェッショナルが財務諸表を作成、管理、展開、および表示できます。 効率的にさまざまな種類のレポートをデザインするために従来のレポートの制約を超えて移動します。
 
 財務報告書には、分析コードのサポートが含まれます。 したがって、勘定区分または分析コードは、すぐに使用できます。 その他のツールや構成手順を実行する必要はありません。
+
+## <a name="financial-reporting-setup"></a>財務諸表の設定
+**財務諸表の設定** ページには、システムのすべての財務分析コードの一覧があります。 **一般会計** > **元帳の設定** > **財務諸表の設定**。 
+
+**財務諸表の設定** ページには、財務諸表でレポートするデータを特定する 2 つのセクションがあります。
+
+•   **分析コード タブ** - 異なる会社がさまざまな分析コードおよび勘定構造を使用するため、レポートでどのユーザーがすべての財務分析コードを表示するかの順序を特定する方法はありません。 このページでは、財務分析コードを財務諸表でレポートを作成および表示する際に表示する順序を設定することができます。
+
+•   **属性 タブ** で、**仕入先** および **顧客** をフィルタ リングやレポート デザインの属性として使用する機能を必要とするかどうかを選択します。 トランザクションを転記する際に、複数の仕入先または顧客を単一伝票に入力しない場合、仕入先および顧客に関するレポートのみが役立ちます。 仕入先または顧客を選択すると、統合にさらに時間が追加されます。
+
+
 
 ## <a name="financial-reporting-components"></a>財務報告書のコンポーネント
 財務報告書の次のコンポーネントで、レポートの作成、表示、およびスケジュールが簡単にできます。

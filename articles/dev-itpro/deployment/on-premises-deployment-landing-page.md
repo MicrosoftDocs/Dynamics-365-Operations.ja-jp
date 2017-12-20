@@ -18,10 +18,10 @@ ms.author: kfend
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 61395e0e57eb02aaa1c95a7dbd9c15082b822701
-ms.openlocfilehash: 15992b1666caea21cdcf440fefcf65ff18111801
+ms.sourcegitcommit: 855967a9aacd4881315c5d5fefa06b909cd4cb59
+ms.openlocfilehash: 69151ed1c0a0a06e72bbdc8b33eb2fc68e9cc8eb
 ms.contentlocale: ja-jp
-ms.lasthandoff: 10/05/2017
+ms.lasthandoff: 11/28/2017
 
 ---
 # <a name="on-premises-deployment-landing-page"></a>オンプレミス配置のランディング ページ
@@ -30,14 +30,13 @@ ms.lasthandoff: 10/05/2017
 
 Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (オンプレミス型) を配置できます。 オンプレミスの配置タイプを選択すると、システム要件、ハードウェアのサイジング、および機能がクラウド展開と異なります。 このトピックでは、オンプレミス展開に固有の情報を含むコンテンツへのリンクを提供します。
 
-**注:** 現在、Dynamics 365 for Operations (オンプレミス) の名前は変更されています。 通信およびライセンス ガイド全体で参照される Dynamics 365 for Operations (オンプレミス型) が表示されます。 製品を展開する際に表示される製品名は、Dynamics 365 for Finance and Operations、Enterprise エディションです。 これらの名前はどちらも同じ製品を指しています。
-
 ## <a name="get-started"></a>使用開始
-- [Dynamics 365 for Finance and Operations, Enterprise edition (オンプレミス) の概要](on-premises-overview.md)
+- [Dynamics 365 for Finance and Operations, Enterprise Edition (オンプレミス) の概要](on-premises-overview.md)
 - [オンプレミス配置のシステム要件](../../fin-and-ops/get-started/system-requirements-on-prem.md)
 - [オンプレミス環境のハードウェアのサイズ設定](../../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md)
 - [オンライン サービスおよびオンプレミス ソフトウェアのライフサイクル ポリシー](../migration-upgrade/versions-update-policy.md)
-- [Dynamics 365 for Finance and Operations, Enterprise edition (オンプレミス) の購入](../../fin-and-ops/get-started/purchase-on-premises.md)
+- [Dynamics 365 for Finance and Operations, Enterprise Edition (オンプレミス) の購入](../../fin-and-ops/get-started/purchase-on-premises.md)
+- [クラウドとオンプレミスの機能比較](../../fin-and-ops/get-started/cloud-prem-comparison.md)
 
 ## <a name="onboard"></a>Onboard
 - [Lifecycle Services でのオンプレミス プロジェクトの作成](../lifecycle-services/lbd-create-lcs-on-prem-project.md)
@@ -51,9 +50,12 @@ Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (オンプ
 - [オンプレミス配置でのドキュメントの生成、発行、および印刷機能](../analytics/printing-capabilities-on-premises.md)
 - [テクニカル サポートの設定](../lifecycle-services/support-experience.md)
 - [クライアントのインターネット接続のトラブルシューティング](../user-interface/client-disconnected.md)
+- [オンプレミス配置への更新プログラムの適用](apply-updates-on-premises.md)
+- [オンプレミス配置の再配置](redeploy-on-prem.md)
 
 ## <a name="other-resources"></a>その他のリソース
 - [オンプレミス配置で実装されていない機能](../../fin-and-ops/get-started/features-not-implemented-on-prem.md)
 - [削除予定の機能](../migration-upgrade/deprecated-features.md)
+- [ソフトウェアのライフサイクル ポリシーおよびリリースの一覧](../migration-upgrade/versions-update-policy.md)
  
 
