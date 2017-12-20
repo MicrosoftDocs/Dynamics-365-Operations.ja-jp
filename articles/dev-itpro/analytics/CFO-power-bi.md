@@ -3,7 +3,7 @@ title: "CFO 概要 Power BI コンテンツ"
 description: "このトピックでは、CFO 概要 Microsoft Power BI コンテンツについて説明します。"
 author: kweekley
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: kweekley
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: e08277850d36804e3d4508b87547d2c819e2faf3
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: fcc93daf96f65cd340d6be766c6ef83a74d62cc5
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 11/03/2017
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI コンテンツへのアクセス
 
-Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (2017 年 7 月) を使用している場合、**CFO 概要** Power BI コンテンツからのレポートは **CFO 概要**ワークスペースで表示されます。
+**CFO 概要** Power BI コンテンツからのレポートが **CFO 概要** ワークスペースで表示されます。
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Power BI コンテンツに含まれるレポート
 **CFO 概要** Power BI コンテンツは、総勘定元帳からの実際残高と予算残高に加え、さまざまな Power BI コンテンツからのレポートの複合です。 したがって、この Power BI コンテンツは、最高財務責任者 (CFO) に組織の概要を示します。

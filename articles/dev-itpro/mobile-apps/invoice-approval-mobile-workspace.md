@@ -3,7 +3,7 @@ title: "モバイル ワークスペースの請求書承認"
 description: "このトピックでは、請求書承認モバイル ワークスペースに関する情報を提供します。 このワークスペースは、仕入先請求書ヘッダーのワークフロー プロセスを通して割り当てられている請求書の一覧を提供します。"
 author: abruer
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: abruer
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: af673f076f684500b6ca84d04c01f7f773d65cd6
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: 03179fdfd23e26250af92eb70d2ede710bd7007f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -49,7 +49,7 @@ ms.lasthandoff: 11/03/2017
 </thead>
 <tbody>
 <tr class="odd">
-<td>Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition (2017 年 7 月) を組織内に配置する必要があります。</td>
+<td>Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition を組織内に配置する必要があります。</td>
 <td>システム管理者</td>
 <td><a href="../deployment/deploy-demo-environment.md">デモ環境の配置</a>を参照してください。
 </td>

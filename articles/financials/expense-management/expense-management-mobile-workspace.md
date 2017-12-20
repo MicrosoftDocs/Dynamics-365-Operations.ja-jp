@@ -3,7 +3,7 @@ title: "経費管理モバイル ワークスペース"
 description: "このトピックでは、経費管理モバイル ワークスペースに関する情報を提供します。 このワークスペースにより、ユーザーは領収書を取得し、アップロードできるため、経費精算書に後から添付することができます。 ユーザーも関連付けられているレシートを使用して経費明細行を迅速に作成し、経費精算書を作成および管理できます。"
 author: KimANelson
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: knelson
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4880c74047f53704f5f4d8efb19b6f8c6b04d479
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: bbbe37330e16a079b817dfe04f4a47f046263e88
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -46,7 +46,7 @@ ms.lasthandoff: 11/03/2017
 - キャプチャした領収書としてファイルをアップロードします。 その後にユーザーはそのファイルを経費精算書に添付できます。
 - 新しい経費明細行を作成するには、添付されている領収書を使用します。 ユーザーはその後に、経費精算書に明細行品目を追加し、承認と払い戻しのために送信します。
 
-Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (2017 年 7 月) を使用している場合、これらの機能も使用できます。
+Microsoft Dynamics 365 for Finance and Operations、Enterprise edition を使用している場合、これらの機能も使用できます。
 
 - 新しい経費精算書を作成します。
 - 経費精算書にクレジット カード トランザクションと以前に作成したその他の経費を関連付けます。
@@ -60,8 +60,8 @@ Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (2017 年 
 ## <a name="prerequisites"></a>前提条件
 組織に配置されている Microsoft Dynamics 365 のバージョンに基づいて、前提条件は異なります。
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017"></a>Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition (2017 年 7 月) を使用している場合の前提条件 
-Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition (2017 年 7 月) を組織に配置している場合、システム管理者は [**経費管理**] モバイル ワークスペースを公開する必要があります。 手順については、「[モバイル ワークスペースの公開](../../dev-itpro/mobile-apps/publish-mobile-workspace.md)」を参照してください。
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition"></a>Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition を使用している場合の前提条件 
+Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition を組織に配置している場合、システム管理者は [**経費管理**] モバイル ワークスペースを公開する必要があります。 手順については、「[モバイル ワークスペースの公開](../../dev-itpro/mobile-apps/publish-mobile-workspace.md)」を参照してください。
 
 ### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Microsoft Dynamics 365 for Operations バージョン 1611 およびプラットフォーム更新プログラム 3 以降を使用している場合の前提条件
 Microsoft Dynamics 365 for Operations バージョン 1611 およびプラットフォーム 更新プログラム 3 以降を組織に配置している場合、システム管理者は次の前提条件を満たす必要があります。 

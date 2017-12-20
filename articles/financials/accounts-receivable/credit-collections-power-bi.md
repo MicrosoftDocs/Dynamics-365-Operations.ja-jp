@@ -3,7 +3,7 @@ title: "与信および回収管理 Power BI コンテンツ"
 description: "このトピックでは、与信および回収管理 Power BI コンテンツの内容について説明します。 Power BI レポートにアクセスする方法を説明し、コンテンツを作成するために使用するデータ モデルおよびエンティティについての情報を提供します。"
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/22/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 5f08df6cb8549e87e123b10c5a771ae1c60ff39c
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: 536ebae3ec44954aba314a966c9b0d2dabef45d1
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -41,7 +41,7 @@ ms.lasthandoff: 11/03/2017
 既定では、現在の会社の与信および回収のデータが表示されます。 すべての会社のデータを表示するには、**CustCollectionsBICrossCompany** 職務権限をロールに割り当てます。
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI コンテンツへのアクセス
-Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition (2017 年 7 月) を使用している場合、**与信および回収管理** Power BI コンテンツは**顧客の与信および回収**ワークスペースで表示されます。
+**与信および回収管理** Power BI コンテンツが **顧客の与信および回収** ワークスペースで表示されます。
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Power BI コンテンツに含まれるレポート
 

@@ -3,7 +3,7 @@ title: "販売および収益性パフォーマンス Power BI コンテンツ"
 description: "このトピックでは、販売と収益性のパフォーマンス Power BI コンテンツに何が含まれているのか説明します。 Power BI レポートにアクセスする方法を説明し、コンテンツを作成するために使用するデータ モデルおよびエンティティについての情報を提供します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: omulvad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 3692b9be0fb93e0e2de743775a54bb9c9dbf5809
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: c065eb2f19bbbd553e070f06c29f73114e3efad5
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -49,7 +49,7 @@ ms.lasthandoff: 11/03/2017
 -   顧客の収益性 (収益対粗利による) 
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI コンテンツへのアクセス
-Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (2017 年 7 月) を使用している場合、[**販売と収益性のパフォーマンス**] Power BI コンテンツは [**販売と収益性のパフォーマンス**] ページ ([**販売とマーケティング**] > [**照会およびレポート**] > [**販売パフォーマンスの分析**] > [**販売と収益性のパフォーマンス**]) に表示されます。 
+**販売と収益性のパフォーマンス** Power BI コンテンツは**販売と収益性のパフォーマンス**ページ (**販売とマーケティング** > **照会およびレポート** > **販売パフォーマンスの分析** > **販売と収益性のパフォーマンス**) に表示されます。 
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Power BI コンテンツに含まれるメトリックス
 **販売と収益性のパフォーマンス** Power BI コンテンツには、一連のメトリックスで構成されるレポートが含まれます。 これらのメトリックスはグラフ、タイル、表として視覚化されます。 次の表は、コンテンツでの視覚化の概要を示しています。

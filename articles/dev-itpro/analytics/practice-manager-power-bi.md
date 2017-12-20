@@ -3,7 +3,7 @@ title: "プラクティス マネージャー Power BI コンテンツ"
 description: "このトピックでは、プラクティス マネージャー Power BI コンテンツの内容について説明します。 コンテンツに含まれているレポートにアクセスする方法を説明し、コンテンツを作成するために使用するデータ モデルおよびエンティティについての情報を提供します。"
 author: KimANelson
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,10 +17,10 @@ ms.author: knelson
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 3462ef1bbde9a98ac6a7bc9a5c54e58ff98559c8
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: 836997f9f5b146ff48252c3f06153791ec1aabed
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -39,7 +39,7 @@ ms.lasthandoff: 11/03/2017
 コンテンツ内のすべての金額はシステム通貨で表示されます。 システム通貨は、[**システム パラメーター**] ページで設定できます。
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI コンテンツへのアクセス
-Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (2017 年 7 月) を使用している場合、[**プラクティス マネージャー**] Power BI コンテンツは [**プロジェクト管理**] ワークスペースで表示されます。
+**プラクティス マネージャー** Power BI コンテンツが**プロジェクト管理**ワークスペースで表示されます。
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Power BI コンテンツに含まれるレポート
 

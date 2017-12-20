@@ -3,7 +3,7 @@ title: "消費要求の作成"
 description: "この手順では、要求作成のプロセスを説明します。"
 author: mkirknel
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 11/03/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 55ef4b1757a6f3c28c8575412d66488fda8608a5
+ms.sourcegitcommit: 7d8ca4e7eedea140f32e264c205b243027a06d03
+ms.openlocfilehash: d1ea95d0bc283297fcedaee730e1829850f07998
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 11/20/2017
 
 ---
 # <a name="create-a-requisition-for-consumption"></a>消費要求の作成
@@ -87,9 +87,9 @@ ms.lasthandoff: 11/03/2017
 2. [金額の配分] をクリックします。
     * このプロセスは、2 つの勘定間の最初の行の原価を配分する方法を示します。 これは、要求のレビュー後にも実行できます。  
 3. [分割] をクリックして、新しい配分ラインを作成します。
-4. [勘定科目] フィールドで、原価の一部を取得する最初のコスト センターを選択します。
+4. [勘定科目] フィールドで、原価の一部を取得する最初の原価部門を選択します。
 5. 他の配分ラインを選択します。
-6. [勘定科目] フィールドで、他のコスト センターを指定します。
+6. [勘定科目] フィールドで、他の原価部門を指定します。
 7. [均等な配分] をクリックします。
 8. ページを閉じます。
 

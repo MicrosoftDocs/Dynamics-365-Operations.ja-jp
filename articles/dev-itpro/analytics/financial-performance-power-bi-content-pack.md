@@ -3,7 +3,7 @@ title: "財務パフォーマンス Power BI コンテンツ"
 description: "このトピックでは、財務パフォーマンス Power BI コンテンツについて説明します。 含まれているダッシュボードおよびレポートについて説明し、コンテンツを作成するために使用したデータモデルとエンティティに関する情報を提供します。"
 author: kweekley
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f111698315cd42c0c1c0d470b94688b548375bee
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: 3638f5acf6a05ec419dc4308e861d95f0d7b2cea
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -38,7 +38,7 @@ ms.lasthandoff: 11/03/2017
 ### <a name="available-from-lcs"></a>LCS から使用できます。
 LCS から使用できる**財務パフォーマンス** Power BI コンテンツは、次のバージョンがサポートされています。
 
-- Microsoft Dynamics 365 for Finance and Operations Enterprise Edition (2017 年 7 月)
+- Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition バージョン
 - Microsoft Dynamics 365 for Operations バージョン 1611 
 
 LCS の共有資産ライブラリに Power BI コンテンツがあります。 コンテンツパックのダウンロード方法および組織で実装する方法の詳細については、「[Microsoft およびパートナーからの LCS での Power BI コンテンツ](power-bi-content-microsoft-partners.md)」を参照してください。 Power BI コンテンツの実装方法を示すデモを視聴するには、「[Microsoft の Power BI コンテンツおよび Dynamics Lifecycle Services のパートナー](https://mix.office.com/watch/9puyb1b2xs1w)」の Office Mix を参照してください。

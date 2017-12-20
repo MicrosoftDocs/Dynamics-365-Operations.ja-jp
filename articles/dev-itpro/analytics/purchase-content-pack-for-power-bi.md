@@ -3,7 +3,7 @@ title: "購買先支出分析 Power BI コンテンツ"
 description: "このトピックでは、購買と支出の分析 Power BI コンテンツの内容について説明します。 コンテンツに含まれているレポートにアクセスする方法を説明し、コンテンツを作成するために使用するデータ モデルおよびエンティティについての情報を提供します。"
 author: FrankDahl
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: fdahl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 6485f36802fc4e327e223f47d65c4bdca11c1609
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: f38f82b4275599a6b958c495f32b72778b400024
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -41,7 +41,7 @@ ms.lasthandoff: 11/03/2017
 コンテンツは購買トランザクション データを使用して、会社全体の購買数の集計ビュー、仕入先および製品の購買先支出の内訳の両方を提供します。 レポートでは時間経過に伴う購買支出の変化が強調表示されています。 そのため、このレポートは、個々の仕入先や製品の積極的および消極的な支出動向を管理者に警告するために使用することができます。 また、チャートは、様々な調達カテゴリおよび仕入先グループの購買支出を示します。 それゆえ、カテゴリおよび地域マネージャーは、チャートを使用して支出行動の変化を識別することができます。
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI コンテンツへのアクセス
-Microsoft Dynamics 365 for Finance and Operations、Enterprise edition (2017 年 7 月) を使用している場合は、[**購買支出の分析**] Power BI コンテンツは、[**購買支出の分析**]ページ ([**調達**] > [**照会およびレポート**] > [**購買パフォーマンスの分析**] > [**購買支出の分析**]) に表示されます。 
+**購買と支出の分析** Power BI コンテンツは**購買と支出の分析**ページ (**調達** > **照会およびレポート** > **購買パフォーマンスの分析** > **購買と支出の分析**) に表示されます。 
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Power BI コンテンツに含まれるメトリックス
 [**購買と支出の分析**] Power BI コンテンツには、一連のメトリックスで構成されるレポートが含まれます。 これらのメトリックスはグラフ、タイル、表として視覚化されます。 次の表は、視覚エフェクトの概要を示します。
