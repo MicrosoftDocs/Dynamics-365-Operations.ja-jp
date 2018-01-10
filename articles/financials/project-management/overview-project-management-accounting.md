@@ -3,7 +3,7 @@ title: "プロジェクト管理および会計"
 description: "プロジェクト管理および会計機能はサービスの提供、製品の生産、または成果の実現のために、複数の業界で使用できます。"
 author: KimANelson
 manager: AnnBe
-ms.date: 11/03/2017
+ms.date: 01/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
