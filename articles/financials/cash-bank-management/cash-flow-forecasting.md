@@ -3,7 +3,7 @@ title: "キャッシュ フロー予測"
 description: "このトピックでは、キャッシュ フロー予測プロセスの概要を示します。 また、キャッシュ フロー予測がシステムの他のモジュールと統合されている方法についても説明します。"
 author: saraschi
 manager: AnnBe
-ms.date: 05/15/2017
+ms.date: 01/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

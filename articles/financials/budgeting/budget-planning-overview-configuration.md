@@ -3,7 +3,7 @@ title: "予算計画の概要"
 description: "この記事では予算計画を紹介し、予算計画のコンフィギュレーションと予算計画プロセスの設定に役立つ情報が含まれています。"
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

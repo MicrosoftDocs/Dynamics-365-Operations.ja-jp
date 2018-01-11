@@ -3,7 +3,7 @@ title: "予算管理の概要"
 description: "この記事は、予算管理を紹介し、財源を管理できるように、Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition の予算管理をコンフィギュレーションするのに役立つ情報を提供します。"
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

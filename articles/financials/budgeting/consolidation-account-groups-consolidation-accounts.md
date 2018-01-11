@@ -3,7 +3,7 @@ title: "連結勘定グループおよび追加連結勘定"
 description: "このトピックでは、連結勘定グループおよび追加連結勘定に関する情報、および Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition での使用方法を説明します。"
 author: aprilolson
 manager: AnnBe
-ms.date: 08/01/2017
+ms.date: 01/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
