@@ -3,13 +3,13 @@ title: "財務諸表の表示"
 description: "この記事では、Microsoft Dynamics 365 for Finance and Operations、Enterprise edition で財務報告書を表示、および検討する方法について説明します。 外観とを含まれるデータを変更するために、財務報告書に適用できるさまざまなオプションに関する情報が含まれています。"
 author: kweekley
 manager: AnnBe
-ms.date: 06/08/2017
+ms.date: 01/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
 ms.custom: 10334
 ms.assetid: d20f435f-fb65-4068-ab09-7efc7be683a6
