@@ -3,7 +3,7 @@ title: "顧客請求書の作成"
 description: "**販売注文の顧客請求書**は、売上に関連し、組織が顧客に提供する請求書です。"
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 10/26/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
