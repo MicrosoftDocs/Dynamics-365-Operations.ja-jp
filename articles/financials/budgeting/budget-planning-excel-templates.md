@@ -3,7 +3,7 @@ title: "Excel 用予算計画テンプレート"
 description: "このトピックでは、予算計画で使用できる Microsoft Excel テンプレートを作成する方法について説明します。"
 author: ryansandness
 manager: AnnBe
-ms.date: 07/27/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

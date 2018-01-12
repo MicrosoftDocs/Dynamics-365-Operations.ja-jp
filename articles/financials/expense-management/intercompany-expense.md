@@ -3,7 +3,7 @@ title: "会社間経費"
 description: "組織内の 1 つの法人で雇用されている作業者は、同じ組織の別の法人の作業を実行する場合があります。 この場合、会社間経費機能を使用して、作業が実行された法人に作業者の経費を割り当てることができます。"
 author: saraschi2
 manager: AnnBe
-ms.date: 09/19/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

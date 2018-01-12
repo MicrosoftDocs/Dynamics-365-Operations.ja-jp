@@ -3,7 +3,7 @@ title: "受取手形の設定"
 description: "このトピックでは、為替手形を設定するための手順を説明します。"
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/22/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

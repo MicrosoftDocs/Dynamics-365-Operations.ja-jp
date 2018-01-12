@@ -3,7 +3,7 @@ title: "経費管理パラメーター"
 description: "次のパラメーターでは、経費管理の動作を管理します。"
 author: KimANelson
 manager: AnnBe
-ms.date: 06/23/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

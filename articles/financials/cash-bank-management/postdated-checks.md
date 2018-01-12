@@ -3,7 +3,7 @@ title: "先日付小切手"
 description: "この記事では、Microsoft Dynamics 365 for Finance and Operations、Enterprise エディションの先日付小切手のサポートについて説明します。 先日付小切手とは、将来の日付で支払を履行または受け取るために発行される小切手です。 したがって、小切手は、特定の日付まで清算できません。"
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

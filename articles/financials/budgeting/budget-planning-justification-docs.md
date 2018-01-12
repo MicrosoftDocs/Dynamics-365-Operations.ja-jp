@@ -3,7 +3,7 @@ title: "予算計画の妥当性ドキュメント"
 description: "妥当性ドキュメントは、予算を要求する人物に対して特定の予算が必要な理由の記述を提供します。"
 author: ryansandness
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "固定資産管理ワークスペース"
 description: "このトピックでは、固定資産管理ワークスペースに関する情報を示します。 このワークスペースでは、システムに入力されている固定資産に関連する情報が表示されます。 これには、概要ビューと分析ビューが含まれます。"
 author: saraschi
 manager: AnnBe
-ms.date: 10/27/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

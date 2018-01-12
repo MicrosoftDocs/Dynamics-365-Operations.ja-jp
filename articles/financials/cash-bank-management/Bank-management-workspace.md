@@ -3,7 +3,7 @@ title: "銀行管理ワークスペース"
 description: "このトピックでは、銀行管理ワークスペースに関する情報を示します。 このワークスペースは、会社の銀行口座に関連する情報を表示し、概要ビューと分析ページが含まれます。 概要ビューでは、概要タイル、銀行口座情報、残高チャート、および関連情報を表示します。 分析ページは、Microsoft Power BI の機能を使用して、銀行口座残高に関連付けられているビジュアルを表示します。"
 author: saraschi2
 manager: AnnBe
-ms.date: 01/18/2018
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
