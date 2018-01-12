@@ -3,7 +3,7 @@ title: "Excel 用予算計画テンプレート"
 description: "このトピックでは、予算計画で使用できる Microsoft Excel テンプレートを作成する方法について説明します。"
 author: ryansandness
 manager: AnnBe
-ms.date: 07/27/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: ryansand
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 96df6bbfe5c9e158b616230c2b061762a5edda08
+ms.sourcegitcommit: 63bf043124797b328116fd7951913eaeda6ff97b
+ms.openlocfilehash: 747e57b11c13f71c672d43531255751ff273f57c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/12/2018
 
 ---
 
@@ -92,7 +92,7 @@ ms.lasthandoff: 11/03/2017
 > [!NOTE] 
 > <span data-ttu-id="35915-154">式を定義するには、式をスプレッドシートで作成し、[**デザイン**] ウィンドウにコピーします。</span><span class="sxs-lookup"><span data-stu-id="35915-154">To define the formula, create the formula in the spreadsheet, and then copy it to the **Design** window.</span></span> <span data-ttu-id="35915-155">Finance and Operations のバインドされたテーブルは、通常「AXTable1」と呼ばれます。</span><span class="sxs-lookup"><span data-stu-id="35915-155">A Finance and Operations bound table will typically be named "AXTable1".</span></span> <span data-ttu-id="35915-156">たとえば、スプレッドシートの要求 Q1 : 要求 Q4 の列を集計するには、式 = AxTable1\[Request Q1\]+AxTable1\[Request Q2\]+AxTable1\[Request Q3\]+AxTable1\[Request Q4\] となります。</span><span class="sxs-lookup"><span data-stu-id="35915-156">For example, to summarize Request Q1 : Request Q4 columns in the spreadsheet, the formula = AxTable1\[Request Q1\]+AxTable1\[Request Q2\]+AxTable1\[Request Q3\]+AxTable1\[Request Q4\].</span></span>
 
-<span data-ttu-id="35915-157">以上の手順を繰り返して、[**調整**] 列を挿入します。</span><span class="sxs-lookup"><span data-stu-id="35915-157">Repeat these steps to insert the **Adjustment** column.</span></span> <span data-ttu-id="35915-158">この列では式 = AxTable1\[Total request\]\*$I$1 を使用します。</span><span class="sxs-lookup"><span data-stu-id="35915-158">Use formula = AxTable1\[Total request\]\*$I$1 for this column.</span></span> <span data-ttu-id="35915-159">これは、セル I1 の値を取得し、[**合計要求**] 列の値をかけて、調整金額を計算します。</span><span class="sxs-lookup"><span data-stu-id="35915-159">This will take the value in cell I1 and multiply the values in the **Total request** column to calculate adjustment amounts.</span></span>
+<span data-ttu-id="35915-157">以上の手順を繰り返して、[**調整**] 列を挿入します。</span><span class="sxs-lookup"><span data-stu-id="35915-157">Repeat these steps to insert the **Adjustment** column.</span></span> <span data-ttu-id="35915-158">この列では式 = AxTable1\[Total request\]\\*$I$1 を使用します。</span><span class="sxs-lookup"><span data-stu-id="35915-158">Use formula = AxTable1\[Total request\]\\*$I$1 for this column.</span></span> <span data-ttu-id="35915-159">これは、セル I1 の値を取得し、[**合計要求**] 列の値をかけて、調整金額を計算します。</span><span class="sxs-lookup"><span data-stu-id="35915-159">This will take the value in cell I1 and multiply the values in the **Total request** column to calculate adjustment amounts.</span></span>
 
 <span data-ttu-id="35915-160">Excel ファイルを保存して閉じます。</span><span class="sxs-lookup"><span data-stu-id="35915-160">Save and close the Excel file.</span></span> <span data-ttu-id="35915-161">Finance and Operations に戻り、[**レイアウト**] で、[**テンプレート] &gt; [アップロード**] をクリックし、予算計画に使用する保存した Excel テンプレートをアップロードします。</span><span class="sxs-lookup"><span data-stu-id="35915-161">Return to Finance and Operations, and in **Layouts**, click **Template &gt; Upload** to upload the saved Excel template to be used for the budget plan.</span></span> 
 
