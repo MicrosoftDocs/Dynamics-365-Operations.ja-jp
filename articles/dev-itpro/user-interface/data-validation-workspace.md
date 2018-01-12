@@ -3,7 +3,7 @@ title: "データ検証ワークスペース"
 description: "データ検証チェックリスト ワークスペースを使用して、会社、エリア、人員に対してデータ検証プロセスの追跡ができます。 チェックリストは新規実装中、更新後、または移行後に使用できます。"
 author: bking
 manager: AnnBe
-ms.date: 05/11/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

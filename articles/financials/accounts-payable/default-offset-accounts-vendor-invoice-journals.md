@@ -3,7 +3,7 @@ title: "仕入先請求仕訳帳および請求書承認仕訳帳の既定の相
 description: "このトピックは、請求仕訳の既定の勘定を割り当てる場所を決定するのに役立ちます。"
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 10/25/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
