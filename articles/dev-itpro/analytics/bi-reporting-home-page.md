@@ -3,7 +3,7 @@ title: "インテリジェンス"
 description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations Enterprise Edition で使用可能なビジネス インテリジェンスおよびレポート ツールの詳細を学ぶためのリソースを紹介します。"
 author: sericks007
 manager: AnnBe
-ms.date: 09/07/2017
+ms.date: 12/18/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 335d38e0fb5e47136b87bac5bfa9d2fd2923def6
+ms.sourcegitcommit: aac6439bb54b3b9cab066b06c01763e880efef8e
+ms.openlocfilehash: 2477062ad324f91ff07f1c79cfccd4389b37badf
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/18/2017
 
 ---
 
@@ -48,7 +48,6 @@ Finance and Operations は、アプリケーション ワークスペースに�
  - [ワークスペースの埋め込み Power BI](embed-power-bi-workspaces.md)
  - [Power BI Embedded 統合](power-bi-embedded-integration.md)
  - [Power BI Embedded を使用したワークスペースへの分析の追加](add-analytics-tab-workspaces.md)
- - [Power BI で分析アプリケーションを発行する](publish-apps-powerbi.md)
  - [Power BI Embedded を使用して分析ワークスペースおよびレポートをセキュリティで保護](secure-analytical-workspaces.md)
  - [Finance and Operations 向けの Power BI コンテンツ](power-bi-home-page.md)
 
@@ -59,7 +58,7 @@ Finance and Operations は、アプリケーション ワークスペースに�
 
 詳細については、次のトピックを参照してください。
 
-- [ドキュメントの Reporting Services の概要](document-reporting-services.md)
+- [Document Reporting Services の概要](document-reporting-services.md)
 - [Finance and Operations アプリケーションでの印刷](print-documents.md)
 - [プリンター デバイスを有効にするためにドキュメント ルーティング エージェントをインストールする](install-document-routing-agent.md)
 
@@ -86,12 +85,9 @@ Finance and Operations では、既定の主勘定カテゴリを使用した標
 - [財務諸表コンポーネント](financial-report-components.md)
 
 ## <a name="technical-reference-reports"></a>技術参照レポート
-次のレポートは、Finance and Operations 内のオブジェクトに関する参照情報を提供します。
+次のレポートにより、Finance and Operations 内のオブジェクトに関する参照情報を確認できます。
 
-- [データ エンティティの集計レポート](aggregate-data-entities-report.md)
-- [集計の測定レポート](aggregate-measurements-report.md)
 - [データ エンティティ レポート](../data-entities/data-entities-report.md)
-- [主要業績評価指標 (KPI) レポート](key-performance-indicators-report.md)
 - [ライセンス コードとコンフィギュレーション キーのレポート](../sysadmin/license-codes-configuration-keys-report.md)
 - [SQL Server Reporting Services レポートに関するレポート](SSRS-report.md)
 - [ワークフロー タイプのレポート](../../fin-and-ops/organization-administration/workflow-types-report.md)

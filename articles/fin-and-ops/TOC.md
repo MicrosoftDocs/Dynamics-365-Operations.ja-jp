@@ -17,25 +17,26 @@
 ##### [Finance and Operations (オンプレミス) の購入](get-started/purchase-on-premises.md)
 
 ### [新機能および変更された機能](get-started/whats-new-changed.md)
-#### [削除予定の機能](../dev-itpro/migration-upgrade/deprecated-features.md)
-#### [延期されたAX 2012 の機能](get-started/ax-2012-features-not-implemented-but-not-deprecated.md)
+#### [削除済みまたは推奨されない機能](../dev-itpro/migration-upgrade/deprecated-features.md)
+#### [延期された AX 2012 の機能](get-started/ax-2012-features-not-implemented-but-not-deprecated.md)
 #### [オンプレミス配置で実装されていない機能](get-started/features-not-implemented-on-prem.md)
-#### [ライフサイクル ポリシー](../dev-itpro/migration-upgrade/versions-update-policy.md)
-#### [プラットフォーム更新プログラム 12 (2017 年 11 月)](get-started/whats-new-platform-update-12.md)
-#### [プラットフォーム update 11 (2017 年 10 月)](get-started/whats-new-platform-update-11.md)
-#### [プラットフォーム更新プログラム 10 (2017 年 8 月)](get-started/whats-new-platform-update-10.md)
+#### [リリースおよびライフサイクルのポリシー](../dev-itpro/migration-upgrade/versions-update-policy.md)
+#### [Finance and Operations, Enterprise edition 7.3](get-started/whats-new-application-7.3-update.md)
+#### [Platform 更新 12 (2017 年 11 月)](get-started/whats-new-platform-update-12.md)
+#### [Platform 更新 11 (2017 年 10 月)](get-started/whats-new-platform-update-11.md)
+#### [Platform 更新 10 (2017 年 8 月)](get-started/whats-new-platform-update-10.md)
 #### [Finance and Operations, Enterprise Edition (2017 年 7 月)](get-started/whats-new-application-July-2017-update.md)
-#### [プラットフォーム更新プログラム 9 (2017 年 7 月)](get-started/whats-new-platform-update-9.md)
-#### [プラットフォーム更新プログラム 8 (2017 年 6 月)](get-started/whats-new-platform-update-8.md)
-#### [プラットフォーム更新プログラム 7 (2017 年 5 月)](get-started/whats-new-platform-update-7.md)
-#### [プラットフォーム更新プログラム 6 (2017 年 4 月)](get-started/whats-new-platform-update-6.md)
-#### [プラットフォーム更新プログラム 5 (2017 年 3 月)](get-started/whats-new-platform-update-5.md)
-#### [プラットフォーム更新プログラム 4 (2017 年 2 月)](get-started/whats-new-platform-update-4.md)
+#### [Platform 更新 9 (2017 年 7 月)](get-started/whats-new-platform-update-9.md)
+#### [Platform 更新 8 (2017 年 6 月)](get-started/whats-new-platform-update-8.md)
+#### [Platform 更新 7 (2017 年 5 月)](get-started/whats-new-platform-update-7.md)
+#### [Platform 更新 6 (2017 年 4 月)](get-started/whats-new-platform-update-6.md)
+#### [Platform 更新 5 (2017 年 3 月)](get-started/whats-new-platform-update-5.md)
+#### [Platform 更新 4 (2017 年 2 月)](get-started/whats-new-platform-update-4.md)
 #### [Operations バージョン 1611 (2016 年 11 月)](get-started/whats-new-dynamics-365-operations-1611.md)
-#### [プラットフォーム更新プログラム 3 (2016 年 11 月)](get-started/whats-new-platform-update-3.md)
-#### [プラットフォーム更新プログラム 2 (2016 年 8 月)](get-started/whats-new-platform-update-2.md) 
+#### [Platform 更新 3 (2016 年 11 月)](get-started/whats-new-platform-update-3.md)
+#### [Platform 更新 2 (2016 年 8 月)](get-started/whats-new-platform-update-2.md) 
 #### [Dynamics AX アプリケーション バージョン 7.0.1 (2016 年 5 月)](get-started/whats-new-changed-application-version-7-0-1-may-2016.md)
-#### [プラットフォーム更新プログラム 1 (2016 年 5 月)](get-started/whats-new-changed-platform-version-7-1-may-2016.md)
+#### [Platform 更新 1 (2016 年 5 月)](get-started/whats-new-changed-platform-version-7-1-may-2016.md)
 #### [Dynamics AX 7.0 (2016 年 2 月)](get-started/whats-new-changed-7-0-february-2016.md)
 #### 更新されたタスク ガイド
 ##### [2016 年 11 月タスク ガイド](get-started/new-task-guides-november-2016.md)
@@ -141,7 +142,7 @@
 #### [データ管理パッケージ API](../dev-itpro/data-entities/data-management-api.md)
 #### [サービス エンドポイント](../dev-itpro/data-entities/services-home-page.md)
 ##### [サービス認証のトラブルシューティング](../dev-itpro/data-entities/troubleshoot-service-authentication.md)
-#### [OData](../dev-itpro//data-entities/odata.md)
+#### [OData](../dev-itpro/data-entities/odata.md)
 #### [顧客サービス](../dev-itpro/data-entities/custom-services.md)
 #### [定期統合](../dev-itpro/data-entities/recurring-integrations.md)
 
@@ -179,9 +180,10 @@
 ### [データ エンティティ](../dev-itpro/data-entities/data-entities.md)
 
 #### [コンフィギュレーション データ プロジェクト](../dev-itpro/data-entities/configuration-data-projects.md)
-#### [コンフィギュレーション データ パッケージ](../dev-itpro/data-entities/configuration-data-packages.md)
 #### [会社間でのコンフィギュレーション データのコピー](../dev-itpro/data-entities/copy-configuration.md)
+##### [コンフィギュレーション データ パッケージ (2017 年 7 月リリースのみ)](../dev-itpro/data-entities/configuration-data-packages.md)
 #### [コンフィギュレーション データ テンプレート](../dev-itpro/data-entities/configuration-data-templates.md)
+
 #### [エンティティの変更の追跡](../dev-itpro/data-entities/entity-change-track.md)
 
 ### 標準データ エンティティ
@@ -646,6 +648,11 @@
 ##### [負の借方と貸方の設定](../financials/localizations/apac-chn-negative-debits-credits.md)
 ##### [中国の作業ルールを使用したユーザー操作ログ](../financials/localizations/tasks/user-operation-log-china-working-rule.md)
 ##### [VAT 顧客請求書のよく寄せられる質問](../financials/localizations/apac-chn-tax-integration-vat-customer-invoices.md)
+
+#### インド
+##### [税エンジンの概要](../financials/general-ledger/tax-engine.md)
+##### [税エンジンの統合](../financials/general-ledger/tax-engine-integration.md)
+##### [税エンジンの拡張](../financials/general-ledger/extend-tax-engine-configurations.md)
 
 #### 日本
 ##### [固定資産の取得と政府助成金の申請](../financials/localizations/tasks/acquire-fixed-asset-claim-government-grant-subsidy.md)
@@ -1214,9 +1221,10 @@
 #### [要員指標](../dev-itpro/analytics/workforce-analysis-power-bi-content-pack.md)
 
 ### ドキュメントのレポーティングおよび印刷
-#### [ドキュメントの Reporting Services の概要](../dev-itpro/analytics/document-reporting-services.md)
-#### [オンプレミスの配置の SSRS のコンフィギュレーション](../dev-itpro/analytics/configure-ssrs-on-premises.md)
-#### [印刷](../dev-itpro/analytics/print-documents.md)
+#### [Document Reporting Services の概要](../dev-itpro/analytics/document-reporting-services.md)
+#### [オンプレミス環境でのネットワーク プリンター デバイスのインストール](../dev-itpro/analytics/install-network-printer-onprem.md)
+#### [オンプレミス配置の SSRS のコンフィギュレーション](../dev-itpro/analytics/configure-ssrs-on-premises.md)
+#### [印刷中](../dev-itpro/analytics/print-documents.md)
 ##### [プリンター デバイスを有効にするためにドキュメント ルーティング エージェントをインストールする](../dev-itpro/analytics/install-document-routing-agent.md)
 ##### [オンプレミス配置でのドキュメントの生成、発行、および印刷機能](../dev-itpro/analytics/printing-capabilities-on-premises.md)
 ##### [ドキュメント回覧エージェントを Windows サービスとして実行する](../dev-itpro/analytics/run-document-routing-agent-as-windows-service.md)
@@ -1285,30 +1293,28 @@
 ##### [電子申告用の形式を作成するときにデータ モデルの定義を選択する](../dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md)
 ##### [電子申告用の形式の新しい基準バージョンを採用してその形式をアップグレードする](../dev-itpro/analytics/tasks/er-upgrade-format.md)
 ##### [電子申告用の Lifecycle Services にコンフィギュレーションをアップロードする](../dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md)
+##### [アプリケーション update 7.3 での電子申告フレームワーク API の変更](../dev-itpro/analytics/er-apis-app73.md)
 
-### 分析ツールおよび視覚エフェクト
+### 埋め込み型の解析ソリューション
+#### [ワークスペースの埋め込み Power BI](../dev-itpro/analytics/embed-power-bi-workspaces.md)
+#### [Power BI Embedded 統合](../dev-itpro/analytics/power-bi-embedded-integration.md)
+
+### PowerBI.com での個人用設定オプション
+#### [Power BI 統合](../dev-itpro/analytics/power-bi-integration.md)
+#### [Power BI レポートをワークスペースにピン留めする](../dev-itpro/analytics/pin-power-bi-reports.md)
+
+### ソリューションの作成および拡張のためのツール
 #### [分析、集計の測定、および KPI モデリング](../dev-itpro/analytics/analytics.md)
+#### [Power BI Desktop を使用して分析レポートを作成する](../dev-itpro/analytics/author-distribute-power-bi-reports.md)
 #### [データのモデリングと集計](../dev-itpro/analytics/model-aggregate-data.md)
 #### [集計の測定への財務分析コードの追加](../dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md)
-#### [コンテキスト BI をフォームに追加](../dev-itpro/analytics/add-contextual-bi-forms.md)
-#### [集計の測定レポート](../dev-itpro/analytics/aggregate-measurements-report.md)
-#### [データ エンティティの集計レポート](../dev-itpro/analytics/aggregate-data-entities-report.md)
-#### [主要業績評価指標 (KPI) レポート](../dev-itpro/analytics/key-performance-indicators-report.md)
-#### [Power BI 統合](../dev-itpro/analytics/power-bi-integration.md)
-#### [Power BI コンテンツへのアクセス](../dev-itpro/analytics/power-bi-content-microsoft-partners.md)
-#### [Power BI レポートとダッシュボードを作成する](../dev-itpro/analytics/create-powerbi-report-dashboard.md)
-#### [Finance and Operations のデータを使用して Power BI レポートを作成する](../dev-itpro/analytics/create-powerbi-report-data.md)
-#### [ワークスペースの Power BI 統合のコンフィギュレーション](../dev-itpro/analytics/configure-power-bi-integration.md)
-#### [Power BI Embedded 統合](../dev-itpro/analytics/power-bi-embedded-integration.md)
-#### [ワークスペースの埋め込み Power BI](../dev-itpro/analytics/embed-power-bi-workspaces.md)
 #### [Power BI Embedded を使用したワークスペースへの分析の追加](../dev-itpro/analytics/add-analytics-tab-workspaces.md)
 #### [Power BI Embedded を使用して分析ワークスペースおよびレポートをセキュリティで保護](../dev-itpro/analytics/secure-analytical-workspaces.md)
-#### [Power BI をワークスペースに追加](../dev-itpro/analytics/add-bi-workspaces.md)
-#### [Power BI レポートをワークスペースにピン留めする](../dev-itpro/analytics/pin-power-bi-reports.md)
-#### [エンティティ格納と Power BI の統合](../dev-itpro/analytics/power-bi-integration-entity-store.md)
+
+### Power ユーザー管理ツール
+#### [エンティティ格納と Power BI 統合](../dev-itpro/analytics/power-bi-integration-entity-store.md)
+#### [ワークスペースの Power BI 統合のコンフィギュレーション](../dev-itpro/analytics/configure-power-bi-integration.md)
 #### [自分のデータベースの持ち込み](../dev-itpro/analytics/export-entities-to-your-own-database.md)
-#### [Power BI Desktop を使用して分析レポートを作成する](../dev-itpro/analytics/author-distribute-power-bi-reports.md)
-#### [Power BI で分析アプリケーションを発行する](../dev-itpro/analytics/publish-apps-powerbi.md)
 
 
 ## [在庫管理](../supply-chain/inventory/inventory-home-page.md)
@@ -1362,6 +1368,7 @@
 #### [制約付き計画の生成 (タスク ガイド)](../supply-chain/master-planning/tasks/constrained-plan.md)
 #### [連産品の材料計画の作成 (タスク ガイド)](../supply-chain/master-planning/tasks/create-material-plan-co-products.md)
 #### [計画オーダーの管理](../supply-chain/master-planning/maintain-planned-orders.md)
+#### [安全在庫の処理](../supply-chain/master-planning/safety-stock-replenishment.md)
 #### [遅延の処理](../supply-chain/master-planning/delays.md)
 #### [展開の追跡](../supply-chain/master-planning/trace-explosion.md)
 #### [アクション メッセージ](../supply-chain/master-planning/action-messages.md)
@@ -1438,6 +1445,8 @@
 #### [仕入先コラボレーションの設定と管理](../supply-chain/procurement/set-up-maintain-vendor-collaboration.md)
 #### [仕入先コラボレーション ユーザーの管理](../supply-chain/procurement/manage-vendor-collaboration-users.md)
 #### [仕入先の設定](../supply-chain/procurement/set-up-vendor-accounts.md)
+#### [仕入先要求コンフィギュレーション](../supply-chain/procurement/vendor-request-configurations.md)
+#### [仕入先のオンボーディング](../supply-chain/procurement/vendor-onboarding.md)
 #### [外部仕入先との仕入先コラボレーション](../supply-chain/procurement/vendor-collaboration-work-external-vendors.md)
 #### [顧客との仕入先コラボレーション](../supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations.md)
 #### [パンチアウト eProcurement の外部カタログの設定](../supply-chain/procurement/set-up-external-catalog-for-punchout.md)
@@ -1550,7 +1559,9 @@
 #### 生産ジョブの運営
 ##### [製造オーダーの作成](../supply-chain/production-control/create-production-orders.md)
 ##### [製造オーダーのリリース](../supply-chain/production-control/release-production-orders.md)
-##### [製造オーダー ステータスを逆行させる](../supply-chain/production-control/reverse-production-order-status.md)
+##### [材料の例外の視覚化](../supply-chain/production-control/improved-visibility-into-material-exceptions.md)
+##### [BOM およびフォーミュラ明細行を倉庫にリリース](../supply-chain/production-control/releasing-bom-and-formula-lines-to-warehouse.md)
+#####[製造オーダー ステータスを逆行させる](../supply-chain/production-control/reverse-production-order-status.md)
 ##### [モバイル デバイスを使用して材料消費を登録する](../supply-chain/production-control/register-material-consumption-hand-held-device.md)
 ##### [消費ルールを使用して原材料消費を管理する](../supply-chain/production-control/flushing-principles.md) 
 ##### [製造オーダーから出荷ドックへのクロスドッキング](../supply-chain/production-control/cross-docking-opportunities.md)
@@ -1561,7 +1572,7 @@
 ##### [製造実行での登録](../supply-chain/production-control/registration-manufacturing-execution.md)
 ##### [生産フィードバック](../supply-chain/production-control/production-feedback.md)
 ##### [時刻と出勤の登録](../supply-chain/production-control/time-attendance-registrations.md)
-##### [時刻と出勤の休暇登録](..//supply-chain/production-control/absence-registration-in-time-and-attendance.md)
+##### [時刻と出勤の休暇登録](../supply-chain/production-control/absence-registration-in-time-and-attendance.md)
 #### 製造における財務の管理
 ##### [ジョブ バンドル内のジョブへの時間割り当て](../supply-chain/production-control/allocate-time-jobs-job-bundle.md)
 ##### [材料消費の計算](../supply-chain/production-control/consumption.md)
@@ -1686,6 +1697,7 @@
 #### [製品マスターの作成 (タスク ガイド)](../supply-chain/pim/tasks/create-product-master.md)
 #### [事前定義された製品バリアントの作成 (タスク ガイド)](../supply-chain/pim/tasks/create-predefined-product-variants.md)
 #### [1 つの会社に対するリリース済製品の作成 (タスク ガイド)](../supply-chain/pim/tasks/create-released-product-single-company.md)
+#### [製品ライフサイクルの状態](../supply-chain/pim/product-lifecycle.md)
 #### [製品のバーコードの作成 (タスク ガイド)](../supply-chain/pim/tasks/create-bar-code-product.md)
 #### [製品の GTIN コードの入力 (タスク ガイド)](../supply-chain/pim/tasks/enter-gtin-code-product.md)
 #### [製品のバッチ属性の作成 (タスク ガイド)](../supply-chain/pim/tasks/create-batch-attributes-product.md)
@@ -1800,7 +1812,8 @@
 ### [品目の配送制約の設定](../supply-chain/transportation/tasks/set-up-transportation-constraints-item.md)
 
 ## [倉庫管理](../supply-chain/warehousing/warehouse-management-overview.md)
-### [倉庫のコンフィギュレーション](../supply-chain/warehousing/warehouse-configuration.md) 
+### [倉庫のコンフィギュレーション](../supply-chain/warehousing/warehouse-configuration.md)
+#### [倉庫コンフィギュレーション テンプレートを使用した倉庫の設定](../supply-chain/inventory/warehouse-template.md)
 #### [作業テンプレートと場所ディレクティブを使用した管理作業](../supply-chain/warehousing/control-warehouse-location-directives.md)
 #### [測定単位と在庫ポリシー](../supply-chain/warehousing/unit-measure-stocking-policies.md)
 #### [倉庫 Power BI コンテンツ](../dev-itpro/analytics/warehouse-power-bi-content.md)

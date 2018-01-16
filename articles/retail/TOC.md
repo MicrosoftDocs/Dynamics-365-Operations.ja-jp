@@ -41,9 +41,10 @@
 ## [小売チャネルの定義](define-maintain-retail-channels.md)
 ## [オンライン ストアの概要](online-stores.md)
 ## [Retail ハードウェア ステーションのコンフィギュレーションとインストール](retail-hardware-station-configuration-installation.md)
-## [小売タイムと出勤](retail-time-attendance.md)
+## [Retail の勤務時間および勤怠](retail-time-attendance.md)
 
-# Modern 販売時点管理 (MPOS) とクラウド POS
+# Modern POS (MPOS) および Cloud POS
+## [Modern POS か Cloud POS かの選択](MPOS-or-CPOS.md)
 ## [POS 操作](POS-operations.md)
 ## [MPOS/CPOS のデモ データ画面レイアウト](demo-data.md)
 ## ハードウェア周辺機器
@@ -70,12 +71,17 @@
 ## [別の店舗からの注文の出荷](charge-send.md)
 ## デバイスの有効化
 ### [MPOS の構成とインストール](retail-modern-pos-device-activation.md)
-### [クラウド POS および MPOS の拡張ログオンの設定](extended-logon.md)
+### [Cloud POS および MPOS の拡張ログオンの設定](extended-logon.md)
 ### [本社からの Retail アカウントとデバイスの管理](set-up-activation-accounts-validate-devices-hq.md)
 ## レシート
 ### [レシート テンプレートの設定](receipt-templates-printing.md) 
 ### [MPOS からの電子メール レシートの送信](email-receipts.md)
 ## [POS のタスク レコーダーとヘルプ](task-recorder-retail-pos.md)
+
+# 注文のフルフィルメント
+## [店舗注文フルフィルメントの概要](Order-fulfillment-overview.md)
+## [店舗でのフルフィルメントの設定](Order-fulfillment-POS-setup.md)
+## [販売時点管理の通知の有効化](Notifications-POS.md)
 
 # 監視と分析
 ## [販売と利益幅のパフォーマンスの監視](monitor-sales-margin-performance.md)
@@ -184,7 +190,7 @@
 ### [Retail Modern POS のコンフィギュレーションとインストール](retail-modern-pos-device-activation.md)
 ### [本社からの Retail アカウントとデバイスの管理](set-up-activation-accounts-validate-devices-hq.md)
 ### [Retail POS デバイスのライセンス認証](dev-itpro/retail-device-activation.md)
-### [Retail クラウド POS のセキュリティ保護](dev-itpro/secure-retail-cloud-pos.md)
+### [Retail Cloud POS のセキュリティ保護](dev-itpro/secure-retail-cloud-pos.md)
 ### [Retail Hardware Station のコンフィギュレーションとインストール](retail-hardware-station-configuration-installation.md)
 ### [Retail セルフサービス コンポーネントの一括配置](dev-itpro/retail-mass-deployment.md)
 ### [診断とトラブルシューティングの Retail コンポーネント イベント](dev-itpro/retail-component-events-diagnostics-troubleshooting.md)
@@ -205,7 +211,7 @@
 ### [Retail POS 画面レイアウト](pos-screen-layouts.md)
 ### [POS のレイアウト デザイナーのインストール](install-pos-layout-designer.md)
 ### [オフライン モード用の MPOS のコンフィギュレーション](dev-itpro/retail-modern-pos-offline.md)
-### [MPOS およびクラウド POS のトリガー拡張機能](dev-itpro/modern-pos-trigger-extensibility.md)
+### [MPOS および Cloud POS のトリガー拡張機能](dev-itpro/modern-pos-trigger-extensibility.md)
 ### [POS ビューへのカスタム コントロールの追加](dev-itpro/pos-custom-control.md)
 ### [POS 支払拡張機能](dev-itpro/pos-payment-extension.md)
 ### [外部ギフト カードのサポート](dev-itpro/gift-card.md)
@@ -258,8 +264,10 @@
 ### [Retail Modern POS トランザクション ページへのカスタム コントロールの追加](dev-itpro/pos-custom-transaction.md)
 ### [POS トランザクション グリッドへのカスタム列の追加](dev-itpro/pos-custom-transaction-column.md)
 ### [POS 拡張機能からの POS API または操作の呼び出し](dev-itpro/pos-api-extension.md)
-### [既存の POS ビューの拡張によるカスタム列およびアプリ バー ボタンの追加](dev-itpro/pos-view-extension.md)
 ### [Retail Modern POS のトリガーと印刷](dev-itpro/pos-trigger-printing.md)
+### [Retail Modern POS 非画面デザイナー ベース ビューへのカスタム コントロールの追加](dev-itpro/pos-control-non-screen.md)
+### [POS および E コマース用 Retail プロキシの生成](dev-itpro/pos-generate-retail-proxy.md)
+### [クラウド ホストのデベロップメント ボックスで作業している Retail 開発者向けのコンフィギュレーション手順](dev-itpro/cloud-dev-box.md)
 
 ## Commerce Runtime
 ### [ロイヤルティの拡張機能](dev-itpro/retail-sdk/loyalty-extension-sample.md)
