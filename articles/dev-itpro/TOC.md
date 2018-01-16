@@ -2,6 +2,7 @@
 # [クラウド配置のシステム要件](../fin-and-ops/get-started/system-requirements.md)
 # [オンプレミス配置のシステム要件](../fin-and-ops/get-started/system-requirements-on-prem.md)
 # [デモ データ](../fin-and-ops/get-started/demo-data.md)
+## [パッケージ付きデモ データの生成](data-entities/generate-demo-data-packages.md)
 
 
 # [Visual Studio を使用して開発およびカスタマイズ](dev-tools/developer-home-page.md)
@@ -362,6 +363,7 @@
 ### [OData](data-entities/odata.md)
 ### [顧客サービス](data-entities/custom-services.md)
 ### [定期統合](data-entities/recurring-integrations.md)
+### [サービス付きサード パーティ サービス テスト ユーティリティの使用](data-entities/third-party-service-test.md)
 
 ## 統合のための開発
 ### [データ エンティティを使用したデータの統合](data-entities/data-management-integration-data-entity.md)
@@ -396,6 +398,7 @@
 ### [コンフィギュレーション データ パッケージ](data-entities/configuration-data-packages.md)
 ### [会社間でのコンフィギュレーション データのコピー](data-entities/copy-configuration.md)
 ### [コンフィギュレーション データ テンプレート](data-entities/configuration-data-templates.md)
+### [複数のワークシート付きデータ テンプレート](data-entities/excel-template-multiple.md)
 ### [エンティティの変更の追跡](data-entities/entity-change-track.md)
 
 ## 標準データ エンティティ
@@ -497,17 +500,20 @@
 
 ## クラウド配置
 ### [Azure リソース マネージャーの研修](deployment/arm-onboarding.md)
-### [Azure ExpressRoute and Dynamics 365 for Finance and Operations Enterprise Edition](deployment/expressroute.md)
+### [Azure ExpressRoute および Dynamics 365 for Finance and Operations, Enterprise edition](deployment/expressroute.md)
 
 ## [オンプレミス配置](deployment/on-premises-deployment-landing-page.md)
 ### [オンプレミスの概要](deployment/on-premises-overview.md)
+### [オンプレミス配置の計画](deployment/plan-onprem-deployment.md)
 ### [ハードウェアのサイズ](../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md)
 ### [オンプレミスのプロジェクトを作成する](lifecycle-services/lbd-create-lcs-on-prem-project.md)
 ### [オンプレミス環境の設定と配置](deployment/setup-deploy-on-premises-environments.md)
 ### [カスタム モデルの開発とオンプレミス環境への配置](deployment/develop-deploy-custom-models-on-premises.md)
 ### [オンプレミス配置への更新プログラムの適用](deployment/apply-updates-on-premises.md)
 ### [オンプレミス配置の再配置](deployment/redeploy-on-prem.md)
-### [Dynamics 365 for Finance and Operations, Enterprise Edition (オンプレミス) のトラブルシューティング](deployment/troubleshoot-on-prem.md)
+### [ローカル エージェントの更新](lifecycle-services/update-local-agent.md)
+### [環境の再構成](lifecycle-services/reconfigure-environment.md)
+### [Dynamics 365 for Finance and Operations, Enterprise edition (オンプレミス) のトラブルシューティング](deployment/troubleshoot-on-prem.md)
 
 ## カスタム コードの配置
 ### [配置可能パッケージの作成](deployment/create-apply-deployable-package.md)
