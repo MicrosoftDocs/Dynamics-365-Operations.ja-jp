@@ -3,7 +3,7 @@ title: "生産パフォーマンス Power BI コンテンツ"
 description: "このトピックでは、生産パフォーマンス Power BI コンテンツに何が含まれているのか説明します。 Power BI レポートにアクセスする方法を説明し、コンテンツを作成するために使用したデータ モデルおよびエンティティについての情報を提供します。"
 author: AndersGirke
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -16,10 +16,10 @@ ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
-ms.openlocfilehash: 898a1a513850024fd0164955bdd204ee4b08c632
+ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
+ms.openlocfilehash: 592514e9ef8b0ec1e3bacda0f26d5991da88449e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/19/2017
 
 ---
 
@@ -27,26 +27,26 @@ ms.lasthandoff: 12/01/2017
 
 [!include[banner](../includes/banner.md)]
 
-このトピックでは、[**生産パフォーマンス**] Microsoft Power BI コンテンツに何が含まれているのか説明します。 Power BI レポートにアクセスする方法を説明し、コンテンツを作成するために使用したデータ モデルおよびエンティティについての情報を提供します。
+このトピックでは、[生産パフォーマンス] Microsoft Power BI コンテンツに何が含まれているのか説明します。 Power BI レポートにアクセスする方法を説明し、コンテンツを作成するために使用したデータ モデルおよびエンティティについての情報を提供します。
 
 ## <a name="overview"></a>概要
 
-[**生産パフォーマンス**] Power BI コンテンツは、生産マネージャまたは組織の生産管理責任者のためのものです。
+[生産パフォーマンス] Power BI コンテンツは、生産マネージャまたは組織の生産管理責任者のためのものです。
 
 含まれるレポートを使用すると、Power BI を使用して、適時の実行、品質、およびコストに関する製造工程のパフォーマンスを監視できます。 このレポートでは、製造オーダーおよびバッチ オーダーのトランザクション データが使用し、会社全体の生産指標の集計ビューおよび製品とリソース別の指標の内訳の両方を提供します。
 
 Power BI コンテンツは、期限までに生産を完了するための組織の能力が強調表示されます。 将来のパフォーマンスは、生産計画に基づいて予測されます。 包括的なレポートは、生産に起因する製品の欠陥、およびリソースや工程の欠陥率の詳細な洞察を提供します。
 
-この Power BI コンテンツを使用して、製造差異を分析することもできます。 製造差異は、見積原価および実現原価の差額として計算されます。 製造差異は、製造オーダーまたはバッチ オーダーが [**終了**] ステータスに達した時点で計算されます。
+この Power BI コンテンツを使用して、製造差異を分析することもできます。 製造差異は、見積原価および実現原価の差額として計算されます。 製造差異は、製造オーダーまたはバッチ オーダーが [終了] ステータスに達した時点で計算されます。
 
-[**生産パフォーマンス**] Power BI コンテンツには、製造オーダーおよびバッチ オーダーからのデータが含まれます。 レポートには、かんばん生産に関連するデータは含まれていません。
+[生産パフォーマンス] Power BI コンテンツには、製造オーダーおよびバッチ オーダーからのデータが含まれます。 レポートには、かんばん生産に関連するデータは含まれていません。
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI コンテンツへのアクセス
 **生産パフォーマンス** Power BI コンテンツは、**生産パフォーマンス** ページ (**生産管理** > **照会およびレポート** > **生産パフォーマンスの分析** > **生産パフォーマンス**) に表示されます。 
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Power BI コンテンツに含まれるメトリックス
 
-[**生産パフォーマンス**] Power BI コンテンツには、レポート ページのセットが含まれています。 各ページは、グラフ、タイル、テーブルとして視覚化される一連のメトリックスで構成されています。
+[生産パフォーマンス] Power BI コンテンツには、レポート ページのセットが含まれています。 各ページは、グラフ、タイル、テーブルとして視覚化される一連のメトリックスで構成されています。
 
 次の表は、含まれている視覚化の概要を示しています。
 
@@ -59,19 +59,10 @@ Power BI コンテンツは、期限までに生産を完了するための組�
 | リソースによる欠陥トレンド                  | 生産処理による欠陥レート (ppm) | |
 | 作業オーダー原価計算の製造の差異 | <ul><li>日付および原価グループ タイプによる製造差異</li><li>サイトおよび原価グループ タイプによる製造差異</li><li>好ましくない製造差異の上位 10 製品</li><li>リソースによる好ましくない製造差異の上位 10 製品</li></ul> | <ul><li>実現原価</li><li>製造差異</li><li>製造差異 (%)</li></ul> |
 
-## <a name="extending-the-power-bi-content"></a>Power BI コンテンツの拡張
-Microsoft Dynamics Lifecycle Services (LCS) で利用できるコンテンツ パックを使用すると、Microsoft Dynamics 365 にログインしない人々に関する優れた分析ができます。 ほかのレポートまたはビジュアルを含めるよう、これらのコンテンツ パックを変更できます。次いで分析のためにコンテンツ パックを Power BI.com テナントに発行します。
-
-LCS の共有資産ライブラリに [**生産マネージャー**] Power BI コンテンツがあります。 コンテンツのダウンロード方法および組織で実装する方法の詳細については、「[Microsoft およびパートナーからの LCS での Power BI コンテンツ](power-bi-content-microsoft-partners.md)」を参照してください。 Power BI コンテンツの実装方法を示すデモを視聴するには、「[Microsoft の Power BI コンテンツおよび Dynamics Lifecycle Services のパートナー](https://mix.office.com/watch/9puyb1b2xs1w)」の Office Mix を参照してください。
-
-ご使用のバージョンの Microsoft Dynamics 365 に適用する [**生産マネージャー**] コンテンツをダウンロードしてください。
-
-> [!NOTE]
-> Microsoft Dynamics 365 for Operations バージョン 1611 を使用している場合、この Power BI コンテンツの前提条件はサポート技術情報 4011327 です。 LCS にサインインすると、https://fix.lcs.dynamics.com/issue/results/?q=kb4011327 でサポート技術情報にアクセスできます。
 
 ## <a name="understanding-the-data-model-and-entities"></a>データ モデルおよびエンティティの理解
 
-次のデータは、[**生産パフォーマンス**] Power BI コンテンツのレポート ページに使用されます。 このデータは、エンティティ ストアで実施される集計の測定として表されます。 エンティティ ストアは、分析に最適化された Microsoft SQL Server データベースです。 エンティティ格納の詳細については、「[エンティティ格納および Power BI の統合](power-bi-integration-entity-store.md)」を参照してください。
+次のデータは、[生産パフォーマンス] Power BI コンテンツのレポート ページに使用されます。 このデータは、エンティティ ストアで実施される集計の測定として表されます。 エンティティ ストアは、分析に最適化された Microsoft SQL Server データベースです。 エンティティ格納の詳細については、「[エンティティ格納および Power BI の統合](power-bi-integration-entity-store.md)」を参照してください。
 
 次の表では、Power BI コンテンツの基準として使用されるキー集計の測定が表示されます。
 
@@ -139,12 +130,5 @@ LCS の共有資産ライブラリに [**生産マネージャー**] Power BI �
 | リソース                 | リソース ID、リソース名、リソースのタイプ、およびリソース グループ |
 | 製品                  | 製品番号、製品名、品目 ID、および品目グループ         |
 
-## <a name="additional-resources"></a>その他のリソース
 
-エンティティと建物 Power BI の内容に関連する役立つリンクを次に示します:
-
-- [データ エンティティ](../data-entities/data-entities.md)
-- [組織のコンテンツ パックの作成](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
-- [Power BI を使用したデータのモデル化](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
-- [Power BI タイルをワークスペースへ追加する](configure-power-bi-integration.md)
 

@@ -1,9 +1,9 @@
 ---
 title: "財務パフォーマンス Power BI コンテンツ"
-description: "このトピックでは、財務パフォーマンス Power BI コンテンツについて説明します。 含まれているダッシュボードおよびレポートについて説明し、コンテンツを作成するために使用したデータモデルとエンティティに関する情報を提供します。"
+description: "このトピックでは、財務パフォーマンス Power BI コンテンツについて説明します。"
 author: kweekley
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
-ms.openlocfilehash: 3638f5acf6a05ec419dc4308e861d95f0d7b2cea
+ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
+ms.openlocfilehash: 83ea868e7612f30afa1b99f374878f4ba415113f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/19/2017
 
 ---
 
@@ -30,21 +30,6 @@ ms.lasthandoff: 12/01/2017
 [!include[banner](../includes/banner.md)]
 
 このトピックでは、**財務パフォーマンス** Microsoft Power BI コンテンツについて説明します。 含まれているダッシュボードおよびレポートについて説明し、コンテンツを作成するために使用したデータモデルとエンティティに関する情報を提供します。
-
-## <a name="accessing-the-power-bi-content"></a>Power BI コンテンツへのアクセス
-
-**財務パフォーマンス** Power BIは、Microsoft Dynamics Lifecycle Services (LCS) および PowerBI.com からアクセスできます。
-
-### <a name="available-from-lcs"></a>LCS から使用できます。
-LCS から使用できる**財務パフォーマンス** Power BI コンテンツは、次のバージョンがサポートされています。
-
-- Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition バージョン
-- Microsoft Dynamics 365 for Operations バージョン 1611 
-
-LCS の共有資産ライブラリに Power BI コンテンツがあります。 コンテンツパックのダウンロード方法および組織で実装する方法の詳細については、「[Microsoft およびパートナーからの LCS での Power BI コンテンツ](power-bi-content-microsoft-partners.md)」を参照してください。 Power BI コンテンツの実装方法を示すデモを視聴するには、「[Microsoft の Power BI コンテンツおよび Dynamics Lifecycle Services のパートナー](https://mix.office.com/watch/9puyb1b2xs1w)」の Office Mix を参照してください。
-
-### <a name="available-from-powerbicom"></a>PowerBI.com からアクセスできます。
-**財務パフォーマンス** PowerBI.com から使用できる Power BI コンテンツは、Microsoft Dynamics AX バージョン 7.0 および 7.0.1 をサポートしています。 Dynamics AX データの接続および読み込み方法の詳細については、「[PowerBI.com からの Power BI コンテンツへのアクセス](power-bi-home-page.md)」を参照してください。
 
 ## <a name="main-account-setup"></a>主勘定の設定
 組織は負債と収益の勘定をレポートに正の金額として表示させるため、主勘定の設定が重要です。 これらの主勘定を正の金額として表示するには、主勘定タイプを [**負債**] または [**収益**] に設定する必要があります。 これらの勘定タイプを使用すると、Power BI での報告は符号が逆になり、正として金額が表示されます。
@@ -101,5 +86,5 @@ LCS の共有資産ライブラリに Power BI コンテンツがあります。
 - 元帳
 - ChartofAccounts
 
-これらのエンティティは、データ モデルの計算メジャーを作成するために使用されました。 計算メジャーは、主要業績評価指標 (KPI) およびコンテンツで使用されるレポートを計算するために使用されます。 既定では、コンテンツにより、過去 3 年間および将来 1 年間のデータが取得されます。 追加の計算をレポートおよびダッシュボードに含めるには、[Microsoft Excel ワークブック](https://mbs.microsoft.com/customersource/global/AX/downloads/reports/msdaxfinpercontentpowerbi) を変更できます。 このワークブックはコンテンツを作成するために使用された既定のデータ モデルです。 自分の変更が終了した後に、追加した情報を含む組織のコンテンツ パックとダッシュボードを作成できます。
+これらのエンティティは、データ モデルの計算メジャーを作成するために使用されました。 計算メジャーは、主要業績評価指標 (KPI) およびコンテンツで使用されるレポートを計算するために使用されます。 既定では、コンテンツにより、過去 3 年間および将来 1 年間のデータが取得されます。 追加の計算をレポートおよびダッシュボードに含めるには、[Microsoft Excel ワークブック](https://mbs.microsoft.com/customersource/global/AX/downloads/reports/msdaxfinpercontentpowerbi) を変更できます。 このワークブックはコンテンツを作成するために使用された既定のデータ モデルです。 
 

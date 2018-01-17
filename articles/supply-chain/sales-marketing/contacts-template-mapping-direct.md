@@ -88,7 +88,7 @@ Sales の統合ソリューションが適用されている場合、アップ�
 
 ## <a name="in-finance-and-operations"></a>Finance and Operations
 
-[**IsContactPersonExternallyMaintained**] プロパティを使用し、連絡先をタグ付けします。 このプロパティは、指定された連絡先が外部で管理されていることを示します。 この場合、外部で管理されている連絡先は Sales に保持されます。
+[IsContactPersonExternallyMaintained] プロパティを使用し、連絡先をタグ付けします。 このプロパティは、指定された連絡先が外部で管理されていることを示します。 この場合、外部で管理されている連絡先は Sales に保持されます。
 
 ## <a name="preconditions-and-mapping-setup"></a>前提条件とマッピングの設定
 
