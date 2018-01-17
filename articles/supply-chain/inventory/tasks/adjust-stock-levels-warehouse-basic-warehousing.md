@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: YuyuScheller
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -23,14 +23,14 @@ ms.contentlocale: ja-jp
 ms.lasthandoff: 09/29/2017
 
 ---
-# 倉庫の在庫レベルの調整 (基本倉庫)
+# <a name="adjust-stock-levels-in-the-warehouse-basic-warehousing"></a>倉庫の在庫レベルの調整 (基本倉庫)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、倉庫にある製品の在庫レベルを調整するために、在庫調整仕訳帳を作成して転記するプロセスを説明します。 これを開始する前に、在庫調整用の在庫仕訳帳名を設定してある必要があります。 デモ データ会社 USMF または独自のデータを使用してこの手順の説明を見ることができます。 通常、これらのタスクを実施するのは、倉庫の従業員です。
 
 
-## 在庫調整仕訳帳の作成
+## <a name="create-an-inventory-adjustment-journal"></a>在庫調整仕訳帳の作成
 1. [在庫管理] > [仕訳入力] > [品目] > [在庫調整] の順に移動します。
 2. [新規] をクリックします。
 3. [名前] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。
@@ -38,7 +38,7 @@ ms.lasthandoff: 09/29/2017
     * 他の一部のフィールドは、選択した在庫調整仕訳帳の名前の設定に基づいて設定されます。  
 5. [OK] をクリックします。
 
-## 仕訳帳明細行の作成
+## <a name="create-journal-lines"></a>仕訳帳明細行の作成
 1. [新規] をクリックします。
 2. 一覧で、品目番号フィールドをマークします。
 3. [品目番号] フィールドで、品目を選択します。 デモ データの会社 USMF を使用する場合は、「D0001」を入力します。
@@ -50,7 +50,7 @@ ms.lasthandoff: 09/29/2017
 8. [数量] フィールドに数値を入力します。
     * 原価価格のフィールドには、在庫入庫用に単位あたりの原価を指定します。 品目番号に対して原価が指定されていない場合、または原価を手動で変更する場合は、ここでそれを行います。  
 
-## 在庫調整仕訳帳の検証および転記
+## <a name="validate-and-post-the-inventory-adjustment-journal"></a>在庫調整仕訳帳の検証および転記
 1. [検証] をクリックします。
 2. [OK] をクリックします。
 3. [転記] をクリックします。

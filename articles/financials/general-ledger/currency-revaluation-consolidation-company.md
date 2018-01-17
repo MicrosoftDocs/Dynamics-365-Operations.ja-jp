@@ -1,13 +1,14 @@
 ---
 title: "連結会社の通貨再評価"
 description: "このトピックでは、連結会社の通貨を再評価する方法について説明します。"
-author: rschloma
+author: twheeloc
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: LedgerExchAdjHist
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
