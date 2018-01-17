@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: YuyuScheller
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -17,10 +17,10 @@ ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 73981313fc662094ee4f8bb15a88271e16d41193
+ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
+ms.openlocfilehash: fbc99ae02576cb76edecb9ac74b1823305c5936b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 01/17/2018
 
 ---
 # <a name="set-up-quality-orders"></a><span data-ttu-id="f9d48-103">品質指示の設定</span><span class="sxs-lookup"><span data-stu-id="f9d48-103">Set up quality orders</span></span>
@@ -92,7 +92,7 @@ ms.lasthandoff: 09/29/2017
 7. <span data-ttu-id="f9d48-165">品目番号の行の選択</span><span class="sxs-lookup"><span data-stu-id="f9d48-165">Select the Item number row</span></span>
     * <span data-ttu-id="f9d48-166">この例では品目番号に基づいフィルタ処理を実行します。</span><span class="sxs-lookup"><span data-stu-id="f9d48-166">In this example the filtering will be run based on  the item number.</span></span>  
 8. <span data-ttu-id="f9d48-167">[基準] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="f9d48-167">In the Criteria field, type a value.</span></span>
-    * <span data-ttu-id="f9d48-168">たとえば、「T*」と入力し、T で始まる品目番号にフィルターを適用します。</span><span class="sxs-lookup"><span data-stu-id="f9d48-168">For example, type T* to filter on the item numbers that start with T.</span></span>  
+    * <span data-ttu-id="f9d48-168">たとえば、「T\*」と入力し、T で始まる品目番号にフィルターを適用します。</span><span class="sxs-lookup"><span data-stu-id="f9d48-168">For example, type T\* to filter on the item numbers that start with T.</span></span>  
 9. <span data-ttu-id="f9d48-169">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f9d48-169">Click OK.</span></span>
 10. <span data-ttu-id="f9d48-170">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f9d48-170">Click OK.</span></span>
 11. <span data-ttu-id="f9d48-171">[品目品質グループ] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f9d48-171">Click Item quality groups.</span></span>

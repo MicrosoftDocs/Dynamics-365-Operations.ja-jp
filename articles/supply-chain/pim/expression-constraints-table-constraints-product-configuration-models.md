@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PCGlobalTableConstraintEdit, PCProductConfigurationModelDetails, PCTableConstraintAttachAttributeTree, PCTableConstraintDefinition
 audience: Application User
-ms.reviewer: YuyuScheller
+ms.reviewer: yuyus
 ms.search.scope: Core, Operations
 ms.custom: 53111
 ms.assetid: 5c12b1f2-eb89-4648-a755-de412f2eadd6
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: e4719ace2247eb95ed711b0c82e7d9bc8ec5c60c
+ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
+ms.openlocfilehash: 4964026f0413524590846396859497df02850bfb
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/17/2018
 
 ---
 
@@ -163,7 +163,7 @@ ms.lasthandoff: 11/03/2017
 <tr class="odd">
 <td><span data-ttu-id="fab0e-217">時間</span><span class="sxs-lookup"><span data-stu-id="fab0e-217">Times</span></span></td>
 <td><span data-ttu-id="fab0e-218">これは、条件の製品を取ります。</span><span class="sxs-lookup"><span data-stu-id="fab0e-218">This takes the product of its conditions.</span></span> <span data-ttu-id="fab0e-219">条件数が 0 の場合、<strong>1</strong> になります。</span><span class="sxs-lookup"><span data-stu-id="fab0e-219">If the number of conditions is 0 (zero), it produces <strong>1</strong>.</span></span></td>
-<td><span data-ttu-id="fab0e-220">Times[args], infix: a * b * ... * z</span><span class="sxs-lookup"><span data-stu-id="fab0e-220">Times[args], infix: a * b * ... * z</span></span></td>
+<td><span data-ttu-id="fab0e-220">Times[args], infix: a \* b \* ... \* z</span><span class="sxs-lookup"><span data-stu-id="fab0e-220">Times[args], infix: a \* b \* ... \* z</span></span></td>
 <td><ul>
 <li><span data-ttu-id="fab0e-221"><strong>オペレーター:</strong> Times[x, y, 2] == z</span><span class="sxs-lookup"><span data-stu-id="fab0e-221"><strong>Operator:</strong> Times[x, y, 2] == z</span></span></li>
 <li><span data-ttu-id="fab0e-222"><strong>インフィックス表記法:</strong> x * y * 2 == z</span><span class="sxs-lookup"><span data-stu-id="fab0e-222"><strong>Infix notation:</strong> x * y * 2 == z</span></span></li>
