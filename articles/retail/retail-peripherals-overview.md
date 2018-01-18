@@ -7,6 +7,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
 ms.technology: 
+ms.search.form: RetailTerminalTable, RetailDevice, RetailHardwareProfile
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
@@ -17,10 +18,10 @@ ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 52b3e2e78a03ac67507ee65a03e0884e5ed44678
-ms.openlocfilehash: 347100651302bb97806783d00559f2396d031fcc
+ms.sourcegitcommit: d9b080ff46a0fbc73ed4f8fa3f03d71e9d758cc2
+ms.openlocfilehash: 7573a81916a60c18ae6ca4a2fdfc60bc2e641319
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 01/17/2018
 
 ---
 
@@ -478,7 +479,7 @@ ms.lasthandoff: 11/14/2017
 
 1.  <span data-ttu-id="c647b-485">すべての必須の周辺機器が設定されたハードウェア プロファイルを作成します。</span><span class="sxs-lookup"><span data-stu-id="c647b-485">Create a hardware profile where all the required peripherals are configured.</span></span>
 2.  <span data-ttu-id="c647b-486">POS レジスターにハードウェア プロファイルをマップします。</span><span class="sxs-lookup"><span data-stu-id="c647b-486">Map the hardware profile to the POS register.</span></span>
-3.  <span data-ttu-id="c647b-487">POS レジスタが使用される小売店舗用に**専用**タイプのハードウェア ステーションを作成します。</span><span class="sxs-lookup"><span data-stu-id="c647b-487">Create a hardware station of the **Dedicated** type for the retail store where the POS register will be used.</span></span> <span data-ttu-id="c647b-488">説明がオプションです。</span><span class="sxs-lookup"><span data-stu-id="c647b-488">A description is optional.</span></span> <span data-ttu-id="c647b-489">**注記:***ハードウェア ステーションその他のプロパティを設定する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="c647b-489">**Note:** You don't have to set any other properties on the hardware station.</span></span> <span data-ttu-id="c647b-490">ハードウェア プロファイルなど他の必須情報はすべて、レジスタ自体から取得されます。</span><span class="sxs-lookup"><span data-stu-id="c647b-490">All other required information, such as the hardware profile, will come from the register itself.</span></span>
+3.  <span data-ttu-id="c647b-487">POS レジスタが使用される小売店舗用に**専用**タイプのハードウェア ステーションを作成します。</span><span class="sxs-lookup"><span data-stu-id="c647b-487">Create a hardware station of the **Dedicated** type for the retail store where the POS register will be used.</span></span> <span data-ttu-id="c647b-488">説明がオプションです。</span><span class="sxs-lookup"><span data-stu-id="c647b-488">A description is optional.</span></span> <span data-ttu-id="c647b-489">\*\*注記:\*\*\*ハードウェア ステーションその他のプロパティを設定する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="c647b-489">**Note:** You don't have to set any other properties on the hardware station.</span></span> <span data-ttu-id="c647b-490">ハードウェア プロファイルなど他の必須情報はすべて、レジスタ自体から取得されます。</span><span class="sxs-lookup"><span data-stu-id="c647b-490">All other required information, such as the hardware profile, will come from the register itself.</span></span>
 4.  <span data-ttu-id="c647b-491">[**小売**] &gt; [**小売 IT**] &gt; [**配送スケジュール**] の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="c647b-491">Click **Retail** &gt; **Retail IT** &gt; **Distribution schedule**.</span></span>
 5.  <span data-ttu-id="c647b-492">店舗に新しいハードウェア プロファイルを同期させるため、[**1090**] 配分スケジュールを選択します。</span><span class="sxs-lookup"><span data-stu-id="c647b-492">Select the **1090** distribution schedule to sync the new hardware profile to the store.</span></span> <span data-ttu-id="c647b-493">POS に変更を同期させるため、[**今すぐ実行**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c647b-493">Click **Run now** to sync changes to the POS.</span></span>
 6.  <span data-ttu-id="c647b-494">店舗に新しいハードウェア ステーションを同期させるため、[**1040**] 配分スケジュールを選択します。</span><span class="sxs-lookup"><span data-stu-id="c647b-494">Select the **1040** distribution schedule to sync the new hardware station to the store.</span></span> <span data-ttu-id="c647b-495">POS に変更を同期させるため、[**今すぐ実行**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c647b-495">Click **Run now** to sync changes to the POS.</span></span>
