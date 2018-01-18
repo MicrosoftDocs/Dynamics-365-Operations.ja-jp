@@ -3,11 +3,12 @@ title: "倉庫パフォーマンス Power BI コンテンツ"
 description: "このトピックでは、倉庫パフォーマンス Power BI コンテンツに何が含まれているのか説明します。 Power BI レポートにアクセスする方法を説明し、コンテンツを作成するために使用するデータ モデルおよびエンティティについての情報を提供します。"
 author: Mirzaab
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
+ms.search.form: WHSWarehousePerformancePowerBI
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -15,13 +16,13 @@ ms.custom: 272953
 ms.assetid: 4e4d4323-78cf-4ffa-8d5a-05e856c33db6
 ms.search.region: Global
 ms.author: mirzaab
-ms.dyn365.ops.intro: Version 1611
+ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
-ms.openlocfilehash: ea53e2bcd01cd06ccdd836ead1671b54aa9e9750
+ms.sourcegitcommit: aac6439bb54b3b9cab066b06c01763e880efef8e
+ms.openlocfilehash: e5a900000286b5f076c377f7b1a9a260cc40621a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/18/2017
 
 ---
 
@@ -76,15 +77,6 @@ Power BI コンテンツの **倉庫パフォーマンス** には、レポー�
 | 出荷パフォーマンス        | 製品別出荷                       | 品目または品目グループ別に期日前、期限内、または遅延出荷される割合。                                                                                                                                                                                                                                                                                                                                   |
 | 出荷パフォーマンス        | 顧客別出荷                      | 顧客または顧客グループ別に期日前、期限内、または遅延出荷される割合。                                                                                                                                                                                                                                                                                                                           |
 | 出荷パフォーマンス        | サイト / 倉庫別出荷              | サイトまたは倉庫別に期日前、期限内、または遅延出荷される割合。                                                                                                                                                                                                                                                                                                                                    |
-## <a name="extending-the-power-bi-content"></a>Power BI コンテンツの拡張
-Microsoft Dynamics Lifecycle Services (LCS) で利用できるコンテンツ パックを使用すると、Microsoft Dynamics 365 にログインしない人々に関する優れた分析ができます。 ほかのレポートまたはビジュアルを含めるよう、これらのコンテンツ パックを変更できます。次いで分析のためにコンテンツ パックを Power BI.com テナントに発行します。 
-
-LCS の共有資産ライブラリに [**倉庫パフォーマンス**] Power BI コンテンツがあります。 コンテンツのダウンロード方法および組織で実装する方法の詳細については、「[Microsoft およびパートナーからの LCS での Power BI コンテンツ](power-bi-content-microsoft-partners.md)」を参照してください。 Power BI コンテンツの実装方法を示すデモを視聴するには、「[Microsoft の Power BI コンテンツおよび Dynamics Lifecycle Services のパートナー](https://mix.office.com/watch/9puyb1b2xs1w)」の Office Mix を参照してください。
-
-ご使用のバージョンの Microsoft Dynamics 365 に適用する [**倉庫パフォーマンス**] コンテンツをダウンロードしてください。
-
-> [!NOTE]
-> Microsoft Dynamics 365 for Operations バージョン 1611 を使用している場合、この Power BI コンテンツの前提条件はサポート技術情報 4011327 です。 LCS にサインインすると、https://fix.lcs.dynamics.com/issue/results/?q=kb4011327 でサポート技術情報にアクセスできます。
 
 ## <a name="understanding-the-data-model-and-calculations"></a>データ モデルと計算の理解
 次のデータは、[**倉庫パフォーマンス**] Power BI コンテンツのレポート ページに入力するために使用されます。 このデータは、エンティティ ストアで実施される集計の測定として表されます。 エンティティ ストアは、分析に最適化された Microsoft SQL Server データベースです。 詳細については、「[エンティティ ストアとの Power BI の統合](power-bi-integration-entity-store.md)」を参照してください。 

@@ -3,7 +3,7 @@ title: "財務報告のデータ マートのリセット"
 description: "財務報告データ マートをリセットする方法について説明します。"
 author: aolson
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,10 +17,10 @@ ms.author: aloson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 0786d3377b914791106ef30455d676e5ab2ae03d
-ms.openlocfilehash: c708fa18b8676d8ff57c26b3176a36d86df29387
+ms.sourcegitcommit: 5b956dcc5a4a93033396ae0ffcf8b7aeba2cf3f2
+ms.openlocfilehash: a07e8b5bae2c4f71e9212cd2f8080d2481769818
 ms.contentlocale: ja-jp
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/14/2017
 
 ---
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 12/07/2017
 - Microsoft Dynamics 365 for Finance and Operations 財務諸表 7.0.10000.4 以降のリリース
 - Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (オンプレミス)
 
-Finance and Operations 財務諸表 7.2.6.0 のリリースを取得するには、<https://support.microsoft.com/en-us/help/4052514> から KB 4052514 をダウンロードしてください。
+Finance and Operations 財務諸表 7.2.6.0 のリリースを取得するには、<https://fix.lcs.dynamics.com/Issue/Resolved?kb=4052514> から KB 4052514 をダウンロードしてください。
 
 ## <a name="reset-the-financial-reporting-data-mart-for-finance-and-operations-financial-reporting-release-7260-and-later"></a>Finance and Operations 財務諸表 7.2.6.0 以降のリリースの財務報告のデータ マートのリセット
 
@@ -55,7 +55,7 @@ Finance and Operations 財務諸表 7.2.6.0 のリリースを取得するには
 
 データ マートをリセットするには、レポート デザイナーの、[**ツール**] メニューにある、[**データ マートのリセット**] を選択してください。 表示されるダイアログ ボックスには2つのセクションがあります: [**統計**] および [**リセット**]。
 
-[![データ マートのダイアログ ボックスをリセットします](./media/Statistics.png)](./media/Statistics.png)
+[![データ マートのダイアログ ボックスをリセットします](./media/Reset-72.jpg)](./media/Reset-72.jpg)
 
 ##### <a name="integration-attempts"></a>統合試行回数
 
@@ -83,8 +83,10 @@ Finance and Operations 財務諸表 7.2.6.0 以前のリリースでデータ �
 - **データベースの復元** – Finance and Operations データベースが復元されましたが、財務諸表のデータ マートのデータベースは復元されませんでした。
 - **その他** – 別の理由によりデータ マートをリセットしています。 問題があることを懸念する場合は、識別のためにサポートに問い合わせてください。
 
+[![データ マートのリセット](./media/Integration.png)](./media/Integration.png)
+
 > [!NOTE]
-> ステップを完了する前に、すべての既存のタスクの統合が終了したことを確認します。 **ツール** &gt; **統合の状態**を選択することで統合のステータスを表示できます。
+> リセットを開始する前に、すべてのデータ マート リセット タスクが初回の読み込みを完了したことを確認します。 **ツール** &gt; **統合の状態** を選択して、前回のランタイム列で値を探すことにより、これを確定できます。
 
 #### <a name="clear-users-and-companies"></a>ユーザーと会社をクリア
 
@@ -94,7 +96,10 @@ Finance and Operations 財務諸表 7.2.6.0 以前のリリースでデータ �
 
 統合の状態を確認する場合は、**ツール** &gt; **統合の状態** を選択し、統合が最後に実行された時刻と状態を表示します。
 
-[![統合のステータスを表示](./media/Integration.png)](./media/Integration.png)
+[![統合のステータスを表示](./media/New-integration.PNG)](./media/New-integration.PNG)
+
+> [!NOTE]
+> すべてのマッピングが RanToCompletion の状態を表示し、および統合の状態ウィンドウが左下隅で「統合が完了しました」と表示する場合、リセットが完了します。
 
 ## <a name="reset-the-financial-reporting-data-mart-for-finance-and-operations-financial-reporting-release-70100004-and-later"></a>Finance and Operations 財務諸表 7.0.10000.4 以降のリリースの財務報告のデータ マートのリセット
 
@@ -142,7 +147,9 @@ Finance and Operations データベースをバックアップから復元した
 
 #### <a name="download-the-latest-minorversiondataupgradezip-package"></a>最新の MinorVersionDataUpgrade.zip パッケージをダウンロードする
 
-最新の MinorVersionDataUpgrade.zip パッケージをダウンロードします。 データ アップグレード パッケージの適切なバージョンを検索しダウンロードする手順については、[最新のデータ アップグレード配置可能パッケージをダウンロードする](..\migration-upgrade\upgrade-data-to-latest-update.md#download-the-latest-data-upgrade-deployable-packages) を参照してください。 MinorVersionDataUpgrade.zip パッケージをダウンロードするためにアップグレードは必要ありません。 したがって、そのトピックにある「最新のデータ アップグレード配置可能パッケージをダウンロードする」セクションの手順に従ってください。 トピックのその他のすべての手順をスキップできます。
+最新の MinorVersionDataUpgrade.zip パッケージをダウンロードします。 データ アップグレード パッケージの適切なバージョンを検索しダウンロードする手順については、[最新のデータ アップグレード配置可能パッケージをダウンロードする](..\migration-upgrade\upgrade-data-to-latest-update.md#download-the-latest-data-upgrade-deployable-package) を参照してください。 
+
+MinorVersionDataUpgrade.zip パッケージをダウンロードするためにアップグレードは必要ありません。 したがって、そのトピックにある「最新のデータ アップグレード配置可能パッケージをダウンロードする」セクションの手順に従ってください。 トピックのその他のすべての手順をスキップできます。
 
 #### <a name="run-scripts-against-the-finance-and-operations-database"></a>Finance and Operations データベースに対してスクリプトを実行する
 

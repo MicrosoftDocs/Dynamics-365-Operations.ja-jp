@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PCProductConfigurationModelDetails
 audience: Application User
-ms.reviewer: YuyuScheller
+ms.reviewer: yuyus
 ms.search.scope: Core, Operations
 ms.custom: 75083
 ms.assetid: f08072b8-cb0b-43aa-9509-f5ec32caecd9
@@ -111,7 +111,7 @@ BOM 明細行には、各コンポーネントの製造 BOM を識別する事�
 
 ### <a name="the-configuration-page"></a>コンフィギュレーション ページ
 
-コンポーネントの間を移動するには [**次へ**] をクリックするか、フォーカスするために製品コンフィギュレーション モデルのツリーでコンポーネントをクリックします。
+コンポーネントの間を移動するには [次へ] をクリックするか、フォーカスするために製品コンフィギュレーション モデルのツリーでコンポーネントをクリックします。
 
 ## <a name="finalizing-a-model-for-configuration"></a>コンフィギュレーション モデルの完成
 製品コンフィギュレーション モデルをコンフィギュア ツー オーダーのシナリオで使用する準備が整ったら、バージョンを作成する必要があります。 ただし、モデリング経験を豊かにできる複数のオプションがあります。
@@ -137,7 +137,7 @@ BOM 明細行には、各コンポーネントの製造 BOM を識別する事�
 
 ### <a name="pcadaptor-class"></a>PCAdaptor クラス
 
-製品コンフィギュレーション モデルのデータ構造を公開する一連の [**PCAdaptor**] クラスの使用により API　が実装されます。 [**PCAdaptor**] クラスのインスタンスは拡張される各モデルごとに作成する必要があります。 コンフィギュレーション セッションの完了後、システムはこのクラスのインスタンスをチェックし、見つければ実行します。  
+製品コンフィギュレーション モデルのデータ構造を公開する一連の [PCAdaptor] クラスの使用により API　が実装されます。 [PCAdaptor] クラスのインスタンスは拡張される各モデルごとに作成する必要があります。 コンフィギュレーション セッションの完了後、システムはこのクラスのインスタンスをチェックし、見つければ実行します。  
 
 次のフロー ダイアグラムは、プロセスの概要を示します。  
 

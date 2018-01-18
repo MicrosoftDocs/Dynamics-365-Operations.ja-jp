@@ -1,9 +1,9 @@
 ---
 title: "従業員の開発 Power BIコンテンツ"
-description: "このトピックでは、従業員の開発 Power BI コンテンツについて説明します。 レポートにアクセスする方法を説明し、コンテンツを作成するために使用したデータ モデルおよびエンティティについての情報を提供します。"
+description: "このトピックでは、従業員の開発 Power BI コンテンツについて説明します。"
 author: jcart1106
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
-ms.openlocfilehash: f8ba7a968a1a5b376bac52106671607247f061d9
+ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
+ms.openlocfilehash: 99ae772f3a7fe9ad274a46398a577ad96f18e251
 ms.contentlocale: ja-jp
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/19/2017
 
 ---
 
@@ -27,11 +27,7 @@ ms.lasthandoff: 12/01/2017
 
 [!include[banner](../includes/banner.md)]
 
-このトピックでは、**従業員の開発** Microsoft Power BI コンテンツについて説明します。 レポートにアクセスする方法を説明し、コンテンツを作成するために使用したデータ モデルおよびエンティティについての情報を提供します。
-
-## <a name="accessing-the-power-bi-content"></a>Power BI コンテンツへのアクセス
-
-**従業員の開発** コンテンツ パックは、Microsoft Dynamics Lifecycle Services (LCS) の共有アセット ライブラリにあります。 コンテンツパックのダウンロード方法およびデータに接続する方法の詳細については、「[Microsoft およびパートナーからの LCS での Power BI コンテンツ](power-bi-content-microsoft-partners.md)」を参照してください。
+このトピックでは、**従業員の開発** Microsoft Power BI コンテンツについて説明します。
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Power BI コンテンツに含まれるレポート
 **従業員の開発** Power BI コンテンツに含まれるレポートには、追加情報を含むグラフとテーブルの両方があります。 次の表にレポートを示します。
@@ -74,5 +70,4 @@ ms.lasthandoff: 12/01/2017
 | パフォーマンス              | 評価、説明、評価モデル                                                                      | 現在の従業員、現在の職位、従業員のトレンド、ジョブ優先スキル、過去の職位の割り当て、職位トレンド、退職済従業員 |
 |  スキル                   | スキル、スキル タイプおよび評価                                                                              | 従業員のスキルの分析、ジョブ優先スキル |                                                                                                                        
 
-これらのエンティティは、データ モデルの計算メジャーを作成するために使用されました。 これらの計算メジャーは、主要業績評価指標 (KPI) および POWER BI コンテンツで使用するためのレポートを計算するために使用されます。 レポートおよびダッシュボードに追加の計算を含める場合は、LCS から .pbix ファイルをダウンロードして変更することができます。 このファイルは POWER BI コンテンツを作成するために使用された既定のデータ モデルです。 変更後に、追加した情報を含む組織のコンテンツ パックとダッシュボードを作成できます。
 

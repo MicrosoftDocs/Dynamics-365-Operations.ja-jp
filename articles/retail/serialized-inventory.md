@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-ax-retail
 ms.technology: 
 audience: Application User
 ms.reviewer: josaw
@@ -17,10 +17,10 @@ ms.author: shajain
 ms.search.validFrom: 2017-08-01
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 9eb962e903ac9ee359134cae35ebd399e23cc4e1
+ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
+ms.openlocfilehash: 83c2ce79f5bef058f55af0ecf498b207efc0507a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/14/2017
 
 ---
 
@@ -41,4 +41,5 @@ ms.lasthandoff: 11/03/2017
     
 - [**シリアル番号は顧客注文をするために必要ではありません**] – 顧客注文は 1 つの店舗で実行され別の店舗で達成されます。 顧客注文を実行するレジ担当者は、シリアル番号を提供する必要がありません。 ピッキングまたは集荷手順の際、シリアル番号が提供されます。 ただし、[**実行**] 配送タイプが選択されているすべての明細行品目のシリアル番号が提供される必要があります。 それ以外の場合、トランザクションを完了することはできません。    
 - [**シリアル化された製品は、トランザクション画面で集計されません**] – [**機能プロファイル**] ページの [**ターミナル**] フィールド グループでの [**製品の集計**] 設定は、トランザクション画面でシリアル化されていない同じ製品を集計できるようにします。 同じ商品を集計すると、トランザクション グリッドで簡単に確認できます。 ただし、通常シリアル番号は固有であるため、店員はチェック アウトまでシリアル番号を入力する必要がなく、[**製品の集計**] 設定はシリアル化された製品には適用されません。 したがって、[**製品の集計**] 設定が選択されると、シリアル化された製品はトランザクション画面に集計されません。
+- **仕訳帳をシリアル番号で検索する能力** - 仕訳帳はシリアル番号により補足的に検索されます。 これを行うには、「仕訳帳」工程を開き、アプリ バーで「高度な検索」ボタンをクリックします。 「フィルターの追加」ボタンを使用して、シリアル番号を検索するようフィルターを適用することもできます。
 

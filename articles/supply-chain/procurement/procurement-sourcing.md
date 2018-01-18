@@ -1,7 +1,7 @@
 ---
 title: "調達ホーム ページ"
 description: "このトピックでは、調達に使用できるヘルプ トピックとその他のリソースの一覧を示します。"
-author: YuyuScheller
+author: mkirknel
 manager: AnnBe
 ms.date: 09/27/2017
 ms.topic: article
@@ -9,12 +9,12 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: bis
 ms.search.scope: Core, Operations
 ms.custom: 50651
 ms.assetid: 17f06036-cac2-4c28-8dc6-1dff6b81a7cc
 ms.search.region: Global
-ms.author: yuyus
+ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT

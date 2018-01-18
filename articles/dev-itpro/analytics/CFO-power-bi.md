@@ -3,7 +3,7 @@ title: "CFO 概要 Power BI コンテンツ"
 description: "このトピックでは、CFO 概要 Microsoft Power BI コンテンツについて説明します。"
 author: kweekley
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: kweekley
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
-ms.openlocfilehash: fcc93daf96f65cd340d6be766c6ef83a74d62cc5
+ms.sourcegitcommit: aac6439bb54b3b9cab066b06c01763e880efef8e
+ms.openlocfilehash: fd3696321598267a2acd3ad61f533641c2cc2e77
 ms.contentlocale: ja-jp
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/18/2017
 
 ---
 
@@ -47,8 +47,5 @@ ms.lasthandoff: 12/01/2017
 | [与信および回収管理](../../financials/accounts-receivable/credit-collections-power-bi.md) | <ul><li>期日が経過した顧客</li><li>与信限度額を超えた顧客</li><li>指定の期間に達している残高</li></ul> |
 | [購買と支出の分析](../../financials/accounts-receivable/credit-collections-power-bi.md) | <ul><li>月/日別の購買</li><li>購買高別上位 10 の仕入先</li><li>購買高の上位 10 の製品</li></ul> |
 
-## <a name="extending-the-power-bi-content"></a>Power BI コンテンツの拡張
-Microsoft Dynamics Lifecycle Services (LCS) で利用できるコンテンツ パックを使用すると、Microsoft Dynamics 365 にログインしない人々に関する優れた分析ができます。 ほかのレポートまたはビジュアルを含めるよう、これらのコンテンツ パックを変更できます。次いで分析のためにコンテンツ パックを Power BI.com テナントに発行します。
 
-LCS の共有資産ライブラリに **CFO の概要** Power BI コンテンツがあります。 コンテンツのダウンロード方法および組織で実装する方法の詳細については、「[Microsoft およびパートナーからの LCS での Power BI コンテンツ](power-bi-content-microsoft-partners.md)」を参照してください。 Power BI コンテンツの実装方法を示すデモを視聴するには、「[Microsoft の Power BI コンテンツおよび Dynamics Lifecycle Services のパートナー](https://mix.office.com/watch/9puyb1b2xs1w)」の Office Mix を参照してください。
 

@@ -17,7 +17,7 @@ ms.assetid:
 ms.search.region: global
 ms.search.industry: 
 ms.author: crytt
-ms.dyn365.ops.intro: July 2017 update
+ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
 ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
@@ -65,22 +65,22 @@ ms.lasthandoff: 11/03/2017
 
 売上の連絡先は CD および Finance and Operations の連絡先になる可能性があります。 また、CDS の勘定および Finance and Operations の顧客になることがあります。 CDS と Finance and Operations に同期する上で、連絡先を売上でピックアップする必要があるかどうかを判断するには (例: 売上の連絡先 &gt; CDS の連絡先 &gt; Finance and Operations の連絡先)、システムは売上の連絡先の次のプロパティを検索します。
 
-- **CDS の勘定と Finance and Operations での顧客への同期:** [**有効な顧客**] が [**はい**] に設定されている連絡先
-- **CDS の連絡先と Finance and Operations の連絡先との同期:** [**有効な顧客**] が [**いいえ**] に設定され、**会社** (親勘定/連絡先) がアカウント (連絡先ではない) を表す連絡先
+- **CDS の勘定と Finance and Operations での顧客への同期:** [有効な顧客] が [はい] に設定されている連絡先
+- **CDS の連絡先と Finance and Operations の連絡先との同期:** [有効な顧客] が [いいえ] に設定され、**会社** (親勘定/連絡先) がアカウント (連絡先ではない) を表す連絡先
 
 ## <a name="prospect-to-cash-solution-for-sales"></a>売上の見込顧客を現金化するソリューション 
 
-新しい [**有効な顧客**] フィールドが連絡先に追加されました。 このフィールドは、営業活動を持つ連絡先と営業活動を持たない連絡先を区別するために使用されます。 [**有効な顧客**] は、関連する見積書、注文、または請求書を持つ連絡先に対してのみ [**はい**] に設定されます。 これらの連絡先のみが顧客として Finance and Operations に同期されます。
+新しい [有効な顧客] フィールドが連絡先に追加されました。 このフィールドは、営業活動を持つ連絡先と営業活動を持たない連絡先を区別するために使用されます。 [有効な顧客] は、関連する見積書、注文、または請求書を持つ連絡先に対してのみ [はい] に設定されます。 これらの連絡先のみが顧客として Finance and Operations に同期されます。
 
-新しい [**IsCompanyAnAccount**] フィールドが連絡先に追加されました。 このフィールドは、連絡先が**アカウント** タイプの会社 (親アカウント/連絡先) にリンクされているかどうかを示すために使用されます。 この情報は、Finance and Operations の連絡先として同期する必要がある連絡先を識別するために使用されます。
+新しい [IsCompanyAnAccount] フィールドが連絡先に追加されました。 このフィールドは、連絡先が**アカウント** タイプの会社 (親アカウント/連絡先) にリンクされているかどうかを示すために使用されます。 この情報は、Finance and Operations の連絡先として同期する必要がある連絡先を識別するために使用されます。
 
-新しい [**連絡先番号**] フィールドが連絡先に追加され、統合をサポートするための自然で固有のキーが保証されます。 新しい連絡先が作成されると、**連絡先番号**値は、番号順序を使用して自動的に生成されます。 値は **CON** で構成され、続いて番号順序が増加し、6 文字の接尾辞が続きます。 次に例を示します: **CON-01000-BVRCPS**
+新しい [連絡先番号] フィールドが連絡先に追加され、統合をサポートするための自然で固有のキーが保証されます。 新しい連絡先が作成されると、**連絡先番号**値は、番号順序を使用して自動的に生成されます。 値は **CON** で構成され、続いて番号順序が増加し、6 文字の接尾辞が続きます。 次に例を示します: **CON-01000-BVRCPS**
 
-売上の統合ソリューションが売上に追加されると、アップグレード スクリプトは、先に説明した番号シーケンスを使用して、既存の連絡先の [**連絡先番号**] フィールドを設定します。 また、アップグレード スクリプトでは、営業活動を持っている任意の連絡先の [**有効な顧客**] フィールドが [**はい**] に設定されます。
+売上の統合ソリューションが売上に追加されると、アップグレード スクリプトは、先に説明した番号シーケンスを使用して、既存の連絡先の [連絡先番号] フィールドを設定します。 また、アップグレード スクリプトでは、営業活動を持っている任意の連絡先の [有効な顧客] フィールドが [はい] に設定されます。
 
 ## <a name="in-finance-and-operations"></a>Finance and Operations 
 
-[**IsContactPersonExternallyMaintained**] プロパティを使用し、連絡先をタグ付けします。 このプロパティは、指定された連絡先が外部で管理されていることを示します。 この場合、外部で管理されている連絡先は売上に保持されます。
+[IsContactPersonExternallyMaintained] プロパティを使用し、連絡先をタグ付けします。 このプロパティは、指定された連絡先が外部で管理されていることを示します。 この場合、外部で管理されている連絡先は売上に保持されます。
 
 ## <a name="preconditions-and-mapping-setup"></a>前提条件とマッピングの設定
 
@@ -88,8 +88,8 @@ ms.lasthandoff: 11/03/2017
 
 - **ソース&gt; CDS** マッピングの順に **CDS 組織 ID** を更新します。
 
-    - **Organization_OrganizationId [Organization ID]** の既定のテンプレート値は [**ORG001**] です。
-    - **PrimaryAccount_Organization_OrganizationId [Organization ID]** の既定のテンプレート値は [**ORG001**] です。
+    - **Organization_OrganizationId [Organization ID]** の既定のテンプレート値は [ORG001] です。
+    - **PrimaryAccount_Organization_OrganizationId [Organization ID]** の既定のテンプレート値は [ORG001] です。
 
 - **住所/国の地域コード** は Finance and Operations では必須です。 同期エラーを回避するために、**CDS &gt; Operations** マッピングで既定値を指定できます。 販売でこのフィールドが空白の場合、既定値が使用されます。 **PrimaryAddressCountryRegionISOCode** の既定のテンプレート値は **USA** です。
 - Finance and Operation に次のフィールドの値が存在することを確認します。 この情報が Finance and Operations で必要ではない場合は、**CD&gt; 出力先** マッピングの順にマッピングを削除できます。
@@ -99,7 +99,7 @@ ms.lasthandoff: 11/03/2017
 
 ### <a name="contact-to-customer"></a>連絡先から顧客へ
 
-- **ソース&gt; CDS** マッピングの順に **CDS 組織 ID** を更新します。 **Organization_OrganizationId [Organization ID]** の既定のテンプレート値は [**ORG001**] です。
+- **ソース&gt; CDS** マッピングの順に **CDS 組織 ID** を更新します。 **Organization_OrganizationId [Organization ID]** の既定のテンプレート値は [ORG001] です。
 - **住所/国の地域コード** は Finance and Operations では必須です。 同期エラーを回避するために、**CDS &gt; 出力先** マッピングの順に既定値を指定できます。 販売でこのフィールドが空白の場合、既定値が使用されます。 **PrimaryAddressCountryRegionISOCode** の既定のテンプレート値は **USA** です。
 - **CustomerGroup** は Finance and Operations で必須です。 同期エラーを回避するために、**CDS &gt; 出力先** マッピングの順に既定値を指定できます。 販売でこのフィールドが空白の場合、既定値が使用されます。 **CustomerGroupId** の既定のテンプレート値は **10** です。
 - 次のマッピングを **CD&gt;出力先** から追加することによって、Finance and Operations の手動更新の数を減らすことができます。 たとえば、**国/地域**または**市町村**のデフォルト値または値マップを使用できます。

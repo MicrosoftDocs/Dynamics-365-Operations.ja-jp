@@ -3,7 +3,7 @@ title: "生産パフォーマンス Power BI コンテンツ"
 description: "このトピックでは、生産パフォーマンス Power BI コンテンツに何が含まれているのか説明します。 Power BI レポートにアクセスする方法を説明し、コンテンツを作成するために使用したデータ モデルおよびエンティティについての情報を提供します。"
 author: AndersGirke
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -16,10 +16,10 @@ ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
-ms.openlocfilehash: 898a1a513850024fd0164955bdd204ee4b08c632
+ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
+ms.openlocfilehash: 592514e9ef8b0ec1e3bacda0f26d5991da88449e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/19/2017
 
 ---
 
@@ -59,15 +59,6 @@ Power BI コンテンツは、期限までに生産を完了するための組�
 | リソースによる欠陥トレンド                  | 生産処理による欠陥レート (ppm) | |
 | 作業オーダー原価計算の製造の差異 | <ul><li>日付および原価グループ タイプによる製造差異</li><li>サイトおよび原価グループ タイプによる製造差異</li><li>好ましくない製造差異の上位 10 製品</li><li>リソースによる好ましくない製造差異の上位 10 製品</li></ul> | <ul><li>実現原価</li><li>製造差異</li><li>製造差異 (%)</li></ul> |
 
-## <a name="extending-the-power-bi-content"></a>Power BI コンテンツの拡張
-Microsoft Dynamics Lifecycle Services (LCS) で利用できるコンテンツ パックを使用すると、Microsoft Dynamics 365 にログインしない人々に関する優れた分析ができます。 ほかのレポートまたはビジュアルを含めるよう、これらのコンテンツ パックを変更できます。次いで分析のためにコンテンツ パックを Power BI.com テナントに発行します。
-
-LCS の共有資産ライブラリに [**生産マネージャー**] Power BI コンテンツがあります。 コンテンツのダウンロード方法および組織で実装する方法の詳細については、「[Microsoft およびパートナーからの LCS での Power BI コンテンツ](power-bi-content-microsoft-partners.md)」を参照してください。 Power BI コンテンツの実装方法を示すデモを視聴するには、「[Microsoft の Power BI コンテンツおよび Dynamics Lifecycle Services のパートナー](https://mix.office.com/watch/9puyb1b2xs1w)」の Office Mix を参照してください。
-
-ご使用のバージョンの Microsoft Dynamics 365 に適用する [**生産マネージャー**] コンテンツをダウンロードしてください。
-
-> [!NOTE]
-> Microsoft Dynamics 365 for Operations バージョン 1611 を使用している場合、この Power BI コンテンツの前提条件はサポート技術情報 4011327 です。 LCS にサインインすると、https://fix.lcs.dynamics.com/issue/results/?q=kb4011327 でサポート技術情報にアクセスできます。
 
 ## <a name="understanding-the-data-model-and-entities"></a>データ モデルおよびエンティティの理解
 
@@ -139,12 +130,5 @@ LCS の共有資産ライブラリに [**生産マネージャー**] Power BI �
 | リソース                 | リソース ID、リソース名、リソースのタイプ、およびリソース グループ |
 | 製品                  | 製品番号、製品名、品目 ID、および品目グループ         |
 
-## <a name="additional-resources"></a>その他のリソース
 
-エンティティと建物 Power BI の内容に関連する役立つリンクを次に示します:
-
-- [データ エンティティ](../data-entities/data-entities.md)
-- [組織のコンテンツ パックの作成](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
-- [Power BI を使用したデータのモデル化](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
-- [Power BI タイルをワークスペースへ追加する](configure-power-bi-integration.md)
 

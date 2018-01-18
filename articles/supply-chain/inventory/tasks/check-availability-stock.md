@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: YuyuScheller
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -23,14 +23,14 @@ ms.contentlocale: ja-jp
 ms.lasthandoff: 09/29/2017
 
 ---
-# 有効在庫数の確認
+# <a name="check-the-availability-of-stock"></a>有効在庫数の確認
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、特定の品目番号において現物手持在庫を確認する方法を示します。 またこれらは品目に関連する供給情報を取得する方法を表示します。 現物手持在庫とは使用可能である、つまり、購入済、受領済、登録済である手持ち在庫です。 手持在庫には使用可能な手持在庫が含まれる一方で、注文し、予想されているがまだ入庫されていないまたは登録されていない在庫も含まれます。 デモ データ会社 USMF または独自のデータを使用してこの手順の説明を見ることができます。 USMF を使用すると、表示される例の値を使用できます。 通常、これらのタスクを実施するのは、倉庫作業者です。
 
 
-## 品目の手持在庫の確認
+## <a name="check-on-hand-inventory-for-an-item"></a>品目の手持在庫の確認
 1. [在庫管理] > [照会およびレポート] > [手持在庫] の順に移動します。
 2. 品目番号の行を選択します。
     * 手持在庫を品目番号で照会するには、手持在庫が設定されているテーブルおよび品目番号が設定されているフィールドの行を選択します。  
@@ -49,7 +49,7 @@ ms.lasthandoff: 09/29/2017
 11. ページを閉じます。
 12. ページを閉じます。
 
-## 現物手持在庫の確認
+## <a name="check-physical-on-hand-inventory"></a>現物手持在庫の確認
 1. [倉庫管理] > [照会およびレポート] > [現物手持在庫] の順に移動します。
 2. [品目番号] フィールドに値を入力します。
     * 品目の一覧をフィルタ処理するための [サイト] および[倉庫] フィールドを使用できます。  
@@ -59,7 +59,7 @@ ms.lasthandoff: 09/29/2017
 5. [OK] をクリックします。
 6. ページを閉じます。
 
-## 手持在庫を保管場所ごとに確認する
+## <a name="check-on-hand-inventory-by-location"></a>手持在庫を保管場所ごとに確認する
 1. [倉庫管理] > [照会およびレポート] > [保管場所ごとの手持在庫] の順に移動します。
 2. [倉庫] フィールドに値を入力します。
     * USMF のデモ データ会社を使用すると、「51」を使用できます。  

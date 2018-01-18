@@ -17,7 +17,7 @@ ms.assetid:
 ms.search.region: global
 ms.search.industry: 
 ms.author: crytt
-ms.dyn365.ops.intro: July 2017 update
+ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
 ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
@@ -88,7 +88,7 @@ Sales の統合ソリューションが適用されている場合、アップ�
 
 ## <a name="in-finance-and-operations"></a>Finance and Operations
 
-[**IsContactPersonExternallyMaintained**] プロパティを使用し、連絡先をタグ付けします。 このプロパティは、指定された連絡先が外部で管理されていることを示します。 この場合、外部で管理されている連絡先は Sales に保持されます。
+[IsContactPersonExternallyMaintained] プロパティを使用し、連絡先をタグ付けします。 このプロパティは、指定された連絡先が外部で管理されていることを示します。 この場合、外部で管理されている連絡先は Sales に保持されます。
 
 ## <a name="preconditions-and-mapping-setup"></a>前提条件とマッピングの設定
 

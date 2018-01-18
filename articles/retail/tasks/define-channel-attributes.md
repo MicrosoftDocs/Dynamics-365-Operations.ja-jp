@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 02/17/2016
 ms.topic: business-process
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-ax-retail
 ms.technology: 
 audience: Application User
 ms.reviewer: josaw
@@ -44,7 +44,7 @@ ms.lasthandoff: 09/29/2017
 9. [属性] セクションを展開します。
 10. [追加] をクリックします。
 11. 一覧で、選択された行をマークします。
-12. [AddBtn](アドボタン) をクリックします。
+12. \[AddBtn\](アドボタン) をクリックします。
 13. [OK] をクリックします。
 14. [保存] をクリックします。
 15. ページを閉じます。

@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventItemSampling, InventNonConformanceHistory, InventNonConformanceTable, InventQualityOrderLineResults, InventQualityOrderTable, InventTestCorrection, InventTestDiagnosticType, InventTestInstrument, InventTestReportSetup, InventTestTable
 audience: Application User
-ms.reviewer: YuyuScheller
+ms.reviewer: yuyus
 ms.search.scope: Core, Operations
 ms.custom: 11574
 ms.assetid: 5ac8a059-5cb4-4cb5-ba14-b944bd08dae9
@@ -69,7 +69,7 @@ ms.lasthandoff: 11/03/2017
 | 内部              | 品質指示番号または品質指示トランザクションのロット番号です。 たとえば、品質指示の一部として実行されるテストまたは製品の品質に関する従業員に、不適合が関連付けられることがあります。     |
 | 連産品の生産 | 製造オーダーのバッチ処理に関連付けられる連産品製造オーダーです。                                                                                                                                                    |
 
-不適合は問題タイプと関連付けられます。 問題タイプは、**問題タイプ** ページで各不適合タイプに関連付けることができる問題タイプを定義します。 たとえば、[**サービス要求**] タイプによる不適合の問題タイプは顧客からの苦情を反映し、[**内部不適合**] タイプによる不適合の問題タイプは欠陥コードの分類を表します。
+不適合は問題タイプと関連付けられます。 問題タイプは、**問題タイプ** ページで各不適合タイプに関連付けることができる問題タイプを定義します。 たとえば、[**サービス要求**] タイプによる不適合の問題タイプは顧客からの苦情を反映し、[内部不適合] タイプによる不適合の問題タイプは欠陥コードの分類を表します。
 
 新しい不適合を作成する場合は、不適合タイプおよび問題タイプを選択します。 最初の承認ステータスは、アクションの要求を表す [**新規**] です。 次のステップでは、承認ステータスを [**承認済**] または [**拒否**] に変更することにより不適合に対するアクションを行うかどうかを示すことができます。 また、(別のチェック ボックスをオンにすることにより) 不適合をクローズして不適合の処理が完了したことを示したり、不適合を再オープンして追加の検討が必要であることを示すこともできます。
 

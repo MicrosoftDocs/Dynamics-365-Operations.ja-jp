@@ -1,9 +1,9 @@
 ---
 title: "原価管理 Power BI コンテンツ"
-description: "このトピックでは、原価管理 Power BI コンテンツの内容について説明します。 Power BI レポートにアクセスする方法を説明し、コンテンツを作成するために使用するデータ モデルおよびエンティティについての情報を提供します。"
+description: "このトピックでは、原価管理 Power BI コンテンツの内容について説明します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f509852f15b9518d0a01be1f89d4f07c76caf341
+ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
+ms.openlocfilehash: e0f9042b2647a484a70670d1d29e8036401b39f1
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/19/2017
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-このトピックでは、原価管理 Power BI コンテンツの内容について説明します。 Power BI レポートにアクセスする方法を説明し、コンテンツを作成するために使用するデータ モデルおよびエンティティについての情報を提供します。
+このトピックでは、原価管理 Power BI コンテンツの内容について説明します。 
 
 # <a name="overview"></a>概要
 
@@ -51,8 +51,6 @@ ms.lasthandoff: 11/03/2017
 
 CostAggregatedCostStatementEntryEntity のプライマリ データ ソースは CostStatementCache テーブルです。 この表は、データ セット キャッシュ フレームワークで管理されます。 既定では、テーブルは 24 時間ごとに更新されますが、データ キャッシュのコンフィギュレーションで手動更新を有効にできます。 [**原価管理**] または [**コスト分析**] ワークスペースで手動更新を行うことができます。 CostStatementCache の更新の実行後、サイトで更新されたデータを表示するには Power BI.com の OData 接続を更新する必要があります。 この Power BI コンテンツの差異 (購買、製造) のメジャーは標準原価在庫方式によって評価される品目にのみ関連します。 製造差異は有効な原価と実現原価の差額として計算されます。 製造差異は、製造オーダーに [**終了**] のステータスがあるときに計算されます。 製造差異タイプおよび各タイプの計算方法の詳細については、「[完了した製造オーダーの差異の分析について](https://technet.microsoft.com/en-us/library/gg242850.aspx)」を参照してください。
 
-## <a name="accessing-the-power-bi-content"></a>Power BI コンテンツへのアクセス
-**原価管理** Power BI コンテンツは PowerBI.com から使用できます。Microsoft Dynamics 365 for Finance and Operations データの接続および読み込み方法の詳細については、「[PowerBI.com から Power BI コンテンツへのアクセス](power-bi-home-page.md)」を参照してください。
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Power BI コンテンツに含まれるメトリックス
 コンテンツには、レポートのページ一式が含まれます。 各ページは、グラフ、タイル、テーブルとして視覚化される一連のメトリックスで構成されています。 次の表に、**原価管理** Power BI コンテンツの表示の概要を示します。
@@ -136,13 +134,6 @@ Finance and Operations データは、**原価管理** Power BI コンテンツ�
 | 元帳          | 通貨、名前、説明                  |
 | サイト            | ID、名前、国、市町村                      |
 
-## <a name="additional-resources"></a>追加リソース
-エンティティと建物 Power BI の内容に関連する役立つリンクを次に示します:
-
--   [データ エンティティ](..\data-entities\data-entities.md)
--   [組織のコンテンツ パックの作成](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
--   [Power BI を使用したデータのモデル化](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
--   [Power BI タイルをワークスペースへ追加する](configure-power-bi-integration.md)
 
 
 

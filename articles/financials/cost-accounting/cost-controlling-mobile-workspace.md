@@ -15,7 +15,7 @@ ms.custom: 267114
 ms.assetid: 612f2988-b2b9-420d-9825-40b99dc0e204
 ms.search.region: global
 ms.author: aevengir
-ms.dyn365.ops.intro: Version 1611
+ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
 ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
@@ -132,13 +132,13 @@ Dynamics 365 for Unified Operations モバイル アプリをダウンロード�
 
 ## <a name="view-the-performance-of-your-cost-center-by-using-the-cost-controlling-mobile-workspace"></a>原価管理モバイル ワークスペースを使用して、原価部門のパフォーマンスを表示します。
 
-1.  モバイル デバイスで、[**原価管理**] ワークスペースを選択します。
-2.  [**原価オブジェクト管理**] を選択します。
+1.  モバイル デバイスで、[原価管理] ワークスペースを選択します。
+2.  [原価オブジェクト管理] を選択します。
 3.  **操作** を選択します。
 4.  **コンフィギュレーションの選択** を選択して、原価管理レイアウトを選択します。
 5.  **完了** を選択します。
 6.  **操作** を選択します。
-7.  [**原価オブジェクトの選択**] を選択して、アクセスが許可された原価部門を選択します。
+7.  [原価オブジェクトの選択] を選択して、アクセスが許可された原価部門を選択します。
 8.  **完了** を選択します。
 9.  原価部門の全体パフォーマンスを表示します。
 10. **現在の期間の詳細を** リンクを選択します。

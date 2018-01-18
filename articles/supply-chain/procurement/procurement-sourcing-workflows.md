@@ -19,10 +19,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 3bf244786e308ebcaee27a16fae378f41086f963
+ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
+ms.openlocfilehash: ce9bc42751cf0f537a0ddb5069aca7c9779a6bb1
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/14/2017
 
 ---
 
@@ -44,10 +44,11 @@ ms.lasthandoff: 11/03/2017
 |                                  |                                                               |
 |----------------------------------|---------------------------------------------------------------|
 | **タイプ**                         | **このタイプは次の目的で使用します。**                                          |
-| 購買要求の確認      | 購買要求の確認ワークフローを作成します。            |
-| 購買要求明細行の確認 | 購買要求明細行の確認ワークフローを作成します。       |
+| 購買要求の確認      | 購買要求の確認と承認ワークフローを作成します。            |
+| 購買要求明細行の確認 | 購買要求の明細行の確認と承認ワークフローを作成します。       |
 | 発注書ワークフロー          | 発注書の確認および承認ワークフローを作成します。     |
 | 購買注文明細行ワークフロー     | 発注書明細行の確認および承認ワークフローを作成します。 |
+| 仕入先追加申請ワークフロー  | 仕入先要求経由で新しい仕入先を追加するための確認と承認ワークフローを作成します。 |
 
 ## <a name="creating-a-workflow"></a>ワークフローの作成
 ワークフローを作成するには、[購買および調達 &gt; 設定 &gt; 購買および調達ワークフロー] に移動し、ワークフローのタイプを選択して新しいワークフローを作成します。  
@@ -75,6 +76,6 @@ ms.lasthandoff: 11/03/2017
 
 [購買要求ワークフロー](purchase-requisitions-workflow.md)
 
-
+[オンボーディングの仕入先](vendor-onboarding.md)
 
 

@@ -17,7 +17,7 @@ ms.assetid:
 ms.search.region: global
 ms.search.industry: 
 ms.author: crytt
-ms.dyn365.ops.intro: July 2017 update
+ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
 ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
@@ -94,7 +94,7 @@ Sales から Finance and Operations への勘定同期には、以下のテン�
 ## <a name="template-mapping-in-data-integration"></a>データ統合のテンプレートのマッピング
 
 > [!NOTE]
-> [**支払条件**]、[**運賃条件**]、[**配送条件**]、[**送付方法**]、および [**配送モード**] フィールドは、既定のマッピングには含まれていません。 これらのフィールドをマップするには、エンティティ間で同期される組織内のデータに固有の値マッピングを設定する必要があります。
+> [支払条件]、[運賃条件]、[配送条件]、[送付方法]、および [配送モード] フィールドは、既定のマッピングには含まれていません。 これらのフィールドをマップするには、エンティティ間で同期される組織内のデータに固有の値マッピングを設定する必要があります。
 
 次の図は、データ統合のテンプレート マッピングの例を示しています。 
 

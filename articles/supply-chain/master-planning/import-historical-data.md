@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ReqDemPlanCreateForecastDialog
 audience: Application User
 ms.reviewer: yuyus
 ms.search.scope: Core, Operations
@@ -29,7 +30,7 @@ ms.lasthandoff: 11/03/2017
 
 [!include[banner](../includes/banner.md)]
 
-需要予測の精度を確保するには、品目または品目配賦キーごとに、できるだけ多くの履歴需要データを取得する必要があります。 履歴需要データがまだインポートされていない場合は、Microsoft Dynamics 365 for Finance and Operations の [**履歴外需**] (ReqDemPlanHistoricalExternalDemandEntity) データ エンティティを使用してインポートします。
+需要予測の精度を確保するには、品目または品目配賦キーごとに、できるだけ多くの履歴需要データを取得する必要があります。 履歴需要データがまだインポートされていない場合は、Microsoft Dynamics 365 for Finance and Operations の \[**履歴外需**\] (ReqDemPlanHistoricalExternalDemandEntity) データ エンティティを使用してインポートします。
 
 **データ管理**ワークスペースで、エンティティのすべてのフィールドの概要を表示することができます。
 

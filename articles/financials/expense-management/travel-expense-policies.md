@@ -3,16 +3,17 @@ title: "経費ポリシーを定義します"
 description: "Microsoft Dynamics 365 for Finance and Operations, Enterprise edition で、作業者が経費精算書と出張費要求を入力して提出する際に従う必要がある経費ポリシーを定義できます。"
 author: saraschi2
 manager: AnnBe
-ms.date: 09/19/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: SysPolicyListPage
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: saraschi2
+ms.author: saraschi
 ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd

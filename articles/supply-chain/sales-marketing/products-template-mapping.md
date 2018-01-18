@@ -17,7 +17,7 @@ ms.assetid:
 ms.search.region: global
 ms.search.industry: 
 ms.author: crytt
-ms.dyn365.ops.intro: July 2017 update
+ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
 ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
@@ -54,13 +54,13 @@ ms.lasthandoff: 11/03/2017
 
 ## <a name="entity-flow"></a>エンティティのフロー
 
-製品は Finance and Operations で管理され、売上に同期されます。 Finance and Operations のデータ エンティティ、**販売可能な製品**のみを輸出します。つまり、製品には、販売注文で使用する必要のある情報があります。 [**リリースされた製品**] ページで [**検証**] 機能を使用して製品を検証する場合も、同じルールが適用されます。
+製品は Finance and Operations で管理され、売上に同期されます。 Finance and Operations のデータ エンティティ、**販売可能な製品**のみを輸出します。つまり、製品には、販売注文で使用する必要のある情報があります。 [リリースされた製品] ページで [検証] 機能を使用して製品を検証する場合も、同じルールが適用されます。
 
-[**製品番号**] がキーとして使用されます。これは、製品バリアントが [**製品バリアント**] ごとの個別の [**Product IDs**] で CDS と売上に同期されることを意味します。
+[製品番号] がキーとして使用されます。これは、製品バリアントが [製品バリアント] ごとの個別の [Product IDs] で CDS と売上に同期されることを意味します。
 
 ## <a name="prospect-to-cash-solution-for-sales"></a>売上の見込顧客を現金化するソリューション
 
-売上では、製品の新しいフィールド、[**外部管理**] が追加され、特定の製品が外部で維持されていることを示します。 値は、デフォルトでは、売上へのインポート時に [**はい**] に設定されます。
+売上では、製品の新しいフィールド、[外部管理] が追加され、特定の製品が外部で維持されていることを示します。 値は、デフォルトでは、売上へのインポート時に [はい] に設定されます。
 
 -   **外部管理が = はい**: 製品が Finance and Operations に由来し、売上では編集できません。
 
@@ -68,7 +68,7 @@ ms.lasthandoff: 11/03/2017
 
 -   **外部で管理を = 空白**: 見込顧客を現金化するソリューションを有効にする前に、製品が販売に存在します。
 
-**外部管理**情報を使用して、[**外部で管理された製品**] で [**見積**] と [**販売注文**] のみが Finance and Operations に確実に同期するようにします。
+**外部管理**情報を使用して、[外部で管理された製品] で [見積] と [販売注文] のみが Finance and Operations に確実に同期するようにします。
 
 **外部管理の製品**が、同じ通貨で最初に有効な**価格リスト**に自動的に追加されます。 このリストでは、**名前**がアルファベット順で構成されています。 Finance and Operations の製品販売価格は**価格リスト**の価格として使用されています。 これは、Finance and Operations の**製品の販売通貨**ごとに、売上の**価格リスト**を必要とすることを意味します。 リリースされた販売可能商品の通貨は、製品が輸出される法人の会計通貨に設定されます。
 
@@ -77,15 +77,15 @@ ms.lasthandoff: 11/03/2017
 
 ## <a name="preconditions-and-mapping-setup"></a>前提条件とマッピングの設定
 
--   一番最初の同期を実行する前に、Finance and Operation の既存製品に対して [**特徴的製品テーブル**] を入力する必要があります。 このジョブが完了するまで、既存の製品は同期されません。
+-   一番最初の同期を実行する前に、Finance and Operation の既存製品に対して [特徴的製品テーブル] を入力する必要があります。 このジョブが完了するまで、既存の製品は同期されません。
 
-    -   Finance and Operations の場合は、[検索] を使用し、[**特徴的製品テーブルの設定**] を検索します。
+    -   Finance and Operations の場合は、[検索] を使用し、[特徴的製品テーブルの設定] を検索します。
 
-    -   [**特徴的製品テーブルの設定**] をクリックし、ジョブを実行します。 このジョブは、1 回のみ実行する必要があります。
+    -   [特徴的製品テーブルの設定] をクリックし、ジョブを実行します。 このジョブは、1 回のみ実行する必要があります。
 
 -   **Source -\> CDS mapping SalesUnitSymbol / DefaultSellingUnitOfMeasure** の順に検索できる Finance and Operations で **Unit of measure** (UOM) を販売する上で必要となる **ValueMap** を確認します。
 
--   **ソース \> CD** の順に移動し、[**CDS の組織 ID (Organization_OrganizationId)**] を更新します。
+-   **ソース \> CD** の順に移動し、[CDS の組織 ID (Organization_OrganizationId)] を更新します。
 
     -   テンプレート値のデフォルトは ORG001 です。
 

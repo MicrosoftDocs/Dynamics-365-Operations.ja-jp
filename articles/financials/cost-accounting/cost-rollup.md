@@ -10,13 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CAMCostRollupRule, CAMDimensionHierarchy
 audience: Application User
-ms.reviewer: YuyuScheller
+ms.reviewer: yuyus
 ms.search.scope: Operations, Core
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: YuyuScheller
+ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
@@ -226,7 +226,7 @@ HR サービスは、次の大きさの配分によって消費されます。
 > [!NOTE]
 > ポリシーが存在する場合、**コスト ロールアップ ポリシー** のルールに基づいて仕訳入力が作成されます。 表示される残高は、間接費計算の残高です。
 
-仕訳入力からアクセスする [**コスト オブジェクトのコスト残高仕訳入力の詳細**] ページでは、どのように残高が取得されるかが表示されます。
+仕訳入力からアクセスする [コスト オブジェクトのコスト残高仕訳入力の詳細] ページでは、どのように残高が取得されるかが表示されます。
 
 **例: コスト オブジェクト CC002 財務の仕訳帳入力**
 

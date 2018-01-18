@@ -1,7 +1,7 @@
 ---
 title: "価格のシミュレーション"
 description: "この記事では、見積の価格シミュレーションについて説明します。 価格シミュレーションを使用すると、見積プロセス中に将来の販売価格に対する控除の影響を評価してから、特定の価格を確約することができます。"
-author: YuyuScheller
+author: omulvad
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: SalesQuotationPriceSimulation
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: bis
 ms.search.scope: Core, Operations
 ms.custom: 12254
 ms.assetid: 92be7c85-73cf-4f77-833c-d37ce779a031

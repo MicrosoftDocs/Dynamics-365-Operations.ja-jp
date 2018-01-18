@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
 ms.technology: 
+ms.search.form: RetailParameters
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
@@ -36,7 +37,7 @@ ms.lasthandoff: 11/03/2017
 小売ソリューションが Microsoft Dynamics Lifecycle Services (LCS) によって配置された後、基本的なコンフィギュレーション データを作成するために、小売コンフィギュレーションを初期化する必要があります。 **重要:** 小売コンフィギュレーションを初期化する前に、小売店舗を設定する法人ごとの言語と住所が指定されていることを確認します。 この手順は、小売に使用する法人ごとに完了する必要があります。 小売のコンフィギュレーションを初期化するには、次の手順に従います。
 
 1.  Dynamics 365 for Retail クライアントを起動します。
-2.  [**小売**] &gt; [**本社の設定**] &gt; [**パラメーター**] &gt; [**小売パラメーター**] をクリックします。
+2.  [小売] &gt; [本社の設定] &gt; [パラメーター] &gt; [小売パラメーター] をクリックします。
 3.  **初期化**をクリックします。
 
 初期化によって、次の既定のコンフィギュレーション データを作成します:

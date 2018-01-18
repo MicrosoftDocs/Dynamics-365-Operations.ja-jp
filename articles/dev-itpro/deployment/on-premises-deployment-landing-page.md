@@ -3,7 +3,7 @@ title: "オンプレミス配置"
 description: "このトピックでは、オンプレミス配置に関するコンテンツへのリンクと情報を提供します。"
 author: kfend
 manager: AnnBe
-ms.date: 06/24/2017
+ms.date: 12/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: kfend
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 855967a9aacd4881315c5d5fefa06b909cd4cb59
-ms.openlocfilehash: 69151ed1c0a0a06e72bbdc8b33eb2fc68e9cc8eb
+ms.sourcegitcommit: 346f5b7a5fbbe2c41aaa54e0b36fe0c46baec0af
+ms.openlocfilehash: 697f5a43124aace645e0cc8c6df98a4f986ab852
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 12/20/2017
 
 ---
 # <a name="on-premises-deployment-landing-page"></a>オンプレミス配置のランディング ページ
@@ -32,6 +32,7 @@ Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (オンプ
 
 ## <a name="get-started"></a>使用開始
 - [Dynamics 365 for Finance and Operations, Enterprise Edition (オンプレミス) の概要](on-premises-overview.md)
+- [オンプレミス配置の計画](plan-onprem-deployment.md)
 - [オンプレミス配置のシステム要件](../../fin-and-ops/get-started/system-requirements-on-prem.md)
 - [オンプレミス環境のハードウェアのサイズ設定](../../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md)
 - [オンライン サービスおよびオンプレミス ソフトウェアのライフサイクル ポリシー](../migration-upgrade/versions-update-policy.md)
@@ -41,6 +42,7 @@ Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (オンプ
 ## <a name="onboard"></a>Onboard
 - [Lifecycle Services でのオンプレミス プロジェクトの作成](../lifecycle-services/lbd-create-lcs-on-prem-project.md)
 - [オンプレミス環境の設定と配置](setup-deploy-on-premises-environments.md)
+- [オンプレミス環境でのネットワーク プリンター デバイスのインストール](../analytics/install-network-printer-onprem.md)
 - [オンプレミス配置の SQL Server Reporting Services のコンフィギュレーション](../analytics/configure-ssrs-on-premises.md)
 - [カスタム モデルの開発とオンプレミス環境への配置](develop-deploy-custom-models-on-premises.md)
 
@@ -54,6 +56,7 @@ Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (オンプ
 - [オンプレミス配置の再配置](redeploy-on-prem.md)
 
 ## <a name="other-resources"></a>その他のリソース
+- [Dynamics 365 for Finance and Operations, Enterprise Edition (オンプレミス) のトラブルシューティング](troubleshoot-on-prem.md)
 - [オンプレミス配置で実装されていない機能](../../fin-and-ops/get-started/features-not-implemented-on-prem.md)
 - [削除予定の機能](../migration-upgrade/deprecated-features.md)
 - [ソフトウェアのライフサイクル ポリシーおよびリリースの一覧](../migration-upgrade/versions-update-policy.md)

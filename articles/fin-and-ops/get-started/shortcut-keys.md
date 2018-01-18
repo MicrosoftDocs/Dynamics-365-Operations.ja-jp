@@ -3,7 +3,7 @@ title: "キーボード ショートカット"
 description: "以下のキーボード ショートカットは、Dynamics 365 for Finance and Operations, Enterprise edition 全体に適用されます。"
 author: jasongre
 manager: AnnBe
-ms.date: 10/10/2017
+ms.date: 12/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7a828090fa34eb96d2b557eb06e48ad05b421ae8
-ms.openlocfilehash: 8e87721af34e1527d1d8eb254f0443e37d137730
+ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
+ms.openlocfilehash: 8bf0f44583d183d992547c773f2cf7a8ac1db5fc
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 12/14/2017
 
 ---
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 11/20/2017
 
 **注記:** ここで説明するショートカット キーは、米国のキーボード レイアウトのものです。 他のキーボード レイアウト キーは、米国のキーボード キーとまったく同じではない場合があります。
 
-## <a name="finding-a-shorcut"></a>ショートカットの検索
+## <a name="finding-a-shortcut"></a>ショートカットの検索
 現在のプラットフォーム更新プログラム 11 では、ユーザー インターフェイスから直接、現在利用可能なショートカットを見つけることができます。 コントロールを右クリックし、[**ショートカットの表示**] を選択します。 これにより、ページの場所によって使用できるショートカットを表示するダイアログ ボックスが開きます。 
 
 
@@ -65,7 +65,7 @@ ms.lasthandoff: 11/20/2017
 | 本日へ移動                         | Ctrl + Home                                 |
 | 今日の日付を選択します。                     | T                                         |
 | 選択した日付をクリアする               | C                                         |
-| [なし] (または日付の最大値) を選択する          | 無                                         |
+| \[なし\] (または日付の最大値) を選択する          | 無                                         |
 
 ## <a name="factbox-shortcuts"></a>情報ボックスのショートカット
 |                                                                                 |                                           |
@@ -143,6 +143,9 @@ ms.lasthandoff: 11/20/2017
 | 最初のレコードに移動                                                                                               | Ctrl + Home                       |
 | 最後のレコードに移動                                                                                                | Ctrl + End                        |
 | グリッドで既定のアクションを実行する<br><br>**注記:** フォーカスがハイパーリンクを含んでいるセル上にあり、すべてのセルがそのハイパーリンクを持つ列にある時、このショートカットが有効になります。                 | 入力                           |
+| 選択した行およびヘッダー行間でフォーカスを切り替え                                                               | Alt + Shift + H                     |
+| (ヘッダー行のフォーカスで) 現在の列を大きくする/小さくする                                                  | 右方向キー / 左方向キー        |
+| (ヘッダー行のフォーカスで) 現在の列のグリッド フィルターを開く                                              | 入力                           |
 
 ## <a name="input-control-shortcuts"></a>入力コントロールのショートカット
 |                                                                              |                               |

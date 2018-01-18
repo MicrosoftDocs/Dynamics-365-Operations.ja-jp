@@ -3,11 +3,12 @@ title: "予算計画"
 description: "このラボの目的は、予算計画領域で、Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 機能の更新のガイドされたビューを提供することです。 このラボの目的は、予算計画モジュールのクイック コンフィギュレーションの例、およびこのコンフィギュレーションを使用してどのように予算計画が達成されるかのショーケースを示すことです。  この実習では、次の業務プロセスまたはタスクに特に焦点を合わせます。-    - 予算計画のための組織階層の作成およびユーザー セキュリティの構成   - 予算計画シナリオ、予算計画の列、レイアウトおよび Excel テンプレートの定義   - 予算計画プロセスの作成および有効化   - 総勘定元帳からの実績読み込みによる予算計画ドキュメントの作成   - 配賦を使用した予算計画ドキュメント データの調整   - Excel での予算計画の編集"
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: BudgetPlanningConfiguration
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations

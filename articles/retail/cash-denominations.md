@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
 ms.technology: 
+ms.search.form: RetailStoreTable, RetailStoreCashDeclarationTable
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
@@ -38,7 +39,7 @@ ms.lasthandoff: 11/03/2017
 ![現金貨幣単位](./media/image1-denomination.png)
 
 貨幣単位を定義する方法:
-1. [**新規**] をクリックします。
+1. [新規] をクリックします。
 1. 種類 (硬貨または紙幣) を指定します。
 1. 金額 (値) を指定します。
 

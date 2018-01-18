@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: HT
-ms.sourcegitcommit: 408854737847590841814ed74209618bbf22ec23
-ms.openlocfilehash: 7c99869b70d8b564da859ce2b19ccfff927141b2
+ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
+ms.openlocfilehash: f3f6690d661ca30b5f3a9dacc75f7b8c6ec36e24
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 12/14/2017
 
 ---
 
@@ -34,8 +34,6 @@ ms.lasthandoff: 11/27/2017
 
 最新バージョンにアップグレードする方法についての情報は、[最新の更新プログラムにアップグレードするためのプロセス](../../dev-itpro/migration-upgrade/upgrade-latest-update.md) を参照します。
 
-> [!NOTE]
-> 現在、Dynamics 365 for Operations (オンプレミス) の名前は変更されています。 通信およびライセンス ガイド全体で参照される Dynamics 365 for Operations (オンプレミス型) が表示されます。 製品を展開する際に表示される製品名は、Dynamics 365 for Finance and Operations、Enterprise エディションです。 これらの名前はどちらも同じ製品を指しています。
 
 ## <a name="application-releases"></a>アプリケーション リリース
 
@@ -60,6 +58,13 @@ ms.lasthandoff: 11/27/2017
 <tr class="even">
 
 </tr>
+<tr class="even">
+<td>Microsoft Dynamics 365 for Finance and Operations Enterprise Edition</td>
+<td>7.3</td>
+<td>7.3.11971.56116</td>
+<td>2017 年 12 月</td>
+<td><a href="whats-new-application-7.3-update.md">Dynamics 365 for Finance and Operations, Enterprise edition 7.3 の新機能および変更された機能</a></td>
+</tr></tr>
 <tr class="even">
 <td>Microsoft Dynamics 365 for Finance and Operations Enterprise Edition</td>
 <td>2017 年 7 月</td>

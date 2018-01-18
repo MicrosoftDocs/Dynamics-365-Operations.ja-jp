@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: WHSRFAutoConfirm
 audience: Application User
 ms.reviewer: bis
 ms.search.scope: Core, Operations
@@ -33,8 +34,8 @@ ms.lasthandoff: 11/03/2017
 クラスタ ピッキングの品目の検証は、非クラスタ ピッキング プロセスで品目を確認する場合と同様に働きます。 設定は、製品バー コード設定に基づいています。
 
 ## <a name="set-up-item-verification-with-cluster-picking"></a>クラスタ ピッキングの品目の検証の設定
-1.  モバイル デバイスのメニュー項目で、作業確認の設定フォームを開きます: [**倉庫管理**] > [**倉庫管理**] > [**設定**] > [**モバイル デバイス**] > [**モバイル デバイスのメニュー項目**] に進みます。
-2.  モバイル デバイス メニュー品目から、[**作業確認の設定**] を開きます。
+1.  モバイル デバイスのメニュー項目で、作業確認の設定フォームを開きます: [倉庫管理] > [倉庫管理] > [設定] > [モバイル デバイス] > [モバイル デバイスのメニュー項目] に進みます。
+2.  モバイル デバイス メニュー品目から、[作業確認の設定] を開きます。
 
 | オプション        | 説明   | 
 | ------------- | ------------- |

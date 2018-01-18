@@ -3,11 +3,12 @@ title: "詳細な口座調整を使用した口座取引明細書の調整"
 description: "詳細な口座調整機能では、電子口座取引明細書をインポートし、Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition での銀行トランザクションに合わせて自動的に調整することができます。 このトピックでは、調整プロセスについて説明します。"
 author: saraschi2
 manager: AnnBe
-ms.date: 09/11/2017
+ms.date: 01/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: BankReconciliationWorksheet
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
