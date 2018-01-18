@@ -74,7 +74,7 @@ ms.lasthandoff: 12/14/2017
 </tr>
 <tr class="odd">
 <td>[<strong>確認後支払ファイルの概要</strong>] ページで銀行の確認後支払ファイルを取り消します。</td>
-<td>[<strong>確認後支払ファイルの取り消し</strong>] (BankPositivePayRecall)</td>
+<td>\[<strong>確認後支払ファイルの取り消し</strong>\] (BankPositivePayRecall)</td>
 </tr>
 </tbody>
 </table>

@@ -79,7 +79,7 @@ ms.lasthandoff: 12/21/2017
     - **[KB4033093](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4033093&bugId=3824604&qc=bd7e15e1fb56066b3a82ce48b691cf1ffbc934a7473fa888545b2211a8d416c5)** - データ エンティティによる見込顧客を現金化する統合のサポートが必要です。
     
     > [!NOTE]
-    > 修正プログラムをインストール後、[SalesPopulateProspectToCash] フォームから次のバッチ ジョブをトリガーしなければなりません。 このフォームは一度しか必要ではないので非表示になります。 フォームにアクセスするには、環境にログインし、次の事項をブラウザーのアドレス内のURLに追加します。&mi=action:SalesPopulateProspectToCash、たとえば、https://ax123456.cloud.test.dynamics.com/?cmp=USMF&mi=action:SalesPopulateProspectToCash。 このフォームを開くには、[OK] をクリックします。 これにより固有値を持つ新しい [SalesLine]、[SalesQuotationLine] および [CustInvoiceTrans] テーブルに [LineCreationSequnceNumber] フィールドが設定され、製品リストが更新されます。 これは見込顧客が現金化の統合を作業するために必要です。
+    > 修正プログラムをインストール後、[**SalesPopulateProspectToCash**] フォームから次のバッチ ジョブをトリガーしなければなりません。 このフォームは一度しか必要ではないので非表示になります。 フォームにアクセスするには、環境にログインし、次の事項をブラウザーのアドレス内のURLに追加します。&mi=action:SalesPopulateProspectToCash、たとえば、https://ax123456.cloud.test.dynamics.com/?cmp=USMF&mi=action:SalesPopulateProspectToCash。 このフォームを開くには、[OK] をクリックします。 これにより固有値を持つ新しい [**SalesLine**]、[**SalesQuotationLine**] および [**CustInvoiceTrans**] テーブルに [**LineCreationSequnceNumber**] フィールドが設定され、製品リストが更新されます。 これは見込顧客が現金化の統合を作業するために必要です。
 
 
 ## <a name="system-requirements-for-sales"></a>Sales のシステム要件
@@ -98,12 +98,12 @@ ms.lasthandoff: 12/21/2017
 ### <a name="install-the-prospect-to-cash-solution-for-sales"></a>Sales の見込顧客を現金化するソリューションのインストール
 
 1. CustomerSource から [Dynamics 365 for Sales の見込顧客を現金化ソリューション パッケージ zip ファイル](https://mbs.microsoft.com/customersource/Global/365Enterprise/downloads/product-releases/MD365FNOPENTProspectToCash) をダウンロードします。
-2. zip ファイルがブロックされていないことを確認します。 それ以外の場合、ソリューション パッケージをインストールする際に次のエラー メッセージを受け取るかもしれません [「インポート パッケージ見つかりませんでした」]。 zip ファイルのブロックを解除するには、ファイルを右クリックし [**プロパティ**] を選択します。 [ブロック解除] を選択します。
+2. zip ファイルがブロックされていないことを確認します。 それ以外の場合、ソリューション パッケージをインストールする際に次のエラー メッセージを受け取るかもしれません [「インポート パッケージ見つかりませんでした」]。 zip ファイルのブロックを解除するには、ファイルを右クリックし [**プロパティ**] を選択します。 [**ブロック解除**] を選択します。
 3. 解凍して、**PackageDeployer.exe** を実行します。
 4. 売上インスタンスで見込顧客を現金化するソリューションのインストール:
 
-    1. 配置タイプとして [Office 365] を選択します。
+    1. 配置タイプとして [**Office 365**] を選択します。
     2. [**高度な表示**] を選択します。
-    3. クイック インストールするには、[地域] を選択します。 [わからない] を選択する場合、システムはすべての地域を検索するためインストールに時間がかかります。
+    3. クイック インストールするには、[地域] を選択します。 [**わからない**] を選択する場合、システムはすべての地域を検索するためインストールに時間がかかります。
     4. インストールする権限を持つ管理者ユーザーの [ユーザー名] および [パスワード] を入力します。
 

@@ -35,9 +35,9 @@ ms.lasthandoff: 12/18/2017
 
 **プラクティス マネージャー** Power BI コンテンツは、プラクティス マネージャーおよびプロジェクト マネージャー用に作成されました。 組織が取り組んでいるプロジェクトに関連した主要メトリックスが提供されます。 ダッシュ ボードでは、プロジェクトおよび関連する顧客の概要を示します。 レポート レベルのフィルターは、特定の法人のレポートに使用できます。 この Power BI コンテンツは、プロジェクト会計集計の測定からデータを取得します。
 
-[プラクティス マネージャー] Power BI コンテンツには、5 つのレポート ページが含まれます。1 つの概要ページと、プロジェクト原価、収益、達成額管理、および時間測定値の詳細を示す 4 つのページで、さまざまな分析コードに分割されています。
+[**プラクティス マネージャー**] Power BI コンテンツには、5 つのレポート ページが含まれます。1 つの概要ページと、プロジェクト原価、収益、達成額管理、および時間測定値の詳細を示す 4 つのページで、さまざまな分析コードに分割されています。
 
-コンテンツ内のすべての金額はシステム通貨で表示されます。 システム通貨は、[システム パラメーター] ページで設定できます。
+コンテンツ内のすべての金額はシステム通貨で表示されます。 システム通貨は、[**システム パラメーター**] ページで設定できます。
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI コンテンツへのアクセス
 
@@ -60,12 +60,12 @@ ms.lasthandoff: 12/18/2017
 
 ## <a name="understanding-the-data-model-and-entities"></a>データ モデルおよびエンティティの理解
 
-次のデータは、[プラクティス マネージャー] Power BI コンテンツのレポート ページに入力するために使用されます。 このデータは、エンティティ ストアで実施される集計の測定として表されます。 エンティティ ストアは、分析に最適化された Microsoft SQL Server データベースです。 詳細については、「[エンティティ ストアとの Power BI の統合](power-bi-integration-entity-store.md)」を参照してください。
+次のデータは、[**プラクティス マネージャー**] Power BI コンテンツのレポート ページに入力するために使用されます。 このデータは、エンティティ ストアで実施される集計の測定として表されます。 エンティティ ストアは、分析に最適化された Microsoft SQL Server データベースです。 詳細については、「[エンティティ ストアとの Power BI の統合](power-bi-integration-entity-store.md)」を参照してください。
 
 次のセクションでは、各エンティティで使用される集計の測定について説明します。
 
 ### <a name="entity-projectaccountingcubeactualhourutilization"></a>エンティティ。ProjectAccountingCube\_ActualHourUtilization
-[データ ソース:] ProjEmplTrans
+[**データ ソース:**] ProjEmplTrans
 
 | キー集計の測定      | フィールド                              | 説明 |
 |--------------------------------|------------------------------------|-------------|
@@ -73,7 +73,7 @@ ms.lasthandoff: 12/18/2017
 | 支払請求可能な実績非稼動時間数   | Sum(ActualBurdenBillableRate)      | 実績非稼動の比率の合計。 |
 
 ### <a name="entity-projectaccountingcubeactuals"></a>エンティティ。ProjectAccountingCube\_Actuals
-[データ ソース:] ProjTransPosting
+[**データ ソース:**] ProjTransPosting
 
 | キー集計の測定 | フィールド              | 説明 |
 |---------------------------|--------------------|-------------|
@@ -81,7 +81,7 @@ ms.lasthandoff: 12/18/2017
 | 実際原価               | Sum(ActualCost)    | 全トランザクション タイプの転記済原価の合計。 |
 
 ### <a name="entity-projectaccountingcubecustomer"></a>エンティティ。ProjectAccountingCube\_Customer
-[データ ソース:] CustTable
+[**データ ソース:**] CustTable
 
 | キー集計の測定 | フィールド                                             | 説明 |
 |---------------------------|---------------------------------------------------|-------------|
@@ -89,7 +89,7 @@ ms.lasthandoff: 12/18/2017
 
 
 ### <a name="entity-projectaccountingcubeforecasts"></a>エンティティ。ProjectAccountingCube\_Forecasts
-[データ ソース:] ProjTransBudget
+[**データ ソース:**] ProjTransBudget
 
 | キー集計の測定 | フィールド                  | 説明 |
 |---------------------------|------------------------|-------------|
@@ -98,14 +98,14 @@ ms.lasthandoff: 12/18/2017
 | 予算粗利       | Sum(BudgetGrossMargin) | 全予測収益の合計と全予測原価の合計の差額。 |
 
 ### <a name="entity-projectaccountingcubeprojectplancostsview"></a>エンティティ。ProjectAccountingCube\_ProjectPlanCostsView
-[データ ソース:] プロジェクト
+[**データ ソース:**] プロジェクト
 
 | キー集計の測定 | フィールド                    | 説明 |
 |---------------------------|--------------------------|-------------|
 | 予定原価              | Sum(SumOfTotalCostPrice) | 計画タスクのすべてのプロジェクト トランザクション タイプにおける合計原価価格の見積。 |
 
 ### <a name="entity-projectaccountingcubeprojects"></a>エンティティ。ProjectAccountingCube\_Projects
-[データ ソース:] プロジェクト
+[**データ ソース:**] プロジェクト
 
 | キー集計の測定    | フィールド | 説明 |
 |------------------------------|-------|-------------|
@@ -116,7 +116,7 @@ ms.lasthandoff: 12/18/2017
 | 達成額                 | ProjectAccountingCube\_Projects[プロジェクトの合計予定原価] × ProjectAccountingCube\_Projects[作業の完了率] | 合計予定原価と作業の完了率の乗算。 |
 
 ### <a name="entity-projectaccountingcubetotalestimatedcosts"></a>エンティティ。ProjectAccountingCube\_TotalEstimatedCosts 
-[データ ソース:] ProjTable
+[**データ ソース:**] ProjTable
 
 | キー集計の測定       | フィールド               | 説明 |
 |---------------------------------|---------------------|-------------|
