@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: VendInvoiceWorkspace
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
@@ -18,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: ff1818d927f7ab9212c4d5d9109c426be5e0e152
-ms.openlocfilehash: 0d11e4fecc4c42636be63c1ce622f0b2f8e58f2c
+ms.sourcegitcommit: 17a7d9c40d07524378a671397fed566b9bd3af6b
+ms.openlocfilehash: af284d31714df7fe87d49b311c951f9df818fa22
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 01/19/2018
 
 ---
 
@@ -47,10 +48,12 @@ ms.lasthandoff: 11/29/2017
 -   <span data-ttu-id="a4e5c-113">支払済の請求書は、Finance and Operations に全額支払われた請求書です。</span><span class="sxs-lookup"><span data-stu-id="a4e5c-113">Paid invoices are those that have been fully paid in Finance and Operations.</span></span>
 
 <span data-ttu-id="a4e5c-114">タイルをクリックすると、フィルター処理された [**請求書の一覧**] ページが開きます。</span><span class="sxs-lookup"><span data-stu-id="a4e5c-114">Clicking on a tile will open a filtered view of the **Invoices list** page.</span></span>
+
 ### <a name="tabular-lists"></a><span data-ttu-id="a4e5c-115">表形式リスト</span><span class="sxs-lookup"><span data-stu-id="a4e5c-115">Tabular lists</span></span>
 
 <span data-ttu-id="a4e5c-116">[**表形式リスト**] セクションでは、請求の状態は概要タイル (下書きと提出済、未承認リスト) と同様の方法で分割されます。</span><span class="sxs-lookup"><span data-stu-id="a4e5c-116">In the **Tabular lists** section, the status of the invoicing is broken down in similar ways as the summary tiles: Draft and Submitted, not approved lists.</span></span> <span data-ttu-id="a4e5c-117">下書きの状態では、請求書がワークフローに提出されるかまたは削除されます。</span><span class="sxs-lookup"><span data-stu-id="a4e5c-117">While in the Draft state, an invoice can be submitted to workflow or deleted.</span></span> <span data-ttu-id="a4e5c-118">最後の表形式の一覧は、請求書を検索するためのオプションです。</span><span class="sxs-lookup"><span data-stu-id="a4e5c-118">The last tabular list is an option to find invoices.</span></span> <span data-ttu-id="a4e5c-119">検索する際、検索をより迅速に行うために、フィルター処理することができます。</span><span class="sxs-lookup"><span data-stu-id="a4e5c-119">You can filter as you search, to allow for faster searches.</span></span>
-<span data-ttu-id="a4e5c-120">すべての仕入先請求書リスト ページ</span><span class="sxs-lookup"><span data-stu-id="a4e5c-120">All vendor invoices list page</span></span>
+
+<a name="all-vendor-invoices-list-page"></a><span data-ttu-id="a4e5c-120">すべての仕入先請求書リスト ページ</span><span class="sxs-lookup"><span data-stu-id="a4e5c-120">All vendor invoices list page</span></span>
 -----------------------------
 
 <span data-ttu-id="a4e5c-121">**仕入先コラボレーション請求書** リストページの全ての転記済みおよび未転記の仕入先請求書を表示できます。</span><span class="sxs-lookup"><span data-stu-id="a4e5c-121">You can view all posted and unposted vendor invoices on the **Vendor collaboration invoices** list page.</span></span> <span data-ttu-id="a4e5c-122">このリストページを使用して、請求書の支払状態を表示します。</span><span class="sxs-lookup"><span data-stu-id="a4e5c-122">You can use this list page to view the payment status of the invoices.</span></span> <span data-ttu-id="a4e5c-123">支払状態には、未転記、未払、部分的な支払、全額支払が含まれます。</span><span class="sxs-lookup"><span data-stu-id="a4e5c-123">The payment statuses include Unposted, Unpaid, Partially paid, and Fully paid.</span></span>
