@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: VendInvoiceWorkspace
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
@@ -47,10 +48,12 @@ ms.lasthandoff: 11/29/2017
 -   支払済の請求書は、Finance and Operations に全額支払われた請求書です。
 
 タイルをクリックすると、フィルター処理された [**請求書の一覧**] ページが開きます。
+
 ### <a name="tabular-lists"></a>表形式リスト
 
 [**表形式リスト**] セクションでは、請求の状態は概要タイル (下書きと提出済、未承認リスト) と同様の方法で分割されます。 下書きの状態では、請求書がワークフローに提出されるかまたは削除されます。 最後の表形式の一覧は、請求書を検索するためのオプションです。 検索する際、検索をより迅速に行うために、フィルター処理することができます。
-すべての仕入先請求書リスト ページ
+
+<a name="all-vendor-invoices-list-page"></a>すべての仕入先請求書リスト ページ
 -----------------------------
 
 **仕入先コラボレーション請求書** リストページの全ての転記済みおよび未転記の仕入先請求書を表示できます。 このリストページを使用して、請求書の支払状態を表示します。 支払状態には、未転記、未払、部分的な支払、全額支払が含まれます。
