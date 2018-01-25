@@ -16,10 +16,10 @@ ms.author: tjvass
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
-ms.openlocfilehash: 7a3ff5a00af72dd7810337d1390b39d4f849dada
+ms.sourcegitcommit: 8075abccdcdde21df967dcc9948a738895f35cef
+ms.openlocfilehash: 9447b0d9eedbdd56f1e221a48f687a94a19d31c4
 ms.contentlocale: ja-jp
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 01/25/2018
 
 ---
 
@@ -30,14 +30,14 @@ ms.lasthandoff: 01/19/2018
 > [!NOTE]
 > <span data-ttu-id="93e3d-104">この機能は、Dynamics 365 for Finance and Operations (バージョン 7.2 以降) でサポートされています。</span><span class="sxs-lookup"><span data-stu-id="93e3d-104">This feature is supported in Dynamics 365 for Finance and Operations (version 7.2 and later).</span></span>
 
-# <a name="introduction"></a><span data-ttu-id="93e3d-105">はじめに</span><span class="sxs-lookup"><span data-stu-id="93e3d-105">Introduction</span></span>
+## <a name="introduction"></a><span data-ttu-id="93e3d-105">はじめに</span><span class="sxs-lookup"><span data-stu-id="93e3d-105">Introduction</span></span>
 <span data-ttu-id="93e3d-106">このトピックでは、ワークスペースの [分析] タブで Microsoft Power BI レポートを組み込む方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="93e3d-106">This topic shows how to embed a Microsoft Power BI report on the **Analytics** tab of a workspace.</span></span> <span data-ttu-id="93e3d-107">ここで示した例では、フリート管理アプリケーションの **予約管理** ワークスペースを拡張して、分析ワークスペースを [分析] タブに埋め込みます。</span><span class="sxs-lookup"><span data-stu-id="93e3d-107">For the example that is given here, we will extend the **Reservation management** workspace in the Fleet Management application to embed an analytical workspace on an **Analytics** tab.</span></span>
 
-# <a name="prerequisites"></a><span data-ttu-id="93e3d-108">前提条件</span><span class="sxs-lookup"><span data-stu-id="93e3d-108">Prerequisites</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="93e3d-108">前提条件</span><span class="sxs-lookup"><span data-stu-id="93e3d-108">Prerequisites</span></span>
 + <span data-ttu-id="93e3d-109">プラットフォーム更新プログラム 8 以降を実行する開発環境へのアクセス。</span><span class="sxs-lookup"><span data-stu-id="93e3d-109">Access to a developer environment that runs Platform update 8 or later.</span></span>
 + <span data-ttu-id="93e3d-110">Microsoft Power BI Desktop を使用して作成され、Entity ストア データベースから取得されたデータ モデルを持つ分析レポート (.pbix ファイル)。</span><span class="sxs-lookup"><span data-stu-id="93e3d-110">An analytical report (.pbix file) that was created by using Microsoft Power BI Desktop, and that has a data model that is sourced from the Entity store database.</span></span>
 
-# <a name="overview"></a><span data-ttu-id="93e3d-111">概要</span><span class="sxs-lookup"><span data-stu-id="93e3d-111">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="93e3d-111">概要</span><span class="sxs-lookup"><span data-stu-id="93e3d-111">Overview</span></span>
 <span data-ttu-id="93e3d-112">既存のアプリケーション ワークスペースを拡張する場合でも、自分の新しいワークスペースを導入する場合でも、埋め込み分析ビューを使用して、ビジネス データの洞察的でインタラクティブなビューを提供できます。</span><span class="sxs-lookup"><span data-stu-id="93e3d-112">Whether you extend an existing application workspace or introduce a new workspace of your own, you can use embedded analytical views to deliver insightful and interactive views of your business data.</span></span> <span data-ttu-id="93e3d-113">分析ワークスペース タブを追加するプロセスには、4 つのステップがあります。</span><span class="sxs-lookup"><span data-stu-id="93e3d-113">The process for adding an analytical workspace tab has four steps.</span></span>
 
 1. <span data-ttu-id="93e3d-114">Dynamics 365 リソースとして .pbix ファイルを追加します。</span><span class="sxs-lookup"><span data-stu-id="93e3d-114">Add a .pbix file as a Dynamics 365 resource.</span></span>
@@ -48,7 +48,7 @@ ms.lasthandoff: 01/19/2018
 > [!NOTE]
 > <span data-ttu-id="93e3d-118">分析レポートを作成する方法の詳細については、[Power BI デスクトップの使い方](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="93e3d-118">For more information about how to create analytical reports, see [Getting started with Power BI Desktop](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/).</span></span> <span data-ttu-id="93e3d-119">このページは、魅力的な分析レポート作成ソリューションの作成に役立つ素晴らしいソースです。</span><span class="sxs-lookup"><span data-stu-id="93e3d-119">This page is a great source for insights that can help you create compelling analytical reporting solutions.</span></span>
 
-# <a name="add-a-pbix-file-as-a-resource"></a><span data-ttu-id="93e3d-120">リソースとして .pbix ファイルを追加します。</span><span class="sxs-lookup"><span data-stu-id="93e3d-120">Add a .pbix file as a resource</span></span>
+## <a name="add-a-pbix-file-as-a-resource"></a><span data-ttu-id="93e3d-120">リソースとして .pbix ファイルを追加します。</span><span class="sxs-lookup"><span data-stu-id="93e3d-120">Add a .pbix file as a resource</span></span>
 <span data-ttu-id="93e3d-121">開始する前に、ワークスペースに埋め込む Power BI レポートを作成または取得する必要があります。</span><span class="sxs-lookup"><span data-stu-id="93e3d-121">Before you begin, you must create or obtain the Power BI report that you will embed in the workspace.</span></span> <span data-ttu-id="93e3d-122">分析レポートを作成する方法の詳細については、[Power BI デスクトップの使い方](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="93e3d-122">For more information about how to create analytical reports, see [Getting started with Power BI Desktop](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/).</span></span>
  
 <span data-ttu-id="93e3d-123">.pbix ファイルを Visual Studio プロジェクト コンポーネントとして追加するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="93e3d-123">Follow these steps to add a .pbix file as a Visual Studio project artifact.</span></span>
@@ -66,7 +66,7 @@ ms.lasthandoff: 01/19/2018
   
 <span data-ttu-id="93e3d-131">Dynamics 365 リソースとして .pbix ファイルを追加したため、ワークスペースにレポートを埋め込み、メニュー項目を使用して直接リンクを追加できるようになりました。</span><span class="sxs-lookup"><span data-stu-id="93e3d-131">Now that you've added the .pbix file as a Dynamics 365 resource, you can embed the reports in workspaces and add direct links by using menu items.</span></span>
 
-# <a name="add-a-tab-control-to-an-application-workspace"></a><span data-ttu-id="93e3d-132">アプリケーション ワークスペースへのタブ コントロールの追加</span><span class="sxs-lookup"><span data-stu-id="93e3d-132">Add a tab control to an application workspace</span></span>
+## <a name="add-a-tab-control-to-an-application-workspace"></a><span data-ttu-id="93e3d-132">アプリケーション ワークスペースへのタブ コントロールの追加</span><span class="sxs-lookup"><span data-stu-id="93e3d-132">Add a tab control to an application workspace</span></span>
 <span data-ttu-id="93e3d-133">この例では、**FMClerkWorkspace** フォームの定義に [分析] タブを追加することで、フリート管理モデルの **引当管理** ワークスペースを拡張します。</span><span class="sxs-lookup"><span data-stu-id="93e3d-133">In this example, we will extend the **Reservation management** workspace in the Fleet Management model by adding the **Analytics** tab to the definition of the **FMClerkWorkspace** form.</span></span>
  
 <span data-ttu-id="93e3d-134">次の図は、**FMClerkWorkspace** フォームが Microsoft Visual Studio のデザイナーにどのように表示されるかを示しています。</span><span class="sxs-lookup"><span data-stu-id="93e3d-134">The following illustration shows what the **FMClerkWorkspace** form looks like in the designer in Microsoft Visual Studio.</span></span>
@@ -105,7 +105,7 @@ ms.lasthandoff: 01/19/2018
  
 <span data-ttu-id="93e3d-161">これでアプリケーション フォームの定義を拡張するためのタスクが完了しました。</span><span class="sxs-lookup"><span data-stu-id="93e3d-161">You've now completed the task of extending the application form definition.</span></span> <span data-ttu-id="93e3d-162">カスタマイズを行うために拡張機能を使用する方法に関する詳細については、[カスタマイズ: オーバーレイおよび拡張機能](../extensibility/customization-overlayering-extensions.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="93e3d-162">For more information about how to use extensions to do customizations, see  [Customization: Overlayering and extensions](../extensibility/customization-overlayering-extensions.md).</span></span>
 
-# <a name="add-x-business-logic-to-embed-a-viewer-control"></a><span data-ttu-id="93e3d-163">ビューアー コントロールを埋め込むための X++ ビジネス ロジックの追加</span><span class="sxs-lookup"><span data-stu-id="93e3d-163">Add X++ business logic to embed a viewer control</span></span>
+## <a name="add-x-business-logic-to-embed-a-viewer-control"></a><span data-ttu-id="93e3d-163">ビューアー コントロールを埋め込むための X++ ビジネス ロジックの追加</span><span class="sxs-lookup"><span data-stu-id="93e3d-163">Add X++ business logic to embed a viewer control</span></span>
 <span data-ttu-id="93e3d-164">これらの手順に従い、**引当管理** ワークスペースに埋め込まれているレポート ビューアー コントロールを初期化するビジネス ロジックを追加します。</span><span class="sxs-lookup"><span data-stu-id="93e3d-164">Follow these steps to add business logic that initializes the report viewer control that is embedded in the **Reservation management** workspace.</span></span>
 
 1. <span data-ttu-id="93e3d-165">[FMClerkWorkspace] フォーム デザイナーを開き、デザイン定義を拡張します。</span><span class="sxs-lookup"><span data-stu-id="93e3d-165">Open the **FMClerkWorkspace** form designer to extend the design definition.</span></span>
@@ -151,12 +151,12 @@ ms.lasthandoff: 01/19/2018
 > [!NOTE]
 > <span data-ttu-id="93e3d-172">既存の操作ビューは、ページのタイトルの下のワークスペース タブを使用してアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="93e3d-172">You can access the existing operational view by using the workspace tabs below the page title.</span></span>
 
-# <a name="reference"></a><span data-ttu-id="93e3d-173">参照</span><span class="sxs-lookup"><span data-stu-id="93e3d-173">Reference</span></span>
+## <a name="reference"></a><span data-ttu-id="93e3d-173">参照</span><span class="sxs-lookup"><span data-stu-id="93e3d-173">Reference</span></span>
 
-## <a name="pbireporthelperinitializereportcontrol-method"></a><span data-ttu-id="93e3d-174">PBIReportHelper.initializeReportControl 方法</span><span class="sxs-lookup"><span data-stu-id="93e3d-174">PBIReportHelper.initializeReportControl method</span></span>
+### <a name="pbireporthelperinitializereportcontrol-method"></a><span data-ttu-id="93e3d-174">PBIReportHelper.initializeReportControl 方法</span><span class="sxs-lookup"><span data-stu-id="93e3d-174">PBIReportHelper.initializeReportControl method</span></span>
 <span data-ttu-id="93e3d-175">このセクションでは、フォーム グループ コントロールで Power BI レポート (.pbix リソース) の埋め込みに使用されるヘルパー クラスに関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="93e3d-175">This section provides information about the helper class that is used to embed a Power BI report (.pbix resource) in a form group control.</span></span>
 
-### <a name="syntax"></a><span data-ttu-id="93e3d-176">構文</span><span class="sxs-lookup"><span data-stu-id="93e3d-176">Syntax</span></span>
+#### <a name="syntax"></a><span data-ttu-id="93e3d-176">構文</span><span class="sxs-lookup"><span data-stu-id="93e3d-176">Syntax</span></span>
 ```
 public static void initializeReportControl(
      str                 _resourceName,
@@ -167,7 +167,7 @@ public static void initializeReportControl(
      List                _defaultFilters = new List(Types::Class))
 ```
 
-### <a name="parameters"></a><span data-ttu-id="93e3d-177">パラメーター</span><span class="sxs-lookup"><span data-stu-id="93e3d-177">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="93e3d-177">パラメーター</span><span class="sxs-lookup"><span data-stu-id="93e3d-177">Parameters</span></span>
 
 | <span data-ttu-id="93e3d-178">氏名</span><span class="sxs-lookup"><span data-stu-id="93e3d-178">Name</span></span> | <span data-ttu-id="93e3d-179">説明</span><span class="sxs-lookup"><span data-stu-id="93e3d-179">Description</span></span> |
 |---|---|

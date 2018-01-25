@@ -20,10 +20,10 @@ ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 2fbf9d84fa0fec32004936542003115cf580d91c
+ms.sourcegitcommit: 8075abccdcdde21df967dcc9948a738895f35cef
+ms.openlocfilehash: 09aef6e149bdbe8366b0b971212b80bdbfb47a9f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/25/2018
 
 ---
 
@@ -36,8 +36,7 @@ ms.lasthandoff: 11/03/2017
 
 <span data-ttu-id="f396a-105">**注記:** このトピックは、倉庫管理の機能に適用されます。</span><span class="sxs-lookup"><span data-stu-id="f396a-105">**Note:** This topic applies to features in Warehouse management.</span></span> <span data-ttu-id="f396a-106">在庫管理の機能には適用しません。</span><span class="sxs-lookup"><span data-stu-id="f396a-106">It doesn’t apply to features in Inventory management.</span></span> <span data-ttu-id="f396a-107">Finance and Operations - Warehousing は倉庫作業の実行に使用できるアプリケーションです。</span><span class="sxs-lookup"><span data-stu-id="f396a-107">Finance and Operations - Warehousing is an application that you can use to perform warehouse tasks.</span></span> <span data-ttu-id="f396a-108">アプリで使用されるフィールド名を定義してコンフィギュレーションし、フィールド名に割り当てる優先順位をフィールド名をコンフィギュレーションできます。</span><span class="sxs-lookup"><span data-stu-id="f396a-108">You can define and configure the field names that are used in the app, as well as configure the priority to which the field names should be assigned.</span></span> <span data-ttu-id="f396a-109">このトピックでは、これらの倉庫アプリ フィールド名と優先順位の定義およびコンフィギュレーション方法、および Finance and Operations - Warehousing での使用方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="f396a-109">This topic explains how to define and configure these warehouse app field names and priorities, and how they are used in Finance and Operations - Warehousing.</span></span> <span data-ttu-id="f396a-110">Finance and Operations - Warehousing への接続をコンフィギュレーションする方法の詳細については、チュートリアル「[Finance and Operations – Warehousing のインストールと構成](install-configure-warehousing-app.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f396a-110">For detailed information about how to configure the connection to Finance and Operations  - Warehousing, refer to the tutorial [Install and configure Finance and Operations - Warehousing](install-configure-warehousing-app.md).</span></span>
 
-<a name="configure-warehouse-app-field-names"></a><span data-ttu-id="f396a-111">倉庫アプリ フィールド名のコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="f396a-111">Configure warehouse app field names</span></span>
-===================================
+## <a name="configure-warehouse-app-field-names"></a><span data-ttu-id="f396a-111">倉庫アプリ フィールド名のコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="f396a-111">Configure warehouse app field names</span></span>
 
 <span data-ttu-id="f396a-112">Finance and Operations - Warehousing をモバイル デバイスで使用するときに、[倉庫アプリ フィールド名] ページでお使いのデバイスにメタデータをどのように表示するかをコンフィギュレーションできます。</span><span class="sxs-lookup"><span data-stu-id="f396a-112">When you use Finance and Operations - Warehousing on your mobile device, you can configure how metadata should be displayed on your device on the **Warehouse app field names** page.</span></span> <span data-ttu-id="f396a-113">Finance and Operations の新しい会社で、[既定の設定の作成] をクリックして倉庫モバイル デバイス ワークフローで使用されるすべてのフィールド名を生成してから、優先される入力モードと入力タイプを割り当てます。</span><span class="sxs-lookup"><span data-stu-id="f396a-113">In a new company in Finance and Operations, select **Create default setup** to generate all field names that will be used in the warehouse mobile device workflows, and then assign a preferred input mode and input type to them.</span></span> <span data-ttu-id="f396a-114">すべてのフィールド名を生成すると、次の入力オプションを選択できます。</span><span class="sxs-lookup"><span data-stu-id="f396a-114">After you have generated all field names, you can select the following input options.</span></span>
 
@@ -70,8 +69,7 @@ ms.lasthandoff: 11/03/2017
 </tbody>
 </table>
 
-<a name="configure-warehouse-app-field-priority"></a><span data-ttu-id="f396a-132">倉庫アプリ フィールドの優先順位のコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="f396a-132">Configure warehouse app field priority</span></span>
-======================================
+## <a name="configure-warehouse-app-field-priority"></a><span data-ttu-id="f396a-132">倉庫アプリ フィールドの優先順位のコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="f396a-132">Configure warehouse app field priority</span></span>
 
 <span data-ttu-id="f396a-133">[倉庫アプリ フィールドの優先順位] ページで、フィールド名を異なる優先順位グループに配置できます。</span><span class="sxs-lookup"><span data-stu-id="f396a-133">On the **Warehouse app field priority** page, you can put field names into different priority groups.</span></span> <span data-ttu-id="f396a-134">これにより、倉庫作業者がアプリを使用してタスクを実行する際に、どの情報を主要なタスク ページに表示すべきかを決定することができます。</span><span class="sxs-lookup"><span data-stu-id="f396a-134">This makes it possible to decide what information should be displayed on the main task page when warehouse workers perform tasks using the app.</span></span> <span data-ttu-id="f396a-135">[既定の設定の作成] をクリックすると、優先順位グループの既定の設定が生成されます。</span><span class="sxs-lookup"><span data-stu-id="f396a-135">If you click **Create default setup**, a default set of priority groups will be generated.</span></span> <span data-ttu-id="f396a-136">必要な数だけ優先順位グループを作成することもできますが、3 つの優先順位グループだけがタスク ページに表示されます。</span><span class="sxs-lookup"><span data-stu-id="f396a-136">It is possible to create as many priority groups as needed, but only three priority groups will be shown on the task page.</span></span> <span data-ttu-id="f396a-137">Finance and Operations はアプリにメタデータを送信する際に、優先順位グループに応じて各フィールドに相対的な優先順位を割り当てて、アプリはメタデータを含む上位 3 つの優先順位グループをタスク ページに表示します。</span><span class="sxs-lookup"><span data-stu-id="f396a-137">When Finance and Operations sends metadata to the app, it will assign each field a relative priority depending on its priority group, and the app will display the first three priority groups contained in the metadata on the task page.</span></span> <span data-ttu-id="f396a-138">オーバーフローしているメタデータの残りは、2 番目の詳細ページに表示されます。</span><span class="sxs-lookup"><span data-stu-id="f396a-138">The rest of the overflowing metadata will be displayed on a secondary details page.</span></span> <span data-ttu-id="f396a-139">次の表に、5 つの優先順位グループの例を示します。</span><span class="sxs-lookup"><span data-stu-id="f396a-139">The following table shows an example of five priority groups.</span></span>
 

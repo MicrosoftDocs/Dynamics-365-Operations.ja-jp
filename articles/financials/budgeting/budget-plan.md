@@ -19,10 +19,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: 09266e28c0fec4200e1644049e4a7f2880ebdcc4
+ms.sourcegitcommit: 8075abccdcdde21df967dcc9948a738895f35cef
+ms.openlocfilehash: b28d3abb31fe2b54bd207b3dbdd26b26edb31695
 ms.contentlocale: ja-jp
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 01/25/2018
 
 ---
 
@@ -53,10 +53,9 @@ ms.lasthandoff: 01/17/2018
 
 <span data-ttu-id="7646f-128">[![Excel テンプレート](./media/screenshot2-1024x352.png)](./media/screenshot2.png)</span><span class="sxs-lookup"><span data-stu-id="7646f-128">[![Excel template](./media/screenshot2-1024x352.png)](./media/screenshot2.png)</span></span>
 
-<a name="exercise-1-configuration"></a><span data-ttu-id="7646f-129">練習 1: コンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="7646f-129">Exercise 1: Configuration</span></span>
-=========================
+## <a name="exercise-1-configuration"></a><span data-ttu-id="7646f-129">練習 1: コンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="7646f-129">Exercise 1: Configuration</span></span>
 
-## <a name="task-1-create-organizational-hierarchy"></a><span data-ttu-id="7646f-130">**タスク 1: 組織階層の作成**</span><span class="sxs-lookup"><span data-stu-id="7646f-130">**Task 1: Create organizational hierarchy**</span></span>
+### <a name="task-1-create-organizational-hierarchy"></a><span data-ttu-id="7646f-130">**タスク 1: 組織階層の作成**</span><span class="sxs-lookup"><span data-stu-id="7646f-130">**Task 1: Create organizational hierarchy**</span></span>
 <span data-ttu-id="7646f-131">すべての予算作成プロセスが財務部門で発生すると、ジュリアは、財務部門のみから構成される非常に単純な組織階層を作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="7646f-131">As all the budgeting process happens in the Finance department, therefore Julia needs to create a very simple organizational hierarchy – consisting of Finance department only.</span></span> <span data-ttu-id="7646f-132">1.1。</span><span class="sxs-lookup"><span data-stu-id="7646f-132">1.1.</span></span> <span data-ttu-id="7646f-133">組織階層 ([組織の管理] &gt; [組織] &gt; [組織階層]) の順に移動し、[新規] ボタンをクリックします</span><span class="sxs-lookup"><span data-stu-id="7646f-133">Navigate to Organization hierarchies (Organization administration &gt; Organizations &gt; Organization hierarchies) and click New button</span></span>
 
 ![組織階層](./media/screenshot3.png) 
@@ -85,7 +84,7 @@ ms.lasthandoff: 01/17/2018
 
 <span data-ttu-id="7646f-155">[![有効日](./media/screenshot9.png)](./media/screenshot9.png)</span><span class="sxs-lookup"><span data-stu-id="7646f-155">[![Effective date](./media/screenshot9.png)](./media/screenshot9.png)</span></span>
 
-## <a name="task-2-configure-user-security"></a><span data-ttu-id="7646f-156">タスク 2: ユーザーのセキュリティのコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="7646f-156">Task 2: Configure user security</span></span>
+### <a name="task-2-configure-user-security"></a><span data-ttu-id="7646f-156">タスク 2: ユーザーのセキュリティのコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="7646f-156">Task 2: Configure user security</span></span>
 <span data-ttu-id="7646f-157">予算計画は、予算計画のデータへのアクセスを構成する際に特別なセキュリティ ポリシーを使用します。</span><span class="sxs-lookup"><span data-stu-id="7646f-157">Budget planning uses special security policies to configure access to budget plans data.</span></span> <span data-ttu-id="7646f-158">ジュリアは、自分自身に対して、財務予算計画へのアクセス権を与える必要があります。</span><span class="sxs-lookup"><span data-stu-id="7646f-158">Julia needs to give access to Finance budget plans for herself.</span></span> 
 
 <span data-ttu-id="7646f-159">2.1。</span><span class="sxs-lookup"><span data-stu-id="7646f-159">2.1.</span></span> <span data-ttu-id="7646f-160">DEMF の法人のコンテキストに切り替えます。</span><span class="sxs-lookup"><span data-stu-id="7646f-160">Switch to DEMF legal entity context.</span></span> 
@@ -109,7 +108,7 @@ ms.lasthandoff: 01/17/2018
 
 <span data-ttu-id="7646f-178">[![アクセスを許可](./media/screenshot14.png)](./media/screenshot14.png)</span><span class="sxs-lookup"><span data-stu-id="7646f-178">[![Grant access](./media/screenshot14.png)](./media/screenshot14.png)</span></span>
 
-## <a name="task-3-create-scenarios"></a><span data-ttu-id="7646f-179">タスク 3: シナリオの作成</span><span class="sxs-lookup"><span data-stu-id="7646f-179">Task 3: Create scenarios</span></span>
+### <a name="task-3-create-scenarios"></a><span data-ttu-id="7646f-179">タスク 3: シナリオの作成</span><span class="sxs-lookup"><span data-stu-id="7646f-179">Task 3: Create scenarios</span></span>
 <span data-ttu-id="7646f-180">3.1。</span><span class="sxs-lookup"><span data-stu-id="7646f-180">3.1.</span></span> <span data-ttu-id="7646f-181">[予算作成] &gt; [設定] &gt; [予算計画] &gt; [予算計画のコンフィギュレーション] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="7646f-181">Navigate to Budgeting&gt;Setup &gt; Budget planning &gt; Budget planning configuration.</span></span> <span data-ttu-id="7646f-182">シナリオのページで、このラボでさらに使用するシナリオに注意してください: 前年度の実績と予算。</span><span class="sxs-lookup"><span data-stu-id="7646f-182">In the Scenarios page note the scenarios we are going to use further in this lab: Previous year actuals and Budgeted.</span></span> 
 
 <span data-ttu-id="7646f-183">*注: 必要であれば、この練習用の新しいシナリオを作成し、それらを代わりに使用します。*</span><span class="sxs-lookup"><span data-stu-id="7646f-183">*Note: You can create new scenarios for this exercise if desired and use those instead.*</span></span> 
@@ -118,7 +117,7 @@ ms.lasthandoff: 01/17/2018
 
 <span data-ttu-id="7646f-185">*注: ジュリアは予算計画に正式な承認プロセスを使用していないため、ワークフロー、ステージおよびこの実習でのワークフロー ステージの設定を省き、既存の自動的に承認する設定を使用します。このワークフロー コンフィギュレーションについては付録を参照してください。*</span><span class="sxs-lookup"><span data-stu-id="7646f-185">*Note: as Julia is not using formal approval process for budget preparation, we will skip Workflows, Stages and Workflow stages setup in this lab and will use existing setup for Auto – approve workflow. See appendix for this workflow configuration.*</span></span>
 
-## <a name="task-4-create-budget-plan-columns"></a><span data-ttu-id="7646f-186">タスク 4: 予算計画の列の作成</span><span class="sxs-lookup"><span data-stu-id="7646f-186">Task 4: Create budget plan columns</span></span>
+### <a name="task-4-create-budget-plan-columns"></a><span data-ttu-id="7646f-186">タスク 4: 予算計画の列の作成</span><span class="sxs-lookup"><span data-stu-id="7646f-186">Task 4: Create budget plan columns</span></span>
 <span data-ttu-id="7646f-187">予算計画の列は、予算計画のドキュメント レイアウトに使用できる金銭情報または数量に基づく列です。</span><span class="sxs-lookup"><span data-stu-id="7646f-187">Budget plan columns are either Monetary or quantity based columns that can be used in budget plan document layout.</span></span> <span data-ttu-id="7646f-188">上記の例では、"前年度" の実績を表す列、および会計年度の各月を表す 12 の列を作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="7646f-188">In our example we need to create a column for Previous year actuals and 12 columns to represent each month in a budgeted year.</span></span> <span data-ttu-id="7646f-189">列は単純に [追加] ボタンをクリックして値を入力するか、または "データ エンティティ" を使用して作成します。</span><span class="sxs-lookup"><span data-stu-id="7646f-189">Columns can be created either by simply clicking Add button and filling in the values, or with a help of Data entity.</span></span> <span data-ttu-id="7646f-190">このラボでは、値を入力するために "データ エンティティ" を使用します。</span><span class="sxs-lookup"><span data-stu-id="7646f-190">In this lab we will use Data entity to fill in the values.</span></span> 
 
 <span data-ttu-id="7646f-191">4.1。</span><span class="sxs-lookup"><span data-stu-id="7646f-191">4.1.</span></span> <span data-ttu-id="7646f-192">[予算作成] &gt; [設定] &gt; [予算計画] &gt; [予算計画のコンフィギュレーション] で "列" ページを開きます。</span><span class="sxs-lookup"><span data-stu-id="7646f-192">In Budgeting&gt;Setup &gt; Budget planning &gt; Budget planning configuration open Columns page.</span></span> <span data-ttu-id="7646f-193">フォームの右上隅にある Office ボタンをクリックして、列 (フィルター処理なし) を選択します</span><span class="sxs-lookup"><span data-stu-id="7646f-193">Click Office button on the top right corner of the form and pick Columns (unfiltered)</span></span> 
@@ -151,7 +150,7 @@ ms.lasthandoff: 01/17/2018
 
 <span data-ttu-id="7646f-219">[![更新反映](./media/screenshot23.png)](./media/screenshot23.png)</span><span class="sxs-lookup"><span data-stu-id="7646f-219">[![Refresh](./media/screenshot23.png)](./media/screenshot23.png)</span></span>
 
-## <a name="task-5-create-budget-plan-document-layouts-and-templates"></a><span data-ttu-id="7646f-220">タスク 5: 予算計画のドキュメント レイアウトおよびテンプレートの作成</span><span class="sxs-lookup"><span data-stu-id="7646f-220">Task 5: Create budget plan document layouts and templates</span></span>
+### <a name="task-5-create-budget-plan-document-layouts-and-templates"></a><span data-ttu-id="7646f-220">タスク 5: 予算計画のドキュメント レイアウトおよびテンプレートの作成</span><span class="sxs-lookup"><span data-stu-id="7646f-220">Task 5: Create budget plan document layouts and templates</span></span>
 <span data-ttu-id="7646f-221">レイアウトは、ユーザーが予算計画のドキュメントを開いたときに、予算計画ドキュメントの行グリッドが、どのように表示されるかを定義します。</span><span class="sxs-lookup"><span data-stu-id="7646f-221">Layout defines how budget plan document lines grid is going to look like when user opens budget plan document.</span></span> <span data-ttu-id="7646f-222">さまざまな角度で同じデータを表示するように予算計画のドキュメントのレイアウトを切り替えることもできます。</span><span class="sxs-lookup"><span data-stu-id="7646f-222">It is also possible to switch the layout for budget plan document to see the same data in different angles.</span></span> <span data-ttu-id="7646f-223">ここでは、ジュリアが予算計画のドキュメントで使用するために定義した列があるため、ジュリアは、予算データ (このラボのシナリオの概要セクションを参照) を作成するために使用する Excel の表に似た、予算計画のドキュメント レイアウトを作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="7646f-223">Now, as she’s got columns defined to be used with our budget plan document, Julia needs to create a budget plan document layout, that would look similar to the Excel table she uses to create budget data (see section Scenario overview in this lab)</span></span> 
 
 <span data-ttu-id="7646f-224">5.1.</span><span class="sxs-lookup"><span data-stu-id="7646f-224">5.1.</span></span> <span data-ttu-id="7646f-225">[予算作成] &gt; [設定] &gt; [予算計画] &gt; [予算計画のコンフィギュレーション] で "レイアウト" ページを開きます。</span><span class="sxs-lookup"><span data-stu-id="7646f-225">In Budgeting&gt;Setup &gt; Budget planning &gt; Budget planning configuration open Layouts page.</span></span> <span data-ttu-id="7646f-226">月間の予算入力のために新しいレイアウトを作成します。</span><span class="sxs-lookup"><span data-stu-id="7646f-226">Create a new layout for Monthly budget entry:</span></span>
@@ -172,7 +171,7 @@ ms.lasthandoff: 01/17/2018
 
 <span data-ttu-id="7646f-240">5.3.</span><span class="sxs-lookup"><span data-stu-id="7646f-240">5.3.</span></span> <span data-ttu-id="7646f-241">&lt; オプションのステップ&gt; Excel テンプレートを変更して、フォーミュラの合計、ヘッダー フィールド、書式などの追加により、より使いやすくすることができます。変更を保存し、レイアウト &gt; アップロードの順にクリックして、予算計画レイアウトにファイルをアップロードします[![アップロード](./media/screenshot26.png)](./media/screenshot26.png)</span><span class="sxs-lookup"><span data-stu-id="7646f-241">&lt; Optional step&gt; Modify Excel template to make it look more user friendly – add total formulas, header fields, formatting, etc. Save the changes and upload the file to budget plan layout by clicking Layout &gt; Upload [![Upload](./media/screenshot26.png)](./media/screenshot26.png)</span></span>
 
-## <a name="task-6-create-a-budget-planning-process"></a><span data-ttu-id="7646f-242">タスク 6: 予算計画プロセスの作成</span><span class="sxs-lookup"><span data-stu-id="7646f-242">Task 6: Create a budget planning process</span></span>
+### <a name="task-6-create-a-budget-planning-process"></a><span data-ttu-id="7646f-242">タスク 6: 予算計画プロセスの作成</span><span class="sxs-lookup"><span data-stu-id="7646f-242">Task 6: Create a budget planning process</span></span>
 <span data-ttu-id="7646f-243">ジュリアは、新たな予算計画を開始するために、上記のすべての設定を組み合わせて、新しい予算計画プロセスを作成して有効化する必要があります。</span><span class="sxs-lookup"><span data-stu-id="7646f-243">Julia needs to create and activate a new budget planning process combining all the setup above to start entering budget plans.</span></span> <span data-ttu-id="7646f-244">予算計画プロセスは、どの予算作成の組織、ワークフロー、レイアウトおよびテンプレートが予算計画の作成に使用されるかを定義します。</span><span class="sxs-lookup"><span data-stu-id="7646f-244">Budget planning process defines what budgeting organizations, workflow, layouts and templates will be used for creating budget plans.</span></span> 
 
 <span data-ttu-id="7646f-245">6.1。</span><span class="sxs-lookup"><span data-stu-id="7646f-245">6.1.</span></span> <span data-ttu-id="7646f-246">[予算作成] &gt; [設定] &gt; [予算計画] &gt; [予算計画プロセス] の順に移動し、新しいレコードを作成します。</span><span class="sxs-lookup"><span data-stu-id="7646f-246">Navigate to Budgeting &gt; Setup &gt; Budget planning &gt; Budget planning process and create a new record.</span></span>
@@ -193,10 +192,9 @@ ms.lasthandoff: 01/17/2018
 
 <span data-ttu-id="7646f-258">[![有効化する](./media/screenshot28.png)](./media/screenshot28.png)</span><span class="sxs-lookup"><span data-stu-id="7646f-258">[![Activate](./media/screenshot28.png)](./media/screenshot28.png)</span></span>
 
-<a name="exercise-2-process-simulation"></a><span data-ttu-id="7646f-259">練習 2: プロセスのシミュレーション</span><span class="sxs-lookup"><span data-stu-id="7646f-259">Exercise 2: Process simulation</span></span>
-==============================
+## <a name="exercise-2-process-simulation"></a><span data-ttu-id="7646f-259">練習 2: プロセスのシミュレーション</span><span class="sxs-lookup"><span data-stu-id="7646f-259">Exercise 2: Process simulation</span></span>
 
-## <a name="task-7-generate-initial-data-for-budget-plan-from-general-ledger"></a><span data-ttu-id="7646f-260">タスク 7: 総勘定元帳から予算計画の初期データを生成する</span><span class="sxs-lookup"><span data-stu-id="7646f-260">Task 7: Generate initial data for budget plan from General ledger</span></span>
+### <a name="task-7-generate-initial-data-for-budget-plan-from-general-ledger"></a><span data-ttu-id="7646f-260">タスク 7: 総勘定元帳から予算計画の初期データを生成する</span><span class="sxs-lookup"><span data-stu-id="7646f-260">Task 7: Generate initial data for budget plan from General ledger</span></span>
 <span data-ttu-id="7646f-261">7.1。</span><span class="sxs-lookup"><span data-stu-id="7646f-261">7.1.</span></span> <span data-ttu-id="7646f-262">[予算作成] &gt; [定期処理] &gt; [一般会計から予算計画を生成] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="7646f-262">Navigate to Budgeting &gt; Periodic &gt; Generate budget plan from General ledger.</span></span> <span data-ttu-id="7646f-263">定期的なプロセス パラメーターを入力し、[生成] ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="7646f-263">Fill in the periodic process parameters and click button Generate.</span></span> 
 
 <span data-ttu-id="7646f-264">[![生成](./media/screenshot29.png)](./media/screenshot29.png)</span><span class="sxs-lookup"><span data-stu-id="7646f-264">[![Generate](./media/screenshot29.png)](./media/screenshot29.png)</span></span> 
@@ -209,7 +207,7 @@ ms.lasthandoff: 01/17/2018
 
 <span data-ttu-id="7646f-271">[![予算計画表示](./media/screenshot31.png)](./media/screenshot31.png)</span><span class="sxs-lookup"><span data-stu-id="7646f-271">[![Budget plan display](./media/screenshot31.png)](./media/screenshot31.png)</span></span>
 
-## <a name="task-8-create-current-year-budget-based-on-previous-year-actuals"></a><span data-ttu-id="7646f-272">タスク 8: 前年度の実績に基づく今年度の予算の作成</span><span class="sxs-lookup"><span data-stu-id="7646f-272">Task 8: Create current year budget based on previous year actuals</span></span>
+### <a name="task-8-create-current-year-budget-based-on-previous-year-actuals"></a><span data-ttu-id="7646f-272">タスク 8: 前年度の実績に基づく今年度の予算の作成</span><span class="sxs-lookup"><span data-stu-id="7646f-272">Task 8: Create current year budget based on previous year actuals</span></span>
 <span data-ttu-id="7646f-273">配賦方法を予算計画で使用できます。これにより、1 つのシナリオから別のシナリオに予算計画を簡単にコピーする、それらを複数の期間に分割する、または分析コードに配賦することができます。</span><span class="sxs-lookup"><span data-stu-id="7646f-273">Allocation methods can be used in budget plan to easily copy information for budget plans from one scenario to another/ spread them across periods/ allocate to dimensions.</span></span> <span data-ttu-id="7646f-274">前年度の実績からの今年度の予算を作成するために配賦を使用します。</span><span class="sxs-lookup"><span data-stu-id="7646f-274">We will use allocations to create current year budget from previous year actuals.</span></span> 
 
 <span data-ttu-id="7646f-275">8.1。</span><span class="sxs-lookup"><span data-stu-id="7646f-275">8.1.</span></span> <span data-ttu-id="7646f-276">予算計画ドキュメント グリッドのすべての行を選択し、予算の配賦ボタンをクリックします</span><span class="sxs-lookup"><span data-stu-id="7646f-276">Pick all lines in the budget plan document grid and click button allocate budget</span></span> 
@@ -224,7 +222,7 @@ ms.lasthandoff: 01/17/2018
 
 <span data-ttu-id="7646f-282">[![販売曲線](./media/screenshot34.png)](./media/screenshot34.png)</span><span class="sxs-lookup"><span data-stu-id="7646f-282">[![Sales curve](./media/screenshot34.png)](./media/screenshot34.png)</span></span>
 
-## <a name="task-9-adjust-budget-plan-document-using-excel-and-finalize-the-document"></a><span data-ttu-id="7646f-283">タスク 9: 予算計画ドキュメントを Excel を使用して調整し、ドキュメントを確定する</span><span class="sxs-lookup"><span data-stu-id="7646f-283">Task 9: Adjust budget plan document using Excel and finalize the document</span></span>
+### <a name="task-9-adjust-budget-plan-document-using-excel-and-finalize-the-document"></a><span data-ttu-id="7646f-283">タスク 9: 予算計画ドキュメントを Excel を使用して調整し、ドキュメントを確定する</span><span class="sxs-lookup"><span data-stu-id="7646f-283">Task 9: Adjust budget plan document using Excel and finalize the document</span></span>
 <span data-ttu-id="7646f-284">9.1。</span><span class="sxs-lookup"><span data-stu-id="7646f-284">9.1.</span></span> <span data-ttu-id="7646f-285">[ボタン ワークシート] をクリックして、Excel でドキュメントの内容を開きます</span><span class="sxs-lookup"><span data-stu-id="7646f-285">Click Button worksheet to open document contents in Excel</span></span>
 
 <span data-ttu-id="7646f-286">[![Excel](./media/screenshot35.png)](./media/screenshot35.png)</span><span class="sxs-lookup"><span data-stu-id="7646f-286">[![Excel](./media/screenshot35.png)](./media/screenshot35.png)</span></span>
@@ -239,8 +237,7 @@ ms.lasthandoff: 01/17/2018
 
 <span data-ttu-id="7646f-294">ワークフローが完了すると、予算計画ドキュメント ステージは [承認済] に変更します。</span><span class="sxs-lookup"><span data-stu-id="7646f-294">Once workflow completes, budget plan document stage changes to Approved.</span></span> <span data-ttu-id="7646f-295">[![承認済](./media/screenshot38.png)](./media/screenshot38.png)</span><span class="sxs-lookup"><span data-stu-id="7646f-295">[![Approved](./media/screenshot38.png)](./media/screenshot38.png)</span></span>
 
-<a name="appendix"></a><span data-ttu-id="7646f-296">付録</span><span class="sxs-lookup"><span data-stu-id="7646f-296">Appendix</span></span>
-========
+## <a name="appendix"></a><span data-ttu-id="7646f-296">付録</span><span class="sxs-lookup"><span data-stu-id="7646f-296">Appendix</span></span>
 
 ### <a name="auto-approve-workflow-configuration"></a><span data-ttu-id="7646f-297">自動承認ワークフロー コンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="7646f-297">Auto-Approve workflow configuration</span></span>
 

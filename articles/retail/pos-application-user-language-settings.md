@@ -20,10 +20,10 @@ ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: dacc072ab5c070010d86302fa08a3066125b23a6
+ms.sourcegitcommit: 8075abccdcdde21df967dcc9948a738895f35cef
+ms.openlocfilehash: b49450a7deab94c62e173f730007bc40de23b267
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/25/2018
 
 ---
 
@@ -34,9 +34,7 @@ ms.lasthandoff: 11/03/2017
 
 <span data-ttu-id="fb970-104">このトピックでは、Retail Modern POS (MPOS) とクラウド POS の言語設定を変更する方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="fb970-104">This topic describes how to change language settings in Retail Modern POS (MPOS) and Cloud POS.</span></span>
 
-<a name="overview"></a><span data-ttu-id="fb970-105">概要</span><span class="sxs-lookup"><span data-stu-id="fb970-105">Overview</span></span>
-========
-
+## <a name="overview"></a><span data-ttu-id="fb970-105">概要</span><span class="sxs-lookup"><span data-stu-id="fb970-105">Overview</span></span>
 <span data-ttu-id="fb970-106">Retail Modern POS (MPOS) と Cloud POS は、言語設定と翻訳が店舗とユーザーの設定によって異なる場合があります。</span><span class="sxs-lookup"><span data-stu-id="fb970-106">Retail Modern POS (MPOS) and Cloud POS support environments where language settings and translations can vary between the store and user settings.</span></span> <span data-ttu-id="fb970-107">たとえば、店舗は顧客にとって英語が最も一般的な地域に位置することができますが、一部の作業者はフランス語の翻訳でアプリケーションを使用することを好みます。</span><span class="sxs-lookup"><span data-stu-id="fb970-107">For example, the store could be located in a region where English is most common for their customers, but some workers prefer to use the application with French translations.</span></span>
 
 ## <a name="data-language"></a><span data-ttu-id="fb970-108">データ言語</span><span class="sxs-lookup"><span data-stu-id="fb970-108">Data language</span></span>
