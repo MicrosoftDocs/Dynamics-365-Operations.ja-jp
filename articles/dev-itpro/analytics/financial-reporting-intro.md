@@ -98,7 +98,7 @@ Finance および Operations の財務報告では、財務およびビジネス
 </tbody>
 </table>
 
-#<a name="see-also"></a>参照
+## <a name="see-also"></a>参照
 [財務諸表の生成](generate-financial-report.md)
 
 

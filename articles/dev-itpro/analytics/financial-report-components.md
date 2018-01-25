@@ -112,7 +112,7 @@ ms.lasthandoff: 11/03/2017
 3.  構成要素を選択し、[**チェックアウトを元に戻す**] をクリックします。
 4.  [**はい**] をクリックして構成要素をチェックインします。
 
-# <a name="see-also"></a>参照
+## <a name="see-also"></a>参照
 
 [財務報告](financial-reporting-intro.md)
 

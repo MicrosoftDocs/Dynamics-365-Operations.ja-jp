@@ -31,14 +31,14 @@ ms.lasthandoff: 12/18/2017
 
 このトピックでは、[**実績対予算**] Microsoft Power BI コンテンツについて説明します。 Power BI レポートにアクセスする方法を説明し、コンテンツを作成するために使用したデータ モデルおよびエンティティについての情報を提供します。 
 
-# <a name="overview"></a>概要
+## <a name="overview"></a>概要
 
 [**実績対予算**] Power BI コンテンツは、組織内で実績対予算パフォーマンスの監視を担当する各個人に対して作成されました。 [**実績対予算**] Power BI コンテンツは、予算差異の可視性を提供します。 勘定カテゴリ、予算コード、主勘定、主勘定の説明、または差異の原因をより良く理解するための会計年度期間ごとに、今年度の予算を分析できます。 
 
-# <a name="accessing-the-power-bi-content"></a>Power BI コンテンツへのアクセス
+## <a name="accessing-the-power-bi-content"></a>Power BI コンテンツへのアクセス
 **実績対予算** Power BI コンテンツからのレポートは、**元帳予算および予測** および **CFO** ワークスペースで表示されます。
 
-# <a name="reports-that-are-included-in-the-power-bi-content"></a>Power BI コンテンツに含まれるレポート
+## <a name="reports-that-are-included-in-the-power-bi-content"></a>Power BI コンテンツに含まれるレポート
 次の表は、[**実績対予算**] Power BI コンテンツの各レポート ページに表示されるメトリックスの詳細について説明しています。
 
 | レポート                       | メトリックス |
@@ -50,7 +50,7 @@ ms.lasthandoff: 12/18/2017
 | 純利益                  | <ul><li>今年度の純利益</li><li>予算に基づく目標純利益 </li><ul> |
 
 
-# <a name="understanding-the-data-model-and-entities"></a>データ モデルおよびエンティティの理解
+## <a name="understanding-the-data-model-and-entities"></a>データ モデルおよびエンティティの理解
 
 | エンティティ                    | コンテンツ |
 |---------------------------|----------|

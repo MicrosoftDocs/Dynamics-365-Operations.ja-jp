@@ -34,9 +34,7 @@ ms.lasthandoff: 11/03/2017
 
 このトピックでは、Retail Modern POS (MPOS) とクラウド POS の言語設定を変更する方法を説明します。
 
-<a name="overview"></a>概要
-========
-
+## <a name="overview"></a>概要
 Retail Modern POS (MPOS) と Cloud POS は、言語設定と翻訳が店舗とユーザーの設定によって異なる場合があります。 たとえば、店舗は顧客にとって英語が最も一般的な地域に位置することができますが、一部の作業者はフランス語の翻訳でアプリケーションを使用することを好みます。
 
 ## <a name="data-language"></a>データ言語
