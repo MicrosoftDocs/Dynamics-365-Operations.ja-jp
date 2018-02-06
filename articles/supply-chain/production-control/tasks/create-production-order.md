@@ -1,4 +1,4 @@
---- 
+---
 title: "製造オーダーの作成"
 description: "この手順では、製造オーダーを作成する方法を示します。"
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -69,5 +69,4 @@ ms.lasthandoff: 09/29/2017
     * 処理時間を変更すると、製造オーダーの見積工順消費と原価に影響します。  
 6. [保存] をクリックします。
 7. ページを閉じます。
-
 
