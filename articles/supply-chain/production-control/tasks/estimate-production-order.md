@@ -1,4 +1,4 @@
---- 
+---
 title: "製造オーダーの見積"
 description: "USMF デモ データ会社または用意したデータ セットを使用して、この手順を実行できます。"
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -17,10 +17,10 @@ ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 1d34a891a5b655f801e46b8c07525cdcbc7a65c8
+ms.sourcegitcommit: dadf0e87eac8522f61bb094c146e37f46a21fc09
+ms.openlocfilehash: 862281adac67757e1ce0e9ddd1e96483363abb9a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 02/06/2018
 
 ---
 # <a name="estimate-a-production-order"></a><span data-ttu-id="32a75-103">製造オーダーの見積</span><span class="sxs-lookup"><span data-stu-id="32a75-103">Estimate a production order</span></span>
@@ -42,5 +42,4 @@ ms.lasthandoff: 09/29/2017
 1. <span data-ttu-id="32a75-115">[アクション] ペインで [原価の管理] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="32a75-115">On the Action Pane, click Manage costs.</span></span>
 2. <span data-ttu-id="32a75-116">[計算の詳細の表示] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="32a75-116">Click View calculation details.</span></span>
     * <span data-ttu-id="32a75-117">このページは、原価内訳を表示します。</span><span class="sxs-lookup"><span data-stu-id="32a75-117">This page displays the cost breakdown.</span></span> <span data-ttu-id="32a75-118">たとえば、先頭行の完成品の単位あたりの原価価格合計を表示できます。</span><span class="sxs-lookup"><span data-stu-id="32a75-118">For example, you can view the total cost price per unit for the finished product in the first row.</span></span> <span data-ttu-id="32a75-119">後続の行には、部品表、生産工順、および間接原価などの原価が含まれます。</span><span class="sxs-lookup"><span data-stu-id="32a75-119">The subsequent rows contain costs according to the bill of materials, production route, and indirect costs.</span></span>  
-
 

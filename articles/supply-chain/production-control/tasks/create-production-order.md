@@ -1,4 +1,4 @@
---- 
+---
 title: "製造オーダーの作成"
 description: "この手順では、製造オーダーを作成する方法を示します。"
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -17,10 +17,10 @@ ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 730adcea0ac59f683ecae8cbb62025bd7db75c55
+ms.sourcegitcommit: dadf0e87eac8522f61bb094c146e37f46a21fc09
+ms.openlocfilehash: 4db56f76c7f8ce0cccf85ab04024d9a1e88a8822
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 02/06/2018
 
 ---
 # <a name="create-a-production-order"></a><span data-ttu-id="9d39c-103">製造オーダーの作成</span><span class="sxs-lookup"><span data-stu-id="9d39c-103">Create a production order</span></span>
@@ -69,5 +69,4 @@ ms.lasthandoff: 09/29/2017
     * <span data-ttu-id="9d39c-146">処理時間を変更すると、製造オーダーの見積工順消費と原価に影響します。</span><span class="sxs-lookup"><span data-stu-id="9d39c-146">Changing the process time affects the estimated route consumption and the cost of the production order.</span></span>  
 6. <span data-ttu-id="9d39c-147">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9d39c-147">Click Save.</span></span>
 7. <span data-ttu-id="9d39c-148">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="9d39c-148">Close the page.</span></span>
-
 
