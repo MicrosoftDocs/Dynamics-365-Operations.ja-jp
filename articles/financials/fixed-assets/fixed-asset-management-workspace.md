@@ -1,7 +1,7 @@
 ---
 title: "固定資産管理ワークスペース"
 description: "このトピックでは、固定資産管理ワークスペースに関する情報を示します。 このワークスペースでは、システムに入力されている固定資産に関連する情報が表示されます。 これには、概要ビューと分析ビューが含まれます。"
-author: saraschi
+author: saraschi2
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
@@ -14,14 +14,14 @@ ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
 ms.assetid: 
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: e173dd9c8406c6bd03c19f67561e1eb34fbeeada
+ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
+ms.openlocfilehash: 8425387d4004e02e9b8adf9ba3b31a0b4e02b6e9
 ms.contentlocale: ja-jp
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 02/07/2018
 
 ---
 

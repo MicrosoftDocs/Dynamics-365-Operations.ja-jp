@@ -1,7 +1,7 @@
 ---
 title: "キャッシュ生成単位の固定資産の減損会計"
 description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition に含まれる固定資産の減損の機能を紹介します。 この記事の主な目的は、ユーザーに減損会計の概念モデルの概要を示すことです。"
-author: rake-gui
+author: yijialuan
 manager: AnnBe
 ms.date: 10/31/2017
 ms.topic: article
@@ -18,10 +18,10 @@ ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 6000f63fbbfeb89e2361a6165ab800b320a4e084
+ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
+ms.openlocfilehash: d6515a198aab286e1a34d09c3a594bdf69a446b7
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 02/07/2018
 
 ---
 

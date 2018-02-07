@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 10/27/2016
 ms.topic: business-process
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
 ms.reviewer: josaw
@@ -17,10 +17,10 @@ ms.author: asharchw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
-ms.openlocfilehash: 1ee26dfa79bd62ba2d223b9ac4a0171f92ab80ea
+ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
+ms.openlocfilehash: 277ffb879b80fe57deeaa2b52c1543baaf820274
 ms.contentlocale: ja-jp
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 02/07/2018
 
 ---
 # <a name="configure-machine-learning-powered-product-recommendations"></a><span data-ttu-id="af465-103">機械学習を利用する製品の推奨事項のコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="af465-103">Configure machine learning-powered product recommendations</span></span>
