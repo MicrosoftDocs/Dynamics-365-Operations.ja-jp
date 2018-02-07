@@ -1,7 +1,7 @@
 ---
 title: "小売製品の割引を禁止する"
 description: "小売業者はさまざまな理由で、一部の製品の割引を、プロモーションからまたは POS での販売中に禁止します。"
-author: jeffbl
+author: jblucher
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

@@ -1,7 +1,7 @@
 ---
 title: "在庫バッチのマージ"
 description: "この記事は、2 つ以上の棚卸資産バッチをマージされたバッチに連結する方法に関する情報を提供します。"
-author: perlynne
+author: pjacobse
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

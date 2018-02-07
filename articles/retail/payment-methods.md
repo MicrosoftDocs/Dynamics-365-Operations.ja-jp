@@ -1,7 +1,7 @@
 ---
 title: "支払方法"
 description: "小売業者が受け入れる各支払タイプは、システムの設定時にコンフィギュレーションする必要があります。 この記事では、設定可能な支払タイプおよびその設定方法について説明します。"
-author: MargoC
+author: sericks007
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

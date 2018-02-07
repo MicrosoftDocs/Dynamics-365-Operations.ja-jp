@@ -1,6 +1,7 @@
 ---
 title: "小売周辺機器の概要"
 description: "このトピックでは、小売周辺機器に関連する概念を説明します。"
+author: rubencdelgado
 manager: AnnBe
 ms.date: 11/14/2017
 ms.topic: article
