@@ -113,7 +113,8 @@
 #### [拡張機能を使用したモデル要素のカスタマイズ (チュートリアル)](extensibility/customize-model-elements-extensions.md)
 #### [カスタマイズ: オーバーレイと拡張機能](extensibility/customization-overlayering-extensions.md)
 ### 新機能
-#### [拡張性の変更 (2017 年 7 月)](extensibility/changes-july-2017.md)
+#### [拡張機能の変更 (2017 年 7 月)](extensibility/changes-july-2017.md)
+#### [Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 の拡張機能の変更](extensibility/extensibility-changes-73.md)
 ### 基本
 #### [侵入的なカスタマイズ](extensibility/intrusive-customizations.md)
 #### [クラスの拡張機能](extensibility/class-extensions.md)
@@ -138,6 +139,11 @@
 #### [フォーム コントロールのプロパティの変更](extensibility/modify-control-properties.md)
 #### [ラベルの変更](extensibility/change-label.md)
 #### [番号順序スコープの拡張](extensibility/extend-number-sequence-scope.md)
+#### [新規在庫分析コードの追加](extensibility/inventory-dimensions.md)
+#### [価格と割引の拡張機能の変更](extensibility/pricing-app73.md)
+#### [テーブル マップ拡張](extensibility/map-extensions.md)
+#### [インターフェイスとして使用されるテーブル マップの拡張](extensibility/maps-as-interfaces.md)
+#### [バージョン管理で使用されるテーブル マップの拡張](extensibility/maps-with-versioning.md)
 
 
 
@@ -523,16 +529,16 @@
 
 # [アップグレードおよび移行](migration-upgrade/upgrade-home-page.md)
 ## [AX 2012 から Dynamics 365 for Finance and Operations へのアップグレード](migration-upgrade/upgrade-overview-2012.md)
-### [分析 - アップグレード アナライザー ツールを使用したアップグレードの計画](migration-upgrade/upgrade-analyzer-tool.md)
-### [分析 - コードのアップグレード サービスを使用したコードのアップグレードの工数見積](migration-upgrade/analyze-code-upgrade.md)
-### [分析 - サンド ボックス環境の配置](migration-upgrade/analysis-sandbox.md)
-### [アップグレード - 開発環境でのデータ アップグレード](migration-upgrade/data-upgrade-2012.md)
-### [アップグレード - AX 2012 データ アップグレード タスク](migration-upgrade/prepare-data-upgrade.md)
-### [アップグレード - サンドボックス環境でのデータ アップグレード](migration-upgrade/upgrade-data-sandbox.md)
-### [検証 - 切替テスト](migration-upgrade/upgrade-cutover-testing.md)
-### [検証 - アップグレード後に実行するタスク](migration-upgrade/app-validation-process.md)
-### [機能テスト - 機能テスト](migration-upgrade/upgrade-functional-validation.md)
-### [検証 - Go-Live の準備](migration-upgrade/upgrade-go-live-prep.md)
+### [AX 2012 アップグレード - アップグレード アナライザー ツールを使用した計画](migration-upgrade/upgrade-analyzer-tool.md)
+### [AX 2012 アップグレード - コードのアップグレード サービスを使用した工数見積](migration-upgrade/analyze-code-upgrade.md)
+### [AX 2012 アップグレード - サンド ボックス環境の配置](migration-upgrade/analysis-sandbox.md)
+### [AX 2012 アップグレード - 開発環境でのデータ アップグレード](migration-upgrade/data-upgrade-2012.md)
+### [AX 2012 アップグレード - AX 2012 データ アップグレード タスク](migration-upgrade/prepare-data-upgrade.md)
+### [AX 2012 アップグレード - サンドボックス環境でのデータ アップグレード](migration-upgrade/upgrade-data-sandbox.md)
+### [AX 2012 アップグレード - 切替テスト](migration-upgrade/upgrade-cutover-testing.md)
+### [AX 2012 アップグレード - アップグレード後に完了するタスク](migration-upgrade/app-validation-process.md)
+### [AX 2012 アップグレード - 機能テスト合格](migration-upgrade/upgrade-functional-validation.md)
+### [AX 2012 アップグレード - Go-Live の準備](migration-upgrade/upgrade-go-live-prep.md)
 
 
 ### AX 2012 からのアップグレードに影響する変更
@@ -590,6 +596,8 @@
 ## [バッチ処理](sysadmin/batch-processing-overview.md)
 ### [バッチ サーバーの概要](sysadmin/batch-server-overview.md)
 ### [バッチ ジョブの作成](sysadmin/tasks/create-batch-job.md)
+
+## [最適化アドバイザーのルールの作成](sysadmin/optimization-advisor.md)
 
 # Lifecycle Services
 ## [Lifecycle Services の概要](lifecycle-services/lcs.md)
