@@ -1,4 +1,4 @@
---- 
+---
 title: "時刻と出勤の給与プロセスの有効化"
 description: "この手順は、時刻と出勤の給与プロセスを有効にする方法を示します。"
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -68,5 +68,4 @@ ms.lasthandoff: 09/29/2017
 6. [時間登録] セクションを展開します。
 7. [編集] をクリックします。
 8. [支払協定] フィールドで値を入力または選択します。
-
 

@@ -1,4 +1,4 @@
---- 
+---
 title: "製造オーダーのスケジュール"
 description: "この手順では、製造オーダーのスケジュール方法を示します。"
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -53,5 +53,4 @@ ms.lasthandoff: 09/29/2017
     * [最大能力負荷] ページは、ジョブのスケジューリングで予約されている時間数、リソースで現在予約済の合計時間数、リソースのジョブのスケジューリングで使用できる残り時間数を表示します。  
 6. ページを閉じます。
 7. ページを閉じます。
-
 

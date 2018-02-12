@@ -1,4 +1,4 @@
---- 
+---
 title: "製造オーダーのリリース"
 description: "この手順では、製造オーダーのリリース方法を示します。"
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: johanho
@@ -39,5 +39,4 @@ ms.lasthandoff: 09/29/2017
 5. [工順カードの印刷] チェック ボックスをクリックします。
 6. [OK] をクリックします。
 7. ページを閉じます。
-
 

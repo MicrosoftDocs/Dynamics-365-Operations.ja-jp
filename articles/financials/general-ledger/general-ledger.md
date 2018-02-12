@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: GeneralJournalEntryWorkspace
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
@@ -43,7 +44,7 @@ ms.lasthandoff: 11/03/2017
 
 [![業務プロセス](./media/GL-process.PNG)](./media/GL-process.PNG)
 
-# <a name="sales-tax"></a>消費税
+## <a name="sales-tax"></a>消費税
 すべての会社は税金を徴収し、さまざまな税務当局に支払います。 ルールと税率は国/地域、都道府県、市区郡、および市町村によって異なります。
 また、ルールは、税務当局が要件を変更した際に、定期的に更新する必要があります。 売上税コードには、徴収額と当局への支払額に関する基本的な情報が含まれています。 売上税コードの設定時には、徴収する必要のある金額または割合を定義します。 また、トランザクション金額に金額や割合を適用する各種方法も定義します。 このセクションのトピックでは、税務当局が定める徴収方法と税率に対して売上税コードを設定する方法について説明します。
 
@@ -52,13 +53,13 @@ ms.lasthandoff: 11/03/2017
  - [消費税支払と丸めルール](round-sales-tax-payments.md)
 
 
-### <a name="additional-resources"></a>その他のリソース
+## <a name="additional-resources"></a>その他のリソース
 
-#### <a name="whats-new-and-in-development"></a>新機能および開発中の機能
+### <a name="whats-new-and-in-development"></a>新機能および開発中の機能
 
 リリースされた新機能と開発中の新機能については、[Microsoft Dynamics 365 Roadmap (Dynamics 365 ロードマップ)](https://roadmap.dynamics.com/) を参照してください。 
 
-#### <a name="blogs"></a>ブログ
+### <a name="blogs"></a>ブログ
 
 買掛金勘定およびその他のソリューションに関する意見、ニュース、その他の情報については、[Microsoft Dynamics 365 blog (Microsoft Dynamics 365 ブログ)](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) を参照してください。
 
@@ -66,10 +67,10 @@ ms.lasthandoff: 11/03/2017
 
 [Microsoft Dynamics Operations Partner Community Blog (Microsoft Dynamics Operations パートナー コミュニティのブログ)](https://community.dynamics.com/partner/b/operationspartnercommunityblog) では、MBS Operations に関する最新情報とトレンドを知るための単一のリソースが Microsoft Dynamics パートナー向けに提供されています。
 
-#### <a name="task-guides"></a>タスク ガイド
+### <a name="task-guides"></a>タスク ガイド
 Finance and Operations には、タスク ガイドとして使用できる追加のヘルプが用意されています。 タスク ガイドにアクセスするには、ページの [ヘルプ] ボタンをクリックします。
 
-#### <a name="videos"></a>ビデオ
+### <a name="videos"></a>ビデオ
 
 [Microsoft Dynamics 365 YouTube チャンネル](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ)のハウツー ビデオをご覧ください。
 

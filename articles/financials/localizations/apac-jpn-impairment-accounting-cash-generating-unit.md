@@ -1,7 +1,7 @@
 ---
 title: "キャッシュ生成単位の固定資産の減損会計"
 description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition に含まれる固定資産の減損の機能を紹介します。 この記事の主な目的は、ユーザーに減損会計の概念モデルの概要を示すことです。"
-author: rake-gui
+author: yijialuan
 manager: AnnBe
 ms.date: 10/31/2017
 ms.topic: article

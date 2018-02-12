@@ -53,10 +53,9 @@ ms.lasthandoff: 11/03/2017
 
 [![Excel テンプレート](./media/screenshot2-1024x352.png)](./media/screenshot2.png)
 
-<a name="exercise-1-configuration"></a>練習 1: コンフィギュレーション
-=========================
+## <a name="exercise-1-configuration"></a>練習 1: コンフィギュレーション
 
-## <a name="task-1-create-organizational-hierarchy"></a>**タスク 1: 組織階層の作成**
+### <a name="task-1-create-organizational-hierarchy"></a>**タスク 1: 組織階層の作成**
 すべての予算作成プロセスが財務部門で発生すると、ジュリアは、財務部門のみから構成される非常に単純な組織階層を作成する必要があります。 1.1。 組織階層 ([組織の管理] &gt; [組織] &gt; [組織階層]) の順に移動し、[新規] ボタンをクリックします
 
 ![組織階層](./media/screenshot3.png) 
@@ -85,7 +84,7 @@ ms.lasthandoff: 11/03/2017
 
 [![有効日](./media/screenshot9.png)](./media/screenshot9.png)
 
-## <a name="task-2-configure-user-security"></a>タスク 2: ユーザーのセキュリティのコンフィギュレーション
+### <a name="task-2-configure-user-security"></a>タスク 2: ユーザーのセキュリティのコンフィギュレーション
 予算計画は、予算計画のデータへのアクセスを構成する際に特別なセキュリティ ポリシーを使用します。 ジュリアは、自分自身に対して、財務予算計画へのアクセス権を与える必要があります。 
 
 2.1。 DEMF の法人のコンテキストに切り替えます。 
@@ -109,7 +108,7 @@ ms.lasthandoff: 11/03/2017
 
 [![アクセスを許可](./media/screenshot14.png)](./media/screenshot14.png)
 
-## <a name="task-3-create-scenarios"></a>タスク 3: シナリオの作成
+### <a name="task-3-create-scenarios"></a>タスク 3: シナリオの作成
 3.1。 [予算作成] &gt; [設定] &gt; [予算計画] &gt; [予算計画のコンフィギュレーション] の順に移動します。 シナリオのページで、このラボでさらに使用するシナリオに注意してください: 前年度の実績と予算。 
 
 *注: 必要であれば、この練習用の新しいシナリオを作成し、それらを代わりに使用します。* 
@@ -118,7 +117,7 @@ ms.lasthandoff: 11/03/2017
 
 *注: ジュリアは予算計画に正式な承認プロセスを使用していないため、ワークフロー、ステージおよびこの実習でのワークフロー ステージの設定を省き、既存の自動的に承認する設定を使用します。このワークフロー コンフィギュレーションについては付録を参照してください。*
 
-## <a name="task-4-create-budget-plan-columns"></a>タスク 4: 予算計画の列の作成
+### <a name="task-4-create-budget-plan-columns"></a>タスク 4: 予算計画の列の作成
 予算計画の列は、予算計画のドキュメント レイアウトに使用できる金銭情報または数量に基づく列です。 上記の例では、"前年度" の実績を表す列、および会計年度の各月を表す 12 の列を作成する必要があります。 列は単純に [追加] ボタンをクリックして値を入力するか、または "データ エンティティ" を使用して作成します。 このラボでは、値を入力するために "データ エンティティ" を使用します。 
 
 4.1。 [予算作成] &gt; [設定] &gt; [予算計画] &gt; [予算計画のコンフィギュレーション] で "列" ページを開きます。 フォームの右上隅にある Office ボタンをクリックして、列 (フィルター処理なし) を選択します 
@@ -151,7 +150,7 @@ ms.lasthandoff: 11/03/2017
 
 [![更新反映](./media/screenshot23.png)](./media/screenshot23.png)
 
-## <a name="task-5-create-budget-plan-document-layouts-and-templates"></a>タスク 5: 予算計画のドキュメント レイアウトおよびテンプレートの作成
+### <a name="task-5-create-budget-plan-document-layouts-and-templates"></a>タスク 5: 予算計画のドキュメント レイアウトおよびテンプレートの作成
 レイアウトは、ユーザーが予算計画のドキュメントを開いたときに、予算計画ドキュメントの行グリッドが、どのように表示されるかを定義します。 さまざまな角度で同じデータを表示するように予算計画のドキュメントのレイアウトを切り替えることもできます。 ここでは、ジュリアが予算計画のドキュメントで使用するために定義した列があるため、ジュリアは、予算データ (このラボのシナリオの概要セクションを参照) を作成するために使用する Excel の表に似た、予算計画のドキュメント レイアウトを作成する必要があります。 
 
 5.1. [予算作成] &gt; [設定] &gt; [予算計画] &gt; [予算計画のコンフィギュレーション] で "レイアウト" ページを開きます。 月間の予算入力のために新しいレイアウトを作成します。
@@ -171,7 +170,7 @@ ms.lasthandoff: 11/03/2017
 
 5.3. &lt; オプションのステップ&gt; Excel テンプレートを変更して、フォーミュラの合計、ヘッダー フィールド、書式などの追加により、より使いやすくすることができます。変更を保存し、レイアウト &gt; アップロードの順にクリックして、予算計画レイアウトにファイルをアップロードします[![アップロード](./media/screenshot26.png)](./media/screenshot26.png)
 
-## <a name="task-6-create-a-budget-planning-process"></a>タスク 6: 予算計画プロセスの作成
+### <a name="task-6-create-a-budget-planning-process"></a>タスク 6: 予算計画プロセスの作成
 ジュリアは、新たな予算計画を開始するために、上記のすべての設定を組み合わせて、新しい予算計画プロセスを作成して有効化する必要があります。 予算計画プロセスは、どの予算作成の組織、ワークフロー、レイアウトおよびテンプレートが予算計画の作成に使用されるかを定義します。 
 
 6.1。 [予算作成] &gt; [設定] &gt; [予算計画] &gt; [予算計画プロセス] の順に移動し、新しいレコードを作成します。
@@ -192,10 +191,9 @@ ms.lasthandoff: 11/03/2017
 
 [![有効化する](./media/screenshot28.png)](./media/screenshot28.png)
 
-<a name="exercise-2-process-simulation"></a>練習 2: プロセスのシミュレーション
-==============================
+## <a name="exercise-2-process-simulation"></a>練習 2: プロセスのシミュレーション
 
-## <a name="task-7-generate-initial-data-for-budget-plan-from-general-ledger"></a>タスク 7: 総勘定元帳から予算計画の初期データを生成する
+### <a name="task-7-generate-initial-data-for-budget-plan-from-general-ledger"></a>タスク 7: 総勘定元帳から予算計画の初期データを生成する
 7.1。 [予算作成] &gt; [定期処理] &gt; [一般会計から予算計画を生成] の順に移動します。 定期的なプロセス パラメーターを入力し、[生成] ボタンをクリックします。 
 
 [![生成](./media/screenshot29.png)](./media/screenshot29.png) 
@@ -208,7 +206,7 @@ ms.lasthandoff: 11/03/2017
 
 [![予算計画表示](./media/screenshot31.png)](./media/screenshot31.png)
 
-## <a name="task-8-create-current-year-budget-based-on-previous-year-actuals"></a>タスク 8: 前年度の実績に基づく今年度の予算の作成
+### <a name="task-8-create-current-year-budget-based-on-previous-year-actuals"></a>タスク 8: 前年度の実績に基づく今年度の予算の作成
 配賦方法を予算計画で使用できます。これにより、1 つのシナリオから別のシナリオに予算計画を簡単にコピーする、それらを複数の期間に分割する、または分析コードに配賦することができます。 前年度の実績からの今年度の予算を作成するために配賦を使用します。 
 
 8.1。 予算計画ドキュメント グリッドのすべての行を選択し、予算の配賦ボタンをクリックします 
@@ -223,7 +221,7 @@ ms.lasthandoff: 11/03/2017
 
 [![販売曲線](./media/screenshot34.png)](./media/screenshot34.png)
 
-## <a name="task-9-adjust-budget-plan-document-using-excel-and-finalize-the-document"></a>タスク 9: 予算計画ドキュメントを Excel を使用して調整し、ドキュメントを確定する
+### <a name="task-9-adjust-budget-plan-document-using-excel-and-finalize-the-document"></a>タスク 9: 予算計画ドキュメントを Excel を使用して調整し、ドキュメントを確定する
 9.1。 [ボタン ワークシート] をクリックして、Excel でドキュメントの内容を開きます
 
 [![Excel](./media/screenshot35.png)](./media/screenshot35.png)
@@ -238,8 +236,7 @@ ms.lasthandoff: 11/03/2017
 
 ワークフローが完了すると、予算計画ドキュメント ステージは [承認済] に変更します。 [![承認済](./media/screenshot38.png)](./media/screenshot38.png)
 
-<a name="appendix"></a>付録
-========
+## <a name="appendix"></a>付録
 
 ### <a name="auto-approve-workflow-configuration"></a>自動承認ワークフロー コンフィギュレーション
 

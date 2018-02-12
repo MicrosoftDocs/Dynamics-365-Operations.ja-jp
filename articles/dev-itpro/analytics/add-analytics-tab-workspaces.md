@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application user, IT Pro
 ms.reviewer: robinr
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2017-06-30
@@ -30,14 +30,14 @@ ms.lasthandoff: 11/06/2017
 > [!NOTE]
 > この機能は、Dynamics 365 for Finance and Operations (バージョン 7.2 以降) でサポートされています。
 
-# <a name="introduction"></a>はじめに
+## <a name="introduction"></a>はじめに
 このトピックでは、ワークスペースの [分析] タブで Microsoft Power BI レポートを組み込む方法を説明します。 ここで示した例では、フリート管理アプリケーションの **予約管理** ワークスペースを拡張して、分析ワークスペースを [分析] タブに埋め込みます。
 
-# <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>前提条件
 + プラットフォーム更新プログラム 8 以降を実行する開発環境へのアクセス。
 + Microsoft Power BI Desktop を使用して作成され、Entity ストア データベースから取得されたデータ モデルを持つ分析レポート (.pbix ファイル)。
 
-# <a name="overview"></a>概要
+## <a name="overview"></a>概要
 既存のアプリケーション ワークスペースを拡張する場合でも、自分の新しいワークスペースを導入する場合でも、埋め込み分析ビューを使用して、ビジネス データの洞察的でインタラクティブなビューを提供できます。 分析ワークスペース タブを追加するプロセスには、4 つのステップがあります。
 
 1. Dynamics 365 リソースとして .pbix ファイルを追加します。
@@ -48,7 +48,7 @@ ms.lasthandoff: 11/06/2017
 > [!NOTE]
 > 分析レポートを作成する方法の詳細については、[Power BI デスクトップの使い方](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/)を参照してください。 このページは、魅力的な分析レポート作成ソリューションの作成に役立つ素晴らしいソースです。
 
-# <a name="add-a-pbix-file-as-a-resource"></a>リソースとして .pbix ファイルを追加します。
+## <a name="add-a-pbix-file-as-a-resource"></a>リソースとして .pbix ファイルを追加します。
 開始する前に、ワークスペースに埋め込む Power BI レポートを作成または取得する必要があります。 分析レポートを作成する方法の詳細については、[Power BI デスクトップの使い方](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/)を参照してください。
  
 .pbix ファイルを Visual Studio プロジェクト コンポーネントとして追加するには、次の手順を実行します。
@@ -66,7 +66,7 @@ ms.lasthandoff: 11/06/2017
   
 Dynamics 365 リソースとして .pbix ファイルを追加したため、ワークスペースにレポートを埋め込み、メニュー項目を使用して直接リンクを追加できるようになりました。
 
-# <a name="add-a-tab-control-to-an-application-workspace"></a>アプリケーション ワークスペースへのタブ コントロールの追加
+## <a name="add-a-tab-control-to-an-application-workspace"></a>アプリケーション ワークスペースへのタブ コントロールの追加
 この例では、**FMClerkWorkspace** フォームの定義に [分析] タブを追加することで、フリート管理モデルの **引当管理** ワークスペースを拡張します。
  
 次の図は、**FMClerkWorkspace** フォームが Microsoft Visual Studio のデザイナーにどのように表示されるかを示しています。
@@ -105,7 +105,7 @@ Dynamics 365 リソースとして .pbix ファイルを追加したため、ワ
  
 これでアプリケーション フォームの定義を拡張するためのタスクが完了しました。 カスタマイズを行うために拡張機能を使用する方法に関する詳細については、[カスタマイズ: オーバーレイおよび拡張機能](../extensibility/customization-overlayering-extensions.md)を参照してください。
 
-# <a name="add-x-business-logic-to-embed-a-viewer-control"></a>ビューアー コントロールを埋め込むための X++ ビジネス ロジックの追加
+## <a name="add-x-business-logic-to-embed-a-viewer-control"></a>ビューアー コントロールを埋め込むための X++ ビジネス ロジックの追加
 これらの手順に従い、**引当管理** ワークスペースに埋め込まれているレポート ビューアー コントロールを初期化するビジネス ロジックを追加します。
 
 1. [FMClerkWorkspace] フォーム デザイナーを開き、デザイン定義を拡張します。
@@ -151,12 +151,12 @@ Dynamics 365 リソースとして .pbix ファイルを追加したため、ワ
 > [!NOTE]
 > 既存の操作ビューは、ページのタイトルの下のワークスペース タブを使用してアクセスできます。
 
-# <a name="reference"></a>参照
+## <a name="reference"></a>参照
 
-## <a name="pbireporthelperinitializereportcontrol-method"></a>PBIReportHelper.initializeReportControl 方法
+### <a name="pbireporthelperinitializereportcontrol-method"></a>PBIReportHelper.initializeReportControl 方法
 このセクションでは、フォーム グループ コントロールで Power BI レポート (.pbix リソース) の埋め込みに使用されるヘルパー クラスに関する情報を提供します。
 
-### <a name="syntax"></a>構文
+#### <a name="syntax"></a>構文
 ```
 public static void initializeReportControl(
      str                 _resourceName,
@@ -167,7 +167,7 @@ public static void initializeReportControl(
      List                _defaultFilters = new List(Types::Class))
 ```
 
-### <a name="parameters"></a>パラメーター
+#### <a name="parameters"></a>パラメーター
 
 | 氏名 | 説明 |
 |---|---|

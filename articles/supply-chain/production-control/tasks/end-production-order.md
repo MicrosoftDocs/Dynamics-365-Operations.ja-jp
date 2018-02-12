@@ -1,4 +1,4 @@
---- 
+---
 title: "製造オーダーの終了"
 description: "この手順では、製造オーダーの終了方法を説明します。"
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -46,5 +46,4 @@ ms.lasthandoff: 09/29/2017
 1. [アクション] ペインで [原価の管理] をクリックします。
 2. [原価の比較の表示] をクリックします。
     * 製造オーダーの終了後は、見積原価価格を実際の原価価格と比較して製造差異の概要を得ることができます。  
-
 

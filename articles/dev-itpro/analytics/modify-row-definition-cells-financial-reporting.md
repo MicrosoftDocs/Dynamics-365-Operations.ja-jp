@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations
 ms.custom: 58881
 ms.assetid: 0af492df-a84e-450c-8045-78ef1211abaf
 ms.search.region: Global
@@ -33,7 +33,7 @@ ms.lasthandoff: 11/03/2017
 
 この記事では、財務諸表の行定義内の各セルに、必要なそれらの情報を入力する方法について説明します。 
 
-# <a name="specify-a-row-code-in-a-row-definition"></a>行定義で行コードを指定
+## <a name="specify-a-row-code-in-a-row-definition"></a>行定義で行コードを指定
 
 行定義では、[**行コード**] セルの番号またはラベルによって行定義の各行が識別されます。 計算と合計のデータを参照する行コードを指定できます。
 
@@ -506,8 +506,7 @@ ms.lasthandoff: 11/03/2017
 4.  削除するセットを選択し、[**削除**] をクリックします。 [**はい**] をクリックして分析コード セットを完全に削除します。
 
 
-<a name="see-also"></a>参照
---------
+## <a name="see-also"></a>参照
 
 [財務報告](financial-reporting-intro.md)
 

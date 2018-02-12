@@ -1,17 +1,16 @@
 ---
 title: "人事のアクション [FAQ]"
 description: "このトピックでは、組織で個人のアクションを使用する場合に生じる質問に答えます。 個人のアクションは、特定の個人に関連するタスクを実行する際に行う必要がある追加手順です。"
-author: shielas
+author: ShielaSogge
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
 ms.technology: 
-ms.search.form: 
 audience: Application User
 ms.reviewer: rschloma
-ms.search.scope: Core, Operations
+ms.search.scope: Core, Operations, Talent
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global

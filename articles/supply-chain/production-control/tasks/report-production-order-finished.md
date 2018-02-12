@@ -1,4 +1,4 @@
---- 
+---
 title: "製造オーダーの完了レポート"
 description: "この手順では、製造オーダーを完了として報告する方法を示します。"
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -50,5 +50,4 @@ ms.lasthandoff: 09/29/2017
 3. 一覧で、選択された行をマークします。
 4. 一覧で、選択された行のリンクをクリックします。
     * 完了レポート仕訳帳が転記されます。 仕訳帳に調整を加える場合は、新しい仕訳帳を作成し、この仕訳帳に手動で変更を加えることができます。  
-
 

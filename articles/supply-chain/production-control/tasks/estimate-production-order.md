@@ -1,4 +1,4 @@
---- 
+---
 title: "製造オーダーの見積"
 description: "USMF デモ データ会社または用意したデータ セットを使用して、この手順を実行できます。"
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -42,5 +42,4 @@ USMF デモ データ会社または用意したデータ セットを使用し�
 1. [アクション] ペインで [原価の管理] をクリックします。
 2. [計算の詳細の表示] をクリックします。
     * このページは、原価内訳を表示します。 たとえば、先頭行の完成品の単位あたりの原価価格合計を表示できます。 後続の行には、部品表、生産工順、および間接原価などの原価が含まれます。  
-
 

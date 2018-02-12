@@ -3,7 +3,7 @@ title: "サプライ チェーン マネジメントのホーム ページ"
 description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations Enterprise Edition のサプライ チェーン マネジメント機能に関するヘルプ トピックとその他のリソースの一覧を示します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 11/02/2017
+ms.date: 01/10/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 98008b494f675209949afd961e3cd06dfdc9ec9a
-ms.openlocfilehash: 81a5d21233f12e7c26f0cce6a6c05fefde2ca7dd
+ms.sourcegitcommit: 6c193a3a9deba215d4374ccffc3bf2d854fbd0f2
+ms.openlocfilehash: 9314a129b85cf6cb2d2ca379eafc142ce234d535
 ms.contentlocale: ja-jp
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/22/2018
 
 ---
 
@@ -52,18 +52,20 @@ ms.lasthandoff: 12/01/2017
 
 ## <a name="videos"></a>ビデオ
 
-### <a name="get-started"></a>使用開始  
+これらの短いビデオは、Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 (2017 年 12 月) に含まれる新機能の確認に役立ちます。
 
-これらの短いビデオは、Microsoft Dynamics 365 for Finance and Operations Enterprise Edition (2017 年 7 月) に含まれる新機能の使用を開始するのに役立ちます。
+-  [見込顧客リストの現金化への統合](https://youtu.be/AVV9x5x-XCg) 
+-  [最適化アドバイザー](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
+
+これらの短いビデオは、Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (2017 年 7 月) に含まれる新機能の確認に役立ちます。
 
 -  [Get started with Cost accounting (原価会計の使用を開始する)](https://youtu.be/1pUDtJQZ8FU)
 -  [Cost control mobile workspace (原価管理モバイル ワークスペース)](https://youtu.be/imsuTg8rUVk)
 -  [Use Excel for cost analysis (コスト分析に Excel を使用する)](https://youtu.be/-HKHYdClvx8)
 -  [Approve purchase orders on a mobile device (モバイル デバイスで発注書を承認する)](https://youtu.be/gZ-gOlJe7H8)
--  [Visual scheduling with Gantt chart for production and batch orders](https://youtu.be/BtbuShkGj4I)
+-  [生産オーダーとバッチ オーダーのガント チャートを利用した視覚的なスケジューリング](https://youtu.be/BtbuShkGj4I)
 
-### <a name="tech-conference-recordings"></a>技術会議の記録
-これらの記録のほとんどは、以前のバージョンの Finance and Operations の製品機能について説明していますが、現在のバージョンでも同じ概念を適用でき、手順も類似しています。 
+これらの技術会議の記録は、以前のバージョンの Finance and Operations の製品機能について説明していますが、現在のバージョンにも同じ概念が当てはまり、手順も似ています。 
 
 -  <a href="https://youtu.be/zotrj3SbCl4">Product Configurator in Microsoft Dynamics AX (Microsoft Dynamics AX の製品コンフィギュレーター)</a>
 -  <a href="https://youtu.be/7v8BPmEs9Dg">Master Planning - tips and tricks for troubleshooting performance (マスター プラン - パフォーマンスのトラブルシューティングに関するヒントとコツ)</a>

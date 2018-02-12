@@ -1,4 +1,4 @@
---- 
+---
 title: "製造オーダーの開始"
 description: "この手順では、作業現場での製造オーダーの開始方法を説明します。"
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -70,5 +70,4 @@ ms.lasthandoff: 09/29/2017
 7. [転記] をクリックします。
 8. [OK] をクリックします。
     * [工順カード仕訳帳] では、個々の工程にかかった時間が記録されます。 良品および不良品の数量をレポートできます。  
-
 
