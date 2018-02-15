@@ -20,10 +20,10 @@ ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: e66208ccceb4c248c2704bb7358d77447e032205
-ms.openlocfilehash: 43360ea18ccc0fc4622f6da70ff10f2aca8b56c8
+ms.sourcegitcommit: 867c9952eb323a4c0566ec98c1a871041c0fd400
+ms.openlocfilehash: da749dec273be2afd8b6d24f4139746cebf5d741
 ms.contentlocale: ja-jp
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 02/01/2018
 
 ---
 
@@ -102,7 +102,7 @@ POS でタスク記録を有効化するには、次の手順に従います。
 タスク レコーダーは、業務プロセスを記録するときに Retail Modern POS UI のスクリーンショットをキャプチャできます。 スクリーンショットのキャプチャ機能を有効にするには、[**スクリーンショットをキャプチャ**] オプションを [**はい**] に設定し、記録します。 一度記録が完了すると、**停止** をクリックし Word 文書をダウンロードします。 ドキュメントには、該当するスクリーン ショットの手順が含まれます。
 
 #### <a name="note"></a>注記
-> Modern POS ではスクリーンショットのキャプチャ機能はサポートされていません。
+> クラウド POS ではスクリーンショットのキャプチャ機能はサポートされていません。
 
 ### <a name="start-task-and-end-task"></a>タスクの開始と終了
 

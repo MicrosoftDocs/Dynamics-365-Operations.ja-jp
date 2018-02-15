@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
+ms.search.form: ProductionPerformancePowerBI
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -16,10 +17,10 @@ ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
-ms.openlocfilehash: 592514e9ef8b0ec1e3bacda0f26d5991da88449e
+ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
+ms.openlocfilehash: d59a7aef90ecef0cd947b833f1cce1e2372f3033
 ms.contentlocale: ja-jp
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/17/2018
 
 ---
 
@@ -104,7 +105,7 @@ Power BI コンテンツは、期限までに生産を完了するための組�
 | 遅延               | '製造オーダー'[RAF'ed] = TRUE && '製造オーダー'[遅延値] = 1 |
 | 期日前                 | '製造オーダー'[RAF'ed] = TRUE && '製造オーダー'[遅延した日数] \< 0 |
 | 未完了               | '製造オーダー'[適正数量] \>= '製造オーダー'[予定数量] |
-| RAF'ed                | '製造オーダー'[生産ステータスの値] = 5 \|\| '製造オーダー'[生産ステータスの値] = 7 |
+| RAF'ed                | '製造オーダー'[生産ステータスの値] =状態 5 \|\| '製造オーダー'[生産ステータスの値] = 7 |
 | 遅延 & 未完了           | COUNTROWS(FILTER('製造オーダー、'製造オーダー'[未完了] = TRUE && '製造オーダー'[遅延] = TRUE)) |
 | 遅延 \#                  | COUNTROWS(FILTER('製造オーダー'、'製造オーダー'[遅延] = TRUE)) |
 | 遅延 (%)                   | IFERROR( IF('製造オーダー'[遅延\#] \<\>0、'製造オーダー'[遅延\#]、IF('製造オーダー'[注文の合計] = 0、BLANK(), 0)) / '製造オーダー'[注文の合計]、BLANK()) |
