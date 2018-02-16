@@ -3,14 +3,14 @@ title: "勘定科目表名の計画"
 description: "この記事では、組織の勘定科目表を計画する際に役立つ情報を提供します。"
 author: aprilolson
 manager: AnnBe
-ms.date: 08/01/2017
+ms.date: 01/04/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: DimensionConfigureAccountStructure, LedgerChartOfAccounts
 audience: Application User
-ms.reviewer: robinr
+ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
 ms.custom: 14051
 ms.assetid: 10edb129-33f0-4cf9-b2a7-4b7ffa09b229
@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 038886f0a6e1c133a33ee34725eb20352e64341a
+ms.sourcegitcommit: ad55dd57483de4351c8501c5e226180fc73606aa
+ms.openlocfilehash: 3d2cdeaf2fdeb2f587f82c97249886fb8db49154
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/11/2018
 
 ---
 
@@ -45,12 +45,12 @@ ms.lasthandoff: 11/03/2017
 -   自分の法人のレポート要件
 -   外部組織または組織にとって必要な細分化の程度
 
-**勘定科目表**ページで、勘定科目表を作成します。 主勘定は、**勘定科目表**ページまたは**主勘定**ページから作成できます。 自分の主勘定には、勘定科目表の区切り文字として使用される特殊文字を使用しないでください。 勘定科目表の区切り記号と同じ特殊文字を使用した場合、動作が不安定になることがあります。また、勘定と分析コードの組み合わせを入力するとき、常にルックアップまたはポップアップを使用する必要がある場合があります。 詳細については、「[主勘定の作成](tasks/create-account-structures.md)」を参照してください。
+**勘定科目表**ページで、勘定科目表を作成します。 主勘定は、**勘定科目表**ページまたは**主勘定**ページから作成できます。 自分の主勘定には、勘定科目表の区切り文字として使用される特殊文字を使用しないでください。 勘定科目表の区切り記号と同じ特殊文字を使用した場合、動作が不安定になることがあります。また、勘定と分析コードの組み合わせを入力するとき、常にルックアップまたはポップアップを使用する必要がある場合があります。 詳細については、「[主勘定の作成](tasks/create-main-account.md)」を参照してください。
 
 
 主勘定を主勘定カテゴリにリンクし、既定の財務諸表を変更を加えずに使用することをお勧めします。 したがって、より迅速かつ簡単にレポートを作成および管理できます。 
 
-**勘定構造のコンフィギュレーション** ページを使用して、勘定構造を作成します。 勘定構造では、有効な組み合わせを定義します。 組み合わせは、主勘定と共に、勘定科目表を形成します。  詳細については、「[勘定構造の作成](tasks/create-main-account.md)」を参照してください。
+**勘定構造のコンフィギュレーション** ページを使用して、勘定構造を作成します。 勘定構造では、有効な組み合わせを定義します。 組み合わせは、主勘定と共に、勘定科目表を形成します。  詳細については、「[勘定構造の作成](tasks/create-account-structures.md)」を参照してください。
 
 **法人の上書き** 
 

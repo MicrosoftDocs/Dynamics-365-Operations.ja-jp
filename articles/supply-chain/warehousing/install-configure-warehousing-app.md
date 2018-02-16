@@ -20,10 +20,10 @@ ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4b3d068ddbf6f0b28c97618f5fa10fa486f3af51
+ms.sourcegitcommit: 5737d9c52727077d34c6f5553c9788bf07032914
+ms.openlocfilehash: 0521f0b443efb761e7d3f63182728dd836dbf8a0
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/15/2018
 
 ---
 
@@ -31,6 +31,9 @@ ms.lasthandoff: 11/03/2017
 
 [!include[banner](../includes/banner.md)]
 
+
+> [!NOTE]
+> このトピックでは、クラウド配置の倉庫管理の構成方法について説明します。 オンプレミス配置の倉庫管理の構成方法を検索する場合、[オンプレミス配置の倉庫管理](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/warehousing-for-on-premise-deployments) を参照してください。
 
 このトピックでは、Microsoft Dynamics 365 for Finance and Operations - Warehousing をインストールして構成する方法について説明します。
 
@@ -43,32 +46,29 @@ Finance and Operations - Warehousing は、Google Play ストアおよび Window
 |-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Android                     | 4.4, 5.0, 6.0                                                                                                                                                               |
 | Windows (UWP)               | Windows 10 (すべてのバージョン)                                                                                                                                                   |
-| Finance and Operations | Microsoft Finance and Operations バージョン 1611 <br>または <br>Microsoft Dynamics AX バージョン 7.0/7.0.1 および Microsoft Dynamics AX プラットフォーム更新プログラム 2 (KB 3210014) |
+| Finance and Operations | Microsoft Dynamics 365 for Operations、バージョン 1611 <br>または <br>Microsoft Dynamics AX バージョン 7.0/7.0.1 および Microsoft Dynamics AX プラットフォーム更新プログラム 2 (KB 3210014) |
 
 ## <a name="get-the-app"></a>アプリの取得
--   Windows (UWP): [Windows ストアの Finance and Operations - Warehousing](https://www.microsoft.com/store/apps/9p1bffd5tstm)
--   Android:
+-   Windows (UWP)
+     - [Windows ストアの Finance and Operations - Warehousing](https://www.microsoft.com/store/apps/9p1bffd5tstm)
+-   Android
     - [Google Play ストアの Finance and Operations - Warehousing](https://play.google.com/store/apps/details?id=com.Microsoft.Dynamics365forOperationsWarehousing)
     - [Zebra App Gallery ストアの Finance and Operations - Warehousing](https://appgallery.zebra.com/showcase/apps/146?type=showcase)
 
-## <a name="create-a-web-service-application-in-active-directory"></a>Active Directory に Web サービス アプリケーションを作成する
+## <a name="create-a-web-service-application-in-azure-active-directory"></a>Azure Active Directory に Web サービス アプリケーションを作成する
 アプリケーションが特定の Finance and Operations サーバーと対話できるようにするには、Finance and Operations テナント用の Azure Active Directory に Web サービス アプリケーションを登録する必要があります。 セキュリティ上の理由から、使用する各デバイス用の Web サービス アプリケーションを作成するようにお勧めします。 Azure Active Directory (Azure AD) で Web サービス アプリケーションを作成するには、次の手順を実行します:
 
-1.  Web ブラウザーで、<https://manage.windowsazure.com> にアクセスします。
+1.  Web ブラウザーで、<https://portal.azure.com> にアクセスします。
 2.  Azure サブスクリプションにアクセス可能なユーザーの名前とパスワードを入力します。
-3.  Azure Portal の左のナビゲーション ウィンドウで、[**Active Directory**] をクリックします。[](./media/wh-01-active-directory-example.png)[![wh 01 active directory の例](./media/wh-01-active-directory-example.png)](./media/wh-01-active-directory-example.png)
-4.  グリッドで、Finance and Operations で使用されている Active Directory のインスタンスを選択します。
-5.  上部のツールバーで、[**アプリケーション**] をクリックします。 [![wh-02-active-directory-applications](./media/wh-02-active-directory-applications-1024x197.png)](./media/wh-02-active-directory-applications.png)
-6.  下部ウィンドウで、[**追加**] をクリックします。 [**アプリケーションの追加**] ウィザードが起動します。
-7.  アプリケーションの名前を入力して、[**Web アプリケーションおよび/または Web API**] を選択します。 [![wh-03-active-directory-add-application](./media/wh-03-active-directory-add-application.png)](./media/wh-03-active-directory-add-application.png)
-8.  web アプリケーション URL である、サインオン URL を入力します。 この URL は配置 URL と同じですが、oauth が最後に追加されます。 アプリケーション ID URI を入力します。この値は必須ですが、認証には必要ありません。 このアプリケーション ID URI が https://contosooperations/wmapp のような模擬 URI であることを確認します。それは配置の URL を使用する際、Excel アドインなどの他の AAD アプリケーションでサインインの問題が起こるためです。 [![WH-04-AD-add-properties3](./media/WH-04-AD-add-properties3.png)](./media/WH-04-AD-add-properties3.png)
-9.  [**コンフィギュレーション**] タブに移動します。[![wh-05-ad-configure-app](./media/wh-05-ad-configure-app.png)](./media/wh-05-ad-configure-app.png)
-10. [**他のアプリケーションへのアクセス許可**] セクションが表示されるまで下へスクロールします。 [**アプリケーションの追加**] をクリックします。 [![wh-06-ad-app-add-permissions](./media/wh-06-ad-app-add-permissions.png)](./media/wh-06-ad-app-add-permissions.png)
-11. [**Microsoft Dynamics ERP**] を一覧から選択します。 ページの右上隅にある [**完了チェック**] ボタンをクリックします。 [![wh-07-ad-select-permissions](./media/wh-07-ad-select-permissions.png)](./media/wh-07-ad-select-permissions.png)
-12. [**アクセス許可の委任**] リストで、すべてのチェック ボックスをオンにします。 [**保存**] をクリックします。 [![wh-08-ad-delegate-permissions](./media/wh-08-ad-delegate-permissions.png)](./media/wh-08-ad-delegate-permissions.png)
-13. 次の情報をメモします:
-    -   **クライアント ID** - ページを上へスクロールすると、**クライアント ID**が表示されます。
-    -   **キー** - **キー** セクションで、期間を選択してキーを作成し、キーをコピーします。 このキーは、後で**クライアント シークレット**と呼ばれます。
+3.  Azure Portal の左のナビゲーション ウィンドウで、[**Azure Active Directory**] をクリックします。[](./media/WMA-01-active-directory-example.png)[![WMA-01-active-directory-example](./media/WMA-01-active-directory-example.png )](./media/WMA-01-active-directory-example.png)
+4.  Finance and Operations で使用されている Active Directory のインスタンスであることを確認してください。
+5.  ボックスの一覧で、[**アプリの登録**] をクリックします。 [![WMA-02-active-directory-app-registrations](./media/WMA-02-active-directory-app-registrations.png)](./media/WMA-02-active-directory-app-registrations.png)
+6.  上部ウィンドウで、[**新しい申請の登録**] をクリックしてください。 [**アプリケーションの追加**] ウィザードが起動します。
+7.  アプリケーションの名前を入力して、[**Web アプリケーション/Web API**] を選択します。 web アプリケーション URL である、サインオン URL を入力します。 この URL は配置 URL と同じですが、oauth が最後に追加されます。 [**作成**] をクリックします。 [![WMA-03-active-directory-add-application](./media/WMA-03-active-directory-add-application.png)](./media/WMA-03-active-directory-add-application.png)
+8.  一覧で新しいアプリを選択します。 [![WMA-04-active-directory-configure-app](./media/WMA-04-active-directory-configure-app.png)](./media/WMA-04-active-directory-configure-app.png)
+9.  後で必要になりますので、**申請 ID** 値を忘れないようにしてください **申請 ID** は後で、**クライアント ID** として参照されます。
+10. [**設定ウィンドウ**] 内の [**キー**] をクリックします。 [**パスワード**] セクションでキーの説明および期間を入力してキーを作成します。 
+11. [**保存**] をクリックし、 キーをコピーします。 このキーは、後で**クライアント シークレット**と呼ばれます。 [![WMA-05-active-directory-create-key](./media/WMA-05-active-directory-create-key.png)](./media/WMA-05-active-directory-create-key.png)
 
 ## <a name="create-and-configure-a-user-account-in-finance-and-operations"></a>Finance and Operations でユーザー アカウントを作成および設定する
 Finance and Operations を Azure AD アプリケーションとして使用可能にするには、次の手順を完了する必要があります。
@@ -90,8 +90,8 @@ Azure AD アプリケーションを使用して Finance and Operations サー�
 1.  アプリで、[**接続設定**] に移動します。
 2.  [**デモ モード**] フィールドをクリアします。 <br>[![wh-11-app-connection-settings-demo-mode](./media/wh-11-app-connection-settings-demo-mode-169x300.png)](./media/wh-11-app-connection-settings-demo-mode.png)
 3.  次の情報を入力します。 
-    + [**Azure Active Directory クライアント ID**] - クライアント ID は「Active Directory に Web サービス アプリケーションを作成する」のステップ 13 で取得します。 
-    + [**Azure Active Directory クライアント シークレット**] - クライアント シークレットは「Active Directory に Web サービス アプリケーションを作成する」のステップ 13 で取得します。 
+    + [**Azure Active Directory クライアント ID**] - クライアント ID は「Active Directory に Web サービス アプリケーションを作成する」のステップ 9 で取得します。 
+    + [**Azure Active Directory クライアント シークレット**] - クライアント シークレットは「Active Directory に Web サービス アプリケーションを作成する」のステップ 11 で取得します。 
     + [**Azure Active Directory リソース**] - The Azure AD Directory リソースは Finance and Operations のルート URL を示します。 **注**: スラッシュ (/) でこのフィールドを終了しないでください。 
     + [**Azure Active directory テナント**] - Finance and Operationsサーバーで使用される Azure AD Directory のテナント: https://login.windows.net/your-AD-tenant-ID。 例: https://login.windows.net/contosooperations.onmicrosoft.com
     <br>**注**: スラッシュ (/) でこのフィールドを終了しないでください。 
@@ -102,15 +102,11 @@ Azure AD アプリケーションを使用して Finance and Operations サー�
 デバイスの紛失またはセキュリティが侵害された場合、デバイスの Finance and Operations のアクセスを削除する必要があります。 次の手順では、アクセスを削除するための推奨プロセスについて説明します。
 
 1.  Finance and Operations で、[**システム管理**] &gt; [**セットアップ**] &gt; [**Azure Active Directory アプリケーション**] に移動します。
-2.  アクセスを削除するデバイスに対応する行を削除します。 削除したデバイスに使用されている**クライアント ID**を書き留めます。
-3.  Azure クラシック ポータル <https://manage.windowsazure.com> にサインインします。
-4.  左側のメニューにある [**Active Directory**] アイコンをクリックし、目的のディレクトリをクリックします。
-5.  トップ メニューで [**アプリケーション**] をクリックし、次に設定するアプリケーションをクリックします。 **クイック スタート**ページにシングル サインオンおよび他の設定情報が表示されます。
-6.  [**構成**] タブをクリックし、スクローン ダウンして、アプリケーションの**クライアント ID**が、このセクションの手順 2 と同じことを確認します。
-7.  コマンド バーの [**削除**] ボタンをクリックします。
+2.  アクセスを削除するデバイスに対応する行を削除します。 後で必要になりますので、削除したデバイスに使用されている**クライアント ID** を忘れないようにしてください。
+3.  Azure ポータル <https://portal.azure.com> にサインインします。
+4.  左側のメニューにある [**Active Directory**] アイコンをクリックし、適切なディレクトリであることを確認します。
+5.  ボックスの一覧で、[**アプリの登録**] をクリックし、構成したいアプリケーションをクリックします。 コンフィギュレーション情報を含む**設定**ページが表示されます。
+6.  アプリケーションの**クライアント ID** がこのセクションのステップ 2と同じであることを確認します。
+7.  上部ウィンドウの [**削除**] ボタンをクリックします。
 8.  確認メッセージで [**はい**] をクリックします。
-
-
-
-
 

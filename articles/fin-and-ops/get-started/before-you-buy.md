@@ -1,7 +1,7 @@
 ---
 title: "購入する前に"
 description: "Dynamics 365 for Finance and Operations, Enterprise edition の購入を検討しているときに使用するステップ バイ ステップのガイドです。"
-author: margoc
+author: kfend
 manager: AnnBe
 ms.date: 07/10/2017
 ms.topic: article
@@ -13,14 +13,14 @@ ms.reviewer: margoc
 ms.search.scope: Core, Operations
 ms.custom: 21761
 ms.search.region: Global
-ms.author: margoc
+ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c4bd67b15e893613bed14d2bdc1d9a07da81dc26
+ms.sourcegitcommit: 98740e5b992283b924adab34f291b9c1f2703457
+ms.openlocfilehash: d6c4e475925cdc94be614822ffb242eb7ac8cfa7
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/31/2018
 
 ---
 
@@ -35,7 +35,17 @@ Dynamics 365 for Finance and Operations は、簡単な E メールでのサイ�
 
 ## <a name="step-two-choose-a-deployment-option"></a>ステップ 2: 配置オプションを選択
 これで、クラウドまたはオンプレミスの Microsoft Dynamics 365 for Finance and Operations、Enterprise エディションを配置できます。 クラウド配置では、顧客のデータ センター内にオンプレミス配置がローカルに配置されたときに、Microsoft で完全に管理されている ERP サービスが提供されます。
-詳細については、[配置オプション](../../dev-itpro/deployment/choose-deployment-type.md)を参照してください。 
+
+配置オプションとしてオンプレミスを選択する場合、次の考慮事項を考慮する必要があります。
+- [クラウド認証](https://explore.dynamics.com/operations/microsoft-dynamics-365-for-operations-certification-priorities) で使用できない規制およびコンプライアンスのニーズ
+- アプリケーション ライフサイクル管理の Microsoft Dynamics Lifecycle Services (LCS) にアクセスするのに必要な断続的なインターネット接続を持つ、未接続の業務プロセス
+- [オンプレミス配置で現在実装されていない機能](features-not-implemented-on-prem.md)
+- [最小限のインフラストラクチャ要件](system-requirements-on-prem.md#minimum-infrastructure-requirements)
+
+> [!IMPORTANT]
+> Azure を含む、任意のパブリック クラウド インフラストラクチャでサポートされていない、Microsoft Dynamics 365 for Finance and Operations, Enterprise edition のオンプレミス配置。 
+
+詳細については、[配置オプション](../../dev-itpro/deployment/choose-deployment-type.md)を参照してください。
 
 ## <a name="step-three-buy-and-manage-a-subscription"></a>ステップ 3: 定期売買の購入と管理
 定期売買のオプションを表示するには、[Dynamics 365](https://www.microsoft.com/en-us/dynamics365/pricing) の価格ページに移動します。 このページには、組織のニーズに合わせて複数の異なる計画が含まれています。

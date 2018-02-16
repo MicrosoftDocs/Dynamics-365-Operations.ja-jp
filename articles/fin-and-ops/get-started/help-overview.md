@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
+ms.search.form: SystemParameters
 audience: Application User, Developer, IT Pro
 ms.reviewer: margoc
 ms.search.scope: Core, Operations
@@ -18,10 +19,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d2063cd0ae592357d57fb3c787450c604fb9be58
-ms.openlocfilehash: 549d059e549ba470eb299753fd7b87920e6dd43d
+ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
+ms.openlocfilehash: 221ce80cb7520f372f38859aa392b1d559448c81
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 01/19/2018
 
 ---
 
@@ -74,6 +75,11 @@ Finance and Operations、Retail、Talent のすべては docs サイトの 単�
 
 ### <a name="follow-a-topic"></a>次のトピック
 トピックをフォローするには、コメント ボックスの下の +Follow ボタンをクリックします。 次のトピックにログインする必要があります。 詳細については、[コメントをお送りください](#leave-us-a-comment) を参照してください。  
+
+### <a name="use-an-rss-feed"></a>RSS フィードを使用します
+Unified Operations のコンテンツへのすべての更新の RSS フィードを購読するには、Internet Explorer や RSS フィード マネージャなどの RSS フィードをサポートするブラウザから次のリンクを使用します。 
+
+[RSS フィード](https://docs.microsoft.com/api/search/rss?locale=en-us&$filter=scopes%2Fany(t%3A%20t%20eq%20%27Unified%20Operations%27))
 
 ### <a name="give-feedback"></a>フィードバックを送る 
 お客様からのフィードバックをぜひいただきたいです。 GitHub を通じて、コメントを投稿したり、コンテンツへの変更を提案することができます。
@@ -139,7 +145,7 @@ Dynamics 365 for Retail、Dynamics 365 for Finance and Operations、Dynamics 365
 独自のタスク記録を作成するか、Microsoft の提供するタスク記録をダウンロードしてカスタマイズすることができます。 したがって、固有の Finance and Operations の実装を反映する、組織のカスタマイズされたヘルプを作成できます。 Finance and Operations の [ヘルプ] ウィンドウに表示させてタスク ガイドとして再生するには、LCD で記録を BPM ライブラリに保存します。 パートナーの場合、ライブラリを会社のライブラリに昇格してソリューションに含める場合、顧客が使用できます。 詳細な手順については、「[ドキュメントとトレーニングの作成にタスク記録を使用](../../dev-itpro/user-interface/task-recorder.md)」を参照してください。
 
 ## <a name="in-product-help"></a>製品内ヘルプ
-Finance and Operations 内のヘルプ コンテンツにアクセスするには、[**ヘルプ**] (**?**) アイコンをクリックしてからヘルプを選択するか、Ctrl + Shift + ? を押します。 どちらの場合も、[ヘルプ] ウィンドウが開きます。 [ヘルプ] ウィンドウから記事またはタスク ガイドにアクセスできます。 
+Finance and Operations 内のヘルプ コンテンツにアクセスするには、\[**ヘルプ**\] (**?**) アイコンをクリックしてからヘルプを選択するか、Ctrl + Shift + ? を押します。 どちらの場合も、[ヘルプ] ウィンドウが開きます。 [ヘルプ] ウィンドウから記事またはタスク ガイドにアクセスできます。 
 
 ![[ヘルプ] ウィンドウ](./media/help-pane-wiki.png)
 

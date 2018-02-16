@@ -3,12 +3,12 @@ title: "見込顧客を現金化"
 description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition、および Microsoft Dynamics 365 for Sales における見込顧客を現金化するソリューションについて概説します。"
 author: ChristianRytt
 manager: AnnBe
-ms.date: 12/20/2017
+ms.date: 02/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
-ms.search.form: 
+ms.search.form: CustTable, SalesTable, EcoResProductListPage
 audience: Application User, IT Pro
 ms.reviewer: yuyus
 ms.search.scope: Core, Operations
@@ -17,13 +17,13 @@ ms.assetid:
 ms.search.region: global
 ms.search.industry: 
 ms.author: crytt
-ms.dyn365.ops.intro: July 2017 update
+ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: f169b0ee20a7ca0c8d05c8bdcf2c04d411722f01
-ms.openlocfilehash: ff166f89d13acbc3aefcbdb39f485881c81cb42c
+ms.sourcegitcommit: 602873e8af976c57f27ce53b76391516351755e3
+ms.openlocfilehash: 29d33d3ecf97c15fed0247d172ff6fb3bbdaa018
 ms.contentlocale: ja-jp
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 01/25/2018
 
 ---
 
@@ -31,16 +31,20 @@ ms.lasthandoff: 12/21/2017
 
 [!include[banner](../includes/banner.md)]
 
-この見込顧客を現金化するソリューションは、Dynamics 365 for Finance and Operations、Enterprise Edition、および Dynamics 365 for Sales 間で直接同期を提供します。 データ統合機能で利用可能な見込み顧客を現金化するテンプレートは、Finance and Operations と Sales 間での勘定、連絡先、製品および販売見積、販売注文、および売上請求書のデータの流れを可能にします。 データは Finance and Operations と Sales との間を流れていますが、Sales のセールスおよびマーケティング活動を行い、Finance and Operations の在庫管理を使用して注文の履行を処理することができます。
+この見込顧客を現金化するソリューションは、Dynamics 365 for Finance and Operations、Enterprise Edition、および Dynamics 365 for Sales 間で直接同期を提供します。 データ統合機能で利用可能な見込み顧客を現金化するテンプレートは、Finance and Operations と Sales 間での勘定、連絡先、製品および販売見積、販売注文、および売上請求書のデータの流れを可能にします。 データは Finance and Operations と Sales との間を流れていますが、Sales のセールスおよびマーケティング活動を行い、Finance and Operations の在庫管理を使用して注文の履行を処理することができます。 
+
+見込顧客を現金化することの詳細については、短い YouTube ビデオを確認してください。
+
+> [!Video https://www.youtube.com/embed/AVV9x5x-XCg]
 
 現在のバージョンでは、見込顧客を現金化するソリューションは次のタイプの直接同期を提供します:
 
 - [Sales でアカウントの管理、および Sales から Finance and Operations への直接同期](accounts-template-mapping-direct.md)
 - [Finance and Operations での製品の管理、および Sales への直接同期](products-template-mapping-direct.md)
 - [Sales の連絡先の管理、および Finance and Operations の連絡先または顧客への直接同期](contacts-template-mapping-direct.md)
-- [販売見積の Sales から Finance and Operations への直接同期](sales-quotation-template-mapping-sales-fin.md)
+- [販売見積の Sales から Finance and Operations への直接同期 (リリース保留中のテンプレート)](sales-quotation-template-mapping-sales-fin.md)
 - [販売注文の Finance and Operations から Sales への直接同期](sales-order-template-mapping-direct.md)
-- [販売注文の Sales と Finance and Operations の間の直接同期](sales-order-template-mapping-direct-two-ways.md)
+- [販売注文の Sales と Finance and Operations の間の直接同期 (リリース保留中のテンプレート)](sales-order-template-mapping-direct-two-ways.md)
 - [売上請求書の Finance and Operations から Sales への直接同期](sales-invoice-template-mapping-direct.md)
 
 以前のバージョンでは、見込顧客を現金化するソリューションは次のタイプの非直接同期を提供します:
@@ -50,15 +54,19 @@ ms.lasthandoff: 12/21/2017
 - [Finance and Operations での製品の管理、および Sales への同期](products-template-mapping.md)
 - [Sales での販売見積の作成、および Finance and Operations への同期](sales-quotation-template-mapping.md)
 - [Finance and Operations での販売注文の作成、および Sales への同期](sales-order-template-mapping.md)
-- [Finance and Operations で販売請求書の作成、および Sales への同期](sales-invoice-template-mapping.md)
+- [Finance and Operations での売上請求書の作成、および Sales への同期](sales-invoice-template-mapping.md)
 
 ## <a name="system-requirements-for-finance-and-operations"></a>Finance and Operations のシステム要件
 
-見込顧客を現金化するソリューションを使用するには、以下のコンポーネントをインストールする必要があります:
+見込顧客の現金化は次のバージョンでサポートされています。
+
+### <a name="microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-73-december-2017"></a>Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 (2017 年 12 月)
+
+- Dynamics 365 for Finance and Operations, Enterprise edition (2017 年 12 月) - プラットフォーム アップデート 12 (7.0.4709.41129) によるアプリケーション ビルド 7.3.11971.56116
 
 ### <a name="dynamics-365-for-finance-and-operations-enterprise-edition-july-2017"></a>Dynamics 365 for Finance and Operations, Enterprise edition (2017 年 7 月)
 
-- プラットフォーム アップデート 8 (プラットフォーム ビルド 7.0.4565.16212 によるアプリケーション ビルド 7.2.11792.56024) による Dynamics 365 for Finance and Operations, Enterprise edition (2017 年 7 月)
+- Dynamics 365 for Finance and Operations, Enterprise edition (2017 年 7 月) - プラットフォーム アップデート 8 (プラットフォーム ビルド 7.0.4565.16212 によるアプリケーション ビルド 7.2.11792.56024) による。
 - 次の修正プログラムが必要です。
 
     - **[KB4045570](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4045570&bugId=3851320&qc=ac1145034fd04ab71ccc4d14aa012f245176712c9af7c36bb77a118726d46160)** – この修正プログラムはデータ統合機能を利用した Sales から Finance and Operations への販売注文の同期を有効にします。 他のいくつかの機能拡張も提供されています。
@@ -68,7 +76,7 @@ ms.lasthandoff: 12/21/2017
     > [!NOTE]
     > インストールに他の修正プログラムからの変更が含まれているため、KB4045570 のみをインストールしなければなりません。 
 
-### <a name="dynamics-365-for-finance-and-operations-version-1611-november-2016"></a>Dynamics 365 for Finance and Operations バージョン 1611 (2016 年 11月) 
+### <a name="dynamics-365-for-finance-and-operations-version-1611-november-2016"></a>Dynamics 365 for Finance and Operations バージョン 1611 (2016 年 11月)
 
 - プラットフォーム アップデート 8 またはそれ以降による Dynamics 365 for Finance and Operations バージョン 1611 (2016 年 11 月)
 
@@ -106,4 +114,6 @@ ms.lasthandoff: 12/21/2017
     2. [**高度な表示**] を選択します。
     3. クイック インストールするには、[地域] を選択します。 [**わからない**] を選択する場合、システムはすべての地域を検索するためインストールに時間がかかります。
     4. インストールする権限を持つ管理者ユーザーの [ユーザー名] および [パスワード] を入力します。
+
+
 
