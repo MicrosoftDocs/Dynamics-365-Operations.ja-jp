@@ -19,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ccd663a769aa98afb800f6fcd6217f39bb513597
+ms.sourcegitcommit: 95d5bf26c22238753586cf4a7aaf5c26f061a705
+ms.openlocfilehash: d0795a9cb1839c45cf264b0d0f7cffacdc01ea9d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 02/23/2018
 
 ---
 
@@ -54,10 +54,6 @@ ms.lasthandoff: 11/03/2017
 <span data-ttu-id="c3128-129">すべての顧客トランザクションに同じ転記プロファイルを割り当てる場合は、[アカウント コード] フィールドを [すべて] に設定して、単一の転記プロファイルを設定します。</span><span class="sxs-lookup"><span data-stu-id="c3128-129">If you want all customer transactions to have the same posting profile, set up only one posting profile with All in the Account code field.</span></span> <span data-ttu-id="c3128-130">転記プロファイルを設定するには、次の値を指定します。</span><span class="sxs-lookup"><span data-stu-id="c3128-130">Specify the following values to set up your posting profile:</span></span>
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th><span data-ttu-id="c3128-131">フィールド</span><span class="sxs-lookup"><span data-stu-id="c3128-131">Field</span></span></th>
