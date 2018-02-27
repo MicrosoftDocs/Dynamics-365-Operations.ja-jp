@@ -19,13 +19,16 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 2bc175ceec7ee8771e09f1dac4ede7b3fa619322
+ms.sourcegitcommit: af7f9a373496eee4df354d5dd9e5a25c51317c43
+ms.openlocfilehash: fca7fb75b965886c2ebc06b12940434f2ffc2543
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 02/27/2018
 
 ---
 # <a name="modify-an-electronic-reporting-format-by-reapplying-a-microsoft-excel-template"></a><span data-ttu-id="49ff0-103">Microsoft Excel テンプレートを再適用して電子申告形式を変更</span><span class="sxs-lookup"><span data-stu-id="49ff0-103">Modify an Electronic reporting format by reapplying a Microsoft Excel template</span></span>
+
+[!include[banner](../includes/banner.md)]
+
 <span data-ttu-id="49ff0-104">電子申告 (ER) ツールを使用して、電子的な形式でビジネス ドキュメントを生成します。</span><span class="sxs-lookup"><span data-stu-id="49ff0-104">The Electronic reporting (ER) tool is used to generate business documents in an electronic format.</span></span> <span data-ttu-id="49ff0-105">ビジネス ドキュメントを生成するには、ER 形式を作成し、ER デザイナーを使用してビジネス ドキュメントのレイアウトを定義し、それに含まれるように、データを指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="49ff0-105">To generate a business document, you must create an ER format, and then use the ER designer to define the layout of the business document and specify the data that should be included in it.</span></span> <span data-ttu-id="49ff0-106">ビジネス ドキュメントを生成するために ER 形式を実行できます。</span><span class="sxs-lookup"><span data-stu-id="49ff0-106">You can then run the ER format to generate the business document.</span></span>
 
 <span data-ttu-id="49ff0-107">Microsoft Excel ファイルとしてのビジネス ドキュメントを生成するために、ER ツールを使用することができます。</span><span class="sxs-lookup"><span data-stu-id="49ff0-107">The ER tool can be used to generate business documents as Microsoft Excel files.</span></span> <span data-ttu-id="49ff0-108">Excel ドキュメントは、これらのドキュメントをテンプレートとして使用できます。</span><span class="sxs-lookup"><span data-stu-id="49ff0-108">You can use an Excel document as a template for these documents.</span></span> <span data-ttu-id="49ff0-109">ER デザイナーでのドキュメント レイアウトを定義するには、定義済みの ER 形式をテンプレートとして使用する Excel ドキュメントの内容をインポートできます。</span><span class="sxs-lookup"><span data-stu-id="49ff0-109">To define the document layout in the ER designer, you can import the contents of the Excel document that you want to use as a template into the defined ER format.</span></span> <span data-ttu-id="49ff0-110">このシナリオ実行の詳細については、**ER は、OPENXML 形式でレポートを生成するコンフィギュレーションを設計する** タスク ガイド (7.5.4.3 IT サービス / ソリューション コンポーネントの取得 / 開発 (10677) ビジネス プロセスの一部) を再生します。</span><span class="sxs-lookup"><span data-stu-id="49ff0-110">For more details, and to practice this scenario, play the task guide **ER Design a configuration for generating reports in OPENXML format** (part of the 7.5.4.3 Acquire/Develop IT service/solution components (10677) business process).</span></span>
