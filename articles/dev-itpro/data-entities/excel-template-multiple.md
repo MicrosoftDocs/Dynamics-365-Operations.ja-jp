@@ -27,6 +27,8 @@ ms.lasthandoff: 12/14/2017
 
 # <a name="excel-templates-with-multiple-worksheets"></a>複数のワークシートの Excel テンプレート
 
+[!include[banner](../includes/banner.md)]
+
 Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition のデータ管理は、データ エンティティ用の Microsoft Excel ベースのテンプレートをサポートしています。 これらのテンプレートには、1 つまたは複数のワークシートを含めることができます。 複数のワークシートを含むテンプレートは、1つのファイルでデータを管理し、複数のデータ エンティティにインポートすると便利な場合によく使用されます。 サイトや倉庫の例があります。
 
 ## <a name="upload-a-file-once-and-map-it-to-all-entities"></a>ファイルを一度アップロードし、すべてのエンティティにマップする
