@@ -27,6 +27,8 @@ ms.lasthandoff: 12/01/2017
 
 # <a name="cloud-and-on-premises-feature-comparison"></a>クラウドとオンプレミスの機能比較
 
+[!include[banner](../includes/banner.md)]
+
 このトピックでは、各機能が次の製品で使用できるかを示します。
 
 + Dynamics 365 for Finance and Operations, Enterprise edition (クラウド)

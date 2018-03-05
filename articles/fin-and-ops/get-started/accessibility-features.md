@@ -25,6 +25,8 @@ ms.lasthandoff: 01/23/2018
 
 # <a name="accessibility-features"></a>ユーザー補助機能
 
+[!include[banner](../includes/banner.md)]
+
 このトピックでは、さまざまな障害を持つユーザーが Dynamics 365 for Finance and Operations, Enterprise edition、Dynamics 365 for Retail、および Dynamics 365 for Talent を使用するのを支援するようにデザインされた機能について説明します。 たとえば、Microsoft Windows ナレーターなどの資格支援テクノロジーを使用しているユーザーに対する機能があります。
 
 ## <a name="windows-narrator-and-keyboard-only-access"></a>Windows ナレーターとキーボード専用アクセス

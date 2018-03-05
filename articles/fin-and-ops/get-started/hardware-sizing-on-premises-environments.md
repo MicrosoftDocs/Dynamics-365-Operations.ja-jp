@@ -26,6 +26,9 @@ ms.lasthandoff: 11/03/2017
 ---
 
 # <a name="hardware-sizing-for-on-premises-environments"></a>オンプレミス環境のハードウェアのサイズ設定
+
+[!include[banner](../includes/banner.md)]
+
 オンプレミス環境におけるハードウェアおよびインフラストラチャのサイズ設定のプロセスを開始する前に、[システム要件](system-requirements.md)および[セットアップおよび配置の指示](../../dev-itpro/deployment/setup-deploy-on-premises-environments.md)に精通し、基盤となるインフラストラクチャを確実に把握します。 
 
   **注:** 最適なパフォーマンスを得るには、システム設定のベストプラクティスに十分注意します。 
