@@ -17,14 +17,16 @@ ms.author: riluan
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a523ff097eedf9a4a2cb0341b3be9d05abfa09fa
-ms.openlocfilehash: 5af4ba9553ffc828bee0b77b6cfac97da22bf3e7
+ms.sourcegitcommit: 92a52646063c145d733b9d2960253004e8eab80a
+ms.openlocfilehash: 28c9ece2231ae5bba9a74612c14192e5ca68b197
 ms.contentlocale: ja-jp
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/05/2018
 
 ---
 
 # <a name="import-postal-codes-for-japan"></a><span data-ttu-id="f95e9-103">日本の郵便番号のインポート</span><span class="sxs-lookup"><span data-stu-id="f95e9-103">Import postal codes for Japan</span></span>
+
+[!include[banner](../includes/banner.md)]
 
 <span data-ttu-id="f95e9-104">日本では、日本郵便局が Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition にインポート可能な郵便番号コード ファイルを提供します。</span><span class="sxs-lookup"><span data-stu-id="f95e9-104">In Japan, the Japan Postal Office provides a ZIP code file that you can import into Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.</span></span> <span data-ttu-id="f95e9-105">このトピックでは、郵便番号をインポートするためのプロセスについて説明します。</span><span class="sxs-lookup"><span data-stu-id="f95e9-105">This topic walks you through the process for importing ZIP/postal codes.</span></span> <span data-ttu-id="f95e9-106">この例では、デモ データの会社 JPMF を使用します。</span><span class="sxs-lookup"><span data-stu-id="f95e9-106">This example uses the JPMF demo data company.</span></span>
 
