@@ -19,14 +19,16 @@ ms.author: asharchw
 ms.search.validFrom: 2017-10-10
 ms.dyn365.ops.version: Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 7612935c42ee7b28e1d1e24b22801e31114dc675
+ms.sourcegitcommit: 797058bdbbdb63a08eb35034ffe3c913307f38df
+ms.openlocfilehash: 41434614b01f9a00f2b8a56765ecb90ee07e3d90
 ms.contentlocale: ja-jp
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 03/06/2018
 
 ---
 
 # <a name="ship-an-order-from-a-different-store"></a><span data-ttu-id="aefe0-103">さまざまな店舗からの注文を出荷します。</span><span class="sxs-lookup"><span data-stu-id="aefe0-103">Ship an order from a different store</span></span>
+
+[!include[banner](includes/banner.md)]
 
 <span data-ttu-id="aefe0-104">Dynamics 365 for Retail の請求金額送信機能で、顧客注文を 1 つの店舗で受けて、別の店舗から出荷することができます。</span><span class="sxs-lookup"><span data-stu-id="aefe0-104">With the Charge send feature in Dynamics 365 for Retail, customer orders can be placed in one store and shipped from another store.</span></span> <span data-ttu-id="aefe0-105">小売販売時点管理 (POS) クライアントでの顧客注文は、複数の調達オプションをサポートします。</span><span class="sxs-lookup"><span data-stu-id="aefe0-105">Customer orders in the point of sale (POS) client support multiple fulfillment options.</span></span> <span data-ttu-id="aefe0-106">調達のためのオプションの例を示します。</span><span class="sxs-lookup"><span data-stu-id="aefe0-106">Some examples of fulfillment options include:</span></span>
 -   <span data-ttu-id="aefe0-107">別の日付に、同じ店舗から集荷します。</span><span class="sxs-lookup"><span data-stu-id="aefe0-107">Pick up from the same store on a different date.</span></span>
