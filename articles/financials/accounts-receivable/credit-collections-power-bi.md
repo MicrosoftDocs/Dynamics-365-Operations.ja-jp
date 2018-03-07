@@ -17,14 +17,16 @@ ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
-ms.openlocfilehash: b1995bd3649b96b8457c83af101180169261b7d1
+ms.sourcegitcommit: 6ce0b7b35264c05555d8b3a18e70484202a289d6
+ms.openlocfilehash: 3832cabb11d67eda7afd7f3d5322c005b36dc1f5
 ms.contentlocale: ja-jp
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 03/07/2018
 
 ---
 
 # <a name="credit-and-collections-management-power-bi-content"></a><span data-ttu-id="f4c76-104">与信および回収管理 Power BI コンテンツ</span><span class="sxs-lookup"><span data-stu-id="f4c76-104">Credit and collections management Power BI content</span></span>
+
+[!include[banner](../includes/banner.md)]
 
 <span data-ttu-id="f4c76-105">このトピックでは、**与信および回収管理** Microsoft Power BI コンテンツの内容について説明します。</span><span class="sxs-lookup"><span data-stu-id="f4c76-105">This topic describes what is included in the **Credit and collections management** Microsoft Power BI content.</span></span> <span data-ttu-id="f4c76-106">Power BI レポートにアクセスする方法を説明し、コンテンツを作成するために使用したデータ モデルおよびエンティティについての情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="f4c76-106">It explains how to access the Power BI reports, and provides information about the data model and entities that were used to build the content.</span></span>
 
