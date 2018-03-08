@@ -26,6 +26,9 @@ ms.lasthandoff: 01/19/2018
 ---
 
 # <a name="configuration-keys-and-data-entities"></a>コンフィギュレーション キーおよびデータ エンティティ
+
+[!include[banner](../includes/banner.md)]
+
 データ エンティティを使用してデータをインポートまたはエクスポートする前に、使用を計画しているデータ エンティティでコンフィギュレーション キーの影響を最初に判断することをお勧めします。 
 
 Finance and Operations でコンフィギュレーション キーの詳細については、[ライセンス コードとコンフィギュレーション キーのレポート](../sysadmin/license-codes-configuration-keys-report.md) を参照してください。

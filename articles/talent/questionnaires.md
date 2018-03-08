@@ -28,6 +28,8 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="questionnaires"></a>アンケート
 
+[!include[banner](includes/banner.md)]
+
 このトピックは、アンケートに関する一般情報、およびより詳しい情報へのリンクを提供します。 アンケートとは、多様な目的の情報を収集するために使用される一連の質問です。 アンケートのデザイン、作成、配布、および回答の完了を行い、結果を分析することができます。 
 
 Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition で使用できるさまざまな機能の組み合わせを使用して、特定の要件に合わせたアンケートをカスタマイズできます。 アンケートの使用方法の例を挙げます。

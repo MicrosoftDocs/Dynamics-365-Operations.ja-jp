@@ -28,6 +28,8 @@ ms.lasthandoff: 10/10/2017
 
 # <a name="ship-an-order-from-a-different-store"></a>さまざまな店舗からの注文を出荷します。
 
+[!include[banner](includes/banner.md)]
+
 Dynamics 365 for Retail の請求金額送信機能で、顧客注文を 1 つの店舗で受けて、別の店舗から出荷することができます。 小売販売時点管理 (POS) クライアントでの顧客注文は、複数の調達オプションをサポートします。 調達のためのオプションの例を示します。
 -   別の日付に、同じ店舗から集荷します。
 -   同じ日付または異なる日付に、別の店から集荷します。

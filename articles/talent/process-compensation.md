@@ -26,6 +26,9 @@ ms.lasthandoff: 11/03/2017
 ---
 
 # <a name="process-compensation"></a>報酬処理
+
+[!include[banner](includes/banner.md)]
+
 報酬処理では、賃金調整、昇給目標、およびパフォーマンスに基づいて、従業員の新しい基本報酬金額を計算することができます。 このトピックでは、従業員のパフォーマンスを考慮しない固定報酬プランの報酬処理の基本フローについて説明します。
 
 ## <a name="plan-the-new-compensation-amounts-and-budgets"></a>新しい報酬金額と予算を計画する

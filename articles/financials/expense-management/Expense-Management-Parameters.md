@@ -25,6 +25,9 @@ ms.lasthandoff: 09/29/2017
 ---
 
 # <a name="expense-management-parameters"></a>経費管理パラメーター
+
+[!include[banner](../includes/banner.md)]
+
 -----------------------------
 
 パラメーターでは、経費管理の全般動作を管理します。
