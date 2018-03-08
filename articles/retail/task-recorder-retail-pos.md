@@ -29,6 +29,8 @@ ms.lasthandoff: 02/01/2018
 
 # <a name="task-recorder-and-help-for-pos"></a>POS のタスク レコーダーとヘルプ
 
+[!include[banner](includes/banner.md)]
+
 このトピックでは、Retail Modern POS およびクラウド POS のタスク レコーダーを使用する方法を説明します。
 
 <a name="overview"></a>概要

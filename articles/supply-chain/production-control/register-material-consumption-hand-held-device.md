@@ -27,6 +27,9 @@ ms.lasthandoff: 11/03/2017
 ---
 
 # <a name="register-material-consumption-using-a-mobile-device"></a>モバイル デバイスを使用して材料消費を登録する
+
+[!include[banner](../includes/banner.md)]
+
 このトピックでは、ハンドヘルド デバイスを使用して生産における原材料消費の登録を可能にするワークフローについて説明します。
 
 <a name="introduction"></a>はじめに

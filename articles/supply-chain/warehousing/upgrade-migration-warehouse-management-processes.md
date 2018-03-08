@@ -28,6 +28,8 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="migrate-products-and-warehouse-management-from-ax-2012-to-finance-and-operations"></a>AX 2012 から Finance and Operations への製品および倉庫管理プロセスの移行
 
+[!include[banner](../includes/banner.md)]
+
 このトピックでは、Microsoft Dynamics 365 for Finance および Operations, Enterprise Edition 内の製品および倉庫管理移行オプションの概要を示します。
 
 <a name="introduction"></a>はじめに

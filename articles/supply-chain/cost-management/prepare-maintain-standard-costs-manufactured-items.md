@@ -30,6 +30,8 @@ ms.lasthandoff: 01/19/2018
 
 # <a name="prepare-to-maintain-standard-costs-for-manufactured-items"></a>製造品目の標準原価を管理するための準備
 
+[!include[banner](../includes/banner.md)]
+
 このトピックでは、製造品目の原価の管理を準備するステップについて説明します。 製造品目のステップは、購入品目のステップからわずかに異なっています。
 
 製造品目に割り当てられているポリシーは、親製造品目の原価計算に影響を与える可能性があります。 製造品目の原価の管理を準備するには、次の手順を実行します。

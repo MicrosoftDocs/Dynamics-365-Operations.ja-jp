@@ -28,6 +28,8 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-an-external-catalog-for-punchout-eprocurement"></a>パンチアウト eProcurement の外部カタログの設定
 
+[!include[banner](../includes/banner.md)]
+
 外部カタログを使用することにより、Dynamics 365 for Financial and Operations, Enterprise Edition 2017 年 ７ 月の更新で処理される製品および価格情報が正確かつ最新のものであることを保証することができます。 要求は承認され、発注書に変換され、注文は仕入先に配置することができます。
 
 外部カタログが設定され、従業員が依頼を準備しているときは、外部サイト、外部カタログにリダイレクトし、外部サイトで作成された買い物カゴを返すオプションがあります。 この通信は cXML プロトコルに基づいており、購買システムと販売組織の間で設定する必要があります。

@@ -28,6 +28,8 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="view-and-evaluate-the-results-of-a-questionnaire"></a>アンケートの結果を表示および評価
 
+[!include[banner](includes/banner.md)]
+
 このトピックは、回答者が完了したアンケートの結果を表示および評価する方法を説明します。 
 
 回答者がアンケートを完了すると、次の方法でアンケートの結果を表示して評価できます。

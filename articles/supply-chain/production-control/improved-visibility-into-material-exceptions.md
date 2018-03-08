@@ -26,6 +26,8 @@ ms.lasthandoff: 12/14/2017
 ---
 # <a name="visibility-into-material-exceptions"></a>材料の例外の把握
 
+[!include[banner](../includes/banner.md)]
+
 [**生産フロアの管理**] ワークスペースでは、3 つのタイルを使用して、製造オーダーおよびバッチ オーダーの原材料の例外をより詳細に把握できます。
 
 - 注意が必要な未リリースの材料明細行
