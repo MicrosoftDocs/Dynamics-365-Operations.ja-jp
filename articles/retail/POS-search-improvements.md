@@ -19,14 +19,16 @@ ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 2af45de0d63b01e71b5009e2f62cfdff6844da7d
+ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
+ms.openlocfilehash: bd563610616fa72a610e0b134371765cc1edacc6
 ms.contentlocale: ja-jp
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 03/08/2018
 
 ---
 
 # <a name="overview-of-product-and-customer-search-in-point-of-sale"></a><span data-ttu-id="9612e-103">販売時点管理での製品および顧客検索の概要</span><span class="sxs-lookup"><span data-stu-id="9612e-103">Overview of product and customer search in Point of Sale</span></span>
+
+[!include[banner](includes/banner.md)]
 
 <span data-ttu-id="9612e-104">Modern 販売時点管理 (MPOS) およびクラウド販売時点管理 (CPOS) は、店舗の従業員がすばやく製品および顧客の検索ができるよう、使いやすい検索機能を提供します。</span><span class="sxs-lookup"><span data-stu-id="9612e-104">Modern Point of Sale (MPOS) and Cloud Point of Sale (CPOS) provide easy-to-use search functionality that lets store employees quickly search for products and customers.</span></span> <span data-ttu-id="9612e-105">検索バーは、従業員がすばやく製品および顧客を検索できるよう、常に MPOS および CPOS の上部に表示されています。</span><span class="sxs-lookup"><span data-stu-id="9612e-105">The search bar is always present at the top of MPOS and CPOS, so that employees can quickly find products and customers.</span></span>
 

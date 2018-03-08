@@ -18,14 +18,17 @@ ms.author: shielas
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: abc52192848649672cbcb8c770d74ba2aef139be
-ms.openlocfilehash: e3f0f79df73cce4a54c7e6abbc38381c708af690
+ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
+ms.openlocfilehash: 58089418ac233d31a2a4f0298af5e884d77a67d3
 ms.contentlocale: ja-jp
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/08/2018
 
 ---
 
 # <a name="personnel-actions-faq"></a><span data-ttu-id="07e56-104">人事のアクション [FAQ]</span><span class="sxs-lookup"><span data-stu-id="07e56-104">Personnel actions [FAQ]</span></span>
+
+[!include[banner](includes/banner.md)]
+
 <span data-ttu-id="07e56-105">このトピックでは、組織で個人のアクションを使用する場合に生じる質問に答えます。</span><span class="sxs-lookup"><span data-stu-id="07e56-105">This topic contains answers to questions that you might have if your organization uses personnel actions.</span></span> <span data-ttu-id="07e56-106">個人のアクションは、特定の個人に関連するタスクを実行する際に行う必要がある追加手順です。</span><span class="sxs-lookup"><span data-stu-id="07e56-106">Personnel actions are additional steps that you must complete when you perform certain personnel-related tasks.</span></span> <span data-ttu-id="07e56-107">個人のアクションが必要なタスクの例は、新しい職位を作成、既存の職位の値を変更、新しい作業者を雇う、作業者を転送する、作業者の報酬を変更、職位の割り当てを変更または作業者を終了することなでです。</span><span class="sxs-lookup"><span data-stu-id="07e56-107">Examples of tasks that might require personnel actions are when you create new positions, modify existing position values, hire new workers, transfer workers, change worker compensation, change position assignments, or terminate workers.</span></span>
 
 <span data-ttu-id="07e56-108">[**注記:**] [個人のアクション] は、[**人事管理の共有パラメーター**] ページの [**個人のアクション**] タブで、[**作業者アクションの有効化**] および [**職位アクションの有効化**] フィールドが [**はい**] に設定されている場合にのみ使用可能です。</span><span class="sxs-lookup"><span data-stu-id="07e56-108">**Note:** Personnel actions are available only if the **Enable worker actions** and **Enable position actions** fields have been set to **Yes**, in the **Personnel actions** tab on the **Human resources shared parameters** page.</span></span> 

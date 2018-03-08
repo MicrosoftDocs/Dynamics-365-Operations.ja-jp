@@ -18,15 +18,17 @@ ms.author: rubencdelgado
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 02c863bc507cacb3829bed474b37d32ff599bf1b
+ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
+ms.openlocfilehash: ccff6533257379c0305f7414dd36e17d1c323c21
 ms.contentlocale: ja-jp
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 03/08/2018
 
 ---
 
 
 # <a name="set-up-order-fulfillment-for-stores"></a><span data-ttu-id="52cfb-103">店舗における注文のフルフィルメントを設定</span><span class="sxs-lookup"><span data-stu-id="52cfb-103">Set up order fulfillment for stores</span></span>
+
+[!include[banner](includes/banner.md)]
 
 ## <a name="overview"></a><span data-ttu-id="52cfb-104">概要</span><span class="sxs-lookup"><span data-stu-id="52cfb-104">Overview</span></span>
 <span data-ttu-id="52cfb-105">多くの小売業者は、注文する店舗を有効化することで、注文のフルフィルメントを最適化したいと考えています。</span><span class="sxs-lookup"><span data-stu-id="52cfb-105">Many retailers would like to optimize order fulfillment by enabling stores to fill orders.</span></span> <span data-ttu-id="52cfb-106">店舗レベルでの注文のフルフィルメントは、特定の店舗の過剰在庫のシナリオを軽減するために役立ちます。また、店舗が余分な能力を持っているか、店舗が顧客とのより近い輸送距離内に位置する場合に、物流の視点から必要とされる場合があります。</span><span class="sxs-lookup"><span data-stu-id="52cfb-106">Order fulfillment at the store level can help to ease overstock scenarios for a specific store, or may be needed from a logistical standpoint in cases where a store has extra capacity or is located within closer shipping distance to the customer.</span></span> <span data-ttu-id="52cfb-107">これに対処するために、販売時点管理で統一された注文のフィルフィルメントの操作が利用できます。</span><span class="sxs-lookup"><span data-stu-id="52cfb-107">To address this need, a unified order fulfillment operation is available at the point of sale.</span></span>

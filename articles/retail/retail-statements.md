@@ -20,14 +20,17 @@ ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: f9ea6190823a5af951538e0da2760f05896ee993
+ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
+ms.openlocfilehash: ddceadb797af98f85670df72a335b2714fe2f01e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 03/08/2018
 
 ---
 
 # <a name="retail-statements"></a><span data-ttu-id="abc39-103">小売明細書</span><span class="sxs-lookup"><span data-stu-id="abc39-103">Retail statements</span></span>
+
+[!include[banner](includes/banner.md)]
+
 <span data-ttu-id="abc39-104">Microsoft Dynamics 365 for Retail では、クラウド販売時点管理 (POS) または Modern POS (MPOS) で発生するトランザクションに対して、明細書の転記プロセスが使用されます。</span><span class="sxs-lookup"><span data-stu-id="abc39-104">In Microsoft Dynamics 365 for Retail, the statement posting process is used to account for the transactions that occur in Cloud point of sale (POS) or Modern POS (MPOS).</span></span> <span data-ttu-id="abc39-105">明細書の転記プロセスでは、配送スケジュールを使用して、一連の POS トランザクションを本社 (HQ) クライアントに引き渡します。</span><span class="sxs-lookup"><span data-stu-id="abc39-105">The statement posting process uses the distribution schedule to pull a set of POS transactions into the headquarters (HQ) client.</span></span> <span data-ttu-id="abc39-106">[**小売パラメーター**] および [**店舗**] ページで定義されているパラメーターは、個々のステートメントに引き込まれたトランザクションを選択するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="abc39-106">The parameters that are defined on the **Retail parameters** and **Stores** pages are used to select the transactions that are pulled into individual statements.</span></span>  
 
 <span data-ttu-id="abc39-107">次の図は、明細書の転記プロセスを示しています。</span><span class="sxs-lookup"><span data-stu-id="abc39-107">The following illustration shows the statement posting process.</span></span> <span data-ttu-id="abc39-108">このプロセスでは、POS に記録されているトランザクションは、小売り用スケジューラを使用してクライアントに送信されます。</span><span class="sxs-lookup"><span data-stu-id="abc39-108">In this process, transactions that are recorded in the POS are transmitted to the client by using the Retail scheduler.</span></span> <span data-ttu-id="abc39-109">クライアントがトランザクションを受け入れた後、ストアのトランザクション明細書を作成し、計算および転記できます。</span><span class="sxs-lookup"><span data-stu-id="abc39-109">After the client receives the transactions, you can create, calculate, and post the transaction statement for the store.</span></span> 

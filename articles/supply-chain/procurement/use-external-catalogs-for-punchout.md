@@ -19,14 +19,17 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 24a17d3734e39815684098f694a77e96cdbc1cfe
-ms.openlocfilehash: f755c1e46d5111282bfffdf751fe98beaa081a51
+ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
+ms.openlocfilehash: 76d0c911bdddbc5a34644dc96ec13dd8fd53a338
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/07/2018
+ms.lasthandoff: 03/08/2018
 
 ---
 
 # <a name="use-external-catalogs-for-punchout-eprocurement"></a><span data-ttu-id="0a561-103">パンチアウト eProcurement の外部カタログの使用</span><span class="sxs-lookup"><span data-stu-id="0a561-103">Use external catalogs for PunchOut eProcurement</span></span>
+
+[!include[banner](../includes/banner.md)]
+
 <span data-ttu-id="0a561-104">パンチアウト e-procurement の外部カタログを使用すると、自身のマスター データで仕入先の製品に関する情報を管理する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="0a561-104">By using external catalogs for PunchOut e-procurement, you don't have to maintain information about your vendors' products in your own master data.</span></span> <span data-ttu-id="0a561-105">代わりに、仕入先の Web サイトのショッピング カートが正しい製品情報を持つ要求明細行に変換されます。</span><span class="sxs-lookup"><span data-stu-id="0a561-105">Instead, the shopping cart on a vendor's website is converted to requisition lines that have the correct product information.</span></span> 
 
 <span data-ttu-id="0a561-106">自身のマスター データでは仕入先の製品の説明や価格を管理しないようにします。</span><span class="sxs-lookup"><span data-stu-id="0a561-106">You should avoid maintaining the descriptions and prices of your vendors’ products in your own product master data.</span></span> <span data-ttu-id="0a561-107">代わりに、パンチアウト e-procurement の外部カタログを使用します。</span><span class="sxs-lookup"><span data-stu-id="0a561-107">Instead, use external catalogs for PunchOut e-procurement.</span></span> <span data-ttu-id="0a561-108">その後、従業員は要求を作成するときに仕入先の外部カタログ サイトに「パンチアウト」できます (つまり、システムを離れて仕入先のサイトに移動します)。</span><span class="sxs-lookup"><span data-stu-id="0a561-108">Then, when employees create requisitions, they can “punch out” to a vendor’s external catalog site (in other words, they leave your system and go to the vendor’s site).</span></span> <span data-ttu-id="0a561-109">仕入先の Web サイトでショッピング カートに追加される製品は、要求明細行に変換できます。</span><span class="sxs-lookup"><span data-stu-id="0a561-109">The products that are added to the shopping cart on the vendor’s website can then be converted to requisition lines.</span></span> <span data-ttu-id="0a561-110">そのため、製品 ID、名前、価格などの正しい製品情報を取得することになります。</span><span class="sxs-lookup"><span data-stu-id="0a561-110">Therefore, you get the correct product information: product ID, name, price, and so on.</span></span>
