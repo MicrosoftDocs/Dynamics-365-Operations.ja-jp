@@ -9,7 +9,7 @@
 ## [アプリケーション スタックおよびサーバーのアーキテクチャ](dev-tools/application-stack-server-architecture.md)
 ## [ベータ評価版の入手](dev-tools/get-evaluation-copy.md)
 ## [サブスクリプションのサインアップ](dev-tools/sign-up-preview-subscription.md)
-## [アクセス インスタンス](dev-tools/access-instances.md)
+## [開発環境の配置とアクセス](dev-tools/access-instances.md)
 ## [開発システム要件](dev-tools/development-system-requirements.md)
 ## フリート管理のサンプル アプリケーション
 ### [フリート管理のサンプル アプリケーション](dev-tools/fleet-management-sample.md)
@@ -360,7 +360,7 @@
 #### [ValueMetadata タイプ](mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluemetadata.md)
 
 # データ統合
-## [統合パターン](data-entities/integration-overview.md)
+## [データ統合方法 (インポート/エクスポート) の選択](data-entities/integration-overview.md)
 
 ## データ統合 API
 ### [データ管理パッケージ API](data-entities/data-management-api.md)
@@ -381,12 +381,12 @@
 
 ### [Common Data Service を使用したデータの統合](data-entities/data-integration-cds.md) 
 #### [見込顧客から入金のシナリオのコンフィギュレーション](../supply-chain/sales-marketing/prospect-to-cash.md)
-##### [Sales 製品への Finance and Operations の製品の同期](../supply-chain/sales-marketing/products-template-mapping.md)
-##### [Finance and Operations の顧客への Sales の勘定の同期](../supply-chain/sales-marketing/accounts-template-mapping.md)
-##### [Finance and Operations の連絡先または顧客への Sales の連絡先の同期](../supply-chain/sales-marketing/contacts-template-mapping.md)
-##### [販売見積ヘッダーおよび明細行の Sales から Finance and Operations への同期](../supply-chain/sales-marketing/sales-quotation-template-mapping.md)
-##### [販売注文ヘッダーおよび明細行の Finance and Operations から Sales への同期](../supply-chain/sales-marketing/sales-order-template-mapping.md)
-##### [売上請求書ヘッダーおよび明細行の Finance and Operations から Sales への同期](../supply-chain/sales-marketing/sales-invoice-template-mapping.md)
+##### [Sales 製品への Finance and Operations の製品の同期](../supply-chain/sales-marketing/products-template-mapping-direct.md)
+##### [Finance and Operations の顧客への Sales の勘定の同期](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
+##### [Finance and Operations の連絡先または顧客への Sales の連絡先の同期](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
+##### [販売見積ヘッダーおよび明細行の Sales から Finance and Operations への同期](../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md)
+##### [販売注文ヘッダーおよび明細行の Finance and Operations から Sales への同期](../supply-chain/sales-marketing/sales-order-template-mapping-direct.md)
+##### [売上請求書ヘッダーおよび明細行の Finance and Operations から Sales への同期](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
 ##### [Finance and Operations の顧客への Sales の勘定の直接同期](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
 ##### [Sales 製品への Finance and Operations の製品の直接同期](../supply-chain/sales-marketing/products-template-mapping-direct.md)
 ##### [Finance and Operations の連絡先または顧客への Sales の連絡先の直接同期](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
@@ -452,6 +452,8 @@
 
 ## [自分のデータベースの持ち込み](analytics/export-entities-to-your-own-database.md)
 
+## [GDPR データ要求に対応するためのリソース](gdpr/gdpr-home-page.md)
+
 # [継続的な配信ホーム ページ](dev-tools/continuous-delivery-home-page.md)
 ## [開発と継続的な配信のよく寄せられる質問](dev-tools/continuous-delivery-faq.md)
 ## [ビルド出力からテスト パッケージを除外](dev-tools/exclude-test-packages.md)
@@ -515,6 +517,7 @@
 ### [オンプレミスのプロジェクトを作成する](lifecycle-services/lbd-create-lcs-on-prem-project.md)
 ### [オンプレミス環境の設定と配置](deployment/setup-deploy-on-premises-environments.md)
 ### [カスタム モデルの開発とオンプレミス環境への配置](deployment/develop-deploy-custom-models-on-premises.md)
+### [オンプレミス環境のリバース プロキシのコンフィギュレーション](deployment/onprem-reverseproxy.md)
 ### [オンプレミス配置への更新プログラムの適用](deployment/apply-updates-on-premises.md)
 ### [オンプレミス配置の再配置](deployment/redeploy-on-prem.md)
 ### [ローカル エージェントの更新](lifecycle-services/update-local-agent.md)
@@ -527,7 +530,7 @@
 ### [配置可能パッケージのインストール](deployment/install-deployable-package.md)
 ### [パッケージ アプリケーションの問題のトラブルシューティング](deployment/deployable-package-troubleshooting.md)
 
-# [アップグレードおよび移行](migration-upgrade/upgrade-home-page.md)
+# [アップグレード、更新プログラム、および修正プログラム](migration-upgrade/upgrade-home-page.md)
 ## [AX 2012 から Dynamics 365 for Finance and Operations へのアップグレード](migration-upgrade/upgrade-overview-2012.md)
 ### [AX 2012 アップグレード - アップグレード アナライザー ツールを使用した計画](migration-upgrade/upgrade-analyzer-tool.md)
 ### [AX 2012 アップグレード - コードのアップグレード サービスを使用した工数見積](migration-upgrade/analyze-code-upgrade.md)
@@ -553,10 +556,9 @@
 ### [コード移行の準備](migration-upgrade/prepare-migration.md)
 ### [コードの移行中に Visual Studio Team Services マッピングをコンフィギュレーション](migration-upgrade/configure-vso-solution.md)
 ### [モデルの分割](dev-tools/model-split.md)
-### [デリゲートを使用したモデル間の依存関係の解決](migration-upgrade/delegates-migration.md)
+### [デリゲートを使用するモデル間の依存関係の解決](migration-upgrade/delegates-migration.md)
 
-
-## 最新の更新プログラムへのアップグレード
+## 最新の更新プログラムへのアップグレード (クラウド)
 ### [最新の更新プログラムに移行するためのプロセス](migration-upgrade/upgrade-latest-update.md)
 ### [ライフサイクル ポリシー](migration-upgrade/versions-update-policy.md)
 ### [最新のプラットフォーム更新プログラムの環境への適用](migration-upgrade/upgrade-latest-platform-update.md)
@@ -564,13 +566,17 @@
 ### [サンドボックス環境のアップグレード](migration-upgrade/upgrade-sandbox-environment.md)
 ### [開発またはデモ環境でのデータのアップグレード](migration-upgrade/upgrade-data-to-latest-update.md)
 ### [開発ツールの更新](dev-tools/update-development-tools.md)
+
+## 最新の更新プログラムへのアップグレード (オンプレミス)
 ### [オンプレミス配置への更新プログラムの適用](deployment/apply-updates-on-premises.md)
 ### [オンプレミス配置の再配置](deployment/redeploy-on-prem.md)
 
-## 修正プログラムとサービス
+## 修正プログラム
 ### [Lifecycle Services からの修正プログラムのダウンロード](migration-upgrade/download-hotfix-lcs.md)
+### [クラウド環境への更新プログラムの適用](deployment/apply-deployable-package-system.md)
 ### [メタデータ修正プログラムのインストール](migration-upgrade/install-metadata-hotfix-package.md)
 ### [1 ボックス環境の Reporting Services への修正プログラムの適用](migration-upgrade/patch-reporting-service-environment.md)
+### [Visual Studio 開発ツールの更新](dev-tools/update-development-tools.md)
 
 ## 減価償却
 ### [非推奨 API](migration-upgrade/deprecated-apis.md)
