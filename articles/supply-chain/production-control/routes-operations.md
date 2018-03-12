@@ -1,7 +1,7 @@
 ---
 title: "工順と工程"
 description: "このトピックでは、工順と工程に関する情報を提供します。"
-author: YuyuScheller
+author: sorenva
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

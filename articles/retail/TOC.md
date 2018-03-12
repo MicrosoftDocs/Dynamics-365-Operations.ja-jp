@@ -183,10 +183,11 @@
 ### [MPOS アーキテクチャ](dev-itpro/retail-modern-pos-architecture.md)
 ### [小売オンライン ストア発行アーキテクチャ](dev-itpro/retail-online-store-publishing-architecture.md)
 ### [販売チャネル パフォーマンス Power BI コンテンツ](../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)
+### [支払アプリケーション データ セキュリティ標準 (PA-DSS) 証明](dev-itpro/PA-DSS-Certification.md)
 
 ## 配置と修正プログラム
-### [小売店舗スケール ユニットの概要](dev-itpro/retail-store-system-begin.md)
-### [小売店舗スケール ユニットのコンフィギュレーションとインストール](dev-itpro/retail-store-scale-unit-configuration-installation.md)
+### [Retail Store Scale Unit の概要](dev-itpro/retail-store-system-begin.md)
+### [Retail Store Scale Unit のコンフィギュレーションとインストール](dev-itpro/retail-store-scale-unit-configuration-installation.md)
 ### [Retail Modern POS のコンフィギュレーションとインストール](retail-modern-pos-device-activation.md)
 ### [本社からの Retail アカウントとデバイスの管理](set-up-activation-accounts-validate-devices-hq.md)
 ### [Retail POS デバイスのライセンス認証](dev-itpro/retail-device-activation.md)
