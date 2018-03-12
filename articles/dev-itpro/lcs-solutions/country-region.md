@@ -18,10 +18,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a523ff097eedf9a4a2cb0341b3be9d05abfa09fa
-ms.openlocfilehash: 1cb4305b3ef425ec19ae63c8186bffef212b9890
+ms.sourcegitcommit: 1f76359878d162e93d8f8b7c11be529c43c94455
+ms.openlocfilehash: c1c180432e014c69b43612693790a1cac6e54c34
 ms.contentlocale: ja-jp
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/08/2018
 
 ---
 
@@ -217,6 +217,21 @@ Microsoft Dynamics 365 for Finance and Operations には、[製品可用性ガ�
 -   [固定資産の減価償却方法](../../financials/localizations/emea-hun-fixed-assets-depreciation-methods.md)    
 -   [固定資産を在庫に移動する](../../financials/localizations/emea-hun-fixed-asset-to-inventory.md)
 -   [低原価固定資産](../../financials/localizations/emea-hun-low-cost-fixed-assets.md)
+
+### <a name="india"></a>インド
+
+- [固定資産](../../financials/localizations/apac-ind-fixed-assets.md)
+    - [資本品目の固定資産への移動](../../financials/localizations/tasks/apac-ind-transfer-capital-items.md)
+    - [1 日に基づくカレンダーの固定資産帳簿への関連付け](../../financials/localizations/tasks/apac-ind-attach-day-based-calendar.md)
+    - [減価償却を計算するパラメーターの設定](../../financials/localizations/tasks/apac-ind-set-up-depreciation.md)
+    - [減価償却簿での資産グループの減価償却設定](../../financials/localizations/tasks/apac-ind-set-up-asset-group-dep.md)
+    - [資本品目の在庫モデル グループの作成](../../financials/localizations/tasks/apac-ind-create-inventory-model-group.md)
+    - [インドの固定資産減価償却計算のシフト](../../financials/localizations/tasks/apac-ind-shift-depreciation-rates.md)
+    - [帳簿のシフトのタイプと業界を定義し、固定資産を関連付ける](../../financials/localizations/tasks/apac-ind-books-shift-industry-types.md)
+- [税エンジンの概要](../../financials/general-ledger/tax-engine.md)
+    - [税エンジンの統合](../../financials/general-ledger/tax-engine-integration.md)
+    - [税しきい値に関するよく寄せられる質問](../../financials/localizations/apac-ind-tax-thresholds.md)
+    - [税エンジンの拡張](../../financials/general-ledger/extend-tax-engine-configurations.md)
 
 ### <a name="italy"></a>イタリア
 

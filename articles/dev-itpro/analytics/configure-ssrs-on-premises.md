@@ -26,6 +26,8 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="configure-sql-server-reporting-services-for-an-on-premises-deployment"></a>オンプレミス配置の SQL Server Reporting Services のコンフィギュレーション
 
+[!include[banner](../includes/banner.md)]
+
 このトピックの手順を使用し、Microsoft Dynamics 365 for Finance and Operations, Enterprise エディションのオンプレミス配置に SQL Server Reporting Services を構成します。
 
 1. SQL Reporting Services Configuration Manager アプリケーションを開きます。

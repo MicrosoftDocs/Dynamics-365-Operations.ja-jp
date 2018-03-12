@@ -14,7 +14,6 @@
 #### [対象となる標準のプラットフォーム リリース](get-started/public-preview-releases.md)
 
 #### Finance and Operations の購入
-##### [Dynamics 365 用 Microsoft FastTrack](get-started/fasttrack-dynamics-365-overview.md)
 ##### [Finance and Operations (オンプレミス) の購入](get-started/purchase-on-premises.md)
 
 ### [新機能および変更された機能](get-started/whats-new-changed.md)
@@ -72,17 +71,31 @@
 ##### [ドキュメントやトレーニングの作成](../dev-itpro/user-interface/task-recorder-training-docs.md)
 #### [用語集](get-started/glossary.md)
 
+## [実装ライフサイクルの理解](imp-lifecycle/implementation-lifecycle.md)
+### [Microsoft FastTrack for Dynamics 365](get-started/fasttrack-dynamics-365-overview.md)
+### [研修](imp-lifecycle/onboard.md) 
+### [Go-Live の準備](imp-lifecycle/prepare-go-live.md)
+### [Go-Live に関するよく寄せられる質問](imp-lifecycle/go-live-faq.md)
+
 ## コンプライアンス
 ### [監査ポリシー ルール](../financials/general-ledger/audit-policy-rules.md)
 ### [監査ポリシー違反および事例](../financials/general-ledger/audit-policy-violations-cases.md)
 
-## 原価管理
-### あらかじめ設定された原価
+## [原価管理](../supply-chain/cost-management/cost-management-home-page.md)
+### [標準原価](../supply-chain/cost-management/prerequisites-standard-costs.md)
+#### [標準原価換算の概要](../supply-chain/cost-management/standard-cost-conversion-overview.md)
+#### [標準原価換算の前提条件](../supply-chain/cost-management/prerequisites-standard-cost-conversion.md)
+#### [標準原価の更新の管理](../supply-chain/cost-management/manage-standard-cost-updates.md)
+#### [標準原価の原価計算バージョンの制限](../supply-chain/cost-management/restrictions-costing-versions-standard-costs.md)
+#### [標準原価での BOM 計算](../supply-chain/cost-management/information-used-bom-calculations-standard-costs.md)
+#### [製造環境での標準原価の更新](../supply-chain/cost-management/update-standard-costs-manufacturing-environment.md)
+#### [新規製造品目の標準原価の更新](../supply-chain/cost-management/update-standard-costs-new-manufactured-item.md)
+#### [非製造環境での標準原価の更新](../supply-chain/cost-management/update-standard-costs-non-manufacturing-environment.md)
+#### [製造品目の標準原価を管理するための準備](../supply-chain/cost-management/prepare-maintain-standard-costs-manufactured-items.md)
+### [あらかじめ設定された原価](../supply-chain/cost-management/costing-versions.md)
 #### [原価計算表](../supply-chain/cost-management/costing-sheets.md)
-#### [原価計算バージョン](../supply-chain/cost-management/costing-versions.md)
 #### [予定原価に対する原価計算バージョンを使用した原価変更のシミュレーション](../supply-chain/cost-management/simulate-cost-changes-costing-version-planned-costs.md)
-### 在庫原価計算
-#### [手持在庫原価価値の調整](../supply-chain/cost-management/adjust-hand-inventory-cost-values.md)
+### [在庫会計](../supply-chain/cost-management/fifo-physical-value-marking.md)
 #### [原価オブジェクト](../supply-chain/cost-management/cost-object.md)
 #### [原価オブジェクト残高の表示 (タスク ガイド)](../supply-chain/cost-management/tasks/view-cost-object-balance.md)
 #### [原価オブジェクトごとの在庫明細書および KPI の表示 (タスク ガイド)](../supply-chain/cost-management/tasks/view-inventory-statement-kpi-cost-object.md)
@@ -92,7 +105,6 @@
 #### [現物価格とマーキングを使用した先入れ先出し (FIFO)](../supply-chain/cost-management/fifo-physical-value-marking.md)
 #### [現物価格を含める](../supply-chain/cost-management/include-physical-value.md)
 #### [在庫オブジェクト価値](../supply-chain/cost-management/physical-quantity.md)
-#### [在庫決算](../supply-chain/cost-management/inventory-close.md)
 #### [現物価格とマーキングを使用した後入れ先出し (LIFO) 日付](../supply-chain/cost-management/lifo-date-physical-value-marking.md)
 #### [現物価格とマーキングを使用した後入れ先出し (LIFO)](../supply-chain/cost-management/lifo-physical-value-marking.md)
 #### [移動平均](../supply-chain/cost-management/moving-average.md)
@@ -101,19 +113,12 @@
 #### [在庫分析コード当たりの移動平均原価の追跡](../supply-chain/cost-management/track-running-average-cost-per-inventory-dimension.md)
 #### [加重平均日付](../supply-chain/cost-management/weighted-average-date.md)
 #### [現物価格とマーキングを使用した加重平均](../supply-chain/cost-management/weighted-average-physical-value-marking.md)
-### 製造原価計算
-#### [製造品目の固定費の償却](../supply-chain/cost-management/amortize-constant-costs-manufactured-item.md)
-#### [一括引き落とし原価計算](../supply-chain/cost-management/backflush-costing.md)
+#### [在庫決算](../supply-chain/cost-management/inventory-close.md)
+#### [手持在庫原価価値の調整](../supply-chain/cost-management/adjust-hand-inventory-cost-values.md)
+### [製造の会計](../supply-chain/cost-management/production-order-cost-analysis.md)
 #### [BOM 計算](../supply-chain/cost-management/bom-calculations.md)
 #### [BOM 計算グループ](../supply-chain/cost-management/bom-calculation-groups.md)
-#### 原価計算表を使用した BOM 計算 (順番にタスク ガイドを再生)
-##### [完成品の作成 (2016 年 2 月のみ)](../supply-chain/cost-management/tasks/create-finished-product-2016-02.md)
-##### [半完成品の作成 (2016 年 2 月のみ)](../supply-chain/cost-management/tasks/create-semi-finished-product-2016-02.md)
-##### [原材料の作成 (2016 年 2 月のみ)](../supply-chain/cost-management/tasks/create-raw-materials-2016-02.md)
-##### [BOM の作成 (2016 年 2 月のみ)](../supply-chain/cost-management/tasks/create-boms-2016-02.md)
-##### [ルートの作成 (2016 年 2 月のみ)](../supply-chain/cost-management/tasks/create-routes-2016-02.md)
-##### [単一レベル構造を使用した BOM の計算 (2016 年 2 月のみ)](../supply-chain/cost-management/tasks/calculate-bom-single-level-structure-2016-02.md)
-##### [マルチレベル構造を使用した BOM の計算 (2016 年 2 月のみ)](../supply-chain/cost-management/tasks/calculate-bom-multilevel-structure-2016-02.md)
+#### [一括引き落とし原価計算](../supply-chain/cost-management/backflush-costing.md)
 #### [製造差異の一般的な発生源](../supply-chain/cost-management/common-sources-of-production-variances.md)
 #### [生産工順で使用される原価カテゴリ](../supply-chain/cost-management/cost-categories-used-production-routings.md)
 #### [生産管理およびプロジェクト管理会計で使用される原価カテゴリ](../supply-chain/cost-management/cost-categories-used-production-control-project-management-accounting.md)
@@ -125,19 +130,8 @@
 #### [生産の転記](../supply-chain/cost-management/production-posting.md)
 #### [生産または調達できる製品の設定](../supply-chain/cost-management/manufactured-items-treated-as-purchased-items.md)
 #### [合計原価配賦方法](../supply-chain/cost-management/methodology-total-cost-allocation.md)
-### 標準原価
-#### [標準原価の前提条件](../supply-chain/cost-management/prerequisites-standard-costs.md)
-#### [標準原価換算の概要](../supply-chain/cost-management/standard-cost-conversion-overview.md)
-#### [標準原価換算の前提条件](../supply-chain/cost-management/prerequisites-standard-cost-conversion.md)
-#### [標準原価の更新の管理](../supply-chain/cost-management/manage-standard-cost-updates.md)
-#### [標準原価の原価計算バージョンの制限](../supply-chain/cost-management/restrictions-costing-versions-standard-costs.md)
-#### [標準原価での BOM 計算](../supply-chain/cost-management/information-used-bom-calculations-standard-costs.md)
-#### [製造環境での標準原価の更新](../supply-chain/cost-management/update-standard-costs-manufacturing-environment.md)
-#### [新規製造品目の標準原価の更新](../supply-chain/cost-management/update-standard-costs-new-manufactured-item.md)
-#### [非製造環境での標準原価の更新](../supply-chain/cost-management/update-standard-costs-non-manufacturing-environment.md)
-#### [製造品目の標準原価を管理するための準備](../supply-chain/cost-management/prepare-maintain-standard-costs-manufactured-items.md)
-### Power BI コンテンツ パック
-#### [原価管理コンテンツ パック](../dev-itpro/analytics/cost-management-content-pack.md)
+#### [製造品目の固定費の償却](../supply-chain/cost-management/amortize-constant-costs-manufactured-item.md)
+### [原価管理 Power BI コンテンツ パック](../dev-itpro/analytics/cost-management-content-pack.md)
 
 ## データ統合
 ### [統合パターン](../dev-itpro/data-entities/integration-overview.md)
@@ -167,13 +161,6 @@
 ###### [販売注文の Finance and Operations から Sales への直接同期](../supply-chain/sales-marketing/sales-order-template-mapping-direct.md)
 ###### [販売注文の Sales と Finance and Operations の間の直接同期](../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md)
 ###### [売上請求書の Finance and Operations から Sales への直接同期](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
-###### [Sales での勘定の管理、および Finance and Operations への同期](../supply-chain/sales-marketing/accounts-template-mapping.md)
-###### [Sales での連絡先の管理、および Finance and Operations への同期](../supply-chain/sales-marketing/contacts-template-mapping.md)
-###### [Finance and Operations での製品の管理、および Sales への同期](../supply-chain/sales-marketing/products-template-mapping.md)
-###### [Sales での販売見積の作成、および Finance and Operations への同期](../supply-chain/sales-marketing/sales-quotation-template-mapping.md)
-###### [Finance and Operations での販売注文の作成、および Sales への同期](../supply-chain/sales-marketing/sales-order-template-mapping.md)
-###### [Finance and Operations での売上請求書の作成、および Sales への同期](../supply-chain/sales-marketing/sales-invoice-template-mapping.md)
-
 
 
 #### [外部 Web サービスの使用](../dev-itpro/data-entities/consume-external-web-service.md)
@@ -633,9 +620,16 @@
 #### インド
 
 ##### [固定資産](../financials/localizations/apac-ind-fixed-assets.md)
+###### [資本品目の固定資産への移動](../financials/localizations/tasks/apac-ind-transfer-capital-items.md)
+###### [1 日に基づくカレンダーの固定資産帳簿への関連付け](../financials/localizations/tasks/apac-ind-attach-day-based-calendar.md)
+###### [減価償却を計算するパラメーターの設定](../financials/localizations/tasks/apac-ind-set-up-depreciation.md)
+###### [減価償却簿での資産グループの減価償却設定](../financials/localizations/tasks/apac-ind-set-up-asset-group-dep.md)
+###### [資本品目の在庫モデル グループの作成](../financials/localizations/tasks/apac-ind-create-inventory-model-group.md)
+###### [インドの固定資産減価償却計算のシフト](../financials/localizations/tasks/apac-ind-shift-depreciation-rates.md)
+###### [帳簿のシフトのタイプと業界を定義し、固定資産を関連付ける](../financials/localizations/tasks/apac-ind-books-shift-industry-types.md)
 ##### [税エンジンの概要](../financials/general-ledger/tax-engine.md)
 ##### [税エンジンの統合](../financials/general-ledger/tax-engine-integration.md)
-##### [税しきい値のよく寄せられる質問](../financials/localizations/apac-ind-tax-thresholds.md)
+##### [税しきい値に関するよく寄せられる質問](../financials/localizations/apac-ind-tax-thresholds.md)
 ##### [税エンジンの拡張](../financials/general-ledger/extend-tax-engine-configurations.md)
 
 #### 日本
@@ -931,12 +925,14 @@
 ##### [請求書での現金割引の適用](../financials/localizations/emea-esp-cash-discount-applied-invoice.md)
 ##### [受取手形オプション](../financials/localizations/emea-esp-bill-of-exchange-options.md)
 ##### [条件付売上税](../financials/localizations/emea-esp-conditional-sales-tax.md)
+##### [請求の貸方記入](../financials/localizations/tasks/emea-esp-credit-invoicing.md)
 ##### [請求先/元 ID の会計データ](../financials/localizations/emea-esp-fiscal-data-invoice-account.md)
 ##### [固定資産グループの再評価](../financials/localizations/emea-esp-fixed-asset-group-revaluation.md)
 ##### [EU 内 VAT](../financials/localizations/emea-esp-intra-community-vat.md)
 ##### [一時顧客](../financials/localizations/emea-esp-no-one-time-customer-for-project-contracts.md)
 ##### [スペインのレイアウトでの小切手の印刷](../financials/localizations/emea-esp-print-checks-with-spanish-layout.md)
 ##### [支払手形オプション](../financials/localizations/emea-esp-promissory-note-options.md)
+##### [報告書 340](../financials/localizations/emea-esp-report-340.md)
 ##### [販売および購買サイクル](../financials/localizations/emea-esp-sales-purchase-cycle.md)
 ##### [特殊エントリと期首表](../financials/localizations/emea-esp-opening-sheets-spain.md)
 #### スウェーデン
@@ -1526,56 +1522,39 @@
 
 
 
-## [生産](../supply-chain/production-control/production-process-overview.md)
-### [生産プロセスの概要](../supply-chain/production-control/production-process-overview.md)
+## [生産管理](../supply-chain/production-control/production-process-overview.md)
 ### [ミックス モードの計画: 個別、プロセス、およびリーン調達の連結](../supply-chain/production-control/mixed-mode-plan.md)
 ### [生産での外注作業の管理](../supply-chain/production-control/manage-subcontract-work-production.md)
+
 ### 個別製造
 #### 生産マスター データの管理
 ##### [生産の設定の要件](../supply-chain/production-control/production-set-up-requirements.md)
 ##### [部品表およびフォーミュラ](../supply-chain/production-control/bill-of-material-bom.md)
 ##### [BOM デザイナーの機能](../supply-chain/production-control/bom-designer-functionality.md)
 ##### [BOM 計算](../supply-chain/cost-management/bom-calculations.md)
+##### [測定単位の管理 (タスク ガイド)](../supply-chain/pim/tasks/manage-unit-measure.md)
 ##### [製造実行の生産パラメーター](../supply-chain/production-control/production-parameters-manufacturing-execution.md)
 ##### [運営リソース](../supply-chain/production-control/operations-resources.md)
+##### [運営リソースの作成 (タスク ガイド)](../supply-chain/production-control/tasks/create-operations-resource.md)
 ##### [リソースの能力](../supply-chain/production-control/resource-capabilities.md)
+##### [リソース能力の定義 (タスク ガイド)](../supply-chain/production-control/tasks/define-resource-capabilities.md)
 ##### [工順と工程](../supply-chain/production-control/routes-operations.md)
 ##### [倉庫作業ポリシー](../supply-chain/warehousing/warehouse-work-policies.md)
-#### 生産工程のスケジューリング
-##### [工程のスケジューリング](../supply-chain/production-control/operations-scheduling.md)
-##### [ジョブのスケジューリング](../supply-chain/production-control/job-scheduling.md)
-##### [ジョブ スケジュールのガント チャート](../supply-chain/production-control/visual-scheduling-production.md)
-##### [工程スケジューリング オプション](../supply-chain/production-control/operation-scheduling-options.md)
-#### 生産ジョブの運営
-##### [製造オーダーの作成](../supply-chain/production-control/create-production-orders.md)
-##### [製造オーダーのリリース](../supply-chain/production-control/release-production-orders.md)
-##### [材料の例外の視覚化](../supply-chain/production-control/improved-visibility-into-material-exceptions.md)
-##### [BOM およびフォーミュラ明細行を倉庫にリリース](../supply-chain/production-control/releasing-bom-and-formula-lines-to-warehouse.md)
-#####[製造オーダー ステータスを逆行させる](../supply-chain/production-control/reverse-production-order-status.md)
-##### [モバイル デバイスを使用して材料消費を登録する](../supply-chain/production-control/register-material-consumption-hand-held-device.md)
-##### [消費ルールを使用して原材料消費を管理する](../supply-chain/production-control/flushing-principles.md) 
-##### [製造オーダーから出荷ドックへのクロスドッキング](../supply-chain/production-control/cross-docking-opportunities.md)
-##### [完成品の生産出荷の場所を設定する](../supply-chain/production-control/production-output-location.md)
-##### [製造オーダーを完了として報告する](../supply-chain/production-control/report-production-orders-as-finished.md)
-##### [BOM を完了として報告する](../supply-chain/production-control/report-boms-as-finished.md)
-##### [製造における材料の置き換え](../supply-chain/production-control/substitute-items-bom-lines.md)
-##### [製造実行での登録](../supply-chain/production-control/registration-manufacturing-execution.md)
-##### [生産フィードバック](../supply-chain/production-control/production-feedback.md)
-##### [時刻と出勤の登録](../supply-chain/production-control/time-attendance-registrations.md)
-##### [時刻と出勤の休暇登録](../supply-chain/production-control/absence-registration-in-time-and-attendance.md)
-#### 製造における財務の管理
-##### [ジョブ バンドル内のジョブへの時間割り当て](../supply-chain/production-control/allocate-time-jobs-job-bundle.md)
-##### [材料消費の計算](../supply-chain/production-control/consumption.md)
-##### [生産の転記](../supply-chain/cost-management/production-posting.md)
-#### 個別製造のタスク
+##### [作業時間スケジューリング プロパティの作成 (タスク ガイド)](../supply-chain/production-control/tasks/create-working-time-scheduling-properties.md)
+##### [作業時間テンプレートの作成 (タスク ガイド)](../supply-chain/production-control/tasks/create-working-time-templates.md)
 ##### [個別製造リソース グループの定義 (タスク ガイド)](../supply-chain/production-control/tasks/define-discrete-manufacturing-resource-group.md)
 ##### [生産フロー バージョンへの既存の活動の追加 (タスク ガイド)](../supply-chain/production-control/tasks/add-existing-activity-production-flow-version.md)
 ##### [生産フロー バージョンの無効化 (タスク ガイド)](../supply-chain/production-control/tasks/deactivate-production-flow-version.md)
 ##### [生産フロー バージョンの有効期限の定義 (タスク ガイド)](../supply-chain/production-control/tasks/define-expiry-date-production-flow-version.md)
 ##### [生産フロー モデルの定義 (タスク ガイド)](../supply-chain/production-control/tasks/define-production-flow-models.md)
-##### [作業時間スケジューリング プロパティの作成 (タスク ガイド)](../supply-chain/production-control/tasks/create-working-time-scheduling-properties.md)
-##### [作業時間テンプレートの作成 (タスク ガイド)](../supply-chain/production-control/tasks/create-working-time-templates.md)
-##### 製造オーダーのライフサイクルの管理
+#### 生産工程のスケジューリング
+##### [工程のスケジューリング](../supply-chain/production-control/operations-scheduling.md)
+##### [ジョブのスケジューリング](../supply-chain/production-control/job-scheduling.md)
+##### [ジョブ スケジュールのガント チャート](../supply-chain/production-control/visual-scheduling-production.md)
+##### [工程スケジューリング オプション](../supply-chain/production-control/operation-scheduling-options.md)
+##### [工程とジョブのスケジューリングによる製造オーダーのスケジュール (タスク ガイド)](../supply-chain/production-control/tasks/schedule-production-order-operations-job-scheduling.md)
+#### 生産ジョブの運営
+##### [製造オーダーのライフサイクルの管理](../supply-chain/production-control/create-production-orders.md)
 ###### [製造オーダーの作成 (タスク ガイド)](../supply-chain/production-control/tasks/create-production-order.md)
 ###### [製造オーダーの見積 (タスク ガイド)](../supply-chain/production-control/tasks/estimate-production-order.md)
 ###### [製造オーダーのスケジュール (タスク ガイド)](../supply-chain/production-control/tasks/schedule-production-order.md)
@@ -1583,41 +1562,57 @@
 ###### [製造オーダーの開始 (タスク ガイド)](../supply-chain/production-control/tasks/start-production-order.md)
 ###### [製造オーダーの完了レポート (タスク ガイド)](../supply-chain/production-control/tasks/report-production-order-finished.md)
 ###### [製造オーダーの終了 (タスク ガイド)](../supply-chain/production-control/tasks/end-production-order.md)
-###### [工程とジョブのスケジューリングによる製造オーダーのスケジュール (タスク ガイド)](../supply-chain/production-control/tasks/schedule-production-order-operations-job-scheduling.md)
-##### [運営リソースの作成 (タスク ガイド)](../supply-chain/production-control/tasks/create-operations-resource.md)
-##### [リソース能力の定義 (タスク ガイド)](../supply-chain/production-control/tasks/define-resource-capabilities.md)
-##### [時刻と出勤の給与プロセスの有効化 (タスク ガイド)](../supply-chain/production-control/tasks/payroll-process-time-attendance.md)
+##### [製造オーダーのリリース](../supply-chain/production-control/release-production-orders.md)
+##### [材料の例外の視覚化](../supply-chain/production-control/improved-visibility-into-material-exceptions.md)
+##### [BOM およびフォーミュラ明細行を倉庫にリリース](../supply-chain/production-control/releasing-bom-and-formula-lines-to-warehouse.md)
+##### [製造オーダー ステータスを逆行させる](../supply-chain/production-control/reverse-production-order-status.md)
+##### [モバイル デバイスを使用して材料消費を登録する](../supply-chain/production-control/register-material-consumption-hand-held-device.md)
+##### [消費ルールを使用して原材料消費を管理する](../supply-chain/production-control/flushing-principles.md) 
+##### [製造オーダーから出荷ドックへのクロスドッキング](../supply-chain/production-control/cross-docking-opportunities.md)
+##### [完成品の生産出荷の場所を設定する](../supply-chain/production-control/production-output-location.md)
+##### [製造オーダーを完了として報告する](../supply-chain/production-control/report-production-orders-as-finished.md)
+##### [BOM を完了として報告する](../supply-chain/production-control/report-boms-as-finished.md)
 ##### [プレートにより制御されている場所への完了レポート (タスク ガイド)](../supply-chain/production-control/tasks/report-finished-non-license-plate-controlled-location-2016-11.md)
 ##### [モバイル ジョブ デバイスでの進捗のレポート (タスク ガイド)](../supply-chain/production-control/tasks/report-progress-mobile-job-device.md)
 ##### [安全在庫仕訳帳を使用した最小補充の更新 (タスク ガイド)](../supply-chain/production-control/tasks/use-safety-stock-journal-update-minimum-coverage.md)
+##### [製造における材料の置き換え](../supply-chain/production-control/substitute-items-bom-lines.md)
+##### [製造実行での登録](../supply-chain/production-control/registration-manufacturing-execution.md)
+##### [生産フィードバック](../supply-chain/production-control/production-feedback.md)
+##### [時刻と出勤の登録](../supply-chain/production-control/time-attendance-registrations.md)
+##### [時刻と出勤の休暇登録](../supply-chain/production-control/absence-registration-in-time-and-attendance.md)
+##### [時刻と出勤の給与プロセスの有効化 (タスク ガイド)](../supply-chain/production-control/tasks/payroll-process-time-attendance.md)
 ##### [モバイル ジョブ デバイスを使用した作業者のコンフィギュレーション (タスク ガイド)](../supply-chain/production-control/tasks/worker-mobile-job-device.md)
-##### [測定単位の管理 (タスク ガイド)](../supply-chain/pim/tasks/manage-unit-measure.md)
+#### 製造における財務の管理
+##### [ジョブ バンドル内のジョブへの時間割り当て](../supply-chain/production-control/allocate-time-jobs-job-bundle.md)
+##### [材料消費の計算](../supply-chain/production-control/consumption.md)
+##### [生産の転記](../supply-chain/cost-management/production-posting.md)
 
 ### リーン生産 
 #### [リーン生産の概要](../supply-chain/production-control/lean-manufacturing-overview.md)
 #### [活動ベースの外注](../supply-chain/production-control/activity-based-subcontracting.md)
+
 #### 生産マスター データの管理
 ##### [リーン組織のモデル化](../supply-chain/production-control/lean-manufacturing-modeling-lean-organization.md)
 ##### [運営リソース](../supply-chain/production-control/operations-resources.md)
+##### [リーン生産作業セルの定義 (タスク ガイド)](../supply-chain/production-control/tasks/define-lean-manufacturing-work-cells.md)
+##### [リーン スケジュール グループの定義 (タスク ガイド)](../supply-chain/production-control/tasks/define-lean-schedule-groups.md)
+
 #### かんばん作業のスケジューリング
 ##### [リーン生産の視覚的スケジューリング](../supply-chain/production-control/visual-scheduling-lean-manufacturing.md)
 ##### [リーン生産のかんばん作業のスケジューリング](../supply-chain/production-control/lean-manufacturing-kanban-job-scheduling.md)
 ##### [ジョブのスケジューリング](../supply-chain/production-control/job-scheduling.md)
+
 #### かんばん作業の運営
 ##### [バーコード スキャナーのかんばん転送ボードのサポート](../supply-chain/production-control/kanban-transfer-board-support-barcode-scanner.md)
 ##### [生産フィードバック](../supply-chain/production-control/production-feedback.md)
-#### リーン生産のタスク
-##### [リーン生産作業セルの定義 (タスク ガイド)](../supply-chain/production-control/tasks/define-lean-manufacturing-work-cells.md)
-##### [リーン スケジュール グループの定義 (タスク ガイド)](../supply-chain/production-control/tasks/define-lean-schedule-groups.md)
-##### リーン生産での生産フローと活動 
-###### [生産フロー バージョンの作成 (タスク ガイド)](../supply-chain/production-control/tasks/create-production-flow-version.md)
-###### [リーン生産のプロセス活動の作成 (タスク ガイド)](../supply-chain/production-control/tasks/create-process-activities-lean-manufacturing.md)
-###### [リーン生産の転送活動の作成 (タスク ガイド)](../supply-chain/production-control/tasks/create-transfer-activities-lean-manufacturing.md)
-###### [生産フローおよびバージョンの検証 (タスク ガイド)](../supply-chain/production-control/tasks/validate-production-flow-version.md)
-###### [生産フロー バージョンの有効化 (タスク ガイド)](../supply-chain/production-control/tasks/activate-production-flow-version.md)
-###### [活動リレーションの作成: 後続処理 (タスク ガイド)](../supply-chain/production-control/tasks/create-activity-relation-successor.md)
-###### [生産フロー活動への先行処理の追加 (タスク ガイド)](../supply-chain/production-control/tasks/add-predecessor-production-flow-activity.md)
-###### [バリュー ストリームの作成 (タスク ガイド)](../supply-chain/production-control/tasks/create-value-stream.md)
+##### [生産フロー バージョンの作成 (タスク ガイド)](../supply-chain/production-control/tasks/create-production-flow-version.md)
+##### [リーン生産のプロセス活動の作成 (タスク ガイド)](../supply-chain/production-control/tasks/create-process-activities-lean-manufacturing.md)
+##### [リーン生産の転送活動の作成 (タスク ガイド)](../supply-chain/production-control/tasks/create-transfer-activities-lean-manufacturing.md)
+##### [生産フローおよびバージョンの検証 (タスク ガイド)](../supply-chain/production-control/tasks/validate-production-flow-version.md)
+##### [生産フロー バージョンの有効化 (タスク ガイド)](../supply-chain/production-control/tasks/activate-production-flow-version.md)
+##### [活動リレーションの作成: 後続処理 (タスク ガイド)](../supply-chain/production-control/tasks/create-activity-relation-successor.md)
+##### [生産フロー活動への先行処理の追加 (タスク ガイド)](../supply-chain/production-control/tasks/add-predecessor-production-flow-activity.md)
+##### [バリュー ストリームの作成 (タスク ガイド)](../supply-chain/production-control/tasks/create-value-stream.md)
 ##### [販売注文のリーン ペギング (タスク ガイド)](../supply-chain/production-control/tasks/lean-pegging-sales-orders.md)
 ##### [リーン生産の外注作業セルの作成 (タスク ガイド)](../supply-chain/production-control/tasks/create-subcontracted-work-cell-lean-manufacturing.md)
 ##### [かんばん数量計算ポリシーのかんばんルールへの追加 (タスク ガイド)](../supply-chain/production-control/tasks/add-kanban-quantity-calculation-policy-kanban-rule.md)
@@ -1648,7 +1643,11 @@
 ##### [フォーミュラとフォーミュラ バージョン](../supply-chain/production-control/formulas-versions.md)
 ##### [運営リソース](../supply-chain/production-control/operations-resources.md)
 ##### [リソースの能力](../supply-chain/production-control/resource-capabilities.md)
-##### [バッチ属性 (複数)](../supply-chain/production-control/batch-attributes.md)
+##### [バッチ属性](../supply-chain/production-control/batch-attributes.md)
+##### [フォーミュラのコピー (タスク ガイド)](../supply-chain/production-control/tasks/copy-formula.md)
+##### [既存のフォーミュラをコピーしてフォーミュラを作成 (タスク ガイド)](../supply-chain/production-control/tasks/create-formula-copying-existing-formula.md)
+##### [既存のフォーミュラ バージョンから連産品をコピー (タスク ガイド)](../supply-chain/production-control/tasks/copy-co-products-existing-formula-version.md)
+##### [既存のフォーミュラをコピーしてフォーミュラを作成 (タスク ガイド)](../supply-chain/production-control/tasks/create-formula-copying-existing-formula.md)
 ##### [製造実行の生産パラメーター](../supply-chain/production-control/production-parameters-manufacturing-execution.md)
 ##### [生産の設定の要件](../supply-chain/production-control/production-set-up-requirements.md)
 #### 生産工程のスケジューリング
@@ -1657,6 +1656,8 @@
 ##### [ジョブのスケジューリング](../supply-chain/production-control/job-scheduling.md)
 #### 生産ジョブの運営
 ##### [連結バッチ オーダー](../supply-chain/production-control/consolidated-batch-orders.md)
+##### [作成から開始までのバッチ オーダーのライフサイクル (タスク ガイド)](../supply-chain/production-control/tasks/batch-order-lifecycle-start.md)
+##### [プロセス製造向けの生産ジョブの順序付け (タスク ガイド)](../supply-chain/production-control/tasks/sequence-production-jobs-process-manufacturing.md)
 ##### [製造における材料の置き換え](../supply-chain/production-control/substitute-items-bom-lines.md)
 ##### [製造実行での登録](../supply-chain/production-control/registration-manufacturing-execution.md)
 ##### [生産フィードバック](../supply-chain/production-control/production-feedback.md)
@@ -1665,19 +1666,9 @@
 ##### [ジョブ バンドル内のジョブへの時間割り当て](../supply-chain/production-control/allocate-time-jobs-job-bundle.md)
 ##### [材料消費の計算](../supply-chain/production-control/consumption.md)
 ##### [生産の転記](../supply-chain/cost-management/production-posting.md)
-#### プロセス製造のタスク
-##### [フォーミュラのコピー (タスク ガイド)](../supply-chain/production-control/tasks/copy-formula.md)
-##### [既存のフォーミュラをコピーしてフォーミュラを作成 (タスク ガイド)](../supply-chain/production-control/tasks/create-formula-copying-existing-formula.md)
-##### [既存のフォーミュラ バージョンから連産品をコピー (タスク ガイド)](../supply-chain/production-control/tasks/copy-co-products-existing-formula-version.md)
-##### [既存のフォーミュラをコピーしてフォーミュラを作成 (タスク ガイド)](../supply-chain/production-control/tasks/create-formula-copying-existing-formula.md)
-##### [作成から開始までのバッチ オーダーのライフサイクル (タスク ガイド)](../supply-chain/production-control/tasks/batch-order-lifecycle-start.md)
-##### [プロセス製造向けの生産ジョブの順序付け (タスク ガイド)](../supply-chain/production-control/tasks/sequence-production-jobs-process-manufacturing.md)
-
-
-
 
 ## [製品情報管理](../supply-chain/pim/product-information.md)
-### [製品情報](../supply-chain/pim/product-information.md)
+### 製品情報
 #### [製品分類の階層の作成 (タスク ガイド)](../supply-chain/pim/tasks/create-hierarchy-product-classification.md)
 #### [カテゴリ階層を使用した製品の分類 (タスク ガイド)](../supply-chain/pim/tasks/classify-product-category-hierarchies.md)
 #### [製品番号の分類](../supply-chain/pim/product-variant-identification-nomenclature.md)
@@ -1688,6 +1679,12 @@
 #### [事前定義された製品バリアントの作成 (タスク ガイド)](../supply-chain/pim/tasks/create-predefined-product-variants.md)
 #### [1 つの会社に対するリリース済製品の作成 (タスク ガイド)](../supply-chain/pim/tasks/create-released-product-single-company.md)
 #### [製品ライフサイクルの状態](../supply-chain/pim/product-lifecycle.md)
+##### [新製品のライフサイクル状態の作成 (タスク ガイド)](../supply-chain/pim/tasks/new-product-lifecycle-state.md)
+##### [既定の製品のライフサイクル状態の作成 (タスク ガイド)](../supply-chain/pim/tasks/default-product-lifecycle-state.md)
+##### [リリース済製品マスターに製品ライフサイクル状態を割り当てる (タスク ガイド)](../supply-chain/pim/tasks/product-lifecycle-state-released-product-master.md)
+##### [リリース済製品に製品ライフサイクル状態を割り当てる (タスク ガイド)](../supply-chain/pim/tasks/product-lifecycle-state-released-product.md)
+##### [販売終了製品バリアントの検索 (タスク ガイド)](../supply-chain/pim/tasks/obsolete-product-variants.md)
+##### [マスター プランからの製品の除外 (タスク ガイド)](../supply-chain/pim/tasks/exclude-products-master-planning.md)
 #### [製品のバーコードの作成 (タスク ガイド)](../supply-chain/pim/tasks/create-bar-code-product.md)
 #### [製品の GTIN コードの入力 (タスク ガイド)](../supply-chain/pim/tasks/enter-gtin-code-product.md)
 #### [製品のバッチ属性の作成 (タスク ガイド)](../supply-chain/pim/tasks/create-batch-attributes-product.md)
@@ -1703,7 +1700,8 @@
 #### [販売価格の選択基準の作成 (タスク ガイド)](../supply-chain/pim/tasks/create-sales-price-selection-criteria.md)
 #### [コンフィギュレーション可能な製品の属性ベースの価格決定の設定 (タスク ガイド)](../supply-chain/pim/tasks/set-up-attribute-based-pricing-configurable-products.md)
 #### [BOM 計算](../supply-chain/cost-management/bom-calculations.md)
-### [製品コンフィギュレーション モデル](../supply-chain/pim/build-product-configuration-model.md)
+
+### [製品コンフィギュレーション](../supply-chain/pim/build-product-configuration-model.md)
 #### [分析コードベースのコンフィギュレーションの作成](../supply-chain/pim/dimension-based-product-configuration.md) 
 ##### [製品分析コード](../supply-chain/pim/product-dimensions.md)
 ##### [分析コードベースの製品マスターの作成 (タスク ガイド)](../supply-chain/pim/tasks/create-dimension-based-product-master.md)

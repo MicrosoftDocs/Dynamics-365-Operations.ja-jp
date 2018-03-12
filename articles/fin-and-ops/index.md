@@ -3,7 +3,7 @@ title: "Microsoft Dynamics 365 for Finance and Operations Enterprise Edition の
 description: "Microsoft Dynamics 365 for Finance and Operations Enterprise Edition のドキュメント"
 author: margoc
 manager: AnnBe
-ms.date: 11/13/2017
+ms.date: 03/02/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: bb258999e072dc280bccfe64fb0dbd41d6577a0e
-ms.openlocfilehash: dbcbd7f7b0c23545eec74de538f1d7ec96ac98b6
+ms.sourcegitcommit: 7142c6bcb6e98929afdb8bb982a17efc7223ab12
+ms.openlocfilehash: 0d12082a2b10ae8e83217c5451627239e6ec640b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 03/05/2018
 
 ---
 
@@ -43,9 +43,13 @@ ms.lasthandoff: 11/13/2017
 <h3><a href="get-started/before-you-buy.md">購入する前に</a></h3>
 <p><a href="../dev-itpro/dev-tools/sign-up-preview-subscription.md">プレビュー サブスクリプションのサインアップ</a></p>
  <p><a href="../dev-itpro/deployment/choose-deployment-type.md">配置オプションの選択</a></p>
-  <p><a href="get-started/fasttrack-dynamics-365-overview.md">FastTrack for Dynamics 365</a></p>
-  <p><a href="get-started/purchase-on-premises.md">Finance and Operations (オンプレミス) の購入</a></p>
+ <p><a href="get-started/purchase-on-premises.md">Finance and Operations (オンプレミス) の購入</a></p>
 
+<h3><a href="imp-lifecycle/implementation-lifecycle.md">実装ライフサイクル</a></h3>
+<p><a href="get-started/fasttrack-dynamics-365-overview.md">FastTrack for Dynamics 365</a></p>
+<p><a href="imp-lifecycle/onboard.md">プロジェクトの研修</a></p>
+<p><a href="imp-lifecycle/prepare-go-live.md">Go-Live の準備</a></p>
+  
 <h3><a href="../financials/index.md">財務管理</a></h3>
 <p><a href="../financials/accounts-payable/accounts-payable.md">買掛金勘定</a></p>
 <p><a href="../financials/accounts-receivable/accounts-receivable.md">売掛金勘定</a></p>
@@ -99,7 +103,8 @@ ms.lasthandoff: 11/13/2017
 <p><a href="get-started/demo-data.md">デモ データ</a></p>
 
 <h3><a href="../dev-itpro/sysadmin/system-administration-home-page.md">管理</h3>
-<p><a href="../dev-itpro/deployment/choose-deployment-type.md">配置</a></p>
+<p><a href="../dev-itpro/deployment/cloud-deployment-overview.md">クラウド配置</a></p>
+<p><a href="../dev-itpro/deployment/on-premises-deployment-landing-page.md">オンプレミス配置</a></p>
 <p><a href="../dev-itpro/migration-upgrade/upgrade-home-page.md">アップグレード</a></p>
 <p><a href="../dev-itpro/dev-tools/continuous-delivery-home-page.md#servicing">サービス</a></p>
 <p><a href="../dev-itpro/data-entities/data-entities.md">データ管理フレームワーク</a></p>

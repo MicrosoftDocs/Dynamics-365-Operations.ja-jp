@@ -1,9 +1,9 @@
 ---
 title: "サプライ チェーン マネジメントのホーム ページ"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations Enterprise Edition のサプライ チェーン マネジメント機能に関するヘルプ トピックとその他のリソースの一覧を示します。"
+description: "このページでは、Microsoft Dynamics 365 for Finance and Operations Enterprise Edition のサプライ チェーン マネジメント機能に関するヘルプ トピックとその他のリソースの一覧を示します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 01/10/2018
+ms.date: 02/15/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 6c193a3a9deba215d4374ccffc3bf2d854fbd0f2
-ms.openlocfilehash: 9314a129b85cf6cb2d2ca379eafc142ce234d535
+ms.sourcegitcommit: cab2f165a70e5ce8f09f0391282e055e51afb225
+ms.openlocfilehash: bf3192a5189a3b18ad28f3c5cb0dd6d402824ed5
 ms.contentlocale: ja-jp
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/21/2018
 
 ---
 
@@ -40,7 +40,7 @@ ms.lasthandoff: 01/22/2018
 機能領域を選択すると詳細が表示されます。
 
 - [原価会計](../financials/cost-accounting/cost-accounting-home-page.md)
-- [原価管理](cost-management/costing-sheets.md)  
+- [原価管理](cost-management/cost-management-home-page.md)  
 - [在庫管理](inventory/inventory-home-page.md)
 - [マスター プラン](master-planning/master-planning-home-page.md)
 - [調達](procurement/procurement-sourcing-overview.md)
@@ -54,8 +54,9 @@ ms.lasthandoff: 01/22/2018
 
 これらの短いビデオは、Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 (2017 年 12 月) に含まれる新機能の確認に役立ちます。
 
--  [見込顧客リストの現金化への統合](https://youtu.be/AVV9x5x-XCg) 
+-  [Prospect to cash integration (見込顧客リストの現金化への統合)](https://youtu.be/AVV9x5x-XCg) 
 -  [最適化アドバイザー](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
+-  [Use warehouse template to copy configuration (倉庫テンプレートを使用したコンフィギュレーションのコピー)](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
 
 これらの短いビデオは、Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (2017 年 7 月) に含まれる新機能の確認に役立ちます。
 
@@ -67,17 +68,36 @@ ms.lasthandoff: 01/22/2018
 
 これらの技術会議の記録は、以前のバージョンの Finance and Operations の製品機能について説明していますが、現在のバージョンにも同じ概念が当てはまり、手順も似ています。 
 
--  <a href="https://youtu.be/zotrj3SbCl4">Product Configurator in Microsoft Dynamics AX (Microsoft Dynamics AX の製品コンフィギュレーター)</a>
--  <a href="https://youtu.be/7v8BPmEs9Dg">Master Planning - tips and tricks for troubleshooting performance (マスター プラン - パフォーマンスのトラブルシューティングに関するヒントとコツ)</a>
--  <a href="https://youtu.be/RLXybx20B5o">Help! MRP is slow! (MRP の処理に時間がかかる!)</a>
--  <a href="https://mix.office.com/watch/wpf78tr7rjuh/">Process inbound ASNs in Warehouse management (倉庫管理での入庫 ASN の処理)</a> 
--  <a href="https://www.youtube.com/watch?v=--_didmZKHo&t=10s">Get the best out of your warehouse management system (倉庫管理システムを最大限に活用する)</a>
--  <a href="https://www.youtube.com/watch?v=z5_V5Eqlf5M&t=48s">Advanced R3 Warehouse Management - Inbound Processing and Min/Max Replenishment (高度な R3 倉庫管理 - 入庫処理と最小/最大の補充)</a>
--  <a href="https://youtu.be/Og0gLlVp7jA">Advanced R3 Warehouse Management - A day in the life, outbound processing and Demand Replenishment (高度な R3 倉庫管理 - 出庫処理と要求補充)</a>
--  <a href="https://youtu.be/5w1MngVchBA">Labels in the new Microsoft Dynamics AX 2012 R3 warehouse management (新しい Microsoft Dynamics AX 2012 R3 倉庫管理でのラベル)</a>
--  <a href="https://www.youtube.com/embed/QUxXUrN-7n4">Dynamics AX 2012 R3: Advanced warehouse management - A day in the life of process manufacturing (高度な倉庫管理 - プロセス製造)</a>
--  <a href="https://youtu.be/y1jrd3A_k70">Subcontracting operations and activities in manufacturing (製造での外注の操作および活動)</a>
--  <a href="https://youtu.be/jgmTgJIgEFQ">Transportation management (TMS) in the new Microsoft Dynamics AX (新しい Microsoft Dynamics AX の輸送管理 (TMS))</a>
+**原価管理**
+
+-  [Overview of Cost management (原価管理の概要)](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be)
+
+**マスター プラン**
+
+-  [Extend the demand forecasting functionality (需要予測機能の拡張)](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
+-  [Master planning - tips and tricks for troubleshooting performance (マスター プラン - パフォーマンスのトラブルシューティングに関するヒントとコツ)](https://youtu.be/7v8BPmEs9Dg)
+-  [Help! MRP is slow! (MRP の処理に時間がかかる!)](https://youtu.be/RLXybx20B5o)
+
+**製品情報管理**
+
+-  [Product configurator in Microsoft Dynamics AX (Microsoft Dynamics AX の製品コンフィギュレーター)](https://youtu.be/zotrj3SbCl4)
+
+**倉庫管理** 
+
+-  [Process inbound ASNs in Warehouse management (倉庫管理での入庫 ASN の処理)](https://mix.office.com/watch/wpf78tr7rjuh)  
+-  [Get the best out of your warehouse management system (倉庫管理システムを最大限に活用する)](https://www.youtube.com/watch?v=--_didmZKHo&t=10s)
+-  [Advanced R3 Warehouse Management - Inbound Processing and Min/Max Replenishment (高度な R3 倉庫管理 - 入庫処理と最小/最大の補充)](https://www.youtube.com/watch?v=z5_V5Eqlf5M&t=48s)
+-  [Advanced R3 Warehouse Management - A day in the life, outbound processing and Demand Replenishment (高度な R3 倉庫管理 - 出庫処理と要求補充)](https://youtu.be/Og0gLlVp7jA)
+-  [Labels in the new Microsoft Dynamics AX 2012 R3 warehouse management (新しい Microsoft Dynamics AX 2012 R3 倉庫管理でのラベル)](https://youtu.be/5w1MngVchBA)
+-  [Dynamics AX 2012 R3: Advanced warehouse management - A day in the life of process manufacturing (高度な倉庫管理 - プロセス製造)](https://www.youtube.com/embed/QUxXUrN-7n4)
+
+**生産管理**
+
+-  [Subcontracting operations and activities in manufacturing (製造での外注の操作および活動)](https://youtu.be/y1jrd3A_k70)
+
+**輸送管理**
+
+-  [Transportation management (TMS) in the new Microsoft Dynamics AX (新しい Microsoft Dynamics AX の輸送管理 (TMS))](https://youtu.be/jgmTgJIgEFQ)
 
 ## <a name="blogs"></a>ブログ
 <a href="https://blogs.msdn.microsoft.com/axmfg/">Dynamics AX Manufacturing R&D Team Blog (Dynamics AX 製造研究開発チーム ブログ)</a> および <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">Supply Chain Management in Dynamics AX R&D Team Blog (Dynamics AX のサプライ チェーン マネジメント研究開発チーム ブログ)</a> には、製造およびサプライ チェーン マネジメントに関する多くのトピックがあります。 これらの投稿のほとんどは、以前のバージョンの Finance and Operations について書かれていますが、現在のバージョンでも同じ概念を適用でき、手順も類似しています。 
