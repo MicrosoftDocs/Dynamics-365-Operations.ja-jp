@@ -1,6 +1,6 @@
 --- 
 title: "特別償却プロファイルのある固定資産の作成 (日本)"
-description: "日本では、特定の条件下で特別減価償却額を固定資産に転記できます。この手順では、特別償却プロファイルがある固定資産の作成方法について説明します。"
+description: "日本では、特定の条件下で特別償却額を固定資産に転記できます この手順を使用して、特別償却プロファイルのある固定資産の作成方法を説明します。"
 author: ShylaThompson
 manager: AnnBe
 ms.date: 11/11/2016
@@ -16,17 +16,17 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 82add2ad772cddd4ab89f04bd6efa7f8a670d666
+ms.sourcegitcommit: a1c4b7623f3409d4474adcd04fb1331b944b9fbb
+ms.openlocfilehash: e102148545435f63af1c559512fca408805ad1a8
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 02/13/2018
 
 ---
 # <a name="create-a-fixed-asset-with-special-depreciation-profile-japan"></a>特別償却プロファイルのある固定資産の作成 (日本)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-日本では、特定の条件下で特別償却額を固定資産に転記できます。
+日本では、特定の条件下で特別償却額を固定資産に転記できます
 
 
 

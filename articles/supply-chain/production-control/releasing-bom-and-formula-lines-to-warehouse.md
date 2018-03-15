@@ -18,14 +18,16 @@ ms.author: johanho
 ms.search.validfrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
-ms.openlocfilehash: 6aec3532a36a2c1e67ee0c189e45a352ad7670f6
+ms.sourcegitcommit: a1e539c283800035327196520f6438904c94126d
+ms.openlocfilehash: 0affc07293c886c4c65f99259eb19f1998f277f6
 ms.contentlocale: ja-jp
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 03/04/2018
 
 ---
 
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a>BOM とフォーミュラ明細行を倉庫にリリース
+
+[!include[banner](../includes/banner.md)]
 
 このトピックでは、部品表 (BOM) 明細行とフォーミュラ明細行の原材料消費を倉庫にリリースするプロセスについて説明します。 BOM またはフォーミュラの明細行を倉庫にリリースする際、そのシステムは材料が製造工程で消費される作業現場の生産入力場所で、材料が既に利用可能かどうかを最初に判断します。
 
@@ -40,6 +42,9 @@ BOM とフォーミュラ明細行をリリースするために使用する方�
 
 - **製造またはバッチ オーダー リリースの一部として BOM とフォーミュラ明細行をリリース** - この方法で、製造およびバッチ オーダーの BOM とフォーミュラ明細行は、オーダー リリースのプロセスの一部としてリリースされます。 通常、製造またはバッチ オーダーのリリース中に、生産ジョブは作業現場の作業者へリリースされ、そして生産ドキュメントが印刷されます。 このプロセス中に、注文の状態も [**リリース済**] へ変更します。
 - **BOM とフォーミュラ明細行はバッチ ジョブまたは手動操作を経由してリリース** - この方法で、BOM とフォーミュラ明細行は [**BOM とフォーミュラ明細行の自動リリース**] バッチ ジョブまたは手動操作を通してのみリリース可能です。 BOM とフォーミュラ明細行を手動でリリースするには、製造オーダーのリスト ページまたは詳細ページ、およびアクション ペインで、[**倉庫へリリース**] を選択します。
+
+バッチ ジョブを使用して生産への BOM およびフォーミュラ明細行をリリースする方法の簡単なデモについては、この短い YouTube ビデオをご覧ください。
+[!Video https://www.youtube.com/embed/8urAJn50dQ8]
 
 ## <a name="releasing-the-bom-and-formula-lines-by-using-a-batch-job"></a>バッチ ジョブを使用して、BOM とフォーミュラ明細行をリリース
 
@@ -79,6 +84,9 @@ BOM とフォーミュラ明細行をリリースするために使用する方�
 次の図は、10、20 の 2 つの工程をもつ製造オーダーを示します。 この例では、工程 10 へのリリースを制限する場合、材料 M9203 のみリリースされます。
 
 ![工程番号ごとの材料のリリースの例](media/two-operations.PNG)
+
+完成品の量に比例して材料をリリースする方法の簡単なデモについては、この短い YouTube ビデオをご覧ください。
+[!Video https://www.youtube.com/embed/Rm3ojAz6Zu0]
 
 ### <a name="release-material-in-proportion-to-the-amount-of-finished-goods"></a>完成品の量に比例して材料をリリース
 

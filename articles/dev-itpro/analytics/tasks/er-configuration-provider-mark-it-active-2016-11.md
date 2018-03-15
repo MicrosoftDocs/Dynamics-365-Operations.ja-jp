@@ -16,10 +16,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 809a1466b0f4674f503bc654175d8f94b37a6508
-ms.openlocfilehash: 2dfa04f280249884af2a237807fb283059444a6c
+ms.sourcegitcommit: 95d5bf26c22238753586cf4a7aaf5c26f061a705
+ms.openlocfilehash: 018aee917c13f576759ebd812d31cbc9d83e2d1a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 02/23/2018
 
 ---
 # <a name="create-a-configuration-provider-and-mark-it-as-active-for-electronic-reporting-er"></a>コンフィギュレーション プロバイダーを作成し、電子申告 (ER) が有効なプロバイダーとしてマーク付けする
@@ -33,11 +33,10 @@ ms.lasthandoff: 11/02/2017
 1. [組織管理] > [ワークスペース] > [電子申告] の順に移動します。
 2. [コンフィギュレーション プロバイダー] をクリックします。
 3. [新規] をクリックします。
-    * プロバイダー レコードには固有の名称とURL があります。 このページの内容を確認し、Litware, Inc. (http://www.litware.com) のレコードがすでに存在する場合、この手順をスキップします。  
+    * プロバイダー レコードには固有の名称とURL があります。 このページの内容を確認し、Litware, Inc. (`http://www.litware.com`) の記録が既に存在している場合、この手順を省略します。  
 4. [名前] フィールドに「Litware, Inc.」を入力します。
     * Litware, Inc.  
-5. [インターネット アドレス] フィールドに「http://www.litware.com」を入力します。
-    * http://www.litware.com  
+5. [インターネット アドレス] フィールドに `http://www.litware.com`を入力します。
 6. [保存] をクリックします。
 7. ページを閉じます。
 

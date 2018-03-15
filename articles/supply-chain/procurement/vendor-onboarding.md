@@ -17,10 +17,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
-ms.openlocfilehash: 4804fc1a52371284ab69d1490454bebd5e91fcd9
+ms.sourcegitcommit: 1bd23b6e87c95d2c3d2131ec1ee9548bc4fe10cb
+ms.openlocfilehash: 2816fb094504bb5d0b595f812764620d480da401
 ms.contentlocale: ja-jp
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 03/04/2018
 
 ---
 
@@ -47,6 +47,9 @@ ms.lasthandoff: 12/14/2017
 | 調達担当者 | | 研修プロセスを開始します。 | | | 仕入先要求を承諾または拒否するかのいずれかを確認します。 | |
 | 管理者            | | | Finance and Operations および Microsoft Azureでユーザーを作成する | | | |
 | 仕入先の連絡担当者    | | | 連絡担当者に電子メールを送信します。 | 仕入先情報を登録します。 | | |
+
+仕入先のオンボーディング プロセスの簡単なデモに関しては、この短い YouTube ビデオをご覧ください。 
+> [!Video https://www.youtube.com/embed/0KUc3AGaTKk]
 
 ## <a name="importing-the-prospective-vendor-registration-request"></a>見込み仕入先の登録要求をインポートする
 

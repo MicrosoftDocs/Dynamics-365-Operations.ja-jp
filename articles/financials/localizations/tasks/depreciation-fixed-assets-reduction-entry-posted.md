@@ -1,6 +1,6 @@
 --- 
 title: "圧縮記帳が転記されている固定資産の減価償却 (日本)"
-description: "このタスクを使用して圧縮記帳で固定資産の減価償却を実行する方法を把握します。このタスクを完了するためには、[固定資産コンフィギュレーション キー] を選択する必要があります。"
+description: "このタスクを使用して、圧縮記帳で固定資産の減価償却を実行する方法を把握します。 このタスクを完了するためには、[固定資産コンフィギュレーション キー] を選択する必要があります。"
 author: ShylaThompson
 manager: AnnBe
 ms.date: 02/15/2016
@@ -16,10 +16,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 012939c017d9238a797d87f16ef2528db79498b4
+ms.sourcegitcommit: a1c4b7623f3409d4474adcd04fb1331b944b9fbb
+ms.openlocfilehash: f701f55a1d76f568a5d7af21d490cf092e1e64d4
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 02/13/2018
 
 ---
 # <a name="depreciate-fixed-assets-with-reduction-entry-posted-japan"></a>圧縮記帳が転記されている固定資産の減価償却 (日本)

@@ -20,10 +20,10 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a24f75bf7e27702505d8a61ae3db83d03fe4a933
-ms.openlocfilehash: a2e91cd2b72ffed78669fe3cc83b141db6f26aa2
+ms.sourcegitcommit: 18ed011fa1c1aa35b4a401d51bffc6af19395577
+ms.openlocfilehash: 030579ac73d6333ac4ed55433b9679a58247c088
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 02/13/2018
 
 ---
 
@@ -80,6 +80,10 @@ Finance and Operations には、タスク ガイドとして使用できる追�
 ### <a name="webinars"></a>ウェビナー
 [需要予測用 Azure Machine Learning の使用](https://www.youtube.com/watch?v=4nQsccdFFDA&feature=youtu.be)
 
+### <a name="tech-conference-recordings"></a>技術会議の記録
+-  [Extend the demand forecasting functionality (需要予測機能の拡張)](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
+-  [Master planning - tips and tricks for troubleshooting performance (マスター プラン - パフォーマンスのトラブルシューティングに関するヒントとコツ)](https://youtu.be/7v8BPmEs9Dg)
+-  [Help! MRP is slow! (MRP の処理に時間がかかる!)](https://youtu.be/RLXybx20B5o)
 
 
 

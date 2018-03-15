@@ -3,7 +3,7 @@ title: "[Power BI コンテンツ]"
 description: "このトピックでは、使用可能な Power BI コンテンツの一覧を示し、リソースについて詳しく知ることができます。"
 author: sericks007
 manager: AnnBe
-ms.date: 12/19/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: b0a7adb684850a0f0b914ea89ce3af1636b3084c
-ms.openlocfilehash: 0969f9f30e50a36b667765fbe375e6c14d3412da
+ms.sourcegitcommit: 95d5bf26c22238753586cf4a7aaf5c26f061a705
+ms.openlocfilehash: d5b1bb5f25710b7d4feea55414d68d5390c87308
 ms.contentlocale: ja-jp
-ms.lasthandoff: 02/02/2018
+ms.lasthandoff: 02/23/2018
 
 ---
 
@@ -42,6 +42,7 @@ Microsoft Dynamics 365 for Finance and Operations, Enterprise edition を使用�
 - [原価会計分析の Power BI コンテンツ](cost-accounting-analysis-content-pack.md) 
 - [与信および回収管理 Power BI コンテンツ](../../financials/accounts-receivable/credit-collections-power-bi.md)
 - [従業員の開発 Power BI コンテンツ](employee-development-PBI.md) 
+- [財務インサイト Power BI コンテンツ](financial-insights.md)
 - [財務パフォーマンス Power BI コンテンツ](financial-performance-power-bi-content-pack.md)
 - [固定資産管理 Power BI コンテンツ](../../financials/fixed-assets/Fixed-asset-management-workspace.md)
 - [学習 Power BI コンテンツ](learning-power-bi.md)
@@ -73,6 +74,9 @@ Microsoft Dynamics 365 for Operations バージョン 1611 を使用している
 
 ## <a name="power-bi-content-for-microsoft-dynamics-ax"></a>Microsoft Dynamics AX の Power BI コンテンツ
 Microsoft Dynamics AX 7.0 または Microsoft Dynamics AX 7.0.1 を使用している場合、以下の Power BI コンテンツが使用可能です:
+
+> [!Note]
+> これらのコンテンツ パックは [Power BI コンテンツ パックを PowerBI.com に公開する](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features#power-bi-content-packs-published-to-powerbicom)で記載されたものとして非推奨になっています。
 
 - [ Power BI コンテンツでの原価管理](cost-management-content-pack.md)    
 - [財務パフォーマンス Power BI コンテンツ](financial-performance-power-bi-content-pack.md)

@@ -3,7 +3,7 @@ title: "クラウドとオンプレミスの機能比較"
 description: "このトピックでは、クラウドとオンプレミスでサポートされる機能を示します。"
 author: robinarh
 manager: AnnBe
-ms.date: 11/29/2017
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: robinr
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
 ms.translationtype: HT
-ms.sourcegitcommit: cfd3b475b113fdab4ceeb3e636fea6c9134ab982
-ms.openlocfilehash: 32cc0c01a096cd678c605f57e0cccfe42d0479aa
+ms.sourcegitcommit: 4ffdc5dd54f8a069676f62c8b43f2892764dc046
+ms.openlocfilehash: 88640007ec54ed0c566e163e3dd701faeebc50ce
 ms.contentlocale: ja-jp
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 03/05/2018
 
 ---
 
@@ -49,8 +49,9 @@ ms.lasthandoff: 12/01/2017
 | | Power BI 用の原価管理コンテンツ パック | 有 | 無 |
 | データの管理および統合| | 有 | 有 |
 | | コンフィギュレーション駆動型の拡張機能| 有 | 無 |
-| | 独自のデータ ウェアハウスへのデータのエクスポート| 有 | 無 |
+| | 独自のデータ ウェアハウスへのデータのエクスポート| 有 | 有 |
 | | データ エンティティへの差分更新のエクスポート有効化 | 有 | 無 |
+| | 定期統合                 |有 | 無|
 | ドキュメント管理| | 有| 有 |
 | 財務管理|  | 有 | 有 |
 | ヘルプ| | 有 | 無 |

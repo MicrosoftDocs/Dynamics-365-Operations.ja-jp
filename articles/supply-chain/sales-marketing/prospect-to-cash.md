@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 602873e8af976c57f27ce53b76391516351755e3
-ms.openlocfilehash: 29d33d3ecf97c15fed0247d172ff6fb3bbdaa018
+ms.sourcegitcommit: 95d5bf26c22238753586cf4a7aaf5c26f061a705
+ms.openlocfilehash: 62f328c5a6bf5343c97de0b7d907bbcfe2fcde4d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/23/2018
 
 ---
 
@@ -46,15 +46,6 @@ ms.lasthandoff: 01/25/2018
 - [販売注文の Finance and Operations から Sales への直接同期](sales-order-template-mapping-direct.md)
 - [販売注文の Sales と Finance and Operations の間の直接同期 (リリース保留中のテンプレート)](sales-order-template-mapping-direct-two-ways.md)
 - [売上請求書の Finance and Operations から Sales への直接同期](sales-invoice-template-mapping-direct.md)
-
-以前のバージョンでは、見込顧客を現金化するソリューションは次のタイプの非直接同期を提供します:
-
-- [Sales でアカウントの管理、および Finance and Operations への同期](accounts-template-mapping.md)
-- [Sales での連絡先の管理、および Finance and Operations への同期](contacts-template-mapping.md)
-- [Finance and Operations での製品の管理、および Sales への同期](products-template-mapping.md)
-- [Sales での販売見積の作成、および Finance and Operations への同期](sales-quotation-template-mapping.md)
-- [Finance and Operations での販売注文の作成、および Sales への同期](sales-order-template-mapping.md)
-- [Finance and Operations での売上請求書の作成、および Sales への同期](sales-invoice-template-mapping.md)
 
 ## <a name="system-requirements-for-finance-and-operations"></a>Finance and Operations のシステム要件
 
@@ -87,7 +78,7 @@ ms.lasthandoff: 01/25/2018
     - **[KB4033093](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4033093&bugId=3824604&qc=bd7e15e1fb56066b3a82ce48b691cf1ffbc934a7473fa888545b2211a8d416c5)** - データ エンティティによる見込顧客を現金化する統合のサポートが必要です。
     
     > [!NOTE]
-    > 修正プログラムをインストール後、[**SalesPopulateProspectToCash**] フォームから次のバッチ ジョブをトリガーしなければなりません。 このフォームは一度しか必要ではないので非表示になります。 フォームにアクセスするには、環境にログインし、次の事項をブラウザーのアドレス内のURLに追加します。&mi=action:SalesPopulateProspectToCash、たとえば、https://ax123456.cloud.test.dynamics.com/?cmp=USMF&mi=action:SalesPopulateProspectToCash。 このフォームを開くには、[OK] をクリックします。 これにより固有値を持つ新しい [**SalesLine**]、[**SalesQuotationLine**] および [**CustInvoiceTrans**] テーブルに [**LineCreationSequnceNumber**] フィールドが設定され、製品リストが更新されます。 これは見込顧客が現金化の統合を作業するために必要です。
+    > 修正プログラムをインストール後、[**SalesPopulateProspectToCash**] フォームから次のバッチ ジョブをトリガーしなければなりません。 このフォームは一度しか必要ではないので非表示になります。 フォームにアクセスするためには、環境にログインし、ブラウザのアドレスに以下の URL を追加してください: &mi=action:SalesPopulateProspectToCash、たとえば、`https://ax123456.cloud.test.dynamics.com/?cmp=USMF&mi=action:SalesPopulateProspectToCash`。 このフォームを開くには、[OK] をクリックします。 これにより固有値を持つ新しい [**SalesLine**]、[**SalesQuotationLine**] および [**CustInvoiceTrans**] テーブルに [**LineCreationSequnceNumber**] フィールドが設定され、製品リストが更新されます。 これは見込顧客が現金化の統合を作業するために必要です。
 
 
 ## <a name="system-requirements-for-sales"></a>Sales のシステム要件
@@ -96,12 +87,6 @@ ms.lasthandoff: 01/25/2018
 
 - Dynamics 365 for Sales バージョン 1612 (8.2.1.207) (DB 8.2.1.207) オンライン
 - Dynamics 365 for Sales バージョン 1.15.0.0 (v15) の見込顧客を現金化するソリューション 
-
-   > [!NOTE]
-   >
-   > テンプレート バージョン 1.0.0.0 および 1.0.0.1 は Dynamics 365 for Sales、バージョン 1.14.1.0 の見込顧客を現金化するソリューションでサポートされています。
-   >
-   > テンプレート バージョン 2.0.0.0 および 2.1.0.0 は Dynamics 365 for Sales、バージョン 1.15.0.0 の見込顧客を現金化するソリューションでサポートされています。
 
 ### <a name="install-the-prospect-to-cash-solution-for-sales"></a>Sales の見込顧客を現金化するソリューションのインストール
 
