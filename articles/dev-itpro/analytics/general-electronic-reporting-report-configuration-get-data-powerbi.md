@@ -1,6 +1,6 @@
 ---
 title: "電子申告をコンフィギュレーションして Power BI にデータを取り込む"
-description: "このトピックでは、電子申告 (ER) コンフィギュレーションを使用して Finance and Operations のインスタンスから Power BI サービスへのデータ転送を調整する方法について説明します。 たとえば、このトピックでは、転送する必要があるビジネス データとしてのイントラスタット トランザクションを使用します。 Power BI マップの視覚化は、このイントラスタット トランザクション データを使用して Power BI レポートで会社のインポート/エクスポート活動の分析のためのビューを表示します。"
+description: "このトピックでは、電子申告 (ER) コンフィギュレーションを使用して Finance and Operations のインスタンスから Power BI サービスへのデータ転送を調整する方法について説明します。"
 author: NickSelin
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,14 +18,14 @@ ms.author: nselin
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 90749012c3eb4f3d1c275f0661f8cff43ec285a2
+ms.sourcegitcommit: 95d5bf26c22238753586cf4a7aaf5c26f061a705
+ms.openlocfilehash: 8f89d0740098fbd5af9d838f1f4b7ddf47ee7e10
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 02/23/2018
 
 ---
 
-# <a name="configure-electronic-reporting-to-pull-data-into-power-bi"></a>電子申告をコンフィギュレーションして Power BI にデータを取り込む
+# <a name="configure-electronic-reporting-to-pull-data-into-power-bi"></a>Power BI にデータをプルするよう電子申告を構成する
 
 [!include[banner](../includes/banner.md)]
 
@@ -100,22 +100,38 @@ Power BI レポートで使用されるビジネス データのソースとし�
 2.  [**SharePoint**] フィールドで、以前に作成した [**共有**] ドキュメント タイプを選択します。
 
 ## <a name="schedule-execution-of-the-configured-er-format"></a>コンフィギュレーションされた ER 形式の実行をスケジュールする
-[**コンフィギュレーション**] ページ ([**組織管理**] &gt; [**電子申告**] &gt; [**コンフィギュレーション**]) のコンフィギュレーション ツリーで、以前に作成した [**インポート/エクスポート活動**] のコンフィギュレーションを選択します。 この形式を使用できるように、バージョン 1.1 の状態を [**ドラフト**] から [**完了**] に変更します。 [![コンフィギュレーションのページ](./media/ger-power-bi-format-configuration-complete-1024x401.png)](./media/ger-power-bi-format-configuration-complete.png) [**インポート/エクスポート活動**] コンフィギュレーションの完了したバージョンを選択し、[**実行**] をクリックします。 コンフィギュレーションした送信先は、Excel 形式で生成される出力結果に適用されることに注意してください。 無人モードでこのレポートを実行するには、[**バッチ処理**] オプションを [**はい**] に設定します。 このバッチ実行の必要な再実行をスケジュールするために [**再実行**] をクリックします。 再実行は、更新されたデータが Finance and Operations から Power BI に転送される頻度を定義します。 [![電子申告パラメーター ダイアログ ボックス](./media/ger-power-bi-format-configuration-run-to-schedule-1024x413.png)](./media/ger-power-bi-format-configuration-run-to-schedule.png) これをコンフィギュレーションした後、[**バッチ ジョブ**] のページ (**[システム管理] &gt; [照会] &gt; [バッチ ジョブ]**) に ER レポートの実行ジョブを見つけることができます。 [![バッチ ジョブのページ](./media/ger-power-bi-format-configuration-running-job-1024x410.png)](./media/ger-power-bi-format-configuration-running-job.png) このジョブを初めて実行すると、送信先は、選択した SharePoint のフォルダーにコンフィギュレーションされた名前を持つ新しい Excel ファイルを作成します。 その後ジョブが実行されるたびに、送信先は新しいバージョンの Excel ファイルを作成します。 [![Excel ファイルの新しいバージョン](./media/ger-power-bi-output-file-in-sharepoint-server-folder-2-1024x412.png)](./media/ger-power-bi-output-file-in-sharepoint-server-folder-2.png)
+1. [**コンフィギュレーション**] ページ ([**組織管理**] &gt; [**電子申告**] &gt; [**コンフィギュレーション**]) のコンフィギュレーション ツリーで、以前に作成した [**インポート/エクスポート活動**] のコンフィギュレーションを選択します。 
+2. この形式を使用できるように、バージョン 1.1 の状態を [**ドラフト**] から [**完了**] に変更します。 [![構成ページ](./media/ger-power-bi-format-configuration-complete-1024x401.png)](./media/ger-power-bi-format-configuration-complete.png) 
+3. [**インポート/エクスポート活動**] コンフィギュレーションの完了したバージョンを選択し、[**実行**] をクリックします。 コンフィギュレーションした送信先は、Excel 形式で生成される出力結果に適用されることに注意してください。 
+4. 無人モードでこのレポートを実行するには、[**バッチ処理**] オプションを [**はい**] に設定します。 
+5. このバッチ実行の必要な再実行をスケジュールするために [**再実行**] をクリックします。 再実行は、更新されたデータが Finance and Operations から Power BI に転送される頻度を定義します。 [![電子申告パラメーター ダイアログ ボックス](./media/ger-power-bi-format-configuration-run-to-schedule-1024x413.png)](./media/ger-power-bi-format-configuration-run-to-schedule.png) 
+6. これをコンフィギュレーションした後、**バッチ ジョブ** のページ (**システム管理 &gt; 照会 &gt; バッチ ジョブ**) に ER レポートの実行ジョブを見つけることができます。 [![バッチ ジョブのページ](./media/ger-power-bi-format-configuration-running-job-1024x410.png)](./media/ger-power-bi-format-configuration-running-job.png) 
+7. このジョブを初めて実行すると、送信先は、選択した SharePoint のフォルダにコンフィギュレーションされた名前を持つ新しい Excel ファイルを作成します。 その後ジョブが実行されるたびに、送信先は新しいバージョンの Excel ファイルを作成します。 [![Excel ファイルの新しいバージョン](./media/ger-power-bi-output-file-in-sharepoint-server-folder-2-1024x412.png)](./media/ger-power-bi-output-file-in-sharepoint-server-folder-2.png)
 
 ## <a name="create-a-power-bi-dataset-by-using-the-output-result-of-the-er-format"></a>ER 形式の出力結果を使用して Power BI データセットを作成
-Power BI にサイン インして、既存の Power BI グループ (ワークスペース) を開くか、新しいグループを作成します。 [**データにインポートまたは接続**] セクションの [**ファイル**] の下の [**追加**] をクリックするか、左ウィンドウの [**データセット**] の横にあるプラス記号 ([**+**]) をクリックします。 [![データセットの作成](./media/ger-power-bi-add-dataset-1024x524.png)](./media/ger-power-bi-add-dataset.png) [**SharePoint – チーム サイト**] オプションを選択してから、使用している SharePoint Server のパス (上記の例では、[**https://ax7partner.litware.com**]) を入力します。 次に、[**/共有ドキュメント/GER データ/PowerBI**] フォルダを参照し、新しい Power BI データセットのためのデータのソースとして作成した Excel ファイルを選択します。 [![Excel ファイルの選択](./media/ger-power-bi-add-dataset-select-excel-file-1024x522.png)](./media/ger-power-bi-add-dataset-select-excel-file.png) [**接続**] をクリックし、[**インポート**] をクリックします。 新しいデータセットは、選択された Excel ファイルに基づいて作成されます。 データセットは、新しく作成されたダッシュボードに自動的に追加できます。 [![ダッシュボードのデータセット](./media/ger-power-bi-added-dataset-1024x489.png)](./media/ger-power-bi-added-dataset.png) このデータセットの更新スケジュールをコンフィギュレーションして、定期更新を強制します。 定期更新により、SharePoint Server 上に作成された Excel ファイル の新しいバージョンを使用して ER レポートの定期実行による Finance and Operations からの新しいビジネス データの消費が可能になります。
+1. Power BI にサイン インして、既存の Power BI グループ (ワークスペース) を開くか、新しいグループを作成します。 [**データにインポートまたは接続**] セクションの [**ファイル**] の下の [**追加**] をクリックするか、左ウィンドウの [**データセット**] の横にあるプラス記号 ([**+**]) をクリックします。 [![データセットの作成](./media/ger-power-bi-add-dataset-1024x524.png)](./media/ger-power-bi-add-dataset.png) 
+2. **SharePoint – チーム サイト** オプションを選択してから、使用している SharePoint Server のパス (上記の例では、`https://ax7partner.litware.com`) を入力します。 
+3. **/共有ドキュメント/GER データ/PowerBI** フォルダを参照し、新しい Power BI データセットのためのデータのソースとして作成した Excel ファイルを選択します。 [![Excel ファイルの選択](./media/ger-power-bi-add-dataset-select-excel-file-1024x522.png)](./media/ger-power-bi-add-dataset-select-excel-file.png) 
+4. [**接続**] をクリックし、[**インポート**] をクリックします。 新しいデータセットは、選択された Excel ファイルに基づいて作成されます。 データセットは、新しく作成されたダッシュボードに自動的に追加できます。 [![ダッシュボードのデータセット](./media/ger-power-bi-added-dataset-1024x489.png)](./media/ger-power-bi-added-dataset.png) 
+5. このデータセットの更新スケジュールをコンフィギュレーションして、定期更新を強制します。 定期更新により、SharePoint Server 上に作成された Excel ファイル の新しいバージョンを使用して ER レポートの定期実行による Finance and Operations からの新しいビジネス データの消費が可能になります。
 
 ## <a name="create-a-power-bi-report-by-using-the-new-dataset"></a>新しいデータセットを使用して Power BI レポートを作成
-新しい Power BI レポートを作成するには、作成した [**インポートとエクスポートの詳細**] Power BI データセットをクリックします。 次に、視覚化をコンフィギュレーションします。 たとえば [**入力済マップ**] の視覚化を選択して、次のようにコンフィギュレーションします:
+1. 作成した **インポートとエクスポートの詳細** Power BI データセットをクリックします。 
+2. 視覚化をコンフィギュレーションします。 たとえば [**入力済マップ**] の視覚化を選択して、次のようにコンフィギュレーションします:
+ -   [**CountryOrigin**] データセット フィールドをマップ視覚化の [**場所**] フィールドに割り当てます。
+ -   [**金額**] データセット フィールドをマップ視覚化の [**彩度**] フィールドに割り当てます。
+ -   [**活動**] と [**年**] のデータセット フィールドに、マップ視覚化の [**フィルター**] フィールド コレクション を追加します。
 
--   [**CountryOrigin**] データセット フィールドをマップ視覚化の [**場所**] フィールドに割り当てます。
--   [**金額**] データセット フィールドをマップ視覚化の [**彩度**] フィールドに割り当てます。
--   [**活動**] と [**年**] のデータセット フィールドに、マップ視覚化の [**フィルター**] フィールド コレクション を追加します。
-
-**インポートとエクスポートの詳細レポート**として Power BI レポートを保存します。 [![インポートとエクスポートの詳細レポート](./media/ger-power-bi-added-report-1024x498.png)](./media/ger-power-bi-added-report.png) 地図には、Excel ファイルに示されている国/地域 (この例ではオーストリアとスイス) が表示されていることに注意してください。 これらの国/地域は、それぞれの請求額の割合の色分けが表示されます。 イントラスタット トランザクションのリストを更新します。 イタリアからの輸出トランザクションが追加されます。 [![イントラスタット トランザクションのリスト](./media/ger-power-bi-new-run-new-transaction-1024x321.png)](./media/ger-power-bi-new-run-new-transaction.png) ER レポートの次のスケジュールされた実行と Power BI データセットの次のスケジュールされた更新を待ちます。 次に、Power BI レポート (インポート トランザクションのみを表示するように選択) を確認します。 更新されたマップにイタリアが表示されます。 [![更新されたマップ](./media/ger-power-bi-new-run-new-map-1024x511.png)](./media/ger-power-bi-new-run-new-map.png)
+3. **インポートとエクスポートの詳細レポート**として Power BI レポートを保存します。 [![インポートとエクスポートの詳細レポート](./media/ger-power-bi-added-report-1024x498.png)](./media/ger-power-bi-added-report.png) 地図には、Excel ファイルに示されている国/地域 (この例ではオーストリアとスイス) が表示されていることに注意してください。 これらの国/地域は、それぞれの請求額の割合の色分けが表示されます。 
+4. イントラスタット トランザクションのリストを更新します。 イタリアからの輸出トランザクションが追加されます。 [![イントラスタット トランザクションのリスト](./media/ger-power-bi-new-run-new-transaction-1024x321.png)](./media/ger-power-bi-new-run-new-transaction.png) 
+5. ER レポートの次のスケジュールされた実行と Power BI データセットの次のスケジュールされた更新を待ちます。 次に、Power BI レポート (インポート トランザクションのみを表示するように選択) を確認します。 更新されたマップにイタリアが表示されます。 [![更新されたマップ](./media/ger-power-bi-new-run-new-map-1024x511.png)](./media/ger-power-bi-new-run-new-map.png)
 
 ## <a name="access-power-bi-report-in-finance-and-operations"></a>Finance and Operations で Power BI レポートにアクセスします。
-Finance and Operations と Power BI の統合を設定します。 詳細については、「[ワークスペースの Power BI 統合のコンフィギュレーション](configure-power-bi-integration.md)」を参照してください。 Power BI 統合 ([**組織管理**] &gt; [**ワークスペース**] &gt; [**電子申告ワークスペース**]) をサポートする [**電子申告**] ワークスペース ページで、[**オプション**] &gt; [**レポート カタログを開く**] をクリックします。 作成した [**インポートとエクスポートの詳細**] Power BI レポートを選択して、選択されたページでアクション項目としてレポートを表示します。 アクション項目をクリックして、Power BI でデザインされたレポートを表示する Finance and Operations のページを開きます。 [![インポートとエクスポートの詳細レポート](./media/ger-power-bi-review-bi-report-in-ax-form-1024x586.png)](./media/ger-power-bi-review-bi-report-in-ax-form.png)
+Finance and Operations と Power BI の統合を設定します。 詳細については、「[ワークスペースの Power BI 統合のコンフィギュレーション](configure-power-bi-integration.md)」を参照してください。 
+
+1. Power BI 統合 ([**組織管理**] &gt; [**ワークスペース**] &gt; [**電子申告ワークスペース**]) をサポートする [**電子申告**] ワークスペース ページで、[**オプション**] &gt; [**レポート カタログを開く**] をクリックします。 
+2. 作成した [**インポートとエクスポートの詳細**] Power BI レポートを選択して、選択されたページでアクション項目としてレポートを表示します。 
+3. アクション項目をクリックして、Power BI でデザインされたレポートを表示する Finance and Operations のページを開きます。 [![インポートとエクスポートの詳細レポート](./media/ger-power-bi-review-bi-report-in-ax-form-1024x586.png)](./media/ger-power-bi-review-bi-report-in-ax-form.png)
 
 <a name="see-also"></a>参照
 --------

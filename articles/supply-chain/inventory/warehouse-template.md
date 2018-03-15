@@ -20,10 +20,10 @@ ms.author: perlynne
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
-ms.openlocfilehash: 87ade03ec2ba78c4d7f5832bfa6dc1b7eabd8d94
+ms.sourcegitcommit: a05fec7b79003d5b98470d85644d70bd1dbac285
+ms.openlocfilehash: 9e0c61505a8af864d7ff38655e7e896c4f6ccb65
 ms.contentlocale: ja-jp
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 02/06/2018
 
 ---
 
@@ -93,6 +93,11 @@ ms.lasthandoff: 12/14/2017
 5. [**インポート**] を選択します。 **拡張** 表示で、**フィルター** オプションを使用して、インポート中に発生する可能性のある問題の概要をすばやく取得します。
 
 **実行表示** ログは、インポートされる各データ エンティティに関する詳細情報を提供します。 ステージング データの表示を使用して、対象データにすばやくアクセスできます。 この方法で、アプリケーションの関連するページで、インポートされたデータがどのようなものかを表示できます。 既定のデータ テンプレートを使用する場合、各データ エンティティのインポート順序が事前定義された方法で動作し、すべての依存データが最初にインポートされることを保証する助けになります。 カスタム データ エンティティがプロジェクトの一部である場合、正しい順序が定義されているのを確認する必要があります。 詳細については、「[コンフィギュレーション データ テンプレート](../../dev-itpro/data-entities/configuration-data-templates.md)」を参照してください。
+
+同じインスタンス内で 1 つの会社から新しい会社に倉庫のコンフィギュレーションをコピーするため、倉庫テンプレートを使用する方法に関する詳細については、YouTube のこの 3 分間ビデオをご覧ください。
+
+> [!Video https://www.youtube.com/embed/K2WIfFlqJYs]
+
 
 ## <a name="related-topic"></a>関連するトピック
 

@@ -16,10 +16,10 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 40bfc3f1f7c5fe1eec788d252cbe7be7d1c7536f
-ms.openlocfilehash: 3bd6eaa0518bd4752704836c04457dccd486d692
+ms.sourcegitcommit: e444168f249e798fa68b9b082556aa8e5e7d8113
+ms.openlocfilehash: 0e1c5120bf8558b955b66e059a8be8bbec2c2ce1
 ms.contentlocale: ja-jp
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 02/13/2018
 
 ---
 
@@ -50,6 +50,9 @@ Microsoft Dynamics 365 for Finance and Operations, Enterprise edition でデー�
 6. ステージング テーブルをクリーンアップします。
 
 このトピックの残りのセクションでは、プロセスの各ステップに関する詳細をさらに提供します。
+
+> [!NOTE]
+> 最新の進行状況を表示するためデータのインポート/エクスポート フォームを更新するには、フォームの更新アイコンを使用します。 バッチで実行されていない任意のインポート/エクスポート ジョブが中断されますので、ブラウザー レベルの更新はお勧めできません。
 
 ## <a name="create-an-import-or-export-job"></a>インポートまたはエクスポート ジョブを作成する
 データ インポート/エクスポート ジョブは、1 回または複数回実行できます。

@@ -3,14 +3,14 @@ title: "オンプレミス配置"
 description: "このトピックでは、オンプレミス配置に関するコンテンツへのリンクと情報を提供します。"
 author: kfend
 manager: AnnBe
-ms.date: 12/11/2017
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core
+ms.search.scope: Core, Operations
 ms.custom: 55651
 ms.assetid: 
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: kfend
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 346f5b7a5fbbe2c41aaa54e0b36fe0c46baec0af
-ms.openlocfilehash: 697f5a43124aace645e0cc8c6df98a4f986ab852
+ms.sourcegitcommit: 797058bdbbdb63a08eb35034ffe3c913307f38df
+ms.openlocfilehash: 12b8a6e8f28501bce76d5a1d58b39e4711b75330
 ms.contentlocale: ja-jp
-ms.lasthandoff: 12/20/2017
+ms.lasthandoff: 03/06/2018
 
 ---
 # <a name="on-premises-deployment-landing-page"></a>オンプレミス配置のランディング ページ
@@ -31,6 +31,7 @@ ms.lasthandoff: 12/20/2017
 Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (オンプレミス型) を配置できます。 オンプレミスの配置タイプを選択すると、システム要件、ハードウェアのサイジング、および機能がクラウド展開と異なります。 このトピックでは、オンプレミス展開に固有の情報を含むコンテンツへのリンクを提供します。
 
 ## <a name="get-started"></a>使用開始
+- [Dynamics 365 for Finance and Operations, Enterprise edition 7.2 およびプラットフォーム更新プログラム 12 (2018 年 3 月) のオンプレミス配置での新機能および変更された機能](../../fin-and-ops/get-started/whats-new-LBD-PU12-App72.md)
 - [Dynamics 365 for Finance and Operations, Enterprise Edition (オンプレミス) の概要](on-premises-overview.md)
 - [オンプレミス配置の計画](plan-onprem-deployment.md)
 - [オンプレミス配置のシステム要件](../../fin-and-ops/get-started/system-requirements-on-prem.md)
@@ -50,6 +51,7 @@ Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (オンプ
 - [ドキュメント管理のコンフィギュレーション](../../fin-and-ops/organization-administration/configure-document-management.md)
 - [電子申告コンフィギュレーションのインポート](../analytics/electronic-reporting-import-ger-configurations.md)
 - [オンプレミス配置でのドキュメントの生成、発行、および印刷機能](../analytics/printing-capabilities-on-premises.md)
+- [オンプレミス環境のリバース プロキシのコンフィギュレーション](onprem-reverseproxy.md)
 - [テクニカル サポートの設定](../lifecycle-services/support-experience.md)
 - [クライアントのインターネット接続のトラブルシューティング](../user-interface/client-disconnected.md)
 - [オンプレミス配置への更新プログラムの適用](apply-updates-on-premises.md)

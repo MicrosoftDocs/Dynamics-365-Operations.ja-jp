@@ -3,7 +3,7 @@ title: "削除予定の機能"
 description: "このトピックでは、削除された、または削除される予定の機能について説明します。"
 author: sericks007
 manager: AnnBe
-ms.date: 11/28/2017
+ms.date: 02/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
-ms.openlocfilehash: addd8c62ba034b47d8abbec29fa8682deb9698b1
+ms.sourcegitcommit: 16bdf2176869e5822ddf8732c829b65f1e60632c
+ms.openlocfilehash: 03b79816ffea649cf226408ed4660c3419103a7a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 02/07/2018
 
 ---
 
@@ -40,6 +40,17 @@ ms.lasthandoff: 12/14/2017
 > Dynamics 365 for Finance and Operations, Enterprise edition 2017 年 7 月リリースおよびプラットフォーム更新プログラム 8 から始まり、削除または削除予定の機能ごとに、展開のタイプが記録されます。 このトピックに記載されているすべての以前のリリースは、クラウド配置のみサポートされています。
 
 ## <a name="dynamics-365-for-finance-and-operations-enterprise-edition-73-with-platform-update-12"></a>Dynamics 365 for Finance and Operations, Enterprise edition 7.3 およびプラットフォーム更新プログラム 12
+
+### <a name="personalized-product-recommendations"></a>パーソナライズされた製品の推奨事項 
+2018 年 2 月 15 日より、小売業者は販売時点管理 (POS) デバイスで、カスタマイズされた製品の推奨事項を表示できなくなります。 詳細については、[カスタマイズされた製品の推奨事項](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/personalized-product-recommendations)を参照してください。  
+
+|   |  |
+|------------|--------------------|
+| **廃止 / 削除の理由** | より良いアルゴリズムとより新しい小売指向の機能を加えたこの機能をデザインするため、製品レコメンデーション サービスの現在のバージョンを削除します。  |
+| **別の機能での置き換え?**   | 一連番号 ただし、2018 年の春以降、新しい推奨サービスを活用するため、この機能を戻す計画があります。   |
+| **影響を受ける製品領域**         | POS のパーソナライズされた製品の推奨事項。                                                    |
+| **配置オプション**              | All                                                                                      |
+| **ステータス**                         |2018 年 2 月 15 日から削除されました。 これは、Dynamics 365 for Operations 1611 以降を使用しているユーザーに影響します。  |
 
 ### <a name="extension-of-the-list-of-electronic-reporting-er-functions"></a>電子申告 (ER) 関数の一覧の拡張子
 ER 式ビルダーで使用されるカスタム機能を導入する可能性は (詳細については、次を参照してください。[電子申告機能の一覧の拡張](../../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md)) もはやサポートされていません。 ER API の変更により、ER の式から組み込み関数を呼び出す API は内部的になり、拡張することはできません。
@@ -132,6 +143,19 @@ PowerBI.com サイトで公開された**原価管理**、**財務パフォー�
 | **配置オプション**                       | すべてのモジュール                                                                    |
 | **ステータス**                                  | 非推奨: この機能の削除日は設定されていません。  |    
 
+
+## <a name="dynamics-365-for-retail-72"></a>Dynamics 365 for Retail 7.2
+
+### <a name="personalized-product-recommendations"></a>パーソナライズされた製品の推奨事項 
+2018 年 2 月 15 日より、小売業者は販売時点管理 (POS) デバイスで、カスタマイズされた製品の推奨事項を表示できなくなります。 詳細については、[カスタマイズされた製品の推奨事項](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/personalized-product-recommendations)を参照してください。  
+
+|   |  |
+|------------|--------------------|
+| **廃止 / 削除の理由** | より良いアルゴリズムとより新しい小売指向の機能を加えたこの機能をデザインするため、製品レコメンデーション サービスの現在のバージョンを削除します。  |
+| **別の機能での置き換え?**   | 一連番号 ただし、2018 年の春以降、新しい推奨サービスを活用するため、この機能を戻す計画があります。   |
+| **影響を受ける製品領域**         | POS のパーソナライズされた製品の推奨事項。                                                    |
+| **配置オプション**              | All                                                                                      |
+| **ステータス**                         |2018 年 2 月 15 日から削除されました。 これは、Dynamics 365 for Retail 7.2 以降を使用しているユーザーに影響します。 |
 
 
 ## <a name="dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-with-platform-update-8"></a>Dynamics 365 for Finance and Operations, Enterprise edition 2017 年 7 月 およびプラットフォーム更新プログラム 8
