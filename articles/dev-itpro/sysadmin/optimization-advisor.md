@@ -3,7 +3,7 @@ title: "最適化アドバイザーのためのルールを作成します"
 description: "このトピックでは、最適化アドバイザーのための新しいルールを追加する方法について説明します。"
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 01/23/2018
+ms.date: 02/04/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: SelfHealingWorkspace
 audience: Application User, IT Pro
 ms.reviewer: yuyus
-ms.search.scope: Core (Operations, Core)
+ms.search.scope: Operations, Core
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
@@ -20,22 +20,22 @@ ms.author: roxanad
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: 9cb9343028acacc387370e1cdd2202b84919185e
-ms.openlocfilehash: 88739298405343a36ae5bc11f51c666c414e7157
+ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
+ms.openlocfilehash: e64d4fc1a7425d38d728b11e503d3e7289312495
 ms.contentlocale: ja-jp
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/07/2018
 
 ---
 
-# <a name="create-rules-for-optimization-advisor"></a><span data-ttu-id="7e23c-103">最適化アドバイザーのためのルールを作成します</span><span class="sxs-lookup"><span data-stu-id="7e23c-103">Create rules for Optimization advisor</span></span>
+# <a name="create-rules-for-optimization-advisor"></a><span data-ttu-id="de77c-103">最適化アドバイザーのためのルールを作成します</span><span class="sxs-lookup"><span data-stu-id="de77c-103">Create rules for Optimization advisor</span></span>
 
 [!include[banner](../includes/banner.md)]
 
-<span data-ttu-id="7e23c-104">このトピックでは、**最適化アドバイザー**のための新しいルールを作成する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="7e23c-104">This topic explains how to create new rules for **Optimization advisor**.</span></span> <span data-ttu-id="7e23c-105">例えば、見積依頼 (RFQ) のケースに空のタイトルがあるかどうかを識別する新しいルールを作成できます。</span><span class="sxs-lookup"><span data-stu-id="7e23c-105">For example, you can create a new rule that identifies which Request for Quotations (RFQ) cases have an empty title.</span></span> <span data-ttu-id="7e23c-106">ケースのタイトルを使用して、識別および検索を容易にします。</span><span class="sxs-lookup"><span data-stu-id="7e23c-106">Using titles on cases makes them easily identifiable and searchable.</span></span> <span data-ttu-id="7e23c-107">非常に単純ですが、この例では最適化ルールで何が達成できるかを示しています。</span><span class="sxs-lookup"><span data-stu-id="7e23c-107">While quite simple, this example shows what can be achieved with optimization rules.</span></span> 
+<span data-ttu-id="de77c-104">このトピックでは、**最適化アドバイザー**のための新しいルールを作成する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="de77c-104">This topic explains how to create new rules for **Optimization advisor**.</span></span> <span data-ttu-id="de77c-105">例えば、見積依頼 (RFQ) のケースに空のタイトルがあるかどうかを識別する新しいルールを作成できます。</span><span class="sxs-lookup"><span data-stu-id="de77c-105">For example, you can create a new rule that identifies which Request for Quotations (RFQ) cases have an empty title.</span></span> <span data-ttu-id="de77c-106">ケースのタイトルを使用して、識別および検索を容易にします。</span><span class="sxs-lookup"><span data-stu-id="de77c-106">Using titles on cases makes them easily identifiable and searchable.</span></span> <span data-ttu-id="de77c-107">非常に単純ですが、この例では最適化ルールで何が達成できるかを示しています。</span><span class="sxs-lookup"><span data-stu-id="de77c-107">While quite simple, this example shows what can be achieved with optimization rules.</span></span> 
 
-<span data-ttu-id="7e23c-108">*ルール*はアプリケーション データのチェックです。</span><span class="sxs-lookup"><span data-stu-id="7e23c-108">A *rule* is a check on application data.</span></span> <span data-ttu-id="7e23c-109">ルールの評価条件が満たされた場合、プロセスを最適化したり、データを改善する案件が作成されます。</span><span class="sxs-lookup"><span data-stu-id="7e23c-109">If the condition that the rule evaluates is met, opportunities to optimize processes or improve data are created.</span></span> <span data-ttu-id="7e23c-110">営業案件を対象にすることができ、必要に応じてアクションの影響を測定することができます。</span><span class="sxs-lookup"><span data-stu-id="7e23c-110">The opportunities can be acted upon and, optionally, the impact of the actions can be measured.</span></span> 
+<span data-ttu-id="de77c-108">*ルール*はアプリケーション データのチェックです。</span><span class="sxs-lookup"><span data-stu-id="de77c-108">A *rule* is a check on application data.</span></span> <span data-ttu-id="de77c-109">ルールの評価条件が満たされた場合、プロセスを最適化したり、データを改善する案件が作成されます。</span><span class="sxs-lookup"><span data-stu-id="de77c-109">If the condition that the rule evaluates is met, opportunities to optimize processes or improve data are created.</span></span> <span data-ttu-id="de77c-110">営業案件を対象にすることができ、必要に応じてアクションの影響を測定することができます。</span><span class="sxs-lookup"><span data-stu-id="de77c-110">The opportunities can be acted upon and, optionally, the impact of the actions can be measured.</span></span> 
 
-<span data-ttu-id="7e23c-111">**最適化アドバイザー**の新しいルールを作成するために、**SelfHealingRule** 抽象クラスを拡張する新しいクラスの追加、**IDiagnosticsRule** インターフェイスの実装、および **DiagnosticRule** 属性によって修飾がされます。</span><span class="sxs-lookup"><span data-stu-id="7e23c-111">To create a new rule for the **Optimization advisor**, add a new class that extends the **SelfHealingRule** abstract class, implements the **IDiagnosticsRule** interface, and is decorated by the **DiagnosticRule** attribute.</span></span> <span data-ttu-id="7e23c-112">クラスは **DiagnosticsRuleSubscription** 属性で修飾されるメソッドも必要です。</span><span class="sxs-lookup"><span data-stu-id="7e23c-112">The class must also have a method decorated with the **DiagnosticsRuleSubscription** attribute.</span></span> <span data-ttu-id="7e23c-113">慣例として、これは **opportunityTitle** メソッドで実行されます。これについては後で説明します。</span><span class="sxs-lookup"><span data-stu-id="7e23c-113">By convention, that is done on the **opportunityTitle** method, which will be discussed later.</span></span> <span data-ttu-id="7e23c-114">この新しいクラスは **SelfHealingRules** に依存関係を持つカスタム モデルに追加することができます。</span><span class="sxs-lookup"><span data-stu-id="7e23c-114">This new class can be added to a custom model with a dependency on the **SelfHealingRules** model.</span></span> <span data-ttu-id="7e23c-115">実装されている **RFQTitleSelfHealingRule** と呼ばれるルールを以下の例に示します。</span><span class="sxs-lookup"><span data-stu-id="7e23c-115">In the following example, the rule being implemented is called **RFQTitleSelfHealingRule**.</span></span>
+<span data-ttu-id="de77c-111">**最適化アドバイザー**の新しいルールを作成するために、**SelfHealingRule** 抽象クラスを拡張する新しいクラスの追加、**IDiagnosticsRule** インターフェイスの実装、および **DiagnosticRule** 属性によって修飾がされます。</span><span class="sxs-lookup"><span data-stu-id="de77c-111">To create a new rule for the **Optimization advisor**, add a new class that extends the **SelfHealingRule** abstract class, implements the **IDiagnosticsRule** interface, and is decorated by the **DiagnosticRule** attribute.</span></span> <span data-ttu-id="de77c-112">クラスは **DiagnosticsRuleSubscription** 属性で修飾されるメソッドも必要です。</span><span class="sxs-lookup"><span data-stu-id="de77c-112">The class must also have a method decorated with the **DiagnosticsRuleSubscription** attribute.</span></span> <span data-ttu-id="de77c-113">慣例として、これは **opportunityTitle** メソッドで実行されます。これについては後で説明します。</span><span class="sxs-lookup"><span data-stu-id="de77c-113">By convention, that is done on the **opportunityTitle** method, which will be discussed later.</span></span> <span data-ttu-id="de77c-114">この新しいクラスは **SelfHealingRules** に依存関係を持つカスタム モデルに追加することができます。</span><span class="sxs-lookup"><span data-stu-id="de77c-114">This new class can be added to a custom model with a dependency on the **SelfHealingRules** model.</span></span> <span data-ttu-id="de77c-115">実装されている **RFQTitleSelfHealingRule** と呼ばれるルールを以下の例に示します。</span><span class="sxs-lookup"><span data-stu-id="de77c-115">In the following example, the rule being implemented is called **RFQTitleSelfHealingRule**.</span></span>
 
 ```
 [DiagnosticsRule] 
@@ -45,7 +45,7 @@ public final class RFQTitleSelfHealingRule extends SelfHealingRule implements ID
 } 
 ```
 
-<span data-ttu-id="7e23c-116">**SelfHealingRule** 抽象クラスは、派生クラスで実装される必要がある抽象メソッドを持っています。</span><span class="sxs-lookup"><span data-stu-id="7e23c-116">The **SelfHealingRule** abstract class has abstract methods that must be implemented in inheriting classes.</span></span> <span data-ttu-id="7e23c-117">コアは**評価**方法です。ルールによって識別される案件の一覧を返します。</span><span class="sxs-lookup"><span data-stu-id="7e23c-117">The core is the **evaluate** method, which returns a list of the opportunities identified by the rule.</span></span> <span data-ttu-id="7e23c-118">営業案件は法人ごと、またはシステム全体に適用できます。</span><span class="sxs-lookup"><span data-stu-id="7e23c-118">Opportunities can be per legal entity or can apply to the whole system.</span></span>
+<span data-ttu-id="de77c-116">**SelfHealingRule** 抽象クラスは、派生クラスで実装される必要がある抽象メソッドを持っています。</span><span class="sxs-lookup"><span data-stu-id="de77c-116">The **SelfHealingRule** abstract class has abstract methods that must be implemented in inheriting classes.</span></span> <span data-ttu-id="de77c-117">コアは**評価**方法です。ルールによって識別される案件の一覧を返します。</span><span class="sxs-lookup"><span data-stu-id="de77c-117">The core is the **evaluate** method, which returns a list of the opportunities identified by the rule.</span></span> <span data-ttu-id="de77c-118">営業案件は法人ごと、またはシステム全体に適用できます。</span><span class="sxs-lookup"><span data-stu-id="de77c-118">Opportunities can be per legal entity or can apply to the whole system.</span></span>
 
 ```
 protected List evaluate() 
@@ -77,11 +77,11 @@ protected List evaluate()
 } 
 ```
 
-<span data-ttu-id="7e23c-119">上記のメソッドは会社にループ、および **findRFQCasesWithEmptyTitle** メソッドで空のタイトルの RFQ ケースを選択します。</span><span class="sxs-lookup"><span data-stu-id="7e23c-119">The method shown above loops over companies and selects RFQ cases with empty titles in the **findRFQCasesWithEmptyTitle** method.</span></span> <span data-ttu-id="7e23c-120">このようなケースが 1 つでも見つかった場合、**getOpportunityForCompany** メソッドで会社固有の営業案件が作成されます。</span><span class="sxs-lookup"><span data-stu-id="7e23c-120">If at least one such case is found, then a company-specific opportunity is created with the **getOpportunityForCompany** method.</span></span> <span data-ttu-id="7e23c-121">[**SelfHealingOpportunity**] テーブルの [**データ**] フィールドはタイプ **コンテナー**です。そのため、このルールに固有のロジックに適切なデータを含めることができます。</span><span class="sxs-lookup"><span data-stu-id="7e23c-121">Notice that the field **Data** in the **SelfHealingOpportunity** table is of type **Container**, and can therefore contain any data relevant to the logic specific to this rule.</span></span> <span data-ttu-id="7e23c-122">現在のタイムスタンプを持つ **OpportunityDate** 設定は営業案件の最新の評価の時間を登録します。</span><span class="sxs-lookup"><span data-stu-id="7e23c-122">Setting **OpportunityDate** with the current timestamp registers the time of the latest evaluation of the opportunity.</span></span>  
+<span data-ttu-id="de77c-119">上記のメソッドは会社にループ、および **findRFQCasesWithEmptyTitle** メソッドで空のタイトルの RFQ ケースを選択します。</span><span class="sxs-lookup"><span data-stu-id="de77c-119">The method shown above loops over companies and selects RFQ cases with empty titles in the **findRFQCasesWithEmptyTitle** method.</span></span> <span data-ttu-id="de77c-120">このようなケースが 1 つでも見つかった場合、**getOpportunityForCompany** メソッドで会社固有の営業案件が作成されます。</span><span class="sxs-lookup"><span data-stu-id="de77c-120">If at least one such case is found, then a company-specific opportunity is created with the **getOpportunityForCompany** method.</span></span> <span data-ttu-id="de77c-121">[**SelfHealingOpportunity**] テーブルの [**データ**] フィールドはタイプ **コンテナー**です。そのため、このルールに固有のロジックに適切なデータを含めることができます。</span><span class="sxs-lookup"><span data-stu-id="de77c-121">Notice that the field **Data** in the **SelfHealingOpportunity** table is of type **Container**, and can therefore contain any data relevant to the logic specific to this rule.</span></span> <span data-ttu-id="de77c-122">現在のタイムスタンプを持つ **OpportunityDate** 設定は営業案件の最新の評価の時間を登録します。</span><span class="sxs-lookup"><span data-stu-id="de77c-122">Setting **OpportunityDate** with the current timestamp registers the time of the latest evaluation of the opportunity.</span></span>  
 
-<span data-ttu-id="7e23c-123">営業案件は会社間でも可能です。</span><span class="sxs-lookup"><span data-stu-id="7e23c-123">Opportunities can also be cross-company.</span></span> <span data-ttu-id="7e23c-124">この場合、会社にループすることは必要ではなく、営業案件は **getOpportunityAcrossCompanies** メソッドで作成される必要があります。</span><span class="sxs-lookup"><span data-stu-id="7e23c-124">In this case, the loop over companies is not necessary and the opportunity must be created with the **getOpportunityAcrossCompanies** method.</span></span> 
+<span data-ttu-id="de77c-123">営業案件は会社間でも可能です。</span><span class="sxs-lookup"><span data-stu-id="de77c-123">Opportunities can also be cross-company.</span></span> <span data-ttu-id="de77c-124">この場合、会社にループすることは必要ではなく、営業案件は **getOpportunityAcrossCompanies** メソッドで作成される必要があります。</span><span class="sxs-lookup"><span data-stu-id="de77c-124">In this case, the loop over companies is not necessary and the opportunity must be created with the **getOpportunityAcrossCompanies** method.</span></span> 
 
-<span data-ttu-id="7e23c-125">次のコードは **findRFQCasesWithEmptyTitle** メソッドを示しており、空のタイトルがある RFQ ケースの ID を返します。</span><span class="sxs-lookup"><span data-stu-id="7e23c-125">The following code shows the **findRFQCasesWithEmptyTitle** method, which returns the IDs of the RFQ cases that have empty titles.</span></span>
+<span data-ttu-id="de77c-125">次のコードは **findRFQCasesWithEmptyTitle** メソッドを示しており、空のタイトルがある RFQ ケースの ID を返します。</span><span class="sxs-lookup"><span data-stu-id="de77c-125">The following code shows the **findRFQCasesWithEmptyTitle** method, which returns the IDs of the RFQ cases that have empty titles.</span></span>
 
 ```
 private container findRFQCasesWithEmptyTitle() 
@@ -99,22 +99,22 @@ private container findRFQCasesWithEmptyTitle()
 } 
 ```
 
-<span data-ttu-id="7e23c-126">実装される必要のあるさらに 2 つのメソッドは、**opportunityTitle** および **opportunityDetails** です。</span><span class="sxs-lookup"><span data-stu-id="7e23c-126">Two more methods that must be implemented are **opportunityTitle** and **opportunityDetails**.</span></span> <span data-ttu-id="7e23c-127">前者は営業案件の簡単なタイトルを返し、後者は営業案件の詳細な説明を返します。これはデータを含めることもできます。</span><span class="sxs-lookup"><span data-stu-id="7e23c-127">The former returns a short title for the opportunity, the latter returns a detailed description of the opportunity, which can also include data.</span></span>
+<span data-ttu-id="de77c-126">実装される必要のあるさらに 2 つのメソッドは、**opportunityTitle** および **opportunityDetails** です。</span><span class="sxs-lookup"><span data-stu-id="de77c-126">Two more methods that must be implemented are **opportunityTitle** and **opportunityDetails**.</span></span> <span data-ttu-id="de77c-127">前者は営業案件の簡単なタイトルを返し、後者は営業案件の詳細な説明を返します。これはデータを含めることもできます。</span><span class="sxs-lookup"><span data-stu-id="de77c-127">The former returns a short title for the opportunity, the latter returns a detailed description of the opportunity, which can also include data.</span></span>
 
-<span data-ttu-id="7e23c-128">**opportunityTitle** によって返されるタイトルは、[**Optimization advisor**] ワークスペースの [**Optimization opportunity**] 列の下に表示されます。</span><span class="sxs-lookup"><span data-stu-id="7e23c-128">The title returned by **opportunityTitle** appears under the **Optimization opportunity** column in the **Optimization advisor** workspace.</span></span> <span data-ttu-id="7e23c-129">作業ウィンドウのヘッダーとして、営業案件についての詳細情報が表示されます。</span><span class="sxs-lookup"><span data-stu-id="7e23c-129">It also appears as the header of the side pane showing more information about the opportunity.</span></span> <span data-ttu-id="7e23c-130">慣例として、**DiagnosticRuleSubscription** 属性でこのメソッドは修飾されます。このメソッドは次の引数を使用します。</span><span class="sxs-lookup"><span data-stu-id="7e23c-130">By convention, this method is decorated with the **DiagnosticRuleSubscription** attribute, which takes the following arguments:</span></span> 
+<span data-ttu-id="de77c-128">**opportunityTitle** によって返されるタイトルは、[**Optimization advisor**] ワークスペースの [**Optimization opportunity**] 列の下に表示されます。</span><span class="sxs-lookup"><span data-stu-id="de77c-128">The title returned by **opportunityTitle** appears under the **Optimization opportunity** column in the **Optimization advisor** workspace.</span></span> <span data-ttu-id="de77c-129">作業ウィンドウのヘッダーとして、営業案件についての詳細情報が表示されます。</span><span class="sxs-lookup"><span data-stu-id="de77c-129">It also appears as the header of the side pane showing more information about the opportunity.</span></span> <span data-ttu-id="de77c-130">慣例として、**DiagnosticRuleSubscription** 属性でこのメソッドは修飾されます。このメソッドは次の引数を使用します。</span><span class="sxs-lookup"><span data-stu-id="de77c-130">By convention, this method is decorated with the **DiagnosticRuleSubscription** attribute, which takes the following arguments:</span></span> 
 
-* <span data-ttu-id="7e23c-131">**診断エリア** – **DiagnosticArea::SCM** のような、ルールが属するアプリケーションのどの領域かを説明する **DiagnosticArea** タイプの列挙型。</span><span class="sxs-lookup"><span data-stu-id="7e23c-131">**Diagnostic area** – An enum of type **DiagnosticArea** that describes what area of the application the rule belongs to, such as **DiagnosticArea::SCM**.</span></span> 
+* <span data-ttu-id="de77c-131">**診断エリア** – **DiagnosticArea::SCM** のような、ルールが属するアプリケーションのどの領域かを説明する **DiagnosticArea** タイプの列挙型。</span><span class="sxs-lookup"><span data-stu-id="de77c-131">**Diagnostic area** – An enum of type **DiagnosticArea** that describes what area of the application the rule belongs to, such as **DiagnosticArea::SCM**.</span></span> 
 
-* <span data-ttu-id="7e23c-132">**ルール名** – ルール名の文字列。</span><span class="sxs-lookup"><span data-stu-id="7e23c-132">**Rule name** – A string with the rule name.</span></span> <span data-ttu-id="7e23c-133">これは、[**診断検証ルール**] フォーム (**DiagnosticsValidationRuleMaintain**) 内の [**ルール名**] コラムの下に表示されます。</span><span class="sxs-lookup"><span data-stu-id="7e23c-133">This will appear under the **Rule name** column in the **Dianostics validation rule** form (**DiagnosticsValidationRuleMaintain**).</span></span> 
+* <span data-ttu-id="de77c-132">**ルール名** – ルール名の文字列。</span><span class="sxs-lookup"><span data-stu-id="de77c-132">**Rule name** – A string with the rule name.</span></span> <span data-ttu-id="de77c-133">これは、[**診断検証ルール**] フォーム (**DiagnosticsValidationRuleMaintain**) 内の [**ルール名**] コラムの下に表示されます。</span><span class="sxs-lookup"><span data-stu-id="de77c-133">This will appear under the **Rule name** column in the **Dianostics validation rule** form (**DiagnosticsValidationRuleMaintain**).</span></span> 
 
-* <span data-ttu-id="7e23c-134">**実行頻度** – **DiagnosticRunFrequency::Daily** のような、どのくらいの頻度でルールが実行されるかを説明する **DiagnosticRunFrequency** タイプの列挙型。</span><span class="sxs-lookup"><span data-stu-id="7e23c-134">**Run frequency** – An enum of type **DiagnosticRunFrequency** that describes how often the rule should be run, such as **DiagnosticRunFrequency::Daily**.</span></span> 
+* <span data-ttu-id="de77c-134">**実行頻度** – **DiagnosticRunFrequency::Daily** のような、どのくらいの頻度でルールが実行されるかを説明する **DiagnosticRunFrequency** タイプの列挙型。</span><span class="sxs-lookup"><span data-stu-id="de77c-134">**Run frequency** – An enum of type **DiagnosticRunFrequency** that describes how often the rule should be run, such as **DiagnosticRunFrequency::Daily**.</span></span> 
 
-* <span data-ttu-id="7e23c-135">**ルールの説明** – ルールの詳細な説明の文字列。</span><span class="sxs-lookup"><span data-stu-id="7e23c-135">**Rule description** – A string with a more detailed description of the rule.</span></span> <span data-ttu-id="7e23c-136">これは、[**診断検証ルール**] フォーム (**DiagnosticsValidationRuleMaintain**) 内の [**ルールの説明**] コラムの下に表示されます。</span><span class="sxs-lookup"><span data-stu-id="7e23c-136">This will appear under the **Rule description** column in the **Dianostics validation rule** form (**DiagnosticsValidationRuleMaintain**).</span></span> 
+* <span data-ttu-id="de77c-135">**ルールの説明** – ルールの詳細な説明の文字列。</span><span class="sxs-lookup"><span data-stu-id="de77c-135">**Rule description** – A string with a more detailed description of the rule.</span></span> <span data-ttu-id="de77c-136">これは、[**診断検証ルール**] フォーム (**DiagnosticsValidationRuleMaintain**) 内の [**ルールの説明**] コラムの下に表示されます。</span><span class="sxs-lookup"><span data-stu-id="de77c-136">This will appear under the **Rule description** column in the **Dianostics validation rule** form (**DiagnosticsValidationRuleMaintain**).</span></span> 
 
 > [!NOTE]
-> <span data-ttu-id="7e23c-137">**DiagnosticRuleSubscription** 属性はルールが機能するために必要です。</span><span class="sxs-lookup"><span data-stu-id="7e23c-137">The **DiagnosticRuleSubscription** attribute is required for the rule to work.</span></span> <span data-ttu-id="7e23c-138">通常、**opportunityTitle** で使用されますが、クラスの任意のメソッドで修飾できます。</span><span class="sxs-lookup"><span data-stu-id="7e23c-138">Typically, it is used on **opportunityTitle**, but it can decorate any method of the class.</span></span>
+> <span data-ttu-id="de77c-137">**DiagnosticRuleSubscription** 属性はルールが機能するために必要です。</span><span class="sxs-lookup"><span data-stu-id="de77c-137">The **DiagnosticRuleSubscription** attribute is required for the rule to work.</span></span> <span data-ttu-id="de77c-138">通常、**opportunityTitle** で使用されますが、クラスの任意のメソッドで修飾できます。</span><span class="sxs-lookup"><span data-stu-id="de77c-138">Typically, it is used on **opportunityTitle**, but it can decorate any method of the class.</span></span>
 
-<span data-ttu-id="7e23c-139">実装例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="7e23c-139">The following is an example implementation.</span></span> <span data-ttu-id="7e23c-140">未加工の文字列は単純化のために使用されていますが、正しい実装にはラベルが必要です。</span><span class="sxs-lookup"><span data-stu-id="7e23c-140">Raw strings are used for simplicity, but a correct implementation requires labels.</span></span> 
+<span data-ttu-id="de77c-139">実装例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="de77c-139">The following is an example implementation.</span></span> <span data-ttu-id="de77c-140">未加工の文字列は単純化のために使用されていますが、正しい実装にはラベルが必要です。</span><span class="sxs-lookup"><span data-stu-id="de77c-140">Raw strings are used for simplicity, but a correct implementation requires labels.</span></span> 
 
 ```
 [DiagnosticsRuleSubscription(DiagnosticsArea::SCM, 
@@ -127,7 +127,7 @@ public str opportunityTitle()
 } 
 ```
 
-<span data-ttu-id="7e23c-141">**opportunityDetails** によって返された説明が作業ウィンドウに表示され、営業案件に関する詳細を示します。</span><span class="sxs-lookup"><span data-stu-id="7e23c-141">The description returned by **opportunityDetails** appears on the side pane showing more information about the opportunity.</span></span> <span data-ttu-id="7e23c-142">これは **SelfHealingOpportunity** 引数を取ります。これは営業案件についての詳細を提供するために使用される [**データ**] フィールドです。</span><span class="sxs-lookup"><span data-stu-id="7e23c-142">This takes the **SelfHealingOpportunity** argument, which is **Data** field that can be used to provide more details about the opportunity.</span></span> <span data-ttu-id="7e23c-143">例では、メソッドは空のタイトルを持つ RFQ ケースの ID を返します。</span><span class="sxs-lookup"><span data-stu-id="7e23c-143">In the example, the method returns the IDs of the RFQ cases with an empty title.</span></span> 
+<span data-ttu-id="de77c-141">**opportunityDetails** によって返された説明が作業ウィンドウに表示され、営業案件に関する詳細を示します。</span><span class="sxs-lookup"><span data-stu-id="de77c-141">The description returned by **opportunityDetails** appears on the side pane showing more information about the opportunity.</span></span> <span data-ttu-id="de77c-142">これは **SelfHealingOpportunity** 引数を取ります。これは営業案件についての詳細を提供するために使用される [**データ**] フィールドです。</span><span class="sxs-lookup"><span data-stu-id="de77c-142">This takes the **SelfHealingOpportunity** argument, which is **Data** field that can be used to provide more details about the opportunity.</span></span> <span data-ttu-id="de77c-143">例では、メソッドは空のタイトルを持つ RFQ ケースの ID を返します。</span><span class="sxs-lookup"><span data-stu-id="de77c-143">In the example, the method returns the IDs of the RFQ cases with an empty title.</span></span> 
 
 ```
 public str opportunityDetails(SelfHealingOpportunity _opportunity) 
@@ -150,9 +150,9 @@ public str opportunityDetails(SelfHealingOpportunity _opportunity)
 }
 ```
 
-<span data-ttu-id="7e23c-144">実装する残りの 2 つの抽象メソッドは **provideHealingAction** および **securityMenuItem** です。</span><span class="sxs-lookup"><span data-stu-id="7e23c-144">The two remaining abstract methods to implement are **provideHealingAction** and **securityMenuItem**.</span></span> 
+<span data-ttu-id="de77c-144">実装する残りの 2 つの抽象メソッドは **provideHealingAction** および **securityMenuItem** です。</span><span class="sxs-lookup"><span data-stu-id="de77c-144">The two remaining abstract methods to implement are **provideHealingAction** and **securityMenuItem**.</span></span> 
 
-<span data-ttu-id="7e23c-145">**provideHealingAction** は修復アクションを指定すると true を返します。それ以外の場合は false を返します。</span><span class="sxs-lookup"><span data-stu-id="7e23c-145">**provideHealingAction** returns true if a healing action is provided, otherwise, it returns false.</span></span> <span data-ttu-id="7e23c-146">true が返された場合、**performAction** メソッドを実装する必要があるか、またはエラーがスローされます。</span><span class="sxs-lookup"><span data-stu-id="7e23c-146">If true is returned, the method **performAction** must be implemented, or an error will be thrown.</span></span> <span data-ttu-id="7e23c-147">**performAction** メソッドは **SelfHealingOpportunity** 引数を取ります。この引数では、データをアクションに使用できます。</span><span class="sxs-lookup"><span data-stu-id="7e23c-147">The **performAction** method takes a **SelfHealingOpportunity** argument, in which the data can be used for the action.</span></span> <span data-ttu-id="7e23c-148">例では、手動で修正するために、アクションが **PurchRFQCaseTableListPage** を開きます。</span><span class="sxs-lookup"><span data-stu-id="7e23c-148">In the example, the action opens the **PurchRFQCaseTableListPage**, for manual correction.</span></span> 
+<span data-ttu-id="de77c-145">**provideHealingAction** は修復アクションを指定すると true を返します。それ以外の場合は false を返します。</span><span class="sxs-lookup"><span data-stu-id="de77c-145">**provideHealingAction** returns true if a healing action is provided, otherwise, it returns false.</span></span> <span data-ttu-id="de77c-146">true が返された場合、**performAction** メソッドを実装する必要があるか、またはエラーがスローされます。</span><span class="sxs-lookup"><span data-stu-id="de77c-146">If true is returned, the method **performAction** must be implemented, or an error will be thrown.</span></span> <span data-ttu-id="de77c-147">**performAction** メソッドは **SelfHealingOpportunity** 引数を取ります。この引数では、データをアクションに使用できます。</span><span class="sxs-lookup"><span data-stu-id="de77c-147">The **performAction** method takes a **SelfHealingOpportunity** argument, in which the data can be used for the action.</span></span> <span data-ttu-id="de77c-148">例では、手動で修正するために、アクションが **PurchRFQCaseTableListPage** を開きます。</span><span class="sxs-lookup"><span data-stu-id="de77c-148">In the example, the action opens the **PurchRFQCaseTableListPage**, for manual correction.</span></span> 
 
 ```
 public boolean providesHealingAction() 
@@ -166,9 +166,12 @@ protected void performAction(SelfHealingOpportunity _opportunity)
 } 
 ```
 
-<span data-ttu-id="7e23c-149">ルールの詳細によっては、営業案件データを使用して自動アクションを行うことが可能な場合もあります。</span><span class="sxs-lookup"><span data-stu-id="7e23c-149">Depending on the specifics of the rule, it might be possible to take an automatic action using the opportunity data.</span></span> <span data-ttu-id="7e23c-150">この例では、システムが RFQ ケースのタイトルを自動的に生成します。</span><span class="sxs-lookup"><span data-stu-id="7e23c-150">In this example, the system could generate titles for RFQ cases automatically.</span></span> 
+<span data-ttu-id="de77c-149">ルールの詳細によっては、営業案件データを使用して自動アクションを行うことが可能な場合もあります。</span><span class="sxs-lookup"><span data-stu-id="de77c-149">Depending on the specifics of the rule, it might be possible to take an automatic action using the opportunity data.</span></span> <span data-ttu-id="de77c-150">この例では、システムが RFQ ケースのタイトルを自動的に生成します。</span><span class="sxs-lookup"><span data-stu-id="de77c-150">In this example, the system could generate titles for RFQ cases automatically.</span></span> 
 
-<span data-ttu-id="7e23c-151">**securityMenuItem** は、アクション メニュー項目にアクセスできるユーザーのみがルールを表示できるように、アクション メニュー項目の名前を返します。</span><span class="sxs-lookup"><span data-stu-id="7e23c-151">**securityMenuItem** returns the name of an action menu item such that the rule is only visible to users who can access the action menu item.</span></span> <span data-ttu-id="7e23c-152">セキュリティは、特定のルールや営業案件に許可されたユーザーのみがアクセスできることを求める場合があります。</span><span class="sxs-lookup"><span data-stu-id="7e23c-152">Security might require that specific rules and opportunities are accessible only to authorized users.</span></span> <span data-ttu-id="7e23c-153">この例では、**PurchRFQCaseTitleAction** へのアクセス権を持つユーザーのみが営業案件を見ることができます。</span><span class="sxs-lookup"><span data-stu-id="7e23c-153">In the example, only users with access to **PurchRFQCaseTitleAction** can view the opportunity.</span></span> <span data-ttu-id="7e23c-154">このアクション メニュー項目は、この例で作成され、**PurchRFQCaseTableMaintain** セキュリティ権限のエントリ ポイントとして追加されたことに注目してください。</span><span class="sxs-lookup"><span data-stu-id="7e23c-154">Notice that this action menu item was created for this example, and was added as an entry point for the **PurchRFQCaseTableMaintain** security privilege.</span></span> 
+<span data-ttu-id="de77c-151">**securityMenuItem** は、アクション メニュー項目にアクセスできるユーザーのみがルールを表示できるように、アクション メニュー項目の名前を返します。</span><span class="sxs-lookup"><span data-stu-id="de77c-151">**securityMenuItem** returns the name of an action menu item such that the rule is only visible to users who can access the action menu item.</span></span> <span data-ttu-id="de77c-152">セキュリティは、特定のルールや営業案件に許可されたユーザーのみがアクセスできることを求める場合があります。</span><span class="sxs-lookup"><span data-stu-id="de77c-152">Security might require that specific rules and opportunities are accessible only to authorized users.</span></span> <span data-ttu-id="de77c-153">この例では、**PurchRFQCaseTitleAction** へのアクセス権を持つユーザーのみが営業案件を見ることができます。</span><span class="sxs-lookup"><span data-stu-id="de77c-153">In the example, only users with access to **PurchRFQCaseTitleAction** can view the opportunity.</span></span> <span data-ttu-id="de77c-154">このアクション メニュー項目は、この例で作成され、**PurchRFQCaseTableMaintain** セキュリティ権限のエントリ ポイントとして追加されたことに注目してください。</span><span class="sxs-lookup"><span data-stu-id="de77c-154">Notice that this action menu item was created for this example, and was added as an entry point for the **PurchRFQCaseTableMaintain** security privilege.</span></span> 
+
+> [!NOTE]
+> <span data-ttu-id="de77c-155">メニュー項目は、セキュリティが正常に機能するためのアクション メニュー項目である必要があります。</span><span class="sxs-lookup"><span data-stu-id="de77c-155">The menu item must be an action menu item for security to work correctly.</span></span> <span data-ttu-id="de77c-156">**メニュー項目の表示** などのその他のメニュー項目タイプは、正しく動作しません。</span><span class="sxs-lookup"><span data-stu-id="de77c-156">Other menu item types, such as **Display menu items** will not work correctly.</span></span>
 
 ```
 public MenuName securityMenuItem() 
@@ -177,7 +180,7 @@ public MenuName securityMenuItem()
 }
 ```
 
-<span data-ttu-id="7e23c-155">ルールがコンパイルされたら、次のジョブを実行してユーザー インターフェイス (UI) に表示させます。</span><span class="sxs-lookup"><span data-stu-id="7e23c-155">After the rule has compiled, execute the following job to have it display in the user interface (UI).</span></span>
+<span data-ttu-id="de77c-157">ルールがコンパイルされたら、次のジョブを実行してユーザー インターフェイス (UI) に表示させます。</span><span class="sxs-lookup"><span data-stu-id="de77c-157">After the rule has compiled, execute the following job to have it display in the user interface (UI).</span></span>
 
 ```
 class ScanNewRulesJob 
@@ -191,9 +194,68 @@ class ScanNewRulesJob
 } 
 ```
 
-<span data-ttu-id="7e23c-156">ルールは [**診断検証ルール**] フォームで表示され、[**システム管理**] > [**定期処理のタスク**] > [**診断検証ルールの管理**] からも使用できます。</span><span class="sxs-lookup"><span data-stu-id="7e23c-156">The rule will display in the **Diagnostics validation rule** form, available from **System administration** > **Periodic tasks** > **Maintain diagnostics validation rule**.</span></span> <span data-ttu-id="7e23c-157">それを評価するために、[**システム管理**] > [**定期処理のタスク**] > [**診断検証ルールのスケジュール**] に移動し、[**毎日**] のようなルールの頻度を選択します。</span><span class="sxs-lookup"><span data-stu-id="7e23c-157">To have it evaluated, go to **System administration** > **Periodic tasks** > **Schedule diagnostics validation rule**, select the frequency of the rule, such as **Daily**.</span></span> <span data-ttu-id="7e23c-158">[**OK**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7e23c-158">Click **OK**.</span></span> <span data-ttu-id="7e23c-159">[**システム管理**] > [**最適化アドバイザー**] に移動し、営業案件を表示します。</span><span class="sxs-lookup"><span data-stu-id="7e23c-159">Go to **System administration** > **Optimization advisor** to view the new opportunity.</span></span> 
+<span data-ttu-id="de77c-158">ルールは [**診断検証ルール**] フォームで表示され、[**システム管理**] > [**定期処理のタスク**] > [**診断検証ルールの管理**] からも使用できます。</span><span class="sxs-lookup"><span data-stu-id="de77c-158">The rule will display in the **Diagnostics validation rule** form, available from **System administration** > **Periodic tasks** > **Maintain diagnostics validation rule**.</span></span> <span data-ttu-id="de77c-159">それを評価するために、[**システム管理**] > [**定期処理のタスク**] > [**診断検証ルールのスケジュール**] に移動し、[**毎日**] のようなルールの頻度を選択します。</span><span class="sxs-lookup"><span data-stu-id="de77c-159">To have it evaluated, go to **System administration** > **Periodic tasks** > **Schedule diagnostics validation rule**, select the frequency of the rule, such as **Daily**.</span></span> <span data-ttu-id="de77c-160">[**OK**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="de77c-160">Click **OK**.</span></span> <span data-ttu-id="de77c-161">[**システム管理**] > [**最適化アドバイザー**] に移動し、営業案件を表示します。</span><span class="sxs-lookup"><span data-stu-id="de77c-161">Go to **System administration** > **Optimization advisor** to view the new opportunity.</span></span> 
 
-<span data-ttu-id="7e23c-160">その他の情報については、短い YouTube ビデオを確認してください。</span><span class="sxs-lookup"><span data-stu-id="7e23c-160">For more information, watch the short YouTube video:</span></span>
+<span data-ttu-id="de77c-162">次の例は、すべての必要なメソッドと属性を含むルールのスケルトンを持つコード スニペットです。</span><span class="sxs-lookup"><span data-stu-id="de77c-162">The following example is a code snippet with the skeleton of a rule including all the required methods and attributes.</span></span> <span data-ttu-id="de77c-163">これにより、新しいルールの作成を開始することができます。</span><span class="sxs-lookup"><span data-stu-id="de77c-163">It helps you get started with writing new rules.</span></span> <span data-ttu-id="de77c-164">この例で使用するラベルおよびアクション メニュー項目は、デモ目的でのみ使用されます。</span><span class="sxs-lookup"><span data-stu-id="de77c-164">The labels and action menu items that are used in the example are only used for demonstration purpose.</span></span>
+
+```
+[DiagnosticsRuleAttribute]
+public final class SkeletonSelfHealingRule extends SelfHealingRule implements IDiagnosticsRule
+{
+    [DiagnosticsRuleSubscription(DiagnosticsArea::SCM,
+                                 "@SkeletonRuleLabels:SkeletonRuleTitle", // Label with the title of the rule
+                                 DiagnosticsRunFrequency::Monthly,
+                                 "@SkeletonRuleLabels:SkeletonRuleDescription")] // Label with a description of the rule
+    public str opportunityTitle()
+    {
+        // Return a label with the title of the opportunity
+        return "@SkeletonRuleLabels:SkeletonOpportunityTitle";
+    }
+
+    public str opportunityDetails(SelfHealingOpportunity _opportunity)
+    {
+        str details = "";
+
+        // Use _opportunity.data to provide details on the opportunity
+
+        return details;
+    }
+
+    protected List evaluate()
+    {
+        List results = new List(Types::Record);
+
+        // Write here the core logic of the rule
+
+        // When creating an opportunity, use:
+        //     * this.getOpportunityForCompany() for company specific opportunities
+        //     * this.getOpportunityAcrossCompanies() for cross-company opportunities
+
+        return results;
+    }
+
+    public boolean providesHealingAction()
+    {
+        return true;
+    }
+
+    protected void performAction(SelfHealingOpportunity _opportunity)
+    {
+        // Place here the code that performs the healing action
+
+        // To open a form, use the following:
+        // new MenuFunction(menuItemDisplayStr(SkeletonRuleDisplayMenuItem), MenuItemType::Display).run();
+    }
+
+    public MenuName securityMenuItem()
+    {
+        return menuItemActionStr(SkeletonRuleActionMenuItem);
+    }
+
+}
+```
+
+<span data-ttu-id="de77c-165">その他の情報については、短い YouTube ビデオを確認してください。</span><span class="sxs-lookup"><span data-stu-id="de77c-165">For more information, watch the short YouTube video:</span></span>
 
 > [!Video https://www.youtube.com/embed/MRsAzgFCUSQ]
 
