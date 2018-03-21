@@ -37,10 +37,11 @@
 ## [支払オプション](work-with-payments.md)
 
 # チャネルの設定と管理
-## [小売環境でのシード データの初期化](enable-configure-retail-functionality.md)
+## [Retail 環境でのシード データの初期化](enable-configure-retail-functionality.md)
 ## [小売チャネルの定義](define-maintain-retail-channels.md)
+## [品揃え管理](assortments.md)
 ## [オンライン ストアの概要](online-stores.md)
-## [Retail ハードウェア ステーションのコンフィギュレーションとインストール](retail-hardware-station-configuration-installation.md)
+## [Retail hardware station のコンフィギュレーションとインストール](retail-hardware-station-configuration-installation.md)
 ## [Retail の勤務時間および勤怠](retail-time-attendance.md)
 
 # Modern POS (MPOS) および Cloud POS
@@ -55,7 +56,8 @@
 ## 画面レイアウト
 ### [POS の画面レイアウトのコンフィギュレーション](pos-screen-layouts.md)
 ### [Retail POS のレイアウト デザイナーのインストール](install-pos-layout-designer.md)
-### [POSアプリケーションとユーザー言語設定](pos-application-user-language-settings.md)
+### [通知設定の選択](Notifications-POS.md)
+### [POS アプリケーションとユーザー言語設定](pos-application-user-language-settings.md)
 ### [MPOS のイメージの設定](set-up-manage-images-retail-mpos.md)
 ## [情報コードの概要](info-codes-retail.md) 
 ## 製品推奨事項
@@ -100,6 +102,7 @@
 # 製品と販売促進
 ## [製品情報の概要](../supply-chain/pim/product-information.md)
 ## [小売階層](retail-hierarchies.md)
+## [属性および属性グループの概要](attribute-attributegroups-lifecycle.md)
 ## [属性の作成と管理](create-manage-attributes.md)
 ## [小売製品の設定](set-up-retail-products.md)
 ## [製品分析コード](../supply-chain/pim/product-dimensions.md)
@@ -129,7 +132,17 @@
 
 # 人事管理
 ## [部門、職務、職位を使用した従業員の編成](../talent/departments-jobs-positions.md)
-## [ジョブのコンポーネントの設定](../talent/create-job.md)
+## [職務のコンポーネントの設定](../talent/create-job.md)
+
+# ローカライズと規制の機能
+## インド
+### [インドのキャッシュ レジスターの販売税統合](localizations/apac-ind-cash-registers.md)
+### [インドのキャッシュ レジスターの配置ガイドライン](localizations/apac-ind-loc-deployment-guidelines.md)
+## ノルウェー
+### [ノルウェーのキャッシュ レジスター](localizations/emea-nor-cash-registers.md)
+### [ノルウェーのキャッシュ レジスターの配置ガイドライン](localizations/emea-nor-loc-deployment-guidelines.md)
+## スウェーデン
+### [スウェーデンのキャッシュ レジスター](localizations/emea-swe-cash-registers.md)
 
 # Retail タスク
 ## [製品の作成](../supply-chain/pim/tasks/create-product.md)
@@ -249,10 +262,6 @@
 ## [Retail SDK](dev-itpro/retail-sdk/retail-sdk-overview.md)
 ### [Retail SDK を継続的ビルド システムと統合](dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md)
 ### [Retail SDK の拡張機能サンプル](dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md)
-### [スウェーデンのキャッシュ レジスター](localizations/emea-swe-cash-registers.md)
-### [スウェーデン用の管理単位との Retail POS の統合サンプル](dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md)
-### [ノルウェーのキャッシュ レジスター](localizations/emea-nor-cash-registers.md)
-### [ノルウェーのキャッシュ レジスターの配置ガイドライン](localizations/emea-nor-loc-deployment-guidelines.md)
 ### [Retail SDK パッケージ](dev-itpro/retail-sdk/retail-sdk-packaging.md)
 ### [Retail SDK サンプル](dev-itpro/retail-sdk/retail-sdk-samples.md)
 ### [チャネル データベース (DB) 拡張機能](dev-itpro/channel-db-extensions.md)

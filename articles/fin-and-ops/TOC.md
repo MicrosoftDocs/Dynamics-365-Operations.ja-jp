@@ -21,6 +21,7 @@
 #### [延期された AX 2012 の機能](get-started/ax-2012-features-not-implemented-but-not-deprecated.md)
 #### [オンプレミス配置で実装されていない機能](get-started/features-not-implemented-on-prem.md)
 #### [リリースおよびライフサイクルのポリシー](../dev-itpro/migration-upgrade/versions-update-policy.md)
+#### [オンプレミス配置 (2018 年 3 月)](get-started/whats-new-LBD-PU12-App72.md)
 #### [Platform update 13 (2018 年 1 月)](get-started/whats-new-platform-update-13.md)
 #### [Finance and Operations, Enterprise Edition 7.3](get-started/whats-new-application-7.3-update.md)
 #### [Platform update 12 (2017 年 11 月)](get-started/whats-new-platform-update-12.md)
@@ -134,7 +135,7 @@
 ### [原価管理 Power BI コンテンツ パック](../dev-itpro/analytics/cost-management-content-pack.md)
 
 ## データ統合
-### [統合パターン](../dev-itpro/data-entities/integration-overview.md)
+### [データ統合方法 (インポート/エクスポート) の選択](../dev-itpro/data-entities/integration-overview.md)
 
 ### データ統合 API
 #### [データ管理パッケージ API](../dev-itpro/data-entities/data-management-api.md)
@@ -157,10 +158,9 @@
 ###### [Sales でアカウントの管理、および Sales から Finance and Operations への直接同期](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
 ###### [Finance and Operations での製品の管理、および Sales への直接同期](../supply-chain/sales-marketing/products-template-mapping-direct.md)
 ###### [Sales の連絡先の管理、および Finance and Operations の連絡先または顧客への直接同期](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
-###### [販売見積の Sales から Finance and Operations への直接同期](../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md)
-###### [販売注文の Finance and Operations から Sales への直接同期](../supply-chain/sales-marketing/sales-order-template-mapping-direct.md)
-###### [販売注文の Sales と Finance and Operations の間の直接同期](../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md)
-###### [売上請求書の Finance and Operations から Sales への直接同期](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
+###### [Sales で販売見積の管理、および Finance and Operations への直接同期](../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md)
+###### [Finance and Operations で販売注文の管理、および Sales への直接同期](../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md)
+###### [Finance and Operations で売上請求書の管理、および Sales への直接同期](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
 
 
 #### [外部 Web サービスの使用](../dev-itpro/data-entities/consume-external-web-service.md)
@@ -473,7 +473,13 @@
 #### [経費レポートでの配分](../financials/expense-management/expense-report-distributions.md)
 #### [会社間経費](../financials/expense-management/intercompany-expense.md)
 #### [経費ポリシー](../financials/expense-management/travel-expense-policies.md)
-
+#### [経費精算書の表示](../financials/expense-management/view-expense-report.md)
+#### [経費精算書の転記](../financials/expense-management/post-expense.md)
+#### [経費精算書と複数の承認者](../financials/expense-management/expense-report-multiple-approvers.md)
+#### [経費管理における VAT 回収](../financials/expense-management/VAT-expense-report.md)
+#### [日当ルール](../financials/expense-management/per-diem.md)
+#### [出張費要求](../financials/expense-management/travel-req.md)
+#### [経費精算書での個人経費](../financials/expense-management/personal-expenses.md)
 
 ### [予算作成](../financials/budgeting/budgeting-overview.md)
 #### [予算計画の概要](../financials/budgeting/budget-planning-overview-configuration.md)
@@ -631,6 +637,8 @@
 ##### [税エンジンの統合](../financials/general-ledger/tax-engine-integration.md)
 ##### [税しきい値に関するよく寄せられる質問](../financials/localizations/apac-ind-tax-thresholds.md)
 ##### [税エンジンの拡張](../financials/general-ledger/extend-tax-engine-configurations.md)
+##### [キャッシュ レジスターの販売税統合](../retail/localizations/apac-ind-cash-registers.md)
+##### [キャッシュ レジスターの配置ガイドライン](../retail/localizations/apac-ind-loc-deployment-guidelines.md)
 
 #### 日本
 ##### [固定資産の取得と政府助成金の申請](../financials/localizations/tasks/acquire-fixed-asset-claim-government-grant-subsidy.md)
@@ -910,7 +918,10 @@
 ##### [顧客および仕入先の支払形式](../financials/localizations/tasks/no-00003-customer-vendor-payment-formats.md)
 ##### [支払 ID に基づいた顧客支払](../financials/localizations/tasks/no-00002-customer-payment-based-payment-id.md)
 ##### [Nets インポート形式](../financials/localizations/emea-nor-nets-import-format.md)
-##### [VAT 明細書](../financials/localizations/emea-nor-sales-tax-payment-report.md) 
+##### [VAT 明細書](../financials/localizations/emea-nor-sales-tax-payment-report.md)
+##### [キャッシュ レジスター](../retail/localizations/emea-nor-cash-registers.md)
+##### [キャッシュ レジスターの配置ガイドライン](../retail/localizations/emea-nor-loc-deployment-guidelines.md)
+
 #### ポーランド
 ##### [単価からの行割引の計算](../financials/localizations/emea-pol-line-discount-calculation-from-unit-price.md)
 ##### [修正メモ](../financials/localizations/emea-pol-correction-notes.md)
@@ -937,6 +948,7 @@
 ##### [特殊エントリと期首表](../financials/localizations/emea-esp-opening-sheets-spain.md)
 #### スウェーデン
 ##### [支払インポート形式](../financials/localizations/emea-swe-payment-formats-import.md)
+##### [キャッシュ レジスター](../retail/localizations/emea-swe-cash-registers.md)
 #### スイス
 ##### [ESR での顧客支払のインポート](../financials/localizations/emea-che-esr-customer-payments-import.md)
 #### 英国
@@ -1644,6 +1656,7 @@
 ##### [運営リソース](../supply-chain/production-control/operations-resources.md)
 ##### [リソースの能力](../supply-chain/production-control/resource-capabilities.md)
 ##### [バッチ属性](../supply-chain/production-control/batch-attributes.md)
+##### [バッチ バランシング](../supply-chain/production-control/batch-balancing.md)
 ##### [フォーミュラのコピー (タスク ガイド)](../supply-chain/production-control/tasks/copy-formula.md)
 ##### [既存のフォーミュラをコピーしてフォーミュラを作成 (タスク ガイド)](../supply-chain/production-control/tasks/create-formula-copying-existing-formula.md)
 ##### [既存のフォーミュラ バージョンから連産品をコピー (タスク ガイド)](../supply-chain/production-control/tasks/copy-co-products-existing-formula-version.md)
@@ -1808,6 +1821,7 @@
 #### [測定単位と在庫ポリシー](../supply-chain/warehousing/unit-measure-stocking-policies.md)
 #### [倉庫 Power BI コンテンツ](../dev-itpro/analytics/warehouse-power-bi-content.md)
 #### [オープン作業一覧のシステム グループ化](../supply-chain/warehousing/system-group-on-open-work-list.md)
+#### [Dynamics 365 for Finance and Operations でカメラを使用してバーコードをスキャン](../supply-chain/warehousing/scan-bar-codes-using-a-camera.md)
 #### [モバイル バーコードのサポート](../supply-chain/warehousing/mobile-barcode-support.md)
 ### [倉庫作業ポリシー](../supply-chain/warehousing/warehouse-work-policies.md)
 #### [倉庫管理における作業が関連付けられている在庫の移動](../supply-chain/warehousing/move-inventory-associated-work.md)
@@ -1818,6 +1832,7 @@
 #### [混合ライセンス プレートの受取](../supply-chain/warehousing/mixed-license-plate-receiving.md)
 #### [モバイル デバイスで倉庫内の古いバッチの表示をコンフィギュレーション](../supply-chain/warehousing/display-older-batches-within-warehouses.md)
 #### [モバイル デバイスで最も古いバッチをピッキング](../supply-chain/warehousing/pick-oldest-batch.md)
+#### [Dynamics 365 for Finance and Operations でカメラを使用してバーコードをスキャン](../supply-chain/warehousing/scan-bar-codes-using-a-camera.md)
 #### [ピース ピッキング確認](../supply-chain/warehousing/piece-picking-confirmation.md)
 #### [クラスター ピッキングの製品の確認](../supply-chain/warehousing/cluster-picking-item-confirmation.md)
 #### [部分的に引当済の移動オーダーのバッチ リリース](../supply-chain/warehousing/batch-release-of-partially-reserved-transfer-orders.md)
