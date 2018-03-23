@@ -19,10 +19,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 6e83f46df30d13a8bffa5c2b0bd05f456b67e6ec
+ms.sourcegitcommit: 80374d6dce8aa5d5f2e5afc0656b42236ac974ec
+ms.openlocfilehash: 036e8079bd976087514a074529dd4593c5a2b0a5
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/13/2018
 
 ---
 
@@ -62,12 +62,12 @@ Microsoft Dynamics 365 for Finance and Operations の仕入先コラボレーシ
 新しいユーザーがプロビジョニングを要求する前に、そのユーザーは、1 つ以上の仕入先勘定として設定する必要があります。 新しい仕入先コラボレーションのユーザー要求の作成:
 
 1.  [**すべての連絡先**] ページで、[**ベンダー ユーザーのプロビジョニング**] をクリックします。
-2.  ユーザーの電子メール アドレスを入力します。 このアドレスは、Finance and Operations にログオンするユーザーによって使用されます。 電子メール アドレスが Microsoft Azure でテナントとして登録されているドメインに属する場合、プロビジョニング プロセスが正常に完了するためには、電子メール アドレスが既存の Azure Active Directory (ADD) のアカウントである必要があります。 電子メール アドレスが Microsoft Azure で登録されているドメインに属さなない場合は、プロビジョニング プロセスの一部として ADD アカウントが作成され、新しいユーザーは招待メールを受信します。 @hotmail.com、@gmail.com、@comcast.net などのドメインを含む消費者向け電子メール アドレスは、Finance and Operations ユーザーを登録するために使用できません。
+2.  ユーザーの電子メール アドレスを入力します。 このアドレスは、Finance and Operations にログオンするユーザーによって使用されます。 電子メール アドレスが Microsoft Azure でテナントとして登録されているドメインに属する場合、プロビジョニング プロセスが正常に完了するためには、電子メール アドレスが既存の Azure Active Directory (AAD) のアカウントである必要があります。 電子メール アドレスが Microsoft Azure で登録されているドメインに属さなない場合は、プロビジョニング プロセスの一部として ADD アカウントが作成され、新しいユーザーは招待メールを受信します。 @hotmail.com、@gmail.com、@comcast.net などのドメインを含む消費者向け電子メール アドレスは、Finance and Operations ユーザーを登録するために使用できません。
 3.  [**仕入先コラボレーションへのアクセスの許可**] オプションで、ユーザーがアクセスを必要とするすべての法人で [**はい**] を設定します。
 4.  [**ユーザー ロールの割り当て**] セクションで、新しいユーザーが持つ必要のあるセキュリティ ロールの [**割り当て**] チェック ボックスを選択します。
 5.  [**送信**] をクリックします。
 
-仕入先ユーザーが送信を要求する場合、[**仕入先コラボレーションへのアクセスの許可**] フィールドは、選択された仕入先アカウントのために [**はい**] に設定され、ユーザー要求のワークフローは開始されます。 ワークフローの一部として、新しいユーザーは Finance and Operations で作成し、セキュリティ ロールが割り当てられます。 また、Azure B2B サービスは、Azure ポータルでインタラクションを開始することを有効化し、Finance and Operations ユーザー アカウントで関連する新しいもしくは既存の AAD アカウントを関連付けます。
+仕入先ユーザーが送信を要求する場合、[**仕入先コラボレーションへのアクセスの許可**] フィールドは、選択された仕入先アカウントのために [**はい**] に設定され、ユーザー要求のワークフローは開始されます。 ワークフローの一部として、新しいユーザーは Finance and Operations で作成し、セキュリティ ロールが割り当てられます。 また、Azure B2B サービスは、Azure ポータルでインタラクションを開始することを有効化し、Finance and Operations ユーザー アカウントで関連する新しいもしくは既存の AAD アカウントを関連付けます。 詳細については、[Azure AD B2B コラボレーションとは何ですか。](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) を参照してください。
 
 ### <a name="inactivate-a-user"></a>ユーザーの無効化
 

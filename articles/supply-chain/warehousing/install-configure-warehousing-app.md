@@ -20,10 +20,10 @@ ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: af7f9a373496eee4df354d5dd9e5a25c51317c43
-ms.openlocfilehash: 0f83735ec42e945c5e0abf8d72b83936e076e60e
+ms.sourcegitcommit: 608543c9cfd93c4772e93089e1d174312d8b23a6
+ms.openlocfilehash: 411bb28668f5aa9d07774211814da4e9757ac43c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/06/2018
 
 ---
 
@@ -99,6 +99,8 @@ Azure AD アプリケーションを使用して Finance and Operations サー�
     <br>**注**: スラッシュ (/) でこのフィールドを終了しないでください。 
     + [**会社**] - Finance and Operations にアプリケーションが接続する法的エンティティを入力します。 <br>[![wh-12-app-connection-settings](./media/wh-12-app-connection-settings-169x300.png)](./media/wh-12-app-connection-settings.png)
 4.  アプリケーションの左上隅にある [**戻る**] ボタンを選択します。 アプリケーションは Finance and Operations サーバーに接続し、倉庫ワーカーのログイン画面が表示されます。 <br>[![wh-13-log-in-screen](./media/wh-13-log-in-screen-180x300.png)](./media/wh-13-log-in-screen.png)
+
+モバイル デバイスでカメラを使用してバーコードをスキャンするために Dynamics 365 for Finance and Operations – Warehousing を設定する方法の詳細については、 [Dynamics 365 for Finance and Operations – Warehousing でカメラを使用してバーコードをスキャンします。](scan-bar-codes-using-a-camera.md) を参照してください。
 
 ## <a name="remove-access-for-a-device"></a>デバイスへのアクセスを削除する
 デバイスの紛失またはセキュリティが侵害された場合、デバイスの Finance and Operations のアクセスを削除する必要があります。 次の手順では、アクセスを削除するための推奨プロセスについて説明します。

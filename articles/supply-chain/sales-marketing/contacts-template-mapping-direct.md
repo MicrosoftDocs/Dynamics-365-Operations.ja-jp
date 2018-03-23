@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 8de9a920f384b69c9b3764a0431208bbdcb395bf
+ms.sourcegitcommit: 0d409b3b7f19ca31d9c720bca191f1ddba81caa3
+ms.openlocfilehash: 6269b73dfca46d455784046199463d3f86e653ae
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/13/2018
 
 ---
 
@@ -136,7 +136,7 @@ Sales の統合ソリューションが適用されている場合、アップ�
 
 [Sales 製品への Finance and Operations 製品の直接同期](products-template-mapping-direct.md)
 
-[販売注文ヘッダーおよび明細行の Finance and Operations から Sales への直接同期](sales-order-template-mapping-direct.md)
+[販売注文ヘッダーおよび明細行の Finance and Operations から Sales への直接同期](sales-order-template-mapping-direct-two-ways.md)
 
 [売上請求書ヘッダーおよび直接明細行の Finance and Operations から Sales への直接同期](sales-invoice-template-mapping-direct.md)
 

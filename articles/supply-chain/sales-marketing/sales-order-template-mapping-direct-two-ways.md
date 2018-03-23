@@ -3,7 +3,7 @@ title: "販売注文の Sales、Finance and Operations 間の直接同期"
 description: "このトピックでは、Microsoft Dynamics 365 for Sales と Microsoft Dynamics 365 for Finance and Operations, Enterprise edition との間で、販売注文の直接同期を実行させるために使用されるテンプレートと基本的なタスクについて説明します。"
 author: ChristianRytt
 manager: AnnBe
-ms.date: 10/31/2017
+ms.date: 03/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 7a828090fa34eb96d2b557eb06e48ad05b421ae8
-ms.openlocfilehash: 9aa8c78f5aea5a818d517c2baa9051750b132fc6
+ms.sourcegitcommit: 0928f9c0af52c2e19f0669841e433423ae9db467
+ms.openlocfilehash: 09c5cd14c5948818878d3f830639abc166d7072e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 03/13/2018
 
 ---
 
@@ -132,6 +132,7 @@ Sales での割引計算モデルは、Finance and Operations の割引計算モ
 
     **設定** &gt; **セキュリティ** &gt; **チーム**の順に移動し、関連チームを選択してから、**ロール管理** をクリックして **システム管理者** などの必要なアクセス許可を持つロールを選択します。
 
+- Sales および Finance and Operations の両方で割引の計算が正しいことを確認するには、**割引の計算方法** が **行項目** に設定される必要があります。
 - [**設定**] &gt; [**管理**] &gt; [**システム設定**] &gt; [**Sales**] へと順に進み、次の設定が使用されていることを確認してください。
 
     - [**システム プライジング計算システムの使用**] オプションが、[**はい**] に設定されている。

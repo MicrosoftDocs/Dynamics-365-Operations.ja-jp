@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: e9d7e756c56932372ed931620016973c794fb3fc
+ms.sourcegitcommit: 0d409b3b7f19ca31d9c720bca191f1ddba81caa3
+ms.openlocfilehash: 347509a9556f15e7d880508e36516f04bc6964b7
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/13/2018
 
 ---
 
@@ -86,7 +86,7 @@ Finance and Operations から Sales への売上請求書ヘッダーと明細�
 
 [設定] > [管理] > [システムの設定] > [Sales] の順に移動し、次の設定を使用することを確認します。
 
-- [システム プライジング計算システムの使用] オプションが、[はい] に設定されている。
+- [**システム プライジング計算システムの使用**] オプションが、[**はい**] に設定されている。
 - [割引の計算方法] フィールドが、[明細行品目] に設定されている。
 
 ### <a name="setup-in-the-data-integration-project"></a>データ統合プロジェクトでの設定
@@ -106,7 +106,7 @@ Finance and Operations から Sales への売上請求書ヘッダーと明細�
 - [測定単位] で必要なマッピングが存在することを確認します。
 - Finance and Operation で [SalesUnitSymbol] 用の必要な値マップを確認します。
 
-    SalesUnitSymbol] から [Quantity\_UMO] に対して値マップを持つテンプレート値が定義されます。
+    [**SalesUnitSymbol**] から [**Quantity\_** UMO] に対して値マップを持つテンプレート値が定義されます。
 
 ## <a name="template-mapping-in-data-integration"></a>データ統合のテンプレートのマッピング
 
@@ -134,11 +134,11 @@ Finance and Operations から Sales への売上請求書ヘッダーと明細�
 
 [Sales から Finance and Operations の顧客への勘定の直接同期](accounts-template-mapping-direct.md)
 
-[Sales 製品への Finance and Operations 製品の直接同期](products-template-mapping-direct.md)
+[Sales 製品への Finance and Operations の製品の直接同期](products-template-mapping-direct.md)
 
-[Sales から Finance and Operations の連絡先または顧客への連絡先の直接同期](contacts-template-mapping-direct.md)
+[Finance and Operations の連絡先または顧客への Sales の連絡先の直接同期](contacts-template-mapping-direct.md)
 
-[販売注文ヘッダーおよび明細行の Finance and Operations から Sales への直接同期](sales-order-template-mapping-direct.md)
+[販売注文ヘッダーおよび明細行の Finance and Operations から Sales への直接同期](sales-order-template-mapping-direct-two-ways.md)
 
 
 
