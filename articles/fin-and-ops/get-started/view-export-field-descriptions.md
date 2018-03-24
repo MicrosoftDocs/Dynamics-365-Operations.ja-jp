@@ -1,7 +1,7 @@
 ---
 title: "フィールドの説明を表示およびエクスポートする"
 description: "この記事では、フィールドの説明を表示する方法と説明をエクスポートするフィールドの [説明] ページを使用する方法について説明します。"
-author: YuyuScheller
+author: rschloma
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,14 +15,14 @@ ms.search.scope: Core, Operations
 ms.custom: 11534
 ms.assetid: e2795f51-a8a7-4c74-bdb9-b1be93bdd358
 ms.search.region: Global
-ms.author: yuyus
+ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 6426f208a51ffbf72c6faa8cb281aba2984052d7
+ms.sourcegitcommit: 812db9f1d319e4d16f83700a7153a0a3b318963e
+ms.openlocfilehash: cfe5126841905248d0ab04ed9a718098c11bbd22
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/23/2018
 
 ---
 
