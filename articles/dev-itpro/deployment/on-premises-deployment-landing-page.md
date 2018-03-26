@@ -3,7 +3,7 @@ title: "オンプレミス配置"
 description: "このトピックでは、オンプレミス配置に関するコンテンツへのリンクと情報を提供します。"
 author: kfend
 manager: AnnBe
-ms.date: 03/05/2018
+ms.date: 03/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,13 +18,13 @@ ms.author: kfend
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 797058bdbbdb63a08eb35034ffe3c913307f38df
-ms.openlocfilehash: 12b8a6e8f28501bce76d5a1d58b39e4711b75330
+ms.sourcegitcommit: 0d551818c8d352af96f6e64613cfbbc4aec5bf5b
+ms.openlocfilehash: e35769e45b1017eef2ee5a5b6c2baa35ae13d90c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/06/2018
+ms.lasthandoff: 03/15/2018
 
 ---
-# <a name="on-premises-deployment-landing-page"></a>オンプレミス配置のランディング ページ
+# <a name="on-premises-deployment-home-page"></a>オンプレミス配置のホーム ページ
 
 [!include[banner](../includes/banner.md)]
 
@@ -36,13 +36,13 @@ Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (オンプ
 - [オンプレミス配置の計画](plan-onprem-deployment.md)
 - [オンプレミス配置のシステム要件](../../fin-and-ops/get-started/system-requirements-on-prem.md)
 - [オンプレミス環境のハードウェアのサイズ設定](../../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md)
-- [オンライン サービスおよびオンプレミス ソフトウェアのライフサイクル ポリシー](../migration-upgrade/versions-update-policy.md)
 - [Dynamics 365 for Finance and Operations, Enterprise Edition (オンプレミス) の購入](../../fin-and-ops/get-started/purchase-on-premises.md)
 - [クラウドとオンプレミスの機能比較](../../fin-and-ops/get-started/cloud-prem-comparison.md)
 
 ## <a name="onboard"></a>Onboard
 - [Lifecycle Services でのオンプレミス プロジェクトの作成](../lifecycle-services/lbd-create-lcs-on-prem-project.md)
-- [オンプレミス環境の設定と配置](setup-deploy-on-premises-environments.md)
+- [オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 12)](setup-deploy-on-premises-pu12.md)
+- [オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 8 および 11)](setup-deploy-on-premises-pu8-pu11.md)
 - [オンプレミス環境でのネットワーク プリンター デバイスのインストール](../analytics/install-network-printer-onprem.md)
 - [オンプレミス配置の SQL Server Reporting Services のコンフィギュレーション](../analytics/configure-ssrs-on-premises.md)
 - [カスタム モデルの開発とオンプレミス環境への配置](develop-deploy-custom-models-on-premises.md)

@@ -20,10 +20,10 @@ ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 16bdf2176869e5822ddf8732c829b65f1e60632c
-ms.openlocfilehash: ce91f675082a34bd5a1e88be7a7af6884dc47add
+ms.sourcegitcommit: c5b9ee57b0b855766628caca239059205c103b86
+ms.openlocfilehash: 4a0586324dddc10d64ad6760222f2540f31d6bce
 ms.contentlocale: ja-jp
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 03/08/2018
 
 ---
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 02/07/2018
 
 
 > [!NOTE]
-> より良いアルゴリズムとより新しい小売指向の機能を加えたこの機能をデザインするため、製品レコメンデーション サービスの現在のバージョンを削除します。 詳細については、[削除済みまたは推奨されない機能](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features)を参照してください。 
+> より良いアルゴリズムとより新しい小売指向の機能を加えたこの機能をデザインするため、製品レコメンデーション サービスの現在のバージョンを削除します。 詳細については、[削除済みまたは推奨されない機能](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features)を参照してください。 環境に対して既に有効な製品推奨事項で問題が発生している場合、ページの下に移動します。 
 
 Dynamics 365 for Retail では、POS (営業拠点) デバイスに製品の推奨事項を表示することができます。 推奨事項は、顧客の購買履歴、欲しい物のリストの品目、他の顧客がオンラインや従来型の店舗で購入した品目に基づいた興味を持ちそうな品目のことです。 大規模カタログの小売業者には、製品の発見に役立つ推奨事項があります。 製品の推奨事項は、顧客の関心と購買習慣を対象とした製品を展示することで、アップセルおよびクロスセルを行う小売業者を支援し、顧客維持を強化することができます。 Dynamics 365 for Retail では、認知サービスと Microsoft Azure 機械学習によって、小売りと製品の推奨が強化されます。
 
@@ -84,6 +84,12 @@ Dynamics 365 for Retail では、POS (営業拠点) デバイスに製品の推�
 
 -   モデル資格情報と ID は API から取得され、Dynamics 365 for Retail 運用データベース、AOS 用 web.config、および小売サーバーに格納されます。
 -   モデルの資格情報と ID は CRT で利用できるようになっており、オンライン モードで Cloud POS と MPOS からの製品推奨事項を守ることができます。
+
+> ## <a name="troubleshoot-issues-where-you-have-product-recommendations-already-enabled"></a>[製品推奨事項] が既に有効な場合の問題のトラブルシューティング 
+>- [小売パラメーター] > [機械学習] > [製品推奨事項の無効化] に移動し、[グローバル構成ジョブ [1110]] を実行します。 [機械学習] タブを特定できない場合、Dynamics サポートにお問い合わせください。 
+
+>- **画面レイアウト デザイナー** を使用して **推奨事項コントロール** をトランザクション画面に追加した場合、それも削除してください。 
+
 
 
 <a name="see-also"></a>参照

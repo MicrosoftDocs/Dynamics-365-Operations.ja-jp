@@ -19,10 +19,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: a20bb97e451ac59ba23c7f767b5feb336278dcd1
+ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
+ms.openlocfilehash: 2c37f0253454a23d90904dd6b000b955146ad121
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/08/2018
 
 ---
 
@@ -71,15 +71,15 @@ ms.lasthandoff: 11/03/2017
 
 | フィールド | 説明 | 
 |---------|---------|
-|< ヘッダー >< ソース >< 資格情報のドメイン=”” >|購入者の会社のドメイン。|
-|< ヘッダー >< ソース >< 資格 >< ID >< /ID > | 購入者の会社の ID。|
-|< ヘッダー >< ターゲット >< 資格情報のドメイン=”” > | 仕入先の会社のドメイン。|
-|< ヘッダー >< ターゲット >< 資格 >< ID >< /ID> | 仕入先の会社の ID。|
-|< ヘッダー >< 送信者 >< 資格情報のドメイン=”” > | 購入者の会社のドメイン。|
-|< ヘッダー >< 送信者 >< 資格 >< ID >< /ID> | 購入者の会社の ID。|
-|< ヘッダー >< 送信者 >< 資格 >< SharedSecret >< /SharedSecret >|購入者の会社の共有機密情報。|
+|< Header >< From >< Credential domain=”” >|購入者の会社のドメイン。|
+|< Header >< From >< Credential>< Identity >< /Identity > | 購入者の会社の ID。|
+|< Header >< To >< Credential domain=”” > | 仕入先の会社のドメイン。|
+|< Header >< To >< Credential>< Identity >< /Identity> | 仕入先の会社の ID。|
+|< Header >< Sender >< Credential domain=”” > | 購入者の会社のドメイン。|
+|< Header >< Sender >< Credential >< Identity >< /Identity> | 購入者の会社の ID。|
+|< Header >< Sender >< Credential >< SharedSecret >< /SharedSecret >|購入者の会社の共有機密情報。|
 |< 要求 deploymentMode=”” >|テストまたは運用配置。|
-|< 要求 >< PunchOutSetupRequest >< SupplierSetup >< URL >< /URL >|仕入先のパンチアウト エンドポイントの URL。|
+|< Request >< PunchOutSetupRequest >< SupplierSetup >< URL >< /URL>|仕入先のパンチアウト エンドポイントの URL。|
 
 ### <a name="extrinsic-elements"></a>外部要素
 
@@ -92,15 +92,15 @@ cXML プロトコルの詳細については、「http://cxml.org/」を参照�
 
 | 仕入先から受け取ったメッセージ | Finance and Operations の要求明細行にコピーされる|
 |------------------------------|----------------------------------------------------------|
-|< ItemIn 数量=”” > |件数|
+|< ItemIn quantity=”” > |件数|
 |< ItemIn>< ItemID >< SupplierPartID >< /SupplierPartID >|外部品目 ID|
-|< ItemDetail>< UnitPrice >< 貨幣通貨="" >| 通貨|
-|< ItemDetail >< UnitPrice >< 貨幣 >< /貨幣 >| 単価|
-|< ItemDetail >< 説明 ShortName=”” >|製品名|
-|< ItemDetail >< 説明 >< /説明 >|商品説明に含まれています。ShortName が指定されていない場合の製品名。|
+|< ItemDetail>< UnitPrice >< Money currency=”” >| 通貨|
+|< ItemDetail >< UnitPrice >< Money >< /Money >| 単価|
+|< ItemDetail >< Description ShortName=”” >|製品名|
+|< ItemDetail >< Description >< /Description >|商品説明に含まれています。ShortName が指定されていない場合の製品名。|
 |< ItemDetail >< UnitOfMeasure >< /UnitOfMeasure >|単位|
-|< ItemDetail >< 分類 >< /分類 >|商品説明に含まれる|
-|< ItemDetail >< 分類ドメイン="" >|商品説明に含まれる|
+|< ItemDetail >< Classification >< /Classification >|商品説明に含まれる|
+|< ItemDetail >< Classification domain=”” >|商品説明に含まれる|
 
 ## <a name="delete-an-external-catalog"></a>外部カタログの削除
 ページ上の [削除] アクションで外部カタログを削除します。

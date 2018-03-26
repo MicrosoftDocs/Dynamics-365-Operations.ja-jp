@@ -18,14 +18,16 @@ ms.author: mafoge
 ms.search.validFrom: 2017-01-03
 ms.dyn365.ops.version: AX 8.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ffbd853c15e479fc4350a19121f2aebcedda9854
-ms.openlocfilehash: 31b9d421f3fd5378f26faeee3a83b66861ef5008
+ms.sourcegitcommit: 7be3e9970e2599c159e7c9d414b54876d0116350
+ms.openlocfilehash: f7fe3ab07578b09822fbfeaa4b07331b79f13610
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/09/2018
 
 ---
 
 # <a name="scan-bar-codes-using-a-camera-in-dynamics-365-for-finance-and-operations--warehousing"></a>Dynamics 365 for Finance and Operations – Warehousing でカメラを使用してバーコードをスキャンします。
+
+[!include[banner](../includes/banner.md)]
 
 このトピックでは、モバイル デバイスでカメラを使用してバーコードをスキャンするため Dynamics 365 for Finance and Operations – Warehousing を設定する方法について説明します。 
 
@@ -47,8 +49,8 @@ Warehousing アプリケーションの表示設定では、バーコードの�
 - [カメラ] ページに戻るには [タスクと詳細] ページでカメラをクリックします。 
 
 | [タスクと詳細] ページ | [カメラ] ページ | 
-| --------------------- | -------------------- |
-| ![camera-scanning-example-task-detail-page](media/camera-scanning-example-task-detail-page.png)          | ![camera-scanning-example-camera-page](media/camera-scanning-example-camera-page.png)          |
+| :---------------------: | :--------------------: |
+| ![camera-scanning-example-task-detail-page](./media/camera-scanning-example-task-detail-page50.png)          | ![camera-scanning-example-camera-page-smaller](./media/camera-scanning-example-camera-page50.png)          |
 
 [カメラ] ページで、[カメラ] ボタンをクリックすると、バー コードを識別しようとしているときにグレー表示になります。 バーコードが 5 秒以内で識別されない場合は、プロセスがタイムアウトになり、[カメラ] ボタンがもう一度利用可能になります。 それからもう一度バーコードをスキャンすることができます。
 

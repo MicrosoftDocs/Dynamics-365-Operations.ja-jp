@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 95d5bf26c22238753586cf4a7aaf5c26f061a705
-ms.openlocfilehash: 62f328c5a6bf5343c97de0b7d907bbcfe2fcde4d
+ms.sourcegitcommit: e342c67f53828c77f77d99a2c3f909a23ced8989
+ms.openlocfilehash: 5d9bc41c92258f9856088b04ec5af123c8e915e5
 ms.contentlocale: ja-jp
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/13/2018
 
 ---
 
@@ -42,9 +42,8 @@ ms.lasthandoff: 02/23/2018
 - [Sales でアカウントの管理、および Sales から Finance and Operations への直接同期](accounts-template-mapping-direct.md)
 - [Finance and Operations での製品の管理、および Sales への直接同期](products-template-mapping-direct.md)
 - [Sales の連絡先の管理、および Finance and Operations の連絡先または顧客への直接同期](contacts-template-mapping-direct.md)
-- [販売見積の Sales から Finance and Operations への直接同期 (リリース保留中のテンプレート)](sales-quotation-template-mapping-sales-fin.md)
-- [販売注文の Finance and Operations から Sales への直接同期](sales-order-template-mapping-direct.md)
-- [販売注文の Sales と Finance and Operations の間の直接同期 (リリース保留中のテンプレート)](sales-order-template-mapping-direct-two-ways.md)
+- [販売見積の Sales から Finance and Operations への直接同期](sales-quotation-template-mapping-sales-fin.md)
+- [販売注文の Sales と Finance and Operations の間の直接同期](sales-order-template-mapping-direct-two-ways.md)
 - [売上請求書の Finance and Operations から Sales への直接同期](sales-invoice-template-mapping-direct.md)
 
 ## <a name="system-requirements-for-finance-and-operations"></a>Finance and Operations のシステム要件
@@ -85,7 +84,7 @@ ms.lasthandoff: 02/23/2018
 
 見込顧客を現金化するソリューションを使用するには、以下のコンポーネントをインストールする必要があります:
 
-- Dynamics 365 for Sales バージョン 1612 (8.2.1.207) (DB 8.2.1.207) オンライン
+- Dynamics 365 for Sales バージョン 1612 (8.2.1.207) (DB 8.2.1.207) オンラインまたはそれ以降のバージョン
 - Dynamics 365 for Sales バージョン 1.15.0.0 (v15) の見込顧客を現金化するソリューション 
 
 ### <a name="install-the-prospect-to-cash-solution-for-sales"></a>Sales の見込顧客を現金化するソリューションのインストール
