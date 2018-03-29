@@ -1,7 +1,7 @@
 --- 
 title: "ルートの作成 (2016 年 2 月のみ)"
 description: "このタスクでは、完成品と半完成品の生産工順の作成について説明します。"
-author: BibiSp
+author: YuyuScheller
 manager: AnnBe
 ms.date: 02/07/2017
 ms.topic: business-process
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: bis
