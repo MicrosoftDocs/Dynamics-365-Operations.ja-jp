@@ -1,6 +1,6 @@
 ---
 title: "インテリジェンス"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations Enterprise Edition で使用可能なビジネス インテリジェンスおよびレポート ツールの詳細を学ぶためのリソースを紹介します。"
+description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations で使用可能なビジネス インテリジェンスおよびレポート ツールの詳細を学ぶためのリソースを紹介します。"
 author: sericks007
 manager: AnnBe
 ms.date: 12/18/2017
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: aac6439bb54b3b9cab066b06c01763e880efef8e
-ms.openlocfilehash: 2477062ad324f91ff07f1c79cfccd4389b37badf
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 14a18681a98a2efbf6e3cfdbe77d282e74374c71
 ms.contentlocale: ja-jp
-ms.lasthandoff: 12/18/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -29,11 +29,11 @@ ms.lasthandoff: 12/18/2017
 
 [!include[banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Finance and Operations Enterprise Edition で使用可能なビジネス インテリジェンス (BI) およびレポート ツールの詳細を学ぶためのリソースを紹介します。
+このトピックでは、Microsoft Dynamics 365 for Finance and Operations で使用可能なビジネス インテリジェンス (BI) およびレポート ツールの詳細を学ぶためのリソースを紹介します。
 
 ## <a name="get-started"></a>使用開始
 - [情報へのアクセスとレポート](information-access-reporting.md)
-- [Tech Talk: Reporting options](https://www.youtube.com/watch?v=NzZONjKs5xA) (ビデオ)
+- [技術解説: レポート オプション](https://www.youtube.com/watch?v=NzZONjKs5xA) (ビデオ)
 - [Finance and Operations: ビジネス インテリジェンス](https://blogs.msdn.microsoft.com/dynamicsaxbi/) (ブログ)
 
 ## <a name="analytical-workspaces"></a>分析ワークスペース

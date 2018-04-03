@@ -1,6 +1,6 @@
 ---
 title: "サプライ チェーン マネジメントのホーム ページ"
-description: "このページでは、Microsoft Dynamics 365 for Finance and Operations Enterprise Edition のサプライ チェーン マネジメント機能に関するヘルプ トピックとその他のリソースの一覧を示します。"
+description: "このページでは、Microsoft Dynamics 365 for Finance and Operations のサプライ チェーン マネジメント機能に関するヘルプ トピックとその他のリソースの一覧を示します。"
 author: YuyuScheller
 manager: AnnBe
 ms.date: 02/15/2018
@@ -19,10 +19,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: cab2f165a70e5ce8f09f0391282e055e51afb225
-ms.openlocfilehash: bf3192a5189a3b18ad28f3c5cb0dd6d402824ed5
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 9e3551580cc03ebf62ec42283c5a9a885d8c8d8f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 02/21/2018
 
 [!include[banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Finance and Operations Enterprise Edition のサプライ チェーン マネジメント機能に関するヘルプ トピックとその他のリソースの一覧を示します。 
+このトピックでは、Microsoft Dynamics 365 for Finance and Operations のサプライ チェーン マネジメント機能に関するヘルプ トピックとその他のリソースの一覧を示します。 
 
 ## <a name="whats-new-and-in-development"></a>新機能および開発中の機能
 リリースされた新機能と開発中の新機能については、<a href="https://roadmap.dynamics.com/">Dynamics 365 ロードマップ</a>を参照してください。 
@@ -106,7 +106,7 @@ ms.lasthandoff: 02/21/2018
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/">Cost accounting hands-on labs (原価会計の演習)</a> 
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/">Lean manufacturing: Capable to promise and kanban job scheduling (リーン生産: 生産可能在庫とかんばん作業のスケジューリング)</a> 
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet/">BOM calculation by using a costing sheet (原価計算表を使用した BOM 計算)</a>
--  <a href="https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/white-papers/MobilityWarehouse/">Mobility in the Warehouse facilitated by Microsoft Dynamics 365 for Finance and Operations, Enterprise edition</a>
+-  <a href="https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/white-papers/MobilityWarehouse/">Microsoft Dynamics 365 for Finance and Operations によって促進される倉庫内のモビリティ</a>
 
 ## <a name="elearning-courses"></a>eLearning コース
 Microsoft Dynamics 365 for Finance and Operations のトレーニングの詳細については、<a href="https://mbspartner.microsoft.com/AX/LearningPlans/">Microsoft Dynamics ラーニング ポータル</a>を参照してください。 (CustomerSource アカウントが必要です) 
