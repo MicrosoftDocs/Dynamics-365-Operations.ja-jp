@@ -1,7 +1,7 @@
 # [Dynamics 365 for Finance and Operations の開発と管理](index.md)
-# [クラウド配置のシステム要件](../fin-and-ops/get-started/system-requirements.md)
-# [オンプレミス配置のシステム要件](../fin-and-ops/get-started/system-requirements-on-prem.md)
-# [デモ データ](../fin-and-ops/get-started/demo-data.md)
+# [クラウド配置のシステム要件](../fin-and-ops/get-started/system-requirements.md?toc=/dev-itpro/toc.json)
+# [オンプレミス配置のシステム要件](../fin-and-ops/get-started/system-requirements-on-prem.md?toc=/dev-itpro/toc.json)
+# [デモ データ](../fin-and-ops/get-started/demo-data.md?toc=/dev-itpro/toc.json)
 ## [パッケージ付きデモ データの生成](data-entities/generate-demo-data-packages.md)
 
 
@@ -29,7 +29,7 @@
 ### [モデルのエクスポートとインポート](dev-tools/models-export-import.md)
 ### [Visual Studio でのメタデータの検索](dev-tools/metadata-search-visual-studio.md)
 ### [モデル](dev-tools/models.md)
-### [Dynamics 365 for Finance and Operations, Enterprise edition のプロジェクト](dev-tools/projects.md)
+### [Dynamics 365 for Finance and Operations のプロジェクト](dev-tools/projects.md)
 ### [Visual Studio 用のツールおよびアドイン](dev-tools/developer-tools-add-ins.md)
 ### [カスタマイズをオフにして機能を廃止](dev-tools/lock-models.md)
 ### [Visual Studio 開発ツールの更新](dev-tools/update-development-tools.md)
@@ -114,7 +114,7 @@
 #### [カスタマイズ: オーバーレイと拡張機能](extensibility/customization-overlayering-extensions.md)
 ### 新機能
 #### [拡張機能の変更 (2017 年 7 月)](extensibility/changes-july-2017.md)
-#### [Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 の拡張機能の変更](extensibility/extensibility-changes-73.md)
+#### [拡張機能の変更バージョン 7.3](extensibility/extensibility-changes-73.md)
 ### 基本
 #### [侵入的なカスタマイズ](extensibility/intrusive-customizations.md)
 #### [クラスの拡張機能](extensibility/class-extensions.md)
@@ -168,8 +168,8 @@
 ### [ナビゲーションの構築](user-interface/build-navigation.md)
 ### [ワークスペースの構築](user-interface/build-workspace.md)
 ## フォーム
-### [Dynamics 365 for Finance and Operations, Enterprise edition のナビゲーション](user-interface/page-navigation.md)
-### [Dynamics 365 for Finance and Operations, Enterprise edition のレイアウト](user-interface/page-layout.md)
+### [Dynamics 365 for Finance and Operations のナビゲーション](user-interface/page-navigation.md)
+### [Dynamics 365 for Finance and Operations のレイアウト](user-interface/page-layout.md)
 ### [Symbol フォント](user-interface/symbol-font.md)
 ### [カスタム パターンを使用したテスト フォーム](user-interface/testing-forms-custom-patterns.md)
 ### [ディープ リンクの作成と使用](user-interface/create-deep-links.md)
@@ -489,12 +489,12 @@
 
 ## クラウド配置
 ### [Azure リソース マネージャーの研修](deployment/arm-onboarding.md)
-### [Azure ExpressRoute および Dynamics 365 for Finance and Operations, Enterprise edition](deployment/expressroute.md)
+### [Azure ExpressRoute と Dynamics 365 for Finance and Operations](deployment/expressroute.md)
 
 ## [オンプレミス配置](deployment/on-premises-deployment-landing-page.md)
 ### [オンプレミスの概要](deployment/on-premises-overview.md)
 ### [オンプレミス配置の計画](deployment/plan-onprem-deployment.md)
-### [ハードウェアのサイズ](../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md)
+### [ハードウェアのサイズ](../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json)
 ### [オンプレミスのプロジェクトを作成する](lifecycle-services/lbd-create-lcs-on-prem-project.md)
 ### [オンプレミス環境の設定と配置](deployment/setup-deploy-on-premises-environments.md)
 #### [Platform update 12 を使用してオンプレミス環境を配置](deployment/setup-deploy-on-premises-pu12.md)
@@ -507,7 +507,7 @@
 ### [ローカル エージェントの更新](lifecycle-services/update-local-agent.md)
 ### [環境の再構成](lifecycle-services/reconfigure-environment.md)
 ### [クライアント インターネット接続](user-interface/client-disconnected.md)
-### [Dynamics 365 for Finance and Operations, Enterprise Edition (オンプレミス) のトラブルシューティング](deployment/troubleshoot-on-prem.md)
+### [Dynamics 365 for Finance and Operations (オンプレミス) のトラブルシューティング](deployment/troubleshoot-on-prem.md)
 
 ## カスタム コードの配置
 ### [配置可能パッケージの作成](deployment/create-apply-deployable-package.md)
@@ -527,7 +527,7 @@
 ### [AX 2012 アップグレード - アップグレード後に完了するタスク](migration-upgrade/app-validation-process.md)
 ### [AX 2012 アップグレード - 機能テスト合格](migration-upgrade/upgrade-functional-validation.md)
 ### [AX 2012 アップグレード - Go-Live の準備](migration-upgrade/upgrade-go-live-prep.md)
-
+### [AX 2012 アップグレード - Go live](migration-upgrade/2012-upgrade-cutover.md)
 
 ### AX 2012 からのアップグレードに影響する変更
 #### [単一伝票と通貨再評価のアップグレード](migration-upgrade/single-voucher-and-currency-revaluation-upgrade.md)
@@ -588,7 +588,9 @@
 ### [バッチ サーバーの概要](sysadmin/batch-server-overview.md)
 ### [バッチ ジョブの作成](sysadmin/tasks/create-batch-job.md)
 
-## [最適化アドバイザーのルールの作成](sysadmin/optimization-advisor.md)
+##  [最適化アドバイザーの概要](sysadmin/optimization-advisor-overview.md)
+### [最適化アドバイザーのルールの作成](sysadmin/create-rules-optimization-advisor.md)
+
 
 # Lifecycle Services
 ## [Lifecycle Services の概要](lifecycle-services/lcs.md)
@@ -701,10 +703,10 @@
 ## [サンドボックス データベース更新の要求](database/database-refresh.md)
 
 # サポート
-## [Dynamics 365 for Finance and Operations, Enterprise edition および Lifecycle Services のサポートの入手](lifecycle-services/lcs-support.md)
+## [Dynamics 365 for Finance and Operations および Lifecycle Services のサポートの入手](lifecycle-services/lcs-support.md)
 ## [プレミア サポート チケットの記録](lifecycle-services/premier-support.md)
 ## [Dynamics サービス エンジニアリング チームへの要求の送信](lifecycle-services/submit-request-dynamics-service-engineering-team.md)
-## [Dynamics 365 for Finance and Operations, Enterprise edition の技術サポートの設定](lifecycle-services/support-experience.md) 
+## [Dynamics 365 for Finance and Operations の技術サポートの設定](lifecycle-services/support-experience.md) 
 ## [予定された保守ウィンドウのよく寄せられる質問](lifecycle-services/planned-maintenance-window-faq.md) 
 ## [クラウドの工程とサービス](lifecycle-services/cloud-operations-servicing.md)
 ## [Finance and Operations サポート エクスペリエンスの管理](lifecycle-services/cloud-powered-support-lcs.md)

@@ -3,8 +3,8 @@
 # 使用開始
 ## [新機能および変更された機能](get-started/whats-new.md)
 ## [Dynamics 365 for Retail を購入する前に](get-started/before-you-buy.md)
-## [プレビュー サブスクリプションのサインアップ](../dev-itpro/dev-tools/sign-up-preview-subscription.md)
-## [デモ環境の配置](../dev-itpro/deployment/deploy-demo-environment.md)
+## [プレビュー サブスクリプションのサインアップ](../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/retail/toc.json)
+## [デモ環境の配置](../dev-itpro/deployment/deploy-demo-environment.md?toc=/retail/toc.json)
 ## [配置オプション](dev-itpro/choose-deployment.md)
 
 
@@ -44,10 +44,11 @@
 ## [Retail hardware station のコンフィギュレーションとインストール](retail-hardware-station-configuration-installation.md)
 ## [Retail の勤務時間および勤怠](retail-time-attendance.md)
 
-# Modern POS (MPOS) および Cloud POS
+# Modern Point of Sale (MPOS) および Cloud POS
 ## [Modern POS か Cloud POS かの選択](MPOS-or-CPOS.md)
-## [POS 操作](POS-operations.md)
+## [オンラインおよびオフラインでの POS 操作](pos-operations.md)
 ## [MPOS/CPOS のデモ データ画面レイアウト](demo-data.md)
+## [販売時点管理での製品および顧客検索の概要](POS-search-improvements.md)
 ## ハードウェア周辺機器
 ### [小売周辺機器の概要](retail-peripherals-overview.md)
 ### [Microsoft によってテストされた POS ハードウェア周辺機器](microsoft-tested-pos-hardware-peripherals.md)
@@ -60,8 +61,9 @@
 ### [POS アプリケーションとユーザー言語設定](pos-application-user-language-settings.md)
 ### [MPOS のイメージの設定](set-up-manage-images-retail-mpos.md)
 ## [情報コードの概要](info-codes-retail.md) 
+## [シリアル化された製品の POS 改善](serialized-inventory.md)
 ## 製品推奨事項
-### [カスタマイズされた製品の推奨事項の概要](personalized-product-recommendations.md)
+### [カスタマイズされた製品推奨事項の概要](personalized-product-recommendations.md)
 ### [POSデバイスでの推奨事項コントロールの追加](add-recommendations-control-pos-screen.md)
 ## [オフライン POS 機能](pos-offline-functionality.md)
 ## [シフトとキャッシュ ドロワーの管理](shift-drawer-management.md)
@@ -97,6 +99,7 @@
 ## [価格調整と割引](price-adjustments-discounts.md)
 ## [重複する割引の最適な組み合わせの決定](optimal-combination-overlapping-discounts.md)
 ## [チャネル固有の割引の定義](define-channel-specific-discounts.md)
+## [小売製品の割引の禁止](prevent-discounts.md)
 ## [小売販売のクーポンの作成](retail-coupons.md)
 
 # 製品と販売促進
@@ -105,6 +108,7 @@
 ## [属性および属性グループの概要](attribute-attributegroups-lifecycle.md)
 ## [属性の作成と管理](create-manage-attributes.md)
 ## [小売製品の設定](set-up-retail-products.md)
+## [拡張されたカテゴリと製品の管理](category-management-product-creation.md)
 ## [製品分析コード](../supply-chain/pim/product-dimensions.md)
 ## [バーコードの設定](set-up-bar-codes.md)
 ## [バーコード マスクの設定](set-up-bar-code-masks.md)
@@ -190,13 +194,14 @@
 # [小売開発と管理](dev-itpro/dev-retail-home-page.md)
 
 ## アーキテクチャ
-### [Microsoft Dynamics 365 for Finance and Operations, Enterprise edition のコンポーネント - 小売](retail-components.md)
-### [レポート サーバーのアーキテクチャ](dev-itpro/retail-server-architecture.md)
+### [Microsoft Dynamics 365 for Finance and Operations のコンポーネント - Retail](retail-components.md)
+### [Retail Server のアーキテクチャ](dev-itpro/retail-server-architecture.md)
 ### [小売チャネルのコミュニケーション](dev-itpro/define-retail-channel-communications-cdx.md)
 ### [MPOS アーキテクチャ](dev-itpro/retail-modern-pos-architecture.md)
 ### [小売オンライン ストア発行アーキテクチャ](dev-itpro/retail-online-store-publishing-architecture.md)
-### [販売チャネル パフォーマンス Power BI コンテンツ](../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)
+### [販売チャネル パフォーマンス Power BI コンテンツ](../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/retail/toc.json)
 ### [支払アプリケーション データ セキュリティ標準 (PA-DSS) 証明](dev-itpro/PA-DSS-Certification.md)
+### [オンプレミス配置で使用できる小売機能](retail-onprem.md)
 
 ## 配置と修正プログラム
 ### [Retail Store Scale Unit の概要](dev-itpro/retail-store-system-begin.md)
@@ -208,7 +213,7 @@
 ### [Retail Hardware Station のコンフィギュレーションとインストール](retail-hardware-station-configuration-installation.md)
 ### [Retail セルフサービス コンポーネントの一括配置](dev-itpro/retail-mass-deployment.md)
 ### [診断とトラブルシューティングの Retail コンポーネント イベント](dev-itpro/retail-component-events-diagnostics-troubleshooting.md)
-### [配置可能パッケージの適用](../dev-itpro/deployment/apply-deployable-package-system.md)
+### [配置可能パッケージの適用](../dev-itpro/deployment/apply-deployable-package-system.md?toc=/retail/toc.json)
 
 ## アップグレードおよび N-1 のサポート
 ### [アップグレードおよび N-1 のサポートの概要](dev-itpro/overview-upgrade-n-minus1.md)
@@ -218,7 +223,7 @@
 ### [デバイス管理実装ガイダンス](implementation-considerations-devices.md)
 
 ## 環境のコンフィギュレーション
-### [組織の法律条項およびプライバシーに関する声明へのリンクの追加](../dev-itpro/sysadmin/legal-terms-privacy-statement.md)
+### [組織の法律条項およびプライバシーに関する声明へのリンクの追加](../dev-itpro/sysadmin/legal-terms-privacy-statement.md?toc=/retail/toc.json)
 ### [Bing マップの管理](dev-itpro/manage-bing-maps.md)
 
 ## 販売時点管理の拡張機能

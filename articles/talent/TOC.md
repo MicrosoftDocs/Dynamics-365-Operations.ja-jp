@@ -3,6 +3,8 @@
 # [はじめに](talent-get-started.md)
 ## [システム要件と更新ポリシー](talent-versions-update-policy.md)
 ## [Microsoft Dynamics 365 for Talent のプロビジョニング](provisioning-talent.md)
+## [Talent 環境の削除](remove-test-environment.md)
+## [Microsoft Dynamics 365 for Talent のモジュラー アプリのプロビジョニング](modular-app-tech-faq.md)
 ## [Talent 機能の拡張](extend-talent-functionality.md)
 
 # [人材戦略の作成](departments-jobs-positions.md)
@@ -39,5 +41,5 @@
 ## [アンケート結果の評価](evaluate-questionnaire-results.md)
 
 # 職場の安全性とコンプライアンス (米国)
-## [フォーム I-9 の検証](../fin-and-ops/hr/localizations/noam-usa-form-i-9-verification.md)
-## [アメリカ障害者法 (ADA) への準拠](../fin-and-ops/hr/localizations/noam-usa-comply-ada.md)
+## [フォーム I-9 の検証](../fin-and-ops/hr/localizations/noam-usa-form-i-9-verification.md?toc=/talent/toc.json)
+## [アメリカ障害者法 (ADA) への準拠](../fin-and-ops/hr/localizations/noam-usa-comply-ada.md?toc=/talent/toc.json)
