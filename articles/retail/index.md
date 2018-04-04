@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2017-6-19
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 40d54a9a2920e87caba62c92b5ca6465fa68e3d4
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 164932ac3bc701696f5c0b08c5e2d585d9a8ba6a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 03/08/2018
 Microsoft Dynamics 365 for Retail は、すべてのチャネルの商取引を一元管理するエンド ツー エンドの小売用ソリューションです。 販売、モビリティ、インテリジェンス、生産性が含まれ、クラウドファースト、モバイルファーストで小売業者や作業者がより多くのことを実現するために役立ちます。 Retail では、販売促進、在庫、チャネルの管理機能など、さまざまなビジネス プロセスの運用を包括的にサポートします。 また、すべてのタッチポイントで没入型のカスタマー エクスペリエンスを提供します。
 
 > [!NOTE] 
-> Dynamics 365 for Retail は、Dynamics 365 for Finance and Operations Enterprise Edition および Dynamics 365 for Talent と密接に関係しています。 3 つすべての製品で同じ機能が表示される可能性があります。 このため、主に Retail に関連するトピックの場合、製品名は Microsoft Dynamics 365 for Retail です。主にコア製品 (Finance and Operations) に関連するトピックの場合、製品名は Microsoft Dynamics 365 for Finance and Operations Enterprise Edition です。主に人事管理に関連するトピックの場合、製品名は Dynamics 365 for Talent です。 
+> Dynamics 365 for Retail は、Dynamics 365 for Finance and Operations および Dynamics 365 for Talent と密接に関係しています。 3 つすべての製品で同じ機能が表示される可能性があります。 このため、主に Retail に関連するトピックの場合、製品名は Microsoft Dynamics 365 for Retail になります。主にコア製品 (Finance and Operations) に関連するトピックの場合、製品名は Microsoft Dynamics 365 for Finance and Operations になります。主に人事管理に関連するトピックの場合、製品名は Dynamics 365 for Talent になります。 
 
 左ウィンドウで機能領域を選択すると詳細が表示されます。
 

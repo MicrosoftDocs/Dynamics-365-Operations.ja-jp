@@ -18,10 +18,10 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: abc52192848649672cbcb8c770d74ba2aef139be
-ms.openlocfilehash: 199a8961f782816c71e47f9e76e097c069fbf686
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: db8b2e87ad020dac16ec74f2fea62e445c38e116
 ms.contentlocale: ja-jp
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -43,7 +43,7 @@ Talentを使用して、次のタスクを実行できます。
 + 日程表、セッション、コース編成を含むトレーニング コースの設定、提供、および分析。
 
 > [!NOTE] 
-> Dynamics 365 for Talent は、Dynamics 365 for Finance and Operations Enterprise Edition の人事管理にも密接に関係しています。 どちらの製品に同じ機能があります。 このため、主に人事管理に関連するトピックの場合、製品名は Dynamics 365 for Finance and Operations Enterprise Edition になります。主に Talent に関連するトピックの場合、製品名は Dynamics 365 for Talent になります。 1 つの製品で記述されているトピックは、関連する製品の同じ機能にも当てはまる可能性があります。
+> Dynamics 365 for Talent は、Dynamics 365 for Finance and Operations の人事管理にも密接に関係しています。 同じ機能がどちらの製品にも存在することがあります。 このため、主に人事管理に関連するトピックの場合、製品名は Dynamics 365 for Finance and Operations になります。主に Talent に関連するトピックの場合、製品名は Dynamics 365 for Talent になります。 1 つの製品で記述されているトピックは、関連する製品の同じ機能にも当てはまる可能性があります。
 
 <a name="develop-a-strategy-for-managing-your-human-resources"></a>人材を管理するための戦略を立てます。
 ---------------------------------------------------------
