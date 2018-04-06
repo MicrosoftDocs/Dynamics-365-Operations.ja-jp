@@ -18,10 +18,10 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: b2514b6ff7500863a312ee378be008a7dcfb7438
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 3eb642944a31aad983758fc28bc692800bb6b4d2
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 # <a name="getting-started-with-microsoft-dynamics-365-for-talent"></a>Microsoft Dynamics 365 for Talent の使用を開始する
@@ -31,7 +31,7 @@ ms.lasthandoff: 03/08/2018
 Microsoft Dynamics 365 for Talent では、簡単にユーザー インターフェイスを変更したり、ニーズにもっと直観的に答えることのできるオプションを設定したりできます。 このトピックには、ユーザー インターフェイスを基本設定に変更する方法に関する情報を提供するトピックへのリンクが含まれます。 トピックには、効率的で正確なシステムで情報を検索する際に役立つ情報へのリンクも含まれます。 
 
 > [!NOTE] 
-> 次の製品間には密接な関係があります: Dynamics 365 for Finance and Operations、Enterprise edition、Dynamics 365 for Retail、および Dynamics 365 for Talent。 すべての 3 つの製品上に同じ機能が表示されることがあります。 結果として、主に [Retail] に関連するトピックでの製品名は Dynamics 365 for Retail、主に [Talent] に関連するトピックでの製品名は Dynamics 365 for Talent、コア製品に関連するトピックでの製品名は、Dynamics 365 for Finance and Operations となります。 1 つの製品で記述されているトピックは、関連する製品の同じ機能にも当てはまる可能性があります。
+> 次の製品間には密接な関係があります: Dynamics 365 for Finance and Operations、Dynamics 365 for Retail、および Dynamics 365 for Talent。 すべての 3 つの製品上に同じ機能が表示されることがあります。 結果として、主に [Retail] に関連するトピックでの製品名は Dynamics 365 for Retail、主に [Talent] に関連するトピックでの製品名は Dynamics 365 for Talent、コア製品に関連するトピックでの製品名は、Dynamics 365 for Finance and Operations となります。 1 つの製品で記述されているトピックは、関連する製品の同じ機能にも当てはまる可能性があります。
 
 ### <a name="personalizing-talent"></a>Talent をカスタマイズ 
 次のトピックでは、Dynamics 365 for Talent で適切なタイミングで作業しやすくする多くの機能を設定する方法を説明します。 

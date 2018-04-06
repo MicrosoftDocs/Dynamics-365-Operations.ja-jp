@@ -19,10 +19,10 @@ ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 270e0de2d58550e517417076b49a5a8bdc62bc64
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: df07066371cb7d9c69976c9714b6d2fe456a0308
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -36,7 +36,7 @@ ms.lasthandoff: 11/03/2017
 次のセクションでは、外国為替のレートのインポートを設定して処理するために使用される情報の流れについて説明します。
 
 ## <a name="configure-an-exchange-rate-provider"></a>為替レート プロバイダーの設定
-為替レートをインポートする前に、為替レートを提供するプロバイダーに必要な情報を設定する必要があります。 **為替レート プロバイダーの設定**ページを使用して、為替レート プロバイダーを選択します。 一部の為替レート プロバイダーは、Microsoft Dynamics 365 for Finance and Operations、Enterprise edition のデモ データに含まれています。 次の表に、このページのコントロールの説明を示します。
+為替レートをインポートする前に、為替レートを提供するプロバイダーに必要な情報を設定する必要があります。 **為替レート プロバイダーの設定**ページを使用して、為替レート プロバイダーを選択します。 一部の為替レート プロバイダーが、Microsoft Dynamics 365 for Finance and Operations のデモ データに含まれています。 次の表に、このページのコントロールの説明を示します。
 
 |           |                                                                                                                                                                                                                             |
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

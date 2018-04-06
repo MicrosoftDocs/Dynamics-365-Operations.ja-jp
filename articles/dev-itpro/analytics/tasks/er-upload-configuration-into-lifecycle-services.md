@@ -16,10 +16,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: d24679a380ec824fe08c56aacb4bc348ff40440a
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 3d9c2192bac8477e9c9376aab3e3b561da777569
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 # <a name="upload-a-configuration-into-lifecycle-services-for-electronic-reporting-er"></a>電子申告 (ER) 用に Lifecycle Services にコンフィギュレーションをアップロードする
@@ -92,6 +92,6 @@ ms.lasthandoff: 09/29/2017
 10. [開く] をクリックします。
     * LCS リポジトリを選択し、開きます。  
     * 選択されたコンフィギュレーションが、選択された LCS プロジェクトの資産として表示されることに注意してください。  
-    * https://lcs.dynamics.com から LCS を開きます。リポジトリの登録のために以前に使用されたプロジェクトを開きます。このプロジェクトの「アセット ライブラリ」を開き、「GER コンフィギュレーション」資産タイプの中身を展開します – アップロードされた ER コンフィギュレーションが使用可能になります。 プロバイダーがこの LCS プロジェクトにアクセスできる場合は、アップロードされた LCS コンフィギュレーションは別の Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition インスタンスにインポートできることに注意してください。  
+    * https://lcs.dynamics.com を使用して LCS を開きます。リポジトリの登録のために以前に使用されたプロジェクトを開きます。このプロジェクトの「アセット ライブラリ」を開き、「GER コンフィギュレーション」資産タイプの中身を展開します – アップロードされた ER コンフィギュレーションが使用可能になります。 プロバイダーがこの LCS プロジェクトにアクセスできる場合は、アップロードされた LCS コンフィギュレーションは別の Microsoft Dynamics 365 for Finance and Operations インスタンスにインポートできることに注意してください。  
 
 

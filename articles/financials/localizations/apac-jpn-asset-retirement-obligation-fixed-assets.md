@@ -1,9 +1,9 @@
 ---
-title: "固定資産の資産償却責務の設定"
-description: "日本では、資産除去債務 (ARO) は法的な除去責務のある固定資産に対して認識されます。 この記事は、ARO の負債がどのように認識、償却、および未払となるか、および固定資産と ARO の負債が除去される方法について説明します。"
+title: "日本の固定資産の資産償却責務を設定します。"
+description: "この記事は、ARO の負債がどのように認識、償却、および未払となるか、および固定資産と ARO の負債が日本で除去される方法について説明します。"
 author: yijialuan
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 03/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,17 +18,16 @@ ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 94fbf1411255ede23b5bda53c4506a0a083ea326
+ms.sourcegitcommit: 554c350961baed8be8f37854dd1b095d4342ae0e
+ms.openlocfilehash: 86908f83e876bd9109fe90ee1fdfa0b69a2f2ed1
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/21/2018
 
 ---
 
-# <a name="set-up-asset-retirement-obligation"></a>資産償却責務の設定
+# <a name="set-up-asset-retirement-obligation-for-japan"></a>日本での資産除去責務の設定
 
 [!include[banner](../includes/banner.md)]
-
 
 日本では、資産除去債務 (ARO) は法的な除去責務のある固定資産に対して認識されます。 この記事は、ARO の負債がどのように認識、償却、および未払となるか、および固定資産と ARO の負債が除去される方法について説明します。
 
@@ -69,9 +68,4 @@ ARO を使用するには、次の設定手順を完了する必要がありま�
 |---------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | コンフィギュレーション キー        | アプリケーション オブジェクト ツリー (AOT) の**データ ディクショナリ** &gt; **コンフィギュレーション キー** ノードで、固定**資産**のコンフィギュレーション キーが使用できることを確認します。 |
 | セキュリティ ロールおよび職務 | このタスクを実行するには、**固定資産の管理**のセキュリティ ロールのメンバーである必要があります。|
-
-
-
-
-
 

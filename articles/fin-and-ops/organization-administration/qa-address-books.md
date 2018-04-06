@@ -1,6 +1,6 @@
 ---
 title: "アドレス帳 FAQ"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations, Enterprise edition のアドレス帳に関連するよく寄せられる質問に対する回答を示します。"
+description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations のアドレス帳に関連するよく寄せられる質問に対する回答を示します。"
 author: kfend
 manager: AnnBe
 ms.date: 10/26/2017
@@ -19,10 +19,10 @@ ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 2af6c89879300d8d1a510fd7d65b11f281997cd3
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 2d148b8bd4a2588d282a9077aa76997399693483
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 

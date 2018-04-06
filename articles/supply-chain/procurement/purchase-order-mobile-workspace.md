@@ -18,10 +18,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 24a17d3734e39815684098f694a77e96cdbc1cfe
-ms.openlocfilehash: d366ae53f4a9d8e676c3bc19e0450baa254cb716
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 2f495fa3507fd54499e29b4c09f504dd037c0a6c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/07/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -36,13 +36,13 @@ ms.lasthandoff: 03/07/2018
 ## <a name="overview"></a>概要 
 承認が必要な発注書は、承認ワークフローを経由します。 ワークフローには、1 人以上の人員のアクションが必要なさまざま手順を含めることができます。 たとえば、ある人物がタスクの完了または発注書の承認を行う必要があるとします。 
 
-**発注書の承認**モバイル ワークスペースで、モバイル デバイスから簡単に発注書の確認および対応ができます。 また、このワークスペースを使用して、Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition の Web クライアントからできるものと同じワークフロー アクションを実行することもできます。
+**発注書の承認**モバイル ワークスペースで、モバイル デバイスから簡単に発注書の確認および対応ができます。 また、このワークスペースを使用して、Microsoft Dynamics 365 for Finance and Operations の Web クライアントからできるものと同じワークフロー アクションを実行することもできます。
 
 ## <a name="prerequisites"></a>前提条件
 組織に配置されている Finance and Operations のバージョンによって、前提条件は異なります。
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition"></a>Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition を使用している場合の前提条件 
-Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition を組織に配置している場合、システム管理者は [**発注書の承認**] モバイル ワークスペースを公開する必要があります。 手順については、「[モバイル ワークスペースの公開](../../dev-itpro/mobile-apps/publish-mobile-workspace.md)」を参照してください。
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Microsoft Dynamics 365 for Finance and Operations を使用している場合の前提条件 
+Microsoft Dynamics 365 for Finance and Operations を組織に配置している場合、システム管理者は [発注書の承認] モバイル ワークスペースを公開する必要があります。 手順については、「[モバイル ワークスペースの公開](../../dev-itpro/mobile-apps/publish-mobile-workspace.md)」を参照してください。
 
 ### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Microsoft Dynamics 365 for Operations バージョン 1611 およびプラットフォーム更新プログラム 3 以降を使用している場合の前提条件
 Microsoft Dynamics 365 for Operations バージョン 1611 およびプラットフォーム更新プログラム 3 以降を組織に配置している場合、システム管理者は次の前提条件を満たす必要があります。 

@@ -3,7 +3,7 @@ title: "新規または変更"
 description: "このページでは、最新バージョンの Microsoft Dynamics 365 for Finance and Operations の新しい機能について学ぶ役立つトピックを示します。"
 author: josaw1
 manager: AnnBe
-ms.date: 03/21/2018
+ms.date: 03/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: HT
-ms.sourcegitcommit: ff73fdb3e6ce97e01838228c45795ca64e888add
-ms.openlocfilehash: e00dece6a6f917028379d879ec81a5c7ab210253
+ms.sourcegitcommit: 47de452c2072b6a29d7e2d34eb73b472be669a6c
+ms.openlocfilehash: eb6132b6d535deb13a4cd1343d04967893a2cfe9
 ms.contentlocale: ja-jp
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/25/2018
 
 ---
 
@@ -120,10 +120,10 @@ ms.lasthandoff: 01/23/2018
 <tbody>
 <tr class="odd">
 <td>Microsoft Dynamics 365 for Finance and Operations Enterprise Edition</td>
-<td>プラットフォーム update 13</td>
-<td>7.0.4764</td>
-<td>2018 年 1 月 (これは対象となるリリースであり、ユーザーが継続的な自動更新推奨プログラム (CAAP) を希望した場合にのみ使用できます。)</td>
-<td><a href="whats-new-platform-update-13.md">Dynamics 365 for Finance and Operations、Enterprise edition プラットフォーム更新プログラム 13 (2018 年 1 月) の新機能および変更された機能</a></td><tbody>
+<td>プラットフォーム update 15</td>
+<td>7.0.4839</td>
+<td>2018 年 3 月 (これは対象となるリリースであり、ユーザーが継続的な自動更新推奨プログラム (CAAP) を希望した場合にのみ使用できます。)</td>
+<td><a href="whats-new-platform-update-15.md">Dynamics 365 for Finance and Operations、Enterprise edition プラットフォーム更新プログラム 15 (2018 年 3 月) の新機能および変更された機能</a></td><tbody>
 <tr class="odd">
 <td>Microsoft Dynamics 365 for Finance and Operations Enterprise Edition</td>
 <td>プラットフォーム update 12</td>

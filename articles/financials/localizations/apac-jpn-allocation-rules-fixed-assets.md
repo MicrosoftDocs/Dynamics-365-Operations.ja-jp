@@ -1,9 +1,9 @@
 ---
-title: "固定資産配賦ルール"
-description: "日本では、固定資産は管理部門に登録され、減価償却量は使用部門間で割り当てられる必要があります。 減価償却金額を割合で複数の財務分析コードに割り当てる配賦ルールを設定できます。 この記事は、固定資産配賦ルールについてよく寄せられる質問に回答します。"
+title: "日本の固定資産配賦ルール"
+description: "この記事は、日本の固定資産配賦ルールについてよく寄せられる質問に回答します。"
 author: yijialuan
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 03/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,17 +18,16 @@ ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 57fc92109af870047a67c994bbab458d0b0cd07c
+ms.sourcegitcommit: 554c350961baed8be8f37854dd1b095d4342ae0e
+ms.openlocfilehash: f0a78d0407ad52c5f42fad18d0b369f5b6829ae1
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/21/2018
 
 ---
 
-# <a name="allocation-rules-for-fixed-assets"></a>固定資産配賦ルール
+# <a name="fixed-asset-allocation-rules-for-japan"></a>日本の固定資産配賦ルール
 
 [!include[banner](../includes/banner.md)]
-
 
 日本では、固定資産は管理部門に登録され、減価償却量は使用部門間で割り当てられる必要があります。 減価償却金額を割合で複数の財務分析コードに割り当てる配賦ルールを設定できます。 この記事は、固定資産配賦ルールについてよく寄せられる質問に回答します。
 
@@ -63,7 +62,4 @@ ms.lasthandoff: 11/03/2017
 
 ## <a name="additional-resources"></a>その他のリソース
 - [資産グループへの共有資産とのれんの帳簿価額の配賦](./tasks/allocate-carrying-amount.md)
-
-
-
 

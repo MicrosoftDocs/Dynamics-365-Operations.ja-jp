@@ -18,10 +18,10 @@ ms.author: sericks
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
 ms.translationtype: HT
-ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
-ms.openlocfilehash: 233d91138b11905d971be90154da54e61bbe2919
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: b84778bd67e8c5bad6e8858d2af71f46e0dfe145
 ms.contentlocale: ja-jp
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -39,7 +39,7 @@ ms.lasthandoff: 12/01/2017
 
 モバイル アプリにより、組織が業務プロセスをモバイル デバイスで使用可能になります。 IT 管理者が組織用のモバイル ワークスペースを有効にすると、ユーザーはアプリにログインしてすぐにモバイル デバイスから業務プロセスの実行を開始できます。 モバイル アプリには、生産性を高めるのに役立つ次の機能が含まれています。
 
-- ネットワーク接続が断続的な場合やモバイル デバイスが完全にオフラインの場合でも、ユーザーは業務データを表示、編集、および処理できます。 デバイスがネットワーク接続を再確立する際に、オフライン データ操作は Dynamics 365 for Finance and Operations、Enterprise Edition、または Microsoft Dynamics 365 for Finance and Operations と自動的に同期します。
+- ネットワーク接続が断続的な場合やモバイル デバイスが完全にオフラインの場合でも、ユーザーは業務データを表示、編集、および処理できます。 デバイスがネットワーク接続を再確立する際に、オフライン データ操作は Dynamics 365 for Finance and Operations と自動的に同期されます。
 - IT 管理者または開発者は、組織に合わせたモバイル ワークスペースを構築し公開することができます。 アプリは既存のコード資産を使用します。 したがって、検証手順、ビジネス ロジック、またセキュリティ コンフィギュレーションも再実装の必要はありません。
 - IT 管理者または開発者は、Web クライアントに含まれているポイント アンド クリック ワークスペース デザイナーを使用してモバイル ワークスペースを簡単に設計できます。
 - IT 管理者または開発者は、ビジネス ロジック拡張フレームワークを使用してワークスペースのオフライン機能を必要に応じて最適化できます。 デバイスがオフラインの間もデータは引き続き処理されるため、デバイスが常時ネットワーク接続していなくても、モバイル シナリオは豊富で流動的なままです。
@@ -90,7 +90,7 @@ ms.lasthandoff: 12/01/2017
 <tr class="even">
 <td>2</td>
 <td>システム管理者</td>
-<td><strong>Microsoft Dynamics 365 for Finance and Operations バージョン 1611 を使用している場合 :</strong> Microsoft が提供するモバイル ワークスペースを有効にする KB をダウンロードしインストールします。</td>
+<td><strong>Microsoft Dynamics 365 for Operations バージョン 1611 を使用している場合:</strong> Microsoft が提供するモバイル ワークスペースを有効にする KB をダウンロードしインストールします。</td>
 <td>詳細については、次のトピックを参照してください。
 <ul>
 

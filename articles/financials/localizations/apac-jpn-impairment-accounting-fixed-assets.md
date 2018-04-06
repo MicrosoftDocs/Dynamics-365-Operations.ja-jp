@@ -1,9 +1,9 @@
 ---
-title: "固定資産の減損会計"
+title: "日本の固定資産の減損会計"
 description: "このトピックでは、日本の固定資産の減損会計に関する情報について説明します。"
 author: yijialuan
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 03/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,21 +18,20 @@ ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 7edc05318b8de0799b3b14b9f84d6f1507886fa2
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: f8a35182cd1f1f891503325da8fc9ead0655c22f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
-# <a name="impairment-accounting-for-fixed-assets"></a>固定資産の減損会計
+# <a name="impairment-accounting-for-fixed-assets-for-japan"></a>日本の固定資産の減損会計
 
 [!include[banner](../includes/banner.md)]
 
-
 このトピックでは、日本の固定資産の減損会計に関する情報について説明します。
 
-Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition を使用して固定資産の減損を設定および計算するには、次のタスクを実行できます。
+Microsoft Dynamics 365 for Finance and Operations を使用して固定資産の減損を設定および計算するには、次のタスクを実行できます。
 
 -   減損された可能性のある固定資産の一覧を生成します。 一覧の各資産の値引き前キャッシュ フロー、公正価額、復旧可能な金額を手動で確認し、計算して、固定資産が減損されるかどうかを決定できます。
 -   固定資産の値引き前キャッシュ フローなど減損のインジケーターを更新します。

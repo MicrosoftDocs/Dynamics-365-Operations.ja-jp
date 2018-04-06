@@ -16,10 +16,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7de5fbcaa9f287752e3ae4834eb48d622d263579
-ms.openlocfilehash: 890f035a291dbec936594ceeabc5de284d160ad4
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: a1ccd440353e986d296de370506fb1951331e2cf
 ms.contentlocale: ja-jp
-ms.lasthandoff: 10/25/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 # <a name="define-the-dependency-of-configurations-from-other-components-for-electronic-reporting-er"></a>電子申告用 (ER) の他のコンポーネントからのコンフィギュレーションの依存関係を定義する
@@ -28,7 +28,7 @@ ms.lasthandoff: 10/25/2017
 
 これらの手順を完了するには、最初にタスク ガイドでの手順を実行し、ER モデル マッピング コンフィギュレーションを管理し、および Microsoft Dynamics Lifecycle Services (LCS) にアクセスする必要があります。
 
-この手順は、電子申告 (ER) コンフィギュレーションをどのように設計し、および他のソフトウェア コンポーネントからその依存関係を指定する方法を説明します。それによりコンフィギュレーションが Microsoft Dynamics 365 for Finance and Operations、Enterprise edition の特定のバージョンを正しくダウンロードされるのを保証できるようにします。 この例では、サンプル会社 Litware, Inc. に必要な ER コンフィギュレーションを作成します。 
+この手順は、電子申告 (ER) コンフィギュレーションをどのように設計し、および他のソフトウェア コンポーネントからその依存関係を指定する方法を説明します。それによりコンフィギュレーションが Microsoft Dynamics 365 for Finance and Operations の特定のバージョンを正しくダウンロードされるのを保証できるようにします。 この例では、サンプル会社 Litware, Inc. に必要な ER コンフィギュレーションを作成します。 
 
 この手順は、「システム管理者」または「電子レポート開発者」ロールが割り当てられているユーザーを対象としています。 ER コンフィギュレーションは会社間で共有されるため、手順はすべての会社で実行されます。 
 

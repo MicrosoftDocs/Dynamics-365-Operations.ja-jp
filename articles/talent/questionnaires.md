@@ -19,10 +19,10 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 84d5f60cdce4cd667c408d17d9892d7079947f58
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: fc7194e7f95a6a99587a6f7e8ab8a30957bbbd90
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 03/08/2018
 
 このトピックは、アンケートに関する一般情報、およびより詳しい情報へのリンクを提供します。 アンケートとは、多様な目的の情報を収集するために使用される一連の質問です。 アンケートのデザイン、作成、配布、および回答の完了を行い、結果を分析することができます。 
 
-Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition で使用できるさまざまな機能の組み合わせを使用して、特定の要件に合わせたアンケートをカスタマイズできます。 アンケートの使用方法の例を挙げます。
+Microsoft Dynamics 365 for Finance and Operations で使用できるさまざまな機能の組み合わせを使用して、特定の要件に合わせたアンケートをカスタマイズできます。 アンケートの使用方法の例を挙げます。
 
 -   従業員や申請者の専門的なスキルをテストする。
 -   コース参加者がコースの材料を学んだかどうかを評価します。

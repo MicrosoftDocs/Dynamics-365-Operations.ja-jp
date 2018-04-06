@@ -1,6 +1,6 @@
 ---
 title: "購買入庫におけるプロジェクト費用の発生"
-description: "このトピックでは、購買入庫での未収プロジェクト費用を、Microsoft Dynamics 365 for Finance and Operations,Enterprise エディションで追跡する方法について説明します。"
+description: "このトピックでは、購買入庫での未収プロジェクト費用を、Microsoft Dynamics 365 for Finance and Operations で追跡する方法を説明します。"
 author: twheeloc
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,10 +19,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: f7355dc856d97a19d0f7558061b3e2d9902dab65
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 9a74b684e955376b9c3036954f4a6e6628c468f0
 ms.contentlocale: ja-jp
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 02/07/2018
 [!include[banner](../includes/banner.md)]
 
 
-このトピックでは、購買入庫での未収プロジェクト費用を、Microsoft Dynamics 365 for Finance and Operations,Enterprise エディションで追跡する方法について説明します。 
+このトピックでは、購買入庫での未収プロジェクト費用を、Microsoft Dynamics 365 for Finance and Operations で追跡する方法を説明します。 
 
 プロジェクトの請求書は、商品やサービスが提供された後に到着することが多く、プロジェクトの主要業績評価指標 (KPIs) に重大な影響を及ぼす可能性があります。 財務およびプロジェクト レポート両方におけるトランザクションを追跡できるのは重要なことです。
 

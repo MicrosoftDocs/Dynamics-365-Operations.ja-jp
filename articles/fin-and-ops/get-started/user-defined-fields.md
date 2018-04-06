@@ -3,7 +3,7 @@ title: "カスタム フィールド"
 description: "このトピックでは、どのように Microsoft Dynamics 365 for Finance and Operations で、一部のユーザーがアプリケーションをビジネスに合わせて調整するためのカスタム フィールドを作成できるかを示します。"
 author: jasongre
 manager: AnnBe
-ms.date: 01/19/2018
+ms.date: 03/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -14,13 +14,13 @@ ms.reviewer: sericks
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: jasongre
-ms.search.validFrom: 2017-12-31
+ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: Platform update 13
 ms.translationtype: HT
-ms.sourcegitcommit: ad59346f88b7a5984e16418e2aade7ccaedf180b
-ms.openlocfilehash: 142c66c189d6401cfb3db128e45fea6c071e99bf
+ms.sourcegitcommit: 454368ab5a467002ebf973db97fd98e31885dfe0
+ms.openlocfilehash: 4420eeb249a4d1bdac203e32d017dcebbddf95c3
 ms.contentlocale: ja-jp
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/23/2018
 
 ---
 
@@ -30,7 +30,9 @@ ms.lasthandoff: 02/28/2018
 
 [!include[banner](../includes/pre-release.md)] 
 
-Microsoft Dynamics 365 for Finance and Operations、Enterprise edition が、広範囲なビジネス プロセスを管理しすぐに使えるフィールドの広範なセットを作成する間、システムで追加情報を追跡する会社がたびたび必要です。 このニーズに合わせて、Finance and Operations は、機能へのアクセス許可を提供された自社に合うアプリケーションを調整するカスタム フィールドを作成できます。
+Microsoft Dynamics 365 for Finance and Operations が、広範囲なビジネス プロセスを管理しすぐに使えるフィールドの広範なセットを作成する間、システムで追加情報を追跡する会社がたびたび必要です。 このニーズに合わせて、Finance and Operations は、機能へのアクセス許可を提供された自社に合うアプリケーションを調整するカスタム フィールドを作成できます。 
+
+カスタム フィールドを追加する機能は、プラットフォームのアップデート 13 以降で利用できます。
 
 このビデオでは、ページにカスタム フィールドを追加するのがどれほど簡単か示します。
 

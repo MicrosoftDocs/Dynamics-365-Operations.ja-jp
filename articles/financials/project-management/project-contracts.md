@@ -1,6 +1,6 @@
 ---
 title: "プロジェクト契約"
-description: "このトピックでは、さまざまなタイプのプロジェクトや資金調達ソースで作成できるプロジェクト契約について、また Microsoft Dynamics 365 for Finance and Operations, Enterprise edition で契約を管理しプロジェクト顧客に請求する方法についての説明と例を提供します。"
+description: "このトピックでは、さまざまなタイプのプロジェクトや資金調達ソースで作成できるプロジェクト契約について、また Microsoft Dynamics 365 for Finance and Operations で契約を管理しプロジェクト顧客に請求する方法についての例を提供します。"
 author: KimANelson
 manager: AnnBe
 ms.date: 11/03/2017
@@ -19,10 +19,10 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 3a1bfd4bd5f396c05277159ac112eaa8197d5818
-ms.openlocfilehash: c8328bd2d93bbe763e629248edc1b7b4576005ae
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: e46393b9ac8797bf12cca12099d177980b75ba38
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-この記事では、さまざまなタイプのプロジェクトや資金調達ソースで作成できるプロジェクト契約について、また Microsoft Dynamics 365 for Finance and Operations, Enterprise edition で契約を管理しプロジェクト顧客に請求する方法についての説明と例を提供します。
+この記事では、さまざまなタイプのプロジェクトや資金調達ソースで作成できるプロジェクト契約について、また Microsoft Dynamics 365 for Finance and Operations で契約を管理しプロジェクト顧客に請求する方法についての説明と例を提供します。
 
 プロジェクト契約に作成するプロジェクト タイプで、プロジェクトの顧客への請求方法が決まります。 プロジェクト契約と関連するプロジェクトは変更できますが、プロジェクト タイプは変更できません。 
 

@@ -1,6 +1,6 @@
 ---
 title: "詳細な口座調整の設定プロセス"
-description: "詳細な口座調整では、電子口座取引明細書をインポートし、Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition での銀行トランザクションに合わせて自動的に調整することができます。  この資料では、調整のプロセスの設定について説明します。"
+description: "詳細な口座調整では、電子口座取引明細書をインポートし、Microsoft Dynamics 365 for Finance and Operations での銀行トランザクションに合わせて自動的に調整することができます。  この資料では、調整のプロセスの設定について説明します。"
 author: twheeloc
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,10 +19,10 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: aec219f545e880407b9a7d62b2dda4a607ac6bdd
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: f77a9c927232c95558ba78037f6a6e9f77e202c2
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-詳細な口座調整では、電子口座取引明細書をインポートし、Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition での銀行トランザクションに合わせて自動的に調整することができます。  この資料では、調整のプロセスの設定について説明します。  
+詳細な口座調整では、電子口座取引明細書をインポートし、Microsoft Dynamics 365 for Finance and Operations での銀行トランザクションに合わせて自動的に調整することができます。  この資料では、調整のプロセスの設定について説明します。  
 
 詳細な口座調整機能を使用する前に設定する必要のあるいくつかの要素があります。 口座取引明細書のインポートの設定の情報については、「[口座取引明細書のインポート プロセスの設定](set-up-advanced-bank-reconciliation-import-process.md)」を参照してください。  調整プロセスの設定の要件は、次のとおりです。
 

@@ -1,6 +1,6 @@
 ---
 title: "キーボード ショートカット"
-description: "以下のキーボード ショートカットは、Dynamics 365 for Finance and Operations, Enterprise edition 全体に適用されます。"
+description: "以下のキーボード ショートカットは、Dynamics 365 for Finance and Operations 全体に適用されます。"
 author: jasongre
 manager: AnnBe
 ms.date: 12/12/2017
@@ -18,10 +18,10 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
-ms.openlocfilehash: 8bf0f44583d183d992547c773f2cf7a8ac1db5fc
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: c4446a04cd01645b3b79f2d952622daf60953331
 ms.contentlocale: ja-jp
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 12/14/2017
 [!include[banner](../includes/banner.md)]
 
 
-以下のキーボード ショートカットは、Dynamics 365 for Finance and Operations, Enterprise edition 全体に適用されます。 
+以下のキーボード ショートカットは、Dynamics 365 for Finance and Operations 全体に適用されます。 
 
 **注記:** ここで説明するショートカット キーは、米国のキーボード レイアウトのものです。 他のキーボード レイアウト キーは、米国のキーボード キーとまったく同じではない場合があります。
 
@@ -74,7 +74,7 @@ ms.lasthandoff: 12/14/2017
 | 情報ボックス ペインを開く (すでに開かれている場合は、情報ボックス ペインにフォーカスを移動) | Alt+M、B または Ctrl+F2                        |
 | 情報ボックス ペインを閉じる (情報ボックス ペインにフォーカスがある場合)                         | Esc キー                                       |
 | 次または前の情報ボックスに移動 (情報ボックス ペインにフォーカスがある場合)              | Alt+Shift+下方向キーまたは Alt+Shift+上方向キー |
-| &lt;n&gt; 番目の情報ボックスに移動 (情報ボックス ペインにフォーカスがある場合)                | Alt + &lt;n&gt; (&lt;n&gt; = 1-9)           |
+| &lt;n&gt; 番目の情報ボックスに移動 (情報ボックス ペインにフォーカスがある場合)                | Alt+&lt;n&gt; (&lt;n&gt; は数字の 1 から 9 キー)           |
 | 情報ボックスを展開 (情報ボックスのヘッダーにフォーカスがある場合)                             | Space キーまたは Enter キー                            |
 | 現在の情報ボックスを折りたたむ                                                    | Alt + 0                                     |
 
@@ -115,11 +115,11 @@ ms.lasthandoff: 12/14/2017
 | **目的**                                      | **キー**                                    |
 | 前後のフィールドに移動                     | Tab または Shift+Tab                              |
 | 前後のタブに移動する                       | Alt+Shift+ 右方向キーまたは Alt+Shift+ 左方向キー |
-| &lt;n&gt; 番目のタブに移動                         | Alt + Shift + &lt;n&gt; (&lt;n&gt; = 1-9)        |
+| &lt;n&gt; 番目のタブに移動                         | Alt+Shift+&lt;n&gt; (&lt;n&gt; は数字の 1 から 9 キー)        |
 | 前後のクイック タブに移動する                   | Alt+Shift+下方向キーまたは Alt+Shift+上方向キー    |
-| &lt;n&gt; 番目のクイック タブに移動                     | Alt + &lt;n&gt; (&lt;n&gt; = 1-9)              |
+| &lt;n&gt; 番目のクイック タブに移動                     | Alt+&lt;n&gt; (&lt;n&gt; は数字の 1 から 9 キー)              |
 | 次または前のブレード (垂直タブ) に移動する      | Alt+Shift+ 右方向キーまたは Alt+Shift+ 左方向キー |
-| &lt;n&gt; 番目のブレード (垂直タブ) に移動する        | Alt + Shift + &lt;n&gt; (&lt;n&gt; = 1-9)        |
+| &lt;n&gt; 番目のブレード (垂直タブ) に移動する        | Alt+Shift+&lt;n&gt; (&lt;n&gt; は数字の 1 から 9 キー)        |
 | クイック タブを展開 (クイック タブのヘッダーにフォーカスがある場合) | Space キーまたは Enter キー                               |
 | 現在のクイック タブを折りたたむ                        | Alt + 0                                        |
 | グリッド表示に切り替え                                 | Ctrl + Shift + G                                 |

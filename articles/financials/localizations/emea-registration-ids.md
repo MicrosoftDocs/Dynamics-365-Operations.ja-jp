@@ -18,10 +18,10 @@ ms.author: vlru
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 3d3ad89f80c3e3f42e117109f4a76232795b7d64
-ms.openlocfilehash: e908d4ec41263ed4230ea5e70fa08db793abedc6
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 978c6c6f2a3de803f252e93040d2d7eb2bc4a793
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -56,7 +56,7 @@ ms.lasthandoff: 11/28/2017
 |-----------------------|----------------|
 | 登録タイプ     | 特定の国/地域での登録タイプ。|
 | 次のものに制限         | 制限の種類は、なし、個人、組織の税登録タイプに適用されます。|
-| 登録カテゴリ | 国で使用するために承認された固有の登録 ID。 Microsoft Dynamics 365 for Finance および Operations、Enterprise Edition カテゴリでのサポートの完全な一覧は以下のとおりです。 |
+| 登録カテゴリ | 国で使用するために承認された固有の登録 ID。 Microsoft Dynamics 365 for Finance and Operations カテゴリでのサポートの完全な一覧は以下のとおりです。 |
 
 ## <a name="enter-registration-ids-for-global-address-book-records"></a>グローバル アドレス帳レコードの登録 ID を入力します。
 

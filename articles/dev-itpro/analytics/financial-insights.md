@@ -18,10 +18,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: d527df21e791978b41527c01c2e6b68b393861ac
-ms.openlocfilehash: 90dc6214f1eb31440a3ec78a58c6a07394245cd2
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 33a8bc78006ae9e7d5ca905a98886fd7af706604
 ms.contentlocale: ja-jp
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 02/28/2018
 
 [!include[banner](../includes/banner.md)]
 
-**財務インサイト** は、Microsoft Power BIを使用して、財務の主要業績評価指標 (KPI)、グラフ、および財務諸表を結び付けます。 Microsoft Dynamics 365 Finance and Operations Enterprise Edition に埋め込まれている Power BI。
+**財務インサイト** は、Microsoft Power BIを使用して、財務の主要業績評価指標 (KPI)、グラフ、および財務諸表を結び付けます。 Microsoft Dynamics 365 Finance and Operations に埋め込まれている Power BI。
 **財務インサイト** のフォーカスは分析レポートです。 組織全体にわたる役割として、表示、研究、理解、および実行できます。 
 
 **財務インサイト** は、組織の財務の健全性をより完全に把握できるよう、総勘定元帳および補助元帳からのデータを結合します。
@@ -287,7 +287,7 @@ Power BI を使用する新しいワークスペースおよび財務諸表は�
  - 財務諸表でデザイン、フィルター処理、およびセキュリティ用に使用できる、主勘定階層または組織階層を定義できるようにするための、レポート階層を定義する機能。                                                                    
  - 印刷のサポート
 
-新機能は、機能が開始する際、ロードマップ Web サイトから通知されます: https://roadmap.dynamics.com/。
+新機能は、機能が開始される際、ロードマップ Web サイトから通知されます: https://roadmap.dynamics.com/。
 
 ## <a name="additional-resources-for-power-bi"></a>Power BI の追加リソース
 

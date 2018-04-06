@@ -1,6 +1,6 @@
 ---
 title: "Sales から Finance and Operations の連絡先または顧客への連絡先の直接同期"
-description: "このトピックでは、Microsoft Dynamics 365 for Sales から Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition に対して、連絡先 (連絡先) と連絡先 (顧客) エンティティを同期するために使用されるテンプレートと基本的なタスクについて説明します。"
+description: "このトピックでは、Microsoft Dynamics 365 for Sales から Microsoft Dynamics 365 for Finance and Operations に対して、連絡先 (連絡先) と連絡先 (顧客) エンティティを同期するために使用されるテンプレートと基本的なタスクについて説明します。"
 author: ChristianRytt
 manager: AnnBe
 ms.date: 10/25/2017
@@ -20,21 +20,21 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 0d409b3b7f19ca31d9c720bca191f1ddba81caa3
-ms.openlocfilehash: 6269b73dfca46d455784046199463d3f86e653ae
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 021a43c78cec83b23aff5dcc40db1a4be81aefc3
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/13/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
-# <a name="synchronize-contacts-directly-from-sales-to-contacts-or-customers-in-finance-and-operations"></a>Sales から Finance and Operations の連絡先または顧客への連絡先の直接同期
+# <a name="synchronize-contacts-directly-from-sales-to-contacts-or-customers-in-finance-and-operations"></a>Finance and Operations の連絡先または顧客への Sales の連絡先の直接同期
 
 [!include[banner](../includes/banner.md)]
 
 > [!NOTE]
 > 見込顧客を現金化するソリューションを使用する前に、[Dynamics 365 データ統合](/common-data-service/entity-reference/dynamics-365-integration) をよく理解しておく必要があります。
 
-このトピックでは、Microsoft Dynamics 365 for Sales から Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition に対して、連絡先 (連絡先) と連絡先 (顧客) エンティティを直接同期するために使用されるテンプレートと基本的なタスクについて説明します。
+このトピックでは、Microsoft Dynamics 365 for Sales から Microsoft Dynamics 365 for Finance and Operations に対して、連絡先 (連絡先) と連絡先 (顧客) エンティティを直接同期するために使用されるテンプレートと基本的なタスクについて説明します。
 
 ## <a name="data-flow-in-prospect-to-cash"></a>見込み客の現金化へのデータフロー
 

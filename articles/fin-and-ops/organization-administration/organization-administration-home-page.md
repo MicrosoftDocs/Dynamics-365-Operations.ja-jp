@@ -1,6 +1,6 @@
 ---
 title: "組織管理ホーム ページ"
-description: "このトピックでは、組織での Microsoft Dynamics 365 for Finance and Operations, Enterprise edition の使用に役立つリソースを示します。"
+description: "このトピックでは、組織での Microsoft Dynamics 365 for Fianance と Operations の使用に役立つリソースを示します。"
 author: sericks007
 manager: AnnBe
 ms.date: 08/18/2017
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f1cff2388b02ff6dfd52a39b7f3ea90f10807096
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: a2c1d846527eac4db0a043c7f1c51da0e73bd796
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-このトピックでは、Power Users および Administrators が Microsoft Dynamics 365 for Finance and Operations, Enterprise edition をコンフィギュレーションするのに役立つコンテンツを示します。 このコンテンツは、組織と業務を円滑かつ効率的に操作するようシステムをコンフィギュレーションするのに役立ちます。
+このトピックでは、Power Users および Administrators が Microsoft Dynamics 365 for Finance and Operations をコンフィギュレーションするのに役立つコンテンツを示します。 このコンテンツは、組織と業務を円滑かつ効率的に操作するようシステムをコンフィギュレーションするのに役立ちます。
 
 ここに表示されるコンテンツの多くは、[**組織管理**] モジュールでの機能に適用されます。 ただし、レコード テンプレートを作成および使用するなどの、組織をより効率的に実行するのに役立つ任意のモジュールで実行できる、いくつかのタスクがあります。 
 

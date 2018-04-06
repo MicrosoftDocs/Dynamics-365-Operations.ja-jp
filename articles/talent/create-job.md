@@ -19,10 +19,10 @@ ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 962b3084c5340813d1697cab680621350510d4b9
+ms.sourcegitcommit: 812db9f1d319e4d16f83700a7153a0a3b318963e
+ms.openlocfilehash: aaa8bdedc31ee03e96a0f7a5e78f25f888913e71
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/23/2018
 
 ---
 
@@ -91,6 +91,6 @@ ms.lasthandoff: 11/03/2017
 ## <a name="areas-of-responsibility"></a>担当領域
 職位の作業者が担当する作業の役割、プロセス、および製品を示す担当領域を使用します。 たとえば、「経理担当」というジョブの場合、担当領域には、「製品 A の財務報告」があります。 検索機能を使用して開ける**担当領域**ページを使用して担当領域を管理します。 **担当領域**ページで、担当領域の名前と説明を入力します。 [メモ] フィールドで、追加情報をオプションで入力できます。 メモは、ここで入力したメモを変更しないで特定のジョブに対して更新できます。
 
-
-
+## <a name="steps-for-creating-a-job"></a>ジョブを作成する手順
+新しいジョブを作成するためのステップ バイ ステップの手順については次のトピック [新しいジョブの定義](../fin-and-ops/hr/tasks/define-new-jobs.md) を参照してください。 
 

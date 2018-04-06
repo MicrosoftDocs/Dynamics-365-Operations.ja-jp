@@ -20,10 +20,10 @@ ms.author: roxanad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 3a1bfd4bd5f396c05277159ac112eaa8197d5818
-ms.openlocfilehash: 5e67be5687388d399e2f702d8070cd960cbe7939
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: d0e8d1ac8b775f9c728d6bfa6ba219dd889bf8a2
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 11/03/2017
 [!include[retail name](../includes/retail-name.md)]
 
 
-Microsoft Dynamics 365 for Finance and Operations, Enterpise edition の既定の注文設定は、品目が供給または保管されるサイトおよび倉庫、取引または在庫管理のために使用される最小、最大、複数、標準数量、リード タイム、停止フラグ、注文納期メソッドを定義します。 既定の注文設定は、発注書、販売注文、移動オーダー、在庫仕訳帳の登録時、および計画オーダーを生成するマスタープランを作成時に使用されます。 既定の注文設定は、品目固有、サイト固有、製品バリアント固有、または製品分析コード固有です。
+Microsoft Dynamics 365 for Finance and Operations の既定の注文設定は、品目が供給または保管されるサイトおよび倉庫、取引または在庫管理のために使用される最小、最大、複数、標準数量、リード タイム、停止フラグ、注文納期メソッドを定義します。 既定の注文設定は、発注書、販売注文、移動オーダー、在庫仕訳帳の登録時、および計画オーダーを生成するマスタープランを作成時に使用されます。 既定の注文設定は、品目固有、サイト固有、製品バリアント固有、または製品分析コード固有です。
 
 [既定の注文設定] ページで、既定の注文設定を定義できます。 このページを開くには、[製品情報管理] &gt; [製品] &gt; [リリース済製品] &gt; [リリース済製品の選択] &gt; [計画] または [在庫の管理] アクションペイン上 &gt; [注文設定] &gt; [既定の注文設定] に移動します。
 

@@ -18,10 +18,10 @@ ms.author: mkirknel
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
-ms.openlocfilehash: 6028f6007cf2fd3f21c2e6cf3f5fac85c6e0da0a
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: bfbc0fdfcff809a7d22362961b9778355ed7317b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 12/01/2017
 このモバイル ワークスペースは、Microsoft Dynamics 365 for Unified Operations モバイル アプリで使用するためのものです。
 
 ## <a name="overview"></a>概要 
-[**仕入先コラボレーション**] モバイル ワークスペースでは、仕入先が新しい発注書を常に把握できるようにし、Microsoft Dynamics 365 for Operations、Enterprise edition の Web クライアントで発注書の表示をしてから対応ができるようになります。 
+[仕入先コラボレーション] モバイル ワークスペースでは、仕入先が新しい発注書を常に把握できるようにし、Microsoft Dynamics 365 for Operations の Web クライアントで発注書の表示をしてから対応ができるようになります。 
 
 >[!NOTE]
 > モバイル ワークスペースは仕入先コラボレーション Web インターフェイスの置き換えとしてではなく、補足として使用されます。 
@@ -60,8 +60,8 @@ Web クライアントの仕入先コラボレーション Web インターフ�
 ## <a name="prerequisites"></a>前提条件
 組織に配置されている Microsoft Dynamics 365 のバージョンによって、前提条件は異なります。
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition"></a>Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition を使用している場合の前提条件 
-Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition を組織に配置している場合、システム管理者は**仕入先コラボレーション**モバイル ワークスペースを公開する必要があります。 手順については、「[モバイル ワークスペースの公開](../../dev-itpro/mobile-apps/publish-mobile-workspace.md)」を参照してください。
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Microsoft Dynamics 365 for Finance and Operations を使用している場合の前提条件 
+Microsoft Dynamics 365 for Finance and Operations を組織に配置している場合、システム管理者は [仕入先コラボレーション] モバイル ワークスペースを公開する必要があります。 手順については、「[モバイル ワークスペースの公開](../../dev-itpro/mobile-apps/publish-mobile-workspace.md)」を参照してください。
 
 ### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Microsoft Dynamics 365 for Operations バージョン 1611 およびプラットフォーム更新プログラム 3 以降を使用している場合の前提条件
 Microsoft Dynamics 365 for Operations バージョン 1611 およびプラットフォーム更新プログラム 3 以降を組織に配置している場合、システム管理者は次の前提条件を満たす必要があります。 

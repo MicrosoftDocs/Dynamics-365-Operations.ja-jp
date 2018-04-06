@@ -18,10 +18,10 @@ ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 002c3bea2803fdf43b0c35620c8d46fc9400fafc
-ms.openlocfilehash: 9db4f7ed9cba0d91a9a8507a33882a9114bdb1f5
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: f3ed06dbbce21ac093107953d3a72d8ab086af2a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 01/04/2018
 
 [!include[banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Excel でエンティティ データを開き、Excel 用の Microsoft Dynamics Office アドインを使用してそのデータを表示、更新、また編集する方法を説明します。 エンティティ データを開くには、Excel か Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition のいずれからでも開始できます。
+このトピックでは、Microsoft Excel でエンティティ データを開き、Excel 用の Microsoft Dynamics Office アドインを使用してそのデータを表示、更新、また編集する方法を説明します。 エンティティ データを開くには、Excel か Microsoft Dynamics 365 for Finance and Operations のいずれからでも開始できます。
 
 Excel でエンティティ データを開くことにより、Excel アドインを使用して迅速かつ簡単にデータを表示し編集することができます。 このアドインには Microsoft Excel 2016 が必要です。
 

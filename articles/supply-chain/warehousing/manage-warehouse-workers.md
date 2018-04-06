@@ -19,10 +19,10 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 97f70bf2f122ee06900a1a9b930d29aab5ce4b25
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 211ced007e7729265621a05c2162a228eb0023c2
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-この記事では、倉庫の従業員によって実行される作業の管理と監視に、Microsoft Dynamics 365 for Finance and Operations、Enterprise edition を使用する方法について説明します。
+この記事では、倉庫の従業員によって実行される作業の管理と監視に、Microsoft Dynamics 365 for Finance and Operations を使用する方法について説明します。
 
 倉庫管理で機能を使用すると、すべての倉庫作業員の工程は*作業*呼ばれます。 ピッキング、移動、および手持在庫の棚卸などの作業は、モバイル デバイスを使用して記録されます。 倉庫作業者が作業を実行する前に、作業者は人事管理の作業者と関連付けられる必要があります。 各**作業者**のアカウントは、関連付けられる複数の倉庫のユーザーが使用できます。 これらの作業ユーザーは異なる倉庫で、異なるレベルのさまざまなモバイル デバイス メニューへのアクセスを使用できます。 倉庫の作業ユーザーを、選択した作業者に対しての複数のログオンとして考えることができます。 各作業ユーザーには既定の倉庫があり、作業ユーザーに利用可能なメニュー項目によって特定のワークフローが公開されます。 
 

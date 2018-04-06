@@ -19,10 +19,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: fa11f1775017dd9bada61340b4bed70ea66a4137
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: a44b3d2ee6e47e71103c7be04b731d4faa79c448
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -96,7 +96,7 @@ Jodi は、マネージャーが給付金額を変更しないことを希望し
 
 ### <a name="creating-forecast-positions-for-existing-positions"></a>既存の職位の予測職位の作成
 
-最も正確な予算計画については、Microsoft Dynamics 365 for Finance and Operations、Enterprise エディションの既存の職位の詳細を使用して、現在職位が採用済みか空席かにかかわらず、予測職位を作成できます。 
+最も正確な予算計画については、 Microsoft Dynamics 365 for Finance and Operations の既存の職位の詳細を使用して、現在職位が満たされているかどうかに関係なく、予測職位を作成できます。 
 
 [**既存の職位を追加**] 機能で、組織内のすべての職位を表示します。 [**現在**] の日付を設定することにより、過去のある日付に存在した職位、またはより一般的に、将来 (たとえば、次の予算サイクルの開始時) 存在する職位を含むように、職位のリストを変更できます。 予算計画プロセスおよび予算計画シナリオを選択し、リストから職位を選択し、[**OK**] をクリックして、選択した職位の予測職位を作成します。 予算計画プロセスとシナリオの個々の既存の職位について、予測職位を一つだけ作成できることに注意してください。 ただし、さまざまな予算計画シナリオを割り当てることにより、追加のバージョンを作成できます。 
 

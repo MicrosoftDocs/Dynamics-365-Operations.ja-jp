@@ -18,10 +18,10 @@ ms.author: rschloma
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: e4459e8be4bfab8e0789744eacd533286b6c05e0
+ms.sourcegitcommit: ba1a3a78d59f3aec91473ba9bb20bda4804ec92e
+ms.openlocfilehash: 0a43f5ff0987ede9f0cb80e5b4854f78e19e329b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/23/2018
 
 ---
 # <a name="provision-microsoft-dynamics-365-for-talent"></a>Microsoft Dynamics 365 for Talent のプロビジョニング
@@ -47,13 +47,14 @@ Talent を使い始める方法については、新しいプロジェクトで�
 LCS プロジェクトを作成した後は、環境に Talent をプロビジョニングすることができます。
 
 1. LCS プロジェクトでは、**Talent アプリの管理** タイルを選択します。
-2. Talent は PowerApps の統合および拡張機能を有効にするために Microsoft PowerApps の環境に常にプロビジョニングされています。 すでに PowerApps 環境を持っていない場合、続行する前にこのトピックの「新しい PowerApps 環境の作成 (必要な場合)」セクションにある手順に従ってください。
+2. Talent は PowerApps の統合および拡張機能を有効にするために Microsoft PowerApps の環境に常にプロビジョニングされています。 続行する前に、このトピックの「PowerApps 環境の選択」を参照してください。 
+3. すでに PowerApps 環境を持っていない場合、続行する前にこのトピックの「新しい PowerApps 環境の作成 (必要な場合)」セクションにある手順に従ってください。
 
     > [!NOTE]
     > 既存の環境を表示、または新しい環境を作成するために、Talent をプロビジョニングするテナント管理者は PowerApps P2 ライセンスに割り当てられる必要があります。 組織に PowerApps P2 ライセンスがない場合、CSP または [PowerApps 価格ページ](https://powerapps.microsoft.com/en-us/pricing/) から入手することができます。
 
-3. **追加**を選択し、Talent をプロビジョニングする環境を選択します。
-4. 使用条件に同意、および展開を開始するために **はい** を選択します。
+4. **追加**を選択し、Talent をプロビジョニングする環境を選択します。
+5. 使用条件に同意、および展開を開始するために **はい** を選択します。
 
     新しい環境は、左のナビゲーション ウィンドウにある環境の一覧に表示されます。 ただし、配置状態が**配置済み**に更新されるまでは、環境の使用を開始できません。 このプロセスには通常、数分間かかります プロビジョニング プロセスに失敗する場合は、サポートに連絡する必要があります。
 
@@ -65,32 +66,64 @@ LCS プロジェクトを作成した後は、環境に Talent をプロビジ�
 > [!NOTE]
 > Talent 環境は、人事管理 (HR) タスクにコンフィギュレーションされる、または Talent に指定されるデモ データを含まない LCS によってプロビジョニングされています。 デモ データを含む環境が必要な場合、60 日間無料 [Talent 試用環境](https://dynamics.microsoft.com/en-us/talent/overview/)に登録することをお勧めします。 試用環境は要求したユーザーにより所有されていますが、Core HR のシステム管理経験を通じて他のユーザーも招待できます。 試用環境には、安全にプログラムを活用するために使用する架空のデータが含まれます。 これらは実稼動環境として使用するものではありません。 試用環境が 60 日後に期限が切れると、その中にあるすべてのデータが削除され復元できないことに注意してください。 既存の環境の期限が切れた後、新しい試用環境に登録することができます。
 
+## <a name="select-a-powerapps-environment"></a>PowerApps 環境の選択
+
+Talent と PowerApps 環境との統合では、PowerApps ツールを使用して Talent データの使用を統合および拡張することができます。 PowerApps 環境の目的を理解することで、Talent を拡張するためのアプリを構築するために役立つだけでなく、Talent プロビジョニングするときに正しい環境を選択するのに役立ちます。 環境スコープ、環境アクセス、および環境の作成および選択を含む、PowerApps 環境の詳細については、[ PowerApps 環境の発表](https://powerapps.microsoft.com/en-us/blog/powerapps-environments/) をご覧ください。 
+
+Talent を配置する PowerApps 環境を決定する際には、次のガイダンスを参考にしてください。 
+1. LCS で管理の環境を選択するか、または PowerApps 管理者センターに直接移動して、既存の環境を表示および新しい環境を作成できます。
+2. 1 つの Talent 環境は、1 つの PowerApps 環境にマップされます。
+3. PowerApps 環境には、対応する PowerApps、フロー、および CDS アプリケーションと共に、Talent アプリケーションが「含まれて」います。 PowerApps 環境を削除すると、その中のアプリも削除されます。
+4. データの統合およびテスト戦略を考慮する必要があります。たとえばサンドボックス、UAT、生産などです。 したがって、後に PowerApps 環境にマッピングされる Talent 環境を変更することは容易ではないため、配置へのさまざまな影響について考慮することをお勧めします。
+5. 次の PowerApps 環境は Talent に対しては使用できず、LCS 内の選択リストからもフィルター処理されます。
+ 
+    **CDS 2.0 環境** CDS 2.0 は、2018 年 3 月 21 日に公開されますが、Talent は、まだ CDS 2.0 をサポートしていません。 PowerApps 管理センターで CDS 2.0 データベースを表示および作成することはできますが、Talent では使用可能ではありません。 Talent 配置で CDS 2.0 環境を使用するオプションは後日利用可能になります。
+   
+ > [!Note]
+ > 管理ポータルで CDS 1.0 と 2.0 の環境を区別するためには、環境を選択し、[詳細] を確認してください。 CDS 2.0 環境はすべて、「Dynamics 365 管理センターでこれらの設定を管理することができます」という情報を参照します。インスタンス バージョンを参照し、[データベース] タブはありません。 
+ 
+   **既定の PowerApps 環境** 各テナントは、既定の PowerApps 環境で自動的にプロビジョニングされますが、すべてのテナント ユーザーは PowerApps 環境にアクセスすることができ、PowerApps または Flow 統合を使用してテストや調査を行う際に意図せずに生産データが壊れる可能性があるため、Talent でそれらを使用することはお勧めしません。
+   
+   **テスト ドライブ環境** 「TestDrive – alias@domain」のような名前の環境は、60 日間の有効期限で作成され、その期間が経過すると有効期限切れになり、環境が自動的に削除されます。
+   
+   **サポートされていない地域** 現在の Talent は、次の地域でのみサポートされます: 米国、ヨーロッパ、またはオーストラリア。
+  
+6. 使用する正しい環境を決定した後、実行する特定のアクションはありません プロビジョニング プロセスを続行します。 
+ 
 ## <a name="create-a-new-powerapps-environment-if-required"></a>新しい PowerApps 環境の作成 (必要な場合)
-Talent と PowerApps 環境との統合では、PowerApps ツールを使用して Talent データの使用を統合および拡張することができます。 PowerApps 環境の目的を理解することは、Talent を拡張する必要を満たすアプリの構築に役立ちます。 環境スコープ、環境アクセス、および環境の作成および選択を含む、PowerApps 環境の詳細については、[ PowerApps 環境の発表](https://powerapps.microsoft.com/en-us/blog/powerapps-environments/) をご覧ください。 各テナントは自動的にプロビジョニングされますが、既定の PowerApps 環境が Talent の配置には最適な環境でない場合があります。 データの統合およびテスト戦略はこのステップ中に考慮する必要があります。いくつかの決定は後で変更することが容易でないため、配置に与える影響について考慮することをお勧めします。 
 
-各テナントは既定の PowerApps 環境で自動的にプロビジョニングされますが、その環境が Talent の配置には最適な環境でない場合があります。 データの統合およびテスト戦略はこのステップ中に考慮する必要があります。 したがって、後に PowerApps 環境を変更することは容易でないため、配置へのさまざまな影響について考慮することをお勧めします。
+PowerApps プラン 2 のライセンスを持つテナント管理者のコンテキストで、PowerShell スクリプトを実行し、Talent 用に新しい PowerApps 環境の作成を行います。 スクリプトは、次の手順を自動化します。
 
-1. LCS で、**環境の管理** を選択します。 既存の環境の表示および新しい環境の作成ができる [PowerApps 管理者センター](https://preview.admin.powerapps.com/environments) に移動します。
-2. **新しい環境**を選択します。
-3. 環境の一意の名前を入力し、配置する場所を選択します。
 
-    > [!NOTE]
-    > Talent はすべての地域で利用できるわけではありません。 したがって、環境の場所を選択する前に使用可能かを必ず確認してください。
+ + PowerApps 環境の作成
+ + CD 1.0 データベースの作成
+ + CD 1.0 データベース内のすべてのサンプル データをクリア
 
-4. データベースを作成するかどうかを尋ねられた場合、**データベースの作成** を選択し、Talent データの一部をホストする Common Data Service (CDS) データベースを作成します。 データベースを作成し、PowerApps アプリケーションと Talent を統合することもできます。
-5. データベースに使用するアクセス レベルについて尋ねられます。 Talent ユーザーが PowerApps アプリケーションを使用して機密データに直接アクセスすることを防止するために、[**アクセスの制限**] を選択することをお勧めします。
-6. 作成された CDS データベースにはデモ データが含まれます。それは他の情報の中でも、無効な従業員や架空の住所を運用環境に追加します。 デモ データを削除するには、CDS の作成が終了した後にこれらの手順に従います:
 
-    > [!IMPORTANT]
-    > 以前に CDS データベースを作成し、会社の生産データを入力した場合、これらの手順で選択したデータベース内の **すべて** のデータが (会社の実動データであっても) 削除されます。
+次の手順を完了させて、スクリプトを実行します。
 
-    1. [PowerApps](https://preview.web.powerapps.com/home)に登録します。
-    2. 右上のドロップダウン リストで、手順 2 で作成した環境を選択します。
-    3. 左のナビゲーション ウィンドウで **Common Data Service** を展開し、**エンティティ** を選択します。
-    4. ページの右側にある省略記号ボタン (**…**) を選択し、**すべてのデータをクリア** を選択します。
-    5. **データを削除** を選択し、データを削除することを確認します。 このアクションは、既定で CDS に含まれているすべてのデモ データを削除します。 選択したデータベースに入力されている他のデータも削除されます。
+1. 次の場所から ProvisionCDSEnvironment.zip ファイルをダウンロードします。[ProvisionCDSEnvironment スクリプト](https://go.microsoft.com/fwlink/?linkid=870436)  
 
-新しい環境を使用することができるようになりました。
+2. ProvisionCDSEnviroinment.zip ファイルの内容全体をフォルダに解凍します。
+
+3. Windows PowerShell または Windows PowerShell ISE プログラムを管理者として実行します。
+
+   スクリプトを実行するための実行ポリシーの設定の詳細については、トピック [実行ポリシーの設定](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-6) にアクセスしてください。
+  
+4. PowerShell 内で、ファイルを解凍したフォルダに移動し、以下のコマンドを実行して、次の値に置き換えます。
+ 
+   ```.\ProvisionCDSEnvironment -EnvironmentName MyNewEnvironment -Location YourLocation```
+
+    
+   **EnvironmentName** は、環境名に置き換える必要があります。 この名前は LCS に表示され、ユーザーが使用する Talent 環境を選択すると表示されます。 
+
+   **YourLocation** は、Talent がサポートされている地域の 1 つに置き換えてください: 米国、ヨーロッパ、オーストラリア。 
+
+   [-詳細] はオプションであり、問題が発生した場合にサポートに送信する詳細情報を提供します。
+
+5. プロビジョニング プロセスを続行します。
+ 
+
 
 ## <a name="grant-access-to-the-environment"></a>環境へのアクセスを付与
 既定では、環境を作成したグローバル管理者がそこにアクセスできます。 ただし、追加のアプリケーション ユーザーは、明示的にアクセスを許可する必要があります。 アクセスを許可するには、Core HR 環境で [ユーザーの追加](../dev-itpro/sysadmin/tasks/create-new-users.md) および [適切なロールを割り当て](../dev-itpro/sysadmin/tasks/assign-users-security-roles.md)ます。 Attract および Onboard アプリケーションへアクセスできるよう、それらのユーザーを PowerApps 環境に追加する必要もあります。 手順をここで説明します。 手順を完了するのに助けが必要な場合は、[PowerApps 管理センターの導入](https://powerapps.microsoft.com/en-us/blog/introducing-admin-center-for-powerapps/) ブログ投稿を参照してください。
@@ -101,5 +134,5 @@ Talent 環境を展開したグローバル管理者によって、この手順�
 2. 該当する環境をオンにします。
 3. [セキュリティ] タブで、必要なユーザーを [環境メーカー] ロールに追加します。
 
-PowerApps 環境にユーザーを手動で追加するこの最後のステップは、一時的であることに注意してください。 最終的には、ユーザーが Core HR に追加される際に、自動的に完了します。
+    PowerApps 環境にユーザーを手動で追加するこの最後のステップは、一時的であることに注意してください。 最終的には、ユーザーが Core HR に追加される際に、自動的に完了します。
 

@@ -17,10 +17,10 @@ ms.author: twheeloc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c9abea228cdaae84ca2b9aada9f36bbe79c1dc6b
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 6702ac241c41cc99d96bc46a515837235b3ae651
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 11/03/2017
 
 Microsoft Dynamics Lifecycle Services (LCS) の共有資産ライブラリに移動して、**GER コンフィギュレーション** という資産タイプを持つ利用可能なファイルの現在のリストを表示する必要があります。 「何を設定する必要がありますか。」という次のセクションに、利用可能なコンフィギュレーションを確認し選択したコンフィギュレーションをインポートできるよう LCS リポジトリを作成する方法を説明するトピックへのリンクが含まれています。
 
-Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition には、上部に小切手がありその後に 2 つの送金セクションがあるサンプル フォーマットが含まれています。 小切手が真ん中、つまり 2 つの送金セクションの間にあるサンプル フォーマットも含まれています。 これらのサンプル形式は、Deluxe 業務用小切手フォーマットに対応します。
+Microsoft Dynamics 365 for Finance and Operations には、上部に小切手がありその後に 2 つの送金セクションがあるサンプル フォーマットが含まれています。 小切手が真ん中、つまり 2 つの送金セクションの間にあるサンプル フォーマットも含まれています。 これらのサンプル形式は、Deluxe 業務用小切手フォーマットに対応します。
 
 ## <a name="what-do-i-have-to-set-up"></a>何を設定する必要がありますか。
 

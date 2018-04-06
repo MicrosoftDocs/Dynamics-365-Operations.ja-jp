@@ -1,6 +1,6 @@
 --- 
 title: "原価オブジェクトの作成"
-description: "この手順では、データ コネクタ経由で Dynamics 365 for Finance and Operations、Enterprise Edition コスト センターの財務分析コードを原価計算にインポートすることによって原価対象を作成する方法を示します。"
+description: "この手順では、データ コネクタ経由で Dynamics 365 for Finance and Operations コスト センターの財務分析コードを原価計算にインポートすることによって原価対象を作成する方法を示します。"
 author: YuyuScheller
 manager: AnnBe
 ms.date: 10/25/2016
@@ -16,17 +16,17 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 5d43274aed2edbb91fd4e399cb8d45e91646b055
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 21fa90557b665e0777935cc6bae8cd9f1c29cb60
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 # <a name="create-cost-objects"></a>原価オブジェクトの作成 
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-この手順では、データ コネクタ経由で Dynamics 365 for Finance and Operations、Enterprise Edition コスト センターの財務分析コードを原価計算にインポートすることによって原価対象を作成する方法を示します。 この手順の作成に使用するデモ データの会社は USMF です。 この手順は、Dynamics 365 for Operations、バージョン 1611 に追加された原価会計機能です。
+この手順では、データ コネクタ経由で Dynamics 365 for Finance and Operations コスト センターの財務分析コードを原価計算にインポートすることによって原価対象を作成する方法を示します。 この手順の作成に使用するデモ データの会社は USMF です。 この手順は、Dynamics 365 for Operations、バージョン 1611 に追加された原価会計機能です。
 
 
 ## <a name="create-new-cost-objects"></a>新規原価対象を作成する

@@ -17,17 +17,17 @@ ms.author: bis
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ba426692e2e404ab75e5730b8205115fc59e402f
-ms.openlocfilehash: 43167cc36398d3f7f8d639187f67fad1bae8082f
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: fc039b3c35c9ff8f40bf671e523104031c598171
 ms.contentlocale: ja-jp
-ms.lasthandoff: 02/08/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 # <a name="warehouse-management"></a>倉庫管理
 
 [!include[banner](../includes/banner.md)]
 
-Dynamics 365 for Finance and Operations, Enterprise edition の倉庫管理モジュールは、製造、配送、および小売企業の倉庫プロセスを管理できます。 このモジュールは、倉庫施設をいつでも最適なレベルにサポートする幅広い機能を持っています。 倉庫管理は、輸送、製造、品質テスト、購買、移動、販売、返品などの他のビジネス プロセスが Finance and Operations で完全に統合されます。
+Dynamics 365 for Finance and Operations の倉庫管理モジュールは、製造、配送、および小売企業の倉庫プロセスを管理できます。 このモジュールは、倉庫施設をいつでも最適なレベルにサポートする幅広い機能を持っています。 倉庫管理は、輸送、製造、品質テスト、購買、移動、販売、返品などの他のビジネス プロセスが Finance and Operations で完全に統合されます。
 
 ## <a name="get-started"></a>使用開始
 倉庫管理の操作を開始するには、会社の業務プロセスをサポートするための通常倉庫のパラメーターの設定を完了する必要があります。

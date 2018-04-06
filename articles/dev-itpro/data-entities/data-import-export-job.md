@@ -16,10 +16,10 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e444168f249e798fa68b9b082556aa8e5e7d8113
-ms.openlocfilehash: 0e1c5120bf8558b955b66e059a8be8bbec2c2ce1
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: bd26ac6fd8376fd42467c7a3d2ecd2ec035a4479
 ms.contentlocale: ja-jp
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 02/13/2018
 
 [!include[banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Finance and Operations, Enterprise edition でデータ インポート/エクスポート ジョブを管理して作成するには、**データ管理**ワークスペースを使用します。 既定では、データ インポート/エクスポート プロセスにより、ターゲットのデータベースで各エンティティにステージング テーブルが作成されます。 ステージング テーブルにより、移動させる前にデータを確認、クリーンアップ、または変換できます。
+Microsoft Dynamics 365 for Finance and Operations でデータ インポート/エクスポート ジョブを管理して作成するには、**データ管理** ワークスペースを使用します。 既定では、データ インポート/エクスポート プロセスにより、ターゲットのデータベースで各エンティティにステージング テーブルが作成されます。 ステージング テーブルにより、移動させる前にデータを確認、クリーンアップ、または変換できます。
 
 > [!NOTE]
 > このトピックは、[データ エンティティ](data-entities.md) の内容を理解していることが前提です。
@@ -66,7 +66,7 @@ Microsoft Dynamics 365 for Finance and Operations, Enterprise edition でデー�
 ### <a name="set-the-data-format-for-the-job"></a>ジョブのデータ形式を設定する
 エンティティを選択する時に、エクスポートまたはインポートするデータの形式を選択する必要があります。 **データ ソース設定** タイルを使用して、形式を定義します。 多くの組織は、デモ データ セットに既定で含まれている形式から開始します。 これらの形式の一覧を以下に示します。
 
-- AX (Microsoft Dynamics 365 for Finance and Operations, Enterprise edition で使用されているのと同じ形式でインポート/エクスポートする必要のあるデータ用)
+- AX (Microsoft Dynamics 365 for Finance and Operations で使用されているのと同じ形式でインポート/エクスポートする必要のあるデータ用)
 - ColonSeparated
 - CSV
 - Excel

@@ -1,6 +1,6 @@
 ---
-title: "Organizational Training Power BI コンテンツ"
-description: "このトピックでは、Finance と Operations - Organizational Training Power BI コンテンツについて説明します。"
+title: "組織トレーニング Power BI コンテンツ"
+description: "このトピックでは、Finance and Operations - 組織トレーニング Power BI コンテンツについて説明します。"
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
@@ -18,19 +18,19 @@ ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
-ms.openlocfilehash: 1e26785b658815fcc5026d73e4d8cfe39bd246c3
+ms.sourcegitcommit: 19cc8f92b5bb6d9ddfdc77785e48de17ed005703
+ms.openlocfilehash: 18567a3241fce02e17df368f544e545fad93e1d9
 ms.contentlocale: ja-jp
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 03/23/2018
 
 ---
 
-# <a name="organizational-training-power-bi-content"></a>Organizational Training Power BI コンテンツ
+# <a name="organizational-training-power-bi-content"></a>組織トレーニング Power BI コンテンツ
 
 [!include[banner](../includes/banner.md)]
 
 
-このトピックでは、Finance と Operations - Organizational Training Power BI コンテンツについて説明します。 
+このトピックでは、Finance and Operations - 組織トレーニング Power BI コンテンツについて説明します。 
 
 ## <a name="reports-that-are-included-in-the-content-pack"></a>コンテンツ パックに含まれるレポート
 コンテンツ パックを Finance and Operations データに接続した後に、レポートには組織のデータが表示されます。 Microsoft Power BI を以前に使用したことがない場合は、詳細については「[Power BI のガイド付きの学習](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData)」を参照してください。 コンテンツ パックに含まれるレポートには、追加情報を含むグラフとテーブルの両方があります。 次の表にレポートを示します。
@@ -43,7 +43,7 @@ ms.lasthandoff: 12/19/2017
 これらのレポートのグラフとタイルをフィルター処理し、ダッシュボードに固定することができます。 Power BI のフィルター処理と固定方法の詳細については、「[ダッシュボードの作成およびコンフィギュレーション](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards)」を参照してください。
 
 ## <a name="understanding-the-data-model-and-entities"></a>データ モデルおよびエンティティの理解
-Finance と Operations データを使用して、Organizational Training コンテンツ パックにレポートを入力します。 次の表に、コンテンツ パックが基づいているエンティティを示します。
+Finance and Operations のデータは、組織トレーニング コンテンツ パックにレポートを入力するのに使用されます。 次の表に、コンテンツ パックが基づいているエンティティを示します。
 
 | エンティティ                    | コンテンツ                                                         | 他のエンティティとの関係                                                                                                                                                                  |
 |---------------------------|------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

@@ -19,10 +19,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 95d5bf26c22238753586cf4a7aaf5c26f061a705
-ms.openlocfilehash: d5b1bb5f25710b7d4feea55414d68d5390c87308
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 99eece7b31034065694f8875c72eb2360088ec23
 ms.contentlocale: ja-jp
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -32,8 +32,8 @@ ms.lasthandoff: 02/23/2018
 
 このトピックでは、使用可能な Microsoft Power BI コンテンツの一覧を示し、リソースについて詳しく知ることができます。
 
-## <a name="power-bi-content-for-dynamics-365-for-finance-and-operations-enterprise-edition"></a>Dynamics 365 for Finance and Operations, Enterprise edition の Power BI コンテンツ
-Microsoft Dynamics 365 for Finance and Operations, Enterprise edition を使用している場合、以下の Power BI コンテンツを使用できます。
+## <a name="power-bi-content-for-dynamics-365-for-finance-and-operations"></a>Dynamics 365 for Finance and Operations 向けの Power BI コンテンツ
+Microsoft Dynamics 365 for Finance and Operations を使用している場合、以下の Power BI コンテンツを使用できます。
 
 - [実績対予算 Power BI コンテンツ](ledger-budgets-power-bi.md)
 - [給付金 Power BI コンテンツ](benefits-power-bi.md)

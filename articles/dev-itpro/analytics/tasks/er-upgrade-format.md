@@ -16,10 +16,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 95d5bf26c22238753586cf4a7aaf5c26f061a705
-ms.openlocfilehash: db9e66a67f20ca24de3a020c1871cdda0cf2f9be
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: cfc68c1d0810cbc296b35c09176dde2c948a50d0
 ms.contentlocale: ja-jp
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 # <a name="upgrade-your-format-by-adopting-of-new-base-version-of-that-format-for-electronic-reporting-er"></a>電子申告 (ER) のその形式の新しい基準バージョンの採用により、形式をアップグレードする
@@ -107,7 +107,7 @@ Proseware、Inc. は、自身のサービスの定期売買に従って電子支
     * 作成したコンフィギュレーションが完了したバージョン 1.1.1 として保存されることに注意してください。 これは、BACS の関税 (英国企業の関税) 形式のバージョン 1 であることを意味します。これは BACS (英国企業) 形式のバージョン 1、および支払 (単純化モデル) データ モデルのバージョン 1 に基づきます。  
 
 ## <a name="test-the-customized-format-to-generate-payment-files"></a>カスタマイズされた形式の支払ファイル生成テストの実行
-Dynamics 365 for Finance and Operations, Enterprise Edition 並列セッション内の手順「作成済みの形式を使用して支払用の電子ドキュメントを生成」にあるステップを実行します。 電子支払方法のパラメーターで BACS (英国関税) 形式を選択します。 作成した支払ファイルに、地域要件に対応した IBAN コードを表す最新の XML ノードが含まれていることを確認します。  
+Dynamics 365 for Finance and Operations の並列セッションの「作成済みの形式を使用して支払用の電子ドキュメントを生成」手順にあるステップを実行します。 電子支払方法のパラメーターで BACS (英国関税) 形式を選択します。 作成した支払ファイルに、地域要件に対応した IBAN コードを表す最新の XML ノードが含まれていることを確認します。  
 
 ## <a name="update-the-existing-country-specific-configuration"></a>既存の国固有のコンフィギュレーションの更新
 電子ドキュメントの形式を管理するために、Litware, Inc. は BACS (英国の企業) コンフィギュレーションを更新し、新しい国要件を採用する必要があります。 これは後に、Proseware, Inc. を含むサービスのサブスクライバーに提供される、このコンフィギュレーションの新しいバージョンに取り入れられます。  
@@ -203,6 +203,6 @@ Proseware, Inc. は最近発表された国固有の要件に従った電子支�
     * 作成したコンフィギュレーションが完了済のバージョン 1.2.2 として保存されていることに注意してください: 支払 (単純化モデル) データ モデルのバージョン 1 に基づく基準 BACS (英国関税) 形式のバージョン 2 に基づく基準 BACS (英国の企業) 形式のバージョン 2。  
 
 ## <a name="test-the-customized-format-for-payment-files-generation"></a>カスタマイズされた形式の支払ファイル生成テストの実行
-Dynamics 365 for Finance and Operations, Enterprise Edition 並列セッション内の手順「作成済みの形式を使用して支払用の電子ドキュメントを生成」にあるステップを実行します。 電子支払方法のパラメーターで作成した「BACS (英国関税)」形式を選択します。 Proseware, Inc. が最近導入した、地域要件に対応した IBAN 口座コードを表す XML ノードが作成した支払ファイルに含まれていることを確認します。 ファイルには Litware, Inc. が最近導入した、国要件に沿った SWIFT 銀行コードを表す XML ノードも含まれている必要があります。  
+Dynamics 365 for Finance and Operations の並列セッションの「作成済みの形式を使用して支払用の電子ドキュメントを生成」手順にあるステップを実行します。 電子支払方法のパラメーターで作成した「BACS (英国関税)」形式を選択します。 Proseware, Inc. が最近導入した、地域要件に対応した IBAN 口座コードを表す XML ノードが作成した支払ファイルに含まれていることを確認します。 ファイルには Litware, Inc. が最近導入した、国要件に沿った SWIFT 銀行コードを表す XML ノードも含まれている必要があります。  
 
 

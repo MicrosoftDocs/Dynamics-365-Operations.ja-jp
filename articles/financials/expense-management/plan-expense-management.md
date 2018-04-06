@@ -1,6 +1,6 @@
 ---
 title: "経費管理の構成"
-description: "この記事は、Microsoft Dynamics 365 for Finance and Operations、Enterprise エディションの経費管理をコンフィギュレーションする前に、計画プロセス中に決定する必要のある考慮事項について説明します。"
+description: "この記事は、Microsoft Dynamics 365 for Finance and Operations の経費管理をコンフィギュレーションする前に、計画プロセス中に決定する必要のある考慮事項について説明します。"
 author: KimANelson
 manager: AnnBe
 ms.date: 08/29/2017
@@ -19,10 +19,10 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4fad62c5da11e88e07f4e9d4343c4ac1a487bdd8
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: c87909d9eb3a4d717e0c40289353da0267a51f60
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-このトピックは、Microsoft Dynamics 365 for Finance and Operations、Enterprise エディションの経費管理をコンフィギュレーションする前に、計画プロセス中に決定する必要のある考慮事項について説明します。 [経費管理] で、支払方法、出張費要求、経費精算書、ポリシーなどの情報を格納できます。
+このトピックは、Microsoft Dynamics 365 for Finance and Operations の経費管理をコンフィギュレーションする前に、計画プロセス中に決定する必要のある考慮事項について説明します。 [経費管理] で、支払方法、出張費要求、経費精算書、ポリシーなどの情報を格納できます。
 
 経費管理に対するコンフィギュレーションを計画する場合の決定の多くが、組織の階層と財務構造に基づいているため、これらの領域の計画文書を参照する必要があります。
 

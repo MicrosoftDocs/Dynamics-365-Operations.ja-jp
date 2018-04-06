@@ -17,10 +17,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 92a52646063c145d733b9d2960253004e8eab80a
-ms.openlocfilehash: 34dc8d762db4a4802e52188ebda298db234ee376
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 551f3d5fc52fac725fcc9fedc37dc1c85fac5a26
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 # <a name="vendor-invoice-automation"></a>仕入先請求書の自動化
@@ -29,7 +29,7 @@ ms.lasthandoff: 03/05/2018
 
 このトピックでは、添付ファイルを含む請求書など、仕入先請求書のエンドツーエンドの自動化で利用可能な機能について説明します。
 
-買掛金勘定 (AP) プロセスを合理化したい組織は、多くの場合、請求書処理プロセスが効率化を図る必要があるプロセス領域の最上位にあると考えます。 多くの場合は、このような組織は、紙の請求書の処理からサード パーティ光学式文字認識 (OCR) サービス プロバイダにオフロードします。 それにより、各請求書のスキャン イメージと共に機械可読請求書メタデータを受け取ります。 オートメーションのためには、請求システムでこれらのコンポーネントの消費を有効にする「最終工程」ソリューションを構築します。 Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition の請求書自動化ソリューションをそのまま使用することで、この「最終工程」を実現できます。
+買掛金勘定 (AP) プロセスを合理化したい組織は、多くの場合、請求書処理プロセスが効率化を図る必要があるプロセス領域の最上位にあると考えます。 多くの場合は、このような組織は、紙の請求書の処理からサード パーティ光学式文字認識 (OCR) サービス プロバイダにオフロードします。 それにより、各請求書のスキャン イメージと共に機械可読請求書メタデータを受け取ります。 オートメーションのためには、請求システムでこれらのコンポーネントの消費を有効にする「最終工程」ソリューションを構築します。 Microsoft Dynamics 365 for Finance and Operations の請求書自動化ソリューションをそのまま使用することで、この「最終工程」を実現できます。
 
 ## <a name="solution-context"></a>ソリューション コンテキスト
 

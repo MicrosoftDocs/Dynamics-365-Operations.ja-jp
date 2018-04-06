@@ -1,6 +1,6 @@
 ---
 title: "クレジット カードの設定、認証、および取得"
-description: "この記事では、Microsoft Dynamics 365 for Finance and Operations、Enterprise Editionにおけるクレジット カード認証の概要を提供します。 これには、支払サービスの設定、クレジット カードを販売注文に追加、および認証を無効にする方法に関する情報が含まれます。"
+description: "この記事では、Microsoft Dynamics 365 for Finance and Operations におけるクレジット カード認証の概要を提供します。 これには、支払サービスの設定、クレジット カードを販売注文に追加、および認証を無効にする方法に関する情報が含まれます。"
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
@@ -19,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 40d636cac477871f094286d29edc32cd5616ad44
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 4a6354563fdebff901498f1cd6caed3aedae668b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 11/03/2017
 [!include[retail name](../includes/retail-name.md)]
 
 
-この記事では、Microsoft Dynamics 365 for Finance and Operations、Enterprise Editionにおけるクレジット カード認証の概要を提供します。 これには、支払サービスの設定、クレジット カードを販売注文に追加、および認証を無効にする方法に関する情報が含まれます。
+この記事では、Microsoft Dynamics 365 for Finance and Operations におけるクレジット カード認証の概要を提供します。 これには、支払サービスの設定、クレジット カードを販売注文に追加、および認証を無効にする方法に関する情報が含まれます。
 
 <a name="setting-up-the-credit-card-payment-service"></a>クレジット カード支払サービスの設定
 ------------------------------------------
