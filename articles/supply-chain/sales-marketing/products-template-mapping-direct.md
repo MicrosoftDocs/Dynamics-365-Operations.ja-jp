@@ -1,6 +1,6 @@
 ---
 title: "Sales 製品への Finance and Operations の製品の直接同期"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations, Enterprise edition の製品を Microsoft Dynamics 365 for Sales の製品に同期するときに使用されるテンプレートと基本的なタスクについて説明します。"
+description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations から Microsoft Dynamics 365 for Sales に製品を同期させるために使用されるテンプレートと基本的なタスクについて説明します。"
 author: ChristianRytt
 manager: AnnBe
 ms.date: 10/25/2017
@@ -20,105 +20,105 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 0d409b3b7f19ca31d9c720bca191f1ddba81caa3
-ms.openlocfilehash: def88c291538e3ef278c51e4b87462782e222de2
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 3ae50372edcd473f2288f8172b71eac33e24b636
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/13/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
-# <a name="synchronize-products-directly-from-finance-and-operations-to-products-in-sales"></a><span data-ttu-id="964b1-103">Sales 製品への Finance and Operations の製品の直接同期</span><span class="sxs-lookup"><span data-stu-id="964b1-103">Synchronize products directly from Finance and Operations to products in Sales</span></span>
+# <a name="synchronize-products-directly-from-finance-and-operations-to-products-in-sales"></a><span data-ttu-id="3801f-103">Sales 製品への Finance and Operations の製品の直接同期</span><span class="sxs-lookup"><span data-stu-id="3801f-103">Synchronize products directly from Finance and Operations to products in Sales</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 > [!NOTE]
-> <span data-ttu-id="964b1-104">見込顧客を現金化するソリューションを使用する前に、[Dynamics 365 データ統合](/common-data-service/entity-reference/dynamics-365-integration) をよく理解しておく必要があります。</span><span class="sxs-lookup"><span data-stu-id="964b1-104">Before you can use the Prospect to cash solution, you should be familiar with [Dynamics 365 Data integration](/common-data-service/entity-reference/dynamics-365-integration).</span></span>
+> <span data-ttu-id="3801f-104">見込顧客を現金化するソリューションを使用する前に、[Dynamics 365 データ統合](/common-data-service/entity-reference/dynamics-365-integration) をよく理解しておく必要があります。</span><span class="sxs-lookup"><span data-stu-id="3801f-104">Before you can use the Prospect to cash solution, you should be familiar with [Dynamics 365 Data integration](/common-data-service/entity-reference/dynamics-365-integration).</span></span>
 
-<span data-ttu-id="964b1-105">このトピックでは、Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition から Microsoft Dynamics 365 for Sales に直接製品を同期させるために使用されるテンプレートと基本的なタスクについて説明します。</span><span class="sxs-lookup"><span data-stu-id="964b1-105">This topic discusses the templates and underlying tasks that are used to synchronize products directly from Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, to Microsoft Dynamics 365 for Sales.</span></span>
+<span data-ttu-id="3801f-105">このトピックでは、Microsoft Dynamics 365 for Finance and Operations から Microsoft Dynamics 365 for Sales に製品を直接同期させるために使用されるテンプレートと基本的なタスクについて説明します。</span><span class="sxs-lookup"><span data-stu-id="3801f-105">This topic discusses the templates and underlying tasks that are used to synchronize products directly from Microsoft Dynamics 365 for Finance and Operations, to Microsoft Dynamics 365 for Sales.</span></span>
 
-## <a name="data-flow-in-prospect-to-cash"></a><span data-ttu-id="964b1-106">見込み客の現金化へのデータフロー</span><span class="sxs-lookup"><span data-stu-id="964b1-106">Data flow in Prospect to cash</span></span>
+## <a name="data-flow-in-prospect-to-cash"></a><span data-ttu-id="3801f-106">見込み客の現金化へのデータフロー</span><span class="sxs-lookup"><span data-stu-id="3801f-106">Data flow in Prospect to cash</span></span>
 
-<span data-ttu-id="964b1-107">見込み客の現金化ソリューションは、Finance and Operations と Sales のインスタンス間でデータを同期するため、データの統合機能を使用します。</span><span class="sxs-lookup"><span data-stu-id="964b1-107">The Prospect to cash solution uses the Data integration feature to synchronize data across instances of Finance and Operations and Sales.</span></span> <span data-ttu-id="964b1-108">データ統合機能で利用可能な見込み顧客を現金化するテンプレートは、Finance and Operations と Sales 間での勘定、連絡先、製品および販売見積、販売注文、および売上請求書データの流れを可能にします。</span><span class="sxs-lookup"><span data-stu-id="964b1-108">The Prospect to cash templates that are available with the Data integration feature enable the flow of data about accounts, contacts, products, sales quotations, sales orders, and sales invoices between Finance and Operations and Sales.</span></span> <span data-ttu-id="964b1-109">次の図は、Finance and Operations と Sales の間でデータを同期させる方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="964b1-109">The following illustration shows how the data is synchronized between Finance and Operations and Sales.</span></span>
+<span data-ttu-id="3801f-107">見込み客の現金化ソリューションは、Finance and Operations と Sales のインスタンス間でデータを同期するため、データの統合機能を使用します。</span><span class="sxs-lookup"><span data-stu-id="3801f-107">The Prospect to cash solution uses the Data integration feature to synchronize data across instances of Finance and Operations and Sales.</span></span> <span data-ttu-id="3801f-108">データ統合機能で利用可能な見込み顧客を現金化するテンプレートは、Finance and Operations と Sales 間での勘定、連絡先、製品および販売見積、販売注文、および売上請求書データの流れを可能にします。</span><span class="sxs-lookup"><span data-stu-id="3801f-108">The Prospect to cash templates that are available with the Data integration feature enable the flow of data about accounts, contacts, products, sales quotations, sales orders, and sales invoices between Finance and Operations and Sales.</span></span> <span data-ttu-id="3801f-109">次の図は、Finance and Operations と Sales の間でデータを同期させる方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="3801f-109">The following illustration shows how the data is synchronized between Finance and Operations and Sales.</span></span>
 
-<span data-ttu-id="964b1-110">[![見込み客の現金化へのデータフロー](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)</span><span class="sxs-lookup"><span data-stu-id="964b1-110">[![Data flow in Prospect to cash](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)</span></span>
+<span data-ttu-id="3801f-110">[![見込み客の現金化へのデータフロー](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)</span><span class="sxs-lookup"><span data-stu-id="3801f-110">[![Data flow in Prospect to cash](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)</span></span>
 
-## <a name="templates-and-tasks"></a><span data-ttu-id="964b1-111">テンプレートおよびタスク</span><span class="sxs-lookup"><span data-stu-id="964b1-111">Templates and tasks</span></span>
+## <a name="templates-and-tasks"></a><span data-ttu-id="3801f-111">テンプレートおよびタスク</span><span class="sxs-lookup"><span data-stu-id="3801f-111">Templates and tasks</span></span>
 
-<span data-ttu-id="964b1-112">利用可能なテンプレートにアクセスするには、[PowerApps 管理者センター](https://preview.admin.powerapps.com/dataintegration) を開きます。</span><span class="sxs-lookup"><span data-stu-id="964b1-112">To access the available templates, open [PowerApps Admin Center](https://preview.admin.powerapps.com/dataintegration).</span></span> <span data-ttu-id="964b1-113">**プロジェクト**を選択した後、右上隅にある **新しいプロジェクト** を選択してパブリック テンプレートを選択します。</span><span class="sxs-lookup"><span data-stu-id="964b1-113">Select **Projects**, and then, in the upper-right corner, select **New project** to select public templates.</span></span>
+<span data-ttu-id="3801f-112">利用可能なテンプレートにアクセスするには、[PowerApps 管理者センター](https://preview.admin.powerapps.com/dataintegration) を開きます。</span><span class="sxs-lookup"><span data-stu-id="3801f-112">To access the available templates, open [PowerApps Admin Center](https://preview.admin.powerapps.com/dataintegration).</span></span> <span data-ttu-id="3801f-113">**プロジェクト**を選択した後、右上隅にある **新しいプロジェクト** を選択してパブリック テンプレートを選択します。</span><span class="sxs-lookup"><span data-stu-id="3801f-113">Select **Projects**, and then, in the upper-right corner, select **New project** to select public templates.</span></span>
 
-<span data-ttu-id="964b1-114">以下のテンプレートと基本的なタスクは、Finance and Operations から Sales に製品を同期させるために使用されます。</span><span class="sxs-lookup"><span data-stu-id="964b1-114">The following template and underlying tasks are used to synchronize products from Finance and Operations to Sales.</span></span>
+<span data-ttu-id="3801f-114">以下のテンプレートと基本的なタスクは、Finance and Operations から Sales に製品を同期させるために使用されます。</span><span class="sxs-lookup"><span data-stu-id="3801f-114">The following template and underlying tasks are used to synchronize products from Finance and Operations to Sales.</span></span>
 
-- <span data-ttu-id="964b1-115">**データ統合でのテンプレートの名前:** 製品 (Finance and Operations から Sales) - 直接</span><span class="sxs-lookup"><span data-stu-id="964b1-115">**Name of the template in Data integration:** Products (Fin and Ops to Sales) - Direct</span></span>
-- <span data-ttu-id="964b1-116">**データ統合プロジェクトのタスク名:** 製品</span><span class="sxs-lookup"><span data-stu-id="964b1-116">**Name of the task in the Data integration project:** Products</span></span>
+- <span data-ttu-id="3801f-115">**データ統合でのテンプレートの名前:** 製品 (Finance and Operations から Sales) - 直接</span><span class="sxs-lookup"><span data-stu-id="3801f-115">**Name of the template in Data integration:** Products (Fin and Ops to Sales) - Direct</span></span>
+- <span data-ttu-id="3801f-116">**データ統合プロジェクトのタスク名:** 製品</span><span class="sxs-lookup"><span data-stu-id="3801f-116">**Name of the task in the Data integration project:** Products</span></span>
 
-<span data-ttu-id="964b1-117">製品の同期が発生する前に、同期タスクは必要ありません。</span><span class="sxs-lookup"><span data-stu-id="964b1-117">No synchronization tasks are required before product synchronization can occur.</span></span>
+<span data-ttu-id="3801f-117">製品の同期が発生する前に、同期タスクは必要ありません。</span><span class="sxs-lookup"><span data-stu-id="3801f-117">No synchronization tasks are required before product synchronization can occur.</span></span>
 
-## <a name="entity-set"></a><span data-ttu-id="964b1-118">エンティティ セット</span><span class="sxs-lookup"><span data-stu-id="964b1-118">Entity set</span></span>
+## <a name="entity-set"></a><span data-ttu-id="3801f-118">エンティティ セット</span><span class="sxs-lookup"><span data-stu-id="3801f-118">Entity set</span></span>
 
-| <span data-ttu-id="964b1-119">Finance and Operations</span><span class="sxs-lookup"><span data-stu-id="964b1-119">Finance and Operations</span></span>     | <span data-ttu-id="964b1-120">売上</span><span class="sxs-lookup"><span data-stu-id="964b1-120">Sales</span></span>    |
+| <span data-ttu-id="3801f-119">Finance and Operations</span><span class="sxs-lookup"><span data-stu-id="3801f-119">Finance and Operations</span></span>     | <span data-ttu-id="3801f-120">売上</span><span class="sxs-lookup"><span data-stu-id="3801f-120">Sales</span></span>    |
 |----------------------------|----------|
-| <span data-ttu-id="964b1-121">販売可能なリリース済製品</span><span class="sxs-lookup"><span data-stu-id="964b1-121">Sellable released products</span></span> | <span data-ttu-id="964b1-122">製品</span><span class="sxs-lookup"><span data-stu-id="964b1-122">Products</span></span> |
+| <span data-ttu-id="3801f-121">販売可能なリリース済製品</span><span class="sxs-lookup"><span data-stu-id="3801f-121">Sellable released products</span></span> | <span data-ttu-id="3801f-122">製品</span><span class="sxs-lookup"><span data-stu-id="3801f-122">Products</span></span> |
 
-## <a name="entity-flow"></a><span data-ttu-id="964b1-123">エンティティのフロー</span><span class="sxs-lookup"><span data-stu-id="964b1-123">Entity flow</span></span>
+## <a name="entity-flow"></a><span data-ttu-id="3801f-123">エンティティのフロー</span><span class="sxs-lookup"><span data-stu-id="3801f-123">Entity flow</span></span>
 
-<span data-ttu-id="964b1-124">製品は Finance and Operations で管理され、売上に同期されます。</span><span class="sxs-lookup"><span data-stu-id="964b1-124">Products are managed in Finance and Operations and synchronized to Sales.</span></span> <span data-ttu-id="964b1-125">Finance and Operations の**販売可能なリリース済製品**のデータ エンティティは、*販売可能*な製品のみをエクスポートします。</span><span class="sxs-lookup"><span data-stu-id="964b1-125">The **Sellable released products** data entity in Finance and Operations exports only products that are *sellable*.</span></span> <span data-ttu-id="964b1-126">販売可能製品には、販売注文で使用する必要のある情報があります。</span><span class="sxs-lookup"><span data-stu-id="964b1-126">Sellable products are products that have the information that they require in order to be used on a sales order.</span></span> <span data-ttu-id="964b1-127">[リリースされた製品] ページで [検証] 機能を使用して製品を検証する場合も、同じルールが適用されます。</span><span class="sxs-lookup"><span data-stu-id="964b1-127">The same rules apply when a product is validated by using the **Validate** function on the **Released product** page.</span></span>
+<span data-ttu-id="3801f-124">製品は Finance and Operations で管理され、売上に同期されます。</span><span class="sxs-lookup"><span data-stu-id="3801f-124">Products are managed in Finance and Operations and synchronized to Sales.</span></span> <span data-ttu-id="3801f-125">Finance and Operations の**販売可能なリリース済製品**のデータ エンティティは、*販売可能*な製品のみをエクスポートします。</span><span class="sxs-lookup"><span data-stu-id="3801f-125">The **Sellable released products** data entity in Finance and Operations exports only products that are *sellable*.</span></span> <span data-ttu-id="3801f-126">販売可能製品には、販売注文で使用する必要のある情報があります。</span><span class="sxs-lookup"><span data-stu-id="3801f-126">Sellable products are products that have the information that they require in order to be used on a sales order.</span></span> <span data-ttu-id="3801f-127">[リリースされた製品] ページで [検証] 機能を使用して製品を検証する場合も、同じルールが適用されます。</span><span class="sxs-lookup"><span data-stu-id="3801f-127">The same rules apply when a product is validated by using the **Validate** function on the **Released product** page.</span></span>
 
-<span data-ttu-id="964b1-128">[製品番号] がキーとして使用されます。</span><span class="sxs-lookup"><span data-stu-id="964b1-128">The product number is used as a key.</span></span> <span data-ttu-id="964b1-129">これは、製品バリアントが [製品バリアント] ごとの個別の [Product ID] で Sales に同期されることを意味します。</span><span class="sxs-lookup"><span data-stu-id="964b1-129">Therefore, when product variants are synchronized to Sales, each product variant has an individual product ID.</span></span>
+<span data-ttu-id="3801f-128">[製品番号] がキーとして使用されます。</span><span class="sxs-lookup"><span data-stu-id="3801f-128">The product number is used as a key.</span></span> <span data-ttu-id="3801f-129">これは、製品バリアントが [製品バリアント] ごとの個別の [Product ID] で Sales に同期されることを意味します。</span><span class="sxs-lookup"><span data-stu-id="3801f-129">Therefore, when product variants are synchronized to Sales, each product variant has an individual product ID.</span></span>
 
-## <a name="prospect-to-cash-solution-for-sales"></a><span data-ttu-id="964b1-130">売上の見込顧客を現金化するソリューション</span><span class="sxs-lookup"><span data-stu-id="964b1-130">Prospect to cash solution for Sales</span></span>
+## <a name="prospect-to-cash-solution-for-sales"></a><span data-ttu-id="3801f-130">売上の見込顧客を現金化するソリューション</span><span class="sxs-lookup"><span data-stu-id="3801f-130">Prospect to cash solution for Sales</span></span>
 
-<span data-ttu-id="964b1-131">Sales では、新しい [外部管理] フィールドが製品に追加され、特定の製品が外部で維持されていることを示します。</span><span class="sxs-lookup"><span data-stu-id="964b1-131">In Sales, a new **Is Externally Maintained** field has been added on products to indicate that a given product is maintained externally.</span></span> <span data-ttu-id="964b1-132">デフォルトでは、値は Sales へのインポート時に [はい] に設定されます。</span><span class="sxs-lookup"><span data-stu-id="964b1-132">By default, the value is set to **Yes** during an import to Sales.</span></span> <span data-ttu-id="964b1-133">使用可能な値は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="964b1-133">The following values are available:</span></span>
+<span data-ttu-id="3801f-131">Sales では、新しい [外部管理] フィールドが製品に追加され、特定の製品が外部で維持されていることを示します。</span><span class="sxs-lookup"><span data-stu-id="3801f-131">In Sales, a new **Is Externally Maintained** field has been added on products to indicate that a given product is maintained externally.</span></span> <span data-ttu-id="3801f-132">デフォルトでは、値は Sales へのインポート時に [はい] に設定されます。</span><span class="sxs-lookup"><span data-stu-id="3801f-132">By default, the value is set to **Yes** during an import to Sales.</span></span> <span data-ttu-id="3801f-133">使用可能な値は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="3801f-133">The following values are available:</span></span>
 
-- <span data-ttu-id="964b1-134">**はい** – 製品が Finance and Operations に由来し、Sales では編集できません。</span><span class="sxs-lookup"><span data-stu-id="964b1-134">**Yes** – The product originated from Finance and Operations and won't be editable in Sales.</span></span>
-- <span data-ttu-id="964b1-135">**いいえ** – 製品は Sales に直接入力します。</span><span class="sxs-lookup"><span data-stu-id="964b1-135">**No** – The product was entered directly in Sales.</span></span>
-- <span data-ttu-id="964b1-136">**(空白)** – 見込顧客を現金化するソリューションを有効にする前に、製品が Sales に存在します。</span><span class="sxs-lookup"><span data-stu-id="964b1-136">**(Blank)** – The product existed in Sales before the Prospect to cash solution was enabled.</span></span>
+- <span data-ttu-id="3801f-134">**はい** – 製品が Finance and Operations に由来し、Sales では編集できません。</span><span class="sxs-lookup"><span data-stu-id="3801f-134">**Yes** – The product originated from Finance and Operations and won't be editable in Sales.</span></span>
+- <span data-ttu-id="3801f-135">**いいえ** – 製品は Sales に直接入力します。</span><span class="sxs-lookup"><span data-stu-id="3801f-135">**No** – The product was entered directly in Sales.</span></span>
+- <span data-ttu-id="3801f-136">**(空白)** – 見込顧客を現金化するソリューションを有効にする前に、製品が Sales に存在します。</span><span class="sxs-lookup"><span data-stu-id="3801f-136">**(Blank)** – The product existed in Sales before the Prospect to cash solution was enabled.</span></span>
 
-<span data-ttu-id="964b1-137">**外部管理**フィールドは、外部管理された製品を持つ見積および受注のみが Finance and Operations に同期されることを保証するのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="964b1-137">The **Is Externally Maintained** field helps guarantee that only quotations and sales orders that have externally maintained products will be synchronized to Finance and Operations.</span></span>
+<span data-ttu-id="3801f-137">**外部管理**フィールドは、外部管理された製品を持つ見積および受注のみが Finance and Operations に同期されることを保証するのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="3801f-137">The **Is Externally Maintained** field helps guarantee that only quotations and sales orders that have externally maintained products will be synchronized to Finance and Operations.</span></span>
 
-<span data-ttu-id="964b1-138">外部管理の製品が、同じ通貨で最初に有効な価格リストに自動的に追加されます。</span><span class="sxs-lookup"><span data-stu-id="964b1-138">Externally maintained products are automatically added to the first valid price list that has the same currency.</span></span> <span data-ttu-id="964b1-139">価格リストは、名前がアルファベット順で構成されています。</span><span class="sxs-lookup"><span data-stu-id="964b1-139">Price lists are organized alphabetically by name.</span></span> <span data-ttu-id="964b1-140">Finance and Operations の製品販売価格は価格リストの価格として使用されています。</span><span class="sxs-lookup"><span data-stu-id="964b1-140">The product sales price from Finance and Operations is used as the price on the price list.</span></span> <span data-ttu-id="964b1-141">したがって、Finance and Operations の製品販売通貨ごとに、Sales の価格リストが必要です。</span><span class="sxs-lookup"><span data-stu-id="964b1-141">Therefore, there must be a price list in Sales for every product sales currency in Finance and Operations.</span></span> <span data-ttu-id="964b1-142">リリースされた販売可能商品の通貨は、製品が輸出される法人の会計通貨に設定されます。</span><span class="sxs-lookup"><span data-stu-id="964b1-142">The currency on the released sellable products is set to the accounting currency in the legal entity that the product is exported from.</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="964b1-143">製品の同期は、一致する通貨を含む価格リストなしでは成功しません。</span><span class="sxs-lookup"><span data-stu-id="964b1-143">Product synchronization won't succeed unless there is a price list that has a matching currency.</span></span>
-
-## <a name="preconditions-and-mapping-setup"></a><span data-ttu-id="964b1-144">前提条件とマッピングの設定</span><span class="sxs-lookup"><span data-stu-id="964b1-144">Preconditions and mapping setup</span></span>
-
-- <span data-ttu-id="964b1-145">一番最初の同期を実行する前に、Finance and Operation の既存製品に対して [特徴的製品テーブル] を全て入力する必要があります。</span><span class="sxs-lookup"><span data-stu-id="964b1-145">Before you run the synchronization for the first time, you must fill the Distinct product table for existing products in Finance and Operations.</span></span> <span data-ttu-id="964b1-146">このジョブが完了するまで、既存の製品は同期されません。</span><span class="sxs-lookup"><span data-stu-id="964b1-146">Existing products won't be synchronized until this job is completed.</span></span>
-
-    1. <span data-ttu-id="964b1-147">Finance and Operations の場合は、[検索] を使用し、[**特徴的製品テーブルの設定**] を検索します。</span><span class="sxs-lookup"><span data-stu-id="964b1-147">In Finance and Operations, use Search to search for **Populate distinct product table**.</span></span>
-    2. <span data-ttu-id="964b1-148">[特徴的製品テーブル] を選択し、ジョブを実行します。</span><span class="sxs-lookup"><span data-stu-id="964b1-148">Select **Populate distinct product table** to run the job.</span></span> <span data-ttu-id="964b1-149">このジョブには、1回のみ実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="964b1-149">This job must be run only one time.</span></span>
-
-- <span data-ttu-id="964b1-150">[SalesUnitSymbol] から [DefaultUnit (Name)] へのマッピングに、Finance and Operations と Sales の間における販売量測定単位 (UOM) に必要な値マップが存在することを確認してください。</span><span class="sxs-lookup"><span data-stu-id="964b1-150">Make sure that the required value map for the selling unit of measure (UOM) between Finance and Operations and Sales exists in the mapping of **SalesUnitSymbol** to **DefaultUnit (Name)**.</span></span>
-- <span data-ttu-id="964b1-151">**単位グループ** (**defaultuomscheduleid.name**) の値マップを更新し、Sales の**単位グループ**に一致させます。</span><span class="sxs-lookup"><span data-stu-id="964b1-151">Update the value map for **Unit group** (**defaultuomscheduleid.name**) so that it matches **Unit groups** in Sales.</span></span>
-
-    <span data-ttu-id="964b1-152">デフォルトのテンプレート値は、**既定単位**です。</span><span class="sxs-lookup"><span data-stu-id="964b1-152">The default template value is **Default unit**.</span></span>
-
-- <span data-ttu-id="964b1-153">Finance and Operations からのすべての製品の販売 UOM が Sales に存在することを確認します。</span><span class="sxs-lookup"><span data-stu-id="964b1-153">Make sure that the selling UOMs for all products from Finance and Operations exist in Sales.</span></span>
-- <span data-ttu-id="964b1-154">価格リストが、Finance and Operations の製品販売通貨ごとに Sales に存在することを確認します。</span><span class="sxs-lookup"><span data-stu-id="964b1-154">Make sure that price lists exist in Sales for every product sales currency in Finance and Operations.</span></span>
-- <span data-ttu-id="964b1-155">Sales で製品を作成すると、**ドラフト**または**有効**のステータスになります。</span><span class="sxs-lookup"><span data-stu-id="964b1-155">When products are created in Sales, they can have a status of **Draft** or **Active**.</span></span> <span data-ttu-id="964b1-156">動作は、Sales の [設定] > [管理] > [システムの設定] > [販売] で制御されます。</span><span class="sxs-lookup"><span data-stu-id="964b1-156">The behavior is controlled at **Settings** > **Administration** > **System settings** > **Sales** in Sales.</span></span>
-
-    <span data-ttu-id="964b1-157">作成時にステータスが [ドラフト] である製品は、見積書または販売注文に追加する前に有効化する必要があります。</span><span class="sxs-lookup"><span data-stu-id="964b1-157">Products that have **Draft** status when they are created must be activated before they can be added to quotations or sales orders.</span></span>
-
-## <a name="template-mapping-in-data-integration"></a><span data-ttu-id="964b1-158">データ統合のテンプレートのマッピング</span><span class="sxs-lookup"><span data-stu-id="964b1-158">Template mapping in Data integration</span></span>
-
-<span data-ttu-id="964b1-159">次の図は、データ インテグレーターのテンプレート マッピングの例を示しています。</span><span class="sxs-lookup"><span data-stu-id="964b1-159">The following illustration shows an example of a template mapping in Data integration.</span></span> 
+<span data-ttu-id="3801f-138">外部管理の製品が、同じ通貨で最初に有効な価格リストに自動的に追加されます。</span><span class="sxs-lookup"><span data-stu-id="3801f-138">Externally maintained products are automatically added to the first valid price list that has the same currency.</span></span> <span data-ttu-id="3801f-139">価格リストは、名前がアルファベット順で構成されています。</span><span class="sxs-lookup"><span data-stu-id="3801f-139">Price lists are organized alphabetically by name.</span></span> <span data-ttu-id="3801f-140">Finance and Operations の製品販売価格は価格リストの価格として使用されています。</span><span class="sxs-lookup"><span data-stu-id="3801f-140">The product sales price from Finance and Operations is used as the price on the price list.</span></span> <span data-ttu-id="3801f-141">したがって、Finance and Operations の製品販売通貨ごとに、Sales の価格リストが必要です。</span><span class="sxs-lookup"><span data-stu-id="3801f-141">Therefore, there must be a price list in Sales for every product sales currency in Finance and Operations.</span></span> <span data-ttu-id="3801f-142">リリースされた販売可能商品の通貨は、製品が輸出される法人の会計通貨に設定されます。</span><span class="sxs-lookup"><span data-stu-id="3801f-142">The currency on the released sellable products is set to the accounting currency in the legal entity that the product is exported from.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="964b1-160">マッピングは、Sales から Finance and Operations にどのフィールド情報を同期するかを表示します。</span><span class="sxs-lookup"><span data-stu-id="964b1-160">The mapping shows which field information will be synchronized from Sales to Finance and Operations.</span></span>
+> <span data-ttu-id="3801f-143">製品の同期は、一致する通貨を含む価格リストなしでは成功しません。</span><span class="sxs-lookup"><span data-stu-id="3801f-143">Product synchronization won't succeed unless there is a price list that has a matching currency.</span></span>
+
+## <a name="preconditions-and-mapping-setup"></a><span data-ttu-id="3801f-144">前提条件とマッピングの設定</span><span class="sxs-lookup"><span data-stu-id="3801f-144">Preconditions and mapping setup</span></span>
+
+- <span data-ttu-id="3801f-145">一番最初の同期を実行する前に、Finance and Operation の既存製品に対して [特徴的製品テーブル] を全て入力する必要があります。</span><span class="sxs-lookup"><span data-stu-id="3801f-145">Before you run the synchronization for the first time, you must fill the Distinct product table for existing products in Finance and Operations.</span></span> <span data-ttu-id="3801f-146">このジョブが完了するまで、既存の製品は同期されません。</span><span class="sxs-lookup"><span data-stu-id="3801f-146">Existing products won't be synchronized until this job is completed.</span></span>
+
+    1. <span data-ttu-id="3801f-147">Finance and Operations の場合は、[検索] を使用し、[**特徴的製品テーブルの設定**] を検索します。</span><span class="sxs-lookup"><span data-stu-id="3801f-147">In Finance and Operations, use Search to search for **Populate distinct product table**.</span></span>
+    2. <span data-ttu-id="3801f-148">[特徴的製品テーブル] を選択し、ジョブを実行します。</span><span class="sxs-lookup"><span data-stu-id="3801f-148">Select **Populate distinct product table** to run the job.</span></span> <span data-ttu-id="3801f-149">このジョブには、1回のみ実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="3801f-149">This job must be run only one time.</span></span>
+
+- <span data-ttu-id="3801f-150">[SalesUnitSymbol] から [DefaultUnit (Name)] へのマッピングに、Finance and Operations と Sales の間における販売量測定単位 (UOM) に必要な値マップが存在することを確認してください。</span><span class="sxs-lookup"><span data-stu-id="3801f-150">Make sure that the required value map for the selling unit of measure (UOM) between Finance and Operations and Sales exists in the mapping of **SalesUnitSymbol** to **DefaultUnit (Name)**.</span></span>
+- <span data-ttu-id="3801f-151">**単位グループ** (**defaultuomscheduleid.name**) の値マップを更新し、Sales の**単位グループ**に一致させます。</span><span class="sxs-lookup"><span data-stu-id="3801f-151">Update the value map for **Unit group** (**defaultuomscheduleid.name**) so that it matches **Unit groups** in Sales.</span></span>
+
+    <span data-ttu-id="3801f-152">デフォルトのテンプレート値は、**既定単位**です。</span><span class="sxs-lookup"><span data-stu-id="3801f-152">The default template value is **Default unit**.</span></span>
+
+- <span data-ttu-id="3801f-153">Finance and Operations からのすべての製品の販売 UOM が Sales に存在することを確認します。</span><span class="sxs-lookup"><span data-stu-id="3801f-153">Make sure that the selling UOMs for all products from Finance and Operations exist in Sales.</span></span>
+- <span data-ttu-id="3801f-154">価格リストが、Finance and Operations の製品販売通貨ごとに Sales に存在することを確認します。</span><span class="sxs-lookup"><span data-stu-id="3801f-154">Make sure that price lists exist in Sales for every product sales currency in Finance and Operations.</span></span>
+- <span data-ttu-id="3801f-155">Sales で製品を作成すると、**ドラフト**または**有効**のステータスになります。</span><span class="sxs-lookup"><span data-stu-id="3801f-155">When products are created in Sales, they can have a status of **Draft** or **Active**.</span></span> <span data-ttu-id="3801f-156">動作は、Sales の [設定] > [管理] > [システムの設定] > [販売] で制御されます。</span><span class="sxs-lookup"><span data-stu-id="3801f-156">The behavior is controlled at **Settings** > **Administration** > **System settings** > **Sales** in Sales.</span></span>
+
+    <span data-ttu-id="3801f-157">作成時にステータスが [ドラフト] である製品は、見積書または販売注文に追加する前に有効化する必要があります。</span><span class="sxs-lookup"><span data-stu-id="3801f-157">Products that have **Draft** status when they are created must be activated before they can be added to quotations or sales orders.</span></span>
+
+## <a name="template-mapping-in-data-integration"></a><span data-ttu-id="3801f-158">データ統合のテンプレートのマッピング</span><span class="sxs-lookup"><span data-stu-id="3801f-158">Template mapping in Data integration</span></span>
+
+<span data-ttu-id="3801f-159">次の図は、データ インテグレーターのテンプレート マッピングの例を示しています。</span><span class="sxs-lookup"><span data-stu-id="3801f-159">The following illustration shows an example of a template mapping in Data integration.</span></span> 
+
+> [!NOTE]
+> <span data-ttu-id="3801f-160">マッピングは、Sales から Finance and Operations にどのフィールド情報を同期するかを表示します。</span><span class="sxs-lookup"><span data-stu-id="3801f-160">The mapping shows which field information will be synchronized from Sales to Finance and Operations.</span></span>
 
 ![データ インテグレーターのテンプレートのマッピング](./media/products-direct-template-mapping-data-integrator-1.png)
 
 
-## <a name="related-topics"></a><span data-ttu-id="964b1-162">関連トピック</span><span class="sxs-lookup"><span data-stu-id="964b1-162">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="3801f-162">関連トピック</span><span class="sxs-lookup"><span data-stu-id="3801f-162">Related topics</span></span>
 
-[<span data-ttu-id="964b1-163">見込顧客を現金化</span><span class="sxs-lookup"><span data-stu-id="964b1-163">Prospect to cash</span></span>](prospect-to-cash.md)
+[<span data-ttu-id="3801f-163">見込顧客を現金化</span><span class="sxs-lookup"><span data-stu-id="3801f-163">Prospect to cash</span></span>](prospect-to-cash.md)
 
-[<span data-ttu-id="964b1-164">Sales から Finance and Operations の顧客への勘定の直接同期</span><span class="sxs-lookup"><span data-stu-id="964b1-164">Synchronize accounts directly from Sales to customers in Finance and Operations</span></span>](accounts-template-mapping-direct.md)
+[<span data-ttu-id="3801f-164">Sales から Finance and Operations の顧客への勘定の直接同期</span><span class="sxs-lookup"><span data-stu-id="3801f-164">Synchronize accounts directly from Sales to customers in Finance and Operations</span></span>](accounts-template-mapping-direct.md)
 
-[<span data-ttu-id="964b1-165">Sales から Finance and Operations の連絡先または顧客への連絡先の直接同期</span><span class="sxs-lookup"><span data-stu-id="964b1-165">Synchronize contacts directly from Sales to contacts or customers in Finance and Operations</span></span>](contacts-template-mapping-direct.md)
+[<span data-ttu-id="3801f-165">Sales から Finance and Operations の連絡先または顧客への連絡先の直接同期</span><span class="sxs-lookup"><span data-stu-id="3801f-165">Synchronize contacts directly from Sales to contacts or customers in Finance and Operations</span></span>](contacts-template-mapping-direct.md)
 
-[<span data-ttu-id="964b1-166">販売注文ヘッダーおよび明細行の Finance and Operations から Sales への直接同期</span><span class="sxs-lookup"><span data-stu-id="964b1-166">Synchronize sales order headers and lines directly from Finance and Operations to Sales</span></span>](sales-order-template-mapping-direct-two-ways.md)
+[<span data-ttu-id="3801f-166">販売注文ヘッダーおよび明細行の Finance and Operations から Sales への直接同期</span><span class="sxs-lookup"><span data-stu-id="3801f-166">Synchronize sales order headers and lines directly from Finance and Operations to Sales</span></span>](sales-order-template-mapping-direct-two-ways.md)
 
-[<span data-ttu-id="964b1-167">売上請求書ヘッダーおよび直接明細行の Finance and Operations から Sales への直接同期</span><span class="sxs-lookup"><span data-stu-id="964b1-167">Synchronize sales invoice headers and lines directly from Finance and Operations to Sales</span></span>](sales-invoice-template-mapping-direct.md)
+[<span data-ttu-id="3801f-167">売上請求書ヘッダーおよび直接明細行の Finance and Operations から Sales への直接同期</span><span class="sxs-lookup"><span data-stu-id="3801f-167">Synchronize sales invoice headers and lines directly from Finance and Operations to Sales</span></span>](sales-invoice-template-mapping-direct.md)
 
 
 
