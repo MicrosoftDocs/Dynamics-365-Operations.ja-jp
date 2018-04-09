@@ -1,6 +1,6 @@
 ---
 title: "購入する前に"
-description: "Dynamics 365 for Finance and Operations, Enterprise edition の購入を検討しているときに使用するステップ バイ ステップのガイドです。"
+description: "Dynamics 365 for Finance and Operations の購入を検討しているときに使用するステップ バイ ステップのガイドです。"
 author: kfend
 manager: AnnBe
 ms.date: 07/10/2017
@@ -17,10 +17,10 @@ ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
 ms.translationtype: HT
-ms.sourcegitcommit: 98740e5b992283b924adab34f291b9c1f2703457
-ms.openlocfilehash: d6c4e475925cdc94be614822ffb242eb7ac8cfa7
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 160313ac375feb875982bfdbbd850db7f2d8be35
 ms.contentlocale: ja-jp
-ms.lasthandoff: 01/31/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -28,13 +28,13 @@ ms.lasthandoff: 01/31/2018
 
 [!include[banner](../includes/banner.md)]
 
-Dynamics 365 for Finance and Operations, Enterprise edition を検討されていますか? お客様が Finance and Operations を検討されている、または購入の準備が整っているかをステップ バイ ステップ ガイダンスにまとめました。
+Dynamics 365 for Finance and Operations は初めてですか。 お客様が Finance and Operations を検討されている、または購入の準備が整っているかをステップ バイ ステップ ガイダンスにまとめました。
 
 ## <a name="step-one--try-out-finance-and-operations-free-for-30-days"></a>ステップ 1: Finance and Operations の 30 日間無料トライアル
 Dynamics 365 for Finance and Operations は、簡単な E メールでのサインアップを通じて 30 日間お試しいただけます。 Finance and Operations のトライアル版には、実行中の特定のシナリオを表示することによりステップ バイ ステップの手順が記載されている「はじめに」のタスク ガイドが含まれています。 この製品は、シナリオの探索や練習には使用できますが、カスタマイズすることはできません。 製品の使用を簡単にするため、また経験がより意味あるものになるためにデモ データが含まれています。 トライアル版の有効期限が終了する 3 日前に、通知の電子メールが送信されます。 [www.microsoft.com/en-us/dynamics365/operations](https://www.microsoft.com/en-us/dynamics365/operations) で詳細を確認する。
 
 ## <a name="step-two-choose-a-deployment-option"></a>ステップ 2: 配置オプションを選択
-これで、クラウドまたはオンプレミスの Microsoft Dynamics 365 for Finance and Operations、Enterprise エディションを配置できます。 クラウド配置では、顧客のデータ センター内にオンプレミス配置がローカルに配置されたときに、Microsoft で完全に管理されている ERP サービスが提供されます。
+これで、クラウドまたはオンプレミスの Microsoft Dynamics 365 for Finance and Operations を配置できます。 クラウド配置では、顧客のデータ センター内にオンプレミス配置がローカルに配置されたときに、Microsoft で完全に管理されている ERP サービスが提供されます。
 
 配置オプションとしてオンプレミスを選択する場合、次の考慮事項を考慮する必要があります。
 - [クラウド認証](https://explore.dynamics.com/operations/microsoft-dynamics-365-for-operations-certification-priorities) で使用できない規制およびコンプライアンスのニーズ
@@ -43,7 +43,7 @@ Dynamics 365 for Finance and Operations は、簡単な E メールでのサイ�
 - [最小限のインフラストラクチャ要件](system-requirements-on-prem.md#minimum-infrastructure-requirements)
 
 > [!IMPORTANT]
-> Azure を含む、任意のパブリック クラウド インフラストラクチャでサポートされていない、Microsoft Dynamics 365 for Finance and Operations, Enterprise edition のオンプレミス配置。 
+> Azure を含む、任意のパブリック クラウド インフラストラクチャでサポートされていない、Microsoft Dynamics 365 for Finance and Operations のオンプレミス配置。 
 
 詳細については、[配置オプション](../../dev-itpro/deployment/choose-deployment-type.md)を参照してください。
 
@@ -70,7 +70,7 @@ Dynamics 365 for Finance and Operations の定期売買には多くのオプシ�
 Microsoft クラウド ソリューション プロバイダーはお客様と密接に協力して、企業や組織のニーズを理解します。 [Microsoft パートナー センター ポータルを使用し、ニーズに合わせてパートナーを検索する](https://partnercenter.microsoft.com/en-us/partner/home)。 
 
 ### <a name="buy-through-a-dynamics-partner-on-premises"></a>Dynamics パートナー (オンプレミス) から購入
-Finance and Operations オンプレミスを購入するにはパートナーと協力する必要があります。 詳細については、[Dynamics 365 for Finance and Operations, Enterprise Edition (オンプレミス) の購入](purchase-on-premises.md)を参照してください。
+Finance and Operations オンプレミスを購入するにはパートナーと協力する必要があります。 詳細については、[Dynamics 365 for Finance and Operations (オンプレミス) の購入](purchase-on-premises.md) を参照してください。
 
 ### <a name="choose-your-support-option"></a>サポート オプションの選択
 Microsoft は柔軟性の高い、業界をリードするサポート、サービス、およびリソースを提供することにより、ユーザーが技術的な問題に素早く対処し、Dynamics 365 の投資収益率を最大限に高めます。 業務要件を最大限に満たす計画を選択します。 

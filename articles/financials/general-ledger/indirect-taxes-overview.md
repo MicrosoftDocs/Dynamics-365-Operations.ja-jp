@@ -19,10 +19,10 @@ ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1eb30ccbaa51bf794c7b3ea2be3fe749fb8ff88d
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 02d28aef2316d7cfe5ad4eb45272dc1a22c96789
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -74,7 +74,7 @@ ms.lasthandoff: 11/03/2017
 すべてのトランザクションで、[**売上税トランザクション**] ページを開くことで計算された売上税を検索できます。 ドキュメント明細行またはドキュメント全体の売上税を検索できます。 元のドキュメントが誤差のある金額を示す場合、特定のドキュメント (たとえば、仕入先請求書と一般仕訳帳) で計算済売上税を調整できます。
 
 ## <a name="sales-tax-settlement-and-reporting"></a>売上税の決済および報告
-売上税は、税務当局に定期的に支払う必要があります (月ごと、四半期ごとなど)。 Microsoft Dynamics 365 for Finance and Operations、Enterprise edition では、期間の税金勘定を決済し、元帳転記グループに指定されている納税勘定に残高を相殺する機能を提供しています。 この機能は [**売上税の決済と転記**] ページでアクセスできます。 売上税を決済する売上税精算期間を指定する必要があります。 
+売上税は、税務当局に定期的に支払う必要があります (月ごと、四半期ごとなど)。 Microsoft Dynamics 365 for Finance and Operations では、期間の税金勘定を決済し、元帳転記グループに指定されている納税勘定に残高を相殺する機能を提供しています。 この機能は [**売上税の決済と転記**] ページでアクセスできます。 売上税を決済する売上税精算期間を指定する必要があります。 
 
 売上税が支払われた後、売上税支払勘定の決算残高が銀行口座に対して釣り合う必要があります。 売上税精算期間で指定された売上税所轄官庁が仕入先勘定に関連付けられている場合、売上税残高は未処理の仕入先請求書として転記され、通常の支払提案に含めることができます。
 

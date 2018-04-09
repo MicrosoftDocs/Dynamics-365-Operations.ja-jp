@@ -18,17 +18,17 @@ ms.author: sarvanis
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 7be3e9970e2599c159e7c9d414b54876d0116350
-ms.openlocfilehash: 2b5abc98f5788c5091e5be61688cfd0d4076a510
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 2ecfb759a59292ddbce484b3ae20368c486fedd9
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 # <a name="configure-sql-server-reporting-services-for-an-on-premises-deployment"></a>オンプレミス配置の SQL Server Reporting Services のコンフィギュレーション
 
 [!include[banner](../includes/banner.md)]
 
-このトピックの手順を使用し、Microsoft Dynamics 365 for Finance and Operations, Enterprise エディションのオンプレミス配置に SQL Server Reporting Services を構成します。
+このトピックの手順を使用し、Microsoft Dynamics 365 for Finance and Operations エディションのオンプレミス配置に SQL Server Reporting Services (SSRS) を構成します。
 
 1. SQL Reporting Services Configuration Manager アプリケーションを開きます。
 2. **サーバー名**を既定のままにし、現在のコンピューターの名前、および**レポート サーバーのインスタンス**、**MSSQLSERVER** にします。 

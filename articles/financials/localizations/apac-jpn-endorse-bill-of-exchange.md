@@ -1,9 +1,9 @@
 ---
-title: "為替手形の裏書による仕入先への支払"
-description: "日本では、多くの場合、為替手形 (BOEs) は仕入先に裏書きされ、支払方法として使用されます。 Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition の BOE のリスト ページでは、BOE のライフ サイクルの集中管理を提供します。"
+title: "日本での受取手形の裏書による仕入先への支払"
+description: "このトピックには、日本で仕入先に支払うための受取手形 (BOE) の裏書に関する情報が含まれています。"
 author: yijialuan
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 03/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,19 +18,18 @@ ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 3cb6faa4c282b9868ad9660aaa3f1aeefe04ad6d
+ms.sourcegitcommit: 554c350961baed8be8f37854dd1b095d4342ae0e
+ms.openlocfilehash: adc0ae1ff84c916e0ecbe538c2693c3fd4eb0d79
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/21/2018
 
 ---
 
-# <a name="pay-a-vendor-by-endorsing-a-bill-of-exchange"></a>為替手形の裏書による仕入先への支払
+# <a name="pay-a-vendor-by-endorsing-a-bill-of-exchange-for-japan"></a>日本での受取手形の裏書による仕入先への支払
 
 [!include[banner](../includes/banner.md)]
 
-
-日本では、多くの場合、為替手形 (BOEs) は仕入先に裏書きされ、支払方法として使用されます。 Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition の BOE のリスト ページでは、BOE のライフ サイクルの集中管理を提供します。
+日本では、多くの場合、為替手形 (BOE) は仕入先に裏書きされ、支払方法として使用されます。 Microsoft Dynamics 365 for Finance and Operations の BOE のリスト ページでは、BOE のライフ サイクルの集中管理を提供します。
 
 Finance and Operations の BOE の管理を開始するには、受取手形振出仕訳帳を開きます。 このタイプの仕訳帳を転記すると、BOE ステータスが**振出**の場合、次のステージの BOE のライフ サイクルを管理できます。
 

@@ -20,10 +20,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: ef108fb7be65b91c531db750018f00f7fdd67da1
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 72dbc5d383352d4d6444d07495fdef00137b1c7f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -58,7 +58,7 @@ ms.lasthandoff: 02/07/2018
 
 ## <a name="distribution-export-and-import-of-product-data"></a>配分、エクスポート、および製品データのインポート
 
-製品定義は、Microsoft Dynamics 365 for Finance and Operations、Enterprise エディションで作成できます。 製品ライフサイクル管理 (PLM)、製品データ管理 (PDM)、製品情報管理 (PIM) システムからインポートすることもできます。 複数の Finance and Operations インスタンスが使用されている場合、1 つのインスタンスは通常、他のすべてのインスタンスの製品データのマスターとして使用されます。 この方法は、1 つのインスタンスから別のインスタンスへの製品定義データのエクスポートおよびインポートを可能にする大量のデータ エンティティによってサポートされています。
+製品定義は、Microsoft Dynamics 365 for Finance and Operations で作成できます。 製品ライフサイクル管理 (PLM)、製品データ管理 (PDM)、製品情報管理 (PIM) システムからインポートすることもできます。 複数の Finance and Operations インスタンスが使用されている場合、1 つのインスタンスは通常、他のすべてのインスタンスの製品データのマスターとして使用されます。 この方法は、1 つのインスタンスから別のインスタンスへの製品定義データのエクスポートおよびインポートを可能にする大量のデータ エンティティによってサポートされています。
 
 多くのインスタンスに製品データの配分をサポートするために、Finance and Operations では Common Data Service を使用できます。 製品定義は、Finance and Operations のインスタンスから Common Data Service にエクスポートできます。 製品定義を使用して、Microsoft Dynamics 365 for Sales などの他のビジネス アプリケーションに製品データをプロビジョニングすることができます。
 

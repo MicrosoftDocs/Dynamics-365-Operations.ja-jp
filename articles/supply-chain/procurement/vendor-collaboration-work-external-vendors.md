@@ -19,10 +19,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 24a17d3734e39815684098f694a77e96cdbc1cfe
-ms.openlocfilehash: 2d879ee5a23e3263c9dce52f4732a2be74e60f8e
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 76c2b078b583a1f8f2235eef15dbba514e57b0f8
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/07/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 03/07/2018
 
 [!include[banner](../includes/banner.md)]
 
-[**仕入先コラボレーション**] モジュールは、Microsoft Dynamics 365 for Finance and Operations, Enterprise edition での電子データ交換 (EDI) の統合がない仕入先が対象となります。 発注書 (PO)、請求書、委託販売在庫情報、および見積依頼 (RFQ) を仕入先が使用できるようにし、その仕入先マスター データの部分にアクセスすることもできます。 このトピックでは、仕入先コラボレーション インタフェースを使用する、発注書、見積依頼および委託販売在庫を使用している外部仕入先とコラボレーションする方法について説明します。 また、特定の仕入先が仕入先コラボレーションを使用できるようにする方法、すべての仕入先が発注書に応答する際に表示する情報を定義する方法についても説明します。
+[仕入先コラボレーション] モジュールは、Microsoft Dynamics 365 for Finance and Operations での電子データ交換 (EDI) の統合がない仕入先を対象とします。 発注書 (PO)、請求書、委託販売在庫情報、および見積依頼 (RFQ) を仕入先が使用できるようにし、その仕入先マスター データの部分にアクセスすることもできます。 このトピックでは、仕入先コラボレーション インタフェースを使用する、発注書、見積依頼および委託販売在庫を使用している外部仕入先とコラボレーションする方法について説明します。 また、特定の仕入先が仕入先コラボレーションを使用できるようにする方法、すべての仕入先が発注書に応答する際に表示する情報を定義する方法についても説明します。
 
 外部仕入先が仕入先コラボレーション インタフェースで実行する内容の詳細については、「[顧客との仕入先コラボレーション](vendor-collaboration-work-customers-dynamics-365-operations.md)」を参照してください。
 

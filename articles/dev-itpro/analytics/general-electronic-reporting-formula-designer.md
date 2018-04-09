@@ -19,10 +19,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 946584d8afa8937afc7a26835e05b0eecebaad35
-ms.openlocfilehash: 67558889dea03738a665d8f1e2f30833b96c4656
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 41d5671d180bae039d873419352d52afe90e386b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 12/23/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -36,7 +36,7 @@ ms.lasthandoff: 12/23/2017
 
 ER はフォーミュラ デザイナーをサポートします。 したがって、設計時に次のタスクに使用できる式を実行時にコンフィギュレーションできます。
 
-- ER フォーマットのデータ ソースとして設計された ER データ モデルに入力する必要のある Microsoft Dynamics 365 for Finance and Operations, Enterprise edition データベースから受け取るデータの変換。 (たとえば、これらの変換にはフィルタ処理、グループ化、およびデータ型の変換が含まれる可能性があります。)
+- ER フォーマットのデータ ソースとして設計された ER データ モデルに入力する必要のある Microsoft Dynamics 365 for Finance and Operations データベースから受け取るデータの変換。 (たとえば、これらの変換にはフィルタ処理、グループ化、およびデータ型の変換が含まれる可能性があります。)
 - 特定の ER フォーマットのレイアウトや条件に従って電子ドキュメントを生成するため、フォーマット データを送信する必要があります。 (たとえば、書式設定は、要求された言語またはカルチャ、またはエンコードに従って行われる可能性があります)。
 - 電子ドキュメントを作成するプロセスを制御します。 (たとえば、式は、実行しているデータによってフォーマットの特定の要素の出力を有効または無効にできます。 これらはドキュメントの作成プロセスを中断したり、またはユーザーにメッセージをスローすることもできます。)
 

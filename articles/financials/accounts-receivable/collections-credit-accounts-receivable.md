@@ -1,6 +1,6 @@
 ---
 title: "売掛金勘定の貸方転記と取立"
-description: "売掛金勘定回収情報は、Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition のコレクションのページを使用して 1 つの中央ビューで管理されます。 貸方および取立マネージャが回収を管理するには、この中央ビューを使用できます。 回収代行業者は、定義済の回収基準または [顧客] ページを使用して生成された、顧客リストから回収プロセスを開始することができます。"
+description: "売掛金勘定回収情報は、Microsoft Dynamics 365 for Finance and Operations のコレクションのページを使用して 1 つの中央ビューで管理されます。 貸方および取立マネージャが回収を管理するには、この一元化されたビューを使用します。 回収代行業者は、定義済の回収基準または [顧客] ページを使用して生成された、顧客リストから回収プロセスを開始することができます。"
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 10/26/2017
@@ -19,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: a071d3151fbcc9e29bd138b096b34b88bc405a4f
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 23fc1a160cf25255a1677ca0e501c374746b6e34
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 

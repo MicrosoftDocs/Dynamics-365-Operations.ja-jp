@@ -1,6 +1,6 @@
 --- 
 title: "CSV 形式 (ER) の外部ファイルからデータをインポートするためのコンフィギュレーションを設計する"
-description: "この手順を使用して、外部ファイルから CSV 形式から Dynamics 365 for Finance and Operations, Enterprise edition アプリにデータをインポートする電子申告 (ER) 構成を設計します。"
+description: "この手順を使用して、外部ファイルから CSV 形式から Dynamics 365 for Finance and Operations アプリにデータをインポートする電子申告 (ER) 構成を設計します。"
 author: NickSelin
 manager: AnnBe
 ms.date: 12/12/2017
@@ -16,24 +16,24 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 74606b1378e94e8a6945a408520c8b68648970d8
-ms.openlocfilehash: 5c1766992531ee272ea156bc33c4c0ea8dfac27a
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: f6bfa9f7c0638b0eaacf1a49bcd7d84ffab3acbf
 ms.contentlocale: ja-jp
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 # <a name="design-a-configuration-to-import-data-from-an-external-file-in-csv-format-er"></a>CSV 形式 (ER) の外部ファイルからデータをインポートするためのコンフィギュレーションを設計する
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-この手順を使用して、外部ファイルから CSV 形式から Dynamics 365 for Finance and Operations, Enterprise edition アプリにデータをインポートする電子申告 (ER) 構成を設計します。 この手順では、サンプル会社 Litware, Inc. 用に、必要な ER コンフィギュレーションを作成します。これらのステップを完了するには、まず手順「ER コンフィギュレーション プロバイダーの作成および有効なプロバイダーとしてのマーク付け」にあるステップを完了する必要があります。 
+この手順を使用して、外部ファイルから CSV 形式から Dynamics 365 for Finance and Operations アプリにデータをインポートする電子申告 (ER) 構成を設計します。 この手順では、サンプル会社 Litware, Inc. 用に、必要な ER コンフィギュレーションを作成します。これらのステップを完了するには、まず手順「ER コンフィギュレーション プロバイダーの作成および有効なプロバイダーとしてのマーク付け」にあるステップを完了する必要があります。 
 
 この手順は、「システム管理者」または「電子レポート開発者」ロールが割り当てられているユーザー用に作成されています。 これらのステップは、USMF データ セットを使用して完了することができます。 
 
 ローカルで、以下のファイルをダウンロードして保存する必要もあります: (https://go.microsoft.com/fwlink/?linkid=862266): 1099model.xml、1099formatcsv.xml、1099entriescsv.csv。
 
 1. [組織管理] > [ワークスペース] > [電子申告] の順に移動します。
-    * Dynamics 365 for Finance and Operations, Enterprise edition アプリケーションのテーブルに、XML、TXT、または CSV 形式の外部ファイルをインポートするプロセスを構成できます。 まず、ビジネス観点から、インポートされたデータを表す抽象データ モデルを作成する必要があります: ER データ モデルの構成が作成されます。 次に、ファイルから抽象データ モデルにデータをポートする方法として、設計されたデータ モデルにマップするインポートされたファイルの構造を定義します: ER 形式の構成が作成されます。 次に、インポートされたファイルのデータと保持されている抽象データ モデルを使用してアプリケーション テーブルまたはデータ エンティティーを更新する方法を記述する、新しいモデル マッピングを使用し、ER データ モデル構成を拡張する必要があります。  
+    * Dynamics 365 for Finance and Operations アプリケーションのテーブルに、XML、TXT、または CSV 形式の外部ファイルをインポートするプロセスを構成できます。 まず、ビジネス観点から、インポートされたデータを表す抽象データ モデルを作成する必要があります: ER データ モデルの構成が作成されます。 次に、ファイルから抽象データ モデルにデータをポートする方法として、設計されたデータ モデルにマップするインポートされたファイルの構造を定義します: ER 形式の構成が作成されます。 次に、インポートされたファイルのデータと保持されている抽象データ モデルを使用してアプリケーション テーブルまたはデータ エンティティーを更新する方法を記述する、新しいモデル マッピングを使用し、ER データ モデル構成を拡張する必要があります。  
     * 以下の手順では、後で仕入先の 1099 フォームの決済に使用するために、外部 CSV ファイルから外部で追跡された仕入先の取引をどのようにインポートするかを示します。   
     * サンプル会社 Litware, Inc. のコンフィギュレーション プロバイダーが使用可能であり、アクティブとしてマークされていることを確認します。 このコンフィギュレーション プロバイダーが表示されない場合は、「コンフィギュレーション プロバイダーの作成および有効なプロバイダーとしてのマーク付け」という手順のステップを完了する必要があります。  
 2. [コンフィギュレーションをレポートする] をクリックします。

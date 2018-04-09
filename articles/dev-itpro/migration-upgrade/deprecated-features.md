@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 16bdf2176869e5822ddf8732c829b65f1e60632c
-ms.openlocfilehash: 03b79816ffea649cf226408ed4660c3419103a7a
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 0618d71fdb4b29bfdacd6b9e1a8ed47e03abe00d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 02/07/2018
 
 [!include[banner](../includes/banner.md)]
 
-このトピックでは、Dynamics 365 for Finance and Operations, Enterprise editionで削除された機能や、将来の更新で削除される予定の機能について説明します。
+このトピックでは、Dynamics 365 for Finance and Operations で削除された機能や、将来の更新で削除される予定の機能について説明します。
 
 - *削除された*機能は製品では使用できません。
 - *削除予定*の機能は現在開発中ではなく、将来の更新で削除される可能性があります。

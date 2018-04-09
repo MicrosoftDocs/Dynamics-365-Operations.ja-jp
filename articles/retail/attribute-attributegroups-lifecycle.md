@@ -19,10 +19,10 @@ ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
 ms.translationtype: HT
-ms.sourcegitcommit: 25fa39dc81fc721d7593a25a102ce47041ebc5f0
-ms.openlocfilehash: 6fde46c35d5efbb72ad97628d7d5a3f9eeba7c8e
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 53af4335146be6c163a6d84b60155e1a741c0be4
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/13/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 03/13/2018
 
 [!include[banner](includes/banner.md)]
 
-[属性] は、製品とユーザー定義フィールドによる特性をさらに記述する方法を提供 (たとえば、[メモリ サイズ]、[ハード ディスク能力]、[エネルギー スター対応] など)。 Microsoft Dynamics 365 for Finance and Operations、Enterprise edition にて、属性は製品カテゴリ、小売チャンネルなどのさまざまな小売エンティティに関連付けられており、それらに対して既定値を設定できます。 製品は、製品カテゴリまたは小売チャンネルに関連付けられる場合、その属性と既定値を継承します。 既定値は、個々の製品レベルや小売チャンネル レベル、または小売カタログで上書きできます。
+[属性] は、製品とユーザー定義フィールドによる特性をさらに記述する方法を提供 (たとえば、[メモリ サイズ]、[ハード ディスク能力]、[エネルギー スター対応] など)。 Microsoft Dynamics 365 for Finance and Operations にて、属性は製品カテゴリ、小売チャンネルなどのさまざまな小売エンティティに関連付けられており、それらに対して既定値を設定できます。 製品は、製品カテゴリまたは小売チャンネルに関連付けられる場合、その属性と既定値を継承します。 既定値は、個々の製品レベルや小売チャンネル レベル、または小売カタログで上書きできます。
  
 例えば、典型的なテレビ番組は、以下の属性を有することがあります。
 

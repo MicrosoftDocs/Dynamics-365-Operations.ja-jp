@@ -1,6 +1,6 @@
 ---
 title: "複数のワークシートに Excel データ エンティティ テンプレートからのデータをインポートします。"
-description: "このトピックでは、Excel データ エンティティ テンプレートを使用して、Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition にデータをインポートする方法について説明します。"
+description: "このトピックでは、Excel データ エンティティ テンプレートを使用して、Microsoft Dynamics 365 for Finance and Operations にデータをインポートする方法について説明します。"
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 01/01/2018
@@ -18,10 +18,10 @@ ms.author: sunilg
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
 ms.translationtype: HT
-ms.sourcegitcommit: af7f9a373496eee4df354d5dd9e5a25c51317c43
-ms.openlocfilehash: b314a649829dd14a525923802e19b847dc5a115e
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 2aefea9373df20bd3e99026e30aed096dcea9814
 ms.contentlocale: ja-jp
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 02/27/2018
 
 [!include[banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition のデータ管理は、データ エンティティ用の Microsoft Excel ベースのテンプレートをサポートしています。 これらのテンプレートには、1 つまたは複数のワークシートを含めることができます。 複数のワークシートを含むテンプレートは、1つのファイルでデータを管理し、複数のデータ エンティティにインポートすると便利な場合によく使用されます。 サイトや倉庫の例があります。
+Microsoft Dynamics 365 for Finance and Operations のデータ管理は、データ エンティティ用の Microsoft Excel ベースのテンプレートをサポートしています。 これらのテンプレートには、1 つまたは複数のワークシートを含めることができます。 複数のワークシートを含むテンプレートは、1つのファイルでデータを管理し、複数のデータ エンティティにインポートすると便利な場合によく使用されます。 サイトや倉庫の例があります。
 
 ## <a name="upload-a-file-once-and-map-it-to-all-entities"></a>ファイルを一度アップロードし、すべてのエンティティにマップする
 **サイト**および**倉庫**と呼ばれるワークシートを持つ Excel ファイルが 1 つある場合の例を考えてみましょう。 データ インポート プロジェクトを設定するには、最初のデータ エンティティ、**サイト**を追加してからファイルをアップロードします。 このエンティティをしようするために**サイト**をワークシートとして選択することができます。

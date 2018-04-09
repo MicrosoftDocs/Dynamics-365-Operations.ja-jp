@@ -19,10 +19,10 @@ ms.author: ryansand
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b033f6197e61a6030e12081a9e4f1d820bac458f
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: c4ac839e69440c8d3f1e86007a074999189e391d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -47,7 +47,7 @@ ms.lasthandoff: 11/03/2017
 
 1.  ログイン後、Microsoft Dynamics Office アドインの [デザイン] をクリックします。
 2.  ヘッダー情報については、[フィールドの追加] ボタンを使用します。
-3.  BudgetPlanJustification のエンティティ データ ソースを選択して、[次へ] をクリックします。 **注記:** このエンティティは、どの妥当性ドキュメントにも必要です。 他のエンティティを使用できますが、このエンティティが含まれていない場合は、Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition に戻るアップロードが失敗します。
+3.  BudgetPlanJustification のエンティティ データ ソースを選択して、[次へ] をクリックします。 **注記:** このエンティティは、どの妥当性ドキュメントにも必要です。 他のエンティティを使用できますが、このエンティティが含まれていない場合は、Microsoft Dynamics 365 for Finance and Operations に戻るアップロードが失敗します。
 4.  Word ドキュメントの BudgetPlanName、BudgetPlanPreparer、ResponsibilityCenter、DocumentNumber のラベルと値を追加します。 **注記:** 必要であれば、標準ラベルではなく独自のカスタム ラベルを使用できます。
 5.  [完了] をクリックして、ヘッダー セクションを完了します。
 6.  予算計画金額の明細行レベルの詳細については、[テーブルの追加] をクリックします。

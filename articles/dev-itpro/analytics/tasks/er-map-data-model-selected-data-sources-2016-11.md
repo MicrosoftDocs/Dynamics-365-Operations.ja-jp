@@ -1,6 +1,6 @@
 --- 
 title: "電子申告 (ER) の選択したデータ ソースにデータ モデルをマップする"
-description: "次のステップでは、「システム管理者」または「電子申告開発者」ロールのユーザーが、選択した Dynamics 365 for Finance and Operations, Enterprise Edition データ ソースに電子申告 (ER) データ モデルをマップする方法を説明します。"
+description: "次のステップでは、「システム管理者」または「電子申告開発者」ロールのユーザーが、選択した Dynamics 365 for Finance and Operations、Enterprise Edition (2016 年 11 月) データ ソースに電子申告 (ER) データ モデルをマップする方法を説明します。"
 author: NickSelin
 manager: AnnBe
 ms.date: 01/16/2017
@@ -16,17 +16,17 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 96974d7c1597db4ac31168be40cecbc7e12d6edd
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 13b7fe7f7bfe24bd275428e931993aa46ecb9945
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 # <a name="map-a-data-model-to-selected-data-sources-for-electronic-reporting-er"></a>電子申告 (ER) の選択したデータ ソースにデータ モデルをマップする
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-次のステップでは、「システム管理者」または「電子申告開発者」ロールのユーザーが、選択した Dynamics 365 for Finance and Operations, Enterprise Edition データ ソースに電子申告 (ER) データ モデルをマップする方法を説明します。 このマッピング モデルは、電子支払ドキュメントを管理するために使用するコンフィギュレーションの書式設定で、データ ソースとして後で使用されます。 この例では、サンプル会社 Litware、Inc. のデータ モデルをデータ ソースにマップします。 これらの手順を完了するには、最初に「モデル マッピングのためのデータ ソースの選択」の手順でステップを完了する必要があります。
+次のステップでは、「システム管理者」または「電子申告開発者」ロールのユーザーが、選択した Dynamics 365 for Finance and Operations データ ソースに電子申告 (ER) データ モデルをマップする方法を説明します。 このマッピング モデルは、電子支払ドキュメントを管理するために使用するコンフィギュレーションの書式設定で、データ ソースとして後で使用されます。 この例では、サンプル会社 Litware、Inc. のデータ モデルをデータ ソースにマップします。 これらの手順を完了するには、最初に「モデル マッピングのためのデータ ソースの選択」の手順でステップを完了する必要があります。
 
 
 ## <a name="open-er-configurations-tree"></a>ER コンフィギュレーション ツリーを開く

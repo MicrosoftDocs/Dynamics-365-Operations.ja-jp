@@ -19,10 +19,10 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4dbcfd31030db8e40f89f86a76cdc666ac433749
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 2d31a5dfd16a4404e19c6c9693dacecff6f2f064
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 11/03/2017
 
 このトピックは、プロジェクト リソースに関する情報を提供します。
 
-プロジェクト計画ステージでのプロジェクト マネージャーとリソース マネージャーの 1 つの課題は、プロジェクトの作業に適切なリソースを指定し引き当てる、リソース割り当てです。 Microsoft Dynamics 365 for Finance and Operations, Enterprise edition では、プロジェクトのリソース機能で、特定のエンゲージメントまたはエンゲージメントの一部に割り当てることができる一時リソースとして処理されるロールを定義することができます。 プロジェクト マネージャとリソース マネージャーは、このタイプのリソースを使用して、次のタスクを実行できます。
+プロジェクト計画ステージでのプロジェクト マネージャーとリソース マネージャーの 1 つの課題は、プロジェクトの作業に適切なリソースを指定し引き当てる、リソース割り当てです。 Microsoft Dynamics 365 for Finance and Operations では、プロジェクトのリソース機能で、特定のエンゲージメントまたはエンゲージメントの一部に割り当てることができる、一時リソースとして処理されるロールを定義することができます。 プロジェクト マネージャとリソース マネージャーは、このタイプのリソースを使用して、次のタスクを実行できます。
 
 - リソースの照合を容易にするため、必要なコンピテンシーを持つロールを定義します。
 - 引当済のリソースをベースにした最初のエンゲージメント スケジュールを定義するためにロールを使用します。

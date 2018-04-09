@@ -1,6 +1,6 @@
 ---
 title: "Sales から Finance and Operations の顧客への勘定の直接同期"
-description: "このトピックでは、Microsoft Dynamics 365 for Sales から Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition に勘定を同期させるために使用されるテンプレートと基本的なタスクについて説明します。"
+description: "このトピックでは、Microsoft Dynamics 365 for Sales から Microsoft Dynamics 365 for Finance and Operations に勘定を同期させるために使用されるテンプレートと基本的なタスクについて説明します。"
 author: ChristianRytt
 manager: AnnBe
 ms.date: 10/26/2017
@@ -20,21 +20,21 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 0d409b3b7f19ca31d9c720bca191f1ddba81caa3
-ms.openlocfilehash: 5dede6024dcd7837dd4e94ecca2ccd059b11b5b9
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: fb694db32638756328623c186594cf5ba2e7d6b8
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/13/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
-# <a name="synchronize-accounts-directly-from-sales-to-customers-in-finance-and-operations"></a>Sales から Finance and Operations の顧客への勘定の直接同期
+# <a name="synchronize-accounts-directly-from-sales-to-customers-in-finance-and-operations"></a>Finance and Operations の顧客への Sales の勘定の直接同期
 
 [!include[banner](../includes/banner.md)]
 
 > [!NOTE]
 > 見込顧客を現金化するソリューションを使用する前に、[Dynamics 365 データ統合](/common-data-service/entity-reference/dynamics-365-integration) をよく理解しておく必要があります。
 
-このトピックでは、Microsoft Dynamics 365 for Sales から Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition に勘定を直接同期させるために使用されるテンプレートと基本的なタスクについて説明します。
+このトピックでは、Microsoft Dynamics 365 for Sales から Microsoft Dynamics 365 for Finance and Operations に勘定を直接同期させるために使用されるテンプレートと基本的なタスクについて説明します。
 
 ## <a name="data-flow-in-prospect-to-cash"></a>見込み客の現金化へのデータフロー
 

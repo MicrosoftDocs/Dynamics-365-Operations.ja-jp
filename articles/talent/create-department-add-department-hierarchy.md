@@ -19,10 +19,10 @@ ms.author: shielas
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: cea3ecd66a57780c9ef1b3a3c21f1e5273faa0ef
+ms.sourcegitcommit: 812db9f1d319e4d16f83700a7153a0a3b318963e
+ms.openlocfilehash: 3fc30669bf7a16616484bf7115cb121ce463840f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/23/2018
 
 ---
 
@@ -56,7 +56,6 @@ ms.lasthandoff: 11/03/2017
 5.  変更を保存します。 階層のドラフト バージョンが作成されたことを知らせるメッセージが表示されます。
 6.  準備が整ったら、階層デザイナーで [公開] をクリックします。 階層をいつ公開する必要があるかを示す有効日を入力できます。 たとえば、次の暦年の期首に新しい部門を追加する場合、新しい暦年の 1 月 1 日に有効日を設定します。 階層を変更すると、その日付に対して有効になります。
 
-
-
-
+## <a name="steps-for-creating-a-department"></a>部門を作成する手順
+新しい部門を作成するためのステップ バイ ステップの手順については次のトピック [新しい部門の定義](../fin-and-ops/hr/tasks/define-new-departments.md) を参照してください。 
 

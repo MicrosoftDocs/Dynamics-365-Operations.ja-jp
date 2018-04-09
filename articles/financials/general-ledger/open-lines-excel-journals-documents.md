@@ -19,10 +19,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: e6e159f84e188bad49db7b99a43c99f2e4d744be
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: a2da864254efda2621e1b157413a16d251020786
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -48,7 +48,7 @@ ms.lasthandoff: 11/03/2017
 | 顧客支払仕訳帳 | 勘定: 顧客の相手勘定: 銀行間でサポートされています。                                               | 顧客支払仕訳帳                                                                |
 | プロジェクト経費仕訳帳  | 勘定: プロジェクト元帳、顧客、仕入先、仕入先の相手勘定: プロジェクト、元帳、顧客、仕入先会社間でサポートされています。 | 一般仕訳帳への経費 (プロジェクト管理および会計で)                       |
 
-行が公開されると、それらの行が財務仕訳帳に設定されているルールに準拠していることが確認されます。 行が公開されると、ユーザーは Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition から伝票を編集または投稿することができます。 
+行が公開されると、それらの行が財務仕訳帳に設定されているルールに準拠していることが確認されます。 明細行が公開されると、ユーザーは Microsoft Dynamics 365 for Finance and Operations から伝票を編集または投稿することができます。 
 
 テンプレートに財務分析コードを追加するには、追加の変更が必要です。 詳細については、「[Microsoft Excel テンプレートに分析コードを追加する](../../dev-itpro/financial/add-dimensions-excel-templates.md)」を参照してください。 エンティティに分析コードを追加した後は、Excel デザイナーで使用でき、テンプレートに追加することができます。
 

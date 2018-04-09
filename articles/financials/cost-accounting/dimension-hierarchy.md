@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d183654ada9cdca23cf906f250988a967ffcf1f6
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 40a4a1d7549876b72186f30a9c0089f0d27cf3b6
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -156,7 +156,7 @@ ms.lasthandoff: 11/03/2017
 |&nbsp;&nbsp;変動費 | 40001                     | 40010                   |
 
 > [!NOTE]
-> **分析コード メンバーの範囲** の下に、ノードは 1:_n_ 分析コード メンバーの範囲を含めることができます。 分析コード メンバとしてまだ存在していない分析コード メンバー ID を挿入することができます。 この方法により、階層が今後弾力性のあるものになります。  
+> [分析コード メンバーの範囲] で、ノードは 1:_n_ 分析コード メンバーの範囲を含めることができます。 分析コード メンバとしてまだ存在していない分析コード メンバー ID を挿入することができます。 この方法により、階層が今後弾力性のあるものになります。  
 
 ### <a name="copy-a-hierarchy"></a>階層のコピー
 
@@ -329,7 +329,7 @@ Excel または Power BI を使用してレポートを作成する場合は、�
 - Power BI:
 
     - Power BI ビジュアル化に表示されるデータ
-    - Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition クライアントに埋め込まれている Power BI ビジュアル化データ
+    - Microsoft Dynamics 365 for Finance and Operations クライアントに埋め込まれた Power BI ビジュアル化データ
 
 > [!NOTE] 
 > - アクセス リスト階層が Power BI のデータに影響を及ぼす前に、アクセス リスト階層と Power BI の行レベルのセキュリティがペアリングされる必要があります。 詳細については、「[原価会計コンテンツ パックのセキュリティ設定](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md)」を参照してください。

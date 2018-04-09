@@ -19,10 +19,10 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 156cd33a0216514a70229b4e23fc86c0c68cd940
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 9c2f8fd846181c404492ff32907a3396beb90685
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -36,7 +36,7 @@ ms.lasthandoff: 11/03/2017
 **メモ:** この記事は、**倉庫管理**モジュールの機能が対象です (詳細な倉庫保管)。 **在庫管理**モジュールの倉庫機能は対象外です。
 
 ## <a name="warehouse-layout"></a>倉庫レイアウト
-Microsoft Dynamics 365 Finance and Operations、Enterprise edition の倉庫管理システムは、最適な倉庫効率を達成できるよう、変化するニーズを満たす倉庫レイアウトを定義する柔軟な方法を提供します。
+Microsoft Dynamics 365 for Finance and Operations の倉庫管理システムは、変化するニーズを満たす倉庫レイアウトを定義する柔軟な方法を提供し、最適な倉庫効率を達成できるようにします。
 
 -   商品を最適に配置するために、優先順位が高い保管エリアと優先順位の低い保管エリアを設定できます。
 -   品目の温度条件や回転率など、さまざまな倉庫のニーズに対応するため、倉庫をゾーンに分割できます。

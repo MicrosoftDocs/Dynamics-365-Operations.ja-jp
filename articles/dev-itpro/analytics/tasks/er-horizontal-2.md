@@ -16,10 +16,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 8e5c53905b903bc5242625283f3b093144243cf9
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 3ca72ab5c7ac15f3a788ea457a360d93a0b505b0
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 # <a name="run-a-format-that-uses-horizontally-expandable-ranges-to-dynamically-add-columns-in-excel-reports-for-electronic-reporting-er"></a>水平に拡張された範囲を使用して電子申告 (ER) の Excel のレポートに列を動的に追加するための形式の実行
@@ -49,6 +49,6 @@ ms.lasthandoff: 09/29/2017
     * 00057..00058  
 7. [OK] をクリックします。
 8. [OK] をクリックします。
-    * 生成された出荷を確認します。 新しく作成したExcel ファイルには、財務分析コードに対して選択された同じ数の列が含まれることに注意してください。 これらの列のレポートヘッダーは財務分析コードの名称を表します。 これらの列のトランザクションの明細行は財務分析コードを表します。 このレポートを実行し異なる分析コードを選択して、レポートが選択した分析コードの数または Dynamics 365 for Finance and Operations、Enterprise Edition インスタンスに構成した分析コードの数に依存していないことを確認します。  
+    * 生成された出荷を確認します。 新しく作成したExcel ファイルには、財務分析コードに対して選択された同じ数の列が含まれることに注意してください。 これらの列のレポートヘッダーは財務分析コードの名称を表します。 これらの列のトランザクションの明細行は財務分析コードを表します。 このレポートを実行し異なる分析コードを選択して、レポートが選択した分析コードの数または Dynamics 365 for Finance and Operations インスタンスに構成した分析コードの数に依存していないことを確認します。  
 
 

@@ -19,10 +19,10 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 6a03274da9b81bf71b32a62f4ebba2a374688ae5
-ms.openlocfilehash: 8b6c14d41cac13e7c1fb5a580759514d46d776ee
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: b999fd3c26304b81f24389a83faf73e1658c39b3
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -89,7 +89,7 @@ ms.lasthandoff: 11/29/2017
 
 テンプレートのタスクは、そのタスクが適用される複数の会社に割り当てることができます。 それぞれの会社でその作業工数を完了するために異なる担当者が割り当てられている場合、同じ作業工数に対して複数のタスクを作成することをお勧めします。 各会社に 1 つのタスクを作成します。 
 
-[**タスク リンク**] メニュー項目は、作業工数に関連付けられ、ワークスペースのタスク リンクから関連するページに直接移動することができます。 たとえば、買掛金勘定の通貨の再評価プロセスを実行する決算タスクは、Microsoft Dynamics 365 for Finance および Operations、Enterprise Edition の関連する [**外貨再評価**] ページにリンクできます。 外部のURLにリンクすることもできます。 
+[**タスク リンク**] メニュー項目は、作業工数に関連付けられ、ワークスペースのタスク リンクから関連するページに直接移動することができます。 たとえば、買掛金勘定の通貨の再評価プロセスを実行する決算タスクは、Microsoft Dynamics 365 for Finance and Operations の関連する [外貨再評価] ページにリンクできます。 外部のURLにリンクすることもできます。 
 
 > [!TIP]
 > 特定の Management Reporter レポートを財務期間終了タスクにリンクする場合は、レポート URL を使用します。 レポート URL にアクセスするには、レポート デザイナーのレポートを開き、[**ファイル**] &gt; [**レポートの表示**] の順にクリックして、Web ブラウザのレポートを開きます。 次にブラウザーのアドレス バーの URL をコピーし、[**タスク リンク** **URL**] フィールドに貼り付けます。 

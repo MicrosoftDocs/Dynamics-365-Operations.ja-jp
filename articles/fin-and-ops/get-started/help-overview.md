@@ -19,10 +19,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7be3e9970e2599c159e7c9d414b54876d0116350
-ms.openlocfilehash: 9c68cd0e1c214e22b8831e4f4a0c5d545387f982
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 5adf73c1316f701b3b5e9b9a22fa5743ba1cc419
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -33,10 +33,10 @@ ms.lasthandoff: 03/09/2018
 このトピックでは、Microsoft Dynamics 365 for Finance and Operations のヘルプ システム コンポーネントの概要が示されます。 また、組織の独自のドキュメントやトレーニングを提供する方法について説明します。 
 
 > [!NOTE] 
-> 次の製品間には密接な関係があります: Dynamics 365 for Finance and Operations、Enterprise edition、Dynamics 365 for Retail、および Dynamics 365 for Talent。 すべての 3 つの製品上に同じ機能が表示されることがあります。 結果として、主に [Retail] に関連するトピックでの製品名は Dynamics 365 for Retail、主に [Talent] に関連するトピックでの製品名は Dynamics 365 for Talent、コア製品に関連するトピックでの製品名は、Dynamics 365 for Finance and Operations となります。 1 つの製品で記述されているトピックは、関連する製品の同じ機能にも当てはまる可能性があります。
+> 次の製品間には密接な関係があります: Dynamics 365 for Finance and Operations、Dynamics 365 for Retail、および Dynamics 365 for Talent。 すべての 3 つの製品上に同じ機能が表示されることがあります。 結果として、主に [Retail] に関連するトピックでの製品名は Dynamics 365 for Retail、主に [Talent] に関連するトピックでの製品名は Dynamics 365 for Talent、コア製品に関連するトピックでの製品名は、Dynamics 365 for Finance and Operations となります。 1 つの製品で記述されているトピックは、関連する製品の同じ機能にも当てはまる可能性があります。
 
 ヘルプ システムは、次の製品により共有されます。
-- Dynamics 365 for Finance and Operations, Enterprise edition
+- Dynamics 365 for Finance and Operations
 - Dynamics 365 for Retail
 - Dynamics 365 for Talent
 
@@ -108,7 +108,7 @@ Unified Operations のコンテンツへのすべての更新の RSS フィー�
 ##### <a name="suggest-a-change-or-contribute-content-through-github"></a>GitHub を通じてコンテンツの変更や提案を投稿する
 変更を提案するには、GitHub アカウントを所有し、コントリビューター ライセンス契約に署名する必要があります。  プル要求が送信された後、提案された変更が確認されます。 必要に応じて、内部的に検討してから返答します。  
 
-開始するには、トピックの**編集** (ペンシル) ボタンをクリック、または https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public にあるリポジトリへ移動します。 
+開始するには、トピックの [編集] (鉛筆) ボタンをクリック、または https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public にあるリポジトリへ移動します。 
 
 詳細については、https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/live/CONTRIBUTING.md にある寄稿者のガイドを参照してください。 
 

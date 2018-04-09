@@ -16,10 +16,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 74606b1378e94e8a6945a408520c8b68648970d8
-ms.openlocfilehash: b0a1dba5afbd7beba45149340f637223f6ecedcf
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 631fa7bae808856efb8b95700fd2a85e6d5f8725
 ms.contentlocale: ja-jp
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 # <a name="design-expressions-to-call-application-class-methods-er"></a>アプリケーション クラスのメソッド (ER) を呼び出す式を設計する
@@ -28,13 +28,13 @@ ms.lasthandoff: 02/07/2018
 
 このガイドは、ER の式で必要なアプリケーション クラスのメソッドを呼び出すことによって、電子申告 (ER) コンフィギュレーションで既存のアプリケーション ロジックを再利用する方法に関する情報を提供します。 呼び出しクラスの引数の値は、実行時に動的に定義することができます。たとえば、解析文書内の情報に基づいて、その正確性を確保します。 このガイドでは、サンプル会社 Litware, Inc. に必要な ER コンフィギュレーションを作成します。この手順は、「システム管理者」または「電子レポート開発者」ロールが割り当てられているユーザー用に作成されています。 
 
-これらのステップは、任意のデータ セットを使用して完了することができます。 次のファイルもローカルでダウンロードして保存する必要があります: (https://go.microsoft.com/fwlink/?linkid=862266): SampleIncomingMessage.txt.
+これらのステップは、任意のデータ セットを使用して完了することができます。 次のファイルもローカルでダウンロードして保存する必要があります: (https://go.microsoft.com/fwlink/?linkid=862266): SampleIncomingMessage.txt。
 
 これらの手順を完了するには、まず手順の「ER はコンフィギュレーションプロバイダーを作成し、それを有効としてマークする」にある手順を完了する必要があります。
 
 1. [組織管理] > [ワークスペース] > [電子申告] の順に移動します。
     * サンプル会社 Litware, Inc. のコンフィギュレーション プロバイダーが使用可能であり、アクティブとしてマークされていることを確認します。 このコンフィギュレーション プロバイダーが表示されない場合は、「コンフィギュレーション プロバイダーの作成および有効なプロバイダーとしてのマーク付け」という手順のステップを完了する必要があります。   
-    * アプリケーション データ更新のために受取口座取引明細書を解析するプロセスを設計しているとしましょう。 受取口座取引明細書が、IBAN コードを含んだテキスト ファイルとして届きます。 インポート プロセスの口座取引明細書の一部として、Dynamics 365 for Finance and Operations, Enterprise edition ですでに利用可能なロジックを使用して、この IBAN コードの正確性を検証する必要があります。   
+    * アプリケーション データ更新のために受取口座取引明細書を解析するプロセスを設計しているとしましょう。 受取口座取引明細書が、IBAN コードを含んだテキスト ファイルとして届きます。 インポート プロセスの口座取引明細書の一部として、Dynamics 365 for Finance and Operations ですでに利用可能なロジックを使用して、この IBAN コードの正確性を検証する必要があります。   
 
 ## <a name="import-a-new-er-model-configuration"></a>新しい ER モデル コンフィギュレーションのインポート
 1. 一覧で、目的のレコードを見つけ、選択します。

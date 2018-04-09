@@ -16,10 +16,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 5d4f57ae2a309d9e15c1afe60c3e91d7d7eb3870
-ms.openlocfilehash: c5aefc44adc24f9d216f9470e4307a3723690173
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: ee951d7f3f04e641f7bed767a2eebd1c180eb9f3
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 # <a name="run-a-report-that-uses-financial-dimensions-as-a-data-source-for-electronic-reporting-er"></a>電子申告 (ER) 用のデータ ソースとして財務分析コードを使用するレポートを実行する
@@ -44,6 +44,6 @@ ms.lasthandoff: 11/02/2017
 9. [基準] フィールドで、「00057」と入力します。
 10. [OK] をクリックします。
 11. [OK] をクリックします。
-    * 生成された出荷を確認します。 選択したバッチの各トランザクションについては、相当する分析コードの財務分析コードが表示されます。 このレポートを実行し異なる分析コードを選択して、レポートが選択した分析コードの数または Dynamics 365 for Finance and Operations、Enterprise Edition インスタンスに構成した分析コードの数に依存していないことを確認します。  
+    * 生成された出荷を確認します。 選択したバッチの各トランザクションについては、相当する分析コードの財務分析コードが表示されます。 このレポートを実行し異なる分析コードを選択して、レポートが選択した分析コードの数または Dynamics 365 for Finance and Operations インスタンスに構成した分析コードの数に依存していないことを確認します。  
 
 

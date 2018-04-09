@@ -16,10 +16,10 @@ ms.assetid:
 ms.search.region: Global
 ms.author: bking
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: daded9d8ef48456cbd3f97a7bae5fa75885ce9d1
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: bbf4da5a33876973a376a0580fd553e15bd6febc
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -47,7 +47,7 @@ ms.lasthandoff: 11/03/2017
 最後のタブは、詳細なタスクのリストのためにあります。 この一覧は、すべてのタスク リストを表示します。
 複数の方法でタスク リストをフィルター処理できます。 [タスクの編集] をクリックしてタスクの状態を変更するかタスクを割り当てます。 [添付ファイル] をクリックしてタスクの添付ファイルを表示します。
 
-タスク名はユーザーが作業を完了するために閲覧する必要がある Microsoft Dynamics 365 for Finance and Operations, Enterprise edition ページへのハイパーリンクです。 [データ検証プロジェクトのコンフィギュレーション] フォームからタスクを編集または作成する際に [メニュー項目名] フィールド を使用してこのハイパーリンクを設定できます。
+タスク名はユーザーが作業を完了するために閲覧する必要がある Microsoft Dynamics 365 for Finance and Operations ページへのハイパーリンクです。 [データ検証プロジェクトのコンフィギュレーション] フォームからタスクを編集または作成する際に [メニュー項目名] フィールド を使用してこのハイパーリンクを設定できます。
 
 [添付ファイル] アクションを使用して、ファイル、注記、画像、URL を関連付けることができます。 たとえば、タスクに対して印刷されたレポート ファイルを添付することができます。 添付ファイルが存在する場合には、[添付ファイル] 列にアイコンが表示されます。
 

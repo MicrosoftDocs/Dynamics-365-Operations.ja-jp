@@ -18,10 +18,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 274a5e696bfde4f5e27bc186fadbab69f5fc655d
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 3e9f00fdc32feda0a62f71a92e503a677dce35cc
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -35,7 +35,7 @@ ms.lasthandoff: 11/03/2017
 
 財務分析コードを作成した後、[財務分析コード値] ページを使用して、各財務分析コードに追加のプロパティを割り当てます。 
 
-財務分析コードを使用して、法人を表すことができます。 Microsoft Dynamics 365 for Finance および Operations、Enterprise Edition では、法人を作成する必要はありません。 ただし、財務分析コードは、法人の運営や業務上の要件に対処するようには設計されていません。 Finance および Operations の単位間会計機能は、各トランザクションによって作成された勘定項目のみ対処するように設計されています。 
+財務分析コードを使用して、法人を表すことができます。 Microsoft Dynamics 365 for Finance and Operations では、法人を作成する必要はありません。 ただし、財務分析コードは、法人の運営や業務上の要件に対処するようには設計されていません。 Finance および Operations の単位間会計機能は、各トランザクションによって作成された勘定項目のみ対処するように設計されています。 
 
 法人として財務分析コードを設定する前に、次の分野の業務プロセスを評価し、この設定が組織で使用できるかどうかを判断します:
 

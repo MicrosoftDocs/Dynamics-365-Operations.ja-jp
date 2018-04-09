@@ -17,10 +17,10 @@ ms.author: riluan
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 92a52646063c145d733b9d2960253004e8eab80a
-ms.openlocfilehash: 28c9ece2231ae5bba9a74612c14192e5ca68b197
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 995a2263683ecd311501a36bb6fd895ed5431b26
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 03/05/2018
 
 [!include[banner](../includes/banner.md)]
 
-日本では、日本郵便局が Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition にインポート可能な郵便番号コード ファイルを提供します。 このトピックでは、郵便番号をインポートするためのプロセスについて説明します。 この例では、デモ データの会社 JPMF を使用します。
+日本では、日本郵便局が Microsoft Dynamics 365 for Finance and Operations にインポート可能な郵便番号コード ファイルを提供します。 このトピックでは、郵便番号をインポートするためのプロセスについて説明します。 この例では、デモ データの会社 JPMF を使用します。
 
 ## <a name="prepare-the-zip-code-file"></a>郵便番号コード ファイルを準備します。
 

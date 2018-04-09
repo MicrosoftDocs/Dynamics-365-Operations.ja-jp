@@ -1,9 +1,9 @@
 ---
-title: "均等減価償却法"
+title: "日本の均等償却方法"
 description: "日本では、一括比例配分資産、低価額資産、および繰延資産は耐用年数期間中、毎年均等額で減価償却されます。 この記事は、均等減価償却についてよく寄せられる質問に回答します。"
 author: yijialuan
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 03/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,14 +19,14 @@ ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 48902f70efc9c71c03db2efe5f7450a8e75330b7
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 687dcb5e8ed91108cff9bb86155bf7da89945231
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
-# <a name="equally-divided-depreciation-method"></a>均等減価償却法
+# <a name="equally-divided-depreciation-method-for-japan"></a>日本の均等償却方法
 
 [!include[banner](../includes/banner.md)]
 
@@ -39,7 +39,7 @@ ms.lasthandoff: 11/03/2017
 均等減価償却法を使用して、繰延、少額、および一括比例配分の固定資産を減価償却できます。 次に、一つ以上の会計年度期間における資産の減価償却費を表示するレポートを生成できます。
 
 ## <a name="how-is-depreciation-calculated-using-the-equally-divided-depreciation-method"></a>均等減価償却法を使用して、どのように減価償却を計算しますか。
-**減価償却プロファイル** ページの [方式] フィールドで、減価償却方法として [均等] を選択して、減価償却プロファイルを設定できます。 均等減価償却プロファイルを使用して固定資産を減価償却するとき、Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition は次の式を使用して減価償却金額を計算します。減価償却 = 残余量 × 四捨五入した (1 ÷ 残りの年数) × 四捨五入した (1 ÷ 現在の年の期間数)。次の式は、残りの量の計算に使用します。残余量 = 取得コスト – 減価償却累計額。減価償却量の計算に均等減価償却法を使用するとき、**減価償却プロファイル** ページの [均等償却年数] フィールドの値は、**帳簿** ページで指定した耐用年数および減価償却期間ではなく、固定資産の耐用年数が表示されます。
+**減価償却プロファイル** ページの [方式] フィールドで、減価償却方法として [均等] を選択して、減価償却プロファイルを設定できます。 均等減価償却プロファイルを使用して固定資産を減価償却するとき、Microsoft Dynamics 365 for Finance and Operations は次の式を使用して減価償却金額を計算します。減価償却 = 残余量 × 四捨五入した (1 ÷ 残りの年数) × 四捨五入した (1 ÷ 現在の年の期間数)。次の式は、残りの量の計算に使用します。残余量 = 取得コスト – 減価償却累計額。減価償却量の計算に均等減価償却法を使用するとき、[減価償却プロファイル] ページの [均等償却年数] フィールドの値は、[帳簿] ページで指定した耐用年数および減価償却期間ではなく、固定資産の耐用年数が表示されます。
 
 ## <a name="does-the-depreciation-amount-that-is-calculated-by-using-the-equally-divided-depreciation-method-change-if-its-calculated-at-the-beginning-of-the-month-instead-of-in-the-middle-of-the-month"></a>均等減価償却法を使用して計算された減価償却量は、月の中間に計算された場合ではなく月初めに計算された場合に異なりますか。
 一連番号 減価償却量は、月内のいつ計算されるかによって変化しません。 たとえば、以下の一括比例配分の固定資産を取得します。

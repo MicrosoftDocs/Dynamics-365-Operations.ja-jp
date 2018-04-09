@@ -19,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: cb5a674472936a52b624c548fd37079d57eb6cb7
-ms.openlocfilehash: 9a36b3e7a8e496632ca7041018abe8176a2e4f25
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 41d7b64f8414385629acef071c47a654d56005bd
 ms.contentlocale: ja-jp
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -36,7 +36,7 @@ ms.lasthandoff: 12/14/2017
 確認後支払を設定し、銀行に渡す小切手の電子リストを生成します。 次に、小切手が銀行に提出されたら、銀行はそれを小切手リストと比較します。 小切手がリストの小切手と一致する場合、銀行は小切手を決済します。 小切手がリスト内の小切手と一致しない場合、銀行は確認のために小切手を保留にします。
 
 ## <a name="security-for-positive-pay-files"></a>確認後支払ファイルのセキュリティ
-確認後支払ファイルには、受取人と小切手金額に関する機密情報が含まれている場合があります。 したがって、ファイルを生成時から銀行がそのファイルを受領するまで、適切なセキュリティ対策をかならず使用します。 確認後支払ファイルは、Web ブラウザで指定した場所にダウンロードされます。 確認後支払ファイルには機密情報が含まれている場合があるので、承認されたユーザーのみが、Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 内のこの情報を生成および表示するためのアクセス権限を持つことが重要です。 次の表を活用すれば、必要な権限を判断するのに役立ちます。
+確認後支払ファイルには、受取人と小切手金額に関する機密情報が含まれている場合があります。 したがって、ファイルを生成時から銀行がそのファイルを受領するまで、適切なセキュリティ対策をかならず使用します。 確認後支払ファイルは、Web ブラウザで指定した場所にダウンロードされます。 確認後支払ファイルには機密情報が含まれている場合があるので、承認されたユーザーのみが、Microsoft Dynamics 365 for Finance and Operations 内のこの情報を生成および表示するためのアクセス権限を持つことが重要です。 次の表を活用すれば、必要な権限を判断するのに役立ちます。
 
 <table>
 <colgroup>

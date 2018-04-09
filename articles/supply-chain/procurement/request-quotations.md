@@ -19,10 +19,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
-ms.openlocfilehash: 42ab7beb8a269cd37fd9100385bd302e4945c1e0
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: b86363004b8702d1a654f2a1da49bba82fc8ff2a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -46,7 +46,7 @@ RFQ プロセスは次のタスクで構成されています。
 
 RFQ ケースを準備し仕入先を追加した後、RFQ ケースの [**送信**] を選択します。 RFQ 仕訳は、RFQ を送った各仕入先ごとに生成されます。 各仕入先のレポートをアーカイブに印刷するか、または各ベンダーの電子メール アドレスにレポートを送信するように、送信アクションの印刷管理設定を構成できます。 さらに、各仕入先の RFQ 仕訳帳を、後でその仕入先に送信または再送信するレポートを生成することにも使用できます。 また、仕入先で入力できる返信シートを生成するように、送信アクションを構成することもできます。
 
-このトピックでは、仕入先コラボレーションが使用されていない際の RFQs を処理するプロセスを説明します。 システムが仕入先コレボレーションに設定される場合、仕入先は直接 Microsoft Dynamics 365 for Finance and Operations Enterprise edition に入札できます。 詳細については、[顧客との仕入先コラボレーション](vendor-collaboration-work-customers-dynamics-365-operations.md) を参照してください。
+このトピックでは、仕入先コラボレーションが使用されていない際の RFQs を処理するプロセスを説明します。 システムが仕入先コレボレーションに設定される場合、仕入先は直接 Microsoft Dynamics 365 for Finance and Operations に入札できます。 詳細については、[顧客との仕入先コラボレーション](vendor-collaboration-work-customers-dynamics-365-operations.md) を参照してください。
  
 送信後に RFQ を修正する必要がある場合は、作成と確定の 2 つの修正アクションを使い終了した時に RFQ を仕入先へ再送品することができます。
 

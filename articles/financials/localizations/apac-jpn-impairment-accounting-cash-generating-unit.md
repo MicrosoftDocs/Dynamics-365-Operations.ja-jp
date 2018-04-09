@@ -1,9 +1,9 @@
 ---
-title: "キャッシュ生成単位の固定資産の減損会計"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition に含まれる固定資産の減損の機能を紹介します。 この記事の主な目的は、ユーザーに減損会計の概念モデルの概要を示すことです。"
+title: "日本のキャッシュ生成単位の固定資産減損会計"
+description: "このトピックでは、日本の減損会計の概念モデルの概要を説明します。"
 author: yijialuan
 manager: AnnBe
-ms.date: 10/31/2017
+ms.date: 03/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,26 +18,26 @@ ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: d6515a198aab286e1a34d09c3a594bdf69a446b7
+ms.sourcegitcommit: 554c350961baed8be8f37854dd1b095d4342ae0e
+ms.openlocfilehash: 0be4c189f670bca1b98a37eaa6e2a28de884132e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 03/21/2018
 
 ---
 
-# <a name="fixed-asset-impairment-accounting-on-cash-generating-units"></a>キャッシュ生成単位の固定資産の減損会計
+# <a name="fixed-asset-impairment-accounting-on-cash-generating-units-for-japan"></a>日本のキャッシュ生成単位の固定資産減損会計
 
 [!include[banner](../includes/banner.md)]
 
 
-このトピックでは、Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition に含まれる固定資産の減損の機能を紹介します。 この記事の主な目的は、ユーザーに減損会計の概念モデルの概要を示すことです。 
+このトピックでは、Microsoft Dynamics 365 for Finance and Operations に含まれる固定資産の減損の機能を紹介します。 この記事の主な目的は、ユーザーに減損会計の概念モデルの概要を示すことです。 
 
 固定資産は、管理不良、新規競合、および技術革新などの要因によって、その価値の減損 (減少) の影響を受けやすい場合があります。 減損損失は損益勘定で表示されます。 減損価値は、固定資産または利益生成単位の値を回収可能金額と比較して測定されます。 回収可能金額は、固定資産またはその工程から生成される収益の売上から取得できる最大値です。 日本では、固定資産の減損は、日本の一般会計原則 (GAAP) の 第 6 項目に従って行い、2 つのステップがある方法を使用します。 最初のステップは、減損損失の認識テストで、2 つ目のステップは減損損失の測定です。 減損後、回収可能金額は、将来の減価償却計算のための固定資産の新しい正味簿価額となります。 減損の作業プロセスには次の主要タスクが含まれます。
 
 ## <a name="cgu-groups"></a>CGU グループ
 基本ページは、**CGU グループ**です (**固定資産** &gt; **設定** &gt; **減損** &gt; **CGU グループ**)。 CGU グループは、減損プロセスの組み合わせ全体です。 特定の CGU グループでは、1 つのキャッシュ生成単位のみに 1 つの特定の固定資産を割り当てることができます。 この制限は、ユーザーが別の CGU グループを作成し、そのグループでキャッシュ生成単位を作成するときに適用されません。 複数の CGU グループの作成は、固定資産の最も適したグループを検索するためのシミュレーションに役立ちます。
 
-## <a name="cash-generating-units"></a>キャッシュ生成単位
+## <a name="cash-generating-unit-cgu"></a>キャッシュ生成単位 (CGU)
 基本ページは、**キャッシュ生成グループ**です (**固定資産** &gt; **設定** &gt; **減損** &gt; **キャッシュ生成グループ**)。 ユーザーは CGU グループでキャッシュ生成単位を作成し、個別の固定資産をキャッシュ生成単位に割り当てることができます。 ユーザーは、これらの資産が共有資産または営業権である場合、CGU グループに直接固定資産を割り当てることもできます。 共有資産と無形固定資産の減損は、日本の GAAP のメソッド I に従って、CGU グループ単位でテストおよび測定されます。 ユーザーは、メソッド II も適用できます。 この場合、ユーザーは各キャッシュ生成単位に、共有資産および営業権の正味簿価額を割り当てる必要があります。
 
 ### <a name="optional-allocating-the-net-book-value-of-shared-assets-and-goodwill"></a>オプション: 共有資産と営業権の正味簿価額の配賦

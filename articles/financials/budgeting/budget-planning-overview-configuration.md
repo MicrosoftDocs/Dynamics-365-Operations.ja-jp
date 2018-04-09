@@ -19,10 +19,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d904a2fe9411da1fd1a4e5810f7dcea782f1c2f7
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: e874d7353e0d9561ca55f313bfb5209299298169
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -38,7 +38,7 @@ ms.lasthandoff: 11/03/2017
 
 組織で実装される予算を作成する際には、予算計画を実行します。 組織は、予算作成のための組織のポリシー、手順および要件を満たすように、予算計画をコンフィギュレーションし、予算計画プロセスを設定します。 
 
-Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition で使用されている概念と用語を理解すると、組織の予算計画の実装がより簡単になります。
+Microsoft Dynamics 365 for Finance and Operations で使用されている概念と用語を理解すると、組織の予算計画の実装がより簡単になります。
 
 ### <a name="key-terms"></a>重要な用語
 

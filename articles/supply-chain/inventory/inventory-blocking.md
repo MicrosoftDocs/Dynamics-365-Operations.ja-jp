@@ -1,6 +1,6 @@
 ---
 title: "在庫ブロック"
-description: "この記事は、Microsoft Dynamics 365 for Finance and Operations、Enterprise edition の品質検査プロセスの一部である在庫ブロックの概要を示します。 在庫ブロックは、品目が処理または消費されるのを防ぐために使用できます。"
+description: "この記事は、Microsoft Dynamics 365 for Finance and Operations の品質検査プロセスの一部である在庫ブロックの概要を示します。 在庫ブロックは、品目が処理または消費されるのを防ぐために使用できます。"
 author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
@@ -20,10 +20,10 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: eb8040531ec0c2b9c13fc927e5330772ad11ee1d
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 0567cdad6f9f27097f534381655e5b468884bed8
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-この記事は、Microsoft Dynamics 365 for Finance and Operations、Enterprise edition の品質検査プロセスの一部である在庫ブロックの概要を示します。 在庫ブロックは、品目が処理または消費されるのを防ぐために使用できます。
+この記事は、Microsoft Dynamics 365 for Finance and Operations の品質検査プロセスの一部である在庫ブロックの概要を示します。 在庫ブロックは、品目が処理または消費されるのを防ぐために使用できます。
 
 在庫品目は、次の方法でブロックできます。
 -   手動
@@ -64,7 +64,7 @@ ms.lasthandoff: 11/03/2017
 <a name="see-also"></a>参照
 --------
 
-[在庫ブロックの作成および管理 (タスク ガイド)](tasks/create-maintain-inventory-blocking.md)
+[在庫ブロックの作成および管理](tasks/create-maintain-inventory-blocking.md)
 
 [品質管理プロセス](quality-management-processes.md)
 

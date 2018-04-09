@@ -19,10 +19,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 0069246a60f1db6297df45fa57cd52d90cdb4ab5
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 89a13ad5a1d3cb7f93a469d33530ec99b39160da
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 11/03/2017
 
 トランザクションを決済する方法とタイミングは複雑な題目になります。そのため、業務上の要件を満たすためのパラメータを理解し、適切に定義する必要があります。 この記事は、買掛金勘定、売掛金勘定の両方の決済に使用するパラメータについて説明します。 
 
-このパラメーターは、Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition での決算の処理方法に影響を与えます。 決済は、支払票または訂正票に対する請求書を決済するプロセスです。 これらのパラメーターは、[売掛金勘定パラメーター] ページと [買掛金勘定パラメーター] ページの [決済] 領域にあります。
+このパラメーターは、Microsoft Dynamics 365 for Finance and Operations での決算の処理方法に影響を与えます。 決済は、支払票または訂正票に対する請求書を決済するプロセスです。 これらのパラメーターは、[売掛金勘定パラメーター] ページと [買掛金勘定パラメーター] ページの [決済] 領域にあります。
 
 -   **自動決済** – トランザクションの転記時に別の未処理トランザクションに対して自動的に決済する場合は、このオプションを [はい] に設定します。 このオプションが [いいえ] に設定されている場合、[トランザクションの決済] ページを使用して、支払の入力時または入力後に、手動でトランザクションを決済できます。
 -   [現金割引管理] – [請求書が過剰支払の場合に現金割引を処理する](cash-discount-handling-overpayments.md) の方法を指定します。 過剰支払の場合、現金割引を減額することができ、現金割引を差額として処理することができ、現金割引を仕入先または顧客の分割払としてそのままにしておくことができます。

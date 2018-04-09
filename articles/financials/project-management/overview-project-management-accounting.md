@@ -19,10 +19,10 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 3a1bfd4bd5f396c05277159ac112eaa8197d5818
-ms.openlocfilehash: 6a2c51d9ffe288dad2db43ecd0a4c8f717c6379a
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 3c4720795313180ba7ad784ea39484d6ffb9ac2f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -38,7 +38,7 @@ ms.lasthandoff: 11/03/2017
 ## <a name="projects-across-industries"></a>業界全体にわたるプロジェクト
 プロジェクト管理および会計機能は次の図に示すように、複数の業界で使用できます。 [![業界全体にわたるプロジェクト](./media/projects-accross-industries.jpg)](./media/projects-accross-industries.jpg) 
 
-コール センターでは、チケットは、呼び出しを解決するために必要な一連の活動について説明するために使用できます。 経営コンサルティング会社や技術コンサルティング会社、広告代理店などのコンサルティング会社は、プロジェクトとしての活動を参照しています。 マーケティングでは、キャンペーンは配信されなければならない一連の作業を表します。 プロジェクト ベースの製造では、製造オーダーは、完成品を製造するために必要なさまざまな作業を関連付けます。 それらに使用されている名前に関係なく、これらのプロジェクトは、リソース、スケジュール、および原価を含み、Microsoft Dynamics 365 for Finance and Operations、Enterprise edition のプロジェクト管理および会計機能は、これらのプロジェクトの計画、実行、および分析に役立ちます。
+コール センターでは、チケットは、呼び出しを解決するために必要な一連の活動について説明するために使用できます。 経営コンサルティング会社や技術コンサルティング会社、広告代理店などのコンサルティング会社は、プロジェクトとしての活動を参照しています。 マーケティングでは、キャンペーンは配信されなければならない一連の作業を表します。 プロジェクト ベースの製造では、製造オーダーは、完成品を製造するために必要なさまざまな作業を関連付けます。 それらに使用されている名前に関係なく、これらのプロジェクトは、リソース、スケジュール、および原価を含み、Microsoft Dynamics 365 for Finance and Operations のプロジェクト管理および会計機能は、これらのプロジェクトの計画、実行、および分析に役立ちます。
 
 ## <a name="project-phases"></a>プロジェクト フェーズ
 次のプロセス フローは、1 人以上の顧客に対して完了している外部プロジェクトまたはプロジェクトを対象にしていますが、その機能は、内部つまり原価のみのプロジェクトにも適用されます。 

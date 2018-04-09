@@ -20,10 +20,10 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d933910faa726ea279a3371f6c8a3eca9bc9dfee
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 1b6086f7769086a9cdbb61c03882ea21d908ab4a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -56,7 +56,7 @@ ms.lasthandoff: 11/03/2017
 ## <a name="minmax-replenishment"></a>最小/最大の補充
 最小/最大の補充において、在庫が補充されているため、最小値および最大制限値の間で設定されています。 ピッキングを開始する前にすべてのピッキング場所が最大レベルに設定されていることを保証するために、通常このプロセスは毎日 1 回発生します。 
 
-最小値と最大値は、補充テンプレートに設定されています。 テンプレートの他の設定の多くは、ウェーブ需要補充に使用されるテンプレートの設定に似ています。 テンプレートには、各品目と場所ごとに明細行が 1 行含まれている必要があります。 バッチ ジョブを使用して補充を実行すると、Microsoft Dynamics 365 for Finance and Operations, Enterprise edition は明細行が組織された順序を使用して補充が必要かどうかを評価します。 
+最小値と最大値は、補充テンプレートに設定されています。 テンプレートの他の設定の多くは、ウェーブ需要補充に使用されるテンプレートの設定に似ています。 テンプレートには、各品目と場所ごとに明細行が 1 行含まれている必要があります。 バッチ ジョブを使用して補充を実行すると、Microsoft Dynamics 365 for Finance and Operations は明細行が組織された順序を使用して補充が必要かどうかを評価します。 
 
 最小/最大の補充戦略は、その場所が項目における固定場所として設定されていない限り、空の場所を補充することはできないことに注意してください。 補充する必要がある場所が固定された場所ではない場合、システムは、補充されるべきアイテムを決定できません。 したがって、補充が行われる前に、少なくともいくつかの手持在庫数量が必要です。
 

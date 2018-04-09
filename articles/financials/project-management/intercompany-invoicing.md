@@ -1,6 +1,6 @@
 ---
 title: "会社間請求書"
-description: "この資料では、Microsoft Dynamics 365 for Finance and Operations、Enterprise edition でのプロジェクトのための会社間請求についての情報と例を提供します。"
+description: "この資料では、Microsoft Dynamics 365 for Finance and Operations でのプロジェクトのための会社間請求についての情報と例を提供します。"
 author: KimANelson
 manager: AnnBe
 ms.date: 09/14/2017
@@ -19,10 +19,10 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ad14e2d145c6f6620bf8a31738fafa50d033d246
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 7cd19340c913fcda3fb537162dfbae52b5c8e922
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-この資料では、Microsoft Dynamics 365 for Finance and Operations、Enterprise edition でのプロジェクトのための会社間請求についての情報と例を提供します。
+この資料では、Microsoft Dynamics 365 for Finance and Operations でのプロジェクトのための会社間請求についての情報と例を提供します。
 
 組織には、プロジェクトに関する製品およびサービスを相互にやり取りする複数の部門、関連会社や他の法人がある場合があります。 サービスまたは製品を提供する法人を*貸出側法人*と呼び、サービスまたは製品を受ける法人を*借入側法人*と呼びます。 
 

@@ -1,6 +1,6 @@
 ---
 title: "複数の顧客または仕入先レコードを持つ単一伝票"
-description: "このトピックでは、複数の顧客または仕入先レコードを持つ単一伝票を転記した場合の処理の概要を示します。 この機能は、Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, の将来のバージョンで廃止されます。そのため、決済処理への会計上の影響を考慮し、この方法で転記を行うことは推奨されません。"
+description: "このトピックでは、複数の顧客または仕入先レコードを持つ単一伝票を転記した場合の処理の概要を示します。 この機能は、Microsoft Dynamics 365 for Finance and Operations の将来のバージョンで廃止されます。そのため、決済処理への会計上の影響を考慮し、この方法で転記を行うことは推奨されません。"
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
@@ -18,10 +18,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b5ba160d42a808c0243a0bb589190a65ea23eba3
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 4c499e31fb42a69dff6ac41faac0c78f7f4d1876
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-このトピックでは、複数の顧客または仕入先レコードを持つ単一伝票を転記した場合の処理の概要を示します。 この機能は、Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, の将来のバージョンで廃止されます。そのため、決済処理への会計上の影響を考慮し、この方法で転記を行うことは推奨されません。 
+このトピックでは、複数の顧客または仕入先レコードを持つ単一伝票を転記した場合の処理の概要を示します。 この機能は、Microsoft Dynamics 365 for Finance and Operations の将来のバージョンで廃止されます。そのため、決済処理への会計上の影響を考慮し、この方法で転記を行うことは推奨されません。 
 
 複数の顧客または仕入先に単一の伝票を使用する例として、一般的に、顧客間の残高転送や、同一組織内の顧客と仕入先との間での残高相殺が挙げられます。 
 

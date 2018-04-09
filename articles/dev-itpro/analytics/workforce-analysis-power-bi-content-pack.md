@@ -19,10 +19,10 @@ ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
-ms.openlocfilehash: 8ff4eb80eeb47a72fc1ac91ddc4bdfccebc4c0c6
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 17b42ae7e177a42b732654f2952ec5fe35acb1a9
 ms.contentlocale: ja-jp
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -35,7 +35,7 @@ ms.lasthandoff: 12/19/2017
 ## <a name="accessing-the-power-bi-content"></a>Power BI コンテンツへのアクセス
 これらの製品のいずれかを使用する場合、[**従業員のメトリック**] Power BI コンテンツは [**人事管理**] ワークスペースに表示されます。
 
-- Microsoft Dynamics 365 for Finance and Operations Enterprise Edition 
+- Microsoft Dynamics 365 for Finance and Operations 
 - Microsoft Dynamics 365 for Talent
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Power BI コンテンツに含まれるメトリックス

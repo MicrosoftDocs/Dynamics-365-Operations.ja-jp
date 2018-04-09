@@ -1,6 +1,6 @@
 ---
 title: "販売注文の Sales、Finance and Operations 間の直接同期"
-description: "このトピックでは、Microsoft Dynamics 365 for Sales と Microsoft Dynamics 365 for Finance and Operations, Enterprise edition との間で、販売注文の直接同期を実行させるために使用されるテンプレートと基本的なタスクについて説明します。"
+description: "このトピックでは、Microsoft Dynamics 365 for Sales と Microsoft Dynamics 365 for Finance and Operations との間で、販売注文の直接同期を実行させるために使用されるテンプレートと基本的なタスクについて説明します。"
 author: ChristianRytt
 manager: AnnBe
 ms.date: 03/13/2018
@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 0928f9c0af52c2e19f0669841e433423ae9db467
-ms.openlocfilehash: 09c5cd14c5948818878d3f830639abc166d7072e
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: e26244ffc380291a40edfbd2c2cb5911b0d8b3cb
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/13/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 03/13/2018
 
 [!include[banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Sales と Microsoft Dynamics 365 for Finance and Operations, Enterprise edition との間で、販売注文の直接同期を実行させるために使用されるテンプレートと基本的なタスクについて説明します。
+このトピックでは、Microsoft Dynamics 365 for Sales と Microsoft Dynamics 365 for Finance and Operations との間で、販売注文の直接同期を実行させるために使用されるテンプレートと基本的なタスクについて説明します。
 
 ## <a name="templates-and-tasks"></a>テンプレートおよびタスク
 

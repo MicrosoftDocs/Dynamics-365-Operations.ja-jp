@@ -1,6 +1,6 @@
 ---
 title: "顧客対応における仕入先コラボレーション"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations, Enterprise edition で仕入先コラボレーションを使用して発注書を処理し委託販売在庫を監視する方法について説明します。"
+description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations で仕入先コラボレーションを使用して発注書を処理し委託販売在庫を監視する方法について説明します。"
 author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,10 +19,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
-ms.openlocfilehash: 7646b2e01ea1f9cdca58b9971c3dea21b99525e2
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 4252112272e2f86c2c18dc399a713bf652e4228e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 12/14/2017
 
 [!include[banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Finance and Operations, Enterprise edition で仕入先コラボレーションを使用して顧客に対応する方法について説明します。 仕入先は、以下のワークスペースから一連のビジネス プロセスを完了できます。
+このトピックでは、Microsoft Dynamics 365 for Finance and Operations で仕入先コラボレーションを使用して顧客に対応する方法について説明します。 仕入先は、以下のワークスペースから一連のビジネス プロセスを完了できます。
 
 - **発注書の確認** – 発注書 (PO) を監視し対応します。
 - **仕入先の入札** – 見積依頼 (RFQ) を表示し、入札を入力することによってそれらに対応します。

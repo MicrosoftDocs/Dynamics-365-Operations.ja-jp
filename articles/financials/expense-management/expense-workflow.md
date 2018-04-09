@@ -1,6 +1,6 @@
 ---
 title: "経費ワークフロー"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations, Enterprise edition でワークフロー システムを使用する方法を説明し、経費管理で経費精算書の確認プロセスを設定します。"
+description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations でワークフロー システムを使用する方法を説明し、経費管理で経費精算書の確認プロセスを設定します。"
 author: saraschi2
 manager: AnnBe
 ms.date: 09/13/2017
@@ -19,10 +19,10 @@ ms.search.validFrom:
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d60d2f462a1fd27d4655e68aab7f96fb28a34b77
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 6ee607f723659a5b6ecd655ba4fdfca35a4c582d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 11/03/2017
 
 [!include[banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Finance and Operations, Enterprise edition でワークフロー システムを使用でき、経費管理で経費精算書の確認プロセスを設定します。 以下の条件を使用するワークフローを設定して、経費精算書を誰が承認するかを決定できます。
+Microsoft Dynamics 365 for Finance and Operations でワークフロー システムを使用でき、経費管理で経費精算書の確認プロセスを設定します。 以下の条件を使用するワークフローを設定して、経費精算書を誰が承認するかを決定できます。
 
 - 従業員の報告階層と定義済みの承認制限
 - 中間承認者および最終承認者をサポートする複数レベルの承認
