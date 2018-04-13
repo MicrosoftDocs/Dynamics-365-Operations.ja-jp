@@ -27,8 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="fixed-asset-depreciation-for-japan-faq"></a>日本の固定資産減価償却のよく寄せられる質問
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事は、日本の固定資産の減価償却についてよく寄せられる質問に回答します。
 

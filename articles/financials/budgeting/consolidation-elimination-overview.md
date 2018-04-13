@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="consolidation-and-elimination-overview"></a>連結と削除の概要
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事は、連結および消去プロセスに関する一般情報を提供します。 これには、よく寄せられる質問への回答が含まれます。
 

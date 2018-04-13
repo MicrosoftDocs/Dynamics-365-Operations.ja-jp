@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-subcontracted-work-cell-for-lean-manufacturing"></a>リーン生産の外注作業セルの作成
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 リーン生産の外注作業をモデル化するには、作業を提供する仕入先に関連付けられている作業セルを作成する必要があります。 外注作業セルは、仕入先タイプのリソースの関連付けを通じて仕入先にリンクされます。 USMF デモ会社でこの記録を行う場合、仕入先 ID 1002 およびサイト 1 を選択できます。
 

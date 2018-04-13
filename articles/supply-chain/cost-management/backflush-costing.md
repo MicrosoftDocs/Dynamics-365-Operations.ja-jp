@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="backflush-costing"></a>一括引き落とし原価計算
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックでは、リーン生産に使用される一括引き落とし原価計算の概念について説明します。 
 

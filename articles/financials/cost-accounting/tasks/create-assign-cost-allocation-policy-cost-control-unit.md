@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-and-assign-a-cost-allocation-policy-to-a-cost-control-unit"></a>原価配賦ポリシーの作成と原価管理単位への割り当て
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 原価配賦ポリシーと対応ルールを原価管理単位に作成し割り当てるには、この手順を使用します。 この記録では、USP2 デモ データ会社を使用します。
 

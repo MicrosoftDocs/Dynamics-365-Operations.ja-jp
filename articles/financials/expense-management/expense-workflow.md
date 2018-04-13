@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="expense-workflow"></a>経費ワークフロー
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Microsoft Dynamics 365 for Finance and Operations でワークフロー システムを使用でき、経費管理で経費精算書の確認プロセスを設定します。 以下の条件を使用するワークフローを設定して、経費精算書を誰が承認するかを決定できます。
 

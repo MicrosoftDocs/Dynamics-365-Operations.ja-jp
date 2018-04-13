@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="schedule-kanban-jobs"></a>かんばん作業のスケジューリング
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順は、特定の作業セルに対してプロセスかんばん作業をスケジュールすることに焦点を当てています。 「材料が利用可能な場合にプロセスかんばん作業を準備する」という手順は、この手順を作成するための前提条件です。 この手順の作成に使用するデモ データの会社は USMF です。 このタスクは、かんばんを処理する作業現場の監督と生産計画担当者を対象としています。
 

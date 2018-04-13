@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="manage-assortments"></a>品揃えの管理 
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 この手順では、新製品の品揃えを作成し発表する方法およびデモデータ企業USRTの使用方法を示します。 この手順を実施するには、Dynamics AX アプリケーション 7.0.1 以降および Dynamics AX platform 7.1が必要です。  
 

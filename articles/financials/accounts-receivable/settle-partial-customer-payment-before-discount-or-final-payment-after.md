@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="settle-a-partial-customer-payment-before-the-discount-date-with-a-final-payment-after-the-discount-date"></a>割引日後の最終支払での割引日よりも前の一部の顧客支払の決済
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事は、顧客の請求書に支払を決済する影響について説明します。 このシナリオは総勘定元帳ではなく、補助元帳の影響を対象としています。
 

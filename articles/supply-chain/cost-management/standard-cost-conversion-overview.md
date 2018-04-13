@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="standard-cost-conversion-overview"></a>標準原価換算の概要
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事は、標準原価換算を設定および実行するのに役立つプロセスの概要を提供します。 説明されているステップは、標準原価換算の前提条件の完了後に実行することを意図しています。 
 

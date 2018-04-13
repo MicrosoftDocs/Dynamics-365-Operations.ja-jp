@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="navigation-search"></a>ナビゲーション検索
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックでは、検索機能を使用して Microsoft Dynamics 365 for Finance and Operations のページに移動する方法を説明します。
 

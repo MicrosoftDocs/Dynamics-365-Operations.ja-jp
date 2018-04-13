@@ -24,7 +24,7 @@ ms.lasthandoff: 11/06/2017
 ---
 # <a name="set-up-a-procurement-category-hierarchy"></a>調達カテゴリ階層の設定
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、調達カテゴリ階層に新しいノードを作成する方法、および調達プロセスに使用する調達カテゴリをコンフィギュレーションする方法を示します。 通常、これらのタスクを実施するのは、購買マネージャーです。 この手順を開始する前に、調達タイプのカテゴリ階層が必要です。 デモ データの会社を使用すると、USMF 会社でこの手順を実行できます。
 

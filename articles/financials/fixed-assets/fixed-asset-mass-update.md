@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="fixed-asset-mass-update"></a>固定資産の一括更新
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 帳簿を使用した場合、同じ減価償却簿の一部である資産グループの減価償却方法を変更できます。
 

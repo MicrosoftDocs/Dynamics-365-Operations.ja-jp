@@ -24,9 +24,9 @@ ms.lasthandoff: 03/23/2018
 ---
 
 # <a name="batch-processing-for-alerts"></a>警告のためのバッチ処理
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[banner](../includes/pre-release.md)] 
+[!INCLUDE [banner](../includes/pre-release.md)]
 
 警告は、Microsoft Dynamics 365 for Finance and Operations のバッチ処理機能により処理されます。 警告を通知するには、事前にバッチ処理を設定しておく必要があります。
 

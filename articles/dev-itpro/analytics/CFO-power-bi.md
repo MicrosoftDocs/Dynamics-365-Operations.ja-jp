@@ -25,8 +25,7 @@ ms.lasthandoff: 02/23/2018
 
 # <a name="cfo-overview-power-bi-content"></a>CFO 概要 Power BI コンテンツ
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)] 
 
 このトピックでは、**CFO 概要** Microsoft Power BI content について説明します。 この Power BI コンテンツは、Microsoft Dynamics 365 for Finance and Operations version 7.2 を使用しているユーザーに適用されます。 バージョン 7.3 またはそれ以降を使用している場合は、[財務インサイト](financial-insights.md)を参照してください。
 

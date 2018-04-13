@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="attributes-attribute-groups-and-their-associations-with-various-retail-entities-in-finance-and-operations"></a>属性、属性グループ、および Finance and Operations のさまざまな小売エンティティとのアソシエーション
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 [属性] は、製品とユーザー定義フィールドによる特性をさらに記述する方法を提供 (たとえば、[メモリ サイズ]、[ハード ディスク能力]、[エネルギー スター対応] など)。 Microsoft Dynamics 365 for Finance and Operations にて、属性は製品カテゴリ、小売チャンネルなどのさまざまな小売エンティティに関連付けられており、それらに対して既定値を設定できます。 製品は、製品カテゴリまたは小売チャンネルに関連付けられる場合、その属性と既定値を継承します。 既定値は、個々の製品レベルや小売チャンネル レベル、または小売カタログで上書きできます。
  
@@ -227,13 +227,13 @@ ms.lasthandoff: 03/26/2018
 5. [製品] クイック タブで、必要な製品を選び、製品グリッドの上部で [属性] を選択します。
 6. 次のクイック タブで、必要な属性の値を更新します。
 
-    - 共有製品メディア
-    - 共有の製品属性
-    - チャネル メディア
-    - チャネル製品属性
+   - 共有製品メディア
+   - 共有の製品属性
+   - チャネル メディア
+   - チャネル製品属性
 
-    > [!NOTE]
-    > 共有製品メディアと共有製品属性が Finance and Operations で作成される場合、それらはすべての小売製品に適用されます。
+     > [!NOTE]
+     > 共有製品メディアと共有製品属性が Finance and Operations で作成される場合、それらはすべての小売製品に適用されます。
 
 ![カタログ製品属性グループ](media/CatalogProdAttrValues.png)
 
@@ -249,11 +249,11 @@ ms.lasthandoff: 03/26/2018
 
 5. 次のクイック タブで、必要な属性の値を更新します。
 
-    - 共有製品メディア
-    - 共有の製品属性
-    - チャネル メディア
-    - チャネル製品属性
+   - 共有製品メディア
+   - 共有の製品属性
+   - チャネル メディア
+   - チャネル製品属性
 
-    > [!NOTE]
-    > 共有製品メディアと共有製品属性が Finance and Operations で作成される場合、それらはすべての小売製品に適用されます。
+     > [!NOTE]
+     > 共有製品メディアと共有製品属性が Finance and Operations で作成される場合、それらはすべての小売製品に適用されます。
 

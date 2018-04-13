@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-fixed-asset-depreciation-allocation-china"></a>固定資産減価償却配賦の設定 (中国)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 日本では、特定の固定資産の減価償却費は複数の部門間で共有できます。 
 

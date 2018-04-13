@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-sales-order-invoices"></a>販売注文請求書の作成
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 このタスク ガイドでは、販売注文の請求操作について説明します。請求書の結合やバッチ処理も含みます。 この手順では、USMF というデモ会社を使用します。
 

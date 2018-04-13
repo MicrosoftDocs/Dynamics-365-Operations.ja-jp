@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-dimension-based-product-master"></a>分析コードベースの製品マスターの作成
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、分析コード ベースのコンフィギュレーション テクノロジで新しい製品マスターを作成する方法を示します。 この手順の作成に使用するデモ データの会社は USMF です。 これは、分析コード ベースのコンフィギュレーションでの組み合わせの作成方法を説明する 8 つの手順の 1 番目です。
 

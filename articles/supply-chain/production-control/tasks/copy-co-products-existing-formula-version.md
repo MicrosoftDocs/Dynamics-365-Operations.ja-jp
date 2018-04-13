@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="copy-co-products-from-an-existing-formula-version"></a>既存のフォーミュラ バージョンから連産品をコピー
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、既存のフォーミュラ バージョンから、リリース済製品の別のフォーミュラ バージョンに連産品をコピーする方法を示します。 連産品と関連付けられている少なくとも 1 つのフォーミュラ バージョンがあることが前提条件です。 この手順の作成に使用するデモ データの会社は USP2 です。
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="view-current-wip-status-on-a-production-order"></a>製造オーダーの現在の仕掛品ステータスの表示
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、製造オーダーの仕掛報告書の表示方法を説明します。 この手順の作成に使用するデモ データの会社は USMF です。 この手順は、原価の管理者を対象としています。
 

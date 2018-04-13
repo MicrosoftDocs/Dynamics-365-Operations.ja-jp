@@ -26,7 +26,7 @@ ms.lasthandoff: 03/08/2018
 ---
 # <a name="generate-affordable-care-act-reports"></a>Affordable Care Act 報告を生成します
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 機能は、Affordable Care Act の [**雇用主委託**] 部分をサポートするための形式 1095-B および 1095-C で報告された情報を追跡する必要がある雇用主を支援するのに利用可能です。この機能は、米国内の法人にのみ有効であることに注意してください。
 

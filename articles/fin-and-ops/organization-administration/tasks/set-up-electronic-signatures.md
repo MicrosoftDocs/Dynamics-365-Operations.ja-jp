@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-electronic-signatures"></a>電子署名の設定
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 電子署名を設定するには、この手順を使用します。 電子署名は、コンピューティング プロセスの開始者または承認者を確認するための ID です。 この手順の作成に使用するデモ データの会社は DAT です。
 

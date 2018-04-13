@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="identify-and-resolve-conflicts-in-segregation-of-duties"></a>職務分掌の競合の識別と解決
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 異なるユーザーが実行する必要があるタスクを分割するルールを設定できます。 この概念は職務分掌と呼ばれます。 セキュリティ ロールの定義またはユーザーのロール割り当てがルールに違反する場合、競合がログに記録されます。 すべての競合は、管理者が解決する必要があります。 競合を識別および解決するには、次の手順を実行します。 この手順の作成に使用するデモ データの会社は USMF です。
 

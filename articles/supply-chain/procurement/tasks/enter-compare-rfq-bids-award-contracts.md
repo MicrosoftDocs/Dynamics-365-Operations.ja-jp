@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="enter-and-compare-rfq-bids-and-award-contracts"></a>RFQ 入札価格の入力と比較および契約の授与
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順は、RFQ への返信を入力したり、入札の記録や比較をしたり、また仕入先の 1 つに入札を付与する方法を示します。 デモ データの会社 USMF でこの手順を使用できます。 開始する前に、少なくとも 2 つの仕入先に送信された、2 つの明細行から成る RFQ が必要になります。 「見積依頼の作成」手順を前提条件として実行しながら、これを作成できます。 この手順を実行する前に、スコア基準を設定する必要があります。
 

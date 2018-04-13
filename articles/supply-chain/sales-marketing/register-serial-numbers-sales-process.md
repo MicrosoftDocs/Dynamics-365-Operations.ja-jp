@@ -29,9 +29,9 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="register-serial-numbers-in-the-sales-process"></a>販売プロセスでのシリアル番号の登録
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 このトピックでは、販売プロセス中に梱包明細または請求書のシリアル番号を登録する方法を説明します。 この機能は、会社がシリアル番号をサービスおよび保証のために取得する一方、シリアル番号を在庫の入庫から払出まで管理する必要がない場合に役立ちます。
 

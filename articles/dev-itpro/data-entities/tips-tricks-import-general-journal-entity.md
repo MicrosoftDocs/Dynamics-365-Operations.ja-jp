@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="best-practices-for-importing-vouchers-using-the-general-journal-entity"></a>一般仕訳エンティティを使用して伝票をインポートするためのベスト プラクティス
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックでは、一般仕訳エンティティを使用して一般仕訳帳にデータをインポートするためのヒントを提供します。  
 

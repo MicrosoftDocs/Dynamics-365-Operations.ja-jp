@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="report-designer-interface"></a>レポート デザイナー インターフェイス
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事では、レポート デザイナー内を移動する方法と、特定の要件を満たすためにさまざまなオプションを使用する方法について説明します。 
 

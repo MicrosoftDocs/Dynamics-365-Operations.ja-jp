@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="create-and-associate-a-device"></a>デバイスの作成と関連付け
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 この手順では、新しいデバイスを作成し、レジスターに関連付ける方法を説明します。 レジスターが既に作成されていることが前提となります。  このタスクでは、デモ データの会社 USRT を使用します。 このタスクは、管理者、IT プロフェッショナルまたは小売 IT、および店舗マネージャーのロールを対象としています。
 

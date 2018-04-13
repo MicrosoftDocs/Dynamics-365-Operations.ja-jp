@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="manage-warehouse-workers"></a>倉庫作業者の管理
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事では、倉庫の従業員によって実行される作業の管理と監視に、Microsoft Dynamics 365 for Finance and Operations を使用する方法について説明します。
 

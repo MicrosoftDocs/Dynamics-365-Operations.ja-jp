@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="amortize-constant-costs-for-a-manufactured-item"></a>製造品目の固定費の償却
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 製造品目の固定費は、工程の段取り時間と、数量または仕損金額が一定のコンポーネントを反映します。 
 

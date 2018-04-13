@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="production-order-cost-estimation"></a>原価見積を行う製造オーダー。
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事は、生産原価見積に関する情報を提供します。 生産原価見積では、計画製造オーダー数量で品目を製造する場合の予測される材料消費および能力消費の原価が示されます。 
 

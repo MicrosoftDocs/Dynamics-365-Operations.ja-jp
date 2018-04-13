@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="project-quotations"></a>プロジェクト見積
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事では、プロジェクト フェーズにおける最初のステップとして顧客に魅力的な提案をするために使用できる、プロジェクト見積の概念を紹介します。 プロジェクト見積には、見積を作成する品目およびサービス、基本連絡先情報、特別な売買契約や割引、適用される可能性のある税金や割増金が含まれます。 
 

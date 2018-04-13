@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="loan-items-to-a-worker"></a>作業者への貸与品目
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、作業者へ品目を貸与する方法および作業者が品目を返品するのを記録する方法を示します。 作業者は、従業員セルフサービス ページを使用して貸与品目を要求できます。 この手順の作成に使用するデモ データの会社は USMF です。
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="configure-main-accounts-for-asset-retirement-obligation-posting-and-market-discount-rates-japan"></a>資産除去責務の転記および市場割引率のための主勘定のコンフィギュレーション (日本)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 日本では、法的な除去責務のある固定資産を取得した場合、除去する際には資産除去責務を評価し転記する必要があります。 
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 03/22/2018
 
 # <a name="pos-operations-online-and-offline"></a>オンラインおよびオフラインでの POS 操作
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 ユーザーが販売時点管理 (POS) で行うほとんどのアクションは、操作と見なされます。 操作は、Microsoft Dynamics 365 for Retail バックオフィスで構成および管理されます。 多くの操作を POS ボタングリッドのボタンに追加できます。 その後、ユーザーは、操作を呼び出すためのボタンを選択し、その機能を実行することができます。 他の操作はメインの POS アプリケーションの一部であり、画面上のボタンから呼び出されるか、他のワークフローやプロセスの一部として呼び出されます。
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 02/20/2018
 
 # <a name="create-a-service-template-group"></a>サービス テンプレート グループの作成  
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 サービス テンプレート グループを使用して、サービス テンプレートの並べ替えとフィルタ処理を行うことができます。
 

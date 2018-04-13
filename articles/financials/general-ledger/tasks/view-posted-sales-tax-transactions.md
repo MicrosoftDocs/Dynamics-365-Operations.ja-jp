@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="view-posted-sales-tax-transactions"></a>転記された消費税トランザクションの表示
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 必要な内容に応じて、さまざまなページから転記済売上税トランザクションを表示できます。 このタスクでは、USMF というデモ会社を使用します。
 

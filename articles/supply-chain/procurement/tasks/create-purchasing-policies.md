@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-purchasing-policies"></a>購入ポリシーの作成
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、購買の業務プロセスに対応する購入ポリシーを作成する方法を説明します。 購買ポリシーを作成する前に、購買ポリシー パラメーターを設定する必要があります。 購入ポリシーの作成、変更、無効は可能ですが、購入ポリシーの削除はできません。 通常、このタスクを実施するのは、購買マネージャーです。 デモ データの会社 USMF のこの手順を使うか、または独自のデータを使うことができます。
 

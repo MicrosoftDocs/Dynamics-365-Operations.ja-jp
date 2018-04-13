@@ -29,8 +29,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="product-related-translations-faq"></a>製品関連の翻訳のよく寄せられる質問
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックでは、製品の翻訳、製品分析コードの値、および製品属性を管理する方法について説明します。 
 
@@ -95,8 +94,7 @@ ms.lasthandoff: 02/07/2018
 <tbody>
 <tr class="odd">
 <td>顧客が希望する言語を設定するには、次の手順に従います。
-<ol>  
-<li><strong>販売およびマーケティング</strong> &gt; <strong>共通</strong> &gt; <strong>顧客</strong> &gt; <strong>すべての</strong> <strong>顧客</strong> をクリックします。</li>
+<ol><br/><li><strong>販売およびマーケティング</strong> &gt; <strong>共通</strong> &gt; <strong>顧客</strong> &gt; <strong>すべての</strong> <strong>顧客</strong> をクリックします。</li>
 <li>顧客をダブルクリックして、[<strong>顧客</strong>] ページを開きます。 [<strong>一般</strong>] タブの [<strong>言語</strong>] フィールドで、[<strong>言語</strong>] を選択します。</li>
 </ol></td>
 </tr>

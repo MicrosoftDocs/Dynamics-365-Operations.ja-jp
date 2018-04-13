@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="generate-and-post-recurring-free-text-invoices"></a>定期的な自由書式の請求書の生成と転記
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 定期請求書は、顧客に対して同じ金額を定期的に請求する際に使用します。 このレコードでは、USMF デモ会社を使用します。 記録は A/R 請求書の管理および処理を行う担当者を対象としています。
 

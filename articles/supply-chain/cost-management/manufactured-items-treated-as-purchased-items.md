@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-products-that-can-be-produced-or-procured"></a>生産または調達する製品を設定する
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 製品はさまざまな方法で提供できます。製品は生産 (製造) または調達 (購買) できます。 この記事は、複数の調達をサポートするために、製品の構成時に考慮する一般的な点について説明します。 
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="search-for-vendors"></a>仕入先の検索
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 特定の基準に基づく仕入先の検索方法を習得します。 この例では、特定の調達カテゴリに対して承認されていて、特定の国に基本住所をもっている仕入先の検索方法を示します。 この手順は、デモ データの会社 USMF で、または独自のデータで実行できます。 通常、このタスクを実行するのは、調達担当者です。
 

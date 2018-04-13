@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="total-cost-allocation-method"></a>合計原価配賦方法
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックは、原価配賦の合計 (TCA) を使用するためのガイドラインを提供します。 TCA は、バッチ オーダーの主要式品目および式に定義される連産品の間のコストを計算する方法です。
 

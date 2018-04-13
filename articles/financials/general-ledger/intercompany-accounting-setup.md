@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="intercompany-accounting-setup"></a>会社間勘定の設定
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックは、日次仕訳帳、ベンダー請求書仕訳帳、支払仕訳帳などの会計割り当ておよび財務仕訳帳の会社間仕訳帳を使用できるように会社間の会計を設定する方法に関して説明します。
 

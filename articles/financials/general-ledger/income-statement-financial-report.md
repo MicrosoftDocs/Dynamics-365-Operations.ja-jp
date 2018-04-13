@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="income-statement-financial-report"></a>損益計算書財務諸表
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事では、損益計算書の既定のレポートについて説明します。 また、このレポートに関連付けられる構成要素を説明します。 
 
@@ -60,7 +59,7 @@ ms.lasthandoff: 11/03/2017
     -   **FD** – 現在の期間の財務データ
     -   **FD** – 年間累計の財務データ
 
- 
+
 
 <a name="see-also"></a>参照
 --------

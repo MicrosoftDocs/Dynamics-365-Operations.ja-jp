@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="correct-a-free-text-invoice"></a>自由書式の請求書を訂正
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事では、自由書式の請求書を転記後に修正し、修正済請求書として再発行する方法を説明します。
 

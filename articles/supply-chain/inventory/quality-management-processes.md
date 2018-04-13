@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="quality-management-processes"></a>品質管理プロセス
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事は、不適合製品に対する品質管理プロセスについての情報を提供します。 品質テスト機能の使用方法、不適合の定義および管理方法、および修正方法について説明します。
 

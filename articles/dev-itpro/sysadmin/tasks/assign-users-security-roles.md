@@ -24,7 +24,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="assign-users-to-security-roles"></a>ユーザーをセキュリティ ロールに割り当てる
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Microsoft Dynamics 365 for Finance and Operations にアクセスするには、ユーザーをセキュリティ ロールに割り当てる必要があります。 この手順では、業務データに基づいてシステム管理者がどのようにしてユーザーを自動的にロールに割り当てられるかについて説明します。 この手順の作成に使用するデモ データの会社は USMF です。
 

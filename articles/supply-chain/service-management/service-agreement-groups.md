@@ -28,7 +28,7 @@ ms.lasthandoff: 02/19/2018
 
 # <a name="service-agreement-groups"></a>サービス契約グループ 
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 サービス契約グループは、サービス契約の並べ替えやフィルタ処理に便利です。 サービス契約グループを利用すると、会社の規模、地理的な場所、業種などに基づいてサービス合意をグループ化できます。 また、顧客に提供するサービスのレベルごとにサービス合意をグループ化することもできます。
 

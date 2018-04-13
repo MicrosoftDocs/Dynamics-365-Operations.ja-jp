@@ -24,7 +24,7 @@ ms.lasthandoff: 11/01/2017
 ---
 # <a name="distribute-questionnaires-using-scheduling"></a>スケジューリングを使用したアンケートの配布
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 アンケートのスケジューリングによって、複数の回答者に対するアンケートを計画して配布することができます。 この手順の作成に使用するデモ データの会社は USMF です。
 

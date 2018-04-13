@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-resource-capabilities"></a>リソース能力の定義
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 リソースの能力は、リソースがどのような工程を行えるかを示します。 スケジューリング中に、それぞれの職務や工程の要件と、利用可能なリソースの能力とを照合します。 このタスク ガイドでは、能力の作成、およびリソースへの割り当て方法を確認できます。 このタスクの作成に使用するデモ データの会社は USMF です。
 

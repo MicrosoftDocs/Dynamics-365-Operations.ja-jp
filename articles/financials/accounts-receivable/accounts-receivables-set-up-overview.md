@@ -28,8 +28,7 @@ ms.lasthandoff: 11/14/2017
 
 # <a name="configure-accounts-receivables-and-credit-and-collections"></a>売掛金勘定、貸方転記および取立のコンフィギュレーション
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 売掛金管理、貸方転記および取立をコンフィギュレーションして、請求書および顧客から入金される支払を追跡します。
 
@@ -107,7 +106,7 @@ ms.lasthandoff: 11/14/2017
 |                                                      | NSF 情報。                     | 支払が回収ページで NSF トランザクションとしてマークされる場合、使用する銀行口座の NSF 情報を設定します。                                                                                                                                              |
 |                                                      | 販売担当者の情報              | 販売担当者の電子メール アドレスを設定します。 これらのアドレスは回収ページに表示され、そのページから販売担当者に電子メールを送信する場合に使用できます。                                                                                                                |
 
- 
+
 詳細については、「[売掛金勘定の貸方転記と取立](collections-credit-accounts-receivable.md)」を参照してください。
 
 

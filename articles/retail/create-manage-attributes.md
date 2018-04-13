@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="create-and-manage-attributes"></a>属性の作成と管理
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 この記事は、Microsoft Dynamics 365 for Retail の属性について説明します。 [属性] により、ユーザー定義フィールドを使用して製品およびその特性を説明できます。
 
@@ -58,7 +57,7 @@ ms.lasthandoff: 11/03/2017
 
 ## <a name="attribute-type"></a>属性タイプ
   [![attributes-fixed-copy](./media/attributes-fixed-copy.png)](./media/attributes-fixed-copy.png) 
-  
+
 属性は、属性タイプをベースにしています。 属性タイプは、特定の属性に入力できるデータのタイプを識別します。 現在、Microsoft Dynamics 365 for Retail では、次の属性タイプをサポートしています :
 
 -   [通貨] – この属性タイプは、通貨の値をサポートします。 これはバインドできますし (値の範囲をサポートできる) 開いたままにもできます。

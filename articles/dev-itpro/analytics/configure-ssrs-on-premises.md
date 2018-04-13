@@ -26,7 +26,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="configure-sql-server-reporting-services-for-an-on-premises-deployment"></a>オンプレミス配置の SQL Server Reporting Services のコンフィギュレーション
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックの手順を使用し、Microsoft Dynamics 365 for Finance and Operations エディションのオンプレミス配置に SQL Server Reporting Services (SSRS) を構成します。
 
@@ -52,13 +52,13 @@ ms.lasthandoff: 03/26/2018
 
     [![web ポータル url タブ](./media/ssrs-config-manager-05.png)](./media/ssrs-config-manager-05.png)
     
-  ポータルを設定すると、[Web ポータル] タブは次の図と一致するようになります。
+   ポータルを設定すると、[Web ポータル] タブは次の図と一致するようになります。
     [![web ポータル タブ](./media/ssrs-config-manager-06.png)](./media/ssrs-config-manager-06.png)
     
 8. レポートの URL をクリックし、SQL Server Reporting Services web ポータルを表示します。 
-9.  ポータルにアクセスしたら、**Dynamics** という名前の新規フォルダーを作成します。
+9. ポータルにアクセスしたら、**Dynamics** という名前の新規フォルダーを作成します。
 
-    [![ダイナミクス フォルダー](./media/ssrs-config-manager-07.png)](./media/ssrs-config-manager-07.png)
+   [![ダイナミクス フォルダー](./media/ssrs-config-manager-07.png)](./media/ssrs-config-manager-07.png)
     
 10. **Reporting Services 構成マネージャー** で [電子メール設定] タブをクリックし、設定が次の図に一致しているかを確認します。
 
@@ -68,15 +68,15 @@ ms.lasthandoff: 03/26/2018
 
     [![実行アカウント タブ](./media/ssrs-config-manager-09.png)](./media/ssrs-config-manager-09.png)
     
-  [暗号化キー] タブで既定の設定を変更しないでください。[![[暗号化キー] タブ](./media/ssrs-config-manager-10.png)](./media/ssrs-config-manager-10.png)
+    [暗号化キー] タブで既定の設定を変更しないでください。[![[暗号化キー] タブ](./media/ssrs-config-manager-10.png)](./media/ssrs-config-manager-10.png)
     
 12. [定期売買の設定] タブをクリックし、設定が次の図と一致しているかを確認します。
 
     [![定期売買の設定タブ](./media/ssrs-config-manager-11.png)](./media/ssrs-config-manager-11.png)
     
-  [スケール アウト配置] タブで既定の設定を変更しないでください。[![[スケール アウト配置] タブ](./media/ssrs-config-manager-12.png)](./media/ssrs-config-manager-12.png)
+    [スケール アウト配置] タブで既定の設定を変更しないでください。[![[スケール アウト配置] タブ](./media/ssrs-config-manager-12.png)](./media/ssrs-config-manager-12.png)
     
-  [Power BI 統合] タブで既定の設定を変更しないでください。[![[Power BI 統合] タブ](./media/ssrs-config-manager-13.png)](./media/ssrs-config-manager-13.png) 
+    [Power BI 統合] タブで既定の設定を変更しないでください。[![[Power BI 統合] タブ](./media/ssrs-config-manager-13.png)](./media/ssrs-config-manager-13.png) 
     
 13. [終了] をクリックし、Reporting Services 構成マネージャー を閉じます。
 

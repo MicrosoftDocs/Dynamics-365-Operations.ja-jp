@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-japan-consumption-tax-report-japan"></a>日本の消費税申告の設定 (日本)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 このタスクでは、日本の消費税申告をサポートするシステムの設定について説明します。 このタスクでは、一般会計パラメータ、法人、売上税申告勘定および売上税コードを修正します。 
 

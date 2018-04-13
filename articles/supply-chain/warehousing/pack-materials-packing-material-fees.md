@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="packing-materials-and-fees"></a>梱包材および費用
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 梱包材費用は、一定の間隔でリサイクル会社に支払われます。 梱包単位を構成する各材料について、重量単位あたりの金額が支払われます。 梱包材費用は計算および報告されますが、所轄官庁に支払う必要がある税とは見なされないため、元帳トランザクションは転記されません。
 
@@ -63,7 +62,7 @@ ms.lasthandoff: 11/03/2017
 
 ## <a name="print-packaging-material-weights-on-invoices"></a>請求書への梱包材重量の印刷
 請求書に、梱包材重量を印刷し、だれが梱包材費用を支払うかを示すように選択できます。 重量は、梱包コードごとに集計されます。
- 
+
 
 
 

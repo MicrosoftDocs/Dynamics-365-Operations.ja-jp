@@ -24,7 +24,7 @@ ms.lasthandoff: 10/25/2017
 ---
 # <a name="create-a-product-master"></a>製品マスターの作成
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 事前に定義されたバリアントのために製品マスターを作成します。 この手順の作成に使用するデモ データの会社は USMF です。 この手順は、製品デザイナーを対象としています。
 

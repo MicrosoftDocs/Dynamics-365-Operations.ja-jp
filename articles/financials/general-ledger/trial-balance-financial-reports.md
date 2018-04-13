@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="trial-balance-financial-reports"></a>試算表の財務諸表
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事では、試算表の既定のレポートについて説明します。 さらに、これらのレポートに関連付けられる構成要素について、また業務要件を満たすようにレポートを変更する方法についても説明します。 
 
@@ -99,7 +98,7 @@ Microsoft Dynamics 365 for Finance and Operations の財務報告では、3 つ�
     -   **FD** – 昨年度の借方のみを含む財務データ
     -   **FD** – 昨年度の貸方のみを含む財務データ
 
- 
+
 
 <a name="see-also"></a>参照
 --------

@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="convert-accounting-or-reporting-currencies"></a>会計またはレポートの通貨換算
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 会計通貨やレポート通貨を変更する必要のある会社には、2 つの選択肢があります。 1 つ目の選択肢は、新しい会社を作成して新規に開始することです。 2 番目の選択肢は、会計通貨とレポート通貨の換算プロセスを実行することです。 これは、システムのすべてのトランザクションを変更する、長い実行時間のプロセスです。 また、プロセスを実行する前に、設定が必要です。
 

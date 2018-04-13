@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="enter-worker-information"></a>作業者情報の入力
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 リクルーターは大量雇用プロジェクトを作成し、職位を生成した後、その次の手順として、採用する作業者の情報を入力します。 この手順の作成に使用するデモ データの会社は USMF です。 デモ データには未処理の大量雇用プロジェクトが含まれます。 この手順を開始するには、[人事管理] > [採用] > [大量雇用プロジェクト] の順に移動します。
 

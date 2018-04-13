@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="manage-subcontracting-work-in-production"></a>生産における外注作業の管理
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 for Finance and Operations で委託された操作がどのように管理されるかについて説明します。 つまり、リソースに割り当てられた生産操作がベンダーによってどのように管理されるかを説明します。
 

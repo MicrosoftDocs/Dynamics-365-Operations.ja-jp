@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="deliver-an-employee-benefits-program"></a>従業員手当プログラムの提供
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 このタスクは、新しい福利厚生の作成時に使用する福利厚生の要素の作成方法を示します。 このタスクの作成に使用するデモ データの会社は USMF です。 このタスクは、報酬と給付金マネージャーのために用意されています。
 

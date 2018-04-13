@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-and-assign-an-equipment-group-japan"></a>設備グループの作成および割り当て (日本)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、設備のグループの作成方法と設備グループの固定資産へのコンフィギュレーション方法について説明します。
 

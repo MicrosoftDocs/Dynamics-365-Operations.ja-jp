@@ -24,7 +24,7 @@ ms.lasthandoff: 11/02/2017
 ---
 # <a name="calculate-fixed-asset-depreciation-across-legal-entities"></a>法人間での固定資産減価償却の計算
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 固定資産減価償却は、単一のステップで複数の法人に対して実行することができます。 この手順では、複数の法人組織に対してプロセスを設定して実行する方法を示します。 会計士の役割を使用します。  
 

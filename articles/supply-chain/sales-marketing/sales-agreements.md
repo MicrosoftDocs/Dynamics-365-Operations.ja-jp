@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="sales-agreements"></a>販売契約書
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックでは、販売契約書について説明します。 販売契約書は、特定の数量または特定の量の製品を、一定期間に特別価格と割引で購入することを顧客と約束する契約です。
 

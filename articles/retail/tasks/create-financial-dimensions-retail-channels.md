@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="create-financial-dimensions-for-retail-channels-and-configure-dimension-values-on-stores"></a>小売チャネルの財務分析コードの作成と店舗の分析コード値のコンフィギュレーション
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 この手順は、分析コード値を使用する小売チャンネルの財務分析コードの作成と小売店舗の財務分析コード値のコンフィギュレーションのステップについて説明します。 このトピックには、分析コード セットおよび勘定構造の作成などの関連手順は含まれません。 この手順では、デモ データの会社 USRT を使用します。
 

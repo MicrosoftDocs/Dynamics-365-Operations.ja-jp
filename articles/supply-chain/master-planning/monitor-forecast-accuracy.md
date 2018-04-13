@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="monitor-forecast-accuracy"></a>予測精度を監視する
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事では、Microsoft Dynamics 365 for Finance and Operations によって計算される予測精度のタイプおよび精度の値の表示方法を説明しています。
 

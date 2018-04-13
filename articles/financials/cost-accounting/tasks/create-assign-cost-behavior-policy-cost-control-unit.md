@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-and-assign-a-cost-behavior-policy-to-a-cost-control-unit"></a>原価動作ポリシーの作成と原価管理単位への割り当て
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 原価の動作は、固定費または変動費の分類です。 ポリシーと対応ルールは、有効になるポリシーの原価管理単位へ割り当てる必要があります。 ポリシーを作成し、原価管理単位へ割り当てるには、この手順を使用します。
 

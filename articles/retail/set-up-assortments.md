@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-assortments"></a>品揃えの設定
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 この記事は、品揃えとは何か、および Microsoft Dynamics 365 for Retail での品揃えの設定方法を説明します。
 

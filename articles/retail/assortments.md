@@ -23,7 +23,7 @@ ms.lasthandoff: 03/12/2018
 ---
 
 # <a name="assortment-management"></a>品揃え管理
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## <a name="overview"></a>概要
 Microsoft Dynamics 365 for Retail では、チャンネル間で製品の可用性を管理できる *品揃え* を提供しています。 品揃えでは、特定の店舗および特定の期間に利用可能な商品が決まります。

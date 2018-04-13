@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="mixed-license-plate-receiving"></a>混合ライセンス プレートの受取
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 混合ライセンス プレート受取では、プット アウェイ作業を登録し作成する前に、複数品目で構成されているライセンス プレートを構築することができます。 
 

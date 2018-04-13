@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="review-collections-information"></a>取立情報の確認
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順は、回収情報およびさまざまな設定オプションや回収トランザクションを確認する方法を説明します。 この手順では、USMF というデモ会社を使用します。
 

@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="purchasing-policies"></a>購入ポリシー
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事は、購入ポリシーに関する情報を提供します。 購入ポリシーは、要求プロセスを制御するルールのコレクションです。 購入ポリシーは調達管理者が組織の戦略購買の要求に対応するポリシー構造を作成することによって自分の調達戦略を実行できるように助けます。
 

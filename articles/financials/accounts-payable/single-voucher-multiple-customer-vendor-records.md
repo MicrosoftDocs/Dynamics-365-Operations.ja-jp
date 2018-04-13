@@ -27,8 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="single-voucher-with-multiple-customer-or-vendor-records"></a>複数の顧客または仕入先レコードを持つ単一伝票
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックでは、複数の顧客または仕入先レコードを持つ単一伝票を転記した場合の処理の概要を示します。 この機能は、Microsoft Dynamics 365 for Finance and Operations の将来のバージョンで廃止されます。そのため、決済処理への会計上の影響を考慮し、この方法で転記を行うことは推奨されません。 
 
@@ -251,7 +250,7 @@ ms.lasthandoff: 03/26/2018
 | 001         | 顧客         | US-008      |                 |           |  75.00     | 元帳          | 999999---          |
 | 002         | ベンダー           | 1001        |                 |  75.00    |            | 元帳          | 999999---          |
 
- 
+
 
 
 

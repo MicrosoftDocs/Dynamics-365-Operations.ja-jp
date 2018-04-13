@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="base-price-and-trade-agreements"></a>基準価格と売買契約
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 この手順では、チャンネル固有の販売価格の売買契約の作成方法を説明します。 この手順では、デモ データの会社 USRT を使用します。
 

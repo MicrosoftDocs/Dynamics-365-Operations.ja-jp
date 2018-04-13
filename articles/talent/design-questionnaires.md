@@ -28,7 +28,7 @@ ms.lasthandoff: 03/08/2018
 
 # <a name="design-a-questionnaire"></a>アンケートのデザイン
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 このトピックは、アンケートを作成するプロセスについて説明します。 最初の手順では、アンケートを設計します。 アンケートを設計する場合は、質問と回答を書き込むだけでなく、回答を記録し、表にする構造を作成します。 
 

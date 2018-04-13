@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-master-data-for-inclusion-of-deductible-expenses-for-multiple-posting-layers-japan"></a>複数の転記階層の損金算入額のマスター データの設定 (日本)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、固定資産ルールと、複数の転記階層の損金算入額に必要なマスター データの作成について説明します。 この手順を完了する前に、 [固定資産コンフィギュレーション キー] を選択する必要があります。 この手順は、デモ データ会社 JPMF を使用して作成されました。
 

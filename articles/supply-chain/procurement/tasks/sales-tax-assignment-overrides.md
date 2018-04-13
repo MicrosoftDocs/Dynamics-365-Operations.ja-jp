@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="sales-tax-assignment-and-overrides"></a>売上税の割り当ておよび上書き
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、小売チャンネルに売上税グループを割り当てる方法を示します。 また、新しい売上税の上書きを作成して、既存の売上税の上書きグループに割り当てる処理について説明します。 この手順では
 

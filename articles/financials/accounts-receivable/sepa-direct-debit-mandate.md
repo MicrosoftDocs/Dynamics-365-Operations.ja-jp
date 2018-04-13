@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-sepa-direct-debit-mandate"></a>SEPA の口座引落の委任状の設定
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 顧客が債権者に署名済み委任状を付与した場合、単一ユーロ支払地域 (SEPA) の口座引落により、債権者は顧客の銀行口座から資金を収集することができます。 債権者が支払を回収することを承認する委任状に顧客が署名し、顧客の銀行に支払の回収を指示します。 このトピックは、SEPA 口座引落の委任状を設定するプロセスを表示するためにまとめられています。
 

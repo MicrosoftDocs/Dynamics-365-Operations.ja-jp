@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="lean-pegging-from-sales-orders"></a>販売注文のリーン ペギング
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順で、品目がかんばんで生産される販売明細行からペギング ツリーを検証することに集中します。 ペギング ツリーを検証すると、すべてのかんばん作業が計画済になります。 これにより、すぐに生産を始められるようにする必要のある注文受付者の注文のシナリオに役立ちます。 この手順の作成に使用するデモ データの会社は USMF です。 この手順は、リーン会社で働いている上級の受付者を対象としています。
 

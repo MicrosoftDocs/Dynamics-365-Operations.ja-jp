@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-released-product-for-a-single-company"></a>1 つの会社に対するリリース済製品の作成
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順は、1 つの法人単位のコンテキストでリリース済製品を 1 つ作成する方法を説明します。 リリース済製品を作成したら、すぐにこの単位のみ使用できます。 デモ データの会社 USMF でこの手順を確認できます。 このタスクは、通常、製品デザイナーが実行します。
 

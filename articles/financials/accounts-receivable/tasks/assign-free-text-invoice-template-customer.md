@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="assign-a-free-text-invoice-template-to-a-customer"></a>顧客への自由書式の請求書テンプレートの割り当て
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 このタスクは顧客に自由書式の請求書テンプレートを割り当てる方法を示します。 このタスクは USMF デモ会社を使用し、A/R の請求書の管理および処理を担当するユーザーを対象としています。
 

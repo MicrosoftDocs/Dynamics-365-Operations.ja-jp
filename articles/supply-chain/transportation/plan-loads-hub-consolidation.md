@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="plan-loads-using-hub-consolidation"></a>ハブ連結を使用した積荷計画
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事では、同じ顧客に別の倉庫からの商品を配送する場合、または同じ倉庫に複数の仕入先から商品が配送された場合に、1 つのハブに出荷を統合する機能について説明します。
 

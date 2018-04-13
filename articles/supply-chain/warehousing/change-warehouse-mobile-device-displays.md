@@ -28,8 +28,7 @@ ms.lasthandoff: 02/05/2018
 
 # <a name="warehouse-mobile-device-display-settings"></a>倉庫モバイル デバイスの表示設定
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事では、モバイル デバイスの表示の外観を設定する方法、キーボード ショートカットをボタンのようなコントロールにマッピングする方法を説明します。 
 

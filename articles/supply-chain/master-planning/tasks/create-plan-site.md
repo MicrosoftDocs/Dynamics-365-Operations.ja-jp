@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-plan-for-a-site"></a>サイトの計画の作成
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 生産計画担当者は、特定品目を生産するための材料と能力要件を計算します。 調達提案が作成された後、計画している注文を検索し、注文を確定し、緊急を要する注文から始めます。 最も緊急な注文とは、現在の日付で確定される必要があるものです。 デモ データの会社 USMF を使用して、これらのタスクを実行します。
 

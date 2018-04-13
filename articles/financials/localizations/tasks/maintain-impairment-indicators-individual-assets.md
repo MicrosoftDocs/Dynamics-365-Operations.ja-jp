@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="maintain-impairment-indicators-on-individual-assets-japan"></a>個別資産の減損インジケーターの管理 (日本)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 このタスクを使用して、個別資産の減損インジケーターの管理方法を把握します。
 

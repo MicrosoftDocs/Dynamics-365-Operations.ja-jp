@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="approve-vendors-for-specific-products"></a>特定の製品の仕入先の承認
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、特定の製品に対する仕入先の承認方法を示します。 'これにより、注文書に製品が追加された際にどの仕入先を使用できるかを管理することができます。 デモ データの会社 USMF のこの手順を使うか、または独自のデータを使うことができます。 通常、このタスクを実施するのは、購買マネージャーです。
 

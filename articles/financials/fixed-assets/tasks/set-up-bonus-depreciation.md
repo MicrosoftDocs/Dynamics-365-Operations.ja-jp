@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-bonus-depreciation"></a>特別償却の設定
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、特別減価償却費を作成する方法およびそれを固定資産帳簿に関連付ける方法を説明します。 これは USMF の法人に対して経理担当ロールとデモ データを使用します。
 

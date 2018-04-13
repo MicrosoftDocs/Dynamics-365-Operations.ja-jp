@@ -29,7 +29,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="solver-strategy-for-product-configuration"></a>製品コンフィギュレーションのソルバー戦略
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックでは、製品のコンフィギュレーションのパフォーマンスを向上させるためにソルバー戦略を使用する方法について説明します。
 

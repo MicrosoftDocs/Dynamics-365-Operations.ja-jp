@@ -24,7 +24,7 @@ ms.lasthandoff: 10/31/2017
 ---
 # <a name="set-up-asset-retirement-obligation-documents-and-enter-aro-amount-on-a-fixed-asset-japan"></a>資産除去責務ドキュメントの設定と固定資産の ARO 金額の入力 (日本)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 日本では、資産除去責務 (ARO) ドキュメントは資産除去責務の 1 つのタイプを識別します。 固定資産帳簿に ARO ドキュメントを割り当てると、資産除去時に責務を履行すると予測されるキャッシュ フローを指定することができます。 
 

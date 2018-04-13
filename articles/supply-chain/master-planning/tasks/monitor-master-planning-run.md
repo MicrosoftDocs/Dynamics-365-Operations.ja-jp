@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="monitor-a-master-planning-run"></a>マスター プランの実行の監視
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 生産計画担当者は、マスター プランの実行中であるかどうかを確認します。 この手順を完了するのにデモ データの会社 USMF を使用します。
 

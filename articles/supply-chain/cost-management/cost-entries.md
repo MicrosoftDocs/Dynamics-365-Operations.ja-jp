@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="cost-entries"></a>原価エントリ
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事は、原価エントリおよびその作成時に関する情報を提供します。 原価エントリは、特定のイベントの数量と原価を登録するレコードです。
 

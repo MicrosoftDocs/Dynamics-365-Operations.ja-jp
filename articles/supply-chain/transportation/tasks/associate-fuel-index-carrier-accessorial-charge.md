@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="associate-a-fuel-index-with-a-carrier-as-an-accessorial-charge"></a>付帯サービス請求金額としての燃料インデックスの配送業者への関連付け
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 このガイドでは、付帯サービスの割り当て、配送業者付帯サービス請求金額、燃料割増金の付帯サービス マスターの作成方法、および配送業者の燃料インデックスの配送業者への割り当て方法を示します。 このガイドを実行する前に、配送業者の燃料インデックスを設定する必要があります。 これを行うには、「配送業者の燃料インデックスの設定」ガイドを使用できます。 これらの設定タスクは、通常、物流マネージャーが実行します。 この手順の作成に使用されたデモ データの会社は、USMF です。
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="configure-destinations-for-electronic-reporting-er"></a>電子申告 (ER) の提出先を構成する
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、フォルダーまたはファイルなどの電子申告 (ER) の出力コンポーネントにさまざまな出力先を設定して使用する方法を示します。 この手順の作成に使用するデモ データの会社は DEMF です。 ドイツが法人の一次的住所のある国/地域になっていますが、この手順ではあらゆる法人を使用できます。 
 

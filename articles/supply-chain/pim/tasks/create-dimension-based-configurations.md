@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-dimension-based-configurations"></a>分析コードベースのコンフィギュレーションの作成
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、分析コード ベース製品のコンフィギュレーションを定義する方法を示します。 これは、分析コード ベースのコンフィギュレーションでの組み合わせの作成方法を説明するシリーズの最後の手順です。 この手順の実行は前の 7 つの記録で作成されているデータに依存します。 この手順の作成に使用するデモ データの会社は USMF です。
 

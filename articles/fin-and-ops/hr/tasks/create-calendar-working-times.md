@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-calendar-and-generate-working-times"></a>カレンダーの作成および作業時間の生成
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 カレンダーは、運営リソースの能力と作業時間を説明します。 この手順は、作業時間テンプレートに基づいて作業カレンダーを定義するのに便利です。 デモ データ会社 USMF または独自のデータを使用してこの手順の説明を見ることができます。
 

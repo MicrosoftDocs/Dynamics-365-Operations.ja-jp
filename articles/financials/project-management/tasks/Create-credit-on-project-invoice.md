@@ -25,7 +25,7 @@ ms.lasthandoff: 11/06/2017
 ---
 # <a name="create-a-credit-note-on-project-invoices"></a>プロジェクト請求書の貸方票の作成
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 1. [プロジェクト管理および会計] > [プロジェクト] > [すべてのプロジェクト] の順に選択します。 
 2. 一覧で、目的のレコードを見つけ、選択します。 

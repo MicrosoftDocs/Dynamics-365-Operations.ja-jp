@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="release-a-dimension-based-product-master"></a>分析コードベースの製品マスターのリリース
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、分析コード ベースのコンフィギュレーションに使用する製品マスターをリリースする方法を示します。 この手順の作成に使用するデモ データの会社は USMF です。 事前に分析コード ベースのコンフィギュレーション テクノロジで製品マスターを作成しておく必要があります。 これは、分析コードベースのコンフィギュレーションでの組み合わせの作成方法を説明する 8 つの手順の 2 番目です。
 

@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="automatic-settlement-and-prioritization"></a>自動決済と優先順位付け
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックは、[売掛金勘定パラメーター] ページの [自動決済] を選択した場合にトランザクションが決済される方法について説明します。 自動決済を支払の優先順位と組み合わせた使用方法も説明します。
 

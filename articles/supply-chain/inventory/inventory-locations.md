@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="inventory-locations"></a>在庫場所
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 在庫場所は、品目の保存場所、および WMS I 倉庫で品目がピッキングされる場所を特定するために基本倉庫 (WMS I) で使用されます。
 

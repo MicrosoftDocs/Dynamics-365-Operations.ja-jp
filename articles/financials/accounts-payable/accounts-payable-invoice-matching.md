@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="accounts-payable-invoice-matching"></a>買掛金請求書照合
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 買掛金勘定の請求書照合は、仕入先請求書、発注書、および製品受領情報を照合するプロセスです。
 

@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="kanban-job-scheduling-for-lean-manufacturing"></a>リーン生産でのかんばん作業のスケジューリング
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事は、かんばん作業のスケジューリングにおける視覚コントロールおよびさまざまな方法に関する情報を提供します。  
 

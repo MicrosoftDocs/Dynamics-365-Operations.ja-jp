@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-a-work-template-for-purchase-orders"></a>発注書の作業テンプレートの設定
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、入庫済品目のプット アウェイで使用する簡単な作業テンプレートの設定に集中して説明します。 品目を入庫エリアから移動するときにモバイル デバイスで倉庫作業者に提示される一連の手順が、作業テンプレートによって決まります。 この手順は、デモ データの会社 USMF で前述のデータを使用して実施できます。 このガイドを開始する前に、作業プール ID を作成します。 この例では、入庫で呼び出される作業プール ID を使用します。 この手順は、倉庫マネージャーを対象としています。
 

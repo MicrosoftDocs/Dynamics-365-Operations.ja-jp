@@ -24,7 +24,7 @@ ms.lasthandoff: 11/06/2017
 ---
 # <a name="design-a-configuration-for-generating-reports-in-microsoft-word-format-for-electronic-reporting-er"></a>電子申告 (ER) 用に Microsoft Word 形式のレポートを生成するためのコンフィギュレーションを設計する
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 次の手順では、システム管理者または電子レポート開発者のロールを持つユーザーが、電子レポート (ER) 形式を構成して、Microsoft Word ファイルとしてレポートを生成する方法を説明します。 これらのステップは GBSI 会社で実行できます。
 

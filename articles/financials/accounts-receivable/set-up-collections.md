@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-credit-and-collections"></a>貸方転記および取立の設定
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この品目では、コレクション機能の設定方法が説明されます。
 
@@ -97,9 +96,9 @@ NSF 支払が [**回収**] ページで指定される時に、正しい仕訳�
 詳細については、次のトピックを参照してください。
 
  - [督促状順序の作成](tasks/create-collection-letter-sequence.md)
- 
+
  - [督促状の処理](tasks/process-collection-letters.md)
- 
+
  - [取立情報の確認](tasks/review-collections-information.md)
 
 

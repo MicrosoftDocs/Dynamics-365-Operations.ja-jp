@@ -27,7 +27,7 @@ ms.lasthandoff: 02/27/2018
 ---
 # <a name="modify-an-electronic-reporting-format-by-reapplying-a-microsoft-excel-template"></a>Microsoft Excel テンプレートを再適用して電子申告形式を変更
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 電子申告 (ER) ツールを使用して、電子的な形式でビジネス ドキュメントを生成します。 ビジネス ドキュメントを生成するには、ER 形式を作成し、ER デザイナーを使用してビジネス ドキュメントのレイアウトを定義し、それに含まれるように、データを指定する必要があります。 ビジネス ドキュメントを生成するために ER 形式を実行できます。
 

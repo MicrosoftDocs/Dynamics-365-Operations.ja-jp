@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-injury-and-illness-information"></a>けが/病気の情報を設定します
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 雇用者は、従業員がいつ危険な仕事場により、傷害を負ったか、また疾病を患ったかを把握している必要があります。 [障害と疾病] ページで情報を設定し、職場における障害または疾病の報告を促進できます。 ここでは、治療、原価、結果のタイプなど、傷害と疾病のタイプを設定できます。 この手順の作成に使用するデモ データの会社は USMF です。
 

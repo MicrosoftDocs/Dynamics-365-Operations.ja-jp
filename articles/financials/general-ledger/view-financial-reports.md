@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="view-financial-reports"></a>財務諸表の表示
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事では、Microsoft Dynamics 365 for Finance and Operations で財務報告書を表示、および検討する方法について説明します。 外観とを含まれるデータを変更するために、財務報告書に適用できるさまざまなオプションに関する情報が含まれています。
 

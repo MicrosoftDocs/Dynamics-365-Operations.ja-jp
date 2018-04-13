@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="information-used-in-bom-calculations-with-standard-costs"></a>標準原価を使用する BOM 計算で使用される情報
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 部品表 (BOM) 計算では、さまざまなデータ ソースのデータで、製造品目の標準原価を計算します。 データ ソースには、品目、部品表の工順、間接原価の計算式、および原価バージョンについての情報があります。
 

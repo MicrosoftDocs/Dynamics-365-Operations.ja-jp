@@ -29,10 +29,9 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="default-order-settings-for-dimensions-and-product-variants"></a>分析コードおよび製品バリアントの既定の注文設定
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
-
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 Microsoft Dynamics 365 for Finance and Operations の既定の注文設定は、品目が供給または保管されるサイトおよび倉庫、取引または在庫管理のために使用される最小、最大、複数、標準数量、リード タイム、停止フラグ、注文納期メソッドを定義します。 既定の注文設定は、発注書、販売注文、移動オーダー、在庫仕訳帳の登録時、および計画オーダーを生成するマスタープランを作成時に使用されます。 既定の注文設定は、品目固有、サイト固有、製品バリアント固有、または製品分析コード固有です。
 

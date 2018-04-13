@@ -25,7 +25,7 @@ ms.lasthandoff: 11/06/2017
 ---
 # <a name="adjust-project-transactions"></a>プロジェクト トランザクションの調整
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 このタスク ガイドでは、プロジェクトのトランザクションを調整する方法を説明します。 しかしながら、プロジェクト トランザクションの調整は、一度に 1 つずつ行うことも、すべてのプロジェクト トランザクションのリストから選択して行うこともできます。 通常プロジェクトの管理者が、このタスクを完了させます。 このタスクガイドでは、USSI データ セットを使用します。
 

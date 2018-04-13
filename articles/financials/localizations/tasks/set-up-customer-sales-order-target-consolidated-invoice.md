@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-a-customer-and-sales-order-to-be-target-of-consolidated-invoice-japan"></a>月次締め請求書の対象とする顧客および販売注文の設定 (日本)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 通常日本では、顧客はすべてのトランザクションに月次締め請求書を使用します。 
 

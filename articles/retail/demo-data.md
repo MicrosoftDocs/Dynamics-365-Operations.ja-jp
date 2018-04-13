@@ -29,7 +29,7 @@ ms.lasthandoff: 03/06/2018
 
 # <a name="demo-data-screen-layouts-in-mposcpos"></a>MPOS/CPOS でのデモ データの画面レイアウト
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 for Retail の販売時点管理 (POS) のデモ データ セットに含まれている画面レイアウトに関する情報を提供します。
 

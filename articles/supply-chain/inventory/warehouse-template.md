@@ -29,7 +29,7 @@ ms.lasthandoff: 02/06/2018
 
 # <a name="set-up-a-warehouse-by-using-a-warehouse-configuration-template"></a>倉庫のコンフィギュレーション テンプレートを使用して、倉庫を設定する
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックでは倉庫のコンフィギュレーション テンプレートを使用して、倉庫を設定する方法について説明します。 使用できる事前定義されたコンフィギュレーション テンプレートが複数あります。 これらのテンプレートを使用する方法の詳細については、[コンフィギュレーション データ テンプレート](../../dev-itpro/data-entities/configuration-data-templates.md) を参照してください。
 

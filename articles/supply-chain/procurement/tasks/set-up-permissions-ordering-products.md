@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-permissions-for-ordering-products-on-behalf-of-someone-else"></a>誰かの代わりに製品を注文するためのアクセス許可の設定
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、他の作業者に代わって購買要求を作成するためのアクセス許可を作業者に付与する方法を示します。 つまり、購買要求「作成者」が他の「要求者」の要求を作成できます。 この手順では、違う法人または作業単位で品目とサービスを注文する作業者のアクセス許可を付与する方法も示します。 通常、これらのタスクは、購買マネージャーが実行します。 USMF デモ会社または独自のデータでこの手順を使うことができます。
 

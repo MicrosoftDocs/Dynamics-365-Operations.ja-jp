@@ -28,7 +28,7 @@ ms.lasthandoff: 03/08/2018
 
 # <a name="sell-and-return-products-outside-of-an-assortment"></a>品揃えの範囲外の製品の販売と返品
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 小売業者の一般的なシナリオでは、店舗で特定の製品を抱えていない場合 (つまり、製品が店舗の品揃えにない場合) でも、製品を顧客に販売したり、顧客からの返品を受け入れたりします。
 以下に一般的なシナリオを挙げます。

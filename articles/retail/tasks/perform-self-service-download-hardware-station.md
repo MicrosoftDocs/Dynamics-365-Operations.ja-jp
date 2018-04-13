@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="perform-self-service-to-download-hardware-station"></a>ハードウェア ステーションをダウンロードするセルフサービスの実行
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 この手順では、あらかじめ定義された新しいハードウェア ステーションをダウンロードする方法を説明します。 この手順に使用するデモ データの会社は USRT です。 このタスクを開始する前に、新しいハードウェア ステーションのプロファイルとハードウェア ステーションを作成しておく必要があります。
 

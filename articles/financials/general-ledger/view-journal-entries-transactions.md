@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="view-journal-entries-and-transactions"></a>仕訳入力およびトランザクションの表示
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事は、仕訳入力およびトランザクションを表示するためのさまざまな方法を説明します。 
 
@@ -55,7 +54,7 @@ ms.lasthandoff: 11/03/2017
 -   **トランザクション発生元** – このトランザクション レポートには、仕訳帳別に、またトランザクション通貨、会計通貨、およびレポート通貨別に、勘定を表示します。 また、相手勘定として使用された仕訳帳の各行を表示します。
 
 
-##<a name="see-also"></a>参照
+## <a name="see-also"></a>参照
 - [総勘定元帳残高](general-ledger-account-balances.md) 
 - [会計ソース エクスプローラー](..\accounts-payable\accounting-source-explorer.md)
 - [財務報告](financial-reporting-getting-started.md)

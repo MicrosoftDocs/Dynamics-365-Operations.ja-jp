@@ -29,7 +29,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="statistical-dimension-members-and-statistical-measure-provider-templates"></a>統計分析コード メンバーと統計測定プロバイダー テンプレート
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 統計分析コードとそのメンバーは、原価会計の非通貨入力を登録および制御するために使用されます。 統計分析コードのメンバーは、次の 2 つの目的で使用できます。
 

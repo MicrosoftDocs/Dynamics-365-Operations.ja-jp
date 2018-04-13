@@ -25,7 +25,7 @@ ms.lasthandoff: 12/19/2017
 
 # <a name="employee-development-power-bi-content"></a>従業員の開発 Power BIコンテンツ
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックでは、**従業員の開発** Microsoft Power BI コンテンツについて説明します。
 
@@ -45,6 +45,7 @@ ms.lasthandoff: 12/19/2017
 これらのレポートのグラフとタイルをフィルター処理し、ダッシュボードに固定することができます。 Power BI のフィルター処理と固定方法の詳細については、「[ダッシュボードの作成およびコンフィギュレーション](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards)」を参照してください。
 
 ## <a name="understanding-the-data-model-and-entities"></a>データ モデルおよびエンティティの理解
+
 | エンティティ                   | コンテンツ                                                                                                   | 他のエンティティとの関係 |
 |--------------------------|------------------------------------------------------------------------------------------------------------|-----------------------------------|
 | カレンダーのオフセット          | レポートをスライスするカレンダーのオフセット                                                                          | 過去の職位の割り当て、職位のトレンド、従業員のトレンド、退職済従業員 

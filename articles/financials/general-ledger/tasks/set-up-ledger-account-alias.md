@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-a-ledger-account-alias"></a>勘定科目のエイリアスの設定
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、勘定番号を入力するショートカットを提供する勘定科目エイリアスを作成する方法について説明します。 この手順では、デモ データ会社 USMF を使用します。
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="acquire-a-fixed-asset-with-asset-retirement-obligations-japan"></a>資産除去責務がある固定資産の取得 (日本)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 日本では、資産除去責務 (ARO) は現在の値に割引され、固定資産の取得原価に追加されます。 
 

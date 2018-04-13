@@ -27,8 +27,7 @@ ms.lasthandoff: 02/14/2018
 
 # <a name="performance-management-overview"></a>業績管理の概要
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 業績管理プロセスにより、従業員は管理者と業績を文書化し、話し合うことができます。 次に、管理者は、従業員にフィードバックおよびガイダンスを提供できます。  
 

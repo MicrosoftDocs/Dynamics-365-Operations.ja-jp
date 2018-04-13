@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-an-operating-unit"></a>作業単位の作成
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 作業単位とは、事業における経済資源と運営プロセスの管理を振り分ける際に使用する組織です。 作業単位のメンバは、希少なリソースの有効活用、プロセスの改善、および業績に対する責任を担っています。 作業単位の種類には、コスト センター、事業単位、部門、およびバリュー ストリームが含まれます。 作業単位を作成するには、次の手順に従います。 この手順の作成に使用するデモ データの会社は USMF です。
 

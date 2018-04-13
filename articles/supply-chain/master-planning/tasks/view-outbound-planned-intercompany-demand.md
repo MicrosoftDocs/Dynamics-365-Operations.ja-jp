@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="view-outbound-planned-intercompany-demand"></a>計画企業内需要 (アウトバウンド) の表示
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、会社間仕入先によって達成されるすべての計画オーダーを表示する方法を示します。 この手順の作成に使用するデモ データの会社は DEMF です。
 

@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="display-charges-for-a-manufactured-item"></a>製造品目の雑費の表示
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 製造品目の固定費は、工程の段取り時間と、数量または仕損金額が固定されているコンポーネントを反映します。
 

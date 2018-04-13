@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="configure-standard-costs-for-labor-and-expenses"></a>労務および経費の標準原価のコンフィギュレーション
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、労働者の標準原価とプロジェクトの経費を設定する方法を示します。 このタスクでは、USSI データ セットを使用します。
 

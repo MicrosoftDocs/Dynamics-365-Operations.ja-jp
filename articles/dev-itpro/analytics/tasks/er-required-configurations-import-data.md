@@ -24,7 +24,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="create-required-configurations-to-import-data-from-an-external-file-for-electronic-reporting-er"></a>電子申告 (ER) 用に必要なコンフィギュレーションを作成して外部ファイルからデータをインポートする
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 次の手順では、「システム管理者」または「電子申告開発者」ロールのユーザーが、電子申告 (ER) コンフィギュレーションを設計して、外部ファイルから Dynamics 365 for Finance and Operations アプリケーションにデータをインポートする方法を説明します。 この例では、サンプル会社 Litware, Inc. 用に、必要な ER コンフィギュレーションを作成します。これらのステップを完了するには、まずタスク ガイド「ER コンフィギュレーション プロバイダーの作成および有効なプロバイダーとしてのマーク付け」にあるステップを完了する必要があります。 これらのステップは、USMF データ セットを使用して完了することができます。 また、電子レポートの概要トピックからのリンク (https://go.microsoft.com/fwlink/?linkid=852550): を使用して、1099model.xml、1099format.xml、1099entries.xml、1099entries.xlsx のファイルをローカルにダウンロードして保存する必要があります。
 

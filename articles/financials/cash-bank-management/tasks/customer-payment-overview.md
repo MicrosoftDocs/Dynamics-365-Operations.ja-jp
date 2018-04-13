@@ -24,7 +24,7 @@ ms.lasthandoff: 10/26/2017
 ---
 # <a name="customer-payment-overview"></a>顧客支払の概要
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 このタスク ガイドでは、顧客支払の入力に使用するさまざまな方法を説明します。 このタスクでは、USMF というデモ会社を使用します。
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="create-financial-dimensions-for-pos-registers-and-configure-dimension-values-on-registers"></a>POS レジスターの財務分析コードの作成とレジスターの分析コード値のコンフィギュレーション
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 この手順では、販売時点管理 (POS) レジスターの財務分析コードの作成について説明し、レジスターの財務分析コード値をコンフィギュレーションする方法を示します。 この手順には、分析コード セットおよび勘定構造の作成などの関連手順は含まれません。 これらのタスクは他のトピックで示されます。 このレコードでは、MXMF デモ会社を使用します。
 

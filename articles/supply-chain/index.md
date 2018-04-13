@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="supply-chain-management-home-page"></a>サプライ チェーン マネジメントのホーム ページ
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 for Finance and Operations のサプライ チェーン マネジメント機能に関するヘルプ トピックとその他のリソースの一覧を示します。 
 

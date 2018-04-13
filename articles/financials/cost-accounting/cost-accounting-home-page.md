@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="cost-accounting-home-page"></a>原価会計ホーム ページ
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## <a name="learning-map"></a>学習マップ 
 
@@ -37,6 +37,7 @@ ms.lasthandoff: 11/03/2017
 [![原価会計の学習マップ](./media/cost-accounting-map.png)](./media/cost-accounting-map.png)
 
 ## <a name="quick-links"></a>クイック リンク
+
 |      |   |
 |------|---|
 |  [基本エンティティ (e ラーニング) のコンフィギュレーション](https://mbspartner.microsoft.com/Home) (CustomerSource アカウントが必要です)  |[分析コードの作成](cost-elements.md)  |

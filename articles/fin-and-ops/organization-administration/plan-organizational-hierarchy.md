@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="plan-your-organizational-hierarchy"></a>組織階層の計画
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Microsoft Dynamics 365 for Finance and Operations で組織と組織階層を設定する前に、組織をシミュレーションする方法を確認してください。 組織モデルは、Finance and Operations の実装と業務プロセスに重要な影響を与えます。 
 
@@ -158,7 +157,7 @@ Finance and Operations でサポートされる国 / 地域については、ほ
 
 #### <a name="if-the-organization-is-modeled-as-an-operating-unit"></a>組織を作業単位としてシミュレーションする場合 
 法令や会計の慣行が組織が配置されている国/地域間で同一の場合、単一の一連の期末の手順を使用できます。 このことは、組織を作業単位としてシミュレーションできることを意味します。 すべての作業単位が同一の年度末締処理の手順を使用する必要があります。 
-   
+
 ### <a name="number-sequences"></a>番号順序
 #### <a name="if-the-organization-is-modeled-as-a-legal-entity"></a>組織を法人としてシミュレーションする場合
 一部の参照の番号順序は法人ごとに設定できます。 一部の番号順序は共有できます。 

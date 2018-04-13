@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="master-plans"></a>マスター プラン
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 会社の日常業務のサポート、監視を要する多様な計画戦略のシミュレーション、社内の業績や顧客満足に関するポリシーの実装など、さまざまな目的のマスター プランを使用します。 
 

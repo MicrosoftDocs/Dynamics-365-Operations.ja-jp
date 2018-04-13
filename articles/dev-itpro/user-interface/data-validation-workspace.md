@@ -25,8 +25,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="data-validation-workspace"></a>データ検証ワークスペース
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックでは、**データ検証チェックリスト ワークスペース** と関連するコンフィギュレーションの概要を示します。
 

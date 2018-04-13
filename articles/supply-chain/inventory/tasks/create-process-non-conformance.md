@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-and-process-a-conformance"></a>不適合の作成および処理
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順を使用して、既存の品質指示に基づき不適合管理を実行します。 USMF のデモの会社でこの記録を実行することができ、提案された値を使用することができます。 通常この手順は品質担当者が実施します。  前提条件として、「商品の品質の調査」タスクの記録を実行します。 不適合の承認を処理する場合、タスクの記録を実行するユーザーには、[ユーザー] ページで「名前」の値が割り当てられている必要があります。 ドキュメントのメモを使用するには、ユーザー オプションで [ドキュメントの処理] も有効化されている必要があります。
 

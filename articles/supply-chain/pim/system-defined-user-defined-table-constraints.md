@@ -29,8 +29,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="system-defined-and-user-defined-table-constraints"></a>システム定義およびユーザー定義のテーブル制約
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事では、製品コンフィギュレーション モデルのコンポーネントの 2 つのタイプのテーブル制約について説明します。ユーザー定義とシステム定義です。 テーブルの制約は、テーブルの各行が設定可能な各属性値の定義を表す許可された属性の組み合わせのマトリックスを表します。
 

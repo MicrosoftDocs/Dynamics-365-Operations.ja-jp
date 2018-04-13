@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="add-an-existing-activity-to-a-production-flow-version"></a>生産フロー バージョンへの既存の活動の追加
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 生産フローの新バージョンを作成する際に、旧バージョン向けに作成された活動を新バージョンに加えることができます。 この手順では、活動をコピーしないで既存の生産フロー向けの新バージョンの作成方法を示します。 次の手順では、既存の活動が新バージョンに追加されます。 
 

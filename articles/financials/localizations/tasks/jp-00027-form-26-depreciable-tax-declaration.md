@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="form-26-for-depreciable-tax-declaration-japan"></a>減価償却税申告のフォーム 26 (日本)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 このタスクでは、登録番号の固定資産への割り当て方法と申告 26 レポートの印刷について説明します。
 

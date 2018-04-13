@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="record-the-receipt-of-goods-on-the-purchase-order"></a>発注書に記載されている商品の受取の記録
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、商品の受取を発注書に直接記録する方法を示します。 製品の受領を倉庫に登録しておき、後で発注書に記録することもできます。 このタスクは通常は購買担当者または買掛金勘定コーディネーターが行います。 このガイドで示されている例は、デモ データの会社 USMF で使用できます。 この例には、タスク ガイドとして手順を行うことができるように簡単な発注書を作成するステップが含まれています。 独自のデータでこの手順を使用している場合は、「商品の受取の記録」サブタスクから開始します。
 

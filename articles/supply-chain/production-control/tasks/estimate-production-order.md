@@ -25,7 +25,7 @@ ms.lasthandoff: 02/06/2018
 ---
 # <a name="estimate-a-production-order"></a>製造オーダーの見積
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 USMF デモ データ会社または用意したデータ セットを使用して、この手順を実行できます。 どちらの場合も、ステータスが [作成済] である未処理の製造オーダーが必要です。 これは、製造オーダーのライフ サイクルを説明する 7 個の手順の 2 番目です。
 

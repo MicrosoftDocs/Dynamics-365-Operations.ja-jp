@@ -28,7 +28,7 @@ ms.lasthandoff: 02/21/2018
 
 # <a name="service-object-groups"></a>サービス対象グループ 
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 対象グループは、レポートや統計用の対象に関するデータの並べ替えやフィルタ処理を行う場合に便利です。 たとえば、地理的な場所またはタイプ別に対象をグループ化できます。
 

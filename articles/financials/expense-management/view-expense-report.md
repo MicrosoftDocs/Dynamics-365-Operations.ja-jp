@@ -26,7 +26,7 @@ ms.lasthandoff: 03/13/2018
 
 # <a name="view-an-expense-report"></a>経費精算書の表示
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 総勘定元帳または調達でトランザクションを表示するクエリを実行すると、クエリが大量の情報を返す可能性があります。 したがって、検索を絞り込むこともできます。 必要な情報を取得するには、表示されている経費精算書を確認するトランザクションにドリルダウンできます。
 

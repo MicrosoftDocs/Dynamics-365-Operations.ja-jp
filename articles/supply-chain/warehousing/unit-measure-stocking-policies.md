@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="unit-of-measure-and-stocking-policies"></a>測定単位と在庫ポリシー
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事は、倉庫のプロセスで既定の単位、単位の順序、単位換算を使用する方法について説明します。
 

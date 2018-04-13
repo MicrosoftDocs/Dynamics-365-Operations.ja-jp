@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-cost-accounting-ledger"></a>原価会計元帳の作成
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 原価会計元帳は、レポート単位の全体を示しています。 原価要素の分析コード、統計分析コード、会計カレンダー、および通貨によって定義されています。 法人の概念として、認識不可能です。 法人とそのデータは、多くの原価会計元帳と関連付けることができます。 この記録では、USP2 デモ データ会社を使用します。
 

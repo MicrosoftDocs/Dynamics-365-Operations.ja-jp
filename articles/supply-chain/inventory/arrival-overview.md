@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="arrival-overview"></a>着荷の概要
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックでは、着荷の概要の機能に関する情報を提供します。 着荷の概要ページはこの機能の一部で、受入品目として入庫が予定されているすべての品目の概要を提供します。
 

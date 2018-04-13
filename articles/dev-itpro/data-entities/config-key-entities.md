@@ -27,7 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="configuration-keys-and-data-entities"></a>コンフィギュレーション キーおよびデータ エンティティ
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 データ エンティティを使用してデータをインポートまたはエクスポートする前に、使用を計画しているデータ エンティティでコンフィギュレーション キーの影響を最初に判断することをお勧めします。 
 

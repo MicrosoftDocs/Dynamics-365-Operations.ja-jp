@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="175-percent-reducing-balance-depreciation"></a>175% 逓減残高による減価償却
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックは、減価償却の 175% 逓減残高法の概要を示します。
 
@@ -68,6 +67,7 @@ ms.lasthandoff: 11/03/2017
 -   [会計年度期間] では、会計年度における減価償却の合計額が計算されます。 この金額は [会計カレンダー] ページで定義された会計年度期間に見越計上されます。
 
 ## <a name="example-of-175-reducing-balance-depreciation"></a>175% 逓減残高による減価償却の例
+
 |                                |        |
 |--------------------------------|--------|
 | 取得価額               | 11,000 |

@@ -29,8 +29,7 @@ ms.lasthandoff: 03/08/2018
 
 # <a name="personalized-product-recommendations-overview"></a>カスタマイズされた製品の推奨事項の概要
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 > [!NOTE]
 > より良いアルゴリズムとより新しい小売指向の機能を加えたこの機能をデザインするため、製品レコメンデーション サービスの現在のバージョンを削除します。 詳細については、[削除済みまたは推奨されない機能](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features)を参照してください。 環境に対して既に有効な製品推奨事項で問題が発生している場合、ページの下に移動します。 
@@ -86,9 +85,9 @@ Dynamics 365 for Retail では、POS (営業拠点) デバイスに製品の推�
 -   モデルの資格情報と ID は CRT で利用できるようになっており、オンライン モードで Cloud POS と MPOS からの製品推奨事項を守ることができます。
 
 > ## <a name="troubleshoot-issues-where-you-have-product-recommendations-already-enabled"></a>[製品推奨事項] が既に有効な場合の問題のトラブルシューティング 
->- [小売パラメーター] > [機械学習] > [製品推奨事項の無効化] に移動し、[グローバル構成ジョブ [1110]] を実行します。 [機械学習] タブを特定できない場合、Dynamics サポートにお問い合わせください。 
-
->- **画面レイアウト デザイナー** を使用して **推奨事項コントロール** をトランザクション画面に追加した場合、それも削除してください。 
+> - [小売パラメーター] > [機械学習] > [製品推奨事項の無効化] に移動し、[グローバル構成ジョブ [1110]] を実行します。 [機械学習] タブを特定できない場合、Dynamics サポートにお問い合わせください。 
+> 
+> - **画面レイアウト デザイナー** を使用して **推奨事項コントロール** をトランザクション画面に追加した場合、それも削除してください。 
 
 
 

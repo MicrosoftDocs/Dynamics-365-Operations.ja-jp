@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-app-field-names-in-warehousing-app"></a>倉庫アプリのアプリ フィールド名のコンフィギュレーション
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックでは、Finance and Operations の倉庫アプリ フィールド名と優先順位の定義およびコンフィギュレーション方法について説明します。 
 

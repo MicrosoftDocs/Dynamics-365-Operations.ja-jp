@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-a-parallel-branch-in-a-workflow"></a>ワークフロー内の並列分岐コンフィギュレーション
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 並列分岐をコンフィギュレーションするには、ワークフロー エディターで次の手順を実行します。
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-new-jobs"></a>新しいジョブの定義
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 このタスクは、新しいジョブの作成を中心に説明します。 これは、手動入力とテンプレート機能からのコピーにより行います。 このタスクの作成に使用するデモ データの会社は USMF です。 このタスクは、人事管理の専門家を対象としています。
 

@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="budget-planning-templates-for-excel"></a>Excel 用予算計画テンプレート
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックでは、予算計画で使用できる Microsoft Excel テンプレートを作成する方法について説明します。
 
@@ -42,11 +41,11 @@ ms.lasthandoff: 03/26/2018
 1. \[予算計画の一覧\] ([予算作成] &gt; [予算計画]) を開きます。 
 2. [新規] をクリックして、新しい予算計画ドキュメントを作成します。 
 
-  [![予算計画の一覧](./media/bpt11-1024x552.png)](./media/bpt11.png) 
+   [![予算計画の一覧](./media/bpt11-1024x552.png)](./media/bpt11.png) 
 
 3. [追加] の行オプションを使用して、行を追加します。 [レイアウト] をクリックして、予算計画ドキュメントのレイアウト コンフィギュレーションを表示します。 
 
-  [![予算計画の追加](./media/bpt2-1024x274.png)](./media/bpt2.png) 
+   [![予算計画の追加](./media/bpt2-1024x274.png)](./media/bpt2.png) 
 
 レイアウト コンフィギュレーションを確認し、必要に応じて調整できます。 
 1. [テンプレート] &gt; [生成] の順に移動して、このレイアウトの Excel ファイルを作成します。 

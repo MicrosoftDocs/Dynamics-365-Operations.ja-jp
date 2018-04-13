@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="settle-a-partial-customer-payment-and-the-final-payment-in-full-before-the-discount-date"></a>一部の顧客支払の決済、および割引日より前の全額最終支払
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事は、顧客の一部支払を記録し、現金割引期間内に現金割引を使用する方法を示すシナリオを提供します。
 

@@ -28,8 +28,7 @@ ms.lasthandoff: 12/14/2017
 
 # <a name="vendor-invoices-overview"></a>仕入先請求書の概要
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事は、仕入先請求書に関する一般情報を示します。 仕入先請求書は、受領した製品とサービスに対する支払請求です。 仕入先請求書は、進行中のサービスの請求書を表すことができます。または特定の品目およびサービスの発注書に基づくことができます。 
 
@@ -87,11 +86,11 @@ ms.lasthandoff: 12/14/2017
  - [仕入先請求ポリシーの設定](../accounts-receivable/tasks/set-up-vendor-invoice-policies.md) 
 
  - [仕入先請求書を使用した買掛金勘定への請求書データの入力](tasks/key-invoice-data-ap-system-vendor-invoice.md)
- 
+
  - [承認仕訳帳を使用した買掛金勘定への請求書データの入力](tasks/key-invoice-data-into-ap-system-approval-journal.md)
-  
+
  - [請求管理グループを使用した AP システムへの請求書データの入力](tasks/key-invoice-data-into-ap-system-invoice-pool.md)
- 
+
  - [請求仕訳帳の仕入先請求書の記録](tasks/record-vendor-invoice-invoice-journal.md)
 
 

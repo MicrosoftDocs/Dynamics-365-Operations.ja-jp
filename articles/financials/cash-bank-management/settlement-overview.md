@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="settlement-overview"></a>決済の概要
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事は、決済プロセスに関する一般情報を提供します。 決済できるトランザクションのタイプ、トランザクションの決済時期と決済方法、および決済プロセスの結果について説明します。
 

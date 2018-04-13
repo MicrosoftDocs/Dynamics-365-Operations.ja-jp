@@ -29,8 +29,7 @@ ms.lasthandoff: 02/13/2018
 
 # <a name="master-planning-home-page"></a>マスター プランのホーム ページ
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 その中心に、マスター プランにより、会社が原材料および会社の目標を満たす能力に対する将来の必要性を特定し調整することができます。 マスター プランを以下の点を評価します。 
 
@@ -58,6 +57,7 @@ ms.lasthandoff: 02/13/2018
 [![マスター プランの学習マップ](./media/master-planning-learning-map.png)](./media/master-planning-learning-map.png)
 
 ## <a name="quick-links"></a>クイック リンク
+
 |      |   |
 |------|---|
 |        [マスター プラン](master-plans.md)       |     [制約付き計画の生成](./tasks/constrained-plan.md)  |

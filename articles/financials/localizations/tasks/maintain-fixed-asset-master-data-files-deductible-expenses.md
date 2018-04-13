@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="maintain-fixed-asset-master-data-files-for-deductible-expenses-japan"></a>損金の固定資産マスター データ ファイルの保守 (日本)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 このタスクでは、損金の固定資産マスター データの保守を行います。
 

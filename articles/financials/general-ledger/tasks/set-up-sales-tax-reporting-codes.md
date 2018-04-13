@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-sales-tax-reporting-codes"></a>消費税レポート コードを設定します
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 売上税レポート コードは、売上税レポートのフィールド番号です。 これらは国固有のレポートのレイアウトやコード別売上税支払レポートで使用され、決済期間の売上税金額をレポート コードごとに集計して印刷します。 作成した売上税レポート コードは、[売上税コード] ページの [レポートの設定] クイック タブで参照できます。 
 

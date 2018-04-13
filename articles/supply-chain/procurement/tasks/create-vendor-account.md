@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-vendor-account"></a>仕入先勘定の作成
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、仕入先勘定の作成方法と住所および連絡先情報の追加方法を示します。 この手順では、購買目的および財務目的のためのすべてのフィールドを設定する方法は表示されません。 これらのフィールドについての詳細は、フィールドの説明を参照してください。 デモ データの会社 USMF のこの手順を使うか、または独自のデータを使うことができます。 通常、仕入先勘定は、調達担当者または売掛金勘定担当者によって作成されます。
 

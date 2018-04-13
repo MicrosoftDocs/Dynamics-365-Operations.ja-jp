@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="configure-intercompany-project-invoicing"></a>会社間プロジェクト請求のコンフィギュレーション
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、組織内の 2 つの会社間のプロジェクト請求の設定方法を示します。 このタスクでは、USSI データ セットを使用します。
 

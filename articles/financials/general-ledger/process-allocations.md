@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="process-allocations"></a>配賦の処理
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事では、配賦を Microsoft Dynamics 365 for Finance and Operations で処理するオプション、および予算の計画で使用する方法に関する情報を提供します。 配賦は、複数の勘定科目の組み合わせ全体で金額を配分するのに使用されます。 経費、または収益が正しい会計のオブジェクトに付けられることを保証します。
 

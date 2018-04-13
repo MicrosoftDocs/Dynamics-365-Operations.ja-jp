@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-hierarchy-of-product-classification"></a>製品分類の階層の作成
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、新しいカテゴリ階層を作成し、商品コード階層タイプを割り当てる方法を示します。 この手順の作成に使用するデモ データの会社は USMF です。 この手順は、カテゴリ マネージャーを対象としています。
 

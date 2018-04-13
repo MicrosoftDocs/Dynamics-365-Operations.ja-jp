@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="create-fixed-compensation-plans"></a>固定報酬計画の作成
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 固定報酬は、従業員の通常の全体の給与や賃金を示します。 このトピックは、固定報酬プランを作成し、従業員を登録する前に設定する必要があるコンポーネントを説明します。
 

@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="bom-calculations"></a>BOM の計算
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 原価ロールアップおよび販売価格計算は部品表 (BOM) 計算と呼ばれ、計算ページから開始します。 このトピックでは、BOM 計算について説明します。
 

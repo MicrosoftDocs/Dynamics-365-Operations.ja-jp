@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="determine-the-optimal-combination-of-overlapping-discounts"></a>重複割引の最適な組み合わせを決定する
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 割引が重複している場合は、最小トランザクションの合計または最上位の割引合計の重複割引の組み合わせを決定する必要があります。 一般的な「Buy 1、get X ％off」(BOGO) 小売割引のように、購入される製品の価格に応じて割引額が異なる場合、このプロセスは組合せ最適化の問題になります。
 

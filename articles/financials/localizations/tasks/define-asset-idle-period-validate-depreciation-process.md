@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-asset-idle-period-and-validate-depreciation-process-japan"></a>資産のアイドル期間の定義および減価償却プロセスの検証 (日本)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 このタスクでは、固定資産のアイドル期間の定義について説明します。 
 
