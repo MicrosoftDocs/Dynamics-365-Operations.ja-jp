@@ -16,15 +16,15 @@ ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 18ad27eb673745d09569f6a49c8bc66132550f35
-ms.openlocfilehash: 8bce8cabe3570cf9e32419e478204e9b59a0cc78
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 42b474302f5a930c3f7969317ba68cb3f22acd91
 ms.contentlocale: ja-jp
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-and-assign-advanced-rule-structures"></a><span data-ttu-id="555d6-103">詳細ルール構造の作成と割り当て</span><span class="sxs-lookup"><span data-stu-id="555d6-103">Create and assign advanced rule structures</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="555d6-104">このタスク ガイドでは、詳細ルール構造の作成と勘定構造への割り当てについて説明します。</span><span class="sxs-lookup"><span data-stu-id="555d6-104">This task guide steps through creating and assigning an advanced rule structure to an account structure.</span></span> <span data-ttu-id="555d6-105">このガイドでは、USMF デモ会社を使用します。</span><span class="sxs-lookup"><span data-stu-id="555d6-105">This guide uses the USMF demo company.</span></span>
 

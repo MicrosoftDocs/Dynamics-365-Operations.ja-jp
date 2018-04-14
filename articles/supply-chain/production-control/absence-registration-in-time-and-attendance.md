@@ -18,16 +18,16 @@ ms.author: johanho
 ms.search.validFrom: 2017-09-20
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 3c43a42822f291607fbc9708dd07ebf99b9d7ec4
-ms.openlocfilehash: c515351a24bc86387cd504e55cfc34bb2272553c
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 7ccac401b7364006e8ffc229a616bca8e48bf096
 ms.contentlocale: ja-jp
-ms.lasthandoff: 01/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="absence-registration-in-time-and-attendance"></a><span data-ttu-id="219f8-103">勤務時間外の登録</span><span class="sxs-lookup"><span data-stu-id="219f8-103">Absence registration in Time and attendance</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="219f8-104">このトピックでは、休暇の概念を説明し、勤務時間外登録を処理する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="219f8-104">This topic describes the concepts for absence and explains how to handle absence in Time and attendance.</span></span>
 

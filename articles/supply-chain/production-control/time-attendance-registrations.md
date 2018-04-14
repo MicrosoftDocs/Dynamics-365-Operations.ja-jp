@@ -20,17 +20,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 29040d0c96183898672bc405364ec59707bff53a
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a83a3325c80eb6fc1a19371a6115413ca9b82185
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="time-and-attendance-registration"></a><span data-ttu-id="7df03-104">時刻と出勤の登録</span><span class="sxs-lookup"><span data-stu-id="7df03-104">Time and attendance registration</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="7df03-105">時間登録作業者は、さまざまなタイプの時間登録を入力できます (出勤、退勤、間接活動の登録、および休暇登録時など)。</span><span class="sxs-lookup"><span data-stu-id="7df03-105">Time registration workers can enter different types of time registrations, for example, clock in, clock out, register indirect activities, and absence registration.</span></span> <span data-ttu-id="7df03-106">このトピックは、登録とその計算、承認、およびタイムシートの承認プロセスに構造と自動承認を追加するためのワークフローの使用について説明します。</span><span class="sxs-lookup"><span data-stu-id="7df03-106">This topic describes registrations, their calculation, approval, and the use of workflow to add structure and automated approval to the process of approving timesheets.</span></span> 
 
@@ -95,7 +94,7 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="7df03-168">時刻と出勤の合計日数</span><span class="sxs-lookup"><span data-stu-id="7df03-168">Time and attendance days total</span></span>            | <span data-ttu-id="7df03-169">このワークフローは、たとえば、1 日の期待作業時間数に対して登録を検証します。</span><span class="sxs-lookup"><span data-stu-id="7df03-169">The workflow validates registrations against, for example, the expected number of work hours for the day.</span></span> |                                                                                                                                                                                                                                                       |
 | <span data-ttu-id="7df03-170">時刻と出勤の仕訳帳登録。</span><span class="sxs-lookup"><span data-stu-id="7df03-170">Time and attendance journal registration.</span></span> | <span data-ttu-id="7df03-171">このワークフローは、登録日の各登録タイプを検証します。</span><span class="sxs-lookup"><span data-stu-id="7df03-171">The workflow validates each registration type for the date of the registration.</span></span>                           | <span data-ttu-id="7df03-172">時刻と出勤 • 出勤 • 退勤 • 休暇 • 休憩 • 切り替えコード • プロジェクト • プロジェクト活動 • 間接活動 生産ジョブ • 作業前待ち時間 • 段取り • プロセス • 重複 • 移動 • 作業後待ち時間 • アシスタント開始 • アシスタント停止</span><span class="sxs-lookup"><span data-stu-id="7df03-172">Time and attendance • Clock-in • Clock-out • Absence • Break • Switch code • Project • Project activity • Indirect activity Production jobs • Queue before • Setup • Process • Overlap • Transport • Queue after • Start assistance • Stop assistance</span></span> |
 
- 
+
 
 ## <a name="transferring-approved-registrations"></a><span data-ttu-id="7df03-173">承認された登録の転送</span><span class="sxs-lookup"><span data-stu-id="7df03-173">Transferring approved registrations</span></span>
 <span data-ttu-id="7df03-174">登録の承認後に、定期的な給与ジョブに転送できます。</span><span class="sxs-lookup"><span data-stu-id="7df03-174">After approval of the registrations you can transfer them to a periodic payroll job.</span></span> <span data-ttu-id="7df03-175">移動された登録は、たとえば、製造オーダーやプロジェクトなどに関連する活動またはジョブに転記されます。</span><span class="sxs-lookup"><span data-stu-id="7df03-175">A transferred registration is posted to an activity or job that it relates to, for example, a production order or a project.</span></span> <span data-ttu-id="7df03-176">給与トランザクションは、登録に基づいて作業者ごとに生成されます。</span><span class="sxs-lookup"><span data-stu-id="7df03-176">Payroll transactions are generated for each worker based on the registrations.</span></span>  

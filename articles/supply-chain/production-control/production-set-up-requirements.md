@@ -20,17 +20,16 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 47fe11168ad2ddea2a7033eda8d8bd8220efea32
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: bcca20889fa0b79a289175ab901167509a908f3f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="production-setup-requirements"></a><span data-ttu-id="08c5d-103">生産の設定の要件</span><span class="sxs-lookup"><span data-stu-id="08c5d-103">Production setup requirements</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="08c5d-104">この記事は、生産管理を使用して作業できるようにするための、設定の要件に関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="08c5d-104">This article provides information about setup requirements before you can work with Production control.</span></span> 
 

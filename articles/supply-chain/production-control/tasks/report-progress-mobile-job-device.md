@@ -17,15 +17,15 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 8a0432b5ff01bf88b9c18de0cac0661618c654ba
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 3553eda3aa893cc27cd535a5f8061a31fcbbe5e9
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="report-progress-on-a-mobile-job-device"></a><span data-ttu-id="34995-103">モバイル ジョブ デバイスでの進捗のレポート</span><span class="sxs-lookup"><span data-stu-id="34995-103">Report progress on a mobile job device</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="34995-104">この手順では、ジョブ デバイスの登録フォームで生産ジョブの進行を開始してレポートする方法を示します。</span><span class="sxs-lookup"><span data-stu-id="34995-104">This procedure shows you how to start and report progress on a production job in the job device registration form.</span></span>
 

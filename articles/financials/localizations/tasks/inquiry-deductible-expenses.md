@@ -16,15 +16,15 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 1c1ede9faf282ee13120ca7b6bd4c07d024ddf1b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: b31cbab1dc39821f7b63b5b48474ab5b7ae3ff53
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="inquire-on-deductible-expenses-japan"></a><span data-ttu-id="b582a-103">損金の照会 (日本)</span><span class="sxs-lookup"><span data-stu-id="b582a-103">Inquire on deductible expenses (Japan)</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="b582a-104">このタスクでは、損金のクエリを実行する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="b582a-104">This task walks you through running a query on deductible expenses.</span></span>
 

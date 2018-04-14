@@ -16,15 +16,15 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 1eb6e6121d39f9fc089afe38354b96eb88e5501d
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: d0d7fbc5f9b928a43870899836ead4f8adbc1a56
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="identify-and-deploy-candidate-selection-tools"></a><span data-ttu-id="ed5d4-103">候補者採用手段の確認と配置</span><span class="sxs-lookup"><span data-stu-id="ed5d4-103">Identify and deploy candidate selection tools</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="ed5d4-104">空席を充填する見込みのある候補者のプールを探すことは難しい場合があり、特に複数の固有のスキルが職位に求められる場合に困難です。</span><span class="sxs-lookup"><span data-stu-id="ed5d4-104">Finding a qualified pool of candidates to fill vacancies can be difficult, especially when a position requires a unique set of skills.</span></span>  <span data-ttu-id="ed5d4-105">しかし、必要なスキルを持つ候補者が、その組織にすでに雇用されている場合があります。</span><span class="sxs-lookup"><span data-stu-id="ed5d4-105">However, candidates with the skills you need might already be employed in your organization.</span></span> <span data-ttu-id="ed5d4-106">既存の従業員または新しい応募者の中から、特定のスキル セットを検索することができます。</span><span class="sxs-lookup"><span data-stu-id="ed5d4-106">You can search for a specific skill set among existing employees, or new applicants.</span></span> <span data-ttu-id="ed5d4-107">これにより、リクルーターは、募集中の職位への最近または過去の応募者を素早く一覧し、絞り込むことができます。また、既存の従業員の中から潜在的な候補を探すことができます。</span><span class="sxs-lookup"><span data-stu-id="ed5d4-107">This allows a recruiter to quickly gather and screen applicants who have applied for open position now or in the past, or to find potential candidates from their existing pool of employees.</span></span> <span data-ttu-id="ed5d4-108">このタスク記録を使用すると、募集中の職位に対して適切な従業員を検索するために、スキル マッピングの機能がどのように役立つか確認できます。</span><span class="sxs-lookup"><span data-stu-id="ed5d4-108">Use this task recording to learn how the skill mapping functionality can help you find the right person for an open position.</span></span> <span data-ttu-id="ed5d4-109">この手順の作成に使用するデモ データの会社は USMF です。</span><span class="sxs-lookup"><span data-stu-id="ed5d4-109">The demo data company used to create this procedure is USMF.</span></span>
 

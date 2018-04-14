@@ -16,15 +16,15 @@ ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 5535f1627526b97ddc9ca2c210db4e332782d656
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: d21f9047dcea0af59c24339ebb57e8eabe3950d4
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="register-sales-commissions"></a><span data-ttu-id="ac439-103">販売コミッションの登録</span><span class="sxs-lookup"><span data-stu-id="ac439-103">Register sales commissions</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="ac439-104">この手順は、販売コミッションを計算および登録する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="ac439-104">This procedure shows you how sales commissions are calculated and registered.</span></span> <span data-ttu-id="ac439-105">この手順は、デモ データの会社 USMF で、または独自のデータで実行できます。</span><span class="sxs-lookup"><span data-stu-id="ac439-105">You can run this procedure in demo data company USMF or on your own data.</span></span> <span data-ttu-id="ac439-106">このガイドを開始する前に、必要なすべてのコミッション計算の設定ができていることを確認するために、「販売コミッション ルールの設定」と呼ばれるガイドを実行します。</span><span class="sxs-lookup"><span data-stu-id="ac439-106">Before starting this guide, run the guide called "Set up sales commission rules" to make sure that you have all the necessary commission calculation setup.</span></span>
 

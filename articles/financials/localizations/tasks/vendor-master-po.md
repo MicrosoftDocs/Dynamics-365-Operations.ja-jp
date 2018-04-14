@@ -16,15 +16,15 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: d0ebd974cf9527a8504700dfb7e0aa9360069c2f
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 96c10d7b9a9ba13c0b80e2f20c18f09b8f145382
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="set-up-vendor-master-and-purchase-order-to-be-target-of-consolidated-invoice-japan"></a><span data-ttu-id="4b290-103">月次締め請求書の対象とする仕入先マスターおよび発注書の設定 (日本)</span><span class="sxs-lookup"><span data-stu-id="4b290-103">Set up vendor master and purchase order to be target of consolidated invoice (Japan)</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="4b290-104">日本では通常、仕入先はトランザクションに月次締め請求書を使用します。</span><span class="sxs-lookup"><span data-stu-id="4b290-104">In Japan, the vendors usually use consolidated invoice for transactions.</span></span> 
 

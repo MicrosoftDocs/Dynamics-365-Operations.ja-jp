@@ -20,17 +20,16 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 87dfdf7085e185b3e0467088118838eb832546d7
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: e10bd1453aef817e501fab326eb62c58a37e9825
 ms.contentlocale: ja-jp
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="product-related-translations-faq"></a><span data-ttu-id="88edb-103">製品関連の翻訳のよく寄せられる質問</span><span class="sxs-lookup"><span data-stu-id="88edb-103">Product-related translations FAQ</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="88edb-104">このトピックでは、製品の翻訳、製品分析コードの値、および製品属性を管理する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="88edb-104">This topic describes how to manage translations for products, product dimension values, and product attributes.</span></span> 
 
@@ -95,8 +94,7 @@ ms.lasthandoff: 02/07/2018
 <tbody>
 <tr class="odd">
 <td><span data-ttu-id="88edb-150">顧客が希望する言語を設定するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="88edb-150">To set the preferred language of a customer, follow these steps:</span></span>
-<ol>  
-<li><span data-ttu-id="88edb-151"><strong>販売およびマーケティング</strong> &gt; <strong>共通</strong> &gt; <strong>顧客</strong> &gt; <strong>すべての</strong> <strong>顧客</strong> をクリックします。</span><span class="sxs-lookup"><span data-stu-id="88edb-151">Click <strong>Sales and marketing</strong> &gt; <strong>Common</strong> &gt; <strong>Customers</strong> &gt; <strong>All</strong> <strong>customers</strong>.</span></span></li>
+<ol><br/><li><span data-ttu-id="88edb-151"><strong>販売およびマーケティング</strong> &gt; <strong>共通</strong> &gt; <strong>顧客</strong> &gt; <strong>すべての</strong> <strong>顧客</strong> をクリックします。</span><span class="sxs-lookup"><span data-stu-id="88edb-151">Click <strong>Sales and marketing</strong> &gt; <strong>Common</strong> &gt; <strong>Customers</strong> &gt; <strong>All</strong> <strong>customers</strong>.</span></span></li>
 <li><span data-ttu-id="88edb-152">顧客をダブルクリックして、[<strong>顧客</strong>] ページを開きます。</span><span class="sxs-lookup"><span data-stu-id="88edb-152">Double-click a customer to open the <strong>Customers</strong> page.</span></span> <span data-ttu-id="88edb-153">[<strong>一般</strong>] タブの [<strong>言語</strong>] フィールドで、[<strong>言語</strong>] を選択します。</span><span class="sxs-lookup"><span data-stu-id="88edb-153">On the <strong>General</strong> tab, in the <strong>Language</strong> field, select the <strong>language</strong>.</span></span></li>
 </ol></td>
 </tr>

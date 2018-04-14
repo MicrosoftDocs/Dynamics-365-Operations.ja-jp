@@ -20,17 +20,16 @@ ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: d9b080ff46a0fbc73ed4f8fa3f03d71e9d758cc2
-ms.openlocfilehash: 181fd70b9090937dde21b6a2cfba8c1e45a848b2
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 56e1e368484156e2e0720ad10026c8fd509c0b91
 ms.contentlocale: ja-jp
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="set-up-assortments"></a><span data-ttu-id="5ae9a-103">品揃えの設定</span><span class="sxs-lookup"><span data-stu-id="5ae9a-103">Set up assortments</span></span>
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 <span data-ttu-id="5ae9a-104">この記事は、品揃えとは何か、および Microsoft Dynamics 365 for Retail での品揃えの設定方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="5ae9a-104">This article describes what an assortment is and explains how to set up assortments in Microsoft Dynamics 365 for Retail.</span></span>
 

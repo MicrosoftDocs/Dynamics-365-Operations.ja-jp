@@ -16,15 +16,15 @@ ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 791ec304b9ea7c49fbea506d73c4daffd4478739
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a6eb7fd5a44d5e4fb81f5939d820e429ff131246
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="process-rebates-for-payment"></a><span data-ttu-id="8e04c-103">支払のリベートの処理</span><span class="sxs-lookup"><span data-stu-id="8e04c-103">Process rebates for payment</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="8e04c-104">この手順は、承認済および処理済の顧客リベートを貸方票に変換する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="8e04c-104">This procedure demonstrates how to convert approved and processed customer rebates to credit notes.</span></span> <span data-ttu-id="8e04c-105">USMF デモ データ会社でこのガイドを使用できます。</span><span class="sxs-lookup"><span data-stu-id="8e04c-105">You can use this guide in the USMF demo company.</span></span> <span data-ttu-id="8e04c-106">このガイドの前提条件は、[マーク] の状態のリベート要求が 1 つ以上あることです。</span><span class="sxs-lookup"><span data-stu-id="8e04c-106">The precondition for this guide is to have one or more rebate claims which have a status of Mark.</span></span> <span data-ttu-id="8e04c-107">USMF を使用している場合は、このガイドを開始する前に、「顧客リベートの生成と処理」ガイドを実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="8e04c-107">If you’re using USMF you should run the "Generate and process customer rebates" guide before you start this guide.</span></span>
 

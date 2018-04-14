@@ -20,17 +20,16 @@ ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 56eeb2b56261dc3e576192c0ede405996d82b2b7
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 485d6aa5e17b15f6db4d30be014811ce9f7292a1
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="operations-scheduling-options"></a><span data-ttu-id="e5a08-104">工程のスケジューリング オプション</span><span class="sxs-lookup"><span data-stu-id="e5a08-104">Operations scheduling options</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="e5a08-105">このトピックでは、工程スケジューリングのオプションについて説明します。</span><span class="sxs-lookup"><span data-stu-id="e5a08-105">This topic describes the options for operations scheduling.</span></span> <span data-ttu-id="e5a08-106">この工程スケジューリングは、時間経過による生産プロセスの概算を提供する場合に使用します。</span><span class="sxs-lookup"><span data-stu-id="e5a08-106">You can use operations scheduling to provide a general estimate of the production process over time.</span></span>
 

@@ -19,17 +19,16 @@ ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ba426692e2e404ab75e5730b8205115fc59e402f
-ms.openlocfilehash: 91881ca3999b4937d20161b8beab8e80c2675eb6
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 7c738d888b7177a26b28438c820ce18312947318
 ms.contentlocale: ja-jp
-ms.lasthandoff: 02/08/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="procurement-and-sourcing-overview"></a><span data-ttu-id="a259b-103">調達の概要</span><span class="sxs-lookup"><span data-stu-id="a259b-103">Procurement and sourcing overview</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="a259b-104">この記事は、調達モジュールで使用できる機能の概要を示します。</span><span class="sxs-lookup"><span data-stu-id="a259b-104">This article gives an overview of the functionality that's available in the Procurement and sourcing module.</span></span>
 
@@ -39,7 +38,7 @@ ms.lasthandoff: 02/08/2018
 <span data-ttu-id="a259b-108">たとえば、従業員が製品を要求するときなど、製品またはサービスの必要性が*要求*より発生する場合があります。</span><span class="sxs-lookup"><span data-stu-id="a259b-108">The need for products or services may arise from *requisitions*, for example, when an employee requires a product.</span></span> <span data-ttu-id="a259b-109">*製品カタログ*で入手可能な製品の選択のガイドを設定します、あるいはカタログでまだ入手可能でない製品を要求し、購買部門が製品をどのように供給できるか検討できるようにします。</span><span class="sxs-lookup"><span data-stu-id="a259b-109">*Product catalogs* can be set up to guide the selection of available products to select from, or requests can be made for products that are not yet made available in a catalog, allowing the purchasing department to consider how the product can be supplied.</span></span>  
 
 <span data-ttu-id="a259b-110">*支出制限*は支出要求の制限に使用でき、*購買ワークフロー*は注文前に承認要求のオプションを追加します。</span><span class="sxs-lookup"><span data-stu-id="a259b-110">*Spending limits* can be used to constrain requisition spending, and the *purchasing workflow* adds the option of requiring approval before ordering happen.</span></span> <span data-ttu-id="a259b-111">必要に応じて、予算財源の配賦を指定することもできます。</span><span class="sxs-lookup"><span data-stu-id="a259b-111">It's also possible to specify budget fund allocation, if required.</span></span>  
-  
+
 <span data-ttu-id="a259b-112">調達部門は、必要な製品とサービスの仕入先を識別し、複数の潜在的な仕入先に送付される*見積依頼*を含めることができます。</span><span class="sxs-lookup"><span data-stu-id="a259b-112">The procurement department identifies suppliers for required products and services, and this can involve a *request for quotation* being sent out to multiple potential suppliers.</span></span> <span data-ttu-id="a259b-113">要求される製品の詳細を共有することは可能で、潜在的な仕入先はこれらを表示し、適合する製品を提供するかどうかを確認することができます。</span><span class="sxs-lookup"><span data-stu-id="a259b-113">It's possible to share the specifications of the product that's being requested and potential vendors can view these to see if they can deliver a product that conforms with them.</span></span> <span data-ttu-id="a259b-114">仕入先が調達する仕入先を選択する前に、仕入先は調達部門で確認された入札を返します。</span><span class="sxs-lookup"><span data-stu-id="a259b-114">Vendors return their bids which are then reviewed by the procurement department before they select the supplier that they want to procure from.</span></span>  
 
 <span data-ttu-id="a259b-115">発注書は、より包括的な見積依頼プロセスの代替として仕入先に送信する*購買照会*オプションを含みます。</span><span class="sxs-lookup"><span data-stu-id="a259b-115">Purchase orders include an option to send out a *purchase inquiry* to the vendor as an alternative to a more comprehensive request for quotation process.</span></span> <span data-ttu-id="a259b-116">注文の価格、割引、出荷日などの条件の設定を支援する場合にも、購買照会を使用できます。</span><span class="sxs-lookup"><span data-stu-id="a259b-116">The purchase inquiry can be used to help establish terms like prices, discounts, and delivery date for the order.</span></span> <span data-ttu-id="a259b-117">仕入先が **仕入先** ポータルを使用するように設定する場合、購買照会機能は無効になります。</span><span class="sxs-lookup"><span data-stu-id="a259b-117">If vendors are set up to use the **Vendor** portal, purchase inquiry functionality is disabled.</span></span> <span data-ttu-id="a259b-118">代わりに、順序は**仕入先**ポータルで共有され、*確認要求*が送信されると、仕入先は直接注文を確認できます。</span><span class="sxs-lookup"><span data-stu-id="a259b-118">Instead the order is shared on the **Vendor** portal, and when a *confirmation request* is sent the vendor can directly confirm the order.</span></span>  

@@ -19,17 +19,16 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 0ad57b076542c38d3c29dba4caacf830de6f7200
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: d0eceb90806b3d4cbe953ce496142ab1ab5ae43f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="round-off-amount-for-depreciation-calculations"></a><span data-ttu-id="1570f-103">減価償却計算の丸め金額</span><span class="sxs-lookup"><span data-stu-id="1570f-103">Round-off amount for depreciation calculations</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="1570f-104">この記事は、帳簿設定ページの [減価償却の丸め] フィールドについて説明します。</span><span class="sxs-lookup"><span data-stu-id="1570f-104">This article discusses the Round-off depreciation field that is found on the Book setup pages.</span></span>
 

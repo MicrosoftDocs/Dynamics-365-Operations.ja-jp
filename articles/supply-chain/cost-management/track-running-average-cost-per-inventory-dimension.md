@@ -20,19 +20,18 @@ ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: bb2a3a193585944810c5dfac1eb3c019e074008f
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 594fc72c40c2ab52b04f4a9152c377c572d43bd7
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="tracking-running-average-cost-per-inventory-dimension"></a><span data-ttu-id="5a2f6-104">在庫分析コード当たりの移動平均原価の追跡</span><span class="sxs-lookup"><span data-stu-id="5a2f6-104">Tracking running average cost per inventory dimension</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
-
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 <span data-ttu-id="5a2f6-105">在庫分析コード グループは各在庫品目に割り当てられています。</span><span class="sxs-lookup"><span data-stu-id="5a2f6-105">An inventory dimension group is attached to every inventory item.</span></span> <span data-ttu-id="5a2f6-106">したがって、品目の移動平均原価価格は、財務的に追跡されている在庫分析コードの選択に基づいて計算されます。</span><span class="sxs-lookup"><span data-stu-id="5a2f6-106">Therefore, the running average cost price of an item is calculated based on the selected inventory dimensions that are being tracked financially.</span></span>
 

@@ -17,16 +17,16 @@ ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 3c43a42822f291607fbc9708dd07ebf99b9d7ec4
-ms.openlocfilehash: 0250706fea6d6dfa7b59729162c2afad9ca11a46
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: e57389ac2882b011bf4ae98334db18a8f35846e2
 ms.contentlocale: ja-jp
-ms.lasthandoff: 01/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="credit-limits-for-customers"></a><span data-ttu-id="9b950-103">顧客の与信限度額</span><span class="sxs-lookup"><span data-stu-id="9b950-103">Credit limits for customers</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="9b950-104">与信限度額を設定すると、顧客に対して拡張する貸方転記の最大量を指定できます。</span><span class="sxs-lookup"><span data-stu-id="9b950-104">Setting a credit limit lets you specify the maximum amount of credit to extend to your customers.</span></span> <span data-ttu-id="9b950-105">与信限度額が指定されている場合、ユーザーがドキュメントの更新を試みると自動的に確認されます。</span><span class="sxs-lookup"><span data-stu-id="9b950-105">If a credit limit is specified, it is checked automatically when a user attempts to update a document.</span></span> <span data-ttu-id="9b950-106">与信限度額を超えた場合、メッセージがユーザーに表示されます。</span><span class="sxs-lookup"><span data-stu-id="9b950-106">If the credit limit is exceeded, a message is displayed to the user.</span></span> <span data-ttu-id="9b950-107">この記事では、与信限度額の機能の仕方を概観し、以下の質問に答えます。</span><span class="sxs-lookup"><span data-stu-id="9b950-107">This article provides an overview of how credit limits work  and answers the following questions:</span></span>
 

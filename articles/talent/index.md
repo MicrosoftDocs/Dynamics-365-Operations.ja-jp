@@ -18,16 +18,16 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: db8b2e87ad020dac16ec74f2fea62e445c38e116
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: b0694d74eb5502ac7f1632b4015f78b2341a77e1
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="welcome-to-microsoft-dynamics-365-for-talent"></a><span data-ttu-id="f82a5-104">Microsoft Dynamics 365 for Talent へようこそ</span><span class="sxs-lookup"><span data-stu-id="f82a5-104">Welcome to Microsoft Dynamics 365 for Talent</span></span>
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 <span data-ttu-id="f82a5-105">Microsoft Dynamics 365 for Talent は、多くの日常的な記録タスクを合理化し、組織の多数のスタッフ配置に関連するプロセスを自動化します。</span><span class="sxs-lookup"><span data-stu-id="f82a5-105">Microsoft Dynamics 365 for Talent streamlines many routine recordkeeping tasks and automates a number of processes related to staffing your organization.</span></span> <span data-ttu-id="f82a5-106">これらのプロセスには、従業員の雇用維持、給付金管理、トレーニング、勤務評価、変更管理が含まれます。</span><span class="sxs-lookup"><span data-stu-id="f82a5-106">These processes include employee retention, benefits administration, training, performance reviews, and change management.</span></span> <span data-ttu-id="f82a5-107">また、人事スタッフが監督すべき領域を管理するためのフレームワークも提供します。</span><span class="sxs-lookup"><span data-stu-id="f82a5-107">It also provides a framework for human resources staff to manage areas of oversight.</span></span>
 

@@ -17,15 +17,15 @@ ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: d7ad19f2bba3cf0f0254d9eb4ee0ae6b1c5eac2e
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 066db26cd2eed41746bae70adb3b6ff6c43a4394
 ms.contentlocale: ja-jp
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-and-maintain-inventory-blocking"></a><span data-ttu-id="a877b-103">在庫ブロックの作成および管理</span><span class="sxs-lookup"><span data-stu-id="a877b-103">Create and maintain inventory blocking</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="a877b-104">この手順では、在庫ブロックを使用することによって、現物手持在庫が他の元伝票に引当されないようにする方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="a877b-104">This procedure shows how to prevent physical on-hand inventory from being reserved by other outbound source documents by using the inventory blocking.</span></span> <span data-ttu-id="a877b-105">表示されているサンプル値を使用して、デモ データの会社 USMF の手順を実行できます。</span><span class="sxs-lookup"><span data-stu-id="a877b-105">You can run the procedure in demo data company USMF using the example values that are shown.</span></span> <span data-ttu-id="a877b-106">この手順を開始する前に、使用可能な現物手持在庫の品目を設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a877b-106">You need to have an item with physical on-hand inventory available before you start this procedure.</span></span>
 

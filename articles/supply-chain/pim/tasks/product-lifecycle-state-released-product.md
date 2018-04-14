@@ -16,15 +16,15 @@ ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 74606b1378e94e8a6945a408520c8b68648970d8
-ms.openlocfilehash: e082092ec959658c9509578d95fd32ca3e5e9bd9
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: d6d3bc10b3fbde9cc3410d6fa3afd8c6d9cc2266
 ms.contentlocale: ja-jp
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="assign-a-product-lifecycle-state-to-a-released-product"></a><span data-ttu-id="3c0b1-103">製品ライフサイクルの状態をリリース済製品に割り当て</span><span class="sxs-lookup"><span data-stu-id="3c0b1-103">Assign a product lifecycle state to a released product</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="3c0b1-104">ここでは、リリース済製品の製品ライフサイクルの状態を割り当てる手順を説明します。</span><span class="sxs-lookup"><span data-stu-id="3c0b1-104">This procedure shows how to assign a product lifecycle state to a released product.</span></span> <span data-ttu-id="3c0b1-105">前提条件: このガイドを再生する前に、タスク ガイド「新しい製品のライフサイクルの状態の作成」を実行し、少なくとも、1 つの製品のライフサイクルの状態が作成されていることを確認する必要があります。</span><span class="sxs-lookup"><span data-stu-id="3c0b1-105">Prerequisite: You need to play the task guide "Create a new product lifecycle state" first to make sure that at least one product lifecycle state is created before you can play this guide.</span></span>
 

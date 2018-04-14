@@ -16,15 +16,15 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 775428bf84a752c03c492e764fa9ed576ab64fb8
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 65471905c033aa7bbfd642a6c4ea584e9c8346d5
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-a-schedule-for-a-site"></a><span data-ttu-id="a3c54-103">サイトのスケジュールの作成</span><span class="sxs-lookup"><span data-stu-id="a3c54-103">Create a schedule for a site</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="a3c54-104">この手順は、サイトでまだ開始されていない製造オーダーをスケジュールする方法を示します。</span><span class="sxs-lookup"><span data-stu-id="a3c54-104">This procedure shows how to schedule production orders that are not yet started for a site.</span></span>  <span data-ttu-id="a3c54-105">この手順を完了するのにデモ データの会社 USMF が使用されています。</span><span class="sxs-lookup"><span data-stu-id="a3c54-105">The demo data company USMF is used to complete this procedure.</span></span>
 

@@ -20,16 +20,16 @@ ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: cab2f165a70e5ce8f09f0391282e055e51afb225
-ms.openlocfilehash: b1513e5a7cb3a19fd3743a5aac8efd211aa02ce8
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 25115084af1366770741063a9f839bc0ddd9147d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="cost-management-home-page"></a><span data-ttu-id="6f4eb-103">原価管理ホーム ページ</span><span class="sxs-lookup"><span data-stu-id="6f4eb-103">Cost management home page</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="6f4eb-104">[原価管理 (ビデオ)](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be) では、原材料、半完成品、完成品、および進行中の作業資産の評価および会計処理が使用できます。</span><span class="sxs-lookup"><span data-stu-id="6f4eb-104">[Cost management (video)](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be) lets you work with the valuation and accounting of raw materials, semi-finished goods, finished goods, and work-in-progress assets.</span></span> <span data-ttu-id="6f4eb-105">これは定義、管理、および [在庫会計](cost-object.md) と [製造の会計](bom-calculations.md)のレポートのプロセスです。</span><span class="sxs-lookup"><span data-stu-id="6f4eb-105">It is the process of defining, managing, and reporting [Inventory accounting](cost-object.md) and [Manufacturing accounting](bom-calculations.md).</span></span>
 

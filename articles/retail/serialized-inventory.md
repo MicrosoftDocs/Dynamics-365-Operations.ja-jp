@@ -17,16 +17,16 @@ ms.author: shajain
 ms.search.validFrom: 2017-08-01
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 74a27761c065e475fa7c10c5812f0307df9f570e
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 7af390ceaff145849a06cfece8a662d4cba0e86d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="pos-improvements-for-serialized-products"></a><span data-ttu-id="c0e65-103">シリアル化された製品の POS 改善</span><span class="sxs-lookup"><span data-stu-id="c0e65-103">POS improvements for serialized products</span></span>
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 ## <a name="overview"></a><span data-ttu-id="c0e65-104">概要</span><span class="sxs-lookup"><span data-stu-id="c0e65-104">Overview</span></span> 
 <span data-ttu-id="c0e65-105">小売用バックオフィスでの設定に基づいて、製品はシリアル化またはシリアル化されていないとして分類されます。</span><span class="sxs-lookup"><span data-stu-id="c0e65-105">Based on the settings in Retail headquarters, products can be classified as either serialized or non-serialized.</span></span> <span data-ttu-id="c0e65-106">製品がシリアル化されるとき場合、各品目には保証の追跡、追跡項目、および所有権の確認を助ける固有の番号が割り当てられます。</span><span class="sxs-lookup"><span data-stu-id="c0e65-106">When products are serialized, each item can be assigned a unique number that helps track warranties, trace items, and confirm ownership.</span></span> <span data-ttu-id="c0e65-107">シリアル化された製品のシリアル番号を提供する機能は Modern/クラウド販売時点管理 (POS) に存在していますが、レジ担当者が時間の節約および生産性を向上するのに役立つよう、いくつかの改善点が加えられています。</span><span class="sxs-lookup"><span data-stu-id="c0e65-107">Although, the ability to provide serial numbers for serialized products existed in our Modern/Cloud Point of Sale (POS), some improvements have been added to help cashiers save time and be more productive.</span></span>  

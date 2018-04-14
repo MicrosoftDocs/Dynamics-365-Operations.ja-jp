@@ -19,17 +19,16 @@ ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 687dcb5e8ed91108cff9bb86155bf7da89945231
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 6c2aff4634f54649e966c8eb9ab88b3fb93b3705
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="equally-divided-depreciation-method-for-japan"></a><span data-ttu-id="7dcc2-104">日本の均等償却方法</span><span class="sxs-lookup"><span data-stu-id="7dcc2-104">Equally divided depreciation method for Japan</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="7dcc2-105">日本では、一括比例配分資産、低価額資産、および繰延資産は耐用年数期間中、毎年均等額で減価償却されます。</span><span class="sxs-lookup"><span data-stu-id="7dcc2-105">In Japan, lump-sum assets, low-value assets, and deferred assets are depreciated in equal amounts in each year of the service life.</span></span> <span data-ttu-id="7dcc2-106">この記事は、均等減価償却についてよく寄せられる質問に回答します。</span><span class="sxs-lookup"><span data-stu-id="7dcc2-106">This article answers some frequently asked questions about equally divided depreciation.</span></span>
 

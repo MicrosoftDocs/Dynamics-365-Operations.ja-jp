@@ -17,15 +17,15 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: dcafcb067717a1d0ca6f45a57628fe001d1074f2
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: d21a4aa035b55385c8b0ced3bfe91c7aaf064267
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="register-driver-check-in-and-check-out-for-an-appointment"></a><span data-ttu-id="b1413-103">ドライバーの予定のチェックインおよびチェックアウトの登録</span><span class="sxs-lookup"><span data-stu-id="b1413-103">Register driver check-in and check-out for an appointment</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="b1413-104">この手順では、ドライバー チェックインおよびドライバーのチェックアウトを登録する方法を示します。これは通常、輸送コーディネーターによって実行されます。</span><span class="sxs-lookup"><span data-stu-id="b1413-104">This procedure shows how to register a driver check-in and a driver check-out. This is typically done by a transportation coordinator.</span></span> <span data-ttu-id="b1413-105">デモ データの会社 USMF でこの手順を使用できます。</span><span class="sxs-lookup"><span data-stu-id="b1413-105">You can use this procedure in the USMF demo data company.</span></span> <span data-ttu-id="b1413-106">開始する前に、積荷に予定を設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="b1413-106">Before you start, there must be an appointment set up for a load.</span></span> <span data-ttu-id="b1413-107">予定を作成するには、前提条件として「積荷の予定の設定」の手順を実行できます。</span><span class="sxs-lookup"><span data-stu-id="b1413-107">To create an appointment, you can run the “Set up an appointment for a load” procedure as a prerequisite.</span></span>
 

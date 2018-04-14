@@ -16,15 +16,15 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: e5c4262e08188dbfedd415c36e44ade0ced34899
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 121d3c2e504a21f7e4fdfdf7d9bde813ce863cc4
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="set-up-a-customer-and-sales-order-to-be-target-of-consolidated-invoice-japan"></a><span data-ttu-id="51482-103">月次締め請求書の対象とする顧客および販売注文の設定 (日本)</span><span class="sxs-lookup"><span data-stu-id="51482-103">Set up a customer and sales order to be target of consolidated invoice (Japan)</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="51482-104">通常日本では、顧客はすべてのトランザクションに月次締め請求書を使用します。</span><span class="sxs-lookup"><span data-stu-id="51482-104">In Japan, the customers usually use consolidated invoice for all transactions.</span></span> 
 

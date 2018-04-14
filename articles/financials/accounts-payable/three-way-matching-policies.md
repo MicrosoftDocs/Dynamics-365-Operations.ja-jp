@@ -19,17 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: c8ea45ece05f006f1649c79fcdee427a0bc4b0b5
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 1f5715f620869b467ee4ca495f8557ec6222c838
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="three-way-matching-policies"></a><span data-ttu-id="67cbe-103">スリーウェイ マッチング ポリシー</span><span class="sxs-lookup"><span data-stu-id="67cbe-103">Three-way matching policies</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="67cbe-104">このトピックは、スリーウェイ マッチングの例を示します。</span><span class="sxs-lookup"><span data-stu-id="67cbe-104">This topic provides examples of three-way matching.</span></span>
 

@@ -19,17 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 64f0a9a44b97a9980f8d1b76ff158f1ac9cbc114
-ms.openlocfilehash: 7563c749d0d2b5747f1b7886def82ba7191499b1
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 43c8d0db28fb0a845c4520b279f16d7c20c6da88
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="configure-accounts-receivables-and-credit-and-collections"></a><span data-ttu-id="5e7f5-103">売掛金勘定、貸方転記および取立のコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="5e7f5-103">Configure Accounts receivables and Credit and collections</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="5e7f5-104">売掛金管理、貸方転記および取立をコンフィギュレーションして、請求書および顧客から入金される支払を追跡します。</span><span class="sxs-lookup"><span data-stu-id="5e7f5-104">Configure Accounts receivable and Credit and Collections to track invoices and incoming payments from customers.</span></span>
 
@@ -107,7 +106,7 @@ ms.lasthandoff: 11/14/2017
 |                                                      | <span data-ttu-id="5e7f5-251">NSF 情報。</span><span class="sxs-lookup"><span data-stu-id="5e7f5-251">NSF information.</span></span>                     | <span data-ttu-id="5e7f5-252">支払が回収ページで NSF トランザクションとしてマークされる場合、使用する銀行口座の NSF 情報を設定します。</span><span class="sxs-lookup"><span data-stu-id="5e7f5-252">Set up NSF information on the bank account that will be used when a payment is marked as an NSF transaction on the Collections page.</span></span>                                                                                                                                              |
 |                                                      | <span data-ttu-id="5e7f5-253">販売担当者の情報</span><span class="sxs-lookup"><span data-stu-id="5e7f5-253">Salesperson information</span></span>              | <span data-ttu-id="5e7f5-254">販売担当者の電子メール アドレスを設定します。</span><span class="sxs-lookup"><span data-stu-id="5e7f5-254">Set up the email address for salespersons.</span></span> <span data-ttu-id="5e7f5-255">これらのアドレスは回収ページに表示され、そのページから販売担当者に電子メールを送信する場合に使用できます。</span><span class="sxs-lookup"><span data-stu-id="5e7f5-255">These addresses will appear on the Collections page and you can use them to send email to a salesperson from that page.</span></span>                                                                                                                |
 
- 
+
 <span data-ttu-id="5e7f5-256">詳細については、「[売掛金勘定の貸方転記と取立](collections-credit-accounts-receivable.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5e7f5-256">For more information, see [Credit and collections in Accounts receivable](collections-credit-accounts-receivable.md).</span></span>
 
 

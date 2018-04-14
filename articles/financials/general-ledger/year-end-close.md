@@ -19,17 +19,16 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: bf9d0a6ab0fcf7d6f5a31813d68f0bd452ce1019
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 3ec6928265dca5f80d6e278a05975ec9c16a7cca
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="year-end-close"></a><span data-ttu-id="5788d-103">年度末決算</span><span class="sxs-lookup"><span data-stu-id="5788d-103">Year-end close</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="5788d-104">このトピックでは、一般会計の年度末決算処理を実行するために必要な設定と手順について説明します。</span><span class="sxs-lookup"><span data-stu-id="5788d-104">This topic describes the required setup and steps for running the general ledger year-end close process.</span></span> 
 

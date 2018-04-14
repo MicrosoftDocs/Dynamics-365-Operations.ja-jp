@@ -18,16 +18,16 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: b1868851d22f41d3278cd9574a48bdf062185012
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 5109bc180cedfb21dfb8b2920d71d54812e7e6cf
 ms.contentlocale: ja-jp
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="piece-picking-confirmation"></a><span data-ttu-id="0e614-103">ピース ピッキング確認</span><span class="sxs-lookup"><span data-stu-id="0e614-103">Piece picking confirmation</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="0e614-104">ピース ピッキングにより、モバイル デバイスでピッキング作業または棚卸作業を通して各在庫を確認することができます。</span><span class="sxs-lookup"><span data-stu-id="0e614-104">Piece picking allows you to confirm each piece of inventory through picking or counting work on a mobile device.</span></span> <span data-ttu-id="0e614-105">ピッキングについては、ピッキングする作業に指定された数量まで、処理する作業量を確認することができます。</span><span class="sxs-lookup"><span data-stu-id="0e614-105">For picks, you can confirm the quantity of work to be processed up to the quantity that is specified on work to be picked.</span></span> <span data-ttu-id="0e614-106">棚卸作業については、棚卸在庫をスキャンでき、合計金額を追跡できます。</span><span class="sxs-lookup"><span data-stu-id="0e614-106">For counting work, you can scan the inventory that you are counting and track the total amount.</span></span>
 
@@ -46,8 +46,10 @@ ms.lasthandoff: 01/17/2018
 
 <span data-ttu-id="0e614-122">作業タイプが選択または集計の場合、以下のオプションが選択可能になります。</span><span class="sxs-lookup"><span data-stu-id="0e614-122">The following options become available for selection when the work type is pick or counting.</span></span>
 
-| <span data-ttu-id="0e614-123">オプション</span><span class="sxs-lookup"><span data-stu-id="0e614-123">Option</span></span>        | <span data-ttu-id="0e614-124">説明</span><span class="sxs-lookup"><span data-stu-id="0e614-124">Description</span></span>   | 
-| ------------- | ------------- |
-| <span data-ttu-id="0e614-125">ピース ピッキング確認</span><span class="sxs-lookup"><span data-stu-id="0e614-125">Piece picking confirmation</span></span>   | <span data-ttu-id="0e614-126">選択と棚卸作業タイプに使用できます。</span><span class="sxs-lookup"><span data-stu-id="0e614-126">Available for pick and counting work types.</span></span> <span data-ttu-id="0e614-127">製品の確認書が自動的に選択されます。</span><span class="sxs-lookup"><span data-stu-id="0e614-127">Product confirmation is automatically selected.</span></span> <span data-ttu-id="0e614-128">モバイル デバイスから各在庫を確認できます。</span><span class="sxs-lookup"><span data-stu-id="0e614-128">Allows you to confirm each piece of inventory from the mobile device.</span></span> | 
-| <span data-ttu-id="0e614-129">ピースの最大数</span><span class="sxs-lookup"><span data-stu-id="0e614-129">Maximum number of pieces</span></span>     | <span data-ttu-id="0e614-130">ピース ピッキングの確認が有効化された場合にピッキング作業に使用できます。</span><span class="sxs-lookup"><span data-stu-id="0e614-130">Available for pick work if piece picking confirmation is enabled.</span></span> <span data-ttu-id="0e614-131">確認する必要がある在庫数の制限を設定します。</span><span class="sxs-lookup"><span data-stu-id="0e614-131">Sets a limit to the number of pieces that you must confirm.</span></span> |  
+
+|           <span data-ttu-id="0e614-123">オプション</span><span class="sxs-lookup"><span data-stu-id="0e614-123">Option</span></span>           |                                                                            <span data-ttu-id="0e614-124">説明</span><span class="sxs-lookup"><span data-stu-id="0e614-124">Description</span></span>                                                                            |
+|----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="0e614-125">ピース ピッキング確認</span><span class="sxs-lookup"><span data-stu-id="0e614-125">Piece picking confirmation</span></span> | <span data-ttu-id="0e614-126">選択と棚卸作業タイプに使用できます。</span><span class="sxs-lookup"><span data-stu-id="0e614-126">Available for pick and counting work types.</span></span> <span data-ttu-id="0e614-127">製品の確認書が自動的に選択されます。</span><span class="sxs-lookup"><span data-stu-id="0e614-127">Product confirmation is automatically selected.</span></span> <span data-ttu-id="0e614-128">モバイル デバイスから各在庫を確認できます。</span><span class="sxs-lookup"><span data-stu-id="0e614-128">Allows you to confirm each piece of inventory from the mobile device.</span></span> |
+|  <span data-ttu-id="0e614-129">ピースの最大数</span><span class="sxs-lookup"><span data-stu-id="0e614-129">Maximum number of pieces</span></span>  |                   <span data-ttu-id="0e614-130">ピース ピッキングの確認が有効化された場合にピッキング作業に使用できます。</span><span class="sxs-lookup"><span data-stu-id="0e614-130">Available for pick work if piece picking confirmation is enabled.</span></span> <span data-ttu-id="0e614-131">確認する必要がある在庫数の制限を設定します。</span><span class="sxs-lookup"><span data-stu-id="0e614-131">Sets a limit to the number of pieces that you must confirm.</span></span>                   |
+
 

@@ -19,17 +19,16 @@ ms.author: shielas
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
-ms.openlocfilehash: badbeb8f80cf10dac890cef6267e0d910cae971b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 2e73441a3f4190561d1d16db40ee1581267c8dfb
 ms.contentlocale: ja-jp
-ms.lasthandoff: 01/31/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="set-up-hr-parameters-across-legal-entities"></a><span data-ttu-id="a6513-104">法人間の HR パラメータの設定</span><span class="sxs-lookup"><span data-stu-id="a6513-104">Set up HR parameters across legal entities</span></span>
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 <span data-ttu-id="a6513-105">職位レコードなど、会社間で共有されるのレコードの共有パラメーターを設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a6513-105">You must set up shared parameters for records that are shared across companies, such as Position records.</span></span> <span data-ttu-id="a6513-106">この記事は、法人間に人事管理パラメーターを設定する方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="a6513-106">This article explains how to set up Human resources parameters across legal entities.</span></span>
 

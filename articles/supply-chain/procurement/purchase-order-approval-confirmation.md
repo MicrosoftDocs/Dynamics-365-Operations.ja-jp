@@ -19,18 +19,18 @@ ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 577204b49355a470769237eb46ad74e7f319a55e
-ms.openlocfilehash: 5f593880f52848d6b338bfb7532a652520382d02
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 09712cc86cde75a922ab43eaf42d62c6048ee3a1
 ms.contentlocale: ja-jp
-ms.lasthandoff: 01/15/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="approve-and-confirm-purchase-orders"></a><span data-ttu-id="ab28e-103">発注書の承認および確認</span><span class="sxs-lookup"><span data-stu-id="ab28e-103">Approve and confirm purchase orders</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 <span data-ttu-id="ab28e-104">この資料は、発注書 (PO) が作成された後の一連の状態と、変更管理の有効化の効果について説明します。</span><span class="sxs-lookup"><span data-stu-id="ab28e-104">This article describes the statuses that a purchase order (PO) goes through after it has been created, and the effect of enabling change management on POs.</span></span>
 

@@ -16,15 +16,15 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: f6934e598208cb53f2ab8179cf543abd2ea99061
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 83114be14d8f1f544148303f781ee7daea9c3004
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="propose-and-post-the-impairment-amount-on-a-cash-generating-unit-japan"></a><span data-ttu-id="2e61c-103">資産グループの減損損失の提案と転記 (日本)</span><span class="sxs-lookup"><span data-stu-id="2e61c-103">Propose and post the impairment amount on a cash generating unit (Japan)</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="2e61c-104">日本では、減損金額の計算後に、その金額を固定資産仕訳帳に提案し転記することができます。</span><span class="sxs-lookup"><span data-stu-id="2e61c-104">For Japan, after the calculation of the impairment amount, you can propose and post it in a fixed asset journal.</span></span>
 

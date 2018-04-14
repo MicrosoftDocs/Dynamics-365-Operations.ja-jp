@@ -19,17 +19,16 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 29bc8cd02d98479197d7e5f5664b9859c03893b3
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: fe7332eae681ea4e89a4fda0e97f85e6fc2f7d05
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="reduce-balance-depreciation"></a><span data-ttu-id="fc0af-103">逓減残高による減価償却</span><span class="sxs-lookup"><span data-stu-id="fc0af-103">Reduce balance depreciation</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="fc0af-104">この記事は、減価償却の逓減残高法の概要を示します。</span><span class="sxs-lookup"><span data-stu-id="fc0af-104">This article gives an overview of the Reducing balance method of depreciation.</span></span>
 
@@ -80,7 +79,7 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="fc0af-149">年 2</span><span class="sxs-lookup"><span data-stu-id="fc0af-149">Year 2</span></span> | <span data-ttu-id="fc0af-150">(7,000 - 1,000) \* 30% = 1,800</span><span class="sxs-lookup"><span data-stu-id="fc0af-150">(7,000 - 1,000) \* 30% = 1,800</span></span>            | <span data-ttu-id="fc0af-151">(7,000 -1,800) = 5,200</span><span class="sxs-lookup"><span data-stu-id="fc0af-151">(7,000 -1,800) = 5,200</span></span>                |
 | <span data-ttu-id="fc0af-152">年 3</span><span class="sxs-lookup"><span data-stu-id="fc0af-152">Year 3</span></span> | <span data-ttu-id="fc0af-153">(5,200 - 1,000) \* 30% = 1,260</span><span class="sxs-lookup"><span data-stu-id="fc0af-153">(5,200 - 1,000) \* 30% = 1,260</span></span>            | <span data-ttu-id="fc0af-154">(5,200 - 1,260) = 3,940</span><span class="sxs-lookup"><span data-stu-id="fc0af-154">(5,200 - 1,260) = 3,940</span></span>               |
 
- 
+
 -
 
 

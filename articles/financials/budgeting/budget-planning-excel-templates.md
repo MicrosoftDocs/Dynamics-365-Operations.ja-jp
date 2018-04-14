@@ -19,17 +19,16 @@ ms.author: ryansand
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 156688b705337331e083ebc19fded57b028acb67
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 8b597f417fc144b90aa6469ebe1b9961dc968c15
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="budget-planning-templates-for-excel"></a><span data-ttu-id="dd043-103">Excel 用予算計画テンプレート</span><span class="sxs-lookup"><span data-stu-id="dd043-103">Budget planning templates for Excel</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="dd043-104">このトピックでは、予算計画で使用できる Microsoft Excel テンプレートを作成する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="dd043-104">This topic describes how to create Microsoft Excel templates that can be used with budget plans.</span></span>
 
@@ -42,11 +41,11 @@ ms.lasthandoff: 03/26/2018
 1. <span data-ttu-id="dd043-112">\[予算計画の一覧\] ([予算作成] &gt; [予算計画]) を開きます。</span><span class="sxs-lookup"><span data-stu-id="dd043-112">Open the **Budget plans list** (**Budgeting** &gt; **Budget plans**).</span></span> 
 2. <span data-ttu-id="dd043-113">[新規] をクリックして、新しい予算計画ドキュメントを作成します。</span><span class="sxs-lookup"><span data-stu-id="dd043-113">Click **New** to create a new budget plan document.</span></span> 
 
-  <span data-ttu-id="dd043-114">[![予算計画の一覧](./media/bpt11-1024x552.png)](./media/bpt11.png)</span><span class="sxs-lookup"><span data-stu-id="dd043-114">[![Budget plans list](./media/bpt11-1024x552.png)](./media/bpt11.png)</span></span> 
+   <span data-ttu-id="dd043-114">[![予算計画の一覧](./media/bpt11-1024x552.png)](./media/bpt11.png)</span><span class="sxs-lookup"><span data-stu-id="dd043-114">[![Budget plans list](./media/bpt11-1024x552.png)](./media/bpt11.png)</span></span> 
 
 3. <span data-ttu-id="dd043-115">[追加] の行オプションを使用して、行を追加します。</span><span class="sxs-lookup"><span data-stu-id="dd043-115">Use the **Add** line option to add lines.</span></span> <span data-ttu-id="dd043-116">[レイアウト] をクリックして、予算計画ドキュメントのレイアウト コンフィギュレーションを表示します。</span><span class="sxs-lookup"><span data-stu-id="dd043-116">Click **Layouts** to view the budget plan document layout configuration.</span></span> 
 
-  <span data-ttu-id="dd043-117">[![予算計画の追加](./media/bpt2-1024x274.png)](./media/bpt2.png)</span><span class="sxs-lookup"><span data-stu-id="dd043-117">[![Budget plans add](./media/bpt2-1024x274.png)](./media/bpt2.png)</span></span> 
+   <span data-ttu-id="dd043-117">[![予算計画の追加](./media/bpt2-1024x274.png)](./media/bpt2.png)</span><span class="sxs-lookup"><span data-stu-id="dd043-117">[![Budget plans add](./media/bpt2-1024x274.png)](./media/bpt2.png)</span></span> 
 
 <span data-ttu-id="dd043-118">レイアウト コンフィギュレーションを確認し、必要に応じて調整できます。</span><span class="sxs-lookup"><span data-stu-id="dd043-118">You can review the layout configuration and adjust it as needed.</span></span> 
 1. <span data-ttu-id="dd043-119">[テンプレート] &gt; [生成] の順に移動して、このレイアウトの Excel ファイルを作成します。</span><span class="sxs-lookup"><span data-stu-id="dd043-119">Go to **Template** &gt; **Generate** to create an Excel file for this layout.</span></span> 

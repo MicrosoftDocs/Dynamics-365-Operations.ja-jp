@@ -20,16 +20,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
-ms.openlocfilehash: bce608594e2eb0e7769e7dfa2e254e29385000b6
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 90a947d4564c8ad97b415b556986c3f815674aa4
 ms.contentlocale: ja-jp
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="cost-rollup-policy-and-overhead-calculation"></a><span data-ttu-id="59025-103">原価ロールアップ ポリシーおよび間接費の計算</span><span class="sxs-lookup"><span data-stu-id="59025-103">Cost rollup policy and overhead calculation</span></span> 
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="59025-104">原価会計では、コスト フローが組織内で提供される製品とサービスに関連する方法について洞察を得ることができます。</span><span class="sxs-lookup"><span data-stu-id="59025-104">Cost accounting lets you gain insight into how the cost flow relates to the products and services that are delivered within an organization.</span></span> <span data-ttu-id="59025-105">コストの透明性を確認するには、適切な配賦基準に基づいたコスト オブジェクト間のコスト配賦を達成することが重要です。</span><span class="sxs-lookup"><span data-stu-id="59025-105">To see the cost transparency, it's crucial to achieve cost allocation between cost objects based on an appropriate allocation basis.</span></span> <span data-ttu-id="59025-106">既定では、特定の状況で必要なため、主要コスト要素に対してコスト配賦が達成されますが、いくつかの考慮すべき影響があります。</span><span class="sxs-lookup"><span data-stu-id="59025-106">By default, the cost allocation is achieved for the primary cost element, which is desired in some situations, but it has a few implications that should be considered.</span></span>
 

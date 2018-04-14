@@ -20,17 +20,16 @@ ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 703070ae85f504cf204244b2197732dc6849abd6
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 1bbdd7c47013735aa384d2d64c347d08d52c0df2
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="production-order-cost-analysis"></a><span data-ttu-id="fa649-105">製造オーダーの原価分析</span><span class="sxs-lookup"><span data-stu-id="fa649-105">Production order cost analysis</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="fa649-106">この記事は、完了した製造オーダーおよび現在の製造オーダーに対して実行できる原価分析について説明します。</span><span class="sxs-lookup"><span data-stu-id="fa649-106">This article provides information about the cost analysis that you can do for completed and current production orders.</span></span> <span data-ttu-id="fa649-107">[価格計算] ページまたは [原価見積] レポートを使用して、見積原価および実際原価を分析できます。</span><span class="sxs-lookup"><span data-stu-id="fa649-107">You can analyze the estimated costs and actual costs by using the Price calculation page or the Cost estimates and costings report.</span></span> <span data-ttu-id="fa649-108">コンポーネント品目、工順工程、および間接原価ごとに見積原価と実績原価 (および数量) についての情報を表示できます。</span><span class="sxs-lookup"><span data-stu-id="fa649-108">You can view information about the estimated and actual costs (and quantity) for each component item, the routing operation, and the indirect cost.</span></span>
 

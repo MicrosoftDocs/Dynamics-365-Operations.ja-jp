@@ -17,15 +17,15 @@ ms.author: bis
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: fc039b3c35c9ff8f40bf671e523104031c598171
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: d090a668988aeaeb8f1b779bc565d03a506a8f15
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="warehouse-management"></a><span data-ttu-id="36134-103">倉庫管理</span><span class="sxs-lookup"><span data-stu-id="36134-103">Warehouse management</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="36134-104">Dynamics 365 for Finance and Operations の倉庫管理モジュールは、製造、配送、および小売企業の倉庫プロセスを管理できます。</span><span class="sxs-lookup"><span data-stu-id="36134-104">The Warehouse management module for Dynamics 365 for Finance and Operations lets you manage warehouse processes in manufacturing, distribution, and retail companies.</span></span> <span data-ttu-id="36134-105">このモジュールは、倉庫施設をいつでも最適なレベルにサポートする幅広い機能を持っています。</span><span class="sxs-lookup"><span data-stu-id="36134-105">This module has a wide range of features to support the warehouse facility at an optimal level, at any time.</span></span> <span data-ttu-id="36134-106">倉庫管理は、輸送、製造、品質テスト、購買、移動、販売、返品などの他のビジネス プロセスが Finance and Operations で完全に統合されます。</span><span class="sxs-lookup"><span data-stu-id="36134-106">Warehouse management is fully integrated with other business processes in Finance and Operations such as transportation, manufacturing, quality control, purchase, transfer, sales, and returns.</span></span>
 

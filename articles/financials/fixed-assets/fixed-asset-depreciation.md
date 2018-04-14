@@ -19,17 +19,16 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: e362d80f5c4a33ad604c717333777e7c5fdef489
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: c8ec644a9559946254a1d35f8698e892be1ca50d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="fixed-asset-depreciation"></a><span data-ttu-id="7f124-103">固定資産の減価償却</span><span class="sxs-lookup"><span data-stu-id="7f124-103">Fixed asset depreciation</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="7f124-104">このトピックは、固定資産の償却の概要を示します。</span><span class="sxs-lookup"><span data-stu-id="7f124-104">This topic provides an overview of depreciation for fixed assets.</span></span>
 

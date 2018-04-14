@@ -17,18 +17,18 @@ ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
 ms.translationtype: HT
-ms.sourcegitcommit: 454368ab5a467002ebf973db97fd98e31885dfe0
-ms.openlocfilehash: 5bcd02e08a4ce5b601615b39bf95362cf92d3fec
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 93e8f97dbd3f60be72793c04eb729623321016f8
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="create-alerts"></a><span data-ttu-id="274de-103">警告の作成</span><span class="sxs-lookup"><span data-stu-id="274de-103">Create alerts</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[banner](../includes/pre-release.md)] 
+[!INCLUDE [banner](../includes/pre-release.md)]
 
 ## <a name="getting-started"></a><span data-ttu-id="274de-104">はじめに</span><span class="sxs-lookup"><span data-stu-id="274de-104">Getting started</span></span>
 <span data-ttu-id="274de-105">警告ルールを設定するには、その前に、いつどのような状況の場合に警告を受信するかを決定します。</span><span class="sxs-lookup"><span data-stu-id="274de-105">Before you set up an alert rule, decide when or in what situations you want to receive alerts.</span></span> <span data-ttu-id="274de-106">通知が必要なイベントがわかっているときは、Microsoft Dynamics 365 for Finance and Operations で、そのイベントを表示するデータのページを見つけます。</span><span class="sxs-lookup"><span data-stu-id="274de-106">When you know which event you want to be notified about, in Microsoft Dynamics 365 for Finance and Operations find the page where the data that causes that event appears.</span></span> <span data-ttu-id="274de-107">イベントは、到来した日付か、または発生した特定の変更のいずれかです。</span><span class="sxs-lookup"><span data-stu-id="274de-107">The event can be a date that arrives or a specific change that occurs.</span></span> <span data-ttu-id="274de-108">したがって、日付が指定されたページ、あるいは、変更されるフィールドまたは新しく作成されたレコードを表示するページを見つける必要があります。</span><span class="sxs-lookup"><span data-stu-id="274de-108">Therefore, you must find the page where the date is specified, or where the field that changes or the new record that is created appears.</span></span> <span data-ttu-id="274de-109">この情報が用意されたら、警告ルールを作成できます。</span><span class="sxs-lookup"><span data-stu-id="274de-109">After you have this information, you can create the alert rule.</span></span>

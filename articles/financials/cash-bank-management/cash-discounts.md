@@ -19,17 +19,16 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 9960af8c4961a42e7e829077da40bcbbf3bc71c2
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 52e6003dfddc398c19055405bf936195febe0737
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="cash-discounts"></a><span data-ttu-id="3bd0e-104">現金割引</span><span class="sxs-lookup"><span data-stu-id="3bd0e-104">Cash discounts</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="3bd0e-105">現金割引は、買掛金勘定および売掛金勘定に設定され、共有されます。</span><span class="sxs-lookup"><span data-stu-id="3bd0e-105">Cash discounts are setup and shared for Accounts payable and Accounts receivable.</span></span>  <span data-ttu-id="3bd0e-106">現金割引の使用可能なオプションは、顧客請求書または仕入先請求書で定義でき、現金割引日以内に請求書が支払われた場合に適用されます。</span><span class="sxs-lookup"><span data-stu-id="3bd0e-106">The cash discount available can be defined on the customer invoice or vendor invoice, and will be taken if the invoice is paid within the cash discount date.</span></span> 
 
@@ -65,6 +64,7 @@ ms.lasthandoff: 11/03/2017
 -   <span data-ttu-id="3bd0e-135">3 月 1 日 = 80</span><span class="sxs-lookup"><span data-stu-id="3bd0e-135">March 1 = 80</span></span>
 
 <span data-ttu-id="3bd0e-136">現金割引条件が 20D2% の 1000 USD の請求書が、2 月 15 日に転記されます。</span><span class="sxs-lookup"><span data-stu-id="3bd0e-136">An invoice for 1000 USD with cash discount terms of 20D2% is posted on February 15.</span></span> <span data-ttu-id="3bd0e-137">請求書の会計通貨金額は 1100 EUR です。</span><span class="sxs-lookup"><span data-stu-id="3bd0e-137">The accounting currency amount of the invoice is 1100 EUR.</span></span> <span data-ttu-id="3bd0e-138">3 月 1 日に 980 USD の支払が請求書で決済されます。</span><span class="sxs-lookup"><span data-stu-id="3bd0e-138">A payment for 980 USD is settled with the invoice on March 1.</span></span> <span data-ttu-id="3bd0e-139">現金割引金額は 20 USD です。</span><span class="sxs-lookup"><span data-stu-id="3bd0e-139">The cash discount amount is 20 USD.</span></span> <span data-ttu-id="3bd0e-140">支払の会計通貨金額は 784 EUR です。</span><span class="sxs-lookup"><span data-stu-id="3bd0e-140">The accounting currency amount of the payment is 784 EUR.</span></span> <span data-ttu-id="3bd0e-141">現金割引の会計通貨金額は 3 月 1 日現在の為替レートを使用して計算されます。20 \* 80 / 100 = 16 EUR。</span><span class="sxs-lookup"><span data-stu-id="3bd0e-141">The accounting currency amount of the cash discount is calculated by using the exchange rate as of March 1: 20 \* 80 / 100 = 16 EUR.</span></span>
+
 | <span data-ttu-id="3bd0e-142">**注記**</span><span class="sxs-lookup"><span data-stu-id="3bd0e-142">**Note**</span></span>                                                                                                                                                                                                                             |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span data-ttu-id="3bd0e-143">[一部支払の現金割引を計算] オプションが売掛金勘定パラメーターまたは買掛金管理パラメーター ページで選択されている場合、それぞれの一部支払の日に有効となる為替レートが使用されます。</span><span class="sxs-lookup"><span data-stu-id="3bd0e-143">If the Calculate cash discounts for partial payments option is selected in the Accounts receivable parameters or Accounts payable parameters pages, the exchange rate that is in effect on the date of each partial payment is used.</span></span> |

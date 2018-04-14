@@ -16,15 +16,15 @@ ms.author: ryansand
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 4b05f744120e940bfea3e92b8aac3e41fc8151d9
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 1bd87a5c65fb01e0a277d7bd790e2b86686fbf55
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="define-audit-policies-for-source-documents"></a><span data-ttu-id="599a9-103">元伝票の監査ポリシーの定義</span><span class="sxs-lookup"><span data-stu-id="599a9-103">Define audit policies for source documents</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="599a9-104">この手順は、監査ポリシー ルールを設定および実行する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="599a9-104">This procedure shows how to set up and run audit policy rules.</span></span> <span data-ttu-id="599a9-105">この例では、ホテル経費タイプの経費精算書を使用しています。</span><span class="sxs-lookup"><span data-stu-id="599a9-105">The example uses expense reports with the hotel expense type.</span></span> <span data-ttu-id="599a9-106">この手順では、USMF というデモ会社を使用します。</span><span class="sxs-lookup"><span data-stu-id="599a9-106">This procedure uses the USMF demo company.</span></span> <span data-ttu-id="599a9-107">監査担当者ロールには、これらのタスクを実行する適切なアクセス許可があります。</span><span class="sxs-lookup"><span data-stu-id="599a9-107">The auditor role contains the correct permissions in order to perform these tasks.</span></span>
 

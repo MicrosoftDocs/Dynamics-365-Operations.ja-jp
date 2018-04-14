@@ -19,17 +19,16 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
-ms.openlocfilehash: edcb01c177a3e43cea7f0b7936a4129d27314016
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 3a5b9f98b371dbad9b6b0538e0d9975dc5ed701c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 01/31/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="align-workforce-skills-with-business-needs"></a><span data-ttu-id="b7b5e-104">個人スキルと業務ニーズの調整</span><span class="sxs-lookup"><span data-stu-id="b7b5e-104">Align workforce skills with business needs</span></span>
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 <span data-ttu-id="b7b5e-105">作業者、申請者、または連絡担当者がロールを効果的に遂行するために必要なスキルを追跡できます。</span><span class="sxs-lookup"><span data-stu-id="b7b5e-105">You can track the skills that workers, applicants, or contact persons have, or should have, to fulfill their roles effectively.</span></span> <span data-ttu-id="b7b5e-106">また、特定のジョブに必要なスキルを指定できます。</span><span class="sxs-lookup"><span data-stu-id="b7b5e-106">You can also specify the skills that are required for a specific job.</span></span>
 
@@ -55,8 +54,8 @@ ms.lasthandoff: 01/31/2018
 
 <span data-ttu-id="b7b5e-133">スキル マッピング プロファイルを使用すると、現在の従業員から、業務のニーズに直接対応する資格を持つ候補者を検索できます。</span><span class="sxs-lookup"><span data-stu-id="b7b5e-133">Skill-mapping profiles allow you to find current employees or candidates with qualifications that directly correspond to business needs.</span></span>  <span data-ttu-id="b7b5e-134">たとえば、その組織で空いている職位のスキル マッピング プロファイルを作成できます。</span><span class="sxs-lookup"><span data-stu-id="b7b5e-134">For example, you could create a skill-mapping profile for an open position in your organization.</span></span> <span data-ttu-id="b7b5e-135">特定のジョブのプロファイルを作成して、そのジョブからスキル、教育、証明書をコピーすることにより、プロファイルに入力される基準の 1 つ以上に一致する作業者、申請者、連絡担当者を簡単に検索できます。また、ジョブに要求されるスキルに最も適合する候補者を一覧表示できます。</span><span class="sxs-lookup"><span data-stu-id="b7b5e-135">By creating a profile for a particular job and copying the skills, education and certificates from that job to the profile, you can quickly search workers, applicants and contact persons who match one or more of the criteria entered on the profile and view a list of the candidates whose skills most closely match the skills required for the job.</span></span>
 
-><span data-ttu-id="b7b5e-136">**注記** スキル マッピング検索に含めるよう選択した作業者、申請者、および連絡担当者のみを、スキル マッピングの結果一覧に表示したり、スキル プロファイルに含めることができます。</span><span class="sxs-lookup"><span data-stu-id="b7b5e-136">**Note** Only workers, applicants, and contact persons who are selected to be included in skill mapping searches can be displayed in a skill-mapping results list, or included in a skill profile.</span></span> <span data-ttu-id="b7b5e-137">作業者、申請者、連絡担当者をスキル マッピング検索に含める場合は、次の各ページで、**スキル マッピングの対象に含める**の選択を [はい] に設定します。</span><span class="sxs-lookup"><span data-stu-id="b7b5e-137">To include a worker, applicant, or contact person in skill mapping searches, set the **Include in skill mapping** selection to Yes in the following pages:</span></span>
-
+> <span data-ttu-id="b7b5e-136">**注記** スキル マッピング検索に含めるよう選択した作業者、申請者、および連絡担当者のみを、スキル マッピングの結果一覧に表示したり、スキル プロファイルに含めることができます。</span><span class="sxs-lookup"><span data-stu-id="b7b5e-136">**Note** Only workers, applicants, and contact persons who are selected to be included in skill mapping searches can be displayed in a skill-mapping results list, or included in a skill profile.</span></span> <span data-ttu-id="b7b5e-137">作業者、申請者、連絡担当者をスキル マッピング検索に含める場合は、次の各ページで、**スキル マッピングの対象に含める**の選択を [はい] に設定します。</span><span class="sxs-lookup"><span data-stu-id="b7b5e-137">To include a worker, applicant, or contact person in skill mapping searches, set the **Include in skill mapping** selection to Yes in the following pages:</span></span>
+> 
 > + <span data-ttu-id="b7b5e-138">ワーカー</span><span class="sxs-lookup"><span data-stu-id="b7b5e-138">Worker</span></span>
 > + <span data-ttu-id="b7b5e-139">従業員</span><span class="sxs-lookup"><span data-stu-id="b7b5e-139">Employee</span></span>
 > + <span data-ttu-id="b7b5e-140">申請者</span><span class="sxs-lookup"><span data-stu-id="b7b5e-140">Applicant</span></span>

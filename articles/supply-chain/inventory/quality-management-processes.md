@@ -19,17 +19,16 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: 180a72b6876036d68f4a3abf2e8d523aaba9acf7
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 04e022f7f8e33e49101a058cf62fe0ed8715efdf
 ms.contentlocale: ja-jp
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="quality-management-processes"></a><span data-ttu-id="63936-104">品質管理プロセス</span><span class="sxs-lookup"><span data-stu-id="63936-104">Quality management processes</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="63936-105">この記事は、不適合製品に対する品質管理プロセスについての情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="63936-105">This article provides information about the quality management process for nonconforming products.</span></span> <span data-ttu-id="63936-106">品質テスト機能の使用方法、不適合の定義および管理方法、および修正方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="63936-106">It describes how you can use quality control functionality, how to define and maintain nonconformances, and how to handle corrections.</span></span>
 

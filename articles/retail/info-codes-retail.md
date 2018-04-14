@@ -20,17 +20,16 @@ ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: d9b080ff46a0fbc73ed4f8fa3f03d71e9d758cc2
-ms.openlocfilehash: 0adfb1dcdaa1c57a3f8af0d874c081e19844d20a
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 3b1346917dc8482181acdb9dac31efbc5356dd24
 ms.contentlocale: ja-jp
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="info-codes"></a><span data-ttu-id="d9b3d-103">情報コード</span><span class="sxs-lookup"><span data-stu-id="d9b3d-103">Info codes</span></span>
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 <span data-ttu-id="d9b3d-104">この記事は、情報コード、情報コード グループとその使用方法に関する概要を示します。</span><span class="sxs-lookup"><span data-stu-id="d9b3d-104">This article provides an overview about info codes, info code groups, and how to use them.</span></span>
 
@@ -52,7 +51,7 @@ ms.lasthandoff: 01/17/2018
 
 <span data-ttu-id="d9b3d-132">**例 2: 情報コードと情報コード グループの関連付け** モバイル デバイスなどの特定の製品を販売するとき、電話番号、携帯機器識別番号 (MEID)、およびシリアル番号などの一連の特定の情報を収集する必要が常にあります。</span><span class="sxs-lookup"><span data-stu-id="d9b3d-132">**Example 2: Link info codes to info code groups** When you sell certain products, for example mobile devices, you always want to collect a specific set of information, such as telephone number, mobile equipment identifier (MEID), and serial number.</span></span> <span data-ttu-id="d9b3d-133">ただし、タブレットと携帯電話を対比したさまざまな情報も収集する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d9b3d-133">However, you also want to collect different information for a tablet versus a mobile phone.</span></span> <span data-ttu-id="d9b3d-134">電話番号、MEID、およびシリアル番号に対するプロンプトを含む情報コード グループを設定し、情報コード グループを個別の情報コードに関連付けることができます。</span><span class="sxs-lookup"><span data-stu-id="d9b3d-134">You can set up an info code group that includes prompts for the telephone number, MEID, and the serial number, and then link the info code group to an individual info code.</span></span> <span data-ttu-id="d9b3d-135">製品固有の情報コードがトリガーされると、次に情報コード グループがトリガーされ、各デバイスについてリンクされた複数のセットの情報コードを定義しなくても、共通データを収集できるようになります。</span><span class="sxs-lookup"><span data-stu-id="d9b3d-135">When the product-specific info code is triggered, the info code group can be triggered next to enable you to collect the common data without having to define multiple sets of linked info codes for each device.</span></span>
 
- 
+
 
 
 

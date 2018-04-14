@@ -20,17 +20,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 1ec2f4a407c705fb37681f5593d0f7ea31f4cf0f
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 3c493ab60952e60e6816ebdc3decb1ebe670806f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="cost-accounting-terminology"></a><span data-ttu-id="91541-103">原価会計用語</span><span class="sxs-lookup"><span data-stu-id="91541-103">Cost accounting terminology</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="91541-104">このトピックでは、原価計算で使用する重要な用語を定義します。</span><span class="sxs-lookup"><span data-stu-id="91541-104">This topic defines the key terms that are used in Cost accounting.</span></span>
 
@@ -150,14 +149,14 @@ ms.lasthandoff: 03/26/2018
 |  + |  <span data-ttu-id="91541-241">追加</span><span class="sxs-lookup"><span data-stu-id="91541-241">Addition</span></span> |
 |  <span data-ttu-id="91541-242">-</span><span class="sxs-lookup"><span data-stu-id="91541-242">–</span></span> |  <span data-ttu-id="91541-243">減算</span><span class="sxs-lookup"><span data-stu-id="91541-243">Subtraction</span></span> |
 | *  | <span data-ttu-id="91541-244">乗算</span><span class="sxs-lookup"><span data-stu-id="91541-244">Multiplication</span></span>  |
-    
+
 <span data-ttu-id="91541-245">従来型の IF ステートメントはサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="91541-245">Traditional IF statements are not supported.</span></span> <span data-ttu-id="91541-246">ただし、ステートメントを作成し、それが正しいかを検証できます。</span><span class="sxs-lookup"><span data-stu-id="91541-246">However, you can create statements and validate whether they are true.</span></span>
 
 |  <span data-ttu-id="91541-247">**明細書の検証**</span><span class="sxs-lookup"><span data-stu-id="91541-247">**Statement  Validation**</span></span> | <span data-ttu-id="91541-248">**結果**</span><span class="sxs-lookup"><span data-stu-id="91541-248">**Result**</span></span>  |
 |---|---|
 |  <span data-ttu-id="91541-249">a > b</span><span class="sxs-lookup"><span data-stu-id="91541-249">a > b</span></span>| <span data-ttu-id="91541-250">True</span><span class="sxs-lookup"><span data-stu-id="91541-250">True</span></span>  |
 |  <span data-ttu-id="91541-251">a > b</span><span class="sxs-lookup"><span data-stu-id="91541-251">a > b</span></span> |  <span data-ttu-id="91541-252">False</span><span class="sxs-lookup"><span data-stu-id="91541-252">False</span></span> |
-    
+
 <span data-ttu-id="91541-253">**間接費**</span><span class="sxs-lookup"><span data-stu-id="91541-253">**Overhead cost**</span></span>
 
 <span data-ttu-id="91541-254">間接費は、事業の遂行に必要な経費を示します。</span><span class="sxs-lookup"><span data-stu-id="91541-254">Overhead costs refer to the ongoing expenses of operating a business.</span></span> <span data-ttu-id="91541-255">これらは、特定の営業活動に直接リンクすることができない費用です。</span><span class="sxs-lookup"><span data-stu-id="91541-255">They are the costs that can’t be linked directly to specific business activities.</span></span> <span data-ttu-id="91541-256">間接費の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="91541-256">Here are some examples of overhead costs:</span></span>

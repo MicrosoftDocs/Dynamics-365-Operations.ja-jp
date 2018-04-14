@@ -16,15 +16,15 @@ ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 3edb8d2fe0fda6634bc2edb8e3bafc5a60344b7a
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 7504411a840dd2daeb6fe6f47fd4387d6b011fba
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="manage-order-holds"></a><span data-ttu-id="88318-103">注文保留の管理</span><span class="sxs-lookup"><span data-stu-id="88318-103">Manage order holds</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="88318-104">この手順では、顧客の販売注文を保留に設定する方法、注文保留のチェックアウトの処理の方法、および注文保留の解除方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="88318-104">This procedure demonstrates how to place customer sales orders on hold, how to work with order hold checkouts, and how to remove order holds.</span></span> <span data-ttu-id="88318-105">注文はさまざまな理由で保留に設定される場合があります。</span><span class="sxs-lookup"><span data-stu-id="88318-105">An order might be placed on hold for a variety of reasons.</span></span> <span data-ttu-id="88318-106">たとえば、顧客の住所や支払方法が確認できるまで、またはマネージャーが顧客の与信限度額を確認できるまで、注文を保留にすることがあります。</span><span class="sxs-lookup"><span data-stu-id="88318-106">For example, you might hold an order until a customer address or payment method can be verified or until a manager can review the customer’s credit limit.</span></span> <span data-ttu-id="88318-107">注文の保留中、倉庫では出荷の処理はできません。</span><span class="sxs-lookup"><span data-stu-id="88318-107">While the order on hold, it cannot be processed by the warehouse for shipping.</span></span> 
 

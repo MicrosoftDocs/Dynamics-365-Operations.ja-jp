@@ -20,17 +20,16 @@ ms.author: athinesh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: d9b080ff46a0fbc73ed4f8fa3f03d71e9d758cc2
-ms.openlocfilehash: b11d8cc534964959662b4e2c67c19e3961295c3a
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 16c6603ee6b4ed6cdd002adf516eeaf876ce7bb9
 ms.contentlocale: ja-jp
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="set-up-and-manage-images-for-retail-modern-pos"></a><span data-ttu-id="2fd46-103">Retail Modern POS の画像の設定および管理</span><span class="sxs-lookup"><span data-stu-id="2fd46-103">Set up and manage images for Retail Modern POS</span></span>
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 <span data-ttu-id="2fd46-104">この記事は、Retail Modern POS (MPOS) に表示されるさまざまなエンティティの画像の設定および管理に関連する手順について説明します。</span><span class="sxs-lookup"><span data-stu-id="2fd46-104">This article explains the steps that are involved in setting up and managing images for the various entities that appear in Retail Modern POS (MPOS).</span></span>
 
@@ -141,7 +140,7 @@ ms.lasthandoff: 01/17/2018
 6.  <span data-ttu-id="2fd46-270">MPOS がオンライン モードの間に、データがオフライン データベースに 1 回以上の送信を行うかどうか確認するため、HQ でカタログジョブを実行します。</span><span class="sxs-lookup"><span data-stu-id="2fd46-270">While MPOS is in Online mode, run the Catalog job in HQ, to make sure that the data is sent at least one time to the offline database.</span></span>
 7.  <span data-ttu-id="2fd46-271">オフライン モードに MPOS を挿入します。</span><span class="sxs-lookup"><span data-stu-id="2fd46-271">Put MPOS into Offline mode.</span></span> <span data-ttu-id="2fd46-272">HQ の特定の製品にアップロードする画像を確認する必要があります。</span><span class="sxs-lookup"><span data-stu-id="2fd46-272">You should see the image that you uploaded for the specific product in HQ.</span></span> <span data-ttu-id="2fd46-273">[![オフライン 1](./media/offline1.png)](./media/offline1.png)</span><span class="sxs-lookup"><span data-stu-id="2fd46-273">[![offline1](./media/offline1.png)](./media/offline1.png)</span></span>
 
- 
+
 
 ### <a name="set-up-catalog-category-employee-and-customer-images-to-appear-in-offline-mode-for-mpos"></a><span data-ttu-id="2fd46-274">MPOS のオフライン モードで表示するカタログ、カテゴリ、従業員、および顧客の画像を設定します。</span><span class="sxs-lookup"><span data-stu-id="2fd46-274">Set up catalog, category, employee, and customer images to appear in Offline mode for MPOS</span></span>
 

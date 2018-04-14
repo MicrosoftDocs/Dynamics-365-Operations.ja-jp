@@ -19,17 +19,16 @@ ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ceb568cc223a631f704caf2417f1a3bd56b56288
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 29e817b029abb735cbf5eeb1fff946d99ab00b56
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="delivery-schedules"></a><span data-ttu-id="42e55-103">配送スケジュール</span><span class="sxs-lookup"><span data-stu-id="42e55-103">Delivery schedules</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="42e55-104">配送スケジュールより、1 つの販売注文、販売見積、または発注書に複数の配送を使用するときに、注文明細行数量を追跡することができます。</span><span class="sxs-lookup"><span data-stu-id="42e55-104">Delivery schedules allow you to track order line quantity when you are using multiple deliveries for a single sales order, sales quotation, or purchase order.</span></span>
 

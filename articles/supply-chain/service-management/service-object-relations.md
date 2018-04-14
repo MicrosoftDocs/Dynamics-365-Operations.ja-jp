@@ -19,18 +19,16 @@ ms.author: YuyuScheller
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 221b9dae7e83e7f4a535ac60f2a2011533d7861c
-ms.openlocfilehash: 0e54a0dc9b643077d45fe76e073772e81f99ea44
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: e7ee1935c006636f8d7bfce53287229e736e2f80
 ms.contentlocale: ja-jp
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="service-object-relations"></a><span data-ttu-id="02386-103">サービス対象の関係</span><span class="sxs-lookup"><span data-stu-id="02386-103">Service object relations</span></span> 
 
-[!include[banner](../includes/banner.md)]
-
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="02386-104">サービス対象とサービス合意またはサービス注文の間に、サービス対象の関係を作成できます。</span><span class="sxs-lookup"><span data-stu-id="02386-104">You can create service object relations between a service object and a service agreement or service order.</span></span> <span data-ttu-id="02386-105">関係を作成すると、サービス対象がサービス合意またはサービス注文に関連付けられます。</span><span class="sxs-lookup"><span data-stu-id="02386-105">When you create a relation, you attach the service object to the service agreement or service order.</span></span>
 

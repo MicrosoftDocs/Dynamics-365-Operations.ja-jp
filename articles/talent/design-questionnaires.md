@@ -19,16 +19,16 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 506c4db7cd37fd85b3e132e7900eafdc4385fa5a
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 2b03bea4e9814c6be5b42d658633ddcd4a4e8281
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="design-a-questionnaire"></a><span data-ttu-id="474b8-105">アンケートのデザイン</span><span class="sxs-lookup"><span data-stu-id="474b8-105">Design a questionnaire</span></span>
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 <span data-ttu-id="474b8-106">このトピックは、アンケートを作成するプロセスについて説明します。</span><span class="sxs-lookup"><span data-stu-id="474b8-106">This topic describes the process for creating a questionnaire.</span></span> <span data-ttu-id="474b8-107">最初の手順では、アンケートを設計します。</span><span class="sxs-lookup"><span data-stu-id="474b8-107">The first step is to design the questionnaire.</span></span> <span data-ttu-id="474b8-108">アンケートを設計する場合は、質問と回答を書き込むだけでなく、回答を記録し、表にする構造を作成します。</span><span class="sxs-lookup"><span data-stu-id="474b8-108">When you design a questionnaire, you not only write the questions and answers, but also create the structure that enables answers to be recorded and tabulated.</span></span> 
 

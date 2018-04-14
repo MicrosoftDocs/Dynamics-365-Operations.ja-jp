@@ -18,17 +18,16 @@ ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: a819fb6aaf14fcc79e58ff3c6796cb3f5f3c59a9
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 9323eeb4f1032d3abcd800129b0a02c972161d01
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="fixed-asset-depreciation-for-japan-faq"></a><span data-ttu-id="9fab7-103">日本の固定資産減価償却のよく寄せられる質問</span><span class="sxs-lookup"><span data-stu-id="9fab7-103">Fixed asset depreciation for Japan FAQ</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="9fab7-104">この記事は、日本の固定資産の減価償却についてよく寄せられる質問に回答します。</span><span class="sxs-lookup"><span data-stu-id="9fab7-104">This article answers some frequently asked questions about fixed asset depreciation for Japan.</span></span>
 

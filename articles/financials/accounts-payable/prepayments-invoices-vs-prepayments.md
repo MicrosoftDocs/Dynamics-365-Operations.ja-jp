@@ -19,23 +19,23 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c1f30e375b759641875ed6a5a7d2f77132715c57
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 9d2ce5dd0e9072c0f8430ee5390c8cafed9a6f60
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="prepayment-invoices-vs-prepayments"></a><span data-ttu-id="fc374-105">前払請求書と前払</span><span class="sxs-lookup"><span data-stu-id="fc374-105">Prepayment invoices vs. prepayments</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="fc374-106">このトピックは、組織が事前の支払 (前払) に使用できる 2 つの方法に関する説明と対比を提供します。</span><span class="sxs-lookup"><span data-stu-id="fc374-106">This topic describes and contrasts the two methods that organizations can use for advance payments (prepayments).</span></span> <span data-ttu-id="fc374-107">ひとつは、発注書に関連付けられている前払請求書を作成します。</span><span class="sxs-lookup"><span data-stu-id="fc374-107">In one method, you create a prepayment invoice that is associated with a purchase order.</span></span> <span data-ttu-id="fc374-108">もう 1 つの方法では、仕訳入力を作成し、前払仕訳伝票としてマークすることによって前払仕訳伝票を作成できます。</span><span class="sxs-lookup"><span data-stu-id="fc374-108">In the other method, you create prepayment journal vouchers by creating journal entries and marking them as prepayment journal vouchers.</span></span>
 
 <span data-ttu-id="fc374-109">組織は、商品またはサービスが履行される前に、仕入先へ前払を払出す場合があります。</span><span class="sxs-lookup"><span data-stu-id="fc374-109">Organizations might issue prepayments (advance payments) to vendors for goods or services before those goods or services are fulfilled.</span></span> <span data-ttu-id="fc374-110">仕入先に前払を払出す場合に 2 つの方法を使用できます。</span><span class="sxs-lookup"><span data-stu-id="fc374-110">Two methods can be used to issue prepayments to vendors.</span></span> <span data-ttu-id="fc374-111">リスクを最小限にするには、発注書の前払を定義して前払を追跡できます。</span><span class="sxs-lookup"><span data-stu-id="fc374-111">To minimize risk, you can track prepayments by defining the prepayment on a purchase order.</span></span> <span data-ttu-id="fc374-112">この方法では、発注書に関連付けられている前払請求書を作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="fc374-112">For this method, you must create a prepayment invoice that is associated with a purchase order.</span></span> <span data-ttu-id="fc374-113">この方法は前払請求と呼ばれます。</span><span class="sxs-lookup"><span data-stu-id="fc374-113">This method is referred to as prepayment invoicing.</span></span> <span data-ttu-id="fc374-114">細部まで前払を追跡しない、または仕入先からの前払請求書を受信しない組織は、前払請求方法に代わって前払仕訳伝票を使用できます。</span><span class="sxs-lookup"><span data-stu-id="fc374-114">Organizations that don't want to track prepayments as closely or don't receive a prepayment invoice from their vendor can use prepayment journal vouchers instead of the prepayment invoicing method.</span></span> <span data-ttu-id="fc374-115">仕訳入力を作成し、前払仕訳伝票としてマークすることによって、前払仕訳伝票を作成できます。</span><span class="sxs-lookup"><span data-stu-id="fc374-115">You can create prepayment journal vouchers by creating journal entries and marking them as prepayment journal vouchers.</span></span> <span data-ttu-id="fc374-116">この方法では、どの発注書に対してどの前払を仕入先に行ったかは追跡できません。</span><span class="sxs-lookup"><span data-stu-id="fc374-116">For this method, you can't track which prepayments to a vendor are made against which purchase orders.</span></span> <span data-ttu-id="fc374-117">しかし、決済する転記済の前払を発注書に対してマークすることができます。</span><span class="sxs-lookup"><span data-stu-id="fc374-117">However, you can mark a posted prepayment for settlement against a purchase order.</span></span>
 
 ## <a name="when-to-use-prepayment-invoicing-vs-prepayments"></a><span data-ttu-id="fc374-118">前払請求と前払を使用する場合</span><span class="sxs-lookup"><span data-stu-id="fc374-118">When to use prepayment invoicing vs. prepayments</span></span>
+
 | <span data-ttu-id="fc374-119">前払請求</span><span class="sxs-lookup"><span data-stu-id="fc374-119">Prepayment invoicing</span></span>                                                                | <span data-ttu-id="fc374-120">前払</span><span class="sxs-lookup"><span data-stu-id="fc374-120">Prepayments</span></span>                                                              |
 |-------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
 | <span data-ttu-id="fc374-121">発注書に前払の値を定義します。</span><span class="sxs-lookup"><span data-stu-id="fc374-121">Define a prepayment value on the purchase order.</span></span>                                    | <span data-ttu-id="fc374-122">発注書には前払の値が定義されていません。</span><span class="sxs-lookup"><span data-stu-id="fc374-122">No prepayment value is defined on the purchase order.</span></span>                    |

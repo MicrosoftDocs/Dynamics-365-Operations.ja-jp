@@ -18,16 +18,16 @@ ms.author: shielas
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 58089418ac233d31a2a4f0298af5e884d77a67d3
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: f3abbb2d124ee6c11e46e3680a342ecb12a12ec3
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="personnel-actions-faq"></a><span data-ttu-id="5feb0-104">人事のアクション [FAQ]</span><span class="sxs-lookup"><span data-stu-id="5feb0-104">Personnel actions [FAQ]</span></span>
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 <span data-ttu-id="5feb0-105">このトピックでは、組織で個人のアクションを使用する場合に生じる質問に答えます。</span><span class="sxs-lookup"><span data-stu-id="5feb0-105">This topic contains answers to questions that you might have if your organization uses personnel actions.</span></span> <span data-ttu-id="5feb0-106">個人のアクションは、特定の個人に関連するタスクを実行する際に行う必要がある追加手順です。</span><span class="sxs-lookup"><span data-stu-id="5feb0-106">Personnel actions are additional steps that you must complete when you perform certain personnel-related tasks.</span></span> <span data-ttu-id="5feb0-107">個人のアクションが必要なタスクの例は、新しい職位を作成、既存の職位の値を変更、新しい作業者を雇う、作業者を転送する、作業者の報酬を変更、職位の割り当てを変更または作業者を終了することなでです。</span><span class="sxs-lookup"><span data-stu-id="5feb0-107">Examples of tasks that might require personnel actions are when you create new positions, modify existing position values, hire new workers, transfer workers, change worker compensation, change position assignments, or terminate workers.</span></span>
 
@@ -64,9 +64,9 @@ ms.lasthandoff: 03/08/2018
 <span data-ttu-id="5feb0-140">個人のアクション要求が失敗した場合は、次の手順に従ってエラーを解決し、要求を再送信しいます。</span><span class="sxs-lookup"><span data-stu-id="5feb0-140">If a personnel action request fails, follow these steps to resolve the error and resubmit the request:</span></span>
 
 > 1. <span data-ttu-id="5feb0-141">[**アクション ウィンドウ**] で [**エラー テキスト**] ボタンをクリックして、問題を説明するメッセージを表示します。</span><span class="sxs-lookup"><span data-stu-id="5feb0-141">On the **Action Pane**, click the **Error text** button to view the message text that describes the problem.</span></span>
-
+> 
 > 2. <span data-ttu-id="5feb0-142">[**アクション ペイン**] で [**再有効化**] をクリックし、最新の情報をロードし、人事のアクションのステータスを **ドラフト** に設定します。</span><span class="sxs-lookup"><span data-stu-id="5feb0-142">On the **Action Pane**, click **Reactivate** to load the latest information and set the status of the personnel action back to **Draft**.</span></span>
-
+> 
 > 3. <span data-ttu-id="5feb0-143">エラーを解決し、**完了** または **送信** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5feb0-143">Resolve the error, and then click **Complete** or **Submit**.</span></span>
 
 ## <a name="what-happens-to-a-personnel-action-that-uses-workflow-when-the-final-approval-is-completed"></a><span data-ttu-id="5feb0-144">最終承認を終えた後、ワークフローを使用する個人のアクションはどうなりますか。</span><span class="sxs-lookup"><span data-stu-id="5feb0-144">What happens to a personnel action that uses workflow when the final approval is completed?</span></span>

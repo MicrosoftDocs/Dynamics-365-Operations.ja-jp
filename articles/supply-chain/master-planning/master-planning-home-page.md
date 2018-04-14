@@ -20,17 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 18ed011fa1c1aa35b4a401d51bffc6af19395577
-ms.openlocfilehash: 030579ac73d6333ac4ed55433b9679a58247c088
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 336356b5abe38b27fdfa5fe74d52a130e7b8d445
 ms.contentlocale: ja-jp
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="master-planning-home-page"></a><span data-ttu-id="20127-103">マスター プランのホーム ページ</span><span class="sxs-lookup"><span data-stu-id="20127-103">Master planning home page</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="20127-104">その中心に、マスター プランにより、会社が原材料および会社の目標を満たす能力に対する将来の必要性を特定し調整することができます。</span><span class="sxs-lookup"><span data-stu-id="20127-104">At its core, Master planning allows companies to determine and balance the future need for raw materials and capacity to meet company goals.</span></span> <span data-ttu-id="20127-105">マスター プランを以下の点を評価します。</span><span class="sxs-lookup"><span data-stu-id="20127-105">Master planning assesses the following:</span></span> 
 
@@ -58,6 +57,7 @@ ms.lasthandoff: 02/13/2018
 <span data-ttu-id="20127-130">[![マスター プランの学習マップ](./media/master-planning-learning-map.png)](./media/master-planning-learning-map.png)</span><span class="sxs-lookup"><span data-stu-id="20127-130">[![Learning map for master planning](./media/master-planning-learning-map.png)](./media/master-planning-learning-map.png)</span></span>
 
 ## <a name="quick-links"></a><span data-ttu-id="20127-131">クイック リンク</span><span class="sxs-lookup"><span data-stu-id="20127-131">Quick links</span></span>
+
 |      |   |
 |------|---|
 |        [<span data-ttu-id="20127-132">マスター プラン</span><span class="sxs-lookup"><span data-stu-id="20127-132">Master plans</span></span>](master-plans.md)       |     [<span data-ttu-id="20127-133">制約付き計画の生成</span><span class="sxs-lookup"><span data-stu-id="20127-133">Generate a constrained plan</span></span>](./tasks/constrained-plan.md)  |

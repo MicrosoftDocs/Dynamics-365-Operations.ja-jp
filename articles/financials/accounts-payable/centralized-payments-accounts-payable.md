@@ -19,17 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 54329582abd36a8ca896ce731ce06ca4de58bbb0
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 5ee2295c44a5b037b66c756cd91193a8ad09f1e6
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="centralized-payments-for-accounts-payable"></a><span data-ttu-id="91cb9-105">買掛金勘定の集中支払</span><span class="sxs-lookup"><span data-stu-id="91cb9-105">Centralized payments for Accounts payable</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="91cb9-106">複数の法人を含む組織では、すべての支払を処理する単一の法人を使用して支払を作成および管理できます。</span><span class="sxs-lookup"><span data-stu-id="91cb9-106">Organizations that include multiple legal entities can create and manage payments by using a single legal entity that handles all payments.</span></span> <span data-ttu-id="91cb9-107">したがって、同じ支払を複数の法人に入力する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="91cb9-107">Therefore, the same payments don't have to be entered in multiple legal entities.</span></span> <span data-ttu-id="91cb9-108">この記事は、集中支払に対する転記がさまざまなシナリオで処理される方法の例を示します。</span><span class="sxs-lookup"><span data-stu-id="91cb9-108">This article provides examples that show how posting for centralized payments is handled in various scenarios.</span></span>
 

@@ -16,15 +16,15 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: da104327cdfcbb794937ed4de5d1aaa6ed632212
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: c49df3acede7b20be0399e17cf8bf3ef66cee179
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="generate-and-post-payment-fee-japan"></a><span data-ttu-id="144bc-103">支払手数料の生成および転記 (日本)</span><span class="sxs-lookup"><span data-stu-id="144bc-103">Generate and post payment fee (Japan)</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="144bc-104">このタスクでは、日本の支払手数料を生成および転記する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="144bc-104">This task walks you through generating and posting a payment fee for Japan.</span></span>
 

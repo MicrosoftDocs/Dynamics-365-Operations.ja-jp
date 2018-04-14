@@ -19,23 +19,23 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 3679ccf304a32385c162ba3663eba2300f028817
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 5c824bd9537dd326ac348c66546051968155e9f9
 ms.contentlocale: ja-jp
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="financial-report-components"></a><span data-ttu-id="e7b63-105">財務諸表コンポーネント</span><span class="sxs-lookup"><span data-stu-id="e7b63-105">Financial report components</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="e7b63-106">この記事では、財務諸表でコンポーネント、またはレポート定義の構成要素ブロックを使用する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="e7b63-106">This article describes how the components, or building blocks, of report definitions are used in financial reporting.</span></span> <span data-ttu-id="e7b63-107">これらの構成要素には、行定義、列定義、およびレポート ツリー定義が含まれます。</span><span class="sxs-lookup"><span data-stu-id="e7b63-107">These building blocks include row definitions, column definitions, and reporting tree definitions.</span></span> <span data-ttu-id="e7b63-108">レポート パーツを組織し、ロックする方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="e7b63-108">The article explains how to organize and lock building blocks.</span></span> 
 
 <span data-ttu-id="e7b63-109">財務レポート デザイナーの背後にある設計思想は、情報を最小のコンポーネントまたは構成要素に分割してから、必要に応じてコンポーネントを組み合わせることです。</span><span class="sxs-lookup"><span data-stu-id="e7b63-109">The design philosophy behind financial report designer is to break information down into the smallest component or building block, and then mix and match the components as required.</span></span> <span data-ttu-id="e7b63-110">したがって、レポート書式の設定は財務データとは別であり、Microsoft Dynamics ERP システムでの財務データを変更することなく、レポートのデザインを変更することができます。</span><span class="sxs-lookup"><span data-stu-id="e7b63-110">Therefore, your report formatting is separate from your financial data, and you can change the design of a report without modifying the financial data in your Microsoft Dynamics ERP system.</span></span> <span data-ttu-id="e7b63-111">この構成要素法を使用して、テキスト、金額、および計算を組み合わせて必要なレポートを生成することができます。</span><span class="sxs-lookup"><span data-stu-id="e7b63-111">By using this building block approach, you can combine text, amounts, and calculations to produce the reports that you require.</span></span> <span data-ttu-id="e7b63-112">さらに、様々な方法で行程を表示できるという柔軟性により、創造性が促されます。</span><span class="sxs-lookup"><span data-stu-id="e7b63-112">Additionally, this flexibility encourages creativity by making it easy for you to view your operations in different ways.</span></span> <span data-ttu-id="e7b63-113">レポート定義の個々の構成要素は、３ 次元スプレッドシートに似ていますが、より強力なものとなっています。</span><span class="sxs-lookup"><span data-stu-id="e7b63-113">The individual building blocks of a report definition are similar to a three-dimensional spreadsheet, but they have more power.</span></span> <span data-ttu-id="e7b63-114">レポート定義は、レポートに使用する必要のある行定義、列定義、およびオプションのレポート ツリー定義を指定します。</span><span class="sxs-lookup"><span data-stu-id="e7b63-114">A report definition specifies the row definition, column definition, and optional reporting tree definition that should be used for the report.</span></span> <span data-ttu-id="e7b63-115">また、生成したレポートの保管場所および形式の設定方法についての情報も備えています。</span><span class="sxs-lookup"><span data-stu-id="e7b63-115">It also includes information about where to store the report that is generated and how to format it.</span></span> 
 
 ## <a name="building-blocks-of-a-report"></a><span data-ttu-id="e7b63-116">レポートのレポート パーツ</span><span class="sxs-lookup"><span data-stu-id="e7b63-116">Building blocks of a report</span></span>
+
 | <span data-ttu-id="e7b63-117">構成要素</span><span class="sxs-lookup"><span data-stu-id="e7b63-117">Building block</span></span>            | <span data-ttu-id="e7b63-118">説明</span><span class="sxs-lookup"><span data-stu-id="e7b63-118">Description</span></span>                     | <span data-ttu-id="e7b63-119">詳細情報</span><span class="sxs-lookup"><span data-stu-id="e7b63-119">For more information</span></span>                                    |
 |---------------------------|---------------------------------|---------------------------------------------------------|
 | <span data-ttu-id="e7b63-120">行の定義</span><span class="sxs-lookup"><span data-stu-id="e7b63-120">Row definition</span></span>            | <span data-ttu-id="e7b63-121">行定義は、(たとえば給与または売上など) のレポート上の説明行を定義します。</span><span class="sxs-lookup"><span data-stu-id="e7b63-121">A row definition defines the descriptive lines (for example, salaries or sales) on a report.</span></span> <span data-ttu-id="e7b63-122">また、各明細品目の金額を含む区分値または分析コードを一覧化し、行の書式設定および計算を含みます。</span><span class="sxs-lookup"><span data-stu-id="e7b63-122">It also lists the segment values or dimensions that contain the values for each line item, and includes row formatting and calculations.</span></span>                                                    | [<span data-ttu-id="e7b63-123">行の定義</span><span class="sxs-lookup"><span data-stu-id="e7b63-123">Row definitions</span></span>](row-definitions-financial-reporting.md)                       |

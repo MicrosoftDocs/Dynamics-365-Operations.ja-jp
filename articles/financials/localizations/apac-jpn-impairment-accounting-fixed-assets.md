@@ -18,16 +18,16 @@ ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: f8a35182cd1f1f891503325da8fc9ead0655c22f
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 35dc8b4a20f0542aec786326217fba90afbdeda2
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="impairment-accounting-for-fixed-assets-for-japan"></a><span data-ttu-id="56196-103">日本の固定資産の減損会計</span><span class="sxs-lookup"><span data-stu-id="56196-103">Impairment accounting for fixed assets for Japan</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="56196-104">このトピックでは、日本の固定資産の減損会計に関する情報について説明します。</span><span class="sxs-lookup"><span data-stu-id="56196-104">This topic includes information about impairment accounting for fixed assets in Japan.</span></span>
 

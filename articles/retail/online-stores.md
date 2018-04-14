@@ -20,17 +20,16 @@ ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: d9b080ff46a0fbc73ed4f8fa3f03d71e9d758cc2
-ms.openlocfilehash: 1129474334744c500ef9b9fc58a913112417fb08
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: ef684990bc71f28756d478ed9d9608c57bb25eda
 ms.contentlocale: ja-jp
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="online-store-overview"></a><span data-ttu-id="0a61c-103">オンライン ストアの概要</span><span class="sxs-lookup"><span data-stu-id="0a61c-103">Online store overview</span></span>
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 <span data-ttu-id="0a61c-104">この記事は、小売オンライン ストアに関する情報および、オンライン ストアを Microsoft Dynamics 365 for Retail で設定する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="0a61c-104">This article provides information about Retail online stores and how to set them up in Microsoft Dynamics 365 for Retail.</span></span>
 

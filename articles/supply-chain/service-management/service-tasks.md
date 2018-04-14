@@ -19,16 +19,16 @@ ms.author: YuyuScheller
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 221b9dae7e83e7f4a535ac60f2a2011533d7861c
-ms.openlocfilehash: de180a1258bbfb95acbfd0985cb91c88efc320f2
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 29b6414fe0127489a93ffe2a564e44dcb7a43b10
 ms.contentlocale: ja-jp
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="service-tasks"></a><span data-ttu-id="c4f67-104">サービス作業</span><span class="sxs-lookup"><span data-stu-id="c4f67-104">Service tasks</span></span>  
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="c4f67-105">サービス作業は、サービス注文で実行される作業を記述するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="c4f67-105">Use service tasks to describe the task to be completed during a service order.</span></span>
 <span data-ttu-id="c4f67-106">この情報は、技術者と顧客の両方が参照できます。</span><span class="sxs-lookup"><span data-stu-id="c4f67-106">Both technicians and customers can see this information.</span></span>

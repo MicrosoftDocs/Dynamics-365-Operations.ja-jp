@@ -20,17 +20,16 @@ ms.author: prabhup
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: d9b080ff46a0fbc73ed4f8fa3f03d71e9d758cc2
-ms.openlocfilehash: 2066f6c9dd71144a330e00a71f02dfc21dd930bc
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: dccb702c072b7fae41f5200783a9c95eb8c54988
 ms.contentlocale: ja-jp
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="create-and-manage-attributes"></a><span data-ttu-id="2eefe-104">属性の作成と管理</span><span class="sxs-lookup"><span data-stu-id="2eefe-104">Create and manage attributes</span></span>
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 <span data-ttu-id="2eefe-105">この記事は、Microsoft Dynamics 365 for Retail の属性について説明します。</span><span class="sxs-lookup"><span data-stu-id="2eefe-105">This article describes attributes in Microsoft Dynamics 365 for Retail.</span></span> <span data-ttu-id="2eefe-106">[属性] により、ユーザー定義フィールドを使用して製品およびその特性を説明できます。</span><span class="sxs-lookup"><span data-stu-id="2eefe-106">Attributes let you describe a product and its characteristics through user-defined fields.</span></span>
 
@@ -58,7 +57,7 @@ ms.lasthandoff: 01/17/2018
 
 ## <a name="attribute-type"></a><span data-ttu-id="2eefe-173">属性タイプ</span><span class="sxs-lookup"><span data-stu-id="2eefe-173">Attribute type</span></span>
   <span data-ttu-id="2eefe-174">[![attributes-fixed-copy](./media/attributes-fixed-copy.png)](./media/attributes-fixed-copy.png)</span><span class="sxs-lookup"><span data-stu-id="2eefe-174">[![attributes-fixed-copy](./media/attributes-fixed-copy.png)](./media/attributes-fixed-copy.png)</span></span> 
-  
+
 <span data-ttu-id="2eefe-175">属性は、属性タイプをベースにしています。</span><span class="sxs-lookup"><span data-stu-id="2eefe-175">Attributes are based on attribute types.</span></span> <span data-ttu-id="2eefe-176">属性タイプは、特定の属性に入力できるデータのタイプを識別します。</span><span class="sxs-lookup"><span data-stu-id="2eefe-176">Attribute types identify the type of data that can be entered for a specific attribute.</span></span> <span data-ttu-id="2eefe-177">現在、Microsoft Dynamics 365 for Retail では、次の属性タイプをサポートしています :</span><span class="sxs-lookup"><span data-stu-id="2eefe-177">Currently, Microsoft Dynamics 365 for Retail supports the following attribute types:</span></span>
 
 -   <span data-ttu-id="2eefe-178">[通貨] – この属性タイプは、通貨の値をサポートします。</span><span class="sxs-lookup"><span data-stu-id="2eefe-178">**Currency** – This attribute type supports currency values.</span></span> <span data-ttu-id="2eefe-179">これはバインドできますし (値の範囲をサポートできる) 開いたままにもできます。</span><span class="sxs-lookup"><span data-stu-id="2eefe-179">It can be bounded (that is, it can support a value range), or it can be left open.</span></span>

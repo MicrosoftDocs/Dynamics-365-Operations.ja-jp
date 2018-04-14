@@ -17,16 +17,16 @@ ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
-ms.openlocfilehash: dfac5fe931cd6932da3a3e851b2578267449ea7b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 948fdefc52db2e5cb46e7708d36d172b38285913
 ms.contentlocale: ja-jp
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="cash-overview-power-bi-content"></a><span data-ttu-id="99376-104">キャッシュの概要 Power BI コンテンツ</span><span class="sxs-lookup"><span data-stu-id="99376-104">Cash overview Power BI content</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="99376-105">このトピックでは、**キャッシュの概要** Microsoft Power BI content について説明します。</span><span class="sxs-lookup"><span data-stu-id="99376-105">This topic describes the **Cash overview** Microsoft Power BI content.</span></span> <span data-ttu-id="99376-106">コンテンツに含まれているレポートにアクセスする方法を説明し、コンテンツを作成するために使用したデータ モデルおよびエンティティについての情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="99376-106">It explains how to access the reports that are included in the content, and provides information about the data model and entities that were used to build the content.</span></span>
 

@@ -19,17 +19,16 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: c87909d9eb3a4d717e0c40289353da0267a51f60
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: aa7c7bfaf4301904e1b7ae242efaf8b660fb076a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="configure-expense-management"></a><span data-ttu-id="afe53-103">経費管理の構成</span><span class="sxs-lookup"><span data-stu-id="afe53-103">Configure expense management</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="afe53-104">このトピックは、Microsoft Dynamics 365 for Finance and Operations の経費管理をコンフィギュレーションする前に、計画プロセス中に決定する必要のある考慮事項について説明します。</span><span class="sxs-lookup"><span data-stu-id="afe53-104">This topic describes the considerations and the decisions that you must make during the planning process before you configure Expense management in Microsoft Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="afe53-105">[経費管理] で、支払方法、出張費要求、経費精算書、ポリシーなどの情報を格納できます。</span><span class="sxs-lookup"><span data-stu-id="afe53-105">In Expense management, you can store information about payment methods, travel requisitions, expense reports, policies, and so on.</span></span>
 

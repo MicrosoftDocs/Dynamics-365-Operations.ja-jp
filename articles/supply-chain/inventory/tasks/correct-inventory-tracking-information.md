@@ -17,15 +17,15 @@ ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: 4ca093e74daaf102a92d74f3f05d8ad4ea9cbf1b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: df480e7ae7996599f2e69a2d0e13be6db7a43e13
 ms.contentlocale: ja-jp
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="correct-inventory-tracking-information"></a><span data-ttu-id="b1739-103">在庫追跡情報の修正</span><span class="sxs-lookup"><span data-stu-id="b1739-103">Correct inventory tracking information</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="b1739-104">この手順は、在庫追跡情報を修正するための在庫振替仕訳帳の作成および転記プロセスについて説明します。</span><span class="sxs-lookup"><span data-stu-id="b1739-104">This procedure walks you through the process of creating and posting an inventory transfer journal in order to correct inventory tracking information.</span></span> <span data-ttu-id="b1739-105">この例では、間違って登録したバッチを別のバッチに変更することにより、バッチ管理されている品目の情報が更新されます。</span><span class="sxs-lookup"><span data-stu-id="b1739-105">In this example, we’ll update the information of a batch controlled item by changing an incorrectly registered batch to another batch.</span></span> <span data-ttu-id="b1739-106">デモ データ会社 USPI または独自のデータを使用してこの手順の説明を見ることができます。</span><span class="sxs-lookup"><span data-stu-id="b1739-106">You can walk through this procedure in demo data company USPI, or using your own data.</span></span> <span data-ttu-id="b1739-107">独自のデータを使用する場合、バッチ対応の品目が必要であり、場所により制御されていない必要があります。</span><span class="sxs-lookup"><span data-stu-id="b1739-107">If you use your own data, you need to have an item that’s batch-enabled, and it must not be location-controlled.</span></span> <span data-ttu-id="b1739-108">在庫振替用に在庫仕訳帳名を設定してある必要もあります。</span><span class="sxs-lookup"><span data-stu-id="b1739-108">You also need to have an inventory journal name set up for inventory transfers.</span></span> <span data-ttu-id="b1739-109">通常、これらのタスクを実施するのは、倉庫の従業員です。</span><span class="sxs-lookup"><span data-stu-id="b1739-109">These tasks would normally be carried out by a warehouse employee.</span></span>
 

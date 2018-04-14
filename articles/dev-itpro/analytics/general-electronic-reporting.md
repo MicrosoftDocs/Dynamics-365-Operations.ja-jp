@@ -19,17 +19,16 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ea9550b7209064a2842d7e5efe55e9e51c23b9f8
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: eeea5f6f9860bf109bb3063c5a2cc0517192e95d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="electronic-reporting-overview"></a><span data-ttu-id="d6d82-104">電子申告の概要</span><span class="sxs-lookup"><span data-stu-id="d6d82-104">Electronic reporting overview</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="d6d82-105">このトピックでは、電子申告 (ER) ツールの概要を示します。</span><span class="sxs-lookup"><span data-stu-id="d6d82-105">This topic provides an overview of the Electronic reporting (ER) tool.</span></span> <span data-ttu-id="d6d82-106">重要な概念、ER がサポートするシナリオについて説明し、ソリューションの一部として設計およびリリースされているフォーマットの一覧も掲載しています。</span><span class="sxs-lookup"><span data-stu-id="d6d82-106">It includes information about key concepts, the scenarios that ER supports, and a list of formats that have been designed and released as part of the solution.</span></span>
 
@@ -287,6 +286,7 @@ ms.lasthandoff: 11/03/2017
 <span data-ttu-id="d6d82-344">ER により、現在の派生コンポーネントのドラフト バージョンの中で、基本コンポーネントの最新バージョンの変更を自動的に採用できるようになります。</span><span class="sxs-lookup"><span data-stu-id="d6d82-344">ER lets you automatically adopt changes of the latest version of the base component in the current draft version of the derived component.</span></span> <span data-ttu-id="d6d82-345">このプロセスは、*再ベース中*と呼ばれています。</span><span class="sxs-lookup"><span data-stu-id="d6d82-345">This process is known as *rebasing*.</span></span> <span data-ttu-id="d6d82-346">たとえば、LCS からインポートした最新バージョンの形式から導入された新しい規制上の変更は、電子ドキュメントのこの形式のカスタマイズされたバージョンに自動的にマージできます。</span><span class="sxs-lookup"><span data-stu-id="d6d82-346">For example, a new regulatory change that has been introduced in the latest version of the format that was imported from LCS can be automatically merged into the customized version of this format of the electronic document.</span></span> <span data-ttu-id="d6d82-347">自動的にマージできないすべての変更は競合とみなされます。</span><span class="sxs-lookup"><span data-stu-id="d6d82-347">Any changes that can’t be merged automatically are considered conflicts.</span></span> <span data-ttu-id="d6d82-348">これらの競合は適切なコンポーネントのデザイナー ツールの手動解決に対して表示されます。</span><span class="sxs-lookup"><span data-stu-id="d6d82-348">These conflicts are presented for manual resolution in the designer tool for the appropriate component.</span></span> <span data-ttu-id="d6d82-349">このシナリオの詳細をよく理解するために [**新しい基準のバージョンの採用による ER アップグレード形式**] タスク ガイド (**7.5.5.3 変更された IT サービス / ソリューション コンポーネントの取得 / 開発 (10683)** ビジネス プロセスの一部) を再生します。</span><span class="sxs-lookup"><span data-stu-id="d6d82-349">To become familiar with the details of this scenario, play the **ER Upgrade format by adoption of new base version of that format** task guide (part of the **7.5.5.3 Acquire/Develop changed IT service/solution component (10683)** business process).</span></span>
 
 ## <a name="list-of-er-configurations-that-are-delivered-in-the-finance-and-operations-solution"></a><span data-ttu-id="d6d82-350">Finance and Operations のソリューションに提供される ER コンフィギュレーションのリスト</span><span class="sxs-lookup"><span data-stu-id="d6d82-350">List of ER configurations that are delivered in the Finance and Operations solution</span></span>
+
 | <span data-ttu-id="d6d82-351">ドメイン固有のデータ モデル コンフィギュレーション: タイトル</span><span class="sxs-lookup"><span data-stu-id="d6d82-351">Domain-specific data model configurations: Title</span></span> | <span data-ttu-id="d6d82-352">ドメイン</span><span class="sxs-lookup"><span data-stu-id="d6d82-352">Domain</span></span>                | <span data-ttu-id="d6d82-353">データ モデル依存フォーマット コンフィギュレーション: タイトル</span><span class="sxs-lookup"><span data-stu-id="d6d82-353">Data model–dependent format configurations: Title</span></span> | <span data-ttu-id="d6d82-354">説明</span><span class="sxs-lookup"><span data-stu-id="d6d82-354">Description</span></span>                                                        |
 |--------------------------------------------------|-----------------------|---------------------------------------------------|--------------------------------------------------------------------|
 | <span data-ttu-id="d6d82-355">監査ファイル モデル</span><span class="sxs-lookup"><span data-stu-id="d6d82-355">Audit file model</span></span>                                 | <span data-ttu-id="d6d82-356">財務監査</span><span class="sxs-lookup"><span data-stu-id="d6d82-356">Financial audit</span></span>       |                                                   |                                                                    |

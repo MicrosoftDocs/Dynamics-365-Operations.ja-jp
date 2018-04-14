@@ -19,17 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ac64ece82abe75f3cba437b1ec1af499fbbce8e4
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: e55622398a7453a6d049697ad01bcf64c50c553b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="settle-a-partial-customer-payment-that-has-multiple-discount-periods"></a><span data-ttu-id="37836-103">複数の割引期間を持つ一部の顧客支払を決済する</span><span class="sxs-lookup"><span data-stu-id="37836-103">Settle a partial customer payment that has multiple discount periods</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="37836-104">この記事は、複数の割引期間がある場合に一部顧客支払が決済される方法を示します。</span><span class="sxs-lookup"><span data-stu-id="37836-104">This article shows how partial customer payments are settled when there are multiple discount periods.</span></span>
 

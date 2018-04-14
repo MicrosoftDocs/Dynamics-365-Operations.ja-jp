@@ -15,15 +15,15 @@ ms.author: jeffbl
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Application update 5
 ms.translationtype: HT
-ms.sourcegitcommit: 44b0c4e39ac7410d27ce531c898bb8c423af334a
-ms.openlocfilehash: 303f86d6a57e039cb51700744697949845239b10
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 364207d188c0361cbbc9627bec35e059a7bb552c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="assortment-management"></a><span data-ttu-id="cf70c-103">品揃え管理</span><span class="sxs-lookup"><span data-stu-id="cf70c-103">Assortment management</span></span>
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## <a name="overview"></a><span data-ttu-id="cf70c-104">概要</span><span class="sxs-lookup"><span data-stu-id="cf70c-104">Overview</span></span>
 <span data-ttu-id="cf70c-105">Microsoft Dynamics 365 for Retail では、チャンネル間で製品の可用性を管理できる *品揃え* を提供しています。</span><span class="sxs-lookup"><span data-stu-id="cf70c-105">Microsoft Dynamics 365 for Retail provides *assortments* that let you manage product availability across channels.</span></span> <span data-ttu-id="cf70c-106">品揃えでは、特定の店舗および特定の期間に利用可能な商品が決まります。</span><span class="sxs-lookup"><span data-stu-id="cf70c-106">Assortments determine which products are available at specific stores and during a specific period.</span></span>

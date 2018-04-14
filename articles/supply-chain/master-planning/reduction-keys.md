@@ -20,17 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 506ca3aac7ad271ca7472f3b74627e94d97a74ee
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 6ca65d3c12abd64bef23954b45f73af1bf62f9f3
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="reduction-keys"></a><span data-ttu-id="f56e1-105">下方修正キー</span><span class="sxs-lookup"><span data-stu-id="f56e1-105">Reduction keys</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="f56e1-106">この記事は、下方修正キーを設定する方法を示す例を提供します。</span><span class="sxs-lookup"><span data-stu-id="f56e1-106">This articles provides examples that show how to set up a reduction key.</span></span> <span data-ttu-id="f56e1-107">これには、さまざまな下方修正キーの設定とそれぞれの結果に関する情報が含まれます。</span><span class="sxs-lookup"><span data-stu-id="f56e1-107">It includes information about the various reduction key settings and the results of each.</span></span> <span data-ttu-id="f56e1-108">予測要求を減らす方法を定義するには下方修正キーを使用できます。</span><span class="sxs-lookup"><span data-stu-id="f56e1-108">You can use a reduction key to define how to reduce forecast requirements.</span></span>
 
@@ -39,17 +38,19 @@ ms.lasthandoff: 11/03/2017
 
 <span data-ttu-id="f56e1-110">この例は、下方修正キーによって定義されたパーセンテージおよび期間に従って、下方修正キーが需要予測要求を減少させる方法を示します。</span><span class="sxs-lookup"><span data-stu-id="f56e1-110">This example shows how a reduction key reduces demand forecast requirements according to the percentages and periods that are defined by the reduction key.</span></span>
 
-1.  <span data-ttu-id="f56e1-111">**下方修正キー** ページで、次の行を設定します。</span><span class="sxs-lookup"><span data-stu-id="f56e1-111">On the **Reduction keys** page, set up the following lines.</span></span>
-    | <span data-ttu-id="f56e1-112">計上額</span><span class="sxs-lookup"><span data-stu-id="f56e1-112">Change</span></span> | <span data-ttu-id="f56e1-113">単位</span><span class="sxs-lookup"><span data-stu-id="f56e1-113">Unit</span></span>  | <span data-ttu-id="f56e1-114">パーセンテージ</span><span class="sxs-lookup"><span data-stu-id="f56e1-114">Percent</span></span> |
-    |--------|-------|---------|
-    | <span data-ttu-id="f56e1-115">1</span><span class="sxs-lookup"><span data-stu-id="f56e1-115">1</span></span>      | <span data-ttu-id="f56e1-116">月</span><span class="sxs-lookup"><span data-stu-id="f56e1-116">Month</span></span> | <span data-ttu-id="f56e1-117">100</span><span class="sxs-lookup"><span data-stu-id="f56e1-117">100</span></span>     |
-    | <span data-ttu-id="f56e1-118">2</span><span class="sxs-lookup"><span data-stu-id="f56e1-118">2</span></span>      | <span data-ttu-id="f56e1-119">月</span><span class="sxs-lookup"><span data-stu-id="f56e1-119">Month</span></span> | <span data-ttu-id="f56e1-120">75</span><span class="sxs-lookup"><span data-stu-id="f56e1-120">75</span></span>      |
-    | <span data-ttu-id="f56e1-121">3</span><span class="sxs-lookup"><span data-stu-id="f56e1-121">3</span></span>      | <span data-ttu-id="f56e1-122">月</span><span class="sxs-lookup"><span data-stu-id="f56e1-122">Month</span></span> | <span data-ttu-id="f56e1-123">50</span><span class="sxs-lookup"><span data-stu-id="f56e1-123">50</span></span>      |
-    | <span data-ttu-id="f56e1-124">4</span><span class="sxs-lookup"><span data-stu-id="f56e1-124">4</span></span>      | <span data-ttu-id="f56e1-125">月</span><span class="sxs-lookup"><span data-stu-id="f56e1-125">Month</span></span> | <span data-ttu-id="f56e1-126">25</span><span class="sxs-lookup"><span data-stu-id="f56e1-126">25</span></span>      |
+1. <span data-ttu-id="f56e1-111">**下方修正キー** ページで、次の行を設定します。</span><span class="sxs-lookup"><span data-stu-id="f56e1-111">On the **Reduction keys** page, set up the following lines.</span></span>
 
-2.  <span data-ttu-id="f56e1-127">品目の補充グループに下方修正キーを関連付けます。</span><span class="sxs-lookup"><span data-stu-id="f56e1-127">Link the reduction key to the item's coverage group.</span></span>
-3.  <span data-ttu-id="f56e1-128">**マスター プラン** ページで、**下方修正原則**フィールドで**割合 - 下方修正キー**を選択します。</span><span class="sxs-lookup"><span data-stu-id="f56e1-128">On the **Master plans** page, in the **Reduction principle** field, select **Percent - reduction key**.</span></span>
-4.  <span data-ttu-id="f56e1-129">毎月 1,000 個の需要予測を作成します。</span><span class="sxs-lookup"><span data-stu-id="f56e1-129">Create a demand forecast of 1,000 pieces per month.</span></span>
+   | <span data-ttu-id="f56e1-112">計上額</span><span class="sxs-lookup"><span data-stu-id="f56e1-112">Change</span></span> | <span data-ttu-id="f56e1-113">単位</span><span class="sxs-lookup"><span data-stu-id="f56e1-113">Unit</span></span>  | <span data-ttu-id="f56e1-114">パーセンテージ</span><span class="sxs-lookup"><span data-stu-id="f56e1-114">Percent</span></span> |
+   |--------|-------|---------|
+   |   <span data-ttu-id="f56e1-115">1</span><span class="sxs-lookup"><span data-stu-id="f56e1-115">1</span></span>    | <span data-ttu-id="f56e1-116">月</span><span class="sxs-lookup"><span data-stu-id="f56e1-116">Month</span></span> |   <span data-ttu-id="f56e1-117">100</span><span class="sxs-lookup"><span data-stu-id="f56e1-117">100</span></span>   |
+   |   <span data-ttu-id="f56e1-118">2</span><span class="sxs-lookup"><span data-stu-id="f56e1-118">2</span></span>    | <span data-ttu-id="f56e1-119">月</span><span class="sxs-lookup"><span data-stu-id="f56e1-119">Month</span></span> |   <span data-ttu-id="f56e1-120">75</span><span class="sxs-lookup"><span data-stu-id="f56e1-120">75</span></span>    |
+   |   <span data-ttu-id="f56e1-121">3</span><span class="sxs-lookup"><span data-stu-id="f56e1-121">3</span></span>    | <span data-ttu-id="f56e1-122">月</span><span class="sxs-lookup"><span data-stu-id="f56e1-122">Month</span></span> |   <span data-ttu-id="f56e1-123">50</span><span class="sxs-lookup"><span data-stu-id="f56e1-123">50</span></span>    |
+   |   <span data-ttu-id="f56e1-124">4</span><span class="sxs-lookup"><span data-stu-id="f56e1-124">4</span></span>    | <span data-ttu-id="f56e1-125">月</span><span class="sxs-lookup"><span data-stu-id="f56e1-125">Month</span></span> |   <span data-ttu-id="f56e1-126">25</span><span class="sxs-lookup"><span data-stu-id="f56e1-126">25</span></span>    |
+
+
+2. <span data-ttu-id="f56e1-127">品目の補充グループに下方修正キーを関連付けます。</span><span class="sxs-lookup"><span data-stu-id="f56e1-127">Link the reduction key to the item's coverage group.</span></span>
+3. <span data-ttu-id="f56e1-128">**マスター プラン** ページで、**下方修正原則**フィールドで**割合 - 下方修正キー**を選択します。</span><span class="sxs-lookup"><span data-stu-id="f56e1-128">On the **Master plans** page, in the **Reduction principle** field, select **Percent - reduction key**.</span></span>
+4. <span data-ttu-id="f56e1-129">毎月 1,000 個の需要予測を作成します。</span><span class="sxs-lookup"><span data-stu-id="f56e1-129">Create a demand forecast of 1,000 pieces per month.</span></span>
 
 <span data-ttu-id="f56e1-130">1 月 1 日に予測のスケジューリングを実行する場合、需要予測要求は、**下方修正キー**ページで設定したパーセンテージに従って消費されます。</span><span class="sxs-lookup"><span data-stu-id="f56e1-130">If you run forecast scheduling on January 1, the demand forecast requirements are consumed according to the percentages that you set up on the **Reduction keys** page.</span></span> <span data-ttu-id="f56e1-131">次の要求数量がマスター プランに転送されます。</span><span class="sxs-lookup"><span data-stu-id="f56e1-131">The following requirement quantities are transferred to the master plan.</span></span>
 
@@ -88,20 +89,21 @@ ms.lasthandoff: 11/03/2017
 ## <a name="example-3-transactions--dynamic-period-forecast-reduction-principle"></a><span data-ttu-id="f56e1-171">例 3: トランザクション - 動的期間の予測下方修正原則</span><span class="sxs-lookup"><span data-stu-id="f56e1-171">Example 3: Transactions  dynamic period forecast reduction principle</span></span>
 <span data-ttu-id="f56e1-172">ほとんどの場合、トランザクションが特定の予測期間内の需要予測を下方修正するようにシステムが設定されています: 週、月など)。</span><span class="sxs-lookup"><span data-stu-id="f56e1-172">In most cases, systems are set up so that transactions reduce demand forecast within specific forecast periods: weeks, months, and so on.</span></span> <span data-ttu-id="f56e1-173">これらの期間は下方修正キーで定義されます。</span><span class="sxs-lookup"><span data-stu-id="f56e1-173">These periods are defined in the reduction key.</span></span> <span data-ttu-id="f56e1-174">ただし、2 つの需要予測行の間の時間も、*暗黙に*期間ととらえることもできます。</span><span class="sxs-lookup"><span data-stu-id="f56e1-174">However, the time between two demand forecast lines can also *imply* a period.</span></span>
 
-1.  <span data-ttu-id="f56e1-175">次の日付および数量について需要予測を作成します。</span><span class="sxs-lookup"><span data-stu-id="f56e1-175">Create a demand forecast for the following dates and quantities.</span></span>
-    | <span data-ttu-id="f56e1-176">日</span><span class="sxs-lookup"><span data-stu-id="f56e1-176">Date</span></span>       | <span data-ttu-id="f56e1-177">需要予測</span><span class="sxs-lookup"><span data-stu-id="f56e1-177">Demand forecast</span></span> |
-    |------------|-----------------|
-    | <span data-ttu-id="f56e1-178">1 月 1 日</span><span class="sxs-lookup"><span data-stu-id="f56e1-178">January 1</span></span>  | <span data-ttu-id="f56e1-179">1.000</span><span class="sxs-lookup"><span data-stu-id="f56e1-179">1,000</span></span>           |
-    | <span data-ttu-id="f56e1-180">1 月 5 日</span><span class="sxs-lookup"><span data-stu-id="f56e1-180">January 5</span></span>  | <span data-ttu-id="f56e1-181">500</span><span class="sxs-lookup"><span data-stu-id="f56e1-181">500</span></span>             |
-    | <span data-ttu-id="f56e1-182">1 月 12 日</span><span class="sxs-lookup"><span data-stu-id="f56e1-182">January 12</span></span> | <span data-ttu-id="f56e1-183">1.000</span><span class="sxs-lookup"><span data-stu-id="f56e1-183">1,000</span></span>           |
+1. <span data-ttu-id="f56e1-175">次の日付および数量について需要予測を作成します。</span><span class="sxs-lookup"><span data-stu-id="f56e1-175">Create a demand forecast for the following dates and quantities.</span></span>
 
-    <span data-ttu-id="f56e1-184">この予測では、予測日の間に明瞭な周期がありません。日付 1 と日付 2 の間には 4 日間の期間があり、日付 2 と日付 3 の間には 7 日間の期間があります。</span><span class="sxs-lookup"><span data-stu-id="f56e1-184">In this forecast, there isn't a clear period between the forecast dates: between the first and second dates there is a four-day span, and between the second and third dates there is a seven-day span.</span></span> <span data-ttu-id="f56e1-185">このように周期が変動するものを、動的期間といいます。</span><span class="sxs-lookup"><span data-stu-id="f56e1-185">These various spans are the dynamic periods.</span></span>
-2.  <span data-ttu-id="f56e1-186">販売注文明細行を次のように作成します。</span><span class="sxs-lookup"><span data-stu-id="f56e1-186">Create sales order lines as follows.</span></span>
-    | <span data-ttu-id="f56e1-187">日</span><span class="sxs-lookup"><span data-stu-id="f56e1-187">Date</span></span>                             | <span data-ttu-id="f56e1-188">販売注文数量</span><span class="sxs-lookup"><span data-stu-id="f56e1-188">Sales order quantity</span></span> |
-    |----------------------------------|----------------------|
-    | <span data-ttu-id="f56e1-189">前年度の 12 月 15 日</span><span class="sxs-lookup"><span data-stu-id="f56e1-189">December 15 in the previous year</span></span> | <span data-ttu-id="f56e1-190">500</span><span class="sxs-lookup"><span data-stu-id="f56e1-190">500</span></span>                  |
-    | <span data-ttu-id="f56e1-191">1 月 3 日</span><span class="sxs-lookup"><span data-stu-id="f56e1-191">January 3</span></span>                        | <span data-ttu-id="f56e1-192">100</span><span class="sxs-lookup"><span data-stu-id="f56e1-192">100</span></span>                  |
-    | <span data-ttu-id="f56e1-193">1 月 10 日</span><span class="sxs-lookup"><span data-stu-id="f56e1-193">January 10</span></span>                       | <span data-ttu-id="f56e1-194">200</span><span class="sxs-lookup"><span data-stu-id="f56e1-194">200</span></span>                  |
+   | <span data-ttu-id="f56e1-176">日</span><span class="sxs-lookup"><span data-stu-id="f56e1-176">Date</span></span>       | <span data-ttu-id="f56e1-177">需要予測</span><span class="sxs-lookup"><span data-stu-id="f56e1-177">Demand forecast</span></span> |
+   |------------|-----------------|
+   | <span data-ttu-id="f56e1-178">1 月 1 日</span><span class="sxs-lookup"><span data-stu-id="f56e1-178">January 1</span></span>  | <span data-ttu-id="f56e1-179">1.000</span><span class="sxs-lookup"><span data-stu-id="f56e1-179">1,000</span></span>           |
+   | <span data-ttu-id="f56e1-180">1 月 5 日</span><span class="sxs-lookup"><span data-stu-id="f56e1-180">January 5</span></span>  | <span data-ttu-id="f56e1-181">500</span><span class="sxs-lookup"><span data-stu-id="f56e1-181">500</span></span>             |
+   | <span data-ttu-id="f56e1-182">1 月 12 日</span><span class="sxs-lookup"><span data-stu-id="f56e1-182">January 12</span></span> | <span data-ttu-id="f56e1-183">1.000</span><span class="sxs-lookup"><span data-stu-id="f56e1-183">1,000</span></span>           |
+
+   <span data-ttu-id="f56e1-184">この予測では、予測日の間に明瞭な周期がありません。日付 1 と日付 2 の間には 4 日間の期間があり、日付 2 と日付 3 の間には 7 日間の期間があります。</span><span class="sxs-lookup"><span data-stu-id="f56e1-184">In this forecast, there isn't a clear period between the forecast dates: between the first and second dates there is a four-day span, and between the second and third dates there is a seven-day span.</span></span> <span data-ttu-id="f56e1-185">このように周期が変動するものを、動的期間といいます。</span><span class="sxs-lookup"><span data-stu-id="f56e1-185">These various spans are the dynamic periods.</span></span>
+2. <span data-ttu-id="f56e1-186">販売注文明細行を次のように作成します。</span><span class="sxs-lookup"><span data-stu-id="f56e1-186">Create sales order lines as follows.</span></span>
+   | <span data-ttu-id="f56e1-187">日</span><span class="sxs-lookup"><span data-stu-id="f56e1-187">Date</span></span>                             | <span data-ttu-id="f56e1-188">販売注文数量</span><span class="sxs-lookup"><span data-stu-id="f56e1-188">Sales order quantity</span></span> |
+   |----------------------------------|----------------------|
+   | <span data-ttu-id="f56e1-189">前年度の 12 月 15 日</span><span class="sxs-lookup"><span data-stu-id="f56e1-189">December 15 in the previous year</span></span> | <span data-ttu-id="f56e1-190">500</span><span class="sxs-lookup"><span data-stu-id="f56e1-190">500</span></span>                  |
+   | <span data-ttu-id="f56e1-191">1 月 3 日</span><span class="sxs-lookup"><span data-stu-id="f56e1-191">January 3</span></span>                        | <span data-ttu-id="f56e1-192">100</span><span class="sxs-lookup"><span data-stu-id="f56e1-192">100</span></span>                  |
+   | <span data-ttu-id="f56e1-193">1 月 10 日</span><span class="sxs-lookup"><span data-stu-id="f56e1-193">January 10</span></span>                       | <span data-ttu-id="f56e1-194">200</span><span class="sxs-lookup"><span data-stu-id="f56e1-194">200</span></span>                  |
 
 <span data-ttu-id="f56e1-195">予測は次のように減少します。</span><span class="sxs-lookup"><span data-stu-id="f56e1-195">The forecast will be reduced as follows:</span></span>
 

@@ -16,15 +16,15 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: dad857b5c8134e1aa4285f325b4724d1e0e0a7bf
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 70a57144c612d962c1067b7cc691e211f548b0d0
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="define-asset-idle-period-and-validate-depreciation-process-japan"></a><span data-ttu-id="62a4b-103">資産のアイドル期間の定義および減価償却プロセスの検証 (日本)</span><span class="sxs-lookup"><span data-stu-id="62a4b-103">Define asset idle period and validate depreciation process (Japan)</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="62a4b-104">このタスクでは、固定資産のアイドル期間の定義について説明します。</span><span class="sxs-lookup"><span data-stu-id="62a4b-104">Use this task to learn how to define fixed asset idle period.</span></span> 
 

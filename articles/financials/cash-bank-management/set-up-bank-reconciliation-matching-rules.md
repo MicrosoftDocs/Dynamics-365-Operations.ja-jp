@@ -19,17 +19,16 @@ ms.author: leguo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: b48accdc7aaaa65b4c620777546b20056038905b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: d3e841f30f133644d0c6e1f0b0e9e990934a78db
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="set-up-bank-reconciliation-matching-rules"></a><span data-ttu-id="a4ef2-104">口座調整照合ルールの設定</span><span class="sxs-lookup"><span data-stu-id="a4ef2-104">Set up bank reconciliation matching rules</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="a4ef2-105">このトピックでは、口座調整プロセスを容易にするために、調整の照合ルールと調整の照合ルール セットを設定する方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="a4ef2-105">This topic explains how to set up reconciliation matching rules and reconciliation matching rule sets to help with the bank reconciliation process.</span></span> <span data-ttu-id="a4ef2-106">調整の照合ルールは、調整プロセス中に口座取引明細書行および銀行ドキュメント明細行をフィルタ処理するために使用される一連の基準です。</span><span class="sxs-lookup"><span data-stu-id="a4ef2-106">Reconciliation matching rules are a set of criteria that are used to filter bank statement lines and bank document lines during the reconciliation process.</span></span>
 
@@ -50,7 +49,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="a4ef2-122">**取消明細行のクリア**</span><span class="sxs-lookup"><span data-stu-id="a4ef2-122">**Clear reversal statement lines**</span></span> | <span data-ttu-id="a4ef2-123">照合ルールの実行時に **口座調整ワークシート** ページから、取消明細行を除去する方法を指定する基準を作成します。</span><span class="sxs-lookup"><span data-stu-id="a4ef2-123">Create criteria to specify how reversal statement lines should be removed from the **Bank reconciliation worksheet** page when the matching rule is run.</span></span> <span data-ttu-id="a4ef2-124">このオプションは、銀行のエラーにより、インポートした口座取引明細書に 2 つの口座取引明細書行が表示されていて、これらの明細行の調整が必要なときに使用されます。</span><span class="sxs-lookup"><span data-stu-id="a4ef2-124">This option is used when a bank error causes two bank statement lines to be listed in the imported bank statement, and the lines must be reconciled.</span></span> | <span data-ttu-id="a4ef2-125">**ステップ 1**:**取消明細行の検索**– 取消口座取引明細行を選択する基準を追加します。</span><span class="sxs-lookup"><span data-stu-id="a4ef2-125">**Step 1**: **Find reversal statement lines** – Add selection criteria to select reversal bank statement lines.</span></span> <span data-ttu-id="a4ef2-126">たとえば、小切手のみを選択するには、[フィールド] フィールドで [**銀行取引コード**] を選択し、[**オペレーター**] フィールドでプラス記号 (+) を選択してから、[値] フィールドに [**小切手**] と入力します。</span><span class="sxs-lookup"><span data-stu-id="a4ef2-126">For example, to select only checks, select the **Bank transaction code** in the Field field, select the plus sign (+) in the **Operator** field, and then enter **Checks** in the Value field.</span></span> <span data-ttu-id="a4ef2-127">**ステップ 2: 元の明細行の検索** – 銀行ドキュメント明細行を口座取引明細行に対して照合するための選択基準を追加できます。</span><span class="sxs-lookup"><span data-stu-id="a4ef2-127">**Step 2: Find original statement lines** – You can add selection criteria to match bank document lines to bank statement lines.</span></span> <span data-ttu-id="a4ef2-128">**ステップ 3: Finance and Operations 銀行トランザクションの検索 **– Finance and Operations 銀行トランザクションを口座取引明細行に対して照合するための選択基準を追加できます。</span><span class="sxs-lookup"><span data-stu-id="a4ef2-128">**Step 3: Find Finance and Operations bank transactions **– You can add selection criteria to match Finance and Operations bank transactions to bank statement lines.</span></span> |
 | <span data-ttu-id="a4ef2-129">**新しいトランザクションのマーク**</span><span class="sxs-lookup"><span data-stu-id="a4ef2-129">**Mark new transactions**</span></span>          | <span data-ttu-id="a4ef2-130">照合ルールの実行時に **口座調整ワークシート** ページから、新しいトランザクションをマークする方法を指定する基準を作成します。</span><span class="sxs-lookup"><span data-stu-id="a4ef2-130">Create criteria to specify how new transactions should be marked on the **Bank reconciliation workshee**t page when the matching rule is run.</span></span>                                                                                                                                                                 | <span data-ttu-id="a4ef2-131">**ステップ 1: 明細行の検索**– 選択フィールドを追加して、どの口座取引明細行を **口座調整のワークシート** ページから選択するかを指定します。</span><span class="sxs-lookup"><span data-stu-id="a4ef2-131">**Step 1: Find statement lines** – Add selection fields to specify which bank statement lines should be selected from the **Bank reconciliation worksheet** page.</span></span> <span data-ttu-id="a4ef2-132">**ステップ 2: Finance and Operations の検索 **– 銀行ドキュメント明細行を検索するための選択基準を追加できます。</span><span class="sxs-lookup"><span data-stu-id="a4ef2-132">**Step 2: Find Finance and Operations **– You can add selection criteria to search bank document lines.</span></span> <span data-ttu-id="a4ef2-133">銀行ドキュメントがない場合、明細行は新しいトランザクションとしてマークされます。</span><span class="sxs-lookup"><span data-stu-id="a4ef2-133">If no bank document is found, a statement line will be marked as a new transaction.</span></span>                                                                                                                                                                                                                                             |
 
- 
+
 
 
 

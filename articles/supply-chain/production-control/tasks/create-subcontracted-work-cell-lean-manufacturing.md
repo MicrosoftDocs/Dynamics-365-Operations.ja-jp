@@ -16,15 +16,15 @@ ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: fc8dc0bc29c6bdb662c46808491abf5395f0be5d
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: d5b7149551df33d439980ec4e04fa343749daa16
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-a-subcontracted-work-cell-for-lean-manufacturing"></a><span data-ttu-id="79866-103">リーン生産の外注作業セルの作成</span><span class="sxs-lookup"><span data-stu-id="79866-103">Create a subcontracted work cell for lean manufacturing</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="79866-104">リーン生産の外注作業をモデル化するには、作業を提供する仕入先に関連付けられている作業セルを作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="79866-104">To model subcontracted work for lean manufacturing, you must create a work cell that is associated with the vendor that provides the work.</span></span> <span data-ttu-id="79866-105">外注作業セルは、仕入先タイプのリソースの関連付けを通じて仕入先にリンクされます。</span><span class="sxs-lookup"><span data-stu-id="79866-105">A subcontracted work cell is linked to the vendor through the association of a resource of the Vendor type.</span></span> <span data-ttu-id="79866-106">USMF デモ会社でこの記録を行う場合、仕入先 ID 1002 およびサイト 1 を選択できます。</span><span class="sxs-lookup"><span data-stu-id="79866-106">If you play this recording in the USMF demo company, you can select vendor account ID 1002 and site 1.</span></span>
 

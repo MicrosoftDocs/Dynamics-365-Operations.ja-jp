@@ -16,15 +16,15 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 3e6bc8267c6adb9e82f0c11885b211be3bd75c9a
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 213a89ea2f80350a709a5da17570d3227322d465
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="form-26-for-depreciable-tax-declaration-japan"></a><span data-ttu-id="2569e-103">減価償却税申告のフォーム 26 (日本)</span><span class="sxs-lookup"><span data-stu-id="2569e-103">Form 26 for depreciable tax declaration (Japan)</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="2569e-104">このタスクでは、登録番号の固定資産への割り当て方法と申告 26 レポートの印刷について説明します。</span><span class="sxs-lookup"><span data-stu-id="2569e-104">This task walks you through assigning a registration number to a fixed asset and printing the form 26 report.</span></span>
 

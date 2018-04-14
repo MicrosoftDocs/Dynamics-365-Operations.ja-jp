@@ -19,16 +19,16 @@ ms.author: YuyuScheller
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 09f2da382cd7f3e0e3d4bfa389e9cdf74f00b501
-ms.openlocfilehash: ade518095b77141fb31b597a955dd23aaae119d7
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 24b7ffd18e6f69f497597eb12657d09f8d600dcf
 ms.contentlocale: ja-jp
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="service-templates"></a><span data-ttu-id="513d6-103">サービス テンプレート</span><span class="sxs-lookup"><span data-stu-id="513d6-103">Service templates</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="513d6-104">サービス合意をテンプレートとして定義し、後でテンプレート行を別のサービス合意やサービス注文にコピーできます。</span><span class="sxs-lookup"><span data-stu-id="513d6-104">You can define a service agreement as a template and copy the lines of the template later into another service agreement or into a service order.</span></span>
 

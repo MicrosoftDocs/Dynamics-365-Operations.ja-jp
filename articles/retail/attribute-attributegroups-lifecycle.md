@@ -19,16 +19,16 @@ ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 53af4335146be6c163a6d84b60155e1a741c0be4
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: ad524e8d585da2140f3cdae17e3a1a2832ada3f0
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="attributes-attribute-groups-and-their-associations-with-various-retail-entities-in-finance-and-operations"></a><span data-ttu-id="0e717-102">属性、属性グループ、および Finance and Operations のさまざまな小売エンティティとのアソシエーション</span><span class="sxs-lookup"><span data-stu-id="0e717-102">Attributes, attribute groups, and their associations with various Retail entities in Finance and Operations</span></span>
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 <span data-ttu-id="0e717-103">[属性] は、製品とユーザー定義フィールドによる特性をさらに記述する方法を提供 (たとえば、[メモリ サイズ]、[ハード ディスク能力]、[エネルギー スター対応] など)。</span><span class="sxs-lookup"><span data-stu-id="0e717-103">*Attributes* provide a way to further describe a product and its characteristics through user-defined fields (such as **Memory size**, **Hard disk capacity**, **Is Energy star compliant**, and so on).</span></span> <span data-ttu-id="0e717-104">Microsoft Dynamics 365 for Finance and Operations にて、属性は製品カテゴリ、小売チャンネルなどのさまざまな小売エンティティに関連付けられており、それらに対して既定値を設定できます。</span><span class="sxs-lookup"><span data-stu-id="0e717-104">In Microsoft Dynamics 365 for Finance and Operations, attributes can be associated with various Retail entities, such as product categories and retail channels, and default values can be set for them.</span></span> <span data-ttu-id="0e717-105">製品は、製品カテゴリまたは小売チャンネルに関連付けられる場合、その属性と既定値を継承します。</span><span class="sxs-lookup"><span data-stu-id="0e717-105">Products then inherit the attributes and the default values when they are associated with the product categories or retail channels.</span></span> <span data-ttu-id="0e717-106">既定値は、個々の製品レベルや小売チャンネル レベル、または小売カタログで上書きできます。</span><span class="sxs-lookup"><span data-stu-id="0e717-106">The default values can be overridden at the individual product level, at the retail channel level, or in a retail catalog.</span></span>
  
@@ -227,13 +227,13 @@ ms.lasthandoff: 03/26/2018
 5. <span data-ttu-id="0e717-307">[製品] クイック タブで、必要な製品を選び、製品グリッドの上部で [属性] を選択します。</span><span class="sxs-lookup"><span data-stu-id="0e717-307">On the **Products** FastTab, select the required product, and then select **Attributes** above the product grid.</span></span>
 6. <span data-ttu-id="0e717-308">次のクイック タブで、必要な属性の値を更新します。</span><span class="sxs-lookup"><span data-stu-id="0e717-308">On the following FastTabs, update the values of the required attributes:</span></span>
 
-    - <span data-ttu-id="0e717-309">共有製品メディア</span><span class="sxs-lookup"><span data-stu-id="0e717-309">Shared product media</span></span>
-    - <span data-ttu-id="0e717-310">共有の製品属性</span><span class="sxs-lookup"><span data-stu-id="0e717-310">Shared product attributes</span></span>
-    - <span data-ttu-id="0e717-311">チャネル メディア</span><span class="sxs-lookup"><span data-stu-id="0e717-311">Channel media</span></span>
-    - <span data-ttu-id="0e717-312">チャネル製品属性</span><span class="sxs-lookup"><span data-stu-id="0e717-312">Channel product attributes</span></span>
+   - <span data-ttu-id="0e717-309">共有製品メディア</span><span class="sxs-lookup"><span data-stu-id="0e717-309">Shared product media</span></span>
+   - <span data-ttu-id="0e717-310">共有の製品属性</span><span class="sxs-lookup"><span data-stu-id="0e717-310">Shared product attributes</span></span>
+   - <span data-ttu-id="0e717-311">チャネル メディア</span><span class="sxs-lookup"><span data-stu-id="0e717-311">Channel media</span></span>
+   - <span data-ttu-id="0e717-312">チャネル製品属性</span><span class="sxs-lookup"><span data-stu-id="0e717-312">Channel product attributes</span></span>
 
-    > [!NOTE]
-    > <span data-ttu-id="0e717-313">共有製品メディアと共有製品属性が Finance and Operations で作成される場合、それらはすべての小売製品に適用されます。</span><span class="sxs-lookup"><span data-stu-id="0e717-313">If shared product media and shared product attributes are created in Finance and Operations, they apply to all the retail products.</span></span>
+     > [!NOTE]
+     > <span data-ttu-id="0e717-313">共有製品メディアと共有製品属性が Finance and Operations で作成される場合、それらはすべての小売製品に適用されます。</span><span class="sxs-lookup"><span data-stu-id="0e717-313">If shared product media and shared product attributes are created in Finance and Operations, they apply to all the retail products.</span></span>
 
 ![カタログ製品属性グループ](media/CatalogProdAttrValues.png)
 
@@ -249,11 +249,11 @@ ms.lasthandoff: 03/26/2018
 
 5. <span data-ttu-id="0e717-321">次のクイック タブで、必要な属性の値を更新します。</span><span class="sxs-lookup"><span data-stu-id="0e717-321">On the following FastTabs, update the values of the required attributes:</span></span>
 
-    - <span data-ttu-id="0e717-322">共有製品メディア</span><span class="sxs-lookup"><span data-stu-id="0e717-322">Shared product media</span></span>
-    - <span data-ttu-id="0e717-323">共有の製品属性</span><span class="sxs-lookup"><span data-stu-id="0e717-323">Shared product attributes</span></span>
-    - <span data-ttu-id="0e717-324">チャネル メディア</span><span class="sxs-lookup"><span data-stu-id="0e717-324">Channel media</span></span>
-    - <span data-ttu-id="0e717-325">チャネル製品属性</span><span class="sxs-lookup"><span data-stu-id="0e717-325">Channel product attributes</span></span>
+   - <span data-ttu-id="0e717-322">共有製品メディア</span><span class="sxs-lookup"><span data-stu-id="0e717-322">Shared product media</span></span>
+   - <span data-ttu-id="0e717-323">共有の製品属性</span><span class="sxs-lookup"><span data-stu-id="0e717-323">Shared product attributes</span></span>
+   - <span data-ttu-id="0e717-324">チャネル メディア</span><span class="sxs-lookup"><span data-stu-id="0e717-324">Channel media</span></span>
+   - <span data-ttu-id="0e717-325">チャネル製品属性</span><span class="sxs-lookup"><span data-stu-id="0e717-325">Channel product attributes</span></span>
 
-    > [!NOTE]
-    > <span data-ttu-id="0e717-326">共有製品メディアと共有製品属性が Finance and Operations で作成される場合、それらはすべての小売製品に適用されます。</span><span class="sxs-lookup"><span data-stu-id="0e717-326">If shared product media and shared product attributes are created in Finance and Operations, they apply to all the retail products.</span></span>
+     > [!NOTE]
+     > <span data-ttu-id="0e717-326">共有製品メディアと共有製品属性が Finance and Operations で作成される場合、それらはすべての小売製品に適用されます。</span><span class="sxs-lookup"><span data-stu-id="0e717-326">If shared product media and shared product attributes are created in Finance and Operations, they apply to all the retail products.</span></span>
 

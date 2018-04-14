@@ -20,17 +20,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 413bf76b40ec1e6d00322605900a71f163c9396c
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 7f6b607ef5bf91888e3972de7b1923da6339c170
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="production-posting"></a><span data-ttu-id="fe819-103">生産の転記</span><span class="sxs-lookup"><span data-stu-id="fe819-103">Production posting</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="fe819-104">この記事は、生産プロセスの、異なるタイプの転記について説明します。</span><span class="sxs-lookup"><span data-stu-id="fe819-104">This article provides information about different types of postings in the production process.</span></span>
 

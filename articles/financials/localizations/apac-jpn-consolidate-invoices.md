@@ -19,17 +19,16 @@ ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 676e10a68d7c002c41d146f7750a6d60857a0364
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 9b53d3115d89a071a63423660541d63324d5afa6
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="consolidated-invoices-for-japan"></a><span data-ttu-id="55cdd-104">日本向け月次締め請求書</span><span class="sxs-lookup"><span data-stu-id="55cdd-104">Consolidated invoices for Japan</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="55cdd-105">日本では、支払の請求書は毎月統合されます。</span><span class="sxs-lookup"><span data-stu-id="55cdd-105">In Japan, invoices are consolidated each month for payment.</span></span> <span data-ttu-id="55cdd-106">この記事は、月次締め請求書に関する情報を提供し、請求金額および期日の計算方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="55cdd-106">This article provides information about consolidated invoices, and explains how the invoice amount and due date are calculated.</span></span>
 

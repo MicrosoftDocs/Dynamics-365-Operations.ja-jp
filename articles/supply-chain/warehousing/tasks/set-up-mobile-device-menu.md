@@ -17,15 +17,15 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: b80c258d6a779a8fc5bb6c846abd3af7e69d5e06
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 37010003ad638e068ed7650532da29c6dbc033cb
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="set-up-a-mobile-device-menu-item-for-completing-work-in-a-purchase-order"></a><span data-ttu-id="8cec4-103">発注書の作業を完了するためのモバイル デバイスのメニュー項目の設定</span><span class="sxs-lookup"><span data-stu-id="8cec4-103">Set up a mobile device menu item for completing work in a purchase order</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="8cec4-104">この手順では、モバイル デバイスのメニュー項目の設定方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="8cec4-104">This procedure shows how to set up a Mobile device menu item.</span></span> <span data-ttu-id="8cec4-105">この例では、メニュー項目は、発注書タイプの作業を実行するのに使用されます。</span><span class="sxs-lookup"><span data-stu-id="8cec4-105">In this example, the menu item is used for performing work of type Purchase order.</span></span> <span data-ttu-id="8cec4-106">メニュー項目に関連付けられている作業クラスにより、有効な作業が決まります。</span><span class="sxs-lookup"><span data-stu-id="8cec4-106">The work class that’s associated with the menu item determines which work is valid.</span></span> <span data-ttu-id="8cec4-107">デモ データの会社 USMF でこのガイドを使用できます。</span><span class="sxs-lookup"><span data-stu-id="8cec4-107">You can use this guide in demo data company USMF.</span></span> <span data-ttu-id="8cec4-108">この手順は通常、倉庫マネージャーによって実施されます。</span><span class="sxs-lookup"><span data-stu-id="8cec4-108">This procedure is typically carried out by a warehouse manager.</span></span>
 

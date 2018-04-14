@@ -20,17 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f3891688542ac6d4f9afce026808c65992a592d4
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 3628e3f2d24bb41e83f544b20db4aff0e8e6deb7
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="use-tracing-for-explosion"></a><span data-ttu-id="9b5d9-103">展開のトレースを使用する</span><span class="sxs-lookup"><span data-stu-id="9b5d9-103">Use tracing for explosion</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="9b5d9-104">この記事は、注文の展開結果の背後にある原因を参照して追跡する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="9b5d9-104">This article explains how you can use tracing to explore the causes behind the outcome of an order explosion.</span></span>
 

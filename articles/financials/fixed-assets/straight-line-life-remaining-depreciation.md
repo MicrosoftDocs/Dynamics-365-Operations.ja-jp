@@ -19,17 +19,16 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ebca31727ecdaa2b94d4930174b2461845ab5578
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 9b49f8ae3a2afc236aef622438ae1a0b575600bf
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="straight-line-life-remaining-depreciation"></a><span data-ttu-id="19fa5-103">耐用年数残減価償却について</span><span class="sxs-lookup"><span data-stu-id="19fa5-103">Straight line life remaining depreciation</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="19fa5-104">この記事は、減価償却の定額法残余耐用年数の概要を示します。</span><span class="sxs-lookup"><span data-stu-id="19fa5-104">This article gives an overview of the Straight line life remaining method of depreciation.</span></span>
 

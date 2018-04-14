@@ -19,17 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 81c09c551dfa4238782c3796f5d08990b30ca575
-ms.openlocfilehash: 95669d83fdf69a6d55dd7ee1e4e33a67108e0371
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: e4c49a9aaae2d6c7324dfb6a13f6079610bb24fa
 ms.contentlocale: ja-jp
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="generate-a-financial-report"></a><span data-ttu-id="aa90c-103">財務諸表を生成します</span><span class="sxs-lookup"><span data-stu-id="aa90c-103">Generate a financial report</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="aa90c-104">このトピックでは、財務諸表の生成に関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="aa90c-104">This topic provides information about generating a financial report.</span></span> 
 
@@ -50,13 +49,13 @@ ms.lasthandoff: 12/01/2017
 ## <a name="generate-a-financial-report"></a><span data-ttu-id="aa90c-115">財務諸表を生成します</span><span class="sxs-lookup"><span data-stu-id="aa90c-115">Generate a financial report</span></span>
 
 <span data-ttu-id="aa90c-116">Microsoft Dynamics 365 for Finance and Operations の財務諸表を生成するには、**一般会計** > **照会およびレポート** > **財務諸表**の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="aa90c-116">To generate a financal report with Microsoft Dynamics 365 for Finance and Operations, go to **General ledger** > **Inquiries and reports** > **Financial reports**.</span></span> 
- - <span data-ttu-id="aa90c-117">生成するレポートを選択し **生成** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="aa90c-117">Select a report to generate and click **Generate**.</span></span> 
- - <span data-ttu-id="aa90c-118">**報告日** フィールドに入力し **OK** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="aa90c-118">Fill in the **Report date** field and click **OK**.</span></span>
- 
- <span data-ttu-id="aa90c-119">レポートが生成された後、レポートは **レポート** セクションで表示されます。</span><span class="sxs-lookup"><span data-stu-id="aa90c-119">After the report has been generated, the report will be available to view in the **Reports** section.</span></span>
- <span data-ttu-id="aa90c-120">レポートを **表示** または **削除** するか選択できます。</span><span class="sxs-lookup"><span data-stu-id="aa90c-120">You can select to **View** or **Delete** the report.</span></span>
- 
- 
+- <span data-ttu-id="aa90c-117">生成するレポートを選択し **生成** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="aa90c-117">Select a report to generate and click **Generate**.</span></span> 
+- <span data-ttu-id="aa90c-118">**報告日** フィールドに入力し **OK** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="aa90c-118">Fill in the **Report date** field and click **OK**.</span></span>
+
+  <span data-ttu-id="aa90c-119">レポートが生成された後、レポートは **レポート** セクションで表示されます。</span><span class="sxs-lookup"><span data-stu-id="aa90c-119">After the report has been generated, the report will be available to view in the **Reports** section.</span></span>
+  <span data-ttu-id="aa90c-120">レポートを **表示** または **削除** するか選択できます。</span><span class="sxs-lookup"><span data-stu-id="aa90c-120">You can select to **View** or **Delete** the report.</span></span>
+
+
 <span data-ttu-id="aa90c-121">**レポート デザイナー** を使用してレポートを生成するには、レポート定義を開いてから、ツール バーの生成ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="aa90c-121">To generate a report using **Report designer**, open the report definition and then click the Generate button in the toolbar.</span></span> <span data-ttu-id="aa90c-122">[レポート キュー ステータス] ウィンドウが開いて、キューのレポートの場所を示します。</span><span class="sxs-lookup"><span data-stu-id="aa90c-122">The Report Queue Status window will open and indicate the location of your report in the queue.</span></span> <span data-ttu-id="aa90c-123">既定では、生成されたレポートは Web ビューアーで開きます。</span><span class="sxs-lookup"><span data-stu-id="aa90c-123">By default, the generated report will open in the Web Viewer.</span></span>
 
 > [!NOTE]
@@ -159,7 +158,7 @@ ms.lasthandoff: 12/01/2017
 | <span data-ttu-id="aa90c-237">選択したレポート定義を開く</span><span class="sxs-lookup"><span data-stu-id="aa90c-237">Open the selected report definition</span></span>  | <span data-ttu-id="aa90c-238">Ctrl+R</span><span class="sxs-lookup"><span data-stu-id="aa90c-238">Ctrl+R</span></span>                     |
 | <span data-ttu-id="aa90c-239">選択した行定義を開く</span><span class="sxs-lookup"><span data-stu-id="aa90c-239">Open the selected row definition</span></span>     | <span data-ttu-id="aa90c-240">Ctrl+O</span><span class="sxs-lookup"><span data-stu-id="aa90c-240">Ctrl+O</span></span>                     |
 
- 
+
 <a name="see-also"></a><span data-ttu-id="aa90c-241">参照</span><span class="sxs-lookup"><span data-stu-id="aa90c-241">See also</span></span>
 --------
 

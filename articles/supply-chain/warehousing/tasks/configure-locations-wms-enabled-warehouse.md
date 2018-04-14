@@ -17,15 +17,15 @@ ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 1082c86361180db84bb2b5c0b8158816f76a219e
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: fb48914491597f2eb7cc08db99ed548764213709
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="configure-locations-in-a-wms-enabled-warehouse"></a><span data-ttu-id="029bd-103">WMS に対応した倉庫の場所のコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="029bd-103">Configure locations in a WMS-enabled warehouse</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="029bd-104">このガイドでは、新しい WMS が有効な倉庫 (詳細な倉庫管理プロセスを使用する倉庫) の場所の設定をコンフィギュレーションする方法を示します。</span><span class="sxs-lookup"><span data-stu-id="029bd-104">This guide shows you how to configure the location setup for a new WMS-enabled warehouse (a warehouse that uses advanced warehouse management processes).</span></span> <span data-ttu-id="029bd-105">通常、このプロセスを実行するのは倉庫マネージャーです。</span><span class="sxs-lookup"><span data-stu-id="029bd-105">The process is typically done by a warehouse manager.</span></span> <span data-ttu-id="029bd-106">このガイドは、デモ データの会社 USMF で、または独自のデータで実行できます。</span><span class="sxs-lookup"><span data-stu-id="029bd-106">You can run this guide in demo data company USMF or on your own data.</span></span> <span data-ttu-id="029bd-107">少なくとも 1 つのサイトがコンフィギュレーションされていることが前提条件です。</span><span class="sxs-lookup"><span data-stu-id="029bd-107">A precondition is that you have at least one site configured.</span></span>
 

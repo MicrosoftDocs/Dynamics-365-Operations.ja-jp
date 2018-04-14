@@ -16,15 +16,15 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: c300f9cca6dd49c8fcafd972d250a801cf84672d
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a7f0c4cc0df2e025b516e396db7348024bc92c5a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="configure-depreciation-profile-and-posting-profile-for-additional-depreciation-japan"></a><span data-ttu-id="c59bb-103">割増償却に対する減価償却プロファイルおよび転記プロファイルのコンフィギュレーション (日本)</span><span class="sxs-lookup"><span data-stu-id="c59bb-103">Configure depreciation profile and posting profile for additional depreciation (Japan)</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="c59bb-104">この手順を使用して、特別償却の減価償却プロファイルと転記プロファイルを構成する方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="c59bb-104">Use this procedure to learn how to configure a depreciation profile and a posting profile for special depreciation.</span></span>
 

@@ -17,15 +17,15 @@ ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 441ba692f559f9966f3e2512c7760ad2f732b768
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: d28e9cd63277a3a0c8dc0bce61177d7f7ae9c1ab
 ms.contentlocale: ja-jp
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="store-configurations-for-retail-statements"></a><span data-ttu-id="3f1cb-103">小売明細書の店舗のコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="3f1cb-103">Store configurations for Retail statements</span></span>
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 <span data-ttu-id="3f1cb-104">この手順では、小売明細書の作成される影響を及ぼす、転記または小売店舗のコンフィギュレーションを説明します。</span><span class="sxs-lookup"><span data-stu-id="3f1cb-104">This procedure walks through configurations for the Retail store that affect how Retail statements get created and posted.</span></span> <span data-ttu-id="3f1cb-105">小売店舗の財務分析コードは別の手順に含まれます。</span><span class="sxs-lookup"><span data-stu-id="3f1cb-105">Financial dimensions on Retail stores are covered in another procedure.</span></span> <span data-ttu-id="3f1cb-106">この手順では、USMF というデモ会社を使用します。</span><span class="sxs-lookup"><span data-stu-id="3f1cb-106">This procedure uses the USRT demo company.</span></span>
 

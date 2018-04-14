@@ -16,15 +16,15 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: c2b3a66443394f5bfbe51b6685513281025d68fd
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 713e02b6537da0d72b34e796d81ad32a6cb74bc3
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-purchasing-policies"></a><span data-ttu-id="7d035-103">購入ポリシーの作成</span><span class="sxs-lookup"><span data-stu-id="7d035-103">Create purchasing policies</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="7d035-104">この手順では、購買の業務プロセスに対応する購入ポリシーを作成する方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="7d035-104">This procedure shows you how to create purchasing policies to align with your business processes for purchasing.</span></span> <span data-ttu-id="7d035-105">購買ポリシーを作成する前に、購買ポリシー パラメーターを設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="7d035-105">Before you can create purchasing policies, you must set up the purchasing policy parameters.</span></span> <span data-ttu-id="7d035-106">購入ポリシーの作成、変更、無効は可能ですが、購入ポリシーの削除はできません。</span><span class="sxs-lookup"><span data-stu-id="7d035-106">It’s possible to create, modify, and retire a purchasing policy, but you can’t delete a purchasing policy.</span></span> <span data-ttu-id="7d035-107">通常、このタスクを実施するのは、購買マネージャーです。</span><span class="sxs-lookup"><span data-stu-id="7d035-107">This procedure would typically be carried out by a purchasing manager.</span></span> <span data-ttu-id="7d035-108">デモ データの会社 USMF のこの手順を使うか、または独自のデータを使うことができます。</span><span class="sxs-lookup"><span data-stu-id="7d035-108">You can use this procedure in demo data company USMF or on your own data.</span></span>
 

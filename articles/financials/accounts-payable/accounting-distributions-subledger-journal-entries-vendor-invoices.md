@@ -19,17 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 00550b4e3fa52108533c516d7ae1de0454c065ec
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 510e3ac8bbec891436eaf6849dfe00b68ba2eb40
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="accounting-distributions-and-subledger-journal-entries-for-vendor-invoices"></a><span data-ttu-id="ccb0f-104">仕入先請求書の勘定配布と補助元帳仕訳</span><span class="sxs-lookup"><span data-stu-id="ccb0f-104">Accounting distributions and subledger journal entries for vendor invoices</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="ccb0f-105">勘定配布は、仕入先請求書における経費、税金、または手数料などの計上方法など、金額をどのように計上するかを定義します。</span><span class="sxs-lookup"><span data-stu-id="ccb0f-105">Accounting distributions are used to define how an amount will be accounted for, such as how the expense, tax, or charges will be accounted for on a vendor invoice.</span></span> <span data-ttu-id="ccb0f-106">仕入先請求書を仕訳入力するときに計上しなければならない金額にはいずれも一つ以上の勘定配布があります。</span><span class="sxs-lookup"><span data-stu-id="ccb0f-106">Every amount that must be accounted for when the vendor invoice is journalized will have one or more accounting distributions.</span></span> 
 
@@ -231,7 +230,7 @@ ms.lasthandoff: 11/03/2017
 </tbody>
 </table>
 
- 
+
 <a name="distributing-taxes"></a><span data-ttu-id="ccb0f-213">税の配分</span><span class="sxs-lookup"><span data-stu-id="ccb0f-213">Distributing taxes</span></span>
 ------------------
 

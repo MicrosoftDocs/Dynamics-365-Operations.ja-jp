@@ -18,15 +18,15 @@ ms.author: rschloma
 ms.search.validFrom: 2017-11-28
 ms.dyn365.ops.version: Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 51eb4288f5b6c732755007c1dcd8c4db090ccc0a
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: c606ea957c5d6347d275cb9f29a6ac12c00a0137
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="extend-the-functionality-of-microsoft-dynamics-365-for-talent"></a><span data-ttu-id="b9773-103">Microsoft Dynamics 365 for Talent の機能を拡張します。</span><span class="sxs-lookup"><span data-stu-id="b9773-103">Extend the functionality of Microsoft Dynamics 365 for Talent</span></span>
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 <span data-ttu-id="b9773-104">任意の Microsoft PowerApps を作成した場合は、Microsoft Dynamics 365 for Talent 内のリンクからそれらのアプリケーションを開始できます。</span><span class="sxs-lookup"><span data-stu-id="b9773-104">If you’ve created any Microsoft PowerApps, you can start those applications from links within Microsoft Dynamics 365 for Talent.</span></span> <span data-ttu-id="b9773-105">アプリケーションへのアクセスを設定するには、**システム管理** ワークスペースから開けるコンフィギュレーション ページの Talent で、一部の情報を設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="b9773-105">To set up access to your applications, you’ll need to set up some information in Talent on a configuration page that you can open from the **System administration** workspace.</span></span>
 
@@ -38,10 +38,10 @@ ms.lasthandoff: 03/08/2018
 > - <span data-ttu-id="b9773-110">各 PowerApps アプリケーションの内容を説明する名前または識別子。</span><span class="sxs-lookup"><span data-stu-id="b9773-110">A descriptive name or identifier for each PowerApps application.</span></span>
 > - <span data-ttu-id="b9773-111">Talent ページに追加する各アプリケーションの固有識別子 (GUID)。</span><span class="sxs-lookup"><span data-stu-id="b9773-111">A unique identifier (GUID) for each application that you add to a Talent page.</span></span> <span data-ttu-id="b9773-112">アプリ IDは、PowerApps サイト [powerapps.com](http://powerapps.com/)で使用できます。</span><span class="sxs-lookup"><span data-stu-id="b9773-112">The app ID is available on the PowerApps site, [powerapps.com](http://powerapps.com/).</span></span> 
 > - <span data-ttu-id="b9773-113">ユーザーがアプリケーションまたはレポートを開くことができるページ。</span><span class="sxs-lookup"><span data-stu-id="b9773-113">The page from which users can open an application or report.</span></span> <span data-ttu-id="b9773-114">すべての Talent ページが、埋め込み型 PowerApps および Power BI レポートをサポートするわけではありません。</span><span class="sxs-lookup"><span data-stu-id="b9773-114">Not all Talent pages support embedded PowerApps and Power BI reports.</span></span> 
-
- > [!NOTE]
- >  <span data-ttu-id="b9773-115">ページの上部に表示される表示名ではなく、ページの内部名称を入力します。</span><span class="sxs-lookup"><span data-stu-id="b9773-115">Enter the internal name of the page, rather than the display name that appears at the top of the page.</span></span> <span data-ttu-id="b9773-116">内部名称を検索するには、内部名称が必要なページを開き、ページ上の任意の場所で右クリックします。</span><span class="sxs-lookup"><span data-stu-id="b9773-116">To find the internal name, open the page that you need the internal name of, and right-click anywhere on the page.</span></span> <span data-ttu-id="b9773-117">メニューを開いたら、**フォーム情報** 項目をポイントします。</span><span class="sxs-lookup"><span data-stu-id="b9773-117">When the menu opens, hover over the **Form information** item.</span></span> <span data-ttu-id="b9773-118">内部フォーム名が、メニューの **フォーム情報** 項目の横に表示されます。</span><span class="sxs-lookup"><span data-stu-id="b9773-118">The internal form name is displayed next to the **Form information** item in the menu.</span></span>
- 
+> 
+> [!NOTE]
+>  <span data-ttu-id="b9773-115">ページの上部に表示される表示名ではなく、ページの内部名称を入力します。</span><span class="sxs-lookup"><span data-stu-id="b9773-115">Enter the internal name of the page, rather than the display name that appears at the top of the page.</span></span> <span data-ttu-id="b9773-116">内部名称を検索するには、内部名称が必要なページを開き、ページ上の任意の場所で右クリックします。</span><span class="sxs-lookup"><span data-stu-id="b9773-116">To find the internal name, open the page that you need the internal name of, and right-click anywhere on the page.</span></span> <span data-ttu-id="b9773-117">メニューを開いたら、**フォーム情報** 項目をポイントします。</span><span class="sxs-lookup"><span data-stu-id="b9773-117">When the menu opens, hover over the **Form information** item.</span></span> <span data-ttu-id="b9773-118">内部フォーム名が、メニューの **フォーム情報** 項目の横に表示されます。</span><span class="sxs-lookup"><span data-stu-id="b9773-118">The internal form name is displayed next to the **Form information** item in the menu.</span></span>
+> 
 > - <span data-ttu-id="b9773-119">アプリケーションがコンテキスト データを取得するフォーム コントロールを指定します。</span><span class="sxs-lookup"><span data-stu-id="b9773-119">Specify the form control from which the application can retrieve context data.</span></span> <span data-ttu-id="b9773-120">たとえば、アプリケーションは、作業者に関するデータを使用する場合があります。</span><span class="sxs-lookup"><span data-stu-id="b9773-120">For example, an application might use data about a worker.</span></span> <span data-ttu-id="b9773-121">**コンテキスト** フィールドで **作業者** ページを入力する場合、アプリケーションを起動すると **作業者** ページが開きます。</span><span class="sxs-lookup"><span data-stu-id="b9773-121">If you enter the **Worker** page in the **Context** field, the **Worker** page will open when you start the application.</span></span> <span data-ttu-id="b9773-122">**コンテキスト フィールド** の入力はオプションです。</span><span class="sxs-lookup"><span data-stu-id="b9773-122">An entry in the **Context field** is optional.</span></span> 
 > - <span data-ttu-id="b9773-123">PowerApps アプリケーションを実行するダイアログ ボックスのサイズを設定します。</span><span class="sxs-lookup"><span data-stu-id="b9773-123">Set the size of the dialog box on which the PowerApps application will run.</span></span> <span data-ttu-id="b9773-124">アプリケーションが電話や大きなデバイスで実行している場合、ユーザー インターフェイスを最適化するため、ダイアログ ボックスがそれぞれ “小“ または “大“ に指定されます。</span><span class="sxs-lookup"><span data-stu-id="b9773-124">The dialog boxes are designated as “small” or “large” to optimize the user interface when your application for running on a phone or a larger device, respectively.</span></span> 
 

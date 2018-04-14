@@ -19,17 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: 2a94d94a702bce476e573b9137ca73bb36245000
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: c08d039863253b33438c92243d5c164408ef85f3
 ms.contentlocale: ja-jp
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="close-the-general-ledger-at-period-end"></a><span data-ttu-id="3a2dc-103">期末に一般会計を決算</span><span class="sxs-lookup"><span data-stu-id="3a2dc-103">Close the general ledger at period end</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="3a2dc-104">このトピックでは、一般会計の期間締めを実行する場合に通常完了するタスクについて説明します</span><span class="sxs-lookup"><span data-stu-id="3a2dc-104">This topic describes the tasks that are typically completed when performing a period closing for General ledger.</span></span> 
 

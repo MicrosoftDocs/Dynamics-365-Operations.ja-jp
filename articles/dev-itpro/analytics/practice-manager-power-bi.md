@@ -18,16 +18,16 @@ ms.author: knelson
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: 903eeac732f0c5dc3d94d609ee08988029e33f0c
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 1285b62130e0c3b0eb30773b3ccaa7a31d844461
 ms.contentlocale: ja-jp
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="practice-manager-power-bi-content"></a><span data-ttu-id="e37e3-104">プラクティス マネージャー Power BI コンテンツ</span><span class="sxs-lookup"><span data-stu-id="e37e3-104">Practice manager Power BI content</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="e37e3-105">このトピックでは、**プラクティス マネージャー** Microsoft Power BI コンテンツの内容について説明します。</span><span class="sxs-lookup"><span data-stu-id="e37e3-105">This topic describes what is included in the **Practice manager** Microsoft Power BI content.</span></span> <span data-ttu-id="e37e3-106">Power BI レポートにアクセスする方法を説明し、コンテンツを作成するために使用するデータ モデルおよびエンティティについての情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="e37e3-106">It explains how to access the Power BI reports, and provides information about the data model and entities that are used to build the content.</span></span>
 
@@ -118,7 +118,9 @@ ms.lasthandoff: 01/17/2018
 ### <a name="entity-projectaccountingcubetotalestimatedcosts"></a><span data-ttu-id="e37e3-228">エンティティ。ProjectAccountingCube\_TotalEstimatedCosts</span><span class="sxs-lookup"><span data-stu-id="e37e3-228">Entity: ProjectAccountingCube\_TotalEstimatedCosts</span></span> 
 <span data-ttu-id="e37e3-229">[**データ ソース:**] ProjTable</span><span class="sxs-lookup"><span data-stu-id="e37e3-229">**Data source:** ProjTable</span></span>
 
-| <span data-ttu-id="e37e3-230">キー集計の測定</span><span class="sxs-lookup"><span data-stu-id="e37e3-230">Key aggregate measurement</span></span>       | <span data-ttu-id="e37e3-231">フィールド</span><span class="sxs-lookup"><span data-stu-id="e37e3-231">Field</span></span>               | <span data-ttu-id="e37e3-232">説明</span><span class="sxs-lookup"><span data-stu-id="e37e3-232">Description</span></span> |
-|---------------------------------|---------------------|-------------|
+
+|    <span data-ttu-id="e37e3-230">キー集計の測定</span><span class="sxs-lookup"><span data-stu-id="e37e3-230">Key aggregate measurement</span></span>    |        <span data-ttu-id="e37e3-231">フィールド</span><span class="sxs-lookup"><span data-stu-id="e37e3-231">Field</span></span>        |                                          <span data-ttu-id="e37e3-232">説明</span><span class="sxs-lookup"><span data-stu-id="e37e3-232">Description</span></span>                                           |
+|---------------------------------|---------------------|------------------------------------------------------------------------------------------------|
 | <span data-ttu-id="e37e3-233">完了した活動の予定原価</span><span class="sxs-lookup"><span data-stu-id="e37e3-233">Completed activity planned cost</span></span> | <span data-ttu-id="e37e3-234">Sum(TotalCostPrice)</span><span class="sxs-lookup"><span data-stu-id="e37e3-234">Sum(TotalCostPrice)</span></span> | <span data-ttu-id="e37e3-235">完了タスクのすべてのプロジェクト トランザクション タイプにおける合計原価価格の見積。</span><span class="sxs-lookup"><span data-stu-id="e37e3-235">The total cost price in estimates for all project transaction types that have completed tasks.</span></span> |
+
 

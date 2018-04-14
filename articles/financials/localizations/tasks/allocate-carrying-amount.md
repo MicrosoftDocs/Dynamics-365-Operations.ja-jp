@@ -16,15 +16,15 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 9b345c1f6251741499d033633a9c52cf481f05c2
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: bdcc7aad39997c995ec540fc51cd7b054607834e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="allocate-carrying-amount-of-shared-asset-and-goodwill-to-cash-generating-units-japan"></a><span data-ttu-id="befc3-103">資産グループへの共有資産とのれんの帳簿価額の配賦 (日本)</span><span class="sxs-lookup"><span data-stu-id="befc3-103">Allocate carrying amount of shared asset and goodwill to cash generating units (Japan)</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="befc3-104">この手順では、各資産グループへの共有資産と営業権の帳簿価額の配賦について説明します。</span><span class="sxs-lookup"><span data-stu-id="befc3-104">This procedure walks you through allocating the carrying amount of shared asset and goodwill to each of the cash generating units.</span></span> <span data-ttu-id="befc3-105">配賦は CGU グループを有効化する前に行う必要があります。</span><span class="sxs-lookup"><span data-stu-id="befc3-105">The allocation must be done before activating the CGU group.</span></span>
 

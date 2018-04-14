@@ -16,15 +16,15 @@ ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: e04f9baf6b757ed2c22e018c660cd7291395f877
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: be973f37273e09640a9df04c80eb554ca0721132
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="generate-and-post-recurring-free-text-invoices"></a><span data-ttu-id="c3a59-103">定期的な自由書式の請求書の生成と転記</span><span class="sxs-lookup"><span data-stu-id="c3a59-103">Generate and post recurring free text invoices</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="c3a59-104">定期請求書は、顧客に対して同じ金額を定期的に請求する際に使用します。</span><span class="sxs-lookup"><span data-stu-id="c3a59-104">Recurring invoices are used to invoice customers regularly for the same amount.</span></span> <span data-ttu-id="c3a59-105">このレコードでは、USMF デモ会社を使用します。</span><span class="sxs-lookup"><span data-stu-id="c3a59-105">This recording uses the USMF demo company.</span></span> <span data-ttu-id="c3a59-106">記録は A/R 請求書の管理および処理を行う担当者を対象としています。</span><span class="sxs-lookup"><span data-stu-id="c3a59-106">The recording is intended for the person responsible for managing and processing A/R invoices.</span></span>
 

@@ -17,15 +17,15 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 154c60b766aa034bb986e2d35bc92e6e9e0cf0d9
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: e7ed3636962e4056c1151c18456e0bcb002717c0
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="submit-and-approve-project-budget-revisions"></a><span data-ttu-id="e1aab-103">プロジェクト予算のリビジョンの送信および承認</span><span class="sxs-lookup"><span data-stu-id="e1aab-103">Submit and approve project budget revisions</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="e1aab-104">この手順には、プロジェクト予算のリビジョンに関する情報が用意されています。</span><span class="sxs-lookup"><span data-stu-id="e1aab-104">This procedure provides information about revising a project budget.</span></span> <span data-ttu-id="e1aab-105">プロジェクト予算は必要に応じて何度でも改訂することができますが、予算が複数回改訂される場合、個々のリビジョンの量を表示することはできません。</span><span class="sxs-lookup"><span data-stu-id="e1aab-105">You can revise a project budget as many times as necessary, however you can't see the amount of an individual revision if the budget has been revised more than one time.</span></span> 
 

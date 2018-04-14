@@ -16,15 +16,15 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 1c81a1268a56164e0d4465359a0f9ec425ee7c31
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: d8b32b32a2cc8f7ac36e6c27ab17e550b5e3bd17
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="map-components-of-the-created-format-to-data-model-elements-for-electronic-reporting-er"></a><span data-ttu-id="0b3c4-103">電子申告 (ER) のデータ モデル要素に作成済みの形式のコンポーネントをマッピングする</span><span class="sxs-lookup"><span data-stu-id="0b3c4-103">Map components of the created format to data model elements for electronic reporting (ER)</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="0b3c4-104">次の手順では、システム管理者ロールまたは電子申告開発者ロールのいずれかのユーザーが、支払いビジネス ドメインの電子ドキュメント書式を定義する電子レポート (ER) のコンポーネントにデータ モデルをマッピングする様子を示します。</span><span class="sxs-lookup"><span data-stu-id="0b3c4-104">The following procedure shows how a user in either the System administrator or Electronic reporting developer role can map data model elements to components of the created Electronic reporting (ER) configuration, which defines an electronic document format for the payments business domain.</span></span> <span data-ttu-id="0b3c4-105">この書式は、支払を処理するための電子ドキュメントを生成するために後で使用します。</span><span class="sxs-lookup"><span data-stu-id="0b3c4-105">This format will be used later to generate electronic documents for processing payments.</span></span> <span data-ttu-id="0b3c4-106">この例では、サンプル会社 'Litware、Inc.' のコンフィギュレーションの書式設定を作成します。</span><span class="sxs-lookup"><span data-stu-id="0b3c4-106">In this example, you will create a format configuration for the sample company, ‘Litware, Inc.’.</span></span> <span data-ttu-id="0b3c4-107">ER コンフィギュレーションはすべての会社用に共有されるため、これらのステップはどの会社でも実行できます。</span><span class="sxs-lookup"><span data-stu-id="0b3c4-107">These steps can be performed in any company as ER configurations are shared for all companies.</span></span> <span data-ttu-id="0b3c4-108">これらの手順を完了するには、最初に「コンフィギュレーションの書式設定の作成」タスク ガイドのステップを完了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="0b3c4-108">To complete these steps, you must first complete the steps in the “Create a format configuration” task guide.</span></span>
 

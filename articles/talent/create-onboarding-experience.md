@@ -17,16 +17,16 @@ ms.author: tbisaacs
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 54caf2648766053ec5a662f48bd50a1ec9b8911a
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 8db1044d125820319827103182cc29808c60ee5c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="create-an-engaging-onboarding-experience"></a><span data-ttu-id="96d89-103">魅力的な新人研修エクスペリエンスの作成</span><span class="sxs-lookup"><span data-stu-id="96d89-103">Create an engaging onboarding experience</span></span>
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 <span data-ttu-id="96d89-104">新人研修が効率的になされると、新規従業員は仕事の効率性を高めつつ、新しい役割に帰属意識を覚えるようにもなります。</span><span class="sxs-lookup"><span data-stu-id="96d89-104">When done effectively, onboarding helps new employees perform more effectively while also gaining a sense of belonging in their new role.</span></span> <span data-ttu-id="96d89-105">新人研修を受けない場合と比べて、新規従業員は自分の新しい役割をより迅速にまた正確に理解できるようになり、成功に役立つ関係を確立する点で有利なスタートを切ることになります。</span><span class="sxs-lookup"><span data-stu-id="96d89-105">Onboarding can help new employees understand their new role more quickly and accurately than they would have otherwise, and they get a head start on establishing relationships that can help them succeed.</span></span> <span data-ttu-id="96d89-106">また、非効率的な新人研修エクスペリエンスでは、従業員が組織に加わるという自分の決定に疑問を抱くようになるかもしれません。</span><span class="sxs-lookup"><span data-stu-id="96d89-106">Alternatively, an ineffective onboarding experience might leave employees questioning their decision to join your organization.</span></span> <span data-ttu-id="96d89-107">Gartner による 2014 に実施された調査によると、最初の 6 か月以内に辞職した 1,005 人の回答者の 3 分の 1 近くは、リーダーから与えられたガイドラインが明確でなかったこと、受けたトレーニングが効率的でなかったこと、または新しい環境で効果的な人間関係を築けなかったことが辞職の原因でした。</span><span class="sxs-lookup"><span data-stu-id="96d89-107">A study conducted by Gartner in 2014 found that nearly one third of the 1,005 respondents who quit a job within the first six months, did so because the guidelines they were given by their leadership weren't clear, their training wasn't effective, or because they didn't establish effective relationships in their new environment.</span></span>
 

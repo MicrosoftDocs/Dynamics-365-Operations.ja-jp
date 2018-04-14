@@ -19,17 +19,16 @@ ms.author: leguo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: bf8ce1f566cc4f9fb2b66310a3d178cbdc4eeaf8
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 1cff7d263cab4cce46d72f567c7efe5dbce9315f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="letters-of-credit"></a><span data-ttu-id="7e5fb-103">信用状</span><span class="sxs-lookup"><span data-stu-id="7e5fb-103">Letters of credit</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="7e5fb-104">信用状は、国境をまたぐ商品売買によく使用される銀行ドキュメントです。</span><span class="sxs-lookup"><span data-stu-id="7e5fb-104">Letters of credit are bank documents that are commonly used for the purchase and sale of goods across international borders.</span></span> 
 

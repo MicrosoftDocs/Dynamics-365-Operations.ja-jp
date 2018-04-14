@@ -19,17 +19,16 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 055001c992e70ceacf57cf25a8bf83207d8d7334
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 4cdc0b480649bc07d423372651f50d5451ac7675
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="view-financial-reports"></a><span data-ttu-id="d4c5f-104">財務諸表の表示</span><span class="sxs-lookup"><span data-stu-id="d4c5f-104">View financial reports</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="d4c5f-105">この記事では、Microsoft Dynamics 365 for Finance and Operations で財務報告書を表示、および検討する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="d4c5f-105">This article describes how to view and explore financial reports in Microsoft Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="d4c5f-106">外観とを含まれるデータを変更するために、財務報告書に適用できるさまざまなオプションに関する情報が含まれています。</span><span class="sxs-lookup"><span data-stu-id="d4c5f-106">It includes information about the various options that you can apply to financial reports to change their appearance and the data that they include.</span></span>
 

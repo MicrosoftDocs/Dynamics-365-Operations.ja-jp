@@ -19,16 +19,16 @@ ms.author: omulvad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: 6084ddb1c5b8fae9111ea1459f6e94b14930bfc5
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 9ec77585e259bc759b422b97f4f3b10271a02b02
 ms.contentlocale: ja-jp
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="sales-and-profitability-performance-power-bi-content"></a><span data-ttu-id="99e71-104">販売および収益性パフォーマンス Power BI コンテンツ</span><span class="sxs-lookup"><span data-stu-id="99e71-104">Sales and profitability performance Power BI content</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="99e71-105">このトピックでは、**販売と収益性のパフォーマンス** Microsoft Power BI コンテンツに何が含まれているのか説明します。</span><span class="sxs-lookup"><span data-stu-id="99e71-105">This topic describes what is included in the **Sales and profitability performance** Microsoft Power BI content.</span></span> <span data-ttu-id="99e71-106">Power BI レポートにアクセスする方法を説明し、コンテンツを作成するために使用するデータ モデルおよびエンティティについての情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="99e71-106">It explains how to access the Power BI reports, and provides information about the data model and entities that are used to build the content.</span></span>
 
@@ -64,7 +64,7 @@ ms.lasthandoff: 01/17/2018
 | <span data-ttu-id="99e71-140">製品による収益</span><span class="sxs-lookup"><span data-stu-id="99e71-140">Revenue by product</span></span>     | <span data-ttu-id="99e71-141">販売カテゴリによる収益および粗利益</span><span class="sxs-lookup"><span data-stu-id="99e71-141">Revenue & gross profit by sales category</span></span>   | <span data-ttu-id="99e71-142">製品の合計 \#</span><span class="sxs-lookup"><span data-stu-id="99e71-142">Total \# of products</span></span>                                    |
 |                        | <span data-ttu-id="99e71-143">収益による上位 10 件の製品</span><span class="sxs-lookup"><span data-stu-id="99e71-143">Top 10 products by revenue</span></span>                 | <span data-ttu-id="99e71-144">有効な製品および合計割合の合計数</span><span class="sxs-lookup"><span data-stu-id="99e71-144">Total number of active products and percentage of total</span></span> |
 |                        | <span data-ttu-id="99e71-145">販売のカテゴリによる総収益</span><span class="sxs-lookup"><span data-stu-id="99e71-145">Total revenue by sales category</span></span>            | <span data-ttu-id="99e71-146">収益の80%を占める製品の数</span><span class="sxs-lookup"><span data-stu-id="99e71-146">Number of products accounting for 80% revenue</span></span>           |
-| <span data-ttu-id="99e71-147">期間別収益\\*</span><span class="sxs-lookup"><span data-stu-id="99e71-147">Revenue by period\\*</span></span>    | <span data-ttu-id="99e71-148">月ごとの収益</span><span class="sxs-lookup"><span data-stu-id="99e71-148">Revenue by month</span></span>                           | <span data-ttu-id="99e71-149">YOY 収益増加</span><span class="sxs-lookup"><span data-stu-id="99e71-149">YOY revenue growth</span></span>                                      |
+| <span data-ttu-id="99e71-147">期間別収益\*</span><span class="sxs-lookup"><span data-stu-id="99e71-147">Revenue by period\*</span></span>    | <span data-ttu-id="99e71-148">月ごとの収益</span><span class="sxs-lookup"><span data-stu-id="99e71-148">Revenue by month</span></span>                           | <span data-ttu-id="99e71-149">YOY 収益増加</span><span class="sxs-lookup"><span data-stu-id="99e71-149">YOY revenue growth</span></span>                                      |
 |                        | <span data-ttu-id="99e71-150">末尾にある収益差異、YOY</span><span class="sxs-lookup"><span data-stu-id="99e71-150">Trailing revenue variance, YOY</span></span>             | <span data-ttu-id="99e71-151">YOY 収益増加 %</span><span class="sxs-lookup"><span data-stu-id="99e71-151">YOY revenue growth %</span></span>                                    |
 |                        | <span data-ttu-id="99e71-152">顧客地域による合計販売差異</span><span class="sxs-lookup"><span data-stu-id="99e71-152">Total sales variance by customer region</span></span>    |                                                         |
 | <span data-ttu-id="99e71-153">場所別の収益</span><span class="sxs-lookup"><span data-stu-id="99e71-153">Revenue by location</span></span>    | <span data-ttu-id="99e71-154">市町村による販売収益</span><span class="sxs-lookup"><span data-stu-id="99e71-154">Sales revenue by city</span></span>                      |                                                         |
@@ -75,7 +75,7 @@ ms.lasthandoff: 01/17/2018
 |                        | <span data-ttu-id="99e71-162">粗利ごとの上位 15 件の顧客</span><span class="sxs-lookup"><span data-stu-id="99e71-162">Top 15 customers by gross margin</span></span>           |                                                         |
 |                        | <span data-ttu-id="99e71-163">月ごとの粗利益、YOY</span><span class="sxs-lookup"><span data-stu-id="99e71-163">Gross profit by month, YOY</span></span>                 |                                                         |
 
-<span data-ttu-id="99e71-164">\\* 本年度と昨年度の収益、および販売カテゴリごとの増加。</span><span class="sxs-lookup"><span data-stu-id="99e71-164">\\* Revenue this and last year, and growth by sales category.</span></span>
+<span data-ttu-id="99e71-164">\* 本年度と昨年度の収益、および販売カテゴリごとの増加。</span><span class="sxs-lookup"><span data-stu-id="99e71-164">\* Revenue this and last year, and growth by sales category.</span></span>
 
 
 ## <a name="understanding-the-data-model-and-entities"></a><span data-ttu-id="99e71-165">データ モデルおよびエンティティの理解</span><span class="sxs-lookup"><span data-stu-id="99e71-165">Understanding the data model and entities</span></span>

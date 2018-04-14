@@ -19,17 +19,16 @@ ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: df07066371cb7d9c69976c9714b6d2fe456a0308
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 662a649f20fa4e22d83d22b651ec8bcdd69f8028
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="import-currency-exchange-rates"></a><span data-ttu-id="b13d4-105">現在の通貨為替レートをインポート</span><span class="sxs-lookup"><span data-stu-id="b13d4-105">Import currency exchange rates</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="b13d4-106">法人が外貨で請求書を受け取った場合は、外貨を国内通貨に変換する必要があります。</span><span class="sxs-lookup"><span data-stu-id="b13d4-106">If a legal entity has received invoices in foreign currencies, it’s necessary to convert the foreign currency into the local currency.</span></span> <span data-ttu-id="b13d4-107">これは異なる通貨に対する最新の為替レートが必要であることを意味します。</span><span class="sxs-lookup"><span data-stu-id="b13d4-107">This means that up-to-date exchange rates for different currencies are required.</span></span> <span data-ttu-id="b13d4-108">このトピックでは、ヨーロッパ中央銀行やロシア中央銀行などの為替レート プロバイダーによってインターネット経由で公開されている為替レートをインポートするために必要な設定と処理の概要を説明します。</span><span class="sxs-lookup"><span data-stu-id="b13d4-108">This topic provides an overview of the required settings and processing for importing foreign exchange reference rates published over the Internet by the exchange rate providers, such as the European Central Bank and the Central Bank of Russia.</span></span>
 

@@ -16,15 +16,15 @@ ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 02be2627186a149a05eaccfa3e5906a9fe1d74dd
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: c4996f77cee1611c1bcb3ed015447747fd03fad1
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="import-a-letter-of-credit"></a><span data-ttu-id="529e0-103">信用状のインポート</span><span class="sxs-lookup"><span data-stu-id="529e0-103">Import a letter of credit</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="529e0-104">この手順は、信用状のインポートのプロセスを説明します。</span><span class="sxs-lookup"><span data-stu-id="529e0-104">This procedure walks through the process of importing a letter of credit.</span></span> <span data-ttu-id="529e0-105">この手順を実行する前に次の事柄が設定されている必要があります : 銀行融資、転記プロファイル、銀行融資契約と仕入先銀行の詳細。</span><span class="sxs-lookup"><span data-stu-id="529e0-105">The following must be set up before completing this procedure: bank facilities, posting profiles, a bank facility agreement and vendor bank details.</span></span>
 

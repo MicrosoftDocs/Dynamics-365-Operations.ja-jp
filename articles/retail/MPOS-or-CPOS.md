@@ -19,16 +19,16 @@ ms.author: jeffbl
 ms.search.validFrom: 2017-10-12
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 7eb15f9f73f4773d98160e1b0ec5ce74c159cdea
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: c8d63ab3dcde9c206f1c0ddd0185109a3298f5a4
 ms.contentlocale: ja-jp
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="choose-between-modern-pos-and-cloud-pos"></a><span data-ttu-id="48540-104">Modern POS およびクラウド POS かの選択をします</span><span class="sxs-lookup"><span data-stu-id="48540-104">Choose between Modern POS and Cloud POS</span></span>
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 <span data-ttu-id="48540-105">このトピックでは、Microsoft Dynamics 365 for Retail を配置する際に考慮すべき要因に対する追加のバック グラウンド、ヒント、およびガイダンスを実装者に与えます。</span><span class="sxs-lookup"><span data-stu-id="48540-105">This topic gives implementers additional background, tips, and guidance for factors that they should consider when they deploy Microsoft Dynamics 365 for Retail.</span></span> <span data-ttu-id="48540-106">配置プロセスの一部としてこのガイドを確認し従うことにより、実装者は、ユーザーの満足度またはパフォーマンスに影響を与える可能性がある問題を回避することができます。</span><span class="sxs-lookup"><span data-stu-id="48540-106">By reviewing and following this guidance as part of the deployment process, implementers can avoid issues that might affect user satisfaction or performance.</span></span>
 
@@ -92,8 +92,8 @@ ms.lasthandoff: 02/07/2018
 
     <span data-ttu-id="48540-178">特定のデバイスの接続の信頼性および弾力性が非常に高くない限り、または一定のダウンタイムの量が小売業者に許容可能でない限り、次のオプションのいずれかをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="48540-178">Unless the connectivity for a given device is very dependable and resilient, or unless a certain amount of downtime is acceptable to the retailer, we recommend one of the following options:</span></span>
 
-    - <span data-ttu-id="48540-179">Windows で MPOS を使用し、オフライン モードを有効にします。</span><span class="sxs-lookup"><span data-stu-id="48540-179">Use MPOS in Windows, and enable offline mode.</span></span>
-    - <span data-ttu-id="48540-180">オンプレミス RSSU の配置。</span><span class="sxs-lookup"><span data-stu-id="48540-180">Deploy an on-premises RSSU.</span></span>
+  - <span data-ttu-id="48540-179">Windows で MPOS を使用し、オフライン モードを有効にします。</span><span class="sxs-lookup"><span data-stu-id="48540-179">Use MPOS in Windows, and enable offline mode.</span></span>
+  - <span data-ttu-id="48540-180">オンプレミス RSSU の配置。</span><span class="sxs-lookup"><span data-stu-id="48540-180">Deploy an on-premises RSSU.</span></span>
 
     <span data-ttu-id="48540-181">これら 2 つのオプションは、相互に排他的ではありません。</span><span class="sxs-lookup"><span data-stu-id="48540-181">These two options aren't mutually exclusive.</span></span> <span data-ttu-id="48540-182">最も信頼できるトポロジでは、小売業者はインターネット接続または Azure の可用性での依存関係を減らすためにローカル RSSU を配置でき、ローカル サーバーまたはネットワークに問題がある場合、オフライン モードが有効になっている POS レジスターを展開することもできます。</span><span class="sxs-lookup"><span data-stu-id="48540-182">For the most reliable topology, retailers can deploy a local RSSU to reduce the dependency on internet connectivity or Azure availability, and they can also deploy POS registers where offline mode is enabled if there is an issue with the local server or network.</span></span>
 

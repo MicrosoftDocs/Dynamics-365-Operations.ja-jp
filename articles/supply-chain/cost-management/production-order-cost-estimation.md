@@ -20,17 +20,16 @@ ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 3ea3998014eb9ac2fd4610b5d52bd792d4f73869
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: ef5a1b83ad0e6e0ef5c840913ce1a985dba69174
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="production-order-cost-estimation"></a><span data-ttu-id="9e559-104">原価見積を行う製造オーダー。</span><span class="sxs-lookup"><span data-stu-id="9e559-104">Production order cost estimation</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="9e559-105">この記事は、生産原価見積に関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="9e559-105">This article provides information about production cost estimation.</span></span> <span data-ttu-id="9e559-106">生産原価見積では、計画製造オーダー数量で品目を製造する場合の予測される材料消費および能力消費の原価が示されます。</span><span class="sxs-lookup"><span data-stu-id="9e559-106">Production cost estimation provides the projected material and capacity consumption costs of producing an item in the planned production order quantity.</span></span> 
 

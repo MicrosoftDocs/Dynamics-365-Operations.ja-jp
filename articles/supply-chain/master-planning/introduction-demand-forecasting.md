@@ -20,17 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 18ed011fa1c1aa35b4a401d51bffc6af19395577
-ms.openlocfilehash: 6a0455c5d86f953e270501a7f1648f7700f717d0
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 7a4a284c818b68e36baea55eac3d97b8396db993
 ms.contentlocale: ja-jp
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="demand-forecasting-overview"></a><span data-ttu-id="2612a-104">需要予測の概要</span><span class="sxs-lookup"><span data-stu-id="2612a-104">Demand forecasting overview</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="2612a-105">需要予測は、販売注文からの独立要求および顧客注文のすべての減結合ポイントで依存要求を予測する場合に使用されます。</span><span class="sxs-lookup"><span data-stu-id="2612a-105">Demand forecasting is used to predict independent demand from sales orders and dependent demand at any decoupling point for customer orders.</span></span> <span data-ttu-id="2612a-106">拡張された需要予測の削減ルールは、大量のカスタマイズに理想的なソリューションを提供します。</span><span class="sxs-lookup"><span data-stu-id="2612a-106">The enhanced demand forecast reduction rules provide an ideal solution for mass customization.</span></span>
 

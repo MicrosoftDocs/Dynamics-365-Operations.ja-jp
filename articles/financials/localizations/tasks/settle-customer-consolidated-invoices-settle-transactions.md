@@ -16,15 +16,15 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: b18ea91960b7d9ae6bce75b9087c3b41fc9e1a94
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 1d35af8d7d3c219f754ab2a5e2820f0ed1bf49f5
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="settle-customer-consolidated-invoices-by-using-settle-transactions-japan"></a><span data-ttu-id="cbd08-103">決済トランザクションを使用した顧客月次締め請求書の決済 (日本)</span><span class="sxs-lookup"><span data-stu-id="cbd08-103">Settle customer consolidated invoices by using settle transactions (Japan)</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="cbd08-104">日本では、支払は月次締め請求書に対して行われ決済されます。</span><span class="sxs-lookup"><span data-stu-id="cbd08-104">In Japan, payments are made and settled against consolidated invoice.</span></span>
 

@@ -18,17 +18,16 @@ ms.author: nselin
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 95d5bf26c22238753586cf4a7aaf5c26f061a705
-ms.openlocfilehash: 8f89d0740098fbd5af9d838f1f4b7ddf47ee7e10
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 6587189fe2a366caebd0dbaf34487d578815bb94
 ms.contentlocale: ja-jp
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="configure-electronic-reporting-to-pull-data-into-power-bi"></a><span data-ttu-id="8c48c-103">Power BI にデータをプルするよう電子申告を構成する</span><span class="sxs-lookup"><span data-stu-id="8c48c-103">Configure Electronic reporting to pull data into Power BI</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="8c48c-104">このトピックでは、電子申告 (ER) コンフィギュレーションを使用して Finance and Operations のインスタンスから Power BI サービスへのデータ転送を調整する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="8c48c-104">This topic explains how you can use your Electronic reporting (ER) configuration to arrange the transfer of data from your instance of Finance and Operations to Power BI services.</span></span> <span data-ttu-id="8c48c-105">たとえば、このトピックでは、転送する必要があるビジネス データとしてのイントラスタット トランザクションを使用します。</span><span class="sxs-lookup"><span data-stu-id="8c48c-105">As an example, this topic uses Intrastat transactions as business data that must be transferred.</span></span> <span data-ttu-id="8c48c-106">Power BI マップの視覚化は、このイントラスタット トランザクション データを使用して Power BI レポートで会社のインポート/エクスポート活動の分析のためのビューを表示します。</span><span class="sxs-lookup"><span data-stu-id="8c48c-106">The Power BI map visualization uses this Intrastat transaction data to present a view for analysis of company import/export activities on the Power BI report.</span></span>
 
@@ -118,9 +117,9 @@ ms.lasthandoff: 02/23/2018
 ## <a name="create-a-power-bi-report-by-using-the-new-dataset"></a><span data-ttu-id="8c48c-217">新しいデータセットを使用して Power BI レポートを作成</span><span class="sxs-lookup"><span data-stu-id="8c48c-217">Create a Power BI report by using the new dataset</span></span>
 1. <span data-ttu-id="8c48c-218">作成した **インポートとエクスポートの詳細** Power BI データセットをクリックします。</span><span class="sxs-lookup"><span data-stu-id="8c48c-218">Click the **Import and export details** Power BI dataset that you created.</span></span> 
 2. <span data-ttu-id="8c48c-219">視覚化をコンフィギュレーションします。</span><span class="sxs-lookup"><span data-stu-id="8c48c-219">Configure the visualization.</span></span> <span data-ttu-id="8c48c-220">たとえば [**入力済マップ**] の視覚化を選択して、次のようにコンフィギュレーションします:</span><span class="sxs-lookup"><span data-stu-id="8c48c-220">For example, select the **Filled map** visualization, and configure it as follows:</span></span>
- -   <span data-ttu-id="8c48c-221">[**CountryOrigin**] データセット フィールドをマップ視覚化の [**場所**] フィールドに割り当てます。</span><span class="sxs-lookup"><span data-stu-id="8c48c-221">Assign the **CountryOrigin** dataset field to the **Location** field of the map visualization.</span></span>
- -   <span data-ttu-id="8c48c-222">[**金額**] データセット フィールドをマップ視覚化の [**彩度**] フィールドに割り当てます。</span><span class="sxs-lookup"><span data-stu-id="8c48c-222">Assign the **Amount** dataset field to the **Color saturation** field of the map visualization.</span></span>
- -   <span data-ttu-id="8c48c-223">[**活動**] と [**年**] のデータセット フィールドに、マップ視覚化の [**フィルター**] フィールド コレクション を追加します。</span><span class="sxs-lookup"><span data-stu-id="8c48c-223">Add the **Activity** and **Year** dataset fields to the **Filters** fields collection of the map visualization.</span></span>
+   -   <span data-ttu-id="8c48c-221">[**CountryOrigin**] データセット フィールドをマップ視覚化の [**場所**] フィールドに割り当てます。</span><span class="sxs-lookup"><span data-stu-id="8c48c-221">Assign the **CountryOrigin** dataset field to the **Location** field of the map visualization.</span></span>
+   -   <span data-ttu-id="8c48c-222">[**金額**] データセット フィールドをマップ視覚化の [**彩度**] フィールドに割り当てます。</span><span class="sxs-lookup"><span data-stu-id="8c48c-222">Assign the **Amount** dataset field to the **Color saturation** field of the map visualization.</span></span>
+   -   <span data-ttu-id="8c48c-223">[**活動**] と [**年**] のデータセット フィールドに、マップ視覚化の [**フィルター**] フィールド コレクション を追加します。</span><span class="sxs-lookup"><span data-stu-id="8c48c-223">Add the **Activity** and **Year** dataset fields to the **Filters** fields collection of the map visualization.</span></span>
 
 3. <span data-ttu-id="8c48c-224">**インポートとエクスポートの詳細レポート**として Power BI レポートを保存します。</span><span class="sxs-lookup"><span data-stu-id="8c48c-224">Save the Power BI report as **Import and export details report**.</span></span> <span data-ttu-id="8c48c-225">[![インポートとエクスポートの詳細レポート](./media/ger-power-bi-added-report-1024x498.png)](./media/ger-power-bi-added-report.png) 地図には、Excel ファイルに示されている国/地域 (この例ではオーストリアとスイス) が表示されていることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="8c48c-225">[![Import and export details report](./media/ger-power-bi-added-report-1024x498.png)](./media/ger-power-bi-added-report.png) Note that the map shows the countries/regions that are mentioned in the Excel file (Austria and Switzerland in this example).</span></span> <span data-ttu-id="8c48c-226">これらの国/地域は、それぞれの請求額の割合の色分けが表示されます。</span><span class="sxs-lookup"><span data-stu-id="8c48c-226">These countries/regions are colored to show the proportion of invoiced amounts for each.</span></span> 
 4. <span data-ttu-id="8c48c-227">イントラスタット トランザクションのリストを更新します。</span><span class="sxs-lookup"><span data-stu-id="8c48c-227">Update the list of Intrastat transactions.</span></span> <span data-ttu-id="8c48c-228">イタリアからの輸出トランザクションが追加されます。</span><span class="sxs-lookup"><span data-stu-id="8c48c-228">The export transaction that originated from Italy is added.</span></span> <span data-ttu-id="8c48c-229">[![イントラスタット トランザクションのリスト](./media/ger-power-bi-new-run-new-transaction-1024x321.png)](./media/ger-power-bi-new-run-new-transaction.png)</span><span class="sxs-lookup"><span data-stu-id="8c48c-229">[![Intrastat transactions list](./media/ger-power-bi-new-run-new-transaction-1024x321.png)](./media/ger-power-bi-new-run-new-transaction.png)</span></span> 

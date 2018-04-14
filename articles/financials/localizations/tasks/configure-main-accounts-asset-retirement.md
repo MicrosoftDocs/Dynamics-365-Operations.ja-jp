@@ -16,15 +16,15 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: ae0e523607c681237949161152ff8ede8c4b4e86
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a1b27b29b168e2fcacc268ad91a2c879ee2cb428
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="configure-main-accounts-for-asset-retirement-obligation-posting-and-market-discount-rates-japan"></a><span data-ttu-id="aa23a-103">資産除去責務の転記および市場割引率のための主勘定のコンフィギュレーション (日本)</span><span class="sxs-lookup"><span data-stu-id="aa23a-103">Configure main accounts for asset retirement obligation posting and market discount rates (Japan)</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="aa23a-104">日本では、法的な除去責務のある固定資産を取得した場合、除去する際には資産除去責務を評価し転記する必要があります。</span><span class="sxs-lookup"><span data-stu-id="aa23a-104">For Japan, asset retirement obligation needs to be assessed and posted when acquiring a fixed asset with legal obligations at retirement.</span></span> 
 

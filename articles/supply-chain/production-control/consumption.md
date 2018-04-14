@@ -20,17 +20,16 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f674a1f0051ee4b228b8a92f717ef5348a452bed
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 5fe073db08c276eff9ba6c6a8fd54ac5e6d333ea
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="calculate-material-consumption"></a><span data-ttu-id="5d98d-103">材料消費の計算</span><span class="sxs-lookup"><span data-stu-id="5d98d-103">Calculate material consumption</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="5d98d-104">この記事は、材料消費の計算に関するさまざまなオプションについての情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="5d98d-104">This article provides information about various options that are related to the calculation of material consumption.</span></span> 
 
@@ -42,10 +41,10 @@ ms.lasthandoff: 11/03/2017
 ## <a name="calculating-consumption-from-a-formula"></a><span data-ttu-id="5d98d-110">計算式から消費量を計算</span><span class="sxs-lookup"><span data-stu-id="5d98d-110">Calculating consumption from a formula</span></span>
 <span data-ttu-id="5d98d-111">**式**フィールドで、材料消費の計算のさまざまな式を設定できます。</span><span class="sxs-lookup"><span data-stu-id="5d98d-111">In the **Formula** field, you can set up various formulas for calculating material consumption.</span></span> <span data-ttu-id="5d98d-112">既定値の**標準**を使用する場合、消費は式からは計算されません。</span><span class="sxs-lookup"><span data-stu-id="5d98d-112">If you use the default value, **Standard**, the consumption isn't calculated from a formula.</span></span> <span data-ttu-id="5d98d-113">次の式は、**高さ**、**幅**、**奥行き**、**密度**、**定数**の各フィールドとともに使用します。</span><span class="sxs-lookup"><span data-stu-id="5d98d-113">The following formulas work together with the **Height**, **Width**, **Depth**, **Density**, and **Constant** fields:</span></span>
 
--   <span data-ttu-id="5d98d-114">高さ \\* 定数</span><span class="sxs-lookup"><span data-stu-id="5d98d-114">Height \\* Constant</span></span>
+-   <span data-ttu-id="5d98d-114">高さ \* 定数</span><span class="sxs-lookup"><span data-stu-id="5d98d-114">Height \* Constant</span></span>
 -   <span data-ttu-id="5d98d-115">高さ \* 幅 \* 定数</span><span class="sxs-lookup"><span data-stu-id="5d98d-115">Height \* Width \* Constant</span></span>
--   <span data-ttu-id="5d98d-116">高さ \\* 幅 \\* 奥行き \\* 定数</span><span class="sxs-lookup"><span data-stu-id="5d98d-116">Height \\* Width \\* Depth \\* Constant</span></span>
--   <span data-ttu-id="5d98d-117">(高さ \\* 幅 \\* 奥行き/密度) \\* 定数</span><span class="sxs-lookup"><span data-stu-id="5d98d-117">(Height \\* Width \\* Depth / Density) \\* Constant</span></span>
+-   <span data-ttu-id="5d98d-116">高さ \* 幅 \* 奥行き \* 定数</span><span class="sxs-lookup"><span data-stu-id="5d98d-116">Height \* Width \* Depth \* Constant</span></span>
+-   <span data-ttu-id="5d98d-117">(高さ \* 幅 \* 奥行き/密度) \* 定数</span><span class="sxs-lookup"><span data-stu-id="5d98d-117">(Height \* Width \* Depth / Density) \* Constant</span></span>
 
 ## <a name="rounding-up-and-multiples"></a><span data-ttu-id="5d98d-118">切り上げと倍数</span><span class="sxs-lookup"><span data-stu-id="5d98d-118">Rounding up and multiples</span></span>
 <span data-ttu-id="5d98d-119">また、**切り上げ**と**倍数**のフィールドで、材料消費の値を切り上げることができます。</span><span class="sxs-lookup"><span data-stu-id="5d98d-119">Together, the **Rounding up** and **Multiples** fields let you round up the material consumption value.</span></span> <span data-ttu-id="5d98d-120">たとえば、生産に対して原材料がピッキングされる材料取り扱い単位に応じて、値を切り上げることができます。</span><span class="sxs-lookup"><span data-stu-id="5d98d-120">For example, you can round up the value according to the handling unit in which the raw material is picked for production.</span></span> <span data-ttu-id="5d98d-121">**切り上げ**フィールドでは、次のオプションを使用できます: **数量**、**測定**、**消費**。</span><span class="sxs-lookup"><span data-stu-id="5d98d-121">The following options are available in the **Rounding up** field: **Quantity**, **Measurement**, and **Consumption**.</span></span>
@@ -56,7 +55,7 @@ ms.lasthandoff: 11/03/2017
 
 ### <a name="measurement"></a><span data-ttu-id="5d98d-126">測定</span><span class="sxs-lookup"><span data-stu-id="5d98d-126">Measurement</span></span>
 
-<span data-ttu-id="5d98d-127">原材料が特定のサイズで入荷される場合、通常、丸め方法として**測定**を選択します。</span><span class="sxs-lookup"><span data-stu-id="5d98d-127">Typically, you select **Measurement** as the rounding-up mechanism when the raw material comes in specific dimensions.</span></span> <span data-ttu-id="5d98d-128">たとえば、2 メートルの金属管が完成品に要求され、4.5 メートルの長さで金属管が保存されるとします。</span><span class="sxs-lookup"><span data-stu-id="5d98d-128">For example, a piece of 2-meter metal tube is required for a finished good, and the metal tube is stored in 4.5-meter lengths.</span></span> <span data-ttu-id="5d98d-129">この場合、**測定**の切り上げ方法は、特定の数量の完成品を生産するために必要な金属管の数量を計算するために使用できます。</span><span class="sxs-lookup"><span data-stu-id="5d98d-129">In this case, the **Measurement** rounding-up mechanism can be used to calculate how many metal tubes are required to produce a specific number of pieces of the finished good.</span></span> <span data-ttu-id="5d98d-130">この例では、[式] フィールドは [高さ \\* 定数] に設定されています。</span><span class="sxs-lookup"><span data-stu-id="5d98d-130">For this example, the **Formula** field is set to **Height \\* Constant**.</span></span> <span data-ttu-id="5d98d-131">[高さ] フィールドには **2** が設定され、これが完成品に必要な管の長さを示します。</span><span class="sxs-lookup"><span data-stu-id="5d98d-131">The **Height** field is set to **2** to indicate the length of the tube that is required for the finished good.</span></span> <span data-ttu-id="5d98d-132">**倍数**フィールドには **4.5** が設定され、4.5 メートルの長さで管がピッキングされることを示します。</span><span class="sxs-lookup"><span data-stu-id="5d98d-132">The **Multiple** field is set to **4.5** to indicate that the tube is picked in lengths of 4.5 meters.</span></span> <span data-ttu-id="5d98d-133">計算を次に示します。</span><span class="sxs-lookup"><span data-stu-id="5d98d-133">Here is the calculation:</span></span>
+<span data-ttu-id="5d98d-127">原材料が特定のサイズで入荷される場合、通常、丸め方法として**測定**を選択します。</span><span class="sxs-lookup"><span data-stu-id="5d98d-127">Typically, you select **Measurement** as the rounding-up mechanism when the raw material comes in specific dimensions.</span></span> <span data-ttu-id="5d98d-128">たとえば、2 メートルの金属管が完成品に要求され、4.5 メートルの長さで金属管が保存されるとします。</span><span class="sxs-lookup"><span data-stu-id="5d98d-128">For example, a piece of 2-meter metal tube is required for a finished good, and the metal tube is stored in 4.5-meter lengths.</span></span> <span data-ttu-id="5d98d-129">この場合、**測定**の切り上げ方法は、特定の数量の完成品を生産するために必要な金属管の数量を計算するために使用できます。</span><span class="sxs-lookup"><span data-stu-id="5d98d-129">In this case, the **Measurement** rounding-up mechanism can be used to calculate how many metal tubes are required to produce a specific number of pieces of the finished good.</span></span> <span data-ttu-id="5d98d-130">この例では、[式] フィールドは [高さ \* 定数] に設定されています。</span><span class="sxs-lookup"><span data-stu-id="5d98d-130">For this example, the **Formula** field is set to **Height \* Constant**.</span></span> <span data-ttu-id="5d98d-131">[高さ] フィールドには **2** が設定され、これが完成品に必要な管の長さを示します。</span><span class="sxs-lookup"><span data-stu-id="5d98d-131">The **Height** field is set to **2** to indicate the length of the tube that is required for the finished good.</span></span> <span data-ttu-id="5d98d-132">**倍数**フィールドには **4.5** が設定され、4.5 メートルの長さで管がピッキングされることを示します。</span><span class="sxs-lookup"><span data-stu-id="5d98d-132">The **Multiple** field is set to **4.5** to indicate that the tube is picked in lengths of 4.5 meters.</span></span> <span data-ttu-id="5d98d-133">計算を次に示します。</span><span class="sxs-lookup"><span data-stu-id="5d98d-133">Here is the calculation:</span></span>
 
 1.  <span data-ttu-id="5d98d-134">完成品 10 個あたりに必要な倍数: 10 ÷ 2 = 5 個</span><span class="sxs-lookup"><span data-stu-id="5d98d-134">Number of multiples that are required for 10 pieces of the finished good: 10 ÷ 2 = 5 pieces</span></span>
 2.  <span data-ttu-id="5d98d-135">消費合計: 4.5 × 5 = 22.5 メートルの金属管</span><span class="sxs-lookup"><span data-stu-id="5d98d-135">Total consumption:  4.5 × 5 = 22.5 meters of metal tube</span></span>

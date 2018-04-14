@@ -19,17 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: bfa93961e4e3a7c1c68494ffae94c877aa466183
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 62eea2f013904f0b7ad4f5681440506445ec6330
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="settle-a-partial-vendor-payment-and-the-final-payment-in-full-before-the-discount-date"></a><span data-ttu-id="a4cb5-103">一部の仕入先支払の決済、および割引日より前の全額最終支払</span><span class="sxs-lookup"><span data-stu-id="a4cb5-103">Settle a partial vendor payment and the final payment in full before the discount date</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="a4cb5-104">この記事は、仕入先請求書に対して一部支払が作成され、現金割引が提供されるシナリオについて説明します。</span><span class="sxs-lookup"><span data-stu-id="a4cb5-104">This article walks you through a scenario where partial payments are made for a vendor invoice, and a cash discount is taken.</span></span>
 

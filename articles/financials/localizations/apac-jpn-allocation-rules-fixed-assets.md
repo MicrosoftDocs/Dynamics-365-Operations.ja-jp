@@ -18,16 +18,16 @@ ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 554c350961baed8be8f37854dd1b095d4342ae0e
-ms.openlocfilehash: f0a78d0407ad52c5f42fad18d0b369f5b6829ae1
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 54a652e171e7a5471d01e8782283e3c0b4684b2b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/21/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="fixed-asset-allocation-rules-for-japan"></a><span data-ttu-id="5c060-103">日本の固定資産配賦ルール</span><span class="sxs-lookup"><span data-stu-id="5c060-103">Fixed asset allocation rules for Japan</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="5c060-104">日本では、固定資産は管理部門に登録され、減価償却量は使用部門間で割り当てられる必要があります。</span><span class="sxs-lookup"><span data-stu-id="5c060-104">In Japan, a fixed asset is registered under an administrative department, and the depreciation amount must be allocated among the usage departments.</span></span> <span data-ttu-id="5c060-105">減価償却金額を割合で複数の財務分析コードに割り当てる配賦ルールを設定できます。</span><span class="sxs-lookup"><span data-stu-id="5c060-105">You can set up an allocation rule to allocate depreciation amounts to multiple financial dimensions by percentage.</span></span> <span data-ttu-id="5c060-106">この記事は、固定資産配賦ルールについてよく寄せられる質問に回答します。</span><span class="sxs-lookup"><span data-stu-id="5c060-106">This article answers some frequently asked questions about the allocation rules for fixed assets.</span></span>
 

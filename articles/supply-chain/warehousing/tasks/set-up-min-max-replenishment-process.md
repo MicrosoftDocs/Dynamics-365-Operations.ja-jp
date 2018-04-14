@@ -17,15 +17,15 @@ ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 76334f7ee4efe33df4a86aaa11a59748387cec89
-ms.openlocfilehash: 4d591eec163cfe2952f37b93e634eae676860889
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 30bff74da8399ddc15f2bc84e83887c8b5e60570
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="set-up-a-min-max-replenishment-process"></a><span data-ttu-id="ad5fd-103">最小/最大の補充プロセスの設定</span><span class="sxs-lookup"><span data-stu-id="ad5fd-103">Set up a min-max replenishment process</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="ad5fd-104">この手順では、最小/最大の補充方法を使用する新しい補充プロセスを設定する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="ad5fd-104">This procedure shows you how to set up a new replenishment process which uses the minimum/maximum replenishment strategy.</span></span> <span data-ttu-id="ad5fd-105">在庫が最小レベルを下回った場合、場所を補充するために作業が作成されます。</span><span class="sxs-lookup"><span data-stu-id="ad5fd-105">When inventory falls below the minimum level, work will be created to replenish the location.</span></span> <span data-ttu-id="ad5fd-106">手順では、在庫が最小レベルを下回った場合でも補充を許可する固定のピッキング場所の使用方法や、バッチ ジョブを使用して定期的に補充プロセスを実行できるようにする方法も示します。</span><span class="sxs-lookup"><span data-stu-id="ad5fd-106">The procedure also shows how to use fixed picking locations to allow restocking even if inventory falls below the minimum level, and how to enable the replenishment process to run regularly using a batch job.</span></span> <span data-ttu-id="ad5fd-107">通常、これらのタスクを実施するのは、倉庫マネージャーです。</span><span class="sxs-lookup"><span data-stu-id="ad5fd-107">These tasks would typically be carried out by a warehouse manager.</span></span> <span data-ttu-id="ad5fd-108">メモの例の値を使用するデモ データの会社 USMF でこの手順を実行したり、独自のデータで実行したりできます。</span><span class="sxs-lookup"><span data-stu-id="ad5fd-108">You can run this procedure in the USMF demo data company using the example values in the notes, or can run it on your own data.</span></span> <span data-ttu-id="ad5fd-109">独自のデータを使用している場合、倉庫管理プロセスに有効な倉庫があることを確認します。</span><span class="sxs-lookup"><span data-stu-id="ad5fd-109">If you’re using your own data, make sure that you have a warehouse that’s enabled for Warehouse management processes.</span></span>
 
@@ -120,7 +120,7 @@ ms.lasthandoff: 11/02/2017
     * <span data-ttu-id="ad5fd-206">これは、補充する必要のある製品を定義する場所です。</span><span class="sxs-lookup"><span data-stu-id="ad5fd-206">This is the place to define which products should be replenished.</span></span> <span data-ttu-id="ad5fd-207">[固定のピッキング場所] オプションを選択している場合、このクエリの場所も定義する必要があります。</span><span class="sxs-lookup"><span data-stu-id="ad5fd-207">If the Fixed picking locations option is selected, you also need to define the locations in this query.</span></span> <span data-ttu-id="ad5fd-208">バリアント固有のクエリが、製品固有のクエリと同様に使用できます。</span><span class="sxs-lookup"><span data-stu-id="ad5fd-208">Variant-specific queries are available as well product-specific queries.</span></span>  
 18. <span data-ttu-id="ad5fd-209">[品目] の行を選択します。</span><span class="sxs-lookup"><span data-stu-id="ad5fd-209">Select the Items row.</span></span>
 19. <span data-ttu-id="ad5fd-210">[基準] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="ad5fd-210">In the Criteria field, type a value.</span></span>
-    * <span data-ttu-id="ad5fd-211">固定の場所で補充する必要がある品目を選択します。</span><span class="sxs-lookup"><span data-stu-id="ad5fd-211">Select the items that should be replenished at the fixed locations.</span></span> <span data-ttu-id="ad5fd-212">たとえば、A で始まるすべての品目番号を選択するには、A* を入力します。</span><span class="sxs-lookup"><span data-stu-id="ad5fd-212">For example, type A* to select all item numbers beginning with A.</span></span>  
+    * <span data-ttu-id="ad5fd-211">固定の場所で補充する必要がある品目を選択します。</span><span class="sxs-lookup"><span data-stu-id="ad5fd-211">Select the items that should be replenished at the fixed locations.</span></span> <span data-ttu-id="ad5fd-212">たとえば、A で始まるすべての品目番号を選択するには、A\* を入力します。</span><span class="sxs-lookup"><span data-stu-id="ad5fd-212">For example, type A\* to select all item numbers beginning with A.</span></span>  
 20. <span data-ttu-id="ad5fd-213">[追加] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ad5fd-213">Click Add.</span></span>
     * <span data-ttu-id="ad5fd-214">場所エンティティ (存在しない場合) を追加して、倉庫の特定の領域内の固定ピッキング場所への補充作業を制限することができます。</span><span class="sxs-lookup"><span data-stu-id="ad5fd-214">Add the Location entity (unless it already exists) to be able to restrict the replenishment work to the fixed picking locations within a specific area of the warehouse.</span></span>  
 21. <span data-ttu-id="ad5fd-215">一覧で、選択された行をマークします。</span><span class="sxs-lookup"><span data-stu-id="ad5fd-215">In the list, mark the selected row.</span></span>

@@ -19,17 +19,16 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 259b487b0f11b19af9609d63f12114dcaa61be52
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 87bafa5817ceef8428cf28c60ec336c127e432d4
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="foreign-currency-revaluation-for-accounts-payable-and-accounts-receivable"></a><span data-ttu-id="d3070-104">[買掛金勘定] および [売掛金勘定] の外貨再評価</span><span class="sxs-lookup"><span data-stu-id="d3070-104">Foreign currency revaluation for Accounts payable and Accounts receivable</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="d3070-105">為替レートの変動は、外貨での未処理トランザクションの計算上の金額 (簿価額) が時間の経過と共に変化する原因になります。</span><span class="sxs-lookup"><span data-stu-id="d3070-105">Fluctuations in exchange rates cause the theoretical value (book value) of open transactions in foreign currencies to vary over time.</span></span> <span data-ttu-id="d3070-106">この記事は、[買掛金勘定] および [売掛金勘定] の未処理トランザクションの値を更新するために実行する外貨再評価プロセスに関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="d3070-106">This article provides information about the foreign currency revaluation process that you run to update the value of open transactions in Accounts payable and Accounts receivable.</span></span> 
 

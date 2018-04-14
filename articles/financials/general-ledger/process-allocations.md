@@ -19,17 +19,16 @@ ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 26e7f607e070ac6c09a92d7809d65bac34d51f0b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 70e6c17b5c7e38c2f9f7a5087175e7cfd2e5542a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="process-allocations"></a><span data-ttu-id="93187-105">配賦の処理</span><span class="sxs-lookup"><span data-stu-id="93187-105">Process allocations</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="93187-106">この記事では、配賦を Microsoft Dynamics 365 for Finance and Operations で処理するオプション、および予算の計画で使用する方法に関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="93187-106">This article provides information about allocations, the options for processing them in Microsoft Dynamics 365 for Finance and Operations, and how they can be used in budget planning.</span></span> <span data-ttu-id="93187-107">配賦は、複数の勘定科目の組み合わせ全体で金額を配分するのに使用されます。</span><span class="sxs-lookup"><span data-stu-id="93187-107">Allocations are used to distribute amounts across multiple ledger account combinations.</span></span> <span data-ttu-id="93187-108">経費、または収益が正しい会計のオブジェクトに付けられることを保証します。</span><span class="sxs-lookup"><span data-stu-id="93187-108">They help guarantee that expenses or revenue is charged to the correct object in accounting.</span></span>
 

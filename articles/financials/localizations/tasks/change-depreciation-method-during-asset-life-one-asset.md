@@ -16,15 +16,15 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 0d965ab57227c48c3b86d61c904040af4ea8a60c
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 7b2b3a740beeadb77ca8404a277037990dfd89c0
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="change-the-depreciation-method-during-the-asset-life-for-one-asset-japan"></a><span data-ttu-id="84baf-103">単一資産の資産耐用年数期間中の減価償却方法の変更 (日本)</span><span class="sxs-lookup"><span data-stu-id="84baf-103">Change the depreciation method during the asset life for one asset (Japan)</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="84baf-104">日本では、固定資産の耐用年数期間中、減価償却方法を変更することが許可されています。</span><span class="sxs-lookup"><span data-stu-id="84baf-104">In Japan, the depreciation method is permitted to change during the service life of a fixed asset.</span></span>
 

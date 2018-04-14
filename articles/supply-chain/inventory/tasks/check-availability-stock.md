@@ -17,15 +17,15 @@ ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: 74eaa59db44e21b3ddfae38d28f84712959cc40e
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: e4b08aa7376bee6526d1993ee38916b60d0e0648
 ms.contentlocale: ja-jp
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="check-the-availability-of-stock"></a><span data-ttu-id="3336c-103">有効在庫数の確認</span><span class="sxs-lookup"><span data-stu-id="3336c-103">Check the availability of stock</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="3336c-104">この手順では、特定の品目番号において現物手持在庫を確認する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="3336c-104">This procedure shows you how to check on-hand and physical on-hand inventory for a specific item number.</span></span> <span data-ttu-id="3336c-105">またこれらは品目に関連する供給情報を取得する方法を表示します。</span><span class="sxs-lookup"><span data-stu-id="3336c-105">It also shows you how to get supply information related to an item.</span></span> <span data-ttu-id="3336c-106">現物手持在庫とは使用可能である、つまり、購入済、受領済、登録済である手持ち在庫です。</span><span class="sxs-lookup"><span data-stu-id="3336c-106">Physical on-hand inventory is the on-hand inventory that’s available – that is, it’s purchased, received and registered.</span></span> <span data-ttu-id="3336c-107">手持在庫には使用可能な手持在庫が含まれる一方で、注文し、予想されているがまだ入庫されていないまたは登録されていない在庫も含まれます。</span><span class="sxs-lookup"><span data-stu-id="3336c-107">On-hand inventory includes the available on-hand inventory, but also the inventory that’s been ordered and is expected, but not yet received or registered.</span></span> <span data-ttu-id="3336c-108">デモ データ会社 USMF または独自のデータを使用してこの手順の説明を見ることができます。</span><span class="sxs-lookup"><span data-stu-id="3336c-108">You can walk through this procedure in demo data company USMF, or using your own data.</span></span> <span data-ttu-id="3336c-109">USMF を使用すると、表示される例の値を使用できます。</span><span class="sxs-lookup"><span data-stu-id="3336c-109">If you are using USMF you can use the example values that are shown.</span></span> <span data-ttu-id="3336c-110">通常、これらのタスクを実施するのは、倉庫作業者です。</span><span class="sxs-lookup"><span data-stu-id="3336c-110">These tasks would typically be carried out by a warehouse worker.</span></span>
 

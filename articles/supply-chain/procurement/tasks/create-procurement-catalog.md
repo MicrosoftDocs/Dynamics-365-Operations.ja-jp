@@ -16,15 +16,15 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: df844ba3834972441daa61899294b3e95cac96c1
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 66c0f41e1c98cf84b6a0afff5ee55e7c15fecd2d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-a-procurement-catalog"></a><span data-ttu-id="f27f2-103">調達カタログの作成</span><span class="sxs-lookup"><span data-stu-id="f27f2-103">Create a procurement catalog</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="f27f2-104">このガイドでは、調達カタログを作成する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="f27f2-104">This guide shows you how to create a procurement catalog.</span></span> <span data-ttu-id="f27f2-105">通常、このタスクを実行するのは、調達担当者です。</span><span class="sxs-lookup"><span data-stu-id="f27f2-105">This task would typically be carried out by a procurement professional.</span></span> <span data-ttu-id="f27f2-106">さらに従業員が要求を作成する際にカタログを使用する方法も参照できます。</span><span class="sxs-lookup"><span data-stu-id="f27f2-106">You will also learn how employees can use the catalog when they create a requisition.</span></span> <span data-ttu-id="f27f2-107">カタログを作成する前に、システム内に調達カテゴリ階層が必要です。</span><span class="sxs-lookup"><span data-stu-id="f27f2-107">Before you can create a catalog, there must be a procurement category hierarchy in your system.</span></span> <span data-ttu-id="f27f2-108">階層は、階層にあるすべての製品とともに、新しいカタログによって継承されます。</span><span class="sxs-lookup"><span data-stu-id="f27f2-108">The hierarchy is inherited by the new catalog, along with all the products that are in the hierarchy.</span></span> <span data-ttu-id="f27f2-109">調達カテゴリ階層を使用する場合、さらに手順ステップで使用される例にも、このガイドをデモ データ会社 USMF で使用することができます。</span><span class="sxs-lookup"><span data-stu-id="f27f2-109">You can use this guide in demo data company USMF where the procurement category hierarchy is available, as well as the examples used in the procedure steps.</span></span>
 

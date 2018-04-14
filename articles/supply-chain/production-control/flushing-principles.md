@@ -19,16 +19,16 @@ ms.author: johanho
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: ba426692e2e404ab75e5730b8205115fc59e402f
-ms.openlocfilehash: f5fc4db479852ffac5f2b3401a0c1bd92c35a7cb
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 818d7d21605ada63a29a41d3bf20ed9cbf21a178
 ms.contentlocale: ja-jp
-ms.lasthandoff: 02/08/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="controlling-raw-material-consumption-by-using-flushing-principles"></a><span data-ttu-id="f8d3e-103">消費ルールを使用して原材料消費を管理する</span><span class="sxs-lookup"><span data-stu-id="f8d3e-103">Controlling raw material consumption by using flushing principles</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="f8d3e-104">部品消費ルールは、生産プロセスで使用される原材料における消費戦略とは異なる戦略を反映します。</span><span class="sxs-lookup"><span data-stu-id="f8d3e-104">The flushing principles reflect different consumption strategies for raw materials that are used in production processes.</span></span> <span data-ttu-id="f8d3e-105">消費は、手持在庫から品目を差し引き、消費品目の金額を、製造オーダーおよびバッチ オーダーの**進行中の作業** (WIP) に設定するプロセスです。</span><span class="sxs-lookup"><span data-stu-id="f8d3e-105">Consumption is the process that deducts material from the on-hand inventory and sets the value of the consumed materials to **Work in progress** (WIP) for production orders and batch orders.</span></span> <span data-ttu-id="f8d3e-106">通常、原材料は、材料を消費するプロセスで構成されている場所から消費されます。</span><span class="sxs-lookup"><span data-stu-id="f8d3e-106">Raw materials are usually consumed from a location that is configured for the process that consumes the material.</span></span> <span data-ttu-id="f8d3e-107">この場所は、生産入庫の場所と呼ばれます。</span><span class="sxs-lookup"><span data-stu-id="f8d3e-107">This location is known as the production input location.</span></span>
 

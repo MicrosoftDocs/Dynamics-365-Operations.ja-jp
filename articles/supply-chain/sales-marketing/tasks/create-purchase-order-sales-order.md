@@ -16,15 +16,15 @@ ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 412a8c7acca06fc1be073019f91144e2a3f1c94b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 1a840324862a7d3e279fce49288771d202527b77
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-a-purchase-order-from-a-sales-order"></a><span data-ttu-id="9d8ac-103">販売注文からの発注書の作成</span><span class="sxs-lookup"><span data-stu-id="9d8ac-103">Create a purchase order from a sales order</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="9d8ac-104">この手順は、販売注文に基づいた発注書を作成する方法を表示します。</span><span class="sxs-lookup"><span data-stu-id="9d8ac-104">This procedure shows you how to create a purchase order that is based on a sales order.</span></span> <span data-ttu-id="9d8ac-105">発注書の製品の数量は、元の販売注文の需要を満たすよう指定されます。</span><span class="sxs-lookup"><span data-stu-id="9d8ac-105">The product's quantities on the purchase order are then designated to fulfill the demand of the originating sales order.</span></span> <span data-ttu-id="9d8ac-106">販売需要を満たすこの方法は、[配送要件計画] のより包括的で最適化された方法の代替です。</span><span class="sxs-lookup"><span data-stu-id="9d8ac-106">Fulfilling sales demand this way is an alternative to a more comprehensive and optimized method of Distribution Requirements Planning.</span></span> <span data-ttu-id="9d8ac-107">この手順は、デモ データの会社 USMF で、または独自のデータで実行できます。</span><span class="sxs-lookup"><span data-stu-id="9d8ac-107">You can run this procedure in demo data company USMF or on your own data.</span></span>
 

@@ -16,15 +16,15 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 5dea9d7bfb1bf7b11f6c49cccaab1b73d4e58d16
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 140d9f7a48b6cb06f02d3c4e6440d0a99a9d8161
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="enter-and-compare-rfq-bids-and-award-contracts"></a><span data-ttu-id="7d6e4-103">RFQ 入札価格の入力と比較および契約の授与</span><span class="sxs-lookup"><span data-stu-id="7d6e4-103">Enter and compare RFQ bids and award contracts</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="7d6e4-104">この手順は、RFQ への返信を入力したり、入札の記録や比較をしたり、また仕入先の 1 つに入札を付与する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="7d6e4-104">This procedure shows you how to enter replies to an RFQ, score and compare bids, and then award the bid to one of the vendors.</span></span> <span data-ttu-id="7d6e4-105">デモ データの会社 USMF でこの手順を使用できます。</span><span class="sxs-lookup"><span data-stu-id="7d6e4-105">You can use this procedure in demo data company USMF.</span></span> <span data-ttu-id="7d6e4-106">開始する前に、少なくとも 2 つの仕入先に送信された、2 つの明細行から成る RFQ が必要になります。</span><span class="sxs-lookup"><span data-stu-id="7d6e4-106">Before you start, you must have an RFQ with two lines that has been sent to at least two vendors.</span></span> <span data-ttu-id="7d6e4-107">「見積依頼の作成」手順を前提条件として実行しながら、これを作成できます。</span><span class="sxs-lookup"><span data-stu-id="7d6e4-107">You can run the "Create a request for quotation" procedure as a prerequisite to create this.</span></span> <span data-ttu-id="7d6e4-108">この手順を実行する前に、スコア基準を設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="7d6e4-108">You need to have set up scoring criteria before you can run this procedure.</span></span>
 

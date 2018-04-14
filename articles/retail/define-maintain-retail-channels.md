@@ -20,17 +20,16 @@ ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 52b3e2e78a03ac67507ee65a03e0884e5ed44678
-ms.openlocfilehash: b6dd6d929d771e0b1fc2604b90a2a1522447e168
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 055ff18b16fa2680c73564b7a7ef0c087c55e701
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="define-and-maintain-retail-channels"></a><span data-ttu-id="b1bb1-104">小売チャンネルの定義と管理</span><span class="sxs-lookup"><span data-stu-id="b1bb1-104">Define and maintain retail channels</span></span>
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 <span data-ttu-id="b1bb1-105">このトピックでは、Microsoft Dynamics 365 for Retail では小売店舗とも呼ばれる、従来型の店舗を設定するプロセスの概要を説明します。</span><span class="sxs-lookup"><span data-stu-id="b1bb1-105">This topic provides an overview of the process for setting up brick-and-mortar stores, which are referred to as retail stores in Microsoft Dynamics 365 for Retail.</span></span> <span data-ttu-id="b1bb1-106">ここでは、小売店舗を設定する前と後の、実施する必要のあるタスクについて説明します。</span><span class="sxs-lookup"><span data-stu-id="b1bb1-106">It includes information about the tasks that you must complete both before and after you set up a retail store.</span></span>
 

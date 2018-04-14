@@ -20,17 +20,16 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: c447440c33c1f80c6056974086b90d3b43e8499e
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: b9e73f1dec1bc36431227e165d86b7ce052af3be
 ms.contentlocale: ja-jp
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="reuse-product-configurations"></a><span data-ttu-id="ffc18-105">製品のコンフィギュレーションの再利用</span><span class="sxs-lookup"><span data-stu-id="ffc18-105">Reuse product configurations</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="ffc18-106">製品の既存のコンフィギュレーションを自動的に再利用することを指定できます。</span><span class="sxs-lookup"><span data-stu-id="ffc18-106">You can specify that you want to automatically reuse an existing configuration for a product.</span></span> <span data-ttu-id="ffc18-107">次にユーザーがコンフィギュレーション セッションを完了すると、ユーザーの選択と一致するコンフィギュレーションが既に存在するかどうかが確認されます。</span><span class="sxs-lookup"><span data-stu-id="ffc18-107">Then, when a user has completed a configuration session, the system verifies whether a configuration that matches the user’s selections already exists.</span></span> <span data-ttu-id="ffc18-108">一致するコンフィギュレーションが見つかった場合は、コンフィギュレーション ID、対応する部品表 (BOM)、および工順が再利用されます。</span><span class="sxs-lookup"><span data-stu-id="ffc18-108">If a matching configuration is found, the configuration ID, corresponding bill of materials (BOM), and route are reused.</span></span>
 

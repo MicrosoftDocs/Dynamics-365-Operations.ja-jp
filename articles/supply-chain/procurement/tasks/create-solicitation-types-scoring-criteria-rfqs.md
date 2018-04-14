@@ -16,15 +16,15 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 095855d552d228375635bdbaa9fca37c47a3b952
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 258f3e801b735ee54db3642e7fbdfc0f0ff153a0
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-solicitation-types-and-scoring-criteria-for-rfqs"></a><span data-ttu-id="3f6b8-103">RFQ の入札タイプとスコア基準の作成</span><span class="sxs-lookup"><span data-stu-id="3f6b8-103">Create solicitation types and scoring criteria for RFQs</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="3f6b8-104">このガイドでは、入札タイプの作成、および入札タイプにスコア方法を関連付ける方法を示します。</span><span class="sxs-lookup"><span data-stu-id="3f6b8-104">This guide shows you how to create a solicitation type and associate this with a scoring method.</span></span> <span data-ttu-id="3f6b8-105">さらに見積依頼 (RFQ) で入札タイプを使用し、既定のスコア方法を設定する方法も示します。</span><span class="sxs-lookup"><span data-stu-id="3f6b8-105">It also shows how to use the solicitation type on a request for quotation (RFQ) which then sets the default scoring method.</span></span> <span data-ttu-id="3f6b8-106">通常、これらのタスクを実施するのは、購買マネージャーです。</span><span class="sxs-lookup"><span data-stu-id="3f6b8-106">These tasks would typically be carried out by a purchasing manager.</span></span> <span data-ttu-id="3f6b8-107">デモ データの会社 USMF のこの手順を使うか、または独自のデータを使うことができます。</span><span class="sxs-lookup"><span data-stu-id="3f6b8-107">You can use this procedure in demo data company USMF or on your own data.</span></span> <span data-ttu-id="3f6b8-108">開始する前に、使用可能なスコア方法を設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="3f6b8-108">You need to have a scoring method available before you start.</span></span>
 

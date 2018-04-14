@@ -18,17 +18,16 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 33cd67bda4d4b868b00cb1c0a062de03d3aa6273
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: caa07418cb834c7f004c4fb95d5ea1c0e3a28f56
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="new-task-guides-february-2016"></a><span data-ttu-id="c621d-104">新しいタスク ガイド (2016 年 2 月)</span><span class="sxs-lookup"><span data-stu-id="c621d-104">New task guides (February 2016)</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="c621d-105">このトピックには、2016 年 2 月現在に Microsoft BPM ライブラリにリリースされたタスク ガイドが掲載されています。</span><span class="sxs-lookup"><span data-stu-id="c621d-105">This topic lists the Task guides that were released to the Microsoft BPM libraries as of February 2016.</span></span>  <span data-ttu-id="c621d-106">発行されたライブラリには、Microsoft Dynamics AX 用の APQC 統合ライブラリ (2016 年 2 月)、および「作業の開始」(2016 年 2 月) が含まれます。</span><span class="sxs-lookup"><span data-stu-id="c621d-106">The libraries that were published include the (February 2016) APQC Unified Library for Microsoft Dynamics AX and (February 2016) Getting started.</span></span>
 
@@ -50,8 +49,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="c621d-124">買掛金請求書照合の検証の設定</span><span class="sxs-lookup"><span data-stu-id="c621d-124">Set up Accounts payable invoice matching validation</span></span>       | <span data-ttu-id="c621d-125">グローバル</span><span class="sxs-lookup"><span data-stu-id="c621d-125">Global</span></span>             |
 | <span data-ttu-id="c621d-126">仕入先請求ポリシーを設定します</span><span class="sxs-lookup"><span data-stu-id="c621d-126">Set up vendor invoice policies</span></span>                            | <span data-ttu-id="c621d-127">グローバル</span><span class="sxs-lookup"><span data-stu-id="c621d-127">Global</span></span>             |
 
- 
 
+ 
 ### <a name="accounts-receivable"></a><span data-ttu-id="c621d-128">売掛金管理</span><span class="sxs-lookup"><span data-stu-id="c621d-128">Accounts receivable</span></span>
 
 |                                                             |                    |
@@ -71,8 +70,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="c621d-153">回収情報の確認</span><span class="sxs-lookup"><span data-stu-id="c621d-153">Review collections information</span></span>                              | <span data-ttu-id="c621d-154">グローバル</span><span class="sxs-lookup"><span data-stu-id="c621d-154">Global</span></span>             |
 | <span data-ttu-id="c621d-155">売掛金勘定のエイジング情報の設定および生成</span><span class="sxs-lookup"><span data-stu-id="c621d-155">Set up and generate accounts receivable aging information</span></span>   | <span data-ttu-id="c621d-156">グローバル</span><span class="sxs-lookup"><span data-stu-id="c621d-156">Global</span></span>             |
 
- 
 
+ 
 ### <a name="cash-and-bank-management"></a><span data-ttu-id="c621d-157">現金および銀行管理</span><span class="sxs-lookup"><span data-stu-id="c621d-157">Cash and bank management</span></span>
 
 |                                                                      |                    |
@@ -99,8 +98,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="c621d-196">顧客からの先日付小切手を決済</span><span class="sxs-lookup"><span data-stu-id="c621d-196">Settle a postdated check from a customer</span></span>                             | <span data-ttu-id="c621d-197">グローバル</span><span class="sxs-lookup"><span data-stu-id="c621d-197">Global</span></span>             |
 | <span data-ttu-id="c621d-198">仕入先の支払の概要</span><span class="sxs-lookup"><span data-stu-id="c621d-198">Vendor payment overview</span></span>                                              | <span data-ttu-id="c621d-199">グローバル</span><span class="sxs-lookup"><span data-stu-id="c621d-199">Global</span></span>             |
 
- 
 
+ 
 ### <a name="compliance"></a><span data-ttu-id="c621d-200">コンプライアンス</span><span class="sxs-lookup"><span data-stu-id="c621d-200">Compliance</span></span>
 
 |                                            |                    |
@@ -108,8 +107,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="c621d-201">**BPM 行**</span><span class="sxs-lookup"><span data-stu-id="c621d-201">**BPM Line**</span></span>                               | <span data-ttu-id="c621d-202">**国/地域**</span><span class="sxs-lookup"><span data-stu-id="c621d-202">**Country/Region**</span></span> |
 | <span data-ttu-id="c621d-203">元伝票の監査ポリシーの定義</span><span class="sxs-lookup"><span data-stu-id="c621d-203">Define audit policies for source documents</span></span> | <span data-ttu-id="c621d-204">グローバル</span><span class="sxs-lookup"><span data-stu-id="c621d-204">Global</span></span>             |
 
- 
 
+ 
 ### <a name="cost-management"></a><span data-ttu-id="c621d-205">原価管理</span><span class="sxs-lookup"><span data-stu-id="c621d-205">Cost management</span></span>
 
 |                                                                     |                    |
@@ -121,8 +120,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="c621d-214">製造オーダーの現在の仕掛品ステータスの表示</span><span class="sxs-lookup"><span data-stu-id="c621d-214">View current WIP status on a production order</span></span>                       | <span data-ttu-id="c621d-215">グローバル</span><span class="sxs-lookup"><span data-stu-id="c621d-215">Global</span></span>             |
 | <span data-ttu-id="c621d-216">原価オブジェクトによる在庫明細書および KPI の表示</span><span class="sxs-lookup"><span data-stu-id="c621d-216">View inventory statement and KPI by cost object</span></span>                     | <span data-ttu-id="c621d-217">グローバル</span><span class="sxs-lookup"><span data-stu-id="c621d-217">Global</span></span>             |
 
- 
 
+ 
 ### <a name="countryregion-functionality"></a><span data-ttu-id="c621d-218">国/地域の機能</span><span class="sxs-lookup"><span data-stu-id="c621d-218">Country/Region functionality</span></span>
 
 |                                                                                                        |                                 |
@@ -263,8 +262,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="c621d-485">GB-00009 決済割引に対する貸方票の作成</span><span class="sxs-lookup"><span data-stu-id="c621d-485">GB-00009 Create a credit note on the settlement discount</span></span>                                               | <span data-ttu-id="c621d-486">英国</span><span class="sxs-lookup"><span data-stu-id="c621d-486">United Kingdom</span></span>                  |
 | <span data-ttu-id="c621d-487">GB-00009 即時支払割引の貸方票のパラメーターの設定</span><span class="sxs-lookup"><span data-stu-id="c621d-487">GB-00009 Setup parameters for credit note on prompt payment discount</span></span>                                   | <span data-ttu-id="c621d-488">英国</span><span class="sxs-lookup"><span data-stu-id="c621d-488">United Kingdom</span></span>                  |
 
- 
 
+ 
 ### <a name="develop-vision-and-strategy"></a><span data-ttu-id="c621d-489">ビジョンと戦略の策定</span><span class="sxs-lookup"><span data-stu-id="c621d-489">Develop Vision and Strategy</span></span>
 
 |                                                                                          |                    |
@@ -276,8 +275,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="c621d-498">前の質問の回答に応じて質問を作成 (条件付き質問)</span><span class="sxs-lookup"><span data-stu-id="c621d-498">Make a question dependent on the answer of the previous question (Conditional questions)</span></span> | <span data-ttu-id="c621d-499">グローバル</span><span class="sxs-lookup"><span data-stu-id="c621d-499">Global</span></span>             |
 | <span data-ttu-id="c621d-500">パーセンテージに基づくアンケートの評価</span><span class="sxs-lookup"><span data-stu-id="c621d-500">Score a questionnaire based on Percent</span></span>                                                   | <span data-ttu-id="c621d-501">グローバル</span><span class="sxs-lookup"><span data-stu-id="c621d-501">Global</span></span>             |
 
- 
 
+ 
 ### <a name="electronic-reporting"></a><span data-ttu-id="c621d-502">電子申告</span><span class="sxs-lookup"><span data-stu-id="c621d-502">Electronic reporting</span></span>
 
 |                                                 |                    |
@@ -289,8 +288,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="c621d-511">ER データ モデルを選択したデータ ソースにマップする</span><span class="sxs-lookup"><span data-stu-id="c621d-511">ER Map data model to selected data sources</span></span>      | <span data-ttu-id="c621d-512">グローバル</span><span class="sxs-lookup"><span data-stu-id="c621d-512">Global</span></span>             |
 | <span data-ttu-id="c621d-513">ER サービス プロバイダを選択する</span><span class="sxs-lookup"><span data-stu-id="c621d-513">ER Select service provider</span></span>                      | <span data-ttu-id="c621d-514">グローバル</span><span class="sxs-lookup"><span data-stu-id="c621d-514">Global</span></span>             |
 
- 
 
+ 
 ### <a name="expense-management"></a><span data-ttu-id="c621d-515">経費管理</span><span class="sxs-lookup"><span data-stu-id="c621d-515">Expense management</span></span>
 
 |                              |                    |
@@ -298,8 +297,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="c621d-516">**BPM 行**</span><span class="sxs-lookup"><span data-stu-id="c621d-516">**BPM Line**</span></span>                 | <span data-ttu-id="c621d-517">**国/地域**</span><span class="sxs-lookup"><span data-stu-id="c621d-517">**Country/Region**</span></span> |
 | <span data-ttu-id="c621d-518">経費管理の構成</span><span class="sxs-lookup"><span data-stu-id="c621d-518">Configure expense management</span></span> | <span data-ttu-id="c621d-519">グローバル</span><span class="sxs-lookup"><span data-stu-id="c621d-519">Global</span></span>             |
 
- 
 
+ 
 ### <a name="fixed-assets"></a><span data-ttu-id="c621d-520">固定資産</span><span class="sxs-lookup"><span data-stu-id="c621d-520">Fixed assets</span></span>
 
 |                                                           |                    |
@@ -321,8 +320,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="c621d-549">固定資産の分割</span><span class="sxs-lookup"><span data-stu-id="c621d-549">Split a fixed asset</span></span>                                       | <span data-ttu-id="c621d-550">グローバル</span><span class="sxs-lookup"><span data-stu-id="c621d-550">Global</span></span>             |
 | <span data-ttu-id="c621d-551">固定資産の移動</span><span class="sxs-lookup"><span data-stu-id="c621d-551">Transfer a fixed asset</span></span>                                    | <span data-ttu-id="c621d-552">グローバル</span><span class="sxs-lookup"><span data-stu-id="c621d-552">Global</span></span>             |
 
- 
 
+ 
 ### <a name="general-ledger"></a><span data-ttu-id="c621d-553">総勘定元帳</span><span class="sxs-lookup"><span data-stu-id="c621d-553">General ledger</span></span>
 
 |                                                                   |                    |
@@ -354,8 +353,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="c621d-602">仕訳入力またはトランザクションの表示</span><span class="sxs-lookup"><span data-stu-id="c621d-602">View journal entries or transactions</span></span>                              | <span data-ttu-id="c621d-603">グローバル</span><span class="sxs-lookup"><span data-stu-id="c621d-603">Global</span></span>             |
 | <span data-ttu-id="c621d-604">仕訳帳からの関連する会社間伝票の表示</span><span class="sxs-lookup"><span data-stu-id="c621d-604">View related intercompany voucher from journal</span></span>                    | <span data-ttu-id="c621d-605">グローバル</span><span class="sxs-lookup"><span data-stu-id="c621d-605">Global</span></span>             |
 
- 
 
+ 
 ### <a name="human-capital-management"></a><span data-ttu-id="c621d-606">人材管理</span><span class="sxs-lookup"><span data-stu-id="c621d-606">Human capital management</span></span>
 
 |                                                                  |                    |
@@ -398,8 +397,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="c621d-677">給付金の適格性ポリシーの設定</span><span class="sxs-lookup"><span data-stu-id="c621d-677">Setting benefit eligibility policies</span></span>                             | <span data-ttu-id="c621d-678">グローバル</span><span class="sxs-lookup"><span data-stu-id="c621d-678">Global</span></span>             |
 | <span data-ttu-id="c621d-679">i9ドキュメント タイプの設定</span><span class="sxs-lookup"><span data-stu-id="c621d-679">Setting up i9 document types</span></span>                                     | <span data-ttu-id="c621d-680">グローバル</span><span class="sxs-lookup"><span data-stu-id="c621d-680">Global</span></span>             |
 
- 
 
+ 
 ### <a name="inventory-management"></a><span data-ttu-id="c621d-681">在庫管理</span><span class="sxs-lookup"><span data-stu-id="c621d-681">Inventory management</span></span>
 
 |                                                                                   |                    |
@@ -422,8 +421,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="c621d-712">品目または原材料を追跡する</span><span class="sxs-lookup"><span data-stu-id="c621d-712">Trace an item or raw material</span></span>                                                     | <span data-ttu-id="c621d-713">グローバル</span><span class="sxs-lookup"><span data-stu-id="c621d-713">Global</span></span>             |
 | <span data-ttu-id="c621d-714">倉庫内の現物在庫の転送</span><span class="sxs-lookup"><span data-stu-id="c621d-714">Transfer physical inventory within the warehouse</span></span>                                  | <span data-ttu-id="c621d-715">グローバル</span><span class="sxs-lookup"><span data-stu-id="c621d-715">Global</span></span>             |
 
- 
 
+ 
 ### <a name="manufacturing"></a><span data-ttu-id="c621d-716">製造</span><span class="sxs-lookup"><span data-stu-id="c621d-716">Manufacturing</span></span>
 
 |                                                               |                    |
@@ -474,8 +473,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="c621d-803">かんばん作業のある材料の転送</span><span class="sxs-lookup"><span data-stu-id="c621d-803">Transfer material with Kanban jobs</span></span>                            | <span data-ttu-id="c621d-804">グローバル</span><span class="sxs-lookup"><span data-stu-id="c621d-804">Global</span></span>             |
 | <span data-ttu-id="c621d-805">生産フローおよびバージョンの検証</span><span class="sxs-lookup"><span data-stu-id="c621d-805">Validate production flow and version</span></span>                          | <span data-ttu-id="c621d-806">グローバル</span><span class="sxs-lookup"><span data-stu-id="c621d-806">Global</span></span>             |
 
- 
 
+ 
 ### <a name="master-planning"></a><span data-ttu-id="c621d-807">マスター プラン</span><span class="sxs-lookup"><span data-stu-id="c621d-807">Master planning</span></span>
 
 |                                                   |                    |
@@ -487,8 +486,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="c621d-816">重要な材料と仕入先の能力の特定</span><span class="sxs-lookup"><span data-stu-id="c621d-816">Identify critical materials and supplier capacity</span></span> | <span data-ttu-id="c621d-817">グローバル</span><span class="sxs-lookup"><span data-stu-id="c621d-817">Global</span></span>             |
 | <span data-ttu-id="c621d-818">需要予測の手動変更</span><span class="sxs-lookup"><span data-stu-id="c621d-818">Modify a demand forecast manually</span></span>                 | <span data-ttu-id="c621d-819">グローバル</span><span class="sxs-lookup"><span data-stu-id="c621d-819">Global</span></span>             |
 
- 
 
+ 
 ### <a name="organization-administration"></a><span data-ttu-id="c621d-820">組織管理</span><span class="sxs-lookup"><span data-stu-id="c621d-820">Organization administration</span></span>
 
 |                                           |                    |
@@ -501,8 +500,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="c621d-831">電子署名の設定</span><span class="sxs-lookup"><span data-stu-id="c621d-831">Set up electronic signatures</span></span>              | <span data-ttu-id="c621d-832">グローバル</span><span class="sxs-lookup"><span data-stu-id="c621d-832">Global</span></span>             |
 | <span data-ttu-id="c621d-833">ウィザードを使用した番号順序の設定</span><span class="sxs-lookup"><span data-stu-id="c621d-833">Set up number sequences by using a wizard</span></span> | <span data-ttu-id="c621d-834">グローバル</span><span class="sxs-lookup"><span data-stu-id="c621d-834">Global</span></span>             |
 
- 
 
+ 
 ### <a name="planning"></a><span data-ttu-id="c621d-835">計画</span><span class="sxs-lookup"><span data-stu-id="c621d-835">Planning</span></span>
 
 |                        |                    |
@@ -510,8 +509,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="c621d-836">**BPM 行**</span><span class="sxs-lookup"><span data-stu-id="c621d-836">**BPM Line**</span></span>           | <span data-ttu-id="c621d-837">**国/地域**</span><span class="sxs-lookup"><span data-stu-id="c621d-837">**Country/Region**</span></span> |
 | <span data-ttu-id="c621d-838">使用可能性の確認</span><span class="sxs-lookup"><span data-stu-id="c621d-838">Determine availability</span></span> | <span data-ttu-id="c621d-839">グローバル</span><span class="sxs-lookup"><span data-stu-id="c621d-839">Global</span></span>             |
 
- 
 
+ 
 ### <a name="procurement-and-sourcing"></a><span data-ttu-id="c621d-840">調達</span><span class="sxs-lookup"><span data-stu-id="c621d-840">Procurement and sourcing</span></span>
 
 |                                                                  |                    |
@@ -525,8 +524,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="c621d-853">仕入先の検索</span><span class="sxs-lookup"><span data-stu-id="c621d-853">Search for vendors</span></span>                                               | <span data-ttu-id="c621d-854">グローバル</span><span class="sxs-lookup"><span data-stu-id="c621d-854">Global</span></span>             |
 | <span data-ttu-id="c621d-855">調達カテゴリ階層の設定</span><span class="sxs-lookup"><span data-stu-id="c621d-855">Set up a procurement category hierarchy</span></span>                          | <span data-ttu-id="c621d-856">グローバル</span><span class="sxs-lookup"><span data-stu-id="c621d-856">Global</span></span>             |
 
- 
 
+ 
 ### <a name="product-information-and-configuration"></a><span data-ttu-id="c621d-857">製品情報およびコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="c621d-857">Product information and configuration</span></span>
 
 |                                                       |                    |
@@ -551,8 +550,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="c621d-892">\financial-dimensions\dimension-based 製品マスターのリリース</span><span class="sxs-lookup"><span data-stu-id="c621d-892">Release a ..\financial-dimensions\dimension-based product master</span></span>              | <span data-ttu-id="c621d-893">グローバル</span><span class="sxs-lookup"><span data-stu-id="c621d-893">Global</span></span>             |
 | <span data-ttu-id="c621d-894">製品モデルのためのデータの転送</span><span class="sxs-lookup"><span data-stu-id="c621d-894">Transfer data for product models</span></span>                      | <span data-ttu-id="c621d-895">グローバル</span><span class="sxs-lookup"><span data-stu-id="c621d-895">Global</span></span>             |
 
- 
 
+ 
 ### <a name="public-sector"></a><span data-ttu-id="c621d-896">公的機関</span><span class="sxs-lookup"><span data-stu-id="c621d-896">Public sector</span></span>
 
 |                                                                                         |                    |
@@ -577,8 +576,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="c621d-931">公的部門の資金を設定します</span><span class="sxs-lookup"><span data-stu-id="c621d-931">Set up a fund for Public sector</span></span>                                                         | <span data-ttu-id="c621d-932">グローバル</span><span class="sxs-lookup"><span data-stu-id="c621d-932">Global</span></span>             |
 | <span data-ttu-id="c621d-933">公的部門の購買契約の分類を設定します</span><span class="sxs-lookup"><span data-stu-id="c621d-933">Set up purchase agreement classifications for Public Sector</span></span>                             | <span data-ttu-id="c621d-934">グローバル</span><span class="sxs-lookup"><span data-stu-id="c621d-934">Global</span></span>             |
 
- 
 
+ 
 ### <a name="retail-and-commerce"></a><span data-ttu-id="c621d-935">Retail と Commerce</span><span class="sxs-lookup"><span data-stu-id="c621d-935">Retail and commerce</span></span>
 
 |                                                                                           |                    |
@@ -619,8 +618,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="c621d-1002">小売価格調整</span><span class="sxs-lookup"><span data-stu-id="c621d-1002">Retail price adjustments</span></span>                                                                  | <span data-ttu-id="c621d-1003">グローバル</span><span class="sxs-lookup"><span data-stu-id="c621d-1003">Global</span></span>             |
 | <span data-ttu-id="c621d-1004">小売明細書のコンフィギュレーションを保存します</span><span class="sxs-lookup"><span data-stu-id="c621d-1004">Store configurations for Retail statements</span></span>                                                | <span data-ttu-id="c621d-1005">グローバル</span><span class="sxs-lookup"><span data-stu-id="c621d-1005">Global</span></span>             |
 
- 
 
+ 
 ### <a name="sales"></a><span data-ttu-id="c621d-1006">販売注文</span><span class="sxs-lookup"><span data-stu-id="c621d-1006">Sales</span></span>
 
 |                                            |                    |
@@ -642,8 +641,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="c621d-1035">直納として注文を出荷</span><span class="sxs-lookup"><span data-stu-id="c621d-1035">Ship orders as direct deliveries</span></span>           | <span data-ttu-id="c621d-1036">グローバル</span><span class="sxs-lookup"><span data-stu-id="c621d-1036">Global</span></span>             |
 | <span data-ttu-id="c621d-1037">倉庫なしの販売注文の出荷</span><span class="sxs-lookup"><span data-stu-id="c621d-1037">Ship sales orders without warehousing</span></span>      | <span data-ttu-id="c621d-1038">グローバル</span><span class="sxs-lookup"><span data-stu-id="c621d-1038">Global</span></span>             |
 
- 
 
+ 
 ### <a name="sales-tax"></a><span data-ttu-id="c621d-1039">消費税</span><span class="sxs-lookup"><span data-stu-id="c621d-1039">Sales tax</span></span>
 
 |                                                    |                    |
@@ -661,8 +660,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="c621d-1060">源泉徴収税の設定</span><span class="sxs-lookup"><span data-stu-id="c621d-1060">Set up withholding tax</span></span>                             | <span data-ttu-id="c621d-1061">グローバル</span><span class="sxs-lookup"><span data-stu-id="c621d-1061">Global</span></span>             |
 | <span data-ttu-id="c621d-1062">転記された消費税トランザクションの表示</span><span class="sxs-lookup"><span data-stu-id="c621d-1062">View posted sales tax transactions</span></span>                 | <span data-ttu-id="c621d-1063">グローバル</span><span class="sxs-lookup"><span data-stu-id="c621d-1063">Global</span></span>             |
 
- 
 
+ 
 ### <a name="security"></a><span data-ttu-id="c621d-1064">セキュリティ</span><span class="sxs-lookup"><span data-stu-id="c621d-1064">Security</span></span>
 
 |                                                         |                    |
@@ -672,8 +671,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="c621d-1069">職務分掌の競合の識別と解決</span><span class="sxs-lookup"><span data-stu-id="c621d-1069">Identify and resolve conflicts in segregation of duties</span></span> | <span data-ttu-id="c621d-1070">グローバル</span><span class="sxs-lookup"><span data-stu-id="c621d-1070">Global</span></span>             |
 | <span data-ttu-id="c621d-1071">職務分掌の設定</span><span class="sxs-lookup"><span data-stu-id="c621d-1071">Set up segregation of duties</span></span>                            | <span data-ttu-id="c621d-1072">グローバル</span><span class="sxs-lookup"><span data-stu-id="c621d-1072">Global</span></span>             |
 
- 
 
+ 
 ### <a name="warehouse-and-transportation"></a><span data-ttu-id="c621d-1073">在庫および輸送</span><span class="sxs-lookup"><span data-stu-id="c621d-1073">Warehouse and transportation</span></span>
 
 |                                                                                   |                    |
@@ -697,9 +696,10 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="c621d-1106">出荷配送業者の設定</span><span class="sxs-lookup"><span data-stu-id="c621d-1106">Set up shipping carriers</span></span>                                                          | <span data-ttu-id="c621d-1107">グローバル</span><span class="sxs-lookup"><span data-stu-id="c621d-1107">Global</span></span>             |
 | <span data-ttu-id="c621d-1108">積荷および出荷を計画するには、積荷計画ワークベンチを使用します。</span><span class="sxs-lookup"><span data-stu-id="c621d-1108">Use the Load Planning Workbench to plan loads and shipments</span></span>                       | <span data-ttu-id="c621d-1109">グローバル</span><span class="sxs-lookup"><span data-stu-id="c621d-1109">Global</span></span>             |
 
- 
 
+ 
 ## <a name="task-guides-in-the-february-2016-getting-started-library"></a><span data-ttu-id="c621d-1110">「はじめに」ライブラリに含まれるタスク ガイド (2016 年 2 月)</span><span class="sxs-lookup"><span data-stu-id="c621d-1110">Task guides in the (February 2016) Getting started library</span></span>
+
 |                                                    |                    |
 |----------------------------------------------------|--------------------|
 | <span data-ttu-id="c621d-1111">**BPM 行**</span><span class="sxs-lookup"><span data-stu-id="c621d-1111">**BPM Line**</span></span>                                       | <span data-ttu-id="c621d-1112">**国/地域**</span><span class="sxs-lookup"><span data-stu-id="c621d-1112">**Country/Region**</span></span> |

@@ -20,17 +20,16 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 92c594213eea8617d11b56be43e581a461830ba4
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: ebfaa28d85d53e1bac95eb84bd8410204ecca824
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="report-boms-as-finished"></a><span data-ttu-id="a472c-103">BOM を完了済と報告</span><span class="sxs-lookup"><span data-stu-id="a472c-103">Report BOMs as finished</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="a472c-104">この記事では、BOM を完了済と報告することに関する情報を提供しています。</span><span class="sxs-lookup"><span data-stu-id="a472c-104">This article provides information about reporting BOMs as finished.</span></span>
 

@@ -16,15 +16,15 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 67feb0d8e4e51154229a48e9d4e53fda05e7911b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 5862ce77874c83fa5112ebbab3d8ab3658a5f7d7
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="propose-and-post-accelerated-depreciation-japan"></a><span data-ttu-id="510a2-103">増加償却の提案と転記 (日本)</span><span class="sxs-lookup"><span data-stu-id="510a2-103">Propose and post accelerated depreciation (Japan)</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="510a2-104">日本の場合、確認済加速償却ドキュメントのデータに基づいて加速償却を提案することができます。</span><span class="sxs-lookup"><span data-stu-id="510a2-104">For Japan, you can propose an accelerated depreciation based on the data on confirmed accelerated depreciation documents.</span></span> <span data-ttu-id="510a2-105">注記: 加速償却の提案は通常の減価償却を提案しません。</span><span class="sxs-lookup"><span data-stu-id="510a2-105">Note: The accelerated depreciation proposal will not propose ordinary depreciation.</span></span> <span data-ttu-id="510a2-106">この手順では、通常の減価償却の転記後に完了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="510a2-106">This procedure must be completed after you post ordinary depreciation.</span></span>
 

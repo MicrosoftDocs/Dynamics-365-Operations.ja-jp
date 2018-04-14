@@ -19,17 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: ce8295bf99ad8e7b83c380ae31ee1bcae74ed449
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 120a28cc9ae8685895400e872cc03e7b6a1c6642
 ms.contentlocale: ja-jp
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="enter-account-and-dimension-combinations-segmented-entry-control"></a><span data-ttu-id="92784-104">勘定と分析コードの組み合わせの入力 (セグメント化されたエントリのコントロール)</span><span class="sxs-lookup"><span data-stu-id="92784-104">Enter account and dimension combinations (segmented entry control)</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="92784-105">この記事は、勘定と分析コードの組み合わせまたは勘定科目を入力する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="92784-105">This article describes how to enter account and dimension combinations or ledger accounts.</span></span> <span data-ttu-id="92784-106">入力経験は、多くの場合、セグメント化されたエントリのコントロールと呼ばれます。</span><span class="sxs-lookup"><span data-stu-id="92784-106">The entry experience is often referred to as segmented entry control.</span></span>
 
@@ -112,7 +111,7 @@ ms.lasthandoff: 01/17/2018
 </tbody>
 </table>
 
- 
+
 
 
 

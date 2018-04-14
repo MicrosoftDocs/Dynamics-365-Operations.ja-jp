@@ -20,17 +20,16 @@ ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7af00d0c66f70aa41cfab0ffccef39ba4c115803
-ms.openlocfilehash: 4026fa937ddf88f006cdcd13a8eda10c326ada62
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 90a12b501b55bc6406ea13c2e643cd58f8128390
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="routes-and-operations"></a><span data-ttu-id="3a1a2-103">工順と工程</span><span class="sxs-lookup"><span data-stu-id="3a1a2-103">Routes and operations</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="3a1a2-104">このトピックでは、工順と工程に関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="3a1a2-104">This topic provides information about routes and operations.</span></span> <span data-ttu-id="3a1a2-105">工順は、製品または製品バリアントを生産するためのプロセスを定義します。</span><span class="sxs-lookup"><span data-stu-id="3a1a2-105">A route defines the process for producing a product or product variant.</span></span> <span data-ttu-id="3a1a2-106">ここでは、生産プロセス内の各ステップ (工程) とこれらのステップが実行される必要がある手順について説明します。</span><span class="sxs-lookup"><span data-stu-id="3a1a2-106">It describes each step (operation) in the production process and the order that these steps must be performed in.</span></span> <span data-ttu-id="3a1a2-107">ステップごとに、工程は必要な運営リソース、必要な段取り時間と実行時間、およびコストが計算される必要がある方法も定義します。</span><span class="sxs-lookup"><span data-stu-id="3a1a2-107">For each step, the route also defines the required operations resources, the required setup time and run time, and how the cost should be calculated.</span></span>
 

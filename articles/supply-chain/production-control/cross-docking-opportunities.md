@@ -19,16 +19,16 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 62194012cfbe101d19e9de3254afb004da79a562
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 06416e3cec2915071f13acf485d21482da2eef21
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="cross-docking-from-production-orders-to-outbound-docks"></a><span data-ttu-id="25943-103">製造オーダーから出荷ドックへのクロスドッキング</span><span class="sxs-lookup"><span data-stu-id="25943-103">Cross-docking from production orders to outbound docks</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="25943-104">このトピックでは、生産ラインから出荷輸送ドックまでの完了レポートがされているクロスドッキング材料のプロセスを管理する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="25943-104">This topic describes how to manage the process of cross-docking material that is being reported as finished from a production line to an outbound transportation dock.</span></span>
 
@@ -76,10 +76,10 @@ ms.lasthandoff: 03/08/2018
 
 ### <a name="cross-docking-policy-name-transfer-order"></a><span data-ttu-id="25943-135">クロスドッキング ポリシー名: 移動オーダー</span><span class="sxs-lookup"><span data-stu-id="25943-135">Cross-docking policy name: Transfer order</span></span>
 
--   <span data-ttu-id="25943-136">順序番号: 10</span><span class="sxs-lookup"><span data-stu-id="25943-136">Sequence number: 10</span></span>
- -   <span data-ttu-id="25943-137">ワーク オーダー タイプ: 移動の出庫</span><span class="sxs-lookup"><span data-stu-id="25943-137">Work order type: Transfer issue</span></span>
--   <span data-ttu-id="25943-138">クロスドッキング需要には場所が必要です: いいえ</span><span class="sxs-lookup"><span data-stu-id="25943-138">Cross docking demand requires location: False</span></span>
--   <span data-ttu-id="25943-139">クロスドッキング戦略: 日時</span><span class="sxs-lookup"><span data-stu-id="25943-139">Cross docking strategy: Date and time</span></span>
+- <span data-ttu-id="25943-136">順序番号: 10</span><span class="sxs-lookup"><span data-stu-id="25943-136">Sequence number: 10</span></span>
+  -   <span data-ttu-id="25943-137">ワーク オーダー タイプ: 移動の出庫</span><span class="sxs-lookup"><span data-stu-id="25943-137">Work order type: Transfer issue</span></span>
+- <span data-ttu-id="25943-138">クロスドッキング需要には場所が必要です: いいえ</span><span class="sxs-lookup"><span data-stu-id="25943-138">Cross docking demand requires location: False</span></span>
+- <span data-ttu-id="25943-139">クロスドッキング戦略: 日時</span><span class="sxs-lookup"><span data-stu-id="25943-139">Cross docking strategy: Date and time</span></span>
 
 ### <a name="sequence-number"></a><span data-ttu-id="25943-140">一連番号</span><span class="sxs-lookup"><span data-stu-id="25943-140">Sequence number</span></span>
 

@@ -16,15 +16,15 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 0b0846396cff9d1769482e660757534802e49ca9
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: d26d225c90b69013bf4981f4527245e0970c768d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="change-the-depreciation-method-during-the-asset-life-for-book-japan"></a><span data-ttu-id="e1ddb-103">帳簿の資産耐用年数期間中の減価償却方法の変更 (日本)</span><span class="sxs-lookup"><span data-stu-id="e1ddb-103">Change the depreciation method during the asset life for book (Japan)</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="e1ddb-104">日本では、固定資産の耐用年数期間中、減価償却方法を変更することができます。</span><span class="sxs-lookup"><span data-stu-id="e1ddb-104">In Japan, you can change the depreciation method during the service life of a fixed asset.</span></span>
 

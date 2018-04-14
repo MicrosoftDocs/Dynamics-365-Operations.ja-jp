@@ -16,15 +16,15 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 66f10523fe3fb104550a88f735a9644613ec861b
-ms.openlocfilehash: cee8cf43d79bbf24219bd4662ace29e85afd39a0
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 8e8b345c8eaffb6334317ce055cbcedf5f4a5a3e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 10/30/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-cgu-group-and-cash-generating-units-japan"></a><span data-ttu-id="48fa9-103">CGU グループおよび資産グループの作成 (日本)</span><span class="sxs-lookup"><span data-stu-id="48fa9-103">Create CGU group and cash generating units (Japan)</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="48fa9-104">日本では、固定資産の減損は、個々の固定資産または資産グループに基づき決定することができます。</span><span class="sxs-lookup"><span data-stu-id="48fa9-104">In Japan, an impairment on fixed assets can be based on either individual fixed assets or cash generating units.</span></span> <span data-ttu-id="48fa9-105">資産グループに基づき減損を評価する場合の最初のステップは、固定資産を資産グループにグループ化することです。</span><span class="sxs-lookup"><span data-stu-id="48fa9-105">When measuring impairment based on cash generating units, the first step is to group the fixed assets into cash generating units.</span></span> 
 

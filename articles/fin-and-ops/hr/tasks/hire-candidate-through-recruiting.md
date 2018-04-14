@@ -16,15 +16,15 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: e27dc0623f27ee21408d14aefb93ca13c40be672
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: beed4c261b887ce545d431bbd9a413bd1745bc0c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="hire-a-candidate-through-recruiting"></a><span data-ttu-id="ce0a7-103">採用による候補者の雇用</span><span class="sxs-lookup"><span data-stu-id="ce0a7-103">Hire a candidate through recruiting</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="ce0a7-104">この手順によって、リクルーターは、特定の採用プロジェクトで雇用申請を提出した申請者を雇用できます。</span><span class="sxs-lookup"><span data-stu-id="ce0a7-104">This procedure enables a recruiter to hire an applicant who submitted an application through a specific recruitment project.</span></span> <span data-ttu-id="ce0a7-105">採用プロジェクトを通して申請者を雇用する場合、新しい作業者レコードが作成され、申請者レコードのステータスは採用済となります。</span><span class="sxs-lookup"><span data-stu-id="ce0a7-105">When you hire an applicant through a recruiting project, a new worker record will be created and the applicant’s record will have a status of Employed.</span></span> <span data-ttu-id="ce0a7-106">この手順の作成に使用するデモ データの会社は USMF です。</span><span class="sxs-lookup"><span data-stu-id="ce0a7-106">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="ce0a7-107">この手順を完了するには、[人事管理] > [採用] > [申請] > [申請] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="ce0a7-107">To complete this procedure, navigate to Human resources > Recruitment > Applications >Applications</span></span> 
 

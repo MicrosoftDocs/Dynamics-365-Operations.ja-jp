@@ -19,17 +19,16 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: e43dcc15212ae90a33d59fa32692aabcba7a19cb
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 23b17c577fd2e0dfa6183929c86ed1950db8c50b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="derived-books"></a><span data-ttu-id="0b320-103">派生帳簿</span><span class="sxs-lookup"><span data-stu-id="0b320-103">Derived books</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="0b320-104">この記事は、派生帳簿機能の概要を示します。</span><span class="sxs-lookup"><span data-stu-id="0b320-104">This article provides an overview of derived book functionality.</span></span>
 

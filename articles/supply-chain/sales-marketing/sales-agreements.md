@@ -19,17 +19,16 @@ ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 577204b49355a470769237eb46ad74e7f319a55e
-ms.openlocfilehash: f791f811f78b788cae7e6417b4266d9f82662310
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a1d686106ffaf3b2f392b6c1f81c6bda8c8cdd95
 ms.contentlocale: ja-jp
-ms.lasthandoff: 01/15/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="sales-agreements"></a><span data-ttu-id="e2c72-104">販売契約書</span><span class="sxs-lookup"><span data-stu-id="e2c72-104">Sales agreements</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="e2c72-105">このトピックでは、販売契約書について説明します。</span><span class="sxs-lookup"><span data-stu-id="e2c72-105">This topic provides information about sales agreements.</span></span> <span data-ttu-id="e2c72-106">販売契約書は、特定の数量または特定の量の製品を、一定期間に特別価格と割引で購入することを顧客と約束する契約です。</span><span class="sxs-lookup"><span data-stu-id="e2c72-106">A sales agreement is a contract that commits the customer to buy products in a specific quantity or for a specific amount over time, in exchange for special prices and discounts.</span></span>
 

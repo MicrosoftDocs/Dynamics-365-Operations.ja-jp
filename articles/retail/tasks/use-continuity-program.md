@@ -17,15 +17,15 @@ ms.author: scotttuc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: d2642d922fc1fa03644be8195a8c9dd3edfc3483
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a3875f02a01687b35d26fbc2807e8b11432e9adc
 ms.contentlocale: ja-jp
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="use-a-continuity-program"></a><span data-ttu-id="adf56-103">連続プログラムの使用</span><span class="sxs-lookup"><span data-stu-id="adf56-103">Use a continuity program</span></span>
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 <span data-ttu-id="adf56-104">この手順では、連続プログラムの販売と関連する販売注文の処理について説明します。</span><span class="sxs-lookup"><span data-stu-id="adf56-104">This procedure walks through selling a continuity program and processing related sales orders.</span></span> <span data-ttu-id="adf56-105">この手順を完了するには、コール センターのユーザーとして設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="adf56-105">To complete this procedure, the user has to be set up as a call center user.</span></span> <span data-ttu-id="adf56-106">この手順では、デモ データの会社 USRT を使用します。</span><span class="sxs-lookup"><span data-stu-id="adf56-106">This procedure uses the USRT demo data company.</span></span>
 

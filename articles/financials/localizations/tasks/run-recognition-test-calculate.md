@@ -16,15 +16,15 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: cece4507d11f7287ca467432e8e2180071ef885e
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: f13eeb6507456b2bd06e4a19e3e630d5b0774373
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="run-the-recognition-test-and-calculate-the-impairment-amount-on-individual-assets-japan"></a><span data-ttu-id="7f0b3-103">認識テストの実行と個別資産の減損損失の計算 (日本)</span><span class="sxs-lookup"><span data-stu-id="7f0b3-103">Run the recognition test and calculate the impairment amount on individual assets (Japan)</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="7f0b3-104">このタスクは、認識テストの実行方法および個々の資産の減損金額の計算方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="7f0b3-104">This task walks you through running the recognition test and calculating the impairment amount on individual assets.</span></span>
 

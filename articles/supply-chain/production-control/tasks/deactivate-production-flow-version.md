@@ -17,15 +17,15 @@ ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 4a7eee6617e12d59a3d06207f5f6b58c93e28240
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a7a09c67008582a8ee9703a93751ede525a7d4d3
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="deactivate-a-production-flow-version"></a><span data-ttu-id="d8c98-103">生産フロー バージョンの無効化</span><span class="sxs-lookup"><span data-stu-id="d8c98-103">Deactivate a production flow version</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="d8c98-104">有効な生産フロー バージョンが不要になった場合、無効化することができます。</span><span class="sxs-lookup"><span data-stu-id="d8c98-104">When an active production flow version is no longer needed, it can be deactivated.</span></span> <span data-ttu-id="d8c98-105">すべてのかんばんルールと活動が終了し、今後有効化しない場合にのみ、このオプションを使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d8c98-105">You should only use this option if all kanban rules and activities have ended and will not be activated again.</span></span> <span data-ttu-id="d8c98-106">この生産フロー バージョンに関連付けられたすべてのかんばんルールの有効期限は現在の日時に更新されることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="d8c98-106">Note that the expiry date of all kanban rules related to this production flow version will be updated with the current date and time.</span></span> 
 

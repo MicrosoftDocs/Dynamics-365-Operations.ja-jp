@@ -18,17 +18,16 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: c4446a04cd01645b3b79f2d952622daf60953331
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 445c639dc56a5d240f4e35353276ef893f2137da
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="keyboard-shortcuts"></a><span data-ttu-id="44ce7-103">キーボード ショートカット</span><span class="sxs-lookup"><span data-stu-id="44ce7-103">Keyboard shortcuts</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="44ce7-104">以下のキーボード ショートカットは、Dynamics 365 for Finance and Operations 全体に適用されます。</span><span class="sxs-lookup"><span data-stu-id="44ce7-104">The following keyboard shortcuts apply across Dynamics 365 for Finance and Operations.</span></span> 
 
@@ -39,6 +38,7 @@ ms.lasthandoff: 03/26/2018
 
 
 ## <a name="action-shortcuts"></a><span data-ttu-id="44ce7-111">アクションのショートカット</span><span class="sxs-lookup"><span data-stu-id="44ce7-111">Action shortcuts</span></span>
+
 |                                                   |                                  |
 |---------------------------------------------------|----------------------------------|
 | <span data-ttu-id="44ce7-112">**目的**</span><span class="sxs-lookup"><span data-stu-id="44ce7-112">**To do this**</span></span>                                    | <span data-ttu-id="44ce7-113">**キー**</span><span class="sxs-lookup"><span data-stu-id="44ce7-113">**Press**</span></span>                        |
@@ -55,6 +55,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="44ce7-134">現在利用可能なショートカットの表示</span><span class="sxs-lookup"><span data-stu-id="44ce7-134">View currently available shortcuts</span></span>                | <span data-ttu-id="44ce7-135">Alt + Shift + K</span><span class="sxs-lookup"><span data-stu-id="44ce7-135">Alt+Shift+K</span></span>                      |                              
 
 ## <a name="date-picker-shortcuts"></a><span data-ttu-id="44ce7-136">日付選択のショートカット</span><span class="sxs-lookup"><span data-stu-id="44ce7-136">Date picker shortcuts</span></span>
+
 |                                       |                                           |
 |---------------------------------------|-------------------------------------------|
 | <span data-ttu-id="44ce7-137">**目的**</span><span class="sxs-lookup"><span data-stu-id="44ce7-137">**To do this**</span></span>                        | <span data-ttu-id="44ce7-138">**キー**</span><span class="sxs-lookup"><span data-stu-id="44ce7-138">**Press**</span></span>                                 |
@@ -68,6 +69,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="44ce7-153">\[なし\] (または日付の最大値) を選択する</span><span class="sxs-lookup"><span data-stu-id="44ce7-153">Pick Never (or the max date)</span></span>          | <span data-ttu-id="44ce7-154">無</span><span class="sxs-lookup"><span data-stu-id="44ce7-154">N</span></span>                                         |
 
 ## <a name="factbox-shortcuts"></a><span data-ttu-id="44ce7-155">情報ボックスのショートカット</span><span class="sxs-lookup"><span data-stu-id="44ce7-155">FactBox shortcuts</span></span>
+
 |                                                                                 |                                           |
 |---------------------------------------------------------------------------------|-------------------------------------------|
 | <span data-ttu-id="44ce7-156">**目的**</span><span class="sxs-lookup"><span data-stu-id="44ce7-156">**To do this**</span></span>                                                                  | <span data-ttu-id="44ce7-157">**キー**</span><span class="sxs-lookup"><span data-stu-id="44ce7-157">**Press**</span></span>                                 |
@@ -79,6 +81,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="44ce7-168">現在の情報ボックスを折りたたむ</span><span class="sxs-lookup"><span data-stu-id="44ce7-168">Collapse the current FactBox</span></span>                                                    | <span data-ttu-id="44ce7-169">Alt + 0</span><span class="sxs-lookup"><span data-stu-id="44ce7-169">Alt+0</span></span>                                     |
 
 ## <a name="filtering-shortcuts"></a><span data-ttu-id="44ce7-170">フィルタのショートカット</span><span class="sxs-lookup"><span data-stu-id="44ce7-170">Filtering shortcuts</span></span>
+
 |                                    |                          |
 |------------------------------------|--------------------------|
 | <span data-ttu-id="44ce7-171">**目的**</span><span class="sxs-lookup"><span data-stu-id="44ce7-171">**To do this**</span></span>                     | <span data-ttu-id="44ce7-172">**キー**</span><span class="sxs-lookup"><span data-stu-id="44ce7-172">**Press**</span></span>                |
@@ -89,6 +92,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="44ce7-181">高度なフィルター/並べ替えを開く</span><span class="sxs-lookup"><span data-stu-id="44ce7-181">Open advanced filtering/sort</span></span>                                      | <span data-ttu-id="44ce7-182">Ctrl + Shift + F3</span><span class="sxs-lookup"><span data-stu-id="44ce7-182">Ctrl+Shift+F3</span></span>            | 
 
 ## <a name="form-shortcuts"></a><span data-ttu-id="44ce7-183">フォームのショートカット</span><span class="sxs-lookup"><span data-stu-id="44ce7-183">Form shortcuts</span></span>
+
 |                                                     |                   |
 |-----------------------------------------------------|-------------------|
 | <span data-ttu-id="44ce7-184">**目的**</span><span class="sxs-lookup"><span data-stu-id="44ce7-184">**To do this**</span></span>                                      | <span data-ttu-id="44ce7-185">**キー**</span><span class="sxs-lookup"><span data-stu-id="44ce7-185">**Press**</span></span>         |
@@ -110,6 +114,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="44ce7-216">未保存の変更を破棄してフォームを閉じる</span><span class="sxs-lookup"><span data-stu-id="44ce7-216">Close the form discarding any unsaved changes</span></span>       | <span data-ttu-id="44ce7-217">Alt + Shift + Q</span><span class="sxs-lookup"><span data-stu-id="44ce7-217">Alt+Shift+Q</span></span>       |
 
 ## <a name="form-navigation-shortcuts"></a><span data-ttu-id="44ce7-218">フォーム ナビゲーションのショートカット</span><span class="sxs-lookup"><span data-stu-id="44ce7-218">Form navigation shortcuts</span></span>
+
 |                                                     |                                              |
 |-----------------------------------------------------|----------------------------------------------|
 | <span data-ttu-id="44ce7-219">**目的**</span><span class="sxs-lookup"><span data-stu-id="44ce7-219">**To do this**</span></span>                                      | <span data-ttu-id="44ce7-220">**キー**</span><span class="sxs-lookup"><span data-stu-id="44ce7-220">**Press**</span></span>                                    |
@@ -128,6 +133,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="44ce7-245">明細行ビューに切り替え</span><span class="sxs-lookup"><span data-stu-id="44ce7-245">Switch to lines view</span></span>                                | <span data-ttu-id="44ce7-246">Ctrl + Shift + L</span><span class="sxs-lookup"><span data-stu-id="44ce7-246">Ctrl+Shift+L</span></span>                                 |
 
 ## <a name="grid-shortcuts"></a><span data-ttu-id="44ce7-247">グリッドのショートカット</span><span class="sxs-lookup"><span data-stu-id="44ce7-247">Grid shortcuts</span></span>
+
 |                                                                                                                        |                                 |
 |------------------------------------------------------------------------------------------------------------------------|---------------------------------|
 | <span data-ttu-id="44ce7-248">**目的**</span><span class="sxs-lookup"><span data-stu-id="44ce7-248">**To do this**</span></span>                                                                                                         | <span data-ttu-id="44ce7-249">**キー**</span><span class="sxs-lookup"><span data-stu-id="44ce7-249">**Press**</span></span>                       |
@@ -148,6 +154,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="44ce7-283">(ヘッダー行のフォーカスで) 現在の列のグリッド フィルターを開く</span><span class="sxs-lookup"><span data-stu-id="44ce7-283">Open grid filtering for the current column (with focus in the header row)</span></span>                                              | <span data-ttu-id="44ce7-284">入力</span><span class="sxs-lookup"><span data-stu-id="44ce7-284">Enter</span></span>                           |
 
 ## <a name="input-control-shortcuts"></a><span data-ttu-id="44ce7-285">入力コントロールのショートカット</span><span class="sxs-lookup"><span data-stu-id="44ce7-285">Input control shortcuts</span></span>
+
 |                                                                              |                               |
 |------------------------------------------------------------------------------|-------------------------------|
 | <span data-ttu-id="44ce7-286">**目的**</span><span class="sxs-lookup"><span data-stu-id="44ce7-286">**To do this**</span></span>                                                               | <span data-ttu-id="44ce7-287">**キー**</span><span class="sxs-lookup"><span data-stu-id="44ce7-287">**Press**</span></span>                     |
@@ -163,6 +170,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="44ce7-306">HTML エディター コントロールのツールバーとテキスト領域でフォーカスを切り替える</span><span class="sxs-lookup"><span data-stu-id="44ce7-306">Switch focus between the text area and the toolbar in an HTML editor control</span></span> | <span data-ttu-id="44ce7-307">F6</span><span class="sxs-lookup"><span data-stu-id="44ce7-307">F6</span></span>                            |
 
 ## <a name="messaging-shortcuts"></a><span data-ttu-id="44ce7-308">メッセージのショートカット</span><span class="sxs-lookup"><span data-stu-id="44ce7-308">Messaging shortcuts</span></span>
+
 |                          |               |
 |--------------------------|---------------|
 | <span data-ttu-id="44ce7-309">**目的**</span><span class="sxs-lookup"><span data-stu-id="44ce7-309">**To do this**</span></span>           | <span data-ttu-id="44ce7-310">**キー**</span><span class="sxs-lookup"><span data-stu-id="44ce7-310">**Press**</span></span>     |
@@ -170,6 +178,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="44ce7-313">メッセージ バーに移動</span><span class="sxs-lookup"><span data-stu-id="44ce7-313">Go to the Message Bar</span></span>    | <span data-ttu-id="44ce7-314">Ctrl + F7</span><span class="sxs-lookup"><span data-stu-id="44ce7-314">Ctrl+F7</span></span>       |
 
 ## <a name="navigation-shortcuts"></a><span data-ttu-id="44ce7-315">ナビゲーションのショートカット</span><span class="sxs-lookup"><span data-stu-id="44ce7-315">Navigation shortcuts</span></span>
+
 |                                                                               |                            |
 |-------------------------------------------------------------------------------|----------------------------|
 | <span data-ttu-id="44ce7-316">**目的**</span><span class="sxs-lookup"><span data-stu-id="44ce7-316">**To do this**</span></span>                                                                | <span data-ttu-id="44ce7-317">**キー**</span><span class="sxs-lookup"><span data-stu-id="44ce7-317">**Press**</span></span>                  |
@@ -191,6 +200,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="44ce7-348">情報ボックス ウィンドウに移動する (開くことも含まれます)</span><span class="sxs-lookup"><span data-stu-id="44ce7-348">Move to the FactBox pane (which may include opening it)</span></span>                       | <span data-ttu-id="44ce7-349">Alt+M、B または Ctrl+F2</span><span class="sxs-lookup"><span data-stu-id="44ce7-349">Alt+M,B or Ctrl+F2</span></span>         |
 
 ## <a name="personalization-shortcuts"></a><span data-ttu-id="44ce7-350">個人用設定のショートカット</span><span class="sxs-lookup"><span data-stu-id="44ce7-350">Personalization shortcuts</span></span>
+
 |                                                                                                                        |                                     |
 |------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
 | <span data-ttu-id="44ce7-351">**目的**</span><span class="sxs-lookup"><span data-stu-id="44ce7-351">**To do this**</span></span>                                                                                                         | <span data-ttu-id="44ce7-352">**キー**</span><span class="sxs-lookup"><span data-stu-id="44ce7-352">**Press**</span></span>                           |
@@ -219,6 +229,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="44ce7-397">個人用設定モードを終了します (個人用設定モードの場合)</span><span class="sxs-lookup"><span data-stu-id="44ce7-397">Exit personalization mode (when in personalization mode)</span></span>                                                               | <span data-ttu-id="44ce7-398">Esc キー</span><span class="sxs-lookup"><span data-stu-id="44ce7-398">Esc</span></span>                                 |
 
 ## <a name="segmented-entry-shortcuts"></a><span data-ttu-id="44ce7-399">セグメント化エントリーのショートカット</span><span class="sxs-lookup"><span data-stu-id="44ce7-399">Segmented entry shortcuts</span></span>
+
 |                                                                                                                         |                                  |
 |-------------------------------------------------------------------------------------------------------------------------|----------------------------------|
 | <span data-ttu-id="44ce7-400">**目的**</span><span class="sxs-lookup"><span data-stu-id="44ce7-400">**To do this**</span></span>                                                                                                          | <span data-ttu-id="44ce7-401">**キー**</span><span class="sxs-lookup"><span data-stu-id="44ce7-401">**Press**</span></span>                        |

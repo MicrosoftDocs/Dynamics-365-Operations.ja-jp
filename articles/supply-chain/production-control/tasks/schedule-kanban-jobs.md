@@ -16,15 +16,15 @@ ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: f36544993a9280ae10489a19252bc105abd40ac9
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 692a867eae15ac02f7042c69b9dde4f1fcbd0d54
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="schedule-kanban-jobs"></a><span data-ttu-id="bb2cb-103">かんばん作業のスケジューリング</span><span class="sxs-lookup"><span data-stu-id="bb2cb-103">Schedule kanban jobs</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="bb2cb-104">この手順は、特定の作業セルに対してプロセスかんばん作業をスケジュールすることに焦点を当てています。</span><span class="sxs-lookup"><span data-stu-id="bb2cb-104">This procedure focuses on scheduling process kanban jobs for a specific work cell.</span></span> <span data-ttu-id="bb2cb-105">「材料が利用可能な場合にプロセスかんばん作業を準備する」という手順は、この手順を作成するための前提条件です。</span><span class="sxs-lookup"><span data-stu-id="bb2cb-105">The procedure "Prepare a process kanban job when materials are not available" is a prerequisite for creating this procedure.</span></span> <span data-ttu-id="bb2cb-106">この手順の作成に使用するデモ データの会社は USMF です。</span><span class="sxs-lookup"><span data-stu-id="bb2cb-106">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="bb2cb-107">このタスクは、かんばんを処理する作業現場の監督と生産計画担当者を対象としています。</span><span class="sxs-lookup"><span data-stu-id="bb2cb-107">This task is intended for the shop floor supervisor and production planner working with kanbans.</span></span>
 

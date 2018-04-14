@@ -20,17 +20,16 @@ ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 8162797256e221192dc3e1a12aa145e28d5bc0f5
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: d49bea9579a54d175cf21780a97d67f2c35982e8
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="job-scheduling"></a><span data-ttu-id="b631e-104">ジョブのスケジューリング</span><span class="sxs-lookup"><span data-stu-id="b631e-104">Job scheduling</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="b631e-105">この記事は、工程のスケジューリングよりも詳細なスケジューリング フォームであるジョブのスケジューリングに関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="b631e-105">This article provides information about job scheduling, which is a more detailed form of scheduling than operations scheduling.</span></span> <span data-ttu-id="b631e-106">ジョブのスケジューリングは、個別のジョブまたは作業現場のオーダーをスケジュールして、製造環境を制御します。</span><span class="sxs-lookup"><span data-stu-id="b631e-106">You can use job scheduling to schedule individual jobs or shop orders, and to control the manufacturing environment.</span></span>
 

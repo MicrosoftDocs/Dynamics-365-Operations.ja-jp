@@ -16,15 +16,15 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: ba13248651a1f523893c2c40dbc9ae6d65f355ee
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 324efe6f577d84769b3d049a30e21d41c7fd51c1
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-and-assign-a-reduction-entry-document-for-a-government-grant-subsidy-japan"></a><span data-ttu-id="5086a-103">政府助成金の圧縮記帳ドキュメントの作成および割り当て (日本)</span><span class="sxs-lookup"><span data-stu-id="5086a-103">Create and assign a reduction entry document for a government grant subsidy (Japan)</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="5086a-104">日本では、圧縮記帳ドキュメントとは、政府助成金によって支援された固定資産に添えるドキュメントのことです。</span><span class="sxs-lookup"><span data-stu-id="5086a-104">For Japan, a reduction entry document is a document that you can attach to a fixed asset that is sponsored using a government subsidy.</span></span> <span data-ttu-id="5086a-105">圧縮記帳の証明書には、圧縮記帳メソッド、減価償却の方法、理由、有効性、補助金のしきい値など、政府補助金に関する詳細が含まれています。</span><span class="sxs-lookup"><span data-stu-id="5086a-105">The reduction entry certificate contains the details about the government subsidy, such as the reduction entry method, depreciation convention, reason, validity, and subsidy threshold.</span></span>
 

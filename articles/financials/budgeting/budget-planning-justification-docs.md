@@ -19,17 +19,16 @@ ms.author: ryansand
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: c4ac839e69440c8d3f1e86007a074999189e391d
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: b38050e8a792622b772882ec4a0cddce8661a720
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="budget-planning-justification-documents"></a><span data-ttu-id="c2776-103">予算計画の妥当性ドキュメント</span><span class="sxs-lookup"><span data-stu-id="c2776-103">Budget planning justification documents</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="c2776-104">妥当性ドキュメントは、予算を要求する人物に対して特定の予算が必要な理由の記述を提供します。</span><span class="sxs-lookup"><span data-stu-id="c2776-104">Justification documents provide a narrative for those requesting a budget to explain why a specific budget is necessary.</span></span> 
 

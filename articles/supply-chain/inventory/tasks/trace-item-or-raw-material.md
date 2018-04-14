@@ -17,15 +17,15 @@ ms.author: pjacobse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: 9054455a2a48e851d085a1b1ff8040261ce17672
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 5c8126322f85b317a9737978295ec0ebd2fd7cdc
 ms.contentlocale: ja-jp
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="trace-an-item-or-raw-material"></a><span data-ttu-id="ce030-103">品目または原材料の追跡</span><span class="sxs-lookup"><span data-stu-id="ce030-103">Trace an item or raw material</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="ce030-104">この手順は、品目の追跡を使用して、品目または原材料が使用された場所または使用されている場所を識別する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="ce030-104">This procedure demonstrates how to use item tracing to identify where items or raw materials have been used or are being used.</span></span> <span data-ttu-id="ce030-105">この手順を使用すると、品目を識別し、ソースまで過去方向に追跡してから、完成品の生産と販売まで将来方向に追跡できます。</span><span class="sxs-lookup"><span data-stu-id="ce030-105">With this procedure, you can identify an item, trace it back to the source, and then trace forward through the production and sale of the finished product.</span></span> <span data-ttu-id="ce030-106">このプロセスは、影響を受ける顧客、販売注文などの調査に使用できます。</span><span class="sxs-lookup"><span data-stu-id="ce030-106">The process can be used to investigate the customers impacted, the sales orders affected, and more.</span></span> <span data-ttu-id="ce030-107">この手順では、デモ データの会社 USP2 を使用します。</span><span class="sxs-lookup"><span data-stu-id="ce030-107">This procedure uses demo data company USP2.</span></span>
 

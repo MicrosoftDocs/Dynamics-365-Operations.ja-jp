@@ -16,15 +16,15 @@ ms.author: maertenm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: c3a366ea4b558ba4e4af7336992dbb091b0b1414
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 90deb42e8443d6d1ee7edbdfcedf4513c28a3bf1
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="identify-and-resolve-conflicts-in-segregation-of-duties"></a><span data-ttu-id="9f2d4-103">職務分掌の競合の識別と解決</span><span class="sxs-lookup"><span data-stu-id="9f2d4-103">Identify and resolve conflicts in segregation of duties</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="9f2d4-104">異なるユーザーが実行する必要があるタスクを分割するルールを設定できます。</span><span class="sxs-lookup"><span data-stu-id="9f2d4-104">You can set up rules to separate tasks that must be performed by different users.</span></span> <span data-ttu-id="9f2d4-105">この概念は職務分掌と呼ばれます。</span><span class="sxs-lookup"><span data-stu-id="9f2d4-105">This concept is named segregation of duties.</span></span> <span data-ttu-id="9f2d4-106">セキュリティ ロールの定義またはユーザーのロール割り当てがルールに違反する場合、競合がログに記録されます。</span><span class="sxs-lookup"><span data-stu-id="9f2d4-106">When the definition of a security role or the role assignments of a user violate the rules, the conflict is logged.</span></span> <span data-ttu-id="9f2d4-107">すべての競合は、管理者が解決する必要があります。</span><span class="sxs-lookup"><span data-stu-id="9f2d4-107">All conflicts must be resolved by the administrator.</span></span> <span data-ttu-id="9f2d4-108">競合を識別および解決するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="9f2d4-108">Complete the following procedure to identify and resolve conflicts.</span></span> <span data-ttu-id="9f2d4-109">この手順の作成に使用するデモ データの会社は USMF です。</span><span class="sxs-lookup"><span data-stu-id="9f2d4-109">The demo data company used to create this procedure is USMF.</span></span>
 

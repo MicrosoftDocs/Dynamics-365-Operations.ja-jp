@@ -16,15 +16,15 @@ ms.author: maertenm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 5936196d4772c8fcfcc8a00767d17268f6609cde
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: ed320111f3be9a496c54c1ff038179fdbbab5246
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-new-users"></a><span data-ttu-id="5e3b5-103">新規ユーザーの作成</span><span class="sxs-lookup"><span data-stu-id="5e3b5-103">Create new users</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="5e3b5-104">ユーザーは、ジョブの実行のためにシステムへアクセスする必要がある、組織の内部従業員、または外部顧客や仕入先です。</span><span class="sxs-lookup"><span data-stu-id="5e3b5-104">Users are internal employees of your organization, or external customers and vendors, who require access to the system to perform their jobs.</span></span> <span data-ttu-id="5e3b5-105">システム管理者は、この手順を実行してシステムにユーザーを追加できます。</span><span class="sxs-lookup"><span data-stu-id="5e3b5-105">System administrators can complete this procedure to add users to the system.</span></span> <span data-ttu-id="5e3b5-106">この手順の作成に使用するデモ データの会社は USMF です。</span><span class="sxs-lookup"><span data-stu-id="5e3b5-106">The demo data company used to create this procedure is USMF.</span></span> 
 

@@ -16,15 +16,15 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: f4e79f7224e1acc288863ed4418aa67ca4a3e72e
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 4d3677918ca629df06b66cd3031f16009fa75a33
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="enter-a-depreciation-rate-schedule-and-associate-to-a-depreciation-profile-japan"></a><span data-ttu-id="23154-103">償却率表の入力および減価償却プロファイルへの関連付け (日本)</span><span class="sxs-lookup"><span data-stu-id="23154-103">Enter a depreciation rate schedule and associate to a depreciation profile (Japan)</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="23154-104">日本では、固定資産減価償却率は政府機関によって発表されます。</span><span class="sxs-lookup"><span data-stu-id="23154-104">In Japan, the fixed asset depreciation rate is released by a government agency.</span></span> <span data-ttu-id="23154-105">償却率表はシステムに入力することができます。</span><span class="sxs-lookup"><span data-stu-id="23154-105">You can enter the depreciation rate schedule into the system.</span></span> <span data-ttu-id="23154-106">償却率表は、ファイルからインポートできるようデータ エンティティとして実装されます。</span><span class="sxs-lookup"><span data-stu-id="23154-106">The depreciation rate schedule is implemented as a data entity so that it can be imported from a file.</span></span> 
 

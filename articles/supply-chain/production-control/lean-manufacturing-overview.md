@@ -20,17 +20,16 @@ ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 99030966587a2784f61cecbfc7f9985f75f6d779
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 0feb75e728517d24602025e3ceb12cb6ab1840f4
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="lean-manufacturing-overview"></a><span data-ttu-id="08979-103">リーン生産の概要</span><span class="sxs-lookup"><span data-stu-id="08979-103">Lean manufacturing overview</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="08979-104">この記事では、Microsoft Dynamics 365 for Finance and Operations のリーン生産の機能の概要と説明を提供します。</span><span class="sxs-lookup"><span data-stu-id="08979-104">This article provides an overview and description of the lean manufacturing features in Microsoft Dynamics 365 for Finance and Operations.</span></span>
 
@@ -40,6 +39,7 @@ ms.lasthandoff: 03/26/2018
 -   <span data-ttu-id="08979-109">かんばん作業を監視および管理します。</span><span class="sxs-lookup"><span data-stu-id="08979-109">Monitor and maintain kanban jobs.</span></span>
 
 <span data-ttu-id="08979-110">Finance and Operations のリーン生産構造は、生産フロー、活動、およびかんばんルールで構成されます。</span><span class="sxs-lookup"><span data-stu-id="08979-110">The lean manufacturing architecture in Finance and Operations consists of production flows, activities, and kanban rules.</span></span> <span data-ttu-id="08979-111">これらの構造は Finance and Operations プロセスと完全に統合されます。</span><span class="sxs-lookup"><span data-stu-id="08979-111">These structures are fully integrated with Finance and Operations processes.</span></span> <span data-ttu-id="08979-112">さまざまな供給品、生産、および調達の戦略を組み合わせるミックス モードの製造環境で lean manufacturing を使用できます。</span><span class="sxs-lookup"><span data-stu-id="08979-112">You can use lean manufacturing in a mixed-mode manufacturing environment that combines various supply, production, and sourcing strategies.</span></span> <span data-ttu-id="08979-113">これらの戦略には、製造オーダー、プロセス産業のバッチ オーダー、発注書、および転送オーダーが含まれます。</span><span class="sxs-lookup"><span data-stu-id="08979-113">These strategies include production orders, batch orders for process industries, purchase orders, and transfer orders.</span></span>
+
 | <span data-ttu-id="08979-114">**重要**</span><span class="sxs-lookup"><span data-stu-id="08979-114">**Important**</span></span>                                                                                                                                                                                                                                                                |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span data-ttu-id="08979-115">Finance and Operations を使用してかんばんのリーン生産の実装をサポートできます。</span><span class="sxs-lookup"><span data-stu-id="08979-115">You can use Finance and Operations to support the implementation of lean manufacturing with kanbans.</span></span> <span data-ttu-id="08979-116">ただし、リーン原則の正常に実装は、使用する内部ビジネス プロセス、および実際の生産状況および環境により異なります。</span><span class="sxs-lookup"><span data-stu-id="08979-116">However, a successful implementation of lean principles depends on the internal business processes that you use, and the actual production conditions and environment.</span></span> |

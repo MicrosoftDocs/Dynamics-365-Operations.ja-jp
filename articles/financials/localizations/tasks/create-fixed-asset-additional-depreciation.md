@@ -16,15 +16,15 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 66f10523fe3fb104550a88f735a9644613ec861b
-ms.openlocfilehash: 0597df998979aa04276104cf95b92de73ae45b16
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 283ba2893bf1bce95ea580e03ddd4927632d28e5
 ms.contentlocale: ja-jp
-ms.lasthandoff: 10/30/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-a-fixed-asset-with-additional-depreciation-japan"></a><span data-ttu-id="2da36-103">割増償却を使用する固定資産の作成 (日本)</span><span class="sxs-lookup"><span data-stu-id="2da36-103">Create a fixed asset with additional depreciation (Japan)</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="2da36-104">日本では、固定資産は特定の条件下で増加償却額を転記することができます。</span><span class="sxs-lookup"><span data-stu-id="2da36-104">In Japan, a fixed asset is permitted to post an additional depreciation amount, under certain conditions.</span></span> 
 

@@ -19,17 +19,16 @@ ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: efe348d9967ab7594afd22a3ebb4df76dc6607f8
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 9bc89c1213f50fd27faa4135cf1601ccb5f39ac1
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="budgeting-home-page"></a><span data-ttu-id="e054b-103">予算作成用のホーム ページ</span><span class="sxs-lookup"><span data-stu-id="e054b-103">Budgeting home page</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="e054b-104">このトピックでは、Finance and Operations の予算作成機能コンポーネント、予算作成ツール、およびレポート機能の概要を説明します。</span><span class="sxs-lookup"><span data-stu-id="e054b-104">This topic provides an overview of the budgeting functionality components, budgeting tools, and reporting capabilities in Finance and Operations.</span></span> 
 

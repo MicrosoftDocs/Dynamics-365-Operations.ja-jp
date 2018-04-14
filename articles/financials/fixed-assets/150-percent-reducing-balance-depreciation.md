@@ -19,17 +19,16 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b35b8ea652ccb06c45b8091cc7f57e849e1a5915
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 931c12278853d87e6fddbb166b56c6079d40b142
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="150-percent-reducing-balance-depreciation"></a><span data-ttu-id="5c5fa-103">150% 逓減残高による減価償却</span><span class="sxs-lookup"><span data-stu-id="5c5fa-103">150 percent reducing balance depreciation</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="5c5fa-104">この記事は、減価償却の 150% 逓減残高法の概要を示します。</span><span class="sxs-lookup"><span data-stu-id="5c5fa-104">This article gives an overview of the 150 percent reducing balance method of depreciation.</span></span>
 
@@ -68,6 +67,7 @@ ms.lasthandoff: 11/03/2017
 -   <span data-ttu-id="5c5fa-135">**会計年度期間**では、会計年度に対して計算された減価償却の合計額が会計年度の最終日に転記されます。</span><span class="sxs-lookup"><span data-stu-id="5c5fa-135">**Fiscal period** posts the total amount of the depreciation that is calculated for the fiscal year.</span></span> <span data-ttu-id="5c5fa-136">この金額は [会計カレンダー] ページで定義された会計年度期間に見越計上されます。</span><span class="sxs-lookup"><span data-stu-id="5c5fa-136">This amount is accrued into the fiscal periods that are defined on the **Fiscal calendars** page.</span></span>
 
 ## <a name="example-of-150-reducing-balance-depreciation"></a><span data-ttu-id="5c5fa-137">150% 逓減残高による減価償却の例</span><span class="sxs-lookup"><span data-stu-id="5c5fa-137">Example of 150% reducing balance depreciation</span></span>
+
 |                                |        |
 |--------------------------------|--------|
 | <span data-ttu-id="5c5fa-138">取得価額</span><span class="sxs-lookup"><span data-stu-id="5c5fa-138">Acquisition cost</span></span>               | <span data-ttu-id="5c5fa-139">11,000</span><span class="sxs-lookup"><span data-stu-id="5c5fa-139">11,000</span></span> |

@@ -19,17 +19,16 @@ ms.author: leguo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c3d61bbfdd6a304a7bd2edd81e51e556a4955dce
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 5af345af10e4f68cb74432c4fce8bfb514c4503a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="letters-of-guarantee"></a><span data-ttu-id="05537-104">信用保証状</span><span class="sxs-lookup"><span data-stu-id="05537-104">Letters of guarantee</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="05537-105">この記事は、信用保証状に関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="05537-105">This article provides information about letters of guarantee.</span></span> <span data-ttu-id="05537-106">信用保証状で銀行は、銀行の顧客がある者に対して支払や義務を履行しない場合に、銀行がその者に特定の金額を支払うことに合意します。</span><span class="sxs-lookup"><span data-stu-id="05537-106">In a letter of guarantee, a bank agrees to pay a specific amount of money to a person if one of the bank's customers defaults on a payment or obligation to that person.</span></span> 
 

@@ -16,15 +16,15 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a9d0d9a3f278a09e89311ee75b6f95fb4f3b04cb
-ms.openlocfilehash: 0e40b97f0019a6bb7e7ede10952256884047c98f
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 006f3d4b30711651e389dd76f871de1214c158d1
 ms.contentlocale: ja-jp
-ms.lasthandoff: 02/02/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="develop-a-succession-plan"></a><span data-ttu-id="a5ec0-103">継続的計画の作成</span><span class="sxs-lookup"><span data-stu-id="a5ec0-103">Develop a succession plan</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="a5ec0-104">組織が育ち、継続的計画を考慮すると、同様のスキルを持つ別の人物を見つけたい場合があります。</span><span class="sxs-lookup"><span data-stu-id="a5ec0-104">As your organization grows, and you consider succession planning, you may want to find someone who has similar skills to another person.</span></span>  <span data-ttu-id="a5ec0-105">スキル マッピングは、既存の従業員および応募者を分析して、評価した従業員のスキル セットに一致するかどうかを確認することができます。</span><span class="sxs-lookup"><span data-stu-id="a5ec0-105">Skill mapping allows you to analyze your existing employees and applicants to see if they match the skill set of a valued employee.</span></span> <span data-ttu-id="a5ec0-106">この手順の作成に使用するデモ データの会社は USMF です。</span><span class="sxs-lookup"><span data-stu-id="a5ec0-106">The demo data company used to create this procedure is USMF.</span></span>
 

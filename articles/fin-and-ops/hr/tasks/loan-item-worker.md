@@ -16,15 +16,15 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a9d0d9a3f278a09e89311ee75b6f95fb4f3b04cb
-ms.openlocfilehash: 6f21dd7c5ac0a2e7051d88d14dc6079fa1b32517
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: aff5ca3a6f3de4d90955e803917d352a21877244
 ms.contentlocale: ja-jp
-ms.lasthandoff: 02/02/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="loan-items-to-a-worker"></a><span data-ttu-id="76076-103">作業者への貸与品目</span><span class="sxs-lookup"><span data-stu-id="76076-103">Loan items to a worker</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="76076-104">この手順では、作業者へ品目を貸与する方法および作業者が品目を返品するのを記録する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="76076-104">This procedure shows how to loan an item to a worker and record the worker returning an item.</span></span> <span data-ttu-id="76076-105">作業者は、従業員セルフサービス ページを使用して貸与品目を要求できます。</span><span class="sxs-lookup"><span data-stu-id="76076-105">Workers can also request loan items through their Employee self-service pages.</span></span> <span data-ttu-id="76076-106">この手順の作成に使用するデモ データの会社は USMF です。</span><span class="sxs-lookup"><span data-stu-id="76076-106">The demo data company used to create this procedure is USMF.</span></span>
 

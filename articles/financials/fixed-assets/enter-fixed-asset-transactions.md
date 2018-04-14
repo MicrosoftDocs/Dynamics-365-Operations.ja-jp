@@ -19,17 +19,16 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 18352ad921c2e2d110a7535f979272685105662f
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 2a7fa7a28437e29f390efdf566e946c6a1082370
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="fixed-asset-transaction-options"></a><span data-ttu-id="47f33-103">固定資産トランザクションのオプション</span><span class="sxs-lookup"><span data-stu-id="47f33-103">Fixed asset transaction options</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="47f33-104">この記事は、固定資産トランザクションの作成に使用できるさまざまな方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="47f33-104">This article describes the different methods available to create fixed asset transactions.</span></span>
 

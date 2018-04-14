@@ -17,15 +17,15 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: fbbe019bdca2d5182466a20370418a14032fe63d
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 8b5609c897466dbd0e504740cdc600fb2f800d37
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="set-up-a-work-template-for-purchase-orders"></a><span data-ttu-id="7e97d-103">発注書の作業テンプレートの設定</span><span class="sxs-lookup"><span data-stu-id="7e97d-103">Set up a work template for purchase orders</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="7e97d-104">この手順では、入庫済品目のプット アウェイで使用する簡単な作業テンプレートの設定に集中して説明します。</span><span class="sxs-lookup"><span data-stu-id="7e97d-104">This procedure focuses on the set up of a simple work template to be used when putting away received items.</span></span> <span data-ttu-id="7e97d-105">品目を入庫エリアから移動するときにモバイル デバイスで倉庫作業者に提示される一連の手順が、作業テンプレートによって決まります。</span><span class="sxs-lookup"><span data-stu-id="7e97d-105">Work templates determine the set of instructions presented to the warehouse worker on a mobile device when moving items from the receiving area.</span></span> <span data-ttu-id="7e97d-106">この手順は、デモ データの会社 USMF で前述のデータを使用して実施できます。</span><span class="sxs-lookup"><span data-stu-id="7e97d-106">You can use this procedure with the data mentioned in demo data company USMF.</span></span> <span data-ttu-id="7e97d-107">このガイドを開始する前に、作業プール ID を作成します。</span><span class="sxs-lookup"><span data-stu-id="7e97d-107">Before you start this guide, create a work pool ID.</span></span> <span data-ttu-id="7e97d-108">この例では、入庫で呼び出される作業プール ID を使用します。</span><span class="sxs-lookup"><span data-stu-id="7e97d-108">In this example, a work pool ID called in Inbound is used.</span></span> <span data-ttu-id="7e97d-109">この手順は、倉庫マネージャーを対象としています。</span><span class="sxs-lookup"><span data-stu-id="7e97d-109">This procedure is intended for the warehouse manager.</span></span>
 

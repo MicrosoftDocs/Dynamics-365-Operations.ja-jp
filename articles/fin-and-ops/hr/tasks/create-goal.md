@@ -16,15 +16,15 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a9d0d9a3f278a09e89311ee75b6f95fb4f3b04cb
-ms.openlocfilehash: 81707760e3ee3bc212706fb0857ed087455b0a9a
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 8a01506d94a12642cae1c8331f473afb76bcf2b6
 ms.contentlocale: ja-jp
-ms.lasthandoff: 02/02/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-a-goal"></a><span data-ttu-id="d5d4c-103">目標の作成</span><span class="sxs-lookup"><span data-stu-id="d5d4c-103">Create a goal</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="d5d4c-104">目標を作成し、目標に活動を追加し、測定を追跡し、目標をレビューににリンクすることができます。</span><span class="sxs-lookup"><span data-stu-id="d5d4c-104">You can create goals, add activities to goals, track measurements, and link the goals to a review.</span></span> <span data-ttu-id="d5d4c-105">この手順は、デモ データ会社 USMF を使用して作成されました。</span><span class="sxs-lookup"><span data-stu-id="d5d4c-105">This procedure was created using the USMF demo data company.</span></span> <span data-ttu-id="d5d4c-106">この手順は、Dynamics 365 for Operations、バージョン 1611 に追加された機能です。</span><span class="sxs-lookup"><span data-stu-id="d5d4c-106">This procedure is for a feature that was added in Dynamics 365 for Operations, version 1611.</span></span>
 

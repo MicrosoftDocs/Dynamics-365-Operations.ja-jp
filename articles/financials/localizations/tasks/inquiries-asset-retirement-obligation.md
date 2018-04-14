@@ -16,15 +16,15 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 765a0e482b54fc5cbcf0d16476ff72e3833d3df0
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a021ff3d79ed3dd2c9f69e0ef4bffa09022df2c3
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="inquire-on-asset-retirement-obligation-related-transactions-japan"></a><span data-ttu-id="b850c-103">資産除去責務関連トランザクションの照会 (日本)</span><span class="sxs-lookup"><span data-stu-id="b850c-103">Inquire on asset retirement obligation-related transactions (Japan)</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="b850c-104">日本では、資産除去責務 (ARO) のトランザクションと金額は、基になる固定資産とは別にレポートする必要があります。</span><span class="sxs-lookup"><span data-stu-id="b850c-104">For Japan, transactions and amounts of asset retirement obligations (ARO) need to be reported separately from the underlying fixed assets.</span></span> 
 

@@ -19,17 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 683fb598a62cf993d0db26ffd492b8c3354a92d3
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 5436aaeadbf2d59324fe6b74a837d4ca85e4baff
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="settle-a-partial-vendor-payment-before-the-discount-date-with-a-final-payment-after-the-discount-date"></a><span data-ttu-id="4da9b-103">割引日後の最終支払での割引日よりも前の一部の仕入先支払の決済</span><span class="sxs-lookup"><span data-stu-id="4da9b-103">Settle a partial vendor payment before the discount date with a final payment after the discount date</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="4da9b-104">この記事は、複数の一部支払が行われるうち、いくつかが現金割引期間内に、それ以外が現金割引期間外に行われるシナリオについて説明します。</span><span class="sxs-lookup"><span data-stu-id="4da9b-104">This article walks you through a scenario where multiple partial payments are made, some within the cash discount period and others outside the cash discount period.</span></span>
 

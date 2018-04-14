@@ -20,18 +20,18 @@ ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 577204b49355a470769237eb46ad74e7f319a55e
-ms.openlocfilehash: 061555a228d1d40f2a2d864e72f39dc27155d1bd
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 5034ecf6b6d8c27b2b22ce0a36c5ff5df3205e15
 ms.contentlocale: ja-jp
-ms.lasthandoff: 01/15/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="register-serial-numbers-in-the-sales-process"></a><span data-ttu-id="b6568-104">販売プロセスでのシリアル番号の登録</span><span class="sxs-lookup"><span data-stu-id="b6568-104">Register serial numbers in the sales process</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 <span data-ttu-id="b6568-105">このトピックでは、販売プロセス中に梱包明細または請求書のシリアル番号を登録する方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="b6568-105">This topic explains how you can register serial numbers on packing slips or invoices during the sales process.</span></span> <span data-ttu-id="b6568-106">この機能は、会社がシリアル番号をサービスおよび保証のために取得する一方、シリアル番号を在庫の入庫から払出まで管理する必要がない場合に役立ちます。</span><span class="sxs-lookup"><span data-stu-id="b6568-106">This functionality is useful if a company wants to capture serial numbers for service and warranty purposes, but doesn't have to maintain serial numbers in inventory from receipt to issue.</span></span>
 

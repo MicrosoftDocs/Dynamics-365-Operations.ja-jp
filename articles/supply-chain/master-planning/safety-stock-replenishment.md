@@ -20,17 +20,16 @@ ms.author: roxanad
 ms.dyn365.ops.version: 7.3
 ms.search.validFrom: 2017-12-31
 ms.translationtype: HT
-ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
-ms.openlocfilehash: 61c0fde1af125188e1ad1198e00af760256d7cfd
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a836ce76f635fd42b0613b2abf131315b19aa5fe
 ms.contentlocale: ja-jp
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="safety-stock-fulfillment-for-items"></a><span data-ttu-id="7cd73-103">品目に対する安全在庫フルフィルメント</span><span class="sxs-lookup"><span data-stu-id="7cd73-103">Safety stock fulfillment for items</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="7cd73-104">安全在庫は、品目が在庫切れになるリスクを軽減するために、在庫に保持されている品目の追加の数量を示します。</span><span class="sxs-lookup"><span data-stu-id="7cd73-104">Safety stock indicates an additional quantity of an item held in the inventory in order to reduce the risk that the item will be out of stock.</span></span> <span data-ttu-id="7cd73-105">安全在庫は、販売注文が来ても、仕入先が顧客の指定出荷日に間に合うよう追加品目を配送できない場合に、バッファ在庫として使用されます。</span><span class="sxs-lookup"><span data-stu-id="7cd73-105">Safety stock is used as a buffer stock in case sales orders come in and the supplier is unable to deliver the additional items to meet the customer's requested ship date.</span></span> <span data-ttu-id="7cd73-106">安全在庫を販売注文を満たすよう使用する場合は、安全在庫が減少します。</span><span class="sxs-lookup"><span data-stu-id="7cd73-106">When safety stock is used to fulfill a sales order, the safety stock will be reduced.</span></span> <span data-ttu-id="7cd73-107">在庫を安全レベルに自動的に戻すよう、マスター プランを使用することができます。</span><span class="sxs-lookup"><span data-stu-id="7cd73-107">You can use Master planning to automatically bring the inventory back to the safety level.</span></span>    
 

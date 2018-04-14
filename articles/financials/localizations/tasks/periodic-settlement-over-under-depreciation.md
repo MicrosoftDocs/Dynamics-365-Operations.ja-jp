@@ -16,15 +16,15 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 5f1a505b1cc52aa2d70fc3b7dfd844559609ad48
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a25665f6031269a8ba332f0d411638569243e341
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="periodic-settlement-of-over-and-under-depreciation-japan"></a><span data-ttu-id="3e3c9-103">償却超過額および償却不足額の定期決済 (日本)</span><span class="sxs-lookup"><span data-stu-id="3e3c9-103">Periodic settlement of over and under depreciation (Japan)</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="3e3c9-104">このタスクでは、損金の減価償却費を計算および記録する方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="3e3c9-104">Use this task to learn how to calculate and record depreciation expense for deductible expense.</span></span>
 

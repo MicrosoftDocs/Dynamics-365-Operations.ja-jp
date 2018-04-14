@@ -20,17 +20,16 @@ ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: c5b9ee57b0b855766628caca239059205c103b86
-ms.openlocfilehash: 4a0586324dddc10d64ad6760222f2540f31d6bce
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: e6bab3de11dbd2aba8b1330284986514a6ac1dfc
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="personalized-product-recommendations-overview"></a><span data-ttu-id="391da-103">カスタマイズされた製品の推奨事項の概要</span><span class="sxs-lookup"><span data-stu-id="391da-103">Personalized product recommendations overview</span></span>
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 > [!NOTE]
 > <span data-ttu-id="391da-104">より良いアルゴリズムとより新しい小売指向の機能を加えたこの機能をデザインするため、製品レコメンデーション サービスの現在のバージョンを削除します。</span><span class="sxs-lookup"><span data-stu-id="391da-104">We are removing the current version of the product recommendation service as we redesign this feature with a better algorithm and newer retail-oriented capabilities.</span></span> <span data-ttu-id="391da-105">詳細については、[削除済みまたは推奨されない機能](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="391da-105">For more information see [Removed or deprecated features](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features).</span></span> <span data-ttu-id="391da-106">環境に対して既に有効な製品推奨事項で問題が発生している場合、ページの下に移動します。</span><span class="sxs-lookup"><span data-stu-id="391da-106">Navigate to the bottom of the page if you are facing issues with already-enabled product recommendations for your environment.</span></span> 
@@ -86,9 +85,9 @@ ms.lasthandoff: 03/08/2018
 -   <span data-ttu-id="391da-145">モデルの資格情報と ID は CRT で利用できるようになっており、オンライン モードで Cloud POS と MPOS からの製品推奨事項を守ることができます。</span><span class="sxs-lookup"><span data-stu-id="391da-145">Model credentials and ID are made available to CRT so that calls for product recommendations from Cloud POS and MPOS in online mode can be honored.</span></span>
 
 > ## <a name="troubleshoot-issues-where-you-have-product-recommendations-already-enabled"></a><span data-ttu-id="391da-146">[製品推奨事項] が既に有効な場合の問題のトラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="391da-146">Troubleshoot issues where you have Product recommendations already enabled</span></span> 
->- <span data-ttu-id="391da-147">[小売パラメーター] > [機械学習] > [製品推奨事項の無効化] に移動し、[グローバル構成ジョブ [1110]] を実行します。</span><span class="sxs-lookup"><span data-stu-id="391da-147">Navigate to **Retail Parameters** > **Machine learning** > **Disable product recommendations** and run **Global configuration job [1110]**.</span></span> <span data-ttu-id="391da-148">[機械学習] タブを特定できない場合、Dynamics サポートにお問い合わせください。</span><span class="sxs-lookup"><span data-stu-id="391da-148">If you are not able to locate **Machine learning** tab, please contact Dynamics Support.</span></span> 
-
->- <span data-ttu-id="391da-149">**画面レイアウト デザイナー** を使用して **推奨事項コントロール** をトランザクション画面に追加した場合、それも削除してください。</span><span class="sxs-lookup"><span data-stu-id="391da-149">If you added the **Recommendations control** to your transaction screen using the **Screen layout designer**, please remove that as well.</span></span> 
+> - <span data-ttu-id="391da-147">[小売パラメーター] > [機械学習] > [製品推奨事項の無効化] に移動し、[グローバル構成ジョブ [1110]] を実行します。</span><span class="sxs-lookup"><span data-stu-id="391da-147">Navigate to **Retail Parameters** > **Machine learning** > **Disable product recommendations** and run **Global configuration job [1110]**.</span></span> <span data-ttu-id="391da-148">[機械学習] タブを特定できない場合、Dynamics サポートにお問い合わせください。</span><span class="sxs-lookup"><span data-stu-id="391da-148">If you are not able to locate **Machine learning** tab, please contact Dynamics Support.</span></span> 
+> 
+> - <span data-ttu-id="391da-149">**画面レイアウト デザイナー** を使用して **推奨事項コントロール** をトランザクション画面に追加した場合、それも削除してください。</span><span class="sxs-lookup"><span data-stu-id="391da-149">If you added the **Recommendations control** to your transaction screen using the **Screen layout designer**, please remove that as well.</span></span> 
 
 
 

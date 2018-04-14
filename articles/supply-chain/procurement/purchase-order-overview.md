@@ -19,19 +19,18 @@ ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 577204b49355a470769237eb46ad74e7f319a55e
-ms.openlocfilehash: 7452ebf95fdf8deeca6d09a8d21a09cb6a63fd7a
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 5d29c9a850fdc209326c9b63e6c7aef58eb3ddaf
 ms.contentlocale: ja-jp
-ms.lasthandoff: 01/15/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="purchase-order-overview"></a><span data-ttu-id="cc412-103">発注書の概要</span><span class="sxs-lookup"><span data-stu-id="cc412-103">Purchase order overview</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
-
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 <span data-ttu-id="cc412-104">この記事では、発注書 (PO) の概要について説明し、発注書が実行するさまざまなステージに関連する追加の記事へのリンクが提供されます。</span><span class="sxs-lookup"><span data-stu-id="cc412-104">This article provides general information about purchase orders (POs) and links to additional articles that are related to the various stages that a PO goes through.</span></span>
 

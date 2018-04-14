@@ -16,15 +16,15 @@ ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 3579148033023f648e1a78a3dd009018f153fdad
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 4b8277073810e678fd7d4c76371eeb4709ece020
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="enter-an-addition-to-a-fixed-asset"></a><span data-ttu-id="eba24-103">固定資産への追加物の入力</span><span class="sxs-lookup"><span data-stu-id="eba24-103">Enter an addition to a fixed asset</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="eba24-104">この手順では、既存の固定資産への追加物を追加する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="eba24-104">This procedure shows how to add an addition to an existing fixed asset.</span></span> <span data-ttu-id="eba24-105">固定資産の付属品の目的は、品目の追加、メンテナンス、改善を追跡することであり、情報提供のみを目的としています。</span><span class="sxs-lookup"><span data-stu-id="eba24-105">The purpose of Fixed asset additions is to track item additions, maintenance, or improvements for an asset, and is informational only.</span></span> <span data-ttu-id="eba24-106">固定資産価値または耐用年数の変更はすべて、個別に行う必要があります。</span><span class="sxs-lookup"><span data-stu-id="eba24-106">Any changes to the fixed asset value or service life must be made separately.</span></span>   
 

@@ -16,15 +16,15 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 50764f99be04d27e04047824f870e724336cb452
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a773675b858a196e795ad54cc534ef5eb98ef484
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="set-up-policies-for-procurement-category-hierarchies"></a><span data-ttu-id="c3dc1-103">調達カテゴリ階層に対するポリシーの設定</span><span class="sxs-lookup"><span data-stu-id="c3dc1-103">Set up policies for procurement category hierarchies</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="c3dc1-104">カテゴリの製品を発注するルールを設定するには、この手順を使用します。</span><span class="sxs-lookup"><span data-stu-id="c3dc1-104">Use this procedure to set up rules for ordering products in a category.</span></span> <span data-ttu-id="c3dc1-105">ルールは特定の購入ポリシーに定義されます。</span><span class="sxs-lookup"><span data-stu-id="c3dc1-105">The rules are defined for a specific purchasing policy.</span></span> <span data-ttu-id="c3dc1-106">カテゴリ アクセス ルールは、従業員が要求を作成したときにどの調達カテゴリにアクセス許可があるかを管理します。</span><span class="sxs-lookup"><span data-stu-id="c3dc1-106">The category access rule controls which procurement categories employees have access to when they create a requisition.</span></span> <span data-ttu-id="c3dc1-107">要求が作成されると、購入ポリシーおよびカテゴリ アクセス ルールは、従業員が属している法人および業務単位によって適用され決定されます。</span><span class="sxs-lookup"><span data-stu-id="c3dc1-107">When a requisition is being created, the purchasing policy and category access rule that should be applied are determined by the legal entity and the operational unit that the employee belongs to.</span></span> <span data-ttu-id="c3dc1-108">デモ データの会社 USMF でこの手順を使用できます。</span><span class="sxs-lookup"><span data-stu-id="c3dc1-108">You can use this procedure in demo data company USMF.</span></span> <span data-ttu-id="c3dc1-109">通常、このタスクを実施するのは、購買マネージャーです。</span><span class="sxs-lookup"><span data-stu-id="c3dc1-109">This task would typically be carried out by a purchasing manager.</span></span>
 

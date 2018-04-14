@@ -17,15 +17,15 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 31787aa180639b934b837b98dc170070d33fd56f
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 29b39ad74c064da88154a77299cedc9babe3786b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="set-up-accessorial-assignments"></a><span data-ttu-id="06305-103">付帯サービス割り当ての設定</span><span class="sxs-lookup"><span data-stu-id="06305-103">Set up accessorial assignments</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="06305-104">この手順では、付帯サービスの割り当てを設定する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="06305-104">This procedure shows how to set up an accessorial assignment.</span></span> <span data-ttu-id="06305-105">この設定は、通常、配送コーディネーターにより実行されます。</span><span class="sxs-lookup"><span data-stu-id="06305-105">This is typically done by a transportation coordinator.</span></span> <span data-ttu-id="06305-106">このガイドを使用する前に、「ハブ付帯請求金額および付帯サービス マスターの設定」ガイドを実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="06305-106">Before you use this guide you need to run the "Set up hub accessorial charges and accessorial masters" guide.</span></span>
 

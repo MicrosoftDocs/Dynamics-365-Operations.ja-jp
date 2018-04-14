@@ -19,16 +19,16 @@ ms.author: mirzaab
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 735a25d625774892ff71d4799932f15c258dfbfa
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: ec695084e90bdc4730f56baf675503d764faa2ac
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="inventory-on-hand-mobile-workspace"></a><span data-ttu-id="4c80e-104">手持ち在庫モバイル ワークスペース</span><span class="sxs-lookup"><span data-stu-id="4c80e-104">Inventory on-hand mobile workspace</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="4c80e-105">このトピックでは、[**手持ち在庫**] モバイル ワークスペースに関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="4c80e-105">This topic provides information about the **Inventory on-hand** mobile workspace.</span></span> <span data-ttu-id="4c80e-106">このワークスペースは、予約済みの在庫や利用可能な在庫に関するモバイル情報を、いつでも、どこでも取得するのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="4c80e-106">This workspace helps you gain insights into reserved and available inventory anytime and anywhere.</span></span>
 

@@ -19,17 +19,16 @@ ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 513d3e20e0c89eb0064e3c1bc11a3a8dea43cfe4
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: aa80976e539e88af8b157257d043d410ede49e8d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="posting-definitions"></a><span data-ttu-id="6309c-104">転記の定義</span><span class="sxs-lookup"><span data-stu-id="6309c-104">Posting definitions</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="6309c-105">この記事では、転記の定義に関する情報と、それらを定義およびリンクする方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="6309c-105">This article provides information about posting definitions, and how to define and link them.</span></span> <span data-ttu-id="6309c-106">サポートされている転記タイプと文書については、転記プロファイルの代わりに転記の定義を使用して、勘定項目の主勘定および財務分析コードを分類できます。</span><span class="sxs-lookup"><span data-stu-id="6309c-106">For supported posting types and documents, you can use posting definitions instead of posting profiles to classify main accounts and financial dimensions on accounting entries.</span></span>
 

@@ -16,15 +16,15 @@ ms.author: dkrame
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a9d0d9a3f278a09e89311ee75b6f95fb4f3b04cb
-ms.openlocfilehash: 38ff9fde897136fa23a2c2951167f6507b047b2d
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 110dde293fea31f82fb4b2b1c54bf96d5baa04b3
 ms.contentlocale: ja-jp
-ms.lasthandoff: 02/02/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="set-up-positions"></a><span data-ttu-id="5d4b9-103">職位の設定</span><span class="sxs-lookup"><span data-stu-id="5d4b9-103">Set up positions</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="5d4b9-104">職位は組織階層の下位レベルの重要な要素です。</span><span class="sxs-lookup"><span data-stu-id="5d4b9-104">Positions are an important element of the lower level of an organization hierarchy.</span></span> <span data-ttu-id="5d4b9-105">職位は、職務の個々のインスタンスです。</span><span class="sxs-lookup"><span data-stu-id="5d4b9-105">A position is an individual instance of a job.</span></span> <span data-ttu-id="5d4b9-106">たとえば、「販売マネージャ (東部)」という職位は、「販売マネージャ」という職務に関連付けられている職位の 1 つです。</span><span class="sxs-lookup"><span data-stu-id="5d4b9-106">For example, the position, “Sales manager (East),” is one of the positions that is associated with the job, “Sales manager.”</span></span> <span data-ttu-id="5d4b9-107">職位は部問内に存在し、一人の作業者だけが関連付けられている可能性があります。</span><span class="sxs-lookup"><span data-stu-id="5d4b9-107">A position exists in a department and may have only one worker associated with it.</span></span> <span data-ttu-id="5d4b9-108">このタスクでは、職位の作成に必要な手順を説明します。</span><span class="sxs-lookup"><span data-stu-id="5d4b9-108">In this task we will walk through the steps required to create a position.</span></span> <span data-ttu-id="5d4b9-109">この手順は、人事管理の専門家を対象としています。</span><span class="sxs-lookup"><span data-stu-id="5d4b9-109">This procedure is intended for Human Resources Specialists.</span></span>
 

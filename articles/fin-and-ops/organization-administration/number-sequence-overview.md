@@ -19,17 +19,16 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a290f6f453d8440d6e68a13915339d3da31d959a
-ms.openlocfilehash: 353113d7c7341eab567224a0d3508f6fdb7bdcec
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 58069d79f92ce015fe4b11b50fb3348722bca4f8
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="number-sequences"></a><span data-ttu-id="ac326-103">番号順序</span><span class="sxs-lookup"><span data-stu-id="ac326-103">Number sequences</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="ac326-104">番号順序は、ID が必要なマスター データ レコードおよびトランザクション レコードに対して読みやすい固有の ID を生成するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="ac326-104">Number sequences are used to generate readable, unique identifiers for master data records and transaction records that require identifiers.</span></span> <span data-ttu-id="ac326-105">ID が必要なマスタ データ レコードまたはトランザクション レコードは、*参照*と呼ばれます。</span><span class="sxs-lookup"><span data-stu-id="ac326-105">A master data record or transaction record that requires an identifier is referred to as a *reference*.</span></span>
 

@@ -16,15 +16,15 @@ ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 18ad27eb673745d09569f6a49c8bc66132550f35
-ms.openlocfilehash: 9ad19534091bdbd8924f90174b720d818b9ed778
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: e2d80ce02f45260aa364db68692ee19d813ade54
 ms.contentlocale: ja-jp
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="set-up-bank-facilities-and-posting-profiles-for-letter-of-credit"></a><span data-ttu-id="16223-103">信用状についての銀行融資と転記プロファイルの設定</span><span class="sxs-lookup"><span data-stu-id="16223-103">Set up bank facilities and posting profiles for letter of credit</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="16223-104">この手順では、信用状のプロセスを必要とする銀行融資と転記プロファイルの作成を説明します。</span><span class="sxs-lookup"><span data-stu-id="16223-104">This procedure walks through creating a Bank facility and posting profile required to process Letters of credit.</span></span> 
 

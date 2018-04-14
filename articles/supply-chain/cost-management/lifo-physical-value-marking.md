@@ -20,19 +20,18 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: db6d04a64821b3b02679056f787092dc40ef4423
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 2ba1919254ffa7d08076379f5e034952d8273328
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="lifo-with-physical-value-and-marking"></a><span data-ttu-id="4fa9c-104">現物価格とマーキングを使用した LIFO</span><span class="sxs-lookup"><span data-stu-id="4fa9c-104">LIFO with physical value and marking</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
-
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 <span data-ttu-id="4fa9c-105">後入れ先出し (LIFO) は、最後 (最新) の入庫が最初に払出される在庫モデルです。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-105">Last in, First out (LIFO) is an inventory model in which the last (newest) receipts are issued first.</span></span> <span data-ttu-id="4fa9c-106">在庫からの出庫は、在庫トランザクションの日付に基づいて在庫への最後の入庫を対象として決済されます。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-106">Issues from inventory are settled against the last receipts into inventory based on the date of the inventory transaction.</span></span> 
 
@@ -62,16 +61,16 @@ ms.lasthandoff: 11/03/2017
 
 <span data-ttu-id="4fa9c-143">**図の説明**</span><span class="sxs-lookup"><span data-stu-id="4fa9c-143">**Key to the diagram**</span></span>
 
--   <span data-ttu-id="4fa9c-144">在庫トランザクションは、縦の矢印で表されています。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-144">Inventory transactions are represented by vertical arrows.</span></span>
--   <span data-ttu-id="4fa9c-145">在庫への入庫は、タイムラインの上の縦の矢印で表されています。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-145">Receipts into inventory are represented by vertical arrows above the timeline.</span></span>
--   <span data-ttu-id="4fa9c-146">在庫からの払出は、タイムラインの下の縦の矢印で表されています。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-146">Issues out of inventory are represented by vertical arrows below the timeline.</span></span>
--   <span data-ttu-id="4fa9c-147">各縦矢印の上 (または下) には、在庫トランザクションの値が Quantity@Unit の形式で指定されています。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-147">Above (or below) each vertical arrow, the value of the inventory transaction is specified in the format Quantity@Unit price.</span></span>
--   <span data-ttu-id="4fa9c-148">かっこで囲まれた在庫トランザクションの値は、在庫トランザクションが在庫に現物転記されることを示します。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-148">An inventory transaction value that is enclosed in parentheses indicates that the inventory transaction is physically posted into inventory.</span></span>
--   <span data-ttu-id="4fa9c-149">かっこで囲まれていない在庫トランザクションの値は、在庫トランザクションが在庫に財務転記されることを示します。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-149">An inventory transaction value that isn't enclosed in parentheses indicates that the inventory transaction is financially posted into inventory.</span></span>
--   <span data-ttu-id="4fa9c-150">個々の新しい入庫トランザクションまたは払出トランザクションは、新しいラベルで示されます。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-150">Each new receipt or issue transaction is designated by a new label.</span></span>
--   <span data-ttu-id="4fa9c-151">各縦矢印には、*1a* のような連続した ID のラベルが付いています。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-151">Each vertical arrow is labeled with a sequential identifier, such as *1a*.</span></span> <span data-ttu-id="4fa9c-152">ID は、タイムラインでの在庫トランザクション転記の順序を示しています。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-152">The identifiers indicate the order of inventory transaction postings in the timeline.</span></span>
--   <span data-ttu-id="4fa9c-153">在庫原価計算は、赤い縦の点線と*在庫原価計算*のラベルで示されています。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-153">Inventory closings are represented by a red vertical dashed line and the label *Inventory Close*.</span></span>
--   <span data-ttu-id="4fa9c-154">在庫原価計算によって実行される決済は、入庫から払出へと斜めに向かう赤い点線矢印で表されます。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-154">Settlements that are performed by inventory close are represented by red diagonal dashed arrows that go from a receipt to an issue.</span></span>
+- <span data-ttu-id="4fa9c-144">在庫トランザクションは、縦の矢印で表されています。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-144">Inventory transactions are represented by vertical arrows.</span></span>
+- <span data-ttu-id="4fa9c-145">在庫への入庫は、タイムラインの上の縦の矢印で表されています。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-145">Receipts into inventory are represented by vertical arrows above the timeline.</span></span>
+- <span data-ttu-id="4fa9c-146">在庫からの払出は、タイムラインの下の縦の矢印で表されています。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-146">Issues out of inventory are represented by vertical arrows below the timeline.</span></span>
+- <span data-ttu-id="4fa9c-147">各縦矢印の上 (または下) には、在庫トランザクションの値が Quantity@Unit の形式で指定されています。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-147">Above (or below) each vertical arrow, the value of the inventory transaction is specified in the format Quantity@Unit price.</span></span>
+- <span data-ttu-id="4fa9c-148">かっこで囲まれた在庫トランザクションの値は、在庫トランザクションが在庫に現物転記されることを示します。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-148">An inventory transaction value that is enclosed in parentheses indicates that the inventory transaction is physically posted into inventory.</span></span>
+- <span data-ttu-id="4fa9c-149">かっこで囲まれていない在庫トランザクションの値は、在庫トランザクションが在庫に財務転記されることを示します。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-149">An inventory transaction value that isn't enclosed in parentheses indicates that the inventory transaction is financially posted into inventory.</span></span>
+- <span data-ttu-id="4fa9c-150">個々の新しい入庫トランザクションまたは払出トランザクションは、新しいラベルで示されます。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-150">Each new receipt or issue transaction is designated by a new label.</span></span>
+- <span data-ttu-id="4fa9c-151">各縦矢印には、*1a* のような連続した ID のラベルが付いています。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-151">Each vertical arrow is labeled with a sequential identifier, such as *1a*.</span></span> <span data-ttu-id="4fa9c-152">ID は、タイムラインでの在庫トランザクション転記の順序を示しています。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-152">The identifiers indicate the order of inventory transaction postings in the timeline.</span></span>
+- <span data-ttu-id="4fa9c-153">在庫原価計算は、赤い縦の点線と*在庫原価計算*のラベルで示されています。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-153">Inventory closings are represented by a red vertical dashed line and the label *Inventory Close*.</span></span>
+- <span data-ttu-id="4fa9c-154">在庫原価計算によって実行される決済は、入庫から払出へと斜めに向かう赤い点線矢印で表されます。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-154">Settlements that are performed by inventory close are represented by red diagonal dashed arrows that go from a receipt to an issue.</span></span>
 
 ## <a name="lifo-with-the-include-physical-value-option"></a><span data-ttu-id="4fa9c-155">[現物価格を含める] オプションを使用した LIFO</span><span class="sxs-lookup"><span data-stu-id="4fa9c-155">LIFO with the Include physical value option</span></span>
 <span data-ttu-id="4fa9c-156">[**品目モデル グループ**] ページの品目に対して [**現物価格を含める**] チェック ボックスが選択されている場合、システムは現物入庫トランザクションと財務入庫トランザクションの両方を使用して移動平均原価価格を計算します。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-156">If the **Include physical value** check box is selected for an item on the **Item model groups** page, the system uses both physical and financial receipt transactions to calculate the running average cost price.</span></span> <span data-ttu-id="4fa9c-157">該当する場合は、現物更新済払出トランザクションに対する調整も行われます。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-157">Where applicable, the system also makes adjustments to the physically updated issue transaction.</span></span> <span data-ttu-id="4fa9c-158">[**現物価格を含める**] チェック ボックスがオフの場合、LIFO 在庫モデルを使用した在庫決算では、財務更新済のトランザクションに対してのみ決済が行われます。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-158">When the **Include physical value** check box is cleared, inventory close with the LIFO inventory model makes settlements only to transactions that are financially updated.</span></span> 
@@ -96,16 +95,16 @@ ms.lasthandoff: 11/03/2017
 
 <span data-ttu-id="4fa9c-191">**図の説明**</span><span class="sxs-lookup"><span data-stu-id="4fa9c-191">**Key to the diagram**</span></span>
 
--   <span data-ttu-id="4fa9c-192">在庫トランザクションは、縦の矢印で表されています。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-192">Inventory transactions are represented by vertical arrows.</span></span>
--   <span data-ttu-id="4fa9c-193">在庫への入庫は、タイムラインの上の縦の矢印で表されています。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-193">Receipts into inventory are represented by vertical arrows above the timeline.</span></span>
--   <span data-ttu-id="4fa9c-194">在庫からの払出は、タイムラインの下の縦の矢印で表されています。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-194">Issues out of inventory are represented by vertical arrows below the timeline.</span></span>
--   <span data-ttu-id="4fa9c-195">各縦矢印の上 (または下) には、在庫トランザクションの値が Quantity@Unit の形式で指定されています。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-195">Above (or below) each vertical arrow, the value of the inventory transaction is specified in the format Quantity@Unit price.</span></span>
--   <span data-ttu-id="4fa9c-196">かっこで囲まれた在庫トランザクションの値は、在庫トランザクションが在庫に現物転記されることを示します。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-196">An inventory transaction value that is enclosed in parentheses indicates that the inventory transaction is physically posted into inventory.</span></span>
--   <span data-ttu-id="4fa9c-197">かっこで囲まれていない在庫トランザクションの値は、在庫トランザクションが在庫に財務転記されることを示します。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-197">An inventory transaction value that isn't enclosed in parentheses indicates that the inventory transaction is financially posted into inventory.</span></span>
--   <span data-ttu-id="4fa9c-198">個々の新しい入庫トランザクションまたは払出トランザクションは、新しいラベルで示されます。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-198">Each new receipt or issue transaction is designated by a new label.</span></span>
--   <span data-ttu-id="4fa9c-199">各縦矢印には、*1a* のような連続した ID のラベルが付いています。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-199">Each vertical arrow is labeled with a sequential identifier, such as *1a*.</span></span> <span data-ttu-id="4fa9c-200">ID は、タイムラインでの在庫トランザクション転記の順序を示しています。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-200">The identifiers indicate the order of inventory transaction postings in the timeline.</span></span>
--   <span data-ttu-id="4fa9c-201">在庫原価計算は、赤い縦の点線と*在庫原価計算*のラベルで示されています。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-201">Inventory closings are represented by a red vertical dashed line and the label *Inventory Close*.</span></span>
--   <span data-ttu-id="4fa9c-202">在庫原価計算によって実行される決済は、入庫から払出へと斜めに向かう赤い点線矢印で表されます。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-202">Settlements that are performed by inventory close are represented by red diagonal dashed arrows that go from a receipt to an issue.</span></span>
+- <span data-ttu-id="4fa9c-192">在庫トランザクションは、縦の矢印で表されています。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-192">Inventory transactions are represented by vertical arrows.</span></span>
+- <span data-ttu-id="4fa9c-193">在庫への入庫は、タイムラインの上の縦の矢印で表されています。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-193">Receipts into inventory are represented by vertical arrows above the timeline.</span></span>
+- <span data-ttu-id="4fa9c-194">在庫からの払出は、タイムラインの下の縦の矢印で表されています。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-194">Issues out of inventory are represented by vertical arrows below the timeline.</span></span>
+- <span data-ttu-id="4fa9c-195">各縦矢印の上 (または下) には、在庫トランザクションの値が Quantity@Unit の形式で指定されています。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-195">Above (or below) each vertical arrow, the value of the inventory transaction is specified in the format Quantity@Unit price.</span></span>
+- <span data-ttu-id="4fa9c-196">かっこで囲まれた在庫トランザクションの値は、在庫トランザクションが在庫に現物転記されることを示します。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-196">An inventory transaction value that is enclosed in parentheses indicates that the inventory transaction is physically posted into inventory.</span></span>
+- <span data-ttu-id="4fa9c-197">かっこで囲まれていない在庫トランザクションの値は、在庫トランザクションが在庫に財務転記されることを示します。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-197">An inventory transaction value that isn't enclosed in parentheses indicates that the inventory transaction is financially posted into inventory.</span></span>
+- <span data-ttu-id="4fa9c-198">個々の新しい入庫トランザクションまたは払出トランザクションは、新しいラベルで示されます。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-198">Each new receipt or issue transaction is designated by a new label.</span></span>
+- <span data-ttu-id="4fa9c-199">各縦矢印には、*1a* のような連続した ID のラベルが付いています。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-199">Each vertical arrow is labeled with a sequential identifier, such as *1a*.</span></span> <span data-ttu-id="4fa9c-200">ID は、タイムラインでの在庫トランザクション転記の順序を示しています。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-200">The identifiers indicate the order of inventory transaction postings in the timeline.</span></span>
+- <span data-ttu-id="4fa9c-201">在庫原価計算は、赤い縦の点線と*在庫原価計算*のラベルで示されています。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-201">Inventory closings are represented by a red vertical dashed line and the label *Inventory Close*.</span></span>
+- <span data-ttu-id="4fa9c-202">在庫原価計算によって実行される決済は、入庫から払出へと斜めに向かう赤い点線矢印で表されます。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-202">Settlements that are performed by inventory close are represented by red diagonal dashed arrows that go from a receipt to an issue.</span></span>
 
 ## <a name="lifo-with-marking"></a><span data-ttu-id="4fa9c-203">マーキングを使用した LIFO</span><span class="sxs-lookup"><span data-stu-id="4fa9c-203">LIFO with marking</span></span>
 <span data-ttu-id="4fa9c-204">マーキングの処理を使用することで、払出トランザクションを入庫トランザクションにリンクまたはマークできます。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-204">Marking is process that lets you link, or mark, an issue transaction to a receipt transaction.</span></span> <span data-ttu-id="4fa9c-205">マーキングは、トランザクションが転記される前でも後でも可能です。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-205">Marking can occur either before or after a transaction is posted.</span></span> <span data-ttu-id="4fa9c-206">トランザクションを転記するとき、または在庫原価計算を実行するときに、在庫の原価を正確にする必要がある場合は、マーキングを使用できます。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-206">You can use marking when you want to be sure of the exact cost of inventory when the transaction is posted or the inventory close is performed.</span></span> <span data-ttu-id="4fa9c-207">たとえば、顧客サービス部門が重要な顧客から急ぎの注文を受けたとします。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-207">For example, the Customer Service department accepted a rush order from an important customer.</span></span> <span data-ttu-id="4fa9c-208">急ぎの注文なので、顧客の要求に対応するには、その品目に対する支払を高くする必要があります。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-208">Because this order is a rush order, you must pay more for this item in order to fulfill your customer’s request.</span></span> 
@@ -138,16 +137,16 @@ ms.lasthandoff: 11/03/2017
 
 <span data-ttu-id="4fa9c-246">**図の説明**</span><span class="sxs-lookup"><span data-stu-id="4fa9c-246">**Key to diagram**</span></span>
 
--   <span data-ttu-id="4fa9c-247">在庫トランザクションは、縦の矢印で表されています。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-247">Inventory transactions are represented by vertical arrows.</span></span>
--   <span data-ttu-id="4fa9c-248">在庫への入庫は、タイムラインの上の縦の矢印で表されています。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-248">Receipts into inventory are represented by vertical arrows above the timeline.</span></span>
--   <span data-ttu-id="4fa9c-249">在庫からの払出は、タイムラインの下の縦の矢印で表されています。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-249">Issues out of inventory are represented by vertical arrows below the timeline.</span></span>
--   <span data-ttu-id="4fa9c-250">各縦矢印の上 (または下) には、在庫トランザクションの値が Quantity@Unit の形式で指定されています。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-250">Above (or below) each vertical arrow, the value of the inventory transaction is specified in the format Quantity@Unit price.</span></span>
--   <span data-ttu-id="4fa9c-251">かっこで囲まれた在庫トランザクションの値は、在庫トランザクションが在庫に現物転記されることを示します。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-251">An inventory transaction value that is enclosed in parentheses indicates that the inventory transaction is physically posted into inventory.</span></span>
--   <span data-ttu-id="4fa9c-252">かっこで囲まれていない在庫トランザクションの値は、在庫トランザクションが在庫に財務転記されることを示します。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-252">An inventory transaction value that isn't enclosed in parentheses indicates that the inventory transaction is financially posted into inventory.</span></span>
--   <span data-ttu-id="4fa9c-253">個々の新しい入庫トランザクションまたは払出トランザクションは、新しいラベルで示されます。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-253">Each new receipt or issue transaction is designated by a new label.</span></span>
--   <span data-ttu-id="4fa9c-254">各縦矢印には、*1a* のような連続した ID のラベルが付いています。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-254">Each vertical arrow is labeled with a sequential identifier, such as *1a*.</span></span> <span data-ttu-id="4fa9c-255">ID は、タイムラインでの在庫トランザクション転記の順序を示しています。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-255">The identifiers indicate the order of inventory transaction postings in the timeline.</span></span>
--   <span data-ttu-id="4fa9c-256">在庫原価計算は、赤い縦の点線と*在庫原価計算*のラベルで示されています。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-256">Inventory closings are represented by a red vertical dashed line and the label *Inventory Close*.</span></span>
--   <span data-ttu-id="4fa9c-257">在庫原価計算によって実行される決済は、入庫から払出へと斜めに向かう赤い点線矢印で表されます。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-257">Settlements that are performed by inventory close are represented by red diagonal dashed arrows that go from a receipt to an issue.</span></span>
+- <span data-ttu-id="4fa9c-247">在庫トランザクションは、縦の矢印で表されています。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-247">Inventory transactions are represented by vertical arrows.</span></span>
+- <span data-ttu-id="4fa9c-248">在庫への入庫は、タイムラインの上の縦の矢印で表されています。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-248">Receipts into inventory are represented by vertical arrows above the timeline.</span></span>
+- <span data-ttu-id="4fa9c-249">在庫からの払出は、タイムラインの下の縦の矢印で表されています。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-249">Issues out of inventory are represented by vertical arrows below the timeline.</span></span>
+- <span data-ttu-id="4fa9c-250">各縦矢印の上 (または下) には、在庫トランザクションの値が Quantity@Unit の形式で指定されています。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-250">Above (or below) each vertical arrow, the value of the inventory transaction is specified in the format Quantity@Unit price.</span></span>
+- <span data-ttu-id="4fa9c-251">かっこで囲まれた在庫トランザクションの値は、在庫トランザクションが在庫に現物転記されることを示します。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-251">An inventory transaction value that is enclosed in parentheses indicates that the inventory transaction is physically posted into inventory.</span></span>
+- <span data-ttu-id="4fa9c-252">かっこで囲まれていない在庫トランザクションの値は、在庫トランザクションが在庫に財務転記されることを示します。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-252">An inventory transaction value that isn't enclosed in parentheses indicates that the inventory transaction is financially posted into inventory.</span></span>
+- <span data-ttu-id="4fa9c-253">個々の新しい入庫トランザクションまたは払出トランザクションは、新しいラベルで示されます。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-253">Each new receipt or issue transaction is designated by a new label.</span></span>
+- <span data-ttu-id="4fa9c-254">各縦矢印には、*1a* のような連続した ID のラベルが付いています。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-254">Each vertical arrow is labeled with a sequential identifier, such as *1a*.</span></span> <span data-ttu-id="4fa9c-255">ID は、タイムラインでの在庫トランザクション転記の順序を示しています。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-255">The identifiers indicate the order of inventory transaction postings in the timeline.</span></span>
+- <span data-ttu-id="4fa9c-256">在庫原価計算は、赤い縦の点線と*在庫原価計算*のラベルで示されています。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-256">Inventory closings are represented by a red vertical dashed line and the label *Inventory Close*.</span></span>
+- <span data-ttu-id="4fa9c-257">在庫原価計算によって実行される決済は、入庫から払出へと斜めに向かう赤い点線矢印で表されます。</span><span class="sxs-lookup"><span data-stu-id="4fa9c-257">Settlements that are performed by inventory close are represented by red diagonal dashed arrows that go from a receipt to an issue.</span></span>
 
 
 

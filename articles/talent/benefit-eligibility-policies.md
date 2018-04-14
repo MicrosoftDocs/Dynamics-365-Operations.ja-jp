@@ -19,17 +19,16 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
-ms.openlocfilehash: 5c0af3d9446b4f8ae80eeb44494f1ef1e6667e55
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 46dba3a61cf96b19b5bc4d2956d028bbbeaaa60e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 01/31/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="benefit-eligibility-policies"></a><span data-ttu-id="961c6-103">給付金の適格性ポリシー</span><span class="sxs-lookup"><span data-stu-id="961c6-103">Benefit eligibility policies</span></span>
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 <span data-ttu-id="961c6-104">このトピックは、だれに特定の給付金の受給資格があるのかを定義するのに役立つ給付金の適格性ポリシーに関する情報が提供されます。</span><span class="sxs-lookup"><span data-stu-id="961c6-104">This topic provides information about benefit eligibility policies, which help you define who is eligible for specific benefits.</span></span>
 

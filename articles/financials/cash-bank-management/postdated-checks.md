@@ -19,17 +19,16 @@ ms.author: leguo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 8fd721dc3166dcd981b749c673d3c625b4e5ae36
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: ad4212584b0f9062edbd5c13f4c75eaa03c853f7
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="postdated-checks"></a><span data-ttu-id="7e03b-105">先日付小切手</span><span class="sxs-lookup"><span data-stu-id="7e03b-105">Postdated checks</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="7e03b-106">この記事では、Microsoft Dynamics 365 for Finance and Operations の先日付小切手のサポートについて説明します。</span><span class="sxs-lookup"><span data-stu-id="7e03b-106">This article provides information about support for postdated checks in Microsoft Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="7e03b-107">先日付小切手とは、将来の日付で支払を履行または受け取るために発行される小切手です。</span><span class="sxs-lookup"><span data-stu-id="7e03b-107">Postdated checks are checks that are issued to make and receive payments on a future date.</span></span> <span data-ttu-id="7e03b-108">したがって、小切手は、特定の日付まで清算できません。</span><span class="sxs-lookup"><span data-stu-id="7e03b-108">Therefore, the check can't be cashed until the specified date.</span></span>
 
@@ -76,14 +75,14 @@ ms.lasthandoff: 03/26/2018
 <td><span data-ttu-id="7e03b-132">これらの状況では、先日付小切手のキャンセルを取り消すことができます: - 小切手は銀行から返されます。</span><span class="sxs-lookup"><span data-stu-id="7e03b-132">You can cancel a posted postdated check in these situations: - The check is returned by the bank.</span></span>
 <span data-ttu-id="7e03b-133">- 小切手が誤った請求書に適用された場合。</span><span class="sxs-lookup"><span data-stu-id="7e03b-133">- The check is applied to an incorrect invoice.</span></span>
 <span data-ttu-id="7e03b-134">- 小切手に対して現金が支払われた場合。</span><span class="sxs-lookup"><span data-stu-id="7e03b-134">- A cash payment is made against the check.</span></span>
-</td>
-</tr>
-<tr class="even">
-<td><span data-ttu-id="7e03b-135">先日付小切手の支払を停止する</span><span class="sxs-lookup"><span data-stu-id="7e03b-135">Stop payment for a postdated check</span></span></td>
-<td><span data-ttu-id="7e03b-136">仕入先に発行した先日付小切手に対する支払は、資金不足、仕入先との契約条件の変更、仕入先による欠陥品目の供給、または仕入先への品目の返品などの理由で停止することができます。</span><span class="sxs-lookup"><span data-stu-id="7e03b-136">You can stop payment on a postdated check that was issued to a vendor, for reasons such as not sufficient funds, changes in the terms of the agreement with the vendor, supply of defective goods by the vendor, or return of goods to the vendor.</span></span> <span data-ttu-id="7e03b-137">支払の停止は、クリアされていない小切手に対してのみ行えます。</span><span class="sxs-lookup"><span data-stu-id="7e03b-137">You can stop payment only on checks that haven’t cleared.</span></span></td>
-</tr>
-</tbody>
-</table>
+  </td>
+  </tr>
+  <tr class="even">
+  <td><span data-ttu-id="7e03b-135">先日付小切手の支払を停止する</span><span class="sxs-lookup"><span data-stu-id="7e03b-135">Stop payment for a postdated check</span></span></td>
+  <td><span data-ttu-id="7e03b-136">仕入先に発行した先日付小切手に対する支払は、資金不足、仕入先との契約条件の変更、仕入先による欠陥品目の供給、または仕入先への品目の返品などの理由で停止することができます。</span><span class="sxs-lookup"><span data-stu-id="7e03b-136">You can stop payment on a postdated check that was issued to a vendor, for reasons such as not sufficient funds, changes in the terms of the agreement with the vendor, supply of defective goods by the vendor, or return of goods to the vendor.</span></span> <span data-ttu-id="7e03b-137">支払の停止は、クリアされていない小切手に対してのみ行えます。</span><span class="sxs-lookup"><span data-stu-id="7e03b-137">You can stop payment only on checks that haven’t cleared.</span></span></td>
+  </tr>
+  </tbody>
+  </table>
 
 
 

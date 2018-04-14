@@ -18,16 +18,16 @@ ms.author: knelson
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 6f6add07a2426b1846cbeb9dee149a63f66f779e
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 93e45257dec65dee0d20f4a6b14a7cc682fa0ab5
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="expense-management-mobile-workspace"></a><span data-ttu-id="ca374-105">経費管理モバイル ワークスペース</span><span class="sxs-lookup"><span data-stu-id="ca374-105">Expense management mobile workspace</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="ca374-106">このトピックでは、**経費管理** モバイル ワークスペースに関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="ca374-106">This topic provides information about the **Expense management** mobile workspace.</span></span> <span data-ttu-id="ca374-107">このワークスペースにより、ユーザーは領収書を取得し、アップロードできるため、経費精算書に後から添付することができます。</span><span class="sxs-lookup"><span data-stu-id="ca374-107">This workspace lets users capture and upload a receipt, so that they can attach it to an expense report later.</span></span> <span data-ttu-id="ca374-108">ユーザーも関連付けられているレシートを使用して経費明細行を迅速に作成し、経費精算書を作成および管理できます。</span><span class="sxs-lookup"><span data-stu-id="ca374-108">Users can also quickly create an expense line by using an attached receipt, and create and manage their expense reports.</span></span> <span data-ttu-id="ca374-109">承認者をさらに、**経費管理**モバイル ワークスペースを使用し、割り当てられている経費精算書を表示し、経費承清算書の承認または否認のいずれかを行えます。</span><span class="sxs-lookup"><span data-stu-id="ca374-109">Additionally, approvers can use the **Expense management** mobile workspace to view expense reports that are assigned to them, and either approve or reject those expense reports.</span></span>
 

@@ -19,17 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 47336a19899b1fad0e63265173fd7fd02fc74ec3
-ms.openlocfilehash: 0f87e82655ac9fa83ee116d0698b38804cfbf55c
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 8634b8f2c41b530fcd06f253358145fdc9389d2d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="general-ledger-account-balances"></a><span data-ttu-id="6b5ec-104">総勘定元帳残高</span><span class="sxs-lookup"><span data-stu-id="6b5ec-104">General ledger account balances</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="6b5ec-105">この記事は、試算表のリスト ページと財務レポートという、総勘定元帳勘定の残高を表示する 2 つの方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="6b5ec-105">This article explains two ways to view general ledger account balances -  the Trial balance list page and financial reports.</span></span> <span data-ttu-id="6b5ec-106">また、分析コード セットの残高を更新する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="6b5ec-106">It also discusses how to update dimension set balances.</span></span>
 

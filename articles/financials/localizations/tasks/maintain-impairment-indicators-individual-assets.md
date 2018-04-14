@@ -16,15 +16,15 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 637779191db297695e632f6bdd0e52457ee3d45b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: d287324253f3b26213645e6c0c12f7e7cb9abfb5
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="maintain-impairment-indicators-on-individual-assets-japan"></a><span data-ttu-id="dced2-103">個別資産の減損インジケーターの管理 (日本)</span><span class="sxs-lookup"><span data-stu-id="dced2-103">Maintain impairment indicators on individual assets (Japan)</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="dced2-104">このタスクを使用して、個別資産の減損インジケーターの管理方法を把握します。</span><span class="sxs-lookup"><span data-stu-id="dced2-104">Use this task to learn how to maintain impairment indicators on individual assets.</span></span>
 

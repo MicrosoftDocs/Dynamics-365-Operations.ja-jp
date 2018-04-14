@@ -17,15 +17,15 @@ ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: 63252347f88f474a0527d9e6d283e2458fabc1aa
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 9832a60ee703878701927b66b0b4b63cb7efb985
 ms.contentlocale: ja-jp
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="count-inventory-in-a-warehouse"></a><span data-ttu-id="47c8c-103">倉庫の在庫棚卸</span><span class="sxs-lookup"><span data-stu-id="47c8c-103">Count inventory in a warehouse</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="47c8c-104">この手順では、倉庫内のある場所にある特定の品目を棚卸しするために、在庫棚卸仕訳帳を作成して転記するプロセスを説明します。</span><span class="sxs-lookup"><span data-stu-id="47c8c-104">This procedure walks you through the process of creating and posting an inventory counting journal in order to count a specific item at a location in the warehouse.</span></span> <span data-ttu-id="47c8c-105">この手順は、倉庫管理モジュールで使用できる倉庫機能ではなく、在庫管理モジュールで使用できる "基本倉庫" 機能に該当します。</span><span class="sxs-lookup"><span data-stu-id="47c8c-105">The procedure applies to “basic warehousing” functionality, available in the Inventory management module, not to the warehousing functionality that’s available in the Warehouse management module.</span></span> <span data-ttu-id="47c8c-106">デモ データ会社 USMF または独自のデータを使用してこの手順の説明を見ることができます。</span><span class="sxs-lookup"><span data-stu-id="47c8c-106">You can walk through this procedure in demo data company USMF, or using your own data.</span></span> <span data-ttu-id="47c8c-107">独自のデータを使用する場合は、製品および場所を設定してあること、および棚卸仕訳帳用の在庫仕訳帳名を作成したことを確認してください。</span><span class="sxs-lookup"><span data-stu-id="47c8c-107">If you’re using your own data, make sure that you have products and locations set up, and that you’ve created an inventory journal name for counting journals.</span></span> <span data-ttu-id="47c8c-108">通常、在庫棚卸は倉庫の従業員が実行します。</span><span class="sxs-lookup"><span data-stu-id="47c8c-108">Inventory counting is normally carried out by a warehouse employee.</span></span>
 

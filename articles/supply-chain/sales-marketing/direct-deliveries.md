@@ -19,17 +19,16 @@ ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1f2cdae674dc88a4d533258e24b1ecf7ec4cf55b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 5ea5b8bbc5c9f932179b48c1d6539c578f992254
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="direct-deliveries"></a><span data-ttu-id="4e17c-104">直納</span><span class="sxs-lookup"><span data-stu-id="4e17c-104">Direct deliveries</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="4e17c-105">この記事では、直納について説明します。</span><span class="sxs-lookup"><span data-stu-id="4e17c-105">This article provides information about direct deliveries.</span></span> <span data-ttu-id="4e17c-106">仕入先から顧客に直接配送する出荷のことを、直納といいます。</span><span class="sxs-lookup"><span data-stu-id="4e17c-106">Direct deliveries are deliveries that are sent directly from the vendor to your customer.</span></span>
 

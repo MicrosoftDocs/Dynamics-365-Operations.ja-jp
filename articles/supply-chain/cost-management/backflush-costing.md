@@ -20,17 +20,16 @@ ms.author: conradv
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: 0cd7a41145acbb0c740722e00f93976f314da900
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 004ec0d47db4afca20d30a787a82ff4afe153294
 ms.contentlocale: ja-jp
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="backflush-costing"></a><span data-ttu-id="41e52-103">一括引き落とし原価計算</span><span class="sxs-lookup"><span data-stu-id="41e52-103">Backflush costing</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="41e52-104">このトピックでは、リーン生産に使用される一括引き落とし原価計算の概念について説明します。</span><span class="sxs-lookup"><span data-stu-id="41e52-104">This topic introduces the concept of backflush costing that is used for Lean manufacturing.</span></span> 
 

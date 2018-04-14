@@ -17,16 +17,16 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 25fa39dc81fc721d7593a25a102ce47041ebc5f0
-ms.openlocfilehash: 6397ca01ef100b6149c70a335ce854bc0439aff2
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: bc2431a8008ce6518974e240d12dc07f097bdbb0
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/13/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="view-an-expense-report"></a><span data-ttu-id="47356-103">経費精算書の表示</span><span class="sxs-lookup"><span data-stu-id="47356-103">View an expense report</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="47356-104">総勘定元帳または調達でトランザクションを表示するクエリを実行すると、クエリが大量の情報を返す可能性があります。</span><span class="sxs-lookup"><span data-stu-id="47356-104">When you run a query to view transactions in General ledger or Procurement and sourcing, the query might return too much information.</span></span> <span data-ttu-id="47356-105">したがって、検索を絞り込むこともできます。</span><span class="sxs-lookup"><span data-stu-id="47356-105">Therefore, you might want to narrow your search.</span></span> <span data-ttu-id="47356-106">必要な情報を取得するには、表示されている経費精算書を確認するトランザクションにドリルダウンできます。</span><span class="sxs-lookup"><span data-stu-id="47356-106">To get the information that you require, you can drill down into a transaction to see the expense report that it appeared on.</span></span>
 

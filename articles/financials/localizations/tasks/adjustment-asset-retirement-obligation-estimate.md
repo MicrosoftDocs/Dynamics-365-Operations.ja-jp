@@ -16,15 +16,15 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 23944f55a4bb4b318fa10edbaa956998380fd5c6
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 9ea693948600e50bc2729ee4104b2e76a9df5067
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="adjust-an-asset-retirement-obligation-estimate-japan"></a><span data-ttu-id="eb194-103">資産除去債務見積の調整 (日本)</span><span class="sxs-lookup"><span data-stu-id="eb194-103">Adjust an asset retirement obligation estimate (Japan)</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="eb194-104">日本では、資産除去責務 (ARO) の最初の見積を調整できます。</span><span class="sxs-lookup"><span data-stu-id="eb194-104">For Japan, the initial estimate of the asset retirement obligations (ARO) can be adjusted.</span></span> 
 

@@ -20,17 +20,16 @@ ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1176ce1fcd406cf363969e60ae388a83d7df210f
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: b2e9449e4ba1c534bcdb5a05e5da0311b2bb2e3c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="standard-cost-conversion-overview"></a><span data-ttu-id="a767a-104">標準原価換算の概要</span><span class="sxs-lookup"><span data-stu-id="a767a-104">Standard cost conversion overview</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="a767a-105">この記事は、標準原価換算を設定および実行するのに役立つプロセスの概要を提供します。</span><span class="sxs-lookup"><span data-stu-id="a767a-105">This article provides a process overview to help you set up and run a standard cost conversion.</span></span> <span data-ttu-id="a767a-106">説明されているステップは、標準原価換算の前提条件の完了後に実行することを意図しています。</span><span class="sxs-lookup"><span data-stu-id="a767a-106">The steps listed are intended to be completed after you've completed the prerequisites for a standard cost conversion.</span></span> 
 

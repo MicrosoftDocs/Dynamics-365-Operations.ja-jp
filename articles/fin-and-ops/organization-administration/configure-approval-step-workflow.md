@@ -18,17 +18,16 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d2fc157b54401463bbabf1e3f6d5dddc6bda9631
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: c142534e9e5b5f154f478889d13540dc3d47ad18
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="configure-an-approval-step-in-a-workflow"></a><span data-ttu-id="d8705-103">ワークフローでの承認ステップのコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="d8705-103">Configure an approval step in a workflow</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="d8705-104">このトピックでは、承認ステップのプロパティをコンフィギュレーションする方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="d8705-104">This topic explains how to configure the properties of an approval step.</span></span>
 
@@ -145,9 +144,9 @@ ms.lasthandoff: 11/03/2017
     <span data-ttu-id="d8705-192">割り当てられている時間内にユーザーがドキュメントを処理しなかった場合、そのドキュメントは期限超過になります。</span><span class="sxs-lookup"><span data-stu-id="d8705-192">If the user doesn't take action on the document in the allotted time, the document is overdue.</span></span> <span data-ttu-id="d8705-193">期限超過のドキュメントは、このページの [エスカレーション] 領域で選択したオプションに基づいて、エスカレートされます。</span><span class="sxs-lookup"><span data-stu-id="d8705-193">A document that is overdue is escalated, based on the options that you select in the **Escalation** area of the page.</span></span>
 4.  <span data-ttu-id="d8705-194">承認ステップを複数のユーザーまたはユーザー グループに割り当てる場合は、[完了ポリシー] タブで、次のいずれかのオプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="d8705-194">If you assigned the approval step to multiple users or a group of users, on the **Completion policy** tab, select one of the following options:</span></span>
     -   <span data-ttu-id="d8705-195">[1 人の承認者] – ドキュメントに適用されるアクションは、最初に対応した人物によって決定されます。</span><span class="sxs-lookup"><span data-stu-id="d8705-195">**Single approver** – The action that is applied to the document is determined by the first person who responds.</span></span> <span data-ttu-id="d8705-196">たとえば、康介は USD 15,000 の経費精算書を送信済です。</span><span class="sxs-lookup"><span data-stu-id="d8705-196">For example, Sam has submitted an expense report for USD 15,000.</span></span> <span data-ttu-id="d8705-197">その経費精算書は、現在は政美、健一郎、および隆志に割り当てられています。</span><span class="sxs-lookup"><span data-stu-id="d8705-197">The expense report is currently assigned to Sue, Jo, and Bill.</span></span> <span data-ttu-id="d8705-198">このドキュメントに最初に対応するのが政美の場合は、彼女が行うアクションがドキュメントに適用されます。</span><span class="sxs-lookup"><span data-stu-id="d8705-198">If Sue is the first person who responds to the document, the action that she takes is applied to the document.</span></span> <span data-ttu-id="d8705-199">たとえば、政美が経費報告書を却下した場合、ドキュメントは却下され、康介に送り返されます。</span><span class="sxs-lookup"><span data-stu-id="d8705-199">If Sue rejects the document, it's rejected and sent back to Sam.</span></span> <span data-ttu-id="d8705-200">政美が経費精算書を承認した場合、ドキュメントは承認を受けるために綾に送信されます。</span><span class="sxs-lookup"><span data-stu-id="d8705-200">If Sue approves the document, it's sent to Ann for approval.</span></span> 
-    
+
     ![承認プロセスのあるワークフロー](./media/workflow_multipleusersinstep.gif)
-    
+
     -   <span data-ttu-id="d8705-202">[過半数の承認者] – ドキュメントに適用されるアクションは、過半数の承認者が対応したときに決定されます。</span><span class="sxs-lookup"><span data-stu-id="d8705-202">**Majority of approvers** – The action that is applied to the document is determined when most of the approvers respond.</span></span> <span data-ttu-id="d8705-203">たとえば、康介は USD 15,000 の経費精算書を送信済です。</span><span class="sxs-lookup"><span data-stu-id="d8705-203">For example, Sam has submitted an expense report for USD 15,000.</span></span> <span data-ttu-id="d8705-204">その経費精算書は、現在は政美、健一郎、および隆志に割り当てられています。</span><span class="sxs-lookup"><span data-stu-id="d8705-204">The expense report is currently assigned to Sue, Jo, and Bill.</span></span> <span data-ttu-id="d8705-205">最初に対応する 2 人の承認者が政美と健一郎であれば、その 2 人の取るアクションがドキュメントに適用されます。</span><span class="sxs-lookup"><span data-stu-id="d8705-205">If Sue and Jo are the first two approvers who respond, the action that they take is applied to the document.</span></span>
         -   <span data-ttu-id="d8705-206">政美がドキュメントを承認しても、健一郎がドキュメントを却下した場合、ドキュメントは却下され、康介に送り返されます。</span><span class="sxs-lookup"><span data-stu-id="d8705-206">If Sue approves the document, but Jo rejects it, the document is rejected and sent back to Sam.</span></span>
         -   <span data-ttu-id="d8705-207">政美と健一郎の両方がドキュメントを承認した場合、ドキュメントは承認を受けるために綾に送信されます。</span><span class="sxs-lookup"><span data-stu-id="d8705-207">If both Sue and Jo approve the document, it's sent to Ann for approval.</span></span>

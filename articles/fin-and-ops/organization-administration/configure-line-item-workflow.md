@@ -18,17 +18,16 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d30d6aeda6be7bc81763c0b3f20c568d3fc81526
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 658829ccb79d0b2b4f627a45647ba6076e4384b0
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="configure-a-line-item-workflow"></a><span data-ttu-id="aab70-103">行項目ワークフローのコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="aab70-103">Configure a line-item workflow</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="aab70-104">このトピックでは、行項目ワークフローの要素をコンフィギュレーションする方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="aab70-104">This topic explains how to configure a line-item workflow element.</span></span>
 

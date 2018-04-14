@@ -20,19 +20,18 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 9cb4bded4b8d841c6d164e6b8ded2cb3fb4d0978
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 9ba0c5d44d58faac47b6a44265431a48c49874df
 ms.contentlocale: ja-jp
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="product-dimensions"></a><span data-ttu-id="9e718-105">製品分析コード</span><span class="sxs-lookup"><span data-stu-id="9e718-105">Product dimensions</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[Retail name](../includes/retail-name.md)]
-
+[!INCLUDE [Retail name](../includes/retail-name.md)]
 
 <span data-ttu-id="9e718-106">4 つの製品分析コードがあります - 色、構成、サイズ、およびスタイルです。</span><span class="sxs-lookup"><span data-stu-id="9e718-106">There are four product dimensions -  Color, Configuration, Size and Style.</span></span> <span data-ttu-id="9e718-107">分析コード グループで製品分析コードを組み合わせて、製品マスターに分析コード グループを割り当てます。</span><span class="sxs-lookup"><span data-stu-id="9e718-107">You combine product dimensions in dimension groups and assign dimension groups to product masters.</span></span> <span data-ttu-id="9e718-108">製品分析コードの組み合わせは、製品バリアントの定義方法を決定します。</span><span class="sxs-lookup"><span data-stu-id="9e718-108">The combinations of product dimensions determine how product variants are defined.</span></span>
 
@@ -51,6 +50,7 @@ ms.lasthandoff: 02/07/2018
 -   <span data-ttu-id="9e718-129">[製品情報管理] &gt; [リリースされた製品] の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="9e718-129">Click **Product information management** &gt; **Released products**.</span></span> <span data-ttu-id="9e718-130">製品マスターを選択します。</span><span class="sxs-lookup"><span data-stu-id="9e718-130">Select a product master.</span></span> <span data-ttu-id="9e718-131">[アクション ペイン] で、[製品] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9e718-131">On the **Action Pane**, click **Product**.</span></span> <span data-ttu-id="9e718-132">**製品マスター** グループで、**製品分析コード**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9e718-132">In the **Product master** group, click **Product dimensions**.</span></span>
 
 <span data-ttu-id="9e718-133">1 つの品目に対して作成できるバリアントの数は、可能な製品分析コードの組み合わせの数により制限されます。</span><span class="sxs-lookup"><span data-stu-id="9e718-133">The number of variants that you can create for an item is limited by the number of possible product dimension combinations.</span></span>
+
 | <span data-ttu-id="9e718-134">**ヒント**</span><span class="sxs-lookup"><span data-stu-id="9e718-134">**Tip**</span></span>                                                                                                                                              |
 |------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span data-ttu-id="9e718-135">たとえば、ある注文明細行上で製品を使用する場合、製品分析コードを選択して、使用する製品バリアントを特定します。</span><span class="sxs-lookup"><span data-stu-id="9e718-135">When you use a product on, for example, an order line, you select the product dimensions to identify the product variant that you want to work with.</span></span> |

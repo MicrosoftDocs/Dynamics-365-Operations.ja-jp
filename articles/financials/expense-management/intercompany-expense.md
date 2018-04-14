@@ -19,16 +19,16 @@ ms.search.validFrom:
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: 9a5e06d01449492818decff23c45ba5c808a102d
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 861230dd08de570c451c8495bad91f9a4aef3691
 ms.contentlocale: ja-jp
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="intercompany-expenses"></a><span data-ttu-id="14a66-104">会社間経費</span><span class="sxs-lookup"><span data-stu-id="14a66-104">Intercompany expenses</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="14a66-105">組織内の 1 つの法人で雇用されている作業者は、同じ組織の別の法人の作業を実行する場合があります。</span><span class="sxs-lookup"><span data-stu-id="14a66-105">A worker who is employed by one legal entity in an organization might perform work for another legal entity in the same organization.</span></span> <span data-ttu-id="14a66-106">この場合、会社間経費機能を使用して、作業が実行された法人に作業者の経費を割り当てることができます。</span><span class="sxs-lookup"><span data-stu-id="14a66-106">In this situation, you can use the intercompany expense feature to assign the worker’s expenses to the legal entity for which the work was performed.</span></span> <span data-ttu-id="14a66-107">作業者を雇用する法人は、貸出側の法人と呼ばれます。</span><span class="sxs-lookup"><span data-stu-id="14a66-107">The legal entity that employs the worker is called the loaning legal entity.</span></span> <span data-ttu-id="14a66-108">従業員が経費を支払う法人は、借入側法人と呼ばれます。</span><span class="sxs-lookup"><span data-stu-id="14a66-108">The legal entity for which the worker incurs expenses is called the borrowing legal entity.</span></span> 
 

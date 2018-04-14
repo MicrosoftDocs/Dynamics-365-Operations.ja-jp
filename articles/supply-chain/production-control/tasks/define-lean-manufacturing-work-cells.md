@@ -17,15 +17,15 @@ ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f060f084baab055a51e390f488ca2553bd997b92
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 953520ec7525d85baee6baf0b70930e52120d6c0
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="define-lean-manufacturing-work-cells"></a><span data-ttu-id="9dede-103">リーン生産作業セルの定義</span><span class="sxs-lookup"><span data-stu-id="9dede-103">Define lean manufacturing work cells</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="9dede-104">作業セルは、リーン生産のプロセス活動で使用できるリソース グループの特定のフォームです。</span><span class="sxs-lookup"><span data-stu-id="9dede-104">A work cell is a specific form of resource groups that can be used in lean manufacturing process activities.</span></span> <span data-ttu-id="9dede-105">作業セルには、入荷および出荷場所と生産フロー モデルに基づいた能力定義があります。</span><span class="sxs-lookup"><span data-stu-id="9dede-105">Work cells have input and output locations and a capacity definition based on a production flow model.</span></span> <span data-ttu-id="9dede-106">リーン生産の作業セルと能力計算の基本概念に関する詳細については、リーン生産についてのホワイト ペーパーを参照してください。</span><span class="sxs-lookup"><span data-stu-id="9dede-106">To learn more about the basic concepts of lean manufacturing work cells and capacity calculations, see the white papers on Lean manufacturing.</span></span> <span data-ttu-id="9dede-107">この手順の作成に使用するデモ データの会社は USMF</span><span class="sxs-lookup"><span data-stu-id="9dede-107">The demo data company used to create this procedure is USMF</span></span>
 

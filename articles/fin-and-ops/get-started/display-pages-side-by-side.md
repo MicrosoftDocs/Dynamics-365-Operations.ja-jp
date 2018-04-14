@@ -18,17 +18,16 @@ ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4a575665a2b893745a2f2044cd97177917ee1a33
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: f19ca5e9642b5a8222ee7bf23fdd228ab75d2ed1
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="display-pages-side-by-side-using-the-open-in-new-window-icon"></a><span data-ttu-id="fbdd8-103">[新しいウィンドウで開く] アイコンを使用してページを並べて表示する</span><span class="sxs-lookup"><span data-stu-id="fbdd8-103">Display pages side-by-side using the Open in New Window icon</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="fbdd8-104">この記事は、Microsoft Dynamics 365 for Finance and Operations でページを並べて表示する方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="fbdd8-104">This article explains how to display pages side-by-side in Microsoft Dynamics 365 for Finance and Operations.</span></span>
 
@@ -46,7 +45,7 @@ ms.lasthandoff: 11/03/2017
 
 <span data-ttu-id="fbdd8-118">一部のページには、グリッド ビュー、ヘッダー ビュー、詳細ビューなどの複数のビューがあります。</span><span class="sxs-lookup"><span data-stu-id="fbdd8-118">Some pages have multiple views such as the Grid view, Header view, and Details view.</span></span> <span data-ttu-id="fbdd8-119">[新しいウィンドウで開く] アイコンにより、ページ全体を新しいブラウザー ウィンドウで開くことができます。</span><span class="sxs-lookup"><span data-stu-id="fbdd8-119">The **Open in new window** icon causes the entire page to be opened in the new browser window.</span></span> <span data-ttu-id="fbdd8-120">したがって、[新しいウィンドウで開く] 機能では、同じページの 2 つのビューを並べて表示することはできません。</span><span class="sxs-lookup"><span data-stu-id="fbdd8-120">Therefore, you cannot keep two views of the same page side-by-side using the **Open in new window** feature.</span></span> <span data-ttu-id="fbdd8-121">ただし、このようなページのほとんどすべてには、レコードの切り替えや同様の操作を達成するために使用できるナビゲーション リストがあります。</span><span class="sxs-lookup"><span data-stu-id="fbdd8-121">However, almost all such pages have a navigation list that you can use to switch between records and achieve a similar experience.</span></span> 
 
-<span data-ttu-id="fbdd8-122">[新しいウィンドウで開く] 機能を使用する前に、ブラウザーのポップアップ ブロッカーをコンフィギュレーションして、Dynamics 365 for Finance and Operations サイトの URL からのポップアップを許可する必要があります。</span><span class="sxs-lookup"><span data-stu-id="fbdd8-122">Before using the **Open in new window** feature, you should configure your browser's pop-up blocker to allow pop-ups from the URL of the Finance and Operations site.</span></span> <span data-ttu-id="fbdd8-123">たとえば、「\\*.dynamics.com」からのポップアップを許可することができます。</span><span class="sxs-lookup"><span data-stu-id="fbdd8-123">As an example, you could allow pop-ups from "\\*.dynamics.com".</span></span> 
+<span data-ttu-id="fbdd8-122">[新しいウィンドウで開く] 機能を使用する前に、ブラウザーのポップアップ ブロッカーをコンフィギュレーションして、Dynamics 365 for Finance and Operations サイトの URL からのポップアップを許可する必要があります。</span><span class="sxs-lookup"><span data-stu-id="fbdd8-122">Before using the **Open in new window** feature, you should configure your browser's pop-up blocker to allow pop-ups from the URL of the Finance and Operations site.</span></span> <span data-ttu-id="fbdd8-123">たとえば、「\*.dynamics.com」からのポップアップを許可することができます。</span><span class="sxs-lookup"><span data-stu-id="fbdd8-123">As an example, you could allow pop-ups from "\*.dynamics.com".</span></span> 
 
 <span data-ttu-id="fbdd8-124">[新しいウィンドウで開く] 機能は、ウィンドウで 1 つ以上のページが開いている場合にのみ使用できます。</span><span class="sxs-lookup"><span data-stu-id="fbdd8-124">The **Open in new window** feature is only available when there is more than one page open in the window.</span></span> <span data-ttu-id="fbdd8-125">また、ポップアップ ウィンドウは、開いているページがなくなると (つまり、そのウィンドウで最後のページが閉じると) 自動的に閉じます。</span><span class="sxs-lookup"><span data-stu-id="fbdd8-125">Also, the pop-up window automatically closes when there are no more pages open (that is, when the last page in that window is closed).</span></span> <span data-ttu-id="fbdd8-126">アプリケーションの別の領域に移動すると、Finance and Operations も開いているページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="fbdd8-126">Finance and Operations also closes open pages when you navigate to a different area in the application.</span></span> <span data-ttu-id="fbdd8-127">したがって、ポップアップ ウィンドウが開いているときに、アプリケーションで別の領域に移動すると、システムがそれらのウィンドウ内のページを閉じるので、ポップアップ ウィンドウは自動的に閉じます。</span><span class="sxs-lookup"><span data-stu-id="fbdd8-127">Therefore, if you have pop-up windows open and navigate to a different area in the application, the pop-up windows are automatically closed because the pages in those windows were closed by the system.</span></span> 
 

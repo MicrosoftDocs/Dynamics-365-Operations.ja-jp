@@ -19,17 +19,16 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: eb38de1e7e39cb66d15bfe344f6f5fcd5d4fccd7
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 9da85990d5906047421e69cd641456b5c5cae8fe
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="depreciation-methods-and-conventions"></a><span data-ttu-id="75f21-103">減価償却方法</span><span class="sxs-lookup"><span data-stu-id="75f21-103">Depreciation methods and conventions</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="75f21-104">この記事は、Microsoft Dynamics 365 for Finance and Operations にサポートされた減価償却方法および減価償却方式の概要を提供します。</span><span class="sxs-lookup"><span data-stu-id="75f21-104">This article provides an overview of the depreciation conventions and depreciation methods that are supported by Microsoft Dynamics 365 for Finance and Operations.</span></span>
 
@@ -62,7 +61,7 @@ ms.lasthandoff: 03/26/2018
 -   <span data-ttu-id="75f21-130">150% 逓減残高</span><span class="sxs-lookup"><span data-stu-id="75f21-130">150% reducing balance</span></span>
 -   <span data-ttu-id="75f21-131">125% 逓減残高</span><span class="sxs-lookup"><span data-stu-id="75f21-131">125% reducing balance</span></span>
 
- 
+
 
 
 

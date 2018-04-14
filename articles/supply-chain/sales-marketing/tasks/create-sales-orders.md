@@ -16,15 +16,15 @@ ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 4ccd2c4ace41f07dce14498031e3cc29ecb61b1c
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 1afd58e209e050bc766e6bc76a5f12dafc9bdf95
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-sales-orders"></a><span data-ttu-id="60fee-103">販売注文を作成する。</span><span class="sxs-lookup"><span data-stu-id="60fee-103">Create sales orders</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="60fee-104">この手順では、販売注文を作成する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="60fee-104">This procedure shows you how to create a sales order.</span></span> <span data-ttu-id="60fee-105">デモ データの会社 USMF でこの手順を使用できます。</span><span class="sxs-lookup"><span data-stu-id="60fee-105">You can use the procedure in demo data company USMF.</span></span> <span data-ttu-id="60fee-106">販売注文は通常、販売注文プロセッサによって作成されます。</span><span class="sxs-lookup"><span data-stu-id="60fee-106">Sales orders are typically created by a sales order processor.</span></span> 
 

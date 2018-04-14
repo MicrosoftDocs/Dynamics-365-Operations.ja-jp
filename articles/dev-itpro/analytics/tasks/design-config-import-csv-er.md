@@ -16,15 +16,15 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: f6bfa9f7c0638b0eaacf1a49bcd7d84ffab3acbf
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 0859eb7bf461f61396c34f4bcd89537260a536a0
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="design-a-configuration-to-import-data-from-an-external-file-in-csv-format-er"></a><span data-ttu-id="40837-103">CSV 形式 (ER) の外部ファイルからデータをインポートするためのコンフィギュレーションを設計する</span><span class="sxs-lookup"><span data-stu-id="40837-103">Design a configuration to import data from an external file in CSV format (ER)</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="40837-104">この手順を使用して、外部ファイルから CSV 形式から Dynamics 365 for Finance and Operations アプリにデータをインポートする電子申告 (ER) 構成を設計します。</span><span class="sxs-lookup"><span data-stu-id="40837-104">Use this procedure to design Electronic reporting (ER) configurations to import data in to the Dynamics 365 for Finance and Operations application from an external file in CSV format.</span></span> <span data-ttu-id="40837-105">この手順では、サンプル会社 Litware, Inc. 用に、必要な ER コンフィギュレーションを作成します。これらのステップを完了するには、まず手順「ER コンフィギュレーション プロバイダーの作成および有効なプロバイダーとしてのマーク付け」にあるステップを完了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="40837-105">In this procedure, you will create the required ER configurations for the sample company, Litware, Inc. To complete these steps, you must first complete the steps in the procedure, “ER Create a configuration provider and mark it as active.”</span></span> 
 

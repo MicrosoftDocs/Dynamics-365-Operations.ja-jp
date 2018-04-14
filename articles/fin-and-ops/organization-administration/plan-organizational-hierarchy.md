@@ -19,17 +19,16 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a290f6f453d8440d6e68a13915339d3da31d959a
-ms.openlocfilehash: 47c97ee32c345f584c8efa7a00b7ff3ec4b70475
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: e04926abca47444d06708f34278eb02bb1640cd6
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="plan-your-organizational-hierarchy"></a><span data-ttu-id="7b474-103">組織階層の計画</span><span class="sxs-lookup"><span data-stu-id="7b474-103">Plan your organizational hierarchy</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="7b474-104">Microsoft Dynamics 365 for Finance and Operations で組織と組織階層を設定する前に、組織をシミュレーションする方法を確認してください。</span><span class="sxs-lookup"><span data-stu-id="7b474-104">Before you set up organizations and organization hierarchies in Microsoft Dynamics 365 for Finance and Operations, make sure that you plan how your business will be modeled.</span></span> <span data-ttu-id="7b474-105">組織モデルは、Finance and Operations の実装と業務プロセスに重要な影響を与えます。</span><span class="sxs-lookup"><span data-stu-id="7b474-105">The organization model has a significant effect on the implementation of Finance and Operations and on business processes.</span></span> 
 
@@ -158,7 +157,7 @@ ms.lasthandoff: 04/03/2018
 
 #### <a name="if-the-organization-is-modeled-as-an-operating-unit"></a><span data-ttu-id="7b474-254">組織を作業単位としてシミュレーションする場合</span><span class="sxs-lookup"><span data-stu-id="7b474-254">If the organization is modeled as an operating unit</span></span> 
 <span data-ttu-id="7b474-255">法令や会計の慣行が組織が配置されている国/地域間で同一の場合、単一の一連の期末の手順を使用できます。</span><span class="sxs-lookup"><span data-stu-id="7b474-255">If laws and accounting practices are the same among the countries/regions where your organizations are located, you may use a single set of year-end procedures.</span></span> <span data-ttu-id="7b474-256">このことは、組織を作業単位としてシミュレーションできることを意味します。</span><span class="sxs-lookup"><span data-stu-id="7b474-256">This means that you can model the organizations as operating units.</span></span> <span data-ttu-id="7b474-257">すべての作業単位が同一の年度末締処理の手順を使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="7b474-257">All operating units must use the same year-end closing procedure.</span></span> 
-   
+
 ### <a name="number-sequences"></a><span data-ttu-id="7b474-258">番号順序</span><span class="sxs-lookup"><span data-stu-id="7b474-258">Number sequences</span></span>
 #### <a name="if-the-organization-is-modeled-as-a-legal-entity"></a><span data-ttu-id="7b474-259">組織を法人としてシミュレーションする場合</span><span class="sxs-lookup"><span data-stu-id="7b474-259">If the organization is modeled as a legal entity</span></span>
 <span data-ttu-id="7b474-260">一部の参照の番号順序は法人ごとに設定できます。</span><span class="sxs-lookup"><span data-stu-id="7b474-260">Number sequences for some references can be set up per legal entity.</span></span> <span data-ttu-id="7b474-261">一部の番号順序は共有できます。</span><span class="sxs-lookup"><span data-stu-id="7b474-261">Some number sequences can be shared.</span></span> 
