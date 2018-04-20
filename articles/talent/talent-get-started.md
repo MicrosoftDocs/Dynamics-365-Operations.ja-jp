@@ -18,10 +18,10 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a8c2d097626fad905741c35ffa8c13336f8735b9
+ms.sourcegitcommit: 3662bb1a20fbdd3769b94247ac071a7cfd7e04f1
+ms.openlocfilehash: 94c07d18de06a75ad86d69d7c06a78e446f0b506
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 04/20/2018
 
 ---
 # <a name="getting-started-with-microsoft-dynamics-365-for-talent"></a><span data-ttu-id="abb69-103">Microsoft Dynamics 365 for Talent の使用を開始する</span><span class="sxs-lookup"><span data-stu-id="abb69-103">Getting started with Microsoft Dynamics 365 for Talent</span></span>
@@ -33,7 +33,7 @@ ms.lasthandoff: 04/13/2018
 > [!NOTE] 
 > <span data-ttu-id="abb69-107">次の製品間には密接な関係があります: Dynamics 365 for Finance and Operations、Dynamics 365 for Retail、および Dynamics 365 for Talent。</span><span class="sxs-lookup"><span data-stu-id="abb69-107">The following products are closely related: Dynamics 365 for Finance and Operations; Dynamics 365 for Retail; and Dynamics 365 for Talent.</span></span> <span data-ttu-id="abb69-108">すべての 3 つの製品上に同じ機能が表示されることがあります。</span><span class="sxs-lookup"><span data-stu-id="abb69-108">The same functionality may appear in all 3 products.</span></span> <span data-ttu-id="abb69-109">結果として、主に [Retail] に関連するトピックでの製品名は Dynamics 365 for Retail、主に [Talent] に関連するトピックでの製品名は Dynamics 365 for Talent、コア製品に関連するトピックでの製品名は、Dynamics 365 for Finance and Operations となります。</span><span class="sxs-lookup"><span data-stu-id="abb69-109">As a result, in topics that are primarily related to Retail, the product name will be Dynamics 365 for Retail; in topics that are primarily related to Talent, the product name will be Dynamics 365 for Talent; and in topics that are related to the core product, the product name will be Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="abb69-110">1 つの製品で記述されているトピックは、関連する製品の同じ機能にも当てはまる可能性があります。</span><span class="sxs-lookup"><span data-stu-id="abb69-110">Topics that are written for one product may apply to the same functionality in a related product.</span></span>
 
-### <a name="personalizing-talent"></a><span data-ttu-id="abb69-111">Talent をカスタマイズ</span><span class="sxs-lookup"><span data-stu-id="abb69-111">Personalizing Talent</span></span> 
+## <a name="personalizing-talent"></a><span data-ttu-id="abb69-111">Talent をカスタマイズ</span><span class="sxs-lookup"><span data-stu-id="abb69-111">Personalizing Talent</span></span> 
 <span data-ttu-id="abb69-112">次のトピックでは、Dynamics 365 for Talent で適切なタイミングで作業しやすくする多くの機能を設定する方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="abb69-112">The following topics show how to set up many features in Dynamics 365 for Talent that make it easier for you to get your work done in a timely manner.</span></span> 
 
 -   <span data-ttu-id="abb69-113">[ユーザー エクスペリエンスのカスタマイズ](../fin-and-ops/get-started/personalize-user-experience.md) - このトピックでは、Talent をカスタマイズしたり、一部の製品をより基本設定に合致するように変更するさまざまな方法について説明しています。</span><span class="sxs-lookup"><span data-stu-id="abb69-113">[Personalize the user experience](../fin-and-ops/get-started/personalize-user-experience.md) - This topic explains the different ways in which you can personalize Talent and adapt parts of the product to more closely suite your preferences.</span></span>
@@ -44,7 +44,7 @@ ms.lasthandoff: 04/13/2018
 
 -   <span data-ttu-id="abb69-117">[キーボード ショートカット](../fin-and-ops/get-started/shortcut-keys.md) - このトピックでは、米国のキーボード レイアウトのキーボード ショートカットを一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="abb69-117">[Keyboard shortcuts](../fin-and-ops/get-started/shortcut-keys.md) - This topic lists keyboard shortcuts for the United States keyboard layout.</span></span> 
 
-### <a name="accessing-information"></a><span data-ttu-id="abb69-118">情報へのアクセス</span><span class="sxs-lookup"><span data-stu-id="abb69-118">Accessing information</span></span>
+## <a name="accessing-information"></a><span data-ttu-id="abb69-118">情報へのアクセス</span><span class="sxs-lookup"><span data-stu-id="abb69-118">Accessing information</span></span>
 <span data-ttu-id="abb69-119">次のトピックでは、ルックアップの使用方法、そして検索およびフィルタ処理機能を使用してすばやく情報を見つける方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="abb69-119">The following topics explain how to use lookups, and the search and filtering features, to find information quickly.</span></span> 
 
 -   <span data-ttu-id="abb69-120">[情報の検索におけるルックアップの使用](../fin-and-ops/get-started/use-lookups-to-find-information.md) - このトピックでは、ルックアップで適切な修正または目的の値を容易に見つける方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="abb69-120">[Use lookups to find information](../fin-and-ops/get-started/use-lookups-to-find-information.md) - This topic shows how lookups can help you quickly find the correct or desired value.</span></span> <span data-ttu-id="abb69-121">このトピックでは、どのようにルックアップが機能するか説明し、その使用を最適化するための役立つヒントを含んでいます。</span><span class="sxs-lookup"><span data-stu-id="abb69-121">The topic describes how lookups work and includes tips to help you optimize your use of them.</span></span>
