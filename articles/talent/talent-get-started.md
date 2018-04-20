@@ -33,7 +33,7 @@ Microsoft Dynamics 365 for Talent では、簡単にユーザー インターフ
 > [!NOTE] 
 > 次の製品間には密接な関係があります: Dynamics 365 for Finance and Operations、Dynamics 365 for Retail、および Dynamics 365 for Talent。 すべての 3 つの製品上に同じ機能が表示されることがあります。 結果として、主に [Retail] に関連するトピックでの製品名は Dynamics 365 for Retail、主に [Talent] に関連するトピックでの製品名は Dynamics 365 for Talent、コア製品に関連するトピックでの製品名は、Dynamics 365 for Finance and Operations となります。 1 つの製品で記述されているトピックは、関連する製品の同じ機能にも当てはまる可能性があります。
 
-### <a name="personalizing-talent"></a>Talent をカスタマイズ 
+## <a name="personalizing-talent"></a>Talent をカスタマイズ 
 次のトピックでは、Dynamics 365 for Talent で適切なタイミングで作業しやすくする多くの機能を設定する方法を説明します。 
 
 -   [ユーザー エクスペリエンスのカスタマイズ](../fin-and-ops/get-started/personalize-user-experience.md) - このトピックでは、Talent をカスタマイズしたり、一部の製品をより基本設定に合致するように変更するさまざまな方法について説明しています。
@@ -44,7 +44,7 @@ Microsoft Dynamics 365 for Talent では、簡単にユーザー インターフ
 
 -   [キーボード ショートカット](../fin-and-ops/get-started/shortcut-keys.md) - このトピックでは、米国のキーボード レイアウトのキーボード ショートカットを一覧表示します。 
 
-### <a name="accessing-information"></a>情報へのアクセス
+## <a name="accessing-information"></a>情報へのアクセス
 次のトピックでは、ルックアップの使用方法、そして検索およびフィルタ処理機能を使用してすばやく情報を見つける方法について説明します。 
 
 -   [情報の検索におけるルックアップの使用](../fin-and-ops/get-started/use-lookups-to-find-information.md) - このトピックでは、ルックアップで適切な修正または目的の値を容易に見つける方法を説明します。 このトピックでは、どのようにルックアップが機能するか説明し、その使用を最適化するための役立つヒントを含んでいます。
