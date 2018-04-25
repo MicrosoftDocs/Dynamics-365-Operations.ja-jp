@@ -3,7 +3,7 @@ title: "ローカライズと規制の機能"
 description: "このトピックでは、国/地域固有の機能について詳しく説明しているリソースの一覧を示します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 10/30/2017
+ms.date: 04/12/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,17 +18,16 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 1f76359878d162e93d8f8b7c11be529c43c94455
-ms.openlocfilehash: c1c180432e014c69b43612693790a1cac6e54c34
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 389efbe1853264c1503737b55dd7767fdcb966ca
 ms.contentlocale: ja-jp
-ms.lasthandoff: 02/08/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="localization-and-regulatory-features"></a>ローカライズと規制の機能
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Microsoft Dynamics 365 for Finance and Operations には、[製品可用性ガイド](http://download.microsoft.com/documents/en-us/dynamics/Microsoft%20Dynamics%20AX%20Product%20Availability%20Guide.pdf) に記載されている国/地域向けの機能が用意されています。 この機能は、現在有効な法人の基本住所に基づいて有効になります。 
 
@@ -53,8 +52,8 @@ Microsoft Dynamics 365 for Finance and Operations には、[製品可用性ガ�
 -   [規制の監視と規制の更新の通知](regulatory-watch-communication.md)
 -   [国/地域の規制警告の Microsoft への通知および規制機能のステータスの追跡](submit-localization-alerts.md)
 
-### <a name="dynamics-365-roadmap"></a>Dynamics 365 ロードマップ
-[Dynamics 365 ロードマップ](https://roadmap.dynamics.com/)作業中のスナップショットを提供します。 このロードマップを使用して、一般的に利用可能なものと開発中のものを見つけます。 開発中のすべての日付と機能は暫定的なものであり、現時点の予測に基づいているため、予告なしに変更されることがあります。
+### <a name="dynamics-365-release-notes"></a>Dynamics 365 リリース ノート
+[Dynamics 365 リリース ノート (PDF ダウンロード)](https://aka.ms/businessappsreleasenotes) では、Dynamics 365 のビジネス アプリケーションとアプリケーション プラットフォームの新機能と拡張機能について説明します。 
 
 ## <a name="electronic-reporting"></a>電子申告
 電子申告 (ER) ツールを使用すると、さまざまな国/地域の法的要件に従って電子ドキュメントの形式を構成できます。 ER では、これらの形式をライフ サイクル中に管理できます。 詳細については、次のいずれかのトピックを参照してください。
@@ -79,25 +78,9 @@ Microsoft Dynamics 365 for Finance and Operations には、[製品可用性ガ�
 ## <a name="countryregion-specific-help-topics"></a>国/地域固有のヘルプ トピック
 以下のセクションに、リソースの一覧を国/地域別に示します。
 
-### <a name="australia"></a>オーストラリア
-
--   [銀行ファイル形式](../../financials/localizations/apac-aus-method-of-payment-pay-vendors-banks.md)
--   [事業活動報告書](../../financials/localizations/apac-aus-business-activity-statement.md)
--   [低価額プール減価償却](../../financials/localizations/apac-aus-low-value-pool-depreciation.md)
-
-### <a name="austria"></a>オーストリア
-
-- [半年減価償却](../../financials/localizations/emea-aut-half-year-depreciation.md)
-- [梱包材費用](../../financials/localizations/emea-aut-packing-material-fee-calculation.md)
-- [仕入関税](../../financials/localizations/emea-aut-purchase-duties.md)
-- [VAT 明細書](../../financials/localizations/emea-aut-vat-statement-details.md)
-
-### <a name="belgium"></a>ベルギー
-
--   [CODA 口座取引明細書](../../financials/localizations/emea-bel-coda-bank-statement-import.md)
--   [INTERVAT 税申告](../../financials/localizations/emea-bel-intervat-tax-declaration.md)
--   [PRODCOM レポートの設定](../../financials/localizations/emea-bel-prodcom-report.md)
--   [調整レポート](../../financials/localizations/emea-bel-reconciliation-reports.md)
+### <a name="australiafinancialslocalizationsaustraliamd"></a>[オーストラリア](../../financials/localizations/australia.md)
+### <a name="austriafinancialslocalizationsaustriamd"></a>[オーストリア](../../financials/localizations/austria.md)
+### <a name="belgiumfinancialslocalizationsbelgiummd"></a>[ベルギー](../../financials/localizations/belgium.md)
 
 ### <a name="brazil"></a>ブラジル
 
@@ -134,22 +117,9 @@ Microsoft Dynamics 365 for Finance and Operations には、[製品可用性ガ�
 -   [サイト別在庫主勘定の転記](../../financials/localizations/apac-chn-post-inventory-main-accounts-by-site.md)
 -   [勘定科目の借方金額と貸方金額の表示](../../financials/localizations/apac-chn-negative-debits-credits.md)
 
-### <a name="the-czech-republic"></a>チェコ共和国
-
--   [訂正票上の現金割引](../../financials/localizations/emea-cze-credit-note-cash-discount.md)
--   [減価償却の丸め](../../financials/localizations/emea-cze-depreciation-rounding.md)
--   [チェコ共和国の固定資産処分に対する半年減価償却](../../financials/localizations/emea-cze-half-depreciation-fixed-asset-disposal.md)
--   [減価償却停止 (休日)](../../financials/localizations/emea-cze-depreciation-suspension-holidays.md)
--   [チェコ共和国の固定資産の減価償却方法](../../financials/localizations/emea-cze-fixed-assets-depreciation.md)
--   [固定資産の取得前価額の転記](../../financials/localizations/emea-pre-acquisition-acquisition-fixed-asset.md)
--   [チェコ共和国の VAT 明細書](../../financials/localizations/emea-cze-vat-statement-details.md)
--   [売上税レポート](../../financials/localizations/emea-cze-intra-community-vat-transactions.md)
--   [定期処理仕訳帳の分割期間](../../financials/localizations/emea-create-post-periodic-journals.md)
--   [印刷フォームの署名者の設定](../../financials/localizations/emea-set-up-signers-for-printing-forms.md)
--   [レポートおよびドキュメントの金額表示方法の更新](../../financials/localizations/emea-amount-printing-forms.md)
+### <a name="the-czech-republicfinancialslocalizationsczech-republicmd"></a>[チェコ共和国](../../financials/localizations/czech-republic.md)
 
 ### <a name="estonia"></a>エストニア
-
 -   [エストニアの VAT 明細書の詳細](../../financials/localizations/emea-est-vat-statement-details.md)
 -   [固定資産の処分](../../financials/localizations/emea-credit-note-reverse-fixed-asset-sale.md)
 
@@ -280,7 +250,7 @@ Microsoft Dynamics 365 for Finance and Operations には、[製品可用性ガ�
 -   [インフレ申告レポートの調整](../../financials/localizations/latam-mex-adjustment-inflation-declaration-report.md)
 -   [ISR 申告レポート](../../financials/localizations/latam-mex-isr-declaration-report-supporting-processes.md)
 -   [電子請求書 (CFDI)](../../financials/localizations/latam-mex-CFDI-electronic-invoices.md)
-   
+
 ### <a name="malaysia"></a>マレーシア
 
 -   [商品およびサービス税 (GST)](../../financials/localizations/apac-mys-gst.md)

@@ -3,7 +3,7 @@
 # [はじめに](talent-get-started.md)
 ## [システム要件と更新ポリシー](talent-versions-update-policy.md)
 ## [Microsoft Dynamics 365 for Talent のプロビジョニング](provisioning-talent.md)
-## [Talent 環境の削除](remove-test-environment.md)
+## [Talent 環境の削除](remove-talent-environment.md)
 ## [Microsoft Dynamics 365 for Talent のモジュラー アプリのプロビジョニング](modular-app-tech-faq.md)
 ## [Talent 機能の拡張](extend-talent-functionality.md)
 
@@ -13,6 +13,7 @@
 ## [法人間の HR パラメーターの設定](set-up-hr-parameters-across-legal-entities.md)
 ## [会社固有の HR パラメーターの設定](set-up-company-specific-hr-parameters.md)
 ## [個人のアクションのよく寄せられる質問](personnel-actions-faq.md)
+## [業務プロセスの形式化](formalize-business-processes.md)
 ## [ワークフローを使用した従業員情報の管理](workflow-manage-employee-information.md)
 ## [休暇の概要](leave-absence-overview.md)
 
