@@ -31,7 +31,7 @@
 ## [コール センターのカタログ](call-center-catalogs.md)
 ## [コール センター カタログの作成](create-call-center-catalogs.md)
 ## [詐欺警告の設定](set-up-fraud-alerts.md)
-## [注文処理オプションの設定](set-up-order-processing-options.md)
+## [コール センターの設定](set-up-order-processing-options.md)
 ## [コール センターの連続プログラムの設定](set-up-continuity-program.md)
 ## [注文保留](work-with-order-holds.md)
 ## [支払オプション](work-with-payments.md)
@@ -49,6 +49,7 @@
 ## [オンラインおよびオフラインでの POS 操作](pos-operations.md)
 ## [MPOS/CPOS のデモ データ画面レイアウト](demo-data.md)
 ## [販売時点管理での製品および顧客検索の概要](POS-search-improvements.md)
+## [販売時点管理の在庫検索](product-variants-POS.md)
 ## ハードウェア周辺機器
 ### [小売周辺機器の概要](retail-peripherals-overview.md)
 ### [Microsoft によってテストされた POS ハードウェア周辺機器](microsoft-tested-pos-hardware-peripherals.md)
@@ -96,6 +97,7 @@
 ## [最新/頻度/金額 (RFM) 分析の設定](set-up-rfm-analysis.md)
 
 # 割引と価格調整
+## [小売販売価格の管理](price-management.md)
 ## [価格調整と割引](price-adjustments-discounts.md)
 ## [重複する割引の最適な組み合わせの決定](optimal-combination-overlapping-discounts.md)
 ## [チャネル固有の割引の定義](define-channel-specific-discounts.md)
@@ -139,14 +141,18 @@
 ## [職務のコンポーネントの設定](../talent/create-job.md)
 
 # ローカライズと規制の機能
+## フランス
+### [フランスのキャッシュ レジスター](localizations/emea-fra-cash-registers.md)
+### [フランスのキャッシュ レジスターの配置ガイドライン](localizations/emea-fra-deployment.md)
 ## インド
-### [インドのキャッシュ レジスターの販売税統合](localizations/apac-ind-cash-registers.md)
+### [キャッシュ レジスターの販売税統合](localizations/apac-ind-cash-registers.md)
 ### [インドのキャッシュ レジスターの配置ガイドライン](localizations/apac-ind-loc-deployment-guidelines.md)
 ## ノルウェー
 ### [ノルウェーのキャッシュ レジスター](localizations/emea-nor-cash-registers.md)
 ### [ノルウェーのキャッシュ レジスターの配置ガイドライン](localizations/emea-nor-loc-deployment-guidelines.md)
 ## スウェーデン
 ### [スウェーデンのキャッシュ レジスター](localizations/emea-swe-cash-registers.md)
+### [管理単位との Retail POS の統合サンプル](dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md)
 
 # Retail タスク
 ## [製品の作成](../supply-chain/pim/tasks/create-product.md)
@@ -260,6 +266,7 @@
 ### [E コマース プラットフォーム SDK](dev-itpro/ecommerce-platform-sdk.md)
 
 ## 支払コネクタの拡張機能
+### [支払ターミナルとの支払の統合](dev-itpro/end-to-end-payment-extension.md)
 ### [支払コネクタと支払デバイスの実装 (ホワイト ペーパー)](http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx)
 ### [支払コネクタの配置](dev-itpro/deploy-payment-connector.md)
 ### [支払コネクタ用の Windows インストーラーの作成](dev-itpro/create-windows-installer-payment-connector.md)
@@ -269,6 +276,7 @@
 ### [Retail SDK の拡張機能サンプル](dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md)
 ### [Retail SDK パッケージ](dev-itpro/retail-sdk/retail-sdk-packaging.md)
 ### [Retail SDK サンプル](dev-itpro/retail-sdk/retail-sdk-samples.md)
+#### [梱包明細の拡張ポイント](dev-itpro/extensions-shipping-carrier-integration.md)
 ### [チャネル データベース (DB) 拡張機能](dev-itpro/channel-db-extensions.md)
 ### [CDX の拡張性](dev-itpro/cdx-extensibility.md)
 ### [注文属性](dev-itpro/order-attributes.md)
