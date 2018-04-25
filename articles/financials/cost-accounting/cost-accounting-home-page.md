@@ -3,12 +3,12 @@ title: "原価会計ホーム ページ"
 description: "このトピックでは、原価会計に使用できるヘルプ トピックとその他のリソースの一覧を示します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 08/20/2017
+ms.date: 04/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
-ms.search.form: CAMCostControlWorkspace, CAMCostControlWorkspaceConfiguration
+ms.search.form: CAMCostControlWorkspace, CAMCostControlWorkspaceConfiguration, CAMCostAccountingLedgerAdminWorkspace
 audience: Application User
 ms.reviewer: yuyus
 ms.search.scope: Core, Operations
