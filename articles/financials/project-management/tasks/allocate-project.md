@@ -17,29 +17,31 @@ ms.author: knelson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9ee81bbdd22fed4ef6ea97080fe1f6b3d82bcaf5
-ms.openlocfilehash: 3d486e5b7a7ef8f711b8f44af81292a7a8f0bcd4
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a253a37bc83482c5bc971cad585e18ccb230b16f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 04/13/2018
 
 ---
-# <a name="allocate-a-project-budget-or-budget-revision-across-periods"></a><span data-ttu-id="64498-103">プロジェクト予算または予算のリビジョンを複数の期間に割り当て</span><span class="sxs-lookup"><span data-stu-id="64498-103">Allocate a project budget or budget revision across periods</span></span>
+# <a name="allocate-a-project-budget-or-budget-revision-across-periods"></a><span data-ttu-id="745fa-103">プロジェクト予算または予算のリビジョンを複数の期間に割り当て</span><span class="sxs-lookup"><span data-stu-id="745fa-103">Allocate a project budget or budget revision across periods</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]<span data-ttu-id="64498-104"> プロジェクト予算またはプロジェクト予算の修正を入力した後、承認のために送信する前に、期間全体で金額を割り当てることができます。</span><span class="sxs-lookup"><span data-stu-id="64498-104"> After you enter a project budget or project budget revision, and before you submit it for approval, you can allocate the amounts across periods.</span></span> <span data-ttu-id="64498-105">予算または予算のリビジョンが否認された場合、再送信する前にも金額を割り当てることができます。</span><span class="sxs-lookup"><span data-stu-id="64498-105">If the budget or budget revision is rejected, you can also allocate the amounts before you resubmit it.</span></span> 
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="64498-106">予算または予算のリビジョンを割り当てた後、承認ワークフローに予算または予算のリビジョンを送信する前に、配賦金額を確認して、それらに調整を行うことができます。</span><span class="sxs-lookup"><span data-stu-id="64498-106">After a budget or budget revision has been allocated, you can review the allocation amounts and make adjustments to them before you submit the budget or budget revision to the approval workflow.</span></span> 
+<span data-ttu-id="745fa-104"> プロジェクト予算またはプロジェクト予算の修正を入力した後、承認のために送信する前に、期間全体で金額を割り当てることができます。</span><span class="sxs-lookup"><span data-stu-id="745fa-104">After you enter a project budget or project budget revision, and before you submit it for approval, you can allocate the amounts across periods.</span></span> <span data-ttu-id="745fa-105">予算または予算のリビジョンが否認された場合、再送信する前にも金額を割り当てることができます。</span><span class="sxs-lookup"><span data-stu-id="745fa-105">If the budget or budget revision is rejected, you can also allocate the amounts before you resubmit it.</span></span> 
 
-1. <span data-ttu-id="64498-107">[プロジェクト管理および会計] > [共通] > [プロジェクト] > [すべてのプロジェクト] の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="64498-107">Click Project management and accounting > Common > Projects > All projects.</span></span> 
-2. <span data-ttu-id="64498-108">選択した予算または予算のリビジョンを割り当てるプロジェクトを選択またはオープンします。</span><span class="sxs-lookup"><span data-stu-id="64498-108">Select or open the project for which you want to allocate the budget or budget revision.</span></span> 
-3. <span data-ttu-id="64498-109">アクションペインの [計画] タブにある予算グループで、プロジェクト予算をクリックします。</span><span class="sxs-lookup"><span data-stu-id="64498-109">On the Action Pane, on the Plan tab, in the Budget group, click Project budget.</span></span> 
-4. <span data-ttu-id="64498-110">[プロジェクト予算] フォームのアクションペインの [計画] タブで、[予算の配賦] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="64498-110">In the Project budget form, on the Action Pane, on the Budget tab, click Allocate budget.</span></span> 
-5. <span data-ttu-id="64498-111">[予算の配賦] フォームの [配賦元] と [配賦先] フィールドで、予算配賦に含める開始日と終了日を入力します。</span><span class="sxs-lookup"><span data-stu-id="64498-111">In the Allocate budget form, in the Allocate from and Allocate to fields, enter the first and last dates that you want to include in the budget allocation.</span></span> <span data-ttu-id="64498-112">これらは通常、プログラム全体の最初の日と最後の日または当年度の開始日と終了日します。</span><span class="sxs-lookup"><span data-stu-id="64498-112">These are usually either the first and last dates of the whole project, or the first and last dates of the current year.</span></span>  
-> <span data-ttu-id="64498-113">[注記] トランザクション タイプが割り当てられ、金額が承認された後、配賦時間期間は、将来の予算のリビジョンで変更することはできません。</span><span class="sxs-lookup"><span data-stu-id="64498-113">[NOTE!] After a transaction type has been allocated and the amounts approved, the allocation time period cannot be changed in future budget revisions.</span></span> 
-6. <span data-ttu-id="64498-114">[期間] フィールドで、年度、四半期、年度内の会社の会計年度期間により、プロジェクト予算を割り当てるかどうかを選択します。</span><span class="sxs-lookup"><span data-stu-id="64498-114">In the By time period field, select whether you want to allocate the project budget by year, quarter, or company fiscal periods within the year.</span></span>
-7. <span data-ttu-id="64498-115">配賦するトランザクション タイプを選択してから、[配賦] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="64498-115">Select the transaction types to allocate, and then click Allocate.</span></span> 
-8. <span data-ttu-id="64498-116">プロジェクト予算の配賦フォームまたはプロジェクト予算のリビジョンの配賦フォームで、配賦される金額の確認または更新をします。</span><span class="sxs-lookup"><span data-stu-id="64498-116">In the Project budget allocation form or the Project budget revision allocation form, review or update the amounts that are allocated.</span></span> 
-9. <span data-ttu-id="64498-117">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="64498-117">Close the page.</span></span>
-10. <span data-ttu-id="64498-118">配賦が必要な場合、承認ワークフローに予算または予算のリビジョンを送信するには [プロジェクト予算] ページの [提出] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="64498-118">When the allocation is the way that you want it, click Submit in the Project budget page to send the budget or budget revisions to the approval workflow.</span></span>  
+<span data-ttu-id="745fa-106">予算または予算のリビジョンを割り当てた後、承認ワークフローに予算または予算のリビジョンを送信する前に、配賦金額を確認して、それらに調整を行うことができます。</span><span class="sxs-lookup"><span data-stu-id="745fa-106">After a budget or budget revision has been allocated, you can review the allocation amounts and make adjustments to them before you submit the budget or budget revision to the approval workflow.</span></span> 
+
+1. <span data-ttu-id="745fa-107">[プロジェクト管理および会計] > [共通] > [プロジェクト] > [すべてのプロジェクト] の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="745fa-107">Click Project management and accounting > Common > Projects > All projects.</span></span> 
+2. <span data-ttu-id="745fa-108">選択した予算または予算のリビジョンを割り当てるプロジェクトを選択またはオープンします。</span><span class="sxs-lookup"><span data-stu-id="745fa-108">Select or open the project for which you want to allocate the budget or budget revision.</span></span> 
+3. <span data-ttu-id="745fa-109">アクションペインの [計画] タブにある予算グループで、プロジェクト予算をクリックします。</span><span class="sxs-lookup"><span data-stu-id="745fa-109">On the Action Pane, on the Plan tab, in the Budget group, click Project budget.</span></span> 
+4. <span data-ttu-id="745fa-110">[プロジェクト予算] フォームのアクションペインの [計画] タブで、[予算の配賦] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="745fa-110">In the Project budget form, on the Action Pane, on the Budget tab, click Allocate budget.</span></span> 
+5. <span data-ttu-id="745fa-111">[予算の配賦] フォームの [配賦元] と [配賦先] フィールドで、予算配賦に含める開始日と終了日を入力します。</span><span class="sxs-lookup"><span data-stu-id="745fa-111">In the Allocate budget form, in the Allocate from and Allocate to fields, enter the first and last dates that you want to include in the budget allocation.</span></span> <span data-ttu-id="745fa-112">これらは通常、プログラム全体の最初の日と最後の日または当年度の開始日と終了日します。</span><span class="sxs-lookup"><span data-stu-id="745fa-112">These are usually either the first and last dates of the whole project, or the first and last dates of the current year.</span></span>  
+   > <span data-ttu-id="745fa-113">[注記] トランザクション タイプが割り当てられ、金額が承認された後、配賦時間期間は、将来の予算のリビジョンで変更することはできません。</span><span class="sxs-lookup"><span data-stu-id="745fa-113">[NOTE!] After a transaction type has been allocated and the amounts approved, the allocation time period cannot be changed in future budget revisions.</span></span> 
+6. <span data-ttu-id="745fa-114">[期間] フィールドで、年度、四半期、年度内の会社の会計年度期間により、プロジェクト予算を割り当てるかどうかを選択します。</span><span class="sxs-lookup"><span data-stu-id="745fa-114">In the By time period field, select whether you want to allocate the project budget by year, quarter, or company fiscal periods within the year.</span></span>
+7. <span data-ttu-id="745fa-115">配賦するトランザクション タイプを選択してから、[配賦] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="745fa-115">Select the transaction types to allocate, and then click Allocate.</span></span> 
+8. <span data-ttu-id="745fa-116">プロジェクト予算の配賦フォームまたはプロジェクト予算のリビジョンの配賦フォームで、配賦される金額の確認または更新をします。</span><span class="sxs-lookup"><span data-stu-id="745fa-116">In the Project budget allocation form or the Project budget revision allocation form, review or update the amounts that are allocated.</span></span> 
+9. <span data-ttu-id="745fa-117">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="745fa-117">Close the page.</span></span>
+10. <span data-ttu-id="745fa-118">配賦が必要な場合、承認ワークフローに予算または予算のリビジョンを送信するには [プロジェクト予算] ページの [提出] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="745fa-118">When the allocation is the way that you want it, click Submit in the Project budget page to send the budget or budget revisions to the approval workflow.</span></span>  
 
 
 

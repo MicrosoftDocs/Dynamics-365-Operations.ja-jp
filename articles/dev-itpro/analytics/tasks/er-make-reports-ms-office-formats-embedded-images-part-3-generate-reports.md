@@ -1,5 +1,5 @@
 --- 
-title: "電子申告 (ER) 用に埋め込み画像付きで Microsoft Office 形式のレポートを生成する"
+title: "画像が埋め込まれた Microsoft Office 形式のレポートを生成する"
 description: "次のステップでは、「システム管理者」または「電子申告開発者」ロールのユーザーが、電子申告 (ER) のコンフィギュレーションを設計し、埋め込み画像を含む MS Office 形式 (Excel および Word) で電子ドキュメントを生成する方法を説明します。"
 author: NickSelin
 manager: AnnBe
@@ -16,108 +16,108 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 4fa27996e59164126f7900edf4a509ca9273e7c1
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: e2ab89857f4bf4844123508837c8faa504bc8839
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
-# <a name="generate-reports-in-microsoft-office-formats-with-embedded-images-for-electronic-reporting-er"></a><span data-ttu-id="aaadf-103">電子申告 (ER) 用に埋め込み画像付きで Microsoft Office 形式のレポートを生成する</span><span class="sxs-lookup"><span data-stu-id="aaadf-103">Generate reports in Microsoft Office formats with embedded images for electronic reporting (ER)</span></span>
+# <a name="generate-reports-in-microsoft-office-formats-with-embedded-images"></a><span data-ttu-id="27ade-103">画像が埋め込まれた Microsoft Office 形式のレポートを生成する</span><span class="sxs-lookup"><span data-stu-id="27ade-103">Generate reports in Microsoft Office formats with embedded images</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="aaadf-104">次のステップでは、「システム管理者」または「電子申告開発者」ロールのユーザーが、電子申告 (ER) のコンフィギュレーションを設計し、埋め込み画像を含む MS Office 形式 (Excel および Word) で電子ドキュメントを生成する方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="aaadf-104">The following steps explain how a user playing either ‘System administrator’ or ‘Electronic reporting developer’ role can design Electronic reporting (ER) configurations to generate electronic documents in MS office formats (Excel and Word) containing embedded images.</span></span>
+<span data-ttu-id="27ade-104">次のステップでは、「システム管理者」または「電子申告開発者」ロールのユーザーが、電子申告 (ER) のコンフィギュレーションを設計し、埋め込み画像を含む MS Office 形式 (Excel および Word) で電子ドキュメントを生成する方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="27ade-104">The following steps explain how a user playing either ‘System administrator’ or ‘Electronic reporting developer’ role can design Electronic reporting (ER) configurations to generate electronic documents in MS office formats (Excel and Word) containing embedded images.</span></span>
 
-<span data-ttu-id="aaadf-105">この例では、サンプル会社「Litware, Inc.」用に作成した ER コンフィギュレーションを使用します。</span><span class="sxs-lookup"><span data-stu-id="aaadf-105">In this example, you will use created ER configurations for sample company, ‘Litware, Inc.’.</span></span>  <span data-ttu-id="aaadf-106">これらのステップを完了するには、まず、「ER 埋め込み画像付きで MS Office 形式のレポートを作成する (パート 2: コンフィギュレーションの確認)」タスク ガイドにあるステップを完了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="aaadf-106">To complete these steps, you must first complete the steps in the “ER Make reports in MS Office formats with embedded images (Part 2: Review configurations)” task guide.</span></span> <span data-ttu-id="aaadf-107">これらのステップは「USMF」会社で実行できます。</span><span class="sxs-lookup"><span data-stu-id="aaadf-107">These steps can be performed in ‘USMF’ company.</span></span>
+<span data-ttu-id="27ade-105">この例では、サンプル会社「Litware, Inc.」用に作成した ER コンフィギュレーションを使用します。</span><span class="sxs-lookup"><span data-stu-id="27ade-105">In this example, you will use created ER configurations for sample company, ‘Litware, Inc.’.</span></span>  <span data-ttu-id="27ade-106">これらのステップを完了するには、まず、「ER 埋め込み画像付きで MS Office 形式のレポートを作成する (パート 2: コンフィギュレーションの確認)」タスク ガイドにあるステップを完了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="27ade-106">To complete these steps, you must first complete the steps in the “ER Make reports in MS Office formats with embedded images (Part 2: Review configurations)” task guide.</span></span> <span data-ttu-id="27ade-107">これらのステップは「USMF」会社で実行できます。</span><span class="sxs-lookup"><span data-stu-id="27ade-107">These steps can be performed in ‘USMF’ company.</span></span>
 
 
-## <a name="run-format-with-initial-model-mapping"></a><span data-ttu-id="aaadf-108">初期モデル マッピングを使用して形式を実行する</span><span class="sxs-lookup"><span data-stu-id="aaadf-108">Run format with initial model mapping</span></span>
-1. <span data-ttu-id="aaadf-109">[現金および銀行管理] > [銀行口座] > [銀行口座] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="aaadf-109">Go to Cash and bank management > Bank accounts > Bank accounts.</span></span>
-2. <span data-ttu-id="aaadf-110">クイック フィルターを使用して、値が「USMF OPER」である [銀行口座] フィールドをフィルター処理します。</span><span class="sxs-lookup"><span data-stu-id="aaadf-110">Use the Quick Filter to filter on the Bank account field with a value of 'USMF OPER'.</span></span>
-3. <span data-ttu-id="aaadf-111">アクション ペインで、[設定] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="aaadf-111">On the Action Pane, click Set up.</span></span>
-4. <span data-ttu-id="aaadf-112">[小切手] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="aaadf-112">Click Check.</span></span>
-5. <span data-ttu-id="aaadf-113">[印刷テスト] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="aaadf-113">Click Print test.</span></span>
-    * <span data-ttu-id="aaadf-114">テスト目的で形式を実行します。</span><span class="sxs-lookup"><span data-stu-id="aaadf-114">Run the format for testing purposes.</span></span>  
-6. <span data-ttu-id="aaadf-115">[譲渡性小切手フォーマット] フィールドで、[はい] を選択します。</span><span class="sxs-lookup"><span data-stu-id="aaadf-115">Select Yes in the Negotiable check format field.</span></span>
-7. <span data-ttu-id="aaadf-116">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="aaadf-116">Click OK.</span></span>
-    * <span data-ttu-id="aaadf-117">作成した出荷を確認します。</span><span class="sxs-lookup"><span data-stu-id="aaadf-117">Review the created output.</span></span> <span data-ttu-id="aaadf-118">なお、会社のロゴは権限者の署名にもレポートにも表示されます。</span><span class="sxs-lookup"><span data-stu-id="aaadf-118">Note that the company logo is presented in the report as well as the authorized person’s signature.</span></span> <span data-ttu-id="aaadf-119">署名画像は、選択した銀行口座に関連付けられた小切手のレイアウト レコードの「コンテナー」データ型のフィールドから取得されます。</span><span class="sxs-lookup"><span data-stu-id="aaadf-119">The signature image is taken from the field of the ‘Container’ data type of the cheque layout record which is associated with the selected bank account.</span></span>  
-8. <span data-ttu-id="aaadf-120">[コピー] セクションを展開します。</span><span class="sxs-lookup"><span data-stu-id="aaadf-120">Expand the Copies section.</span></span>
-9. <span data-ttu-id="aaadf-121">[編集] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="aaadf-121">Click Edit.</span></span>
-10. <span data-ttu-id="aaadf-122">[透かし] フィールドで、[無効として透かしを印刷] を入力します。</span><span class="sxs-lookup"><span data-stu-id="aaadf-122">In the Watermark field, enter 'Print watermark as Void'.</span></span>
-    * <span data-ttu-id="aaadf-123">透かしレイアウトの設定を変更して、Excel 図形要素の生成ドキュメントに透かしのテキストを表示します。</span><span class="sxs-lookup"><span data-stu-id="aaadf-123">Change the watermark layout setting to show the watermark text in generating document in an Excel shape element.</span></span>  
-11. <span data-ttu-id="aaadf-124">[印刷テスト] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="aaadf-124">Click Print test.</span></span>
-12. <span data-ttu-id="aaadf-125">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="aaadf-125">Click OK.</span></span>
-    * <span data-ttu-id="aaadf-126">作成した出荷を確認します。</span><span class="sxs-lookup"><span data-stu-id="aaadf-126">Review the created output.</span></span> <span data-ttu-id="aaadf-127">なお、選択オプションに従って、作成済みのレポートに透かしが表示されます。</span><span class="sxs-lookup"><span data-stu-id="aaadf-127">Note that the watermark is shown in the created report in accordance to the selection option.</span></span>  
-13. <span data-ttu-id="aaadf-128">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="aaadf-128">Close the page.</span></span>
-14. <span data-ttu-id="aaadf-129">[アクション] ウィンドウで [支払の管理] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="aaadf-129">On the Action Pane, click Manage payments.</span></span>
-15. <span data-ttu-id="aaadf-130">[小切手] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="aaadf-130">Click Checks.</span></span>
-16. <span data-ttu-id="aaadf-131">[フィルターの表示] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="aaadf-131">Click Show filters.</span></span>
-17. <span data-ttu-id="aaadf-132">次のフィルターを適用します。"次の値のいずれか" フィルター演算子を使用して、[小切手番号] フィールドで "381","385","389" のフィルター値を入力。</span><span class="sxs-lookup"><span data-stu-id="aaadf-132">Apply the following filters: Enter a filter value of "381","385","389" on the "Check number" field using the "is one of" filter operator.</span></span>
-18. <span data-ttu-id="aaadf-133">リストで、すべての行をマークします。</span><span class="sxs-lookup"><span data-stu-id="aaadf-133">In the list, mark all rows.</span></span>
-19. <span data-ttu-id="aaadf-134">[小切手のコピーの印刷] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="aaadf-134">Click Print check copy.</span></span>
-    * <span data-ttu-id="aaadf-135">形式を実行して、選択した小切手を再印刷します。</span><span class="sxs-lookup"><span data-stu-id="aaadf-135">Run the format to re-print the selected cheques.</span></span>  
-    * <span data-ttu-id="aaadf-136">作成した出荷を確認します。</span><span class="sxs-lookup"><span data-stu-id="aaadf-136">Review the created output.</span></span> <span data-ttu-id="aaadf-137">選択した小切手が再印刷されていることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="aaadf-137">Note that the selected cheques have been re-printed.</span></span> <span data-ttu-id="aaadf-138">会社のロゴとラベルは、事前に印刷されたフォームに表示されているので印刷されません。</span><span class="sxs-lookup"><span data-stu-id="aaadf-138">The company logo and labels are not printed out since they are presented on the pre-printed form.</span></span>  
+## <a name="run-format-with-initial-model-mapping"></a><span data-ttu-id="27ade-108">初期モデル マッピングを使用して形式を実行する</span><span class="sxs-lookup"><span data-stu-id="27ade-108">Run format with initial model mapping</span></span>
+1. <span data-ttu-id="27ade-109">[現金および銀行管理] > [銀行口座] > [銀行口座] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="27ade-109">Go to Cash and bank management > Bank accounts > Bank accounts.</span></span>
+2. <span data-ttu-id="27ade-110">クイック フィルターを使用して、値が「USMF OPER」である [銀行口座] フィールドをフィルター処理します。</span><span class="sxs-lookup"><span data-stu-id="27ade-110">Use the Quick Filter to filter on the Bank account field with a value of 'USMF OPER'.</span></span>
+3. <span data-ttu-id="27ade-111">アクション ペインで、[設定] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="27ade-111">On the Action Pane, click Set up.</span></span>
+4. <span data-ttu-id="27ade-112">[小切手] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="27ade-112">Click Check.</span></span>
+5. <span data-ttu-id="27ade-113">[印刷テスト] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="27ade-113">Click Print test.</span></span>
+    * <span data-ttu-id="27ade-114">テスト目的で形式を実行します。</span><span class="sxs-lookup"><span data-stu-id="27ade-114">Run the format for testing purposes.</span></span>  
+6. <span data-ttu-id="27ade-115">[譲渡性小切手フォーマット] フィールドで、[はい] を選択します。</span><span class="sxs-lookup"><span data-stu-id="27ade-115">Select Yes in the Negotiable check format field.</span></span>
+7. <span data-ttu-id="27ade-116">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="27ade-116">Click OK.</span></span>
+    * <span data-ttu-id="27ade-117">作成した出荷を確認します。</span><span class="sxs-lookup"><span data-stu-id="27ade-117">Review the created output.</span></span> <span data-ttu-id="27ade-118">なお、会社のロゴは権限者の署名にもレポートにも表示されます。</span><span class="sxs-lookup"><span data-stu-id="27ade-118">Note that the company logo is presented in the report as well as the authorized person’s signature.</span></span> <span data-ttu-id="27ade-119">署名画像は、選択した銀行口座に関連付けられた小切手のレイアウト レコードの「コンテナー」データ型のフィールドから取得されます。</span><span class="sxs-lookup"><span data-stu-id="27ade-119">The signature image is taken from the field of the ‘Container’ data type of the cheque layout record which is associated with the selected bank account.</span></span>  
+8. <span data-ttu-id="27ade-120">[コピー] セクションを展開します。</span><span class="sxs-lookup"><span data-stu-id="27ade-120">Expand the Copies section.</span></span>
+9. <span data-ttu-id="27ade-121">[編集] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="27ade-121">Click Edit.</span></span>
+10. <span data-ttu-id="27ade-122">[透かし] フィールドで、[無効として透かしを印刷] を入力します。</span><span class="sxs-lookup"><span data-stu-id="27ade-122">In the Watermark field, enter 'Print watermark as Void'.</span></span>
+    * <span data-ttu-id="27ade-123">透かしレイアウトの設定を変更して、Excel 図形要素の生成ドキュメントに透かしのテキストを表示します。</span><span class="sxs-lookup"><span data-stu-id="27ade-123">Change the watermark layout setting to show the watermark text in generating document in an Excel shape element.</span></span>  
+11. <span data-ttu-id="27ade-124">[印刷テスト] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="27ade-124">Click Print test.</span></span>
+12. <span data-ttu-id="27ade-125">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="27ade-125">Click OK.</span></span>
+    * <span data-ttu-id="27ade-126">作成した出荷を確認します。</span><span class="sxs-lookup"><span data-stu-id="27ade-126">Review the created output.</span></span> <span data-ttu-id="27ade-127">なお、選択オプションに従って、作成済みのレポートに透かしが表示されます。</span><span class="sxs-lookup"><span data-stu-id="27ade-127">Note that the watermark is shown in the created report in accordance to the selection option.</span></span>  
+13. <span data-ttu-id="27ade-128">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="27ade-128">Close the page.</span></span>
+14. <span data-ttu-id="27ade-129">[アクション] ウィンドウで [支払の管理] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="27ade-129">On the Action Pane, click Manage payments.</span></span>
+15. <span data-ttu-id="27ade-130">[小切手] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="27ade-130">Click Checks.</span></span>
+16. <span data-ttu-id="27ade-131">[フィルターの表示] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="27ade-131">Click Show filters.</span></span>
+17. <span data-ttu-id="27ade-132">次のフィルターを適用します。"次の値のいずれか" フィルター演算子を使用して、[小切手番号] フィールドで "381","385","389" のフィルター値を入力。</span><span class="sxs-lookup"><span data-stu-id="27ade-132">Apply the following filters: Enter a filter value of "381","385","389" on the "Check number" field using the "is one of" filter operator.</span></span>
+18. <span data-ttu-id="27ade-133">リストで、すべての行をマークします。</span><span class="sxs-lookup"><span data-stu-id="27ade-133">In the list, mark all rows.</span></span>
+19. <span data-ttu-id="27ade-134">[小切手のコピーの印刷] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="27ade-134">Click Print check copy.</span></span>
+    * <span data-ttu-id="27ade-135">形式を実行して、選択した小切手を再印刷します。</span><span class="sxs-lookup"><span data-stu-id="27ade-135">Run the format to re-print the selected cheques.</span></span>  
+    * <span data-ttu-id="27ade-136">作成した出荷を確認します。</span><span class="sxs-lookup"><span data-stu-id="27ade-136">Review the created output.</span></span> <span data-ttu-id="27ade-137">選択した小切手が再印刷されていることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="27ade-137">Note that the selected cheques have been re-printed.</span></span> <span data-ttu-id="27ade-138">会社のロゴとラベルは、事前に印刷されたフォームに表示されているので印刷されません。</span><span class="sxs-lookup"><span data-stu-id="27ade-138">The company logo and labels are not printed out since they are presented on the pre-printed form.</span></span>  
 
-## <a name="modify-the-mapping-of-the-imported-data-model"></a><span data-ttu-id="aaadf-139">インポート済データ モデルのマッピングを変更する</span><span class="sxs-lookup"><span data-stu-id="aaadf-139">Modify the mapping of the imported data model</span></span>
-1. <span data-ttu-id="aaadf-140">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="aaadf-140">Close the page.</span></span>
-2. <span data-ttu-id="aaadf-141">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="aaadf-141">Close the page.</span></span>
-3. <span data-ttu-id="aaadf-142">[組織管理] > [電子申告] > [コンフィギュレーション] に移動します。</span><span class="sxs-lookup"><span data-stu-id="aaadf-142">Go to Organization administration > Electronic reporting > Configurations.</span></span>
-4. <span data-ttu-id="aaadf-143">ツリーで、「小切手のモデル」を選択します。</span><span class="sxs-lookup"><span data-stu-id="aaadf-143">In the tree, select 'Model for cheques'.</span></span>
-5. <span data-ttu-id="aaadf-144">[デザイナー] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="aaadf-144">Click Designer.</span></span>
-6. <span data-ttu-id="aaadf-145">[モデルからデータ ソースへのマップ] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="aaadf-145">Click Map model to datasource.</span></span>
-7. <span data-ttu-id="aaadf-146">[デザイナー] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="aaadf-146">Click Designer.</span></span>
-    * <span data-ttu-id="aaadf-147">選択した銀行口座に関連付けられている小切手レイアウト レコードに関連付けれたファイルから署名画像を取得するためのデータ モデルの署名品目のバインディングは変更されます。</span><span class="sxs-lookup"><span data-stu-id="aaadf-147">We will change the binding of the data model’s signature item to get the signature image from the file that has been attached to the cheque layout record which is associated with the selected bank account.</span></span>  
-8. <span data-ttu-id="aaadf-148">[詳細の表示] をオフにします。</span><span class="sxs-lookup"><span data-stu-id="aaadf-148">Turn Show details off.</span></span>
-9. <span data-ttu-id="aaadf-149">ツリーで、「レイアウト」を展開します。</span><span class="sxs-lookup"><span data-stu-id="aaadf-149">In the tree, expand 'layout'.</span></span>
-10. <span data-ttu-id="aaadf-150">ツリーで、「レイアウト\署名」を展開します。</span><span class="sxs-lookup"><span data-stu-id="aaadf-150">In the tree, expand 'layout\signature'.</span></span>
-11. <span data-ttu-id="aaadf-151">ツリーで、「レイアウト\署名\image = chequesaccount.'<Relations'.BankChequeLayout.Signature1Bmp」を選択します。</span><span class="sxs-lookup"><span data-stu-id="aaadf-151">In the tree, select 'layout\signature\image = chequesaccount.'<Relations'.BankChequeLayout.Signature1Bmp'.</span></span>
-12. <span data-ttu-id="aaadf-152">ツリーで、「chequesaccount」を展開します。</span><span class="sxs-lookup"><span data-stu-id="aaadf-152">In the tree, expand 'chequesaccount'.</span></span>
-13. <span data-ttu-id="aaadf-153">ツリーで、「chequesaccount\<Relations」を展開します。</span><span class="sxs-lookup"><span data-stu-id="aaadf-153">In the tree, expand 'chequesaccount\<Relations'.</span></span>
-14. <span data-ttu-id="aaadf-154">ツリーで、「chequesaccount\<Relations\BankChequeLayout」を展開します。</span><span class="sxs-lookup"><span data-stu-id="aaadf-154">In the tree, expand 'chequesaccount\<Relations\BankChequeLayout'.</span></span>
-15. <span data-ttu-id="aaadf-155">ツリーで、「chequesaccount\<Relations\BankChequeLayout\<Relations」を展開します。</span><span class="sxs-lookup"><span data-stu-id="aaadf-155">In the tree, expand 'chequesaccount\<Relations\BankChequeLayout\<Relations'.</span></span>
-16. <span data-ttu-id="aaadf-156">ツリーで、「chequesaccount\<Relations\BankChequeLayout\<Relations\<Documents」を展開します。</span><span class="sxs-lookup"><span data-stu-id="aaadf-156">In the tree, expand 'chequesaccount\<Relations\BankChequeLayout\<Relations\<Documents'.</span></span>
-17. <span data-ttu-id="aaadf-157">ツリーで、「chequesaccount\<Relations\BankChequeLayout\<Relations\<Documents\getFileContentAsContainer()」を選択します。</span><span class="sxs-lookup"><span data-stu-id="aaadf-157">In the tree, select 'chequesaccount\<Relations\BankChequeLayout\<Relations\<Documents\getFileContentAsContainer()'.</span></span>
-18. <span data-ttu-id="aaadf-158">[バインド] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="aaadf-158">Click Bind.</span></span>
-19. <span data-ttu-id="aaadf-159">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="aaadf-159">Click Save.</span></span>
-20. <span data-ttu-id="aaadf-160">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="aaadf-160">Close the page.</span></span>
-21. <span data-ttu-id="aaadf-161">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="aaadf-161">Close the page.</span></span>
-22. <span data-ttu-id="aaadf-162">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="aaadf-162">Close the page.</span></span>
-23. <span data-ttu-id="aaadf-163">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="aaadf-163">Close the page.</span></span>
+## <a name="modify-the-mapping-of-the-imported-data-model"></a><span data-ttu-id="27ade-139">インポート済データ モデルのマッピングを変更する</span><span class="sxs-lookup"><span data-stu-id="27ade-139">Modify the mapping of the imported data model</span></span>
+1. <span data-ttu-id="27ade-140">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="27ade-140">Close the page.</span></span>
+2. <span data-ttu-id="27ade-141">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="27ade-141">Close the page.</span></span>
+3. <span data-ttu-id="27ade-142">[組織管理] > [電子申告] > [コンフィギュレーション] に移動します。</span><span class="sxs-lookup"><span data-stu-id="27ade-142">Go to Organization administration > Electronic reporting > Configurations.</span></span>
+4. <span data-ttu-id="27ade-143">ツリーで、「小切手のモデル」を選択します。</span><span class="sxs-lookup"><span data-stu-id="27ade-143">In the tree, select 'Model for cheques'.</span></span>
+5. <span data-ttu-id="27ade-144">[デザイナー] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="27ade-144">Click Designer.</span></span>
+6. <span data-ttu-id="27ade-145">[モデルからデータ ソースへのマップ] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="27ade-145">Click Map model to datasource.</span></span>
+7. <span data-ttu-id="27ade-146">[デザイナー] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="27ade-146">Click Designer.</span></span>
+    * <span data-ttu-id="27ade-147">選択した銀行口座に関連付けられている小切手レイアウト レコードに関連付けれたファイルから署名画像を取得するためのデータ モデルの署名品目のバインディングは変更されます。</span><span class="sxs-lookup"><span data-stu-id="27ade-147">We will change the binding of the data model’s signature item to get the signature image from the file that has been attached to the cheque layout record which is associated with the selected bank account.</span></span>  
+8. <span data-ttu-id="27ade-148">[詳細の表示] をオフにします。</span><span class="sxs-lookup"><span data-stu-id="27ade-148">Turn Show details off.</span></span>
+9. <span data-ttu-id="27ade-149">ツリーで、「レイアウト」を展開します。</span><span class="sxs-lookup"><span data-stu-id="27ade-149">In the tree, expand 'layout'.</span></span>
+10. <span data-ttu-id="27ade-150">ツリーで、「レイアウト\署名」を展開します。</span><span class="sxs-lookup"><span data-stu-id="27ade-150">In the tree, expand 'layout\signature'.</span></span>
+11. <span data-ttu-id="27ade-151">ツリーで、「レイアウト\署名\image = chequesaccount.'<Relations'.BankChequeLayout.Signature1Bmp」を選択します。</span><span class="sxs-lookup"><span data-stu-id="27ade-151">In the tree, select 'layout\signature\image = chequesaccount.'<Relations'.BankChequeLayout.Signature1Bmp'.</span></span>
+12. <span data-ttu-id="27ade-152">ツリーで、「chequesaccount」を展開します。</span><span class="sxs-lookup"><span data-stu-id="27ade-152">In the tree, expand 'chequesaccount'.</span></span>
+13. <span data-ttu-id="27ade-153">ツリーで、「chequesaccount\<Relations」を展開します。</span><span class="sxs-lookup"><span data-stu-id="27ade-153">In the tree, expand 'chequesaccount\<Relations'.</span></span>
+14. <span data-ttu-id="27ade-154">ツリーで、「chequesaccount\<Relations\BankChequeLayout」を展開します。</span><span class="sxs-lookup"><span data-stu-id="27ade-154">In the tree, expand 'chequesaccount\<Relations\BankChequeLayout'.</span></span>
+15. <span data-ttu-id="27ade-155">ツリーで、「chequesaccount\<Relations\BankChequeLayout\<Relations」を展開します。</span><span class="sxs-lookup"><span data-stu-id="27ade-155">In the tree, expand 'chequesaccount\<Relations\BankChequeLayout\<Relations'.</span></span>
+16. <span data-ttu-id="27ade-156">ツリーで、「chequesaccount\<Relations\BankChequeLayout\<Relations\<Documents」を展開します。</span><span class="sxs-lookup"><span data-stu-id="27ade-156">In the tree, expand 'chequesaccount\<Relations\BankChequeLayout\<Relations\<Documents'.</span></span>
+17. <span data-ttu-id="27ade-157">ツリーで、「chequesaccount\<Relations\BankChequeLayout\<Relations\<Documents\getFileContentAsContainer()」を選択します。</span><span class="sxs-lookup"><span data-stu-id="27ade-157">In the tree, select 'chequesaccount\<Relations\BankChequeLayout\<Relations\<Documents\getFileContentAsContainer()'.</span></span>
+18. <span data-ttu-id="27ade-158">[バインド] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="27ade-158">Click Bind.</span></span>
+19. <span data-ttu-id="27ade-159">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="27ade-159">Click Save.</span></span>
+20. <span data-ttu-id="27ade-160">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="27ade-160">Close the page.</span></span>
+21. <span data-ttu-id="27ade-161">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="27ade-161">Close the page.</span></span>
+22. <span data-ttu-id="27ade-162">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="27ade-162">Close the page.</span></span>
+23. <span data-ttu-id="27ade-163">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="27ade-163">Close the page.</span></span>
 
-## <a name="run-format-using-the-adjusted-model-mapping"></a><span data-ttu-id="aaadf-164">調整済モデル マッピングを使用して形式を実行する</span><span class="sxs-lookup"><span data-stu-id="aaadf-164">Run format using the adjusted model mapping</span></span>
-1. <span data-ttu-id="aaadf-165">[現金および銀行管理] > [銀行口座] > [銀行口座] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="aaadf-165">Go to Cash and bank management > Bank accounts > Bank accounts.</span></span>
-2. <span data-ttu-id="aaadf-166">クイック フィルターを使用して、レコードを見つけます。</span><span class="sxs-lookup"><span data-stu-id="aaadf-166">Use the Quick Filter to find records.</span></span> <span data-ttu-id="aaadf-167">たとえば、「USMF OPER」という値を含む [銀行口座] フィールドをフィルターします。</span><span class="sxs-lookup"><span data-stu-id="aaadf-167">For example, filter on the Bank account field with a value of 'USMF OPER'.</span></span>
-3. <span data-ttu-id="aaadf-168">アクション ペインで、[設定] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="aaadf-168">On the Action Pane, click Set up.</span></span>
-4. <span data-ttu-id="aaadf-169">[小切手] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="aaadf-169">Click Check.</span></span>
-5. <span data-ttu-id="aaadf-170">[印刷テスト] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="aaadf-170">Click Print test.</span></span>
-6. <span data-ttu-id="aaadf-171">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="aaadf-171">Click OK.</span></span>
-    * <span data-ttu-id="aaadf-172">作成した出荷を確認します。</span><span class="sxs-lookup"><span data-stu-id="aaadf-172">Review the created output.</span></span> <span data-ttu-id="aaadf-173">ドキュメント管理添付ファイルからの画像が権限者の署名として表示されることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="aaadf-173">Note that the image from the Document Management attachment is presented as the signature of an authorized person.</span></span>  
+## <a name="run-format-using-the-adjusted-model-mapping"></a><span data-ttu-id="27ade-164">調整済モデル マッピングを使用して形式を実行する</span><span class="sxs-lookup"><span data-stu-id="27ade-164">Run format using the adjusted model mapping</span></span>
+1. <span data-ttu-id="27ade-165">[現金および銀行管理] > [銀行口座] > [銀行口座] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="27ade-165">Go to Cash and bank management > Bank accounts > Bank accounts.</span></span>
+2. <span data-ttu-id="27ade-166">クイック フィルターを使用して、レコードを見つけます。</span><span class="sxs-lookup"><span data-stu-id="27ade-166">Use the Quick Filter to find records.</span></span> <span data-ttu-id="27ade-167">たとえば、「USMF OPER」という値を含む [銀行口座] フィールドをフィルターします。</span><span class="sxs-lookup"><span data-stu-id="27ade-167">For example, filter on the Bank account field with a value of 'USMF OPER'.</span></span>
+3. <span data-ttu-id="27ade-168">アクション ペインで、[設定] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="27ade-168">On the Action Pane, click Set up.</span></span>
+4. <span data-ttu-id="27ade-169">[小切手] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="27ade-169">Click Check.</span></span>
+5. <span data-ttu-id="27ade-170">[印刷テスト] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="27ade-170">Click Print test.</span></span>
+6. <span data-ttu-id="27ade-171">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="27ade-171">Click OK.</span></span>
+    * <span data-ttu-id="27ade-172">作成した出荷を確認します。</span><span class="sxs-lookup"><span data-stu-id="27ade-172">Review the created output.</span></span> <span data-ttu-id="27ade-173">ドキュメント管理添付ファイルからの画像が権限者の署名として表示されることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="27ade-173">Note that the image from the Document Management attachment is presented as the signature of an authorized person.</span></span>  
 
-## <a name="use-ms-word-document-as-a-template-in-the-imported-format"></a><span data-ttu-id="aaadf-174">インポートされた形式で MS Word ドキュメントをテンプレートとして使用する</span><span class="sxs-lookup"><span data-stu-id="aaadf-174">Use MS Word document as a template in the imported format</span></span>
-1. <span data-ttu-id="aaadf-175">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="aaadf-175">Close the page.</span></span>
-2. <span data-ttu-id="aaadf-176">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="aaadf-176">Close the page.</span></span>
-3. <span data-ttu-id="aaadf-177">[組織管理] > [電子申告] > [コンフィギュレーション] に移動します。</span><span class="sxs-lookup"><span data-stu-id="aaadf-177">Go to Organization administration > Electronic reporting > Configurations.</span></span>
-4. <span data-ttu-id="aaadf-178">ツリーで、「小切手のモデル」を展開します。</span><span class="sxs-lookup"><span data-stu-id="aaadf-178">In the tree, expand 'Model for cheques'.</span></span>
-5. <span data-ttu-id="aaadf-179">ツリーで、「小切手のモデル\小切手の印刷形式」を選択します。</span><span class="sxs-lookup"><span data-stu-id="aaadf-179">In the tree, select 'Model for cheques\Cheques printing format'.</span></span>
-6. <span data-ttu-id="aaadf-180">[デザイナー] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="aaadf-180">Click Designer.</span></span>
-7. <span data-ttu-id="aaadf-181">[添付ファイル] クリックします。</span><span class="sxs-lookup"><span data-stu-id="aaadf-181">Click Attachments.</span></span>
-8. <span data-ttu-id="aaadf-182">[削除] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="aaadf-182">Click Delete.</span></span>
-9. <span data-ttu-id="aaadf-183">[はい] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="aaadf-183">Click Yes.</span></span>
-10. <span data-ttu-id="aaadf-184">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="aaadf-184">Click New.</span></span>
-11. <span data-ttu-id="aaadf-185">[ファイル] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="aaadf-185">Click File.</span></span>
-    * <span data-ttu-id="aaadf-186">[参照] をクリックし、事前にダウンロードした「小切手テンプレート Word.docx」ファイルを選択します。</span><span class="sxs-lookup"><span data-stu-id="aaadf-186">Click Browse and select the downloaded in advance ‘Cheque template Word.docx’ file.</span></span>  
-12. <span data-ttu-id="aaadf-187">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="aaadf-187">Close the page.</span></span>
-13. <span data-ttu-id="aaadf-188">[テンプレート] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="aaadf-188">In the Template field, enter or select a value.</span></span>
-14. <span data-ttu-id="aaadf-189">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="aaadf-189">Click Save.</span></span>
-15. <span data-ttu-id="aaadf-190">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="aaadf-190">Close the page.</span></span>
-16. <span data-ttu-id="aaadf-191">[編集] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="aaadf-191">Click Edit.</span></span>
-17. <span data-ttu-id="aaadf-192">[ドラフトの実行] フィールドで、[はい] を選択します。</span><span class="sxs-lookup"><span data-stu-id="aaadf-192">Select Yes in the Run Draft field.</span></span>
-18. <span data-ttu-id="aaadf-193">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="aaadf-193">Close the page.</span></span>
-19. <span data-ttu-id="aaadf-194">[現金および銀行管理] > [銀行口座] > [銀行口座] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="aaadf-194">Go to Cash and bank management > Bank accounts > Bank accounts.</span></span>
-20. <span data-ttu-id="aaadf-195">クイック フィルターを使用して、値が「USMF OPER」である [銀行口座] フィールドをフィルター処理します。</span><span class="sxs-lookup"><span data-stu-id="aaadf-195">Use the Quick Filter to filter on the Bank account field with a value of 'USMF OPER'.</span></span>
-21. <span data-ttu-id="aaadf-196">[小切手] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="aaadf-196">Click Check.</span></span>
-22. <span data-ttu-id="aaadf-197">[印刷テスト] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="aaadf-197">Click Print test.</span></span>
-23. <span data-ttu-id="aaadf-198">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="aaadf-198">Click OK.</span></span>
-    * <span data-ttu-id="aaadf-199">作成した出荷を確認します。</span><span class="sxs-lookup"><span data-stu-id="aaadf-199">Review the created output.</span></span> <span data-ttu-id="aaadf-200">出力は、会社のロゴ、権限者の署名および透かしの選択テキストを表示する埋め込み画像付きの MS Word ドキュメントとして生成されたことに注意してください。</span><span class="sxs-lookup"><span data-stu-id="aaadf-200">Note that the output has been generated as a MS Word document with embedded images presenting the company logo, the signature of an authorized person and the selected text of the watermark.</span></span>  
+## <a name="use-ms-word-document-as-a-template-in-the-imported-format"></a><span data-ttu-id="27ade-174">インポートされた形式で MS Word ドキュメントをテンプレートとして使用する</span><span class="sxs-lookup"><span data-stu-id="27ade-174">Use MS Word document as a template in the imported format</span></span>
+1. <span data-ttu-id="27ade-175">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="27ade-175">Close the page.</span></span>
+2. <span data-ttu-id="27ade-176">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="27ade-176">Close the page.</span></span>
+3. <span data-ttu-id="27ade-177">[組織管理] > [電子申告] > [コンフィギュレーション] に移動します。</span><span class="sxs-lookup"><span data-stu-id="27ade-177">Go to Organization administration > Electronic reporting > Configurations.</span></span>
+4. <span data-ttu-id="27ade-178">ツリーで、「小切手のモデル」を展開します。</span><span class="sxs-lookup"><span data-stu-id="27ade-178">In the tree, expand 'Model for cheques'.</span></span>
+5. <span data-ttu-id="27ade-179">ツリーで、「小切手のモデル\小切手の印刷形式」を選択します。</span><span class="sxs-lookup"><span data-stu-id="27ade-179">In the tree, select 'Model for cheques\Cheques printing format'.</span></span>
+6. <span data-ttu-id="27ade-180">[デザイナー] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="27ade-180">Click Designer.</span></span>
+7. <span data-ttu-id="27ade-181">[添付ファイル] クリックします。</span><span class="sxs-lookup"><span data-stu-id="27ade-181">Click Attachments.</span></span>
+8. <span data-ttu-id="27ade-182">[削除] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="27ade-182">Click Delete.</span></span>
+9. <span data-ttu-id="27ade-183">[はい] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="27ade-183">Click Yes.</span></span>
+10. <span data-ttu-id="27ade-184">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="27ade-184">Click New.</span></span>
+11. <span data-ttu-id="27ade-185">[ファイル] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="27ade-185">Click File.</span></span>
+    * <span data-ttu-id="27ade-186">[参照] をクリックし、事前にダウンロードした「小切手テンプレート Word.docx」ファイルを選択します。</span><span class="sxs-lookup"><span data-stu-id="27ade-186">Click Browse and select the downloaded in advance ‘Cheque template Word.docx’ file.</span></span>  
+12. <span data-ttu-id="27ade-187">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="27ade-187">Close the page.</span></span>
+13. <span data-ttu-id="27ade-188">[テンプレート] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="27ade-188">In the Template field, enter or select a value.</span></span>
+14. <span data-ttu-id="27ade-189">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="27ade-189">Click Save.</span></span>
+15. <span data-ttu-id="27ade-190">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="27ade-190">Close the page.</span></span>
+16. <span data-ttu-id="27ade-191">[編集] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="27ade-191">Click Edit.</span></span>
+17. <span data-ttu-id="27ade-192">[ドラフトの実行] フィールドで、[はい] を選択します。</span><span class="sxs-lookup"><span data-stu-id="27ade-192">Select Yes in the Run Draft field.</span></span>
+18. <span data-ttu-id="27ade-193">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="27ade-193">Close the page.</span></span>
+19. <span data-ttu-id="27ade-194">[現金および銀行管理] > [銀行口座] > [銀行口座] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="27ade-194">Go to Cash and bank management > Bank accounts > Bank accounts.</span></span>
+20. <span data-ttu-id="27ade-195">クイック フィルターを使用して、値が「USMF OPER」である [銀行口座] フィールドをフィルター処理します。</span><span class="sxs-lookup"><span data-stu-id="27ade-195">Use the Quick Filter to filter on the Bank account field with a value of 'USMF OPER'.</span></span>
+21. <span data-ttu-id="27ade-196">[小切手] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="27ade-196">Click Check.</span></span>
+22. <span data-ttu-id="27ade-197">[印刷テスト] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="27ade-197">Click Print test.</span></span>
+23. <span data-ttu-id="27ade-198">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="27ade-198">Click OK.</span></span>
+    * <span data-ttu-id="27ade-199">作成した出荷を確認します。</span><span class="sxs-lookup"><span data-stu-id="27ade-199">Review the created output.</span></span> <span data-ttu-id="27ade-200">出力は、会社のロゴ、権限者の署名および透かしの選択テキストを表示する埋め込み画像付きの MS Word ドキュメントとして生成されたことに注意してください。</span><span class="sxs-lookup"><span data-stu-id="27ade-200">Note that the output has been generated as a MS Word document with embedded images presenting the company logo, the signature of an authorized person and the selected text of the watermark.</span></span>  
 
 

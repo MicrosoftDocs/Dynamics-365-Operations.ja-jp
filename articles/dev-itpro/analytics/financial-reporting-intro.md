@@ -19,87 +19,86 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 8075abccdcdde21df967dcc9948a738895f35cef
-ms.openlocfilehash: a38621c0877345efc6ea81f81d994f5c271f3ee7
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: f4b70f1aee6b0b55a41dbfd33fcd1216579bb78c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
-# <a name="financial-reporting-for-finance-and-operations"></a><span data-ttu-id="dacf9-104">Finance および Operations の財務分析</span><span class="sxs-lookup"><span data-stu-id="dacf9-104">Financial reporting for Finance and Operations</span></span>
+# <a name="financial-reporting-for-finance-and-operations"></a><span data-ttu-id="acaa4-104">Finance および Operations の財務分析</span><span class="sxs-lookup"><span data-stu-id="acaa4-104">Financial reporting for Finance and Operations</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
+<span data-ttu-id="acaa4-105">Finance および Operations の財務報告では、財務およびビジネスのプロフェッショナルが財務諸表を作成、管理、展開、および表示できます。</span><span class="sxs-lookup"><span data-stu-id="acaa4-105">Financial reporting for Finance and Operations allows financial and business professionals to create, maintain, deploy, and view financial statements.</span></span> <span data-ttu-id="acaa4-106">効率的にさまざまな種類のレポートをデザインするために従来のレポートの制約を超えて移動します。</span><span class="sxs-lookup"><span data-stu-id="acaa4-106">It moves beyond traditional reporting constraints to help you efficiently design various types of reports.</span></span>
 
-<span data-ttu-id="dacf9-105">Finance および Operations の財務報告では、財務およびビジネスのプロフェッショナルが財務諸表を作成、管理、展開、および表示できます。</span><span class="sxs-lookup"><span data-stu-id="dacf9-105">Financial reporting for Finance and Operations allows financial and business professionals to create, maintain, deploy, and view financial statements.</span></span> <span data-ttu-id="dacf9-106">効率的にさまざまな種類のレポートをデザインするために従来のレポートの制約を超えて移動します。</span><span class="sxs-lookup"><span data-stu-id="dacf9-106">It moves beyond traditional reporting constraints to help you efficiently design various types of reports.</span></span>
+<span data-ttu-id="acaa4-107">財務報告書には、分析コードのサポートが含まれます。</span><span class="sxs-lookup"><span data-stu-id="acaa4-107">Financial reporting includes dimension support.</span></span> <span data-ttu-id="acaa4-108">したがって、勘定区分または分析コードは、すぐに使用できます。</span><span class="sxs-lookup"><span data-stu-id="acaa4-108">Therefore, account segments or dimensions are immediately available.</span></span> <span data-ttu-id="acaa4-109">その他のツールや構成手順を実行する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="acaa4-109">No additional tools or configuration steps are required.</span></span>
 
-<span data-ttu-id="dacf9-107">財務報告書には、分析コードのサポートが含まれます。</span><span class="sxs-lookup"><span data-stu-id="dacf9-107">Financial reporting includes dimension support.</span></span> <span data-ttu-id="dacf9-108">したがって、勘定区分または分析コードは、すぐに使用できます。</span><span class="sxs-lookup"><span data-stu-id="dacf9-108">Therefore, account segments or dimensions are immediately available.</span></span> <span data-ttu-id="dacf9-109">その他のツールや構成手順を実行する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="dacf9-109">No additional tools or configuration steps are required.</span></span>
+## <a name="financial-reporting-setup"></a><span data-ttu-id="acaa4-110">財務諸表の設定</span><span class="sxs-lookup"><span data-stu-id="acaa4-110">Financial reporting setup</span></span>
+<span data-ttu-id="acaa4-111">**財務諸表の設定** ページには、システムのすべての財務分析コードの一覧があります。</span><span class="sxs-lookup"><span data-stu-id="acaa4-111">The **Financial reporting setup** page has a list of all financial dimensions in the system.</span></span> <span data-ttu-id="acaa4-112">**一般会計** > **元帳の設定** > **財務諸表の設定**。</span><span class="sxs-lookup"><span data-stu-id="acaa4-112">**General ledger** > **Ledger setup** > **Financial reporting setup**.</span></span> 
 
-## <a name="financial-reporting-setup"></a><span data-ttu-id="dacf9-110">財務諸表の設定</span><span class="sxs-lookup"><span data-stu-id="dacf9-110">Financial reporting setup</span></span>
-<span data-ttu-id="dacf9-111">**財務諸表の設定** ページには、システムのすべての財務分析コードの一覧があります。</span><span class="sxs-lookup"><span data-stu-id="dacf9-111">The **Financial reporting setup** page has a list of all financial dimensions in the system.</span></span> <span data-ttu-id="dacf9-112">**一般会計** > **元帳の設定** > **財務諸表の設定**。</span><span class="sxs-lookup"><span data-stu-id="dacf9-112">**General ledger** > **Ledger setup** > **Financial reporting setup**.</span></span> 
+<span data-ttu-id="acaa4-113">**財務諸表の設定** ページには、財務諸表でレポートするデータを特定する 2 つのセクションがあります。</span><span class="sxs-lookup"><span data-stu-id="acaa4-113">The **Financial reporting setup** page has two sections that determine the data you report on in Financial reporting:</span></span>
 
-<span data-ttu-id="dacf9-113">**財務諸表の設定** ページには、財務諸表でレポートするデータを特定する 2 つのセクションがあります。</span><span class="sxs-lookup"><span data-stu-id="dacf9-113">The **Financial reporting setup** page has two sections that determine the data you report on in Financial reporting:</span></span>
+<span data-ttu-id="acaa4-114">•   **分析コード タブ** - 異なる会社がさまざまな分析コードおよび勘定構造を使用するため、レポートでどのユーザーがすべての財務分析コードを表示するかの順序を特定する方法はありません。</span><span class="sxs-lookup"><span data-stu-id="acaa4-114">•   **Dimensions tab** - Because different companies use different dimensions and account structures, there is no way to determine the order in which users want to view all financial dimensions on reports.</span></span> <span data-ttu-id="acaa4-115">このページでは、財務分析コードを財務諸表でレポートを作成および表示する際に表示する順序を設定することができます。</span><span class="sxs-lookup"><span data-stu-id="acaa4-115">This page allows you set the order in which you want financial dimensions to appear when you build and view a report in Financial reporting.</span></span>
 
-<span data-ttu-id="dacf9-114">•   **分析コード タブ** - 異なる会社がさまざまな分析コードおよび勘定構造を使用するため、レポートでどのユーザーがすべての財務分析コードを表示するかの順序を特定する方法はありません。</span><span class="sxs-lookup"><span data-stu-id="dacf9-114">•   **Dimensions tab** - Because different companies use different dimensions and account structures, there is no way to determine the order in which users want to view all financial dimensions on reports.</span></span> <span data-ttu-id="dacf9-115">このページでは、財務分析コードを財務諸表でレポートを作成および表示する際に表示する順序を設定することができます。</span><span class="sxs-lookup"><span data-stu-id="dacf9-115">This page allows you set the order in which you want financial dimensions to appear when you build and view a report in Financial reporting.</span></span>
-
-<span data-ttu-id="dacf9-116">•   **属性 タブ** で、**仕入先** および **顧客** をフィルタ リングやレポート デザインの属性として使用する機能を必要とするかどうかを選択します。</span><span class="sxs-lookup"><span data-stu-id="dacf9-116">•   **Attributes tab** is where you can select whether you want the ability to use **Vendors** and **Customers** as attributes for filtering and report design.</span></span> <span data-ttu-id="dacf9-117">トランザクションを転記する際に、複数の仕入先または顧客を単一伝票に入力しない場合、仕入先および顧客に関するレポートのみが役立ちます。</span><span class="sxs-lookup"><span data-stu-id="dacf9-117">Reporting on Vendor and Customer will only be valuable if you do not enter multiple vendors or customers in a single voucher when posting transactions.</span></span> <span data-ttu-id="dacf9-118">仕入先または顧客を選択すると、統合にさらに時間が追加されます。</span><span class="sxs-lookup"><span data-stu-id="dacf9-118">Choosing Vendor and/or Customer will add additional time to the integration.</span></span>
-
+<span data-ttu-id="acaa4-116">•   **属性 タブ** で、**仕入先** および **顧客** をフィルタ リングやレポート デザインの属性として使用する機能を必要とするかどうかを選択します。</span><span class="sxs-lookup"><span data-stu-id="acaa4-116">•   **Attributes tab** is where you can select whether you want the ability to use **Vendors** and **Customers** as attributes for filtering and report design.</span></span> <span data-ttu-id="acaa4-117">トランザクションを転記する際に、複数の仕入先または顧客を単一伝票に入力しない場合、仕入先および顧客に関するレポートのみが役立ちます。</span><span class="sxs-lookup"><span data-stu-id="acaa4-117">Reporting on Vendor and Customer will only be valuable if you do not enter multiple vendors or customers in a single voucher when posting transactions.</span></span> <span data-ttu-id="acaa4-118">仕入先または顧客を選択すると、統合にさらに時間が追加されます。</span><span class="sxs-lookup"><span data-stu-id="acaa4-118">Choosing Vendor and/or Customer will add additional time to the integration.</span></span>
 
 
-## <a name="financial-reporting-components"></a><span data-ttu-id="dacf9-119">財務報告書のコンポーネント</span><span class="sxs-lookup"><span data-stu-id="dacf9-119">Financial reporting components</span></span>
-<span data-ttu-id="dacf9-120">財務報告書の次のコンポーネントで、レポートの作成、表示、およびスケジュールが簡単にできます。</span><span class="sxs-lookup"><span data-stu-id="dacf9-120">The following components of financial reporting make it easy to create, view, and schedule reports.</span></span>
 
-| <span data-ttu-id="dacf9-121">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="dacf9-121">Component</span></span>        | <span data-ttu-id="dacf9-122">関数</span><span class="sxs-lookup"><span data-stu-id="dacf9-122">Functions</span></span>                                                                                                                                                                                                                                                                           | <span data-ttu-id="dacf9-123">追加情報</span><span class="sxs-lookup"><span data-stu-id="dacf9-123">Additional information</span></span>                                                                          |
+## <a name="financial-reporting-components"></a><span data-ttu-id="acaa4-119">財務報告書のコンポーネント</span><span class="sxs-lookup"><span data-stu-id="acaa4-119">Financial reporting components</span></span>
+<span data-ttu-id="acaa4-120">財務報告書の次のコンポーネントで、レポートの作成、表示、およびスケジュールが簡単にできます。</span><span class="sxs-lookup"><span data-stu-id="acaa4-120">The following components of financial reporting make it easy to create, view, and schedule reports.</span></span>
+
+| <span data-ttu-id="acaa4-121">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="acaa4-121">Component</span></span>        | <span data-ttu-id="acaa4-122">関数</span><span class="sxs-lookup"><span data-stu-id="acaa4-122">Functions</span></span>                                                                                                                                                                                                                                                                           | <span data-ttu-id="acaa4-123">追加情報</span><span class="sxs-lookup"><span data-stu-id="acaa4-123">Additional information</span></span>                                                                          |
 |------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="dacf9-124">レポート デザイナー</span><span class="sxs-lookup"><span data-stu-id="dacf9-124">Report Designer</span></span>  | <span data-ttu-id="dacf9-125">レポートを定義して生成するために、組み合わせるレポートの構成要素を作成します。</span><span class="sxs-lookup"><span data-stu-id="dacf9-125">Create report building blocks that can be combined to define and generate a report.</span></span> <span data-ttu-id="dacf9-126">レポート ウィザードで、デザイン プロセスの経験が少ないユーザーをサポートします。</span><span class="sxs-lookup"><span data-stu-id="dacf9-126">The report wizard guides less experienced users through the design process.</span></span> <span data-ttu-id="dacf9-127">上級者になると、新しいレポートの構成要素を作成したり、要求に合わせて既存の構成要素を変更したりできます。</span><span class="sxs-lookup"><span data-stu-id="dacf9-127">Advanced users can create new report building blocks or modify existing building blocks to meet their requirements.</span></span> |                                                                                                 |
-| <span data-ttu-id="dacf9-128">レポート スケジューラ</span><span class="sxs-lookup"><span data-stu-id="dacf9-128">Report schedules</span></span> | <span data-ttu-id="dacf9-129">1 つのレポートまたはレポートのグループをスケジュールして、定期的に生成されるようにします。</span><span class="sxs-lookup"><span data-stu-id="dacf9-129">Schedule a single report or a group of reports so that it is generated on a regular basis.</span></span>                                                                                                                                                                                          | [<span data-ttu-id="dacf9-130">財務諸表の生成</span><span class="sxs-lookup"><span data-stu-id="dacf9-130">Generate a financial report</span></span>](generate-financial-report.md) |
+| <span data-ttu-id="acaa4-124">レポート デザイナー</span><span class="sxs-lookup"><span data-stu-id="acaa4-124">Report Designer</span></span>  | <span data-ttu-id="acaa4-125">レポートを定義して生成するために、組み合わせるレポートの構成要素を作成します。</span><span class="sxs-lookup"><span data-stu-id="acaa4-125">Create report building blocks that can be combined to define and generate a report.</span></span> <span data-ttu-id="acaa4-126">レポート ウィザードで、デザイン プロセスの経験が少ないユーザーをサポートします。</span><span class="sxs-lookup"><span data-stu-id="acaa4-126">The report wizard guides less experienced users through the design process.</span></span> <span data-ttu-id="acaa4-127">上級者になると、新しいレポートの構成要素を作成したり、要求に合わせて既存の構成要素を変更したりできます。</span><span class="sxs-lookup"><span data-stu-id="acaa4-127">Advanced users can create new report building blocks or modify existing building blocks to meet their requirements.</span></span> |                                                                                                 |
+| <span data-ttu-id="acaa4-128">レポート スケジューラ</span><span class="sxs-lookup"><span data-stu-id="acaa4-128">Report schedules</span></span> | <span data-ttu-id="acaa4-129">1 つのレポートまたはレポートのグループをスケジュールして、定期的に生成されるようにします。</span><span class="sxs-lookup"><span data-stu-id="acaa4-129">Schedule a single report or a group of reports so that it is generated on a regular basis.</span></span>                                                                                                                                                                                          | [<span data-ttu-id="acaa4-130">財務諸表の生成</span><span class="sxs-lookup"><span data-stu-id="acaa4-130">Generate a financial report</span></span>](generate-financial-report.md) |
 
-## <a name="features"></a><span data-ttu-id="dacf9-131">機能</span><span class="sxs-lookup"><span data-stu-id="dacf9-131">Features</span></span>
+## <a name="features"></a><span data-ttu-id="acaa4-131">機能</span><span class="sxs-lookup"><span data-stu-id="acaa4-131">Features</span></span>
 <table>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="dacf9-132">機能</span><span class="sxs-lookup"><span data-stu-id="dacf9-132">Feature</span></span></th>
-<th><span data-ttu-id="dacf9-133">説明</span><span class="sxs-lookup"><span data-stu-id="dacf9-133">Description</span></span></th>
+<th><span data-ttu-id="acaa4-132">機能</span><span class="sxs-lookup"><span data-stu-id="acaa4-132">Feature</span></span></th>
+<th><span data-ttu-id="acaa4-133">説明</span><span class="sxs-lookup"><span data-stu-id="acaa4-133">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span data-ttu-id="dacf9-134">レポート デザインの柔軟性</span><span class="sxs-lookup"><span data-stu-id="dacf9-134">Report design flexibility</span></span></td>
-<td><span data-ttu-id="dacf9-135">レポート デザイナーでは、レポートをデザインする際に次のレポート オプションを提供します。</span><span class="sxs-lookup"><span data-stu-id="dacf9-135">Report Designer provides the following reporting options when you design a report:</span></span>
+<td><span data-ttu-id="acaa4-134">レポート デザインの柔軟性</span><span class="sxs-lookup"><span data-stu-id="acaa4-134">Report design flexibility</span></span></td>
+<td><span data-ttu-id="acaa4-135">レポート デザイナーでは、レポートをデザインする際に次のレポート オプションを提供します。</span><span class="sxs-lookup"><span data-stu-id="acaa4-135">Report Designer provides the following reporting options when you design a report:</span></span>
 <ul>
-<li><span data-ttu-id="dacf9-136">分析コードの組み合わせを保存し、複数のレポートの分析コードを再利用します。</span><span class="sxs-lookup"><span data-stu-id="dacf9-136">Save dimension combinations, and reuse the dimensions for multiple reports.</span></span></li>
-<li><span data-ttu-id="dacf9-137">分析コードの説明を書式設定して表示する方法を制御します。</span><span class="sxs-lookup"><span data-stu-id="dacf9-137">Control how dimension descriptions are formatted and displayed.</span></span></li>
-<li><span data-ttu-id="dacf9-138">レポートの構成要素から除外した勘定または分析コードを識別します。</span><span class="sxs-lookup"><span data-stu-id="dacf9-138">Identify accounts or dimensions that have been omitted from report building blocks.</span></span></li>
-<li><span data-ttu-id="dacf9-139">ローリング予測のヘッダー書式を設定します。</span><span class="sxs-lookup"><span data-stu-id="dacf9-139">Format headers for rolling forecasts.</span></span></li>
+<li><span data-ttu-id="acaa4-136">分析コードの組み合わせを保存し、複数のレポートの分析コードを再利用します。</span><span class="sxs-lookup"><span data-stu-id="acaa4-136">Save dimension combinations, and reuse the dimensions for multiple reports.</span></span></li>
+<li><span data-ttu-id="acaa4-137">分析コードの説明を書式設定して表示する方法を制御します。</span><span class="sxs-lookup"><span data-stu-id="acaa4-137">Control how dimension descriptions are formatted and displayed.</span></span></li>
+<li><span data-ttu-id="acaa4-138">レポートの構成要素から除外した勘定または分析コードを識別します。</span><span class="sxs-lookup"><span data-stu-id="acaa4-138">Identify accounts or dimensions that have been omitted from report building blocks.</span></span></li>
+<li><span data-ttu-id="acaa4-139">ローリング予測のヘッダー書式を設定します。</span><span class="sxs-lookup"><span data-stu-id="acaa4-139">Format headers for rolling forecasts.</span></span></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="dacf9-140">財務諸表のコラボレーション</span><span class="sxs-lookup"><span data-stu-id="dacf9-140">Financial report collaboration</span></span></td>
-<td><span data-ttu-id="dacf9-141">次の機能は、レポートの生成および配布の管理に役立ちます。</span><span class="sxs-lookup"><span data-stu-id="dacf9-141">The following features help you manage the generation and distribution of reports:</span></span>
+<td><span data-ttu-id="acaa4-140">財務諸表のコラボレーション</span><span class="sxs-lookup"><span data-stu-id="acaa4-140">Financial report collaboration</span></span></td>
+<td><span data-ttu-id="acaa4-141">次の機能は、レポートの生成および配布の管理に役立ちます。</span><span class="sxs-lookup"><span data-stu-id="acaa4-141">The following features help you manage the generation and distribution of reports:</span></span>
 <ul>
-<li><span data-ttu-id="dacf9-142">レポートをスケジュールして、毎日、毎週、月単位、または年単位基準で自動的に生成されるようにします。</span><span class="sxs-lookup"><span data-stu-id="dacf9-142">Schedule reports so that they are automatically generated on a daily, weekly, monthly, or annual basis.</span></span></li>
-<li><span data-ttu-id="dacf9-143">読み取り専用 XPS 形式にエクスポートして、デジタル署名でドキュメントのセキュリティを向上します。</span><span class="sxs-lookup"><span data-stu-id="dacf9-143">Export to the read-only XPS format, which provides better document security through digital signatures.</span></span></li>
-<li><span data-ttu-id="dacf9-144">Microsoft Excel ワークシートにエクスポートします。</span><span class="sxs-lookup"><span data-stu-id="dacf9-144">Export to a Microsoft Excel worksheet.</span></span></li>
-<li><span data-ttu-id="dacf9-145">レポートを共有するために、レポートへのリンクを含む電子メール メッセージを作成できます。</span><span class="sxs-lookup"><span data-stu-id="dacf9-145">To share reports, you can create email messages that contain links to the reports.</span></span></li>
+<li><span data-ttu-id="acaa4-142">レポートをスケジュールして、毎日、毎週、月単位、または年単位基準で自動的に生成されるようにします。</span><span class="sxs-lookup"><span data-stu-id="acaa4-142">Schedule reports so that they are automatically generated on a daily, weekly, monthly, or annual basis.</span></span></li>
+<li><span data-ttu-id="acaa4-143">読み取り専用 XPS 形式にエクスポートして、デジタル署名でドキュメントのセキュリティを向上します。</span><span class="sxs-lookup"><span data-stu-id="acaa4-143">Export to the read-only XPS format, which provides better document security through digital signatures.</span></span></li>
+<li><span data-ttu-id="acaa4-144">Microsoft Excel ワークシートにエクスポートします。</span><span class="sxs-lookup"><span data-stu-id="acaa4-144">Export to a Microsoft Excel worksheet.</span></span></li>
+<li><span data-ttu-id="acaa4-145">レポートを共有するために、レポートへのリンクを含む電子メール メッセージを作成できます。</span><span class="sxs-lookup"><span data-stu-id="acaa4-145">To share reports, you can create email messages that contain links to the reports.</span></span></li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td><span data-ttu-id="dacf9-146">対話型レポートの表示</span><span class="sxs-lookup"><span data-stu-id="dacf9-146">Interactive report viewing</span></span></td>
-<td><span data-ttu-id="dacf9-147">対話型機能で、次のタスクを実行できます。</span><span class="sxs-lookup"><span data-stu-id="dacf9-147">Interactive features let you perform the following tasks:</span></span>
+<td><span data-ttu-id="acaa4-146">対話型レポートの表示</span><span class="sxs-lookup"><span data-stu-id="acaa4-146">Interactive report viewing</span></span></td>
+<td><span data-ttu-id="acaa4-147">対話型機能で、次のタスクを実行できます。</span><span class="sxs-lookup"><span data-stu-id="acaa4-147">Interactive features let you perform the following tasks:</span></span>
 <ul>
-<li><span data-ttu-id="dacf9-148">表示しているレポートのレポートの日付を変更します。</span><span class="sxs-lookup"><span data-stu-id="dacf9-148">Change the report date for the report that you're viewing.</span></span></li>
-<li><span data-ttu-id="dacf9-149">表示しているレポートの通貨を変更します。</span><span class="sxs-lookup"><span data-stu-id="dacf9-149">Change the currency of the report that you're viewing.</span></span></li>
-<li><span data-ttu-id="dacf9-150">概要ビューまたは詳細ビューのいずれかでレポートを表示します。</span><span class="sxs-lookup"><span data-stu-id="dacf9-150">View the report in either a summary view or a detailed view.</span></span></li>
-<li><span data-ttu-id="dacf9-151">レポート コンテンツに特定の分析コードまたは分析コードの組み合わせを制限するのには、分析コード フィルターを追加します。</span><span class="sxs-lookup"><span data-stu-id="dacf9-151">Add dimension filters to limit the report content to a specific dimension or combination of dimensions.</span></span></li>
-<li><span data-ttu-id="dacf9-152">レポート コンテンツに特定の属性または属性の組み合わせを制限するのには、属性フィルターを追加します。</span><span class="sxs-lookup"><span data-stu-id="dacf9-152">Add attribute filters to limit the report content to a specific attribute or combination of attributes.</span></span></li>
+<li><span data-ttu-id="acaa4-148">表示しているレポートのレポートの日付を変更します。</span><span class="sxs-lookup"><span data-stu-id="acaa4-148">Change the report date for the report that you&#39;re viewing.</span></span></li>
+<li><span data-ttu-id="acaa4-149">表示しているレポートの通貨を変更します。</span><span class="sxs-lookup"><span data-stu-id="acaa4-149">Change the currency of the report that you&#39;re viewing.</span></span></li>
+<li><span data-ttu-id="acaa4-150">概要ビューまたは詳細ビューのいずれかでレポートを表示します。</span><span class="sxs-lookup"><span data-stu-id="acaa4-150">View the report in either a summary view or a detailed view.</span></span></li>
+<li><span data-ttu-id="acaa4-151">レポート コンテンツに特定の分析コードまたは分析コードの組み合わせを制限するのには、分析コード フィルターを追加します。</span><span class="sxs-lookup"><span data-stu-id="acaa4-151">Add dimension filters to limit the report content to a specific dimension or combination of dimensions.</span></span></li>
+<li><span data-ttu-id="acaa4-152">レポート コンテンツに特定の属性または属性の組み合わせを制限するのには、属性フィルターを追加します。</span><span class="sxs-lookup"><span data-stu-id="acaa4-152">Add attribute filters to limit the report content to a specific attribute or combination of attributes.</span></span></li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
 
-## <a name="see-also"></a><span data-ttu-id="dacf9-153">参照</span><span class="sxs-lookup"><span data-stu-id="dacf9-153">See also</span></span>
-[<span data-ttu-id="dacf9-154">財務諸表の生成</span><span class="sxs-lookup"><span data-stu-id="dacf9-154">Generate a financial report</span></span>](generate-financial-report.md)
+## <a name="see-also"></a><span data-ttu-id="acaa4-153">参照</span><span class="sxs-lookup"><span data-stu-id="acaa4-153">See also</span></span>
+[<span data-ttu-id="acaa4-154">財務諸表の生成</span><span class="sxs-lookup"><span data-stu-id="acaa4-154">Generate a financial report</span></span>](generate-financial-report.md)
 
 
 
