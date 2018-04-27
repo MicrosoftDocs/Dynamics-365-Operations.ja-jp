@@ -16,16 +16,16 @@ ms.author: tjvass
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 9ee81bbdd22fed4ef6ea97080fe1f6b3d82bcaf5
-ms.openlocfilehash: ee95c3d79f7f401c767b9bc8415b21369c14478b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: d8cd3a6b3cbfa1219f0ebcf9d4d2132197167220
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="add-analytics-to-workspaces-by-using-power-bi-embedded"></a>Power BI Embedded を使用したワークスペースへの分析の追加
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 > [!NOTE]
 > この機能は、Dynamics 365 for Finance and Operations (バージョン 7.2 以降) でサポートされています。
@@ -50,7 +50,7 @@ ms.lasthandoff: 11/06/2017
 
 ## <a name="add-a-pbix-file-as-a-resource"></a>リソースとして .pbix ファイルを追加します。
 開始する前に、ワークスペースに埋め込む Power BI レポートを作成または取得する必要があります。 分析レポートを作成する方法の詳細については、[Power BI デスクトップの使い方](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/)を参照してください。
- 
+
 .pbix ファイルを Visual Studio プロジェクト コンポーネントとして追加するには、次の手順を実行します。
 
 1. 該当するモデルで新しいプロジェクトを作成します。
@@ -63,12 +63,12 @@ ms.lasthandoff: 11/06/2017
 5. 分析のレポートの定義を含む .pbix ファイルを見つけて、[未処理] をクリックします。
 
     ![[リソース ファイル] ダイアログ ボックスをオンにします。](media/analytical-workspace-select-resource.png)
-  
+
 Dynamics 365 リソースとして .pbix ファイルを追加したため、ワークスペースにレポートを埋め込み、メニュー項目を使用して直接リンクを追加できるようになりました。
 
 ## <a name="add-a-tab-control-to-an-application-workspace"></a>アプリケーション ワークスペースへのタブ コントロールの追加
 この例では、**FMClerkWorkspace** フォームの定義に [分析] タブを追加することで、フリート管理モデルの **引当管理** ワークスペースを拡張します。
- 
+
 次の図は、**FMClerkWorkspace** フォームが Microsoft Visual Studio のデザイナーにどのように表示されるかを示しています。
 
 ![変更する前の FMClerkWorkspace フォーム](media/analytical-workspace-definition-before.png)
@@ -93,16 +93,16 @@ Dynamics 365 リソースとして .pbix ファイルを追加したため、ワ
 16. [パターンの削除] を右クリックし、選択します。
 17. [パターンの追加] > [ワークスペース タブ] の順にもう一度右クリックし、選択します。
 18. 変更を確認するビルドを実行します。
- 
+
 次の図は、これらの変更が適用された後に設計がどのように表示されるかを示します。
 
 ![変更後の FMClerkWorkspace](media/analytical-workspace-definition-after.png)
 
 ワークスペース レポートの埋め込みに使用するフォーム コントロールを追加したため、親コントロールのサイズがレイアウトに対応できるように、それを定義する必要があります。 既定では、[フィルタ ウィンドウ] ページと [タブ] ページの両方がレポートに表示されます。 ただし、これらのコントロールの表示/非表示を、レポートの対象となる消費者の必要に応じて変更することができます。
- 
+
 > [!NOTE]
 > 埋め込みのワークスペースについては、ページの一貫性を保つため、拡張機能を使用して、[フィルタ ウィンドウ] および [タブ] ページを非表示にすることをお勧めします。
- 
+
 これでアプリケーション フォームの定義を拡張するためのタスクが完了しました。 カスタマイズを行うために拡張機能を使用する方法に関する詳細については、[カスタマイズ: オーバーレイおよび拡張機能](../extensibility/customization-overlayering-extensions.md)を参照してください。
 
 ## <a name="add-x-business-logic-to-embed-a-viewer-control"></a>ビューアー コントロールを埋め込むための X++ ビジネス ロジックの追加
@@ -169,12 +169,13 @@ public static void initializeReportControl(
 
 #### <a name="parameters"></a>パラメーター
 
-| 氏名 | 説明 |
-|---|---|
-| resourceName | .pbix リソースの名前。 |
-| formGroupControl | Power BI レポートのコントロール適用先のフォーム グループ コントロール。 |
-| defaultPageName | 既定のページの名前 |
-| showFilterPane | フィルタ ウィンドウを表示 (**true**) または非表示 (**false**) するかを示すブール値。 |
-| showNavPane | ナビゲーション ウィンドウを表示 (**true**) または非表示 (**false**) するかを示すブール値。 |
-| defaultFilters | Power BI レポートの既定のフィルター。 |
+|       氏名       |                                                              説明                                                               |
+|------------------|----------------------------------------------------------------------------------------------------------------------------------------|
+|   resourceName   |                                                    .pbix リソースの名前。                                                     |
+| formGroupControl |                                    Power BI レポートのコントロール適用先のフォーム グループ コントロール。                                     |
+| defaultPageName  |                                                         既定のページの名前                                                         |
+|  showFilterPane  |   フィルタ ウィンドウを表示 (<strong>true</strong>) または非表示 (<strong>false</strong>) するかを示すブール値。   |
+|   showNavPane    | ナビゲーション ウィンドウを表示 (<strong>true</strong>) または非表示 (<strong>false</strong>) するかを示すブール値。 |
+|  defaultFilters  |                                              Power BI レポートの既定のフィルター。                                              |
+
 

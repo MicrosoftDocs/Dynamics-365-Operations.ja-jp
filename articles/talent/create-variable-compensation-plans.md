@@ -19,17 +19,16 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4ced76315bb4667f84be532a703e7e9b134b829b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 6d11e772cfbcd8ab7a0d4a08ccd71049723f9e32
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="create-variable-compensation-plans"></a>変動報酬プランの作成
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 変動報酬は賞与または株式報奨などの従業員の不規則な支払を構成します。 この記事は、変動報酬を使用し、従業員を変動報酬プランに登録する前に設定する必要があるコンポーネントを説明します。
 
@@ -78,16 +77,16 @@ ms.lasthandoff: 11/03/2017
 
 **注記:** 適格性ルールは、固定報酬プランと変動報酬プランの両方の適格性を決定します。 従業員適格性ルールは、職務、職位、および従業員レコードの特定のフィールドの値を使用し、従業員が報酬プランに適用できるかどうかを決定します。
 
--   [職務] ページ:
-    -   [ジョブ] フィールド
-    -   [ジョブ分類] タブの [機能] および [ジョブ タイプ] フィールド
-    -   **報酬] タブの [レベル] フィールド
--   [職位] ページ: [部門] および [報酬地域] フィールド
--   [従業員] ページ: [作業者] タブの [個人情報] &gt; [労働組合] で従業員に関連付けられている労働組合に関する情報
+- [職務] ページ:
+  -   [ジョブ] フィールド
+  -   [ジョブ分類] タブの [機能] および [ジョブ タイプ] フィールド
+  -   **報酬] タブの [レベル] フィールド
+- [職位] ページ: [部門] および [報酬地域] フィールド
+- <strong>[従業員]</strong> ページ: *<strong><em>[作業者]</em></strong>* タブの <strong>[個人情報]</strong> &gt; <strong>[労働組合]</strong> で従業員に割り当てられている労働組合に関する情報
 
 ### <a name="enable-enrollment-for-the-variable-compensation-plan"></a>変動報酬プランの登録の有効化
 
-[変動報酬プラン] ページで、プランに登録されている従業員の適格性を許可するために [登録の有効化] オプションを [はい] に設定します。
+[**変動報酬プラン**] ページで、プランに登録されている従業員の適格性を許可するために [**登録の有効化**] オプションを [**はい**] に設定します。
 
 ### <a name="enroll-the-employee"></a>従業員の登録
 

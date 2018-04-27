@@ -16,15 +16,15 @@ ms.author: shielas
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: e232ba1f5803f6dee148f23098563c99c1622cdf
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 9b898a5ab5ad2837ef1d9ef8ebf88aaa05f56b3a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="add-to-your-performance-journal-and-send-praise-to-someone"></a>業績仕訳への追加および称賛の送信
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 パフォーマンスの仕訳帳には、目標を達成した方法、または期間中に実行した方法に関連する情報が保持されます。 仕訳帳から同業者のアクションを賞賛できます。 この手順の作成に使用するデモ データの会社は USMF です。 この手順は、Dynamics 365 for Operations、バージョン 1611 に追加された機能です。
 
@@ -42,7 +42,7 @@ ms.lasthandoff: 09/29/2017
 9. [キーワード] フィールドに値を入力します。
 10. [外部リンクの追加] をクリックします。
 11. [説明] フィールドで「Envision」と入力します。
-12. インターネット アドレス フィールドには、「https://www.microsoft.com/en/envision/default」と入力します。
+12. [インターネット アドレス] フィールドに <https://www.microsoft.com/en/envision/default> を入力します。
 13. グリッドに戻るには "パフォーマンス仕訳帳" と呼ばれる [保存] ボタンの下のキャプションをクリックします。
     * 目標を開いた場合に表示されるように、選択した仕訳帳または仕訳帳を目標に追加できます。 [クイック リンク] タブにリンクが追加されます。目標に仕訳帳を追加し、レビューに目標を追加すると、仕訳帳は自動的にレビューに表示されます。  
     * レビューを開いた場合に表示されるように、選択した仕訳帳または仕訳帳をレビューに追加できます。    [クイック リンク] タブにリンクが追加されます。  

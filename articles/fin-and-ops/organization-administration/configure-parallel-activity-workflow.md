@@ -18,17 +18,16 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: a913655b584aa23c2614903e6ede4f5826fec1fb
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: ec1c1d8abc49deb8ef16322370c59d40b01d344c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="configure-a-parallel-activity-in-a-workflow"></a>ワークフロー内の並列活動のコンフィギュレーション
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 並列活動をコンフィギュレーションするには、ワークフロー エディターで次の手順を実行します。
 
@@ -43,13 +42,15 @@ ms.lasthandoff: 11/03/2017
 
 ## <a name="configure-the-branches-of-a-parallel-activity"></a>並列活動の分岐のコンフィギュレーション
 この並列活動の分岐を追加およびコンフィギュレーションするには、次の手順に従います。
-1.  並列活動の分岐を表示する並列活動をダブルクリックします。
-2.  分岐を追加するには、[分岐] 要素を [ワークフロー要素] 領域からキャンバス上の挿入ポイントにドラッグします。 次の図は、挿入ポイントを示しています。![Insertion point](./media/workflow_insertionpoint.gif)
-    | **メモ**                                                                                                         |
-    |------------------------------------------------------------------------------------------------------------------|
-    | 並列活動の分岐はすべて同時に実行されるため、分岐の順序は重要ではありません。 |
+1. 並列活動の分岐を表示する並列活動をダブルクリックします。
+2. 分岐を追加するには、[分岐] 要素を [ワークフロー要素] 領域からキャンバス上の挿入ポイントにドラッグします。 次の図は、挿入ポイントを示しています。![Insertion point](./media/workflow_insertionpoint.gif)
 
-3.  各分岐をコンフィギュレーションするには、[並列分岐のコンフィギュレーション](configure-parallel-branch-workflow.md)を参照してください。
+   |                                              <strong>メモ</strong>                                               |
+   |------------------------------------------------------------------------------------------------------------------|
+   | 並列活動の分岐はすべて同時に実行されるため、分岐の順序は重要ではありません。 |
+
+
+3. 各分岐をコンフィギュレーションするには、[並列分岐のコンフィギュレーション](configure-parallel-branch-workflow.md)を参照してください。
 
 
 

@@ -19,16 +19,16 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 41d5671d180bae039d873419352d52afe90e386b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: adbbb36da2bc1e9a2211c703823370571105ecab
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="formula-designer-in-electronic-reporting"></a>電子申告のフォーミュラ デザイナー
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックでは、電子申告 (ER) でのフォーミュラ デザイナーの使用方法を説明します。 ER の特定の電子ドキュメントの形式を設計する場合、データを変換する式を使用して、ドキュメントのフルフィルメントおよび書式設定の要件を満たすことができます。 これらの式は、Microsoft Excel の式と類似しています。 テキスト、日時、算術、論理、情報、データ型変換、およびその他 (ビジネス ドメインの特定の関数) といったさまざまなタイプの関数が式でサポートされています。
 
@@ -127,7 +127,7 @@ ER の式は、次のいずれかまたはすべての要素を含めること�
 
 #### <a name="constants"></a>定数
 
-式の設計時に、テキストおよび数値定数 (つまり、計算されない定数) を使用できます。 たとえば、**VALUE ("100") + 20** の式では、数値定数 **20** および文字列定数 **"100"**を使用し **120** という数値を返します。 ER フォーミュラ デザイナーはエスケープ シーケンスをサポートします。 したがって、別の方法で処理されるべき式文字列を指定することができます。 たとえば、**「レフ トルストイ」「戦争と平和」「ボリューム 1」** の式は、[**レフ トルストイ「戦争と平和」ボリューム 1**] という文字列を返します。
+式の設計時に、テキストおよび数値定数 (つまり、計算されない定数) を使用できます。 たとえば、**VALUE ("100") + 20** の式では、数値定数 **20** および文字列定数 **"100"** を使用し **120** という数値を返します。 ER フォーミュラ デザイナーはエスケープ シーケンスをサポートします。 したがって、別の方法で処理されるべき式文字列を指定することができます。 たとえば、**「レフ トルストイ」「戦争と平和」「ボリューム 1」** の式は、[**レフ トルストイ「戦争と平和」ボリューム 1**] という文字列を返します。
 
 #### <a name="operators"></a>演算子
 
@@ -358,7 +358,7 @@ Finance and Operations データ ソースのメソッドにパラメータが�
 <li>ラベル</li>
 <li>説明</li>
 </ul>
-実行時に、<strong>ラベル</strong> および <strong>説明</strong> フィールドは、形式の言語設定に基づく値を返します。</td>
+実行時に、[<strong>ラベル</strong>] および [<strong>説明</strong>] フィールドは、形式の言語設定に基づく値を返します。</td>
 <td>次の図では、列挙はデータ モデルで導入されます。
 <p><a href="./media/ger-listoffields-function-model-enumeration.png"><img src="./media/ger-listoffields-function-model-enumeration-e1474545790761.png" alt="Enumeration in a model" class="alignnone wp-image-1203943 size-full" width="514" height="155" /></a></p>
 <p>次の図は、これらの詳細について説明しています。</p>
@@ -384,7 +384,7 @@ Finance and Operations データ ソースのメソッドにパラメータが�
 <li>説明</li>
 <li>翻訳済み</li>
 </ul>
-<p>実行時に、<strong>ラベル</strong> および <strong>説明</strong> フィールドは、形式の言語設定と特定の言語に基づく値を返します。 <strong>翻訳済み</strong> フィールドは、<strong>ラベル</strong> フィールドが指定した言語に翻訳されていることを示します。</td>
+<p>実行時に、[<strong>ラベル</strong>] および [<strong>説明</strong>] フィールドは、形式の言語設定と特定の言語に基づく値を返します。 <strong>翻訳済み</strong> フィールドは、<strong>ラベル</strong> フィールドが指定した言語に翻訳されていることを示します。</td>
 <td>たとえば、<strong>計算済フィールド</strong> データ ソース型を使用して、<strong>enumType</strong>データ モデル列挙に対する <strong>enumType_de</strong> および <strong>enumType_deCH</strong> データ ソースをコンフィギュレーションします。
 <ul>
 <li>enumType_de = <strong>LISTOFFIELDS</strong> (enumType、&quot;de&quot;)</li>
@@ -395,7 +395,9 @@ Finance and Operations データ ソースのメソッドにパラメータが�
 <tr class="even">
 <td>STRINGJOIN (リスト, フィールド名, 区切り記号)</td>
 <td>指定されたリストから指定したフィールドの連結された値で構成される文字列を返します。 値は、指定した区切り記号で区切られます。</td>
-<td><strong>SPLIT(&quot;abc&quot; , 1)</strong> をデータ ソース (DS) として入力した場合、式 <strong>STRINGJOIN (DS, DS.Value, &quot;:&quot;)</strong> は <strong>&quot;a:b:c&quot;</strong> を返します。</td>
+
+<td><strong>SPLIT(&quot;abc&quot; , 1)</strong> をデータ ソース (DS) として入力した場合、式 <strong>STRINGJOIN (DS, DS.Value, &quot;:&quot;)</strong> は <strong>&quot;a</strong><strong>:b</strong><strong>:c&quot;</strong> を返します。</td>
+
 </tr>
 <tr class="odd">
 <td>SPLITLISTBYLIMIT (リスト, 制限値, 制限のソース)</td>
@@ -451,7 +453,7 @@ Finance and Operations データ ソースのメソッドにパラメータが�
 | NUMBERVALUE (文字列、小数点記号、桁区切り記号) | 指定された文字列を数字に変換します。 指定した小数点記号は、整数と小数点以下の数の間で使用されます。 指定した桁区切り記号は千の位の区切り記号として使用されます。 | **NUMBERVALUE("1 234,56", ",", " ")** は、**1234.56** を返します。 |
 | INTVALUE (文字列) | 指定された文字列の整数表現を返します。 任意の小数点以下の桁数が切り捨てられます。 | **INTVALUE (「100.77」)** は **100** を返します。 |
 | INTVALUE (番号) | 指定された数の整数表現を返します。 任意の小数点以下の桁数が切り捨てられます。 | [**INTVALUE (-100.77)**] は [**-100**] を返します。 |
-| INT64VALUE (文字列) | 指定した文字列の int64 表現を返します。 任意の小数点以下の桁数が切り捨てられます。 | **INT64VALUE (「22565422744」)**は、**22565422744** を返します。 |
+| INT64VALUE (文字列) | 指定した文字列の int64 表現を返します。 任意の小数点以下の桁数が切り捨てられます。 | **INT64VALUE (「22565422744」)** は、**22565422744** を返します。 |
 | INT64VALUE (数値) | 指定の文字列の int64 表現を返します。 任意の小数点以下の桁数が切り捨てられます。 | [**INT64VALUE (22565422744.00)**] は、[**22565422744**] を返します。 |
 
 ### <a name="record-functions"></a>レコード機能
@@ -540,7 +542,7 @@ Finance and Operations データ ソースのメソッドにパラメータが�
 </tr>
 <tr class="even">
 <td>FORMAT (文字列 1, 文字列 2[, 文字列 3, …])</td>
-<td>すべての <strong>%N</strong> を <em>n</em> 番目の引数に置き換えて書式設定した後に、指定された文字列を返します。 引数は文字列です。 パラメーターに引数が指定されない場合は、文字列内では <strong>&quot;%N&quot;</strong> として返されます。 <strong>実数</strong>型の値では、文字列変換が小数点第 2 位に制限されます。</td>
+<td>すべての <strong>%N</strong> を <em>n</em> 番目の引数に置き換えて書式設定した後に、指定された文字列を返します。 引数は文字列です。 パラメーターに引数が指定されない場合は、パラメーターは文字列内では <strong>&quot;%N&quot;</strong> として返されます。 <strong>実数</strong>型の値では、文字列変換が小数点第 2 位に制限されます。</td>
 <td>この図では、<strong>PaymentModel</strong> データ ソースは <strong>顧客</strong>コンポーネント経由で顧客のリスト、[<strong>ProcessingDate</strong>] フィールド経由で処理日の値を返します。
 <p><a href="./media/picture-format-datasource.jpg"><img src="./media/picture-format-datasource.jpg" alt="PaymentModel data source" class="alignnone wp-image-290751 size-full" width="293" height="143" /></a></p>
 <p>選択した顧客の電子ファイルを生成するよう設計されている ER 形式では、<strong>PaymentModel</strong> がデータ ソースとして選択され、プロセス フローを制御します。 選択した顧客がレポートが処理される日付に停止されている場合、例外がユーザーに通知してスローされます。 このタイプの処理制御のために設計された式は、次のリソースを使用できます。</p>
@@ -561,7 +563,7 @@ Finance and Operations データ ソースのメソッドにパラメータが�
 <p>レポートが 2015 年 12 月 17 日に <strong>EN-US</strong> カルチャおよび <strong>EN-US</strong> 言語で <strong>Litware Retail</strong> の顧客に対して処理される場合、この式はユーザーへの例外メッセージとして示すことができる次のテキストを返します。</p>
 <p>&quot;印刷対象なし。 顧客の Litware Retail は 2015 年 12 月 17 日に停止されます。&quot;</p>
 <p>同じレポートが 2015 年 12 月 17 日に <strong>DE</strong> カルチャおよび <strong>DE</strong> 言語で <strong>Litware Retail</strong> の顧客に対して処理される場合、この式は別の日付形式を使用する次のテキストを返します。</p>
-<p>&quot;Nichts zu drucken。 顧客の Litware Retail は 2015 年 12 月 17 日に停止されます。&quot;</p>
+<p>&quot;Nichts zu drucken。 Debitor 'Litware Retail' wird für 17.12.2015 gesperrt.&quot;</p>
 <blockquote>[!NOTE]<br>
 次の構文は ER の式でラベルに適用されます。
 <ul>

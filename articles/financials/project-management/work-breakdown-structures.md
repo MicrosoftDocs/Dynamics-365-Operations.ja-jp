@@ -19,16 +19,16 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: fc2fa16a44b6421d56e9cb662cfaa26da5b1c5d1
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 8bc3d23fac6112622e722e57b61fdb686f5a98ed
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="work-breakdown-structures"></a>作業分解構造
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 作業分解構造 (WBS) は、プロジェクトに対して実行される作業の説明です。 作業の構成や各コンポーネントまたはタスクのサイズ、原価、期間に対するプロジェクト チームの理解を表すタスクの階層です。 WBS には 3 つの主な目的があります:
 
@@ -115,7 +115,7 @@ WBS の作成では、3 つの活動を実行します。
 
 先行処理がないリーフ ノード タスクの開始日は、プロジェクトのスケジューリングの開始日に自動的に設定されます。 リーフ ノード タスクの期間は、常に開始日と終了日間の作業日数として計算されます。 
 
-****スケジューリングのルール**** 自動スケジューリング アシスタントが有効な場合、次のルールがリーフ ノード タスクのタスク スケジューリングに適用されます。
+*<strong><em>スケジューリングのルール</em></strong>* 自動スケジューリング アシスタントが有効な場合、次のルールがリーフ ノード タスクのタスク スケジューリングに適用されます。
 
 -   タスクの開始日と終了日は、プロジェクトのスケジューリング カレンダーに基づいて作業日にする必要があります。
 -   先行処理を行うタスクの開始日は、その先行処理の最終日に自動的に設定されます。

@@ -18,23 +18,23 @@ ms.author: mkirknel
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: bfbc0fdfcff809a7d22362961b9778355ed7317b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 83fcf1d0432d5afa71d6f9d7d22cea5a583777bf
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="vendor-collaboration-mobile-workspace"></a>仕入先コラボレーションのモバイル ワークスペース
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックでは、[**仕入先コラボレーション**] モバイル ワークスペースに関する情報を提供します。 このワークスペースでは、仕入先が、承認のために送信された発注書に関する最新の状態を保つことができるようにします。 新規または更新された発注書および連絡先に関する情報を閲覧することもできます。
 
 このモバイル ワークスペースは、Microsoft Dynamics 365 for Unified Operations モバイル アプリで使用するためのものです。
 
 ## <a name="overview"></a>概要 
-[仕入先コラボレーション] モバイル ワークスペースでは、仕入先が新しい発注書を常に把握できるようにし、Microsoft Dynamics 365 for Operations の Web クライアントで発注書の表示をしてから対応ができるようになります。 
+**仕入先コラボレーション モバイル** ワークスペースでは、仕入先が新しい発注書を常に把握できるようにし、Microsoft Dynamics 365 for Operations の Web クライアントで発注書の表示をしてから対応ができるようになります。 
 
 >[!NOTE]
 > モバイル ワークスペースは仕入先コラボレーション Web インターフェイスの置き換えとしてではなく、補足として使用されます。 
@@ -61,7 +61,7 @@ Web クライアントの仕入先コラボレーション Web インターフ�
 組織に配置されている Microsoft Dynamics 365 のバージョンによって、前提条件は異なります。
 
 ### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Microsoft Dynamics 365 for Finance and Operations を使用している場合の前提条件 
-Microsoft Dynamics 365 for Finance and Operations を組織に配置している場合、システム管理者は [仕入先コラボレーション] モバイル ワークスペースを公開する必要があります。 手順については、「[モバイル ワークスペースの公開](../../dev-itpro/mobile-apps/publish-mobile-workspace.md)」を参照してください。
+Microsoft Dynamics 365 for Finance and Operations を組織に配置している場合、システム管理者は **仕入先コラボレーション** モバイル ワークスペースを公開する必要があります。 手順については、「[モバイル ワークスペースの公開](../../dev-itpro/mobile-apps/publish-mobile-workspace.md)」を参照してください。
 
 ### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Microsoft Dynamics 365 for Operations バージョン 1611 およびプラットフォーム更新プログラム 3 以降を使用している場合の前提条件
 Microsoft Dynamics 365 for Operations バージョン 1611 およびプラットフォーム更新プログラム 3 以降を組織に配置している場合、システム管理者は次の前提条件を満たす必要があります。 
@@ -78,7 +78,7 @@ Microsoft Dynamics 365 for Operations バージョン 1611 およびプラット
 <tr class="odd">
 <td>プラットフォーム更新プログラム 3 を使用している場合は、KB 3216943 を実装する必要があります。</td>
 <td>システム管理者</td>
-<td>プラットフォーム更新プログラム 3 を使用している場合、KB 3216943 はバイナリ更新プログラムです。 この KB を実装するには、システム管理者は次の手順に従う必要があります。
+<td>プラットフォーム更新プログラム 3 を使用している場合、KB 3216943 は必要なバイナリ更新プログラムです。 この KB を実装するには、システム管理者は次の手順に従う必要があります。
 <ol>
 <li>Microsoft Dynamics Lifecycle Services (LCS) から KB 3216943 をダウンロードします。</li>
 <li>配置可能パッケージとして配信される、バイナリ更新プログラムをインストールします。 配置可能パッケージを適用する方法についての詳しい情報は、<a href="../../dev-itpro/deployment/apply-deployable-package-system.md">適用可能パッケージ</a>を参照してください。</li>

@@ -1,7 +1,7 @@
 --- 
 title: "BOM の作成 (2016 年 2 月のみ)"
 description: "このタスクでは、完成品と半完成品の部品表の構造の作成について説明します。"
-author: BibiSp
+author: YuyuScheller
 manager: AnnBe
 ms.date: 02/07/2017
 ms.topic: business-process
@@ -9,22 +9,22 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e089c105a48924d8cb42f34d711125b157c3af2e
-ms.openlocfilehash: f8ad4b0e230fb0f018355e486e3b898895a61f28
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 0cd8d9b90cffe2794b785b2bb391e21ae3b11cf7
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-boms-february-2016-only"></a>BOM の作成 (2016 年 2 月のみ)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 このタスクでは、完成品と半完成品の部品表の構造の作成について説明します。 これは、BOM 計算シリーズの 4 番目のタスクです。 このタスクの作成に使用するデモ データの会社は USMF です。
 

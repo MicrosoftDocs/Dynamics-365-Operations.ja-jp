@@ -19,17 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 95d5bf26c22238753586cf4a7aaf5c26f061a705
-ms.openlocfilehash: 8d9a27ecb99265674211a5ec768fe55040b8f5fe
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 3571726fd3603371b8e1daec7d6ebe85d72d280d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="vendor-posting-profiles"></a>仕入先転記プロファイル
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 仕入先転記プロファイルは、仕入先トランザクションの総勘定元帳への転記を制御します。
 
@@ -45,7 +44,7 @@ ms.lasthandoff: 02/23/2018
 
 選択した転記プロファイルを使用するトランザクションを転記する際に使用される勘定科目を指定します。 選択した転記プロファイルについて、アカウント コードおよび (可能な場合) アカウント番号またはグループ番号を選択します。 転記プロセスでは、次の優先順位に従って特定のアカウント コード、アカウント番号、グループ番号の組み合わせを検索することにより、各トランザクションの最も適切な転記プロファイルを見つけます。
 
-| [アカウント コード] フィールド値 | [**アカウント/グループ番号**] フィールド値        | 検索の優先順位 |
+| **アカウント コード** フィールド値 | [**アカウント/グループ番号**] フィールド値        | 検索の優先順位 |
 |------------------------------|---------------------------------------------|-----------------|
 | **テーブル**                    | 特定の仕入先                     | 1               |
 | **グループ**                    | 仕入先に割り当てられている仕入先グループ | 2               |
@@ -132,7 +131,7 @@ ms.lasthandoff: 02/23/2018
 </tr>
 </tbody>
 </table>
- 
+
 
 ### <a name="table-restrictions"></a>**テーブルの制限**
 

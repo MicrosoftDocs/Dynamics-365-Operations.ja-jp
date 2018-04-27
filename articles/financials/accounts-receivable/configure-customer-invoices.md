@@ -19,17 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 0e5605b65b6203a50ef2fef81d032a887da32bf9
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: f08131e01fddb259d3bb537b1625ea2615a1e958
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="create-a-customer-invoice"></a>顧客請求書の作成
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 **販売注文の顧客請求書**は、売上に関連し、組織が顧客に提供する請求書です。 この種類の顧客請求書は、注文明細行および品目番号を含む販売注文に基づいて作成されます。 品目番号が指定され、元帳に転記されます。 補助元帳仕訳帳は、販売注文の顧客請求書では使用できません。 詳細については、「[販売注文請求書の作成](tasks/create-sales-order-invoices.md)」を参照してください。
 
@@ -119,7 +118,7 @@ ms.lasthandoff: 11/03/2017
 <li><strong>現在</strong> – 請求書ごとに更新された後でドキュメントを印刷します。</li>
 <li><strong>変更後</strong> – すべての請求書が更新された時点でドキュメントを印刷します。</li>
 </ul>
-<strong>注記:</strong> [<strong>請求書の印刷</strong>]、[<strong>確認の印刷</strong>]、[<strong>ピッキング リストの印刷</strong>]、または [<strong>梱包明細の印刷</strong>] オプションを選択した場合にのみ、[<strong>印刷</strong>] フィールドを使用することができます。 たとえば、<strong>フォームの並べ替え</strong>ページで、請求先/元 ID ごとに情報を並べ替えるようにシステムを設定したとします。 [<strong>変更後</strong>] を選択して、請求先/元 ID ごとにドキュメントをバッチ印刷することができます。 それ以外の場合、ドキュメントは処理が完了する前に印刷され、ドキュメントは<strong>フォームの並べ替え</strong>ページで指定された順序では並べ替えられません。</td>
+<strong>注記:</strong> [<strong>請求書の印刷</strong>]、[<strong>確認の印刷</strong>]、[<strong>ピッキング リストの印刷</strong>]、または [<strong>梱包明細の印刷</strong>] オプションを選択した場合にのみ、[<strong>印刷</strong>] フィールドを使用することができます。 たとえば、<strong>フォームの並べ替え</strong>ページで、請求先/元 ID ごとに情報を並べ替えるようにシステムを設定したとします。 [<strong>変更後</strong>] を選択して、請求先/元 ID ごとにドキュメントをバッチ印刷することができます。 それ以外の場合、ドキュメントは処理が完了する前に印刷され、ドキュメントは <strong>[フォームの並べ替え]</strong> ページで指定された順序では並べ替えられません。</td>
 </tr>
 <tr class="even">
 <td>請求書の印刷</td>

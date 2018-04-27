@@ -19,16 +19,16 @@ ms.author: johanho
 ms.search.validFrom: 2018-03-20
 ms.dyn365.ops.version: AX 8.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 6cd1e3a1f6b5c979a4f60d97cc2203cdcd32bbbe
-ms.openlocfilehash: 6de88b82c9a663bfe6d2756fde6f1a7412a44b1e
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 1ae0f142ebd2252b1df414998c153d32127bc1b7
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="pay-based-on-registrations"></a>登録に基づく支払い
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックでは、作業者登録に基づいて給料がどのように計算されるかについて詳細に説明します。 これには、計算に使用できる設定オプションのさまざまな組み合わせが、どのように結果に影響するかを示す例が含まれます。 対象となる領域の一部を次に示します。
 
@@ -446,7 +446,7 @@ ms.lasthandoff: 03/23/2018
 ジョブはクエリに基づいています。 したがって、同じ計算グループに属している作業者など、複数の作業者の計画休暇を作成することができます。 単一の作業者に計画休暇がある場合、[出席] ページまたは [時間登録作業者] ページのいずれかから登録を入力できます。
 
 - [出席] ページから休暇登録を入力するには、[時刻と出勤] &gt; [照会およびレポート] &gt; [出席] &gt; [出席] を選択し、[休暇登録] を選択します。
-- [時間登録作業者] ページから休暇登録を入力するには、[時刻と出勤] &gt; [設定] &gt; [時間登録作業者] を選択し、 そして [時刻] タブ上の [時間割り当て] の下にある [休暇登録] を選択します。
+- [*<strong><em>時間登録作業者</em></strong>*] ページから休暇登録を入力するには、[<strong>時刻と出勤</strong>] &gt; [<strong>設定</strong>] &gt; [<strong>時間登録作業者</strong>] を選択し、[<strong>時刻</strong>] タブ上の [<strong>時間割り当て</strong>] の下にある [<strong>休暇登録</strong>] を選択します。
 
 **計画済休暇** レポートを使用して、作業者の計画休暇の概要を表示することができます。 このレポートを開くには、[時刻と出勤] &gt; [照会およびレポート] &gt; [休暇レポート] &gt; [計画済休暇] を選択します。
 

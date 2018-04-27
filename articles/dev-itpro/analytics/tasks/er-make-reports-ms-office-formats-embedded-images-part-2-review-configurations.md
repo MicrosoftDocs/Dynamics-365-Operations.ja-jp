@@ -1,5 +1,5 @@
 --- 
-title: "電子申告 (ER) 用に埋め込み画像付きで Microsoft Office 形式のレポートを作成するためにコンフィギュレーションを確認する"
+title: "Microsoft Office 形式のレポートを作成するためのコンフィギュレーションを確認する"
 description: "これらのステップを完了するには、まず、「ER 埋め込み画像付きで MS Office 形式のレポートを作成する (パート 1 - パラメータの設定)」タスク ガイドにあるステップを完了する必要があります。"
 author: NickSelin
 manager: AnnBe
@@ -16,15 +16,15 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: dcc162a4c0ba81079eefb7564ab037c1287acd92
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: fe58809c60fa27a605d84a61893ff569ded058ef
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
-# <a name="review-configurations-to-make-reports-in-microsoft-office-formats-with-embedded-images-for-electronic-reporting-er"></a>電子申告 (ER) 用に埋め込み画像付きで Microsoft Office 形式のレポートを作成するためにコンフィギュレーションを確認する
+# <a name="review-configurations-to-make-reports-in-microsoft-office-formats-with-embedded-images"></a>Microsoft Office 形式のレポートを作成するためのコンフィギュレーションを確認する
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 これらのステップを完了するには、まず、「ER 埋め込み画像付きで MS Office 形式のレポートを作成する (パート 1: パラメータの設定)」タスク ガイドにあるステップを完了する必要があります。
 

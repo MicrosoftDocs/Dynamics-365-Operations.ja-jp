@@ -1,5 +1,5 @@
 --- 
-title: "電子申告用 (ER) の他のコンポーネントからのコンフィギュレーションの依存関係を定義する"
+title: "他のコンポーネントのコンフィギュレーションの依存関係を定義する"
 description: "これらの手順を完了するには、最初にタスク ガイドでの手順を実行し、ER モデル マッピング コンフィギュレーションを管理し、および Microsoft Dynamics Lifecycle Services (LCS) にアクセスする必要があります。"
 author: NickSelin
 manager: AnnBe
@@ -16,15 +16,15 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: a1ccd440353e986d296de370506fb1951331e2cf
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: cbd65f0734f54ed497758faffb452e4f61ab2089
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
-# <a name="define-the-dependency-of-configurations-from-other-components-for-electronic-reporting-er"></a>電子申告用 (ER) の他のコンポーネントからのコンフィギュレーションの依存関係を定義する
+# <a name="define-the-dependency-of-configurations-from-other-components"></a>他のコンポーネントのコンフィギュレーションの依存関係を定義する 
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 これらの手順を完了するには、最初にタスク ガイドでの手順を実行し、ER モデル マッピング コンフィギュレーションを管理し、および Microsoft Dynamics Lifecycle Services (LCS) にアクセスする必要があります。
 

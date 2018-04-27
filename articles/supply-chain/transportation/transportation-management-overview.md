@@ -19,17 +19,16 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ba426692e2e404ab75e5730b8205115fc59e402f
-ms.openlocfilehash: 0ec45fcf7cebf530b3a5889a857214b97b3fffbb
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: f4dc2c15d35d93d1563c866b20ad7f2bbb5c8457
 ms.contentlocale: ja-jp
-ms.lasthandoff: 02/08/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="transportation-management-overview"></a>輸送管理の概要
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 for Finance および Operations の輸送管理機能の概要が示されます。
 
@@ -53,11 +52,11 @@ ms.lasthandoff: 02/08/2018
 </tr>
 <tr class="even">
 <td>会社の固有フリートを、出荷または集配のために使用でき、配送料が顧客に渡されます。</td>
-<td>出荷プロセスで、配送料を確認し、顧客に渡すために輸送管理を使用できます。 ただし、配送業者の請求書の調整プロセスは必要ではありません。</td>
+<td>出荷プロセスで、配送料を確認し、顧客に渡すために輸送管理を使用できます。 ただし、配送業者の請求書調整プロセスは必要ありません。</td>
 </tr>
 <tr class="odd">
-<td>会社の固有フリートは、出荷または集配のために使用できますが、製品の価格に配送が含まれるため、配送料は顧客には渡されません。</td>
-<td>多くの輸送管理機能は必要ではありません。 ただし、配送率を確認し、それに応じて販売価格を調整する場合、配送管理を使用できます。</td>
+<td>会社の固有フリートは、出荷または集配のために使用できますが、製品の価格に輸送費が含まれているため、配送料は顧客には渡されません。</td>
+<td>多くの輸送管理機能は必要ありません。 ただし、配送率を確認し、それに応じて販売価格を調整する場合、配送管理を使用できます。</td>
 </tr>
 <tr class="even">
 <td>同じ会社の別の法人によって物流サービスが提供されます。</td>

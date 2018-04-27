@@ -20,17 +20,16 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 41f629401731920a9cb6443ada8b1a34a70e8da9
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: b7d4530ecccf18d9370d84ff2b61be1514b80192
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="bom-designer-functionality"></a>BOM デザイナーの機能
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックは、[BOM デザイナ] ページを使用して、部品表 (BOM) のツリー構造の設計および操作をする方法について説明します。 [設定] をクリックすると、さまざまなコンフィギュレーションの選択や、ツリーの行に表示する情報の指定ができます。
 
@@ -66,7 +65,7 @@ BOM および工順に適用されるフィルタは、[BOM デザイナー] の
 <tbody>
 <tr class="odd">
 <td>製品分析コード</td>
-<td>選択された完成品が製品マスターの場合、主要な選択に対する有効な製品分析コードを定義できます。 <strong>注意: </strong>製品マスターではない製品の [フォーミュラ デザイナー] を開いた場合は、[<strong>フィルター</strong>] ダイアログ ボックスで製品分析コードを選択できません。</td>
+<td>選択された完成品が製品マスターの場合、主要な選択に対する有効な製品分析コードを定義できます。 <strong>注意:</strong> 製品マスターではない製品の BOM デザイナーを開いた場合は、<strong>[フィルター]</strong> ダイアログ ボックスで製品分析コードを選択できません。</td>
 </tr>
 <tr class="even">
 <td>サービス拠点</td>

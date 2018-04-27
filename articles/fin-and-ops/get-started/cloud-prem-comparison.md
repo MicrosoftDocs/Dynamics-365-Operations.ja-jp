@@ -18,16 +18,16 @@ ms.author: robinr
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: cd267f6e5623bd83bfbd21a49a72dd216259167a
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 911996f9d1854f027f5085725538bd87ba307c25
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="cloud-and-on-premises-feature-comparison"></a>クラウドとオンプレミスの機能比較
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックでは、各機能が次の製品で使用できるかを示します。
 
@@ -51,7 +51,7 @@ ms.lasthandoff: 03/26/2018
 | | コンフィギュレーション駆動型の拡張機能| 有 | 無 |
 | | 独自のデータ ウェアハウスへのデータのエクスポート| 有 | 有 |
 | | データ エンティティへの差分更新のエクスポート有効化 | 有 | 無 |
-| | 定期統合                 |有 | 無|
+| | データ統合                 |有 | 有|
 | ドキュメント管理| | 有| 有 |
 | 財務管理|  | 有 | 有 |
 | ヘルプ| | 有 | 無 |

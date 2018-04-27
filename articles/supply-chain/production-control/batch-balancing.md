@@ -19,19 +19,20 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 84e00ef62a995d37878de6b2786dbc2ee2277070
-ms.openlocfilehash: 8a1ec5a3b19d1022232527f4960617bd985bc2b3
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 7d00df6263530ba9fff4c246cb3593cd607f6719
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="batch-balancing"></a>バッチ バランシング
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
+このトピックでは、バッチ バランシング プロセスのサポート方法について説明します。 
 
-このトピックでは、バッチ バランシング プロセスのサポート方法について説明します。
+[Microsoft Dynamics 365 for Finance and Operations でのバッチ バランシングのビデオ](https://www.youtube.com/watch?v=4SNLWsU9KyI&feature=youtu.be) を参照してください。
 
 バッチ バランシング プロセスでは、生産バッチで使用する成分の量は、選択した製品バッチ内の有効成分の濃度から計算されます。
 
@@ -179,7 +180,7 @@ ms.lasthandoff: 03/12/2018
 
 -   製品が倉庫管理プロセスに対して有効になっている場合、倉庫管理プロセスの原則に従って、フォーミュラ明細行が倉庫にリリースされます。 フォーミュラ明細行が残高数量と一致する数量単位でリリースされ、有効成分に対して選択された、特定のバッチに対してリリースされます。
 
->   [!NOTE]
+> [!NOTE]
 >   フォーミュラ明細行をバッチ バランシング プロセスの一部としてのみ倉庫にリリースすることができます。 生産用の材料を倉庫にリリースするためのオプションはありますが、これらのオプションはフォーミュラ明細行には使用できません。
 
 -   製品が倉庫管理プロセスに対して有効になっていない場合は、フォーミュラを確認してリリースするときに、製品の生産ピッキング リストが製品に対して作成されます。

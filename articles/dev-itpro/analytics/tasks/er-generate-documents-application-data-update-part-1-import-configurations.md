@@ -1,5 +1,5 @@
 --- 
-title: "電子申告 (ER) のアプリケーション データ更新と共にドキュメントを生成するためのコンフィギュレーションのインポート"
+title: "アプリケーション データでドキュメントを生成するためのコンフィギュレーションをインポートする"
 description: "この手順にあるステップを完了するには、まず「ER コンフィギュレーション プロバイダーの作成および有効なプロバイダーとしてのマーク付け」にある手順を完了する必要があります。"
 author: NickSelin
 manager: AnnBe
@@ -16,15 +16,15 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 5d4f57ae2a309d9e15c1afe60c3e91d7d7eb3870
-ms.openlocfilehash: 6a945eb6c733d760cc723bfa7135d73bdf502724
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 87352293a78d6a356db49deffb930016a1bf836c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 04/13/2018
 
 ---
-# <a name="import-configurations-to-generate-documents-with-application-data-update-for-electronic-reporting-er"></a>電子申告 (ER) のアプリケーション データ更新と共にドキュメントを生成するためのコンフィギュレーションのインポート
+# <a name="import-configurations-to-generate-documents-with-application-data"></a>アプリケーション データでドキュメントを生成するためのコンフィギュレーションをインポートする
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順にあるステップを完了するには、まず「ER コンフィギュレーション プロバイダーの作成および有効なプロバイダーとしてのマーク付け」にある手順を完了する必要があります。
 

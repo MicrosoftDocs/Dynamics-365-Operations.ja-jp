@@ -19,17 +19,16 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 405a298ab26e343f50cb8dd80622a414695950a7
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 86070204769b866b947405436437eb0eb746de11
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="compensation-plans"></a>報酬プラン
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 報酬と給付金マネージャーは、報酬管理を使用して、組織の従業員の固定報酬プランおよび変動報酬プランを管理し、処理できます。
 
@@ -57,7 +56,7 @@ ms.lasthandoff: 11/03/2017
 <td>固定報酬アクションには 2 つの目的があります。
 <ul>
 <li>アクションで、従業員の報酬が変更されたときに記録する必要のある情報の種類を指定できます。 たとえば、昇給や降給などの変更と理由を記録するよう要求できます。</li>
-<li>アクションによって、固定報酬プランが処理されるときの計算を適用することを確認できます。  たとえば、[株主資本] タイプのアクションでは、従業員のレベルの最小基準点と従業員への支払を比較し、従業員が最低限以上の給料を受け取っていることを確認します。</li>
+<li>アクションによって、固定報酬プランが処理されるときの計算を適用することを確認できます。  たとえば、株主資本タイプのアクションでは、従業員のレベルの最小基準点と従業員への支払を比較し、従業員が最低限以上の給料を受け取っていることを確認します。</li>
 </ul></td>
 </tr>
 <tr class="even">
