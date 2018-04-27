@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="create-a-bill-of-lading"></a>船荷証券の作成
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックでは、倉庫管理のプロセスを使用して、船荷証券の作成方法を説明します。  
 

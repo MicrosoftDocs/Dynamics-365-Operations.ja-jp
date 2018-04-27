@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="manage-model-mapping-configurations-for-electronic-reporting-er"></a>電子申告 (ER) のモデル マッピングの構成を管理する
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 次のステップでは、「システム管理者」または「電子レポート開発者」ロールに割り当てられたユーザーが、個別の ER コンフィギュレーションの電子申告 (ER) モデル マッピングを管理する方法を説明します。 このタスク ガイドでは、サンプル会社 Litware, Inc. 用に、必要な ER コンフィギュレーションを作成します。このタスク ガイドを完了するには、まずタスク ガイド「ER コンフィギュレーション プロバイダーの作成および有効なプロバイダーとしてのマーク付け」にあるステップを完了する必要があります。 
 

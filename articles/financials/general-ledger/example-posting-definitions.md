@@ -19,17 +19,16 @@ ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1bbd9230219f11407bc7afbd59670c6287b77c02
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 10015952773ce0ae6ab36912df636919b572704d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="posting-definition-examples"></a>転記の定義の例
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事では、発注書の債務および予算割り当てに対する転記の定義の使用方法を示す例を示します。
 
@@ -57,7 +56,7 @@ ms.lasthandoff: 11/03/2017
 |-------------------------|----------------------|----------|
 | 勘定構造 - P&L | \*                   | 1        |
 
-* **照合勘定番号**フィールドの空白の値は、定義された勘定構造のすべての照合勘定が一致するルールの一部になります。
+<em>**[照合勘定番号]</em>* フィールドの空白の値は、定義された勘定構造のすべての照合勘定が一致するルールの一部になります。
 
 ### <a name="posting-definition--generated-entries"></a>転記の定義 – 生成されたエントリ
 
@@ -98,7 +97,7 @@ ms.lasthandoff: 11/03/2017
 |-------------------------|----------------------|----------|
 | 勘定構造 - P&L | \*                   | 1        |
 
-* **照合勘定番号**フィールドの空白の値は、定義された勘定構造のすべての照合勘定が一致するルールの一部になります。
+<em>**[照合勘定番号]</em>* フィールドの空白の値は、定義された勘定構造のすべての照合勘定が一致するルールの一部になります。
 
 ### <a name="posting-definition--generated-entries"></a>転記の定義 – 生成されたエントリ
 

@@ -1,5 +1,5 @@
 --- 
-title: "電子申告 (ER) 用の棚卸および集計を行うための計算を構成する"
+title: "棚卸および集計を行うための計算を構成する"
 description: "次の手順では、システム管理者または電子レポート開発者のロールに指定されたユーザーが、生成済みのテキスト出力に基づく計算と集計の電子レポート（ER）フォーマットをどのように環境設定するのかについて示します。"
 author: NickSelin
 manager: AnnBe
@@ -16,15 +16,15 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: f7b9035d8e7baf3c7ecb063b104b9a567be60840
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: d41ce101c0b038627e2baf6b5eac2410095af7ce
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
-# <a name="configure-computations-to-do-counting-and-summing-for-electronic-reporting-er"></a>電子申告 (ER) 用の棚卸および集計を行うための計算を構成する
+# <a name="configure-computations-to-do-counting-and-summing"></a>棚卸および集計を行うための計算を構成する
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 次の手順では、システム管理者または電子レポート開発者のロールに指定されたユーザーが、生成済みのテキスト出力に基づく計算と集計の電子レポート（ER）フォーマットをどのように環境設定するのかについて示します。 これらの手順はどのタイプの企業でも実施できます。
 
@@ -87,7 +87,7 @@ ms.lasthandoff: 09/29/2017
 36. [保存] をクリックします。
 37. ページを閉じます。
 38. 「収集したデータ キー値」のフィールドの編集のボタンをクリックします。
-39. In the Formula field, enter 'IF(Intrastat.CommodityRecord.Direction=Direction.Import, "Import", "Export")'.
+39. [式] フィールドに、「IF(Intrastat.CommodityRecord.Direction=Direction.Import, "Import", "Export")」を入力します。
     * IF(Intrastat.CommodityRecord.Direction=Direction.Import, "Import", "Export")  
 40. [保存] をクリックします。
 41. ページを閉じます。

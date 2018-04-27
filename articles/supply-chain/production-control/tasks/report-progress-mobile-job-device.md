@@ -25,7 +25,7 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="report-progress-on-a-mobile-job-device"></a>モバイル ジョブ デバイスでの進捗のレポート
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、ジョブ デバイスの登録フォームで生産ジョブの進行を開始してレポートする方法を示します。
 

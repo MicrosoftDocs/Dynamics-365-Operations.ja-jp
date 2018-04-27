@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="call-center-catalogs"></a>コール センターのカタログ
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 この記事は、Microsoft Dynamics 365 for Retail でのカタログのコール センター固有の機能について説明します。
 

@@ -28,8 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="fixed-assets-home-page"></a>固定資産ホーム ページ
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 固定資産は、個人または組織が所有するビル、乗物、土地、設備など、価値のある品目です。 
 

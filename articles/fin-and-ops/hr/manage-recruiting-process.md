@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="manage-a-recruiting-process"></a>採用プロセスの管理
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックでは、空いている職位の宣伝や申請者の採用、申請者および申請情報の追跡、申請者の面接、および 1 人以上の候補者を選択して組織内の空いている職位を埋めるといった活動を含む採用プロセスで、採用担当者が求人プロセスのステップを追跡するために使用できるコンセプトについて説明します。
 

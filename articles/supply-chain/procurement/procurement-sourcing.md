@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="procurement-and-sourcing-home-page"></a>調達ホーム ページ
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックでは、調達に使用できるヘルプ トピックとその他のリソースの一覧を示します。
 

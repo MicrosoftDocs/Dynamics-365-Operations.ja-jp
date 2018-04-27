@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="reserve-the-same-batch-for-a-sales-order"></a>販売注文に対する同一バッチの引当
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事では、在庫の単一のバッチに対して在庫引当を許可する製品の設定方法を説明します。
 

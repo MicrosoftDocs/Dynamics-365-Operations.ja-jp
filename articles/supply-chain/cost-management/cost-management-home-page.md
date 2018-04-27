@@ -3,12 +3,12 @@ title: "原価管理ホーム ページ"
 description: "原価管理では、原材料、半完成品、完成品、および進行中の作業資産の評価および会計処理ができます。"
 author: AndersGirke
 manager: AnnBe
-ms.date: 02/14/2017
+ms.date: 04/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
-ms.search.form: 
+ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace
 audience: Application User
 ms.reviewer: yuyus
 ms.search.scope: Core, Operations
@@ -29,7 +29,7 @@ ms.lasthandoff: 02/21/2018
 
 # <a name="cost-management-home-page"></a>原価管理ホーム ページ
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 [原価管理 (ビデオ)](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be) では、原材料、半完成品、完成品、および進行中の作業資産の評価および会計処理が使用できます。 これは定義、管理、および [在庫会計](cost-object.md) と [製造の会計](bom-calculations.md)のレポートのプロセスです。
 

@@ -28,9 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="position-forecasting"></a>職位予測
 
-[!include[banner](../includes/banner.md)]
-
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 作業者に関連付けられる経費は、多くの場合、組織のコストの大きな割合を占めます。 予測職位を使えばそれらの経費を計画し予算計画に含めることができます。
 

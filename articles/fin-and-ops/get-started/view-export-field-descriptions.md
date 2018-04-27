@@ -19,17 +19,16 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 6426f208a51ffbf72c6faa8cb281aba2984052d7
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 0164d64b8c37c19a3b8b13970dbda5927073eca8
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="view-and-export-field-descriptions"></a>フィールドの説明を表示およびエクスポートする
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事では、フィールドの説明を表示する方法と説明をエクスポートするフィールドの [説明] ページを使用する方法について説明します。
 
@@ -53,7 +52,7 @@ Finance and Operations の開発環境に対するアクセス権を持つ場合
 
 -   [**名前を選択**] フィールドに、ページの名前を入力します。 または、矢印をクリックしてすべてのページのリストを開き、一覧を参照またはフィルター処理します。
 
-ユーザー インターフェイス (UI) に表示されるページ名 (たとえば、**[Customers]**)、またはページを右クリックすると使用できる、**[CustTable]**などのページのコード名 (AOT 名) を使用することができます。 
+ユーザー インターフェイス (UI) に表示されるページ名 (たとえば、**[Customers]**)、またはページを右クリックすると使用できる、**[CustTable]** などのページのコード名 (AOT 名) を使用することができます。 
 
 ページの一覧にフィルターを適用するさまざまな方法については、この記事の後半の「ページを検索」を参照してください。 
 
@@ -77,7 +76,7 @@ Finance and Operations の開発環境に対するアクセス権を持つ場合
     -   複数の一致がある場合は、説明は表示されません。 ドロップダウン リストを開き、表示するページを選択する必要があります。
     -   入力した名前が別のページの名前の一部である場合は、ページの説明が表示されます。 ただし、ドロップダウン リストを開くと、その名前が含まれている追加のページが表示されます。
 
-例えば、**棚卸** を ****ページの選択**** フィールドに入力しても、説明は表示されません。 ドロップダウン リストを開くと、**Counting** という名前の 2 つのページが表示され、"Counting" という語を含む複数のページも表示されます。 AOT 名 **InventJournalCount** を持つページを選択すると、そのページのフィールドの説明が表示されます。 ただし、ドロップダウン リストを再度開くと、リスト内に AOT ページ名の一部として "InventJournalCount" を含むすべてのページが含まれます。
+例えば、[*<strong><em> ページの選択</em></strong>*] フィールドに [<strong>棚卸</strong>] と入力しても、説明は表示されません。 ドロップダウン リストを開くと、<strong>Counting</strong> という名前の 2 つのページが表示され、"Counting" という語を含む複数のページも表示されます。 AOT 名 <strong>InventJournalCount</strong> を持つページを選択すると、そのページのフィールドの説明が表示されます。 ただし、ドロップダウン リストを再度開くと、リスト内に AOT ページ名の一部として "InventJournalCount" を含むすべてのページが含まれます。
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 このセクションには、フィールドの説明を使用するときに発生する可能性がある問題の、トラブルシューティングに役立つ情報が用意されています。

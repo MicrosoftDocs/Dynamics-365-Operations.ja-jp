@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-retail-products"></a>小売製品の設定
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 この記事では、Microsoft Dynamics 365 for Retail での小売製品の設定方法について説明します。
 

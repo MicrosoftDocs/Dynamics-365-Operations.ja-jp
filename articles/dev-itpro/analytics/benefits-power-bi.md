@@ -26,7 +26,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="benefits-power-bi-content"></a>給付金 Power BI コンテンツ
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックでは、**給付金** Microsoft Power BI コンテンツについて説明します。 含まれているレポートへのアクセス方法、およびコンテンツを作成するために使用したデータモデルとエンティティについて説明します。
 

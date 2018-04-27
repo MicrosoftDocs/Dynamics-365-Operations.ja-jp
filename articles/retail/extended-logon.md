@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-extended-logon-functionality-for-cloud-pos-and-mpos"></a>クラウドの POS と MPOS の拡張ログオン機能の設定
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 このトピックでは、クラウド POS と Retail Modern POS (MPOS) の拡張ログオンを設定するためのオプションについて説明します。
 

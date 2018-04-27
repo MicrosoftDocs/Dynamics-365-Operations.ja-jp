@@ -24,7 +24,7 @@ ms.lasthandoff: 10/31/2017
 ---
 # <a name="set-up-customers-and-customer-bank-accounts-for-iso20022-direct-debits"></a>顧客の設定と ISO20022 口座引落用の顧客銀行口座の設定
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 このタスクでは、顧客の銀行口座の設定、および ISO20022 口座引落などの顧客支払ファイルを生成するために必要な顧客口座引落の委任状の設定について説明します。 設定された顧客支払形式によって、顧客または顧客の銀行口座について、この手順に含まれていない追加情報が必要になる場合があります。 
 

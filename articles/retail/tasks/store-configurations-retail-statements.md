@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="store-configurations-for-retail-statements"></a>小売明細書の店舗のコンフィギュレーション
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 この手順では、小売明細書の作成される影響を及ぼす、転記または小売店舗のコンフィギュレーションを説明します。 小売店舗の財務分析コードは別の手順に含まれます。 この手順では、USMF というデモ会社を使用します。
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="configure-a-worker"></a>作業者のコンフィギュレーション
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 この手順では、POSの販売手数料が適用される販売員としての小売従事者を環境設定する方法を示します。 この手順では、デモ データの会社 USRT を使用します。
 

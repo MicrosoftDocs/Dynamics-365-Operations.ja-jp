@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="nonconformance-management"></a>不適合管理
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事は、不適合を使用するために必要な基本設定について説明します。 品質指示を使用する場合、追加の設定が必要になります。
 

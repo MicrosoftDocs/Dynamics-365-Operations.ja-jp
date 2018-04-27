@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-consolidation-groups-and-additional-consolidation-accounts"></a>連結グループおよび追加の連結勘定の作成
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、連結勘定グループの作成方法と、グループへの勘定の追加方法について説明します。 この手順では、デモ データ会社 USMF を使用します。
 

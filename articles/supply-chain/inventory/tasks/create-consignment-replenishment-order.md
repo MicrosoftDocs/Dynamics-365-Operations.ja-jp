@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-consignment-replenishment-order"></a>委託販売補充注文の作成
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、委託製品の補充注文の作成方法が説明され、仕入先から該当する委託製品在庫までの予定配送を追跡確認できます。 このほか、委託製品が仕入先所有の手持在庫として登録されるように製品の受領を記録する方法についても記述されています。 この作業は通常、調達担当者が行います。 デモ データの会社 USMF でこのガイドを使用できます。 この手順は、Dynamics 365 for Operations、バージョン 1611 に追加された機能です。
 

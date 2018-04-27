@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="register-sales-commissions"></a>販売コミッションの登録
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順は、販売コミッションを計算および登録する方法を示します。 この手順は、デモ データの会社 USMF で、または独自のデータで実行できます。 このガイドを開始する前に、必要なすべてのコミッション計算の設定ができていることを確認するために、「販売コミッション ルールの設定」と呼ばれるガイドを実行します。
 

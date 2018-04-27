@@ -19,17 +19,16 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f711ef739e8b885f2f09586f34775e826b619c82
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: e0033461e7cd2601993c006aba2ec7c8f6ac0c89
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>倉庫作業のモバイル デバイスの設定
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事では、モバイル デバイス上で作業を行う倉庫作業者が使用するメニュー項目をコンフィギュレーションする方法を説明します。
 
@@ -209,7 +208,7 @@ ms.lasthandoff: 11/03/2017
 </thead>
 <tbody>
 <tr class="odd">
-<td>なし</td>
+<td>None</td>
 <td>この既定値は作業を処理しません。</td>
 </tr>
 <tr class="even">
@@ -306,7 +305,7 @@ ms.lasthandoff: 11/03/2017
 <td>サイクル カウントのしきい値を無効にする場合は、このオプションを選択します。 このオプションを選択すると、しきい値を超えたときにサイクル カウント作業は作成されません。</td>
 </tr>
 <tr class="even">
-<td>バッチ廃棄コードを表示します</td>
+<td>バッチ状態コードを表示します</td>
 <td>このオプションを選択すると、バッチ廃棄コードが表示されます。 たとえば、返品されたバッチを受け入れるときに、バッチ廃棄コードを表示できます。 作業者は、これによって、バッチの状態や品質を評価して、適切なコードを選択できます。 バッチ廃棄コードのルールによって、バッチを他の倉庫プロセスで使用できるようにするかどうかが決まります。 このオプションを選択しない場合は、次のバッチ廃棄コードのうち 1 つが使用されます:
 <ul>
 <li>新しいバッチ番号を受け取った場合は、品目モデル グループで指定されている既定のバッチ廃棄コード</li>
@@ -368,7 +367,7 @@ ms.lasthandoff: 11/03/2017
 </tr>
 <tr class="odd">
 <td>システム グループ化ラベル</td>
-<td>Microsoft Dynamics 365 for Finance and Operations によってピッキング作業がグループ化されるときにスキャンする内容を作業者に指示するテキストを入力します。 たとえば、<strong>ShipmentId</strong> フィールドを使用して出荷別にピッキング作業をグループ化する場合、このフィールドに <strong>出荷 ID</strong> を入力することができます。 このフィールドは、システムによってグループ化された既存の作業を使用するメニュー項目の作成を要求します。 また、<strong>システム グループ化フィールド</strong> フィールドでグループ化するフィールドを選択する必要があります。</td>
+<td>Microsoft Dynamics 365 for Finance and Operations によってピッキング作業がグループ化されるときにスキャンする内容を作業者に指示するテキストを入力します。 たとえば、[<strong>ShipmentId</strong>] フィールドを使用して出荷別にピッキング作業をグループ化する場合、このフィールドに<strong>出荷 ID</strong> を入力することができます。 このフィールドは、システムによってグループ化された既存の作業を使用するメニュー項目の作成を要求します。 また、<strong>システム グループ化フィールド</strong> フィールドでグループ化するフィールドを選択する必要があります。</td>
 </tr>
 <tr class="even">
 <td>既定のデータを使用します</td>

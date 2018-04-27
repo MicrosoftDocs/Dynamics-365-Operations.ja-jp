@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-activity-relation-successor"></a>活動リレーションの作成: 後続処理
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 リーン生産フローの活動フローは活動関係を通して文書化されています。 このレコードは、活動関係を作成する方法を示します。
 

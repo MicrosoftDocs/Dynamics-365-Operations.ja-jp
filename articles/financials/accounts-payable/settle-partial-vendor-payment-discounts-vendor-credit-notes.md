@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="settle-a-partial-vendor-payment-that-has-discounts-on-vendor-credit-notes"></a>仕入先訂正票で割引がある一部の仕入先支払の決済
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事は、クレジット メモが請求書に対して決済されるシナリオについて説明します。
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-vendor-master-and-purchase-order-to-be-target-of-consolidated-invoice-japan"></a>月次締め請求書の対象とする仕入先マスターおよび発注書の設定 (日本)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 日本では通常、仕入先はトランザクションに月次締め請求書を使用します。 
 

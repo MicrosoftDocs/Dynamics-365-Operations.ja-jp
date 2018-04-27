@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="warehouse-configuration"></a>倉庫のコンフィギュレーション
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事は、倉庫をコンフィギュレーションする方法について説明します。 これには、倉庫レイアウトおよび倉庫プロセスを有効にする方法に関する情報が含まれます。
 

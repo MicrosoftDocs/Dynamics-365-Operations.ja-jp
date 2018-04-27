@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="accounting-distributions-and-subledger-journal-entries-for-free-text-invoices"></a>自由書式の請求書の勘定配布と補助元帳仕訳
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 勘定配布は収益、税金、雑費などの金額がどのように自由書式の請求書に計上されるかを定義するために使用されます。 自由書式の請求書が仕訳されたときに計上する必要のあるすべての金額に勘定配布があります。
 

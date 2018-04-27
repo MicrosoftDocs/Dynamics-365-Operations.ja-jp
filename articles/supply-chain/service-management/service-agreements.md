@@ -28,8 +28,7 @@ ms.lasthandoff: 02/19/2018
 
 # <a name="service-agreements"></a>サービス契約
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 サービス契約では、標準的なサービス訪問で使用されるリソース、およびそれらのリソースに関する顧客への請求方法を定義できます。
 

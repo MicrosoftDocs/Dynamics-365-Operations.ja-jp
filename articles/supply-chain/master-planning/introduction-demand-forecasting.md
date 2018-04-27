@@ -29,8 +29,7 @@ ms.lasthandoff: 02/13/2018
 
 # <a name="demand-forecasting-overview"></a>需要予測の概要
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 需要予測は、販売注文からの独立要求および顧客注文のすべての減結合ポイントで依存要求を予測する場合に使用されます。 拡張された需要予測の削減ルールは、大量のカスタマイズに理想的なソリューションを提供します。
 

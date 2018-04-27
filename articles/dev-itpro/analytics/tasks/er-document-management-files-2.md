@@ -1,5 +1,5 @@
 --- 
-title: "電子申告 (ER) 用の形式出力でドキュメント管理ファイルを使用するためのデータ モデルを拡張する"
+title: "形式出力でドキュメント管理ファイルを使用するためのデータ モデルを拡張する"
 description: "次の手順では、システム管理者または電子レポート開発者のロールに指定されたユーザーが、ER出力のドキュメント管理ファイル（添付）を使用するために電子レポート（ER）フォーマットをどのように環境設定しているのか説明します。"
 author: NickSelin
 manager: AnnBe
@@ -16,15 +16,15 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: ebbd442c9f69290dc995c05462ca70b554f7d9f2
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: bde8c612af22ba6bf4561732399fcf2cb1b5c9b3
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
-# <a name="extend-data-model-to-use-document-management-files-in-format-outputs-for-electronic-reporting-er"></a>電子申告 (ER) 用の形式出力でドキュメント管理ファイルを使用するためのデータ モデルを拡張する
+# <a name="extend-data-model-to-use-document-management-files-in-format-outputs"></a>形式出力でドキュメント管理ファイルを使用するためのデータ モデルを拡張する
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 次の手順では、システム管理者または電子レポート開発者のロールに指定されたユーザーが、ER出力のドキュメント管理ファイル（添付）を使用するために電子レポート（ER）フォーマットをどのように環境設定しているのか説明します。 これらの手順はどのタイプの企業でも実施できます。
 

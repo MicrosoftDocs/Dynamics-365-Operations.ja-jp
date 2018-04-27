@@ -20,17 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: bd85f89917659ac9c94590bace765b2123d6e556
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 591b1cd739bb3be61299f33f180ca7c264d21a35
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="coverage-settings"></a>補充設定
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 マスタ スケジューリングでは補充設定を使用して在庫品目要求を計算します。 
 
@@ -46,7 +45,7 @@ ms.lasthandoff: 11/03/2017
 
 <!-- -->
 
--   分析コード グループの補充設定を指定します。 [製品情報管理] &gt; [共通] &gt; [リリースされた製品] の順にクリックします。 **リリース済製品の詳細**ページで、[一般] タブ、[管理] グループ、[保管分析コード グループ] リンクの順にクリックします。 **保管分析コード グループ** ページで**分析コード別補充計画**フィールドを選択して、保管分析コード グループの分析コードについて補充設定を作成します。 コンフィギュレーション、色、サイズ、スタイルなどすべての製品分析コードで、[分析コード別補充計画] フィールドを選択する必要があります。
+- 分析コード グループの補充設定を指定します。 <strong>[製品情報管理] &gt; [共通] &gt; [リリースされた製品]</strong> の順にクリックします。 <strong>リリース済製品の詳細 **ページ**で、[一般]</strong> タブ、<strong>管理</strong>グループ、<strong>保管分析コード グループ</strong> リンクの順にクリックします。 <strong>保管分析コード グループ</strong> ページで<strong>分析コード別補充計画</strong>フィールドを選択して、保管分析コード グループの分析コードについて補充設定を作成します。 コンフィギュレーション、色、サイズ、スタイルなどすべての製品分析コードで、<strong>[分析コード別補充計画]</strong> フィールドを選択する必要があります。
 
 
 

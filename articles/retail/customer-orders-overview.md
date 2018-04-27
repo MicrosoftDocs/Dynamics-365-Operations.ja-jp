@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="customer-orders-overview"></a>顧客注文の概要
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 このトピックでは、Retail Modern POS (MPOS) の顧客注文に関する情報を提供します。 顧客注文は、特別注文としても知られています。 このトピックには、関連パラメーターおよびトランザクション フローのディスカッションが含まれています。
 

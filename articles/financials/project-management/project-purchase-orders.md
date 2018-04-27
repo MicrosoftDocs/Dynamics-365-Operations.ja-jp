@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="purchase-orders-for-a-project"></a>プロジェクトの発注書
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事では、プロジェクトの発注書を作成するために使用できるさまざまな方法について説明します。 発注書を作成する方法は、発注書の目的、購入する品目の消費時期、プロジェクトに請求される時期で決まります。
 

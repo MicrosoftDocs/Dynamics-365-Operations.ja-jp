@@ -24,7 +24,7 @@ ms.lasthandoff: 11/02/2017
 ---
 # <a name="look-up-applicable-prices-and-discounts"></a>適用できる価格および割引の検索
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順は、特定の顧客に対して現在有効な製品の価格や割引を、販売注文を作成せずに検索する方法を示します。 この手順では、特定の例について説明します。必要な値を選択するには、USMF のデモ会社を使用したこの例に従う必要があります。
 

@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="procurement-catalogs"></a>調達カタログ
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事は、購買担当者が調達カタログを設定および管理する方法について高レベルで説明します。 調達カタログは、会社の従業員が内部で使用するために注文する品目およびサービスを定義します。
 

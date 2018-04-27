@@ -27,7 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="financial-dimensions"></a>財務分析コード
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックは、財務分析コードのさまざまなタイプと設定方法を説明します。
 

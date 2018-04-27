@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-policies-for-procurement-category-hierarchies"></a>調達カテゴリ階層に対するポリシーの設定
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 カテゴリの製品を発注するルールを設定するには、この手順を使用します。 ルールは特定の購入ポリシーに定義されます。 カテゴリ アクセス ルールは、従業員が要求を作成したときにどの調達カテゴリにアクセス許可があるかを管理します。 要求が作成されると、購入ポリシーおよびカテゴリ アクセス ルールは、従業員が属している法人および業務単位によって適用され決定されます。 デモ データの会社 USMF でこの手順を使用できます。 通常、このタスクを実施するのは、購買マネージャーです。
 

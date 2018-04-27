@@ -19,17 +19,16 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d7a672b80a0da7ab05acf5b5efe041f0f89c0042
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 5081b3ff940167f305a6e17f97e246e5f8000185
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="manual-depreciation"></a>手動減価償却
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事は、手動減価償却方法の減価償却の概要を示します。
 
@@ -67,7 +66,7 @@ ms.lasthandoff: 11/03/2017
 | 1 月  | (11,000 – 1,000) × 10% = 1,000 |
 | 2 月 | (11,000 – 1,000) × 50% = 5,000 |
 
-[期間の頻度] フィールド**で [**半期に 1 回**] を選択した場合は、2 つの手動スケジュール間隔が設定されます。 次の表にはこれら 2 間隔の減価償却量が表示されます。
+*<strong><em>期間の頻度</em>* フィールド</strong>で <strong>半期に 1 回</strong> を選択した場合は、2 つの手動スケジュール間隔が設定されます。 次の表にはこれら 2 間隔の減価償却量が表示されます。
 
 | 間隔    | 算出償却額            |
 |-------------|--------------------------------|

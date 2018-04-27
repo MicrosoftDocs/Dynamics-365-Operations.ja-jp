@@ -16,15 +16,15 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 63a02a64ff28531bae950f1b61d9167eaa0b0373
-ms.openlocfilehash: 2ca5f541abe4f85187aaefdbb03ca84e4f314b3c
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 006f3d4b30711651e389dd76f871de1214c158d1
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="develop-a-succession-plan"></a>継続的計画の作成
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 組織が育ち、継続的計画を考慮すると、同様のスキルを持つ別の人物を見つけたい場合があります。  スキル マッピングは、既存の従業員および応募者を分析して、評価した従業員のスキル セットに一致するかどうかを確認することができます。 この手順の作成に使用するデモ データの会社は USMF です。
 

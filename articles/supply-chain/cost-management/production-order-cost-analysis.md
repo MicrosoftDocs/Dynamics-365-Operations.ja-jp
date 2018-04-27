@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="production-order-cost-analysis"></a>製造オーダーの原価分析
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事は、完了した製造オーダーおよび現在の製造オーダーに対して実行できる原価分析について説明します。 [価格計算] ページまたは [原価見積] レポートを使用して、見積原価および実際原価を分析できます。 コンポーネント品目、工順工程、および間接原価ごとに見積原価と実績原価 (および数量) についての情報を表示できます。
 

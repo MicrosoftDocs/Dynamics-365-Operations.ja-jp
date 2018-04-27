@@ -16,15 +16,15 @@ ms.author: dkrame
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: c902f532e189753a375d4b48edd9ef0b6d74020e
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 110dde293fea31f82fb4b2b1c54bf96d5baa04b3
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="set-up-positions"></a>職位の設定
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 職位は組織階層の下位レベルの重要な要素です。 職位は、職務の個々のインスタンスです。 たとえば、「販売マネージャ (東部)」という職位は、「販売マネージャ」という職務に関連付けられている職位の 1 つです。 職位は部問内に存在し、一人の作業者だけが関連付けられている可能性があります。 このタスクでは、職位の作成に必要な手順を説明します。 この手順は、人事管理の専門家を対象としています。
 

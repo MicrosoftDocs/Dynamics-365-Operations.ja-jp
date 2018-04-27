@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="resolve-discrepancies-during-invoice-totals-matching"></a>請求書の合計価格の照合における差異の解決
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 請求書照合の検証の一つのタイプは、請求合計の照合です。 システムが請求合計の照合をするよう指定するには、[**買掛金勘定パラメータ**] ページの [**請求書の検証**] タブで [**請求合計の照合**] オプションを [**はい**] に設定します。 
 

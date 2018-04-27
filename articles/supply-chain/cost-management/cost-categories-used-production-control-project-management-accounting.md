@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="cost-categories-used-in-production-control-and-project-management-accounting"></a>生産管理、およびプロジェクト管理会計で使用される原価カテゴリ
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 生産作業によっては、プロジェクト時間の見積と報告に適用できます。 この記事は、生産とプロジェクトのために、これらの種類の生産作業に定義する必要のある原価カテゴリに関する情報を提供します。
 

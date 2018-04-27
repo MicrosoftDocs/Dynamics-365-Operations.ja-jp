@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-working-time-scheduling-properties"></a>作業時間スケジューリング プロパティの作成
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 作業時間のスケジューリングのプロパティを使用して、作業時間の間隔を分類し、オペレータが考慮する必要のある設定を定義します。 この手順では、作業時間のスケジューリングのプロパティおよび関連するプロパティ値を定義する方法を示します。 デモ データ会社 USMF または独自のデータを使用してこの手順の説明を見ることができます。
 

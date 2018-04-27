@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="monitor-sales-and-margin-performance"></a>販売と利益幅のパフォーマンスの監視
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Microsoft Dynamics 365 for Retail を使用して、リアル タイムに販売と利益幅のパフォーマンスを監視できます。
 

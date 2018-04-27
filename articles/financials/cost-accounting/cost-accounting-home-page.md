@@ -3,12 +3,12 @@ title: "原価会計ホーム ページ"
 description: "このトピックでは、原価会計に使用できるヘルプ トピックとその他のリソースの一覧を示します。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 08/20/2017
+ms.date: 04/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
-ms.search.form: CAMCostControlWorkspace, CAMCostControlWorkspaceConfiguration
+ms.search.form: CAMCostControlWorkspace, CAMCostControlWorkspaceConfiguration, CAMCostAccountingLedgerAdminWorkspace
 audience: Application User
 ms.reviewer: yuyus
 ms.search.scope: Core, Operations
@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="cost-accounting-home-page"></a>原価会計ホーム ページ
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## <a name="learning-map"></a>学習マップ 
 
@@ -37,6 +37,7 @@ ms.lasthandoff: 11/03/2017
 [![原価会計の学習マップ](./media/cost-accounting-map.png)](./media/cost-accounting-map.png)
 
 ## <a name="quick-links"></a>クイック リンク
+
 |      |   |
 |------|---|
 |  [基本エンティティ (e ラーニング) のコンフィギュレーション](https://mbspartner.microsoft.com/Home) (CustomerSource アカウントが必要です)  |[分析コードの作成](cost-elements.md)  |

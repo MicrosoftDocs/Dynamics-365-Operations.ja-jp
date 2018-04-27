@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="consolidation-account-groups-and-additional-consolidation-accounts"></a>連結勘定グループおよび追加連結勘定
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックでは、連結勘定グループおよび追加連結勘定に関する情報、および Microsoft Dynamics 365 for Finance and Operations での使用方法を説明します。
 

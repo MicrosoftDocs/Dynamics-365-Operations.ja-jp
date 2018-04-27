@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="partial-location-cycle-counting"></a>部分的な場所の循環棚卸
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 循環棚卸計画は、実際のカウント操作をガイドします。 ある特定の場所にあるすべての手持在庫の代わりに、特定の製品と製品の種類のみをカウントするように要求することができます。
 

@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="positive-pay-overview"></a>確認後支払の概要
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事は確認後支払についての情報を提供し、銀行に提出する小切手の電子リストを生成するのに使用されます。 
 

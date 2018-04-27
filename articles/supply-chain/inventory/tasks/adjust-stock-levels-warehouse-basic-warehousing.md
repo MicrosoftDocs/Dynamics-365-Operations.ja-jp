@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="adjust-stock-levels-in-the-warehouse-basic-warehousing"></a>倉庫の在庫レベルの調整 (基本倉庫)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、倉庫にある製品の在庫レベルを調整するために、在庫調整仕訳帳を作成して転記するプロセスを説明します。 これを開始する前に、在庫調整用の在庫仕訳帳名を設定してある必要があります。 デモ データ会社 USMF または独自のデータを使用してこの手順の説明を見ることができます。 通常、これらのタスクを実施するのは、倉庫の従業員です。
 

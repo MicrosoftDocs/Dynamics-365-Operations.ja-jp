@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="direct-deliveries"></a>直納
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事では、直納について説明します。 仕入先から顧客に直接配送する出荷のことを、直納といいます。
 

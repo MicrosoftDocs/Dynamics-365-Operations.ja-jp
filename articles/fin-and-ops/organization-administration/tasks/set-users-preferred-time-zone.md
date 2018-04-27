@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-a-users-preferred-time-zone"></a>ユーザーの優先タイム ゾーンの設定
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 次の手順は、システム管理者ロールのユーザーがユーザーのタイム ゾーンを設定する方法について説明します。
 

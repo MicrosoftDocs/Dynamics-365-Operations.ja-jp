@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="explosion-of-a-bom-version"></a>BOM バージョンの展開
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事では、部品表 (BOM) のバージョンの展開を含むマスター プランのシナリオを説明します。
 

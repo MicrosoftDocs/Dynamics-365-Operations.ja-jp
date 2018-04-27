@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="manage-order-holds"></a>注文保留の管理
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、顧客の販売注文を保留に設定する方法、注文保留のチェックアウトの処理の方法、および注文保留の解除方法について説明します。 注文はさまざまな理由で保留に設定される場合があります。 たとえば、顧客の住所や支払方法が確認できるまで、またはマネージャーが顧客の与信限度額を確認できるまで、注文を保留にすることがあります。 注文の保留中、倉庫では出荷の処理はできません。 
 

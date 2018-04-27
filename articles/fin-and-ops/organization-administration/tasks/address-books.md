@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="configure-address-books"></a>アドレス帳の構成
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 組織に追加のアドレス帳を設定するには、この手順と、グローバル アドレス帳と追加のアドレス帳トピックのコンフィギュレーションの計画で行った決定を使用します。
 

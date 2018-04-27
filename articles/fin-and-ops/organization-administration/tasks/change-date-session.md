@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="change-the-date-for-the-session"></a>セッションの日付の変更
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 既定では、仕訳入力や元伝票を入力および転記するときに、現在の日付が使用されます。 現在のセッションに使用される日付を変更できます。 仕訳入力や元伝票の日付をさかのぼるには、この機能を必要に応じて使用します。
 

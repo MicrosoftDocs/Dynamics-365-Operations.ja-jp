@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="sales-and-marketing"></a>販売とマーケティング
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 販売およびマーケティングを使用して、販売フローのさまざまなタイプのデータを取得、保存、および使用できます。 このデータには、元の販売戦略、将来のフォローアップ アクション、および追加販売が含まれます。
 

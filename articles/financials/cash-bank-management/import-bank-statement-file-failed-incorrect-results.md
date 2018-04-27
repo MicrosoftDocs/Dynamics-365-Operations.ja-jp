@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="bank-statement-file-import-troubleshooting"></a>口座取引明細書ファイルのインポートのトラブルシューティング
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 銀行からの口座取引明細書ファイルが、Microsoft Dynamics 365 for Finance and Operations がサポートするレイアウトと一致することが重要です。 口座取引明細書の基準が厳しいために、ほとんどの統合が正しく動作します。 ただし、明細書ファイルがインポートできない場合または不正確な結果が含まれている場合があります。 通常、これらの問題は口座取引明細書ファイルの小さな差異によって引き起こされます。 この記事は、これらの差異を修正し問題を解決する方法を説明します。
 

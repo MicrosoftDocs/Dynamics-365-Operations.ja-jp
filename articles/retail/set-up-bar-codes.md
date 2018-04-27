@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-bar-codes"></a>バーコードの設定
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 この記事では、Microsoft Dynamics 365 for Retail でのバーコードの使用方法について説明します。
 

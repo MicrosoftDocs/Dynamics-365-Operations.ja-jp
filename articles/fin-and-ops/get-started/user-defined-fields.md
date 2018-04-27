@@ -26,9 +26,9 @@ ms.lasthandoff: 03/23/2018
 
 # <a name="custom-fields"></a>カスタム フィールド
 
-[!include[banner](../includes/banner.md)] 
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[banner](../includes/pre-release.md)] 
+[!INCLUDE [banner](../includes/pre-release.md)]
 
 Microsoft Dynamics 365 for Finance and Operations が、広範囲なビジネス プロセスを管理しすぐに使えるフィールドの広範なセットを作成する間、システムで追加情報を追跡する会社がたびたび必要です。 このニーズに合わせて、Finance and Operations は、機能へのアクセス許可を提供された自社に合うアプリケーションを調整するカスタム フィールドを作成できます。 
 

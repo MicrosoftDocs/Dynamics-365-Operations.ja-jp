@@ -1,5 +1,5 @@
 --- 
-title: "電子申告 (ER) 用に埋め込み画像付きで Microsoft Office 形式のレポートを生成する"
+title: "画像が埋め込まれた Microsoft Office 形式のレポートを生成する"
 description: "次のステップでは、「システム管理者」または「電子申告開発者」ロールのユーザーが、電子申告 (ER) のコンフィギュレーションを設計し、埋め込み画像を含む MS Office 形式 (Excel および Word) で電子ドキュメントを生成する方法を説明します。"
 author: NickSelin
 manager: AnnBe
@@ -16,15 +16,15 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 4fa27996e59164126f7900edf4a509ca9273e7c1
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: e2ab89857f4bf4844123508837c8faa504bc8839
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
-# <a name="generate-reports-in-microsoft-office-formats-with-embedded-images-for-electronic-reporting-er"></a>電子申告 (ER) 用に埋め込み画像付きで Microsoft Office 形式のレポートを生成する
+# <a name="generate-reports-in-microsoft-office-formats-with-embedded-images"></a>画像が埋め込まれた Microsoft Office 形式のレポートを生成する
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 次のステップでは、「システム管理者」または「電子申告開発者」ロールのユーザーが、電子申告 (ER) のコンフィギュレーションを設計し、埋め込み画像を含む MS Office 形式 (Excel および Word) で電子ドキュメントを生成する方法を説明します。
 

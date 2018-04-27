@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="enter-account-and-dimension-combinations-segmented-entry-control"></a>勘定と分析コードの組み合わせの入力 (セグメント化されたエントリのコントロール)
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事は、勘定と分析コードの組み合わせまたは勘定科目を入力する方法について説明します。 入力経験は、多くの場合、セグメント化されたエントリのコントロールと呼ばれます。
 
@@ -112,7 +111,7 @@ ms.lasthandoff: 11/03/2017
 </tbody>
 </table>
 
- 
+
 
 
 

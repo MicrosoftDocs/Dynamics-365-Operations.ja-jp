@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="organizations-and-organizational-hierarchies"></a>組織と組織階層
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 組織とは、業務プロセスを実行や目標の達成を協力して行う人々の集まりです。 組織階層とは、業務を構成する組織の関係を表すものです。
 

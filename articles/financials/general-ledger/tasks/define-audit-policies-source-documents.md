@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-audit-policies-for-source-documents"></a>元伝票の監査ポリシーの定義
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順は、監査ポリシー ルールを設定および実行する方法を示します。 この例では、ホテル経費タイプの経費精算書を使用しています。 この手順では、USMF というデモ会社を使用します。 監査担当者ロールには、これらのタスクを実行する適切なアクセス許可があります。
 

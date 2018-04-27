@@ -26,7 +26,7 @@ ms.lasthandoff: 03/07/2018
 
 # <a name="credit-and-collections-management-power-bi-content"></a>与信および回収管理 Power BI コンテンツ
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックでは、**与信および回収管理** Microsoft Power BI コンテンツの内容について説明します。 Power BI レポートにアクセスする方法を説明し、コンテンツを作成するために使用したデータ モデルおよびエンティティについての情報を提供します。
 
@@ -69,22 +69,24 @@ ms.lasthandoff: 03/07/2018
 
 次のデータは、**与信および回収管理** Power BI コンテンツのレポートに入力するために使用されます。 このデータは、エンティティ ストアで実施される集計の測定として表されます。 エンティティ ストアは、分析に最適化された Microsoft SQL Server データベースです。 詳細については、「[エンティティ ストアとの Power BI の統合](../../dev-itpro/analytics/power-bi-integration-entity-store.md)」を参照してください。
 
-| エンティティ                                      | キー集計の測定           | データ ソース                                 | フィールド                                                      | 説明 |
-|---------------------------------------------|--------------------------------------|---------------------------------------------|------------------------------------------------------------|-------------|
-| CustCollectionsBIActivitiesAverageCloseTime | NumOfActivities, AveragecClosedTime  | smmActivities                               | AverageOfChildren(AverageClosedTime) Count(ActivityNumber) | 終了した活動の数およびそれらの活動を終了する平均時間。 |
-| CustCollectionsBIActivitiesOpen             | ActivityNumber                       | smmActivities                               | Count(ActivityNumber)                                      | オープンな活動の数。 |
-| CustCollectionsBIAgedBalances               | AgedBalances                         | CustCollectionsBIAgedBalancesView           | Sum(SystemCurrencyBalance)                                 | 指定の期間に達している残高の合計。 |
-| CustCollectionsBIBalancesDue                | SystemCurrencyAmount                 | CustCollectionsBIBalanceDueView             | Sum(SystemCurrencyAmount)                                  | 期限切れの金額。 |
-| CustCollectionsBICaseAverageCloseTIme       | NumOfCases, CaseAverageClosedTime    | CustCollectionsCaseDetail                   | AverageOfChildren(CaseAverageClosedTime) Count(NumOfCases) | 終了したケースの数およびそれらのケースを終了する平均時間。 |
-| CustCollectionsBICasesOpen                  | CaseId                               | CustCollectionsCaseDetail                   | Count(CaseId)                                              | オープンなケースの数。 |
-| CustCollectionsBICollectionLetter           | CollectionLetterNum                  | CustCollectionLetterJour                    | Count(CollectionLetterNum)                                 | オープンな督促状の数。 |
-| CustCollectionsBICollectionLetterAmount     | CollectionLetterAmounts              | CustCollectionsBIAccountsReceivables        | Sum(SystemCurrencyAmount)                                  | 転記済督促状の残高。 |
-| CustCollectionsBICollectionStatus           | CollectionStatusAmounts              | CustCollectionsBIAccountsReceivables        | Sum(SystemCurrencyAmount)                                  | 回収状態のトランザクションの残高。 |
-| CustCollectionsBICredit                     | CreditExposed, AmountOverCreditLimit | CustCollectionsBICreditView                 | Sum(CreditExposed), Sum(AmountOverCreditLimit)             | クレジット エクスポージャおよび顧客が与信限度額を超えている金額の合計値。 |
-| CustCollectionsBICustOnHold                 | ブロック                              | CustCollectionsBICustTable                  | Count(Blocked)                                             | 保留中の顧客の数。 |
-| CustCollectionsBIDSO                        | DSO30                                | CustCollectionsBIDSOView                    | AverageOfChildren(DSO30)                                   | 30 日の売掛債権回転日数 |
-| CustCollectionsBIExpectedPayment            | ExpectedPayment                      | CustCollectionsBIExpectedPaymentView        | Sum(SystemCurrencyAmounts)                                 | 翌年度内の予期される支払いの合計。 |
-| CustCollectionsBIInterestNote               | InterestNote                         | CustInterestJour                            | Count(InterestNote)                                        | 作成済の利子計算書の数。 |
-| CustCollectionsBISalesOnHold                | SalesId                              | SalesTable                                  | Count(SalesId)                                             | 保留中の販売注文の合計数。 |
-| CustCollectionsBIWriteOff                   | WriteOffAmount                       | CustCollectionsBIWriteOffView               | Sum(SystemCurrencyAmount)                                  | 損金処理済のトランザクションの合計。 |
+
+|                   エンティティ                    |      キー集計の測定      |             データ ソース              |                           フィールド                            |                                    説明                                     |
+|---------------------------------------------|--------------------------------------|--------------------------------------|------------------------------------------------------------|------------------------------------------------------------------------------------|
+| CustCollectionsBIActivitiesAverageCloseTime | NumOfActivities, AveragecClosedTime  |            smmActivities             | AverageOfChildren(AverageClosedTime) Count(ActivityNumber) |     終了した活動の数およびそれらの活動を終了する平均時間。     |
+|       CustCollectionsBIActivitiesOpen       |            ActivityNumber            |            smmActivities             |                   Count(ActivityNumber)                    |                           オープンな活動の数。                            |
+|        CustCollectionsBIAgedBalances        |             AgedBalances             |  CustCollectionsBIAgedBalancesView   |                 Sum(SystemCurrencyBalance)                 |                             指定の期間に達している残高の合計。                              |
+|        CustCollectionsBIBalancesDue         |         SystemCurrencyAmount         |   CustCollectionsBIBalanceDueView    |                 Sum(SystemCurrencyAmount)                  |                           期限切れの金額。                            |
+|    CustCollectionsBICaseAverageCloseTIme    |  NumOfCases, CaseAverageClosedTime   |      CustCollectionsCaseDetail       | AverageOfChildren(CaseAverageClosedTime) Count(NumOfCases) |        終了したケースの数およびそれらのケースを終了する平均時間。        |
+|         CustCollectionsBICasesOpen          |                CaseId                |      CustCollectionsCaseDetail       |                       Count(CaseId)                        |                              オープンなケースの数。                              |
+|      CustCollectionsBICollectionLetter      |         CollectionLetterNum          |       CustCollectionLetterJour       |                 Count(CollectionLetterNum)                 |                       オープンな督促状の数。                        |
+|   CustCollectionsBICollectionLetterAmount   |       CollectionLetterAmounts        | CustCollectionsBIAccountsReceivables |                 Sum(SystemCurrencyAmount)                  |                     転記済督促状の残高。                      |
+|      CustCollectionsBICollectionStatus      |       CollectionStatusAmounts        | CustCollectionsBIAccountsReceivables |                 Sum(SystemCurrencyAmount)                  |                回収状態のトランザクションの残高。                 |
+|           CustCollectionsBICredit           | CreditExposed, AmountOverCreditLimit |     CustCollectionsBICreditView      |       Sum(CreditExposed), Sum(AmountOverCreditLimit)       | クレジット エクスポージャおよび顧客が与信限度額を超えている金額の合計値。 |
+|         CustCollectionsBICustOnHold         |               ブロック                |      CustCollectionsBICustTable      |                       Count(Blocked)                       |                     保留中の顧客の数。                      |
+|            CustCollectionsBIDSO             |                DSO30                 |       CustCollectionsBIDSOView       |                  AverageOfChildren(DSO30)                  |                        30 日の売掛債権回転日数                         |
+|      CustCollectionsBIExpectedPayment       |           ExpectedPayment            | CustCollectionsBIExpectedPaymentView |                 Sum(SystemCurrencyAmounts)                 |                 翌年度内の予期される支払いの合計。                 |
+|        CustCollectionsBIInterestNote        |             InterestNote             |           CustInterestJour           |                    Count(InterestNote)                     |                作成済の利子計算書の数。                |
+|        CustCollectionsBISalesOnHold         |               SalesId                |              SalesTable              |                       Count(SalesId)                       |                 保留中の販売注文の合計数。                 |
+|          CustCollectionsBIWriteOff          |            WriteOffAmount            |    CustCollectionsBIWriteOffView     |                 Sum(SystemCurrencyAmount)                  |                損金処理済のトランザクションの合計。                 |
+
 

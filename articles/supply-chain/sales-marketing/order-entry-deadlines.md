@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="order-entry-deadlines"></a>注文入力期限
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事は、注文入力期日に関する情報を提供します。 注文入力期日は、顧客注文を当日または翌日に受信されたかのように処理 (および履行) するかどうかを決定する締切り時間です。
 

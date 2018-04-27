@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-payment-slip-format-for-project-invoices"></a>プロジェクト請求書の支払伝票形式の設定
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 通常、企業は、顧客に役立つように印刷した支払伝票を請求書に添付し、転記および決済用に支払参照を提供します。 支払伝票は、売上請求書、自由書式の請求書に加え、プロジェクトまたはサービスの請求書、督促状、利子計算書、取引明細書に使用できます。 支払伝票を処理するには、最初に債権者 ID 番号と支払伝票関連ドキュメントの形式を設定します。
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-and-maintain-inventory-blocking"></a>在庫ブロックの作成および管理
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、在庫ブロックを使用することによって、現物手持在庫が他の元伝票に引当されないようにする方法を説明します。 表示されているサンプル値を使用して、デモ データの会社 USMF の手順を実行できます。 この手順を開始する前に、使用可能な現物手持在庫の品目を設定する必要があります。
 

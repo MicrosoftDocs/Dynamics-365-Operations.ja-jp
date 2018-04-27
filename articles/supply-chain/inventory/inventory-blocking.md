@@ -29,8 +29,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="inventory-blocking"></a>在庫ブロック
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事は、Microsoft Dynamics 365 for Finance and Operations の品質検査プロセスの一部である在庫ブロックの概要を示します。 在庫ブロックは、品目が処理または消費されるのを防ぐために使用できます。
 

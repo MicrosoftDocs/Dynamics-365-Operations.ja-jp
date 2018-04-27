@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="manage-standard-cost-updates"></a>標準原価の更新の管理
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 標準原価データの更新は、1 バージョン アプローチまたは 2 バージョン アプローチという 2 つの異なるアプローチを使用して管理できます。 
 

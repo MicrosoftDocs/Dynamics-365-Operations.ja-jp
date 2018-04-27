@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="project-cost-accrual-on-purchase-receipts"></a>購買入庫におけるプロジェクト費用の発生
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックでは、購買入庫での未収プロジェクト費用を、Microsoft Dynamics 365 for Finance and Operations で追跡する方法を説明します。 
 

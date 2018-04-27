@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="financial-reporting"></a>財務報告
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 for Finance and Operations で財務報告にアクセスする場所、および財務報告機能の使用方法について説明します。 これには、用意された既定の財務諸表の説明が含まれています。
 

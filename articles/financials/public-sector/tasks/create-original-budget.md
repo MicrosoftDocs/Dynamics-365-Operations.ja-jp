@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-an-original-budget-and-reverse-preliminary-budget-entries-in-the-public-sector"></a>公的機関の元の予算の作成および暫定予算エントリのリバース
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 元の予算エントリを作成し、予算モデルおよび暫定予算金額を含む分析コード値を使用している場合、暫定予算金額を取り消すことができます。 この手順は、公的機関部門の PSUS のデモ会社のデータを使用して作成されました。
 

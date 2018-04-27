@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="pay-a-vendor-transaction-by-endorsing-a-customer-bill-of-exchange-japan"></a>顧客の受取手形の裏書による仕入先トランザクションの支払 (日本)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 このタスクは、顧客為替手形の裏書きによる仕入先トランザクションの支払について説明します。
 

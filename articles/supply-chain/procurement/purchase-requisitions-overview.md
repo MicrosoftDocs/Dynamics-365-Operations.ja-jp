@@ -19,17 +19,16 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b96a89bcabdaa3e3a3be3786dda15f9725f5a50d
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 5d379b034c996cb0eff20a44960ba1e2701af81a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="purchase-requisition-overview"></a>購買要求の概要
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックでは、購買要求ワークフローと、購買要求で発生する可能性のあるさまざまな状態について説明します。
 
@@ -70,7 +69,7 @@ ms.lasthandoff: 11/03/2017
 <tr class="odd">
 <td>ドラフト</td>
 <td>ドラフト</td>
-<td>購買要求と購買要求明細行は作成済ですが、確認を受けるための送信は行われていません。 [<strong>ドラフト</strong>] のステータスを持つ購買依頼と購買依頼行は変更することができます。 購買依頼または購買依頼行は、リコールされたがレビュー用に再送信されていない場合は、[<strong>ドラフト</strong>] のステータスも持っています。 <strong>注意:</strong> 伝票レベルで購買要求を送信または呼び出すことができます。 ただし、購買要求明細行を一行のみ送信または取り消すことはできません。</td>
+<td>購買要求と購買要求明細行は作成済ですが、確認を受けるための送信は行われていません。 [<strong>ドラフト</strong>] のステータスを持つ購買依頼と購買依頼行は変更することができます。 購買依頼または購買依頼行は、リコールされたがレビュー用に再送信されていない場合は、<strong>ドラフト</strong> のステータスも持っています。 <strong>注意:</strong> 伝票レベルで購買要求を送信または呼び出すことができます。 ただし、購買要求明細行を一行のみ送信または取り消すことはできません。</td>
 </tr>
 <tr class="even">
 <td>確認中</td>

@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-an-appointment-for-a-load"></a>積荷の予定の設定
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、積荷に対してドッキング予定を設定し、計画する方法を示します。 この設定は、通常、配送コーディネーターにより実行されます。 デモ データの会社 USMF でこの手順を使用できます。
 

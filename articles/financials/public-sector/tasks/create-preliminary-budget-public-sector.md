@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-preliminary-budget-for-public-sector"></a>公的機関の暫定予算の作成
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 特定の予算モデルと分析コード値の、暫定予算登録エントリを作成できます。 実際の予算が承認された後、元の予算登録エントリを作成できます。 この手順は、公的機関部門の PSUS のデモ会社のデータを使用して作成されました。
 

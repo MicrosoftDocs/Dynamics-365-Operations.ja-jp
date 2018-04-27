@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-a-mobile-device-menu-item-to-register-received-items"></a>入庫済品目を登録するためのモバイル デバイスのメニュー項目の設定
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 このタスクでは、モバイル デバイスのメニュー項目の設定を中心に説明します。 このメニュー項目は、発注書によって注文された品目の入庫の登録のために使用されます。 
 

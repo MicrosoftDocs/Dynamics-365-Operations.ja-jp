@@ -26,7 +26,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="cash-flow-forecasting"></a>キャッシュ フロー予測
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 キャッシュ フロー予測ツールで将来のキャッシュ フローと必要通貨の分析を行い、会社が将来必要とする現金を見積もることができます。 キャッシュ フロー予測を入手するには、次の作業を完了する必要があります。
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-solicitation-types-and-scoring-criteria-for-rfqs"></a>RFQ の入札タイプとスコア基準の作成
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 このガイドでは、入札タイプの作成、および入札タイプにスコア方法を関連付ける方法を示します。 さらに見積依頼 (RFQ) で入札タイプを使用し、既定のスコア方法を設定する方法も示します。 通常、これらのタスクを実施するのは、購買マネージャーです。 デモ データの会社 USMF のこの手順を使うか、または独自のデータを使うことができます。 開始する前に、使用可能なスコア方法を設定する必要があります。
 

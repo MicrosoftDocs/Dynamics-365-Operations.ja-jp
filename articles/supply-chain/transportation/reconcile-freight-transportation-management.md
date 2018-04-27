@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="reconcile-freight-in-transportation-management"></a>輸送管理での運賃の調整
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この項目では、運賃調整プロセスについて説明します。
 

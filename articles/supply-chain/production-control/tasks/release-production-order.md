@@ -24,7 +24,7 @@ ms.lasthandoff: 02/06/2018
 ---
 # <a name="release-a-production-order"></a>製造オーダーのリリース
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、製造オーダーのリリース方法を示します。 この手順の作成に使用するデモ データの会社は USMF です。 これは、製造オーダーのライフ サイクルを説明する 7 個の手順の 4 番目です。
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="inspect-the-quality-of-goods"></a>商品の品質の調査
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、品質指示を処理する方法を説明します。 デモ データの会社 USMF でこのガイドを実行できます。 このサンプル手順を開始する前に、発注書「000016」を確認し、製品受領書を転記する必要があります。 これにより、品質指示が自動的に作成されます。 品質検査は、通常、品質検査の担当者により実行されます。
 

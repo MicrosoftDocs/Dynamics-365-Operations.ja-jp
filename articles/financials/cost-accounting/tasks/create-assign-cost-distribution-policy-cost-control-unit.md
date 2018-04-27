@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-and-assign-a-cost-distribution-policy-to-a-cost-control-unit"></a>原価配分ポリシーの作成と原価管理単位への割り当て
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 [原価配分ルール] は、集団コスト センターごとに集計される原価を配分するために使用されます。 コスト経理担当は、原価が配賦基準に基づいて、コスト センターに配分されるか確認します。 ポリシーと対応ルールは、原価管理単位に割り当てられます。 このタスク ガイドでは、原価配分ポリシーと対応ルールを作成する方法を示す例を使用します。
 

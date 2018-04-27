@@ -1,5 +1,5 @@
 --- 
-title: "電子申告 (ER) 用のデータ ソースとして財務分析コードを使用するためのデータ モデルを設計する"
+title: "データ ソースとして財務分析コードを使用するためのデータ モデルを設計する"
 description: "次の手順では、システム管理者または電子レポート開発者が、電子レポート・データソースとしての財務分析コードを使用するために 電子レポート（ER）モデルをどのように環境設定しているのか説明します。"
 author: NickSelin
 manager: AnnBe
@@ -16,15 +16,15 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: d8a03c4b85666975a7b42d46f3afdd35019e9b93
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 3e55eedba1955ae79733afee1a0b3c7072147bb5
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
-# <a name="design-data-model-to-use-financial-dimensions-as-a-data-source-for-electronic-reporting-er"></a>電子申告 (ER) 用のデータ ソースとして財務分析コードを使用するためのデータ モデルを設計する
+# <a name="design-data-model-to-use-financial-dimensions-as-a-data-source"></a>データ ソースとして財務分析コードを使用するためのデータ モデルを設計する 
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 次の手順では、システム管理者または電子レポート開発者が、電子レポート・データソースとしての財務分析コードを使用するために 電子レポート（ER）モデルをどのように環境設定しているのか説明します。 これらの手順はどのタイプの企業でも実施できます。
 

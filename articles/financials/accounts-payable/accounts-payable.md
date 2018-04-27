@@ -28,8 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="accounts-payable-home-page"></a>買掛金勘定ホーム ページ
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックでは、買掛金勘定の概要を示します。 
 

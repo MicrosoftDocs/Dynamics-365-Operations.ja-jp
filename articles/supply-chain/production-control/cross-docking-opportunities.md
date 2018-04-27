@@ -28,7 +28,7 @@ ms.lasthandoff: 03/08/2018
 
 # <a name="cross-docking-from-production-orders-to-outbound-docks"></a>製造オーダーから出荷ドックへのクロスドッキング
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックでは、生産ラインから出荷輸送ドックまでの完了レポートがされているクロスドッキング材料のプロセスを管理する方法について説明します。
 
@@ -76,10 +76,10 @@ ms.lasthandoff: 03/08/2018
 
 ### <a name="cross-docking-policy-name-transfer-order"></a>クロスドッキング ポリシー名: 移動オーダー
 
--   順序番号: 10
- -   ワーク オーダー タイプ: 移動の出庫
--   クロスドッキング需要には場所が必要です: いいえ
--   クロスドッキング戦略: 日時
+- 順序番号: 10
+  -   ワーク オーダー タイプ: 移動の出庫
+- クロスドッキング需要には場所が必要です: いいえ
+- クロスドッキング戦略: 日時
 
 ### <a name="sequence-number"></a>一連番号
 

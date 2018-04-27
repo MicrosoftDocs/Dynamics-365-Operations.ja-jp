@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="assess-sales-performance-by-product"></a>製品別の売上実績の評価
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Microsoft Dynamics 365 for Retail を使用して、上位 10 製品の収益性を調査できます。 
 

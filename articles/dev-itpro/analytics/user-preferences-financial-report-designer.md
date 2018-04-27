@@ -19,17 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1cabaf8a579fcd9722e409630038167afb07ffc6
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: d0307db3a49bcdb62146b815383f744c5b8e0fde
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="user-preferences-in-financial-report-designer"></a>財務諸表デザイナーでのユーザーの基本設定
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事では、財務諸表デザイナーで、ユーザーとのやり取りをカスタマイズし、最初のサインイン エクスペリエンスを制御するユーザー設定を設定する方法について説明します。 個々の報告、レポート ライブラリ、および既定のファイルの場所の表示方法を制御することもできます。 
 
@@ -63,7 +62,7 @@ ms.lasthandoff: 11/03/2017
 <td>アプリケーションを終了したとき、警告メッセージを表示するかどうかを選択します。 このメッセージは、意図せずにプログラムを終了しないことを保証するのに役立ちます。</td>
 </tr>
 <tr class="odd">
-<td>列ヘッダーにセルの下線を自動的に適用</td>
+<td>[自動的に列ヘッダーのセルに下線を追加する]</td>
 <td>新しい列ヘッダーのセルに下線を挿入するかどうかを選択します。</td>
 </tr>
 <tr class="even">

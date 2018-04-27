@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="settle-a-postdated-check-from-a-customer"></a>顧客からの先日付小切手の決済
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 先日付小切手は、銀行で精算された後に決済できます。 この財務トランザクションによって、先日付小切手のつなぎ勘定トランザクションも精算されます。 
 

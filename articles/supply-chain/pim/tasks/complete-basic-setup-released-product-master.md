@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="complete-basic-setup-of-a-released-product-master"></a>リリース済み製品マスターの基本設定の完了
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順は、製品マスターを BOM バージョンで使用する前に必要な最小限の設定の完了方法を示します。
 

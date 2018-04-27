@@ -19,23 +19,23 @@ ms.author: josaw
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: HT
-ms.sourcegitcommit: 47de452c2072b6a29d7e2d34eb73b472be669a6c
-ms.openlocfilehash: eb6132b6d535deb13a4cd1343d04967893a2cfe9
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 0936ae3b8d07ef221345bda272170e1482f37cbf
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/25/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="whats-new-or-changed"></a>新機能および変更された機能
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 このページでは、最新バージョンの Microsoft Dynamics 365 for Finance and Operations、Enterprise edition の新しい機能について学ぶ役立つトピックを示します。
 
 最新バージョンにアップグレードする方法についての情報は、[最新の更新プログラムにアップグレードするためのプロセス](../../dev-itpro/migration-upgrade/upgrade-latest-update.md) を参照します。
 
 
-[!include[release notes](../includes/release-notes.md)]
+[!INCLUDE [release notes](../includes/release-notes.md)]
 
 ## <a name="application-releases"></a>アプリケーション リリース
 
@@ -53,7 +53,7 @@ ms.lasthandoff: 03/25/2018
 <th>バージョン</th>
 <th>ビルド番号</th>
 <th>適用の対象</th>
-<th>[詳細情報]</th>
+<th>詳細情報</th>
 </tr>
 </thead>
 <tbody>
@@ -61,6 +61,13 @@ ms.lasthandoff: 03/25/2018
 
 </tr>
 <tr class="even">
+<tr class="even">
+<td>Microsoft Dynamics 365 for Finance and Operations</td>
+<td>8.0</td>
+<td>8.0.30</td>
+<td>2018 年 4 月</td>
+  <td><a href="whats-new-changed-8-0-April-2018.md">Dynamics 365 for Finance and Operations バージョン 8.0 (2018 年 4 月) の新機能および変更された機能</a></td>
+</tr>
 <td>Microsoft Dynamics 365 for Finance and Operations Enterprise Edition</td>
 <td>7.3</td>
 <td>7.3.11971.56116</td>
@@ -122,7 +129,7 @@ ms.lasthandoff: 03/25/2018
 <td>Microsoft Dynamics 365 for Finance and Operations Enterprise Edition</td>
 <td>プラットフォーム update 15</td>
 <td>7.0.4839</td>
-<td>2018 年 3 月 (これは対象となるリリースであり、ユーザーが継続的な自動更新推奨プログラム (CAAP) を希望した場合にのみ使用できます。)</td>
+<td>2018 年 3 月 (これは対象となるリリースであり、ユーザーが継続的な自動更新推奨プログラム (CAAP) を希望した場合にのみ使用できます。 プラットフォーム update 15 も Dynamics 365 for Finance and Operations バージョン 8.0 で使用できます。)</td>
 <td><a href="whats-new-platform-update-15.md">Dynamics 365 for Finance and Operations、Enterprise edition プラットフォーム更新プログラム 15 (2018 年 3 月) の新機能および変更された機能</a></td><tbody>
 <tr class="odd">
 <td>Microsoft Dynamics 365 for Finance and Operations Enterprise Edition</td>

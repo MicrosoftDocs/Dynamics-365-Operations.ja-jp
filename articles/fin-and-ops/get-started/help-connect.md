@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="connect-the-help-system"></a>ヘルプ システムに接続する
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 for Finance and Operations のヘルプ システムのコンポーネントについて説明します。 これらのコンポーネントを関連付ける方法の概要や、独自のヘルプを作成する方法について説明します。 
 
@@ -42,7 +41,7 @@ ms.lasthandoff: 11/03/2017
 ## <a name="connecting-the-help-system"></a>ヘルプ システムの接続
 > [!NOTE]
 > [**タスク ガイド**] タブは、Microsoft Dynamics 365 for Talent および Microsoft Dynamics 365 for Retail で現在使用できません。 将来のリリースではこの機能を有効にするよう、作業が進行中です。 [Talent] での [はじめに] の経験タスク ガイドは、基本的機能をカバーするために引き続き使用可能です。 [Retail] および [Talent] の両方に関する docs.microsoft.com サイト上 ([docs.microsoft.com/dynamics365/unified-operations](../../index.md)) でも利用可能な、手順を追ったヘルプ。
- 
+
 
 **システム パラメーター** ページを使用して、システム管理者は実装に向けてヘルプ システムのピースを繋ぎ合せます。 [![システム パラメーター フォームとヘルプ設定](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png) **システム パラメーター** ページで次の手順に従います。
 

@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="inventory-statuses"></a>在庫状態
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事は、在庫を分類し、追跡する在庫状態を使用する方法について説明します。
 

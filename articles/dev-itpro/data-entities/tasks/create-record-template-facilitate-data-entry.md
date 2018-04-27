@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-record-template-to-facilitate-data-entry"></a>データ入力を容易にするレコード テンプレートの作成
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順は、よく使用されるフィールド値を新しいレコードごとに明示的に入力する必要をなくなるようにする、レコード テンプレートの作成方法を示します。 この手順では、固定資産に追加する必要がある新しいラップトップのレコードを新規作成します。 この手順では、USMF というサンプル会社を使用します。
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-automatic-freight-reconciliation"></a>自動運賃調整の設定
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、自動運賃調整のデータ設定方法を示します。 これは、通常、倉庫マネージャーによって行われます。 デモ データの会社 USMF でこの手順を使用できます。
 

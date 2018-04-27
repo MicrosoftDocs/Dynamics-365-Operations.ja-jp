@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="acquire-a-fixed-asset-and-claim-for-the-government-grant-subsidy-japan"></a>固定資産の取得と政府助成金の申請 (日本)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 固定資産の取得および政府補助金の申請についての説明を見るには、このタスクを使用します。
 

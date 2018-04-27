@@ -26,7 +26,7 @@ ms.lasthandoff: 12/19/2017
 
 # <a name="cash-overview-power-bi-content"></a>キャッシュの概要 Power BI コンテンツ
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックでは、**キャッシュの概要** Microsoft Power BI content について説明します。 コンテンツに含まれているレポートにアクセスする方法を説明し、コンテンツを作成するために使用したデータ モデルおよびエンティティについての情報を提供します。
 

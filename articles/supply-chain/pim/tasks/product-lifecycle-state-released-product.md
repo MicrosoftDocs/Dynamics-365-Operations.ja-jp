@@ -24,7 +24,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="assign-a-product-lifecycle-state-to-a-released-product"></a>製品ライフサイクルの状態をリリース済製品に割り当て
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 ここでは、リリース済製品の製品ライフサイクルの状態を割り当てる手順を説明します。 前提条件: このガイドを再生する前に、タスク ガイド「新しい製品のライフサイクルの状態の作成」を実行し、少なくとも、1 つの製品のライフサイクルの状態が作成されていることを確認する必要があります。
 

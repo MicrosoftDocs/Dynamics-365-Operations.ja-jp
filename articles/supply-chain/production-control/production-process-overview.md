@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="production-process-overview"></a>生産プロセスの概要
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックでは、生産プロセスの概要を示します。 製造オーダー、バッチ オーダー、およびかんばんのオーダーの作成から財務期間の決算までのさまざまなステージについて説明します。 
 

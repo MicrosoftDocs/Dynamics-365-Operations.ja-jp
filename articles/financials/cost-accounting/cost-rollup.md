@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>原価ロールアップ ポリシーおよび間接費の計算 
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 原価会計では、コスト フローが組織内で提供される製品とサービスに関連する方法について洞察を得ることができます。 コストの透明性を確認するには、適切な配賦基準に基づいたコスト オブジェクト間のコスト配賦を達成することが重要です。 既定では、特定の状況で必要なため、主要コスト要素に対してコスト配賦が達成されますが、いくつかの考慮すべき影響があります。
 

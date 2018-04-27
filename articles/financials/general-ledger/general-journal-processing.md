@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="general-journal-processing"></a>一般仕訳帳の処理
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事は、一般仕訳帳の処理を容易にすることができ、正確なデータがキャプチャされ、内部コントロールが悪影響を受けていないことを保証する手助けとなる Microsoft Dynamics 365 for Finance and Operations の機能について説明します。  
 

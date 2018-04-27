@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="remove-a-kanban-job-from-the-schedule"></a>かんばん作業をスケジュールから削除する
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、ジョブ ステータスを未定に戻すことによって、計画済みプロセスかんばんジョブをスケジュールから削除することに焦点をあてます。 この手順の作成に使用するデモ データの会社は USMF です。 この手順は、作業現場の監督または生産計画担当者を対象としています。
 

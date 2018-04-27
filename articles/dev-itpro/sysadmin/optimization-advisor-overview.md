@@ -29,7 +29,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="optimization-advisor-overview"></a>最適化アドバイザーの概要
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックでは、最適化アドバイザーを使用して Microsoft Dynamics 365 Finance and Operations の最適なコンフィギュレーションを保証する方法について説明します。
 

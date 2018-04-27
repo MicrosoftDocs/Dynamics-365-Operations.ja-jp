@@ -28,10 +28,9 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="purchase-order-overview"></a>発注書の概要
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
-
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 この記事では、発注書 (PO) の概要について説明し、発注書が実行するさまざまなステージに関連する追加の記事へのリンクが提供されます。
 

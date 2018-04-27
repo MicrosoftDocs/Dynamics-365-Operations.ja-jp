@@ -18,16 +18,16 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7b5c4428c8610a7b2d4cf1a28287ba2bb1f9c2ea
-ms.openlocfilehash: b7cb5f2096f0be5211024fc6ecbfaa61d6c48c9a
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 1fc3ab4f2a4b4604126ff72c570fc9d85e209f3c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 02/06/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="financial-performance-power-bi-content"></a>財務パフォーマンス Power BI コンテンツ
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 > [!Note]
 > このコンテンツ パックは [Power BI コンテンツ パックを PowerBI.com に公開する](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features#power-bi-content-packs-published-to-powerbicom)で記載されたものとして非推奨になっています。
@@ -58,7 +58,7 @@ ms.lasthandoff: 02/06/2018
 
 | レポート                       | レポートに含まれる情報 |
 |-----------------------------|--------------------------------------|
-| 現金分析               | 法人による現金、四半期ごとの現金、合計現金および勘定ごとの現金<blockquote>[!NOTE]<br>四半期ごとの現金は、第 1 四半期の合計の期首残高に含まれていません。 これは四半期ごとに転記される新しいトランザクションの合計を表示します。</blockquote> |
+| 現金分析               | 法人による現金、四半期ごとの現金、合計現金および勘定ごとの現金<br><br>**注記:** 四半期ごとの現金は、第 1 四半期の合計の期首残高に含まれていません。 これは四半期ごとに転記される新しいトランザクションの合計を表示します。|
 | 現在の比率分析      | 法人による現在の比率、四半期ごとの現在の比率、現在の流動資産および負債の残高 |
 | 当座比率の分析        | 法人による当座比率、四半期ごとの当座比率、現金残高、売掛金勘定および現在の負債 |
 | 売却済商品の原価分析 | 法人による売却済商品の原価 (COGS)、四半期ごとの今年度および昨年度の COGS、法人による COGS から売上、COGS 合計、および売上に対する COGS の割合 |
@@ -69,7 +69,7 @@ ms.lasthandoff: 02/06/2018
 | 収益の分析           | 法人による実績と予算における金利税引き前利益 (EBIT)、今年度と昨年度の EBIT、収益に対する経費の割合、および実績および予算における収益に対する経費の割合 |
 | 収益の分析            | 総収益、法人による実績と予算の総収益、今年度および昨年度の総収益、法人による収益予算差異、この期間と最後の期間における総収益 |
 | 経費の分析            | 経費の合計金額、法人による合計経費予算に対する実績金額、四半期ごとの合計経費予算、勘定カテゴリごとの合計経費、および営業経費の比率 |
-| 請求収益の分析     | 売掛金勘定の合計、法人による売掛金勘定の合計、四半期ごとの売掛金勘定の合計、売掛金勘定の勘定残高<blockquote>[!NOTE]<br>第 1 四半期の売掛金勘定の勘定科目は、情報に含まれていません。 売掛金勘定に転記される新しいトランザクションの合計を表示します。</blockquote> |
+| 請求収益の分析     | 売掛金勘定の合計、法人による売掛金勘定の合計、四半期ごとの売掛金勘定の合計、売掛金勘定の勘定残高<br><br>**注記:** 売掛金勘定の勘定科目の期首残高は、情報に含まれていません。 売掛金勘定に転記される新しいトランザクションの合計を表示します。 |
 
 これらすべてのレポートのグラフとタイルはフィルター処理し、ダッシュボードに固定することができます。 Power BI のフィルター処理と固定方法の詳細については、[ダッシュボードの作成およびコンフィギュレーション](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards) を参照してください。
 

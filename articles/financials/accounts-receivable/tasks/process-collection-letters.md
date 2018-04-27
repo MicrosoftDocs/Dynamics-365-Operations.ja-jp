@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="process-collection-letters"></a>督促状の処理
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、督促状の作成、印刷、および転記の方法を示します。 このタスクでは、USMF というデモ会社を使用します。
 

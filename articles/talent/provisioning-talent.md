@@ -18,15 +18,15 @@ ms.author: rschloma
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: ba1a3a78d59f3aec91473ba9bb20bda4804ec92e
-ms.openlocfilehash: 0a43f5ff0987ede9f0cb80e5b4854f78e19e329b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: b4b54e97bdebc158adc3bc6d57a6661cd536f5fb
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="provision-microsoft-dynamics-365-for-talent"></a>Microsoft Dynamics 365 for Talent のプロビジョニング
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 for Talent の新しい実稼働環境のプロビジョニングについて説明します。 このトピックでは、Talent をクラウド ソリューション プロバイダー、またはエンタープライズ アーキテクチャ (EA) 契約を通して購入したことを前提にしています。 Talent サービス プランがすでに含まれている Microsoft Dynamics 365 ライセンスがあり、このトピックの手順を完了できない場合は、サポートに問い合わせてください。
 
@@ -79,12 +79,12 @@ Talent を配置する PowerApps 環境を決定する際には、次のガイ�
  
     **CDS 2.0 環境** CDS 2.0 は、2018 年 3 月 21 日に公開されますが、Talent は、まだ CDS 2.0 をサポートしていません。 PowerApps 管理センターで CDS 2.0 データベースを表示および作成することはできますが、Talent では使用可能ではありません。 Talent 配置で CDS 2.0 環境を使用するオプションは後日利用可能になります。
    
- > [!Note]
- > 管理ポータルで CDS 1.0 と 2.0 の環境を区別するためには、環境を選択し、[詳細] を確認してください。 CDS 2.0 環境はすべて、「Dynamics 365 管理センターでこれらの設定を管理することができます」という情報を参照します。インスタンス バージョンを参照し、[データベース] タブはありません。 
+   > [!Note]
+   > 管理ポータルで CDS 1.0 と 2.0 の環境を区別するためには、環境を選択し、[詳細] を確認してください。 CDS 2.0 環境はすべて、「Dynamics 365 管理センターでこれらの設定を管理することができます」という情報を参照します。インスタンス バージョンを参照し、[データベース] タブはありません。 
  
    **既定の PowerApps 環境** 各テナントは、既定の PowerApps 環境で自動的にプロビジョニングされますが、すべてのテナント ユーザーは PowerApps 環境にアクセスすることができ、PowerApps または Flow 統合を使用してテストや調査を行う際に意図せずに生産データが壊れる可能性があるため、Talent でそれらを使用することはお勧めしません。
    
-   **テスト ドライブ環境** 「TestDrive – alias@domain」のような名前の環境は、60 日間の有効期限で作成され、その期間が経過すると有効期限切れになり、環境が自動的に削除されます。
+   <strong>テスト ドライブ環境</strong> 「TestDrive – alias@domain」のような名前の環境は、60 日間の有効期限で作成され、その期間が経過すると有効期限切れになり、環境が自動的に削除されます。
    
    **サポートされていない地域** 現在の Talent は、次の地域でのみサポートされます: 米国、ヨーロッパ、またはオーストラリア。
   
@@ -115,7 +115,7 @@ PowerApps プラン 2 のライセンスを持つテナント管理者のコン�
    ```.\ProvisionCDSEnvironment -EnvironmentName MyNewEnvironment -Location YourLocation```
 
     
-   **EnvironmentName** は、環境名に置き換える必要があります。 この名前は LCS に表示され、ユーザーが使用する Talent 環境を選択すると表示されます。 
+   **MyNewEnvironment** は、環境名に置き換える必要があります。 この名前は LCS に表示され、ユーザーが使用する Talent 環境を選択すると表示されます。 
 
    **YourLocation** は、Talent がサポートされている地域の 1 つに置き換えてください: 米国、ヨーロッパ、オーストラリア。 
 

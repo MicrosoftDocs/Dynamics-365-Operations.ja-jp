@@ -3,7 +3,7 @@ title: "PowerApps の埋め込み"
 description: "このトピックでは、PowerApps を Finance and Operations クライアントに組み込んで製品の機能を拡張する方法について説明します。"
 author: jasongre
 manager: AnnBe
-ms.date: 03/20/2018
+ms.date: 04/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -16,20 +16,24 @@ ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
 ms.translationtype: HT
-ms.sourcegitcommit: 454368ab5a467002ebf973db97fd98e31885dfe0
-ms.openlocfilehash: 0fd0b1e5f94e39455b3c0799c89eea5a59444ad7
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 07224faabcf2b183d4c8da0ba4588c33ec140d03
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="embed-powerapps"></a>PowerApps の埋め込み
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[banner](../includes/pre-release.md)] 
+[!INCLUDE [banner](../includes/pre-release.md)]
 
-プラットフォーム update 14 で、Microsoft Dynamics 365 for Finance and Operations は Microsoft PowerApps との統合をサポートし、コードの記述なしでモバイル デバイス、タブレット、および Web のカスタム ビジネス アプリを構築するため、開発者および技術者以外のユーザー向けのサービスをサポートします。 ユーザー、組織、またはより幅広いエコシステムによって開発された PowerApps を、Finance and Operations のクライアントに組み込み、製品の機能を拡張することができます。 たとえば、PowerApp を構築して、別のシステムから取得した情報で Finance and Operations を補足することができます。  
+プラットフォーム update 14 で、Microsoft Dynamics 365 for Finance and Operations は Microsoft PowerApps との統合をサポートし、コードの記述なしでモバイル デバイス、タブレット、および Web のカスタム ビジネス アプリを構築するため、開発者および技術者以外のユーザー向けのサービスをサポートします。 ユーザー、組織、またはより幅広いエコシステムによって開発された PowerApps を、Finance and Operations のクライアントに組み込み、製品の機能を拡張することができます。 たとえば、PowerApp を構築して、別のシステムから取得した情報で Finance and Operations を補足することができます。 
+
+PowerApps の組み込みに関する詳細については、短い [PowerApps を Dynamics 365 for Finance and Operations に組み込む方法](https://www.youtube.com/watch?v=x3qyA1bH-NY) ビデオを確認してください。
+
+> [!Video https://www.youtube.com/embed/x3qyA1bH-NY]
 
 ## <a name="adding-an-embedded-powerapp-to-a-page"></a>埋め込まれた PowerApp をページに追加する。
 ### <a name="overview"></a>概要

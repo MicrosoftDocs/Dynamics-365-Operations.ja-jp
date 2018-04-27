@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="help-system-overview"></a>システム ヘルプの概要
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 for Finance and Operations のヘルプ システム コンポーネントの概要が示されます。 また、組織の独自のドキュメントやトレーニングを提供する方法について説明します。 
 
@@ -108,7 +108,7 @@ Unified Operations のコンテンツへのすべての更新の RSS フィー�
 ##### <a name="suggest-a-change-or-contribute-content-through-github"></a>GitHub を通じてコンテンツの変更や提案を投稿する
 変更を提案するには、GitHub アカウントを所有し、コントリビューター ライセンス契約に署名する必要があります。  プル要求が送信された後、提案された変更が確認されます。 必要に応じて、内部的に検討してから返答します。  
 
-開始するには、トピックの [編集] (鉛筆) ボタンをクリック、または https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public にあるリポジトリへ移動します。 
+開始するには、トピックの \[編集\] (鉛筆) ボタンをクリック、または https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public にあるリポジトリへ移動します。 
 
 詳細については、https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/live/CONTRIBUTING.md にある寄稿者のガイドを参照してください。 
 

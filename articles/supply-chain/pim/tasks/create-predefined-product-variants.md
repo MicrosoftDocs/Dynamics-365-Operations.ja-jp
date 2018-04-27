@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-predefined-product-variants"></a>事前定義された製品バリアントの作成
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、製品分析コードの組み合わせを使用する製品マスターの製品バリアントの作成を説明します。 この手順の作成に使用されるデモ データ会社は USMF です。
 

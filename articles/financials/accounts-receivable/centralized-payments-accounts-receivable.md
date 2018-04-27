@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="centralized-payments-for-accounts-receivable"></a>売掛金勘定の集中支払
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 複数の法人を含む組織では、すべての支払を処理する単一の法人を使用して支払を作成および管理できます。 したがって、同じトランザクションを複数の法人に入力する必要はありません。 この記事は、集中支払に対する転記がさまざまなシナリオで処理される方法の例を示します。
 

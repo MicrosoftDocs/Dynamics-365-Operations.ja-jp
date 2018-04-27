@@ -25,7 +25,7 @@ ms.lasthandoff: 11/02/2017
 ---
 # <a name="set-up-a-location-directive-for-purchase-order-put-away"></a>発注書のプット アウェイ場所のディレクティブの設定
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、簡単な場所ディレクティブの設定方法を説明します。 示されている例では、発注書に対して受領した品目をプットする場所を決定するために使用される場所ディレクティブを作成します。 このタスク ガイドは、デモ データの会社 USMF で前述のデータを使用して実行できます。 事前条件: 廃棄コードを作成する必要があります。 この手順では、[ラベル書き換え] という廃棄コードを使用します。 自身のデータ内で場所のディレクティブを作成する場合は、倉庫と品目に高度な倉庫管理を設定する必要があります。  この手順は、倉庫マネージャーを対象としています。
 

@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="allocate-time-to-jobs-in-a-job-bundle"></a>ジョブ バンドル内のジョブへの時間割り当て
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 [製造実行] で、ジョブをバンドルできます。 これにより、[ジョブ リスト] ページで複数のジョブを同時に開始できます。
 

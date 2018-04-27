@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-payments-for-a-customer-who-have-direct-debit-mandates"></a>口座引落の委任状がある顧客の支払の作成
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、口座引落がコンフィギュレーションされており支払対象の請求書のある顧客用に、ISO20022 の口座引落支払ファイルを生成するプロセスを説明します。 請求書の作成および転記はオプションです。 支払われる請求書の代わりに、顧客が支払を行うシナリオをサポートするために、支払ファイルを生成する前に仕訳帳の委任状を選択できます。
 

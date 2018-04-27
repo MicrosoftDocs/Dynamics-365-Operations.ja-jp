@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="create-documentation-or-training-using-task-recordings"></a>タスク記録を使用してドキュメントやトレーニングを作成
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックでは、タスク レコーダーとタスク ガイド、タスク記録の作成方法、また Microsoft タスク ガイドのカスタマイズ方法とそれをヘルプに含める方法について説明します。
 

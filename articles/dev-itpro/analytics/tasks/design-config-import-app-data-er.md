@@ -24,7 +24,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="design-configurations-to-parse-incoming-documents-for-application-data-updates-er"></a>アプリケーション データ更新 (ER) の受信ドキュメントを解析するコンフィギュレーションのデザイン
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、着信電子ドキュメントを解析するために電子申告 (ER) コンフィギュレーションをデザインする方法について説明します。 この手順では、サンプル会社 Litware, Inc. 用に作成した必要な ER コンフィギュレーションをインポートし、それを使用して受信電子ドキュメントを解析します。 この手順にあるステップを完了するには、まず「ER コンフィギュレーション プロバイダーの作成および有効なプロバイダーとしてのマーク付け」にある手順を完了する必要があります。
 

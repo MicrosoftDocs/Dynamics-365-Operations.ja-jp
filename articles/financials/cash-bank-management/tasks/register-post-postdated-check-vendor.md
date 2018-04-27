@@ -24,7 +24,7 @@ ms.lasthandoff: 11/01/2017
 ---
 # <a name="register-and-post-a-postdated-check-for-a-vendor"></a>仕入先の先日付小切手の登録および転記
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 仕訳伝票を使用して、ベンダーに小切手を発行する前に先日付小切手の詳細を登録できます。 先日付小切手を転記して財務トランザクションを生成することもできます。 仕入先からの先日付小切手を登録および転記する前に、次のタスクを完了します。 
 

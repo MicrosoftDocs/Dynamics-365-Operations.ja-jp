@@ -16,15 +16,15 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 63a02a64ff28531bae950f1b61d9167eaa0b0373
-ms.openlocfilehash: ebb92d5ce05f2891d25fb38f6200a10f02bcc948
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 58895bfd2ef5ec5e8f6f1500158376b9140775d7
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="enroll-an-employee-in-a-variable-compensation-plan"></a>変動報酬プランへの従業員の登録
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 報酬および福利厚生マネージャーは、従業員の現金および現金以外の報奨を計算する変動報酬プランに従業員を登録できます。 この手順は、変動報酬プランが [登録の有効化] フィールドで [はい] を設定することによって作成され、適格性ルールが変動報酬プランに対して作成されていることを前提にしています。 この手順の作成に使用するデモ データの会社は USMF です。 この手順を開始するには、[人事管理] > [作業者] > [従業員] > [報酬] > [変動プラン登録] の順に移動します。
 

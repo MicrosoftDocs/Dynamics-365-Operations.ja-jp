@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="moving-average"></a>移動平均
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 移動平均は、平均原則に基づく永久原価法であり、購買原価が変化するとき、在庫払出の原価は変化しません。 差額は資本化され、比例計算に基づきます。 残りの金額が経費となります。 
 

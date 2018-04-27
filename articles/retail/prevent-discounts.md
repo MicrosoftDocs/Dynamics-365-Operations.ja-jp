@@ -29,7 +29,7 @@ ms.lasthandoff: 10/24/2017
 
 # <a name="prevent-discounts-for-retail-products"></a>小売製品の割引を禁止する
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 小売業者はさまざまな理由で、一部の製品の割引を、プロモーションからまたは POS での販売中に禁止します。
 

@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="purchase-agreements"></a>購買契約
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事は、購買契約書に関する情報を提供します。 購買契約とは、長期にわたって複数の発注書を使用して指定された数量または金額を購入することを組織に確約する契約です。 この確約と引き換えに、購買担当者は特別価格と割引を受けます。 
 

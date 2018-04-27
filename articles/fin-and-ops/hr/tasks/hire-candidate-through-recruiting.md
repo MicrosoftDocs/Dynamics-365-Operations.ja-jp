@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="hire-a-candidate-through-recruiting"></a>採用による候補者の雇用
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順によって、リクルーターは、特定の採用プロジェクトで雇用申請を提出した申請者を雇用できます。 採用プロジェクトを通して申請者を雇用する場合、新しい作業者レコードが作成され、申請者レコードのステータスは採用済となります。 この手順の作成に使用するデモ データの会社は USMF です。 この手順を完了するには、[人事管理] > [採用] > [申請] > [申請] の順に移動します。 
 

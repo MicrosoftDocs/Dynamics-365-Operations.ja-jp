@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="advanced-bank-reconciliation-setup-process"></a>詳細な口座調整の設定プロセス
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 詳細な口座調整では、電子口座取引明細書をインポートし、Microsoft Dynamics 365 for Finance and Operations での銀行トランザクションに合わせて自動的に調整することができます。  この資料では、調整のプロセスの設定について説明します。  
 

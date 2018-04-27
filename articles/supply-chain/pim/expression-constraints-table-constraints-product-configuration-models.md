@@ -20,17 +20,16 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 3206e53c4f2659c6d9b9be64b01ac28cdd17bc88
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 0235cf112b59ee86f77d26044e47eb9bff8f67db
 ms.contentlocale: ja-jp
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="expression-constraints-and-table-constraints-in-product-configuration-models"></a>製品コンフィギュレーション モデルでの式の制約とテーブルの制約
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックでは、式の制約およびテーブル制約の使用について説明します。 制約は、販売注文、販売見積、発注書、または製造オーダーのための製品をコンフィギュレーションするときに選択できる属性値を制御します。 制約の作成方法に基づいて、式の制約またはテーブル制約を使用できます。 
 
@@ -204,23 +203,24 @@ ms.lasthandoff: 02/07/2018
 
 次の表の例は、インフィックス表記法を記述する方法を示します。
 
-| インフィックス表記法    | 説明                                                                                   |
+
+|  インフィックス表記法   |                                          説明                                          |
 |-------------------|-----------------------------------------------------------------------------------------------|
-| x + y + z         | 追加                                                                                      |
-| x \* y \* z       | 乗算                                                                                |
-| x - y             | バイナリ減算は、2 番目の値が負であるバイナリ加算と同様に変換されます。 |
-| x ^ y ^ z         | 右結合の累乗法                                                   |
-| !x                | ブール値の not                                                                                   |
-| x -: y            | Boolean の意味                                                                           |
-| x | y | z         | ブール値 or                                                                                    |
-| x & y & z         | ブール値 and                                                                                   |
-| x == y == z       | 等式                                                                                      |
-| x != y != z       | 明確                                                                                      |
-| x &lt; y &lt; z   | 次の値より小さい                                                                                     |
-| x &gt; y &gt; z   | 次の値より大きい                                                                                  |
-| x &lt;= y &lt;= z | 以下                                                                         |
-| x &gt;= y &gt;= z | 以上                                                                      |
-| (x)               | かっこは既定の優先順位より優先されます。                                                      |
+|     x + y + z     |                                           追加                                            |
+|    x \* y \* z    |                                        乗算                                         |
+|       x - y       | バイナリ減算は、2 番目の値が負であるバイナリ加算と同様に変換されます。 |
+|     x ^ y ^ z     |                          右結合の累乗法                          |
+|        !x         |                                          ブール値の not                                          |
+|      x -: y       |                                      Boolean の意味                                      |
+|         x         |                                               y                                               |
+|     x & y & z     |                                          ブール値 and                                          |
+|    x == y == z    |                                           等式                                            |
+|    x != y != z    |                                           明確                                            |
+|  x &lt; y &lt; z  |                                           次の値より小さい                                           |
+|  x &gt; y &gt; z  |                                         次の値より大きい                                          |
+| x &lt;= y &lt;= z |                                     以下                                     |
+| x &gt;= y &gt;= z |                                   以上                                    |
+|        (x)        |                           かっこは既定の優先順位より優先されます。                            |
 
 ## <a name="why-arent-my-expression-constraints-validated-correctly"></a>式の制約がなぜ正しく検証されないのですか。
 製品コンフィギュレーション モデルの属性、コンポーネント、またはサブコンポーネントのソルバー名として予約済みのキーワードは使用できません。 ここでは、使用できない予約済みキーワードの一覧を示します。

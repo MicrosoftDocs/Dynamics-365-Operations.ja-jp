@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-purchase-order-from-a-sales-order"></a>販売注文からの発注書の作成
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順は、販売注文に基づいた発注書を作成する方法を表示します。 発注書の製品の数量は、元の販売注文の需要を満たすよう指定されます。 販売需要を満たすこの方法は、[配送要件計画] のより包括的で最適化された方法の代替です。 この手順は、デモ データの会社 USMF で、または独自のデータで実行できます。
 

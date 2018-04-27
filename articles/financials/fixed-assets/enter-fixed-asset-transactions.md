@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="fixed-asset-transaction-options"></a>固定資産トランザクションのオプション
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事は、固定資産トランザクションの作成に使用できるさまざまな方法について説明します。
 

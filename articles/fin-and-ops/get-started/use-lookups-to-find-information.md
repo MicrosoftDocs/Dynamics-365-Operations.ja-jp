@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="use-lookups-to-find-information"></a>情報の検索におけるルックアップの使用
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Microsoft Dynamics 365 for Finance and Operations では多数のフィールドに適切な修正または目的の値の検索が容易なルックアップがあります。 複数の拡張機能は、これらのコントロールの使用可能により、ユーザーにルックアップが表示されます。 このトピックでは、これらの新しいルックアップ機能について情報と、システムのルックアップから業務の使用を取得するために、必要な情報が表示されます。  
 

@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="budgeting-overview"></a>予算作成の概要
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Microsoft Dynamics 365 for Finance and Operations の財務機能を使用するほとんどすべての会社は、実績対予算のレポートを作成できなければなりません。 この記事では、Finance and Operations 予算で作成したり、サード パーティ製プログラムから読み込むために必要な最低限のコンフィギュレーションを説明します。
 

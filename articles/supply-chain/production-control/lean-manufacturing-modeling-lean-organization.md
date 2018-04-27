@@ -29,8 +29,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="modeling-a-lean-organization"></a>リーン組織のモデリング
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事は、リーン組織のモデリングにおける重要な概念に関する情報を提供します。 
 

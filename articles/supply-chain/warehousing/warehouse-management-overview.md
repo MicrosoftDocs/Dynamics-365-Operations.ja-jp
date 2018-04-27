@@ -25,7 +25,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="warehouse-management"></a>倉庫管理
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dynamics 365 for Finance and Operations の倉庫管理モジュールは、製造、配送、および小売企業の倉庫プロセスを管理できます。 このモジュールは、倉庫施設をいつでも最適なレベルにサポートする幅広い機能を持っています。 倉庫管理は、輸送、製造、品質テスト、購買、移動、販売、返品などの他のビジネス プロセスが Finance and Operations で完全に統合されます。
 

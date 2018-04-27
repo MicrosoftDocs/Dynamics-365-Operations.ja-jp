@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="costing-versions"></a>原価バージョン
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事は、原価バージョン、その管理方法、そこに含めることができるデータのタイプについての情報を提供します。 原価バージョンの主な目的は、品目、原価カテゴリ、間接原価の計算式に関する原価レコードを保持することです。
 

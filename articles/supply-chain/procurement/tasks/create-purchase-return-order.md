@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-purchase-return-order"></a>購買返品注文の作成
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、仕入先請求書ドキュメントから新しい発注書に明細行をコピーするために、訂正票アクションを使用した購買返品注文の作成方法を示します。 また、注文の確認方法と商品を仕入先に返品出荷する処理方法も示します。 この手順で示されている例は、USMF デモ データ会社で使用できます。 このタスクは通常、購買担当者により実行されます。
 

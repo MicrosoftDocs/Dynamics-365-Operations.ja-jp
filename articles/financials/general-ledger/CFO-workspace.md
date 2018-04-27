@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="add-financial-dimensions-to-the-cfo-workspace"></a>CFO ワークスペースへの財務分析コードの追加
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックでは、最高財務責任者 (CFO) ワークスペースに財務分析コードを追加し、それにより元帳および予算のレポートを使用できるようにする方法を説明します。 CFO ワークスペースには、[概要] タブと [財務] タブがあります。これら 2 つのタブ上のレポートは、LedgerActivityMeasure および BudgetActivityMeasure という 2 つの措置によってサポートされています。 Microsoft Dynamics 365 for Finance and Operations、Enterprise edition (2017 年 7 月) では、それら 2 つの措置と DimensionCombinationEntity エンティティの間にリレーションがあります。 したがって、分析コードを選択できます。
 

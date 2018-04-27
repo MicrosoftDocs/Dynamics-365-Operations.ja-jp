@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-vendor-payment-terms"></a>仕入先の支払条件の定義
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 仕入先請求書の支払条件を設定します。 このタスクでは、USMF というデモ会社を使用します。
 

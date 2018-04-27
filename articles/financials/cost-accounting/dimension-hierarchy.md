@@ -29,7 +29,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="dimension-hierarchy"></a>分析コード階層
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックでは、分析コード階層について説明します。 分析コード階層を使用して、原価会計のレポート構造、コスト ポリシー、およびセキュリティ設定を定義します。  
 

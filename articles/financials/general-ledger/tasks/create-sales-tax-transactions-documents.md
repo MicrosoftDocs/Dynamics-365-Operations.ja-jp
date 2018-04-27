@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-sales-tax-transactions-on-documents"></a>ドキュメントの売上税トランザクションの作成
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 ドキュメントの売上税は、ドキュメント明細行の売上税グループと品目売上税グループを指定することにより計算されます。 これらはマスター データから既定値が取得されますが、必要に応じて手動で変更できます。 計算済売上税は、明細行とドキュメント レベルで確認できます。 このタスクでは、USMF というデモ会社を使用します。
 

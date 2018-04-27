@@ -24,7 +24,7 @@ ms.lasthandoff: 10/30/2017
 ---
 # <a name="configure-consolidated-invoice-parameters-and-setup-for-accounts-payable-japan"></a>月次締め請求書のパラメーターのコンフィギュレーションと買掛金勘定の設定 (日本)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 日本では、日本の商習慣に合わせて月次締め請求書を有効にできます。
 

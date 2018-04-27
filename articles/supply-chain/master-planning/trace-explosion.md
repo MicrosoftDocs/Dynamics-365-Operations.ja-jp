@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="use-tracing-for-explosion"></a>展開のトレースを使用する
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事は、注文の展開結果の背後にある原因を参照して追跡する方法について説明します。
 

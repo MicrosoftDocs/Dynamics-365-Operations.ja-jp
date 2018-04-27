@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="ledger-allocation-rules"></a>元帳配賦ルール
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事は、元帳配賦ルールに関する情報を提供します。 これらの配賦ルールのさまざまなコンポーネントと使用できる配賦方法を説明します。
 

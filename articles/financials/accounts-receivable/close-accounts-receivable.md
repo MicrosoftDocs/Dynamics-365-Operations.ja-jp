@@ -27,10 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="close-accounts-receivable"></a>売掛金勘定の決算
 
-[!include[banner](../includes/banner.md)]
-
-
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 次の表に売掛金勘定の決算業務プロセスをサポートしているページの一覧を示します。
 

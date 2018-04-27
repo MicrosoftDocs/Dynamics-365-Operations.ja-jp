@@ -26,7 +26,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="import-postal-codes-for-japan"></a>日本の郵便番号のインポート
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 日本では、日本郵便局が Microsoft Dynamics 365 for Finance and Operations にインポート可能な郵便番号コード ファイルを提供します。 このトピックでは、郵便番号をインポートするためのプロセスについて説明します。 この例では、デモ データの会社 JPMF を使用します。
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="split-a-fixed-asset"></a>固定資産の分割
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 このタスク ガイドでは、1 つの資産帳簿を新しい資産帳簿に分割します。  これは、経理担当ロールと USMF デモ データを使用します。
 

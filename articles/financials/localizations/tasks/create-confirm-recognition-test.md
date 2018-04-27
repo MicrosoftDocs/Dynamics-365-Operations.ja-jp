@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-and-confirm-a-recognition-test-japan"></a>認識テストの作成および確認 (日本)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 日本では、減損は 2 つの主要なステップにより処理されます。 最初のステップは、減損が必要かどうかをテストすることです。 2 番目のステップでは、必要に応じて減損金額を計算します。 
 

@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="200-percent-reducing-balance-depreciation"></a>200% 逓減残高による減価償却
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事は、減価償却の 200% 逓減残高法の概要を示します。
 
@@ -70,6 +69,7 @@ ms.lasthandoff: 11/03/2017
 -   **会計年度期間**では、会計年度に対して計算された減価償却の合計額が会計年度の最終日に転記されます。 この金額は [会計カレンダー] ページで定義された会計年度期間に見越計上されます。
 
 ## <a name="example-of-200-reducing-balance-depreciation"></a>200% 逓減残高による減価償却の例
+
 |                                |        |
 |--------------------------------|--------|
 | 取得価額               | 11,000 |

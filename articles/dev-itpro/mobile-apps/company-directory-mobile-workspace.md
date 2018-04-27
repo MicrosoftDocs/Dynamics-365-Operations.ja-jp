@@ -16,16 +16,16 @@ ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 77dd52848819f11a0a03eb70eebbdacdad2d1852
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 0b27c5c0ed2cd380819c5208c57fa2a3de1d5aaa
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="company-directory-mobile-workspace"></a>会社のディレクトリ モバイル ワークスペース
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックでは、**会社のディレクトリ** モバイル ワークスペースに関する情報を提供します。 このワークスペースで、ユーザーは閲覧して組織内の他の従業員と連絡を取ることができます。
 
@@ -58,7 +58,7 @@ ms.lasthandoff: 03/26/2018
 </ul>
 </td>
 <td>システム管理者</td>
-<td>Finance and Operations をまだ組織に配置していない場合は、「<a href="../deployment/deploy-demo-environment.md">デモ環境の配置</a>」を参照してください。 Talent をまだ組織に配置していない場合は、システム管理者は <a href="https://www.microsoft.com/en-us/dynamics365/talent">Talent の Web ページ</a> からトライアル バージョンにアクセスできます。
+<td>Finance and Operations をまだ組織に配置していない場合は、<a href="../deployment/deploy-demo-environment.md">デモ環境の配置</a> を参照してください。 Talent をまだ組織に配置していない場合は、システム管理者は <a href="https://www.microsoft.com/en-us/dynamics365/talent">Talent の Web ページ</a>からトライアル バージョンにアクセスできます。
 </td>
 </tr>
 <tr class="even">

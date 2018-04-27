@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="resource-capabilities"></a>リソースの能力
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事は、リソース能力に関する情報を提供します。 能力とは、運営リソースが特定の活動を実行する能力です。 この記事では、活動に適切なリソースを選択するための実力のレベルや優先順位などの能力および関連する概念の使用方法を説明します。
 

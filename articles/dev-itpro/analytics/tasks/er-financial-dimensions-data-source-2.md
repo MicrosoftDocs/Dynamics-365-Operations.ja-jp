@@ -1,5 +1,5 @@
 --- 
-title: "電子申告 (ER) 用のデータ ソースとして財務分析コードを使用するためのモデルをマップする"
+title: "データ ソースとして財務分析コードを使用するためのマップ モデルを設計する"
 description: "次の手順では、システム管理者に指定されたユーザーまたは電子レポート開発者のロールが、電子レポート・データソースとしての財務分析コードを使用するために 電子レポート（ER）モデルをどのように環境設定しているのか説明します。"
 author: NickSelin
 manager: AnnBe
@@ -16,15 +16,15 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7be3e9970e2599c159e7c9d414b54876d0116350
-ms.openlocfilehash: a5fa6fb07fb2ba08812826acba748b38738bb468
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: c26713a8a391f9f10a6e24f6619c24c1615d4560
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/13/2018
 
 ---
-# <a name="map-models--to-use-financial-dimensions-as-a-data-source-for-electronic-reporting-er"></a>電子申告 (ER) 用のデータ ソースとして財務分析コードを使用するためのモデルをマップする
+# <a name="map-models--to-use-financial-dimensions-as-a-data-source"></a>データ ソースとして財務分析コードを使用するためのマップ モデルを設計する 
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 次の手順では、システム管理者に指定されたユーザーまたは電子レポート開発者のロールが、電子レポート・データソースとしての財務分析コードを使用するために 電子レポート（ER）モデルをどのように環境設定しているのか説明します。 これらの手順はどのタイプの企業でも実施できます。
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="project-time-entry-mobile-workspace"></a>プロジェクト時間入力モバイル ワークスペース
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックでは、[プロジェクト時間入力] モバイル ワークスペースに関する情報を提供します。 このワークスペースにより、ユーザーはモバイル デバイスを使用して入力をし、プロジェクトに対して時間を節約できます。
 

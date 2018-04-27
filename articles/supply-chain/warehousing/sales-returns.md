@@ -19,17 +19,16 @@ ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: fa56911c19e9b6514829084221ba03c7cd421c92
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: e2125b3616310196b2c5ede0ddcaab24856ddc34
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="sales-returns"></a>販売返品
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックでは、返品注文のプロセスについての情報を提供します。 これは顧客の返品に関する情報、および返品による原価計算と手持在庫数量への影響に関する情報が含まれます。
 

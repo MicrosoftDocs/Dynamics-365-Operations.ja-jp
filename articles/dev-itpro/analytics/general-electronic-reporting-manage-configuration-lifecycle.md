@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="manage-the-electronic-reporting-configuration-lifecycle"></a>電子申告コンフィギュレーション ライフサイクルの管理
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 for Finance and Operations ソリューションの電子申告 (ER) コンフィギュレーションのライフサイクルを管理する方法について説明します。
 

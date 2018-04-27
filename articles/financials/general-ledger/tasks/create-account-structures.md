@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-account-structures"></a>勘定構造の作成
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 このタスク ガイドでは、勘定構造の作成について説明します。 手順は、デモ データの会社 USMF を使用します。
 

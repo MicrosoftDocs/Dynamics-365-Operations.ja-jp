@@ -19,17 +19,16 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 8075abccdcdde21df967dcc9948a738895f35cef
-ms.openlocfilehash: cbe0374ff21ff39ed2bbc8d647bd933ced9dcff6
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 5c92c1ca3f46d80a58ca315f1f695f082d1929ca
 ms.contentlocale: ja-jp
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="electronic-reporting-destinations"></a>電子申告の送信先
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 各電子レポート (ER) 形式のコンフィギュレーション、および生産物コンポーネント (フォルダやファイル) の出力先をコンフィギュレーションできます。 適切なアクセス権が与えられているユーザーは、実行時に送信先の設定を変更することもできます。 この資料では、電子申告の送信先の管理、サポートされている送信先の種類とセキュリティに関する考慮事項について説明します。
 
@@ -71,7 +70,7 @@ ms.lasthandoff: 01/25/2018
 
 #### <a name="print-management"></a>印刷管理
 
-**管理電子メールの印刷** タイプを選択する場合、[ **To** フィールドに固定の電子メール アドレスを入力できます。 固定されていない電子メール アドレスを使用するには、ファイルの送信先の電子メール ソース タイプを選択する必要があります。 **顧客**、**仕入先**、**見込顧客**、**連絡先**、**競合他社**、**作業者**、**申請者**、**見込み仕入先**、**不許可仕入先**の値がサポートされます。 電子メール ソース タイプを選択したら、 **電子メール ソース** フィールドの横のボタンを使用して、**フォーミュラ デザイナー**フォームを開きます。 このフォームを使用して、電子メールの送信先に選択した関係者のアカウントを表すフォーミュラを関連付けられます。
+**管理電子メールの印刷** タイプを選択する場合、[ **To** フィールドに固定の電子メール アドレスを入力できます。 固定されていない電子メール アドレスを使用するには、ファイルの送信先の電子メール ソース タイプを選択する必要があります。 **顧客**、**仕入先**、**見込顧客**、**連絡先**、**競合他社**、**作業者**、**申請者**、**見込み仕入先**、**不許可仕入先**の値がサポートされます。 電子メール ソース タイプを選択したら、[**電子メール ソース**] フィールドの横のボタンを使用して、**フォーミュラ デザイナー** フォームを開きます。 このフォームを使用して、電子メールの送信先に選択した関係者のアカウントを表すフォーミュラを関連付けられます。
 
 [![印刷管理電子メールタイプの構成](./media/ger-destinations-email-2-1611-1024x588.jpg)](./media/ger-destinations-email-2-1611.jpg) 
 
@@ -89,7 +88,7 @@ ms.lasthandoff: 01/25/2018
 
 [![電子メールの宛先用に電子メールのデータ ソースを割り当てる](./media/ger-destinations-email-4-1611-1024x587.jpg)](./media/ger-destinations-email-4-1611.jpg) 
 
-**注:**Simple Mail Transfer Protocol (SMTP) サーバーを構成し、利用可能にする必要があります。 SMTP サーバーは、Finance and Operations の **システム管理** &gt; **セットアップ** &gt; **電子メール** &gt; **電子メール パラメーター**で指定できます。
+**注:** Simple Mail Transfer Protocol (SMTP) サーバーを構成し、利用可能にする必要があります。 SMTP サーバーは、Finance and Operations の **システム管理** &gt; **セットアップ** &gt; **電子メール** &gt; **電子メール パラメーター**で指定できます。
 
 ### <a name="archive-destination"></a>アーカイブ先
 

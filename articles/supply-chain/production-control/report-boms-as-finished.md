@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="report-boms-as-finished"></a>BOM を完了済と報告
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事では、BOM を完了済と報告することに関する情報を提供しています。
 

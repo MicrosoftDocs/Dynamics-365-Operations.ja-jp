@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="map-components-of-the-created-format-to-data-model-elements-for-electronic-reporting-er"></a>電子申告 (ER) のデータ モデル要素に作成済みの形式のコンポーネントをマッピングする
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 次の手順では、システム管理者ロールまたは電子申告開発者ロールのいずれかのユーザーが、支払いビジネス ドメインの電子ドキュメント書式を定義する電子レポート (ER) のコンポーネントにデータ モデルをマッピングする様子を示します。 この書式は、支払を処理するための電子ドキュメントを生成するために後で使用します。 この例では、サンプル会社 'Litware、Inc.' のコンフィギュレーションの書式設定を作成します。 ER コンフィギュレーションはすべての会社用に共有されるため、これらのステップはどの会社でも実行できます。 これらの手順を完了するには、最初に「コンフィギュレーションの書式設定の作成」タスク ガイドのステップを完了する必要があります。
 

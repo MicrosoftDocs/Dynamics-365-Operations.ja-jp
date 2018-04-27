@@ -1,5 +1,5 @@
 --- 
-title: "電子申告 (ER) (Part 1) 用の画像が埋め込まれた Microsoft Office 形式のレポートを生成するためのコンフィギュレーションを設計する"
+title: "Microsoft Office 形式のレポートを生成するためのコンフィギュレーションを設計する"
 description: "このトピックの手順は、Microsoft Office (Excel および Word) の埋め込み画像を含む電子ドキュメントを生成する、電子レポート (ER) コンフィギュレーションの設計方法に関する情報を提供します。"
 author: NickSelin
 manager: AnnBe
@@ -16,15 +16,15 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9cb9343028acacc387370e1cdd2202b84919185e
-ms.openlocfilehash: 844d8de1d5a1958457eaab1d434bef015f92e33c
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 5e3ba5c76df3dcc5042074a565d102ceaeeadfb0
 ms.contentlocale: ja-jp
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/13/2018
 
 ---
-# <a name="design-configurations-to-generate-reports-in-microsoft-office-formats-with-embedded-images-for-electronic-reporting-er-part-1"></a>電子申告 (ER) (Part 1) 用の画像が埋め込まれた Microsoft Office 形式のレポートを生成するためのコンフィギュレーションを設計する 
+# <a name="design-configurations-to-generate-reports-in-microsoft-office-formats-with-embedded-images"></a>Microsoft Office 形式のレポートを生成するためのコンフィギュレーションを設計する
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順にあるステップを完了するには、まず「ER コンフィギュレーション プロバイダーの作成および有効なプロバイダーとしてのマーク付け」にある手順を完了します。 この手順では、電子レポート (ER) コンフィギュレーションを設計して、埋め込み画像を含む Microsoft Excel または Word の電子ドキュメントを生成する方法を説明します。 この手順では、サンプル会社 Litware, Inc. に必要な ER コンフィギュレーションを作成します。USMF データセットを使用してこれらの手順を完了できます。 この手順は、「システム管理者」または「電子レポート開発者」ロールが割り当てられているユーザー用に作成されています。 始める前に、ヘルプ トピック [電子申告ツールで生成されるビジネス ドキュメントへの画像と図形の埋め込み](../electronic-reporting-embed-images-shapes.md) に一覧表示されたファイルをダウンロードして保存します。 ファイルは cheques.xml のモデル、format.xml を印刷する小切手、会社の logo.png、署名 image.png、署名画像 2.png、および小切手テンプレート Word.docx です。
 

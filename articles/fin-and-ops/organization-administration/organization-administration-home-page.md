@@ -27,8 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="organization-administration-home-page"></a>組織管理ホーム ページ
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックでは、Power Users および Administrators が Microsoft Dynamics 365 for Finance and Operations をコンフィギュレーションするのに役立つコンテンツを示します。 このコンテンツは、組織と業務を円滑かつ効率的に操作するようシステムをコンフィギュレーションするのに役立ちます。
 

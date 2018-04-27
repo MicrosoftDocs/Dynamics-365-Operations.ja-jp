@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="generate-a-statistical-baseline-forecast"></a>統計ベースライン予測の生成
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事は、需要予測の計算に使用されるパラメータおよびフィルタについて説明しています。 
 

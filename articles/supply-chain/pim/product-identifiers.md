@@ -29,7 +29,7 @@ ms.lasthandoff: 03/23/2018
 
 # <a name="product-identifiers"></a>製品 ID 
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックでは、さまざまな種類の製品 ID に関する情報を提供し、製品データに製品 ID を追加する方法について説明します。
 

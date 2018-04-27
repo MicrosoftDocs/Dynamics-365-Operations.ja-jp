@@ -1,5 +1,5 @@
 --- 
-title: "水平に拡張された範囲を使用して電子申告 (ER) の Excel のレポートに列を動的に追加するための形式の実行"
+title: "Excel レポートで水平に拡張された範囲を使用して列を動的に追加する形式を実行する"
 description: "次の手順は、システム管理者または電子レポートのロールに割り当てられたユーザーが、 OPENXML ワークシート (Excel) ファイル（要求された列が水平に展開される範囲として動的に作成される）としてのレポートを生成する電子レポート（ER）フォーマットをどのように設定するのか説明します。"
 author: NickSelin
 manager: AnnBe
@@ -16,15 +16,15 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 3ca72ab5c7ac15f3a788ea457a360d93a0b505b0
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 2d705d0d2803b5254adc27e6715c1eac311898a7
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
-# <a name="run-a-format-that-uses-horizontally-expandable-ranges-to-dynamically-add-columns-in-excel-reports-for-electronic-reporting-er"></a>水平に拡張された範囲を使用して電子申告 (ER) の Excel のレポートに列を動的に追加するための形式の実行
+# <a name="run-a-format-that-uses-horizontally-expandable-ranges-to-dynamically-add-columns-in-excel-reports"></a>Excel レポートで水平に拡張された範囲を使用して列を動的に追加する形式を実行する
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 次の手順は、システム管理者または電子レポートのロールに割り当てられたユーザーが、 OPENXML ワークシート (Excel) ファイル（要求された列が水平に展開される範囲として動的に作成される）としてのレポートを生成する電子レポート（ER）フォーマットをどのように設定するのか説明します。 これらのステップは DEMF 会社で実行できます。
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-fixed-quantity-kanban-rule-for-manufacturing"></a>製造のための固定数量かんばんルールの作成
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順は、リーン環境の作業セルで、変換する活動をトリガーする固定の製造かんばんルールを作成するのに必要な設定を対象としています。 この手順の作成に使用するデモ データの会社は USMF です。 この手順は、新しい製品または変更された製品の生産を準備している、プロセス エンジニアまたはバリュー ストリームのマネージャーを対象としています。
 

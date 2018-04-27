@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="project-contracts"></a>プロジェクト契約
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事では、さまざまなタイプのプロジェクトや資金調達ソースで作成できるプロジェクト契約について、また Microsoft Dynamics 365 for Finance and Operations で契約を管理しプロジェクト顧客に請求する方法についての説明と例を提供します。
 

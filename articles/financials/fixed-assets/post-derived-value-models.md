@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="post-with-derived-books"></a>派生帳簿を転記する
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事は、派生帳簿を使用する方法について説明します。
 

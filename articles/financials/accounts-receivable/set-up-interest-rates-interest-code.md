@@ -19,17 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 7ae0bfdc157a7e2e5b9f871dae487a6f85e889b9
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: c0e80bae4716d2b12f515f38d3b641de24680571
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="set-up-interest-rates-for-an-interest-code"></a>利息コードに対する金利の設定
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 利息コードには、利息がかかる日付と、支払期限を過ぎた勘定における計算方法を決める設定値が含まれます。
 
@@ -47,17 +46,17 @@ ms.lasthandoff: 11/03/2017
 ## <a name="interest-rates-based-on-a-percentage"></a>割合に基づいた利率
 指定した割合を計算する利率を設定できます。
 
--   利息金額はすべての通貨に適用されます。
--   オプションの利子の限度額を入力できます。
--   **パーセンテージ** が、** ** [**利息コードの設定**] ページの [**次に基づいて利息を計算**] フィールドで選択されます。
+- 利息金額はすべての通貨に適用されます。
+- オプションの利子の限度額を入力できます。
+- <strong>パーセンテージ</strong> は、[<strong>利息コードの設定</strong>] ページの [**<strong>次に基づいて**利息を計算</strong>] フィールドで選択されます。
 
 たとえば、請求書の支払がトランザクション期日を超えると 2 か月ごとに 5% の利息が付く利子コードを設定するには、[**利息の計算間隔**] フィールドに 2 を入力し、 [**月**] を選択します。
 
 ## <a name="interest-rates-based-on-amounts"></a>金額に基づいた利率
 通貨ごとの指定金額を計算する利率を設定できます。
--   利息金額は、利息コードで通貨ごとに指定されます。
--   オプションの利子の限度額を入力できます。
--   **金額**が、[**利息コードの設定**] ページの [**次に基づいて利息を計算**] フィールドで選択されます。
+- 利息金額は、利息コードで通貨ごとに指定されます。
+- オプションの利子の限度額を入力できます。
+- [<strong>利息コードの設定</strong>] ページの [<strong>金額が **次に基づいて**利息を計算</strong>] フィールド。
 
 たとえば、請求書支払がトランザクション期日を過ぎると 20 日ごとに 25.00 の利息が付く利息コードを設定するには、[**利息の計算間隔**] フィールドに 20 を入力し、[**日付**] を選択します。
 
@@ -84,7 +83,7 @@ ms.lasthandoff: 11/03/2017
 | 1,001          | 2                  |
 | 5,001          | 3                  |
 
- 
+
 ## <a name="example-2-interest-by-range--days"></a>例 2: 利息/範囲 = 日数
 --------------------------------------------------
 
@@ -105,7 +104,7 @@ ms.lasthandoff: 11/03/2017
 | 61             | 15                 |
 | 91             | 20                 |
 
- 
+
 ## <a name="example-3-interest-by-range--months"></a>例 3: 利息/範囲 = 月数
 ----------------------------------------------------
 

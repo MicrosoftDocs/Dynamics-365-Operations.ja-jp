@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="define-loyalty-programs"></a>ロイヤルティ プログラムの定義
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 この手順は、二つのロイヤルティ層でのロイヤルティ プログラムの設定方法を示します。 この手順では、デモ データの会社 USRT を使用します。
 

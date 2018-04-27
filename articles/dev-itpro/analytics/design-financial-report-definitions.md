@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="report-definitions-in-financial-report-designer"></a>財務諸表デザイナーでのレポート定義
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事では、レポート定義に関する情報を示します。 レポート定義は、行定義、列定義、およびオプションのレポート ツリー定義を使用してレポートを作成するレポート コンポーネント (または構成要素) です。 レポート定義は、レポートをカスタマイズするためのオプションおよび設定も提供します。 
 

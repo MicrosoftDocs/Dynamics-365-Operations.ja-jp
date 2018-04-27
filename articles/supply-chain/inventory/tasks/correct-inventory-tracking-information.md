@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="correct-inventory-tracking-information"></a>在庫追跡情報の修正
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順は、在庫追跡情報を修正するための在庫振替仕訳帳の作成および転記プロセスについて説明します。 この例では、間違って登録したバッチを別のバッチに変更することにより、バッチ管理されている品目の情報が更新されます。 デモ データ会社 USPI または独自のデータを使用してこの手順の説明を見ることができます。 独自のデータを使用する場合、バッチ対応の品目が必要であり、場所により制御されていない必要があります。 在庫振替用に在庫仕訳帳名を設定してある必要もあります。 通常、これらのタスクを実施するのは、倉庫の従業員です。
 

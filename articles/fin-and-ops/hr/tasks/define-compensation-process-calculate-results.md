@@ -16,15 +16,15 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 950237499441e7f1d5b9e3355c4bd9513ad3783e
-ms.openlocfilehash: 9705f3fd7076e010ec4d497c4d933364f3cfcc8f
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 93f6cddd8d698dbc1a3539a156a762b8e6017aa6
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="define-compensation-process-and-calculate-results"></a>報酬プロセスの定義と結果の計算
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 報酬プロセスは、固定および変動報酬プランに登録された従業員の新しい報酬金額および報奨を決定するのに使用されます。 [報酬プロセスは」は、すべての変更および設定が正しいことを確認するため「what-if」分析を複数回実行できます。 この手順では、報酬プロセスを作成し、プロセスを実行し、結果を表示します。 この手順の作成に使用するデモ データの会社は USMF です。
 

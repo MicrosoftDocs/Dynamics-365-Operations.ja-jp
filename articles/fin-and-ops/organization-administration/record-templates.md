@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="record-templates"></a>レコード テンプレート
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事は、レコード テンプレートの概念を紹介し、情報を共有するレコードを作成して使用する方法を説明します。
 

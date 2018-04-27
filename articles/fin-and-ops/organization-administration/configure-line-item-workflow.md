@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-a-line-item-workflow"></a>行項目ワークフローのコンフィギュレーション
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックでは、行項目ワークフローの要素をコンフィギュレーションする方法を説明します。
 

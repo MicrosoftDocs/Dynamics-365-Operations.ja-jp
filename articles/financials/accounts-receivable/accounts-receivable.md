@@ -28,8 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="accounts-receivable-home-page"></a>売掛金勘定ホーム ページ
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 顧客請求書および入金される支払を追跡するには、売掛金勘定を使用します。 
 

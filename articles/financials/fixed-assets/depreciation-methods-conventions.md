@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="depreciation-methods-and-conventions"></a>減価償却方法
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事は、Microsoft Dynamics 365 for Finance and Operations にサポートされた減価償却方法および減価償却方式の概要を提供します。
 
@@ -62,7 +61,7 @@ ms.lasthandoff: 03/26/2018
 -   150% 逓減残高
 -   125% 逓減残高
 
- 
+
 
 
 

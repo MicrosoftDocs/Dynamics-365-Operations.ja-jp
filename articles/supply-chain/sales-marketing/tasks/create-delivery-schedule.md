@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-delivery-schedule"></a>配送スケジュールの作成
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順は、販売注文の配送スケジュールを作成する方法を示します。 配送スケジュールは、注文または見積書の数量を複数の出荷で配送する要求があるときにに使用されます。 この手順は、デモ データの会社 USMF で、または独自のデータで実行できます。
 

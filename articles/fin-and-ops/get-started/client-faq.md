@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="finance-and-operations-client-faq"></a>Finance and Operations クライアントのよく寄せられる質問
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事は、Microsoft Dynamics 365 for Finance and Operations クライアントについてよく寄せられる質問に対する回答を提供します。
 

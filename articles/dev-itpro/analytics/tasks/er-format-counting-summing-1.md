@@ -1,5 +1,5 @@
 --- 
-title: "電子申告 (ER) 用の棚卸および集計を行うための形式を作成する"
+title: "棚卸および集計を行うための形式を作成する"
 description: "次の手順では、システム管理者または電子レポート開発者のロールに指定されたユーザーが、生成済みのテキスト出力に基づく計算と集計の電子レポート（ER）フォーマットをどのように環境設定するのかについて示します。"
 author: NickSelin
 manager: AnnBe
@@ -16,15 +16,15 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 5d4f57ae2a309d9e15c1afe60c3e91d7d7eb3870
-ms.openlocfilehash: 3c4ae958a03d4681a85f5b83d81fe64b9ac99cf5
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 7613b78d4a9ab63f5be9773a8699fe3ed94636eb
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 04/13/2018
 
 ---
-# <a name="create-format-for-counting-and-summing-for-electronic-reporting-er"></a>電子申告 (ER) 用の棚卸および集計を行うための形式を作成する
+# <a name="create-format-for-counting-and-summing"></a>棚卸および集計を行うための形式を作成する 
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 次の手順では、システム管理者または電子レポート開発者のロールに指定されたユーザーが、生成済みのテキスト出力に基づく計算と集計の電子レポート（ER）フォーマットをどのように環境設定するのかについて示します。 これらの手順はどのタイプの企業でも実施できます。
 

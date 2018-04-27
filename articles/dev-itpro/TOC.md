@@ -114,7 +114,8 @@
 #### [カスタマイズ: オーバーレイと拡張機能](extensibility/customization-overlayering-extensions.md)
 ### 新機能
 #### [拡張機能の変更 (2017 年 7 月)](extensibility/changes-july-2017.md)
-#### [拡張機能の変更バージョン 7.3](extensibility/extensibility-changes-73.md)
+#### [拡張機能の変更 (バージョン 7.3)](extensibility/extensibility-changes-73.md)
+#### [拡張機能の変更 (バージョン 8.0)](extensibility/changes-80.md)
 ### 基本
 #### [侵入的なカスタマイズ](extensibility/intrusive-customizations.md)
 #### [クラスの拡張機能](extensibility/class-extensions.md)
@@ -382,17 +383,18 @@
 
 ### [Common Data Service を使用したデータの統合](data-entities/data-integration-cds.md) 
 #### [見込顧客から入金のシナリオのコンフィギュレーション](../supply-chain/sales-marketing/prospect-to-cash.md)
-##### [Sales 製品への Finance and Operations の製品の同期](../supply-chain/sales-marketing/products-template-mapping-direct.md)
-##### [Finance and Operations の顧客への Sales の勘定の同期](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
-##### [Finance and Operations の連絡先または顧客への Sales の連絡先の同期](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
-##### [販売見積ヘッダーおよび明細行の Sales から Finance and Operations への同期](../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md)
-##### [販売注文ヘッダーおよび明細行の Finance and Operations から Sales への同期](../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md)
-##### [売上請求書ヘッダーおよび明細行の Finance and Operations から Sales への同期](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
 ##### [Finance and Operations の顧客への Sales の勘定の直接同期](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
 ##### [Sales 製品への Finance and Operations の製品の直接同期](../supply-chain/sales-marketing/products-template-mapping-direct.md)
 ##### [Finance and Operations の連絡先または顧客への Sales の連絡先の直接同期](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
-##### [販売注文ヘッダーおよび明細行の Finance and Operations から Sales への直接同期](../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md)
-##### [売上請求書ヘッダーおよび明細行の Finance and Operations から Sales への直接同期](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
+##### [販売見積書のヘッダーおよび明細行の Sales から Finance and Operations への直接同期](../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md)
+##### [販売注文の Sales と Finance and Operations の間の直接同期](../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md)
+##### [売上請求書のヘッダーおよび明細行の Finance and Operations から Sales への直接同期](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
+#### [Field Service との統合を構成する](../supply-chain/sales-marketing/field-service.md)
+##### [Finance and Operations の製品と Field Service の製品との同期](../supply-chain/sales-marketing/field-service-product.md)
+##### [Field Service のワーク オーダーと Finance and Operations の販売注文との同期](../supply-chain/sales-marketing/field-service-work-order.md)
+##### [Field Service の契約の請求書と Finance and Operations の自由書式の請求書との同期](../supply-chain/sales-marketing/field-service-invoice.md)
+
+
 
 ### [外部 Web サービスの使用](data-entities/consume-external-web-service.md)
 
@@ -407,7 +409,9 @@
 ### [コンフィギュレーション データ テンプレート](data-entities/configuration-data-templates.md)
 ### [複数のワークシート付きデータ テンプレート](data-entities/excel-template-multiple.md)
 ### [エンティティの変更の追跡](data-entities/entity-change-track.md)
+
 ### [標準データ エンティティに関する情報を検索します。](data-entities/data-entities-report.md)
+
 
 ## [データ インポート/エクスポート ジョブ](data-entities/data-import-export-job.md)
 
@@ -427,13 +431,18 @@
 
 ## [自分のデータベースの持ち込み](analytics/export-entities-to-your-own-database.md)
 
+
+## [データ タスクの自動化](data-entities/data-task-automation.md)
+
 ## [GDPR データ要求に対応するためのリソース](gdpr/gdpr-home-page.md)
 ### [Microsoft Dynamics 365 for Finance and Operations の GDPR に関するガイド](gdpr/gdpr-auditing-sensitive-data.md)
+### [資産分類](gdpr/gdpr-asset-classification-values.md)
 ### [個人検索レポートを使用](gdpr/gdpr-person-search-report.md)
 ### [個人検索レポートを拡張](gdpr/gdpr-extend-person-search-report.md)
 ### [機密データへのアクセスを管理](gdpr/gdpr-auditing-sensitive-data.md)
 ### [Talent を使用して個人データ要求に対応](gdpr/respond-dsr-request-talent.md)
 ### [Microsoft Dynamics AX 2012 を使用して個人データ要求に対応](gdpr/gdpr-ax2012.md)
+
 
 # [継続的な配信ホーム ページ](dev-tools/continuous-delivery-home-page.md)
 ## [開発と継続的な配信のよく寄せられる質問](dev-tools/continuous-delivery-faq.md)
@@ -530,6 +539,7 @@
 ### [AX 2012 アップグレード - Go live](migration-upgrade/2012-upgrade-cutover.md)
 
 ### AX 2012 からのアップグレードに影響する変更
+#### [勘定科目表の区切り記号は一意である必要があります](migration-upgrade/chart-accounts-delimiter-unique.md)
 #### [単一伝票と通貨再評価のアップグレード](migration-upgrade/single-voucher-and-currency-revaluation-upgrade.md)
 #### [プロジェクト リソースのスケジューリング データ モデル](migration-upgrade/data-model-changes-resource-management.md)
 #### [ワークフロー サブシステムの変更](migration-upgrade/workflow-subsystem.md)
@@ -569,6 +579,7 @@
 
 # [システム管理](sysadmin/system-administration-home-page.md)
 ## [プラットフォームの毎月の更新プログラムのよく寄せられる質問](sysadmin/faq-platform-monthly-updates.md)
+## [管理者のアクセスを許可しない仮想マシンに関するよく寄せられる質問](sysadmin/VMs-no-admin-access.md)
 ## [組織の法律条項およびプライバシーに関する声明へのリンクの追加](sysadmin/legal-terms-privacy-statement.md)
 ## [ライセンス コードとコンフィギュレーション キーのレポート](sysadmin/license-codes-configuration-keys-report.md)
 ## [会社間データ共有](sysadmin/cross-company-data-sharing.md)
@@ -612,6 +623,7 @@
 ## [BPM ライブラリ内のタスクの完了](lifecycle-services/complete-tasks-bpm.md)
 ## [活動ダイアグラムの使用](lifecycle-services/using-activity-diagrams.md)
 ## [BPM ライブラリと Visual Studio Team Services (VSTS) の同期](lifecycle-services/synchronize-bpm-vsts.md)
+## [タスク ガイドと BPM を使用して承認テスト スイートを作成する](lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md)
 ## [ビジネス プロセス モデラーのフローチャート](lifecycle-services/flowcharts-business-process-modeler.md)
 ## [独自の業務プロセスのアップロード](lifecycle-services/upload-business-processes-bpm-task-recorder.md)
 ## [モニタリングおよび診断](lifecycle-services/monitoring-diagnostics.md)
@@ -620,6 +632,8 @@
 ## [アセット ライブラリ](lifecycle-services/asset-library.md)
 ## [Microsoft Dynamics 365 - 翻訳サービスの概要](lifecycle-services/translation-service-overview.md)
 ### [Microsoft Dynamics 365 翻訳サービス ユーザー ガイド](lifecycle-services/use-translation-service.md)
+### [Microsoft Dynamics 365 翻訳サービス - ドキュメント ファイルの翻訳](lifecycle-services/use-translation-service-ua.md)
+### [Microsoft Dynamics 365 翻訳サービス - 翻訳メモリ](lifecycle-services/use-translation-service-tm.md)
 
 ## Dynamics AX 2012 Lifecycle Services の機能
 ### 配置

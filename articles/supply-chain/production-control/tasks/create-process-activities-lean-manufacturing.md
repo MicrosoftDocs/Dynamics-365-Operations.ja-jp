@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-process-activities-for-lean-manufacturing"></a>リーン生産のプロセス活動の作成
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 リーン生産のプロセス活動を作成します。 
 

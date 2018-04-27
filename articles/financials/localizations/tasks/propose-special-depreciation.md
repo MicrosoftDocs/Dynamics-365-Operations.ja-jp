@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="propose-special-depreciation-japan"></a>特別償却の提案 (日本)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 日本では、特定の条件下で特別償却が許可されます。 引当メソッドの場合、このタスクには 2 つのステップがあります。準備金の転記と準備金配賦の転記です。 ディレクト オフ メソッドの場合、必要なステップは 1 つです。これは準備金の転記と同じ手順です。 
 

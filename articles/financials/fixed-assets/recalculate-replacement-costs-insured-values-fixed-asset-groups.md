@@ -27,8 +27,7 @@ ms.lasthandoff: 01/12/2018
 
 # <a name="recalculate-replacement-costs-and-insured-values-for-fixed-asset-groups"></a>固定資産グループの交換費用と保証金額の再計算
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事は、固定資産の交換費用と保証金額を更新するプロセスを説明します。
 

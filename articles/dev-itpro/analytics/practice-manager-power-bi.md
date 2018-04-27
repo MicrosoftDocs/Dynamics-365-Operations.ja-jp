@@ -27,7 +27,7 @@ ms.lasthandoff: 12/18/2017
 
 # <a name="practice-manager-power-bi-content"></a>プラクティス マネージャー Power BI コンテンツ
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックでは、**プラクティス マネージャー** Microsoft Power BI コンテンツの内容について説明します。 Power BI レポートにアクセスする方法を説明し、コンテンツを作成するために使用するデータ モデルおよびエンティティについての情報を提供します。
 
@@ -118,7 +118,9 @@ ms.lasthandoff: 12/18/2017
 ### <a name="entity-projectaccountingcubetotalestimatedcosts"></a>エンティティ。ProjectAccountingCube\_TotalEstimatedCosts 
 [**データ ソース:**] ProjTable
 
-| キー集計の測定       | フィールド               | 説明 |
-|---------------------------------|---------------------|-------------|
+
+|    キー集計の測定    |        フィールド        |                                          説明                                           |
+|---------------------------------|---------------------|------------------------------------------------------------------------------------------------|
 | 完了した活動の予定原価 | Sum(TotalCostPrice) | 完了タスクのすべてのプロジェクト トランザクション タイプにおける合計原価価格の見積。 |
+
 

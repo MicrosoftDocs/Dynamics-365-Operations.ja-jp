@@ -3,7 +3,7 @@ title: "削除予定の機能"
 description: "このトピックでは、削除された、または削除される予定の機能について説明します。"
 author: sericks007
 manager: AnnBe
-ms.date: 02/05/2018
+ms.date: 03/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,16 +18,16 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 0618d71fdb4b29bfdacd6b9e1a8ed47e03abe00d
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: e629673c3a923ec74809e276ec39464bfacda124
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="removed-or-deprecated-features"></a>削除または削除予定の機能
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックでは、Dynamics 365 for Finance and Operations で削除された機能や、将来の更新で削除される予定の機能について説明します。
 
@@ -37,7 +37,10 @@ ms.lasthandoff: 03/26/2018
 このリストは、これらの削除および削除予定に対して、自身の計画を検討するために役立ちます。 
 
 > [!Note]
-> Dynamics 365 for Finance and Operations, Enterprise edition 2017 年 7 月リリースおよびプラットフォーム更新プログラム 8 から始まり、削除または削除予定の機能ごとに、展開のタイプが記録されます。 このトピックに記載されているすべての以前のリリースは、クラウド配置のみサポートされています。
+> Dynamics 365 for Finance and Operations 2017 年 7 月リリースおよびプラットフォーム更新プログラム 8 から始まり、削除または削除予定の機能ごとに、展開のタイプが記録されます。 このトピックに記載されているすべての以前のリリースは、クラウド配置のみサポートされています。
+
+## <a name="dynamics-365-for-finance-and-operations-80-with-platform-update-15"></a>Dynamics 365 for Finance and Operations 8.0 およびプラットフォーム更新プログラム 15
+今回のリリースで削除済みまたは推奨されない機能はありません。 プラットフォーム更新 15 は累積的であり、プラットフォーム更新 13、プラットフォーム更新 14、およびプラットフォーム更新 15 の新機能または変更された機能を含みます。
 
 ## <a name="dynamics-365-for-finance-and-operations-enterprise-edition-73-with-platform-update-12"></a>Dynamics 365 for Finance and Operations, Enterprise edition 7.3 およびプラットフォーム更新プログラム 12
 
@@ -96,7 +99,7 @@ PowerBI.com サイトで公開された**原価管理**、**財務パフォー�
 | **別の機能での置き換え?**   | 新しい UI は [*拡張ビュー*] と呼ばれ、古い UI に取って代わります。            |
 | **影響を受ける製品領域**         | データ管理ワークスペース                                                     |
 | **配置オプション**              | All                                                                           |
-| **ステータス**                         | 非推奨: 機能を削除するターゲットのタイムフレームは 2018 年 第 1 四半期です。 |
+| **ステータス**                         | 非推奨: 機能を削除するターゲットのタイムフレームは 2018 年 第 2 四半期です。 |
 
 ### <a name="excise-sales-tax-service-tax-for-india"></a>インドの物品税、売上税、サービス税
 
@@ -537,7 +540,7 @@ Telepay の支払形式には、仕入先支払のエクスポート (銀行口�
 
 ### <a name="aif-axd-and-axbc-integrations"></a>AIF、AxD、および AxBC の統合
 
-アプリケーション統合フレームワーク (AIF) では、サービスとして公開されるビジネス ロジックによって外部のシステムとデータを交換できます。 Dynamics AX には、ドキュメントと .NET Business Connector (AxBC) に基づくサービスが含まれます。 ドキュメントは、XML で作成されます。 XML には、Dynamics AX で送受信可能な*メッセージ*を作成するために追加されるヘッダー情報が含まれます。 ドキュメントの例は、販売注文と発注書です。 ただし、顧客などほぼすべてのエンティティの場合を、1 つのドキュメントで表すことができます。 ドキュメントに基づくサービスは、**Axd \<ドキュメント\>**クラスを使用します。
+アプリケーション統合フレームワーク (AIF) では、サービスとして公開されるビジネス ロジックによって外部のシステムとデータを交換できます。 Dynamics AX には、ドキュメントと .NET Business Connector (AxBC) に基づくサービスが含まれます。 ドキュメントは、XML で作成されます。 XML には、Dynamics AX で送受信可能な*メッセージ*を作成するために追加されるヘッダー情報が含まれます。 ドキュメントの例は、販売注文と発注書です。 ただし、顧客などほぼすべてのエンティティの場合を、1 つのドキュメントで表すことができます。 ドキュメントに基づくサービスは、**Axd \<ドキュメント\>** クラスを使用します。
 
 |   |  |
 |------------|--------------------|
@@ -1033,10 +1036,11 @@ Windows 8 タブレット アプリケーションは経費入力と承認のた
 
 ### <a name="x-financial-statements"></a>X++ 財務諸表
 
-|   |  |
-|------------|--------------------|
-| **廃止 / 削除の理由** | この機能は、別の機能で置き換えられました。                                    |
-| **別の機能での置き換え?**   | Management Reporter (Dynamics AX の現在のバージョンでは**財務報告**となっています) |
-| **影響を受ける製品領域**         | 一般会計                                                                              |
-| **ステータス**                         | Dynamics AX 2012 から削除されました                                                              |
+|                                                 |                                                                                                          |
+|-------------------------------------------------|----------------------------------------------------------------------------------------------------------|
+| <strong>廃止 / 削除の理由</strong> |                         この機能は、別の機能で置き換えられました。                         |
+|  <strong>別の機能での置き換え?</strong>  | Management Reporter (Dynamics AX の現在のバージョンでは<strong>財務報告</strong>となっています) |
+|     <strong>影響を受ける製品領域</strong>     |                                              一般会計                                              |
+|             <strong>ステータス</strong>             |                                      Dynamics AX 2012 から削除されました                                      |
+
 

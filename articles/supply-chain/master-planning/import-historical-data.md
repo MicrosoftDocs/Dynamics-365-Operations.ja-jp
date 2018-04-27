@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="import-historical-data-for-demand-forecasts"></a>需要予測の履歴データのインポート
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 需要予測の精度を確保するには、品目または品目配賦キーごとに、できるだけ多くの履歴需要データを取得する必要があります。 履歴需要データがまだインポートされていない場合は、Microsoft Dynamics 365 for Finance and Operations の \[**履歴外需**\] (ReqDemPlanHistoricalExternalDemandEntity) データ エンティティを使用してインポートします。
 

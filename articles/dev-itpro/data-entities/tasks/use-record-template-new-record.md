@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="use-a-record-template-to-create-a-new-record"></a>レコード テンプレートを使用した新しいレコードの作成
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順は、定義済みのレコード テンプレートを使用して新しいレコードを作成する方法を示します。 この手順を完了するには、「データ入力を容易にするレコード テンプレートの作成」手順を完了する必要があります。
 

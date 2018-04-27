@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="absence-registration-in-time-and-attendance"></a>勤務時間外の登録
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックでは、休暇の概念を説明し、勤務時間外登録を処理する方法について説明します。
 

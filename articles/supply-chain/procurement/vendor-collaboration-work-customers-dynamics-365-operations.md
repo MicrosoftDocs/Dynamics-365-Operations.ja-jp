@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="vendor-collaboration-with-customers"></a>顧客との仕入先コラボレーション
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 for Finance and Operations で仕入先コラボレーションを使用して顧客に対応する方法について説明します。 仕入先は、以下のワークスペースから一連のビジネス プロセスを完了できます。
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-main-account"></a>主勘定の作成
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 このタスクのガイドは、既存の勘定科目表への主勘定の追加方法について説明します。 このレコードでは、USMF デモ会社を使用します。  
 

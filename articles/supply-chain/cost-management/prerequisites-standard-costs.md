@@ -29,8 +29,7 @@ ms.lasthandoff: 01/17/2018
 
 # <a name="prerequisites-for-standard-costs"></a>標準原価の前提条件
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックでは、標準原価を使用するための基本的な手順について説明します。 次の手順は、会社の工程に依存します。 例えば、非製造環境、工順を使用しない製造環境、工順を使用する製造環境では手順が異なります。 
 

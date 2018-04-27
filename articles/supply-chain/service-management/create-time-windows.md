@@ -28,7 +28,7 @@ ms.lasthandoff: 02/20/2018
 
 # <a name="create-time-windows"></a>時間枠の作成   
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 サービス注文明細行のスケジューリングを最適化するために時間枠を使用できます。
 

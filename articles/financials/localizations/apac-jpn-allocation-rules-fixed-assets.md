@@ -27,7 +27,7 @@ ms.lasthandoff: 03/21/2018
 
 # <a name="fixed-asset-allocation-rules-for-japan"></a>日本の固定資産配賦ルール
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 日本では、固定資産は管理部門に登録され、減価償却量は使用部門間で割り当てられる必要があります。 減価償却金額を割合で複数の財務分析コードに割り当てる配賦ルールを設定できます。 この記事は、固定資産配賦ルールについてよく寄せられる質問に回答します。
 

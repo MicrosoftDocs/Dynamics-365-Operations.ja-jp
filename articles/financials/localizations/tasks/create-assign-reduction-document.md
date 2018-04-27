@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-and-assign-a-reduction-entry-document-for-a-government-grant-subsidy-japan"></a>政府助成金の圧縮記帳ドキュメントの作成および割り当て (日本)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 日本では、圧縮記帳ドキュメントとは、政府助成金によって支援された固定資産に添えるドキュメントのことです。 圧縮記帳の証明書には、圧縮記帳メソッド、減価償却の方法、理由、有効性、補助金のしきい値など、政府補助金に関する詳細が含まれています。
 

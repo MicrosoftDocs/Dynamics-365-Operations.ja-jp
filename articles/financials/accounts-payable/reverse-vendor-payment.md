@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="reverse-a-vendor-payment"></a>仕入先支払の取消
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事は、支払の取消、削除、無効化、および拒否の違いについて説明します。 また、仕入先チェックを取り消すための 2 つの方法を説明します。 
 

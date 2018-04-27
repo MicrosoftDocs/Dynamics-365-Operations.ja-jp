@@ -24,7 +24,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="upgrade-your-format-by-adopting-of-new-base-version-of-that-format-for-electronic-reporting-er"></a>電子申告 (ER) のその形式の新しい基準バージョンの採用により、形式をアップグレードする
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 次のステップでは、システム管理者または電子申告開発者のロールに割り当てられているユーザーが、電子申告 (ER) の形式のコンフィギュレーションを維持管理する方法について説明します。 この手順では、コンフィギュレーション プロバイダー (CP) から受領した形式を基にカスタム バージョンの形式を作成する方法を説明します。 また、その形式の新しい基準バージョンの採用方法についても説明します。
 

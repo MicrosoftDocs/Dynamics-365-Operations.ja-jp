@@ -28,7 +28,7 @@ ms.lasthandoff: 02/20/2018
 
 # <a name="set-up-service-intervals"></a>サービス期間の設定  
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 サービス間隔は、サービス注文を作成する場合に、サービス契約項目に対してサービス注文明細行が作成される頻度を表します。
 

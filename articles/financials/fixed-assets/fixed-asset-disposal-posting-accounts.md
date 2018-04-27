@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="fixed-asset-disposal-posting-accounts"></a>固定資産の処分の転記勘定
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックは、資産の処分の総勘定元帳の転記勘定を設定する方法を説明します。
 

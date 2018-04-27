@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-and-manage-images-for-retail-modern-pos"></a>Retail Modern POS の画像の設定および管理
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 この記事は、Retail Modern POS (MPOS) に表示されるさまざまなエンティティの画像の設定および管理に関連する手順について説明します。
 
@@ -141,7 +140,7 @@ MPOS はオンライン モード (MPOS が Retail サーバーに接続され�
 6.  MPOS がオンライン モードの間に、データがオフライン データベースに 1 回以上の送信を行うかどうか確認するため、HQ でカタログジョブを実行します。
 7.  オフライン モードに MPOS を挿入します。 HQ の特定の製品にアップロードする画像を確認する必要があります。 [![オフライン 1](./media/offline1.png)](./media/offline1.png)
 
- 
+
 
 ### <a name="set-up-catalog-category-employee-and-customer-images-to-appear-in-offline-mode-for-mpos"></a>MPOS のオフライン モードで表示するカタログ、カテゴリ、従業員、および顧客の画像を設定します。
 

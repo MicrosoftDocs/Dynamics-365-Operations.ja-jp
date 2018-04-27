@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="take-a-cash-discount-outside-the-cash-discount-period"></a>現金割引期間外の現金割引の適用
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事は、支払が現金割引期間外に作成されている場合でも現金割引を行う方法を示す 2 つのシナリオを提供します。
 

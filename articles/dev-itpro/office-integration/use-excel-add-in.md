@@ -3,7 +3,7 @@ title: "Excel アドインの使用"
 description: "このトピックでは、Microsoft Excel でエンティティ データを開き、Excel 用の Microsoft Dynamics Office アドインを使用してそのデータを表示、更新、また編集する方法を説明します。"
 author: ChrisGarty
 manager: AnnBe
-ms.date: 11/30/2017
+ms.date: 04/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,16 +18,16 @@ ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: f3ed06dbbce21ac093107953d3a72d8ab086af2a
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: e0e3e86820e0857b320d832c3bf3c94757667919
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="use-the-excel-add-in"></a>Excel アドインの使用
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックでは、Microsoft Excel でエンティティ データを開き、Excel 用の Microsoft Dynamics Office アドインを使用してそのデータを表示、更新、また編集する方法を説明します。 エンティティ データを開くには、Excel か Microsoft Dynamics 365 for Finance and Operations のいずれからでも開始できます。
 
@@ -35,6 +35,11 @@ Excel でエンティティ データを開くことにより、Excel アドイ�
 
 > [!NOTE]
 > Microsoft Azure Active Directory (Azure AD) テナントが Active Directory フェデレーション サービス (AD FS) を使用するようにコンフィギュレーションされている場合は、Excel のアドインに正しくサインインできるように、2016 年 5 月の Office の更新が適用されていることを確認する必要があります。
+
+Excel アドインの使用に関する詳細については、短い [Dynamics 365 for Finance and Operations でヘッダーと明細行のパターンの Excel テンプレートを作成する](https://youtu.be/RTicLb-6dbI) ビデオをご覧ください。
+
+> [!Video https://www.youtube.com/embed/RTicLb-6dbI]
+
 
 ## <a name="open-entity-data-in-excel-when-you-start-from-finance-and-operations"></a>Finance and Operations から開始して Excel でエンティティ データを開く
 1. Finance and Operations のページで、[**Microsoft Office で開く**] を選択します。
@@ -103,15 +108,15 @@ Excel アドインで [**公開**] を選択することにより、必要に応
     - フィールドの順序を変更するには、[**選択されたフィールド**] リストで対象のフィールドを選択してから [**上へ**] または [**下へ**] を選択します。
 
 4. データ ソースに変更を適用するには、**更新** を選択します。 その後 [**完了**] を選択してデザイナーを終了します。
-5. フィールド (列) を追加した場合、[更新] を選択して更新されたデータを取得します。
+5. フィールド (列) を追加した場合、**更新** を選択して更新されたデータを取得します。
 
 ## <a name="copy-environment-data"></a>環境データのコピー
 
 1 つの環境からブックに読み込めるデータは、別の環境にもコピーできます。 ただし、ブック内のデータ キャッシュは引き続き既存のデータとして扱われるために、接続 URL だけを変更することはできません。 代わりに、環境データのコピー機能を使用して、新しいデータとして新しい環境にデータを発行する必要があります。
 
-1. **オプション**ボタン (ギヤ記号) を選択してから、[データ コネクタ] クイック タブで**環境データのコピー**を選択します。 
+1. **オプション** ボタン (ギヤ記号) を選択してから、**データ コネクタ クイック タブ** で **環境データのコピー** を選択します。 
 2. 新しい環境にサーバー URL を入力してください。 
-3. [OK] を選択してから [はい] を選択し、アクションを確認します。 Excel アドインが再開し、新しい環境に接続します。 ブック内の既存データは、新しいデータとして扱われます。
+3. **OK** を選択してから、**はい** を選択しアクションを確認します。 Excel アドインが再開し、新しい環境に接続します。 ブック内の既存データは、新しいデータとして扱われます。
 
     Excel アドインの再起動後に、ブックが環境コピー モードになっているとメッセージ ボックスが表示されます。
 

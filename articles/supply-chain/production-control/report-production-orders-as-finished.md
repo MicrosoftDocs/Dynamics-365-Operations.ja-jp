@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="report-production-orders-as-finished"></a>製造オーダーの完了済としての報告
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 完了レポートは生産ステージです。 この段階では、完成品は製造オーダーから在庫へ報告され、移動されます。
 

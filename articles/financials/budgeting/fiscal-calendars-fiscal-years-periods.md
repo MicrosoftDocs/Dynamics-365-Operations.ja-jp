@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="fiscal-calendars-fiscal-years-and-periods"></a>会計カレンダー、会計年度期間、および会計年度
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事は、法人、固定資産、予算作成で会計カレンダー、会計年度、会計期間を活用する方法について説明します。
 

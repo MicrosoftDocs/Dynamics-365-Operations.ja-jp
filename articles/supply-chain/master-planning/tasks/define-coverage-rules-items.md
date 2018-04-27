@@ -24,7 +24,7 @@ ms.lasthandoff: 11/02/2017
 ---
 # <a name="define-coverage-rules-for-items"></a>品目の補充ルールの定義
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順の作成に使用するデモ データの会社は USMF です。 この手順は、補充ルールを作成し特定の品目の補充設定を上書きする方法を示します。 また、既定の在庫設定を指定する方法を示します。
 

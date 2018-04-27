@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-inventory-counting-processes"></a>在庫棚卸プロセスの定義
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順は、棚卸グループおよび棚卸仕訳帳を作成することによって、基本的な在庫棚卸処理のコンフィギュレーションについて説明します。 また、倉庫と品目レベルにおける棚卸ポリシーを有効にする方法も説明します。 通常、これらのタスクを実施するのは、倉庫の監督です。 これは、現在リリースされている一部の製品および倉庫を所有する前提条件となっています。 デモ データの会社を使用すると、いずれの在庫品目を使用しても、USMF 会社でこの手順を実行できます。
 

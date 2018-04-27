@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="define-and-maintain-channel-clients-registers-and-hardware-stations"></a>チャネル クライアント、レジスター、ハードウェア ステーションの定義と管理
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 このトピックでは、Retail POS に周辺機器を接続する方法について説明します。
 

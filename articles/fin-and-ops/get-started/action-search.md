@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="action-search"></a>アクション検索
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事では、Microsoft Dynamics 365 for Finance and Operations のアクション検索機能について説明します。 アクション検索でページのアクションを検索して実行できます。
 

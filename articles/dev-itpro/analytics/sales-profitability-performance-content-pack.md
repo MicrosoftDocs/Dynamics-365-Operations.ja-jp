@@ -28,7 +28,7 @@ ms.lasthandoff: 12/18/2017
 
 # <a name="sales-and-profitability-performance-power-bi-content"></a>販売および収益性パフォーマンス Power BI コンテンツ
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックでは、**販売と収益性のパフォーマンス** Microsoft Power BI コンテンツに何が含まれているのか説明します。 Power BI レポートにアクセスする方法を説明し、コンテンツを作成するために使用するデータ モデルおよびエンティティについての情報を提供します。
 

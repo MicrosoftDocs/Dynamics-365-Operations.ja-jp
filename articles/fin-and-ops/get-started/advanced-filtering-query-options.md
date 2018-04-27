@@ -19,17 +19,16 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1fe940d2d282a5b4468b3ba572626b5c87839e6d
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 4361311be0cf5c33c9b2fa4700b084a7b43f5b65
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="advanced-filtering-and-query-syntax"></a>高度なフィルター処理とクエリ構文
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事では、フィルタ処理とクエリ オプションについて説明します。[フィルタ/並べ替えの編集] ダイアログで、"matches" (一致) 演算子を使うときに利用できます。
 
@@ -68,7 +67,7 @@ ms.lasthandoff: 11/03/2017
 <td><em>入力開始値</em>..<em>入力終了値</em> (ピリオド 2 つ)</td>
 <td>2 つのピリオドで区切られた 2 つの値の間</td>
 <td>開始値、2 つのピリオド、終了値の順に入力します。</td>
-<td>「<strong>1..10</strong>」と入力すると、1 ～ 10 までのすべての値が検出されます。 ただし、文字列フィールドに <strong>A..C</strong> と入力すると、&quot;A&quot; および &quot;B&quot; で始まるすべての値と、値  &quot;C&quot; が検出されます。 たとえば、このクエリでは &quot;Ca&quot; が検出されません。 &quot;A*&quot; から &quot;C*&quot; までのすべての値を検出するには、「<strong>A..D</strong>」と入力します。</td>
+<td>「<strong>1..10</strong>」と入力すると、1 ～ 10 までのすべての値が検出されます。 ただし、文字列フィールドに <strong>A..C</strong> と入力すると、&quot;A&quot; および &quot;B&quot; で始まるすべての値と、値  &quot;C&quot; が検出されます。 たとえば、このクエリでは &quot;Ca&quot; が検出されません。 &quot;A<em>&quot; から &quot;C</em>&quot; までのすべての値を検出するには、「<strong>A..D</strong>」と入力します。</td>
 </tr>
 <tr class="even">
 <td>..<em>値</em> (2 つのピリオド)</td>
@@ -97,20 +96,20 @@ ms.lasthandoff: 11/03/2017
 <tr class="even">
 <td><em>値</em>* (アスタリスク)</td>
 <td>入力値で始まる</td>
-<td>開始値、アスタリスク (<strong>*</strong>) の順に入力します。</td>
-<td>「<strong>S*</strong>」では、&quot;S&quot; で始まるすべての文字列が検出されます (&quot;Stockholm&quot;、&quot;Sydney&quot;、&quot;San Francisco&quot; など)。</td>
+<td>開始値、アスタリスク (<strong><em></strong>) の順に入力します。</td>
+<td><strong>S</em></strong> では、&quot;S&quot; で始まるすべての文字列が検出されます (&quot;Stockholm&quot;、&quot;Sydney&quot;、&quot;San Francisco&quot; など)</td>
 </tr>
 <tr class="odd">
-<td>*<em>値</em> (アスタリスク)</td>
+<td><em><em>値</em> (アスタリスク)</td>
 <td>入力値で終わる</td>
 <td>アスタリスク、終了値の順に入力します。</td>
-<td>「<strong>*east</strong>」では、&quot;east&quot; で終了するすべての文字列が検出されます (&quot;Northeast&quot; や &quot;Southeast&quot; など)。</td>
+<td><strong></em>east</strong> では、&quot;east&quot; で終了するすべての文字列が検出されます (&quot;Northeast&quot; や &quot;Southeast&quot; など)。</td>
 </tr>
 <tr class="even">
-<td>*<em>値</em>* (アスタリスク)</td>
+<td><em><em>値</em></em> (アスタリスク)</td>
 <td>入力値を含む</td>
 <td>アスタリスク、値、アスタリスクの順に入力します。</td>
-<td>「<strong>*th*</strong>」では、&quot;th&quot; を含むすべての文字列が検出されます (&quot;Northeast&quot; や &quot;Southeast&quot; など)。</td>
+<td>「<strong><em>th</em></strong>」では、&quot;th&quot; を含むすべての文字列が検出されます (&quot;Northeast&quot; や &quot;Southeast&quot; など)。</td>
 </tr>
 <tr class="odd">
 <td>? (疑問符)</td>
@@ -131,7 +130,7 @@ ms.lasthandoff: 11/03/2017
 <td><strong><span class="code">(data source.Fieldname != &quot;A&quot;)</span></strong></td>
 </tr>
 <tr class="even">
-<td>選択した</td>
+<td>T</td>
 <td>今日の日付</td>
 <td>“<strong>T</strong>” を入力します</td>
 <td><strong>T</strong> 今日の日付に一致します。</td>

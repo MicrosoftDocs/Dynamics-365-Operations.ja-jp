@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="transfer-materials-with-kanban-jobs-february-2016-only"></a>かんばん作業のある材料の転送 (2016 年 2 月のみ)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、かんばん回収作業を実行し、材料を転送することに焦点をあてます。 この手順の作成に使用するデモ データの会社は USMF です。 この手順は、倉庫作業者を対象としています。
 

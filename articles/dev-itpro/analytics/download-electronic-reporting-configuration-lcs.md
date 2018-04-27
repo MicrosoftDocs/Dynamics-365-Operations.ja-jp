@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="download-electronic-reporting-configurations-from-lifecycle-services"></a>Lifecycle Services の電子申告コンフィギュレーションのダウンロード
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックは、Microsoft Dynamics Lifecycle Services (LCS) から電子申告 (ER) のコンフィギュレーションをダウンロードする方法を説明します。
 

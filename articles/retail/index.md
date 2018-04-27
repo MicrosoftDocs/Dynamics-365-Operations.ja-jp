@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="welcome-to-dynamics-365-for-retail"></a>Dynamics 365 for Retail へようこそ
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Microsoft Dynamics 365 for Retail は、すべてのチャネルの商取引を一元管理するエンド ツー エンドの小売用ソリューションです。 販売、モビリティ、インテリジェンス、生産性が含まれ、クラウドファースト、モバイルファーストで小売業者や作業者がより多くのことを実現するために役立ちます。 Retail では、販売促進、在庫、チャネルの管理機能など、さまざまなビジネス プロセスの運用を包括的にサポートします。 また、すべてのタッチポイントで没入型のカスタマー エクスペリエンスを提供します。
 

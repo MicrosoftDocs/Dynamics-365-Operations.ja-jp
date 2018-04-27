@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="make-manual-adjustments-to-the-baseline-forecast"></a>ベースライン予測に対して手動調整を行う
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックでは、ベースライン予測に手動調整を加えたり、予測の詳細を表示したりする方法を説明します。 
 

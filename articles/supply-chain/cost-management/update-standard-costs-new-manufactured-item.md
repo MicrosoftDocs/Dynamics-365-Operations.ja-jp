@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="update-standard-costs-for-a-new-manufactured-item"></a>新規製造品目の標準原価の更新
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事は、新規製造品目の標準原価の更新についてのガイダンスを提供します。 
 

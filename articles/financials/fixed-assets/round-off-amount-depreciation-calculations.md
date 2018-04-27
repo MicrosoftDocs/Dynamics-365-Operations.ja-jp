@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="round-off-amount-for-depreciation-calculations"></a>減価償却計算の丸め金額
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事は、帳簿設定ページの [減価償却の丸め] フィールドについて説明します。
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 10/26/2017
 ---
 # <a name="register-and-post-a-postdated-check-for-a-customer"></a>顧客の先日付小切手の登録および転記
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 顧客から受け取った先日付小切手の詳細を登録できます。 先日付小切手を転記して財務トランザクションを生成することもできます。   顧客から受け取った先日付小切手を登録し転記する前に、次のタスクを完了します。:   • [現金および銀行管理] ページで、先日付小切手を設定します。 • 先日小切手用の支払方法を設定します。   この手順のロールは会計登録者です。 この手順では、USMF というデモ会社を使用します。
 

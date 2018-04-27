@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="workflow-overview"></a>ワークフローの概要
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 for Finance and Operations のワークフロー システムについて説明します。
 

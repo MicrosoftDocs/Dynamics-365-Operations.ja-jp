@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="operations-scheduling"></a>工程のスケジューリング
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックでは、工程のスケジューリングに関する情報を提供します。 この工程スケジューリングは、時間経過による生産プロセスの概算を提供する場合に使用します。
 

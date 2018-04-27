@@ -28,9 +28,9 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="approve-and-confirm-purchase-orders"></a>発注書の承認および確認
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 この資料は、発注書 (PO) が作成された後の一連の状態と、変更管理の有効化の効果について説明します。
 

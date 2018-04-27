@@ -29,8 +29,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="payment-methods"></a>支払方法
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 小売業者が受け入れる各支払タイプは、システムの設定時にコンフィギュレーションする必要があります。 この記事では、設定可能な支払タイプおよびその設定方法について説明します。
 

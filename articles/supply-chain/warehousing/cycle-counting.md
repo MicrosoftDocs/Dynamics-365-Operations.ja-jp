@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="cycle-counting"></a>循環棚卸
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事は、倉庫管理で使用できる倉庫ソリューションで、循環棚卸を使用する方法について説明します。 この記事は、在庫管理で使用できる倉庫ソリューションには適用されません。
 

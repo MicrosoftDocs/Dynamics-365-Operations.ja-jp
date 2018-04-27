@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="submit-and-approve-project-budget-revisions"></a>プロジェクト予算のリビジョンの送信および承認
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順には、プロジェクト予算のリビジョンに関する情報が用意されています。 プロジェクト予算は必要に応じて何度でも改訂することができますが、予算が複数回改訂される場合、個々のリビジョンの量を表示することはできません。 
 

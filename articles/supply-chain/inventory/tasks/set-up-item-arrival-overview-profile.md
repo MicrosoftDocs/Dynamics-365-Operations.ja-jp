@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="set-up-an-item-arrival-overview-profile"></a>着荷の概要プロファイルの設定
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 このタスクでは、着荷の概要プロファイルの設定を中心に説明します。 着荷の概要プロファイルは、ユーザーが [着荷の概要] ページを開いた際に適用されるルールのコレクションです。 デモ データの会社 USMF でこの手順を使用できます。 通常、この手順を実施するのは、入荷係です。
 

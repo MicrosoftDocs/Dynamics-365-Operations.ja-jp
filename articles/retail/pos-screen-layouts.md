@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-screen-layouts-for-pos"></a>POS の画面レイアウトのコンフィギュレーション
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 の Retail POS (販売時点管理) の画面レイアウトに関する情報を提供します。
 

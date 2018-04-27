@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="financial-dimensions-and-main-accounts-in-a-right-to-left-language"></a>右から左へ読み書きする言語の財務分析コードと主勘定
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックでは、右から左へ読み書きする言語を使用する際に考慮する必要がある実装の決定について説明し、財務分析コードと主勘定を設定する必要があります。
 

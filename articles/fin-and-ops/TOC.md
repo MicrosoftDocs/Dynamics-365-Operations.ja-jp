@@ -1,3 +1,4 @@
+
 # [Dynamics 365 for Finance and Operations](index.md)
 
 ## 使用開始
@@ -17,12 +18,14 @@
 ##### [Finance and Operations (オンプレミス) の購入](get-started/purchase-on-premises.md)
 
 ### [新機能および変更された機能](get-started/whats-new-changed.md)
+#### [ソフトウェアのライフサイクル ポリシーおよびクラウド リリース](../dev-itpro/migration-upgrade/versions-update-policy.md?toc=/fin-and-ops/toc.json)
+#### [ソフトウェアのライフサイクル ポリシーおよびオンプレミス リリース](../dev-itpro/migration-upgrade/on-prem-version-update-policy.md?toc=/fin-and-ops/toc.json)
 #### [削除済みまたは推奨されない機能](../dev-itpro/migration-upgrade/deprecated-features.md?toc=/fin-and-ops/toc.json)
 #### [延期された AX 2012 の機能](get-started/ax-2012-features-not-implemented-but-not-deprecated.md)
 #### [オンプレミス配置で実装されていない機能](get-started/features-not-implemented-on-prem.md)
+#### [Finance and Operations 8.0 (2018 年 4 月)](get-started/whats-new-changed-8-0-April-2018.md)
 #### [Platform update 15 (2018 年 3 月)](get-started/whats-new-platform-update-15.md)
-#### [リリースおよびライフサイクルのポリシー](../dev-itpro/migration-upgrade/versions-update-policy.md?toc=/fin-and-ops/toc.json)
-#### [オンプレミス配置 (2018 年 3 月)](get-started/whats-new-LBD-PU12-App72.md)
+#### [Platform update 12 によるオンプレミス配置 7.2 (2018 年 3 月)](get-started/whats-new-LBD-PU12-App72.md)
 #### [Finance and Operations, Enterprise Edition 7.3](get-started/whats-new-application-7.3-update.md)
 #### [Platform update 12 (2017 年 11 月)](get-started/whats-new-platform-update-12.md)
 #### [Platform update 11 (2017 年 10 月)](get-started/whats-new-platform-update-11.md)
@@ -162,6 +165,10 @@
 ###### [販売見積書のヘッダーおよび明細行の Sales から Finance and Operations への直接同期](../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md)
 ###### [販売注文の Sales と Finance and Operations の間の直接同期](../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md)
 ###### [売上請求書のヘッダーおよび明細行の Finance and Operations から Sales への直接同期](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
+##### [Field Service との統合を構成する](../supply-chain/sales-marketing/field-service.md)
+###### [Finance and Operations の製品と Field Service の製品との同期](../supply-chain/sales-marketing/field-service-product.md)
+###### [Field Service のワーク オーダーと Finance and Operations の販売注文との同期](../supply-chain/sales-marketing/field-service-work-order.md)
+###### [Field Service の契約の請求書と Finance and Operations の自由書式の請求書との同期](../supply-chain/sales-marketing/field-service-invoice.md)
 
 
 #### [外部 Web サービスの使用](../dev-itpro/data-entities/consume-external-web-service.md?toc=/fin-and-ops/toc.json)
@@ -199,10 +206,12 @@
 
 ### [自分のデータベースの持ち込み](../dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/fin-and-ops/toc.json)
 
+### [データ タスクの自動化](../dev-itpro/data-entities/data-task-automation.md)
+
 ## [財務管理](../financials/index.md)
 
-### [一般会計](../financials/general-ledger/general-ledger.md)
-#### 勘定
+### [総勘定元帳](../financials/general-ledger/general-ledger.md)
+#### アカウント
 ##### [見越計上の概要](../financials/general-ledger/accruals-overview.md)
 ##### [消去ルール](../financials/general-ledger/elimination-rules.md)
 ##### [勘定および分析コードの組み合わせ](../financials/general-ledger/enter-account-dimension-combinations-segmented-entry-control.md)
@@ -754,6 +763,7 @@
 #### [支払方法のファイル形式](../financials/localizations/emea-select-file-formats-for-the-method-of-payments.md)
 #### [会計サービス (ESR) の統合](../financials/localizations/emea-fiscal-service-integration.md)
 #### [エストニアおよびリトアニアの固定資産の処分](../financials/localizations/emea-credit-note-reverse-fixed-asset-sale.md)
+#### [外貨再評価](../financials/localizations/emea-foreign-currency-revaluation.md)
 #### [内部在庫移動の移動文書の生成](../financials/localizations/tasks/transfer-document-internal-inventory-transfer.md)
 #### [EU イントラスタット申告の生成](../financials/localizations/tasks/eur-00002-eu-intrastat-declaration.md)
 #### [EU 販売リスト レポートの生成](../financials/localizations/tasks/eur-00011-eu-sales-list-report.md)
@@ -809,13 +819,7 @@
 
 #### [オーストリア](../financials/localizations/austria.md)
 
-#### ベルギー
-##### [CODA 口座取引明細書](../financials/localizations/emea-bel-coda-bank-statement-import.md)
-##### [トランザクションの作成と BLWI への転送](../financials/localizations/tasks/be-00011-create-transfer-blwi.md)
-##### [INTERVAT 税申告](../financials/localizations/emea-bel-intervat-tax-declaration.md)
-##### [PRODCOM レポートの設定](../financials/localizations/emea-bel-prodcom-report.md)
-##### [調整レポート](../financials/localizations/emea-bel-reconciliation-reports.md)
-##### [支払残高レポートの設定](../financials/localizations/tasks/be-00011-set-up-payment-balance-reporting.md)
+#### [ベルギー](../financials/localizations/belgium.md)
 
 #### [チェコ共和国](../financials/localizations/czech-republic.md)
 
@@ -833,6 +837,7 @@
 ##### [支払伝票形式の設定](../financials/localizations/tasks/set-up-payment-slip-format.md)
 
 #### エストニア
+##### [個人情報の要求](../financials/localizations/emea-est-personal-info.md)
 ##### [VAT 明細書](../financials/localizations/emea-est-vat-statement-details.md)
 
 #### フランス
@@ -859,6 +864,9 @@
 ##### [RB/SL 減価償却](../financials/localizations/emea-fra-rbsl-depreciation.md)
 ##### [支払方法の設定](../financials/localizations/tasks/fr-00004-setup-method-payment.md)
 ##### [顧客の支払方法の更新](../financials/localizations/tasks/fr-00004-update-method-payment-customer.md)
+##### Retail
+###### [キャッシュ レジスター](../retail/localizations/emea-fra-cash-registers.md)
+###### [キャッシュ レジスターの配置ガイドライン](../retail/localizations/emea-fra-deployment.md)
 
 #### ドイツ
 ##### [追加取得の減価償却](../financials/localizations/emea-deu-additional-acquisition-depreciation.md)
@@ -877,6 +885,7 @@
 ##### [固定資産の減価償却方法](../financials/localizations/emea-hun-fixed-assets-depreciation-methods.md)
 ##### [低原価固定資産](../financials/localizations/emea-hun-low-cost-fixed-assets.md)
 ##### [固定資産を在庫に移動する](../financials/localizations/emea-hun-fixed-asset-to-inventory.md)
+##### [税還付ドキュメント](../financials/localizations/emea-hun-tax-reimbursement-docs.md)
 
 #### アイスランド
 ##### [仕入先勘定の作成および請求書申告カテゴリの関連付け](../financials/localizations/tasks/create-vendor-account-attach-invoice-declaration-category.md)
@@ -891,6 +900,7 @@
 ##### [固定資産の減価償却](../financials/localizations/emea-ita-depreciation-of-fixed-assets.md)
 ##### [Modello 770](../financials/localizations/emea-ita-modello770.md)
 ##### [請求書の梱包明細日付の検証](../financials/localizations/emea-ita-packing-slip-date-verification-on-invoice.md)
+##### [輸送出荷の詳細を含む梱包明細の転記および印刷](../financials/localizations/emea-ita-packing-slip.md)
 ##### [消費税帳簿](../financials/localizations/emea-ita-fiscal-books.md)
 ##### [政府/自治体に対して発行された請求書の分割支払](../financials/localizations/emea-ita-split-payment-invoices-issued-public-administration.md)
 ##### [源泉徴収税](../financials/localizations/emea-ita-withholding-tax.md)
@@ -945,6 +955,7 @@
 ##### [販売および購買サイクル](../financials/localizations/emea-esp-sales-purchase-cycle.md)
 ##### [特殊エントリと期首表](../financials/localizations/emea-esp-opening-sheets-spain.md)
 #### スウェーデン
+##### [監査担当者向けの財務情報のエクスポート (スウェーデン)](../financials/localizations/emea-swe-sie-standard-report.md)
 ##### [支払インポート形式](../financials/localizations/emea-swe-payment-formats-import.md)
 ##### [キャッシュ レジスター](../retail/localizations/emea-swe-cash-registers.md?toc=/fin-and-ops/toc.json)
 #### スイス
@@ -1218,7 +1229,8 @@
 #### [Document Reporting Services の概要](../dev-itpro/analytics/document-reporting-services.md?toc=/fin-and-ops/toc.json)
 #### [オンプレミスの配置の SSRS のコンフィギュレーション](../dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/fin-and-ops/toc.json)
 #### [印刷](../dev-itpro/analytics/print-documents.md?toc=/fin-and-ops/toc.json)
-##### [プリンター デバイスを有効にするためにドキュメント ルーティング エージェントをインストールする](../dev-itpro/analytics/install-document-routing-agent.md?toc=/fin-and-ops/toc.json)
+##### [ネットワーク プリンター デバイスを有効にするためにドキュメント回覧エージェントをインストールする](../dev-itpro/analytics/install-document-routing-agent.md?toc=/fin-and-ops/toc.json)
+##### [ドキュメント回覧エージェントのアップグレード](../dev-itpro/analytics/upgrade-document-routing-agent.md)
 ##### [オンプレミス環境でのネットワーク プリンター デバイスのインストール](../dev-itpro/analytics/install-network-printer-onprem.md?toc=/fin-and-ops/toc.json)
 ##### [オンプレミス配置でのドキュメントの生成、発行、および印刷機能](../dev-itpro/analytics/printing-capabilities-on-premises.md?toc=/fin-and-ops/toc.json)
 ##### [ドキュメント回覧エージェントを Windows サービスとして実行する](../dev-itpro/analytics/run-document-routing-agent-as-windows-service.md?toc=/fin-and-ops/toc.json)
@@ -1234,6 +1246,7 @@
 
 ### [電子申告](../dev-itpro/analytics/general-electronic-reporting.md?toc=/fin-and-ops/toc.json)
 #### [電子申告フレームワークのコンフィギュレーション](../dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/fin-and-ops/toc.json)
+#### [コンフィギュレーションの作成](../dev-itpro/analytics/electronic-reporting-configuration.md?toc=/fin-and-ops/toc.json)
 ##### [コンフィギュレーション プロバイダーを作成し、電子申告が有効なプロバイダーとしてマーク付けする](../dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md?toc=/fin-and-ops/toc.json)
 ##### [電子申告用にドメイン固有のデータ モデルを設計する](../dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?toc=/fin-and-ops/toc.json)
 ##### [モデル マッピングを定義し、電子申告用のデータ ソースを選択する](../dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md?toc=/fin-and-ops/toc.json)
@@ -1248,48 +1261,46 @@
 ##### [電子申告の提出先を構成する](../dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/fin-and-ops/toc.json)
 #### [電子申告用に Microsoft Word 形式のレポートを生成するためのコンフィギュレーションを設計する](../dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/fin-and-ops/toc.json)
 #### [電子申告用に OpenXML 形式のレポートを生成するためのコンフィギュレーションを設計する](../dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/fin-and-ops/toc.json)
-#### [電子申告用の Microsoft Excel テンプレートを再適用して形式を変更する](../dev-itpro/analytics/tasks/er-modify-format-by-reapplying-microsoft-excel-template-july-2017.md?toc=/fin-and-ops/toc.json)
 #### [Microsoft Excel テンプレートを再適用して電子申告形式を変更](../dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/fin-and-ops/toc.json)
 #### [電子申告用の形式を作成するときにデータ モデルの定義を選択する](../dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/fin-and-ops/toc.json)
-##### [電子申告用の他のコンポーネントからのコンフィギュレーションの依存関係を定義する](../dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/fin-and-ops/toc.json)
-##### [電子申告用のデータ ソースとして財務分析コードを使用するためのデータ モデルを設計する](../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/fin-and-ops/toc.json)
-##### [電子申告用のデータ ソースとして財務分析コードを使用するためのモデルをマップする](../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?toc=/fin-and-ops/toc.json)
-##### [電子申告用のデータ ソースとして財務分析コードを使用するためのレポートを設計する](../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/fin-and-ops/toc.json)
-##### [電子申告用のデータ ソースとして財務分析コードを使用するレポートを実行する](../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/fin-and-ops/toc.json)
-##### [電子申告用の棚卸および集計を行うための形式を作成する](../dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/fin-and-ops/toc.json)
-##### [電子申告用の棚卸および集計を行うための計算を構成する](../dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/fin-and-ops/toc.json)
-##### [電子申告用の棚卸および集計の出力を作成するための計算を使用する](../dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/fin-and-ops/toc.json)
-##### [電子申告用の棚卸および集計を行うための形式を実行する](../dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/fin-and-ops/toc.json)
-##### [電子申告用の Excel レポートで水平に拡張された範囲を使用して列を動的に追加するための形式を設計する](../dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/fin-and-ops/toc.json)
-##### [電子申告用の Excel レポートで水平に拡張された範囲を使用して列を動的に追加する形式を実行する](../dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/fin-and-ops/toc.json)
-##### [電子申告用の形式出力でドキュメント管理ファイルを使用するためのデータ モデルを準備する](../dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/fin-and-ops/toc.json)
-##### [電子申告用の形式出力でドキュメント管理ファイルを使用するためのデータ モデルを拡張する](../dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/fin-and-ops/toc.json)
-##### [電子申告用の形式出力でドキュメント管理ファイルを使用するための形式を作成する](../dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/fin-and-ops/toc.json)
-##### [電子申告用の形式出力でドキュメント管理ファイルを使用するための形式を実行する](../dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/fin-and-ops/toc.json)
-##### [電子申告用の形式出力でドキュメント管理ファイルを使用するための形式を変更して実行する](../dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/fin-and-ops/toc.json)
-##### [電子申告 (ER) (Part 1) 用の画像が埋め込まれた Microsoft Office 形式のレポートを生成するためのコンフィギュレーションを設計する](../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/fin-and-ops/toc.json)
-##### [電子申告用の画像が埋め込まれた Microsoft Office 形式のレポートを作成するためのコンフィギュレーションを確認する](../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/fin-and-ops/toc.json)
-##### [電子申告用の画像が埋め込まれた Microsoft Office 形式のレポートを生成する](../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/fin-and-ops/toc.json)
+#### [電子申告用の他のコンポーネントからのコンフィギュレーションの依存関係を定義する](../dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/fin-and-ops/toc.json)
+##### [データ ソースとして財務分析コードを使用するためのデータ モデルを設計する](../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/fin-and-ops/toc.json)
+##### [データ ソースとして財務分析コードを使用するためのモデルをマップする](../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?toc=/fin-and-ops/toc.json)
+##### [データ ソースとして財務分析コードを使用するためのレポートを設計する](../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/fin-and-ops/toc.json)
+##### [データ ソースとして財務分析コードを使用するレポートを実行する](../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/fin-and-ops/toc.json)
+##### [棚卸および集計を行うための形式を作成する](../dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/fin-and-ops/toc.json)
+##### [棚卸および集計を行うための計算を構成する](../dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/fin-and-ops/toc.json)
+##### [棚卸および集計の出力を作成するための計算を使用する](../dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/fin-and-ops/toc.json)
+##### [棚卸および集計を行うための形式を実行する](../dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/fin-and-ops/toc.json)
+##### [Excel レポートで水平に拡張された範囲を使用して列を動的に追加するための形式を設計する](../dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/fin-and-ops/toc.json)
+##### [Excel レポートで水平に拡張された範囲を使用して列を動的に追加する形式を実行する](../dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/fin-and-ops/toc.json)
+##### [形式出力でドキュメント管理ファイルを使用するためのデータ モデルを準備する](../dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/fin-and-ops/toc.json)
+##### [形式出力でドキュメント管理ファイルを使用するためのデータ モデルを拡張する](../dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/fin-and-ops/toc.json)
+##### [形式出力でドキュメント管理ファイルを使用するための形式を作成する](../dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/fin-and-ops/toc.json)
+##### [形式出力でドキュメント管理ファイルを使用するための形式を実行する](../dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/fin-and-ops/toc.json)
+##### [形式出力でドキュメント管理ファイルを使用するための形式を変更して実行する](../dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/fin-and-ops/toc.json)
+##### [画像が埋め込まれた Microsoft Office 形式でレポートを生成するコンフィギュレーションを設計する](../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/fin-and-ops/toc.json)
+##### [画像が埋め込まれた Microsoft Office 形式でレポートを作成するためのコンフィギュレーションを確認する](../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/fin-and-ops/toc.json)
+##### [画像が埋め込まれた Microsoft Office 形式でレポートを生成する](../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/fin-and-ops/toc.json)
 #### [電子申告ツールを使用して電子ドキュメントを生成し、アプリケーション データを更新](../dev-itpro/analytics/generate-electronic-documents-update-application-data.md?toc=/fin-and-ops/toc.json)
-##### [電子申告用のアプリケーション データ更新でドキュメントを生成するためのコンフィギュレーションをインポートする](../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-1-import-configurations.md?toc=/fin-and-ops/toc.json)
-##### [電子申告用のアプリケーション データ更新でドキュメントを生成する](../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-2-generate-documents.md?toc=/fin-and-ops/toc.json)
-##### [電子申告用のアプリケーション データ更新でドキュメントを生成するためのモデルとマッピングを変更する](../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-3-modify-model-mapping.md?toc=/fin-and-ops/toc.json)
-##### [電子申告用のアプリケーション データ更新でドキュメントを生成するための形式を変更する](../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-4-modify-format.md?toc=/fin-and-ops/toc.json)
-##### [電子申告用のアプリケーション データ更新でドキュメントを生成する](../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-5-generate-documents-application-data-update.md?toc=/fin-and-ops/toc.json)
+##### [アプリケーション データを含むドキュメントを生成するためのコンフィギュレーションをインポートする](../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-1-import-configurations.md?toc=/fin-and-ops/toc.json)
+##### [アプリケーション データを含むドキュメントを生成するためのコンフィギュレーションを設計する](../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-2-generate-documents.md?toc=/fin-and-ops/toc.json)
+##### [アプリケーション データを含むドキュメントを生成するためにモデルとマッピングを変更する](../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-3-modify-model-mapping.md?toc=/fin-and-ops/toc.json)
+##### [アプリケーション データを含むドキュメントを生成するための形式を変更する](../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-4-modify-format.md?toc=/fin-and-ops/toc.json)
+##### [アプリケーション データを含むドキュメントを生成する](../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-5-generate-documents-application-data-update.md?toc=/fin-and-ops/toc.json)
 #### [電子申告ツールを使用して生成されるビジネス ドキュメントへの画像と図形の埋め込み](../dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/fin-and-ops/toc.json)
-#### [電子申告用の Lifecycle Services にコンフィギュレーションをアップロードする](../dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/fin-and-ops/toc.json)
-##### [電子申告用の Lifecycle Services からコンフィギュレーションをインポートする](../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/fin-and-ops/toc.json)
 #### [コンフィギュレーション ライフサイクルの管理](../dev-itpro/analytics/general-electronic-reporting-manage-configuration-lifecycle.md?toc=/fin-and-ops/toc.json)
-#### [コンフィギュレーションの作成](../dev-itpro/analytics/electronic-reporting-configuration.md?toc=/fin-and-ops/toc.json)
-#### [Lifecycle Services からのコンフィギュレーションのダウンロード](../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/fin-and-ops/toc.json)
-#### [電子申告機能の拡張](../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/fin-and-ops/toc.json)
-##### [電子申告用のモデル マッピング コンフィギュレーションを管理する](../dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/fin-and-ops/toc.json)
-##### [電子申告用の外部ファイルからデータをインポートするために必要なコンフィギュレーションを作成する](../dev-itpro/analytics/tasks/er-required-configurations-import-data.md?toc=/fin-and-ops/toc.json)
-#### [電子申告コンフィギュレーションのインポート](../dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/fin-and-ops/toc.json)
+##### [電子申告用の Lifecycle Services にコンフィギュレーションをアップロードする](../dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/fin-and-ops/toc.json)
+##### [電子申告用の Lifecycle Services からコンフィギュレーションをインポートする](../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/fin-and-ops/toc.json)
+##### [Lifecycle Services からのコンフィギュレーションのダウンロード](../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/fin-and-ops/toc.json)
+##### [電子申告コンフィギュレーションのインポート](../dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/fin-and-ops/toc.json)
+#### [電子申告用のモデル マッピング コンフィギュレーションを管理する](../dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/fin-and-ops/toc.json)
+##### [電子申告用に外部ファイルからデータをインポートするために必要なコンフィギュレーションを作成する](../dev-itpro/analytics/tasks/er-required-configurations-import-data.md?toc=/fin-and-ops/toc.json)
 #### [アプリケーションのデータを更新するために受信したドキュメントを解析する](../dev-itpro/analytics/parse-incoming-electronic-documents.md?toc=/fin-and-ops/toc.json)
 #### [CSV 形式で受信したドキュメントを解析する](../dev-itpro/analytics/parse-incoming-electronic-documents-csv-format.md?toc=/fin-and-ops/toc.json)
-
+##### [電子申告機能の拡張](../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/fin-and-ops/toc.json)
 ##### [Application update 7.3 での電子申告フレームワーク API の変更](../dev-itpro/analytics/er-apis-app73.md?toc=/fin-and-ops/toc.json)
+
 
 ### 埋め込み型の解析ソリューション
 #### [ワークスペースの埋め込み Power BI](../dev-itpro/analytics/embed-power-bi-workspaces.md?toc=/fin-and-ops/toc.json)
@@ -1451,6 +1462,7 @@
 #### [仕入先のオンボーディング](../supply-chain/procurement/vendor-onboarding.md)
 #### [外部仕入先との仕入先コラボレーション](../supply-chain/procurement/vendor-collaboration-work-external-vendors.md)
 #### [顧客との仕入先コラボレーション](../supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations.md)
+#### [仕入先カタログのインポート](../supply-chain/procurement/vendor-catalogs-import.md)
 #### [パンチアウト eProcurement の外部カタログの設定](../supply-chain/procurement/set-up-external-catalog-for-punchout.md)
 #### [パンチアウト eProcurement の外部カタログの使用](../supply-chain/procurement/use-external-catalogs-for-punchout.md)
 #### [仕入先コラボレーションのモバイル ワークスペース](../supply-chain/procurement/vendor-collaboration-mobile-workspace.md)
@@ -1598,14 +1610,16 @@
 ##### [製造における材料の置き換え](../supply-chain/production-control/substitute-items-bom-lines.md)
 ##### [製造実行での登録](../supply-chain/production-control/registration-manufacturing-execution.md)
 ##### [生産フィードバック](../supply-chain/production-control/production-feedback.md)
-##### [時刻と出勤の登録](../supply-chain/production-control/time-attendance-registrations.md)
-##### [時刻と出勤の休暇登録](../supply-chain/production-control/absence-registration-in-time-and-attendance.md)
 ##### [時刻と出勤の給与プロセスの有効化](../supply-chain/production-control/tasks/payroll-process-time-attendance.md)
 ##### [モバイル ジョブ デバイスを使用した作業者のコンフィギュレーション](../supply-chain/production-control/tasks/worker-mobile-job-device.md)
 #### 製造における財務の管理
 ##### [ジョブ バンドル内のジョブへの時間割り当て](../supply-chain/production-control/allocate-time-jobs-job-bundle.md)
 ##### [材料消費の計算](../supply-chain/production-control/consumption.md)
 ##### [生産の転記](../supply-chain/cost-management/production-posting.md)
+#### [時刻と出勤の登録](../supply-chain/production-control/time-attendance-registrations.md)
+##### [登録に基づく支払い](../supply-chain/production-control/pay-based-on-registrations.md)
+##### [時刻と出勤の休暇登録](../supply-chain/production-control/absence-registration-in-time-and-attendance.md)
+##### [フレックス グループ](../supply-chain/production-control/time-attendance-flex-groups.md)
 
 ### リーン生産 
 #### [リーン生産の概要](../supply-chain/production-control/lean-manufacturing-overview.md)
@@ -1836,6 +1850,7 @@
 #### [倉庫管理における作業が関連付けられている在庫の移動](../supply-chain/warehousing/move-inventory-associated-work.md)
 #### [倉庫作業者の管理](../supply-chain/warehousing/manage-warehouse-workers.md)
 ### ピッキングと梱包
+#### [クラスター ピッキングの設定](../supply-chain/warehousing/set-up-cluster-picking.md)
 #### [バッチおよびライセンス プレートの確認](../supply-chain/warehousing/batch-and-license-plate-confirmation.md)
 #### [ライセンス プレートの連結用のモバイル デバイス メニュー項目の作成](../supply-chain/warehousing/tasks/create-mobile-device-license-plate-consolidation.md)
 #### [混合ライセンス プレートの受取](../supply-chain/warehousing/mixed-license-plate-receiving.md)
@@ -1843,10 +1858,11 @@
 #### [モバイル デバイスで最も古いバッチをピッキング](../supply-chain/warehousing/pick-oldest-batch.md)
 #### [Dynamics 365 for Finance and Operations でカメラを使用してバーコードをスキャン](../supply-chain/warehousing/scan-bar-codes-using-a-camera.md)
 #### [ピース ピッキング確認](../supply-chain/warehousing/piece-picking-confirmation.md)
-#### [クラスター ピッキングの製品の確認](../supply-chain/warehousing/cluster-picking-item-confirmation.md)
+#### [輸送積荷の部分的出荷](../supply-chain/warehousing/partial-shipping-of-transport-loads.md)
 #### [部分的に引当済の移動オーダーのバッチ リリース](../supply-chain/warehousing/batch-release-of-partially-reserved-transfer-orders.md)
 #### [梱包材および費用](../supply-chain/warehousing/pack-materials-packing-material-fees.md)
 ### 在庫棚卸
+#### [在庫棚卸の理由コード](../supply-chain/warehousing/reason-codes-for-counting-journals.md)
 #### [在庫のブロック](../supply-chain/inventory/inventory-blocking.md)
 #### [循環棚卸](../supply-chain/warehousing/cycle-counting.md)
 #### [循環棚卸の定義](../supply-chain/warehousing/tasks/define-cycle-counting-microsoft-dynamics-365-finance-operations-enterprise-edition-july-2017.md)
@@ -1857,6 +1873,7 @@
 #### [在庫状態](../supply-chain/inventory/inventory-statuses.md)
 #### [在庫タグ棚卸](../supply-chain/inventory/inventory-tag-counting.md)
 ### [補充](../supply-chain/warehousing/replenishment.md)
+#### [即時補充](../supply-chain/warehousing/immediate-replenishment.md)
 #### [引き取りかんばんを使用した補充](../supply-chain/warehousing/material-replenishment-withdrawal-kanban.md)
 ### [倉庫管理アプリのインストールとコンフィギュレーション](../supply-chain/warehousing/install-configure-warehousing-app.md)
 #### [倉庫管理アプリのフィールド名のコンフィギュレーション](../supply-chain/warehousing/configure-app-field-names-priorities-warehouse.md)

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-impairment-accounting-common-parameters-and-posting-profile-japan"></a>減損会計の共通パラメーターおよび転記プロファイルの設定 (日本)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 このタスクでは、減損会計の共通パラメーターと転記プロファイルの定義方法が確認できます。
 

@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="release-production-orders"></a>製造オーダーのリリース
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 リリースされた製造オーダーは、生産が承認された注文です。 生産の作業現場と倉庫でのプロセス実行に使用でき製造オーダーには、製造オーダーのライフ サイクルの状態を説明するのに "リリース済" という語句が使用されます。 
 

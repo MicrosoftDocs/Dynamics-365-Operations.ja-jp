@@ -19,17 +19,16 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: e7b29b1cca0b61f295449045a2d4e38abacf05b5
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: ba1b158908ac2328c29f7efe23756248be5be33c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="manage-items-lent-to-workers"></a>作業者への貸与品目の管理
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 貸与品目は、会社から作業者に貸与される現物品目を管理者が追跡するのに役立つレコードです。 
 
@@ -51,7 +50,7 @@ ms.lasthandoff: 11/03/2017
 
 品目が損傷または紛失した場合は、架空の返却レコードを入力します。 その後、品目を削除するか概要に記録し、品目が利用できないことを示すために説明を変更します。
 
- 
+
 <a name="see-also"></a>参照
 --------
 

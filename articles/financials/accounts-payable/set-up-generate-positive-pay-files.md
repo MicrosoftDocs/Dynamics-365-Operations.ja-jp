@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="set-up-and-generate-positive-pay-files"></a>確認後支払ファイルの設定と生成
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事は、確認後支払を設定し、確認後支払ファイルを生成する方法を説明します。 
 

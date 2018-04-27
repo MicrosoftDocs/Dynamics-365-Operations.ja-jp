@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="questionnaires"></a>アンケート
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 このトピックは、アンケートに関する一般情報、およびより詳しい情報へのリンクを提供します。 アンケートとは、多様な目的の情報を収集するために使用される一連の質問です。 アンケートのデザイン、作成、配布、および回答の完了を行い、結果を分析することができます。 
 

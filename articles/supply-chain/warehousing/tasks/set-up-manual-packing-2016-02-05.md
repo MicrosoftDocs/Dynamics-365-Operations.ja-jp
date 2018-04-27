@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-manual-packing-february--may-2016-only"></a>手動の梱包の設定 (2016 年 2 月および 5 月のみ)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 梱包プロセスで、製品を検証してコンテナーに梱包できます。 このプロセスでは、倉庫作業者が製品を保管場所から集荷し、品目の数量および種類をチェックする梱包ステーションに移動して、適切なコンテナーに割り当てます。 コンテナーが完全に梱包され、閉じてから出荷ドックに移動されると、製品を出荷する準備が整います。 この手順では、USMF というデモ会社を使用します。
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="define-lean-manufacturing-work-cells"></a>リーン生産作業セルの定義
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 作業セルは、リーン生産のプロセス活動で使用できるリソース グループの特定のフォームです。 作業セルには、入荷および出荷場所と生産フロー モデルに基づいた能力定義があります。 リーン生産の作業セルと能力計算の基本概念に関する詳細については、リーン生産についてのホワイト ペーパーを参照してください。 この手順の作成に使用するデモ データの会社は USMF
 

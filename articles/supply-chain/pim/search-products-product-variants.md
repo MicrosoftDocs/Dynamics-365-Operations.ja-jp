@@ -20,18 +20,18 @@ ms.author: conradv
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 08715b4c31c42dfa23d72b1035a1e7cc737c13a2
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 2441f7cbf95512677f62eb862be99af90f3c4b17
 ms.contentlocale: ja-jp
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="search-for-products-and-product-variants-during-order-entry"></a>注文入力時に製品および製品のバリアントを検索する
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[Retail name](../includes/retail-name.md)]
+[!INCLUDE [Retail name](../includes/retail-name.md)]
 
 手動で販売注文明細行または購買注文明細行を作成する場合、[<strong>品目番号</strong>] フィールドを使用して製品と製品バリアントを検索します。  これにより、コンフィギュレーションの文字列のみがある場合、または製品分析コードの 1 つが利用可能な場合に、製品バリアントをすばやく検索することが可能になります。
 
@@ -72,7 +72,7 @@ ms.lasthandoff: 02/07/2018
 
 **販売とマーケティング &gt; 設定 &gt; 検索 &gt; 検索基準** のページへ移動します。 **[検索条件]** ページでは、顧客、見込顧客、および製品検索の基準を定義することができます。 製品検索基準を使用してページをフィルターしていることを確認します。 ページ メニューの [**製品**] を切り替えることによりこれが可能です。  
 
-検索基準に表示製品番号を追加するには、ページメニューで **新規** をクリックします。 これは **検索基準** グリッドの新しいレコードを追加します。 [**フィールド名**] 列のルックアップを開き、[**DisplayProductNumber**] を選択します。 検索基準に製品のコンフィギュレーションを追加するには、新しいレコードを **検索基準**グリッドで作成し、**フィールド名** 列で **configId** を選択します。 同様に、カラー分析コードが [**フィールド名**] [**InventColorId**]、サイズ分析コードが [**InventSizeId**]、スタイル分析コードが [**InventStyleId**] のレコードを作成します。
+検索基準に表示製品番号を追加するには、ページメニューで <strong>新規</strong> をクリックします。 これは <strong>検索基準</strong> グリッドの新しいレコードを追加します。 [<strong>フィールド名</strong>] 列のルックアップを開き、[<strong>DisplayProductNumber</strong>] を選択します。 検索基準に製品のコンフィギュレーションを追加するには、新しいレコードを <strong>検索基準** グリッドで作成し</strong><strong>フィールド名</strong> 列で **configId を選択します。 同様に、カラー分析コードが [<strong>フィールド名</strong>] [<strong>InventColorId</strong>]、サイズ分析コードが [<strong>InventSizeId</strong>]、スタイル分析コードが [<strong>InventStyleId</strong>] のレコードを作成します。
 
 ### <a name="step-2-populate-the-database-table-that-is-used-for-product-search"></a>手順 2: 製品検索に使用するデータベース テーブルを設定します。
 

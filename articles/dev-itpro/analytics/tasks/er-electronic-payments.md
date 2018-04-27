@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="generate-electronic-documents-for-payments-using-a-format-configuration-for-electronic-reporting-er"></a>電子申告 (ER) 用の形式コンフィギュレーションを使用して支払の電子ドキュメントを生成する
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 次の手順では、システム管理者または電子申告開発者の役割のユーザーが、支払処理の電子ドキュメントを生成する新しい電子申告 (ER) 形式のコンフィギュレーションを使用する方法を説明します。 これらのステップは GBSI サンプル会社で実行できます。
 

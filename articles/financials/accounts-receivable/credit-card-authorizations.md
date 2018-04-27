@@ -28,10 +28,9 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="credit-card-setup-authorization-and-capture"></a>クレジット カードの設定、認証、および取得
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
-
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 この記事では、Microsoft Dynamics 365 for Finance and Operations におけるクレジット カード認証の概要を提供します。 これには、支払サービスの設定、クレジット カードを販売注文に追加、および認証を無効にする方法に関する情報が含まれます。
 

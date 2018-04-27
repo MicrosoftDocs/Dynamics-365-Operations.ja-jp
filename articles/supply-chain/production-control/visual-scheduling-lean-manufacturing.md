@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="visual-scheduling-for-lean-manufacturing"></a>リーン生産の視覚的スケジューリング
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 このトピックでは、生産計画担当者がかんばん作業の生産計画を制御し最適化するために使用できる、かんばんスケジュール ボードに関する情報を提供します。
 

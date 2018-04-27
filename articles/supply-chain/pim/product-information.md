@@ -29,9 +29,9 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="product-information-overview"></a>製品情報の概要
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 このトピックでは、製品情報の管理に関する情報を提供します。 製品情報の管理では、すべての法人の製品定義、カテゴリ、識別子、および製品の特定のコンフィギュレーションを業務プロセスに合わせて共有します。 
 

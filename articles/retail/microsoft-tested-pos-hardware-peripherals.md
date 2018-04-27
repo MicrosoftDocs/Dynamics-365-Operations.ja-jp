@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="pos-hardware-peripherals"></a>POS ハードウェアおよび周辺機器
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Retail Modern POS (販売時点管理) およびクラウド POS では、複数のインターフェイスとデプロイ オプションにより、小売業者のさまざまな取引シナリオに合わせて、POS ハードウェア周辺機器を活用できます。 
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="monitor-consignment-inventory-using-vendor-collaboration"></a>仕入先コラボレーションを使用した委託販売在庫の監視
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順は、顧客との委託販売で置いた製品の在庫レベルに関する情報を表示する際の仕入先との連携方法を示します。 顧客が在庫品目の所有権を取得したときの在庫品目の移動状況をチェックすることができます。 デモ データの会社 USMF でこの手順を使用できます。 この手順は、Dynamics 365 for Operations、バージョン 1611 に追加された機能です。
 

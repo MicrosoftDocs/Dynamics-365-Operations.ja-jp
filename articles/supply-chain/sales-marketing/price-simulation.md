@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="price-simulation"></a>価格のシミュレーション
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事では、見積の価格シミュレーションについて説明します。 価格シミュレーションを使用すると、見積プロセス中に将来の販売価格に対する控除の影響を評価してから、特定の価格を確約することができます。
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-purchase-order-with-a-delivery-schedule"></a>配送スケジュールと発注書の作成
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、発注書の配送スケジュールを作成する方法を示します。 配送スケジュールは、注文または仕訳帳の数量を複数の出荷で配送する要求があるときに使用されます。 このガイドで示されている例は、デモ データの会社 USMF で使用できます。 この手順は通常、購買担当者が行います。
 

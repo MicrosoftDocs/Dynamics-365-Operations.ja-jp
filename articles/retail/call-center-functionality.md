@@ -29,8 +29,7 @@ ms.lasthandoff: 11/14/2017
 
 # <a name="call-center-functionality"></a>コール センターの機能
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 この記事は、Microsoft Dynamics 365 for Retail でのコール センターの販売機能の概要を示します。
 

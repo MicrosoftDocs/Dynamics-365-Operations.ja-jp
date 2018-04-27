@@ -24,7 +24,7 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="create-and-edit-sales-quotations"></a>販売見積の作成および編集
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順は、販売見積を作成および更新する方法を示します。 この手順は、独自のデータで、またはデモ データの会社 USMF のデータで実行できます。
 

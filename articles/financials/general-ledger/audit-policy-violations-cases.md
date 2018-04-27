@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="audit-policy-violations-and-cases"></a>監査ポリシー違反およびケース
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 記事は、監査ポリシー ルール違反からどのように監査ケースが生成されるかを説明します。 また、監査ポリシーがドキュメントの選択の日付範囲を使用する、さまざまな方法に関する情報が含まれます。
 

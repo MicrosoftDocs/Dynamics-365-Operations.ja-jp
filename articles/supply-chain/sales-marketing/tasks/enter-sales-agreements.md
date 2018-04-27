@@ -25,7 +25,7 @@ ms.lasthandoff: 02/13/2018
 ---
 # <a name="enter-sales-agreements"></a>販売契約書の入力
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、一定期間に特別割引で、同意した金額の製品を購入するよう顧客の 1 人にコミットする販売契約書を作成する方法を示します。 この手順は、デモ データの会社 USMF で、または独自のデータで実行できます。
 

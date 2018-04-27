@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="ledger-journal-types"></a>仕訳元帳タイプ
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事では、財務仕訳帳に設定できる仕訳帳タイプについて説明します。 Microsoft Dynamics 365 for Finance and Operations 全体で使用できる仕訳帳を設定するには、[仕訳帳名] ページを使用します。
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-free-text-invoice-template"></a>自由書式の請求書テンプレートの作成
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 このレコードでは、USMF デモ会社を使用します。 記録は A/R の請求書の管理および処理を担当するユーザーを対象としています。
 

@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="balance-sheet-financial-reports"></a>貸借対照表の会計報告書
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事では、貸借対照表の既定のレポートについて説明します。 また、これらのレポートに関連付けられる構成要素を説明します。 
 
@@ -71,7 +70,7 @@ ms.lasthandoff: 11/03/2017
     -   **DESC** – 行定義の説明
     -   **FD** – 今年度の年度累計の財務データ
 
- 
+
 
 <a name="see-also"></a>参照
 --------

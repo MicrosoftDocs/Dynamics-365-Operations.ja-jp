@@ -28,7 +28,7 @@ ms.lasthandoff: 03/08/2018
 
 # <a name="use-external-catalogs-for-punchout-eprocurement"></a>パンチアウト eProcurement の外部カタログの使用
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 パンチアウト e-procurement の外部カタログを使用すると、自身のマスター データで仕入先の製品に関する情報を管理する必要はありません。 代わりに、仕入先の Web サイトのショッピング カートが正しい製品情報を持つ要求明細行に変換されます。 
 

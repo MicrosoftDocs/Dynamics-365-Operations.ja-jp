@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="install-the-retail-pos-layout-designer"></a>Retail POS のレイアウト デザイナーをインストールする
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 ワンクリック デザイナーを使用して、ランドスケープ モード、ポートレート モード、店舗、レジスター、レジ担当者、マネージャ用など、異なる Retail Modern POS (MPOS) やクラウド POS のレイアウトを作成することができます。
 

@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="control-warehouse-work-by-using-work-templates-and-location-directives"></a>作業テンプレートと場所ディレクティブを使用した倉庫作業の制御
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 この記事では、作業テンプレートと場所ディレクティブを使用して作業が倉庫のどこでどのように実行されるかを決定する方法を説明します。
 

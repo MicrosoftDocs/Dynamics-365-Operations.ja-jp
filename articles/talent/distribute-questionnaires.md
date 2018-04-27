@@ -28,8 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="distribute-and-complete-a-questionnaire"></a>アンケートの配布および記入
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 このトピックは、設計したアンケートを、それらを実行するユーザーまたはユーザー グループが記入できるように配布する方法を説明します。 
 

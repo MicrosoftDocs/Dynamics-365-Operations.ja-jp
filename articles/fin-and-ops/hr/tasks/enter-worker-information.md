@@ -16,15 +16,15 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: f9b7a3ea23298e5121e161b93faa8f145fdd1860
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: bfcebf61a5f613517e05af5c1548b5ceaaed53ee
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="enter-worker-information"></a>作業者情報の入力
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 リクルーターは大量雇用プロジェクトを作成し、職位を生成した後、その次の手順として、採用する作業者の情報を入力します。 この手順の作成に使用するデモ データの会社は USMF です。 デモ データには未処理の大量雇用プロジェクトが含まれます。 この手順を開始するには、[人事管理] > [採用] > [大量雇用プロジェクト] の順に移動します。
 
