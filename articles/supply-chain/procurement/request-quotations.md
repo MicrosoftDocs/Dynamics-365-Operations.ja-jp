@@ -19,10 +19,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: ac3c55ac56c800f6f4e8e593cce7fe0874d99a5d
+ms.sourcegitcommit: 69b9c5590e6f9311696bbbed2e63a6eeba2a90bf
+ms.openlocfilehash: 3f527911183a6e9b335f30d472ff57144e6a5aff
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/03/2018
 
 ---
 
@@ -57,8 +57,8 @@ ms.lasthandoff: 04/13/2018
 
 <span data-ttu-id="09069-127">仕入先から 2 回目の返信が必要な場合、[**見積依頼**] ページで [**返信**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="09069-127">If a second iteration of a reply from a vendor is required, select **Return** on the **Request for quotation** page.</span></span> <span data-ttu-id="09069-128">返信アクションにより新しい仕訳帳とレポートが生成され、印刷設定に従って印刷、アーカイブおよび送信されます。</span><span class="sxs-lookup"><span data-stu-id="09069-128">The Return action generates a new journal and a report that will be printed, archived, and sent according to your Printing settings.</span></span>
 
-[!NOTE]
-<span data-ttu-id="09069-129">[**見積依頼**] ページの名前は変更されました。</span><span class="sxs-lookup"><span data-stu-id="09069-129">The name of the **Request for quotation** page has been changed.</span></span> <span data-ttu-id="09069-130">Dynamics 365 for Finance and Operations の以前のリリースでは、[**見積依頼の返信**] ページと呼ばれます。</span><span class="sxs-lookup"><span data-stu-id="09069-130">In earlier releases of Dynamics 365 for Finance and Operations, this page is called **Request for quotations reply**.</span></span>
+> [!NOTE]
+> <span data-ttu-id="09069-129">[**見積依頼**] ページの名前は変更されました。</span><span class="sxs-lookup"><span data-stu-id="09069-129">The name of the **Request for quotation** page has been changed.</span></span> <span data-ttu-id="09069-130">Dynamics 365 for Finance and Operations の以前のリリースでは、[**見積依頼の返信**] ページと呼ばれます。</span><span class="sxs-lookup"><span data-stu-id="09069-130">In earlier releases of Dynamics 365 for Finance and Operations, this page is called **Request for quotations reply**.</span></span>
 
 <span data-ttu-id="09069-131">RFQ ケースにスコア基準を追加した場合、RFQ ケースにはスコアを入力できるパネルが現れます。</span><span class="sxs-lookup"><span data-stu-id="09069-131">If you added scoring criteria to your RFQ case, the RFQ will have a scoring panel where you can enter the scores.</span></span> <span data-ttu-id="09069-132">[**回答の比較**] ページで回答を比較する時に、RFQ 上で合計のスコアが表示されます。</span><span class="sxs-lookup"><span data-stu-id="09069-132">The total scores will appear on the RFQ and when you compare the replies on the **Compare replies** page.</span></span> <span data-ttu-id="09069-133">[**回答の比較**] ページには、明細行の価格、出荷日、および価格の合計などの他のデータ回答を比較できます。</span><span class="sxs-lookup"><span data-stu-id="09069-133">On the **Compare replies** page, you can also compare other reply data, such as the line price, delivery date, and total price.</span></span>
 
@@ -126,8 +126,8 @@ ms.lasthandoff: 04/13/2018
 
 <span data-ttu-id="09069-187">調達の [**フォームの設定**] ページで、印刷または保存される RFQ 文書の外観を構成できます。</span><span class="sxs-lookup"><span data-stu-id="09069-187">On the **Form setup** page in Procurement and sourcing, you can configure the appearance of your printed or stored RFQ documents.</span></span>
 
-[!NOTE]
-<span data-ttu-id="09069-188">公的部門の構成については、既に送信された RFQ を変更する修正プロセスを使う必要があります。</span><span class="sxs-lookup"><span data-stu-id="09069-188">For a public-sector configuration, you must use the amendment process to change an RFQ that has already been sent.</span></span> <span data-ttu-id="09069-189">RFQ が送信され際、フィールドはロックされます。</span><span class="sxs-lookup"><span data-stu-id="09069-189">When an RFQ is sent, fields are locked.</span></span>
+> [!NOTE]
+> <span data-ttu-id="09069-188">公的部門の構成については、既に送信された RFQ を変更する修正プロセスを使う必要があります。</span><span class="sxs-lookup"><span data-stu-id="09069-188">For a public-sector configuration, you must use the amendment process to change an RFQ that has already been sent.</span></span> <span data-ttu-id="09069-189">RFQ が送信され際、フィールドはロックされます。</span><span class="sxs-lookup"><span data-stu-id="09069-189">When an RFQ is sent, fields are locked.</span></span>
 <span data-ttu-id="09069-190">したがって、RFQ を変更するには、前述のように修正プロセスを開始する [**作成**] を選択する必要があります。</span><span class="sxs-lookup"><span data-stu-id="09069-190">Therefore, to make changes to the RFQ, you must select **Create** to start the amendment process, as described earlier.</span></span> <span data-ttu-id="09069-191">ブロック動作は、[**調達パラメーター**] ページの [**送信時に RFQ をロック**] オプションで管理されます。</span><span class="sxs-lookup"><span data-stu-id="09069-191">The locking behavior is controlled by the **Lock RFQ when they are sent** option on the **Procurement and sourcing parameters** page.</span></span> <span data-ttu-id="09069-192">既定では、このパラメーターは [**はい**] に設定され、公的部門の構成に対して変更できないことが既定となっています。</span><span class="sxs-lookup"><span data-stu-id="09069-192">By default, this parameter is set to **Yes**, and for a public-sector configuration, the default setting can't be changed.</span></span> <span data-ttu-id="09069-193">したがって、たとえ修正プロセスが手動により非公的部門のコンフィギュレーションで処理することができでも、公的部門のコンフィギュレーションを使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="09069-193">Therefore, although the amendment process can be handled manually in a non-public-sector configuration, it must be used for a public-sector configuration.</span></span>
 
 <span data-ttu-id="09069-194">発注書タイプの RFQ ケースを作成し、在庫品目を RFQ に追加すると、受入状態が **見積受入** の在庫トランザクションが作成されます。</span><span class="sxs-lookup"><span data-stu-id="09069-194">When you create an RFQ case of the type Purchase order and add an inventory item to the RFQ, an inventory transaction is generated that has a receipt status of **Quotation receipt**.</span></span> <span data-ttu-id="09069-195">マスター プランを使用して供給を計算する場合、このステータスを持つ RFQ ケースの明細行のみが考慮されます。</span><span class="sxs-lookup"><span data-stu-id="09069-195">Only RFQ case lines that have this status are considered when you use a master plan to calculate supplies.</span></span> <span data-ttu-id="09069-196">入庫予定として RFQ ケースの明細行をマスター プランに含める場合、マスター プラン設定でこの動作を構成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="09069-196">If you want the master plan to include RFQ case lines as an expected receipt, you must configure this behavior in the setup of master planning.</span></span>
