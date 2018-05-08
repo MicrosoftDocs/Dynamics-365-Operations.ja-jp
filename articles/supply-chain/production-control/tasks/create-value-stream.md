@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-value-stream"></a>バリュー ストリームの作成
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 バリュー ストリームは、作業単位であり、そのグループが 1 つまたは複数の生産フローです。 生産フローを定義するには、まずバリュー ストリームを定義する必要があります。
 

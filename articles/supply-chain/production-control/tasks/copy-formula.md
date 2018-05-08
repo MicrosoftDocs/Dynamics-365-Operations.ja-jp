@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="copy-a-formula"></a>フォーミュラのコピー
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 多少の違いはあっても、既存のフォーミュラと同じ構成要素を含んでいるフォーミュラを作成することに焦点を当てています。 式明細行を作成するため、[コピー] 機能を使用して必要な構成要素のほとんどを持つ既存の式をコピーできます。 次に、新しいバージョンの個々の行に必要な変更を加えることができます。 [コピー] 機能を使用すると、ほぼ同一である複数の式を作成する必要はありません。 このタスクの作成に使用するデモ データの会社は USP2 です。
 

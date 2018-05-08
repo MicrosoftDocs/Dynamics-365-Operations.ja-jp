@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="replenishment-with-withdrawal-kanbans"></a>引き取りかんばんを使用した補充
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 このトピックでは、製造活動における材料補充の引き取りかんばん使用方法を説明します。
 

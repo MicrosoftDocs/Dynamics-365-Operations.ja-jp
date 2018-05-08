@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="import-and-maintain-credit-card-transactions"></a>クレジット カード トランザクションのインポートおよび管理
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 経費に関連するクレジット カード トランザクションは、定期的なスケジュールで自動的にインポートされるように設定できます。 または、必要に応じて手動でトランザクションをインポートすることができます。 クレジット カード トランザクションは、クレジット カード トランザクション データ エンティティを通じてインポートされます。
 

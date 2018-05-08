@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="confirm-sales-orders"></a>販売注文の確認
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順は、販売注文を確認する方法を示します。 1 つの注文を確認する方法と、複数の注文を一度に確認する方法が表示されます。 通常、これらのタスクを実行するのは、販売注文担当者です。 デモ データの会社 USMF のこの手順を使うか、または独自のデータを使うことができます。 開始する前に、同じ顧客に対して複数のオープン販売注文があることを確認します。 USMF を使用すると、顧客 US-027 を使用できます。
 

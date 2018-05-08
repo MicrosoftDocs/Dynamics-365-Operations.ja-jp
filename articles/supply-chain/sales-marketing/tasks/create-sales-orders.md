@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-sales-orders"></a>販売注文を作成する。
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、販売注文を作成する方法を示します。 デモ データの会社 USMF でこの手順を使用できます。 販売注文は通常、販売注文プロセッサによって作成されます。 
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-and-create-depreciation-profiles"></a>減価償却プロファイルの設定および作成
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 減価償却プロファイルによって、資産の減価償却のタイプと頻度が決まります。   このレコードでは USMF のデモ会社および経理担当者のロールを使用します。
 

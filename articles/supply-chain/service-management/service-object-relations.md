@@ -28,7 +28,7 @@ ms.lasthandoff: 02/21/2018
 
 # <a name="service-object-relations"></a>サービス対象の関係 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 サービス対象とサービス合意またはサービス注文の間に、サービス対象の関係を作成できます。 関係を作成すると、サービス対象がサービス合意またはサービス注文に関連付けられます。
 

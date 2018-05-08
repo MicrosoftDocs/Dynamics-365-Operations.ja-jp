@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="settle-an-endorsed-bill-of-exchange-japan"></a>裏書済受取手形の決済 (日本)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 このタスクは、裏書きされた為替手形の決済について説明します。
 

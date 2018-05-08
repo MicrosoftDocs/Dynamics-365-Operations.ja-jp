@@ -26,7 +26,7 @@ ms.lasthandoff: 03/13/2018
 
 # <a name="travel-requisitions"></a>出張費要求
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 *出張費要求* は、出張のために発生する経費を一覧にする元伝票です。 出張費要求は、レビュー用に送信され、次に経費を承認するために使用できます。
 

@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="online-store-overview"></a>オンライン ストアの概要
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 この記事は、小売オンライン ストアに関する情報および、オンライン ストアを Microsoft Dynamics 365 for Retail で設定する方法について説明します。
 

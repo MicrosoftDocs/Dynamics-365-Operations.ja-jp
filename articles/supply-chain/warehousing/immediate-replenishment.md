@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="immediate-replenishment"></a>即時補充
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 場所ディレクティブの明細行が在庫の配賦に失敗した直後に、在庫を補充するため、即時補充ができるようになります。 補充は、場所ディレクティブの設定における単一明細行に基づいています。 その明細行で指定されている測定単位の在庫の手持がない場合、その測定単位の補充がすぐに発生します。
 

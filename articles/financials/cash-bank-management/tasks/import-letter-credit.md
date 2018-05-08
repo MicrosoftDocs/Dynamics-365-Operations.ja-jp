@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="import-a-letter-of-credit"></a>信用状のインポート
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順は、信用状のインポートのプロセスを説明します。 この手順を実行する前に次の事柄が設定されている必要があります : 銀行融資、転記プロファイル、銀行融資契約と仕入先銀行の詳細。
 

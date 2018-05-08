@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-material-plan-for-co-products"></a>連産品の材料計画の作成
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 生産計画担当者は、フォーミュラ連産品である品目の材料要求を計画します。 この手順の作成に使用するデモ データの会社は USP2 です。
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-formula-by-copying-from-an-existing-formula"></a>既存のフォーミュラをコピーしてフォーミュラを作成
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順は、既存のフォーミュラからコピーして新しいフォーミュラをすばやく作成する方法を示します。 この手順を作成するのに、デモ データの会社 USMF、USP2、または USPI を使用できます。
 

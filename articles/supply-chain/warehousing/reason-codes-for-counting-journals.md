@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="reason-codes-for-inventory-counting"></a>在庫棚卸の理由コード
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 理由コードにより、棚卸プロセスおよびそのプロセス中に発生する任意の不一致の結果を分析できます。 パレットの破損または在庫サンプルに基づく在庫調整などの、棚卸を行うための理由を指定できます。
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="configure-the-functionality-profile-for-a-sales-representative"></a>販売担当者の機能プロファイルのコンフィギュレーション
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 この手順は、販売担当者に適用される店舗の機能プロファイルの設定を構成する方法を示します。 この手順では、 USRT デモ データの会社が使用されます。
 

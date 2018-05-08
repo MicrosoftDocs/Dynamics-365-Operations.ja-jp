@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-bar-code-masks"></a>バーコード マスクの設定
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 このトピックでは、バーコード マスク文字、バーコード マスクの設定方法、バーコードにバーコード マスクを割り当てる方法について説明します。
 

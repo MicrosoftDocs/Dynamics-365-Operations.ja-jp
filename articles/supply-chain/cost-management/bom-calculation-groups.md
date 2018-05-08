@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="bom-calculations-groups"></a>BOM 計算グループ
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 この資料では、部品表 (BOM) の計算のグループについての情報とそれらを設定する方法を提供します。 BOM 計算を実行するには、計算グループを設定し個々の品目に割り当てるか、既定の計算グループを設定する必要があります。 計算グループからの計算設定が、[BOM 計算] ページで BOM の計算時の既定値として使われます。 
 

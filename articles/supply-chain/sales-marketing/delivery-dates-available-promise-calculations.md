@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="order-promising"></a>注文納期日
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 この記事では、注文納期に関する情報を提供します。 注文納期を使用すると、顧客への出荷日を確実性をもって約束し、柔軟性を持たせた上でこれらの日付を守るようにすることができます。
 

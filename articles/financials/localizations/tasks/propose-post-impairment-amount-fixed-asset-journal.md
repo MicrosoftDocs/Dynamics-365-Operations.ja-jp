@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="propose-and-post-the-impairment-amount-by-using-fixed-asset-journal-japan"></a>固定資産仕訳帳を使用した減損損失の提案と転記 (日本)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順を用いて、固定資産仕訳帳を使用して減損金額を提示および転記する方法を把握します。
 

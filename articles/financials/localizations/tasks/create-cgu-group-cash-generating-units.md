@@ -24,7 +24,7 @@ ms.lasthandoff: 10/30/2017
 ---
 # <a name="create-cgu-group-and-cash-generating-units-japan"></a>CGU グループおよび資産グループの作成 (日本)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 日本では、固定資産の減損は、個々の固定資産または資産グループに基づき決定することができます。 資産グループに基づき減損を評価する場合の最初のステップは、固定資産を資産グループにグループ化することです。 
 

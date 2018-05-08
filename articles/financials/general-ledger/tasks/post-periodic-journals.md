@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="post-periodic-journals"></a>定期処理仕訳帳の転記
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 定期処理仕訳帳は、繰返しの仕訳帳とも呼ばれ、定期処理仕訳帳を取得するたびに数量、テキスト、およびその他の情報が繰り返されます。 定期処理仕訳帳を作成する場合、日数または月数などの繰り返し間隔を指定します。 このタスク ガイドでは、月間の繰り返しを持つ定期処理仕訳帳を作成します。
 

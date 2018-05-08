@@ -25,7 +25,7 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="define-lean-schedule-groups"></a>リーン スケジュール グループの定義
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 リーン スケジュール グループは、かんばんスケジューリングの製品をグループ化して区別するために定義されます。 グループ化は、会社ごとの一般的な関連として、または作業セル特定としてできます。 各グループには、かんばんスケジューリング リストページでの視覚的表示のため、割り当てられた色コードがあります。 この手順の作成に使用するデモ データの会社は USMF です。
 

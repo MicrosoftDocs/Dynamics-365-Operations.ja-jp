@@ -27,7 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="intelligence"></a>インテリジェンス
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 for Finance and Operations で使用可能なビジネス インテリジェンス (BI) およびレポート ツールの詳細を学ぶためのリソースを紹介します。
 

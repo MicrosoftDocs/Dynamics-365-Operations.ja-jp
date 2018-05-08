@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="set-up-workflows-for-expense"></a>経費のワークフローの設定
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
  旅費経費のドキュメントを確認および承認するために使用されるワークフロー プロセスを設定できます。 ワークフローを定義できるドキュメントには、経費レポート、出張費要求、および現金前貸し要求が含まれます。
 

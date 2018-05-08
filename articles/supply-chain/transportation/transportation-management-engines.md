@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="transportation-management-engines"></a>輸送管理エンジン
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 輸送管理エンジンは、輸送管理で配送率を生成およびプロセスするために使用するロジックを定義します。 
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 02/21/2018
 
 # <a name="service-objects"></a>サービス対象 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 サービス対象とは、サービスを実行する顧客の製品および資産です。 提供するサービスのタイプに応じて、有形または無形の対象を使用できます。
 

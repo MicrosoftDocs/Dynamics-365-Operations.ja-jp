@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="replenishment"></a>補充
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 このトピックでは、倉庫管理で利用できる機能を使用している倉庫で利用可能な補充方法について説明します。 このトピックでの情報は、在庫管理で利用できる倉庫ソリューションには適用されません。
 

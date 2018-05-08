@@ -24,7 +24,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="design-a-configuration-to-import-data-from-an-external-file-in-csv-format-er"></a>CSV 形式 (ER) の外部ファイルからデータをインポートするためのコンフィギュレーションを設計する
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順を使用して、外部ファイルから CSV 形式から Dynamics 365 for Finance and Operations アプリにデータをインポートする電子申告 (ER) 構成を設計します。 この手順では、サンプル会社 Litware, Inc. 用に、必要な ER コンフィギュレーションを作成します。これらのステップを完了するには、まず手順「ER コンフィギュレーション プロバイダーの作成および有効なプロバイダーとしてのマーク付け」にあるステップを完了する必要があります。 
 

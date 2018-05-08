@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="generate-a-transfer-document-for-an-internal-inventory-transfer"></a>内部在庫移動の移動文書の生成
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、社内の製品移動に関わるドキュメントを作成する方法を示します。 この手順はリトアニアに主たる所在地を置く法人のみが使用できます。 この手順は、リトアニアに主たる事務所を置く企業 DEMF のデモデータを使用して作成されました。 この手順を完了するには、「社内の製品移動に関わるドキュメントの設定」の手順を実施する必要があります。 この手順は在庫経理担当者を対象としています。 この手順は、Dynamics 365 for Operations、バージョン 1611 に追加された機能です。
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="create-a-performance-review"></a>業績の確認の作成
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、パフォーマンス レビューの作成方法を表示し、レビューの各セクションの目的について説明します。 この手順は、デモ データ会社 USMF を使用して作成されました。 この手順は、Dynamics 365 for Operations、バージョン 1611 に追加された機能です。
 

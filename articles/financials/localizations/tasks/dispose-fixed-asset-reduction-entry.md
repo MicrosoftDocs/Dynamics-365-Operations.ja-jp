@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="dispose-of-a-fixed-asset-with-reduction-entry-japan"></a>圧縮記帳のある固定資産の処分 (日本)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 このタスクでは、圧縮記帳のある固定資産の日本での処理方法について説明します。
 

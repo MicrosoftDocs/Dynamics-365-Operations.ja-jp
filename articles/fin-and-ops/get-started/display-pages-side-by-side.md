@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="display-pages-side-by-side-using-the-open-in-new-window-icon"></a>[新しいウィンドウで開く] アイコンを使用してページを並べて表示する
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 この記事は、Microsoft Dynamics 365 for Finance and Operations でページを並べて表示する方法を説明します。
 

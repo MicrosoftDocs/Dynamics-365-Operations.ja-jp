@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="set-up-positions"></a>職位の設定
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 職位は組織階層の下位レベルの重要な要素です。 職位は、職務の個々のインスタンスです。 たとえば、「販売マネージャ (東部)」という職位は、「販売マネージャ」という職務に関連付けられている職位の 1 つです。 職位は部問内に存在し、一人の作業者だけが関連付けられている可能性があります。 このタスクでは、職位の作成に必要な手順を説明します。 この手順は、人事管理の専門家を対象としています。
 

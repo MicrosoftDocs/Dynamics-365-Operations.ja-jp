@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="price-adjustments-and-discounts"></a>価格調整および割引
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 この記事では、Microsoft Dynamics 365 for Retail での価格調整と割引に関する情報を提供します。
 

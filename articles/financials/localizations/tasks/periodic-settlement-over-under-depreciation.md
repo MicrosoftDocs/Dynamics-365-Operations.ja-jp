@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="periodic-settlement-of-over-and-under-depreciation-japan"></a>償却超過額および償却不足額の定期決済 (日本)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 このタスクでは、損金の減価償却費を計算および記録する方法を説明します。
 

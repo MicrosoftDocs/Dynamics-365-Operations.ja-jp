@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="analyze-questionnaire-results"></a>アンケート結果の分析
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 アンケートの統計情報は、一連の統計データに基づいて平均、合計、割合を計算するために使用できます。 この手順を開始するには、[アンケート] > [結果の表示と分析] > [アンケート統計] の順に移動します。 この手順の作成に使用するデモ データの会社は USMF です。
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="settle-a-partial-vendor-payment-and-the-final-payment-in-full-before-the-discount-date"></a>一部の仕入先支払の決済、および割引日より前の全額最終支払
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 この記事は、仕入先請求書に対して一部支払が作成され、現金割引が提供されるシナリオについて説明します。
 

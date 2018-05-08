@@ -24,7 +24,7 @@ ms.lasthandoff: 10/26/2017
 ---
 # <a name="set-up-ledger-posting-groups-for-sales-tax"></a>売上税の元帳転記グループの設定
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 売上税が計算されると、元帳転記グループで指定されている主勘定に転記されます。 元帳転記グループは各売上税コードに関連付けられます。 各売上税コードに対して個別の元帳転記グループを設定するか、すべての売上税コードに対して 1 つの元帳転記グループを使用するか、または売上税コードに複数の元帳転記グループを割り当てることができます。 このレコードでは、USMF デモ会社を使用します。 
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="budgeting-home-page"></a>予算作成用のホーム ページ
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 このトピックでは、Finance and Operations の予算作成機能コンポーネント、予算作成ツール、およびレポート機能の概要を説明します。 
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-a-mobile-device-menu-item-for-completing-work-in-a-purchase-order"></a>発注書の作業を完了するためのモバイル デバイスのメニュー項目の設定
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、モバイル デバイスのメニュー項目の設定方法について説明します。 この例では、メニュー項目は、発注書タイプの作業を実行するのに使用されます。 メニュー項目に関連付けられている作業クラスにより、有効な作業が決まります。 デモ データの会社 USMF でこのガイドを使用できます。 この手順は通常、倉庫マネージャーによって実施されます。
 

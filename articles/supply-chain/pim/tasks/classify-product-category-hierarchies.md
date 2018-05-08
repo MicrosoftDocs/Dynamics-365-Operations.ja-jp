@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="classify-a-product-using-category-hierarchies"></a>カテゴリ階層を使用した製品の分類
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 カテゴリ階層を使用して、輸出、調達、販売、または他の目的で製品を分類します。 このタスクは、通常、製品マネージャーが実行します。 例では、デモ データの会社 USMF で製品番号「M0009」を使用します。
 

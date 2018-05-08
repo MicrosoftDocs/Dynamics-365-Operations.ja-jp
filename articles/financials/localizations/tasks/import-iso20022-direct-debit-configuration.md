@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="import-iso20022-direct-debit-configuration"></a>ISO20022 口座引落コンフィギュレーションのインポート
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、顧客支払の電子レポートのコンフィギュレーションをインポートする方法を示します。 この手順では、ISO 20022 口座引落形式を例として使用します。 
 

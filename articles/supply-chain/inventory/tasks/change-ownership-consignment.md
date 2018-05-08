@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="change-the-ownership-of-consignment-inventory-based-on-production-demand"></a>生産需要に基づく委託販売在庫の所有権の変更
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順は、生産中における在庫需要があるときに委託製品在庫所有者を仕入先から自らの法人に変更する方法を示します。 所有権を変更するには、在庫所有権変更仕訳を作成、転記します。 所有権変更は、既存の生産需要に基づき、この記録で示されるように手作業で作成します。 通常、現場の監督者がこの作業を実施します。 デモ データ会社 USMF でこの手順を使うか、または独自のデータを使うことができます。 自分のデータを使用する場合は、次の条件があることを確認します: 在庫所有権変更に設定された在庫仕訳、物理的に記録された仕入先所有の手持在庫品目、原材料の複数の製造オーダーライン この手順は、Dynamics 365 for Operations、バージョン 1611 に追加された機能です。
 

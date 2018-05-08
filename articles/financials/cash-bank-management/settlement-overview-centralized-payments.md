@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="settlement-overview-for-centralized-payments"></a>集中支払の決済の概要
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 複数の法人を含む組織では、すべての支払を処理する法人を使用して支払を作成および管理できます。 これにより、複数の法人内の同一トランザクションを入力する必要がなくなり、集中支払の支払提案プロセス、決済プロセス、未処理トランザクションの編集、および決算済トランザクションの編集を効率化することで時間を節約できます。 
 

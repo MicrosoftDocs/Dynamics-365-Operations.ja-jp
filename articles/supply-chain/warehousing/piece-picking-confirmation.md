@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="piece-picking-confirmation"></a>ピース ピッキング確認
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 ピース ピッキングにより、モバイル デバイスでピッキング作業または棚卸作業を通して各在庫を確認することができます。 ピッキングについては、ピッキングする作業に指定された数量まで、処理する作業量を確認することができます。 棚卸作業については、棚卸在庫をスキャンでき、合計金額を追跡できます。
 

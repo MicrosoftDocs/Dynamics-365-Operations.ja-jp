@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-schedule-for-a-site"></a>サイトのスケジュールの作成
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順は、サイトでまだ開始されていない製造オーダーをスケジュールする方法を示します。  この手順を完了するのにデモ データの会社 USMF が使用されています。
 

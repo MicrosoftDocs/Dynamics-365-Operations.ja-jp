@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="transfer-data-for-product-models"></a>製品モデルのためのデータの転送
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 製品コンフィギュレーション モデルのデータをエクスポートするには、少なくとも 1 つの製品モデルが使用可能である必要があります。 この手順は、デモ会社 USMF [ハイエンド スピーカー] モデルを使用して、このモデルのデータをエクスポートする方法を表示します。
 

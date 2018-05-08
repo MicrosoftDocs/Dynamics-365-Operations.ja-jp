@@ -28,7 +28,7 @@ ms.lasthandoff: 11/14/2017
 
 # <a name="configure-accounts-receivables-and-credit-and-collections"></a>売掛金勘定、貸方転記および取立のコンフィギュレーション
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 売掛金管理、貸方転記および取立をコンフィギュレーションして、請求書および顧客から入金される支払を追跡します。
 

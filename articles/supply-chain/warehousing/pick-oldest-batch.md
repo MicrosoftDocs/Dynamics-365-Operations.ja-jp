@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="pick-oldest-batch-on-a-mobile-device"></a>モバイル デバイスで最も古いバッチをピッキング
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 モバイル デバイス メニューから [最も古いバッチをピッキング] の構成にアクセスすることができるため、これにより、倉庫作業者が現在の場所で一番古いバッチを選択するように強制するまたは警告することができます。  
 

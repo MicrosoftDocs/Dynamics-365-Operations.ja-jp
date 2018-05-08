@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="enable-the-jba-payment-file-format-japan"></a>JBA 支払ファイル形式の有効化 (日本)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 日本では、電子資金決済 (EFT) のファイル形式は全国銀行協会 (JBA) により指定されています。 
 

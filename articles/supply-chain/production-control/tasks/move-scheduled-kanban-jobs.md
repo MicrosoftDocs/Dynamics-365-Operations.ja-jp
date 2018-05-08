@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="move-scheduled-kanban-jobs"></a>スケジュール済みかんばん作業の移動
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順は、計画済のプロセスかんばんジョブを別の期間に移動することに焦点をあてます。 この手順の作成に使用するデモ データの会社は USMF です。 この手順は、かんばんを処理する作業現場の監督または生産計画担当者を対象としています。
 

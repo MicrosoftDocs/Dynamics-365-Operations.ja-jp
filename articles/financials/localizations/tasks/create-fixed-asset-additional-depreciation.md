@@ -24,7 +24,7 @@ ms.lasthandoff: 10/30/2017
 ---
 # <a name="create-a-fixed-asset-with-additional-depreciation-japan"></a>割増償却を使用する固定資産の作成 (日本)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 日本では、固定資産は特定の条件下で増加償却額を転記することができます。 
 

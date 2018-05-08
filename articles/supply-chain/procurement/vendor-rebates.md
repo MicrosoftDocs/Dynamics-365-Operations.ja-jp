@@ -25,7 +25,7 @@ ms.lasthandoff: 11/03/2017
 ---
 
 # <a name="vendor-rebates"></a>仕入先リベート
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 仕入先のリベートは、取得したリベートを管理、追跡、および申請するために必要なタスクを自動化することにより、仕入れ先のリベートプログラムを会社が効率的に管理できるようにします。
 

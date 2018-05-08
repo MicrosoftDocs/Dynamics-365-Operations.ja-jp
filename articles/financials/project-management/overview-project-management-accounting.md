@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="project-management-and-accounting"></a>プロジェクト管理および会計
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 プロジェクト管理および会計機能はサービスの提供、製品の生産、または成果の実現のために、複数の業界で使用できます。  
 

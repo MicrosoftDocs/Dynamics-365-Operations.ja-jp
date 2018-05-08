@@ -26,7 +26,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="expense-policies"></a>経費ポリシー
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 作業者が経費精算書と出張費要求を入力して提出する際に従う必要があるポリシーを定義できます。         
 経費ポリシーを実装すると、経費を効率的に管理できます。         

@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="analyze-store-performance"></a>店舗のパフォーマンスの分析
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 この記事では、Microsoft Dynamics 365 for Retail データに基づいて、店舗パフォーマンスにアクセスし、それを検討し見抜くために、メモリ内およびリアルタイム分析を使用する方法について説明します。 
 

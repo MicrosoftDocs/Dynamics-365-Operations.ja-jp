@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="configure-linked-products"></a>リンクされた製品のコンフィギュレーション
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、リンクされた製品の構成方法を説明します。 この手順は USRT のデモ データを使用し、両方の製品が既に作成され、リリースされていると想定しています。
 

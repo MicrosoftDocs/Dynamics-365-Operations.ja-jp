@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="general-ledger-account-balances"></a>総勘定元帳残高
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 この記事は、試算表のリスト ページと財務レポートという、総勘定元帳勘定の残高を表示する 2 つの方法を説明します。 また、分析コード セットの残高を更新する方法について説明します。
 

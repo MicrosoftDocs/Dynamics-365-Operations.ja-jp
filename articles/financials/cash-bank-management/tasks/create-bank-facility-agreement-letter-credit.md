@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-bank-facility-agreement-for-a-letter-of-credit"></a>信用状の銀行融資契約の作成
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 このタスクは、信用状を処理する銀行融資契約を作成する方法について説明します。 このタスクを始める前に、銀行融資および転記プロファイルを設定します。  このタスクでは、USMF というデモ会社を使用します。  
 

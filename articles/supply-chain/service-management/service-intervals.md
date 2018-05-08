@@ -28,7 +28,7 @@ ms.lasthandoff: 02/20/2018
 
 # <a name="service-intervals"></a>サービス期間
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 サービス合意間隔は、サービス注文を自動的に作成する場合に、サービス契約項目に対してサービス注文明細行が作成される頻度を表します。
 

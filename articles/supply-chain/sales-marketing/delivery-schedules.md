@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="delivery-schedules"></a>配送スケジュール
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 配送スケジュールより、1 つの販売注文、販売見積、または発注書に複数の配送を使用するときに、注文明細行数量を追跡することができます。
 

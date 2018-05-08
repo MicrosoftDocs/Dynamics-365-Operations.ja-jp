@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="category-pricing-rules-to-create-trade-agreements"></a>売買契約を作成するためのカテゴリの価格決定ルール
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 この手順は、カテゴリ価格決定ルールを使用して販売価格の売買契約を作成する方法を示します。 このタスクの作成に使用するデモ データの会社は USRT です。 このタスクは [小売販売促進マネージャー ロール] を対象としています。
 

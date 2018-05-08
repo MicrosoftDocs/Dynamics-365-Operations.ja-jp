@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-configuration-groups"></a>コンフィギュレーション グループの定義
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、デモ データの会社 USMF に 2 つのグループを作成することにより、製品コンフィギュレーション グループを定義する方法を示します。 これは、分析コードベースのコンフィギュレーションでの組み合わせの作成方法を説明する 8 つの手順の 4 番目です。
 

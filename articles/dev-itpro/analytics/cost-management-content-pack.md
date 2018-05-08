@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="cost-management-power-bi-content"></a>原価管理 Power BI コンテンツ
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 ## <a name="overview"></a>概要
 

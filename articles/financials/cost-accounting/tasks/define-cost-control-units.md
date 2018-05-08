@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-cost-control-units"></a>原価管理単位の定義
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 ここでは、原価会計元帳で原価管理単位を定義する方法を説明します。 原価オブジェクト分析コードを選択し、元帳で原価を管理します。 原価オブジェクト分析コード メンバーは、原価管理単位の原価オブジェクトに変換されます。 この手順の作成に使用するデモ データの会社は USP2 です。
 

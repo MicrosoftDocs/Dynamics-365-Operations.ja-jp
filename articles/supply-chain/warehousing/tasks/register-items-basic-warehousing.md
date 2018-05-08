@@ -25,7 +25,7 @@ ms.lasthandoff: 11/02/2017
 ---
 # <a name="register-items-for-a-basic-warehousing-enabled-item-using-an-item-arrival-journal"></a>品目の着荷仕訳帳を使用した基本倉庫管理に対応した品目の登録
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、在庫管理モジュールで、「基本倉庫」を使用する場合に、着荷仕訳帳を使用して品目を登録する方法を示します。 これは通常、入荷係により行われます。 表示されているサンプル値を使用して、デモ データの会社 USMF でこの手順を実行できます。  USMF を使用していない場合、このガイドを開始する前に、未処理の発注書明細行と共に確認済の発注書が必要です。 明細行の品目は在庫がある必要があり、製品バリアントの使用および追跡用分析コードの保有はできません。 その品目は、倉庫管理プロセスが有効化された保管分析コード グループと関連付けられている必要があります。
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="execute-kanban-process-jobs"></a>かんばんプロセス ジョブの実行
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順は、かんばんプロセス ジョブの実行を対象としています。 最初のジョブでは、予定数量が完了されずエラーはありません。 2 番目のジョブはエラーで完了されます。 この手順の作成に使用するデモ データの会社は USMF です。 この手順は、機械オペレーターを対象としています。
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="create-a-goal"></a>目標の作成
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 目標を作成し、目標に活動を追加し、測定を追跡し、目標をレビューににリンクすることができます。 この手順は、デモ データ会社 USMF を使用して作成されました。 この手順は、Dynamics 365 for Operations、バージョン 1611 に追加された機能です。
 

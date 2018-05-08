@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="one-voucher"></a>1 つの伝票
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 > [!NOTE]
 >  この機能は、2018 年春のリリースで提供される、Dynamics 365 for Finance and Operations バージョン 8.0 で利用可能になります。   

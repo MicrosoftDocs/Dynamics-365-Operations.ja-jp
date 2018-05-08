@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="create-a-pos-visual-profile"></a>POS 視覚プロファイルの作成 
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 この手順では、新しい POS (販売時点管理) の視覚プロファイルの作成方法を説明します。 視覚プロファイルには、POS レジスターの外観を決定する基本情報が含まれます。 複数の視覚プロファイルを作成し、特定のレジスタで使用するプロファイルを割り当てることができます。 この手順では、デモ データの会社 USRT を使用します。
 

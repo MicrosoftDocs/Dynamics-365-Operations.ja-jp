@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="create-boms-february-2016-only"></a>BOM の作成 (2016 年 2 月のみ)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 このタスクでは、完成品と半完成品の部品表の構造の作成について説明します。 これは、BOM 計算シリーズの 4 番目のタスクです。 このタスクの作成に使用するデモ データの会社は USMF です。
 

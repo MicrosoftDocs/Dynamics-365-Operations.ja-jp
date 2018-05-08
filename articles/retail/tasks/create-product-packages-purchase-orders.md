@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="create-product-packages-for-purchase-orders"></a>発注書の製品パッケージの作成
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 この手順では、製品パッケージを作成し、発注書を使用する方法を説明します。 発注書は、事前に定義された一連の製品の発注の作成に使用されます。 この手順では、デモ データの会社 USRT を使用します。
 

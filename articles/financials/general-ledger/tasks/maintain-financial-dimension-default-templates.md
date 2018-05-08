@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="maintain-financial-dimension-default-templates"></a>財務分析コード用の既定テンプレートの管理
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、財務分析コードの既定のテンプレートを設定する方法を示します。 このテンプレートは、元伝票の金額をすばやく配分する場合に使用できます。
 

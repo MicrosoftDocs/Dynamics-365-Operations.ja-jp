@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="budget-planning-justification-documents"></a>予算計画の妥当性ドキュメント
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 妥当性ドキュメントは、予算を要求する人物に対して特定の予算が必要な理由の記述を提供します。 
 

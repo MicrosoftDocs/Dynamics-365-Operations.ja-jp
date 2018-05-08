@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="inventory-close"></a>在庫原価計算
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 受入トランザクションと払出トランザクションを決済するプロセスの一環で、行った調整を総勘定元帳に反映して更新するように選択することもできます。
 

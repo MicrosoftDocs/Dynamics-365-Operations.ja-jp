@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="create-a-closed-ended-question"></a>選択式の質問の作成
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 選択式の質問には、回答者が選択できるためのオプションが用意されます。 最初に、回答と回答グループを作成する必要があり、その後回答グループを使用する質問を作成します。 この手順の作成に使用するデモ データの会社は USMF です。
 

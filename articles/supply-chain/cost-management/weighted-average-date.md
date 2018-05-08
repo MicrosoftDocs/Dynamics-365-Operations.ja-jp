@@ -29,9 +29,9 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="weighted-average-date"></a>加重平均日付
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 加重平均日は加重平均原則に基づく在庫モデルです。 加重平均原則では、在庫からの出庫は、在庫原価計算期間に毎日受け取って入庫された品目の平均値で評価されます。 
 

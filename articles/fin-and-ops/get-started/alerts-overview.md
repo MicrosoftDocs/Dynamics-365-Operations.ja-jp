@@ -26,9 +26,9 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="alerts-overview"></a>警告の概要
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [banner](../includes/pre-release.md)]
+[!include [banner](../includes/pre-release.md)]
 
 ## <a name="about-alerts"></a>警告について
 警告は、Microsoft Dynamics 365 for Finance and Operations の重大なイベントの通知システムを形成します。 警告を使用することで、作業日に追跡したいイベントに関する情報を常に受け取ることができます。 延滞した出荷、削除された注文、変更された価格、またはその他対応が必要なイベントに関する警告を受け取る独自の警告ルール セットを、簡単に作成できます。

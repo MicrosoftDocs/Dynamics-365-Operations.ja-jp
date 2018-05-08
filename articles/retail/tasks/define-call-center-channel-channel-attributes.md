@@ -24,7 +24,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="define-call-center-channel-and-channel-attributes"></a>コール センター チャネルおよびチャネル属性の定義
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 この手順では、新しい小売チャネルを作成し、チャネル属性を定義する方法を説明します。 このタスクの作成に使用するデモ データの会社は USRT です。 この手順は、「小売 IT」ロールを対象としています。
 

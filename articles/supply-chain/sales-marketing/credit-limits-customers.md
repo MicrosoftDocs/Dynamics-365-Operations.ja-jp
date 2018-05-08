@@ -26,7 +26,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="credit-limits-for-customers"></a>顧客の与信限度額
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 与信限度額を設定すると、顧客に対して拡張する貸方転記の最大量を指定できます。 与信限度額が指定されている場合、ユーザーがドキュメントの更新を試みると自動的に確認されます。 与信限度額を超えた場合、メッセージがユーザーに表示されます。 この記事では、与信限度額の機能の仕方を概観し、以下の質問に答えます。
 

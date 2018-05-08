@@ -25,7 +25,7 @@ ms.lasthandoff: 04/13/2018
 ---
 
 # <a name="onboard-vendors"></a>Onboard 仕入先
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 ---
 

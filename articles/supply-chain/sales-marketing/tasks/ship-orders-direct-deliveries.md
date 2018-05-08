@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="ship-orders-as-direct-deliveries"></a>直納として注文を出荷
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順は、販売注文の直納を作成する方法を示します。 商品を自社倉庫へまず出荷する代わりに、仕入先から顧客へ直接出荷する場合、直納を使用します。 この手順は、デモ データの会社 USMF で、または独自のデータで実行できます。 2 番目のサブタスクの「ワークベンチから直納を作成」を正常に完了するため、販売注文で選択した品目に関して、[リリース済製品マスター] の [購買クイックタブ] で既定の [仕入れ先] が指定されていることを確認してください。
 

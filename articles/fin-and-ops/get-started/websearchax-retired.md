@@ -27,7 +27,7 @@ ms.lasthandoff: 03/05/2018
 
 # <a name="websearchax-retired"></a>破棄された WebSearchAX
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 WebSearchAX ページを破棄する必要があります。 お気に入りの検索エンジンからサイト検索を使用して、置換することをお勧めします。  例: 
 

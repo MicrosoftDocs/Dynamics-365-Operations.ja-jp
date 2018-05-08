@@ -28,7 +28,7 @@ ms.lasthandoff: 02/19/2018
 
 # <a name="service-subscriptions"></a>サービスの定期売買
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 定期売買は、時間/実費払プロジェクトに基づいています。 定期売買は、プロジェクトから [サービスの定期売買] ページで作成するか、サービスの定期売買グループを使用して作成できます。
 

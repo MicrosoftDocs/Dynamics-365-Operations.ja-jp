@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="fulfill-sales-agreements"></a>販売契約書の履行
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順は、販売注文と関連付けることによって販売契約書を履行する方法について説明します。 この手順は、デモ データの会社 USMF で、または独自のデータで実行できます。 このガイドを開始する前に、「製品価値確約」タイプの有効な販売契約書を持っていることを確認します。 または、かわりに「販売契約書の作成」というタスク ガイドを実行することもできます。  
 

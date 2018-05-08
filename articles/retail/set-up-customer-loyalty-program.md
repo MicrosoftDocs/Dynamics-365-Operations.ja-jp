@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-a-customer-loyalty-program"></a>顧客ロイヤルティー プログラムの設定
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 この記事では、ロイヤルティ プログラムの設定方法について説明します。 ロイヤルティ プログラムを使用すると、小売店舗で製品を購買する顧客に対して報酬を与え、顧客のロイヤルティを高めることができます。 Microsoft Dynamics 365 for Retail では、すべての小売チャンネルの法人に適用する、簡単または複雑なロイヤルティ プログラムを設定できます。
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-and-confirm-a-customer-consolidated-invoice-japan"></a>顧客月次締め請求書の作成および確認 (日本)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 日本では、その月の販売請求書および仕入請求書は、未払金額を計算するため月末に連結されます。 
 

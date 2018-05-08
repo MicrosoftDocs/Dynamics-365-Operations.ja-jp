@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="inquire-on-payment-fees-in-a-journal-japan"></a>仕訳帳の支払手数料の照会 (日本)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 このタスクでは、仕訳帳の支払手数料の集計を表示する方法について説明します。 
 

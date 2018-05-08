@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="master-planning-and-multisite-functionality"></a>マスタ プランとマルチサイト機能
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 マスター プランでは、サイトと倉庫の在庫分析コードの設定が考慮されます。 
 

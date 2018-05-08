@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="change-depreciation-conventions-for-multiple-fixed-assets"></a>複数の固定資産の減価償却方法の変更
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 このタスクは、指定した固定資産グループに適用する減価償却方法を更新します。 このタスク ガイドでは、デモ会社 USMF を使用します。
 

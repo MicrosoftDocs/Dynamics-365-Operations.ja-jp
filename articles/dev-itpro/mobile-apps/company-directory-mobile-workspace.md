@@ -25,7 +25,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="company-directory-mobile-workspace"></a>会社のディレクトリ モバイル ワークスペース
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 このトピックでは、**会社のディレクトリ** モバイル ワークスペースに関する情報を提供します。 このワークスペースで、ユーザーは閲覧して組織内の他の従業員と連絡を取ることができます。
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="record-a-vendor-invoice-in-the-invoice-journal"></a>請求仕訳帳の仕入先請求書の記録
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 このタスク ガイドでは、発注書に関連付けられていない仕入先請求書を記録する方法について説明します。 このタイプの請求書の例には、消耗品やサービスの経費があります。  このレコードでは、USMF デモ会社を使用します。
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="import-iso20022-credit-transfer-configuration"></a>ISO20022 口座振替コンフィギュレーションのインポート
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、仕入先支払の電子レポートのコンフィギュレーションをインポートする方法を示します。 ドイツの ISO 20022 口座振替形式が例として使用されます。 この手順は、使用可能なその他の電子申告フォーマットに使用できます。 
 

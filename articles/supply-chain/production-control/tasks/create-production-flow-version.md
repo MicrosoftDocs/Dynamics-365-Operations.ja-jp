@@ -25,7 +25,7 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="create-a-production-flow-version"></a>生産フロー バージョンの作成
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順は、生産フローの新規バージョンに焦点を当てています。 この手順では、リーン生産の生産パラメータおよびクラス時間の測定単位を定義する必要があります。 また、バリュー ストリームと生産グループを定義する必要があります。 生産フローおよびリーン生産の活動に関する詳細については、Microsoft Dynamics AX のリーン生産に関するホワイト ペーパーを参照してください。 この手順の作成に使用するデモ データの会社は USMF です。
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="requests-for-quotation-rfqs"></a>見積依頼 (RFQs)
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 このトピックでは、見積依頼 (RFQs) の概要を説明します。 組織は、購入する必要がある品目やサービスに対して、いくつかの仕入先を競合させてより良い条件を得ようとする場合に RFQs を発行します。 RFQ で、仕入先に指定した品目の数量の価格や配送時間を提供するように求めます。
 また、仕入先に、送料などの雑費があるか、大型注文や仕入先請求書の早期支払に対して割引を提供するかどうかを問い合わせることもできます。

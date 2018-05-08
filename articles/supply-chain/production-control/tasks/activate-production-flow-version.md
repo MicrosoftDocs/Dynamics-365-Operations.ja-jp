@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="activate-a-production-flow-version"></a>生産フロー バージョンの有効化
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 かんばん作業が作成され、活動が生産フロー バージョンで処理される前に、バージョンを有効にする必要があります。 ベスト プラクティスとして、有効開始日時の有効期限が切れる前にバージョンを有効にします。 このタスクを完了するには、バージョンを有効にするためのドラフト ステータスを持つ生産フロー バージョンが必要です。 
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-new-kanban-rule-by-duplicating-an-existing-kanban-rule"></a>既存のかんばんルールを複製して新しいかんばんルールを作成
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、既存のかんばんルールの複製の作成を中心に説明します。 これは、既存のかんばんルールに基づいて新しいかんばんルールを作成する場合に便利です。 この手順の作成に使用するデモ データの会社は USMF です。 この手順は、変更された生産フローまたは新しい補充ルールに対する生産を準備している、プロセス エンジニアまたはバリュー ストリーム マネージャーを対象としています。
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="pay-based-on-registrations"></a>登録に基づく支払い
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 このトピックでは、作業者登録に基づいて給料がどのように計算されるかについて詳細に説明します。 これには、計算に使用できる設定オプションのさまざまな組み合わせが、どのように結果に影響するかを示す例が含まれます。 対象となる領域の一部を次に示します。
 

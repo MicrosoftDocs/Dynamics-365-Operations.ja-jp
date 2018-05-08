@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="absence-registration-in-time-and-attendance"></a>勤務時間外の登録
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 このトピックでは、休暇の概念を説明し、勤務時間外登録を処理する方法について説明します。
 
@@ -51,7 +51,7 @@ ms.lasthandoff: 11/03/2017
 
 ### <a name="set-up-standard-time-and-flex-time"></a>標準勤務時間とフレックス時間を設定する。
 
-- **時間と休暇のパラメータ**ページの**休暇の自動挿入**と**フレックスの自動挿入-**オプションを使用し、標準勤務時間とフレックスのパラメーターを設定します。
+- **時間と休暇のパラメータ**ページの**休暇の自動挿入**と**フレックスの自動挿入-** オプションを使用し、標準勤務時間とフレックスのパラメーターを設定します。
 
 ## <a name="absence-groups"></a>休暇グループ
 

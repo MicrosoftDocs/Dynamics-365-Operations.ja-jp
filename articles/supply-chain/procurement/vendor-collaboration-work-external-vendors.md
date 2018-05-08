@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="vendor-collaboration-with-external-vendors"></a>外部仕入先との仕入先コラボレーション
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 **仕入先コラボレーション** モジュールは、Microsoft Dynamics 365 for Finance and Operations での電子データ交換 (EDI) の統合がない仕入先を対象とします。 発注書 (PO)、請求書、委託販売在庫情報、および見積依頼 (RFQ) を仕入先が使用できるようにし、その仕入先マスター データの部分にアクセスすることもできます。 このトピックでは、仕入先コラボレーション インタフェースを使用する、発注書、見積依頼および委託販売在庫を使用している外部仕入先とコラボレーションする方法について説明します。 また、特定の仕入先が仕入先コラボレーションを使用できるようにする方法、すべての仕入先が発注書に応答する際に表示する情報を定義する方法についても説明します。
 

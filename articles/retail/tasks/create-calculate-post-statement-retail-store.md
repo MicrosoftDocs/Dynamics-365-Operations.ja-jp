@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="create-calculate-and-post-a-statement-for-a-retail-store"></a>小売店舗の明細書の作成、計算、および転記
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 この手順では、店舗の明細書を作成、計算、および転記する手動のステップについて説明します。 同じタスクにコンフィギュレーションできるバッチ ジョブもあります。 他のトピックで、バッチ ジョブをコンフィギュレーションし、実行するための手順を検索できます。 この手順を完了するには、POS で完了して Dynamics AX で取り出されたトランザクションが必要です。 この記録では、デモ データの会社 USRT を使用します。 この手順は、Microsoft Dynamics AX を参照する場合があります。 Dynamics AX は現在 Microsoft Dynamics 365 for Operations と呼ばれていることに注意してください。
 

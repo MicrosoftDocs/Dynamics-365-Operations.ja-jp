@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-japan-payment-by-endorsing-a-customer-bill-of-exchange-japan"></a>顧客受取手形の裏書による日本の支払の設定 (日本)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 このタスクでは、日本での顧客の為替手形の裏書きによる支払いの設定について説明します。
 

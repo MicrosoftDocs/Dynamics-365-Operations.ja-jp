@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="budget-control-overview"></a>予算管理の概要
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 この記事は、予算管理を紹介し、財源を管理できるように、Microsoft Dynamics 365 for Finance and Operations の予算管理をコンフィギュレーションするのに役立つ情報を提供します。
 

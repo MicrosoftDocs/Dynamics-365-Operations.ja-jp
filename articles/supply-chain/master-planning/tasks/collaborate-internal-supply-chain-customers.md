@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="collaborate-with-internal-supply-chain-customers"></a>社内サプライ チェーンの顧客との共同作業
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、会社間仕入先によって達成されるすべての計画オーダーを表示する方法を示します。 この手順の作成に使用するデモ データの会社は DEMF です。
 

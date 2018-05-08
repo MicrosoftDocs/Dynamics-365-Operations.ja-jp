@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="credit-and-collections-in-accounts-receivable"></a>売掛金勘定の貸方転記と取立
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 売掛金勘定回収情報は、Finance and Operations のコレクションのページを使用して 1 つの中央ビューで管理されます。 貸方および取立マネージャが回収を管理するには、この中央ビューを使用できます。 回収代行業者は、定義済の回収基準または [顧客] ページを使用して生成された、顧客リストから回収プロセスを開始することができます。
 

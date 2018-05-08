@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="settle-a-partial-vendor-payment-that-has-multiple-discount-periods"></a>複数の割引期間を持つ一部の仕入先支払を決済する
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 この記事は、複数の現金割引を提供する仕入先に対して複数の一部支払が作成されるシナリオについて説明します。 
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="add-a-kanban-quantity-calculation-policy-to-a-kanban-rule"></a>かんばん数量計算ポリシーのかんばんルールへの追加
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、かんばん数量の計算ポリシーを作成し、それをかんばんルールへ追加し、かんばんのサイズおよび数量を最適化することに焦点をあてます。 この手順の作成に使用するデモ データの会社は USMF です。 この手順は、バリュー ストリーム マネージャーを対象としています。 この手順は、かんばん数量修正候補の計算という手順を作成するための前提条件です。 
 

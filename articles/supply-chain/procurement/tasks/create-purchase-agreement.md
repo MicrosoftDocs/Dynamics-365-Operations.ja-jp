@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-purchase-agreement"></a>購買契約書の作成
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、購買契約書の作成方法について説明しています。 これは通常、購買マネージャが行います。 デモ データの会社 USMF のこの手順を使うか、または独自のデータを使うことができます。 開始する前に、購買契約書の分類を設定する必要があります。 契約を作成すると、発注書の作成時にそれを使用できます。また、販売契約条件がヘッダーまたは任意の明細行に、その契約によって影響される順でコピーされます。
 

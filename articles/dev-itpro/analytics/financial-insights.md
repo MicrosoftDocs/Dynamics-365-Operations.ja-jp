@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="financial-insights"></a>財務インサイト
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 **財務インサイト** は、Microsoft Power BIを使用して、財務の主要業績評価指標 (KPI)、グラフ、および財務諸表を結び付けます。 Microsoft Dynamics 365 Finance and Operations に埋め込まれている Power BI。
 **財務インサイト** のフォーカスは分析レポートです。 組織全体にわたる役割として、表示、研究、理解、および実行できます。 

@@ -29,7 +29,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="synchronize-sales-invoice-headers-and-lines-directly-from-finance-and-operations-to-sales"></a>売上請求書ヘッダーおよび明細行の Finance and Operations から Sales への直接同期
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 for Finance and Operations から Microsoft Dynamics 365 for Sales に対して、売上請求書ヘッダーと明細行を直接同期するために使用されるテンプレートと基本的なタスクについて説明します。
 

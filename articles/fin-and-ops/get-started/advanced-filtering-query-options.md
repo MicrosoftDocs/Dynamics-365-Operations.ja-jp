@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="advanced-filtering-and-query-syntax"></a>高度なフィルター処理とクエリ構文
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 この記事では、フィルタ処理とクエリ オプションについて説明します。[フィルタ/並べ替えの編集] ダイアログで、"matches" (一致) 演算子を使うときに利用できます。
 

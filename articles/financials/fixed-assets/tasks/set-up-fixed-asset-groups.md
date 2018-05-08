@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-fixed-asset-groups"></a>固定資産グループを設定します
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、新しい固定資産グループを作成する方法を説明します。 これは USMF の法人に対して経理担当ロールとデモ データを使用します。
 

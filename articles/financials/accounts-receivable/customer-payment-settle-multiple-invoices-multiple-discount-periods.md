@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="use-a-customer-payment-to-settle-multiple-invoices-that-span-multiple-discount-periods"></a>複数の割引期間にまたがる複数の請求書を決済するための顧客支払の使用
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 このトピックは、各請求書に現金割引の資格がある場合に、複数の請求書の支払方法を示します。 この記事のシナリオは、支払が行われたときよって、実行する現金割引がどう異なるかを取り上げます。
 

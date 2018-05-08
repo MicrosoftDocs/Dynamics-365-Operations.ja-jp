@@ -24,7 +24,7 @@ ms.lasthandoff: 02/13/2018
 ---
 # <a name="create-a-fixed-asset-with-special-depreciation-profile-japan"></a>特別償却プロファイルのある固定資産の作成 (日本)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 日本では、特定の条件下で特別償却額を固定資産に転記できます
 

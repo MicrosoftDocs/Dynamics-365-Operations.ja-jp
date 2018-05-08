@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="position-budgeting-troubleshooting"></a>職位の予算作成のトラブルシューティング
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 この記事は、職位の予算作成をコンフィギュレーションするときに提起される可能性のある質問に対する回答を提供します。 これは、予算原価要素、報酬グループ、および報酬グリッドの作成方法に関する、よく寄せられる質問に対処します。 
 

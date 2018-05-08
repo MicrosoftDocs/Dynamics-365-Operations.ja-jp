@@ -29,7 +29,7 @@ ms.lasthandoff: 02/13/2018
 
 # <a name="master-planning-home-page"></a>マスター プランのホーム ページ
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 その中心に、マスター プランにより、会社が原材料および会社の目標を満たす能力に対する将来の必要性を特定し調整することができます。 マスター プランを以下の点を評価します。 
 

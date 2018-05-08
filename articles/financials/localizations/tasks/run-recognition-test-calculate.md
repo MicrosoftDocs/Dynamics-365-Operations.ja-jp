@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="run-the-recognition-test-and-calculate-the-impairment-amount-on-individual-assets-japan"></a>認識テストの実行と個別資産の減損損失の計算 (日本)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 このタスクは、認識テストの実行方法および個々の資産の減損金額の計算方法について説明します。
 

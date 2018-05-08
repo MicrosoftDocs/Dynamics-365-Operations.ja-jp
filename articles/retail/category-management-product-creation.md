@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="manage-retail-product-categories-and-products"></a>小売製品カテゴリと製品を管理します。
 
-[!INCLUDE [banner](./includes/banner.md)]
+[!include [banner](./includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 for Retail の小売製品カテゴリと製品を管理するための強化された方法について説明します。 拡張機能で、販売促進マネージャーは小売製品階層、およびリリース済製品の詳細の間で共有されている製品プロパティの構造を表示できます。
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-product"></a>製品の作成
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、小売製品階層で新しい製品を作成する方法を説明します。 このタスクの作成に使用されるデモ データの会社は USRT です。このタスクは販売促進マネージャーと製品デザイナー向けの想定です。
 

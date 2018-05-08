@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="job-scheduling"></a>ジョブのスケジューリング
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 この記事は、工程のスケジューリングよりも詳細なスケジューリング フォームであるジョブのスケジューリングに関する情報を提供します。 ジョブのスケジューリングは、個別のジョブまたは作業現場のオーダーをスケジュールして、製造環境を制御します。
 

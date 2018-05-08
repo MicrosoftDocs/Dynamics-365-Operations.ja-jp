@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="set-up-asset-retirement-obligation-for-japan"></a>日本での資産除去責務の設定
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 日本では、資産除去債務 (ARO) は法的な除去責務のある固定資産に対して認識されます。 この記事は、ARO の負債がどのように認識、償却、および未払となるか、および固定資産と ARO の負債が除去される方法について説明します。
 

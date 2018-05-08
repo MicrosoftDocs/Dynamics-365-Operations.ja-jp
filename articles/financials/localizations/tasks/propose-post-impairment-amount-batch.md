@@ -24,7 +24,7 @@ ms.lasthandoff: 10/31/2017
 ---
 # <a name="propose-and-post-the-impairment-amount-by-batch-japan"></a>バッチごとの減損損失の提案と転記 (日本)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 このタスクは、バッチによる減損損失額の提案と転記について説明します。
 

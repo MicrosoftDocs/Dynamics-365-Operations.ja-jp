@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="propose-fixed-asset-acquisitions"></a>固定資産の取得の提案
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、固定資産仕訳帳の取得提案を使用して固定資産の取得方法を示します。 これは USMF の法人に対して経理担当ロールとデモ データを使用します。
 

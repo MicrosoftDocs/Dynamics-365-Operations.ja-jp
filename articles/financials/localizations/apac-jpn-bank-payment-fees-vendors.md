@@ -28,7 +28,7 @@ ms.lasthandoff: 03/21/2018
 
 # <a name="bank-payment-fees-covered-by-vendors-in-japan"></a>仕入先負担の銀行支払手数料 (日本)
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 日本では、銀行支払手数料は通常、仕入先 (受領当事者) によって負担されます。 このトピックでは、仕入先負担の銀行支払手数料についてよく寄せられる質問に回答します。
 

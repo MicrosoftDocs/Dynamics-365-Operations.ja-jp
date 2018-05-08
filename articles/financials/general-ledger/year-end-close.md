@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="year-end-close"></a>年度末決算
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 このトピックでは、一般会計の年度末決算処理を実行するために必要な設定と手順について説明します。 
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="create-a-new-product-lifecycle-state"></a>新しい製品ライフサイクルの状態を作成
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、新しい製品のライフサイクルの状態を作成する方法を説明します。 製品ライフサイクルの状態は、リリースされた製品または製品バリアントのライフサイクルの状態を付記します。 製品ライフサイクルの状態は、ユーザー、通常は製品マネージャー、または製品マスター データのマネージャーによって定義されます。 例えばマスター プランなどの特定の業務プロセスは、特定のライフサイクルの状態によって影響を受ける可能性があります。
 

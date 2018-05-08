@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="movement-of-inventory-with-associated-work-in-warehouse-management"></a>倉庫管理における作業が関連付けられている在庫の移動
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 在庫移動を使用すると、引当済の在庫を移動することが許可されている倉庫作業者を指定できます。 これにより、作業者が既に作成されているピッキング作業に対して新しいピッキング場所を選択できないように規制している倉庫内での柔軟性が実現します。 また、倉庫マネージャーは、経験の浅い従業員がどの機能を管理するかを制御できます。
 

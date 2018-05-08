@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="configure-expense-management"></a>経費管理の構成
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 このトピックは、Microsoft Dynamics 365 for Finance and Operations の経費管理をコンフィギュレーションする前に、計画プロセス中に決定する必要のある考慮事項について説明します。 [経費管理] で、支払方法、出張費要求、経費精算書、ポリシーなどの情報を格納できます。
 

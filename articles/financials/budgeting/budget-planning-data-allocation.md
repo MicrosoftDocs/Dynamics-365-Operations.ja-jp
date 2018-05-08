@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="budget-planning-data-allocation"></a>予算計画データの配賦
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 この記事は、Microsoft Dynamics 365 for Finance and Operations で利用できるさまざまな配賦方法と、その使用方法について説明します。  
 

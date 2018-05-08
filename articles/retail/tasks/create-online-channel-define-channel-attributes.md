@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="create-online-channels-and-define-channel-attributes"></a>オンライン チャネルの作成とチャネルの属性の定義
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 この手順では、新しいオンライン チャンネルを作成し、組織階層に追加する手順を説明しています。 新しいオンライン チャンネルを作成する前に、組織階層を作成する必要があります。 この手順では、デモ データの会社 USRT を使用します。
 

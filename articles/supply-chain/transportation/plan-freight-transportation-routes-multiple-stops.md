@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="plan-freight-transportation-routes-with-multiple-stops"></a>複数の立ち寄りを伴なう貨物輸送ルートを計画する
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 この記事では、Microsoft Dynamics 365 for Finance and Operations で輸送ルートを計画するために使用するさまざまな要素について説明します。
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 03/05/2018
 ---
 # <a name="bank-management-workspace"></a>銀行管理ワークスペース
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 **銀行管理**ワークスペースは、会社の銀行口座に関連する情報を表示します。 このワークスペースには、[概要] ビューと [分析] ページが含まれます。 **概要**ビューでは、概要タイル、銀行口座情報、残高チャート、および関連情報を表示します。 [分析] ページは、Microsoft Power BI の機能を使用して、銀行口座残高に関連付けられているビジュアルを表示します。
 

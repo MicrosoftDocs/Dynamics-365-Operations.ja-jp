@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="revert-kanban-job-status"></a>かんばん作業状態を元に戻す
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順は、間違ったかんばん作業ステータスを元に戻すことに焦点をあてます。 これは機械オペレーターが間違ったジョブを更新してしまった場合に、または誤って間違ったステータスを設定してしまった場合に役立ちます。 この手順によって、かんばん作業が誤って作成時に登録された時に、ステータスが元に戻されます。 この手順の作成に使用するデモ データの会社は USMF です。 この手順は、リーン生産会社で働いている現場監督または機械オペレーターを対象としています。
 

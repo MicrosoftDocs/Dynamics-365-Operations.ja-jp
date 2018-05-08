@@ -26,7 +26,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="define-loyalty-schemes"></a>ロイヤルティ スキーマの定義
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 この手順は、ロイヤルティ スキームの定義方法を説明します。 ロイヤルティ スキームは、ロイヤルティ プログラムの報酬取得および報酬償還ルールです。 この手順では、デモ データの会社 USRT を使用します。
 
