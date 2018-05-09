@@ -16,15 +16,15 @@ ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: ad1bd0babbf81e6296c59440cf679f131f9976c2
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 7b2d44b8ee6751516621cbb11148c9a92bdf427a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="set-up-sales-commission-rules"></a><span data-ttu-id="e8fdc-103">販売コミッション ルールの設定</span><span class="sxs-lookup"><span data-stu-id="e8fdc-103">Set up sales commission rules</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="e8fdc-104">この手順は、販売コミッションの計算および追跡を設定して有効にする方法を示します。</span><span class="sxs-lookup"><span data-stu-id="e8fdc-104">This procedure shows you how to set up and enable sales commission calculation and tracking.</span></span> <span data-ttu-id="e8fdc-105">この手順は、顧客と品目両方のコミッション グループの作成方法、次に各グループに選択した顧客と製品をリンクする方法を示します。</span><span class="sxs-lookup"><span data-stu-id="e8fdc-105">The procedure shows how to create both customer and item commission groups, and then how to link a selected customer and product to the respective groups.</span></span> <span data-ttu-id="e8fdc-106">これらのグループは次にコミッション計算の設定で使用されます。これらは、販売担当者にコミッションを与えるために、販売注文と合致する、顧客、品目、販売担当者の組み合わせである必要があります。</span><span class="sxs-lookup"><span data-stu-id="e8fdc-106">Those groups are then used in the commission calculation setup to create a customer, item, and sales representatives combination that must be matched by the sales order to entitle the sales people to a commission.</span></span> <span data-ttu-id="e8fdc-107">顧客および品目のコミッション グループの作成は、コミッションの計算が個々の顧客および/または品目に対してもできるため、オプションとなっています。</span><span class="sxs-lookup"><span data-stu-id="e8fdc-107">Creating customer and item commission groups are optional, as the calculation of commission can also be done for an individual customer and/or item.</span></span> <span data-ttu-id="e8fdc-108">この手順は、デモ データの会社 USMF で、または独自のデータで実行できます。</span><span class="sxs-lookup"><span data-stu-id="e8fdc-108">You can run this procedure in demo data company USMF or on your own data.</span></span>
 

@@ -16,15 +16,15 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: f5425106f06906a6b56e7338bd78f34bcdaf7d9c
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 84105a2eda0ff87c307b7291575b8c5a429467a3
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="depreciate-fixed-assets-with-reduction-entry-posted-japan"></a><span data-ttu-id="59ffe-104">圧縮記帳が転記されている固定資産の減価償却 (日本)</span><span class="sxs-lookup"><span data-stu-id="59ffe-104">Depreciate fixed assets with reduction entry posted (Japan)</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="59ffe-105">このタスクを使用して、圧縮記帳で固定資産の減価償却を実行する方法を把握します。</span><span class="sxs-lookup"><span data-stu-id="59ffe-105">Use this task to learn how to run fixed asset depreciation with reduction entries.</span></span>
 

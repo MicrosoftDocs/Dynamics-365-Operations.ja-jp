@@ -16,15 +16,15 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 8c44579df2f844bcd4668a218df2ebdca37fa0cc
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: d123dac767a8985f6c1a5fef64a9814160f76a8d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-a-plan-for-a-site"></a><span data-ttu-id="43598-103">サイトの計画の作成</span><span class="sxs-lookup"><span data-stu-id="43598-103">Create a plan for a site</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="43598-104">生産計画担当者は、特定品目を生産するための材料と能力要件を計算します。</span><span class="sxs-lookup"><span data-stu-id="43598-104">The production planner calculates the material and capacity requirements for the production of a specific item.</span></span> <span data-ttu-id="43598-105">調達提案が作成された後、計画している注文を検索し、注文を確定し、緊急を要する注文から始めます。</span><span class="sxs-lookup"><span data-stu-id="43598-105">After the sourcing suggestions are created, he finds the orders at the site for which he is planning and firms the orders, starting from the urgent ones.</span></span> <span data-ttu-id="43598-106">最も緊急な注文とは、現在の日付で確定される必要があるものです。</span><span class="sxs-lookup"><span data-stu-id="43598-106">The most urgent orders are the ones that need to be firmed on the current date.</span></span> <span data-ttu-id="43598-107">デモ データの会社 USMF を使用して、これらのタスクを実行します。</span><span class="sxs-lookup"><span data-stu-id="43598-107">Use the demo data company USMF to perform these tasks.</span></span>
 

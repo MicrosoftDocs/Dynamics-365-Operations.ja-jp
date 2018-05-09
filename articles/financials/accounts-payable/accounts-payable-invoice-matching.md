@@ -19,16 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 24ef07d3b5c9c433055553118561d753343a0813
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 0725a4ba672d84538296663302b7f55e7ae4eb0a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="accounts-payable-invoice-matching"></a><span data-ttu-id="6cf50-103">買掛金請求書照合</span><span class="sxs-lookup"><span data-stu-id="6cf50-103">Accounts payable invoice matching</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="6cf50-104">買掛金勘定の請求書照合は、仕入先請求書、発注書、および製品受領情報を照合するプロセスです。</span><span class="sxs-lookup"><span data-stu-id="6cf50-104">Accounts payable invoice matching is the process of matching vendor invoice, purchase order, and product receipt information.</span></span>
 

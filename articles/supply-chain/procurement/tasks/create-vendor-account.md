@@ -16,15 +16,15 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 829a0bbb1b5ab01728c096872b0ada27cfc570c9
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: aaa5b503af95883c2c7fdfb2ad7f3e3062d28961
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-a-vendor-account"></a><span data-ttu-id="4c375-103">仕入先勘定の作成</span><span class="sxs-lookup"><span data-stu-id="4c375-103">Create a vendor account</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="4c375-104">この手順では、仕入先勘定の作成方法と住所および連絡先情報の追加方法を示します。</span><span class="sxs-lookup"><span data-stu-id="4c375-104">This procedure shows how to create a vendor account, and add an address and contact information.</span></span> <span data-ttu-id="4c375-105">この手順では、購買目的および財務目的のためのすべてのフィールドを設定する方法は表示されません。</span><span class="sxs-lookup"><span data-stu-id="4c375-105">The procedure does not show how to populate all fields for purchasing and financial purposes.</span></span> <span data-ttu-id="4c375-106">これらのフィールドについての詳細は、フィールドの説明を参照してください。</span><span class="sxs-lookup"><span data-stu-id="4c375-106">To learn more about those fields, please read the field descriptions.</span></span> <span data-ttu-id="4c375-107">デモ データの会社 USMF のこの手順を使うか、または独自のデータを使うことができます。</span><span class="sxs-lookup"><span data-stu-id="4c375-107">You can use this procedure in demo data company USMF or on your own data.</span></span> <span data-ttu-id="4c375-108">通常、仕入先勘定は、調達担当者または売掛金勘定担当者によって作成されます。</span><span class="sxs-lookup"><span data-stu-id="4c375-108">Vendor accounts are typically created by a procurement professional or accounts receivable personnel.</span></span>
 

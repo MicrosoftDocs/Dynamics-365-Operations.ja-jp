@@ -17,15 +17,15 @@ ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 68fe68ba92495eb089e9b38cfbd42eba05b7dc47
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: f0bb5be885491e97d8d9c2f90608d139745db650
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="bank-management-workspace"></a><span data-ttu-id="c4a02-106">銀行管理ワークスペース</span><span class="sxs-lookup"><span data-stu-id="c4a02-106">Bank management workspace</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="c4a02-107">**銀行管理**ワークスペースは、会社の銀行口座に関連する情報を表示します。</span><span class="sxs-lookup"><span data-stu-id="c4a02-107">The **Bank management** workspace shows information that is related to company bank accounts.</span></span> <span data-ttu-id="c4a02-108">このワークスペースには、[概要] ビューと [分析] ページが含まれます。</span><span class="sxs-lookup"><span data-stu-id="c4a02-108">This workspace includes a **Summary** view and an **Analytics** page.</span></span> <span data-ttu-id="c4a02-109">**概要**ビューでは、概要タイル、銀行口座情報、残高チャート、および関連情報を表示します。</span><span class="sxs-lookup"><span data-stu-id="c4a02-109">The **Summary** view shows summary tiles, bank account information, a balance chart, and related information.</span></span> <span data-ttu-id="c4a02-110">[分析] ページは、Microsoft Power BI の機能を使用して、銀行口座残高に関連付けられているビジュアルを表示します。</span><span class="sxs-lookup"><span data-stu-id="c4a02-110">The **Analytics** page uses the capabilities of Microsoft Power BI to show visuals that are related to bank account balances.</span></span>
 

@@ -16,15 +16,15 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: fe286102dd819bdc19933d2daa71ff3f962f9491
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 844902545871013daf9eadfe55edba3613e83f7f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="propose-and-post-the-impairment-amount-by-batch-japan"></a><span data-ttu-id="39935-103">バッチごとの減損損失の提案と転記 (日本)</span><span class="sxs-lookup"><span data-stu-id="39935-103">Propose and post the impairment amount by batch (Japan)</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="39935-104">このタスクは、バッチによる減損損失額の提案と転記について説明します。</span><span class="sxs-lookup"><span data-stu-id="39935-104">This task walks you through proposing and posting the impairment amount by batch.</span></span>
 

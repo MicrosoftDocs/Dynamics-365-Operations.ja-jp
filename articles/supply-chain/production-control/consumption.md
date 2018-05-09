@@ -20,16 +20,16 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 5fe073db08c276eff9ba6c6a8fd54ac5e6d333ea
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 836627954207b09755514e03e424700357cd20e1
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="calculate-material-consumption"></a><span data-ttu-id="5d98d-103">材料消費の計算</span><span class="sxs-lookup"><span data-stu-id="5d98d-103">Calculate material consumption</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="5d98d-104">この記事は、材料消費の計算に関するさまざまなオプションについての情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="5d98d-104">This article provides information about various options that are related to the calculation of material consumption.</span></span> 
 

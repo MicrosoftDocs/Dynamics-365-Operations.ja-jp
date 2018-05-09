@@ -19,16 +19,16 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 961f0bbc4bb66536d953fa5103f98fcd6924adba
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 0c035f73fb35c6390be3c665c2645b1fdc411650
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="vendor-collaboration-with-external-vendors"></a><span data-ttu-id="29dc5-103">外部仕入先との仕入先コラボレーション</span><span class="sxs-lookup"><span data-stu-id="29dc5-103">Vendor collaboration with external vendors</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="29dc5-104">**仕入先コラボレーション** モジュールは、Microsoft Dynamics 365 for Finance and Operations での電子データ交換 (EDI) の統合がない仕入先を対象とします。</span><span class="sxs-lookup"><span data-stu-id="29dc5-104">The **Vendor collaboration** module is targeted at vendors who don't have electronic data interchange (EDI) integration with Microsoft Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="29dc5-105">発注書 (PO)、請求書、委託販売在庫情報、および見積依頼 (RFQ) を仕入先が使用できるようにし、その仕入先マスター データの部分にアクセスすることもできます。</span><span class="sxs-lookup"><span data-stu-id="29dc5-105">It lets vendors work with purchase orders (POs), invoices, consignment inventory information, and requests for quotation (RFQs), and also lets them access parts of their vendor master data.</span></span> <span data-ttu-id="29dc5-106">このトピックでは、仕入先コラボレーション インタフェースを使用する、発注書、見積依頼および委託販売在庫を使用している外部仕入先とコラボレーションする方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="29dc5-106">This topic explains how you can collaborate with external vendors who use the vendor collaboration interface to work with POs, RFQs, and consignment inventory.</span></span> <span data-ttu-id="29dc5-107">また、特定の仕入先が仕入先コラボレーションを使用できるようにする方法、すべての仕入先が発注書に応答する際に表示する情報を定義する方法についても説明します。</span><span class="sxs-lookup"><span data-stu-id="29dc5-107">It also explains how to enable a specific vendor to use vendor collaboration, and how to define the information that all vendors see when they respond to a PO.</span></span>
 

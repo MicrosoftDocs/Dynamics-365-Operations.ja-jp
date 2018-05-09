@@ -16,15 +16,15 @@ ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d0ad0869907b23ce5e0b44e3e9ecee3f2cd34ede
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 16feadb3a2e30e3400d85829c73f6f20780e7b71
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="ship-sales-orders-without-warehousing"></a><span data-ttu-id="d019a-103">倉庫なしの販売注文の出荷</span><span class="sxs-lookup"><span data-stu-id="d019a-103">Ship sales orders without warehousing</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="d019a-104">このガイドでは、製品が顧客に出荷されたときに販売注文を更新する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="d019a-104">This guide demonstrates how to update a sales order when products are shipped to the customer.</span></span> <span data-ttu-id="d019a-105">このガイドは、倉庫管理 (基本的または詳細な倉庫管理) 用に設定されていないフルフィルメント フローに適用可能です。そのため、出荷前に製品のピッキングを登録する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="d019a-105">The guide is applicable to the fulfillment flow that is not set up for warehouse management (neither basic or advanced warehousing), and therefore does not require product picking to be registered before shipment.</span></span> <span data-ttu-id="d019a-106">この手順は、独自のデータで、またはデモ データの会社 USMF のデータで実行できます。</span><span class="sxs-lookup"><span data-stu-id="d019a-106">You can run this procedure on your own data or in demo data company USMF.</span></span> <span data-ttu-id="d019a-107">どちらの場合も、このタスクを開始する前に、1 より大きな数量で在庫品目の販売注文を作成します。</span><span class="sxs-lookup"><span data-stu-id="d019a-107">In both cases, before you start this task, create a sales order for an inventoried product with a quantity of greater than 1.</span></span> <span data-ttu-id="d019a-108">転記エラーを回避するには、注文で選択したサイトと倉庫の製品の手持数量が注文数量をカバーするのか、確認する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d019a-108">To avoid a posting error, you need to check that the product's on-hand quantity in the site and warehouse that you’ve selected on the order covers the order quantity.</span></span>
 

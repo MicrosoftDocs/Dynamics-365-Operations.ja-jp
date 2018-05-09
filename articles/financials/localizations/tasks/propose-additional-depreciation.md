@@ -16,15 +16,15 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 6923b5bfc7b30af179edc8fdef4a143262dfc779
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 2af1c24639daa5e4d41d209506f9d77e8fa1a7fc
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="propose-additional-depreciation-japan"></a><span data-ttu-id="9659e-103">割増償却の提案 (日本)</span><span class="sxs-lookup"><span data-stu-id="9659e-103">Propose additional depreciation (Japan)</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="9659e-104">日本では、特定の条件下で割増償却が許可されています。</span><span class="sxs-lookup"><span data-stu-id="9659e-104">In Japan, an additional depreciation is permitted under certain conditions.</span></span> 
 

@@ -16,15 +16,15 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: bad86a4726ce69015f318d9af98992b36d34b29a
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: ad2a356c4f6bc2c72898e8b841963e6bee6daac0
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-a-requisition-for-consumption"></a><span data-ttu-id="63e40-103">消費要求の作成</span><span class="sxs-lookup"><span data-stu-id="63e40-103">Create a requisition for consumption</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="63e40-104">この手順では、要求作成のプロセスを説明します。</span><span class="sxs-lookup"><span data-stu-id="63e40-104">This procedure walks you through the process of creating a requisition.</span></span> <span data-ttu-id="63e40-105">調達カタログで製品を検索するさまざまな方法と、カタログに存在しない製品を追加する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="63e40-105">It shows you different ways to search for products in your procurement catalog and how to add a product that isn’t in your catalog.</span></span> <span data-ttu-id="63e40-106">この手順を開始する前に、[消費] を要求の既定のタイプとして設定した購買ポリシーがある必要があります。</span><span class="sxs-lookup"><span data-stu-id="63e40-106">Before you start this procedure, you must have a purchasing policy set up with Consumption as the default type of requisition.</span></span> <span data-ttu-id="63e40-107">デモ データ会社 USMF または独自のデータを使用してこの手順の説明を見ることができます。</span><span class="sxs-lookup"><span data-stu-id="63e40-107">You can walk through this procedure in demo data company USMF, or using your own data.</span></span> <span data-ttu-id="63e40-108">この手順は、ユーザー プロファイルが作業者として設定されているユーザーのみ実施できます。</span><span class="sxs-lookup"><span data-stu-id="63e40-108">The procedure can only be carried out by a user profile that is set up as worker.</span></span>  <span data-ttu-id="63e40-109">通常、このタスクを実施するのは、従業員です。</span><span class="sxs-lookup"><span data-stu-id="63e40-109">This task would normally be carried out by an employee.</span></span> <span data-ttu-id="63e40-110">従業員の採用セキュリティ ロールにより、タスクを実行することができます。または、USMF を使用する場合に、アリシアとしてログインできます。</span><span class="sxs-lookup"><span data-stu-id="63e40-110">The Employee employ security role will allow you to carry out the tasks, or if you’re using USMF, you can log in as Alicia.</span></span>
 

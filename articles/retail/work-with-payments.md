@@ -20,16 +20,16 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: fe8dd3136f14e182e261a4dce57eef0b1946d304
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 20fc9da6ce977845c32c91b9bddd9aebc69e2622
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="payment-methods-in-a-call-center"></a><span data-ttu-id="a945e-103">コール センターでの支払方法</span><span class="sxs-lookup"><span data-stu-id="a945e-103">Payment methods in a call center</span></span>
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 <span data-ttu-id="a945e-104">Microsoft Dynamics 365 for Retail では、コール センター チャネルのコンフィギュレーションに、[**オーダー完了の有効化**] という名前の設定が含まれます。</span><span class="sxs-lookup"><span data-stu-id="a945e-104">In Microsoft Dynamics 365 for Retail, the configuration of the call center channel includes a setting that is named **Enable order completion**.</span></span> <span data-ttu-id="a945e-105">この設定は、チャンネルのユーザーが作成したすべての注文が、承認済の許容範囲内の前払または事前承認された支払がある場合にのみ、注文処理にリリースされることを保証するのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="a945e-105">This setting helps guarantee that all orders that users of the channel create are released to order processing only if they have a prepaid or pre-authorized payment that is within approved tolerances.</span></span> <span data-ttu-id="a945e-106">[**オーダー完了の有効化**] 設定が有効の場合、コール センター ユーザーは、コール センターの支払処理機能を使用して顧客の販売注文に対する支払を入力できます。</span><span class="sxs-lookup"><span data-stu-id="a945e-106">If the **Enable order completion** setting is turned on, call center users can enter payments against sales orders for customers by using the payment processing features of Call center.</span></span> <span data-ttu-id="a945e-107">設定が無効になっている場合、コール センター ユーザーはコール センター支払処理機能を使用できませんが、引き続き標準の売掛金勘定機能を使用して前払を販売注文に適用することができます。</span><span class="sxs-lookup"><span data-stu-id="a945e-107">If the setting is turned off, call center users can't use the Call center payment processing features, but they can still apply prepayments to sales orders by using standard Accounts receivable functionality.</span></span>
 

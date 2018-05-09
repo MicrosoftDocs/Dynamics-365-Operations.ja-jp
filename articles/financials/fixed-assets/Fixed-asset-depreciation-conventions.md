@@ -19,16 +19,16 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: c69fd798c2e978935a63b079fb11c68d8555594c
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 730da7caaa4caae0cc47d392798ceec02bbcd743
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="fixed-asset-depreciation-conventions"></a><span data-ttu-id="bcc67-103">固定資産の減価償却方法</span><span class="sxs-lookup"><span data-stu-id="bcc67-103">Fixed asset depreciation conventions</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="bcc67-104">減価償却方法は、固定資産の取得年および処分年の両方で減価償却を計算するタイミングと方法を決定するのに使用されます。</span><span class="sxs-lookup"><span data-stu-id="bcc67-104">Depreciation conventions are used to determine when and how depreciation is calculated for both the year when the fixed asset is acquired and the year when the fixed asset is disposed of.</span></span>
 

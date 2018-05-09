@@ -17,15 +17,15 @@ ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 0c83c8e4506db41a69e94f35272bb651197f3478
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: d53b3f205a1564102b346b3673eca34b98df740a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-a-production-order"></a><span data-ttu-id="9c35c-103">製造オーダーの作成</span><span class="sxs-lookup"><span data-stu-id="9c35c-103">Create a production order</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="9c35c-104">この手順では、製造オーダーを作成する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="9c35c-104">This procedure shows how to create a production order.</span></span> <span data-ttu-id="9c35c-105">この手順の作成に使用するデモ データの会社は USMF です。</span><span class="sxs-lookup"><span data-stu-id="9c35c-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="9c35c-106">これは、製造オーダーのライフ サイクルを説明する 7 個の手順の 1 番目です。</span><span class="sxs-lookup"><span data-stu-id="9c35c-106">This is the first procedure out of seven which explains the production order lifecycle.</span></span>
 

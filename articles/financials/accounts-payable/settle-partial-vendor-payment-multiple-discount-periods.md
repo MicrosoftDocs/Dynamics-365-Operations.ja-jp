@@ -19,16 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 605f681a21b769189770d85e4ec938b6708c01b1
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 87cc2d65d15a1914550825b9f0e7a4a2db6f31f9
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="settle-a-partial-vendor-payment-that-has-multiple-discount-periods"></a><span data-ttu-id="15729-103">複数の割引期間を持つ一部の仕入先支払を決済する</span><span class="sxs-lookup"><span data-stu-id="15729-103">Settle a partial vendor payment that has multiple discount periods</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="15729-104">この記事は、複数の現金割引を提供する仕入先に対して複数の一部支払が作成されるシナリオについて説明します。</span><span class="sxs-lookup"><span data-stu-id="15729-104">This article walks you through a scenario where multiple partial payments are made to a vendor that offers multiple cash discounts.</span></span> 
 

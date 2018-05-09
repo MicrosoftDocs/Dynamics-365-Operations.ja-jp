@@ -16,15 +16,15 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 48706b38dfe8ce64f95594c19ab11ab8aec8c7a5
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 2c10c60f3b3dd70ea24dad3e29393900ba7d2320
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-lump-sum-depreciation-assets-using-equally-divided-method-japan"></a><span data-ttu-id="7871a-103">均等償却を使用した一括比例配分減価償却資産の作成 (日本)</span><span class="sxs-lookup"><span data-stu-id="7871a-103">Create lump-sum depreciation assets using equally-divided method (Japan)</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="7871a-104">日本では、耐用年数期間中、毎年均等額で減価償却処理される固定資産のタイプが 3 つあります。</span><span class="sxs-lookup"><span data-stu-id="7871a-104">In Japan, 3 types of fixed assets are depreciated with equal amount in each year of its service life.</span></span> <span data-ttu-id="7871a-105">その 3 つのタイプとは、一括比例配分資産、繰延資産、および低価額資産です。</span><span class="sxs-lookup"><span data-stu-id="7871a-105">The 3 types are: lump sum assets, deferred assets and low-value assets.</span></span> 
 

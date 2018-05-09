@@ -16,15 +16,15 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 103d925a301e62c52faacd7bbaf100d27901728d
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 55f69d75b7b00eb640eb3fff5eda28a420fa84ad
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-dimension-based-configurations"></a><span data-ttu-id="dc69d-103">分析コードベースのコンフィギュレーションの作成</span><span class="sxs-lookup"><span data-stu-id="dc69d-103">Create dimension-based configurations</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="dc69d-104">この手順では、分析コード ベース製品のコンフィギュレーションを定義する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="dc69d-104">This procedure shows how to define a configuration for a dimension-based product.</span></span> <span data-ttu-id="dc69d-105">これは、分析コード ベースのコンフィギュレーションでの組み合わせの作成方法を説明するシリーズの最後の手順です。</span><span class="sxs-lookup"><span data-stu-id="dc69d-105">This is the last procedure in the series that explains how to build combinations for dimension-based configuration.</span></span> <span data-ttu-id="dc69d-106">この手順の実行は前の 7 つの記録で作成されているデータに依存します。</span><span class="sxs-lookup"><span data-stu-id="dc69d-106">The execution of this procedure is dependent on the data created in the previous seven recordings.</span></span> <span data-ttu-id="dc69d-107">この手順の作成に使用するデモ データの会社は USMF です。</span><span class="sxs-lookup"><span data-stu-id="dc69d-107">The demo data company used to create this procedure is USMF.</span></span>
 

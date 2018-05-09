@@ -18,16 +18,16 @@ ms.author: johanho
 ms.search.validFrom: 2017-09-20
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 7ccac401b7364006e8ffc229a616bca8e48bf096
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: b5cc8d99fa7999b33b5709d691ce56ba28ab9e30
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="absence-registration-in-time-and-attendance"></a><span data-ttu-id="219f8-103">勤務時間外の登録</span><span class="sxs-lookup"><span data-stu-id="219f8-103">Absence registration in Time and attendance</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="219f8-104">このトピックでは、休暇の概念を説明し、勤務時間外登録を処理する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="219f8-104">This topic describes the concepts for absence and explains how to handle absence in Time and attendance.</span></span>
 
@@ -51,7 +51,7 @@ ms.lasthandoff: 04/13/2018
 
 ### <a name="set-up-standard-time-and-flex-time"></a><span data-ttu-id="219f8-123">標準勤務時間とフレックス時間を設定する。</span><span class="sxs-lookup"><span data-stu-id="219f8-123">Set up standard time and flex time</span></span>
 
-- <span data-ttu-id="219f8-124">**時間と休暇のパラメータ**ページの**休暇の自動挿入**と**フレックスの自動挿入-**オプションを使用し、標準勤務時間とフレックスのパラメーターを設定します。</span><span class="sxs-lookup"><span data-stu-id="219f8-124">Configure the parameters for standard time and flex time by using the **Auto insert absence** and **Auto insert Flex-** options on the **Time and attendance parameters** page.</span></span>
+- <span data-ttu-id="219f8-124">**時間と休暇のパラメータ**ページの**休暇の自動挿入**と**フレックスの自動挿入-** オプションを使用し、標準勤務時間とフレックスのパラメーターを設定します。</span><span class="sxs-lookup"><span data-stu-id="219f8-124">Configure the parameters for standard time and flex time by using the **Auto insert absence** and **Auto insert Flex-** options on the **Time and attendance parameters** page.</span></span>
 
 ## <a name="absence-groups"></a><span data-ttu-id="219f8-125">休暇グループ</span><span class="sxs-lookup"><span data-stu-id="219f8-125">Absence groups</span></span>
 

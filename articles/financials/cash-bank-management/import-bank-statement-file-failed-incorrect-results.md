@@ -19,16 +19,16 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a5f53a76ebd0bd428f791ce8493e9f388eb8e2fa
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 4796a440bec7c5c0e77a57beccb9379bd2978df6
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="bank-statement-file-import-troubleshooting"></a><span data-ttu-id="d967c-107">口座取引明細書ファイルのインポートのトラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="d967c-107">Bank statement file import troubleshooting</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="d967c-108">銀行からの口座取引明細書ファイルが、Microsoft Dynamics 365 for Finance and Operations がサポートするレイアウトと一致することが重要です。</span><span class="sxs-lookup"><span data-stu-id="d967c-108">It's important that the bank statement file from the bank match the layout that Microsoft Dynamics 365 for Finance and Operations supports.</span></span> <span data-ttu-id="d967c-109">口座取引明細書の基準が厳しいために、ほとんどの統合が正しく動作します。</span><span class="sxs-lookup"><span data-stu-id="d967c-109">Because of strict standards for bank statements, most integrations will work correctly.</span></span> <span data-ttu-id="d967c-110">ただし、明細書ファイルがインポートできない場合または不正確な結果が含まれている場合があります。</span><span class="sxs-lookup"><span data-stu-id="d967c-110">However, sometimes the statement file can't be imported or has incorrect results.</span></span> <span data-ttu-id="d967c-111">通常、これらの問題は口座取引明細書ファイルの小さな差異によって引き起こされます。</span><span class="sxs-lookup"><span data-stu-id="d967c-111">Typically, these issues are caused by small differences in the bank statement file.</span></span> <span data-ttu-id="d967c-112">この記事は、これらの差異を修正し問題を解決する方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="d967c-112">This article explains how to fix these differences and resolve the issues.</span></span>
 

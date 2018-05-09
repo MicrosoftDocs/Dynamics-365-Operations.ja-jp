@@ -18,16 +18,16 @@ ms.author: saraschi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 7e03e5fd1458df56cc6c4de0459135305b1ffc41
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 941b224aad9749a372b8b1176e7021985b024a4f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="fixed-asset-value-model-and-depreciation-book-merge"></a><span data-ttu-id="207e1-104">固定資産価値モデルと減価償却簿の結合</span><span class="sxs-lookup"><span data-stu-id="207e1-104">Fixed asset value model and depreciation book merge</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="207e1-105">以前のリリースでは、固定資産には 2 つの評価概念がありました - 価値モデルおよび減価償却簿。</span><span class="sxs-lookup"><span data-stu-id="207e1-105">In previous releases, there were two valuation concepts for fixed assets -  value models and depreciation books.</span></span> <span data-ttu-id="207e1-106">Microsoft Dynamics 365 for Operations (1611) のリリースでは、価値モデル機能および減価償却簿機能は帳簿と呼ばれる単一の概念に統合されました。</span><span class="sxs-lookup"><span data-stu-id="207e1-106">In the Microsoft Dynamics 365 for Operations (1611) release, the value model functionality and depreciation book functionality have been merged into a single concept that is known as a book.</span></span>
 

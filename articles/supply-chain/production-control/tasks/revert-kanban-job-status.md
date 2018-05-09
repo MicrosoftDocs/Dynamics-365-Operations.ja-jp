@@ -17,15 +17,15 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 2bcc83c0a422ed1480f2ed41460fd710bc51ff3d
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 037570ec496a59103f5f3c5c1fc4a47f536ed2b9
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="revert-kanban-job-status"></a><span data-ttu-id="470a0-103">かんばん作業状態を元に戻す</span><span class="sxs-lookup"><span data-stu-id="470a0-103">Revert kanban job status</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="470a0-104">この手順は、間違ったかんばん作業ステータスを元に戻すことに焦点をあてます。</span><span class="sxs-lookup"><span data-stu-id="470a0-104">This procedure focuses on reverting an incorrect kanban job status.</span></span> <span data-ttu-id="470a0-105">これは機械オペレーターが間違ったジョブを更新してしまった場合に、または誤って間違ったステータスを設定してしまった場合に役立ちます。</span><span class="sxs-lookup"><span data-stu-id="470a0-105">This is useful in case the machine operator updates the wrong job, or sets the wrong status by mistake.</span></span> <span data-ttu-id="470a0-106">この手順によって、かんばん作業が誤って作成時に登録された時に、ステータスが元に戻されます。</span><span class="sxs-lookup"><span data-stu-id="470a0-106">In this procedure, a kanban job is registered as prepared by mistake, and the status is reverted.</span></span> <span data-ttu-id="470a0-107">この手順の作成に使用するデモ データの会社は USMF です。</span><span class="sxs-lookup"><span data-stu-id="470a0-107">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="470a0-108">この手順は、リーン生産会社で働いている現場監督または機械オペレーターを対象としています。</span><span class="sxs-lookup"><span data-stu-id="470a0-108">This procedure is intended for the shop supervisor or machine operator working in a lean manufacturing company.</span></span>
 

@@ -17,15 +17,15 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 69e2a11d3a8c51d11c4c53e76359e07be1ec5402
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 8483ff0264ea04777c118b80cc6372b882655394
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="set-up-automatic-freight-reconciliation"></a><span data-ttu-id="b59b2-103">自動運賃調整の設定</span><span class="sxs-lookup"><span data-stu-id="b59b2-103">Set up automatic freight reconciliation</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="b59b2-104">この手順では、自動運賃調整のデータ設定方法を示します。</span><span class="sxs-lookup"><span data-stu-id="b59b2-104">This procedure shows how to set up data for automatic freight reconciliation.</span></span> <span data-ttu-id="b59b2-105">これは、通常、倉庫マネージャーによって行われます。</span><span class="sxs-lookup"><span data-stu-id="b59b2-105">This is typically done by a warehouse manager.</span></span> <span data-ttu-id="b59b2-106">デモ データの会社 USMF でこの手順を使用できます。</span><span class="sxs-lookup"><span data-stu-id="b59b2-106">You can use this procedure in demo data company USMF.</span></span>
 

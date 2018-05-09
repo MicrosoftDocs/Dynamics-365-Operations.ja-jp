@@ -16,15 +16,15 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 51d08d1fcb948ac49f89550eb25330f26ac0744f
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 681a9c38ec3b6dba9a50c115c063961235b6f530
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="inquire-on-payment-fees-in-a-journal-japan"></a><span data-ttu-id="68363-103">仕訳帳の支払手数料の照会 (日本)</span><span class="sxs-lookup"><span data-stu-id="68363-103">Inquire on payment fees in a journal (Japan)</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="68363-104">このタスクでは、仕訳帳の支払手数料の集計を表示する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="68363-104">This task walks you through viewing a payment fee summary for a journal.</span></span> 
 

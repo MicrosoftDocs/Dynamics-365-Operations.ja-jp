@@ -16,15 +16,15 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 17ae36cc12506a62b31c0774e28a33811f3d0005
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 116875f6b8e45f0672b46ea751a16454011d7370
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="input-journal-in-t-account-form-japan"></a><span data-ttu-id="affa6-103"> T 勘定フォームでの仕訳帳入力 (日本)</span><span class="sxs-lookup"><span data-stu-id="affa6-103">Input journal in T account form (Japan)</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="affa6-104">日本では、仕訳入力には一般的に T 字勘定形式が使用されます。</span><span class="sxs-lookup"><span data-stu-id="affa6-104">In Japan, the T-account format is commonly used to input journal entries.</span></span> 
 

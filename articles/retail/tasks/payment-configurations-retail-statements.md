@@ -17,15 +17,15 @@ ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: df936a3d6753b428a7010a6db83fecb5478c9873
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 9bbc0367e88f86ae7fdbf7c4fec89eff78478cac
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="payment-configurations-for-retail-statements"></a><span data-ttu-id="e0f99-103">小売明細書の支払コンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="e0f99-103">Payment configurations for Retail statements</span></span>
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 <span data-ttu-id="e0f99-104">この手順では、小売店舗支払方法のコンフィギュレーションが、小売明細書の作成と転記にどのように影響を及ぼすかを示します。</span><span class="sxs-lookup"><span data-stu-id="e0f99-104">This procedure demonstrates configurations for Retail store payment methods, which affect how Retail statements get created and posted.</span></span>
 

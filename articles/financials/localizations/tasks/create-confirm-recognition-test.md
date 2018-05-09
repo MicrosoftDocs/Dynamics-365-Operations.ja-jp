@@ -16,15 +16,15 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: dfd144d7a8daae3df3f9805a0ec9648a172582da
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 2a20763857c809266fe15cc400ab3dfdc07d3dc7
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-and-confirm-a-recognition-test-japan"></a><span data-ttu-id="5e88a-103">認識テストの作成および確認 (日本)</span><span class="sxs-lookup"><span data-stu-id="5e88a-103">Create and confirm a recognition test (Japan)</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="5e88a-104">日本では、減損は 2 つの主要なステップにより処理されます。</span><span class="sxs-lookup"><span data-stu-id="5e88a-104">For Japan, impairment is conducted in two main steps.</span></span> <span data-ttu-id="5e88a-105">最初のステップは、減損が必要かどうかをテストすることです。</span><span class="sxs-lookup"><span data-stu-id="5e88a-105">The first step is to test whether an impairment is needed.</span></span> <span data-ttu-id="5e88a-106">2 番目のステップでは、必要に応じて減損金額を計算します。</span><span class="sxs-lookup"><span data-stu-id="5e88a-106">The second step is to calculate the impairment amount if needed.</span></span> 
 

@@ -20,18 +20,18 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 9ba0c5d44d58faac47b6a44265431a48c49874df
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: e9b1400de76858ca458d6742fba63c967ac6ad74
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="product-dimensions"></a><span data-ttu-id="9e718-105">製品分析コード</span><span class="sxs-lookup"><span data-stu-id="9e718-105">Product dimensions</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [Retail name](../includes/retail-name.md)]
+[!include [Retail name](../includes/retail-name.md)]
 
 <span data-ttu-id="9e718-106">4 つの製品分析コードがあります - 色、構成、サイズ、およびスタイルです。</span><span class="sxs-lookup"><span data-stu-id="9e718-106">There are four product dimensions -  Color, Configuration, Size and Style.</span></span> <span data-ttu-id="9e718-107">分析コード グループで製品分析コードを組み合わせて、製品マスターに分析コード グループを割り当てます。</span><span class="sxs-lookup"><span data-stu-id="9e718-107">You combine product dimensions in dimension groups and assign dimension groups to product masters.</span></span> <span data-ttu-id="9e718-108">製品分析コードの組み合わせは、製品バリアントの定義方法を決定します。</span><span class="sxs-lookup"><span data-stu-id="9e718-108">The combinations of product dimensions determine how product variants are defined.</span></span>
 

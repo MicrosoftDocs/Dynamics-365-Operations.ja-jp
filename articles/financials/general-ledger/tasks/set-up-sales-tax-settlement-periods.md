@@ -16,15 +16,15 @@ ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 6de8dbd33a02183ee8bafca720c3738e8eac44e8
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: fcf4ebcb8a9c27961e250177d4254f28aaefc883
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="set-up-sales-tax-settlement-periods"></a><span data-ttu-id="ca14d-103">消費税精算期間を設定します</span><span class="sxs-lookup"><span data-stu-id="ca14d-103">Set up sales tax settlement periods</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="ca14d-104">売上税決済期間は、売上税の報告および支払が必要な間隔についての情報を含みます。</span><span class="sxs-lookup"><span data-stu-id="ca14d-104">Sales tax settlement periods contain information about the period intervals for which sales tax needs to be reported and paid.</span></span> <span data-ttu-id="ca14d-105">決済プロセスは、特定の日付範囲の決済期間に実行できます。</span><span class="sxs-lookup"><span data-stu-id="ca14d-105">A settlement process can be run for a settlement period for a specific date interval.</span></span> <span data-ttu-id="ca14d-106">決済期間に関連付けられたすべての税コードが決済されます。</span><span class="sxs-lookup"><span data-stu-id="ca14d-106">All tax codes associated with the settlement period will be settled.</span></span> <span data-ttu-id="ca14d-107">関連する売上税所轄官庁の設定に応じて、未払税金は仕入先または総勘定元帳勘定に転記されます。</span><span class="sxs-lookup"><span data-stu-id="ca14d-107">Depending on the set up of the related Sales tax authority, the tax liability is posted either to a vendor or a General ledger account.</span></span>
 

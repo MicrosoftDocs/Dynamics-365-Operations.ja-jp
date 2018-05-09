@@ -16,15 +16,15 @@ ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 690150cba1710c1060a8c5258acecc55e506e9a6
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 93c2e06545a74c656f624848bd4e5dc4611be67b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="maintain-financial-dimension-default-templates"></a><span data-ttu-id="088b9-103">財務分析コード用の既定テンプレートの管理</span><span class="sxs-lookup"><span data-stu-id="088b9-103">Maintain financial dimension default templates</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="088b9-104">この手順では、財務分析コードの既定のテンプレートを設定する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="088b9-104">This procedure shows how to set up financial dimension default templates.</span></span> <span data-ttu-id="088b9-105">このテンプレートは、元伝票の金額をすばやく配分する場合に使用できます。</span><span class="sxs-lookup"><span data-stu-id="088b9-105">The templates can be used to quickly distribute amounts on source documents.</span></span>
 

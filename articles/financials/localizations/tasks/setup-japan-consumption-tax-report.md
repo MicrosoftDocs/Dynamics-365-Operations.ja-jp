@@ -16,15 +16,15 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: b591f92eadb491e7bc5178a7ed94603ad6437373
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: ed93654d625fddcbdecbf5451fc2e9c159619787
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="set-up-japan-consumption-tax-report-japan"></a><span data-ttu-id="32020-103">日本の消費税申告の設定 (日本)</span><span class="sxs-lookup"><span data-stu-id="32020-103">Set up Japan consumption tax report (Japan)</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="32020-104">このタスクでは、日本の消費税申告をサポートするシステムの設定について説明します。</span><span class="sxs-lookup"><span data-stu-id="32020-104">This task walks you through setting up the system to support the Japan consumption tax report.</span></span> <span data-ttu-id="32020-105">このタスクでは、一般会計パラメータ、法人、売上税申告勘定および売上税コードを修正します。</span><span class="sxs-lookup"><span data-stu-id="32020-105">In this task, you will modify General ledger parameters, a legal entity, sales tax reporting accounts and a sales tax code.</span></span> 
 

@@ -17,15 +17,15 @@ ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d375e6c029e575269f7b9fce8a2eb9ac95717b5c
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: dafbff1abd67028d480594c6d0b34fac4ac7e154
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-a-new-kanban-rule-by-duplicating-an-existing-kanban-rule"></a><span data-ttu-id="d73c0-103">既存のかんばんルールを複製して新しいかんばんルールを作成</span><span class="sxs-lookup"><span data-stu-id="d73c0-103">Create a new kanban rule by duplicating an existing kanban rule</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="d73c0-104">この手順では、既存のかんばんルールの複製の作成を中心に説明します。</span><span class="sxs-lookup"><span data-stu-id="d73c0-104">This procedure focuses on creating a duplicate of an existing kanban rule.</span></span> <span data-ttu-id="d73c0-105">これは、既存のかんばんルールに基づいて新しいかんばんルールを作成する場合に便利です。</span><span class="sxs-lookup"><span data-stu-id="d73c0-105">This is useful if you want to create new kanban rules based on existing kanban rules.</span></span> <span data-ttu-id="d73c0-106">この手順の作成に使用するデモ データの会社は USMF です。</span><span class="sxs-lookup"><span data-stu-id="d73c0-106">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="d73c0-107">この手順は、変更された生産フローまたは新しい補充ルールに対する生産を準備している、プロセス エンジニアまたはバリュー ストリーム マネージャーを対象としています。</span><span class="sxs-lookup"><span data-stu-id="d73c0-107">This procedure is intended for the process engineer or the value stream manager as they prepare production for a changed production flow or a new replenishment rule.</span></span>
 

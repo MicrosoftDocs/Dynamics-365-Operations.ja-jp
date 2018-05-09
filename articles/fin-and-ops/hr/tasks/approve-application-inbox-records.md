@@ -16,15 +16,15 @@ ms.author: shielas
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 3a9719082749f48c04c6c86394b8131a10ae6138
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: ccd54805020e3399471d1b70c6a7be4bf3b86586
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="approve-application-inbox-records"></a><span data-ttu-id="6d6e0-103">申請受信トレイ レコードの承認</span><span class="sxs-lookup"><span data-stu-id="6d6e0-103">Approve application inbox records</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="6d6e0-104">この手順は、従業員セルフサービス ページを通して受け取った申請を確認する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="6d6e0-104">This procedure shows how to review applications received through the Employee self-service pages.</span></span> <span data-ttu-id="6d6e0-105">申請の確認に加えて、選択した申請受信トレイ レコードを承認できます。</span><span class="sxs-lookup"><span data-stu-id="6d6e0-105">In addition to reviewing the applications, you can approve the application in box records that you select.</span></span> <span data-ttu-id="6d6e0-106">申請受信トレイ レコードは、採用審査のために会社に提出された雇用申請を表します。</span><span class="sxs-lookup"><span data-stu-id="6d6e0-106">Application inbox records represent employment applications that were submitted to the company for consideration.</span></span> <span data-ttu-id="6d6e0-107">レコードが承認されると、申請者レコードは、申請を提出したユーザー用に作成されます。</span><span class="sxs-lookup"><span data-stu-id="6d6e0-107">After approving a record, an applicant record will be created for the person who submitted the application.</span></span> <span data-ttu-id="6d6e0-108">この手順の作成に使用するデモ データの会社は USMF です。</span><span class="sxs-lookup"><span data-stu-id="6d6e0-108">The demo data company used to create this procedure is USMF.</span></span>
 

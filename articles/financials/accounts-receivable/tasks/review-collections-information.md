@@ -16,15 +16,15 @@ ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 1ed1652a65a73c4b91131f9af7313789ad302b19
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 3a09e4745a50ff48ffc7576f6f8d4b68ef97749e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="review-collections-information"></a><span data-ttu-id="4e585-103">取立情報の確認</span><span class="sxs-lookup"><span data-stu-id="4e585-103">Review collections information</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="4e585-104">この手順は、回収情報およびさまざまな設定オプションや回収トランザクションを確認する方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="4e585-104">This procedure walks you through how to review collections information as well as various setup options and collections transactions.</span></span> <span data-ttu-id="4e585-105">この手順では、USMF というデモ会社を使用します。</span><span class="sxs-lookup"><span data-stu-id="4e585-105">This procedure uses the USMF demo company.</span></span>
 

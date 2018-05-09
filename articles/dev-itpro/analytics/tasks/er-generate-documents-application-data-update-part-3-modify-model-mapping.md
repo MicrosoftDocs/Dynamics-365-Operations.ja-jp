@@ -16,15 +16,15 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: c112b2895175bd23db313888ec1e964bdf5ed295
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: a08709b75f1c6d74913959e35ffba068dc1eccf9
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="modify-model-and-mapping-to-generate-documents-with-application-data"></a><span data-ttu-id="ae730-103">アプリケーション データでドキュメントを生成するためのモデルとマッピングを変更する</span><span class="sxs-lookup"><span data-stu-id="ae730-103">Modify model and mapping to generate documents with application data</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="ae730-104">この手順のステップを完了するには、まず「ER アプリケーション データ更新と共にドキュメントを生成する (パート 2: ドキュメントの生成)」の手順を完了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="ae730-104">To complete the steps in this procedure, you must first complete the procedure, “ER Generate documents with application data update (Part 2: Generate documents)”.</span></span> 
 

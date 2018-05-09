@@ -18,18 +18,18 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 96d92016a4634291c5d519a2935992b3a50b65dd
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: fb7910124be099ff72f5dfa009f285ea9c2bf570
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="purchase-order-approval-mobile-workspace"></a><span data-ttu-id="927f9-104">発注書の承認モバイル ワークスペース</span><span class="sxs-lookup"><span data-stu-id="927f9-104">Purchase order approval mobile workspace</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 <span data-ttu-id="927f9-105">このトピックでは、**発注書の承認**モバイル ワークスペースに関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="927f9-105">This topic provides information about the **Purchase order approval** mobile workspace.</span></span> <span data-ttu-id="927f9-106">このワークスペースでは、発注書を表示したり、アクションを通じて対応したりできます。</span><span class="sxs-lookup"><span data-stu-id="927f9-106">This workspace lets you view purchase orders and respond to them through actions.</span></span> <span data-ttu-id="927f9-107">たとえば、発注書を承認または拒否できます。</span><span class="sxs-lookup"><span data-stu-id="927f9-107">For example, you can approve or reject a purchase order.</span></span>
  

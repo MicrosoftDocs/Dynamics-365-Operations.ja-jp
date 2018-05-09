@@ -19,16 +19,16 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: f1d88d1cad1dfc2e7c3efd90ec61c97266fee453
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 16fc19cb1e0d99eb2bbfb63a16bc96c4f1980308
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="foreign-currency-revaluation-for-general-ledger"></a><span data-ttu-id="aabf3-103">総勘定元帳の外貨再評価</span><span class="sxs-lookup"><span data-stu-id="aabf3-103">Foreign currency revaluation for General ledger</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="aabf3-104">このトピックでは、総勘定元帳の外貨再評価プロセスに次の概要を提供します。設定、プロセスの実行、プロセスの計算、再評価のトランザクションを取り消す方法を必要に応じて実行します。</span><span class="sxs-lookup"><span data-stu-id="aabf3-104">This topic provides an overview of the following for the general ledger foreign currency revaluation process -  setup, running the process, calculation for the process, and how to reverse the revaluation transactions, if necessary.</span></span> 
 

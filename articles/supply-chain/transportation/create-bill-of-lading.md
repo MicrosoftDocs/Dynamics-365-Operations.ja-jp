@@ -19,16 +19,16 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 1c6f953465879ea9ba31827a352351daf72a2971
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: c42106f150ef87fdbdf5838cd6e8deb19004bd4e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="create-a-bill-of-lading"></a><span data-ttu-id="9979f-103">船荷証券の作成</span><span class="sxs-lookup"><span data-stu-id="9979f-103">Create a bill of lading</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="9979f-104">このトピックでは、倉庫管理のプロセスを使用して、船荷証券の作成方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="9979f-104">This topic describes how to create a bill of lading when using warehouse management processes.</span></span>  
 

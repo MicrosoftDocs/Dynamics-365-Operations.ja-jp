@@ -19,16 +19,16 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 3806dafa6ca6ea8355db3d6a8c2432ad67cd69c2
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 0de2bc15cf3f46271e4cf74c93b639070f6bcfec
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="set-up-the-advanced-bank-reconciliation-import-process"></a><span data-ttu-id="a2980-104">詳細な口座調整のインポート プロセスの設定</span><span class="sxs-lookup"><span data-stu-id="a2980-104">Set up the advanced bank reconciliation import process</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="a2980-105">詳細な口座調整機能では、電子口座取引明細書をインポートし、Microsoft Dynamics 365 for Finance and Operations での銀行トランザクションに合わせて自動的に調整することができます。</span><span class="sxs-lookup"><span data-stu-id="a2980-105">The Advanced bank reconciliation feature lets you import electronic bank statements and automatically reconcile them with bank transactions in Microsoft Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="a2980-106">この資料では、口座取引明細書のインポート機能を設定する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="a2980-106">This article explains how to set up the import functionality for your bank statements.</span></span> 
 

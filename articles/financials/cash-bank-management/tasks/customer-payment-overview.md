@@ -16,15 +16,15 @@ ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d90252b6c4939c1b06dd400f2fc1cb0e05f7e85b
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 5c1d160a98b1460139e4bcfdf86962d67b338ff7
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="customer-payment-overview"></a><span data-ttu-id="51123-103">顧客支払の概要</span><span class="sxs-lookup"><span data-stu-id="51123-103">Customer payment overview</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="51123-104">このタスク ガイドでは、顧客支払の入力に使用するさまざまな方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="51123-104">This task guide walks through various methods used to enter customer payments.</span></span> <span data-ttu-id="51123-105">このタスクでは、USMF というデモ会社を使用します。</span><span class="sxs-lookup"><span data-stu-id="51123-105">This task uses the USMF demo company.</span></span>
 

@@ -16,15 +16,15 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 8b3dc0beec17d80f7bbbcf234656a537a445789f
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: c423af5e78a37527fad2290708a2e6e36d971f26
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="sales-tax-assignment-and-overrides"></a><span data-ttu-id="80194-103">売上税の割り当ておよび上書き</span><span class="sxs-lookup"><span data-stu-id="80194-103">Sales tax assignment and overrides</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="80194-104">この手順では、小売チャンネルに売上税グループを割り当てる方法を示します。</span><span class="sxs-lookup"><span data-stu-id="80194-104">This procedure demonstrates how to assign sales tax groups to retail channels.</span></span> <span data-ttu-id="80194-105">また、新しい売上税の上書きを作成して、既存の売上税の上書きグループに割り当てる処理について説明します。</span><span class="sxs-lookup"><span data-stu-id="80194-105">It also walks through the process of creating a new sales tax override and assigning it to an existing sales tax override group.</span></span> <span data-ttu-id="80194-106">この手順では</span><span class="sxs-lookup"><span data-stu-id="80194-106">This procedure</span></span>
 

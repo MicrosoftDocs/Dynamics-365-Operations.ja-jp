@@ -16,15 +16,15 @@ ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d785922d1c6775d95ad5697eb6a872434e59c8e4
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 519d0b0ef8153283aa63bc7fa00b4f4b5283fbc1
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-a-free-text-invoice-template"></a><span data-ttu-id="b273f-103">自由書式の請求書テンプレートの作成</span><span class="sxs-lookup"><span data-stu-id="b273f-103">Create a free text invoice template</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="b273f-104">このレコードでは、USMF デモ会社を使用します。</span><span class="sxs-lookup"><span data-stu-id="b273f-104">This recording uses the USMF demo company.</span></span> <span data-ttu-id="b273f-105">記録は A/R の請求書の管理および処理を担当するユーザーを対象としています。</span><span class="sxs-lookup"><span data-stu-id="b273f-105">The recording is intended for the user who is responsible for managing and processing A/R invoices.</span></span>
 

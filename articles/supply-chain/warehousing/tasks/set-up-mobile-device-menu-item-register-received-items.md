@@ -17,15 +17,15 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: e17ac2b9f4eff06bdff7cdb210acdc05ed2ef4e5
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: e13f644f6d5a817cd3fe24de10f44433ce491f4d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="set-up-a-mobile-device-menu-item-to-register-received-items"></a><span data-ttu-id="d8e0d-103">入庫済品目を登録するためのモバイル デバイスのメニュー項目の設定</span><span class="sxs-lookup"><span data-stu-id="d8e0d-103">Set up a mobile device menu item to register received items</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="d8e0d-104">このタスクでは、モバイル デバイスのメニュー項目の設定を中心に説明します。</span><span class="sxs-lookup"><span data-stu-id="d8e0d-104">This task focuses on the setup of a mobile device menu item.</span></span> <span data-ttu-id="d8e0d-105">このメニュー項目は、発注書によって注文された品目の入庫の登録のために使用されます。</span><span class="sxs-lookup"><span data-stu-id="d8e0d-105">This menu item is used for registration of the receipt of items ordered via purchase orders.</span></span> 
 

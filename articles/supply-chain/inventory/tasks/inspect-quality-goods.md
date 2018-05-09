@@ -17,15 +17,15 @@ ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: ab536047340bdebecb7c8317e20208c87a4776f7
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 3afa22d99f1915015b49964d9e22a6df15ecf6f9
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="inspect-the-quality-of-goods"></a><span data-ttu-id="37e62-103">商品の品質の調査</span><span class="sxs-lookup"><span data-stu-id="37e62-103">Inspect the quality of goods</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="37e62-104">この手順では、品質指示を処理する方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="37e62-104">This procedure shows you how to process a quality order.</span></span> <span data-ttu-id="37e62-105">デモ データの会社 USMF でこのガイドを実行できます。</span><span class="sxs-lookup"><span data-stu-id="37e62-105">You can run this guide in demo data company USMF.</span></span> <span data-ttu-id="37e62-106">このサンプル手順を開始する前に、発注書「000016」を確認し、製品受領書を転記する必要があります。</span><span class="sxs-lookup"><span data-stu-id="37e62-106">Before you start this example procedure, you need to confirm purchase order “000016” and post a product receipt.</span></span> <span data-ttu-id="37e62-107">これにより、品質指示が自動的に作成されます。</span><span class="sxs-lookup"><span data-stu-id="37e62-107">This will automatically create a quality order.</span></span> <span data-ttu-id="37e62-108">品質検査は、通常、品質検査の担当者により実行されます。</span><span class="sxs-lookup"><span data-stu-id="37e62-108">Quality inspections are typically carried out by a quality clerk.</span></span>
 

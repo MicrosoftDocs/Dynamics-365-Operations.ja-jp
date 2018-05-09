@@ -19,16 +19,16 @@ ms.search.validFrom:
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: cf35406b43c1ec40a7c248b970559b65fcd8a6c6
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 1944053a2f52648f4e70d40a2b515c69d462ee26
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="set-up-workflows-for-expense"></a><span data-ttu-id="16ee9-103">経費のワークフローの設定</span><span class="sxs-lookup"><span data-stu-id="16ee9-103">Set up workflows for expense</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="16ee9-104"> 旅費経費のドキュメントを確認および承認するために使用されるワークフロー プロセスを設定できます。</span><span class="sxs-lookup"><span data-stu-id="16ee9-104">You can set up a workflow process that is used to review and approve travel and expense documents.</span></span> <span data-ttu-id="16ee9-105">ワークフローを定義できるドキュメントには、経費レポート、出張費要求、および現金前貸し要求が含まれます。</span><span class="sxs-lookup"><span data-stu-id="16ee9-105">The documents for which workflows can be defined include expense reports, travel requisitions, and cash advance requests.</span></span>
 

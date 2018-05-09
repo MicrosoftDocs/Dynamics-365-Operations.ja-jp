@@ -16,15 +16,15 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: fb718cd37a67947416bd03603cd9f3c0224638d7
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 240e9282f75fbcae4d81eb224f90d968e0a88d9e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="release-a-dimension-based-product-master"></a><span data-ttu-id="95200-103">分析コードベースの製品マスターのリリース</span><span class="sxs-lookup"><span data-stu-id="95200-103">Release a dimension-based product master</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="95200-104">この手順では、分析コード ベースのコンフィギュレーションに使用する製品マスターをリリースする方法を示します。</span><span class="sxs-lookup"><span data-stu-id="95200-104">This procedure shows how to release a product master, which will be used for the dimension-based configurations.</span></span> <span data-ttu-id="95200-105">この手順の作成に使用するデモ データの会社は USMF です。</span><span class="sxs-lookup"><span data-stu-id="95200-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="95200-106">事前に分析コード ベースのコンフィギュレーション テクノロジで製品マスターを作成しておく必要があります。</span><span class="sxs-lookup"><span data-stu-id="95200-106">It is a prerequisite that you have created a product master with the dimension-based configuration technology.</span></span> <span data-ttu-id="95200-107">これは、分析コードベースのコンフィギュレーションでの組み合わせの作成方法を説明する 8 つの手順の 2 番目です。</span><span class="sxs-lookup"><span data-stu-id="95200-107">This is the second procedure out of eight which explains how to build combinations for dimension-based configuration.</span></span>
 

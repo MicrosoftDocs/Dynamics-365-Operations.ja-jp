@@ -20,16 +20,16 @@ ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 380be3831929124e2e290d3d01721aca90c4c7cb
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: caa2fa00b4138093dc62cd562f61b0c5dcb2381a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="retail-statements"></a><span data-ttu-id="3781a-103">小売明細書</span><span class="sxs-lookup"><span data-stu-id="3781a-103">Retail statements</span></span>
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 <span data-ttu-id="3781a-104">Microsoft Dynamics 365 for Retail では、クラウド販売時点管理 (POS) または Modern POS (MPOS) で発生するトランザクションに対して、明細書の転記プロセスが使用されます。</span><span class="sxs-lookup"><span data-stu-id="3781a-104">In Microsoft Dynamics 365 for Retail, the statement posting process is used to account for the transactions that occur in Cloud point of sale (POS) or Modern POS (MPOS).</span></span> <span data-ttu-id="3781a-105">明細書の転記プロセスでは、配送スケジュールを使用して、一連の POS トランザクションを本社 (HQ) クライアントに引き渡します。</span><span class="sxs-lookup"><span data-stu-id="3781a-105">The statement posting process uses the distribution schedule to pull a set of POS transactions into the headquarters (HQ) client.</span></span> <span data-ttu-id="3781a-106">[**小売パラメーター**] および [**店舗**] ページで定義されているパラメーターは、個々のステートメントに引き込まれたトランザクションを選択するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="3781a-106">The parameters that are defined on the **Retail parameters** and **Stores** pages are used to select the transactions that are pulled into individual statements.</span></span>  
 

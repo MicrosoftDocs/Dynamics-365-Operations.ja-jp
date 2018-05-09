@@ -16,15 +16,15 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: b3d7bd868a9c8b60140f4093e36ab086ece954d6
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: d1422fabd28849ac5e892d7cf1ba0971eef81049
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="depreciate-and-accrue-the-interest-expense-for-asset-retirement-obligations-japan"></a><span data-ttu-id="49e83-103">資産除去責務の支払利子の減価償却および見越計上 (日本)</span><span class="sxs-lookup"><span data-stu-id="49e83-103">Depreciate and accrue the interest expense for asset retirement obligations (Japan)</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="49e83-104">日本では、資産除去責務 (ARO) の減価償却は固定資産と一緒に処理されます。</span><span class="sxs-lookup"><span data-stu-id="49e83-104">For Japan, the depreciation of the asset retirement obligations (ARO) is processed along with the fixed asset.</span></span> <span data-ttu-id="49e83-105">また、ARO の総額を認識するためには、支払利子を見越計上する必要があります。</span><span class="sxs-lookup"><span data-stu-id="49e83-105">In addition, interest expenses need to be accrued to recognize the full amount of the ARO.</span></span>
 

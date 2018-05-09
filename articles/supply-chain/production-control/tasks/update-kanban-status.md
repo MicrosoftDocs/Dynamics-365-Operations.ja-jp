@@ -17,15 +17,15 @@ ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 9f491558c38a48a47e1477c0140d8d1b5f9c8016
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 6ee16eaa8eec7d55538badd26b2f5d5959a156c8
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="update-kanban-status"></a><span data-ttu-id="6d1c8-103">かんばん状態の更新</span><span class="sxs-lookup"><span data-stu-id="6d1c8-103">Update kanban status</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="6d1c8-104">かんばんが誤って空けられるか、または受取済みのかんばんが空けられる必要のある場合、かんばんのステータスを更新する必要があります。</span><span class="sxs-lookup"><span data-stu-id="6d1c8-104">When a kanban is emptied by mistake or a received kanban needs to be emptied, you need to update kanban status.</span></span> <span data-ttu-id="6d1c8-105">この手順の作成に使用するデモ データの会社は USMF です。</span><span class="sxs-lookup"><span data-stu-id="6d1c8-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="6d1c8-106">この手順は、現場監督を対象としています。</span><span class="sxs-lookup"><span data-stu-id="6d1c8-106">This procedure is intended for the shop supervisor.</span></span>
 

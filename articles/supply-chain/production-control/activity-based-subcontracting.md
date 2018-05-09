@@ -20,16 +20,16 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d10f62126b54db362408c120fb215be44a18f676
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 9be74afb2187ca8638102f09ea79497e228df906
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="activity-based-subcontracting"></a><span data-ttu-id="f3aa3-103">活動ベースの外注</span><span class="sxs-lookup"><span data-stu-id="f3aa3-103">Activity-based subcontracting</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="f3aa3-104">このトピックでは、リーン生産の生産フローにおける外注活動の使用方法について詳しく説明します。</span><span class="sxs-lookup"><span data-stu-id="f3aa3-104">This topic describes, in detail, how to use subcontracted activities in a production flow for lean manufacturing.</span></span>
 

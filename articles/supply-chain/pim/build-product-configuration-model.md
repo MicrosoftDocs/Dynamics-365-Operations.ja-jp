@@ -20,16 +20,16 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 63c4147791a3b115f41638ab11a68c2dcf1c929a
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 78e296cd032b9e11071a2c52407ccec5ab1daa69
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="build-a-product-configuration-model"></a><span data-ttu-id="991a9-103">製品コンフィギュレーション モデルの構築</span><span class="sxs-lookup"><span data-stu-id="991a9-103">Build a product configuration model</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="991a9-104">特別な条件を満たすために製品をコンフィギュレーションする必要は、企業間および企業と顧客間の関係、両方において例外ではなくルールになってきました。</span><span class="sxs-lookup"><span data-stu-id="991a9-104">The need to configure products to meet special requirements is becoming the rule rather than the exception, in both business-to-business and business-to-consumer relationships.</span></span>
 

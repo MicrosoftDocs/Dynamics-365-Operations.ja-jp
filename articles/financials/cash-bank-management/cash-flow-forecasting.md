@@ -17,16 +17,16 @@ ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: c85cc9e5760f86489e1b2a27198e8c9cce25eda6
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: f00d62546ed6d47428ecc524566a4f5a170ff750
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="cash-flow-forecasting"></a><span data-ttu-id="00151-104">キャッシュ フロー予測</span><span class="sxs-lookup"><span data-stu-id="00151-104">Cash flow forecasting</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="00151-105">キャッシュ フロー予測ツールで将来のキャッシュ フローと必要通貨の分析を行い、会社が将来必要とする現金を見積もることができます。</span><span class="sxs-lookup"><span data-stu-id="00151-105">You can use the cash flow forecasting tools to analyze upcoming cash flow and currency requirements, so that you can estimate the company's future need for cash.</span></span> <span data-ttu-id="00151-106">キャッシュ フロー予測を入手するには、次の作業を完了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="00151-106">To obtain a forecast of the cash flow, you must complete the following tasks:</span></span>
 

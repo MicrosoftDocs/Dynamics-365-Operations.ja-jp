@@ -16,15 +16,15 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 28d2008f82b5f6b7952f68f1a6683f31e7eeed8b
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: cd45d0215709d708377ad9baf4216fd9d64716d5
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="pay-a-vendor-transaction-by-endorsing-a-customer-bill-of-exchange-japan"></a><span data-ttu-id="0832e-103">顧客の受取手形の裏書による仕入先トランザクションの支払 (日本)</span><span class="sxs-lookup"><span data-stu-id="0832e-103">Pay a vendor transaction by endorsing a customer bill of exchange (Japan)</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="0832e-104">このタスクは、顧客為替手形の裏書きによる仕入先トランザクションの支払について説明します。</span><span class="sxs-lookup"><span data-stu-id="0832e-104">This task walks you through paying a vendor transaction by endorsing a customer bill of exchange.</span></span>
 

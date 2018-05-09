@@ -20,16 +20,16 @@ ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 121b5e15912b9ecbf26f8831fdaef7637390cdd0
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 78a97e1ff893ecfb864052b79e56ad48efa5191c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="adjust-on-hand-inventory-cost-values"></a><span data-ttu-id="4ede4-103">手持在庫原価価値の調整</span><span class="sxs-lookup"><span data-stu-id="4ede4-103">Adjust on-hand inventory cost values</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="4ede4-104">[手持在庫の調整] ページを使用して、在庫決算プロセスの実行後に、手持在庫数量の原価価格を調整します。</span><span class="sxs-lookup"><span data-stu-id="4ede4-104">Use the Adjustment of on-hand inventory page to adjust the cost value of the on-hand inventory quantities after an inventory close process is run.</span></span>
 

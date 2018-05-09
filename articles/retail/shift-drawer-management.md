@@ -20,16 +20,16 @@ ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 4b39fafb7fb51ee26bd45fb28ce4b505a91de813
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 92819d121f0822078413e058fad8f10905bb8a47
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="shift-and-cash-drawer-management"></a><span data-ttu-id="f3e4e-104">シフトとキャッシュ ドロワーの管理</span><span class="sxs-lookup"><span data-stu-id="f3e4e-104">Shift and cash drawer management</span></span>
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 <span data-ttu-id="f3e4e-105">この記事では、小売販売時点管理 (POS) シフトにおける 2 つのタイプの設定および使用方法について説明します - 共有およびスタンドアロン。</span><span class="sxs-lookup"><span data-stu-id="f3e4e-105">This article explains how to set up and use the two types of retail point of sale (POS) shifts -  shared and stand-alone.</span></span> <span data-ttu-id="f3e4e-106">共有シフトは、複数の場所で複数のユーザーにより使用できますが、スタンドアロン シフトは、一度に 1 人の作業者しか使用できません。</span><span class="sxs-lookup"><span data-stu-id="f3e4e-106">Shared shifts can be used by multiple users in multiple places, whereas stand-alone shifts can be used by only one worker at a time.</span></span>
 

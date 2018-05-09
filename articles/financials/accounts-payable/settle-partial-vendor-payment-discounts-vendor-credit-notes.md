@@ -19,16 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: b541ed3151d63d095ff985c343f5b97bd57a0e14
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: a2a081236fa6a7cd0b828c9e204cea22799716ab
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="settle-a-partial-vendor-payment-that-has-discounts-on-vendor-credit-notes"></a><span data-ttu-id="2dec1-103">仕入先訂正票で割引がある一部の仕入先支払の決済</span><span class="sxs-lookup"><span data-stu-id="2dec1-103">Settle a partial vendor payment that has discounts on vendor credit notes</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="2dec1-104">この記事は、クレジット メモが請求書に対して決済されるシナリオについて説明します。</span><span class="sxs-lookup"><span data-stu-id="2dec1-104">This article walks you through a scenario where a credit memo is settled against an invoice.</span></span>
 

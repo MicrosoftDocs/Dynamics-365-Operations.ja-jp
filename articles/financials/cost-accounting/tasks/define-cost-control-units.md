@@ -16,15 +16,15 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 49cc951d58a1b956528cf5773af6e6dec9086d5d
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 773c6b5a1bb804b7878f9b48241097641238570a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="define-cost-control-units"></a><span data-ttu-id="d0006-103">原価管理単位の定義</span><span class="sxs-lookup"><span data-stu-id="d0006-103">Define cost control units</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="d0006-104">ここでは、原価会計元帳で原価管理単位を定義する方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="d0006-104">This procedure shows how to define cost control units in the cost accounting ledger.</span></span> <span data-ttu-id="d0006-105">原価オブジェクト分析コードを選択し、元帳で原価を管理します。</span><span class="sxs-lookup"><span data-stu-id="d0006-105">You select the cost object dimension for which you want to control costs in the ledger.</span></span> <span data-ttu-id="d0006-106">原価オブジェクト分析コード メンバーは、原価管理単位の原価オブジェクトに変換されます。</span><span class="sxs-lookup"><span data-stu-id="d0006-106">The cost object dimension members are transformed into cost objects of the cost control units.</span></span> <span data-ttu-id="d0006-107">この手順の作成に使用するデモ データの会社は USP2 です。</span><span class="sxs-lookup"><span data-stu-id="d0006-107">The demo data company used to create this procedure is USP2.</span></span>
 

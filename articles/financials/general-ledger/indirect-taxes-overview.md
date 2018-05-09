@@ -19,18 +19,18 @@ ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 3f353e7dfb2d984f88936d863e3490895703fb99
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 3767e63a545e420160f19620022203ecf8dcf686
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="sales-tax-overview"></a><span data-ttu-id="7d05e-104">消費税の概要</span><span class="sxs-lookup"><span data-stu-id="7d05e-104">Sales tax overview</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 <span data-ttu-id="7d05e-105">このトピックは、売上税システムの概要を示します。</span><span class="sxs-lookup"><span data-stu-id="7d05e-105">This topic provides an overview of the sales tax system.</span></span> <span data-ttu-id="7d05e-106">ここでは、売上税設定の要素と、それらがどのように連携して動作するのかを説明します。</span><span class="sxs-lookup"><span data-stu-id="7d05e-106">It explains the elements of the sales tax setup and how they work together.</span></span>
 

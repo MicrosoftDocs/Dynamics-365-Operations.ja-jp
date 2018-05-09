@@ -20,16 +20,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 8ac8ebede5c333835b0974843a69e70e51028117
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 05ac3b28c4d0806f71f1e0cb069c0d48137a4332
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="moving-average"></a><span data-ttu-id="9de5f-105">移動平均</span><span class="sxs-lookup"><span data-stu-id="9de5f-105">Moving average</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="9de5f-106">移動平均は、平均原則に基づく永久原価法であり、購買原価が変化するとき、在庫払出の原価は変化しません。</span><span class="sxs-lookup"><span data-stu-id="9de5f-106">Moving average is a perpetual costing method based on the average principle, where the costs on inventory issues do not change when the purchase cost does.</span></span> <span data-ttu-id="9de5f-107">差額は資本化され、比例計算に基づきます。</span><span class="sxs-lookup"><span data-stu-id="9de5f-107">The difference is capitalized and is based on a proportional calculation.</span></span> <span data-ttu-id="9de5f-108">残りの金額が経費となります。</span><span class="sxs-lookup"><span data-stu-id="9de5f-108">The amount that remains is expensed.</span></span> 
 

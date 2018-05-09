@@ -16,15 +16,15 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a6bfea86ee0d299c634783d869e4828bcf3a9d38
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 6e5405215e1efb43b68d3e3f5b7dde2b9c63277d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-a-model-mapping-configuration-er"></a><span data-ttu-id="e7ab2-103">モデル マッピング コンフィギュレーション (ER) を作成する</span><span class="sxs-lookup"><span data-stu-id="e7ab2-103">Create a model mapping configuration (ER)</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="e7ab2-104">新しい電子申告 (ER) モデル マッピング コンフィギュレーションをデザインして、効率的な集計計算の組み込み ER 機能を使用するには、この手順を使用します。</span><span class="sxs-lookup"><span data-stu-id="e7ab2-104">Use this procedure to design a new Electronic reporting (ER) model mapping configuration and use built-in ER functions for efficient aggregate calculations.</span></span> <span data-ttu-id="e7ab2-105">この手順では、サンプル会社 Litware、Inc. のコンフィギュレーションを作成します。</span><span class="sxs-lookup"><span data-stu-id="e7ab2-105">In this procedure, you will create a configuration for sample company, Litware, Inc.</span></span> 
 

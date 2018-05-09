@@ -16,15 +16,15 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a9cd5d6f27b2dffbe64a8691bf7db7951d2ceb12
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 913bc13695c302d8d69f7e48fbf9ec1d4fda0ea8
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="use-assemble-list-for-fixed-assets-japan"></a><span data-ttu-id="aca20-103">固定資産の組み立て一覧の使用 (日本)</span><span class="sxs-lookup"><span data-stu-id="aca20-103">Use assemble list for fixed assets (Japan)</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="aca20-104">日本では、在庫品目を固定資産に移転できます。</span><span class="sxs-lookup"><span data-stu-id="aca20-104">In Japan, you can transfer an inventory item to a fixed asset.</span></span> 
 

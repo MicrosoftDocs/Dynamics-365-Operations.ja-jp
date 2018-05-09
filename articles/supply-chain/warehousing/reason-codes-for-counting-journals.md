@@ -19,16 +19,16 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: fe01425fa236655731e6e0723f3a1e57c05035cc
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 0d787dac50374af11d878652103145c9ae9b6877
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="reason-codes-for-inventory-counting"></a><span data-ttu-id="e8871-103">在庫棚卸の理由コード</span><span class="sxs-lookup"><span data-stu-id="e8871-103">Reason codes for inventory counting</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="e8871-104">理由コードにより、棚卸プロセスおよびそのプロセス中に発生する任意の不一致の結果を分析できます。</span><span class="sxs-lookup"><span data-stu-id="e8871-104">Reason codes let you analyze the results of a counting process and any discrepancies that occur during that process.</span></span> <span data-ttu-id="e8871-105">パレットの破損または在庫サンプルに基づく在庫調整などの、棚卸を行うための理由を指定できます。</span><span class="sxs-lookup"><span data-stu-id="e8871-105">You can specify the reason for doing the count, such as a broken pallet or a stock adjustment that is based on inventory samples.</span></span>
 

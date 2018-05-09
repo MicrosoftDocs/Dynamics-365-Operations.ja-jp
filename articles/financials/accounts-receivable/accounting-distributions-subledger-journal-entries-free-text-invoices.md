@@ -19,16 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: ac321e34086e1861b3d8c539fb3ac5f360679d79
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: e413a5aaba59215790ed5c5460e8c95c47f18973
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="accounting-distributions-and-subledger-journal-entries-for-free-text-invoices"></a><span data-ttu-id="1bd32-104">自由書式の請求書の勘定配布と補助元帳仕訳</span><span class="sxs-lookup"><span data-stu-id="1bd32-104">Accounting distributions and subledger journal entries for free text invoices</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="1bd32-105">勘定配布は収益、税金、雑費などの金額がどのように自由書式の請求書に計上されるかを定義するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="1bd32-105">Accounting distributions are used to define how an amount will be accounted for, such as how the revenue, tax, or charges will be accounted for on a free text invoice.</span></span> <span data-ttu-id="1bd32-106">自由書式の請求書が仕訳されたときに計上する必要のあるすべての金額に勘定配布があります。</span><span class="sxs-lookup"><span data-stu-id="1bd32-106">Every amount that must be accounted for when the free text invoice is journalized will have one or more accounting distributions.</span></span>
 

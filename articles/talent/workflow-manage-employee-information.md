@@ -18,16 +18,16 @@ ms.author: shielas
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: ab84dd4e5ad87c2f3176265f81b0395cfb744315
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 0ffae206ae1956e5dc41487f04561ed2c48bd20b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="use-workflows-to-manage-employee-information"></a><span data-ttu-id="459c5-104">従業員情報を管理するためのワークフローの使用</span><span class="sxs-lookup"><span data-stu-id="459c5-104">Use workflows to manage employee information</span></span>
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 <span data-ttu-id="459c5-105">このトピックでは、従業員情報を管理するために人事管理のワークフロー機能を使用する方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="459c5-105">This topic explains how you can use the workflow capability for Human resources to manage employee information.</span></span> <span data-ttu-id="459c5-106">たとえば、ワークフローを職位と関連付け、従業員がレコードを変更した際に開始された承認ワークフローをコンフィギュレーションすることができます。</span><span class="sxs-lookup"><span data-stu-id="459c5-106">For example, you can associate a workflow with a position and configure an approval workflow that is started when employees change their record.</span></span>
 

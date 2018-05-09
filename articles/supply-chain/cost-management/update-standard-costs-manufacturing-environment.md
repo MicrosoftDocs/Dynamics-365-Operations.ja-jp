@@ -20,16 +20,16 @@ ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 8dceb6ee278d222106e7f44b0aeea55a7a1b3f22
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: d228623455a54bb4e7801c42843093ff71ce874b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="update-standard-costs-in-a-manufacturing-environment"></a><span data-ttu-id="998a0-103">製造環境での標準原価を更新</span><span class="sxs-lookup"><span data-stu-id="998a0-103">Update standard costs in a manufacturing environment</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="998a0-104">この記事は、製造環境での標準原価の更新方法についてのガイダンスを提供します。</span><span class="sxs-lookup"><span data-stu-id="998a0-104">This article provides guidance about how to update standard costs in a manufacturing environment.</span></span> 
 

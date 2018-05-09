@@ -16,15 +16,15 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a20da2772f38c147f938f3767e98331c10bd0430
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 24da2a7440d115a861cbd211b19f115a26f91d7e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-and-assign-an-equipment-group-japan"></a><span data-ttu-id="ff74a-103">設備グループの作成および割り当て (日本)</span><span class="sxs-lookup"><span data-stu-id="ff74a-103">Create and assign an equipment group (Japan)</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="ff74a-104">この手順では、設備のグループの作成方法と設備グループの固定資産へのコンフィギュレーション方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="ff74a-104">Use this procedure to learn how to create an equipment group and configure an equipment group it to a fixed asset.</span></span>
 

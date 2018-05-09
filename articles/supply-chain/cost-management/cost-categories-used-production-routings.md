@@ -20,16 +20,16 @@ ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 1bda8d9d656f1760061599d100ca4af9186742ea
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 1eb7da2ce5323fe0c06c57855435510f88f0601f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="cost-categories-used-in-production-routing"></a><span data-ttu-id="8fc08-103">生産工順で使用される原価カテゴリ</span><span class="sxs-lookup"><span data-stu-id="8fc08-103">Cost categories used in production routing</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="8fc08-104">この記事は、工順を使用する製造環境に適用される原価カテゴリについて説明します。</span><span class="sxs-lookup"><span data-stu-id="8fc08-104">This article provides information about cost categories that apply to manufacturing environments that use routing.</span></span>
 

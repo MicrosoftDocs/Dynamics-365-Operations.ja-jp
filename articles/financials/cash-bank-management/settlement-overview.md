@@ -19,16 +19,16 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d69eb1f9da44c02a96e0e7c353d700382f87c24b
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 54ad970f226a20228076f890e99bb6935aa4c5dd
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="settlement-overview"></a><span data-ttu-id="e549e-104">決済の概要</span><span class="sxs-lookup"><span data-stu-id="e549e-104">Settlement overview</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="e549e-105">この記事は、決済プロセスに関する一般情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="e549e-105">This article provides general information about the settlement process.</span></span> <span data-ttu-id="e549e-106">決済できるトランザクションのタイプ、トランザクションの決済時期と決済方法、および決済プロセスの結果について説明します。</span><span class="sxs-lookup"><span data-stu-id="e549e-106">It describes the types of transactions that can be settled, when and how transactions can be settled, and the results of the settlement process.</span></span>
 

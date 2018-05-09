@@ -20,16 +20,16 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 9be828055c33c1c69dcdc12bfa7a0cc2bca947d3
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 16af8c9e7eecbd2661d624584877207722b3ab53
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="registration-for-manufacturing-execution"></a><span data-ttu-id="2604d-103">製造実行での登録</span><span class="sxs-lookup"><span data-stu-id="2604d-103">Registration for manufacturing execution</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="2604d-104">このトピックでは、製造実行を設定および使用する際に理解しておく必要がある重要な概念および用語について説明します。</span><span class="sxs-lookup"><span data-stu-id="2604d-104">This topic describes key concepts and terms that you need to understand to configure and use manufacturing execution.</span></span> 
 

@@ -16,15 +16,15 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 5839962a5a3be5d7836c74fc8476ceafa414d48c
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 30d91d2ffab74250b3a8a46d7b7c5441a94d8dfd
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="set-up-permissions-for-ordering-products-on-behalf-of-someone-else"></a><span data-ttu-id="2e6b5-103">誰かの代わりに製品を注文するためのアクセス許可の設定</span><span class="sxs-lookup"><span data-stu-id="2e6b5-103">Set up permissions for ordering products on behalf of someone else</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="2e6b5-104">この手順では、他の作業者に代わって購買要求を作成するためのアクセス許可を作業者に付与する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="2e6b5-104">This procedure shows how to grant workers permission to prepare purchase requisitions on behalf of other workers.</span></span> <span data-ttu-id="2e6b5-105">つまり、購買要求「作成者」が他の「要求者」の要求を作成できます。</span><span class="sxs-lookup"><span data-stu-id="2e6b5-105">In other words, a purchase requisition “preparer” can create a requisition for another “requester.”</span></span> <span data-ttu-id="2e6b5-106">この手順では、違う法人または作業単位で品目とサービスを注文する作業者のアクセス許可を付与する方法も示します。</span><span class="sxs-lookup"><span data-stu-id="2e6b5-106">The procedure also shows how to grant a worker permission to order items and services in different legal entities or operating units.</span></span> <span data-ttu-id="2e6b5-107">通常、これらのタスクは、購買マネージャーが実行します。</span><span class="sxs-lookup"><span data-stu-id="2e6b5-107">Typically, these tasks are performed by a purchasing manager.</span></span> <span data-ttu-id="2e6b5-108">USMF デモ会社または独自のデータでこの手順を使うことができます。</span><span class="sxs-lookup"><span data-stu-id="2e6b5-108">You can use this procedure either on data for the USMF demo company or on your own data.</span></span>
 

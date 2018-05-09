@@ -16,15 +16,15 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: e0da2c4e308ef377b7657f0905fec56e47f27b99
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: a9ee95b178b3e304749b5fda2cefc6ead8be953d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="enter-applicant-and-application-data-manually"></a><span data-ttu-id="937dd-103">申請者およびアプリケーション データの手動入力</span><span class="sxs-lookup"><span data-stu-id="937dd-103">Enter applicant and application data manually</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="937dd-104">この手順では、手動で申請者とその申請に関する情報を管理する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="937dd-104">This procedure shows how to manually maintain information about applicants and their application.</span></span>   <span data-ttu-id="937dd-105">申請者についての個人情報、面接の日時、能力、宿舎施設のリクエストを入力および管理できます。</span><span class="sxs-lookup"><span data-stu-id="937dd-105">You can enter and maintain personal information, interview dates and times, references, competencies, and accommodation requests for applicants.</span></span> <span data-ttu-id="937dd-106">また、雇用申請者の申請状態を更新し、申請者とやり取りを行うための手紙または電子メールを作成できます。</span><span class="sxs-lookup"><span data-stu-id="937dd-106">You can also update the status of applicants’ applications for employment and create letters or email messages to communicate with applicants.</span></span> <span data-ttu-id="937dd-107">申請者レコードを作成すると、その申請者の人物のレコードはグローバル アドレス帳で作成されます。</span><span class="sxs-lookup"><span data-stu-id="937dd-107">When you create an applicant record, a person record for that applicant is created in the global address book.</span></span>       <span data-ttu-id="937dd-108">この手順の作成に使用するデモ データの会社は USMF です。</span><span class="sxs-lookup"><span data-stu-id="937dd-108">The demo data company used to create this procedure is USMF.</span></span>
 

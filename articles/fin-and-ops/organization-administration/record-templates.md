@@ -18,16 +18,16 @@ ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 298f34871265dbf5c437dcdc6c05270b4e2a9a9d
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 2f2c7f302a01593e7327dfe0510fadb3886bddd7
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="record-templates"></a><span data-ttu-id="01147-103">レコード テンプレート</span><span class="sxs-lookup"><span data-stu-id="01147-103">Record templates</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="01147-104">この記事は、レコード テンプレートの概念を紹介し、情報を共有するレコードを作成して使用する方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="01147-104">This article introduces the concept of record templates and explains how they can be used to create records that share information.</span></span>
 

@@ -17,15 +17,15 @@ ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: adecf9b2ea29abaee378f1c02c64551c3aeede6d
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: e73295698a17b7500db40820dd9603855810ca3a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-and-process-a-conformance"></a><span data-ttu-id="03845-103">不適合の作成および処理</span><span class="sxs-lookup"><span data-stu-id="03845-103">Create and process a conformance</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="03845-104">この手順を使用して、既存の品質指示に基づき不適合管理を実行します。</span><span class="sxs-lookup"><span data-stu-id="03845-104">Use this procedure to perform nonconformance management, based on an existing quality order.</span></span> <span data-ttu-id="03845-105">USMF のデモの会社でこの記録を実行することができ、提案された値を使用することができます。</span><span class="sxs-lookup"><span data-stu-id="03845-105">You can run this recording in the USMF demo company and can use the suggested values.</span></span> <span data-ttu-id="03845-106">通常この手順は品質担当者が実施します。</span><span class="sxs-lookup"><span data-stu-id="03845-106">Typically, this procedure is performed by a quality clerk.</span></span>  <span data-ttu-id="03845-107">前提条件として、「商品の品質の調査」タスクの記録を実行します。</span><span class="sxs-lookup"><span data-stu-id="03845-107">As a prerequisite, run the “Inspect the quality of goods” task recording.</span></span> <span data-ttu-id="03845-108">不適合の承認を処理する場合、タスクの記録を実行するユーザーには、[ユーザー] ページで「名前」の値が割り当てられている必要があります。</span><span class="sxs-lookup"><span data-stu-id="03845-108">To process the approval of a nonconformance, the user who runs the task recording must have a “Name” value assigned on the Users page.</span></span> <span data-ttu-id="03845-109">ドキュメントのメモを使用するには、ユーザー オプションで [ドキュメントの処理] も有効化されている必要があります。</span><span class="sxs-lookup"><span data-stu-id="03845-109">To use the document notes, the user must also have Document handling activated in the user options.</span></span>
 

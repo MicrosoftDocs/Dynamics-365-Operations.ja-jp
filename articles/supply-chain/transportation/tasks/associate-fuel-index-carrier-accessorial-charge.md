@@ -17,15 +17,15 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 101ebe4a2e177a5702a162297e1820598e56a6e5
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: b0336bcaa7062a9b24079d8491ce426041751ccf
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="associate-a-fuel-index-with-a-carrier-as-an-accessorial-charge"></a><span data-ttu-id="7764e-103">付帯サービス請求金額としての燃料インデックスの配送業者への関連付け</span><span class="sxs-lookup"><span data-stu-id="7764e-103">Associate a fuel index with a carrier as an accessorial charge</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="7764e-104">このガイドでは、付帯サービスの割り当て、配送業者付帯サービス請求金額、燃料割増金の付帯サービス マスターの作成方法、および配送業者の燃料インデックスの配送業者への割り当て方法を示します。</span><span class="sxs-lookup"><span data-stu-id="7764e-104">This guide shows how to create an accessorial assignment, carrier accessorial charge, accessorial master for fuel surcharge, and associate a carrier fuel index with a carrier.</span></span> <span data-ttu-id="7764e-105">このガイドを実行する前に、配送業者の燃料インデックスを設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="7764e-105">You need to have set up a carrier fuel index before you run this guide.</span></span> <span data-ttu-id="7764e-106">これを行うには、「配送業者の燃料インデックスの設定」ガイドを使用できます。</span><span class="sxs-lookup"><span data-stu-id="7764e-106">You can use the “Set up a carrier fuel index” guide to do this.</span></span> <span data-ttu-id="7764e-107">これらの設定タスクは、通常、物流マネージャーが実行します。</span><span class="sxs-lookup"><span data-stu-id="7764e-107">These setup tasks are typically done by a Logistics manager.</span></span> <span data-ttu-id="7764e-108">この手順の作成に使用されたデモ データの会社は、USMF です。</span><span class="sxs-lookup"><span data-stu-id="7764e-108">The demo data used to create this procedure is USMF.</span></span>
 

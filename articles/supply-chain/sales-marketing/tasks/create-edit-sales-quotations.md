@@ -16,15 +16,15 @@ ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: bdb4758c80cb0212f0b58595c99b8fa2f715fecf
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 84b67bc0216ca5af61b4d93260ca392a8ffd7209
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-and-edit-sales-quotations"></a><span data-ttu-id="ebba3-103">販売見積の作成および編集</span><span class="sxs-lookup"><span data-stu-id="ebba3-103">Create and edit sales quotations</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="ebba3-104">この手順は、販売見積を作成および更新する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="ebba3-104">This procedure demonstrates how to create and update a sales quotation.</span></span> <span data-ttu-id="ebba3-105">この手順は、独自のデータで、またはデモ データの会社 USMF のデータで実行できます。</span><span class="sxs-lookup"><span data-stu-id="ebba3-105">You can run this procedure on your own data or in demo data company USMF.</span></span>
 

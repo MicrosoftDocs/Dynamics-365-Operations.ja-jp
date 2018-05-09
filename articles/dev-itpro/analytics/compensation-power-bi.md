@@ -17,16 +17,16 @@ ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: fa3f93dae69040c77ff28484a2bea4d1503a616d
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 3cbe43dc7c913971f679e4e82ebaa5bcfe751685
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="compensation-power-bi-content"></a><span data-ttu-id="5eb14-104">報酬 Power BI コンテンツ</span><span class="sxs-lookup"><span data-stu-id="5eb14-104">Compensation Power BI content</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="5eb14-105">このトピックでは、**報酬** Microsoft Power BI コンテンツについて説明します。</span><span class="sxs-lookup"><span data-stu-id="5eb14-105">This topic describes the **Compensation** Microsoft Power BI content.</span></span> <span data-ttu-id="5eb14-106">レポートにアクセスする方法を説明し、コンテンツを作成するために使用したデータ モデルおよびエンティティについての情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="5eb14-106">It explains how to access the reports, and provides information about the data model and entities that were used to build the content.</span></span>
 

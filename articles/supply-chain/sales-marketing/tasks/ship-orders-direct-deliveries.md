@@ -16,15 +16,15 @@ ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 8691eea1f339902aa74978fa8f27151754cb3e09
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: ff0bfb1de03c4952312a5e876941a0b6858a5f65
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="ship-orders-as-direct-deliveries"></a><span data-ttu-id="9a1de-103">直納として注文を出荷</span><span class="sxs-lookup"><span data-stu-id="9a1de-103">Ship orders as direct deliveries</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="9a1de-104">この手順は、販売注文の直納を作成する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="9a1de-104">This procedure demonstrates how to create a direct delivery for a sales order.</span></span> <span data-ttu-id="9a1de-105">商品を自社倉庫へまず出荷する代わりに、仕入先から顧客へ直接出荷する場合、直納を使用します。</span><span class="sxs-lookup"><span data-stu-id="9a1de-105">You use direct delivery when you want to ship goods to the customer directly from your vendor, instead of shipping them to your own warehouse first.</span></span> <span data-ttu-id="9a1de-106">この手順は、デモ データの会社 USMF で、または独自のデータで実行できます。</span><span class="sxs-lookup"><span data-stu-id="9a1de-106">You can run this procedure in demo data company USMF or on your own data.</span></span> <span data-ttu-id="9a1de-107">2 番目のサブタスクの「ワークベンチから直納を作成」を正常に完了するため、販売注文で選択した品目に関して、[リリース済製品マスター] の [購買クイックタブ] で既定の [仕入れ先] が指定されていることを確認してください。</span><span class="sxs-lookup"><span data-stu-id="9a1de-107">To successfully complete the second sub-task "Create direct deliveries from the workbench", make sure that the item that you choose on the sales order has a default Vendor specified on the Purchase FastTab of the Released product master.</span></span>
 

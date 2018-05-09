@@ -17,15 +17,15 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: fdc9567040a2ea4e50325c98a2da19da039586bb
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: b1ccaeffde4c288667fe797d07e08b5a346b4716
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="enter-project-timesheets"></a><span data-ttu-id="c0ccf-103">プロジェクト タイムシートの入力</span><span class="sxs-lookup"><span data-stu-id="c0ccf-103">Enter project timesheets</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="c0ccf-104">この手順で、空のタイム シートのフォームを使用して、タイム シートを作成できます。</span><span class="sxs-lookup"><span data-stu-id="c0ccf-104">This procedure lets you create a timesheet by using an empty timesheet form.</span></span> <span data-ttu-id="c0ccf-105">新しいタイムシートは、以前のタイム シート、またはプロジェクトおよび [お気に入り] ページの活動の割り当てからの情報に基づくこともできます。</span><span class="sxs-lookup"><span data-stu-id="c0ccf-105">The new timesheet can be based on information from a previous timesheet, or from project and activity assignments in the My favorites page.</span></span> <span data-ttu-id="c0ccf-106">既定では、[すべてのタイムシート] リスト ページに現在のタイム シートをすべて表示します。</span><span class="sxs-lookup"><span data-stu-id="c0ccf-106">By default, the All timesheets list page displays all your timesheets for the current period.</span></span> <span data-ttu-id="c0ccf-107">期間またはプロジェクトでタイムシートの一覧をフィルター処理、または他の作業者に代わって作成されたタイム シートを表示する場合にも、[自分のタイムシート] ページの [表示] フィールドのドロップダウン リストを使用できます。</span><span class="sxs-lookup"><span data-stu-id="c0ccf-107">You can use the drop-down list for the Show field in the My timesheets page to filter the timesheet list by time period or project, or to view timesheets that were created on behalf of other workers.</span></span> <span data-ttu-id="c0ccf-108">この手順の作成に使用するデモ データの会社は USSI です。</span><span class="sxs-lookup"><span data-stu-id="c0ccf-108">The demo data company used to create this procedure is USSI.</span></span> <span data-ttu-id="c0ccf-109">この手順を開始するには、[プロジェクト管理] および [会計] > [タイムシート] > [自分のタイムシート] に移動します。</span><span class="sxs-lookup"><span data-stu-id="c0ccf-109">To begin this procedure, go to Project management and accounting > Timesheets >My timesheets</span></span>
 

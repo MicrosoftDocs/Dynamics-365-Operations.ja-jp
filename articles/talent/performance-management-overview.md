@@ -18,16 +18,16 @@ ms.author: mfalkner
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d9d889b7a64cff763c31b4375fd0e1553a4beeeb
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: afdbef901c6deaad42ae89a597180d30bbc4fb28
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="performance-management-overview"></a><span data-ttu-id="0ea8a-104">業績管理の概要</span><span class="sxs-lookup"><span data-stu-id="0ea8a-104">Performance management overview</span></span>
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 <span data-ttu-id="0ea8a-105">業績管理プロセスにより、従業員は管理者と業績を文書化し、話し合うことができます。</span><span class="sxs-lookup"><span data-stu-id="0ea8a-105">The performance management process lets employees document and discuss their performance with their manager.</span></span> <span data-ttu-id="0ea8a-106">次に、管理者は、従業員にフィードバックおよびガイダンスを提供できます。</span><span class="sxs-lookup"><span data-stu-id="0ea8a-106">In turn, managers can then provide feedback and guidance to the employees.</span></span>  
 

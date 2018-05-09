@@ -16,15 +16,15 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: cb9543984a2e02a72298b27804ad80cc43057270
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: bed0cec30ee6f69818bd421a7349bf31ba378314
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="maintain-fixed-asset-master-data-files-for-deductible-expenses-japan"></a><span data-ttu-id="8514b-103">損金の固定資産マスター データ ファイルの保守 (日本)</span><span class="sxs-lookup"><span data-stu-id="8514b-103">Maintain fixed asset master data files for deductible expenses (Japan)</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="8514b-104">このタスクでは、損金の固定資産マスター データの保守を行います。</span><span class="sxs-lookup"><span data-stu-id="8514b-104">This task walks you through maintaining fixed asset master data files for deductible expenses.</span></span>
 

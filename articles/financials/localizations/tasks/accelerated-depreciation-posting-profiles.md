@@ -16,15 +16,15 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 8e83744c886cac71f10ec67b7f55673506710c30
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 43cf4fd0ed44496d7190c822434d40d01adfdc5f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="configure-accelerated-depreciation-parameters-and-posting-profiles-japan"></a><span data-ttu-id="950c0-103">増加償却パラメーターおよび転記プロファイルのコンフィギュレーション (日本)</span><span class="sxs-lookup"><span data-stu-id="950c0-103">Configure accelerated depreciation parameters and posting profiles (Japan)</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="950c0-104">日本では、加速償却は [レート係数]、[レートしきい値] および [計算方法] に基づいて計算されます。</span><span class="sxs-lookup"><span data-stu-id="950c0-104">For Japan, the accelerated depreciation is calculated based on Rate factor, Rate threshold and Calculation method.</span></span> <span data-ttu-id="950c0-105">これらのパラメーターは、加速償却ドキュメントで提供されています。</span><span class="sxs-lookup"><span data-stu-id="950c0-105">These parameters are available on the accelerated depreciation document.</span></span> <span data-ttu-id="950c0-106">これらを固定資産パラメーターでコンフィギュレーションすることで、加速償却ドキュメントに対する既定値が提供されます。</span><span class="sxs-lookup"><span data-stu-id="950c0-106">Configuring them on the fixed asset parameter can provide default values for the accelerated depreciation documents.</span></span> 
 

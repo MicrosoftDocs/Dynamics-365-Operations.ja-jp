@@ -19,16 +19,16 @@ ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 11e7aa072d4c99bd33cfea7114032b7968d8d024
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 10db562a74b13aa968aca705bb02b061c9eb64c5
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="action-messages"></a><span data-ttu-id="c2f08-103">アクション メッセージ</span><span class="sxs-lookup"><span data-stu-id="c2f08-103">Action messages</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="c2f08-104">アクション メッセージは、既存の計画オーダーまたは確定オーダーの変更についてシステムで生成される提案です。</span><span class="sxs-lookup"><span data-stu-id="c2f08-104">An action message is a system-generated suggestion to change an existing planned or firmed order.</span></span>
 

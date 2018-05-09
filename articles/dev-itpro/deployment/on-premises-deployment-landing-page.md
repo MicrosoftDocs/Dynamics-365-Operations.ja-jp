@@ -18,15 +18,15 @@ ms.author: kfend
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: de36746bce4aa27d23aa45f2d08cb6c2d527ea90
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 23c1953b690d8938468c3cdb1deb5da920f16758
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="on-premises-deployment-home-page"></a><span data-ttu-id="cc75f-103">オンプレミス配置のホーム ページ</span><span class="sxs-lookup"><span data-stu-id="cc75f-103">On-premises deployment home page</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="cc75f-104">Microsoft Dynamics 365 for Finance and Operations (オンプレミス) を配置することができます。</span><span class="sxs-lookup"><span data-stu-id="cc75f-104">You can deploy Microsoft Dynamics 365 for Finance and Operations (on-premises).</span></span> <span data-ttu-id="cc75f-105">オンプレミスの配置タイプを選択すると、システム要件、ハードウェアのサイジング、および機能がクラウド展開と異なります。</span><span class="sxs-lookup"><span data-stu-id="cc75f-105">When you choose an on-premises deployment type, the system requirements, hardware sizing, and functionality differ from a cloud deployment.</span></span> <span data-ttu-id="cc75f-106">このトピックでは、オンプレミス展開に固有の情報を含むコンテンツへのリンクを提供します。</span><span class="sxs-lookup"><span data-stu-id="cc75f-106">This topic provides links to content that contains information specific to on-premises deployments.</span></span>
 

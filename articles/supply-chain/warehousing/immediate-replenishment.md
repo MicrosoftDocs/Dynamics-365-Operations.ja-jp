@@ -19,16 +19,16 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a11a26df85647aa36cd30c42f81be4ec2af4409b
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 1f24ffbba0c28b241de66f484546844bc72b90c9
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="immediate-replenishment"></a><span data-ttu-id="eb56a-103">即時補充</span><span class="sxs-lookup"><span data-stu-id="eb56a-103">Immediate replenishment</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="eb56a-104">場所ディレクティブの明細行が在庫の配賦に失敗した直後に、在庫を補充するため、即時補充ができるようになります。</span><span class="sxs-lookup"><span data-stu-id="eb56a-104">Immediate replenishment lets you replenish inventory immediately after a location directive line fails to allocate inventory.</span></span> <span data-ttu-id="eb56a-105">補充は、場所ディレクティブの設定における単一明細行に基づいています。</span><span class="sxs-lookup"><span data-stu-id="eb56a-105">The replenishment is based on a single line in the setup of the location directive.</span></span> <span data-ttu-id="eb56a-106">その明細行で指定されている測定単位の在庫の手持がない場合、その測定単位の補充がすぐに発生します。</span><span class="sxs-lookup"><span data-stu-id="eb56a-106">If inventory isn't on hand in the unit of measure that is specified by that line, replenishment of that unit of measure occurs immediately.</span></span>
 

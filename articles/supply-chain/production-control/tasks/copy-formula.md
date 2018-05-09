@@ -17,15 +17,15 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: f1b04e48c4f17260255ba371c9b14cf5d67a28c2
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 61985d18f03a4afd8d94b23486cc462d2a868493
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="copy-a-formula"></a><span data-ttu-id="a5c12-103">フォーミュラのコピー</span><span class="sxs-lookup"><span data-stu-id="a5c12-103">Copy a formula</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="a5c12-104">多少の違いはあっても、既存のフォーミュラと同じ構成要素を含んでいるフォーミュラを作成することに焦点を当てています。</span><span class="sxs-lookup"><span data-stu-id="a5c12-104">This procedure focuses on creating a formula that includes the same ingredients as an existing formula, but with minor differences.</span></span> <span data-ttu-id="a5c12-105">式明細行を作成するため、[コピー] 機能を使用して必要な構成要素のほとんどを持つ既存の式をコピーできます。</span><span class="sxs-lookup"><span data-stu-id="a5c12-105">To create the formula lines, you can use the Copy function to copy an existing formula that has most of the ingredients that you need.</span></span> <span data-ttu-id="a5c12-106">次に、新しいバージョンの個々の行に必要な変更を加えることができます。</span><span class="sxs-lookup"><span data-stu-id="a5c12-106">You can then make any necessary changes to the individual lines in the new version.</span></span> <span data-ttu-id="a5c12-107">[コピー] 機能を使用すると、ほぼ同一である複数の式を作成する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="a5c12-107">By using the Copy function, you do not have to create multiple formulas that are almost identical.</span></span> <span data-ttu-id="a5c12-108">このタスクの作成に使用するデモ データの会社は USP2 です。</span><span class="sxs-lookup"><span data-stu-id="a5c12-108">The demo data company used to create this task is USP2.</span></span>
 

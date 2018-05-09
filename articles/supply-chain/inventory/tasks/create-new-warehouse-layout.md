@@ -17,15 +17,15 @@ ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 4a9c75bf84bf2bf8d92be23573cc0477209c2378
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 136ba30e8658dc1fe80124a74c773ce0e56ec310
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-a-new-warehouse-layout"></a><span data-ttu-id="4bf7e-103">新しい倉庫レイアウトの作成</span><span class="sxs-lookup"><span data-stu-id="4bf7e-103">Create a new warehouse layout</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="4bf7e-104">この手順は、倉庫での場所に関する情報を設定する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="4bf7e-104">This procedure shows you how to set up information about the locations in a warehouse.</span></span> <span data-ttu-id="4bf7e-105">これは、[在庫管理] モジュールで「基本倉庫」を使用して作成された倉庫のみが対象で、[倉庫管理] モジュールで作成された倉庫には適用されません。</span><span class="sxs-lookup"><span data-stu-id="4bf7e-105">This applies only to warehouses created using "basic warehousing" in the Inventory management module, not to warehouses created in the Warehouse management module.</span></span> <span data-ttu-id="4bf7e-106">デモ データの会社 USMF のこの手順を使うか、または独自のデータを使うことができます。</span><span class="sxs-lookup"><span data-stu-id="4bf7e-106">You can use this procedure in demo data company USMF, or on your own data.</span></span>
 

@@ -16,15 +16,15 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 7fd7a839f5b9b3a80ad944a66cc75232a336c48f
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: df5d4b3d19dd2765c5bd60036970cdd9b4fa6567
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="search-for-vendors"></a><span data-ttu-id="660dc-103">仕入先の検索</span><span class="sxs-lookup"><span data-stu-id="660dc-103">Search for vendors</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="660dc-104">特定の基準に基づく仕入先の検索方法を習得します。</span><span class="sxs-lookup"><span data-stu-id="660dc-104">Learn how to search for vendors based on specific criteria.</span></span> <span data-ttu-id="660dc-105">この例では、特定の調達カテゴリに対して承認されていて、特定の国に基本住所をもっている仕入先の検索方法を示します。</span><span class="sxs-lookup"><span data-stu-id="660dc-105">This example shows you how to search for vendors that are approved for a particular procurement category and have their primary address in a specific country.</span></span> <span data-ttu-id="660dc-106">この手順は、デモ データの会社 USMF で、または独自のデータで実行できます。</span><span class="sxs-lookup"><span data-stu-id="660dc-106">You can run this procedure in demo data company USMF, or on your own data.</span></span> <span data-ttu-id="660dc-107">通常、このタスクを実行するのは、調達担当者です。</span><span class="sxs-lookup"><span data-stu-id="660dc-107">This task would usually be carried out by a procurement professional.</span></span>
 

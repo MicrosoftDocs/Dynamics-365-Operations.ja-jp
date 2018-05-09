@@ -17,15 +17,15 @@ ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 191f48bc5b56bef9fe08c266db8cd49ce7cbc620
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 75f76b4f8780160e8fd7528e4230ec6cd8743491
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="retail-price-adjustments"></a><span data-ttu-id="eac8f-103">小売価格調整の管理</span><span class="sxs-lookup"><span data-stu-id="eac8f-103">Retail price adjustments</span></span>
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 <span data-ttu-id="eac8f-104">この手順では、小売価格調整の作成を説明します。</span><span class="sxs-lookup"><span data-stu-id="eac8f-104">This procedure will walk through creating a retail price adjustment.</span></span> <span data-ttu-id="eac8f-105">小売の価格調整では、品目の販売価格を直接設定できます。また、基準販売価格、あるいは売買契約の販売価格を変更できます。</span><span class="sxs-lookup"><span data-stu-id="eac8f-105">A retail price adjustment can set an item's sale price directly, or modify its base sale price or trade agreement sale price.</span></span> <span data-ttu-id="eac8f-106">この手順では、デモ データの会社 USRT を使用します。</span><span class="sxs-lookup"><span data-stu-id="eac8f-106">This procedure uses the USRT demo data company.</span></span>
 

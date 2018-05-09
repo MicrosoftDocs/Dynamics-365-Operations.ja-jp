@@ -20,16 +20,16 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d9df8682769254f44cc23675fe2237080b447925
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 99f66e975cf5875f357af095ead66529b9784eff
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="call-center-catalogs"></a><span data-ttu-id="57184-103">コール センターのカタログ</span><span class="sxs-lookup"><span data-stu-id="57184-103">Call center catalogs</span></span>
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 <span data-ttu-id="57184-104">この記事は、Microsoft Dynamics 365 for Retail でのカタログのコール センター固有の機能について説明します。</span><span class="sxs-lookup"><span data-stu-id="57184-104">This article describes the call center–specific functionality for catalogs in Microsoft Dynamics 365 for Retail.</span></span>
 

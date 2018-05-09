@@ -16,15 +16,15 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 97fcaa4505a000e8c26322e40ef829e68d7bf4d0
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 6f0d99cead5d6085b9a61d30eab274047a9ea3f7
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="dispose-of-a-fixed-asset-with-reduction-entry-japan"></a><span data-ttu-id="828af-103">圧縮記帳のある固定資産の処分 (日本)</span><span class="sxs-lookup"><span data-stu-id="828af-103">Dispose of a fixed asset with reduction entry (Japan)</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="828af-104">このタスクでは、圧縮記帳のある固定資産の日本での処理方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="828af-104">Use this task to learn how to dispose of a fixed asset with reduction entry for Japan.</span></span>
 

@@ -19,16 +19,16 @@ ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: f3defa29581c6c90994a673bd73d96613101a391
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: cc01f7d2cec25d754263e361e5de9ad1499d9523
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="general-ledger"></a><span data-ttu-id="5491d-103">一般会計</span><span class="sxs-lookup"><span data-stu-id="5491d-103">General ledger</span></span> 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="5491d-104">法人の財務レコードを定義および管理するには、一般会計を使用します。</span><span class="sxs-lookup"><span data-stu-id="5491d-104">Use General ledger to define and manage the legal entity’s financial records.</span></span> <span data-ttu-id="5491d-105">一般会計では借方と貸方のエントリ登録です。</span><span class="sxs-lookup"><span data-stu-id="5491d-105">The general ledger is a register of debit and credit entries.</span></span> <span data-ttu-id="5491d-106">これらのエントリは、勘定科目表に表示される勘定を使用して分類されます。</span><span class="sxs-lookup"><span data-stu-id="5491d-106">These entries are classified using the accounts that are listed in a chart of accounts.</span></span> 
 

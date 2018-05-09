@@ -17,15 +17,15 @@ ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: c399ad1a412d334fa3f3d06a7d37b41b168779ad
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: f59df16d58c4dde68e1077b606665a1f178e5ae3
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="activate-a-production-flow-version"></a><span data-ttu-id="e1dc1-103">生産フロー バージョンの有効化</span><span class="sxs-lookup"><span data-stu-id="e1dc1-103">Activate a production flow version</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="e1dc1-104">かんばん作業が作成され、活動が生産フロー バージョンで処理される前に、バージョンを有効にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="e1dc1-104">Before kanban jobs can be created and activities can be processed for a production flow version, you should activate the version.</span></span> <span data-ttu-id="e1dc1-105">ベスト プラクティスとして、有効開始日時の有効期限が切れる前にバージョンを有効にします。</span><span class="sxs-lookup"><span data-stu-id="e1dc1-105">As a best practice, activate the version before its effective start date and time expire.</span></span> <span data-ttu-id="e1dc1-106">このタスクを完了するには、バージョンを有効にするためのドラフト ステータスを持つ生産フロー バージョンが必要です。</span><span class="sxs-lookup"><span data-stu-id="e1dc1-106">To complete this task, you must have a production flow version that has the Draft status in order to activate the version.</span></span> 
 

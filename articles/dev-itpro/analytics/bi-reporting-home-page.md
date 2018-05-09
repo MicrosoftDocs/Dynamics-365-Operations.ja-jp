@@ -18,16 +18,16 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 585ea4098d059fabd41dec935e454fa6a675b151
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 2c395c4781ce502a2cd9ed4d1e5a2fbd4563e474
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="intelligence"></a><span data-ttu-id="5f92a-103">インテリジェンス</span><span class="sxs-lookup"><span data-stu-id="5f92a-103">Intelligence</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="5f92a-104">このトピックでは、Microsoft Dynamics 365 for Finance and Operations で使用可能なビジネス インテリジェンス (BI) およびレポート ツールの詳細を学ぶためのリソースを紹介します。</span><span class="sxs-lookup"><span data-stu-id="5f92a-104">This topic points you to resources that you can use to learn more about the business intelligence (BI) and reporting tools that are available in Microsoft Dynamics 365 for Finance and Operations.</span></span>
 

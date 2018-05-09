@@ -16,15 +16,15 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: bb7022ef4049c3d914c5d07e52ce7fee359c25a9
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 407a9f2302afa5d7180fb99283d9e4b5df0cfcd2
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="configure-consolidated-invoice-parameters-and-setup-for-accounts-payable-japan"></a><span data-ttu-id="bef29-103">月次締め請求書のパラメーターのコンフィギュレーションと買掛金勘定の設定 (日本)</span><span class="sxs-lookup"><span data-stu-id="bef29-103">Configure consolidated invoice parameters and setup for accounts payable (Japan)</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="bef29-104">日本では、日本の商習慣に合わせて月次締め請求書を有効にできます。</span><span class="sxs-lookup"><span data-stu-id="bef29-104">In Japan, consolidated invoices can be enabled to fit the Japanese business practices.</span></span>
 

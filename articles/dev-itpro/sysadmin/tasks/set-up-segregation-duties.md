@@ -16,15 +16,15 @@ ms.author: maertenm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: ea94570ca23761195ed93bbab6c51f5df02c28bb
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: e04109770de8352c3301e4cb950555c5d94f58f8
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="set-up-segregation-of-duties"></a><span data-ttu-id="672b9-103">職務分掌の設定</span><span class="sxs-lookup"><span data-stu-id="672b9-103">Set up segregation of duties</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="672b9-104">異なるユーザーが実行する必要があるタスクを分割するルールを設定できます。</span><span class="sxs-lookup"><span data-stu-id="672b9-104">You can set up rules to separate tasks that must be performed by different users.</span></span> <span data-ttu-id="672b9-105">この概念は職務分掌と呼ばれます。</span><span class="sxs-lookup"><span data-stu-id="672b9-105">This concept is named segregation of duties.</span></span> <span data-ttu-id="672b9-106">たとえば、同じ担当者が、商品受入の確認と仕入先への支払処理の両方を実施するのは望ましくない場合があります。</span><span class="sxs-lookup"><span data-stu-id="672b9-106">For example, you might not want the same person both to acknowledge the receipt of goods and to process payment to the vendor.</span></span> <span data-ttu-id="672b9-107">職務分掌により、不正のリスクを減らし、エラーや反則を検出できます。</span><span class="sxs-lookup"><span data-stu-id="672b9-107">Segregation of duties helps you reduce the risk of fraud, and it also helps you detect errors or irregularities.</span></span> <span data-ttu-id="672b9-108">職務分掌を使用して、内部管理ポリシーを適用することもできます。</span><span class="sxs-lookup"><span data-stu-id="672b9-108">You can also use segregation of duties to enforce internal control policies.</span></span> <span data-ttu-id="672b9-109">ルールを作成するには、次の手順を完了します。</span><span class="sxs-lookup"><span data-stu-id="672b9-109">Complete the following procedure to create a rule.</span></span> <span data-ttu-id="672b9-110">この手順を完了するには、システム管理者である必要があります。</span><span class="sxs-lookup"><span data-stu-id="672b9-110">You must be a system administrator to complete the procedure.</span></span> <span data-ttu-id="672b9-111">この手順の作成に使用するデモ データの会社は DAT です。</span><span class="sxs-lookup"><span data-stu-id="672b9-111">The demo data company used to create this procedure is DAT.</span></span> 
 

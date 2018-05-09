@@ -17,15 +17,15 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 115dfc163dce580244c2b2b6975e49ea3b69f1ef
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: c868265b7a5b5e057b3f1354a81a472f1d6a5d4d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="set-up-a-location-directive-for-purchase-order-put-away"></a><span data-ttu-id="353fc-103">発注書のプット アウェイ場所のディレクティブの設定</span><span class="sxs-lookup"><span data-stu-id="353fc-103">Set up a location directive for purchase order put-away</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="353fc-104">この手順では、簡単な場所ディレクティブの設定方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="353fc-104">This procedure shows you how to set up a simple location directive.</span></span> <span data-ttu-id="353fc-105">示されている例では、発注書に対して受領した品目をプットする場所を決定するために使用される場所ディレクティブを作成します。</span><span class="sxs-lookup"><span data-stu-id="353fc-105">The example that’s shown creates a location directive to be used to determine where to put items that have been received for a purchase order.</span></span> <span data-ttu-id="353fc-106">このタスク ガイドは、デモ データの会社 USMF で前述のデータを使用して実行できます。</span><span class="sxs-lookup"><span data-stu-id="353fc-106">You can play this task guide with the data mentioned using demo data company USMF.</span></span> <span data-ttu-id="353fc-107">事前条件: 廃棄コードを作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="353fc-107">Pre-conditions: You need to create a disposition code.</span></span> <span data-ttu-id="353fc-108">この手順では、[ラベル書き換え] という廃棄コードを使用します。</span><span class="sxs-lookup"><span data-stu-id="353fc-108">In this procedure we use a disposition code called Relabel.</span></span> <span data-ttu-id="353fc-109">自身のデータ内で場所のディレクティブを作成する場合は、倉庫と品目に高度な倉庫管理を設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="353fc-109">If you’re creating a location directive in your own data, you need to have set up advanced warehouse management for your warehouse and items.</span></span>  <span data-ttu-id="353fc-110">この手順は、倉庫マネージャーを対象としています。</span><span class="sxs-lookup"><span data-stu-id="353fc-110">This procedure is intended for the warehouse manager.</span></span>
 

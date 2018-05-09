@@ -16,15 +16,15 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 3ee04497653b21600cd42fa9c90e7876e613acee
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 26aa675e51957596cce9a1147df1fa300fcfe351
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="approve-vendors-for-specific-procurement-categories"></a><span data-ttu-id="73dca-103">特定の調達カテゴリに対する仕入先の承認</span><span class="sxs-lookup"><span data-stu-id="73dca-103">Approve vendors for specific procurement categories</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="73dca-104">購買要求が作成されると、承認仕入先または優先仕入先を選択する必要があり、それは購入ポリシーの設定方法によって異なります。</span><span class="sxs-lookup"><span data-stu-id="73dca-104">When a purchase requisition is created, there may be a requirement to select an approved or preferred vendor, depending on how the purchasing policies are set up.</span></span> <span data-ttu-id="73dca-105">この手順では、特定の調達カテゴリに対して仕入先が承認、または優先されるよう指定する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="73dca-105">This procedure shows you how to specify that a vendor is approved or preferred for a specific procurement category.</span></span> <span data-ttu-id="73dca-106">通常、このタスクを実行するのは、調達担当者です。</span><span class="sxs-lookup"><span data-stu-id="73dca-106">This task would usually be carried out by a procurement professional.</span></span> <span data-ttu-id="73dca-107">デモ データの会社 USMF でこの手順を使用できます。</span><span class="sxs-lookup"><span data-stu-id="73dca-107">You can use this procedure in demo data company USMF.</span></span>
 

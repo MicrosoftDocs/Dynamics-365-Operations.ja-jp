@@ -18,16 +18,16 @@ ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 2b07f9d971dc152e9168b9867e70c59481325284
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 70c7f7a9ca119abbfedf8e09e9994b2a904dc421
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="fixed-asset-management-workspace"></a><span data-ttu-id="93cba-105">固定資産管理ワークスペース</span><span class="sxs-lookup"><span data-stu-id="93cba-105">Fixed asset management workspace</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="93cba-106">**固定資産管理**ワークスペースでは、システムに入力されている固定資産に関連する情報が表示されます。</span><span class="sxs-lookup"><span data-stu-id="93cba-106">The **Fixed asset management** workspace shows information that is related to fixed assets that are entered in the system.</span></span> <span data-ttu-id="93cba-107">このワークスペースには、概要ビューと分析ビューが含まれます。</span><span class="sxs-lookup"><span data-stu-id="93cba-107">This workspace includes a summary view and an analytics view.</span></span> <span data-ttu-id="93cba-108">[**自分の作業**] タブには、概要タイル、固定資産の詳細、および現在の会社内の固定資産の関連情報が表示されます。</span><span class="sxs-lookup"><span data-stu-id="93cba-108">The **My work** tab shows summary tiles, fixed asset details, and related information about fixed assets in the current company.</span></span> <span data-ttu-id="93cba-109">ワークスペースの Power BI 分析セクションに、分析を直接追加することもできます。</span><span class="sxs-lookup"><span data-stu-id="93cba-109">You can also add analytics to the Power BI analytics section directly in the workspace.</span></span> <span data-ttu-id="93cba-110">[**分析 - すべての会社**] タブでは、Microsoft Power BIの機能を使用して、すべての会社内の固定資産に関連付けられているビジュアルを表示します。</span><span class="sxs-lookup"><span data-stu-id="93cba-110">The **Analytics – all companies** tab uses capabilities of Microsoft Power BI to show visuals that are related to fixed assets in all companies.</span></span>
 

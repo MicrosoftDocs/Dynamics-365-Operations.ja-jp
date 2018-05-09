@@ -19,16 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 04643d4d9e3c0a21f2dac3ce27a7398f7be4f775
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: ebe2766976f2c7a88f9b919c8c13e05e36576e45
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="add-financial-dimensions-to-the-cfo-workspace"></a><span data-ttu-id="4edad-103">CFO ワークスペースへの財務分析コードの追加</span><span class="sxs-lookup"><span data-stu-id="4edad-103">Add financial dimensions to the CFO workspace</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="4edad-104">このトピックでは、最高財務責任者 (CFO) ワークスペースに財務分析コードを追加し、それにより元帳および予算のレポートを使用できるようにする方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="4edad-104">This topic explains how to add financial dimensions to the Chief Financial Officer (CFO) workspace, so that they can be used for the ledger and budget reports.</span></span> <span data-ttu-id="4edad-105">CFO ワークスペースには、[概要] タブと [財務] タブがあります。これら 2 つのタブ上のレポートは、LedgerActivityMeasure および BudgetActivityMeasure という 2 つの措置によってサポートされています。</span><span class="sxs-lookup"><span data-stu-id="4edad-105">The CFO workspace has an **Overview** tab and a **Financial** tab. The reports on these two tabs are backed by two measures: LedgerActivityMeasure and BudgetActivityMeasure.</span></span> <span data-ttu-id="4edad-106">Microsoft Dynamics 365 for Finance and Operations、Enterprise edition (2017 年 7 月) では、それら 2 つの措置と DimensionCombinationEntity エンティティの間にリレーションがあります。</span><span class="sxs-lookup"><span data-stu-id="4edad-106">In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017), there is a relation between those two measures and the DimensionCombinationEntity entity.</span></span> <span data-ttu-id="4edad-107">したがって、分析コードを選択できます。</span><span class="sxs-lookup"><span data-stu-id="4edad-107">Therefore, you can select dimensions.</span></span>
 

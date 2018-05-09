@@ -16,15 +16,15 @@ ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: e326acd4a7f681b02ee4846d36e94559ce6dbdfa
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: b2587af5e004bb6ccebe01487a7b3b92ee965f38
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="set-up-ledger-posting-groups-for-sales-tax"></a><span data-ttu-id="d04c6-103">売上税の元帳転記グループの設定</span><span class="sxs-lookup"><span data-stu-id="d04c6-103">Set up ledger posting groups for sales tax</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="d04c6-104">売上税が計算されると、元帳転記グループで指定されている主勘定に転記されます。</span><span class="sxs-lookup"><span data-stu-id="d04c6-104">Sales tax is calculated and posted to main accounts that are specified in the Ledger posting groups.</span></span> <span data-ttu-id="d04c6-105">元帳転記グループは各売上税コードに関連付けられます。</span><span class="sxs-lookup"><span data-stu-id="d04c6-105">Ledger posting groups are attached to each sales tax code.</span></span> <span data-ttu-id="d04c6-106">各売上税コードに対して個別の元帳転記グループを設定するか、すべての売上税コードに対して 1 つの元帳転記グループを使用するか、または売上税コードに複数の元帳転記グループを割り当てることができます。</span><span class="sxs-lookup"><span data-stu-id="d04c6-106">You can set up individual ledger posting groups for each sales tax code, use one ledger posting group for all sales tax codes or assign multiple ledger posting groups to the sales tax codes.</span></span> <span data-ttu-id="d04c6-107">このレコードでは、USMF デモ会社を使用します。</span><span class="sxs-lookup"><span data-stu-id="d04c6-107">This recording uses the DEMF demo company.</span></span> 
 

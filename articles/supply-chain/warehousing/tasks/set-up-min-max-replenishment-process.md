@@ -17,15 +17,15 @@ ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 30bff74da8399ddc15f2bc84e83887c8b5e60570
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 09a5bbe7601248fd2635fda4a0d87973a6e1ceba
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="set-up-a-min-max-replenishment-process"></a><span data-ttu-id="ad5fd-103">最小/最大の補充プロセスの設定</span><span class="sxs-lookup"><span data-stu-id="ad5fd-103">Set up a min-max replenishment process</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="ad5fd-104">この手順では、最小/最大の補充方法を使用する新しい補充プロセスを設定する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="ad5fd-104">This procedure shows you how to set up a new replenishment process which uses the minimum/maximum replenishment strategy.</span></span> <span data-ttu-id="ad5fd-105">在庫が最小レベルを下回った場合、場所を補充するために作業が作成されます。</span><span class="sxs-lookup"><span data-stu-id="ad5fd-105">When inventory falls below the minimum level, work will be created to replenish the location.</span></span> <span data-ttu-id="ad5fd-106">手順では、在庫が最小レベルを下回った場合でも補充を許可する固定のピッキング場所の使用方法や、バッチ ジョブを使用して定期的に補充プロセスを実行できるようにする方法も示します。</span><span class="sxs-lookup"><span data-stu-id="ad5fd-106">The procedure also shows how to use fixed picking locations to allow restocking even if inventory falls below the minimum level, and how to enable the replenishment process to run regularly using a batch job.</span></span> <span data-ttu-id="ad5fd-107">通常、これらのタスクを実施するのは、倉庫マネージャーです。</span><span class="sxs-lookup"><span data-stu-id="ad5fd-107">These tasks would typically be carried out by a warehouse manager.</span></span> <span data-ttu-id="ad5fd-108">メモの例の値を使用するデモ データの会社 USMF でこの手順を実行したり、独自のデータで実行したりできます。</span><span class="sxs-lookup"><span data-stu-id="ad5fd-108">You can run this procedure in the USMF demo data company using the example values in the notes, or can run it on your own data.</span></span> <span data-ttu-id="ad5fd-109">独自のデータを使用している場合、倉庫管理プロセスに有効な倉庫があることを確認します。</span><span class="sxs-lookup"><span data-stu-id="ad5fd-109">If you’re using your own data, make sure that you have a warehouse that’s enabled for Warehouse management processes.</span></span>
 

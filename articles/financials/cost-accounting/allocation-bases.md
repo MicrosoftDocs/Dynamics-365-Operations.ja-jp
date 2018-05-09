@@ -20,16 +20,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 1a32b49e7589113d518ef17a39eecc4c518b362d
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: d3de34eeef042cb3f283ee53579b199c6a4c9091
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="allocation-bases"></a><span data-ttu-id="a6af3-104">配賦基準</span><span class="sxs-lookup"><span data-stu-id="a6af3-104">Allocation bases</span></span> 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="a6af3-105">配賦基準は、原価計算で間接費を配賦する基盤です。</span><span class="sxs-lookup"><span data-stu-id="a6af3-105">An allocation base is the basis on which Cost accounting allocates overhead costs.</span></span> <span data-ttu-id="a6af3-106">配賦基準は、たとえば使用された機械の時間、消費されたキロワット時間 (kWh)、または占有された平方フィートなどの数量の場合があります。</span><span class="sxs-lookup"><span data-stu-id="a6af3-106">An allocation base can be a quantity, such as machine hours that are used, kilowatt hours (kWh) that are consumed, or square footage that is occupied.</span></span> <span data-ttu-id="a6af3-107">配賦基準は、生産される在庫に間接費を割り当てる場合に主に使用されます。</span><span class="sxs-lookup"><span data-stu-id="a6af3-107">Allocation bases are mostly used to assign overhead costs to inventory that is produced.</span></span> <span data-ttu-id="a6af3-108">たとえば IT 部門は、各部門で使用しているコンピューターの数に応じて経費を割り当てます。</span><span class="sxs-lookup"><span data-stu-id="a6af3-108">For example, an IT department allocates its expenses according to the number of computers that each department uses.</span></span>
 

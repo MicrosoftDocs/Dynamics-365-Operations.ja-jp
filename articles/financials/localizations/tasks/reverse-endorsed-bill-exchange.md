@@ -16,15 +16,15 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: ddd0b8a65db6181fb906a69923ae9b4cd9518f82
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 342d9390d37f4658ec43bc757cb1ae80ce5fd232
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="reverse-an-endorsed-bill-of-exchange-japan"></a><span data-ttu-id="6004b-103">裏書済受取手形の取消 (日本)</span><span class="sxs-lookup"><span data-stu-id="6004b-103">Reverse an endorsed bill of exchange (Japan)</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="6004b-104">このタスクは、裏書きされた為替手形の取消について説明します。</span><span class="sxs-lookup"><span data-stu-id="6004b-104">This task walks you through reversing an endorsed bill of exchange.</span></span>
 

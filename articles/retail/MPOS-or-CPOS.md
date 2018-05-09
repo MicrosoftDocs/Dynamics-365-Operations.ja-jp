@@ -19,16 +19,16 @@ ms.author: jeffbl
 ms.search.validFrom: 2017-10-12
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: c8d63ab3dcde9c206f1c0ddd0185109a3298f5a4
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: a44c484797a5713ace5d24628176eef7d6611d48
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="choose-between-modern-pos-and-cloud-pos"></a><span data-ttu-id="48540-104">Modern POS およびクラウド POS かの選択をします</span><span class="sxs-lookup"><span data-stu-id="48540-104">Choose between Modern POS and Cloud POS</span></span>
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 <span data-ttu-id="48540-105">このトピックでは、Microsoft Dynamics 365 for Retail を配置する際に考慮すべき要因に対する追加のバック グラウンド、ヒント、およびガイダンスを実装者に与えます。</span><span class="sxs-lookup"><span data-stu-id="48540-105">This topic gives implementers additional background, tips, and guidance for factors that they should consider when they deploy Microsoft Dynamics 365 for Retail.</span></span> <span data-ttu-id="48540-106">配置プロセスの一部としてこのガイドを確認し従うことにより、実装者は、ユーザーの満足度またはパフォーマンスに影響を与える可能性がある問題を回避することができます。</span><span class="sxs-lookup"><span data-stu-id="48540-106">By reviewing and following this guidance as part of the deployment process, implementers can avoid issues that might affect user satisfaction or performance.</span></span>
 

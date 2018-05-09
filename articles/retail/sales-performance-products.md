@@ -20,16 +20,16 @@ ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 928ddaaf5e5ff0cba31171f158989c96c54ed1e4
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 932540052fe80e2380b6f71426633f471be1891a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="assess-sales-performance-by-product"></a><span data-ttu-id="e74f1-103">製品別の売上実績の評価</span><span class="sxs-lookup"><span data-stu-id="e74f1-103">Assess sales performance by product</span></span>
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 <span data-ttu-id="e74f1-104">Microsoft Dynamics 365 for Retail を使用して、上位 10 製品の収益性を調査できます。</span><span class="sxs-lookup"><span data-stu-id="e74f1-104">You can study profitability for the top 10 products using Microsoft Dynamics 365 for Retail.</span></span> 
 

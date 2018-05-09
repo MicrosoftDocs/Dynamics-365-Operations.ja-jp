@@ -16,16 +16,16 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: fc47f6cd9cfe4a850e0959bf89da086ca82f3b69
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: ba174973cd730a8ddbde84c877acdee340deda8c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="data-import-and-export-jobs"></a><span data-ttu-id="385b3-103">データ インポート/エクスポート ジョブ</span><span class="sxs-lookup"><span data-stu-id="385b3-103">Data import and export jobs</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="385b3-104">Microsoft Dynamics 365 for Finance and Operations でデータ インポート/エクスポート ジョブを管理して作成するには、**データ管理** ワークスペースを使用します。</span><span class="sxs-lookup"><span data-stu-id="385b3-104">To create and manage data import and export jobs in Microsoft Dynamics 365 for Finance and Operations, you use the **Data management** workspace.</span></span> <span data-ttu-id="385b3-105">既定では、データ インポート/エクスポート プロセスにより、ターゲットのデータベースで各エンティティにステージング テーブルが作成されます。</span><span class="sxs-lookup"><span data-stu-id="385b3-105">By default, the data import and export process creates a staging table for each entity in the target database.</span></span> <span data-ttu-id="385b3-106">ステージング テーブルにより、移動させる前にデータを確認、クリーンアップ、または変換できます。</span><span class="sxs-lookup"><span data-stu-id="385b3-106">Staging tables let you verify, clean up, or convert data before you move it.</span></span>
 

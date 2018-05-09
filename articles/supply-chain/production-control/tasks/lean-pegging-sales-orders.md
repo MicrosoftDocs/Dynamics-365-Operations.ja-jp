@@ -17,15 +17,15 @@ ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 16e2eb864f092ef221374e3d26b2d04a93be4de4
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: dbab5ade75aa8999f7e91c5d27f896242f6c7604
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="lean-pegging-from-sales-orders"></a><span data-ttu-id="8a6f6-103">販売注文のリーン ペギング</span><span class="sxs-lookup"><span data-stu-id="8a6f6-103">Lean pegging from sales orders</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="8a6f6-104">この手順で、品目がかんばんで生産される販売明細行からペギング ツリーを検証することに集中します。</span><span class="sxs-lookup"><span data-stu-id="8a6f6-104">This procedure focuses on validating the pegging tree from a sales line where the item is produced with kanbans.</span></span> <span data-ttu-id="8a6f6-105">ペギング ツリーを検証すると、すべてのかんばん作業が計画済になります。</span><span class="sxs-lookup"><span data-stu-id="8a6f6-105">After validating the pegging tree, all the kanban jobs are planned.</span></span> <span data-ttu-id="8a6f6-106">これにより、すぐに生産を始められるようにする必要のある注文受付者の注文のシナリオに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="8a6f6-106">This is useful for order scenarios where the order taker needs to ensure that production can start right away.</span></span> <span data-ttu-id="8a6f6-107">この手順の作成に使用するデモ データの会社は USMF です。</span><span class="sxs-lookup"><span data-stu-id="8a6f6-107">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="8a6f6-108">この手順は、リーン会社で働いている上級の受付者を対象としています。</span><span class="sxs-lookup"><span data-stu-id="8a6f6-108">This procedure is intended for the advanced order taker working in a lean company.</span></span>
 

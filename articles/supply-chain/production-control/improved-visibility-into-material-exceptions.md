@@ -18,15 +18,15 @@ ms.author: johanho
 ms.search.validfrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 3e67446dbf3d9d7db83def646371f1bf88e9fab3
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 365445a29afedceedd001fa283e624d3a9eef2cc
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="visibility-into-material-exceptions"></a><span data-ttu-id="2d70d-103">材料の例外の把握</span><span class="sxs-lookup"><span data-stu-id="2d70d-103">Visibility into material exceptions</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="2d70d-104">[**生産フロアの管理**] ワークスペースでは、3 つのタイルを使用して、製造オーダーおよびバッチ オーダーの原材料の例外をより詳細に把握できます。</span><span class="sxs-lookup"><span data-stu-id="2d70d-104">In the **Production floor management** workspace, three tiles give you better visibility into exceptions for raw materials for production orders and batch orders:</span></span>
 

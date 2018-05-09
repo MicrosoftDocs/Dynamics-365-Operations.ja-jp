@@ -20,16 +20,16 @@ ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d10c8846aa0c996f80206f7f788d772a874886e4
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 1a56dfce2cca369ca2e28fe9e5c45e2722f16379
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="resource-capabilities"></a><span data-ttu-id="b5d95-105">リソースの能力</span><span class="sxs-lookup"><span data-stu-id="b5d95-105">Resource capabilities</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="b5d95-106">この記事は、リソース能力に関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="b5d95-106">This article provides information about resource capabilities.</span></span> <span data-ttu-id="b5d95-107">能力とは、運営リソースが特定の活動を実行する能力です。</span><span class="sxs-lookup"><span data-stu-id="b5d95-107">A capability is the ability of an operations resource to perform a particular activity.</span></span> <span data-ttu-id="b5d95-108">この記事では、活動に適切なリソースを選択するための実力のレベルや優先順位などの能力および関連する概念の使用方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="b5d95-108">The article explains how capabilities and related concepts, such as proficiency level and priority, are used to select appropriate resources for an activity.</span></span>
 

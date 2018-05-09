@@ -18,16 +18,16 @@ ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: c68ad7f99bc1c1ab22fcec0ead89b79fd9148f7d
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: a7a8605027295a6e6cc09958113e1e3c095b45bf
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="set-up-asset-retirement-obligation-for-japan"></a><span data-ttu-id="a987d-103">日本での資産除去責務の設定</span><span class="sxs-lookup"><span data-stu-id="a987d-103">Set up asset retirement obligation for Japan</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="a987d-104">日本では、資産除去債務 (ARO) は法的な除去責務のある固定資産に対して認識されます。</span><span class="sxs-lookup"><span data-stu-id="a987d-104">In Japan, asset retirement obligation (ARO) is recognized for fixed assets that have legal obligations at their retirement.</span></span> <span data-ttu-id="a987d-105">この記事は、ARO の負債がどのように認識、償却、および未払となるか、および固定資産と ARO の負債が除去される方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="a987d-105">This article explains how the ARO liability is recognized, amortized, and accrued, and how the fixed asset and ARO liability are retired.</span></span>
 

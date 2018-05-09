@@ -19,16 +19,16 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 105ae607aa14c8ca1629e33cd5e2ff628ee6db95
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: e246e2a48d5348b3088e3c992489f1d27f92d65e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="acquire-assets-through-procurement"></a><span data-ttu-id="6ef11-103">調達によって取得される資産の取得</span><span class="sxs-lookup"><span data-stu-id="6ef11-103">Acquire assets through procurement</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="6ef11-104">このトピックでは、固定資産と買掛金の統合を設定して、発注書または仕入先請求書から固定資産を自動作成する方法、また固定資産の取得および取得原価調整トランザクションの自動転記を実行する方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="6ef11-104">This topic describes how to set up the integration between Fixed assets and Accounts payable to automatically create fixed assets from purchase orders or vendor invoices, or automatically post acquisition and acquisition adjustment transactions for fixed assets.</span></span>
 

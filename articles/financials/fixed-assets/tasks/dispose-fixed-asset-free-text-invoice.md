@@ -16,15 +16,15 @@ ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 9547847d9712d85be45be7fa835fd2f497d409d3
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 4948122e9eb07afe93503e12c84bca71f12be92f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="dispose-of-a-fixed-asset-using-a-free-text-invoice"></a><span data-ttu-id="abcbc-103">自由書式の請求書を使用した固定資産の処分</span><span class="sxs-lookup"><span data-stu-id="abcbc-103">Dispose of a fixed asset using a free text invoice</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="abcbc-104">この手順では、固定資産仕訳帳の取得提案を使用して固定資産の取得方法を示します。</span><span class="sxs-lookup"><span data-stu-id="abcbc-104">This procedure shows how to acquire a fixed asset using the acquisition proposal in the Fixed assets journal.</span></span> <span data-ttu-id="abcbc-105">これは USMF の法人に対して経理担当ロールとデモ データを使用します。</span><span class="sxs-lookup"><span data-stu-id="abcbc-105">It uses the accountant role and demo data for the USMF legal entity.</span></span>
 

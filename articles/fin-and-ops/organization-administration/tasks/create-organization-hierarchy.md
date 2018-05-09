@@ -16,15 +16,15 @@ ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 2deec5470eef68f18042bb789e3760189caffdeb
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 40efd239a4d86c0b1d07b02bba5158dabe7b3078
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-an-organization-hierarchy"></a><span data-ttu-id="74504-103">組織階層の作成</span><span class="sxs-lookup"><span data-stu-id="74504-103">Create an organization hierarchy</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="74504-104">組織階層を作成するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="74504-104">Use the following procedure to create an organizational hierarchy.</span></span> <span data-ttu-id="74504-105">業務について、さまざまな観点から表示と報告を行う組織階層を使用できます。</span><span class="sxs-lookup"><span data-stu-id="74504-105">You can use organizational hierarchies to view and report on your business from various perspectives.</span></span> <span data-ttu-id="74504-106">たとえば、税金、法律、または法令についての報告に使用する 1 つの階層を設定できます。</span><span class="sxs-lookup"><span data-stu-id="74504-106">For example, you can set up one hierarchy for tax, legal, or statutory reporting.</span></span> <span data-ttu-id="74504-107">法的に必須でなくても、内部報告に使用する財務情報を報告する別の階層を設定できます。</span><span class="sxs-lookup"><span data-stu-id="74504-107">You can then set up another hierarchy to report financial information that is not legally required, but that is used for internal reporting.</span></span> 
 

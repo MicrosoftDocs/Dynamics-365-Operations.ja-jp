@@ -16,15 +16,15 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 5a3be54d336b5a0e4e85844307c3c7d60c1aef69
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: e98d48fc31a9dfd4959e88f31e00317afbfeb8c1
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="benefit-eligibility-process"></a><span data-ttu-id="ea770-103">給付金適格性処理</span><span class="sxs-lookup"><span data-stu-id="ea770-103">Benefit eligibility process</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="ea770-104">この手順は、給付金適格性処理が機能する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="ea770-104">This procedure shows how the benefit eligibility process works.</span></span> <span data-ttu-id="ea770-105">プロセスが完了すると、結果を表示できます。</span><span class="sxs-lookup"><span data-stu-id="ea770-105">When the process is complete you can view the results.</span></span> <span data-ttu-id="ea770-106">この手順の作成に使用するデモ データの会社は USMF です。</span><span class="sxs-lookup"><span data-stu-id="ea770-106">The demo data company used to create this procedure is USMF.</span></span>
 

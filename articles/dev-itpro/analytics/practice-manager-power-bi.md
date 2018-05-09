@@ -18,16 +18,16 @@ ms.author: knelson
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 1285b62130e0c3b0eb30773b3ccaa7a31d844461
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 27c3f8d5a3e62d3867dcb4435479baf6db208942
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="practice-manager-power-bi-content"></a><span data-ttu-id="e37e3-104">プラクティス マネージャー Power BI コンテンツ</span><span class="sxs-lookup"><span data-stu-id="e37e3-104">Practice manager Power BI content</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="e37e3-105">このトピックでは、**プラクティス マネージャー** Microsoft Power BI コンテンツの内容について説明します。</span><span class="sxs-lookup"><span data-stu-id="e37e3-105">This topic describes what is included in the **Practice manager** Microsoft Power BI content.</span></span> <span data-ttu-id="e37e3-106">Power BI レポートにアクセスする方法を説明し、コンテンツを作成するために使用するデータ モデルおよびエンティティについての情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="e37e3-106">It explains how to access the Power BI reports, and provides information about the data model and entities that are used to build the content.</span></span>
 

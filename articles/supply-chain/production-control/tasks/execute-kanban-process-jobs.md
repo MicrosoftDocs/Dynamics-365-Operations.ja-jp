@@ -17,15 +17,15 @@ ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: c10fa829e5b696c951d041f11e3475d200b7751b
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 4f0579e9bccdcf240d33bb7b936bd9f9f7619028
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="execute-kanban-process-jobs"></a><span data-ttu-id="8f561-103">かんばんプロセス ジョブの実行</span><span class="sxs-lookup"><span data-stu-id="8f561-103">Execute kanban process jobs</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="8f561-104">この手順は、かんばんプロセス ジョブの実行を対象としています。</span><span class="sxs-lookup"><span data-stu-id="8f561-104">This procedure focuses on executing kanban process jobs.</span></span> <span data-ttu-id="8f561-105">最初のジョブでは、予定数量が完了されずエラーはありません。</span><span class="sxs-lookup"><span data-stu-id="8f561-105">The first job is completed with the expected quantity and has no errors.</span></span> <span data-ttu-id="8f561-106">2 番目のジョブはエラーで完了されます。</span><span class="sxs-lookup"><span data-stu-id="8f561-106">The second job is completed with errors.</span></span> <span data-ttu-id="8f561-107">この手順の作成に使用するデモ データの会社は USMF です。</span><span class="sxs-lookup"><span data-stu-id="8f561-107">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="8f561-108">この手順は、機械オペレーターを対象としています。</span><span class="sxs-lookup"><span data-stu-id="8f561-108">This procedure is intended for the machine operator.</span></span>
 

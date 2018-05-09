@@ -18,16 +18,16 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 6679215a664ddf938a204196b00f3bc28bf65f8f
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 8250b612ca62048a8ab9e0c5f082a6e652e1b5c1
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="financial-insights"></a><span data-ttu-id="ba237-103">財務インサイト</span><span class="sxs-lookup"><span data-stu-id="ba237-103">Financial Insights</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="ba237-104">**財務インサイト** は、Microsoft Power BIを使用して、財務の主要業績評価指標 (KPI)、グラフ、および財務諸表を結び付けます。</span><span class="sxs-lookup"><span data-stu-id="ba237-104">**Financial Insights** uses Microsoft Power BI to bring together financial key performance indicators (KPIs), charts, and financial statements.</span></span> <span data-ttu-id="ba237-105">Microsoft Dynamics 365 Finance and Operations に埋め込まれている Power BI。</span><span class="sxs-lookup"><span data-stu-id="ba237-105">Power BI is embedded in Microsoft Dynamics 365 Finance and Operations.</span></span>
 <span data-ttu-id="ba237-106">**財務インサイト** のフォーカスは分析レポートです。</span><span class="sxs-lookup"><span data-stu-id="ba237-106">The focus of **Financial Insights** is analytical reporting.</span></span> <span data-ttu-id="ba237-107">組織全体にわたる役割として、表示、研究、理解、および実行できます。</span><span class="sxs-lookup"><span data-stu-id="ba237-107">Personas across an organization can view, research, understand, and act.</span></span> 

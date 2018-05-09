@@ -16,15 +16,15 @@ ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 8278a57271314104c36b074c7a7ee422751f2c19
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 5c2235fd8a1d495f0321a84fd63b98f699da34de
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="generate-and-process-customer-rebates"></a><span data-ttu-id="aa7b4-103">顧客リベートの生成および処理</span><span class="sxs-lookup"><span data-stu-id="aa7b4-103">Generate and process customer rebates</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="aa7b4-104">この手順は、要求の生成から売掛金勘定への見越計上として顧客リベートを渡すまでの、顧客リベートの処理方法を示します。</span><span class="sxs-lookup"><span data-stu-id="aa7b4-104">This procedure demonstrates how to process customer rebates from claim generation to the point of passing them as accruals to Accounts receivable.</span></span> <span data-ttu-id="aa7b4-105">ここでは、リベート明細行のさまざまな条件が、顧客に貸方転記される最終金額にどのように影響するかについて説明する特定の例を示します。</span><span class="sxs-lookup"><span data-stu-id="aa7b4-105">It walks you through a specific example to explain how the various conditions on the rebate lines affect the final amounts that will be credited to the customer.</span></span> <span data-ttu-id="aa7b4-106">ガイドを開始する前に、USMF のデモ データ会社を使用して、次のタスクを実行する必要があります。(1) [売掛金勘定パラメーター] ページに移動し、[価格] タブと [価格の詳細] タブを展開し、[価格の詳細の有効化] オプションが [はい] に設定されていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="aa7b4-106">You need to use the USMF demo data company, and carry out the following tasks before you start the guide: (1) Go to the Accounts receivable parameters page, and expand the Prices tab and then the Price details tab, and check that the Enable price details option is set to Yes.</span></span> <span data-ttu-id="aa7b4-107">(2) [リベート契約] ページに移動し、顧客リベート契約 USMF-000001 を選択します。</span><span class="sxs-lookup"><span data-stu-id="aa7b4-107">(2) Go to the Rebate agreements page and select the customer rebate agreement: USMF-000001.</span></span> <span data-ttu-id="aa7b4-108">[ワークフローの承認状態] フィールドが [承認済] に設定されていない場合、アクション ウィンドウで [検証] をクリックして承認する必要があります。</span><span class="sxs-lookup"><span data-stu-id="aa7b4-108">If the Workflow approval status field is not set to Approved, you need click Validation on the Action pane to approve it.</span></span>
 

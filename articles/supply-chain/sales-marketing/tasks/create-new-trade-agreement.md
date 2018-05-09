@@ -16,15 +16,15 @@ ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 134642ff2eed988c137e7d0ecc8b0da77684f8c7
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 0d0e5c5d680fcbac5407883a1d6365a4f312dda9
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-a-new-trade-agreement"></a><span data-ttu-id="69d8e-103">新しい売買契約の作成</span><span class="sxs-lookup"><span data-stu-id="69d8e-103">Create a new trade agreement</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="69d8e-104">この手順は、特定の顧客と合意した新しい製品販売価格を登録する売買契約の作成方法を示します。</span><span class="sxs-lookup"><span data-stu-id="69d8e-104">This procedure shows you how to create a trade agreement where you register a new product sales price that you've agreed with a specific customer.</span></span> <span data-ttu-id="69d8e-105">この手順は、デモ データの会社 USMF で、または独自のデータで実行できます。</span><span class="sxs-lookup"><span data-stu-id="69d8e-105">You can run this procedure in demo data company USMF or on your own data.</span></span> <span data-ttu-id="69d8e-106">独自のデータを使用する場合は、このガイドの開始する前に、「価格 (販売)」に既定の取引関係が設定されている売買契約仕訳帳名が存在することを確認する必要があります。</span><span class="sxs-lookup"><span data-stu-id="69d8e-106">If you’re using your own data, before you start this guide you need to make sure that a Trade agreement journal name exists where the Default relation is set to “Price (sales)”.</span></span>
 

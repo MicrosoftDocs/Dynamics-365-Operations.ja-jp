@@ -16,15 +16,15 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 326e535c9c01812a399da932c414a73ad0ee3bc6
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 2881a3cb27a3be4778c9edd4c8a01f9cbcd79f63
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="map-a-data-model-to-selected-data-sources-for-electronic-reporting-er"></a><span data-ttu-id="7e3e3-103">電子申告 (ER) の選択したデータ ソースにデータ モデルをマップする</span><span class="sxs-lookup"><span data-stu-id="7e3e3-103">Map a data model to selected data sources for electronic reporting (ER)</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="7e3e3-104">次のステップでは、「システム管理者」または「電子申告開発者」ロールのユーザーが、選択した Dynamics 365 for Finance and Operations データ ソースに電子申告 (ER) データ モデルをマップする方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="7e3e3-104">The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can map an Electronic reporting (ER) data model to selected Dynamics 365 for Finance and Operations data sources.</span></span> <span data-ttu-id="7e3e3-105">このマッピング モデルは、電子支払ドキュメントを管理するために使用するコンフィギュレーションの書式設定で、データ ソースとして後で使用されます。</span><span class="sxs-lookup"><span data-stu-id="7e3e3-105">This model mapping will later be used as a data source in a format configuration that will be used to manage electronic payment documents.</span></span> <span data-ttu-id="7e3e3-106">この例では、サンプル会社 Litware、Inc. のデータ モデルをデータ ソースにマップします。</span><span class="sxs-lookup"><span data-stu-id="7e3e3-106">In this example, you map a data model for sample company, Litware, Inc. to data sources.</span></span> <span data-ttu-id="7e3e3-107">これらの手順を完了するには、最初に「モデル マッピングのためのデータ ソースの選択」の手順でステップを完了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="7e3e3-107">To complete these steps, you must first complete the steps in the “Select data sources for model mapping” procedure.</span></span>
 

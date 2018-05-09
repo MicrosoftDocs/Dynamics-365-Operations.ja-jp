@@ -18,16 +18,16 @@ ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: e0e3e86820e0857b320d832c3bf3c94757667919
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 0b839a4b16095cf5d357b8405baf1a695b1bb955
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="use-the-excel-add-in"></a><span data-ttu-id="5255e-103">Excel アドインの使用</span><span class="sxs-lookup"><span data-stu-id="5255e-103">Use the Excel add-in</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="5255e-104">このトピックでは、Microsoft Excel でエンティティ データを開き、Excel 用の Microsoft Dynamics Office アドインを使用してそのデータを表示、更新、また編集する方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="5255e-104">This topic explains how to open entity data in Microsoft Excel, and then view, update, and edit the data by using the Microsoft Dynamics Office add-in for Excel.</span></span> <span data-ttu-id="5255e-105">エンティティ データを開くには、Excel か Microsoft Dynamics 365 for Finance and Operations のいずれからでも開始できます。</span><span class="sxs-lookup"><span data-stu-id="5255e-105">To open the entity data, you can start from either Excel or Microsoft Dynamics 365 for Finance and Operations.</span></span>
 

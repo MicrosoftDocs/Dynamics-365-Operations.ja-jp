@@ -19,16 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: c41194f5d032b3ec59c079c91c83fcbe90f8b47d
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 08fbaa1a65b31a0ae4f4669bbe34105dee17e557
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="sepa-direct-debit-overview"></a><span data-ttu-id="fb687-107">SEPA の口座引落の概要</span><span class="sxs-lookup"><span data-stu-id="fb687-107">SEPA direct debit overview</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="fb687-108">単一ユーロ支払地域 (SEPA) は欧州委員会によって設定され、個人、事業または組織および銀行がどの国または地域にあるかに関係なく、すべての電子支払は国内と見なされます。</span><span class="sxs-lookup"><span data-stu-id="fb687-108">The Single Euro Payments Area (SEPA) is set up by the European Commission, and dictates that all electronic payments are considered domestic, regardless of the country/region where the individual, business, or organization, and the bank are located.</span></span> <span data-ttu-id="fb687-109">国内支払と国境を越えた支払の間に違いはありません。</span><span class="sxs-lookup"><span data-stu-id="fb687-109">There is no difference between national and cross-border payments.</span></span> <span data-ttu-id="fb687-110">SEPA には、28 の欧州連合 (EU) の加盟国とアイスランド、リヒテンシュタイン、ノルウェー、スイス、およびモナコとサンマリノが含まれます。</span><span class="sxs-lookup"><span data-stu-id="fb687-110">The SEPA includes the 28 European Union (EU) member states, as well as Iceland, Liechtenstein, Norway, Switzerland, Monaco and San Marino.</span></span> <span data-ttu-id="fb687-111">SEPA により、欧州経済領域 (EEA) 内の支払トランザクションの単一市場が形成されます。</span><span class="sxs-lookup"><span data-stu-id="fb687-111">The SEPA helps form a single market for payment transactions within the European Economic Area (EEA).</span></span> <span data-ttu-id="fb687-112">最終的に、SEPA により、銀行、事業、および個人が扱う支払形式の数を減らすと予想されます。</span><span class="sxs-lookup"><span data-stu-id="fb687-112">Ultimately, the SEPA is expected to reduce the number of payment formats that banks, businesses, and individuals must work with.</span></span>   
 

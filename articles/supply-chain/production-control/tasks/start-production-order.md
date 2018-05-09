@@ -17,15 +17,15 @@ ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a19647b0524333fdab96a9534bdc03ce8a07b30f
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 933bf83613f30b544a9cc8e55ad4e32305522b3d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="start-a-production-order"></a><span data-ttu-id="611d6-103">製造オーダーの開始</span><span class="sxs-lookup"><span data-stu-id="611d6-103">Start a production order</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="611d6-104">この手順では、作業現場での製造オーダーの開始方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="611d6-104">This procedure shows how to start a production order on the shop floor.</span></span> <span data-ttu-id="611d6-105">時間および材料の消費は、このプロセスでレポートされます。</span><span class="sxs-lookup"><span data-stu-id="611d6-105">Time and material consumption are reported in this process.</span></span> <span data-ttu-id="611d6-106">この手順の作成に使用するデモ データの会社は USMF です。</span><span class="sxs-lookup"><span data-stu-id="611d6-106">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="611d6-107">これは、製造オーダーのライフ サイクルを説明する 7 個の手順の 5 番目です。</span><span class="sxs-lookup"><span data-stu-id="611d6-107">This is the fifth procedure out of seven which explains the production order lifecycle.</span></span>
 

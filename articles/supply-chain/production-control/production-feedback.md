@@ -20,16 +20,16 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 6a4525734c468bf6eb8bc1da0c1b98f19e8d343c
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 812bf62d3d2cd84b79e46b615ec6ed856feff13f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="production-feedback"></a><span data-ttu-id="2e827-104">生産フィードバック</span><span class="sxs-lookup"><span data-stu-id="2e827-104">Production feedback</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="2e827-105">この記事は、作業者に生産ジョブに関するフィードバックを与える生産フィードバックに関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="2e827-105">This article provides information about production feedback, which gives workers feedback about production jobs.</span></span> <span data-ttu-id="2e827-106">この記事には、生産フィードバックを更新するさまざまな方法に関する情報が含まれます。</span><span class="sxs-lookup"><span data-stu-id="2e827-106">The article includes information about the various ways that production feedback can be updated.</span></span>
 

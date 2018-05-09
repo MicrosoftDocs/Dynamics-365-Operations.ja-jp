@@ -18,16 +18,16 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 4f2dc9221b72600c928db9fd306038725c7af305
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 27fbf57ba7114ca773f2a80de51b36b4e63c6dd6
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="configure-display-older-batches-within-warehouse-on-a-mobile-device"></a><span data-ttu-id="39135-103">モバイル デバイスで倉庫内の古いバッチの表示をコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="39135-103">Configure Display older batches within warehouse on a mobile device</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="39135-104">[倉庫内の古いバッチの表示] コンフィギュレーションにより、作業明細行の現在の場所よりも古いバッチの場所の一覧を表示できます。</span><span class="sxs-lookup"><span data-stu-id="39135-104">The **Display older batches within warehouse** configuration lets you display a list of locations with batches older than the current location of the work line.</span></span> <span data-ttu-id="39135-105">表示される場所のリストには、有効期限のある古いバッチに関する情報と各バッチの現物在庫が含まれています。</span><span class="sxs-lookup"><span data-stu-id="39135-105">The list of locations that are displayed includes information about the older batches in the location with the expiration date and the physical inventory of each batch.</span></span> <span data-ttu-id="39135-106">新しい場所から選択するか、現在の場所から引き続き選択することができます。</span><span class="sxs-lookup"><span data-stu-id="39135-106">You can choose to pick from a new location or to continue picking from the current location.</span></span> 
 - <span data-ttu-id="39135-107">新しい場所からのピッキング - ピッキングする新しい場所を選択すると、現在の作業明細行は新しい場所を使用するように更新され、新しい場所で通常通り作業が続行されます。</span><span class="sxs-lookup"><span data-stu-id="39135-107">Pick from a new location - If you select a new location to pick from, the  current work line will be updated to use the new location and work will continue as usual with the new location.</span></span> <span data-ttu-id="39135-108">新しい場所を有効にするには、作業明細行全体に十分な利用可能な数量がある必要があります。</span><span class="sxs-lookup"><span data-stu-id="39135-108">For the new location to be valid, it must have enough available quantity for the whole work line.</span></span> <span data-ttu-id="39135-109">必要な数量が利用できない場合、作業明細行は更新されず、リストが表示されます。</span><span class="sxs-lookup"><span data-stu-id="39135-109">If the required quantity is not available, the work line will not be updated, and the list will display.</span></span> 

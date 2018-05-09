@@ -19,16 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 17c9da7abaf72ddca8500acf50808a333e76446a
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 4016878c1d179ced826dc19c268de23be7bb8c76
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="automatic-settlement-and-prioritization"></a><span data-ttu-id="a05da-104">自動決済と優先順位付け</span><span class="sxs-lookup"><span data-stu-id="a05da-104">Automatic settlement and prioritization</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="a05da-105">このトピックは、[売掛金勘定パラメーター] ページの [自動決済] を選択した場合にトランザクションが決済される方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="a05da-105">This topic describes how transactions are settled if you select Automatic settlement on the Accounts receivable parameters page.</span></span> <span data-ttu-id="a05da-106">自動決済を支払の優先順位と組み合わせた使用方法も説明します。</span><span class="sxs-lookup"><span data-stu-id="a05da-106">It also explains how automatic settlement can be used in combination with the payment priority.</span></span>
 

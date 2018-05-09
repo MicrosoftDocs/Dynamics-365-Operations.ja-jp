@@ -16,15 +16,15 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 86f613a8b7a4fd98dbefb86b445253f52df193db
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: e2f54ecacd0a1a8a8f79d96d98dfc44fa5c4e097
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-a-fixed-asset-with-special-depreciation-profile-japan"></a><span data-ttu-id="639d1-104">特別償却プロファイルのある固定資産の作成 (日本)</span><span class="sxs-lookup"><span data-stu-id="639d1-104">Create a fixed asset with special depreciation profile (Japan)</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="639d1-105">日本では、特定の条件下で特別償却額を固定資産に転記できます</span><span class="sxs-lookup"><span data-stu-id="639d1-105">In Japan, you can post a special depreciation amount to a fixed asset, under certain conditions.</span></span>
 

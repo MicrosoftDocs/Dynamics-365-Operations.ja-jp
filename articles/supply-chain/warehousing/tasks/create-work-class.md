@@ -17,15 +17,15 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 11e506c41eb5e8d5bd28db8e6d5ca51ff9e72a62
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: ae594d55b1a14ab4e832658aaa12165f1be2b303
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-a-work-class"></a><span data-ttu-id="9dcd8-103">作業クラスの作成</span><span class="sxs-lookup"><span data-stu-id="9dcd8-103">Create a work class</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="9dcd8-104">この手順では、作業クラスを設定する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="9dcd8-104">This procedure shows you how to set up a work class.</span></span> <span data-ttu-id="9dcd8-105">作業クラスは、倉庫作業者がモバイル デバイスで処理できるワーク オーダー明細行のタイプを指示または制限するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="9dcd8-105">Work classes are used to direct and/or limit the type of work order lines that a warehouse worker can process on a mobile device.</span></span> <span data-ttu-id="9dcd8-106">作業者が処理できる明細行は、倉庫作業者がアクセス権を持つモバイル デバイスの作業クラスと、作業明細行に指定された作業クラスにより決定されます。</span><span class="sxs-lookup"><span data-stu-id="9dcd8-106">The lines that a worker can process are determined from the work classes on the mobile device menu items that the warehouse worker has access to and the work class that’s specified on the work lines.</span></span> <span data-ttu-id="9dcd8-107">また、作業クラスは、ワーク オーダー明細行に対して設定されている場所を検証するために使用できます。</span><span class="sxs-lookup"><span data-stu-id="9dcd8-107">Work classes can also be used to validate the put location for a work order line.</span></span> <span data-ttu-id="9dcd8-108">この手順は、デモ データの会社 USMF で、または独自のデータで実行できます。</span><span class="sxs-lookup"><span data-stu-id="9dcd8-108">You can run this procedure in demo data company USMF or on your own data.</span></span> <span data-ttu-id="9dcd8-109">この手順は、倉庫マネージャーを対象としています。</span><span class="sxs-lookup"><span data-stu-id="9dcd8-109">This procedure is intended for the warehouse manager.</span></span>
 

@@ -18,16 +18,16 @@ ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 910e954f98165eb6605f1c4055bfb0a40c81f00b
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 2dd9520d16f6cc136ee1b3fae084170cbcee7c34
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="workflow-actions"></a><span data-ttu-id="fe217-103">ワークフロー アクション</span><span class="sxs-lookup"><span data-stu-id="fe217-103">Workflow actions</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="fe217-104">この記事は、ワークフローの承認プロセスで各参加者が実行できるアクションを説明します。</span><span class="sxs-lookup"><span data-stu-id="fe217-104">This article explains the actions that each participant in a workflow approval process can take.</span></span>
 

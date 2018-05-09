@@ -19,16 +19,16 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: fe92e2f0d57a1daeb2c20da91e1b60b2308dce6a
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: a1d12f5910e38f683ee161f6fab9422db715745b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="post-fixed-asset-transactions-to-posting-layers"></a><span data-ttu-id="42898-103">転記階層への固定資産トランザクションを転記する</span><span class="sxs-lookup"><span data-stu-id="42898-103">Post fixed asset transactions to posting layers</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="42898-104">この記事は、固定資産トランザクションの転記階層機能の概要を示します。</span><span class="sxs-lookup"><span data-stu-id="42898-104">This article gives an overview of posting layer functionality for fixed asset transactions.</span></span>
 

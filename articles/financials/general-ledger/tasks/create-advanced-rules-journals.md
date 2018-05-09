@@ -16,15 +16,15 @@ ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 36f4edd6fa9711022e291ea5ceffbcc9ef55b2a9
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 7ecddd4ea17d917bab8985dcda0c91e6c8615d7c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-advanced-rules-for-journals"></a><span data-ttu-id="b6572-103">仕訳帳の詳細なルールの作成</span><span class="sxs-lookup"><span data-stu-id="b6572-103">Create advanced rules for journals</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="b6572-104">この手順は、仕訳帳の詳細なルールの作成について説明します。</span><span class="sxs-lookup"><span data-stu-id="b6572-104">This procedure steps through creating advanced rules for journals.</span></span> <span data-ttu-id="b6572-105">これには、仕訳帳のコントロールおよびユーザーの転記制限の設定が含まれます。</span><span class="sxs-lookup"><span data-stu-id="b6572-105">This includes setting up journal control and user posting restrictions.</span></span> <span data-ttu-id="b6572-106">この手順では、デモ データの会社 USMF を使用します。</span><span class="sxs-lookup"><span data-stu-id="b6572-106">This procedure uses the USMF demo data company.</span></span>
 

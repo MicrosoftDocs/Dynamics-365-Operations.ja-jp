@@ -16,15 +16,15 @@ ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d1e3df13c644ffa39621e73d1c907084bbd7ba7c
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 69a057196d1503da664cb629ad5f20c523d57c33
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="register-and-post-a-postdated-check-for-a-customer"></a><span data-ttu-id="c557c-103">顧客の先日付小切手の登録および転記</span><span class="sxs-lookup"><span data-stu-id="c557c-103">Register and post a postdated check for a customer</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="c557c-104">顧客から受け取った先日付小切手の詳細を登録できます。</span><span class="sxs-lookup"><span data-stu-id="c557c-104">You can register details of a postdated check received from a customer.</span></span> <span data-ttu-id="c557c-105">先日付小切手を転記して財務トランザクションを生成することもできます。</span><span class="sxs-lookup"><span data-stu-id="c557c-105">You can also post the postdated check and generate financial transactions.</span></span>   <span data-ttu-id="c557c-106">顧客から受け取った先日付小切手を登録し転記する前に、次のタスクを完了します。:   • [現金および銀行管理] ページで、先日付小切手を設定します。 • 先日小切手用の支払方法を設定します。   この手順のロールは会計登録者です。</span><span class="sxs-lookup"><span data-stu-id="c557c-106">Complete the following tasks before you register and post a postdated check received from a customer:   • Set up postdated check in the Cash and bank management page • Set up a method of payment for postdated checks   The role for this procedure is Treasurer.</span></span> <span data-ttu-id="c557c-107">この手順では、USMF というデモ会社を使用します。</span><span class="sxs-lookup"><span data-stu-id="c557c-107">This procedure uses the USMF demo company.</span></span>
 

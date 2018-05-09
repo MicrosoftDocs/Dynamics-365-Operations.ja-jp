@@ -19,16 +19,16 @@ ms.author: sigitac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a0aaa5941807199a64e6541960dbcdf83fedb47e
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 91c605eedeb84243c15cf372e4f25fb7587a00e1
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="project-cost-accrual-on-purchase-receipts"></a><span data-ttu-id="2e6e5-103">購買入庫におけるプロジェクト費用の発生</span><span class="sxs-lookup"><span data-stu-id="2e6e5-103">Project cost accrual on purchase receipts</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="2e6e5-104">このトピックでは、購買入庫での未収プロジェクト費用を、Microsoft Dynamics 365 for Finance and Operations で追跡する方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="2e6e5-104">This topic describes how accrued project costs from purchase receipts can be tracked in Microsoft Dynamics 365 for Finance and Operations.</span></span> 
 

@@ -16,15 +16,15 @@ ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a4d50e5e559e16a569e80b85076176c7c79503f7
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 3c184b4d078e48b036909743b9f691195f442266
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="set-up-fixed-asset-groups"></a><span data-ttu-id="3df39-103">固定資産グループを設定します</span><span class="sxs-lookup"><span data-stu-id="3df39-103">Set up fixed asset groups</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="3df39-104">この手順では、新しい固定資産グループを作成する方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="3df39-104">This procedure shows how to create a new fixed asset group.</span></span> <span data-ttu-id="3df39-105">これは USMF の法人に対して経理担当ロールとデモ データを使用します。</span><span class="sxs-lookup"><span data-stu-id="3df39-105">It uses the Accountant role and demo data for the USMF legal entity.</span></span>
 

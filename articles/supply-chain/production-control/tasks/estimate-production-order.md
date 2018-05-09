@@ -17,15 +17,15 @@ ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 454ecd9bfa19a2486610d9a412057f42ae2d68a2
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 90d6dd1886deb9ec5700e1db9b5a3aaf7f83bdf8
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="estimate-a-production-order"></a><span data-ttu-id="f4cef-103">製造オーダーの見積</span><span class="sxs-lookup"><span data-stu-id="f4cef-103">Estimate a production order</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="f4cef-104">USMF デモ データ会社または用意したデータ セットを使用して、この手順を実行できます。</span><span class="sxs-lookup"><span data-stu-id="f4cef-104">You can run this procedure by using the USMF demo data company or your own data set.</span></span> <span data-ttu-id="f4cef-105">どちらの場合も、ステータスが [作成済] である未処理の製造オーダーが必要です。</span><span class="sxs-lookup"><span data-stu-id="f4cef-105">In both cases, you need to have an open production order that has the Created status.</span></span> <span data-ttu-id="f4cef-106">これは、製造オーダーのライフ サイクルを説明する 7 個の手順の 2 番目です。</span><span class="sxs-lookup"><span data-stu-id="f4cef-106">This is the second procedure out of seven which explains the production order lifecycle.</span></span>
 

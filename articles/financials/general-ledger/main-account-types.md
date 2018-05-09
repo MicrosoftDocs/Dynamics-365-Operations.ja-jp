@@ -19,16 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: cba8d8483323c591deb6de5530cc809781707fbf
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 259881e2fcd5c2862b930cf37ebb607858014bea
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="main-account-types"></a><span data-ttu-id="93255-103">主勘定タイプ</span><span class="sxs-lookup"><span data-stu-id="93255-103">Main account types</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="93255-104">主勘定タイプにより、勘定科目表での主勘定の使用方法が決まります。</span><span class="sxs-lookup"><span data-stu-id="93255-104">The main account types determine how a main account is used in the chart of accounts.</span></span>
 

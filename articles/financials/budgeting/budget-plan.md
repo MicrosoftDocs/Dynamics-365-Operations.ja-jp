@@ -19,16 +19,16 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: c8af5d3343bf8376dfec5a41cd03e1325b10b978
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 510775079fc5193e243eb251396d79433ce37f4b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="budget-planning"></a><span data-ttu-id="65007-105">予算計画</span><span class="sxs-lookup"><span data-stu-id="65007-105">Budget planning</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="65007-106">このラボの目的は、予算計画領域で、Microsoft Dynamics 365 for Finance and Operations 機能の更新のガイドされたビューを提供することです。</span><span class="sxs-lookup"><span data-stu-id="65007-106">The objective of this lab is to provide a guided view of Microsoft Dynamics 365 for Finance and Operations functionality updates in Budget planning area.</span></span> <span data-ttu-id="65007-107">このラボの目的は、予算計画モジュールのクイック コンフィギュレーションの例、およびこのコンフィギュレーションを使用してどのように予算計画が達成されるかのショーケースを示すことです。</span><span class="sxs-lookup"><span data-stu-id="65007-107">The intent of this lab is to illustrate a quick configuration example of budget planning module and showcase how budget planning can be accomplished using this configuration.</span></span>  <span data-ttu-id="65007-108">この実習では、次の業務プロセスまたはタスクに特に焦点を合わせます。-    - 予算計画のための組織階層の作成およびユーザー セキュリティの構成   - 予算計画シナリオ、予算計画の列、レイアウトおよび Excel テンプレートの定義   - 予算計画プロセスの作成および有効化   - 総勘定元帳からの実績読み込みによる予算計画ドキュメントの作成   - 配賦を使用した予算計画ドキュメント データの調整   - Excel での予算計画の編集</span><span class="sxs-lookup"><span data-stu-id="65007-108">This lab will focus specifically on the following business processes or tasks -    - Creating organizational hierarchy for budget planning and configuring user security   - Defining budget plan scenarios, budget plan columns, layouts and Excel templates   - Creating and activating budget planning process   - Creating budget plan document by pulling in actuals from General ledger   - Using allocations to adjust budget plan document data   - Editing budget plan document data in Excel</span></span> 
 

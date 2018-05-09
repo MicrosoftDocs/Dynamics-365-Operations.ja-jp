@@ -20,16 +20,16 @@ ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 53141f29cdcd847611e1b6a8dc4c2ded1f09a9c9
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 1f4c03d886a7a6e98276422cd954954fe6e8a12e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="cost-categories-used-in-production-control-and-project-management-accounting"></a><span data-ttu-id="6ce52-104">生産管理、およびプロジェクト管理会計で使用される原価カテゴリ</span><span class="sxs-lookup"><span data-stu-id="6ce52-104">Cost categories used in Production control and Project management accounting</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="6ce52-105">生産作業によっては、プロジェクト時間の見積と報告に適用できます。</span><span class="sxs-lookup"><span data-stu-id="6ce52-105">Some types of production work can apply to project time estimates and reporting.</span></span> <span data-ttu-id="6ce52-106">この記事は、生産とプロジェクトのために、これらの種類の生産作業に定義する必要のある原価カテゴリに関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="6ce52-106">This article provides information about the cost categories that you must define for these types of production work for production and project purposes.</span></span>
 

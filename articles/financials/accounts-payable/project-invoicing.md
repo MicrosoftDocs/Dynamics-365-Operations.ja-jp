@@ -19,16 +19,16 @@ ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 1198da234b9e036e22c29da3c4ab5ec8e0a44431
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: c4b53775c9c11a86fcd4fa0c57c6de9d458f93bb
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="project-invoicing"></a><span data-ttu-id="f83ba-104">プロジェクト請求</span><span class="sxs-lookup"><span data-stu-id="f83ba-104">Project invoicing</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="f83ba-105">この記事では、時間/実費払プロジェクトおよび固定価格プロジェクトでの、プロジェクト請求の概要を説明します。</span><span class="sxs-lookup"><span data-stu-id="f83ba-105">This article provides an overview of project invoicing for Time and material projects and Fixed-price projects.</span></span> <span data-ttu-id="f83ba-106">ここには、仮発行請求書 (仮請求書)、請求の管理、分割払請求、仕入先請求、および貸方票に関する情報が含まれます。</span><span class="sxs-lookup"><span data-stu-id="f83ba-106">It includes information about invoice proposals (preliminary invoices), invoice control, on-account invoicing, vendor invoicing, and credit notes.</span></span>
 

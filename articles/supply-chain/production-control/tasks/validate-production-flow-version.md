@@ -17,15 +17,15 @@ ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 6e76afac726e9b9fbfda39ec23f8be35aded60a9
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: bc563eac09fffc191a34041da7c91e7a3ffbd2e1
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="validate-a-production-flow-and-version"></a><span data-ttu-id="22ea1-103">生産フローおよびバージョンの検証</span><span class="sxs-lookup"><span data-stu-id="22ea1-103">Validate a production flow and version</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="22ea1-104">この手順では、新しい生産フローとリーン生産の最初のバージョンを作成する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="22ea1-104">This procedure shows how to create a new production flow and a first version for lean manufacturing.</span></span> <span data-ttu-id="22ea1-105">必要条件: リーン生産の生産パラメーターおよびクラス時間の測定単位を定義する必要があります。</span><span class="sxs-lookup"><span data-stu-id="22ea1-105">Prerequisites: The production parameters for Lean manufacturing and the units of measure for class time must be defined.</span></span> <span data-ttu-id="22ea1-106">バリュー ストリームと生産グループを定義する必要があります。</span><span class="sxs-lookup"><span data-stu-id="22ea1-106">You need to define a Value stream and a Production group.</span></span> <span data-ttu-id="22ea1-107">生産フローおよび活動の概念をよく理解するため、リーン生産についてのホワイト ペーパーを参照してください。</span><span class="sxs-lookup"><span data-stu-id="22ea1-107">Refer to the white papers on Lean manufacturing to familiarize yourself with the concepts of production flows and activities.</span></span> <span data-ttu-id="22ea1-108">この手順では、デモ データの法人 USMF を参照します。</span><span class="sxs-lookup"><span data-stu-id="22ea1-108">This procedure refers to the legal entity USMF in demo data.</span></span> <span data-ttu-id="22ea1-109">ただし、法人がリーン生産としてコンフィギュレーションされていると仮定する場合、他の法人を使用できます。</span><span class="sxs-lookup"><span data-stu-id="22ea1-109">However, assuming that the legal entity is configured for Lean manufacturing, other legal entities can be used.</span></span>
 

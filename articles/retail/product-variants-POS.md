@@ -20,16 +20,16 @@ ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application update 5, AX 8.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 933875f56b0f47990cb1cb767f84b23b9c9710d4
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: ff11cf7b23c48675b108d7d03d241fcec2cb792a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="inventory-lookup-in-the-point-of-sale"></a><span data-ttu-id="9aec6-103">販売時点管理の在庫検索</span><span class="sxs-lookup"><span data-stu-id="9aec6-103">Inventory lookup in the Point of Sale</span></span> 
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 <span data-ttu-id="9aec6-104">販売時点管理 (POS) での在庫の検索は、小売業者がリアルタイムのオペレーショナル エクセレンスを達成し、店舗、POS、およびバック オフィスに接続することにより情報を取得できるようにします。</span><span class="sxs-lookup"><span data-stu-id="9aec6-104">Inventory lookup in the point of sale (POS) helps retailers achieve real-time operational excellence and gain insights by connecting stores, the POS, and the back office.</span></span> <span data-ttu-id="9aec6-105">この機能は、店舗と流通センター間での製品在庫の正確なリアルタイム ビューを提供します。</span><span class="sxs-lookup"><span data-stu-id="9aec6-105">This functionality provides an accurate real-time view of product inventory across stores and distribution centers.</span></span> <span data-ttu-id="9aec6-106">また、リアルタイムで計画在庫を改善することにより、小売業者がさらに効率性およびコスト削減を向上するのを助けます。</span><span class="sxs-lookup"><span data-stu-id="9aec6-106">It also helps retailers drive additional efficiencies and cost savings by improving inventory planning in real time.</span></span>
 

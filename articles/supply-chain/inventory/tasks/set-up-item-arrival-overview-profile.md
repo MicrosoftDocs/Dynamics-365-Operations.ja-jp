@@ -17,15 +17,15 @@ ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 5f9df0afe90bcb619304c39b53165e3fe2970ec3
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 24945597255c29abbe8eb1d60a6cbca51e0498be
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="set-up-an-item-arrival-overview-profile"></a><span data-ttu-id="d07aa-103">着荷の概要プロファイルの設定</span><span class="sxs-lookup"><span data-stu-id="d07aa-103">Set up an item arrival overview profile</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="d07aa-104">このタスクでは、着荷の概要プロファイルの設定を中心に説明します。</span><span class="sxs-lookup"><span data-stu-id="d07aa-104">This task focuses on the setup of an arrival overview profile.</span></span> <span data-ttu-id="d07aa-105">着荷の概要プロファイルは、ユーザーが [着荷の概要] ページを開いた際に適用されるルールのコレクションです。</span><span class="sxs-lookup"><span data-stu-id="d07aa-105">The arrival overview profile is a collection of rules that will be applied when the Arrival overview page is opened by a user.</span></span> <span data-ttu-id="d07aa-106">デモ データの会社 USMF でこの手順を使用できます。</span><span class="sxs-lookup"><span data-stu-id="d07aa-106">You can use this procedure in demo data company USMF.</span></span> <span data-ttu-id="d07aa-107">通常、この手順を実施するのは、入荷係です。</span><span class="sxs-lookup"><span data-stu-id="d07aa-107">This procedure would typically be carried out by a receiving clerk.</span></span>
 

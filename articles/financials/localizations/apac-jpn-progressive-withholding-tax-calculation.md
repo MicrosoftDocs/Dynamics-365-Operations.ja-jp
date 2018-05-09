@@ -19,16 +19,16 @@ ms.author: riluan
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 2bd7a868a4ec01f2027c97231d16528edae3a490
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 44b15e29d20d02cfac9962e25bb588a94c3b587e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="progressive-withholding-tax-for-japan"></a><span data-ttu-id="6c41b-103">日本の累進的源泉徴収税</span><span class="sxs-lookup"><span data-stu-id="6c41b-103">Progressive withholding tax for Japan</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="6c41b-104">このトピックでは、日本の累進的源泉徴収税に関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="6c41b-104">This topic provides information about progressive withholding tax in Japan.</span></span> <span data-ttu-id="6c41b-105">日本の法的要件では、請求金額に比例する期間に基づいて税率が変化します。</span><span class="sxs-lookup"><span data-stu-id="6c41b-105">Per the legal requirement in Japan, the tax percentage changes, depending on the interval in proportion to the invoice amount.</span></span> <span data-ttu-id="6c41b-106">支払金額に基づいて、税金の比率も変わります。</span><span class="sxs-lookup"><span data-stu-id="6c41b-106">The tax ratio also changes, based on the payment amount.</span></span>
 

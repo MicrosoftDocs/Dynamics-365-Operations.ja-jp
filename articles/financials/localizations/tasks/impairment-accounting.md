@@ -16,15 +16,15 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 0e927294056a9a4ae1f688e06d09fa967a4a03a3
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: de8ae748559e330418a4badaf9e16b461ec051c6
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="set-up-impairment-accounting-common-parameters-and-posting-profile-japan"></a><span data-ttu-id="bd521-103">減損会計の共通パラメーターおよび転記プロファイルの設定 (日本)</span><span class="sxs-lookup"><span data-stu-id="bd521-103">Set up impairment accounting common parameters and posting profile (Japan)</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="bd521-104">このタスクでは、減損会計の共通パラメーターと転記プロファイルの定義方法が確認できます。</span><span class="sxs-lookup"><span data-stu-id="bd521-104">Use this task to learn how to define impairment accounting common parameters and posting profiles.</span></span>
 

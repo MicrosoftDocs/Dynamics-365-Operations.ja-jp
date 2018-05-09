@@ -17,15 +17,15 @@ ms.author: jeffbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 5e168c4d0b4e48b73d4a31ca8525e2aeb288846c
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 1699dbd8a9f4c23274facb741528d4b5ef7aecbd
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="configure-a-worker"></a><span data-ttu-id="325e3-103">作業者のコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="325e3-103">Configure a worker</span></span>
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 <span data-ttu-id="325e3-104">この手順では、POSの販売手数料が適用される販売員としての小売従事者を環境設定する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="325e3-104">This procedure demonstrates how to configure a retail worker as a sales representative who is eligible for commission on sales in POS.</span></span> <span data-ttu-id="325e3-105">この手順では、デモ データの会社 USRT を使用します。</span><span class="sxs-lookup"><span data-stu-id="325e3-105">This procedure uses the USRT demo data company.</span></span>
 

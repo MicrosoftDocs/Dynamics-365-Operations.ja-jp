@@ -19,16 +19,16 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 0ddc9d43f62df937a6fb18e15c718c37442bb9b4
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: dd09a0cb965b1a5e17c58cdfbe4a3b9bf2b0086d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="product-configuration-models-overview"></a><span data-ttu-id="10e93-104">製品コンフィギュレーション モデルの概要</span><span class="sxs-lookup"><span data-stu-id="10e93-104">Product configuration models overview</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="10e93-105">この記事では、製品コンフィギュレーション モデルに関連する用語と概念を定義します。</span><span class="sxs-lookup"><span data-stu-id="10e93-105">This article defines terms and concepts that are relevant to product configuration models.</span></span> <span data-ttu-id="10e93-106">製品コンフィギュレーション モデルを使用すると、単一の製品に多数の製品バリアントをコンフィギュレーションするのに使用できるノーブランド商品の構造を構築することができます。</span><span class="sxs-lookup"><span data-stu-id="10e93-106">Product configuration models let you build a generic product structure that can be used to configure many product variants for a single product.</span></span>
 

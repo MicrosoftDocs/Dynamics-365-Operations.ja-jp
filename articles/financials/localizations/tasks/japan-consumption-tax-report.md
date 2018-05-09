@@ -16,15 +16,15 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 49013b006ff020f5faafb7bf29629e7f3cbe359b
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 88586787d7f695ddef35963ba4969d79d16585d7
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="generate-consumption-tax-report-japan"></a><span data-ttu-id="0ad26-103">消費税レポートの生成 (日本)</span><span class="sxs-lookup"><span data-stu-id="0ad26-103">Generate consumption tax report (Japan)</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="0ad26-104">この手順では、日本の消費税申告の生成について説明します。</span><span class="sxs-lookup"><span data-stu-id="0ad26-104">This procedure walks you through generating the Japan consumption tax report.</span></span>
 

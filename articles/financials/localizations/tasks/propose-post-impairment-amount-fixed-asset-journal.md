@@ -16,15 +16,15 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 2e0126e5db7abda3d6da53573f682670f37dae6f
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 11a33ce1b350fd494f74d4cbb0563b945b588ac7
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="propose-and-post-the-impairment-amount-by-using-fixed-asset-journal-japan"></a><span data-ttu-id="5c45c-103">固定資産仕訳帳を使用した減損損失の提案と転記 (日本)</span><span class="sxs-lookup"><span data-stu-id="5c45c-103">Propose and post the impairment amount by using fixed asset journal (Japan)</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="5c45c-104">この手順を用いて、固定資産仕訳帳を使用して減損金額を提示および転記する方法を把握します。</span><span class="sxs-lookup"><span data-stu-id="5c45c-104">Use this procedure to learn how to propose and post the impairment amount by using a fixed asset journal.</span></span>
 

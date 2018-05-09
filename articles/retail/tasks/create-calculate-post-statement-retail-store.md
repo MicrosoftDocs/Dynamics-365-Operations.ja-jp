@@ -17,15 +17,15 @@ ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d9f9888d04f4e2419de9d4a6857a81ae40f6f21a
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 08a8f937f63b93ad15e489dbc53468af6e3827b4
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-calculate-and-post-a-statement-for-a-retail-store"></a><span data-ttu-id="11ff2-103">小売店舗の明細書の作成、計算、および転記</span><span class="sxs-lookup"><span data-stu-id="11ff2-103">Create, calculate, and post a statement for a retail store</span></span>
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 <span data-ttu-id="11ff2-104">この手順では、店舗の明細書を作成、計算、および転記する手動のステップについて説明します。</span><span class="sxs-lookup"><span data-stu-id="11ff2-104">This procedure walks through the manual steps for creating, calculating, and posting a statement for a store.</span></span> <span data-ttu-id="11ff2-105">同じタスクにコンフィギュレーションできるバッチ ジョブもあります。</span><span class="sxs-lookup"><span data-stu-id="11ff2-105">There are also batch jobs that can be configured for the same tasks.</span></span> <span data-ttu-id="11ff2-106">他のトピックで、バッチ ジョブをコンフィギュレーションし、実行するための手順を検索できます。</span><span class="sxs-lookup"><span data-stu-id="11ff2-106">The steps for configuring and running the batch jobs can be found in other topics.</span></span> <span data-ttu-id="11ff2-107">この手順を完了するには、POS で完了して Dynamics AX で取り出されたトランザクションが必要です。</span><span class="sxs-lookup"><span data-stu-id="11ff2-107">To complete this procedure, you must have transactions that were completed in POS and then pulled into Dynamics AX.</span></span> <span data-ttu-id="11ff2-108">この記録では、デモ データの会社 USRT を使用します。</span><span class="sxs-lookup"><span data-stu-id="11ff2-108">This recording uses the USRT company in demo data.</span></span> <span data-ttu-id="11ff2-109">この手順は、Microsoft Dynamics AX を参照する場合があります。</span><span class="sxs-lookup"><span data-stu-id="11ff2-109">This procedure may refer to Microsoft Dynamics AX.</span></span> <span data-ttu-id="11ff2-110">Dynamics AX は現在 Microsoft Dynamics 365 for Operations と呼ばれていることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="11ff2-110">Please note that Dynamics AX is now called Microsoft Dynamics 365 for Operations.</span></span>
 

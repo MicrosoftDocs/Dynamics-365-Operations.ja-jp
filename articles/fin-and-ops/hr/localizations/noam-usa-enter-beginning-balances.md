@@ -18,16 +18,16 @@ ms.author: kherr
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 93333757995c874c2cf03514acff28a54ae7f787
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 49d2de890f99a25b72a41cb879b16220a77c1f24
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="enter-payroll-beginning-balances"></a><span data-ttu-id="014fd-104">給与の期首残高を入力します。</span><span class="sxs-lookup"><span data-stu-id="014fd-104">Enter payroll beginning balances</span></span>
 
-[!INCLUDE [banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 <span data-ttu-id="014fd-105">所得コード、控除、福利厚生、および税額の期首残高を入力するための手順を説明します。</span><span class="sxs-lookup"><span data-stu-id="014fd-105">The topic describes the steps for entering beginning balances for earning codes, deductions, benefits, and taxes.</span></span> <span data-ttu-id="014fd-106">この情報は、パートナーが別のシステムから新しい給与実装のデータを転送する場合に役立ちます。</span><span class="sxs-lookup"><span data-stu-id="014fd-106">This information is valuable for partners who transfer data for a new Payroll implementation from another system.</span></span> <span data-ttu-id="014fd-107">給与の期首残高を入力を準備する上で、次の情報を確認します。</span><span class="sxs-lookup"><span data-stu-id="014fd-107">To prepare to enter beginning payroll balances, we verify the following information:</span></span>
 

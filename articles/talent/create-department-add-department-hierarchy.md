@@ -19,16 +19,16 @@ ms.author: shielas
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 3874c2d97117ccc19916a9ad32971c8c8cea56f6
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: cb23a3bab7388afb3adc41f9bd8ecf9fc4e2d624
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="create-a-department-and-associate-it-with-the-department-hierarchy"></a><span data-ttu-id="1dabe-106">部門を作成し、部門階層に関連付ける</span><span class="sxs-lookup"><span data-stu-id="1dabe-106">Create a department and associate it with the department hierarchy</span></span>
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 <span data-ttu-id="1dabe-107">部門は、組織のカテゴリまたは機能領域を表す作業単位です。</span><span class="sxs-lookup"><span data-stu-id="1dabe-107">A department is an operating unit that represents a category or functional area of an organization.</span></span> <span data-ttu-id="1dabe-108">部門は、販売、会計、または人事管理など、組織内の特定の領域を担当します。</span><span class="sxs-lookup"><span data-stu-id="1dabe-108">A department is responsible for a specific area of the organization, such as sales, accounting, or human resources.</span></span> <span data-ttu-id="1dabe-109">機能領域の報告に部門を使用できます。</span><span class="sxs-lookup"><span data-stu-id="1dabe-109">You can use departments to report on functional areas.</span></span> <span data-ttu-id="1dabe-110">部門は損益の職責を持つ場合があります。</span><span class="sxs-lookup"><span data-stu-id="1dabe-110">Departments might have profit and loss responsibility.</span></span>
 

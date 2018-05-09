@@ -16,15 +16,15 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: f096d969faf6f92770c8f301acde563b93bb525c
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 36db4469d08e64bf78ff3e121f71ee360f766382
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-an-accelerated-depreciation-document-and-enter-usage-data-japan"></a><span data-ttu-id="253bf-103">増加償却ドキュメントの作成および使用状況データの入力 (日本)</span><span class="sxs-lookup"><span data-stu-id="253bf-103">Create an accelerated depreciation document and enter usage data (Japan)</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="253bf-104">日本では、加速償却は、原則ドキュメントごとに申告されます。</span><span class="sxs-lookup"><span data-stu-id="253bf-104">For Japan, Accelerated depreciation is declared on a per document basis.</span></span> <span data-ttu-id="253bf-105">各ドキュメントには複数の固定資産を含めることができます。</span><span class="sxs-lookup"><span data-stu-id="253bf-105">Each document can contain multiple fixed assets.</span></span> <span data-ttu-id="253bf-106">加速償却額を取得するためには、加速償却ドキュメントで過剰使用率を計算し、通常の減価償却量によって乗算する必要があります。</span><span class="sxs-lookup"><span data-stu-id="253bf-106">You must calculate an overuse rate on the accelerated depreciation document and multiply it by the ordinary depreciation amount to get the amount for the accelerated depreciation.</span></span> 
 

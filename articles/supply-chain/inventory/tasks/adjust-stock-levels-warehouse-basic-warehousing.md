@@ -17,15 +17,15 @@ ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 84ed2bfa708664674af781c575cfab35640e7079
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 890d501bf8b111ccd0698372f9df1dd63c2039a0
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="adjust-stock-levels-in-the-warehouse-basic-warehousing"></a><span data-ttu-id="ecdb4-103">倉庫の在庫レベルの調整 (基本倉庫)</span><span class="sxs-lookup"><span data-stu-id="ecdb4-103">Adjust stock levels in the warehouse (basic warehousing)</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="ecdb4-104">この手順では、倉庫にある製品の在庫レベルを調整するために、在庫調整仕訳帳を作成して転記するプロセスを説明します。</span><span class="sxs-lookup"><span data-stu-id="ecdb4-104">This procedure walks you through the process of creating and posting an inventory adjustment journal in order to adjust stock levels of products in the warehouse.</span></span> <span data-ttu-id="ecdb4-105">これを開始する前に、在庫調整用の在庫仕訳帳名を設定してある必要があります。</span><span class="sxs-lookup"><span data-stu-id="ecdb4-105">You need to have an inventory journal name set up for inventory adjustments before you start this.</span></span> <span data-ttu-id="ecdb4-106">デモ データ会社 USMF または独自のデータを使用してこの手順の説明を見ることができます。</span><span class="sxs-lookup"><span data-stu-id="ecdb4-106">You can walk through this procedure in demo data company USMF, or using your own data.</span></span> <span data-ttu-id="ecdb4-107">通常、これらのタスクを実施するのは、倉庫の従業員です。</span><span class="sxs-lookup"><span data-stu-id="ecdb4-107">These tasks would normally be carried out by a warehouse employee.</span></span>
 

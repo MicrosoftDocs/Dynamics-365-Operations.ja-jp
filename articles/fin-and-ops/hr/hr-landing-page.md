@@ -17,16 +17,16 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 437e6e0cd3052083bb1094f42bb741d491b27242
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 341cba34366fee61d5e65ac73326c5d3c9c274a9
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="welcome-to-human-resources"></a><span data-ttu-id="d3ec6-105">人事管理へようこそ</span><span class="sxs-lookup"><span data-stu-id="d3ec6-105">Welcome to human resources</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="d3ec6-106">人事管理は、多くの日常的な記録タスクを合理化し、組織の多数のスタッフ配置に関連するプロセスを自動化します。</span><span class="sxs-lookup"><span data-stu-id="d3ec6-106">Human resources streamlines many routine recordkeeping tasks and automates a number of processes related to staffing your organization.</span></span> <span data-ttu-id="d3ec6-107">また、人事スタッフが監督すべき領域を管理するためのフレームワークも提供します。</span><span class="sxs-lookup"><span data-stu-id="d3ec6-107">It also provides a framework for human resources staff to manage areas of oversight.</span></span> <span data-ttu-id="d3ec6-108">これらの領域には、従業員の採用およびつなぎ留め、給付金管理、トレーニング、勤務評価、変更管理が含まれます。</span><span class="sxs-lookup"><span data-stu-id="d3ec6-108">These areas include employee recruitment and retention, benefits administration, training, performance reviews, and change management.</span></span>
 

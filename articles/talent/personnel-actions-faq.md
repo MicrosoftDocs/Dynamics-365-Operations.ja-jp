@@ -18,16 +18,16 @@ ms.author: shielas
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: f3abbb2d124ee6c11e46e3680a342ecb12a12ec3
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 71bd48736048c266603b937efb9d137b1e17b6ff
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="personnel-actions-faq"></a><span data-ttu-id="5feb0-104">人事のアクション [FAQ]</span><span class="sxs-lookup"><span data-stu-id="5feb0-104">Personnel actions [FAQ]</span></span>
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 <span data-ttu-id="5feb0-105">このトピックでは、組織で個人のアクションを使用する場合に生じる質問に答えます。</span><span class="sxs-lookup"><span data-stu-id="5feb0-105">This topic contains answers to questions that you might have if your organization uses personnel actions.</span></span> <span data-ttu-id="5feb0-106">個人のアクションは、特定の個人に関連するタスクを実行する際に行う必要がある追加手順です。</span><span class="sxs-lookup"><span data-stu-id="5feb0-106">Personnel actions are additional steps that you must complete when you perform certain personnel-related tasks.</span></span> <span data-ttu-id="5feb0-107">個人のアクションが必要なタスクの例は、新しい職位を作成、既存の職位の値を変更、新しい作業者を雇う、作業者を転送する、作業者の報酬を変更、職位の割り当てを変更または作業者を終了することなでです。</span><span class="sxs-lookup"><span data-stu-id="5feb0-107">Examples of tasks that might require personnel actions are when you create new positions, modify existing position values, hire new workers, transfer workers, change worker compensation, change position assignments, or terminate workers.</span></span>
 

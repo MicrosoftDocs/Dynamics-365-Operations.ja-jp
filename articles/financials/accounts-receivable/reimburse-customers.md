@@ -19,16 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 2d1a05ffe39c208748a316bd711d9442f1ed875a
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: c3bee87b1d82dbe3d1c6de78a26633f2e1f5e92f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="reimburse-customers"></a><span data-ttu-id="7997f-104">顧客への払戻し</span><span class="sxs-lookup"><span data-stu-id="7997f-104">Reimburse customers</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="7997f-105">この記事では、顧客グループの払い戻しトランザクションを作成する方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="7997f-105">This article explains how to create reimbursement transactions for a group of customers.</span></span> <span data-ttu-id="7997f-106">顧客に貸方残高がある場合、顧客に残高金額を払い戻すことができます。</span><span class="sxs-lookup"><span data-stu-id="7997f-106">If a customer has a credit balance, you can reimburse the customer for the amount of the balance.</span></span> 
 

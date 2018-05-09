@@ -20,16 +20,16 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: fa40733e3f1310869ead8b0ac774bb621637e250
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: ae0193080fea877ce4302b891c9e8a3bee856a7d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="report-production-orders-as-finished"></a><span data-ttu-id="a4b38-104">製造オーダーの完了済としての報告</span><span class="sxs-lookup"><span data-stu-id="a4b38-104">Report production orders as finished</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="a4b38-105">完了レポートは生産ステージです。</span><span class="sxs-lookup"><span data-stu-id="a4b38-105">Report as finished is a production stage.</span></span> <span data-ttu-id="a4b38-106">この段階では、完成品は製造オーダーから在庫へ報告され、移動されます。</span><span class="sxs-lookup"><span data-stu-id="a4b38-106">At this stage, a finished product is reported and moved from the production order to the inventory.</span></span>
 

@@ -17,15 +17,15 @@ ms.author: knelson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 2b8a896c764e26c6fbb13714932d7652bf6ddc09
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: e4f1981bb35f7740bda6f662fd13f3505d1f8fda
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="configure-standard-costs-for-labor-and-expenses"></a><span data-ttu-id="6cce9-103">労務および経費の標準原価のコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="6cce9-103">Configure standard costs for labor and expenses</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="6cce9-104">この手順では、労働者の標準原価とプロジェクトの経費を設定する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="6cce9-104">This procedure shows you how to set up standard costs for labor and expenses for a project.</span></span> <span data-ttu-id="6cce9-105">このタスクでは、USSI データ セットを使用します。</span><span class="sxs-lookup"><span data-stu-id="6cce9-105">This task uses the USSI data set.</span></span>
 

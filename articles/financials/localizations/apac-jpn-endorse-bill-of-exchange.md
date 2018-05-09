@@ -18,16 +18,16 @@ ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 712578ea9293fc4ca1fb0cafba5368bf600b6c76
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: b7959d69abab2b2ec8808d1664b541c58061bfbe
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="pay-a-vendor-by-endorsing-a-bill-of-exchange-for-japan"></a><span data-ttu-id="c4d6a-103">日本での受取手形の裏書による仕入先への支払</span><span class="sxs-lookup"><span data-stu-id="c4d6a-103">Pay a vendor by endorsing a bill of exchange for Japan</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="c4d6a-104">日本では、多くの場合、為替手形 (BOE) は仕入先に裏書きされ、支払方法として使用されます。</span><span class="sxs-lookup"><span data-stu-id="c4d6a-104">In Japan, bills of exchange (BOE) are often endorsed to a vendor and used as a method of payment.</span></span> <span data-ttu-id="c4d6a-105">Microsoft Dynamics 365 for Finance and Operations の BOE のリスト ページでは、BOE のライフ サイクルの集中管理を提供します。</span><span class="sxs-lookup"><span data-stu-id="c4d6a-105">In Microsoft Dynamics 365 for Finance and Operations, a list page for BOEs provides centralized management of the BOE lifecycle.</span></span>
 

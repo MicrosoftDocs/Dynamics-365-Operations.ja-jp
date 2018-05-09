@@ -19,16 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: f08131e01fddb259d3bb537b1625ea2615a1e958
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 787c958f07bc3fbd442be8132b55de7f3e769cae
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="create-a-customer-invoice"></a><span data-ttu-id="e4f71-103">顧客請求書の作成</span><span class="sxs-lookup"><span data-stu-id="e4f71-103">Create a customer invoice</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="e4f71-104">**販売注文の顧客請求書**は、売上に関連し、組織が顧客に提供する請求書です。</span><span class="sxs-lookup"><span data-stu-id="e4f71-104">A **customer invoice for a sales order** is a bill that is related to a sale, and that an organization gives to a customer.</span></span> <span data-ttu-id="e4f71-105">この種類の顧客請求書は、注文明細行および品目番号を含む販売注文に基づいて作成されます。</span><span class="sxs-lookup"><span data-stu-id="e4f71-105">This type of customer invoice is created based on a sales order, which includes order lines and item numbers.</span></span> <span data-ttu-id="e4f71-106">品目番号が指定され、元帳に転記されます。</span><span class="sxs-lookup"><span data-stu-id="e4f71-106">Item numbers are specified and posted in the ledger.</span></span> <span data-ttu-id="e4f71-107">補助元帳仕訳帳は、販売注文の顧客請求書では使用できません。</span><span class="sxs-lookup"><span data-stu-id="e4f71-107">Subledger journal entries aren't available for a customer invoice for a sales order.</span></span> <span data-ttu-id="e4f71-108">詳細については、「[販売注文請求書の作成](tasks/create-sales-order-invoices.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e4f71-108">For more information, see [Create sales order invoices](tasks/create-sales-order-invoices.md).</span></span>
 

@@ -19,16 +19,16 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 69b9c5590e6f9311696bbbed2e63a6eeba2a90bf
-ms.openlocfilehash: 3f527911183a6e9b335f30d472ff57144e6a5aff
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: c376273f901f0c860aea92db587a1b156ab079b5
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="requests-for-quotation-rfqs"></a><span data-ttu-id="09069-104">見積依頼 (RFQs)</span><span class="sxs-lookup"><span data-stu-id="09069-104">Requests for quotation (RFQs)</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="09069-105">このトピックでは、見積依頼 (RFQs) の概要を説明します。</span><span class="sxs-lookup"><span data-stu-id="09069-105">This topic provides an overview of requests for quotation (RFQs).</span></span> <span data-ttu-id="09069-106">組織は、購入する必要がある品目やサービスに対して、いくつかの仕入先を競合させてより良い条件を得ようとする場合に RFQs を発行します。</span><span class="sxs-lookup"><span data-stu-id="09069-106">Organizations issue RFQs when they want to receive competitive offers from several vendors for the items or services that they must purchase.</span></span> <span data-ttu-id="09069-107">RFQ で、仕入先に指定した品目の数量の価格や配送時間を提供するように求めます。</span><span class="sxs-lookup"><span data-stu-id="09069-107">In an RFQ, you ask vendors to provide the prices and delivery times for the item quantities that you specify.</span></span>
 <span data-ttu-id="09069-108">また、仕入先に、送料などの雑費があるか、大型注文や仕入先請求書の早期支払に対して割引を提供するかどうかを問い合わせることもできます。</span><span class="sxs-lookup"><span data-stu-id="09069-108">You can also ask vendors to specify whether there are any incidental charges, such as shipping costs, or any discounts for large orders or early payment of the vendor invoice.</span></span>

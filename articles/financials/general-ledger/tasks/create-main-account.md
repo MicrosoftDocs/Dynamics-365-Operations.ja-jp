@@ -16,15 +16,15 @@ ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 286f7d94b13d4869704d60851dc01e5a637a5b52
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 65e6cfdc40a0a37c8bbd5f840dba5f76403fdc69
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-a-main-account"></a><span data-ttu-id="6bbd4-103">主勘定の作成</span><span class="sxs-lookup"><span data-stu-id="6bbd4-103">Create a main account</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="6bbd4-104">このタスクのガイドは、既存の勘定科目表への主勘定の追加方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="6bbd4-104">This task guide steps through adding a main account to an existing chart of accounts.</span></span> <span data-ttu-id="6bbd4-105">このレコードでは、USMF デモ会社を使用します。</span><span class="sxs-lookup"><span data-stu-id="6bbd4-105">This recording uses the USMF demo company.</span></span>  
 

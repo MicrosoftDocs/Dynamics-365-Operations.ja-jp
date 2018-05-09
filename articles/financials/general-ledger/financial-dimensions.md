@@ -18,16 +18,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 3d3423b1d3cc235fa10f0a26aa5cd880d08be45b
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: dccd8cc7e99454a2adb1c710d73792e62d510bd7
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="financial-dimensions"></a><span data-ttu-id="35448-103">財務分析コード</span><span class="sxs-lookup"><span data-stu-id="35448-103">Financial dimensions</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="35448-104">このトピックは、財務分析コードのさまざまなタイプと設定方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="35448-104">This topic explains the various types of financial dimensions and how they are set up.</span></span>
 
@@ -51,7 +51,7 @@ ms.lasthandoff: 04/13/2018
 
 ## <a name="custom-dimensions"></a><span data-ttu-id="35448-124">カスタム分析コード</span><span class="sxs-lookup"><span data-stu-id="35448-124">Custom dimensions</span></span>
 
-<span data-ttu-id="35448-125">ユーザー定義の財務分析コードを作成するには、[値の使用元] フィールドで**&lt;カスタム分析コード&gt;**を選択します。</span><span class="sxs-lookup"><span data-stu-id="35448-125">To create a user-defined financial dimension, in the **Use values from** field, select **&lt; Custom dimension &gt;**.</span></span> <span data-ttu-id="35448-126">また主勘定マスクを指定して、分析コード値に対して入力できる情報の量やタイプを制限することもできます。</span><span class="sxs-lookup"><span data-stu-id="35448-126">You can also specify an account mask to limit the amount and type of information that you can enter for dimension values.</span></span> <span data-ttu-id="35448-127">文字またはハイフン (-) など、各分析コード値の変化しない文字を入力できます。</span><span class="sxs-lookup"><span data-stu-id="35448-127">You can enter characters that remain the same for each dimension value, such as letters or a hyphen (-).</span></span> <span data-ttu-id="35448-128">また、分析コード値が作成されるたびに変更される、番号と文字のプレースホルダーとなる番号記号 (\#) とアンパサンド (&) を入力できます。</span><span class="sxs-lookup"><span data-stu-id="35448-128">You can also enter number signs (\#) and ampersands (&) as placeholders for letters and numbers that will change every time that a dimension value is created.</span></span> <span data-ttu-id="35448-129">番号のプレースホルダーとして番号記号 (\#)、文字のプレースホルダーとしてアンパサンド (&) を使用します。</span><span class="sxs-lookup"><span data-stu-id="35448-129">Use a number sign (\#) as a placeholder for a number and an ampersand (&) as a placeholder for a letter.</span></span> <span data-ttu-id="35448-130">マスクの書式設定のためのフィールドは、[値の使用元] フィールドで**&lt;カスタム分析コード&gt;**を選択した場合にのみ使用できます。</span><span class="sxs-lookup"><span data-stu-id="35448-130">The field for the format mask is available only when you select **&lt; Custom dimension &gt;** in the **Use values from** field.</span></span>
+<span data-ttu-id="35448-125">ユーザー定義の財務分析コードを作成するには、[値の使用元] フィールドで**&lt;カスタム分析コード&gt;** を選択します。</span><span class="sxs-lookup"><span data-stu-id="35448-125">To create a user-defined financial dimension, in the **Use values from** field, select **&lt; Custom dimension &gt;**.</span></span> <span data-ttu-id="35448-126">また主勘定マスクを指定して、分析コード値に対して入力できる情報の量やタイプを制限することもできます。</span><span class="sxs-lookup"><span data-stu-id="35448-126">You can also specify an account mask to limit the amount and type of information that you can enter for dimension values.</span></span> <span data-ttu-id="35448-127">文字またはハイフン (-) など、各分析コード値の変化しない文字を入力できます。</span><span class="sxs-lookup"><span data-stu-id="35448-127">You can enter characters that remain the same for each dimension value, such as letters or a hyphen (-).</span></span> <span data-ttu-id="35448-128">また、分析コード値が作成されるたびに変更される、番号と文字のプレースホルダーとなる番号記号 (\#) とアンパサンド (&) を入力できます。</span><span class="sxs-lookup"><span data-stu-id="35448-128">You can also enter number signs (\#) and ampersands (&) as placeholders for letters and numbers that will change every time that a dimension value is created.</span></span> <span data-ttu-id="35448-129">番号のプレースホルダーとして番号記号 (\#)、文字のプレースホルダーとしてアンパサンド (&) を使用します。</span><span class="sxs-lookup"><span data-stu-id="35448-129">Use a number sign (\#) as a placeholder for a number and an ampersand (&) as a placeholder for a letter.</span></span> <span data-ttu-id="35448-130">マスクの書式設定のためのフィールドは、[値の使用元] フィールドで**&lt;カスタム分析コード&gt;** を選択した場合にのみ使用できます。</span><span class="sxs-lookup"><span data-stu-id="35448-130">The field for the format mask is available only when you select **&lt; Custom dimension &gt;** in the **Use values from** field.</span></span>
 
 <span data-ttu-id="35448-131">**例**</span><span class="sxs-lookup"><span data-stu-id="35448-131">**Example**</span></span>
 

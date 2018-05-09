@@ -19,16 +19,16 @@ ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 3e7f34fe8c84a6263107c1e4418f554570e71e63
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: e6cd60059867cc1ff3d73567cb06eb005f42de75
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="bank-payment-fees-covered-by-vendors-in-japan"></a><span data-ttu-id="1564c-103">仕入先負担の銀行支払手数料 (日本)</span><span class="sxs-lookup"><span data-stu-id="1564c-103">Bank payment fees covered by vendors in Japan</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="1564c-104">日本では、銀行支払手数料は通常、仕入先 (受領当事者) によって負担されます。</span><span class="sxs-lookup"><span data-stu-id="1564c-104">In Japan, the bank payment fees are usually covered by vendors (the receiving party).</span></span> <span data-ttu-id="1564c-105">このトピックでは、仕入先負担の銀行支払手数料についてよく寄せられる質問に回答します。</span><span class="sxs-lookup"><span data-stu-id="1564c-105">This topic answers some of the frequently asked questions about bank payment fees that are covered by vendors.</span></span>
 

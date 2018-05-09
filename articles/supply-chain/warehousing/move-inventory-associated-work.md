@@ -18,16 +18,16 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 7d81397ed30751f5b3dd7c46ffe6b27b8153c8f9
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 2889f04017bdd20be05174146ba88a24cbefacbb
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="movement-of-inventory-with-associated-work-in-warehouse-management"></a><span data-ttu-id="dc9d6-103">倉庫管理における作業が関連付けられている在庫の移動</span><span class="sxs-lookup"><span data-stu-id="dc9d6-103">Movement of inventory with associated work in Warehouse management</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="dc9d6-104">在庫移動を使用すると、引当済の在庫を移動することが許可されている倉庫作業者を指定できます。</span><span class="sxs-lookup"><span data-stu-id="dc9d6-104">Using movement of inventory, you can decide which warehouse workers are allowed to move reserved inventory.</span></span> <span data-ttu-id="dc9d6-105">これにより、作業者が既に作成されているピッキング作業に対して新しいピッキング場所を選択できないように規制している倉庫内での柔軟性が実現します。</span><span class="sxs-lookup"><span data-stu-id="dc9d6-105">This provides a flexibility in regulated warehouses where you can decide to not allow a worker to choose a new pick location for pick work that is already created.</span></span> <span data-ttu-id="dc9d6-106">また、倉庫マネージャーは、経験の浅い従業員がどの機能を管理するかを制御できます。</span><span class="sxs-lookup"><span data-stu-id="dc9d6-106">It also allows a warehouse manager to control which capabilities some less experienced workers should have.</span></span>
 

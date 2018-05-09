@@ -17,15 +17,15 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: cd9842a14d512353bda399a9d83eb7296a75d982
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 3a6a02c2eca3cecc8b7519a5951a958aa5bc637b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="set-up-a-carrier-fuel-index"></a><span data-ttu-id="d9fa0-103">配送業者の燃料インデックスの設定</span><span class="sxs-lookup"><span data-stu-id="d9fa0-103">Set up a carrier fuel index</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="d9fa0-104">このガイドでは、燃料インデックス領域、燃料インデックス、および輸送業者の燃料インデックスを作成する方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="d9fa0-104">This guide shows how to create a fuel index region, a fuel index and a carrier fuel index.</span></span> <span data-ttu-id="d9fa0-105">燃料インデックス領域は燃料インデックスを適用する地域を指定し、燃料インデックスは特定の期間の燃料価格を指定します。</span><span class="sxs-lookup"><span data-stu-id="d9fa0-105">The fuel index region specifies which region the fuel index should apply to, and the fuel index specifies a fuel price for a particular period of time.</span></span> <span data-ttu-id="d9fa0-106">時間経過に伴う燃料価格の変化を反映させる場合は、輸送業者に複数の燃料インデックスを関連付けることができます。</span><span class="sxs-lookup"><span data-stu-id="d9fa0-106">To reflect the change in fuel prices over time, you can associate multiple fuel indexes with a carrier.</span></span>  <span data-ttu-id="d9fa0-107">通常これらのタスクは配送コーディネーターが行います。</span><span class="sxs-lookup"><span data-stu-id="d9fa0-107">These tasks are normally done by a transportation coordinator.</span></span> <span data-ttu-id="d9fa0-108">デモ データの会社 USMF でこの手順を使用するか、または独自のデータを使用できます。</span><span class="sxs-lookup"><span data-stu-id="d9fa0-108">You can use this procedure in demo data company USMF or using your own data.</span></span>
 

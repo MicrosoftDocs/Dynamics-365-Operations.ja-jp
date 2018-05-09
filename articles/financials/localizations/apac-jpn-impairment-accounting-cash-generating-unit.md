@@ -18,16 +18,16 @@ ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 165b8c8a23f04f104eae695bf56a8fa4eae23011
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 0edb9e2292ea3aa219e6143e7019eafa47c49d31
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="fixed-asset-impairment-accounting-on-cash-generating-units-for-japan"></a><span data-ttu-id="05edf-103">日本のキャッシュ生成単位の固定資産減損会計</span><span class="sxs-lookup"><span data-stu-id="05edf-103">Fixed asset impairment accounting on cash-generating units for Japan</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="05edf-104">このトピックでは、Microsoft Dynamics 365 for Finance and Operations に含まれる固定資産の減損の機能を紹介します。</span><span class="sxs-lookup"><span data-stu-id="05edf-104">This topic introduces the features for fixed asset impairment that are included in Microsoft Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="05edf-105">この記事の主な目的は、ユーザーに減損会計の概念モデルの概要を示すことです。</span><span class="sxs-lookup"><span data-stu-id="05edf-105">The primary objective of this article is to give the user an overview of the conceptual model for impairment accounting.</span></span> 
 

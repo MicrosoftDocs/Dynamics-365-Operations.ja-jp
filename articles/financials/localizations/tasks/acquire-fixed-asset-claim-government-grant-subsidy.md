@@ -16,15 +16,15 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 6cf904879d10d94e8d63f7d4f0e9315b9bf49345
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 01b75d0b9bd7b6b112d52f4b2c3850320ff29732
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="acquire-a-fixed-asset-and-claim-for-the-government-grant-subsidy-japan"></a><span data-ttu-id="eaeba-103">固定資産の取得と政府助成金の申請 (日本)</span><span class="sxs-lookup"><span data-stu-id="eaeba-103">Acquire a fixed asset and claim for the government grant subsidy (Japan)</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="eaeba-104">固定資産の取得および政府補助金の申請についての説明を見るには、このタスクを使用します。</span><span class="sxs-lookup"><span data-stu-id="eaeba-104">Use this task to walk through acquiring a fixed asset and then claiming it for a government grant.</span></span>
 

@@ -18,16 +18,16 @@ ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: cd53a08d02bd89865274b28b9914c48873d14825
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 1310824e2e7965a4ff9ddf7ef551ef6e4d9eec7e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="set-up-reduction-entries-for-fixed-assets"></a><span data-ttu-id="7ad89-105">固定資産の圧縮記帳の設定</span><span class="sxs-lookup"><span data-stu-id="7ad89-105">Set up reduction entries for fixed assets</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="7ad89-106">この記事は、固定資産の圧縮記帳に関する情報および、固定資産の圧縮記帳を Microsoft Dynamics 365 for Finance and Operations で設定する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="7ad89-106">This article provides information about reduction entries for fixed assets and how to set them up in Microsoft Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="7ad89-107">圧縮記帳は、政府助成金を使用して取得される固定資産の特別な会計処理です。</span><span class="sxs-lookup"><span data-stu-id="7ad89-107">Reduction entries are a special accounting treatment for fixed assets that you acquire by using a government subsidy.</span></span> <span data-ttu-id="7ad89-108">耐用年数中に、これらの資産の法人所得税を繰延する場合に使用できます。</span><span class="sxs-lookup"><span data-stu-id="7ad89-108">You can use them to defer the corporate income tax for those assets throughout their service life.</span></span> 
 

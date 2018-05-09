@@ -19,16 +19,16 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: bb74b175dddaeb57c91afe537ec1fc4eaa0bdcee
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 0bdb5aeecbe0599826dae1a31111bea59f1da24c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="unit-of-measure-and-stocking-policies"></a><span data-ttu-id="78361-103">測定単位と在庫ポリシー</span><span class="sxs-lookup"><span data-stu-id="78361-103">Unit of measure and stocking policies</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="78361-104">この記事は、倉庫のプロセスで既定の単位、単位の順序、単位換算を使用する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="78361-104">This article describes how default units, unit sequences, and unit conversions are used in warehouse processes.</span></span>
 

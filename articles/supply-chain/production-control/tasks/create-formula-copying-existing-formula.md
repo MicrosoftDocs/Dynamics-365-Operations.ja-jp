@@ -17,15 +17,15 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: fcde37715287a5d9b862f9e35c594636ef11d395
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 4467022f4a377fc0f4aa5cf5e4a27c74ff95c415
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-a-formula-by-copying-from-an-existing-formula"></a><span data-ttu-id="d6df7-103">既存のフォーミュラをコピーしてフォーミュラを作成</span><span class="sxs-lookup"><span data-stu-id="d6df7-103">Create a formula by copying from an existing formula</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="d6df7-104">この手順は、既存のフォーミュラからコピーして新しいフォーミュラをすばやく作成する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="d6df7-104">This procedure shows how to quickly create a new formula by copying from an existing formula.</span></span> <span data-ttu-id="d6df7-105">この手順を作成するのに、デモ データの会社 USMF、USP2、または USPI を使用できます。</span><span class="sxs-lookup"><span data-stu-id="d6df7-105">You can use the demo data companies USMF, USP2, or USPI to create this procedure.</span></span>
 

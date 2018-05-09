@@ -16,15 +16,15 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 467253299c6cf80c7366ab4f12913a93546d1d69
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: a36ffde080f952ab8e687cb9c79950b6f2152ade
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-a-purchase-release-order-from-a-purchase-agreement"></a><span data-ttu-id="f0b80-103">購買契約書からの購買リリース注文の作成</span><span class="sxs-lookup"><span data-stu-id="f0b80-103">Create a purchase release order from a purchase agreement</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="f0b80-104">この手順では、発注書を作成するときに購買契約書を使用する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="f0b80-104">This procedure shows how to use a purchase agreement when you create a purchase order.</span></span> <span data-ttu-id="f0b80-105">発注書ヘッダーには一般的な条件をコピーする必要があるので、発注書を作成するときに購買契約書を適用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f0b80-105">The purchase agreement has to be applied when you create the purchase order because there are general terms that should be copied to the purchase order header.</span></span> <span data-ttu-id="f0b80-106">通常、これらのタスクを実施するのは、購買担当者です。</span><span class="sxs-lookup"><span data-stu-id="f0b80-106">Typically this task would be carried out by a purchasing agent.</span></span> <span data-ttu-id="f0b80-107">このガイドの前提条件として、仕入先および品目の製品数量が確約された有効購買契約書が必要です。</span><span class="sxs-lookup"><span data-stu-id="f0b80-107">As a prerequisite for this guide, you must have an effective purchase agreement with a product quantity commitment for a vendor and items.</span></span> <span data-ttu-id="f0b80-108">同じ手順は、他のタイプの確約のある購買契約書が存在する場合に使用できます。</span><span class="sxs-lookup"><span data-stu-id="f0b80-108">The same procedure can be used if you have a purchase agreement with other types of commitments.</span></span> <span data-ttu-id="f0b80-109">デモ データの会社 USMF でこのガイドを実行できます。</span><span class="sxs-lookup"><span data-stu-id="f0b80-109">You can run this guide in demo data company USMF.</span></span> <span data-ttu-id="f0b80-110">USMF を使用する場合、最初に「購買契約の作成」ガイドを実行して、このガイドに必要な前提条件を設定することができます。</span><span class="sxs-lookup"><span data-stu-id="f0b80-110">If you’re using USMF, you can run the “Create a purchase agreement” guide first to set up the necessary preconditions for this guide.</span></span>
 

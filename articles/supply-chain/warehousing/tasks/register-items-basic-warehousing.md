@@ -17,15 +17,15 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: ab824bd99347cbd090e99435217f9ce8ae992b3d
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 7dd92935d3d19526c04cbdec15754d52f8dad34a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="register-items-for-a-basic-warehousing-enabled-item-using-an-item-arrival-journal"></a><span data-ttu-id="0809c-103">品目の着荷仕訳帳を使用した基本倉庫管理に対応した品目の登録</span><span class="sxs-lookup"><span data-stu-id="0809c-103">Register items for a basic warehousing enabled item using an item arrival journal</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="0809c-104">この手順では、在庫管理モジュールで、「基本倉庫」を使用する場合に、着荷仕訳帳を使用して品目を登録する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="0809c-104">This procedure shows you how to register items using the item arrival journal when you are using “basic warehousing” in the Inventory management module.</span></span> <span data-ttu-id="0809c-105">これは通常、入荷係により行われます。</span><span class="sxs-lookup"><span data-stu-id="0809c-105">This would usually be done by a receiving clerk.</span></span> <span data-ttu-id="0809c-106">表示されているサンプル値を使用して、デモ データの会社 USMF でこの手順を実行できます。</span><span class="sxs-lookup"><span data-stu-id="0809c-106">You can run this procedure in demo data company USMF with the example values that are shown.</span></span>  <span data-ttu-id="0809c-107">USMF を使用していない場合、このガイドを開始する前に、未処理の発注書明細行と共に確認済の発注書が必要です。</span><span class="sxs-lookup"><span data-stu-id="0809c-107">If you are not using USMF, you need to have a confirmed purchase order with an open purchase order line before you start this guide.</span></span> <span data-ttu-id="0809c-108">明細行の品目は在庫がある必要があり、製品バリアントの使用および追跡用分析コードの保有はできません。</span><span class="sxs-lookup"><span data-stu-id="0809c-108">The item on the line must be stocked, and it must not use product variants, and must not have tracking dimensions.</span></span> <span data-ttu-id="0809c-109">その品目は、倉庫管理プロセスが有効化された保管分析コード グループと関連付けられている必要があります。</span><span class="sxs-lookup"><span data-stu-id="0809c-109">And the item needs to be associated with a storage dimension group, where site and warehouse are active.</span></span>
 

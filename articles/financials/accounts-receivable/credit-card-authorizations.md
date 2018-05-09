@@ -19,18 +19,18 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a7ed8352e87a31905fe8a60556d91169f13963f3
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: c3247d5b8eed211ef2c31868e1caf61e4c97a716
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="credit-card-setup-authorization-and-capture"></a><span data-ttu-id="66271-104">クレジット カードの設定、認証、および取得</span><span class="sxs-lookup"><span data-stu-id="66271-104">Credit card setup, authorization, and capture</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 <span data-ttu-id="66271-105">この記事では、Microsoft Dynamics 365 for Finance and Operations におけるクレジット カード認証の概要を提供します。</span><span class="sxs-lookup"><span data-stu-id="66271-105">This article provides an overview of credit card authorization in Microsoft Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="66271-106">これには、支払サービスの設定、クレジット カードを販売注文に追加、および認証を無効にする方法に関する情報が含まれます。</span><span class="sxs-lookup"><span data-stu-id="66271-106">It includes information about how to set up a payment service, add a credit card to a sales order, and void an authorization.</span></span>
 

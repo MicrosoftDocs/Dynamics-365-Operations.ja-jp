@@ -19,16 +19,16 @@ ms.author: twheeloc
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 8ca6346183bfa2502c736baff1aaac0db44f067a
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 2100f95ed94050f4c02cda2e37007de740afe5c8
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="accounts-payable-home-page"></a><span data-ttu-id="53d71-103">買掛金勘定ホーム ページ</span><span class="sxs-lookup"><span data-stu-id="53d71-103">Accounts payable home page</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="53d71-104">このトピックでは、買掛金勘定の概要を示します。</span><span class="sxs-lookup"><span data-stu-id="53d71-104">This topic provides an overview of Accounts payable.</span></span> 
 

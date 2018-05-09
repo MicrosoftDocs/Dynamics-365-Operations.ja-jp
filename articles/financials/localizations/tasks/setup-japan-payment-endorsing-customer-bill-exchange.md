@@ -16,15 +16,15 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 7c033768d22639e7cb7ce6256e89e603bf48e910
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 02295c37addc971f41eac18e14441491da7a5245
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="set-up-japan-payment-by-endorsing-a-customer-bill-of-exchange-japan"></a><span data-ttu-id="9733d-103">顧客受取手形の裏書による日本の支払の設定 (日本)</span><span class="sxs-lookup"><span data-stu-id="9733d-103">Set up Japan payment by endorsing a customer bill of exchange (Japan)</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="9733d-104">このタスクでは、日本での顧客の為替手形の裏書きによる支払いの設定について説明します。</span><span class="sxs-lookup"><span data-stu-id="9733d-104">This task walks you through setting up payments by endorsing a customer bills of exchange for Japan.</span></span>
 

@@ -19,16 +19,16 @@ ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 9f996131830f9bd4efd534143b3fb761c5ccc756
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 54da64f4407d2fca9bd48e2014ff327640a4d5aa
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="one-voucher"></a><span data-ttu-id="4a13b-103">1 つの伝票</span><span class="sxs-lookup"><span data-stu-id="4a13b-103">One voucher</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 > [!NOTE]
 >  <span data-ttu-id="4a13b-104">この機能は、2018 年春のリリースで提供される、Dynamics 365 for Finance and Operations バージョン 8.0 で利用可能になります。</span><span class="sxs-lookup"><span data-stu-id="4a13b-104">This functionality will be available in Dynamics 365 for Finance and Operations version 8.0, which will be available in the Spring '18 release.</span></span>   

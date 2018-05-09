@@ -19,16 +19,16 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 932e158f35f535775647795b19128f63db378eea
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: c7ce6bbdc737ba8e4dd1cccaf1b6f7f853b73f66
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="manage-vendor-collaboration-users"></a><span data-ttu-id="ecbc0-103">仕入先コラボレーション ユーザーの管理</span><span class="sxs-lookup"><span data-stu-id="ecbc0-103">Manage vendor collaboration users</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="ecbc0-104">このトピックでは、新しい仕入先コラボレーション ユーザーのプロビジョニングの要求方法、および新しい仕入先コラボレーションの連絡先を追加する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="ecbc0-104">This topic describes how you can request the provisioning of new vendor collaboration users, and how to add new vendor collaboration contacts.</span></span> 
 

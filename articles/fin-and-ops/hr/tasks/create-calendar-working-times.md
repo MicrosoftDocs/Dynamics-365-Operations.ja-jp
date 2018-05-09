@@ -16,15 +16,15 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a8dcef8d8ba6f6d41a997b5b0623cb9577ce00d3
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: ba2a5e4d96e02d627df1f7f88548ff5a214a3830
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-a-calendar-and-generate-working-times"></a><span data-ttu-id="b90d6-103">カレンダーの作成および作業時間の生成</span><span class="sxs-lookup"><span data-stu-id="b90d6-103">Create a calendar and generate working times</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="b90d6-104">カレンダーは、運営リソースの能力と作業時間を説明します。</span><span class="sxs-lookup"><span data-stu-id="b90d6-104">Calendars describe the capacity and working times of operations resources.</span></span> <span data-ttu-id="b90d6-105">この手順は、作業時間テンプレートに基づいて作業カレンダーを定義するのに便利です。</span><span class="sxs-lookup"><span data-stu-id="b90d6-105">This procedure will help you define a work calendar based on a working time template.</span></span> <span data-ttu-id="b90d6-106">デモ データ会社 USMF または独自のデータを使用してこの手順の説明を見ることができます。</span><span class="sxs-lookup"><span data-stu-id="b90d6-106">You can walk through this procedure in demo data company USMF, or using your own data.</span></span>
 

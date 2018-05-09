@@ -19,16 +19,16 @@ ms.author: leguo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: ad4212584b0f9062edbd5c13f4c75eaa03c853f7
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 28b972720bcc566cf0cd52dc8cb645562c61c2ae
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="postdated-checks"></a><span data-ttu-id="7e03b-105">先日付小切手</span><span class="sxs-lookup"><span data-stu-id="7e03b-105">Postdated checks</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="7e03b-106">この記事では、Microsoft Dynamics 365 for Finance and Operations の先日付小切手のサポートについて説明します。</span><span class="sxs-lookup"><span data-stu-id="7e03b-106">This article provides information about support for postdated checks in Microsoft Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="7e03b-107">先日付小切手とは、将来の日付で支払を履行または受け取るために発行される小切手です。</span><span class="sxs-lookup"><span data-stu-id="7e03b-107">Postdated checks are checks that are issued to make and receive payments on a future date.</span></span> <span data-ttu-id="7e03b-108">したがって、小切手は、特定の日付まで清算できません。</span><span class="sxs-lookup"><span data-stu-id="7e03b-108">Therefore, the check can't be cashed until the specified date.</span></span>
 

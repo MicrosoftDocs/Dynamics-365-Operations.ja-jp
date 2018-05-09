@@ -16,15 +16,15 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 2ed898877e2972799cdd361d7fedbe7bc19d4b6a
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 7cd9753cef26a0d85c591f157986c30352702fa0
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="define-new-jobs"></a><span data-ttu-id="108d2-103">新しいジョブの定義</span><span class="sxs-lookup"><span data-stu-id="108d2-103">Define new jobs</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="108d2-104">このタスクは、新しいジョブの作成を中心に説明します。</span><span class="sxs-lookup"><span data-stu-id="108d2-104">This task focuses on the creation of a new job.</span></span> <span data-ttu-id="108d2-105">これは、手動入力とテンプレート機能からのコピーにより行います。</span><span class="sxs-lookup"><span data-stu-id="108d2-105">It will be completed using manual entry and copy from template functionality.</span></span> <span data-ttu-id="108d2-106">このタスクの作成に使用するデモ データの会社は USMF です。</span><span class="sxs-lookup"><span data-stu-id="108d2-106">The demo data company used to create this task is USMF.</span></span> <span data-ttu-id="108d2-107">このタスクは、人事管理の専門家を対象としています。</span><span class="sxs-lookup"><span data-stu-id="108d2-107">This task is intended for the human resources specialist.</span></span>
 

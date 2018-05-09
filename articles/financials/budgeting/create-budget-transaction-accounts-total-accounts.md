@@ -19,16 +19,16 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 85b778caf209c2fb1845665169e08210bfeb45c1
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 3b7c8031c40cf0ce3072577ac936aecc5de2a810
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="create-a-budget-from-transaction-accounts-and-total-accounts"></a><span data-ttu-id="de60f-104">トランザクション勘定と合計勘定からの予算作成</span><span class="sxs-lookup"><span data-stu-id="de60f-104">Create a budget from transaction accounts and total accounts</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="de60f-105">この記事は、勘定合計に基づいて予算を作成するプロセスの概要を提供します。</span><span class="sxs-lookup"><span data-stu-id="de60f-105">This article provides an overview of the process for creating budgets based on total accounts.</span></span> <span data-ttu-id="de60f-106">予算管理が必要な場合に、勘定合計の予算管理を有効にする方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="de60f-106">It also explains how to turn on budget control for total accounts, if budget control is required.</span></span>
 

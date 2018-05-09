@@ -16,15 +16,15 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 9da0adc848f334e5044c1629a403b6daac2dc639
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: bb8477eba19b536c77296f235fc93280b9982518
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="design-configurations-to-parse-incoming-documents-for-application-data-updates-er"></a><span data-ttu-id="44c8b-103">アプリケーション データ更新 (ER) の受信ドキュメントを解析するコンフィギュレーションのデザイン</span><span class="sxs-lookup"><span data-stu-id="44c8b-103">Design configurations to parse incoming documents for application data updates (ER)</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="44c8b-104">この手順では、着信電子ドキュメントを解析するために電子申告 (ER) コンフィギュレーションをデザインする方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="44c8b-104">This procedure shows how to design Electronic reporting (ER) configurations to parse an incoming electronic document.</span></span> <span data-ttu-id="44c8b-105">この手順では、サンプル会社 Litware, Inc. 用に作成した必要な ER コンフィギュレーションをインポートし、それを使用して受信電子ドキュメントを解析します。</span><span class="sxs-lookup"><span data-stu-id="44c8b-105">In this procedure, you will import the required ER configurations that have been created for the sample company, Litware, Inc. and use them for parsing incoming electronic documents.</span></span> <span data-ttu-id="44c8b-106">この手順にあるステップを完了するには、まず「ER コンフィギュレーション プロバイダーの作成および有効なプロバイダーとしてのマーク付け」にある手順を完了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="44c8b-106">To complete the steps in this procedure, you must first complete the procedure, “ER Create a configuration provider and mark it as active.”</span></span>
 

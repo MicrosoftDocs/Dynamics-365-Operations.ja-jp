@@ -19,16 +19,16 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: b008e70c7d834c6aacad7aef4987e60b12ed8a6d
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: dca3db2177a50b6fbc7c1984a9f277087cc63281
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="budget-planning-overview"></a><span data-ttu-id="234f2-103">予算計画の概要</span><span class="sxs-lookup"><span data-stu-id="234f2-103">Budget planning overview</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="234f2-104">この記事では予算計画を紹介し、予算計画のコンフィギュレーションと予算計画プロセスの設定に役立つ情報が含まれています。</span><span class="sxs-lookup"><span data-stu-id="234f2-104">This article introduces budget planning, and contains information to help you configure budget planning and set up budget planning processes.</span></span>
 

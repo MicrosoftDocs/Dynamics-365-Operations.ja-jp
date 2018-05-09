@@ -17,15 +17,15 @@ ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 4ad9ab54fbe84c8ec47aa2bebcca44656124a73e
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: deec8bfe6e00a451d80be75ead428d5c5cc037b6
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="initialize-stock-levels-in-the-warehouse"></a><span data-ttu-id="f3790-103">倉庫の在庫レベルの初期化</span><span class="sxs-lookup"><span data-stu-id="f3790-103">Initialize stock levels in the warehouse</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="f3790-104">この手順では、在庫移動仕訳帳を使用して手持在庫を手動で更新する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="f3790-104">This procedure shows you how to get the on-hand inventory updated manually using an Inventory movement journal.</span></span> <span data-ttu-id="f3790-105">(データ エンティティのトランザクションをインポートして手持在庫を更新することもできます)。仕訳帳名、品目の設定、転記プロファイル、勘定などのすべての前提条件が揃っているデモ データの会社 USMF でこのガイドを実行できます。</span><span class="sxs-lookup"><span data-stu-id="f3790-105">(It’s also possible to update on-hand inventory by importing transactions in data entities.) You can run this guide in demo data company USMF where all the prerequisites like journal name, item setup, posting profiles, and accounts are available.</span></span> <span data-ttu-id="f3790-106">このガイドでは、使用する品目および分析コードに対して特定の値が提示されます。</span><span class="sxs-lookup"><span data-stu-id="f3790-106">The guide suggests specific values for the item and dimensions that are used.</span></span> <span data-ttu-id="f3790-107">別の品目を選択する場合は、別の分析コードの値を入力する必要がある場合があります。</span><span class="sxs-lookup"><span data-stu-id="f3790-107">If you choose a different item, you may need to enter values for different dimensions.</span></span>
 

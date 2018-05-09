@@ -17,15 +17,15 @@ ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 13df47f7b04f5fc4b6c9a28b0c05a2b1bd0fe6a8
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 3b2eae0b3096473f1cec5e221df19aad60ee37f7
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="define-inventory-counting-processes"></a><span data-ttu-id="69ac9-103">在庫棚卸プロセスの定義</span><span class="sxs-lookup"><span data-stu-id="69ac9-103">Define inventory counting processes</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="69ac9-104">この手順は、棚卸グループおよび棚卸仕訳帳を作成することによって、基本的な在庫棚卸処理のコンフィギュレーションについて説明します。</span><span class="sxs-lookup"><span data-stu-id="69ac9-104">This procedure walks you through the configuration of basic inventory counting processes by creating a counting group and a counting journal.</span></span> <span data-ttu-id="69ac9-105">また、倉庫と品目レベルにおける棚卸ポリシーを有効にする方法も説明します。</span><span class="sxs-lookup"><span data-stu-id="69ac9-105">It also shows you how to enable counting policies on a warehouse and item level.</span></span> <span data-ttu-id="69ac9-106">通常、これらのタスクを実施するのは、倉庫の監督です。</span><span class="sxs-lookup"><span data-stu-id="69ac9-106">These tasks would typically be carried out by a warehouse supervisor.</span></span> <span data-ttu-id="69ac9-107">これは、現在リリースされている一部の製品および倉庫を所有する前提条件となっています。</span><span class="sxs-lookup"><span data-stu-id="69ac9-107">It is a prerequisite to have some existing released products and warehouses.</span></span> <span data-ttu-id="69ac9-108">デモ データの会社を使用すると、いずれの在庫品目を使用しても、USMF 会社でこの手順を実行できます。</span><span class="sxs-lookup"><span data-stu-id="69ac9-108">If you're using a demo data company, you can run this procedure in the USMF company with any stocked item.</span></span>
 

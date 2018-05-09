@@ -17,15 +17,15 @@ ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: c5f795f8d3c31c9acdbddd94879dbd427145956c
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 3b70bdf110a1bcf27a73dea3f593c6f6a4cbf5ea
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-a-kanban-rule-using-a-minimum-stock-event"></a><span data-ttu-id="c02c5-103">最小の在庫イベントを使用したかんばんルールの作成</span><span class="sxs-lookup"><span data-stu-id="c02c5-103">Create a kanban rule using a minimum stock event</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="c02c5-104">この手順では、特定の製品が特定の場所で常に使用できるようにするために、最小在庫のイベントを使用してかんばんルールを作成するのに必要な設定を中心に説明します。</span><span class="sxs-lookup"><span data-stu-id="c02c5-104">This procedure focuses on the setup needed to create a kanban rule using a minimum stock event to ensure that a specific product is always available at a specific location.</span></span> <span data-ttu-id="c02c5-105">かんばんルールは、在庫レベルが 200 個を下回ったときに材料をその場所に転送するために作成されます。</span><span class="sxs-lookup"><span data-stu-id="c02c5-105">A kanban rule is created to transfer material to the location when the inventory level drops below 200 pieces.</span></span> <span data-ttu-id="c02c5-106">ペギング イベント処理を実行することによって、必要なかんばんが作成されます。</span><span class="sxs-lookup"><span data-stu-id="c02c5-106">By running the Pegging event processing, the needed kanbans are created.</span></span> <span data-ttu-id="c02c5-107">このタスクの作成に使用するデモ データの会社は USMF です。</span><span class="sxs-lookup"><span data-stu-id="c02c5-107">The demo data company used to create this task is USMF.</span></span> <span data-ttu-id="c02c5-108">このタスクは、リーン環境で新しい製品または変更された製品の生産を準備している、プロセス エンジニアまたはバリュー ストリームのマネージャーを対象としています。</span><span class="sxs-lookup"><span data-stu-id="c02c5-108">This task is intended for the process engineer or the value stream manager, as they prepare production of a new or modified product in a lean environment.</span></span>
 

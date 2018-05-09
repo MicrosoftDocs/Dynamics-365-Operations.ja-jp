@@ -20,16 +20,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 6ddba210ced7c7ed5fad818945765528e5b1c1d1
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 36b92b7dfacb781c559e3ab39406b709e7ce5c9a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="costing-sheets"></a><span data-ttu-id="73527-108">原価計算表</span><span class="sxs-lookup"><span data-stu-id="73527-108">Costing sheets</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="73527-109">原価計算表の設定には、2 つの目的があります。</span><span class="sxs-lookup"><span data-stu-id="73527-109">Setting up the costing sheet involves two objectives.</span></span> <span data-ttu-id="73527-110">最初の目的は、製品または製造オーダーに関する売却済商品の原価情報の表示形式を定義することです。</span><span class="sxs-lookup"><span data-stu-id="73527-110">As the first objective, you define the format for displaying cost of goods sold information about a manufactured item or production order.</span></span> <span data-ttu-id="73527-111">書式設定された表示は、原価計算表と呼ばれます。</span><span class="sxs-lookup"><span data-stu-id="73527-111">The formatted display is termed a costing sheet.</span></span> <span data-ttu-id="73527-112">2 つ目の目的は、間接原価の計算の基準を定義することです。</span><span class="sxs-lookup"><span data-stu-id="73527-112">As the second objective, you define the basis for calculating indirect costs.</span></span> <span data-ttu-id="73527-113">原価計算表設定は、情報表示用および間接原価計算式用の原価グループ機能の上に構築されます。</span><span class="sxs-lookup"><span data-stu-id="73527-113">The costing sheet setup builds on the cost group feature for displaying information and for the indirect cost calculation formulas.</span></span> <span data-ttu-id="73527-114">原価計算表設定の 2 つの目的はこの項目で説明します。</span><span class="sxs-lookup"><span data-stu-id="73527-114">The two objectives of costing sheet setup are described in this article.</span></span> 
 

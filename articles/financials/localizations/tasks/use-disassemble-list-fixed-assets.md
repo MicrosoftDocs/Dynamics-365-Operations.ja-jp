@@ -16,15 +16,15 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: e88fb5346fca257b5fe612a8869375df7c69dc91
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 9263e41f9502160352cf02c6b4cea164218a356e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="use-disassemble-list-for-fixed-assets-japan"></a><span data-ttu-id="28655-103">固定資産の分解一覧の使用 (日本)</span><span class="sxs-lookup"><span data-stu-id="28655-103">Use disassemble list for fixed assets (Japan)</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="28655-104">日本では、固定資産のコンポーネントを在庫に移転できます。</span><span class="sxs-lookup"><span data-stu-id="28655-104">In Japan, you can transfer a component of a fixed asset to inventory.</span></span> 
 

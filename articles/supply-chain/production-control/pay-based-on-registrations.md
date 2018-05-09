@@ -19,16 +19,16 @@ ms.author: johanho
 ms.search.validFrom: 2018-03-20
 ms.dyn365.ops.version: AX 8.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 1ae0f142ebd2252b1df414998c153d32127bc1b7
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: df8e011a0ec0234f346d25a863d97c1a98ebe9ee
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="pay-based-on-registrations"></a><span data-ttu-id="91ce7-103">登録に基づく支払い</span><span class="sxs-lookup"><span data-stu-id="91ce7-103">Pay based on registrations</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="91ce7-104">このトピックでは、作業者登録に基づいて給料がどのように計算されるかについて詳細に説明します。</span><span class="sxs-lookup"><span data-stu-id="91ce7-104">This topic explains, in detail, how pay is calculated based on worker registrations.</span></span> <span data-ttu-id="91ce7-105">これには、計算に使用できる設定オプションのさまざまな組み合わせが、どのように結果に影響するかを示す例が含まれます。</span><span class="sxs-lookup"><span data-stu-id="91ce7-105">It includes examples that show how the various combinations of setup options that are available for the calculation affect the result.</span></span> <span data-ttu-id="91ce7-106">対象となる領域の一部を次に示します。</span><span class="sxs-lookup"><span data-stu-id="91ce7-106">Here are some of the areas that will be covered:</span></span>
 

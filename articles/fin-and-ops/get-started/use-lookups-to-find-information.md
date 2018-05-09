@@ -18,16 +18,16 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 517da2d492eb16399b5006fff9b372b24670e9ee
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 6c3499e483331eeef88e65f5f3bf1288dd71b268
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="use-lookups-to-find-information"></a><span data-ttu-id="205af-105">情報の検索におけるルックアップの使用</span><span class="sxs-lookup"><span data-stu-id="205af-105">Use lookups to find information</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="205af-106">Microsoft Dynamics 365 for Finance and Operations では多数のフィールドに適切な修正または目的の値の検索が容易なルックアップがあります。</span><span class="sxs-lookup"><span data-stu-id="205af-106">In Microsoft Dynamics 365 for Finance and Operations, many fields have lookups that can help you easily find the correct or desired value.</span></span> <span data-ttu-id="205af-107">複数の拡張機能は、これらのコントロールの使用可能により、ユーザーにルックアップが表示されます。</span><span class="sxs-lookup"><span data-stu-id="205af-107">Several enhancements have been added to lookups that make these controls more usable and make users more productive.</span></span> <span data-ttu-id="205af-108">このトピックでは、これらの新しいルックアップ機能について情報と、システムのルックアップから業務の使用を取得するために、必要な情報が表示されます。</span><span class="sxs-lookup"><span data-stu-id="205af-108">In this topic, you will learn about these new lookup features and will receive some helpful tips to get the optimal use out of lookups in the system.</span></span>  
 

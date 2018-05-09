@@ -20,16 +20,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 4c6be66eef6434f9ecca82903cc1e16b4bc290fe
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: ba4eb320c2efbe8f1c28602d3f98de5982556899
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="consolidated-batch-orders"></a><span data-ttu-id="97c4e-103">連結バッチ オーダー (複数)</span><span class="sxs-lookup"><span data-stu-id="97c4e-103">Consolidated batch orders</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="97c4e-104">この記事は、連結バッチ注文の概念について説明します。</span><span class="sxs-lookup"><span data-stu-id="97c4e-104">This article describes the concept of consolidated batch orders.</span></span>
 

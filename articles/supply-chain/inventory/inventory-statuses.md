@@ -19,16 +19,16 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 52d05dfe3eedd5735f47638a1fdec4e5855ca965
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: fdbee2f67948d2b4f47d1ed999da78a6b82fe7ed
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="inventory-statuses"></a><span data-ttu-id="accc8-103">在庫状態</span><span class="sxs-lookup"><span data-stu-id="accc8-103">Inventory statuses</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="accc8-104">この記事は、在庫を分類し、追跡する在庫状態を使用する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="accc8-104">This article describes how you can use inventory statuses to categorize and keep track of inventory.</span></span>
 
