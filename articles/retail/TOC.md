@@ -24,6 +24,7 @@
 # 消費税
 ## [消費税の概要](../financials/general-ledger/indirect-taxes-overview.md)
 ## [[発生元] フィールドでの消費税計算方法](../financials/general-ledger/sales-tax-calculation-methods-origin-field.md)
+## ####[売上税の割り当ておよび上書き](../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md)
 ## [消費税コードの合計額と間隔計算オプション](../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md)
 
 # コール センター
@@ -167,6 +168,7 @@
 ## [ハードウェア ステーションの作成と関連付け](tasks/create-associate-hardware-station.md)
 ## [レジスターの作成と関連付け](tasks/create-associate-registers.md)
 ## [小売店舗の明細書の作成、計算、および転記](tasks/create-calculate-post-statement-retail-store.md)
+## [明細書転記に関する機能強化事項](statement-posting-EOD.md)
 ## [コール センター注文の作成](tasks/create-call-center-orders.md)
 ## [POS レジスターの財務分析コードの作成とレジスターの分析コード値のコンフィギュレーション](tasks/create-financial-dimensions-pos.md)
 ## [小売チャネルの財務分析コードの作成と店舗の分析コード値のコンフィギュレーション](tasks/create-financial-dimensions-retail-channels.md)
@@ -289,7 +291,6 @@
 ### [POS 拡張機能からの POS API または操作の呼び出し](dev-itpro/pos-api-extension.md)
 ### [Retail Modern POS のトリガーと印刷](dev-itpro/pos-trigger-printing.md)
 ### [Retail Modern POS 非画面デザイナー ベース ビューへのカスタム コントロールの追加](dev-itpro/pos-control-non-screen.md)
-### [POS および E コマース用 Retail プロキシの生成](dev-itpro/pos-generate-retail-proxy.md)
 ### [クラウド ホストのデベロップメント ボックスで作業している Retail 開発者向けのコンフィギュレーション手順](dev-itpro/cloud-dev-box.md)
 
 ## Commerce Runtime

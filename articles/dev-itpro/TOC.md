@@ -10,7 +10,12 @@
 ## [ベータ評価版の入手](dev-tools/get-evaluation-copy.md)
 ## [サブスクリプションのサインアップ](dev-tools/sign-up-preview-subscription.md)
 ## [開発環境の配置とアクセス](dev-tools/access-instances.md)
-## [開発システム要件](dev-tools/development-system-requirements.md)
+### [開発者用 VM のコンフィギュレーション](dev-tools/configure-developer-vm.md)
+### [開発マシンでの新しいユーザーの作成](dev-tools/enable-development-machine.md)
+### [管理者アクセスを許可しない開発用 VM および ビルド用 VM に関するよく寄せられる質問](sysadmin/VMs-no-admin-access.md)
+### [Visual Studio Team Services へのアクセスを有効化するには、ローカル環境の名前を変更してください](migration-upgrade/vso-machine-renaming.md)
+### [開発システム要件](dev-tools/development-system-requirements.md)
+## [バージョン コントロール、メタデータ検索、およびナビゲーション](dev-tools/version-control-metadata-navigation.md)
 ## フリート管理のサンプル アプリケーション
 ### [フリート管理のサンプル アプリケーション](dev-tools/fleet-management-sample.md)
 ### [フリート管理のサンプル アプリケーションの概要](dev-tools/introduction-fleet-management-sample.md)
@@ -22,7 +27,8 @@
 ### [ビルド操作](dev-tools/build-operations.md)
 ### [コード エディター](dev-tools/code-editor.md)
 ### [モデルとデータ モデル要素の作成](dev-tools/create-data-model-elements.md)
-### [開発マシンでの新しいユーザーの作成](dev-tools/enable-development-machine.md)
+#### [名前付けのガイドライン](extensibility/NamingGuidelines.md)
+#### [カスタマイズをオフにして機能を廃止](dev-tools/lock-models.md)
 ### [カスタマイズ分析のレポート](dev-tools/customization-analysis-report.md)
 ### [要素デザイナー](dev-tools/element-designers.md)
 ### [要素の利用状況](dev-tools/element-usage.md)
@@ -31,7 +37,6 @@
 ### [モデル](dev-tools/models.md)
 ### [Dynamics 365 for Finance and Operations のプロジェクト](dev-tools/projects.md)
 ### [Visual Studio 用のツールおよびアドイン](dev-tools/developer-tools-add-ins.md)
-### [カスタマイズをオフにして機能を廃止](dev-tools/lock-models.md)
 ### [Visual Studio 開発ツールの更新](dev-tools/update-development-tools.md)
 ## X++ プログラミング言語
 ### [X++ およびデバッガーの機能](dev-tools/new-x-debugger-features.md)
@@ -104,7 +109,7 @@
 #### [W クラス](dev-ref/w-classes.md)
 #### [X クラス](dev-ref/x-classes.md)
 
-## [拡張機能のホーム ページ](extensibility/extensibility-home-page.md)
+## [拡張性](extensibility/extensibility-home-page.md)
 ### 概要と使用開始
 #### [アプリケーション機能拡張計画](extensibility/extensibility-roadmap.md)
 #### [拡張性の要求](extensibility/extensibility-requests.md) 
@@ -261,9 +266,9 @@
 ### [タスク レコーダーを使用してドキュメントまたはトレーニングを作成](user-interface/task-recorder-training-docs.md)
 
 # [モバイル プラットフォーム](mobile-apps/platform/mobile-platform-home-page.md)
-## はじめに
-### [はじめに](mobile-apps/platform/mobile-platform-getting-started.md)
+## [はじめに](mobile-apps/platform/mobile-platform-getting-started.md)
 ### [アーキテクチャ](mobile-apps/platform/mobile-platform-architecture.md)
+### [ビジネス ロジック イベントの概要](mobile-apps/platform/business-logic-events-overview.md)
 ### [ページ デザインのガイドライン](mobile-apps/platform/page-design-guidelines.md)
 ### [アクション デザインのガイドライン](mobile-apps/platform/action-design-guidelines.md)
 ### [フォーム デザインの要件](mobile-apps/platform/form-design-requirements.md)
@@ -409,7 +414,7 @@
 ### [コンフィギュレーション データ テンプレート](data-entities/configuration-data-templates.md)
 ### [複数のワークシート付きデータ テンプレート](data-entities/excel-template-multiple.md)
 ### [エンティティの変更の追跡](data-entities/entity-change-track.md)
-
+### [コンフィギュレーション キーおよびデータ エンティティ](data-entities/config-key-entities.md)
 ### [標準データ エンティティに関する情報を検索します。](data-entities/data-entities-report.md)
 
 
@@ -418,6 +423,7 @@
 ### [一般仕訳エンティティを使用して伝票をインポートするためのベスト プラクティス](data-entities/tips-tricks-import-general-journal-entity.md)
 
 ## データ エンティティの開発
+### [データ エンティティに関する設計原則とベスト プラクティス](dev-tools/design-best-practices.md)
 ### [新しいデータ エンティティの作成](data-entities/build-consuming-data-entities.md)
 ### [データ エンティティのプロパティ](data-entities/behavioral-properties-data-entities.md)
 ### [計算列と仮想フィールドの作成](data-entities/data-entity-computed-columns-virtual-fields.md)
@@ -428,6 +434,9 @@
 ### [メタデータのプロパティ](data-entities/behavioral-properties-data-entities.md)
 ### [検証、既定値、およびマップされていないフィールド](data-entities/validations-defaults-unmapped-fields.md)
 ### [セキュリティとデータ エンティティ](data-entities/security-data-entities.md)
+### [財務分析コードを公開する読み取り専用エンティティのビルド](financial/read-only-entity-financial.md)
+ 
+
 
 ## [自分のデータベースの持ち込み](analytics/export-entities-to-your-own-database.md)
 
@@ -435,7 +444,7 @@
 ## [データ タスクの自動化](data-entities/data-task-automation.md)
 
 ## [GDPR データ要求に対応するためのリソース](gdpr/gdpr-home-page.md)
-### [Microsoft Dynamics 365 for Finance and Operations の GDPR に関するガイド](gdpr/gdpr-auditing-sensitive-data.md)
+### [Microsoft Dynamics 365 for Finance and Operations の GDPR に関するガイド](gdpr/gdpr-guide.md)
 ### [資産分類](gdpr/gdpr-asset-classification-values.md)
 ### [個人検索レポートを使用](gdpr/gdpr-person-search-report.md)
 ### [個人検索レポートを拡張](gdpr/gdpr-extend-person-search-report.md)
@@ -443,8 +452,9 @@
 ### [Talent を使用して個人データ要求に対応](gdpr/respond-dsr-request-talent.md)
 ### [Microsoft Dynamics AX 2012 を使用して個人データ要求に対応](gdpr/gdpr-ax2012.md)
 
+## [データ検証ワークスペース](user-interface/data-validation-workspace.md)
 
-# [継続的な配信ホーム ページ](dev-tools/continuous-delivery-home-page.md)
+# [継続的な配信](dev-tools/continuous-delivery-home-page.md)
 ## [開発と継続的な配信のよく寄せられる質問](dev-tools/continuous-delivery-faq.md)
 ## [ビルド出力からテスト パッケージを除外](dev-tools/exclude-test-packages.md)
 ## [ソース コントロールを使用してサード パーティ モデルとランタイム パッケージを管理](dev-tools/manage-runtime-packages.md)
@@ -487,6 +497,7 @@
 ## [セグメント化されたエントリ コントロールの parm メソッド](financial/segmented-entry-control-parm-method-specification.md)
 ## [Microsoft Excel テンプレートで財務分析コード値の検索機能を追加](financial/add-dimensions-excel-templates.md)
 ## [為替レート プロバイダーの作成](financial/create-exchange-rate-providers.md)
+## [Microsoft Dynamics Finance and Operations バージョン 8.0 を使用した、為替レート プロバイダーの作成](financial/create-exchange-rate-8.md)
 
 # サプライ チェーンの開発
 ## [ガント作成ガイド](user-interface/gantt-development-guide.md)
@@ -579,7 +590,6 @@
 
 # [システム管理](sysadmin/system-administration-home-page.md)
 ## [プラットフォームの毎月の更新プログラムのよく寄せられる質問](sysadmin/faq-platform-monthly-updates.md)
-## [管理者のアクセスを許可しない仮想マシンに関するよく寄せられる質問](sysadmin/VMs-no-admin-access.md)
 ## [組織の法律条項およびプライバシーに関する声明へのリンクの追加](sysadmin/legal-terms-privacy-statement.md)
 ## [ライセンス コードとコンフィギュレーション キーのレポート](sysadmin/license-codes-configuration-keys-report.md)
 ## [会社間データ共有](sysadmin/cross-company-data-sharing.md)
