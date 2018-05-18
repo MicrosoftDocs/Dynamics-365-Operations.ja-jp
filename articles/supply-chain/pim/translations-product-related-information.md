@@ -29,7 +29,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="product-related-translations-faq"></a>製品関連の翻訳のよく寄せられる質問
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 このトピックでは、製品の翻訳、製品分析コードの値、および製品属性を管理する方法について説明します。 
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="reverse-an-endorsed-bill-of-exchange-japan"></a>裏書済受取手形の取消 (日本)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 このタスクは、裏書きされた為替手形の取消について説明します。
 

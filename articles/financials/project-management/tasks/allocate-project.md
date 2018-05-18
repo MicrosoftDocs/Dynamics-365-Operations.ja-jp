@@ -25,7 +25,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="allocate-a-project-budget-or-budget-revision-across-periods"></a>プロジェクト予算または予算のリビジョンを複数の期間に割り当て
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
  プロジェクト予算またはプロジェクト予算の修正を入力した後、承認のために送信する前に、期間全体で金額を割り当てることができます。 予算または予算のリビジョンが否認された場合、再送信する前にも金額を割り当てることができます。 
 

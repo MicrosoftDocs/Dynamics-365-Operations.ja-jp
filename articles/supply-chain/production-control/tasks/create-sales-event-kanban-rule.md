@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-sales-event-kanban-rule"></a>販売イベントかんばんルールの作成
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順は、販売注文の作成時に発生するかんばんルールを作成するのに必要な設定を対象としています。 かんばんルールのイベントは、販売注文明細行に基づいて必要量を補充します。 この手順の作成に使用するデモ データの会社は USMF です。 これは、新しい製品または変更された製品の生産を準備している、プロセス エンジニアまたはバリュー ストリームのマネージャーを対象としています。
 

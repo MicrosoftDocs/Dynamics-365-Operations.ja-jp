@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="develop-a-succession-plan"></a>継続的計画の作成
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 組織が育ち、継続的計画を考慮すると、同様のスキルを持つ別の人物を見つけたい場合があります。  スキル マッピングは、既存の従業員および応募者を分析して、評価した従業員のスキル セットに一致するかどうかを確認することができます。 この手順の作成に使用するデモ データの会社は USMF です。
 

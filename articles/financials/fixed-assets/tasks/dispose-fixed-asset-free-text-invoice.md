@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="dispose-of-a-fixed-asset-using-a-free-text-invoice"></a>自由書式の請求書を使用した固定資産の処分
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、固定資産仕訳帳の取得提案を使用して固定資産の取得方法を示します。 これは USMF の法人に対して経理担当ロールとデモ データを使用します。
 

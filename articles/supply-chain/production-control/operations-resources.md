@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="operations-resources"></a>Operations リソース
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 運営リソースはプロジェクトまたは生産プロセス活動を実行します。 これらはさまざまなタイプ、さまざまな能力が指定できます。 
 

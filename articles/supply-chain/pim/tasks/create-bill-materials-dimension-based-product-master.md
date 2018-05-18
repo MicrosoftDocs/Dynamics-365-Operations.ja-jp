@@ -24,7 +24,7 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="create-a-bill-of-materials-for-a-dimension-based-product-master"></a>分析コード ベースの製品マスターの部品表の作成
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順で、この一連の 8 つの記録において既に 4 つのガイドを完了している必要があります。 最初の 4 つの記録がこの手順を完了するのに必要なデータを設定します。 この手順の作成に使用するデモ データの会社は USMF です。 このタスクは通常、製品デザイナーによって処理されます。
 

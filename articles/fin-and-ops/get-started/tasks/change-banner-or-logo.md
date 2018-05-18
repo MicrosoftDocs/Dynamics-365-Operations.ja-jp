@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="change-the-banner-or-logo"></a>バナーまたはロゴの変更
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 次の手順は、システム管理者が法人用に表示するバナーまたはロゴ画像を更新するために使用できるステップを一覧にしています。 この手順の作成に使用するデモ データの会社は USMF です。
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="use-assemble-list-for-fixed-assets-japan"></a>固定資産の組み立て一覧の使用 (日本)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 日本では、在庫品目を固定資産に移転できます。 
 

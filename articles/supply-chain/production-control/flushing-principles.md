@@ -28,7 +28,7 @@ ms.lasthandoff: 02/08/2018
 
 # <a name="controlling-raw-material-consumption-by-using-flushing-principles"></a>消費ルールを使用して原材料消費を管理する
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 部品消費ルールは、生産プロセスで使用される原材料における消費戦略とは異なる戦略を反映します。 消費は、手持在庫から品目を差し引き、消費品目の金額を、製造オーダーおよびバッチ オーダーの**進行中の作業** (WIP) に設定するプロセスです。 通常、原材料は、材料を消費するプロセスで構成されている場所から消費されます。 この場所は、生産入庫の場所と呼ばれます。
 

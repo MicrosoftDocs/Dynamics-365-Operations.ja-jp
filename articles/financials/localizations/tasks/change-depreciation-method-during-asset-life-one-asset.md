@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="change-the-depreciation-method-during-the-asset-life-for-one-asset-japan"></a>単一資産の資産耐用年数期間中の減価償却方法の変更 (日本)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 日本では、固定資産の耐用年数期間中、減価償却方法を変更することが許可されています。
 

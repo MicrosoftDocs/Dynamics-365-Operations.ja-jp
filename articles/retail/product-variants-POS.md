@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="inventory-lookup-in-the-point-of-sale"></a>販売時点管理の在庫検索 
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 販売時点管理 (POS) での在庫の検索は、小売業者がリアルタイムのオペレーショナル エクセレンスを達成し、店舗、POS、およびバック オフィスに接続することにより情報を取得できるようにします。 この機能は、店舗と流通センター間での製品在庫の正確なリアルタイム ビューを提供します。 また、リアルタイムで計画在庫を改善することにより、小売業者がさらに効率性およびコスト削減を向上するのを助けます。
 

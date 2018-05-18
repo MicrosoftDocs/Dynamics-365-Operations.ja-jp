@@ -26,7 +26,7 @@ ms.lasthandoff: 03/26/2018
 ---
 
 # <a name="introduction-to-microsoft-dynamics-365-for-finance-and-operations"></a>Microsoft Dynamics 365 for Finance and Operations の概要
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 以下のリソースを使ってエンド ユーザー、開発者、IT プロフェッショナル向けの優れたコンテンツを見つけ、Microsoft Dynamics 365 for Finance and Operations をビジネスで活用する方法を学んでください。 
 

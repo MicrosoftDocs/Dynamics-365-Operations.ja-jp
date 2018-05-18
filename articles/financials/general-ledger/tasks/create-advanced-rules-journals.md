@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-advanced-rules-for-journals"></a>仕訳帳の詳細なルールの作成
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順は、仕訳帳の詳細なルールの作成について説明します。 これには、仕訳帳のコントロールおよびユーザーの転記制限の設定が含まれます。 この手順では、デモ データの会社 USMF を使用します。
 

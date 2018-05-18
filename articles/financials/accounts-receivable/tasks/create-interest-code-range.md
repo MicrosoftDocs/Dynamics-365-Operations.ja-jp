@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-an-interest-code-with-a-range"></a>範囲のある利息コードの作成
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 利息コードは値の範囲によって異なる利息金額を計算するように設定できます。 この手順は、利息コードを追加し、その範囲を追加する方法を示します。
 

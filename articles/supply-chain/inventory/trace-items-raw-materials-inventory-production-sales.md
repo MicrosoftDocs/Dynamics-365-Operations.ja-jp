@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="item-and-raw-material-tracing-in-inventory-production-and-sales"></a>在庫、生産、および販売における品目と原材料の追跡
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 このトピックでは、製品プロセスおよび販売プロセスで品目または原材料が使用された場所、使用されている場所、使用される予定の場所を識別するために、品目の追跡を使用する方法について説明します。
 

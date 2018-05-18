@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="enter-the-gtin-code-for-a-product"></a>製品の GTIN コードの入力
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 GTIN コードは、GS1 組織によって割り当てられます。 この例では、デモ データの会社 USMF で製品番号「M0001」のコードを入力します。
 

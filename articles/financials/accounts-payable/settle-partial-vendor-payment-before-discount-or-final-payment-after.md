@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="settle-a-partial-vendor-payment-before-the-discount-date-with-a-final-payment-after-the-discount-date"></a>割引日後の最終支払での割引日よりも前の一部の仕入先支払の決済
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 この記事は、複数の一部支払が行われるうち、いくつかが現金割引期間内に、それ以外が現金割引期間外に行われるシナリオについて説明します。
 

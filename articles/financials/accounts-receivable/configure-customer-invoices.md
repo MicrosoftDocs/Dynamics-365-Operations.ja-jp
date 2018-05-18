@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="create-a-customer-invoice"></a>顧客請求書の作成
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 **販売注文の顧客請求書**は、売上に関連し、組織が顧客に提供する請求書です。 この種類の顧客請求書は、注文明細行および品目番号を含む販売注文に基づいて作成されます。 品目番号が指定され、元帳に転記されます。 補助元帳仕訳帳は、販売注文の顧客請求書では使用できません。 詳細については、「[販売注文請求書の作成](tasks/create-sales-order-invoices.md)」を参照してください。
 

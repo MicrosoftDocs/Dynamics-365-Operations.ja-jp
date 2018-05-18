@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="propose-and-post-the-impairment-amount-on-a-cash-generating-unit-japan"></a>資産グループの減損損失の提案と転記 (日本)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 日本では、減損金額の計算後に、その金額を固定資産仕訳帳に提案し転記することができます。
 

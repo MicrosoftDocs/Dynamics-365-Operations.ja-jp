@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-an-organization-hierarchy"></a>組織階層の作成
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 組織階層を作成するには、次の手順に従います。 業務について、さまざまな観点から表示と報告を行う組織階層を使用できます。 たとえば、税金、法律、または法令についての報告に使用する 1 つの階層を設定できます。 法的に必須でなくても、内部報告に使用する財務情報を報告する別の階層を設定できます。 
 

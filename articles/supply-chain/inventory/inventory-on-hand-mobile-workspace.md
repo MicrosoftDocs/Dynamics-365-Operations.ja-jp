@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="inventory-on-hand-mobile-workspace"></a>手持ち在庫モバイル ワークスペース
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 このトピックでは、[**手持ち在庫**] モバイル ワークスペースに関する情報を提供します。 このワークスペースは、予約済みの在庫や利用可能な在庫に関するモバイル情報を、いつでも、どこでも取得するのに役立ちます。
 

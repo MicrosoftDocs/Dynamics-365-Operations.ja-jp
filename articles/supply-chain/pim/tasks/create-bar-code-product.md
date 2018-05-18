@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-bar-code-for-a-product"></a>製品のバーコードの作成
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、品目番号「M0001」を例として使用してバーコードを手動で作成する方法を示します。 この手順の作成に使用するデモ データの会社は USMF です。
 

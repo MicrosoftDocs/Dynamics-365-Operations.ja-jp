@@ -28,7 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="expense-management"></a>経費管理
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 経費管理は、支払方法に関する情報を保存したり、クレジット カード トランザクションをインポートしたり、従業員が業務を遂行する際に発生する経費を追跡したりするための統合ワークフローを作成するのに使用します。 また、経費ポリシーを定義し、旅行経費の払い戻しを自動化することもできます。 
 

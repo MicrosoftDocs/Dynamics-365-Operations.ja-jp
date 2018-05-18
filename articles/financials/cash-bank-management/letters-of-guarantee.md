@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="letters-of-guarantee"></a>信用保証状
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 この記事は、信用保証状に関する情報を提供します。 信用保証状で銀行は、銀行の顧客がある者に対して支払や義務を履行しない場合に、銀行がその者に特定の金額を支払うことに合意します。 
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="create-dimensions-and-import-dimension-members"></a>分析コードの作成と分析コード メンバーのインポート
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 原価会計は、他のモジュールからのデータを必要とする独立モジュールです。 このデータは、次のように分類されます。
 

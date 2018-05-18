@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="sepa-credit-transfer-overview"></a>SEPA 口座振替の概要
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 この記事では、ISO 20022 口座振替に関する一般情報を提供します。これは単一ユーロ支払地域 (SEPA) 口座振替および仕入先に対するそのほかの電子支払を含みます。 SEPA 口座振替は、1 つの会社または個人から別の会社または個人に対する、ユーロでの特定のタイプの支払です。 このトピックは、口座振替の支払ファイルを設定して送信する方法も説明します。
 

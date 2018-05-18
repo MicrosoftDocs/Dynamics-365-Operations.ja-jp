@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="distributions-on-an-expense-report"></a>経費レポートでの配分
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
  経費精算書に経費を入力すると、組織内の複数のプロジェクト、財務分析コード、勘定に経費を配分できます。
 

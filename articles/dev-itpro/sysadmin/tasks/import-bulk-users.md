@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="import-users-in-bulk"></a>一括でユーザーをインポートする
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 システム管理者はこの手順を使用して、Azure Active Directory から多数のユーザーをインポートすることができます。
 

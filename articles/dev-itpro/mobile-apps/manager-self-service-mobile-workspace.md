@@ -25,7 +25,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="my-team-mobile-workspace"></a>自分のチーム モバイル ワークスペース
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 このトピックでは、**自分のチーム** モバイル ワークスペースについての情報を提供します。 このワークスペースでは、管理者が直属の部下および拡張スタッフを表示することができます。 また、レポート チェーン内の各個人に称賛を送信することもできます。
 

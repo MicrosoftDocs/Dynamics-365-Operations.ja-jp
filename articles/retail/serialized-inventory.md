@@ -26,7 +26,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="pos-improvements-for-serialized-products"></a>シリアル化された製品の POS 改善
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 ## <a name="overview"></a>概要 
 小売用バックオフィスでの設定に基づいて、製品はシリアル化またはシリアル化されていないとして分類されます。 製品がシリアル化されるとき場合、各品目には保証の追跡、追跡項目、および所有権の確認を助ける固有の番号が割り当てられます。 シリアル化された製品のシリアル番号を提供する機能は Modern/クラウド販売時点管理 (POS) に存在していますが、レジ担当者が時間の節約および生産性を向上するのに役立つよう、いくつかの改善点が加えられています。  

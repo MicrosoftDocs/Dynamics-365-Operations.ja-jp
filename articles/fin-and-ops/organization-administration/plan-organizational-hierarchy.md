@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="plan-your-organizational-hierarchy"></a>組織階層の計画
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Microsoft Dynamics 365 for Finance and Operations で組織と組織階層を設定する前に、組織をシミュレーションする方法を確認してください。 組織モデルは、Finance and Operations の実装と業務プロセスに重要な影響を与えます。 
 

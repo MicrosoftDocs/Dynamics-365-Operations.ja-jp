@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 ---
 
 # <a name="power-bi-content"></a>[Power BI コンテンツ]
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 このトピックでは、使用可能な Microsoft Power BI コンテンツの一覧を示し、リソースについて詳しく知ることができます。
 

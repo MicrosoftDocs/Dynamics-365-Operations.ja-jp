@@ -27,7 +27,7 @@ ms.lasthandoff: 03/21/2018
 
 # <a name="pay-a-vendor-by-endorsing-a-bill-of-exchange-for-japan"></a>日本での受取手形の裏書による仕入先への支払
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 日本では、多くの場合、為替手形 (BOE) は仕入先に裏書きされ、支払方法として使用されます。 Microsoft Dynamics 365 for Finance and Operations の BOE のリスト ページでは、BOE のライフ サイクルの集中管理を提供します。
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="settle-customer-consolidated-invoices-by-using-settle-transactions-japan"></a>決済トランザクションを使用した顧客月次締め請求書の決済 (日本)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 日本では、支払は月次締め請求書に対して行われ決済されます。
 

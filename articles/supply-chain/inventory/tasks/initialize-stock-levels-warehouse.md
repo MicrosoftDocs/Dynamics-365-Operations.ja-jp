@@ -25,7 +25,7 @@ ms.lasthandoff: 11/02/2017
 ---
 # <a name="initialize-stock-levels-in-the-warehouse"></a>倉庫の在庫レベルの初期化
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、在庫移動仕訳帳を使用して手持在庫を手動で更新する方法を示します。 (データ エンティティのトランザクションをインポートして手持在庫を更新することもできます)。仕訳帳名、品目の設定、転記プロファイル、勘定などのすべての前提条件が揃っているデモ データの会社 USMF でこのガイドを実行できます。 このガイドでは、使用する品目および分析コードに対して特定の値が提示されます。 別の品目を選択する場合は、別の分析コードの値を入力する必要がある場合があります。
 

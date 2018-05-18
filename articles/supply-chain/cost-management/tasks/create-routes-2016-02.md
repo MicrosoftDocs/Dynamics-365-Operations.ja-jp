@@ -24,7 +24,7 @@ ms.lasthandoff: 02/13/2018
 ---
 # <a name="create-routes-february-2016-only"></a>ルートの作成 (2016 年 2 月のみ)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 このタスクでは、完成品と半完成品の生産工順の作成について説明します。 これは、BOM 計算シリーズの 5 番目のタスクです。 このタスクの作成に使用するデモ データの会社は USMF です。
 

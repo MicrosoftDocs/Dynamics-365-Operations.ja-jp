@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="define-channel-attributes"></a>チャネル属性の定義
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 チャンネルおよび製品属性を追加して、チャンネルを強化します。 属性を定義する前に、組織の既定の階層にチャンネルを追加する必要があります。
 

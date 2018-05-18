@@ -24,7 +24,7 @@ ms.lasthandoff: 10/30/2017
 ---
 # <a name="vendor-payment-overview"></a>仕入先支払の概要
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 このガイドでは、仕入先支払の作成に使用するさまざまな方法について説明します。また、支払提案の使用方法または手動で 1 回限りの支払入力方法についても説明します。 この手順では、USMF というデモ会社を使用します。
 

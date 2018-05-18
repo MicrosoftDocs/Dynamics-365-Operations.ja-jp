@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="simulate-cost-changes-by-using-a-costing-version-for-planned-costs"></a>予定原価に対する原価バージョンを使用した原価変更のシミュレーション
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 この記事では、製造品目の算出原価に対する原価変更の影響を、予定原価の個別の原価バージョンを使用してシミュレーションする方法を説明します。
 

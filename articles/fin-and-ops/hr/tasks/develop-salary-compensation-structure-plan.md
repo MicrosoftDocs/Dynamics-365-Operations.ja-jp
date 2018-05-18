@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="develop-salarycompensation-structure-and-plans"></a>給与/報酬構造および計画の作成
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 このタスク ガイドでは、固定報酬プランを作成するプロセス、および適格性ルールで計画に登録する従業員を有効にするプロセスについて説明します。 このタスクの作成に使用されるデモ データの会社は USMF で、このタスクは報酬と給付金マネージャー向けの想定です。
 

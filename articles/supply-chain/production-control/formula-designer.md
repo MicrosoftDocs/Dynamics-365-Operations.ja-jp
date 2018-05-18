@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="formula-designer"></a>フォーミュラ デザイナー
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 このトピックでは、ツリー ビューでフォーミュラ デザイナーを使用して式の分析および管理する方法について説明します。
 

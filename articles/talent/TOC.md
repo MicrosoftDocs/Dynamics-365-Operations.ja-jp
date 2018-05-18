@@ -6,6 +6,7 @@
 ## [Talent 環境の削除](remove-talent-environment.md)
 ## [Microsoft Dynamics 365 for Talent のモジュラー アプリのプロビジョニング](modular-app-tech-faq.md)
 ## [Talent 機能の拡張](extend-talent-functionality.md)
+## [Dynamics 365 for Talent: Attract のプレビュー機能の利用](access-preview-feature.md)
 
 # [人材戦略の作成](departments-jobs-positions.md)
 ## [職務コンポーネントの設定](create-job.md)

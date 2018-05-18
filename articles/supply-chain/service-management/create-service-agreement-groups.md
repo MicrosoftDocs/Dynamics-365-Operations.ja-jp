@@ -28,7 +28,7 @@ ms.lasthandoff: 02/19/2018
 
 # <a name="create-service-agreement-groups"></a>サービス契約グループの作成 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 サービス契約グループは、サービス契約の並べ替えやフィルタ処理に便利です。
 

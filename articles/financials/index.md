@@ -18,29 +18,29 @@ ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 881b44f1128e732bc768191088e19efc38552eca
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 19ba20ce16c9916e09b862b0ebedbf68259c7769
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="financial-management-home-page"></a>財務管理ホーム ページ
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 for Finance and Operations の財務管理機能に関するヘルプ トピックとその他のリソースの一覧を示します。 
 
 機能領域を選択すると詳細が表示されます。
-- [買掛金勘定](accounts-payable\accounts-payable.md) 
-- [売掛金勘定](accounts-receivable\accounts-receivable.md) 
-- [現金および銀行管理](cash-bank-management\cash-bank-management.md)
-- [原価会計](cost-accounting\cost-accounting-home-page.md)
-- [固定資産](fixed-assets\fixed-assets.md)
-- [一般会計](general-ledger\general-ledger.md) 
-- [プロジェクト管理](project-management\overview-project-management-accounting.md)
-- [公的機関](public-sector\public-sector-functionality.md) 
-- [予算作成](budgeting\budgeting-overview.md) 
+- [買掛金勘定](accounts-payable/accounts-payable.md) 
+- [売掛金勘定](accounts-receivable/accounts-receivable.md) 
+- [現金および銀行管理](cash-bank-management/cash-bank-management.md)
+- [原価会計](cost-accounting/cost-accounting-home-page.md)
+- [固定資産](fixed-assets/fixed-assets.md)
+- [一般会計](general-ledger/general-ledger.md) 
+- [プロジェクト管理](project-management/overview-project-management-accounting.md)
+- [公的機関](public-sector/public-sector-functionality.md) 
+- [予算作成](budgeting/budgeting-overview.md) 
 
 
 

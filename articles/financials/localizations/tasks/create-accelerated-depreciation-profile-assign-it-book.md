@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-an-accelerated-depreciation-profile-and-assign-it-to-book-japan"></a>増加償却プロファイルの作成および帳簿への割り当て (日本)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 日本では、ほかの減価償却方法と同様、加速償却に減価償却プロファイルが必要です。 
 

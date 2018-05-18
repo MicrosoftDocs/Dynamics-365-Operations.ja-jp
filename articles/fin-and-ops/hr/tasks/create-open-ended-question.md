@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="create-an-open-ended-question"></a>自由回答式の質問の作成
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 自由回答式の質問は回答者が自分の回答を入力できるようになっています。 その回答が、数値、整数と少数、日付、コメントかどうかを管理できます。 この手順では、質問の特定のタイプ、自由回答式の質問を作成するプロセスについて説明します。 この手順を開始するには、[アンケート] > [デザイン] > [質問] の順に移動します。 この手順の作成に使用するデモ データの会社は USMF です。
 

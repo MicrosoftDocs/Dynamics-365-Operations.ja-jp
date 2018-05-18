@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="cost-element-dimensions"></a>原価要素分析コード
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 原価計算のコアの柱の 1 つとして、原価要素分析コードは、分類または原価がどこに流れているのかを追跡するために使用されます。 
 

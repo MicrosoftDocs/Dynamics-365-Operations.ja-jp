@@ -29,7 +29,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="set-up-a-product-configuration-model"></a>製品コンフィギュレーション モデルを設定します。
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 この記事は、製品コンフィギュレーション モデルを設定および作成するステップについて説明します。
 

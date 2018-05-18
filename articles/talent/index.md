@@ -27,7 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="welcome-to-microsoft-dynamics-365-for-talent"></a>Microsoft Dynamics 365 for Talent へようこそ
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Microsoft Dynamics 365 for Talent は、多くの日常的な記録タスクを合理化し、組織の多数のスタッフ配置に関連するプロセスを自動化します。 これらのプロセスには、従業員の雇用維持、給付金管理、トレーニング、勤務評価、変更管理が含まれます。 また、人事スタッフが監督すべき領域を管理するためのフレームワークも提供します。
 

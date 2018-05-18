@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="key-invoice-data-into-accounts-payable-using-an-approval-journal"></a>承認仕訳帳を使用した買掛金勘定への請求書データの入力
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 このタスク ガイドでは、仕入帳を使用して請求書を作成した後、承認仕訳帳を使用して経費勘定を更新する方法を示します。
 

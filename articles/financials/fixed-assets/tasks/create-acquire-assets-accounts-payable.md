@@ -24,7 +24,7 @@ ms.lasthandoff: 10/05/2017
 ---
 # <a name="create-and-acquire-assets-from-accounts-payable"></a>買掛金勘定からの資産の作成および取得
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 このタスク ガイドでは、購買プロセスで固定資産を作成し、取得する方法を説明します。 ここでは、経理担当者、買掛金勘定係、デモ会社 USMF を使用します。
 

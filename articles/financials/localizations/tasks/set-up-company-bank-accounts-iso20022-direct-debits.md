@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-company-bank-accounts-for-iso20022-direct-debits"></a>ISO20022 口座引落用の会社の銀行口座の設定
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 このタスクでは、顧客支払ファイルを生成するのに必要な会社固有の銀行口座情報の設定について説明します。 この手順では、ISO 20022 口座引落形式を例として使用します。 他の形式では、会社 ID または並べ替えコードなどの情報の設定が必要になる場合があります。
 

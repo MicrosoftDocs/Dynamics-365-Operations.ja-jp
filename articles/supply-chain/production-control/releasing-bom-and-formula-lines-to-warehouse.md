@@ -27,7 +27,7 @@ ms.lasthandoff: 03/08/2018
 
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a>BOM とフォーミュラ明細行を倉庫にリリース
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 このトピックでは、部品表 (BOM) 明細行とフォーミュラ明細行の原材料消費を倉庫にリリースするプロセスについて説明します。 BOM またはフォーミュラの明細行を倉庫にリリースする際、そのシステムは材料が製造工程で消費される作業現場の生産入力場所で、材料が既に利用可能かどうかを最初に判断します。
 

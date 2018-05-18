@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="configure-settlement"></a>決済のコンフィギュレーション
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 トランザクションを決済する方法とタイミングは複雑な題目になります。そのため、業務上の要件を満たすためのパラメータを理解し、適切に定義する必要があります。 この記事は、買掛金勘定、売掛金勘定の両方の決済に使用するパラメータについて説明します。 
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="manage-leave-of-absence"></a>休暇の管理
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、従業員の休暇レコードの作成について説明します。 教育、医療、育児などの休暇時間の理由を追跡できます。 この手順の作成に使用するデモ データの会社は USMF です。
 

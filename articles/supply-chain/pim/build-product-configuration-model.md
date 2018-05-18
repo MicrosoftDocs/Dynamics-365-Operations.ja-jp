@@ -29,7 +29,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="build-a-product-configuration-model"></a>製品コンフィギュレーション モデルの構築
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 特別な条件を満たすために製品をコンフィギュレーションする必要は、企業間および企業と顧客間の関係、両方において例外ではなくルールになってきました。
 

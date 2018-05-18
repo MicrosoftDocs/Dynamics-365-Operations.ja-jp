@@ -27,7 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="keyboard-shortcuts"></a>キーボード ショートカット
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 以下のキーボード ショートカットは、Dynamics 365 for Finance and Operations 全体に適用されます。 
 

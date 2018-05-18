@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-and-manage-images-for-retail-modern-pos"></a>Retail Modern POS の画像の設定および管理
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 この記事は、Retail Modern POS (MPOS) に表示されるさまざまなエンティティの画像の設定および管理に関連する手順について説明します。
 

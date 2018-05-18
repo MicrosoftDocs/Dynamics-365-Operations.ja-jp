@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="adjust-an-asset-retirement-obligation-estimate-japan"></a>資産除去債務見積の調整 (日本)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 日本では、資産除去責務 (ARO) の最初の見積を調整できます。 
 

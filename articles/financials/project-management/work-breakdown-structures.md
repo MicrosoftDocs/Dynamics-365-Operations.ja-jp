@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="work-breakdown-structures"></a>作業分解構造
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 作業分解構造 (WBS) は、プロジェクトに対して実行される作業の説明です。 作業の構成や各コンポーネントまたはタスクのサイズ、原価、期間に対するプロジェクト チームの理解を表すタスクの階層です。 WBS には 3 つの主な目的があります:
 

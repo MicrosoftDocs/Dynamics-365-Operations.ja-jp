@@ -25,7 +25,7 @@ ms.lasthandoff: 11/02/2017
 ---
 # <a name="set-up-prerequisites-for-management"></a>管理の前提条件の設定
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順を使用して不適合管理プロセスを有効化します。 不適合とは、品質上の問題がある手順または品目を表し、その説明には問題の原因およびタイプが含まれます。 この手順では、デモ データの会社 USMF を使用します。 通常この手順は品質マネージャーが実施します。
 

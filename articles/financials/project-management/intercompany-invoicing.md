@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="intercompany-invoicing"></a>会社間請求書
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 この資料では、Microsoft Dynamics 365 for Finance and Operations でのプロジェクトのための会社間請求についての情報と例を提供します。
 

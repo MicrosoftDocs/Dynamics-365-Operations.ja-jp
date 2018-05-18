@@ -25,7 +25,7 @@ ms.lasthandoff: 02/06/2018
 ---
 # <a name="enable-the-payroll-process-for-time-and-attendance"></a>時刻と出勤の給与プロセスの有効化
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順は、時刻と出勤の給与プロセスを有効にする方法を示します。 この手順の作成に使用するデモ データの会社は USMF です。
 

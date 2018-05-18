@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="view-cost-entries-for-a-cost-object"></a>原価オブジェクトの原価エントリの表示
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、原価対象の原価のエントリを表示する方法を示します。 この手順の作成に使用するデモ データの会社は USMF です。 この手順は、原価の管理者を対象としています。
 

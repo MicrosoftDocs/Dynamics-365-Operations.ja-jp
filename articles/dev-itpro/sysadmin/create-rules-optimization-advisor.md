@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="create-rules-for-optimization-advisor"></a>最適化アドバイザーのためのルールを作成します
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 このトピックでは、**最適化アドバイザー**のための新しいルールを作成する方法について説明します。 例えば、見積依頼 (RFQ) のケースに空のタイトルがあるかどうかを識別する新しいルールを作成できます。 ケースのタイトルを使用して、識別および検索を容易にします。 非常に単純ですが、この例では最適化ルールで何が達成できるかを示しています。 
 

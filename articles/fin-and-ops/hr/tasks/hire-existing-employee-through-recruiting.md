@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="hire-an-existing-employee-through-recruiting"></a>採用による既存の従業員の雇用
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 場合によっては、空いている職位が既に組織の従業員である候補者によって一杯になることがあります。 この手順は、採用プロセスを使用して既存の従業員を採用する手順を説明しています。 この手順では、採用プロジェクトは既に設定され、既存の従業員は既に採用プロジェクトの申請を送信しています。 この手順の作成に使用するデモ データの会社は USMF です。
 

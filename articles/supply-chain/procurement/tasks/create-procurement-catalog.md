@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-procurement-catalog"></a>調達カタログの作成
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 このガイドでは、調達カタログを作成する方法を示します。 通常、このタスクを実行するのは、調達担当者です。 さらに従業員が要求を作成する際にカタログを使用する方法も参照できます。 カタログを作成する前に、システム内に調達カテゴリ階層が必要です。 階層は、階層にあるすべての製品とともに、新しいカタログによって継承されます。 調達カテゴリ階層を使用する場合、さらに手順ステップで使用される例にも、このガイドをデモ データ会社 USMF で使用することができます。
 

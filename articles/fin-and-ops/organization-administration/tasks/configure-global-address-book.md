@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="configure-the-global-address-book"></a>グローバル アドレス帳のコンフィギュレーション
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 グローバル アドレス帳の既定値およびセキュリティ ポリシーを設定するには、この手順を使用します。 
 

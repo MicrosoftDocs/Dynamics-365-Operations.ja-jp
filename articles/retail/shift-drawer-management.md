@@ -29,7 +29,7 @@ ms.lasthandoff: 03/22/2018
 
 # <a name="shift-and-cash-drawer-management"></a>シフトとキャッシュ ドロワーの管理
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 この記事では、小売販売時点管理 (POS) シフトにおける 2 つのタイプの設定および使用方法について説明します - 共有およびスタンドアロン。 共有シフトは、複数の場所で複数のユーザーにより使用できますが、スタンドアロン シフトは、一度に 1 人の作業者しか使用できません。
 

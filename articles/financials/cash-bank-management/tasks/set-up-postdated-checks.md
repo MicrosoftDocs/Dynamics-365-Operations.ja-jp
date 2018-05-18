@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-postdated-checks"></a>先日付小切手の設定
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 このトピックでは、先日付小切手の仕訳入力を転記するかどうかと、どの転記仕訳帳を清算項目と仕入先支払に使用するかを指定する方法について説明します。 発行済小切手、受領済小切手、および源泉徴収税の精算勘定も指定できます。 将来の日付で支払を履行または受け取るために発行される先日付小切手です。 小切手が、その有効期限前に、会計帳簿に反映する必要があるかどうかを指定できます。
 

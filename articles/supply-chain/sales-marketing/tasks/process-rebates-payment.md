@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="process-rebates-for-payment"></a>支払のリベートの処理
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順は、承認済および処理済の顧客リベートを貸方票に変換する方法を示します。 USMF デモ データ会社でこのガイドを使用できます。 このガイドの前提条件は、[マーク] の状態のリベート要求が 1 つ以上あることです。 USMF を使用している場合は、このガイドを開始する前に、「顧客リベートの生成と処理」ガイドを実行する必要があります。
 

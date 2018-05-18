@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-production-flow-models"></a>生産フロー モデルの定義
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 生産フロー モデルは、リーン生産作業セルの能力の、計算および管理方法を示しています。 したがって、生産フロー モデルの定義は、作業セルの定義の前提条件となります。 この手順の作成に使用するデモ データの会社は USMF です。
 

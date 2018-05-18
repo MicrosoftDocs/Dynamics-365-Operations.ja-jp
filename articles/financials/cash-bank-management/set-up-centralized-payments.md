@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-centralized-payments"></a>集中支払の設定
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 ある 1 つの法人で組織内の他の法人に代わって支払を処理するように準備するには、次の手順に従います。 始める前に、次の設定を完了する必要があります。
 

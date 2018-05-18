@@ -24,7 +24,7 @@ ms.lasthandoff: 10/31/2017
 ---
 # <a name="set-up-consolidated-invoices-japan"></a>月次締め請求書の設定 (日本)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 日本では、日本の商習慣に合わせて月次締め請求書を有効にできます。
 

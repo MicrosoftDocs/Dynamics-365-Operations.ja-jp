@@ -24,7 +24,7 @@ ms.lasthandoff: 11/14/2017
 ---
 # <a name="create-product-model-components"></a>製品モデル コンポーネントの作成
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 制約ベースの製品コンフィギュレーション モデルでは、製品モデル構造を構築する構成要素としてコンポーネントを使用します。 製品モデルを作成するには、コンポーネントがあらかじめ作成されている必要があります。 この手順の作成に使用するデモ データの会社は USMF です。
 

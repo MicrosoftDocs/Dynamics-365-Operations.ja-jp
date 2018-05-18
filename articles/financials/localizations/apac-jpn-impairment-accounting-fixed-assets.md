@@ -27,7 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="impairment-accounting-for-fixed-assets-for-japan"></a>日本の固定資産の減損会計
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 このトピックでは、日本の固定資産の減損会計に関する情報について説明します。
 

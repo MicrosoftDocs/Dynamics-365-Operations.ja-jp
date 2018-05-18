@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-cash-denominations-for-pos"></a>POS の現金貨幣単位をコンフィギュレーションします。
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 紙幣および硬貨の現金貨幣単位は、POS 内で店舗のレジ担当者、店員およびマネージャーにより使用されるバック オフィスで定義できます。 これらの貨幣単位は、営業終了時の支払/入金申告、または売上の簡単な支払/入金の現金計算をする助けとして使用できます。
 

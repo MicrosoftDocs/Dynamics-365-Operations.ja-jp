@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-purchase-release-order-when-creating-the-purchase-order"></a>発注書の作成時に購買リリース注文を作成
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、発注書を作成するときに購買契約書を使用する方法を示します。 発注書ヘッダーには一般的な条件をコピーする必要があるので、発注書を作成するときに購買契約書を適用する必要があります。 通常、これらのタスクを実施するのは、購買担当者です。 このガイドの前提条件として、仕入先および品目の製品数量が確約された有効購買契約書が必要です。 同じ手順は、他のタイプの確約のある購買契約書が存在する場合に使用できます。 デモ データの会社 USMF でこのガイドを実行できます。 USMF を使用する場合、最初に「購買契約の作成」ガイドを実行して、このガイドに必要な前提条件を設定することができます。
 

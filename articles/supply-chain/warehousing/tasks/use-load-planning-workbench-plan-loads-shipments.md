@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="plan-loads-and-shipments-using-the-load-planning-workbench"></a>積荷計画ワークベンチを使用した積荷および出荷の計画
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、販売注文の積荷を作成するための積荷計画ワークベンチの使用方法を示します。 前提条件として、まず販売注文を作成します。 この手順は、配送コーディネーターの日常の作業一部です。 この手順の作成に使用するデモ データの会社は USMF です。
 

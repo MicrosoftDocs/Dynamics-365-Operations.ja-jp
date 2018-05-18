@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-bom-line-event-kanban-rule"></a>BOM 明細行イベントかんばんルールの作成
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 このタスクは、古典的な実稼働環境と混合リーン内の生産 BOM 明細行の供給を確認するイベントかんばんルールを作成するのに必要な設定を対象としています。 このタスクの作成に使用するデモ データの会社は USMF です。 このタスクは、新しい製品または変更された製品の生産を準備している、プロセス エンジニアまたはバリュー ストリーム マネージャーを対象としています。
 

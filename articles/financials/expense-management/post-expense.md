@@ -26,7 +26,7 @@ ms.lasthandoff: 03/13/2018
 
 # <a name="post-an-expense-report"></a>経費精算書の転記
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 経費精算書は、承認されて一般仕訳帳に転送された後、一般会計に転記できます。 経費精算書を転記すると、付加価値税 (VAT) の還付に適用できる経費が特定されます。 VAT の支払の確認および還付タスクは、経費精算書の確認を担当する従業員に割り当てられます。
 

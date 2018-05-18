@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="generate-documents-with-application-data"></a>アプリケーション データと共にドキュメントを生成する
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順のステップを完了するには、まず「ER アプリケーション データ更新と共にドキュメントを生成する (パート 4: 形式の変更)」の手順を完了する必要があります。
 

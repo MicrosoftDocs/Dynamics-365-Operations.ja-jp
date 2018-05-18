@@ -28,7 +28,7 @@ ms.lasthandoff: 12/14/2017
 
 # <a name="accounting-source-explorer"></a>会計ソース エクスプローラー
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 この記事は、総勘定元帳の勘定項目の背後にあるソース情報の詳細分析に使用できる会計のソース エクスプローラに関する情報を提供します。
 

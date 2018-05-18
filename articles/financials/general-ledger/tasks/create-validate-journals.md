@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-and-validate-journals"></a>仕訳帳の作成および検証
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 このタスク ガイドでは、仕訳帳および仕訳帳明細行を作成し、検証します。 このタスクでは、USMF というデモ会社を使用します。  
 

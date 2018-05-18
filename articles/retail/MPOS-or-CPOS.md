@@ -28,7 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="choose-between-modern-pos-and-cloud-pos"></a>Modern POS およびクラウド POS かの選択をします
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 for Retail を配置する際に考慮すべき要因に対する追加のバック グラウンド、ヒント、およびガイダンスを実装者に与えます。 配置プロセスの一部としてこのガイドを確認し従うことにより、実装者は、ユーザーの満足度またはパフォーマンスに影響を与える可能性がある問題を回避することができます。
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="customer-posting-profiles"></a>顧客転記プロファイル
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 顧客転記プロファイルは、顧客トランザクションから総勘定元帳への転記を制御します。
 

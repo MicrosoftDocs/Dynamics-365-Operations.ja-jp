@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-location-profile"></a>場所プロファイルの作成
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 倉庫の場所は、場所のプロパティに関連したプロファイルを有している必要があります。たとえば、ある場所では品目の混合が許容されているかどうかなどです。 この手順では、ライセンスプレートの管理が必要ない場所のプロファイルを作成します。 混合された品目と混合された在庫の状況を有効にして、循環棚卸を可能にします。 デモ データの会社 USMF でこの手順を使用できます。
 

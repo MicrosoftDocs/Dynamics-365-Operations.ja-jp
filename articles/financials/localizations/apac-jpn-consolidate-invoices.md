@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="consolidated-invoices-for-japan"></a>日本向け月次締め請求書
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 日本では、支払の請求書は毎月統合されます。 この記事は、月次締め請求書に関する情報を提供し、請求金額および期日の計算方法を説明します。
 

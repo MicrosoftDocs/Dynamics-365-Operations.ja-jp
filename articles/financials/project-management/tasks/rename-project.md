@@ -25,7 +25,7 @@ ms.lasthandoff: 11/08/2017
 ---
 # <a name="rename-or-modify-a-project-stage"></a>プロジェクト ステージの変更または名前の変更
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 プロジェクト ステージは、プロジェクトのライフ サイクルの指針となります。 [プロジェクト管理および会計パラメータ] ページの [プロジェクト ステージ] エリアで、プロジェクトに含めるプロジェクト ステージを定義できます。 Dynamics 365 for Finance and Operations は、5 つの定義済みのプロジェクト ステージおよび次の 3 つのユーザー定義のステージを提供します。 プロジェクトの進行状況を追跡するために使用しているプロジェクト ステージの名前を更新することができます。 また、ユーザー定義のステータス名に名前を付けることもできます。 このタスクでは、名前を変更、またはプロジェクトステージを変更し、USSI データ セットを使用する方法を示します。
 

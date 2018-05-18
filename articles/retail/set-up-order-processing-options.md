@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="set-up-a-call-center-channel"></a>コール センターのチャンネルを設定
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 会社では、Microsoft Dynamics 365 for Retail の複数のコール センター チャンネルを定義できます。 コール センター チャンネルは、[**小売** \> **チャンネル** \> **コール センター** \> **すべてのコール センター**] で設定され、法人に特有のものです。
 

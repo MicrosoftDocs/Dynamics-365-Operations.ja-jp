@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-an-accelerated-depreciation-document-and-enter-usage-data-japan"></a>増加償却ドキュメントの作成および使用状況データの入力 (日本)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 日本では、加速償却は、原則ドキュメントごとに申告されます。 各ドキュメントには複数の固定資産を含めることができます。 加速償却額を取得するためには、加速償却ドキュメントで過剰使用率を計算し、通常の減価償却量によって乗算する必要があります。 
 

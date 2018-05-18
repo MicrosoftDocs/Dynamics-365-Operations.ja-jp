@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="use-disassemble-list-for-fixed-assets-japan"></a>固定資産の分解一覧の使用 (日本)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 日本では、固定資産のコンポーネントを在庫に移転できます。 
 

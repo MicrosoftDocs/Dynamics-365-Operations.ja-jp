@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="initialize-seed-data-in-a-new-retail-environment"></a>新しい小売環境でのシード データの初期化
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 この記事では、Microsoft Dynamics 365 for Retail の初期化処理の一部として作成されるデータについて説明します。
 

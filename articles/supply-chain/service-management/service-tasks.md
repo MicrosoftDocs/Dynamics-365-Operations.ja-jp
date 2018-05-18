@@ -28,7 +28,7 @@ ms.lasthandoff: 02/21/2018
 
 # <a name="service-tasks"></a>サービス作業  
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 サービス作業は、サービス注文で実行される作業を記述するために使用されます。
 この情報は、技術者と顧客の両方が参照できます。

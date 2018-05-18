@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="budget-planning-overview"></a>予算計画の概要
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 この記事では予算計画を紹介し、予算計画のコンフィギュレーションと予算計画プロセスの設定に役立つ情報が含まれています。
 

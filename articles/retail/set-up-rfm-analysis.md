@@ -29,7 +29,7 @@ ms.lasthandoff: 12/14/2017
 
 # <a name="set-up-rfm-analysis"></a>RFM 分析の設定
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 このトピックでは、顧客の Recency、頻度、および金融 (RFM) 分析の設定方法について説明します。
 

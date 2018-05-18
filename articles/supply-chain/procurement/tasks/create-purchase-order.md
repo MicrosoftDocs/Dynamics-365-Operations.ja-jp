@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-purchase-order"></a>発注書の作成
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、手動での注文書の作成方法を説明します。 ほとんどの場合、注文書はマスター プラン、直納、およびその他の処理の結果として自動的に作成されます。 通常、発注書は購買担当者が作成します。 ここで示す例では、さまざまなステップのメモで示されている値を使用して、USMF デモ データ会社で使用できます。
 

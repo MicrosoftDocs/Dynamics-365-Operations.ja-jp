@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="action-messages"></a>アクション メッセージ
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 アクション メッセージは、既存の計画オーダーまたは確定オーダーの変更についてシステムで生成される提案です。
 

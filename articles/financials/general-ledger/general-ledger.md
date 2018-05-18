@@ -28,7 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="general-ledger"></a>一般会計 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 法人の財務レコードを定義および管理するには、一般会計を使用します。 一般会計では借方と貸方のエントリ登録です。 これらのエントリは、勘定科目表に表示される勘定を使用して分類されます。 
 

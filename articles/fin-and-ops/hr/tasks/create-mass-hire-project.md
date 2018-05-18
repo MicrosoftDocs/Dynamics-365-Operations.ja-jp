@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-mass-hire-project"></a>大量採用プロジェクトの作成
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、大量雇用プロジェクトを設定するプロセスについて説明します。 リクルーターは大量雇用プロジェクトを使用して、簡単に複数の職位を作成し、多数の作業者をこれらの職位に採用することができます。 この手順を開始するには、[人事管理] > [採用] > [大量雇用プロジェクト] の順に移動します。 この手順の作成に使用するデモ データの会社は USMF です。
 

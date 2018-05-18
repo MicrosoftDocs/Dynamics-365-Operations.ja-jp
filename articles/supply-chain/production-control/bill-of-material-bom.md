@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="bills-of-materials-and-formulas"></a>部品表およびフォーミュラ
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 このトピックでは、製品および製品バリアントの定義の中心となる部品表 (BOM) およびフォーミュラについて説明します。 BOM およびフォーミュラは、特定の製品に必要な材料または成分を指定します。 フォーミュラは、特定の生産コンテキストで入庫する連産品および副産物も指定します。 
 

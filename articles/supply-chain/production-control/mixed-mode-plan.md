@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="mixed-mode-planning---combine-discrete-process-and-lean-sourcing"></a>ミックス モードの計画 - ディスクリート、プロセス、およびリーン ソーシングを組み合わせる
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 このトピックは、ミックス モードの計画に関する情報を提供します。 ミックス モードの計画では、材料フローに基づいてサプライ チェーンをシミュレーションできます。 Microsoft Dynamics 365 for Finance and Operations は、選択された供給ポリシー (かんばん、製造指図、購買発注、バッチ注文、または転送指図) にかかわらず、材料フローがモデルに従っていることを確認します。 
 

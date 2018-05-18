@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="financial-period-close-workspace"></a>財務期間終了ワークスペース
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 この記事は、財務期間終了ワークスペースおよび関連するコンフィギュレーションの概要を提供します。
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-request-for-quotation"></a>見積依頼の作成
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、見積依頼の作成方法を説明します。 これは通常、購買担当者が行います。 デモ データの会社 USMF のこの手順を使うか、または独自のデータを使うことができます。 開始する前に、入札タイプを設定する必要があります。 このタスクを完了し、RFQ を作成および送信したなら、その後仕入先ごとに返信を入力したり、比較したり、契約を授与したりすることができます。
 

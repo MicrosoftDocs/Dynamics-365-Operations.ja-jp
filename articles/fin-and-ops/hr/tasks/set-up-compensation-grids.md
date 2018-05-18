@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="set-up-compensation-grids"></a>報酬グリッドの設定
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 [報酬] グリッドは、固定報酬プランの支払構造を定義または維持するために使用します。 [報酬] グリッドは、複数のプラン間で共有または新しい報酬プランの作成時にコピーすることができます。  報酬グリッドを作成する前に、[レベル] と [基準] ポイントを設定する必要があります。 この例では、[レベル] と [基準] ポイントのデモ データを使用して、報酬グリッドの新しい [等級] タイプを作成します。 この手順の作成に使用するデモ データの会社は USMF です。
 

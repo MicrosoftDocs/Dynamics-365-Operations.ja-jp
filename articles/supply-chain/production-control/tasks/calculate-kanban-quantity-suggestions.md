@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="calculate-kanban-quantity-suggestions"></a>かんばん数量修正候補の計算
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、かんばん数量計算を使用して、特定のかんばんルールに対してかんばんのサイズおよび数量を最適化することに焦点をあてます。 この手順の作成に使用するデモ データの会社は USMF です。 この手順は、バリュー ストリーム マネージャーを対象としています。 「かんばん数量計算ポリシーをかんばんルールへ追加する」という手順を事前に完了しておく必要があります。
 

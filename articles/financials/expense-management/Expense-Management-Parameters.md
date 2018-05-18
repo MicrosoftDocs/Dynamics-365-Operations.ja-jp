@@ -26,7 +26,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="expense-management-parameters"></a>経費管理パラメーター
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 -----------------------------
 

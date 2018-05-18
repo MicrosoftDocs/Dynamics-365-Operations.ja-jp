@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="design-the-relationships-between-organizational-units"></a>組織単位間のリレーションシップのデザイン
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 この手順では、組織単位間の関係をデザインする方法を説明します。 関係を定義する前に新しい組織の目的を作成する必要があります。または既存の組織の目的を使用することができます。 この手順を完了するのに使用されるデモ データの会社は USRT です。 このタスクは、管理者ロールを対象としています。
 

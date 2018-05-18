@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="overview-of-product-and-customer-search-in-point-of-sale"></a>販売時点管理での製品および顧客検索の概要
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Modern 販売時点管理 (MPOS) およびクラウド販売時点管理 (CPOS) は、製品および顧客の使いやすい検索機能を提供します。 検索バーは、常に MPOS および CPOS ウィンドウの上部に表示されているため、従業員はすばやく製品および顧客を検索できます。
 

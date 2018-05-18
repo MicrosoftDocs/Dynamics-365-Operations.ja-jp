@@ -25,7 +25,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="data-import-and-export-jobs"></a>データ インポート/エクスポート ジョブ
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Microsoft Dynamics 365 for Finance and Operations でデータ インポート/エクスポート ジョブを管理して作成するには、**データ管理** ワークスペースを使用します。 既定では、データ インポート/エクスポート プロセスにより、ターゲットのデータベースで各エンティティにステージング テーブルが作成されます。 ステージング テーブルにより、移動させる前にデータを確認、クリーンアップ、または変換できます。
 

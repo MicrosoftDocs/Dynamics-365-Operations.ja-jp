@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="use-the-safety-stock-journal-to-update-minimum-coverage"></a>安全在庫仕訳帳を使用した最小補充の更新
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、履歴トランザクションに基づいて最小補充提案を計算し、提案を使用して品目補充を更新する方法を示します。 これは安全在庫仕訳帳を使用して実行されます。 このタスクの作成に使用するデモ データの会社は USMF です。 このタスクは、生産計画担当者による最小補充の維持を支援することを意図しています。
 

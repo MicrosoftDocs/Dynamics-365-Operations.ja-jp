@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="input-journal-in-t-account-form-japan"></a> T 勘定フォームでの仕訳帳入力 (日本)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 日本では、仕訳入力には一般的に T 字勘定形式が使用されます。 
 

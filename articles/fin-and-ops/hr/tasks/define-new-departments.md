@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="define-new-departments"></a>新しい部門の定義
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 部門は、販売または会計など、事業の機能領域を表す作業単位です。 多くの会社には、事業内のさまざまな部門を表示する組織階層があります。 この手順では、部門を作成し、作成した部門を組織内の部門階層に追加するプロセスを説明します。 この手順の作成に使用するデモ データの会社は USMF です。
 

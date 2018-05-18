@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-legal-entity"></a>法人の作成
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 法人は、法的権利の登録によって識別される組織です。 法人には、契約の締結が認められており、業績を報告する収支報告書の作成が義務付けられています。 次の手順では、法人の作成方法を説明します。 この手順の作成に使用するデモ データの会社は USMF です。
 

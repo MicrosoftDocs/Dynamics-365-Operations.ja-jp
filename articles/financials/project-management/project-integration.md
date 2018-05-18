@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="microsoft-project-client-integration"></a>Microsoft Project クライアント統合
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 プロジェクト スケジュールの計画や管理は複雑な題目になるため、プロジェクト マネージャーは、これらのタスク管理に役立つツールを使用する必要があります。 Microsoft Project クライアントとの統合により、プロジェクト作業分解構造を開いて管理するためのサポートが提供されます。 プロジェクト マネージャーは、変更を Finance and Operations のプロジェクト作業分解構造に公開できます。
 

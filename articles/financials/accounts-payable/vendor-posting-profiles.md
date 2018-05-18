@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="vendor-posting-profiles"></a>仕入先転記プロファイル
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 仕入先転記プロファイルは、仕入先トランザクションの総勘定元帳への転記を制御します。
 

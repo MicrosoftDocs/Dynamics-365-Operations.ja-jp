@@ -24,7 +24,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="release-a-productproduct-master-to-legal-entities"></a>法人に対する製品/製品マスターのリリース
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、一つ以上の法人に製品または製品マスターをリリースする方法を説明します。 このタスクの作成に使用されるデモ データの会社は USRT です。このタスクは販売促進マネージャーと製品デザイナー向けの想定です。
 

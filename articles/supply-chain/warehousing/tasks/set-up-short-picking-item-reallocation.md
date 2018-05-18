@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-short-picking-item-reallocation"></a>品目再配賦の未処理ピッキングの設定
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、倉庫の在庫が不十分な場合、倉庫従事者はどのようにすれば他の倉庫を素早く見つけることができるか説明します。 自動的な再配分をすることは可能で、他の場所が手配できる場合、製品を再配分させる指示があります。 また手動再配分を行う場合、有効数量の対応が可能な場所の一覧がモバイル端末に表示され、これにより倉庫従事者は在庫にはどの場所がよいか選択することができます。 デモ データの会社 USMF でこの手順を使用できます。 この手順は、Dynamics 365 for Operations、バージョン 1611 に追加された機能です。
 

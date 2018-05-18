@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="foreign-currency-revaluation-for-accounts-payable-and-accounts-receivable"></a>[買掛金勘定] および [売掛金勘定] の外貨再評価
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 為替レートの変動は、外貨での未処理トランザクションの計算上の金額 (簿価額) が時間の経過と共に変化する原因になります。 この記事は、[買掛金勘定] および [売掛金勘定] の未処理トランザクションの値を更新するために実行する外貨再評価プロセスに関する情報を提供します。 
 

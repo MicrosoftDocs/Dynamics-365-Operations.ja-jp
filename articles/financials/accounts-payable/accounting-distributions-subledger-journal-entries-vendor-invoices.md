@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="accounting-distributions-and-subledger-journal-entries-for-vendor-invoices"></a>仕入先請求書の勘定配布と補助元帳仕訳
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 勘定配布は、仕入先請求書における経費、税金、または手数料などの計上方法など、金額をどのように計上するかを定義します。 仕入先請求書を仕訳入力するときに計上しなければならない金額にはいずれも一つ以上の勘定配布があります。 
 

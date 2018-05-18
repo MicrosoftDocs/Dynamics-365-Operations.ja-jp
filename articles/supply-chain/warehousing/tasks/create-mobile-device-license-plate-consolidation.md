@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-mobile-device-menu-item-for-license-plate-consolidation"></a>ライセンス プレートの連結用のモバイル デバイス メニュー項目の作成
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、ライセンスプレート結合作業に必要なモバイル端末のメニュー項目を作成する方法を示します。 これにより、倉庫従事者は同じ場所内で、品目付きライセンスプレートと別の場所のライセンスプレートとを結合することができます。 たとえば、この方法を用いると両方の作業指示で手順が同一の場合、結合された品目についての作業は1回で済むわけです。 デモ データの会社 USMF でこの手順を使用できます。 通常、この作業を行うのは倉庫責任者です。 この手順は、Dynamics 365 for Operations、バージョン 1611 に追加された機能です。
 

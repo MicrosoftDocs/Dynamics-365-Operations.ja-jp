@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="enter-applicant-and-application-data-manually"></a>申請者およびアプリケーション データの手動入力
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、手動で申請者とその申請に関する情報を管理する方法について説明します。   申請者についての個人情報、面接の日時、能力、宿舎施設のリクエストを入力および管理できます。 また、雇用申請者の申請状態を更新し、申請者とやり取りを行うための手紙または電子メールを作成できます。 申請者レコードを作成すると、その申請者の人物のレコードはグローバル アドレス帳で作成されます。       この手順の作成に使用するデモ データの会社は USMF です。
 

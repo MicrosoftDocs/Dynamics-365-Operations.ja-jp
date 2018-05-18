@@ -25,7 +25,7 @@ ms.lasthandoff: 02/13/2018
 
 ---
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 # <a name="product-confirmation-for-cluster-picking"></a>クラスター ピッキングの製品の確認
 クラスタ ピッキングでは、複数の注文に対する品目のピッキングを同時にすることができます。 クラスタ ピッキングが適用される場合、クラスタに追加される品目を確認するための品目確認書は重要です。 クラスタ ピッキング プロセス中にクラスタ ピッキングの品目を確認することができます。

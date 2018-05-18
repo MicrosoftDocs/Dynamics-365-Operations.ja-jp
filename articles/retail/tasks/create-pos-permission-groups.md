@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="create-pos-permission-groups"></a>POS アクセス許可グループの作成
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 この手順は、POS アクセス許可グループを作成する方法を示します。 このタスクの作成に使用するデモ データの会社は USRT です。 このタスクは「小売工程マネージャー ロール」を対象としています。
 

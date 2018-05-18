@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="process-loyalty-reward-point-adjustments"></a>ロイヤルティ報酬ポイント調整の処理
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 この手順では、ロイヤルティ カード情報を検索し、ロイヤルティ報酬ポイントを調整する方法を示します。 このタスクの作成に使用するデモ データの会社は USRT です。 このタスクは小売工程マネージャー ロールまたは顧客サービス マネージャ ロールを対象としています。
 

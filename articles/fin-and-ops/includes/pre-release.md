@@ -1,2 +1,2 @@
 > [!IMPORTANT]
-> この機能は、Dynamics 365 for Finance and Operations バージョン 8.0 でのみ使用可能であり、対象となるユーザーが Continuous Auto-update Advantage Program (CAAP) を希望した場合に使用できます。 対象となる標準のリリースの詳細については、[対象となる標準のプラットフォーム リリース](../get-started/public-preview-releases.md)を参照してください。
+> この機能は、Platform update 15 (7.0.4841) 以降でのみ利用できます。 この更新プログラムは現在、対象顧客に対してのみ提供されています。2018 年 6 月に、すべてのユーザーに対して提供される予定です。

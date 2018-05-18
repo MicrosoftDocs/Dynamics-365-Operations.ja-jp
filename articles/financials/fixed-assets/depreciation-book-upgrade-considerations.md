@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="depreciation-book-upgrade-overview"></a>減価償却簿のアップグレードの概要
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 以前のリリースでは、固定資産には 2 つの評価概念がありました - 価値モデルおよび減価償却簿。 Microsoft Dynamics 365 for Operations (1611) では、価値モデル機能および減価償却簿機能は帳簿と呼ばれる単一の概念に統合されました。 このトピックでは、アップグレードで考慮すべき点について説明します。 
 
@@ -62,17 +62,17 @@ ms.lasthandoff: 11/03/2017
 パラメーターは、「ReleaseUpdateDB70\_FixedAssetJournalDepBookRemovalDepBookJournalTrans」クラスの先頭にあります。 
 
 *// 伝票配賦の好ましいアプローチを指定* 
-*// 「true」、既存の番号順序コードを使用する場合* 
-*// 「false」、システムで定義されている番号順序 (既定) を使用する場合* const boolean NumberSequenceUseExistingCode = false;  
+ *// 「true」、既存の番号順序コードを使用する場合* 
+ *// 「false」、システムで定義されている番号順序 (既定) を使用する場合* const boolean NumberSequenceUseExistingCode = false;  
 
 *// システム定義された番号順序のアプローチを使用する場合は、番号順序のパラメーターを指定します。*
-*// 新しい番号順序は、これらのパラメーターで作成されます。* const str NumberSequenceDefaultCode = 'FADBUpgr'; const str NumberSequenceDefaultParameterPrefix = 'FADBUpgr'; const int NumberSequenceDefaultParameterAlpanumericLength = 9; const int NumberSequenceDefaultParameterStartNumber = 1;   
+ *// 新しい番号順序は、これらのパラメーターで作成されます。* const str NumberSequenceDefaultCode = 'FADBUpgr'; const str NumberSequenceDefaultParameterPrefix = 'FADBUpgr'; const int NumberSequenceDefaultParameterAlpanumericLength = 9; const int NumberSequenceDefaultParameterStartNumber = 1;   
 
 *// 既存の番号順序アプローチを使用する場合は、既存の番号順序コードを指定します。* 
-*// 伝票の配賦は、既存の番号順序のために行ごとに移動します。* const str NumberSequenceExistingCode = ''; *// 既存の番号順序コードのスコープを指定* 
-*// 「true」、指定された番号順序が共有されている場合* 
-*// 「false」、指定された番号順序が会社単位である場合* 
-*// 指定されたスコープの番号順序コードが見つからない場合は、既定のシステム定義の番号順序が使用されます。* const boolean NumberSequenceExistingIsShared = true; 
+ *// 伝票の配賦は、既存の番号順序のために行ごとに移動します。* const str NumberSequenceExistingCode = ''; *// 既存の番号順序コードのスコープを指定* 
+ *// 「true」、指定された番号順序が共有されている場合* 
+ *// 「false」、指定された番号順序が会社単位である場合* 
+ *// 指定されたスコープの番号順序コードが見つからない場合は、既定のシステム定義の番号順序が使用されます。* const boolean NumberSequenceExistingIsShared = true; 
 
 定数が変更された後、クラスを含むプロジェクトを再構築します。 
 

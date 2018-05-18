@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="change-a-fixed-asset-group"></a>固定資産グループの変更
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 固定資産は正しい固定資産グループに割り当てる必要があります。 固定資産グループは、次の場合に使用されます。
 

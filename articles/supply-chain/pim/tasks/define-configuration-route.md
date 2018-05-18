@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-configuration-routes"></a>コンフィギュレーション ルートの定義
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、コンフィギュレーション グループの表示順序を決定するコンフィギュレーション ルートの定義を対象としています。 この手順の作成に使用するデモ データの会社は USMF です。 これは、分析コード ベースのコンフィギュレーションでの組み合わせの作成方法を説明する 8 つの手順の 6 番目です。
 

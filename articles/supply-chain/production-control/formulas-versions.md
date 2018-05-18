@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="formulas-and-formula-versions"></a>フォーミュラとフォーミュラ バージョン
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 フォーミュラは材料、成分、およびプロセス製造での特定プロセスの結果を定義します。 対応する工順と共に、フォーミュラはプロセス製造での全体のプロセスを定義します。 フォーミュラは、プロセス製造で製品を計画および生産するのに使用されます。
 

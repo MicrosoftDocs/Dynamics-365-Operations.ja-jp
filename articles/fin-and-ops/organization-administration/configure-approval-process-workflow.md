@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-an-approval-process-in-a-workflow"></a>ワークフローでの承認プロセスのコンフィギュレーション
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 承認プロセスのプロパティをコンフィギュレーションするには、次の手順に従います。
 

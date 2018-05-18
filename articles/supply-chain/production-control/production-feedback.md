@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="production-feedback"></a>生産フィードバック
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 この記事は、作業者に生産ジョブに関するフィードバックを与える生産フィードバックに関する情報を提供します。 この記事には、生産フィードバックを更新するさまざまな方法に関する情報が含まれます。
 

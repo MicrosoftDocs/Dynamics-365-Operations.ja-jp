@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="set-up-bank-reconciliation-matching-rules"></a>口座調整照合ルールの設定
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 このトピックでは、口座調整プロセスを容易にするために、調整の照合ルールと調整の照合ルール セットを設定する方法を説明します。 調整の照合ルールは、調整プロセス中に口座取引明細書行および銀行ドキュメント明細行をフィルタ処理するために使用される一連の基準です。
 

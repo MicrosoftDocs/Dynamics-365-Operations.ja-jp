@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-cost-elements"></a>原価要素の作成 
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 原価計算の原価要素を作成するにはいくつかの方法があります。 この手順では、データ コネクタ経由で主勘定をインポートしてコスト要素を作成する方法を示します。 この手順の作成に使用するデモ データの会社は USMF です。 この手順は、Dynamics 365 for Operations、バージョン 1611 に追加された原価会計機能です。
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="fixed-asset-depreciation-conventions"></a>固定資産の減価償却方法
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 減価償却方法は、固定資産の取得年および処分年の両方で減価償却を計算するタイミングと方法を決定するのに使用されます。
 

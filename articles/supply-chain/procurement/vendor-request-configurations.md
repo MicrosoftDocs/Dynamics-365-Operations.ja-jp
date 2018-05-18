@@ -25,7 +25,7 @@ ms.lasthandoff: 02/08/2018
 ---
 
 # <a name="vendor-request-configurations"></a>仕入先要求コンフィギュレーション
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 仕入先要求を完了するには、仕入先連絡担当者は、見込み仕入先の登録ウィザードを完了する必要があります。
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 
 # <a name="set-up-depreciation-books"></a>減価償却簿の設定 
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 このタスク ガイドでは、新しい減価償却簿が作成さし、固定資産グループに関連付けます。  これは USMF の法人に対して経理担当ロールとデモ データを使用します。
 

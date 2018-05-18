@@ -29,7 +29,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="calculations-for-product-configuration-models-faq"></a>製品コンフィギュレーション モデルの計算についてよく寄せられる質問
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 このトピックでは、製品コンフィギュレーション モデルの計算に加えて、制約と計算を一緒に使用する方法について説明します。
 

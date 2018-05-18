@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="posting-definitions"></a>転記の定義
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 この記事では、転記の定義に関する情報と、それらを定義およびリンクする方法について説明します。 サポートされている転記タイプと文書については、転記プロファイルの代わりに転記の定義を使用して、勘定項目の主勘定および財務分析コードを分類できます。
 

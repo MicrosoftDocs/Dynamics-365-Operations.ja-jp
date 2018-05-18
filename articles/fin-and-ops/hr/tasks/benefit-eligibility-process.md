@@ -24,7 +24,7 @@ ms.lasthandoff: 02/14/2018
 ---
 # <a name="benefit-eligibility-process"></a>給付金適格性処理
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順は、給付金適格性処理が機能する方法を示します。 プロセスが完了すると、結果を表示できます。 この手順の作成に使用するデモ データの会社は USMF です。
 

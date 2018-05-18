@@ -26,7 +26,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="getting-started-with-microsoft-dynamics-365-for-talent"></a>Microsoft Dynamics 365 for Talent の使用を開始する
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Microsoft Dynamics 365 for Talent では、簡単にユーザー インターフェイスを変更したり、ニーズにもっと直観的に答えることのできるオプションを設定したりできます。 このトピックには、ユーザー インターフェイスを基本設定に変更する方法に関する情報を提供するトピックへのリンクが含まれます。 トピックには、効率的で正確なシステムで情報を検索する際に役立つ情報へのリンクも含まれます。 
 

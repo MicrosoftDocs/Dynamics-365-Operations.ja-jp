@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="configure-locations-in-a-wms-enabled-warehouse"></a>WMS に対応した倉庫の場所のコンフィギュレーション
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 このガイドでは、新しい WMS が有効な倉庫 (詳細な倉庫管理プロセスを使用する倉庫) の場所の設定をコンフィギュレーションする方法を示します。 通常、このプロセスを実行するのは倉庫マネージャーです。 このガイドは、デモ データの会社 USMF で、または独自のデータで実行できます。 少なくとも 1 つのサイトがコンフィギュレーションされていることが前提条件です。
 

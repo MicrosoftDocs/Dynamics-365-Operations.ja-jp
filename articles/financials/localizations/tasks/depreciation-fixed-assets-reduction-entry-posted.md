@@ -24,7 +24,7 @@ ms.lasthandoff: 02/13/2018
 ---
 # <a name="depreciate-fixed-assets-with-reduction-entry-posted-japan"></a>圧縮記帳が転記されている固定資産の減価償却 (日本)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 このタスクを使用して、圧縮記帳で固定資産の減価償却を実行する方法を把握します。
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-sales-tax-settlement-periods"></a>消費税精算期間を設定します
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 売上税決済期間は、売上税の報告および支払が必要な間隔についての情報を含みます。 決済プロセスは、特定の日付範囲の決済期間に実行できます。 決済期間に関連付けられたすべての税コードが決済されます。 関連する売上税所轄官庁の設定に応じて、未払税金は仕入先または総勘定元帳勘定に転記されます。
 

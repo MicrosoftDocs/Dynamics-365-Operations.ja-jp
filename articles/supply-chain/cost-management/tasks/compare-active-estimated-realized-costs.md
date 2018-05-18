@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="compare-active-estimated-and-realized-costs-on-a-production-order"></a>製造オーダーの有効原価、見積原価、実現原価を比較
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順は、同じ製造オーダーで製造差異が大きい理由の表示方法を示します。 この手順の作成に使用するデモ データの会社は USMF です。 この手順は、原価の管理者を対象としています。
 

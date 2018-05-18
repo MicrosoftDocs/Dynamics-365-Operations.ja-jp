@@ -24,7 +24,7 @@ ms.lasthandoff: 10/27/2017
 ---
 # <a name="create-and-assign-advanced-rule-structures"></a>詳細ルール構造の作成と割り当て
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 このタスク ガイドでは、詳細ルール構造の作成と勘定構造への割り当てについて説明します。 このガイドでは、USMF デモ会社を使用します。
 

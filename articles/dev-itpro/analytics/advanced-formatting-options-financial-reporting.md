@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="advanced-formatting-options-in-financial-reporting"></a>財務諸表の高度な形式オプション
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 財務報告レポートを作成する場合は、追加の形式機能が使用できます。これには分析コードのフィルター、列とレポート単位への制限、ノン プリンティング行、計算の IF/THEN/ELSE 明細書が含まれます。 
 

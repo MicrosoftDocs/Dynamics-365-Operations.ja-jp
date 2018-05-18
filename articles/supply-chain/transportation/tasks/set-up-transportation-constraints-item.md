@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-transportation-constraints-for-an-item"></a>品目の配送制約の設定
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、選択した品目が選択したハブを通じて配送されないよう配送制約を設定します。 通常、このタスクを実施するのは、配送コーディネーターです。 デモ データ会社 USMF でこの手順を使うか、または独自のデータを使うことができます。
 

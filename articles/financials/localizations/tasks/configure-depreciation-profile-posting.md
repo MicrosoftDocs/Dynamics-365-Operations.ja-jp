@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="configure-depreciation-profile-and-posting-profile-for-additional-depreciation-japan"></a>割増償却に対する減価償却プロファイルおよび転記プロファイルのコンフィギュレーション (日本)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順を使用して、特別償却の減価償却プロファイルと転記プロファイルを構成する方法を説明します。
 

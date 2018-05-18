@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="add-a-predecessor-to-a-production-flow-activity"></a>生産フロー活動への先行処理の追加
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 生産フロー バージョンでは、すべての活動は順番に配列する必要があります。 活動には、複数の先行または後続の処理を含めることができます。 
 

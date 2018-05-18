@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="create-a-semi-finished-product-february-2016-only"></a>半完成品の作成 (2016 年 2 月のみ)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 このタスクでは、半完成品の作成に重点を置きます。 これは、BOM 計算シリーズの 2 番目のタスクです。 このタスクの作成に使用するデモ データの会社は USMF です。
 

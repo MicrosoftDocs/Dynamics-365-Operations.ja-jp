@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="project-forecasts-and-budgets"></a>プロジェクトの予測と予算
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Microsoft Dynamics 365 for Finance and Operations では、プロジェクトの予測とプロジェクトの予算の 2 つの方法で、プロジェクトの管理と制御を行えます。 
 

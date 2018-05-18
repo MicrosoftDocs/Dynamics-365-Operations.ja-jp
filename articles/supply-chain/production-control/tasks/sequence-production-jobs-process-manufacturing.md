@@ -24,7 +24,7 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="sequence-production-jobs-for-process-manufacturing"></a>プロセス製造向けの生産ジョブの順序付け
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、色と梱包サイズの優先順位に従って計画オーダーを配列する方法を示す 1 例として、塗料製品が使用されます。 この手順の作成に使用するデモ データの会社は USPI です。 この手順は、生産の計画者を対象としています。
 

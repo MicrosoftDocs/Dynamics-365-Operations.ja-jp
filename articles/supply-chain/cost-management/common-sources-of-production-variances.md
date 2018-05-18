@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="common-sources-of-production-variances"></a>製造差異の一般的な発生源
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 この記事は、製造差異のタイプごとの一般的な発生源について説明します。 
 

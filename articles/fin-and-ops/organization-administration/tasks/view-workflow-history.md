@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="view-workflow-history"></a>ワークフロー履歴の表示
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 処理および承認のためにワークフロー システムに送信されたドキュメントの状態を表示するには、これらのステップを使用します。 この手順の作成に使用するデモ データの会社は USMF です。
 

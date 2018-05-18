@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="product-configuration-models-overview"></a>製品コンフィギュレーション モデルの概要
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 この記事では、製品コンフィギュレーション モデルに関連する用語と概念を定義します。 製品コンフィギュレーション モデルを使用すると、単一の製品に多数の製品バリアントをコンフィギュレーションするのに使用できるノーブランド商品の構造を構築することができます。
 

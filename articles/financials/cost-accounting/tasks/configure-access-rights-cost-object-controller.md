@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="configure-access-rights-for-a-cost-object-controller"></a>原価オブジェクト コントローラーのアクセス権のコンフィギュレーション
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順を使用して、コスト オブジェクト コントローラーのアクセス権を設定します。 この記録では、USP2 デモ データ会社を使用します。
 

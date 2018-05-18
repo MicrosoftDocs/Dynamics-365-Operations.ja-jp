@@ -27,9 +27,9 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="purchase-order-approval-mobile-workspace"></a>発注書の承認モバイル ワークスペース
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 このトピックでは、**発注書の承認**モバイル ワークスペースに関する情報を提供します。 このワークスペースでは、発注書を表示したり、アクションを通じて対応したりできます。 たとえば、発注書を承認または拒否できます。
  

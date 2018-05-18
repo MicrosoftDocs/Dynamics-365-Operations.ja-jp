@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-rate-masters"></a>レート マスターの設定
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、レート マスターを設定する方法を示します。 物流マネージャーは、通常、配送業者によって署名された契約に応じて、レート マスターを設定します。 このシナリオでは、航空運送業者のレート マスターを設定します。 この手順の作成に使用するデモ データの会社は USMF です。
 

@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="removed-or-deprecated-features"></a>削除または削除予定の機能
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 このトピックでは、Dynamics 365 for Finance and Operations で削除された機能や、将来の更新で削除される予定の機能について説明します。
 

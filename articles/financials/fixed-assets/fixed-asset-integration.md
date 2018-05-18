@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="fixed-assets-integration"></a>固定資産の統合
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 固定資産は、一般会計、在庫管理、売掛金勘定、および買掛金勘定と統合できます。 また、固定資産を発注書と統合するように設定することもできます。
 

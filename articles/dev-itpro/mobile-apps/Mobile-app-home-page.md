@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="mobile-app-home-page"></a>モバイル アプリのホーム ページ
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 for Unified Operations モバイル アプリについて説明し、組織で実装するのに役立つリソースへのリンクを提供します。
 

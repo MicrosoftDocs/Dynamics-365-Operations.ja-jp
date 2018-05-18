@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="report-as-finished-to-a-plate-controlled-location"></a>プレートにより制御されている場所への完了レポート 
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 このタスク ガイドでは、ライセンス プレートにより制御されていない場所への完了報告時の例を示します。 適用できる作業ポリシーは、このタスクの前提条件です。 前のタスク ガイドでは、作業ポリシーの設定を示しました。 このタスク ガイドでは、Dynamics AX アプリケーション 7.0.1 以降が必要です。
 

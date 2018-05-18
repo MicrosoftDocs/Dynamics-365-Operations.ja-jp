@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="foreign-currency-revaluation-for-general-ledger"></a>総勘定元帳の外貨再評価
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 このトピックでは、総勘定元帳の外貨再評価プロセスに次の概要を提供します。設定、プロセスの実行、プロセスの計算、再評価のトランザクションを取り消す方法を必要に応じて実行します。 
 

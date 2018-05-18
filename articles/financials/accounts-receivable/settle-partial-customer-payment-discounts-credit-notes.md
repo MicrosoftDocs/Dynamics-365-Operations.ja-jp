@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="settle-a-partial-customer-payment-that-has-discounts-on-credit-notes"></a>訂正票で割引がある一部の顧客支払の決済
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 この記事は、貸方票に現金割引が適用され、元の請求書にも現金割引がある場合のシナリオについて説明します。 
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="use-a-continuity-program"></a>連続プログラムの使用
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 この手順では、連続プログラムの販売と関連する販売注文の処理について説明します。 この手順を完了するには、コール センターのユーザーとして設定する必要があります。 この手順では、デモ データの会社 USRT を使用します。
 

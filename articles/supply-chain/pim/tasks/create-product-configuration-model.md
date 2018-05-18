@@ -24,7 +24,7 @@ ms.lasthandoff: 11/14/2017
 ---
 # <a name="create-a-product-configuration-model"></a>製品コンフィギュレーション モデルの作成
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順は、製品コンフィギュレーション モデルの作成方法ならびに属性およびサブコンポーネントなどの基本情報の入力方法を示します。 この手順の作成に使用するデモ データの会社は USMF です。
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="validate-a-production-flow-and-version"></a>生産フローおよびバージョンの検証
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 この手順では、新しい生産フローとリーン生産の最初のバージョンを作成する方法を示します。 必要条件: リーン生産の生産パラメーターおよびクラス時間の測定単位を定義する必要があります。 バリュー ストリームと生産グループを定義する必要があります。 生産フローおよび活動の概念をよく理解するため、リーン生産についてのホワイト ペーパーを参照してください。 この手順では、デモ データの法人 USMF を参照します。 ただし、法人がリーン生産としてコンフィギュレーションされていると仮定する場合、他の法人を使用できます。
 

@@ -29,7 +29,7 @@ ms.lasthandoff: 03/08/2018
 
 # <a name="retail-statements"></a>小売明細書
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Microsoft Dynamics 365 for Retail では、クラウド販売時点管理 (POS) または Modern POS (MPOS) で発生するトランザクションに対して、明細書の転記プロセスが使用されます。 明細書の転記プロセスでは、配送スケジュールを使用して、一連の POS トランザクションを本社 (HQ) クライアントに引き渡します。 [**小売パラメーター**] および [**店舗**] ページで定義されているパラメーターは、個々のステートメントに引き込まれたトランザクションを選択するために使用されます。  
 

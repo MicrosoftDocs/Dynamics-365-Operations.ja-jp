@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="mass-hire-projects"></a>大量雇用プロジェクト
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 大量雇用プロジェクトにより、人事管理の専門家が複数の職位を作成し、これらの職位に作業者を効率的に採用することができます。
 
