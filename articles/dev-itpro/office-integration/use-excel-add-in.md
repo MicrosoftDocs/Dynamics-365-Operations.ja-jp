@@ -18,10 +18,10 @@ ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 0b839a4b16095cf5d357b8405baf1a695b1bb955
+ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
+ms.openlocfilehash: d68ec828f031fcb031dfbaa5aed2020a779d1207
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/23/2018
 
 ---
 
@@ -37,9 +37,6 @@ ms.lasthandoff: 05/08/2018
 > <span data-ttu-id="5255e-108">Microsoft Azure Active Directory (Azure AD) テナントが Active Directory フェデレーション サービス (AD FS) を使用するようにコンフィギュレーションされている場合は、Excel のアドインに正しくサインインできるように、2016 年 5 月の Office の更新が適用されていることを確認する必要があります。</span><span class="sxs-lookup"><span data-stu-id="5255e-108">If your Microsoft Azure Active Directory (Azure AD) tenant is configured to use Active Directory Federation Services (AD FS), you must make sure that the May 2016 update for Office has been applied, so that the Excel add-in can correctly sign you in.</span></span>
 
 <span data-ttu-id="5255e-109">Excel アドインの使用に関する詳細については、短い [Dynamics 365 for Finance and Operations でヘッダーと明細行のパターンの Excel テンプレートを作成する](https://youtu.be/RTicLb-6dbI) ビデオをご覧ください。</span><span class="sxs-lookup"><span data-stu-id="5255e-109">To learn more about using the Excel add-in, watch the short [Create an Excel template for header and line patterns in Dynamics 365 for Finance and Operations](https://youtu.be/RTicLb-6dbI) video.</span></span>
-
-> [!Video https://www.youtube.com/embed/RTicLb-6dbI]
-
 
 ## <a name="open-entity-data-in-excel-when-you-start-from-finance-and-operations"></a><span data-ttu-id="5255e-110">Finance and Operations から開始して Excel でエンティティ データを開く</span><span class="sxs-lookup"><span data-stu-id="5255e-110">Open entity data in Excel when you start from Finance and Operations</span></span>
 1. <span data-ttu-id="5255e-111">Finance and Operations のページで、[**Microsoft Office で開く**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="5255e-111">On a page in Finance and Operations, select **Open in Microsoft Office**.</span></span>
