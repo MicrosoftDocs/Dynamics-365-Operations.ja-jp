@@ -38,9 +38,6 @@ Excel でエンティティ データを開くことにより、Excel アドイ�
 
 Excel アドインの使用に関する詳細については、短い [Dynamics 365 for Finance and Operations でヘッダーと明細行のパターンの Excel テンプレートを作成する](https://youtu.be/RTicLb-6dbI) ビデオをご覧ください。
 
-> [!Video https://www.youtube.com/embed/RTicLb-6dbI]
-
-
 ## <a name="open-entity-data-in-excel-when-you-start-from-finance-and-operations"></a>Finance and Operations から開始して Excel でエンティティ データを開く
 1. Finance and Operations のページで、[**Microsoft Office で開く**] を選択します。
 

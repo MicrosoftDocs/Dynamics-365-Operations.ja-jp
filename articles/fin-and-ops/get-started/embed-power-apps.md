@@ -33,8 +33,6 @@ ms.lasthandoff: 04/13/2018
 
 PowerApps の組み込みに関する詳細については、短い [PowerApps を Dynamics 365 for Finance and Operations に組み込む方法](https://www.youtube.com/watch?v=x3qyA1bH-NY) ビデオを確認してください。
 
-> [!Video https://www.youtube.com/embed/x3qyA1bH-NY]
-
 ## <a name="adding-an-embedded-powerapp-to-a-page"></a>埋め込まれた PowerApp をページに追加する。
 ### <a name="overview"></a>概要
 Finance and Operations クライアントに PowerApp を埋め込む前に、最初に、必要なビジュアルまたは機能を備えた PowerApp を見つけたり構築したりする必要があります。 ここでは、PowerApp を構築するための詳細なプロセスについては説明しません。 [PowerApps の概要](https://docs.microsoft.com/en-us/powerapps/getting-started) トピックは、PowerApps を初めて使用する場合に有用です。
