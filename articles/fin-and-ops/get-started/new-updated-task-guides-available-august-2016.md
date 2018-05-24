@@ -18,20 +18,20 @@ ms.author: josaw
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: HT
-ms.sourcegitcommit: 9ee81bbdd22fed4ef6ea97080fe1f6b3d82bcaf5
-ms.openlocfilehash: 838dc40fb3fa2b0de7fa131850754c3674266d73
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: c7fc274bb9d942e85012211b1a7a14873447e5f3
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="new-or-updated-task-guides-august-2016"></a>新規または更新されたタスク ガイド (2016 年 8 月)
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics AX の Microsoft (2016 年 8 月 - すべての言語) APQC 統合ライブラリにリリースされた新規または更新されたタスク ガイドを示します。 新規の「はじめに」ライブラリは、リリースされていません。
 
-<a name="task-guides-in-the-august-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>[]()Microsoft Dynamics AX 用の APQC 統合ライブラリに含まれるタスク ガイド (2016 年 8 月 - すべての言語)
+<a name="task-guides-in-the-august-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>Microsoft Dynamics AX 用の APQC 統合ライブラリに含まれるタスク ガイド (2016 年 8 月 - すべての言語)
 ---------------------------------------------------------------------------------------------------
 
 APQC 統合ライブラリ (2016 年 8 月 - すべての言語) には、Dynamics AX プラットフォーム更新プログラム 2、2016 年 5 月に更新された Microsoft Dynamics AX アプリケーション、および 2016 年 2 月にリリースされた Microsoft Dynamics AX のヘルプの使用を想定したタスク ガイドが含まれています。 これらのリリースに関する詳細については、「[新規または変更](whats-new-changed.md)」を参照してください。 ローカライズ版のタスク ガイドは、このライブラリで使用できます。 タスク ガイド ライブラリのヘルプ システムを接続する方法の詳細については、「[ヘルプの入門](help-overview.md)」を参照してください。
@@ -97,7 +97,7 @@ APQC 統合ライブラリ (2016 年 8 月 - すべての言語) には、Dynami
 
 
 
-<a name="see-also"></a>参照
+<a name="additional-resources"></a>その他のリソース
 --------
 
 [新しいタスク ガイド (2016 年 2 月)](new-task-guides-available-february-2016.md)

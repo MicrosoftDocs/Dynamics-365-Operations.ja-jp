@@ -19,16 +19,16 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: adbbb36da2bc1e9a2211c703823370571105ecab
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 3988c437afda3d57e56a03264d3c1588af497920
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="formula-designer-in-electronic-reporting"></a>電子申告のフォーミュラ デザイナー
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 このトピックでは、電子申告 (ER) でのフォーミュラ デザイナーの使用方法を説明します。 ER の特定の電子ドキュメントの形式を設計する場合、データを変換する式を使用して、ドキュメントのフルフィルメントおよび書式設定の要件を満たすことができます。 これらの式は、Microsoft Excel の式と類似しています。 テキスト、日時、算術、論理、情報、データ型変換、およびその他 (ビジネス ドメインの特定の関数) といったさまざまなタイプの関数が式でサポートされています。
 
@@ -66,7 +66,7 @@ ER フォーミュラ デザイナーは、実行時にデータ消費者に入�
 
 [![データ バインディング](./media/picture-expression-binding.jpg)](./media/picture-expression-binding.jpg)
 
-次の図は、このタイプの式を使用できる方法を示しています。 この例では、入力された式の結果が、[**税申告モデル**] データ モデルの [**Transaction.InvoicedAmount**] コンポーネントに反映されます。
+次の図は、このタイプの式を使用できる方法を示しています。 この例では、入力された式の結果が、**税申告モデル** データ モデルの **Transaction.InvoicedAmount** コンポーネントに反映されます。
 
 [![使用されているデータ バインディング](./media/picture-expression-binding2.jpg)](./media/picture-expression-binding2.jpg)
 
@@ -86,7 +86,7 @@ ER フォーミュラ デザイナーは、電子ドキュメント生成の一�
 
 前の図の**partyName** コンポーネントなどの形式コンポーネントが **TrimmedString**変換を参照する場合、変換は生成する電子ドキュメントへの出力としてテキストを送信します。 このテキストには、先頭および末尾にあるスペースは含まれません。
 
-個別に適用する必要のある形式の場合、特定形式コンポーネントのバインディングの個別の式として導入できます。 次の図は、このタイプの式を示しています。 この例では、**partyType** の形式コンポーネントは、データ ソースの [**Model.Company.RegistrationType**] フィールドからの受信データを大文字テキストに変換する式を介してデータ ソースにバインドされます。 式は、そのテキストを出力として、電子ドキュメントに送信します。
+個別に適用する必要のある形式の場合、特定形式コンポーネントのバインディングの個別の式として導入できます。 次の図は、このタイプの式を示しています。 この例では、**partyType** の形式コンポーネントは、データ ソースの **Model.Company.RegistrationType** フィールドからの受信データを大文字テキストに変換する式を介してデータ ソースにバインドされます。 式は、そのテキストを出力として、電子ドキュメントに送信します。
 
 [![個々のコンポーネントに書式設定を適用](./media/picture-binding-with-formula.jpg)](./media/picture-binding-with-formula.jpg)
 
@@ -127,7 +127,7 @@ ER の式は、次のいずれかまたはすべての要素を含めること�
 
 #### <a name="constants"></a>定数
 
-式の設計時に、テキストおよび数値定数 (つまり、計算されない定数) を使用できます。 たとえば、**VALUE ("100") + 20** の式では、数値定数 **20** および文字列定数 **"100"** を使用し **120** という数値を返します。 ER フォーミュラ デザイナーはエスケープ シーケンスをサポートします。 したがって、別の方法で処理されるべき式文字列を指定することができます。 たとえば、**「レフ トルストイ」「戦争と平和」「ボリューム 1」** の式は、[**レフ トルストイ「戦争と平和」ボリューム 1**] という文字列を返します。
+式の設計時に、テキストおよび数値定数 (つまり、計算されない定数) を使用できます。 たとえば、**VALUE ("100") + 20** の式では、数値定数 **20** および文字列定数 **"100"** を使用し **120** という数値を返します。 ER フォーミュラ デザイナーはエスケープ シーケンスをサポートします。 したがって、別の方法で処理されるべき式文字列を指定することができます。 たとえば、**レフ トルストイ戦争と平和ボリューム 1** の式は、**レフ トルストイ「戦争と平和」ボリューム 1** という文字列を返します。
 
 #### <a name="operators"></a>演算子
 
@@ -196,11 +196,11 @@ Finance and Operations データ ソースのメソッドにパラメータが�
 
 #### <a name="paths"></a>パス
 
-式が構成されたデータ ソースを参照する場合、そのデータ ソースの特定のプリミティブ要素の選択にパス定義を使用できます。 ドット (.) は、構成されたデータ ソースの個別要素を区切るために使用します。 たとえば、現在の ER データ モデルには **InvoiceTransactions** データ ソースが含まれ、このデータ ソースはレコード一覧を返します。 **InvoiceTransactions** レコード構造には、[**AmountDebit**] および [**AmountCredit**] フィールドが含まれており、どちらのフィールドも数値を返します。 したがって、請求額を計算するには次の式を設計できます。**InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit**。
+式が構成されたデータ ソースを参照する場合、そのデータ ソースの特定のプリミティブ要素の選択にパス定義を使用できます。 ドット (.) は、構成されたデータ ソースの個別要素を区切るために使用します。 たとえば、現在の ER データ モデルには **InvoiceTransactions** データ ソースが含まれ、このデータ ソースはレコード一覧を返します。 **InvoiceTransactions** レコード構造には、**AmountDebit** および **AmountCredit** フィールドが含まれており、どちらのフィールドも数値を返します。 したがって、請求額を計算するには次の式を設計できます。**InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit**。
 
 #### <a name="functions"></a>関数
 
-次のセクションでは、ER の式で使用できる関数について説明します。 すべてのデータ ソースの式のコンテキスト (現在の ER データ モデルまたは ER フォーマット) は、呼び出し元関数の引数に従って呼び出し元関数のパラメータとして使用できます。 定数は、呼び出し関数のパラメータとしても使用できます。 たとえば、現在の ER データ モデルには **InvoiceTransactions** データ ソースが含まれ、このデータ ソースはレコード一覧を返します。 **InvoiceTransactions** レコード構造には、[**AmountDebit**] および [**AmountCredit**] フィールドが含まれており、どちらのフィールドも数値を返します。 したがって、請求額を計算するには、ER 丸め関数を使用する次の式を設計できます。**ROUND (InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit, 2)**。
+次のセクションでは、ER の式で使用できる関数について説明します。 すべてのデータ ソースの式のコンテキスト (現在の ER データ モデルまたは ER フォーマット) は、呼び出し元関数の引数に従って呼び出し元関数のパラメータとして使用できます。 定数は、呼び出し関数のパラメータとしても使用できます。 たとえば、現在の ER データ モデルには **InvoiceTransactions** データ ソースが含まれ、このデータ ソースはレコード一覧を返します。 **InvoiceTransactions** レコード構造には、**AmountDebit** および **AmountCredit** フィールドが含まれており、どちらのフィールドも数値を返します。 したがって、請求額を計算するには、ER 丸め関数を使用する次の式を設計できます。**ROUND (InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit, 2)**。
 
 ## <a name="supported-functions"></a>サポートされている機能
 
@@ -211,26 +211,26 @@ Finance and Operations データ ソースのメソッドにパラメータが�
 | 機能 | 説明 | 例 |
 |----------|-------------|---------|
 | ADDDAYS (日時, 日数) | 指定された日時値までの指定された日数を追加します。 | **ADDDAYS (NOW(), 7)** は、将来の日時の 7 日を返します。 |
-| DATETODATETIME (日付) | 日時値に指定された日付値を変換します。 | [**DATETODATETIME (CompInfo. 'getCurrentDate()')**] は、現在の Finance and Operations セッションの日付 2015 年 12 月 24 日を [**12/24/2015 12:00:00 AM**] として返します。 この例では、[**CompInfo**] は、[**Finance and Operations/Table**] タイプの ER データ ソースで、CompanyInfo テーブルを参照します。 |
+| DATETODATETIME (日付) | 日時値に指定された日付値を変換します。 | **DATETODATETIME (CompInfo. 'getCurrentDate()')** は、現在の Finance and Operations セッションの日付 2015 年 12 月 24 日を **12/24/2015 12:00:00 AM** として返します。 この例では、**CompInfo** は、**Finance and Operations/Table** タイプの ER データ ソースで、CompanyInfo テーブルを参照します。 |
 | NOW () | 日時値として現在の Finance and Operations アプリケーション サーバーの日時を返します。 | |
 | TODAY () | 日付値として現在の Finance and Operations アプリケーション サーバーの日付を返します。 | |
 | NULLDATE () | **null** の日付値を返します。 | |
 | NULLDATETIME () | **null** の日時値を返します。 | |
-| DATETIMEFORMAT (日時, 形式) | 指定された形式の文字列に指定された日時値を変換します。 (サポートされている形式の詳細については、「[標準](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx)」と「[カスタム](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx)」を参照してください。) | [**DATETIMEFORMAT (NOW(), "dd-MM-yyyy")**] は、指定されたカスタム形式に基づいて、現在の Finance and Operations アプリケーション サーバーの日付 2015 年 12 月24 日を [**"24-12-2015"**] として返します。 |
-| DATETIMEFORMAT (日時, 形式, カルチャ) | 指定された形式および [カルチャ](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx)の文字列に指定された日時値を変換します。 (サポートされている形式の詳細については、「[標準](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx)」と「[カスタム](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx)」を参照してください)。 | [**DATETIMEFORMAT (NOW(), "d", "de")**] は、選択されたドイツのカルチャに基づいて、現在の Finance and Operations アプリケーション サーバーの日付 2015 年 12 月 24 日を [**"24.12.2015"**] として返します。 |
+| DATETIMEFORMAT (日時, 形式) | 指定された形式の文字列に指定された日時値を変換します。 (サポートされている形式の詳細については、「[標準](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx)」と「[カスタム](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx)」を参照してください。) | **DATETIMEFORMAT (NOW(), "dd-MM-yyyy")** は、指定されたカスタム形式に基づいて、現在の Finance and Operations アプリケーション サーバーの日付 2015 年 12 月24 日を **"24-12-2015"** として返します。 |
+| DATETIMEFORMAT (日時, 形式, カルチャ) | 指定された形式および [カルチャ](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx)の文字列に指定された日時値を変換します。 (サポートされている形式の詳細については、「[標準](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx)」と「[カスタム](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx)」を参照してください)。 | **DATETIMEFORMAT (NOW(), "d", "de")** は、選択されたドイツのカルチャに基づいて、現在の Finance and Operations アプリケーション サーバーの日付 2015 年 12 月 24 日を **"24.12.2015"** として返します。 |
 | SESSIONTODAY () | 日付値として現在の Finance and Operations セッションの日付を返します。 | |
 | SESSIONNOW () | 日時値として現在の Finance and Operations セッションの日時を返します。 | |
-| DATEFORMAT (日付, 形式) | 指定された形式で指定された日付の文字列形式を返します。 | [**DATEFORMAT (SESSIONTODAY (), "dd-MM-yyyy"**] は、指定されたカスタム形式に基づいて、現在の Finance and Operations セッションの日付 2015 年 12 月24 日を [**"24-12-2015"**] として返します。 |
-| DATEFORMAT (日付, 形式, カルチャ) | 指定された形式および[カルチャ](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx)の文字列に指定された日付値を変換します。 (サポートされている形式の詳細については、「[標準](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx)」と「[カスタム](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx)」を参照してください)。 | [**DATETIMEFORMAT (SESSIONNOW (), "d", "de")**] は、選択されたドイツのカルチャに基づいて、現在の Finance and Operations セッションの日付 2015 年 12 月 24 日を [**"24.12.2015"**] として返します。 |
-| DAYOFYEAR (日付) | 1 月 1 日から指定された日までの日数の整数表現を返します。 | [**DAYOFYEAR (DATEVALUE ("01-03-2016", "dd-MM-yyyy"))**] は [**61**] を返します。 [**DAYOFYEAR (DATEVALUE ("01-01-2016", "dd-MM-yyyy"))**] は [**1**] を返します。 |
+| DATEFORMAT (日付, 形式) | 指定された形式で指定された日付の文字列形式を返します。 | **DATEFORMAT (SESSIONTODAY (), "dd-MM-yyyy"** は、指定されたカスタム形式に基づいて、現在の Finance and Operations セッションの日付 2015 年 12 月24 日を **"24-12-2015"** として返します。 |
+| DATEFORMAT (日付, 形式, カルチャ) | 指定された形式および[カルチャ](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx)の文字列に指定された日付値を変換します。 (サポートされている形式の詳細については、「[標準](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx)」と「[カスタム](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx)」を参照してください)。 | **DATETIMEFORMAT (SESSIONNOW (), "d", "de")** は、選択されたドイツのカルチャに基づいて、現在の Finance and Operations セッションの日付 2015 年 12 月 24 日を **"24.12.2015"** として返します。 |
+| DAYOFYEAR (日付) | 1 月 1 日から指定された日までの日数の整数表現を返します。 | **DAYOFYEAR (DATEVALUE ("01-03-2016", "dd-MM-yyyy"))** は **61** を返します。 **DAYOFYEAR (DATEVALUE ("01-01-2016", "dd-MM-yyyy"))** は **1** を返します。 |
 | 日 (日付 1、日付 2) | 最初に指定した日付および 2 番目に指定した日付間の日数を返します。 最初の日付が 2 番目の日付より遅い場合は正の値を返し、最初の日付が 2 番目の日付と同じである場合は **0** (ゼロ) を返します。それ以外の場合は、負の値を返します。 | **日数 (TODAY (), DATEVALUE( DATETIMEFORMAT( ADDDAYS(NOW(), 1), "yyyyMMdd"), "yyyyMMdd"))** は **-1** を返します。 |
 
 ### <a name="data-conversion-functions"></a>データ変換機能
 
 | 職務 | 説明 | 例 |
 |----------|-------------|---------|
-| DATETODATETIME (日付) | 日時値に指定された日付値を変換します。 | [**DATETODATETIME (CompInfo. 'getCurrentDate()')**] は、現在の Finance and Operations セッションの日付 2015 年 12 月 24 日を [**12/24/2015 12:00:00 AM**] として返します。 この例では、[**CompInfo**] は、[**Finance and Operations/Table**] タイプの ER データ ソースで、CompanyInfo テーブルを参照します。 |
-| DATEVALUE (文字列、形式) | 指定された形式で指定された文字列の日付形式を返します。 | [**DATEVALUE ("21-Dec-2016", "dd-MMM-yyyy")**] は、指定されたカスタム形式および既定のアプリケーションの [**EN-US**] カルチャに基づいて、日付 2016 年 12 月 21 日を返します。 |
+| DATETODATETIME (日付) | 日時値に指定された日付値を変換します。 | **DATETODATETIME (CompInfo. 'getCurrentDate()')** は、現在の Finance and Operations セッションの日付 2015 年 12 月 24 日を **12/24/2015 12:00:00 AM** として返します。 この例では、**CompInfo** は、**Finance and Operations/Table** タイプの ER データ ソースで、CompanyInfo テーブルを参照します。 |
+| DATEVALUE (文字列、形式) | 指定された形式で指定された文字列の日付形式を返します。 | **DATEVALUE ("21-Dec-2016", "dd-MMM-yyyy")** は、指定されたカスタム形式および既定のアプリケーションの **EN-US** カルチャに基づいて、日付 2016 年 12 月 21 日を返します。 |
 | DATEVALUE (文字列、形式、カルチャ) | 指定された形式およびカルチャで指定された文字列の日付形式を返します。 | **DATEVALUE ("21-Gen-2016", "dd-MMM-yyyy", "IT")** は、指定されたカスタム形式とカルチャに基づいて日付 2016 年 1 月 21 日を返します。 ただし、**DATEVALUE ("21-Gen-2016", "dd-MMM-yyyy", "EN-US")** は、指定した文字列が有効な日付として認識されていないことをユーザーに通知して、例外をスローします。 |
 | DATETIMEVALUE (文字列、形式) | 指定された形式で指定された文字列の日時形式を返します。 | **DATETIMEVALUE ("21-Dec-2016 02:55:00", "dd-MMM-yyyy hh:mm:ss")** は、指定されたカスタム形式と既定のアプリケーションの **EN-US** カルチャで、2016 年 12 月 21 日 2 時 55 分 00 秒を返します。 |
 | DATETIMEVALUE (文字列、形式、カルチャ) | 指定された形式およびカルチャで指定された文字列の日時形式を返します。 | **DATETIMEVALUE ("21-Gen-2016 02:55:00", "dd-MMM-yyyy hh:mm:ss", "IT")** は、指定されたカスタム形式とカルチャに基づいて、2016 年 12 月 21 日 2 時 55 分 00 秒を返します。 ただし、**DATETIMEVALUE ("21-Gen-2016 02:55:00", "dd-MMM-yyyy hh:mm:ss", "EN-US")** は、指定した文字列が有効な日時として認識されていないことをユーザーに通知して、例外をスローします。 |
@@ -254,7 +254,7 @@ Finance and Operations データ ソースのメソッドにパラメータが�
 <tr class="odd">
 <td>SPLIT (入力, 長さ)</td>
 <td>指定された入力文字列を指定された長さのサブ文字列に分割します。 新しいリストとして結果を返します。</td>
-<td><strong>SPLIT (&quot;abcd&quot;, 3)</strong> は、[<strong>文字列</strong>] フィールドがある 2 つのレコードで構成される新しいリストを返します。 最初のレコードのフィールドには、テキスト <strong>&quot;abc&quot;</strong> が、2 つ目のレコードのフィールドには、テキスト <strong>&quot;d&quot;</strong> が入力されます。</td>
+<td><strong>SPLIT (&quot;abcd&quot;, 3)</strong> は、<strong>文字列</strong> フィールドがある 2 つのレコードで構成される新しいリストを返します。 最初のレコードのフィールドには、テキスト <strong>&quot;abc&quot;</strong> が、2 つ目のレコードのフィールドには、テキスト <strong>&quot;d&quot;</strong> が入力されます。</td>
 </tr>
 <tr class="even">
 <td>SPLITLIST (リスト, 番号)</td>
@@ -358,13 +358,13 @@ Finance and Operations データ ソースのメソッドにパラメータが�
 <li>ラベル</li>
 <li>説明</li>
 </ul>
-実行時に、[<strong>ラベル</strong>] および [<strong>説明</strong>] フィールドは、形式の言語設定に基づく値を返します。</td>
+実行時に、<strong>ラベル</strong> および <strong>説明</strong> フィールドは、形式の言語設定に基づく値を返します。</td>
 <td>次の図では、列挙はデータ モデルで導入されます。
 <p><a href="./media/ger-listoffields-function-model-enumeration.png"><img src="./media/ger-listoffields-function-model-enumeration-e1474545790761.png" alt="Enumeration in a model" class="alignnone wp-image-1203943 size-full" width="514" height="155" /></a></p>
 <p>次の図は、これらの詳細について説明しています。</p>
 <ul>
 <li>モデル列挙はデータ ソースとしてレポートに挿入されます。</li>
-<li>ER の式は [<strong>LISTOFFIELDS</strong>] 関数のパラメーターとしてモデル列挙を使用します。</li>
+<li>ER の式は <strong>LISTOFFIELDS</strong> 関数のパラメーターとしてモデル列挙を使用します。</li>
 <li>レコード リスト タイプのデータ ソースは、作成された ER の式を使用してレポートに挿入されます。</li>
 </ul>
 <p><a href="./media/ger-listoffields-function-in-format-expression.png"><img src="./media/ger-listoffields-function-in-format-expression-e1474546110395.png" alt="Format" class="alignnone wp-image-1204033 size-full" width="549" height="318" /></a></p>
@@ -384,7 +384,7 @@ Finance and Operations データ ソースのメソッドにパラメータが�
 <li>説明</li>
 <li>翻訳済み</li>
 </ul>
-<p>実行時に、[<strong>ラベル</strong>] および [<strong>説明</strong>] フィールドは、形式の言語設定と特定の言語に基づく値を返します。 <strong>翻訳済み</strong> フィールドは、<strong>ラベル</strong> フィールドが指定した言語に翻訳されていることを示します。</td>
+<p>実行時に、<strong>ラベル</strong> および <strong>説明</strong> フィールドは、形式の言語設定と特定の言語に基づく値を返します。 <strong>翻訳済み</strong> フィールドは、<strong>ラベル</strong> フィールドが指定した言語に翻訳されていることを示します。</td>
 <td>たとえば、<strong>計算済フィールド</strong> データ ソース型を使用して、<strong>enumType</strong>データ モデル列挙に対する <strong>enumType_de</strong> および <strong>enumType_deCH</strong> データ ソースをコンフィギュレーションします。
 <ul>
 <li>enumType_de = <strong>LISTOFFIELDS</strong> (enumType、&quot;de&quot;)</li>
@@ -427,7 +427,7 @@ Finance and Operations データ ソースのメソッドにパラメータが�
 
 | 職務 | 説明 | 例 |
 |----------|-------------|---------|
-| CASE (式, オプション 1, 結果 1 \[, オプション 2, 結果 2\] … \[, 既定の結果\]) | 指定された代替オプションに対して指定された式の値を評価します。 式の値に等しいオプションの結果を返します。 それ以外の場合、既定の結果が指定されている場合は、オプションの既定の結果を返します。 (既定の結果はオプションに続かない最後のパラメータです。) | [**CASE( DATETIMEFORMAT( NOW(), "MM"), "10", "冬", "11", "冬", "12", "冬", "")**] は、Finance and Operations セッションの日付が 10 月～ 12 月である場合に[**"冬"**] という文字列を返します。 それ以外の場合は、空白文字列を返します。 |
+| CASE (式, オプション 1, 結果 1 \[, オプション 2, 結果 2\] … \[, 既定の結果\]) | 指定された代替オプションに対して指定された式の値を評価します。 式の値に等しいオプションの結果を返します。 それ以外の場合、既定の結果が指定されている場合は、オプションの既定の結果を返します。 (既定の結果はオプションに続かない最後のパラメータです。) | **CASE( DATETIMEFORMAT( NOW(), "MM"), "10", "冬", "11", "冬", "12", "冬", "")** は、Finance and Operations セッションの日付が 10 月～ 12 月である場合に **"冬"** という文字列を返します。 それ以外の場合は、空白文字列を返します。 |
 | IF (条件, 値 1, 値 2) | 特定の条件が満たされているときに最初に指定された値 1 を返します。 それ以外の場合、2 つ目の指定した値を返します。 値 1 と値 2 がレコードまたはレコード リストの場合、両方のリストが存在するフィールドだけの結果になります。 | **IF (1=2, "条件を満たしている", "条件を満たしていない")** は、**"条件を満たしていない"** の文字列を返します。 |
 | NOT (条件) | 指定された条件の取消論理値を返します。 | **NOT (TRUE)** は **FALSE** を返します。 |
 | AND (条件 1\[, 条件 2, ...\]) | *すべて*の指定された条件が真の場合、**TRUE** を返します。 それ以外の場合は、**FALSE** を返します。 | **AND (1=1, "a"="a")** は、**TRUE** を返します。 **AND (1=2, "a"="a")** は、**FALSE** を返します。 |
@@ -452,9 +452,9 @@ Finance and Operations データ ソースのメソッドにパラメータが�
 | VALUE (文字列) | 指定された文字列を数字に変換します。 コンマとドット (.) が小数点の区切り記号とみなされ、先頭のハイフン (-) は負の記号として使用されます。 他の数値以外の文字が指定された文字列に含まれている場合、例外をスローします。 | **VALUE ("1 234,56")** は例外をスローします。 |
 | NUMBERVALUE (文字列、小数点記号、桁区切り記号) | 指定された文字列を数字に変換します。 指定した小数点記号は、整数と小数点以下の数の間で使用されます。 指定した桁区切り記号は千の位の区切り記号として使用されます。 | **NUMBERVALUE("1 234,56", ",", " ")** は、**1234.56** を返します。 |
 | INTVALUE (文字列) | 指定された文字列の整数表現を返します。 任意の小数点以下の桁数が切り捨てられます。 | **INTVALUE (「100.77」)** は **100** を返します。 |
-| INTVALUE (番号) | 指定された数の整数表現を返します。 任意の小数点以下の桁数が切り捨てられます。 | [**INTVALUE (-100.77)**] は [**-100**] を返します。 |
+| INTVALUE (番号) | 指定された数の整数表現を返します。 任意の小数点以下の桁数が切り捨てられます。 | **INTVALUE (-100.77)** は **-100** を返します。 |
 | INT64VALUE (文字列) | 指定した文字列の int64 表現を返します。 任意の小数点以下の桁数が切り捨てられます。 | **INT64VALUE (「22565422744」)** は、**22565422744** を返します。 |
-| INT64VALUE (数値) | 指定の文字列の int64 表現を返します。 任意の小数点以下の桁数が切り捨てられます。 | [**INT64VALUE (22565422744.00)**] は、[**22565422744**] を返します。 |
+| INT64VALUE (数値) | 指定の文字列の int64 表現を返します。 任意の小数点以下の桁数が切り捨てられます。 | **INT64VALUE (22565422744.00)** は、**22565422744** を返します。 |
 
 ### <a name="record-functions"></a>レコード機能
 
@@ -538,12 +538,12 @@ Finance and Operations データ ソースのメソッドにパラメータが�
 <tr class="odd">
 <td>TEXT (入力)</td>
 <td>現在の Finance and Operations インスタンスのサーバーのロケール設定に従って書式設定されるテキスト文字列に変換した後に、指定された入力を返します。 <strong>実数</strong>型の値では、文字列変換が小数点第 2 位に制限されます。</td>
-<td>Finance and Operations インスタンスのサーバーのロケールが [<strong>EN-US</strong>] で定義されている場合、[<strong>TEXT (NOW ())</strong>] は現在の Finance and Operations セッションの日付 2015 年 12 月 17 日 をテキスト文字列 [<strong>&quot;12/17/2015 07:59:23 AM&quot;</strong>] として返します。 <strong>TEXT (1/3)</strong> は、<strong>&quot;0.33&quot;</strong> を返します。</td>
+<td>Finance and Operations インスタンスのサーバーのロケールが <strong>EN-US</strong> で定義されている場合、<strong>TEXT (NOW ())</strong> は現在の Finance and Operations セッションの日付 2015 年 12 月 17 日 をテキスト文字列 <strong>&quot;12/17/2015 07:59:23 AM&quot;</strong> として返します。 <strong>TEXT (1/3)</strong> は、<strong>&quot;0.33&quot;</strong> を返します。</td>
 </tr>
 <tr class="even">
 <td>FORMAT (文字列 1, 文字列 2[, 文字列 3, …])</td>
 <td>すべての <strong>%N</strong> を <em>n</em> 番目の引数に置き換えて書式設定した後に、指定された文字列を返します。 引数は文字列です。 パラメーターに引数が指定されない場合は、パラメーターは文字列内では <strong>&quot;%N&quot;</strong> として返されます。 <strong>実数</strong>型の値では、文字列変換が小数点第 2 位に制限されます。</td>
-<td>この図では、<strong>PaymentModel</strong> データ ソースは <strong>顧客</strong>コンポーネント経由で顧客のリスト、[<strong>ProcessingDate</strong>] フィールド経由で処理日の値を返します。
+<td>この図では、<strong>PaymentModel</strong> データ ソースは <strong>顧客</strong>コンポーネント経由で顧客のリスト、<strong>ProcessingDate</strong> フィールド経由で処理日の値を返します。
 <p><a href="./media/picture-format-datasource.jpg"><img src="./media/picture-format-datasource.jpg" alt="PaymentModel data source" class="alignnone wp-image-290751 size-full" width="293" height="143" /></a></p>
 <p>選択した顧客の電子ファイルを生成するよう設計されている ER 形式では、<strong>PaymentModel</strong> がデータ ソースとして選択され、プロセス フローを制御します。 選択した顧客がレポートが処理される日付に停止されている場合、例外がユーザーに通知してスローされます。 このタイプの処理制御のために設計された式は、次のリソースを使用できます。</p>
 <ul>
@@ -600,8 +600,8 @@ Finance and Operations データ ソースのメソッドにパラメータが�
 <p><a href="./media/ER-data-model-enumeration-values.PNG"><img src="./media/ER-data-model-enumeration-values.PNG" alt="Available values for data model enumeration" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a></p>
 <p>次の図は、これらの詳細について説明しています。</p>
 <ul>
-<li>[<strong>ReportDirection</strong>] モデル列挙は、データ ソース [<strong>$Direction</strong>] としてレポートに挿入されます。</li>
-<li>ER の式 [<strong>$IsArrivals</strong>] は、関数のパラメーターとしてモデル列挙を使用するように設計されています。 この式の値は [<strong>TRUE</strong>] です。</li>
+<li><strong>ReportDirection</strong> モデル列挙は、データ ソース <strong>$Direction</strong> としてレポートに挿入されます。</li>
+<li>ER の式 <strong>$IsArrivals</strong> は、関数のパラメーターとしてモデル列挙を使用するように設計されています。 この式の値は <strong>TRUE</strong> です。</li>
 </ul>
 <a href="./media/ER-data-model-enumeration-usage.PNG"><img src="./media/ER-data-model-enumeration-usage.PNG" alt="Example of data model enumeration" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a></td>
 </tr>
@@ -612,7 +612,7 @@ Finance and Operations データ ソースのメソッドにパラメータが�
 
 | 職務 | 説明 | 例 |
 |----------|-------------|---------|
-| TEXT (入力) | 現在の Finance and Operations インスタンスのサーバーのロケール設定に従って書式設定されるテキスト文字列に変換した後に、指定された入力を返します。 **実数**型の値では、文字列変換が小数点第 2 位に制限されます。 | Finance and Operations インスタンスのサーバーのロケールが **EN-US** で定義されている場合、**TEXT (NOW ())** は現在の Finance and Operations セッションの日付 12/17/2015 をテキスト文字列 **「12/17/2015 07:59:23 AM」** として返します。 **TEXT (1/3)** は、**"0.33"** を返します。 |
+| TEXT (入力) | 現在の Finance and Operations インスタンスのサーバーのロケール設定に従って書式設定されるテキスト文字列に変換した後に、指定された入力を返します。 **実数**型の値では、文字列変換が小数点第 2 位に制限されます。 | Finance and Operations インスタンスのサーバーのロケールが **EN-US** で定義されている場合、**TEXT (NOW ())** は現在の Finance and Operations セッションの日付 12/17/2015 をテキスト文字列 **12/17/2015 07:59:23 AM** として返します。 **TEXT (1/3)** は、**"0.33"** を返します。 |
 | QRCODE (文字列) | 指定された文字列の QR コード画像を base64 バイナリ形式で返します。 | **QRCODE (「サンプル テキスト」)** は **U2FtcGxlIHRleHQ=** を返します。 |
 
 ### <a name="data-collection-functions"></a>データ収集機能
@@ -631,23 +631,23 @@ Finance and Operations データ ソースのメソッドにパラメータが�
 | 職務 | 説明 | 例 |
 |----------|-------------|---------|
 | CONVERTCURRENCY (数量, 換算元の通貨, 換算先の通貨, 日付, 会社) | 特定の日付で指定された Finance and Operations の会社の設定を使用して、指定された換算元の通貨から指定された換算先の通貨に指定された金額を変換します。 | **CONVERTCURRENCY (1, "EUR", "USD", TODAY(), "DEMF")** は、DEMF 会社の設定に基づいて現在のセッションの日付の 1 ユーロに相当する額を米ドルで返します。 |
-| ROUNDAMOUNT (数値, 小数点以下の桁数, 丸めルール) | 指定された丸めルールに従って、指定された数量の小数点以下の桁数を丸めます。<blockquote>[!NOTE]<br>丸めルールは Finance and Operations の [<strong>RoundOffType</strong>] 列挙の値として指定する必要があります。</blockquote> | **model.RoundOff** パラメーターが **切り捨て** に設定されている場合、 **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** は、値 **1000.78** を返します。 **model.RoundOff** パラメータが**標準**または**切り上げ**に設定されている場合、**ROUNDAMOUNT (1000.787, 2, model.RoundOff)** は、値 **1000.79** を返します。 |
+| ROUNDAMOUNT (数値, 小数点以下の桁数, 丸めルール) | 指定された丸めルールに従って、指定された数量の小数点以下の桁数を丸めます。<blockquote>[!NOTE]<br>丸めルールは Finance and Operations の <strong>RoundOffType</strong> 列挙の値として指定する必要があります。</blockquote> | **model.RoundOff** パラメーターが **切り捨て** に設定されている場合、 **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** は、値 **1000.78** を返します。 **model.RoundOff** パラメータが**標準**または**切り上げ**に設定されている場合、**ROUNDAMOUNT (1000.787, 2, model.RoundOff)** は、値 **1000.79** を返します。 |
 | CURCredRef (数字) | 指定された請求書番号の数字に基づいて、送金受取人参照情報を返します。 | **CURCredRef ("VEND-200002")** は、**"2200002"** を返します。 |
 | MOD\_97 (数字) | 指定された請求書番号の数字に基づいて、MOD97 式として送金受取人参照情報を返します。 | **MOD\_97 ("VEND-200002")** は、**"20000285"** を返します。 |
 | ISOCredRef (数字) | 指定された請求書番号の数字とアルファベット記号に基づいて、国際標準化機構 (ISO) 送金受取人参照情報を返します。<blockquote>[!NOTE]<br>ISO 準拠ではないアルファベットの記号を削除するには、入力パラメータを変換してからこの関数に渡す必要があります。</blockquote> | **ISOCredRef ("VEND-200002")** は、**"RF23VEND-200002"** を返します。 |
-| CN\_GBT\_AdditionalDimensionID (文字列, 番号) | 追加の財務分析コード ID を取得します。 分析コードはコンマで区切られた ID としてこの文字列に表されます。 この文字列で、番号は要求された分析コードの順序コードを定義します。 | **CN\_GBT\_AdditionalDimensionID ("AA,BB,CC,DD,EE,FF,GG,HH",3)** は、**「CC」** を返します。 |
-| GetCurrentCompany () | 現在ユーザーがサインインしている法人 (会社) のコードのテキスト表現を返します。 | [**GETCURRENTCOMPANY ()**] は、Finance and Operations の会社 [**Contoso Entertainment System USA**] にサインインしているユーザーに対する [**USMF**] を返します。 |
+| CN\_GBT\_AdditionalDimensionID (文字列, 番号) | 追加の財務分析コード ID を取得します。 分析コードはコンマで区切られた ID としてこの文字列に表されます。 この文字列で、番号は要求された分析コードの順序コードを定義します。 | **CN\_GBT\_AdditionalDimensionID ("AA,BB,CC,DD,EE,FF,GG,HH",3)** は、**CC** を返します。 |
+| GetCurrentCompany () | 現在ユーザーがサインインしている法人 (会社) のコードのテキスト表現を返します。 | **GETCURRENTCOMPANY ()** は、Finance and Operations の会社 **Contoso Entertainment System USA** にサインインしているユーザーに対する **USMF** を返します。 |
 | CH\_BANK\_MOD\_10 (数値) | 指定された請求書番号の数字に基づいて、MOD10 式として送金受取人参照情報を返します。 | **CH\_BANK\_MOD\_10 ("VEND-200002")** は、**3** を返します。 |
-| FA\_SUM (固定資産コード, 価値モデル コード, 開始日, 終了日) | 指定した期間の固定資産額の準備済データ コンテナーを返します。 | **FA\_SUM (「COMP-000001」、「Current」、Date1、Date2)** は、**Date1** から **Date2** の期間中で、価値モデル **「現行」** の固定資産 **「COMP-000001」** の準備済データ コンテナーを返します。 |
-| FA\_BALANCE (固定資産コード, 価値モデル コード, レポート年度, 報告日) | 固定資産残高の準備済データ コンテナーを返します。 レポート年度は、Finance and Operations の列挙の値 [**AssetYear**] として指定される必要があります。 | **FA\_SUM (「COMP-000001」、「Current」、AxEnumAssetYear.ThisYear、SESSIONTODAY ())** は、現在の Finance and Operations セッションの日付で、値モデル **「現行」** である固定資産 **「COMP-000001」** の残高の準備済データ コンテナーを返します。 |
+| FA\_SUM (固定資産コード, 価値モデル コード, 開始日, 終了日) | 指定した期間の固定資産額の準備済データ コンテナーを返します。 | **FA\_SUM (「COMP-000001」、「Current」、Date1、Date2)** は、**Date1** から **Date2** の期間中で、価値モデル **現行** の固定資産 **COMP-000001** の準備済データ コンテナーを返します。 |
+| FA\_BALANCE (固定資産コード, 価値モデル コード, レポート年度, 報告日) | 固定資産残高の準備済データ コンテナーを返します。 レポート年度は、Finance and Operations の列挙の値 **AssetYear** として指定される必要があります。 | **FA\_SUM (「COMP-000001」、「Current」、AxEnumAssetYear.ThisYear、SESSIONTODAY ())** は、現在の Finance and Operations セッションの日付で、値モデル **現行** である固定資産 **COMP-000001** の残高の準備済データ コンテナーを返します。 |
 | TABLENAME2ID (文字列) | 指定されたテーブル名のテーブル ID の整数表現を返します。 | **TABLENAME2ID (「イントラスタット」)** は **1510** を返します。 |
-| ISVALIDCHARACTERISO7064 (文字列) | 指定された文字列が有効な国際銀行番号 (IBAN) を表す場合、ブール値 **TRUE** を返します。 それ以外の場合、ブール値 **FALSE** を返します。 | [**ISVALIDCHARACTERISO7064 ("AT61 1904 3002 3457 3201")**] は [**TRUE**] を返します。 [**ISVALIDCHARACTERISO7064 ("AT61")**] は [**FALSE**] を返します。 |
+| ISVALIDCHARACTERISO7064 (文字列) | 指定された文字列が有効な国際銀行番号 (IBAN) を表す場合、ブール値 **TRUE** を返します。 それ以外の場合、ブール値 **FALSE** を返します。 | **ISVALIDCHARACTERISO7064 ("AT61 1904 3002 3457 3201")** は **TRUE** を返します。 **ISVALIDCHARACTERISO7064 ("AT61")** は **FALSE** を返します。 |
 
 ### <a name="functions-list-extension"></a>関数の一覧の拡張
 
 ER では ER の式で使用される関数の一覧を拡張できます。 これにはエンジニアリングの実績が要求されます。 詳細については、「[電子申告関数の一覧の拡張](general-electronic-reporting-formulas-list-extension.md)」を参照してください。
 
-## <a name="see-also"></a>参照
+## <a name="additional-resources"></a>その他のリソース
 
 [電子申告の概要](general-electronic-reporting.md)
 

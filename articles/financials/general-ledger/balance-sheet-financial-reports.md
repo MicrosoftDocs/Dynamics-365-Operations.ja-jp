@@ -19,16 +19,16 @@ ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 493c54105b36e561edf6d5db95eaff442a812905
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 1c92ccb37b62a39e5ab4808454f8c6f84560d917
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="balance-sheet-financial-reports"></a>貸借対照表の会計報告書
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 この記事では、貸借対照表の既定のレポートについて説明します。 また、これらのレポートに関連付けられる構成要素を説明します。 
 
@@ -72,12 +72,12 @@ ms.lasthandoff: 11/03/2017
 
 
 
-<a name="see-also"></a>参照
+<a name="additional-resources"></a>その他のリソース
 --------
 
-[財務レポート](financial-reporting-getting-started.md)
+[財務報告](financial-reporting-getting-started.md)
 
-[財務レポートの表示](view-financial-reports.md)
+[財務諸表の表示](view-financial-reports.md)
 
 [Dynamics Financial Reporting ブログ](http://blogs.msdn.com/b/dynamics_financial_reporting/)
 

@@ -19,16 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 58030df8db467f754ec93ecc3f41585b20f03893
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: ee130dd357b5ae678f623630165a1ab787d6ae2c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="report-definitions-in-financial-report-designer"></a>財務諸表デザイナーでのレポート定義
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 この記事では、レポート定義に関する情報を示します。 レポート定義は、行定義、列定義、およびオプションのレポート ツリー定義を使用してレポートを作成するレポート コンポーネント (または構成要素) です。 レポート定義は、レポートをカスタマイズするためのオプションおよび設定も提供します。 
 
@@ -41,8 +41,8 @@ ms.lasthandoff: 11/03/2017
 ただし、Microsoft Dynamics ERP システムへのデータの保管方法により、トランザクションの詳細がレポートに使用できない場合があります。
 
 ## <a name="create-a-report-definition"></a>レポート定義の作成
-1.  [レポート デザイナー] の [ファイル] メニューで、[新規] をクリックし、[レポート定義] を選択します。
-2.  [レポート]、[出荷および配送]、[ヘッダーおよびフッター]、[設定] タブで、適切な情報を指定します。
+1.  [レポート デザイナー] の**ファイル**メニューで、**新規**をクリックし、**レポート定義**を選択します。
+2.  **レポート**、**出荷および配送**、**ヘッダーおよびフッター**、**設定**タブで、適切な情報を指定します。
 
 ## <a name="contents-of-a-report-definition"></a>レポート定義の内容
 次の表は、レポート定義のタブと、情報の使用方法について説明します。
@@ -88,7 +88,7 @@ ms.lasthandoff: 11/03/2017
 
 
 
-<a name="see-also"></a>参照
+<a name="additional-resources"></a>その他のリソース
 --------
 
 [財務報告](financial-reporting-intro.md)

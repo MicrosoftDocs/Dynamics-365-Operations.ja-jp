@@ -18,16 +18,16 @@ ms.author: robinr
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 911996f9d1854f027f5085725538bd87ba307c25
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 7bb152334b3b06c86dff024d0e99aea9bb452deb
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="cloud-and-on-premises-feature-comparison"></a>クラウドとオンプレミスの機能比較
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 このトピックでは、各機能が次の製品で使用できるかを示します。
 
@@ -128,7 +128,7 @@ ms.lasthandoff: 04/13/2018
 |---|---|---|---|
 | すべての Talent エリア | すべての Talent 機能 | 有 | 無 |
 
-## <a name="see-also"></a>参照
+## <a name="additional-resources"></a>その他のリソース
 
 - [オンプレミス配置で実装されていない機能](features-not-implemented-on-prem.md)
 

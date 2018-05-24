@@ -20,16 +20,16 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: f7001158a498aa28028167a0f76ad610ec09b43c
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: c3726038d9782891988e16cb98cf04cf47b7e66c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="gantt-chart-for-job-scheduling"></a>ジョブ スケジュールのガント チャート
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 ガント チャートは、生産のスケジューリング者を生産計画の制御および最適化のためにサポートするよう設計されています。 ガント チャートは、工程の流れを透明化し、材料またはリソースの不足を考慮しながら、生産スケジュールを調整しやすくします。 これにより、スケジューリング者の使用可能なリソースを最大限活用し、進行中の作業の最小化、および製造オーダーのスループットの時間を最適化できます。
 
@@ -156,7 +156,7 @@ ms.lasthandoff: 04/13/2018
 |           <strong>完了するジョブ</strong> (<strong>生産フロアの管理</strong> ワークスペースに表示)            |                                                                                               <strong>生産フロアの管理で表示される完了するジョブ</strong> ワークスペースは、ワークスペース用に選択されたリソースで進行中の、製造オーダーおよびバッチ オーダーからのジョブを表示します。 <strong>ガント チャート</strong> メニュー項目でガント チャートを開くことができ、一覧で選択されたすべてのジョブがチャートに読み込まれます。                                                                                               |
 | <strong>リリースする製造オーダー</strong> (<strong>生産フロアの管理</strong> ワークスペースから開く) |                                                                                                                                         リリースする製造オーダー ページは、<strong>生産フロアの管理</strong> ワークスペースから開きます。 このページでは、スケジュールされているリリース保留中状態の製造オーダーおよびバッチ オーダーが表示されます。 このページでは、選択した製造オーダーのガント チャートを開くことができます。                                                                                                                                          |
 
-## <a name="see-also"></a>参照  
+## <a name="additional-resources"></a>その他のリソース  
 [Visual scheduling with Gantt chart for production and batch orders (ビデオ)](https://youtu.be/BtbuShkGj4I)
 
 [生産 (デモ スクリプト) の視覚的スケジューリング](https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/how-to-articles/365finoptvisschep)

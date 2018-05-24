@@ -19,23 +19,23 @@ ms.author: josaw
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 0936ae3b8d07ef221345bda272170e1482f37cbf
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: f49c5157294f615b134c9ea0f00b93f70d59f527
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="whats-new-or-changed"></a>新機能および変更された機能
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 このページでは、最新バージョンの Microsoft Dynamics 365 for Finance and Operations、Enterprise edition の新しい機能について学ぶ役立つトピックを示します。
 
 最新バージョンにアップグレードする方法についての情報は、[最新の更新プログラムにアップグレードするためのプロセス](../../dev-itpro/migration-upgrade/upgrade-latest-update.md) を参照します。
 
 
-[!INCLUDE [release notes](../includes/release-notes.md)]
+[!include [release notes](../includes/release-notes.md)]
 
 ## <a name="application-releases"></a>アプリケーション リリース
 
@@ -129,12 +129,12 @@ ms.lasthandoff: 04/13/2018
 <td>Microsoft Dynamics 365 for Finance and Operations Enterprise Edition</td>
 <td>プラットフォーム update 15</td>
 <td>7.0.4839</td>
-<td>2018 年 3 月 (これは対象となるリリースであり、ユーザーが継続的な自動更新推奨プログラム (CAAP) を希望した場合にのみ使用できます。 プラットフォーム update 15 も Dynamics 365 for Finance and Operations バージョン 8.0 で使用できます。)</td>
+<td>プラットフォーム update 15 は対象となるリリースで、すべてのユーザーが利用できるのは 2018 年 6 月からです。</td>
 <td><a href="whats-new-platform-update-15.md">Dynamics 365 for Finance and Operations、Enterprise edition プラットフォーム更新プログラム 15 (2018 年 3 月) の新機能および変更された機能</a></td><tbody>
 <tr class="odd">
 <td>Microsoft Dynamics 365 for Finance and Operations Enterprise Edition</td>
 <td>プラットフォーム update 12</td>
-<td>7.0.4709</td>
+<td>7.0.4841</td>
 <td>2017 年 11 月</td>
 <td><a href="whats-new-platform-update-12.md">Dynamics 365 for Finance and Operations, Enterprise edition プラットフォーム更新プログラム 12 (2017 年11 月) の新機能および変更された機能</a></td>
 <tbody><tr class="odd">

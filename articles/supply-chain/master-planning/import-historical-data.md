@@ -19,25 +19,25 @@ ms.author: roxanad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 02daa312d74311432c0c468e3e691637dcf94157
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: e7975003620d951717c66144c8d0521de0f69158
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="import-historical-data-for-demand-forecasts"></a>需要予測の履歴データのインポート
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-需要予測の精度を確保するには、品目または品目配賦キーごとに、できるだけ多くの履歴需要データを取得する必要があります。 履歴需要データがまだインポートされていない場合は、Microsoft Dynamics 365 for Finance and Operations の \[**履歴外需**\] (ReqDemPlanHistoricalExternalDemandEntity) データ エンティティを使用してインポートします。
+需要予測の精度を確保するには、品目または品目配賦キーごとに、できるだけ多くの履歴需要データを取得する必要があります。 履歴需要データがまだインポートされていない場合は、Microsoft Dynamics 365 for Finance and Operations の **履歴外需** (ReqDemPlanHistoricalExternalDemandEntity) データ エンティティを使用してインポートします。
 
 **データ管理**ワークスペースで、エンティティのすべてのフィールドの概要を表示することができます。
 
 1. **データ管理**ワークスペースを開きます。
-2. [**データ エンティティ**] タイルをクリックします。
+2. **データ エンティティ** タイルをクリックします。
 3. エンティティの一覧で、**履歴外需**を探します。
-4. [**ターゲット フィールド**] をクリックします。 次のエンティティ フィールドは必須です: サイト (**DeliveringSiteId**)、日付 (**DemandDate**)、数量 (**DemandQuantity**)、および品目番号 (**ItemNumber**) か品目配賦キー (**ProductAllocationKeyId**) のいずれか。
+4. **ターゲット フィールド** をクリックします。 次のエンティティ フィールドは必須です: サイト (**DeliveringSiteId**)、日付 (**DemandDate**)、数量 (**DemandQuantity**)、および品目番号 (**ItemNumber**) か品目配賦キー (**ProductAllocationKeyId**) のいずれか。
 
 データ エンティティを使用するには、過去の需要データを含む Microsoft Excel ファイルまたはコンマ区切り値 (CSV) ファイルが必要です。 次の例では、CSV ファイルからデータをインポートする方法を示します。
 
@@ -47,17 +47,17 @@ ms.lasthandoff: 11/03/2017
 
 1. 履歴需要データをインポートする会社を選択します。
 2. **データ管理**ワークスペースを開きます。
-3. [**インポート**] タイルをクリックします。
+3. **インポート** タイルをクリックします。
 4. インポート プロジェクトの名前を入力します (たとえば、**品目 D0001 の履歴需要のインポート**)。
-5. [**ソース データ形式**] フィールドで、インポートするファイルのファイル形式を選択します。 この例の HistoricalDemandData ファイルをインポートするには、[**CSV**] を選択します。
-6. [**エンティティ名**] フィールドで、[**履歴外需**] を選択します。
+5. **ソース データ形式** フィールドで、インポートするファイルのファイル形式を選択します。 この例の HistoricalDemandData ファイルをインポートするには、**CSV** を選択します。
+6. **エンティティ名** フィールドで、**履歴外需** を選択します。
 7. ファイルをコンピューターに保存して、アップロードします。
-8. [**インポート**] をクリックします。
-9. [**実行の要約**] ページが自動的に開きます。 インポート データをページで確認します。
+8. **インポート** をクリックします。
+9. **実行の要約** ページが自動的に開きます。 インポート データをページで確認します。
 
 履歴需要データをインポートした後、需要予測を生成できます。
 
-## <a name="see-also"></a>参照
+## <a name="additional-resources"></a>その他のリソース
 
 [統計ベースライン予測の生成](generate-statistical-baseline-forecast.md)
 

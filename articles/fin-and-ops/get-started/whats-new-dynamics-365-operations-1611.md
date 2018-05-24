@@ -18,16 +18,16 @@ ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: be69aff98b1a3a8304461af0f38760988ac28d42
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 53c51ec1be145c72ff5090666399ac4ea113e5df
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-version-1611-november-2016"></a>Dynamics 365 for Operations バージョン 1611 (2016 年 11 月) での新機能および変更された機能
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 このトピックでは、Dynamics 365 for Operations version 1611 の新機能または変更された機能について説明します。
 
@@ -615,7 +615,7 @@ ms.lasthandoff: 04/13/2018
 <td>この機能は、生産性の拡張機能です。 <strong>例</strong> Polo T-shirt という名前の製品を販売します。　 この製品は、緑色と青色で利用可能です。 また、小と中の 2 サイズで展開されています。 色とサイズは Polo T-shirt の有効な製品分析コードです。 緑色でサイズ小の Polo T-shirt の販売明細行を入力する場合、<strong>品目番号</strong>、<strong>色</strong>、および<strong>サイズ</strong> フィールドにデータを入力する必要はありません。 これらの手順の 1 つを実行し、明細行を作成できます:
 <ul>
 <li><strong>品目番号</strong>フィールドに、製品バリアント番号、色の値、またはサイズを入力します。 ルックアップでは、販売する特定のバリアントを検索し、販売明細行を作成します。</li>
-<li>[<strong>品目番号</strong>] フィールドで、品目番号を入力します。 任意の製品分析コード フィールドに移動します。 <strong>製品分析コード</strong> ルックアップで、Polo T-shirt に適用されるすべての公開済み分析コードが表示されます。 1 つの手順では、販売する製品のバリアントを選択できます。</li>
+<li><strong>品目番号</strong> フィールドで、品目番号を入力します。 任意の製品分析コード フィールドに移動します。 <strong>製品分析コード</strong> ルックアップで、Polo T-shirt に適用されるすべての公開済み分析コードが表示されます。 1 つの手順では、販売する製品のバリアントを選択できます。</li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -854,10 +854,10 @@ ms.lasthandoff: 04/13/2018
 
 
 
-<a name="see-also"></a>参照
+<a name="additional-resources"></a>その他のリソース
 --------
 
-[新規または変更](whats-new-changed.md)
+[新機能および変更された機能](whats-new-changed.md)
 
 
 

@@ -20,16 +20,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 739e998ec0962dba94cfb6d05b9f620852530d29
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 60f39b19a627e9c3288f30872d237b8c0ccd8ac4
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="inventory-object-values"></a>在庫オブジェクトの値
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 この記事は、在庫オブジェクトの値の計算方法についての情報を提供します。 
 
@@ -37,7 +37,7 @@ ms.lasthandoff: 11/03/2017
 
 原価オブジェクトは、在庫会計が実行されるエンティティ レベルを表します。 原価オブジェクトの詳細については、「[原価オブジェクト](cost-object.md)」を参照してください。 
 
-特定の在庫オブジェクトの値を表示するには、[**原価のオブジェクト**] ページで [**現物数量**] をクリックします。 在庫オブジェクトの値がどのように計算されるかは次のとおりです。 
+特定の在庫オブジェクトの値を表示するには、**原価のオブジェクト** ページで **現物数量** をクリックします。 在庫オブジェクトの値がどのように計算されるかは次のとおりです。 
 
 在庫オブジェクト . 値 = コスト オブジェクト . 平均単位コスト × 在庫オブジェクト . 数量 
 
@@ -46,7 +46,7 @@ ms.lasthandoff: 11/03/2017
 -   製品受領書 1 : 数量 = 100 個、金額 = $1,000.00、サイト = 1、倉庫 =11、バッチ番号。 = B1
 -   製品受領書 2 : 数量 = 50 個、金額 = $800.00、サイト = 1、倉庫 =11、バッチ番号。 = B2
 
-次の表に、原価オブジェクトの計算結果を示します。 [**原価オブジェクト**] ページの結果を表示できます。
+次の表に、原価オブジェクトの計算結果を示します。 **原価オブジェクト** ページの結果を表示できます。
 
 <table style="width:100%;">
 <colgroup>
@@ -82,7 +82,7 @@ ms.lasthandoff: 11/03/2017
 </tbody>
 </table>
 
-次の表に、在庫オブジェクトの計算結果を示します。 [**原価オブジェクト**] ページの [**現物数量**] をクリックすることにより、結果を表示できます。
+次の表に、在庫オブジェクトの計算結果を示します。 **原価オブジェクト** ページの **現物数量** をクリックすることにより、結果を表示できます。
 
 <table style="width:100%;">
 <colgroup>
@@ -137,7 +137,7 @@ ms.lasthandoff: 11/03/2017
 
 
 
-<a name="see-also"></a>参照
+<a name="additional-resources"></a>その他のリソース
 --------
 
 [原価オブジェクト](cost-object.md)

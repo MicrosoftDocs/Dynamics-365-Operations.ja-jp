@@ -20,24 +20,22 @@ ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 23683ff3b232d485d0e4386963b3dcf37cd96c6f
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 62f59c857980932f4cf75d928deb0f89fae2f8eb
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="register-serial-numbers-in-the-sales-process"></a>販売プロセスでのシリアル番号の登録
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 このトピックでは、販売プロセス中に梱包明細または請求書のシリアル番号を登録する方法を説明します。 この機能は、会社がシリアル番号をサービスおよび保証のために取得する一方、シリアル番号を在庫の入庫から払出まで管理する必要がない場合に役立ちます。
 
 多くの会社では、シリアル番号はサービスおよび保証のために取得するもので、在庫の入庫から払出まででシリアル番号を管理する必要がありません。 これらのシナリオでは、Microsoft Dynamics 365 for Finance and Operations を使用して、製品を販売するときに梱包明細や請求書にシリアル番号を登録することができます。 製品が後に返品された場合、実際に製品を販売したかどうか、またサービスや保証の責務が有効であるかどうかを確認するために、請求書で製品を追跡できます。
-前提条件がありますか
-----------------------------
 
 **追跡用分析コード グループ**ページの**販売プロセスで有効**オプションをオンにして、追跡用分析コード グループの販売プロセスのシリアル番号を有効にする必要があります。 その後、Microsoft Dynamics 365 for Finance and Operations で次のイベントが発生します:
 -   **シリアル番号**クイック タブで、**シリアル番号の管理**オプションが選択されます。 このオプションがオンの場合、梱包明細品または請求書の品目ごとに 1 つのシリアル番号を登録する必要があります。
@@ -71,8 +69,8 @@ ms.lasthandoff: 11/03/2017
 
 ## <a name="can-i-register-serial-numbers-for-catchweight-items"></a>CW 品目のシリアル番号を登録することもできますか。
 いいえ。販売プロセスでは、CW 品目のシリアル番号を登録することはできません。 また、製品が Catch Weight 品目として設定されている場合、販売プロセス中にのみシリアル番号を使用するように設定された追跡用分析コード グループを製品に割り当てることはできません。
-小売 POS でシリアル番号を登録することはできますか。
-------------------------------------------------
+
+## <a name="can-i-register-serial-numbers-at-the-retail-pos"></a>小売 POS でシリアル番号を登録することはできますか。
 
 はい。小売の販売時点管理 (POS) では、販売プロセス中にのみシリアル番号を使用するように設定された追跡用分析コード グループが割り当てられている品目をユーザーが販売するときに、ユーザーにシリアル番号を入力するよう求めます。
 

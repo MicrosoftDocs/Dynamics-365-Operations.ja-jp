@@ -3,27 +3,28 @@ title: "品揃え管理"
 description: "このトピックでは、Microsoft Dynamics 365 for Retail での品揃え管理の基本概念について説明し、プロジェクトの実装に関する考慮事項を提供します。"
 author: jblucher
 manager: AnnBe
-ms.date: 3/12/2018
+ms.date: 03/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application user
+ms.reviewer: josaw
 ms.search.scope: Retail, Operations
 ms.search.region: Global
 ms.author: jeffbl
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Application update 5
 ms.translationtype: HT
-ms.sourcegitcommit: 44b0c4e39ac7410d27ce531c898bb8c423af334a
-ms.openlocfilehash: 303f86d6a57e039cb51700744697949845239b10
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 033968667048faf475b13f8fb95e693dc26935ca
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="assortment-management"></a>品揃え管理
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 ## <a name="overview"></a>概要
 Microsoft Dynamics 365 for Retail では、チャンネル間で製品の可用性を管理できる *品揃え* を提供しています。 品揃えでは、特定の店舗および特定の期間に利用可能な商品が決まります。
@@ -35,25 +36,25 @@ Microsoft Dynamics 365 for Retail では、チャンネル間で製品の可用�
 ### <a name="basic-assortment-setup"></a>基本的な品揃えの設定
 次の例では、店舗ごとに固有の品揃えを構成します。 この場合は、店舗 1 で製品 1 のみが使用可能であり、店舗 2 で製品 2 のみが使用可能です。
 
-![各商品は、1 つの店舗で使用可能](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure1.png?raw=true "各商品は、1 つの店舗で使用可能")
+![各製品は、1 つの店舗で使用可能です](./media/Managing-assortments-figure1.png)
 
 店舗 1 で製品 2 を利用するために、品揃え 1 に製品を追加することができます。
 
-![製品 2 が品揃え 1 に追加](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure2.png?raw=true "製品 2 が品揃え 1 に追加")
+![製品 2 が品揃え 1 に追加されます](./media/Managing-assortments-figure2.png)
 
 または、品揃え 2 に、店舗 1 を追加できます。
 
-![店舗 1 が品揃え 2 に追加](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure3.png?raw=true "店舗 1 が品揃え 2 に追加")
+![店舗 1 が品揃え 2 に追加されます](./media/Managing-assortments-figure3.png)
 
 ### <a name="organization-hierarchies"></a>組織階層
 複数のチャネルが同じ製品の品揃えを共有する場合、小売り品揃えの組織階層を使用して、品揃えを設定できます。 この階層のノードが追加されると、そのノードとその子ノード内のすべてのチャネルが含まれます。
 
-![組織階層](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure4.png?raw=true "組織階層")
+![組織階層](./media/Managing-assortments-figure4.png)
 
 ### <a name="product-categories"></a>製品カテゴリ
 同様に、製品側では、製品カテゴリ階層を使用して製品のグループを含めることができます。 1 つ以上のカテゴリ階層ノードを含めることにより、品揃えをコンフィギュレーションできます。 この場合、品揃えでは、そのカテゴリ ノードとその子ノードにすべての製品が含まれます。
 
-![製品カテゴリ](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure5.png?raw=true "製品カテゴリ")
+![製品カテゴリ](./media/Managing-assortments-figure5.png)
 
 ### <a name="excluded-products-or-categories"></a>除外した製品またはカテゴリ
 品揃えに製品とカテゴリを含めることに加えて、除外オプションを使用して、特定の製品またはカテゴリを品揃えから除外するかどうかを定義できます。 次の例では、製品 2 を除き、すべての製品を特定のカテゴリに含めるとします。 この場合は、品揃え製品を定義、またはその他のカテゴリ ノードを追加して作成する必要はありません。 代わりに、カテゴリを含めるだけで製品を除外することができます。
@@ -61,7 +62,7 @@ Microsoft Dynamics 365 for Retail では、チャンネル間で製品の可用�
 > [!NOTE]
 > 製品が定義ごと 1 つ以上の品揃えに含まれているか除外されている場合、製品は常に除外されたものとみなされます。
 
-![除外した製品](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure6.png?raw=true "除外した製品")
+![除外された製品](./media/Managing-assortments-figure6.png)
 
 ### <a name="global-and-released-products"></a>グローバルおよびリリースされた製品
 品揃えは、グローバル レベルで定義され、複数の法人からのチャネルを含めることができます。 品揃えに含まれている製品およびカテゴリも、法人間で共有されます。 ただし、チャネルで実際に販売、注文、カウント、または受信する前に、製品をリリースする必要があります (たとえば、販売時点管理 \[POS\] にて)。 したがって、異なる法人の 2 つの店舗で同じ製品を含む品揃えを共有することはできますが、商品はその法人にリリースされた場合にのみ使用できます。
@@ -72,10 +73,10 @@ Microsoft Dynamics 365 for Retail では、チャンネル間で製品の可用�
 たとえば、製品のカテゴリを参照できるように品揃えは最初に定義され、公開されます。 後で追加の製品がカテゴリに加えられると、それらの製品は自動的に既存の品揃えの定義に追加されます。 品揃えに製品を手動で追加する必要はありません。 同様に、組織単位が別のノードに追加された場合、組織単位の品揃えはその定義に基づいて自動的に調整されます。
 
 ### <a name="stopped-products"></a>停止された製品 
-[既存の注文] 設定を有効にして、販売プロセスのためにリリースされた製品を「停止」することができます。 この設定には、製品の有効期間の終了時と、どのチャネルでも販売されない時に最もよく使用されます。 品揃えはこの設定を尊重し、品揃えコンフィギュレーションに関係なく、停止された製品を関連付けすることはしません。
+**既存の注文**設定を有効にして、販売プロセスのためにリリースされた製品を「停止」することができます。 この設定には、製品の有効期間の終了時と、どのチャネルでも販売されない時に最もよく使用されます。 品揃えはこの設定を尊重し、品揃えコンフィギュレーションに関係なく、停止された製品を関連付けすることはしません。
 
 ### <a name="blocked-products"></a>ブロックされた製品
-製品の販売を停止することに加えて、製品の販売を一時的にブロックすることができます。 リリース済製品の [小売] タブでこの設定をコンフィギュレーションすることができます。 ブロックされた製品はまだ類別されていますが、製品を販売できないことを示すメッセージが POS に届きます。
+製品の販売を停止することに加えて、製品の販売を一時的にブロックすることができます。 リリース済製品の**小売**タブでこの設定をコンフィギュレーションすることができます。 ブロックされた製品はまだ類別されていますが、製品を販売できないことを示すメッセージが POS に届きます。
 
 ### <a name="date-effectivity"></a>日付の有効期間
 品揃えの日付は有効です。 したがって、小売業者は、製品がチャネルごとに利用可能かどうかをコンフィギュレーションすることができます。 事前に品揃えを定義して公開し、開始日と終了日を指定することができます。 その製品は、指定された日付に自動的に利用可能または利用不可になります。
@@ -89,9 +90,9 @@ Microsoft Dynamics 365 for Retail では、チャンネル間で製品の可用�
 ## <a name="implementation-considerations"></a>実装の考慮事項
 小売実装のための品揃えを計画および管理する場合、次の実装要件を考慮してください。
 
-- [データ レプリケーションとデータベース サイズ] – 品揃えは、ビジネス ニーズを使用して製品の可用性を管理するのに役立ちますが、チャネルとオフライン データベースのサイズを管理するためにも重要なツールです。 適切に管理された品揃えは、チャネルとオフライン データベースに処理および複製しなければならないデータの量を減らすのに役立ちます。 これらは、保存する必要があるレコードの数を減らすためにも役立ちます。 これらのデータベース内の少数のレコードによって、製品のトランザクション、検索、および参照する品目を追加する場合に、パフォーマンスを向上させます。
-- [有効日/期限が切れる品揃え] - チャネルおよびオフライン データベースの製品数を管理する最も効果的なツールの 1 つは、品揃えの日付の有効期間です。 季節製品、または耐用年数が過ぎた製品の品揃えを自由回答式 (無期限) に残しておく場合、これらのデータベースは無制限に拡大します。 さまざまなアプローチを使用して、この状況を管理できます。 たとえば、季節製品と常に利用可能な製品に対して、個別の品揃えを管理することができます。
-- [品揃えの範囲外の販売と返品] – この機能は、店舗のコア製品の組み合わせに属する製品に対して使用可能な製品の数を制限することで、小売業者が品揃えを効率的に管理できます。 この機能は、製品が誤って品揃えから除外された場合や製品が品揃えの有効期限外に返品された場合にも、小売業者が対応できるようにします。
+- **データ レプリケーションとデータベース サイズ** – 品揃えは、ビジネス ニーズを使用して製品の可用性を管理するのに役立ちますが、チャネルとオフライン データベースのサイズを管理するためにも重要なツールです。 適切に管理された品揃えは、チャネルとオフライン データベースに処理および複製しなければならないデータの量を減らすのに役立ちます。 これらは、保存する必要があるレコードの数を減らすためにも役立ちます。 これらのデータベース内の少数のレコードによって、製品のトランザクション、検索、および参照する品目を追加する場合に、パフォーマンスを向上させます。
+- **有効日/期限が切れる品揃え** - チャネルおよびオフライン データベースの製品数を管理する最も効果的なツールの 1 つは、品揃えの日付の有効期間です。 季節製品、または耐用年数が過ぎた製品の品揃えを自由回答式 (無期限) に残しておく場合、これらのデータベースは無制限に拡大します。 さまざまなアプローチを使用して、この状況を管理できます。 たとえば、季節製品と常に利用可能な製品に対して、個別の品揃えを管理することができます。
+- **品揃えの範囲外の販売と返品** – この機能は、店舗のコア製品の組み合わせに属する製品に対して使用可能な製品の数を制限することで、小売業者が品揃えを効率的に管理できます。 この機能は、製品が誤って品揃えから除外された場合や製品が品揃えの有効期限外に返品された場合にも、小売業者が対応できるようにします。
 
 製品データがチャネル データベースに存在しない場合にも、製品の販売、返品、または顧客注文にすることができるように、POS は必要な情報を取得し、リアルタイムで本社に電話をかけることができます。 この方法で取得された製品情報は、そのトランザクションの範囲内でのみ使用できます。 製品は、品揃え定義に追加されません。 したがって、必要に応じて後続のリアルタイム コールが行われます。
 
