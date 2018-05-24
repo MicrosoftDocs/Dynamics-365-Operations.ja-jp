@@ -19,16 +19,16 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: eb38de1e7e39cb66d15bfe344f6f5fcd5d4fccd7
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: f545b0a9abbd7c797afead67917cf80f4cbe0dae
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="depreciation-methods-and-conventions"></a>減価償却方法
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 この記事は、Microsoft Dynamics 365 for Finance and Operations にサポートされた減価償却方法および減価償却方式の概要を提供します。
 
@@ -65,12 +65,12 @@ ms.lasthandoff: 03/26/2018
 
 
 
-<a name="see-also"></a>参照
+<a name="additional-resources"></a>その他のリソース
 --------
 
-[固定資産減価償却](fixed-asset-depreciation.md)
+[固定資産の減価償却](fixed-asset-depreciation.md)
 
-[直線償却耐用年数](Straight-line-service-life-depreciation.md)
+[耐用年数定額減価償却](Straight-line-service-life-depreciation.md)
 
 [減価償却費残高の削減](reduce-balance-depreciation.md)
 

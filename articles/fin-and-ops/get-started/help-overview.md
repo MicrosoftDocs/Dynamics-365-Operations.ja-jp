@@ -19,16 +19,16 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 5adf73c1316f701b3b5e9b9a22fa5743ba1cc419
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 2c02af887e662fd346d5e3e09cce755bfb58d520
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="help-system-overview"></a>システム ヘルプの概要
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 for Finance and Operations のヘルプ システム コンポーネントの概要が示されます。 また、組織の独自のドキュメントやトレーニングを提供する方法について説明します。 
 
@@ -52,7 +52,7 @@ Finance and Operations には、2 つの主要なコンポーネントに基づ�
 このトピックは、ヘルプ システムについて説明し、組織のカスタム ドキュメントおよびトレーニング リソースを作成方法を説明します。
 
 > [!IMPORTANT]
-> [**タスク ガイド**] タブは、Microsoft Dynamics 365 for Talent および Microsoft Dynamics 365 for Retail で現在使用できません。 将来のリリースではこの機能を有効にするよう、作業が進行中です。 [Talent] での [はじめに] の経験タスク ガイドは、基本的機能をカバーするために引き続き使用可能です。 [Retail] および [Talent] の両方に関する docs.microsoft.com サイト上 ([docs.microsoft.com/dynamics365/unified-operations](../../index.md)) でも利用可能な、手順を追ったヘルプ。
+> **タスク ガイド** タブは、Microsoft Dynamics 365 for Talent および Microsoft Dynamics 365 for Retail で現在使用できません。 将来のリリースではこの機能を有効にするよう、作業が進行中です。 [Talent] での [はじめに] の経験タスク ガイドは、基本的機能をカバーするために引き続き使用可能です。 [Retail] および [Talent] の両方に関する docs.microsoft.com サイト上 ([docs.microsoft.com/dynamics365/unified-operations](../../index.md)) でも利用可能な、手順を追ったヘルプ。
 
 ## <a name="help-on-docsmicrosoftcom"></a>docs.microsoft.com のヘルプ
 
@@ -60,7 +60,7 @@ docs.microsoft.com サイト ([docs.microsoft.com/dynamics365/unified-operations
 
 -   **最新のコンテンツへのアクセス** – サイトは、製品のドキュメントのより速い、より柔軟な作成、出荷、および更新方法を提供します。 したがって、最新の技術情報にアクセスできることを確実にするために役立ちます。
 -   **専門家が記述した内容** – サイトは Microsoft 内外のコミュニティ メンバーによって拡張できる豊富な製品ドキュメントのセットを提供します。
--   [**異なるタイプのコンテンツへのアクセス**] – サイトにより、Microsoft Office Mix プレゼンテーション、タスク ガイド、ビデオ、トピックなど、Finance and Operations に関する異なる内容にすばやくアクセスできるようになります。
+-   **異なるタイプのコンテンツへのアクセス**– サイトにより、タスク ガイド、ビデオ、トピックなど、Finance and Operations に関する異なる内容にすばやくアクセスできるようになります。
 -   **業務プロセスをサポートするコンテンツ** – サイトには Microsoft Dynamics Lifecycle Services (LCS) のビジネス プロセス モデラー (BPM) を活用する、業務プロセス指向のコンテンツが含まれます。
 
 ### <a name="searching-on-docsmicrosoftcom"></a>docs.microsoft.com での検索
@@ -87,11 +87,11 @@ Unified Operations のコンテンツへのすべての更新の RSS フィー�
 ##### <a name="leave-us-a-comment"></a>コメントをお送りください。 
 フィードバックまたはトピックに関するご質問がある場合は、ページ下部にコメントを記入してください。  
 
-1 [**コメント**] をクリックして、ページ下部のコメントに移動します。
+1 **コメント** をクリックして、ページ下部のコメントに移動します。
 
 ![コメント](./media/comments.png)
 
-2 コメントを入力して、[**コメントを投稿**] をクリックします。
+2 コメントを入力して、**コメントを投稿** をクリックします。
 
 ![コメントを投稿](./media/before-signin.png)
 
@@ -108,7 +108,7 @@ Unified Operations のコンテンツへのすべての更新の RSS フィー�
 ##### <a name="suggest-a-change-or-contribute-content-through-github"></a>GitHub を通じてコンテンツの変更や提案を投稿する
 変更を提案するには、GitHub アカウントを所有し、コントリビューター ライセンス契約に署名する必要があります。  プル要求が送信された後、提案された変更が確認されます。 必要に応じて、内部的に検討してから返答します。  
 
-開始するには、トピックの \[編集\] (鉛筆) ボタンをクリック、または https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public にあるリポジトリへ移動します。 
+開始するには、トピックの**編集** (鉛筆) ボタンをクリック、または https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public にあるリポジトリへ移動します。 
 
 詳細については、https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/live/CONTRIBUTING.md にある寄稿者のガイドを参照してください。 
 
@@ -125,7 +125,7 @@ Dynamics 365 for Retail、Dynamics 365 for Finance and Operations、Dynamics 365
 
 ![タスク ガイドの読み取りビュー](./media/task-guide-ops.png)
 
-ガイドのあるインタラクティブな経験を開始するには、[ヘルプ] ページ下部の [**タスク ガイドの開始**] をクリックします。 黒のポインタが、実行する必要があるアクションを開いて、表示します。 UI に表示される指示に従い、指示されたデータを入力します。 
+ガイドのあるインタラクティブな経験を開始するには、[ヘルプ] ページ下部の **タスク ガイドの開始** をクリックします。 黒のポインタが、実行する必要があるアクションを開いて、表示します。 UI に表示される指示に従い、指示されたデータを入力します。 
 ![タスク ガイドの手順書](./media/task-guide-step-1-ops.png)
 
 > [!IMPORTANT] 
@@ -145,20 +145,20 @@ Dynamics 365 for Retail、Dynamics 365 for Finance and Operations、Dynamics 365
 独自のタスク記録を作成するか、Microsoft の提供するタスク記録をダウンロードしてカスタマイズすることができます。 したがって、固有の Finance and Operations の実装を反映する、組織のカスタマイズされたヘルプを作成できます。 Finance and Operations の [ヘルプ] ウィンドウに表示させてタスク ガイドとして再生するには、LCD で記録を BPM ライブラリに保存します。 パートナーの場合、ライブラリを会社のライブラリに昇格してソリューションに含める場合、顧客が使用できます。 詳細な手順については、「[ドキュメントとトレーニングの作成にタスク記録を使用](../../dev-itpro/user-interface/task-recorder.md)」を参照してください。
 
 ## <a name="in-product-help"></a>製品内ヘルプ
-Finance and Operations 内のヘルプ コンテンツにアクセスするには、\[**ヘルプ**\] (**?**) アイコンをクリックしてからヘルプを選択するか、Ctrl + Shift + ? を押します。 どちらの場合も、[ヘルプ] ウィンドウが開きます。 [ヘルプ] ウィンドウから記事またはタスク ガイドにアクセスできます。 
+Finance and Operations 内のヘルプ コンテンツにアクセスするには、**ヘルプ** (**?**) アイコンをクリックしてからヘルプを選択するか、Ctrl + Shift + ? を押します。 どちらの場合も、[ヘルプ] ウィンドウが開きます。 [ヘルプ] ウィンドウから記事またはタスク ガイドにアクセスできます。 
 
 ![[ヘルプ] ウィンドウ](./media/help-pane-wiki.png)
 
 ### <a name="accessing-help-topics-from-the-help-pane"></a>ヘルプ ウィンドウからヘルプ トピックへのアクセス
 
-[ヘルプ] ウィンドウから、Finance and Operations クライアントに適用する記事にアクセスできます。 最初に [ヘルプ] ウィンドウを開いてから [**Wiki**] タブをクリックすると、Finance and Operations の現在のページに対応する記事が表示されます。 記事がない場合は、検索するキーワードを入力できます。 [ヘルプ] ウィンドウで記事をクリックすると、ブラウザで新しいタブが開いて記事を表示します。 
+[ヘルプ] ウィンドウから、Finance and Operations クライアントに適用する記事にアクセスできます。 最初に [ヘルプ] ウィンドウを開いてから **Wiki** タブをクリックすると、Finance and Operations の現在のページに対応する記事が表示されます。 記事がない場合は、検索するキーワードを入力できます。 [ヘルプ] ウィンドウで記事をクリックすると、ブラウザで新しいタブが開いて記事を表示します。 
 
 > [!IMPORTANT]
 > このセクションは、Dynamics 365 for Talent には適用されません。 [Talent] のヘルプ システムは、製品のタスクのガイドに自動的に関連付けられます。 さらに、[Talent] のカスタム タスク ガイドを作成することはできません。 
 
 ### <a name="accessing-task-guides-from-the-help-pane"></a>ヘルプ ウィンドウからタスク ガイドへのアクセス
 
-[ヘルプ] ウィンドウからタスク ガイドにアクセスできるようになる前に、システム管理者が Finance and Operations の [**システム パラメーター**] ページに進み、設定をコンフィギュレーションする必要があります。 
+[ヘルプ] ウィンドウからタスク ガイドにアクセスできるようになる前に、システム管理者が Finance and Operations の **システム パラメーター** ページに進み、設定をコンフィギュレーションする必要があります。 
 
 > [!NOTE]
 > -   ヘルプを設定するには、Finance and Operations を導入したテナントと同じテナントのアカウントを使用してサインインする必要があります。
@@ -166,9 +166,9 @@ Finance and Operations 内のヘルプ コンテンツにアクセスするに�
 
 ![システム パラメーター フォームとヘルプ設定](./media/system-parameters_ops-1024x437.png)
 
-[**システム パラメーター**] ページで、次の手順に従います。
+**システム パラメーター** ページで、次の手順に従います。
 
-1.  [**重要:**] ヘルプ タブを初めて開く際には、Lifecycle Services に接続する必要があります。 フォームの中程のリンクをクリックし、接続されるまで待機し、ダイアログ ボックスを閉じ、[**OK**] をクリックしてパラメーター フォームを取得します。
+1.  **重要:** ヘルプ タブを初めて開く際には、Lifecycle Services に接続する必要があります。 フォームの中程のリンクをクリックし、接続されるまで待機し、ダイアログ ボックスを閉じ、**OK** をクリックしてパラメーター フォームを取得します。
 ![LCS に接続](./media/connect-to-lcs-crop-1024x365.png)
 2.  接続する Lifecycle Services プロジェクトを選択します。
 3.  タスク記録を取得する BPM ライブラリ (選択したプロジェクト内) を選択します。
@@ -178,13 +178,13 @@ Finance and Operations 内のヘルプ コンテンツにアクセスするに�
 
 4.  BPM ライブラリの表示順序を選択します。 これにより、ライブラリからのタスク記録が [ヘルプ] ウィンドウに表示される順序が決まります。
 
-システム管理者がこれらのステップを完了したのちに、ヘルプ ウィンドウを開いて [**タスク ガイド**] タブをクリックできます。Finance and Operations の現在のページに対応するタスク ガイドが表示されるようになります。 タスク ガイドがない場合は、検索するキーワードを入力できます。 [ヘルプ] ウィンドウでタスク ガイドをクリックした後、[ヘルプ] ウィンドウにはステップ バイ ステップの手順が表示され、タスク ガイドが再生できます。 
+システム管理者がこれらのステップを完了したのちに、ヘルプ ウィンドウを開いて **タスク ガイド** タブをクリックできます。Finance and Operations の現在のページに対応するタスク ガイドが表示されるようになります。 タスク ガイドがない場合は、検索するキーワードを入力できます。 [ヘルプ] ウィンドウでタスク ガイドをクリックした後、[ヘルプ] ウィンドウにはステップ バイ ステップの手順が表示され、タスク ガイドが再生できます。 
 
 ![タスク ガイドの読み取りビュー](./media/task-guide-ops.png)
 
 ### <a name="where-are-the-translated-task-guides"></a>翻訳されたタスク ガイドはどこにありますか。
 
-翻訳されたタスク ガイドは、タイトルの「すべての言語」を持つライブラリでリリースされます。 Finance and Operations でローカライズされたタスク ガイドのヘルプを参照するには、適切なライブラリに接続できることを確認してください。 タスク ガイドの表示言語は、[**オプション**] &gt; [**基本設定**] の [言語の設定] でユーザーごとに制御されます。 
+翻訳されたタスク ガイドは、タイトルの「すべての言語」を持つライブラリでリリースされます。 Finance and Operations でローカライズされたタスク ガイドのヘルプを参照するには、適切なライブラリに接続できることを確認してください。 タスク ガイドの表示言語は、**オプション** &gt; **基本設定** の [言語の設定] でユーザーごとに制御されます。 
 -   タスク ガイドが翻訳されている場合、そのタスク ガイドを開くと、タスク ガイドのすべてのテキストは選択した言語で表示されます。
 -   タスク ガイドが翻訳されていない場合、それを開くと、一部のテキスト (コントロールのテキスト) のみが選択した言語で表示されます。
 
@@ -204,7 +204,7 @@ Finance and Operations 内のヘルプ コンテンツにアクセスするに�
 
 
 
-<a name="see-also"></a>参照
+<a name="additional-resources"></a>その他のリソース
 --------
 [Finance and Operations のヘルプ システム (ダウンロード可能なファクト シート)](https://mbs.microsoft.com/customersource/global/AX/learning/fact-sheets/msdaxhelpsystemfactsheet)
 

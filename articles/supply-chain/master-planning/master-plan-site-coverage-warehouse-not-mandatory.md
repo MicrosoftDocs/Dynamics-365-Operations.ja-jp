@@ -20,16 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 323da0f71317242c4e0ab667002a195913b565fc
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 0b97f5f9a9a1447027e55d6c6b30253506caff70
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="master-planning-for-site-coverage-warehouse-not-mandatory"></a>マスター プラン - サイトの補充、倉庫は必須ではない
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 このトピックでは、サイト分析コードを品目補充用に持つ品目の計画方法について説明します。
 
@@ -41,18 +41,18 @@ ms.lasthandoff: 11/03/2017
 -   倉庫分析コードが補充計画用に設定されていない。 そのため、供給と需要はサイトごとに集計され、多分、他の補充計画分析コードも同様です。
 
 次の図は、マスター計画がどのように進行するかを示しています。 図の中で使用されているパラメータとその設定場所を次に示します。
--   品目に対して品目補充が定義されています。 [**製品情報管理] &gt; [製品] &gt; [リリースされた製品**] の順にクリックします。 品目を選択し、[**計画] &gt; [品目補充**] の順にクリックします。
--   倉庫に対して補充関係が定義されています。 [**在庫管理] &gt; [設定] &gt; [在庫詳細] &gt; [倉庫**] の順にクリックします。 **マスター計画**タブに、**主要倉庫**フィールド グループが表示されます。
--   既定の注文タイプは [生産]、[発注書] または [かんばん] に設定されます。 [**製品情報管理] &gt; [製品] &gt; [リリースされた製品**] の順にクリックします。 品目を選択し、[**計画] &gt; [既定の注文設定**] の順にクリックします。 [**既定の注文設定**] フォームの [**既定の注文タイプ**] フィールドを参照してください。
+-   品目に対して品目補充が定義されています。 **製品情報管理] &gt; [製品] &gt; [リリースされた製品** の順にクリックします。 品目を選択し、**計画] &gt; [品目補充** の順にクリックします。
+-   倉庫に対して補充関係が定義されています。 **在庫管理] &gt; [設定] &gt; [在庫詳細] &gt; [倉庫** の順にクリックします。 **マスター計画**タブに、**主要倉庫**フィールド グループが表示されます。
+-   既定の注文タイプは [生産]、[発注書] または [かんばん] に設定されます。 **製品情報管理] &gt; [製品] &gt; [リリースされた製品** の順にクリックします。 品目を選択し、**計画] &gt; [既定の注文設定** の順にクリックします。 **既定の注文設定** フォームの **既定の注文タイプ** フィールドを参照してください。
 
 ![サイトの補充が必要、倉庫は必須ではない    ](./media/multisitedemandexplosionscenarioforsitecoveragewarehousenotmandatory.jpg)
 
 
 
-<a name="see-also"></a>参照
+<a name="additional-resources"></a>その他のリソース
 --------
 
-[マスター プランとマルチサイト機能](master-plan-multisite-functionality.md)
+[マスタ プランとマルチサイト機能](master-plan-multisite-functionality.md)
 
 [マスター プラン - サイトの補充、倉庫は必須](master-plan-site-coverage-warehouse-mandatory.md)
 

@@ -19,16 +19,16 @@ ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 77e46e8693c65410ac7c44754edcb3c181f2aa18
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: a61369033202bdb99fe4b36b24051c64cb9ca4b1
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="trial-balance-financial-reports"></a>試算表の財務諸表
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 この記事では、試算表の既定のレポートについて説明します。 さらに、これらのレポートに関連付けられる構成要素について、また業務要件を満たすようにレポートを変更する方法についても説明します。 
 
@@ -56,8 +56,8 @@ Microsoft Dynamics 365 for Finance and Operations の財務報告では、3 つ�
 
 試算表 - 既定という行定義には、すべての主勘定を取込む 1 つの行が含まれます。 したがって、ユーザーは変更しないでレポートを生成できます。 レポートを表示すると、各勘定に関する詳細を表示する 1 行を表示できます。 行定義を変更することにより、さらに詳細を表示できます。 試算表 - 既定の行定義を変更して、すべての勘定に対する行を含むようにするには、次の手順に従います。
 
-1.  [**編集**] をクリックし、次に [**分析コードからの行の挿入**] をクリックします。 [**分析コードからの行の挿入**] コマンドを使用すると、自分の行定義に含める分析コードを選択できます。 この行定義で、[**主勘定**] を使用します。
-2.  [**主勘定**] がすべてのアンパサンド (&) を含むことを確認し、[**OK**] をクリックします。
+1.  **編集** をクリックし、次に **分析コードからの行の挿入** をクリックします。 **分析コードからの行の挿入** コマンドを使用すると、自分の行定義に含める分析コードを選択できます。 この行定義で、**主勘定** を使用します。
+2.  **主勘定** がすべてのアンパサンド (&) を含むことを確認し、**OK** をクリックします。
 
 今回の行定義には、既定の法人の主勘定すべてが含まれます。
 
@@ -100,7 +100,7 @@ Microsoft Dynamics 365 for Finance and Operations の財務報告では、3 つ�
 
 
 
-<a name="see-also"></a>参照
+<a name="additional-resources"></a>その他のリソース
 --------
 
 [財務報告](financial-reporting-getting-started.md)

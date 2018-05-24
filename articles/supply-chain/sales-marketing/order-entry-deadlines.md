@@ -19,16 +19,16 @@ ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 31308e64d4871a4d09540df16fdcd02cc83bd0be
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 4f3905f364ea67eab226323fd3450ebed30e4735
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="order-entry-deadlines"></a>注文入力期限
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 この記事は、注文入力期日に関する情報を提供します。 注文入力期日は、顧客注文を当日または翌日に受信されたかのように処理 (および履行) するかどうかを決定する締切り時間です。
 
@@ -45,7 +45,7 @@ ms.lasthandoff: 11/03/2017
 **注文入力期日の組み合わせの有効化** ページで、サイトと注文入力期限グループの許可する組み合わせを定義します。
 
 ## <a name="example-order-entry-deadline"></a>例 : 注文入力期限
-火曜日の注文入力期限を 16:00 に設定します。 特定の火曜日の 17:00 に、現在の日付を出荷日として設定しようとします。 (この例ではリード タイムはないことに注意してください) [**配送日の管理**] チェック ボックスがオンの場合、日付が無効であるとの警告が表示されます。 この警告は**出荷可能日および入荷可能日付**ページに表示され、代替日付を選択することができます。
+火曜日の注文入力期限を 16:00 に設定します。 特定の火曜日の 17:00 に、現在の日付を出荷日として設定しようとします。 (この例ではリード タイムはないことに注意してください) **配送日の管理** チェック ボックスがオンの場合、日付が無効であるとの警告が表示されます。 この警告は**出荷可能日および入荷可能日付**ページに表示され、代替日付を選択することができます。
 
 ## <a name="example-different-order-entry-deadlines-per-site"></a>例 : 各サイトで注文入力期限が異なる場合
 この法人は、2 種類のサイトで構成されます。 サイトは、次の表に示すように、異なるタイム ゾーンにあります。
@@ -103,7 +103,7 @@ ms.lasthandoff: 11/03/2017
 
 **注記:** 夏時間調整が有効である場合は、それに合わせて注文入力期限も調整されます。
 
-<a name="see-also"></a>参照
+<a name="additional-resources"></a>その他のリソース
 --------
 
 [配送スケジュール](delivery-schedules.md)

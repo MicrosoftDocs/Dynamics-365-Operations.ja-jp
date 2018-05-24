@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 08cfd2cfa24bef0f0c92126f5d1052a12ceba37a
-ms.openlocfilehash: 699830ce6cd993f3dd3fd4ff744ce5a8b9645c32
+ms.sourcegitcommit: ace66c037953f4b1b2e8b93a315faefdb090b1eb
+ms.openlocfilehash: bf5de13fee6db1b467c1cf4d5cc65b46c67b29fe
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/11/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
@@ -47,7 +47,7 @@ ms.lasthandoff: 04/11/2018
 
 - 製品 - 製品
 
-**Field Service 製品 (Finance and Operations から Field Service)** テンプレートは、**製品 (Finance and Operations から Sales) – 直接**テンプレートに含まれていないマッピングを含んでいます。 このマッピングは、必要な Field Service 固有のフィールド [**サービス製品タイプ**] が正しく設定されるようにします。
+**Field Service 製品 (Finance and Operations から Field Service)** テンプレートは、**製品 (Finance and Operations から Sales) – 直接**テンプレートに含まれていないマッピングを含んでいます。 このマッピングは、必要な Field Service 固有のフィールド **サービス製品タイプ** が正しく設定されるようにします。
 
 ```
 FIELDSERVICEPRODUCTTYPE        Fn        msdyn_fieldserciveproducttype
@@ -66,4 +66,12 @@ Finance and Operations で、**販売可能なリリース済製品**データ �
 - **在庫:** 製品タイプ = 製品および品目モデル グループ、在庫製品 = True
 - **在庫なし:** 製品タイプ = 製品および品目モデル グループ、在庫製品 = False
 - **サービス:** 製品タイプ = サービス
+
+## <a name="template-mapping-in-data-integration"></a>データ統合のテンプレートのマッピング
+
+次の図は、データ統合のテンプレート マッピングを示しています。
+
+### <a name="field-service-products-fin-and-ops-to-field-service-products---products"></a>Field Service 製品 (Finance and Operations から Field Service): 製品 - 製品
+
+[![データ統合のテンプレートのマッピング](./media/FSProduct.png)](./media/FSProduct.png)
 

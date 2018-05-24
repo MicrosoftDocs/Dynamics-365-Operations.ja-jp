@@ -20,16 +20,16 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 0235cf112b59ee86f77d26044e47eb9bff8f67db
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: b6b5b7e7894cb74e33e08893934b3eaede957556
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="expression-constraints-and-table-constraints-in-product-configuration-models"></a>製品コンフィギュレーション モデルでの式の制約とテーブルの制約
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 このトピックでは、式の制約およびテーブル制約の使用について説明します。 制約は、販売注文、販売見積、発注書、または製造オーダーのための製品をコンフィギュレーションするときに選択できる属性値を制御します。 制約の作成方法に基づいて、式の制約またはテーブル制約を使用できます。 
 
@@ -232,7 +232,7 @@ ms.lasthandoff: 04/13/2018
 -   次の場合
 -   未満
 -   大きい
--   含意
+-   Implies
 -   ログ
 -   最大
 -   最小
@@ -246,7 +246,7 @@ ms.lasthandoff: 04/13/2018
 -   目標
 
 
-<a name="see-also"></a>参照
+<a name="additional-resources"></a>その他のリソース
 --------
 
 [製品コンフィギュレーション モデルへ式の制約の作成 (タスク ガイド)](tasks/add-expression-constraint-product-configuration-model.md)

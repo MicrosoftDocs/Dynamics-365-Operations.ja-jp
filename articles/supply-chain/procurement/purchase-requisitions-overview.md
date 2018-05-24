@@ -19,16 +19,16 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 5d379b034c996cb0eff20a44960ba1e2701af81a
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 942693ed3d2d54c6e973e5d3f86454b195f0fdee
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="purchase-requisition-overview"></a>購買要求の概要
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 このトピックでは、購買要求ワークフローと、購買要求で発生する可能性のあるさまざまな状態について説明します。
 
@@ -69,7 +69,7 @@ ms.lasthandoff: 04/13/2018
 <tr class="odd">
 <td>ドラフト</td>
 <td>ドラフト</td>
-<td>購買要求と購買要求明細行は作成済ですが、確認を受けるための送信は行われていません。 [<strong>ドラフト</strong>] のステータスを持つ購買依頼と購買依頼行は変更することができます。 購買依頼または購買依頼行は、リコールされたがレビュー用に再送信されていない場合は、<strong>ドラフト</strong> のステータスも持っています。 <strong>注意:</strong> 伝票レベルで購買要求を送信または呼び出すことができます。 ただし、購買要求明細行を一行のみ送信または取り消すことはできません。</td>
+<td>購買要求と購買要求明細行は作成済ですが、確認を受けるための送信は行われていません。 <strong>ドラフト</strong> のステータスを持つ購買依頼と購買依頼行は変更することができます。 購買依頼または購買依頼行は、リコールされたがレビュー用に再送信されていない場合は、<strong>ドラフト</strong> のステータスも持っています。 <strong>注意:</strong> 伝票レベルで購買要求を送信または呼び出すことができます。 ただし、購買要求明細行を一行のみ送信または取り消すことはできません。</td>
 </tr>
 <tr class="even">
 <td>確認中</td>
@@ -155,7 +155,7 @@ ms.lasthandoff: 04/13/2018
 ## <a name="purchase-requisitions-and-requests-for-quotation"></a>購買要求と見積の要求
 場合によっては、見積依頼 (RFQ) のプロセスを開始して、購買要求で要求される製品の仕入先および価格を識別する必要があります。 購買要求が確認中である場合、RFQ を生成できます。 入札を承認すると、仕入先、価格などに関する情報が要求に転送されます。  
 
-[**購買要求の詳細**] ページの [**保留**] チェック ボックスを選択すると、購買要求を保留にすることができます。 購買要求の処理は、チェック ボックスをオフにして、保留を解除した後にのみ実行できます。  
+**購買要求の詳細** ページの **保留** チェック ボックスを選択すると、購買要求を保留にすることができます。 購買要求の処理は、チェック ボックスをオフにして、保留を解除した後にのみ実行できます。  
 
 **注記:** eProcurement では、仕入先は購買要求の RFQ によって代替明細行を追加できる場合があります。 この場合、購買要求は、承認された代替明細行に反映します。
 
@@ -192,7 +192,7 @@ ms.lasthandoff: 04/13/2018
 5.  連結機会の連結要求明細行または購買要求明細行の発注書を作成します。
 
 
-<a name="see-also"></a>参照
+<a name="additional-resources"></a>その他のリソース
 --------
 
 [消費の要求の作成 (タスク ガイド)](tasks/create-requisition-consumption.md)

@@ -20,16 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 0f852c8d100c91d055e58c4594106aedf6fe5afb
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 80c9fa6ec98bd2cdc3edd5329e2a619ef9cc8cb2
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="explosion-of-a-bom-version"></a>BOM バージョンの展開
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 この記事では、部品表 (BOM) のバージョンの展開を含むマスター プランのシナリオを説明します。
 
@@ -40,12 +40,12 @@ BOM バージョンの需要展開は、特定サイト (および場合によ�
 
 次の図は、マスタ プラン需要展開のプロセス方法を示しています。 ![BOM バージョンを使用した展開が必要    ](./media/multisitedemandexplosionscenariousingbomversion.gif)
 
-<a name="see-also"></a>参照
+<a name="additional-resources"></a>その他のリソース
 --------
 
 [マスター プラン - BOM バージョンを決定する方法](master-plan-bom-version-determined.md)
 
-[マスター プランとマルチサイト機能](master-plan-multisite-functionality.md)
+[マスタ プランとマルチサイト機能](master-plan-multisite-functionality.md)
 
 
 

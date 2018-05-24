@@ -19,16 +19,16 @@ ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 687dcb5e8ed91108cff9bb86155bf7da89945231
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: cd7c7111d9d05686c8fda019354097a90e048f49
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="equally-divided-depreciation-method-for-japan"></a>日本の均等償却方法
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 日本では、一括比例配分資産、低価額資産、および繰延資産は耐用年数期間中、毎年均等額で減価償却されます。 この記事は、均等減価償却についてよく寄せられる質問に回答します。
 
@@ -38,7 +38,7 @@ ms.lasthandoff: 03/26/2018
 均等減価償却法を使用して、繰延、少額、および一括比例配分の固定資産を減価償却できます。 次に、一つ以上の会計年度期間における資産の減価償却費を表示するレポートを生成できます。
 
 ## <a name="how-is-depreciation-calculated-using-the-equally-divided-depreciation-method"></a>均等減価償却法を使用して、どのように減価償却を計算しますか。
-**減価償却プロファイル** ページの [方式] フィールドで、減価償却方法として [均等] を選択して、減価償却プロファイルを設定できます。 均等減価償却プロファイルを使用して固定資産を減価償却するとき、Microsoft Dynamics 365 for Finance and Operations は次の式を使用して減価償却金額を計算します。減価償却 = 残余量 × 四捨五入した (1 ÷ 残りの年数) × 四捨五入した (1 ÷ 現在の年の期間数)。次の式は、残りの量の計算に使用します。残余量 = 取得コスト – 減価償却累計額。減価償却量の計算に均等減価償却法を使用するとき、[減価償却プロファイル] ページの [均等償却年数] フィールドの値は、[帳簿] ページで指定した耐用年数および減価償却期間ではなく、固定資産の耐用年数が表示されます。
+**減価償却プロファイル** ページの**方式**フィールドで、減価償却方法として**均等**を選択して、減価償却プロファイルを設定できます。 均等減価償却プロファイルを使用して固定資産を減価償却するとき、Microsoft Dynamics 365 for Finance and Operations は次の式を使用して減価償却金額を計算します。減価償却 = 残余量 × 四捨五入した (1 ÷ 残りの年数) × 四捨五入した (1 ÷ 現在の年の期間数)。次の式は、残りの量の計算に使用します。残余量 = 取得コスト – 減価償却累計額。減価償却量の計算に均等減価償却法を使用するとき、**減価償却プロファイル**ページの**均等償却年数**フィールドの値は、**帳簿**ページで指定した耐用年数および減価償却期間ではなく、固定資産の耐用年数が表示されます。
 
 ## <a name="does-the-depreciation-amount-that-is-calculated-by-using-the-equally-divided-depreciation-method-change-if-its-calculated-at-the-beginning-of-the-month-instead-of-in-the-middle-of-the-month"></a>均等減価償却法を使用して計算された減価償却量は、月の中間に計算された場合ではなく月初めに計算された場合に異なりますか。
 一連番号 減価償却量は、月内のいつ計算されるかによって変化しません。 たとえば、以下の一括比例配分の固定資産を取得します。
@@ -80,7 +80,7 @@ ms.lasthandoff: 03/26/2018
 | 2014 年 4 月 1 日    | 2015 年 3 月 31 日 | JPY 50,000                              | JPY 150,000              | 0                             | JPY 4,167                       |
 
 ## <a name="how-is-depreciation-calculated-using-the-equally-divided-depreciation-method-if-the-asset-calendar-is-changed-during-the-asset-life-cycle"></a>試算カレンダーが資産の有効期間中に変更される場合、均等減価償却法を使用してどのように減価償却を計算しますか。
-Finance and Operations が均等減価償却法を使用して減価償却を計算する場合、[帳簿] ページの [カレンダー] フィールドで選択された会計カレンダーに基づいて計算されます。 資産カレンダーが資産の有効期間中に変更された場合、現在のカレンダーに基づいて、会計年度内の月または四半期などの会計年度期間の数を計算します。 たとえば、以下の一括比例配分の固定資産を取得します。
+Finance and Operations が均等減価償却法を使用して減価償却を計算する場合、**帳簿**ページの**カレンダー**フィールドで選択された会計カレンダーに基づいて計算されます。 資産カレンダーが資産の有効期間中に変更された場合、現在のカレンダーに基づいて、会計年度内の月または四半期などの会計年度期間の数を計算します。 たとえば、以下の一括比例配分の固定資産を取得します。
 
 -   会計カレンダー = 4 月 1 日から 3 月 31 日
 -   一括比例配分の固定資産の取得日付 = 2012 年 4 月 1 日
@@ -99,9 +99,9 @@ Finance and Operations が均等減価償却法を使用して減価償却を計
 一連番号 均等減価償却法を使用して固定資産を減価償却するとき、減価償却量は、固定資産の耐用期間内の会計年度期間中に均等分割されます。 したがって、固定資産の有効期間中は減価償却方法を変更できません。
 
 ## <a name="can-i-change-the-depreciation-period-for-an-equally-divided-depreciation-profile"></a>均等減価償却法プロファイルの減価償却期間を変更できますか。
-一連番号 **減価償却簿**ページで均等減価償却法プロファイルを選択した場合、減価償却プロファイルの**減価償却プロファイル** ページの [均等償却年数] フィールドの値は変更できません。
+一連番号 **減価償却簿**ページで均等減価償却法プロファイルを選択した場合、減価償却プロファイルの**減価償却プロファイル**ページの**均等償却年数**フィールドの値は変更できません。
 
-## <a name="see-also"></a>参照
+## <a name="additional-resources"></a>その他のリソース
 - [固定資産減価償却の FAQ](apac-jpn-fixed-asset-depreciation.md)
 - [均等償却を使用した一括比例配分減価償却資産の作成](./tasks/create-lump-sum-depreciation-assets-equally-divided-method.md)
 

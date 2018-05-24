@@ -19,16 +19,16 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d6828860d9e56dc8db80a11b4b611b9c0fdc2b62
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: a5dcc294b3dde7dc7e0f789d9e7678b75bc699b0
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="purchase-requisition-workflow"></a>購買要求ワークフロー
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 ワークフロー プロセスは、レビュー プロセスを介し、[ドラフト] の状態から [承認済] の最終状態へ購買要求を移動します。 購買要求が作成されレビュー用に送信されると、ワークフロー プロセスが開始されます。 購買要求が承認されると、発注書が購買要求明細行に対して生成され、仕入先に注文処理のために送信されます。
 
@@ -106,7 +106,7 @@ ms.lasthandoff: 11/03/2017
 
 ワークフローで設定した支出確認者のうちの 1 人を使用するには、関連するワークフロー要素の**割り当て**プロパティーの**参加者のタイプ**オプションを**支出実行者**に設定する必要があります。
 
-<a name="see-also"></a>参照
+<a name="additional-resources"></a>その他のリソース
 --------
 
 [消費の要求の作成 (タスク ガイド)](tasks/create-requisition-consumption.md)

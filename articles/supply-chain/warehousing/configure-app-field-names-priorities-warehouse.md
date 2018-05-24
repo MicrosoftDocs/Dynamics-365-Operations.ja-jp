@@ -20,16 +20,16 @@ ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 2fbf9d84fa0fec32004936542003115cf580d91c
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: d029481d31a0064a193e2cb9eeaf79df28bfa159
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="configure-app-field-names-in-warehousing-app"></a>倉庫アプリのアプリ フィールド名のコンフィギュレーション
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 このトピックでは、Finance and Operations の倉庫アプリ フィールド名と優先順位の定義およびコンフィギュレーション方法について説明します。 
 
@@ -37,7 +37,7 @@ ms.lasthandoff: 11/03/2017
 
 ## <a name="configure-warehouse-app-field-names"></a>倉庫アプリ フィールド名のコンフィギュレーション
 
-Finance and Operations - Warehousing をモバイル デバイスで使用するときに、[倉庫アプリ フィールド名] ページでお使いのデバイスにメタデータをどのように表示するかをコンフィギュレーションできます。 Finance and Operations の新しい会社で、[既定の設定の作成] をクリックして倉庫モバイル デバイス ワークフローで使用されるすべてのフィールド名を生成してから、優先される入力モードと入力タイプを割り当てます。 すべてのフィールド名を生成すると、次の入力オプションを選択できます。
+Finance and Operations - Warehousing をモバイル デバイスで使用するときに、**倉庫アプリ フィールド名**ページでお使いのデバイスにメタデータをどのように表示するかをコンフィギュレーションできます。 Finance and Operations の新しい会社で、**既定の設定の作成**をクリックして倉庫モバイル デバイス ワークフローで使用されるすべてのフィールド名を生成してから、優先される入力モードと入力タイプを割り当てます。 すべてのフィールド名を生成すると、次の入力オプションを選択できます。
 
 <table>
 <colgroup>
@@ -53,7 +53,7 @@ Finance and Operations - Warehousing をモバイル デバイスで使用する
 <tbody>
 <tr class="odd">
 <td>優先入力モード</td>
-<td>このオプションは、スキャン フィールドまたは手動入力フィールドを選択したフィールド名に表示するかどうかを定義します。 これは、バーコードがフィールドに使用されるかどうかによって、フィールドを区別する場合に役立ちます。 <strong>注記:</strong> 優先入力モードを [<strong>スキャン</strong>] に設定したフィールド名では、バーコードが読み取れない場合や破損している場合に手動で情報を入力できます。</td>
+<td>このオプションは、スキャン フィールドまたは手動入力フィールドを選択したフィールド名に表示するかどうかを定義します。 これは、バーコードがフィールドに使用されるかどうかによって、フィールドを区別する場合に役立ちます。 <strong>注記:</strong> 優先入力モードを <strong>スキャン</strong> に設定したフィールド名では、バーコードが読み取れない場合や破損している場合に手動で情報を入力できます。</td>
 </tr>
 <tr class="even">
 <td>入力タイプ</td>
@@ -70,7 +70,7 @@ Finance and Operations - Warehousing をモバイル デバイスで使用する
 
 ## <a name="configure-warehouse-app-field-priority"></a>倉庫アプリ フィールドの優先順位のコンフィギュレーション
 
-[倉庫アプリ フィールドの優先順位] ページで、フィールド名を異なる優先順位グループに配置できます。 これにより、倉庫作業者がアプリを使用してタスクを実行する際に、どの情報を主要なタスク ページに表示すべきかを決定することができます。 [既定の設定の作成] をクリックすると、優先順位グループの既定の設定が生成されます。 必要な数だけ優先順位グループを作成することもできますが、3 つの優先順位グループだけがタスク ページに表示されます。 Finance and Operations はアプリにメタデータを送信する際に、優先順位グループに応じて各フィールドに相対的な優先順位を割り当てて、アプリはメタデータを含む上位 3 つの優先順位グループをタスク ページに表示します。 オーバーフローしているメタデータの残りは、2 番目の詳細ページに表示されます。 次の表に、5 つの優先順位グループの例を示します。
+**倉庫アプリ フィールドの優先順位**ページで、フィールド名を異なる優先順位グループに配置できます。 これにより、倉庫作業者がアプリを使用してタスクを実行する際に、どの情報を主要なタスク ページに表示すべきかを決定することができます。 **既定の設定の作成**をクリックすると、優先順位グループの既定の設定が生成されます。 必要な数だけ優先順位グループを作成することもできますが、3 つの優先順位グループだけがタスク ページに表示されます。 Finance and Operations はアプリにメタデータを送信する際に、優先順位グループに応じて各フィールドに相対的な優先順位を割り当てて、アプリはメタデータを含む上位 3 つの優先順位グループをタスク ページに表示します。 オーバーフローしているメタデータの残りは、2 番目の詳細ページに表示されます。 次の表に、5 つの優先順位グループの例を示します。
 
 <table>
 <colgroup>
@@ -140,7 +140,7 @@ Finance and Operations - Warehousing をモバイル デバイスで使用する
 
 場所などの残りのメタデータは、タスク ページに表示されませんが、詳細ページに表示されます。 ユーザー インターフェイスの詳細や例については、ブログ投稿「[Finance and Operations - Warehousing の発表](https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/)」を参照してください。
 
-<a name="see-also"></a>参照
+<a name="additional-resources"></a>その他のリソース
 --------
 
 [Microsoft Dynamics 365 for Finance and Operations – Warehousing のインストールと構成](install-configure-warehousing-app.md)

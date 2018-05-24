@@ -19,25 +19,25 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d0307db3a49bcdb62146b815383f744c5b8e0fde
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 78b41010e4ab56675121ab5479cada37645e9ee3
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="user-preferences-in-financial-report-designer"></a>財務諸表デザイナーでのユーザーの基本設定
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 この記事では、財務諸表デザイナーで、ユーザーとのやり取りをカスタマイズし、最初のサインイン エクスペリエンスを制御するユーザー設定を設定する方法について説明します。 個々の報告、レポート ライブラリ、および既定のファイルの場所の表示方法を制御することもできます。 
 
 <a name="set-user-preferences"></a>ユーザー基本設定の設定
 --------------------
 
-1.  [レポート デザイナー] の [**ツール**] メニューで、[**オプション**] をクリックします。
-2.  [**オプション**] ダイアログ ボックスで、基本設定を選択します。
-3.  [**OK**] をクリックします
+1.  [レポート デザイナー] の **ツール** メニューで、**オプション** をクリックします。
+2.  **オプション** ダイアログ ボックスで、基本設定を選択します。
+3.  **OK** をクリックします
 
 ## <a name="options-dialog-box-options"></a>[オプション] ダイアログ ボックスのオプション
 <table>
@@ -52,9 +52,9 @@ ms.lasthandoff: 04/13/2018
 <td>起動時</td>
 <td>レポート デザイナーの開始時の表示を選択します。 次のオプションのいずれかを選択します。
 <ul>
-<li>[<strong>最後にロードされたレポートのロード</strong>] – 最後に表示したレポートを開きます。</li>
-<li>[<strong>開いているウィンドウの表示</strong>] – [<strong>開いている</strong>] ウィンドウを開きます。 [<strong>開いている</strong>] ウィンドウには、すばやい構成要素の検索に使用できる検索ウィンドウがあります。</li>
-<li>[<strong>空の環境を表示</strong>] – 空のデザイナー ウィンドウを開きます。</li>
+<li><strong>最後にロードされたレポートのロード</strong> – 最後に表示したレポートを開きます。</li>
+<li><strong>開いているウィンドウの表示</strong> – <strong>開いている</strong> ウィンドウを開きます。 <strong>開いている</strong> ウィンドウには、すばやい構成要素の検索に使用できる検索ウィンドウがあります。</li>
+<li><strong>空の環境を表示</strong> – 空のデザイナー ウィンドウを開きます。</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -74,7 +74,7 @@ ms.lasthandoff: 04/13/2018
 
 
 
-<a name="see-also"></a>参照
+<a name="additional-resources"></a>その他のリソース
 --------
 
 [財務報告](financial-reporting-intro.md)

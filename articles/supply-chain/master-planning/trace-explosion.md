@@ -20,16 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f3891688542ac6d4f9afce026808c65992a592d4
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 2642ced283d815ad671512cc5a17e531e9169f91
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="use-tracing-for-explosion"></a>展開のトレースを使用する
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 この記事は、注文の展開結果の背後にある原因を参照して追跡する方法について説明します。
 
@@ -40,12 +40,12 @@ ms.lasthandoff: 11/03/2017
 -   計画のパラメーターが最適であるかどうか、プランの結果をシミュレーションします。
 -   注文の生産日付、量、および優先順位などの情報を決定した方法を確認します。
 
-選択した注文の将来およびアクションに関する詳細を表示できます。 [**展開**] ページにある上部ウィンドウの [**説明**] タブで追跡情報を使用できます。 追跡はオーダーを展開するときに発生します。 オーダーの追跡を開始するには、[**更新**] をクリックし、[**トレースの有効化**] チェック ボックスをオンにします。 特定の情報のログを検索するには [**テキストの検索**] フィールドを使用できます。 検索結果はツリーで強調表示されます。
+選択した注文の将来およびアクションに関する詳細を表示できます。 **展開** ページにある上部ウィンドウの **説明** タブで追跡情報を使用できます。 追跡はオーダーを展開するときに発生します。 オーダーの追跡を開始するには、**更新** をクリックし、**トレースの有効化** チェック ボックスをオンにします。 特定の情報のログを検索するには **テキストの検索** フィールドを使用できます。 検索結果はツリーで強調表示されます。
 
-<a name="see-also"></a>参照
+<a name="additional-resources"></a>その他のリソース
 --------
 
-[マスタ プラン](master-plans.md)
+[マスター プラン](master-plans.md)
 
 
 

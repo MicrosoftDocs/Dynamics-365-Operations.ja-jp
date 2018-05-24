@@ -18,16 +18,16 @@ ms.author: josaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 3db07708df55c24108c66797885318486b2b1003
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 7708c8e091ef561c1a4205a1424a51d51d05002f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="new-or-updated-task-guides-november-2016"></a>新規または更新されたタスク ガイド (2016 年 11 月)
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 for Operations の Microsoft (2016 年 11 月 -- すべての言語) APQC 統合ライブラリにリリースされた新規または更新されたタスク ガイドを示します。 新規の「はじめに」ライブラリは、リリースされていません。
 
@@ -587,7 +587,7 @@ ms.lasthandoff: 04/13/2018
 |                       自動運賃調整の設定                       |     グローバル     |
 |              <strong>\</strong>*品目再配賦の未処理ピッキングの設定              |     グローバル     |
 
-<a name="see-also"></a>参照
+<a name="additional-resources"></a>その他のリソース
 --------
 
 [利用可能な新しいタスク ガイド (2016 年 2 月)](new-task-guides-available-february-2016.md)

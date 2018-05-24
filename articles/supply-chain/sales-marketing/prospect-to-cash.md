@@ -3,7 +3,7 @@ title: "見込顧客を現金化"
 description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations および Microsoft Dynamics 365 for Sales における見込顧客を現金化するソリューションについて概説します。"
 author: ChristianRytt
 manager: AnnBe
-ms.date: 04/03/2018
+ms.date: 04/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,22 +20,24 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: bc0fa8fe3e20ae4be3e572932f99ccc54e3b746b
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: f43b3943ce27c44cc0b4756d1d5f23e3be093273
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="prospect-to-cash"></a>見込顧客を現金化
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 この見込顧客を現金化するソリューションは、Dynamics 365 for Finance and Operations、および Dynamics 365 for Sales 間で直接同期を提供します。 データ統合機能で利用可能な見込み顧客を現金化するテンプレートは、Finance and Operations と Sales 間での勘定、連絡先、製品および販売見積、販売注文、および売上請求書のデータの流れを可能にします。 データは Finance and Operations と Sales との間を流れていますが、Sales のセールスおよびマーケティング活動を行い、Finance and Operations の在庫管理を使用して注文の履行を処理することができます。 
 
 見込顧客を現金化することの詳細については、短い YouTube ビデオを確認してください。
 
 > [!Video https://www.youtube.com/embed/AVV9x5x-XCg]
+
+[見込顧客の現金化への統合 (YouTube ビデオ)](https://youtu.be/AVV9x5x-XCg) 
 
 現在のバージョンでは、見込顧客を現金化するソリューションは次のタイプの直接同期を提供します:
 
@@ -76,7 +78,7 @@ ms.lasthandoff: 04/13/2018
   - **[KB4033093](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4033093&bugId=3824604&qc=bd7e15e1fb56066b3a82ce48b691cf1ffbc934a7473fa888545b2211a8d416c5)** - データ エンティティによる見込顧客を現金化する統合のサポートが必要です。
     
     > [!NOTE]
-    > 修正プログラムをインストール後、[**SalesPopulateProspectToCash**] フォームから次のバッチ ジョブをトリガーしなければなりません。 このフォームは一度しか必要ではないので非表示になります。 フォームにアクセスするためには、環境にログインし、ブラウザのアドレスに以下の URL を追加してください: &mi=action:SalesPopulateProspectToCash、たとえば、`https://ax123456.cloud.test.dynamics.com/?cmp=USMF&mi=action:SalesPopulateProspectToCash`。 このフォームを開くには、[OK] をクリックします。 これにより固有値を持つ新しい [**SalesLine**]、[**SalesQuotationLine**] および [**CustInvoiceTrans**] テーブルに [**LineCreationSequnceNumber**] フィールドが設定され、製品リストが更新されます。 これは見込顧客が現金化の統合を作業するために必要です。
+    > 修正プログラムをインストール後、**SalesPopulateProspectToCash** フォームから次のバッチ ジョブをトリガーしなければなりません。 このフォームは一度しか必要ではないので非表示になります。 フォームにアクセスするためには、環境にログインし、ブラウザのアドレスに以下の URL を追加してください:*&mi=action:SalesPopulateProspectToCash*、たとえば、`https://ax123456.cloud.test.dynamics.com/?cmp=USMF&mi=action:SalesPopulateProspectToCash`。 このフォームを開くには、[OK] をクリックします。 これにより固有値を持つ新しい **SalesLine**、**SalesQuotationLine** および **CustInvoiceTrans** テーブルに **LineCreationSequnceNumber** フィールドが設定され、製品リストが更新されます。 これは見込顧客が現金化の統合を作業するために必要です。
 
 
 ## <a name="system-requirements-for-sales"></a>Sales のシステム要件

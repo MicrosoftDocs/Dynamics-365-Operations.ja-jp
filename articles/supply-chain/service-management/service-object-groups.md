@@ -3,7 +3,7 @@ title: "サービス対象グループ"
 description: "対象グループは、レポートや統計用の対象に関するデータの並べ替えやフィルタ処理を行う場合に便利です。"
 author: YuyuScheller
 manager: AnnBe
-ms.date: 02/21/2018
+ms.date: 05/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,16 +19,16 @@ ms.author: YuyuScheller
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 221b9dae7e83e7f4a535ac60f2a2011533d7861c
-ms.openlocfilehash: fa503ac82286099a0eafc7034d169e165b538e2c
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 2ab3ed8a8f36f980473b17b5dfed8cb3d0054253
 ms.contentlocale: ja-jp
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="service-object-groups"></a>サービス対象グループ 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 対象グループは、レポートや統計用の対象に関するデータの並べ替えやフィルタ処理を行う場合に便利です。 たとえば、地理的な場所またはタイプ別に対象をグループ化できます。
 
@@ -48,6 +48,23 @@ ms.lasthandoff: 02/21/2018
 
 顧客から電話があり、空調機械 HIJ のサービス合意を設定するように依頼されました。 既にこの機械のレコードがありません。 ただし、空調装置という名前のオブジェクト グループを設定して、このグループは空調機械のすべてのオブジェクトに関連付されました。 したがって、他の空調機械すべてをすばやく検索し、これらのオブジェクトのテンプレート情報を使用してHIJ のサービス契約項目を作成できます。 この方法で対象グループを使用して、簡単に新しい対象を設定し、実行するサービス作業を決定できます。 
 
+## <a name="create-service-object-groups"></a>サービス対象グループの作成
+
+サービス対象を割り当てることができるグループを作成します。 サービス対象とは、サービスを実行する他の製品および在庫品目です。 サービス対象のグループ化することによって、同様のそして関連するサービス対象のレポートを作成できます。 たとえば、サービス対象グループは 2 種類のサービス対象から構成される場合があります: 1 番目のサービス対象はキット、2 番目のサービス対象はキットをインストールするサービスです。
+
+サービス対象グループを作成するには、次の手順に従います:
+
+1. **サービス管理 > 設定 > サービス対象 > サービス対象グループ**の順にクリックします。
+
+2. **新規**をクリックして、新しいサービス対象グループを作成します。
+
+3. サービス対象グループに一意の名前、および必要に応じて説明を入力します。
+
+**サービス対象**フォームを使用すると、グループにサービス対象を割り当てることができます。 
+
+## <a name="see-also"></a>参照
+
+[サービス対象の作成](create-service-objects.md)
 
 
 

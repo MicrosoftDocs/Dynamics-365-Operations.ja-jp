@@ -19,16 +19,16 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 3a5b9f98b371dbad9b6b0538e0d9975dc5ed701c
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 0b86a8d134ef553db6719f4cefb02e4acfc00ae5
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="align-workforce-skills-with-business-needs"></a>個人スキルと業務ニーズの調整
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 作業者、申請者、または連絡担当者がロールを効果的に遂行するために必要なスキルを追跡できます。 また、特定のジョブに必要なスキルを指定できます。
 
@@ -66,7 +66,7 @@ ms.lasthandoff: 04/13/2018
 
 
 
-<a name="see-also"></a>参照
+<a name="additional-resources"></a>その他のリソース
 --------
 
 [人事管理](index.md)

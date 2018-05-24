@@ -3,7 +3,7 @@ title: "財務パフォーマンス Power BI コンテンツ"
 description: "このトピックでは、財務パフォーマンス Power BI コンテンツについて説明します。"
 author: kweekley
 manager: AnnBe
-ms.date: 02/02/2018
+ms.date: 05/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 1fc3ab4f2a4b4604126ff72c570fc9d85e209f3c
+ms.sourcegitcommit: 88bbc54721f5da94dd811ef155e8d3bcf8c2b53c
+ms.openlocfilehash: d062937d8d1cb7d8e4f4cc055eb4514fa56b4eab
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/09/2018
 
 ---
 
@@ -30,12 +30,12 @@ ms.lasthandoff: 04/13/2018
 [!include [banner](../includes/banner.md)]
 
 > [!Note]
-> このコンテンツ パックは [Power BI コンテンツ パックを PowerBI.com に公開する](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features#power-bi-content-packs-published-to-powerbicom)で記載されたものとして非推奨になっています。
+> このコンテンツ パックは [AppSource で’利用可能な Power BI コンテンツ パック](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource)で記載されたものとして非推奨になっています。
 
 このトピックでは、**財務パフォーマンス** Microsoft Power BI コンテンツについて説明します。 含まれているダッシュボードおよびレポートについて説明し、コンテンツを作成するために使用したデータモデルとエンティティに関する情報を提供します。
 
 ## <a name="main-account-setup"></a>主勘定の設定
-組織は負債と収益の勘定をレポートに正の金額として表示させるため、主勘定の設定が重要です。 これらの主勘定を正の金額として表示するには、主勘定タイプを [**負債**] または [**収益**] に設定する必要があります。 これらの勘定タイプを使用すると、Power BI での報告は符号が逆になり、正として金額が表示されます。
+組織は負債と収益の勘定をレポートに正の金額として表示させるため、主勘定の設定が重要です。 これらの主勘定を正の金額として表示するには、主勘定タイプを **負債** または **収益** に設定する必要があります。 これらの勘定タイプを使用すると、Power BI での報告は符号が逆になり、正として金額が表示されます。
 
 ## <a name="dashboard-and-reports-that-are-included-in-the-power-bi-content"></a>Power BI コンテンツに含まれるダッシュボードおよびレポート
 ダッシュボードには、基になるレポートに基づいて集計されたデータ タイルが含まれます。 各タイルには、組織のすべての会社間での今年度における集計情報が含まれます。 次にタイルの例を示します。

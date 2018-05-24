@@ -20,16 +20,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 044a943eeba91f5dbebd4dcd70bc8152c4109037
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 1150a63fe7c9d51c5fa83f4b0295cfdca7b998dc
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>原価ロールアップ ポリシーおよび間接費の計算 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 原価会計では、コスト フローが組織内で提供される製品とサービスに関連する方法について洞察を得ることができます。 コストの透明性を確認するには、適切な配賦基準に基づいたコスト オブジェクト間のコスト配賦を達成することが重要です。 既定では、特定の状況で必要なため、主要コスト要素に対してコスト配賦が達成されますが、いくつかの考慮すべき影響があります。
 
@@ -226,7 +226,7 @@ HR サービスは、次の大きさの配分によって消費されます。
 > [!NOTE]
 > ポリシーが存在する場合、**コスト ロールアップ ポリシー** のルールに基づいて仕訳入力が作成されます。 表示される残高は、間接費計算の残高です。
 
-仕訳入力からアクセスする [コスト オブジェクトのコスト残高仕訳入力の詳細] ページでは、どのように残高が取得されるかが表示されます。
+仕訳入力からアクセスする**コスト オブジェクトのコスト残高仕訳入力の詳細**ページでは、どのように残高が取得されるかが表示されます。
 
 **例: コスト オブジェクト CC002 財務の仕訳帳入力**
 
@@ -297,7 +297,7 @@ HR サービスは、次の大きさの配分によって消費されます。
 
 
 
-## <a name="see-also"></a>参照
+## <a name="additional-resources"></a>その他のリソース
 -  [原価オブジェクト分析コード](cost-objects.md)
 -  [原価要素分析コード](cost-elements.md)
 -  [分析コード階層](dimension-hierarchy.md)

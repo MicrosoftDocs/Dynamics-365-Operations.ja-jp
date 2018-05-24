@@ -18,20 +18,20 @@ ms.author: josaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: c301f27504f7f1545608bb214a4f1b4d4cecc47f
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 237ff2935ab8e2dee90bd716179b45c5fca455c3
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="new-or-updated-task-guides-may-2016"></a>新規または更新されたタスク ガイド (2016 年 5 月)
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 この記事では、Microsoft Dynamics AX の Microsoft (2016 年 5 月 - すべての言語) APQC 統合ライブラリにリリースされた新規または更新されたタスク ガイドを示します。 新規の「はじめに」ライブラリは、リリースされていません。 
 
-<a name="task-guides-in-the-may-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>[]()Microsoft Dynamics AX 用の APQC 統合ライブラリに含まれるタスク ガイド (2016 年 5 月 - すべての言語)
+<a name="task-guides-in-the-may-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>Microsoft Dynamics AX 用の APQC 統合ライブラリに含まれるタスク ガイド (2016 年 5 月 - すべての言語)
 ------------------------------------------------------------------------------------------------
 
 APQC 統合ライブラリ (2016 年 5 月) には、2016 年 5 月に更新された Microsoft Dynamics AX および 2016 年 2 月にリリースされた Microsoft Dynamics AX のヘルプの使用を想定したタスク ガイドが含まれています。 APQC 統合ライブラリ (2016 年 2 月) でリリースされたローカライズ版のタスク ガイドは、このライブラリで使用可能です。 タスク ガイド ライブラリのヘルプ システムを接続する方法の詳細については、「[ヘルプの入門](help-overview.md)」を参照してください。 <strong>注記:</strong> ビジネス プロセス モデラー (BPM) 行のタイトルの横にあるアスタリスク (<strong>\</strong>*) は、そのビジネス プロセスのタスク ガイドが、Dynamics AX 2016 年 5 月更新のために作成されたことを示しており、Microsoft Dynamics AX の以前のバージョンでサポートされていません。
@@ -186,7 +186,7 @@ APQC 統合ライブラリ (2016 年 5 月) には、2016 年 5 月に更新さ�
 |                  品目の配送制約の設定                   |     グローバル     |
 |                <strong>\</strong>*倉庫作業ポリシーの設定                 |     グローバル     |
 
-<a name="see-also"></a>参照
+<a name="additional-resources"></a>その他のリソース
 --------
 
 [新しいタスク ガイド (2016 年 2 月)](new-task-guides-available-february-2016.md)

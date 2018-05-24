@@ -19,18 +19,18 @@ ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b36b290026f384109ccd710a9979892dd5268307
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 1473eeb2950296f5ae6250d7a53794af3d9cba81
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="sales-tax-calculation-methods-in-the-origin-field"></a>[発生元] フィールドでの売上税計算方法
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 この記事は、[売上税コードの値] ページの [発生元] フィールドのオプション、および売上税が選択された売上税コードのオプションに基づいて計算される方法を説明します。
 
@@ -125,7 +125,7 @@ SALESTAX: [発生元] = [正味金額の割合]。[売上税の前に計算] オ
 
 
 
-<a name="see-also"></a>参照
+<a name="additional-resources"></a>その他のリソース
 --------
 
 [[基準金額] および [計算方法] フィールドに基づいた、売上税の税率の決定](marginal-base-field.md)

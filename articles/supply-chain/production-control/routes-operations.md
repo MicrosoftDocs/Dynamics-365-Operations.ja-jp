@@ -20,16 +20,16 @@ ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7af00d0c66f70aa41cfab0ffccef39ba4c115803
-ms.openlocfilehash: 4026fa937ddf88f006cdcd13a8eda10c326ada62
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 95e7f5179ac88c0cd6b2336a914c2c527d37d57f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="routes-and-operations"></a>工順と工程
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 このトピックでは、工順と工程に関する情報を提供します。 工順は、製品または製品バリアントを生産するためのプロセスを定義します。 ここでは、生産プロセス内の各ステップ (工程) とこれらのステップが実行される必要がある手順について説明します。 ステップごとに、工程は必要な運営リソース、必要な段取り時間と実行時間、およびコストが計算される必要がある方法も定義します。
 
@@ -230,7 +230,7 @@ Finance and Operations がリリース済製品に最も関連する関連工程
 -   **リソース バッチ** – このオプションは基本的には **バッチ** オプションと同じです。 ただし、計算には運営リソースの **バッチ能力** フィールドが含まれます。 したがって、時間はリソース依存です。
 
 
-<a name="see-also"></a>参照
+<a name="additional-resources"></a>その他のリソース
 --------
 
 [部品表およびフォーミュラ](bill-of-material-bom.md)

@@ -20,16 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d8eb8a8c4e98dde0b1e8583a8b7f6f603bc736c7
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: c530284f83f13bce6941bf889aaddbb1a1e82dae
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="master-plans"></a>マスター プラン
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 会社の日常業務のサポート、監視を要する多様な計画戦略のシミュレーション、社内の業績や顧客満足に関するポリシーの実装など、さまざまな目的のマスター プランを使用します。 
 
@@ -47,7 +47,7 @@ ms.lasthandoff: 11/03/2017
 
 
 
-<a name="see-also"></a>参照
+<a name="additional-resources"></a>その他のリソース
 --------
 
 [補充設定](coverage-settings.md)

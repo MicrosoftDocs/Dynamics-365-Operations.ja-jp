@@ -18,16 +18,16 @@ ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: aac6439bb54b3b9cab066b06c01763e880efef8e
-ms.openlocfilehash: 2d0fb4de84838f1778625d977bdd2ceeaac61f8c
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: af87f3f7c3fab9b6baecefbedcd855a764f31cbe
 ms.contentlocale: ja-jp
-ms.lasthandoff: 12/18/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="cost-accounting-analysis-power-bi-content"></a>原価会計分析 Power BI コンテンツ
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 このトピックでは、**原価会計分析** Microsoft Power BI コンテンツの内容について説明します。 Power BI レポートにアクセスする方法を説明し、コンテンツを作成するために使用したデータ モデルおよびエンティティについての情報を提供します。
 
@@ -44,7 +44,9 @@ ms.lasthandoff: 12/18/2017
 原価会計のアクセス レベルのセキュリティを定義して、Power BI で行レベルのセキュリティと組み合わせることにより、すべての原価オブジェクトの所有者に**原価会計分析** Power BI コンテンツにアクセス権を付与できます。 表示されるすべてのデータは、原価会計で操作するアクセス レベルに基づいてフィルター処理されます。 アクセス レベルのセキュリティおよび行レベルのセキュリティの詳細については、「[Power BI の原価会計コンテンツ向けセキュリティの設定](setup-security-cost-accounting-content-pack.md)」を参照してください。
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI コンテンツへのアクセス
-**原価会計分析** Power BI コンテンツは、Microsoft Dynamics Lifecycle Services (LCS) の共有アセット ライブラリにあります。 コンテンツのダウンロード方法および組織で実装する方法の詳細については、「[Microsoft およびパートナーからの LCS での Power BI コンテンツ](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/)」を参照してください。 Power BI コンテンツの実装方法を示すデモを視聴するには、「[Microsoft の Power BI コンテンツおよび Dynamics Lifecycle Services のパートナー](https://mix.office.com/watch/9puyb1b2xs1w)」の Office Mix を参照してください。
+**原価会計分析** Power BI コンテンツは、Microsoft Dynamics Lifecycle Services (LCS) の共有アセット ライブラリにあります。 コンテンツのダウンロード方法および組織で実装する方法の詳細については、「[Microsoft およびパートナーからの LCS での Power BI コンテンツ](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/)」を参照してください。 
+
+<!--To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.-->
 
 ご使用のバージョンの Microsoft Dynamics 365 に適用する **原価会計分析** コンテンツをダウンロードしてください。
 
