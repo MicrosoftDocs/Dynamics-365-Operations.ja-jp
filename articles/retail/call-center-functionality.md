@@ -3,7 +3,7 @@ title: "コール センターの機能"
 description: "このトピックは、Microsoft Dynamics 365 for Retail でのコール センターの販売機能の概要を示します。"
 author: josaw1
 manager: AnnBe
-ms.date: 11/14/2017
+ms.date: 04/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -20,35 +20,44 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: dd35e895cdfe402b9d22e710c7b0166eadf412ff
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: e85b65e116b32adca09e46252d7d3bbe5101e1cf
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
-# <a name="call-center-functionality"></a><span data-ttu-id="d7fd1-103">コール センターの機能</span><span class="sxs-lookup"><span data-stu-id="d7fd1-103">Call center functionality</span></span>
+# <a name="call-center"></a><span data-ttu-id="a7ca1-103">コール センター</span><span class="sxs-lookup"><span data-stu-id="a7ca1-103">Call center</span></span> 
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
-<span data-ttu-id="d7fd1-104">この記事は、Microsoft Dynamics 365 for Retail でのコール センターの販売機能の概要を示します。</span><span class="sxs-lookup"><span data-stu-id="d7fd1-104">This article provides an overview of the call center sales functionality in Microsoft Dynamics 365 for Retail.</span></span>
+<span data-ttu-id="a7ca1-104">Dynamics 365 for Retail では、コール センターはアプリケーションで定義できる Retail チャンネルのタイプです。</span><span class="sxs-lookup"><span data-stu-id="a7ca1-104">In Dynamics 365 for Retail, a call center is a type of Retail channel that can be defined in the application.</span></span> <span data-ttu-id="a7ca1-105">コール センター エンティティの特定チャンネルの定義は、システムが、コール センター チャンネルのユーザーによって作成される販売注文に、特定のデータ既定値および処理既定値を関連付けることができるようにします。</span><span class="sxs-lookup"><span data-stu-id="a7ca1-105">Defining a specific channel for your call center entities allows the system to tie specific data defaults and order processing defaults to sales orders created by a user of the call center channel.</span></span>
 
-<span data-ttu-id="d7fd1-105">Dynamics 365 for Retail は、小売チャンネルのタイプとしてコール センターもサポートします。</span><span class="sxs-lookup"><span data-stu-id="d7fd1-105">Dynamics 365 for Retail supports call centers as a type of retail channel.</span></span> <span data-ttu-id="d7fd1-106">コール センターでは、作業者が電話で顧客の注文をとり、販売注文を作成します。</span><span class="sxs-lookup"><span data-stu-id="d7fd1-106">In a call center, workers take orders from customers over the phone and create sales orders.</span></span> <span data-ttu-id="d7fd1-107">コール センター機能には、電話で注文を受け付けて、注文処理プロセス全体の顧客サービスの処理を容易にするための機能が含まれています。</span><span class="sxs-lookup"><span data-stu-id="d7fd1-107">Call center functionality includes features that are designed to make it easier to take phone orders and handle customer service throughout the order fulfillment process.</span></span> <span data-ttu-id="d7fd1-108">たとえば、コール センターの作業者は、販売注文に支払い情報を直接入力でき、注文を送信する前に請求金額と支払の詳細な集計を表示できます。</span><span class="sxs-lookup"><span data-stu-id="d7fd1-108">For example, call center workers can enter payment information directly into the sales order, and can view a detailed summary of charges and payments before they submit the order.</span></span> <span data-ttu-id="d7fd1-109">作業者は価格決定を制御するための選択肢を持っており、[販売注文] ページの顧客、製品、および価格に関するさまざまなデータにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="d7fd1-109">Workers also have options for controlling pricing, and can access various data about customers, products, and prices from the **Sales order** page.</span></span> <span data-ttu-id="d7fd1-110">また、コール センターには、顧客履歴と注文の状態を追跡するために強化された機能もあります。</span><span class="sxs-lookup"><span data-stu-id="d7fd1-110">Additionally, call centers have enhanced functionality for tracking customer history and order status.</span></span> <span data-ttu-id="d7fd1-111">各コール センターは、独自のユーザー、支払方法、価格グループ、財務分析コード、配達のモードを使用できます。</span><span class="sxs-lookup"><span data-stu-id="d7fd1-111">Each call center can have its own users, payment methods, price groups, financial dimensions, and modes of delivery.</span></span> <span data-ttu-id="d7fd1-112">コール センターを作成するとき、これらのオプションをコンフィギュレーションできます。</span><span class="sxs-lookup"><span data-stu-id="d7fd1-112">You can configure these options when you create the call center.</span></span> <span data-ttu-id="d7fd1-113">また、[コール センター] ページを使用して、コール センター固有の次の機能グループを有効または無効にできます。</span><span class="sxs-lookup"><span data-stu-id="d7fd1-113">Additionally, you can use the **Call center** page to enable or disable the following groups of features that are unique to call centers:</span></span>
+<span data-ttu-id="a7ca1-106">コール センターの機能には、詳細な小売価格とプロモーション、カタログ、ギフト カード、ロイヤルティ プログラム、およびクーポンが含まれます。</span><span class="sxs-lookup"><span data-stu-id="a7ca1-106">Call center features include advanced retail price and promotions, catalogs, gift cards, loyalty programs, and coupons.</span></span> <span data-ttu-id="a7ca1-107">コール センター注文は、クロスチャンネル注文処理シナリオをサポートするため、販売時点管理 (POS) アプリケーションによっても利用されます。</span><span class="sxs-lookup"><span data-stu-id="a7ca1-107">Call center orders are also leveraged by the point of sale (POS) application to support cross-channel order fulfillment scenarios.</span></span>
 
--   <span data-ttu-id="d7fd1-114">[注文完了] – このグループには [販売注文] ページの支払いおよび注文完了に関連する機能が含まれます。</span><span class="sxs-lookup"><span data-stu-id="d7fd1-114">**Order completion** – This group includes features that are related to payments and order completion on the **Sales order** page.</span></span>
--   <span data-ttu-id="d7fd1-115">[主導販売] – このグループにはソース コード、スクリプト、カタログ要求に関連する機能が含まれます。 </span><span class="sxs-lookup"><span data-stu-id="d7fd1-115">**Directed selling** – This group includes features that are related to source codes, scripts, and catalog requests.</span></span>
+<span data-ttu-id="a7ca1-108">コール センター モジュールが Retail 以外の他の業界により使用される間に、Dynamics 365 for Retail コール センター アプリケーションの現在のリリースが企業間 (B2B) の注文処理シナリオ、または大量の販売明細行がある注文シナリオでの使用に対して最適化されていない点に注意が必要です。</span><span class="sxs-lookup"><span data-stu-id="a7ca1-108">It's important to note that while the call center module can be utilized by other industries outside of Retail, the current release of the Dynamics 365 for Retail call center application hasn't been optimized for use in business-to-business (B2B) order processing scenarios, or scenarios where orders have a large amount of sales lines.</span></span> <span data-ttu-id="a7ca1-109">標準的な直接消費者のトランザクション処理以外の注文処理に対してコール センター機能を利用するユーザーが、コール センター機能の有効性が機能性およびパフォーマンスのニーズを満たしているかをテストおよび検証するため、十分の時間をかけるようお勧めします。</span><span class="sxs-lookup"><span data-stu-id="a7ca1-109">It's recommended that users who want to utilize the call center features for order processing outside of typical direct-to-consumer transaction processing, take adequate time to test and validate that enabling call center functionality will meet functional and performance needs.</span></span>
 
-<span data-ttu-id="d7fd1-116">コール センターの設定でこれらの機能を有効にすると、コール センターに関連付けられたユーザーは [販売注文] ページを使用できます。</span><span class="sxs-lookup"><span data-stu-id="d7fd1-116">After you enable these features in the call center settings, they are available on the **Sales order** page to users who are associated with the call center.</span></span> <span data-ttu-id="d7fd1-117">これらの機能の多くは、使用する前に追加の設定が必要です。</span><span class="sxs-lookup"><span data-stu-id="d7fd1-117">Most of these features require additional setup before they can be used.</span></span> <span data-ttu-id="d7fd1-118">ユーザーがコール センターの注文を作成する前に、コール センターのユーザーとしてそのユーザーをコール センターに追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d7fd1-118">Before users can create call center orders, you must add those users to the call center as call center users.</span></span> <span data-ttu-id="d7fd1-119">この手順は、コール センターのチャンネル固有のコンフィギュレーションと機能を有効にします。</span><span class="sxs-lookup"><span data-stu-id="d7fd1-119">This step enables the call center channel-specific configuration and functionality.</span></span> <span data-ttu-id="d7fd1-120">次に使用できる機能の例を示します :</span><span class="sxs-lookup"><span data-stu-id="d7fd1-120">Here are some examples of the functionality that becomes available:</span></span>
+<span data-ttu-id="a7ca1-110">注文作成のサポートに加えて、コール センター モジュールは、ユーザーが顧客勘定を特定し、関連するすべての顧客の注文データおよび属性を確認しやすくするための、わかりやすい顧客サービス アプリケーションも提供します。</span><span class="sxs-lookup"><span data-stu-id="a7ca1-110">In addition to supporting order creation, the call center module also provides a user-friendly customer service application that makes it easier for users to locate customer accounts and review all of the related customer order data and attributes.</span></span> <span data-ttu-id="a7ca1-111">顧客サービス画面は、ユーザーが、顧客から来る最も一般的な注文関連の質問に回答するため、関連する注文関連データへのすばやいアクセスを可能にするよう設計されています。</span><span class="sxs-lookup"><span data-stu-id="a7ca1-111">The customer service screen is designed to enable a user to quickly access order related data that will allow them to answer the most common order-related questions received from customers.</span></span>
 
--   <span data-ttu-id="d7fd1-121">ガイド販売は、販売員が注文を取る時に手助けになるテレセールスのスクリプトおよび製品画像のコンフィギュレーション オプションを提供します。</span><span class="sxs-lookup"><span data-stu-id="d7fd1-121">Guided selling provides configuration options for tele-sales scripts and product images to help and guide sales clerks while they take orders.</span></span>
--   <span data-ttu-id="d7fd1-122">販売員が少なくとも 1 つの支払方法をキャプチャするまで注文は完了されません。</span><span class="sxs-lookup"><span data-stu-id="d7fd1-122">Orders can't be completed until sales clerks have captured at least one payment method.</span></span>
--   <span data-ttu-id="d7fd1-123">アップセルおよびクロスセル ルールは、顧客に特定の製品を販売促進するよう販売員を促すようにコンフィギュレーションできます。</span><span class="sxs-lookup"><span data-stu-id="d7fd1-123">Upsell and cross-sell rules can be configured to prompt sales clerks to promote specific products to the customer.</span></span>
--   <span data-ttu-id="d7fd1-124">販売員は顧客が注文するカタログのソース コードを取得できます。</span><span class="sxs-lookup"><span data-stu-id="d7fd1-124">Sales clerks can capture the source code for the catalog that a customer is ordering from.</span></span>
--   <span data-ttu-id="d7fd1-125">販売員は、注文に小売業者がクーポンを追加できます。</span><span class="sxs-lookup"><span data-stu-id="d7fd1-125">Sales clerks can add a retailer's coupons to the order.</span></span>
--   <span data-ttu-id="d7fd1-126">販売員は連続プログラムを販売できます。</span><span class="sxs-lookup"><span data-stu-id="d7fd1-126">Sales clerks can sell continuity programs.</span></span>
--   <span data-ttu-id="d7fd1-127">注文が処理される前に追加調査が必要であることを示す場合は、手動または自動で注文を保留にすることができます。</span><span class="sxs-lookup"><span data-stu-id="d7fd1-127">Orders can be put on hold manually or automatically, to indicate that additional investigation is required before the order can be processed.</span></span>
+<span data-ttu-id="a7ca1-112">このページでは、設定、コンフィギュレーション、および Dynamics 365 for Retail のコール センター機能の機能使用に関連する該当ドキュメントへのリンクが提供されます。</span><span class="sxs-lookup"><span data-stu-id="a7ca1-112">This page provides links to relevant documentation related to the setup, configuration, and functional use of the call center features in Dynamics 365 for Retail.</span></span>
 
+## <a name="configure-the-call-center"></a><span data-ttu-id="a7ca1-113">コール センターのコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="a7ca1-113">Configure the call center</span></span>
+[<span data-ttu-id="a7ca1-114">注文処理オプションの設定</span><span class="sxs-lookup"><span data-stu-id="a7ca1-114">Set up order processing options</span></span>](set-up-order-processing-options.md)
 
+## <a name="configure-order-processing"></a><span data-ttu-id="a7ca1-115">注文処理のコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="a7ca1-115">Configure order processing</span></span>
+<span data-ttu-id="a7ca1-116">[詐欺警告の設定](set-up-fraud-alerts.md)
+[手動の注文保留](work-with-order-holds.md)</span><span class="sxs-lookup"><span data-stu-id="a7ca1-116">[Set up fraud alerts](set-up-fraud-alerts.md)
+[Manual Order Holds](work-with-order-holds.md)</span></span>
 
+## <a name="configure-payment-processing"></a><span data-ttu-id="a7ca1-117">支払処理のコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="a7ca1-117">Configure payment processing</span></span>
+[<span data-ttu-id="a7ca1-118">コール センターでの支払方法</span><span class="sxs-lookup"><span data-stu-id="a7ca1-118">Payment methods in a call center</span></span>](work-with-payments.md)
+
+## <a name="configure-direct-marketing"></a><span data-ttu-id="a7ca1-119">直接マーケティングのコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="a7ca1-119">Configure direct marketing</span></span>
+[<span data-ttu-id="a7ca1-120">コール センターのカタログ</span><span class="sxs-lookup"><span data-stu-id="a7ca1-120">Call center catalogs</span></span>](call-center-catalogs.md)
+
+[<span data-ttu-id="a7ca1-121">最新/頻度/金額 (RFM) 分析の設定</span><span class="sxs-lookup"><span data-stu-id="a7ca1-121">Set up RFM analysis</span></span>](set-up-rfm-analysis.md)
+
+## <a name="configure-continuity-programs"></a><span data-ttu-id="a7ca1-122">連続プログラムのコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="a7ca1-122">Configure continuity programs</span></span>
+[<span data-ttu-id="a7ca1-123">コール センターの連続プログラムの設定</span><span class="sxs-lookup"><span data-stu-id="a7ca1-123">Set up a continuity program for a call center</span></span>](set-up-continuity-program.md)
 
 
