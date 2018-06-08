@@ -3,7 +3,7 @@ title: "警告のバッチの実行"
 description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations の警告のバッチ処理に関する情報を提供します。"
 author: tjvass
 manager: AnnBe
-ms.date: 03/20/2018
+ms.date: 06/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -25,8 +25,6 @@ ms.lasthandoff: 03/23/2018
 
 # <a name="batch-processing-for-alerts"></a>警告のためのバッチ処理
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/pre-release.md)]
 
 警告は、Microsoft Dynamics 365 for Finance and Operations のバッチ処理機能により処理されます。 警告を通知するには、事前にバッチ処理を設定しておく必要があります。
 

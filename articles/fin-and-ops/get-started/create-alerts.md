@@ -3,7 +3,7 @@ title: "警告の作成"
 description: "このトピックでは、警告に関する情報を提供し、警告ルールを作成して到着日や発生する特定の変更などのイベントについて通知する方法について説明します。"
 author: tjvass
 manager: AnnBe
-ms.date: 03/20/2018
+ms.date: 06/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -27,8 +27,6 @@ ms.lasthandoff: 03/23/2018
 # <a name="create-alerts"></a>警告の作成
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/pre-release.md)]
 
 ## <a name="getting-started"></a>はじめに
 警告ルールを設定するには、その前に、いつどのような状況の場合に警告を受信するかを決定します。 通知が必要なイベントがわかっているときは、Microsoft Dynamics 365 for Finance and Operations で、そのイベントを表示するデータのページを見つけます。 イベントは、到来した日付か、または発生した特定の変更のいずれかです。 したがって、日付が指定されたページ、あるいは、変更されるフィールドまたは新しく作成されたレコードを表示するページを見つける必要があります。 この情報が用意されたら、警告ルールを作成できます。
