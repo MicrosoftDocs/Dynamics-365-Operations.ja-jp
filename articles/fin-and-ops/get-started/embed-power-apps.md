@@ -3,7 +3,7 @@ title: "PowerApps の埋め込み"
 description: "このトピックでは、PowerApps を Finance and Operations クライアントに組み込んで製品の機能を拡張する方法について説明します。"
 author: jasongre
 manager: AnnBe
-ms.date: 04/12/2018
+ms.date: 06/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -16,18 +16,16 @@ ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
 ms.translationtype: HT
-ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
-ms.openlocfilehash: 58b6b934c2cf65ff1f9362ce948474e374892999
+ms.sourcegitcommit: aa5eab6dbf2cc604239cac199817ead6bef6f3de
+ms.openlocfilehash: ad9fa08d22b949a61dabbb2abf5d87a612a1db7c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/08/2018
 
 ---
 
 # <a name="embed-powerapps"></a><span data-ttu-id="be5c4-103">PowerApps の埋め込み</span><span class="sxs-lookup"><span data-stu-id="be5c4-103">Embed PowerApps</span></span>
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/pre-release.md)]
 
 <span data-ttu-id="be5c4-104">プラットフォーム update 14 で、Microsoft Dynamics 365 for Finance and Operations は Microsoft PowerApps との統合をサポートし、コードの記述なしでモバイル デバイス、タブレット、および Web のカスタム ビジネス アプリを構築するため、開発者および技術者以外のユーザー向けのサービスをサポートします。</span><span class="sxs-lookup"><span data-stu-id="be5c4-104">In Platform update 14, Microsoft Dynamics 365 for Finance and Operations supports integration with Microsoft PowerApps, a service for developers and non-technical users to build custom business apps for mobile devices, tablets, and the web without writing code.</span></span> <span data-ttu-id="be5c4-105">ユーザー、組織、またはより幅広いエコシステムによって開発された PowerApps を、Finance and Operations のクライアントに組み込み、製品の機能を拡張することができます。</span><span class="sxs-lookup"><span data-stu-id="be5c4-105">PowerApps developed by you, your organization, or the broader ecosystem can then be embedded in the Finance and Operations client to augment the product's functionality.</span></span> <span data-ttu-id="be5c4-106">たとえば、PowerApp を構築して、別のシステムから取得した情報で Finance and Operations を補足することができます。</span><span class="sxs-lookup"><span data-stu-id="be5c4-106">For example, you might build a PowerApp to supplement Finance and Operations with information retrieved from another system.</span></span> 
 
