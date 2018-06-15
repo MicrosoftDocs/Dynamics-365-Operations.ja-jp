@@ -1,9 +1,9 @@
 ---
 title: Microsoft Dynamics 365 for Talent
 description: "Talentは、多くの日常的な記録タスクを合理化し、組織の多数のスタッフ配置に関連するプロセスを自動化します。 これらのプロセスには、従業員の雇用維持、給付金管理、トレーニング、勤務評価、変更管理が含まれます。"
-author: rschloma
+author: josaw
 manager: AnnBe
-ms.date: 09/19/2017
+ms.date: 06/04/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -18,10 +18,10 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: db8b2e87ad020dac16ec74f2fea62e445c38e116
+ms.sourcegitcommit: bde68c9167e18cae6be4988865123d20274753c0
+ms.openlocfilehash: 9bc09a822f78b9792c2afdb0d297809edea7551a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 06/06/2018
 
 ---
 
@@ -42,6 +42,9 @@ Talentを使用して、次のタスクを実行できます。
 + パフォーマンスの確認および作業者の目標の実装。
 + 日程表、セッション、コース編成を含むトレーニング コースの設定、提供、および分析。
 
+ビデオ [How to get started with Dynamics 365 for Talent](https://www.youtube.com/watch?v=6rg2ByadbN0) を視聴し、Dynamics 365 for Talent について調べる
+
+
 > [!NOTE] 
 > Dynamics 365 for Talent は、Dynamics 365 for Finance and Operations の人事管理にも密接に関係しています。 同じ機能がどちらの製品にも存在することがあります。 このため、主に人事管理に関連するトピックの場合、製品名は Dynamics 365 for Finance and Operations になります。主に Talent に関連するトピックの場合、製品名は Dynamics 365 for Talent になります。 1 つの製品で記述されているトピックは、関連する製品の同じ機能にも当てはまる可能性があります。
 
@@ -55,6 +58,8 @@ Talentで作業をするときは、部門、職務、職位などの要素を�
 -   [法人間の HR パラメーターの設定](set-up-hr-parameters-across-legal-entities.md) 
 -   [個人のアクションのよく寄せられる質問](personnel-actions-faq.md)
 -   [休暇の概要](leave-absence-overview.md)
+-   [How to use Dynamics 365 for Talent: Leave and Absence (ビデオ)](https://www.youtube.com/watch?v=1q1UhKmO4tw)
+-   [How to manage personnel in Dynamics 365 for Talent (ビデオ)](https://www.youtube.com/watch?v=h1T5IjKKAuA)
 
 ## <a name="staffing-your-organization"></a>組織のスタッフ配置
 
@@ -71,6 +76,7 @@ Dynamics 365 for Talent に含まれている Attract アプリは、組織が�
 -   [報酬の処理](process-compensation.md)
 -   [固定報酬プランの作成](create-fixed-compensation-plans.md)
 -   [変動報酬プランの作成](create-variable-compensation-plans.md)
+-   [How to manage compensation in Dynamics 365 for Talent (ビデオ)](https://www.youtube.com/watch?v=lEw5oKopHDk)
 
 ## <a name="develop-and-train-employees"></a>従業員の開発とトレーニング
 
@@ -79,6 +85,7 @@ Dynamics 365 for Talent に含まれている Attract アプリは、組織が�
 -   [パフォーマンス管理](performance-management-overview.md)
 -   [要員のスキルとビジネス ニーズの調整](skills.md)
 -   [コースを通じたトレーニングの管理](courses.md)
+-   [How to manage employee development in Dynamics 365 for Talent (ビデオ)](https://www.youtube.com/watch?v=xB8SU7fqBOQ)
 
 ## <a name="create-and-maintain-benefits"></a>福利厚生の作成と維持
 
@@ -87,6 +94,7 @@ Dynamics 365 for Talent に含まれている Attract アプリは、組織が�
 -   [福利厚生プログラムの管理](manage-benefit-program.md)
 -   [給付金の適格性ポリシー](benefit-eligibility-policies.md)
 -   [作業者への貸与品目の管理](loan-items.md)
+-   [How to manage employee benefits in Dynamics 365 for Talent (ビデオ)](https://www.youtube.com/watch?v=nUWkeJTad1o)
 
 ## <a name="maintain-workplace-safety-and-compliance"></a>職場の安全性とコンプライアンスの管理
 

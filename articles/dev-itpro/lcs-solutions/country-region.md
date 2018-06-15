@@ -18,10 +18,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: c925b2e996f51b8c5d5332217643c3155cfc03c0
+ms.sourcegitcommit: 4c61cb81368251540e0015e155b1cc932bf7b948
+ms.openlocfilehash: 6360bbc8e5abd94cfd1c2853bc384598047eec39
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/16/2018
 
 ---
 
@@ -104,24 +104,11 @@ Microsoft Dynamics 365 for Finance and Operations には、[製品可用性ガ�
 -   [NF E XML ドキュメントと DANFE の設定、インポートおよび確認](../../financials/localizations/latam-bra-set-up-import-nfe.md)
 -   [税の属性](../../financials/localizations/latam-bra-tax-attributes.md)
 -   [税支払](../../financials/localizations/latam-bra-tax-payments.md)
--   [税金](../../financials/localizations/latam-bra-calculate-taxes.md)
+-   [税申告](../../financials/localizations/latam-bra-calculate-taxes.md)
 
-### <a name="china"></a>中国
--   [部品表の比較](../../financials/localizations/apac-chn-bom-comparison.md)
--   [中国の伝票](../../financials/localizations/apac-chn-vouchers.md)
--   [税統合のコンフィギュレーション](../../financials/localizations/apac-chn-tax-integration.md)
-    -   [VAT 顧客請求書のよく寄せられる質問](../../financials/localizations/apac-chn-tax-integration-vat-customer-invoices.md)
-    -   [固定資産の減価償却方法](../../financials/localizations/apac-chn-depreciation-methods-fixed-assets.md)
--   [中国金税データ エンティティのインポート](../../financials/localizations/apac-chn-import-golden-tax-data-entity.md)
--   [月次平均原価モデル](../../financials/localizations/apac-chn-monthly-average-cost-model.md)
--   [サイト別在庫主勘定の転記](../../financials/localizations/apac-chn-post-inventory-main-accounts-by-site.md)
--   [勘定科目の借方金額と貸方金額の表示](../../financials/localizations/apac-chn-negative-debits-credits.md)
-
+### <a name="chinafinancialslocalizationschinamd"></a>[中国](../../financials/localizations/china.md)
 ### <a name="the-czech-republicfinancialslocalizationsczech-republicmd"></a>[チェコ共和国](../../financials/localizations/czech-republic.md)
-
-### <a name="estonia"></a>エストニア
--   [エストニアの VAT 明細書の詳細](../../financials/localizations/emea-est-vat-statement-details.md)
--   [固定資産の処分](../../financials/localizations/emea-credit-note-reverse-fixed-asset-sale.md)
+### <a name="estoniafinancialslocalizationsestoniamd"></a>[エストニア](../../financials/localizations/estonia.md)
 
 ### <a name="europe"></a>ヨーロッパ
 - [前貸し保有者](../../financials/localizations/emea-advance-holders.md)
