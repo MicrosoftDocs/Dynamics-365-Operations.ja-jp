@@ -1,0 +1,42 @@
+---
+title: "フォーム パターン アドイン"
+description: "Visual Studio のツールには、パターンの使用をサポートするいくつかのアドインが含まれています。"
+author: jasongre
+manager: AnnBe
+ms.date: 08/17/2017
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-platform
+ms.technology: 
+audience: Developer
+ms.reviewer: robinr
+ms.search.scope: Operations
+ms.custom: 28891
+ms.search.region: Global
+ms.author: jasongre
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+ms.translationtype: HT
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 9e26d06b80b91d31ed2bff241423bf1f5ac7b169
+ms.contentlocale: ja-jp
+ms.lasthandoff: 05/08/2018
+
+---
+
+# <a name="form-pattern-add-ins"></a><span data-ttu-id="32cc0-103">フォーム パターン アドイン</span><span class="sxs-lookup"><span data-stu-id="32cc0-103">Form pattern add-ins</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="32cc0-104">Visual Studio のツールには、パターンの使用をサポートするいくつかのアドインが含まれています。</span><span class="sxs-lookup"><span data-stu-id="32cc0-104">The tools for Visual Studio include a number of add-ins that support pattern usage.</span></span> 
+
+## <a name="form-statistics-add-in"></a><span data-ttu-id="32cc0-105">フォーム統計アドイン</span><span class="sxs-lookup"><span data-stu-id="32cc0-105">Form statistics add-in</span></span>
+<span data-ttu-id="32cc0-106">**フォーム統計情報** アドインは、フォームのパターン使用状況の概要を提供します。</span><span class="sxs-lookup"><span data-stu-id="32cc0-106">The **Form statistics** add-in provides a summary of the pattern usage for forms.</span></span> <span data-ttu-id="32cc0-107">**Dynamics 365** メニューから **フォームの統計情報** アドインにアクセスすると、すべてのフォームの統計情報を表示します。</span><span class="sxs-lookup"><span data-stu-id="32cc0-107">When you access the **Form statistics** add-in from the **Dynamics 365** menu, it displays statistics for all forms.</span></span> <span data-ttu-id="32cc0-108">フォーム デザイナーで開いているフォームのショートカット メニューからアドインにアクセスしたとき、アドインにそのフォームのみの統計情報が表示されます。</span><span class="sxs-lookup"><span data-stu-id="32cc0-108">When you access the add-in from the shortcut menu for a form that is open in the form designer, it displays statistics for that form only.</span></span> 
+
+![フォーム統計レポート](media/form-statistics.png) 
+
+## <a name="forms-pattern-report"></a><span data-ttu-id="32cc0-110">フォームのパターン レポート</span><span class="sxs-lookup"><span data-stu-id="32cc0-110">Forms Pattern report</span></span>
+<span data-ttu-id="32cc0-111">**フォーム パターン**レポートは、フォームがトップレベル フォーム パターンを使用するかどうか、ユーザー定義のフォームかどうか、フォーム パターンを指定しないかどうかなど、すべてのフォームについてのパターン情報を示します。</span><span class="sxs-lookup"><span data-stu-id="32cc0-111">The **Form Patterns** report provides pattern information about every form, including whether the form uses a top-level form pattern, is a custom form, or is not specifying a form pattern.</span></span> <span data-ttu-id="32cc0-112">**フォーム パターン**レポートを生成するには、Microsoft Visual Studio を起動し、**DYNAMICS 365** メニューをクリックし、**アドイン** を展開してから **フォーム パターン レポートを実行** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="32cc0-112">To generate the **Form Patterns** report, start Microsoft Visual Studio, click the **DYNAMICS 365** menu, expand **Add-ins**, and then click **Run the form patterns report**.</span></span> <span data-ttu-id="32cc0-113">このプロセスは数秒かかります。</span><span class="sxs-lookup"><span data-stu-id="32cc0-113">The process will take several seconds.</span></span> <span data-ttu-id="32cc0-114">レポートが生成されると、ダイアログ ボックスにレポートの場所を提供します。</span><span class="sxs-lookup"><span data-stu-id="32cc0-114">After the report has been generated, a dialog box will provide the location of the report.</span></span> <span data-ttu-id="32cc0-115">指定された場所を参照し、Microsoft Excel でファイルを開きます。</span><span class="sxs-lookup"><span data-stu-id="32cc0-115">Browse to the specified location, and open the file in Microsoft Excel.</span></span> <span data-ttu-id="32cc0-116">興味のあるモデルまでレポートをフィルター処理することができます。</span><span class="sxs-lookup"><span data-stu-id="32cc0-116">You can then filter the report down to the models that interest you.</span></span>
+
+<span data-ttu-id="32cc0-117">Visual Studio アドインの詳細については、[Visual Studio 用のツールおよびアドイン](../dev-tools/developer-tools-add-ins.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="32cc0-117">For more information about Visual Studio add-ins, see [Tools add-ins for Visual Studio](../dev-tools/developer-tools-add-ins.md).</span></span>
+
