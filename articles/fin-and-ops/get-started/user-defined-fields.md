@@ -17,10 +17,10 @@ ms.author: jasongre
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: Platform update 13
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 6f0257d6a16d3d53953e1fbbf023109425fa6844
+ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
+ms.openlocfilehash: f2aa55ae4258f5ef81456b92278415297c194d66
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/23/2018
 
 ---
 
@@ -34,10 +34,7 @@ Microsoft Dynamics 365 for Finance and Operations が、広範囲なビジネス
 
 カスタム フィールドを追加する機能は、プラットフォームのアップデート 13 以降で利用できます。
 
-このビデオでは、ページにカスタム フィールドを追加するのがどれほど簡単か示します。
-
-
-> [!Video https://www.youtube.com/embed/gWSGZI9Vtnc]
+このビデオでは、ページにカスタム フィールドを追加するのがどれほど簡単か示します: [Dynamics 365 for Finance and Operations でカスタム フィールドを追加する](https://www.youtube.com/watch?v=gWSGZI9Vtnc)。
 
 ## <a name="creating-custom-fields"></a>カスタム フィールドを作成
 アプリケーションで追跡するには追加情報を識別した後、適切なテーブルでカスタム フィールドを作成し、ページに新しいフィールドを公開します。   

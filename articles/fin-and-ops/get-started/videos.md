@@ -3,7 +3,7 @@ title: "Dynamics 365 for Finance and Operations に関するビデオ"
 description: "このページでは、YouTube および他のサイトで使用可能な Dynamics 365 for Finance and Operations に関連する Microsoft が作成したハウツーおよび技術解説ビデオを一覧表示します。"
 author: josaw1
 manager: AnnBe
-ms.date: 05/08/2018
+ms.date: 05/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 1a7f95090f245af8a5520326954ce01747d71f17
+ms.sourcegitcommit: dc2ab66bf6e3195e1ebf394f99182f59c3ee2125
+ms.openlocfilehash: 7783671baa66b9c8ab0bb2626555d5ccbfaa1fe9
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/15/2018
 
 ---
 
@@ -81,6 +81,9 @@ ms.lasthandoff: 05/08/2018
 
 #### <a name="office-integration"></a>Office 統合
 - [Dynamics 365 for Finance and Operations でヘッダーと明細行パターンの Excel テンプレートを作成する](https://www.youtube.com/watch?v=RTicLb-6dbI&feature=youtu.be)
+
+#### <a name="organization-administration"></a>組織管理
+- [ドキュメント管理](https://www.youtube.com/watch?v=p4rl1CkiLN4&feature=youtu.be)
 
 #### <a name="procurement-and-sourcing"></a>調達
 - [Approve purchase orders on a mobile device (モバイル デバイスで発注書を承認する)](https://youtu.be/gZ-gOlJe7H8)

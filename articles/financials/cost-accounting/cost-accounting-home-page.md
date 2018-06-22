@@ -19,10 +19,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 6b2346c635fd16fce99c2813856e0fc9b5b03a44
+ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
+ms.openlocfilehash: 8f4a371664ceb7df9ac28cececc456bc73d655cb
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/23/2018
 
 ---
 
@@ -50,7 +50,7 @@ ms.lasthandoff: 11/03/2017
 
 |  |  |                             |
 |------------------------|--------------------|-----------------------------|
-| <iframe width="100%"  src="https://www.youtube.com/embed/1pUDtJQZ8FU" frameborder="0" allowfullscreen></iframe>  | <iframe width="100%"  src="https://www.youtube.com/embed/imsuTg8rUVk" frameborder="0" allowfullscreen></iframe>  |   <iframe width="100%" src="https://www.youtube.com/embed/-HKHYdClvx8" frameborder="0" allowfullscreen></iframe>  |
+| [原価会計の使用を開始する](https://www.youtube.com/watch?v=1pUDtJQZ8FU&t=35s)  | [原価会計モバイル ワークスペース](https://www.youtube.com/watch?v=imsuTg8rUVk&t=7s)  |   [原価会計分析のための Excel の使用](https://www.youtube.com/watch?v=-HKHYdClvx8)  |
 |  |  |                             |
 
 

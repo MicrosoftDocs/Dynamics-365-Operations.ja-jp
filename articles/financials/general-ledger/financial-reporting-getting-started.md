@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: fecdca72839ef8ce204b62db6e02e8fa809a30d5
+ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
+ms.openlocfilehash: 613fcf941576b9fb05f5c059699e4cc9c4cabe3e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/23/2018
 
 ---
 
@@ -117,12 +117,9 @@ ms.lasthandoff: 05/08/2018
 ## <a name="creating-and-modifying-financial-reports"></a>財務レポートの作成および変更
 財務報告リストから、新しいレポートを作成するか、既存のレポートを変更できます。 適切なアクセス許可が付与されると、[アクション] ウィンドウの **新規** をクリックして新しい財務諸表を作成できます。 レポート デザイナー プログラムがデバイスにダウンロードされます。 レポート デザイナー プログラムを起動すると、新しいレポートを作成できます。 新しいレポートは保存した後、財務報告リストに表示されます。 このリストには、Finance および Operations で使用している会社に対して作成されているレポートだけが表示されます。 Finance および Operations での財務諸表の作成および変更のプロセスの詳細については、Dynamics 財務報告ブログのこれらの [ブログ投稿](https://blogs.msdn.microsoft.com/dynamics_financial_reporting/tag/learning/) を参照してください。 **注記:** レポート デザイナーのクライアントをダウンロードしているコンピューターには、Microsoft .NET Framework のバージョン 4.6.2 がインストールされている必要があります。 このバージョンの Microsoft .NET Framework は、[ここ](https://www.microsoft.com/en-us/download/details.aspx?id=53345) からダウンロードしてインストールできます。 Chrome を使用している場合、レポート デザイナーのクライアントをダウンロードするために ClickOnce 拡張機能をインストールする必要があります。 匿名モードで起動している場合、ClickOnce の拡張機能が匿名モードに対して有効化されていることを確認します。 財務報告リストに表示されるレポートは変更できます。 レポート名の周りの領域が選択されている場合、[アクション] ウィンドウの **編集** をクリックします。 レポート デザイナー プログラムが開始されます。
 
-<a name="additional-resources"></a>その他のリソース
---------
-
-[財務諸表の表示](view-financial-reports.md)
-
-[ Dynamics 財務報告ブログ](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+## <a name="additional-resources"></a>その他のリソース
+- [財務諸表の表示](view-financial-reports.md)
+- [ Dynamics 財務報告ブログ](http://blogs.msdn.com/b/dynamics_financial_reporting/)
 
 
 
