@@ -1,9 +1,9 @@
 ---
-title: "[Power BI コンテンツ]"
-description: "このトピックでは、使用可能な Power BI コンテンツの一覧を示し、リソースについて詳しく知ることができます。"
+title: "PowerBI.com ソリューション"
+description: "このトピックでは、使用可能な PowerBI.com ソリューションの一覧を示し、ソリューションに関するリソースについて詳しく知ることができます。"
 author: sericks007
 manager: AnnBe
-ms.date: 04/02/2018
+ms.date: 05/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,69 +19,49 @@ ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 43675cdeaa8498e38e7ab030b935293d71035ea0
+ms.sourcegitcommit: cf531c3a8f3bdb17314d1de436b98249169f82a3
+ms.openlocfilehash: 0aa9971226e5aa79cab85f098e098dbb789a1e2d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/22/2018
 
 ---
 
-# <a name="power-bi-content"></a><span data-ttu-id="1fac1-103">[Power BI コンテンツ]</span><span class="sxs-lookup"><span data-stu-id="1fac1-103">Power BI content</span></span>
-[!include [banner](../includes/banner.md)]
+# <a name="powerbicom-solutions"></a><span data-ttu-id="1cd72-103">PowerBI.com ソリューション</span><span class="sxs-lookup"><span data-stu-id="1cd72-103">PowerBI.com solutions</span></span>
+<span data-ttu-id="1cd72-104">次の PowerBI.com ソリューションは、Dynamics 365 for Finance and Operation 環境で使用可能です。</span><span class="sxs-lookup"><span data-stu-id="1cd72-104">The following PowerBI.com solutions are available for Dynamics 365 for Finance and Operations environments.</span></span> 
 
-<span data-ttu-id="1fac1-104">このトピックでは、使用可能な Microsoft Power BI コンテンツの一覧を示し、リソースについて詳しく知ることができます。</span><span class="sxs-lookup"><span data-stu-id="1fac1-104">This topic lists the Microsoft Power BI content that is available and points you to resources where you can learn more about it.</span></span>
+## <a name="powerbicom-solutions-available-from-lifecycle-services-lcs"></a><span data-ttu-id="1cd72-105">Lifecycle Services (LCS) から利用可能な PowerBI.com ソリューション</span><span class="sxs-lookup"><span data-stu-id="1cd72-105">PowerBI.com solutions available from Lifecycle Services (LCS)</span></span>
 
-## <a name="power-bi-content-for-dynamics-365-for-finance-and-operations"></a><span data-ttu-id="1fac1-105">Dynamics 365 for Finance and Operations 向けの Power BI コンテンツ</span><span class="sxs-lookup"><span data-stu-id="1fac1-105">Power BI content for Dynamics 365 for Finance and Operations</span></span>
-<span data-ttu-id="1fac1-106">Microsoft Dynamics 365 for Finance and Operations を使用している場合、以下の Power BI コンテンツを使用できます。</span><span class="sxs-lookup"><span data-stu-id="1fac1-106">If you're using Microsoft Dynamics 365 for Finance and Operations, the following Power BI content is available:</span></span>
-
-- [<span data-ttu-id="1fac1-107">実績対予算 Power BI コンテンツ</span><span class="sxs-lookup"><span data-stu-id="1fac1-107">Actual vs budget Power BI content</span></span>](ledger-budgets-power-bi.md)
-- [<span data-ttu-id="1fac1-108">給付金 Power BI コンテンツ</span><span class="sxs-lookup"><span data-stu-id="1fac1-108">Benefits Power BI content</span></span>](benefits-power-bi.md)
-- [<span data-ttu-id="1fac1-109">キャッシュの概要 Power BI コンテンツ</span><span class="sxs-lookup"><span data-stu-id="1fac1-109">Cash overview Power BI content</span></span>](../../financials/cash-bank-management/Cash-Overview-Power-BI-content.md)
-- [<span data-ttu-id="1fac1-110">CFO の概要 Power BI コンテンツ</span><span class="sxs-lookup"><span data-stu-id="1fac1-110">CFO overview Power BI content</span></span>](CFO-power-bi.md)
-- [<span data-ttu-id="1fac1-111">報酬 Power BI コンテンツ</span><span class="sxs-lookup"><span data-stu-id="1fac1-111">Compensation Power BI content</span></span>](compensation-power-bi.md)
-- [<span data-ttu-id="1fac1-112">原価会計分析の Power BI コンテンツ</span><span class="sxs-lookup"><span data-stu-id="1fac1-112">Cost accounting analysis Power BI content</span></span>](cost-accounting-analysis-content-pack.md) 
-- [<span data-ttu-id="1fac1-113"> Power BI コンテンツでの原価管理</span><span class="sxs-lookup"><span data-stu-id="1fac1-113">Cost management Power BI content</span></span>](cost-management-content-pack.md)    
-- [<span data-ttu-id="1fac1-114">与信および回収管理 Power BI コンテンツ</span><span class="sxs-lookup"><span data-stu-id="1fac1-114">Credit and collections management Power BI content</span></span>](../../financials/accounts-receivable/credit-collections-power-bi.md)
-- [<span data-ttu-id="1fac1-115">従業員の開発 Power BI コンテンツ</span><span class="sxs-lookup"><span data-stu-id="1fac1-115">Employee development Power BI content</span></span>](employee-development-PBI.md) 
-- [<span data-ttu-id="1fac1-116">財務インサイト Power BI コンテンツ</span><span class="sxs-lookup"><span data-stu-id="1fac1-116">Financial insights Power BI content</span></span>](financial-insights.md)
-- [<span data-ttu-id="1fac1-117">財務パフォーマンス Power BI コンテンツ</span><span class="sxs-lookup"><span data-stu-id="1fac1-117">Financial performance Power BI content</span></span>](financial-performance-power-bi-content-pack.md)
-- [<span data-ttu-id="1fac1-118">固定資産管理 Power BI コンテンツ</span><span class="sxs-lookup"><span data-stu-id="1fac1-118">Fixed asset management Power BI content</span></span>](../../financials/fixed-assets/Fixed-asset-management-workspace.md)
-- [<span data-ttu-id="1fac1-119">学習 Power BI コンテンツ</span><span class="sxs-lookup"><span data-stu-id="1fac1-119">Learning Power BI content</span></span>](learning-power-bi.md)
-- [<span data-ttu-id="1fac1-120">プラクティス マネージャー Power BI コンテンツ</span><span class="sxs-lookup"><span data-stu-id="1fac1-120">Practice manager Power BI content</span></span>](practice-manager-power-bi.md)
-- [<span data-ttu-id="1fac1-121">生産パフォーマンス Power BI コンテンツ</span><span class="sxs-lookup"><span data-stu-id="1fac1-121">Production performance Power BI content</span></span>](production-performance-power-bi.md)
-- [<span data-ttu-id="1fac1-122">Power BI コンテンツでの購買先支出分析</span><span class="sxs-lookup"><span data-stu-id="1fac1-122">Purchase spend analysis Power BI content</span></span>](purchase-content-pack-for-power-bi.md) 
-- [<span data-ttu-id="1fac1-123">Power BI コンテンツの採用</span><span class="sxs-lookup"><span data-stu-id="1fac1-123">Recruiting Power BI content</span></span>](recruiting-analysis-power-bi-content-pack.md) 
-- [<span data-ttu-id="1fac1-124">販売および収益性パフォーマンス Power BI コンテンツ</span><span class="sxs-lookup"><span data-stu-id="1fac1-124">Sales and profitability performance Power BI content</span></span>](sales-profitability-performance-content-pack.md)
-- [<span data-ttu-id="1fac1-125">仕入先支払 Power BI コンテンツ</span><span class="sxs-lookup"><span data-stu-id="1fac1-125">Vendor payments Power BI content</span></span>](../../financials/accounts-payable/Vendor-payments-workspace.md)
-- [<span data-ttu-id="1fac1-126">倉庫パフォーマンス Power BI コンテンツ</span><span class="sxs-lookup"><span data-stu-id="1fac1-126">Warehouse performance Power BI content</span></span>](warehouse-power-bi-content.md)
-- [<span data-ttu-id="1fac1-127">従業員のメトリック Power BI コンテンツ</span><span class="sxs-lookup"><span data-stu-id="1fac1-127">Workforce metrics Power BI content</span></span>](workforce-analysis-power-bi-content-pack.md)  
-
-## <a name="power-bi-content-for-dynamics-365-for-operations-version-1611"></a><span data-ttu-id="1fac1-128">Dynamics 365 for Operations バージョン 1611 の Power BI コンテンツ</span><span class="sxs-lookup"><span data-stu-id="1fac1-128">Power BI content for Dynamics 365 for Operations version 1611</span></span>
-<span data-ttu-id="1fac1-129">Microsoft Dynamics 365 for Operations バージョン 1611 を使用している場合、以下の Power BI コンテンツが使用可能です:</span><span class="sxs-lookup"><span data-stu-id="1fac1-129">If you're using Microsoft Dynamics 365 for Operations version 1611, the following Power BI content is available:</span></span>
-
-- [<span data-ttu-id="1fac1-130">報酬と給付金 Power BI コンテンツ</span><span class="sxs-lookup"><span data-stu-id="1fac1-130">Compensation and benefits Power BI content</span></span>](compensation-and-benefits-analysis-power-bi-content-pack.md)   
-- [<span data-ttu-id="1fac1-131">原価会計分析の Power BI コンテンツ</span><span class="sxs-lookup"><span data-stu-id="1fac1-131">Cost accounting analysis Power BI content</span></span>](cost-accounting-analysis-content-pack.md) 
-- [<span data-ttu-id="1fac1-132">与信および回収管理 Power BI コンテンツ</span><span class="sxs-lookup"><span data-stu-id="1fac1-132">Credit and collections management Power BI content</span></span>](../../financials/accounts-receivable/credit-collections-power-bi.md)
-- [<span data-ttu-id="1fac1-133">従業員のコンピテンシーと開発 Power BI コンテンツ</span><span class="sxs-lookup"><span data-stu-id="1fac1-133">Employee competencies and development Power BI content</span></span>](employee-competencies-and-development-analysis-power-bi-content-pack.md) 
-- [<span data-ttu-id="1fac1-134">財務パフォーマンス Power BI コンテンツ</span><span class="sxs-lookup"><span data-stu-id="1fac1-134">Financial performance Power BI content</span></span>](financial-performance-power-bi-content-pack.md)
-- [<span data-ttu-id="1fac1-135">組織トレーニング Power BI コンテンツ</span><span class="sxs-lookup"><span data-stu-id="1fac1-135">Organizational training Power BI content</span></span>](organizational-training-analysis-power-bi-content-pack.md) 
-- [<span data-ttu-id="1fac1-136">プラクティス マネージャー Power BI コンテンツ</span><span class="sxs-lookup"><span data-stu-id="1fac1-136">Practice manager Power BI content</span></span>](practice-manager-power-bi.md)
-- [<span data-ttu-id="1fac1-137">生産パフォーマンス Power BI コンテンツ</span><span class="sxs-lookup"><span data-stu-id="1fac1-137">Production performance Power BI content</span></span>](production-performance-power-bi.md)
-- [<span data-ttu-id="1fac1-138">Power BI コンテンツでの購買先支出分析</span><span class="sxs-lookup"><span data-stu-id="1fac1-138">Purchase spend analysis Power BI content</span></span>](purchase-content-pack-for-power-bi.md) 
-- [<span data-ttu-id="1fac1-139">Power BI コンテンツの採用</span><span class="sxs-lookup"><span data-stu-id="1fac1-139">Recruiting Power BI content</span></span>](recruiting-analysis-power-bi-content-pack.md) 
-- [<span data-ttu-id="1fac1-140">販売および収益性パフォーマンス Power BI コンテンツ</span><span class="sxs-lookup"><span data-stu-id="1fac1-140">Sales and profitability performance Power BI content</span></span>](sales-profitability-performance-content-pack.md)
-- [<span data-ttu-id="1fac1-141">倉庫パフォーマンス Power BI コンテンツ</span><span class="sxs-lookup"><span data-stu-id="1fac1-141">Warehouse performance Power BI content</span></span>](warehouse-power-bi-content.md)
-- [<span data-ttu-id="1fac1-142">従業員のメトリック Power BI コンテンツ</span><span class="sxs-lookup"><span data-stu-id="1fac1-142">Workforce metrics Power BI content</span></span>](workforce-analysis-power-bi-content-pack.md)  
-
-## <a name="power-bi-content-for-microsoft-dynamics-ax"></a><span data-ttu-id="1fac1-143">Microsoft Dynamics AX の Power BI コンテンツ</span><span class="sxs-lookup"><span data-stu-id="1fac1-143">Power BI content for Microsoft Dynamics AX</span></span>
-<span data-ttu-id="1fac1-144">Microsoft Dynamics AX 7.0 または Microsoft Dynamics AX 7.0.1 を使用している場合、以下の Power BI コンテンツが使用可能です:</span><span class="sxs-lookup"><span data-stu-id="1fac1-144">If you're using Microsoft Dynamics AX 7.0 or Microsoft Dynamics AX 7.0.1, the following Power BI content is available:</span></span>
+<span data-ttu-id="1cd72-106">次の PowerBI.com ソリューションは、LCS の共有資産ライブラリで使用可能です。</span><span class="sxs-lookup"><span data-stu-id="1cd72-106">The following PowerBI.com solutions are available in the Shared assets library of LCS.</span></span> <span data-ttu-id="1cd72-107">お使いの環境向けの正しいバージョンをダウンロードするには、共有資産ライブラリのバージョン情報を参照してください。</span><span class="sxs-lookup"><span data-stu-id="1cd72-107">Refer to the version information in the Shared assets library to download the correct version for your environment.</span></span> 
 
 > [!Note]
-> <span data-ttu-id="1fac1-145">これらのコンテンツ パックは [Power BI コンテンツ パックを PowerBI.com に公開する](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features#power-bi-content-packs-published-to-powerbicom)で記載されたものとして非推奨になっています。</span><span class="sxs-lookup"><span data-stu-id="1fac1-145">These content packs have been deprecated as documented in [Power BI content packs published to PowerBI.com](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features#power-bi-content-packs-published-to-powerbicom).</span></span>
+> <span data-ttu-id="1cd72-108">次の一覧に含まれる PowerBI.com ソリューションのほとんどは、Dynamics 365 for Finance and Operation の最新バージョンの分析ワークスペースに埋め込まれています。</span><span class="sxs-lookup"><span data-stu-id="1cd72-108">Most of the PowerBI.com solutions in the following list have been embedded in analytical workspaces in recent versions of Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="1cd72-109">分析ワークスペースを使用すると、LCS の共有資産ライブラリからこれらのソリューションをダウンロードする必要がなくなります。</span><span class="sxs-lookup"><span data-stu-id="1cd72-109">Using analytical workspaces eliminates the need to download these solutions from the Shared assets library in LCS.</span></span> <span data-ttu-id="1cd72-110">この一覧のトピックでは、これらの PowerBI.com ソリューションが Finance and Operations のどこに埋め込まれているかを示します (該当する場合)。</span><span class="sxs-lookup"><span data-stu-id="1cd72-110">The topics in this list indicate where these PowerBI.com solutions have been embedded in Finance and Operations, where applicable.</span></span> 
 
-- [<span data-ttu-id="1fac1-146"> Power BI コンテンツでの原価管理</span><span class="sxs-lookup"><span data-stu-id="1fac1-146">Cost management Power BI content</span></span>](cost-management-content-pack.md)    
-- [<span data-ttu-id="1fac1-147">財務パフォーマンス Power BI コンテンツ</span><span class="sxs-lookup"><span data-stu-id="1fac1-147">Financial performance Power BI content</span></span>](financial-performance-power-bi-content-pack.md)
-- [<span data-ttu-id="1fac1-148">販売チャネル パフォーマンス Power BI コンテンツ</span><span class="sxs-lookup"><span data-stu-id="1fac1-148">Retail channel performance Power BI content</span></span>](retail-channel-performance-dashboard-power-bi-data.md) 
+- [<span data-ttu-id="1cd72-111">実績対予算</span><span class="sxs-lookup"><span data-stu-id="1cd72-111">Actual vs budget</span></span>](ledger-budgets-power-bi.md)
+- [<span data-ttu-id="1cd72-112">現金の概要</span><span class="sxs-lookup"><span data-stu-id="1cd72-112">Cash overview</span></span>](../../financials/cash-bank-management/Cash-Overview-Power-BI-content.md)
+- [<span data-ttu-id="1cd72-113">報酬と給付金</span><span class="sxs-lookup"><span data-stu-id="1cd72-113">Compensation and benefits</span></span>](compensation-and-benefits-analysis-power-bi-content-pack.md)   
+- [<span data-ttu-id="1cd72-114">原価会計分析</span><span class="sxs-lookup"><span data-stu-id="1cd72-114">Cost accounting analysis</span></span>](cost-accounting-analysis-content-pack.md) 
+- [<span data-ttu-id="1cd72-115">与信および回収管理</span><span class="sxs-lookup"><span data-stu-id="1cd72-115">Credit and collections management</span></span>](../../financials/accounts-receivable/credit-collections-power-bi.md)
+- [<span data-ttu-id="1cd72-116">従業員のコンピテンシーと開発</span><span class="sxs-lookup"><span data-stu-id="1cd72-116">Employee competencies and development</span></span>](employee-competencies-and-development-analysis-power-bi-content-pack.md) 
+- [<span data-ttu-id="1cd72-117">財務パフォーマンス</span><span class="sxs-lookup"><span data-stu-id="1cd72-117">Financial performance</span></span>](financial-performance-power-bi-content-pack.md)
+- [<span data-ttu-id="1cd72-118">固定資産管理</span><span class="sxs-lookup"><span data-stu-id="1cd72-118">Fixed asset management</span></span>](../../financials/fixed-assets/Fixed-asset-management-workspace.md)
+- [<span data-ttu-id="1cd72-119">組織トレーニング</span><span class="sxs-lookup"><span data-stu-id="1cd72-119">Organizational training</span></span>](organizational-training-analysis-power-bi-content-pack.md) 
+- [<span data-ttu-id="1cd72-120">プラクティス マネージャー</span><span class="sxs-lookup"><span data-stu-id="1cd72-120">Practice manager</span></span>](practice-manager-power-bi.md)
+- [<span data-ttu-id="1cd72-121">生産パフォーマンス</span><span class="sxs-lookup"><span data-stu-id="1cd72-121">Production performance</span></span>](production-performance-power-bi.md)
+- [<span data-ttu-id="1cd72-122">購買と支出の分析</span><span class="sxs-lookup"><span data-stu-id="1cd72-122">Purchase spend analysis</span></span>](purchase-content-pack-for-power-bi.md) 
+- [<span data-ttu-id="1cd72-123">採用</span><span class="sxs-lookup"><span data-stu-id="1cd72-123">Recruiting</span></span>](recruiting-analysis-power-bi-content-pack.md)
+- [<span data-ttu-id="1cd72-124">販売と収益性のパフォーマンス</span><span class="sxs-lookup"><span data-stu-id="1cd72-124">Sales and profitability performance</span></span>](sales-profitability-performance-content-pack.md)
+- [<span data-ttu-id="1cd72-125">仕入先支払</span><span class="sxs-lookup"><span data-stu-id="1cd72-125">Vendor payments</span></span>](../../financials/accounts-payable/Vendor-payments-workspace.md)
+- [<span data-ttu-id="1cd72-126">倉庫のパフォーマンス</span><span class="sxs-lookup"><span data-stu-id="1cd72-126">Warehouse performance</span></span>](warehouse-power-bi-content.md)
+- [<span data-ttu-id="1cd72-127">要員指標</span><span class="sxs-lookup"><span data-stu-id="1cd72-127">Workforce metrics</span></span>](workforce-analysis-power-bi-content-pack.md)  
 
+## <a name="powerbicom-solutions-available-from-appsource"></a><span data-ttu-id="1cd72-128">AppSource から利用可能な PowerBI.com ソリューション</span><span class="sxs-lookup"><span data-stu-id="1cd72-128">PowerBI.com solutions available from AppSource</span></span>
 
+<span data-ttu-id="1cd72-129">次の PowerBI.com ソリューションは、[Microsoft AppSource](https://appsource.microsoft.com) から使用可能です。</span><span class="sxs-lookup"><span data-stu-id="1cd72-129">The following PowerBI.com solutions are available from [Microsoft AppSource](https://appsource.microsoft.com).</span></span>
+
+> [!Note]
+> <span data-ttu-id="1cd72-130">これらのソリューションは、[AppSource で利用可能な Power BI コンテンツ パック](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource)で記載されたものとして非推奨になっています。</span><span class="sxs-lookup"><span data-stu-id="1cd72-130">These solutions have been deprecated as documented in [Power BI content packs available on AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).</span></span>
+
+- <span data-ttu-id="1cd72-131">原価管理</span><span class="sxs-lookup"><span data-stu-id="1cd72-131">Cost management</span></span>    
+- [<span data-ttu-id="1cd72-132">財務パフォーマンス</span><span class="sxs-lookup"><span data-stu-id="1cd72-132">Financial performance</span></span>](financial-performance-power-bi-content-pack.md)
+- [<span data-ttu-id="1cd72-133">小売チャネルの実績</span><span class="sxs-lookup"><span data-stu-id="1cd72-133">Retail channel performance</span></span>](retail-channel-performance-dashboard-power-bi-data.md) 
 
