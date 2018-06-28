@@ -1,6 +1,6 @@
 ---
-title: "財務パフォーマンス Power BI コンテンツ"
-description: "このトピックでは、財務パフォーマンス Power BI コンテンツについて説明します。"
+title: "財務パフォーマンス PowerBI.com ソリューション"
+description: "このトピックでは、財務パフォーマンス PowerBI.com ソリューションについて説明します。"
 author: kweekley
 manager: AnnBe
 ms.date: 05/09/2018
@@ -18,26 +18,26 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 88bbc54721f5da94dd811ef155e8d3bcf8c2b53c
-ms.openlocfilehash: d062937d8d1cb7d8e4f4cc055eb4514fa56b4eab
+ms.sourcegitcommit: cf531c3a8f3bdb17314d1de436b98249169f82a3
+ms.openlocfilehash: b70d470da2160670848d2dca9c97f6d7a2d6cf60
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/22/2018
 
 ---
 
-# <a name="financial-performance-power-bi-content"></a>財務パフォーマンス Power BI コンテンツ
+# <a name="financial-performance-powerbicom-solution"></a>財務パフォーマンス PowerBI.com ソリューション
 
 [!include [banner](../includes/banner.md)]
 
 > [!Note]
-> このコンテンツ パックは [AppSource で’利用可能な Power BI コンテンツ パック](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource)で記載されたものとして非推奨になっています。
+> この PowerBI.com ソリューションは [AppSource で利用可能な Power BI コンテンツ パック](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource)で記載されたものとして非推奨になっています。
 
-このトピックでは、**財務パフォーマンス** Microsoft Power BI コンテンツについて説明します。 含まれているダッシュボードおよびレポートについて説明し、コンテンツを作成するために使用したデータモデルとエンティティに関する情報を提供します。
+このトピックでは、**財務パフォーマンス** PowerBI.com ソリューションについて説明します。 含まれているダッシュボードおよびレポートについて説明し、ソリューションを作成するために使用したデータ モデルとエンティティに関する情報を提供します。
 
 ## <a name="main-account-setup"></a>主勘定の設定
 組織は負債と収益の勘定をレポートに正の金額として表示させるため、主勘定の設定が重要です。 これらの主勘定を正の金額として表示するには、主勘定タイプを **負債** または **収益** に設定する必要があります。 これらの勘定タイプを使用すると、Power BI での報告は符号が逆になり、正として金額が表示されます。
 
-## <a name="dashboard-and-reports-that-are-included-in-the-power-bi-content"></a>Power BI コンテンツに含まれるダッシュボードおよびレポート
+## <a name="dashboard-and-reports-that-are-included-in-the-powerbicom-solution"></a>PowerBI.com ソリューションに含まれるダッシュボードおよびレポート
 ダッシュボードには、基になるレポートに基づいて集計されたデータ タイルが含まれます。 各タイルには、組織のすべての会社間での今年度における集計情報が含まれます。 次にタイルの例を示します。
 
 - 現金
@@ -74,7 +74,7 @@ ms.lasthandoff: 05/09/2018
 これらすべてのレポートのグラフとタイルはフィルター処理し、ダッシュボードに固定することができます。 Power BI のフィルター処理と固定方法の詳細については、[ダッシュボードの作成およびコンフィギュレーション](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards) を参照してください。
 
 ## <a name="understanding-the-data-model-and-entities"></a>データ モデルおよびエンティティの理解
-次のエンティティは**財務パフォーマンス** Power BI コンテンツの基準として使用されていました。
+次のエンティティは**財務パフォーマンス** PowerBI.com ソリューションの基準として使用されていました。
 
 **データ エンティティの集計**
 

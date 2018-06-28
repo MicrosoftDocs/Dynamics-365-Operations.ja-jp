@@ -28,6 +28,7 @@ ms.lasthandoff: 05/08/2018
 
 # <a name="upgrade-warehouse-management-from-microsoft-dynamics-ax-2012-to-finance-and-operations"></a>Microsoft Dynamics AX 2012 から Finance and Operations への倉庫管理のアップグレード
 
+
 [!include [banner](../includes/banner.md)]
 
 このトピックでは、WMSII モジュールを実行している Microsoft Dynamics AX 2012 R3 から Microsoft Dynamics 365 for Finance and Operations にアップグレードするプロセスの概要を示します。

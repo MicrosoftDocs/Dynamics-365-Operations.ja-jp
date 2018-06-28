@@ -19,10 +19,10 @@ ms.author: rschloma
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2e5dd8f852ac1a6c2997a50a60f03db6adfd218c
-ms.openlocfilehash: 5500bfc1cdd1949d301ae82fad5506dfdbeb59f3
+ms.sourcegitcommit: dc2ab66bf6e3195e1ebf394f99182f59c3ee2125
+ms.openlocfilehash: 63e0a52919e12c1f497e6809244939c6047826a7
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/01/2018
+ms.lasthandoff: 05/15/2018
 
 ---
 
@@ -72,8 +72,6 @@ Microsoft Dynamics 365 for Talent 管理者センターでプレビュー機能�
     > 投稿される求人は、1 つまたは複数の LinkedIn 人材募集の製品にサブスクライブしている顧客にのみ表示されます。 それ以外の場合は、顧客は明示的に検索する場合にのみ職務を表示します。 求人が LinkedIn に投稿されるときに遅延が発生します。 職務が Attract からの投稿後に表示されるには数時間かかる場合があります。
 
 - **候補者の適用**– 内部および外部の候補者が、キャリア サイトのジョブ ページから直接適用できるようになりました。
-- **評価**– コンフィギュレーション可能な採用プロセスの一部として、特定の職務に対してまたは職務テンプレートが使用される場合のいずれかで、ユーザーは新しい**評価**活動タイプにアクセスできるようになります。 候補者に送信できる基本の評価を構築するため、Talent でプロジェクト: "Gauge" アプリを使用できます。 プロジェクト: "Gauge" は、パブリック プレビューにもあります。 追加のプロバイダーは、今後追加されます。
-- **プロジェクト: "Gauge"**– プロジェクト: "Gauge" は、ユーザーが単純な評価やアンケートを Talent で作成することができるアプリです。
 - **オファー管理**– ユーザーはプレースホルダーを含むテンプレートからオファー レターを作成できるようになります。 オファー ステージに進む候補者として、採用担当者および雇用マネージャーは、テンプレートを通して候補者の正式なオファーを準備するオファー ツールを使用でき、内部認証のオファーを送信し、さらに最終的に署名のために候補者にオファーを送信できます。 時間の経過と共に多くの新しい機能がオファー ツールに追加され、プレビューにリリースする準備が整っているため、プレビュー機能がこれらの機能により更新されます。
 
 ### <a name="core-hr"></a>Core HR
@@ -90,7 +88,7 @@ Microsoft Dynamics 365 for Talent 管理者センターでプレビュー機能�
     - [Attract アイデア](https://powerusers.microsoft.com/t5/Ideas-for-Attract/idb-p/Attract)
     - [Core HR](https://powerusers.microsoft.com/t5/Ideas-for-Human-Resources/idb-p/HumanResources)
 
-フィードバックまたは製品のレビュー申請には個人データ (ユーザーを識別できる任意の情報) を含めないでください。 収集した情報はさらに分析されることがありますが、該当するプライバシーに関する法律の下で要求に回答するためには使用されません。 これらのプログラムで個別に収集された個人データは、[Microsoft のプライバシーに関する声明](https://privacy.microsoft.com/en-us/privacystatement) の対象となります。
+フィードバックまたは製品のレビュー申請には個人データ (ユーザーを識別できる任意の情報) を含めないでください。 収集した情報はさらに分析されることがありますが、該当するプライバシーに関する法律の下で要求に回答するためには使用されません。 これらのプログラムで個別に収集された個人データは、[Microsoft のプライバシーに関する声明](https://privacy.microsoft.com/privacystatement) の対象となります。
 
 > [!TIP]
 > リリースに際して新しいプレビュー機能に関して最新の状態を保つため、このトピックをブックマークし、頻繁に確認してください。

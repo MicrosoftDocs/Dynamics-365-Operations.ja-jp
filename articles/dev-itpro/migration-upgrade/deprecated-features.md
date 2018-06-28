@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 88bbc54721f5da94dd811ef155e8d3bcf8c2b53c
-ms.openlocfilehash: c935b0c14f09b0a3a738266e4c9c577c96f0ea77
+ms.sourcegitcommit: 65101b5f0030a25973a584b68ec9697506868294
+ms.openlocfilehash: 6b954d1eedb7c7af1c9a5eda92aa1dd6132a19fa
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/30/2018
 
 ---
 
@@ -162,6 +162,18 @@ ER 式ビルダーで使用されるカスタム機能を導入する可能性�
 
 
 ## <a name="dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-with-platform-update-8"></a>Dynamics 365 for Finance and Operations, Enterprise edition 2017 年 7 月 およびプラットフォーム更新プログラム 8
+
+### <a name="currency-conversion-for-accounting-and-reporting-currencies"></a>会計の通貨換算およびレポート通貨
+
+会計の通貨換算およびレポート通貨は、ユーロが導入された時に導入されました。
+
+|   |  |
+|------------|--------------------|
+| **廃止 / 削除の理由** | 置換としての法人のコピー機能の有限使用および追加      |
+| **別の機能での置き換え?**   | いいえ、しかし法人のコピーコンフィギュレーションの機能は、コア要件に変更のある会社を移動しやすくするために追加されました。 |
+| **影響を受ける製品領域**         | 財務管理     |
+| **ステータス**                         | 非推奨: この機能の削除日は設定されていません。   |
+
 
 ### <a name="warehouse-mobile-devices-portal"></a>倉庫モバイル デバイス ポータル
 

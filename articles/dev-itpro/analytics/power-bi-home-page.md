@@ -1,9 +1,9 @@
 ---
-title: "[Power BI コンテンツ]"
-description: "このトピックでは、使用可能な Power BI コンテンツの一覧を示し、リソースについて詳しく知ることができます。"
+title: "PowerBI.com ソリューション"
+description: "このトピックでは、使用可能な PowerBI.com ソリューションの一覧を示し、ソリューションに関するリソースについて詳しく知ることができます。"
 author: sericks007
 manager: AnnBe
-ms.date: 04/02/2018
+ms.date: 05/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,69 +19,49 @@ ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 2473fa408ae8884b8713198debfff489ff6e6c46
+ms.sourcegitcommit: cf531c3a8f3bdb17314d1de436b98249169f82a3
+ms.openlocfilehash: 0aa9971226e5aa79cab85f098e098dbb789a1e2d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/22/2018
 
 ---
 
-# <a name="power-bi-content"></a>[Power BI コンテンツ]
-[!include [banner](../includes/banner.md)]
+# <a name="powerbicom-solutions"></a>PowerBI.com ソリューション
+次の PowerBI.com ソリューションは、Dynamics 365 for Finance and Operation 環境で使用可能です。 
 
-このトピックでは、使用可能な Microsoft Power BI コンテンツの一覧を示し、リソースについて詳しく知ることができます。
+## <a name="powerbicom-solutions-available-from-lifecycle-services-lcs"></a>Lifecycle Services (LCS) から利用可能な PowerBI.com ソリューション
 
-## <a name="power-bi-content-for-dynamics-365-for-finance-and-operations"></a>Dynamics 365 for Finance and Operations 向けの Power BI コンテンツ
-Microsoft Dynamics 365 for Finance and Operations を使用している場合、以下の Power BI コンテンツを使用できます。
-
-- [実績対予算 Power BI コンテンツ](ledger-budgets-power-bi.md)
-- [給付金 Power BI コンテンツ](benefits-power-bi.md)
-- [キャッシュの概要 Power BI コンテンツ](../../financials/cash-bank-management/Cash-Overview-Power-BI-content.md)
-- [CFO の概要 Power BI コンテンツ](CFO-power-bi.md)
-- [報酬 Power BI コンテンツ](compensation-power-bi.md)
-- [原価会計分析の Power BI コンテンツ](cost-accounting-analysis-content-pack.md) 
-- [ Power BI コンテンツでの原価管理](cost-management-content-pack.md)    
-- [与信および回収管理 Power BI コンテンツ](../../financials/accounts-receivable/credit-collections-power-bi.md)
-- [従業員の開発 Power BI コンテンツ](employee-development-PBI.md) 
-- [財務インサイト Power BI コンテンツ](financial-insights.md)
-- [財務パフォーマンス Power BI コンテンツ](financial-performance-power-bi-content-pack.md)
-- [固定資産管理 Power BI コンテンツ](../../financials/fixed-assets/Fixed-asset-management-workspace.md)
-- [学習 Power BI コンテンツ](learning-power-bi.md)
-- [プラクティス マネージャー Power BI コンテンツ](practice-manager-power-bi.md)
-- [生産パフォーマンス Power BI コンテンツ](production-performance-power-bi.md)
-- [Power BI コンテンツでの購買先支出分析](purchase-content-pack-for-power-bi.md) 
-- [Power BI コンテンツの採用](recruiting-analysis-power-bi-content-pack.md) 
-- [販売および収益性パフォーマンス Power BI コンテンツ](sales-profitability-performance-content-pack.md)
-- [仕入先支払 Power BI コンテンツ](../../financials/accounts-payable/Vendor-payments-workspace.md)
-- [倉庫パフォーマンス Power BI コンテンツ](warehouse-power-bi-content.md)
-- [従業員のメトリック Power BI コンテンツ](workforce-analysis-power-bi-content-pack.md)  
-
-## <a name="power-bi-content-for-dynamics-365-for-operations-version-1611"></a>Dynamics 365 for Operations バージョン 1611 の Power BI コンテンツ
-Microsoft Dynamics 365 for Operations バージョン 1611 を使用している場合、以下の Power BI コンテンツが使用可能です:
-
-- [報酬と給付金 Power BI コンテンツ](compensation-and-benefits-analysis-power-bi-content-pack.md)   
-- [原価会計分析の Power BI コンテンツ](cost-accounting-analysis-content-pack.md) 
-- [与信および回収管理 Power BI コンテンツ](../../financials/accounts-receivable/credit-collections-power-bi.md)
-- [従業員のコンピテンシーと開発 Power BI コンテンツ](employee-competencies-and-development-analysis-power-bi-content-pack.md) 
-- [財務パフォーマンス Power BI コンテンツ](financial-performance-power-bi-content-pack.md)
-- [組織トレーニング Power BI コンテンツ](organizational-training-analysis-power-bi-content-pack.md) 
-- [プラクティス マネージャー Power BI コンテンツ](practice-manager-power-bi.md)
-- [生産パフォーマンス Power BI コンテンツ](production-performance-power-bi.md)
-- [Power BI コンテンツでの購買先支出分析](purchase-content-pack-for-power-bi.md) 
-- [Power BI コンテンツの採用](recruiting-analysis-power-bi-content-pack.md) 
-- [販売および収益性パフォーマンス Power BI コンテンツ](sales-profitability-performance-content-pack.md)
-- [倉庫パフォーマンス Power BI コンテンツ](warehouse-power-bi-content.md)
-- [従業員のメトリック Power BI コンテンツ](workforce-analysis-power-bi-content-pack.md)  
-
-## <a name="power-bi-content-for-microsoft-dynamics-ax"></a>Microsoft Dynamics AX の Power BI コンテンツ
-Microsoft Dynamics AX 7.0 または Microsoft Dynamics AX 7.0.1 を使用している場合、以下の Power BI コンテンツが使用可能です:
+次の PowerBI.com ソリューションは、LCS の共有資産ライブラリで使用可能です。 お使いの環境向けの正しいバージョンをダウンロードするには、共有資産ライブラリのバージョン情報を参照してください。 
 
 > [!Note]
-> これらのコンテンツ パックは [Power BI コンテンツ パックを PowerBI.com に公開する](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features#power-bi-content-packs-published-to-powerbicom)で記載されたものとして非推奨になっています。
+> 次の一覧に含まれる PowerBI.com ソリューションのほとんどは、Dynamics 365 for Finance and Operation の最新バージョンの分析ワークスペースに埋め込まれています。 分析ワークスペースを使用すると、LCS の共有資産ライブラリからこれらのソリューションをダウンロードする必要がなくなります。 この一覧のトピックでは、これらの PowerBI.com ソリューションが Finance and Operations のどこに埋め込まれているかを示します (該当する場合)。 
 
-- [ Power BI コンテンツでの原価管理](cost-management-content-pack.md)    
-- [財務パフォーマンス Power BI コンテンツ](financial-performance-power-bi-content-pack.md)
-- [販売チャネル パフォーマンス Power BI コンテンツ](retail-channel-performance-dashboard-power-bi-data.md) 
+- [実績対予算](ledger-budgets-power-bi.md)
+- [現金の概要](../../financials/cash-bank-management/Cash-Overview-Power-BI-content.md)
+- [報酬と給付金](compensation-and-benefits-analysis-power-bi-content-pack.md)   
+- [原価会計分析](cost-accounting-analysis-content-pack.md) 
+- [与信および回収管理](../../financials/accounts-receivable/credit-collections-power-bi.md)
+- [従業員のコンピテンシーと開発](employee-competencies-and-development-analysis-power-bi-content-pack.md) 
+- [財務パフォーマンス](financial-performance-power-bi-content-pack.md)
+- [固定資産管理](../../financials/fixed-assets/Fixed-asset-management-workspace.md)
+- [組織トレーニング](organizational-training-analysis-power-bi-content-pack.md) 
+- [プラクティス マネージャー](practice-manager-power-bi.md)
+- [生産パフォーマンス](production-performance-power-bi.md)
+- [購買と支出の分析](purchase-content-pack-for-power-bi.md) 
+- [採用](recruiting-analysis-power-bi-content-pack.md)
+- [販売と収益性のパフォーマンス](sales-profitability-performance-content-pack.md)
+- [仕入先支払](../../financials/accounts-payable/Vendor-payments-workspace.md)
+- [倉庫のパフォーマンス](warehouse-power-bi-content.md)
+- [要員指標](workforce-analysis-power-bi-content-pack.md)  
 
+## <a name="powerbicom-solutions-available-from-appsource"></a>AppSource から利用可能な PowerBI.com ソリューション
 
+次の PowerBI.com ソリューションは、[Microsoft AppSource](https://appsource.microsoft.com) から使用可能です。
+
+> [!Note]
+> これらのソリューションは、[AppSource で利用可能な Power BI コンテンツ パック](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource)で記載されたものとして非推奨になっています。
+
+- 原価管理    
+- [財務パフォーマンス](financial-performance-power-bi-content-pack.md)
+- [小売チャネルの実績](retail-channel-performance-dashboard-power-bi-data.md) 
 

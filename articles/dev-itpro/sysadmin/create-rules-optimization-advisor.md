@@ -20,10 +20,10 @@ ms.author: roxanad
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 943239c7d57b4a438c405f1ad0551db29d7a8145
+ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
+ms.openlocfilehash: a18fac31b5acb7d2a1ec40203122d4eb9d94a439
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/23/2018
 
 ---
 
@@ -77,7 +77,7 @@ protected List evaluate()
 } 
 ```
 
-上記のメソッドは会社にループ、および **findRFQCasesWithEmptyTitle** メソッドで空のタイトルの RFQ ケースを選択します。 このようなケースが 1 つでも見つかった場合、**getOpportunityForCompany** メソッドで会社固有の営業案件が作成されます。 [**SelfHealingOpportunity**] テーブルの [**データ**] フィールドはタイプ **コンテナー**です。そのため、このルールに固有のロジックに適切なデータを含めることができます。 現在のタイムスタンプを持つ **OpportunityDate** 設定は営業案件の最新の評価の時間を登録します。  
+上記のメソッドは会社にループ、および **findRFQCasesWithEmptyTitle** メソッドで空のタイトルの RFQ ケースを選択します。 このようなケースが 1 つでも見つかった場合、**getOpportunityForCompany** メソッドで会社固有の営業案件が作成されます。 **SelfHealingOpportunity** テーブルの **データ** フィールドはタイプ **コンテナー**です。そのため、このルールに固有のロジックに適切なデータを含めることができます。 現在のタイムスタンプを持つ **OpportunityDate** 設定は営業案件の最新の評価の時間を登録します。  
 
 営業案件は会社間でも可能です。 この場合、会社にループすることは必要ではなく、営業案件は **getOpportunityAcrossCompanies** メソッドで作成される必要があります。 
 
@@ -101,15 +101,15 @@ private container findRFQCasesWithEmptyTitle()
 
 実装される必要のあるさらに 2 つのメソッドは、**opportunityTitle** および **opportunityDetails** です。 前者は営業案件の簡単なタイトルを返し、後者は営業案件の詳細な説明を返します。これはデータを含めることもできます。
 
-**opportunityTitle** によって返されるタイトルは、[**Optimization advisor**] ワークスペースの [**Optimization opportunity**] 列の下に表示されます。 作業ウィンドウのヘッダーとして、営業案件についての詳細情報が表示されます。 慣例として、**DiagnosticRuleSubscription** 属性でこのメソッドは修飾されます。このメソッドは次の引数を使用します。 
+**opportunityTitle** によって返されるタイトルは、**Optimization advisor** ワークスペースの **Optimization opportunity** 列の下に表示されます。 作業ウィンドウのヘッダーとして、営業案件についての詳細情報が表示されます。 慣例として、**DiagnosticRuleSubscription** 属性でこのメソッドは修飾されます。このメソッドは次の引数を使用します。 
 
 * **診断エリア** – **DiagnosticArea::SCM** のような、ルールが属するアプリケーションのどの領域かを説明する **DiagnosticArea** タイプの列挙型。 
 
-* **ルール名** – ルール名の文字列。 これは、[**診断検証ルール**] フォーム (**DiagnosticsValidationRuleMaintain**) 内の [**ルール名**] コラムの下に表示されます。 
+* **ルール名** – ルール名の文字列。 これは、**診断検証ルール** フォーム (**DiagnosticsValidationRuleMaintain**) 内の **ルール名** コラムの下に表示されます。 
 
 * **実行頻度** – **DiagnosticRunFrequency::Daily** のような、どのくらいの頻度でルールが実行されるかを説明する **DiagnosticRunFrequency** タイプの列挙型。 
 
-* **ルールの説明** – ルールの詳細な説明の文字列。 これは、[**診断検証ルール**] フォーム (**DiagnosticsValidationRuleMaintain**) 内の [**ルールの説明**] コラムの下に表示されます。 
+* **ルールの説明** – ルールの詳細な説明の文字列。 これは、**診断検証ルール** フォーム (**DiagnosticsValidationRuleMaintain**) 内の **ルールの説明** コラムの下に表示されます。 
 
 > [!NOTE]
 > **DiagnosticRuleSubscription** 属性はルールが機能するために必要です。 通常、**opportunityTitle** で使用されますが、クラスの任意のメソッドで修飾できます。
@@ -127,7 +127,7 @@ public str opportunityTitle()
 } 
 ```
 
-**opportunityDetails** によって返された説明が作業ウィンドウに表示され、営業案件に関する詳細を示します。 これは **SelfHealingOpportunity** 引数を取ります。これは営業案件についての詳細を提供するために使用される [**データ**] フィールドです。 例では、メソッドは空のタイトルを持つ RFQ ケースの ID を返します。 
+**opportunityDetails** によって返された説明が作業ウィンドウに表示され、営業案件に関する詳細を示します。 これは **SelfHealingOpportunity** 引数を取ります。これは営業案件についての詳細を提供するために使用される **データ** フィールドです。 例では、メソッドは空のタイトルを持つ RFQ ケースの ID を返します。 
 
 ```
 public str opportunityDetails(SelfHealingOpportunity _opportunity) 
@@ -194,7 +194,7 @@ class ScanNewRulesJob
 } 
 ```
 
-ルールは [**診断検証ルール**] フォームで表示され、[**システム管理**] > [**定期処理のタスク**] > [**診断検証ルールの管理**] からも使用できます。 それを評価するために、[**システム管理**] > [**定期処理のタスク**] > [**診断検証ルールのスケジュール**] に移動し、[**毎日**] のようなルールの頻度を選択します。 [**OK**] をクリックします。 [**システム管理**] > [**最適化アドバイザー**] に移動し、営業案件を表示します。 
+ルールは **診断検証ルール** フォームで表示され、**システム管理** > **定期処理のタスク** > **診断検証ルールの管理** からも使用できます。 それを評価するために、**システム管理** > **定期処理のタスク** > **診断検証ルールのスケジュール** に移動し、**毎日** のようなルールの頻度を選択します。 **OK** をクリックします。 **システム管理** > **最適化アドバイザー** に移動し、営業案件を表示します。 
 
 次の例は、すべての必要なメソッドと属性を含むルールのスケルトンを持つコード スニペットです。 これにより、新しいルールの作成を開始することができます。 この例で使用するラベルおよびアクション メニュー項目は、デモ目的でのみ使用されます。
 
@@ -255,7 +255,5 @@ public final class SkeletonSelfHealingRule extends SelfHealingRule implements ID
 }
 ```
 
-その他の情報については、短い YouTube ビデオを確認してください。
-
-> [!Video https://www.youtube.com/embed/MRsAzgFCUSQ]
+詳細については、[Dynamics 365 for Finance and Operations の最適化アドバイザー](https://www.youtube.com/watch?v=MRsAzgFCUSQ) の短い YouTube ビデオを確認してください。
 
