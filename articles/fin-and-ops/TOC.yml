@@ -410,151 +410,6 @@
     - name: 財務管理
       href: ../financials/index.md
       items:
-        - name: 一般会計
-          href: ../financials/general-ledger/general-ledger.md
-          items:
-            - name: アカウント
-              items:
-                - name: 見越計上の概要
-                  href: ../financials/general-ledger/accruals-overview.md
-                - name: 消去ルール
-                  href: ../financials/general-ledger/elimination-rules.md
-                - name: 勘定および分析コードの組み合わせ
-                  href: ../financials/general-ledger/enter-account-dimension-combinations-segmented-entry-control.md
-                - name: 単位間会計の残高調整済み仕訳帳
-                  href: ../financials/general-ledger/example-balanced-journals-interunit-accounting.md
-                - name: 転記の定義
-                  href: ../financials/general-ledger/posting-definitions.md
-                - name: '転記の定義の例 '
-                  href: ../financials/general-ledger/example-posting-definitions.md
-                - name: 総勘定元帳残高
-                  href: ../financials/general-ledger/general-ledger-account-balances.md
-                - name: 財務分析コードの定義
-                  href: ../financials/general-ledger/tasks/define-financial-dimensions.md
-                - name: 財務分析コード用の既定テンプレートの管理
-                  href: ../financials/general-ledger/tasks/maintain-financial-dimension-default-templates.md
-                - name: 勘定構造の作成
-                  href: ../financials/general-ledger/tasks/create-account-structures.md
-                - name: 発生主義スキーマの作成
-                  href: ../financials/general-ledger/tasks/create-accrual-schemes.md
-                - name: 連結グループおよび追加の連結勘定の作成
-                  href: ../financials/general-ledger/tasks/create-consolidation-groups.md
-                - name: 主勘定タイプ
-                  href: ../financials/general-ledger/main-account-types.md
-                - name: 主勘定の作成
-                  href: ../financials/general-ledger/tasks/create-main-account.md
-                - name: 勘定科目表の計画
-                  href: ../financials/general-ledger/plan-chart-of-accounts.md
-                - name: 勘定科目間でのトランザクションの決済
-                  href: ../financials/general-ledger/tasks/settle-transactions-between-ledger-accounts.md
-                - name: 勘定科目のエイリアスの設定
-                  href: ../financials/general-ledger/tasks/set-up-ledger-account-alias.md
-                - name: 主勘定カテゴリの設定
-                  href: ../financials/general-ledger/tasks/set-up-main-account-categories.md
-                - name: 会計ソース エクスプローラー
-                  href: ../financials/accounts-payable/accounting-source-explorer.md
-                - name: 勘定配布
-                  href: ../financials/accounts-payable/accounting-distributions.md
-                - name: 配賦の処理
-                  href: ../financials/general-ledger/process-allocations.md
-                - name: 財務分析コード
-                  href: ../financials/general-ledger/financial-dimensions.md
-                - name: 会計またはレポートの通貨換算
-                  href: ../financials/general-ledger/convert-accounting-reporting-currencies.md
-                - name: 連結勘定グループおよび勘定
-                  href: ../financials/budgeting/consolidation-account-groups-consolidation-accounts.md
-                - name: 連結と削除の概要
-                  href: ../financials/budgeting/consolidation-elimination-overview.md
-                - name: 会計カレンダー、会計年度、および会計年度期間
-                  href: ../financials/general-ledger/configure-account-structures.md
-                - name: 勘定構造のコンフィギュレーション
-                  href: ../financials/budgeting/fiscal-calendars-fiscal-years-periods.md
-            - name: 仕訳帳と元帳
-              items:
-                - name: 一般仕訳帳の処理
-                  href: ../financials/general-ledger/general-journal-processing.md
-                - name: 定期処理仕訳帳の転記
-                  href: ../financials/general-ledger/tasks/post-periodic-journals.md
-                - name: 元帳配賦仕訳帳の処理
-                  href: ../financials/general-ledger/tasks/process-ledger-allocation-journal.md
-                - name: 会社間勘定の設定
-                  href: ../financials/general-ledger/intercompany-accounting-setup.md
-                - name: 元帳配賦ルール
-                  href: ../financials/general-ledger/ledger-allocation-rules.md
-                - name: 仕訳帳の詳細なルールの作成
-                  href: ../financials/general-ledger/tasks/create-advanced-rules-journals.md
-                - name: 詳細ルール構造の作成と割り当て
-                  href: ../financials/general-ledger/tasks/create-assign-advanced-rule-structures.md
-                - name: 仕訳元帳タイプ
-                  href: ../financials/general-ledger/ledger-journal-types.md
-                - name: 仕訳帳の作成および検証
-                  href: ../financials/general-ledger/tasks/create-validate-journals.md
-                - name: 仕訳入力またはトランザクションの表示
-                  href: ../financials/general-ledger/tasks/view-journal-entries-or-transactions.md
-                - name: 仕訳帳から関連する会社間伝票を表示
-                  href: ../financials/general-ledger/tasks/view-related-intercompany-voucher-journal.md
-                - name: テンプレートを使用した仕訳入力の作成
-                  href: ../financials/general-ledger/tasks/create-journal-entry-template.md
-                - name: 元帳見越計上トランザクションの作成
-                  href: ../financials/general-ledger/tasks/create-ledger-accrual-transactions.md
-                - name: Excel からの仕訳帳明細行およびドキュメントの発行
-                  href: ../financials/general-ledger/open-lines-excel-journals-documents.md
-                - name: 仕訳入力とトランザクションの表示
-                  href: ../financials/general-ledger/view-journal-entries-transactions.md
-                - name: 転記された仕訳帳の仕訳入力
-                  href: ../financials/general-ledger/tasks/journalize-posted-journal-entries.md
-                - name: 連結会社の通貨再評価
-                  href: ../financials/general-ledger/currency-revaluation-consolidation-company.md
-                - name: 一般会計の外貨再評価
-                  href: ../financials/general-ledger/foreign-currency-revaluation-general-ledger.md
-                - name: 通貨の通貨為替レートのインポート
-                  href: ../financials/general-ledger/import-currency-exchange-rates.md
-            - name: 期末決算
-              items:
-                - name: 期末に一般会計を決算
-                  href: ../financials/general-ledger/close-general-ledger-at-period-end.md
-                - name: 財務期間終了ワークスペース
-                  href: ../financials/general-ledger/financial-period-close-workspace.md
-                - name: 年度末決算
-                  href: ../financials/general-ledger/year-end-close.md
-                - name: 会計年度の決算
-                  href: ../financials/general-ledger/tasks/close-fiscal-year.md
-                - name: 財務期間一括終了
-                  href: ../financials/general-ledger/tasks/mass-financial-period-close.md
-            - name: 消費税
-              items:
-                - name: 消費税の概要
-                  href: ../financials/general-ledger/indirect-taxes-overview.md
-                - name: 基準金額に基づく消費税率と計算方法
-                  href: ../financials/general-ledger/marginal-base-field.md
-                - name: 消費税支払と丸めルール
-                  href: ../financials/general-ledger/round-sales-tax-payments.md
-                - name: '[発生元] フィールドでの消費税計算方法'
-                  href: ../financials/general-ledger/sales-tax-calculation-methods-origin-field.md
-                - name: 消費税コードの合計額と間隔計算オプション
-                  href: ../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md
-                - name: 仕入先請求書の売上税の計算と調整
-                  href: ../financials/general-ledger/tasks/calculate-adjust-sales-tax-vendor-invoice.md
-                - name: 売上税支払の作成
-                  href: ../financials/general-ledger/tasks/create-sales-tax-payment.md
-                - name: ドキュメントの売上税トランザクションの作成
-                  href: ../financials/general-ledger/tasks/create-sales-tax-transactions-documents.md
-                - name: 売上税の元帳転記グループの設定
-                  href: ../financials/general-ledger/tasks/set-up-ledger-posting-groups-sales-tax.md
-                - name: 売上税所轄官庁の設定
-                  href: ../financials/general-ledger/tasks/set-up-sales-tax-authorities.md
-                - name: 消費税コードを設定します
-                  href: ../financials/general-ledger/tasks/set-up-sales-tax-codes.md
-                - name: 売上税グループと品目売上税グループの設定
-                  href: ../financials/general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.md
-                - name: 消費税レポート コードの設定
-                  href: ../financials/general-ledger/tasks/set-up-sales-tax-reporting-codes.md
-                - name: 消費税清算期間の設定
-                  href: ../financials/general-ledger/tasks/set-up-sales-tax-settlement-periods.md
-                - name: 源泉徴収税の設定
-                  href: ../financials/general-ledger/tasks/set-up-withholding-tax.md
-                - name: 転記された消費税トランザクションの表示
-                  href: ../financials/general-ledger/tasks/view-posted-sales-tax-transactions.md
         - name: 買掛金勘定
           href: ../financials/accounts-payable/accounts-payable.md
           items:
@@ -662,6 +517,10 @@
               href: ../financials/accounts-receivable/sepa-direct-debit-mandate.md
             - name: クレジット カードの設定、認証、および取得
               href: ../financials/accounts-receivable/credit-card-authorizations.md
+            - name: 自由書式の請求書の作成
+              href: ../financials/accounts-receivable/create-free-text-invoice-new.md
+            - name: 自由書式の請求書テンプレートの作成
+              href: ../financials/accounts-receivable/create-free-text-invoice-template-new.md
             - name: 自由書式の請求書の訂正
               href: ../financials/accounts-receivable/correct-free-text-invoice.md
             - name: 利息コードに対する金利の設定
@@ -682,12 +541,6 @@
                   href: ../financials/accounts-receivable/tasks/assign-free-text-invoice-template-customer.md
                 - name: 督促状順序の作成
                   href: ../financials/accounts-receivable/tasks/create-collection-letter-sequence.md
-                - name: 顧客の口座引落の委任状の作成
-                  href: ../financials/accounts-receivable/tasks/create-direct-debit-mandate-customer.md
-                - name: 自由書式の請求書の作成
-                  href: ../financials/accounts-receivable/tasks/create-free-text-invoice.md
-                - name: 自由書式の請求書テンプレートの作成
-                  href: ../financials/accounts-receivable/tasks/create-free-text-invoice-template.md
                 - name: 範囲のある利息コードの作成
                   href: ../financials/accounts-receivable/tasks/create-interest-code-range.md
                 - name: 販売注文請求書の作成
@@ -732,6 +585,31 @@
                   href: ../financials/accounts-receivable/reimburse-customers.md
                 - name: 一部金額の顧客支払
                   href: ../financials/accounts-receivable/customer-payments-partial-amount.md
+        - name: 予算作成
+          href: ../financials/budgeting/budgeting-overview.md
+          items:
+            - name: '予算計画の概要 '
+              href: ../financials/budgeting/budget-planning-overview-configuration.md
+            - name: '予算管理の概要 '
+              href: ../financials/budgeting/budget-control-overview-configuration.md
+            - name: '予算作成の概要 '
+              href: ../financials/budgeting/basic-budgeting-overview-configuration.md
+            - name: 職位予測
+              href: ../financials/budgeting/position-forecasting.md
+            - name: 予算計画妥当性ドキュメント
+              href: ../financials/budgeting/budget-planning-justification-docs.md
+            - name: トランザクション勘定および勘定合計からの予算作成
+              href: ../financials/budgeting/create-budget-transaction-accounts-total-accounts.md
+            - name: Excel の予算計画テンプレート
+              href: ../financials/budgeting/budget-planning-excel-templates.md
+            - name: 職位の予算作成のトラブルシューティング
+              href: ../financials/budgeting/position-budgeting-set-up-issues.md
+            - name: 予算計画
+              href: ../financials/budgeting/budget-plan.md
+            - name: 予算計画データの配賦
+              href: ../financials/budgeting/budget-planning-data-allocation.md
+            - name: 他のモジュールとの予算計画の統合
+              href: ../financials/budgeting/budget-planning-integration-other-modules.md
         - name: 現金および銀行管理
           href: ../financials/cash-bank-management/cash-bank-management.md
           items:
@@ -811,6 +689,112 @@
                   href: ../financials/cash-bank-management/import-bank-statement-file-failed-incorrect-results.md
                 - name: 銀行仕訳帳の複合エンティティの更新
                   href: ../financials/cash-bank-management/upgrade-bank-journal-composite-entity.md
+        - name: 原価計算
+          href: ../financials/cost-accounting/cost-accounting-home-page.md
+          items:
+            - name: 原価会計用語
+              href: ../financials/cost-accounting/terms-cost-accounting.md
+            - name: 会計カレンダー、会計年度、および会計年度期間
+              href: ../financials/budgeting/fiscal-calendars-fiscal-years-periods.md
+            - name: 財務分析コード
+              href: ../financials/general-ledger/financial-dimensions.md
+            - name: 勘定構造
+              href: ../financials/general-ledger/Default-dimensions.md
+            - name: 勘定構造の作成
+              href: ../financials/general-ledger/tasks/create-account-structures.md
+            - name: 予算作成の概要
+              href: ../financials/budgeting/basic-budgeting-overview-configuration.md
+            - name: 分析コードの作成と分析コード メンバーのインポート
+              href: ../financials/cost-accounting/cost-dimension.md
+            - name: 原価要素分析コード
+              href: ../financials/cost-accounting/cost-elements.md
+            - name: 原価要素の作成
+              href: ../financials/cost-accounting/tasks/create-cost-elements.md
+            - name: 原価オブジェクト分析コード
+              href: ../financials/cost-accounting/cost-objects.md
+            - name: 原価オブジェクトの作成
+              href: ../financials/cost-accounting/tasks/create-cost-objects.md
+            - name: 分析コード メンバーの共通セットに対する原価要素分析コード メンバーのマップ
+              href: ../financials/cost-accounting/map-cost-elements-dimension-members.md
+            - name: 原価要素分析コードのマップ
+              href: ../financials/cost-accounting/tasks/map-cost-element-dimension.md
+            - name: 分析コード階層
+              href: ../financials/cost-accounting/dimension-hierarchy.md
+            - name: 組織レポート階層の作成
+              href: ../financials/cost-accounting/tasks/create-an-organization-report-hierarchy.md
+            - name: 原価オブジェクト コントローラーのアクセス権
+              href: ../financials/cost-accounting/access-rights-cost-object-controller.md
+            - name: 原価オブジェクト コントローラーのアクセス権のコンフィギュレーション
+              href: ../financials/cost-accounting/tasks/configure-access-rights-cost-object-controller.md
+            - name: 原価管理単位の定義
+              href: ../financials/cost-accounting/tasks/define-cost-control-units.md
+            - name: 原価会計元帳の作成
+              href: ../financials/cost-accounting/tasks/create-cost-accounting-ledger.md
+            - name: 統計分析コード メンバーと統計測定プロバイダー テンプレート
+              href: ../financials/cost-accounting/statistical-measure-provider-template.md
+            - name: 配賦基準
+              href: ../financials/cost-accounting/allocation-bases.md
+            - name: 原価配賦ポリシーの作成と原価管理単位への割り当て
+              href: ../financials/cost-accounting/tasks/create-assign-cost-allocation-policy-cost-control-unit.md
+            - name: 原価動作ポリシーの作成と原価管理単位への割り当て
+              href: ../financials/cost-accounting/tasks/create-assign-cost-behavior-policy-cost-control-unit.md
+            - name: 原価配分ポリシーの作成と原価管理単位への割り当て
+              href: ../financials/cost-accounting/tasks/create-assign-cost-distribution-policy-cost-control-unit.md
+            - name: 原価ロールアップ ポリシーの作成
+              href: ../financials/cost-accounting/tasks/create-cost-rollup-policy.md
+            - name: 原価会計元帳のデータ ソースの管理
+              href: ../financials/cost-accounting/tasks/manage-data-source-cost-accounting-ledger.md
+            - name: ソース データの処理および追跡
+              href: ../financials/cost-accounting/tasks/process-trace-source-data.md
+            - name: 間接費の計算
+              href: ../financials/cost-accounting/overhead-calculation.md
+            - name: 原価ロールアップ ポリシーおよび間接費の計算
+              href: ../financials/cost-accounting/cost-rollup.md
+            - name: 原価管理ワークスペースのコンフィギュレーション
+              href: ../financials/cost-accounting/cost-control-workspace.md
+            - name: 原価管理ワークスペース パラメーターのコンフィギュレーション
+              href: ../financials/cost-accounting/tasks/configure-cost-control-workspace-parameters.md
+            - name: Microsoft Power BI におけるアクセス リストのセキュリティと RLS について
+              href: ../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?toc=/fin-and-ops/toc.json
+            - name: Microsoft Power BI レポートへのコンテンツ パックの使用
+              href: ../dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/fin-and-ops/toc.json
+            - name: Finance and Operations モバイル アプリケーションでの原価管理ワークスペースの使用
+              href: ../financials/cost-accounting/cost-controlling-mobile-workspace.md
+        - name: 経費管理
+          href: ../financials/expense-management/expense-management.md
+          items:
+            - name: 経費管理の計画
+              href: ../financials/expense-management/plan-expense-management.md
+            - name: 経費管理パラメーター
+              href: ../financials/expense-management/Expense-Management-Parameters.md
+            - name: 経費管理モバイル ワークスペース
+              href: ../financials/expense-management/expense-management-mobile-workspace.md
+            - name: 経費管理のワークフローの設定
+              href: ../financials/expense-management/expense-workflows.md
+            - name: 経費管理のワークフロー
+              href: ../financials/expense-management/expense-workflow.md
+            - name: クレジット カード トランザクションのインポートおよび管理
+              href: ../financials/expense-management/import-credit-card.md
+            - name: 経費レポートでの配分
+              href: ../financials/expense-management/expense-report-distributions.md
+            - name: 会社間経費
+              href: ../financials/expense-management/intercompany-expense.md
+            - name: 経費ポリシー
+              href: ../financials/expense-management/travel-expense-policies.md
+            - name: 経費精算書の表示
+              href: ../financials/expense-management/view-expense-report.md
+            - name: 経費精算書の転記
+              href: ../financials/expense-management/post-expense.md
+            - name: 経費精算書と複数の承認者
+              href: ../financials/expense-management/expense-report-multiple-approvers.md
+            - name: 経費管理における VAT 回収
+              href: ../financials/expense-management/VAT-expense-report.md
+            - name: 日当ルール
+              href: ../financials/expense-management/per-diem.md
+            - name: 出張費要求
+              href: ../financials/expense-management/travel-req.md
+            - name: 経費精算書での個人経費
+              href: ../financials/expense-management/personal-expenses.md
         - name: 固定資産
           href: ../financials/fixed-assets/fixed-assets.md
           items:
@@ -916,152 +900,151 @@
                   href: ../financials/fixed-assets/tasks/split-fixed-asset.md
                 - name: 固定資産の移動
                   href: ../financials/fixed-assets/tasks/transfer-fixed-asset.md
-        - name: 経費管理
-          href: ../financials/expense-management/expense-management.md
+        - name: 一般会計
+          href: ../financials/general-ledger/general-ledger.md
           items:
-            - name: 経費管理の計画
-              href: ../financials/expense-management/plan-expense-management.md
-            - name: 経費管理パラメーター
-              href: ../financials/expense-management/Expense-Management-Parameters.md
-            - name: 経費管理モバイル ワークスペース
-              href: ../financials/expense-management/expense-management-mobile-workspace.md
-            - name: 経費管理のワークフローの設定
-              href: ../financials/expense-management/expense-workflows.md
-            - name: 経費管理のワークフロー
-              href: ../financials/expense-management/expense-workflow.md
-            - name: クレジット カード トランザクションのインポートおよび管理
-              href: ../financials/expense-management/import-credit-card.md
-            - name: 経費レポートでの配分
-              href: ../financials/expense-management/expense-report-distributions.md
-            - name: 会社間経費
-              href: ../financials/expense-management/intercompany-expense.md
-            - name: 経費ポリシー
-              href: ../financials/expense-management/travel-expense-policies.md
-            - name: 経費精算書の表示
-              href: ../financials/expense-management/view-expense-report.md
-            - name: 経費精算書の転記
-              href: ../financials/expense-management/post-expense.md
-            - name: 経費精算書と複数の承認者
-              href: ../financials/expense-management/expense-report-multiple-approvers.md
-            - name: 経費管理における VAT 回収
-              href: ../financials/expense-management/VAT-expense-report.md
-            - name: 日当ルール
-              href: ../financials/expense-management/per-diem.md
-            - name: 出張費要求
-              href: ../financials/expense-management/travel-req.md
-            - name: 経費精算書での個人経費
-              href: ../financials/expense-management/personal-expenses.md
-        - name: 予算作成
-          href: ../financials/budgeting/budgeting-overview.md
-          items:
-            - name: '予算計画の概要 '
-              href: ../financials/budgeting/budget-planning-overview-configuration.md
-            - name: '予算管理の概要 '
-              href: ../financials/budgeting/budget-control-overview-configuration.md
-            - name: '予算作成の概要 '
-              href: ../financials/budgeting/basic-budgeting-overview-configuration.md
-            - name: 職位予測
-              href: ../financials/budgeting/position-forecasting.md
-            - name: 予算計画妥当性ドキュメント
-              href: ../financials/budgeting/budget-planning-justification-docs.md
-            - name: トランザクション勘定および勘定合計からの予算作成
-              href: ../financials/budgeting/create-budget-transaction-accounts-total-accounts.md
-            - name: Excel の予算計画テンプレート
-              href: ../financials/budgeting/budget-planning-excel-templates.md
-            - name: 職位の予算作成のトラブルシューティング
-              href: ../financials/budgeting/position-budgeting-set-up-issues.md
-            - name: 予算計画
-              href: ../financials/budgeting/budget-plan.md
-            - name: 予算計画データの配賦
-              href: ../financials/budgeting/budget-planning-data-allocation.md
-            - name: 他のモジュールとの予算計画の統合
-              href: ../financials/budgeting/budget-planning-integration-other-modules.md
-        - name: レポート
-          href: ../financials/general-ledger/financial-reporting-getting-started.md
-          items:
-            - name: 貸借対照表の財務諸表
-              href: ../financials/general-ledger/balance-sheet-financial-reports.md
-            - name: 財務諸表の生成
-              href: ../dev-itpro/analytics/generate-financial-report.md?toc=/fin-and-ops/toc.json
-            - name: 損益計算書の財務諸表
-              href: ../financials/general-ledger/income-statement-financial-report.md
-            - name: 試算表の財務諸表
-              href: ../financials/general-ledger/trial-balance-financial-reports.md
-            - name: 財務諸表の表示
-              href: ../financials/general-ledger/view-financial-reports.md
-            - name: レポート デザイナー
-              href: ../dev-itpro/analytics/report-designer-interface.md?toc=/fin-and-ops/toc.json
-        - name: 原価計算
-          href: ../financials/cost-accounting/cost-accounting-home-page.md
-          items:
-            - name: 原価会計用語
-              href: ../financials/cost-accounting/terms-cost-accounting.md
-            - name: 会計カレンダー、会計年度、および会計年度期間
-              href: ../financials/budgeting/fiscal-calendars-fiscal-years-periods.md
-            - name: 財務分析コード
-              href: ../financials/general-ledger/financial-dimensions.md
-            - name: 勘定構造
-              href: ../financials/general-ledger/Default-dimensions.md
-            - name: 勘定構造の作成
-              href: ../financials/general-ledger/tasks/create-account-structures.md
-            - name: 予算作成の概要
-              href: ../financials/budgeting/basic-budgeting-overview-configuration.md
-            - name: 分析コードの作成と分析コード メンバーのインポート
-              href: ../financials/cost-accounting/cost-dimension.md
-            - name: 原価要素分析コード
-              href: ../financials/cost-accounting/cost-elements.md
-            - name: 原価要素の作成
-              href: ../financials/cost-accounting/tasks/create-cost-elements.md
-            - name: 原価オブジェクト分析コード
-              href: ../financials/cost-accounting/cost-objects.md
-            - name: 原価オブジェクトの作成
-              href: ../financials/cost-accounting/tasks/create-cost-objects.md
-            - name: 分析コード メンバーの共通セットに対する原価要素分析コード メンバーのマップ
-              href: ../financials/cost-accounting/map-cost-elements-dimension-members.md
-            - name: 原価要素分析コードのマップ
-              href: ../financials/cost-accounting/tasks/map-cost-element-dimension.md
-            - name: 分析コード階層
-              href: ../financials/cost-accounting/dimension-hierarchy.md
-            - name: 組織レポート階層の作成
-              href: ../financials/cost-accounting/tasks/create-an-organization-report-hierarchy.md
-            - name: 原価オブジェクト コントローラーのアクセス権
-              href: ../financials/cost-accounting/access-rights-cost-object-controller.md
-            - name: 原価オブジェクト コントローラーのアクセス権のコンフィギュレーション
-              href: ../financials/cost-accounting/tasks/configure-access-rights-cost-object-controller.md
-            - name: 原価管理単位の定義
-              href: ../financials/cost-accounting/tasks/define-cost-control-units.md
-            - name: 原価会計元帳の作成
-              href: ../financials/cost-accounting/tasks/create-cost-accounting-ledger.md
-            - name: 統計分析コード メンバーと統計測定プロバイダー テンプレート
-              href: ../financials/cost-accounting/statistical-measure-provider-template.md
-            - name: 配賦基準
-              href: ../financials/cost-accounting/allocation-bases.md
-            - name: 原価配賦ポリシーの作成と原価管理単位への割り当て
-              href: ../financials/cost-accounting/tasks/create-assign-cost-allocation-policy-cost-control-unit.md
-            - name: 原価動作ポリシーの作成と原価管理単位への割り当て
-              href: ../financials/cost-accounting/tasks/create-assign-cost-behavior-policy-cost-control-unit.md
-            - name: 原価配分ポリシーの作成と原価管理単位への割り当て
-              href: ../financials/cost-accounting/tasks/create-assign-cost-distribution-policy-cost-control-unit.md
-            - name: 原価ロールアップ ポリシーの作成
-              href: ../financials/cost-accounting/tasks/create-cost-rollup-policy.md
-            - name: 原価会計元帳のデータ ソースの管理
-              href: ../financials/cost-accounting/tasks/manage-data-source-cost-accounting-ledger.md
-            - name: ソース データの処理および追跡
-              href: ../financials/cost-accounting/tasks/process-trace-source-data.md
-            - name: 間接費の計算
-              href: ../financials/cost-accounting/overhead-calculation.md
-            - name: 原価ロールアップ ポリシーおよび間接費の計算
-              href: ../financials/cost-accounting/cost-rollup.md
-            - name: 原価管理ワークスペースのコンフィギュレーション
-              href: ../financials/cost-accounting/cost-control-workspace.md
-            - name: 原価管理ワークスペース パラメーターのコンフィギュレーション
-              href: ../financials/cost-accounting/tasks/configure-cost-control-workspace-parameters.md
-            - name: Microsoft Power BI におけるアクセス リストのセキュリティと RLS について
-              href: ../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?toc=/fin-and-ops/toc.json
-            - name: Microsoft Power BI レポートへのコンテンツ パックの使用
-              href: ../dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/fin-and-ops/toc.json
-            - name: Finance and Operations モバイル アプリケーションでの原価管理ワークスペースの使用
-              href: ../financials/cost-accounting/cost-controlling-mobile-workspace.md
+            - name: 勘定
+              items:
+                - name: 見越計上の概要
+                  href: ../financials/general-ledger/accruals-overview.md
+                - name: 消去ルール
+                  href: ../financials/general-ledger/elimination-rules.md
+                - name: 勘定および分析コードの組み合わせ
+                  href: ../financials/general-ledger/enter-account-dimension-combinations-segmented-entry-control.md
+                - name: 単位間会計の残高調整済み仕訳帳
+                  href: ../financials/general-ledger/example-balanced-journals-interunit-accounting.md
+                - name: 転記の定義
+                  href: ../financials/general-ledger/posting-definitions.md
+                - name: '転記の定義の例 '
+                  href: ../financials/general-ledger/example-posting-definitions.md
+                - name: 総勘定元帳残高
+                  href: ../financials/general-ledger/general-ledger-account-balances.md
+                - name: 財務分析コードの定義
+                  href: ../financials/general-ledger/tasks/define-financial-dimensions.md
+                - name: 財務分析コード用の既定テンプレートの管理
+                  href: ../financials/general-ledger/tasks/maintain-financial-dimension-default-templates.md
+                - name: 勘定構造の作成
+                  href: ../financials/general-ledger/tasks/create-account-structures.md
+                - name: 発生主義スキーマの作成
+                  href: ../financials/general-ledger/tasks/create-accrual-schemes.md
+                - name: 連結グループおよび追加の連結勘定の作成
+                  href: ../financials/general-ledger/tasks/create-consolidation-groups.md
+                - name: 主勘定タイプ
+                  href: ../financials/general-ledger/main-account-types.md
+                - name: 主勘定の作成
+                  href: ../financials/general-ledger/tasks/create-main-account.md
+                - name: 勘定科目表の計画
+                  href: ../financials/general-ledger/plan-chart-of-accounts.md
+                - name: 勘定科目間でのトランザクションの決済
+                  href: ../financials/general-ledger/tasks/settle-transactions-between-ledger-accounts.md
+                - name: 勘定科目のエイリアスの設定
+                  href: ../financials/general-ledger/tasks/set-up-ledger-account-alias.md
+                - name: 主勘定カテゴリの設定
+                  href: ../financials/general-ledger/tasks/set-up-main-account-categories.md
+                - name: 会計ソース エクスプローラー
+                  href: ../financials/accounts-payable/accounting-source-explorer.md
+                - name: 勘定配布
+                  href: ../financials/accounts-payable/accounting-distributions.md
+                - name: 配賦の処理
+                  href: ../financials/general-ledger/process-allocations.md
+                - name: 財務分析コード
+                  href: ../financials/general-ledger/financial-dimensions.md
+                - name: 会計またはレポートの通貨換算
+                  href: ../financials/general-ledger/convert-accounting-reporting-currencies.md
+                - name: 連結勘定グループおよび勘定
+                  href: ../financials/budgeting/consolidation-account-groups-consolidation-accounts.md
+                - name: 連結と削除の概要
+                  href: ../financials/budgeting/consolidation-elimination-overview.md
+                - name: 会計カレンダー、会計年度、および会計年度期間
+                  href: ../financials/budgeting/fiscal-calendars-fiscal-years-periods.md
+                - name: 勘定構造のコンフィギュレーション
+                  href: ../financials/general-ledger/configure-account-structures.md
+            - name: 仕訳帳と元帳
+              items:
+                - name: 一般仕訳帳の処理
+                  href: ../financials/general-ledger/general-journal-processing.md
+                - name: 定期処理仕訳帳の転記
+                  href: ../financials/general-ledger/tasks/post-periodic-journals.md
+                - name: 元帳配賦仕訳帳の処理
+                  href: ../financials/general-ledger/tasks/process-ledger-allocation-journal.md
+                - name: 会社間勘定の設定
+                  href: ../financials/general-ledger/intercompany-accounting-setup.md
+                - name: 元帳配賦ルール
+                  href: ../financials/general-ledger/ledger-allocation-rules.md
+                - name: 仕訳帳の詳細なルールの作成
+                  href: ../financials/general-ledger/tasks/create-advanced-rules-journals.md
+                - name: 詳細ルール構造の作成と割り当て
+                  href: ../financials/general-ledger/tasks/create-assign-advanced-rule-structures.md
+                - name: 仕訳元帳タイプ
+                  href: ../financials/general-ledger/ledger-journal-types.md
+                - name: 仕訳帳の作成および検証
+                  href: ../financials/general-ledger/tasks/create-validate-journals.md
+                - name: 仕訳入力またはトランザクションの表示
+                  href: ../financials/general-ledger/tasks/view-journal-entries-or-transactions.md
+                - name: 仕訳帳から関連する会社間伝票を表示
+                  href: ../financials/general-ledger/tasks/view-related-intercompany-voucher-journal.md
+                - name: テンプレートを使用した仕訳入力の作成
+                  href: ../financials/general-ledger/tasks/create-journal-entry-template.md
+                - name: 元帳見越計上トランザクションの作成
+                  href: ../financials/general-ledger/tasks/create-ledger-accrual-transactions.md
+                - name: Excel からの仕訳帳明細行およびドキュメントの発行
+                  href: ../financials/general-ledger/open-lines-excel-journals-documents.md
+                - name: 仕訳入力とトランザクションの表示
+                  href: ../financials/general-ledger/view-journal-entries-transactions.md
+                - name: 転記された仕訳帳の仕訳入力
+                  href: ../financials/general-ledger/tasks/journalize-posted-journal-entries.md
+                - name: 連結会社の通貨再評価
+                  href: ../financials/general-ledger/currency-revaluation-consolidation-company.md
+                - name: 一般会計の外貨再評価
+                  href: ../financials/general-ledger/foreign-currency-revaluation-general-ledger.md
+                - name: 通貨の通貨為替レートのインポート
+                  href: ../financials/general-ledger/import-currency-exchange-rates.md
+            - name: 期末決算
+              items:
+                - name: 期末に一般会計を決算
+                  href: ../financials/general-ledger/close-general-ledger-at-period-end.md
+                - name: 財務期間終了ワークスペース
+                  href: ../financials/general-ledger/financial-period-close-workspace.md
+                - name: 年度末決算
+                  href: ../financials/general-ledger/year-end-close.md
+                - name: 会計年度の決算
+                  href: ../financials/general-ledger/tasks/close-fiscal-year.md
+                - name: 財務期間一括終了
+                  href: ../financials/general-ledger/tasks/mass-financial-period-close.md
+            - name: 消費税
+              items:
+                - name: 消費税の概要
+                  href: ../financials/general-ledger/indirect-taxes-overview.md
+                - name: 基準金額に基づく消費税率と計算方法
+                  href: ../financials/general-ledger/marginal-base-field.md
+                - name: 消費税支払と丸めルール
+                  href: ../financials/general-ledger/round-sales-tax-payments.md
+                - name: '[発生元] フィールドでの消費税計算方法'
+                  href: ../financials/general-ledger/sales-tax-calculation-methods-origin-field.md
+                - name: 消費税コードの合計額と間隔計算オプション
+                  href: ../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md
+                - name: 仕入先請求書の売上税の計算と調整
+                  href: ../financials/general-ledger/tasks/calculate-adjust-sales-tax-vendor-invoice.md
+                - name: 売上税支払の作成
+                  href: ../financials/general-ledger/tasks/create-sales-tax-payment.md
+                - name: ドキュメントの売上税トランザクションの作成
+                  href: ../financials/general-ledger/tasks/create-sales-tax-transactions-documents.md
+                - name: 売上税の元帳転記グループの設定
+                  href: ../financials/general-ledger/tasks/set-up-ledger-posting-groups-sales-tax.md
+                - name: 売上税所轄官庁の設定
+                  href: ../financials/general-ledger/tasks/set-up-sales-tax-authorities.md
+                - name: 消費税コードを設定します
+                  href: ../financials/general-ledger/tasks/set-up-sales-tax-codes.md
+                - name: 売上税グループと品目売上税グループの設定
+                  href: ../financials/general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.md
+                - name: 消費税レポート コードの設定
+                  href: ../financials/general-ledger/tasks/set-up-sales-tax-reporting-codes.md
+                - name: 売上税精算期間の設定
+                  href: ../financials/general-ledger/tasks/set-up-sales-tax-settlement-periods.md
+                - name: 源泉徴収税の設定
+                  href: ../financials/general-ledger/tasks/set-up-withholding-tax.md
+                - name: 転記された売上税トランザクションの表示
+                  href: ../financials/general-ledger/tasks/view-posted-sales-tax-transactions.md
         - name: 公的機関
           href: ../financials/public-sector/public-sector-functionality.md
           items:
@@ -1149,31 +1132,41 @@
                   href: ../financials/public-sector/tasks/set-up-fund-public-sector.md
                 - name: 公的機関の購買契約の分類の設定
                   href: ../financials/public-sector/tasks/set-up-purchase-agreement-classifications-public-sector.md
-    - name: 財務報告
-      href: ../dev-itpro/analytics/financial-reporting-intro.md?toc=/fin-and-ops/toc.json
-      items:
-        - name: 財務諸表の生成
-          href: ../dev-itpro/analytics/generate-financial-report.md?toc=/fin-and-ops/toc.json
-        - name: 財務諸表コンポーネント
-          href: ../dev-itpro/analytics/financial-report-components.md?toc=/fin-and-ops/toc.json
-        - name: レポート デザイナー
-          href: ../dev-itpro/analytics/report-designer-interface.md?toc=/fin-and-ops/toc.json
-        - name: ユーザーの基本設定
-          href: ../dev-itpro/analytics/user-preferences-financial-report-designer.md?toc=/fin-and-ops/toc.json
-        - name: 書式設定の詳細オプション
-          href: ../dev-itpro/analytics/advanced-formatting-options-financial-reporting.md?toc=/fin-and-ops/toc.json
-        - name: レポート コンポーネントの整理
-          href: ../dev-itpro/analytics/organize-components-report-designer.md?toc=/fin-and-ops/toc.json
-        - name: レポート定義
-          href: ../dev-itpro/analytics/design-financial-report-definitions.md?toc=/fin-and-ops/toc.json
-        - name: 行定義
-          href: ../dev-itpro/analytics/row-definitions-financial-reporting.md?toc=/fin-and-ops/toc.json
-        - name: 列定義
-          href: ../dev-itpro/analytics/column-definitions-financial-reports.md?toc=/fin-and-ops/toc.json
-        - name: 行定義セルの変更
-          href: ../dev-itpro/analytics/modify-row-definition-cells-financial-reporting.md?toc=/fin-and-ops/toc.json
-        - name: データベースを復元した後の財務報告のデータ マートのリセット
-          href: ../dev-itpro/analytics/reset-financial-reporting-datamart-after-restore.md?toc=/fin-and-ops/toc.json
+        - name: 財務諸表
+          href: ../financials/general-ledger/financial-reporting-getting-started.md
+          items:
+            - name: 財務諸表の概要
+              href: ../dev-itpro/analytics/financial-reporting-intro.md?toc=/fin-and-ops/toc.json
+            - name: 財務諸表コンポーネント
+              href: ../dev-itpro/analytics/financial-report-components.md?toc=/fin-and-ops/toc.json
+            - name: 貸借対照表の財務諸表
+              href: ../financials/general-ledger/balance-sheet-financial-reports.md
+            - name: 財務諸表の生成
+              href: ../dev-itpro/analytics/generate-financial-report.md?toc=/fin-and-ops/toc.json
+            - name: 損益計算書の財務諸表
+              href: ../financials/general-ledger/income-statement-financial-report.md
+            - name: 試算表の財務諸表
+              href: ../financials/general-ledger/trial-balance-financial-reports.md
+            - name: 財務諸表の表示
+              href: ../financials/general-ledger/view-financial-reports.md
+            - name: レポート デザイナー
+              href: ../dev-itpro/analytics/report-designer-interface.md?toc=/fin-and-ops/toc.json
+            - name: ユーザーの基本設定
+              href: ../dev-itpro/analytics/user-preferences-financial-report-designer.md?toc=/fin-and-ops/toc.json
+            - name: 書式設定の詳細オプション
+              href: ../dev-itpro/analytics/advanced-formatting-options-financial-reporting.md?toc=/fin-and-ops/toc.json
+            - name: レポート コンポーネントの整理
+              href: ../dev-itpro/analytics/organize-components-report-designer.md?toc=/fin-and-ops/toc.json
+            - name: レポート定義
+              href: ../dev-itpro/analytics/design-financial-report-definitions.md?toc=/fin-and-ops/toc.json
+            - name: 行定義
+              href: ../dev-itpro/analytics/row-definitions-financial-reporting.md?toc=/fin-and-ops/toc.json
+            - name: 列定義
+              href: ../dev-itpro/analytics/column-definitions-financial-reports.md?toc=/fin-and-ops/toc.json
+            - name: 行定義セルの変更
+              href: ../dev-itpro/analytics/modify-row-definition-cells-financial-reporting.md?toc=/fin-and-ops/toc.json
+            - name: データベースを復元した後の財務報告のデータ マートのリセット
+              href: ../dev-itpro/analytics/reset-financial-reporting-datamart-after-restore.md?toc=/fin-and-ops/toc.json
     - name: ローカライズと規制の機能
       href: ../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json
       items:
@@ -3994,5 +3987,3 @@
   href: ../dev-itpro/toc.yml
 - name: Dynamics 365 for Retail
   href: ../retail/toc.yml
-- name: Dynamics 365 for Talent
-  href: ../talent/toc.yml
