@@ -18,10 +18,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 4c61cb81368251540e0015e155b1cc932bf7b948
-ms.openlocfilehash: 6360bbc8e5abd94cfd1c2853bc384598047eec39
+ms.sourcegitcommit: 4485bd6442d186e5a6bac90e0a9041566e2e26d0
+ms.openlocfilehash: efa82abcd25101fc7be772c32e6c4fee7976d4bb
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/16/2018
+ms.lasthandoff: 06/25/2018
 
 ---
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 05/16/2018
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Finance and Operations には、[製品可用性ガイド](http://download.microsoft.com/documents/dynamics/Microsoft%20Dynamics%20AX%20Product%20Availability%20Guide.pdf) に記載されている国/地域向けの機能が用意されています。 この機能は、現在有効な法人の基本住所に基づいて有効になります。 
+Microsoft Dynamics 365 for Finance and Operations には、[製品のローカライズおよび翻訳の対応状況に関するガイド](https://aka.ms/ax-availabilityguide) に記載されている国/地域向けの機能が用意されています。 この機能は、現在有効な法人の基本住所に基づいて有効になります。 
 
 このトピックでは、国/地域固有のソリューション、更新プログラム、アラートおよび機能について詳しく説明しているリソースの一覧を示します。 
 
