@@ -1653,6 +1653,7 @@
                 - name: 年度末決算
                   href: ../financials/localizations/emea-cze-hun-year-end.md
             - name: デンマーク
+              href: ../financials/localizations/denmark.md
               items:
                 - name: 顧客アカウントへの支払伝票形式の割り当て
                   href: ../financials/localizations/tasks/assign-payment-slip-format-customer-account.md
@@ -1684,6 +1685,7 @@
                 - name: VAT 明細書
                   href: ../financials/localizations/emea-est-vat-statement-details.md
             - name: フランス
+              href: ../financials/localizations/france.md
               items:
                 - name: 公的機関
                   items:
@@ -1760,6 +1762,7 @@
                 - name: 電子税申告の設定
                   href: ../dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md?toc=/fin-and-ops/toc.json
             - name: ハンガリー
+              href: ../financials/localizations/hungary.md
               items:
                 - name: 為替レート計算
                   href: ../financials/localizations/tasks/hu-00001-exchange-rate-calculation.md
@@ -1774,6 +1777,7 @@
                 - name: 年度末決算
                   href: ../financials/localizations/emea-cze-hun-year-end.md
             - name: アイスランド
+              href: ../financials/localizations/iceland.md
               items:
                 - name: 仕入先勘定の作成および請求書申告カテゴリの関連付け
                   href: ../financials/localizations/tasks/create-vendor-account-attach-invoice-declaration-category.md
@@ -1784,6 +1788,7 @@
                 - name: 仕入先請求書申告の更新およびレポートの生成
                   href: ../financials/localizations/tasks/update-vendor-invoice-declarations-report.md
             - name: イタリア
+              href: ../financials/localizations/italy.md
               items:
                 - name: VAT 明細書の詳細
                   href: ../financials/localizations/emea-ita-vat-statements-details.md
@@ -1806,6 +1811,7 @@
                 - name: 源泉徴収税
                   href: ../financials/localizations/emea-ita-withholding-tax.md
             - name: ラトビア
+              href: ../financials/localizations/latvia.md
               items:
                 - name: 固定資産会計
                   href: ../financials/localizations/emea-lva-fixed-assets-accounting.md
@@ -1818,6 +1824,7 @@
                 - name: VAT 明細書の詳細
                   href: ../financials/localizations/emea-lva-vat-statement-details.md
             - name: リトアニア
+              href: ../financials/localizations/lithuania.md
               items:
                 - name: 固定資産修復明細書
                   href: ../financials/localizations/emea-ltu-fixed-asset-repair-statement.md
@@ -1828,12 +1835,14 @@
                 - name: VAT 明細書の詳細
                   href: ../financials/localizations/emea-ltu-vat-statement-details.md
             - name: オランダ
+              href: ../financials/localizations/netherlands.md
               items:
                 - name: 電子税申告 (EVAT)
                   href: ../financials/localizations/tasks/nl-00010-electronic-tax-declarations-evat.md
                 - name: Semansys XBRL 統合
                   href: ../financials/localizations/tasks/nl-00003-semansys-xbrl-integration.md
             - name: ノルウェー
+              href: ../financials/localizations/norway.md
               items:
                 - name: 顧客および仕入先の支払形式
                   href: ../financials/localizations/tasks/no-00003-customer-vendor-payment-formats.md
@@ -1848,6 +1857,7 @@
                 - name: キャッシュ レジスターの配置ガイドライン
                   href: ../retail/localizations/emea-nor-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json
             - name: ポーランド
+              href: ../financials/localizations/poland.md
               items:
                 - name: 単価からの行割引の計算
                   href: ../financials/localizations/emea-pol-line-discount-calculation-from-unit-price.md
@@ -1870,6 +1880,7 @@
                 - name: 売上高残高明細書
                   href: ../financials/localizations/emea-pol-turnover-balances-statement.md
             - name: スペイン
+              href: ../financials/localizations/spain.md
               items:
                 - name: 請求書での現金割引の適用
                   href: ../financials/localizations/emea-esp-cash-discount-applied-invoice.md
@@ -1898,6 +1909,7 @@
                 - name: 特殊エントリと期首表
                   href: ../financials/localizations/emea-esp-opening-sheets-spain.md
             - name: スウェーデン
+              href: ../financials/localizations/sweden.md
               items:
                 - name: 監査担当者向けの財務情報のエクスポート (スウェーデン)
                   href: ../financials/localizations/emea-swe-sie-standard-report.md
@@ -1906,10 +1918,12 @@
                 - name: キャッシュ レジスター
                   href: ../retail/localizations/emea-swe-cash-registers.md?toc=/fin-and-ops/toc.json
             - name: スイス
+              href: ../financials/localizations/switzerland.md
               items:
                 - name: ESR での顧客支払のインポート
                   href: ../financials/localizations/emea-che-esr-customer-payments-import.md
             - name: 英国
+              href: ../financials/localizations/united-kingdom.md
               items:
                 - name: '建築業スキーム '
                   href: ../financials/localizations/emea-gbr-cis-construction-industry-scheme.md
