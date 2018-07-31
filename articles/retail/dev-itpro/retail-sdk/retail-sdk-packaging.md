@@ -1,9 +1,9 @@
 ---
-title: "Retail SDK 小売パッケージ"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations の小売展開可能なパッケージを作成する方法について説明します。"
+title: "Retail SDK パッケージ"
+description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations の配置可能小売パッケージを作成する方法について説明します。"
 author: mugunthanm
 manager: AnnBe
-ms.date: 11/14/2017
+ms.date: 06/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -18,101 +18,201 @@ ms.author: sijoshi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 01abea8451640fd47653442a8e8a8eeb76d6533b
+ms.sourcegitcommit: 6c6c7c3f63b7a49820811a7ec80248b09b6e3acf
+ms.openlocfilehash: 37dfe38c7e7912503133a41ce600f0d3543d6e39
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 06/19/2018
 
 ---
 
-# <a name="retail-sdk-packaging"></a><span data-ttu-id="85b25-103">Retail SDK 小売パッケージ</span><span class="sxs-lookup"><span data-stu-id="85b25-103">Retail SDK packaging</span></span>
+# <a name="retail-sdk-packaging"></a><span data-ttu-id="e5532-103">Retail SDK パッケージ</span><span class="sxs-lookup"><span data-stu-id="e5532-103">Retail SDK packaging</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="85b25-104">このトピックでは、Microsoft Dynamics 365 for Finance and Operations の小売展開可能なパッケージを手動で作成する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="85b25-104">This topic explains how to manually create a retail deployable package for Microsoft Dynamics 365 for Finance and Operations.</span></span>
+<span data-ttu-id="e5532-104">このトピックでは、次のような Retail コンポーネントの拡張機能のカスタマイズをパッケージ化し、Microsoft Dynamics Lifecycle Services (LCS) を使用して、パッケージを環境に配置する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="e5532-104">This topic explains how to package customizations for extensions of the following Retail components and deploy the package to your environment by using Microsoft Dynamics Lifecycle Services (LCS):</span></span>
 
-<span data-ttu-id="85b25-105">Retail の展開可能なパッケージは、次の小売コンポーネントがすべて含まれるバンドル パッケージです。</span><span class="sxs-lookup"><span data-stu-id="85b25-105">The Retail deployable package is a bundle package, which includes all the of the following retail components:</span></span>
+- <span data-ttu-id="e5532-105">Commerce Runtime (CRT)</span><span class="sxs-lookup"><span data-stu-id="e5532-105">Commerce runtime (CRT)</span></span>
+- <span data-ttu-id="e5532-106">Retail プロキシ</span><span class="sxs-lookup"><span data-stu-id="e5532-106">Retail proxy</span></span>
+- <span data-ttu-id="e5532-107">Retail サーバー</span><span class="sxs-lookup"><span data-stu-id="e5532-107">Retail Server</span></span>
+- <span data-ttu-id="e5532-108">Modern POS</span><span class="sxs-lookup"><span data-stu-id="e5532-108">Modern POS</span></span>
+- <span data-ttu-id="e5532-109">クラウド POS</span><span class="sxs-lookup"><span data-stu-id="e5532-109">Cloud POS</span></span>
+- <span data-ttu-id="e5532-110">ハードウェア ステーション</span><span class="sxs-lookup"><span data-stu-id="e5532-110">Hardware station</span></span>
+- <span data-ttu-id="e5532-111">チャネル データベース スクリプト</span><span class="sxs-lookup"><span data-stu-id="e5532-111">Channel database scripts</span></span>
+- <span data-ttu-id="e5532-112">支払コネクタ</span><span class="sxs-lookup"><span data-stu-id="e5532-112">Payment connector</span></span>
+- <span data-ttu-id="e5532-113">Retail Store スケール ユニット</span><span class="sxs-lookup"><span data-stu-id="e5532-113">Retail Store Scale Unit</span></span>
+- <span data-ttu-id="e5532-114">ハイブリッド アプリ (IOS および Android POS アプリ)</span><span class="sxs-lookup"><span data-stu-id="e5532-114">Hybrid app (IOS and Android POS app)</span></span>
 
--   <span data-ttu-id="85b25-106">Commerce Runtime (CRT)</span><span class="sxs-lookup"><span data-stu-id="85b25-106">Commerce runtime (CRT)</span></span>
--   <span data-ttu-id="85b25-107">Retail サーバー</span><span class="sxs-lookup"><span data-stu-id="85b25-107">Retail Server</span></span>
--   <span data-ttu-id="85b25-108">Modern POS</span><span class="sxs-lookup"><span data-stu-id="85b25-108">Modern POS</span></span>
--   <span data-ttu-id="85b25-109">クラウド POS</span><span class="sxs-lookup"><span data-stu-id="85b25-109">Cloud POS</span></span>
--   <span data-ttu-id="85b25-110">ハードウェア ステーション</span><span class="sxs-lookup"><span data-stu-id="85b25-110">Hardware station</span></span>
--   <span data-ttu-id="85b25-111">チャネル データベース スクリプト</span><span class="sxs-lookup"><span data-stu-id="85b25-111">Channel database scripts</span></span>
+## <a name="retail-deployable-package"></a><span data-ttu-id="e5532-115">配置可能小売パッケージ</span><span class="sxs-lookup"><span data-stu-id="e5532-115">Retail deployable package</span></span>
+<span data-ttu-id="e5532-116">小売可能なパッケージは、配置に必要なすべてのメタデータと共に、すべてのカスタマイズを含む 1 つの結合されたパッケージです。</span><span class="sxs-lookup"><span data-stu-id="e5532-116">A retail deployable package is one combined package that contains all your customizations together with all the metadata that is required for deployment.</span></span> <span data-ttu-id="e5532-117">この小売展開可能パッケージを使用して、カスタマイズをさまざまな環境に展開できます。</span><span class="sxs-lookup"><span data-stu-id="e5532-117">You can use this retail deployable package to deploy your customizations to various environments.</span></span> <span data-ttu-id="e5532-118">LCS で自動フローを使用して、配置を行うことができます。またはパッケージ内に用意されているスクリプトを使用して手動で行うことができます。</span><span class="sxs-lookup"><span data-stu-id="e5532-118">You can do the deployment by using the automated flow in LCS, or you can do it manually by using the scripts that are provided inside the package.</span></span> <span data-ttu-id="e5532-119">このトピックでは、配置可能小売パッケージを生成するプロセスを説明します。</span><span class="sxs-lookup"><span data-stu-id="e5532-119">This topic guides you through the process of generating the retail deployable package.</span></span>
 
-<span data-ttu-id="85b25-112">Retail ソフトウェアの開発キット (SDK) に関する詳細については、[Retail SDK の概要](retail-sdk-overview.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="85b25-112">For detailed information about the Retail software development kit (SDK), see [Retail SDK overview](retail-sdk-overview.md).</span></span> 
+> [!IMPORTANT]
+> <span data-ttu-id="e5532-120">Retail コンポーネントのすべてのカスタマイズは、1 つの配置可能なパッケージとして提供されます。</span><span class="sxs-lookup"><span data-stu-id="e5532-120">All customizations for the Retail components are packaged as a single retail deployable package.</span></span> <span data-ttu-id="e5532-121">Finance and Operations は、Modern POS、Cloud POS、Retail Store Scale Unit、CRT、Retail Server といった、個々の Retail コンポーネントの個別のパッケージをサポートしていません。</span><span class="sxs-lookup"><span data-stu-id="e5532-121">Finance and Operations doesn't support separate packages for individual Retail components, such as Modern POS, Cloud POS, Retail Store Scale Unit, CRT, and Retail Server.</span></span> <span data-ttu-id="e5532-122">独立したソフトウェア ベンダー (ISV) またはさまざまなパートナーの拡張機能をマージまたは結合する必要がある場合でも、すべての拡張機能を単一の小売展開可能パッケージとしてパッケージする必要があります。</span><span class="sxs-lookup"><span data-stu-id="e5532-122">You must package all extensions as a single retail deployable package, even if you must merge or combine extensions from independent software vendors (ISVs) or various partners.</span></span>
+>
+> <span data-ttu-id="e5532-123">アプリケーション バージョン 7.1.1541.3036 よりも古い Retail ソフトウェア開発キット (SDK) のバージョンを使用して、カスタマイズが個々の Retail コンポーネント パッケージとして構築されパッケージ化された場合、パッケージは LCS の展開に対してサポートされなくなりました。</span><span class="sxs-lookup"><span data-stu-id="e5532-123">If your customizations were built and packaged as individual Retail component packages by using a version of the Retail software development kit (SDK) that is older than application version 7.1.1541.3036, the packages are no longer supported for deployment in LCS.</span></span> <span data-ttu-id="e5532-124">[KB 4015062](https://fix.lcs.dynamics.com/Home/Index/0/kb/4015062?permission=Download) で修正プログラムを取得する必要があります。その際、カスタマイズはリビルドおよび再梱包されます。</span><span class="sxs-lookup"><span data-stu-id="e5532-124">You must uptake the hotfix in [KB 4015062](https://fix.lcs.dynamics.com/Home/Index/0/kb/4015062?permission=Download), and then rebuild and repackage your customizations.</span></span>
 
-## <a name="retail-deployable-package"></a><span data-ttu-id="85b25-113">配置可能小売パッケージ</span><span class="sxs-lookup"><span data-stu-id="85b25-113">Retail deployable package</span></span>
-<span data-ttu-id="85b25-114">小売展開可能なパッケージは、LCS 展開サービスで使用できる資産です。またはサービスまたはカスタマイズのインストールに手動で配置することができます。</span><span class="sxs-lookup"><span data-stu-id="85b25-114">Retail deployable package is an asset that can be consumed by the LCS deployment service or it can be deployed manually to service or install a customization.</span></span> <span data-ttu-id="85b25-115">Retail SDK は、既存のソリューションに更新プログラムおよびカスタマイズをインストールまたは展開する 1 つの方法が確保されるように、Microsoft 修正プログラムまたは更新プログラム用に開発されたのと同じパッケージを生成します。</span><span class="sxs-lookup"><span data-stu-id="85b25-115">The Retail SDK generates the same package that is developed for Microsoft hotfixes or updates, so that there is one way to install or deploy updates and customizations to the existing solution.</span></span>
+<span data-ttu-id="e5532-125">Retail SDK の詳細情報は、[Retail SDK 概要](retail-sdk-overview.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e5532-125">For detailed information about the Retail SDK, see [Retail SDK overview](retail-sdk-overview.md).</span></span>
 
-### <a name="steps-to-create-a-retail-deployable-package"></a><span data-ttu-id="85b25-116">Retail の展開可能パッケージを作成する手順</span><span class="sxs-lookup"><span data-stu-id="85b25-116">Steps to create a Retail deployable package</span></span>
+### <a name="steps-to-create-a-retail-deployable-package"></a><span data-ttu-id="e5532-126">小売展開可能パッケージを作成する手順</span><span class="sxs-lookup"><span data-stu-id="e5532-126">Steps to create a retail deployable package</span></span>
+<span data-ttu-id="e5532-127">小売展開可能パッケージを生成するには、2 つの方法があります。</span><span class="sxs-lookup"><span data-stu-id="e5532-127">There are two ways to generate a retail deployable package.</span></span> <span data-ttu-id="e5532-128">Retail ビルドの自動化を使用することができます。または Retail SDK のビルド ツールを使用し、手動でパッケージを生成することもできます。</span><span class="sxs-lookup"><span data-stu-id="e5532-128">You can use the Retail build automation, or you can generate the package manually by using the build tools in the Retail SDK.</span></span> <span data-ttu-id="e5532-129">このトピックでは、手動メソッドを対象としています。</span><span class="sxs-lookup"><span data-stu-id="e5532-129">This topic focuses on the manual method.</span></span>
 
-<span data-ttu-id="85b25-117">Retail 展開可能パッケージを生成するには、2 つの方法があります。</span><span class="sxs-lookup"><span data-stu-id="85b25-117">There are two ways to generate the Retail deployable package.</span></span> <span data-ttu-id="85b25-118">1 つは小売ビルドの自動化を使用するか、または手動で小売 SDK のビルド ツールを使用します。</span><span class="sxs-lookup"><span data-stu-id="85b25-118">One is using the Retail build automation or manually using the build tools in Retail SDK.</span></span> <span data-ttu-id="85b25-119">このトピックでは、手動での方法について焦点を当てます。</span><span class="sxs-lookup"><span data-stu-id="85b25-119">In this topic we will focus on the manual way.</span></span>
-1. <span data-ttu-id="85b25-120">小売スタックに機能をカスタマイズまたは追加します。</span><span class="sxs-lookup"><span data-stu-id="85b25-120">Customize or add functionality to the Retail stack.</span></span>
-2. <span data-ttu-id="85b25-121">ビルド ツールを使用して、カスタマイズされたインストール パッケージに ID を与え、コードサインし、カスタマイズされた CRT、リテール サーバー、カスタマイズされたハードウェア ステーション アセンブリ、カスタマイズされたデータベース スクリプトを指定します。</span><span class="sxs-lookup"><span data-stu-id="85b25-121">Use the build tools to give an identity to the customized installation package, code-sign it, and specify the customized CRT, Retail Server, customized Hardware station assemblies, and customized database scripts.</span></span>
-3. <span data-ttu-id="85b25-122">すべての設定が Retail SDK\BuildTools フォルダーの Customization.settings ファイルで指定された後、VS dev コマンド プロンプト ツールを使用して Retail SDK フォルダーのルートで **msbuild/t:rebuild** を実行して、配置可能小売パッケージを生成します。</span><span class="sxs-lookup"><span data-stu-id="85b25-122">After all the settings have been specified on Customization.settings file under Retail SDK\BuildTools folder, run **msbuild /t:rebuild** on the root of the Retail SDK folder using the VS dev command prompt tool to generate the retail deployable packages.</span></span> <span data-ttu-id="85b25-123">パッケージを作成する前に、カスタマイズしたすべてのアセンブリを Retail SDK\References フォルダーに配置し、commerceruntime.config、CommerceRuntime.MPOSOffline.config、dllhost.exe.config などの変更された構成ファイルを Retail SDK\Assets フォルダーに配置します。</span><span class="sxs-lookup"><span data-stu-id="85b25-123">Before building the package, place all the customized assemblies to Retail SDK\References folder and also place the modified config files like commerceruntime.config, CommerceRuntime.MPOSOffline.config, dllhost.exe.config to the Retail SDK\Assets folder.</span></span>
+1. <span data-ttu-id="e5532-130">小売スタックに機能をカスタマイズまたは追加します。</span><span class="sxs-lookup"><span data-stu-id="e5532-130">Customize or add functionality to the Retail stack.</span></span>
+2. <span data-ttu-id="e5532-131">ビルド ツールを使用して、カスタマイズされたインストール パッケージを識別して、コードサインし、カスタマイズされた CRT、Retail サーバー、ハードウェア ステーション アセンブリ、カスタマイズされたデータベース スクリプトを指定します。</span><span class="sxs-lookup"><span data-stu-id="e5532-131">Use the build tools to identify the customized installation package, code-sign it, and specify the customized CRT, Retail Server, and Hardware station assemblies, and customized database scripts.</span></span>
+3. <span data-ttu-id="e5532-132">すべての設定が **...\\Retail SDK\\BuildTools** フォルダーの **Customization.settings** ファイルで指定された後、Retail SDK フォルダーのルートで **msbuild /t:rebuild** を起動します。</span><span class="sxs-lookup"><span data-stu-id="e5532-132">After all the settings have been specified in the **Customization.settings** file in the **...\\Retail SDK\\BuildTools** folder, run **msbuild /t:rebuild** on the root of the Retail SDK folder.</span></span> <span data-ttu-id="e5532-133">配置可能小売パッケージを生成するために、MSBuild ビルド ツールまたは Microsoft Visual Studio 開発者コマンド ライン ツールのいずれかを使用することができます。</span><span class="sxs-lookup"><span data-stu-id="e5532-133">You can use either the MSBuild build tool or the Microsoft Visual Studio developer command-line tool to generate the retail deployable packages.</span></span> <span data-ttu-id="e5532-134">パッケージを作成する前に、すべてのカスタマイズされたアセンブリを、**...\\Retail SDK\\References** フォルダに保存します。</span><span class="sxs-lookup"><span data-stu-id="e5532-134">Before you build the package, put all the customized assemblies in the **...\\Retail SDK\\References** folder.</span></span> <span data-ttu-id="e5532-135">さらに、**...\\Retail SDK\\Assets** フォルダーの **CommerceRuntime.Ext.config**、**CommerceRuntime.MPOSOffline.Ext.config**、 **HardwareStation.Extension.config**、および **RetailProxy.MPOSOffline.ext.config** のような変更済の構成ファイルを入力します。</span><span class="sxs-lookup"><span data-stu-id="e5532-135">Additionally, put the modified configuration files, such as **CommerceRuntime.Ext.config**, **CommerceRuntime.MPOSOffline.Ext.config**, **HardwareStation.Extension.config**, and **RetailProxy.MPOSOffline.ext.config**, in the **...\\Retail SDK\\Assets** folder.</span></span>
 
-## <a name="retail-sdk-build-tools--customization-settings"></a><span data-ttu-id="85b25-124">Retail SDK ビルド ツール: カスタマイズ設定</span><span class="sxs-lookup"><span data-stu-id="85b25-124">Retail SDK build tools – Customization settings</span></span>
-<span data-ttu-id="85b25-125">BuildTools\Customization.setting ファイルは、Retail SDK のコンフィギュレーション値のほとんどがビルドとパッケージのために設定されています。</span><span class="sxs-lookup"><span data-stu-id="85b25-125">BuildTools\Customization.setting files is where most of the configuration values for the Retail SDK are set for build and packaging.</span></span> <span data-ttu-id="85b25-126">これらの値は、バイナリ、コンポーネント、パッケージの名前付け、バージョン管理、コード署名の方法を制御します。</span><span class="sxs-lookup"><span data-stu-id="85b25-126">These values control how binaries, components, and packages are named, versioned, and code-signed.</span></span> <span data-ttu-id="85b25-127">このメタデータを定義した後、Retail SDK ビルド システムは資産に ID を付与するためにそれらを使用し、すべての Retail コンポーネントのカスタマイズ資産をパッケージ化します。</span><span class="sxs-lookup"><span data-stu-id="85b25-127">After you define this metadata, The Retail SDK build system uses it to give an identity to the assets, and to package the customization assets for all the Retail components.</span></span>
+## <a name="retail-sdk-build-tools--customization-settings"></a><span data-ttu-id="e5532-136">Retail SDK ビルド ツール: カスタマイズ設定</span><span class="sxs-lookup"><span data-stu-id="e5532-136">Retail SDK build tools – Customization settings</span></span>
+<span data-ttu-id="e5532-137">カスタマイズを構築しパッケージ化するために Retail SDK が使用するコンフィギュレーション値のほとんどが BuildTools\\Customization.setting files で設定されます。</span><span class="sxs-lookup"><span data-stu-id="e5532-137">Most of the configuration values that the Retail SDK uses to build and package customizations are set in the BuildTools\\Customization.setting files.</span></span> <span data-ttu-id="e5532-138">これらの値は、バイナリ、コンポーネント、パッケージの名前付け、バージョン管理、コード署名の方法を制御するメタデータを定義します。</span><span class="sxs-lookup"><span data-stu-id="e5532-138">These values define metadata that controls how binaries, components, and packages are named, versioned, and code-signed.</span></span> <span data-ttu-id="e5532-139">このメタデータを定義した後、Retail SDK ビルド システムはカスタマイズ資産を識別し、すべての Retail コンポーネントのためにカスタマイズ資産をパッケージ化します。</span><span class="sxs-lookup"><span data-stu-id="e5532-139">After you define this metadata, the Retail SDK build system uses it to identify the customization assets and package them for all the Retail components.</span></span>
 
-<span data-ttu-id="85b25-128">次のコンフィギュレーションの一覧は、Customization.Settings ファイルで使用できます。</span><span class="sxs-lookup"><span data-stu-id="85b25-128">The following list of configurations is available in Customization.Settings file:</span></span>
--   <span data-ttu-id="85b25-129">**AssemblyNamePrefix** - アセンブリの接頭語名を指定します。</span><span class="sxs-lookup"><span data-stu-id="85b25-129">**AssemblyNamePrefix** – Specify the prefix name for the assembly.</span></span> <span data-ttu-id="85b25-130">Retail SDK を作成するときは、すべてのアセンブリに接頭辞としてこの名前が付きます。</span><span class="sxs-lookup"><span data-stu-id="85b25-130">When you build the Retail SDK, all the assemblies are prefixed with this name.</span></span>
--   <span data-ttu-id="85b25-131">**CustomAssemblyVersion** - Retail SDK を使用して作成されたすべてのアセンブリのカスタム アセンブリ バージョンを指定します。</span><span class="sxs-lookup"><span data-stu-id="85b25-131">**CustomAssemblyVersion** – Specify the custom assembly version for all assemblies that are built by using the Retail SDK.</span></span>
--   <span data-ttu-id="85b25-132">**CustomVersion** - Retail SDK を使用して作成されたすべてのアセンブリのカスタム ファイル バージョンを指定します。</span><span class="sxs-lookup"><span data-stu-id="85b25-132">**CustomVersion** – Specify the custom file version for all assemblies that are built by using the Retail SDK.</span></span>
--   <span data-ttu-id="85b25-133">**CustomName** - アセンブリのカスタム名を指定します。</span><span class="sxs-lookup"><span data-stu-id="85b25-133">**CustomName** – Specify the custom name for the assembly.</span></span>
--   <span data-ttu-id="85b25-134">**CustomDescription** - アセンブリの説明を指定します。</span><span class="sxs-lookup"><span data-stu-id="85b25-134">**CustomDescription** – Specify the description for the assembly.</span></span>
--   <span data-ttu-id="85b25-135">**CustomPublisher** – アセンブリの発行元を指定します。</span><span class="sxs-lookup"><span data-stu-id="85b25-135">**CustomPublisher** – Specify the publisher for the assembly.</span></span>
--   <span data-ttu-id="85b25-136">**CustomPublisherDisplayName** - アセンブリの著作権を指定します。</span><span class="sxs-lookup"><span data-stu-id="85b25-136">**CustomPublisherDisplayName** – Specify the copyright for the assembly.</span></span>
--   <span data-ttu-id="85b25-137">**SignAssembly** – ビルド時にアセンブリに署名する場合 **はい** を指定してください。</span><span class="sxs-lookup"><span data-stu-id="85b25-137">**SignAssembly** – Specify **True** if you want to sign the assembly during the build.</span></span>
--   <span data-ttu-id="85b25-138">**DelaySign** - ビルド中にアセットの署名を延期する場合は、**True** を指定します。</span><span class="sxs-lookup"><span data-stu-id="85b25-138">**DelaySign** – Specify **True** if you want to delay signing of the assets during the build.</span></span>
--   <span data-ttu-id="85b25-139">**AssemblyOriginatorKeyFile** - アセンブリに署名するために使用する厳密な名前キーを指定します。</span><span class="sxs-lookup"><span data-stu-id="85b25-139">**AssemblyOriginatorKeyFile** – Specify the strong name key to use to sign the assembly.</span></span>
--   <span data-ttu-id="85b25-140">**ModernPOSPackageCertificateKeyFile** – Modern POS とハードウェア ステーションの署名に使用する PFX ファイルを指定します。</span><span class="sxs-lookup"><span data-stu-id="85b25-140">**ModernPOSPackageCertificateKeyFile** – Specify the PFX file to use to sign Modern POS and Hardware station.</span></span>
--   <span data-ttu-id="85b25-141">**RetailServerLibraryPathForProxyGeneration** – プロキシの生成に使用するカスタマイズされた Retail サーバー アセンブリを指定します (TypeScript と C\# プロキシの両方)。</span><span class="sxs-lookup"><span data-stu-id="85b25-141">**RetailServerLibraryPathForProxyGeneration** – Specify the customized Retail Server assembly to use for proxy generation (both TypeScript and C\# proxy).</span></span>
--   <span data-ttu-id="85b25-142">**ItemGroup** セクション:</span><span class="sxs-lookup"><span data-stu-id="85b25-142">In the **ItemGroup** section:</span></span>
-    -   <span data-ttu-id="85b25-143">**ISV\_CommerceRuntime\_CustomizableFile** – すべてのカスタマイズされた CRT アセンブリを指定します。</span><span class="sxs-lookup"><span data-stu-id="85b25-143">**ISV\_CommerceRuntime\_CustomizableFile** – Specify all the customized CRT assembly.</span></span> <span data-ttu-id="85b25-144">カスタマイズされた各 CRT アセンブリに対して 1 つずつ、複数のエントリを持つことができます。</span><span class="sxs-lookup"><span data-stu-id="85b25-144">You can have multiple entries, one for each customized CRT assembly.</span></span>
-    -   <span data-ttu-id="85b25-145">**ISV\_RetailServer\_CustomizableFile** – カスタマイズされたすべての Retail サーバー アセンブリを指定します。</span><span class="sxs-lookup"><span data-stu-id="85b25-145">**ISV\_RetailServer\_CustomizableFile** – Specify all the customized Retail Server assembly.</span></span> <span data-ttu-id="85b25-146">カスタマイズされた各 Retail サーバー アセンブリに対して 1 つの、複数のエントリを持つことができます。</span><span class="sxs-lookup"><span data-stu-id="85b25-146">You can have multiple entries, one for each customized Retail Server assembly.</span></span>
-    -   <span data-ttu-id="85b25-147">**ISV\_HardwareStation\_CustomizableFile** – カスタマイズされたすべてのハードウェア ステーション アセンブリを指定します。</span><span class="sxs-lookup"><span data-stu-id="85b25-147">**ISV\_HardwareStation\_CustomizableFile** – Specify all the customized Hardware station assembly.</span></span> <span data-ttu-id="85b25-148">カスタマイズされた各ハードウェア ステーション アセンブリに対して 1 つずつ、複数のエントリを持つことができます。</span><span class="sxs-lookup"><span data-stu-id="85b25-148">You can have multiple entries, one for each customized Hardware station assembly.</span></span>
-    -   <span data-ttu-id="85b25-149">**ISV\_CustomDatabaseFile\_Upgrade\_Custom** – カスタマイズされたすべてのデータベース スクリプトを指定します。</span><span class="sxs-lookup"><span data-stu-id="85b25-149">**ISV\_CustomDatabaseFile\_Upgrade\_Custom** – Specify all the customized database scripts.</span></span>
+<span data-ttu-id="e5532-140">次のコンフィギュレーション設定は、 Customization.settings ファイルで使用できます。</span><span class="sxs-lookup"><span data-stu-id="e5532-140">The following configuration settings are available in the Customization.settings file:</span></span>
 
+- <span data-ttu-id="e5532-141">**AssemblyNamePrefix** - アセンブリの接頭語名を指定します。</span><span class="sxs-lookup"><span data-stu-id="e5532-141">**AssemblyNamePrefix** – Specify the prefix name for the assembly.</span></span> <span data-ttu-id="e5532-142">Retail SDK を作成するときは、すべてのアセンブリに接頭辞としてこの名前が付きます。</span><span class="sxs-lookup"><span data-stu-id="e5532-142">When you build the Retail SDK, all the assemblies are prefixed with this name.</span></span>
+- <span data-ttu-id="e5532-143">**CustomAssemblyVersion** - Retail SDK を使用して作成されたすべてのアセンブリのカスタム アセンブリ バージョンを指定します。</span><span class="sxs-lookup"><span data-stu-id="e5532-143">**CustomAssemblyVersion** – Specify the custom assembly version for all assemblies that are built by using the Retail SDK.</span></span>
+- <span data-ttu-id="e5532-144">**CustomVersion** - Retail SDK を使用して作成されたすべてのアセンブリのカスタム ファイル バージョンを指定します。</span><span class="sxs-lookup"><span data-stu-id="e5532-144">**CustomVersion** – Specify the custom file version for all assemblies that are built by using the Retail SDK.</span></span>
+- <span data-ttu-id="e5532-145">**CustomName** - アセンブリのカスタム名を指定します。</span><span class="sxs-lookup"><span data-stu-id="e5532-145">**CustomName** – Specify the custom name for the assembly.</span></span>
+- <span data-ttu-id="e5532-146">**CustomDescription** - アセンブリの説明を指定します。</span><span class="sxs-lookup"><span data-stu-id="e5532-146">**CustomDescription** – Specify the description for the assembly.</span></span>
+- <span data-ttu-id="e5532-147">**CustomPublisher** – アセンブリの発行元を指定します。</span><span class="sxs-lookup"><span data-stu-id="e5532-147">**CustomPublisher** – Specify the publisher for the assembly.</span></span>
+- <span data-ttu-id="e5532-148">**CustomPublisherDisplayName** - アセンブリの著作権を指定します。</span><span class="sxs-lookup"><span data-stu-id="e5532-148">**CustomPublisherDisplayName** – Specify the copyright for the assembly.</span></span>
+- <span data-ttu-id="e5532-149">**SignAssembly** – ビルド時にアセンブリに署名するには**はい**を指定してください。</span><span class="sxs-lookup"><span data-stu-id="e5532-149">**SignAssembly** – Specify **True** to sign the assembly during the build.</span></span>
+- <span data-ttu-id="e5532-150">**DelaySign** – ビルド中にアセットの署名を延期するには **True** を指定します。</span><span class="sxs-lookup"><span data-stu-id="e5532-150">**DelaySign** – Specify **True** to delay signing of the assets during the build.</span></span>
+- <span data-ttu-id="e5532-151">**AssemblyOriginatorKeyFile** - アセンブリに署名するために使用する厳密な名前キーを指定します。</span><span class="sxs-lookup"><span data-stu-id="e5532-151">**AssemblyOriginatorKeyFile** – Specify the strong name key to use to sign the assembly.</span></span>
+- <span data-ttu-id="e5532-152">**ModernPOSPackageCertificateKeyFile** – Modern POS とハードウェア ステーションの署名に使用する個人情報交換 (PFX) ファイルを指定します。</span><span class="sxs-lookup"><span data-stu-id="e5532-152">**ModernPOSPackageCertificateKeyFile** – Specify the Personal Information Exchange (PFX) file to use to sign Modern POS and Hardware station.</span></span>
+- <span data-ttu-id="e5532-153">**RetailServerLibraryPathForProxyGeneration** – プロキシの生成に使用するカスタマイズされたRetail サーバー アセンブリを指定します (TypeScript と C\# プロキシの両方)。</span><span class="sxs-lookup"><span data-stu-id="e5532-153">**RetailServerLibraryPathForProxyGeneration** – Specify the customized Retail Server assembly to use for proxy generation (both TypeScript and C\# proxies).</span></span>
 
-#### <a name="retail-reployable-package"></a><span data-ttu-id="85b25-150">配置可能小売パッケージ</span><span class="sxs-lookup"><span data-stu-id="85b25-150">Retail reployable package</span></span>
+    <span data-ttu-id="e5532-154">7.1 以前のバージョンでは、ここで Retail サーバー アセンブリの名前を指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e5532-154">For 7.1 and earlier versions, you must specify the name of the Retail Server assembly here.</span></span>
 
-### <a name="crt-extension-assemblies"></a><span data-ttu-id="85b25-151">CRT 拡張アセンブリ</span><span class="sxs-lookup"><span data-stu-id="85b25-151">CRT extension assemblies</span></span>
-<span data-ttu-id="85b25-152">既定では、CRT が個別に配置されないため、個々の小売コンポーネントの個別パッケージはありません。代わりに、CRT 資産は Modern POS、Retail サーバー、および Microsoft Dynamics 365 for Operations HQ などの他のアプリケーション コンポーネントと共にパッケージ化されます。</span><span class="sxs-lookup"><span data-stu-id="85b25-152">By default, there is no separate package for individual retail components, because CRT isn't deployed individually, instead, CRT assets are packaged together with other application components, such as Modern POS, Retail Server, and Microsoft Dynamics 365 for Operations HQ.</span></span> <span data-ttu-id="85b25-153">Retail SDK のビルド ツールが使用されているすべてのコンポーネントで CRT をパッケージ化するためには、次の構成エントリを行う必要があります。</span><span class="sxs-lookup"><span data-stu-id="85b25-153">In order for the Retail SDK build tools to package CRT in all the components where it's used, you must make the following configuration entries:</span></span>
+    <span data-ttu-id="e5532-155">7.2 以降のバージョンでは、プロキシ生成の commerce ジェネレーター ツールを使用します。</span><span class="sxs-lookup"><span data-stu-id="e5532-155">For 7.2 and later versions, use the commerce generator tool for proxy generation.</span></span> <span data-ttu-id="e5532-156">ただし、E コマース クライアント側でプロキシを使用している場合は、ここでアセンブリ名を指定してください。</span><span class="sxs-lookup"><span data-stu-id="e5532-156">However, if you're using the proxy on the e-commerce client side, specify the assembly name here.</span></span>
 
-1.  <span data-ttu-id="85b25-154">**CRT 拡張アセンブリ** - これらは、CRT 拡張を記述した新しいアセンブリになります。</span><span class="sxs-lookup"><span data-stu-id="85b25-154">**CRT extension assemblies** – These will be the new assemblies where you've written CRT extensions.</span></span> <span data-ttu-id="85b25-155">Retail SDK\\BuildTools\\Customization.settings で CRT 拡張アセンブリのエントリを指定します。</span><span class="sxs-lookup"><span data-stu-id="85b25-155">Specify an entry for CRT extension assemblies in Retail SDK\\BuildTools\\Customization.settings.</span></span> 
+- <span data-ttu-id="e5532-157">**ItemGroup** セクションには、次の設定が含まれます。</span><span class="sxs-lookup"><span data-stu-id="e5532-157">The **ItemGroup** section includes the following settings:</span></span>
 
-    <span data-ttu-id="85b25-156">[![crt-customization 設定](./media/crt-customization-settings.png)](./media/crt-customization-settings.png)</span><span class="sxs-lookup"><span data-stu-id="85b25-156">[![crt-customization settings](./media/crt-customization-settings.png)](./media/crt-customization-settings.png)</span></span>
-    
-2.  <span data-ttu-id="85b25-157">**CRT commerceruntime.config ファイル** - 新しい CRT アセンブリがある場合は、CRT コンフィギュレーション ファイルに追加して、ランタイムが読み込めるようにする必要があります。</span><span class="sxs-lookup"><span data-stu-id="85b25-157">**CRT commerceruntime.config file** – If you have a new CRT assembly, you must add it to the CRT configuration file so that the runtime can load it.</span></span> <span data-ttu-id="85b25-158">Retail SDK\\References\\commerceruntime.config で CRT 拡張アセンブリのエントリを指定します。</span><span class="sxs-lookup"><span data-stu-id="85b25-158">Specify an entry for CRT extension assemblies in Retail SDK\\References\\commerceruntime.config.</span></span> 
+    - <span data-ttu-id="e5532-158">**ISV\_CommerceRuntime\_CustomizableFile** – すべてのカスタマイズされた CRT アセンブリの詳細を指定します。</span><span class="sxs-lookup"><span data-stu-id="e5532-158">**ISV\_CommerceRuntime\_CustomizableFile** – Specify the details of all the customized CRT assemblies.</span></span> <span data-ttu-id="e5532-159">各 CRT アセンブリに対して 1 つずつ、複数のエントリを持つことができます。</span><span class="sxs-lookup"><span data-stu-id="e5532-159">You can have multiple entries, one for each CRT assembly.</span></span>
 
-    <span data-ttu-id="85b25-159">[![crt-config](./media/crt-config.png)](./media/crt-config.png)</span><span class="sxs-lookup"><span data-stu-id="85b25-159">[![crt-config](./media/crt-config.png)](./media/crt-config.png)</span></span>
+        <span data-ttu-id="e5532-160">**例**</span><span class="sxs-lookup"><span data-stu-id="e5532-160">**Example**</span></span>
 
-#### <a name="retail-server-extension-assemblies"></a><span data-ttu-id="85b25-160">Retail サーバーの拡張機能アセンブリ</span><span class="sxs-lookup"><span data-stu-id="85b25-160">Retail Server extension assemblies</span></span>
-1.  <span data-ttu-id="85b25-161">**Retail サーバー拡張アセンブリ** – これらは Retail サーバーのカスタマイズを記述した新しいアセンブリです。</span><span class="sxs-lookup"><span data-stu-id="85b25-161">**Retail Server extension assemblies** – These will be the new assemblies where you've written Retail Server customizations.</span></span> <span data-ttu-id="85b25-162">Retail SDK\\BuildTools\\Customization.settings で CRT 拡張アセンブリのエントリを指定します。</span><span class="sxs-lookup"><span data-stu-id="85b25-162">Specify an entry for CRT extension assemblies in Retail SDK\\BuildTools\\Customization.settings.</span></span> 
+        ```
+        ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\MyCrtExtension.dll"
+        ```
 
-    <span data-ttu-id="85b25-163">[![小売サーバー カスタマイズの設定](./media/retail-server-customization-setting.png)](./media/retail-server-customization-setting.png)</span><span class="sxs-lookup"><span data-stu-id="85b25-163">[![retail server customization setting](./media/retail-server-customization-setting.png)](./media/retail-server-customization-setting.png)</span></span>
-    
-2.  <span data-ttu-id="85b25-164">**Retail サーバー web.config ファイル** – Retail サーバー拡張アセンブリのエントリを Retail サーバーの web.config ファイルに追加し、読み込んで使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="85b25-164">**Retail Server web.config file** – You must add an entry for Retail Server extension assemblies to the Retail Server web.config file, so that they are loaded and used.</span></span> <span data-ttu-id="85b25-165">Retail SDK\\Packages\\RetailServer\\Code\\web.config で Retail Server 拡張アセンブリのエントリを指定します。</span><span class="sxs-lookup"><span data-stu-id="85b25-165">Specify an entry for Retail Server Extension assemblies in Retail SDK\\Packages\\RetailServer\\Code\\web.config.</span></span> 
+    - <span data-ttu-id="e5532-161">**ISV\_RetailServer\_CustomizableFile** – カスタマイズされたすべての Retail サーバー アセンブリの詳細を指定します。</span><span class="sxs-lookup"><span data-stu-id="e5532-161">**ISV\_RetailServer\_CustomizableFile** – Specify the details of all the customized Retail Server assemblies.</span></span> <span data-ttu-id="e5532-162">各 Retail サーバー アセンブリに対して 1 つの、複数のエントリを持つことができます。</span><span class="sxs-lookup"><span data-stu-id="e5532-162">You can have multiple entries, one for each Retail Server assembly.</span></span>
 
-    <span data-ttu-id="85b25-166">[![小売サーバーの web config](./media/retail-server-web-config.png)](./media/retail-server-web-config.png)</span><span class="sxs-lookup"><span data-stu-id="85b25-166">[![retail server web config](./media/retail-server-web-config.png)](./media/retail-server-web-config.png)</span></span>
+        <span data-ttu-id="e5532-163">**例**</span><span class="sxs-lookup"><span data-stu-id="e5532-163">**Example**</span></span>
 
-##### <a name="database-scripts"></a><span data-ttu-id="85b25-167">データベース スクリプト</span><span class="sxs-lookup"><span data-stu-id="85b25-167">Database scripts</span></span>
-<span data-ttu-id="85b25-168">カスタマイズの一環として、 Modern POS のオフライン データベースに加えてチャネル データベースをアップグレードする必要があります。</span><span class="sxs-lookup"><span data-stu-id="85b25-168">As a part of a customization, you might have to upgrade a channel database in addition to a Modern POS offline database.</span></span> <span data-ttu-id="85b25-169">現在、アップグレード SQL スクリプトを使用して、チャネルおよび Modern POS オフライン データベースをアップグレードしています。</span><span class="sxs-lookup"><span data-stu-id="85b25-169">Currently, you use upgrade SQL scripts to upgrade the channel and Modern POS offline databases.</span></span> <span data-ttu-id="85b25-170">アップグレード SQL スクリプトを記述し、それを Retail SDK\Database\Upgrade\Custom に配置できるので、パッケージ化ツールではそれをピッキングし、適切なコンポーネント (Retail サーバーと Modern POS オフライン) の配置可能なパッケージに含めることができます。</span><span class="sxs-lookup"><span data-stu-id="85b25-170">You can write an upgrade SQL script and put it at Retail SDK\Database\Upgrade\Custom, so that packaging tools can pick it up and include it in the deployable package for the correct components (Retail Server and Modern POS Offline).</span></span> 
+        ```
+        ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\MyRetailServerExtension.dll"
+        ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\MyRetailServerExtension2.dll"
+        ```
 
-<span data-ttu-id="85b25-171">[![カスタム db スクリプト](./media/custom-db-script.png)](./media/custom-db-script.png) また、Retail SDK\\BuildTools\\Customization.settings を更新して、データベース用にパッケージ化するファイルをビルドツールに入力します。</span><span class="sxs-lookup"><span data-stu-id="85b25-171">[![custom db script](./media/custom-db-script.png)](./media/custom-db-script.png) You must also update Retail SDK\\BuildTools\\Customization.settings to instruct the build tools which files to package for the database.</span></span> 
+    - <span data-ttu-id="e5532-164">**ISV\_RetailProxy\_CustomizableFile** – カスタマイズされたすべての Retail プロキシ アセンブリの詳細を指定します。</span><span class="sxs-lookup"><span data-stu-id="e5532-164">**ISV\_RetailProxy\_CustomizableFile** – Specify the details of all the customized Retail proxy assemblies.</span></span> <span data-ttu-id="e5532-165">各 Retail プロキシ アセンブリに対して 1 つの、複数のエントリを持つことができます。</span><span class="sxs-lookup"><span data-stu-id="e5532-165">You can have multiple entries, one for each Retail proxy assembly.</span></span> 
 
-<span data-ttu-id="85b25-172">[![データベース アップグレードのカスタマイズ設定](./media/database-upgrade-customization-setting-1024x311.png)](./media/database-upgrade-customization-setting.png) データベース スクリプトは、Retail サーバーおよび Modern POS オフライン パッケージとともにパッケージ化され、Retail Server および Modern POS がインストールされたときに実行されます。</span><span class="sxs-lookup"><span data-stu-id="85b25-172">[![database upgrade customization setting](./media/database-upgrade-customization-setting-1024x311.png)](./media/database-upgrade-customization-setting.png) Database scripts are packaged together with the Retail Server and Modern POS Offline packages, and are run when Retail Server and Modern POS are installed.</span></span> <span data-ttu-id="85b25-173">複数のカスタム データベース スクリプトがある場合は、アルファベット順に実行されます。</span><span class="sxs-lookup"><span data-stu-id="85b25-173">If there are multiple custom database scripts, they are run in alphabetical order.</span></span> <span data-ttu-id="85b25-174">したがって、スクリプトを特定の順序で実行する場合は、それに応じて名前を付ける必要があります。</span><span class="sxs-lookup"><span data-stu-id="85b25-174">Therefore, if you want to run the scripts in a specific order, you must name them accordingly.</span></span> <span data-ttu-id="85b25-175">CRT.RETAILUPGRADEHISTORY テーブルは、データベースに既に適用されているスクリプトを追跡します。</span><span class="sxs-lookup"><span data-stu-id="85b25-175">The CRT.RETAILUPGRADEHISTORY table keeps track of which scripts are already applied to the database.</span></span> <span data-ttu-id="85b25-176">したがって、次のデータベース アップグレードは、CRT.RETAILUPGRADEHISTORY テーブルに項目がないアップグレード スクリプトのみを実行します。</span><span class="sxs-lookup"><span data-stu-id="85b25-176">Therefore, the next database upgrade will run only those upgrade scripts that don't have an entry in the CRT.RETAILUPGRADEHISTORY table.</span></span>
+        <span data-ttu-id="e5532-166">**例**</span><span class="sxs-lookup"><span data-stu-id="e5532-166">**Example**</span></span>
 
-## <a name="generate-a-retail-deployable-package"></a><span data-ttu-id="85b25-177">配置可能小売パッケージを生成</span><span class="sxs-lookup"><span data-stu-id="85b25-177">Generate a retail deployable package</span></span>
+        ```
+        ISV_RetailProxy_CustomizableFile Include="$(SdkReferencesPath)\MyRetailProxyExtension.dll"
+        ```
 
-<span data-ttu-id="85b25-178">Retail SDK は、msbuild を完全にサポートしています。</span><span class="sxs-lookup"><span data-stu-id="85b25-178">The Retail SDK fully supports msbuild.</span></span> <span data-ttu-id="85b25-179">Retail SDK をビルドするには、管理者として **Visual studio 2015 開発者コマンド プロンプト ツール** ウィンドウを開き、**msbuild**を実行します (または、非デバッグ バージョンの場合は **msbuild /p:Configuration=Release** を実行します)。</span><span class="sxs-lookup"><span data-stu-id="85b25-179">To build the Retail SDK and , open a **Visual studio 2015 developer Command Prompt tool** window as an administrator, and run **msbuild** (or, for a non-debug version, run **msbuild /p:Configuration=Release**).</span></span> 
+    - <span data-ttu-id="e5532-167">**ISV\_HardwareStation\_CustomizableFile** – カスタマイズされたすべてのハードウェア ステーション アセンブリの詳細を指定します。</span><span class="sxs-lookup"><span data-stu-id="e5532-167">**ISV\_HardwareStation\_CustomizableFile** – Specify the details of all the customized Hardware station assemblies.</span></span> <span data-ttu-id="e5532-168">カスタマイズされた各ハードウェア ステーション アセンブリに対して 1 つずつ、複数のエントリを持つことができます。</span><span class="sxs-lookup"><span data-stu-id="e5532-168">You can have multiple entries, one for each customized Hardware station assembly.</span></span>
 
-### <a name="packages"></a><span data-ttu-id="85b25-180">パッケージ</span><span class="sxs-lookup"><span data-stu-id="85b25-180">Packages</span></span>
+        <span data-ttu-id="e5532-169">**例**</span><span class="sxs-lookup"><span data-stu-id="e5532-169">**Example**</span></span>
 
-<span data-ttu-id="85b25-181">ビルドが完了した後、Retail SDK\Packages\RetailDeployablePackage フォルダーに、配置可能小売パッケージ (RetailDeployablePackage.zip) が生成されます。</span><span class="sxs-lookup"><span data-stu-id="85b25-181">After the build is completed, retail deployable packages(RetailDeployablePackage.zip) is generated in the Retail SDK\Packages\RetailDeployablePackage folder.</span></span> <span data-ttu-id="85b25-182">注記: Retail 用の個別パッケージはなく、すべては RetailDeployablePackage と呼ばれる 1 つのバンドル パッケージとして結合され作成されます。</span><span class="sxs-lookup"><span data-stu-id="85b25-182">Note: There will not be any separate packages for retail, all will be combined and created as one bundle package called RetailDeployablePackage</span></span>
-      
- ## <a name="deploy-the-retail-deployable-packages"></a><span data-ttu-id="85b25-183">小売展開可能パッケージを配置する</span><span class="sxs-lookup"><span data-stu-id="85b25-183">Deploy the retail deployable packages</span></span>
- 
-<span data-ttu-id="85b25-184">手動または LCS 自動化フローを使用してパッケージを展開するには、[[展開可能なパッケージを適用する](../../../dev-itpro/deployment/apply-deployable-package-system.md)] および [[展開可能なパッケージをインストールする](../../../dev-itpro/deployment/install-deployable-package.md)] のトピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="85b25-184">To deploy the packages either manually or by using the LCS automated flow, refer to the following topics, [Apply a deployable package](../../../dev-itpro/deployment/apply-deployable-package-system.md) and [Install a deployable package](../../../dev-itpro/deployment/install-deployable-package.md).</span></span>
+        ```
+        ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\MyHardwareStationExtension.dll"
+        ```
+
+    - <span data-ttu-id="e5532-170">**ISV\_CustomDatabaseFile\_アップグレード\_カスタム** – カスタマイズされたすべてのデータベース スクリプトの詳細を指定します。</span><span class="sxs-lookup"><span data-stu-id="e5532-170">**ISV\_CustomDatabaseFile\_Upgrade\_Custom** – Specify the details of all the customized database scripts.</span></span>
+
+        <span data-ttu-id="e5532-171">**例**</span><span class="sxs-lookup"><span data-stu-id="e5532-171">**Example**</span></span>
+
+        ```
+        ISV_CustomDatabaseFile_Upgrade_Custom Include="$(SdkRootPath)\Database\Upgrade\Custom\SqlUpdatev1.sql"
+        ```
+
+> [!IMPORTANT]
+> <span data-ttu-id="e5532-172">ビルド プロセスを開始する前に、拡張アセンブリを \\Retail SDK\\References に、カスタム データベース スクリプトを \\RetailSDK\\Database\Upgrade\\Custom に配置する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e5532-172">Before you start the build process, you must put extension assemblies in ...\\Retail SDK\\References and custom database scripts under ...\\RetailSDK\\Database\Upgrade\\Custom.</span></span>
+
+### <a name="database-scripts"></a><span data-ttu-id="e5532-173">データベース スクリプト</span><span class="sxs-lookup"><span data-stu-id="e5532-173">Database scripts</span></span>
+<span data-ttu-id="e5532-174">データベース スクリプトは、Retail サーバーおよび Modern POS オフライン パッケージとともにパッケージ化され、Retail Server および Modern POS がインストールされたときに実行されます。</span><span class="sxs-lookup"><span data-stu-id="e5532-174">Database scripts are packaged together with the Retail Server and Modern POS Offline packages, and are run when Retail Server and Modern POS are installed.</span></span> <span data-ttu-id="e5532-175">複数のカスタム データベース スクリプトがある場合は、アルファベット順に実行されます。</span><span class="sxs-lookup"><span data-stu-id="e5532-175">If there are multiple custom database scripts, they are run in alphabetical order.</span></span> <span data-ttu-id="e5532-176">したがって、スクリプトを特定の順序で実行したい場合は、それに応じて名前を付ける必要があります。</span><span class="sxs-lookup"><span data-stu-id="e5532-176">Therefore, to run the scripts in a specific order, you must name them accordingly.</span></span> <span data-ttu-id="e5532-177">CRT.RETAILUPGRADEHISTORY テーブルは、データベースに既に適用されているスクリプトを追跡します。</span><span class="sxs-lookup"><span data-stu-id="e5532-177">The CRT.RETAILUPGRADEHISTORY table tracks the scripts that are already applied to the database.</span></span> <span data-ttu-id="e5532-178">したがって、次のパッケージ アップグレードは、CRT.RETAILUPGRADEHISTORY テーブルに項目がないアップグレード スクリプトのみを実行します。</span><span class="sxs-lookup"><span data-stu-id="e5532-178">Therefore, the next package upgrade runs only the upgrade scripts that don't have an entry in the CRT.RETAILUPGRADEHISTORY table.</span></span>
+
+## <a name="update-the-extension-configuration-files"></a><span data-ttu-id="e5532-179">拡張機能の構成ファイルを更新します</span><span class="sxs-lookup"><span data-stu-id="e5532-179">Update the extension configuration files</span></span>
+<span data-ttu-id="e5532-180">CRT、Retail Server、ハードウェア ステーション、またはプロキシに新しい拡張機能がある場合は、関連する拡張構成ファイルの\<構成\>セクションに拡張アセンブリの詳細を登録する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e5532-180">If you have any new extensions in CRT, Retail Server, Hardware station, or proxy, you should register the details of the extension assemblies in the \<composition\> section of the relevant extension configuration file.</span></span> <span data-ttu-id="e5532-181">すべての拡張設定ファイルは次で見つけることができます。\\RetailSDK\\資産フォルダ。</span><span class="sxs-lookup"><span data-stu-id="e5532-181">You can find all the extension configuration files in the ...\\RetailSDK\\Assets folder.</span></span> <span data-ttu-id="e5532-182">すべての拡張機能は拡張ファイルの情報に基づいて読み込まれるため、アセンブリを登録する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e5532-182">Because all extensions are loaded based on the information in the extension configuration files, you must register your assemblies there.</span></span>
+
+<span data-ttu-id="e5532-183">パッケージを行う前に、次の構成ファイルを更新する必要があります (この領域でカスタマイズがある場合)。</span><span class="sxs-lookup"><span data-stu-id="e5532-183">Before you do the package, you must update the following configuration files if you have any customization in that area:</span></span>
+
+- <span data-ttu-id="e5532-184">**CommerceRuntime.Ext.config** – すべての CRT 拡張アセンブリを登録します。</span><span class="sxs-lookup"><span data-stu-id="e5532-184">**CommerceRuntime.Ext.config** – Register all your CRT extension assemblies.</span></span>
+
+    <span data-ttu-id="e5532-185">**例**</span><span class="sxs-lookup"><span data-stu-id="e5532-185">**Example**</span></span>
+
+    ```C#
+    <?xml version="1.0" encoding="utf-8"?>
+    <commerceRuntimeExtensions>
+        <composition>
+            <!-- Register your own assemblies here. -->
+            <add source="assembly" value="my custom library" />
+        </composition>
+    </commerceRuntimeExtensions>
+    ```
+
+- <span data-ttu-id="e5532-186">**CommerceRuntime.MPOSOffline.Ext.config** – オフラインで、すべての CRT 拡張機能を登録します。</span><span class="sxs-lookup"><span data-stu-id="e5532-186">**CommerceRuntime.MPOSOffline.Ext.config** – Register all your CRT extensions for offline.</span></span>
+
+    <span data-ttu-id="e5532-187">**例**</span><span class="sxs-lookup"><span data-stu-id="e5532-187">**Example**</span></span>
+
+    ```C#
+    <?xml version="1.0" encoding="utf-8"?>
+    <commerceRuntimeExtensions>
+        <composition>
+            <!-- Register your own assemblies or types here. -->
+            <add source="assembly" value=" my custom library" />
+        </composition>
+    </commerceRuntimeExtensions>
+    ```
+
+- <span data-ttu-id="e5532-188">**HardwareStation.Extension.config** – すべてのハードウェア ステーション拡張機能を登録します。</span><span class="sxs-lookup"><span data-stu-id="e5532-188">**HardwareStation.Extension.config** – Register all your Hardware station extensions.</span></span>
+
+    <span data-ttu-id="e5532-189">**例**</span><span class="sxs-lookup"><span data-stu-id="e5532-189">**Example**</span></span>
+
+    ```C#
+    <?xml version="1.0" encoding="utf-8"?>
+    <hardwareStationExtension>
+        <composition>
+            <! -- Register your own assemblies or types here. -->
+            <add source="assembly" value=" my custom library" />
+        </composition>
+    </hardwareStationExtension>
+    ```
+
+- <span data-ttu-id="e5532-190">**RetailProxy.MPOSOffline.ext.config** – すべての小売プロキシ拡張機能を登録します。</span><span class="sxs-lookup"><span data-stu-id="e5532-190">**RetailProxy.MPOSOffline.ext.config** – Register all your retail proxy extensions.</span></span>
+
+    <span data-ttu-id="e5532-191">**例**</span><span class="sxs-lookup"><span data-stu-id="e5532-191">**Example**</span></span>
+
+    ```C#
+    <?xml version="1.0" encoding="utf-8"?>
+    <retailProxyExtensions>
+        <composition>
+            <!-- Register your own proxy extension assemblies. -->
+            <add source="assembly" value=" my custom library" />
+        </composition>
+    </retailProxyExtensions>
+    ```
+
+### <a name="retail-server-extension-assemblies"></a><span data-ttu-id="e5532-192">Retail サーバーの拡張機能アセンブリ</span><span class="sxs-lookup"><span data-stu-id="e5532-192">Retail Server extension assemblies</span></span>
+<span data-ttu-id="e5532-193">パッケージを開始する前に、Retail Server web.config file の \<extensionComposition\> に、Retail Server 拡張アセンブリのエントリを追加する必要があります。これにより、アセンブリがロードされ、使用できるようになります。</span><span class="sxs-lookup"><span data-stu-id="e5532-193">Before you start the package, you must add an entry for the Retail Server extension assemblies in the \<extensionComposition\> of the Retail Server web.config file, so that the assemblies are loaded and used.</span></span> <span data-ttu-id="e5532-194">web.config ファイルは、Retail SDK\\パッケージ\\RetailServer\\ コード フォルダーで検索できます。</span><span class="sxs-lookup"><span data-stu-id="e5532-194">You can find the web.config file in the Retail SDK\\Packages\\RetailServer\\Code folder.</span></span>
+
+<span data-ttu-id="e5532-195">次の図は、Retail サーバーの Web.config ファイルの例を示します。</span><span class="sxs-lookup"><span data-stu-id="e5532-195">The following illustration shows an example of a Retail Server web.config file.</span></span>
+
+<span data-ttu-id="e5532-196">[![Retail サーバーの Web.config ファイル](./media/retail-server-web-config.png)](./media/retail-server-web-config.png)</span><span class="sxs-lookup"><span data-stu-id="e5532-196">[![Retail Server web.config file](./media/retail-server-web-config.png)](./media/retail-server-web-config.png)</span></span>
+
+## <a name="generate-a-retail-deployable-package"></a><span data-ttu-id="e5532-197">配置可能小売パッケージを生成</span><span class="sxs-lookup"><span data-stu-id="e5532-197">Generate a retail deployable package</span></span>
+<span data-ttu-id="e5532-198">配置可能小売パッケージを生成するには、MSBuild ビルド コマンド プロンプト ウィンドウを開きます。</span><span class="sxs-lookup"><span data-stu-id="e5532-198">To generate the retail deployable package, open the MSBuild build Command Prompt window.</span></span> <span data-ttu-id="e5532-199">(開発者仮想マシンの、**開始**メニューで **msbuild** を検索します。) そして、次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="e5532-199">(On the developer virtual machine, search for **msbuild** on the **Start** menu.) Then run the following command.</span></span>
+
+```
+msbuild /p:Configuration=Release
+```
+
+<span data-ttu-id="e5532-200">Microsoft Visual Studio 2015 開発者コマンド ライン ツールで同じコマンドを実行することもできます。</span><span class="sxs-lookup"><span data-stu-id="e5532-200">You can also run the same command in the Microsoft Visual Studio 2015 developer command-line tool.</span></span>
+
+### <a name="packages"></a><span data-ttu-id="e5532-201">パッケージ</span><span class="sxs-lookup"><span data-stu-id="e5532-201">Packages</span></span>
+<span data-ttu-id="e5532-202">ビルドが完了した後、Retail SDK\\Packages\\RetailDeployablePackage フォルダーに、配置可能小売パッケージ が zip ファイルとして (RetailDeployablePackage.zip) が生成されます。</span><span class="sxs-lookup"><span data-stu-id="e5532-202">After the build is completed, retail deployable packages are generated as a zip file (RetailDeployablePackage.zip) in the Retail SDK\\Packages\\RetailDeployablePackage folder.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="e5532-203">さまざまな Retail コンポーネントを別々のパッケージにすることはありません。</span><span class="sxs-lookup"><span data-stu-id="e5532-203">There won't be separate packages the various Retail components.</span></span> <span data-ttu-id="e5532-204">すべてのパッケージは、RetailDeployablePackage という名の 1 つのバンドル パッケージに結合されます。</span><span class="sxs-lookup"><span data-stu-id="e5532-204">All the packages will be combined into one bundle package that is named RetailDeployablePackage.</span></span>
+
+## <a name="deploy-the-retail-deployable-packages"></a><span data-ttu-id="e5532-205">小売展開可能パッケージを配置する</span><span class="sxs-lookup"><span data-stu-id="e5532-205">Deploy the retail deployable packages</span></span>
+<span data-ttu-id="e5532-206">手動または LCS 自動化フローを使用してパッケージを配置する方法については、[配置可能なパッケージを適用する](../../../dev-itpro/deployment/apply-deployable-package-system.md)および[配置可能なパッケージをインストールする](../../../dev-itpro/deployment/install-deployable-package.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e5532-206">For information about how to deploy the packages either manually or by using the automated flow in LCS, see [Apply a deployable package](../../../dev-itpro/deployment/apply-deployable-package-system.md) and [Install a deployable package](../../../dev-itpro/deployment/install-deployable-package.md).</span></span>
 
