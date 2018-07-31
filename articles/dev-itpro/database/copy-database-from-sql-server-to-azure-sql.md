@@ -3,7 +3,7 @@ title: "Finance and Operations データベースをコピーする – SQL Serv
 description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations データベースを SQL Server をベースとした開発、ビルド、またはデモ環境 (第 1 層または ワンボックス) から Azure SQL データベースをベースしたサンドボックス UAT 環境 (第 2 層以上) に移動する方法について説明します。"
 author: maertenm
 manager: AnnBe
-ms.date: 03/30/2018
+ms.date: 07/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: maertenm
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 24a2c35685084ccb3f7554dd6c9c6f46c031b129
-ms.openlocfilehash: 8448e13ecc12ec169e7274bef98d0080e806017d
+ms.sourcegitcommit: f2e3a40f58b57785079e1940b2d24a3598a3ad1b
+ms.openlocfilehash: 83c4f959abb3ad15a731380e15ccc7a6ef787dda
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 07/09/2018
 
 ---
 
@@ -113,6 +113,7 @@ NOUNLOAD, STATS = 5
 - **SysGlobalConfiguration** フラグを設定し、データベースが Azure ベースであることを Finance and Operations に知らせます。
 - XU\_DisableEnableNonClusteredIndexes 手順で tempDB への参照を削除します。 Azure SQL データベースでは、tempDB の参照が許可されていません。 データベース同期プロセスは後で照会を再作成します。
 - Microsoft Windows のユーザーは Azure SQL データベースで許可されていないため、ユーザーをドロップします。 他のユーザーは、対象のサーバーの適切なサインインに正しくリンクされるように、後で再作成する必要があります。
+- 暗号化されたハードウェア プロファイルの merchand プロパティの消去
 
 データベースのエクスポートとインポートに成功するには、これらすべての変更が必要です。
 
@@ -126,6 +127,8 @@ set value = 1
 where name = 'TEMPTABLEINAXDB'
 
 drop procedure XU_DisableEnableNonClusteredIndexes
+drop procedure if exists SP_ConfigureTablesForChangeTracking
+drop procedure if exists SP_ConfigureTablesForChangeTracking_V2
 drop schema [NT AUTHORITY\NETWORK SERVICE]
 drop user [NT AUTHORITY\NETWORK SERVICE]
 drop user axdbadmin
@@ -134,6 +137,8 @@ drop user axmrruntimeuser
 drop user axretaildatasyncuser
 drop user axretailruntimeuser
 drop user axdeployextuser
+-- Clear encrypted hardware profile merchand properties
+update dbo.RETAILHARDWAREPROFILE set SECUREMERCHANTPROPERTIES = null where SECUREMERCHANTPROPERTIES is not null
 ```
 
 ## <a name="export-the-database-from-sql-server"></a>SQL Server からデータベースをエクスポート
@@ -179,10 +184,16 @@ SqlPackage.exe /a:import /sf:D:\Exportedbacpac\my.bacpac /tsn:<Azure SQL databas
 - **sf(ソース ファイル)** – インポートするファイルのパスと名前。
 - **tu(ターゲット ユーザー)** – ターゲットの Azure SQL データベース インスタンスの SQL ユーザー名。 標準の **sqladmin** ユーザーを使用することをお勧めします。 LCS プロジェクトからは、このユーザーのパスワードを取得できます。
 - **tp(ターゲット パスワード)** – ターゲットの Azure SQL データベース ユーザーのパスワード。
-- **DatabaseServiceObjective** - データベースの価格層。 Finance and Operations の既定のサンドボックス UAT 環境では、P2 を使用します。
+- **DatabaseServiceObjective** - S1、P2、P4 などのデータベースのパフォーマンス レベルを指定します。 パフォーマンス要件を満たし、サービス契約を遵守するには、現在の Finance and Operations データベース (AXDB) と同じサービス目標レベルをこの環境で使用します。 現在のデータベースのサービス レベル目標を照会するには、次のクエリを実行します。
+  ```
+  SELECT  d.name,   
+     slo.*    
+  FROM sys.databases d   
+  JOIN sys.database_service_objectives slo    
+  ON d.database_id = slo.database_id;  
+  ```
 
 次の警告メッセージを受け取ります。 これは無視してかまいません。
-
 > ターゲット プラットフォームとして SQL Server 2016 を指定するプロジェクトは、Microsoft Azure SQL データベース v12 で互換性の問題が発生する可能性があります。
 
 
@@ -229,9 +240,6 @@ EXEC sp_addrolemember 'ReportUsersRole', 'axretailruntimeuser'
 CREATE USER axretaildatasyncuser WITH PASSWORD = '<password from LCS>'
 EXEC sp_addrolemember 'DataSyncUsersRole', 'axretaildatasyncuser'
 
-CREATE USER axdeployextuser WITH PASSWORD = '<password from LCS>'
-EXEC sp_addrolemember 'DeployExtensibilityRole', 'axdeployextuser'
-
 ALTER DATABASE SCOPED CONFIGURATION  SET MAXDOP=2
 ALTER DATABASE SCOPED CONFIGURATION  SET LEGACY_CARDINALITY_ESTIMATION=ON
 ALTER DATABASE SCOPED CONFIGURATION  SET PARAMETER_SNIFFING= ON
@@ -270,7 +278,8 @@ BEGIN TRY
     END
 END TRY
 BEGIN CATCH
-    PRINT error_message()
+
+PRINT error_message()
 END CATCH
 
 CLOSE retail_ftx;  
@@ -315,6 +324,11 @@ DEALLOCATE retail_ftx;
     ```
     DROP DATABASE [axdb_123456789_original]
     ```
+
+### <a name="enable-change-tracking"></a>変更追跡の有効化
+ソース データベースで変更追跡が有効になっている場合は、ALTER DATABASE コマンドを使用して、ターゲット環境の新たなプロビジョニング データベースで変更追跡を再度有効にしてください。
+
+新しいデータベースで店舗の業務手順の現在のバージョン (変更追跡に関連する) が使用されていることを確認するには、データ管理のデータ エンティティの変更追跡を有効または無効にする必要があります。 これは、店舗の業務手順の更新をトリガーするために必要なので、どのエンティティでも実行できます。
 
 ### <a name="re-provision-the-target-environment"></a>対象の環境を再プロビジョニング
 

@@ -3,7 +3,7 @@ title: "アクセス インスタンス"
 description: "このトピックでは、開発インスタンスへのアクセス、オンプレミス開発 VM の構成、および開発者と管理者にとって重要な構成設定を見つける方法について説明します。"
 author: robadawy
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 05/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,16 +18,16 @@ ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 57c334fdb7d16c53d521e3c0671d7bec6f99ea58
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 54eec5c312a24a1b866020ae2f0ba6b4060f90cc
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="deploy-and-access-development-environments"></a>開発環境の配置とアクセス 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 このトピックでは、開発インスタンスへのアクセス、オンプレミス開発 VM の構成、および開発者と管理者にとって重要な構成設定を見つける方法について説明します。
 
@@ -110,7 +110,7 @@ ms.lasthandoff: 04/20/2018
 1.  VM 名をクリックします。
 2.  表示されているローカル管理者のユーザー名とパスワードを使用して、リモート デスクトップ経由でクラウド VM に接続します。 目のアイコンをクリックしてパスワードを表示することができます。
 
-配置された**プラットフォーム更新プログラム 12 以降**の任意の環境については、特徴的アカウント、開発者アカウントおよび管理者アカウントがあります。 顧客が、Microsoft サブスクリプションで実行されている開発環境またはビルド環境の仮想マシン (VM) 管理者アカウントにアクセスすることはできません。 したがって、環境が Azure サブスクリプションで実行されていない限り、管理者アカウントは非表示になります。 
+配置された**プラットフォーム更新プログラム 12 以降**の任意の環境については、特徴的アカウント、開発者アカウントおよび管理者アカウントがあります。 顧客が、Microsoft サブスクリプションで実行されている開発環境またはビルド環境の仮想マシン (VM) 管理者アカウントにアクセスすることはできません。 したがって、環境が Azure サブスクリプションで実行されていない限り、管理者アカウントは非表示になります。 詳細については、[管理者アクセスを許可しない開発用 VM および ビルド用 VM に関するよく寄せられる質問](../sysadmin/VMs-no-admin-access.md)を参照してください。 
 
 リモート デスクトップを通じて環境にサインインした後、ブラウザーからローカル アプリケーションにアクセスできるようにする場合、リモート コンピューターからアプリケーションにアクセスするために使用するのと同じベース URL を使用します。 上記のセクションは、このベース URL を LCS から取得する方法について説明します。
 

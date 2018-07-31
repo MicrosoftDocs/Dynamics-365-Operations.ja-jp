@@ -18,10 +18,10 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: e00106500994747fa5bd53c619da7556f3c62a69
+ms.sourcegitcommit: 03bab1d03be71c0e23a6ea93f542d6a52a212a1f
+ms.openlocfilehash: 923c713f5b6de72c89ecfdd3765b14a6c7824c69
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 06/25/2018
 
 ---
 
@@ -159,7 +159,7 @@ ms.lasthandoff: 04/20/2018
 
 ##### <a name="output"></a>出力
 
-ウィザードを完了したら、次の 2 つの項目が生成されます。
+ウィザードを完了したら、次の項目が生成されます。
 
 -   データ エンティティ
 -   ステージング テーブル (データの管理が有効であった場合は省略可能)

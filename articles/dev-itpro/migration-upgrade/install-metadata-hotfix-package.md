@@ -18,16 +18,16 @@ ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 52f1db09be39e02df3478ad1d24f500215de3c8e
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 7f38ae4fd1141f3fa773b07208847626003b6946
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="install-a-metadata-hotfix"></a>メタデータ修正プログラムのインストール
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 このトピックでは、開発環境にアプリケーション メタデータの修正プログラムをインストールする方法について説明します。
 
@@ -100,7 +100,7 @@ VSTS/TFS パラメーターを使用して、パッケージによって修正�
 3.  **プロジェクトの作成** をクリックします。 修正プログラムが適用された後に競合していることが見つかった選択しているモデルの要素のみを含むプロジェクトが生成されます。
 4.  競合する要素のデザイナーを開いて、表示されたツールを使って競合を表示し、解決します。
 
-<https://mix.office.com/watch/1rl75ei2cs6d7> の Office Mix は、開発環境における競合解決ツールについて紹介しています。
+<!--The Office Mix at <https://mix.office.com/watch/1rl75ei2cs6d7> provides an introduction to the conflict resolution tools in the development environment.-->
 
 ## <a name="build-and-test-on-a-local-vm"></a>ローカル VM のビルドおよびテスト
 修正プログラムの影響を受けるすべてのモデルをビルドし、アプリケーションをテストします。

@@ -17,16 +17,16 @@ ms.author: margoc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611, July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: b941e4aeedff00e2333710913bcdfb370d44d6d8
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 1dea06706f2f003b6b0e57b7822e02d5c5aff8d8
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="microsoft-fasttrack-for-dynamics-365-overview"></a>Microsoft FastTrack for Dynamics 365 概要
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Microsoft FastTrack for Dynamics 365 は、ビジネス上の価値をより速く達成できるように、Dynamics 365 を円滑かつ確実に移行できるように設計されています。 FastTrack プログラムに参加すると、ベスト プラクティスに関するガイダンスと正常に行われる展開を計画する方法が表示されます。 新しいユーザーを有効にし、機能を拡張する方法も自分のペースで学習します。 さらに、Dynamics 365 でのお客様の経験を成功させるために尽力している Microsoft エンジニアリング リソースにアクセスできます。  
 
@@ -192,7 +192,7 @@ Go-live レビューの転記ワークショップは、FastTrack 契約をま�
 ## <a name="tech-talks"></a>技術解説
 技術解説は対象分野固有の知識により顧客とパートナー双方を支援するベスト プラクティスと技術的なレベルを提供することに焦点を合わせます。 これらの説明では、利用可能なツールとコンテンツの概要を提供することがよくあります。
 
-技術説明の一部が録画されており、録音は [Microsoft Dynamics 365 YouTube チャンネル](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ)で視聴できます。
+[Dynamics 365 for Finance and Operations のビデオ](../get-started/videos.md) のランディング ページでは、記録された技術解説およびストリームまたはダウンロードに使用できるすべての技術解説を一覧表示します。 技術解説で提示されているコンテンツのタイプの例を、以下にいくつか示します。
 
 ### <a name="lifecycle-services-lcs-usage-tech-talk-t11-initiate-phase"></a>Lifecycle Services (LCS) の使用状況に関する技術解説 (T1.1、開始フェーズ)
 

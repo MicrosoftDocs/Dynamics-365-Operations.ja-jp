@@ -17,10 +17,10 @@ ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: ed666e4e6091c58171e6dc69b6d58927c654cf0f
+ms.sourcegitcommit: 62dbf8ffd550f9369df1ac8399b25c76f3d57c93
+ms.openlocfilehash: 15f060e48f20da5c045e7abf9cea92a6d7510785
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 07/03/2018
 
 ---
 
@@ -54,4 +54,7 @@ AOT パッケージは、Microsoft Dynamics 365 for Finance and Operations 環�
 
 ## <a name="apply-a-deployable-package"></a>配置可能パッケージの適用
 展開可能なパッケージを環境に適用する方法については、[[展開可能なパッケージの適用](apply-deployable-package-system.md)] を参照してください。
+
+## <a name="remove-a-deployable-package"></a>配置可能パッケージの削除
+環境から配置可能パッケージをアンインストールしたり、削除したりするには、[モジュール (パッケージ) のアンインストール (削除)](uninstall-deployable-package.md)の記事を参照してください。
 

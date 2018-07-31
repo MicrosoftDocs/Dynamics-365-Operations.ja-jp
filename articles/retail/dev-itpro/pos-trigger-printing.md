@@ -3,7 +3,7 @@ title: "Retail Modern POS のトリガーと印刷"
 description: "トリガーを使用すると、いずれかの Retail Modern POS の操作前後に発生するイベントを取得できます。"
 author: mugunthanm
 manager: AnnBe
-ms.date: 11/27/2017
+ms.date: 07/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -17,10 +17,10 @@ ms.author: mumani
 ms.search.validFrom: 2017-01-27
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: d908c725c8b3c8a86932552a49266f4f29b33774
+ms.sourcegitcommit: f2e3a40f58b57785079e1940b2d24a3598a3ad1b
+ms.openlocfilehash: 618f8572f6d6ead6e8838b2aca84fc0ee823b42a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 07/09/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 04/20/2018
 
 トリガーを使用すると、Retail Modern POS の操作前または後に発生するイベントを取得できます。 トリガーを使用すると、以下の実行を可能にする複数のビジネス ロジック シナリオがサポートされます。 
 - 操作の実行前または完了後に、カスタム ロジックを挿入します。 これには、すべての POS 操作の開始と終了時に実行される PreOperationTrigger と PostOperationTrigger と呼ばれる操作固有のトリガーと汎用トリガーが含まれます。  
-- 操作を続行またはキャンセルします。 たとえば、検証が失敗するかまたはエラーが返される場合、前のトリガーで操作をキャンセルできます。 ポスト トリガーはキャンセル可能ではありません。 
+- 操作を続行またはキャンセルします。 たとえば、検証が失敗するかまたはエラーが返される場合、前のトリガーで操作をキャンセルできます。 ポスト トリガーはキャンセル可能ではありません。
 - 標準ロジックが実行された後にカスタム メッセージを表示するか、カスタム フィールドを挿入するシナリオでは、ポスト トリガーを使用します。 
 
 このトピックは、プラットフォーム更新プログラム 8 および Retail アプリケーション更新プログラム 4 修正プログラムを備えた、Dynamics 365 for Finance and Operations、および Dynamics 365 for Retail に適用されます。 
@@ -45,7 +45,9 @@ ms.lasthandoff: 04/20/2018
 | ApplicationSuspendTrigger | キャンセル不可 | POS アプリケーションが中断した後に実行されます。                                                                                     |
 | PreLogOnTriggerTrigger    | 解約可能     | POS ログ オン前に実行されます。                                                                                                      |
 | PostLogOnTriggerTrigger   | キャンセル不可 | POS ログ オン後に実行されます。                                                                                                       |
-| PostLogOffTrigger         | キャンセル不可 | POS ログ オフ後に実行されます。                                                                                                      |
+| PostLogOffTrigger         | キャンセル不可 | POS ログ オフ後に実行されます。                                                                                                      | 
+| PreLockTerminalTrigger    | 解約可能     | POS レジスターのロック前に実行されます。  |
+| PostLockTerminalTrigger   | キャンセル不可 | POS レジスターのロック後に実行されます。   |     
 
 ## <a name="cash-nanagement-triggers"></a>現金管理トリガー
 
@@ -122,7 +124,9 @@ ms.lasthandoff: 04/20/2018
 | PostPriceCheckTrigger      | キャンセル不可 | 製品の価格確認が行われた後に実行されます。          |
 
 ## <a name="shift-triggers"></a>シフト トリガー
-| トリガー              | タイプ           | 説明                                             ||----------------------|----------------|---------------------------------------------------------| | PostOpenShiftTrigger | キャンセル不可 | 新しいシフトが開かれた後に実行されます。 |
+| トリガー              | 種類           | 説明                                             |
+|----------------------|----------------|---------------------------------------------------------|
+| PostOpenShiftTrigger | キャンセル不可 | このトリガーは、新しいシフトが開かれた後に実行されます。 |
 
 ## <a name="tax-override-triggers"></a>税上書きトリガー
 
@@ -149,11 +153,19 @@ ms.lasthandoff: 04/20/2018
 | PostSuspendTransactionTrigger      | キャンセル不可 | トランザクションが中断した後に実行されます。    |
 | PreRecallTransactionTrigger        | 解約可能     | トランザクションまたは注文がリコールされる前に実行されます。 |
 | PostRecallTransactionTrigger       | キャンセル不可 | トランザクションまたは注文がリコールされた後に実行されます。  |
-| PostCartCheckoutTrigger            | キャンセル不可 | チェックアウト プロセスの完了後に実行されます。    |
+| PostCartCheckoutTrigger            | キャンセル不可 | チェックアウト プロセスの完了後に実行されます。     |
+| PreRecallTransactionTrigger        | 解約可能     | 顧客の注文がリコールされる前に実行されます。       |
+| PostRecallTransactionTrigger       | キャンセル不可 | 顧客の注文がリコールされた後に実行されます。        |
 
-## <a name="how-to-implement-a-trigger"></a>トリガーを実装する方法
-
+## <a name="business-scenario"></a>ビジネス シナリオ
 この例では、ユーザーがトランザクションを中断したときに、カスタム レシートが印刷されます。 この例では、**PostSuspendTransactionTrigger** トリガーを実装し、既存の周辺機器 API を使用してカスタム レシートを印刷します。
+
+このシナリオを実装するには、次の手順を行う必要があります。
+
+1. **POS 拡張機能:** **PostSuspendTransactionTrigger** トリガーを実装し、CRT から受領書データを取得して、印刷用のプリンタに送信します。 
+2. **CRT 拡張:** 印刷対象の受領書データを生成します。
+
+## <a name="implement-a-trigger"></a>トリガーの実装
 
 1. 管理者モードで Visual Studio 2015 を開きます。
 2. **ModernPOS** ソリューションを **…\RetailSDK\POS** から開きます。
@@ -341,6 +353,267 @@ ms.lasthandoff: 04/20/2018
     ],
 ```
 13. プロジェクトをコンパイル、およびリビルドします。
+
+## <a name="override-the-crt-receipt-request-to-generate-the-receipt-data"></a>受領書データを生成するために CRT 受領要求を上書きする
+
+このセクションでは、中断されたトランザクションのレシートを印刷するために既存の CRT 要求を上書きする方法について説明します。 このセクションは、Microsoft Dynamics 365 for Finance and Operations またはプラットフォーム更新プログラム 8 を備えた Microsoft Dynamics 365 for Retail に適用可能です。
+
+1. Visual Studio 2015 を起動します。
+2. **ファイル**メニューで、**開く \> プロジェクト/ソリューション**を選択します。 テンプレート プロジェクト (**SampleCRTExtension.csproj**) を検索します。
+3. テンプレート プロジェクト **Runtime.Extensions.SuspendReceiptSample** を名前変更します。
+4. オプション: 既定の名前空間を変更します。
+5. 出力アセンブリ **Contoso.Commerce.Runtime.SuspendReceiptSample** を名前変更します。
+6. プロジェクト内で、新しい要求クラス ファイルを追加し、**GetCustomReceiptsRequestHandler.cs** いう名前をつけます。
+7. 次のコードをコピーして、クラスに貼り付けます。 コピーする前に、自動的に生成されたコードを削除します。
+
+    ```C#
+    namespace Contoso
+    {
+        namespace Commerce.Runtime.ReceiptsSample
+        {
+            using System.Collections.Generic;
+            using System.Collections.ObjectModel;
+            using Microsoft.Dynamics.Commerce.Runtime;
+            using Microsoft.Dynamics.Commerce.Runtime.DataModel;
+            using Microsoft.Dynamics.Commerce.Runtime.Messages;
+            using Microsoft.Dynamics.Commerce.Runtime.Services.Messages;
+            using Microsoft.Dynamics.Commerce.Runtime.Workflow;
+
+            /// <summary>
+            /// The request handler for GetCustomReceiptsRequestHandler class.
+            /// </summary>
+
+            /// <remarks>
+            /// This is an example of how to print custom types of receipts. In this example the receipt is for a transaction as opposed to
+            /// a sales order. The implementation converts the transaction to a sales order so that existing receipt fields can be used.
+            /// </remarks>
+
+            public class GetCustomReceiptsRequestHandler : SingleRequestHandler<GetCustomReceiptsRequest, GetReceiptResponse>
+            {
+            }
+        }
+    }
+    ```
+
+8. 次のコードをコピーして、カート テーブルからトランザクションを読み取る新しいメソッドを追加するクラスに貼り付けます。中断されたトランザクションは、この時点では小売トランザクション テーブルに作成されていないためです。 カート トランザクションを販売トランザクションに変換する必要があります。 入庫オブジェクトは販売トランザクションしか読み込むことができないため、この変換が必要です。
+
+    > [!NOTE]
+    > 完了したトランザクションに対するカスタム レシートを印刷する必要がある場合、買い物カゴ トランザクションを取得して販売トランザクションに変換する必要はありません。 トランザクションが完了したため、既に販売トランザクションに変換されました。
+
+    ```C#
+    private SalesOrder GetSalesOrderForTransactionWithId(RequestContext requestContext, string transactionId)
+    {
+        SalesOrder salesOrder = new SalesOrder();
+        var getCartRequest = new GetCartRequest(new CartSearchCriteria(transactionId), QueryResultSettings.SingleRecord);
+        var getCartResponse = requestContext.Execute<GetCartResponse>(getCartRequest);
+        SalesTransaction salesTransaction = getCartResponse.Transactions.SingleOrDefault(); ;
+        if (salesTransaction != null)
+        {
+            // The sales transaction is converted into a sales order so that existing receipt fields can be used.
+            salesOrder.CopyFrom<SalesTransaction>(salesTransaction);
+        }
+        else
+        {
+            throw new DataValidationException(
+                DataValidationErrors.Microsoft_Dynamics_Commerce_Runtime_ObjectNotFound,
+                string.Format("Unable to get the sales transaction. ID: {0}", transactionId));
+        }
+        return salesOrder;
+    }
+    ```
+
+9. 次のコードをコピーして、HQ で定義されているカスタムの受領書フォーマットに基づき販売トランザクション情報を使用して、受領書フォーマットを作成する新しいメソッドを追加するクラスに貼り付けます。
+
+    ```C#
+    private Collection<Receipt> GetCustomReceipts(SalesOrder salesOrder, ReceiptRetrievalCriteria criteria)
+    {
+        Collection<Receipt> result = new Collection<Receipt>();
+        var getReceiptServiceRequest = new GetReceiptServiceRequest(
+            salesOrder,
+            new Collection<ReceiptType> { criteria.ReceiptType },
+            salesOrder.TenderLines,
+            criteria.IsCopy,
+            criteria.IsPreview,
+            criteria.HardwareProfileId);
+        ReadOnlyCollection<Receipt> customReceipts = this.Context.Execute<GetReceiptServiceResponse>(getReceiptServiceRequest).Receipts;
+        result.AddRange(customReceipts);
+        return result;
+    }
+    ```
+
+10. 次のコードをコピーして、確認受入応答を上書きする新しいメソッドを追加するクラスに貼り付けます。 この方法は、要求を処理し、応答を返します。
+
+    ```C#
+    protected override GetReceiptResponse Process(GetCustomReceiptsRequest request)
+    {
+        ThrowIf.Null(request, "request");
+        ThrowIf.Null(request.ReceiptRetrievalCriteria, "request.ReceiptRetrievalCriteria");
+
+        // The sales order that we are printing receipts for is retrieved.
+        SalesOrder salesOrder = this.GetSalesOrderForTransactionWithId(request.RequestContext, request.TransactionId);
+
+        // Custom receipts are printed.
+        Collection<Receipt> result = new Collection<Receipt>();
+        switch (request.ReceiptRetrievalCriteria.ReceiptType)
+        {
+            // An example of getting custom receipts.
+            case ReceiptType.CustomReceipt7:
+            {
+                IEnumerable<Receipt> customReceipts = this.GetCustomReceipts(salesOrder, request.ReceiptRetrievalCriteria);
+                result.AddRange(customReceipts);
+            }
+            break;
+            default:
+
+            // Add more logic to handle more types of custom receipt types.
+
+            break;
+        }
+        return new GetReceiptResponse(new ReadOnlyCollection<Receipt>(result));
+    }
+    ```
+
+    全体的なコードは、次のようになります。
+
+    ```C#
+    /**
+     * SAMPLE CODE NOTICE
+     *
+     * THIS SAMPLE CODE IS MADE AVAILABLE AS IS. MICROSOFT MAKES NO WARRANTIES, WHETHER EXPRESS OR IMPLIED,
+     * OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY OR COMPLETENESS OF RESPONSES, OF RESULTS, OR CONDITIONS OF MERCHANTABILITY.
+     * THE ENTIRE RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS SAMPLE CODE REMAINS WITH THE USER.
+     * NO TECHNICAL SUPPORT IS PROVIDED. YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH MICROSOFT THAT ALLOWS YOU TO DO SO.
+     */
+
+    namespace Contoso
+    {
+        namespace Commerce.Runtime.ReceiptsSample
+        {
+            using System.Collections.Generic;
+            using System.Collections.ObjectModel;
+            using Microsoft.Dynamics.Commerce.Runtime;
+            using Microsoft.Dynamics.Commerce.Runtime.DataModel;
+            using Microsoft.Dynamics.Commerce.Runtime.Messages;
+            using Microsoft.Dynamics.Commerce.Runtime.Services.Messages;
+            using Microsoft.Dynamics.Commerce.Runtime.Workflow;
+
+            /// <summary>
+            /// The request handler for GetCustomReceiptsRequestHandler class.
+            /// </summary>
+
+            /// <remarks>
+            /// This is an example of how to print custom types of receipts. In this example the receipt is for a transaction as opposed to
+            /// a sales order. The implementation converts the transaction to a sales order so that existing receipt fields can be used.
+            /// </remarks>
+
+            public class GetCustomReceiptsRequestHandler : SingleRequestHandler<GetCustomReceiptsRequest, GetReceiptResponse>
+            {
+
+                /// <summary>
+                /// Processes the GetCustomReceiptsRequest to return the set of receipts. The request should not be null.
+                /// </summary>
+
+                /// <param name="request">The request parameter.</param>
+
+                /// <returns>The GetReceiptResponse.</returns>
+
+                protected override GetReceiptResponse Process(GetCustomReceiptsRequest request)
+                {
+                    ThrowIf.Null(request, "request");
+                    ThrowIf.Null(request.ReceiptRetrievalCriteria, "request.ReceiptRetrievalCriteria");
+
+                    // The sales order that we are printing receipts for is retrieved.
+                    SalesOrder salesOrder = this.GetSalesOrderForTransactionWithId(request.RequestContext, request.TransactionId);
+
+                    // Custom receipts are printed.
+                    Collection<Receipt> result = new Collection<Receipt>();
+                    switch (request.ReceiptRetrievalCriteria.ReceiptType)
+                    {
+                        // An example of getting custom receipts.
+                        case ReceiptType.CustomReceipt7:
+                        {
+                            IEnumerable<Receipt> customReceipts = this.GetCustomReceipts(salesOrder, request.ReceiptRetrievalCriteria);
+                            result.AddRange(customReceipts);
+                        }
+                        break;
+                        default:
+
+                        // Add more logic to handle more types of custom receipt types.
+
+                        break;
+                    }
+                    return new GetReceiptResponse(new ReadOnlyCollection<Receipt>(result));
+                }
+
+                /// <summary>
+                /// Gets a sales order for the transaction with the given identifier.
+                /// </summary>
+
+                /// <param name="requestContext">The request context.</param>
+                /// <param name="transactionId">The transaction identifier.</param>
+
+                /// <returns>The sales order.</returns>
+
+                private SalesOrder GetSalesOrderForTransactionWithId(RequestContext requestContext, string transactionId)
+                {
+                    SalesOrder salesOrder = new SalesOrder();
+                    var getCartRequest = new GetCartRequest(new CartSearchCriteria(transactionId), QueryResultSettings.SingleRecord);
+                    var getCartResponse = requestContext.Execute<GetCartResponse>(getCartRequest);
+                    SalesTransaction salesTransaction = getCartResponse.Transactions.SingleOrDefault(); ;
+                    if (salesTransaction != null)
+                    {
+                        // The sales transaction is converted into a sales order so that existing receipt fields can be used.
+                        salesOrder.CopyFrom<SalesTransaction>(salesTransaction);
+                    }
+                    else
+                    {
+                        throw new DataValidationException(
+                        DataValidationErrors.Microsoft_Dynamics_Commerce_Runtime_ObjectNotFound,
+                        string.Format("Unable to get the sales transaction. ID: {0}", transactionId));
+                    }
+                    return salesOrder;
+                }
+
+                /// <summary>
+                /// An example to get a custom receipt.
+                /// </summary>
+
+                /// <param name="salesOrder">The sales order that we are printing receipts for.</param>
+                /// <param name="criteria">The receipt retrieval criteria.</param>
+
+                /// <returns>A collection of receipts.</returns>
+
+                private Collection<Receipt> GetCustomReceipts(SalesOrder salesOrder, ReceiptRetrievalCriteria criteria)
+                {
+                    Collection<Receipt> result = new Collection<Receipt>();
+                    var getReceiptServiceRequest = new GetReceiptServiceRequest(
+                        salesOrder,
+                        new Collection<ReceiptType> { criteria.ReceiptType },
+                        salesOrder.TenderLines,
+                        criteria.IsCopy,
+                        criteria.IsPreview,
+                        criteria.HardwareProfileId);
+                    ReadOnlyCollection<Receipt> customReceipts = this.Context.Execute<GetReceiptServiceResponse>(getReceiptServiceRequest).Receipts;
+                    result.AddRange(customReceipts);
+                    return result;
+                }
+            }
+        }
+    }
+    ```
+
+11. プロジェクトをコンパイル、およびビルドします。
+12. 出力ディレクトリに移動し、出力アセンブリをコピーします。
+13. **…\\RetailServer\\webroot\\bin\\ext** フォルダに移動し、アセンブリに貼り付けます。
+14. また、**…\\RetailSDK\\参照**フォルダーでアセンブリを貼り付けます。
+15. **commerceruntime.ext.config**ファイルを開き、\<構成\>セクションでカスタム アセンブリ情報を追加します。
+
+    ```
+    <add source="assembly" value="Contoso.Commerce.Runtime.SuspendReceiptSample" />
+    ```
+
+16. ファイルを保存して閉じます。
+17. Retail サーバーを再起動して新しいアセンブリを読み込んでください。
 
 ## <a name="add-the-custom-receipt-layout"></a>カスタム レシート レイアウトの追加
 

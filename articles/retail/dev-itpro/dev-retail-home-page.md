@@ -18,16 +18,16 @@ ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: de253649993cc333fe7b23c3edc7f4b81dcfbe55
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 67e181c15c875ac6844a4bdcce38ff1d22d9ba99
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="microsoft-dynamics-365-for-retail-for-it-pros-and-developers"></a>IT プロおよび開発者向けの Microsoft Dynamics 365 for Retail
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 このページには、IT プロと Retail をサポートする開発者が利用できるリソースが一覧表示されています。
 
@@ -129,7 +129,8 @@ Retail は、Finance and Operations に依存しています。 中核となる[
 -   [オンライン ストアのコンフィギュレーション](configure-online-store.md)
 
 ## <a name="payment-connectors"></a>支払コネクタ
--   [支払コネクタと支払デバイスの実装 (ホワイト ペーパー)](http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx)
+- [支払ターミナルとの支払の統合](end-to-end-payment-extension.md)
+- [支払コネクタと支払デバイスの実装 (ホワイト ペーパー)](http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx)
 -   [支払コネクタ用の Windows インストーラーの作成](create-windows-installer-payment-connector.md)
 -   [支払コネクタの配置](deploy-payment-connector.md)
 

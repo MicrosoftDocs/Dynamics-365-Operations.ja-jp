@@ -3,7 +3,7 @@ title: "Dynamics 365 for Finance and Operations バージョン 8.0 (2018 年 4 
 description: "このトピックでは、Dynamics 365 for Finance and Operations バージョン 8.0 の新機能または変更された機能について説明します。 このバージョンは 2018 年 4 月にリリースされました。"
 author: tonyafehr
 manager: AnnBe
-ms.date: 04/09/2018
+ms.date: 06/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,17 +18,17 @@ ms.author: tfehr
 ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Release 8.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: c8ccd77263b32266ef28395183bff453cb411aff
+ms.sourcegitcommit: 02d66063f721357b354f7959a46ec94d617f55a2
+ms.openlocfilehash: 1f0f807b0560d221975b5cb8b89457e22a58c347
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 06/22/2018
 
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-version-80-april-2018"></a>Dynamics 365 for Finance and Operations バージョン 8.0 (2018 年 4 月) の新機能および変更された機能
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Finance and Operations バージョン 8.0 (2018 年 4 月) の新機能または変更された機能について説明します。 このバージョンは 2018 年 4 月にリリースされ、ビルド番号は 8.0.30 です。
+このトピックでは、Microsoft Dynamics 365 for Finance and Operations バージョン 8.0 (2018 年 4 月) の新機能または変更された機能について説明します。 このバージョンは 2018 年 4 月にリリースされ、ビルド番号は 8.0.30 と 8.0.35 です。
 
 ビジネス アプリケーションの最新の更新プログラムや、独自のアプリケーションと拡張機能をプラットフォームにビルドするための新しい機能を見つけるには、[[Dynamics 365 2018 年春リリース ノート](https://aka.ms/businessappsreleasenotes)] をダウンロードしてください。 リリース ノートでは、Dynamics 365 for Finance and Operations に含まれる新機能または変更された機能について詳細に説明します。
 
@@ -79,11 +79,6 @@ Finance and Operations 内で担当者および個人データを検索するこ
 ### <a name="extensibility-requests"></a>拡張機能の要求
 
 お客様は、必要なシナリオのために製品に拡張サポートを追加するよう Microsoft に依頼することができます。 今回のリリースでは、この機能は Lifecycle Services (LCS) に移動されています。
-
-### <a name="extensible-project-work-breakdown-structure"></a>拡張可能なプロジェクトの作業分解構造
-
-拡張子を使用して、プロジェクト作業分解構造のカスタマイズを有効にします。
-これにより、プロジェクト作業分解構造に使用される階層グリッド コントロールが、階層データをサポートする標準グリッドに置き換えられます。
 
 ### <a name="embedding-powerapps-in-workspaces-and-forms"></a>ワークスペースおよびフォームに PowerApps を埋め込む
 

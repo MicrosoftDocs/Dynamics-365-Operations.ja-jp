@@ -18,10 +18,10 @@ ms.author: rassadi
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: d681032b28c6df23a0591b2610e72edefcc40034
+ms.sourcegitcommit: 20323fed120df220218a0c9367ca78302a1da461
+ms.openlocfilehash: 1c0ecd8953196c7c39870d4c3b9297f9e2b4aa6e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/03/2018
 
 ---
 
@@ -104,6 +104,7 @@ namespace Contoso.Commerce.HardwareStation.PaymentSample
                 {
                     typeof(OpenPaymentTerminalDeviceRequest),
                     typeof(BeginTransactionPaymentTerminalDeviceRequest),
+                    typeof(LockPaymentTerminalDeviceRequest),
                     typeof(UpdateLineItemsPaymentTerminalDeviceRequest),
                     typeof(CancelOperationPaymentTerminalDeviceRequest),
                     typeof(AuthorizePaymentTerminalDeviceRequest),
@@ -168,6 +169,7 @@ namespace Contoso.Commerce.HardwareStation.PaymentSample
 |---|---|
 | OpenPaymentTerminalDeviceRequest | この要求は、販売取引が開始される前に呼び出されます。 支払ターミナルへの接続を確立するために使用されます。 |
 | BeginTransactionPaymentTerminalDeviceRequest | この要求は、新しい販売取引が開始されたときに呼び出されます。 支払ターミナルで初期化を処理するために使用されます (たとえば、トランザクション画面の初期化)。 |
+| LockPaymentTerminalDeviceRequest | この要求は支払ターミナルがトランザクションに対してロックされている場合、呼び出されます。 |
 | UpdateLineItemsPaymentTerminalDeviceRequest | この要求は、カート内の明細行品目が更新されたときに呼び出されます。 |
 | AuthorizePaymentTerminalDeviceRequest | この要求は、POS 支払ビューで支払が開始されたときに呼び出されます。 |
 | CancelOperationPaymentTerminalDeviceRequest | この要求は、支払いが開始された後、支払い端末で支払いが完了する前に、支払いビュー ダイアログ ボックスで **キャンセル** ボタンを選択すると呼び出されます。 |
@@ -215,6 +217,22 @@ public BeginTransactionPaymentTerminalDeviceRequest(string token, string payment
 | invoiceNumber | POS が販売トランザクションを追跡するために生成する一意の請求書番号。 |
 | isTestMode | 支払コネクタがテスト モードで使用されているかどうかを示す値。 |
 | extensionTransactionProperties | 名前/値のペアの形式の拡張構成プロパティのセット。 |
+
+##### <a name="lockpaymentterminaldevicerequest"></a>LockPaymentTerminalDeviceRequest
+###### <a name="signature"></a>署名
+``` csharp
+public LockPaymentTerminalDeviceRequest(string clientDeviceNumber, string deviceType, string deviceName, bool isExclusive, bool isOverride)
+```
+
+###### <a name="variables"></a>変数
+
+| 変動 | 説明 |
+|---|---|
+| clientDeviceNumber | ロックに使用される固有の POS デバイス番号 |
+| deviceType | POS ハードウェア プロファイル (「Windows」など) で構成されるようにロックを取得したデバイス タイプ。 |
+| deviceName | POS ハードウェア プロファイル (「MOCKPAYMENTTERMINAL」など) で構成されるようにロックを取得したデバイス タイプ。 |
+| isExclusive | 取得したロックが占有されているかどうかを決定します。 | 
+| isOverride | この要求が、既存のロックを上書きするかどうかを決定します。 |
 
 ##### <a name="updatelineitemspaymentterminaldevicerequest"></a>UpdateLineItemsPaymentTerminalDeviceRequest
 ###### <a name="signature"></a>署名
@@ -289,15 +307,15 @@ public AuthorizePaymentTerminalDeviceRequest(string token, string paymentConnect
 
 ``` csharp
 List<PaymentProperty> paymentSdkProperties = new List<PaymentProperty>();
-paymentSdkProperties.Add(new PaymentProperty(GenericNamespace.Connector, ConnectorProperties.ConnectorName, "TestConnector");
+paymentSdkProperties.Add(new PaymentProperty(GenericNamespace.Connector, ConnectorProperties.ConnectorName, "TestConnector"));
 
 List<PaymentProperty> paymentSdkAuthorizationProperties = new List<PaymentProperty>();
-paymentSdkAuthorizationProperties.Add(new PaymentProperty(GenericNamespace.AuthorizationResponse, AuthorizationResponseProperties.ApprovedAmount, 28.08m);
-paymentSdkAuthorizationProperties.Add(new PaymentProperty(GenericNamespace.AuthorizationResponse, AuthorizationResponseProperties.AvailableBalane, 100.00);
-paymentSdkAuthorizationProperties.Add(new PaymentProperty(GenericNamespace.AuthorizationResponse, AuthorizationResponseProperties.ApprovalCode, "Z123456");
-paymentSdkAuthorizationProperties.Add(new PaymentProperty(GenericNamespace.AuthorizationResponse, AuthorizationResponseProperties.ProviderTrasactionId, "123456789");
-paymentSdkAuthorizationProperties.Add(new PaymentProperty(GenericNamespace.AuthorizationResponse, AuthorizationResponseProperties.AuthorizationResult, AuthorizationResult.Success.ToString());
-paymentSdkAuthorizationProperties.Add(new PaymentProperty(GenericNamespace.AuthorizationResponse, TransactionDataProperties.TerminalId, "000001");
+paymentSdkAuthorizationProperties.Add(new PaymentProperty(GenericNamespace.AuthorizationResponse, AuthorizationResponseProperties.ApprovedAmount, 28.08m));
+paymentSdkAuthorizationProperties.Add(new PaymentProperty(GenericNamespace.AuthorizationResponse, AuthorizationResponseProperties.AvailableBalance, 100.00m));
+paymentSdkAuthorizationProperties.Add(new PaymentProperty(GenericNamespace.AuthorizationResponse, AuthorizationResponseProperties.ApprovalCode, "Z123456"));
+paymentSdkAuthorizationProperties.Add(new PaymentProperty(GenericNamespace.AuthorizationResponse, AuthorizationResponseProperties.ProviderTransactionId, "123456789"));
+paymentSdkAuthorizationProperties.Add(new PaymentProperty(GenericNamespace.AuthorizationResponse, AuthorizationResponseProperties.AuthorizationResult, AuthorizationResult.Success.ToString()));
+paymentSdkAuthorizationProperties.Add(new PaymentProperty(GenericNamespace.AuthorizationResponse, TransactionDataProperties.TerminalId, "000001"));
 
 paymentSdkProperties.Add(new PaymentProperty(GenericNamespace.AuthorizationResponse, AuthorizationResponseProperties.Properties, paymentSdkAuthorizationProperties.ToArray()));
 

@@ -18,10 +18,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: e80004ec5ec61271ef1f66218e8435f5f180acbe
+ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
+ms.openlocfilehash: 49f8f5ee78be0822911b145915a41bdb71033712
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/23/2018
 
 ---
 
@@ -44,8 +44,7 @@ Finance and Operations の財務報告リリース 7.2.6.0 を取得するには
 > [!NOTE]
 > このプロセスのステップは、Finance and Operations 財務諸表 7.2.6.0 以降のリリースでサポートされています。 以前のリリースを持っている場合は、サポート チームに問い合わせてください。
 
-レポート デザイナーのバージョンを確認するには、次のビデオをご覧ください。
-> [!Video https://www.youtube.com/embed/icfA5Q3kp4w]
+レポート デザイナーのバージョンを検索するには、次のビデオをご覧ください。:[レポート デザイナーのバージョンを検索する方法](https://www.youtube.com/watch?v=icfA5Q3kp4w)
 
 特定のシナリオでは、場合によっては財務諸表のデータ マートをリセットする必要があります。 レポート デザイナーのクライアントでこのタスクを実行することができます。 データ マートをリセットする必要があるかもしれない、いくつかのシナリオを次に示します:
 

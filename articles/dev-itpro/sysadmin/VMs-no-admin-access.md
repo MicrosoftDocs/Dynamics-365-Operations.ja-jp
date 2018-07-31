@@ -1,9 +1,9 @@
 ---
-title: "管理者のアクセスを許可しない仮想マシンに関するよく寄せられる質問"
+title: "管理者アクセスを許可しない開発用 VM および ビルド用 VM に関するよく寄せられる質問"
 description: "このトピックでは、管理者アクセスを許可しない仮想マシンに関するよくある質問 (FAQ) への回答を示します。"
 author: yukonpeegs
 manager: AnnBe
-ms.date: 03/29/2018
+ms.date: 05/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,16 +17,16 @@ ms.author: epegors
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 12
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 8124081c061b11fe391811be1979567cf2012206
+ms.sourcegitcommit: 8ecf9187720854110fb8ce61601edc00f641f476
+ms.openlocfilehash: e8f360162fe72a8bd4a4fc5eb716fd9375c08814
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/24/2018
 
 ---
 
-# <a name="virtual-machines-that-dont-allow-administrator-access-faq"></a>管理者のアクセスを許可しない仮想マシンに関するよく寄せられる質問
+# <a name="development-and-build-vms-that-dont-allow-administrator-access-faq"></a>管理者アクセスを許可しない開発用 VM および ビルド用 VM に関するよく寄せられる質問
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 このトピックでは、管理者アクセスを許可しない仮想マシン (VM) に関するよくある質問 (FAQ) への回答を示します。 具体的には、このトピックの情報は、Platform update 12 以降を実行する Tier 1 VM に適用されます。
 
@@ -56,9 +56,6 @@ IIS Express を使用する必要があります。 詳細については、次�
 ## <a name="what-are-the-instructions-for-using-iis-express"></a>IIS Express の使用方法は ?
 IIS Express が起動されると、通知領域 (時計の近くにある) にアイコンが表示されます。 IIS Express アイコンを右クリックすると、実行中のすべてのサイトが一覧表示されます。 そのメニューから IIS Express を停止することができます。 Visual Studio でのいくつかのアクションによって IIS Express が起動しますが、**Dynamics 365** メニューで **IIS Express の再起動** を選択することで、Visual Studio から明示的に IIS Express を起動することもできます。
 
-## <a name="how-can-i-apply-a-partner-visual-studio-license-that-isnt-linked-to-the-visual-studio-sign-in-account-that-is-likely-to-be-used-in-the-customer-azure-ad-or-domain"></a>顧客の Azure AD またはドメインで使用される可能性のある、Visual Studio サインイン アカウントにリンクされていない、パートナーの Visual Studio ライセンスはどのように適用できますか。
-この機能はサポートされていません。 パートナーの Visual Studio ライセンスは、顧客の Azure Active Directory (Azure AD) またはドメインで使用されている Visual Studio サインイン アカウントにリンクされない限り、適用することはできません。
-
 ## <a name="can-i-install-additional-development-tools-such-as-fiddler-and-pepper"></a>追加の開発ツール (Fiddler や Pepper など) をインストールすることはできますか。
 いいえ、追加の開発ツールをインストールすることはできません。
 
@@ -86,4 +83,15 @@ Trace Parser は現在サポートされていませんが、間もなく再度�
 
 ## <a name="can-i-install-a-license-deployable-package"></a>ライセンス配置可能パッケージをインストールできますか。
 **- devinstall** オプションを使用して、ライセンスが配置可能なパッケージをインストールできる必要があります。 ただし、このシナリオで問題が検出されました。 問題の解決に取り組んでいます。
+
+## <a name="is-licensing-visual-studio-by-entering-a-product-key-supported"></a>プロダクト キーを入力することによってライセンス Visual Studio はサポートされますか。
+Visual Studio に直接プロダクト キーを入力することはサポートされていません。 代わりに、Visual Studio 定期売買ライセンスを使用し、ライセンスに関連付けられている電子メール アドレス (ユーザー アカウント) で Visual Studio にサインインします。 Visual Studio ライセンスをユーザー アカウントにリンクするには、MSDN ライセンスをユーザー アカウントに割り当てるか、または https://www.visualstudio.com/subscriptions-administration を使用してユーザー アカウントにライセンスを割り当てます。
+
+## <a name="can-i-upgrade-my-database-to-a-new-application-release"></a>新しいアプリケーションのリリースに、データベースをアップグレードすることはできますか？
+Lifecyle Services (LCS) の 2018 年 2 月リリースと同じく、開発環境の LCS 環境ページからデータ アップグレード パッケージを実行できます。 LCS からのデータ アップグレード パッケージの実行では、VM の管理者である必要はありません。
+
+[開発、デモ、またはサンドボックス環境でのデータのアップグレード](../migration-upgrade/upgrade-data-to-latest-update.md) で説明されているプロセスは、コマンド ラインからのデータ アップグレード パッケージを実行します。 これを行うには、VM の管理者である必要があります。
+
+## <a name="what-do-i-need-to-know-if-i-am-developing-for-retail"></a>Retail の開発をしている場合、何を把握する必要がありますか。
+Dynamics 365 for Retail を開発する場合、コンフィギュレーション手順および他の重要な情報は、[管理者のアクセス権がないクラウド ホストのデベロップメント環境で作業している Retail 開発者向けのコンフィギュレーション手順](../../retail/dev-itpro/cloud-dev-box.md)に記載されています。
 

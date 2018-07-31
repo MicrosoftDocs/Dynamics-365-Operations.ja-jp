@@ -18,16 +18,16 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: ea79b0d4a86a68e8d23419b1e86287b529b63422
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 2475c6db57d1fa01ca914e568407b5f618ba95a1
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="custom-services-for-microsoft-dynamics-365-for-finance-and-operations"></a>Microsoft Dynamics 365 for Finance and Operations の顧客サービス
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Microsoft Dynamics 365 for Finance and Operations のカスタム サービスを展開することができます。 開発者がサービス グループに属するカスタム サービスを書き込むと、そのサービス グループは 2 つのエンドポイントに常に配置されます。
 -   SOAP エンドポイント 
@@ -51,7 +51,9 @@ SOAP エンドポイントが `https://host_uri/soap/services/service_group_name
 詳細については、以下を参照してください。
 -   [カスタム サービスを使用する \[AX 2012\] (TechNet)](http://technet.microsoft.com/en-us/library/hh509052.aspx)
 -   [チュートリアル: X++ クラスをデータ契約として公開する (TechNet)](http://technet.microsoft.com/en-us/library/gg844225.aspx)
--   [カスタム サービス Office Mix プレゼンテーション](https://mix.office.com/watch/12e4fejbgj429)。 
+
+<!--
+-   [Custom services Office Mix presentation](https://mix.office.com/watch/12e4fejbgj429). -->
 
 
 ### <a name="json-based-custom-service"></a>JSON ベース顧客サービス

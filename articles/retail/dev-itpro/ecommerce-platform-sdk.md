@@ -3,7 +3,7 @@ title: "E コマース プラットフォーム SDK"
 description: "このトピックでは、電子商取引プラットフォーム SDK について説明します。"
 author: kfend
 manager: AnnBe
-ms.date: 11/14/2017
+ms.date: 07/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -18,10 +18,10 @@ ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 5bacd7a3d02b9ee6b760ffb91b391de352636441
+ms.sourcegitcommit: f2e3a40f58b57785079e1940b2d24a3598a3ad1b
+ms.openlocfilehash: c748f8b6cdf6c46032a92e0f0bce09cfc393ca7b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 07/09/2018
 
 ---
 
@@ -37,8 +37,18 @@ ms.lasthandoff: 04/20/2018
 -   サンプル ASP.net Web サイト
 
 ## <a name="use-the-sample-aspnet-website"></a>サンプル asp.net web サイトの使用
-### <a name="use-the-retailsdk-to-create-the-sample-aspnet-website"></a>RetailSDKを使用して、サンプルの asp.net Web サイトを作成します。
 
+
+### <a name="download-the-retail-sdk"></a>Retail SDK をダウンロード
+
+Retail SDK は、開発環境と、Retail SDK フォルダーにある修正プログラム パッケージで使用できます。 詳細については、「」を参照してください。
+
+- 開発インスタンスから SDK を取得すると、構成および使用の準備がすぐに整います。 詳細については、「[アクセス インスタンス](../../dev-itpro/dev-tools/access-instances.md)」を参照してください。 
+- 修正プログラムから SDK を取得する場合は、修正プログラムのパッケージでは圧縮フォルダとして含まれています。 Retail 修正プログラムは、累積的であり、その他のすべての修正プログラムが含まれています。 
+
+Visual Studio Online などのソース管理システムに SDK を配置することをお勧めします。
+
+### <a name="use-the-retail-sdk-to-create-the-sample-aspnet-website"></a>Retail SDK を使用して、サンプルの asp.net Web サイトを作成します
 1.  管理モードで Visual Studio 2015 を開きます。 これは、inetpub フォルダーにパブリッシュするために必要です。
 2.  C:\\Microsoft Dynamics AX70\\RetailSdkOnlineStoreOnlineStore.sln を開き、すべてのフレームワーク コンポーネントを含めます。
 3.  サンプルのオンライン ストアは C:\\Microsoft Dynamics AX70\\RetailSdkSampleExtensionsOnlineStore にあります。

@@ -3,7 +3,7 @@ title: "ローカル エージェントの更新"
 description: "このトピックでは、ローカル エージェントを更新する方法について説明します。"
 author: sarvanisathish
 manager: AnnBe
-ms.date: 03/05/2018
+ms.date: 07/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: sarvanis
 ms.search.validFrom: 2017-12-05
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: de4e152e0f29d03f21fe02c4bdf23963fda012a3
+ms.sourcegitcommit: 62dbf8ffd550f9369df1ac8399b25c76f3d57c93
+ms.openlocfilehash: 4624d97d79cf8cd9706cf2a9d85560b48cc2e2ae
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 07/03/2018
 
 ---
 # <a name="update-the-local-agent"></a>ローカル エージェントの更新
@@ -36,6 +36,10 @@ ms.lasthandoff: 04/20/2018
 | 1.0.0               | このバージョンでは、展開が失敗した場合のために[再構成機能](../../dev-itpro/lifecycle-services/reconfigure-environment.md)が有効になります。 |
 | 1.1.0               | このバージョンでは、正常に展開するために[再構成機能](../../dev-itpro/lifecycle-services/reconfigure-environment.md)が有効になり、複数モデルのパッケージ展開が可能になり、プラットフォーム更新プログラム 8 および 11 が展開されます。 | 
 | 200               | このバージョンでは、サービス フローが可能になり、プラットフォーム更新プログラム 12 が展開されます。 |
+| 2.1.0               | このバージョンでは、**準備**および**更新**が 2 つの個別のステップである 2 段階サービスが可能になります。 |
+
+## <a name="whats-new-in-local-agent-210"></a>Local agent 2.1.0 の新機能
+- ローカル エージェント 2.1.0 では、**環境の準備**および**環境の更新**が 2 つの異なる手順および明示的アクションである 2 フェーズのサービスを有効にします。 事前準備を行い、ユーザーが準備中に環境を使用できるようにし、実際の更新環境アクションが発生する際にダウンタイムを通知することで、オンプレミス環境に更新プログラムを適用する場合に顧客が取る必要があるダウンタイムの合計が削減されます。
 
 ## <a name="whats-new-in-local-agent-200"></a>Local agent 2.0.0 の新機能
 - ローカル エージェント 2.0.0 はプラットフォーム更新プログラム 12 を展開できます。

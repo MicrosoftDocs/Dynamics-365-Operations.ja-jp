@@ -18,15 +18,15 @@ ms.author: pbj
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: a87a75443c5cea4d1c3de2200b214ff8028bf7bd
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: f72ed6977bfc16e564f4d7a273b36012f079130c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="build-a-read-only-entity-that-exposes-financial-dimensions"></a>財務分析コードを公開する読み取り専用エンティティのビルド
-「[!INCLUDE [banner](../includes/banner.md)]」
+"[!include [banner](../includes/banner.md)]"
 
 
 このトピックでは、登録されている登録済のトランザクションのエンティティを作成する方法について説明します。 

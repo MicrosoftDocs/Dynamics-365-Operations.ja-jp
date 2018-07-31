@@ -18,20 +18,20 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: cd685b7696a3cd3c3fda319943b5d5f1d540f115
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 7734a133db778c8dd25982d4d391b8fadf503320
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="develop-an-entity-for-data-migration"></a>データ移行のエンティティの開発
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 このチュートリアルでは、Microsoft Visual Studio でデータ エンティティを開発し、データ移行に使用する方法を示します。
 
-このチュートリアルは、2 つのセクションと 4 つの演習に分かれています。 最初のセクションでは、Visual Studio で**プロジェクト カテゴリ**を構築します。 次に、このエンティティを使用して、データをエクスポートします。 2 番目のセクションで、新しいデータのインポート/エクスポート フレームワークを使用することで、**顧客グループ**および**顧客**エンティティを使用して複数のセットのファイルをインポートします。 **注記:** このチュートリアルは、[データ エンティティの構築と消費](build-consuming-data-entities.md) よりもさらに少し難しく設計されています。 ステップ バイ ステップのガイドを提供するのではなく、シナリオ練習を設けて、期待される結果を示します。 Microsoft Office Mix ビデオを通じて、データのインポート/エクスポート フレームワークとエンティティについて既に理解していることを前提としています。
+このチュートリアルは、2 つのセクションと 4 つの演習に分かれています。 最初のセクションでは、Visual Studio で**プロジェクト カテゴリ**を構築します。 次に、このエンティティを使用して、データをエクスポートします。 2 番目のセクションで、新しいデータのインポート/エクスポート フレームワークを使用することで、**顧客グループ**および**顧客**エンティティを使用して複数のセットのファイルをインポートします。 **注記:** このチュートリアルは、[データ エンティティの構築と消費](build-consuming-data-entities.md) よりもさらに少し難しく設計されています。 ステップ バイ ステップのガイドを提供するのではなく、シナリオ練習を設けて、期待される結果を示します。 エンティティをすでに理解していることを前提としています。
 
 ## <a name="prerequisites"></a>前提条件
 このチュートリアルでは、リモート デスクトップを使用して環境にアクセスする必要があります。 インスタンスに管理者としてプロビジョニングする必要があります。

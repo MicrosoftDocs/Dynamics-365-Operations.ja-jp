@@ -18,10 +18,10 @@ ms.author: kfend
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 744b1e8f82a4669c2fbaa630d5e6f5a116a219e5
+ms.sourcegitcommit: dc2ab66bf6e3195e1ebf394f99182f59c3ee2125
+ms.openlocfilehash: e7add3719da523f2624c9dcb990ca8dcd566dcfe
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/15/2018
 
 ---
 
@@ -118,11 +118,11 @@ SQL Server は、生産用として少なくとも 2 つのノードを持つ高
 |            | オーケストレータ                  | 4                           | 16                      |
 |                 | SQL Server  | 8  | 32|
 
-<strong>生産およびサンドボックス配置用の最小サイズ設定の見積\</strong>*
+**生産およびサンド ボックス配置用の最小サイズ設定の見積**
 
 | トポロジ                                        | 役割                          | インスタンスの数 |
 |-------------------------------------------------|-------------------------------|---------------------|
-| 実稼働                                      | AOS (データ管理、バッチ)  | 3                   |
+| 生産                                      | AOS (データ管理、バッチ)  | 3                   |
 |                                                 | Management Reporter           | 2                   |
 |                                                 | SQL Server Reporting Services | 1                   |
 |                                                 | オーケストレータ\*\*              | 3                   |

@@ -18,16 +18,16 @@ ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 3a4bd6a6bd34818a41e2256067a9a67defb86763
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 75f4aff14ab883f294f214ecd8c53b5c7cb1f291
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="export-and-import-a-model"></a>モデルのエクスポートとインポート
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 モデル ファイルは顧客およびパートナーにモデルを配布して、開発環境にインストールすることができます。 これらは Lifecycle Services (LCS) ソリューションの主要なコンポーネントです。 モデル ファイルには、モデル記述子ファイル、メタデータ、ソース コード、および参照先の .NET アセンブリ (ある場合) が含まれます。 この記事では、モデルをモデル ファイルにエクスポートし、モデル ファイルをインストールし、開発環境でモデルを削除する方法について説明します。
 
@@ -59,7 +59,9 @@ ms.lasthandoff: 04/20/2018
 1. <strong>Dynamics 365 **&gt;**AddIns</strong> で、<strong>コンフリクトからプロジェクトを作成する</strong> をクリックします。
 2. ダイアログ ボックスで、モデルを選択して競合を確認します。 これは、新しくインストールされたベースライン モデルの要素に対するカスタマイズを含まれるモデルです。
 3. **プロジェクトの作成** をクリックします。 競合するモデルの要素のみを含むプロジェクトが生成されます。 [![AddUpdate\_MetaHotfix](./media/addupdate_metahotfix.png)](./media/addupdate_metahotfix.png)
-4. 競合する要素のデザイナーを開いて、表示されたツールを使って競合を表示し、解決します。 開発環境で使用できる競合解決ツールの概要については、[Visual Studio ツールを使用して競合を解決する](https://mix.office.com/watch/1rl75ei2cs6d7) Microsoft Office Mix を参照してください。
+4. 競合する要素のデザイナーを開いて、表示されたツールを使って競合を表示し、解決します。 
+
+<!--For an introduction to conflict resolution tools that are available in a development environment, see the [Resolve conflicts using Visual Studio tools](https://mix.office.com/watch/1rl75ei2cs6d7) Microsoft Office Mix.-->
 
 
 

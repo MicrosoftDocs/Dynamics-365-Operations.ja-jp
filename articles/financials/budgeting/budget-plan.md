@@ -1,16 +1,16 @@
 ---
 title: "予算計画"
-description: "このラボの目的は、予算計画領域で、Microsoft Dynamics 365 for Finance and Operations 機能の更新のガイドされたビューを提供することです。 このラボの目的は、予算計画モジュールのクイック コンフィギュレーションの例、およびこのコンフィギュレーションを使用してどのように予算計画が達成されるかのショーケースを示すことです。  この実習では、次の業務プロセスまたはタスクに特に焦点を合わせます。-    - 予算計画のための組織階層の作成およびユーザー セキュリティの構成   - 予算計画シナリオ、予算計画の列、レイアウトおよび Excel テンプレートの定義   - 予算計画プロセスの作成および有効化   - 総勘定元帳からの実績読み込みによる予算計画ドキュメントの作成   - 配賦を使用した予算計画ドキュメント データの調整   - Excel での予算計画の編集"
-author: twheeloc
+description: "このラボの目的は、予算計画領域で、Microsoft Dynamics 365 for Finance and Operations 機能の更新のガイドされたビューを提供することです。 このラボの目的は、予算計画モジュールのクイック コンフィギュレーションの例、およびこのコンフィギュレーションを使用してどのように予算計画が達成されるかのショーケースを示すことです。"
+author: ShylaThompson
 manager: AnnBe
-ms.date: 01/12/2018
+ms.date: 06/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: BudgetPlanningConfiguration
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 10763
 ms.assetid: 0f2ba752-1f6d-4f28-b9e9-b2e97d10b6d1
@@ -19,10 +19,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 59781da7681ece1c0c013f59e0d1a5d7efc51c3a
+ms.sourcegitcommit: b8f2f3a33dc19c2ebc941d1a504eae0c276f3cdf
+ms.openlocfilehash: ac2e98dbbd45becf06e28b6ea4eb9d0ec15e30f6
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 06/25/2018
 
 ---
 
@@ -30,7 +30,13 @@ ms.lasthandoff: 03/26/2018
 
 [!include [banner](../includes/banner.md)]
 
-このラボの目的は、予算計画領域で、Microsoft Dynamics 365 for Finance and Operations 機能の更新のガイドされたビューを提供することです。 このラボの目的は、予算計画モジュールのクイック コンフィギュレーションの例、およびこのコンフィギュレーションを使用してどのように予算計画が達成されるかのショーケースを示すことです。  この実習では、次の業務プロセスまたはタスクに特に焦点を合わせます。-    - 予算計画のための組織階層の作成およびユーザー セキュリティの構成   - 予算計画シナリオ、予算計画の列、レイアウトおよび Excel テンプレートの定義   - 予算計画プロセスの作成および有効化   - 総勘定元帳からの実績読み込みによる予算計画ドキュメントの作成   - 配賦を使用した予算計画ドキュメント データの調整   - Excel での予算計画の編集 
+このラボの目的は、予算計画領域で、Microsoft Dynamics 365 for Finance and Operations 機能の更新のガイドされたビューを提供することです。 このラボの目的は、予算計画モジュールのクイック コンフィギュレーションの例、およびこのコンフィギュレーションを使用してどのように予算計画が達成されるかのショーケースを示すことです。  この実習では、次の業務プロセスまたはタスクに特に焦点を合わせます。
+- 予算計画のための組織階層の作成およびユーザー セキュリティの構成
+- 予算計画シナリオ、予算計画の列、レイアウトおよび Excel テンプレートの定義
+- 予算計画プロセスの作成および有効化
+- 総勘定元帳からの実績読み込みによる予算計画ドキュメントの作成
+- 配賦を使用した予算計画ドキュメント データの調整
+- Excel での予算計画ドキュメント データの編集 
 
 <a name="prerequisites"></a>前提条件 
 ------------------
@@ -104,8 +110,6 @@ ms.lasthandoff: 03/26/2018
 2.5. 「特定の組織にアクセス許可を付与」を選択します。 最初の手順で作成した [組織階層] を選択します。 財務のノードを選択し、子を含むアクセス許可のボタンをクリックします 
 
 ***重要!*** *– このタスクを実行する際には、DEMF の法人のコンテキストにいることを確認してください。組織のセキュリティは、法人のエンティティごとに適用されるからです* 
-
-[![アクセスを許可](./media/screenshot14.png)](./media/screenshot14.png)
 
 ### <a name="task-3-create-scenarios"></a>タスク 3: シナリオの作成
 3.1。 [予算作成] &gt; [設定] &gt; [予算計画] &gt; [予算計画のコンフィギュレーション] の順に移動します。 シナリオのページで、このラボでさらに使用するシナリオに注意してください: 前年度の実績と予算。 

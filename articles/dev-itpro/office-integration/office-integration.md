@@ -3,7 +3,7 @@ title: "Office 統合"
 description: "このトピックでは、Microsoft Office の統合の概念と機能について説明します。"
 author: ChrisGarty
 manager: AnnBe
-ms.date: 11/02/2017
+ms.date: 06/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: ef628d099e798f91e228b0d207227123e153a591
+ms.sourcegitcommit: cf531c3a8f3bdb17314d1de436b98249169f82a3
+ms.openlocfilehash: c2d01e4340256fb423f18d044868c9047558d2b7
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/22/2018
 
 ---
 
@@ -83,7 +83,7 @@ OData は、サーバーと同じ認証スタック上に配置されます。 �
 
 ### <a name="adding-and-deleting-records"></a>レコードの追加と削除
 
-レコードを追加するには、テーブルのすぐ下の行に入力するか、Tab キーを使用してテーブルの最後の行の最後のセルから移動します。 レコードを削除するには、行ラベル (1、2、3、など) をクリックして行を選択し、その行のすべてのセルを削除します。 変更を発行するには、**発行** をクリックします。 **メッセージ** ダイアログ ボックスには、追加、編集、および削除されたレコード数が表示されます。
+レコードを追加するには、テーブルのすぐ下の行に入力するか、Tab キーを使用してテーブルの最後の行の最後のセルから移動します。 レコードを削除するには、行ラベル (1、2、3、など) をクリックして行を選択し、その行のすべてのセルを削除します。 変更を発行するには、**発行** をクリックします。 **メッセージ**ダイアログ ボックスには、追加、編集、および削除されたレコード数が表示されます。
 
 ## <a name="workbook-designer"></a>ブック デザイナー
 **ブック デザイナー** ページを使用すると、エンティティおよび一連のフィールドを含む、編集可能なカスタム エクスポート ブックを設計することができます。 **ブックブック デザイナー** (**ExportToExcelWorkbookDesigner**)] ページを開くには、**Common&gt;Common&gt;Office統合&gt;Excel ワークブック デザイナー** をクリックします。 データ編集を公開する前に、エンティティのすべてのキー フィールドは Excel テーブルに存在する必要があります。 キー フィールドには、それらの横に鍵の記号があります。 レコードを正常に作成または更新するには、Excel テーブルにすべての必須フィールドがなければなりません。 必須フィールドには、その横にアスタリスク (\*) があります。 
@@ -119,6 +119,7 @@ OData は、サーバーと同じ認証スタック上に配置されます。 �
 
 **getExportOptions** メソッドを実装し、返されるリストにエクスポート オプションを追加して、エクスポート オプションを追加します。 次に例を示します。
 
+```
     public List getExportOptions()
     {
         List exportOptions = new List(Types::Class); 
@@ -127,9 +128,11 @@ OData は、サーバーと同じ認証スタック上に配置されます。 �
         exportOptions.addEnd(exportOption); 
         return exportOptions;
     }
+```
 
-**ExportToExcelExportOption.id** メソッドをチェックした後、**getDataEntityContext** メソッドを実装して適切な **exportOption** の **ExportToExcelDataEntityContext** を返すことにより、エクスポート コンテキストを提供します。 コンテキストは、生成されるブックに含めるデータ エンティティとフィールドを指定します。 次に例を示します。
+**ExportToExcelExportOption.id()** メソッドをチェックした後、**getDataEntityContext** メソッドを実装して適切な **exportOption** の **ExportToExcelDataEntityContext** を返すことにより、エクスポート コンテキストを提供します。 コンテキストは、生成されるブックに含めるデータ エンティティとフィールドを指定します。 次に例を示します。 
 
+```
     public ExportToExcelDataEntityContext getDataEntityContext(ExportToExcelExportOption _exportOption)
     {
         ExportToExcelDataEntityContext context = null;
@@ -137,17 +140,21 @@ OData は、サーバーと同じ認証スタック上に配置されます。 �
         {
             context = ExportToExcelDataEntityContext::construct(tablestr(FMCustomerEntity), tablefieldgroupstr(FMCustomerEntity, AutoReport));
         }
-         return context;
+        return context;
     }
+```
 
 ### <a name="custom-template-exports"></a>カスタム テンプレートのエクスポート
 
-カスタム テンプレートのエクスポートを提供するには、ExportToExcelITemplateCustomExport インターフェイスを実装します。 次に例を示します。
+カスタム テンプレートのエクスポートを提供するには、**ExportToExcelITemplateCustomExport** インターフェイスを実装します。 次に例を示します。
 
+```
     public class FMRental extends FormRun implements ExportToExcelIGeneratedCustomExport, ExportToExcelITemplateCustomExport
+```
 
 **getExportOptions** メソッドを実装し、返されるリストにエクスポート オプションを追加して、エクスポート オプションを追加します。 次に例を示します。
 
+```
     public List getExportOptions()
     {
         List exportOptions = new List(Types::Class);
@@ -157,9 +164,11 @@ OData は、サーバーと同じ認証スタック上に配置されます。 �
         exportOptions.addEnd(exportOption2);        
         return exportOptions;
     }
+```
 
 **ExportToExcelExportOption.id** メソッドをチェックした後、**getTemplate** メソッドを実装して適切な **exportOption** の **System.IO.Stream** を返すことにより、エクスポート テンプレートを提供します。 テンプレートは、アプリケーション オブジェクト ツリー (AOT) のリソースとして保存でき、**Microsoft.Dynamics.Ax.Xpp.MetadataSupport::GetResourceContentStream** メソッドを使用して実行時に取得できます。 次に例を示します。
 
+```
     public System.IO.Stream getTemplate(ExportToExcelExportOption _exportOption)
     {
         System.IO.Stream stream = null;
@@ -169,12 +178,15 @@ OData は、サーバーと同じ認証スタック上に配置されます。 �
         }
         return stream;
     }
+```
 
 インターフェイスを満たすために **updateTemplateSettings** メソッドを実装する必要もあります。 最終的に、このメソッドはフィルタリング情報を提供するために使用されますが、その機能はまだ開発中です。 次に例を示します。
 
+```
     public void updateTemplateSettings(ExportToExcelExportOption _exportOption, Microsoft.Dynamics.Platform.Integration.Office.ExportToExcelHelper.SettingsEditor _settingsEditor)
     {
     }
+```
 
 ## <a name="document-management"></a>ドキュメント管理
 ドキュメントの管理は、Azure Blob storage および SharePoint Online でレコードの添付ファイルの保存をサポートします。 データベースの記憶域は非推奨です。 ドキュメントはアプリケーションを介してのみアクセスでき、データベースのパフォーマンスに悪影響を及ぼさないストレージを提供できるという利点があるため Azure Blob ストレージは、データベースのストレージと同等です。 Azure blob storage は既定でありすぐに動作します。 SharePoint テナントは自動的に検出されるため、O365 ライセンスを持っている場合 SharePoint の記憶域がすぐに機能します。例: TenantA.onmicrosoft.com O365/AAD テナントのユーザーは SharePoint サイトとして TenantA.sharepoint.com を取得します。 ユーザーがドキュメントの管理が無効になっている場合、それを有効にするには、**オプション &gt; 一般 &gt; その他**をクリックし、**ドキュメント処理の有効オプション**を**はい**に設定します。 
@@ -185,13 +197,14 @@ OData は、サーバーと同じ認証スタック上に配置されます。 �
 
 [![5\_Office](./media/5_office.png)](./media/5_office.png) 
 
-<strong>添付ファイル</strong> ページには、前のページで選択したレコードに関連付けられている添付ファイル (ドキュメント) のビューが表示されます。 アプリ バーの <strong>新規</strong> ボタン (<strong>+</strong>) をクリックすると、レコードに新しいアタッチメントを追加することができます。 <strong>ファイル</strong>および*<strong><em>画像</em></strong>* ドキュメント タイプについては、関連ファイルを提供するよう求められます。
+**添付ファイル** ページには、前のページで選択したレコードに関連付けられている添付ファイル (ドキュメント) のビューが表示されます。 アプリ バーの **新規** ボタン (**+**) をクリックすると、レコードに新しいアタッチメントを追加することができます。 **ファイル**および**画像**ドキュメント タイプについては、関連ファイルを提供するように求められます。
 
 ### <a name="document-preview"></a>ドキュメントのプレビュー
 
 サポート対象のファイルの種類のプレビューは、**プレビュー**クイック タブで提供されます。 PNG イメージやテキスト ファイルなどの基本的なドキュメント タイプは、既定でサポートされています。 Microsoft Word、Excel、および PowerPoint ファイルなどの Office ドキュメント タイプは、生産 Office Web Apps サーバーを使用する必要があり、OneBox コンフィギュレーションを利用できない場合もあます。
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
+
 ### <a name="office-licensing"></a>Office ライセンス
 
 #### <a name="what-office-365-licenses-are-available"></a>どのような Office 365 ライセンスがありますか ?
@@ -202,15 +215,11 @@ OData は、サーバーと同じ認証スタック上に配置されます。 �
 
 ドキュメント パラメーター フォームを開いて、SharePoint サーバーが自動的に検出および設定されていることを確認してください。 ここで、ドキュメント タイプを開くか作成し、「SharePoint」へのドキュメント タイプの場所を設定し、ファイルを保存する必要があるフォルダーを選択します。
 
-<a name="additional-resources"></a>その他のリソース
---------
+## <a name="additional-resources"></a>その他のリソース
 
 [Office 統合ラボとチュートリアル](office-integration-tutorial.md)
 
 [Office 統合のトラブルシューティング](office-integration-troubleshooting.md)
 
 [アプリケーション スタックおよびサーバーのアーキテクチャ](../dev-tools/application-stack-server-architecture.md)
-
-
-
 

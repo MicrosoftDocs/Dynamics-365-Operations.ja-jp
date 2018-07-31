@@ -19,16 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2018-05-02
 ms.dyn365.ops.version: AX 8.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 8435389a523d8393e9d4daa0cb1244203c0dbb12
-ms.openlocfilehash: bd8c5a18d69e1952d32675d759b8b2a997844822
+ms.sourcegitcommit: e0ab9c9894fdd5fba224c166941abbf52172ae46
+ms.openlocfilehash: 27819c922832a30eb0b20db6bffdbd4504e6d5e6
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/21/2018
+ms.lasthandoff: 06/12/2018
 
 ---
 
-# <a name="add-new-location-roles-and-party-relationship-types"></a>新規の場所および関係者のリレーションシップ タイプの追加 
+# <a name="add-location-roles-and-party-relationship-types"></a>場所および関係者のリレーションシップ タイプの追加 
 
-## <a name="add-new-location-roles"></a>新規場所ロールの追加
+## <a name="add-location-roles"></a>場所のロールの追加
 
 住所および連絡先情報について、新たに場所ロールを追加するには 2 つの方法があります。
 
@@ -54,7 +54,7 @@ ms.lasthandoff: 05/21/2018
 
         ![新規の場所の挿入](media/InsertNewLocation.PNG)
 
-## <a name="add-new-party-relationship-types"></a>新規の関係者のリレーションシップ タイプの追加 
+## <a name="add-party-relationship-types"></a>関係者のリレーションシップ タイプの追加 
 
 新規リレーションシップ タイプを追加するには次の 2 つの方法があります。
 

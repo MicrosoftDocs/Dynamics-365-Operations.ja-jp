@@ -18,10 +18,10 @@ ms.author: maertenm
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 24a2c35685084ccb3f7554dd6c9c6f46c031b129
-ms.openlocfilehash: e773c8d4da5871a8726bc3e5c56dab10da5dae59
+ms.sourcegitcommit: b35f54d75b8b427ff5716c8e8a1f8a3e2afec818
+ms.openlocfilehash: c2e0243e96f0a259b2cf5586f94867eb1a792881
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 06/06/2018
 
 ---
 
@@ -54,6 +54,7 @@ ms.lasthandoff: 04/23/2018
     > この記事では、*サンドボックス* という用語を使用して SQL Azure データベースに接続されている標準またはプレミア承認テスト (レベル 2/3)、またはより高度な環境を示します。
 
 - 出力先の SQL Server 環境では、SQL Server 2016 Release to Manufacturing (RTM) (13.00.1601.5) 以降を実行する必要があります。 SQL Server 2016 の Community Technology Preview (CTP) バージョンでは、インポート処理中にエラーが発生する可能性があります。
+
     > [!IMPORTANT] 
     > サンドボックス環境からデータベースをエクスポートするには、データベースをインポートする環境で同じバージョンの SQL Server Management Studio (SSMS) を実行している必要があります。 これにより、サンドボックス環境で Application Object Server (AOS) を実行するVMに [SQL Server Management Studio の最新バージョン](https://msdn.microsoft.com/en-us/library/mt238290.aspx)をインストールする必要が生じる場合があります。 AOS コンピューターで、bacpac エクスポートを実行します。 この要件は 2 つの理由があります。
 
@@ -184,6 +185,8 @@ UPDATE BatchJob
 SET STATUS = 0
 WHERE STATUS IN (1,2,5,7)
 GO
+-- Clear encrypted hardware profile merchand properties
+update dbo.RETAILHARDWAREPROFILE set SECUREMERCHANTPROPERTIES = null where SECUREMERCHANTPROPERTIES is not null
 ```
 
 ## <a name="export-the-database"></a>データベースをエキスポート
@@ -272,6 +275,9 @@ WHERE T1.storageproviderid = 1 --Azure storage
 
 ALTER DATABASE [<your AX database name>] SET CHANGE_TRACKING = ON (CHANGE_RETENTION = 6 DAYS, AUTO_CLEANUP = ON)
 GO
+DROP PROCEDURE IF EXISTS SP_ConfigureTablesForChangeTracking
+DROP PROCEDURE IF EXISTS SP_ConfigureTablesForChangeTracking_V2
+GO
 -- Begin Refresh Retail FullText Catalogs
 DECLARE @RFTXNAME NVARCHAR(MAX);
 DECLARE @RFTXSQL NVARCHAR(MAX);
@@ -300,6 +306,12 @@ DEALLOCATE retail_ftx;
 -- End Refresh Retail FullText Catalogs
 ```
 
+### <a name="enable-change-tracking"></a>変更追跡の有効化
+ソース データベースで変更追跡が有効になっている場合は、ALTER DATABASE コマンドを使用して、ターゲット環境の新たなプロビジョニング データベースで変更追跡を再度有効にしてください。
+
+新しいデータベースで店舗の業務手順の現在のバージョン (変更追跡に関連する) が使用されていることを確認するには、データ管理のデータ エンティティの変更追跡を有効または無効にする必要があります。 これは、店舗の業務手順の更新をトリガーするために必要なので、どのエンティティでも実行できます。
+
+
 ### <a name="re-provision-the-target-environment"></a>対象の環境を再プロビジョニング
 
 [!include [environment-reprovision](../includes/environment-reprovision.md)]
@@ -313,7 +325,7 @@ Management Reporter という以前の名前を持った財務報告を使用す
 環境を切り替えて新しいデータベースを使用するには、最初に次のサービスを停止します。
 
 - World Wide Web 公開サービス
-- Finance and Operations バッチ管理サービス
+- Microsoft Dynamics 365 Unified Operations: Batch Management Service
 - Management Reporter 2012 処理サービス
 
 サービスが停止した後、AxDB データベース **AxDB\_orig** の名前を変更し、新しくインポートしたデータベース **AxDB** の名前を変更し、そして 3 つのサービスを再起動します。

@@ -3,7 +3,7 @@ title: "ネットワーク プリンター デバイスを有効にするため�
 description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations 展開向けにドキュメント回覧エージェントをインストールして構成する方法について説明します。"
 author: TJVass
 manager: AnnBe
-ms.date: 12/04/2017
+ms.date: 04/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,16 +19,16 @@ ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 04cec35719931e88d76d028beaca40f12555cbc6
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 7d30a313aa839f1d0f03f5808366d60e60fefdfa
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="install-the-document-routing-agent-to-enable-network-printer-devices"></a>ネットワーク プリンター デバイスを有効にするためにドキュメント回覧エージェントをインストールする
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 for Finance and Operations 展開向けにドキュメント回覧エージェントをインストールして構成する方法について説明します。
 
@@ -42,7 +42,7 @@ ms.lasthandoff: 04/20/2018
 -   アプリケーションには、Adobe Acrobat Reader が必要です。
 -   クライアントは、Windows 8.1 および Windows 10、または Microsoft Windows Server 2012 R2 でのみサポートされています。
 -   Dynamics AX 7.0 & Platform Update 1 配置は、クライアントで Microsoft .NET 4 を要求します。
--   プラットフォーム アップデート 2 以降には、クライアントに .NET 4.62 が必要です。
+-   プラットフォーム更新プログラム 2 以降には、クライアントに .NET 4.62 が必要です。
 
 Finance and Operations アプリケーションに登録されているネットワーク プリンターは、環境で定義されているすべての法人 (会社とも呼ばれます) で使用できます。 ネットワーク プリンター設定は会社固有です。 したがって、管理者はユーザーのアクティブな会社に基づいてアクセスを制限できます。 たとえば、有効な会社内のユーザーは、ドキュメント回覧エージェントによって登録されるすべてのネットワーク プリンターへアクセスできる可能性があります。 ただし、別の会社内のユーザーは、アクセスがその会社に対して明示的に有効になるまで、それらのプリンターへアクセスできません。
 

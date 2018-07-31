@@ -18,10 +18,10 @@ ms.author: ntecklu
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: c88d54b05e1949d932863b0798bf22a5aef3fe7e
+ms.sourcegitcommit: d3fc1e8ea856b6c7c6daffd8f46f2e5e4fb12710
+ms.openlocfilehash: 4383825c37d7aed6de60e8da392a1d5b0c5c713a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 06/04/2018
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 04/20/2018
 
 プロジェクトの実装のステージを開始するには、Microsoft Visual Studio Team Services (VSTS) で、ビジネス プロセス モデラー (BPM) とお客様のプロジェクトを同期します。 この方法で、プロセスを確認し、要件を業務プロセスと関連付けることができます。 BPM ライブラリを VSTS プロジェクトと同期させることにより、VSTS での実装プロジェクトの進捗状況を追跡したり、さまざまな作業項目を要件や業務プロセスに関連付けることができます。 これらの作業項目には、バグ、タスク、バックログ項目、テスト、ドキュメントが含まれます。
 
-現在、VSTS はカスタム作業項目の種類やカスタム作業項目の種類を持つ業務プロセスの同期をサポートしていないため、これを確認する警告が表示されます。 警告を無視して、カスタム テンプレートとの VSTS 同期を試みる場合は、テンプレートの次の内容を確認することで同期の問題を回避できます。
+現在、BPM VSTS 同期では、カスタム作業項目または業務プロセスとの同期をサポートしていません。 これらのいずれかを試みると、警告が表示されます。 警告を無視して、カスタム テンプレートとの VSTS 同期を試みる場合は、テンプレートの次の内容を確認することで同期の問題を回避できます。
 - 作業品目タイプの状態を削除しないでください。
 - 作業品目タイプの状態を削除しないでください。
 - 必須フィールドを作業項目の種類に追加しない
@@ -89,6 +89,9 @@ BPM ライブラリを VSTS プロジェクトと同期させるには、**業�
 また、BPM ライブラリ内のツールバーから VSTS 同期を開始することができます。 省略記号ボタン (...) を選択し、**VSTS の同期** を選択します。
 
 ![ライブラリのツール バーから VSTS 同期を開始](./media/newbpm_BlogPost26.png)
+
+>[!NOTE]
+> BPM ローカライズはサポートされません。 EN-US 以外の言語で新しい BPM クライアントを編集すると、変更が加えられた言語で BPM を表示したときのみ変更が表示されます。 EN-US で行われた変更を表示するには、変更が表示される前に、Visual Studio Team Server と同期する必要があります。
 
 ## <a name="turn-off-synchronization-of-bpm-with-vsts"></a>VSTS と BPM の同期をオフにする
 

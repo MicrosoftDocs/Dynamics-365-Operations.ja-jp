@@ -18,16 +18,16 @@ ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: d50d481928a5b57400c80b0ca96bb36e2b4b04e7
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 54b5687d4cb1251627bc6c8b0fc0dc01ff16b292
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="user-interface-development-home-page"></a>ユーザー インターフェイス開発ホーム ページ
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 このトピックには、ユーザー インターフェイス要素の開発に関するトピックへのリンクが含まれています。
 
@@ -46,7 +46,7 @@ Microsoft Dynamics 365 for Finance and Operations のユーザー インター�
 
 ## <a name="forms"></a>フォーム
 -   [ナビゲーション概念](page-navigation.md)
--   [新しいユーザー エクスペリエンス](https://mix.office.com/watch/1ohsrrpsd02e1)
+<!---   [The new user experience](https://mix.office.com/watch/1ohsrrpsd02e1)-->
 -   [レイアウト](page-layout.md)
 -   [Symbol フォント](symbol-font.md)
 -   [カスタム パターンを使用したテスト フォーム](testing-forms-custom-patterns.md)

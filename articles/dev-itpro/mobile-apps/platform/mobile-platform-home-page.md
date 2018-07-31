@@ -3,7 +3,7 @@ title: "モバイル プラットフォームのホーム ページ"
 description: "モバイル プラットフォームを使用して、ワークスペースのモバイル アプリを作成できます。"
 author: RobinARH
 manager: AnnBe
-ms.date: 03/07/2018
+ms.date: 05/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: robinr
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 9a6a792e07c827104667643241d7ec5c2efdb22b
+ms.sourcegitcommit: f53ecd61cdfbc9d93c9658b433a6bc9a591892c4
+ms.openlocfilehash: 084a3cd5b03a9c31610b9dd38bb2ec254899d7e9
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 06/08/2018
 
 ---
 
@@ -89,19 +89,22 @@ ms.lasthandoff: 04/20/2018
 ### <a name="debugging-the-client-side"></a>クライアント側のデバッグ 
 
 #### <a name="prerequisites"></a>前提条件
-- Android デバイスに加えて PC (推奨) または iOS デバイスと Mac
+- Android デバイスに加えて PC
 - Azure でホストされた開発マシン (モバイル デバイスで指定できます)
 
 #### <a name="steps-to-debug-the-client-side"></a>クライアント側をデバッグする手順
 1. Azure でホストされた開発マシンで公開されている Web クライアントで、Unified Operations アプリ用に公開されたモバイル ワークスペースがあることを確認します。 モバイル ワークスペースを公開する方法については、[モバイル ワークスペースの公開](../publish-mobile-workspace.md) を参照してください。
 
-2. Unified Operations アプリをデバイスで開いて、Azure でホストされた開発マシンを参照し、サインインします。
+2. Android デバイスで Unified Operations アプリの Android デバッグ apk をインストールします。
+    - 1 回のみ、apk ファイルのインストールを許可 -  **メニュー** > **設定** > **セキュリティ**の順に移動し、電話が Google Play ストア以外のソースからアプリをインストールするのを許可するよう**未知のソース**を確認します。
+    - Unified Operations アプリケーションのアンインストール - Unified Operations アプリケーションの以前のバージョンがアンインストールされていることを確認します。
+    - デバイスのブラウザーから apk ファイルをダウンロードして、[Unified Operations Android debug apk on Github](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples/blob/master/android-debug.apk) に移動し、**ダウンロード** (または [ファイルへの直接リンク](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples/raw/master/android-debug.apk)) をクリックします。
+    - Unified Operations apk ファイルをインストール - apk ファイル経由で Unified Operations アプリのインストールを確認します。
+    - デバイスのデバッグ Unified Operations アプリケーションを実行し、サインインします。
 
 3. デバッグ マシンからデバイスに接続します。
 
-    - Android デバイスで、Azure でホストされた開発マシンまたは別の PC で、[リモート デバッグ Android デバイスで開始](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/) する Android 開発者指示に従います。 また、[Android 用 Chrome のリモート デバッグ](https://www.youtube.com/results?search_query=chrome+for+android+remote+debugging) を検索することにより、YouTube 上で多様な説明ビデオを見つけることができます。 
-    
-    - iOS デバイスについては、Mac で実行されている Safari 使用して iOS デバイスに接続します。
+    - Azure でホストされた開発マシンまたは別の PC で、[リモート デバッグ Android デバイスで開始](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/) する Android 開発者指示に従います。 また、[Android 用 Chrome のリモート デバッグ](https://www.youtube.com/results?search_query=chrome+for+android+remote+debugging) を検索することにより、YouTube 上で多様な説明ビデオを見つけることができます。 
     
 4. デバッガーに接続した後は、デバイスの有効タブを見つけます。 Android で **その他のタブを表示** をクリックすることが必要な場合があります。 タブのいずれかは、`/www.index.html#/app/appList`または`/www.index.html#/app/app_landing`のようになります。 
 
@@ -144,6 +147,9 @@ ms.lasthandoff: 04/20/2018
 8. 必要な変更が指定された場合は、X++ では、それらの変更がなされ、環境にこれらの変更をプッシュします。
 
 9. 詳細の変更や検証が必要な場合は、プロセスを繰り返します。
+
+## <a name="change-needed-for-adfs-to-support-mobile-client-in-on-premises-environments"></a>ADFS がオンプレミス環境でモバイル クライアントをサポートするために必要な変更 
+ADFS がドメインで使用されており、環境がオンプレミスである場合、Windows 統合認証 (WIA) を使用する代わりに **ADFS は標準のフォームベースの認証画面を提供するように構成する必要があります**。 iOS と Android の Microsoft Dynamics Unified Operations アプリには、標準のフォーム ベースの認証画面が必要です。 ADFS は、ブラウザー クライアント (ユース ケース) のみ WIA を提供するように構成する必要があります。 詳細については、[WIA をサポートしていないデバイスのイントラネット フォーム ベースの認証を構成する](https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/operations/configure-intranet-forms-based-authentication-for-devices-that-do-not-support-wia)を参照してください。
 
 ## <a name="additional-resources"></a>その他のリソース
 ### <a name="whats-new-and-in-development"></a>新機能および開発中の機能

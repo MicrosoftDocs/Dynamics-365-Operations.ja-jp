@@ -18,10 +18,10 @@ ms.author: ntecklu
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: be05f4c1baeacb1e479bcbdb036dd74709b4c98a
+ms.sourcegitcommit: 2d123a054e05c5a3d239ea5115d31c2582903552
+ms.openlocfilehash: 938272e761a32476c7a43f6084e010ff2e3aa696
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/25/2018
 
 ---
 
@@ -30,6 +30,9 @@ ms.lasthandoff: 04/20/2018
 [!include [banner](../includes/banner.md)]
 
 このトピックでは、ビジネス プロセス モデラー (BPM) ライブラリーの作成、編集、参照の方法について説明します。 グローバル ライブラリまたは企業ライブラリである BPM ライブラリを参照できることに注意することが重要です。 ただし、BPM ライブラリを編集および使用するには、Microsoft Dynamics Lifecycle Services (LCS) のプロジェクトの一部にする必要があります。 Microsoft によって配布されるライブラリは**グローバル ライブラリ**下に表示され、組織によって公開されているライブラリは**コーポレート ライブラリ**下に表示されます。
+
+  >[!NOTE]
+  >BPM ローカライズはサポートされません。 EN-US 以外の言語で新しい BPM クライアントを編集すると、変更が加えられた言語で BPM を表示したときのみ変更が表示されます。 EN-US で行われた変更を表示するには、変更が表示される前に、Visual Studio Team Server と同期する必要があります。
 
 ## <a name="create-a-bpm-library"></a>BPM ライブラリの作成
 BPM ライブラリを作成する方法はいくつかあります。 クライアントで直接構築、または Excel テンプレートをインポートすることにより、最初からそれを実行することができます。 また、既存のライブラリをコピーすることができます。 このセクションでは、これらの各方法について説明します。
@@ -129,4 +132,6 @@ BPM ライブラリ内で語または語句を検索することができます�
 - Microsoft Dynamics 365 for Finance and Operations のタスク記録の一部である、ライブラリ内にある、アプリケーション オブジェクト ツリー (AOT) 要素を検索することができます。 通常、これらの AOT 要素はページまたはメニュー項目の名前です。 AOT 要素を検索するとき、それにドル記号 ($) の接頭語を付けます。 たとえば、検索ボックスで **$CustTable**を入力します。
 
 ![検索ボックス](./media/searching.png "検索ボックス")
+
+   
 

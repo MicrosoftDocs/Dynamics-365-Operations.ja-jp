@@ -3,7 +3,7 @@ title: "Visual Studio を使用して開発およびカスタマイズ"
 description: "このトピックでは、開発に関するトピックへのリンクを提供します。"
 author: RobinARH
 manager: AnnBe
-ms.date: 10/31/2017
+ms.date: 04/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,16 +18,16 @@ ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 8da9c54905ce017e043407ebad943d17ca3561a5
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 578c720595fb74d8179d30d4ace58caa1b25d160
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="develop-and-customize-using-visual-studio"></a>Visual Studio を使用して開発およびカスタマイズ
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 このトピックでは、開発に関するトピックへのリンクを提供します。
 
@@ -51,9 +51,11 @@ Microsoft Dynamics 365 for Finance and Operations は、Microsoft から提供�
 -   [開発システム要件](development-system-requirements.md)
 -   [削除予定の機能](../migration-upgrade/deprecated-features.md)
 -   [非推奨 API's](../migration-upgrade/deprecated-apis.md)
--   [フィードバックとサポート (Office Mix)](https://mix.office.com/watch/92azzna59jj6)
 -   [Visual Studio Team Services の名前を変更し、コンピューターを再起動する](../migration-upgrade/vso-machine-renaming.md)
 -   [Visual Studio Team Services の概要 (ビデオ)](http://channel9.msdn.com/Events/Build/2014/2-575)
+<!-- [Learn about packages, models and Visual Studio (Office Mix)](https://mix.office.com/watch/ies6lyit6773)-->
+<!-- [Development tools performance tips (Office Mix)](https://mix.office.com/watch/rnp6ng9wu8kx)-->
+<!-- [Feedback and support (Office Mix)](https://mix.office.com/watch/92azzna59jj6)-->
 
 ## <a name="fleet-management"></a>フリート管理
 -   [フリート管理のサンプル](introduction-fleet-management-sample.md)
@@ -70,7 +72,7 @@ Microsoft Dynamics 365 for Finance and Operations は、Microsoft から提供�
 ### <a name="tools-models-and-vms"></a>ツール、モデル、VM
 
 -   [開発ツール](development-tools-overview.md)
--   [開発環境 (Office Mix) の概要](https://mix.office.com/watch/1tz7194y62m3s)
+<!-- [Introduction to the development environment (Office Mix)](https://mix.office.com/watch/1tz7194y62m3s)-->
 -   [アプリケーション エクスプローラー](application-explorer.md)
 -   [プロジェクト](projects.md)
 -   [要素デザイナー](element-designers.md)
@@ -79,14 +81,13 @@ Microsoft Dynamics 365 for Finance and Operations は、Microsoft から提供�
 -   [ビルド操作](build-operations.md)
 -   [Visual Studio コード エディター](code-editor.md)
 -   [開発者ツールのアドイン](developer-tools-add-ins.md)
--   [VSTS (Office Mix) をバージョン管理を構成する](https://mix.office.com/watch/1ftubtqzp3xxl)
 -   [モデルの配分: モデルをエクスポートおよびインポートする方法](models-export-import.md)
 -   [Visual Studio でのメタデータの検索](metadata-search-visual-studio.md)
--   [パッケージ、モデル、および Visual Studio (Office Mix) について学ぶ](https://mix.office.com/watch/ies6lyit6773)
--   [開発ツールのパフォーマンスのヒント (Office Mix)](https://mix.office.com/watch/rnp6ng9wu8kx)
 -   [Visual Studio を使用して競合を解決する](https://mix.office.com/watch/1rl75ei2cs6d7)
 -   [新しいユーザー アカウントを開発 VM で開発できるようにする](enable-development-machine.md)
 -   [Visual Studio 開発ツールの更新](update-development-tools.md)
+-   [管理者のアクセスを許可しない仮想マシンに関するよく寄せられる質問](../sysadmin/VMs-no-admin-access.md)
+<!--  [Configure version control with VSTS (Office Mix)](https://mix.office.com/watch/1ftubtqzp3xxl)-->
 
 ## <a name="x-programming-language"></a>X++ プログラミング言語
 ### <a name="tutorials"></a>チュートリアル
@@ -121,12 +122,12 @@ Microsoft Dynamics 365 for Finance and Operations は、Microsoft から提供�
 - [Visual Studio Online を使用した PerfSDK およびマルチユーザー テストの概要](../perf-test/perfsdk-tutorial.md)
 - [問題点の診断およびパフォーマンス問題の分析にTrace Parser のデスクトップ バージョンを使用する](../perf-test/trace-parser.md)
 - [パフォーマンス タイマー](../perf-test/performance-timer.md)
-- [データ拡張ツール (Office Mix) を使用してデータを展開する](https://mix.office.com/watch/11cet1u4nmn64)
-- [Trace Parser (Office Mix) パフォーマンスの問題の分析](https://mix.office.com/watch/17d76cll0npyw)
-- [パフォーマンス タイマーおよびその他のツール (Office Mix)](https://mix.office.com/watch/ij5cqidra5q3)
-- [タスク レコーダーを使用して、単一のユーザー パフォーマンス テスト (Office Mix) を作成する](https://mix.office.com/watch/qtdlasy2rcf3)
-- [パフォーマンス タイマーおよびその他のツール (Office Mix)](https://mix.office.com/watch/ij5cqidra5q3)
-- [Trace Parser (Office Mix) パフォーマンスの問題の分析](https://mix.office.com/watch/17d76cll0npyw)
+<!-- [Expanding data with the Data Expansion tool (Office Mix)](https://mix.office.com/watch/11cet1u4nmn64)
+- [Analyzing performance Issues with Trace Parser (Office Mix)](https://mix.office.com/watch/17d76cll0npyw)
+- [The performance timer and other tools (Office Mix)](https://mix.office.com/watch/ij5cqidra5q3)
+- [Using Task Recorder to create a single user performance test (Office Mix)](https://mix.office.com/watch/qtdlasy2rcf3)
+- [The performance timer and other tools (Office Mix)](https://mix.office.com/watch/ij5cqidra5q3)
+- [Analyzing performance Issues with Trace Parser (Office Mix)](https://mix.office.com/watch/17d76cll0npyw)-->
 
 ## <a name="user-interface-concepts"></a>ユーザー インターフェイスのコンセプト
 クライアントは、すべての主要なブラウザーで動作する HTML Web クライアントです。 ユーザー インターフェイスの開発およびカスタマイズの詳細ついては、[ユーザー インターフェイス開発ホーム ページ](../user-interface/user-interface-development-home-page.md) を参照してください。
@@ -136,8 +137,8 @@ Microsoft Dynamics 365 for Finance and Operations は、Microsoft から提供�
 
 ## <a name="reporting-services"></a>Reporting Services
 - [電子申告の概要](../analytics/general-electronic-reporting.md)
-- [詳細なレポート ソリューション (Office Mix) の概要](https://mix.office.com/watch/wdl1dquy2tve)
-- [詳細なレポート作成ソリューション (Office Mix) のデモ](https://mix.office.com/watch/1hkvtnc8sc7l6)
+<!-- [Introduction to Advanced Reporting Solutions (Office Mix)](https://mix.office.com/watch/wdl1dquy2tve)
+- [Demo of Advanced Reporting Solutions (Office Mix)](https://mix.office.com/watch/1hkvtnc8sc7l6)-->
 
 ## <a name="data-entities-and-odata"></a>データ エンティティおよび OData
 - [データ エンティティのホーム ページ](../data-entities/data-entities.md)
@@ -154,7 +155,7 @@ Microsoft Dynamics 365 for Finance and Operations は、Microsoft から提供�
 
 ## <a name="intelligence"></a>インテリジェンス
 - [インテリジェンス](../analytics/bi-reporting-home-page.md)
-- [集計データ (Office Mix) の概要](https://mix.office.com/watch/16yvvnw45kzhf)
+<!-- [Overview of aggregate data (Office Mix)](https://mix.office.com/watch/16yvvnw45kzhf)-->
 
 ## <a name="mobile-platform"></a>モバイル プラットフォーム
 - [モバイル プラットフォームのホーム ページ](../mobile-apps/platform/mobile-platform-home-page.md)

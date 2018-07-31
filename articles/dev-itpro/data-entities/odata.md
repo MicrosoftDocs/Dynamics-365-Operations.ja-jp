@@ -18,16 +18,16 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 3e1ee17855fa86467e7bbfec67473594fe00cdbf
+ms.sourcegitcommit: f34940532d70daf0434fb89bd9289edcd350285a
+ms.openlocfilehash: eb9907041d98fa12760164ac3fbb195bb786f968
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 06/06/2018
 
 ---
 
 # <a name="odata"></a>OData
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 この記事では、Open Data Protocol (OData) に関する情報を提供し、OData V4 を使用して更新可能なビューを公開する方法について説明します。
 
@@ -64,7 +64,7 @@ OData の詳細については、次の Web ページを参照してください
 ## <a name="odata-services"></a>OData サービス
 OData REST エンドポイントを提供します。 このエンドポイントは、アプリケーション オブジェクト ツリー (AOT) の **IsPublic** としてマークされているすべてのデータ エンティティを公開します。 ユーザーがデータを挿入およびシステムから取得するために使用できる完全な CRUD (作成、取得、更新、および削除) 機能をサポートしています。 この機能の詳細なラボは、LCS の方法論に基づいています。 
 
-詳細については、[OData サービスに関する Office Mix プレゼンテーション](https://mix.office.com/watch/1aym08mqyjghi) を参照してください。
+<!--For more information, see the [Office Mix presentation about OData Services](https://mix.office.com/watch/1aym08mqyjghi).-->
 
 OData サービスを使用するためのコード例は、[Microsoft Dynamics AX 統合 GitHub リポジトリ](https://github.com/Microsoft/Dynamics-AX-Integration/tree/master/ServiceSamples/ODataConsoleApplication) です。
 
@@ -281,4 +281,7 @@ OData バッチ フレームワークは、*変更セット*を使用します�
             context.SaveChanges(SaveChangesOptions.PostOnlySetProperties);
         }
 
+
+### <a name="handling-duplicate-names-between-enums-and-entities-in-metadata"></a>メタデータ内の列挙とエンティティ間の重複する名前の処理
+列挙とエンティティが同じ名前を共有する場合があります。 この名前の重複により、OData クライアント コードの生成エラーが発生します。 このエラーから回復するには、gitHub のヘルパー コード https://github.com/Microsoft/Dynamics-AX-Integration/blob/master/ServiceSamples/ODataConsoleApplication/MetadataDocumentValidator.cs を、削除しなければならない重複する名前のインスタンスを識別するために使用できます。 生成されたメタデータ ドキュメントは、クライアント側で Odata ロジックの処理を進めるために使用できます。
 

@@ -3,7 +3,7 @@ title: "データ エンティティのビルドおよび使用"
 description: "このチュートリアルでは、エンティティを構築する方法と、統合シナリオで一部のアウト・オブ・バンド (OOB) エンティティを使用する方法を示します。"
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 03/08/2018
+ms.date: 07/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,16 +18,16 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 818fe59da20ad8f3edf9a3e95b2222ad08d6a69a
+ms.sourcegitcommit: f2e3a40f58b57785079e1940b2d24a3598a3ad1b
+ms.openlocfilehash: 5893525dfc5763661cffcd827acf1516a154c618
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 07/09/2018
 
 ---
 
 # <a name="build-and-consume-data-entities"></a>データ エンティティのビルドおよび使用
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 このチュートリアルでは、エンティティを構築する方法と、統合シナリオで一部のアウト・オブ・バンド (OOB) エンティティを使用する方法を示します。 データのインポートとエクスポート、統合、および OData サービスなどのさまざまな統合シナリオで、これらのデータ エンティティが使用される方法もプレビューされます。
 
@@ -88,7 +88,7 @@ FMLabCustomerEntity
 
 [![データ エンティティ ウィザード](./media/data-entity-wizard.png)](./media/data-entity-wizard.png)
 
-5.  **次へ** をクリックします。 各プロパティの機能に関する詳細については、「データ エンティティの概念ガイド」を参照してください。
+5.  **次へ** をクリックします。 各プロパティ機能の詳細については、[データ エンティティ](data-entities.md)の「エンティティのカテゴリ」および「エンティティの作成」を参照してください。
 6.  次のスクリーン ショットに示すように、データ ソースから新しいエンティティにフィールドを追加します。 主要なデータ ソース、**FMCustomer** からフィールドを追加することができます。 このエンティティについては、テストを効率化するため**画像**および **LicenseImage** コンテナー タイプのチェック ボックスをオフにします。
 7.  データ エンティティのフィールドの名前を、パブリック データ コントラクト標準を反映するように変更するか、**ラベルをフィールド名に変換** をクリックして既存のラベルから名前を生成します。
 8.  **DriverLicense** フィールドの行で、**必須**チェック ボックスを選択します。 このフィールドはエンティティのナチュラル キーとして使用されます。 [![データ エンティティ ウィザード 2](./media/data-entity-wizard-2.png)](./media/data-entity-wizard-2.png)
@@ -316,7 +316,8 @@ Internet Explorer を使用して一部の OData URI を表示できるように
 2.  次のコード明細行をコピーし、**コード**ウィンドウに貼り付けます。
 
 ```
-        public class FMRentalEntity extends common
+
+public class FMRentalEntity extends common
         {
         [SysODataActionAttribute("ReturnRental", true)]
         public str ReturnRental()
@@ -361,10 +362,23 @@ Internet Explorer を使用して一部の OData URI を表示できるように
 
 これで、OData エンドポイントを使用して フリート管理モデルと対話する外部クライアントを見たウォークスルーは完了です。
 
+## <a name="casing-rules-in-data-entities"></a>データ エンティティでのケーシング規則
+
+### <a name="xml-format"></a>XML 形式
+エクスポート中、エンティティ名とフィールド名は大文字でエクスポートされます。 変換を適用する必要がある場合、変換ではすべての参照で大文字を使用する必要があります。
+
+インポート中、データ管理は大文字、小文字どちらの入力ファイルも受け入れます。 ただし、ファイル内の特定の属性/要素に同じ形式を使用するように注意する必要があります。 変換を適用するときは、変換が着信ファイル内のすべての参照で同じケーシング規則を使用していることを確認してください。
+
+### <a name="excel-format"></a>Excel 形式
+エクスポート中、列名は大文字でエクスポートされます。 インポートでは大文字と小文字が区別されません。
+
+### <a name="csv-format"></a>CSV 形式
+エクスポート中、列名は大文字でエクスポートされます。 インポートでは大文字と小文字が区別されません。
+
 ## <a name="tips--tricks"></a>ヒントと手法
 
 ### <a name="max-join-limits"></a>最大結合の制限
-エンティティの開発中に、エンティティの全体的な構造が最大統合制限である 26 を超えないように注意してください。 これは、Finance and Operations で既定の限度です。 統合制限を増やすことは意図しない結果をもたらす可能性があるためお勧めできません。 この制限が超過した場合、エンティティはレコードの処理に失敗し、次の SQL エラーが発生します。
+エンティティの開発中に、エンティティの全体的な構造が最大統合制限である 26 を超えないように注意してください。 これは、Finance and Operations で既定の限度です。 統合制限を増やすことは意図しない結果をもたらす可能性があるためお勧めできません。 この制限を超えると、エンティティはレコードの処理に失敗する可能性が高く、次の SQL エラーが発生します。 また、エラーを回避するエンティティで列の合計数を管理することもお勧めします。
 
 ```
 Cannot create a row of size xxx which is greater than the allowable maximum row size of 8060

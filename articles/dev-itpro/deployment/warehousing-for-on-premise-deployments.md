@@ -18,15 +18,15 @@ ms.author: mafoge
 ms.search.validFrom: 2017-12-04
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 7a45f6950001e534d8dc675aac465e1964b49fc4
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: f18c9100881d173939e191c2d5c6b14af6665723
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="warehousing-for-on-premises-deployments"></a>オンプレミス配置の倉庫管理
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 for Finance and Operations -Warehousing をオンプレミス展開向けに構成する方法について説明します。
 
@@ -40,7 +40,7 @@ ms.lasthandoff: 04/20/2018
 | アプリのバージョン            | 1.1.1.0 以上                                                                  |
 | Microsoft Dynamics 365 | Dynamics 365 for Finance and Operations プラットフォーム 更新プログラム 11 (オンプレミス) |
 
-アプリでオンプレミス リソースにアクセスできるようにするには、AOS および Active Directory フェデレーション サービス（AD FS）の DNS レコードを作成する必要があります。 ガイダンスについては、[DNS ゾーンの作成とレコードの追加](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-environments#createdns) を参照してください。
+アプリでオンプレミス リソースにアクセスできるようにするには、AOS および Active Directory フェデレーション サービス（AD FS）の DNS レコードを作成する必要があります。 ガイダンスについては、[DNS ゾーンの作成とレコードの追加](setup-deploy-on-premises-pu12.md#setup) を参照してください。
 
 ## <a name="create-an-application-entry-in-ad-fs"></a>AD FS でアプリケーション エントリを作成する
 AD FS およびFinance and Operations 間で認証を正常に交換するために、AD FS アプリケーション グループの下の AD FS にアプリケーション エントリを登録する必要があります。 このアプリケーション エントリを作成するには、AD FS がインストールされているマシンで次の Windows PowerShell コマンドを実行します。 ユーザー アカウントには、AD FS を管理するための十分なアクセス許可が必要です。

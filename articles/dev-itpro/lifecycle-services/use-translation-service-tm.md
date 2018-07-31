@@ -18,22 +18,22 @@ ms.author: ejchoGIT
 ms.search.validFrom: 2018-03-27
 ms.dyn365.ops.version: AX 7.3.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 78651a6d0762856b1b98d7cfb1d12c7b1c736c5a
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: b755b6bbb2be9534e54bb77ade97188e68c01bf0
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="microsoft-dynamics-365-translation-service---translation-memory"></a>Microsoft Dynamics 365 翻訳サービス - 翻訳メモリ
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Microsoft Dynamics 365 翻訳サービス (DTS) は、2 か国語 XML ローカライズ交換ファイル形式 (XLIFF) ファイルを使用して、ソース言語とターゲット言語のペアを格納します。 XLIFF は XML に基づいているため、任意のテキスト エディターで XLIFF ファイルを開くことができます。 ただし、この形式を使用するよう設計されている XLIFF エディターを使用することをお勧めします。 たとえば、[多言語アプリ ツールキット (MAT)](https://developer.microsoft.com/en-us/windows/develop/multilingual-app-toolkit) で利用できる無料の Microsoft 多言語エディターを使用することができます。
 
 DTS では、2 つの方法で XLIFF 翻訳メモリ (TM) を入手できます。
 
-+ **整列ツールの実行** – 前回翻訳したファイルがあり、対応するソース ファイルもある場合、整列ツールを使用して XLIFF TM を作成できます。 詳細については、このトピックで後述の [翻訳メモリ - 配置を作成する](./use-translation-service-tm.md#creating-a-translation-memory-alignment) セクションを参照してください。
++ **整列ツールの実行** – 前回翻訳したファイルがあり、対応するソース ファイルもある場合、整列ツールを使用して XLIFF TM を作成できます。 詳細については、このトピックで後述の [翻訳メモリ - 配置を作成する](#creating-a-translation-memory-alignment) セクションを参照してください。
 + **翻訳要求を完了** - DTS 翻訳要求が完了すると、要求出力の一部として XLIFF TM が提供されます。 更新済みソース ファイルを含む新しいトランザクション要求を次に送信するときに、ファイルを使用することができます。
 
 XLIFF ファイルにはソース ファイルから抽出された一連の翻訳単位 (TU) が含まれます。 次の図は、TU の例を示します。

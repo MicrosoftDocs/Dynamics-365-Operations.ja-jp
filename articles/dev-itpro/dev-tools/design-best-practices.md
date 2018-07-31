@@ -1,5 +1,5 @@
 ---
-title: "設計原則とベスト プラクティス"
+title: "データ エンティティに関する設計原則とベスト プラクティス"
 description: "この記事では、データ エンティティの設計原則について説明します。 また、データ エンティティ、フィールド、関係のロール、ロールの名前、OData EntityType および EntitySet のガイドラインも含まれています。"
 author: Sunil-Garg
 manager: AnnBe
@@ -18,16 +18,16 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 32b4ed772114c901acb46fa14f4557d6edd1e0b2
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 6e4ff2a805b73a3036b6acd31f6fcf81e9b901c0
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
-# <a name="design-principles-and-best-practices"></a>設計原則とベスト プラクティス
+# <a name="design-principles-and-best-practices-for-data-entities"></a>データ エンティティに関する設計原則とベスト プラクティス
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 この記事では、データ エンティティの設計原則について説明します。 また、データ エンティティ、フィールド、関係のロール、ロールの名前、OData EntityType および EntitySet のガイドラインも含まれています。
 

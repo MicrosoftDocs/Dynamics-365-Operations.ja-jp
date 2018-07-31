@@ -18,10 +18,10 @@ ms.author: athinesh
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: b05d769fab80ad4b31125f4f51c4a1372b557a4a
+ms.sourcegitcommit: 0e1be78baa0deee7f86a21ed23b1990ff4215907
+ms.openlocfilehash: 296f9aec795432254f965a09028b1d797f451af0
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/18/2018
 
 ---
 # <a name="payments-faq"></a>支払の FAQ
@@ -62,7 +62,7 @@ Verifone や Mastercard などの標準コネクタの SLA は、支払コネク
 
         
 関連トピック: 
-- [Dynamics AX 2012 ホワイト ペーパー用の支払コネクタと支払デバイスの実装](http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx)
+- [支払ターミナルとの支払の統合](end-to-end-payment-extension.md)
 - [支払コネクタの配置](deploy-payment-connector.md)
 - [支払コネクタ用の Windows インストーラーの作成](create-windows-installer-payment-connector.md)
 - [Verifone 支払コネクタ](https://dynamics.verifone.com/repo/)

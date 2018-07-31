@@ -1,6 +1,6 @@
 ---
 title: "データ エンティティの列と仮想フィールドを計算する"
-description: "この記事では、計算されたフィールドと仮想フィールドに関する情報を提供します。これは、データ エンティティが持つことができる 2 つのタイプのマッピングされていないフィールドです。 この記事には、マップされていないフィールドのプロパティに関する情報と、それらの作成、使用、テストの方法を示す例が含まれています。"
+description: "この記事では、計算されたフィールドと仮想フィールドに関する情報を提供します。これは、データ エンティティが持つことができる 2 つのタイプのマッピングされていないフィールドです。"
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,10 +18,10 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: d6f09c3a7e48d3c897838979d4f159f7096d9c43
+ms.sourcegitcommit: a55fbd715d3c17e138a8d945159154da7c8a0de6
+ms.openlocfilehash: ce22ba7de77a1bf1722b023d5f161d8add3df892
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/17/2018
 
 ---
 
@@ -31,8 +31,7 @@ ms.lasthandoff: 04/20/2018
 
 この記事では、計算されたフィールドと仮想フィールドに関する情報を提供します。これは、データ エンティティが持つことができる 2 つのタイプのマッピングされていないフィールドです。 この記事には、マップされていないフィールドのプロパティに関する情報と、それらの作成、使用、テストの方法を示す例が含まれています。
 
-<a name="overview"></a>概要
---------
+## <a name="overview"></a>概要
 
 データ エンティティは、データ ソースのフィールドに直接マップされているフィールド以外に*マップされていない*フィールドを追加で持つことができます。 マップされていないフィールドの値を生成するメカニズムは次のとおりです。
 
@@ -108,12 +107,22 @@ ms.lasthandoff: 04/20/2018
 
 1. Microsoft Visual Studio で、プロジェクトを右クリックし、既存の **FMCustomerEntity** を追加します。
 2. ソリューション エクスプローラーで、**FMCustomerEntity** ノードを右クリックしてから**開く**をクリックします。
-3. **FMCustomerEntity** のデザイナーで、**FMCustomerEntity** ノードを右クリックしてから、**新規** &gt; **マップされていない文字列フィールド**をクリックします。 [![新しくマップされていない文字列フィールドを作成](./media/computedcolumnsandvirtualfields11.png)](./media/computedcolumnsandvirtualfields11.png)
-4. 新しいフィールドの名前を **NameAndAddress** に変更します。
-5. 次のスクリーンショットに示すように、マッピングされていない **NameAndAddress** フィールドのプロパティを更新します。 [![NameAndAddress のマップされていないフィールドのプロパティの更新](./media/computedcolumnsandvirtualfields21.png)](./media/computedcolumnsandvirtualfields21.png)
-6. **FMCustomerEntity** &gt; **メソッド**に移動します。 **メソッド** ノードを右クリックし、**新規** をクリックします。 メソッド名が、マップされていない計算されたフィールドの **DataEntityView方法** のプロパティ値と一致していることを、確認します。
-7. 次の X++ コードをメソッドに貼り付けます。 このメソッドは、結合されて書式設定された **NameAndAddress** 値を返します。 **注記:** **server** キーワードが必要です。
+3. **FMCustomerEntity** のデザイナーで、**FMCustomerEntity** ノードを右クリックしてから、**新規** &gt; **マップされていない文字列フィールド**をクリックします。 
 
+      [![新しくマップされていない文字列フィールドを作成](./media/computedcolumnsandvirtualfields11.png)](./media/computedcolumnsandvirtualfields11.png)
+      
+4. 新しいフィールドの名前を **NameAndAddress** に変更します。
+5. 次のスクリーンショットに示すように、マッピングされていない **NameAndAddress** フィールドのプロパティを更新します。
+
+      [![NameAndAddress のマップされていないフィールドのプロパティの更新](./media/computedcolumnsandvirtualfields21.png)](./media/computedcolumnsandvirtualfields21.png)
+      
+6. **FMCustomerEntity** &gt; **メソッド**に移動します。 **メソッド** ノードを右クリックし、**新規** をクリックします。 メソッド名が、マップされていない計算されたフィールドの **DataEntityView方法** のプロパティ値と一致していることを、確認します。
+7. 次の X++ コードをメソッドに貼り付けます。 このメソッドは、結合されて書式設定された **NameAndAddress** 値を返します。 
+
+   > [!NOTE]
+   > **サーバー**キーワードが必要です。
+
+```
        private static server str formatNameAndAddress()   // X++
        {
            DataEntityName      dataEntityName= tablestr(FMCustomerEntity);
@@ -135,7 +144,7 @@ ms.lasthandoff: 04/20/2018
            return SysComputedColumn::addList(fieldList);
        }
 
-   計算列の T-SQL。
+   T-SQL for the computed column.
 
        ( Cast (( ( T1.firstname ) + ( N' ' ) + ( T1.lastname ) + ( N'; ' ) +
                    ( T5.addressline1 )
@@ -146,21 +155,27 @@ ms.lasthandoff: 04/20/2018
        )
            AS
        NAMEANDADDRESS
+```
 
-   **ヒント :** 計算列のためにデータ エンティティの同期にエラーが発生した場合、X ++ で使用する前に、Microsoft SQL Server Management Studio(SSMS) で SQL 定義を作成する方が簡単です。
+ > [!TIP]
+ > 計算列のためにデータ エンティティの同期にエラーが発生した場合、X++ で使用する前に、Microsoft SQL Server Management Studio (SSMS) で SQL 定義を作成する方が簡単です。
 
 8. プロジェクトをリビルドします。
-9. データベースを同期させます。 この手順を忘れないでください。 <strong>Dynamics 365 **&gt; **データベースの同期</strong> &gt; <strong>同期</strong> に移動することによりこれを実行することができます。
+9. データベースを同期させます。 この手順を忘れないでください。 **Dynamics 365 &gt; データベースの同期 &gt; 同期**に移動することによりこれを実行することができます。
 
 ## <a name="example-create-a-virtual-field"></a>例: 仮想フィールドを作成
 この例では、**FMCustomerEntity** エンティティに仮想フィールドを追加します。 このフィールドには、姓と名の組み合わせとしてフルネームが表示されます。 X++ コードは複合値を生成します。
 
-1.  **FMCustomerEntity** エンティティのデザイナーで、**フィールド** ノードを右クリックしてから、**新規** &gt; **マップされていない文字列フィールド**をクリックします。
+1.  **FMCustomerEntity** エンティティのデザイナーで、**フィールド**ノードを右クリックしてから、**新規 &gt; マップされていない文字列フィールド**をクリックします。
 2.  マップされていないフィールドのプロパティ ウィンドウで、**名前**プロパティを **FullName** に設定します。
-3.  **計算フィールドかどうか** プロパティ **いいえ** に設定します。 **DataEntityView メソッド**が空のままであることを確認します。 [![マップされていないフィールドのプロパティの設定](./media/computedcolumnsandvirtualfields31.png)](./media/computedcolumnsandvirtualfields31.png)
-4.  **FMCustomerEntity** デザイナーで、**メソッド** ノードを右クリックしてから、**オーバーライド** &gt; **postLoad** とクリックします。 このメソッドの X++ コードは、仮想フィールドの値を生成します。
+3.  **計算フィールドかどうか** プロパティ **いいえ** に設定します。 **DataEntityView メソッド**が空のままであることを確認します。 
+
+       [![マップされていないフィールドのプロパティの設定](./media/computedcolumnsandvirtualfields31.png)](./media/computedcolumnsandvirtualfields31.png)
+
+4.  **FMCustomerEntity** デザイナーで、**メソッド**ノードを右クリックしてから、**オーバーライド &gt; postLoad** とクリックします。 このメソッドの X++ コードは、仮想フィールドの値を生成します。
 5.  次の X++ コードを **postLoad** オーバーライドに貼り付けます。 **postLoad** メソッドが **void** を返すことに注意します。
 
+```
         public void postLoad()
         {
             super();
@@ -168,15 +183,16 @@ ms.lasthandoff: 04/20/2018
             //Format full name - "Doe, John"
             this.FullName = this.LastName + ", " + this.FirstName;
         }
-
+```
 6.  プロジェクトをコンパイルします。
 
 ## <a name="example-use-a-virtual-field-to-receive-and-parse-an-inbound-field"></a>例: 受信フィールドを受信および解析する仮想フィールドを使用
-外部システムが、システムに送信する 1 つのフィールドに姓と名を組み合わせた複合値として人物の名前を送信する場合を考えてみましょう。 ただし、システムは姓と名を個別に格納します。 このシナリオでは、作成した **FullName** 仮想フィールド使用することができます。 この例で、主要な追加は **mapEntityToDataSource** メソッドのオーバーライドです。
+外部システムが、システムに送信する 1 つのフィールドに姓と名を組み合わせた複合値として人物の名前を送信する場合を考えてみましょう。 ただし、システムは姓と名を個別に格納します。 このシナリオでは、作成した **FullName** 仮想フィールド使用することができます。 この例で、主要な追加は **mapEntityToDataSource** メソッドのオーバーライドです。 **更新**が呼び出されると、各データ ソースごとに **mapEntityToDataSource** メソッドが呼び出されます。
 
-1.  **FMCustomerEntity** のデザイナーで、**メソッド** ノードを右クリックしてから、**オーバーライド** &gt; **mapEntityToDataSource** とクリックします。
+1.  **FMCustomerEntity** のデザイナーで、**メソッド**ノードを右クリックしてから、**オーバーライド &gt; mapEntityToDataSource** とクリックします。
 2.  次の X++ コードを **mapEntityToDataSource** メソッドに貼り付けます。
 
+```
         public void mapEntityToDataSource(DataEntityRuntimeContext entityCtx, DataEntityDataSourceRuntimeContext dataSourceCtx)
         {
             super(entityCtx, dataSourceCtx);
@@ -191,8 +207,7 @@ ms.lasthandoff: 04/20/2018
                 dsCustomer.FirstName = substr(this.FullName, commaPosition+1, strlen(this.FullName));
             }
         }
-
-    **注記:** **更新**が呼び出されると、各データ ソースごとに **mapEntityToDataSource** メソッドが呼び出されます。
+```
 
 ## <a name="test-the-computed-and-virtual-fields"></a>計算フィールドと仮想フィールドのテスト
 次の **main** メソッドは、計算フィールドと仮想フィールドをテストします。 両方のフィールドは読み取りアクションでテストされ、仮想フィールドは更新アクションでテストされます。
@@ -200,6 +215,7 @@ ms.lasthandoff: 04/20/2018
 1.  この例では、**フリート管理 (移行済)** というデータ セットがあることを確認します。 データ セットはブラウザーのダッシュボードから利用できます。 右上隅にあるメニュー アイコンをクリックし、**アプリのリンク** メニューをクリックしてスクロールし、**フリート管理 (移行)** という名前のデータセットを見つけます
 2.  次の X++ コードをプロジェクトのスタートアップ オブジェクトに貼り付けます。 プロジェクトを実行します。
 
+```
         public static void main(Args _args)   // X++
         {
             FMCustomerEntity customer;
@@ -223,8 +239,5 @@ ms.lasthandoff: 04/20/2018
             ttsabort;
         }
 
-
-
-
-
+```
 

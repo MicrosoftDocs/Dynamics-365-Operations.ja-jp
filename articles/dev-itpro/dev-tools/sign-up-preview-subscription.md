@@ -3,7 +3,7 @@ title: "プレビュー サブスクリプションのサインアップ"
 description: "このトピックでは、プレビュー/パートナー オファーをサブスクライブして環境を配置する方法について説明します。"
 author: RobinARH
 manager: AnnBe
-ms.date: 10/11/2017
+ms.date: 05/30/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 597946cbe772bcdcc81a295524735d2be28c46c7
+ms.sourcegitcommit: 65101b5f0030a25973a584b68ec9697506868294
+ms.openlocfilehash: d59f93f07cecfb0fe79086ca036cce31d515abb0
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/30/2018
 
 ---
 
@@ -61,7 +61,7 @@ ms.lasthandoff: 04/20/2018
 > [!IMPORTANT]
 > 組織内で 1 人 (テナント管理者) だけ、このタスクを実行する必要があります。 このリリースをサブスクライブしていない場合は、組織がサインアップし、ユーザーの資格情報を受信するまで待機します。 その後、手順を続行します。
 
-1. Finance and Operations および Retail は、既存の Microsoft Dynamics 365 のチャネル パートナーおよび Business Ready 拡張プラン (BREP) サービス プランに現在登録されている顧客にのみ使用できます。 既存の顧客は、[CustomerSource](https://mbs.microsoft.com/customersource/global/AX/news-events/news/Microsoft_Dynamics_AX_Public_Preview) の試用版にアクセスする詳細方法を検索できます。 パートナーは、[PartnerSource](https://mbs.microsoft.com/partnersource/global/news-events/news/Microsoft_Dynamics_AX_Public_Preview) で詳細を参照できます。
+1. Finance and Operations および Retail は、既存の Microsoft Dynamics 365 のチャネル パートナーおよび Business Ready 拡張プラン (BREP) サービス プランに現在登録されている顧客にのみ使用できます。 既存の顧客は、[CustomerSource](https://mbs.microsoft.com/customersource/Global/365Enterprise/news-events/news/md365financeoperationsenterprisecusttrial) の試用版にアクセスする詳細方法を検索できます。 パートナーは、[PartnerSource](https://mbs.microsoft.com/partnersource/global/news-events/news/Microsoft_Dynamics_AX_Public_Preview) で詳細を参照できます。
 2. **アカウント設定**ページの、**国または地域**フィールドで、国または地域の選択をします。
 3. 最後のステップに到達するまで、サインアップを完了するウィザードおよびプロンプトに従います。
 

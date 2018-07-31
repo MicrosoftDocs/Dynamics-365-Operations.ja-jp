@@ -18,10 +18,10 @@ ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 800ea0236191732ecc3083e50cb4feb9b7ba61f1
+ms.sourcegitcommit: dfda8d56d3918d96eddda9db2cecffdeedcb54e0
+ms.openlocfilehash: 6dfeb8e739f6dc26d73501001c83eb15ee3a0fd5
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 06/13/2018
 
 ---
 
@@ -96,6 +96,9 @@ ms.lasthandoff: 04/20/2018
 -   **getAttribute** メソッド
 -   **getAttributedClasses** メソッド
 -   **getAttributes** メソッド
+
+> [!NOTE]
+> X++ コードから特定の属性で飾られたすべてのメソッドまたはクラスをリストするメカニズムはありません。 ただし、X++ コンパイラは、相互参照データベースにこの情報を記録するため、そこから情報を得ることができます。
 
 ### <a name="metadata-reflection-code-example"></a>メタデータ リフレクションのコードの例
 

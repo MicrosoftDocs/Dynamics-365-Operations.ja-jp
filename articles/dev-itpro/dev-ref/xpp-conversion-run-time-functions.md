@@ -3,7 +3,7 @@ title: "X++ 変換ランタイム関数"
 description: "このトピックでは、変換ランタイム関数について説明します。"
 author: RobinARH
 manager: AnnBe
-ms.date: 11/03/2017
+ms.date: 06/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 4f98eab5b453898639bda14a2dabf62140685431
+ms.sourcegitcommit: f2e3a40f58b57785079e1940b2d24a3598a3ad1b
+ms.openlocfilehash: 3688029f290af325404d91700750533fd7e2e473
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 07/09/2018
 
 ---
 
@@ -593,15 +593,18 @@ MorphX は、指定された値が有効でない場合、書式設定パラメ�
 
 *小数点以下*パラメーターについては、最大値は **16** です。 より大きい数値が使用された場合、このメソッドは*小数点以下*のパラメーターの値をローカル コンピューターから取得します。 どちらの場合も、丸めが発生します。 *separator1* パラメータの使用可能な列挙値を次に示します。
 
--   **1** - ポイント (.)
--   **2** - コンマ (,)
+-   **99** – 自動 (ユーザーの書式設定によって使用される小数点区切り記号を決定)、列挙値 DecimalSeparator:: 自動 
+-   **1** – ドット (.)、列挙値 DecimalSeparator:: ドット
+-   **2** – コンマ (,)、列挙値 DecimalSeparator:: コンマ
 
 *separator2* パラメータの使用可能な値を次に示します。
 
--   **0**– 3 桁の区切り文字なし
--   **1**– ポイント (.)
--   **2**– コンマ (,)
--   **3**– スペース ( )
+-   **99** – 自動 (ユーザーの書式設定によって使用される 3 桁の区切り文字を決定)
+-   **0** – なし (3 桁の区切り文字なし)、列挙値 ThousandSeparator:: なし
+-   **1** – ドット (.)、列挙値 ThousandSeparator:: ドット
+-   **2** – コンマ (,)、列挙値 ThousandSeparator:: コンマ
+-   **3** – アポストロフィ (')、列挙値 ThousandSeparator:: アポストロフィ
+-   **4** – スペース ( )、列挙値 ThousandSeparator:: スペース
 
 ### <a name="example"></a>例
 
@@ -610,8 +613,8 @@ MorphX は、指定された値が有効でない場合、書式設定パラメ�
     static void Job_Num2Str(Args _args)
     {
             real realNum = 0.1294567890123456777; // 19 decimals places.
-            info(Num2Str(realNum,0,16,1,3)); // 16 decimal places
-            info(Num2Str(realNum,0,17,1,3)); // 17 decimal places
+            info(Num2Str(realNum, 0, 16, DecimalSeparator::Dot, ThousandSeparator::Space)); // 16 decimal places
+            info(Num2Str(realNum, 0, 17, DecimalSeparator::Dot, ThousandSeparator::Space)); // 17 decimal places
     }
 
 ### <a name="output"></a>出力
