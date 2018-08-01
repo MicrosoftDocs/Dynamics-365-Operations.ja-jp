@@ -17,16 +17,16 @@ ms.author:
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: f00763144b7e65fa1dfb2d967a0ee36ede4b0047
+ms.sourcegitcommit: 250b8763c76ebe8fc71810afae9bb69b41809d23
+ms.openlocfilehash: 87c848ac68c4f7dfc7d4a2ab754bf7fcb86ce03c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/09/2018
 
 ---
 
 # <a name="guide-to-the-gdpr-for-microsoft-dynamics-365-for-finance-and-operations"></a>Microsoft Dynamics 365 for Finance and Operations の GDPR に関するガイド
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 ## <a name="overview-of-the-gdpr"></a>GDPR の概要
 
@@ -34,6 +34,9 @@ ms.lasthandoff: 04/20/2018
 
 > [!NOTE]
 > このドキュメントのスコープおよび補充の詳細については、このトピックの最後にある [このコンテンツの範囲の説明](#clarification-of-the-scope-of-this-content) を参照してください。
+
+[!NOTE]
+> GDPR コンプライアンスの実行をサポートする製品の機能を使用する前に、すべての関連する修正プログラムを適用したことを確認してください。
 
 GDPR は、次のアクションを実行できるように EU 市民に特定のデータ主体権利 (DSR) を与えます。
 
@@ -249,7 +252,7 @@ Finance and Operations の将来のリリースで使用できる担当者検索
 
 ## <a name="activity-and-diagnostic-information"></a>活動と診断情報
 
-コントローラーは、[Microsoft Enterprise Privacy Portal](https://www.microsoft.com/en-us/trustcenter/privacy) を使用してテレメトリ データに関する DSR 要求を行うことができます。 収集された一部のテレメトリ データは匿名化されます。 追加情報または支援なしでは、ユーザーの ID は匿名です。
+コントローラーは、[Microsoft Enterprise Privacy Portal](https://www.microsoft.com/en-us/trustcenter/privacy) を使用してテレメトリ データに関する DSR 要求を行うことができます。 収集する一部のテレメトリ データは、システムで生成されるログです。 追加情報または支援なしでは、ユーザーの ID は匿名です。
 
 ## <a name="representation-of-a-person-in-finance-and-operations"></a>Finance and Operations のユーザーの表示
 

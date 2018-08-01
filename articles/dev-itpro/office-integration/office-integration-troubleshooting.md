@@ -19,14 +19,14 @@ ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 1c180f95e217be09c57bc50b8cda84d302dadd2b
+ms.sourcegitcommit: c42463631ce1e33673f4f7f32f2e751deadc5425
+ms.openlocfilehash: 6b51af94a2333da664095a507713bd57f2fe3618
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/23/2018
 
 ---
 
-# <a name="troubleshoot-the-office-integration"></a>Office 統合のトラブルシューティング (タスク ガイド) 
+# <a name="troubleshoot-the-office-integration"></a>Office 統合のトラブルシューティング (タスク ガイド)
 
 [!include [banner](../includes/banner.md)]
 
@@ -90,9 +90,13 @@ Excel へのエクスポート機能は 10,000 レコードに制限されてい
 - エンティティには、フォームにあるすべての検証とロジックが必要です。 所有していない場合は、バグです。 
 - エンティティが保護される方法は、フォームが保護される方法と似ています。 したがって、ユーザーがそのデータを公開するフォームを使用してデータを更新または書き込みする権限を持っていない場合、ユーザーはそのデータを公開するエンティティを使用してデータを更新または書き込みする権限を持つべきではありません。 
 
-## <a name="why-is-the-publish-button-in-the-excel-add-in-unavailable"></a>Excel アドインで公開ボタンが利用できないのはなぜですか。 
+### <a name="why-is-the-publish-button-in-the-excel-add-in-unavailable"></a>Excel アドインで公開ボタンが利用できないのはなぜですか。 
 
 エンティティにデータを公開するには、すべてのキーおよび必須フィールドが存在する必要があります。 バインドにフィールドを追加するようにデザインを編集してみてください。 
+
+### <a name="why-are-the-excel-add-in-the-word-add-in-and-the-open-in-excel-options-only-available-when-the-internet-is-available"></a>Excel アドイン、Word アドイン、および Excel で開くオプションは、インターネットが利用可能な場合にのみ利用できます。
+
+オンプレミスを含むすべての環境で、Excel と Word のアドインとライブラリは複数のインターネット地点からロードされます。したがってインターネットが使用可能な場合にのみ実行します。 オンプレミス環境では、インターネットが利用できない場合、コンテンツ配信ネットワーク (CDN) にアクセスできず Excel アドインが実行されないため、Excel で開くオプションは非表示になります。 
 
 ## <a name="troubleshooting-issues"></a>問題のトラブルシューティング
 

@@ -3,7 +3,7 @@ title: "Retail POS の Typescript と C# プロキシ"
 description: "このトピックでは、Retail プロキシに関する情報と、その生成方法について説明します。"
 author: mugunthanm
 manager: AnnBe
-ms.date: 10/20/2017
+ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -17,16 +17,16 @@ ms.author: mumani
 ms.search.validFrom: 2017-10-20
 ms.dyn365.ops.version: AX 7.0.0, Retail October 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 6baf73c7892a23c842fdf0b04dd078be3a265feb
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 490b7654b86e7bf32393362fd864f1a96f4b7b25
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="retail-typescript-and-c-proxies"></a>Retail の Typescript プロキシと C# プロキシ
 
-[!INCLUDE [banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Retail サーバー アプリケーション プログラミング インターフェイス (API) の新しいコント ローラーを作成するたびに、または既存のコントローラーを拡張するたびに、Retail ソフトウェアの開発キット (SDK) の一部としてし使用できるツールを使用して、Retail プロキシを生成する必要があります。 たとえば、顧客コントローラーを拡張することにより、顧客エンティティの新しい API を追加する場合、Retail プロキシを生成する必要があります。
 
@@ -78,7 +78,7 @@ POS の Typescript プロキシを生成するには、Retail SDK\Reference フ�
     > [!NOTE]
     > すべての Retail サーバー拡張機能のプロキシを生成する必要があります。
 
-## <a name="generate-the-c-proxy-71-and-72---these-step-are-not-not-applicable-for-73-and-higher-versions"></a>C# プロキシ (7.1 および 7.2) の生成 - これらの手順は 7.3 およびより大きいバージョンには適用できません。
+## <a name="generate-the-c-proxy-71-and-72---these-steps-are-not-applicable-for-version-73-and-higher"></a>C# プロキシ (7.1 および 7.2) の生成 - これらの手順は 7.3 およびより大きいバージョンには適用できません
 
 1. **Customization.settings** ファイルを **...Retail SDK\BuildTools** から開きます。
 2. **RetailServerLibraryPathForProxyGeneration** ノードの下には、次に示すように、すべてのカスタム Retail サーバー拡張ライブラリを含めます。

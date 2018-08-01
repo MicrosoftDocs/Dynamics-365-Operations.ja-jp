@@ -3,7 +3,7 @@ title: "Dynamics AX 2012 から Dynamics 365 for Finance and Operations への�
 description: "このトピックでは、Microsoft Dynamics AX 2012 を現在実行している顧客が、データとコードを Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition に移動するために使用できるプロセスについて説明します。"
 author: tariqbell
 manager: AnnBe
-ms.date: 03/22/2018
+ms.date: 06/06/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -16,10 +16,10 @@ ms.author: tabell
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: f13988fb98be081791cbe25586812b6e061a2387
+ms.sourcegitcommit: 5bc4c31ee76c0d318c86885fdacbb813ae47da19
+ms.openlocfilehash: f919c79a9cf00787592ab4b340e39c2269c34d5d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 06/11/2018
 
 ---
 
@@ -49,17 +49,17 @@ ms.lasthandoff: 04/20/2018
 
 分析フェーズにおける活動は、アップグレードに必要な工数を見積もるのに役立ちます。 またプロジェクト計画の準備にも役立ちます。 これらの活動は Finance and Operations.を購入する前に実行できます。 必要になる工数およびリソースについてのデータ点を提供することにより、確かな情報に基づいた購買決定をするのに役立ちます。
 
-### <a name="sign-up-for-a-public-preview-in-lcs"></a>LCS でのパブリック プレビューのサインアップ
+### <a name="sign-up-for-a-finance-and-operations-lcs-trial-or-partner-project"></a>Finance and Operations の LCS トライアルまたはパートナー プロジェクトにサインアップします。
 
-Finance and Operations を購入する前に分析活動を実行するために、パブリック プレビューにサインアップできます。 パブリック プレビューでは、自分の Finance and Operations 環境を配置することができます。 また、AX 2012 の環境と既存のカスタム コードを評価するために使用する Microsoft Dynamics Lifecycle Services (LCS) 内のツールにアクセスすることもできます。
+Finance and Operations を購入する前に分析活動を実行するには、LCS トライアルまたはパートナー プロジェクトにサインアップする必要があります。 自分の Finance and Operations 環境を配置することができます。 また、AX 2012 の環境と既存のカスタム コードを評価するために使用する Microsoft Dynamics Lifecycle Services (LCS) 内のツールにアクセスすることもできます。
 
-AX 2012 に既存の LCS プロジェクトがある場合は、Finance and Operations を評価するには追加の新しいプロジェクトにサインアップする必要があります。
+AX 2012 に既存の LCS プロジェクトがある場合は、追加の Finance and Operations の LCS プロジェクトにサインアップする必要があります。
 
-顧客用にパブリック プレビューを取得する方法の詳細については、https://mbs.microsoft.com/customersource/global/AX/news-events/news/Microsoft_Dynamics_AX_Public_Preview に移動します。
+顧客用に LCS トライアル プロジェクトを取得する方法の詳細については、https://mbs.microsoft.com/customersource/global/AX/news-events/news/Microsoft_Dynamics_AX_Public_Preview を参照してください。
 
-パートナー用にパブリック プレビューを取得する方法の詳細については、https://mbs.microsoft.com/partnersource/global/news-events/news/Microsoft_Dynamics_AX_Public_Preview に移動します。
+LCS パートナー プロジェクトを取得する方法の詳細については、https://mbs.microsoft.com/partnersource/global/news-events/news/Microsoft_Dynamics_AX_Public_Preview を参照してください。
 
-このパブリック プレビューは [30日間試用版](https://aka.ms/D365OperationTrials) とは異なることに注意してください。 30日間試用版は、アプリケーションを活用し評価するのに使用できる Finance and Operations の配置済みのインスタンスを提供します。 ただし、分析活動には完全な LCS 経験とツールが必要です。
+これは、[30日間試用版](https://aka.ms/D365OperationTrials) と異なることに注意してください。 30日間試用版は、アプリケーションを活用し評価するのに使用できる Finance and Operations の配置済みのインスタンスを提供します。 ただし、分析活動には完全な LCS 経験とツールが必要です。
 
 ### <a name="select-the-upgrade-methodology"></a>アップグレード方法の選択
 新しい LCS プロジェクトで、プロジェクト方法を **AX 2012 を Dynamics 365 for Finance and Operations にアップグレードする**に設定します。 この方法は、アップグレード中の AX 2012 の顧客に対して特別に行われます。 3 つのフェーズについて詳細に説明し、プロセスに関するすべてのサポート ドキュメントへのリンクを提供します。
@@ -97,7 +97,7 @@ AX 2012 に既存の LCS プロジェクトがある場合は、Finance and Oper
 詳細については、「[分析: サンドボックス環境の配置](analysis-sandbox.md)」を参照してください。
 
 ### <a name="create-a-project-plan"></a>プロジェクト計画の作成
-プロジェクト計画のテンプレートはアップグレード方法で提供されます。 このステップでは、分析フェーズの前のステップからの出力を使用してアップグレード プロジェクトのプロジェクト計画を作成します。 プロジェクト計画には、すべてのテストの詳細も含まれます。データ アップグレード テスト、切替テスト、機能テスト パス反復、およびそれらのタスクのさまざまなリソース割り当てについての詳細です。
+プロジェクト計画のテンプレートはアップグレード方法で提供されます。 このステップでは、分析フェーズの前のステップからの出力を使用してアップグレード プロジェクトのプロジェクト計画を作成します。 プロジェクト計画には、すべてのテストの詳細も含まれます。データ アップグレード テスト、切替テスト (切替モック)、機能テスト パス反復、およびそれらのタスクのさまざまなリソース割り当てについての詳細です。
 
 このステージで、プロジェクト計画は Finance and Operations へのアップグレードに関連する時間とコストを理解するのに役立つデータ点を提供します。
 
@@ -154,7 +154,7 @@ Finance and Operations のサブスクリプションを購入すると、新し
 ### <a name="perform-cutover-testing-and-create-a-cutover-plan"></a>切替テストの実行および切替計画の作成
 ここでは _切替_ という用語を使用して、新しいシステムを作動させる最終的なプロセスを表します。 このプロセスは、AX 2012 をオフにした後かつ Finance and Operations をオンにする前に発生するタスクで構成されます。 
 
-テストの目標は、切替プロセスを練習することです。 こうして、稼働への実際の切替に携わるすべての人が円滑に作業を進められるようになります。
+テストの目標、または*切替モック*は、切替プロセスを練習することです。 こうして、稼働への実際の切替に携わるすべての人が円滑に作業を進められるようになります。
 
 次の 2 つの主要なワーク ストリームがあります。
 

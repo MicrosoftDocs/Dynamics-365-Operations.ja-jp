@@ -19,16 +19,16 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: c4cb46ea351fb12ec93169789546911c7859793a
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: ce10ec5568b45ce8a01e006244c56e1774631774
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 .md
 # <a name="set-up-and-maintain-vendor-collaboration"></a>仕入先コラボレーションの設定と管理
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 仕入先コラボレーション インターフェイスは、発注書、請求書、委託販売在庫に関する限られた情報を外部仕入先ユーザーに公開します。 このインターフェイスから、仕入先も見積依頼 (RFQ) に返信でき、会社の基本情報を表示および編集できます。
 
@@ -161,4 +161,6 @@ Azure AD アカウント管理のワークフローでの **Azure B2B ユーザ�
 ## <a name="additional-resources"></a>その他のリソース
 
 [外部仕入先との作業のために仕入先コラボレーションを使用する](vendor-collaboration-work-external-vendors.md)
+
+仕入先のオンボーディング プロセスの簡単なビデオ[新しい仕入先の搭載](https://www.youtube.com/watch?v=0KUc3AGaTKk&feature=youtu.be)をご覧ください。
 

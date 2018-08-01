@@ -3,7 +3,7 @@ title: "Power BI Desktop を使用して分析レポートを作成する"
 description: "このトピックでは、ローカルの Entity Store データベースを使用して Power BI レポートを作成するプロセスについて説明します。"
 author: MilindaV2
 manager: AnnBe
-ms.date: 12/18/2017
+ms.date: 05/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: milindav
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: f794fc3d7cd767cfef1f2645577dfa686638b490
+ms.sourcegitcommit: 8779134ef16a828635dfe0179881843076926bbe
+ms.openlocfilehash: e9d43cf4225839305685a7b6129130c106380707
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/09/2018
 
 ---
 
@@ -36,6 +36,9 @@ ms.lasthandoff: 04/20/2018
 Microsoft Dynamics 365 for Finance and Operations では、データ エンティティで公開されるオープン データ プロトコル (OData) のエンドポイントを使用して Microsoft Power BI レポートを作成できます。 このアプローチの限界にもかかわらず、エンティティ格納は従来のソリューションでもエンティティ格納をサポートしています。 ただし、DirectQuery は、解析ソリューションのソース データに推奨されるメソッドになりました。 DirectQuery の利点および制限の詳細については、[Power BI Desktop で DirectQuery の使用](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-use-directquery/) を参照してください。
 
 Power BI デスクトップを使用すると、ローカルのエンティティ格納データベースに直接接続することによって、開発またはテスト環境でレポートを作成できます。 レポートに問題がなければ、管理者は、ユーザーがそれを実稼働環境に移行する支援をすることができます。 このセクションの残りの部分では、このプロセスについて説明します。
+
+> [!Note]
+> 分析ワークスペースとレポートをアプリケーション スイートで開発または拡張するには、顧客が独自の定期売買またはローカル コンピューターで実行している開発環境を使用する必要があります。 Microsoft が提供するレベル 1 環境では、埋め込まれた分析レポートを開発または拡張することはできません。 Power BI デスクトップをインストールするための管理者権限が必要です。
 
 ### <a name="step-1-populate-the-local-entity-store-database"></a>手順 1: ローカル エンティティ格納データベースに入力する
 この例では、ローカルのエンティティ ストアで Retail 分析ソリューションが消費する集計モデルをステージングします。 Retail アプリケーションが使用するモデルは、RetailCube 集計測定で定義されています。 

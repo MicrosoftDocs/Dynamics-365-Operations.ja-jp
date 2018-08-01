@@ -19,10 +19,10 @@ ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 2177110dc16528de7eddedb0667faae553a36b12
+ms.sourcegitcommit: 03bab1d03be71c0e23a6ea93f542d6a52a212a1f
+ms.openlocfilehash: 9ee3f73cd11b38ed2237ea3fe08db18000e55f07
 ms.contentlocale: ja-jp
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 06/25/2018
 
 ---
 
@@ -54,9 +54,13 @@ ms.lasthandoff: 02/07/2018
 
 ## <a name="additional-resources"></a>その他のリソース
 
-### <a name="whats-new-and-in-development"></a>新機能および開発中の機能
+### <a name="whats-new"></a>新機能
 
-リリースされた新機能と開発中の新機能については、[Microsoft Dynamics 365 Roadmap (Dynamics 365 ロードマップ)](https://roadmap.dynamics.com/) を参照してください。 
+リリースされた新機能については、[リリース ノート](https://docs.microsoft.com/en-us/business-applications-release-notes/) を参照してください。 
+
+### <a name="videos"></a>ビデオ
+
+[Microsoft Dynamics 365 YouTube チャンネル](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ)のハウツー ビデオをご覧ください。
 
 ### <a name="blogs"></a>ブログ
 
@@ -66,11 +70,8 @@ ms.lasthandoff: 02/07/2018
 
 [Microsoft Dynamics Operations Partner Community Blog (Microsoft Dynamics Operations パートナー コミュニティのブログ)](https://community.dynamics.com/partner/b/operationspartnercommunityblog) では、MBS Operations に関する最新情報とトレンドを知るための単一のリソースが Microsoft Dynamics パートナー向けに提供されています。
 
-### <a name="task-guides"></a>タスク ガイド
-Finance and Operations には、タスク ガイドとして使用できる追加のヘルプが用意されています。 タスク ガイドにアクセスするには、ページの [ヘルプ] ボタンをクリックします。
+#### <a name="community-blogs"></a>コミュニティのブログ
 
-### <a name="videos"></a>ビデオ
-
-[Microsoft Dynamics 365 YouTube チャンネル](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ)のハウツー ビデオをご覧ください。
+- [Dynamics 365 for Finance and Operations の元帳に関する確認事項](https://financefunction.tech/2018/04/29/what-you-should-know-about-ledger-in-dynamics-365-for-finance-and-operations)
 
 

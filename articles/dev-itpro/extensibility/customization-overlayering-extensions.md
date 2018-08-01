@@ -18,22 +18,24 @@ ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 553b1133da4d52fc87a6122d72f6b124335121eb
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: ad313657e0ee12b1fac13bde941d450dffe7344f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="customize-with-extensions-and-overlayering"></a>拡張機能およびオーバーレイによってカスタマイズする
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 このトピックでは、モデル要素のソース コードとメタ データをカスタマイズするオーバーレイと拡張機能の 2 つの方法、およびサポートされている拡張機能の詳細について説明します。
 
 ## <a name="overlayering"></a>オーバーレイヤー
 
-Microsoft またはサードパーティの Microsoft パートナーによって出荷されている、モデル要素のソース コードとメタデータをカスタマイズできます。 モデルのメタデータとソース コードをカスタマイズするために、開発者はカスタマイズするモデルにオーバーレイする新しいモデルを作成する必要があります。 たとえば、ソリューション開発者は SLN レイヤーでコードを提供でき、独立系ソフトウェア ベンダーは ISV レイヤーを使用でき、さらにますおよび付加価値再販業者は VAR レイヤーを使用することができます。 上部レイヤ (この例では VAR レイヤ) で定義された機能は、下部レイヤの機能を上書きできます。 オーバーレイ モデルはソース モデルと同じ **パッケージ**に属し、ソース モデルよりも高いレイヤーに属している必要があります。 オーバーレイヤーは、メタデータとソース コードの高度なカスタマイズを実行する強力なツールですが、ソリューションを新しいバージョンにアップグレードする費用が高くなる場合があります。 この [リンク](https://mix.office.com/watch/1ol6ov90jrd4w) をクリックすると、モデル要素をカスタマイズする方法についてよく紹介されている Office Mix が開きます。
+Microsoft またはサードパーティの Microsoft パートナーによって出荷されている、モデル要素のソース コードとメタデータをカスタマイズできます。 モデルのメタデータとソース コードをカスタマイズするために、開発者はカスタマイズするモデルにオーバーレイする新しいモデルを作成する必要があります。 たとえば、ソリューション開発者は SLN レイヤーでコードを提供でき、独立系ソフトウェア ベンダーは ISV レイヤーを使用でき、さらにますおよび付加価値再販業者は VAR レイヤーを使用することができます。 上部レイヤ (この例では VAR レイヤ) で定義された機能は、下部レイヤの機能を上書きできます。 オーバーレイ モデルはソース モデルと同じ **パッケージ**に属し、ソース モデルよりも高いレイヤーに属している必要があります。 オーバーレイヤーは、メタデータとソース コードの高度なカスタマイズを実行する強力なツールですが、ソリューションを新しいバージョンにアップグレードする費用が高くなる場合があります。 
+
+<!--Click on this [link](https://mix.office.com/watch/1ol6ov90jrd4w) to open an Office Mix that provides a good introduction on how to customize model elements.-->
 
 ## <a name="extensions"></a>拡張子
 *拡張機能* を使用することにより、アプリケーションをカスタマイズすることができます。 拡張子により既存のモデル要素およびソース コードに機能を追加できます。 拡張子は、次の機能を提供します。

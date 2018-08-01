@@ -16,18 +16,18 @@ ms.author: rschloma
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 4abaa34a4adfab3d33d59337c94c5b5ea7022e55
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 3a5f34f4f83a24628f6918e42dfd5b63b3fb71ae
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="extend-the-person-search-report-with-your-own-data-customer-or-isv"></a>独自のデータで担当者検索レポートを拡張 (顧客または ISV)
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Finance and Operations の担当者検索レポートは、1 人のユーザーのエンティティのコレクションを管理するように設計されたインテリジェント検索プロセッサによってサポートされています。 担当者検索レポートは、Finance and Operations のデータを検索し、生成される識別子のセットを作成します。 それぞれの結果は、検索カテゴリ (たとえば、顧客) および関連するテーブルの結果レコードを参照します。 個人検索レポートの使用の詳細については、[個人検索レポート](/gdpr-person-search-report.md) トピックを参照してください。
+Microsoft Dynamics 365 for Finance and Operations の担当者検索レポートは、1 人のユーザーのエンティティのコレクションを管理するように設計されたインテリジェント検索プロセッサによってサポートされています。 担当者検索レポートは、Finance and Operations のデータを検索し、生成される識別子のセットを作成します。 それぞれの結果は、検索カテゴリ (たとえば、顧客) および関連するテーブルの結果レコードを参照します。 個人検索レポートの使用の詳細については、[個人検索レポート](gdpr-person-search-report.md) トピックを参照してください。
 
 > [!Note]
 > 担当者検索レポートは、Finance and Operations、Microsoft Dynamics 365 for Retail、および Microsoft Dynamics 365 for Talent の今後のリリースで使用することができます。 このトピックの Finance and Operations への参照は、Retail と Talent にも当てはまります。 担当者検索レポートは現在、Microsoft Dynamics AX 2012 では使用できません。

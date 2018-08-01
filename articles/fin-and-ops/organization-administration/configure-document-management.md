@@ -3,7 +3,7 @@ title: "ドキュメント管理のコンフィギュレーション"
 description: "このトピックでは、添付ファイルおよびレコードのメモを格納するように、ドキュメント管理 (ドキュメント処理) を構成する方法について説明します。"
 author: ChrisGarty
 manager: AnnBe
-ms.date: 08/11/2017
+ms.date: 05/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: cgarty
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 7804e44c5436eca0232adc415fa48836615bd484
+ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
+ms.openlocfilehash: 769056124dabbd313202c89487d0f6ce5d589f20
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/23/2018
 
 ---
 
@@ -28,6 +28,8 @@ ms.lasthandoff: 04/20/2018
 [!include [banner](../includes/banner.md)]
 
 このトピックでは、添付ファイルおよびレコードのメモを格納するように、ドキュメント管理 (ドキュメント処理) を構成する方法について説明します。 これには、この機能に関連する概念および機能に関する情報が含まれています。
+
+ドキュメント管理に関する詳細については、短い [Dynamics 365 for Finance and Operations のドキュメント管理](https://www.youtube.com/watch?v=p4rl1CkiLN4&feature=youtu.be)ビデオを確認してください。
 
 ## <a name="configure-document-types"></a>ドキュメント タイプのコンフィギュレーション
 ドキュメント タイプは、レコードに添付したドキュメント、または作成するテンプレートを分類するために使用します。 各ドキュメント タイプは、固有の場所に格納されることができます。
@@ -123,4 +125,7 @@ SharePoint 通信は、次の条件が満たされた場合にのみ、現在の
 ### <a name="does-document-management-integrate-with-office-365"></a>ドキュメント管理は Office 365 と統合されますか。
 
 はい。 SharePoint の記憶域は、ネイティブでサポートされ、ドキュメント タイプの保管場所として選択できます。 さらに、任意の URL アドレス指定可能なファイルを **URL** ドキュメント タイプ経由で添付できます。
+
+### <a name="how-does-the-default-storage-location-for-document-management-change-in-on-premises-environments"></a>オンプレミス環境では、ドキュメント管理の既定の保管場所はどのように変更されますか？
+オンプレミス環境の場合、添付ファイルの Azure Blob ストレージ プロバイダーはファイル フォルダー ストレージ プロバイダーに置き換えられ、添付ファイルはクラウドに格納される代わりにオンプレミスに保存されます。 したがって、添付ファイルの既定の保管場所はファイル フォルダです。
 

@@ -18,16 +18,16 @@ ms.author: robadawy
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: a1240843c864067d5f514fed5349098952a67a02
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 2c535b8b8140304ae11ff133ae77818c32064687
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="development-and-continuous-delivery-faq"></a>開発と継続的な配信のよく寄せられる質問
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 このトピックでは、ISV やパートナーによってよく寄せられる質問、特に Microsoft Dynamics 365 for Finance and Operations の開発、テスト、デリバリー、およびライフサイクル管理に関するガイドラインについて、その回答をまとめています。
 
@@ -58,6 +58,8 @@ ms.lasthandoff: 04/20/2018
 ### <a name="do-i-need-build-environments"></a>環境を構築する必要があるか。
 
 はい、ビルド環境で提供されているビルドおよびテストの自動化ツールを活用する必要があります。 Lifecycle Services (LCS) プロジェクトからビルド環境を展開することができます。 毎日のビルドおよび毎日の回帰テストの作成は、継続的デリバリーを可能にし、アプリケーションの品質を維持するための重要なツールです。 詳しくは、「[継続的ビルドとテストの自動化を使用した開発者トポロジの展開](../perf-test/continuous-build-test-automation.md)」をご覧ください。
+
+開発活動にはビルド環境を使用せず、これらのビルド VM にテスト データベースのバックアップを保持します。 ビルド VM は、毎回のビルドおよび Microsoft バイナリまたは LCS からのプラットフォーム更新で更新されるたびに、既知の状態へリセットされるように設計されています。 たとえば、バイナリの修正プログラムやプラットフォームの更新をビルド VM に適用する場合、VM は更新の一部として次のビルドのために準備します。 これによって、カスタマイズは削除され、データベースの同期もトリガーされます。
 
 ### <a name="what-strategy-do-i-use-for-test-automation"></a>テストの自動化にどのような戦略を使用しますか ?
 

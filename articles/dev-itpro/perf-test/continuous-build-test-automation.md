@@ -18,10 +18,10 @@ ms.author: shailesn
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 6bcb77cd142f2d251902744f0e80f32c74947b5f
+ms.sourcegitcommit: cf531c3a8f3bdb17314d1de436b98249169f82a3
+ms.openlocfilehash: ec7e36fa575ccfed6f98f886639b1e9268eb03a6
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/22/2018
 
 ---
 
@@ -41,19 +41,19 @@ Lifecycle Services (LCS) で VSTS サブスクリプションを設定した後�
 ## <a name="set-up-visual-studio-team-services-vsts"></a>Visual Studio Team Services (VSTS) の設定
 組織の必要な VSTS 機能を比較します。<https://www.visualstudio.com/products/visual-studio-team-services-feature-matrix-vs>
 
--   **TFVC 対 GIT**: RTW では、LCS に接続された VSTS プロジェクトで構成できるソース コントロール リポジトリとして TFVC のみをサポートしています。 Git はサポートされていません。
+-   **TFVC vs GIT**: 現在 TFVC がサポートされているのはソース管理リポジトリのみで、Git はサポートされていません。
 -   **現在のビルドの中断:** 既にビルド定義が作成されている既存の VSTS プロジェクトにビルド エージェントを展開している場合、ビルドをキューに入れるための有効なトリガーがないことを確認してください。 また、ビルド プールに対して、スケジュールされた/キューに格納されたビルドがないことを確認してください。 
 
     [![BuildTriggers](./media/buildtriggers.jpg)](./media/buildtriggers.jpg)
 
--   **無料の VSTS アカウントには、ビルド エージェントが 1 つだけ用意されています**。 アカウントは複数のビルド エージェントに対してプロビジョニングされていないので、フリーの VSTS アカウントを使用して、別のビルド エージェントで新しいビルド VM を配置することは失敗します。
+-   **無料の VSTS アカウントには、ビルド エージェントが 1 つだけ用意されています**。 社内の Visual Studio Enterprise サブスクライバーにはそれぞれ、追加のパイプラインが付与されます。 
 
 
-複数のビルド エージェントを使用するには、Azure 請求 [[アカウントの請求を設定する](/vsts/billing/set-up-billing-for-your-account-vs)] で VSTS アカウントを設定します。 
+現在許可されているよりも多くのビルド パイプラインを使用するには、VSTS アカウントを Azure 請求で設定します。[アカウントの請求を設定する](/vsts/billing/set-up-billing-for-your-account-vs) 
 
 [![VSTS1](./media/vsts1-300x155.jpg)](./media/vsts1.jpg)
 
--   アカウントが Azure サブスクリプションとリンクされた後。 さらにビルド エージェントを繰り入れるため、Azure 管理ポータルで指示に従います - [ロード テストの購入](/vsts/billing/buy-load-testing-vs)
+-   Azure サブスクリプションを使用してアカウントにリンクした後、Azure 管理ポータルの指示に従い、より多くの同時パイプラインを購入します [VSTS の同時パイプライン](/vsts/build-release/concepts/licensing/concurrent-pipelines-ts) 
 
 
 [![VSTS2](./media/vsts2-300x151.jpg)](./media/vsts2.jpg) 

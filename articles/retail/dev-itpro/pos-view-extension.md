@@ -3,7 +3,7 @@ title: "POS ビュー拡張機能"
 description: "このトピックでは、[顧客の追加/編集] 画面などの既存の POS ビューを拡張する方法について説明します。"
 author: mugunthanm
 manager: AnnBe
-ms.date: 11/22/2017
+ms.date: 07/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -17,10 +17,10 @@ ms.author: mumani
 ms.search.validFrom: 2017-11-22
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: ebcea6f1a609dd8ccfa8690d1c3cf93327bb36e1
+ms.sourcegitcommit: f2e3a40f58b57785079e1940b2d24a3598a3ad1b
+ms.openlocfilehash: 0056175e0b167a27b0221bcdd7dba4972e3bbb00
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 07/09/2018
 
 ---
 
@@ -55,15 +55,20 @@ POS ビューでは、次の拡張ポイントとパターンがサポートさ�
 | InventoryLookupView             | 無                            | 有                          | 有                                  |
 | ShowJournalView                 | 無                            | 有                          | 有                                  |
 | SimpleProductDetailsView        | 有                           | 無                           | 有                                  |
-| AddressAddEditView              | 有                           | 無                           |  無                                    |
+| AddressAddEditView              | 有                           | 無                           | 無                                    |
 | PaymentView                     | 無                            | 無                           | 有                                  |
 | PriceCheckView                  | 有                           | 無                           | 無                                   |
-| SearchOrdersView                | 無                            | 有                          | 無   
-|
-| SearchPickingAndReceivingView   | 無                            | 有                          | 無
-|
+| SearchOrdersView                | 無                            | 有                          | 無                                   |
+| SearchPickingAndReceivingView   | 無                            | 有                          | 有                                   |
+| CustomerOrderHistoryView        | 無                            | 有                          | 無                                   |
+| SearchStockCountView            | 無                            | 有                          | 無                                   |
+| StockCountDetailsView           | 無                            | 有                          | 無                                   |
+| ResumeCartView                  | 無                            | 有                          | 無                                    |
 
-注記: 上記の表は、リリースされた最新バージョンおよび修正プログラムに基づいて更新されています。 下位バージョンでは、これらの拡張ポイントの一部は欠落しています。
+> [!NOTE]
+> 上記に表示される表は、リリースされた最新バージョンおよび修正プログラムに基づいて更新されています。 旧バージョンでは、これらの拡張ポイントの一部は使用できません。
+
+フィルターの拡張機能は**仕訳帳ビューを表示**および**注文ビューを検索**でもサポートされ、カスタム フィルターを追加します。 
 
 ## <a name="add-a-custom-column-and-an-app-bar-button"></a>カスタム列とアプリ バー ボタンの追加
 

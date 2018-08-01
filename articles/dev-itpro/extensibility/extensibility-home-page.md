@@ -18,15 +18,15 @@ ms.author: fdahl
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 75a8f7a37de21298388fa751ba172c09b21e5c6f
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: e69dcb250385b375a356ce800f00229035bcaaf5
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="extensibility-home-page"></a>拡張機能のホーム ページ
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Microsoft Dynamics 365 for Finance and Operations は、パートナー、付加価値再販業者によって、さらに一部の顧客によって、大幅にカスタマイズされます。 これは、アプリケーション コードのオーバーレイによって長くサポートされてきた製品の強みです。 柔軟なサービスと頻繁な更新によるクラウドへの移行には、更新によるカスタム ソリューションへの影響を受けにくくする、侵入性の低いカスタマイズが必要です。 この新しいモデルは *拡張性* と呼ばれ、オーバーレイによるカスタマイズに取って代わります。 
 
@@ -54,20 +54,21 @@ Microsoft Dynamics 365 for Finance and Operations は、パートナー、付加
 + [オーバーレイから拡張機能への移行](migrate-overlayer-extension.md)
 + [拡張機能を使用したモデル要素のカスタマイズ (チュートリアル)](customize-model-elements-extensions.md)
 + [カスタマイズ: オーバーレイと拡張機能](customization-overlayering-extensions.md)
-+ [メタデータ ソース コードのオーバーレイによるカスタマイズ (Office Mix)](https://mix.office.com/watch/1ol6ov90jrd4w)
+<!--+ [Customize by overlayering metadata source code (Office Mix)](https://mix.office.com/watch/1ol6ov90jrd4w)-->
 
 ## <a name="extensibility-fundamentals"></a>拡張性の基本
 
-拡張性の基本には、拡張機能の作成方法の原則とプラクティスが含まれています。 以下のトピックの指針では、名前付けのガイドラインも含め、拡張機能を使用してカスタマイズに取り組む方法について説明します。 また、これらのトピックでは、拡張機能やコマンド チェーンなどの Foundation フレームワークについても説明します。
+拡張性の基本では、拡張機能の作成方法に関する原則や手法について説明します。 以下のトピックの指針では、名前付けのガイドラインも含め、拡張機能を使用してカスタマイズに取り組む方法について説明します。 また、これらのトピックでは、拡張機能やコマンド チェーンなどの Foundation フレームワークについても説明します。
 
 + [侵入的なカスタマイズ](intrusive-customizations.md)
 + [クラスの拡張機能](class-extensions.md)
 + [クラスの拡張機能: メソッドのラッピングとコマンド チェーン](method-wrapping-coc.md)
 + [名前付けのガイドライン](naming-guidelines-extensions.md)
++ [オーバレイを拡張機能にリファクタリングできるように、モデルの制限を緩和する](refactoring-over-layering.md)
   
 ## <a name="how-do-i"></a>操作方法
 
-ここでは、「操作方法」がどこにあるかを示します。 特定のオブジェクト タイプまたはコードのカスタマイズに関するトピックです。 このトピックのほとんどは、簡潔で要点を押さえています。 ここには多くのトピックがあるので、特定のトピックの検索が実際に役立つことがあります。
+ここでは、特定のオブジェクト タイプまたはコードのカスタマイズに関する「操作方法」 について説明します。 このトピックのほとんどは、簡潔で要点を押さえています。 ここには多くのトピックがあるので、特定のトピックの検索が実際に役立つことがあります。
 
 ### <a name="data-types"></a>データ型
 + [列挙値の追加](add-enum-value.md)

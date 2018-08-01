@@ -17,10 +17,10 @@ ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 8257caffd2dc995a24632ddc1abd19abdc319bc1
+ms.sourcegitcommit: a55fbd715d3c17e138a8d945159154da7c8a0de6
+ms.openlocfilehash: 808601cf8736434d37306d48a389af1178238d4b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/17/2018
 
 ---
 
@@ -36,16 +36,20 @@ ms.lasthandoff: 04/20/2018
 
 プラットフォーム更新プログラム 5 では、1 つ以上のサブスクライバーが結果を提示している場合にロジックが失敗することを確認する追加の静的コンストラクターが、**EventHandlerResult** クラスにあります。 新しいコンストラクターの名前は、**newSingleResponse**。 このメソッドを使用して **EventHandlerResult** オブジェクトをインスタンス化したとき、2 番目のデリゲート ハンドラー メソッドが結果を提供しようとすると、このフレームワークはただちに例外をスローします。
 
+```
     EventHandlerResult result = EventHandlerResult::newSingleResponse();
     this.validateWarehouseTypeDelegate(this.WarehouseType, result);
+```
 
 ## <a name="ieventhandlerresultvalidator-interface"></a>IEventHandlerResultValidator インターフェイス
 
-<strong>EventHandlerResult</strong> クラスの検証は、<strong>IEventHandlerResultValidator</strong> インターフェイスを実装するタイプのオブジェクトを挿入することで処理されます。 <strong>newSingleResponse</strong> 静的コンストラクターを使用して <strong>EventHandlerResult</strong> オブジェクトをインスタンス化するとき、<strong>EventHandlerSingleResponseValidator</strong> オブジェクトがインスタンス化されて <strong>EventHandlerResult</strong> オブジェクトに挿入され、その挿入されたオブジェクトが <strong>EventhandlerResult</strong> オブジェクトに提供される結果の検証を担当します。 他の検証クラスは、クラスで <strong>IEventHandlerResultValidator** インターフェイスを実装することにより実装し、<strong>newWithResultValidator</strong> という別の新しい静的コンストラクターを使って <strong>EventHandlerResult</strong> オブジェクトをインスタンス化することにより **EventHandlerResult</strong> クラスに挿入できます。 コンストラクターは、<strong>IEventHandlerResultValidator</strong> 型の引数をとります。これにより、<strong>IEventHandlerResultValidator** インターフェイス**を実装している限り、任意の検証ソフト オブジェクトを挿入できます。</strong>。
+**EventHandlerResult** クラスの検証は、**IEventHandlerResultValidator** インターフェイスを実装するタイプのオブジェクトを挿入することで処理されます。 **newSingleResponse** 静的コンストラクターを使用して **EventHandlerResult** オブジェクトをインスタンス化するとき、**EventHandlerSingleResponseValidator** オブジェクトがインスタンス化されて **EventHandlerResult** オブジェクトに挿入され、その挿入されたオブジェクトが **EventhandlerResult** オブジェクトに提供される結果の検証を担当します。 他の検証クラスは、クラスで **IEventHandlerResultValidator** インターフェイスを実装することにより実装され、**newWithResultValidator** という別の新しい静的コンストラクターを使って **EventHandlerResult** オブジェクトをインスタンス化することにより **EventHandlerResult** クラスに挿入できます。 コンストラクターは、**IEventHandlerResultValidator** 型の引数をとります。これにより **IEventHandlerResultValidator** インターフェイスを実装している限り、任意の検証オブジェクトを挿入できます。
 
-たとえば、<strong>newSingleResponse</strong> 静的コンストラクターは単にインスタンス化を **newWithResultValidator** 静的コンストラクターに委任し、次のようになります。
+たとえば、**newSingleResponse** 静的コンストラクターは単にインスタンス化を **newWithResultValidator** 静的コンストラクターに委任し、次のようになります。
 
+```
     return EventHandlerResult::newWithResultValidator(EventHandlerSingleResponseValidator::construct());
+```
 
 ## <a name="accept-and-reject-requestresponse-scenarios"></a>要求/応答シナリオを承認して拒否する
 
@@ -55,6 +59,7 @@ ms.lasthandoff: 04/20/2018
 
 **EventHandlerAcceptResult** クラスを使用するとき、デリゲート ハンドラー メソッドは **承認** メソッドの呼び出しによってのみ応答できます。 **EventHandlerRejectResult** クラスを使用するとき、**否認** メソッドのみを呼び出すことができます。
 
+```
     [SubscribesTo(tableStr(InventWarehouseEntity), delegateStr(InventWarehouseEntity, validateWarehouseTypeDelegate))]
     public static void validateWarehouseTypeIsSupportedStandardDelegateHandler(
         InventLocationType _inventLocationType, 
@@ -69,9 +74,11 @@ ms.lasthandoff: 04/20/2018
                 break; 
         }     
     }
+```
 
-2 つの新しいクラスには、最大で 1 つのサブスクライバーが拒否または承認で応答するシナリオで使用するための <strong>newSingleResponse</strong> 静的コンストラクターも含まれています。 いずれかのサブスクライバーが応答したかどうかは <strong>hasResult</strong> メソッドをクエリすることによってまだ回答できます。承認/否認は、<strong>EventHandlerAcceptResult ** および </strong>EventHandlerRejectResult ** クラスの <strong>isAccepted</strong> または <strong>isRejected</strong> のいずれかのメソッドをそれぞれ呼び出すことによってクエリされます。
+2 つの新しいクラスには、最大で 1 つのサブスクライバーが拒否または承認で応答するシナリオで使用するための **newSingleResponse** 静的コンストラクターも含まれています。 いずれかのサブスクライバーが応答したかどうかは **hasResult** メソッドをクエリすることによってまだ回答できます。承認/否認は、**EventHandlerAcceptResult** および **EventHandlerRejectResult** クラスの **isAccepted** または **isRejected** のいずれかのメソッドをそれぞれ呼び出すことによってクエリされます。
 
+```
     boolean ret = false;
     EventHandlerAcceptResult result = EventHandlerAcceptResult::newSingleResponse(); 
     this.validateWarehouseTypeDelegate(this.WarehouseType, result);
@@ -79,6 +86,5 @@ ms.lasthandoff: 04/20/2018
     {
         ret = result.isAccepted();
     }
-
-
+```
 

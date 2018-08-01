@@ -3,7 +3,7 @@ title: "POS トランザクション グリッドへのカスタム列の追加"
 description: "このトピックでは、画面レイアウト デザイナーを使用して POS トランザクション ページに新しいカスタム列を追加する方法について説明します。"
 author: mugunthanm
 manager: AnnBe
-ms.date: 11/27/2017
+ms.date: 07/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -17,10 +17,10 @@ ms.author: mumani
 ms.search.validFrom: 2017-01-27
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 172d567e10c1a373934022f5767f174ce00472ed
+ms.sourcegitcommit: f2e3a40f58b57785079e1940b2d24a3598a3ad1b
+ms.openlocfilehash: 8505488c423ac0af6df2271f8a9ca627a41f1ecf
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 07/09/2018
 
 ---
 
@@ -42,7 +42,9 @@ ms.lasthandoff: 04/20/2018
 6. プロンプトが表示されたら、**開く**をクリックし、指示に従ってデザイナー ツールをインストールする手順に従いします。
 7. インストール後、AAD 資格情報を入力してデザイナーを起動します。
 8. デザイナーで、トランザクション グリッド (受領書グリッド) を右クリックし、**カスタマイズ**を選択します。
-9. **カスタマイズ – 入庫**ウィンドウで、ピボット パネルのドロップダウン メニューで明細行を選択します。
+9. **カスタマイズ – 入庫**ウィンドウで、ピボット パネルのドロップダウン メニューの**明細行**を選択します。
+   > [!NOTE]
+   > 同様に、**支払および配送**タブにカスタム列を追加できます。
 10. **使用可能な列**ウィンドウで、**カスタム列 1** を選択してから、**> (矢印)** ボタンをクリックして**選択済**列に列を移動します。
 11. **OK** をクリックして保存し、ウィンドウを閉じます。
 12. **画面レイアウト** デザイナーを使用してトランザクション グリッドの列幅を調整します。 列が表示されていることを確認します。
@@ -155,7 +157,20 @@ ms.lasthandoff: 04/20/2018
             }
         }
     }
+    
+    > [!NOTE]
+    > If you are adding a custom column to payment or delivery grid, you need to update the manifest with the following code.
+    "paymentsGrid": {
+        "customColumn1": { "modulePath": "Cart/PaymentsGrid/CustomColumn1Configuration" }
+     },
+     "deliveryGrid": {
+         "customColumn1": { "modulePath": "Cart/DeliveryGrid/CustomColumn1Configuration" }
+     }
+
+    
     ```
+    
+    
 15. **extensions.json** ファイルを **POS.Extensions** プロジェクトで開いて、**CustomColumnExtensions** サンプルで更新し、実行時に POS にこの拡張機能が含まれるようにします。
 
     ```Typescript
@@ -189,6 +204,9 @@ ms.lasthandoff: 04/20/2018
     ],
     ```
 17. プロジェクトをコンパイル、およびリビルドします。
+
+> [!NOTE]
+>  カスタム列のサンプルは [Retail SDK](./retail-sdk/retail-sdk-overview.md) で見つけることができます。
 
 ## <a name="validate-the-customization"></a>カスタマイズの検証
 

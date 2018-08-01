@@ -18,16 +18,16 @@ ms.author: kfend
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 905084f3fdd0a18bdd4de2729fd4c6589e4bc9ea
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: d83f7074d659f77ef89f48f13750739093b09fbf
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="plan-your-dynamics-ax-2012-r3-deployment-on-azure"></a>Azure での Dynamics AX 2012 R3 配置の計画
 
-[!INCLUDE [banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Microsoft Azure に Microsoft Dynamics AX 2012 R3 を展開する前に、いくつかの点を考慮し決定する必要があります。 この記事では、計画プロセスについて説明します。 
 
@@ -148,7 +148,7 @@ VM に関連付けられている各ディスクのサイズ (GB 単位) を指�
 -   既定値は 128 GB です。
 -   使用されるディスクのサイズは、使用される Premium Storage 階層を決定します。
 -   Premium Storage 層は、原価、ディスクあたりの IPOPS、および展開されるシステムのスループットを示しています。 詳細については、[ここ](http://azure.microsoft.com/en-us/pricing/details/storage/) をクリックしてください。
--   すべてのディスクは 64k クラスター サイズにフォーマットします。 これにより、パフォーマンスが最大 20％ 向上します。 詳細については、[ここ](http://tk.azurewebsites.net/2012/08/) をクリックしてください。
+-   すべてのディスクは 64k クラスター サイズにフォーマットします。 これにより、パフォーマンスが最大 20％ 向上します。 
 
 TempDB とログは、パフォーマンスの向上のために記憶域上に配置されます。 そのストレージ領域にコンフィギュレーションされているディスクの数に対して、1 つの仮想ディスクが作成されます。 次に、仮想ディスクは次のようにパーティション化されます。
 

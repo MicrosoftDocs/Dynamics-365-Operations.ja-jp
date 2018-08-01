@@ -18,10 +18,10 @@ ms.author: tabell
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 7f54000caad099a28341cdfdb98b4134e3ae5838
+ms.sourcegitcommit: cf531c3a8f3bdb17314d1de436b98249169f82a3
+ms.openlocfilehash: 70b011ab67e428b2e690a298685142675c9a67a6
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/22/2018
 
 ---
 
@@ -64,6 +64,11 @@ Microsoft サービス エンジニアリング チームは、環境をオフ�
     -   サービス エンジニア リング チームによる復元が完了するまで待ちます。 復元が完了したら、ステータスが **"成功"** に変更されます。
     -   ID をクリックするか、要求を選択してツール バーで **再スケジューリング** をクリックすることにより、リクエストを再スケジューリングします。 ダウンタイム ウィンドウの日時、および復元する時点を変更することができます。
     -   要求を選択し、ツールバーの**キャンセル**をクリックして、要求をキャンセルします。
+
+## <a name="enable-change-tracking"></a>変更追跡の有効化
+データベースで変更追跡が有効になっている場合は、ALTER DATABASE コマンドを使用して、新しく復元したデータベースで変更追跡を再度有効にしてください。
+
+新しいデータベースで店舗の業務手順の現在のバージョン (変更追跡に関連する) が使用されていることを確認するには、データ管理のデータ エンティティの変更追跡を有効または無効にする必要があります。 これは、店舗の業務手順の更新をトリガーするために必要なので、どのエンティティでも実行できます。
 
 ## <a name="conditions-of-a-point-in-time-restore"></a>ポイントインタイム復元要求の条件
 ポイントインタイム復元の操作の要件および条件の一覧を次に示します。

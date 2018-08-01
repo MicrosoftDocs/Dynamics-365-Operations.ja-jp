@@ -18,10 +18,10 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 3c114e217759459bdb48ff528fab1d41aefc7993
+ms.sourcegitcommit: cf531c3a8f3bdb17314d1de436b98249169f82a3
+ms.openlocfilehash: c743a86cccb0de04c6f059aa1a653a684e0c23f7
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/22/2018
 
 ---
 
@@ -88,7 +88,8 @@ Microsoft Azure Active Directory (AAD) では、次の 2 種類のアプリケ�
 4. 登録している外部アプリケーションを識別する名前を入力します。 共有機密情報を使用して認証するアプリケーションについては、**Web アプリ/API** を選択します。 このコンテキストでは、サインオン URL は関係ありません。 したがって、**localhost** を使用します。
 5. 新しいアプリケーションを選択し、アプリケーション ID をコピーします。 Azure AD 認証トークンを要求するには、後で、アプリケーション ID が必要です。 **必要なアクセス許可** を選択します。
 6. **追加** を選択し、**API を選択** を選択します。
-7. **Microsoft Dynamics ERP** を選択します。
+7. **Microsoft Dynamics ERP (Microsoft.ERP)** を選択します。 **API を選択**の検索フィールドで **Microsoft Dynamics ERP** を検索すると、グレーで表示されることがあります。その場合は、上記のように完全名で検索することを確認してください。
+
 8. **委任アクセス権** で、少なくとも次のオプションを選択する必要があります。
 
     - Dynamics AX カスタム サービスへのアクセス

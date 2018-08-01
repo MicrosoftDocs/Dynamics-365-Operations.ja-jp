@@ -18,10 +18,10 @@ ms.author: tabell
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 8e7dc968334c4e1b3f7baf865571ebe6aebfc8a0
+ms.sourcegitcommit: 6c6c7c3f63b7a49820811a7ec80248b09b6e3acf
+ms.openlocfilehash: d0b78156f4a4b869620f72b3d8d36d5cb349705b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 06/19/2018
 
 ---
 
@@ -36,7 +36,7 @@ Visual Studio Team Services (VSTS) (旧名称は Visual Studio Online または 
 - この問題を回避するには、開発を開始する前にマシンの名前を変更してリブートし、VSTS に接続します。
 - これらを実行した後、SQL Server レポート サーバーもコンフィギュレーションする必要があります。 これを行うには、SQL Server レポート サーバーのデータベース接続文字列で SQL Server 名を (localhost) に変更します。
 
-  [![4](./media/4.png)](./media/4.png)
+  
 
 
 

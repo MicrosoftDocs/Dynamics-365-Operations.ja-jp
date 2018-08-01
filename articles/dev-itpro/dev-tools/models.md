@@ -18,16 +18,16 @@ ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 80683d2b8b93d4d7973141a8605a9bf391eca20e
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 8dc4c13397182afd616773c8975c5b640098a85b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="models"></a>モデル
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 この記事では、モデルとパッケージの概念について説明します。 また、新しいモデルを作成するために Microsoft Visual Studio の開発ツールを使用する方法、既存のモデルのパラメーターを更新する方法、およびモデル間の依存関係を表示する方法についても説明します。
 
@@ -36,7 +36,7 @@ ms.lasthandoff: 04/20/2018
 ## <a name="conceptual-overview"></a>概念に関する概要
 モデルは、通常、配布可能なソフトウェア ソリューションを構成するメタデータとソース ファイルなどの要素のグループであり、既存のソリューションのカスタマイズを含みます。 モデルは、倉庫管理モデルやプロジェクト会計モデルなどのデザイン時概念です。 モデルは、常に 1 つのパッケージに属しています。 パッケージは、1 つまたは複数のモデルの配置およびコンパイル単位です。 これには、モデル メタデータ、バイナリ、およびその他の関連するリソースが含まれます。 1 つ以上のパッケージは、ランタイム環境の配置に使用する車両の配置可能パッケージにパッケージすることができます。
 
-[パッケージ、モデル、およびプロジェクト](https://mix.office.com/watch/ies6lyit6773) Office Mix は、モデルとパッケージおよび相互にどのように関連しているかについて説明します。
+<!--The [Packages, models, and projects](https://mix.office.com/watch/ies6lyit6773) Office Mix describes models and packages and how they relate to each other.-->
 
 ## <a name="creating-a-new-model"></a>新しいモデルを作成しています
 **モデルの作成** ウィザードを使用して、新しいモデルを作成します。 このウィザードには **Dynamics 365** メニューの **モデル管理** からアクセスすることができます。 モデルは 2 種類作成することができます。

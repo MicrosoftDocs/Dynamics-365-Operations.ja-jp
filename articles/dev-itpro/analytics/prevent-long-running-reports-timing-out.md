@@ -18,10 +18,10 @@ ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 4a4cbe23771105cf42bf172d2d615281cc106a9d
+ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
+ms.openlocfilehash: 526e5972d065c0d5706e0d742407b8a8842ac569
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/23/2018
 
 ---
 
@@ -48,9 +48,7 @@ ms.lasthandoff: 04/20/2018
 6.  **コントローラー** クラスを導入してレポートを実行します。
 7.  レポートの代わりに **Controller** クラスを指すように出力メニュー項目を更新します。
 
-次のビデオはそのプロセスを示しています。 
-
-> [!ビデオ https://www.youtube.com/embed/6tdQtHV2WAc
+次のビデオでプロセスを示します: [Ep 59 実行時間の長いレポート](https://www.youtube.com/watch?v=6tdQtHV2WAc)
 
 ## <a name="use-batch-processing"></a>バッチ処理の使用
 大量のデータを含む明細書またはレポートを印刷するときのパフォーマンスを向上させるには、バッチ処理を使用します。 バッチ処理を使用すると、特定のタスクをバッチ ジョブとして実行した後、そのバッチ ジョブを、別のコンピューター (バッチ サーバー) で実行されるようにスケジュールすることができます。 これらのタスクの処理をバッチ サーバーに移すことによって、クライアント コンピューターのレポートのパフォーマンスが向上します。 また、各バッチ サイズを制限するために範囲制限を適用できます。 

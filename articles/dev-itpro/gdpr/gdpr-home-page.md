@@ -3,7 +3,7 @@ title: "GDPR データ要求に対応するためのリソース"
 description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operation、およびその他の Dynamics 製品を使用する顧客として、一般データ保護規制 (GDPR) に基づくデータ権利要求への対応に役立つ情報へのリンクを提供します。"
 author: rschloma
 manager: AnnBe
-ms.date: 12/31/2017
+ms.date: 05/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,10 +17,10 @@ ms.author: rschloma
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 895b9c5883cadd102d99b7b6df0128d8511988e1
+ms.sourcegitcommit: d964fd72f42a39362ebc45c557f7f0dfd1d9bd54
+ms.openlocfilehash: 70a1cc705e9b219ac9f1e3d19dc2296abc8cbba8
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/18/2018
 
 ---
 
@@ -45,6 +45,7 @@ ms.lasthandoff: 04/20/2018
 - [Microsoft Dynamics AX 2012 のデータに対する DRS 要求に応答する](gdpr-ax2012.md)
 - [Microsoft Dynamics 365 for Talent のデータに対する DRS 要求に応答する](respond-dsr-request-talent.md)
 - [Microsoft Dynamics 365 for Finance and Operations の GDPR に関するガイド](gdpr-guide.md)
+- [Lifecycle Services の GDPR データ要求](gdpr-lcs.md)
 
 ## <a name="compliance-manager"></a>コンプライアンス マネージャー
 コンプライアンス マネージャーは、組織が GDPR のような複雑なコンプライアンス責務を満たすのを支援するために設計された、クロス Microsoft クラウド サービス ソリューションです。 これにより、Microsoft クラウド サービスを使用する場合、推奨される操作およびステップ バイ ステップ ガイダンスと共に、データ保護規制に対するコンプライアンス方針を反映するリアルタイムのリスク評価が実行されます。
@@ -55,17 +56,17 @@ ms.lasthandoff: 04/20/2018
 ### <a name="resources"></a>リソース
 コンプライアンス マネージャーの詳細と、複雑なコンプライアンス義務を満たすためにどのようにコンプライアンス マネージャーが役に立つかについて学習できるリソースは数多くあります。
 
-> [Microsoft 365 - コンプライアンス マネージャー プレビュー](https://blogs.office.com/en-us/2017/11/16/microsoft-365-helps-businesses-increase-trust-and-innovation-through-compliance-with-compliance-manager-preview/) (Office ブログ - Ron 2017 年 11 月 16日)
+> [Microsoft 365 - コンプライアンス マネージャー プレビュー](https://blogs.office.com/en-us/2017/11/16/microsoft-365-helps-businesses-increase-trust-and-innovation-through-compliance-with-compliance-manager-preview/) (Office、2017 年 11 月)
 > 
-> [コンプライアンス マネージャー プレビューが閲覧可能になりました](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Compliance-Manager-Preview-is-now-available/ba-p/124662) (Tech Community ブログ 2017 年 11 月 16 日)
+> [コンプライアンス マネージャー プレビューが閲覧可能になりました](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Compliance-Manager-Preview-is-now-available/ba-p/124662) (Tech Community 2017 年 11 月)
 > 
-> [新しいサービス信頼ポータルについて理解する](https://blogs.technet.microsoft.com/scottschnoll/2017/11/21/get-to-know-the-new-service-trust-portal/) (TechNet ブログ 2017 年 11 月 22 日) 
+> [新しいサービス信頼ポータルについて理解する](https://blogs.technet.microsoft.com/scottschnoll/2017/11/21/get-to-know-the-new-service-trust-portal/) (TechNet 2017 年 11 月) 
 > 
-> [コンプライアンス マネージャーの発表](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Manage-Your-Compliance-from-One-Place-Announcing-Compliance/ba-p/106493) (Tech Community ブログ 2017 年 9 月 25 日)
+> [コンプライアンス マネージャーの発表](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Manage-Your-Compliance-from-One-Place-Announcing-Compliance/ba-p/106493) (Tech Community 2017 年 9 月)
 > 
-> [現代の職場に力を与えるために、インテリジェンス、管理、セキュリティを強化する](https://blogs.office.com/en-us/2017/09/25/advancing-intelligence-management-and-security-to-empower-the-modern-workplace/) (Office ブログ - Kirk K 2017 年 9 月 25日)
+> [現代の職場に力を与えるために、インテリジェンス、管理、セキュリティを強化する](https://blogs.office.com/en-us/2017/09/25/advancing-intelligence-management-and-security-to-empower-the-modern-workplace/) (Office 2017 年 9 月)
 > 
-> [GDPR コンプライアンス を迅速化する新しい Microsoft 365 機能](https://blogs.microsoft.com/microsoftsecure/2017/09/25/new-microsoft-365-features-to-accelerate-gdpr-compliance/) (セキュリティ ブログ 2017 年 9 月 25 日)
+> [GDPR コンプライアンス を迅速化する新しい Microsoft 365 機能](https://blogs.microsoft.com/microsoftsecure/2017/09/25/new-microsoft-365-features-to-accelerate-gdpr-compliance/) (マイクロソフト セキュリティ、2017 年 9 月)
 
 
 ## <a name="additional-resources"></a>その他のリソース

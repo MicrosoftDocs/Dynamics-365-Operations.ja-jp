@@ -3,7 +3,7 @@ title: "クラウド配置のシステム要件"
 description: "このトピックでは、現在のバージョンの Microsoft Dynamics 365 for Finance and Operations におけるクラウド展開のシステム要件を一覧表示します。"
 author: sericks007
 manager: AnnBe
-ms.date: 03/27/2018
+ms.date: 05/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 009855aa9f700b5b1195725e9e307b2777712351
+ms.sourcegitcommit: dc2ab66bf6e3195e1ebf394f99182f59c3ee2125
+ms.openlocfilehash: 64f7fb2910f80aaf35cfe6915fe6053d8aaf7e91
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/15/2018
 
 ---
 
@@ -130,6 +130,8 @@ Finance and Operations では、ドキュメント回覧エージェントなど
 - サード パーティのハードウェア
 
 ## <a name="retail-store-scale-unit-requirements"></a>Retail Store スケール ユニット要件
+以下に示す最小システム要件は、テスト シナリオでの機能へ Retail Store スケール ユニットを取得するのに必要最低限であることをご確認下さい。  以下は実際的な実稼働環境を表すものではありません。  適切なパフォーマンス テストを実行し、使用するハードウェアがユーザーのニーズを満たしているのを検証することが重要です。
+
 ### <a name="supported-operating-systems"></a>サポートされるオペレーティング システム
 
 - Retail Store スケール ユニットは 32 ビット アプリケーションですが、x86 と x64 アーキテクチャの両方で動作します。
@@ -156,6 +158,13 @@ Finance and Operations では、ドキュメント回覧エージェントなど
 - 6 GB の RAM
 - コアごとの最大処理スピード 2.4 GHz i7 (または同等のもの) (推奨 4 コア)
 - 少なくとも 10 GB の空き領域 (チャンネル データベースが大量の領域を必要とする場合があります。）
+
+個人のハードウェア ニーズを決定する際に次の品目も考慮することは、組織の最高の利益となります。
+- 物理的ネットワーク ポートの数 (ポートが増えると 1 秒あたりのスループットが強化されます。)
+- SQL Server のログ フラッシュ サイズ (これは SQL Server パフォーマンスに直接影響します。)
+- データの読み取りと書き込み能力 (これは SQL サーバー パフォーマンスに直接影響を与えます。)
+- CPU コアの数、コアごとの並行スレッドの数、およびコアあたりの速度 (これはシステムの全体的なスループットに影響します。)
+- 負荷分散が必要かどうか 
 
 ## <a name="connector-requirements"></a>コネクタの要件
 ### <a name="supported-operating-systems"></a>サポートされるオペレーティング システム

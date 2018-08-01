@@ -20,10 +20,10 @@ ms.author: rubendel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: b9077b470b675611745abde5e37d3ac335e53ee1
+ms.sourcegitcommit: 0e1be78baa0deee7f86a21ed23b1990ff4215907
+ms.openlocfilehash: 49587e17c364af6c2cb2e5a87c557257c86d6189
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/18/2018
 
 ---
 
@@ -252,7 +252,7 @@ POS シミュレーターは、次のデバイスをサポートしています�
 - 支払ターミナル
 
     > [!NOTE]
-    > 支払ターミナルには、支払コネクタが必要です。 詳細については、[支払コネクタと支払デバイスの実装 (ホワイト ペーパー)](http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx) を参照してください。
+    > 支払ターミナルには、支払コネクタが必要です。 詳細については、[支払ターミナルと支払の統合](end-to-end-payment-extension.md)を参照してください。
 
 サポートされているデバイスの一覧に**設定**タブがあります。**設定**タブを使用して、POS シミュレーターとテストされているデバイスとの通信方法を指定できます。 **ランタイム**を選択すると、POS シミュレーターがデバイスと通信するのに使用する方法は、組み込みハードウェア局を持つ MPOS が通信する方法と類似するようになります。 **Win32** が選択されている場合、POS シミュレーターはデバイスと直接通信します。 この通信方法は、スタンドアロン ハードウェア ステーションが通信する方法に似ています。
 

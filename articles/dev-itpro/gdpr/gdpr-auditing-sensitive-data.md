@@ -17,10 +17,10 @@ ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 16e0c2a7d6206eeb878697386fd7355f64b30246
+ms.sourcegitcommit: 250b8763c76ebe8fc71810afae9bb69b41809d23
+ms.openlocfilehash: 40da174d5967097f7b58c0850c5c2693ea03e97b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/09/2018
 
 ---
 
@@ -48,6 +48,9 @@ ms.lasthandoff: 04/20/2018
 機密データであると宣言されたデータにアクセスするユーザーのログ エントリは、ログ内の他のすべてのデータとは別に保持できます。 管理者は、**ユーザー ログのクリーンアップ** ページでオプションを設定して、この機能を有効にすることができます。
 
 ![[ユーザー ログのクリーンアップ] ページ](../media/gdpr-sensitive-data-4.jpg)
+
+>[!Note]
+> この機能はバージョン 8.0 で使用することができます。 この機能は、Dynamics AX 2012 R3 (KB 4074643) を使用した際に有効です。
 
 ## <a name="additional-resources"></a>その他のリソース
 GDPR の詳細については、[欧州連合の Web サイト](http://europa.eu/) および [Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx) を参照してください。

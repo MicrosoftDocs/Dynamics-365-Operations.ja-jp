@@ -3,7 +3,7 @@ title: "監視および診断 (Lifecycle Services、LCS)"
 description: "このトピックでは、管理する Microsoft Dynamics 365 for Finance and Operations の状態を監視、診断、分析するために、Microsoft Dynamics Lifecycle Services (LCS) が提供するさまざまなツールについて説明します。"
 author: manalidongre
 manager: AnnBe
-ms.date: 11/13/2017
+ms.date: 07/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: manado
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 2711898f83510648cee570742634f1ff686c134a
+ms.sourcegitcommit: f2e3a40f58b57785079e1940b2d24a3598a3ad1b
+ms.openlocfilehash: c5421e3a77bd4c0e279c9c74e8423030bebfb3c6
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 07/09/2018
 
 ---
 
@@ -161,6 +161,8 @@ just-in-time 診断では、SQL now ツールを使用することができま�
 
 システム診断ツールは、環境に対して事前に定義されたルール セットを実行するルール ベースのフレームワークであり、ルールのステータスに関するレポートを提供します。 エラーが発生した場合、このツールは、問題に対処するための推奨事項を提供します。 システムの診断ツールを開始するには、LCSプロジェクト ダッシュ ボードで [ハンバーガー] アイコンをクリックし、**システム診断** をクリックします。
 
+## <a name="other-resources"></a>その他のリソース
 
+- [環境監視未加工ログの使用方法](https://blogs.msdn.microsoft.com/axsa/2018/06/05/how-to-use-environment-monitoring-view-raw-logs/)
 
 

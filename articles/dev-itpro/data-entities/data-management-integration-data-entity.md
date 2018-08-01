@@ -18,10 +18,10 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: fa5f295796d41e69d6c68d344ca1f9569386a977
+ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
+ms.openlocfilehash: f884db53aa01ef1b3bb259b7bb89426c68dcc7b0
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/23/2018
 
 ---
 
@@ -53,10 +53,6 @@ ms.lasthandoff: 04/20/2018
 32,768 文字を超える文字列をインポートする必要がある場合は、コンテナー エンティティ フィールドを使用することをお勧めします。
 
 
-詳細については、「FastTrack 技術解説」ビデオを確認してください。
-
-> [!Video https://www.youtube.com/embed/fooBvQhIo6I?list=PLcakwueIHoT_BQxAZ6VFbWgX9sAWBW3Xi?ecver=1]
-
-
+詳細については、FastTrack 技術解説のビデオ: [Dynamics 365 for Operations – 技術解説: 統合](https://www.youtube.com/watch?v=fooBvQhIo6I}をご覧ください。
 
 

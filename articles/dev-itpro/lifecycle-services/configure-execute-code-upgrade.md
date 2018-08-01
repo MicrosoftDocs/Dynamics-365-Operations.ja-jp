@@ -18,16 +18,16 @@ ms.author: tabell
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: bc27a77dd1e632d5bcdf08fa3fcfe76a6e6be100
+ms.sourcegitcommit: 8ecf9187720854110fb8ce61601edc00f641f476
+ms.openlocfilehash: 25adb7dcd3890e1dbdd216a6098e14e3b0dcd429
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/24/2018
 
 ---
 
 # <a name="configure-the-code-upgrade-service-in-lifecycle-services"></a>Lifecycle Services で、コード アップグレード サービスをコンフィギュレーションする
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 このトピックでは、Lifecycle Services (LCS) の <strong>コード アップグレード</strong> タイルを構成して、ソリューションを最新バージョンの Dynamics 365 for Finance and Operations に移行する方法について説明します。
 
@@ -36,17 +36,21 @@ ms.lasthandoff: 04/20/2018
 
 コードのアップグレード ツールは、Visual Studio Team Services (VSTS) に接続し、トランク\\メインブランチを検索し、リリース\\\<バージョン番号\>という名前の新しいブランチに分岐してから、コードのアップグレードを実行します。 このプロセスが完了した後、Finance and Operations 開発環境を、リリース \\\<バージョン番号\> 下の新しいブランチに同期させ、競合を解決できます。 アップグレード後のコードをコンパイルしてテストしたとき、新しいブランチを Visual Studio のソース管理エクスプ ローラーを使用して Trunk\\Main にマージすると、プロセスが完了します。
 
+Dynamics 365 for Finance and Operations 8.0 およびこれ以降のバージョンでは、Microsoft モデルのオーバーレイ経由でのカスタマイズは許可されていません。 アップグレードする前に、カスタマイズを拡張機能にリファクターする計画が必要です。 詳細については、[拡張機能のホームページ](../extensibility/extensibility-home-page.md)および [8.0 環境でオーバーレイをリファクタリングする](../extensibility/refactoring-over-layering.md)を参照してください。
+
 ## <a name="process"></a>プロセス
 ### <a name="create-the-trunkmain-folder-structure"></a>トランク\\メイン フォルダー構造を作成する
 
 ソース コードを識別するコード アップグレード サービスについては、フォルダ構造は以下の厳密なパターンに準拠している必要があります。 正しい構造は次のとおりです。 
-- コード自体用: ..\\\<VSTS プロジェクト名 >\\トランク\\メイン\\メタデータ
-- Visual Studio プロジェクト用: ..\\\<VSTS プロジェクト名 >\\トランク\\メイン\\メタデータ
 
-  VSTS で新しいフォルダーを作成するには、ローカルでフォルダーを作成し、VSTS にチェックインします。
+ - コード自体用: ..\\\<VSTS プロジェクト名 >\\トランク\\メイン\\メタデータ
+ - Visual Studio プロジェクト用: ..\\\<VSTS プロジェクト名 >\\トランク\\メイン\\プロジェクト
+ 
+ VSTS で新しいフォルダーを作成するには、ローカルでフォルダーを作成し、VSTS にチェックインします。
+ 
+ > [!NOTE]
+ > フォルダー名は大文字と小文字を区別していて、つまり、メインおよびメインでない、またはコードのアップグレード サービスはフォルダーを認識しません。 
 
-  > [!NOTE]
-  > フォルダー名は大文字と小文字を区別していて、つまり、メインおよびメインでない、またはコードのアップグレード サービスはフォルダーを認識しません。 
 
 ### <a name="to-create-a-personal-access-token"></a>個人用アクセス トークンを作成するには
 
@@ -103,7 +107,7 @@ LCS のコードのアップグレード タイルは、移行元の Finance and
 
 ### <a name="merge-releases-back-into-trunkmain"></a>リリースを Trunk\\Main にマージ
 
-リリース\\\<バージョン番号\>のアップグレードされたコードがコンパイルされ、テストに合格したら、このブランチをトランク\\メインにマージする準備が整いました。 これを行うには、Visual Studio の開発環境で、[ソース管理エクスプローラー] ウィンドウを開き、**リリース\\\<バージョン番号\>** 分岐を右クリックし、コンテキスト メニューで **分岐とマージ** に進み、サブ メニューで **マージ** を選択します。
+リリース\\\<バージョン番号\>のアップグレードされたコードが正常にコンパイルされ、テストに合格したら、このブランチをトランク\\メインにマージする準備が整いました。 これを行うには、Visual Studio の開発環境で、[ソース管理エクスプローラー] ウィンドウを開き、**リリース\\\<バージョン番号\>** 分岐を右クリックし、コンテキスト メニューで **分岐とマージ** に進み、サブ メニューで **マージ** を選択します。
 
 [![リリース ブランチのマージ](./media/MergeReleasesBranch.PNG)](./media/MergeReleasesBranch.PNG)
 

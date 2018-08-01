@@ -18,16 +18,16 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 49a292f2b6f2997bbbc9e04c3626c891e0d791db
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 5f1df494ee70a9cf4e53e114c5a6b1dc30e24eb2
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="behavioral-properties-on-data-entities"></a>データ エンティティの動作プロパティ
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 すべてのデータ エンティティには、そのエンティティのデータソースであるテーブルまたはビューの同じプロパティ値をオーバーライドできるようにするプロパティがあります。 選択内容は、エンティティの動作に影響します。 次の表では、最初の列に、このトピックで説明したプロパティが一覧表示されています。 一番上の行には、エンティティ デザイナーでプロパティが見つかったレベルが表示されます。 レベルは、精度の細かい順に一覧表示されます。データ ソース レベルはエンティティ レベルよりも細かく、フィールド レベルほどは細かくはありません。
 
@@ -115,7 +115,10 @@ ms.lasthandoff: 04/20/2018
 </table>
 
 ## <a name="field-level"></a>フィールド レベル
-フィールド レベルにおいて、<strong>AllowEdit</strong> と <strong>AllowEditOnCreate</strong> プロパティは <strong>IsReadOnly</strong> プロパティの代わりに利用可能です。 2 つの <strong>Allow\</strong>* プロパティには、3 番目に利用可能な値として <strong>Auto</strong> が含まれています。 <strong>自動</strong> 値は、基になっているテーブルのフィールドにある値を継承します。 <strong>注記:</strong> <strong>自動</strong>の値は、計算フィールドや仮想フィールドなどのマップされていないフィールドでは使用できません。
+フィールド レベルにおいて、**AllowEdit** と **AllowEditOnCreate** プロパティは **IsReadOnly** プロパティの代わりに利用可能です。 2 つの**許可**プロパティには、3 番目の利用可能な値として**自動**が含まれています。 **自動** 値は、基になっているテーブルのフィールドにある値を継承します。 
+
+> [!NOTE]
+> **自動**の値は、計算フィールドや仮想フィールドなどのマップされていないフィールドでは使用できません。
 
 <table style="width:100%;">
 <colgroup>
@@ -148,7 +151,7 @@ ms.lasthandoff: 04/20/2018
 <li><strong>いいえ:</strong> ユーザーは、このフィールドのデータを新しいレコードで変更することはできません。</li>
 <li><strong>はい:</strong> ユーザーは、このフィールドのデータを新しいレコードに対して変更することができます。</li>
 </ul>
-この動作は、すべてのコンシューマー (X++、OData など) に適用されます。 <strong>重要:</strong> <strong>いいえ</strong>および<strong>はい</strong>の値は、基になるテーブル内のフィールドの設定を上書き<em>しません</em>。</td>
+この動作は、すべてのコンシューマー (X++、OData など) に適用されます。 <br><strong>重要:</strong> <strong>いいえ</strong>および<strong>はい</strong>の値は、基になるテーブル内のフィールドの設定を上書き<em>しません</em>。</td>
 </tr>
 <tr class="even">
 <td>動作</td>
@@ -164,7 +167,8 @@ ms.lasthandoff: 04/20/2018
 <td>必須</td>
 <td>自動、いいえ、はい</td>
 <td>自動</td>
-<td><strong>自動:</strong> 基になるテーブル フィールドから、プロパティを継承します。 この動作は、すべてのコンシューマー (X++、OData など) に適用されます。 <strong>重要:</strong> <strong>いいえ</strong>および<strong>はい</strong>の値は、基になるテーブル内のフィールドの設定を上書き<em>しません</em>。</td>
+<td><strong>自動:</strong> 基になるテーブル フィールドから、プロパティを継承します。 この動作は、すべてのコンシューマー (X++、OData など) に適用されます。 <br>
+<strong>重要:</strong> <strong>いいえ</strong>および<strong>はい</strong>の値は、基になるテーブル内のフィールドの設定を上書き<em>しません</em>。</td>
 </tr>
 </tbody>
 </table>

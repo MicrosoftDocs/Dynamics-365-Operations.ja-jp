@@ -1,6 +1,6 @@
 ---
-title: "LCS ソリューションのステージングおよび発行"
-description: "このトピックでは、LCS ソリューション パッケージのマーケティング コンテンツを Azure Publishing Portal にアップロードする方法、およびソリューションを準備して発行する方法について説明します。"
+title: "Microsoft Dynamics 365 for Finance and Operations ソリューションのステージおよび公開"
+description: "このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) ソリューション パッケージのマーケティング コンテンツを Microsoft Cloud Partner Portal にアップロードする方法、およびソリューションを準備して発行する方法について説明します。"
 author: kfend
 manager: AnnBe
 ms.date: 06/20/2017
@@ -16,50 +16,35 @@ ms.assetid: 80b0cc44-ffbe-400e-b902-60518a930b0d
 ms.search.region: Global
 ms.author: omarc
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: f435271bb9d1e25b85c30ccc40a3982dc11f1994
+ms.sourcegitcommit: 43c18efc4b02da594821018b6d4b8748a4f5eb84
+ms.openlocfilehash: 2afa5844aae15ca489071ac969105f94ce2b5c15
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 06/12/2018
 
 ---
 
-# <a name="stage-and-publish-an-lcs-solution"></a>LCS ソリューションのステージングおよび発行
+# <a name="stage-and-publish-a-microsoft-dynamics-365-for-finance-and-operations-solution"></a>Microsoft Dynamics 365 for Finance and Operations ソリューションのステージおよび公開
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、LCS ソリューション パッケージのマーケティング コンテンツを Azure Publishing Portal にアップロードする方法、およびソリューションを準備して発行する方法について説明します。
+このトピックでは、Microsoft Dynamics 365 for Finance and Operations ソリューション パッケージのマーケティング コンテンツを Microsoft Cloud Partner Portal にアップロードする方法について説明します。 また、ソリューションを準備して発行する方法についても説明します。 ポータルへのアクセスは、Microsoft AppSource Team for Finance and Operations によってパブリッシャーとして正しく処理され登録された後、認可されます。 研修プロセスを開始するには、[会社についてお聞かせください](https://appsource.microsoft.com/en-us/partners/signup)を参照してください。
 
-LCS ソリューション パッケージのマーケティング コンテンツを Microsoft Azure Publishing Portal に公開する前に、Microsoft に開発者センターのアカウントを設定する必要があります。 アカウントを作成した後、マーケティング コンテンツをアップロード、およびアプリケーションのライフ サイクルを通じてコンテンツを管理できます。 開発者センターのアカウントを設定する方法の詳細については、[Microsoft 開発者アカウントの作成](https://azure.microsoft.com/en-us/documentation/articles/marketplace-publishing-accounts-creation-registration/) を参照してください。
+Finance and Operations ソリューション パッケージのマーケティング コンテンツを Cloud Parter Portal に公開する前に、Microsoft に開発者センターのアカウントを設定する必要があります。 その後マーケティング コンテンツをアップロードし、アプリケーションのライフ サイクルを通じてコンテンツを管理できます。 開発者センターのアカウントを設定する方法の詳細については、[Microsoft 開発者アカウントの作成](https://azure.microsoft.com/en-us/documentation/articles/marketplace-publishing-accounts-creation-registration/) を参照してください。
 
-## <a name="upload-marketing-materials-set-up-legal-information-and-identify-the-support-team"></a>マーケティング資料のアップロード、法的情報の設定、サポート チームの特定
-マーケティングの概要、ソリューションの説明、および他のマーケティング資料をアップロードすることができます。
+## <a name="upload-marketing-materials-set-up-legal-information-identify-the-support-team-and-set-up-lead-management"></a>マーケティング資料のアップロード、法的情報の設定、サポート チームの特定、および潜在顧客管理の設定
+クラウド パートナー ポータルで発行元として登録された後、新しい提案の作成、マーケティング概要、ソリューション説明および他のマーケティング資料の更新、潜在顧客管理の設定が可能です。
 
-1.  [Azure Publishing ポータル](https://publish.windowsazure.com/workspace/)で、ソリューションを開いてから、左ウィンドウで**マーケティング**をクリックします。
-2.  **Url** セクションの**識別子**フィールドに、サービスに関する特定のマーケティング ページにリンクする URL で使用する 短い URL にしやすい識別子を入力します。
-3.  **言語**セクションで**英語**を選択してから、**説明**セクションにソリューションのタイトル、要約、長い要約、および説明を入力します。
-4.  **ロゴ** セクションで、アップロードするグラフィックのサイズに対応する**画像のアップロード** リンクをクリックします。 **注記:** すべてのグラフィックスは各イメージに与えられているサイズに従う必要があり、PNG 形式である必要があります。
-5.  プラス記号 (**+**) をクリックすると、1 つまたは複数のリンクを追加のリソースに追加できます。
-6.  オプション: 左ウィンドウで、**サンプル イメージ** をクリックして、ソリューションを説明またはレベル上げする追加画像をアップロードします。 **注記:** すべてのグラフィックスは各イメージに与えられているサイズに従う必要があり、PNG 形式である必要があります。
-7.  左のナビゲーション ウィンドウで、**プラン**をクリックしてから、**プラン** セクションに、タイトル、概要、および顧客がソリューションを購入した場合に受け取る内容の説明を入力します。 **重要:** 現時点では、この情報は、Microsoft Dynamics 365 for Finance and Operations には適用されません。 ただし、それは将来に使用されるもので、ソリューションが公開される前に含まれる必要があります。 この情報はいつでも更新することができます。
-8.  左のナビゲーション ウィンドウで、**リーガル**をクリックしてから、**リーガル** セクションにプライバシー ポリシーの URL とソリューションの使用条件を入力します。 お客様は、ソリューションを購入する際に、これらのポリシーを表示することができます。
-9.  左のナビゲーション ウィンドウで、**サポート**をクリックしてから、組織のエンジニアリングの連絡先と顧客サポート情報を入力します。 この情報は、マイクロソフトでは、ソリューションに関する質問の問い合わせ窓口として使用されます。 この情報は顧客サポートにも使用されます。
-10. 左のナビゲーション ウィンドウで、**カテゴリ**をクリックしてから**ビジネス アプリケーション** チェック ボックスをオンにします。
+Cloud Partner Portal から新しい提案を作成して公開する手順にアクセスするには、次の手順を実行します。
 
-## <a name="stage-and-publish-your-solution"></a>ソリューションのステージングおよび発行
-前の手順を完了した後は、ソリューションを実施および公開できます。
+1. [クラウド パートナー ポータル](https://cloudpartner.azure.com) で**詳細情報**を選択します。
+2. **ドキュメント** を選択します。
+3. **Dynamics 365 for Operations** ノードを展開します。
+4. **公開方法**を選択して、指定されている手順を実行します。
 
-1.  左のナビゲーション ウィンドウで、**ステージング**をクリックします。
-2.  **ステージング** グループで、**ステージングにプッシュ**をクリックします。 訂正が必要な場合は、エラー メッセージが表示されます。
-3.  メッセージ内の各エラーについては、問題を修正するためリンクをクリックします。
-4.  すべてのエラーを修正した後、Azure サブスクリプション ID を入力するよう要求されます。 LCS 内のこの ID は、**プロジェクト設定** &gt; **Azure コネクタ** で見つけることができます。 Azure サブスクリプション ID を入力し、チェック マークをクリックします。 **ステージング** ページに戻ります。ここではアプリケーションのステージング プロセスを追跡することができます。
-5.  ステージングが完了した場合、**生産** グループで、**生産にプッシュする承認要求** をクリックします。 Microsoft はソリューションやマーケティング文書の検証を開始します。 レビュー中に質問や問題が発生した場合、Microsoft は、会社が提供したエンジニアリングの担当者に問い合わせます。 承認後、ソリューションは Azure マーケットプレースで利用できるようになります。
-
+[![公開方法](./media/CPP_HowtoPublish.png)](./media/CPP_HowtoPublish.png)
 
 <a name="additional-resources"></a>その他のリソース
 --------
 
-[AppSource 向け LCS ソリューション ホームページ](lcs-solutions-app-source.md)
-
-
-
+[AppSource の Dynamics 365 for Finance and Operations アプリを公開](lcs-solutions-app-source.md)
 

@@ -18,16 +18,16 @@ ms.author: tabell
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: ccb32883d074152260eb99fdb04229c45f64e5e6
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 3413dd5ac38dbfe1fd0e5cf7b356b0a1c10147b6
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="upgrade-data-in-development-demo-or-sandbox-environments"></a>開発、デモ、またはサンドボックスの環境でのデータのアップグレード
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 このトピックでは、古いデータベースを最新の Finance and Operations のアプリケーション リリースにアップグレードする方法について説明します。
 
@@ -118,7 +118,9 @@ ms.lasthandoff: 04/20/2018
 
 ## <a name="upgrade-the-database"></a>データベースのアップグレード
 
-1. 配置可能なデータ アップグレード パッケージを、**c:\\Temp** または任意の場所に展開します。 
+1. 配置可能なデータ アップグレード パッケージを、**c:\\Temp** または任意の場所に展開します。
+   > [!NOTE] 
+   > これが LCS に接続されている開発環境であり LCS から直接データ アップグレード プロセスを実行する予定がある場合は、この手順を省略します。
 
 2. アップグレード対象の最新の Finance and Operations の更新プログラムが既に実行されているデモ環境または開発環境に、ソース データベース (アップグレードするデータベース) のバックアップをインポートまたは復元します。 既存のデータベースをそのままにして、新しいデータベースに **imported\_new** という名前を付けます。
 
@@ -139,7 +141,7 @@ ms.lasthandoff: 04/20/2018
 5. **c:\\Temp\\DataUpgrade** フォルダー (展開可能なパッケージを以前に展開した場所) からデータ アップグレード パッケージを実行します。 データ アップグレード パッケージの実行は、ソフトウェア展開可能パッケージのインストールと同様です。 詳細な指示については、[配置可能パッケージのインストール](../deployment/install-deployable-package.md#generate-a-runbook-from-the-topology) を参照してください。 **トポロジから Runbook を生成します** というセクションで開始し、**配置可能パッケージのインストール** セクションの手順を実行します。 
 
 > [!NOTE]
-> 開発環境上のデータベースをアップグレードする場合、**管理 > 適用更新**サービス機能を使用して、LCS 環境ページから直接データ アップグレード パッケージを実行できます。 これは、ユーザーが開発用 VM のローカル管理者である必要はありません。 これは LCS の[2 月](https://blogs.msdn.microsoft.com/lcs/2018/02/13/lcs-february-2018-release-1-release-notes/)リリースから利用可能です。 
+> 開発環境上のデータベースをアップグレードする場合は、代わりに **管理 > 適用更新** サービス機能を使用して、LCS 環境ページから直接データ アップグレード パッケージを実行できます。 これは、ユーザーが開発用 VM のローカル管理者である必要はありません。 これは LCS の[2 月](https://blogs.msdn.microsoft.com/lcs/2018/02/13/lcs-february-2018-release-1-release-notes/)リリースから利用可能です。 
 
 これにより、Finance and Operations のデータベース、小売チャネルのデータベースが更新され、財務報告データベースがリセットされます。
 

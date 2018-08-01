@@ -3,7 +3,7 @@ title: "パフォーマンス SDK および Visual Studio Online を介したマ
 description: "このトピックでは、Performance SDK について説明し、Visual Studio Online を使用してマルチユーザー テストを行う方法を示します。"
 author: jujoh
 manager: AnnBe
-ms.date: 03/19/2018
+ms.date: 07/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,16 +18,16 @@ ms.author: jujoh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: c0a50f3d520754fc5991b5be7a583c7952cbbcdb
+ms.sourcegitcommit: f2e3a40f58b57785079e1940b2d24a3598a3ad1b
+ms.openlocfilehash: a67ba9129c8c6aed252da83d0018358868da97b7
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 07/09/2018
 
 ---
 
 # <a name="performance-sdk-and-multiuser-testing-via-visual-studio-online"></a>パフォーマンス SDK および Visual Studio Online を介したマルチ ユーザー テスト
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 このトピックでは、パフォーマンス ソフトウェア開発キット (SDK) について説明し、Microsoft Visual Studio Online を使用してマルチユーザー テストを実行する方法について説明します。 また、タスク レコーダーで記録したシナリオをシングルユーザー テスト、そしてマルチユーザー テストに変換する方法についても説明します。
 
@@ -38,13 +38,17 @@ ms.lasthandoff: 04/20/2018
 
 - Microsoft Visual Studio 2015 Enterprise
 - 数量データを含むデプロイメント
-- パフォーマンス SDK (環境に応じてドライブ C またはF で **PerfSDK** という名前のフォルダーを探します)。
+- パフォーマンス SDK (SDK は K:\\PerfSDK\\PerfSDKLocalDirectory にある可能性があります。 ただし、環境によっては C:\\PerfSDK にある可能性があります。)
 
 ## <a name="create-a-single-user-c-test-from-an-xml-recording"></a>XML 記録からシングル ユーザー C# テストを作成する
 
-単一ユーザー テストを作成する方法を説明するビデオを表示するには、[[https://mix.office.com/watch/qtdlasy2rcf3](https://mix.office.com/watch/qtdlasy2rcf3)] に移動します。
+<!--To view a video that shows how to create a single-user test, go to [https://mix.office.com/watch/qtdlasy2rcf3](https://mix.office.com/watch/qtdlasy2rcf3).-->
 
-1. タスク レコーダーを使用して、テストするシナリオの記録を作成します。
+1. タスク レコーダーを使用して、テストするシナリオの記録を作成します。 
+
+    > [!IMPORTANT]
+    > 既定のダッシュ ボード ページでレコードが起動しない場合、テストを実行することはできません。
+
 2. Microsoft Visual Studio を管理者として起動し、**PerfSDKSample** プロジェクトをビルドします。 このプロジェクトは **PerfSDK** フォルダーにあります。 プロジェクトを既に構築している場合、この手順を省略します。
 3. **Dynamics 365** &gt; **アドイン** &gt; **記録から C# パフォーマンス テストを作成** を選択します。
 4. **タスクの記録をインポート** ダイアログ ボックスで、必要な詳細を入力し、**インポート**を選択します。
@@ -57,62 +61,60 @@ ms.lasthandoff: 04/20/2018
 
 1. Microsoft Windows のコントロール パネルで、**システムとセキュリティ** &gt; **システム** &gt; **システムの詳細設定**を選択します。 **TestRoot**環境変数が PerfSDK フォルダーのパスに設定されていることを確認します。
 
-    [![TestRoot 環境変数が PerfSDK フォルダに設定](./media/testroot.jpg)](./media/testroot.jpg)
+    [![EnvironmentVariable](./media/EnvironmentVariable.PNG)](./media/EnvironmentVariable.PNG)
 
 2. [http://selenium-release.storage.googleapis.com/index.html?path=2.42/](http://selenium-release.storage.googleapis.com/index.html?path=2.42/) から、**selenium-dotnet-strongnamed-2.42.0.zip** および **IEDriverServer\_Win32\_2.42.0.zip** ファイルをダウンロードします。
-3. ファイルを抽出し、ダイナミック リンク ライブラリ (DLL) を **PerfSDK\\Common\\External\\Selenium** フォルダにコピーします。 プロジェクトに **WebDriver.dll** への参照を追加します。
+3. ファイルを抽出します。 動的リンク ライブラリ (DLL) を、**selenium-dotnet-strongnamed-2.42.0.zip\net40** フォルダから **PerfSDK\\Common\\External\\Selenium** フォルダにコピーします。  **IEDriverServer.exe** を、**IEDriverServer_Win32_2.42.0.zip** から **PerfSDK\\Common\\External\\Selenium** フォルダにもコピーします。
 
     [![PerfSDK\Common\External\Selenium フォルダーにある DLL](./media/perf103d.png)](./media/perf103d.png)
 
-4. 証明書を生成しインストールします。 証明書ファイルを生成するには、管理者として [コマンド プロンプト] ウィンドウを開き、次のコマンドを実行します。
+4. **PerfSDK\\Common\\External\\Selenium** フォルダーの **WebDriver.dll** への参照を、Visual Studio プロジェクトへ追加します。    
+
+5. 証明書を生成しインストールします。 証明書ファイルを生成するには、管理者として [コマンド プロンプト] ウィンドウを開き、次のコマンドを実行します。 プライベート キーのパスワードを要求するメッセージが表示されたら、**なし** を選択します。
 
     ```
-    C:\Program Files (x86)\Windows Kits\8.1\bin\x64>makecert -n "CN=TestAuthCert" -ss My -sr LocalMachine -a sha256 -len 2048 -cy end -r -eku 1.3.6.1.5.5.7.3.2 -sv c:\temp\authcert.pvk c:\temp\authcert.cer
+    "C:\Program Files (x86)\Windows Kits\8.1\bin\x64\makecert" -n "CN=127.0.0.1" -ss Root -sr LocalMachine -a sha256 -len 2048 -cy end -r -eku 1.3.6.1.5.5.7.3.1 -sv c:\temp\authcert.pvk c:\temp\authcert.cer
 
-    C:\Program Files (x86)\Windows Kits\8.1\bin\x64>pvk2pfx -pvk c:\temp\authcert.pvk -spc c:\temp\authcert.cer -pfx c:\temp\authcert.pfx
+    "c:\Program Files (x86)\Windows Kits\8.1\bin\x64\pvk2pfx" -pvk c:\temp\authCert.pvk -spc c:\temp\authcert.cer -pfx c:\temp\authcert.pfx
     ```
 
     これらのコマンドでは次の要素を注意してください。
 
-   - **-n "CN=TestAuthCert"** 証明書に人が判読可能な名前が与えられます。 自分のシナリオに合わせて名前を調整することができます。
-   - **-eku 1.3.6.1.5.5.7.3.2** は、証明書の目的を示します。 この証明書は、コード署名証明書、暗号化証明書、またはその他の種類の証明書ではなく、クライアント認証証明書です。
+    - **-n "CN=127.0.0.1"** 証明書に人が判読可能な名前が与えられます。 この証明書の名前が **127.0.0.1** であることが非常に重要です。 それ以外の場合は、単一ユーザー テストは実行することはできません。
+    - **-eku 1.3.6.1.5.5.7.3.1** は、証明書の目的を示します。 証明書が Secure Sockets Layer (SSL) サーバー証明書として使用できることを示します。
 
-     プライベート キーのパスワードを要求するメッセージが表示されたら、**なし** を選択します。
+    スクリプトの実行が終了した後、**c:\\Temp** で以下のファイルが表示されます。
 
-     次のファイルが表示されます。
+    - authcert.pfx
+    - authcert.cer 
+    - authcert.pvk
 
-   - authcert.pfx
-   - authcert.cer 
-   - authcert.pvk
-
-5. **\*.pfx** 証明書ファイルをインストールします。 それをインストールするときは、**ローカル コンピューター** をかならず選択します。 その後 **PerfSDK** フォルダーにファイルをコピーします。
-6. 管理者として Microsoft Windows PowerShell ウィンドウを開き、次のコマンドを実行してインストールされている証明書拇印を取得します。
+6. **authcert.pfx** および **authcert.cer** 証明書ファイルをインストールします。 これらのファイルをインストールするときは、**ローカル コンピューター**をかならず選択します。 **authcert.pfx** ファイルを **PerfSDK** フォルダにコピーします。
+7. 管理者として Microsoft Windows PowerShell ウィンドウを開き、次のコマンドを実行してインストールされている証明書拇印を取得します。
 
     ```
     cd Cert:\LocalMachine\My
-    Get-ChildItem | Where-Object { $_.Subject -like "CN=TestAuthCert" }
+    Get-ChildItem | Where-Object { $_.Subject -like "CN=127.0.0.1" }
     ```
 
-    [![インストールされている証明書の拇印](./media/get-thumbprint.jpg)](./media/get-thumbprint.jpg)
-
-7. **CloudEnvironment.Config** ファイルで、**SelfSigningCertificateThumbprint** キーの値として拇印を入力します。
+8. **CloudEnvironment.Config** ファイルで、**SelfSigningCertificateThumbprint** キーの値として拇印を入力します。
 
     [![更新された CloudEnvironment.Config ファイル](./media/config-thumbprint.jpg)](./media/config-thumbprint.jpg)
 
-8. **wif.config** ファイルを更新して Application Object Server (AOS) が証明書を信頼できるようにするには、これらの手順に従います。
+9. **wif.config** ファイルを更新して Application Object Server (AOS) が証明書を信頼できるようにするには、これらの手順に従います。
 
     1. Microsoft インターネット インフォメーション サービス (IIS) を起動し、サイトの一覧で **Microsoft Dynamics 365 for Finance and Operations** を見つけます。
     2. **エクスプローラー** を選択して、**wif.config** ファイルを検索します。
 
         [![wif.config ファイル](./media/wifconfig.jpg)](./media/wifconfig.jpg)
 
-    3. 証明書と権限名を入力して、このファイルを更新します。
+    3. **Wif.config** ファイルで、**AxTokenIssuer** という機関を検索します。 この権限の捺印のリストに捺印を追加する必要があります。
 
-        [![更新された wif.config ファイル](./media/wif-updated.jpg)](./media/wif-updated.jpg)
+        [![拇印を AxTokenIssuer の機関一覧に追加](./media/PerfSDKUpdatedWifConfig.PNG)](./media/PerfSDKUpdatedWifConfig.PNG)
 
     4. IIS を再起動します。
 
-9. Visual Studio で、**PerfSDKSample** プロジェクトを開き、**PurchaseReq.cs** ファイルを検索します。 このファイルは、サンプル シングルユーザー テストです。 ファイルで、次の行をコメントアウトします。
+10. Visual Studio で、**PerfSDKSample** プロジェクトを開き、**PurchaseReq.cs** ファイルを検索します。 このファイルは、サンプル シングルユーザー テストです。 ファイルで、次の行をコメントアウトします。
 
     ```
     if (this.TestContext !=null)
@@ -123,14 +125,14 @@ ms.lasthandoff: 04/20/2018
 
     [![PurchaseReq.cs でコメント アウトされた行](./media/perf103e.png)](./media/perf103e.png)
 
-10. 管理者のユーザー名を入力することによって **CloudEnvironment.Config** ファイルを変更します。 次に例を示します。
+11. 管理者のユーザー名を入力することによって **CloudEnvironment.Config** ファイルを変更します。 次に例を示します。
 
     > [!NOTE]
     > **ConfigName** は **DEVFABRIC** に設定する必要があります。 
 
-    [![更新された CloudEnvironment.Config ファイル](./media/perf103f.png)](./media/perf103f.png) 
+    [![変更された CloudEnvironment.Config ファイル](./media/PerfSDKCloudEnvironmentAdminUser.PNG)](./media/PerfSDKCloudEnvironmentAdminUser.PNG) 
 
-11. **CloudEnvironment.Config** ファイルに、エンドポイントを入力します。
+12. **CloudEnvironment.Config** ファイルに、エンドポイントを入力します。
 
     > [!NOTE]
     > 環境をアプリケーション リクエスト ルーティング (ARR) に対して有効にするには、2 つのエンドポイントがあります。 次に例を示します。
@@ -142,13 +144,13 @@ ms.lasthandoff: 04/20/2018
     >
     > [![CloudEnvironment.Config のエンドポイント](./media/perf103upd.png)](./media/perf103upd.png)
 
-12. **テスト** &gt; **テストの設定** を選択し、**既定のプロセッサ アーキテクチャ** を **x64** に設定してソリューションをビルドします。
-13. **テスト** &gt; **Windows** &gt; **テスト エクスプローラー** を選択してテストの一覧を表示します。
+13. **テスト** &gt; **テストの設定** を選択し、**既定のプロセッサ アーキテクチャ** を **x64** に設定してソリューションをビルドします。
+14. **テスト** &gt; **Windows** &gt; **テスト エクスプローラー** を選択してテストの一覧を表示します。
 
     > [!NOTE]
-    > 場合によっては、Visual Studio でテストの一覧が更新されません。 この場合、Visual Studio を再起動して、テスト エクスプローラーを再度開きます。
+    > 場合によっては、タスク記録からテスト スクリプトを作成した後、Visual Studio はテストの一覧を更新しない可能性があります。 この場合、Visual Studio を再起動して、テスト エクスプローラーを再度開きます。
 
-    新しいテストに **TestMethod** という名前が付けられます。 **TestMethod** のメソッド名を変更すると、個々の名前がテストに表示されます。 
+    新しいテストに **TestMethod** という名前が付けられます。 TestMethod のメソッド名を変更すると、個々の名前がテストに表示されます。 
 
 テストを実行できるようになりました。 テストを実行すると、Internet Explorer が起動されて、記録したシナリオが再生されるはずです。
 
@@ -167,26 +169,34 @@ DispatchedClientHelper helper = new DispatchedClientHelper();
 Client = helper.GetClient();
 ```
 
+タスクのインポーターによって生成されたテスト スクリプトには次の明細行と似ている明細行が含まれている場合があります。
+
+```
+UserContextRole _context = new UserContextRole(UserManagement.AdminUser);
+```
+
+ロード テストとして実行される任意のテストからこの明細行を削除します。 このコードはシングル ユーザー テストにのみ必要であり、ロード テストのパフォーマンスに悪影響があります。
+
 タスク記録が行われたときに入力した値がランダム化されていることを確認します。 テスト データを生成するために、データ拡張ツールを最初に使用することが必要な可能性があります。
 
-## <a name="set-up-visual-studio-online-for-multiuser-testing"></a>Visual Studio Online でマルチ ユーザー テストを設定
+## <a name="set-up-visual-studio-team-services-for-multiuser-testing"></a>Visual Studio Team Services でマルチ ユーザー テストを設定
 
-この例では、ユーザーは ProcureToPay.cs ファイルを使用します。 Visual Studio を開始するにサインインする必要があります、[[Visual Studio Online ポータル](https://app.vssps.visualstudio.com/profile/view)] にサインインし、**Visual Studioで開く** を選択する必要があります。
+この例では、ユーザーは ProcureToPay.cs ファイルを使用します。 Visual Studio を開始するには、[Visual Studio Team Services portal ポータル](https://app.vssps.visualstudio.com/profile/view) にサインインし、**Visual Studio で開く**を選択する必要があります。
 
 > [!NOTE]
-> このステップは 1 回のみ完了する必要があります。 Visual Studio Online にサインインした後、設定が保存されます。
+> このステップは 1 回のみ完了する必要があります。 Visual Studio Team Services にサインインした後、設定が保存されます。
 
 [![Visual Studio で開きます](./media/vsonline-5-1024x323.jpg)](./media/vsonline-5.jpg)
 
 1. **PerfSDKSample** プロジェクトを開きます。
-2. <strong>CloudEnvironment.Config</strong> ファイルで、<strong>UserFormat</strong> エントリを更新して、管理者ユーザー URL を反映します。 たとえば、`admin@example.com` に対して、ユーザー形式として <strong>TST\_{0}@example.com</strong> を使用します。 また、<strong>UserCount</strong> 値をパフォーマンス テストに含めるユーザーの数に変更します。
+2. **CloudEnvironment.Config** ファイルで、**UserFormat** エントリを更新して、管理者ユーザー URL を反映します。 たとえば、`admin@example.com` に対して、ユーザー形式として **TST\_{0}@example.com** を使用します。 また、**UserCount** 値をパフォーマンス テストに含めるユーザーの数に変更します。
 
-    [![更新された CloudEnvironment.Config ファイル](./media/vsonline-12.jpg)](./media/vsonline-12.jpg)
+    [![更新された CloudEnvironment.Config ファイル](./media/PerfSDKUserFormatExample.PNG)](./media/PerfSDKUserFormatExample.PNG)
 
-3. **PerfSDK** フォルダーで、次のコマンドを実行して環境のテスト ユーザーを作成します。
+3. 管理者モードでコマンド プロンプトを開き、**PerfSDK** フォルダーに移動します。 次のコマンドを実行して環境のテスト ユーザーを作成します。
 
     ```
-    MS.Dynamics.Performance.CreateUsers.exe
+    MS.Dynamics.Performance.CreateUsers.exe [UserCount] [CompanyCode]
     ```
 
     必要な数のユーザーを作成することができます。 たとえば、次のコマンドは、USMF 会社で 150 人のテスト ユーザーを作成します。
@@ -199,19 +209,19 @@ Client = helper.GetClient();
 
 ### <a name="test-the-sandbox-environment"></a>サンドボックス環境をテスト
 
-ここまでは、これらの手順で、AOS マシンも開発マシンである開発者トポロジを使用していることを前提としています。  Visual Studio Online で負荷テストを実行するためには、サンドボックス環境をテストする必要があります。  サンドボックスと負荷テストを実行しているコンピューターとの間の信頼関係を確立するために、完了する必要がある追加ステップがいくつかあります。  負荷テストを実行しているコンピューターは、開発マシンでも、Visual Studio Online で作成したテスト エージェントでもかまいません。
+ここまでは、手順で、AOS マシンが開発マシンでもある開発者トポロジを使用していることを前提としていました。 Visual Studio Team Services でロード テストを実行するには、テスト環境がサンドボックス環境である必要があります。 サンドボックス環境と負荷テストを実行するコンピューター間の信頼関係を確立するには、いくつかの追加手順を完了する必要があります。 負荷テストを実行するコンピューターは、開発マシンまたは Visual Studio Online で作成されたテスト エージェントのいずれかです。
 
 1. サンドボックス AOS マシンへのリモート デスクトップ の接続を確立し、**.cer** ファイルを上書きします。 ファイルをダブルクリックして、インストールします。 証明書ストアの入力を要求するメッセージが表示されたら、**個人** を選択します。
-2. IIS を起動し、サイトの一覧で **AOSService** を見つけます。 その後、**エクスプローラー** を選択して、**wif.config** ファイルを検索します。 証明書と権限名を入力して、このファイルを更新します。 (以前に生成した証明書の値を使用します。)
+2. IIS を起動し、サイトの一覧で **AOSService** を見つけます。 その後、**エクスプローラー** を選択して、**wif.config** ファイルを検索します。 **Wif.config** ファイルで、**AxTokenIssuer** という機関を検索します。 この権限の捺印のリストに捺印を追加する必要があります。 (以前に生成した証明書の値を使用します。)
 
-    [![更新された wif.config ファイル](./media/wif-updated.jpg)](./media/wif-updated.jpg)
+    [![拇印を AxTokenIssuer の機関一覧に追加](./media/PerfSDKUpdatedWifConfig.PNG)](./media/PerfSDKUpdatedWifConfig.PNG)
 
 3. IIS を再起動します。
 
 トポロジに対してパフォーマンス テストを実行することができるようになりました。
 
 > [!NOTE]
-> トポロジに複数の AOS マシンがある場合、証明書をインストールして、それぞれの wif.config ファイルを更新する必要があります。
+> トポロジに複数の AOS マシンがある場合、証明書をインストールして、各 AOS マシンの wif.config ファイルを更新する必要があります。
 
 ## <a name="run-the-performance-test"></a>パフォーマンス テストの実行
 
@@ -225,45 +235,45 @@ Client = helper.GetClient();
     } 
     Environment.SetEnvironmentVariable("testroot", testroot);
     ```
-2. 次のインストーラー ファイルは、PerfSDK ディレクトリにある **Visual Studio Online** フォルダーにダウンロードして配置する必要があります。
-    - Visual Studio 2015 用 Visual C++ 再頒布可能パッケージ: https://www.microsoft.com/en-us/download/details.aspx?id=48145
-    - SQL Server の Microsoft ODBC ドライバー 13 (64 ビット バージョン msi を選択): https://www.microsoft.com/en-us/download/details.aspx?id=50420
 
-3. **setup.cmd** のコンテンツにある、**Visual Studio Online** フォルダーを変更し、次と一致させます:
+2. [https://www.microsoft.com/en-us/download/details.aspx?id=50420](https://www.microsoft.com/en-us/download/details.aspx?id=50420)から、SQL サーバーの Microsoft ODBC ドライバー 13 のインストーラー (MSI) ファイルをダウンロードします。 (64 ビット バージョンの .msi ファイルを選択します。) ファイルを **PerfSDK** ディレクトリの **Visual Studio Online** フォルダーに配置します。
+3. **Visual Studio Online** フォルダで **setup.cmd** ファイルの内容を変更し、次のコードと一致するようにします。
 
-        setx testroot "%DeploymentDirectory%"
-        ECHO Installing D365 prerequisites
-        ECHO MSIEXEC /a %DeploymentDirectory%\msodbcsql /passive /norestart IACCEPTMSODBCSQLLICENSETERMS=YES
-        MSIEXEC /a %DeploymentDirectory%\msodbcsql /passive /norestart IACCEPTMSODBCSQLLICENSETERMS=YES
-        ECHO %DeploymentDirectory%\vc_redist.x64.exe /install /passive /norestart
-        %DeploymentDirectory%\vc_redist.x64.exe /install /passive /norestart
-        %windir%\sysnative\windowspowershell\v1.0\powershell.exe -File %DeploymentDirectory%\install-wif.ps1
-        Md %DeploymentDirectory%\Common\Team\Foundation\Performance\Framework
-        %DeploymentDirectory%\CloudCtuFakeACSInstall.cmd %DeploymentDirectory%\authcert.pfx
-    
-4. **CloudCtuFakeACSInstall.cmd** の内容を変更して、**インポート** コマンドに **'パスワード'** の代わりに空の文字列が入るようにします。  スクリプトの 3 行目は次のようになります。
+    ```
+    setx testroot "%DeploymentDirectory%"
+    ECHO Installing D365 prerequisites
+    ECHO MSIEXEC /a %DeploymentDirectory%\msodbcsql /passive /norestart IACCEPTMSODBCSQLLICENSETERMS=YES
+    MSIEXEC /a %DeploymentDirectory%\msodbcsql /passive /norestart IACCEPTMSODBCSQLLICENSETERMS=YES
+    %windir%\sysnative\windowspowershell\v1.0\powershell.exe -File %DeploymentDirectory%\install-wif.ps1
+    Md %DeploymentDirectory%\Common\Team\Foundation\Performance\Framework
+    %DeploymentDirectory%\CloudCtuFakeACSInstall.cmd %DeploymentDirectory%\authcert.pfx
+    ```
 
+4. **CloudCtuFakeACSInstall.cmd** ファイルの内容を変更して、**インポート**コマンドに **'パスワード'** の代わりに空の文字列が入るようにします。 スクリプトの 3 行目は、次の行に似ているはずです。
+
+    ```
     set MyStoreInstallCmd= .... $pfxcert.Import('%TestCertPath%', '', 'Exportable,PersistKeySet')....
+    ```
 
 5. ソリューション ファイルで、テストの設定を変更する **vsonline.testsettings** ファイルをダブルクリックします。
 6. **テストの設定**ダイアログ ボックスの**配置**タブで、次の設定を使用します。
 
-   - **展開の有効化** チェック ボックスをオンにします。
-   - **配置する追加のファイルやディレクトリ** フィールドで、以下のファイルが表示されていることを確認します。
+    - **展開の有効化** チェック ボックスをオンにします。
+    - **配置する追加のファイルやディレクトリ** フィールドで、以下のファイルおよびディレクトリが表示されていることを確認します。
 
-     - &lt;ソリューション ディレクトリ&gt;\\PerfSDKSample\\bin\\デバッグ\\
-     - C:\\PerfSDK\\CloudEnvironment.Config
-     - C:\\PerfSDK\\authcert.pfx
-     - C:\\PerfSDK\\MS.Dynamics.Test.Team.Foundation.WebClient.InteractionService.dll.config
-     - C:\\PerfSDK\\Visual Studio Online\\
+        - &lt;ソリューション ディレクトリ&gt;\\PerfSDKSample\\bin\\デバッグ\\
+        - C:\\PerfSDK\\CloudEnvironment.Config
+        - C:\\PerfSDK\\authcert.pfx
+        - C:\\PerfSDK\\MS.Dynamics.Test.Team.Foundation.WebClient.InteractionService.dll.config
+        - C:\\PerfSDK\\Visual Studio Online\\
 
-       > [!NOTE]
-       > PerfSDK フォルダーが異なっている場合があります。
-        
-7. **テストの設定**ダイアログ ボックスの**スクリプトの設定とクリーンアップ** タブで、PerfSDK ディレクトリ内の **Visual Studio Online** フォルダーにある **setup.cmd** を選択します。
+        [![フィールドを配置するための追加ファイルおよびディレクトリ](./media/PerfSDKOnlineTestSettings.PNG)](./media/PerfSDKOnlineTestSettings.PNG)
 
-8. **テストの設定**ダイアログ ボックスの**追加設定**タブで、**64 ビット コンピューターで 64 ビット プロセスのテストを実行**を選択します。
+        > [!NOTE]
+        > PerfSDK フォルダーが異なっている場合があります。
 
+7. **スクリプトの設定とクリーンアップ**タブで、**PerfSDK** ディレクトリ内の **Visual Studio Online** フォルダーにある **setup.cmd** ファイルを選択します。
+8. **追加設定**タブで、**64 ビット コンピューターで 64 ビット プロセスのテストを実行**を選択します。
 9. テストを実行するには、**SampleLoadTest.loadtest** ファイルを開き、**負荷テストを実行** を選択します。
 
     [![負荷テストの実行](./media/perf103u.png)](./media/perf103u.png)
@@ -274,22 +284,35 @@ Client = helper.GetClient();
 
 10. テスト コント ローラーとテスト シナリオのさまざまな指標を表示するには、**グラフ** ビューに切り替えます。
 
-     [![グラフ 表示](./media/perf103w.png)](./media/perf103w.png)
+    [![グラフ 表示](./media/perf103w.png)](./media/perf103w.png)
 
-     > [!NOTE]
-     > テストの実行中、システムに関する情報はこのビューで利用することができません。 この情報にアクセスするには、Microsoft Dynamics Lifecycle Services (LCS) を使用して、AOS マシンの CPU およびメモリ使用量を監視する必要があります。 または、AOS マシンに直接 perfmon を設定して、Microsoft Azure ポータルを設定し、Microsoft SQL Server データベース トランザクションの単位 (DTU) の使用を監視することができます。
+    > [!NOTE]
+    > テストの実行中、システムに関する情報はこのビューで利用することができません。 この情報にアクセスするには、Microsoft Dynamics Lifecycle Services (LCS) を使用して、AOS マシンの CPU およびメモリ使用量を監視する必要があります。 または、AOS マシンに直接 perfmon を設定して、Microsoft Azure ポータルを設定し、Microsoft SQL Server データベース トランザクションの単位 (DTU) の使用を監視することができます。
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 
+### <a name="no-client-was-opened-in-the-time-out-period"></a>タイムアウト期間中クライアントが開かれていません
+この問題はシングル ユーザー テストにのみ影響します。 テストが実行されているとき、Web クライアントを開きますが、Web サイトが読み込まれることはありません。 代わりに、白い画面を持つ空の Web クライアントがある場合、ページの上部で次のメッセージが表示されます: 「これは WebDriver サーバーの初期開始ページです。」 テストは最終的にタイム アウトおよび失敗し、エラー メッセージが表示されます。
+
+#### <a name="error-example"></a>エラーの例
+
+```
+Initialization method <Test class name>.TestSetup threw exception. System.TimeoutException: System.TimeoutException: No client was opened in the timeout period.
+```
+
+#### <a name="solution"></a>ソリューション
+このトピックの「パフォーマンス SDK を使用してシングル ユーザー パフォーマンス テストを実行する」セクションの、手順 4 から 8 を実行します。 そのセクションでは、このタイプのテストの正しい証明書を作成する方法について説明します。 証明書のサムプリントを wif.config ファイルに追加する方法についても説明します。
+
 ### <a name="zoom-factor"></a>ズーム係数
 
-この問題はシングルユーザー テストにのみ影響します。 
+この問題はシングル ユーザー テストにのみ影響します。 
 
 #### <a name="error-example"></a>エラーの例
 
 ```
 Initialization method <Test class name>.TestSetup threw exception. System.InvalidOperationException: System.InvalidOperationException: Unexpected error launching Internet Explorer. Browser zoom level was set to 200%. It should be set to 100% (NoSuchDriver).
 ```
+
 #### <a name="solution"></a>ソリューション
 
 Internet Explorer で、次のレジストリ キーを変更することにより、ズーム係数を 100% に変更できます。
@@ -298,7 +321,7 @@ Internet Explorer で、次のレジストリ キーを変更することによ�
 - コンピュータ\\HKEY\_現在\_ユーザー\\ソフトウェア\\Microsoft\\Internet Explorer\\ズーム\\ResetZoomOnStartup2 = 0
 - コンピュータ\\HKEY\_現在\_ユーザー\\ソフトウェア\\Microsoft\\Internet Explorer\\ズーム\\Zoomfactor = 80000
  
-使用されているローカル コンピューターのバージョンによっては、リモート デスクトップ プロトコル (RDP) セッションを開始する前に、**テキスト、アプリ、その他のアイテムのサイズを変更**を選択する必要があります。 このフィールドは、Microsoft Windows の**表示設定**で使用できます。 
+使用されているローカル コンピューターのバージョンによっては、リモート デスクトップ プロトコル (RDP) セッションを開始する前に、**テキスト、アプリ、その他のアイテムのサイズを変更**を選択する必要があります。 このフィールドは、Windows の**表示設定**で使用できます。 
  
 これらの手順が機能しない場合は、Internet Explorer での既定のズーム レベルが 100 % になるよう、RDP セッションを開始する前に、リモート デスクトップのサイズを変更するようにします。
 
@@ -318,7 +341,7 @@ Failed finding the certificate for minting tokens by thumbprint: b4f01d2fc427181
 
 次のいくつかの理由でエラー メッセージを受け取る可能性があります。
 
-- CloudEnvironment.Config および wif.config ファイルにコピーした証明書の拇印には、非表示の Unicode 文字が含まれています。 拇印に非表示の Unicode 文字が含まれているかどうかを確認するには、Unicode コード コンバータに貼り付けて、**HTML/XML** フィールドに余分な文字が表示されているかどうかを確認します。 たとえば、次の Unicode コンバーターを使用する場合があります: https://r12a.github.io/apps/conversion/
+- CloudEnvironment.Config および wif.config ファイルにコピーした証明書の拇印には、非表示の Unicode 文字が含まれています。 拇印に非表示の Unicode 文字が含まれているかどうかを確認するには、Unicode コード コンバータに貼り付けて、**HTML/XML** フィールドに余分な文字が表示されているかどうかを確認します。 たとえば、[https://r12a.github.io/apps/conversion/](https://r12a.github.io/apps/conversion/) で使用可能な Unicode コンバーターを使用できます。
 
     ![Unicode コードの変換](./media/sdk_unicode_code_converter.jpg)
  
@@ -356,9 +379,9 @@ CloudEnvironment.Config ファイルで、次のキーによって指定され�
 - &lt;ExecutionConfigurations キー ="HostName" 値 ="&lt;ホストの Web アドレス&gt;" /&gt;
 - &lt;ExecutionConfigurations キー ="SoapHostName" 値 ="&lt;SOAP の Web アドレス&gt;" /&gt;
 
-これらのキーで指定された Web アドレスは、テスト実施中の環境である必要があります。 開発者マシンから Web ブラウザーの **HostName** キーによって指定された Web アドレスを開けることを確認します。
+これらのキーで指定された Web アドレスは、テスト実施中の環境である必要があります。 開発者マシンの Web ブラウザで、**HostName** キーによって指定された Web アドレスを開けれることを確認します。
 
-オンライン ロード テストについては、CloudEnvironment.Config ファイルの **HostName** フィールドで指定されている環境は、任意のマシンから公共的にアクセスできる必要があります。 したがって、ワンボックス環境の外部でエンドポイントにアクセスできないため、Visual Studio Online を使用して負荷テストを実行し、ワンボックス環境をテストすることはできません。
+オンライン負荷テストでは、CloudEnvironment.Config ファイルの **HostName** キーで指定された環境に、どのマシンからも公にアクセスできる必要があります。 したがって、1 ボックス環境をテストする必要がある場合、Visual Studio Online を使用して負荷テストを実行することはできません。これは、エンドポイントが 1 ボックス環境の外部にアクセスできないためです。
 
 ### <a name="users-cant-be-enumerated"></a>ユーザーを列挙できません
 
@@ -372,14 +395,15 @@ System.TypeInitializationException: The type initializer for 'MS.Dynamics.TestTo
 
 #### <a name="solution"></a>ソリューション
 
-このエラーを引き起こす可能性のあるシナリオは 2 つあります。
-- **SelfMintingAdminUser** として指定されたユーザーは、システム管理者ロールのメンバーである必要があります。 この問題は、**SelfMintingAdminUser** がシステム管理者の役割が割り当てられていないユーザーである場合に発生します。 適切なユーザーが指定されていることを確認するには、エンドポイントにサインインし、ユーザーのロールを表示します。
+2 つのシナリオで、このエラーが発生することがあります。
 
-![管理者ユーザー](./media/sdk_admin.png)
+- CloudEnvironment.config ファイルで **SelfMintingAdminUser** として指定されたユーザーはシステム管理者ロールを持っている必要があります。 この問題は、**SelfMintingAdminUser** として指定されたユーザーにシステム管理者の役割が割り当てられていない場合に発生します。 適切なユーザーが指定されていることを確認するには、エンドポイントにサインインし、ユーザーのロールを表示します。
 
-- <strong>SelfMintingAdminUser</strong> として指定されたユーザーは、「<https://sts.windows-ppe.net/>」または「<https://sts.windows.net/>」以外のプロバイダーを持ちます。 場合によっては、管理者ユーザーはプロバイダ フィールドに会社固有のドメインを含めます。 この問題を回避するには、任意の名前と電子メールで AX ユーザーを作成します。 この新しいユーザーをシステム管理者ロールに割り当てます。  このユーザーを実在の Azure Active Directory ユーザーにリンクする必要はありません。 CloudEnvironment.config で、この新しい管理者ユーザーを <strong>SelfMintingAdminUser</strong> として指定します。
+    ![管理者ユーザー](./media/sdk_admin.png)
 
-### <a name="request-was-forbidden-with-client-authentication-scheme-anonymous"></a>クライアント認証方式 "Anonymous" によって要求が禁止されました
+- CloudEnvironment.config ファイルで **SelfMintingAdminUser** として指定されたユーザーは、`"<https://sts.windows-ppe.net/>"` または `"<https://sts.windows.net/>"` 以外の**プロバイダー**を持ちます。 場合によっては、管理者ユーザーの**プロバイダ**フィールドに会社固有のドメインを含めます。 この問題を回避するには、Finance and Operations で、任意の名前と電子メール アドレスを持つユーザーを作成します。 システム管理者ロールを新しいユーザーに割り当てます。 ユーザーを実在の Azure Active Directory ユーザーにリンクする必要はありません。 CloudEnvironment.config ファイルで、この新しい管理者ユーザーを **SelfMintingAdminUser** として指定します。
+
+### <a name="the-http-request-was-forbidden-with-client-authentication-scheme-anonymous"></a>クライアント認証方式「Anonymous」によって HTTP 要求が禁止されました
 
 #### <a name="error-example"></a>エラーの例
 
@@ -389,9 +413,27 @@ Initialization method <Test class name>.TestSetup threw exception. System.Servic
 
 #### <a name="solution"></a>ソリューション
 
-この問題は、CloudEnvironment.Config ファイルの **UserCount** フィールドで指定したユーザー数が、MS.Dynamics.Performance.CreateUsers.exe を実行して作成したテスト ユーザーの数を超えた場合に発生する可能性があります。 CloudEnvironment.Config ファイルで要求する数を超えるテスト ユーザーを作成したことを確認します。
+既知の 2 つのシナリオでは、このエラーが発生することがあります。
+
+- テスト ユーザーは、引数なしで MS.Dynamics.Performance.CreateUsers.exe を実行して作成されます。 次に例を示します。
+
+    ```
+    MS.Dynamics.Performance.CreateUsers.exe
+    ```
+
+    CreateUsers スクリプトを引数なしで実行すると、作成されたテスト ユーザーの電子メール アドレスは正しくフォーマットされません。 これらのユーザーを使用してテストを実行すると、テストは禁止された要求のエラーを生成します。 このシナリオがエラーの原因であることを確認するには、Microsoft Dynamics 365 for Finance and Operations でユーザーを表示します テスト ユーザーの正しくない電子メール アドレスは、次の図の電子メール アドレスに類似します。
+
+    [![電子メール アドレスの設定が正しくない](./media/PerfSDKBadUserFormat.PNG)](./media/PerfSDKBadUserFormat.PNG)
+
+    問題を解決するには、電子メール アドレスの書式設定が誤っているテスト ユーザーを削除します。 CreateUsers スクリプトを再実行し、次のようにしてユーザー数および会社を指定します。
+
+    ```
+    MS.Dynamics.Performance.CreateUsers.exe [UserCount] [CompanyCode]
+    ```
+
+- CloudEnvironment.Config ファイルの **UserCount** フィールドで指定したユーザー数が、MS.Dynamics.Performance.CreateUsers.exe を実行して作成したテスト ユーザーの数を超えます。 少なくとも CloudEnvironment.Config ファイルで要求するテスト ユーザーをできる限り多く作成したことを確認します。
  
-![クラウド環境のコンフィギュレーション](./media/cloud-env-config.png)
+    ![クラウド環境のコンフィギュレーション](./media/cloud-env-config.png)
 
 ### <a name="at-least-one-security-token-in-the-message-could-not-be-validated"></a>メッセージ内の少なくとも 1 つのセキュリティ トークンを検証できませんでした
 
@@ -407,8 +449,8 @@ System.TypeInitializationException: The type initializer for 'MS.Dynamics.TestTo
 
 この問題は、AOS エンドポイントが作成した証明書の拇印を検証できない場合に発生します。 2 つの原因が考えられます。
 
-- 証明書が AOS マシンにインストールされていません。 問題を解決するには、このトピックで以前に作成した .cer ファイルをコピーして、AOS マシンにインストールします。
-- 証明書のサムプリントは、AOS マシンの wif.config ファイルに追加されませんでした。 問題を解決するには、wif.config ファイルに証明書を追加する方法の詳細について、[Performance SDK を使用してシングル ユーザーのパフォーマン ステストを実行する] の手順 8 を参照してください。 wif.config ファイルを変更した後は、必ず IIS を再起動してください。
+- 証明書が AOS マシンにインストールされていません。 問題を解決するには、このトピックで以前に作成した .cer ファイルを AOS マシンにコピーして、インストールします。
+- 証明書のサムプリントは、AOS マシンの wif.config ファイルに追加されませんでした。 問題を解決するには、wif.config ファイルに証明書を追加する方法について、「パフォーマンス SDK を使用してシングル ユーザーのパフォーマンス テストを実行する」の手順 8 を参照してください。 wif.config ファイルを変更した後は、必ず IIS を再起動してください。
  
 ### <a name="msdynamicstestteamfoundationwebclientinteractionservicedllconfig-is-missing-from-the-deployment-items"></a>MS.Dynamics.Test.Team.Foundation.WebClient.InteractionService.dll.config が配置項目から不足しています
 
@@ -428,7 +470,8 @@ System.TypeInitializationException: The type initializer for 'MS.Dynamics.TestTo
 
 ファイルが欠落している場合は、テストの設定で配置項目に追加します。
  
-非常に似た名前を持つ 2 つのファイルがあることに注意してください。 1 つのファイルの名前は、**\*.dll** で終わり、もう 1 つのファイルの名前は、**\*.dll.config** で終わります。**\*.dll.config** ファイルは、テスト設定の配置項目に含まれている必要があります。
+> [!IMPORTANT]
+> 非常に似た名前を持つ 2 つのファイルがあります。 1 つのファイルの名前は、**\*.dll** で終わり、もう 1 つのファイルの名前は、**\*.dll.config** で終わります。**\*.dll.config** ファイルは、テスト設定の配置項目に含まれている必要があります。
  
 ### <a name="cloudenvironmentconfig-is-missing-from-the-deployment-items"></a>CloudEnvironment.Config が配置項目で見つかりません
 
@@ -451,7 +494,7 @@ System.TypeInitializationException: System.TypeInitializationException: The type
 
 ![テスト設定](./media/test-settings.png)
 
-### <a name="interactiveclientid-wasnt-specified-in-the-settings"></a>InteractiveClientID は設定で指定されていませんでした
+### <a name="interactiveclientid-wasnt-specified-in-the-settings"></a>InteractiveClientId は設定で指定されていませんでした
 
 #### <a name="error-example"></a>エラーの例
 
@@ -462,7 +505,7 @@ Microsoft.CE.VaultSDK.SecretProviderException: InteractiveClientId was not speci
 
 #### <a name="solution"></a>ソリューション
 
-この問題は、**SelfSigningCertificateThumbprint** フィールドが CloudEnvironment.Config ファイルに空白のままになっている場合に発生します。 CloudEnvironment.Config ファイルで、作成してインストールした証明書の拇印を次の行に貼り付けます。
+この問題は、**SelfSigningCertificateThumbprint** フィールドが CloudEnvironment.Config ファイルに空白のままになっている場合に発生します。 CloudEnvironment.Config ファイルで、次の行を検索し、作成してインストールした証明書の拇印に貼り付けます。
 
 ```
 <ExecutionConfigurations Key="SelfSigningCertificateThumbprint" Value="" />
@@ -508,5 +551,5 @@ System.TypeInitializationException: The type initializer for 'MS.Dynamics.TestTo
 
 #### <a name="solution"></a>ソリューション
 
-この問題を解決する修正プログラムがあります。 KB 番号は 4095640 です。
+この問題を解決する修正プログラムが利用可能です。 Microsoft サポート技術情報 (KB) 番号は 4095640 です。
 

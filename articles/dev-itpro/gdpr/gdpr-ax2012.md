@@ -3,7 +3,7 @@ title: "Microsoft Dynamics AX 2012 を使用して個人データ要求に対応
 description: "このトピックは、Microsoft Dynamics AX 2012 を使用する企業、実装パートナー、および独立系ソフトウェア ベンダー (ISV) が、EUデータ保護規則 (GDPR) の下にある個人データに関する、データ主体からの要求に適合するのに役立つことができます。"
 author: ryanc
 manager: AnnBe
-ms.date: 12/31/2017
+ms.date: 07/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,10 +17,10 @@ ms.author: ryanc
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 0f374776b5497d7687d9d4f72053b0f1f86d43cd
+ms.sourcegitcommit: f2e3a40f58b57785079e1940b2d24a3598a3ad1b
+ms.openlocfilehash: 08af1e8565f8bb794be976cc680287dd737ab234
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 07/09/2018
 
 ---
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 04/20/2018
 
 [!include [banner](../includes/banner.md)]
 
-このトピックは、Microsoft Dynamics AX 2012 を使用する企業、実装パートナー、および独立系ソフトウェア ベンダー (ISV) が、EUデータ保護規則 (GDPR) の下にある個人データに関する、データ主体からの要求に適合するのに役立つことができます。 GDPR および Microsoft が提供する関連するリソースの詳細については、[Microsoft Dynamics 365 for Finance and Operation の GDPR に関するガイド](./gdpr-guide.md) を参照してください。 そのトピックは Microsoft Dynamics 365 for Finance and Operations のために書かれたものですが、Dynamics AX 2012 を使用している組織に GDPR の下でデータ主体の権利が適用されます。 組織が個人データの要求に応答する際に使用する可能性がある、Finance and Operations の GDPR に関するガイドに記載されている手順は、Dynamics AX 2012 を使用している組織には適していますが、Dynamics AX 2012 では人物検索レポートを利用できません。 このトピックでは、Dynamics AX 2012 に固有の追加項目を一覧表示します。 
+このトピックは、Microsoft Dynamics AX 2012 を使用する企業、実装パートナー、および独立系ソフトウェア ベンダー (ISV) が、EUデータ保護規則 (GDPR) の下にある個人データに関する、データ主体からの要求に適合するのに役立つことができます。 GDPR および Microsoft が提供する関連するリソースの詳細については、[Microsoft Dynamics 365 for Finance and Operation の GDPR に関するガイド](./gdpr-guide.md) を参照してください。 「GDPR for Finance and Operation へのガイド」は、 Microsoft Dynamics 365 for Finance and Operations のために書かれたものですが、Dynamics AX 2012 を使用している組織に GDPR の下でデータ主体の権利が適用されます。 「Finance and Operations の GDPR に関するガイド」に記載されている手順は、個人データの要求に応答する組織により使用され、Dynamics AX 2012 を使用する組織にも適していますが、Dynamics AX 2012 では**人物検索**レポートを利用できません。 このトピックでは、Dynamics AX 2012 に固有の追加項目を一覧表示します。 
 
 ## <a name="applicable-product-updates-for-dynamics-ax-2012"></a>Dynamics AX 2012 の適用製品更新プログラム
 

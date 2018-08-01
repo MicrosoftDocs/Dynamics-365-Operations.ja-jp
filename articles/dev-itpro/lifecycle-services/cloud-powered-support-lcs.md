@@ -18,10 +18,10 @@ ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: e1823db0f304686c01ab3247c681690414c5e7bd
+ms.sourcegitcommit: ede022d4813cf3c64a1293d4394d655d15293add
+ms.openlocfilehash: 11f9fd0ced60d6860b6edbda60e9654377b3aa63
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 06/15/2018
 
 ---
 
@@ -89,6 +89,11 @@ ms.lasthandoff: 04/20/2018
    
 2. **サポート計画の管理**ページで、**契約の追加**をクリックし、**アクセス ID** および**パスワード/契約 ID** を入力します。
    ![契約の追加](media/SupportAddPlans.png) 
+   
+### <a name="remove-a-premier-support-plan"></a>プレミア サポート計画の削除 
+1 つ以上の契約からプレミア サポート計画を削除する必要がある場合は、プレミア ポータルを使用して削除することができます。
+1. [プレミア ポータル](https://support.microsoft.com/en-us/premier/access) にログインします。
+2. **関連付けられているアクセス ID** から削除する契約を選択し、**削除**します。 
    
    
 ## <a name="report-production-outage"></a>稼働停止のレポート

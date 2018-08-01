@@ -18,16 +18,16 @@ ms.author: chwolf
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: f582db3229e24b941c13d89758180061f98b1dc0
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: c0ecaa51ac75b83acced17cec0b5974fd6afa51e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="performance-timer"></a>パフォーマンス タイマー
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 このトピックでは、パフォーマンス タイマーの概要を示します。このタイマーは、システムのパフォーマンスが低下する原因を特定するのに役立つツールです。 
 
@@ -50,7 +50,9 @@ ms.lasthandoff: 04/20/2018
 
 [![3\_タイマー](./media/3_timer.png)](./media/3_timer.png) 
 
-この情報は、トレースする内容とトラブルシューティングの開始場所の理解に役立ちます。 このトピックに加えて、詳細についてはこのビデオをご覧いただけます: [PERF パフォーマンス タイマーおよびその他のツール](https://mix.office.com/watch/ij5cqidra5q3)
+この情報は、トレースする内容とトラブルシューティングの開始場所の理解に役立ちます。 
+
+<!--In addition to this topic, you can watch this video for more information: [PERF The Performance Timer and Other Tools](https://mix.office.com/watch/ij5cqidra5q3)-->
 
 
 

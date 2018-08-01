@@ -18,10 +18,10 @@ ms.author: ivanv
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 4
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 8a0ecb9c6d7df5848bd6f489383be100adf69941
+ms.sourcegitcommit: 03bab1d03be71c0e23a6ea93f542d6a52a212a1f
+ms.openlocfilehash: 0ad88bf2d7b58824e00e1db889dce4da9831192b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 06/25/2018
 
 ---
 
@@ -39,13 +39,6 @@ ms.lasthandoff: 04/20/2018
 [ExtensionOf(tableStr(InventTable))]
 final class MyInventTable_Extension
 {
-    [DataEventHandler(tableStr(InventTable), DataEventType::Inserting)]
-    public static void InventTable_onInserting(Common sender, DataEventArgs e)
-    {
-        InventTable inventTable = sender as InventTable;
-        // Call the method as if it was defined directly on InventTable.
-        inventTable.defaultMyInventLocationId();
-    }
     public void defaultMyInventLocationId()
     {
         // This would have partner specific logic to initialize the new field.
@@ -62,6 +55,22 @@ final class MyInventTable_Extension
 + **\_拡張子**で接尾辞を付ける必要があります。
 + **[ExtensionOf()]** 属性で装飾されている必要があります。
 
+たとえば、イベント ハンドラーから新しいメソッドを使用できるようになります。
+
+```
+class MyInventTable_EventHandler
+{
+    [DataEventHandler(tableStr(InventTable), DataEventType::Inserting)]
+    public static void InventTable_onInserting(Common sender, DataEventArgs e)
+    {
+        InventTable inventTable = sender as InventTable;
+        // Call the method as if it was defined directly on InventTable.
+        inventTable.defaultMyInventLocationId();
+    }
+}
+
+```
+
 > [!NOTE]
-> この例では、データ イベント処理メソッドも強化クラスで定義されます。 実際の実装では、データ イベント処理メソッドを、InventTable テーブルのイベント ハンドラーを含む別のクラスに移動する場合があります。
+> イベント ハンドラー クラスには任意の数のイベントのハンドラーが含まれるのが一般的です。 ただし、イベント ハンドラーを拡張クラスに入れるのは、良い方法では**ありません**。 そうすることで、イベント ハンドラー メソッドが拡張されたタイプのメソッドとして使用可能となります。 これは、イベント ハンドラーが、その型のメソッドとして明示的にではなく、イベントを通じて呼び出されることを意図しているので正しくありません。
 

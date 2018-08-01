@@ -3,7 +3,7 @@ title: "Dynamics 365 Finance and Operations 環境に最新のプラットフォ
 description: "ここでは、Microsoft Dynamics 365 for Finance and Operations Enterprise Edition 環境に最新のプラットフォーム リリースを適用する方法について説明します。"
 author: tariqbell
 manager: AnnBe
-ms.date: 03/06/2018
+ms.date: 07/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: tabell
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 9ae6c70d043297af26cd27ec2337e006999b6095
+ms.sourcegitcommit: f2e3a40f58b57785079e1940b2d24a3598a3ad1b
+ms.openlocfilehash: 5c43f7b8fea55289d5845c132dc78c83b16766dd
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 07/09/2018
 
 ---
 
@@ -108,29 +108,30 @@ LCS で、環境ページから最新のプラットフォーム更新パッケ�
 
 #### <a name="example"></a>例
 
-```AXUpdateInstaller.exe generate -runbookid="OneBoxDev" -topologyfile="DefaultTopologyData.xml" -servicemodelfile="DefaultServiceModelData.xml" -runbookfile="OneBoxDev-runbook.xml"
+```
+AXUpdateInstaller.exe generate -runbookid="OneBoxDev" -topologyfile="DefaultTopologyData.xml" -servicemodelfile="DefaultServiceModelData.xml" -runbookfile="OneBoxDev-runbook.xml"
 
     AXUpdateInstaller.exe import -runbookfile=OneBoxDev-runbook.xml
 
     AXUpdateInstaller.exe execute -runbookid=OneBoxDev
 ```
 
-### Install the Visual Studio development tools (Platform update 3 or earlier)
+### <a name="install-the-visual-studio-development-tools-platform-update-3-or-earlier"></a>Visual Studio 開発ツール (プラットフォーム更新プログラム 3 またはそれ以前) をインストールします
 
 > [!NOTE]
-> Skip this section if you are updating to platform update 4 or later, development tools are automatically installed as part of installing the deployable package.
+> プラットフォーム更新プログラム 4 またはそれ以降を更新する場合はこのセクションをスキップすると、開発ツールは配置可能パッケージのインストールの一部として自動的にインストールされます。
 
-Update the Visual Studio development tools as described in [Updating the Visual Studio development tools](../dev-tools/update-development-tools.md).
+[Visual Studio 開発ツールの更新](../dev-tools/update-development-tools.md)の説明に従って、Visual Studio 開発ツールを更新します。
 
-### Regenerate form adaptor models
+### <a name="regenerate-form-adaptor-models"></a>フォーム アダプタ モデルの再生成
 
-Form adaptor models are required for test automation. Regenerate the platform form adaptor models, based on the newly updated platform models. Use the xppfagen.exe tool to generate the form adaptor models. This tool is located in the package's bin folder (typically, j:\\AosService\\PackagesLocalDirectory\\bin). Here is a list of the platform form adaptor models:
+フォーム アダプター モデルは、テストの自動化に必要です。 新たに更新されたプラットフォーム モデルに基づいて、プラットフォーム フォーム アダプターのモデルを再生成します。 フォーム アダプター モデルを生成するには、xppfagen.exe ツールを使用します。 このツールは、パッケージの bin フォルダー (通常は、j:\\AosService\\PackagesLocalDirectory\\bin) にあります。 プラットフォームのフォーム アダプター モデルの一覧を次に示します。
 
 -   ApplicationPlatformFormAdaptor
 -   ApplicationFoundationFormAdaptor
 -   DirectoryFormAdaptor
 
-The following examples show how to generate the form adaptor models.
+次の例は、フォーム アダプター モデルを生成する方法を示しています。
 ```
 xppfagen.exe -metadata=j:\AosService\PackagesLocalDirectory -model="ApplicationPlatformFormAdaptor" -xmllog="c:\temp\log1.xml"
 
@@ -139,81 +140,80 @@ xppfagen.exe -metadata=j:\AosService\PackagesLocalDirectory -model="ApplicationF
 xppfagen.exe -metadata=j:\AosService\PackagesLocalDirectory -model="DirectoryFormAdaptor" -xmllog="c:\temp\log3.xml"
 ```
 
-### Install the Data Management service (Platform update 3 or earlier)
+### <a name="install-the-data-management-service-platform-update-3-or-earlier"></a>データ管理サービス (プラットフォーム更新プログラム 3 またはそれ以前) をインストールします
 
 > [!NOTE]
-> Skip this section if you are updating to platform update 4 or newer, the data management service is automatically installed as part of installing the deployable package.
+> プラットフォーム更新プログラム 4 またはそれ以降を更新する場合はこのセクションをスキップすると、データ管理サービスは配置可能パッケージのインストールの一部として自動的にインストールされます。
 
-After the deployable package is installed, follow these instructions to install the new Data Management service. Open a **Command Prompt** window as an administrator, and run the following commands from the .\\DIXFService\\Scripts folder.
+配置可能なパッケージのインストール後、以下の手順に従って、新しい Data Management サービスをインストールします。 管理者として**コマンド プロンプト**ウィンドウを開き、.\\DIXFService\\Scripts フォルダーから次のコマンドを実行します。
 
     msiExec.exe /uninstall {5C74B12A-8583-4B4F-B5F5-8E526507A3E0} /passive /qn /quiet
 
-If you're connected to Microsoft SQL Server Integration Services 2016 (13.0), run the following command.
+Microsoft SQL Server の統合サービス 2016 (13.0) に接続している場合は、次のコマンドを実行します。
 
     msiexec /i "DIXF_Service_x64.msi" ISSQLSERVERVERSION="Bin\2012" SERVICEACCOUNT="NT AUTHORITY\NetworkService" /qb /lv DIXF_log.txt
 
-If you're connected to an earlier release of Microsoft SQL Server Integration Services, run the following command.
+Microsoft SQL Server の統合サービスの早期リリースに接続している場合は、次のコマンドを実行します。
 
     msiexec /i "DIXF_Service_x64.msi" ISSQLSERVERVERSION="Bin" SERVICEACCOUNT="NT AUTHORITY\NetworkService" /qb /lv DIXF_log.txt
 
-## Apply the platform update package on a build environment (Platform update 6 or earlier)
+## <a name="apply-the-platform-update-package-on-a-build-environment-platform-update-6-or-earlier"></a>ビルド環境 (プラットフォーム アップデート 6 またはそれ以前) にプラットフォーム更新プログラムのパッケージを適用
 
 > [!NOTE]
-> Skip this section if you are updating to platform update 7 or newer. This was a pre-requesite step for build environments.
+> プラットフォーム更新プログラム 7 またはそれ以降を更新する場合はこのセクションをスキップします。 これは、ビルド環境のための前提条件ステップでした。
 
-If the build machine has been used for one or more builds, you should restore the metadata packages folder from the metadata backup folder before you upgrade the VM to a newer Dynamics 365 for Finance and Operations platform. You should then delete the metadata backup. These steps help ensure that the platform update will be applied on a clean environment. The next build process will then detect that no metadata backup exists and will automatically create a new one. This new metadata backup will include the updated platform. To determine whether a complete metadata backup exists, look for a BackupComplete.txt file in I:\\DynamicsBackup\\Packages (or C:\\DynamicsBackup\\Packages on a downloadable virtual hard disk \[VHD\]). If this file is present, a metadata backup exists, and the file will contain a timestamp that indicates when it was created. To restore the deployment's metadata packages folder from the metadata backup, open an elevated Windows PowerShell **Command Prompt** window, and run the following command. This command will run the same script that is used in the first step of the build process.
+ビルド マシンを 1 つ以上のビルドに使用している場合、メタデータのバックアップ フォルダーからメタデータのパッケージ フォルダーを復元してから、VM をより新しい Dynamics 365 for Finance and Operations プラットフォームにアップグレードする必要があります。 その後、メタデータのバックアップを削除してください。 これらの手順は、プラットフォームの更新がクリーンな環境に確実に適用されるようにします。 次のビルド プロセスはメタデータ バックアップが存在しないことを検出し、新しいメタデータ バックアップが自動的に作成されます。 この新しいメタデータ バックアップには、更新されたプラットフォームが含まれます。 完全なメタデータ バックアップが存在するかどうかを確認するには、I:\\DynamicsBackup\\Packages (またはダウンロード可能な仮想ハード ディスク \[VHD\] 上の C:\\DynamicsBackup\\Packages) で、BackupComplete.txt ファイルを探してください。 このファイルが存在する場合、メタデータ バックアップが存在し、ファイルにはその作成日時を示すタイムスタンプが含まれています。 展開のメタデータ パッケージ フォルダーをメタデータ バックアップから復元するには、上位の Windows PowerShell **コマンド プロンプト** ウィンドウを開き、以下のコマンドを実行します。 このコマンドは、ビルド プロセスの最初のステップで使用したのと同じスクリプトを実行します。
 
     if (Test-Path -Path "I:\DynamicsBackup\Packages\BackupComplete.txt") { C:\DynamicsSDK\PrepareForBuild.ps1 }
 
-If a complete metadata backup doesn't exist, the command will create a new backup. This command will also stop the Finance and Operations deployment services and Internet Information Services (IIS) before it restores the files from the metadata backup to the deployment's metadata packages folder. 
-You should see output that resembles the following example. 
+完全なメタデータ バックアップが存在しない場合、コマンドは新しいバックアップを作成します。 このコマンドも ファイルをメタデータ バックアップから展開のメタデータ パッケージ フォルダーに復元する前に、Finance and Operations 配置サービスおよびインターネット インフォメーション サービス (IIS) を停止します。 次の例のような出力が表示されます。 
 ```
-午後 6 時 17 分 52 秒: ビルド定義環境を準備しています...* <em>午後 6 時 17 分 53 秒: 指定された値で Dynamics SDK のレジストリ キーを更新しています...</em> <em>午後 6 時 17 分 53 秒: AOS の web config からの値で Dynamics SDK レジストリ キーを更新しています...</em> <em>午後 6 時 17 分 53 秒: Finance and Operations の配置を停止しています...</em> <em>午後 6 時 18 分 06 秒: **バックアップが次の場所に既に存在します: I:\\DynamicsBackup\\Packages。新しいバックアップは作成されません</em><em>。</em> <em>午後 6 時 18 分 6 秒: **メタデータ パッケージをバックアップから復元する</em>** <em>午後 6 時 22 分 56 秒: **メタデータ パッケージを正常にバックアップから復元しました</em><em>。</em> <em>午後 6 時 22 分 57: ビルド環境の準備が完了しました。</em> <em>午後 6 時 22 分 57 秒: 終了コード 0 でスクリプトが完了</em> 
+6:17:52 PM: Preparing build environment...* <em>6:17:53 PM: Updating Dynamics SDK registry key with specified values...</em> <em>6:17:53 PM: Updating Dynamics SDK registry key with values from AOS web config...</em> <em>6:17:53 PM: Stopping Finance and Operations deployment...</em> <em>6:18:06 PM: **A backup already exists at: I:\\DynamicsBackup\\Packages. No new backup will be created</em><em>.</em> <em>6:18:06 PM: **Restoring metadata packages from backup...</em>** <em>6:22:56 PM: **Metadata packages successfully restored from backup</em><em>.</em> <em>6:22:57 PM: Preparing build environment complete.</em> <em>6:22:57 PM: Script completed with exit code: 0</em> 
 ```
 
-After the metadata backup has been restored, delete (or rename) the metadata backup folder (DynamicsBackup\\Packages), so that it will no longer be found by the build process.
+メタデータ バックアップが復元された後、ビルド プロセスでは検出されないようにメタデータ バックアップ フォルダー (DynamicsBackup\\Packages) を削除します。
 
-### Apply the platform update package
+### <a name="apply-the-platform-update-package"></a>プラットフォーム更新プログラム パッケージを適用
 
-After you've prepared your build environment for this update, apply the platform update package by using the same method that you use on other environments.
+更新プログラムのビルド環境を準備した後、他の環境で使用する同じメソッドでプラットフォームの更新プログラム パッケージを適用します。
 
-## Upgrading to platform update 3 from an earlier build
-When upgrading to platform update 3 from an earlier build, there are some very important considerations because of two key changes in update 3:
+## <a name="upgrading-to-platform-update-3-from-an-earlier-build"></a>以前のビルドからプラットフォーム更新プログラム 3 へのアップグレード
+以前のビルドからプラットフォーム アップデート 3 にアップグレードする場合、アップデート 3 の 2 つの重要な変更のためにいくつかの非常に重要な考慮事項があります。
 
-- It is no longer possible to overlayer platform models (Application Platform, Application Foundation, Test Essentials).
-- You need to delete all X++ hotfixes to the platform that are in you version control (see the section below)
-- The Directory model is no longer in platform, it has moved to the application in Finance and Operations release 1611.
+- プラットフォーム モデル (アプリケーション プラットフォーム、アプリケーション基準、Test Essentials) をオーバーレイすることはできなくなりました。
+- すべての X++ の修正プログラムをバージョン管理下にあるプラットフォームまで削除する必要があります (下記のセクションを参照してください)
+- ディレクトリ モデルはプラットフォームには存在しなくなり、Finance and Operations リリース 1611 でアプリケーションに移動しました。
 
-This means two things:
+これは、2 つのことを意味します。
 
-1.  If taking only platform update 3 and not taking the application update (Finance and Operations version 1611), then you cannot have overlayering on any of the following models. All overlayering on these models must be removed before attempting to install update 3:
-    -   Application Platform
-    -   Application Foundation
+1.  プラットフォーム更新プログラム 3 のみを使用し、アプリケーションの更新プログラム (Finance and Operations バージョン 1611) を使用しない場合、次のどのモデルでもオーバーレイすることはできません。 更新プログラム 3 をインストールする前に、これらのモデルのすべてのオーバーレイヤを削除する必要があります。
+    -   アプリケーション プラットフォーム
+    -   アプリケーション基準
     -   Test Essentials
     -   Directory
 
-2.  If you cannot remove over-layering from the Directory model, and you still want to upgrade, you will have to do a complete upgrade of the platform and the application (Finance and Operations version 1611) as described in [Overview of moving to the latest update of Finance and Operations](upgrade-latest-update.md).
+2.  ディレクトリ モデルからオーバーレイを削除できなくてもアップグレードする必要がある場合は、[Finance and Operations の最新アップデートへの移行概要](upgrade-latest-update.md)に記載されているように、プラットフォームとアプリケーション (Finance and Operations version 1611) を完全にアップグレードする必要があります。
 
-### Delete platform metadata hotfixes from your VSTS project (Platform update 2 or earlier)
+### <a name="delete-platform-metadata-hotfixes-from-your-vsts-project-platform-update-2-or-earlier"></a>VSTS プロジェクト (プラットフォーム アップデート 2、またはそれ以前) から、プラットフォーム メタデータの修正プログラムの削除
 
 > [!NOTE]
-> This section is not relevant if you are already on Platform update 3 and updating to a newer platform.
+> このセクションは、既にプラットフォーム更新プログラム 3 および新しいプラットフォームに更新している場合には関係ありません。
 
-Before you install the new platform update, you must clean up your Microsoft Visual Studio Team Services (VSTS) source control project.
-Remove any X++ or metadata hotfixes that you've installed on your existing platform. If you have any X++ or metadata hotfixes that are checked in to your VSTS project for any of the following Microsoft models, delete them from your project by using the Microsoft Visual Studio Source Control Explorer.
+新しいプラットフォーム更新プログラムをインストールする前に、Microsoft Visual Studio Team Services (VSTS) ソース コントロール プロジェクトをクリーンアップする必要があります。
+既存のプラットフォームにインストールしたすべての X++ またはメタデータの修正プログラムを削除します。 次の Microsoft モデルのいずれかの VSTS プロジェクトでチェックされている X++ またはメタデータの修正プログラムがある場合は、Microsoft Visual Studio のソース管理エクスプローラーを使用してプロジェクトから削除します。
 
--   Application Platform
--   Application Foundation
+-   アプリケーション プラットフォーム
+-   アプリケーション基準
 -   TestEssentials
 -   Directory
 
-You can find these hotfixes by browsing the check-in history of these Microsoft models. For example, use Source Control Explorer to browse the check-in history of the Trunk\\Main\\Metadata\\ApplicationFoundation\\ApplicationFoundation folder, and delete all XML files that have been checked in to it.
-![View History](./media/checkinhistory.png)
+これらの修正プログラムは、Microsoft モデルでこれらのチェックイン履歴を参照することにより見つけることができます。 たとえば、ソース管理エクスプローラーを使用して、Trunk\\Main\\Metadata\\ApplicationFoundation\\ApplicationFoundation フォルダーのチェックイン履歴を参照し、チェックインされているすべての XML ファイルを削除します。
+![履歴の表示](./media/checkinhistory.png)
 
-Additional resources
+<a name="additional-resources"></a>その他のリソース
 --------
 
-[Overview of moving to the latest update of Microsoft Dynamics 365 for Finance and Operations](upgrade-latest-update.md)
+[Microsoft Dynamics 365 for Finance and Operations の最新更新への移行の概要](upgrade-latest-update.md)
 
 
 

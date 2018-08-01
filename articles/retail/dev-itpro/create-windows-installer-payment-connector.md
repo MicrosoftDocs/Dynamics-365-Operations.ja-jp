@@ -3,7 +3,7 @@ title: "支払コネクタ用の Windows インストーラーの作成"
 description: "このトピックでは、支払コネクタの Windows インストーラーを作成する方法を説明します。"
 author: sericks007
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 05/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -18,20 +18,20 @@ ms.author: yabinl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 715c18988532892744861c17df824fa3aa304450
+ms.sourcegitcommit: 0e1be78baa0deee7f86a21ed23b1990ff4215907
+ms.openlocfilehash: b4a27211d0b8254daf04a545aa614bb626b39301
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/18/2018
 
 ---
 
 # <a name="create-a-windows-installer-for-a-payment-connector"></a>支払コネクタ用の Windows インストーラーの作成
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 このトピックでは、支払コネクタの Windows インストーラーを作成する方法を説明します。 このトピックは、支払いコネクタをパッケージ化する方法を説明するために、MasterCard や Visa などの支払コネクタ プロバイダで作業する開発者を対象にしています。支払コネクタは特定顧客向けに作業する実装パートナーと共有できます。 
 
-開発環境で支払いコネクタを実装してテストした後、生産の配置のため小売業者 IT プロフェッショナルに支払コネクタまたは付加価値再販業者 (VAR) を転送するインストーラーを作成する必要があります。 詳細については、[支払コネクタと支払デバイスの実装](http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx) を参照してください。
+開発環境で支払いコネクタを実装してテストした後、生産の配置のため小売業者 IT プロフェッショナルに支払コネクタまたは付加価値再販業者 (VAR) を転送するインストーラーを作成する必要があります。 詳細については、[支払ターミナルと支払の統合](end-to-end-payment-extension.md)を参照してください。
 
 ## <a name="windows-installer"></a>Windows インストーラー
 Microsoft Windows インストーラー (MSI) は、Microsoft Windows のアプリケーションと構成サービスです。 支払コネクタを配置するために必要なすべてのファイルが含まれるインストーラーを作成する必要があります。 インストーラー自体は支払コネクタを配置しません。 指定したフォルダーにコネクタ ファイルを解凍してコピーするだけです。 このトピックの次のセクションでは、そのフォルダーの内容を定義します。 インストールを続行する前に顧客がユーザー契約の受け入れを要求するように、インストーラーを構成することができます。 また、インストーラーに対して優先する形式を選択することができます。 たとえば、.exe ファイルを持つことができます。
@@ -39,7 +39,10 @@ Microsoft Windows インストーラー (MSI) は、Microsoft Windows のアプ�
 ## <a name="installer-contents"></a>インストーラーの内容
 インストーラーは、次の構造で必要なファイルをインストールする必要があります。
 
--   **支払コネクタ** – このフォルダには、最大 3 つのサブフォルダーが含まれます。
+> [!Note]
+> これらのフォルダーは **...\RetailSDK\PaymentExternals** で検索することができます。
+
+-   **PaymentExternals** – このフォルダには、最大 3 つのサブフォルダーが含まれます。
     -   **IPaymentDevice Assemblies** – このフォルダーには、IPaymentDevice インターフェイスを実装するアセンブリとその依存アセンブリが含まれています。 これらのアセンブリは、VeriFone MX925 などの決済端末デバイスと通信するために、ハードウェア ステーションおよび Retail Modern POS で使用されます。 支払のターミナル デバイスをサポートしていない場合は、このフォルダを省略できます。
     -   **IPaymentProcessor Assemblies** – このフォルダーには、IPaymentProcesor インターフェイスを実装するアセンブリとその依存アセンブリが含まれています。
     -   **支払 Web ファイル** – このフォルダには、支払受け入れページを有効にするために必要なコールバック HTML/JavaScript/CSS ファイルが含まれています。 支払い受諾ウェブ アプリケーションが Microsoft の導入ガイドに従っている場合、これらの支払いウェブ ファイルは必須ではなく、このフォルダを省略することができます。 場合によっては、支払受け入れページでは、コールバック ページをホスト アプリケーション サーバーに配置する必要があります。 その場合、コールバック ページのフォルダーを含める必要があります。

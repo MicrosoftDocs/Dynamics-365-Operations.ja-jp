@@ -3,7 +3,7 @@ title: "Finance and Operations クラウド プラットフォームの毎月の
 description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations クラウド プラットフォームの毎月の更新に関する重要な情報を提供します。"
 author: manalidongre
 manager: AnnBe
-ms.date: 03/29/2018
+ms.date: 05/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,16 +18,16 @@ ms.author: meeram
 ms.dyn365.ops.version: Platform update 5
 ms.search.validFrom: 2017-03-31
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 5ba9c74d4b2824ad4cbb66a1b62c1a0cc379c6ef
+ms.sourcegitcommit: 62dbf8ffd550f9369df1ac8399b25c76f3d57c93
+ms.openlocfilehash: 1f6f507ae921b2a39248efa2d8196e0f31926405
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 07/03/2018
 
 ---
 
 # <a name="finance-and-operations-cloud-platform-monthly-updates-faq"></a>Finance and Operations クラウド プラットフォームの毎月の更新プログラムのよく寄せられる質問
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 for Finance and Operations クラウド プラットフォームの毎月の更新に関する重要な情報を提供します。
 
@@ -125,7 +125,11 @@ Management reporter および Retail は、Microsoft がリリースするプラ
 
 ユーザーがパートナーであり、プラットフォームのアップデートに早期にアクセスすることに興味がある場合は、<http://aka.ms/PEAPnomination> での推薦アンケートを送信することで、[PEAP プログラム](http://aka.ms/PEAPnomination)に参加します。 ユーザーが顧客であり、常に最新のプラットフォームで環境を稼働させたい場合は、<http://aka.ms/CAAPnomination> の推薦アンケートを送信します。
 
-## <a name="i-prefer-that-microsoft-update-a-standard-acceptance-test-sandbox-environment-that-differs-from-the-tier-2-sandbox-environment-that-i-purcased-what-can-i-do"></a>Microsoft 更新プログラム、購入した階層 2 サンドボックス環境とは異なる Standard Acceptance Test (Sandbox) 環境を希望します。 実行できることは何ですか ?
+## <a name="how-can-i-get-the-exact-package-version-that-is-applied-to-my-sandbox-environment-by-microsoft-"></a>Microsoft のサンドボックス環境に適用される正確なパッケージ バージョンを取得する方法は？
+
+Microsoft がレベル 2 サンドボックス環境を更新すると、パッケージ バージョンのコピーが LCS プロジェクト アセット ライブラリに保存されます。
+
+## <a name="i-prefer-that-microsoft-update-a-standard-acceptance-test-sandbox-environment-that-differs-from-the-tier-2-sandbox-environment-that-i-purchased-what-can-i-do"></a>購入した階層 2 サンドボックス環境とは異なる、Microsoft 更新プログラム Standard Acceptance Test (Sandbox) 環境を希望します。 実行できることは何ですか ?
 
 オプトアウト調査で、Microsoft は異なるサンドボックス環境 ID を入力できる場所を提供します。 Microsoft は第 1 層サンドボックス環境を更新しないことに注意してください。 第 1 層のサンド ボックス環境は、単一の仮想マシン (VM) として展開される環境です。
 

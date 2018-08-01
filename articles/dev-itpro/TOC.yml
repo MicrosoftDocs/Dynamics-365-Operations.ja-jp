@@ -1014,6 +1014,8 @@
           href: deployment/apply-deployable-package-system.md
         - name: 配置可能パッケージのインストール
           href: deployment/install-deployable-package.md
+        - name: パッケージのアンインストール
+          href: deployment/uninstall-deployable-package.md
         - name: パッケージ アプリケーションの問題のトラブルシューティング
           href: deployment/deployable-package-troubleshooting.md
 - name: アップグレード、更新プログラム、および修正プログラム

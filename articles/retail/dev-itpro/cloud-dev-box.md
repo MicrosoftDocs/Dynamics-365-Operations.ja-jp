@@ -3,7 +3,7 @@ title: "管理者のアクセス権がないクラウド ホスト開発環境�
 description: "このトピックは、クラウドでホストされている開発マシンで作業している Retail 開発者向けのコンフィギュレーション手順について説明します。"
 author: mugunthanm
 manager: AnnBe
-ms.date: 01/16/2018
+ms.date: 05/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -19,19 +19,19 @@ ms.author: mumani
 ms.search.validFrom: 2017-12-08
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 80fbac7e993b47c70423739ec2716a344bde55c5
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 27951d3dacab81f48bf8359f44d037f034ee29ad
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="configuration-steps-for-retail-developers-working-on-cloud-hosted-development-environments-with-no-administrator-access"></a>管理者のアクセス権がないクラウド ホスト開発環境で作業している Retail 開発者向けのコンフィギュレーション手順
 
-[!INCLUDE [banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition プラットフォーム更新プログラム 12 時点で、顧客は Microsoft サブスクリプションで実行中の開発またはビルド環境で仮想マシン (VM) 管理者アカウントにアクセスできなくなります。 この制限は、プラットフォーム更新 12 (またはそれ以降) 環境の新しい展開にのみ適用されます。 この更新プログラムの前に展開され、プラットフォーム更新プログラム 12 に更新された環境では、引き続き管理者アクセス権が与えられます。
 
-リモート デスクトップ (RDP) を使用して、Lifecycle Services (LCS) 環境ページに用意されている非管理ユーザーを使用するこれらの制限された環境にアクセスすることができます。 このブログの記事には、これらの VM へのアクセス方法に関する詳細が含まれています。https://blogs.msdn.microsoft.com/lcs/2017/10/31/restricted-admin-access-with-platform-12-updates/
+リモート デスクトップ (RDP) を使用して、Lifecycle Services (LCS) 環境ページに用意されている非管理ユーザーを使用するこれらの制限された環境にアクセスすることができます。 管理者アクセスを許可しない環境の詳細については、[管理者アクセスを許可しない開発用 およびビルド用 VM に関するよく寄せられる質問](../../dev-itpro/sysadmin/VMs-no-admin-access.md)を参照してください。
 
 小売開発者は、クラウドにホストされた開発仮想マシンに管理アクセスできません。 Modern POS (MPOS) 開発は、クラウド POS を使用する場合に可能です。 Retail アプリケーションの開発を開始する前に、次のようにクラウド POS を構成します。
 

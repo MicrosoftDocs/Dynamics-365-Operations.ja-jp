@@ -18,16 +18,16 @@ ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 02dda2539a52ad19140007bfc0d6d25f282c29d5
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 602e7cb91a6a57aa632503208c47d39da932607c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="prepare-to-migrate-code-from-dynamics-ax-2012-r3-to-dynamics-365-for-finance-and-operations"></a>Dynamics AX 2012 R3 から Dynamics 365 for Finance and Operations にコードを移行する準備
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 このトピックでは、Dynamics AX 2012 R3 から Microsoft Dynamics 365 for Finance and Operations にコードおよびメタデータを移行できる Lifecycle Services (LCS) コード アップグレード サービスおよび Visual Studio のツールについて説明します。 これらの手順のほとんどは、Finance and Operations の 2 つのメジャー バージョンの間でのコードの移行にも適用されます。 
 
@@ -100,7 +100,7 @@ LCS コード アップグレード サービス構成のコードをアップ�
 4.  すべてのシナリオが、カスタム パターンに対して異なるサイズで、複数のブラウザーで動作することを検証します。
 5.  記述してテストを実行します。
 
-詳細については、[Visual Studio ツールを使用して競合を解決する (Office Mix)](https://mix.office.com/watch/1rl75ei2cs6d7) を参照してください。
+<!--For more information, see [Resolve Conflicts Using Visual Studio Tools (Office Mix)](https://mix.office.com/watch/1rl75ei2cs6d7).-->
 
 ## <a name="best-practice-setup"></a>ベスト プラクティスの設定
 ベスト プラクティス フレームワークには、移行を完了するために解決する必要があるベスト プラクティス警告のサブセットがあります。 これは、Dynamics AX 2012 R3 またはそれ以前から移行する場合に適用されます。
