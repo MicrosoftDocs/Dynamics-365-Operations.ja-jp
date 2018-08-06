@@ -3,7 +3,7 @@ title: "自由書式の請求書テンプレートの作成"
 description: "この手順は、自由書式の請求書テンプレートを作成する方法を示します。"
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 05/29/2019
+ms.date: 05/29/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
