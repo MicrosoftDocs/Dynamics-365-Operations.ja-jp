@@ -1,7 +1,7 @@
 ---
 title: "一般仕訳帳の処理"
 description: "この記事は、一般仕訳帳の処理を容易にすることができ、正確なデータがキャプチャされ、内部コントロールが悪影響を受けていないことを保証する手助けとなる Microsoft Dynamics 365 for Finance and Operations の機能について説明します。"
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: LedgerJournalSetup, LedgerJournalTable
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 15721
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef

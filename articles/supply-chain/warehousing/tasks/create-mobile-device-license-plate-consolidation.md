@@ -1,7 +1,7 @@
 --- 
 title: "ライセンス プレートの連結用のモバイル デバイス メニュー項目の作成"
 description: "この手順では、ライセンスプレート結合作業に必要なモバイル端末のメニュー項目を作成する方法を示します。"
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe
 ms.date: 10/13/2016
 ms.topic: business-process
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution

@@ -1,7 +1,7 @@
 ---
 title: "他のモジュールとの予算計画の統合"
 description: "予算計画はいくつかの異なるリソースから生成することもできます。 定期的なプロセスの基本要素は、すべてのリソースと同じです。"
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: BudgetPlanGenerate
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 64443
 ms.assetid: f9a94db5-906c-404a-9ca5-91528d67c490

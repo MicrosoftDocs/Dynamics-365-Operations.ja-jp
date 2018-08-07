@@ -1,7 +1,7 @@
 ---
 title: "銀行仕訳帳の複合エンティティの更新"
 description: "追加のBankTransactionType フィールドに複合 BankJournalEntity を追加するには以下の手順が必要です。"
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, Developer
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 221654
 ms.assetid: adb8146b-eb21-4be2-a338-a5b299fcc9a0

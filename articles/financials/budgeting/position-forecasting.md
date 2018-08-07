@@ -1,7 +1,7 @@
 ---
 title: "職位予測"
 description: "作業者に関連付けられる経費は、多くの場合、組織のコストの大きな割合を占めます。 予測職位を使えばそれらの経費を計画し予算計画に含めることができます。"
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: HcmPositionForecast
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 64413
 ms.assetid: 35e791d2-1905-4808-a579-7f181ddddd91

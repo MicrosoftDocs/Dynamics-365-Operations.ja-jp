@@ -1,7 +1,7 @@
 ---
 title: "サービス作業"
 description: "サービス作業は、サービス注文で実行される作業を記述するために使用されます。 この情報は、技術者と顧客の両方が参照できます。"
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe
 ms.date: 02/21/2018
 ms.topic: article
@@ -10,12 +10,12 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: SMAServiceTask
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
-ms.author: YuyuScheller
+ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT

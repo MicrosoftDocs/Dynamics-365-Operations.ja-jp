@@ -1,7 +1,7 @@
 ---
 title: "[元帳仕訳帳タイプ]"
 description: "この記事では、財務仕訳帳に設定できる仕訳帳タイプについて説明します。 Microsoft Dynamics 365 for Finance and Operations 全体で使用できる仕訳帳を設定するには、[仕訳帳名] ページを使用します。"
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: LedgerJournalSetup
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 15631
 ms.assetid: 81613b31-bc3c-43a0-8474-e01c9a482c40
