@@ -1,7 +1,7 @@
 --- 
 title: "製品コンフィギュレーション モデルへ式の制約の追加"
 description: "この手順は、製品コンフィギュレーション モデルに新しい式の制約を追加する方法を表示します。"
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe
 ms.date: 10/27/2016
 ms.topic: business-process
@@ -9,17 +9,17 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.search.region: Global
-ms.author: yuyus
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 4537841fa5639aba1a604e5f27e26344ca605a3a
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: 9c76669532333450b8f73fb0f4f7397ac8f1ee4e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 # <a name="add-an-expression-constraint-to-a-product-configuration-model"></a><span data-ttu-id="0e986-103">製品コンフィギュレーション モデルへ式の制約の追加</span><span class="sxs-lookup"><span data-stu-id="0e986-103">Add an expression constraint to a product configuration model</span></span>

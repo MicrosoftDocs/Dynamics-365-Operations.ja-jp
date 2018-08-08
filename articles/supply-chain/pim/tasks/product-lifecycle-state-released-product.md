@@ -9,17 +9,17 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: e4da27f7a7d03da91bada9ea99befa864f00e87b
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: 94ef09c8906c793b0187d82cef259122c91a8e01
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 # <a name="assign-a-product-lifecycle-state-to-a-released-product"></a><span data-ttu-id="3c0b1-103">製品ライフサイクルの状態をリリース済製品に割り当て</span><span class="sxs-lookup"><span data-stu-id="3c0b1-103">Assign a product lifecycle state to a released product</span></span>

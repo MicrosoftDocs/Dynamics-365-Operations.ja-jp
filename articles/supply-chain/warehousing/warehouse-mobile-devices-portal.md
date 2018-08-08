@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Developer
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.custom: 30171
 ms.assetid: acdddf48-d385-4f86-8633-013ff2d6eecd
@@ -18,10 +18,10 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 1f276907d23b3e9c6ff7d618290c466058ff39ec
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: e6af4626c2745dba2b89ced903991e75f019e80e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 

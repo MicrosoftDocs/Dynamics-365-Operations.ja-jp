@@ -1,7 +1,7 @@
 --- 
 title: "サイトの計画の作成"
 description: "生産計画担当者は、特定品目を生産するための材料と能力要件を計算します。"
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/10/2016
 ms.topic: business-process
@@ -9,17 +9,17 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.search.region: Global
-ms.author: yuyus
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: d123dac767a8985f6c1a5fef64a9814160f76a8d
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: f22b7271432316aa745e0c4cd3f1ed533805403e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 # <a name="create-a-plan-for-a-site"></a><span data-ttu-id="43598-103">サイトの計画の作成</span><span class="sxs-lookup"><span data-stu-id="43598-103">Create a plan for a site</span></span>

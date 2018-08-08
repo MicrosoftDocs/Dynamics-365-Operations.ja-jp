@@ -1,7 +1,7 @@
 ---
 title: "予算作成の概要"
 description: "Microsoft Dynamics 365 for Finance and Operations の財務機能を使用するほとんどすべての会社は、実績対予算のレポートを作成できなければなりません。 この記事では、Finance and Operations 予算で作成したり、サード パーティ製プログラムから読み込むために必要な最低限のコンフィギュレーションを説明します。"
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: BudgetParameters
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 60113
 ms.assetid: 28a9793e-d376-47af-a345-69046bad17df
@@ -19,10 +19,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: e50c646154bf17594d1de78eedc55edd54cde1c5
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: 01b7970119b9abb26570c19162e159dd05496168
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 

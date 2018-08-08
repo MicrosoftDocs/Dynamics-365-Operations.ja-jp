@@ -1,7 +1,7 @@
 ---
 title: "信用状および輸入取立"
 description: "この記事は、信用状および輸入取立に関する一般情報を提供します。 どちらのタイプの銀行ドキュメントも、国境をまたぐ商品売買によく使用されます。"
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: BankLCImport
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 18321
 ms.assetid: 5c97ab81-632b-4043-a940-674bcb496c80
@@ -19,10 +19,10 @@ ms.author: leguo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: effaffe8b5fbfc79713501973ece49db0517e30d
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: 2b5deef65cc4af2fdfee6549660527007c3bed3a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 

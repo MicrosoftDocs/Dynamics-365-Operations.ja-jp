@@ -1,7 +1,7 @@
 --- 
 title: "仕入先請求書の売上税の計算と調整"
 description: "オリジナルの元伝票が計算と異なる税額を表示している場合、転記前にこれらの金額を調整できます。"
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 11/10/2016
 ms.topic: business-process
@@ -9,17 +9,17 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 9fedb132f47c22d3445527c1efe97aa0f83cc1d1
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: 1af9228e5efd2cd6e414eebf766bb3475b44a360
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 # <a name="calculate-and-adjust-sales-tax-on-a-vendor-invoice"></a><span data-ttu-id="bb7e9-103">仕入先請求書の売上税の計算と調整</span><span class="sxs-lookup"><span data-stu-id="bb7e9-103">Calculate and adjust sales tax on a vendor invoice</span></span>

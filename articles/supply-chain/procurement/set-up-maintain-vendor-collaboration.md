@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: DirExternalRole, SysUserRequestListPage, VendVendorPortalUsers, WorkflowTableListPageRnr
 audience: IT Pro
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.custom: 220774
 ms.assetid: 69d05e8b-7dc2-48ea-bc24-bea9ac963579
@@ -19,10 +19,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: ce10ec5568b45ce8a01e006244c56e1774631774
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: a6bbc8cdb6fed12325880c5d1c1e500e21ba7e7a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 <span data-ttu-id="95cf2-104">.md</span><span class="sxs-lookup"><span data-stu-id="95cf2-104">.md</span></span>

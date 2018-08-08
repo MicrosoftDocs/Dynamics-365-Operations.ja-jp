@@ -1,7 +1,7 @@
 --- 
 title: "売上税所轄官庁の設定"
 description: "売上税所轄官庁とは、収集された売上税の報告先および支払先です。"
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 11/14/2016
 ms.topic: business-process
@@ -9,17 +9,17 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 2ba2412d81fa6b0a60ff18c9fe065882c864f01c
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: b1ebd65bcf3950c0f2a91d198fec22b92209de48
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 # <a name="set-up-sales-tax-authorities"></a><span data-ttu-id="3b9b1-103">売上税所轄官庁の設定</span><span class="sxs-lookup"><span data-stu-id="3b9b1-103">Set up sales tax authorities</span></span>

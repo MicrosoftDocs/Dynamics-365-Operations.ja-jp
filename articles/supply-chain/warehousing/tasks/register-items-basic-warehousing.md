@@ -1,7 +1,7 @@
 --- 
 title: "品目の着荷仕訳帳を使用した基本倉庫管理に対応した品目の登録"
 description: "この手順では、在庫管理モジュールで、「基本倉庫」を使用する場合に、着荷仕訳帳を使用して品目を登録する方法を示します。"
-author: BibiSp
+author: ShylaThompson
 manager: AnnBe
 ms.date: 11/14/2016
 ms.topic: business-process
@@ -9,18 +9,18 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: bis
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 7dd92935d3d19526c04cbdec15754d52f8dad34a
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: fdc483b44544c2dd580ba6435ba5f84d940be2a9
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 # <a name="register-items-for-a-basic-warehousing-enabled-item-using-an-item-arrival-journal"></a><span data-ttu-id="0809c-103">品目の着荷仕訳帳を使用した基本倉庫管理に対応した品目の登録</span><span class="sxs-lookup"><span data-stu-id="0809c-103">Register items for a basic warehousing enabled item using an item arrival journal</span></span>

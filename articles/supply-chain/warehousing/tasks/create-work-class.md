@@ -1,7 +1,7 @@
 --- 
 title: "作業クラスの作成"
 description: "この手順では、作業クラスを設定する方法を示します。"
-author: BibiSp
+author: ShylaThompson
 manager: AnnBe
 ms.date: 11/14/2016
 ms.topic: business-process
@@ -9,18 +9,18 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: bis
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: ae594d55b1a14ab4e832658aaa12165f1be2b303
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: 5def9be0966d65728ffb0897229c0d749e7e13a0
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 # <a name="create-a-work-class"></a><span data-ttu-id="9dcd8-103">作業クラスの作成</span><span class="sxs-lookup"><span data-stu-id="9dcd8-103">Create a work class</span></span>

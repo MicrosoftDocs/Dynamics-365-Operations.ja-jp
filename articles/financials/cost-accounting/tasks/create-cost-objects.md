@@ -1,7 +1,7 @@
 --- 
 title: "原価オブジェクトの作成"
 description: "この手順では、データ コネクタ経由で Dynamics 365 for Finance and Operations コスト センターの財務分析コードを原価計算にインポートすることによって原価対象を作成する方法を示します。"
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe
 ms.date: 10/25/2016
 ms.topic: business-process
@@ -9,17 +9,17 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.search.region: Global
-ms.author: yuyus
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 2c76a26ea63d1fd44c20fbee271d2767b8ea68b1
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: 571406164236c7c079e059367e5d757cc4cefb1f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 # <a name="create-cost-objects"></a><span data-ttu-id="8d838-103">原価オブジェクトの作成</span><span class="sxs-lookup"><span data-stu-id="8d838-103">Create cost objects</span></span> 

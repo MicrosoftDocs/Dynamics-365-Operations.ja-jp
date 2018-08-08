@@ -9,17 +9,17 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 77df61bd85d3c296e44d3a2cfb0fce8b16eaaf9f
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: 4221acf200f41ca39803bcd56c1b05e0d87bd948
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 # <a name="calculate-fixed-asset-depreciation-across-legal-entities"></a><span data-ttu-id="99850-103">法人間での固定資産減価償却の計算</span><span class="sxs-lookup"><span data-stu-id="99850-103">Calculate fixed asset depreciation across legal entities</span></span>

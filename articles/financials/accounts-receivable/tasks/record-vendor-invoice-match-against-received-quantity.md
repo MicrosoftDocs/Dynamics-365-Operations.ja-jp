@@ -9,17 +9,17 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: fdf5b7bf1e1a8a442d7e763d3bb7d2c2429fc615
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: 069bd539cdf121b2f39f9824cfd821bc639a6a86
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 # <a name="record-vendor-invoice-and-match-against-received-quantity"></a><span data-ttu-id="a0b2c-103">仕入先請求書の受領記録および入庫済数量との照合</span><span class="sxs-lookup"><span data-stu-id="a0b2c-103">Record vendor invoice and match against received quantity</span></span>

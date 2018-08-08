@@ -1,7 +1,7 @@
 ---
 title: "原価会計用語"
 description: "このトピックでは、原価計算で使用する重要な用語を定義します。"
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe
 ms.date: 08/31/2017
 ms.topic: article
@@ -10,20 +10,20 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CAMCostAccountingLedger
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.custom: 223114
 ms.assetid: 1c798592-77d0-4a8f-beaa-9159c75957da
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: yuyus
+ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: c39b16256fdd31d3ac63590ca7ee64ef43eda9a0
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: 702fa3cb4219aecd95a74d3c225e104be5f281fc
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "配送スケジュール"
 description: "配送スケジュールより、1 つの販売注文、販売見積、または発注書に複数の配送を使用するときに、注文明細行数量を追跡することができます。"
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchDeliverySchedule, SalesDeliverySchedule, SalesQuotationDeliverySchedule
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.custom: 213984
 ms.assetid: 44cac104-c36c-4371-a992-9178b3fd65e9
@@ -19,10 +19,10 @@ ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 5e48d8f0ec434acdcfb72a38ccbf8dbc6938a256
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: 068a881a7fa9b19198bd3ad22988465be49c1fa3
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 

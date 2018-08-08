@@ -1,7 +1,7 @@
 --- 
 title: "販売価格の選択基準の作成"
 description: "この手順では、属性ベースの販売価格モデルに対して販売価格の選択基準を作成する方法を示します。"
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe
 ms.date: 10/13/2016
 ms.topic: business-process
@@ -9,17 +9,17 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.search.region: Global
-ms.author: bis
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: cbc442724e85f7e03cf28471c850f034101c12c2
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: b7638bee0db30e161d4dbb9b9435c8b38db0ff9c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 # <a name="create-sales-price-selection-criteria"></a><span data-ttu-id="3b524-103">販売価格の選択基準の作成</span><span class="sxs-lookup"><span data-stu-id="3b524-103">Create sales price selection criteria</span></span>

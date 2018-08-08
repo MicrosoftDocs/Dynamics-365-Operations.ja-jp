@@ -1,7 +1,7 @@
 ---
 title: "電子レポートのサンプル仕入先小切手"
 description: "このトピックでは、電子レポートのサンプル小切手フォーマットの使い方についての一般情報を提供します。"
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/14/2017
 ms.topic: article
@@ -9,18 +9,18 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.assetid: 
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: shylaw
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: c583c3d82ce7273c49144561c51cfbec932d3ae8
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: 6cae0ce1ec88f0500f8d281d314d59dc7001a384
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 

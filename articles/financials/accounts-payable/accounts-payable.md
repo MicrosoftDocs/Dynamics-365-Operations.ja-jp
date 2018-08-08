@@ -1,7 +1,7 @@
 ---
 title: "買掛金勘定ホーム ページ"
 description: "このトピックでは、買掛金勘定の概要を示します。"
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 08/18/2017
 ms.topic: index-page
@@ -10,19 +10,19 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: VendInvoiceWorkspace
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 21901
 ms.assetid: 1e4c2ac4-077b-4678-8733-5cec8f6ff659
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: shylaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 2100f95ed94050f4c02cda2e37007de740afe5c8
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: 6cc7ee98b3fabb774339dd1fc027d38d00d8b31f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 

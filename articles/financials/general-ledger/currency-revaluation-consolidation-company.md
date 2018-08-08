@@ -1,7 +1,7 @@
 ---
 title: "連結会社の通貨再評価"
 description: "このトピックでは、連結会社の通貨を再評価する方法について説明します。"
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: LedgerExchAdjHist
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 62183
 ms.assetid: 2762baaf-0c10-4ff7-8713-c506d6c29b98
@@ -19,10 +19,10 @@ ms.author: hminzner
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 2368021864668c2721976e820c74263137c1ee00
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: 4aadfb6383b7bae1d9c68de78f9aa91a31433475
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 

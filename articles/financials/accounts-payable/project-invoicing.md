@@ -1,7 +1,7 @@
 ---
 title: "プロジェクト請求"
 description: "この記事では、時間/実費払プロジェクトおよび固定価格プロジェクトでの、プロジェクト請求の概要を説明します。 ここには、仮発行請求書 (仮請求書)、請求の管理、分割払請求、仕入先請求、および貸方票に関する情報が含まれます。"
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,19 +10,19 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: ProjInvoiceCashFlow, ProjInvoiceControl, ProjInvoiceListPage, ProjInvoiceProposalDetail, ProjInvoiceProposalListPage
 audience: Application User, IT Pro
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 23111
 ms.assetid: 1812d6f2-8b34-4258-8f5f-dcf12281547f
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: c4b53775c9c11a86fcd4fa0c57c6de9d458f93bb
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: 5dd51e442479a05ce715fe91ebab0c99df9a8b6f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 

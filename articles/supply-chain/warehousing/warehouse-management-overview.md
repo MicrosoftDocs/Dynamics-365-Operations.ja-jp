@@ -1,7 +1,7 @@
 ---
 title: "倉庫管理"
 description: "倉庫プロセスを監視および自動化するために、倉庫管理を使用します。"
-author: BibiSp
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,17 +10,17 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: WHSParameters
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: bis
+ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: a569d9264097d7a0b742bc7bf47c2504c58cdb4e
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: 7c9613070e077bced4b272b136985de5f4ddbdd0
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 # <a name="warehouse-management"></a><span data-ttu-id="36134-103">倉庫管理</span><span class="sxs-lookup"><span data-stu-id="36134-103">Warehouse management</span></span>

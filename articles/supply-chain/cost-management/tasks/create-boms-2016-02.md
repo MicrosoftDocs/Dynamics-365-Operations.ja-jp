@@ -1,7 +1,7 @@
 --- 
 title: "BOM の作成 (2016 年 2 月のみ)"
 description: "このタスクでは、完成品と半完成品の部品表の構造の作成について説明します。"
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe
 ms.date: 02/07/2017
 ms.topic: business-process
@@ -9,17 +9,17 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.search.region: Global
-ms.author: bis
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 6c5473a0786ba0348701e8e106de46f811571f07
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: f132a3865b180a74d328ebc76ca29b2fc8aee85f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 # <a name="create-boms-february-2016-only"></a><span data-ttu-id="7f608-103">BOM の作成 (2016 年 2 月のみ)</span><span class="sxs-lookup"><span data-stu-id="7f608-103">Create BOMs (February 2016 only)</span></span>

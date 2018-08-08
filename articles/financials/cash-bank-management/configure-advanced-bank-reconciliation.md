@@ -1,7 +1,7 @@
 ---
 title: "詳細な口座調整の設定プロセス"
 description: "詳細な口座調整では、電子口座取引明細書をインポートし、Microsoft Dynamics 365 for Finance and Operations での銀行トランザクションに合わせて自動的に調整することができます。  この資料では、調整のプロセスの設定について説明します。"
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: BankReconciliationMatchRule, BankReconciliationMatchRuleSet
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 98303
 ms.assetid: ae071f04-f038-4b17-812d-0a241ed15521
@@ -19,10 +19,10 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 569989bd85c7768cef55c849199d5950f66d16b4
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: c95589b013b569f15fce80612a11eca621944f6b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 

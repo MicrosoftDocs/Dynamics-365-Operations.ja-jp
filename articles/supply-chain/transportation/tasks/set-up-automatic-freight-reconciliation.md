@@ -1,7 +1,7 @@
 --- 
 title: "自動運賃調整の設定"
 description: "この手順では、自動運賃調整のデータ設定方法を示します。"
-author: BibiSp
+author: ShylaThompson
 manager: AnnBe
 ms.date: 10/13/2016
 ms.topic: business-process
@@ -9,18 +9,18 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: bis
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 8483ff0264ea04777c118b80cc6372b882655394
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: 84c192e4c5b14e1343dc87983c03672aea829c0f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 # <a name="set-up-automatic-freight-reconciliation"></a><span data-ttu-id="b59b2-103">自動運賃調整の設定</span><span class="sxs-lookup"><span data-stu-id="b59b2-103">Set up automatic freight reconciliation</span></span>

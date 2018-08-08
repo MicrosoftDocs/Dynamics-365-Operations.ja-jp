@@ -1,7 +1,7 @@
 --- 
 title: "ドライバーの予定のチェックインおよびチェックアウトの登録"
 description: "この手順では、配送担当者のチェックインおよびチェックアウトを登録する方法を示します。"
-author: BibiSp
+author: ShylaThompson
 manager: AnnBe
 ms.date: 10/13/2016
 ms.topic: business-process
@@ -9,18 +9,18 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: bis
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: ec4d3b1503d8159847bcf8083b5b663499df9798
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: a2eba449c07b920294f7e35e03dc1073e43a744c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 # <a name="register-driver-check-in-and-check-out-for-an-appointment"></a><span data-ttu-id="b1413-103">ドライバーの予定のチェックインおよびチェックアウトの登録</span><span class="sxs-lookup"><span data-stu-id="b1413-103">Register driver check-in and check-out for an appointment</span></span>

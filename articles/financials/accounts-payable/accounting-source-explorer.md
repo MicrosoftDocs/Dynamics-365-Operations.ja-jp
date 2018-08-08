@@ -1,7 +1,7 @@
 ---
 title: "会計ソース エクスプローラー"
 description: "この記事は、総勘定元帳の勘定項目の背後にあるソース情報の詳細分析に使用できる会計のソース エクスプローラに関する情報を提供します。"
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: AccountingSourceExplorer
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 15391
 ms.assetid: 57b95899-7298-43c0-8034-45b5d993cbf2
@@ -19,10 +19,10 @@ ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 53433b4def5101ac4ebd3184a1ecdf2ad04adcf6
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: de5de039c0e3332943bae4846768fc628810906e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 

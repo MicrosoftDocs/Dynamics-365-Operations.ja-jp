@@ -1,7 +1,7 @@
 --- 
 title: "原価管理単位の定義"
 description: "ここでは、原価会計元帳で原価管理単位を定義する方法を説明します。"
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/27/2017
 ms.topic: business-process
@@ -9,17 +9,17 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.search.region: Global
-ms.author: yuyus
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 773c6b5a1bb804b7878f9b48241097641238570a
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: 296d74a9ca68758d43be1c46acdba7d13d99e9d1
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 # <a name="define-cost-control-units"></a><span data-ttu-id="d0006-103">原価管理単位の定義</span><span class="sxs-lookup"><span data-stu-id="d0006-103">Define cost control units</span></span>

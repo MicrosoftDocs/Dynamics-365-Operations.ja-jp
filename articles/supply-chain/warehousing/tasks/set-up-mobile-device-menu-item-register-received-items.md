@@ -1,7 +1,7 @@
 --- 
 title: "入庫済品目を登録するためのモバイル デバイスのメニュー項目の設定"
 description: "このタスクでは、モバイル デバイスのメニュー項目の設定を中心に説明します。"
-author: BibiSp
+author: ShylaThompson
 manager: AnnBe
 ms.date: 11/11/2016
 ms.topic: business-process
@@ -9,18 +9,18 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: bis
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: e13f644f6d5a817cd3fe24de10f44433ce491f4d
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: 24f918e449e5267decfd52e1e400d36f1766ebef
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 # <a name="set-up-a-mobile-device-menu-item-to-register-received-items"></a><span data-ttu-id="d8e0d-103">入庫済品目を登録するためのモバイル デバイスのメニュー項目の設定</span><span class="sxs-lookup"><span data-stu-id="d8e0d-103">Set up a mobile device menu item to register received items</span></span>

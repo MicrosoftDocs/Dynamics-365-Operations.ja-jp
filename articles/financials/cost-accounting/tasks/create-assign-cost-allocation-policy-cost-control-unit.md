@@ -1,7 +1,7 @@
 --- 
 title: "原価配賦ポリシーの作成と原価管理単位への割り当て"
 description: "原価配賦ポリシーと対応ルールを原価管理単位に作成し割り当てるには、この手順を使用します。"
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/28/2017
 ms.topic: business-process
@@ -9,17 +9,17 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.search.region: Global
-ms.author: yuyus
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 754b5e46c0060b9252fb5b0cc361619ef2a9c695
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: 92f41eb99b84bbc596e79b413971f9d92f2555b6
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 # <a name="create-and-assign-a-cost-allocation-policy-to-a-cost-control-unit"></a><span data-ttu-id="bb001-103">原価配賦ポリシーの作成と原価管理単位への割り当て</span><span class="sxs-lookup"><span data-stu-id="bb001-103">Create and assign a cost allocation policy to a cost control unit</span></span>

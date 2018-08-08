@@ -9,17 +9,17 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 59582e33a3a012d6f9e3f506d1f8303c07fb06a9
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: 333b01c9ac15b9bdbacfae614e8f630ed196536f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 # <a name="create-a-purchase-order-for-a-one-time-supplier"></a><span data-ttu-id="b5ca3-103">一時仕入先に対する発注書の作成</span><span class="sxs-lookup"><span data-stu-id="b5ca3-103">Create a purchase order for a one-time supplier</span></span>

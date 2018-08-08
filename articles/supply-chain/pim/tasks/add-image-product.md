@@ -1,7 +1,7 @@
 --- 
 title: "製品への画像の追加"
 description: "この手順では、製品に画像を追加する方法を示しています。このタスクの作成に使用されるデモデータの会社は、USMF です。"
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe
 ms.date: 09/26/2016
 ms.topic: business-process
@@ -9,17 +9,17 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.search.region: Global
-ms.author: yuyus
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 193a185734d34d353e5b60dba38cea3746b371f6
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: 91c43875515dbe7a52476156cd43852f6986533a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 # <a name="add-an-image-to-a-product"></a><span data-ttu-id="06c2e-103">製品への画像の追加</span><span class="sxs-lookup"><span data-stu-id="06c2e-103">Add an image to a product</span></span>

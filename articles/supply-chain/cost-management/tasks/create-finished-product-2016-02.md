@@ -1,7 +1,7 @@
 --- 
 title: "完成品の作成 (2016 年 2 月のみ)"
 description: "このタスクでは、完成品の作成に重点を置きます。"
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe
 ms.date: 02/07/2017
 ms.topic: business-process
@@ -9,17 +9,17 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.search.region: Global
-ms.author: bis
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: f1cfd25f44182650330e0ff927c2e660f27f134d
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: 44f9693e04160ffe9307de5e454d8269ca883679
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 # <a name="create-a-finished-product-february-2016-only"></a><span data-ttu-id="ec9e0-103">完成品の作成 (2016 年 2 月のみ)</span><span class="sxs-lookup"><span data-stu-id="ec9e0-103">Create a finished product (February 2016 only)</span></span>

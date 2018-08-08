@@ -1,7 +1,7 @@
 ---
 title: "直納"
 description: "この記事では、直納について説明します。 仕入先から顧客に直接配送する出荷のことを、直納といいます。"
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchCreateFromSalesOrder, SalesTable
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.custom: 9704
 ms.assetid: 64c51384-8a4e-45d0-83c1-12cea22902f9
@@ -19,10 +19,10 @@ ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: ab6abfd37e71cc52f929a33befb58154ad5b6d48
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: d9c4a695c591865c52ad5ee6d37a515139f58bf8
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 

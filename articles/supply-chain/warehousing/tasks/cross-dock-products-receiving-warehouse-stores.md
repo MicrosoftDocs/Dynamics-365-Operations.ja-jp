@@ -1,7 +1,7 @@
 --- 
 title: "受入倉庫から店舗までのクロスドッキング製品"
 description: "この手順は、発注書の入荷場所から、一つまたは複数の店舗に製品を配分するクロスドッキングを作成および処理する手順を説明します。"
-author: BibiSp
+author: ShylaThompson
 manager: AnnBe
 ms.date: 02/17/2016
 ms.topic: business-process
@@ -9,18 +9,18 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: bis
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 1182474504f7d1c051fe995c516367420ccc9701
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: 6c8e25007cc4a204aeaf73a2e819c129fa8fa29d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 # <a name="cross-dock-products-from-receiving-warehouse-to-stores"></a><span data-ttu-id="67f17-103">受入倉庫から店舗までのクロスドッキング製品</span><span class="sxs-lookup"><span data-stu-id="67f17-103">Cross-dock products from receiving warehouse to stores</span></span>
