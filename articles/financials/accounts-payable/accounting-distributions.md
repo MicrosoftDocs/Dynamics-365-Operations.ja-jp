@@ -1,7 +1,7 @@
 ---
 title: "勘定配布"
 description: "この記事は、勘定配布についての情報を提供し、それらを処理するために使用できるオプションについて説明します。 勘定配布は特定の勘定科目に元伝票の金額を割り当てるのに使用されます。"
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: AccountingDistribution
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 17231
 ms.assetid: 9030355d-8e6e-408b-9e7d-7b346eaa652c

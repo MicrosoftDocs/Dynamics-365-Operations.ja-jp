@@ -1,7 +1,7 @@
 ---
 title: "口座調整照合ルールの設定"
 description: "このトピックでは、口座調整プロセスを容易にするために、調整の照合ルールと調整の照合ルール セットを設定する方法を説明します。 調整の照合ルールは、調整プロセス中に口座取引明細書行および銀行ドキュメント明細行をフィルタ処理するために使用される一連の基準です。"
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 10/27/2017
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: BankReconciliationMatchRule, BankReconciliationMatchRuleSet
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 12971
 ms.assetid: b5073f83-31dc-404f-af42-3fd84a02a7c6

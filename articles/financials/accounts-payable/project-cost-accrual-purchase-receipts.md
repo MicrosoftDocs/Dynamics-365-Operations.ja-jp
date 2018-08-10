@@ -1,7 +1,7 @@
 ---
 title: "購買入庫におけるプロジェクト費用の発生"
 description: "このトピックでは、購買入庫での未収プロジェクト費用を、Microsoft Dynamics 365 for Finance and Operations で追跡する方法を説明します。"
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CostControlCommittedCost
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 266984
 ms.assetid: 61e7d2a3-5aab-4113-bccc-213f932885d2

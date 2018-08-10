@@ -1,7 +1,7 @@
 ---
 title: "注文納期日"
 description: "この記事では、注文納期に関する情報を提供します。 注文納期を使用すると、顧客への出荷日を確実性をもって約束し、柔軟性を持たせた上でこれらの日付を守るようにすることができます。"
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: SalesATP, SalesAvailableDlvDates
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.custom: 193933
 ms.assetid: 676fc53a-fa25-4688-9f26-1005316763b8
