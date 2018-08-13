@@ -46,8 +46,6 @@ Field Service および Finance and Operations 統合の第 1 のフェーズは
 
 Field Service および Finance and Operations 間のワーク オーダーを同期する方法の例を表示するには、短い YouTube ビデオ [Dynamics 365 for Field Service および Finance and Operations 間のワーク オーダーを同期する](https://www.youtube.com/watch?v=hAB4TDVMjxU)をご覧ください。
 
-[![](https://img.youtube.com/vi/hAB4TDVMjxU/0.jpg)](https://www.youtube.com/watch?v=hAB4TDVMjxU)
-
 ## <a name="system-requirements-for-finance-and-operations"></a>Finance and Operations のシステム要件
 Field Service 統合は、次のバージョンがサポートされています。
 
