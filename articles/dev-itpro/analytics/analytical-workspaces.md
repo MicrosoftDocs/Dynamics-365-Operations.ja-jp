@@ -19,7 +19,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: cf531c3a8f3bdb17314d1de436b98249169f82a3
 ms.openlocfilehash: 7e2a9297a417fb25384341dcabcafa41c50f8c84
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 05/22/2018
 - [CFO の概要 Power BI コンテンツ](CFO-power-bi.md)
 - [報酬 Power BI コンテンツ](compensation-power-bi.md)
 - [原価会計分析の Power BI コンテンツ](cost-accounting-analysis-content-pack.md) 
-- [ Power BI コンテンツでの原価管理](cost-management-content-pack.md)    
+- [ Power BI コンテンツでの原価管理](cost-management-content-pack.md)
 - [与信および回収管理 Power BI コンテンツ](../../financials/accounts-receivable/credit-collections-power-bi.md)
 - [従業員の開発 Power BI コンテンツ](employee-development-PBI.md) 
 - [財務インサイト Power BI コンテンツ](financial-insights.md)
@@ -46,5 +46,5 @@ ms.lasthandoff: 05/22/2018
 - [販売および収益性パフォーマンス Power BI コンテンツ](sales-profitability-performance-content-pack.md)
 - [仕入先支払 Power BI コンテンツ](../../financials/accounts-payable/Vendor-payments-workspace.md)
 - [倉庫パフォーマンス Power BI コンテンツ](warehouse-power-bi-content.md)
-- [従業員のメトリック Power BI コンテンツ](workforce-analysis-power-bi-content-pack.md)  
+- [従業員のメトリック Power BI コンテンツ](workforce-analysis-power-bi-content-pack.md)
 

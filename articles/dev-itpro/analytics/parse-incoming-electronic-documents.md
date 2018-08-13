@@ -43,12 +43,11 @@ ms.lasthandoff: 04/20/2018
 タスク ガイドのいくつかの手順を完了するには、次のファイルをダウンロードする必要があります。
 
 | コンテンツの説明           | ファイル                                                              |
---------------------------------|-------------------------------------------------------------------|
+|-------------------------------|-------------------------------------------------------------------|
 | ER データ モデル構成   | [EFSTAmodel.xml](https://go.microsoft.com/fwlink/?linkid=862266)  |
 | ER フォーマット構成       | [EFSTAformat.xml](https://go.microsoft.com/fwlink/?linkid=862266) |
 | Web サービス応答サンプル 1 | [Response1.xml](https://go.microsoft.com/fwlink/?linkid=862266)   |
 | Web サービス応答サンプル 2 | [Response2.xml](https://go.microsoft.com/fwlink/?linkid=862266)   |
 | Web サービス応答サンプル 3 | [Response3.xml](https://go.microsoft.com/fwlink/?linkid=862266)   |
 | Web サービス応答サンプル 4 | [Response4.xml](https://go.microsoft.com/fwlink/?linkid=862266)   |
-
 
