@@ -1,7 +1,7 @@
 ---
 title: "製品 ID"
 description: "このトピックでは、さまざまな種類の製品 ID に関する情報を提供し、製品データに製品 ID を追加する方法について説明します。"
-auhor: cvocph
+author: cvocph
 manager: AnnBe
 ms.date: 03/23/2018
 ms.topic: article

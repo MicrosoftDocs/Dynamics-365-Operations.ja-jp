@@ -15,7 +15,7 @@ ms.custom: 21681
 ms.assetid: d02eee15-bbeb-4e0f-a59f-0313da9334da
 ms.search.region: Global
 ms.author: mrolecki
-ms.search.validfrom: 2016-02-28
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
 ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
@@ -31,8 +31,7 @@ ms.lasthandoff: 04/20/2018
 
 ローカライズ &amp; 翻訳向け LCS ソリューションの要件の一部として、ローカライズ ISV ソリューション プロバイダーは国/地域コンテキストによって制御できるように、すべての国固有または地域固有の機能を実装する必要があります。 この記事では、これらの要件を満たすために、国/地域コンテキストを適用する方法について説明します。 この記事では、国コンテキスト プロパティを使用する方法と、どのようなアプリケーション オブジェクトがユーザー インターフェイス要素を制御するのかに関する情報を確認できます。
 
-<a name="countryregion-specific-functionality"></a>国/地域固有の機能
--------------------------------------
+## <a name="countryregion-specific-functionality"></a>国/地域固有の機能
 
 個々の地域の法律、規制、ビジネス要件への対応を容易にするために、国/地域に固有の機能を使用します。 地理は、国際標準化機構 (ISO) の国/地域コードで識別されている任意の国または地域です。 Microsoft Dynamics 365 for Finance and Operations では、国/地域のコンテキストを使用します。 次のテーブルでは、国/地域固有の機能をコンフィギュレーションするために使用する主要な要素について説明します。
 
