@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: 2ef7f71dc6d58108b498ed89e9175ff2ce900cda
+ms.sourcegitcommit: ce9c24a0a89dd4e6a0f3f2c7789b4f553d88d412
+ms.openlocfilehash: 31f496dccc410f8d12d99359493193853999abc6
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -45,8 +45,6 @@ ms.lasthandoff: 08/07/2018
 - [<span data-ttu-id="36405-116">Finance and Operations の自由書式の請求書への Field Service の契約の請求書</span><span class="sxs-lookup"><span data-stu-id="36405-116">Invoices in Field Service to free text invoices in Finance and Operations</span></span>](field-service-invoice.md)
 
 <span data-ttu-id="36405-117">Field Service および Finance and Operations 間のワーク オーダーを同期する方法の例を表示するには、短い YouTube ビデオ [Dynamics 365 for Field Service および Finance and Operations 間のワーク オーダーを同期する](https://www.youtube.com/watch?v=hAB4TDVMjxU)をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="36405-117">To see an example of how you can synchronize a work order between Field Service and Finance and Operations, watch the short YouTube video [Synchronize a work order between Dynamics 365 for Field Service and Finance and Operations](https://www.youtube.com/watch?v=hAB4TDVMjxU).</span></span>
-
-[![](https://img.youtube.com/vi/hAB4TDVMjxU/0.jpg)](https://www.youtube.com/watch?v=hAB4TDVMjxU)
 
 ## <a name="system-requirements-for-finance-and-operations"></a><span data-ttu-id="36405-118">Finance and Operations のシステム要件</span><span class="sxs-lookup"><span data-stu-id="36405-118">System requirements for Finance and Operations</span></span>
 <span data-ttu-id="36405-119">Field Service 統合は、次のバージョンがサポートされています。</span><span class="sxs-lookup"><span data-stu-id="36405-119">Field Service integration supports the following versions:</span></span>

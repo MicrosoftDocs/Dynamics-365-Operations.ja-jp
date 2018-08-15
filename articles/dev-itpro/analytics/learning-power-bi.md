@@ -16,10 +16,10 @@ ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 6a0c1459da8770a8cc880a48483102494feb38bf
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: a4ea4606f9987bc08565d43a1f05243acf88883c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -64,6 +64,4 @@ ms.lasthandoff: 05/08/2018
 | <span data-ttu-id="a7120-162">配置</span><span class="sxs-lookup"><span data-stu-id="a7120-162">Position</span></span>         | <span data-ttu-id="a7120-163">職位、タイトル、およびフルタイム相当額 (FTE)</span><span class="sxs-lookup"><span data-stu-id="a7120-163">Position, title, and full-time equivalent (FTE)</span></span>                  | <span data-ttu-id="a7120-164">コース議題、コース参加者</span><span class="sxs-lookup"><span data-stu-id="a7120-164">Course Agenda, Course Attendees</span></span> |
 | <span data-ttu-id="a7120-165">従業員名</span><span class="sxs-lookup"><span data-stu-id="a7120-165">Employee Name</span></span>    | <span data-ttu-id="a7120-166">名、姓、フルネーム</span><span class="sxs-lookup"><span data-stu-id="a7120-166">First name, last name, and full name</span></span>                             | <span data-ttu-id="a7120-167">コース出席者</span><span class="sxs-lookup"><span data-stu-id="a7120-167">Course Attendees</span></span> |
 | <span data-ttu-id="a7120-168">従業員の肩書き</span><span class="sxs-lookup"><span data-stu-id="a7120-168">Employee Title</span></span>   | <span data-ttu-id="a7120-169">役職と勤続日数</span><span class="sxs-lookup"><span data-stu-id="a7120-169">Title and seniority date</span></span>                                         | <span data-ttu-id="a7120-170">コース出席者</span><span class="sxs-lookup"><span data-stu-id="a7120-170">Course Attendees</span></span> |
-
-
 

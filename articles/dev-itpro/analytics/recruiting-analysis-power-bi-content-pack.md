@@ -19,10 +19,10 @@ ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 63432fe5fe98b2c20ddbf9ebec6ac14b981f0106
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 2d8c0e0e52a8dba2a1ea5bf330cdea01e3cfb60d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 05/08/2018
 <span data-ttu-id="76072-105">このトピックでは、**Recruiting** Microsoft Power BI コンテンツについて説明します。</span><span class="sxs-lookup"><span data-stu-id="76072-105">This topic describes the **Recruiting** Microsoft Power BI content.</span></span> <span data-ttu-id="76072-106">Power BI レポートにアクセスする方法を説明し、コンテンツを作成するために使用したデータ モデルおよびエンティティについての情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="76072-106">It explains how to access the Power BI reports, and provides information about the data model and entities that were used to build the content.</span></span>
 
 ## <a name="accessing-the-power-bi-content"></a><span data-ttu-id="76072-107">Power BI コンテンツへのアクセス</span><span class="sxs-lookup"><span data-stu-id="76072-107">Accessing the Power BI content</span></span>
-<span data-ttu-id="76072-108">**採用** Power BI コンテンツが**採用管理**ワークスペースで表示されます。</span><span class="sxs-lookup"><span data-stu-id="76072-108">The **Recruiting** Power BI content is shown in the **Recruitment management** workspace.</span></span> 
+<span data-ttu-id="76072-108">**採用** Power BI コンテンツが**採用管理**ワークスペースで表示されます。</span><span class="sxs-lookup"><span data-stu-id="76072-108">The **Recruiting** Power BI content is shown in the **Recruitment management** workspace.</span></span>
 
 ## <a name="reports-and-visuals-in-the-recruitment-management-workspace"></a><span data-ttu-id="76072-109">採用管理ワークスペースでのレポートおよびビジュアル</span><span class="sxs-lookup"><span data-stu-id="76072-109">Reports and visuals in the Recruitment management workspace</span></span>
 <span data-ttu-id="76072-110">[**採用管理**] ワークスペースは、[**分析**] タブを含みます。このタブには、採用のための埋め込み Power BI コンテンツが含まれています。</span><span class="sxs-lookup"><span data-stu-id="76072-110">The **Recruitment management** workspace contains an **Analytics** tab. This tab contains the embedded Power BI content for recruiting.</span></span> <span data-ttu-id="76072-111">このコンテンツには、[概要] タブと詳細が含まれる追加のタブがあります。</span><span class="sxs-lookup"><span data-stu-id="76072-111">The content consists of an overview tab and additional tabs that contain details.</span></span> <span data-ttu-id="76072-112">次の表に各タブのレポートを示します。</span><span class="sxs-lookup"><span data-stu-id="76072-112">The following table describes the reports on each tab.</span></span>
@@ -66,6 +66,4 @@ ms.lasthandoff: 05/08/2018
 | <span data-ttu-id="76072-163">パフォーマンス</span><span class="sxs-lookup"><span data-stu-id="76072-163">Performance</span></span>          | <span data-ttu-id="76072-164">評価、説明、評価モデル</span><span class="sxs-lookup"><span data-stu-id="76072-164">Rating, description, and rating model</span></span>                            | <span data-ttu-id="76072-165">申請者、採用済申請者、退職済申請者</span><span class="sxs-lookup"><span data-stu-id="76072-165">Applicant, Employed Applicant, Terminated Applicant</span></span> |
 | <span data-ttu-id="76072-166">採用プロジェクト</span><span class="sxs-lookup"><span data-stu-id="76072-166">Recruitment Project</span></span>  | <span data-ttu-id="76072-167">プロジェクト説明、プロジェクト ステータス、空き状況</span><span class="sxs-lookup"><span data-stu-id="76072-167">Project description, project status, and openings</span></span>                | <span data-ttu-id="76072-168">申請者、採用済申請者、退職済申請者</span><span class="sxs-lookup"><span data-stu-id="76072-168">Applicant, Employed Applicant, Terminated Applicant</span></span> |
 | <span data-ttu-id="76072-169">退職済申請者</span><span class="sxs-lookup"><span data-stu-id="76072-169">Terminated Applicant</span></span> | <span data-ttu-id="76072-170">退職済申請者、理由、パフォーマンス、終了日</span><span class="sxs-lookup"><span data-stu-id="76072-170">Terminated applicants, reason, performance, and termination date</span></span> | <span data-ttu-id="76072-171">会社、カレンダーのオフセット、日付、地理的な場所、パフォーマンス、人口統計、雇用、メディア、採用プロジェクト、申請者名</span><span class="sxs-lookup"><span data-stu-id="76072-171">Company, Calendar Offset, Date, Geographic Location, Performance, Demographics, Employment, Media, Recruitment Project, Applicant Name</span></span> |
-
-
 

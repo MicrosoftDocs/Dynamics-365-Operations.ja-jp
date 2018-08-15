@@ -18,10 +18,10 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: be47a20371f3de292baf1bb74e2e08aec821cd30
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: bdc3c7260047671acb12b229cf65d1928d0579e4
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 05/08/2018
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="db48c-104">この記事では、構成キーと国/地域の両方の実装の観点から適用できるシナリオを説明します。</span><span class="sxs-lookup"><span data-stu-id="db48c-104">This article provides scenarios that are applicable from an implementation perspective for both configuration keys and country/region.</span></span> 
+<span data-ttu-id="db48c-104">この記事では、構成キーと国/地域の両方の実装の観点から適用できるシナリオを説明します。</span><span class="sxs-lookup"><span data-stu-id="db48c-104">This article provides scenarios that are applicable from an implementation perspective for both configuration keys and country/region.</span></span>
 
 ### <a name="customer-table-schema"></a><span data-ttu-id="db48c-105">顧客テーブル スキーマ</span><span class="sxs-lookup"><span data-stu-id="db48c-105">Customer table schema</span></span>
 
@@ -58,20 +58,24 @@ ms.lasthandoff: 05/08/2018
 
 ### <a name="scenario--field-level-only"></a><span data-ttu-id="db48c-144">シナリオ: フィールド レベルでのみ</span><span class="sxs-lookup"><span data-stu-id="db48c-144">Scenario – Field level only</span></span>
 
-<span data-ttu-id="db48c-145">開発者のアイザックは、地域の設定を含むフィールドがある顧客エンティティを作成します。</span><span class="sxs-lookup"><span data-stu-id="db48c-145">Isaac, a developer, builds a customer entity that has fields that contain regional settings.</span></span> <span data-ttu-id="db48c-146">エンティティは OData によって消費されます。</span><span class="sxs-lookup"><span data-stu-id="db48c-146">The entity is consumed through OData.</span></span> <span data-ttu-id="db48c-147">**読み取り操作の場合:** エンティティの消費者は、この情報を使用して、有効な地域マッピングを完了します。</span><span class="sxs-lookup"><span data-stu-id="db48c-147">**For read operations:** The consumer of the entity uses this information to complete an effective regional mapping.</span></span> <span data-ttu-id="db48c-148">コンシューマーは、その地域に必要ではないフィールドを無視します。</span><span class="sxs-lookup"><span data-stu-id="db48c-148">The consumer ignores the fields that aren't required for that region.</span></span> <span data-ttu-id="db48c-149">たとえば、デンマーク (DK) の消費者は、**EAN** フィールドおよびコア フィールドのみの値の読み取りに関連しています。</span><span class="sxs-lookup"><span data-stu-id="db48c-149">For example, consumers in Denmark (DK) are concerned with reading the values of the **EAN** field and core fields only.</span></span> <span data-ttu-id="db48c-150">**書き込み操作の場合:** エンティティの消費者は、この情報を使用して、データを入力するために必要なフィールドのみを識別します。</span><span class="sxs-lookup"><span data-stu-id="db48c-150">**For write operations:** The consumer of the entity uses this information to identify only the fields that are required to populate data.</span></span> <span data-ttu-id="db48c-151">コンシューマーは、地域のフィールドおよび関連するコア フィールドの検証が行われることを期待しています。</span><span class="sxs-lookup"><span data-stu-id="db48c-151">The consumer expects validation to occur for regional fields and associated core fields.</span></span>
+<span data-ttu-id="db48c-145">開発者のアイザックは、地域の設定を含むフィールドがある顧客エンティティを作成します。</span><span class="sxs-lookup"><span data-stu-id="db48c-145">Isaac, a developer, builds a customer entity that has fields that contain regional settings.</span></span> <span data-ttu-id="db48c-146">エンティティは OData によって消費されます。</span><span class="sxs-lookup"><span data-stu-id="db48c-146">The entity is consumed through OData.</span></span>
+
+<span data-ttu-id="db48c-147">**読み取り操作の場合:** エンティティの消費者は、この情報を使用して、有効な地域マッピングを完了します。</span><span class="sxs-lookup"><span data-stu-id="db48c-147">**For read operations:** The consumer of the entity uses this information to complete an effective regional mapping.</span></span> <span data-ttu-id="db48c-148">コンシューマーは、その地域に必要ではないフィールドを無視します。</span><span class="sxs-lookup"><span data-stu-id="db48c-148">The consumer ignores the fields that aren't required for that region.</span></span> <span data-ttu-id="db48c-149">たとえば、デンマーク (DK) の消費者は、**EAN** フィールドおよびコア フィールドのみの値の読み取りに関連しています。</span><span class="sxs-lookup"><span data-stu-id="db48c-149">For example, consumers in Denmark (DK) are concerned with reading the values of the **EAN** field and core fields only.</span></span>
+
+<span data-ttu-id="db48c-150">**書き込み操作の場合:** エンティティの消費者は、この情報を使用して、データを入力するために必要なフィールドのみを識別します。</span><span class="sxs-lookup"><span data-stu-id="db48c-150">**For write operations:** The consumer of the entity uses this information to identify only the fields that are required to populate data.</span></span> <span data-ttu-id="db48c-151">コンシューマーは、地域のフィールドおよび関連するコア フィールドの検証が行われることを期待しています。</span><span class="sxs-lookup"><span data-stu-id="db48c-151">The consumer expects validation to occur for regional fields and associated core fields.</span></span>
 
 ### <a name="behaviors--fields-only"></a><span data-ttu-id="db48c-152">動作 – フィールドのみ</span><span class="sxs-lookup"><span data-stu-id="db48c-152">Behaviors – Fields only</span></span>
 
-| <span data-ttu-id="db48c-153">シナリオ</span><span class="sxs-lookup"><span data-stu-id="db48c-153">Scenario</span></span>                        | <span data-ttu-id="db48c-154">説明</span><span class="sxs-lookup"><span data-stu-id="db48c-154">Description</span></span>                                                                                                                                                                     |
-|---------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="db48c-155">デザイン</span><span class="sxs-lookup"><span data-stu-id="db48c-155">Design</span></span>                          | <span data-ttu-id="db48c-156">エンティティは、自動的にローカライズ プロパティを基になるフィールドから継承します。</span><span class="sxs-lookup"><span data-stu-id="db48c-156">Entities automatically inherit localization properties from underlying fields.</span></span>                                                                                                  |
-| <span data-ttu-id="db48c-157">デザイン</span><span class="sxs-lookup"><span data-stu-id="db48c-157">Design</span></span>                          | <span data-ttu-id="db48c-158">開発者は、エンティティ フィールドのローカライズ プロパティを上書きまたは設定することはできません。</span><span class="sxs-lookup"><span data-stu-id="db48c-158">Developers can’t override or set localization properties on entity fields.</span></span> <span data-ttu-id="db48c-159">これらのプロパティは、テーブルからのみ継承する必要があります。</span><span class="sxs-lookup"><span data-stu-id="db48c-159">These properties should be inherited only from tables.</span></span> <span data-ttu-id="db48c-160">マップされていないフィールドにのみ上書き。</span><span class="sxs-lookup"><span data-stu-id="db48c-160">Only override on unmapped fields.</span></span>             |
-| <span data-ttu-id="db48c-161">読み取り動作 (OData メタデータ)</span><span class="sxs-lookup"><span data-stu-id="db48c-161">Read behavior (OData metadata)</span></span>  | <span data-ttu-id="db48c-162">OData のエンティティのコンシューマーは、メタデータまたは注釈を使用して、ローカライズするフィールドを指定します。</span><span class="sxs-lookup"><span data-stu-id="db48c-162">The consumer of an entity from OData will have metadata or annotations to specify which fields are localized.</span></span>                                                                   |
-| <span data-ttu-id="db48c-163">読み取り動作 (データ管理)</span><span class="sxs-lookup"><span data-stu-id="db48c-163">Read behavior (Data management)</span></span> | <span data-ttu-id="db48c-164">インポート/エクスポート フィールドでは、情報がエンドユーザーにわかりやすくなるように、メタデータに国/地域の値を表示します。</span><span class="sxs-lookup"><span data-stu-id="db48c-164">In import/export fields, metadata displays country/region values, so that this information is obvious to the end user.</span></span>                                                          |
+| <span data-ttu-id="db48c-153">シナリオ</span><span class="sxs-lookup"><span data-stu-id="db48c-153">Scenario</span></span>                        | <span data-ttu-id="db48c-154">説明</span><span class="sxs-lookup"><span data-stu-id="db48c-154">Description</span></span> |
+|---------------------------------|-------------|
+| <span data-ttu-id="db48c-155">デザイン</span><span class="sxs-lookup"><span data-stu-id="db48c-155">Design</span></span>                          | <span data-ttu-id="db48c-156">エンティティは、自動的にローカライズ プロパティを基になるフィールドから継承します。</span><span class="sxs-lookup"><span data-stu-id="db48c-156">Entities automatically inherit localization properties from underlying fields.</span></span> |
+| <span data-ttu-id="db48c-157">デザイン</span><span class="sxs-lookup"><span data-stu-id="db48c-157">Design</span></span>                          | <span data-ttu-id="db48c-158">開発者は、エンティティ フィールドのローカライズ プロパティを上書きまたは設定することはできません。</span><span class="sxs-lookup"><span data-stu-id="db48c-158">Developers can’t override or set localization properties on entity fields.</span></span> <span data-ttu-id="db48c-159">これらのプロパティは、テーブルからのみ継承する必要があります。</span><span class="sxs-lookup"><span data-stu-id="db48c-159">These properties should be inherited only from tables.</span></span> <span data-ttu-id="db48c-160">マップされていないフィールドにのみ上書き。</span><span class="sxs-lookup"><span data-stu-id="db48c-160">Only override on unmapped fields.</span></span> |
+| <span data-ttu-id="db48c-161">読み取り動作 (OData メタデータ)</span><span class="sxs-lookup"><span data-stu-id="db48c-161">Read behavior (OData metadata)</span></span>  | <span data-ttu-id="db48c-162">OData のエンティティのコンシューマーは、メタデータまたは注釈を使用して、ローカライズするフィールドを指定します。</span><span class="sxs-lookup"><span data-stu-id="db48c-162">The consumer of an entity from OData will have metadata or annotations to specify which fields are localized.</span></span> |
+| <span data-ttu-id="db48c-163">読み取り動作 (データ管理)</span><span class="sxs-lookup"><span data-stu-id="db48c-163">Read behavior (Data management)</span></span> | <span data-ttu-id="db48c-164">インポート/エクスポート フィールドでは、情報がエンドユーザーにわかりやすくなるように、メタデータに国/地域の値を表示します。</span><span class="sxs-lookup"><span data-stu-id="db48c-164">In import/export fields, metadata displays country/region values, so that this information is obvious to the end user.</span></span> |
 | <span data-ttu-id="db48c-165">読み取り動作</span><span class="sxs-lookup"><span data-stu-id="db48c-165">Read behavior</span></span>                   | <span data-ttu-id="db48c-166">会社間の読み取り操作中に、ローカライズされたフィールドのデータは、コンテキストが一致した場合にのみ表示されます。</span><span class="sxs-lookup"><span data-stu-id="db48c-166">During cross-company read operations, data from localized fields is displayed only if the context matches.</span></span> <span data-ttu-id="db48c-167">これが既にテーブル/ビューを通じて実装されている必要があることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="db48c-167">Note that this should already be implemented through the table/view.</span></span> |
-| <span data-ttu-id="db48c-168">読み取り動作 (パフォーマンス)</span><span class="sxs-lookup"><span data-stu-id="db48c-168">Read behavior (Performance)</span></span>     | <span data-ttu-id="db48c-169">会社固有の読み取り操作中に、コンテキストが一致しない場合、ローカライズされたフィールドはクエリから削除されます。</span><span class="sxs-lookup"><span data-stu-id="db48c-169">During company-specific read operations, localized fields are dropped from the query when the context doesn't match.</span></span>                                                            |
-| <span data-ttu-id="db48c-170">書き込み</span><span class="sxs-lookup"><span data-stu-id="db48c-170">Write</span></span>                           | <span data-ttu-id="db48c-171">ローカライズされたフィールドへの書き込み操作中に、フィールドがコンテキストに一致しない場合はハード エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="db48c-171">During write operations to localized fields, hard errors occur if the fields don't match the context.</span></span>                                                                           |
-| <span data-ttu-id="db48c-172">(共有テーブル)</span><span class="sxs-lookup"><span data-stu-id="db48c-172">(Shared table)</span></span>                  | <span data-ttu-id="db48c-173">データ ソースまたはフィールドに、共有 (グローバル) テーブルである国/地域が含まれている場合、キーが適用されていない場合と同じようにすべての工程が無視されます。</span><span class="sxs-lookup"><span data-stu-id="db48c-173">If the data source or fields contain a country/region that is a shared (global) table, all operations are ignored, just as if no keys are applied.</span></span>                              |
+| <span data-ttu-id="db48c-168">読み取り動作 (パフォーマンス)</span><span class="sxs-lookup"><span data-stu-id="db48c-168">Read behavior (Performance)</span></span>     | <span data-ttu-id="db48c-169">会社固有の読み取り操作中に、コンテキストが一致しない場合、ローカライズされたフィールドはクエリから削除されます。</span><span class="sxs-lookup"><span data-stu-id="db48c-169">During company-specific read operations, localized fields are dropped from the query when the context doesn't match.</span></span> |
+| <span data-ttu-id="db48c-170">書き込み</span><span class="sxs-lookup"><span data-stu-id="db48c-170">Write</span></span>                           | <span data-ttu-id="db48c-171">ローカライズされたフィールドへの書き込み操作中に、フィールドがコンテキストに一致しない場合はハード エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="db48c-171">During write operations to localized fields, hard errors occur if the fields don't match the context.</span></span> |
+| <span data-ttu-id="db48c-172">(共有テーブル)</span><span class="sxs-lookup"><span data-stu-id="db48c-172">(Shared table)</span></span>                  | <span data-ttu-id="db48c-173">データ ソースまたはフィールドに、共有 (グローバル) テーブルである国/地域が含まれている場合、キーが適用されていない場合と同じようにすべての工程が無視されます。</span><span class="sxs-lookup"><span data-stu-id="db48c-173">If the data source or fields contain a country/region that is a shared (global) table, all operations are ignored, just as if no keys are applied.</span></span> |
 
 ### <a name="behavior--data-source"></a><span data-ttu-id="db48c-174">動作 – データ ソース</span><span class="sxs-lookup"><span data-stu-id="db48c-174">Behavior – Data source</span></span>
 
@@ -79,13 +83,13 @@ ms.lasthandoff: 05/08/2018
 
     Entity E1
 
-         |_ Data Source 1 (DS1)
+        |_ Data Source 1 (DS1)
 
               Field1
 
               Field2
 
-         |_Data Source 2 (DS2) UK
+        |_Data Source 2 (DS2) UK
 
               Field3
 
@@ -102,7 +106,4 @@ ms.lasthandoff: 05/08/2018
     |_F3 (UK inferred)
 
     |_F4 (UK inferred)
-
-
-
 

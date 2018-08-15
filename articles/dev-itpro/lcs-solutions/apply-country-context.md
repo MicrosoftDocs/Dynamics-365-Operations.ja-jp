@@ -15,13 +15,13 @@ ms.custom: 21681
 ms.assetid: d02eee15-bbeb-4e0f-a59f-0313da9334da
 ms.search.region: Global
 ms.author: mrolecki
-ms.search.validfrom: 2016-02-28
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 2cee5b35e0e3d9d56cb7603e01bfd50cfe120b4f
+ms.sourcegitcommit: 384c38f3e154495c882434d1c85cef63396cd897
+ms.openlocfilehash: 62dc6a69f859963b69907cde175d94f2b852a656
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/15/2018
 
 ---
 
@@ -31,8 +31,7 @@ ms.lasthandoff: 05/08/2018
 
 <span data-ttu-id="d8c74-106">ローカライズ &amp; 翻訳向け LCS ソリューションの要件の一部として、ローカライズ ISV ソリューション プロバイダーは国/地域コンテキストによって制御できるように、すべての国固有または地域固有の機能を実装する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d8c74-106">As part of the requirements for LCS solutions for localization &amp; translation, localization ISV solution providers must implement all country-specific or region-specific functionality so that it can be controlled by country/region context.</span></span> <span data-ttu-id="d8c74-107">この記事では、これらの要件を満たすために、国/地域コンテキストを適用する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="d8c74-107">This article describes how to apply country/region context to meet these requirements.</span></span> <span data-ttu-id="d8c74-108">この記事では、国コンテキスト プロパティを使用する方法と、どのようなアプリケーション オブジェクトがユーザー インターフェイス要素を制御するのかに関する情報を確認できます。</span><span class="sxs-lookup"><span data-stu-id="d8c74-108">In this article you can find information how you should use country context property and what application objects control user interface elements.</span></span>
 
-<a name="countryregion-specific-functionality"></a><span data-ttu-id="d8c74-109">国/地域固有の機能</span><span class="sxs-lookup"><span data-stu-id="d8c74-109">Country/region-specific functionality</span></span>
--------------------------------------
+## <a name="countryregion-specific-functionality"></a><span data-ttu-id="d8c74-109">国/地域固有の機能</span><span class="sxs-lookup"><span data-stu-id="d8c74-109">Country/region-specific functionality</span></span>
 
 <span data-ttu-id="d8c74-110">個々の地域の法律、規制、ビジネス要件への対応を容易にするために、国/地域に固有の機能を使用します。</span><span class="sxs-lookup"><span data-stu-id="d8c74-110">You use country/region-specific functionality to help meet the legal, regulatory, and business requirements of individual geographies.</span></span> <span data-ttu-id="d8c74-111">地理は、国際標準化機構 (ISO) の国/地域コードで識別されている任意の国または地域です。</span><span class="sxs-lookup"><span data-stu-id="d8c74-111">A geography is any country or region that is identified by an International Organization for Standardization (ISO) country or region code.</span></span> <span data-ttu-id="d8c74-112">Microsoft Dynamics 365 for Finance and Operations では、国/地域のコンテキストを使用します。</span><span class="sxs-lookup"><span data-stu-id="d8c74-112">In Microsoft Dynamics 365 for Finance and Operations, you use country/region context.</span></span> <span data-ttu-id="d8c74-113">次のテーブルでは、国/地域固有の機能をコンフィギュレーションするために使用する主要な要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="d8c74-113">The following table highlights the main elements that you use to configure country/region-specific functionality.</span></span>
 

@@ -19,10 +19,10 @@ ms.author: nselin
 ms.search.validFrom: 2017-11-10
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 64015959e8b02fff9c2ade456766ebb7d7f3bf17
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 1b16f463b5f4b1c779105dea32dbd1e581f1f219
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 # <a name="parse-incoming-documents-to-update-application-data"></a><span data-ttu-id="0bb16-103">アプリケーションのデータを更新するために受信したドキュメントを解析する</span><span class="sxs-lookup"><span data-stu-id="0bb16-103">Parse incoming documents to update application data</span></span>
@@ -43,12 +43,11 @@ ms.lasthandoff: 05/08/2018
 <span data-ttu-id="0bb16-116">タスク ガイドのいくつかの手順を完了するには、次のファイルをダウンロードする必要があります。</span><span class="sxs-lookup"><span data-stu-id="0bb16-116">To complete some steps of the task guide, you must download the following files:</span></span>
 
 | <span data-ttu-id="0bb16-117">コンテンツの説明</span><span class="sxs-lookup"><span data-stu-id="0bb16-117">Content description</span></span>           | <span data-ttu-id="0bb16-118">ファイル</span><span class="sxs-lookup"><span data-stu-id="0bb16-118">File</span></span>                                                              |
---------------------------------|-------------------------------------------------------------------|
+|-------------------------------|-------------------------------------------------------------------|
 | <span data-ttu-id="0bb16-119">ER データ モデル構成</span><span class="sxs-lookup"><span data-stu-id="0bb16-119">ER data model configuration</span></span>   | [<span data-ttu-id="0bb16-120">EFSTAmodel.xml</span><span class="sxs-lookup"><span data-stu-id="0bb16-120">EFSTAmodel.xml</span></span>](https://go.microsoft.com/fwlink/?linkid=862266)  |
 | <span data-ttu-id="0bb16-121">ER フォーマット構成</span><span class="sxs-lookup"><span data-stu-id="0bb16-121">ER format configuration</span></span>       | [<span data-ttu-id="0bb16-122">EFSTAformat.xml</span><span class="sxs-lookup"><span data-stu-id="0bb16-122">EFSTAformat.xml</span></span>](https://go.microsoft.com/fwlink/?linkid=862266) |
 | <span data-ttu-id="0bb16-123">Web サービス応答サンプル 1</span><span class="sxs-lookup"><span data-stu-id="0bb16-123">Web service response sample 1</span></span> | [<span data-ttu-id="0bb16-124">Response1.xml</span><span class="sxs-lookup"><span data-stu-id="0bb16-124">Response1.xml</span></span>](https://go.microsoft.com/fwlink/?linkid=862266)   |
 | <span data-ttu-id="0bb16-125">Web サービス応答サンプル 2</span><span class="sxs-lookup"><span data-stu-id="0bb16-125">Web service response sample 2</span></span> | [<span data-ttu-id="0bb16-126">Response2.xml</span><span class="sxs-lookup"><span data-stu-id="0bb16-126">Response2.xml</span></span>](https://go.microsoft.com/fwlink/?linkid=862266)   |
 | <span data-ttu-id="0bb16-127">Web サービス応答サンプル 3</span><span class="sxs-lookup"><span data-stu-id="0bb16-127">Web service response sample 3</span></span> | [<span data-ttu-id="0bb16-128">Response3.xml</span><span class="sxs-lookup"><span data-stu-id="0bb16-128">Response3.xml</span></span>](https://go.microsoft.com/fwlink/?linkid=862266)   |
 | <span data-ttu-id="0bb16-129">Web サービス応答サンプル 4</span><span class="sxs-lookup"><span data-stu-id="0bb16-129">Web service response sample 4</span></span> | [<span data-ttu-id="0bb16-130">Response4.xml</span><span class="sxs-lookup"><span data-stu-id="0bb16-130">Response4.xml</span></span>](https://go.microsoft.com/fwlink/?linkid=862266)   |
-
 

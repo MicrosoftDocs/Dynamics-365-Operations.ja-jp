@@ -15,13 +15,13 @@ ms.custom: 89563
 ms.assetid: 
 ms.search.region: Global
 ms.author: fdahl
-ms.search.validfrom: 2017-07-01
+ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: f1fb1cf05fc37d81bc5219d2c3b48790d53eeb34
+ms.sourcegitcommit: 384c38f3e154495c882434d1c85cef63396cd897
+ms.openlocfilehash: 2dcc7423927bc1833730ff48f2a2712ceea4fe34
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/15/2018
 
 ---
 
