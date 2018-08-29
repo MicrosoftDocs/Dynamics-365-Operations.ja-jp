@@ -18,58 +18,58 @@ ms.author: rbrow
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: a5f85c7734c93642062b6f6257185daf298d7e0f
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: e945f2cce91704e9cc95e49e397f08cde00e5e7f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="add-dimensions-to-an-excel-template"></a><span data-ttu-id="cb272-103">Excel テンプレートへの分析コードの追加</span><span class="sxs-lookup"><span data-stu-id="cb272-103">Add dimensions to an Excel template</span></span>
+# <a name="add-dimensions-to-excel-templates"></a><span data-ttu-id="a088c-103">Excel テンプレートへの分析コードの追加</span><span class="sxs-lookup"><span data-stu-id="a088c-103">Add dimensions to Excel templates</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="cb272-104">このトピックでは、分析コード、エンティティを持つ分析コード、および使用できる分析コード コントロールについて説明します。</span><span class="sxs-lookup"><span data-stu-id="cb272-104">This topic provides information about dimensions, dimensions that have entities, and the dimension controls that are available.</span></span>
+<span data-ttu-id="a088c-104">このトピックでは、分析コード、エンティティを持つ分析コード、および使用できる分析コード コントロールについて説明します。</span><span class="sxs-lookup"><span data-stu-id="a088c-104">This topic provides information about dimensions, dimensions that have entities, and the dimension controls that are available.</span></span>
 
-<span data-ttu-id="cb272-105">インストール後に Microsoft Excel テンプレートに存在する唯一の値は MainAccount です。</span><span class="sxs-lookup"><span data-stu-id="cb272-105">The only value that is present on Microsoft Excel templates after installation is the MainAccount.</span></span> <span data-ttu-id="cb272-106">これは、すべての顧客が持つ唯一の分析コード です。</span><span class="sxs-lookup"><span data-stu-id="cb272-106">This is the only dimension that all customers will have.</span></span> <span data-ttu-id="cb272-107">Microsoft Excel テンプレートに分析コードを追加するには、次の手順を実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="cb272-107">To add the dimensions to Microsoft Excel templates you need to complete the following steps:</span></span>
+<span data-ttu-id="a088c-105">インストール後に Microsoft Excel テンプレートに存在する唯一の値は MainAccount です。</span><span class="sxs-lookup"><span data-stu-id="a088c-105">The only value that is present on Microsoft Excel templates after installation is the MainAccount.</span></span> <span data-ttu-id="a088c-106">これは、すべての顧客が持つ唯一の分析コード です。</span><span class="sxs-lookup"><span data-stu-id="a088c-106">This is the only dimension that all customers will have.</span></span> <span data-ttu-id="a088c-107">Microsoft Excel テンプレートに分析コードを追加するには、次の手順を実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a088c-107">To add the dimensions to Microsoft Excel templates you need to complete the following steps:</span></span>
 
-1.  <span data-ttu-id="cb272-108">DimensionCombinationEntity または DimensionSet エンティティに分析コードを追加します。</span><span class="sxs-lookup"><span data-stu-id="cb272-108">Add dimensions to the DimensionCombinationEntity or the DimensionSet entity.</span></span>
-2.  <span data-ttu-id="cb272-109">個々の列に分析コードを配置する各テンプレートに分析コードを追加します。</span><span class="sxs-lookup"><span data-stu-id="cb272-109">Add the dimensions to each template where you want dimensions in separate columns.</span></span> <span data-ttu-id="cb272-110">詳細については、[Excel で開くエクスペリエンスの作成](../office-integration/office-integration-edit-excel.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="cb272-110">For more information, see [Create open in Excel experiences](../office-integration/office-integration-edit-excel.md).</span></span>
-3. <span data-ttu-id="cb272-111">[Excel で財務分析コード値の検索機能](add-dimensions-excel-templates.md) を追加します。</span><span class="sxs-lookup"><span data-stu-id="cb272-111">Add the [capability to look up financial dimension values in Excel](add-dimensions-excel-templates.md).</span></span>
-3.  <span data-ttu-id="cb272-112">テンプレートを公開します。</span><span class="sxs-lookup"><span data-stu-id="cb272-112">Publish the template.</span></span>
+1.  <span data-ttu-id="a088c-108">DimensionCombinationEntity または DimensionSet エンティティに分析コードを追加します。</span><span class="sxs-lookup"><span data-stu-id="a088c-108">Add dimensions to the DimensionCombinationEntity or the DimensionSet entity.</span></span>
+2.  <span data-ttu-id="a088c-109">個々の列に分析コードを配置する各テンプレートに分析コードを追加します。</span><span class="sxs-lookup"><span data-stu-id="a088c-109">Add the dimensions to each template where you want dimensions in separate columns.</span></span> <span data-ttu-id="a088c-110">詳細については、[Excel で開くエクスペリエンスの作成](../office-integration/office-integration-edit-excel.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a088c-110">For more information, see [Create open in Excel experiences](../office-integration/office-integration-edit-excel.md).</span></span>
+3. <span data-ttu-id="a088c-111">[Excel で財務分析コード値の検索機能](add-dimensions-excel-templates.md) を追加します。</span><span class="sxs-lookup"><span data-stu-id="a088c-111">Add the [capability to look up financial dimension values in Excel](add-dimensions-excel-templates.md).</span></span>
+3.  <span data-ttu-id="a088c-112">テンプレートを公開します。</span><span class="sxs-lookup"><span data-stu-id="a088c-112">Publish the template.</span></span>
 
-<span data-ttu-id="cb272-113">このトピックでは、DimensionCombinationEntity を変更して Excel の列で分析コードを有効にする方法を示します。</span><span class="sxs-lookup"><span data-stu-id="cb272-113">This topic shows how to modify DimensionCombinationEntity to enable the dimensions in columns for Excel.</span></span> <span data-ttu-id="cb272-114">同じ手順を使用して DimensionSet エンティティを変更できます。</span><span class="sxs-lookup"><span data-stu-id="cb272-114">The same steps can be used to modify the DimensionSet entity.</span></span> 
+<span data-ttu-id="a088c-113">このトピックでは、DimensionCombinationEntity を変更して Excel の列で分析コードを有効にする方法を示します。</span><span class="sxs-lookup"><span data-stu-id="a088c-113">This topic shows how to modify DimensionCombinationEntity to enable the dimensions in columns for Excel.</span></span> <span data-ttu-id="a088c-114">同じ手順を使用して DimensionSet エンティティを変更できます。</span><span class="sxs-lookup"><span data-stu-id="a088c-114">The same steps can be used to modify the DimensionSet entity.</span></span> 
 
-<span data-ttu-id="cb272-115">**注記:** この情報は、リリースごとに変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="cb272-115">**Note:**  This information is subject to change for each release.</span></span> <span data-ttu-id="cb272-116">したがって、頻繁に最新の情報を確認してください。</span><span class="sxs-lookup"><span data-stu-id="cb272-116">Therefore, be sure to check back frequently for the most up-to-date information.</span></span>
+<span data-ttu-id="a088c-115">**注記:** この情報は、リリースごとに変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="a088c-115">**Note:**  This information is subject to change for each release.</span></span> <span data-ttu-id="a088c-116">したがって、頻繁に最新の情報を確認してください。</span><span class="sxs-lookup"><span data-stu-id="a088c-116">Therefore, be sure to check back frequently for the most up-to-date information.</span></span>
 
-## <a name="add-dimensions--dynamics-365-for-operations-version-1611-build-7115413036-november-2016"></a><span data-ttu-id="cb272-117">Dynamics 365 for Operations (バージョン 1611、ビルド 7.1.1541.3036+、2016 年 11 月) の分析コードの追加</span><span class="sxs-lookup"><span data-stu-id="cb272-117">Add dimensions  Dynamics 365 for Operations (version 1611, build 7.1.1541.3036+, November 2016)</span></span>
-<span data-ttu-id="cb272-118">Visual Studio で OData アドイン用の財務分析コードを追加がリリースされ、**DimensionCombinationEntity** の変更が大幅に簡素化されています。</span><span class="sxs-lookup"><span data-stu-id="cb272-118">Modifying the **DimensionCombinationEntity** has been greatly simplified with the release of the Add financial dimensions for OData Addin in Visual Studio.</span></span> 
+## <a name="add-dimensions--dynamics-365-for-operations-version-1611-build-7115413036-november-2016"></a><span data-ttu-id="a088c-117">Dynamics 365 for Operations (バージョン 1611、ビルド 7.1.1541.3036+、2016 年 11 月) の分析コードの追加</span><span class="sxs-lookup"><span data-stu-id="a088c-117">Add dimensions  Dynamics 365 for Operations (version 1611, build 7.1.1541.3036+, November 2016)</span></span>
+<span data-ttu-id="a088c-118">Visual Studio で OData アドイン用の財務分析コードを追加がリリースされ、**DimensionCombinationEntity** の変更が大幅に簡素化されています。</span><span class="sxs-lookup"><span data-stu-id="a088c-118">Modifying the **DimensionCombinationEntity** has been greatly simplified with the release of the Add financial dimensions for OData Addin in Visual Studio.</span></span> 
 
-1. <span data-ttu-id="cb272-119">Microsoft Visual Studio で、**Dynamics 365** > **アドイン** > **Odata の財務分析コードの追加**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="cb272-119">In Microsoft Visual Studio, click **Dynamics 365** > **Addins** > **Add financial dimensions for Odata**.</span></span>
-2. <span data-ttu-id="cb272-120">**分析コード名** の列に財務分析コードの名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="cb272-120">Type the name of the Financial dimension in the **Dimension name** column.</span></span> <span data-ttu-id="cb272-121">これは、財務分析コードの正確な名前でなければなりません。</span><span class="sxs-lookup"><span data-stu-id="cb272-121">This should be the exact name of the financial dimension.</span></span> <span data-ttu-id="cb272-122">拡張機能を持つ **モデル** を選択します。</span><span class="sxs-lookup"><span data-stu-id="cb272-122">Select the **Model** that has your extensions.</span></span> <span data-ttu-id="cb272-123">これは AppSuite レイヤーの上にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="cb272-123">It should be above the AppSuite layer.</span></span> <span data-ttu-id="cb272-124">**適用** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="cb272-124">Click **Apply**.</span></span> 
+1. <span data-ttu-id="a088c-119">Microsoft Visual Studio で、**Dynamics 365** > **アドイン** > **Odata の財務分析コードの追加**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a088c-119">In Microsoft Visual Studio, click **Dynamics 365** > **Addins** > **Add financial dimensions for Odata**.</span></span>
+2. <span data-ttu-id="a088c-120">**分析コード名** の列に財務分析コードの名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="a088c-120">Type the name of the Financial dimension in the **Dimension name** column.</span></span> <span data-ttu-id="a088c-121">これは、財務分析コードの正確な名前でなければなりません。</span><span class="sxs-lookup"><span data-stu-id="a088c-121">This should be the exact name of the financial dimension.</span></span> <span data-ttu-id="a088c-122">拡張機能を持つ **モデル** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a088c-122">Select the **Model** that has your extensions.</span></span> <span data-ttu-id="a088c-123">これは AppSuite レイヤーの上にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="a088c-123">It should be above the AppSuite layer.</span></span> <span data-ttu-id="a088c-124">**適用** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a088c-124">Click **Apply**.</span></span> 
 
-    <span data-ttu-id="cb272-125">[![DimWiki2](./media/dimwiki2-300x225.png)](./media/dimwiki2.png)</span><span class="sxs-lookup"><span data-stu-id="cb272-125">[![DimWiki2](./media/dimwiki2-300x225.png)](./media/dimwiki2.png)</span></span>
+    <span data-ttu-id="a088c-125">[![DimWiki2](./media/dimwiki2-300x225.png)](./media/dimwiki2.png)</span><span class="sxs-lookup"><span data-stu-id="a088c-125">[![DimWiki2](./media/dimwiki2-300x225.png)](./media/dimwiki2.png)</span></span>
 
-3. <span data-ttu-id="cb272-126">プロジェクトをコンパイルし、データベースと同期します。</span><span class="sxs-lookup"><span data-stu-id="cb272-126">Compile the project, and then synchronize it with the database.</span></span> 
+3. <span data-ttu-id="a088c-126">プロジェクトをコンパイルし、データベースと同期します。</span><span class="sxs-lookup"><span data-stu-id="a088c-126">Compile the project, and then synchronize it with the database.</span></span> 
 
     ![8](./media/8-300x260.png) 
 
-4. <span data-ttu-id="cb272-128">これで、カスタマイズは完了です。</span><span class="sxs-lookup"><span data-stu-id="cb272-128">Your customization is now completed.</span></span> <span data-ttu-id="cb272-129">次のステートメントを使用して、SQL でテストすることができます。</span><span class="sxs-lookup"><span data-stu-id="cb272-129">You can test it in SQL using the following statement.</span></span>
+4. <span data-ttu-id="a088c-128">これで、カスタマイズは完了です。</span><span class="sxs-lookup"><span data-stu-id="a088c-128">Your customization is now completed.</span></span> <span data-ttu-id="a088c-129">次のステートメントを使用して、SQL でテストすることができます。</span><span class="sxs-lookup"><span data-stu-id="a088c-129">You can test it in SQL using the following statement.</span></span>
 
-    <span data-ttu-id="cb272-130">select \* from DIMENSIONCOMBINATIONENTITY</span><span class="sxs-lookup"><span data-stu-id="cb272-130">select \* from DIMENSIONCOMBINATIONENTITY</span></span>
+    <span data-ttu-id="a088c-130">select \* from DIMENSIONCOMBINATIONENTITY</span><span class="sxs-lookup"><span data-stu-id="a088c-130">select \* from DIMENSIONCOMBINATIONENTITY</span></span>
 
-## <a name="add-dimensions--before-dynamics-365-for-finance-and-operations"></a><span data-ttu-id="cb272-131">以前の Dynamics 365 for Finance and Operations の分析コードの追加</span><span class="sxs-lookup"><span data-stu-id="cb272-131">Add dimensions  before Dynamics 365 for Finance and Operations</span></span>
-<span data-ttu-id="cb272-132">たとえば、Microsoft Excel との統合で、列に配置する分析コードとの相互作用をサポートするには、最初にカスタムを使用して分析コードの列を作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="cb272-132">To support interactions with dimensions as columns, for example, in the Microsoft Excel integration, you must first create the dimension columns through a customization.</span></span> 
+## <a name="add-dimensions--before-dynamics-365-for-finance-and-operations"></a><span data-ttu-id="a088c-131">以前の Dynamics 365 for Finance and Operations の分析コードの追加</span><span class="sxs-lookup"><span data-stu-id="a088c-131">Add dimensions  before Dynamics 365 for Finance and Operations</span></span>
+<span data-ttu-id="a088c-132">たとえば、Microsoft Excel との統合で、列に配置する分析コードとの相互作用をサポートするには、最初にカスタムを使用して分析コードの列を作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a088c-132">To support interactions with dimensions as columns, for example, in the Microsoft Excel integration, you must first create the dimension columns through a customization.</span></span> 
 
-1. <span data-ttu-id="cb272-133">Visual Studio で、アプリケーション エクスプローラーを開きます (**表示**&gt;**アプリケーション エクスプローラー**)。</span><span class="sxs-lookup"><span data-stu-id="cb272-133">Open the Application Explorer in Visual Studio (**View** &gt; **Application Explorer**).</span></span> 
-2. <span data-ttu-id="cb272-134">DimensionCombinationEntity **(AOT** &gt; **データ モデル** &gt; **データ エンティティ**) に移動します。</span><span class="sxs-lookup"><span data-stu-id="cb272-134">Navigate to DimensionCombinationEntity **(AOT** &gt; **Data Model** &gt; **Data Entities**).</span></span> 
-3. <span data-ttu-id="cb272-135">エンティティを右クリックし、**カスタマイズ** を選択します。</span><span class="sxs-lookup"><span data-stu-id="cb272-135">Right-click on the entity and choose **Customize**.</span></span> 
+1. <span data-ttu-id="a088c-133">Visual Studio で、アプリケーション エクスプローラーを開きます (**表示**&gt;**アプリケーション エクスプローラー**)。</span><span class="sxs-lookup"><span data-stu-id="a088c-133">Open the Application Explorer in Visual Studio (**View** &gt; **Application Explorer**).</span></span> 
+2. <span data-ttu-id="a088c-134">DimensionCombinationEntity **(AOT** &gt; **データ モデル** &gt; **データ エンティティ**) に移動します。</span><span class="sxs-lookup"><span data-stu-id="a088c-134">Navigate to DimensionCombinationEntity **(AOT** &gt; **Data Model** &gt; **Data Entities**).</span></span> 
+3. <span data-ttu-id="a088c-135">エンティティを右クリックし、**カスタマイズ** を選択します。</span><span class="sxs-lookup"><span data-stu-id="a088c-135">Right-click on the entity and choose **Customize**.</span></span> 
 
-    <span data-ttu-id="cb272-136">[![5](./media/5-300x187.png)](./media/5.png)</span><span class="sxs-lookup"><span data-stu-id="cb272-136">[![5](./media/5-300x187.png)](./media/5.png)</span></span>
+    <span data-ttu-id="a088c-136">[![5](./media/5-300x187.png)](./media/5.png)</span><span class="sxs-lookup"><span data-stu-id="a088c-136">[![5](./media/5-300x187.png)](./media/5.png)</span></span>
 
-4. <span data-ttu-id="cb272-137">変更するエンティティのデザイナー、この例では **DimensionCombinationEntity** を開きます。</span><span class="sxs-lookup"><span data-stu-id="cb272-137">Open the designer for the entity that you want to modify, in this example **DimensionCombinationEntity**.</span></span> 
-5. <span data-ttu-id="cb272-138">**departmentValue** という名前の str を返す新しいプライベート静的メソッドを作成します。</span><span class="sxs-lookup"><span data-stu-id="cb272-138">Create a new private static method that returns a str named **departmentValue**.</span></span> 
-6. <span data-ttu-id="cb272-139">この方法では、**DimensionAttributeValueCombination** から分析コードの値を取得する必要があります。</span><span class="sxs-lookup"><span data-stu-id="cb272-139">In this method, you must get the dimension's value from **DimensionAttributeValueCombination**.</span></span> <span data-ttu-id="cb272-140">最終的な方法はこのようになります。</span><span class="sxs-lookup"><span data-stu-id="cb272-140">The final method will look something like this.</span></span>
+4. <span data-ttu-id="a088c-137">変更するエンティティのデザイナー、この例では **DimensionCombinationEntity** を開きます。</span><span class="sxs-lookup"><span data-stu-id="a088c-137">Open the designer for the entity that you want to modify, in this example **DimensionCombinationEntity**.</span></span> 
+5. <span data-ttu-id="a088c-138">**departmentValue** という名前の str を返す新しいプライベート静的メソッドを作成します。</span><span class="sxs-lookup"><span data-stu-id="a088c-138">Create a new private static method that returns a str named **departmentValue**.</span></span> 
+6. <span data-ttu-id="a088c-139">この方法では、**DimensionAttributeValueCombination** から分析コードの値を取得する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a088c-139">In this method, you must get the dimension's value from **DimensionAttributeValueCombination**.</span></span> <span data-ttu-id="a088c-140">最終的な方法はこのようになります。</span><span class="sxs-lookup"><span data-stu-id="a088c-140">The final method will look something like this.</span></span>
 
 ```
 /// <summary>
@@ -95,34 +95,34 @@ private static str departmentValue()
 }
 ```
 
-7. <span data-ttu-id="cb272-141">エンティティに新しい「マップされていない文字列フィールド」を作成します。</span><span class="sxs-lookup"><span data-stu-id="cb272-141">Create a new "string unmapped field" on the entity:</span></span>
+7. <span data-ttu-id="a088c-141">エンティティに新しい「マップされていない文字列フィールド」を作成します。</span><span class="sxs-lookup"><span data-stu-id="a088c-141">Create a new "string unmapped field" on the entity:</span></span>
 
-   - <span data-ttu-id="cb272-142">**名前** プロパティを分析コード名 **部門** に設定します。</span><span class="sxs-lookup"><span data-stu-id="cb272-142">Set the **Name** property to the dimension name, **Department**.</span></span>
-   - <span data-ttu-id="cb272-143">**拡張データ型** プロパティを **DimensionValue** に設定します。</span><span class="sxs-lookup"><span data-stu-id="cb272-143">Set the **Extended Data Type** property to **DimensionValue**.</span></span>
-   - <span data-ttu-id="cb272-144">**DataEntityView メソッド** プロパティを、前の手順で作成したメソッドに設定します (たとえば、**departmentValue**)。</span><span class="sxs-lookup"><span data-stu-id="cb272-144">Set the **DataEntityView Method** property to the method that you created earlier (for example, **departmentValue**).</span></span>
-   - <span data-ttu-id="cb272-145">**ラベル** プロパティを分析コード名 **部門** に設定します。</span><span class="sxs-lookup"><span data-stu-id="cb272-145">Set the **Label** property to the dimension name **Department**.</span></span>
+   - <span data-ttu-id="a088c-142">**名前** プロパティを分析コード名 **部門** に設定します。</span><span class="sxs-lookup"><span data-stu-id="a088c-142">Set the **Name** property to the dimension name, **Department**.</span></span>
+   - <span data-ttu-id="a088c-143">**拡張データ型** プロパティを **DimensionValue** に設定します。</span><span class="sxs-lookup"><span data-stu-id="a088c-143">Set the **Extended Data Type** property to **DimensionValue**.</span></span>
+   - <span data-ttu-id="a088c-144">**DataEntityView メソッド** プロパティを、前の手順で作成したメソッドに設定します (たとえば、**departmentValue**)。</span><span class="sxs-lookup"><span data-stu-id="a088c-144">Set the **DataEntityView Method** property to the method that you created earlier (for example, **departmentValue**).</span></span>
+   - <span data-ttu-id="a088c-145">**ラベル** プロパティを分析コード名 **部門** に設定します。</span><span class="sxs-lookup"><span data-stu-id="a088c-145">Set the **Label** property to the dimension name **Department**.</span></span>
 
-     <span data-ttu-id="cb272-146">[![6](./media/6-300x64.png)](./media/6.png)</span><span class="sxs-lookup"><span data-stu-id="cb272-146">[![6](./media/6-300x64.png)](./media/6.png)</span></span>
+     <span data-ttu-id="a088c-146">[![6](./media/6-300x64.png)](./media/6.png)</span><span class="sxs-lookup"><span data-stu-id="a088c-146">[![6](./media/6-300x64.png)](./media/6.png)</span></span>
 
-8. <span data-ttu-id="cb272-147">分析コードの名前を適切な分析コードに変更することで、追加する分析コードごとに手順 5 ～ 7 を繰り返します。</span><span class="sxs-lookup"><span data-stu-id="cb272-147">Repeat steps 5-7 for each dimension that you want to add, changing the dimension name to the appropriate dimension.</span></span> 
-9. <span data-ttu-id="cb272-148">プロジェクトをコンパイルし、データベースと同期します。</span><span class="sxs-lookup"><span data-stu-id="cb272-148">Compile the project, and then synchronize it with the database.</span></span> 
+8. <span data-ttu-id="a088c-147">分析コードの名前を適切な分析コードに変更することで、追加する分析コードごとに手順 5 ～ 7 を繰り返します。</span><span class="sxs-lookup"><span data-stu-id="a088c-147">Repeat steps 5-7 for each dimension that you want to add, changing the dimension name to the appropriate dimension.</span></span> 
+9. <span data-ttu-id="a088c-148">プロジェクトをコンパイルし、データベースと同期します。</span><span class="sxs-lookup"><span data-stu-id="a088c-148">Compile the project, and then synchronize it with the database.</span></span> 
 
-    <span data-ttu-id="cb272-149">[![8](./media/8-300x260.png)](./media/8.png)</span><span class="sxs-lookup"><span data-stu-id="cb272-149">[![8](./media/8-300x260.png)](./media/8.png)</span></span>
+    <span data-ttu-id="a088c-149">[![8](./media/8-300x260.png)](./media/8.png)</span><span class="sxs-lookup"><span data-stu-id="a088c-149">[![8](./media/8-300x260.png)](./media/8.png)</span></span>
 
-10. <span data-ttu-id="cb272-150">これで、カスタマイズは完了です。</span><span class="sxs-lookup"><span data-stu-id="cb272-150">Your customization is now complete.</span></span> <span data-ttu-id="cb272-151">次のステートメントを使用して、SQL でテストすることができます。</span><span class="sxs-lookup"><span data-stu-id="cb272-151">You can test it in SQL using the following statement.</span></span>
+10. <span data-ttu-id="a088c-150">これで、カスタマイズは完了です。</span><span class="sxs-lookup"><span data-stu-id="a088c-150">Your customization is now complete.</span></span> <span data-ttu-id="a088c-151">次のステートメントを使用して、SQL でテストすることができます。</span><span class="sxs-lookup"><span data-stu-id="a088c-151">You can test it in SQL using the following statement.</span></span>
 
 ```
 select * from DIMENSIONCOMBINATIONENTITY
 ```
 
 
-## <a name="additional-resources"></a><span data-ttu-id="cb272-152">その他のリソース</span><span class="sxs-lookup"><span data-stu-id="cb272-152">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="a088c-152">その他のリソース</span><span class="sxs-lookup"><span data-stu-id="a088c-152">Additional resources</span></span>
 
-[<span data-ttu-id="cb272-153">分析コード エントリ コントロールのチュートリアル</span><span class="sxs-lookup"><span data-stu-id="cb272-153">Dimension Entry control migration walkthrough</span></span>](dimension-entry-control-migration.md)
+[<span data-ttu-id="a088c-153">分析コード エントリ コントロールのチュートリアル</span><span class="sxs-lookup"><span data-stu-id="a088c-153">Dimension Entry control migration walkthrough</span></span>](dimension-entry-control-migration.md)
 
-[<span data-ttu-id="cb272-154">分析コード エントリ コントロールの取得</span><span class="sxs-lookup"><span data-stu-id="cb272-154">Dimension Entry control uptake</span></span>](dimension-entry-control-uptake.md)
+[<span data-ttu-id="a088c-154">分析コード エントリ コントロールの取得</span><span class="sxs-lookup"><span data-stu-id="a088c-154">Dimension Entry control uptake</span></span>](dimension-entry-control-uptake.md)
 
-[<span data-ttu-id="cb272-155">拡張機能のホーム ページ</span><span class="sxs-lookup"><span data-stu-id="cb272-155">Extensibility home page</span></span>](../extensibility/extensibility-home-page.md)
+[<span data-ttu-id="a088c-155">拡張機能のホーム ページ</span><span class="sxs-lookup"><span data-stu-id="a088c-155">Extensibility home page</span></span>](../extensibility/extensibility-home-page.md)
 
 
 

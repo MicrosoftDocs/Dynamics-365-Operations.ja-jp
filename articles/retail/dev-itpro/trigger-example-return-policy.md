@@ -1,9 +1,9 @@
 ---
-title: "トリガーを使用する返品ポリシーの実装"
+title: "トリガーを使用して返品ポリシーを実装してください"
 description: "このトピックでは、トリガーを使用して新しいポリシーを実装する方法の例を 2 つ示しています。"
 author: mugunthanm
 manager: AnnBe
-ms.date: 11/14/2017
+ms.date: 07/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -18,26 +18,27 @@ ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: ab9d2fa1d3ab6fdada0fb5be8196010aa3a388cc
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 5d8c25dd2a0719dd4c74890e52e91da223fab24d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="implement-a-return-policy-using-triggers"></a><span data-ttu-id="d7f06-103">トリガーを使用する返品ポリシーの実装</span><span class="sxs-lookup"><span data-stu-id="d7f06-103">Implement a return policy using triggers</span></span>
+# <a name="implement-a-return-policy-by-using-triggers"></a><span data-ttu-id="621f5-103">トリガーを使用して返品ポリシーを実装してください</span><span class="sxs-lookup"><span data-stu-id="621f5-103">Implement a return policy by using triggers</span></span>
 
-[!include [banner](../includes/banner.md)]
+> [!NOTE]
+> <span data-ttu-id="621f5-104">このトピックは、Dynamics 365 for Finance and Operations の 7.1 およびそれ以降のバージョンに適用可能です。</span><span class="sxs-lookup"><span data-stu-id="621f5-104">This topic is applicable for Dynamics 365 for Finance and Operations version 7.1 and earlier.</span></span> <span data-ttu-id="621f5-105">バージョン 7.2 およびそれ以上の場合は、この実装はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="621f5-105">This implementation is not supported for versions 7.2 and higher.</span></span> <span data-ttu-id="621f5-106">これらのバージョンでは、オーバーレイせずに拡張モデルに従います。</span><span class="sxs-lookup"><span data-stu-id="621f5-106">For those versions, follow the extension model without overlayering.</span></span>
 
-<span data-ttu-id="d7f06-104">このトピックでは、トリガーを使用して新しいポリシーを実装する方法の例を 2 つ示しています。</span><span class="sxs-lookup"><span data-stu-id="d7f06-104">This topic has two examples which show how you can implement a new policy using a trigger.</span></span>
+<span data-ttu-id="621f5-107">このトピックでは、トリガーを使用して新しいポリシーを実装する方法の例を 2 つ示しています。</span><span class="sxs-lookup"><span data-stu-id="621f5-107">This topic has two examples that show how you can implement a new policy using a trigger.</span></span>
 
-<span data-ttu-id="d7f06-105">このトピックの例では、新しい返品ポリシーがあることを前提としています。</span><span class="sxs-lookup"><span data-stu-id="d7f06-105">The examples in this topic assume that you have a new return policy.</span></span> <span data-ttu-id="d7f06-106">返品の最長期間は 30 日間で、購入日から 30 日を超えて返品することはできません。</span><span class="sxs-lookup"><span data-stu-id="d7f06-106">The maximum time period for returning an item is 30 days and no item may be returned more than 30 days after the date of purchase.</span></span> <span data-ttu-id="d7f06-107">また、レジ担当者またはマネージャーは、1 回のトランザクションで 3 つ以上の品目を無効にすることはできません。</span><span class="sxs-lookup"><span data-stu-id="d7f06-107">Additionally, the cashier or manager is not allowed to void more than three items in a single transaction.</span></span>
+<span data-ttu-id="621f5-108">このトピックの例では、新しい返品ポリシーがあることを前提としています。</span><span class="sxs-lookup"><span data-stu-id="621f5-108">The examples in this topic assume that you have a new return policy.</span></span> <span data-ttu-id="621f5-109">返品の最長期間は 30 日間で、購入日から 30 日を超えて返品することはできません。</span><span class="sxs-lookup"><span data-stu-id="621f5-109">The maximum time period for returning an item is 30 days and no item may be returned more than 30 days after the date of purchase.</span></span> <span data-ttu-id="621f5-110">また、レジ担当者またはマネージャーは、1 回のトランザクションで 3 つ以上の品目を無効にすることはできません。</span><span class="sxs-lookup"><span data-stu-id="621f5-110">Additionally, the cashier or manager is not allowed to void more than three items in a single transaction.</span></span>
 
-## <a name="extend-the-mpos-trigger"></a><span data-ttu-id="d7f06-108">MPOS トリガーを拡張</span><span class="sxs-lookup"><span data-stu-id="d7f06-108">Extend the MPOS trigger</span></span>
-1.  <span data-ttu-id="d7f06-109">管理者として Visual Studio を開きます。</span><span class="sxs-lookup"><span data-stu-id="d7f06-109">Open Visual Studio as an administrator.</span></span>
-2.  <span data-ttu-id="d7f06-110">Modern POS ソリューションを K:\\RainMainStab\\7.0.1265.3014\\小売\\サービス\\RetailSDK\\コード\\POS から開きます。</span><span class="sxs-lookup"><span data-stu-id="d7f06-110">Open the Modern POS solution from K:\\RainMainStab\\7.0.1265.3014\\retail\\Services\\RetailSDK\\Code\\POS.</span></span>
-3.  <span data-ttu-id="d7f06-111">**トリガー** フォルダーの下の POS.Core プロジェクトに新しい TypeScript ファイルを追加し、ExtensionTrigger.ts という名前をつけます。</span><span class="sxs-lookup"><span data-stu-id="d7f06-111">Add new a TypeScript file in the POS.Core project, under the **Triggers** folder, and name it ExtensionTrigger.ts.</span></span>
-4.  <span data-ttu-id="d7f06-112">トリガー インターフェイスへの参照を追加し、コードの新しいモジュールを作成します。</span><span class="sxs-lookup"><span data-stu-id="d7f06-112">Add reference to the triggers interface and create a new module for the code.</span></span> <span data-ttu-id="d7f06-113">ExtensionTrigger.ts ファイルに次のコードを追加します。</span><span class="sxs-lookup"><span data-stu-id="d7f06-113">In the ExtensionTrigger.ts file, add the following code.</span></span>
+## <a name="extend-the-mpos-trigger"></a><span data-ttu-id="621f5-111">MPOS トリガーを拡張</span><span class="sxs-lookup"><span data-stu-id="621f5-111">Extend the MPOS trigger</span></span>
+1.  <span data-ttu-id="621f5-112">管理者として Visual Studio を開きます。</span><span class="sxs-lookup"><span data-stu-id="621f5-112">Open Visual Studio as an administrator.</span></span>
+2.  <span data-ttu-id="621f5-113">Modern POS ソリューションを K:\\RainMainStab\\7.0.1265.3014\\小売\\サービス\\RetailSDK\\コード\\POS から開きます。</span><span class="sxs-lookup"><span data-stu-id="621f5-113">Open the Modern POS solution from K:\\RainMainStab\\7.0.1265.3014\\retail\\Services\\RetailSDK\\Code\\POS.</span></span>
+3.  <span data-ttu-id="621f5-114">**トリガー** フォルダーの下の POS.Core プロジェクトに新しい TypeScript ファイルを追加し、ExtensionTrigger.ts という名前をつけます。</span><span class="sxs-lookup"><span data-stu-id="621f5-114">Add new a TypeScript file in the POS.Core project, under the **Triggers** folder, and name it ExtensionTrigger.ts.</span></span>
+4.  <span data-ttu-id="621f5-115">トリガー インターフェイスへの参照を追加し、コードの新しいモジュールを作成します。</span><span class="sxs-lookup"><span data-stu-id="621f5-115">Add reference to the triggers interface and create a new module for the code.</span></span> <span data-ttu-id="621f5-116">ExtensionTrigger.ts ファイルに次のコードを追加します。</span><span class="sxs-lookup"><span data-stu-id="621f5-116">In the ExtensionTrigger.ts file, add the following code.</span></span>
 
         <///<reference path="TransactionTriggers.ts" />
         ///<reference path="TriggerHelper.ts" />
@@ -51,16 +52,16 @@ ms.lasthandoff: 05/08/2018
             "use strict";
         }
 
-## <a name="scenario-1-30day-return-policy"></a><span data-ttu-id="d7f06-114">シナリオ 1: 30 日返品ポリシー</span><span class="sxs-lookup"><span data-stu-id="d7f06-114">Scenario 1: 30day return policy</span></span>
-<span data-ttu-id="d7f06-115">30日間の返品ポリシーを実装するには、新しいクラスを作成し、IPreConfirmReturnTransactionTrigger インターフェイスを実装して、IPreConfrimReturnTransactionTrigger を拡張します。</span><span class="sxs-lookup"><span data-stu-id="d7f06-115">To implement the 30-day return policy, extend the IPreConfrimReturnTransactionTrigger by creating a new class and implementing the IPreConfirmReturnTransactionTrigger interface.</span></span> <span data-ttu-id="d7f06-116">このトリガーは、トランザクションから項目を返す前に呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="d7f06-116">This trigger will be invoked before returning any item from the transaction.</span></span>
+## <a name="scenario-1-30day-return-policy"></a><span data-ttu-id="621f5-117">シナリオ 1: 30 日返品ポリシー</span><span class="sxs-lookup"><span data-stu-id="621f5-117">Scenario 1: 30day return policy</span></span>
+<span data-ttu-id="621f5-118">30日間の返品ポリシーを実装するには、新しいクラスを作成し、IPreConfirmReturnTransactionTrigger インターフェイスを実装して、IPreConfrimReturnTransactionTrigger を拡張します。</span><span class="sxs-lookup"><span data-stu-id="621f5-118">To implement the 30-day return policy, extend the IPreConfrimReturnTransactionTrigger by creating a new class and implementing the IPreConfirmReturnTransactionTrigger interface.</span></span> <span data-ttu-id="621f5-119">このトリガーは、トランザクションから項目を返す前に呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="621f5-119">This trigger will be invoked before returning any item from the transaction.</span></span>
 
-1.  <span data-ttu-id="d7f06-117">モジュール Commerce.Triggers.Samples で IPreConfirmReturnTransactionTrigger を実装する新しいクラスを作成します。</span><span class="sxs-lookup"><span data-stu-id="d7f06-117">Create a new class that implements IPreConfirmReturnTransactionTrigger in the module Commerce.Triggers.Samples.</span></span> <span data-ttu-id="d7f06-118">次のコードの例に示すように、PreConfirmReturnTransactionTrigger と名前を付けます。</span><span class="sxs-lookup"><span data-stu-id="d7f06-118">Name it PreConfirmReturnTransactionTrigger, as shown in the following code example.</span></span>
+1.  <span data-ttu-id="621f5-120">モジュール Commerce.Triggers.Samples で IPreConfirmReturnTransactionTrigger を実装する新しいクラスを作成します。</span><span class="sxs-lookup"><span data-stu-id="621f5-120">Create a new class that implements IPreConfirmReturnTransactionTrigger in the module Commerce.Triggers.Samples.</span></span> <span data-ttu-id="621f5-121">次のコードの例に示すように、PreConfirmReturnTransactionTrigger と名前を付けます。</span><span class="sxs-lookup"><span data-stu-id="621f5-121">Name it PreConfirmReturnTransactionTrigger, as shown in the following code example.</span></span>
 
         /*** Implementation of a pre-confirm return transaction trigger that validates that the transaction being returned is within the return period. */
         export class PreConfirmReturnTransactionTrigger implements IPreConfirmReturnTransactionTrigger {
         }
 
-2.  <span data-ttu-id="d7f06-119">インターフェイスから**実行**メソッドを実装して、返品条件を検証するコードを追加します。</span><span class="sxs-lookup"><span data-stu-id="d7f06-119">Implement the **execute** method from the interface and add code to validate the return condition.</span></span>
+2.  <span data-ttu-id="621f5-122">インターフェイスから**実行**メソッドを実装して、返品条件を検証するコードを追加します。</span><span class="sxs-lookup"><span data-stu-id="621f5-122">Implement the **execute** method from the interface and add code to validate the return condition.</span></span>
 
         private static MILLISECONDS_PER_DAY: number = 100;
         private static RETURN_PERIOD_IN_DAYS: number = 0;
@@ -76,16 +77,16 @@ ms.lasthandoff: 05/08/2018
             return Commerce.AsyncResult.createResolved({ canceled: false });
         }
 
-## <a name="scenario-2-limit-of-three-returns-per-transaction"></a><span data-ttu-id="d7f06-120">シナリオ 2: トランザクションごとに返品 3 回の制限</span><span class="sxs-lookup"><span data-stu-id="d7f06-120">Scenario 2: Limit of three returns per transaction</span></span>
-<span data-ttu-id="d7f06-121">3 回限りの制限を実装するには、新しいクラスを作成し、IPreVoidProductsTrigger インターフェイスを実装します。</span><span class="sxs-lookup"><span data-stu-id="d7f06-121">To implement the three-time limit, create a new class and implement the IPreVoidProductsTrigger interface.</span></span> <span data-ttu-id="d7f06-122">このトリガーは、トランザクション内の項目を無効にする前に呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="d7f06-122">This trigger will be invoked before voiding any item in a transaction.</span></span>
+## <a name="scenario-2-limit-of-three-returns-per-transaction"></a><span data-ttu-id="621f5-123">シナリオ 2: トランザクションごとに返品 3 回の制限</span><span class="sxs-lookup"><span data-stu-id="621f5-123">Scenario 2: Limit of three returns per transaction</span></span>
+<span data-ttu-id="621f5-124">3 回限りの制限を実装するには、新しいクラスを作成し、IPreVoidProductsTrigger インターフェイスを実装します。</span><span class="sxs-lookup"><span data-stu-id="621f5-124">To implement the three-time limit, create a new class and implement the IPreVoidProductsTrigger interface.</span></span> <span data-ttu-id="621f5-125">このトリガーは、トランザクション内の項目を無効にする前に呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="621f5-125">This trigger will be invoked before voiding any item in a transaction.</span></span>
 
-1.  <span data-ttu-id="d7f06-123">モジュール Commerce.Triggers.Samples で IPreVoidProductsTrigger インターフェイスを実装する PreVoidProductsTrigger という名前の新しいクラスを作成します。</span><span class="sxs-lookup"><span data-stu-id="d7f06-123">Create a new class named PreVoidProductsTrigger that implements the IPreVoidProductsTrigger interface in the module Commerce.Triggers.Samples.</span></span> <span data-ttu-id="d7f06-124">このコードは、前の手順で作成した PreConfirmReturnTransactionTrigger クラスの外にあることを確認します。</span><span class="sxs-lookup"><span data-stu-id="d7f06-124">Make sure this code is outside of the PreConfirmReturnTransactionTrigger class that you created in the previous step.</span></span>
+1.  <span data-ttu-id="621f5-126">モジュール Commerce.Triggers.Samples で IPreVoidProductsTrigger インターフェイスを実装する PreVoidProductsTrigger という名前の新しいクラスを作成します。</span><span class="sxs-lookup"><span data-stu-id="621f5-126">Create a new class named PreVoidProductsTrigger that implements the IPreVoidProductsTrigger interface in the module Commerce.Triggers.Samples.</span></span> <span data-ttu-id="621f5-127">このコードは、前の手順で作成した PreConfirmReturnTransactionTrigger クラスの外にあることを確認します。</span><span class="sxs-lookup"><span data-stu-id="621f5-127">Make sure this code is outside of the PreConfirmReturnTransactionTrigger class that you created in the previous step.</span></span>
 
         /*** Implementation of a pre-customer add trigger that is used to ensure a blocked customer is not added to sale. */
         export class PreVoidProductsTrigger implements IPreVoidProductsTrigger {
         }
 
-2.  <span data-ttu-id="d7f06-125">インターフェイスから**実行**メソッドを実装して、無効条件を検証するコードを追加します。</span><span class="sxs-lookup"><span data-stu-id="d7f06-125">Implement the **execute** method from the interface and add the code to validate the void condition.</span></span>
+2.  <span data-ttu-id="621f5-128">インターフェイスから**実行**メソッドを実装して、無効条件を検証するコードを追加します。</span><span class="sxs-lookup"><span data-stu-id="621f5-128">Implement the **execute** method from the interface and add the code to validate the void condition.</span></span>
 
         private static VOID_ERROR_CODE: string = "Void is not allowed anymore.";
         /*** Executes the trigger. */
@@ -111,7 +112,7 @@ ms.lasthandoff: 05/08/2018
             return voidedQuantity;
         }
 
-3.  <span data-ttu-id="d7f06-126">MPOS ログオン後に 2 つのトリガーを登録します。</span><span class="sxs-lookup"><span data-stu-id="d7f06-126">Register the two triggers after the MPOS logon.</span></span> <span data-ttu-id="d7f06-127">上記の手順で作成した 2 つのクラスの後、同じモジュールの Commerce.Triggers.Samples 内にある同じファイルに、次のコードをコピーします。</span><span class="sxs-lookup"><span data-stu-id="d7f06-127">Copy the following code to the same file after the two classes that you created in the previous steps but within the same module Commerce.Triggers.Samples.</span></span>
+3.  <span data-ttu-id="621f5-129">MPOS ログオン後に 2 つのトリガーを登録します。</span><span class="sxs-lookup"><span data-stu-id="621f5-129">Register the two triggers after the MPOS logon.</span></span> <span data-ttu-id="621f5-130">上記の手順で作成した 2 つのクラスの後、同じモジュールの Commerce.Triggers.Samples 内にある同じファイルに、次のコードをコピーします。</span><span class="sxs-lookup"><span data-stu-id="621f5-130">Copy the following code to the same file after the two classes that you created in the previous steps but within the same module Commerce.Triggers.Samples.</span></span>
 
         /*** Implementation of a post log on trigger that is used to perform conditional registration of other triggers.*/
         export class ConditionalRegistrationPostLogOnTrigger implements IPostLogOnTrigger {
@@ -139,7 +140,7 @@ ms.lasthandoff: 05/08/2018
                 new PreConfirmReturnTransactionTrigger());
         }}}
 
-4.  <span data-ttu-id="d7f06-128">DOMCOntentLoaded イベント中に PostLogon トリガーを登録します。</span><span class="sxs-lookup"><span data-stu-id="d7f06-128">Register the PostLogon trigger during the DOMCOntentLoaded event.</span></span> <span data-ttu-id="d7f06-129">Commerce.Triggers.Samples モジュール内のすべてのクラスの外に、次のコードをコピーします。</span><span class="sxs-lookup"><span data-stu-id="d7f06-129">Copy the following code outside of all the classes but within the module Commerce.Triggers.Samples.</span></span>
+4.  <span data-ttu-id="621f5-131">DOMCOntentLoaded イベント中に PostLogon トリガーを登録します。</span><span class="sxs-lookup"><span data-stu-id="621f5-131">Register the PostLogon trigger during the DOMCOntentLoaded event.</span></span> <span data-ttu-id="621f5-132">Commerce.Triggers.Samples モジュール内のすべてのクラスの外に、次のコードをコピーします。</span><span class="sxs-lookup"><span data-stu-id="621f5-132">Copy the following code outside of all the classes but within the module Commerce.Triggers.Samples.</span></span>
 
         /**
         * Trigger types that do not support conditional registration should be registered when the DOMContentLoaded event is fired.
@@ -151,20 +152,18 @@ ms.lasthandoff: 05/08/2018
             new Commerce.Triggers.Samples.ConditionalRegistrationPostLogOnTrigger());
         });
 
-## <a name="build-the-project"></a><span data-ttu-id="d7f06-130">プロジェクトの構築</span><span class="sxs-lookup"><span data-stu-id="d7f06-130">Build the project</span></span>
-1.  <span data-ttu-id="d7f06-131">プロジェクトをコンパイル、およびリビルドします。</span><span class="sxs-lookup"><span data-stu-id="d7f06-131">Compile and rebuild the project.</span></span>
-2.  <span data-ttu-id="d7f06-132">Visual Studio で**配置**ボタンをクリックして、ローカル コンピューターに MPOS を展開します。</span><span class="sxs-lookup"><span data-stu-id="d7f06-132">Deploy the MPOS in Local Machine by clicking the **Deploy** button in Visual Studio.</span></span> <span data-ttu-id="d7f06-133">"プロジェクトの POS.App を開始できる前に展開する必要があります" というエラー メッセージが表示された場合、下記の手順に従い、エラーを解決し、再試行します。</span><span class="sxs-lookup"><span data-stu-id="d7f06-133">If you get an error which states that “The project POS.App needs to be deployed before it can be started.”, then follow the steps below to resolve the error and try again.</span></span>
-3.  <span data-ttu-id="d7f06-134">Visual Studio で ModernPOS ソリューションを右クリックし、**プロパティ** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d7f06-134">Right-click the ModernPOS solution in Visual Studio and click **Properties**.</span></span>
-4.  <span data-ttu-id="d7f06-135">**プロパティ** ウィンドウで、**コンフィギュレーション**を選択します。</span><span class="sxs-lookup"><span data-stu-id="d7f06-135">In the **Property** window, select **Configuration**.</span></span>
-5.  <span data-ttu-id="d7f06-136">Pos.App プロジェクトの **展開** チェック ボックスを選択し、**OK** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d7f06-136">Select the **Deploy** check box for the Pos.App project and click **OK**.</span></span>
+## <a name="build-the-project"></a><span data-ttu-id="621f5-133">プロジェクトの構築</span><span class="sxs-lookup"><span data-stu-id="621f5-133">Build the project</span></span>
+1.  <span data-ttu-id="621f5-134">プロジェクトをコンパイル、およびリビルドします。</span><span class="sxs-lookup"><span data-stu-id="621f5-134">Compile and rebuild the project.</span></span>
+2.  <span data-ttu-id="621f5-135">Visual Studio で**配置**ボタンをクリックして、ローカル コンピューターに MPOS を展開します。</span><span class="sxs-lookup"><span data-stu-id="621f5-135">Deploy the MPOS in Local Machine by clicking the **Deploy** button in Visual Studio.</span></span> <span data-ttu-id="621f5-136">"プロジェクトの POS.App を開始できる前に展開する必要があります" というエラー メッセージが表示された場合、下記の手順に従い、エラーを解決し、再試行します。</span><span class="sxs-lookup"><span data-stu-id="621f5-136">If you get an error which states that “The project POS.App needs to be deployed before it can be started.”, then follow the steps below to resolve the error and try again.</span></span>
+3.  <span data-ttu-id="621f5-137">Visual Studio で ModernPOS ソリューションを右クリックし、**プロパティ** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="621f5-137">Right-click the ModernPOS solution in Visual Studio and click **Properties**.</span></span>
+4.  <span data-ttu-id="621f5-138">**プロパティ** ウィンドウで、**コンフィギュレーション**を選択します。</span><span class="sxs-lookup"><span data-stu-id="621f5-138">In the **Property** window, select **Configuration**.</span></span>
+5.  <span data-ttu-id="621f5-139">Pos.App プロジェクトの **展開** チェック ボックスを選択し、**OK** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="621f5-139">Select the **Deploy** check box for the Pos.App project and click **OK**.</span></span>
 
-## <a name="validate-the-customization"></a><span data-ttu-id="d7f06-137">カスタマイズの検証</span><span class="sxs-lookup"><span data-stu-id="d7f06-137">Validate the customization</span></span>
-1.  <span data-ttu-id="d7f06-138">オペレーター ID に 000160、パスワードに 123 を使用して MPOS にログインします。</span><span class="sxs-lookup"><span data-stu-id="d7f06-138">Log in to MPOS using 000160 as the operator ID and 123 as the password.</span></span> <span data-ttu-id="d7f06-139">販売トランザクションを比較します。</span><span class="sxs-lookup"><span data-stu-id="d7f06-139">Complete a sales transaction.</span></span>
-2.  <span data-ttu-id="d7f06-140">**仕訳帳の表示**をクリックし、商品を返送してください。</span><span class="sxs-lookup"><span data-stu-id="d7f06-140">Click **Show Journal** and try to return the merchandise.</span></span> <span data-ttu-id="d7f06-141">「返却できません。返却日を過ぎています」というエラー メッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="d7f06-141">You will get the error message “Cannot return, you are past return date”.</span></span>
-3.  <span data-ttu-id="d7f06-142">別の新しいトランザクションを作成し、4 つの異なるアイテムを追加します。</span><span class="sxs-lookup"><span data-stu-id="d7f06-142">Create another new transaction and add four different items.</span></span> <span data-ttu-id="d7f06-143">4 つのアイテムすべてを返すようにしてください。</span><span class="sxs-lookup"><span data-stu-id="d7f06-143">Try to return all four items.</span></span> <span data-ttu-id="d7f06-144">4番目の項目に関してエラーが発生し、「無効はこれ以上許されません」 というメッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="d7f06-144">You will get an error for the fourth item with the message, "Void is not allowed anymore.”</span></span>
+## <a name="validate-the-customization"></a><span data-ttu-id="621f5-140">カスタマイズの検証</span><span class="sxs-lookup"><span data-stu-id="621f5-140">Validate the customization</span></span>
+1.  <span data-ttu-id="621f5-141">オペレーター ID に 000160、パスワードに 123 を使用して MPOS にログインします。</span><span class="sxs-lookup"><span data-stu-id="621f5-141">Log in to MPOS using 000160 as the operator ID and 123 as the password.</span></span> <span data-ttu-id="621f5-142">販売トランザクションを比較します。</span><span class="sxs-lookup"><span data-stu-id="621f5-142">Complete a sales transaction.</span></span>
+2.  <span data-ttu-id="621f5-143">**仕訳帳の表示**をクリックし、商品を返送してください。</span><span class="sxs-lookup"><span data-stu-id="621f5-143">Click **Show Journal** and try to return the merchandise.</span></span> <span data-ttu-id="621f5-144">「返却できません。返却日を過ぎています」というエラー メッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="621f5-144">You will get the error message “Cannot return, you are past return date”.</span></span>
+3.  <span data-ttu-id="621f5-145">別の新しいトランザクションを作成し、4 つの異なるアイテムを追加します。</span><span class="sxs-lookup"><span data-stu-id="621f5-145">Create another new transaction and add four different items.</span></span> <span data-ttu-id="621f5-146">4 つのアイテムすべてを返すようにしてください。</span><span class="sxs-lookup"><span data-stu-id="621f5-146">Try to return all four items.</span></span> <span data-ttu-id="621f5-147">4番目の項目に関してエラーが発生し、「無効はこれ以上許されません」 というメッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="621f5-147">You will get an error for the fourth item with the message, "Void is not allowed anymore.”</span></span>
 
-<span data-ttu-id="d7f06-145">**注記:** サンプルコードでは、期間を 100 ミリ秒として返すので、すぐにコードをテストすることができます。</span><span class="sxs-lookup"><span data-stu-id="d7f06-145">**Note:** In the sample code, the return the time period is configured as 100ms, so that you can test your code immediately.</span></span> <span data-ttu-id="d7f06-146">必要に応じて、コンフィギュレーションを変更する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d7f06-146">You should change the configuration as needed.</span></span>
-
-
-
+> [!NOTE]
+> <span data-ttu-id="621f5-148">サンプルコードでは、期間を 100 ミリ秒として返すので、すぐにコードをテストすることができます。</span><span class="sxs-lookup"><span data-stu-id="621f5-148">In the sample code, the return the time period is configured as 100 ms, so that you can test your code immediately.</span></span> <span data-ttu-id="621f5-149">必要に応じて、コンフィギュレーションを変更する必要があります。</span><span class="sxs-lookup"><span data-stu-id="621f5-149">You should change the configuration as needed.</span></span>
 

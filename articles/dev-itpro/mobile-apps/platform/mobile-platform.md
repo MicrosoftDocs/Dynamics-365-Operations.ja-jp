@@ -18,14 +18,16 @@ ms.author: shshabazz
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: d8aca8ff31a12ff78697c60af3bc54f37501078b
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: af4d15916c5989d549e40f8296b826caf4aea8e7
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
+# <a name="mobile-platform-for-finance-and-operations"></a><span data-ttu-id="3b449-103">Finance and Operations 用のモバイル プラットフォーム</span><span class="sxs-lookup"><span data-stu-id="3b449-103">Mobile platform for Finance and Operations</span></span>
+
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="132ad-103">このトピックは、[[モバイル プラットフォームの基本情報](mobile-platform-getting-started.md)] および [[モバイル アプリ プラットフォームのアーキテクチャと設計に関する考慮事項](mobile-platform-architecture.md)] のトピックに置き換えられました。</span><span class="sxs-lookup"><span data-stu-id="132ad-103">This topic has been replaced with the [Getting started with the mobile platform](mobile-platform-getting-started.md) and [Architecture and design considerations for the mobile app platform](mobile-platform-architecture.md) topics.</span></span>
+<span data-ttu-id="3b449-104">このトピックは、[[モバイル プラットフォームの基本情報](mobile-platform-getting-started.md)] および [[モバイル アプリ プラットフォームのアーキテクチャと設計に関する考慮事項](mobile-platform-architecture.md)] のトピックに置き換えられました。</span><span class="sxs-lookup"><span data-stu-id="3b449-104">This topic has been replaced with the [Getting started with the mobile platform](mobile-platform-getting-started.md) and [Architecture and design considerations for the mobile app platform](mobile-platform-architecture.md) topics.</span></span>
 

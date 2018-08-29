@@ -1,5 +1,5 @@
 ---
-title: "セグメント化されたエントリ コントロール ダイアログのサポート"
+title: "ダイアログ上のセグメント化されたエントリ コントロールをサポート"
 description: "セグメント化されたエントリ コントロールをダイアログに追加するためのコード パターンについて説明します。"
 author: robinarh
 manager: AnnBe
@@ -18,27 +18,27 @@ ms.author: ghenriks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 9f8f6cac88513c516723857993ef384700df92f7
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 50223d98a89fefddf056bf63fb69330ee3079f9f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="segmented-entry-control-dialog-support"></a><span data-ttu-id="7908e-103">セグメント化されたエントリ コントロール ダイアログのサポート</span><span class="sxs-lookup"><span data-stu-id="7908e-103">Segmented entry control dialog support</span></span>
+# <a name="support-for-segmented-entry-controls-on-dialogs"></a><span data-ttu-id="5b140-103">ダイアログ上のセグメント化されたエントリ コントロールをサポート</span><span class="sxs-lookup"><span data-stu-id="5b140-103">Support for Segmented Entry controls on dialogs</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="7908e-104">セグメント化されたエントリ コントロールをダイアログに追加するためのコード パターンについて説明します。</span><span class="sxs-lookup"><span data-stu-id="7908e-104">Describes the code pattern to add Segmented Entry controls to dialogs.</span></span>
+<span data-ttu-id="5b140-104">セグメント化されたエントリ コントロールをダイアログに追加するためのコード パターンについて説明します。</span><span class="sxs-lookup"><span data-stu-id="5b140-104">Describes the code pattern to add Segmented Entry controls to dialogs.</span></span>
 
-<span data-ttu-id="7908e-105">セグメント化されたエントリ コントロールをダイアログに追加するプロセスが変更されました。</span><span class="sxs-lookup"><span data-stu-id="7908e-105">The process to add Segmented Entry controls to dialogs has changed.</span></span> <span data-ttu-id="7908e-106">これは、Dynamics AX 2012 の例です。</span><span class="sxs-lookup"><span data-stu-id="7908e-106">This is an example from Dynamics AX 2012:</span></span>
+<span data-ttu-id="5b140-105">セグメント化されたエントリ コントロールをダイアログに追加するプロセスが変更されました。</span><span class="sxs-lookup"><span data-stu-id="5b140-105">The process to add Segmented Entry controls to dialogs has changed.</span></span> <span data-ttu-id="5b140-106">これは、Dynamics AX 2012 の例です。</span><span class="sxs-lookup"><span data-stu-id="5b140-106">This is an example from Dynamics AX 2012:</span></span>
 
     DialogField dialogFeeLedgerDimension;
     LedgerDimensionAccountController ledgerDimensionAccountController;
     dialogFeeLedgerDimension = dialog.addFieldValue(extendedtypestr(LedgerDimensionAccount),feeLedgerDimension,"@SYS119703");
     ledgerDimensionAccountController = LedgerDimensionAccountController::constructForDialog(dialogFeeLedgerDimension);
 
-<span data-ttu-id="7908e-107">現在のリリースでは、このコードは次のように変換されます。</span><span class="sxs-lookup"><span data-stu-id="7908e-107">In the current release, this code would be converted to:</span></span>
+<span data-ttu-id="5b140-107">現在のリリースでは、このコードは次のように変換されます。</span><span class="sxs-lookup"><span data-stu-id="5b140-107">In the current release, this code would be converted to:</span></span>
 
     DialogField dialogFeeLedgerDimension;
     dialogFeeLedgerDimension = SegmentedEntryControlBuild::addToDialog(
@@ -48,31 +48,31 @@ ms.lasthandoff: 05/08/2018
         "@SYS119703", 
         feeLedgerDimension);
 
-<span data-ttu-id="7908e-108">2 番目のパラメーターでは、ダイアログの要件を満たすクラスを選択します。</span><span class="sxs-lookup"><span data-stu-id="7908e-108">For the second parameter, choose the class that satisfies the requirements for your dialog.</span></span>  <span data-ttu-id="7908e-109">オプションは次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="7908e-109">The options are:</span></span>
+<span data-ttu-id="5b140-108">2 番目のパラメーターでは、ダイアログの要件を満たすクラスを選択します。</span><span class="sxs-lookup"><span data-stu-id="5b140-108">For the second parameter, choose the class that satisfies the requirements for your dialog.</span></span>  <span data-ttu-id="5b140-109">オプションは次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="5b140-109">The options are:</span></span>
 
--   <span data-ttu-id="7908e-110">LedgerDimensionAccountController</span><span class="sxs-lookup"><span data-stu-id="7908e-110">LedgerDimensionAccountController</span></span>
--   <span data-ttu-id="7908e-111">LedgerDimensionDefaultAccountController</span><span class="sxs-lookup"><span data-stu-id="7908e-111">LedgerDimensionDefaultAccountController</span></span>
--   <span data-ttu-id="7908e-112">DimensionDynamicAccountController</span><span class="sxs-lookup"><span data-stu-id="7908e-112">DimensionDynamicAccountController</span></span>
--   <span data-ttu-id="7908e-113">BudgetLedgerDimensionController</span><span class="sxs-lookup"><span data-stu-id="7908e-113">BudgetLedgerDimensionController</span></span>
--   <span data-ttu-id="7908e-114">BudgetPlanningLedgerDimensionController</span><span class="sxs-lookup"><span data-stu-id="7908e-114">BudgetPlanningLedgerDimensionController</span></span>
+-   <span data-ttu-id="5b140-110">LedgerDimensionAccountController</span><span class="sxs-lookup"><span data-stu-id="5b140-110">LedgerDimensionAccountController</span></span>
+-   <span data-ttu-id="5b140-111">LedgerDimensionDefaultAccountController</span><span class="sxs-lookup"><span data-stu-id="5b140-111">LedgerDimensionDefaultAccountController</span></span>
+-   <span data-ttu-id="5b140-112">DimensionDynamicAccountController</span><span class="sxs-lookup"><span data-stu-id="5b140-112">DimensionDynamicAccountController</span></span>
+-   <span data-ttu-id="5b140-113">BudgetLedgerDimensionController</span><span class="sxs-lookup"><span data-stu-id="5b140-113">BudgetLedgerDimensionController</span></span>
+-   <span data-ttu-id="5b140-114">BudgetPlanningLedgerDimensionController</span><span class="sxs-lookup"><span data-stu-id="5b140-114">BudgetPlanningLedgerDimensionController</span></span>
 
-<span data-ttu-id="7908e-115">これは、セグメント化されたエントリについての簡単なダイアログ シナリオです。</span><span class="sxs-lookup"><span data-stu-id="7908e-115">This is a simple dialog scenario around Segmented Entry.</span></span> <span data-ttu-id="7908e-116">さらに高度なシナリオは次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="7908e-116">More advanced scenarios include:</span></span>
+<span data-ttu-id="5b140-115">これは、セグメント化されたエントリについての簡単なダイアログ シナリオです。</span><span class="sxs-lookup"><span data-stu-id="5b140-115">This is a simple dialog scenario around Segmented Entry.</span></span> <span data-ttu-id="5b140-116">さらに高度なシナリオは次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="5b140-116">More advanced scenarios include:</span></span>
 
--   <span data-ttu-id="7908e-117">動的アカウントをバインドしています。</span><span class="sxs-lookup"><span data-stu-id="7908e-117">Binding the dynamic account type.</span></span>
--   <span data-ttu-id="7908e-118">会社の選択をサポートしています。</span><span class="sxs-lookup"><span data-stu-id="7908e-118">Company selection support.</span></span>
--   <span data-ttu-id="7908e-119">勘定構造選択のサポート。</span><span class="sxs-lookup"><span data-stu-id="7908e-119">Account structure selection support.</span></span>
+-   <span data-ttu-id="5b140-117">動的アカウントをバインドしています。</span><span class="sxs-lookup"><span data-stu-id="5b140-117">Binding the dynamic account type.</span></span>
+-   <span data-ttu-id="5b140-118">会社の選択をサポートしています。</span><span class="sxs-lookup"><span data-stu-id="5b140-118">Company selection support.</span></span>
+-   <span data-ttu-id="5b140-119">勘定構造選択のサポート。</span><span class="sxs-lookup"><span data-stu-id="5b140-119">Account structure selection support.</span></span>
 
 
-<a name="additional-resources"></a><span data-ttu-id="7908e-120">その他のリソース</span><span class="sxs-lookup"><span data-stu-id="7908e-120">Additional resources</span></span>
+<a name="additional-resources"></a><span data-ttu-id="5b140-120">その他のリソース</span><span class="sxs-lookup"><span data-stu-id="5b140-120">Additional resources</span></span>
 --------
 
-[<span data-ttu-id="7908e-121">セグメント化されたエントリ コントロールのメタデータ詳細</span><span class="sxs-lookup"><span data-stu-id="7908e-121">Segmented Entry control Metadata Specification</span></span>](segmented-entry-control-metadata-specification.md)
+[<span data-ttu-id="5b140-121">セグメント化されたエントリ コントロールのメタデータ詳細</span><span class="sxs-lookup"><span data-stu-id="5b140-121">Segmented Entry control Metadata Specification</span></span>](segmented-entry-control-metadata-specification.md)
 
-[<span data-ttu-id="7908e-122">セグメント化されたエントリ コントロールの Parm メソッド詳細</span><span class="sxs-lookup"><span data-stu-id="7908e-122">Segmented Entry control Parm method Specification</span></span>](segmented-entry-control-parm-method-specification.md)
+[<span data-ttu-id="5b140-122">セグメント化されたエントリ コントロールの Parm メソッド詳細</span><span class="sxs-lookup"><span data-stu-id="5b140-122">Segmented Entry control Parm method Specification</span></span>](segmented-entry-control-parm-method-specification.md)
 
-[<span data-ttu-id="7908e-123">セグメント化されたエントリ コントロールの移行</span><span class="sxs-lookup"><span data-stu-id="7908e-123">Segmented Entry control migration</span></span>](segmented-entry-control-conversion.md)
+[<span data-ttu-id="5b140-123">セグメント化されたエントリ コントロールの移行</span><span class="sxs-lookup"><span data-stu-id="5b140-123">Segmented Entry control migration</span></span>](segmented-entry-control-conversion.md)
 
-[<span data-ttu-id="7908e-124">セグメント化されたエントリ コントロール - 移行のガイダンス</span><span class="sxs-lookup"><span data-stu-id="7908e-124">Segmented Entry control - Migration guidance</span></span>](segmented-entry-control-migration-guidance.md)
+[<span data-ttu-id="5b140-124">セグメント化されたエントリ コントロール - 移行のガイダンス</span><span class="sxs-lookup"><span data-stu-id="5b140-124">Segmented Entry control - Migration guidance</span></span>](segmented-entry-control-migration-guidance.md)
 
 
 

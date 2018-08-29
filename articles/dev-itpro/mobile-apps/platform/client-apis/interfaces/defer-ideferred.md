@@ -1,5 +1,5 @@
 ---
-title: "繰延"
+title: "繰延タイプ<T>"
 description: "繰延タイプ"
 author: shadykdc
 manager: AnnBe
@@ -16,73 +16,73 @@ ms.author: kashea
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: a52c2d5a992f11f69daa949223e4e2ef69ec562a
+ms.sourcegitcommit: ed6cabcc8c76fba3d4414cd4b564b720c54169e0
+ms.openlocfilehash: 1c654bc705bfc5a45e38a255e2ffb567c9e4186b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="deferred-typelttgt"></a><span data-ttu-id="35e6b-103">延期されたタイプ &lt;T&gt;</span><span class="sxs-lookup"><span data-stu-id="35e6b-103">Deferred Type&lt;T&gt;</span></span>
+# <a name="deferred-typelttgt"></a><span data-ttu-id="27723-103">延期されたタイプ&lt;T&gt;</span><span class="sxs-lookup"><span data-stu-id="27723-103">Deferred type&lt;T&gt;</span></span>
 
 [!include [banner](../../../../includes/banner.md)]
 
-### <a name="hierarchy"></a><span data-ttu-id="35e6b-104">階層</span><span class="sxs-lookup"><span data-stu-id="35e6b-104">Hierarchy</span></span>
+### <a name="hierarchy"></a><span data-ttu-id="27723-104">階層</span><span class="sxs-lookup"><span data-stu-id="27723-104">Hierarchy</span></span>
 
-<span data-ttu-id="35e6b-105">繰延</span><span class="sxs-lookup"><span data-stu-id="35e6b-105">Deferred</span></span> <br>
+<span data-ttu-id="27723-105">繰延</span><span class="sxs-lookup"><span data-stu-id="27723-105">Deferred</span></span> <br>
 
-## <a name="index"></a><span data-ttu-id="35e6b-106">指数</span><span class="sxs-lookup"><span data-stu-id="35e6b-106">Index</span></span>
+## <a name="index"></a><span data-ttu-id="27723-106">指数</span><span class="sxs-lookup"><span data-stu-id="27723-106">Index</span></span>
 
-### <a name="properties"></a><span data-ttu-id="35e6b-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="35e6b-107">Properties</span></span>
+### <a name="properties"></a><span data-ttu-id="27723-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="27723-107">Properties</span></span>
 
-* [<span data-ttu-id="35e6b-108">promise</span><span class="sxs-lookup"><span data-stu-id="35e6b-108">promise</span></span>](defer-ideferred.md#promise)
+* [<span data-ttu-id="27723-108">promise</span><span class="sxs-lookup"><span data-stu-id="27723-108">promise</span></span>](defer-ideferred.md#promise)
 
-### <a name="methods"></a><span data-ttu-id="35e6b-109">メソッド</span><span class="sxs-lookup"><span data-stu-id="35e6b-109">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="27723-109">メソッド</span><span class="sxs-lookup"><span data-stu-id="27723-109">Methods</span></span>
 
-* [<span data-ttu-id="35e6b-110">否認</span><span class="sxs-lookup"><span data-stu-id="35e6b-110">reject</span></span>](defer-ideferred.md#reject)
-* [<span data-ttu-id="35e6b-111">解決</span><span class="sxs-lookup"><span data-stu-id="35e6b-111">resolve</span></span>](defer-ideferred.md#resolve)
+* [<span data-ttu-id="27723-110">否認</span><span class="sxs-lookup"><span data-stu-id="27723-110">reject</span></span>](defer-ideferred.md#reject)
+* [<span data-ttu-id="27723-111">解決</span><span class="sxs-lookup"><span data-stu-id="27723-111">resolve</span></span>](defer-ideferred.md#resolve)
 
-## <a name="properties"></a><span data-ttu-id="35e6b-112">プロパティ</span><span class="sxs-lookup"><span data-stu-id="35e6b-112">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="27723-112">プロパティ</span><span class="sxs-lookup"><span data-stu-id="27723-112">Properties</span></span>
 
-### <a name="promise"></a><span data-ttu-id="35e6b-113">promise</span><span class="sxs-lookup"><span data-stu-id="35e6b-113">promise</span></span>
+### <a name="promise"></a><span data-ttu-id="27723-113">promise</span><span class="sxs-lookup"><span data-stu-id="27723-113">promise</span></span>
 
-<span data-ttu-id="35e6b-114">promise: Promise &lt;T&gt;</span><span class="sxs-lookup"><span data-stu-id="35e6b-114">promise: Promise &lt;T&gt;</span></span>
-
-
-
-
-## <a name="methods"></a><span data-ttu-id="35e6b-115">メソッド</span><span class="sxs-lookup"><span data-stu-id="35e6b-115">Methods</span></span>
-
-### <a name="reject"></a><span data-ttu-id="35e6b-116">否認</span><span class="sxs-lookup"><span data-stu-id="35e6b-116">reject</span></span>
-
-
-<span data-ttu-id="35e6b-117">reject(error?: any): void</span><span class="sxs-lookup"><span data-stu-id="35e6b-117">reject(error?: any): void</span></span>
+<span data-ttu-id="27723-114">promise: Promise &lt;T&gt;</span><span class="sxs-lookup"><span data-stu-id="27723-114">promise: Promise &lt;T&gt;</span></span>
 
 
 
 
-#### <a name="parameters"></a><span data-ttu-id="35e6b-118">パラメーター</span><span class="sxs-lookup"><span data-stu-id="35e6b-118">Parameters</span></span>
+## <a name="methods"></a><span data-ttu-id="27723-115">メソッド</span><span class="sxs-lookup"><span data-stu-id="27723-115">Methods</span></span>
 
-| <span data-ttu-id="35e6b-119">氏名</span><span class="sxs-lookup"><span data-stu-id="35e6b-119">Name</span></span> | <span data-ttu-id="35e6b-120">種類</span><span class="sxs-lookup"><span data-stu-id="35e6b-120">Type</span></span> | <span data-ttu-id="35e6b-121">説明</span><span class="sxs-lookup"><span data-stu-id="35e6b-121">Description</span></span> |
+### <a name="reject"></a><span data-ttu-id="27723-116">否認</span><span class="sxs-lookup"><span data-stu-id="27723-116">reject</span></span>
+
+
+<span data-ttu-id="27723-117">reject(error?: any): void</span><span class="sxs-lookup"><span data-stu-id="27723-117">reject(error?: any): void</span></span>
+
+
+
+
+#### <a name="parameters"></a><span data-ttu-id="27723-118">パラメーター</span><span class="sxs-lookup"><span data-stu-id="27723-118">Parameters</span></span>
+
+| <span data-ttu-id="27723-119">氏名</span><span class="sxs-lookup"><span data-stu-id="27723-119">Name</span></span> | <span data-ttu-id="27723-120">種類</span><span class="sxs-lookup"><span data-stu-id="27723-120">Type</span></span> | <span data-ttu-id="27723-121">説明</span><span class="sxs-lookup"><span data-stu-id="27723-121">Description</span></span> |
 | ---- | ---- | ----------- |
-| <span data-ttu-id="35e6b-122">エラー?</span><span class="sxs-lookup"><span data-stu-id="35e6b-122">error?</span></span>|<span data-ttu-id="35e6b-123">any</span><span class="sxs-lookup"><span data-stu-id="35e6b-123">any</span></span>||
+| <span data-ttu-id="27723-122">エラー?</span><span class="sxs-lookup"><span data-stu-id="27723-122">error?</span></span>|<span data-ttu-id="27723-123">any</span><span class="sxs-lookup"><span data-stu-id="27723-123">any</span></span>||
 
-#### <a name="returns-void"></a><span data-ttu-id="35e6b-124">void を返します</span><span class="sxs-lookup"><span data-stu-id="35e6b-124">Returns void</span></span>
+#### <a name="returns-void"></a><span data-ttu-id="27723-124">void を返します</span><span class="sxs-lookup"><span data-stu-id="27723-124">Returns void</span></span>
 
-### <a name="resolve"></a><span data-ttu-id="35e6b-125">解決</span><span class="sxs-lookup"><span data-stu-id="35e6b-125">resolve</span></span>
-
-
-<span data-ttu-id="35e6b-126">resolve(value?: T &#124; PromiseLike &lt;T&gt;): void</span><span class="sxs-lookup"><span data-stu-id="35e6b-126">resolve(value?: T &#124; PromiseLike &lt;T&gt;): void</span></span>
+### <a name="resolve"></a><span data-ttu-id="27723-125">解決</span><span class="sxs-lookup"><span data-stu-id="27723-125">resolve</span></span>
 
 
+<span data-ttu-id="27723-126">resolve(value?: T &#124; PromiseLike &lt;T&gt;): void</span><span class="sxs-lookup"><span data-stu-id="27723-126">resolve(value?: T &#124; PromiseLike &lt;T&gt;): void</span></span>
 
 
-#### <a name="parameters"></a><span data-ttu-id="35e6b-127">パラメーター</span><span class="sxs-lookup"><span data-stu-id="35e6b-127">Parameters</span></span>
 
-| <span data-ttu-id="35e6b-128">氏名</span><span class="sxs-lookup"><span data-stu-id="35e6b-128">Name</span></span> | <span data-ttu-id="35e6b-129">種類</span><span class="sxs-lookup"><span data-stu-id="35e6b-129">Type</span></span> | <span data-ttu-id="35e6b-130">説明</span><span class="sxs-lookup"><span data-stu-id="35e6b-130">Description</span></span> |
+
+#### <a name="parameters"></a><span data-ttu-id="27723-127">パラメーター</span><span class="sxs-lookup"><span data-stu-id="27723-127">Parameters</span></span>
+
+| <span data-ttu-id="27723-128">氏名</span><span class="sxs-lookup"><span data-stu-id="27723-128">Name</span></span> | <span data-ttu-id="27723-129">種類</span><span class="sxs-lookup"><span data-stu-id="27723-129">Type</span></span> | <span data-ttu-id="27723-130">説明</span><span class="sxs-lookup"><span data-stu-id="27723-130">Description</span></span> |
 | ---- | ---- | ----------- |
-| <span data-ttu-id="35e6b-131">value?</span><span class="sxs-lookup"><span data-stu-id="35e6b-131">value?</span></span>|<span data-ttu-id="35e6b-132">T &#124; PromiseLike &lt;T&gt;</span><span class="sxs-lookup"><span data-stu-id="35e6b-132">T &#124; PromiseLike &lt;T&gt;</span></span>||
+| <span data-ttu-id="27723-131">value?</span><span class="sxs-lookup"><span data-stu-id="27723-131">value?</span></span>|<span data-ttu-id="27723-132">T &#124; PromiseLike &lt;T&gt;</span><span class="sxs-lookup"><span data-stu-id="27723-132">T &#124; PromiseLike &lt;T&gt;</span></span>||
 
-#### <a name="returns-void"></a><span data-ttu-id="35e6b-133">void を返します</span><span class="sxs-lookup"><span data-stu-id="35e6b-133">Returns void</span></span>
+#### <a name="returns-void"></a><span data-ttu-id="27723-133">void を返します</span><span class="sxs-lookup"><span data-stu-id="27723-133">Returns void</span></span>
 
 

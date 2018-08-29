@@ -1,5 +1,5 @@
 ---
-title: "作業者への貸与品目の管理"
+title: "作業者へ貸与された品目の管理"
 description: "貸与品目は、会社から作業者に貸与される現物品目を管理者が追跡するのに役立つレコードです。"
 author: kherr75
 manager: AnnBe
@@ -19,42 +19,42 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: fe8d8812aaa78c7b5558615f586940488f2dc1b2
+ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
+ms.openlocfilehash: 6c22e85360c3e6e40e0338960866b96d66a0ba50
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="manage-items-lent-to-workers"></a><span data-ttu-id="4b576-103">作業者への貸与品目の管理</span><span class="sxs-lookup"><span data-stu-id="4b576-103">Manage items lent to workers</span></span>
+# <a name="manage-items-that-are-lent-to-workers"></a><span data-ttu-id="0caab-103">作業者へ貸与された品目の管理</span><span class="sxs-lookup"><span data-stu-id="0caab-103">Manage items that are lent to workers</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="4b576-104">貸与品目は、会社から作業者に貸与される現物品目を管理者が追跡するのに役立つレコードです。</span><span class="sxs-lookup"><span data-stu-id="4b576-104">Loan items are records that help managers track the physical items that your company lends to its workers.</span></span> 
+<span data-ttu-id="0caab-104">貸与品目は、会社から作業者に貸与される現物品目を管理者が追跡するのに役立つレコードです。</span><span class="sxs-lookup"><span data-stu-id="0caab-104">Loan items are records that help managers track the physical items that your company lends to its workers.</span></span> 
 
-<span data-ttu-id="4b576-105">次の項目は、会社が作業者に割り当てられる貸与品目の例です。</span><span class="sxs-lookup"><span data-stu-id="4b576-105">The following points list examples of items that a company might lend to workers:</span></span>
--   <span data-ttu-id="4b576-106">携帯電話</span><span class="sxs-lookup"><span data-stu-id="4b576-106">Mobile telephones</span></span>
--   <span data-ttu-id="4b576-107">自動車</span><span class="sxs-lookup"><span data-stu-id="4b576-107">Automobiles</span></span>
--   <span data-ttu-id="4b576-108">コンピュータ機器</span><span class="sxs-lookup"><span data-stu-id="4b576-108">Computer equipment</span></span>
+<span data-ttu-id="0caab-105">次の項目は、会社が作業者に割り当てられる貸与品目の例です。</span><span class="sxs-lookup"><span data-stu-id="0caab-105">The following points list examples of items that a company might lend to workers:</span></span>
+-   <span data-ttu-id="0caab-106">携帯電話</span><span class="sxs-lookup"><span data-stu-id="0caab-106">Mobile telephones</span></span>
+-   <span data-ttu-id="0caab-107">自動車</span><span class="sxs-lookup"><span data-stu-id="0caab-107">Automobiles</span></span>
+-   <span data-ttu-id="0caab-108">コンピュータ機器</span><span class="sxs-lookup"><span data-stu-id="0caab-108">Computer equipment</span></span>
 
-<span data-ttu-id="4b576-109">個々の現物品目は、対応する貸与品目が必要です。</span><span class="sxs-lookup"><span data-stu-id="4b576-109">Each physical item must have a corresponding loan item.</span></span> <span data-ttu-id="4b576-110">各貸与品目の記録では、従業員への貸与する品目、貸与の責任者、および貸与可能な日数を記録する必要があります。</span><span class="sxs-lookup"><span data-stu-id="4b576-110">Each loan item record should describe what is being loaned, who is responsible for the loan, and the number of days the item can loaned to a worker.</span></span> <span data-ttu-id="4b576-111">キー、アクセス カード、制服などの複数の貸与品目を同時に作成できます。</span><span class="sxs-lookup"><span data-stu-id="4b576-111">You can create multiple loan items, for items such as keys, access cards or uniforms, at the same time.</span></span> 
+<span data-ttu-id="0caab-109">個々の現物品目は、対応する貸与品目が必要です。</span><span class="sxs-lookup"><span data-stu-id="0caab-109">Each physical item must have a corresponding loan item.</span></span> <span data-ttu-id="0caab-110">各貸与品目の記録では、従業員への貸与する品目、貸与の責任者、および貸与可能な日数を記録する必要があります。</span><span class="sxs-lookup"><span data-stu-id="0caab-110">Each loan item record should describe what is being loaned, who is responsible for the loan, and the number of days the item can loaned to a worker.</span></span> <span data-ttu-id="0caab-111">キー、アクセス カード、制服などの複数の貸与品目を同時に作成できます。</span><span class="sxs-lookup"><span data-stu-id="0caab-111">You can create multiple loan items, for items such as keys, access cards or uniforms, at the same time.</span></span> 
 
-<span data-ttu-id="4b576-112">品目を貸与する際には、貸与日と予定返却日を入力します。</span><span class="sxs-lookup"><span data-stu-id="4b576-112">When loaning an item, enter the date that the item was loaned, and the planned return date.</span></span> <span data-ttu-id="4b576-113">品目が返却されたら、実際の返却日を入力します。</span><span class="sxs-lookup"><span data-stu-id="4b576-113">When the item is returned, enter the actual return date.</span></span>
+<span data-ttu-id="0caab-112">品目を貸与する際には、貸与日と予定返却日を入力します。</span><span class="sxs-lookup"><span data-stu-id="0caab-112">When loaning an item, enter the date that the item was loaned, and the planned return date.</span></span> <span data-ttu-id="0caab-113">品目が返却されたら、実際の返却日を入力します。</span><span class="sxs-lookup"><span data-stu-id="0caab-113">When the item is returned, enter the actual return date.</span></span>
 
-<span data-ttu-id="4b576-114">従業員は、従業員セルフ サービス ワークスペースを使用して、貸与品目レコードを表示できます。</span><span class="sxs-lookup"><span data-stu-id="4b576-114">Employees can view the records of the items that have been loaned to them using the Employee self-service workspace.</span></span> <span data-ttu-id="4b576-115">また、追加の現物品目を受け取った場合は既存のレコードを編集、または新しい貸与品目を入力することもできます。</span><span class="sxs-lookup"><span data-stu-id="4b576-115">They can also edit the existing records or enter new loan items, if they've received additional physical items.</span></span>  <span data-ttu-id="4b576-116">ワークフローを設定して、承認プロセスを通じた新規または既存の貸与品目に対する変更を転送することができます。</span><span class="sxs-lookup"><span data-stu-id="4b576-116">Workflow can be set up to route changes to new or existing loan items through an approval process.</span></span> 
+<span data-ttu-id="0caab-114">従業員は、従業員セルフ サービス ワークスペースを使用して、貸与品目レコードを表示できます。</span><span class="sxs-lookup"><span data-stu-id="0caab-114">Employees can view the records of the items that have been loaned to them using the Employee self-service workspace.</span></span> <span data-ttu-id="0caab-115">また、追加の現物品目を受け取った場合は既存のレコードを編集、または新しい貸与品目を入力することもできます。</span><span class="sxs-lookup"><span data-stu-id="0caab-115">They can also edit the existing records or enter new loan items, if they've received additional physical items.</span></span>  <span data-ttu-id="0caab-116">ワークフローを設定して、承認プロセスを通じた新規または既存の貸与品目に対する変更を転送することができます。</span><span class="sxs-lookup"><span data-stu-id="0caab-116">Workflow can be set up to route changes to new or existing loan items through an approval process.</span></span> 
 
-<span data-ttu-id="4b576-117">管理者は、直属の部下への貸与品目を表示できます。</span><span class="sxs-lookup"><span data-stu-id="4b576-117">Managers can view loaned items for their direct reports.</span></span> <span data-ttu-id="4b576-118">また、従業員に代わって新しい貸与品目を追加するアクセス許可を得ることができます。</span><span class="sxs-lookup"><span data-stu-id="4b576-118">They can also be granted permission to add new loan items on behalf of their employees.</span></span>
+<span data-ttu-id="0caab-117">管理者は、直属の部下への貸与品目を表示できます。</span><span class="sxs-lookup"><span data-stu-id="0caab-117">Managers can view loaned items for their direct reports.</span></span> <span data-ttu-id="0caab-118">また、従業員に代わって新しい貸与品目を追加するアクセス許可を得ることができます。</span><span class="sxs-lookup"><span data-stu-id="0caab-118">They can also be granted permission to add new loan items on behalf of their employees.</span></span>
 
- <a name="account-for-lost-or-misplaced-loan-items"></a><span data-ttu-id="4b576-119">紛失した貸与品目の勘定</span><span class="sxs-lookup"><span data-stu-id="4b576-119">Account for lost or misplaced loan items</span></span>
+ <a name="account-for-lost-or-misplaced-loan-items"></a><span data-ttu-id="0caab-119">紛失した貸与品目の勘定</span><span class="sxs-lookup"><span data-stu-id="0caab-119">Account for lost or misplaced loan items</span></span>
 -----------------------------------------
 
-<span data-ttu-id="4b576-120">品目が損傷または紛失した場合は、架空の返却レコードを入力します。</span><span class="sxs-lookup"><span data-stu-id="4b576-120">If an item becomes damaged or misplaced, enter a fictitious return record.</span></span> <span data-ttu-id="4b576-121">その後、品目を削除するか概要に記録し、品目が利用できないことを示すために説明を変更します。</span><span class="sxs-lookup"><span data-stu-id="4b576-121">Then either delete the item or keep it in the overview and change the description to indicate that the item is not available.</span></span>
+<span data-ttu-id="0caab-120">品目が損傷または紛失した場合は、架空の返却レコードを入力します。</span><span class="sxs-lookup"><span data-stu-id="0caab-120">If an item becomes damaged or misplaced, enter a fictitious return record.</span></span> <span data-ttu-id="0caab-121">その後、品目を削除するか概要に記録し、品目が利用できないことを示すために説明を変更します。</span><span class="sxs-lookup"><span data-stu-id="0caab-121">Then either delete the item or keep it in the overview and change the description to indicate that the item is not available.</span></span>
 
 
-<a name="additional-resources"></a><span data-ttu-id="4b576-122">その他のリソース</span><span class="sxs-lookup"><span data-stu-id="4b576-122">Additional resources</span></span>
+<a name="additional-resources"></a><span data-ttu-id="0caab-122">その他のリソース</span><span class="sxs-lookup"><span data-stu-id="0caab-122">Additional resources</span></span>
 --------
 
-[<span data-ttu-id="4b576-123">人事管理</span><span class="sxs-lookup"><span data-stu-id="4b576-123">Human resources</span></span>](index.md)
+[<span data-ttu-id="0caab-123">人事管理</span><span class="sxs-lookup"><span data-stu-id="0caab-123">Human resources</span></span>](index.md)
 
 
 

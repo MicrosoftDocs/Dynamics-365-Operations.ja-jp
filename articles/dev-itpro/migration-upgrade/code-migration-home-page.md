@@ -20,42 +20,45 @@ ms.translationtype: HT
 ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
 ms.openlocfilehash: 32b866c252e11cf1d218b6c46b65d3dba67802a4
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
 
-# <a name="code-migration-and-upgrade-home-page"></a><span data-ttu-id="4f519-103">コードの移行とホーム ページのアップグレード</span><span class="sxs-lookup"><span data-stu-id="4f519-103">Code migration and upgrade home page</span></span>
+# <a name="code-migration-and-upgrade-home-page"></a><span data-ttu-id="1e7ea-103">コードの移行とホーム ページのアップグレード</span><span class="sxs-lookup"><span data-stu-id="1e7ea-103">Code migration and upgrade home page</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-## <a name="migrate-your-code"></a><span data-ttu-id="4f519-104">コードの移行</span><span class="sxs-lookup"><span data-stu-id="4f519-104">Migrate your code</span></span>
+## <a name="migrate-your-code"></a><span data-ttu-id="1e7ea-104">コードの移行</span><span class="sxs-lookup"><span data-stu-id="1e7ea-104">Migrate your code</span></span>
 
-<span data-ttu-id="4f519-105">コードを移行するには、Lifecycle Services で「ソリューションの移行と作成」の方法を使用します。</span><span class="sxs-lookup"><span data-stu-id="4f519-105">To migrate your code, use the "Migrate and Create Solutions" methodology in Lifecycle Services.</span></span>
+<span data-ttu-id="1e7ea-105">コードを移行するには、Lifecycle Services で「ソリューションの移行と作成」の方法を使用します。</span><span class="sxs-lookup"><span data-stu-id="1e7ea-105">To migrate your code, use the "Migrate and Create Solutions" methodology in Lifecycle Services.</span></span>
 
-## <a name="key-concepts"></a><span data-ttu-id="4f519-106">重要な概念</span><span class="sxs-lookup"><span data-stu-id="4f519-106">Key concepts</span></span>
+## <a name="key-concepts"></a><span data-ttu-id="1e7ea-106">重要な概念</span><span class="sxs-lookup"><span data-stu-id="1e7ea-106">Key concepts</span></span>
 
-<span data-ttu-id="4f519-107">次のリンク (方法にも含まれています) では、移行プロセスの重要な概念と手順について説明します。</span><span class="sxs-lookup"><span data-stu-id="4f519-107">The following links (also included in the methodology) describe key concepts and steps in the migration process.</span></span> <span data-ttu-id="4f519-108">リンクは推奨される順序でここに表示されます。</span><span class="sxs-lookup"><span data-stu-id="4f519-108">The links are listed here in the order that we recommend you read them.</span></span>
+<span data-ttu-id="1e7ea-107">次のリンク (方法にも含まれています) では、移行プロセスの重要な概念と手順について説明します。</span><span class="sxs-lookup"><span data-stu-id="1e7ea-107">The following links (also included in the methodology) describe key concepts and steps in the migration process.</span></span> <span data-ttu-id="1e7ea-108">リンクは推奨される順序でここに表示されます。</span><span class="sxs-lookup"><span data-stu-id="1e7ea-108">The links are listed here in the order that we recommend you read them.</span></span>
 
-- [<span data-ttu-id="4f519-109">概要: 移行の準備</span><span class="sxs-lookup"><span data-stu-id="4f519-109">Overview: Prepare to migrate</span></span>](prepare-migration.md)
+- [<span data-ttu-id="1e7ea-109">概要: 移行の準備</span><span class="sxs-lookup"><span data-stu-id="1e7ea-109">Overview: Prepare to migrate</span></span>](prepare-migration.md)
 <!--- [Migrate from AX 2012 (Office Mix)](https://mix.office.com/watch/4gsvk592c685)
 - [Migrate between versions (Office Mix)](https://mix.office.com/watch/os2wff38zi6f)-->
-- [<span data-ttu-id="4f519-110">Lifecycle Services で、コード アップグレード サービスを構成し、実行する</span><span class="sxs-lookup"><span data-stu-id="4f519-110">Configure and execute the code upgrade service in Lifecycle Services</span></span>](../lifecycle-services/configure-execute-code-upgrade.md)
-- [<span data-ttu-id="4f519-111">コード アップグレード後に、VSTS マッピングを構成する</span><span class="sxs-lookup"><span data-stu-id="4f519-111">Configure your VSTS mapping after a code upgrade</span></span>](configure-vso-solution.md)
-<!-- [Resolve conflicts using Visual Studio (Office Mix)](https://mix.office.com/watch/1rl75ei2cs6d7)-->
-- [<span data-ttu-id="4f519-112">モデルの分割を理解する</span><span class="sxs-lookup"><span data-stu-id="4f519-112">Understanding the model split</span></span>](../dev-tools/model-split.md)
-- [<span data-ttu-id="4f519-113">削除予定の機能</span><span class="sxs-lookup"><span data-stu-id="4f519-113">Deprecated features</span></span>](deprecated-features.md)
-- [<span data-ttu-id="4f519-114">非推奨 API's</span><span class="sxs-lookup"><span data-stu-id="4f519-114">Deprecated API’s</span></span>](deprecated-apis.md)
-<!--- [Development tools performance tips (Office Mix)](https://mix.office.com/watch/rnp6ng9wu8kx)-->
+- [<span data-ttu-id="1e7ea-110">Lifecycle Services で、コード アップグレード サービスを構成し、実行する</span><span class="sxs-lookup"><span data-stu-id="1e7ea-110">Configure and execute the code upgrade service in Lifecycle Services</span></span>](../lifecycle-services/configure-execute-code-upgrade.md)
+- <span data-ttu-id="1e7ea-111">[コード アップグレード後に VSTS マッピングを構成する](configure-vso-solution.md)
+<!-- [Resolve conflicts using Visual Studio (Office Mix)](https://mix.office.com/watch/1rl75ei2cs6d7)--></span><span class="sxs-lookup"><span data-stu-id="1e7ea-111">[Configure your VSTS mapping after a code upgrade](configure-vso-solution.md)
+<!-- [Resolve conflicts using Visual Studio (Office Mix)](https://mix.office.com/watch/1rl75ei2cs6d7)--></span></span>
+- [<span data-ttu-id="1e7ea-112">モデルの分割を理解する</span><span class="sxs-lookup"><span data-stu-id="1e7ea-112">Understanding the model split</span></span>](../dev-tools/model-split.md)
+- [<span data-ttu-id="1e7ea-113">削除予定の機能</span><span class="sxs-lookup"><span data-stu-id="1e7ea-113">Deprecated features</span></span>](deprecated-features.md)
+- <span data-ttu-id="1e7ea-114">[非推奨 API's](deprecated-apis.md)
+<!--- [Development tools performance tips (Office Mix)](https://mix.office.com/watch/rnp6ng9wu8kx)--></span><span class="sxs-lookup"><span data-stu-id="1e7ea-114">[Deprecated API’s](deprecated-apis.md)
+<!--- [Development tools performance tips (Office Mix)](https://mix.office.com/watch/rnp6ng9wu8kx)--></span></span>
 
-## <a name="additional-concepts"></a><span data-ttu-id="4f519-115">追加コンセプト</span><span class="sxs-lookup"><span data-stu-id="4f519-115">Additional concepts</span></span>
+## <a name="additional-concepts"></a><span data-ttu-id="1e7ea-115">追加コンセプト</span><span class="sxs-lookup"><span data-stu-id="1e7ea-115">Additional concepts</span></span>
 
-- [<span data-ttu-id="4f519-116">移行の委任</span><span class="sxs-lookup"><span data-stu-id="4f519-116">Delegates for migration</span></span>](delegates-migration.md)
-- [<span data-ttu-id="4f519-117">SQL Server Analysis Services プロジェクトを AOT にインポートする方法</span><span class="sxs-lookup"><span data-stu-id="4f519-117">How to import a SQL Server Analysis Services Project into the AOT</span></span>](https://technet.microsoft.com/en-us/library/dn754850.aspx)
-- [<span data-ttu-id="4f519-118">データベース同期</span><span class="sxs-lookup"><span data-stu-id="4f519-118">Database synchronization</span></span>](../dev-tools/database-synchronization.md)
-<!--- [Understand the migration task list (Office Mix)](https://mix.office.com/watch/kcek55rc5cau)-->
-- [<span data-ttu-id="4f519-119">アップグレードおよび移行</span><span class="sxs-lookup"><span data-stu-id="4f519-119">Upgrade and migration</span></span>](upgrade-home-page.md)
-- [<span data-ttu-id="4f519-120">ワークフロー サブシステムのアップデート</span><span class="sxs-lookup"><span data-stu-id="4f519-120">Workflow subsystem updates</span></span>](workflow-subsystem.md)
-- [<span data-ttu-id="4f519-121">アップグレードした Dynamics AX 2012 R3 販売キューブをエンティティの店舗へ移行する</span><span class="sxs-lookup"><span data-stu-id="4f519-121">Migrate an upgraded Dynamics AX 2012 R3 sales cube to the entity store</span></span>](migrate-upgraded-cube-entity-store.md)
+- [<span data-ttu-id="1e7ea-116">移行の委任</span><span class="sxs-lookup"><span data-stu-id="1e7ea-116">Delegates for migration</span></span>](delegates-migration.md)
+- [<span data-ttu-id="1e7ea-117">SQL Server Analysis Services プロジェクトを AOT にインポートする方法</span><span class="sxs-lookup"><span data-stu-id="1e7ea-117">How to import a SQL Server Analysis Services Project into the AOT</span></span>](https://technet.microsoft.com/en-us/library/dn754850.aspx)
+- <span data-ttu-id="1e7ea-118">[データベース同期](../dev-tools/database-synchronization.md)
+<!--- [Understand the migration task list (Office Mix)](https://mix.office.com/watch/kcek55rc5cau)--></span><span class="sxs-lookup"><span data-stu-id="1e7ea-118">[Database synchronization](../dev-tools/database-synchronization.md)
+<!--- [Understand the migration task list (Office Mix)](https://mix.office.com/watch/kcek55rc5cau)--></span></span>
+- [<span data-ttu-id="1e7ea-119">アップグレードおよび移行</span><span class="sxs-lookup"><span data-stu-id="1e7ea-119">Upgrade and migration</span></span>](upgrade-home-page.md)
+- [<span data-ttu-id="1e7ea-120">ワークフロー サブシステムのアップデート</span><span class="sxs-lookup"><span data-stu-id="1e7ea-120">Workflow subsystem updates</span></span>](workflow-subsystem.md)
+- [<span data-ttu-id="1e7ea-121">アップグレードした Dynamics AX 2012 R3 販売キューブをエンティティの店舗へ移行する</span><span class="sxs-lookup"><span data-stu-id="1e7ea-121">Migrate an upgraded Dynamics AX 2012 R3 sales cube to the entity store</span></span>](migrate-upgraded-cube-entity-store.md)
 
 

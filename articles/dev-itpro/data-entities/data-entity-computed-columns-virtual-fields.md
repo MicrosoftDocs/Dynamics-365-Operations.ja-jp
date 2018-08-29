@@ -18,226 +18,219 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a55fbd715d3c17e138a8d945159154da7c8a0de6
-ms.openlocfilehash: ce22ba7de77a1bf1722b023d5f161d8add3df892
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: e884cd388cd6f400bd404f62baaa751158ef1e4a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
-# <a name="compute-columns-and-virtual-fields-in-a-data-entity"></a><span data-ttu-id="db464-103">データ エンティティの列と仮想フィールドを計算する</span><span class="sxs-lookup"><span data-stu-id="db464-103">Compute columns and virtual fields in a data entity</span></span>
+# <a name="computed-columns-and-virtual-fields-in-data-entities"></a><span data-ttu-id="f6910-103">データ エンティティの列と仮想フィールドを計算する</span><span class="sxs-lookup"><span data-stu-id="f6910-103">Computed columns and virtual fields in data entities</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="db464-104">この記事では、計算されたフィールドと仮想フィールドに関する情報を提供します。これは、データ エンティティが持つことができる 2 つのタイプのマッピングされていないフィールドです。</span><span class="sxs-lookup"><span data-stu-id="db464-104">This article provides information about computed and virtual fields, which are the two types of unmapped fields that a data entity can have.</span></span> <span data-ttu-id="db464-105">この記事には、マップされていないフィールドのプロパティに関する情報と、それらの作成、使用、テストの方法を示す例が含まれています。</span><span class="sxs-lookup"><span data-stu-id="db464-105">The article includes information about the properties of unmapped fields, and examples that show how to create, use, and test them.</span></span>
+<span data-ttu-id="f6910-104">この記事では、計算されたフィールドと仮想フィールドに関する情報を提供します。これは、データ エンティティが持つことができる 2 つのタイプのマッピングされていないフィールドです。</span><span class="sxs-lookup"><span data-stu-id="f6910-104">This article provides information about computed and virtual fields, which are the two types of unmapped fields that a data entity can have.</span></span> <span data-ttu-id="f6910-105">この記事には、マップされていないフィールドのプロパティに関する情報と、それらの作成、使用、テストの方法を示す例が含まれています。</span><span class="sxs-lookup"><span data-stu-id="f6910-105">The article includes information about the properties of unmapped fields, and examples that show how to create, use, and test them.</span></span>
 
-## <a name="overview"></a><span data-ttu-id="db464-106">概要</span><span class="sxs-lookup"><span data-stu-id="db464-106">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="f6910-106">概要</span><span class="sxs-lookup"><span data-stu-id="f6910-106">Overview</span></span>
 
-<span data-ttu-id="db464-107">データ エンティティは、データ ソースのフィールドに直接マップされているフィールド以外に*マップされていない*フィールドを追加で持つことができます。</span><span class="sxs-lookup"><span data-stu-id="db464-107">A data entity can have additional *unmapped* fields beyond those that are directly mapped to fields of the data sources.</span></span> <span data-ttu-id="db464-108">マップされていないフィールドの値を生成するメカニズムは次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="db464-108">There are mechanisms for generating values for unmapped fields:</span></span>
+<span data-ttu-id="f6910-107">データ エンティティは、データ ソースのフィールドに直接マップされているフィールド以外に*マップされていない*フィールドを追加で持つことができます。</span><span class="sxs-lookup"><span data-stu-id="f6910-107">A data entity can have additional *unmapped* fields beyond those that are directly mapped to fields of the data sources.</span></span> <span data-ttu-id="f6910-108">マップされていないフィールドの値を生成するメカニズムは次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="f6910-108">There are mechanisms for generating values for unmapped fields:</span></span>
 
--   <span data-ttu-id="db464-109">カスタム X++ コード</span><span class="sxs-lookup"><span data-stu-id="db464-109">Custom X++ code</span></span>
--   <span data-ttu-id="db464-110">Microsoft SQL Server により実行される SQL</span><span class="sxs-lookup"><span data-stu-id="db464-110">SQL executed by Microsoft SQL Server</span></span>
+- <span data-ttu-id="f6910-109">カスタム X++ コード</span><span class="sxs-lookup"><span data-stu-id="f6910-109">Custom X++ code</span></span>
+- <span data-ttu-id="f6910-110">Microsoft SQL Server により実行される SQL</span><span class="sxs-lookup"><span data-stu-id="f6910-110">SQL executed by Microsoft SQL Server</span></span>
 
-<span data-ttu-id="db464-111">マップされていない2種類のフィールドは、計算と仮想です。</span><span class="sxs-lookup"><span data-stu-id="db464-111">The two types of unmapped fields are computed and virtual.</span></span> <span data-ttu-id="db464-112">マップされていないフィールドは常に読み取り操作をサポートしますが、機能仕様では、書き込み操作をサポートするための開発作業は必要とされない場合があります。</span><span class="sxs-lookup"><span data-stu-id="db464-112">Unmapped fields always support read actions, but the feature specification might not require any development effort to support write actions.</span></span>
+<span data-ttu-id="f6910-111">マップされていない2種類のフィールドは、計算と仮想です。</span><span class="sxs-lookup"><span data-stu-id="f6910-111">The two types of unmapped fields are computed and virtual.</span></span> <span data-ttu-id="f6910-112">マップされていないフィールドは常に読み取り操作をサポートしますが、機能仕様では、書き込み操作をサポートするための開発作業は必要とされない場合があります。</span><span class="sxs-lookup"><span data-stu-id="f6910-112">Unmapped fields always support read actions, but the feature specification might not require any development effort to support write actions.</span></span>
 
-### <a name="computed-field"></a><span data-ttu-id="db464-113">計算フィールド</span><span class="sxs-lookup"><span data-stu-id="db464-113">Computed field</span></span>
+### <a name="computed-field"></a><span data-ttu-id="f6910-113">計算フィールド</span><span class="sxs-lookup"><span data-stu-id="f6910-113">Computed field</span></span>
 
--   <span data-ttu-id="db464-114">値は、SQL ビューの計算列によって生成されます。</span><span class="sxs-lookup"><span data-stu-id="db464-114">Value is generated by an SQL view computed column.</span></span>
--   <span data-ttu-id="db464-115">読み取り中に、データは SQL によって計算され、ビューから直接フェッチされます。</span><span class="sxs-lookup"><span data-stu-id="db464-115">During read, data is computed by SQL and is fetched directly from the view.</span></span>
--   <span data-ttu-id="db464-116">書き込みについては、カスタム X++ コードは入力値を解析し、データ エンティティの通常のフィールドに解析された値を書き込む必要があります。</span><span class="sxs-lookup"><span data-stu-id="db464-116">For writes, custom X++ code must parse the input value and then write the parsed values to the regular fields of the data entity.</span></span> <span data-ttu-id="db464-117">値はエンティティのデータ ソースの通常のフィールドに格納されます。</span><span class="sxs-lookup"><span data-stu-id="db464-117">The values are stored in the regular fields of the data sources of the entity.</span></span>
--   <span data-ttu-id="db464-118">計算フィールドは主に読み取りに使用されます。</span><span class="sxs-lookup"><span data-stu-id="db464-118">Computed fields are used mostly for reads.</span></span>
--   <span data-ttu-id="db464-119">可能であれば、計算された列は SQL Server レベルで計算されている一方、仮想フィールドは、X++ の行ごとに計算された行であるため、可能な限り仮想フィールドではなく計算された列を使用することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="db464-119">If possible, it's a good idea to use computed columns instead of virtual fields, because they are computed at the SQL Server level, whereas, virtual fields are computed row by row in X++.</span></span>
+- <span data-ttu-id="f6910-114">値は、SQL ビューの計算列によって生成されます。</span><span class="sxs-lookup"><span data-stu-id="f6910-114">Value is generated by an SQL view computed column.</span></span>
+- <span data-ttu-id="f6910-115">読み取り中に、データは SQL によって計算され、ビューから直接フェッチされます。</span><span class="sxs-lookup"><span data-stu-id="f6910-115">During read, data is computed by SQL and is fetched directly from the view.</span></span>
+- <span data-ttu-id="f6910-116">書き込みについては、カスタム X++ コードは入力値を解析し、データ エンティティの通常のフィールドに解析された値を書き込む必要があります。</span><span class="sxs-lookup"><span data-stu-id="f6910-116">For writes, custom X++ code must parse the input value and then write the parsed values to the regular fields of the data entity.</span></span> <span data-ttu-id="f6910-117">値はエンティティのデータ ソースの通常のフィールドに格納されます。</span><span class="sxs-lookup"><span data-stu-id="f6910-117">The values are stored in the regular fields of the data sources of the entity.</span></span>
+- <span data-ttu-id="f6910-118">計算フィールドは主に読み取りに使用されます。</span><span class="sxs-lookup"><span data-stu-id="f6910-118">Computed fields are used mostly for reads.</span></span>
+- <span data-ttu-id="f6910-119">可能であれば、計算された列は SQL Server レベルで計算されている一方、仮想フィールドは、X++ の行ごとに計算された行であるため、可能な限り仮想フィールドではなく計算された列を使用することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="f6910-119">If possible, it's a good idea to use computed columns instead of virtual fields, because they are computed at the SQL Server level, whereas, virtual fields are computed row by row in X++.</span></span>
 
-### <a name="virtual-field"></a><span data-ttu-id="db464-120">仮想フィールド</span><span class="sxs-lookup"><span data-stu-id="db464-120">Virtual field</span></span>
+### <a name="virtual-field"></a><span data-ttu-id="f6910-120">仮想フィールド</span><span class="sxs-lookup"><span data-stu-id="f6910-120">Virtual field</span></span>
 
--   <span data-ttu-id="db464-121">保持されないフィールドです。</span><span class="sxs-lookup"><span data-stu-id="db464-121">Is a non-persisted field.</span></span>
--   <span data-ttu-id="db464-122">カスタム X++ コードによって制御されます。</span><span class="sxs-lookup"><span data-stu-id="db464-122">Is controlled by custom X++ code.</span></span>
--   <span data-ttu-id="db464-123">読み取り/書き込みは、カスタム X++ コードを通じて発生します。</span><span class="sxs-lookup"><span data-stu-id="db464-123">Read and write happens through custom X++ code.</span></span>
--   <span data-ttu-id="db464-124">仮想フィールドは 通常X++ コードを使用して計算される入力値に使用され、計算された列に置き換わることはできません。</span><span class="sxs-lookup"><span data-stu-id="db464-124">Virtual fields are typically used for intake values that are calculated by using X++ code and can't be replaced by computed columns.</span></span>
+- <span data-ttu-id="f6910-121">保持されないフィールドです。</span><span class="sxs-lookup"><span data-stu-id="f6910-121">Is a non-persisted field.</span></span>
+- <span data-ttu-id="f6910-122">カスタム X++ コードによって制御されます。</span><span class="sxs-lookup"><span data-stu-id="f6910-122">Is controlled by custom X++ code.</span></span>
+- <span data-ttu-id="f6910-123">読み取り/書き込みは、カスタム X++ コードを通じて発生します。</span><span class="sxs-lookup"><span data-stu-id="f6910-123">Read and write happens through custom X++ code.</span></span>
+- <span data-ttu-id="f6910-124">仮想フィールドは 通常X++ コードを使用して計算される入力値に使用され、計算された列に置き換わることはできません。</span><span class="sxs-lookup"><span data-stu-id="f6910-124">Virtual fields are typically used for intake values that are calculated by using X++ code and can't be replaced by computed columns.</span></span>
 
-### <a name="properties-of-unmapped-fields"></a><span data-ttu-id="db464-125">マップされていないフィールドのプロパティ</span><span class="sxs-lookup"><span data-stu-id="db464-125">Properties of unmapped fields</span></span>
+### <a name="properties-of-unmapped-fields"></a><span data-ttu-id="f6910-125">マップされていないフィールドのプロパティ</span><span class="sxs-lookup"><span data-stu-id="f6910-125">Properties of unmapped fields</span></span>
 
 <table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
 <thead>
-<tr class="header">
-<th><span data-ttu-id="db464-126">カテゴリ</span><span class="sxs-lookup"><span data-stu-id="db464-126">Category</span></span></th>
-<th><span data-ttu-id="db464-127">氏名</span><span class="sxs-lookup"><span data-stu-id="db464-127">Name</span></span></th>
-<th><span data-ttu-id="db464-128">種類</span><span class="sxs-lookup"><span data-stu-id="db464-128">Type</span></span></th>
-<th><span data-ttu-id="db464-129">既定値</span><span class="sxs-lookup"><span data-stu-id="db464-129">Default value</span></span></th>
-<th><span data-ttu-id="db464-130">動作</span><span class="sxs-lookup"><span data-stu-id="db464-130">Behavior</span></span></th>
+<tr>
+<th><span data-ttu-id="f6910-126">カテゴリ</span><span class="sxs-lookup"><span data-stu-id="f6910-126">Category</span></span></th>
+<th><span data-ttu-id="f6910-127">氏名</span><span class="sxs-lookup"><span data-stu-id="f6910-127">Name</span></span></th>
+<th><span data-ttu-id="f6910-128">種類</span><span class="sxs-lookup"><span data-stu-id="f6910-128">Type</span></span></th>
+<th><span data-ttu-id="f6910-129">既定値</span><span class="sxs-lookup"><span data-stu-id="f6910-129">Default value</span></span></th>
+<th><span data-ttu-id="f6910-130">動作</span><span class="sxs-lookup"><span data-stu-id="f6910-130">Behavior</span></span></th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td><span data-ttu-id="db464-131">データ</span><span class="sxs-lookup"><span data-stu-id="db464-131">Data</span></span></td>
-<td><span data-ttu-id="db464-132">IsComputedField</span><span class="sxs-lookup"><span data-stu-id="db464-132">IsComputedField</span></span></td>
-<td><span data-ttu-id="db464-133">NoYes</span><span class="sxs-lookup"><span data-stu-id="db464-133">NoYes</span></span></td>
-<td><span data-ttu-id="db464-134">有</span><span class="sxs-lookup"><span data-stu-id="db464-134">Yes</span></span></td>
+<tr>
+<td><span data-ttu-id="f6910-131">データ</span><span class="sxs-lookup"><span data-stu-id="f6910-131">Data</span></span></td>
+<td><span data-ttu-id="f6910-132">IsComputedField</span><span class="sxs-lookup"><span data-stu-id="f6910-132">IsComputedField</span></span></td>
+<td><span data-ttu-id="f6910-133">NoYes</span><span class="sxs-lookup"><span data-stu-id="f6910-133">NoYes</span></span></td>
+<td><span data-ttu-id="f6910-134">有</span><span class="sxs-lookup"><span data-stu-id="f6910-134">Yes</span></span></td>
 <td><ul>
-<li><span data-ttu-id="db464-135"><strong>はい:</strong> - フィールドは、SQL ビューの計算済み列として同期されます。</span><span class="sxs-lookup"><span data-stu-id="db464-135"><strong>Yes</strong> – The field is synchronized as a SQL view computed column.</span></span> <span data-ttu-id="db464-136">列の SQL 定義文字列を計算するために X++ メソッドが必要です。</span><span class="sxs-lookup"><span data-stu-id="db464-136">Requires an X++ method to compute the SQL definition string for the column.</span></span> <span data-ttu-id="db464-137">仮想列の定義は静的であり、エンティティが同期されているときに使用されます。</span><span class="sxs-lookup"><span data-stu-id="db464-137">The virtual column definition is static and is used when the entity is synchronized.</span></span> <span data-ttu-id="db464-138">その後は、 X++ メソッドは、実行時に呼び出されません。</span><span class="sxs-lookup"><span data-stu-id="db464-138">After that, the X++ method is not called at run time.</span></span></li>
-<li><span data-ttu-id="db464-139"><strong>いいえ</strong> - フィールドは、入庫および出荷の値がカスタム コードによって完全に制御される真の仮想フィールドです。</span><span class="sxs-lookup"><span data-stu-id="db464-139"><strong>No</strong> – The field is a true virtual field, where inbound and outbound values are fully controlled through custom code.</span></span></li>
+<li><span data-ttu-id="f6910-135"><strong>はい:</strong> - フィールドは、SQL ビューの計算済み列として同期されます。</span><span class="sxs-lookup"><span data-stu-id="f6910-135"><strong>Yes</strong> – The field is synchronized as a SQL view computed column.</span></span> <span data-ttu-id="f6910-136">列の SQL 定義文字列を計算するために X++ メソッドが必要です。</span><span class="sxs-lookup"><span data-stu-id="f6910-136">Requires an X++ method to compute the SQL definition string for the column.</span></span> <span data-ttu-id="f6910-137">仮想列の定義は静的であり、エンティティが同期されているときに使用されます。</span><span class="sxs-lookup"><span data-stu-id="f6910-137">The virtual column definition is static and is used when the entity is synchronized.</span></span> <span data-ttu-id="f6910-138">その後は、 X++ メソッドは、実行時に呼び出されません。</span><span class="sxs-lookup"><span data-stu-id="f6910-138">After that, the X++ method is not called at run time.</span></span></li>
+<li><span data-ttu-id="f6910-139"><strong>いいえ</strong> - フィールドは、入庫および出荷の値がカスタム コードによって完全に制御される真の仮想フィールドです。</span><span class="sxs-lookup"><span data-stu-id="f6910-139"><strong>No</strong> – The field is a true virtual field, where inbound and outbound values are fully controlled through custom code.</span></span></li>
 </ul></td>
 </tr>
-<tr class="even">
-<td><span data-ttu-id="db464-140">データ</span><span class="sxs-lookup"><span data-stu-id="db464-140">Data</span></span></td>
-<td><span data-ttu-id="db464-141">ComputedFieldMethod</span><span class="sxs-lookup"><span data-stu-id="db464-141">ComputedFieldMethod</span></span></td>
-<td><span data-ttu-id="db464-142">文字列</span><span class="sxs-lookup"><span data-stu-id="db464-142">String</span></span></td>
+<tr>
+<td><span data-ttu-id="f6910-140">データ</span><span class="sxs-lookup"><span data-stu-id="f6910-140">Data</span></span></td>
+<td><span data-ttu-id="f6910-141">ComputedFieldMethod</span><span class="sxs-lookup"><span data-stu-id="f6910-141">ComputedFieldMethod</span></span></td>
+<td><span data-ttu-id="f6910-142">文字列</span><span class="sxs-lookup"><span data-stu-id="f6910-142">String</span></span></td>
 <td></td>
-<td><span data-ttu-id="db464-143">フィールド定義を生成する SQL 式を構築するための X++ の静的 <strong>DataEntity</strong> メソッド。</span><span class="sxs-lookup"><span data-stu-id="db464-143">A static <strong>DataEntity</strong> method in X++ to build the SQL expression that will generate the field definition.</span></span> <span data-ttu-id="db464-144">プロパティ <strong>IsComputedField</strong> が <strong>いいえ</strong> に設定されている場合、このプロパティは無効で無関係です。</span><span class="sxs-lookup"><span data-stu-id="db464-144">This property is disabled and irrelevant if the property <strong>IsComputedField</strong> is set to <strong>No</strong>.</span></span> <span data-ttu-id="db464-145">このメソッドは、プロパティ <strong>IsComputedField</strong> が <strong>はい</strong> に設定されている場合に必要です。</span><span class="sxs-lookup"><span data-stu-id="db464-145">The method is required if the property <strong>IsComputedField</strong> is set to <strong>Yes</strong>.</span></span></td>
+<td><span data-ttu-id="f6910-143">フィールド定義を生成する SQL 式を構築するための X++ の静的 <strong>DataEntity</strong> メソッド。</span><span class="sxs-lookup"><span data-stu-id="f6910-143">A static <strong>DataEntity</strong> method in X++ to build the SQL expression that will generate the field definition.</span></span> <span data-ttu-id="f6910-144">プロパティ <strong>IsComputedField</strong> が <strong>いいえ</strong> に設定されている場合、このプロパティは無効で無関係です。</span><span class="sxs-lookup"><span data-stu-id="f6910-144">This property is disabled and irrelevant if the property <strong>IsComputedField</strong> is set to <strong>No</strong>.</span></span> <span data-ttu-id="f6910-145">このメソッドは、プロパティ <strong>IsComputedField</strong> が <strong>はい</strong> に設定されている場合に必要です。</span><span class="sxs-lookup"><span data-stu-id="f6910-145">The method is required if the property <strong>IsComputedField</strong> is set to <strong>Yes</strong>.</span></span></td>
 </tr>
-<tr class="odd">
-<td><span data-ttu-id="db464-146">データ</span><span class="sxs-lookup"><span data-stu-id="db464-146">Data</span></span></td>
-<td><span data-ttu-id="db464-147">ExtendedDataType</span><span class="sxs-lookup"><span data-stu-id="db464-147">ExtendedDataType</span></span></td>
-<td><span data-ttu-id="db464-148">文字列</span><span class="sxs-lookup"><span data-stu-id="db464-148">String</span></span></td>
+<tr>
+<td><span data-ttu-id="f6910-146">データ</span><span class="sxs-lookup"><span data-stu-id="f6910-146">Data</span></span></td>
+<td><span data-ttu-id="f6910-147">ExtendedDataType</span><span class="sxs-lookup"><span data-stu-id="f6910-147">ExtendedDataType</span></span></td>
+<td><span data-ttu-id="f6910-148">文字列</span><span class="sxs-lookup"><span data-stu-id="f6910-148">String</span></span></td>
 <td></td>
 <td></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="example-create-a-computed-field"></a><span data-ttu-id="db464-149">例: 計算フィールドを作成</span><span class="sxs-lookup"><span data-stu-id="db464-149">Example: Create a computed field</span></span>
-<span data-ttu-id="db464-150">この例では、**FMCustomerEntity** エンティティに計算フィールドを追加します。</span><span class="sxs-lookup"><span data-stu-id="db464-150">In this example, you add a computed field to the **FMCustomerEntity** entity.</span></span> <span data-ttu-id="db464-151">読み取りについては、このフィールドは、顧客の名前と住所を適切な形式に結合します。</span><span class="sxs-lookup"><span data-stu-id="db464-151">For reads, the field combines the name and address of the customer into a nice format.</span></span> <span data-ttu-id="db464-152">書き込みについては、X++ コードは複合値を個別の名前および住所の値に解析し、それからコードが通常の名前や住所フィールドを更新します。</span><span class="sxs-lookup"><span data-stu-id="db464-152">For writes, your X++ code parses the combined value into its separate name and address values, and then the code updates the regular name and address fields.</span></span>
+## <a name="example-create-a-computed-field"></a><span data-ttu-id="f6910-149">例: 計算フィールドを作成</span><span class="sxs-lookup"><span data-stu-id="f6910-149">Example: Create a computed field</span></span>
+<span data-ttu-id="f6910-150">この例では、**FMCustomerEntity** エンティティに計算フィールドを追加します。</span><span class="sxs-lookup"><span data-stu-id="f6910-150">In this example, you add a computed field to the **FMCustomerEntity** entity.</span></span> <span data-ttu-id="f6910-151">読み取りについては、このフィールドは、顧客の名前と住所を適切な形式に結合します。</span><span class="sxs-lookup"><span data-stu-id="f6910-151">For reads, the field combines the name and address of the customer into a nice format.</span></span> <span data-ttu-id="f6910-152">書き込みについては、X++ コードは複合値を個別の名前および住所の値に解析し、それからコードが通常の名前や住所フィールドを更新します。</span><span class="sxs-lookup"><span data-stu-id="f6910-152">For writes, your X++ code parses the combined value into its separate name and address values, and then the code updates the regular name and address fields.</span></span>
 
-1. <span data-ttu-id="db464-153">Microsoft Visual Studio で、プロジェクトを右クリックし、既存の **FMCustomerEntity** を追加します。</span><span class="sxs-lookup"><span data-stu-id="db464-153">In Microsoft Visual Studio, right-click your project, and add the existing **FMCustomerEntity**.</span></span>
-2. <span data-ttu-id="db464-154">ソリューション エクスプローラーで、**FMCustomerEntity** ノードを右クリックしてから**開く**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="db464-154">In Solution Explorer, right-click the **FMCustomerEntity** node, and then click **Open**.</span></span>
-3. <span data-ttu-id="db464-155">**FMCustomerEntity** のデザイナーで、**FMCustomerEntity** ノードを右クリックしてから、**新規** &gt; **マップされていない文字列フィールド**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="db464-155">In the designer for **FMCustomerEntity**, right-click the **FMCustomerEntity** node, and then click **New** &gt; **String Unmapped Field**.</span></span> 
+1. <span data-ttu-id="f6910-153">Microsoft Visual Studio で、プロジェクトを右クリックし、既存の **FMCustomerEntity** を追加します。</span><span class="sxs-lookup"><span data-stu-id="f6910-153">In Microsoft Visual Studio, right-click your project, and add the existing **FMCustomerEntity**.</span></span>
+2. <span data-ttu-id="f6910-154">ソリューション エクスプローラーで、**FMCustomerEntity** ノードを右クリックしてから**開く**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f6910-154">In Solution Explorer, right-click the **FMCustomerEntity** node, and then click **Open**.</span></span>
+3. <span data-ttu-id="f6910-155">**FMCustomerEntity** のデザイナーで、**FMCustomerEntity** ノードを右クリックしてから、**新規** &gt; **マップされていない文字列フィールド**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f6910-155">In the designer for **FMCustomerEntity**, right-click the **FMCustomerEntity** node, and then click **New** &gt; **String Unmapped Field**.</span></span>
 
-      <span data-ttu-id="db464-156">[![新しくマップされていない文字列フィールドを作成](./media/computedcolumnsandvirtualfields11.png)](./media/computedcolumnsandvirtualfields11.png)</span><span class="sxs-lookup"><span data-stu-id="db464-156">[![Creating a new string unmapped field](./media/computedcolumnsandvirtualfields11.png)](./media/computedcolumnsandvirtualfields11.png)</span></span>
-      
-4. <span data-ttu-id="db464-157">新しいフィールドの名前を **NameAndAddress** に変更します。</span><span class="sxs-lookup"><span data-stu-id="db464-157">Rename the new field **NameAndAddress**.</span></span>
-5. <span data-ttu-id="db464-158">次のスクリーンショットに示すように、マッピングされていない **NameAndAddress** フィールドのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="db464-158">Update properties of the **NameAndAddress** unmapped field, as shown in the following screenshot.</span></span>
+    <span data-ttu-id="f6910-156">[![新しくマップされていない文字列フィールドを作成](./media/computedcolumnsandvirtualfields11.png)](./media/computedcolumnsandvirtualfields11.png)</span><span class="sxs-lookup"><span data-stu-id="f6910-156">[![Creating a new string unmapped field](./media/computedcolumnsandvirtualfields11.png)](./media/computedcolumnsandvirtualfields11.png)</span></span>
 
-      <span data-ttu-id="db464-159">[![NameAndAddress のマップされていないフィールドのプロパティの更新](./media/computedcolumnsandvirtualfields21.png)](./media/computedcolumnsandvirtualfields21.png)</span><span class="sxs-lookup"><span data-stu-id="db464-159">[![Updating the properties of the NameAndAddress unmapped field](./media/computedcolumnsandvirtualfields21.png)](./media/computedcolumnsandvirtualfields21.png)</span></span>
-      
-6. <span data-ttu-id="db464-160">**FMCustomerEntity** &gt; **メソッド**に移動します。</span><span class="sxs-lookup"><span data-stu-id="db464-160">Go to **FMCustomerEntity** &gt; **Methods**.</span></span> <span data-ttu-id="db464-161">**メソッド** ノードを右クリックし、**新規** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="db464-161">Right-click the **Methods** node, and then click **New**.</span></span> <span data-ttu-id="db464-162">メソッド名が、マップされていない計算されたフィールドの **DataEntityView方法** のプロパティ値と一致していることを、確認します。</span><span class="sxs-lookup"><span data-stu-id="db464-162">Ensure that the method name matches the **DataEntityView Method** property value of the unmapped computed field.</span></span>
-7. <span data-ttu-id="db464-163">次の X++ コードをメソッドに貼り付けます。</span><span class="sxs-lookup"><span data-stu-id="db464-163">Paste the following X++ code into the method.</span></span> <span data-ttu-id="db464-164">このメソッドは、結合されて書式設定された **NameAndAddress** 値を返します。</span><span class="sxs-lookup"><span data-stu-id="db464-164">The method returns the combined and formatted **NameAndAddress** value.</span></span> 
+4. <span data-ttu-id="f6910-157">新しいフィールドの名前を **NameAndAddress** に変更します。</span><span class="sxs-lookup"><span data-stu-id="f6910-157">Rename the new field **NameAndAddress**.</span></span>
+5. <span data-ttu-id="f6910-158">次のスクリーンショットに示すように、マッピングされていない **NameAndAddress** フィールドのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="f6910-158">Update properties of the **NameAndAddress** unmapped field, as shown in the following screenshot.</span></span>
 
-   > [!NOTE]
-   > <span data-ttu-id="db464-165">**サーバー**キーワードが必要です。</span><span class="sxs-lookup"><span data-stu-id="db464-165">The **server** keyword is required.</span></span>
+    <span data-ttu-id="f6910-159">[![NameAndAddress のマップされていないフィールドのプロパティの更新](./media/computedcolumnsandvirtualfields21.png)](./media/computedcolumnsandvirtualfields21.png)</span><span class="sxs-lookup"><span data-stu-id="f6910-159">[![Updating the properties of the NameAndAddress unmapped field](./media/computedcolumnsandvirtualfields21.png)](./media/computedcolumnsandvirtualfields21.png)</span></span>
 
-```
-       private static server str formatNameAndAddress()   // X++
-       {
-           DataEntityName      dataEntityName= tablestr(FMCustomerEntity);
-           List                fieldList = new List(types::String);
-           ////Format name and address to look like following
-           ////John Smith, 123 Main St, Redmond, WA 98052
-           fieldList.addEnd(SysComputedColumn::returnField(DataEntityName, identifierstr(FMCustomer), fieldstr(FMCustomer, FirstName)));
-           fieldList.addEnd(SysComputedColumn::returnLiteral(" "));
-           fieldList.addEnd(SysComputedColumn::returnField(DataEntityName, identifierstr(FMCustomer), fieldstr(FMCustomer, LastName)));
-           fieldList.addEnd(SysComputedColumn::returnLiteral("; "));
-           fieldList.addEnd(SysComputedColumn::returnField(DataEntityName, identifierstr(BillingAddress), fieldstr(FMAddressTable, AddressLine1)));
-           fieldList.addEnd(SysComputedColumn::returnLiteral(", "));
-           fieldList.addEnd(SysComputedColumn::returnField(DataEntityName, identifierstr(BillingAddress), fieldstr(FMAddressTable, City)));
-           fieldList.addEnd(SysComputedColumn::returnLiteral(", "));
-           fieldList.addEnd(SysComputedColumn::returnField(DataEntityName, identifierstr(BillingAddress), fieldstr(FMAddressTable, State)));
-           fieldList.addEnd(SysComputedColumn::returnLiteral(", "));
-           fieldList.addEnd(SysComputedColumn::cast(
-               SysComputedColumn::returnField(DataEntityName, identifierstr(BillingAddress), fieldstr(FMAddressTable, ZipCode)), "NVARCHAR"));
-           return SysComputedColumn::addList(fieldList);
-       }
+6. <span data-ttu-id="f6910-160">**FMCustomerEntity** &gt; **メソッド**に移動します。</span><span class="sxs-lookup"><span data-stu-id="f6910-160">Go to **FMCustomerEntity** &gt; **Methods**.</span></span> <span data-ttu-id="f6910-161">**メソッド** ノードを右クリックし、**新規** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f6910-161">Right-click the **Methods** node, and then click **New**.</span></span> <span data-ttu-id="f6910-162">メソッド名が、マップされていない計算されたフィールドの **DataEntityView方法** のプロパティ値と一致していることを、確認します。</span><span class="sxs-lookup"><span data-stu-id="f6910-162">Ensure that the method name matches the **DataEntityView Method** property value of the unmapped computed field.</span></span>
+7. <span data-ttu-id="f6910-163">次の X++ コードをメソッドに貼り付けます。</span><span class="sxs-lookup"><span data-stu-id="f6910-163">Paste the following X++ code into the method.</span></span> <span data-ttu-id="f6910-164">このメソッドは、結合されて書式設定された **NameAndAddress** 値を返します。</span><span class="sxs-lookup"><span data-stu-id="f6910-164">The method returns the combined and formatted **NameAndAddress** value.</span></span>
 
-   T-SQL for the computed column.
+    > [!NOTE]
+    > <span data-ttu-id="f6910-165">**サーバー**キーワードが必要です。</span><span class="sxs-lookup"><span data-stu-id="f6910-165">The **server** keyword is required.</span></span>
 
-       ( Cast (( ( T1.firstname ) + ( N' ' ) + ( T1.lastname ) + ( N'; ' ) +
-                   ( T5.addressline1 )
-               + ( N', ' ) + ( T5.city ) + ( N', ' ) + ( T5.state ) + (
-               N', '
-               ) +
-                   ( Cast(T5.zipcode AS NVARCHAR) ) ) AS NVARCHAR(100))
-       )
-           AS
-       NAMEANDADDRESS
-```
+    ```
+    private static server str formatNameAndAddress()   // X++
+    {
+        DataEntityName      dataEntityName= tablestr(FMCustomerEntity);
+        List                fieldList = new List(types::String);
+        ////Format name and address to look like following
+        ////John Smith, 123 Main St, Redmond, WA 98052
+        fieldList.addEnd(SysComputedColumn::returnField(DataEntityName, identifierstr(FMCustomer), fieldstr(FMCustomer, FirstName)));
+        fieldList.addEnd(SysComputedColumn::returnLiteral(" "));
+        fieldList.addEnd(SysComputedColumn::returnField(DataEntityName, identifierstr(FMCustomer), fieldstr(FMCustomer, LastName)));
+        fieldList.addEnd(SysComputedColumn::returnLiteral("; "));
+        fieldList.addEnd(SysComputedColumn::returnField(DataEntityName, identifierstr(BillingAddress), fieldstr(FMAddressTable, AddressLine1)));
+        fieldList.addEnd(SysComputedColumn::returnLiteral(", "));
+        fieldList.addEnd(SysComputedColumn::returnField(DataEntityName, identifierstr(BillingAddress), fieldstr(FMAddressTable, City)));
+        fieldList.addEnd(SysComputedColumn::returnLiteral(", "));
+        fieldList.addEnd(SysComputedColumn::returnField(DataEntityName, identifierstr(BillingAddress), fieldstr(FMAddressTable, State)));
+        fieldList.addEnd(SysComputedColumn::returnLiteral(", "));
+        fieldList.addEnd(SysComputedColumn::cast(
+            SysComputedColumn::returnField(DataEntityName, identifierstr(BillingAddress), fieldstr(FMAddressTable, ZipCode)), "NVARCHAR"));
+        return SysComputedColumn::addList(fieldList);
+    }
 
- > [!TIP]
- > <span data-ttu-id="db464-166">計算列のためにデータ エンティティの同期にエラーが発生した場合、X++ で使用する前に、Microsoft SQL Server Management Studio (SSMS) で SQL 定義を作成する方が簡単です。</span><span class="sxs-lookup"><span data-stu-id="db464-166">If you receive error in data entity synchronization because of computed columns, it's easier to come up with the SQL definition in Microsoft SQL Server Management Studio (SSMS) before using it in X++.</span></span>
+    T-SQL for the computed column.
 
-8. <span data-ttu-id="db464-167">プロジェクトをリビルドします。</span><span class="sxs-lookup"><span data-stu-id="db464-167">Rebuild the project.</span></span>
-9. <span data-ttu-id="db464-168">データベースを同期させます。</span><span class="sxs-lookup"><span data-stu-id="db464-168">Synchronize the database.</span></span> <span data-ttu-id="db464-169">この手順を忘れないでください。</span><span class="sxs-lookup"><span data-stu-id="db464-169">Don't forget this step.</span></span> <span data-ttu-id="db464-170">**Dynamics 365 &gt; データベースの同期 &gt; 同期**に移動することによりこれを実行することができます。</span><span class="sxs-lookup"><span data-stu-id="db464-170">You can do this by going to **Dynamics 365 &gt; Synchronize database &gt; Synchronize**.</span></span>
+    ( Cast (( ( T1.firstname ) + ( N' ' ) + ( T1.lastname ) + ( N'; ' ) +
+        ( T5.addressline1 )
+        + ( N', ' ) + ( T5.city ) + ( N', ' ) + ( T5.state ) + (
+        N', '
+        ) +
+        ( Cast(T5.zipcode AS NVARCHAR) ) ) AS NVARCHAR(100))
+    )
+    AS
+    NAMEANDADDRESS
+    ```
 
-## <a name="example-create-a-virtual-field"></a><span data-ttu-id="db464-171">例: 仮想フィールドを作成</span><span class="sxs-lookup"><span data-stu-id="db464-171">Example: Create a virtual field</span></span>
-<span data-ttu-id="db464-172">この例では、**FMCustomerEntity** エンティティに仮想フィールドを追加します。</span><span class="sxs-lookup"><span data-stu-id="db464-172">In this example, you add a virtual field to the **FMCustomerEntity** entity.</span></span> <span data-ttu-id="db464-173">このフィールドには、姓と名の組み合わせとしてフルネームが表示されます。</span><span class="sxs-lookup"><span data-stu-id="db464-173">This field displays the full name as a combination of the last name and first name.</span></span> <span data-ttu-id="db464-174">X++ コードは複合値を生成します。</span><span class="sxs-lookup"><span data-stu-id="db464-174">X++ code generates the combined value.</span></span>
+    > [!TIP]
+    > <span data-ttu-id="f6910-166">計算列のためにデータ エンティティの同期にエラーが発生した場合、X++ で使用する前に、Microsoft SQL Server Management Studio (SSMS) で SQL 定義を作成する方が簡単です。</span><span class="sxs-lookup"><span data-stu-id="f6910-166">If you receive error in data entity synchronization because of computed columns, it's easier to come up with the SQL definition in Microsoft SQL Server Management Studio (SSMS) before using it in X++.</span></span>
 
-1.  <span data-ttu-id="db464-175">**FMCustomerEntity** エンティティのデザイナーで、**フィールド**ノードを右クリックしてから、**新規 &gt; マップされていない文字列フィールド**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="db464-175">In the designer for the **FMCustomerEntity** entity, right-click the **Fields** node, and then click **New &gt; String Unmapped Field**.</span></span>
-2.  <span data-ttu-id="db464-176">マップされていないフィールドのプロパティ ウィンドウで、**名前**プロパティを **FullName** に設定します。</span><span class="sxs-lookup"><span data-stu-id="db464-176">In the properties pane for the unmapped field, set the **Name** property to **FullName**.</span></span>
-3.  <span data-ttu-id="db464-177">**計算フィールドかどうか** プロパティ **いいえ** に設定します。</span><span class="sxs-lookup"><span data-stu-id="db464-177">Set the **Is Computed Field** property to **No**.</span></span> <span data-ttu-id="db464-178">**DataEntityView メソッド**が空のままであることを確認します。</span><span class="sxs-lookup"><span data-stu-id="db464-178">Notice that you leave the **DataEntityView Method** empty.</span></span> 
+8. <span data-ttu-id="f6910-167">プロジェクトをリビルドします。</span><span class="sxs-lookup"><span data-stu-id="f6910-167">Rebuild the project.</span></span>
+9. <span data-ttu-id="f6910-168">データベースを同期させます。</span><span class="sxs-lookup"><span data-stu-id="f6910-168">Synchronize the database.</span></span> <span data-ttu-id="f6910-169">この手順を忘れないでください。</span><span class="sxs-lookup"><span data-stu-id="f6910-169">Don't forget this step.</span></span> <span data-ttu-id="f6910-170">**Dynamics 365 &gt; データベースの同期 &gt; 同期**に移動することによりこれを実行することができます。</span><span class="sxs-lookup"><span data-stu-id="f6910-170">You can do this by going to **Dynamics 365 &gt; Synchronize database &gt; Synchronize**.</span></span>
 
-       <span data-ttu-id="db464-179">[![マップされていないフィールドのプロパティの設定](./media/computedcolumnsandvirtualfields31.png)](./media/computedcolumnsandvirtualfields31.png)</span><span class="sxs-lookup"><span data-stu-id="db464-179">[![Setting the properties for the unmapped field](./media/computedcolumnsandvirtualfields31.png)](./media/computedcolumnsandvirtualfields31.png)</span></span>
+## <a name="example-create-a-virtual-field"></a><span data-ttu-id="f6910-171">例: 仮想フィールドを作成</span><span class="sxs-lookup"><span data-stu-id="f6910-171">Example: Create a virtual field</span></span>
+<span data-ttu-id="f6910-172">この例では、**FMCustomerEntity** エンティティに仮想フィールドを追加します。</span><span class="sxs-lookup"><span data-stu-id="f6910-172">In this example, you add a virtual field to the **FMCustomerEntity** entity.</span></span> <span data-ttu-id="f6910-173">このフィールドには、姓と名の組み合わせとしてフルネームが表示されます。</span><span class="sxs-lookup"><span data-stu-id="f6910-173">This field displays the full name as a combination of the last name and first name.</span></span> <span data-ttu-id="f6910-174">X++ コードは複合値を生成します。</span><span class="sxs-lookup"><span data-stu-id="f6910-174">X++ code generates the combined value.</span></span>
 
-4.  <span data-ttu-id="db464-180">**FMCustomerEntity** デザイナーで、**メソッド**ノードを右クリックしてから、**オーバーライド &gt; postLoad** とクリックします。</span><span class="sxs-lookup"><span data-stu-id="db464-180">In the **FMCustomerEntity** designer, right-click the **Methods** node, and then click **Override &gt; postLoad**.</span></span> <span data-ttu-id="db464-181">このメソッドの X++ コードは、仮想フィールドの値を生成します。</span><span class="sxs-lookup"><span data-stu-id="db464-181">Your X++ code in this method will generate the values for the virtual field.</span></span>
-5.  <span data-ttu-id="db464-182">次の X++ コードを **postLoad** オーバーライドに貼り付けます。</span><span class="sxs-lookup"><span data-stu-id="db464-182">Paste the following X++ code in for the **postLoad** override.</span></span> <span data-ttu-id="db464-183">**postLoad** メソッドが **void** を返すことに注意します。</span><span class="sxs-lookup"><span data-stu-id="db464-183">Notice that the **postLoad** method returns **void**.</span></span>
+1. <span data-ttu-id="f6910-175">**FMCustomerEntity** エンティティのデザイナーで、**フィールド**ノードを右クリックしてから、**新規 &gt; マップされていない文字列フィールド**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f6910-175">In the designer for the **FMCustomerEntity** entity, right-click the **Fields** node, and then click **New &gt; String Unmapped Field**.</span></span>
+2. <span data-ttu-id="f6910-176">マップされていないフィールドのプロパティ ウィンドウで、**名前**プロパティを **FullName** に設定します。</span><span class="sxs-lookup"><span data-stu-id="f6910-176">In the properties pane for the unmapped field, set the **Name** property to **FullName**.</span></span>
+3. <span data-ttu-id="f6910-177">**計算フィールドかどうか** プロパティ **いいえ** に設定します。</span><span class="sxs-lookup"><span data-stu-id="f6910-177">Set the **Is Computed Field** property to **No**.</span></span> <span data-ttu-id="f6910-178">**DataEntityView メソッド**が空のままであることを確認します。</span><span class="sxs-lookup"><span data-stu-id="f6910-178">Notice that you leave the **DataEntityView Method** empty.</span></span>
 
-```
-        public void postLoad()
+    <span data-ttu-id="f6910-179">[![マップされていないフィールドのプロパティの設定](./media/computedcolumnsandvirtualfields31.png)](./media/computedcolumnsandvirtualfields31.png)</span><span class="sxs-lookup"><span data-stu-id="f6910-179">[![Setting the properties for the unmapped field](./media/computedcolumnsandvirtualfields31.png)](./media/computedcolumnsandvirtualfields31.png)</span></span>
+
+4. <span data-ttu-id="f6910-180">**FMCustomerEntity** デザイナーで、**メソッド**ノードを右クリックしてから、**オーバーライド &gt; postLoad** とクリックします。</span><span class="sxs-lookup"><span data-stu-id="f6910-180">In the **FMCustomerEntity** designer, right-click the **Methods** node, and then click **Override &gt; postLoad**.</span></span> <span data-ttu-id="f6910-181">このメソッドの X++ コードは、仮想フィールドの値を生成します。</span><span class="sxs-lookup"><span data-stu-id="f6910-181">Your X++ code in this method will generate the values for the virtual field.</span></span>
+5. <span data-ttu-id="f6910-182">次の X++ コードを **postLoad** オーバーライドに貼り付けます。</span><span class="sxs-lookup"><span data-stu-id="f6910-182">Paste the following X++ code in for the **postLoad** override.</span></span> <span data-ttu-id="f6910-183">**postLoad** メソッドが **void** を返すことに注意します。</span><span class="sxs-lookup"><span data-stu-id="f6910-183">Notice that the **postLoad** method returns **void**.</span></span>
+
+    ```
+    public void postLoad()
+    {
+        super();
+        //Populate virtual field once entity has been loaded from database
+        //Format full name - "Doe, John"
+        this.FullName = this.LastName + ", " + this.FirstName;
+    }
+    ```
+
+6. <span data-ttu-id="f6910-184">プロジェクトをコンパイルします。</span><span class="sxs-lookup"><span data-stu-id="f6910-184">Compile your project.</span></span>
+
+## <a name="example-use-a-virtual-field-to-receive-and-parse-an-inbound-field"></a><span data-ttu-id="f6910-185">例: 受信フィールドを受信および解析する仮想フィールドを使用</span><span class="sxs-lookup"><span data-stu-id="f6910-185">Example: Use a virtual field to receive and parse an inbound field</span></span>
+<span data-ttu-id="f6910-186">外部システムが、システムに送信する 1 つのフィールドに姓と名を組み合わせた複合値として人物の名前を送信する場合を考えてみましょう。</span><span class="sxs-lookup"><span data-stu-id="f6910-186">Imagine that an external system sends the name of a person as a compound value that combines the last and first names in one field that comes into our system.</span></span> <span data-ttu-id="f6910-187">ただし、システムは姓と名を個別に格納します。</span><span class="sxs-lookup"><span data-stu-id="f6910-187">However, our system stores the last and first names separately.</span></span> <span data-ttu-id="f6910-188">このシナリオでは、作成した **FullName** 仮想フィールド使用することができます。</span><span class="sxs-lookup"><span data-stu-id="f6910-188">For this scenario, you can use the **FullName** virtual field that you created.</span></span> <span data-ttu-id="f6910-189">この例で、主要な追加は **mapEntityToDataSource** メソッドのオーバーライドです。</span><span class="sxs-lookup"><span data-stu-id="f6910-189">In this example, the major addition is an override of the **mapEntityToDataSource** method.</span></span> <span data-ttu-id="f6910-190">**更新**が呼び出されると、各データ ソースごとに **mapEntityToDataSource** メソッドが呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="f6910-190">When **update** is called, **mapEntityToDataSource** methods are invoked for each data source.</span></span>
+
+1. <span data-ttu-id="f6910-191">**FMCustomerEntity** のデザイナーで、**メソッド**ノードを右クリックしてから、**オーバーライド &gt; mapEntityToDataSource** とクリックします。</span><span class="sxs-lookup"><span data-stu-id="f6910-191">In the designer for the **FMCustomerEntity**, right-click the **Methods** node, and then click **Override &gt; mapEntityToDataSource**.</span></span>
+2. <span data-ttu-id="f6910-192">次の X++ コードを **mapEntityToDataSource** メソッドに貼り付けます。</span><span class="sxs-lookup"><span data-stu-id="f6910-192">Paste the following X++ code in for the **mapEntityToDataSource** method.</span></span>
+
+    ```
+    public void mapEntityToDataSource(DataEntityRuntimeContext entityCtx, DataEntityDataSourceRuntimeContext dataSourceCtx)
+    {
+        super(entityCtx, dataSourceCtx);
+        //Check if desired data source context is available
+        if (dataSourceCtx.name() == "FMCustomer")
         {
-            super();
-            //Populate virtual field once entity has been loaded from database
-            //Format full name - "Doe, John"
-            this.FullName = this.LastName + ", " + this.FirstName;
+            FMCustomer dsCustomer = dataSourceCtx.getBuffer();
+            //Find position of "," to parse full name format "Doe, John"
+            int commaPosition = strfind(this.FullName, ",",0,strlen(this.FullName));
+            //Update FirstName and LastName in the data source buffer to update
+            dsCustomer.LastName = substr(this.FullName,0,commaPosition-1);
+            dsCustomer.FirstName = substr(this.FullName, commaPosition+1, strlen(this.FullName));
         }
-```
-6.  <span data-ttu-id="db464-184">プロジェクトをコンパイルします。</span><span class="sxs-lookup"><span data-stu-id="db464-184">Compile your project.</span></span>
+    }
+    ```
 
-## <a name="example-use-a-virtual-field-to-receive-and-parse-an-inbound-field"></a><span data-ttu-id="db464-185">例: 受信フィールドを受信および解析する仮想フィールドを使用</span><span class="sxs-lookup"><span data-stu-id="db464-185">Example: Use a virtual field to receive and parse an inbound field</span></span>
-<span data-ttu-id="db464-186">外部システムが、システムに送信する 1 つのフィールドに姓と名を組み合わせた複合値として人物の名前を送信する場合を考えてみましょう。</span><span class="sxs-lookup"><span data-stu-id="db464-186">Imagine that an external system sends the name of a person as a compound value that combines the last and first names in one field that comes into our system.</span></span> <span data-ttu-id="db464-187">ただし、システムは姓と名を個別に格納します。</span><span class="sxs-lookup"><span data-stu-id="db464-187">However, our system stores the last and first names separately.</span></span> <span data-ttu-id="db464-188">このシナリオでは、作成した **FullName** 仮想フィールド使用することができます。</span><span class="sxs-lookup"><span data-stu-id="db464-188">For this scenario, you can use the **FullName** virtual field that you created.</span></span> <span data-ttu-id="db464-189">この例で、主要な追加は **mapEntityToDataSource** メソッドのオーバーライドです。</span><span class="sxs-lookup"><span data-stu-id="db464-189">In this example, the major addition is an override of the **mapEntityToDataSource** method.</span></span> <span data-ttu-id="db464-190">**更新**が呼び出されると、各データ ソースごとに **mapEntityToDataSource** メソッドが呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="db464-190">When **update** is called, **mapEntityToDataSource** methods are invoked for each data source.</span></span>
+## <a name="test-the-computed-and-virtual-fields"></a><span data-ttu-id="f6910-193">計算フィールドと仮想フィールドのテスト</span><span class="sxs-lookup"><span data-stu-id="f6910-193">Test the computed and virtual fields</span></span>
+<span data-ttu-id="f6910-194">次の **main** メソッドは、計算フィールドと仮想フィールドをテストします。</span><span class="sxs-lookup"><span data-stu-id="f6910-194">The following **main** method tests your computed and virtual fields.</span></span> <span data-ttu-id="f6910-195">両方のフィールドは読み取りアクションでテストされ、仮想フィールドは更新アクションでテストされます。</span><span class="sxs-lookup"><span data-stu-id="f6910-195">Both fields are tested in a read action, and the virtual field is tested in an update action.</span></span>
 
-1.  <span data-ttu-id="db464-191">**FMCustomerEntity** のデザイナーで、**メソッド**ノードを右クリックしてから、**オーバーライド &gt; mapEntityToDataSource** とクリックします。</span><span class="sxs-lookup"><span data-stu-id="db464-191">In the designer for the **FMCustomerEntity**, right-click the **Methods** node, and then click **Override &gt; mapEntityToDataSource**.</span></span>
-2.  <span data-ttu-id="db464-192">次の X++ コードを **mapEntityToDataSource** メソッドに貼り付けます。</span><span class="sxs-lookup"><span data-stu-id="db464-192">Paste the following X++ code in for the **mapEntityToDataSource** method.</span></span>
+1. <span data-ttu-id="f6910-196">この例では、**フリート管理 (移行済)** というデータ セットがあることを確認します。</span><span class="sxs-lookup"><span data-stu-id="f6910-196">For this example, ensure that you have the data set named **Fleet Management (migrated)**.</span></span> <span data-ttu-id="f6910-197">データ セットはブラウザーのダッシュボードから利用できます。</span><span class="sxs-lookup"><span data-stu-id="f6910-197">The data set is available from the dashboard in the browser.</span></span> <span data-ttu-id="f6910-198">右上隅にあるメニュー アイコンをクリックし、**アプリのリンク** メニューをクリックしてスクロールし、**フリート管理 (移行)** という名前のデータセットを見つけます</span><span class="sxs-lookup"><span data-stu-id="f6910-198">Click the menu icon in the upper-right corner, click the **APP LINKS** menu, and then scroll to find the data set named **Fleet Management (migrated)**.</span></span>
+2. <span data-ttu-id="f6910-199">次の X++ コードをプロジェクトのスタートアップ オブジェクトに貼り付けます。</span><span class="sxs-lookup"><span data-stu-id="f6910-199">Paste the following X++ code into the startup object of your project.</span></span> <span data-ttu-id="f6910-200">プロジェクトを実行します。</span><span class="sxs-lookup"><span data-stu-id="f6910-200">Run your project.</span></span>
 
-```
-        public void mapEntityToDataSource(DataEntityRuntimeContext entityCtx, DataEntityDataSourceRuntimeContext dataSourceCtx)
-        {
-            super(entityCtx, dataSourceCtx);
-            //Check if desired data source context is available
-            if (dataSourceCtx.name() == "FMCustomer")
-            {
-                FMCustomer dsCustomer = dataSourceCtx.getBuffer();
-                //Find position of "," to parse full name format "Doe, John"
-                int commaPosition = strfind(this.FullName, ",",0,strlen(this.FullName));
-                //Update FirstName and LastName in the data source buffer to update
-                dsCustomer.LastName = substr(this.FullName,0,commaPosition-1);
-                dsCustomer.FirstName = substr(this.FullName, commaPosition+1, strlen(this.FullName));
-            }
-        }
-```
-
-## <a name="test-the-computed-and-virtual-fields"></a><span data-ttu-id="db464-193">計算フィールドと仮想フィールドのテスト</span><span class="sxs-lookup"><span data-stu-id="db464-193">Test the computed and virtual fields</span></span>
-<span data-ttu-id="db464-194">次の **main** メソッドは、計算フィールドと仮想フィールドをテストします。</span><span class="sxs-lookup"><span data-stu-id="db464-194">The following **main** method tests your computed and virtual fields.</span></span> <span data-ttu-id="db464-195">両方のフィールドは読み取りアクションでテストされ、仮想フィールドは更新アクションでテストされます。</span><span class="sxs-lookup"><span data-stu-id="db464-195">Both fields are tested in a read action, and the virtual field is tested in an update action.</span></span>
-
-1.  <span data-ttu-id="db464-196">この例では、**フリート管理 (移行済)** というデータ セットがあることを確認します。</span><span class="sxs-lookup"><span data-stu-id="db464-196">For this example, ensure that you have the data set named **Fleet Management (migrated)**.</span></span> <span data-ttu-id="db464-197">データ セットはブラウザーのダッシュボードから利用できます。</span><span class="sxs-lookup"><span data-stu-id="db464-197">The data set is available from the dashboard in the browser.</span></span> <span data-ttu-id="db464-198">右上隅にあるメニュー アイコンをクリックし、**アプリのリンク** メニューをクリックしてスクロールし、**フリート管理 (移行)** という名前のデータセットを見つけます</span><span class="sxs-lookup"><span data-stu-id="db464-198">Click the menu icon in the upper-right corner, click the **APP LINKS** menu, and then scroll to find the data set named **Fleet Management (migrated)**.</span></span>
-2.  <span data-ttu-id="db464-199">次の X++ コードをプロジェクトのスタートアップ オブジェクトに貼り付けます。</span><span class="sxs-lookup"><span data-stu-id="db464-199">Paste the following X++ code into the startup object of your project.</span></span> <span data-ttu-id="db464-200">プロジェクトを実行します。</span><span class="sxs-lookup"><span data-stu-id="db464-200">Run your project.</span></span>
-
-```
-        public static void main(Args _args)   // X++
-        {
-            FMCustomerEntity customer;
-            //Using transactions to avoid committing updates to database
-            ttsbegin;
-            //SELECT single customer entity record from the database
-            select customer
-                where customer.Email == "phil.spencer@adatum.com";
-            //Read full name (Virtual Field)
-            info(customer.FullName);
-            //Read formatted NameAndAddress(computed Field)
-            info(customer.NameAndAddress);
-            //UPDATE full name (virtual field)
-            customer.FullName = "Doe, John";
-            customer.update();
-            //Reselect data from database to get updated information
-            select customer
-                where customer.Email == "phil.spencer@adatum.com";
-            //Read full name (virtual field)
-            info(customer.FullName);
-            ttsabort;
-        }
-
-```
+    ```
+    public static void main(Args _args)   // X++
+    {
+        FMCustomerEntity customer;
+        //Using transactions to avoid committing updates to database
+        ttsbegin;
+        //SELECT single customer entity record from the database
+        select customer
+            where customer.Email == "phil.spencer@adatum.com";
+        //Read full name (Virtual Field)
+        info(customer.FullName);
+        //Read formatted NameAndAddress(computed Field)
+        info(customer.NameAndAddress);
+        //UPDATE full name (virtual field)
+        customer.FullName = "Doe, John";
+        customer.update();
+        //Reselect data from database to get updated information
+        select customer
+            where customer.Email == "phil.spencer@adatum.com";
+        //Read full name (virtual field)
+        info(customer.FullName);
+        ttsabort;
+    }
+    ```
 

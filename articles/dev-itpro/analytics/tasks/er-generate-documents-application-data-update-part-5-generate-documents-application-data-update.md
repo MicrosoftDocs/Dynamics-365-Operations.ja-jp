@@ -1,5 +1,5 @@
 --- 
-title: "アプリケーション データと共にドキュメントを生成する"
+title: "アプリケーション データを含むドキュメントの生成"
 description: "この手順のステップを完了するには、まず「ER アプリケーション データ更新と共にドキュメントを生成する (パート 4 - 形式の変更)」の手順を完了する必要があります。"
 author: NickSelin
 manager: AnnBe
@@ -16,58 +16,58 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: fbdd9f3937053f29b2cbd1f7f801ee17be0ae207
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 90c6ebc456d3e137e43022fad7d59ce3ca2cdcab
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="generate-documents-with-application-data"></a><span data-ttu-id="fad64-103">アプリケーション データと共にドキュメントを生成する</span><span class="sxs-lookup"><span data-stu-id="fad64-103">Generate documents with application data</span></span>
+# <a name="generate-documents-that-have-application-data"></a><span data-ttu-id="9f4b0-103">アプリケーション データを含むドキュメントの生成</span><span class="sxs-lookup"><span data-stu-id="9f4b0-103">Generate documents that have application data</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="fad64-104">この手順のステップを完了するには、まず「ER アプリケーション データ更新と共にドキュメントを生成する (パート 4: 形式の変更)」の手順を完了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="fad64-104">To complete the steps in this procedure, you must first complete the procedure, “ER Generate documents with application data update (Part 4: Modify format)”.</span></span>
+<span data-ttu-id="9f4b0-104">この手順のステップを完了するには、まず「ER アプリケーション データ更新と共にドキュメントを生成する (パート 4: 形式の変更)」の手順を完了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="9f4b0-104">To complete the steps in this procedure, you must first complete the procedure, “ER Generate documents with application data update (Part 4: Modify format)”.</span></span>
 
 
 
-<span data-ttu-id="fad64-105">この手順のステップでは、電子ドキュメントを生成してアプリケーション データを更新するために電子申告 (ER) コンフィギュレーションを設計する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="fad64-105">The steps in this procedure explain how to design Electronic reporting (ER) configurations to generate an electronic document and update application data.</span></span> <span data-ttu-id="fad64-106">この手順では、ER 形式コンフィギュレーションを実行して、イントラスタット レポートを生成し、レポート プロセスの詳細をアーカイブするためのアプリケーション データを更新します。</span><span class="sxs-lookup"><span data-stu-id="fad64-106">In this procedure, you execute the ER format configuration to generate the Intrastat report and update application data for archiving details of the reporting process.</span></span>
+<span data-ttu-id="9f4b0-105">この手順のステップでは、電子ドキュメントを生成してアプリケーション データを更新するために電子申告 (ER) コンフィギュレーションを設計する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="9f4b0-105">The steps in this procedure explain how to design Electronic reporting (ER) configurations to generate an electronic document and update application data.</span></span> <span data-ttu-id="9f4b0-106">この手順では、ER 形式コンフィギュレーションを実行して、イントラスタット レポートを生成し、レポート プロセスの詳細をアーカイブするためのアプリケーション データを更新します。</span><span class="sxs-lookup"><span data-stu-id="9f4b0-106">In this procedure, you execute the ER format configuration to generate the Intrastat report and update application data for archiving details of the reporting process.</span></span>
 
 
 
-<span data-ttu-id="fad64-107">この手順は、「システム管理者」または「電子レポート開発者」ロールが割り当てられているユーザー用に作成されています。</span><span class="sxs-lookup"><span data-stu-id="fad64-107">This procedure is created for users with the assigned role of system administrator or electronic reporting developer.</span></span> <span data-ttu-id="fad64-108">これらのステップは、DEMF データ セットを使用して完了することができます。</span><span class="sxs-lookup"><span data-stu-id="fad64-108">These steps can be completed using the DEMF dataset.</span></span> <span data-ttu-id="fad64-109">開始する前に、DEMF 会社の国コンテキストが BEL (ベルギー) であることを確認します。</span><span class="sxs-lookup"><span data-stu-id="fad64-109">Before you begin, make sure that the country context for the DEMF company is BEL (Belgium).</span></span>
+<span data-ttu-id="9f4b0-107">この手順は、「システム管理者」または「電子レポート開発者」ロールが割り当てられているユーザー用に作成されています。</span><span class="sxs-lookup"><span data-stu-id="9f4b0-107">This procedure is created for users with the assigned role of system administrator or electronic reporting developer.</span></span> <span data-ttu-id="9f4b0-108">これらのステップは、DEMF データ セットを使用して完了することができます。</span><span class="sxs-lookup"><span data-stu-id="9f4b0-108">These steps can be completed using the DEMF dataset.</span></span> <span data-ttu-id="9f4b0-109">開始する前に、DEMF 会社の国コンテキストが BEL (ベルギー) であることを確認します。</span><span class="sxs-lookup"><span data-stu-id="9f4b0-109">Before you begin, make sure that the country context for the DEMF company is BEL (Belgium).</span></span>
 
 
-## <a name="set-up-foreign-trade-parameters"></a><span data-ttu-id="fad64-110">対外貿易パラメーターの設定</span><span class="sxs-lookup"><span data-stu-id="fad64-110">Set up foreign trade parameters</span></span>
-1. <span data-ttu-id="fad64-111">[税] > [設定] > [対外貿易] > [対外貿易パラメーター] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="fad64-111">Go to Tax > Setup > Foreign trade > Foreign trade parameters.</span></span>
-2. <span data-ttu-id="fad64-112">[番号順序] タブをクリックします。</span><span class="sxs-lookup"><span data-stu-id="fad64-112">Click the Number sequences tab.</span></span>
-    * <span data-ttu-id="fad64-113">イントラスタット レポート プロセスの詳細をアーカイブするのに、作成した各アーカイブのレコードを特定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="fad64-113">Archiving details of Intrastat reporting process, we need to identify records of each archive we created.</span></span> <span data-ttu-id="fad64-114">そのためには特別な番号順序をコンフィギュレーションする必要があります。</span><span class="sxs-lookup"><span data-stu-id="fad64-114">A special number sequence must be configured for that.</span></span>  
-3. <span data-ttu-id="fad64-115">「イントラスタット アーカイブ ID」参照を選択します。</span><span class="sxs-lookup"><span data-stu-id="fad64-115">Select the ‘Intrastat archive ID’ reference.</span></span>
-4. <span data-ttu-id="fad64-116">[番号順序コード] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="fad64-116">In the Number sequence code field, type a value.</span></span>
-    * <span data-ttu-id="fad64-117">[番号順序コード] フィールドで、「Fore_2」という値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="fad64-117">In the ‘Number sequence code’ field, enter or select the value ‘Fore_2’.</span></span>  
-5. <span data-ttu-id="fad64-118">ResolveChanges 番号順序コード。</span><span class="sxs-lookup"><span data-stu-id="fad64-118">ResolveChanges the Number sequence code.</span></span>
-6. <span data-ttu-id="fad64-119">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="fad64-119">Click Save.</span></span>
-7. <span data-ttu-id="fad64-120">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="fad64-120">Close the page.</span></span>
+## <a name="set-up-foreign-trade-parameters"></a><span data-ttu-id="9f4b0-110">対外貿易パラメーターの設定</span><span class="sxs-lookup"><span data-stu-id="9f4b0-110">Set up foreign trade parameters</span></span>
+1. <span data-ttu-id="9f4b0-111">[税] > [設定] > [対外貿易] > [対外貿易パラメーター] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="9f4b0-111">Go to Tax > Setup > Foreign trade > Foreign trade parameters.</span></span>
+2. <span data-ttu-id="9f4b0-112">[番号順序] タブをクリックします。</span><span class="sxs-lookup"><span data-stu-id="9f4b0-112">Click the Number sequences tab.</span></span>
+    * <span data-ttu-id="9f4b0-113">イントラスタット レポート プロセスの詳細をアーカイブするのに、作成した各アーカイブのレコードを特定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="9f4b0-113">Archiving details of Intrastat reporting process, we need to identify records of each archive we created.</span></span> <span data-ttu-id="9f4b0-114">そのためには特別な番号順序をコンフィギュレーションする必要があります。</span><span class="sxs-lookup"><span data-stu-id="9f4b0-114">A special number sequence must be configured for that.</span></span>  
+3. <span data-ttu-id="9f4b0-115">「イントラスタット アーカイブ ID」参照を選択します。</span><span class="sxs-lookup"><span data-stu-id="9f4b0-115">Select the ‘Intrastat archive ID’ reference.</span></span>
+4. <span data-ttu-id="9f4b0-116">[番号順序コード] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="9f4b0-116">In the Number sequence code field, type a value.</span></span>
+    * <span data-ttu-id="9f4b0-117">[番号順序コード] フィールドで、「Fore_2」という値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="9f4b0-117">In the ‘Number sequence code’ field, enter or select the value ‘Fore_2’.</span></span>  
+5. <span data-ttu-id="9f4b0-118">ResolveChanges 番号順序コード。</span><span class="sxs-lookup"><span data-stu-id="9f4b0-118">ResolveChanges the Number sequence code.</span></span>
+6. <span data-ttu-id="9f4b0-119">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9f4b0-119">Click Save.</span></span>
+7. <span data-ttu-id="9f4b0-120">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="9f4b0-120">Close the page.</span></span>
 
-## <a name="run-modified-er-format"></a><span data-ttu-id="fad64-121">変更された ER 形式を実行する</span><span class="sxs-lookup"><span data-stu-id="fad64-121">Run modified ER format</span></span>
-1. <span data-ttu-id="fad64-122">[組織管理] > [電子申告] > [コンフィギュレーション] に移動します。</span><span class="sxs-lookup"><span data-stu-id="fad64-122">Go to Organization administration > Electronic reporting > Configurations.</span></span>
-2. <span data-ttu-id="fad64-123">ツリーで、「イントラスタット (モデル)」を展開します。</span><span class="sxs-lookup"><span data-stu-id="fad64-123">In the tree, expand 'Intrastat (model)'.</span></span>
-3. <span data-ttu-id="fad64-124">ツリーで、「イントラスタット (モデル)\イントラスタット (形式)」を選択します。</span><span class="sxs-lookup"><span data-stu-id="fad64-124">In the tree, select 'Intrastat (model)\Intrastat (format)'.</span></span>
-4. <span data-ttu-id="fad64-125">[実行] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="fad64-125">Click Run.</span></span>
-5. <span data-ttu-id="fad64-126">[ファイル名を入力] フィールドに、「intrastat2.xml」と入力します。</span><span class="sxs-lookup"><span data-stu-id="fad64-126">In the Enter file name field, type 'intrastat2.xml'.</span></span>
-    * <span data-ttu-id="fad64-127">intrastat2.xml</span><span class="sxs-lookup"><span data-stu-id="fad64-127">intrastat2.xml</span></span>  
-6. <span data-ttu-id="fad64-128">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="fad64-128">Click OK.</span></span>
+## <a name="run-modified-er-format"></a><span data-ttu-id="9f4b0-121">変更された ER 形式を実行する</span><span class="sxs-lookup"><span data-stu-id="9f4b0-121">Run modified ER format</span></span>
+1. <span data-ttu-id="9f4b0-122">[組織管理] > [電子申告] > [コンフィギュレーション] に移動します。</span><span class="sxs-lookup"><span data-stu-id="9f4b0-122">Go to Organization administration > Electronic reporting > Configurations.</span></span>
+2. <span data-ttu-id="9f4b0-123">ツリーで、「イントラスタット (モデル)」を展開します。</span><span class="sxs-lookup"><span data-stu-id="9f4b0-123">In the tree, expand 'Intrastat (model)'.</span></span>
+3. <span data-ttu-id="9f4b0-124">ツリーで、「イントラスタット (モデル)\イントラスタット (形式)」を選択します。</span><span class="sxs-lookup"><span data-stu-id="9f4b0-124">In the tree, select 'Intrastat (model)\Intrastat (format)'.</span></span>
+4. <span data-ttu-id="9f4b0-125">[実行] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9f4b0-125">Click Run.</span></span>
+5. <span data-ttu-id="9f4b0-126">[ファイル名を入力] フィールドに、「intrastat2.xml」と入力します。</span><span class="sxs-lookup"><span data-stu-id="9f4b0-126">In the Enter file name field, type 'intrastat2.xml'.</span></span>
+    * <span data-ttu-id="9f4b0-127">intrastat2.xml</span><span class="sxs-lookup"><span data-stu-id="9f4b0-127">intrastat2.xml</span></span>  
+6. <span data-ttu-id="9f4b0-128">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9f4b0-128">Click OK.</span></span>
 
-## <a name="review-er-format-executions-results"></a><span data-ttu-id="fad64-129">ER 形式の実行の結果を確認する</span><span class="sxs-lookup"><span data-stu-id="fad64-129">Review ER format execution’s results</span></span>
-    * <span data-ttu-id="fad64-130">生成した XML ファイルを確認します。</span><span class="sxs-lookup"><span data-stu-id="fad64-130">Review the generated XML file.</span></span>  
-1. <span data-ttu-id="fad64-131">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="fad64-131">Close the page.</span></span>
-2. <span data-ttu-id="fad64-132">[税] > [申告] > [対外貿易] > [イントラスタット] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="fad64-132">Go to Tax > Declarations > Foreign trade > Intrastat.</span></span>
-    * <span data-ttu-id="fad64-133">生成した電子ドキュメントに含まれているイントラスタット トランザクションを含むこのフォームを開きます。</span><span class="sxs-lookup"><span data-stu-id="fad64-133">Open this form containing Intrastat transactions that have been included to the generated electronic document.</span></span>  
-3. <span data-ttu-id="fad64-134">[イントラスタット アーカイブ] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="fad64-134">Click Intrastat archive.</span></span>
-    * <span data-ttu-id="fad64-135">実行された ER 形式にはアプリケーション データ更新の設定が含まれているので、完了したイントラスタット レポートの詳細はアーカイブされました。</span><span class="sxs-lookup"><span data-stu-id="fad64-135">Since the executed ER format contains now settings for application data update, the details of the completed Intrastat reporting have been archived.</span></span> <span data-ttu-id="fad64-136">このフォームでは、作成したアーカイブのヘッダー レコードを表示できます。</span><span class="sxs-lookup"><span data-stu-id="fad64-136">In this form, you can see the header record of the created archive.</span></span>  
-4. <span data-ttu-id="fad64-137">[詳細] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="fad64-137">Click Details.</span></span>
-    * <span data-ttu-id="fad64-138">このフォームでは、作成したアーカイブの詳細を表示できます。</span><span class="sxs-lookup"><span data-stu-id="fad64-138">In this form, you can see the details for the created archive.</span></span>  
-5. <span data-ttu-id="fad64-139">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="fad64-139">Close the page.</span></span>
-6. <span data-ttu-id="fad64-140">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="fad64-140">Close the page.</span></span>
-7. <span data-ttu-id="fad64-141">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="fad64-141">Close the page.</span></span>
+## <a name="review-er-format-executions-results"></a><span data-ttu-id="9f4b0-129">ER 形式の実行の結果を確認する</span><span class="sxs-lookup"><span data-stu-id="9f4b0-129">Review ER format execution’s results</span></span>
+    * <span data-ttu-id="9f4b0-130">生成した XML ファイルを確認します。</span><span class="sxs-lookup"><span data-stu-id="9f4b0-130">Review the generated XML file.</span></span>  
+1. <span data-ttu-id="9f4b0-131">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="9f4b0-131">Close the page.</span></span>
+2. <span data-ttu-id="9f4b0-132">[税] > [申告] > [対外貿易] > [イントラスタット] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="9f4b0-132">Go to Tax > Declarations > Foreign trade > Intrastat.</span></span>
+    * <span data-ttu-id="9f4b0-133">生成した電子ドキュメントに含まれているイントラスタット トランザクションを含むこのフォームを開きます。</span><span class="sxs-lookup"><span data-stu-id="9f4b0-133">Open this form containing Intrastat transactions that have been included to the generated electronic document.</span></span>  
+3. <span data-ttu-id="9f4b0-134">[イントラスタット アーカイブ] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9f4b0-134">Click Intrastat archive.</span></span>
+    * <span data-ttu-id="9f4b0-135">実行された ER 形式にはアプリケーション データ更新の設定が含まれているので、完了したイントラスタット レポートの詳細はアーカイブされました。</span><span class="sxs-lookup"><span data-stu-id="9f4b0-135">Since the executed ER format contains now settings for application data update, the details of the completed Intrastat reporting have been archived.</span></span> <span data-ttu-id="9f4b0-136">このフォームでは、作成したアーカイブのヘッダー レコードを表示できます。</span><span class="sxs-lookup"><span data-stu-id="9f4b0-136">In this form, you can see the header record of the created archive.</span></span>  
+4. <span data-ttu-id="9f4b0-137">[詳細] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9f4b0-137">Click Details.</span></span>
+    * <span data-ttu-id="9f4b0-138">このフォームでは、作成したアーカイブの詳細を表示できます。</span><span class="sxs-lookup"><span data-stu-id="9f4b0-138">In this form, you can see the details for the created archive.</span></span>  
+5. <span data-ttu-id="9f4b0-139">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="9f4b0-139">Close the page.</span></span>
+6. <span data-ttu-id="9f4b0-140">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="9f4b0-140">Close the page.</span></span>
+7. <span data-ttu-id="9f4b0-141">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="9f4b0-141">Close the page.</span></span>
 
 

@@ -1,5 +1,5 @@
 ---
-title: "POS ビュー拡張機能"
+title: "POS ビューの拡張によるカスタム列およびアプリ バー ボタンの追加"
 description: "このトピックでは、[顧客の追加/編集] 画面などの既存の POS ビューを拡張する方法について説明します。"
 author: mugunthanm
 manager: AnnBe
@@ -17,68 +17,68 @@ ms.author: mumani
 ms.search.validFrom: 2017-11-22
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: f2e3a40f58b57785079e1940b2d24a3598a3ad1b
-ms.openlocfilehash: 0056175e0b167a27b0221bcdd7dba4972e3bbb00
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: a45dd523c8d29de71fbfed7afd6adf7e130bdb1c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 07/09/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="extend-existing-pos-views-to-add-custom-columns-and-app-bar-buttons"></a><span data-ttu-id="4b411-103">既存の POS ビューの拡張によるカスタム列およびアプリ バー ボタンの追加</span><span class="sxs-lookup"><span data-stu-id="4b411-103">Extend existing POS views to add custom columns and app bar buttons</span></span>
+# <a name="extend-pos-views-to-add-custom-columns-and-app-bar-buttons"></a><span data-ttu-id="71414-103">POS ビューの拡張によるカスタム列およびアプリ バー ボタンの追加</span><span class="sxs-lookup"><span data-stu-id="71414-103">Extend POS views to add custom columns and app bar buttons</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="4b411-104">このトピックでは、既存の [販売時点管理 (POS)] ビューを拡張する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="4b411-104">This topic explains how you can extend existing point of sale (POS) views.</span></span> <span data-ttu-id="4b411-105">**トランザクション** 画面および **ようこそ** 画面を拡張するには、画面レイアウト デザイナーを使用します。</span><span class="sxs-lookup"><span data-stu-id="4b411-105">To extend the **Transaction** screen and **Welcome** screen, you can use the screen layout designer.</span></span> <span data-ttu-id="4b411-106">**顧客の追加/編集** 画面など、他のすべての POS ビューを拡張するには、Retail ソフトウェア開発キット (SDK) を使用します。</span><span class="sxs-lookup"><span data-stu-id="4b411-106">To extend all other POS views, such as the **Customer Add/Edit** screen, you use the Retail software development kit (SDK).</span></span> <span data-ttu-id="4b411-107">このトピックでは、Retail SDK による既存の POS ビューの拡張について説明します。</span><span class="sxs-lookup"><span data-stu-id="4b411-107">This topic focuses on the extension of existing POS views via the Retail SDK.</span></span>
+<span data-ttu-id="71414-104">このトピックでは、既存の [販売時点管理 (POS)] ビューを拡張する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="71414-104">This topic explains how you can extend existing point of sale (POS) views.</span></span> <span data-ttu-id="71414-105">**トランザクション** 画面および **ようこそ** 画面を拡張するには、画面レイアウト デザイナーを使用します。</span><span class="sxs-lookup"><span data-stu-id="71414-105">To extend the **Transaction** screen and **Welcome** screen, you can use the screen layout designer.</span></span> <span data-ttu-id="71414-106">**顧客の追加/編集** 画面など、他のすべての POS ビューを拡張するには、Retail ソフトウェア開発キット (SDK) を使用します。</span><span class="sxs-lookup"><span data-stu-id="71414-106">To extend all other POS views, such as the **Customer Add/Edit** screen, you use the Retail software development kit (SDK).</span></span> <span data-ttu-id="71414-107">このトピックでは、Retail SDK による既存の POS ビューの拡張について説明します。</span><span class="sxs-lookup"><span data-stu-id="71414-107">This topic focuses on the extension of existing POS views via the Retail SDK.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="4b411-108">このトピックは、Microsoft Dynamics 365 for Finance and Operations と、プラットフォーム更新プログラム 8 および Retail アプリケーション更新プログラム 4 修正プログラムを備えた Microsoft Dynamics 365 for Retail に適用されます。</span><span class="sxs-lookup"><span data-stu-id="4b411-108">This topic applies to Microsoft Dynamics 365 for Finance and Operations, and to Microsoft Dynamics 365 for Retail with platform update 8 and Retail App update 4 hotfix.</span></span>
+> <span data-ttu-id="71414-108">このトピックは、Microsoft Dynamics 365 for Finance and Operations と、プラットフォーム更新プログラム 8 および Retail アプリケーション更新プログラム 4 修正プログラムを備えた Microsoft Dynamics 365 for Retail に適用されます。</span><span class="sxs-lookup"><span data-stu-id="71414-108">This topic applies to Microsoft Dynamics 365 for Finance and Operations, and to Microsoft Dynamics 365 for Retail with platform update 8 and Retail App update 4 hotfix.</span></span>
 
-<span data-ttu-id="4b411-109">POS ビューでは、次の拡張ポイントとパターンがサポートされます。</span><span class="sxs-lookup"><span data-stu-id="4b411-109">POS views support the following extension points and patterns:</span></span>
+<span data-ttu-id="71414-109">POS ビューでは、次の拡張ポイントとパターンがサポートされます。</span><span class="sxs-lookup"><span data-stu-id="71414-109">POS views support the following extension points and patterns:</span></span>
 
-- <span data-ttu-id="4b411-110">**カスタム アプリケーション バーのボタン** - 選択したページのアプリケーション バーにカスタム ボタンを追加します。</span><span class="sxs-lookup"><span data-stu-id="4b411-110">**Custom app bar buttons** – Add custom buttons to the app bar on selected pages.</span></span>
-- <span data-ttu-id="4b411-111">**カスタム列セット** - 選択したページのグリッド列をカスタム列に置き換えます。</span><span class="sxs-lookup"><span data-stu-id="4b411-111">**Custom column sets** – Replace the grid columns with custom columns on selected pages.</span></span>
-- <span data-ttu-id="4b411-112">**カスタム コントロール** - 選択したページに、新しいコントロールを追加します。</span><span class="sxs-lookup"><span data-stu-id="4b411-112">**Custom controls** – Add new controls to selected pages.</span></span>
+- <span data-ttu-id="71414-110">**カスタム アプリケーション バーのボタン** - 選択したページのアプリケーション バーにカスタム ボタンを追加します。</span><span class="sxs-lookup"><span data-stu-id="71414-110">**Custom app bar buttons** – Add custom buttons to the app bar on selected pages.</span></span>
+- <span data-ttu-id="71414-111">**カスタム列セット** - 選択したページのグリッド列をカスタム列に置き換えます。</span><span class="sxs-lookup"><span data-stu-id="71414-111">**Custom column sets** – Replace the grid columns with custom columns on selected pages.</span></span>
+- <span data-ttu-id="71414-112">**カスタム コントロール** - 選択したページに、新しいコントロールを追加します。</span><span class="sxs-lookup"><span data-stu-id="71414-112">**Custom controls** – Add new controls to selected pages.</span></span>
 
-## <a name="pos-views-that-currently-support-extensions"></a><span data-ttu-id="4b411-113">現在拡張機能をサポートする POS ビュー</span><span class="sxs-lookup"><span data-stu-id="4b411-113">POS views that currently support extensions</span></span>
+## <a name="pos-views-that-currently-support-extensions"></a><span data-ttu-id="71414-113">現在拡張機能をサポートする POS ビュー</span><span class="sxs-lookup"><span data-stu-id="71414-113">POS views that currently support extensions</span></span>
 
-<span data-ttu-id="4b411-114">次のテーブルに、現在拡張機能をサポートしている POS ビューを示します。</span><span class="sxs-lookup"><span data-stu-id="4b411-114">The following table shows the POS views that currently support extensions.</span></span> <span data-ttu-id="4b411-115">また、各 POS ビューがサポートする拡張ポイントのタイプも示します。</span><span class="sxs-lookup"><span data-stu-id="4b411-115">It also indicates the types of extension points that each POS view supports.</span></span>
+<span data-ttu-id="71414-114">次のテーブルに、現在拡張機能をサポートしている POS ビューを示します。</span><span class="sxs-lookup"><span data-stu-id="71414-114">The following table shows the POS views that currently support extensions.</span></span> <span data-ttu-id="71414-115">また、各 POS ビューがサポートする拡張ポイントのタイプも示します。</span><span class="sxs-lookup"><span data-stu-id="71414-115">It also indicates the types of extension points that each POS view supports.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="4b411-116">今後のリリースと修正プログラムで、他のビューの拡張ポイントをさらにサポートします。</span><span class="sxs-lookup"><span data-stu-id="4b411-116">The upcoming releases and hotfix will add support for more extension points in other views.</span></span>
+> <span data-ttu-id="71414-116">今後のリリースと修正プログラムで、他のビューの拡張ポイントをさらにサポートします。</span><span class="sxs-lookup"><span data-stu-id="71414-116">The upcoming releases and hotfix will add support for more extension points in other views.</span></span>
 
-| <span data-ttu-id="4b411-117">POS ビュー</span><span class="sxs-lookup"><span data-stu-id="4b411-117">POS view</span></span>                        | <span data-ttu-id="4b411-118">カスタム コントロールがサポートされています</span><span class="sxs-lookup"><span data-stu-id="4b411-118">Custom controls are supported</span></span> | <span data-ttu-id="4b411-119">カスタム列がサポートされています</span><span class="sxs-lookup"><span data-stu-id="4b411-119">Custom columns are supported</span></span> | <span data-ttu-id="4b411-120">カスタムのアプリ バーのボタンがサポートされています</span><span class="sxs-lookup"><span data-stu-id="4b411-120">Custom app bar buttons are supported</span></span> |
+| <span data-ttu-id="71414-117">POS ビュー</span><span class="sxs-lookup"><span data-stu-id="71414-117">POS view</span></span>                        | <span data-ttu-id="71414-118">カスタム コントロールがサポートされています</span><span class="sxs-lookup"><span data-stu-id="71414-118">Custom controls are supported</span></span> | <span data-ttu-id="71414-119">カスタム列がサポートされています</span><span class="sxs-lookup"><span data-stu-id="71414-119">Custom columns are supported</span></span> | <span data-ttu-id="71414-120">カスタムのアプリ バーのボタンがサポートされています</span><span class="sxs-lookup"><span data-stu-id="71414-120">Custom app bar buttons are supported</span></span> |
 |---------------------------------|-------------------------------|------------------------------|--------------------------------------|
-| <span data-ttu-id="4b411-121">カート ビュー (画面レイアウトに基づく)</span><span class="sxs-lookup"><span data-stu-id="4b411-121">Cart view (Screen layout based)</span></span> | <span data-ttu-id="4b411-122">有</span><span class="sxs-lookup"><span data-stu-id="4b411-122">Yes</span></span>                           | <span data-ttu-id="4b411-123">有</span><span class="sxs-lookup"><span data-stu-id="4b411-123">Yes</span></span>                          | <span data-ttu-id="4b411-124">無</span><span class="sxs-lookup"><span data-stu-id="4b411-124">No</span></span>                                   |
-| <span data-ttu-id="4b411-125">CustomerAddEditView</span><span class="sxs-lookup"><span data-stu-id="4b411-125">CustomerAddEditView</span></span>             | <span data-ttu-id="4b411-126">有</span><span class="sxs-lookup"><span data-stu-id="4b411-126">Yes</span></span>                           | <span data-ttu-id="4b411-127">無</span><span class="sxs-lookup"><span data-stu-id="4b411-127">No</span></span>                           | <span data-ttu-id="4b411-128">有</span><span class="sxs-lookup"><span data-stu-id="4b411-128">Yes</span></span>                                  |
-| <span data-ttu-id="4b411-129">CustomerDetailsView</span><span class="sxs-lookup"><span data-stu-id="4b411-129">CustomerDetailsView</span></span>             | <span data-ttu-id="4b411-130">有</span><span class="sxs-lookup"><span data-stu-id="4b411-130">Yes</span></span>                           | <span data-ttu-id="4b411-131">無</span><span class="sxs-lookup"><span data-stu-id="4b411-131">No</span></span>                           | <span data-ttu-id="4b411-132">有</span><span class="sxs-lookup"><span data-stu-id="4b411-132">Yes</span></span>                                  |
-| <span data-ttu-id="4b411-133">SearchView</span><span class="sxs-lookup"><span data-stu-id="4b411-133">SearchView</span></span>                      | <span data-ttu-id="4b411-134">無</span><span class="sxs-lookup"><span data-stu-id="4b411-134">No</span></span>                            | <span data-ttu-id="4b411-135">有</span><span class="sxs-lookup"><span data-stu-id="4b411-135">Yes</span></span>                          | <span data-ttu-id="4b411-136">有</span><span class="sxs-lookup"><span data-stu-id="4b411-136">Yes</span></span>                                  |
-| <span data-ttu-id="4b411-137">InventoryLookupView</span><span class="sxs-lookup"><span data-stu-id="4b411-137">InventoryLookupView</span></span>             | <span data-ttu-id="4b411-138">無</span><span class="sxs-lookup"><span data-stu-id="4b411-138">No</span></span>                            | <span data-ttu-id="4b411-139">有</span><span class="sxs-lookup"><span data-stu-id="4b411-139">Yes</span></span>                          | <span data-ttu-id="4b411-140">有</span><span class="sxs-lookup"><span data-stu-id="4b411-140">Yes</span></span>                                  |
-| <span data-ttu-id="4b411-141">ShowJournalView</span><span class="sxs-lookup"><span data-stu-id="4b411-141">ShowJournalView</span></span>                 | <span data-ttu-id="4b411-142">無</span><span class="sxs-lookup"><span data-stu-id="4b411-142">No</span></span>                            | <span data-ttu-id="4b411-143">有</span><span class="sxs-lookup"><span data-stu-id="4b411-143">Yes</span></span>                          | <span data-ttu-id="4b411-144">有</span><span class="sxs-lookup"><span data-stu-id="4b411-144">Yes</span></span>                                  |
-| <span data-ttu-id="4b411-145">SimpleProductDetailsView</span><span class="sxs-lookup"><span data-stu-id="4b411-145">SimpleProductDetailsView</span></span>        | <span data-ttu-id="4b411-146">有</span><span class="sxs-lookup"><span data-stu-id="4b411-146">Yes</span></span>                           | <span data-ttu-id="4b411-147">無</span><span class="sxs-lookup"><span data-stu-id="4b411-147">No</span></span>                           | <span data-ttu-id="4b411-148">有</span><span class="sxs-lookup"><span data-stu-id="4b411-148">Yes</span></span>                                  |
-| <span data-ttu-id="4b411-149">AddressAddEditView</span><span class="sxs-lookup"><span data-stu-id="4b411-149">AddressAddEditView</span></span>              | <span data-ttu-id="4b411-150">有</span><span class="sxs-lookup"><span data-stu-id="4b411-150">Yes</span></span>                           | <span data-ttu-id="4b411-151">無</span><span class="sxs-lookup"><span data-stu-id="4b411-151">No</span></span>                           | <span data-ttu-id="4b411-152">無</span><span class="sxs-lookup"><span data-stu-id="4b411-152">No</span></span>                                    |
-| <span data-ttu-id="4b411-153">PaymentView</span><span class="sxs-lookup"><span data-stu-id="4b411-153">PaymentView</span></span>                     | <span data-ttu-id="4b411-154">無</span><span class="sxs-lookup"><span data-stu-id="4b411-154">No</span></span>                            | <span data-ttu-id="4b411-155">無</span><span class="sxs-lookup"><span data-stu-id="4b411-155">No</span></span>                           | <span data-ttu-id="4b411-156">有</span><span class="sxs-lookup"><span data-stu-id="4b411-156">Yes</span></span>                                  |
-| <span data-ttu-id="4b411-157">PriceCheckView</span><span class="sxs-lookup"><span data-stu-id="4b411-157">PriceCheckView</span></span>                  | <span data-ttu-id="4b411-158">有</span><span class="sxs-lookup"><span data-stu-id="4b411-158">Yes</span></span>                           | <span data-ttu-id="4b411-159">無</span><span class="sxs-lookup"><span data-stu-id="4b411-159">No</span></span>                           | <span data-ttu-id="4b411-160">無</span><span class="sxs-lookup"><span data-stu-id="4b411-160">No</span></span>                                   |
-| <span data-ttu-id="4b411-161">SearchOrdersView</span><span class="sxs-lookup"><span data-stu-id="4b411-161">SearchOrdersView</span></span>                | <span data-ttu-id="4b411-162">無</span><span class="sxs-lookup"><span data-stu-id="4b411-162">No</span></span>                            | <span data-ttu-id="4b411-163">有</span><span class="sxs-lookup"><span data-stu-id="4b411-163">Yes</span></span>                          | <span data-ttu-id="4b411-164">無</span><span class="sxs-lookup"><span data-stu-id="4b411-164">No</span></span>                                   |
-| <span data-ttu-id="4b411-165">SearchPickingAndReceivingView</span><span class="sxs-lookup"><span data-stu-id="4b411-165">SearchPickingAndReceivingView</span></span>   | <span data-ttu-id="4b411-166">無</span><span class="sxs-lookup"><span data-stu-id="4b411-166">No</span></span>                            | <span data-ttu-id="4b411-167">有</span><span class="sxs-lookup"><span data-stu-id="4b411-167">Yes</span></span>                          | <span data-ttu-id="4b411-168">有</span><span class="sxs-lookup"><span data-stu-id="4b411-168">Yes</span></span>                                   |
-| <span data-ttu-id="4b411-169">CustomerOrderHistoryView</span><span class="sxs-lookup"><span data-stu-id="4b411-169">CustomerOrderHistoryView</span></span>        | <span data-ttu-id="4b411-170">無</span><span class="sxs-lookup"><span data-stu-id="4b411-170">No</span></span>                            | <span data-ttu-id="4b411-171">有</span><span class="sxs-lookup"><span data-stu-id="4b411-171">Yes</span></span>                          | <span data-ttu-id="4b411-172">無</span><span class="sxs-lookup"><span data-stu-id="4b411-172">No</span></span>                                   |
-| <span data-ttu-id="4b411-173">SearchStockCountView</span><span class="sxs-lookup"><span data-stu-id="4b411-173">SearchStockCountView</span></span>            | <span data-ttu-id="4b411-174">無</span><span class="sxs-lookup"><span data-stu-id="4b411-174">No</span></span>                            | <span data-ttu-id="4b411-175">有</span><span class="sxs-lookup"><span data-stu-id="4b411-175">Yes</span></span>                          | <span data-ttu-id="4b411-176">無</span><span class="sxs-lookup"><span data-stu-id="4b411-176">No</span></span>                                   |
-| <span data-ttu-id="4b411-177">StockCountDetailsView</span><span class="sxs-lookup"><span data-stu-id="4b411-177">StockCountDetailsView</span></span>           | <span data-ttu-id="4b411-178">無</span><span class="sxs-lookup"><span data-stu-id="4b411-178">No</span></span>                            | <span data-ttu-id="4b411-179">有</span><span class="sxs-lookup"><span data-stu-id="4b411-179">Yes</span></span>                          | <span data-ttu-id="4b411-180">無</span><span class="sxs-lookup"><span data-stu-id="4b411-180">No</span></span>                                   |
-| <span data-ttu-id="4b411-181">ResumeCartView</span><span class="sxs-lookup"><span data-stu-id="4b411-181">ResumeCartView</span></span>                  | <span data-ttu-id="4b411-182">無</span><span class="sxs-lookup"><span data-stu-id="4b411-182">No</span></span>                            | <span data-ttu-id="4b411-183">有</span><span class="sxs-lookup"><span data-stu-id="4b411-183">Yes</span></span>                          | <span data-ttu-id="4b411-184">無</span><span class="sxs-lookup"><span data-stu-id="4b411-184">No</span></span>                                    |
+| <span data-ttu-id="71414-121">カート ビュー (画面レイアウトに基づく)</span><span class="sxs-lookup"><span data-stu-id="71414-121">Cart view (Screen layout based)</span></span> | <span data-ttu-id="71414-122">有</span><span class="sxs-lookup"><span data-stu-id="71414-122">Yes</span></span>                           | <span data-ttu-id="71414-123">有</span><span class="sxs-lookup"><span data-stu-id="71414-123">Yes</span></span>                          | <span data-ttu-id="71414-124">無</span><span class="sxs-lookup"><span data-stu-id="71414-124">No</span></span>                                   |
+| <span data-ttu-id="71414-125">CustomerAddEditView</span><span class="sxs-lookup"><span data-stu-id="71414-125">CustomerAddEditView</span></span>             | <span data-ttu-id="71414-126">有</span><span class="sxs-lookup"><span data-stu-id="71414-126">Yes</span></span>                           | <span data-ttu-id="71414-127">無</span><span class="sxs-lookup"><span data-stu-id="71414-127">No</span></span>                           | <span data-ttu-id="71414-128">有</span><span class="sxs-lookup"><span data-stu-id="71414-128">Yes</span></span>                                  |
+| <span data-ttu-id="71414-129">CustomerDetailsView</span><span class="sxs-lookup"><span data-stu-id="71414-129">CustomerDetailsView</span></span>             | <span data-ttu-id="71414-130">有</span><span class="sxs-lookup"><span data-stu-id="71414-130">Yes</span></span>                           | <span data-ttu-id="71414-131">無</span><span class="sxs-lookup"><span data-stu-id="71414-131">No</span></span>                           | <span data-ttu-id="71414-132">有</span><span class="sxs-lookup"><span data-stu-id="71414-132">Yes</span></span>                                  |
+| <span data-ttu-id="71414-133">SearchView</span><span class="sxs-lookup"><span data-stu-id="71414-133">SearchView</span></span>                      | <span data-ttu-id="71414-134">無</span><span class="sxs-lookup"><span data-stu-id="71414-134">No</span></span>                            | <span data-ttu-id="71414-135">有</span><span class="sxs-lookup"><span data-stu-id="71414-135">Yes</span></span>                          | <span data-ttu-id="71414-136">有</span><span class="sxs-lookup"><span data-stu-id="71414-136">Yes</span></span>                                  |
+| <span data-ttu-id="71414-137">InventoryLookupView</span><span class="sxs-lookup"><span data-stu-id="71414-137">InventoryLookupView</span></span>             | <span data-ttu-id="71414-138">無</span><span class="sxs-lookup"><span data-stu-id="71414-138">No</span></span>                            | <span data-ttu-id="71414-139">有</span><span class="sxs-lookup"><span data-stu-id="71414-139">Yes</span></span>                          | <span data-ttu-id="71414-140">有</span><span class="sxs-lookup"><span data-stu-id="71414-140">Yes</span></span>                                  |
+| <span data-ttu-id="71414-141">ShowJournalView</span><span class="sxs-lookup"><span data-stu-id="71414-141">ShowJournalView</span></span>                 | <span data-ttu-id="71414-142">無</span><span class="sxs-lookup"><span data-stu-id="71414-142">No</span></span>                            | <span data-ttu-id="71414-143">有</span><span class="sxs-lookup"><span data-stu-id="71414-143">Yes</span></span>                          | <span data-ttu-id="71414-144">有</span><span class="sxs-lookup"><span data-stu-id="71414-144">Yes</span></span>                                  |
+| <span data-ttu-id="71414-145">SimpleProductDetailsView</span><span class="sxs-lookup"><span data-stu-id="71414-145">SimpleProductDetailsView</span></span>        | <span data-ttu-id="71414-146">有</span><span class="sxs-lookup"><span data-stu-id="71414-146">Yes</span></span>                           | <span data-ttu-id="71414-147">無</span><span class="sxs-lookup"><span data-stu-id="71414-147">No</span></span>                           | <span data-ttu-id="71414-148">有</span><span class="sxs-lookup"><span data-stu-id="71414-148">Yes</span></span>                                  |
+| <span data-ttu-id="71414-149">AddressAddEditView</span><span class="sxs-lookup"><span data-stu-id="71414-149">AddressAddEditView</span></span>              | <span data-ttu-id="71414-150">有</span><span class="sxs-lookup"><span data-stu-id="71414-150">Yes</span></span>                           | <span data-ttu-id="71414-151">無</span><span class="sxs-lookup"><span data-stu-id="71414-151">No</span></span>                           | <span data-ttu-id="71414-152">無</span><span class="sxs-lookup"><span data-stu-id="71414-152">No</span></span>                                    |
+| <span data-ttu-id="71414-153">PaymentView</span><span class="sxs-lookup"><span data-stu-id="71414-153">PaymentView</span></span>                     | <span data-ttu-id="71414-154">無</span><span class="sxs-lookup"><span data-stu-id="71414-154">No</span></span>                            | <span data-ttu-id="71414-155">無</span><span class="sxs-lookup"><span data-stu-id="71414-155">No</span></span>                           | <span data-ttu-id="71414-156">有</span><span class="sxs-lookup"><span data-stu-id="71414-156">Yes</span></span>                                  |
+| <span data-ttu-id="71414-157">PriceCheckView</span><span class="sxs-lookup"><span data-stu-id="71414-157">PriceCheckView</span></span>                  | <span data-ttu-id="71414-158">有</span><span class="sxs-lookup"><span data-stu-id="71414-158">Yes</span></span>                           | <span data-ttu-id="71414-159">無</span><span class="sxs-lookup"><span data-stu-id="71414-159">No</span></span>                           | <span data-ttu-id="71414-160">無</span><span class="sxs-lookup"><span data-stu-id="71414-160">No</span></span>                                   |
+| <span data-ttu-id="71414-161">SearchOrdersView</span><span class="sxs-lookup"><span data-stu-id="71414-161">SearchOrdersView</span></span>                | <span data-ttu-id="71414-162">無</span><span class="sxs-lookup"><span data-stu-id="71414-162">No</span></span>                            | <span data-ttu-id="71414-163">有</span><span class="sxs-lookup"><span data-stu-id="71414-163">Yes</span></span>                          | <span data-ttu-id="71414-164">無</span><span class="sxs-lookup"><span data-stu-id="71414-164">No</span></span>                                   |
+| <span data-ttu-id="71414-165">SearchPickingAndReceivingView</span><span class="sxs-lookup"><span data-stu-id="71414-165">SearchPickingAndReceivingView</span></span>   | <span data-ttu-id="71414-166">無</span><span class="sxs-lookup"><span data-stu-id="71414-166">No</span></span>                            | <span data-ttu-id="71414-167">有</span><span class="sxs-lookup"><span data-stu-id="71414-167">Yes</span></span>                          | <span data-ttu-id="71414-168">有</span><span class="sxs-lookup"><span data-stu-id="71414-168">Yes</span></span>                                   |
+| <span data-ttu-id="71414-169">CustomerOrderHistoryView</span><span class="sxs-lookup"><span data-stu-id="71414-169">CustomerOrderHistoryView</span></span>        | <span data-ttu-id="71414-170">無</span><span class="sxs-lookup"><span data-stu-id="71414-170">No</span></span>                            | <span data-ttu-id="71414-171">有</span><span class="sxs-lookup"><span data-stu-id="71414-171">Yes</span></span>                          | <span data-ttu-id="71414-172">無</span><span class="sxs-lookup"><span data-stu-id="71414-172">No</span></span>                                   |
+| <span data-ttu-id="71414-173">SearchStockCountView</span><span class="sxs-lookup"><span data-stu-id="71414-173">SearchStockCountView</span></span>            | <span data-ttu-id="71414-174">無</span><span class="sxs-lookup"><span data-stu-id="71414-174">No</span></span>                            | <span data-ttu-id="71414-175">有</span><span class="sxs-lookup"><span data-stu-id="71414-175">Yes</span></span>                          | <span data-ttu-id="71414-176">無</span><span class="sxs-lookup"><span data-stu-id="71414-176">No</span></span>                                   |
+| <span data-ttu-id="71414-177">StockCountDetailsView</span><span class="sxs-lookup"><span data-stu-id="71414-177">StockCountDetailsView</span></span>           | <span data-ttu-id="71414-178">無</span><span class="sxs-lookup"><span data-stu-id="71414-178">No</span></span>                            | <span data-ttu-id="71414-179">有</span><span class="sxs-lookup"><span data-stu-id="71414-179">Yes</span></span>                          | <span data-ttu-id="71414-180">無</span><span class="sxs-lookup"><span data-stu-id="71414-180">No</span></span>                                   |
+| <span data-ttu-id="71414-181">ResumeCartView</span><span class="sxs-lookup"><span data-stu-id="71414-181">ResumeCartView</span></span>                  | <span data-ttu-id="71414-182">無</span><span class="sxs-lookup"><span data-stu-id="71414-182">No</span></span>                            | <span data-ttu-id="71414-183">有</span><span class="sxs-lookup"><span data-stu-id="71414-183">Yes</span></span>                          | <span data-ttu-id="71414-184">無</span><span class="sxs-lookup"><span data-stu-id="71414-184">No</span></span>                                    |
 
 > [!NOTE]
-> <span data-ttu-id="4b411-185">上記に表示される表は、リリースされた最新バージョンおよび修正プログラムに基づいて更新されています。</span><span class="sxs-lookup"><span data-stu-id="4b411-185">The table shown above is updated based on the latest released version and hotfix.</span></span> <span data-ttu-id="4b411-186">旧バージョンでは、これらの拡張ポイントの一部は使用できません。</span><span class="sxs-lookup"><span data-stu-id="4b411-186">In earlier versions, some of these extension points will not be available.</span></span>
+> <span data-ttu-id="71414-185">上記に表示される表は、リリースされた最新バージョンおよび修正プログラムに基づいて更新されています。</span><span class="sxs-lookup"><span data-stu-id="71414-185">The table shown above is updated based on the latest released version and hotfix.</span></span> <span data-ttu-id="71414-186">旧バージョンでは、これらの拡張ポイントの一部は使用できません。</span><span class="sxs-lookup"><span data-stu-id="71414-186">In earlier versions, some of these extension points will not be available.</span></span>
 
-<span data-ttu-id="4b411-187">フィルターの拡張機能は**仕訳帳ビューを表示**および**注文ビューを検索**でもサポートされ、カスタム フィルターを追加します。</span><span class="sxs-lookup"><span data-stu-id="4b411-187">Filter extensions are also supported in **Show journal view** and **Search order views** to add custom filters.</span></span> 
+<span data-ttu-id="71414-187">フィルターの拡張機能は**仕訳帳ビューを表示**および**注文ビューを検索**でもサポートされ、カスタム フィルターを追加します。</span><span class="sxs-lookup"><span data-stu-id="71414-187">Filter extensions are also supported in **Show journal view** and **Search order views** to add custom filters.</span></span> 
 
-## <a name="add-a-custom-column-and-an-app-bar-button"></a><span data-ttu-id="4b411-188">カスタム列とアプリ バー ボタンの追加</span><span class="sxs-lookup"><span data-stu-id="4b411-188">Add a custom column and an app bar button</span></span>
+## <a name="add-a-custom-column-and-an-app-bar-button"></a><span data-ttu-id="71414-188">カスタム列とアプリ バー ボタンの追加</span><span class="sxs-lookup"><span data-stu-id="71414-188">Add a custom column and an app bar button</span></span>
 
-1. <span data-ttu-id="4b411-189">管理者として Microsoft Visual Studio 2015 を起動します。</span><span class="sxs-lookup"><span data-stu-id="4b411-189">Start Microsoft Visual Studio 2015 as an administrator.</span></span>
-2. <span data-ttu-id="4b411-190">**ModernPOS** ソリューションを **…\\RetailSDK\\POS** から開きます。</span><span class="sxs-lookup"><span data-stu-id="4b411-190">Open the **ModernPOS** solution from **…\\RetailSDK\\POS**.</span></span>
-3. <span data-ttu-id="4b411-191">**POS.Extensions** プロジェクトで、**SearchExtension** というフォルダーを作成します。</span><span class="sxs-lookup"><span data-stu-id="4b411-191">In the **POS.Extensions** project, create a folder that is named **SearchExtension**.</span></span>
-4. <span data-ttu-id="4b411-192">**SearchExtension** フォルダーで、**ViewExtensions** というフォルダーを作成します。</span><span class="sxs-lookup"><span data-stu-id="4b411-192">In the **SearchExtension** folder, create a folder that is named **ViewExtensions**.</span></span>
-5. <span data-ttu-id="4b411-193">**ViewExtensions** フォルダーで、**Search** というフォルダーを作成します。</span><span class="sxs-lookup"><span data-stu-id="4b411-193">In the **ViewExtensions** folder, create a folder that is named **Search**.</span></span>
-6. <span data-ttu-id="4b411-194">**Search** フォルダーで、**CustomCustomerSearchColumns.ts** という Typescript ファイルを作成します。</span><span class="sxs-lookup"><span data-stu-id="4b411-194">In the **Search** folder, create a Typescript file that is named **CustomCustomerSearchColumns.ts**.</span></span>
-7. <span data-ttu-id="4b411-195">**CustomCustomerSearchColumns.ts** ファイルで、次の **import** ステートメントを追加して関連するエンティティおよびコンテキストをインポートします。</span><span class="sxs-lookup"><span data-stu-id="4b411-195">In the **CustomCustomerSearchColumns.ts** file, add the following **import** statements to import the relevant entities and context.</span></span>
+1. <span data-ttu-id="71414-189">管理者として Microsoft Visual Studio 2015 を起動します。</span><span class="sxs-lookup"><span data-stu-id="71414-189">Start Microsoft Visual Studio 2015 as an administrator.</span></span>
+2. <span data-ttu-id="71414-190">**ModernPOS** ソリューションを **…\\RetailSDK\\POS** から開きます。</span><span class="sxs-lookup"><span data-stu-id="71414-190">Open the **ModernPOS** solution from **…\\RetailSDK\\POS**.</span></span>
+3. <span data-ttu-id="71414-191">**POS.Extensions** プロジェクトで、**SearchExtension** というフォルダーを作成します。</span><span class="sxs-lookup"><span data-stu-id="71414-191">In the **POS.Extensions** project, create a folder that is named **SearchExtension**.</span></span>
+4. <span data-ttu-id="71414-192">**SearchExtension** フォルダーで、**ViewExtensions** というフォルダーを作成します。</span><span class="sxs-lookup"><span data-stu-id="71414-192">In the **SearchExtension** folder, create a folder that is named **ViewExtensions**.</span></span>
+5. <span data-ttu-id="71414-193">**ViewExtensions** フォルダーで、**Search** というフォルダーを作成します。</span><span class="sxs-lookup"><span data-stu-id="71414-193">In the **ViewExtensions** folder, create a folder that is named **Search**.</span></span>
+6. <span data-ttu-id="71414-194">**Search** フォルダーで、**CustomCustomerSearchColumns.ts** という Typescript ファイルを作成します。</span><span class="sxs-lookup"><span data-stu-id="71414-194">In the **Search** folder, create a Typescript file that is named **CustomCustomerSearchColumns.ts**.</span></span>
+7. <span data-ttu-id="71414-195">**CustomCustomerSearchColumns.ts** ファイルで、次の **import** ステートメントを追加して関連するエンティティおよびコンテキストをインポートします。</span><span class="sxs-lookup"><span data-stu-id="71414-195">In the **CustomCustomerSearchColumns.ts** file, add the following **import** statements to import the relevant entities and context.</span></span>
 
     ```Typescript
     import { ICustomerSearchColumn } from "PosApi/Extend/Views/SearchView";
@@ -86,7 +86,7 @@ ms.lasthandoff: 07/09/2018
     import { ProxyEntities } from "PosApi/Entities";
     ```
 
-8. <span data-ttu-id="4b411-196">ファイルに既存の列とカスタム列を追加します。</span><span class="sxs-lookup"><span data-stu-id="4b411-196">Add the existing column and the custom column to the file.</span></span>
+8. <span data-ttu-id="71414-196">ファイルに既存の列とカスタム列を追加します。</span><span class="sxs-lookup"><span data-stu-id="71414-196">Add the existing column and the custom column to the file.</span></span>
 
     ```Typescript
     export default (context: ICustomColumnsContext): ICustomerSearchColumn[] => {
@@ -126,11 +126,11 @@ ms.lasthandoff: 07/09/2018
     };
     ```
 
-9. <span data-ttu-id="4b411-197">ここで、列の名前のローカライズのためのリソース ファイルを追加します。</span><span class="sxs-lookup"><span data-stu-id="4b411-197">You will now add the resource file for localization of the column name.</span></span> <span data-ttu-id="4b411-198">**SearchExtension** フォルダーで、**Resources** というフォルダーを作成します。</span><span class="sxs-lookup"><span data-stu-id="4b411-198">In the **SearchExtension** folder, create a folder that is named **Resources**.</span></span>
-10. <span data-ttu-id="4b411-199">**Resources** フォルダーで、**Strings** というフォルダーを作成します。</span><span class="sxs-lookup"><span data-stu-id="4b411-199">In the **Resources** folder, create a folder that is named **Strings**.</span></span>
-11. <span data-ttu-id="4b411-200">**Strings** フォルダーで、**en-US** というフォルダーを作成します。</span><span class="sxs-lookup"><span data-stu-id="4b411-200">In the **Strings** folder, create a folder that is named **en-US**.</span></span>
-12. <span data-ttu-id="4b411-201">**en-us** フォルダーで、**resources.resjson** というファイルを作成します。</span><span class="sxs-lookup"><span data-stu-id="4b411-201">In the **en-us** folder, create a file that is named **resources.resjson**.</span></span>
-13. <span data-ttu-id="4b411-202">**resources.resjson** ファイルに次のコードを追加します。</span><span class="sxs-lookup"><span data-stu-id="4b411-202">In the **resources.resjson** file, add the following code.</span></span>
+9. <span data-ttu-id="71414-197">ここで、列の名前のローカライズのためのリソース ファイルを追加します。</span><span class="sxs-lookup"><span data-stu-id="71414-197">You will now add the resource file for localization of the column name.</span></span> <span data-ttu-id="71414-198">**SearchExtension** フォルダーで、**Resources** というフォルダーを作成します。</span><span class="sxs-lookup"><span data-stu-id="71414-198">In the **SearchExtension** folder, create a folder that is named **Resources**.</span></span>
+10. <span data-ttu-id="71414-199">**Resources** フォルダーで、**Strings** というフォルダーを作成します。</span><span class="sxs-lookup"><span data-stu-id="71414-199">In the **Resources** folder, create a folder that is named **Strings**.</span></span>
+11. <span data-ttu-id="71414-200">**Strings** フォルダーで、**en-US** というフォルダーを作成します。</span><span class="sxs-lookup"><span data-stu-id="71414-200">In the **Strings** folder, create a folder that is named **en-US**.</span></span>
+12. <span data-ttu-id="71414-201">**en-us** フォルダーで、**resources.resjson** というファイルを作成します。</span><span class="sxs-lookup"><span data-stu-id="71414-201">In the **en-us** folder, create a file that is named **resources.resjson**.</span></span>
+13. <span data-ttu-id="71414-202">**resources.resjson** ファイルに次のコードを追加します。</span><span class="sxs-lookup"><span data-stu-id="71414-202">In the **resources.resjson** file, add the following code.</span></span>
 
     ```Typescript
     {
@@ -153,9 +153,9 @@ ms.lasthandoff: 07/09/2018
     }
     ```
 
-14. <span data-ttu-id="4b411-203">**SearchExtension** フォルダーで、**DialogSample** というフォルダーを作成します。</span><span class="sxs-lookup"><span data-stu-id="4b411-203">In the **SearchExtension** folder, create a folder that is named **DialogSample**.</span></span>
-15. <span data-ttu-id="4b411-204">**DialogSample** フォルダーで、**MessageDialog.ts** という Typescript ファイルを作成します。</span><span class="sxs-lookup"><span data-stu-id="4b411-204">In the **DialogSample** folder, create a Typescript file that is named **MessageDialog.ts**.</span></span>
-16. <span data-ttu-id="4b411-205">**MessageDialog.ts** ファイルで、次の **import** ステートメントを追加して関連するエンティティおよびコンテキストをインポートします。</span><span class="sxs-lookup"><span data-stu-id="4b411-205">In the **MessageDialog.ts** file, add the following **import** statements to import the relevant entities and context.</span></span>
+14. <span data-ttu-id="71414-203">**SearchExtension** フォルダーで、**DialogSample** というフォルダーを作成します。</span><span class="sxs-lookup"><span data-stu-id="71414-203">In the **SearchExtension** folder, create a folder that is named **DialogSample**.</span></span>
+15. <span data-ttu-id="71414-204">**DialogSample** フォルダーで、**MessageDialog.ts** という Typescript ファイルを作成します。</span><span class="sxs-lookup"><span data-stu-id="71414-204">In the **DialogSample** folder, create a Typescript file that is named **MessageDialog.ts**.</span></span>
+16. <span data-ttu-id="71414-205">**MessageDialog.ts** ファイルで、次の **import** ステートメントを追加して関連するエンティティおよびコンテキストをインポートします。</span><span class="sxs-lookup"><span data-stu-id="71414-205">In the **MessageDialog.ts** file, add the following **import** statements to import the relevant entities and context.</span></span>
 
     ```Typescript
     import { ShowMessageDialogClientRequest, ShowMessageDialogClientResponse, IMessageDialogOptions } from "PosApi/Consume/Dialogs";
@@ -163,13 +163,13 @@ ms.lasthandoff: 07/09/2018
     import { ClientEntities } from "PosApi/Entities";
     ```
 
-17. <span data-ttu-id="4b411-206">**MessageDialog** という名前のクラスを作成します。</span><span class="sxs-lookup"><span data-stu-id="4b411-206">Create a class that is named **MessageDialog**.</span></span>
+17. <span data-ttu-id="71414-206">**MessageDialog** という名前のクラスを作成します。</span><span class="sxs-lookup"><span data-stu-id="71414-206">Create a class that is named **MessageDialog**.</span></span>
 
     ```Typescript
     export default class MessageDialog {}
     ```
 
-18. <span data-ttu-id="4b411-207">**MessageDialog** クラスで、次の **show** メソッドを追加します。</span><span class="sxs-lookup"><span data-stu-id="4b411-207">In the **MessageDialog** class, add the following **show** method.</span></span>
+18. <span data-ttu-id="71414-207">**MessageDialog** クラスで、次の **show** メソッドを追加します。</span><span class="sxs-lookup"><span data-stu-id="71414-207">In the **MessageDialog** class, add the following **show** method.</span></span>
 
     ```Typescript
     public static show(context: IExtensionContext, message: string): Promise<void> {
@@ -207,8 +207,8 @@ ms.lasthandoff: 07/09/2018
     }
     ```
 
-19. <span data-ttu-id="4b411-208">ここで、選択した顧客に関する詳細を含むダイアログ ボックスを開くために、検索ビューにカスタムのアプリ バー ボタンを追加します。</span><span class="sxs-lookup"><span data-stu-id="4b411-208">You will now add a custom app bar button in the search view to open a dialog box that contains details about the selected customer.</span></span> <span data-ttu-id="4b411-209">**ViewExtensions** フォルダーで、**ViewCustomerSummaryCommand.ts** という Typescript ファイルを作成します。</span><span class="sxs-lookup"><span data-stu-id="4b411-209">In the **ViewExtensions** folder, create a Typescript file that is named **ViewCustomerSummaryCommand.ts**.</span></span>
-20. <span data-ttu-id="4b411-210">**ViewCustomerSummaryCommand.ts** ファイルで、次の **import** ステートメントを追加して関連するエンティティおよびコンテキストをインポートします。</span><span class="sxs-lookup"><span data-stu-id="4b411-210">In the **ViewCustomerSummaryCommand.ts** file, add the following **import** statements to import the relevant entities and context.</span></span>
+19. <span data-ttu-id="71414-208">ここで、選択した顧客に関する詳細を含むダイアログ ボックスを開くために、検索ビューにカスタムのアプリ バー ボタンを追加します。</span><span class="sxs-lookup"><span data-stu-id="71414-208">You will now add a custom app bar button in the search view to open a dialog box that contains details about the selected customer.</span></span> <span data-ttu-id="71414-209">**ViewExtensions** フォルダーで、**ViewCustomerSummaryCommand.ts** という Typescript ファイルを作成します。</span><span class="sxs-lookup"><span data-stu-id="71414-209">In the **ViewExtensions** folder, create a Typescript file that is named **ViewCustomerSummaryCommand.ts**.</span></span>
+20. <span data-ttu-id="71414-210">**ViewCustomerSummaryCommand.ts** ファイルで、次の **import** ステートメントを追加して関連するエンティティおよびコンテキストをインポートします。</span><span class="sxs-lookup"><span data-stu-id="71414-210">In the **ViewCustomerSummaryCommand.ts** file, add the following **import** statements to import the relevant entities and context.</span></span>
 
     ```Typescript
     import { ProxyEntities } from "PosApi/Entities";
@@ -218,19 +218,19 @@ ms.lasthandoff: 07/09/2018
     import MessageDialog from "../DialogSample/MessageDialog";
     ```
 
-21. <span data-ttu-id="4b411-211">**ViewCustomerSummaryCommand** という名前のクラスを作成し、**CustomerSearchExtensionCommandBase** からクラスを拡張します。</span><span class="sxs-lookup"><span data-stu-id="4b411-211">Create a class that is named **ViewCustomerSummaryCommand**, and extend it from **CustomerSearchExtensionCommandBase**.</span></span>
+21. <span data-ttu-id="71414-211">**ViewCustomerSummaryCommand** という名前のクラスを作成し、**CustomerSearchExtensionCommandBase** からクラスを拡張します。</span><span class="sxs-lookup"><span data-stu-id="71414-211">Create a class that is named **ViewCustomerSummaryCommand**, and extend it from **CustomerSearchExtensionCommandBase**.</span></span>
 
     ```Typescript
     export default class ViewCustomerSummaryCommand extends SearchView.CustomerSearchExtensionCommandBase {}
     ```
 
-22. <span data-ttu-id="4b411-212">**ViewCustomerSummaryCommand** クラスで、選択した顧客を検索するときに、結果をキャプチャするプライベート変数を宣言します。</span><span class="sxs-lookup"><span data-stu-id="4b411-212">In the **ViewCustomerSummaryCommand** class, declare a private variable to capture the results when searching for the selected customer.</span></span>
+22. <span data-ttu-id="71414-212">**ViewCustomerSummaryCommand** クラスで、選択した顧客を検索するときに、結果をキャプチャするプライベート変数を宣言します。</span><span class="sxs-lookup"><span data-stu-id="71414-212">In the **ViewCustomerSummaryCommand** class, declare a private variable to capture the results when searching for the selected customer.</span></span>
 
     ```Typescript
     private _customerSearchResults: ProxyEntities.GlobalCustomer[];
     ```
 
-23. <span data-ttu-id="4b411-213">クラス **コンストラクター** メソッドを追加して、検索ハンドラーを初期化してクリアします。</span><span class="sxs-lookup"><span data-stu-id="4b411-213">Add the class **constructor** method to initialize and clear the search handler.</span></span>
+23. <span data-ttu-id="71414-213">クラス **コンストラクター** メソッドを追加して、検索ハンドラーを初期化してクリアします。</span><span class="sxs-lookup"><span data-stu-id="71414-213">Add the class **constructor** method to initialize and clear the search handler.</span></span>
 
     ```Typescript
     constructor(context: IExtensionCommandContext<SearchView.ICustomerSearchToExtensionCommandMessageTypeMap>) {
@@ -250,7 +250,7 @@ ms.lasthandoff: 07/09/2018
     }
     ```
 
-24. <span data-ttu-id="4b411-214">**init** メソッドを追加して、**表示**プロパティを初期化します。</span><span class="sxs-lookup"><span data-stu-id="4b411-214">Add the **init** method to initialize the **visible** property.</span></span>
+24. <span data-ttu-id="71414-214">**init** メソッドを追加して、**表示**プロパティを初期化します。</span><span class="sxs-lookup"><span data-stu-id="71414-214">Add the **init** method to initialize the **visible** property.</span></span>
 
     ```Typescript
     protected init(state: SearchView.ICustomerSearchExtensionCommandState): void {
@@ -258,7 +258,7 @@ ms.lasthandoff: 07/09/2018
     }
     ```
 
-25. <span data-ttu-id="4b411-215">アプリ ボタン クリック ハンドラーを処理する**実行**メソッドを追加します。</span><span class="sxs-lookup"><span data-stu-id="4b411-215">Add the **execute** method to handle the app button click handler.</span></span> <span data-ttu-id="4b411-216">**execute** メソッドは、ハンドラーから選択した顧客のデータを読み取り、単純なダイアログ ボックスに表示します。</span><span class="sxs-lookup"><span data-stu-id="4b411-216">The **execute** method reads the data for the selected customer from the handler and shows it in a simple dialog box.</span></span>
+25. <span data-ttu-id="71414-215">アプリ ボタン クリック ハンドラーを処理する**実行**メソッドを追加します。</span><span class="sxs-lookup"><span data-stu-id="71414-215">Add the **execute** method to handle the app button click handler.</span></span> <span data-ttu-id="71414-216">**execute** メソッドは、ハンドラーから選択した顧客のデータを読み取り、単純なダイアログ ボックスに表示します。</span><span class="sxs-lookup"><span data-stu-id="71414-216">The **execute** method reads the data for the selected customer from the handler and shows it in a simple dialog box.</span></span>
 
     ```Typescript
     protected execute(): void {
@@ -273,7 +273,7 @@ ms.lasthandoff: 07/09/2018
     }
     ```
 
-    <span data-ttu-id="4b411-217">コード サンプルの全体は次のようになります。</span><span class="sxs-lookup"><span data-stu-id="4b411-217">The whole code sample should look like this.</span></span>
+    <span data-ttu-id="71414-217">コード サンプルの全体は次のようになります。</span><span class="sxs-lookup"><span data-stu-id="71414-217">The whole code sample should look like this.</span></span>
 
     ```Typescript
     import { ProxyEntities } from "PosApi/Entities";
@@ -331,8 +331,8 @@ ms.lasthandoff: 07/09/2018
     }
     ```
 
-26. <span data-ttu-id="4b411-218">**SearchExtension** フォルダーで、**manifest.json** という JSON ファイルを作成します。</span><span class="sxs-lookup"><span data-stu-id="4b411-218">In the **SearchExtension** folder, create a JSON file that is named **manifest.json**.</span></span>
-27. <span data-ttu-id="4b411-219">**manifest.json** ファイルに次のコードを追加します。</span><span class="sxs-lookup"><span data-stu-id="4b411-219">In the **manifest.json** file, add the following code.</span></span>
+26. <span data-ttu-id="71414-218">**SearchExtension** フォルダーで、**manifest.json** という JSON ファイルを作成します。</span><span class="sxs-lookup"><span data-stu-id="71414-218">In the **SearchExtension** folder, create a JSON file that is named **manifest.json**.</span></span>
+27. <span data-ttu-id="71414-219">**manifest.json** ファイルに次のコードを追加します。</span><span class="sxs-lookup"><span data-stu-id="71414-219">In the **manifest.json** file, add the following code.</span></span>
 
     ```Typescript
     {
@@ -361,7 +361,7 @@ ms.lasthandoff: 07/09/2018
     }
     ```
 
-28. <span data-ttu-id="4b411-220">**POS.Extensions** プロジェクトで **extensions.json** ファイルを開き、**SearchExtension** サンプルで更新して、POS が実行時にこの拡張機能に含まれるようにします。</span><span class="sxs-lookup"><span data-stu-id="4b411-220">In the **POS.Extensions** project, open the **extensions.json** file, and update it with **SearchExtension** samples, so that the POS includes this extension at runtime.</span></span>
+28. <span data-ttu-id="71414-220">**POS.Extensions** プロジェクトで **extensions.json** ファイルを開き、**SearchExtension** サンプルで更新して、POS が実行時にこの拡張機能に含まれるようにします。</span><span class="sxs-lookup"><span data-stu-id="71414-220">In the **POS.Extensions** project, open the **extensions.json** file, and update it with **SearchExtension** samples, so that the POS includes this extension at runtime.</span></span>
 
     ```Typescript
     {
@@ -376,7 +376,7 @@ ms.lasthandoff: 07/09/2018
     }
     ```
 
-29. <span data-ttu-id="4b411-221">**tsconfig.json** ファイルで、除外リストに拡張パッケージ フォルダーをコメントアウトします。</span><span class="sxs-lookup"><span data-stu-id="4b411-221">In the **tsconfig.json** file, comment out the extension package folders in the exclude list.</span></span> <span data-ttu-id="4b411-222">POS は、このファイルを使用して、拡張機能を追加または除外します。</span><span class="sxs-lookup"><span data-stu-id="4b411-222">The POS uses this file to include or exclude the extension.</span></span> <span data-ttu-id="4b411-223">既定では、リストに除外された拡張リスト全体が含まれています。</span><span class="sxs-lookup"><span data-stu-id="4b411-223">By default, the list contains the whole excluded extensions list.</span></span> <span data-ttu-id="4b411-224">拡張機能を POS の一部として含めるには、次に示すように、拡張フォルダーの名前を追加し、除外リストの拡張子をコメントアウトします。</span><span class="sxs-lookup"><span data-stu-id="4b411-224">To include an extension as part of the POS, add the name of the extension folder, and comment out the extension in the exclude list, as shown here.</span></span>
+29. <span data-ttu-id="71414-221">**tsconfig.json** ファイルで、除外リストに拡張パッケージ フォルダーをコメントアウトします。</span><span class="sxs-lookup"><span data-stu-id="71414-221">In the **tsconfig.json** file, comment out the extension package folders in the exclude list.</span></span> <span data-ttu-id="71414-222">POS は、このファイルを使用して、拡張機能を追加または除外します。</span><span class="sxs-lookup"><span data-stu-id="71414-222">The POS uses this file to include or exclude the extension.</span></span> <span data-ttu-id="71414-223">既定では、リストに除外された拡張リスト全体が含まれています。</span><span class="sxs-lookup"><span data-stu-id="71414-223">By default, the list contains the whole excluded extensions list.</span></span> <span data-ttu-id="71414-224">拡張機能を POS の一部として含めるには、次に示すように、拡張フォルダーの名前を追加し、除外リストの拡張子をコメントアウトします。</span><span class="sxs-lookup"><span data-stu-id="71414-224">To include an extension as part of the POS, add the name of the extension folder, and comment out the extension in the exclude list, as shown here.</span></span>
 
     ```Typescript
     "exclude": [
@@ -386,16 +386,16 @@ ms.lasthandoff: 07/09/2018
     ],
     ```
 
-30. <span data-ttu-id="4b411-225">プロジェクトをコンパイル、およびリビルドします。</span><span class="sxs-lookup"><span data-stu-id="4b411-225">Compile and rebuild the project.</span></span>
+30. <span data-ttu-id="71414-225">プロジェクトをコンパイル、およびリビルドします。</span><span class="sxs-lookup"><span data-stu-id="71414-225">Compile and rebuild the project.</span></span>
 
-## <a name="validate-the-customization"></a><span data-ttu-id="4b411-226">カスタマイズの検証</span><span class="sxs-lookup"><span data-stu-id="4b411-226">Validate the customization</span></span>
+## <a name="validate-the-customization"></a><span data-ttu-id="71414-226">カスタマイズの検証</span><span class="sxs-lookup"><span data-stu-id="71414-226">Validate the customization</span></span>
 
-<span data-ttu-id="4b411-227">カスタマイズを検証するには、これらの手順に従います。</span><span class="sxs-lookup"><span data-stu-id="4b411-227">Follow these steps to validate the customization.</span></span>
+<span data-ttu-id="71414-227">カスタマイズを検証するには、これらの手順に従います。</span><span class="sxs-lookup"><span data-stu-id="71414-227">Follow these steps to validate the customization.</span></span>
 
-1. <span data-ttu-id="4b411-228">オペレーター ID に **000160**、パスワードに **123** を使用して Retail Modern POS にサインインします。</span><span class="sxs-lookup"><span data-stu-id="4b411-228">Sign in to Retail Modern POS by using **000160** as the operator ID and **123** as the password.</span></span>
-2. <span data-ttu-id="4b411-229">上部の検索バーを使って顧客 **2001** を検索します。</span><span class="sxs-lookup"><span data-stu-id="4b411-229">Search for customer **2001** by using the search bar on the top.</span></span>
+1. <span data-ttu-id="71414-228">オペレーター ID に **000160**、パスワードに **123** を使用して Retail Modern POS にサインインします。</span><span class="sxs-lookup"><span data-stu-id="71414-228">Sign in to Retail Modern POS by using **000160** as the operator ID and **123** as the password.</span></span>
+2. <span data-ttu-id="71414-229">上部の検索バーを使って顧客 **2001** を検索します。</span><span class="sxs-lookup"><span data-stu-id="71414-229">Search for customer **2001** by using the search bar on the top.</span></span>
 
-    <span data-ttu-id="4b411-230">追加したカスタム列が表示されました。</span><span class="sxs-lookup"><span data-stu-id="4b411-230">You should see the custom columns that you added.</span></span>
+    <span data-ttu-id="71414-230">追加したカスタム列が表示されました。</span><span class="sxs-lookup"><span data-stu-id="71414-230">You should see the custom columns that you added.</span></span>
 
-3. <span data-ttu-id="4b411-231">顧客を選択し、新しいアプリケーション バーのボタンを選択します。</span><span class="sxs-lookup"><span data-stu-id="4b411-231">Select a customer, and then select the new app bar button.</span></span> <span data-ttu-id="4b411-232">選択した顧客に関する詳細を含むダイアログ ボックスが表示されます。</span><span class="sxs-lookup"><span data-stu-id="4b411-232">A dialog box should appear that contains details about the selected customer.</span></span>
+3. <span data-ttu-id="71414-231">顧客を選択し、新しいアプリケーション バーのボタンを選択します。</span><span class="sxs-lookup"><span data-stu-id="71414-231">Select a customer, and then select the new app bar button.</span></span> <span data-ttu-id="71414-232">選択した顧客に関する詳細を含むダイアログ ボックスが表示されます。</span><span class="sxs-lookup"><span data-stu-id="71414-232">A dialog box should appear that contains details about the selected customer.</span></span>
 
