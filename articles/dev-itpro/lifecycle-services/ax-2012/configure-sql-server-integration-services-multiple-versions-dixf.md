@@ -1,5 +1,5 @@
 ---
-title: "AX 2012 のデータのインポート/エクスポート フレームワークで使用される SSIS のバージョンをコンフィギュレーションする"
+title: "データのインポート/エクスポート フレームワーク を使用する Integration Services のバージョンを指定します。"
 description: "このトピックでは、Dynamics AX 2012 のデータ インポート/エクスポート フレームワークで使用されている SSIS を構成する方法について説明します。"
 author: kfend
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: kfend
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 6d0854ac64a09e5837c0d350da14f47e290491df
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 6bfc1d01022024ae16924947a6d605696a524e0f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="configure-the-version-of-ssis-used-by-the-ax-2012-data-importexport-framework"></a>AX 2012 のデータのインポート/エクスポート フレームワークで使用される SSIS のバージョンをコンフィギュレーションする
+# <a name="specify-the-version-of-integration-services-that-the-data-importexport-framework-uses"></a>データのインポート/エクスポート フレームワーク を使用する Integration Services のバージョンを指定します。
 
 [!include [banner](../../includes/banner.md)]
 

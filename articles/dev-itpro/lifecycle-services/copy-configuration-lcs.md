@@ -1,5 +1,5 @@
 ---
-title: "コンフィギュレーションのコピー"
+title: "構成マネージャーを使用して構成をコピーする"
 description: "Microsoft Dynamics Lifecycle Services の構成マネージャー (ベータ) 機能を使用すると、Microsoft Dynamics AX 2012 R3 の 1 つのインスタンスから他のインスタンスに構成をコピーすることができます。"
 author: kfend
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: kfend
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 443ade299c644668058e0f1e7857f745181d4b49
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 0bb5510a49eee25d26cc2f44d1a6d3ea04c50aa4
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="copy-a-configuration"></a>コンフィギュレーションのコピー
+# <a name="copy-configurations-by-using-configuration-manager"></a>構成マネージャーを使用して構成をコピーする
 
 [!include [banner](../includes/banner.md)]
 

@@ -18,14 +18,14 @@ ms.author: kfend
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 9cb7a48a0632d50c2160d398788ccccda3da92f9
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: d34603e22aabeb7c5925a286aab7e402c42cb0bd
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="test-data-transfer-tool-beta-ax-2012"></a>テスト データ転送ツール (ベータ) (AX 2012)
+# <a name="test-data-transfer-tool-beta"></a>テスト データ転送ツール (ベータ)
 
 [!include [banner](../../includes/banner.md)]
 

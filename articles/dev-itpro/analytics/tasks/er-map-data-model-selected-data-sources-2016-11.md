@@ -1,5 +1,5 @@
 --- 
-title: "電子申告 (ER) の選択したデータ ソースにデータ モデルをマップする"
+title: "電子申告 (ER) データ モデルの選択されたデータ ソースへのマップ"
 description: "次のステップでは、「システム管理者」または「電子申告開発者」ロールのユーザーが、選択した Dynamics 365 for Finance and Operations、Enterprise Edition (2016 年 11 月) データ ソースに電子申告 (ER) データ モデルをマップする方法を説明します。"
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 13b7fe7f7bfe24bd275428e931993aa46ecb9945
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: f347c19d940330c830509be4d11127f9e3324deb
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="map-a-data-model-to-selected-data-sources-for-electronic-reporting-er"></a>電子申告 (ER) の選択したデータ ソースにデータ モデルをマップする
+# <a name="map-electronic-reporting-er-data-models-to-selected-data-sources"></a>電子申告 (ER) データ モデルの選択されたデータ ソースへのマップ
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

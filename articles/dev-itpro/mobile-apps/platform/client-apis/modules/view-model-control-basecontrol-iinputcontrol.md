@@ -1,5 +1,5 @@
 ---
-title: "入力"
+title: "入力モジュール"
 description: "入力コントロールは、たとえば新しいコントロールに対するユーザー入力を収集するために通常はタスク ページで使用されます。"
 author: shadykdc
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.author: kashea
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 2743e5603f55c89a0884e46b02ab7292feab338b
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 9ff053a652f68c3e979e908a92eba3e7ed057051
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="input"></a>入力 
+# <a name="input-module"></a>入力モジュール
 
 [!include [banner](../../../../includes/banner.md)]
 

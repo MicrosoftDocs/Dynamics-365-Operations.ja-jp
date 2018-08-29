@@ -1,5 +1,5 @@
 ---
-title: "Dynamics 365 for Finance and Operations (オンプレミス) の購入"
+title: "Finance and Operations (オンプレミス) の購入"
 description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations (オンプレミス) を購入して展開する方法について説明します。"
 author: maertenm
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.author: maertenm
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: dd8023ea59b1382d1130249c016757f34b23c995
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: ec1c6028f8d3d16bc5e95fc9b6be34cdf38a5d89
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="buy-dynamics-365-for-finance-and-operations-on-premises"></a>Dynamics 365 for Finance and Operations (オンプレミス) の購入
+# <a name="buy-finance-and-operations-on-premises"></a>Finance and Operations (オンプレミス) の購入
 
 [!include [banner](../includes/banner.md)]
 

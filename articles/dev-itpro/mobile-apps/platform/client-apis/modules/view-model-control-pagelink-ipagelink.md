@@ -1,5 +1,5 @@
 ---
-title: "ページリンク"
+title: "ページリンク モジュール"
 description: "ページリンクは、別のページに移動するコントロールです。"
 author: shadykdc
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.author: kashea
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 43fbafcaa6bd1411534894499acdab1012cb844b
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: b1a6b8ec4710121a29b0591ac36d56b978dc393d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="pagelink"></a>ページリンク 
+# <a name="pagelink-module"></a>ページリンク モジュール
 
 [!include [banner](../../../../includes/banner.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: FileUploaderDesign
+title: "FileUploaderDesign タイプ"
 description: "ファイル アップローダー デザイン オブジェクトのタイプ。"
 author: shadykdc
 manager: AnnBe
@@ -16,10 +16,10 @@ ms.author: kashea
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: d7640a0d892cc353ec5de51be03a350762a805d8
+ms.sourcegitcommit: ed6cabcc8c76fba3d4414cd4b564b720c54169e0
+ms.openlocfilehash: 012a38b44754dabcdd0c3453120a7009f5c48b2d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 

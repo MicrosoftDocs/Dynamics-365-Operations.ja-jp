@@ -1,5 +1,5 @@
 ---
-title: FieldMetadata
+title: "FieldMetadata タイプ"
 description: "フィールド メタデータのインターフェイス。"
 author: shadykdc
 manager: AnnBe
@@ -16,10 +16,10 @@ ms.author: kashea
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 8e588dec9d40ab03b1f5cf8e2dacd429ea94f245
+ms.sourcegitcommit: ed6cabcc8c76fba3d4414cd4b564b720c54169e0
+ms.openlocfilehash: 87a2ebbc83a79ef0e778436caefb606d02969f28
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 

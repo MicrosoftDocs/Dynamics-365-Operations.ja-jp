@@ -18,14 +18,14 @@ ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 75f4aff14ab883f294f214ecd8c53b5c7cb1f291
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: ccbe900afef83e834ff412bfa0b8d4cb131bb48e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="export-and-import-a-model"></a>モデルのエクスポートとインポート
+# <a name="export-and-import-models"></a>モデルのエクスポートとインポート
 
 [!include [banner](../includes/banner.md)]
 

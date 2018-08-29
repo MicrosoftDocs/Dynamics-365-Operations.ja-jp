@@ -1,5 +1,5 @@
 ---
-title: Dynamics 365 for Retail System Architecture
+title: "Retail コンポーネント"
 description: "このトピックでは、Microsoft Dynamics 365 for Retail を構成するさまざまなコンポーネントについて説明します。"
 author: sericks007
 manager: AnnBe
@@ -20,14 +20,14 @@ ms.author: yabinl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 47311e60aabafe49463ef23c37bf44d3726f6deb
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: ef10f6272aaa97f5f10aa5234938d3f0b5bdd702
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="components-of-dynamics-365-for-retail"></a>Dynamics 365 for Retail のコンポーネント
+# <a name="retail-components"></a>Retail コンポーネント
 
 [!include [banner](includes/banner.md)]
 

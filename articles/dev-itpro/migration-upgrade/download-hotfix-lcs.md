@@ -1,5 +1,5 @@
 ---
-title: "Lifecycle Services から更新プログラムをダウンロード"
+title: "Lifecycle Services (LCS) から更新プログラムをダウンロード"
 description: "このチュートリアルを使用して、Lifecycle Services (LCS) から Microsoft Dynamics 365 for Finance and Operations の 修正プログラムをダウンロードします。"
 author: AngelMarshall
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: amarshall
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 96db4939034d9791ecc844855d14ef89205717cf
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 0c0ec9dd9f45eb6c534215105113f03b15797db2
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="download-updates-from-lifecycle-services"></a>Lifecycle Services から更新プログラムをダウンロード
+# <a name="download-updates-from-lifecycle-services-lcs"></a>Lifecycle Services (LCS) から更新プログラムをダウンロード
 
 [!include [banner](../includes/banner.md)]
 

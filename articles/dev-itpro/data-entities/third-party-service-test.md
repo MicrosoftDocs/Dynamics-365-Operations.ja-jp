@@ -1,5 +1,5 @@
 ---
-title: "Finance and Operations でサードパーティのサービス テスト ユーティリティを使用する"
+title: "サード パーティ ユーティリティを使用したテスト サービス"
 description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations のサービスをテストするサードパーティのユーティリティをセットアップする方法について説明します。"
 author: Sunil-Garg
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 9cb61c03bb3ae5d384b2a6f6cde60aab3f6c592e
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: f3588af514dd2a3a77d03ec4899324df30c88cd8
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="use-third-party-service-testing-utilities-with-microsoft-dynamics-365-for-finance-and-operations"></a>Microsoft Dynamics 365 for Finance and Operations でサードパーティのサービス テスト ユーティリティを使用する
+# <a name="test-services-by-using-third-party-utilities"></a>サード パーティ ユーティリティを使用したテスト サービス
 
 [!include [banner](../includes/banner.md)]
 
@@ -71,7 +71,7 @@ Postman (<https://www.getpostman.com/postman>) は、アプリケーション �
 
     ![Azure AD トークンを取得](./media/postman6.png)
 
-9. **本文**タブで、前に作成した環境変数を参照する要求パラメーターとして、本文要素を追加します。 **一括編集** を選択して、上記の表のキーを入力し、コロン (:) を入力してからキーの名前を再入力しますが、二重中かっこ ({{}}) で囲みます。 行ごとに 1 つの要求パラメーターを入力します。 たとえば、**交付\_タイプ:{{交付\_タイプ}}** を入力します。 次に例を示します。
+9. **本文**タブで、前に作成した環境変数を参照する要求パラメーターとして、本文要素を追加します。 **一括編集**を選択し、前の表のキーを入力し、コロン (:) を入力してキー名をもう一度入力しますが、二重中かっこで囲みます ({{}})。 行ごとに 1 つの要求パラメーターを入力します。 たとえば、**交付\_タイプ:{{交付\_タイプ}}** を入力します。 次に例を示します。
 
     ![本文要素](./media/postman8.png)
 

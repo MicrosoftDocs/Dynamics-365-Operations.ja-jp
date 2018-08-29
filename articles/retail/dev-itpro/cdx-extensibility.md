@@ -1,5 +1,5 @@
 ---
-title: "CDX の拡張性"
+title: "拡張機能によるカスタム Commerce Data Exchange の同期の有効化"
 description: "このトピックでは、Retail 初期化クラスを拡張して、カスタムの Commerce Data Exchange (CDX) 同期をサポートする方法について説明します。"
 author: mugunthanm
 manager: AnnBe
@@ -17,13 +17,13 @@ ms.author: mumani
 ms.search.validFrom: 2017-09-15
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 3e22e2d902f9fd2844d3be359f9069239de95e81
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 1ff70019f4b0a086ce4c844621bcc7fec391387c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="cdx-extensibility"></a>CDX の拡張性
+# <a name="enable-custom-commerce-data-exchange-synchronization-via-extension"></a>拡張機能によるカスタム Commerce Data Exchange の同期の有効化
 
 [!include [banner](../../includes/banner.md)]
 

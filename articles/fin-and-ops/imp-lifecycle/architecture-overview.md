@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Dynamics 365 for Finance and Operations アーキテクチャ"
+title: "Finance and Operations のアーキテクチャ"
 description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations のアーキテクチャの概要を示します。"
 author: ClaudiaBetz-Haubold
 manager: AnnBe
@@ -18,18 +18,18 @@ ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d3fc1e8ea856b6c7c6daffd8f46f2e5e4fb12710
-ms.openlocfilehash: 98dc67b2190bed3c9920ff2bec490f28ce236e88
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: 880701ca7aacadd8895453fbd0362e9cc1b0f34d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/04/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="microsoft-dynamics-365-for-finance-and-operations-architecture"></a>Microsoft Dynamics 365 for Finance and Operations アーキテクチャ
+# <a name="finance-and-operations-architecture"></a>Finance and Operations のアーキテクチャ
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Finance and Operations のクラウド アーキテクチャには、ソフトウェアの展開とプロビジョニング、運用の監視とレポート、およびシームレスなアプリケーション ライフサイクル管理を自動化するサービスが含まれます。
+Microsoft Dynamics 365 for Finance and Operations クラウド アーキテクチャには、すべての Microsoft クラウド提供に共通する全ての要素が含まれています。以下に記載されているとおりです。[定期売買、ライセンス、アカウントおよび Microsoft のクラウド提供のテナント](https://docs.microsoft.com/en-us/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings)。 さらに、ソフトウェアの展開とプロビジョニング、運用の監視とレポート、およびシームレスなアプリケーション ライフサイクル管理を自動化するサービスが含まれます。 
 
 ![クラウド アーキテクチャ](./media/cloud-architecture.png)
 

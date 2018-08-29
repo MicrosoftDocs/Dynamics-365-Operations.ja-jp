@@ -1,5 +1,5 @@
 ---
-title: "拡張機能を使用してモデル要素をカスタマイズする"
+title: "拡張機能によってモデル要素をカスタマイズする"
 description: "このチュートリアルでは、フリート管理拡張モデルを詳しく見ていきます。 Dynamics AX の拡張機能を示すために、このモデルにはフリート管理アプリケーションの機能を拡張する要素が含まれています。"
 author: robadawy
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: ab7605bd4654115ae5f80f4266029b7cf8d99961
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 739033a750925d948039e3ed52eee33336d2e56e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="customize-model-elements-using-extensions"></a>拡張機能を使用してモデル要素をカスタマイズする
+# <a name="customize-model-elements-through-extension"></a>拡張機能によってモデル要素をカスタマイズする
 
 [!include [banner](../includes/banner.md)]
 

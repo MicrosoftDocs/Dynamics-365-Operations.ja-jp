@@ -1,5 +1,5 @@
 ---
-title: "申請"
+title: "アプリケーション モジュール"
 description: "アプリケーションとはその内部で使用される概念とデータの周りにサンドボックス化されたランタイム実行の単位です。 各アプリケーションは、ページ、アクション、データクエリおよびそれらを結合するロジックで構成されています。 アプリケーションは主に宣言型メタデータ システムで記述され、付随的な拡張モデルを持つことができます。 &lt;br&gt;"
 author: shadykdc
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.author: kashea
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: f152739121edf905c8f0f9c871d92084cd350e12
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 237fb0d30050aaa74da798e62918b72313d9aef3
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="application"></a>申請 
+# <a name="application-module"></a>アプリケーション モジュール
 
 [!include [banner](../../../../includes/banner.md)]
 

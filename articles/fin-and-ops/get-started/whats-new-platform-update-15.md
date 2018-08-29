@@ -3,7 +3,7 @@ title: "Dynamics 365 for Finance and Operations プラットフォーム更新�
 description: "このトピックでは、Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 15 の新機能または変更された機能について説明します。 このバージョンは 2018 年 3 月にリリースされました。"
 author: tonyafehr
 manager: AnnBe
-ms.date: 06/8/18
+ms.date: 06/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,17 +18,17 @@ ms.author: tfehr
 ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Platform update 13, Platform update 14, Platform update 15
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: d94d4b1d0199d3cba6bdefc79796a1926743a747
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 21eb5d6038f747e82420e724df07b8cbf242a5d6
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-platform-update-15-march-2018"></a>Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 15 (2018 年 3 月) の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 15 の新機能または変更された機能について説明します。 
+このトピックでは、Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 15 の新機能または変更された機能について説明します。 このバージョンは 2018 年 3 月にリリースされ、ビルド番号は 7.0.4841 です。
 
 > [!NOTE]
 > このプラットフォームのリリースは累積されます。 プラットフォーム更新 13、プラットフォーム更新 14、プラットフォーム更新 15 からの新しい機能および変更された機能、およびそれ以前のすべての更新プログラムが含まれています。 
@@ -55,6 +55,9 @@ Dynamics 365 for Finance and Operations の重大なイベントの通知シス�
 
 警告の詳細については、[警告の概要](alerts-overview.md) を参照してください。
 
+## <a name="data-entity-behavior-with-configuration-keys"></a>コンフィギュレーション キーを持つデータ エンティティの動作
+データ管理では、データ エンティティ、テーブル、およびフィールドで設定されている構成キーに従います。 これらのコンポーネントの階層構造のため、データ管理では、それ自体およびその親コンフィグレーション キーが使用可能になっている場合、階層内の子を使用することができます。 親コンフィギュレーション キーが無効の場合、どの子もインポートおよびエクスポートに使用できなくなります。 この動作の詳細については、[データ エンティティおよびコンフィギュレーション キー](../../dev-itpro/data-entities/config-key-entities.md)を参照してください。
+
 ## <a name="embed-powerapps"></a>PowerApps の埋め込み
 開発者や非テクニカル ユーザーがコードを記述することなくカスタム ビジネス アプリを構築できるサービスである Microsoft PowerApps はサポートされています。 埋め込み PowerApp はページに追加できるだけでなく、編集、削除、または共有することができます。 また、Finance and Operations からのデータを活用する PowerApp を構築することができます。 詳細については、「[PowerApps の埋め込み](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/embed-power-apps)」を参照してください。 
 
@@ -75,16 +78,6 @@ Dynamics 365 for Talent では、「はじめに」 Workbooks が提供され、
 この拡張機能では、ある環境から Excel にデータを読み込み、環境アドレスを変更してから、そのデータを新しい環境に公開することにより、データをある環境から別の環境に移動することができます。
 
 詳細については、「[環境データのコピー](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/office-integration/use-excel-add-in#copy-environment-data)」を参照してください。
-
-## <a name="one-voucher-deprecation"></a>1 つの伝票の廃止
-財務仕訳帳 (一般仕訳帳、固定資産仕訳帳、仕入先支払仕訳帳など) の既存の機能を使用して、1 つの伝票のコンテキストで複数の補助元帳トランザクションを入力できます。 この機能を「1 つの伝票」と呼びます。 1 つの伝票機能により、決済、税計算、補助元帳の一般会計への調整、財務報告などの間に問題が発生します。 これらの問題のため、1 つの伝票機能は廃止されます。 ただし、この機能に依存する機能的なギャップがあるため、機能が一度に無効になることはありません。 代わりに、次のスケジュールを使用します。
--   **18 年春リリース** – 機能は、一般会計パラメーターによって既定で、オフになります。 ただし、組織が単一伝票文書に記載されているビジネス シナリオ ギャップの範囲内にシナリオがある場合、機能をオンにできます。
-    -  顧客が 1 つの伝票を必要としないビジネス シナリオがある場合、機能をオンにしないでください。 この機能が使用される場合、単一伝票文書に記載されている領域の「不具合」は修正されません。
-    - 機能のギャップのいずれかに機能が必要でない限り、Microsoft Dynamics 365 Finance and Operations への統合に 1 つの伝票を使用しないでください。
--   **18 年秋およびそれ以降のリリース** – 機能的なギャップが埋まります。 機能的なギャップが埋められた後、1 つの伝票の機能が完全にオフになります。
-
-この機能の使用と廃止に関する詳細については、[1 つの伝票ドキュメント](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/general-ledger/one-voucher)を参照してください。
-
 
 ## <a name="power-users-can-add-custom-fields-to-forms-without-developer-customization"></a>Power User は、開発者カスタマイズなしのフォームにカスタム フィールドを追加することができます。 
 多くのアプリケーションのカスタマイズには、既存のテーブルへの 1 つまたは複数のフィールドの追加、およびそれらをアプリケーション フォームに含めることがあります。 ほとんどのカスタマイズは、フィールドを追加で構成される場合があります。

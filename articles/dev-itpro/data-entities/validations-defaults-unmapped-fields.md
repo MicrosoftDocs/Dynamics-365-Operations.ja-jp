@@ -18,14 +18,14 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 9f7d280cd2fc1ba9f4b161e1e508f3cfd459f88a
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 0d38906a782564016f4aba1037b0832583da4fb6
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="validations-defaults-and-unmapped-fields"></a>検証、既定値、およびマップされていないフィールド
+# <a name="validations-default-values-and-unmapped-fields"></a>検証、既定値、およびマップされていないフィールド
 
 [!include [banner](../includes/banner.md)]
 

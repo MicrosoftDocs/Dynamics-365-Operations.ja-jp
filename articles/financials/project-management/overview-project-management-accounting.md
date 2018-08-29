@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: ProjTable; ProjProjectManagementWorkspace
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 87983
 ms.assetid: b454ad57-2fd6-46c9-a77e-646de4153067
@@ -19,10 +19,10 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: b8f2f3a33dc19c2ebc941d1a504eae0c276f3cdf
-ms.openlocfilehash: 46c8ecf8a6988c32d0202c631bef6901f467bb89
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: e927e45511c5e6c232457a76b2d1fab160fe0f5a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/25/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
@@ -339,7 +339,8 @@ Finance と Operations は、予測された見積を自動的には引き下げ
 
 すべての販売および仕入先請求書の入力が完了したら、**キャッシュ フロー** ページのフィールドと **プロジェクト明細書** ページのフィールド間の関係を表示できます。
 
-:::row::: :::column:::
+:::row:::
+    :::column:::
         #### Cash flow page
         - Cash inflows 
         - Cash outflows

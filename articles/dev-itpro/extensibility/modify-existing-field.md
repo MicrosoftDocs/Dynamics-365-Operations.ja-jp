@@ -1,5 +1,5 @@
 ---
-title: "テーブルの既存のフィールドの変更"
+title: "拡張機能を使用したテーブル内の既存のフィールドの変更"
 description: "このトピックでは、テーブル内の既存のフィールドを変更する方法について説明します。"
 author: ivanv-microsoft
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: ivanv
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 73d4b465c15adb768c14e37d0023c99d1841ce8d
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 01ebde57a65b59e84e7d1802ec93528a6e742104
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="modify-an-existing-field-in-a-table"></a>テーブルの既存のフィールドの変更
+# <a name="modify-existing-fields-in-a-table-through-extension"></a>拡張機能を使用したテーブル内の既存のフィールドの変更
 
 [!include [banner](../includes/banner.md)]
 

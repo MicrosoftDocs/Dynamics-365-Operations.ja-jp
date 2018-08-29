@@ -1,5 +1,5 @@
 ---
-title: "破棄された AxErd"
+title: "AxErd ページは破棄されました"
 description: "AxErd ページを破棄する必要があります。 プロジェクトのソース コード、および GitHub リポジトリの Web ページに対する HTML ファイルの両方を転記することができました。"
 author: margoc
 manager: AnnBe
@@ -18,22 +18,22 @@ ms.author: margoc
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: AX 2012
 ms.translationtype: HT
-ms.sourcegitcommit: aa67ac4f29703fff516d648f9c74dbf785d0637a
-ms.openlocfilehash: a1049dbaca80161a6b6638eb74c253fb75e9c391
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: 5250a75655b23f1bc92b332a48dfec094af049cf
 ms.contentlocale: ja-jp
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="axerd-retired"></a>破棄された AxErd
+# <a name="axerd-page-has-been-retired"></a>AxErd ページは破棄されました
 
-残念ながら、多数の Microsoft Dynamics AX 2012 テーブルに対してエンティティ リレーションシップ図 (ERD) を提供した、AxErd Web ページを破棄しなくてはいけませんでした。 プロジェクトのソース コード、および GitHub リポジトリの Web ページに対する HTML ファイルの両方を転記することができました: https://github.com/Microsoft/ax-2012-doc-tools
+残念ながら、多数の Microsoft Dynamics AX 2012 テーブルに対してエンティティ リレーションシップ図 (ERD) を提供した、AxErd Web ページを破棄しなくてはいけませんでした。 プロジェクトのソース コードおよび GitHub リポジトリの Web ページに対する HTML ファイルの両方を転記することができました: https://github.com/Microsoft/ax-2012-doc-tools
 
-HTML ページはリポジトリの [https://github.com/Microsoft/ax-2012-doc-tools/tree/master/AxErd/AxErd/_RelatedFiles_AxErd/Deploy/Default.htm](https://github.com/Microsoft/ax-2012-doc-tools/tree/master/AxErd/AxErd/_RelatedFiles_AxErd/Deploy/Default.htm)にあります
+HTML ページはリポジトリの [https://github.com/Microsoft/ax-2012-doc-tools/tree/master/AxErd/AxErd/_RelatedFiles_AxErd/Deploy/Default.htm](https://github.com/Microsoft/ax-2012-doc-tools/tree/master/AxErd/AxErd/_RelatedFiles_AxErd/Deploy/Default.htm) にあります。
 
 独自の ERD を作成する方法についての説明は以下にあります: [https://github.com/Microsoft/ax-2012-doc-tools/blob/master/AxErd/AxErd/_RelatedFiles_AxErd/Deploy/Help-HowToUse-AxErd.htm](https://github.com/Microsoft/ax-2012-doc-tools/blob/master/AxErd/AxErd/_RelatedFiles_AxErd/Deploy/Help-HowToUse-AxErd.htm)
 
-ソリューションは AxErd フォルダー [https://github.com/Microsoft/ax-2012-doc-tools/tree/master/AxErd](https://github.com/Microsoft/ax-2012-doc-tools/tree/master/AxErd)のルートにあります。 
+ソリューションは AxErd フォルダー [https://github.com/Microsoft/ax-2012-doc-tools/tree/master/AxErd](https://github.com/Microsoft/ax-2012-doc-tools/tree/master/AxErd) のルートにあります。 
 
 
 

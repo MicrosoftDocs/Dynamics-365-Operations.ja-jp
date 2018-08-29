@@ -1,5 +1,5 @@
 ---
-title: "Attract の概要"
+title: "Attract の機能および性能"
 description: "Attract は、新たな人材を採用するプロセスを管理する機能を提供します。 候補者を欠員がある職務に追加し、オファーが延長されるか申請が却下されるまで、ステージからステージへと進めることができます。"
 author: rschloma
 manager: AnnBe
@@ -18,13 +18,13 @@ ms.author: rschloma
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: b64a97897a1ea75eb2a9681bc9357433a570dd74
+ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
+ms.openlocfilehash: 37dd0396787375fccd4082f392e079ed5dab04e9
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="attract-overview"></a>Attract の概要
+# <a name="attract-features-and-capabilities"></a>Attract の機能および性能
 
 [!include [banner](includes/banner.md)]
 
@@ -36,7 +36,7 @@ Attract が提供する機能は次のとおりです。
 ここで採用チームのメンバーは関与している職務の詳細を表示できます。 また、採用担当マネージャーや採用担当者は、個別作成するか Excel スプレッドシートから一度に複数インポートして、新しい職務を Attract に追加することもできます。
 
 ### <a name="jobs"></a>職務
-[職務] ページでは、職務説明や職務場所などの詳細を表示し、編集できます。 [職務] ページでは、採用チームをまとめ、チームの採用担当者や面接者の追加や変更ができます。 新しい候補者も [職務] ページで追加できます。
+**職務**ページでは、職務説明や職務場所などの詳細を表示し、編集できます。 **職務**ページでは、採用チームをまとめ、チームの採用担当者や面接者の追加や変更ができます。 新しい候補者も**職務**ページで追加できます。
 
 ### <a name="candidates"></a>候補者
 候補者は、職務に個別に追加するか、Excel スプレッドシートから大量にアップロードできます。 すべての候補者は、どの職務の採用プロセスでも、自動的に最初のステージである申請ステージに追加されます。 候補者の申請情報すべてが、ここで表示または管理できます。 電子メール アドレス、電話番号、およびソーシャル メディア アカウントへのリンクなどの連絡先情報と共に、追加のドキュメントをアップロードし、表示できます。 候補者が LinkedIn プロファイルへのリンクを提供し、LinkedIn 統合 (LinkedIn 採用担当者ライセンスが必要) が設定されている場合は、その候補者のプロファイルが表示されます。

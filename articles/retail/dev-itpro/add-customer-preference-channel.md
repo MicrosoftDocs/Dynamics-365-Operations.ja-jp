@@ -1,9 +1,9 @@
 ---
-title: "顧客の基本設定データをチャンネル データベースに追加"
+title: "顧客の基本設定データをチャネル データベースに追加"
 description: "このチュートリアルでは、RetailCustPreferences テーブルを小売チャネルのコマース ランタイム (CRT) に追加する方法と、新しいテーブルのデータをチャネル データベースに移動するサブジョブを作成する方法を示します。"
 author: kfend
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -19,16 +19,19 @@ ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: a1192a1eb2967a0292a7a989b642eb813f51aba7
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: 3828997488c7e9f770dd8da6e8b906ea58600b51
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="add-customer-preference-data-to-a-channel-database"></a>顧客の基本設定データをチャンネル データベースに追加
+# <a name="add-customer-preference-data-to-channel-databases"></a>顧客の基本設定データをチャネル データベースに追加
 
 [!include [banner](../includes/banner.md)]
+
+> [!NOTE]
+> このトピックは、Dynamics 365 for Finance and Operations の 7.1 およびそれ以降のバージョンに適用可能です。 バージョン 7.2 およびそれ以上の場合は、この実装はサポートされていません。 これらのバージョンでは、オーバーレイせずに拡張モデルに従います。
 
 このチュートリアルでは、RetailCustPreferences テーブルを小売チャネルのコマース ランタイム (CRT) に追加する方法と、新しいテーブルのデータをチャネル データベースに移動するサブジョブを作成する方法を示します。
 
@@ -96,9 +99,5 @@ ms.lasthandoff: 04/20/2018
 16. **小売** &gt; **本社の設定** &gt; **小売用スケジューラ** &gt; **スケジューラ ジョブ**の順にクリックします。
 17. **スケジューラ ジョブ**ページで、**1010** をクリックし、「顧客」ジョブを選択します。
 18. **サブジョブ**タブで、**新規**をクリックし、**RetailCustPreference** をサブジョブ番号として入力します。 **保存** をクリックします。
-19. <strong>小売チャネル スキーマ</strong>ページで、スキーマ名として <strong>Dynamics 365 for Retail **を選択し、**クエリの生成</strong>をクリックします。
-
-
-
-
+19. <strong>小売チャネル スキーマ</strong>ページで、スキーマ名として **Dynamics 365 for Retail** を選択し、**クエリの生成**をクリックします。
 

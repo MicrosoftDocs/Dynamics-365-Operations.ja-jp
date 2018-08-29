@@ -1,5 +1,5 @@
 ---
-title: "Retail SDK の概要"
+title: "Retail ソフトウェア開発キット (SDK)"
 description: "このトピックでは、Retail SDK に関する一般情報を提供します。 Retail SDK は、小売クライアントをカスタマイズするために使用できる、コード、コード サンプル、テンプレート、およびツールが含まれています。"
 author: RobinARH
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: sijoshi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: cf531c3a8f3bdb17314d1de436b98249169f82a3
-ms.openlocfilehash: b90257dd2d95227a82b56d2a5599c084c0774fb2
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 276e38dfc8b72bbc5a8b3440c9b9784bcebaf765
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="retail-sdk-overview"></a>Retail SDK の概要
+# <a name="retail-software-development-kit-sdk"></a>Retail ソフトウェア開発キット (SDK)
 
 [!include [banner](../../includes/banner.md)]
 

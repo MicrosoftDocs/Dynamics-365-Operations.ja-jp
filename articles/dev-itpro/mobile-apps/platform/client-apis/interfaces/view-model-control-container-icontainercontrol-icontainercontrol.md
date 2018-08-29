@@ -1,5 +1,5 @@
 ---
-title: ContainerControl
+title: "ContainerControl タイプ"
 description: "すべてのコンテナー コントロールのメソッドと属性を持つコンテナー コントロール インターフェイス。 コンテナー コントロールは、コントロールの任意の数を含めることができます。"
 author: shadykdc
 manager: AnnBe
@@ -16,10 +16,10 @@ ms.author: kashea
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 9e4b32d22861dd700344ed5053d2928656a8e890
+ms.sourcegitcommit: ed6cabcc8c76fba3d4414cd4b564b720c54169e0
+ms.openlocfilehash: 026f07d75a9d8e1b59d025dc6c1f30d72f3b3028
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 

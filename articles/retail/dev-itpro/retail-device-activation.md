@@ -1,5 +1,5 @@
 ---
-title: "Retail POS デバイスのライセンス認証"
+title: "小売販売時点管理 (POS) デバイスのライセンス認証"
 description: "この記事では、Retail Cloud POS および Retail Modern POS の新しいガイド付きデバイスの有効化について説明し、ユーザーが手動で登録およびデバイスID情報を入力しなくても簡単にデバイスをアクティブ化できるクライアントの簡略化について説明します。"
 author: athinesh99
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.author: athinesh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: b4b1782b1bce726f5a3c7585f93ce20b368ad095
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: c51d363be4e6da9d0a181cd528e54a55d8045a47
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="retail-pos-device-activation"></a>Retail POS デバイスのライセンス認証
+# <a name="retail-point-of-sale-pos-device-activation"></a>小売販売時点管理 (POS) デバイスのライセンス認証
 
 [!include [banner](../includes/banner.md)]
 

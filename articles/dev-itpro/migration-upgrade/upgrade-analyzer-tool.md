@@ -18,14 +18,14 @@ ms.author: tabell
 ms.search.validFrom: 2017-05-31
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 01eabe5da55d9dccfe1fe34e52441291b3265aac
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: fd3a58c887f68e15dbdd81edc0299866aa82c7c6
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="upgrade-from-ax-2012---use-the-upgrade-analyzer-tool-to-plan"></a>AX 2012 からのアップグレード - アップグレード アナライザー ツールを使用した計画
+# <a name="upgrade-from-ax-2012---plan-by-using-the-upgrade-analyzer-tool"></a>AX 2012 からのアップグレード - アップグレード アナライザー ツールを使用した計画
 
 [!include [banner](../includes/banner.md)]
 

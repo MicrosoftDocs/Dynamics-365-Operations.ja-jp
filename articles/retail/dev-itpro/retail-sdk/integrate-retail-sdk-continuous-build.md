@@ -1,5 +1,5 @@
 ---
-title: "Visual Studio Team Services を使用して、Retail SDK を Dynamics 365 Unified Operations プラットフォームのビルド定義と統合する"
+title: "Retail と Finance and Operations のビルド システムのマージ"
 description: "この記事では、Visual Studio Team Services を使用して Dynamics 365 for Finance and Operations、および Dynamics 365 for Retail のビルド システムをマージするステップについて説明します。"
 author: andreash1
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.author: andreash
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 0d3e88d7901716ec3247a3e075296ab85e692ffa
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: a35c4eb7259fda7ffb42a5802aa76bd168895298
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="integrate-the-retail-sdk-with-the-continuous-build-system-vsts"></a>Retail SDK を継続的ビルド システムと統合 (VSTS)
+# <a name="merge-the-build-systems-for-retail-and-finance-and-operations"></a>Retail と Finance and Operations のビルド システムのマージ
 
 [!include [banner](../../includes/banner.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: InputControlMetadata
+title: "InputControlMetadata タイプ"
 description: "入力コントロールのメタデータ。"
 author: shadykdc
 manager: AnnBe
@@ -16,10 +16,10 @@ ms.author: kashea
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: b4fb82e2bb675f320b2d64a09b5b06ab93e05366
+ms.sourcegitcommit: ed6cabcc8c76fba3d4414cd4b564b720c54169e0
+ms.openlocfilehash: dd396e813cf78123ec163ded2b62cd8ff84c289c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 

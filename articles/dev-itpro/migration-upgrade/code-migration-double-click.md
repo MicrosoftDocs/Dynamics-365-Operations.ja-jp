@@ -1,5 +1,5 @@
 ---
-title: "コードの移行 - マウスのダブルクリック"
+title: "コードの移行 - マウス ダブルクリック ロジック"
 description: "Microsoft Dynamics 365 for Finance and Operations では、mouseDblClick() のオーバーライドが推奨されず、新しいコントロールにこのロジックを移動する必要があります。"
 author: jasongre
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: ace32b1867e97ac4ac12d6928d779c8aa9c1dad3
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 1c325729e29df2c48bb28d0fe2d6201166ca4ea0
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="code-migration---mouse-double-click"></a>コードの移行 - マウスのダブルクリック
+# <a name="code-migration---mouse-double-click-logic"></a>コードの移行 - マウス ダブルクリック ロジック
 
 [!include [banner](../includes/banner.md)]
 

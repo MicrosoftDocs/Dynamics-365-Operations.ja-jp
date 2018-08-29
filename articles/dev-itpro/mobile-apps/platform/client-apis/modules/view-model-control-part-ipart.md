@@ -1,5 +1,5 @@
 ---
-title: "パート"
+title: "パート モジュール"
 description: "パーツは、ページのみを含むコンテナー コントロールで、ページがページ内に埋め込まれるのを許可します。"
 author: shadykdc
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.author: kashea
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 09dd6547a39e8766dbab7a2ba7ee7447ad633053
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: e824fcde7e283fd618f4acf93f212b26bb4f15bc
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="part"></a>パート 
+# <a name="part-module"></a>パート モジュール
 
 [!include [banner](../../../../includes/banner.md)]
 

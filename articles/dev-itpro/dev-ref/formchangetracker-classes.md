@@ -1,5 +1,5 @@
 ---
-title: "F クラス - FormControlEventArgs への FormChangeTracker"
+title: "F クラス (FormChangeTracker から FormControlEventArgs)"
 description: "FormChangeTracker から FormControlEventArgs までのクラスの API 参照。"
 author: RobinARH
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: c69f82475c06add16ec65c20d50a8e9524978d02
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 40480a02df63f14eced8b422fc54e1e31c054a16
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="f-classes---formchangetracker-to-formcontroleventargs"></a>F クラス - FormControlEventArgs への FormChangeTracker
+# <a name="f-classes-formchangetracker-to-formcontroleventargs"></a>F クラス (FormChangeTracker から FormControlEventArgs)
 
 [!include [banner](../includes/banner.md)]
 

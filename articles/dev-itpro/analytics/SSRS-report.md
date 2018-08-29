@@ -1,5 +1,5 @@
 ---
-title: "SQL Server Reporting Services レポート"
+title: "使用可能な SQL Server Reporting Services (SSRS) レポート"
 description: "このトピックでは、Finance and Operations で使用できる SQL Server Reporting Services (SSRS) レポートを一覧表示するレポートを示します。"
 author: sericks007
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: sericks
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: d36f19078fcb29775e533026d3265d9b2172c068
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: a69bbfb80e9e4edc7b7c358e396ab93f6a113169
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="sql-server-reporting-services-reports"></a>SQL Server Reporting Services レポート
+# <a name="sql-server-reporting-services-ssrs-reports-that-are-available"></a>使用可能な SQL Server Reporting Services (SSRS) レポート
 
 [!include [banner](../includes/banner.md)]
 

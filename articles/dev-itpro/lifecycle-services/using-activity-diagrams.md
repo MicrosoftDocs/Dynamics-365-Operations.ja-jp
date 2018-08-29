@@ -1,5 +1,5 @@
 ---
-title: "BPM でアクティビティ図を使用"
+title: "ビジネス プロセス モデラー ライブラリの活動ダイアグラムを使用する"
 description: "このトピックでは、BPM ライブラリでアクティビティ図を使用する方法について説明します。"
 author: kfend
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: ntecklu
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: ad76102ee9aa1ce4b345a8c9ecaeee65700e4fd4
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 181e194028fe2f9ceb4e8a35b13e4bff03415e55
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="use-activity-diagrams-with-bpm"></a>BPM でアクティビティ図を使用
+# <a name="work-with-activity-diagrams-in-business-process-modeler-libraries"></a>ビジネス プロセス モデラー ライブラリの活動ダイアグラムを使用する
 
 [!include [banner](../includes/banner.md)]
 

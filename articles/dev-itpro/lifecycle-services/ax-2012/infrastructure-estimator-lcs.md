@@ -1,6 +1,5 @@
 ---
-title: "インフラストラクチャ見積もりツール (AX 2012)"
-description: "Microsoft Dynamics Lifecycle Services インフラストラクチャ見積もりツールは、環境に必要なハードウェアの最初の大まかな見積もりを自動的に行います。 オンプレミスまたはクラウドにある環境に対して見積もりを提供することができます。 この見積は、より詳細な手動サイズ変更の見積の基礎として使用されるもので、置き換えられるものではありません。"
+title: "Lifecycle Services (LCS) でのインフラストラクチャ見積もりツール"
 author: kfend
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,14 +17,14 @@ ms.author: kfend
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: cb70ce3fbe17e58e480f1c35a2512002883955b2
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 21ec32bafeeb51fd64f579270b0def656fc2548e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="infrastructure-estimator-ax-2012"></a>インフラストラクチャ見積もりツール (AX 2012)
+# <a name="infrastructure-estimator-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) でのインフラストラクチャ見積もりツール
 
 [!include [banner](../../includes/banner.md)]
 

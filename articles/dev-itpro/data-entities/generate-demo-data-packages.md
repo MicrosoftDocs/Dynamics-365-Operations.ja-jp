@@ -20,7 +20,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: 4f909c378409cd9cfac99605f2a0ca91dc91f5ca
 ms.openlocfilehash: 0001284c16c2363ff9c6c0f85fd34835a9a4a8ec
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 # <a name="generate-demo-data-by-using-data-packages"></a>データ パッケージを使用してデモ データを生成します

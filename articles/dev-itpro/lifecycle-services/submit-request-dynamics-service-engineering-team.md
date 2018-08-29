@@ -1,5 +1,5 @@
 ---
-title: "Dynamics サービス エンジニアリング チームへのサービス要求の送信"
+title: "Dynamics Service Engineering チームへのサービス要求の送信"
 description: "このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用して、Dynamics サービス エンジニアリング チームにサービス要求を直接送信する方法について説明します。"
 author: manalidongre
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: manado
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 088ff074691db8d86b5a384f3ed24abb0c57aba6
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 55a3a897362b7d1cea1bea4a6e254b947f171f73
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="submit-a-service-request-to-the-dynamics-service-engineering-team"></a>Dynamics サービス エンジニアリング チームへのサービス要求の送信
+# <a name="submit-service-requests-to-the-dynamics-service-engineering-team"></a>Dynamics Service Engineering チームへのサービス要求の送信
 
 [!include [banner](../includes/banner.md)]
 

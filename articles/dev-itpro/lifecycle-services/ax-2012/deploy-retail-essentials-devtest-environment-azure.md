@@ -1,5 +1,5 @@
 ---
-title: "Azure (AX 2012) での Retail Essentials 開発/テスト環境の配置"
+title: "Azure での Retail Essentials 開発/テスト環境の配置"
 description: "このトピックでは、Microsoft Azure に小売エッセンシャル開発環境またはテスト環境を展開する方法について説明します。 環境を展開するには、Microsoft Dynamics Lifecycle Services でクラウド ホスト環境ツールを使用します。"
 author: aamirallaqaband
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: aamiral
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 5e1674b1a7f5863c539a88db12607f7a2c03b1d0
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: eea801a8ff3b750b87316abf165c9ed8eb7f44e5
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="deploy-a-retail-essentials-devtest-environment-on-azure-ax-2012"></a>Azure (AX 2012) での Retail Essentials 開発/テスト環境の配置
+# <a name="deploy-retail-essentials-devtest-environments-on-azure"></a>Azure での Retail Essentials 開発/テスト環境の配置
 
 [!include [banner](../../includes/banner.md)]
 

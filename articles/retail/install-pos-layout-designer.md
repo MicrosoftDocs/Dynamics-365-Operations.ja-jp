@@ -1,5 +1,5 @@
 ---
-title: "Retail POS のレイアウト デザイナーをインストールする"
+title: "Retail 販売時点管理 (POS) のレイアウト デザイナーのインストール"
 description: "ワンクリック デザイナーを使用して、ランドスケープ モード、ポートレート モード、店舗、レジスター、レジ担当者、マネージャ用など、異なる Retail Modern POS (MPOS) やクラウド POS のレイアウトを作成することができます。"
 author: athinesh99
 manager: AnnBe
@@ -20,14 +20,14 @@ ms.author: athinesh
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 30adfefd5ec70ddce348dab2481d518875e01ff2
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 4c647f49101dcbbe7dd1feac2dd9aad5c6dd5bcc
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="install-the-retail-pos-layout-designer"></a>Retail POS のレイアウト デザイナーをインストールする
+# <a name="install-the-retail-point-of-sale-pos-layout-designer"></a>Retail 販売時点管理 (POS) のレイアウト デザイナーのインストール
 
 [!include [banner](includes/banner.md)]
 

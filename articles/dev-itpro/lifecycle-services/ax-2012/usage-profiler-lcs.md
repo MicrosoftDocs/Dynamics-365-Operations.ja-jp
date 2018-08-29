@@ -1,5 +1,5 @@
 ---
-title: "使用状況プロファイラー"
+title: "Lifecycle Services (LCS) の使用状況プロファイル"
 description: "このトピックでは、使用状況プロファイラーによって収集されるデータに関する情報を提供します。"
 author: kfend
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: kfend
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 55814d5c9518cf35c1a2738e21dab516a3661f5b
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 629dfff6a6f96eafe5714963de1be3a5f89b2264
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="usage-profiler-ax-2012"></a>使用状況プロファイラー (AX 2012)
+# <a name="usage-profiler-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) の使用状況プロファイル
 
 [!include [banner](../../includes/banner.md)]
 

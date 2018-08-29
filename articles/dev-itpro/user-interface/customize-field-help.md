@@ -1,7 +1,7 @@
 ---
-title: "フィールドのカスタマイズのヘルプ"
+title: "フィールドの説明をカスタマイズする"
 description: "この記事では、既存のフィールドの説明をカスタマイズし、独自の説明を追加する方法について説明します。"
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.scope: Operations
 ms.custom: 92013
 ms.assetid: 94d555d7-28f3-4d94-91b4-6038e2be5047
 ms.search.region: Global
-ms.author: yuyus
+ms.author: shylaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 397a563c8882ed68f49f27d06af0d3f810bf87ab
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: bfb8ad57d8bedcd2c046f1727b24e85d49377b52
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="customize-field-help"></a>フィールドのカスタマイズのヘルプ
+# <a name="customize-field-descriptions"></a>フィールドの説明をカスタマイズする
 
 [!include [banner](../includes/banner.md)]
 

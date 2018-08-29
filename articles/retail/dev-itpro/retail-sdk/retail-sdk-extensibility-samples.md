@@ -1,5 +1,5 @@
 ---
-title: "Retail SDK の拡張機能サンプル"
+title: "Retail ソフトウェア開発キット (SDK) の拡張機能サンプル"
 description: "Retail SDK には、拡張機能サンプルが含まれています。 これらのサンプルは、Retail をカスタマイズするさまざまな方法について学ぶ良い方法です。"
 author: mugunthanm
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 63d392d65c3088e0f9e2c5587c499b2235e4828a
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 33c2ea2172fd234fed3edf08fc37a0b8ff58cba3
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="retail-sdk-extensibility-samples"></a>Retail SDK の拡張機能サンプル
+# <a name="retail-software-development-kit-sdk-extensibility-samples"></a>Retail ソフトウェア開発キット (SDK) の拡張機能サンプル
 
 [!include [banner](../../includes/banner.md)]
 

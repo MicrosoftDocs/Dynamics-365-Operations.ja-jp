@@ -1,5 +1,5 @@
 ---
-title: "ワークフロー内の並列活動のコンフィギュレーション"
+title: "ワークフローでの並列活動のコンフィギュレーション"
 description: "並列活動をコンフィギュレーションするには、ワークフロー エディターで次の手順を実行します。"
 author: sericks007
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: ec1c1d8abc49deb8ef16322370c59d40b01d344c
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: 64cd387f8a6ab693d159cd659fca51fa6568ee39
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="configure-a-parallel-activity-in-a-workflow"></a>ワークフロー内の並列活動のコンフィギュレーション
+# <a name="configure-parallel-activities-in-a-workflow"></a>ワークフローでの並列活動のコンフィギュレーション
 
 [!include [banner](../includes/banner.md)]
 
@@ -35,15 +35,15 @@ ms.lasthandoff: 04/13/2018
 
 ## <a name="name-a-parallel-activity"></a>並列活動の名前の設定
 並列活動の名前を入力するには、次の手順に従います。
-1.  並列活動を右クリックし、[プロパティ] をクリックして、[プロパティ] フォームを開きます。
-2.  左ウィンドウで [基本設定] をクリックします。
-3.  [名前] フィールドに、並列活動の一意な名前を入力します。
-4.  [閉じる] をクリックします。
+1.  並列活動を右クリックし、**プロパティ**をクリックして、**プロパティ**フォームを開きます。
+2.  左ウィンドウで**基本設定**をクリックします。
+3.  **名前**フィールドに、並列活動の一意な名前を入力します。
+4.  **閉じる**をクリックします。
 
 ## <a name="configure-the-branches-of-a-parallel-activity"></a>並列活動の分岐のコンフィギュレーション
 この並列活動の分岐を追加およびコンフィギュレーションするには、次の手順に従います。
 1. 並列活動の分岐を表示する並列活動をダブルクリックします。
-2. 分岐を追加するには、[分岐] 要素を [ワークフロー要素] 領域からキャンバス上の挿入ポイントにドラッグします。 次の図は、挿入ポイントを示しています。![Insertion point](./media/workflow_insertionpoint.gif)
+2. 分岐を追加するには、**分岐**要素を**ワークフロー要素**領域からキャンバス上の挿入ポイントにドラッグします。 次の図は、挿入ポイントを示しています。![Insertion point](./media/workflow_insertionpoint.gif)
 
    |                                              <strong>メモ</strong>                                               |
    |------------------------------------------------------------------------------------------------------------------|

@@ -1,5 +1,5 @@
 ---
-title: "Azure (AX 2012) での開発環境の配置"
+title: "Azure での開発環境の配置"
 description: "このトピックでは、Microsoft Azure での開発環境の展開方法について説明します。"
 author: kfend
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: kfend
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 40e4173b8b46a5e454a63370577a02b529345007
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: b06b87bb82892d0deb03329431946e8bd0390919
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="deploy-a-development-environment-on-azure-ax-2012"></a>Azure (AX 2012) での開発環境の配置
+# <a name="deploy-development-environments-on-azure"></a>Azure での開発環境の配置
 
 [!include [banner](../../includes/banner.md)]
 

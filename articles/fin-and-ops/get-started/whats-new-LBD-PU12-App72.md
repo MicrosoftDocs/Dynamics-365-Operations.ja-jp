@@ -1,5 +1,5 @@
 ---
-title: "Dynamics 365 for Finance and Operations、Enterprise edition 7.2 およびオンプレミス 更新プログラムの platform update 12"
+title: "Dynamics 365 for Finance and Operations, Enterprise edition 7.2 およびプラットフォーム更新プログラム 12 (2018 年 3 月) のオンプレミス配置での新機能および変更された機能"
 description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition 7.2 プラットフォーム更新プログラム 12 のオンプレミス開発における新機能または変更された機能について説明します。 この展開オプションは、2018 年 3 月に使用できるようになりました。"
 author: sericks007
 manager: AnnBe
@@ -17,10 +17,10 @@ ms.author: sericks
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 12
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: a9cc851a7cb73813e10fd86118bae7192dd3cb66
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: ab5ee9e8365511d1d258602a03951518f979f69e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 

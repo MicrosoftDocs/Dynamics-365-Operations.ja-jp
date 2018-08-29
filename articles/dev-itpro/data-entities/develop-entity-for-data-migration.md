@@ -18,14 +18,14 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 7734a133db778c8dd25982d4d391b8fadf503320
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 8471ddc5893814ac867124a83597af8d2abe42d3
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="develop-an-entity-for-data-migration"></a>データ移行のエンティティの開発
+# <a name="develop-entities-for-data-migration"></a>データ移行のエンティティの開発
 
 [!include [banner](../includes/banner.md)]
 

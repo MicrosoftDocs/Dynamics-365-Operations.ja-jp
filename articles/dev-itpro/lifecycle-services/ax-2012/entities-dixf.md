@@ -1,5 +1,5 @@
 ---
-title: "データのインポート/エクスポート フレームワークのエンティティ (AX 2012)"
+title: "データのインポート/エクスポート フレームワーク (DIXF) のエンティティ"
 description: "このトピックでは、データのインポート/エクスポート フレームワーク、各エンティティが関連付けられているアプリケーション モジュール、および各エンティティのクラス、ステージング テーブル、およびターゲットテーブルを使用してインポートできるエンティティを一覧表示します。"
 author: kfend
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: kfend
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: f2393dbb03838b2fbdc89ef82341d45dbe26a402
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 950a4f0d5b4cabe07f143ee357506b3c615a7101
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="data-importexport-framework-entities-ax-2012"></a>データのインポート/エクスポート フレームワークのエンティティ (AX 2012)
+# <a name="data-importexport-framework-dixf-entities"></a>データのインポート/エクスポート フレームワーク (DIXF) のエンティティ
 
 [!include [banner](../../includes/banner.md)]
 

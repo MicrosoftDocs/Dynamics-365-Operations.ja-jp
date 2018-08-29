@@ -1,5 +1,5 @@
 ---
-title: "テーブルへのリレーションの追加"
+title: "拡張機能を使用してテーブルに関係を追加"
 description: "このトピックでは、テーブルにリレーションを追加する方法について説明します。"
 author: ivanv-microsoft
 manager: AnnBe
@@ -14,18 +14,19 @@ ms.search.scope: Operations
 ms.custom: 268724
 ms.assetid: 
 ms.search.region: Global
+ms.search.industry: 
 ms.author: ivanv
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 4
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 2a97a1d85f99306b0ef35333e0cb4674d60ee4cc
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: f0bf7d5e4fcdfb88e3308235e96e19f9f9324bfa
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="add-a-relation-to-a-table"></a>テーブルへのリレーションの追加
+# <a name="add-relations-to-tables-through-extension"></a>拡張機能を使用してテーブルに関係を追加
 
 [!include [banner](../includes/banner.md)]
 

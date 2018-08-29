@@ -1,5 +1,5 @@
 ---
-title: "フリート管理のサンプル アプリケーション"
+title: "フリート管理のサンプル アプリケーションのエンド ツー エンドのシナリオ"
 description: "このチュートリアルでは、フリート管理のサンプル アプリケーションがサポートするように設計されたエンド ツー エンドのシナリオを説明します。"
 author: RobinARH
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: c46c08619b86dbd609863f828d667cfc477f81ff
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 75ab30b185ecc6774b3f1b77ff0ad6f9479af4f0
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="fleet-management-sample-application"></a>フリート管理のサンプル アプリケーション
+# <a name="end-to-end-scenario-for-the-fleet-management-sample-application"></a>フリート管理のサンプル アプリケーションのエンド ツー エンドのシナリオ
 
 [!include [banner](../includes/banner.md)]
 

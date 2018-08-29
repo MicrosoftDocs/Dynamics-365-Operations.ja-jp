@@ -1,5 +1,5 @@
 ---
-title: "Dynamics AX 2012 R3 の更新プログラム"
+title: "Lifecycle Services (LCS) の AX 2012 R3 用の更新プログラム"
 description: "このトピックでは、Microsoft Dynamics AX 2012 R3 の累積的な更新に使用される、更新プログラム インストーラーをホストする Lifecycle Services サービスの更新ページについて説明します。"
 author: kfend
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: kfend
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 513e17a95a68b732b44e2e7b032525fbdf224032
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 474712a788df5787f4d66a2f5b067dbdd1d17450
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="updates-for-dynamics-ax-2012-r3"></a>Dynamics AX 2012 R3 の更新プログラム
+# <a name="updates-for-ax-2012-r3-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) の AX 2012 R3 用の更新プログラム
 
 [!include [banner](../../includes/banner.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: "バッチ処理の概要"
+title: "バッチ処理"
 description: "この記事では、Microsoft Dynamics 365 for Finance and Operations のバッチ処理の概要について説明します。"
 author: maertenm
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: maertenm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: fe7451fc026c3557d810eed6bf45dde3abdf8c73
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 34377119b12c537679c423d79449169f3d25dc21
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="batch-processing-overview"></a>バッチ処理の概要
+# <a name="batch-processing"></a>バッチ処理
 
 [!include [banner](../includes/banner.md)]
 

@@ -19,14 +19,14 @@ ms.author: aamiral
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: cf531c3a8f3bdb17314d1de436b98249169f82a3
-ms.openlocfilehash: d3333867fc5d8547e5217d7b88810742725e8534
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: df9c4d4cec449db78ca40f172e5cc8116626f09e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="deploy-a-payment-connector"></a>支払コネクタの配置
+# <a name="deploy-payment-connectors"></a>支払コネクタの配置
 
 [!include [banner](../includes/banner.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Dynamics 365 for Finance and Operations ソリューションに対するデータベースをバックアップ"
+title: "Finance and Operations ソリューションのデータベースのバックアップ"
 description: "このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) ソリューション パッケージに必要なデータベースのバックアップに関する情報を提供します。"
 author: kfend
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.assetid: fc0f06e8-1a20-45f7-ae98-ee074fe1f030
 ms.search.region: Global
 ms.author: omarc
 ms.translationtype: HT
-ms.sourcegitcommit: 43c18efc4b02da594821018b6d4b8748a4f5eb84
-ms.openlocfilehash: 10fbb6aa3c68a5a6c0873feac7d5b5d51d39866a
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: d67756a944106ce98c36a0c0f6a9ed053e422eea
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/12/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="back-up-the-database-for-a-microsoft-dynamics-365-for-finance-and-operations-solution"></a>Microsoft Dynamics 365 for Finance and Operations ソリューションに対するデータベースをバックアップ
+# <a name="back-up-the-databases-for-finance-and-operations-solutions"></a>Finance and Operations ソリューションのデータベースのバックアップ
 
 [!include[banner](../includes/banner.md)]
 

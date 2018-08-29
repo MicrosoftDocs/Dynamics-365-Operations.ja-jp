@@ -1,5 +1,5 @@
 ---
-title: "データのインポート/エクスポート フレームワークのユーザー ガイド (AX 2012)"
+title: "データのインポート/エクスポート フレームワーク (DIFX) のユーザー ガイド"
 description: "このトピックでは、Dynamics AX でデータ インポート/エクスポート フレームワーク (DIXF) を使用する方法について説明します。"
 author: kfend
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: kfend
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 6e453743048625e18bcefafbae45da33048e317e
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 8e4984d40e0e46ef529fb407cc5eb62b8b4242a5
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="data-importexport-framework-user-guide-ax-2012"></a>データのインポート/エクスポート フレームワークのユーザー ガイド (AX 2012)
+# <a name="data-importexport-framework-dixf-user-guide"></a>データのインポート/エクスポート フレームワーク (DIFX) のユーザー ガイド
 
 [!include [banner](../../includes/banner.md)]
 

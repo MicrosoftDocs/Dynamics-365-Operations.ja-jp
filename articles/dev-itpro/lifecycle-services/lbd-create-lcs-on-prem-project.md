@@ -1,5 +1,5 @@
 ---
-title: "Lifecycle Services でのオンプレミス プロジェクトの作成"
+title: "Lifecycle Services (LCS) でのオンプレミス プロジェクトの設定"
 description: "このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) でオンプレミス プロジェクトを設定するプロセスについて説明します。"
 author: manalidongre
 manager: AnnBe
@@ -18,13 +18,13 @@ ms.author: manado
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: b5ecf83fe791a64f90edc5bc17b729fad267ed24
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: c14c55fd4e616c673a7fd5cb08fcbbb7ea22afa2
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="create-an-on-premises-project-in-lifecycle-services"></a>Lifecycle Services でのオンプレミス プロジェクトの作成
+# <a name="set-up-on-premises-projects-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) でのオンプレミス プロジェクトの設定
 
 [!include [banner](../includes/banner.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: "フォーム パターン アドイン"
+title: "フォーム パターンをサポートする Visual Studio アドイン"
 description: "Visual Studio のツールには、パターンの使用をサポートするいくつかのアドインが含まれています。"
 author: jasongre
 manager: AnnBe
@@ -17,14 +17,14 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 24872f417ccc8a870eb4850120e331e0f761211d
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: fbb172828f1a271575a0f7f483b7205370336be8
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="form-pattern-add-ins"></a>フォーム パターン アドイン
+# <a name="visual-studio-add-ins-that-support-form-patterns"></a>フォーム パターンをサポートする Visual Studio アドイン
 
 [!include [banner](../includes/banner.md)]
 

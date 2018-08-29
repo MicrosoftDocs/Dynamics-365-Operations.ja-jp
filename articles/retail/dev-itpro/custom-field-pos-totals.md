@@ -1,5 +1,5 @@
 ---
-title: "カスタム フィールドを POS Totals パネルへ追加"
+title: "販売時点管理 (POS) Totals パネルへカスタム フィールドを追加"
 description: "このトピックでは、画面レイアウト デザイナーを使用して、POS トランザクション画面の合計パネルに新しいカスタム フィールドを追加する方法について説明します。"
 author: mugunthanm
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.author: mumani
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: d977e9469723d7273cae917463be0fb6ea7186c8
-ms.openlocfilehash: 20494cf9d07caa445bb2115a66a0c6dce156e707
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 47e3922ade85b964d60ff5b6131254497f606369
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="add-custom-fields-to-the-pos-totals-panel"></a>カスタム フィールドを POS Totals パネルへ追加
+# <a name="add-custom-fields-to-the-point-of-sale-pos-totals-panel"></a>販売時点管理 (POS) Totals パネルへカスタム フィールドを追加
 
 [!include[banner](../includes/banner.md)]
 

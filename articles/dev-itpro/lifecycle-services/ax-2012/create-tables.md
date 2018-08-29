@@ -1,5 +1,5 @@
 ---
-title: "テーブルの作成"
+title: "アプリケーション オブジェクト ツリー (AOT) を使用してテーブルを作成する"
 description: "このトピックでは、アプリケーション オブジェクト ツリー (AOT) を使用してデータを格納するテーブルを作成する方法について説明します。"
 author: kfend
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: kfend
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 904d4192f1f96bfca13f134c3a9b6c0af8481ed4
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 36ff012c58152eb3b29a346269f7f5daa1d00b8f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="create-tables"></a>テーブルの作成
+# <a name="create-tables-by-using-the-application-object-tree-aot"></a>アプリケーション オブジェクト ツリー (AOT) を使用してテーブルを作成する
 
 [!include [banner](../../includes/banner.md)]
 

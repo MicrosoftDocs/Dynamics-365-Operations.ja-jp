@@ -1,5 +1,5 @@
 ---
-title: "Retail Store Scale Unit の概要"
+title: "Retail Store スケール ユニット"
 description: "このトピックでは、Retail Store Scale Unit と、どんなときにそれを使用するかについて説明します。"
 author: athinesh99
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.author: athinesh
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 8719cc219dd152a05c2e983cef5392a1d51346ca
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 7cf9951f860159c9173f4784eb715231fea46ec3
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="retail-store-scale-unit-overview"></a>Retail Store Scale Unit の概要
+# <a name="retail-store-scale-unit"></a>Retail Store スケール ユニット
 
 [!include [banner](../includes/banner.md)]
 

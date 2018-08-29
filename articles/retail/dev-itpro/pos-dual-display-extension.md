@@ -1,5 +1,5 @@
 ---
-title: "POS Dual ディスプレイ ビューの拡張"
+title: "販売時点管理 (POS) デュアル ディスプレイ ビューの拡張"
 description: "このトピックでは、ユーザー情報が表示されるように、POS デュアル ディスプレイ ビューを拡張する方法について説明します。"
 author: mugunthanm
 manager: AnnBe
@@ -17,14 +17,14 @@ ms.author: mumani
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 9fb31323526c3ac364ed0aec706577d18657823e
-ms.openlocfilehash: 0140402c969da33018ac0ca2f94aebfb9e7d4f1a
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: cc8c73d0f1f00eb1efb3084811ccd47aefc3a16e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="extend-pos-dual-display-view"></a>POS Dual ディスプレイ ビューの拡張
+# <a name="extend-the-point-of-sale-pos-dual-display-view"></a>販売時点管理 (POS) デュアル ディスプレイ ビューの拡張
 
 [!include[banner](../includes/banner.md)]
 

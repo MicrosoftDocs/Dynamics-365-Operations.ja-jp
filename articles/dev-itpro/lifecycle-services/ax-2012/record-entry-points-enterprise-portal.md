@@ -1,5 +1,5 @@
 ---
-title: "Dynamics AX エンタープライズ ポータルでのエントリ ポイントの記録"
+title: "エンタープライズ ポータルのエントリ ポイントを記録"
 description: "イベント トレースを使用して、Microsoft Dynamics AX のエンタープライズ ポータルに業務プロセス フローを記録することができます。 セキュリティ開発ツールに業務プロセス フローを表示することができます。"
 author: kfend
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: kfend
 ms.search.validFrom: 
 ms.dyn365.ops.version: AX 2012 R3 CU8
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: a790dabd621493d5db26218247a531c8818d2adf
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 9e8305fbcb38fc56bc33dcb29e78841a3cac4e5f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="record-entry-points-in-dynamics-ax-enterprise-portal"></a>Dynamics AX エンタープライズ ポータルでのエントリ ポイントの記録
+# <a name="record-entry-points-in-enterprise-portal"></a>エンタープライズ ポータルのエントリ ポイントを記録
 
 [!include [banner](../../includes/banner.md)]
 

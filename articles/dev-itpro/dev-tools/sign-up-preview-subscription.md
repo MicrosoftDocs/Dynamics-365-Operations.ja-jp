@@ -18,14 +18,14 @@ ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 65101b5f0030a25973a584b68ec9697506868294
-ms.openlocfilehash: d59f93f07cecfb0fe79086ca036cce31d515abb0
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 015c6b54948129b5e629a9c01669de5d8867dc77
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/30/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="sign-up-for-a-preview-subscription"></a>プレビュー サブスクリプションのサインアップ
+# <a name="sign-up-for-preview-subscriptions"></a>プレビュー サブスクリプションのサインアップ
 
 [!include [banner](../includes/banner.md)]
 

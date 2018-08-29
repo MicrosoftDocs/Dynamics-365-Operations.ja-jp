@@ -1,5 +1,5 @@
 ---
-title: "電子メール受領を Retail Modern POS から送信"
+title: "電子メール受領を Retail Modern POS (MPOS) から送信"
 description: "Retail Modern 販売時点管理 (MPOS) では、販売時点管理 (POS) でトランザクションが支払/入金されたときにレシートの電子メールを送信できます。"
 author: jashanno
 manager: AnnBe
@@ -20,14 +20,14 @@ ms.author: jashanno
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 728d5ffebe67997c5fd557e5d760d93fa29401c4
-ms.openlocfilehash: f833a273558658605b1c80182e0b6eaee112805f
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: e513a94cbef94fc8cfb393729b9df5fd2bf0aea6
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/07/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="send-email-receipts-from-retail-modern-pos"></a>電子メール受領を Retail Modern POS から送信
+# <a name="send-email-receipts-from-retail-modern-pos-mpos"></a>電子メール受領を Retail Modern POS (MPOS) から送信
 
 [!include [banner](includes/banner.md)]
 

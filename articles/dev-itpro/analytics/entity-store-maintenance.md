@@ -1,5 +1,5 @@
 ---
-title: "エンティティ格納のメンテナンス"
+title: "エンティティ ストアのメンテナンス後に問題を解決"
 description: "このトピックでは、エンティティ ストアのメンテナンス後に完了する必要のある手順について説明します。"
 author: sarvanisathish
 manager: AnnBe
@@ -17,14 +17,14 @@ ms.author: sarvanis
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
 ms.translationtype: HT
-ms.sourcegitcommit: 66780f303c3768b52f01fc018e48578620ff19d0
-ms.openlocfilehash: f58144f9d606e7b9f7a3d81d166d607256b3605d
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 205b7a7f6254efac26538df1384eb9f9167e61ad
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/01/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="entity-store-maintenance"></a>エンティティ格納のメンテナンス
+# <a name="resolve-issues-after-entity-store-maintenance"></a>エンティティ ストアのメンテナンス後に問題を解決
 
 [!include[banner](../includes/banner.md)]
 

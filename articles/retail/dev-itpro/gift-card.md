@@ -20,14 +20,14 @@ ms.author: ivanv
 ms.search.validFrom: 2017-10-02
 ms.dyn365.ops.version: Application update 4
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: ceb106b24cb171edfc989af2b1f671f47d708995
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 49fa7bcbb137bd02c9a123543a6fc6ce003240aa
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="external-gift-card-support"></a>外部ギフト カードのサポート
+# <a name="support-for-external-gift-cards"></a>外部ギフト カードのサポート
 
 [!include [banner](../../includes/banner.md)]
 

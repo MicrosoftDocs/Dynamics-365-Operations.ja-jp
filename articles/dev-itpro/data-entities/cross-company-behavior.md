@@ -1,5 +1,5 @@
 ---
-title: "会社間動作"
+title: "データ エンティティの会社間動作"
 description: "このトピックでは、データ エンティティと企業間コンセプトとの関係について説明します。 データエンティティのこの側面を理解するには、テーブルとビューが企業間の概念をどのように適用するのかを理解する必要があります。 したがって、このトピックでは、テーブルとビューの概要を説明し、データ エンティティの関連性について説明します。"
 author: Sunil-Garg
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: c0021af0c2c8ad1e0e1938ee600e351ef56edf05
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 31f6786715e16cefccacb8b7e64c0ea4ea187e7e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="cross-company-behavior"></a>会社間動作
+# <a name="cross-company-behavior-of-data-entities"></a>データ エンティティの会社間動作
 
 [!include [banner](../includes/banner.md)]
 

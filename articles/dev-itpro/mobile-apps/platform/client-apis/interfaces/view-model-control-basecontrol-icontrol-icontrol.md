@@ -1,5 +1,5 @@
 ---
-title: "状態"
+title: "コントロール タイプ"
 description: "すべてのコントロールの基準メソッドと属性を持つコントロール インターフェイス。 これは、コントロールのランタイムのインスタンスを表します。 プロパティの変更は、UI にすぐに反映されます。"
 author: shadykdc
 manager: AnnBe
@@ -16,10 +16,10 @@ ms.author: kashea
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 32b30c0fd9b0d57d4a139bd65bd952367dd37ac7
+ms.sourcegitcommit: ed6cabcc8c76fba3d4414cd4b564b720c54169e0
+ms.openlocfilehash: 1ba921164b0a4f84f16442a3fe79f8992a0576af
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 

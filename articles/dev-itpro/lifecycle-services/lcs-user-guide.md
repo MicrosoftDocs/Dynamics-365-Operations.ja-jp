@@ -1,5 +1,5 @@
 ---
-title: "Dynamics Lifecycle Services ユーザー ガイド"
+title: "Lifecycle Services (LCS) ユーザー ガイド"
 description: "このトピックでは、Lifecycle Services (LCS) で使用できるツールと、LCS で作業段階を進めていく際に使用するツールについて説明します。"
 author: kfend
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 7b2c2577cecfde3f8b7882972f30bcf61464a5a8
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 94a95543300017a419ec328ac50e04925503a0cd
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="dynamics-lifecycle-services-user-guide"></a>Dynamics Lifecycle Services ユーザー ガイド
+# <a name="lifecycle-services-lcs-user-guide"></a>Lifecycle Services (LCS) ユーザー ガイド
 
 [!include [banner](../includes/banner.md)]
 

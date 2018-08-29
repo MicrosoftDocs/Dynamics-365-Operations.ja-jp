@@ -18,14 +18,14 @@ ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 602e7cb91a6a57aa632503208c47d39da932607c
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: edb2b74db6aecafdcf3f4c8a4ffb61dfff503d22
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="prepare-to-migrate-code-from-dynamics-ax-2012-r3-to-dynamics-365-for-finance-and-operations"></a>Dynamics AX 2012 R3 から Dynamics 365 for Finance and Operations にコードを移行する準備
+# <a name="prepare-to-migrate-code-to-finance-and-operations"></a>Finance and Operations へのコードの移行の準備
 
 [!include [banner](../includes/banner.md)]
 

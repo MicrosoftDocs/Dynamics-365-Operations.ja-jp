@@ -1,5 +1,5 @@
 ---
-title: "複数ルックアップ"
+title: "マルチ参照モジュール"
 description: "複数ルックアップ コントロールは、一度に複数選択できる点を除いて通常のルックアップに似ています。"
 author: shadykdc
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.author: kashea
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 26e208034997f8e4b27a3e7a1f05f5562c57f9b9
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 4b476037b3634de6bcc273e1be05386b084c2f3a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="multi-lookup"></a>複数ルックアップ 
+# <a name="multi-lookup-module"></a>マルチ参照モジュール
 
 [!include [banner](../../../../includes/banner.md)]
 

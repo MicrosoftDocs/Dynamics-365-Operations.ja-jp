@@ -1,5 +1,5 @@
 ---
-title: "Dynamics 365 for Finance and Operations 更新プログラム 8.0.1 の拡張機能の変更"
+title: "Finance and Operations 更新プログラム 8.0.1 の拡張機能の変更"
 description: "このトピックでは、Dynamics 365 for Finance and Operations 更新プログラム 8.0.1 でリリースされた拡張機能を一覧表示します。"
 author: FrankDahl
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: fdahl
 ms.search.validFrom: 2018-05-31
 ms.dyn365.ops.version: App 8.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: d3fc1e8ea856b6c7c6daffd8f46f2e5e4fb12710
-ms.openlocfilehash: a5c02010e904eebbab7bbed1fac61c245395d202
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: e1e1b716a0bd15cc4a1ef47d8b8e741bce38a040
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/04/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="extensibility-changes-in-dynamics-365-for-finance-and-operations-update-801"></a>Dynamics 365 for Finance and Operations 更新プログラム 8.0.1 の拡張機能の変更
+# <a name="extensibility-changes-in-finance-and-operations-update-801"></a>Finance and Operations 更新プログラム 8.0.1 の拡張機能の変更
 
 [!include [banner](../includes/banner.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: "ワークスペース クラスの概要"
+title: "SysAppWorkspace クラスを使用してワークスペースを構成する"
 description: "このトピックでは、SysAppWorkspace クラスを使用してサーバー上のワークスペースを構成および公開する方法について説明します。"
 author: makhabaz
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: makhabaz
 ms.search.validFrom: 2017-07-20
 ms.dyn365.ops.version: Platform update 3
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 6dbd1e7c82c2108dc8dfd7919f532c5ebb0d7b97
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 795295a5d41ea9b8205ee8aeaee911ffbea36aef
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="workspace-class-overview"></a>ワークスペース クラスの概要
+# <a name="configure-workspaces-by-using-the-sysappworkspace-class"></a>SysAppWorkspace クラスを使用してワークスペースを構成する
 
 [!include [banner](../../../includes/banner.md)]
 

@@ -18,14 +18,14 @@ ms.author: tabell
 ms.search.validFrom: 2017-05-31
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 8002145012d4a901ebf4fd47ada4ec249a17ae90
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 611460265f706de5fb492549b007d22ea78c28bb
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="upgrade-from-ax-2012---data-upgrade-in-a-development-environment"></a>AX 2012 からのアップグレード - 開発環境でのデータ アップグレード
+# <a name="upgrade-from-ax-2012---data-upgrade-in-development-environments"></a>AX 2012 からのアップグレード - 開発環境でのデータ アップグレード
 
 [!include [banner](../includes/banner.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: "小売エクスペリエンス アプリの作成"
+title: "Retail Experience アプリにブランディングを作成し適用する"
 description: "このトピックでは、ブランディングを Retail Experience アプリに適用して Google Play と Apple App Store にリリースする方法について説明します。"
 author: josaw1
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.author: shajain
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: c2b199b990a2b8df1535d7510141bf843c12db5e
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 84bd044d4a17158a7238f4ddf190849b7214587a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="create-a-retail-experience-app"></a>小売エクスペリエンス アプリの作成
+# <a name="create-and-apply-branding-to-the-retail-experience-app"></a>Retail Experience アプリにブランディングを作成し適用する
 
 [!include [banner](../includes/banner.md)]
 
@@ -46,7 +46,7 @@ Xamarin は <https://www.xamarin.com/download> からダウンロードするこ
 Xamarin をインストールした後は、最新の安定バージョンに更新する必要があります。
 
 -   **Windows:** Microsoft Visual Studio で、**ツール**&gt;**オプション**&gt;**環境**&gt; **Xamarin** &gt;**その他**をクリックしてください。
--   **Mac:** Xamarin Studio で、**更新の確認** &gt; **チャネルを更新** をクリックします。 (この手順の詳細については、[https://developer.xamarin.com/recipes/cross-platform/ide/change\_updates\_channel/.](https://developer.xamarin.com/recipes/cross-platform/ide/change_updates_channel/)) を参照してください。
+-   **Mac:** Xamarin Studio で、**更新の確認** &gt; **チャネルを更新** をクリックします。 (このステップの詳細については、[https://developer.xamarin.com/recipes/cross-platform/ide/change\_updates\_channel/.](https://developer.xamarin.com/recipes/cross-platform/ide/change_updates_channel/) を参照してください)
 
 詳細については、[更新チャンネルの変更](https://developer.xamarin.com/recipes/cross-platform/ide/change_updates_channel/) を参照してください。
 

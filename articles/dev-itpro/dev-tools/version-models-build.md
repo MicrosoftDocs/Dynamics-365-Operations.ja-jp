@@ -1,5 +1,5 @@
 ---
-title: "自動ビルドのバージョン モデル"
+title: "自動ビルドのモデル バージョンの更新"
 description: "このトピックでは、ビルド出力のソース パッケージと配置可能なパッケージのモデルを、それらを生成したビルドのバージョンで更新する方法について説明します。"
 author: jorisdg
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: jorisde
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: c466f521409207b255ddbae77f5389b1bb34daf2
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 2d1aed6796dc4513eda0bea246f87ba8222d524d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="version-models-in-the-automated-build"></a>自動ビルドのバージョン モデル
+# <a name="update-model-versions-in-the-automated-build"></a>自動ビルドのモデル バージョンの更新
 
 [!include [banner](../includes/banner.md)]
 

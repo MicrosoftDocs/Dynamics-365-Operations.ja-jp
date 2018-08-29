@@ -1,5 +1,5 @@
 ---
-title: "グローバル アドレス帳および追加のアドレス帳の構成方法を計画する"
+title: "グローバル アドレス帳およびその他のアドレス帳の設定"
 description: "このトピックは、Microsoft Dynamics 365 for Finance and Operations のグローバル アドレス帳と追加のアドレス帳を設定しコンフィギュレーションする前に、計画プロセス中に決定する必要のある考慮事項について説明します。 決定の中には、組織階層など、製品の他の領域に対して行われている決定を確認する必要があります。"
 author: ShivamPandey-msft
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b872603f987b72faacc0a987aa44c31e773636f8
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: 69f1136e113fae5859d34a9a467da9c9cf4bf7dc
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="plan-how-to-configure-the-global-address-book-and-additional-address-books"></a>グローバル アドレス帳および追加のアドレス帳の構成方法を計画する
+# <a name="plan-for-the-global-address-book-and-other-address-books"></a>グローバル アドレス帳およびその他のアドレス帳の設定
 
 [!include [banner](../includes/banner.md)]
 

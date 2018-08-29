@@ -1,6 +1,6 @@
 ---
 title: "ワークスペースの Power BI 統合のコンフィギュレーション"
-description: "このチュートリアルでは、Microsoft Dynamics 365 for Finance and Operations の新しい環境を設定して PowerBI.com との統合をサポートする方法について説明します。この構成により、ワークスペースに Power BI コントロールが表示され、ユーザーはワークスペースにビジュアライゼーションを表示することができます。"
+description: "このチュートリアルでは、新しい Microsoft Dynamics 365 for Finance and Operations、また PowerBI.com との統合をサポートする環境をコンフィギュレーションする方法について説明します。 このコンフィギュレーションにより、ワークスペースに Power BI コントロールが表示され、ユーザーはワークスペースに視覚エフェクトをピン留めすることができます。"
 author: MilindaV2
 manager: AnnBe
 ms.date: 01/09/2018
@@ -19,10 +19,10 @@ ms.author: milindav
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: ae72a6ec3b8f4ba7f5866b5935bbd3363b51a7e0
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: f85e9af8aafc0ebd20a93d6a712dbd7b0bf31639
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 

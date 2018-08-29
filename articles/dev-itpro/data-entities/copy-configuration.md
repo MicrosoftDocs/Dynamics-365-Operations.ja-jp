@@ -1,5 +1,5 @@
 ---
-title: "ある企業または法人から、別の企業または法人にコンフィギュレーション データをコピーする"
+title: "会社間また法人間の構成データをコピー"
 description: "このトピックでは、構成データ プロジェクトと構成データ テンプレートを使用して、Microsoft Dynamics 365 for Finance and Operations のインスタンス間で企業または法人の構成データを移動する方法について説明します。"
 author: mikefalkner
 manager: AnnBe
@@ -17,13 +17,13 @@ ms.author: mfalkner
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Platform update 7
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 6751122eb29fa322b6feb8b48ed4149ba5513a44
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: c51ff4307babdb9cd3f3a85522365d02fa9ce044
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="copy-configuration-data-from-one-company-or-legal-entity-to-another"></a>ある企業または法人から、別の企業または法人にコンフィギュレーション データをコピーする
+# <a name="copy-configuration-data-between-companies-or-legal-entities"></a>会社間また法人間の構成データをコピー
 
 [!include [banner](../includes/banner.md)]
 

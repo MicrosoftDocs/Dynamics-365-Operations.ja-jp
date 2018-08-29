@@ -1,5 +1,5 @@
 ---
-title: "Web API および OData コントローラー"
+title: "Retail サーバーの Web API コントローラーを作成"
 description: "この記事では、Retail サーバー用の Web API コントローラーを作成できるように、ApiController クラスを拡張するためのコードを提供します。"
 author: kfend
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: c8724e28d088cbd9cb44ec96559c458ed7dc0a56
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 3ca63ad7391380247b0ad2e1a457185f20c6dc48
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="web-api-and-odata-controllers"></a>Web API および OData コントローラー
+# <a name="create-a-web-api-controller-for-retail-server"></a>Retail サーバーの Web API コントローラーを作成
 
 [!include [banner](../includes/banner.md)]
 

@@ -18,13 +18,13 @@ ms.author: sarvanis
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 2ecfb759a59292ddbce484b3ae20368c486fedd9
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: b18050aa3c01db5667f0a529e3eb0c5eba971dc8
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="configure-sql-server-reporting-services-for-an-on-premises-deployment"></a>オンプレミス配置の SQL Server Reporting Services のコンフィギュレーション
+# <a name="configure-sql-server-reporting-services-for-on-premises-deployments"></a>オンプレミス配置の SQL Server Reporting Services のコンフィギュレーション
 
 [!include [banner](../includes/banner.md)]
 
@@ -36,23 +36,23 @@ ms.lasthandoff: 03/26/2018
    
    [![サービス コンフィグレーション コネクションのレポート](./media/ssrs-config-manager-01.png)](./media/ssrs-config-manager-01.png)
    
-4. [サービス アカウント] タブをクリックし、設定が次の図と一致しているかを確認します。
+4. **サービス アカウント**タブをクリックし、設定が次の図と一致しているかを確認します。
 
     [![サービス アカウント タブ](./media/ssrs-config-manager-02.png)](./media/ssrs-config-manager-02.png)
     
-5. [Web サービス URL] タブをクリックし、設定が次の図と一致しているかを確認します。 
+5. **Web サービス URL** タブをクリックし、設定が次の図と一致しているかを確認します。 
 
     [![Web サービス URL タブ](./media/ssrs-config-manager-03.png)](./media/ssrs-config-manager-03.png) 
     
-6. [データベース] タブをクリックし、**データベース名**および**資格情報の設定**が次の図と一致しているかを確認します。 **注:** 新しいデータベースを作成する必要があります。 これを行うには [データベースの変更] をクリックし、新しいデータベース名が **DynamicsAxReportServer** であることを確認します。
+6. **データベース**タブをクリックし、**データベース名**および**資格情報の設定**が次の図と一致しているかを確認します。 **注:** 新しいデータベースを作成する必要があります。 これを行うには**データベースの変更**をクリックし、新しいデータベース名が **DynamicsAxReportServer** であることを確認します。
 
     [![データベース タブ](./media/ssrs-config-manager-04.png)](./media/ssrs-config-manager-04.png)
     
-7. [Web ポータル URL] タブをクリックし、設定が次の図と一致しているかを確認します。 **注:** [適用] をクリックし、ポータルを作成し、適切に設定する必要があります。
+7. **Web ポータル URL** タブをクリックし、設定が次の図と一致しているかを確認します。 **注:** **適用**をクリックし、ポータルを作成し、適切に設定する必要があります。
 
     [![web ポータル url タブ](./media/ssrs-config-manager-05.png)](./media/ssrs-config-manager-05.png)
     
-   ポータルを設定すると、[Web ポータル] タブは次の図と一致するようになります。
+   ポータルを設定すると、**Web ポータル**タブは次の図と一致するようになります。
     [![web ポータル タブ](./media/ssrs-config-manager-06.png)](./media/ssrs-config-manager-06.png)
     
 8. レポートの URL をクリックし、SQL Server Reporting Services web ポータルを表示します。 
@@ -60,25 +60,25 @@ ms.lasthandoff: 03/26/2018
 
    [![ダイナミクス フォルダー](./media/ssrs-config-manager-07.png)](./media/ssrs-config-manager-07.png)
     
-10. **Reporting Services 構成マネージャー** で [電子メール設定] タブをクリックし、設定が次の図に一致しているかを確認します。
+10. **Reporting Services 構成マネージャー** で**電子メール設定**タブをクリックし、設定が次の図に一致しているかを確認します。
 
     [![電子メール設定タブ](./media/ssrs-config-manager-08.png)](./media/ssrs-config-manager-08.png)
     
-11. [実行アカウント] タブをクリックし、設定が次の図と一致しているかを確認します。
+11. **実行アカウント**タブをクリックし、設定が次の図と一致しているかを確認します。
 
     [![実行アカウント タブ](./media/ssrs-config-manager-09.png)](./media/ssrs-config-manager-09.png)
     
-    [暗号化キー] タブで既定の設定を変更しないでください。[![[暗号化キー] タブ](./media/ssrs-config-manager-10.png)](./media/ssrs-config-manager-10.png)
+    **暗号化キー** タブで既定の設定を変更しないでください。[![暗号化キー タグ](./media/ssrs-config-manager-10.png)](./media/ssrs-config-manager-10.png)
     
-12. [定期売買の設定] タブをクリックし、設定が次の図と一致しているかを確認します。
+12. **定期売買の設定**タブをクリックし、設定が次の図と一致しているかを確認します。
 
     [![定期売買の設定タブ](./media/ssrs-config-manager-11.png)](./media/ssrs-config-manager-11.png)
     
-    [スケール アウト配置] タブで既定の設定を変更しないでください。[![[スケール アウト配置] タブ](./media/ssrs-config-manager-12.png)](./media/ssrs-config-manager-12.png)
+    **スケール アウト配置**タブで既定の設定を変更しないでください。[![スケール アウト配置タブ](./media/ssrs-config-manager-12.png)](./media/ssrs-config-manager-12.png)
     
-    [Power BI 統合] タブで既定の設定を変更しないでください。[![[Power BI 統合] タブ](./media/ssrs-config-manager-13.png)](./media/ssrs-config-manager-13.png) 
+    **Power BI 統合**タブで既定の設定を変更しないでください。[![Power BI 統合タブ](./media/ssrs-config-manager-13.png)](./media/ssrs-config-manager-13.png) 
     
-13. [終了] をクリックし、Reporting Services 構成マネージャー を閉じます。
+13. **終了**をクリックし、**Reporting Services 構成マネージャー**を閉じます。
 
     [![reporting services 構成マネージャーの終了](./media/ssrs-config-manager-14.png)](./media/ssrs-config-manager-14.png)
     

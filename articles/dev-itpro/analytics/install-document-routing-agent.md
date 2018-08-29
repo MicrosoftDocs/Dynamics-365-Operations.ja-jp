@@ -1,5 +1,5 @@
 ---
-title: "ネットワーク プリンター デバイスを有効にするためにドキュメント回覧エージェントをインストールする"
+title: "ネットワーク印刷を有効にするためにドキュメント回覧エージェントをインストールする"
 description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations 展開向けにドキュメント回覧エージェントをインストールして構成する方法について説明します。"
 author: TJVass
 manager: AnnBe
@@ -19,72 +19,72 @@ ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 7d30a313aa839f1d0f03f5808366d60e60fefdfa
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 3f18f34e66c6b3a3da2b1fbcf8f2f5aaee21d2ca
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="install-the-document-routing-agent-to-enable-network-printer-devices"></a>ネットワーク プリンター デバイスを有効にするためにドキュメント回覧エージェントをインストールする
+# <a name="install-the-document-routing-agent-to-enable-network-printing"></a>ネットワーク印刷を有効にするためにドキュメント回覧エージェントをインストールする
 
 [!include [banner](../includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 for Finance and Operations 展開向けにドキュメント回覧エージェントをインストールして構成する方法について説明します。
 
-<a name="whats-important-to-know"></a>知っている必要がある重要なこと
--------------------------
+## <a name="whats-important-to-know"></a>知っている必要がある重要なこと
 
--   Finance and Operations は、ネットワーク印刷シナリオを有効にするのに使用できる、ダウンロード可能なアプリケーションを提供します。
--   クライアント内管理ページを使用して、特定の会社のためにネットワーク プリンターを有効にすることができます。
--   ネットワーク印刷リソースへのアクセスには、Active Directory Domain Services (AD DS) 認証が必要です。
--   ドキュメント回覧エージェントを構成するために使用される Microsoft Azure Active Directory (Azure AD) アカウントには、Azure テナントと同じドメインを共有する必要があります。
--   アプリケーションには、Adobe Acrobat Reader が必要です。
--   クライアントは、Windows 8.1 および Windows 10、または Microsoft Windows Server 2012 R2 でのみサポートされています。
--   Dynamics AX 7.0 & Platform Update 1 配置は、クライアントで Microsoft .NET 4 を要求します。
--   プラットフォーム更新プログラム 2 以降には、クライアントに .NET 4.62 が必要です。
+- Finance and Operations は、ネットワーク印刷シナリオを有効にするのに使用できる、ダウンロード可能なアプリケーションを提供します。
+- クライアント内管理ページを使用して、特定の会社のためにネットワーク プリンターを有効にすることができます。
+- ネットワーク印刷リソースへのアクセスには、Active Directory Domain Services (AD DS) 認証が必要です。
+- ドキュメント回覧エージェントを構成するために使用される Microsoft Azure Active Directory (Azure AD) アカウントには、Azure テナントと同じドメインを共有する必要があります。
+- アプリケーションには、Adobe Acrobat Reader が必要です。
+- クライアントは、Windows 8.1 および Windows 10、または Microsoft Windows Server 2012 R2 でのみサポートされています。
+- Dynamics AX 7.0 & Platform Update 1 配置は、クライアントで Microsoft .NET 4 を要求します。
+- プラットフォーム更新プログラム 2 以降には、クライアントに .NET 4.62 が必要です。
 
 Finance and Operations アプリケーションに登録されているネットワーク プリンターは、環境で定義されているすべての法人 (会社とも呼ばれます) で使用できます。 ネットワーク プリンター設定は会社固有です。 したがって、管理者はユーザーのアクティブな会社に基づいてアクセスを制限できます。 たとえば、有効な会社内のユーザーは、ドキュメント回覧エージェントによって登録されるすべてのネットワーク プリンターへアクセスできる可能性があります。 ただし、別の会社内のユーザーは、アクセスがその会社に対して明示的に有効になるまで、それらのプリンターへアクセスできません。
 
 ## <a name="key-concepts"></a>重要な概念
 このトピックは、次の作業に役立ちます。
 
--   Finance and Operations のアプリケーションでネットワーク印刷のサポートに関連する主要なコンポーネントを識別します。
--   ドキュメント回覧エージェントの機能について説明します。
--   既存の Finance and Operations アプリケーションに対して機能するようにドキュメント回覧エージェントをコンフィギュレーションします。
--   管理ページを使用して、ネットワーク プリンタへのアクセスを管理します。
+- Finance and Operations のアプリケーションでネットワーク印刷のサポートに関連する主要なコンポーネントを識別します。
+- ドキュメント回覧エージェントの機能について説明します。
+- 既存の Finance and Operations アプリケーションに対して機能するようにドキュメント回覧エージェントをコンフィギュレーションします。
+- 管理ページを使用して、ネットワーク プリンタへのアクセスを管理します。
 
 ## <a name="install-the-document-routing-agent"></a>ドキュメント回覧エージェントのインストール
 Finance and Operations アプリケーションは、ドキュメント回覧エージェントを使用して、ネットワーク プリンター デバイスへのドキュメントのスプーリングを管理します。 Web アプリケーションに埋め込まれている直接リンクを使用して、クライアントを取得することができるようになりました。 アプリケーションをローカル コンピューターにダウンロードするには、次の手順を使用します。 次に、コンピューターに接続されているローカル プリンターとネットワーク プリンターの両方に、単一配置の Finance and Operations からアクセスできます。
 
-1.  **ネットワーク プリンターの管理**ページを開きます。(**組織管理** &gt; **設定** &gt; **ネットワーク プリンター**)
-2.  **オプション**タブの、**アプリケーション**グループで、**ドキュメント回覧エージェント インストーラーのダウンロード**をクリックします。 
-    
+1. **ネットワーク プリンターの管理**ページを開きます。(**組織管理** &gt; **設定** &gt; **ネットワーク プリンター**)
+2. **オプション**タブの、**アプリケーション**グループで、**ドキュメント回覧エージェント インストーラーのダウンロード**をクリックします。
+
     [![download-document-routing-agent-installer](./media/download-document-routing-agent-installer.png)](./media/download-document-routing-agent-installer.png)
 
-3.  インストール プロセスを開始するためにダウンロードしたファイルを実行します。
-4.  設定プロセスを完了します。
+3. インストール プロセスを開始するためにダウンロードしたファイルを実行します。
+4. 設定プロセスを完了します。
 
 アプリケーションをインストールした後、Finance and Operations アプリケーションのネットワーク プリンターとしてローカル プリンターの登録を開始できます。
 
 ## <a name="configure-the-document-routing-agent"></a>ドキュメント回覧エージェントのコンフィギュレーション
 処理中のドキュメントをホストする Azure サービスと通信できるように、クライアント アプリケーションを構成するには、次の手順を使用します。
 
-1.  Finance and Operations のアプリケーションを実行しているすべてのブラウザー インスタンスを閉じます。 これにより、ローカル Azure 認証トークンがリセットされます。
-2.  デスクトップで、ドキュメント回覧エージェントを実行します。
-3.  ツール バーで、**設定**をクリックします。 
-    
+1. Finance and Operations のアプリケーションを実行しているすべてのブラウザー インスタンスを閉じます。 これにより、ローカル Azure 認証トークンがリセットされます。
+2. デスクトップで、ドキュメント回覧エージェントを実行します。
+3. ツール バーで、**設定**をクリックします。
+
     [![the-document-routing-agent-window](./media/the-document-routing-agent-window.png)](./media/the-document-routing-agent-window.png)
 
-4.  次の設定を追加します。
-    -   **アプリケーション ID** - アプリケーション固有の ID で、自動的に入力されます。
-    -   **Finance and Operations URL** – Finance and Operations アプリケーションのベース URL。
-    -   **Azure AD テナント** - Azure AD のドメイン名。
+4. 次の設定を追加します。
 
-5.  **OK** をクリックします。
-6.  **サインイン**をクリックしてアカウントにサインインします。 
+    - **アプリケーション ID** - アプリケーション固有の ID で、自動的に入力されます。
+    - **Finance and Operations URL** – Finance and Operations アプリケーションのベース URL。
+    - **Azure AD テナント** - Azure AD のドメイン名。
 
-    > [!Note]
+5. **OK** をクリックします。
+6. **サインイン**をクリックしてアカウントにサインインします。
+
+    > [!NOTE]
     > アカウントは、Finance and Operations アプリケーションに関連付けられている Azure AD と同じドメインを共有する必要があります。 ドキュメント回覧エージェントで、ドキュメントを処理する準備が整いました。
 
 正常にサインインした後、**プリンター** ボタンがツールバーに表示されます。
@@ -92,25 +92,25 @@ Finance and Operations アプリケーションは、ドキュメント回覧エ
 ## <a name="register-network-printers-in-finance-and-operations"></a>ネットワーク プリンターを Finance and Operations に登録
 この手順を実行する前に、ローカル ホスト コンピューターのすべてのネットワーク プリンターをインストールしていることを確認してください。 サービス登録にインストールされているすべてのプリンター デバイスは利用可能です。 Finance and Operations アプリケーションで公開するプリンターのみを選択してください。
 
-1.  ツール バーで、**プリンター**をクリックします。
-2.  Finance and Operations アプリケーションで使用できるようにするプリンターを選択します。 
-    
+1. ツール バーで、**プリンター**をクリックします。
+2. Finance and Operations アプリケーションで使用できるようにするプリンターを選択します。
+
     [![printers-to-add](./media/printers-to-add.png)](./media/printers-to-add.png)
 
-3.  プリンターの既定の名前を指定します。
-4.  **OK** をクリックします。
+3. プリンターの既定の名前を指定します。
+4. **OK** をクリックします。
 
 この手順を完了した後、選択したプリンター デバイスは Finance and Operations アプリケーションのネットワーク プリンター カタログに登録されます。 システム管理者は、アプリケーション内からプリンターへのアクセスを有効にできるようになりました。
 
 ## <a name="administer-network-printers"></a>ネットワーク プリンターの管理
 クライアントのページを使用して、1 つ以上のドキュメント回覧エージェントによって登録されているネットワーク プリンターへのアクセスを管理します。 ネットワーク プリンターは、パスで一意に識別されます。 したがって、複数のドキュメント回覧エージェントによって登録されている場合でも、プリンターは一度に一覧表示されます。 Application Object Server (AOS) のネットワーク プリンターを有効にするには、次の手順を使用します。
 
-1.  **ネットワーク プリンターの管理**ページを開きます。(**組織管理** &gt; **設定** &gt; **ネットワーク プリンター**) 
+1. **ネットワーク プリンターの管理**ページを開きます。(**組織管理** &gt; **設定** &gt; **ネットワーク プリンター**)
 
     [![manage-network-printers-page](./media/manage-network-printers-page.png)](./media/manage-network-printers-page.png)
-    
-2.  各ネットワーク プリンターにマップされている既存のエントリを編集します。 変更の一環として、接続パスを編集します。
-3.  **印刷先** フィールドにプリンタをオプションとして含めるには、**有効** フィールドを **はい** に設定します。
+
+2. 各ネットワーク プリンターにマップされている既存のエントリを編集します。 変更の一環として、接続パスを編集します。
+3. **印刷先** フィールドにプリンタをオプションとして含めるには、**有効** フィールドを **はい** に設定します。
 
 ネットワーク プリンターは、Finance and Operations アプリケーションで使用できるようになりました。
 

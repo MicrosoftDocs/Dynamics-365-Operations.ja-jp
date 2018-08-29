@@ -1,5 +1,5 @@
 ---
-title: "小売店舗スケール ユニットのコンフィギュレーションとインストール"
+title: "Retail Store Scale Unit の構成とインストール"
 description: "このトピックでは、セルフ サービスを使用して、小売用バックオフィスで Retail Store Scale Unit を構成し、ダウンロードして、実店舗の 1 台以上のコンピューターにインストールする方法について説明します。"
 author: jashanno
 manager: AnnBe
@@ -20,14 +20,14 @@ ms.author: jashanno
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: fa4e3b2a99308f4c088bfe63339e09eb9027d1d4
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 9a419886758270cdbe07013426e9218c72280f64
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="retail-store-scale-unit-configuration-and-installation"></a>小売店舗スケール ユニットのコンフィギュレーションとインストール
+# <a name="configure-and-install-retail-store-scale-unit"></a>Retail Store Scale Unit の構成とインストール
 
 [!include [banner](../includes/banner.md)]
 
@@ -157,7 +157,6 @@ Retail Store スケール ユニット インストーラーは、まず、関�
 7. 使用する HTTPS ポートを入力し、コンピューターのホスト名が正しいことを確認します。 その後、**次へ** を選択して続行します。
 
     > [!NOTE]
-    > - HTTPS ポートは、店舗システムのプロファイルに一覧表示されます。 店舗システム プロファイルにアクセスするには、**小売店舗詳細** ページの **店舗システム** FastTabで、選択した店舗システムのプロファイル ID を選択します。
     > - インストーラーは自動的にホスト名を入力します。 何らかの理由で、インストールのためにホスト名を変更する必要がある場合は、ここで変更します。 ホスト名はシステムの FQDN でなければなりません。また、選択した Store システム エントリの **ホスト名**フィールドに入力する必要があります。
 
 8. アプリケーション ID (クライアント ID) および Retail Store Scale Unit インストールと関連するシークレットを入力します。 また、コンフィギュレーション ファイルから自動的に入力されるチャネル データベース ID を確認します。 その後、**インストール** を選択します。 Retail Cloud POS を使用する場合は、ページの下部にある **Retail Cloud POS のコンフィギュレーション** チェック ボックスが選択されていることを確認します。 この構成ではAzure AD サインインが要求され、必要なすべての情報が Azure で自動的に生成され、Retail Cloud POS をオンプレミスで使用できるようになります。
@@ -189,6 +188,7 @@ Retail Store スケール ユニット インストーラーは、まず、関�
 6. 新しい**発行者**行に、新たにインストールした Retail Store スケール ユニットの Retail サーバー URL を入力します。 URL の末尾に **/auth** を追加します。URL は `https://MyComputerName/RetailServer/auth` のようになります。
 
     > [!NOTE]
+    > 上記 URL では、大文字と小文字を区別します。
     > インストールされている各 Retail Store スケール ユニットに新しい ID プロバイダー行があります。 各 Retail Store Scale Unit では、この URL に似た URL が作成されます。
 
 7. **名前**列に、URL が属する店舗の説明を入力します。
@@ -205,7 +205,8 @@ Retail Store スケール ユニット インストーラーは、まず、関�
     - **ClientId** 列に、**Modern POS** を入力します。 **Type** フィールドを **Public** に、**UserType** フィールドを **Worker** に設定します。
 
 12. アクション ウィンドウで、**保存**を選択します。
-13. 完了したら、インストーラーに戻り、**完了** を選択します。
+13. Retail では、**Retail** &gt; **Retail IT** &gt; **配送スケジュール**へ移動し、CDX ジョブ **1110** を実行します。
+14. 完了したら、インストーラーに戻り、**完了** を選択します。
 
     インストーラーの最後のページには、すべてのコンポーネントが正しく動作することをテストして検証するために使用できる貴重な情報が含まれています。 このページは、検証が完了する段階まで開いたままにしておきます。
 

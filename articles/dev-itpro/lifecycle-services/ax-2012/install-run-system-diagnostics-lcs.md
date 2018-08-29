@@ -1,5 +1,5 @@
 ---
-title: "システム診断のインストールと実行 (AX 2012)"
+title: "システム診断のインストールと実行"
 description: "Microsoft Dynamics Lifecycle Services では、Microsoft Dynamics AX 環境を検出してデータを収集するサービスが使用できるようになる前にインストールする必要があるオンプレミス コンポーネントがシステム診断に含まれています。"
 author: manalidongre
 manager: AnnBe
@@ -18,10 +18,10 @@ ms.author: manado
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 4c745035bf68abe99154e40a805c0c94dfd899da
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 58359e84c44fd4dbda109308754eee5e3cb7098c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 

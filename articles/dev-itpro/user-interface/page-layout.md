@@ -1,5 +1,5 @@
 ---
-title: "レイアウト"
+title: "Web クライアントのページ レイアウト"
 description: "この記事では、Web クライアントのレイアウトについて説明します。 レイアウトは、ページ上にコントロールを表示する方法を指定するデザイン プロセスです。"
 author: jasongre
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 67560231479530169476119048303ffa9e523307
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: f34628361f91a47bc0f8b0670e78e1a354aae04a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="layout"></a>レイアウト
+# <a name="page-layout-in-the-web-client"></a>Web クライアントのページ レイアウト
 
 [!include [banner](../includes/banner.md)]
 

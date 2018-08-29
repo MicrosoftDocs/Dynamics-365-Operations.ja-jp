@@ -18,14 +18,14 @@ ms.author: lolsen
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 11
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 018f872644adf874e9d6a3c9bb05ad588793b25b
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: c8b71fe1e49c5c1db148e9710a1c64730c5d3a7e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="extend-table-maps-used-as-interfaces"></a>インターフェイスとして使用されるテーブル マップの拡張
+# <a name="extend-table-maps-that-are-used-as-interfaces"></a>インターフェイスとして使用されるテーブル マップの拡張
 
 [!include [banner](../includes/banner.md)]
 

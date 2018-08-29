@@ -1,5 +1,5 @@
 ---
-title: "Dynamics AX (AX 2012) インスタンス間でのデータのコピー"
+title: "Dynamics AX インスタンス間でのデータのコピー"
 description: "このトピックでは、データ インポート/エクスポート フレームワーク (DIXF) を使用して Dynamics AX インスタンス間でデータをコピーする方法について説明します。"
 author: kfend
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: kfend
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 554b3059556e4a5b044a9f5e244d0d50b2cb4e71
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 680ebdaec7e624ca5da9cef5f444b0fa1da52e5e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="copy-data-between-dynamics-ax-instances-ax-2012"></a>Dynamics AX (AX 2012) インスタンス間でのデータのコピー
+# <a name="copy-data-between-dynamics-ax-instances"></a>Dynamics AX インスタンス間でのデータのコピー
 
 [!include [banner](../../includes/banner.md)]
 

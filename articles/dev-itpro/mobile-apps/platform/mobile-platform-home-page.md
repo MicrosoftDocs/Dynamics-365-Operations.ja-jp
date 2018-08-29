@@ -18,14 +18,14 @@ ms.author: robinr
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
 ms.translationtype: HT
-ms.sourcegitcommit: f53ecd61cdfbc9d93c9658b433a6bc9a591892c4
-ms.openlocfilehash: 084a3cd5b03a9c31610b9dd38bb2ec254899d7e9
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 85389fc13ff18bf63c5715d947ff9cab0032116d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="mobile-platform"></a>モバイル プラットフォーム
+# <a name="mobile-platform-home-page"></a>モバイル プラットフォームのホーム ページ
 
 [!include [banner](../../includes/banner.md)]
 

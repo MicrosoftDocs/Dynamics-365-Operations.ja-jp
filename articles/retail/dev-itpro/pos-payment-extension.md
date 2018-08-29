@@ -1,5 +1,5 @@
 ---
-title: "POS 支払拡張機能"
+title: "販売時点管理 (POS) 支払拡張機能"
 description: "支払いの拡張性をサポートするために POS で拡張点を使用すると、ハードウェア ステーション API を使用する支払デバイスまたは支払コネクタに主要な支払いロジックを実装することができます。"
 author: mugunthanm
 manager: AnnBe
@@ -17,14 +17,14 @@ ms.author: mumani
 ms.search.validFrom: 2017-09-01
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: df83abf9e020a6b0708efc0cba01fe185bd6db12
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 9e08f0a11d50e60270aab2009c4efd67b7d2f5f9
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="pos-payment-extension"></a>POS 支払拡張機能
+# <a name="point-of-sale-pos-payment-extension"></a>販売時点管理 (POS) 支払拡張機能
 
 [!include [banner](../../includes/banner.md)]
 

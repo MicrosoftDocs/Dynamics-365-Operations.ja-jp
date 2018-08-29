@@ -1,5 +1,5 @@
 ---
-title: "先頭値"
+title: "値モジュール"
 description: "これは、単一の値のコントロールの基本クラスです。"
 author: shadykdc
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.author: kashea
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 3f18833e20f04fe96102d157899cefcdb892f5a3
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: f45103470c0a43750dff9af5c246a2c9e7873f56
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="value"></a>先頭値 
+# <a name="value-module"></a>値モジュール
 
 [!include [banner](../../../../includes/banner.md)]
 

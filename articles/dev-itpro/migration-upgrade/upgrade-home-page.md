@@ -1,5 +1,5 @@
 ---
-title: "アップグレード、更新プログラム、および修正プログラム"
+title: "アップグレード、更新プログラム、および修正プログラム ホームページ"
 description: "これらのトピックでは、Dynamics 365 for Finance and Operations の環境およびデータのアップグレード、更新、および修正プログラムの適用のためのプロセスについて説明します。"
 author: margoc
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
-ms.openlocfilehash: c4baf4189379bd191d2dd964c6e2c312be907e97
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: eb0632ee46ff4680184c94b9da0910ade158d2b0
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="upgrades-updates-and-hotfixes"></a>アップグレード、更新プログラム、および修正プログラム
+# <a name="upgrades-updates-and-hotfixes-home-page"></a>アップグレード、更新プログラム、および修正プログラム ホームページ
 
 [!include [banner](../includes/banner.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: "プログラミング言語のサポート"
+title: "X++ と X++ コンパイラの変更"
 description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations のコンパイラに対する変更点について説明します。"
 author: pvillads
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: e611ce6dda49ced7bb8aa251eb20783fddd7d92e
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: e4135506ce79ea51b10350220f38f46aa4c6776c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="programming-language-support"></a>プログラミング言語のサポート
+# <a name="changes-in-x-and-the-x-compiler"></a>X++ と X++ コンパイラの変更
 
 [!include [banner](../includes/banner.md)]
 

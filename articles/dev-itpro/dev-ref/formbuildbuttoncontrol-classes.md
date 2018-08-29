@@ -1,5 +1,5 @@
 ---
-title: "F クラス - FormBuildFastTabSummarySeparator への FormBuildButtonControl"
+title: "F クラス (FormBuildButtonControl から FormBuildFastTabSummarySeparator)"
 description: "文字 F で始まるシステム API クラス。"
 author: RobinARH
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 971ef2a39b21f6dd4d668bf2090f1de9f114b93b
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 799901536097cc07d3df0ae6fe8a85f3018d5a19
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="f-classes---formbuildbuttoncontrol-to-formbuildfasttabsummaryseparator"></a>F クラス - FormBuildFastTabSummarySeparator への FormBuildButtonControl
+# <a name="f-classes-formbuildbuttoncontrol-to-formbuildfasttabsummaryseparator"></a>F クラス (FormBuildButtonControl から FormBuildFastTabSummarySeparator)
 
 [!include [banner](../includes/banner.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: "ビジネス プロセス モデラー"
+title: "Lifecycle Services (LCS) のビジネス プロセス モデラー (BPM)"
 description: "この記事では、Dynamics Lifecycle Services (LCS) のビジネス プロセス モデラー ツールについて説明します。"
 author: kfend
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: ntecklu
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 7417701711202d0da63095c274f10ae9fcd88e2f
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 8d5a74a512fcd05d2a64a82e26b0998af9423df0
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="business-process-modeler"></a>ビジネス プロセス モデラー
+# <a name="business-process-modeler-bpm-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) のビジネス プロセス モデラー (BPM)
 
 [!include [banner](../includes/banner.md)]
 

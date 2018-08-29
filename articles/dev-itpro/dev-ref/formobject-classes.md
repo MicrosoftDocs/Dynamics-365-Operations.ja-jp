@@ -1,5 +1,5 @@
 ---
-title: "F クラス - FormRealControl への FormObject"
+title: "F クラス (FormObject から FormRealControl)"
 description: "FormObject から FormRealControl までのクラスの API 参照。"
 author: RobinARH
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 1d52ea679a125a9d788d9e746c1d8446632e0ed7
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 52266f2a261db1963cece995ccd6006dfa1de51a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="f-classes---formobject-to-formrealcontrol"></a>F クラス - FormRealControl への FormObject
+# <a name="f-classes-formobject-to-formrealcontrol"></a>F クラス (FormObject から FormRealControl)
 
 [!include [banner](../includes/banner.md)]
 

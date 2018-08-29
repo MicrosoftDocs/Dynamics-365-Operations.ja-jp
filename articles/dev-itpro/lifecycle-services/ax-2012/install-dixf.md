@@ -1,5 +1,5 @@
 ---
-title: "データのインポート/エクスポート フレームワークのインストール (AX 2012)"
+title: "データのインポート/エクスポート フレームワーク (DIXF) のインストール"
 description: "このトピックでは、データ インポート/エクスポート フレームワークをインストールする方法について説明します。"
 author: kfend
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: kfend
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: a4109296d105faf0428ce1de3a7f7871a2bb841c
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 8ee680bd41a0d46f6ed30cbb42c97f6b8e13e3cb
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="install-the-data-importexport-framework-ax-2012"></a>データのインポート/エクスポート フレームワークのインストール (AX 2012)
+# <a name="install-the-data-importexport-framework-dixf"></a>データのインポート/エクスポート フレームワーク (DIXF) のインストール
 
 [!include [banner](../../includes/banner.md)]
 

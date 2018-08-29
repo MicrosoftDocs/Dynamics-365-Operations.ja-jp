@@ -1,5 +1,5 @@
 ---
-title: "ラベルの変更"
+title: "ラベル拡張ファイルを使用してラベルを変更します"
 description: "このトピックでは、ラベル拡張ファイルを作成してラベルの文字列値を変更する方法、同じラベル ファイルに新しいラベルを追加する方法、または新しい言語を追加する方法について説明します。"
 author: smithanataraj
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: smnatara
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 4
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 76bf19099defa12b1d7e2acc1268b9e5603720a5
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 5e6856476e532e7e50f656f0e64d013d0e5aa03c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="change-a-label"></a>ラベルの変更
+# <a name="change-labels-by-using-label-extension-files"></a>ラベル拡張ファイルを使用してラベルを変更します
 
 [!include [banner](../includes/banner.md)]
 

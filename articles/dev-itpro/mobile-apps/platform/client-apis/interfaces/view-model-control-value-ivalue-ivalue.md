@@ -1,5 +1,5 @@
 ---
-title: "先頭値"
+title: "値の型"
 description: "値コントロール型 これは、単一の値のコントロールの基本クラスです。"
 author: shadykdc
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.author: kashea
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: d81ab285afb18c3b8d5f8a607486093c777947d2
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 592fadfc4e095e7a52d6ad52db0c32a41c79d756
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="value-type"></a>Value タイプ
+# <a name="value-type"></a>値の型
 
 [!include [banner](../../../../includes/banner.md)]
 

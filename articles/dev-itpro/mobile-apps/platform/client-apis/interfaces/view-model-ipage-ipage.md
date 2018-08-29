@@ -1,5 +1,5 @@
 ---
-title: "ページ"
+title: "ページのタイプ"
 description: "ページ オブジェクト タイプ。"
 author: shadykdc
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.author: kashea
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 38ecc69ed477fa2e0e9da34c70faa34826dfcc71
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 48234ab61fef1a8ee9263eec78c3139487c828e5
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="page-type"></a>Page タイプ
+# <a name="page-type"></a>ページのタイプ
 
 [!include [banner](../../../../includes/banner.md)]
 

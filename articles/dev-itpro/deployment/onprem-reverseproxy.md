@@ -1,5 +1,5 @@
 ---
-title: "オンプレミス環境のリバース プロキシのコンフィギュレーション"
+title: "オンプレミス環境のリバース プロキシの構成"
 description: "このトピックでは、リバース プロキシの背後にあるオンプレミス環境で Dynamics 365 for Finance and Operations を保護する方法について説明します。"
 author: sarvanisathish
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.author: sarvanis
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 28cfbecfaf5d100b5294f9f902f6c7fd8038e011
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 4bf3291cdfcf7274b1564a6872221994f228c39e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="configure-reverse-proxy-for-your-on-premises-environment"></a>オンプレミス環境のリバース プロキシのコンフィギュレーション
+# <a name="configure-reverse-proxies-for-on-premises-environments"></a>オンプレミス環境のリバース プロキシの構成
 
 [!include [banner](../includes/banner.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: "BPM のタスクの完了"
+title: "ビジネス プロセス モデラー (BPM) でのタスクの完了"
 description: "このトピックでは、業務プロセス モデル (BPM) で完了できるその他のタスクに関する情報が提供されます。 たとえば、BPM ライブラリの発行、方法のエクスポート、および BPM ライブラリを配布することができます。"
 author: kfend
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: ntecklu
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 82a94a6a7484c857bc8d44b0f44d921accc1dc9e
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 7b7540a1bffff8dea1a69f36cfad9317747f57c7
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="complete-tasks-in-business-process-modeler"></a>ビジネス プロセス モデラーでのタスクの完了
+# <a name="complete-tasks-in-business-process-modeler-bpm"></a>ビジネス プロセス モデラー (BPM) でのタスクの完了
 
 [!include [banner](../includes/banner.md)]
 

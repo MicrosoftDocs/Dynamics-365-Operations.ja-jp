@@ -1,5 +1,5 @@
 ---
-title: "Lifecycle Services のダウンロード可能ツール (AX 2012)"
+title: "Lifecycle Services (LCS) のダウンロード可能ツール"
 description: "このトピックでは、Lifecycle Services (LCS) からダウンロードできるツールについて説明します。"
 author: kfend
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: robadawy
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 40607c4959d7f8c1bc8764bbc6f60670dbe5ea64
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: fcba6bdf3a121cdc1caf60430bed9dad7e25fc22
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="lifecycle-services-downloadable-tools-ax-2012"></a>Lifecycle Services のダウンロード可能ツール (AX 2012)
+# <a name="downloadable-tools-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) のダウンロード可能ツール
 
 [!include [banner](../../includes/banner.md)]
 

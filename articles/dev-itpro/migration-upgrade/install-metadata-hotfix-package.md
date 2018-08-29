@@ -1,5 +1,5 @@
 ---
-title: "メタデータ修正プログラムのインストール"
+title: "開発環境でのメタデータの修正プログラムのインストール"
 description: "このトピックでは、開発環境にアプリケーション メタデータの修正プログラムをインストールする方法について説明します。"
 author: RobinARH
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 7f38ae4fd1141f3fa773b07208847626003b6946
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 910e7acea6a5ae70173a23d4cfe3323eeee299cf
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="install-a-metadata-hotfix"></a>メタデータ修正プログラムのインストール
+# <a name="install-metadata-hotfixes-in-development-environments"></a>開発環境でのメタデータの修正プログラムのインストール
 
 [!include [banner](../includes/banner.md)]
 

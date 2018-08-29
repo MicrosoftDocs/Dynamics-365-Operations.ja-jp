@@ -1,5 +1,5 @@
 ---
-title: "Application update 7.3 での電子申告フレームワーク API の変更"
+title: "Application update 7.3 での ER フレームワーク API の変更"
 description: "このトピックでは、Dynamics 365 for Finance and Operations、Enterprise Edition のアプリケーション更新プログラム 7.3 での電子申告 (ER) フレームワークの API における変更について説明します。"
 author: NickSelin
 manager: AnnBe
@@ -16,20 +16,21 @@ ms.author: nselin
 ms.search.validFrom: 2017-11-28
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: c7d7f99d7200e78e0658ca6c9ef7ced35885091f
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 94cd516cac64cb132abdc0d3a4f234bf6ef19573
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="electronic-reporting-framework-api-changes-for-application-update-73"></a>Application update 7.3 での電子申告フレームワーク API の変更
+# <a name="er-framework-api-changes-for-application-update-73"></a>Application update 7.3 での ER フレームワーク API の変更
 
 [!include [banner](../includes/banner.md)]
 
 このトピックでは、Dynamics 365 for Finance and Operations、Enterprise Edition のアプリケーション更新プログラム 7.3 での電子申告 (ER) フレームワークの API における変更について説明します。
 
 ER API には 2 つのタイプの変更があります。
+
 - いくつかの X++ クラスが外部アセンブリに X++ から移行されました。
 - X++ クラスの残りの部分は、内部としてマークされています。
 
@@ -37,19 +38,27 @@ ER API には 2 つのタイプの変更があります。
 
 外部クラスにアクセスするには、ファイルの先頭に **using** ディレクティブを追加する必要があります。
 
-    using Microsoft.Dynamics365.LocalizationFramework;
+```
+using Microsoft.Dynamics365.LocalizationFramework;
+```
 
 たとえば、追加の変更をせずに外部クラスにアクセスすることができます。
 
-    var destination = new ERFileDestinationMemory();
+```
+var destination = new ERFileDestinationMemory();
+```
 
 名前空間のエイリアスを作成することもできます。
 
-    using LF = Microsoft.Dynamics365.LocalizationFramework;
+```
+using LF = Microsoft.Dynamics365.LocalizationFramework;
+```
 
 作成した名前空間のエイリアスを使用して、外部のクラスを参照することができます。
 
-    var destination = new LF.ERFileDestinationMemory();
+```
+var destination = new LF.ERFileDestinationMemory();
+```
 
 ## <a name="how-to-access-internal-x-objects-by-using-erobjectsfactory"></a>ERObjectsFactory を使用して内部 X++ オブジェクトにアクセスする方法
 
@@ -59,75 +68,95 @@ ER API には 2 つのタイプの変更があります。
 
 アプリケーション 更新 7.3 より前
 
-    // pattern
-    ERFormatMappingTableLookup::lookupFormatMapping(<form control>, <model name>[, <data container name>]);
-    // sample code
-    ERFormatMappingTableLookup::lookupFormatMapping(_referenceGroupControl, bankLCMiscChargeReportERModelName);
+```
+// pattern
+ERFormatMappingTableLookup::lookupFormatMapping(<form control>, <model name>[, <data container name>]);
+// sample code
+ERFormatMappingTableLookup::lookupFormatMapping(_referenceGroupControl, bankLCMiscChargeReportERModelName);
+```
 
 アプリケーション更新プログラム 7.3 以降
 
-    // pattern
-    ERObjectsFactory::createFormatMappingTableLookupForControlAndModel(<form control>, <model name>[, <data container name>]).performFormLookup();
-    // sample code
-    ERObjectsFactory::createFormatMappingTableLookupForControlAndModel(_referenceGroupControl, bankLCMiscChargeReportERModelName).performFormLookup();
+```
+// pattern
+ERObjectsFactory::createFormatMappingTableLookupForControlAndModel(<form control>, <model name>[, <data container name>]).performFormLookup();
+// sample code
+ERObjectsFactory::createFormatMappingTableLookupForControlAndModel(_referenceGroupControl, bankLCMiscChargeReportERModelName).performFormLookup();
+```
 
 ### <a name="code-to-run-a-format-mapping-for-data-export"></a>データ エクスポート用のフォーマット マッピングを実行するためのコード
 
 アプリケーション 更新 7.3 より前
 
-    // pattern
-    ERFormatMappingRun::constructByFormatMappingId(<format mapping id>, <file name>, <show prompt dialog>).run();
-    // sample code
-    ERFormatMappingRun::constructByFormatMappingId(erBinding, '', true).run();
+```
+// pattern
+ERFormatMappingRun::constructByFormatMappingId(<format mapping id>, <file name>, <show prompt dialog>).run();
+// sample code
+ERFormatMappingRun::constructByFormatMappingId(erBinding, '', true).run();
+```
 
 アプリケーション更新プログラム 7.3 以降
 
-    // pattern
-    ERObjectsFactory::createFormatMappingRunByFormatMappingId(<format mapping id>, <file name>, <show prompt dialog>).run();
-    // sample code
-    ERObjectsFactory::createFormatMappingRunByFormatMappingId(erBinding, '', true).run();
+```
+// pattern
+ERObjectsFactory::createFormatMappingRunByFormatMappingId(<format mapping id>, <file name>, <show prompt dialog>).run();
+// sample code
+ERObjectsFactory::createFormatMappingRunByFormatMappingId(erBinding, '', true).run();
+```
 
 ### <a name="code-to-run-a-format-mapping-for-data-import"></a>データ インポート用の形式マッピングを実行するためのコード
 
 アプリケーション 更新 7.3 より前
 
-    // pattern
-    ERModelMappingDestinationRun::constructByImportFormatMappingId(<mapping id>, <integration point>).run();
-    // sample code
-    ERModelMappingDestinationRun::constructByImportFormatMappingId(custPaymModeTable.ERModelMappingTable, CustVendOutPaymConstants::IntegrationPoint).run();
+```
+// pattern
+ERModelMappingDestinationRun::constructByImportFormatMappingId(<mapping id>, <integration point>).run();
+// sample code
+ERModelMappingDestinationRun::constructByImportFormatMappingId(custPaymModeTable.ERModelMappingTable, CustVendOutPaymConstants::IntegrationPoint).run();
+```
 
 アプリケーション更新プログラム 7.3 以降
 
-    // pattern
-    ERObjectsFactory::createMappingDestinationRunByImportFormatMappingId(<mapping id>, <integration point>).run();
-    // sample code
-    ERObjectsFactory::createMappingDestinationRunByImportFormatMappingId(custPaymModeTable.ERModelMappingTable, CustVendOutPaymConstants::IntegrationPoint).run();
+```
+// pattern
+ERObjectsFactory::createMappingDestinationRunByImportFormatMappingId(<mapping id>, <integration point>).run();
+// sample code
+ERObjectsFactory::createMappingDestinationRunByImportFormatMappingId(custPaymModeTable.ERModelMappingTable, CustVendOutPaymConstants::IntegrationPoint).run();
+```
 
 ### <a name="code-to-create-a-browser-file-destination"></a>ブラウザー ファイルの宛先を作成するためのコード
 
 アプリケーション 更新 7.3 より前
 
-    // sample code
-    new ERFileDestinationBrowser();
+```
+// sample code
+new ERFileDestinationBrowser();
+```
 
 アプリケーション更新プログラム 7.3 以降
 
-    // sample code
-    ERObjectsFactory::createFileDestinationBrowser();
+```
+// sample code
+ERObjectsFactory::createFileDestinationBrowser();
+```
 
 ### <a name="code-to-create-an-attachment-file-destination"></a>添付ファイルの宛先を作成するためのコード
 
 アプリケーション 更新 7.3 より前
 
-    // pattern
-    ERFileDestinationAttachment::construct(<record>, ERDocuManagement::instance().otherDocuType());
-    // sample code
-    ERFileDestinationAttachment::construct(_cashRegisterFiscalTrans_W, ERDocuManagement::instance().otherDocuType());
+```
+// pattern
+ERFileDestinationAttachment::construct(<record>, ERDocuManagement::instance().otherDocuType());
+// sample code
+ERFileDestinationAttachment::construct(_cashRegisterFiscalTrans_W, ERDocuManagement::instance().otherDocuType());
+```
 
 アプリケーション更新プログラム 7.3 以降
 
-    // pattern
-    ERObjectsFactory::createFileDestinationAttachmentWithOtherDocuType(<record>);
-    // sample code
-    ERObjectsFactory::createFileDestinationAttachmentWithOtherDocuType(_cashRegisterFiscalTrans_W);
+```
+// pattern
+ERObjectsFactory::createFileDestinationAttachmentWithOtherDocuType(<record>);
+// sample code
+ERObjectsFactory::createFileDestinationAttachmentWithOtherDocuType(_cashRegisterFiscalTrans_W);
+```
 

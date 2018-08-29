@@ -1,5 +1,5 @@
 ---
-title: "Azure に Dynamics AX 2012 R3 または AX 2012 R3 CU8 デモ環境を配置する"
+title: "Azure に AX 2012 R3 または AX 2012 R3 CU8 デモ環境を配置する"
 description: "このトピックでは、Microsoft Azure での開発環境の展開方法について説明します。このトピックでは、Microsoft Azure に AX 2012 R3 または AX 2012 R3 CU8 のデモ環境を展開する方法について説明します。"
 author: kfend
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: kfend
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 6d6331214bdc206f251f4967f3f6fa480c58f9f1
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 398a1942d9e45dfb108bc7fceb6346e8c68e7ea4
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="deploy-a-dynamics-ax-2012-r3-or-ax-2012-r3-cu8-demo-environment-on-azure"></a>Azure に Dynamics AX 2012 R3 または AX 2012 R3 CU8 デモ環境を配置する
+# <a name="deploy-ax-2012-r3-or-ax-2012-r3-cu8-demo-environments-on-azure"></a>Azure に AX 2012 R3 または AX 2012 R3 CU8 デモ環境を配置する
 
 [!include [banner](../../includes/banner.md)]
 

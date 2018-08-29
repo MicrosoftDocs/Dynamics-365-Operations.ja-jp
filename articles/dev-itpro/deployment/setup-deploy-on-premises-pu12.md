@@ -3,7 +3,7 @@ title: "オンプレミス環境の設定と配置 (プラットフォーム更�
 description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations、Enterprise エディション (プラットフォーム更新プログラム 12) にオンプレミス環境を計画、設定、展開する方法について説明します。"
 author: sarvanisathish
 manager: AnnBe
-ms.date: 05/08/2018
+ms.date: 08/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: sarvanis
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 12
 ms.translationtype: HT
-ms.sourcegitcommit: 3bb18b51e2275de224df0990819a8f9e657efb72
-ms.openlocfilehash: 11d70c185f1cfbeef435be5c46e090aadf71125b
+ms.sourcegitcommit: 8a3c4ed8f3ed79ab0cb3e59076734877d270bd68
+ms.openlocfilehash: 51aa38a86305281ce567ad7650f926324a2c47c9
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
@@ -48,7 +48,7 @@ Finance and Operations アプリケーションは、次の 3 つの主要なコ
 
 これらのコンポーネントは、次のシステム ソフトウェアによって異なります。
 
-- Microsoft Windows Server 2016
+- Microsoft Windows Server 2016 (英語のインストールのみがサポートされます)
 - 以下の特徴を有する Microsoft SQL Server 2016 SP1:
   - フルテキスト インデックス検索が有効にされている。
   - SQL Server Reporting Services (SSRS) - これは BI 仮想マシンに配置されます。
@@ -205,7 +205,7 @@ Service Fabric クラスターと展開されているすべてのアプリケ�
 | 目的                                      | 説明 | 追加条件 |
 |----------------------------------------------|-------------|-------------------------|
 | SQL Server SSL 証明書                   | この証明書は、ネットワーク上の SQL Server インスタンスとクライアント アプリケーションの間で転送されるデータを暗号化するために使用されます。 | 証明書の場合、ドメイン名は、SQL Server のインスタンスまたはリスナーの完全修飾ドメイン名 (FQDN) と一致する必要があります。 たとえば、SQL のリスナーが DAX7SQLAOSQLA のコンピューターにホストされている場合、証明書の DNS 名は、DAX7SQLAOSQLA.contoso.com です。 |
-| Service Fabric Server 証明書            | <p>この証明書を使用して、Service Fabric ノード間のノードからノードの通信を保護します。</p> <p> この証明書は、クラスターに接続するクライアントに提示されるサーバー証明書としても使用されます。</p> | ドメインの SSL ワイルドカード証明書を使用することができます。 たとえば、\*. contoso.com。**注記:** ワイルドカード証明書は、発行先となるドメインの最初のレベル サブドメインのみをセキュリティ保護できるようにします。<p>この例では、Service Fabric ドメインが sf.d365ffo.onprem.contoso.com であるため、証明書にサブジェクト代替名 (SAN) としてこれを含める必要があります。 証明機関と連携して、追加の SAN を取得する必要があります。</p> |
+| Service Fabric Server 証明書            | <p>この証明書を使用して、Service Fabric ノード間のノードからノードの通信を保護します。</p> <p> この証明書は、クラスターに接続するクライアントに提示されるサーバー証明書としても使用されます。</p> | ドメインの SSL ワイルドカード証明書を使用することができます。 たとえば、\*.contoso.com です。 **注記:** ワイルド カード証明書は、発行先となるドメインの最初のレベル サブドメインのみをセキュリティ保護できるようにします。<p>この例では、Service Fabric ドメインが sf.d365ffo.onprem.contoso.com であるため、証明書にサブジェクト代替名 (SAN) としてこれを含める必要があります。 証明機関と連携して、追加の SAN を取得する必要があります。</p> |
 | Service Fabric Client 証明書            | この証明書は、クライアントによって Service Fabric クラスターを表示および管理するために使用されます。 | |
 | 証明書の暗号化                     | この証明書は、SQL Server パスワードとユーザー アカウントのパスワードなどの重要な情報を暗号化するために使用されます。  | <p> 証明書は、プロバイダー **Microsoft Enhanced Cryptographic Provider v1.0** を使用して作成する必要があります。 </p><p>証明書キーの使用にはデータ暗号化 (10) が含まれている必要があり、サーバー認証またはクライアント認証は含めないでください。</p><p>詳細については、[Service Fabric アプリケーションでの機密情報の管理](/azure/service-fabric/service-fabric-application-secret-management) を参照してください。</p> |
 | AOS SSL 証明書                          | <p>この証明書は、AOS Web サイトに接続するクライアントに提示されるサーバー証明書としても使用されます。 また、WCF (Windows Communication Foundation) / SOAP (Simple Object Access Protocol) 証明書を有効にするためにも使用されます。</p><p>Service Fabric サーバー証明書として使用するのと同じワイルドカード証明書を使用することができます。</p> | <p>この例では、ドメイン名 ax.d365ffo.onprem.contoso.com を、Service Fabric Server 証明書としてサブジェクト代替名 (SAN) に追加する必要があります。</p> |

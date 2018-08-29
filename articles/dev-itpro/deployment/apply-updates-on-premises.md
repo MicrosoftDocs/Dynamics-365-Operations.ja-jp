@@ -1,5 +1,5 @@
 ---
-title: "オンプレミス配置への更新プログラムの適用"
+title: "オンプレミス配置へ更新プログラムを適用"
 description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations のオンプレミス展開に更新プログラムを適用する方法について説明します。"
 author: manalidongre
 manager: AnnBe
@@ -18,13 +18,13 @@ ms.author: sarvanis
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 12
 ms.translationtype: HT
-ms.sourcegitcommit: fe0a25217e69f19c66f9e2dd8be1966a53961c03
-ms.openlocfilehash: b4f190247ced2e553fd77185cb63f55b30e3241f
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 0d81ce02b308d2328322dab0f6a5d2e6aa479530
 ms.contentlocale: ja-jp
-ms.lasthandoff: 07/05/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="apply-updates-to-an-on-premises-deployment"></a>オンプレミス配置への更新プログラムの適用
+# <a name="apply-updates-to-on-premises-deployments"></a>オンプレミス配置へ更新プログラムを適用
 
 [!include [banner](../includes/banner.md)]
 

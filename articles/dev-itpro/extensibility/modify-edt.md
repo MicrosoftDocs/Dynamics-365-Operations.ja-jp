@@ -1,5 +1,5 @@
 ---
-title: "拡張データ型の変更"
+title: "拡張機能を通じて拡張データ型 (EDT) を変更する"
 description: "拡張機能を使用して、拡張データ型 (EDT) で複数のプロパティをカスタマイズすることができます。"
 author: ivanv-microsoft
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: ivanv
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
 ms.translationtype: HT
-ms.sourcegitcommit: aa5eab6dbf2cc604239cac199817ead6bef6f3de
-ms.openlocfilehash: 7f4e3699dd4cfaa3b37ab18d434c08cf827a976e
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: e364a48a0b48fe8e705ae77d49f869dc9a4155b2
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="modify-an-extended-data-type"></a>拡張データ型の変更
+# <a name="modify-extended-data-types-edts-through-extension"></a>拡張機能を通じて拡張データ型 (EDT) を変更する
 
 [!include [banner](../includes/banner.md)]
 

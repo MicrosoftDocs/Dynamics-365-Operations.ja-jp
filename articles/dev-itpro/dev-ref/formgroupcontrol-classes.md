@@ -1,5 +1,5 @@
 ---
-title: "F クラス - FormIntControl への FormGroupControl"
+title: "F くらす (FormGroupControl から FormIntControl)"
 description: "このトピックには、FormGroupControl から FormIntControl までのクラスの API リファレンス ドキュメントが含まれています。"
 author: RobinARH
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 98c6a337f05e360adc5d023a5a1e392c6dc4bc83
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: ec320efee094b85a2550fdcdf358572875bb54dc
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="f-classes---formgroupcontrol-to-formintcontrol"></a>F クラス - FormIntControl への FormGroupControl
+# <a name="f-classes-formgroupcontrol-to-formintcontrol"></a>F くらす (FormGroupControl から FormIntControl)
 
 [!include [banner](../includes/banner.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: "テーブルへのメソッドの追加"
+title: "拡張機能を使用してテーブルにメソッドを追加"
 description: "このトピックでは、拡張機能を使用してテーブルにメソッドを追加する方法について説明します。"
 author: ivanv-microsoft
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: ivanv
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 4
 ms.translationtype: HT
-ms.sourcegitcommit: 03bab1d03be71c0e23a6ea93f542d6a52a212a1f
-ms.openlocfilehash: 0ad88bf2d7b58824e00e1db889dce4da9831192b
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: e6366831367984659f5d311d8c7005a7e9cdf061
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/25/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="add-a-method-to-a-table"></a>テーブルへのメソッドの追加
+# <a name="add-methods-to-tables-through-extension"></a>拡張機能を使用してテーブルにメソッドを追加
 
 [!include [banner](../includes/banner.md)]
 

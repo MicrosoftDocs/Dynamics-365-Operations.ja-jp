@@ -1,5 +1,5 @@
 ---
-title: "情報の検索におけるルックアップの使用"
+title: "ルックアップを使用して情報の検索"
 description: "Microsoft Dynamics 365 for Finance and Operations では多数のフィールドに適切な修正または目的の値の検索が容易なルックアップがあります。 複数の拡張機能は、これらのコントロールの使用可能により、ユーザーにルックアップが表示されます。 このトピックでは、これらの新しいルックアップ機能について情報と、システムのルックアップから業務の使用を取得するために、必要な情報が表示されます。"
 author: jasongre
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 013901724864092571099835b2c71b297710ff03
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: 9de957490b2ca87949a7cbcecc9acb4e8b98aaaf
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="use-lookups-to-find-information"></a>情報の検索におけるルックアップの使用
+# <a name="find-information-by-using-lookups"></a>ルックアップを使用して情報の検索
 
 [!include [banner](../includes/banner.md)]
 

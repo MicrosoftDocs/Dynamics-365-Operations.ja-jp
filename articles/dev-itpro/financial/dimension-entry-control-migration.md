@@ -1,7 +1,7 @@
 ---
-title: "分析コード エントリ コントロールの移行"
+title: "既定の分析コード コントロールを分析コード エントリ コントロールに移行する"
 description: "このトピックでは、コードのアップグレードを実行した後、既定の分析コード コントロールを分析コード エントリ コントロールに移行するために必要な手順について説明します。 例として、PurchTable フォームを使用します。"
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 11/10/2017
 ms.topic: article
@@ -18,14 +18,14 @@ ms.author: ghenriks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: d016160d0df726348350067b3a4d7efef5750232
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: eee9927112777e4143658ebc70c396faea07541d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="dimension-entry-control-migration"></a>分析コード エントリ コントロールの移行
+# <a name="migrate-default-dimensions-controls-to-dimension-entry-controls"></a>既定の分析コード コントロールを分析コード エントリ コントロールに移行する
 
 [!include [banner](../includes/banner.md)]
 

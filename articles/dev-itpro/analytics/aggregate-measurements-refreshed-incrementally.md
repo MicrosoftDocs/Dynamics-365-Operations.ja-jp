@@ -1,5 +1,5 @@
 ---
-title: "エンティティ ストア モデルの更新のスケジューリング"
+title: "エンティティ ストア モデルの更新プログラムをスケジュール"
 description: "このトピックでは、システム管理者が組み込まれているツールを使用して、トランザクションのデータベースで使用可能な最新の更新を使用してデータ モデルが更新される頻度を管理する方法について説明します。"
 author: tjvass
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.author: tjvass
 ms.search.validFrom: 2018-3-31
 ms.dyn365.ops.version: Platform update 16
 ms.translationtype: HT
-ms.sourcegitcommit: 6c6c7c3f63b7a49820811a7ec80248b09b6e3acf
-ms.openlocfilehash: c98887503cd42bb2cb2e12923fce8194b934e0e1
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 8c47ad7789d96abec106cd33b4816a9b6ca5eaff
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/19/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="scheduling-entity-store-model-updates"></a>エンティティ ストア モデルの更新のスケジューリング
+# <a name="schedule-updates-of-entity-store-models"></a>エンティティ ストア モデルの更新プログラムをスケジュール
 
 [!include[banner](../includes/banner.md)]
 

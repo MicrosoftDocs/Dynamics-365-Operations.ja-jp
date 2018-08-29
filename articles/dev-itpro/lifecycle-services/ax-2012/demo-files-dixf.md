@@ -1,5 +1,5 @@
 ---
-title: "データのインポート/エクスポート フレームワーク サービスのデモ ファイル"
+title: "データ インポート/エクスポート フレームワーク (DIFX) のデモ ファイル"
 description: "このトピックでは、データ インポート/エクスポート フレームワーク (DIXF)のデモ ファイルとそれに対応するエンティティの一覧を示します。"
 author: kfend
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: kfend
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: a8e0936048acd9f8adc65cd097341c71979e6fec
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 2cdebfe3c9ec8ce44d845f6c5bcdeed733a3aacd
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="demo-files-for-the-data-importexport-framework"></a>データのインポート/エクスポート フレームワーク サービスのデモ ファイル
+# <a name="demo-files-for-the-data-importexport-framework-dixf"></a>データ インポート/エクスポート フレームワーク (DIFX) のデモ ファイル
 
 [!include [banner](../../includes/banner.md)]
 

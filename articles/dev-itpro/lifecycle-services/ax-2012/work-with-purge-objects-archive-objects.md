@@ -1,5 +1,5 @@
 ---
-title: "オブジェクトの削除とアーカイブ (AX 2012)"
+title: "オブジェクトの削除とアーカイブを使用する"
 description: "このトピックでは、インテリジェント データ管理フレームワーク (IDMF) のパージ オブジェクトとアーカイブ オブジェクトについて説明します。"
 author: kfend
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: kfend
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 6110c734e3b699fea88879d647b2eb23cbe4fcba
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: f02fe16d6f7917c28b6930ec8f0c338c7d47ef53
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="intelligent-data-management-framework-purge-and-archive-objects-ax-2012"></a>Intelligent Data Management Framework の削除およびアーカイブ オブジェクト (AX 2012)
+# <a name="work-with-purge-and-archive-objects"></a>オブジェクトの削除とアーカイブを使用する
 
 [!include [banner](../../includes/banner.md)]
 

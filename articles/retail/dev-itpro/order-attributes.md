@@ -1,5 +1,5 @@
 ---
-title: "注文属性"
+title: "注文属性の定義と設定をする"
 description: "このトピックでは、小売用バックオフィス、POS、および CRT でオーダーの属性値を直接編集および設定する方法について説明します。"
 author: mugunthanm
 manager: AnnBe
@@ -17,14 +17,14 @@ ms.author: mumani
 ms.search.validFrom: 2017-10-24
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 699deab00bb9b530d62397cb6c6b8573cef4d341
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 6c512871aea36c065b17de750eb3fc5fec19073e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="order-attributes"></a>注文属性
+# <a name="define-and-set-order-attributes"></a>注文属性の定義と設定をする
 
 [!include [banner](../../includes/banner.md)]
 

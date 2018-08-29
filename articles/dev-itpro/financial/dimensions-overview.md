@@ -18,14 +18,14 @@ ms.author: rbrow
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 8a162ee75478dc98de1473b32a17f38808115b5a
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: e945f2cce91704e9cc95e49e397f08cde00e5e7f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="add-dimensions-to-an-excel-template"></a>Excel テンプレートへの分析コードの追加
+# <a name="add-dimensions-to-excel-templates"></a>Excel テンプレートへの分析コードの追加
 
 [!include [banner](../includes/banner.md)]
 

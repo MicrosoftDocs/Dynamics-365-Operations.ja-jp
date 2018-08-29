@@ -1,5 +1,5 @@
 ---
-title: "Lifecycle Services のセキュリティのコンフィギュレーション"
+title: "Lifecycle Services (LCS) のセキュリティの構成"
 description: "Microsoft Dynamics Lifecycle Services (LCS) のセキュリティは、組織レベルおよびプロジェクト レベルの両方で制御されます。 組織のすべてのメンバーが、すべてのプロジェクトへのアクセス権を持っているわけではありません。 また、プロジェクトのメンバーは、すべて同じ組織のメンバーではない可能性があります。"
 author: RobinARH
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: fb12db5480da5fdd294afb2723668bb9ad169812
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 4acd88433ac926fc5c0a0f42bfc9f9522dc69be3
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="configure-lifecycle-services-security"></a>Lifecycle Services のセキュリティのコンフィギュレーション
+# <a name="configure-lifecycle-services-lcs-security"></a>Lifecycle Services (LCS) のセキュリティの構成
 
 [!include [banner](../includes/banner.md)]
 

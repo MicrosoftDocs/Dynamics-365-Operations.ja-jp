@@ -1,5 +1,5 @@
 ---
-title: "モバイル ワークスペース"
+title: "利用可能なモバイル ワークスペース"
 description: "このトピックは、使用可能なモバイル ワークスペースを一覧表示します。"
 author: sericks007
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.author: sericks
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ccc5d488d07159981c753c83fdb1d4644b31c8ac
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 75f7df4ca3b675d720eb46395118529d09f2f9d4
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="mobile-workspaces"></a>モバイル ワークスペース
+# <a name="available-mobile-workspaces"></a>利用可能なモバイル ワークスペース
 
 [!include [banner](../includes/banner.md)]
 

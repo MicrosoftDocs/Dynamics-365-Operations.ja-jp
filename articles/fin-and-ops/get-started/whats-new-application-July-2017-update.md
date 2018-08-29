@@ -16,10 +16,10 @@ ms.author: tfehr
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 183e809946bf543c16ab73b481fb8d320db6c5d0
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 3760c0edb66ae62133b76decd385214ea8d24f96
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
@@ -841,7 +841,8 @@ Finance and Operations では、最新の状態にして継続的なイノベー
 
 -   必要に応じて外部または内部コメントを入力します。
 
-**プロジェクト タイム エントリ**のモバイル ワークスペースを実装するには、docs.microsoft.com にある Microsoft Dynamics 365 for Operations の関連ドキュメントを参照してください。詳細については、[[プロジェクト タイム エントリのモバイル ワークスペース](../../financials/project-management/project-time-entry-mobile-workspace.md)] を参照してください。
+**プロジェクト時間入力**モバイル ワークスペースを実装するには、docs.microsoft.com で Microsoft Dynamics 365 for Operations の関連ドキュメントを参照してください。
+詳細については、[プロジェクト時間入力モバイル ワークスペース](../../financials/project-management/project-time-entry-mobile-workspace.md) を参照してください。
 
 ### <a name="rename-project-stages"></a>プロジェクト ステージの名前の変更 
 

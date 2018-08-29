@@ -1,7 +1,7 @@
 ---
 title: "売掛金勘定ホーム ページ"
 description: "顧客請求書および入金される支払を追跡するには、売掛金勘定を使用します。"
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 08/18/2017
 ms.topic: index-page
@@ -10,19 +10,19 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CustomerInvoiceWorkspace
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 20671
 ms.assetid: 1040678e-ffcb-47fb-a1bc-626db8046504
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: b8f2f3a33dc19c2ebc941d1a504eae0c276f3cdf
-ms.openlocfilehash: 9fcf106b03cd1abdd135681ceefbb7877f07c773
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: 303d67c0b662e6c21cebb5aa10ed28555459522e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/25/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
@@ -43,17 +43,24 @@ ms.lasthandoff: 06/25/2018
 
 顧客請求書および顧客から受け取る支払を追跡するには、売掛金勘定を使用します。 顧客グループ、顧客、転記プロファイル、利子計算書、督促状、コミッションのほか、顧客、請求金額、出荷と出荷先、受取手形、および他のタイプの売掛金勘定情報に関するパラメーターを設定できます。 
 
-:::row::: :::column::: - [自由書式の請求書の勘定配布と補助元帳仕訳](accounting-distributions-subledger-journal-entries-free-text-invoices.md)
+:::row:::
+    :::column:::
+        - [自由書式の請求書の勘定配布と補助元帳仕訳](accounting-distributions-subledger-journal-entries-free-text-invoices.md)
         - [顧客転記プロファイル](customer-posting-profiles.md)
         - [クレジット カードの設定、認証、および取得](credit-card-authorizations.md)
         - [顧客請求書の作成](configure-customer-invoices.md)
         - [定期請求書の設定と処理](set-up-process-recurring-invoices.md)
-        - [自由書式の請求書の訂正](correct-free-text-invoice.md) :::column-end::: :::column::: - [受取手形の設定](set-up-bills-exchange.md)
+        - [自由書式の請求書の訂正](correct-free-text-invoice.md)
+    :::column-end:::
+    :::column:::
+        - [受取手形の設定](set-up-bills-exchange.md)
         - [利息コードに対する金利の設定](set-up-interest-rates-interest-code.md)
         - [利息手数料の免除、再開、または取り消し](waive-reinstate-reverse-interest-fees.md)
         - [単一ユーロ支払地域 (SEPA) 口座引落の概要](sepa-direct-debit-overview.md)
         - [SEPA の口座引落の委任状の設定](sepa-direct-debit-mandate.md)
-        - [売掛金勘定の決算](close-accounts-receivable.md) :::column-end::: :::row-end:::
+        - [売掛金勘定の決算](close-accounts-receivable.md)
+    :::column-end:::
+:::row-end:::
 
 
 ## <a name="set-up-credit-and-collections"></a>与信および回収の設定
@@ -70,13 +77,20 @@ ms.lasthandoff: 06/25/2018
 
 受取手形、現金、小切手、クレジット カード、電子支払などの複数の異なる支払タイプの使用を許可します。 
 
-:::row::: :::column::: - [複数の割引期間にまたがる複数の請求書を決済するための顧客支払の使用](customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
+:::row:::
+    :::column:::
+        - [複数の割引期間にまたがる複数の請求書を決済するための顧客支払の使用](customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
         - [売掛金勘定の集中支払](centralized-payments-accounts-receivable.md)
         - [一部の顧客支払の決済、および割引日より前の全額最終支払](../accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md)
-        - [割引日後の最終支払での割引日よりも前の一部の顧客支払の決済](settle-partial-customer-payment-before-discount-or-final-payment-after.md) :::column-end::: :::column::: - [訂正票で割引がある一部の顧客支払の決済](settle-partial-customer-payment-discounts-credit-notes.md)
+        - [割引日後の最終支払での割引日よりも前の一部の顧客支払の決済](settle-partial-customer-payment-before-discount-or-final-payment-after.md)
+    :::column-end:::
+    :::column:::
+        - [訂正票で割引がある一部の顧客支払の決済](settle-partial-customer-payment-discounts-credit-notes.md)
         - [複数の割引期間を持つ一部の仕入先支払の決済](settle-partial-customer-payment-multiple-discount-periods.md)
         - [顧客への払戻し](reimburse-customers.md)
-        - [一部金額の顧客支払](customer-payments-partial-amount.md) :::column-end::: :::row-end:::
+        - [一部金額の顧客支払](customer-payments-partial-amount.md)
+    :::column-end:::
+:::row-end:::
 
 
 ### <a name="additional-resources"></a>その他のリソース

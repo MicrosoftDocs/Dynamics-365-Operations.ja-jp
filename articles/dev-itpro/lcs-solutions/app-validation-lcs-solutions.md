@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Dynamics 365 for Finance and Operations のアプリケーションの検証"
+title: "Finance and Operations 用のアプリケーションを検証する"
 description: "このトピックでは、カスタムコードが Microsoft のガイドラインを満たしていること、およびソリューション パッケージが正常にバンドルされ、Microsoft Dynamics 365 for Finance and Operations 環境で配送できることを確認するために使用される要件に関する情報を提供します。"
 author: kfend
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.assetid: 5f9729e3-ff67-4526-b2aa-d7f9f3062a41
 ms.search.region: Global
 ms.author: omarc
 ms.translationtype: HT
-ms.sourcegitcommit: 14557fc97021a6c7044cdbedbab636a929e28204
-ms.openlocfilehash: 38be33980ec637f93b9cd0057db5259f8d92ef0b
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 6f33dbcb90fc5b1cafdbfc48152ad9847df6c555
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/13/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="validate-an-application-for-microsoft-dynamics-365-for-finance-and-operations"></a>Microsoft Dynamics 365 for Finance and Operations のアプリケーションの検証
+# <a name="validate-applications-for-finance-and-operations"></a>Finance and Operations 用のアプリケーションを検証する
 
 [!include [banner](../includes/banner.md)]
 

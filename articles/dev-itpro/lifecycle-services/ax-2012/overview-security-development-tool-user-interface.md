@@ -1,5 +1,5 @@
 ---
-title: "セキュリティ開発ツール (AX 2012)"
+title: "セキュリティ開発ツール"
 description: "このトピックでは、セキュリティ開発ツールのユーザー インターフェイスについて説明します。"
 author: kfend
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: kfend
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: dfb085f51a9a5c080fc32bb37cadb39943eff676
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 006618c4e1073cbfa00aac6e9d51fa2b9608571f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="security-development-tool-ax-2012"></a>セキュリティ開発ツール (AX 2012)
+# <a name="security-development-tool"></a>セキュリティ開発ツール
 
 [!include [banner](../../includes/banner.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: "Azure (AX 2012) でのテスト環境の配置"
+title: "Azure でのテスト環境の配置"
 description: "このトピックでは、Microsoft Azure でのテスト環境の展開方法について説明します。"
 author: kfend
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: kfend
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: d788c442b62809acefc4ab47082c2755dbce435e
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: d5a6dbedc8b71aa89162e6c1c52ca5390adf6f3b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="deploy-a-test-environment-on-azure-ax-2012"></a>Azure (AX 2012) でのテスト環境の配置
+# <a name="deploy-test-environments-on-azure"></a>Azure でのテスト環境の配置
 
 [!include [banner](../../includes/banner.md)]
 

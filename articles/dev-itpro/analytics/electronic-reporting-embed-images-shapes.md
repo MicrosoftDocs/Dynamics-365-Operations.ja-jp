@@ -1,5 +1,5 @@
 ---
-title: "電子申告ツールを使用して生成されるビジネス ドキュメントへの画像と図形の埋め込み"
+title: "ER を使用して生成されるドキュメントへの画像や図形の埋め込み"
 description: "このトピックでは、電子申告 (ER) ツールを使用して、画像や図形が埋め込まれた Microsoft Excel および Microsoft Word 形式のビジネス ドキュメントを生成する方法について説明します。"
 author: kfend
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 16fd067b6153a99a56a9ae9543ee74a9b832888a
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 12125e0311d727109f89ce990ff4d892b394d862
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="embed-images-and-shapes-in-business-documents-that-are-generated-by-using-the-electronic-reporting-tool"></a>電子申告ツールを使用して生成されるビジネス ドキュメントへの画像と図形の埋め込み
+# <a name="embed-images-and-shapes-in-documents-that-you-generate-by-using-er"></a>ER を使用して生成されるドキュメントへの画像や図形の埋め込み
 
 [!include [banner](../includes/banner.md)]
 

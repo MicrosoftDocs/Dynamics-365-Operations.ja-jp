@@ -1,5 +1,5 @@
 ---
-title: "Azure での Dynamics AX 2012 R3 配置の計画"
+title: "Azure 上での AX 2012 R3の 配置計画"
 description: "Microsoft Azure に Microsoft Dynamics AX 2012 R3 を展開する前に、いくつかの点を考慮し決定する必要があります。 この記事では、計画プロセスについて説明します。"
 author: kfend
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: kfend
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: d83f7074d659f77ef89f48f13750739093b09fbf
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 908ea8ea8d609de145c6d078203328d97682e6b1
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="plan-your-dynamics-ax-2012-r3-deployment-on-azure"></a>Azure での Dynamics AX 2012 R3 配置の計画
+# <a name="plan-ax-2012-r3-deployments-on-azure"></a>Azure 上での AX 2012 R3の 配置計画
 
 [!include [banner](../../includes/banner.md)]
 

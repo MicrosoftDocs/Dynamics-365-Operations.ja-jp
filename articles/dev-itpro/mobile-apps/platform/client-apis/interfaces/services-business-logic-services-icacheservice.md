@@ -1,5 +1,5 @@
 ---
-title: CacheService
+title: "CacheService タイプ"
 description: "デバイス キャッシュからデータにアクセスし、デバイス キャッシュにデータを更新する機能を提供します。"
 author: shadykdc
 manager: AnnBe
@@ -16,10 +16,10 @@ ms.author: kashea
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 5d4412a37c72a293112e27aa244f649ad8a1b57e
+ms.sourcegitcommit: ed6cabcc8c76fba3d4414cd4b564b720c54169e0
+ms.openlocfilehash: 5eb916a10a8751ccd51b2282ec3af1d44a6d5fa9
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 

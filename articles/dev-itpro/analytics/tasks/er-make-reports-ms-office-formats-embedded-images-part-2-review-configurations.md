@@ -1,5 +1,5 @@
 --- 
-title: "Microsoft Office 形式のレポートを作成するためのコンフィギュレーションを確認する"
+title: "画像が埋め込まれた Office 形式でレポートを生成するコンフィギュレーションの確認"
 description: "これらのステップを完了するには、まず、「ER 埋め込み画像付きで MS Office 形式のレポートを作成する (パート 1 - パラメータの設定)」タスク ガイドにあるステップを完了する必要があります。"
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: fe58809c60fa27a605d84a61893ff569ded058ef
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 8f3462f16ad7638071ab0aa2175d0bc291eeae89
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="review-configurations-to-make-reports-in-microsoft-office-formats-with-embedded-images"></a>Microsoft Office 形式のレポートを作成するためのコンフィギュレーションを確認する
+# <a name="review-configurations-to-generate-reports-in-office-format-that-have-embedded-images"></a>画像が埋め込まれた Office 形式でレポートを生成するコンフィギュレーションの確認
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

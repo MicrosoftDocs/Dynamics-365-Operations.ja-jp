@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Dynamics 365 for Finance and Operations の開発と管理"
+title: "Finance and Operations の開発と管理"
 description: "このページは、開発者と IT プロが Finance and Operations の使用を開始するのに役に立ちます。"
 author: margoc
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 6dee9f602cdc4a970a0e9d1c240dae923530c4ae
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 990f0a5a3427df6ec6c8958bb14ad79d70e3323a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="development-and-administration-for-dynamics-365-for-finance-and-operations"></a>Dynamics 365 for Finance and Operations の開発と管理 
+# <a name="development-and-administration-for-finance-and-operations"></a>Finance and Operations の開発と管理
 
 [!include [banner](includes/banner.md)]
 

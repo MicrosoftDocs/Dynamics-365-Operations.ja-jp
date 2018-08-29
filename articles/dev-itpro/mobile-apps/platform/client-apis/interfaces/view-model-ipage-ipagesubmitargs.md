@@ -1,5 +1,5 @@
 ---
-title: PageSubmitArgs
+title: "PageSubmitArgs タイプ"
 description: "ページの OnSubmit イベントに指定された引数。"
 author: shadykdc
 manager: AnnBe
@@ -16,10 +16,10 @@ ms.author: kashea
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: d3ed846111a8d838beb03bd5b79487568a47452d
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 2bdb0c78b6d15cec6ace5044d50008618fbc49d7
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 

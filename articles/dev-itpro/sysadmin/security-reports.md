@@ -17,14 +17,14 @@ ms.author: maertenm
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 462ba509ff8d8c93a80a1262f5e0ee233ad91e7a
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 55abffcc0f9f40289fca156ed53021da50c3a91b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="out-of-the-box-security-reports"></a>すぐに使えるセキュリティ レポート
+# <a name="out-of-box-security-reports"></a>すぐに使えるセキュリティ レポート
 
 [!include [banner](../includes/banner.md)]
 

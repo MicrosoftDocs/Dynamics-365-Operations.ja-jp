@@ -1,5 +1,5 @@
 ---
-title: "Visual Studio Team Services へのアクセスを有効化するには、ローカル環境の名前を変更してください"
+title: "Visual Studio Team Services へアクセスするためのローカル環境の名前変更"
 description: "複数のコンピューターにまたがる VSTS プロジェクトにアクセスするには、ローカル開発 VM の名前変更が必要です。"
 author: MargoC
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: tabell
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 6c6c7c3f63b7a49820811a7ec80248b09b6e3acf
-ms.openlocfilehash: d0b78156f4a4b869620f72b3d8d36d5cb349705b
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: f4f0e07c4e8cbb549ee5332e7b4e556dee66ebc9
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/19/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="rename-a-local-environment-to-enable-access-to-visual-studio-team-services"></a>Visual Studio Team Services へのアクセスを有効化するには、ローカル環境の名前を変更してください
+# <a name="rename-a-local-environment-to-access-visual-studio-team-services"></a>Visual Studio Team Services へアクセスするためのローカル環境の名前変更
 
 [!include [banner](../includes/banner.md)]
 

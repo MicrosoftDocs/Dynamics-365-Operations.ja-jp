@@ -1,5 +1,5 @@
 ---
-title: "Dynamics 365 for Retail のアップグレードと N-1 サポートの概要"
+title: "アップグレードおよび 小売用 N-1 サポート"
 description: "Dynamics 365 for Retail のリリースで、アップグレードと N-1 サポートが有効になりました。 N-1 のサポートによって、AX 2012 R3 CU10 を実行する店舗を持つ顧客は、アップグレード後に Dynamics 365 for Retail headquarters で作業できます。"
 author: athinesh99
 manager: AnnBe
@@ -17,14 +17,14 @@ ms.author: athinesh
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 4a062ccbca8e3b4503cf5e61f838b5ec0b4358e1
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: b16c2543f87f6d7b9f394c17728a7bee3dc52050
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="overview-of-upgrade-and-n-1-support-for-dynamics-365-for-retail"></a>Dynamics 365 for Retail のアップグレードと N-1 サポートの概要
+# <a name="upgrade-and-n-1-support-for-retail"></a>アップグレードおよび 小売用 N-1 サポート
 
 [!include [banner](../../includes/banner.md)]
 

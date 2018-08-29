@@ -17,14 +17,14 @@ ms.author: epegors
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 12
 ms.translationtype: HT
-ms.sourcegitcommit: 8ecf9187720854110fb8ce61601edc00f641f476
-ms.openlocfilehash: e8f360162fe72a8bd4a4fc5eb716fd9375c08814
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 5fd1bd44b0a663b781e34b6be863215b7e575342
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="development-and-build-vms-that-dont-allow-administrator-access-faq"></a>管理者アクセスを許可しない開発用 VM および ビルド用 VM に関するよく寄せられる質問
+# <a name="development-and-build-vms-that-dont-allow-admin-access-faq"></a>管理者アクセスを許可しない開発用 VM および ビルド用 VM に関するよく寄せられる質問
 
 [!include [banner](../includes/banner.md)]
 
@@ -63,7 +63,7 @@ IIS Express が起動されると、通知領域 (時計の近くにある) に�
 いいえ、管理者として Windows PowerShell コマンドおよびコマンド プロンプトのコマンドを実行できません。
 
 ## <a name="is-the-trace-parser-supported"></a>Trace Parser はサポートされていますか。
-Trace Parser は現在サポートされていませんが、間もなく再度そのサポートを追加する予定です。
+現在 Trace Parser を使用するには、ユーザーが管理者であることが必要です。
 
 ## <a name="can-the-system-be-put-into-maintenance-mode"></a>システムをメンテナンス モードにすることはできますか。
 システムをメンテナンス モードにしてライセンス コンフィギュレーションを変更することができます。 ただし、[メンテナンス モード](maintenance-mode.md) に記載されている手順はサポートされていません。 すべての環境におけるメンテナンス モードのセルフ サービス サポートが将来 LCS に追加されます。 このサポートが LCS で利用可能になるまで、以下の手順に従ってシステムをメンテナンス モードにすることができます。

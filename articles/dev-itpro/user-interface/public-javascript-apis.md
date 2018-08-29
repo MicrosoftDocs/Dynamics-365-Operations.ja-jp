@@ -1,5 +1,5 @@
 ---
-title: "拡張可能なコントロール - パブリック JavaScript API"
+title: "拡張可能なコントロールのパブリック JavaScript API"
 description: "このトピックでは、拡張可能なコントロールで使用できるパブリック JavaScript API に関するドキュメントの入手先を示します。"
 author: jasongre
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: jasongre
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: f8baf3db8b6747e65ff2d3f722780d31053ecc7d
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: da2acf5ae110cde04e470fd55deea8e8ae6214e1
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="extensible-controls---public-javascript-apis"></a>拡張可能なコントロール - パブリック JavaScript API
+# <a name="public-javascript-apis-for-extensible-controls"></a>拡張可能なコントロールのパブリック JavaScript API
 
 [!include [banner](../includes/banner.md)]
 

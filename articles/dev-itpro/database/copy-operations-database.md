@@ -1,5 +1,5 @@
 ---
-title: "後で復元する Finance and Operations のデータベースのコピーを作成する"
+title: "後で復元する Finance and Operations のデータベースのコピーをエクスポートする"
 description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations database のデータベースをファイルにエクスポートし、そのファイルを同じインスタンスまたはアプリケーションの別のインスタンスに再度インポートする方法について説明します。"
 author: tariqbell
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: tabell
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
 ms.translationtype: HT
-ms.sourcegitcommit: c42463631ce1e33673f4f7f32f2e751deadc5425
-ms.openlocfilehash: 7076d25b112df2fb80f75e7925133263d0a8efb0
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 0ac74a100aa66af7a9c4bd91a2f3b0ba78cb4cfb
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="create-a-copy-of-a-finance-and-operations-database-to-restore-later"></a>後で復元する Finance and Operations のデータベースのコピーを作成する
+# <a name="export-copies-of-finance-and-operations-databases-to-restore-later"></a>後で復元する Finance and Operations のデータベースのコピーをエクスポートする
 
 [!include [banner](../includes/banner.md)]
 

@@ -19,7 +19,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: dcbe39a5d9ca4a9fc109468772b6dd89b0dd971e
 ms.openlocfilehash: 40cf173ee2557939a0390bdc0e9a0c9a19411fa3
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/09/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
@@ -60,7 +60,7 @@ ms.lasthandoff: 06/09/2018
     - **Microsoft SQL Server に基づくレベル 1 環境データベース:** データベースのバックアップを作成します。
     - **Azure SQL データベースに基づくレベル 2 およびそれ以上の環境:** 次のオプションのいずれかを使用します。
 
-        - **オプション 1:**[Azure SQL データベースから SQL Server 環境に Finance and Operations データベースをコピー](../../dev-itpro/database/copy-database-from-azure-sql-to-sql-server.md)に記載されている手順に従います。
+        - **オプション 1:** [Azure SQL データベースから SQL Server 環境に Finance and Operations データベースをコピー](../../dev-itpro/database/copy-database-from-azure-sql-to-sql-server.md)に記載されている手順に従います。
         - **オプション 2:** Azure サブスクリプションを持っている場合、サブスクリプションの下に Azure SQL データベースのコピーを保存してください。
         - **オプション 3:** Azure SQL データベース環境を複数持ってる場合、1 つの環境を再配置し、古い環境をデータ センターに残してから、環境間でデータベース更新の要求をします。
         - **オプション 4:** データ パッケージとしてデータを保存し、再配置が完了した後にパッケージをインポートします。

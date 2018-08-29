@@ -1,5 +1,5 @@
 ---
-title: LookupDesign
+title: "LookupDesign タイプ"
 description: "ルックアップ デザイン オブジェクトの種類。"
 author: shadykdc
 manager: AnnBe
@@ -16,10 +16,10 @@ ms.author: kashea
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: c8fcd1309efa207a5a4fbc7a605652eff49c1200
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 079ca002e60c705c8db45177ed71e7d878ea5943
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 

@@ -1,7 +1,7 @@
 ---
-title: "ガント作成ガイド"
+title: "ガント管理作成ガイド"
 description: "このトピックでは、Gantt コントロールを使用して新しいフォームを作成する方法について説明します。"
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe
 ms.date: 11/10/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.scope: Operations
 ms.custom: 17311
 ms.assetid: e5cd372c-6ac2-4995-bb3c-ff863b40fedb
 ms.search.region: Global
-ms.author: yuyus
+ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 978ba06c10a8ff17061d29db250f19f03b493592
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: 90659ea7fb0eb6cbfa6ac7ce7e0deedcfab2e7c4
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="gantt-development-guide"></a>ガント作成ガイド
+# <a name="gantt-control-development-guide"></a>ガント管理作成ガイド
 
 [!include [banner](../includes/banner.md)]
 

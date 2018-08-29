@@ -1,5 +1,5 @@
 ---
-title: "コードの移行中に Visual Studio Team Services マッピングをコンフィギュレーション"
+title: "コードの移行中に Visual Studio Team Services マッピングを構成"
 description: "このチュートリアルでは、LCS コードのアップグレード サービスが完了した後、開発ボックスを Visual Studio Team Services (VSTS) プロジェクトにマップする方法を示します。"
 author: RobinARH
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 461bc44d8ade68fff53fec0c4c6b232c51a0922a
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 007b093e558d1df63d41b8518217a02563be33bf
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="configure-visual-studio-team-services-mapping-during-code-migration"></a>コードの移行中に Visual Studio Team Services マッピングをコンフィギュレーション
+# <a name="configure-the-visual-studio-team-services-mapping-during-code-migration"></a>コードの移行中に Visual Studio Team Services マッピングを構成
 
 [!include [banner](../includes/banner.md)]
 

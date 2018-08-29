@@ -1,5 +1,5 @@
 ---
-title: "Azure での Dynamics AX 2012 R3 配置のトラブルシューティング"
+title: "Azure 上での AX 2012 R3 配置のトラブルシューティング"
 description: "このトピックでは、一般的な問題を解決するための方法、および Azure で Microsoft Dynamics AX 2012 R3 環境の支援を受ける方法について説明します。"
 author: kfend
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: kfend
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 8b6f5f5b59ffe3efc56c19da4b11644cbdcfe845
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 07c16619c050751a4fb8739456267ff61d708aa4
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="troubleshoot-your-dynamics-ax-2012-r3-deployment-on-azure"></a>Azure での Dynamics AX 2012 R3 配置のトラブルシューティング
+# <a name="troubleshoot-ax-2012-r3-deployments-on-azure"></a>Azure 上での AX 2012 R3 配置のトラブルシューティング
 
 [!include [banner](../../includes/banner.md)]
 

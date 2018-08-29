@@ -1,5 +1,5 @@
 ---
-title: "監視および診断 (Lifecycle Services、LCS)"
+title: "Lifecycle Services (LCS) の監視および診断ツール"
 description: "このトピックでは、管理する Microsoft Dynamics 365 for Finance and Operations の状態を監視、診断、分析するために、Microsoft Dynamics Lifecycle Services (LCS) が提供するさまざまなツールについて説明します。"
 author: manalidongre
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: manado
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: f2e3a40f58b57785079e1940b2d24a3598a3ad1b
-ms.openlocfilehash: c5421e3a77bd4c0e279c9c74e8423030bebfb3c6
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 0eab4dd7ed7287a069af7759e787ed4103a28b74
 ms.contentlocale: ja-jp
-ms.lasthandoff: 07/09/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="monitoring-and-diagnostics-lifecycle-services-lcs"></a>監視および診断 (Lifecycle Services、LCS)
+# <a name="monitoring-and-diagnostics-tools-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) の監視および診断ツール
 
 [!include [banner](../includes/banner.md)]
 

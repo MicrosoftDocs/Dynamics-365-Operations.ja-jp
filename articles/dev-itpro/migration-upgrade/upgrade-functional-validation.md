@@ -16,14 +16,14 @@ ms.author: tabell
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: e8607d0e3962c567a3e58cff91cd3335701cbd33
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 5e229f7275061ae8c4293d317f5561a0b224fe0a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="upgrade-from-ax-2012---functional-test-pass"></a>AX 2012 からのアップグレード - 機能テスト合格
+# <a name="upgrade-from-ax-2012---functional-test-passes"></a>AX 2012 からのアップグレード - 機能テスト合格
 
 [!include [banner](../includes/banner.md)]
 

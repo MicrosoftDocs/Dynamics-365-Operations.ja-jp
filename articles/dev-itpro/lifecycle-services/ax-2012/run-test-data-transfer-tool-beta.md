@@ -1,5 +1,5 @@
 ---
-title: "Dynamics AX (AX 2012) 用のテスト データ転送ツール (ベータ版) の実行"
+title: "テスト データ転送ツール (ベータ) の実行"
 description: "このトピックでは、Microsoft Dynamics AX でデータ転送ツールのテストを実行する方法について説明します。"
 author: kfend
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: kfend
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 7fa4868402569e35e4939876f11dde6a9142d538
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: ce39c8e14565bcc3babf3051cf5d8caf0d92accf
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="run-the-test-data-transfer-tool-beta-for-dynamics-ax-ax-2012"></a>Dynamics AX (AX 2012) 用のテスト データ転送ツール (ベータ版) の実行
+# <a name="run-the-test-data-transfer-tool-beta"></a>テスト データ転送ツール (ベータ) の実行
 
 [!include [banner](../../includes/banner.md)]
 

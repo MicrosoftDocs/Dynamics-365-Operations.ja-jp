@@ -4,7 +4,7 @@
   items:
     - name: 新機能および変更された機能
       href: get-started/whats-new.md
-    - name: Dynamics 365 for Retail を購入する前に
+    - name: Retail を購入する前に
       href: get-started/before-you-buy.md
     - name: プレビュー サブスクリプションのサインアップ
       href: ../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/retail/toc.json
@@ -12,13 +12,44 @@
       href: ../dev-itpro/deployment/deploy-demo-environment.md?toc=/retail/toc.json
     - name: 配置オプション
       href: dev-itpro/choose-deployment.md
+- name: 実装ライフサイクルの理解
+  href: ../fin-and-ops/imp-lifecycle/implementation-lifecycle.md
+  items:
+    - name: Microsoft FastTrack for Dynamics 365
+      href: ../fin-and-ops/get-started/fasttrack-dynamics-365-overview.md
+    - name: Onboarding
+      href: ../fin-and-ops/imp-lifecycle/onboard.md
+    - name: Go-Live の準備
+      href: ../fin-and-ops/imp-lifecycle/prepare-go-live.md
+    - name: Go-Live に関するよく寄せられる質問
+      href: ../fin-and-ops/imp-lifecycle/go-live-faq.md
+    - name: サービス要求の送信
+      href: ../dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/fin-and-ops/toc.json
+    - name: サブスクリプション、LCS プロジェクト、および Azure Active Directory テナントに関するよく寄せられる質問
+      href: ../fin-and-ops/get-started/subscription-overview.md
+    - name: データ センター間で環境を移動する
+      href: ../fin-and-ops/get-started/move-environments-data-center.md
+    - name: 契約タイプ間でライセンスを移動する
+      href: ../fin-and-ops/get-started/move-licenses-between-agreement-types.md
+    - name: LCS 実装プロジェクトを別の Azure Active Directory テナントに移動する
+      href: ../fin-and-ops/get-started/move-lcs-implementation-project-tenant.md
+    - name: 複数の LCS プロジェクトと実稼働環境を同じ Azure Active Directory テナント上に実装する
+      href: ../fin-and-ops/get-started/implement-multiple-projects-aad-tenant.md
+    - name: Finance and Operations Retail プロジェクトの実装
+      href: dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
+    - name: Retail プロジェクトの新しい環境、VSTS、ブランチの設定
+      href: dev-itpro/new-environments-visual-studio-teams-branch-retail-projects.md
+    - name: Retail プロジェクトのコードと環境の更新
+      href: dev-itpro/updating-environments.md
+    - name: テストおよびパフォーマンスに関する問題
+      href: dev-itpro/retail-implementation-testing-performance.md
 - name: 支払
   items:
     - name: 支払方法
       href: payment-methods.md
     - name: クレジット カードの設定、認証、および取得
       href: ../financials/accounts-receivable/credit-card-authorizations.md
-    - name: POS の支払方法を構成する
+    - name: POS の現金貨幣単位のコンフィギュレーション
       href: cash-denominations.md
     - name: 支払に関するよく寄せられる質問
       href: dev-itpro/payments-retail.md
@@ -36,21 +67,21 @@
       href: ../supply-chain/procurement/purchase-order-mobile-workspace.md
 - name: 明細書
   items:
-    - name: 小売明細書の概要
+    - name: 小売明細書
       href: retail-statements.md
     - name: 小売店舗の明細書の作成、計算、および転記
       href: tasks/create-calculate-post-statement-retail-store.md
-    - name: 明細書転記に関する機能強化事項
+    - name: 明細書転記機能に関する強化事項
       href: statement-posting-EOD.md
-    - name: 小売明細書のパラメーター コンフィギュレーション
+    - name: 小売明細書に影響を及ぼす Retail のパラメーターのコンフィギュレーション
       href: tasks/parameter-configurations-retail-statements.md
-    - name: 小売明細書の支払コンフィギュレーション
+    - name: 小売明細書に影響を及ぼす支払方法設定のコンフィギュレーション
       href: tasks/payment-configurations-retail-statements.md
     - name: 明細書を計算するジョブのコンフィギュレーションおよび実行
       href: tasks/run-job-calculate-statements.md
     - name: 明細書を転記するジョブのコンフィギュレーションおよび実行
       href: tasks/run-job-post-statements.md
-    - name: 小売明細書の店舗のコンフィギュレーション
+    - name: 小売明細書に影響を及ぼす店舗設定のコンフィギュレーション
       href: tasks/store-configurations-retail-statements.md
 - name: 消費税
   items:
@@ -64,63 +95,63 @@
       href: ../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md
 - name: コール センター
   items:
-    - name: コール センターの概要
+    - name: コール センターの販売機能
       href: call-center-functionality.md
     - name: コール センターのカタログ
       href: call-center-catalogs.md
     - name: コール センター カタログの作成
       href: create-call-center-catalogs.md
-    - name: 出荷モードと雑費の構成
+    - name: 出荷モードと雑費のコンフィギュレーション
       href: configure-call-center-delivery.md
-    - name: 詐欺警告の設定
+    - name: 詐欺警告の設定および使用
       href: set-up-fraud-alerts.md
-    - name: コール センターの設定
+    - name: コール センター チャネルの設定
       href: set-up-order-processing-options.md
     - name: コール センターの連続プログラムの設定
       href: set-up-continuity-program.md
-    - name: コール センターの注文保留
+    - name: コール センターの注文保留のコンフィギュレーションおよび作業
       href: work-with-order-holds.md
-    - name: 支払オプション
+    - name: 支払方法
       href: work-with-payments.md
 - name: チャネルの設定と管理
   items:
-    - name: Retail 環境でのシード データの初期化
+    - name: 新しい Retail 環境でのシード データの初期化
       href: enable-configure-retail-functionality.md
-    - name: 小売チャネルの定義
+    - name: 小売チャネルの定義と管理
       href: define-maintain-retail-channels.md
     - name: 品揃え管理
       href: assortments.md
-    - name: オンライン ストアの概要
+    - name: オンライン ストアの設定
       href: online-stores.md
-    - name: Retail hardware station のコンフィギュレーションとインストール
+    - name: Retail Hardware Station のコンフィギュレーションおよびインストール
       href: retail-hardware-station-configuration-installation.md
-    - name: Retail の勤務時間および勤怠
+    - name: Retail の時刻と出勤
       href: retail-time-attendance.md
 - name: Modern Point of Sale (MPOS) および Cloud POS
   items:
-    - name: Modern POS か Cloud POS かの選択
+    - name: MPOS か Cloud POS かの選択
       href: MPOS-or-CPOS.md
-    - name: オンラインおよびオフラインでの POS 操作
+    - name: オンラインおよびオフラインの POS 操作
       href: pos-operations.md
-    - name: MPOS/CPOS のデモ データ画面レイアウト
+    - name: MPOS および Cloud POS のデモ データ画面レイアウト
       href: demo-data.md
-    - name: 販売時点管理での製品および顧客検索の概要
+    - name: POS での製品および顧客の検索
       href: POS-search-improvements.md
-    - name: 販売時点管理の在庫検索
+    - name: POS での在庫検索
       href: product-variants-POS.md
     - name: ハードウェア周辺機器
       items:
-        - name: 小売周辺機器の概要
+        - name: 小売周辺機器
           href: retail-peripherals-overview.md
         - name: Microsoft によってテストされた POS ハードウェア周辺機器
           href: microsoft-tested-pos-hardware-peripherals.md
         - name: 小売の周辺機器シミュレーター
           href: dev-itpro/retail-peripheral-simulator.md
-        - name: チャネル クライアント、レジスター、ハードウェア ステーションの定義と管理
+        - name: 周辺機器の POS への接続
           href: define-maintain-channel-clients-registers-hw-stations.md
     - name: 画面レイアウト
       items:
-        - name: POS の画面レイアウトのコンフィギュレーション
+        - name: POS の画面レイアウト
           href: pos-screen-layouts.md
         - name: Retail POS のレイアウト デザイナーのインストール
           href: install-pos-layout-designer.md
@@ -128,17 +159,17 @@
           href: Notifications-POS.md
         - name: POS アプリケーションとユーザー言語設定
           href: pos-application-user-language-settings.md
-        - name: MPOS のイメージの設定
+        - name: MPOS のイメージの設定および管理
           href: set-up-manage-images-retail-mpos.md
-    - name: 情報コードの概要
+    - name: 情報コードおよび情報コード グループ
       href: info-codes-retail.md
     - name: シリアル化された製品の POS 改善
       href: serialized-inventory.md
     - name: 製品推奨事項
       items:
-        - name: カスタマイズされた製品推奨事項の概要
+        - name: カスタマイズされた製品推奨事項
           href: personalized-product-recommendations.md
-        - name: POSデバイスでの推奨事項コントロールの追加
+        - name: POS デバイスでの推奨事項コントロールの追加
           href: add-recommendations-control-pos-screen.md
     - name: オフライン POS 機能
       href: pos-offline-functionality.md
@@ -146,7 +177,7 @@
       href: shift-drawer-management.md
     - name: 顧客注文
       items:
-        - name: 顧客注文の概要
+        - name: MPOS の顧客注文
           href: customer-orders-overview.md
         - name: ハイブリッド顧客注文
           href: hybrid-customer-orders.md
@@ -158,27 +189,27 @@
       href: charge-send.md
     - name: デバイスの有効化
       items:
-        - name: MPOS の構成とインストール
+        - name: MPOS のインストール、コンフィギュレーション、有効化
           href: retail-modern-pos-device-activation.md
-        - name: Cloud POS および MPOS の拡張ログオンの設定
+        - name: MPOS および Cloud POS の拡張ログオン機能の設定
           href: extended-logon.md
-        - name: 本社からの Retail アカウントとデバイスの管理
+        - name: Retail アクティベーション アカウントの管理とデバイスの検証
           href: set-up-activation-accounts-validate-devices-hq.md
-    - name: レシート
+    - name: 受領書
       items:
-        - name: レシート テンプレートの設定
+        - name: 受領書フォーマットの設定およびデザイン
           href: receipt-templates-printing.md
         - name: MPOS からの電子メール レシートの送信
           href: email-receipts.md
-    - name: POS のタスク レコーダーとヘルプ
+    - name: MPOS および Cloud POS のタスク レコーダーとヘルプ
       href: task-recorder-retail-pos.md
 - name: 注文のフルフィルメント
   items:
-    - name: 店舗注文フルフィルメントの概要
+    - name: 店舗注文のフルフィルメント
       href: Order-fulfillment-overview.md
-    - name: 店舗でのフルフィルメントの設定
+    - name: 店舗における注文のフルフィルメントを設定
       href: Order-fulfillment-POS-setup.md
-    - name: 販売時点管理の通知の有効化
+    - name: POS の注文通知の表示
       href: Notifications-POS.md
 - name: 監視と分析
   items:
@@ -192,11 +223,11 @@
       href: assess-customer-product-profitability.md
     - name: 店舗のパフォーマンスの分析
       href: store-performance-information.md
-    - name: 最新/頻度/金額 (RFM) 分析の設定
+    - name: 最新、頻度、金額 (RFM) 分析の設定
       href: set-up-rfm-analysis.md
 - name: 割引と価格調整
   items:
-    - name: 小売販売価格の管理
+    - name: Retail 販売価格の管理
       href: price-management.md
     - name: 価格調整と割引
       href: price-adjustments-discounts.md
@@ -204,9 +235,9 @@
       href: optimal-combination-overlapping-discounts.md
     - name: チャネル固有の割引の定義
       href: define-channel-specific-discounts.md
-    - name: 小売製品の割引の禁止
+    - name: 小売製品の割引を回避するためのオプション
       href: prevent-discounts.md
-    - name: 小売販売のクーポンの作成
+    - name: 小売販売のクーポンの設定
       href: retail-coupons.md
 - name: 製品と販売促進
   items:
@@ -214,13 +245,13 @@
       href: ../supply-chain/pim/product-information.md
     - name: 小売階層
       href: retail-hierarchies.md
-    - name: 属性および属性グループの概要
+    - name: 属性および属性グループ
       href: attribute-attributegroups-lifecycle.md
     - name: 属性の作成と管理
       href: create-manage-attributes.md
     - name: 小売製品の設定
       href: set-up-retail-products.md
-    - name: 拡張されたカテゴリと製品の管理
+    - name: Retail 製品カテゴリおよび製品の管理
       href: category-management-product-creation.md
     - name: 製品分析コード
       href: ../supply-chain/pim/product-dimensions.md
@@ -230,7 +261,7 @@
       href: set-up-bar-code-masks.md
     - name: 品揃えの設定
       href: set-up-assortments.md
-    - name: 品揃えの範囲外の製品の販売と返品
+    - name: 店舗の品揃えに含まれていない製品の販売および返品
       href: sell-return-outside-assortments.md
     - name: 分析コードおよび製品バリアントの既定の注文設定
       href: ../supply-chain/production-control/default-order-settings.md
@@ -240,9 +271,9 @@
   items:
     - name: 顧客ロイヤルティ プログラムの設定
       href: set-up-customer-loyalty-program.md
-- name: 在庫
+- name: 棚卸資産
   items:
-    - name: 店舗在庫の管理
+    - name: 店舗在庫管理
       href: work-with-store-inventory.md
     - name: 販売プロセスでのシリアル番号の登録
       href: ../supply-chain/sales-marketing/register-serial-numbers-sales-process.md
@@ -276,25 +307,25 @@
   items:
     - name: フランス
       items:
-        - name: フランスのキャッシュ レジスター
+        - name: キャッシュ レジスター機能
           href: localizations/emea-fra-cash-registers.md
-        - name: フランスのキャッシュ レジスターの配置ガイドライン
+        - name: キャッシュ レジスターの配置ガイドライン
           href: localizations/emea-fra-deployment.md
     - name: インド
       items:
-        - name: キャッシュ レジスターの販売税統合
+        - name: キャッシュ レジスターの商品及びサービス税 (GST) 統合
           href: localizations/apac-ind-cash-registers.md
-        - name: インドのキャッシュ レジスターの配置ガイドライン
+        - name: キャッシュ レジスターの配置ガイドライン
           href: localizations/apac-ind-loc-deployment-guidelines.md
     - name: ノルウェー
       items:
-        - name: ノルウェーのキャッシュ レジスター
+        - name: キャッシュ レジスター機能
           href: localizations/emea-nor-cash-registers.md
-        - name: ノルウェーのキャッシュ レジスターの配置ガイドライン
+        - name: キャッシュ レジスターの配置ガイドライン
           href: localizations/emea-nor-loc-deployment-guidelines.md
     - name: スウェーデン
       items:
-        - name: スウェーデンのキャッシュ レジスター
+        - name: キャッシュ レジスター機能
           href: localizations/emea-swe-cash-registers.md
         - name: 管理単位との Retail POS の統合サンプル
           href: dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md
@@ -306,9 +337,9 @@
       href: ../supply-chain/pim/tasks/configure-linked-products.md
     - name: 法人に対する製品/製品マスターのリリース
       href: ../supply-chain/pim/tasks/release-product-product-master-legal-entities.md
-    - name: 基準価格と売買契約
+    - name: チャネル固有の売買契約の作成
       href: tasks/base-price-trade-agreements.md
-    - name: 売買契約を作成するためのカテゴリの価格決定ルール
+    - name: カテゴリの価格決定ルールを使用した売買契約の作成
       href: tasks/category-pricing-rules-trade-agreements.md
     - name: クレジット カード処理のコンフィギュレーション
       href: tasks/configure-credit-card-processing.md
@@ -316,11 +347,11 @@
       href: tasks/configure-functionality-profile-sales-representative.md
     - name: 機械学習を利用する製品の推奨事項のコンフィギュレーション
       href: tasks/configure-machine-learning-product-recommendations.md
-    - name: デバイスの作成と関連付け
+    - name: デバイスの作成およびレジスターとの関連付け
       href: tasks/create-associate-device.md
-    - name: ハードウェア ステーションの作成と関連付け
+    - name: ハードウェア ステーションの作成
       href: tasks/create-associate-hardware-station.md
-    - name: レジスターの作成と関連付け
+    - name: POS レジスターの作成
       href: tasks/create-associate-registers.md
     - name: コール センター注文の作成
       href: tasks/create-call-center-orders.md
@@ -332,11 +363,11 @@
       href: tasks/create-online-channel-define-channel-attributes.md
     - name: POS アクセス許可グループの作成
       href: tasks/create-pos-permission-groups.md
-    - name: 'POS 視覚プロファイルの作成 '
+    - name: POS 視覚プロファイルの作成
       href: tasks/create-pos-visual-profile-2016-02.md
     - name: 発注書の製品パッケージの作成
       href: tasks/create-product-packages-purchase-orders.md
-    - name: コール センター チャネルおよびチャネル属性の定義
+    - name: コール センター チャネルの作成およびチャネル属性の定義
       href: tasks/define-call-center-channel-channel-attributes.md
     - name: チャネル属性の定義
       href: tasks/define-channel-attributes.md
@@ -352,40 +383,40 @@
       href: tasks/design-relationships-between-organizational-units.md
     - name: 品揃えの管理
       href: tasks/manage-assortments-2016-11.md
-    - name: ハードウェア ステーションをダウンロードするセルフサービスの実行
+    - name: セルフサービスを使用したハードウェア ステーションのダウンロード
       href: tasks/perform-self-service-download-hardware-station.md
     - name: オンラインの販売と支払の転記
       href: tasks/posting-online-sales-payments.md
-    - name: ロイヤルティ報酬ポイント調整の処理
+    - name: ロイヤルティ報酬ポイントの処理の調整
       href: tasks/process-loyalty-reward-point-adjustments.md
-    - name: 集中的購買を使用した物流センターから店舗への製品の配送
+    - name: 集中的購買を介した物流センターから店舗への製品の配送
       href: tasks/push-products-distribution-center-store-buyers-push.md
-    - name: 小売価格調整の管理
+    - name: 小売価格調整の作成
       href: tasks/retail-price-adjustments.md
     - name: 最初から用意されているレポートの生成および実行
       href: tasks/run-out-box-reports.md
-    - name: クロスドッキングおよび集中的購買のルールとパラメーターの設定
+    - name: クロス ドッキングおよび集中的購買のルールとパラメーターの設定
       href: tasks/set-up-rules-parameters-cross-docking-buyers-push.md
-    - name: 連続プログラムの使用
+    - name: 連続プログラムの販売と販売注文の処理
       href: tasks/use-continuity-program.md
-    - name: 作業者のコンフィギュレーション
+    - name: 小売作業者のコンフィギュレーション
       href: tasks/worker.md
 - name: 小売開発と管理
   href: dev-itpro/dev-retail-home-page.md
   items:
     - name: アーキテクチャ
       items:
-        - name: Microsoft Dynamics 365 for Finance and Operations のコンポーネント - Retail
+        - name: Retail のコンポーネント
           href: retail-components.md
         - name: Retail Server のアーキテクチャ
           href: dev-itpro/retail-server-architecture.md
-        - name: 小売チャネルのコミュニケーション
+        - name: Commerce Data Exchange と小売チャネルのコミュニケーション
           href: dev-itpro/define-retail-channel-communications-cdx.md
-        - name: MPOS アーキテクチャ
+        - name: Retail Modern POS アーキテクチャ
           href: dev-itpro/retail-modern-pos-architecture.md
         - name: 小売オンライン ストア発行アーキテクチャ
           href: dev-itpro/retail-online-store-publishing-architecture.md
-        - name: 販売チャネル パフォーマンス Power BI コンテンツ
+        - name: Retail Channel Performance Power BI コンテンツ
           href: ../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/retail/toc.json
         - name: 支払アプリケーション データ セキュリティ標準 (PA-DSS) 証明
           href: dev-itpro/PA-DSS-Certification.md
@@ -393,7 +424,7 @@
           href: retail-onprem.md
     - name: 配置と修正プログラム
       items:
-        - name: Retail Store Scale Unit の概要
+        - name: Retail Store Scale Unit
           href: dev-itpro/retail-store-system-begin.md
         - name: Retail Store Scale Unit のコンフィギュレーションとインストール
           href: dev-itpro/retail-store-scale-unit-configuration-installation.md
@@ -403,7 +434,7 @@
           href: set-up-activation-accounts-validate-devices-hq.md
         - name: Retail POS デバイスのライセンス認証
           href: dev-itpro/retail-device-activation.md
-        - name: 小売 Cloud POS のセキュリティ保護
+        - name: 共有環境の Cloud POS のセキュリティ保護
           href: dev-itpro/secure-retail-cloud-pos.md
         - name: Retail Hardware Station のコンフィギュレーションとインストール
           href: retail-hardware-station-configuration-installation.md
@@ -415,9 +446,9 @@
           href: ../dev-itpro/deployment/apply-deployable-package-system.md?toc=/retail/toc.json
     - name: アップグレードおよび N-1 のサポート
       items:
-        - name: アップグレードおよび N-1 のサポートの概要
+        - name: Retail のアップグレードおよび N-1 のサポート
           href: dev-itpro/overview-upgrade-n-minus1.md
-        - name: N-1 コンポーネントのインストール
+        - name: Phased Rollout (N-1) のインストール、コンフィギュレーション、切替
           href: dev-itpro/n-1-installation-configuration.md
     - name: 実装ガイダンス
       items:
@@ -437,53 +468,53 @@
           href: pos-screen-layouts.md
         - name: POS のレイアウト デザイナーのインストール
           href: install-pos-layout-designer.md
-        - name: オフライン モード用の MPOS のコンフィギュレーション
+        - name: オフライン モードの Retail Modern POS
           href: dev-itpro/retail-modern-pos-offline.md
         - name: POS Dual ディスプレイ ビューの拡張
           href: dev-itpro/pos-dual-display-extension.md
-        - name: MPOS および Cloud POS のトリガー拡張機能
+        - name: Retail Modern POS および Cloud POS のトリガー拡張機能
           href: dev-itpro/modern-pos-trigger-extensibility.md
         - name: POS ビューへのカスタム コントロールの追加
           href: dev-itpro/pos-custom-control.md
-        - name: POS レイアウトへの新しい POS 操作の追加
+        - name: ボタン グリッド デザイナーを使用した POS 操作の POS レイアウトへの追加
           href: dev-itpro/add-POS-operations.md
         - name: POS 支払拡張機能
           href: dev-itpro/pos-payment-extension.md
         - name: 外部ギフト カードのサポート
           href: dev-itpro/gift-card.md
-        - name: Retail Experience アプリの作成
+        - name: ブランド化の作成と Retail Experience アプリへの適用
           href: dev-itpro/create-retail-experience-app.md
-    - name: ハードウェア ステーションの概要および拡張機能
+    - name: ハードウェア ステーションの拡張機能
       href: dev-itpro/hardware-station-extensibility.md
-    - name: Retail サーバーの拡張機能
+    - name: Retail Server の拡張機能
       items:
         - name: Retail Server OData コントローラーの拡張
           href: dev-itpro/extend-retail-server-odata-controller.md
-        - name: Web API および OData コントローラー
+        - name: Retail Server 用 Web API コント ローラーの作成
           href: dev-itpro/odata-controllers-api.md
-        - name: Retail サーバーの顧客およびコンシューマー API
+        - name: Retail Server の顧客およびコンシューマー API
           href: dev-itpro/retail-server-customer-consumer-api.md
-        - name: メタデータの拡張
+        - name: 既定の Retail Server のメタデータ コント ローラーの拡張
           href: dev-itpro/extend-metadata.md
-        - name: POS のオフライン モードをサポートするために Commerce Runtime を拡張
+        - name: オフライン モードでの CRT サービスの呼び出し
           href: dev-itpro/call-crt-service-offline.md
-    - name: Commerce Runtime の拡張機能
+    - name: Commerce runtime (CRT) の拡張機能
       items:
-        - name: Commerce Runtime の概要
+        - name: CRT のアーキテクチャおよびコンフィギュレーション
           href: dev-itpro/commerce-runtime-overview.md
-        - name: Commerce Runtime のサービス
+        - name: CRT サービス
           href: dev-itpro/crt-services.md
-        - name: Commerce Runtime および Retail Server の拡張機能
+        - name: CRT および Retail Server の拡張機能
           href: dev-itpro/commerce-runtime-extensibility.md
         - name: 顧客の基本設定データをチャネル データベースに追加
           href: dev-itpro/add-customer-preference-channel.md
         - name: プロパティを販売注文に追加
           href: dev-itpro/add-properties-sales-order.md
-        - name: Commerce Rumtime の拡張機能とトリガー
+        - name: CRT の拡張機能およびトリガー
           href: dev-itpro/commerce-runtime-extensibility-trigger.md
-        - name: 'トリガーの例: ブロック トランザクション'
+        - name: トリガーを使用したトランザクションのブロック
           href: dev-itpro/trigger-example-blocking-transaction.md
-        - name: 'トリガーの例: 返品ポリシー'
+        - name: トリガーを使用する返品ポリシーの実装
           href: dev-itpro/trigger-example-return-policy.md
     - name: E コマースの拡張機能
       items:
@@ -497,55 +528,57 @@
           href: dev-itpro/ecommerce-platform-sdk.md
     - name: 支払コネクタの拡張機能
       items:
-        - name: 支払ターミナルとの支払の統合
+        - name: 支払ターミナルの支払統合の作成
           href: dev-itpro/end-to-end-payment-extension.md
         - name: 支払コネクタと支払デバイスの実装 (ホワイト ペーパー)
           href: 'http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx'
         - name: 支払コネクタの配置
           href: dev-itpro/deploy-payment-connector.md
+        - name: 支払ターミナルの拡張機能向けにローカライズされたカスタム エラー メッセージの作成
+          href: dev-itpro/payment-custom-error-messages.md
         - name: 支払コネクタ用の Windows インストーラーの作成
           href: dev-itpro/create-windows-installer-payment-connector.md
     - name: Retail SDK
       href: dev-itpro/retail-sdk/retail-sdk-overview.md
       items:
-        - name: Retail SDK を継続的ビルド システムと統合
+        - name: Retail および Finance and Operations 用ビルド システムのマージ
           href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
         - name: Retail SDK の拡張機能サンプル
           href: dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md
-        - name: Retail SDK パッケージ
+        - name: 配置可能な小売パッケージの作成
           href: dev-itpro/retail-sdk/retail-sdk-packaging.md
-        - name: 'Retail SDK サンプル '
+        - name: Retail SDK サンプル
           href: dev-itpro/retail-sdk/retail-sdk-samples.md
           items:
             - name: 梱包明細の拡張ポイント
               href: dev-itpro/extensions-shipping-carrier-integration.md
-        - name: チャネル データベース (DB) 拡張機能
+        - name: チャネル データベース拡張機能
           href: dev-itpro/channel-db-extensions.md
-        - name: CDX 拡張機能
+        - name: 拡張機能を介したカスタム CDX 同期の有効化
           href: dev-itpro/cdx-extensibility.md
-        - name: POS パネルへのカスタム フィールドの追加
+        - name: POS Totals パネルへのカスタム フィールドの追加
           href: dev-itpro/custom-field-pos-totals.md
-        - name: 注文属性
+        - name: 注文属性の定義および設定
           href: dev-itpro/order-attributes.md
         - name: 顧客属性
           href: dev-itpro/customer-attributes.md
-        - name: 'Retail Typescript と C# proxy'
+        - name: 'Retail Typescript と C# プロキシ'
           href: dev-itpro/typescript-proxy-retail-pos.md
         - name: Retail POS サンプルの実行
           href: dev-itpro/pos-run-samples.md
-        - name: 既存の POS ビューの拡張によるカスタム列およびアプリ バー ボタンの追加
+        - name: POS ビューの拡張によるカスタム列およびアプリ バー ボタンの追加
           href: dev-itpro/pos-view-extension.md
         - name: Retail Modern POS トランザクション ページへのカスタム コントロールの追加
           href: dev-itpro/pos-custom-transaction.md
         - name: POS トランザクション グリッドへのカスタム列の追加
           href: dev-itpro/pos-custom-transaction-column.md
-        - name: POS 拡張機能からの POS API または操作の呼び出し
+        - name: POS 拡張機能からの POS API または POS 操作の呼び出し
           href: dev-itpro/pos-api-extension.md
         - name: Retail Modern POS のトリガーと印刷
           href: dev-itpro/pos-trigger-printing.md
-        - name: Retail Modern POS 非画面デザイナー ベース ビューへのカスタム コントロールの追加
+        - name: 非画面デザイナー ベース POS ビューへのカスタム コントロールの追加
           href: dev-itpro/pos-control-non-screen.md
-        - name: クラウド ホストのデベロップメント ボックスで作業している Retail 開発者向けのコンフィギュレーション手順
+        - name: 管理者のアクセス権を使用しないクラウド ホスト開発環境での開発
           href: dev-itpro/cloud-dev-box.md
     - name: Commerce Runtime
       items:

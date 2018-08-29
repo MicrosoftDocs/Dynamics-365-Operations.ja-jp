@@ -1,5 +1,5 @@
 ---
-title: "バッチ サーバーの概要"
+title: "バッチ処理とバッチ サーバー"
 description: "この記事では、バッチ処理とバッチ サーバー、およびその使用を計画する方法について説明します。"
 author: maertenm
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: maertenm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: e4caa8330c80261ab71da3b9d17e09404d80c5a1
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 47f555b68f1aaaba2bae7246d77d9cdbc16efd34
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="batch-server-overview"></a>バッチ サーバーの概要
+# <a name="batch-processing-and-batch-servers"></a>バッチ処理とバッチ サーバー
 
 [!include [banner](../includes/banner.md)]
 

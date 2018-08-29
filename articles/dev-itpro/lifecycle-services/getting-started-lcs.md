@@ -1,5 +1,5 @@
 ---
-title: "Lifecycle Services for Finance and Operations のパートナー"
+title: "Lifecycle Services (LCS) for Finance and Operations のパートナー"
 description: "この記事では、パートナーが Microsoft Dynamics Lifecycle Services (LCS) をどのように使い始めることができるかについて説明します。"
 author: manalidongre
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: manado
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 3a459a22ca6b51c2a564856b508e560c183868c2
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: aa0514b0d7b5ebd02db579b4420bb50b5774043c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="lifecycle-services-for-finance-and-operations-partners"></a>Lifecycle Services for Finance and Operations のパートナー
+# <a name="lifecycle-services-lcs-for-finance-and-operations-partners"></a>Lifecycle Services (LCS) for Finance and Operations のパートナー
 
 [!include [banner](../includes/banner.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Dynamics 365 for Finance and Operations ソリューションでデータ パッケージを処理および使用します。"
+title: "Finance and Operations ソリューションのデータ パッケージの処理と使用"
 description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations ソリューションでデータ パッケージを処理および使用する方法について説明します。"
 author: kfend
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.assetid: ff06961e-2d11-4e4c-addf-5e4b9528a924
 ms.search.region: Global
 ms.author: omarc
 ms.translationtype: HT
-ms.sourcegitcommit: 43c18efc4b02da594821018b6d4b8748a4f5eb84
-ms.openlocfilehash: ca5f1f9986b69fab844c3ae27118a26983b835ec
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 0dbd2e0105ec0a3b1a53e45dd4b85bd1ddd9ce05
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/12/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="process-and-consume-data-packages-in-a-microsoft-dynamics-365-for-finance-and-operations-solution"></a>Microsoft Dynamics 365 for Finance and Operations ソリューションでデータ パッケージを処理および使用します。
+# <a name="process-and-consume-data-packages-in-finance-and-operations-solutions"></a>Finance and Operations ソリューションのデータ パッケージの処理と使用
 
 [!include [banner](../includes/banner.md)]
 

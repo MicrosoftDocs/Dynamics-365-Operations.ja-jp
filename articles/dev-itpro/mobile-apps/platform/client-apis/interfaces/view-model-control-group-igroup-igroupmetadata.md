@@ -1,5 +1,5 @@
 ---
-title: GroupMetadata
+title: "GroupMetadata タイプ"
 description: "グループ メタデータ タイプ。"
 author: shadykdc
 manager: AnnBe
@@ -16,10 +16,10 @@ ms.author: kashea
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: da7ae65d852488a1bdc8e1515374257c22d344f4
+ms.sourcegitcommit: ed6cabcc8c76fba3d4414cd4b564b720c54169e0
+ms.openlocfilehash: d96ef14b4c3ddfd407a2c6964a337da06bb58cbd
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 

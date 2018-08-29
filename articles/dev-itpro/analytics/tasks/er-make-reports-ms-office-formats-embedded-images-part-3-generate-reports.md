@@ -1,5 +1,5 @@
 --- 
-title: "画像が埋め込まれた Microsoft Office 形式のレポートを生成する"
+title: "画像が埋め込まれた Office 形式でのレポートの生成"
 description: "次のステップでは、「システム管理者」または「電子申告開発者」ロールのユーザーが、電子申告 (ER) のコンフィギュレーションを設計し、埋め込み画像を含む MS Office 形式 (Excel および Word) で電子ドキュメントを生成する方法を説明します。"
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: e2ab89857f4bf4844123508837c8faa504bc8839
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 5ef7ec2f8b5b7fdf456ebb71b863e620ae21e6b5
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="generate-reports-in-microsoft-office-formats-with-embedded-images"></a>画像が埋め込まれた Microsoft Office 形式のレポートを生成する
+# <a name="generate-reports-in-office-format-that-have-embedded-images"></a>画像が埋め込まれた Office 形式でのレポートの生成
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

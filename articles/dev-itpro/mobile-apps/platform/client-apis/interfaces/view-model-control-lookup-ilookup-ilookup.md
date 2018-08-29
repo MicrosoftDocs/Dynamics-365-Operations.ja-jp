@@ -1,5 +1,5 @@
 ---
-title: "ルックアップ"
+title: "参照タイプ"
 description: "ルックアップ コントロールの種類。 ルックアップは、オプションの一覧からの入力を選択するために使用する入力コントロールです。"
 author: shadykdc
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.author: kashea
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: b02a1f37cb279b52ba806cea355e67273b785879
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: d877c95ba7ca7337bb08fad69d06f97c77d1e1da
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="lookup-type"></a>Lookup タイプ
+# <a name="lookup-type"></a>参照タイプ
 
 [!include [banner](../../../../includes/banner.md)]
 

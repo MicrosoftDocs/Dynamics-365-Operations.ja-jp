@@ -1,5 +1,5 @@
 ---
-title: "Dynamics 365 for Finance and Operations オンプレミスの概要"
+title: "オンプレミス配置オプション"
 description: "Dynamics 365 for Finance and Operations は、オンプレミスまたはローカル ビジネス データ (LBD) の展開オプションを使用して、顧客データ センターでビジネス プロセスを実行することをサポートします。"
 author: kfend
 manager: AnnBe
@@ -18,13 +18,13 @@ ms.author: arifk
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 006edbe44f765ddc528c001da0b4b61092dee2cb
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 2f7a10e993f593d9ef70c19447b05a0ffd1f8b8e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="dynamics-365-for-finance-and-operations-enterprise-edition-on-premises-overview"></a>Dynamics 365 for Finance and Operations、(Enterprise edition オンプレミス) の概要 
+# <a name="on-premises-deployment-option"></a>オンプレミス配置オプション
 
 [!include [banner](../includes/banner.md)]
 

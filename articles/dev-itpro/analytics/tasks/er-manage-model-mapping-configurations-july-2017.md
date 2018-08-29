@@ -1,5 +1,5 @@
 --- 
-title: "電子申告 (ER) のモデル マッピングの構成を管理する"
+title: "個別の ER コンフィギュレーションにおける ER モデル マッピングの管理"
 description: "次のステップでは、「システム管理者」または「電子レポート開発者」ロールに割り当てられたユーザーが、個別の ER コンフィギュレーションの電子申告 (ER) モデル マッピングを管理する方法を説明します。"
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 35fdc1e98897d449ce18fe38cc6b7896ca5c5278
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 24ca4124d190df94e7ca9ac31c2ea757fe9ff242
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="manage-model-mapping-configurations-for-electronic-reporting-er"></a>電子申告 (ER) のモデル マッピングの構成を管理する
+# <a name="manage-er-model-mapping-in-separate-er-configurations"></a>個別の ER コンフィギュレーションにおける ER モデル マッピングの管理
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

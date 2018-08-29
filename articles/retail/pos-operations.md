@@ -1,5 +1,5 @@
 ---
-title: "オンラインおよびオフラインでの POS 操作"
+title: "オンラインおよびオフラインでの販売時点管理 (POS) の操作"
 description: "このトピックでは、Microsoft Dynamics 365 for Retail の販売時点管理 (POS) オペレーションについて詳しく説明します。 アプリケーション内で操作を呼び出すことができる場所と、オフラインモードで使用できるかどうかを指定します。"
 author: jblucher
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 8a24f8adc4f7886a1f942d83f7a4eb12e7034fcd
-ms.openlocfilehash: d8cf283321b81c377498cd449b098f8fac1fe01f
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 58653d6e991f1896673a07e3057bd516c74edd76
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="pos-operations-online-and-offline"></a>オンラインおよびオフラインでの POS 操作
+# <a name="online-and-offline-point-of-sale-pos-operations"></a>オンラインおよびオフラインでの販売時点管理 (POS) の操作
 
 [!include [banner](includes/banner.md)]
 
@@ -127,7 +127,7 @@ ms.lasthandoff: 03/22/2018
 | 214 | ギフト カードで支払う | 店舗が発行したギフト カードを承認します。 | 有 | 有 | 無 | 無 | 無 |
 | 207 | ロイヤルティ カードで支払う | 支払いのためにロイヤリティカードを受け取り、ポイントを適格な商品に交換します。 | 有 | 有 | 無 | 無 | 無 |
 | 634 | 支払履歴 | 現在の顧客の注文に対する顧客の支払の履歴を表示します。 | 有 | 有 | 無 | 無 | 無 |
-| 803 | ピッキングと入荷 | 注文をピッキングするか、店舗で受けとるかを選択できる [**ピッキングと入荷**] ページを開きます。 | 有 | 有 | 有 | 無 | 無 |
+| 803 | ピッキングと入荷 | 注文をピッキングするか、店舗で受けとるかを選択できる **ピッキングと入荷** ページを開きます。 | 有 | 有 | 有 | 無 | 無 |
 | 632 | すべての製品の集荷 | すべての明細行に対して処理方法を**店舗集配**に設定します。 | 有 | 有 | 無 | 有\* | 無 |
 | 631 | 選択された製品の集荷 | 選択した明細行に対して処理方法を**店舗集配**に設定します。 | 有 | 有 | 無 | 有\* | 無 |
 | 400 | ポップアップ メニュー | この操作はサポートされていません。 | 適用できません | 適用できません | 適用できません | 適用できません | 無 |

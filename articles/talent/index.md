@@ -1,5 +1,5 @@
 ---
-title: Microsoft Dynamics 365 for Talent
+title: "Dynamics 365 for Talent へようこそ"
 description: "Talentは、多くの日常的な記録タスクを合理化し、組織の多数のスタッフ配置に関連するプロセスを自動化します。 これらのプロセスには、従業員の雇用維持、給付金管理、トレーニング、勤務評価、変更管理が含まれます。"
 author: josaw
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: bde68c9167e18cae6be4988865123d20274753c0
-ms.openlocfilehash: 9bc09a822f78b9792c2afdb0d297809edea7551a
+ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
+ms.openlocfilehash: e31cd1e0acc8f3ab450ec4acda62b88b189f036d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/06/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="welcome-to-microsoft-dynamics-365-for-talent"></a>Microsoft Dynamics 365 for Talent へようこそ
+# <a name="welcome-to-dynamics-365-for-talent"></a>Dynamics 365 for Talent へようこそ
 
 [!include [banner](includes/banner.md)]
 
@@ -56,7 +56,7 @@ Talentで作業をするときは、部門、職務、職位などの要素を�
 -   [部門、職務、職位を使用した従業員の編成](departments-jobs-positions.md)
 -   [会社固有の HR パラメーターの設定](set-up-company-specific-hr-parameters.md)
 -   [法人間の HR パラメーターの設定](set-up-hr-parameters-across-legal-entities.md) 
--   [個人のアクションのよく寄せられる質問](personnel-actions-faq.md)
+-   [個人のアクションに関するよく寄せられる質問](personnel-actions-faq.md)
 -   [休暇の概要](leave-absence-overview.md)
 -   [How to use Dynamics 365 for Talent: Leave and Absence (ビデオ)](https://www.youtube.com/watch?v=1q1UhKmO4tw)
 -   [How to manage personnel in Dynamics 365 for Talent (ビデオ)](https://www.youtube.com/watch?v=h1T5IjKKAuA)
@@ -78,7 +78,7 @@ Dynamics 365 for Talent に含まれている Attract アプリは、組織が�
 -   [変動報酬プランの作成](create-variable-compensation-plans.md)
 -   [How to manage compensation in Dynamics 365 for Talent (ビデオ)](https://www.youtube.com/watch?v=lEw5oKopHDk)
 
-## <a name="develop-and-train-employees"></a>従業員の開発とトレーニング
+## <a name="develop-and-train-employees"></a>従業員の育成とトレーニング
 
 従業員が重要なビジネス ニーズを満たしながらキャリア目標を達成できるように、目標の設定、業績評価の作成、フィードバックの管理を行うことができます。また、従業員が必要なスキルを開発できるように、講師をコースに割り当てる前、または誰かをコースに登録する前に、講師、コースのタイプ、コースの説明、議事録、追跡、およびセッションを設定することもできます。 講師は、作業者、申請者、または連絡先として既に存在する必要があります。
 
@@ -100,7 +100,7 @@ Dynamics 365 for Talent に含まれている Attract アプリは、組織が�
 
 Talentは、アメリカ障害者法 (Americans with Disabilities Act)、移民帰化に関する法律を始めとする法律に準拠した、安全な作業環境の維持をに役立ちます。 たとえば、特定の職務への身体的要件の管理や、職場でのスキルを組織が最適化できるよう調整するための要望を追跡できます。
 
--   [フォーム I-9 の検証](../fin-and-ops/hr/localizations/noam-usa-form-i-9-verification.md)
+-   [フォーム I-9 就労資格確認書](../fin-and-ops/hr/localizations/noam-usa-form-i-9-verification.md)
 -   [アメリカ障害者法 (Americans with Disabilities Act) への準拠](../fin-and-ops/hr/localizations/noam-usa-comply-ada.md)
 
 ## <a name="gather-information-using-questionnaires"></a>アンケートによる情報の収集

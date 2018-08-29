@@ -1,5 +1,5 @@
 ---
-title: "グループ化"
+title: "グループ タイプ"
 description: "グループ コンテナーのコントロール タイプ。"
 author: shadykdc
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.author: kashea
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 43d4366e451627e973d0e85866ce44b9287b6327
+ms.sourcegitcommit: ed6cabcc8c76fba3d4414cd4b564b720c54169e0
+ms.openlocfilehash: 5b1ef0ed797e3546701a81b8013a76df71796d24
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="group-type"></a>Group タイプ
+# <a name="group-type"></a>グループ タイプ
 
 [!include [banner](../../../../includes/banner.md)]
 

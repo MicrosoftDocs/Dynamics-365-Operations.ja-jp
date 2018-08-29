@@ -1,5 +1,5 @@
 ---
-title: "チャネル データベース (DB) 拡張機能"
+title: "チャネル データベース 拡張機能"
 description: "このトピックでは、チャネル データベースを拡張する方法について説明します。"
 author: mugunthanm
 manager: AnnBe
@@ -17,14 +17,14 @@ ms.author: mumani
 ms.search.validFrom: 2017-09-15
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: c1958f8ffabba121dc0992dd70fae16021365705
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 2a1b2dab6fbcfd8bf96e9fdf5ad9e58626fc8927
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="channel-database-db-extensions"></a>チャネル データベース (DB) 拡張機能
+# <a name="channel-database-extensions"></a>チャネル データベース 拡張機能
 
 [!include [banner](../../includes/banner.md)]
 

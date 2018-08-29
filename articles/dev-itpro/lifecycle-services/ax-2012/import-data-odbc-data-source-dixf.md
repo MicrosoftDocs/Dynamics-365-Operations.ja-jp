@@ -1,5 +1,5 @@
 ---
-title: "ODBC データ ソースからのデータのインポート (AX 2012)"
+title: "ODBC データ ソースからのデータのインポート"
 description: "Microsoft Dynamics AX 2012 のデータのインポート/エクスポート フレームワークを使用すると、ODBC データ ソースからのデータを Microsoft Dynamics AX 2012 にインポートすることができます。"
 author: kfend
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: kfend
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 15d3bba5cd1e9738a1e9155662f6c5b62209e838
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: fa3d38e4880d450a775c5e18321fd2e51299db0c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="import-data-from-an-odbc-data-source-ax-2012"></a>ODBC データ ソースからのデータのインポート (AX 2012)
+# <a name="import-data-from-odbc-data-sources"></a>ODBC データ ソースからのデータのインポート
 
 [!include [banner](../../includes/banner.md)]
 

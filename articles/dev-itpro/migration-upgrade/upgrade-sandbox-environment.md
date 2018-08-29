@@ -1,5 +1,5 @@
 ---
-title: "サンドボックス環境のアップグレード プロセス"
+title: "サンドボックス環境のアップグレード"
 description: "このトピックでは、非実稼働サンドボックス環境またはスタンドアロン サンドボックス環境へのデータ アップグレードを実行する手順について説明します。"
 author: tariqbell
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: tabell
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: e5438ab7d7b2206a63cd470163ecf93e6537df76
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 4b7f144f69348f7a11d7a11a533cf11dbfd508d1
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="process-for-upgrading-a-sandbox-environment"></a>サンドボックス環境のアップグレード プロセス
+# <a name="upgrade-sandbox-environments"></a>サンドボックス環境のアップグレード
 
 [!include [banner](../includes/banner.md)]
 

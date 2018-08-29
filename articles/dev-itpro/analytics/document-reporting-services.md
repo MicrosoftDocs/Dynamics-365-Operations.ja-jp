@@ -1,5 +1,5 @@
 ---
-title: "ドキュメントの Reporting Services の概要"
+title: "ドキュメントの Reporting Services"
 description: "この記事では、Microsoft Dynamics 365 for Finance and Operations で利用できる統合レポート ソリューションについて説明します。 このソリューションにより、サービス管理が簡略化され、開発者の生産性が向上し、ユーザーのレポート表示エクスペリエンスが強化されます。"
 author: TJVass
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 83c969cab9c01673f74eac1bddf2fc00fb90f32b
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: b32df753bfe22cddff71fa0b9f177d8fd8edcacd
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="document-reporting-services-overview"></a>ドキュメントの Reporting Services の概要
+# <a name="document-reporting-services"></a>ドキュメントの Reporting Services
 
 [!include [banner](../includes/banner.md)]
 

@@ -18,14 +18,14 @@ ms.author: tabell
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: cf531c3a8f3bdb17314d1de436b98249169f82a3
-ms.openlocfilehash: 70b011ab67e428b2e690a298685142675c9a67a6
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 8a6c214cdf9290d4ad0730099a4d7ca720c7747a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="restore-a-database-on-a-non-production-environment"></a>非実稼働環境でのデータベースの復元
+# <a name="restore-databases-in-non-production-environments"></a>非実稼働環境でのデータベースの復元
 
 [!include [banner](../includes/banner.md)]
 

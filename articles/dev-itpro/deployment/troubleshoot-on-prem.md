@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Dynamics 365 for Finance and Operations のトラブルシューティング (オンプレミス)"
+title: "オンプレミス配置のトラブルシューティング"
 description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations のオンプレミス配置のトラブルシューティング情報を提供します。"
 author: sarvanisathish
 manager: AnnBe
@@ -18,13 +18,13 @@ ms.author: sarvanis
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 6c6c7c3f63b7a49820811a7ec80248b09b6e3acf
-ms.openlocfilehash: b923eb0116feb052e8a9fda230f5b28191cf1b8d
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 237d6fd2f3647fecb89f5672a1209dc7b0be7e1b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/19/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="troubleshoot-microsoft-dynamics-365-for-finance-and-operations-on-premises"></a>Microsoft Dynamics 365 for Finance and Operations のトラブルシューティング (オンプレミス)
+# <a name="troubleshoot-on-premises-deployments"></a>オンプレミス配置のトラブルシューティング
 
 [!include [banner](../includes/banner.md)]
 

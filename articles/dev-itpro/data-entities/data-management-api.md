@@ -1,5 +1,5 @@
 ---
-title: "データ管理パッケージ統合 API"
+title: "データ管理パッケージ REST API"
 description: "このトピックでは、データ管理フレームワークのパッケージ REST API について説明します。"
 author: Sunil-Garg
 ms.date: 03/30/2018
@@ -16,14 +16,14 @@ ms.author: sunilg
 ms.search.validFrom: 2017-03-31
 ms.dyn365.ops.version: Platform update 5
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: db21b8cf674dc6244109817c0095ef8fec8629e7
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 74e490696ac8e80fcba9011ff6846f87bb0753a3
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="data-management-package-api"></a>データ管理パッケージ API 
+# <a name="data-management-package-rest-api"></a>データ管理パッケージ REST API
 
 [!include [banner](../includes/banner.md)]
 

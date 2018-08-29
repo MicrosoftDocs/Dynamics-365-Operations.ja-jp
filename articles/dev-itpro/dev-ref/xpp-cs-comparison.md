@@ -3,7 +3,7 @@ title: "X++ と C# の比較"
 description: "このトピックでは、X++ と C# の構文とプログラミングを比較します。"
 author: RobinARH
 manager: AnnBe
-ms.date: 11/03/2017
+ms.date: 07/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 490f22686680989b3727775bd190678063510719
+ms.sourcegitcommit: dd9ad545f453cf63dc7e804748b7fe82bd27b2da
+ms.openlocfilehash: 3cdcd39f17be310450971f5cd89002d7a87dd4d1
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
@@ -44,8 +44,8 @@ ms.lasthandoff: 04/20/2018
 次の X++ 機能は C# の機能と同じです。
 -   1 つの明細行 (`//`) と複数行 (/\*\*/) のコメント。
 -   `==` 2 つの値が等しいかどうかを判定するための (等しい) 演算子。
--   ! = (等しくない) 2 つの値が等しくないかどうかを決定するための演算子。
--   + (プラス記号) 文字列連結の演算子です。
+-   `!=` (等しくない) 2 つの値が等しくないかどうかを決定するための演算子。
+-   `+` (プラス記号) 文字列連結の演算子です。
 
 ### <a name="differences"></a>違い
 
@@ -66,8 +66,8 @@ ms.lasthandoff: 04/20/2018
 -   /\* \*/ 複数行コメント
 -   `if` ステートメント
 -   `==` 演算子
--   != オペレーター
--   + 文字列を連結する演算子
+-   `!=` 演算子
+-   `+` 文字列を連結する演算子
 -   Global:: 接頭語を使用する場合と使用しない場合の、メッセージ出力の Global::info
 -   Global::error for message output
 -   文字列区切り文字としての一重引用符および二重引用符 (' および ") の使用。
@@ -192,7 +192,7 @@ C# コンソールへの実際の出力を次に示します。
     static void JobRs002a_LoopsWhile(Args _args)
     {
         int nLoops = 1;
-        while (nLoops &lt;= 88)
+        while (nLoops <= 88)
         {
             print nLoops;
             pause;
@@ -272,7 +272,7 @@ X++ では、カウンター変数は **for** ステートメントの一部と�
     static void JobRs002a_LoopsWhileFor(Args _args)
     {
         int ii; // The counter.
-        for (ii=1; ii &lt; 5; ii++)
+        for (ii=1; ii < 5; ii++)
         {
             print ii;
             pause;
@@ -1201,7 +1201,7 @@ X++ と C# がイベントデザインパターンを実装する方法にはい
 X++ の例で注目すべき重要なことは次のとおりです。
 
 -   `XppClass` には、`myDelegate` という名前のデリゲート メンバーが含まれます。 **注記**: AOT には委任のノードが含まれています。 このノードは、[AOT] > [クラス] > [XppClass] > [myDelegate] にあります。 いくつかのイベント ハンドラー ノードは、myDelegate ノードの下に配置できます。 AOT ノードによって表されるイベント ハンドラーは、実行時に -= オペレーターによって削除できません。 
--   デリゲート宣言の末尾にある {} かっこは必須ですが、その中にコードを入れることはできません。
+-   デリゲート宣言の末尾の {} カッコは必要ですが、カッコにコードを所持することはできません。
 -   `XppClass` には、パラメーター シグネチャがデリゲートと互換性を持つ 2 つのメソッドがあります。 １ つの方法は静的です。
 -   2 つの互換メソッドは、+= 演算子と **eventHandler** キーワードを使用してデリゲートに追加されます。 これらのステートメントはイベント ハンドラー メソッドを呼び出さず、ステートメントはデリゲートにメソッドを追加するだけです。
 -   デリゲートへの 1 回の呼び出しでイベントが発生します。

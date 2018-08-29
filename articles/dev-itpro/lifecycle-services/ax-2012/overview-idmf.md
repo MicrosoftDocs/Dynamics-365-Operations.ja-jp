@@ -1,5 +1,5 @@
 ---
-title: "Intelligent Data Management Framework の概要 (AX 2012)"
+title: Intelligent Data Management Framework (IDMF)
 description: "このトピックでは、Microsoft Dynamics AX インテリジェント データ管理フレームワーク (IDMF) の管理と使用について説明します。 IDMF により、システム管理者は Microsoft Dynamics AX インストールのパフォーマンスを最適化できます。 IDMF は、Microsoft Dynamics AX アプリケーションの正常性の評価と現在の使用パターンの分析を行い、データベース サイズの削減に役立ちます。"
 author: kfend
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: kfend
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: a49cd536eb9d9139017ce9d312cc6a514bb4bd7c
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 015e90674b500d891a34ccdccb25b844f6b11c4b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="intelligent-data-management-framework-overview-ax-2012"></a>Intelligent Data Management Framework の概要 (AX 2012)
+# <a name="intelligent-data-management-framework-idmf"></a>Intelligent Data Management Framework (IDMF)
 
 [!include [banner](../../includes/banner.md)]
 

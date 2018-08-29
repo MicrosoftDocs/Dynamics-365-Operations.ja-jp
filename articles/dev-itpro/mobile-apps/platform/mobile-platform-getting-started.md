@@ -1,5 +1,5 @@
 ---
-title: "モバイル プラットフォームの概要"
+title: "モバイル プラットフォームを使い始める"
 description: "このトピックでは、モバイル プラットフォームでの開発方法について説明します。"
 author: makhabaz
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: makhabaz
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 9
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: bb3b6715efbd9eea40c96e8522dba70d9c9b4a30
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 36ae8d1b6137091cc6051654c6a0ed6d0c4e92d8
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="getting-started-with-the-mobile-platform"></a>モバイル プラットフォームの概要
+# <a name="get-started-with-the-mobile-platform"></a>モバイル プラットフォームを使い始める
 
 [!include [banner](../../includes/banner.md)]
 

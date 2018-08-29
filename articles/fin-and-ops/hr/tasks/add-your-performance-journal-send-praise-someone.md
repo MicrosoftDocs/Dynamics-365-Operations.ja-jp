@@ -1,5 +1,5 @@
 --- 
-title: "業績仕訳への追加および称賛の送信"
+title: "業績仕訳への情報の追加および称賛の送信"
 description: "パフォーマンスの仕訳帳には、目標を達成した方法、または期間中に実行した方法に関連する情報が保持されます。"
 author: ShielaSogge
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: shielas
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 9b898a5ab5ad2837ef1d9ef8ebf88aaa05f56b3a
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: 92cbb25839b8f202ba37a19ad88a54194a73c179
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="add-to-your-performance-journal-and-send-praise-to-someone"></a>業績仕訳への追加および称賛の送信
+# <a name="add-information-to-your-performance-journal-and-send-praise"></a>業績仕訳への情報の追加および称賛の送信
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

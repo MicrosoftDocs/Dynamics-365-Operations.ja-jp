@@ -1,9 +1,9 @@
 ---
-title: "Commerce Runtime および Retail Server の拡張機能"
+title: "Commerce Runtime (CRT) および Retail サーバーの拡張機能"
 description: "このトピックでは、Commerce Runtime (CRT) と Retail サーバーを拡張するさまざまな方法について説明します。 拡張機能プロパティのコンセプトを説明し、保持有無にかかわらず CRT エンティティに追加する方法について説明します。 また、アクションを Retail サーバー コントローラーに追加して、エンティティのコントローラーを追加する方法も示します。"
 author: mugunthanm
 manager: AnnBe
-ms.date: 05/02/2018
+ms.date: 07/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -18,14 +18,14 @@ ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: cf531c3a8f3bdb17314d1de436b98249169f82a3
-ms.openlocfilehash: b11035a8e20ba5f039eaeefee51edf3da6cce2e8
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 138612221bb6e17ae354a194cd3df7d70b3ce543
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="commerce-runtime-and-retail-server-extensibility"></a>Commerce Runtime および Retail Server の拡張機能
+# <a name="commerce-runtime-crt-and-retail-server-extensibility"></a>Commerce Runtime (CRT) および Retail サーバーの拡張機能
 
 [!include [banner](../includes/banner.md)]
 
@@ -718,12 +718,15 @@ return this.context.runtime.executeAsync(getCartRequest).then((value: ICancelabl
 
 新しい小売サーバー API を呼び出す前に、以下の手順を実行してください。
 
-1.  Retail サーバー web.config ファイルで新しい Retail サーバー拡張を登録します:  &lt;add source="assembly" value="**アセンブリ名**" /&gt;
+1.  Retail サーバー web.config ファイルで新しい Retail サーバー拡張子を登録します: &lt;ソースの追加 =「アセンブリ」値 ="**アセンブリ名**" /&gt; は、extensionComposition セクションの下にあります。
 2.  Customization.settings ファイルの新しい Retail サーバー拡張子を追加します。 このファイルは RetailSdk\\BuildTools&lt;RetailServerLibraryPathForProxyGeneration Condition="'$(RetailServerLibraryPathForProxyGeneration)' == ''"&gt;$(SdkReferencesPath)\\**Your assembly name.dll**&lt;/RetailServerLibraryPathForProxyGeneration&gt; &lt;/PropertyGroup&gt; で見つけることができます
-3.  CRT および Retail サーバー拡張子 dlls の両方を小売サーバー bin フォルダーにドロップします。 新しい小売サーバー api に関連する CRT の拡張機能がある場合、小売サーバー bin フォルダーの commerceRuntime 構成ファイルにある情報をアップデートします。
+3.  CRT と Retail サーバー拡張子 dlls の両方を **…\\RetailServer\\webroot\\bin\\Ext** フォルダーに移動します。 新しい小売サーバー API に関連する CRT 拡張機能をご使用の場合、**…\\RetailServer\\webroot\\bin\\Ext** フォルダー内の CommerceRuntime.Ext.config ファイルの情報を更新してください。
 4.  &lt;ソースの追加 = 「アセンブリ」値 = "**アセンブリ名**" /&gt;
 5.  inetmgr を使用して小売サーバーのメタデータを参照し、エンティティが xml で公開されているかどうかを確認します。
 6.  mpos/クラウド POSをコンパイルしてビルドし、プロキシを再生成します。 コンパイラ中に、mpos は小売サーバーのメタデータで定義されたすべてのエンティティを再生成します。これにより、以下のようなコマース コンテキストを使用して新しいエンティティを呼び出すことができます。
+
+> [!NOTE]
+> Retail サーバー web.config ファイルまたは Retail サーバー フォルダ内で何も変更または追加しないでください。拡張合成セクションは除外され、おそらく bin\ext フォルダにカスタム アセンブリがコピーされます。 配置時に web.config ファイル内の extensionComposition セクションのみマージされ、他のセクションはすべて上書きされ、**...\\RetailServer\\webroot\\bin\\Ext** フォルダのアセンブリのみが他のアセンブリとマージされます。 このファイルは、最新バイナリ パッケージに基づいて上書きされます。 カスタム アプリケーションの設定を追加、または、変更するのに Retail サーバー web.config ファイルは使用しません。
 
 #### <a name="cross-loyalty-sample"></a>クロス ロイヤルティ サンプル。
 

@@ -15,17 +15,17 @@ ms.custom: 27831
 ms.assetid: 32723600-2e9c-4517-b582-78dca3c166cc
 ms.search.region: global
 ms.author: janeaug
-ms.search.validfrom: 2016-02-28
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 54ec03fe33ecf5306bd786aa2f3f28879c593c55
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: e2dc54516cf6ceebfb21e5f032f661be0b1c2a83
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="regulatory-watch-and-regulatory-update-communication"></a>規制の監視と規制の更新の通知
+# <a name="regulatory-watch-and-communication-of-regulatory-updates"></a>規制の監視と規制の更新の通知
 
 [!include [banner](../includes/banner.md)]
 

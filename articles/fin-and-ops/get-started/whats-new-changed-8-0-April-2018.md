@@ -18,10 +18,10 @@ ms.author: tfehr
 ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Release 8.0
 ms.translationtype: HT
-ms.sourcegitcommit: 02d66063f721357b354f7959a46ec94d617f55a2
-ms.openlocfilehash: 1f0f807b0560d221975b5cb8b89457e22a58c347
+ms.sourcegitcommit: 3fb8b60cb645a04147ae7c6cf488420099f72f4c
+ms.openlocfilehash: 476a2a48ae3aa0c282ef9a4e298ed8be372a7df8
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/22/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-version-80-april-2018"></a>Dynamics 365 for Finance and Operations バージョン 8.0 (2018 年 4 月) の新機能および変更された機能
@@ -67,8 +67,13 @@ Finance and Operations 内で担当者および個人データを検索するこ
 データは、顧客テーブルと仕入先テーブル、および複数の法人の多くの関連テーブルで共有することができます。
 
 ### <a name="one-voucher-deprecation"></a>1 つの伝票の廃止
+財務仕訳帳 (一般仕訳帳、固定資産仕訳帳、仕入先支払仕訳帳など) の既存の機能を使用して、1 つの伝票のコンテキストで複数の補助元帳トランザクションを入力できます。 この機能を「1 つの伝票」と呼びます。 1 つの伝票機能により、決済、税計算、補助元帳の一般会計への調整、財務報告などの間に問題が発生します。 これらの問題のため、1 つの伝票機能は廃止されます。 ただし、この機能に依存する機能的なギャップがあるため、機能が一度に無効になることはありません。 代わりに、次のスケジュールを使用します。
+-   **18 年春リリース** – 機能は、一般会計パラメーターによって既定で、オフになります。 ただし、組織が単一伝票文書に記載されているビジネス シナリオ ギャップの範囲内にシナリオがある場合、機能をオンにできます。
+    -  顧客が 1 つの伝票を必要としないビジネス シナリオがある場合、機能をオンにしないでください。 この機能が使用される場合、単一伝票文書に記載されている領域の「不具合」は修正されません。
+    - 機能のギャップのいずれかに機能が必要でない限り、Microsoft Dynamics 365 Finance and Operations への統合に 1 つの伝票を使用しないでください。
+-   **18 年秋およびそれ以降のリリース** – 機能的なギャップが埋まります。 機能的なギャップが埋められた後、1 つの伝票の機能が完全にオフになります。
 
-既定で 1 つの伝票が一般会計パラメーターによってオフになります。
+この機能の使用と廃止に関する詳細については、[1 つの伝票ドキュメント](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/general-ledger/one-voucher)を参照してください。
 
 ## <a name="extensibility-and-customization"></a>拡張性およびカスタマイズ 
 

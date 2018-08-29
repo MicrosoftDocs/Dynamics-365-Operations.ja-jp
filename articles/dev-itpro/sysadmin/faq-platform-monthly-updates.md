@@ -1,5 +1,5 @@
 ---
-title: "Finance and Operations クラウド プラットフォームの毎月の更新プログラムのよく寄せられる質問"
+title: "クラウド プラットフォームの毎月の更新プログラムのよく寄せられる質問"
 description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations クラウド プラットフォームの毎月の更新に関する重要な情報を提供します。"
 author: manalidongre
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: meeram
 ms.dyn365.ops.version: Platform update 5
 ms.search.validFrom: 2017-03-31
 ms.translationtype: HT
-ms.sourcegitcommit: 62dbf8ffd550f9369df1ac8399b25c76f3d57c93
-ms.openlocfilehash: 1f6f507ae921b2a39248efa2d8196e0f31926405
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: a1c51fc294ab5d3f64579a4ec547be1b8112c238
 ms.contentlocale: ja-jp
-ms.lasthandoff: 07/03/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="finance-and-operations-cloud-platform-monthly-updates-faq"></a>Finance and Operations クラウド プラットフォームの毎月の更新プログラムのよく寄せられる質問
+# <a name="cloud-platform-monthly-updates-faq"></a>クラウド プラットフォームの毎月の更新プログラムのよく寄せられる質問
 
 [!include [banner](../includes/banner.md)]
 

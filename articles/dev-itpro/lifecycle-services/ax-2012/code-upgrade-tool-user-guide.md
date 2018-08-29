@@ -1,5 +1,5 @@
 ---
-title: "コード アップグレード ツール ユーザー ガイド"
+title: "コード アップグレード サービス ユーザー ガイド"
 description: "コード アップグレード サービスは使用されなくなりました。 アップグレード分析ツールを使用します。"
 author: kfend
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: kfend
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 450f3328a09d17db95737c7745d01514c1710b42
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 441bff1b4b8a59c3a6fc6e3726c7c231b870c211
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="code-upgrade-tool-user-guide-ax-2012"></a>コード アップグレード ツール ユーザー ガイド (AX 2012)
+# <a name="code-upgrade-service-user-guide"></a>コード アップグレード サービス ユーザー ガイド
 
 [!include [banner](../../includes/banner.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: "Azure での Dynamics AX 2012 R3 配置の管理"
+title: "Azure 上での AX 2012 R3 の 配置管理"
 description: "このトピックでは、Microsoft Azure での Microsoft Dynamics AX 2012 R3 の導入および管理の方法について説明します。"
 author: kfend
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: kfend
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 9c92924cb7ec0301e01598e22f42ab95c54360bf
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 4fbbf4489f1121d08245f03944e1493b9944e40b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="manage-your-dynamics-ax-2012-r3-deployment-on-azure"></a>Azure での Dynamics AX 2012 R3 配置の管理
+# <a name="manage-ax-2012-r3-deployments-on-azure"></a>Azure 上での AX 2012 R3 の 配置管理
 
 [!include [banner](../../includes/banner.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: "Azure リソース マネージャーの研修"
+title: "Azure Resource Manager (ARM) の研修プロセスを完了します。"
 description: "このトピックでは、コネクタの Azure Resource Manager (ARM) 登録プロセスを完了する方法について説明します。"
 author: sarvanisathish
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: sarvanis
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 9abfba5aa606e13e2ba5a12877409296dcb7d4ff
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 2c9d40e65dad4032d44ad7e94f925e6b6b74a199
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="azure-resource-manager-onboarding"></a>Azure リソース マネージャーの研修
+# <a name="complete-the-azure-resource-manager-arm-onboarding-process"></a>Azure Resource Manager (ARM) の研修プロセスを完了します。
 
 [!include [banner](../includes/banner.md)]
 

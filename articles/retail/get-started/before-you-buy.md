@@ -1,5 +1,5 @@
 ---
-title: "Dynamics 365 for Retail を購入する前に"
+title: "Retail を購入する前に"
 description: "Dynamics 365 for Retail への新機能 お客様が購入を検討されているか、または購入の準備が整っているかにかかわらず、お客様の役に立つガイダンスを作成しました。"
 author: jblucher
 manager: AnnBe
@@ -17,14 +17,14 @@ ms.author: jeffbl
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 61d61e19ff3cb70dd42f170d0b10d30768f04124
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 7fd307cb69273c123a8d54570ad39103951aacc7
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="before-you-buy-dynamics-365-for-retail"></a>Dynamics 365 for Retail を購入する前に
+# <a name="before-you-buy-retail"></a>Retail を購入する前に
 
 [!include [banner](../../includes/banner.md)]
 

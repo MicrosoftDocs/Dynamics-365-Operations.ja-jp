@@ -1,5 +1,5 @@
 ---
-title: "データのモデリングと集計"
+title: "データの集計モデル"
 description: "このチュートリアルでは、集計データをモデリングするプロセスについて説明します。"
 author: MilindaV2
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: milindav
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 662ee44e2ba40794a0de867c7c6c3ce1e3f39869
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 5571a75325042a06db5e1a60419fe59f77f8d88d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="modeling-and-aggregate-data"></a>データのモデリングと集計
+# <a name="model-aggregate-data"></a>データの集計モデル
 
 [!include [banner](../includes/banner.md)]
 

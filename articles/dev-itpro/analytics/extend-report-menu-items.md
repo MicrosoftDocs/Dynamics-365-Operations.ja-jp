@@ -1,5 +1,5 @@
 ---
-title: "レポート メニュー項目の拡張"
+title: "レポート メニュー項目を拡張して、ユーザーのナビゲーションをリダイレクトする"
 description: "このトピックでは、コード変更を最小限にして、ナビゲーションをカスタム レポート ソリューションにリダイレクトするように、既存のアプリケーション メニュー項目を拡張する方法について説明します。"
 author: TJVass
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: tjvass
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: bf9c42d0c0018da74d5f4bd563b16d71297912c3
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: d80eca4d6c1f44f30241a9fbc1d8a942bca2f355
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="extend-report-menu-items"></a>レポート メニュー項目の拡張
+# <a name="extend-report-menu-items-to-redirect-user-navigations"></a>レポート メニュー項目を拡張して、ユーザーのナビゲーションをリダイレクトする
 
 [!include [banner](../includes/banner.md)]
 

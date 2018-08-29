@@ -19,18 +19,18 @@ ms.author: milindav
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 ms.translationtype: HT
-ms.sourcegitcommit: 8779134ef16a828635dfe0179881843076926bbe
-ms.openlocfilehash: e9d43cf4225839305685a7b6129130c106380707
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 1006c2551ac67609dd4100778723dd79db4a0507
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="author-analytical-reports-by-using-power-bi-desktop"></a>Power BI Desktop を使用して分析レポートを作成する
+# <a name="create-analytical-reports-by-using-power-bi-desktop"></a>Power BI Desktop を使用して分析レポートを作成する
 
 [!include [banner](../includes/banner.md)]
 
-ユーザーが power user またはビジネス アナリストである場合は、自分の組織のために多くのレポートを作成している可能性があります。 他のユーザーと共有する前に、データの書式設定と関連付けによって、Microsoft Excel でこれらのレポートを作成する場合があります。 レポートへの変更が必要な場合、組織内のユーザーから連絡が来る可能性があります。 このソリューションを使用すると、リッチでインタラクティブなレポートを簡単に作成できます。 レポート ライターは、 Microsoft Power BI デスクトップをレポート ツールとして使用できます。 その後、作成したレポートを PowerBI.com に公開できます。Power BI Desktop について詳しくは、「[Power BI Desktop で魅力的なレポートとビジュアライゼーションを作成する](https://powerbi.microsoft.com/en-us/desktop)」をご覧ください。
+ユーザーが power user またはビジネス アナリストである場合は、自分の組織のために多くのレポートを作成している可能性があります。 他のユーザーと共有する前に、データの書式設定と関連付けによって、Microsoft Excel でこれらのレポートを作成する場合があります。 レポートへの変更が必要な場合、組織内のユーザーから連絡が来る可能性があります。 このソリューションを使用すると、リッチでインタラクティブなレポートを簡単に作成できます。 レポート ライターは、 Microsoft Power BI デスクトップをレポート ツールとして使用できます。 作成したレポートは、PowerBI.com に公開することができます。 Power BI Desktop の詳細については、[Power BI Desktop で魅力的なレポートとビジュアライゼーションを作成する](https://powerbi.microsoft.com/en-us/desktop)を参照してください。
 
 ## <a name="accessing-the-local-entity-store-by-using-directquery"></a>DirectQuery を使用してローカル エンティティ ストアへのアクセス
 Microsoft Dynamics 365 for Finance and Operations では、データ エンティティで公開されるオープン データ プロトコル (OData) のエンドポイントを使用して Microsoft Power BI レポートを作成できます。 このアプローチの限界にもかかわらず、エンティティ格納は従来のソリューションでもエンティティ格納をサポートしています。 ただし、DirectQuery は、解析ソリューションのソース データに推奨されるメソッドになりました。 DirectQuery の利点および制限の詳細については、[Power BI Desktop で DirectQuery の使用](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-use-directquery/) を参照してください。

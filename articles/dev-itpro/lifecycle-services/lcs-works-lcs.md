@@ -1,5 +1,5 @@
 ---
-title: "Lifecycle Services for Finance and Operations の顧客"
+title: "Finance and Operations の顧客用の Lifecycle Services (LCS)"
 description: "この記事は、現在のバージョンの Microsoft Dynamics 365 for Finance and Operations にサインアップしているお客様を対象としています。 顧客と連携して Lifecycle Services (LCS) プロジェクトのライフサイクルを進めることができるようにするパートナーにとっても、この情報は便利です。"
 author: manalidongre
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: manado
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: c732af34f72bad92e310f973e92a4389eaa0e37a
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 2b5adfde75e098bfe5b8a9a8091eb25a1422a506
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="lifecycle-services-for-finance-and-operations-customers"></a>Lifecycle Services for Finance and Operations の顧客
+# <a name="lifecycle-services-lcs-for-finance-and-operations-customers"></a>Finance and Operations の顧客用の Lifecycle Services (LCS)
 
 [!include [banner](../includes/banner.md)]
 

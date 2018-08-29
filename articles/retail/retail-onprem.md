@@ -16,14 +16,14 @@ ms.author: aamiral
 ms.search.validFrom: July 2017 update
 ms.dyn365.ops.version: 2017-06-30
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 0fea226deb411d0d90ccc143cee11a979756cd23
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 6d57b4e0ba374221a2d47ab7097996f428997712
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="retail-capabilities-available-in-on-premises-deployments"></a>オンプレミス配置で使用できる小売機能
+# <a name="retail-capabilities-that-are-available-in-on-premises-deployments"></a>オンプレミス配置で使用できる小売機能
 
 [!include [banner](../includes/banner.md)]
 

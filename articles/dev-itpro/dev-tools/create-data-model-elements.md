@@ -18,14 +18,14 @@ ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: cf531c3a8f3bdb17314d1de436b98249169f82a3
-ms.openlocfilehash: 2a1352d95ce6cb55e0a3fc02d817fb9b9de2f8ee
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: ff58bb6067cd516bf3fb5054879ca78fc458ce09
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="create-a-model-and-data-model-elements"></a>モデルとデータ モデル要素の作成
+# <a name="create-models-and-data-model-elements"></a>モデルとデータ モデル要素の作成
 
 [!include [banner](../includes/banner.md)]
 

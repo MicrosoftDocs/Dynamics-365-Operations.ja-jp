@@ -1,5 +1,5 @@
 ---
-title: "法人間の HR パラメータの設定"
+title: "法人間の人事管理 (HR) パラメーターの設定"
 description: "職位レコードなど、会社間で共有されるのレコードの共有パラメーターを設定する必要があります。 この記事は、法人間に人事管理パラメーターを設定する方法を説明します。"
 author: rschloma
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.author: shielas
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 1241d8da101af094ac510819376908727f9bcf07
+ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
+ms.openlocfilehash: cc5acf7ba1b350ee2c91923c7de3b4780385f3ef
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="set-up-hr-parameters-across-legal-entities"></a>法人間の HR パラメータの設定
+# <a name="set-up-human-resources-hr-parameters-across-legal-entities"></a>法人間の人事管理 (HR) パラメーターの設定
 
 [!include [banner](includes/banner.md)]
 

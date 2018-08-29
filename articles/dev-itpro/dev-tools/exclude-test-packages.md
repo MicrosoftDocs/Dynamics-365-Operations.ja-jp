@@ -18,14 +18,14 @@ ms.author: jorisde
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 51bfd85319962e5d92c2798b923fbab251c5e26c
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 1889c8167339e65fa77bd2e9ad8160b43df4a54f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="exclude-test-packages-from-the-build-output"></a>ビルド出力からテスト パッケージを除外
+# <a name="exclude-test-packages-from-build-output"></a>ビルド出力からテスト パッケージを除外
 
 [!include [banner](../includes/banner.md)]
 

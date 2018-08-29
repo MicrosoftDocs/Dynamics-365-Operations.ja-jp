@@ -1,5 +1,5 @@
 ---
-title: "ビジネス ロジック イベントの概要"
+title: "ビジネス ロジック イベント"
 description: "ビジネス ロジックで実行されるコードは、ページ、アクション、コントロールのメタデータにランタイム変更を加えることができます。"
 author: makhabaz
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: makhabaz
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 9167b539f2d48dbbdeb3f53901255ba20f8418ef
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 9b6ee5b1187f24013dfde73a1d5339018a3ff2fa
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="business-logic-events-overview"></a>ビジネス ロジック イベントの概要
+# <a name="business-logic-events"></a>ビジネス ロジック イベント
 
 [!include [banner](../../includes/banner.md)]
 

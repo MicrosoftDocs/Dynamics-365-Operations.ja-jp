@@ -1,5 +1,5 @@
 ---
-title: ListMetadata
+title: "ListMetadata タイプ"
 description: "リスト コントロールのメタデータ。"
 author: shadykdc
 manager: AnnBe
@@ -16,10 +16,10 @@ ms.author: kashea
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: f18c42daaf1e7a80c5fe2d418305018e20d8fb03
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: c4a6ee12008b087b64a018fbc031eea9885b3a15
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 

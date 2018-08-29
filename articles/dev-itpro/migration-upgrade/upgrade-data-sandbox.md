@@ -16,14 +16,14 @@ ms.author: tabell
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 8914723f6ef436bfc9e3a98cc82d5486042b0761
-ms.openlocfilehash: 5786f153463ec5d72e74554cb9b580faf6ddfbf1
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 3fb4e890e02afb5d53b99c1d0933f0ecb47d475b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/07/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="upgrade-from-ax-2012---data-upgrade-in-a-sandbox-environment"></a>AX 2012 からのアップグレード - サンドボックス環境でのデータ アップグレード
+# <a name="upgrade-from-ax-2012---data-upgrade-in-sandbox-environments"></a>AX 2012 からのアップグレード - サンドボックス環境でのデータ アップグレード
 
 [!include [banner](../includes/banner.md)]
 

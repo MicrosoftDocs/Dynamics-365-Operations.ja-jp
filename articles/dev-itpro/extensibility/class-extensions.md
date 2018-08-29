@@ -1,5 +1,5 @@
 ---
-title: "クラスの拡張機能"
+title: "X++ の拡張モデルのクラス"
 description: "この記事では、X++ で新しいクラス拡張モデルについて説明します。"
 author: pvillads
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: pvillads
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: b8e41fef9535cdfc98c4709b609646c28c6007b0
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: c4d1b5a7e4ff92510b466576d024cd4a4309a646
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="class-extensions"></a>クラスの拡張機能
+# <a name="class-extension-model-in-x"></a>X++ の拡張モデルのクラス
 
 [!include [banner](../includes/banner.md)]
 

@@ -1,9 +1,9 @@
 ---
-title: "CRT サービスのオフライン モードでの呼び出し"
+title: "Commerce Runtime (CRT) サービスをオフライン モードで呼び出す"
 description: "このトピックでは、販売時点管理 (POS) のオフライン サポートを提供する方法について説明します。"
 author: mugunthanm
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -18,16 +18,19 @@ ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 35016cfc3c8d34e165f3e350efc4da68be716840
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: 26644fa2c9f4b4ff29573a4d15d315d10b516746
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="call-crt-service-in-offline-mode"></a>CRT サービスのオフライン モードでの呼び出し
+# <a name="call-the-commerce-runtime-crt-service-in-offline-mode"></a>Commerce Runtime (CRT) サービスをオフライン モードで呼び出す
 
 [!include [banner](../includes/banner.md)]
+
+> [!NOTE]
+> このトピックは、Dynamics 365 for Finance and Operations の 7.1 およびそれ以降のバージョンに適用可能です。 バージョン 7.2 およびそれ以上の場合は、この実装はサポートされていません。 これらのバージョンでは、オーバーレイせずに拡張モデルに従います。
 
 このトピックでは、販売時点管理 (POS) のオフライン サポートを提供する方法について説明します。
 

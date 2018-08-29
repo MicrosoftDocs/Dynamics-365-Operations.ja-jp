@@ -1,5 +1,5 @@
 ---
-title: "メタデータの拡張"
+title: "既定の Retail Server メタデータ コントローラーの拡張"
 description: "この記事では、CommerceModelFactory クラスを拡張するコードを説明します。"
 author: kfend
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 700cad7691a23c8bd0b132e28943b6e8a264f6b3
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 13436f9705f03a34992bbfd1cbb129a54a2f0621
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="extend-the-metadata"></a>メタデータの拡張
+# <a name="extend-the-default-retail-server-metadata-controller"></a>既定の Retail Server メタデータ コントローラーの拡張
 
 [!include [banner](../includes/banner.md)]
 

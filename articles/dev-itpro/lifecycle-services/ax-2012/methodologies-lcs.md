@@ -1,5 +1,5 @@
 ---
-title: "方法 (AX 2012)"
+title: "Lifecycle Services (LCS) での方法"
 description: "LCS の方法では、さらなる反復可能で予測可能な実装プロジェクトを保証するために使用できるツールが提供されます。 いずれかの既成の方法を使用するか、自分の方法を作成することができます。 方法を使用すると、進捗状況を容易に追跡およびレポートすることができます。"
 author: kfend
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: kfend
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: d9d28cf6b6aea704a9d620cde4e8f53e998d83d0
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: edb50814928d87d578b12500d7883c0e5fc8cabf
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="methodologies-ax-2012"></a>方法 (AX 2012)
+# <a name="methodologies-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) での方法
 
 [!include [banner](../../includes/banner.md)]
 

@@ -18,14 +18,14 @@ ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: c952f6a71a3e1021cbdd27e5acc1b28ee26817b2
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 4343059f8a8051fb98904cb716610a02b18f80d6
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="x-math-run-time-functions"></a>X++ 数学ランタイム関数
+# <a name="x-math-runtime-functions"></a>X++ 数学ランタイム関数
 
 [!include [banner](../includes/banner.md)]
 

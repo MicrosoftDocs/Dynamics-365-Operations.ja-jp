@@ -1,7 +1,7 @@
 ---
-title: "セグメント化されたエントリ コントロールの parm メソッド"
+title: "セグメント化されたエントリ コントロールのための parm メソッド"
 description: "セグメント化されたエントリ コントロールのインスタンスで、コード内で設定できる parm メソッドについて説明します。"
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -18,14 +18,14 @@ ms.author: ghenriks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 4cd41debe1e7c743c92b87416d04f4928eb2f03f
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: 3425372d9984fa0c078b875b6562a704e186dbb4
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="segmented-entry-control-parm-methods"></a>セグメント化されたエントリ コントロールの parm メソッド
+# <a name="parm-methods-for-segmented-entry-controls"></a>セグメント化されたエントリ コントロールのための parm メソッド
 
 [!include [banner](../includes/banner.md)]
 

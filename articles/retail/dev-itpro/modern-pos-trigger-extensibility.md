@@ -1,9 +1,9 @@
 ---
-title: "Modern POS およびクラウド POS のトリガー拡張機能"
-description: "この記事では、最新の POS およびクラウド POS のクライアント側トリガー機能について説明します。"
+title: "Retail Modern POS (MPOS) およびクラウド POS のトリガー拡張機能"
+description: "このトピックでは、Modern POS と Cloud POS のクライアント側のトリガー機能について説明します。"
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -18,18 +18,19 @@ ms.author: sijoshi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 0a1cc524107dc686c6c3e63a596356f026e8d501
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 82eab3c07cd78fde9ccc97bb695284c113c6a85a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="modern-pos-and-cloud-pos-trigger-extensibility"></a>Modern POS およびクラウド POS のトリガー拡張機能
+# <a name="retail-modern-pos-mpos-and-cloud-pos-trigger-extensibility"></a>Retail Modern POS (MPOS) およびクラウド POS のトリガー拡張機能
 
-[!include [banner](../includes/banner.md)]
+> [!NOTE]
+> このトピックは、Dynamics 365 for Finance and Operations の 7.1 およびそれ以降のバージョンに適用可能です。 バージョン 7.2 およびそれ以上の場合は、この実装はサポートされていません。 これらのバージョンでは、オーバーレイせずに拡張モデルに従います。
 
-この記事では、最新の POS およびクラウド POS のクライアント側トリガー機能について説明します。
+このトピックでは、Modern POS と Cloud POS のクライアント側のトリガー機能について説明します。
 
 <a name="trigger-overview"></a>トリガーの概要
 ----------------

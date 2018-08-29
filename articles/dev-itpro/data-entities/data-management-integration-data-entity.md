@@ -1,5 +1,5 @@
 ---
-title: "データ管理とデータ エンティティを使用した統合"
+title: "データ エンティティを使用したデータ管理と統合"
 description: "このトピックでは、同期と非同期の統合の仕組みについて簡単に説明します。"
 author: Sunil-Garg
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
-ms.openlocfilehash: f884db53aa01ef1b3bb259b7bb89426c68dcc7b0
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: bf70cb93ed39c869aad7cb10e397731765c6db81
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="data-management-and-integration-using-data-entities"></a>データ管理とデータ エンティティを使用した統合
+# <a name="data-management-and-integration-by-using-data-entities"></a>データ エンティティを使用したデータ管理と統合
 
 [!include [banner](../includes/banner.md)]
 
