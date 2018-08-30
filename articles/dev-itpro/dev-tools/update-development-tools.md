@@ -3,7 +3,7 @@ title: "Visual Studio 開発ツールの更新"
 description: "このトピックでは、開発ツールを更新する方法について説明します。"
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,20 +18,23 @@ ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: c42931b5558c1f664bed3a27bfa74ae6c7330c51
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 0dbe4329ad97c4812c85cc15c06eab632fc9f895
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="update-visual-studio-development-tools"></a>Visual Studio 開発ツールの更新
+# <a name="update-the-visual-studio-development-tools"></a>Visual Studio 開発ツールの更新
 
 [!include [banner](../includes/banner.md)]
 
 このトピックでは、開発ツールを更新する方法について説明します。
 
-このチュートリアルを使用して、Visual Studio 開発ツールを新しいバージョンに更新します。 既存の Visual Studio 開発ツールをアンインストールして、新しい拡張機能をインストールする方法を説明します。 新しい拡張機能は、インストール可能な VSIX ファイルの形式です。 このファイルは、Dynamics Lifecycle Services (LCS) のサイトで使用可能なバイナリ修正プログラムの一部です。 VSIX ファイルは、バイナリ修正プログラム パッケージの **DevToolsService\\Scripts** フォルダーにあります。 AOS バイナリ修正プログラムで開発者コンピューターを更新するたびに、同じバイナリ修正プログラム内にパッケージ化されている開発ツールをインストールすることもお勧めします。
+このチュートリアルを使用して、Visual Studio 開発ツールを新しいバージョンに更新します。 既存の Visual Studio 開発ツールをアンインストールして、新しい拡張機能をインストールする方法を説明します。 新しい拡張機能は、インストール可能な VSIX ファイルの形式です。 このファイルは、Dynamics Lifecycle Services (LCS) のサイトで使用可能なバイナリ修正プログラムの一部です。 VSIX ファイルは、バイナリ修正プログラム パッケージの **DevToolsService\\Scripts** フォルダーにあります。 
+
+> [!NOTE]
+> Finance and Operations プラットフォーム (Dynamics 365 Unified Operations プラットフォームとも呼ばれます) をプラットフォーム更新プログラム 4 以降にアップグレードする場合は、この記事の手順に従う必要はありません。 プラットフォームのアップグレード プロセスの一部である自動のステップです。
 
 ## <a name="uninstall-the-existing-visual-studio-extension"></a>既存の Visual Studio 拡張機能をアンインストールする
 開発ツールの新しいバージョンをインストールするには、最初に既存のバージョンをアンインストールする必要があります。 インストールされている開発ツールのバージョンを確認します。 インストールしていない場合は、このセクションを省略できます。

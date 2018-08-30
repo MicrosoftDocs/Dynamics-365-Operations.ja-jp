@@ -18,14 +18,14 @@ ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 10446e952d571ddde539e2a3d09dfeb190ed241c
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 0f29e25f0e43b1e4e9d35950057a35712b229c62
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="get-an-evaluation-copy"></a>ベータ評価版の入手
+# <a name="get-evaluation-copies"></a>ベータ評価版の入手
 
 [!include [banner](../includes/banner.md)]
 

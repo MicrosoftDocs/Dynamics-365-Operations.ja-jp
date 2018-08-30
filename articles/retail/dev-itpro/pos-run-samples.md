@@ -1,5 +1,5 @@
 ---
-title: "Retail POS サンプルの実行"
+title: "小売販売時点管理 (POS) サンプルを実行"
 description: "このトピックでは、Retail POS サンプルを実行する方法について説明します。"
 author: mugunthanm
 manager: AnnBe
@@ -17,14 +17,14 @@ ms.author: mumani
 ms.search.validFrom: 2017-11-27
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 0896746d8affc07174edf8df290bb1165f0a8cfc
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: dec83a01385cb3f7c9affde1ac0b93102d859fb7
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="run-retail-pos-samples"></a>Retail POS サンプルの実行
+# <a name="run-the-retail-point-of-sale-pos-samples"></a>小売販売時点管理 (POS) サンプルを実行
 
 [!include [banner](../../includes/banner.md)]
 

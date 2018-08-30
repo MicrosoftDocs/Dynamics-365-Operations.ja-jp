@@ -1,5 +1,5 @@
 ---
-title: "要素の利用状況"
+title: "要素の使用方法を決定するためのコマンド"
 description: "この記事では、アプリケーションでの要素の使用方法を決定するために、Microsoft Visual studio ツールに追加されたコマンドについて説明します。"
 author: RobinARH
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 94c169529cedc5bb1e3d4bc186eea5942cec6f1f
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 88130888b9d203c90702901190dcb6ee8620101e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="element-usage"></a>要素の利用状況
+# <a name="commands-for-determining-how-elements-are-used"></a>要素の使用方法を決定するためのコマンド
 
 [!include [banner](../includes/banner.md)]
 

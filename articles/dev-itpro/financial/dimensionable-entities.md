@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Developer
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Operations
 ms.custom: 191363
 ms.assetid: 
@@ -18,14 +18,14 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 399b519ab0da4de405aeb06f3e7f4bf29a6c5cc3
-ms.openlocfilehash: 4a32ee2a59d98b94baa3f9259696ee8022d22877
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: 58d304b3ac89fee9a5318d17a3451fd49863c466
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/30/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="make-a-backing-table-be-consumable-as-a-financial-dimension"></a>財務分析コードとして使用可能なバッキング テーブルの作成
+# <a name="make-backing-tables-consumable-as-financial-dimensions"></a>財務分析コードとして使用可能なバッキング テーブルの作成
 
 [!include [banner](../includes/banner.md)]
 

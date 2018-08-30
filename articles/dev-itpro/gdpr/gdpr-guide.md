@@ -1,5 +1,5 @@
 ---
-title: "機密データへのアクセスを管理"
+title: "Finance and Operations の GDPR に関するガイド"
 description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations のユーザー ログ機能について説明します。"
 author: ToddLefor
 manager: AnnBe
@@ -13,18 +13,18 @@ ms.reviewer: robinr
 ms.search.scope: Operations
 ms.custom: 10031
 ms.search.region: Global
-ms.author: 
+ms.author: ToddLefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 250b8763c76ebe8fc71810afae9bb69b41809d23
-ms.openlocfilehash: 87c848ac68c4f7dfc7d4a2ab754bf7fcb86ce03c
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: b156714292c31627d56b24c479ef3d8ecc27d018
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="guide-to-the-gdpr-for-microsoft-dynamics-365-for-finance-and-operations"></a>Microsoft Dynamics 365 for Finance and Operations の GDPR に関するガイド
+# <a name="guide-to-the-gdpr-for-finance-and-operations"></a>Finance and Operations の GDPR に関するガイド
 
 [!include [banner](../includes/banner.md)]
 

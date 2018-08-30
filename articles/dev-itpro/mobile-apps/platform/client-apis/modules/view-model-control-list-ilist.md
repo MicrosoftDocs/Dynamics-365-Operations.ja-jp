@@ -1,5 +1,5 @@
 ---
-title: "リスト"
+title: "リスト モジュール"
 description: "リストは、任意の数の行を含むコントロールです。"
 author: shadykdc
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.author: kashea
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: c9da8d9bcf7e1b5e137c61fe820054c32e9e9a4e
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: ae13379cc0fc4a83092503efdb253f91782381ce
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="list"></a>リスト 
+# <a name="list-module"></a>リスト モジュール
 
 [!include [banner](../../../../includes/banner.md)]
 

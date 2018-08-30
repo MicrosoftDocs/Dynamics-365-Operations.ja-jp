@@ -21,7 +21,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: 62dbf8ffd550f9369df1ac8399b25c76f3d57c93
 ms.openlocfilehash: 4624d97d79cf8cd9706cf2a9d85560b48cc2e2ae
 ms.contentlocale: ja-jp
-ms.lasthandoff: 07/03/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 # <a name="update-the-local-agent"></a>ローカル エージェントの更新

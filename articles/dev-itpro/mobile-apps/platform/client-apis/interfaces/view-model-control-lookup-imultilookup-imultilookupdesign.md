@@ -1,5 +1,5 @@
 ---
-title: MultiLookupDesign
+title: "MultiLookupDesign タイプ"
 description: "複数ルックアップ デザイン オブジェクトの種類。"
 author: shadykdc
 manager: AnnBe
@@ -16,10 +16,10 @@ ms.author: kashea
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 63b5460c748c0ecb1dbd09d72a8fd11b26fc5566
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 1afe90acf4aebb5d73bdd22b41b09aebde842705
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 

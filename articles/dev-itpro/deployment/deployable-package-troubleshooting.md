@@ -18,14 +18,14 @@ ms.author: manado
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 51c8c1aaf0d2f5cbce34a709ccc9be6726987206
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: e9709f842413f8de53f310fc425edf453374120f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="troubleshooting-guide-for-package-deployment-issues"></a>パッケージ展開に関する問題のトラブルシューティング ガイド
+# <a name="troubleshoot-package-application-issues"></a>パッケージ アプリケーションの問題のトラブルシューティング
 
 [!include [banner](../includes/banner.md)]
 

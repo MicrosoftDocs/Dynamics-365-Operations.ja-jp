@@ -23,7 +23,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: 0e1be78baa0deee7f86a21ed23b1990ff4215907
 ms.openlocfilehash: 49587e17c364af6c2cb2e5a87c557257c86d6189
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/18/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
@@ -528,7 +528,7 @@ Retail との互換性を一覧表示できるようにデバイスを送信す�
 
 最終的には、レポート (連絡先の個人情報を除く) に含まれているデータがデバイス互換性 Web サイトに表示されます。 顧客環境の管理に使用される設計および配置のツールでも表示されます。
 
-正常なログを drpc@microsoft.com に送信してください。件名行に、メーカーの名前とデバイス モデルを含めます。
+成功したログは drpc@microsoft.com へ送信します。 件名行に、メーカーの名前とデバイス モデルを含めます。
 
 互換性のテストを実行しているサポート、およびその他の照会については、drpc@microsoft.com に電子メールを送信します。
 

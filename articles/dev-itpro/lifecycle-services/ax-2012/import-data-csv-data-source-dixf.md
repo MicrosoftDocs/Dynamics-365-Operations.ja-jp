@@ -1,5 +1,5 @@
 ---
-title: "CSV データ ソースからのデータのインポート (AX 2012)"
+title: "CSV データ ソースからのデータのインポート"
 description: "Microsoft Dynamics AX 2012 のデータのインポート/エクスポート フレームワークを使用すると、CSV ファイルからのデータを Microsoft Dynamics AX にインポートすることができます。"
 author: kfend
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: kfend
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 4707af84ac236e7ba275c49482f00a80a9b9bb73
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 079164dbee2ae22da220b6bbd941876a201abad7
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="import-data-from-a-csv-data-source-ax-2012"></a>CSV データ ソースからのデータのインポート (AX 2012)
+# <a name="import-data-from-csv-data-sources"></a>CSV データ ソースからのデータのインポート
 
 [!include [banner](../../includes/banner.md)]
 

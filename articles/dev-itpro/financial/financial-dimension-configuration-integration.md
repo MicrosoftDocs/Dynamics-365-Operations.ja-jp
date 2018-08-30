@@ -1,5 +1,5 @@
 ---
-title: "アプリケーション統合用の財務分析コードの構成"
+title: "財務分析コードのコンフィギュレーション"
 description: "このトピックでは、アプリケーション ページを統合するための財務分析コードの構成について説明します。 このページには、設定のための 2 つの重要な領域、財務レポートの財務分析コードの順序、およびデータ エンティティ統合形式が含まれています。 勘定や財務分析コードを含むトランザクションをインポートするには、データ エンティティの統合形式が必要です。"
 author: aprilolson
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: d65a6c821f6632bf07ba117db62747a5c2ba995d
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: c1f0bb1570d81623c3132f350882d8e0453aa95d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="financial-dimension-configuration-for-integrating-applications"></a>アプリケーション統合用の財務分析コードの構成
+# <a name="financial-dimension-configuration"></a>財務分析コードのコンフィギュレーション
 
 [!include [banner](../includes/banner.md)]
 

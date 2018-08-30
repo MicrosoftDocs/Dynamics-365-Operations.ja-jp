@@ -1,5 +1,5 @@
 ---
-title: "フィールド"
+title: "フィールド モジュール"
 description: "フィールドのランタイムのインスタンスを表します。"
 author: shadykdc
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.author: kashea
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 330faf49904ae14fc7db8af0d0c9d6a317768d2d
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: ae40dd2ce627e90a5c36729fa8135c3d7b9e4105
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="field"></a>フィールド 
+# <a name="field-module"></a>フィールド モジュール
 
 [!include [banner](../../../../includes/banner.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: "セキュリティ開発ツール (AX 2012)"
+title: "セキュリティ開発ツールのユーザー ガイド"
 description: "このトピックでは、セキュリティ開発ツールを使用して、ロール、職務、権限などのセキュリティ アーティファクトを作成および管理する方法について説明します。"
 author: kfend
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: kfend
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 3ce5eaafdec32d6b6183c92e96347f373a20a865
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: b86108616f3c7705dfdf637abcafc60517421bb7
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="security-development-tool-ax-2012"></a>セキュリティ開発ツール (AX 2012)
+# <a name="security-development-tool-user-guide"></a>セキュリティ開発ツールのユーザー ガイド
 
 [!include [banner](../../includes/banner.md)]
 

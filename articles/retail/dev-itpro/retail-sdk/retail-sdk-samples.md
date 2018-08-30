@@ -1,5 +1,5 @@
 ---
-title: "Retail SDK サンプル"
+title: "Retail ソフトウェア開発キット (SDK) のサンプル"
 description: "このトピックでは、2016 年 12 月に Retail SDK と共にリリースされた 3 つの新しいサンプルについて説明します。"
 author: mugunthanm
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: mumani
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 235a42869b02ffbbd23e11bb8b48e1c1e4f50dfb
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 8641b232707f26c58c552a65696924c1d3878855
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="retail-sdk-samples"></a>Retail SDK サンプル
+# <a name="retail-software-development-kit-sdk-samples"></a>Retail ソフトウェア開発キット (SDK) のサンプル
 
 [!include [banner](../../includes/banner.md)]
 

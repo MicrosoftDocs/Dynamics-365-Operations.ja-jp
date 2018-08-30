@@ -18,14 +18,14 @@ ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: bcea8336715812c0ca6707c5b0864b079454bc34
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 5994755b11bc2268686bedc7664c7992ca3e6d79
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="block-a-transaction-using-triggers"></a>トリガーを使用してトランザクションをブロックする
+# <a name="block-transactions-by-using-triggers"></a>トリガーを使用してトランザクションをブロックする
 
 [!include [banner](../includes/banner.md)]
 

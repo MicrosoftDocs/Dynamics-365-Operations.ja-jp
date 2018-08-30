@@ -1,5 +1,5 @@
 ---
-title: "Finance and Operations の非推奨の API"
+title: "非推奨 API"
 description: "このドキュメントでは、非推奨の API のリストと非推奨の API の移行ガイドを提供しています。"
 author: aneesmsft
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 76bd3699467a427d1a3002440fa2d4abfd9725a1
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 0d16243902783722d87ce1a70a287f5acf1db1a4
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="deprecated-apis-in-finance-and-operations"></a>Finance and Operations の非推奨の API
+# <a name="deprecated-apis"></a>非推奨 API
 
 [!include [banner](../includes/banner.md)]
 

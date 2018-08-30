@@ -1,5 +1,5 @@
 ---
-title: "フィールド"
+title: "フィールド タイプ"
 description: "フィールド コントロール タイプ。"
 author: shadykdc
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.author: kashea
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 6f25df95b981baa9d0553c8fa0267230faa59c4a
+ms.sourcegitcommit: ed6cabcc8c76fba3d4414cd4b564b720c54169e0
+ms.openlocfilehash: abe4dec981b96acfb9a3c16b24bb392843193656
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="field-type"></a>Field タイプ
+# <a name="field-type"></a>フィールド タイプ
 
 [!include [banner](../../../../includes/banner.md)]
 

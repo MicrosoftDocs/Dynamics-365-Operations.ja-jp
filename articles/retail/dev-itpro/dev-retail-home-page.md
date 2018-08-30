@@ -1,5 +1,5 @@
 ---
-title: "IT プロおよび開発者向けの Microsoft Dynamics 365 for Retail"
+title: "IT プロおよび開発者向けのホーム ページ"
 description: "このページには、IT プロと Retail をサポートする開発者が利用できるリソースが一覧表示されています。"
 author: RobinARH
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 67e181c15c875ac6844a4bdcce38ff1d22d9ba99
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 771b6c9e1506191ec66bf64ff91a4c6abd31f6aa
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="microsoft-dynamics-365-for-retail-for-it-pros-and-developers"></a>IT プロおよび開発者向けの Microsoft Dynamics 365 for Retail
+# <a name="retail-for-it-pros-and-developers-home-page"></a>IT プロおよび開発者向けのホーム ページ
 
 [!include [banner](../includes/banner.md)]
 

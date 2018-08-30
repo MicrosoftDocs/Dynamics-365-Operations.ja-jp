@@ -1,5 +1,5 @@
 ---
-title: ControlMetadata
+title: "ControlMetadata タイプ"
 description: "コントロールのメタデータのインターフェイス。 コントロール メタデータをオーバーライドすると、コントロールの外観と動作を変更できます。"
 author: shadykdc
 manager: AnnBe
@@ -16,10 +16,10 @@ ms.author: kashea
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 7d7fa52fc7162946909d012ea300677dfad8afdd
+ms.sourcegitcommit: ed6cabcc8c76fba3d4414cd4b564b720c54169e0
+ms.openlocfilehash: b521ec2b1881fa5dcbb44667775a817ae75a87d3
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 

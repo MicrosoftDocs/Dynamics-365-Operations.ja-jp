@@ -1,5 +1,5 @@
 ---
-title: PartDesign
+title: "PartDesign タイプ"
 description: "パーツ デザイン オブジェクトの種類。"
 author: shadykdc
 manager: AnnBe
@@ -16,10 +16,10 @@ ms.author: kashea
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 7c724c2d57235393f67546529c6ef8423b09be7a
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: dd5bf2e4291df068117382fb7e6085c9c9637009
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 

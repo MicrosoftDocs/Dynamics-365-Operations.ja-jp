@@ -19,7 +19,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
 ms.openlocfilehash: 769056124dabbd313202c89487d0f6ce5d589f20
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
@@ -60,7 +60,7 @@ SharePoint ストレージを使用するには、ドキュメント タイプ�
 SharePoint ストレージを構成するには、次の手順を実行します。
 
 1. **ドキュメント管理パラメータ**ページに移動します。
-2. **SharePoint** タブの、**既定の SharePoint サーバー**フィールドで、SharePoint サイトで自動的に検出されたホスト名 contosoax7.sharepoint.com などを確認します。通常、SharePoint のホスト名は、tenantname.sharepoint.com の形式であり、そのテナントのアカウントは、`user1@tenantname.onmicrosoft.com` の形式です。
+2. **SharePoint** タブの、**既定の SharePoint サーバー**フィールドに、contosoax7.sharepoint.com など、SharePoint サイトに対して自動的に検出されたホスト名を確認します。 通常、SharePoint ホスト名は tenantname.sharepoint.com の形式で、そのテナントのアカウントは  `user1@tenantname.onmicrosoft.com` の形式で示されます。
 
 既定の SharePoint サーバーが指定されていない場合は通常、テナントの SharePoint サイトが存在しないか、有効な Microsoft Office 365 ライセンスが現在のユーザー (管理者) に関連付けられていません。
 
@@ -85,7 +85,7 @@ SharePoint 通信は、次の条件が満たされた場合にのみ、現在の
 3. ユーザーがレコードに添付できないファイル タイプを削除し、ユーザーがレコードに添付できるファイル タイプを追加します。
 
 ## <a name="configure-document-preview"></a>ドキュメント プレビューのコンフィギュレーション
-添付ファイルのプレビューは、Microsoft Office Online Server で提供される Web アプリ オープン プラットフォーム インターフェイス (WOPI) を使用します。 **ドキュメント管理パラメーター**ページの、**全般**タブの **Office Web Apps サーバー**フィールドで、添付ファイルのプレビューに使用する Office オンライン サーバー インスタンスを指定します。 既定値は、https://onenote.officeapps.live.com です。この値はクラウドベースの WOPI サーバーをポイントします。
+添付ファイルのプレビューは、Microsoft Office Online Server で提供される Web アプリ オープン プラットフォーム インターフェイス (WOPI) を使用します。 **ドキュメント管理パラメーター**ページの、**全般**タブの **Office Web Apps サーバー**フィールドで、添付ファイルのプレビューに使用する Office オンライン サーバー インスタンスを指定します。 既定値は [https://onenote.officeapps.live.com] です。 この値は、クラウド ベースの WOPI サーバーを指しています。
 
 ### <a name="for-an-on-premises-environment"></a>オンプレミス環境について
 環境がオンプレミス上にあるとき、既定のクラウド ベースの WOPI サーバーは添付ファイルを読み込んでプレビューを提供することはできません。 プレビューする必要がある場合は、まず[オンプレミス設置型オンライン サーバー インスタンスをインストール](https://technet.microsoft.com/en-us/library/jj219455.aspx)し、それを環境内で構成する必要あります。 **Office Web アプリケーション サーバー** フィールドを、インストールされている Office Online Server インスタンスのホスト名に設定し、**保存** をクリックします。

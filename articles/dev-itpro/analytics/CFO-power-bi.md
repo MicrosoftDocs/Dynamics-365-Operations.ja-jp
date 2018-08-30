@@ -29,7 +29,6 @@ ms.lasthandoff: 02/23/2018
 
 このトピックでは、**CFO 概要** Microsoft Power BI content について説明します。 この Power BI コンテンツは、Microsoft Dynamics 365 for Finance and Operations version 7.2 を使用しているユーザーに適用されます。 バージョン 7.3 またはそれ以降を使用している場合は、[財務インサイト](financial-insights.md)を参照してください。
 
-
 ## <a name="accessing-the-power-bi-content"></a>Power BI コンテンツへのアクセス
 
 **CFO 概要** Power BI コンテンツからのレポートが **CFO 概要** ワークスペースで表示されます。
@@ -39,13 +38,11 @@ ms.lasthandoff: 02/23/2018
 
 次の表は、Power BI コンテンツにコピーされるレポート、および**CFO 概要**ワークスペースで提供されているレポートを示します。 さまざまな Power BI コンテンツのドキュメントへのリンクが提供されています。
 
-| 含まれている power BI コンテンツ     | レポート |
-|---------------------------------------|---------|
+| 含まれている power BI コンテンツ | レポート |
+|-----------------------------------|---------|
 | [財務パフォーマンス](financial-performance-power-bi-content-pack.md) | <ul><li>収益</li><li>経費</li><li>純利益</li><li>粗利</li><li>現在の比率</li><li>買掛金勘定合計</li><li>売掛金勘定合計</li><li>勘定カテゴリ毎の経費</li><li>経費 - 実績対予算</li><li>収益 - 実績対予算</li></ul> |
 | [キャッシュの概要](../../financials/cash-bank-management/Cash-Overview-Power-BI-content.md) | <ul><li>キャッシュ フロー予測</li><li>銀行口座残高</li><li>通貨別残高</li></ul> |
 | [販売と収益性のパフォーマンス](sales-profitability-performance-content-pack.md) | <ul><li>地域ごとの収益</li><li>収益による上位 10 件の顧客</li><li>収益による上位 10 件の製品</li></ul> |
 | [与信および回収管理](../../financials/accounts-receivable/credit-collections-power-bi.md) | <ul><li>期日が経過した顧客</li><li>与信限度額を超えた顧客</li><li>指定の期間に達している残高</li></ul> |
 | [購買と支出の分析](../../financials/accounts-receivable/credit-collections-power-bi.md) | <ul><li>月/日別の購買</li><li>購買高別上位 10 の仕入先</li><li>購買高の上位 10 の製品</li></ul> |
-
-
 

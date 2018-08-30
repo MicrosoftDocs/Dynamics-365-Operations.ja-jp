@@ -1,5 +1,5 @@
 ---
-title: "トラブルシューティング"
+title: "Intelligent Data Management Framework (IDMF) のトラブルシューティング"
 description: "このトピックには、Microsoft Dynamics AX Intelligent Data Management Framework (IDMF) 機能についての情報が含まれています。"
 author: kfend
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: kfend
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 618a79c1e9fca120dac42d333f3cd59fef396760
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 1ff09879a0814c0eac0c460e8e70bd6b4e1b7b17
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="troubleshoot-the-intelligent-data-management-framework-ax-2012"></a>Intelligent Data Management Framework (AX 2012) のトラブルシューティング
+# <a name="troubleshoot-the-intelligent-data-management-framework-idmf"></a>Intelligent Data Management Framework (IDMF) のトラブルシューティング
 
 [!include [banner](../../includes/banner.md)]
 

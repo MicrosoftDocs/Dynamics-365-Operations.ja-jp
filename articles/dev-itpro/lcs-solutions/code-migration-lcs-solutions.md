@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Dynamics 365 for Finance and Operations ソリューションに対するコードの移行"
+title: "Finance and Operations ソリューションのコードの移行"
 description: "このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) のコードをアップグレード、および分析する方法について説明します。"
 author: kfend
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.assetid: aa01254e-4c18-43e4-81a1-0ef42a27871d
 ms.search.region: Global
 ms.author: omarc
 ms.translationtype: HT
-ms.sourcegitcommit: 14557fc97021a6c7044cdbedbab636a929e28204
-ms.openlocfilehash: 75a0f5a23082269d3aa515ce62fb65bb377ec554
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: e0caa16eba5ba3c3ef248e88a61797c28c1d9f6f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/13/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="migrate-code-for-a-microsoft-dynamics-365-for-finance-and-operations-solution"></a>Microsoft Dynamics 365 for Finance and Operations ソリューションに対するコードの移行
+# <a name="migrate-code-for-finance-and-operations-solutions"></a>Finance and Operations ソリューションのコードの移行
 
 [!include[banner](../includes/banner.md)]
 

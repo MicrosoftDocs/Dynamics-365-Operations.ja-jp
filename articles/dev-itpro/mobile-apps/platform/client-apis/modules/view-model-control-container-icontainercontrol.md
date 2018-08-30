@@ -1,5 +1,5 @@
 ---
-title: "コンテナー"
+title: "コンテナー モジュール"
 description: "コンテナー コントロールは、コントロールの任意の数を含めることができます。"
 author: shadykdc
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.author: kashea
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: af1dec949d0fa0227a5d81aca9434fa8083fa55b
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 3cf2aa61e1724b4797c5a8ee1277122908e796cf
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="container"></a>コンテナー 
+# <a name="container-module"></a>コンテナー モジュール
 
 [!include [banner](../../../../includes/banner.md)]
 

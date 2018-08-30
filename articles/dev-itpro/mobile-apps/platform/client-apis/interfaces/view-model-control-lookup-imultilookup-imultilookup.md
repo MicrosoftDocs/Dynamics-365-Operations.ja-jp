@@ -1,5 +1,5 @@
 ---
-title: MultiLookup
+title: "MultiLookup タイプ"
 description: "複数ルックアップ コントロールの種類。 複数ルックアップ コントロールは、一度に複数選択できる点を除いて通常のルックアップに似ています。"
 author: shadykdc
 manager: AnnBe
@@ -16,10 +16,10 @@ ms.author: kashea
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 2babfb2cdba62b7f80f5c04ab5b6fe0d01d771aa
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: e937664fe879010a5bde8902fa5d358c21f19dca
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 

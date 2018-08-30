@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Dynamics 365 for Finance and Operations バージョン 8.0 を使用した、為替レート プロバイダーの作成"
+title: "Finance and Operations バージョン 8.0 を使用した、為替レート プロバイダーの作成"
 description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations バージョン 8.0 (2018年4月) で為替レート プロバイダーを設定する方法について説明します。"
 author: aolson
 manager: AnnBe
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Developer
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Operations
 ms.custom: 72153
 ms.assetid: 24643037-f7a5-4acf-b3d6-9943642b618c
@@ -18,14 +18,14 @@ ms.author: jbye
 ms.search.validFrom: 2018-04-02
 ms.dyn365.ops.version: AX 8.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 1ac6480798c7c9297c2383d79bc40b53934affdc
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: 13d14e4a11ff43668233dcce6fc1b305080a8c43
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="create-exchange-rate-providers-in-microsoft-dynamics-365-for-finance-and-operations-version-80"></a>Microsoft Dynamics 365 for Finance and Operations バージョン 8.0 を使用した、為替レート プロバイダーの作成
+# <a name="create-exchange-rate-providers-in-finance-and-operations-version-80"></a>Finance and Operations バージョン 8.0 を使用した、為替レート プロバイダーの作成
 
 [!include [banner](../includes/banner.md)]
 

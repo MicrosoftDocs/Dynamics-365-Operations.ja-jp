@@ -1,5 +1,5 @@
 ---
-title: "SQL Server 2014 用 AX 2012 R2 CU7 データのインポート/エクスポート フレームワークのインストール"
+title: "AX 2012 R2 CU7 DIXF for SQL Server 2014 のインストール"
 description: "Microsoft Dynamics AX 2012 R2 の累積更新プログラム 7 (CU7) のデータ インポート/エクスポート フレームワークを SQL Server 2014 Integration Services またはそれ以降で使用するには、AX 2012 R2 CU7 をインストールして、更新プログラム KB 3018235KB 3018235 を適用する必要があります。"
 author: kfend
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: kfend
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 0acf815649cbc7fc47e9b2715f2942cdf46a927c
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 4dec45384fad3e3f3ef84d32dcb69c04d418ed87
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="install-the-ax-2012-r2-cu7-data-importexport-framework-for-sql-server-2014"></a>SQL Server 2014 用 AX 2012 R2 CU7 データのインポート/エクスポート フレームワークのインストール
+# <a name="install-the-ax-2012-r2-cu7-dixf-for-sql-server-2014"></a>AX 2012 R2 CU7 DIXF for SQL Server 2014 のインストール
 
 [!include [banner](../../includes/banner.md)]
 

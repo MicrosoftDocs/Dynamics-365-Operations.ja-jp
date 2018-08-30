@@ -1,5 +1,5 @@
 ---
-title: "エンド ツー エンドの支払拡張機能を作成する"
+title: "支払端末のエンド・ツー・エンド支払統合を作成する"
 description: "このトピックでは、支払端末のエンド・ツー・エンド支払統合を作成する方法について説明します。"
 author: 
 manager: AnnBe
@@ -18,14 +18,15 @@ ms.author: rassadi
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 20323fed120df220218a0c9367ca78302a1da461
-ms.openlocfilehash: 1c0ecd8953196c7c39870d4c3b9297f9e2b4aa6e
+ms.sourcegitcommit: d617302e020c21a7a7fb077e4ce9481b6c80b796
+ms.openlocfilehash: 9ec7944b7c23c2ff3fd7eada328e2e91e4d7b603
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="payment-integration-with-a-payment-terminal"></a>支払ターミナルとの支払の統合
+# <a name="create-an-end-to-end-payment-integration-for-a-payment-terminal"></a>支払端末のエンド・ツー・エンド支払統合を作成する
+
 このトピックでは、支払ゲートウェイと直接通信できる支払端末向けに Microsoft Dynamics 365 for Retail Modern POS とクラウド POS (POS) の支払統合を記述する方法について説明します。
 
 ## <a name="key-terms"></a>重要な用語

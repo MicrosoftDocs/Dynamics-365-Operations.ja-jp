@@ -18,14 +18,14 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 862bbf4d1d9b0dc2b6dc418ee766ed4dedef49fe
-ms.openlocfilehash: 55f5b4c3046ec12a4cdb8e87c3f9e48f6795c1e9
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 220d30917196ac5e417ef9f47e2e3a7a6cb96935
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="client-internet-connection"></a>クライアント インターネット接続 
+# <a name="client-internet-connectivity"></a>クライアント インターネット接続
 
 [!include [banner](../includes/banner.md)]
 

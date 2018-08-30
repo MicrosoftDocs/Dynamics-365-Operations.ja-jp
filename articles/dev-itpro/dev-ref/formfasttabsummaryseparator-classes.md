@@ -1,5 +1,5 @@
 ---
-title: "F クラス - FormGridControl への FormFastTabSummarySeparator"
+title: "F クラス (FormFastTabSummarySeparator から FormGridControl)"
 description: "FormFastTabSummarySeparator から FormGridControl までのクラスの API 参照。"
 author: RobinARH
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 61b94e784fb373557e1abb6aa67277955ddad1b5
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 44fa0f36ec65469a58518f434def1421b849012b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="f-classes---formfasttabsummaryseparator-to-formgridcontrol"></a>F クラス - FormGridControl への FormFastTabSummarySeparator
+# <a name="f-classes-formfasttabsummaryseparator-to-formgridcontrol"></a>F クラス (FormFastTabSummarySeparator から FormGridControl)
 
 [!include [banner](../includes/banner.md)]
 

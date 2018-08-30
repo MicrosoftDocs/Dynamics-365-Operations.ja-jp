@@ -1,7 +1,7 @@
 ---
 title: "分析コード エントリ コントロールの取得"
 description: "分析コード エントリ コントロールおよび関連するコントローラー クラスについて説明します。"
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -18,14 +18,14 @@ ms.author: ghenriks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 97c5e63d7770a771fb0b9783d4d56046fc5fc9ec
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: 37c412a65a774b239cc23f91f3516712ddaa1b50
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="dimension-entry-control-uptake"></a>分析コード エントリ コントロールの取得
+# <a name="uptake-of-dimension-entry-controls"></a>分析コード エントリ コントロールの取得
 
 [!include [banner](../includes/banner.md)]
 

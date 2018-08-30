@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Dynamics 365 for Finance and Operations ソリューションのビジネス プロセス モデラー ライブラリを設定します。"
+title: "Finance and Operations ソリューションのビジネス プロセス モデラー ライブラリの設定"
 description: "このトピックでは、ビジネス プロセス モデラー (BPM) ライブラリを作成して使用する方法について説明します。"
 author: kfend
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.assetid: 6e6d6896-edef-4739-98ad-c4ea19180972
 ms.search.region: Global
 ms.author: omarc
 ms.translationtype: HT
-ms.sourcegitcommit: 43c18efc4b02da594821018b6d4b8748a4f5eb84
-ms.openlocfilehash: 0b28f655253cef61e258f51b7a749d87499e8b40
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 5a923da121bd7ee81027312b3a1b8c2908eb2a7f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/12/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="set-up-business-process-modeler-libraries-for-a-microsoft-dynamics-365-for-finance-and-operations-solution"></a>Microsoft Dynamics 365 for Finance and Operations ソリューションのビジネス プロセス モデラー ライブラリを設定します。
+# <a name="set-up-business-process-modeler-libraries-for-finance-and-operations-solutions"></a>Finance and Operations ソリューションのビジネス プロセス モデラー ライブラリの設定
 
 [!include [banner](../includes/banner.md)]
 

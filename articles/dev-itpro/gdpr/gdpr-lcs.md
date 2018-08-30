@@ -1,5 +1,5 @@
 ---
-title: "Lifecycle Services の GDPR データ要求"
+title: "Lifecycle Services (LCS) に対する GDPR データ要求"
 description: "このトピックでは、要求が Microsoft Lifecycle services (LCS) のデータにアクセスする必要がある場合、一般的なデータ保護規制 (GDPR) の下でのデータ要求に準拠するための情報を提供します。"
 author: tfehr
 manager: AnnBe
@@ -13,18 +13,18 @@ ms.reviewer: tfehr
 ms.search.scope: Operations
 ms.custom: 10031
 ms.search.region: Global
-ms.author: 
+ms.author: tfehr
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d964fd72f42a39362ebc45c557f7f0dfd1d9bd54
-ms.openlocfilehash: dfa6cc752b5c91a2bc1ce95f0b053bcaab8734c3
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 2cfb7d0fb9275d120f917950437259d1ac6d6c7f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/18/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="gdpr-data-requests-for-lifecycle-services"></a>Lifecycle Services の GDPR データ要求
+# <a name="gdpr-data-requests-for-lifecycle-services-lcs"></a>Lifecycle Services (LCS) に対する GDPR データ要求
 
 [!INCLUDE [banner](../includes/banner.md)]
 

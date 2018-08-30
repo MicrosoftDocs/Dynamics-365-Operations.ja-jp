@@ -1,5 +1,5 @@
 ---
-title: "インストール ガイド"
+title: "Intelligent Data Management Framework (IDMF) のインストール ガイド"
 description: "このトピックでは、Microsoft Dynamics AX インテリジェント データ管理フレームワーク (IDMF) をインストールするためのシステム要件と手順について説明します。"
 author: kfend
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: kfend
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 51f7afb5db89f739d6a2cd8187ae1527defd2e6d
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: ec0d2b97adbdbfdedacc40c9bdb5ef6fd7e12f72
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="installation-guide-for-the-intelligent-data-management-framework-ax-2012"></a>Intelligent Data Management Framework (AX 2012) のインストール ガイド
+# <a name="intelligent-data-management-framework-idmf-installation-guide"></a>Intelligent Data Management Framework (IDMF) のインストール ガイド
 
 [!include [banner](../../includes/banner.md)]
 

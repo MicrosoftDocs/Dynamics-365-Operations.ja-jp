@@ -1,5 +1,5 @@
 --- 
-title: "CSV 形式 (ER) の外部ファイルからデータをインポートするためのコンフィギュレーションを設計する"
+title: "外部の CSV ファイルからデータをインポートするための ER コンフィギュレーションの設計"
 description: "この手順を使用して、外部ファイルから CSV 形式から Dynamics 365 for Finance and Operations アプリにデータをインポートする電子申告 (ER) 構成を設計します。"
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: f6bfa9f7c0638b0eaacf1a49bcd7d84ffab3acbf
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 8d3ea3d797de154979eae112658cf05d1914feeb
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="design-a-configuration-to-import-data-from-an-external-file-in-csv-format-er"></a>CSV 形式 (ER) の外部ファイルからデータをインポートするためのコンフィギュレーションを設計する
+# <a name="design-er-configurations-to-import-data-from-external-csv-files"></a>外部の CSV ファイルからデータをインポートするための ER コンフィギュレーションの設計
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

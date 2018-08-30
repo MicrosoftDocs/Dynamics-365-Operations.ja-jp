@@ -1,5 +1,5 @@
 ---
-title: "AX 2012 からのアップグレード - Go live"
+title: "AX 2012 からのアップグレード - Go live (切替)"
 description: "このトピックでは、AX 2012 をオフにしてから、Microsoft Dynamics 365 for Finance and Operations でコードとデータベースのアップグレード バージョンの実行が完了するまでの最終的な切替えプロセスについて説明します。"
 author: robadawy
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.author: robadawy
 ms.search.validFrom: 2018-03-31
 ms.dyn365.ops.version: Platform update 12
 ms.translationtype: HT
-ms.sourcegitcommit: 8914723f6ef436bfc9e3a98cc82d5486042b0761
-ms.openlocfilehash: 67a343973e6f35faf9fea50de8698dd968e36aa0
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: bf662bd96bd26e342e696c6de6902d2fc15636aa
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/07/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="upgrade-from-ax-2012---cutover-process-go-live"></a>AX 2012 からのアップグレード - 切替プロセス (Go live)
+# <a name="upgrade-from-ax-2012---go-live-cutover"></a>AX 2012 からのアップグレード - Go live (切替)
 
 [!include [banner](../includes/banner.md)]
 

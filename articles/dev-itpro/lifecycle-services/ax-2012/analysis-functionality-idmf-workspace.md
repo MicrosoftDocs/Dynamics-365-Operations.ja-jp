@@ -1,5 +1,5 @@
 ---
-title: "分析"
+title: "Intelligent Data Management フレームワーク (IDMF) の分析"
 description: "このトピックでは、Microsoft Dynamics AX インテリジェント データ管理フレームワーク (IDMF) の分析メニューで使用できる機能について説明します。"
 author: kfend
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: kfend
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 5e169efada093c38a157dca6c369b153afa723a8
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: edaaecb84377386f9a7c43d616b6dcbe81e1710b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="analysis-in-the-intelligent-data-management-framework-ax-2012"></a>Intelligent Data Management Framework (AX 2012) の分析
+# <a name="analysis-in-the-intelligent-data-management-framework-idmf"></a>Intelligent Data Management フレームワーク (IDMF) の分析
 
 [!include [banner](../../includes/banner.md)]
 

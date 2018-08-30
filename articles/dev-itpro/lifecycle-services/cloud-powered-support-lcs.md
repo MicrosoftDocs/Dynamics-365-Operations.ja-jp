@@ -18,10 +18,10 @@ ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ede022d4813cf3c64a1293d4394d655d15293add
-ms.openlocfilehash: 11f9fd0ced60d6860b6edbda60e9654377b3aa63
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 92a3631af444745803a797d1c52b7c438e8e3c3f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/15/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 

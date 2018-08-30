@@ -1,5 +1,5 @@
 ---
-title: "グループ化"
+title: "グループ モジュール"
 description: "グループ コントロールは、任意の数のコントロールを子として持つコンテナー コントロールです。"
 author: shadykdc
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.author: kashea
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: c50f9e41abb38d1a5a94786312806c62d8f94109
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 6d236345ce35707a99cb39943b10fb1eed1c0830
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="group"></a>グループ化 
+# <a name="group-module"></a>グループ モジュール
 
 [!include [banner](../../../../includes/banner.md)]
 

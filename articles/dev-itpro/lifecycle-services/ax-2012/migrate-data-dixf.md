@@ -1,5 +1,5 @@
 ---
-title: "データの移行"
+title: "データのインポート/エクスポート フレームワーク (DIXF) を使用するデータの移行"
 description: "このトピックでは、Microsoft Dynamics AX 2012 のデータ インポート/エクスポート フレームワークを使用してデータを移行する方法について説明します。"
 author: kfend
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: kfend
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: d5d57e470d95392afc32fcdae16df631ec4eeeea
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: c49d28bb35426fa09c3f10cf30593dcc4a9ff3ab
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="migrate-data-using-the-data-importexport-framework-ax-2012"></a>データのインポート/エクスポート フレームワーク (AX 2012) を使用するデータの移行
+# <a name="migrate-data-by-using-the-data-importexport-framework-dixf"></a>データのインポート/エクスポート フレームワーク (DIXF) を使用するデータの移行
 
 [!include [banner](../../includes/banner.md)]
 

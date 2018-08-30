@@ -1,5 +1,5 @@
 ---
-title: "画像"
+title: "画像モジュール"
 description: "モバイル アプリ内のイメージを表すためのイメージ コントロール。 イメージは、次のいずれかの種類が使用できます&amp;58 DataUri、Base64、URL、AOTResource、または Symbol。"
 author: shadykdc
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.author: kashea
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: c73e775b0f57281e9af5e59176141d00026359cf
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 5270fcf63eb0978bb4f2857a130542850364be79
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="image"></a>画像 
+# <a name="image-module"></a>画像モジュール
 
 [!include [banner](../../../../includes/banner.md)]
 

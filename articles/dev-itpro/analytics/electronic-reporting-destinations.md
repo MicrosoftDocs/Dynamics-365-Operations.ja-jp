@@ -1,5 +1,5 @@
 ---
-title: "電子申告の送信先"
+title: "電子申告 (ER) の送信先"
 description: "各電子レポート (ER) 形式のコンフィギュレーション、および生産物コンポーネント (フォルダやファイル) の出力先をコンフィギュレーションできます。 適切なアクセス権が与えられているユーザーは、実行時に送信先の設定を変更することもできます。 この資料では、電子申告の送信先の管理、サポートされている送信先の種類とセキュリティに関する考慮事項について説明します。"
 author: ShylaThompson
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: fb7d0dc8b3ff9e8f1e4ade5cacfeed8f1a6871ab
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 3aa27b3ac263c6c952de7e4b508f48f21ba489ad
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="electronic-reporting-destinations"></a>電子申告の送信先
+# <a name="electronic-reporting-er-destinations"></a>電子申告 (ER) の送信先
 
 [!include [banner](../includes/banner.md)]
 

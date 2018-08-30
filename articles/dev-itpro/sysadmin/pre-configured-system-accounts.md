@@ -19,14 +19,14 @@ ms.author: manado
 ms.search.validFrom: 2017-11-01
 ms.dyn365.ops.version: Platform update 13
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: be9b719a158bf613d6680b9758a8d06e33ae2f82
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 904108e36edf929164d92e2df85b2d71447a197f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="pre-configured-system-accounts"></a>コンフィギュレーション済みのシステム アカウント
+# <a name="preconfigured-system-accounts"></a>コンフィギュレーション済みのシステム アカウント
 
 [!include [banner](../includes/banner.md)]
 

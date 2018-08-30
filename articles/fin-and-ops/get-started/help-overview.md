@@ -1,9 +1,9 @@
 ---
-title: "ヘルプの概要"
+title: "Finance and Operations のヘルプ システム"
 description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations のヘルプ システム コンポーネントの概要が示されます。 また、組織の独自のドキュメントやトレーニングを提供する方法について説明します。"
 author: margoc
 manager: AnnBe
-ms.date: 10/31/2017
+ms.date: 07/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,14 +19,14 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 2c02af887e662fd346d5e3e09cce755bfb58d520
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: e1ffd9cb90b2ffac8f89885aac2f614e2ae3cb71
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="help-system-overview"></a>システム ヘルプの概要
+# <a name="finance-and-operations-help-system"></a>Finance and Operations のヘルプ システム
 
 [!include [banner](../includes/banner.md)]
 
@@ -82,27 +82,19 @@ Unified Operations のコンテンツへのすべての更新の RSS フィー�
 [RSS フィード](https://docs.microsoft.com/api/search/rss?locale=en-us&$filter=scopes%2Fany(t%3A%20t%20eq%20%27Unified%20Operations%27))
 
 ### <a name="give-feedback"></a>フィードバックを送る 
-お客様からのフィードバックをぜひいただきたいです。 GitHub を通じて、コメントを投稿したり、コンテンツへの変更を提案することができます。
+お客様からのフィードバックをぜひいただきたいです。 GitHub を通じて、コメントを投稿したり、コンテンツへの変更を提案することができます。 フィードバック システムの詳細については、[このブログ投稿](https://docs.microsoft.com/teamblog/a-new-feedback-system-is-coming-to-docs) を参照してください。
 
-##### <a name="leave-us-a-comment"></a>コメントをお送りください。 
+##### <a name="leave-us-feedback"></a>フィードバックをお送りください 
 フィードバックまたはトピックに関するご質問がある場合は、ページ下部にコメントを記入してください。  
 
-1 **コメント** をクリックして、ページ下部のコメントに移動します。
+1. **フィードバック**をクリックしてページ下部のコメントに移動し、**製品のフィードバック**、または**サインインしてフィードバックを送信**をクリックします。
 
-![コメント](./media/comments.png)
+![フィードバック](./media/comments.png)
 
-2 コメントを入力して、**コメントを投稿** をクリックします。
+2. コメントを入力して、**フィードバックを送信**をクリックします。
 
-![コメントを投稿](./media/before-signin.png)
+![コメントを投稿](./media/feedback.png)
 
-3 サインインするアカウントの種類を選択します。  
-このサイトを既存のアカウント (Twitter、Facebook、Microsoft など) に関連付けるために、左側にあるいずれかのアイコンをクリックします。 
-
-又は 
-
-このサイト用に新しいアカウントを作成するために、右側で電子メール アドレスと新しいパスワードを入力します。 
-
-![サインイン オプション](./media/signin-options.png)
 
 
 ##### <a name="suggest-a-change-or-contribute-content-through-github"></a>GitHub を通じてコンテンツの変更や提案を投稿する
@@ -115,7 +107,6 @@ Unified Operations のコンテンツへのすべての更新の RSS フィー�
 
 > [!NOTE]
 > 現時点では英語のリポジトリへの寄稿のみを受け付けています。  
-> GitHub を通して報告された問題は受け付けません。コンテンツの提案にはプルリクエストを必ず使用してください。 製品および機能のフィードバックは、Dynamics 365 Ideas Portal の https://experience.dynamics.com/ideas/ で適切に処理されます。 
 
 
 ## <a name="task-guides"></a>タスク ガイド

@@ -18,14 +18,14 @@ ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 578c720595fb74d8179d30d4ace58caa1b25d160
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 1fbfa3ba4f7a4a7c8bfecc982666f81eadfa9c2d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="develop-and-customize-using-visual-studio"></a>Visual Studio を使用して開発およびカスタマイズ
+# <a name="develop-and-customize-by-using-visual-studio"></a>Visual Studio を使用して開発およびカスタマイズ
 
 [!include [banner](../includes/banner.md)]
 

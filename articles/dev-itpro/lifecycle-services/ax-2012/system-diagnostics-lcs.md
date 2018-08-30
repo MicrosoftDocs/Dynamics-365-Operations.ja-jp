@@ -1,5 +1,5 @@
 ---
-title: "システム診断"
+title: "Lifecycle Services (LCS) のシステム診断"
 description: "このトピックでは、Lifecycle Services (LCS) のシステム診断に関する詳細情報を提供します。"
 author: kfend
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: murtazac
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 031a18fb2ce7dcd8b667ef36079ef8c1e8e0625e
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 597e24d95dd182db0df46c5deb0f76e7e4e44e3b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="system-diagnostics-ax-2012"></a>システム診断 (AX 2012)
+# <a name="system-diagnostics-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) のシステム診断
 
 [!include [banner](../../includes/banner.md)]
 

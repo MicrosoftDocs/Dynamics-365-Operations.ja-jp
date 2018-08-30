@@ -1,5 +1,5 @@
 ---
-title: "財務分析コードを公開する読み取り専用エンティティのビルド"
+title: "財務分析コードを公開する読み取り専用エンティティの作成"
 description: "このトピックでは、登録済のトランザクションのエンティティを作成する方法について説明します。"
 author: margoc
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: pbj
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: f72ed6977bfc16e564f4d7a273b36012f079130c
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 435c1e9e6f80ec51d00efe8465c9f0f03067eb7a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="build-a-read-only-entity-that-exposes-financial-dimensions"></a>財務分析コードを公開する読み取り専用エンティティのビルド
+# <a name="create-read-only-entities-that-expose-financial-dimensions"></a>財務分析コードを公開する読み取り専用エンティティの作成
 "[!include [banner](../includes/banner.md)]"
 
 

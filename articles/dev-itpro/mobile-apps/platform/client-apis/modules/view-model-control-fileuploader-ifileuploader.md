@@ -1,5 +1,5 @@
 ---
-title: "ファイル アップローダー"
+title: "ファイル アップローダー モジュール"
 description: "イメージをアップロードするためのコントロールです。"
 author: shadykdc
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.author: kashea
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: a7c77eb897658abd256ae404736f4f68274e8a97
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 40317f3d0196350d850e06d7b2094bd93e8ad46e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="file-uploader"></a>ファイル アップローダー 
+# <a name="file-uploader-module"></a>ファイル アップローダー モジュール
 
 [!include [banner](../../../../includes/banner.md)]
 

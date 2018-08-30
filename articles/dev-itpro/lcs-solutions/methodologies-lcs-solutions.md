@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Dynamics 365 for Finance and Operations ソリューションに方法を追加"
+title: "Finance and Operations のソリューションに方法を追加"
 description: "このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) の方法を作成および変更する方法について説明します。 また、方法の要件に関する情報も提供されます。"
 author: kfend
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.assetid: 368f2356-62a6-4d9f-9f80-0acf7a986085
 ms.search.region: Global
 ms.author: omarc
 ms.translationtype: HT
-ms.sourcegitcommit: 43c18efc4b02da594821018b6d4b8748a4f5eb84
-ms.openlocfilehash: e44cc6fb4f7069b311af10c5fecd4751edb6787c
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 31485cd75abf65e717f75f4d6f3b1f622a2b11eb
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/12/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="add-a-methodology-to-a-microsoft-dynamics-365-for-finance-and-operations-solution"></a>Microsoft Dynamics 365 for Finance and Operations ソリューションに方法を追加
+# <a name="add-methodologies-to-finance-and-operations-solutions"></a>Finance and Operations のソリューションに方法を追加
 
 [!include[banner](../includes/banner.md)]
 

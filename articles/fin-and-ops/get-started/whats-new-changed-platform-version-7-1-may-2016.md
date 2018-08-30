@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 10346bcc173be3c9ea72397a8d5cb490fdb4bb14
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: ac89b1c74593ea5ad12c2f55e33fe3cbff75032b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
@@ -207,7 +207,7 @@ ms.lasthandoff: 04/20/2018
 </tr>
 <tr class="odd">
 <td>Dynamics AX ソリューションのコンポーネントとして Power BI レポートをリリースします。</td>
-<td>Dynamics AX 7.0 (2016 年 2 月) リリースでは、パートナーおよび ISV は Power BI マーケットプレースを使用して、Dynamics AX Power BI のコンテンツ パックを公開することができます。 これらのコンテンツ パックは、PowerBI.com のサービスとして表示されます。 Power BI マーケットプレイス経由でコンテンツを公開することはできるほか、パートナーおよび ISV は LCS の Dynamics AX ソリューションと共に Power BI レポート (.pbix ファイル) もリリースできるようになりました。 また、この方法により、パートナーは、1 対 1 で、またはソリューションの更新として、通常のリズムでお客様に Power BI レポート パックおよび更新をリリースできます。</td>
+<td>Dynamics AX 7.0 (2016 年 2 月) リリースでは、パートナーおよび ISV は Power BI マーケットプレースを使用して、Dynamics AX Power BI のコンテンツ パックを公開することができます。 これらのコンテンツ パックは、PowerBI.com 上のサービスとして表示されます。 Power BI マーケットプレース経由でコンテンツを公開することができますが、パートナーおよび ISV は LCS の Dynamics AX ソリューションと共に Power BI レポート (.pbix ファイル) もリリースできるようになりました。 また、この方法により、パートナーは、1 対 1 で、またはソリューションの更新として、通常のリズムでお客様に Power BI レポート パックおよび更新をリリースできます。</td>
 </tr>
 <tr class="even">
 <td>ほぼリアルタイムの Power BI レポートおよび Microsoft Cortana Intelligence Suite (CIS) とエンティティ格納の統合を活用します。</td>

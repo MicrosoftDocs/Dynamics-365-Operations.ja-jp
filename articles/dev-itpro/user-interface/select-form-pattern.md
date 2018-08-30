@@ -1,5 +1,5 @@
 ---
-title: "フォーム パターンの選択"
+title: "移行後のフォームのフォーム パターン"
 description: "このトピックでは、移行するフォームに最適なフォーム パターンを選択するのに役立つ情報を提供します。"
 author: jasongre
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 51321691a75416a05dd544d5838c243c46434ad4
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 209804c4a733c350566fa1ac90d670750ca66a79
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="select-a-form-pattern"></a>フォーム パターンの選択
+# <a name="form-patterns-for-migrated-forms"></a>移行後のフォームのフォーム パターン
 
 [!include [banner](../includes/banner.md)]
 

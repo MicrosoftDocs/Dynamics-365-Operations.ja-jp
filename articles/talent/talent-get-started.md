@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Dynamics 365 for Talent の使用を開始する"
+title: "Talent の使用を開始する"
 description: "このトピックでは、ユーザー インターフェイスを基本設定に変更する方法および製品内と docs.microsoft.com サイト上で使用可能なヘルプ リソースに接続する方法に関する情報を提供します。"
 author: rschloma
 manager: AnnBe
@@ -18,13 +18,13 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 3eb642944a31aad983758fc28bc692800bb6b4d2
+ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
+ms.openlocfilehash: ddd7d9315b61cb3aa5e23f86666752ca8280acbf
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="getting-started-with-microsoft-dynamics-365-for-talent"></a>Microsoft Dynamics 365 for Talent の使用を開始する
+# <a name="get-started-with-talent"></a>Talent の使用を開始する
 
 [!include [banner](includes/banner.md)]
 

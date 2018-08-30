@@ -1,5 +1,5 @@
 ---
-title: "オンプレミス環境に再配置"
+title: "オンプレミス環境の再配置"
 description: "このトピックでは、オンプレミス環境の再展開について説明します。"
 author: sarvanisathish
 manager: AnnBe
@@ -18,13 +18,13 @@ ms.author: sarvanis
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 12
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: d3fe32254526aebb0a75a792bdff47a4e8becd2a
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: aa187dc35edb11428052df8c917458956f4d1db2
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="redeploy-an-on-premises-environment"></a>オンプレミス環境に再配置
+# <a name="redeploy-on-premises-environments"></a>オンプレミス環境の再配置
 
 [!include [banner](../includes/banner.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: "デリゲートを使用したコード移行時のモデル間依存関係の解決"
+title: "コードの移行中にデリゲートを使用してモデル間の依存関係の解決"
 description: "このトピックでは、デリゲート インスタンスとデリゲート ハンドラ間でコントラクトを定義する手段としてデリゲート メソッドがどのように機能するかについて説明します。"
 author: maertenm
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: maertenm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 120e53652926b0cb37d8152c0c4cf4df1212252e
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 7a6329dcf8dbd0afd6f25f43b2390359569d56bf
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="use-delegates-to-solve-dependencies-between-models-when-migrating-code"></a>デリゲートを使用したコード移行時のモデル間依存関係の解決
+# <a name="solve-dependencies-among-models-by-using-delegates-during-code-migration"></a>コードの移行中にデリゲートを使用してモデル間の依存関係の解決
 
 [!include [banner](../includes/banner.md)]
 

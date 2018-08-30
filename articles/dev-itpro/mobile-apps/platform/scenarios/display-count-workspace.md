@@ -1,5 +1,5 @@
 ---
-title: "フィールドに数を表示する"
+title: "フィールドに数を表示"
 description: "このトピックでは、正確で、迅速に表示される数を計算する方法について説明します。"
 author: makhabaz
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: makhabaz
 ms.search.validFrom: 2017-07-20
 ms.dyn365.ops.version: Platform update 3
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 7a55cc6a662a3b0bcf5b85c1d9b539be6e2c2fef
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: c73c504301945cf371dd10e5508a44222724a8fc
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="display-a-count-in-a-field"></a>フィールドに数を表示する
+# <a name="show-counts-in-fields"></a>フィールドに数を表示
 
 [!include [banner](../../../includes/banner.md)]
 

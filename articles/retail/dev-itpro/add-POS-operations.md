@@ -1,5 +1,5 @@
 ---
-title: "ボタン グリッドのデザイナーを使用して、新しい POS 操作を POS レイアウトに追加します。"
+title: "ボタン グリッドのデザイナーを使用して、POS 操作を POS レイアウトに追加"
 description: "このトピックでは、新しい POS 工程を作成し、ボタン グリッド デザイナーを使用して POS レイアウトに追加する方法について説明します。"
 author: mugunthanm
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.author: mumani
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Application update 4
 ms.translationtype: HT
-ms.sourcegitcommit: c42463631ce1e33673f4f7f32f2e751deadc5425
-ms.openlocfilehash: e8c977f2457ed48712c0ac2e5e209c917169652c
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: ce88f17248434b50a0ce5f1460735da76ad34dd5
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="add-a-new-pos-operation-to-the-pos-layout-by-using-button-grid-designer"></a>ボタン グリッドのデザイナーを使用して、新しい POS 操作を POS レイアウトに追加します。
+# <a name="add-pos-operations-to-pos-layouts-by-using-button-grid-designer"></a>ボタン グリッドのデザイナーを使用して、POS 操作を POS レイアウトに追加
 
 [!include[banner](../includes/banner.md)]
 

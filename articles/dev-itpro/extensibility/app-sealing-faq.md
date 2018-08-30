@@ -15,7 +15,7 @@ ms.custom: 89563
 ms.assetid: 
 ms.search.region: Global
 ms.author: fdahl
-ms.search.validfrom: 2017-07-01
+ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
 ms.translationtype: HT
 ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7

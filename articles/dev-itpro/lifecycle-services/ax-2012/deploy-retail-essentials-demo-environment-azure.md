@@ -1,5 +1,5 @@
 ---
-title: "Azure (AX 2012) での Retail Essentials デモ環境の配置"
+title: "Azure での Retail Essentials デモ環境の配置"
 description: "このトピックでは、Microsoft Azure に小売エッセンシャル デモを展開する方法について説明します。"
 author: aamirallaqaband
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: aamiral
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 601fd7150c6601fce36fd8240a27ee6d7c999d73
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 7ec1e8b15e574e2d96880ed9bf6680d60f6cbd85
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="deploy-a-retail-essentials-demo-environment-on-azure-ax-2012"></a>Azure (AX 2012) での Retail Essentials デモ環境の配置
+# <a name="deploy-retail-essentials-demo-environments-on-azure"></a>Azure での Retail Essentials デモ環境の配置
 
 [!include [banner](../../includes/banner.md)]
 

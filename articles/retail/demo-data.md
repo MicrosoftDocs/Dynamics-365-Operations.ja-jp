@@ -1,5 +1,5 @@
 ---
-title: "MPOS/CPOS でのデモ データの画面レイアウト"
+title: "Retail Modern POS (MPOS) およびクラウド POS のデモ データ画面レイアウト"
 description: "このトピックでは、Microsoft Dynamics 365 for Retail の販売時点管理 (POS) のデモ データ セットに含まれている画面レイアウトに関する情報を提供します。"
 author: zlinster
 manager: AnnBe
@@ -20,14 +20,14 @@ ms.author: zlinster
 ms.search.validFrom: 2017-10-05
 ms.dyn365.ops.version: Retail April 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 797058bdbbdb63a08eb35034ffe3c913307f38df
-ms.openlocfilehash: e812bb13c903e72e31e62effd0c70f9b9d62de55
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 41930e89a7cae5cdb84e728da47de3bc5de312ca
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/06/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="demo-data-screen-layouts-in-mposcpos"></a>MPOS/CPOS でのデモ データの画面レイアウト
+# <a name="demo-data-screen-layouts-in-retail-modern-pos-mpos-and-cloud-pos"></a>Retail Modern POS (MPOS) およびクラウド POS のデモ データ画面レイアウト
 
 [!include [banner](includes/banner.md)]
 

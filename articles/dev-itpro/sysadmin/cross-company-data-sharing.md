@@ -1,6 +1,6 @@
 ---
 title: "会社間データ共有"
-description: "このトピックでは、企業間のデータ共有について説明します。 会社間の共有は、Microsoft Dynamics 365 for Finance and Operations 展開において、会社間で参照データとグループ データを共有するためのメカニズムです。 T"
+description: "このトピックでは、企業間のデータ共有について説明します。 会社間の共有は、Microsoft Dynamics 365 for Finance and Operations 展開において、会社間で参照データとグループ データを共有するためのメカニズムです。"
 author: aprilolson
 manager: AnnBe
 ms.date: 11/10/2017
@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: ccdd1f440036548a2aedf3efefadc03945fb3d79
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: d0fd3a3bc73919f990bafd81688d14750a1b288b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 

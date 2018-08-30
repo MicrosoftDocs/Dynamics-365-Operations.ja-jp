@@ -1,5 +1,5 @@
 ---
-title: PageLink
+title: "PageLink タイプ"
 description: "Pagelink コントロール タイプ。 ページリンクは、別のページに移動するコントロールです。"
 author: shadykdc
 manager: AnnBe
@@ -16,10 +16,10 @@ ms.author: kashea
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 9c3742f46880204d3587d012bde15472add74a9e
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 6a2f7c4c628bb70d222e5063a9a1aac4e7dc55a6
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 

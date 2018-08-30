@@ -17,14 +17,14 @@ ms.author: sericks
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 316f6c7eecd388493e26707fb7fce84873438b54
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: d060ec6f75be25605f5c57d256cd4cff49cf3d1b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="features-not-implemented-in-on-premises-deployments"></a>オンプレミス配置で実装されていない機能
+# <a name="features-that-arent-implemented-in-on-premises-deployments"></a>オンプレミス配置で実装されていない機能
 
 [!include [banner](../includes/banner.md)]
 

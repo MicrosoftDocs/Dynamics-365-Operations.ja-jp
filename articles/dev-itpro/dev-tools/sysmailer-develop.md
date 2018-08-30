@@ -1,5 +1,5 @@
 ---
-title: "電子メール体験を向上させる"
+title: "SysMailerフレームワークを使用して電子メール体験を開発する"
 description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations で SysMailer フレームワークを使用して電子メールを送信する方法について説明します。"
 author: ChrisGarty
 manager: AnnBe
@@ -17,14 +17,14 @@ ms.author: cgarty
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Platform update 4
 ms.translationtype: HT
-ms.sourcegitcommit: dc0f1a2ff68ec4b27db38b9e465b6f811e466892
-ms.openlocfilehash: 9cf2b9290d856577d0070744d59218774b0b6495
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 9cfa5b4878911db229f405b67c8dede18e5ca756
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="develop-email-experiences"></a>電子メール体験を向上させる
+# <a name="develop-email-experiences-by-using-the-sysmailer-framework"></a>SysMailerフレームワークを使用して電子メール体験を開発する
 
 ## <a name="sending-emails"></a>電子メールを送信しています
 

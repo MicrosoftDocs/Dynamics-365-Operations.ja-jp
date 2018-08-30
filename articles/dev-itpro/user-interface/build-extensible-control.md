@@ -18,14 +18,14 @@ ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 17968da6b7dc310388354104f04188c06e676738
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 418df375c714bbeddfe6d36ea1d7a71f4aa23e7d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="build-an-extensible-control"></a>拡張可能コントロールの構築
+# <a name="build-extensible-controls"></a>拡張可能コントロールの構築
 
 [!include [banner](../includes/banner.md)]
 
@@ -327,7 +327,7 @@ HTML バインディング構文の追加機能の 1 つは、バインディン
       |         氏名          |  EndDate   |
       |      データ ソース      | FMTRental  |
       |      データ フィールド       |  EndDate   |
-      | フォーマット式 | {0} を返す |
+      | フォーマット式 | 返品{0} |
 
 
    5. **サブタイトル フィールド** をもう一度右クリックし、**新しいサブタイトル フィールド** をクリックします。
@@ -391,7 +391,7 @@ HTML バインディング構文の追加機能の 1 つは、バインディン
     |         氏名          |                                                                                                 RatePerDay                                                                                                  |
     |      データ ソース      |                                                                                                FMTModelRate                                                                                                 |
     |      データ フィールド       | RaterPerDay <strong>注:</strong> <strong>データ フィールド</strong> 値はテーブル フィールド値に一致する必要があります。 スペル エラーを修正すると、値が一致しない場合は、ランタイム エラーが表示されます。 |
-    | フォーマット式 |                                                                                                ${0} 1 日あたり                                                                                                 |
+    | フォーマット式 |                                                                                                1 日当たりの ${0}                                                                                                 |
 
 
 24. **サブタイトル フィールド** を右クリックし、**新しいサブタイトル フィールド** をクリックします。
@@ -403,7 +403,7 @@ HTML バインディング構文の追加機能の 1 つは、バインディン
     |         氏名          |  RatePerWeek  |
     |      データ ソース      | FMTModelRate  |
     |      データ フィールド       |  RatePerWeek  |
-    | フォーマット式 | ${0} 週あたり |
+    | フォーマット式 | 週ごとの ${0} |
 
 
 26. Ctrl+S を押し、変更を **FMTRentalRatesPart** に保存します。

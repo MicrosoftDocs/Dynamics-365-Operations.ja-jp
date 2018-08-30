@@ -16,10 +16,10 @@ ms.author: tjvass
 ms.search.validFrom: 2018-3-31
 ms.dyn365.ops.version: Platform update 16
 ms.translationtype: HT
-ms.sourcegitcommit: 6c6c7c3f63b7a49820811a7ec80248b09b6e3acf
-ms.openlocfilehash: 7f5726741b42081d705254a58fe07a1bc51c88ea
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: e7dfa56bb20fe58049c364217fbeec7a7d53c4d1
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/19/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 

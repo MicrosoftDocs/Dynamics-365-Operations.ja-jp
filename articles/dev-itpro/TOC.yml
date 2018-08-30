@@ -1,4 +1,4 @@
-- name: Dynamics 365 for Finance and Operations の開発と管理
+- name: Finance and Operations の開発と管理
   href: index.md
 - name: クラウド配置のシステム要件
   href: ../fin-and-ops/get-started/system-requirements.md?toc=/dev-itpro/toc.json
@@ -7,27 +7,27 @@
 - name: デモ データ
   href: ../fin-and-ops/get-started/demo-data.md?toc=/dev-itpro/toc.json
   items:
-    - name: パッケージ付きデモ データの生成
+    - name: データ パッケージを使用したデモ データの生成
       href: data-entities/generate-demo-data-packages.md
-- name: Visual Studio を使用して開発およびカスタマイズ
+- name: Visual Studio を使用した開発およびカスタマイズ
   href: dev-tools/developer-home-page.md
   items:
     - name: アプリケーション スタックおよびサーバーのアーキテクチャ
       href: dev-tools/application-stack-server-architecture.md
     - name: ベータ評価版の入手
       href: dev-tools/get-evaluation-copy.md
-    - name: サブスクリプションのサインアップ
+    - name: プレビュー サブスクリプションのサインアップ
       href: dev-tools/sign-up-preview-subscription.md
     - name: 開発環境の配置とアクセス
       href: dev-tools/access-instances.md
       items:
-        - name: 開発者用 VM のコンフィギュレーション
+        - name: 1 ボックス開発環境のコンフィギュレーション
           href: dev-tools/configure-developer-vm.md
         - name: 開発マシンでの新しいユーザーの作成
           href: dev-tools/enable-development-machine.md
         - name: 管理者アクセスを許可しない開発用 VM および ビルド用 VM に関するよく寄せられる質問
           href: sysadmin/VMs-no-admin-access.md
-        - name: Visual Studio Team Services へのアクセスを有効化するには、ローカル環境の名前を変更してください
+        - name: Visual Studio Team Services にアクセスするローカル環境の名前の変更
           href: migration-upgrade/vso-machine-renaming.md
         - name: 開発システム要件
           href: dev-tools/development-system-requirements.md
@@ -35,13 +35,13 @@
       href: dev-tools/version-control-metadata-navigation.md
     - name: フリート管理のサンプル アプリケーション
       items:
-        - name: フリート管理のサンプル アプリケーション
+        - name: フリート管理のサンプル アプリケーションのためのエンド ツー エンドのシナリオ
           href: dev-tools/fleet-management-sample.md
-        - name: フリート管理のサンプル アプリケーションの概要
+        - name: フリート管理のサンプル アプリケーション
           href: dev-tools/introduction-fleet-management-sample.md
     - name: Visual Studio Tools
       items:
-        - name: 開発ツールの概要
+        - name: 開発ツール
           href: dev-tools/development-tools-overview.md
         - name: 開発ツールのチュートリアル
           href: dev-tools/introduction-visual-studio.md
@@ -51,12 +51,12 @@
           href: dev-tools/build-debug-project.md
         - name: ビルド操作
           href: dev-tools/build-operations.md
-        - name: コード エディター
+        - name: コード エディター機能
           href: dev-tools/code-editor.md
         - name: モデルとデータ モデル要素の作成
           href: dev-tools/create-data-model-elements.md
           items:
-            - name: 名前付けのガイドライン
+            - name: 拡張機能の名前付けガイドライン
               href: extensibility/NamingGuidelines.md
             - name: カスタマイズをオフにして機能を廃止
               href: dev-tools/lock-models.md
@@ -64,15 +64,15 @@
           href: dev-tools/customization-analysis-report.md
         - name: 要素デザイナー
           href: dev-tools/element-designers.md
-        - name: 要素の利用状況
+        - name: 要素の使用を決定するためのコマンド
           href: dev-tools/element-usage.md
         - name: モデルのエクスポートとインポート
           href: dev-tools/models-export-import.md
         - name: Visual Studio でのメタデータの検索
           href: dev-tools/metadata-search-visual-studio.md
-        - name: モデル
+        - name: モデルとパッケージ
           href: dev-tools/models.md
-        - name: Dynamics 365 for Finance and Operations のプロジェクト
+        - name: Finance and Operations のプロジェクト タイプ
           href: dev-tools/projects.md
         - name: Visual Studio 用のツールおよびアドイン
           href: dev-tools/developer-tools-add-ins.md
@@ -80,7 +80,7 @@
           href: dev-tools/update-development-tools.md
     - name: X++ プログラミング言語
       items:
-        - name: 'X++ およびデバッガーの機能 '
+        - name: X++ およびデバッガーの機能
           href: dev-tools/new-x-debugger-features.md
         - name: 生産データベースのコピーに対する X++ のデバッグ
           href: dev-tools/debug-x-issue-against-copy-of-production.md
@@ -88,13 +88,13 @@
           href: dev-tools/debug-xpp.md
         - name: 要求または応答シナリオの EventHandlerResult クラス
           href: dev-tools/event-handler-result-class.md
-        - name: 'C\# および X++ ソース コードを使用したビジネス ロジックの記述'
+        - name: 'C# および X++ ソース コードを使用したビジネス ロジックの記述'
           href: dev-tools/write-business-logic.md
-        - name: プログラミング言語のサポート
+        - name: X++ と X++ コンパイラの変更
           href: dev-tools/programming-language-support.md
-        - name: 'C\# の LINQ プロバイダー'
+        - name: 'C# の LINQ プロバイダー'
           href: dev-tools/linq-provider-c.md
-        - name: ベスト プラクティスの作成
+        - name: ベスト プラクティス ルールの記述
           href: dev-tools/author-best-practice-rules.md
         - name: アプリケーション エクスプローラーのプロパティ
           href: dev-ref/application-explorer-aot-properties.md
@@ -118,7 +118,7 @@
               href: dev-ref/xpp-macros.md
             - name: X++ 属性クラス
               href: dev-ref/xpp-attribute-classes.md
-            - name: 'X++ と C\# の比較'
+            - name: 'X++ と C# の比較'
               href: dev-ref/xpp-cs-comparison.md
             - name: X++ 構文
               href: dev-ref/xpp-syntax.md
@@ -160,29 +160,29 @@
               href: dev-ref/d-classes.md
             - name: E クラス
               href: dev-ref/e-classes.md
-            - name: 'F クラス: FormBuildAnimateControl への FieldBinding'
+            - name: F クラス (FormBuildAnimateControl への FieldBinding)
               href: dev-ref/fieldbinding-classes.md
-            - name: 'F クラス: FormBuildFastTabSummarySeparator への FormBuildButtonControl'
+            - name: F クラス (FormBuildFastTabSummarySeparator への FormBuildButtonControl)
               href: dev-ref/formbuildbuttoncontrol-classes.md
-            - name: 'F クラス: FormBuildRealControl への FormBuildFilterPaneControl'
+            - name: F クラス (FormBuildRealControl への FormBuildFilterPaneControl)
               href: dev-ref/formbuildfilterpanecontrol-classes.md
-            - name: 'F クラス: FormButtonSeparatorControl への FormBuildReferenceControl'
+            - name: F クラス (FormButtonSeparatorControl への FormBuildReferenceControl)
               href: dev-ref/formbuildreferencecontrol-classes.md
-            - name: 'F クラス: FormControlEventArgs への FormChangeTracker'
+            - name: F クラス (FormControlEventArgs への FormChangeTracker)
               href: dev-ref/formchangetracker-classes.md
-            - name: 'F クラス: FormFastTabHeaderControl への FormDataObject'
+            - name: F クラス (FormFastTabHeaderControl への FormDataObject)
               href: dev-ref/formdataobject-classes.md
-            - name: 'F クラス: FormGridControl への FormFastTabSummarySeparator'
+            - name: F クラス (FormGridControl への FormFastTabSummarySeparator)
               href: dev-ref/formfasttabsummaryseparator-classes.md
-            - name: 'F クラス: FormIntControl への FormGroupControl'
+            - name: F クラス (FormIntControl への FormGroupControl)
               href: dev-ref/formgroupcontrol-classes.md
-            - name: 'F クラス: FormNotifyEventArgs への FormListBoxControl'
+            - name: F クラス (FormNotifyEventArgs への FormListBoxControl)
               href: dev-ref/formlistboxcontrol-classes.md
-            - name: 'F クラス: FormRealControl への FormObject'
+            - name: F クラス (FormRealControl への FormObject)
               href: dev-ref/formobject-classes.md
-            - name: 'F クラス: FormStringControl への FormReferenceControl'
+            - name: F クラス (FormStringControl への FormReferenceControl)
               href: dev-ref/formreferencecontrol-classes.md
-            - name: 'F クラス: FormWindowControl への FormTabControl'
+            - name: F クラス (FormWindowControl への FormTabControl)
               href: dev-ref/formtabcontrol-classes.md
             - name: G クラス
               href: dev-ref/g-classes.md
@@ -229,37 +229,43 @@
               href: extensibility/extensibility-roadmap.md
             - name: 拡張性の要求
               href: extensibility/extensibility-requests.md
-            - name: よく寄せられる質問
+            - name: 拡張性に関するよく寄せられる質問
               href: extensibility/app-sealing-faq.md
             - name: オーバーレイから拡張機能への移行
               href: extensibility/migrate-overlayer-extension.md
-            - name: 拡張機能を使用したモデル要素のカスタマイズ (チュートリアル)
+            - name: 拡張機能によるモデル要素のカスタマイズ (チュートリアル)
               href: extensibility/customize-model-elements-extensions.md
-            - name: 'カスタマイズ: オーバーレイと拡張機能'
+            - name: 拡張機能およびオーバーレイによるカスタマイズ
               href: extensibility/customization-overlayering-extensions.md
         - name: 新機能
           items:
             - name: 拡張機能の変更 (2017 年 7 月)
               href: extensibility/changes-july-2017.md
-            - name: 拡張機能の変更 (バージョン 7.3)
+            - name: バージョン 7.3 の拡張機能の変更
               href: extensibility/extensibility-changes-73.md
-            - name: 拡張機能の変更 (バージョン 8.0)
+            - name: バージョン 8.0 の拡張機能の変更
               href: extensibility/changes-80.md
+            - name: 拡張機能の変更 (バージョン 8.0.1)
+              href: extensibility/extensibility-changes-801.md
+            - name: 拡張機能の変更 (バージョン 8.0.2)
+              href: extensibility/extensibility-changes-802.md
+            - name: 拡張機能の変更 (バージョン 8.0.3)
+              href: extensibility/extensibility-changes-803.md
         - name: 基本
           items:
             - name: 侵入的なカスタマイズ
               href: extensibility/intrusive-customizations.md
-            - name: クラスの拡張機能
+            - name: クラスの拡張モデル
               href: extensibility/class-extensions.md
-            - name: 'クラスの拡張機能: メソッドのラッピングとコマンド チェーン'
+            - name: メソッドのラッピングとコマンド チェーンによるクラスの拡張
               href: extensibility/method-wrapping-coc.md
-            - name: 名前付けのガイドライン
+            - name: モデル拡張機能の名前付けガイドライン
               href: extensibility/naming-guidelines-extensions.md
-            - name: モデル制限を緩和し、拡張機能へのオーバーレイのリファクタリングを有効化する
+            - name: オーバレイを拡張機能にリファクタリングするため、モデルの制限を緩和する
               href: extensibility/refactoring-over-layering.md
         - name: 操作方法
           items:
-            - name: 列挙値の追加
+            - name: 列挙への値の追加
               href: extensibility/add-enum-value.md
             - name: 拡張データ型の変更
               href: extensibility/modify-edt.md
@@ -273,31 +279,31 @@
               href: extensibility/startup-customizations.md
             - name: テーブルの既存のフィールドの変更
               href: extensibility/modify-existing-field.md
-            - name: 既存のテーブルへの新しいフィールドの追加
+            - name: フィールドのテーブルへの追加
               href: extensibility/add-field-extension.md
-            - name: 既存のテーブルへのインデックスの追加
+            - name: インデックスのテーブルへの追加
               href: extensibility/add-index.md
-            - name: 既存のテーブルへのリレーションの追加
+            - name: テーブルへの関係の追加
               href: extensibility/add-relation.md
-            - name: 既存のテーブルのプロパティの変更
+            - name: テーブルのプロパティの変更
               href: extensibility/modify-properties.md
             - name: テーブルへのメソッドの追加
               href: extensibility/add-method-table.md
             - name: テーブル レコードの有効期間中の業務処理の実行
               href: extensibility/subscribe-table-events.md
-            - name: フォームへの新しいデータ ソースの追加
+            - name: フォームへのデータ ソースの追加
               href: extensibility/add-datasource.md
-            - name: フォームのキャプションの変更
+            - name: フォーム キャプションの変更
               href: extensibility/change-caption-form.md
             - name: フォーム コントロールのプロパティの変更
               href: extensibility/modify-control-properties.md
-            - name: ラベルの変更
+            - name: ラベル拡張ファイルを使用したラベルの変更
               href: extensibility/change-label.md
-            - name: 番号順序スコープの拡張
+            - name: 番号順序のスコープの拡張
               href: extensibility/extend-number-sequence-scope.md
             - name: 新規在庫分析コードの追加
               href: extensibility/inventory-dimensions.md
-            - name: 価格と割引の拡張機能の変更
+            - name: 価格と割引の拡張性
               href: extensibility/pricing-app73.md
             - name: テーブル マップ拡張
               href: extensibility/map-extensions.md
@@ -307,11 +313,13 @@
               href: extensibility/maps-with-versioning.md
     - name: パフォーマンス
       items:
-        - name: Trace Parser を使用してトレースを実行する
+        - name: Trace Parser を使用したトレースの実行
           href: perf-test/trace-trace-tutorial.md
-        - name: Visual Studio Team Services を使用した PerfSDK とマルチユーザー テスト
+        - name: パフォーマンス SDK および Visual Studio Online を介したマルチ ユーザー テスト
           href: perf-test/perfsdk-tutorial.md
-        - name: Trace Parser を使用した問題点の診断およびパフォーマンスの問題の分析
+        - name: オンプレミスの環境でのパフォーマンス SDK およびマルチ ユーザー テスト
+          href: perf-test/perfsdk-tutorial-lbd.md
+        - name: Trace Parser を使用した問題点の診断およびパフォーマンスの分析
           href: perf-test/trace-parser.md
         - name: パフォーマンス タイマー
           href: perf-test/performance-timer.md
@@ -321,7 +329,7 @@
           href: perf-test/testing-validation.md
         - name: Visual Studio のプロジェクトのテスト
           href: perf-test/testing-support.md
-        - name: 継続的ビルドとテストの自動化を使用した配置
+        - name: 継続的ビルドとテストの自動化をサポートするトポロジの配置
           href: perf-test/continuous-build-test-automation.md
     - name: 日付の有効期間
       href: dev-tools/date-effectivity.md
@@ -344,19 +352,19 @@
           href: user-interface/build-workspace.md
     - name: フォーム
       items:
-        - name: Dynamics 365 for Finance and Operations のナビゲーション
+        - name: ナビゲーション概念
           href: user-interface/page-navigation.md
-        - name: Dynamics 365 for Finance and Operations のレイアウト
+        - name: Web クライアントのページ レイアウト
           href: user-interface/page-layout.md
-        - name: Symbol フォント
+        - name: Dynamics Symbol フォント
           href: user-interface/symbol-font.md
-        - name: カスタム パターンを使用したテスト フォーム
+        - name: カスタム パターンを使用するテスト フォーム
           href: user-interface/testing-forms-custom-patterns.md
-        - name: ディープ リンクの作成と使用
+        - name: セキュリティ保護された共有可能な URL (ディープ リンク) の作成
           href: user-interface/create-deep-links.md
         - name: フォーム、製品、およびコントロールのユーザー補助機能
           href: user-interface/enable-accessibility.md
-        - name: フィールドのカスタマイズのヘルプ
+        - name: フィールドの説明のカスタマイズ
           href: user-interface/customize-field-help.md
     - name: コントロール
       items:
@@ -366,7 +374,7 @@
           href: user-interface/sizing-input-controls-grid-columns.md
         - name: ツリー コントロールでのチェック ボックスのサポート
           href: user-interface/check-box-tree-controls.md
-        - name: フィルター
+        - name: フィルター処理のオプション
           href: user-interface/filtering.md
         - name: PowerApps ホスト コントロール
           href: user-interface/powerapps-host-control.md
@@ -374,7 +382,7 @@
       items:
         - name: コンテキスト メニュー コードの移行
           href: migration-upgrade/code-migration-context-menus.md
-        - name: マウス ダブルクリック コードの移行
+        - name: マウス ダブルクリック ロジックの移行
           href: migration-upgrade/code-migration-double-click.md
         - name: ルックアップのコンテキスト データ入力
           href: user-interface/contextual-data-entry-lookups.md
@@ -386,7 +394,7 @@
           href: user-interface/file-upload-control.md
         - name: システム定義ボタン
           href: user-interface/system-defined-buttons.md
-        - name: イメージ
+        - name: ページまたはグリッドの画像
           href: user-interface/images-form-grid.md
         - name: 入力、テーブル、およびグリッド コントロール用のフォントと背景
           href: user-interface/specify-color-font-background-controls.md
@@ -394,25 +402,25 @@
           href: user-interface/bidirectional-support.md
         - name: ワークスペース タイル用のアイコンの作成
           href: user-interface/create-icons-workspace-tiles.md
-        - name: 拡張可能なコントロール - パブリック JavaScript API
+        - name: 拡張可能なコントロールのためのパブリック JavaScript API
           href: user-interface/public-javascript-apis.md
         - name: コントロールのチェックリスト
           href: user-interface/control-checklist.md
     - name: メッセージ
       items:
-        - name: スライダーとメッセージ ボックス
+        - name: スライダー ダイアログとメッセージ ボックス ダイアログ
           href: user-interface/slider-messagebox.md
         - name: メッセージ センター、メッセージ バー、およびメッセージ詳細 API
           href: user-interface/messaging-api-center-bar-details.md
-        - name: メッセージ センター、メッセージ バー、およびメッセージ詳細のよく寄せられる質問
+        - name: メッセージ センター、メッセージ バー、およびメッセージ詳細に関するよく寄せられる質問
           href: user-interface/messaging-user.md
     - name: 基本フォーム パターンのガイドライン
       items:
-        - name: フォーム パターンの選択
+        - name: 移行後のフォームのフォーム パターン
           href: user-interface/select-form-pattern.md
         - name: フォームのスタイルとパターン
           href: user-interface/form-styles-patterns.md
-        - name: フォーム パターン アドイン
+        - name: Visual Studio アドイン をサポートしているフォーム パターン
           href: user-interface/form-pattern-add-ins.md
     - name: フォーム パターン
       items:
@@ -523,17 +531,17 @@
       items:
         - name: タスク レコーダーのクイック リファレンス
           href: user-interface/task-recorder-quick-reference.md
-        - name: タスク レコーダーを使用してドキュメントやトレーニングを作成
+        - name: タスク レコーダーによるドキュメントやトレーニングの作成
           href: user-interface/task-recorder-training-docs.md
 - name: モバイル プラットフォーム
   href: mobile-apps/platform/mobile-platform-home-page.md
   items:
-    - name: はじめに
+    - name: 使用開始
       href: mobile-apps/platform/mobile-platform-getting-started.md
       items:
-        - name: アーキテクチャ
+        - name: アーキテクチャと設計の考慮事項
           href: mobile-apps/platform/mobile-platform-architecture.md
-        - name: ビジネス ロジック イベントの概要
+        - name: ビジネス ロジック イベント
           href: mobile-apps/platform/business-logic-events-overview.md
         - name: ページ デザインのガイドライン
           href: mobile-apps/platform/page-design-guidelines.md
@@ -543,15 +551,15 @@
           href: mobile-apps/platform/form-design-requirements.md
     - name: 一般的なタスク
       items:
-        - name: SysAppWorkspace クラスを使用してワークスペースを構成する
+        - name: SysAppWorkspace クラスを使用したワークスペースのコンフィギュレーション
           href: mobile-apps/platform/scenarios/mobile-workspace-configuration.md
-        - name: クリックできるようにフィールドの表示をカスタマイズする
+        - name: クリック可能なモバイル アプリ ページ上でのフィールドの作成
           href: mobile-apps/platform/scenarios/make-workspace-field-clickable.md
-        - name: フィールドに数を表示する
+        - name: フィールドの数の表示
           href: mobile-apps/platform/scenarios/display-count-workspace.md
-        - name: モバイル アプリ ワークスペースのセキュリティを強化する
+        - name: モバイル ワークスペースのセキュリティの強化
           href: mobile-apps/platform/scenarios/secure-mobile-workspace.md
-        - name: サーバーのワークスペースをローカライズする
+        - name: モバイル ワークスペースのローカライズ
           href: mobile-apps/platform/scenarios/localize-workspaces-on-server.md
         - name: ワークスペースのクラスを使用してフィールドを必須にする
           href: mobile-apps/platform/scenarios/make-field-mandatory.md
@@ -561,7 +569,7 @@
           href: mobile-apps/platform/mobile-workspace-server-apis.md
     - name: クライアント側の開発のリファレンス
       items:
-        - name: クライアント側の設計 API の概要
+        - name: クライアント側の設計 API
           href: mobile-apps/platform/scenarios/client-api-design-overview.md
         - name: クライアント API
           href: mobile-apps/platform/client-apis/client-apis-reference.md
@@ -626,11 +634,11 @@
               href: mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md
             - name: DataService タイプ
               href: mobile-apps/platform/client-apis/interfaces/services-business-logic-services-idataservice.md
-            - name: Deferred タイプ
+            - name: Deferred タイプ<T>
               href: mobile-apps/platform/client-apis/interfaces/defer-ideferred.md
             - name: Design タイプ
               href: mobile-apps/platform/client-apis/interfaces/view-model-ipage-idesign.md
-            - name: EventHook タイプ
+            - name: EventHook タイプ<T>
               href: mobile-apps/platform/client-apis/interfaces/event-ievent-ieventhook.md
             - name: Field タイプ
               href: mobile-apps/platform/client-apis/interfaces/view-model-control-field-ifield-ifield.md
@@ -646,7 +654,7 @@
               href: mobile-apps/platform/client-apis/interfaces/view-model-control-fileuploader-ifileuploader-ifileuploadermetadata.md
             - name: GenericValue タイプ
               href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-igenericvalue.md
-            - name: getDataSource
+            - name: getDataSource タイプ
               href: mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-icontrol-icontrol.md
             - name: Group タイプ
               href: mobile-apps/platform/client-apis/interfaces/view-model-control-group-igroup-igroup.md
@@ -734,7 +742,7 @@
       href: data-entities/integration-overview.md
     - name: データ統合 API
       items:
-        - name: データ管理パッケージ API
+        - name: データ管理パッケージ REST API
           href: data-entities/data-management-api.md
         - name: サービス エンドポイント
           href: data-entities/services-home-page.md
@@ -743,15 +751,15 @@
               href: data-entities/troubleshoot-service-authentication.md
         - name: OData
           href: data-entities/odata.md
-        - name: 顧客サービス
+        - name: 顧客サービスの開発
           href: data-entities/custom-services.md
         - name: 定期統合
           href: data-entities/recurring-integrations.md
-        - name: サービス付きサード パーティ サービス テスト ユーティリティの使用
+        - name: サード パーティ ユーティリティを使用したテスト サービス
           href: data-entities/third-party-service-test.md
     - name: 統合のための開発
       items:
-        - name: データ エンティティを使用したデータの統合
+        - name: データ管理とデータ エンティティを使用した統合
           href: data-entities/data-management-integration-data-entity.md
           items:
             - name: データ移行のエンティティの開発
@@ -762,7 +770,7 @@
               href: data-entities/tasks/configure-financial-cross-company-data-sharing.md
             - name: データ入力を容易にするレコード テンプレートの作成
               href: data-entities/tasks/create-record-template-facilitate-data-entry.md
-            - name: レコード テンプレートを使用した新しいレコードの作成
+            - name: レコード テンプレートを使用したレコードの作成
               href: data-entities/tasks/use-record-template-new-record.md
         - name: Common Data Service を使用したデータの統合
           href: data-entities/data-integration-cds.md
@@ -791,6 +799,21 @@
                   href: ../supply-chain/sales-marketing/field-service-work-order.md
                 - name: Field Service の契約の請求書と Finance and Operations の自由書式の請求書との同期
                   href: ../supply-chain/sales-marketing/field-service-invoice.md
+            - name: Project Service Automation 統合のコンフィギュレーション
+              href: ../financials/project-management/PSA-integration.md?toc=/dev-itpro/toc.json
+              items:
+                - name: Project Service Automation 統合パラメータ
+                  href: ../financials/project-management/PSA-parameters.md?toc=/dev-itpro/toc.json
+                - name: プロジェクト契約とプロジェクトの同期
+                  href: ../financials/project-management/project-contracts-templates.md?toc=/dev-itpro/toc.json
+                - name: プロジェクト タスクの同期
+                  href: ../financials/project-management/project-tasks-template.md?toc=/dev-itpro/toc.json
+                - name: プロジェクト経費カテゴリの同期
+                  href: ../financials/project-management/project-categories-templates.md?toc=/dev-itpro/toc.json
+                - name: プロジェクト見積のプロジェクト予測への同期
+                  href: ../financials/project-management/project-estimates-templates.md?toc=/dev-itpro/toc.json
+                - name: プロジェクト実績のプロジェクト統合仕訳帳への同期
+                  href: ../financials/project-management/project-actuals-templates.md?toc=/dev-itpro/toc.json
         - name: 外部 Web サービスの使用
           href: data-entities/consume-external-web-service.md
 - name: データ管理
@@ -809,11 +832,11 @@
           href: data-entities/configuration-data-templates.md
         - name: 複数のワークシート付きデータ テンプレート
           href: data-entities/excel-template-multiple.md
-        - name: エンティティの変更の追跡
+        - name: エンティティの変更追跡の有効化
           href: data-entities/entity-change-track.md
         - name: コンフィギュレーション キーおよびデータ エンティティ
           href: data-entities/config-key-entities.md
-        - name: 標準データ エンティティに関する情報を検索します。
+        - name: 標準データ エンティティに関する情報の検索
           href: data-entities/data-entities-report.md
     - name: データ インポート/エクスポート ジョブ
       href: data-entities/data-import-export-job.md
@@ -826,13 +849,13 @@
           href: dev-tools/design-best-practices.md
         - name: 新しいデータ エンティティの作成
           href: data-entities/build-consuming-data-entities.md
-        - name: データ エンティティのプロパティ
+        - name: 動作データ エンティティのプロパティ
           href: data-entities/behavioral-properties-data-entities.md
         - name: 計算列と仮想フィールドの作成
           href: data-entities/data-entity-computed-columns-virtual-fields.md
         - name: 会社間動作
           href: data-entities/cross-company-behavior.md
-        - name: 国/地域コードの処理
+        - name: 国/地域コードとコンフィギュレーション キー
           href: data-entities/countryregion-codes-configuration-keys.md
         - name: 継承パターン
           href: data-entities/support-super-type-sub-type.md
@@ -844,7 +867,7 @@
           href: data-entities/validations-defaults-unmapped-fields.md
         - name: セキュリティとデータ エンティティ
           href: data-entities/security-data-entities.md
-        - name: 財務分析コードを公開する読み取り専用エンティティのビルド
+        - name: 財務分析コードを公開する読み取り専用エンティティの作成
           href: financial/read-only-entity-financial.md
     - name: 自分のデータベースの持ち込み
       href: analytics/export-entities-to-your-own-database.md
@@ -853,34 +876,34 @@
     - name: GDPR データ要求に対応するためのリソース
       href: gdpr/gdpr-home-page.md
       items:
-        - name: Microsoft Dynamics 365 for Finance and Operations の GDPR に関するガイド
+        - name: Finance and Operations の GDPR に関するガイド
           href: gdpr/gdpr-guide.md
         - name: 資産分類
           href: gdpr/gdpr-asset-classification-values.md
-        - name: 個人検索レポートを使用
+        - name: 個人検索レポート
           href: gdpr/gdpr-person-search-report.md
         - name: 個人検索レポートを拡張
           href: gdpr/gdpr-extend-person-search-report.md
         - name: 機密データへのアクセスを管理
           href: gdpr/gdpr-auditing-sensitive-data.md
-        - name: Talent を使用して個人データ要求に対応
+        - name: Talent を使用した個人データ要求への対応
           href: gdpr/respond-dsr-request-talent.md
-        - name: Microsoft Dynamics AX 2012 を使用して個人データ要求に対応
+        - name: AX 2012 の個人データ要求への対応
           href: gdpr/gdpr-ax2012.md
         - name: LCS に対する GDPR データ要求
           href: gdpr/gdpr-lcs.md
-    - name: データ検証ワークスペース
+    - name: データ検証チェックリスト ワークスペース
       href: user-interface/data-validation-workspace.md
 - name: 継続的な配信
   href: dev-tools/continuous-delivery-home-page.md
   items:
-    - name: 開発と継続的な配信のよく寄せられる質問
+    - name: 開発と継続的な配信に関するよく寄せられる質問
       href: dev-tools/continuous-delivery-faq.md
-    - name: ビルド出力からテスト パッケージを除外
+    - name: ビルド出力からのテスト パッケージの除外
       href: dev-tools/exclude-test-packages.md
-    - name: ソース コントロールを使用してサード パーティ モデルとランタイム パッケージを管理
+    - name: ソース コントロールを使用したサード パーティ モデルとランタイム パッケージの管理
       href: dev-tools/manage-runtime-packages.md
-    - name: 自動ビルドのバージョン モデル
+    - name: 自動ビルドのモデル バージョンの更新
       href: dev-tools/version-models-build.md
 - name: Lifecycle Services を使用したリリースのソリューション
   items:
@@ -900,37 +923,37 @@
       href: lcs-solutions/process-data-packages-lcs-solutions.md
     - name: ソリューション データベースのバックアップ
       href: lcs-solutions/database-backup-lcs-solutions.md
-    - name: ローカライズ
+    - name: ローカライズと規制の機能
       href: lcs-solutions/country-region.md
       items:
-        - name: ローカライズ機能の分類
+        - name: ローカリゼーション機能の分類
           href: lcs-solutions/classify-localization-features.md
-        - name: 国/地域コンテキスト
+        - name: 国/地域コンテキストの適用
           href: lcs-solutions/apply-country-context.md
-        - name: 規制認証
+        - name: 機能タイトルの規制証明情報
           href: lcs-solutions/regulatory-certifications.md
         - name: 規制の更新
           href: lcs-solutions/regulatory-watch-communication.md
-        - name: 個別のローカライズ モデル
+        - name: ローカライズ モデルの分類
           href: lcs-solutions/separate-localization-models.md
         - name: 規制の警告の送信
           href: lcs-solutions/submit-localization-alerts.md
 - name: 財務開発
   href: financial/financial-dev-home-page.md
   items:
-    - name: 分析コード
+    - name: さまざまな分析コード パターンのサポート
       href: financial/dimensions.md
     - name: Excel テンプレートへの分析コードの追加
       href: financial/dimensions-overview.md
-    - name: 分析コード エントリ コントロール ダイアログのサポート
+    - name: ダイアログの分析コード エントリ コントロールのサポート
       href: financial/dimension-entry-control-dialog-support.md
-    - name: '分析コード エントリ コントロールの移行 '
+    - name: 既定の分析コード コントロールの分析コード エントリ コントロールへの移行
       href: financial/dimension-entry-control-migration.md
     - name: 分析コード エントリ コントロールの取得
       href: financial/dimension-entry-control-uptake.md
     - name: 分析コード式ビルダーのサブパターン
       href: financial/dimension-expression-builder-subpattern.md
-    - name: アプリケーション統合用の財務分析コードのコンフィギュレーション
+    - name: 財務分析コードのコンフィギュレーション
       href: financial/financial-dimension-configuration-integration.md
     - name: 財務分析コードの有効化
       href: financial/activate-financial-dimensions.md
@@ -938,25 +961,25 @@
       href: financial/financial-dimensions-main-accounts-right-left-language.md
     - name: 財務分析コードとして使用可能なバッキング テーブルの作成
       href: financial/dimensionable-entities.md
-    - name: 'セグメント化されたエントリ コントロールの移行 '
+    - name: セグメント化されたエントリ コントロールの移行
       href: financial/segmented-entry-control-conversion.md
-    - name: セグメント化されたエントリ コントロール ダイアログのサポート
+    - name: ダイアログのセグメント化されたエントリ コントロールのサポート
       href: financial/segmented-entry-control-dialog-support.md
-    - name: セグメント化されたエントリ コントロールのメタデータ
+    - name: セグメント化されたエントリ コントロールのデザイン時メタデータ
       href: financial/segmented-entry-control-metadata-specification.md
-    - name: セグメント化されたエントリ コントロール移行のガイダンス
+    - name: セグメント化されたエントリ コントロールに関する移行ガイダンス
       href: financial/segmented-entry-control-migration-guidance.md
     - name: セグメント化されたエントリ コントロールの parm メソッド
       href: financial/segmented-entry-control-parm-method-specification.md
-    - name: Microsoft Excel テンプレートで財務分析コード値の検索機能を追加
+    - name: Excel テンプレートに財務分析コードの値の検索を追加
       href: financial/add-dimensions-excel-templates.md
     - name: 為替レート プロバイダーの作成
       href: financial/create-exchange-rate-providers.md
-    - name: Microsoft Dynamics Finance and Operations バージョン 8.0 を使用した、為替レート プロバイダーの作成
+    - name: Finance and Operations バージョン 8.0 を使用した為替レート プロバイダーの作成
       href: financial/create-exchange-rate-8.md
 - name: サプライ チェーンの開発
   items:
-    - name: ガント作成ガイド
+    - name: ガント コントロール作成ガイド
       href: user-interface/gantt-development-guide.md
     - name: 新しい輸送管理エンジンの作成
       href: ../supply-chain/transportation/create-new-transportation-management-engine.md
@@ -966,29 +989,29 @@
       href: deployment/deploy-demo-environment.md
     - name: クラウド配置
       items:
-        - name: Azure Resource Manager の研修
+        - name: Azure Resource Manager の研修の完了
           href: deployment/arm-onboarding.md
-        - name: Azure ExpressRoute と Dynamics 365 for Finance and Operations
+        - name: Azure ExpressRoute と Finance and Operations
           href: deployment/expressroute.md
         - name: Finance and Operations のアーキテクチャ
           href: ../fin-and-ops/imp-lifecycle/architecture-overview.md
     - name: オンプレミス配置
       href: deployment/on-premises-deployment-landing-page.md
       items:
-        - name: オンプレミスの概要
+        - name: オンプレミス配置のオプション
           href: deployment/on-premises-overview.md
-        - name: オンプレミス配置の計画
+        - name: オンプレミス配置の計画および準備
           href: deployment/plan-onprem-deployment.md
-        - name: ハードウェアのサイズ
+        - name: ハードウェアのサイズ要件
           href: ../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
-        - name: オンプレミスのプロジェクトを作成する
+        - name: 設置プロジェクトの設定
           href: lifecycle-services/lbd-create-lcs-on-prem-project.md
         - name: オンプレミス環境の設定と配置
           href: deployment/setup-deploy-on-premises-environments.md
           items:
-            - name: Platform update 12 を使用してオンプレミス環境を配置
+            - name: Platform update 12 におけるオンプレミス環境の配置
               href: deployment/setup-deploy-on-premises-pu12.md
-            - name: Platform update 8 および 11 を使用してオンプレミス環境を配置
+            - name: Platform update 8 および 11 におけるオンプレミス環境の配置
               href: deployment/setup-deploy-on-premises-pu8-pu11.md
         - name: カスタム モデルの開発とオンプレミス環境への配置
           href: deployment/develop-deploy-custom-models-on-premises.md
@@ -996,69 +1019,71 @@
           href: deployment/onprem-reverseproxy.md
         - name: オンプレミス配置への更新プログラムの適用
           href: deployment/apply-updates-on-premises.md
+        - name: オンプレミス診断
+          href: deployment/on-premises-diagnostics.md
         - name: オンプレミス配置の再配置
           href: deployment/redeploy-on-prem.md
         - name: ローカル エージェントの更新
           href: lifecycle-services/update-local-agent.md
-        - name: 環境の再構成
+        - name: 環境の再コンフィギュレーション
           href: lifecycle-services/reconfigure-environment.md
         - name: クライアント インターネット接続
           href: user-interface/client-disconnected.md
-        - name: Dynamics 365 for Finance and Operations (オンプレミス) のトラブルシューティング
+        - name: オンプレミス配置のトラブルシューティング
           href: deployment/troubleshoot-on-prem.md
     - name: カスタム コードの配置
       items:
-        - name: 配置可能パッケージの作成
+        - name: モデルの配置可能なパッケージの作成
           href: deployment/create-apply-deployable-package.md
         - name: クラウド環境への更新プログラムの適用
           href: deployment/apply-deployable-package-system.md
-        - name: 配置可能パッケージのインストール
+        - name: 配置可能なパッケージのコマンドラインからのインストール
           href: deployment/install-deployable-package.md
         - name: パッケージのアンインストール
           href: deployment/uninstall-deployable-package.md
-        - name: パッケージ アプリケーションの問題のトラブルシューティング
+        - name: パッケージ アプリケーションに関する問題のトラブルシューティング
           href: deployment/deployable-package-troubleshooting.md
 - name: アップグレード、更新プログラム、および修正プログラム
   href: migration-upgrade/upgrade-home-page.md
   items:
-    - name: AX 2012 から Dynamics 365 for Finance and Operations へのアップグレード
+    - name: AX 2012 から Finance and Operations へのアップグレード
       href: migration-upgrade/upgrade-overview-2012.md
       items:
-        - name: AX 2012 アップグレード - アップグレード アナライザー ツールを使用した計画
+        - name: AX 2012 アップグレード - アップグレード アナライザー ツールを使用した計画の策定
           href: migration-upgrade/upgrade-analyzer-tool.md
         - name: AX 2012 アップグレード - コードのアップグレード サービスを使用した工数見積
           href: migration-upgrade/analyze-code-upgrade.md
-        - name: AX 2012 アップグレード - サンド ボックス環境の配置
+        - name: 'AX 2012 アップグレード: 分析のためのデモ環境の展開'
           href: migration-upgrade/analysis-sandbox.md
         - name: AX 2012 アップグレード - 開発環境でのデータ アップグレード
           href: migration-upgrade/data-upgrade-2012.md
-        - name: AX 2012 アップグレード - AX 2012 データ アップグレード タスク
+        - name: AX 2012 アップグレード - データ アップグレードのためのアップグレード前のチェックリスト
           href: migration-upgrade/prepare-data-upgrade.md
         - name: AX 2012 アップグレード - サンドボックス環境でのデータ アップグレード
           href: migration-upgrade/upgrade-data-sandbox.md
         - name: AX 2012 アップグレード - 切替テスト
           href: migration-upgrade/upgrade-cutover-testing.md
-        - name: AX 2012 アップグレード - アップグレード後に完了するタスク
+        - name: AX 2012 アップグレード - アップグレード後のタスク
           href: migration-upgrade/app-validation-process.md
         - name: AX 2012 アップグレード - 機能テスト合格
           href: migration-upgrade/upgrade-functional-validation.md
         - name: AX 2012 アップグレード - Go-Live の準備
           href: migration-upgrade/upgrade-go-live-prep.md
-        - name: AX 2012 アップグレード - Go live
+        - name: AX 2012 アップグレード - Go-Live
           href: migration-upgrade/2012-upgrade-cutover.md
         - name: AX 2012 からのアップグレードに影響する変更
           items:
-            - name: 勘定科目表の区切り記号は一意である必要があります
+            - name: 勘定科目表の区切り記号を一意にする
               href: migration-upgrade/chart-accounts-delimiter-unique.md
-            - name: 単一伝票と通貨再評価のアップグレード
+            - name: 単一伝票仕訳帳と通貨再評価のアップグレード
               href: migration-upgrade/single-voucher-and-currency-revaluation-upgrade.md
             - name: プロジェクト リソースのスケジューリング データ モデル
               href: migration-upgrade/data-model-changes-resource-management.md
             - name: ワークフロー サブシステムの変更
               href: migration-upgrade/workflow-subsystem.md
-            - name: キューブから集計モデルに移行した理由
+            - name: 分析キューブの代わりに使用する集計モデル
               href: migration-upgrade/in-memory-real-time-aggregate-models.md
-            - name: アップグレードした販売キューブをエンティティ格納へ移行する
+            - name: アップグレードした販売キューブのエンティティ格納への移行
               href: migration-upgrade/migrate-upgraded-cube-entity-store.md
             - name: 予算計画のアップグレード
               href: migration-upgrade/upgrade-budget-planning.md
@@ -1067,9 +1092,9 @@
       items:
         - name: コード移行の準備
           href: migration-upgrade/prepare-migration.md
-        - name: コードの移行中に Visual Studio Team Services マッピングをコンフィギュレーション
+        - name: Visual Studio Team Services のマッピングのコンフィギュレーション
           href: migration-upgrade/configure-vso-solution.md
-        - name: モデルの分割
+        - name: 分割されたモデル
           href: dev-tools/model-split.md
         - name: デリゲートを使用したモデル間の依存関係の解決
           href: migration-upgrade/delegates-migration.md
@@ -1077,15 +1102,15 @@
       items:
         - name: 最新の更新プログラムに移行するためのプロセス
           href: migration-upgrade/upgrade-latest-update.md
-        - name: ライフサイクル ポリシー
+        - name: ソフトウェアのライフサイクル ポリシーおよびクラウド リリース
           href: migration-upgrade/versions-update-policy.md
         - name: 最新のプラットフォーム更新プログラムの環境への適用
           href: migration-upgrade/upgrade-latest-platform-update.md
-        - name: 2016 年 8 月リリースへの Dynamics プラットフォームのアップグレード
+        - name: Dynamics AX プラットフォームの 2016 年 8 月リリースへのアップグレード
           href: migration-upgrade/update-platform-each-release.md
         - name: サンドボックス環境のアップグレード
           href: migration-upgrade/upgrade-sandbox-environment.md
-        - name: 開発またはデモ環境でのデータのアップグレード
+        - name: 開発環境、デモ環境、サンドボックス環境でのデータのアップグレード
           href: migration-upgrade/upgrade-data-to-latest-update.md
         - name: 開発ツールの更新
           href: dev-tools/update-development-tools.md
@@ -1101,7 +1126,7 @@
           href: migration-upgrade/download-hotfix-lcs.md
         - name: クラウド環境への更新プログラムの適用
           href: deployment/apply-deployable-package-system.md
-        - name: メタデータ修正プログラムのインストール
+        - name: 開発環境でのメタデータ修正プログラムのインストール
           href: migration-upgrade/install-metadata-hotfix-package.md
         - name: 1 ボックス環境の Reporting Services への修正プログラムの適用
           href: migration-upgrade/patch-reporting-service-environment.md
@@ -1116,9 +1141,9 @@
 - name: システム管理
   href: sysadmin/system-administration-home-page.md
   items:
-    - name: プラットフォームの毎月の更新プログラムのよく寄せられる質問
+    - name: クラウド プラットフォームの毎月の更新プログラムに関するよく寄せられる質問
       href: sysadmin/faq-platform-monthly-updates.md
-    - name: 組織の法律条項およびプライバシーに関する声明へのリンクの追加
+    - name: 法律条項およびプライバシーに関する声明へのリンクの追加
       href: sysadmin/legal-terms-privacy-statement.md
     - name: ライセンス コードとコンフィギュレーション キーのレポート
       href: sysadmin/license-codes-configuration-keys-report.md
@@ -1135,33 +1160,33 @@
       items:
         - name: セキュリティ アーキテクチャ
           href: sysadmin/security-architecture.md
-        - name: セキュリティ レポート
+        - name: 最初から用意されているセキュリティ レポート
           href: sysadmin/security-reports.md
         - name: 新規ユーザーの作成
           href: sysadmin/tasks/create-new-users.md
-        - name: 一括でユーザーをインポートする
+        - name: ユーザーの一括インポート
           href: sysadmin/tasks/import-bulk-users.md
-        - name: 職務分掌を設定する
+        - name: 職務分掌の設定
           href: sysadmin/tasks/set-up-segregation-duties.md
         - name: 職務分掌の競合の識別と解決
           href: sysadmin/tasks/identify-resolve-conflicts-segregation-duties.md
-        - name: ユーザーをセキュリティ ロールに割り当てる
+        - name: ユーザーのセキュリティ ロールへの割り当て
           href: sysadmin/tasks/assign-users-security-roles.md
     - name: バッチ処理
       href: sysadmin/batch-processing-overview.md
       items:
-        - name: バッチ サーバーの概要
+        - name: バッチ処理とバッチ サーバー
           href: sysadmin/batch-server-overview.md
         - name: バッチ ジョブの作成
           href: sysadmin/tasks/create-batch-job.md
-    - name: 最適化アドバイザーの概要
+    - name: 最適化アドバイザー
       href: sysadmin/optimization-advisor-overview.md
       items:
         - name: 最適化アドバイザーのルールの作成
           href: sysadmin/create-rules-optimization-advisor.md
 - name: Lifecycle Services
   items:
-    - name: Lifecycle Services の概要
+    - name: Lifecycle Services に関するリソース
       href: lifecycle-services/lcs.md
       items:
         - name: 顧客向け LCS
@@ -1172,7 +1197,7 @@
           href: lifecycle-services/whats-new-lcs.md
         - name: 既知の問題
           href: lifecycle-services/known-issues.md
-    - name: Dynamics Lifecycle Services ユーザー ガイド
+    - name: Lifecycle Services ユーザー ガイド
       href: lifecycle-services/lcs-user-guide.md
     - name: サブスクリプション見積もりツール
       href: lifecycle-services/subscription-estimator.md
@@ -1187,217 +1212,66 @@
           href: lifecycle-services/set-up-configuration-manager-lcs.md
     - name: コード アップグレード サービスのコンフィギュレーション
       href: lifecycle-services/configure-execute-code-upgrade.md
-    - name: '方法の作成 '
+    - name: 方法の作成または更新
       href: lifecycle-services/create-methodology.md
     - name: ビジネス プロセス モデラー
       href: lifecycle-services/bpm-overview.md
     - name: ビジネス プロセス モデラーの業務プロセス ライブラリ
       href: lifecycle-services/business-process-libraries-business-process-modeler.md
-    - name: BPM ライブラリの作成、編集、または参照
+    - name: ビジネス プロセス モデラー ライブラリの作成、編集、参照
       href: lifecycle-services/creating-editing-browsing.md
-    - name: BPM ライブラリ内のタスクの完了
+    - name: ビジネス プロセス モデラーでのタスクの完了
       href: lifecycle-services/complete-tasks-bpm.md
-    - name: 活動ダイアグラムの使用
+    - name: BPM ライブラリの活動ダイアグラムでの作業
       href: lifecycle-services/using-activity-diagrams.md
-    - name: BPM ライブラリと Visual Studio Team Services (VSTS) の同期
+    - name: BPM ライブラリと Visual Studio Team Services の同期
       href: lifecycle-services/synchronize-bpm-vsts.md
-    - name: タスク ガイドと BPM を使用して承認テスト スイートを作成する
+    - name: タスク ガイドと BPM を使用したユーザー承認テスト ライブラリの作成
       href: lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md
     - name: ビジネス プロセス モデラーのフローチャート
       href: lifecycle-services/flowcharts-business-process-modeler.md
-    - name: 独自の業務プロセスのアップロード
+    - name: カスタムの業務プロセスのビジネス プロセス モデラーへのアップロード
       href: lifecycle-services/upload-business-processes-bpm-task-recorder.md
-    - name: 'モニタリングおよび診断 '
+    - name: モニタリングおよび診断
       href: lifecycle-services/monitoring-diagnostics.md
     - name: 環境サービスの再開
       href: lifecycle-services/restart-environment-services.md
-    - name: ユーザー ログインの追跡
+    - name: ユーザー サインインの追跡
       href: lifecycle-services/user-logins.md
     - name: アセット ライブラリ
       href: lifecycle-services/asset-library.md
-    - name: Microsoft Dynamics 365 - 翻訳サービスの概要
+    - name: Microsoft Dynamics 365 Translation Service
       href: lifecycle-services/translation-service-overview.md
       items:
-        - name: 'Microsoft Dynamics 365 翻訳サービス ユーザー ガイド  '
+        - name: ユーザー インタ フェース ファイルの翻訳
           href: lifecycle-services/use-translation-service.md
-        - name: Microsoft Dynamics 365 翻訳サービス - ドキュメント ファイルの翻訳
+        - name: ドキュメント ファイルの翻訳
           href: lifecycle-services/use-translation-service-ua.md
-        - name: Microsoft Dynamics 365 翻訳サービス - 翻訳メモリ
+        - name: 翻訳メモリ ファイル
           href: lifecycle-services/use-translation-service-tm.md
-    - name: Dynamics AX 2012 Lifecycle Services の機能
-      items:
-        - name: 配置
-          items:
-            - name: クラウド ホスト環境
-              href: lifecycle-services/ax-2012/cloud-hosted-environments-lcs.md
-            - name: コンフィギュレーションのコピー
-              href: lifecycle-services/copy-configuration-lcs.md
-            - name: Azure での Dynamics AX 2012 R3 配置の計画
-              href: lifecycle-services/ax-2012/plan-2012-r3-deployment-azure.md
-            - name: Dynamics AX 2012 R3 Azure の配置
-              href: lifecycle-services/ax-2012/deploy-2012-r3-azure-lcs.md
-            - name: Dynamics AX 2012 R3 デモ環境の配置
-              href: lifecycle-services/ax-2012/deploy-ax-2012-r3-ax-2012-r3-cu8-demo-environment-azure.md
-            - name: Azure での開発環境の配置
-              href: lifecycle-services/ax-2012/deploy-development-environment-azure.md
-            - name: Azure での高可用性環境の配置
-              href: lifecycle-services/ax-2012/deploy-high-availability-environment-azure.md
-            - name: Azure でのテスト環境の配置
-              href: lifecycle-services/ax-2012/deploy-test-environment-azure.md
-            - name: Azure での Dynamics AX 2012 R3 配置の管理
-              href: lifecycle-services/ax-2012/manage-2012-r3-deployment-azure.md
-            - name: エンタープライズ ポータル サーバーの 1 つのサーバー ファームへの結合
-              href: lifecycle-services/ax-2012/join-enterprise-portal-servers-single-server-farm.md
-            - name: Dynamics AX エンタープライズ ポータルでのエントリ ポイントの記録
-              href: lifecycle-services/ax-2012/record-entry-points-enterprise-portal.md
-            - name: Azure での Retail E-commerce 開発/テスト環境の配置
-              href: lifecycle-services/ax-2012/deploy-retail-ecommerce-devtest-environment-azure.md
-            - name: Azure での Retail Essentials デモ環境の配置
-              href: lifecycle-services/ax-2012/deploy-retail-essentials-demo-environment-azure.md
-            - name: Azure での Retail Essentials 開発/テスト環境の配置
-              href: lifecycle-services/ax-2012/deploy-retail-essentials-devtest-environment-azure.md
-            - name: Azure での Retail Mobility 開発/テスト環境の配置
-              href: lifecycle-services/ax-2012/deploy-retail-mobility-devtest-environment-azure.md
-            - name: Azure での Dynamics AX 2012 R3 配置のトラブルシューティング
-              href: lifecycle-services/ax-2012/troubleshoot-2012-r3-deployment-azure.md
-            - name: Dynamics AX 2012 R3 の更新プログラム
-              href: lifecycle-services/ax-2012/update-2012-r3-lcs.md
-        - name: データのインポート/エクスポート フレームワークのユーザー ガイド
-          href: lifecycle-services/ax-2012/user-guide-dixf.md
-          items:
-            - name: インストール
-              href: lifecycle-services/ax-2012/install-dixf.md
-              items:
-                - name: AX 2012 R3 のインストール
-                  href: lifecycle-services/ax-2012/install-ax-2012-r3.md
-                - name: SQL Server 2014 の Dynamics AX 2012 R2 CU7 バージョンのインストール
-                  href: lifecycle-services/ax-2012/install-dixf-ax-2012-r2-cu7-ss-2014.md
-            - name: データの移行
-              href: lifecycle-services/ax-2012/migrate-data-dixf.md
-            - name: SSIS のバージョンのコンフィギュレーション
-              href: lifecycle-services/ax-2012/configure-sql-server-integration-services-multiple-versions-dixf.md
-            - name: 会社間でのエンティティ データのコピーと比較
-              href: lifecycle-services/ax-2012/copy-compare-entity-data-between-companies-dixf.md
-            - name: Dynamics AX 会社間でのデータのコピー
-              href: lifecycle-services/ax-2012/copy-data-between-companies-dixf.md
-            - name: Dynamics AX インスタンス間でのデータのコピー
-              href: lifecycle-services/ax-2012/copy-data-between-instances-dixf.md
-            - name: カスタム ターゲット エンティティの作成
-              href: lifecycle-services/ax-2012/create-custom-target-entity-dixf.md
-            - name: データのインポート/エクスポート フレームワークのエンティティ
-              href: lifecycle-services/ax-2012/entities-dixf.md
-            - name: CSV データ ソースからのデータのインポート
-              href: lifecycle-services/ax-2012/import-data-csv-data-source-dixf.md
-            - name: ODBC データ ソースからのデータのインポート
-              href: lifecycle-services/ax-2012/import-data-odbc-data-source-dixf.md
-            - name: デモ ファイル
-              href: lifecycle-services/ax-2012/demo-files-dixf.md
-            - name: 簡易インポートとエクスポート
-              href: lifecycle-services/ax-2012/quick-import-export.md
-        - name: テーブル
-          items:
-            - name: テーブルの作成
-              href: lifecycle-services/ax-2012/create-tables.md
-            - name: テーブルのプロパティ
-              href: lifecycle-services/ax-2012/table-properties.md
-        - name: Dynamics AX 2012 LCS ツール
-          items:
-            - name: プロジェクト
-              href: lifecycle-services/ax-2012/projects-lcs.md
-            - name: 方法
-              href: lifecycle-services/ax-2012/methodologies-lcs.md
-            - name: 'カスタマイズ分析 '
-              href: lifecycle-services/ax-2012/customization-analysis-lcs.md
-            - name: インフラストラクチャ見積もりツール
-              href: lifecycle-services/ax-2012/infrastructure-estimator-lcs.md
-            - name: ライセンス数見積もりツール
-              href: lifecycle-services/ax-2012/license-sizing-estimator-lcs.md
-            - name: 提案の要求 (lifecycle-services/RFP) の応答
-              href: lifecycle-services/ax-2012/rfp-responses-lcs.md
-            - name: システム診断
-              href: lifecycle-services/ax-2012/system-diagnostics-lcs.md
-            - name: システム診断のインストールと実行
-              href: lifecycle-services/ax-2012/install-run-system-diagnostics-lcs.md
-            - name: アップグレード分析
-              href: lifecycle-services/ax-2012/upgrade-analysis-lcs.md
-            - name: 使用状況プロファイラー
-              href: lifecycle-services/ax-2012/usage-profiler-lcs.md
-        - name: Dynamics AX 2012 ダウンロード可能ツール
-          items:
-            - name: コード アップグレード ツールのユーザー ガイド (非推奨)
-              href: lifecycle-services/ax-2012/code-upgrade-tool-user-guide.md
-            - name: Lifecycle Services のダウンロード可能ツール
-              href: lifecycle-services/ax-2012/lcs-downloadable-tools-formerly-informationsource.md
-            - name: テスト データ転送ツール (ベータ)
-              href: lifecycle-services/ax-2012/test-data-transfer-tool-beta-2012.md
-              items:
-                - name: インストール
-                  href: lifecycle-services/ax-2012/install-test-data-transfer-tool-beta.md
-                - name: 実行
-                  href: lifecycle-services/ax-2012/run-test-data-transfer-tool-beta.md
-                - name: AX 2012 R3 のデモ データのインポート
-                  href: lifecycle-services/ax-2012/import-demo-data-ax-2012-r3-test-data-transfer-tool.md
-            - name: セキュリティ開発ツール
-              href: lifecycle-services/ax-2012/overview-security-development-tool-user-interface.md
-              items:
-                - name: インストール
-                  href: lifecycle-services/ax-2012/install-security-development-tool.md
-                - name: ユーザー ガイド
-                  href: lifecycle-services/ax-2012/security-development-tool-user-guide.md
-                - name: エントリ ポイントのアクセス許可の定義または編集
-                  href: lifecycle-services/ax-2012/define-edit-entry-point-permissions.md
-            - name: パフォーマンス ベンチマーク ソフトウェア開発ツールキット
-              href: lifecycle-services/ax-2012/performance-benchmark-software-development-toolkit-sdk-2012.md
-            - name: セキュリティ アップグレード アドバイザー ツール
-              href: lifecycle-services/ax-2012/security-upgrade-advisor-tool-user-guide.md
-            - name: Intelligent Data Management Framework (IDMF)
-              href: lifecycle-services/ax-2012/microsoft-idmf.md
-              items:
-                - name: 概要
-                  href: lifecycle-services/ax-2012/overview-idmf.md
-                - name: インストール ガイド
-                  href: lifecycle-services/ax-2012/installation-guide-idmf.md
-                - name: 構成
-                  href: lifecycle-services/ax-2012/configuration-functionality-idmf-workspace.md
-                - name: 分析
-                  href: lifecycle-services/ax-2012/analysis-functionality-idmf-workspace.md
-                - name: オブジェクトの削除とアーカイブ
-                  href: lifecycle-services/ax-2012/work-with-purge-objects-archive-objects.md
-                - name: アーカイブ オブジェクトの作成
-                  href: lifecycle-services/ax-2012/create-archive-objects.md
-                - name: 削除オブジェクトの作成
-                  href: lifecycle-services/ax-2012/create-purge-objects.md
-                - name: 削除および分析タスクのスケジュール
-                  href: lifecycle-services/ax-2012/schedule-purge-analysis-tasks.md
-                - name: 削除またはアーカイブ ジョブの表示
-                  href: lifecycle-services/ax-2012/view-status-purge-archive-jobs.md
-                - name: メンテナンス
-                  href: lifecycle-services/ax-2012/maintain-idmf.md
-                - name: トラブルシューティング
-                  href: lifecycle-services/ax-2012/troubleshoot-idmf.md
 - name: データベース管理
   items:
-    - name: Azure SQL データベースから SQL Server 環境へのデータベースのコピー
+    - name: Azure SQL Database から SQL Server 環境へのデータベースのコピー
       href: database/copy-database-from-azure-sql-to-sql-server.md
-    - name: SQL Server から実稼働 Azure SQL データベース環境へのデータベースのコピー
+    - name: SQL Server から Azure SQL Database の実稼働環境へのデータベースのコピー
       href: database/copy-database-from-sql-server-to-azure-sql.md
     - name: 非実稼働環境でのデータベースの復元
       href: database/request-point-in-time-restore.md
-    - name: 復元するデータベースのコピーを後でエクスポート
+    - name: 後で復元するデータベースのコピーのエクスポート
       href: database/copy-operations-database.md
     - name: サンドボックス データベース更新の要求
       href: database/database-refresh.md
 - name: サポート
   items:
-    - name: Dynamics 365 for Finance and Operations および Lifecycle Services のサポートの入手
+    - name: Finance and Operations および Lifecycle Services のサポートの入手
       href: lifecycle-services/lcs-support.md
     - name: プレミア サポート チケットの記録
       href: lifecycle-services/premier-support.md
     - name: Dynamics サービス エンジニアリング チームへの要求の送信
       href: lifecycle-services/submit-request-dynamics-service-engineering-team.md
-    - name: Dynamics 365 for Finance and Operations の技術サポートの設定
+    - name: Finance and Operations の技術サポートの設定
       href: lifecycle-services/support-experience.md
-    - name: 予定された保守ウィンドウのよく寄せられる質問
+    - name: 予定された保守ウィンドウに関するよく寄せられる質問
       href: lifecycle-services/planned-maintenance-window-faq.md
     - name: クラウドの工程とサービス
       href: lifecycle-services/cloud-operations-servicing.md

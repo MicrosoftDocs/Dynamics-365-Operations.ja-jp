@@ -1,5 +1,5 @@
 ---
-title: "Retail Modern POS のトリガーと印刷"
+title: "Retail Modern POS (MPOS) のトリガーと印刷"
 description: "トリガーを使用すると、いずれかの Retail Modern POS の操作前後に発生するイベントを取得できます。"
 author: mugunthanm
 manager: AnnBe
@@ -17,14 +17,14 @@ ms.author: mumani
 ms.search.validFrom: 2017-01-27
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: f2e3a40f58b57785079e1940b2d24a3598a3ad1b
-ms.openlocfilehash: 618f8572f6d6ead6e8838b2aca84fc0ee823b42a
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: be0b4c5db39d17943a31901c8f46fc68d2345835
 ms.contentlocale: ja-jp
-ms.lasthandoff: 07/09/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="retail-modern-pos-triggers-and-printing"></a>Retail Modern POS のトリガーと印刷
+# <a name="retail-modern-pos-mpos-triggers-and-printing"></a>Retail Modern POS (MPOS) のトリガーと印刷
 
 [!include [banner](../../includes/banner.md)]
 

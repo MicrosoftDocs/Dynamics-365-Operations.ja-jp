@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Dynamics 365 翻訳サービス - 翻訳メモリ"
+title: "翻訳メモリ ファイル"
 description: "このトピックでは、翻訳メモリ ファイルを作成、編集、および使用して、Microsoft Dynamics 365 翻訳サービス (DTS) が高品質の翻訳出力ファイルを提供するのをいつ、どこで行うことができるかについて説明します。"
 author: kfend
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: ejchoGIT
 ms.search.validFrom: 2018-03-27
 ms.dyn365.ops.version: AX 7.3.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: b755b6bbb2be9534e54bb77ade97188e68c01bf0
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 077ba0aa0ef2457a02649e46bc44a39260cf4928
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="microsoft-dynamics-365-translation-service---translation-memory"></a>Microsoft Dynamics 365 翻訳サービス - 翻訳メモリ
+# <a name="translation-memory-files"></a>翻訳メモリ ファイル
 
 [!include [banner](../includes/banner.md)]
 

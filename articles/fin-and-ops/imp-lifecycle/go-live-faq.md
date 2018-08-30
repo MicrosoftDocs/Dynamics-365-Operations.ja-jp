@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Dynamics 365 for Finance and Operations の Go-Live に関するよく寄せられる質問"
+title: "Finance and Operations の実装プロジェクトの Go-Live に関するよく寄せられる質問"
 description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations プロジェクトの運用についてよく寄せられる質問に対する回答を提供します。"
 author: sshashi7
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.author: sshashi
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 4aaaf6cbf0c6f0c724dd0a14fbaa558a6a9dc398
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: 0072548f50afbd6f11257c1ff3906ce20e636fd1
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="go-live-faq"></a>Go live に関するよく寄せられる質問
+# <a name="go-live-for-finance-and-operations-implementation-projects-faq"></a>Finance and Operations の実装プロジェクトの Go-Live に関するよく寄せられる質問
 
 [!include [banner](../includes/banner.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: "LCS 実装プロジェクトを別の Azure Active Directory テナントに移動する"
+title: "LCS 実装プロジェクトを異なる Azure AD テナントに移動する"
 description: "このトピックでは、定期売買と LCS 実装プロジェクトを異なる Azure AD テナントに移動する方法について説明します。"
 author: ClaudiaBetz-Haubold
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
 ms.translationtype: HT
-ms.sourcegitcommit: dcbe39a5d9ca4a9fc109468772b6dd89b0dd971e
-ms.openlocfilehash: 12cd3745e0df605759e21839a6befe50453b893c
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: c3d46eab0b0a774930dd999f75c21ede266d23cb
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/09/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="move-an-lcs-implementation-project-to-another-azure-active-directory-tenant"></a>LCS 実装プロジェクトを別の Azure Active Directory テナントに移動する
+# <a name="move-lcs-implementation-projects-to-different-azure-ad-tenants"></a>LCS 実装プロジェクトを異なる Azure AD テナントに移動する
 [!include [banner](../includes/banner.md)]
 
 サブスクリプションと Microsoft Dynamics Lifecyle Services (LCS) 導入プロジェクトを別の Microsoft Azure Active Directory (Azure AD) テナントに移すことができます。 この移動が必要になる場合のいくつかのシナリオを次に示します。

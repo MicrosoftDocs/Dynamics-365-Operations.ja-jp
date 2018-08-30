@@ -1,5 +1,5 @@
 ---
-title: "Dynamics 365 for Finance and Operations, Enterprise Edition (2017 年 7 月) の拡張性の変更"
+title: "Finance and Operations, Enterprise Edition (2017 年 7 月) の拡張機能の変更"
 description: "これは、(2017 年 7 月) に実装された拡張機能の一覧です。"
 author: FrankDahl
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: fdahl
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 2283705ff4ffc4ea3f5738bfc28520c556fe8459
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: d29dda71a2785a35ab12297b5b57695053457291
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="extensibility-changes-in-the-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017"></a>Dynamics 365 for Finance and Operations, Enterprise Edition (2017 年 7 月) の拡張性の変更
+# <a name="extensibility-changes-in-finance-and-operations-enterprise-edition-july-2017"></a>Finance and Operations, Enterprise Edition (2017 年 7 月) の拡張機能の変更
 
 [!include [banner](../includes/banner.md)]
 

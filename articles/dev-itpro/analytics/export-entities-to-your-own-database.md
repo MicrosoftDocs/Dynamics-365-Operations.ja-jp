@@ -1,5 +1,5 @@
 ---
-title: "自分のデータベースの持ち込み"
+title: "自分のデータベースの持ち込み (BYOD)"
 description: "このトピックでは、エンティティを 独自の Azure SQL データベースにエクスポートする方法について説明します。"
 author: Sunil-Garg
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.author: sunilg
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 9fbe7e6055ac4b61674f7793d4f5cd24d529a9e5
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: b72f1032c6f9879d3e9f9fe00a3aff8288f5ba83
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="bring-your-own-database"></a>自分のデータベースの持ち込み
+# <a name="bring-your-own-database-byod"></a>自分のデータベースの持ち込み (BYOD)
 
 [!include [banner](../includes/banner.md)]
 

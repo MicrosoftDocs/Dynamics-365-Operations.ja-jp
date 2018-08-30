@@ -1,5 +1,5 @@
 ---
-title: "継続的ビルドとテストの自動化を使用した配置"
+title: "継続的ビルドとテストの自動化をサポートするトポロジの配置"
 description: "このトピックでは、継続的なビルドとテストの自動化をサポートする開発者トポロジを配置する方法について説明します。"
 author: RobinARH
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: shailesn
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: cf531c3a8f3bdb17314d1de436b98249169f82a3
-ms.openlocfilehash: ec7e36fa575ccfed6f98f886639b1e9268eb03a6
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: a8a5ff2e96f887b3bd7d415243ee83c7526bd8c0
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="deployment-with-continuous-build-and-test-automation"></a>継続的ビルドとテストの自動化を使用した配置
+# <a name="deploy-topologies-that-support-continuous-build-and-test-automation"></a>継続的ビルドとテストの自動化をサポートするトポロジの配置
 
 [!include [banner](../includes/banner.md)]
 

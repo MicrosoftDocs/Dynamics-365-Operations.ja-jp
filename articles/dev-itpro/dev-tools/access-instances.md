@@ -1,5 +1,5 @@
 ---
-title: "アクセス インスタンス"
+title: "開発環境の配置とアクセス"
 description: "このトピックでは、開発インスタンスへのアクセス、オンプレミス開発 VM の構成、および開発者と管理者にとって重要な構成設定を見つける方法について説明します。"
 author: robadawy
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 54eec5c312a24a1b866020ae2f0ba6b4060f90cc
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 671f72434a30a3fc73a1c881dd10faab0a2993d5
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="deploy-and-access-development-environments"></a>開発環境の配置とアクセス 
+# <a name="deploy-and-access-development-environments"></a>開発環境の配置とアクセス
 
 [!include [banner](../includes/banner.md)]
 
@@ -227,7 +227,7 @@ Retail もコンフィギュレーションしている場合は、このセク�
 
 ### <a name="base-url-of-the-local-application"></a>ローカル アプリケーションの基本 URL
 
-ユーザーが管理者としてプロビジョニングされると、そのユーザーは次のベース URL に移動してコンピュータ上のインスタンスにアクセスできます: https://usnconeboxax1aos.cloud.onebox.dynamics.com。もしバージョン コントロールを使用し、複数の開発VM を同じ Visual Studio Team Services (VSTS) プロジェクトに接続する計画がある場合は、ローカル VM の名前を変更してください。 手順については、[Visual Studio Team Services へのアクセスを有効化するには、ローカルの名前を変更してください](../migration-upgrade/vso-machine-renaming.md) を参照してください。
+ユーザーが管理者としてプロビジョニングされた後、ユーザーは次のベース URL に移動してコンピュータ上のインスタンスにアクセスできます: https://usnconeboxax1aos.cloud.onebox.dynamics.com。 バージョン管理を使用しており、複数の開発 VMs を同じ Visual Studio Team Services (VSTS) プロジェクトに接続する予定がある場合は、ローカル VM 名を変更してください。 手順については、[Visual Studio Team Services へのアクセスを有効化するには、ローカルの名前を変更してください](../migration-upgrade/vso-machine-renaming.md) を参照してください。
 
 #### <a name="retail-configuration"></a>Retail コンフィギュレーション
 

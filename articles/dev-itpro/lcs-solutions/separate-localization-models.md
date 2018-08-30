@@ -1,5 +1,5 @@
 ---
-title: "個別のローカライズ モデル"
+title: "ローカライズ モデルの分離"
 description: "ローカライズおよび翻訳向け LCS ソリューションの要件の一部として、以前のバージョンの Microsoft Dynamics 365 for Finance and Operations のローカライズ ソリューションに、規制と競合の両方の機能が含まれている場合、ローカライズ ISV ソリューション プロバイダーはソリューションを各機能タイプごとに別々のモデルに分割する必要があります。 この記事では、この要件に関する情報を提供します。"
 author: ShylaThompson
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 82705c107edb19bcbc0456ef561cf70904c55b14
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: b94a8eb9ee319286dc203201611b3f5151f24f53
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="separate-localization-models"></a>個別のローカライズ モデル
+# <a name="separation-of-localization-models"></a>ローカライズ モデルの分離
 
 [!include [banner](../includes/banner.md)]
 

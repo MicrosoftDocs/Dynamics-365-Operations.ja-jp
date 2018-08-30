@@ -1,5 +1,5 @@
 ---
-title: "Retail POS の Typescript と C# プロキシ"
+title: "Typescript および小売販売時点管理 (POS) の C# プロキシ"
 description: "このトピックでは、Retail プロキシに関する情報と、その生成方法について説明します。"
 author: mugunthanm
 manager: AnnBe
@@ -17,14 +17,14 @@ ms.author: mumani
 ms.search.validFrom: 2017-10-20
 ms.dyn365.ops.version: AX 7.0.0, Retail October 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 490b7654b86e7bf32393362fd864f1a96f4b7b25
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 5efffc01319d574f75d4c0c8801830a768993890
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="retail-typescript-and-c-proxies"></a>Retail の Typescript プロキシと C# プロキシ
+# <a name="typescript-and-c-proxies-for-retail-point-of-sale-pos"></a>Typescript および小売販売時点管理 (POS) の C# プロキシ
 
 [!include [banner](../../includes/banner.md)]
 

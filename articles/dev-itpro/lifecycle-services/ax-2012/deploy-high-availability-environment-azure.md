@@ -1,5 +1,5 @@
 ---
-title: "Azure (AX 2012) での高可用性環境の配置"
+title: "Azure での高可用性環境の配置"
 description: "この記事では、Microsoft Azure に高可用性環境を展開する方法について説明します。 環境を展開するには、Microsoft Dynamics Lifecycle Services でクラウド ホスト環境ツールを使用します。"
 author: kfend
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: kfend
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 0ea307decc9817687362018aba6310ff913869e0
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 278c8cec9dca760bb97c0f59863697240b2468b2
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="deploy-a-high-availability-environment-on-azure-ax-2012"></a>Azure (AX 2012) での高可用性環境の配置
+# <a name="deploy-high-availability-environments-on-azure"></a>Azure での高可用性環境の配置
 
 [!include [banner](../../includes/banner.md)]
 

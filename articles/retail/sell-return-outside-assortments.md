@@ -1,5 +1,5 @@
 ---
-title: "品揃えの範囲外の製品の販売と返品"
+title: "店舗の品揃えに含まれない製品の販売および返品"
 description: "Dynamics 365 for Retail で、品揃えの範囲外の製品を販売および返品ができます。"
 author: pdp1207
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.author: prabhup
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 82b3076eba0d374c80e37572233cf7ba440cc65a
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 17981cef401085ad3af784950fff6260c2c6d9ee
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="sell-and-return-products-outside-of-an-assortment"></a>品揃えの範囲外の製品の販売と返品
+# <a name="sell-and-return-products-that-arent-part-of-a-stores-assortment"></a>店舗の品揃えに含まれない製品の販売および返品
 
 [!include [banner](includes/banner.md)]
 

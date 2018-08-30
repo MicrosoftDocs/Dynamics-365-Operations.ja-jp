@@ -1,5 +1,5 @@
 ---
-title: "新しい小売環境でのシード データの初期化"
+title: "新しい Retail 環境でのシード データの初期化"
 description: "この記事では、Microsoft Dynamics 365 for Retail の初期化処理の一部として作成されるデータについて説明します。"
 author: josaw1
 manager: AnnBe
@@ -20,14 +20,14 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 7388324fe8a9abc8fc3d723b7c8df2c73d76a2ae
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 80fa443fc235496a111a8a866d2e703202721268
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="initialize-seed-data-in-a-new-retail-environment"></a>新しい小売環境でのシード データの初期化
+# <a name="initialize-seed-data-in-new-retail-environments"></a>新しい Retail 環境でのシード データの初期化
 
 [!include [banner](includes/banner.md)]
 
@@ -36,7 +36,7 @@ ms.lasthandoff: 11/03/2017
 小売ソリューションが Microsoft Dynamics Lifecycle Services (LCS) によって配置された後、基本的なコンフィギュレーション データを作成するために、小売コンフィギュレーションを初期化する必要があります。 **重要:** 小売コンフィギュレーションを初期化する前に、小売店舗を設定する法人ごとの言語と住所が指定されていることを確認します。 この手順は、小売に使用する法人ごとに完了する必要があります。 小売のコンフィギュレーションを初期化するには、次の手順に従います。
 
 1.  Dynamics 365 for Retail クライアントを起動します。
-2.  [小売] &gt; [本社の設定] &gt; [パラメーター] &gt; [小売パラメーター] をクリックします。
+2.  **小売** &gt; **本社の設定** &gt; **パラメーター** &gt; **小売パラメーター**をクリックします。
 3.  **初期化**をクリックします。
 
 初期化によって、次の既定のコンフィギュレーション データを作成します:

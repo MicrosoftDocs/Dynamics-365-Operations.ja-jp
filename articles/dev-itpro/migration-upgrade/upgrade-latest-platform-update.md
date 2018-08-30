@@ -1,5 +1,5 @@
 ---
-title: "Dynamics 365 Finance and Operations 環境に最新のプラットフォーム更新プログラムを適用"
+title: "最新のプラットフォーム更新プログラムを環境へ適用"
 description: "ここでは、Microsoft Dynamics 365 for Finance and Operations Enterprise Edition 環境に最新のプラットフォーム リリースを適用する方法について説明します。"
 author: tariqbell
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: tabell
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
 ms.translationtype: HT
-ms.sourcegitcommit: f2e3a40f58b57785079e1940b2d24a3598a3ad1b
-ms.openlocfilehash: 5c43f7b8fea55289d5845c132dc78c83b16766dd
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: a139abac2a10df39367f44d62d70d6852e2de833
 ms.contentlocale: ja-jp
-ms.lasthandoff: 07/09/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="apply-the-latest-platform-update-to-your-microsoft-dynamics-365-finance-and-operations-environment"></a>Microsoft Dynamics 365 Finance and Operations 環境への最新のプラットフォーム更新プログラムの適用
+# <a name="apply-the-latest-platform-update-to-environments"></a>最新のプラットフォーム更新プログラムを環境へ適用
 
 [!include [banner](../includes/banner.md)]
 

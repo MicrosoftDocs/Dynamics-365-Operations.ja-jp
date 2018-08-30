@@ -1,5 +1,5 @@
 ---
-title: "Power BI 統合"
+title: "Power BI 統合によって利用できる機能とサービス"
 description: "このトピックでは、Microsoft Power BI に含まれる機能およびサービスを使用して、データからのインサイトにアクセス、参照、取得する方法を説明します。"
 author: TJVass
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: de1163c09ba5bf4f2b1abf974726e05114f78402
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: c30cb7ac34d01dddf1b7bab79076c53c0f5b2b37
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="power-bi-integration"></a>Power BI 統合
+# <a name="features-and-services-available-through-power-bi-integration"></a>Power BI 統合によって利用できる機能とサービス
 
 [!include [banner](../includes/banner.md)]
 
@@ -70,7 +70,7 @@ PowerBI.com マーケットプレースには Power BI コンテンツ パック
 コンテンツの詳細については、[Power BI コンテンツ](power-bi-home-page.md) を参照してください。
 
 ## <a name="extending-creating-and-distributing-power-bi-reports"></a>Power BI レポートの拡張、作成、配布
-最初のステップとして、既製の Power BI コンテンツを使用する必要があります。 既製のレポートを変更するか、PowerBI.com に組み込まれている機能を使用して拡張することができます。既製のレポートの変更に加え、Power BI desktop などの BI オーサリング ツールを使用して拡張することができます。 新しいレポートを作成することもできます。 いくつかの方法を使用して、新しい Power BI レポートを作成することができます。
+最初のステップとして、既製の Power BI コンテンツを使用する必要があります。 既製のレポートを変更したり、PowerBI.com に組み込まれている機能を使用して、それらを拡張することができます。 既製のレポートを変更するだけでなく、Power BI desktop などの Power BI オーサリング ツールを使用して拡張することができます。 新しいレポートを作成することもできます。 いくつかの方法を使用して、新しい Power BI レポートを作成することができます。
 
 ### <a name="creating-high-volume-near-real-time-operational-power-bi-reports-by-using-entity-store"></a>エンティティ格納を使用して大量の、ほぼリアルタイムな「運用 Power BI レポート」を作成しています
 エンティティ格納は、Power BI 統合用に組み込まれている運用データ ストアです。 エンティティ ストアを使用するほぼリアルタイムの大量の Power BI レポートを作成するには、ビジネス アナリストまたは開発者は Power BI レポートのオーサリングツールである Power BI デスクトップを使用できます。 開発者が作成するその他のコンポーネントと同様に、これらのレポートは LCS 経由でユーザーに配布する必要があります。

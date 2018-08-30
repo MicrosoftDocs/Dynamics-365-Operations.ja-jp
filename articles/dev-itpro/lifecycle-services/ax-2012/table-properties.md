@@ -1,5 +1,5 @@
 ---
-title: "表のプロパティ"
+title: "アプリケーション オブジェクト ツリー (AOT) のテーブル プロパティ"
 description: "このトピックでは、アプリケーション オブジェクト ツリー (AOT) におけるテーブル要素の <strong>プロパティ</strong> ウィンドウにあるプロパティについて説明します。 テーブル要素は、<strong>データ ディクショナリ</strong> &gt; <strong>テーブル</strong> にあります。"
 author: kfend
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: kfend
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 28604cb27d187432ce46f81680605925b2c1b2c4
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: b52bf9b7c8a6abcdd362d16c178a14fa12fef31b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="table-properties"></a>表のプロパティ
+# <a name="table-properties-in-the-application-object-tree-aot"></a>アプリケーション オブジェクト ツリー (AOT) のテーブル プロパティ
 
 [!include [banner](../../includes/banner.md)]
 

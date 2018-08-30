@@ -1,5 +1,5 @@
 ---
-title: "Intelligent Data Management Framework (AX 2012) でのメンテナンス"
+title: "Intelligent Data Management Framework (IDMF) でのメンテナンス"
 description: "このトピックでは、インテリジェント データ管理フレームワーク (IDMF) のデータベース設定について説明します。"
 author: kfend
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: kfend
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 2119c6229afb96151bf1eefd2087d9f2b1bd3663
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: cbd774af4540bad0086d2cfe77544a262fd6cacd
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="maintenance-in-the-intelligent-data-management-framework-ax-2012"></a>Intelligent Data Management Framework (AX 2012) でのメンテナンス
+# <a name="maintenance-in-the-intelligent-data-management-framework-idmf"></a>Intelligent Data Management Framework (IDMF) でのメンテナンス
 
 [!include [banner](../../includes/banner.md)]
 

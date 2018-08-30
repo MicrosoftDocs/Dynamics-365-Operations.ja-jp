@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Dynamics 365 for Talent のプロビジョニング"
+title: "Talent のプロビジョニング"
 description: "このトピックでは、Microsoft Dynamics 365 for Talent の新しい環境のプロビジョニングについて説明します。"
 author: rschloma
 manager: AnnBe
@@ -18,13 +18,13 @@ ms.author: rschloma
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 343e372ad9e29372649e975a5bee16e8913b66c8
+ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
+ms.openlocfilehash: 2fc4119f3b33aa583274f4d823e296752cdde41d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="provision-microsoft-dynamics-365-for-talent"></a>Microsoft Dynamics 365 for Talent のプロビジョニング
+# <a name="provision-talent"></a>Talent のプロビジョニング
 
 [!include [banner](includes/banner.md)]
 
@@ -105,7 +105,7 @@ PowerApps プラン 2 のライセンスを持つテナント管理者のコン�
 
 1. 次の場所から ProvisionCDSEnvironment.zip ファイルをダウンロードします。[ProvisionCDSEnvironment スクリプト](https://go.microsoft.com/fwlink/?linkid=870436)  
 
-2. ダウンロード フォルダーから、ちょうどダウンロードした ProvisionCDSEnvironment.zip ファイルで右クリックして、**プロパティ**を選択します。  ダイアログの下部にセキュリティ メモがあり「このファイルは別のコンピューターに由来し、このコンピューターを保護するためにブロックされています」と述べている場合、チェック ボックスを**ブロック解除**にマークし、**適用**および次に**OK **をクリックします。
+2. ダウンロード フォルダーから、ちょうどダウンロードした ProvisionCDSEnvironment.zip ファイルで右クリックして、**プロパティ**を選択します。  ダイアログの下部にセキュリティ メモがあり「このファイルは別のコンピューターに由来し、このコンピューターを保護するためにブロックされています」と述べている場合、チェック ボックスを**ブロック解除**にマークし、**適用**および次に**OK**をクリックします。
 
 3. ProvisionCDSEnviroinment.zip ファイルの内容全体を、ルート フォルダー以外のフォルダーに解凍します。
 

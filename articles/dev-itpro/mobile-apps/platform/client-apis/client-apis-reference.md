@@ -16,14 +16,14 @@ ms.author: kashea
 ms.search.validFrom: 08/09/2017
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: d0d49aeb3ee9c7094586e75c9852cc80d45c3030
+ms.sourcegitcommit: ed6cabcc8c76fba3d4414cd4b564b720c54169e0
+ms.openlocfilehash: b03894746209218e4b63d34710fa6de21fae27e2
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="client-apis-contents"></a>クライアント API の内容
+# <a name="mobile-platform-client-apis"></a>モバイル プラットフォーム クライアント API
 
 [!include [banner](../../../includes/banner.md)]
 

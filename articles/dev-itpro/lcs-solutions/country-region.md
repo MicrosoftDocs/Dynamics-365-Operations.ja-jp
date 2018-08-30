@@ -3,7 +3,7 @@ title: "ローカライズと規制の機能"
 description: "このトピックでは、国/地域固有の機能について詳しく説明しているリソースの一覧を示します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/12/2018
+ms.date: 07/18/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 4485bd6442d186e5a6bac90e0a9041566e2e26d0
-ms.openlocfilehash: efa82abcd25101fc7be772c32e6c4fee7976d4bb
+ms.sourcegitcommit: 46165351f3c9048cfbecf25a1c49d8aeac1f3e1e
+ms.openlocfilehash: 787ce11701a9df951b38af5209206902d7c98019
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/25/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
@@ -147,33 +147,9 @@ Microsoft Dynamics 365 for Finance and Operations には、[製品のローカ�
 - [VAT 報告](../../financials/localizations/emea-vat-reporting.md)
 - [決済のトランザクションの表示](../../financials/localizations/emea-transactions-settlement-form.md)
 
-### <a name="france"></a>フランス
--   [時系列の請求書と伝票番号](../../financials/localizations/emea-fra-chronological-invoices-vouchers.md)
--   [フランスの特別減価償却](../../financials/localizations/emea-fra-derogatory-depreciation.md)
--   [NAF コードと Siret 番号](../../financials/localizations/emea-fra-naf-codes-siret-numbers.md)
--   [フランスにおける期日経過の顧客支払のペナルティ](../../financials/localizations/emea-fra-apply-penalty-customer-payment-past-due.md)
--   [顧客請求書での一括比例配分復旧テキストの印刷](../../financials/localizations/emea-fra-print-lump-sum-recovery-text.md)
--   [RB/SL 減価償却](../../financials/localizations/emea-fra-rbsl-depreciation.md)
-
-#### <a name="public-sector"></a>公的機関
-   -   [公的機関での確約](../../financials/localizations/emea-fra-commitments-public-sector.md)
-   -   [公的機関での Mandats de paiement](../../financials/localizations/emea-fra-mandats-de-paiement.md)
-   -   [調達](../../financials/localizations/emea-fra-procurement-sourcing-public-sector.md)
-   -   [公的機関会計](../../financials/localizations/emea-fra-public-sector-accounting.md)
-   -   [Titres de recette](../../financials/localizations/emea-fra-titres-de-recette-public-sector.md)
-   -   [仕入先請求書の支払保留](../../financials/localizations/emea-fra-vendor-invoice-payment-holds-public-sector.md)
-
-### <a name="germany"></a>ドイツ
--   [追加取得の減価償却](../../financials/localizations/emea-deu-additional-acquisition-depreciation.md)
--   [ドイツの監査ファイル (GDPdU/GoBD)](../../financials/localizations/emea-deu-gdpdu-audit-data-export.md)
--   [ドイツ語仕訳帳リスト レポート](../../financials/localizations/emea-deu-journal-list-report.md)
--   [販売から生成されるクレジット メモの個別ラベルの印刷](../../financials/localizations/emea-deu-print-separate-label-credit-memo-originating-sales.md)
-
-### <a name="hungary"></a>ハンガリー
-
--   [固定資産の減価償却方法](../../financials/localizations/emea-hun-fixed-assets-depreciation-methods.md)    
--   [固定資産を在庫に移動する](../../financials/localizations/emea-hun-fixed-asset-to-inventory.md)
--   [低原価固定資産](../../financials/localizations/emea-hun-low-cost-fixed-assets.md)
+### <a name="francefinancialslocalizationsfrancemd"></a>[フランス](../../financials/localizations/france.md)
+### <a name="germanyfinancialslocalizationsgermanymd"></a>[ドイツ](../../financials/localizations/germany.md)
+### <a name="hungaryfinancialslocalizationshungarymd"></a>[ハンガリー](../../financials/localizations/hungary.md)
 
 ### <a name="india"></a>インド
 
@@ -190,18 +166,7 @@ Microsoft Dynamics 365 for Finance and Operations には、[製品のローカ�
     - [税しきい値に関するよく寄せられる質問](../../financials/localizations/apac-ind-tax-thresholds.md)
     - [税エンジンの拡張](../../financials/general-ledger/extend-tax-engine-configurations.md)
 
-### <a name="italy"></a>イタリア
-
--   [イタリアのブラック リスト レポート](../../financials/localizations/emea-ita-black-list-report.md)
--   [VAT 明細書の詳細](../../financials/localizations/emea-ita-vat-statements-details.md)
--   [トランザクションの報告日](../../financials/localizations/emea-ita-competence-date.md)
--   [固定資産の手動減価償却](../../financials/localizations/emea-ita-depreciation-of-fixed-assets.md)
--   [Modello 770](../../financials/localizations/emea-ita-modello770.md)
--   [イタリアの請求書の梱包明細日付の検証](../../financials/localizations/emea-ita-packing-slip-date-verification-on-invoice.md)
--   [イタリアの売上税帳簿](../../financials/localizations/emea-ita-fiscal-books.md)
--   [政府/自治体に対して発行された請求書の分割支払](../../financials/localizations/emea-ita-split-payment-invoices-issued-public-administration.md)
--   [源泉徴収税](../../financials/localizations/emea-ita-withholding-tax.md)
-
+### <a name="italyfinancialslocalizationsitalymd"></a>[イタリア](../../financials/localizations/italy.md)
 ### <a name="japan"></a>日本
 
 -  [仕入先負担の銀行支払手数料](../../financials/localizations/apac-jpn-bank-payment-fees-vendors.md)
@@ -216,19 +181,8 @@ Microsoft Dynamics 365 for Finance and Operations には、[製品のローカ�
 -  [受取手形の裏書による仕入先への支払](../../financials/localizations/apac-jpn-endorse-bill-of-exchange.md)
 -  [累進的源泉徴収税の計算](../../financials/localizations/apac-jpn-progressive-withholding-tax-calculation.md)
 
-### <a name="latvia"></a>ラトビア
-
--   [課税額算出のための固定資産会計](../../financials/localizations/emea-lva-fixed-assets-accounting.md)
--   [固定資産の場所の変更の追跡](../../financials/localizations/emea-lva-fixed-assets-location-fields-change.md)
--   [請求書と梱包明細の番号付け](../../financials/localizations/emea-invoices-packing-slips-numbering.md)
--   [天然資源税レポート](../../financials/localizations/emea-lva-tax-natural-resources.md)
--   [VAT 明細書の詳細](../../financials/localizations/emea-lva-vat-statement-details.md)
-
-### <a name="lithuania"></a>リトアニア
-
--   [固定資産修復明細書](../../financials/localizations/emea-ltu-fixed-asset-repair-statement.md)
--   [請求書と梱包明細の番号付け](../../financials/localizations/emea-invoices-packing-slips-numbering.md)
--   [VAT 明細書の詳細](../../financials/localizations/emea-ltu-vat-statement-details.md)
+### <a name="latviafinancialslocalizationslatviamd"></a>[ラトビア](../../financials/localizations/latvia.md)
+### <a name="lithuaniafinancialslocalizationslithuaniamd"></a>[リトアニア](../../financials/localizations/lithuania.md)
 
 ### <a name="mexico"></a>メキシコ
 
@@ -240,31 +194,11 @@ Microsoft Dynamics 365 for Finance and Operations には、[製品のローカ�
 
 ### <a name="malaysia"></a>マレーシア
 
--   [商品およびサービス税 (GST)](../../financials/localizations/apac-mys-gst.md)
+-   [商品及びサービス税 (GST)](../../financials/localizations/apac-mys-gst.md)
 
-### <a name="netherlands"></a>オランダ
-
--   [請求書発行の期限](../../financials/localizations/emea-invoice-issue-deadline.md)
-
-### <a name="norway"></a>ノルウェー
-
--   [ノルウェーのキャッシュ レジスタ](../../retail/localizations/emea-nor-cash-registers.md)
--   [ノルウェーのキャッシュ レジスタの配置ガイドライン](../../retail/localizations/emea-nor-loc-deployment-guidelines.md)
--   [Nets インポート形式](../../financials/localizations/emea-nor-nets-import-format.md)
--   [VAT 明細書](../../financials/localizations/emea-nor-sales-tax-payment-report.md)
-
-### <a name="poland"></a>ポーランド
-
--   [単価からの行割引の計算](../../financials/localizations/emea-pol-line-discount-calculation-from-unit-price.md)
--   [修正メモ](../../financials/localizations/emea-pol-correction-notes.md)
--   [売上請求書の番号付けの複製](../../financials/localizations/emea-pol-sales-invoice-duplicates-numbering.md)
--   [固定資産の減価償却](../../financials/localizations/emea-pol-fixed-assets-depreciation.md)
--   [固定資産の処分](../../financials/localizations/emea-pol-fixed-asset-disposal-functionality-extension.md)
--   [返品可能な梱包](../../financials/localizations/emea-pol-returnable-packages.md)
--   [売上税レポート](../../financials/localizations/emea-pol-sales-tax-reports.md)
--   [標準監査ファイル (SAF)](../../financials/localizations/emea-pol-standard-audit-file-saf.md)
--   [売上高および残高明細書](../../financials/localizations/emea-pol-turnover-balances-statement.md)
-
+### <a name="netherlandsfinancialslocalizationsnetherlandsmd"></a>[オランダ](../../financials/localizations/netherlands.md)
+### <a name="norwayfinancialslocalizationsnorwaymd"></a>[ノルウェー](../../financials/localizations/norway.md)
+### <a name="polandfinancialslocalizationspolandmd"></a>[ポーランド](../../financials/localizations/poland.md)
 ### <a name="saudi-arabia"></a>サウジアラビア
 
 -   [ザカート レポート](../../financials/localizations/emea-sau-zakat-reporting.md)
@@ -273,29 +207,9 @@ Microsoft Dynamics 365 for Finance and Operations には、[製品のローカ�
 
 -   [シンガポールの GST-05 レポートの生成](../../financials/localizations/apac-sgp-generate-gst-05-report.md)
 
-### <a name="spain"></a>スペイン
-
--   [スペインの受取手形オプション](../../financials/localizations/emea-esp-bill-of-exchange-options.md)
--   [請求書パラメーターに現金割引を適用](../../financials/localizations/emea-esp-cash-discount-applied-invoice.md)
--   [条件付売上税](../../financials/localizations/emea-esp-conditional-sales-tax.md)
--   [固定資産の再評価グループ](../../financials/localizations/emea-esp-fixed-asset-group-revaluation.md)
--   [EU 内 VAT](../../financials/localizations/emea-esp-intra-community-vat.md)
--   [一時顧客](../../financials/localizations/emea-esp-no-one-time-customer-for-project-contracts.md)
--   [スペインのレイアウトを使用して小切手を印刷](../../financials/localizations/emea-esp-print-checks-with-spanish-layout.md)
--   [スペインの支払手形のオプション](../../financials/localizations/emea-esp-promissory-note-options.md)
--   [販売および購買サイクル](../../financials/localizations/emea-esp-sales-purchase-cycle.md)
--   [特殊エントリと期首表](../../financials/localizations/emea-esp-opening-sheets-spain.md)
--   [請求先/元 ID の会計データの使用](../../financials/localizations/emea-esp-fiscal-data-invoice-account.md)
-
-### <a name="sweden"></a>スウェーデン
-
--   [スウェーデンの支払インポート形式](../../financials/localizations/emea-swe-payment-formats-import.md)
--   [スウェーデンのキャッシュ レジスター](../../retail/localizations/emea-swe-cash-registers.md)
-
-### <a name="switzerland"></a>スイス
-
--   [ESR 顧客支払のインポート](../../financials/localizations/emea-che-esr-customer-payments-import.md)
-
+### <a name="spainfinancialslocalizationsspainmd"></a>[スペイン](../../financials/localizations/spain.md)
+### <a name="swedenfinancialslocalizationsswedenmd"></a>[スウェーデン](../../financials/localizations/sweden.md)
+### <a name="switzerlandfinancialslocalizationsswitzerlandmd"></a>[スイス](../../financials/localizations/switzerland.md)
 ### <a name="thailand"></a>タイ
 
 -   [在庫カード レポート](../../financials/localizations/apac-tha-stock-card-reports.md)
@@ -303,10 +217,7 @@ Microsoft Dynamics 365 for Finance and Operations には、[製品のローカ�
 -   [未実現 VAT](../../financials/localizations/apac-tha-unrealized-vat.md)
 -   [源泉徴収税](../../financials/localizations/apac-tha-withholding-tax.md)
 
-### <a name="united-kingdom"></a>英国
-
--   [英国用の建築業スキーム](../../financials/localizations/emea-gbr-cis-construction-industry-scheme.md)
-
+### <a name="united-kingdomfinancialslocalizationsunited-kingdommd"></a>[英国](../../financials/localizations/united-kingdom.md)
 ### <a name="united-states"></a>米国
 
 -   [公的機関のフォーム 1099](../../financials/localizations/noam-usa-form-1099-public-sector.md)   

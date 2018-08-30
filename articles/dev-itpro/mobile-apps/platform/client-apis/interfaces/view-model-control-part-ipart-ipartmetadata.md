@@ -1,5 +1,5 @@
 ---
-title: PartMetadata
+title: "PartMetadata タイプ"
 description: "パーツ メタデータ タイプ。"
 author: shadykdc
 manager: AnnBe
@@ -16,10 +16,10 @@ ms.author: kashea
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 3227526c4c0beff8b9cfe50d460c4a33da61c68c
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 020ce3277b756f2adc185bdf7b1b0652bbd5c3d6
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "テーブルへの新しいインデックスの追加"
+title: "拡張機能を使用してテーブルにインデックスを追加"
 description: "このトピックでは、テーブルにインデックスを追加する方法について説明します。"
 author: ivanv-microsoft
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: ivanv
 ms.search.validFrom: 2017-06-01
 ms.dyn365.ops.version: Platform update 4
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 6acc04a6d3f98c60fd5ecf3de6fab95c7a132d6d
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 3dab4107711edd95859b694c22085d4464811914
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="add-a-new-index-to-a-table"></a>テーブルへの新しいインデックスの追加
+# <a name="add-indexes-to-tables-through-extension"></a>拡張機能を使用してテーブルにインデックスを追加
 
 [!include [banner](../includes/banner.md)]
 

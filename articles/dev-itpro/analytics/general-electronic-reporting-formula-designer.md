@@ -1,5 +1,5 @@
 ---
-title: "電子申告のフォーミュラ デザイナー"
+title: "電子申告 (ER) のフォーミュラ デザイナー"
 description: "このトピックでは、電子申告 (ER) でのフォーミュラ デザイナーの使用方法を説明します。"
 author: NickSelin
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2fc887668171175d436b9eb281a35c1c9d089591
-ms.openlocfilehash: 8d8ab61b7aea84332120e6de9fc29a2a4c9598ca
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: d3ac6ea7b104428f364385e1fd3ed221cae8498d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="formula-designer-in-electronic-reporting"></a>電子申告のフォーミュラ デザイナー
+# <a name="formula-designer-in-electronic-reporting-er"></a>電子申告 (ER) のフォーミュラ デザイナー
 
 [!include [banner](../includes/banner.md)]
 
@@ -385,7 +385,7 @@ SELECT ... FROM CUSTINVOICETABLE T1 CROSS JOIN CUSTINVOICEJOUR T2 CROSS JOIN CUS
 <p><a href="./media/ger-listoffields-function-format-design.png"><img src="./media/ger-listoffields-function-format-design.png" alt="Format design" class="alignnone size-full wp-image-1204043" width="466" height="221" /></a></p>
 <p>次の図は、設計された形式が実行される際の結果を示します。</p>
 <p><a href="./media/ger-listoffields-function-format-output.png"><img src="./media/ger-listoffields-function-format-output.png" alt="Format output" class="alignnone size-full wp-image-1204053" width="585" height="158" /></a></p>
-<blockquote>[!NOTE]<br>親ファイルおよびフォルダー形式要素の言語設定に基づいて、ラベルと説明の翻訳文は、ER 形式出力に入力されます。</blockquote>
+<blockquote>[!NOTE] 親ファイルおよびフォルダー形式要素の言語設定に基づいて、ラベルと説明の翻訳文は、ER 形式出力に入力されます。</blockquote>
 </td>
 </tr>
 <tr>
@@ -426,7 +426,7 @@ SELECT ... FROM CUSTINVOICETABLE T1 CROSS JOIN CUSTINVOICEJOUR T2 CROSS JOIN CUS
 <p><a href="./media/ger-splitlistbylimit-datasources-1.png"><img src="./media/ger-splitlistbylimit-datasources-1.png" alt="Data sources for the adjusted format" class="alignnone size-full wp-image-1204093" width="645" height="507" /></a></p>
 <p>次の図は、調整された形式が実行される際の結果を示します。</p>
 <p><a href="./media/ger-splitlistbylimit-output-1.png"><img src="./media/ger-splitlistbylimit-output-1.png" alt="Output of the adjusted format" class="alignnone size-full wp-image-1204113" width="676" height="611" /></a></p>
-<blockquote>[!NOTE]<br>制限は、制限のソース (重量) の値 (11) が定義済みの制限 (9) を超えるため、元のリストの最後の項目に適用されません。 <strong>WHERE</strong> 関数または対応する形式の要素の <strong>有効</strong> 式を使用して、レポート生成時にサブリストを無視 (スキップ) できます。</blockquote>
+<blockquote>[!NOTE] 制限は、制限のソース (重量) の値 (11) が定義済みの制限 (9) を超えるため、元のリストの最後の項目に適用されません。 <strong>WHERE</strong> 関数または対応する形式の要素の <strong>有効</strong> 式を使用して、レポート生成時にサブリストを無視 (スキップ) できます。</blockquote>
 </td>
 </tr>
 <tr>
@@ -456,8 +456,8 @@ SELECT ... FROM CUSTINVOICETABLE T1 CROSS JOIN CUSTINVOICEJOUR T2 CROSS JOIN CUS
 | NUMBERVALUE (文字列、小数点記号、桁区切り記号) | 指定された文字列を数字に変換します。 指定した小数点記号は、整数と小数点以下の数の間で使用されます。 指定した桁区切り記号は千の位の区切り記号として使用されます。 | **NUMBERVALUE("1 234,56", ",", " ")** は、**1234.56** の値を返します。 |
 | VALUE (文字列) | 指定された文字列を数字に変換します。 コンマとドット (.) が小数点の区切り記号とみなされ、先頭のハイフン (-) は負の記号として使用されます。 他の数値以外の文字が指定された文字列に含まれている場合、例外をスローします。 | **VALUE ("1 234,56")** は例外をスローします。 |
 | ROUND (数値, 小数点以下の桁数) | 指定された小数点以下の桁数に丸めてから、指定された数値を返します。<ul><li>**小数点以下**パラメーターの値が 0 (ゼロ) より大きい場合、指定された数字は小数点以下の桁数で四捨五入されます。</li><li>**小数点以下**パラメーターの値が **0** (ゼロ) の場合、指定された数字は最も近い整数に四捨五入されます。</li><li>**小数点以下**パラメーターの値が 0 (ゼロ) より小さい場合、指定された数字は小数点より左で四捨五入されます。</li></ul> | **ROUND (1200.767, 2)** は、小数点第 2 位で四捨五入され、**1200.77** を返します。 **ROUND (1200.767, -3)** は、1,000 の最も近い倍数に四捨五入され、**1000** を返します。 |
-| ROUNDDOWN (数値, 小数点以下の桁数) | 指定された小数点以下の桁数に丸めてから、指定された数値を返します。<blockquote>[!NOTE]<br>この関数は、**ROUND** のように機能しますが、常に指定した数字を (ゼロ方向に) 切り捨てます。</blockquote> | **ROUNDDOWN (1200.767, 2)** は、小数点第 2 位で切り捨てられ、**1200.76** を返します。 **ROUNDDOWN (1700.767, -3)** は、1,000 の最も近い倍数に切り捨てられ、**1000** を返します。 |
-| ROUNDUP (数値, 小数点以下の桁数) | 指定された小数点以下の桁数に丸めてから、指定された数値を返します。<blockquote>[!NOTE]<br>この関数は、**ROUND** のように機能しますが、常に指定した数字を (ゼロとは逆方向に) 切り上げます。</blockquote> | **ROUNDUP (1200.763, 2)** は、小数点第 2 位で切り上げられ、**1200.77** を返します。 **ROUNDUP (1200.767, -3)** は、1,000 の最も近い倍数に切り上げられ、**2000** を返します。 |
+| ROUNDDOWN (数値, 小数点以下の桁数) | 指定された小数点以下の桁数に丸めてから、指定された数値を返します。<blockquote>[!NOTE] この関数は、**ROUND** のように機能しますが、常に指定した数字を (ゼロ方向に) 切り捨てます。</blockquote> | **ROUNDDOWN (1200.767, 2)** は、小数点第 2 位で切り捨てられ、**1200.76** を返します。 **ROUNDDOWN (1700.767, -3)** は、1,000 の最も近い倍数に切り捨てられ、**1000** を返します。 |
+| ROUNDUP (数値, 小数点以下の桁数) | 指定された小数点以下の桁数に丸めてから、指定された数値を返します。<blockquote>[!NOTE] この関数は、**ROUND** のように機能しますが、常に指定した数字を (ゼロとは逆方向に) 切り上げます。</blockquote> | **ROUNDUP (1200.763, 2)** は、小数点第 2 位で切り上げられ、**1200.77** を返します。 **ROUNDUP (1200.767, -3)** は、1,000 の最も近い倍数に切り上げられ、**2000** を返します。 |
 
 ### <a name="data-conversion-functions"></a>データ変換機能
 
@@ -474,8 +474,8 @@ SELECT ... FROM CUSTINVOICETABLE T1 CROSS JOIN CUSTINVOICEJOUR T2 CROSS JOIN CUS
 
 | 職務 | 説明 | 例 |
 |----------|-------------|---------|
-| NULLCONTAINER (リスト) | 指定されたレコード リストまたはレコードと同じ構造を持つ **null** レコードを返します。<blockquote>[!NOTE]<br>この関数は廃止されています。 代わりに **EMPTYRECORD** を使用します。</blockquote> | **NULLCONTAINER (SPLIT ("abc", 1))** は、**SPLIT** 関数で返ってきたリストと同じ構造を持つ新しい空のレコードを返します。 |
-| EMPTYRECORD (レコード) | 指定されたレコード リストまたはレコードと同じ構造を持つ **null** レコードを返します。<blockquote>[!NOTE]<br>**null** レコードは、すべてのフィールドが空の値があるレコードです。 空の値が数字の場合は **0** (ゼロ)、文字列の場合、空の文字列などです。</blockquote> | **EMPTYRECORD (SPLIT ("abc", 1))** は、**SPLIT** 関数で返ってきたリストと同じ構造を持つ新しい空のレコードを返します。 |
+| NULLCONTAINER (リスト) | 指定されたレコード リストまたはレコードと同じ構造を持つ **null** レコードを返します。<blockquote>[!NOTE] この関数は廃止されています。 代わりに **EMPTYRECORD** を使用します。</blockquote> | **NULLCONTAINER (SPLIT ("abc", 1))** は、**SPLIT** 関数で返ってきたリストと同じ構造を持つ新しい空のレコードを返します。 |
+| EMPTYRECORD (レコード) | 指定されたレコード リストまたはレコードと同じ構造を持つ **null** レコードを返します。<blockquote>[!NOTE] **null** レコードは、すべてのフィールドが空の値があるレコードです。 空の値が数字の場合は **0** (ゼロ)、文字列の場合、空の文字列などです。</blockquote> | **EMPTYRECORD (SPLIT ("abc", 1))** は、**SPLIT** 関数で返ってきたリストと同じ構造を持つ新しい空のレコードを返します。 |
 
 ### <a name="text-functions"></a>テキスト関数
 
@@ -522,14 +522,14 @@ SELECT ... FROM CUSTINVOICETABLE T1 CROSS JOIN CUSTINVOICEJOUR T2 CROSS JOIN CUS
 <td>CHAR (数値)</td>
 <td>指定された Unicode 番号で参照される文字列を返します。</td>
 <td><strong>CHAR (255)</strong> は、<strong>&quot;ÿ&quot;</strong> を返します。
-<blockquote>[!NOTE]<br>この機能を返す文字列は、親ファイル形式の要素で選択したエンコードによって異なります。 サポートされているエンコードの一覧については、<a href="https://msdn.microsoft.com/en-us/library/system.text.encoding(v=vs.110).aspx">クラスをエンコード</a> で参照できます。</blockquote>
+<blockquote>[!NOTE] この機能を返す文字列は、親ファイル形式の要素で選択したエンコードによって異なります。 サポートされているエンコードの一覧については、<a href="https://msdn.microsoft.com/en-us/library/system.text.encoding(v=vs.110).aspx">クラスをエンコード</a> で参照できます。</blockquote>
 </td>
 </tr>
 <tr>
 <td>CONCATENATE (文字列 1 [, 文字列 2, …])</td>
 <td>指定されたすべての文字列を 1 つの文字列に結合してから、そのすべての文字列を返します。</td>
 <td><strong>CONCATENATE (&quot;abc&quot;, &quot;def&quot;)</strong> は、<strong>&quot;abcdef&quot;</strong> を返します。
-<blockquote>[!NOTE]<br>式 <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> でも <strong>&quot;abcdef&quot;</strong> を返します。</blockquote>
+<blockquote>[!NOTE] 式 <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> でも <strong>&quot;abcdef&quot;</strong> を返します。</blockquote>
 </td>
 </tr>
 <tr>
@@ -571,7 +571,7 @@ SELECT ... FROM CUSTINVOICETABLE T1 CROSS JOIN CUSTINVOICEJOUR T2 CROSS JOIN CUS
 <p>&quot;印刷対象なし。 顧客の Litware Retail は 2015 年 12 月 17 日に停止されます。&quot;</p>
 <p>同じレポートが 2015 年 12 月 17 日に <strong>DE</strong> カルチャおよび <strong>DE</strong> 言語で <strong>Litware Retail</strong> の顧客に対して処理される場合、この式は別の日付形式を使用する次のテキストを返します。</p>
 <p>&quot;Nichts zu drucken。 顧客の Litware Retail は 2015 年 12 月 17 日に停止されます。&quot;</p>
-<blockquote>[!NOTE]<br>次の構文は ER の式でラベルに適用されます。
+<blockquote>[!NOTE] 次の構文は ER の式でラベルに適用されます。
 <ul>
 <li><strong>Finance and Operations リソースのラベルの場合: </strong><strong>@&quot;X&quot;</strong>、X はアプリケーション オブジェクト ツリー (AOT) のラベル ID です</li>
 <li><strong>ER コンフィギュレーションに存在するラベルの場合: </strong><strong>@&quot;GER_LABEL:X&quot;</strong>、X は、ER コンフィギュレーションのラベル ID です</li>
@@ -587,7 +587,7 @@ SELECT ... FROM CUSTINVOICETABLE T1 CROSS JOIN CUSTINVOICEJOUR T2 CROSS JOIN CUS
 <tr>
 <td>NUMERALSTOTEXT (数, 言語, 通貨, 通貨名を印刷フラグ, 小数点)</td>
 <td>特定の言語で綴られた (文字列に変換された) 後に、指定の数字を返します。 言語コードはオプションです。 空の文字列として定義されている場合、実行中のコンテキストの言語コードが使用されます。 (実行中のコンテキストの言語コードは生成するフォルダーまたはファイルを定義します)。通貨コードは、オプションもあります。 空の文字列として定義されている場合、会社基本通貨が使用されます。
-<blockquote>[!NOTE]<br><strong>通貨名を印刷 フラグ</strong>および<strong>小数点パラメーター</strong>は、次の言語コードに対してのみ分析されることに注意してください: <strong>CS</strong>、<strong>ET</strong>、<strong>HU</strong>、<strong>LT</strong>、<strong>LV</strong>、<strong>PL</strong>、<strong>RU</strong>。 また、<strong>通貨名を印刷 フラグ</strong> パラメーターは、通貨名の語形変化をサポートする国または地域のコンテキストを持つ Finance and Operations の会社に対してのみ分析されることに注意してください。</blockquote>
+<blockquote>[!NOTE] <strong>通貨名を印刷 フラグ</strong>および<strong>小数点パラメーター</strong>は、次の言語コードに対してのみ分析されることに注意してください: <strong>CS</strong>、<strong>ET</strong>、<strong>HU</strong>、<strong>LT</strong>、<strong>LV</strong>、<strong>PL</strong>、<strong>RU</strong>。 また、<strong>通貨名を印刷 フラグ</strong> パラメーターは、通貨名の語形変化をサポートする国または地域のコンテキストを持つ Finance and Operations の会社に対してのみ分析されることに注意してください。</blockquote>
 </td>
 <td><strong>NUMERALSTOTEXT (1234.56, &quot;EN&quot;, &quot;&quot;, false, 2)</strong> は、<strong>&quot;One Thousand Two Hundred Thirty Four and 56&quot;</strong> を返します。 <strong>NUMERALSTOTEXT (120, &quot;PL&quot;, &quot;&quot;, false, 0)</strong> は、 <strong>&quot;Sto dwadzieścia&quot;</strong> を返します。 <strong>NUMERALSTOTEXT (120.21, &quot;RU&quot;, &quot;EUR&quot;, true, 2)</strong> は、<strong>&quot;Сто двадцать евро 21 евроцент&quot;</strong>を返します。</td>
 </tr>
@@ -656,10 +656,10 @@ SELECT ... FROM CUSTINVOICETABLE T1 CROSS JOIN CUSTINVOICEJOUR T2 CROSS JOIN CUS
 | 職務 | 説明 | 例 |
 |----------|-------------|---------|
 | CONVERTCURRENCY (数量, 換算元の通貨, 換算先の通貨, 日付, 会社) | 特定の日付で指定された Finance and Operations の会社の設定を使用して、指定された換算元の通貨から指定された換算先の通貨に指定された金額を変換します。 | **CONVERTCURRENCY (1, "EUR", "USD", TODAY(), "DEMF")** は、DEMF 会社の設定に基づいて現在のセッションの日付の 1 ユーロに相当する額を米ドルで返します。 |
-| ROUNDAMOUNT (数値, 小数点以下の桁数, 丸めルール) | 指定された丸めルールに従って、指定された数量の小数点以下の桁数を丸めます。<blockquote>[!NOTE]<br>丸めルールは Finance and Operations の **RoundOffType** 列挙の値として指定する必要があります。</blockquote> | **model.RoundOff** パラメーターが **切り捨て** に設定されている場合、 **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** は、値 **1000.78** を返します。 **model.RoundOff** パラメータが**標準**または**切り上げ**に設定されている場合、**ROUNDAMOUNT (1000.787, 2, model.RoundOff)** は、値 **1000.79** を返します。 |
+| ROUNDAMOUNT (数値, 小数点以下の桁数, 丸めルール) | 指定された丸めルールに従って、指定された数量の小数点以下の桁数を丸めます。<blockquote>[!NOTE] 丸めルールは Finance and Operations の **RoundOffType** 列挙の値として指定する必要があります。</blockquote> | **model.RoundOff** パラメーターが **切り捨て** に設定されている場合、 **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** は、値 **1000.78** を返します。 **model.RoundOff** パラメータが**標準**または**切り上げ**に設定されている場合、**ROUNDAMOUNT (1000.787, 2, model.RoundOff)** は、値 **1000.79** を返します。 |
 | CURCredRef (数字) | 指定された請求書番号の数字に基づいて、送金受取人参照情報を返します。 | **CURCredRef ("VEND-200002")** は、**"2200002"** を返します。 |
 | MOD\_97 (数字) | 指定された請求書番号の数字に基づいて、MOD97 式として送金受取人参照情報を返します。 | **MOD\_97 ("VEND-200002")** は、**"20000285"** を返します。 |
-| ISOCredRef (数字) | 指定された請求書番号の数字とアルファベット記号に基づいて、国際標準化機構 (ISO) 送金受取人参照情報を返します。<blockquote>[!NOTE]<br>ISO 準拠ではないアルファベットの記号を削除するには、入力パラメータを変換してからこの関数に渡す必要があります。</blockquote> | **ISOCredRef ("VEND-200002")** は、**"RF23VEND-200002"** を返します。 |
+| ISOCredRef (数字) | 指定された請求書番号の数字とアルファベット記号に基づいて、国際標準化機構 (ISO) 送金受取人参照情報を返します。<blockquote>[!NOTE] ISO 準拠ではないアルファベットの記号を削除するには、入力パラメータを変換してからこの関数に渡す必要があります。</blockquote> | **ISOCredRef ("VEND-200002")** は、**"RF23VEND-200002"** を返します。 |
 | CN\_GBT\_AdditionalDimensionID (文字列, 番号) | 指定した追加の財務分析コード ID を取得します。 **文字列**パラメーターでは、分析コードはコンマで区切られた ID としてこの文字列に表されます。 **番号**パラメーターは、文字列で要求された分析コードの順序コードを定義します。 | **CN\_GBT\_AdditionalDimensionID ("AA,BB,CC,DD,EE,FF,GG,HH",3)** は、**CC** を返します。 |
 | GetCurrentCompany () | 現在ユーザーがサインインしている法人 (会社) のコードのテキスト表現を返します。 | **GETCURRENTCOMPANY ()** は、Finance and Operations の会社 **Contoso Entertainment System USA** にサインインしているユーザーに対する **USMF** を返します。 |
 | CH\_BANK\_MOD\_10 (数値) | 指定された請求書番号の数字に基づいて、MOD10 式として送金受取人参照情報を返します。 | **CH\_BANK\_MOD\_10 ("VEND-200002")** は、**3** を返します。 |

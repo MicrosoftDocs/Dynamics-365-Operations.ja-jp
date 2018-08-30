@@ -1,5 +1,5 @@
 ---
-title: "共有環境における Retail Cloud POS のセキュリティのベスト プラクティス"
+title: "共有環境におけるクラウド POS のセキュリティ ベスト プラクティス"
 description: "Retail Cloud POS は、ブラウザーのコンテキストで動作する Web アプリケーションです。 このトピックでは、共有環境で Retail Cloud POS をセキュリティ保護するための推奨事項について説明します。"
 author: pdp1207
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: prabhup
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 8383c68c60b3875398570ce30e1917971db98940
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: ee7e400ea5878ceb1cc84b10c87d0baf3ae4ec90
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="security-best-practices-for-retail-cloud-pos-in-a-shared-environment"></a>共有環境における Retail Cloud POS のセキュリティのベスト プラクティス
+# <a name="security-best-practices-for-cloud-pos-in-shared-environments"></a>共有環境におけるクラウド POS のセキュリティ ベスト プラクティス
 
 [!include [banner](../includes/banner.md)]
 

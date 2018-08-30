@@ -17,15 +17,15 @@ ms.author: mumani
 ms.search.validFrom: 2017-09-15
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: d1344d730d917e7e526ffdb0d8d3a2c765700c68
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 1b92379157d9d72ac9f5cb162c640e8b5c2adbb1
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
 
-# <a name="add-a-custom-control-to-a-pos-view"></a>POS ビューへのカスタム コントロールの追加
+# <a name="add-custom-controls-to-pos-views"></a>POS ビューへのカスタム コントロールの追加
 
 [!include [banner](../../includes/banner.md)]
 

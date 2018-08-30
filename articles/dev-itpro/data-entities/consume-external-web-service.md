@@ -1,5 +1,5 @@
 ---
-title: "外部 Web サービスの使用"
+title: "Finance and Operations における外部 Web サービスの使用"
 description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations で外部 Web サービスを使用する方法について説明します。"
 author: Sunil-Garg
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: cbe4d0676144f15f92604634d9cb81227971f51c
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: a1c33f794c4be99f421ac4c4a43cbc45f1e4cd6e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="consuming-external-web-services-from-microsoft-dynamics-365-for-finance-and-operations"></a>Microsoft Dynamics 365 for Finance and Operations の外部 Web サービスを消費する
+# <a name="consume-external-web-services-in-finance-and-operations"></a>Finance and Operations における外部 Web サービスの使用
 
 [!include [banner](../includes/banner.md)]
 

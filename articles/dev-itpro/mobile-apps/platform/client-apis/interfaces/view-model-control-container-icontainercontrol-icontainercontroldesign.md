@@ -1,5 +1,5 @@
 ---
-title: ContainerControlDesign
+title: "ContainerControlDesign タイプ"
 description: "コンテナー コントロール デザイン オブジェクトには、すべてのコンテナー コントロール固有のプロパティがあります。"
 author: shadykdc
 manager: AnnBe
@@ -16,10 +16,10 @@ ms.author: kashea
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: d98d396048fa3a4ab47527dcbacfebe972ed5caa
+ms.sourcegitcommit: ed6cabcc8c76fba3d4414cd4b564b720c54169e0
+ms.openlocfilehash: 0cc69c3cd82949f74f5d3f16126a0b36f8f671c0
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 

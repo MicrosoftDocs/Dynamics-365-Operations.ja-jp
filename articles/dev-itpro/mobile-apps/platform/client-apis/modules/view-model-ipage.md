@@ -1,5 +1,5 @@
 ---
-title: "ページ"
+title: "ページ モジュール"
 description: "IPage インターフェイスは、さまざまなプロパティ、ライフ サイクル、およびワークスペース内のページに関連付けられているイベント フックをカプセル化します。"
 author: shadykdc
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.author: kashea
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 6045f26647f05a8bc82a44c0317fb335c3456255
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 62aef0d08536df4b966e6e0c43c981d930d5d78e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="page"></a>ページ 
+# <a name="page-module"></a>ページ モジュール
 
 [!include [banner](../../../../includes/banner.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Dynamics AX 2012 を使用して個人データ要求に対応"
+title: "AX 2012 での個人データ要求に対応"
 description: "このトピックは、Microsoft Dynamics AX 2012 を使用する企業、実装パートナー、および独立系ソフトウェア ベンダー (ISV) が、EUデータ保護規則 (GDPR) の下にある個人データに関する、データ主体からの要求に適合するのに役立つことができます。"
 author: ryanc
 manager: AnnBe
@@ -17,15 +17,15 @@ ms.author: ryanc
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f2e3a40f58b57785079e1940b2d24a3598a3ad1b
-ms.openlocfilehash: 08af1e8565f8bb794be976cc680287dd737ab234
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: d72803e0ff4e8e18518879c53324b2abefe4bb78
 ms.contentlocale: ja-jp
-ms.lasthandoff: 07/09/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
 
-# <a name="respond-to-a-request-for-personal-data-using-microsoft-dynamics-ax-2012"></a>Microsoft Dynamics AX 2012 を使用して個人データ要求に対応
+# <a name="respond-to-requests-for-personal-data-in-ax-2012"></a>AX 2012 での個人データ要求に対応
 
 [!include [banner](../includes/banner.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: "Talent を使用して個人データ要求に対応"
+title: "Talent での個人データ要求に対応"
 description: "このトピックでは、データ コントローラとして Microsoft Dynamics 365 for Talent をデータ プロセッサとして使用して、欧州連合のGDPR (General Data Protection Regulation) に基づくデータ要求に対応する方法について説明します。"
 author: shielasogge
 manager: AnnBe
@@ -17,15 +17,15 @@ ms.author: shielas
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 8199da634e961fe1508fcfc735796f882cb0c24a
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 0b10765f7517c183745decf3e1d676487621b563
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
 
-# <a name="respond-to-a-request-for-personal-data-using-talent"></a>Talent を使用して個人データ要求に対応
+# <a name="respond-to-requests-for-personal-data-in-talent"></a>Talent での個人データ要求に対応
 
 [!include [banner](../includes/banner.md)]
 

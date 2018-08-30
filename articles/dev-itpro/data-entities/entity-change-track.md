@@ -1,5 +1,5 @@
 ---
-title: "エンティティの変更追跡を有効化"
+title: "エンティティへの変更追跡の有効化"
 description: "変更追跡を使用して、Microsoft Dynamics 365 for Finance and Operations のデータを差分エクスポートできます。"
 author: Milindav2
 manager: AnnBe
@@ -18,13 +18,13 @@ ms.author: milindav
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: c2238521ad8a62d494425159ad19eb77740ac1f2
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 72fbe371ccf1bbfd50aed19065c333b54d216b75
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="enable-change-tracking-for-an-entity-by-using-a-custom-query"></a>カスタム クエリを使用してエンティティの変更追跡を有効化
+# <a name="enable-change-tracking-for-entities"></a>エンティティへの変更追跡の有効化
 
 [!include [banner](../includes/banner.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: "ディープ リンクの作成と使用"
+title: "共有可能かつセキュリティで保護された、URL (ディープ リンク ) を作成"
 description: "フォームおよびレコードへの共有可能かつセキュリティで保護された URL を作成する方法について説明します。"
 author: RobinARH
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: shshabazz
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f2e3a40f58b57785079e1940b2d24a3598a3ad1b
-ms.openlocfilehash: 08e7caaec09372bb05369746b937d80f496eddf6
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 0c4ff53598a5968c59c0da627420cdc35cb63bbd
 ms.contentlocale: ja-jp
-ms.lasthandoff: 07/09/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="create-and-use-deep-links"></a>ディープ リンクの作成と使用
+# <a name="create-shareable-secured-urls-deep-links"></a>共有可能かつセキュリティで保護された、URL (ディープ リンク ) を作成
 
 [!include [banner](../includes/banner.md)]
 

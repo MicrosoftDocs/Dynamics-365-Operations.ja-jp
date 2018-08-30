@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Dynamics 365 翻訳サービス - ドキュメント ファイルの翻訳"
+title: "ドキュメント ファイルを翻訳します"
 description: "このトピックでは、Microsoft Dynamics 製品またはソリューションのドキュメント ファイルを翻訳する方法について説明します。"
 author: kfend
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: ejchoGIT
 ms.search.validFrom: 2018-03-27
 ms.dyn365.ops.version: AX 7.3.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: addcca4f3b21f4a8a8d8526f4ec621e9759874e3
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: ae1c4fa5e3eb8ed3224d2dbd8c6ccc0d1d553b90
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="microsoft-dynamics-365-translation-service---documentation-file-translation"></a>Microsoft Dynamics 365 翻訳サービス - ドキュメント ファイルの翻訳
+# <a name="translate-documentation-files"></a>ドキュメント ファイルを翻訳します
 
 [!include [banner](../includes/banner.md)]
 

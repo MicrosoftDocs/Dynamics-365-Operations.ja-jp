@@ -1,5 +1,5 @@
 ---
-title: "繰延"
+title: "繰延タイプ<T>"
 description: "繰延タイプ"
 author: shadykdc
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.author: kashea
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 0455b7c26264cfaa1ff9c30d5dffd0dc489b899e
+ms.sourcegitcommit: ed6cabcc8c76fba3d4414cd4b564b720c54169e0
+ms.openlocfilehash: 1c654bc705bfc5a45e38a255e2ffb567c9e4186b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="deferred-typelttgt"></a>延期されたタイプ &lt;T&gt;
+# <a name="deferred-typelttgt"></a>延期されたタイプ&lt;T&gt;
 
 [!include [banner](../../../../includes/banner.md)]
 

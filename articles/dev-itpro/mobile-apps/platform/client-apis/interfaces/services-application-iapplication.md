@@ -1,5 +1,5 @@
 ---
-title: "申請"
+title: "アプリケーション タイプ"
 description: "アプリケーションの実行時のインスタンスを表します。"
 author: shadykdc
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.author: kashea
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: d0d2d60c033ff5cdd0a17b6b2aa476c170e388c3
+ms.sourcegitcommit: ed6cabcc8c76fba3d4414cd4b564b720c54169e0
+ms.openlocfilehash: 59488795669b288e542234e012e242d7e9436fcc
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="application-type"></a>Application タイプ
+# <a name="application-type"></a>アプリケーション タイプ
 
 [!include [banner](../../../../includes/banner.md)]
 

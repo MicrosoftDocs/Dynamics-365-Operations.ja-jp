@@ -1,5 +1,5 @@
 ---
-title: "小売チャンネル通信 (Commerce Data Exchange) の定義"
+title: "Commerce Data Exchange と小売チャネル通信"
 description: "このトピックでは、Commerce Data Exchange とそのコンポーネントの概要を示します。 ここでは、Microsoft Dynamics 365 for Retail と小売チャンネルとの間でのデータの転送で各コンポーネントが果たす役割について説明します。"
 author: athinesh99
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.author: athinesh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 29fbc3c844356df0bc415147168ee75c86b6a1f6
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 35540a70b48d7d25e2e8ae11fcd243628c95523a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="define-retail-channel-communications-commerce-data-exchange"></a>小売チャンネル通信 (Commerce Data Exchange) の定義
+# <a name="commerce-data-exchange-and-retail-channel-communications"></a>Commerce Data Exchange と小売チャネル通信
 
 [!include [banner](../includes/banner.md)]
 

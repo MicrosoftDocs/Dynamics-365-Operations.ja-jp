@@ -18,10 +18,10 @@ ms.author: sarvanis
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 4d0942d574b34a656380f9ee2be3377da25bd89c
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 3e29c8d68784bd1760bf2c94c7a906797ad4fa3c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
@@ -200,7 +200,7 @@ Service Fabric クラスターと展開されているすべてのアプリケ�
 | 目的                                      | 説明 | 追加条件 |
 |----------------------------------------------|-------------|-------------------------|
 | SQL Server SSL 証明書                   | この証明書は、ネットワーク上の SQL Server インスタンスとクライアント アプリケーションの間で転送されるデータを暗号化するために使用されます。 | 証明書の場合、ドメイン名は、SQL Server のインスタンスまたはリスナーの完全修飾ドメイン名 (FQDN) と一致する必要があります。 たとえば、SQL のリスナーが DAX7SQLAOSQLA のコンピューターにホストされている場合、証明書の DNS 名は、DAX7SQLAOSQLA.onprem.contoso.com です。 |
-| Service Fabric Server 証明書            | <p>この証明書を使用して、Service Fabric ノード間のノードからノードの通信を保護します。</p> <p> この証明書は、クラスターに接続するクライアントに提示されるサーバー証明書としても使用されます。</p> | ドメインの SSL ワイルドカード証明書を使用することができます。 たとえば、\*. contoso.com。**注記:** ワイルドカード証明書は、発行先となるドメインの最初のレベル サブドメインのみをセキュリティ保護できるようにします。<p>この例では、Service Fabric ドメインが sf.d365ffo.onprem.contoso.com であるため、証明書にサブジェクト代替名 (SAN) としてこれを含める必要があります。 証明機関と連携して、追加の SAN を取得する必要があります。</p> |
+| Service Fabric Server 証明書            | <p>この証明書を使用して、Service Fabric ノード間のノードからノードの通信を保護します。</p> <p> この証明書は、クラスターに接続するクライアントに提示されるサーバー証明書としても使用されます。</p> | ドメインの SSL ワイルドカード証明書を使用することができます。 たとえば、\*.contoso.com です。 **注記:** ワイルド カード証明書は、発行先となるドメインの最初のレベル サブドメインのみをセキュリティ保護できるようにします。<p>この例では、Service Fabric ドメインが sf.d365ffo.onprem.contoso.com であるため、証明書にサブジェクト代替名 (SAN) としてこれを含める必要があります。 証明機関と連携して、追加の SAN を取得する必要があります。</p> |
 | Service Fabric Client 証明書            | この証明書は、クライアントによって Service Fabric クラスターを表示および管理するために使用されます。 | |
 | 証明書の暗号化                     | この証明書は、SQL Server パスワードとユーザー アカウントのパスワードなどの重要な情報を暗号化するために使用されます。  | <p> 証明書は、プロバイダー **Microsoft Enhanced Cryptographic Provider v1.0** を使用して作成する必要があります。 </p><p>証明書キーの使用にはデータ暗号化 (10) が含まれている必要があり、サーバー認証またはクライアント認証は含めないでください。</p><p>詳細については、[Service Fabric アプリケーションでの機密情報の管理](/azure/service-fabric/service-fabric-application-secret-management) を参照してください。</p> |
 | AOS SSL 証明書                          | <p>この証明書は、AOS Web サイトに接続するクライアントに提示されるサーバー証明書としても使用されます。 また、WCF (Windows Communication Foundation) / SOAP (Simple Object Access Protocol) 証明書を有効にするためにも使用されます。</p><p>Service Fabric サーバー証明書として使用するのと同じワイルドカード証明書を使用することができます。</p> | <p>この例では、ドメイン名 ax.d365ffo.onprem.contoso.com を、Service Fabric Server 証明書としてサブジェクト代替名 (SAN) に追加する必要があります。</p> |
@@ -791,7 +791,7 @@ URL に正常にアクセスすると、AD FS コンフィギュレーション�
 
 展開に失敗した場合、LCS のお客様の環境では、**再設定**ボタンは利用可能になります。 基になる問題を修正し、**再コンフィギュレーション**をクリックして、任意のコンフィギュレーションの変更を更新し、**配置**をクリックして配置を再試行します。
 
-### <a name="connect"></a> 22. Finance and Operations (オンプレミス) 環境に接続する
+### <a name="connect"></a> 21. Finance and Operations (オンプレミス) 環境に接続する
 
 ブラウザーで、https://[yourD365FOdomain]/namespaces/AXSF に移動し、そこでは yourD365FOdomain がこのドキュメントの[ドメイン名と DNS ゾーンの計画](#plandomain)セクションで定義したドメイン名です。
 

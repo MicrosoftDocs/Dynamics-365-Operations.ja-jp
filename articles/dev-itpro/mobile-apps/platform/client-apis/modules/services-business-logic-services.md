@@ -1,5 +1,5 @@
 ---
-title: "サービス"
+title: "サービス モジュール"
 description: "クライアントの実行時に、アプリケーションで使用できるさまざまなサービス。"
 author: shadykdc
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.author: kashea
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 647eb65427b515d9d88b28e4877384d843f7da22
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 8a19ede998e8e4b30faef73ff401855dc5ae0e44
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="services"></a>サービス 
+# <a name="services-module"></a>サービス モジュール
 
 [!include [banner](../../../../includes/banner.md)]
 

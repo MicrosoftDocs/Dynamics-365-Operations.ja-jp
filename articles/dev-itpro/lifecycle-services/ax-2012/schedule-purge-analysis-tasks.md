@@ -1,5 +1,5 @@
 ---
-title: "Intelligent Data Management Framework の削除および分析タスクのスケジュール (AX 2012)"
+title: "Intelligent Data Management Framework の削除および分析タスクをスケジュール"
 description: "このトピックでは、Microsoft Dynamics AX インテリジェント データ管理フレームワーク (IDMF) のスケジュール メニューのオプションとその使用方法について説明します。"
 author: kfend
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: kfend
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 1e076c43584de9f0d3ed3d7310903e12c57e9040
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 7793e3c5c17a05d28e6211632cfda2f5b7212e09
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="schedule-intelligent-data-management-framework-purge-and-analysis-tasks-ax-2012"></a>Intelligent Data Management Framework の削除および分析タスクのスケジュール (AX 2012)
+# <a name="schedule-intelligent-data-management-framework-purge-and-analysis-tasks"></a>Intelligent Data Management Framework の削除および分析タスクをスケジュール
 
 [!include [banner](../../includes/banner.md)]
 

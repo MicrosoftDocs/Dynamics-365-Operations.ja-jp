@@ -1,5 +1,5 @@
 ---
-title: "プロジェクト"
+title: "Visual Studio の Finance and Operations プロジェクト タイプ"
 description: "Microsoft Dynamics 365 for Finance and Operations プロジェクト タイプは、開発ツールの一部です。"
 author: RobinARH
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 8a8922af0e4de2bd0661cd82b5713535e7a7218d
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 243bf90cc0a006e757cc69ff4428f64638d6cb3d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="projects"></a>プロジェクト
+# <a name="finance-and-operations-project-type-in-visual-studio"></a>Visual Studio の Finance and Operations プロジェクト タイプ
 
 [!include [banner](../includes/banner.md)]
 

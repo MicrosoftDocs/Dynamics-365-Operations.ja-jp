@@ -1,5 +1,5 @@
 ---
-title: "POS の現金貨幣単位をコンフィギュレーションします。"
+title: "販売時点管理 (POS) 用の現金貨幣単位のコンフィギュレーション"
 description: "紙幣および硬貨の現金貨幣単位は、POS 内で店舗のレジ担当者、店員およびマネージャーにより使用されるバック オフィスで定義できます。"
 author: jblucher
 manager: AnnBe
@@ -20,14 +20,14 @@ ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: afe7c359f284fde10ada377fb19add9819a8dd21
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: afc53754c3ff5b1afed2380369cf8280cfffc5e4
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="configure-cash-denominations-for-pos"></a>POS の現金貨幣単位をコンフィギュレーションします。
+# <a name="configure-cash-denominations-for-the-point-of-sale-pos"></a>販売時点管理 (POS) 用の現金貨幣単位のコンフィギュレーション
 
 [!include [banner](includes/banner.md)]
 
@@ -39,7 +39,7 @@ ms.lasthandoff: 11/03/2017
 ![現金貨幣単位](./media/image1-denomination.png)
 
 貨幣単位を定義する方法:
-1. [新規] をクリックします。
+1. **新規**をクリックします。
 1. 種類 (硬貨または紙幣) を指定します。
 1. 金額 (値) を指定します。
 

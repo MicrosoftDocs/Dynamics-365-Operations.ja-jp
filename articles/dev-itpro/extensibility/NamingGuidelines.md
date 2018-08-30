@@ -1,5 +1,5 @@
 ---
-title: "名前付けのガイドライン"
+title: "拡張機能の名前付けのガイドライン"
 description: "このトピックでは、拡張機能の名前付けガイドラインについて説明します。"
 author: LarsBlaaberg
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: lolsen
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 89332692c1b25f2d8c90bed024c5d5681736a0f3
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: acc8d70394c41cba51f8a7cebb75b8750ea72651
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="naming-guidelines"></a>名前付けのガイドライン
+# <a name="naming-guidelines-for-extensions"></a>拡張機能の名前付けのガイドライン
 
 [!include [banner](../includes/banner.md)]
 

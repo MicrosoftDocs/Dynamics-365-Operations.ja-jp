@@ -1,9 +1,9 @@
 ---
-title: "ハードウェア ステーションの概要および拡張機能"
+title: "Hardware Station 拡張性"
 description: "このトピックでは、新規デバイスと既存デバイスの新規デバイス タイプのサポートを追加するために、Hardware Station を拡張する方法について説明します。"
 author: RobinARH
 manager: AnnBe
-ms.date: 11/14/2017
+ms.date: 07/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -18,16 +18,17 @@ ms.author: sijoshi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 6fd6c67f5ce05832d54127f82ab7c8a47c852e51
+ms.sourcegitcommit: 1bd5f6a8ee9d5a18d13c9caf2014a2e9345d404c
+ms.openlocfilehash: 05ea201f1860b3996e0661bec119d896c50c69e5
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="hardware-station-overview-and-extensibility"></a>ハードウェア ステーションの概要および拡張機能
+# <a name="hardware-station-extensibility"></a>Hardware Station 拡張性
 
-[!include [banner](../includes/banner.md)]
+> [!NOTE]
+> このトピックは、Dynamics 365 for Finance and Operations の 7.1 およびそれ以降のバージョンに適用可能です。 バージョン 7.2 およびそれ以上の場合は、この実装はサポートされていません。 これらのバージョンでは、オーバーレイせずに拡張モデルに従います。
 
 このトピックでは、新規デバイスと既存デバイスの新規デバイス タイプのサポートを追加するために、Hardware Station を拡張する方法について説明します。
 

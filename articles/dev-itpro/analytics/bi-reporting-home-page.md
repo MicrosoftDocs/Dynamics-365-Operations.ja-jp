@@ -1,5 +1,5 @@
 ---
-title: "インテリジェンス"
+title: "ビジネス インテリジェンス (BI) およびレポート作成のホーム ページ"
 description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations で使用可能なビジネス インテリジェンスおよびレポート ツールの詳細を学ぶためのリソースを紹介します。"
 author: sericks007
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 14a18681a98a2efbf6e3cfdbe77d282e74374c71
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: bd3704f3b51aad7292571e5c4e6de7b93cf9529f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="intelligence"></a>インテリジェンス
+# <a name="business-intelligence-bi-and-reporting-home-page"></a>ビジネス インテリジェンス (BI) およびレポート作成のホーム ページ
 
 [!include [banner](../includes/banner.md)]
 
@@ -43,13 +43,13 @@ Finance and Operations は、アプリケーション ワークスペースに�
 
 ![ワークスペースにおける Power BI の例](./media/Power-BI-in-D365-Workspace.png)
 
- 詳細については、次のトピックを参照してください。
+詳細については、次のトピックを参照してください。
 
- - [ワークスペースの埋め込み Power BI](embed-power-bi-workspaces.md)
- - [Power BI Embedded 統合](power-bi-embedded-integration.md)
- - [Power BI Embedded を使用したワークスペースへの分析の追加](add-analytics-tab-workspaces.md)
- - [Power BI Embedded を使用して分析ワークスペースおよびレポートをセキュリティで保護](secure-analytical-workspaces.md)
- - [Finance and Operations 向けの Power BI コンテンツ](power-bi-home-page.md)
+- [ワークスペースの埋め込み Power BI](embed-power-bi-workspaces.md)
+- [Power BI Embedded 統合](power-bi-embedded-integration.md)
+- [Power BI Embedded を使用したワークスペースへの分析の追加](add-analytics-tab-workspaces.md)
+- [Power BI Embedded を使用して分析ワークスペースおよびレポートをセキュリティで保護](secure-analytical-workspaces.md)
+- [Finance and Operations 向けの Power BI コンテンツ](power-bi-home-page.md)
 
 ## <a name="business-documents-and-printing"></a>ビジネス ドキュメントと印刷
 レポート ソリューションは多くの場合、業務トランザクションの詳細を把握し、伝えるために使用されます。 したがって、レポート ソリューションは、ネットワーク プリンターなどの既存のデバイスを使用して業務データを物理的に表現することが求められます。 ビジネス ドキュメントの例には、売上請求書、顧客明細書、小切手などがあります。

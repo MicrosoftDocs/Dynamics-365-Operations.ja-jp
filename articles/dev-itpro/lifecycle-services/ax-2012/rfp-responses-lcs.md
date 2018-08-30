@@ -1,5 +1,5 @@
 ---
-title: "RFP 応答 (AX 2012)"
+title: "提案依頼 (RFP) の応答"
 description: "RFP 応答ページには、提案依頼 (RFP) にあるよく寄せられる質問と、推奨される回答が含まれています。 このセクションの Microsoft Dynamics Lifecycle Services は、パートナー、販売前プロジェクトでのみ使用できます。"
 author: kfend
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: kfend
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: d420c968e645ed9d13e64ea788626831e6d79d3d
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: df6220a073a9c5b0d8015801ec46654fe802b3c7
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="rfp-responses-ax-2012"></a>RFP 応答 (AX 2012)
+# <a name="request-for-proposals-rfp-responses"></a>提案依頼 (RFP) の応答
 
 [!include [banner](../../includes/banner.md)]
 

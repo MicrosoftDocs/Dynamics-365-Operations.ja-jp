@@ -1,5 +1,5 @@
 ---
-title: "Finance and Operations データベースをコピーする – SQL Server を実稼働 Azure SQL にコピーする"
+title: "Finance and Operations データベースを SQL Server から Azure SQL データベース運用環境にコピーする"
 description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations データベースを SQL Server をベースとした開発、ビルド、またはデモ環境 (第 1 層または ワンボックス) から Azure SQL データベースをベースしたサンドボックス UAT 環境 (第 2 層以上) に移動する方法について説明します。"
 author: maertenm
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: maertenm
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: f2e3a40f58b57785079e1940b2d24a3598a3ad1b
-ms.openlocfilehash: 83c4f959abb3ad15a731380e15ccc7a6ef787dda
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: fa1f2b3f83d8730719ede51edbde10dd2d0b0e9d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 07/09/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="copy-a-finance-and-operations-database-from-sql-server-to-a-production-azure-sql-database-environment"></a>Finance and Operations データベースを SQL Server から Azure SQL データベース運用環境にコピーする
+# <a name="copy-finance-and-operations-databases-from-sql-server-to-production-azure-sql-database-environments"></a>Finance and Operations データベースを SQL Server から Azure SQL データベース運用環境にコピーする
 
 [!include [banner](../includes/banner.md)]
 

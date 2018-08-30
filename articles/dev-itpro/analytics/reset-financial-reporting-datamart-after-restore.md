@@ -1,5 +1,5 @@
 ---
-title: "Finance and Operations の財務諸表 データ マートをリセットします"
+title: "財務報告のデータ マートのリセット"
 description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations を復元した後に、財務報告データ マートをリセットする方法について説明します。"
 author: aprilolson
 manager: AnnBe
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: FinancialReports
 audience: IT Pro, Developer
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 261824
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
-ms.openlocfilehash: 49f8f5ee78be0822911b145915a41bdb71033712
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: 97662cc4c2a5d10e58112d36992b66da7c7f9e8d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 

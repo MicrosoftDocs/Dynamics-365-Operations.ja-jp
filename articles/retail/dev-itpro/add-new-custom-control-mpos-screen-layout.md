@@ -1,5 +1,5 @@
 ---
-title: "MPOS 画面レイアウトへのカスタム コントロールの追加"
+title: "Retail Modern POS (MPOS) 画面レイアウトへのカスタム コントロールの追加"
 description: "このトピックでは、最新POS (MPOS) の画面レイアウトに新しいカスタム コントロールを追加する方法について説明します。"
 author: mugunthanm
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: f314e6619ab1506a026842201a20536af018e781
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 57dc1e2c085da5eac5d25030bd34ff0037e29ee1
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="add-a-custom-control-to-an-mpos-screen-layout"></a>MPOS 画面レイアウトへのカスタム コントロールの追加
+# <a name="add-custom-controls-to-retail-modern-pos-mpos-screen-layouts"></a>Retail Modern POS (MPOS) 画面レイアウトへのカスタム コントロールの追加
 
 [!include [banner](../includes/banner.md)]
 

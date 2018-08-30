@@ -1,5 +1,5 @@
 ---
-title: "Finance and Operations での情報へのアクセスおよびレポート"
+title: "情報へのアクセスとレポート"
 description: "このトピックでは、Finance and Operations プラットフォームの一部として利用可能なさまざまなレポート オプションについて説明します。"
 author: TJVass
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: tjvass
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: b5504491d73394dde262624f5daade13d7a56f73
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: d4e97c386547560f0841f825dd478216b510bce4
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="information-access-and-reporting-in-finance-and-operations"></a>Finance and Operations での情報へのアクセスおよびレポート
+# <a name="information-access-and-reporting"></a>情報へのアクセスとレポート
 
 [!include [banner](../includes/banner.md)]
 

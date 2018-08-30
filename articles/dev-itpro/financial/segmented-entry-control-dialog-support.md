@@ -1,5 +1,5 @@
 ---
-title: "セグメント化されたエントリ コントロール ダイアログのサポート"
+title: "ダイアログ上のセグメント化されたエントリ コントロールをサポート"
 description: "セグメント化されたエントリ コントロールをダイアログに追加するためのコード パターンについて説明します。"
 author: robinarh
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: ghenriks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: cc9fcc9c4d5b3c31b42aa064797bda0dfee91a6d
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 50223d98a89fefddf056bf63fb69330ee3079f9f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="segmented-entry-control-dialog-support"></a>セグメント化されたエントリ コントロール ダイアログのサポート
+# <a name="support-for-segmented-entry-controls-on-dialogs"></a>ダイアログ上のセグメント化されたエントリ コントロールをサポート
 
 [!include [banner](../includes/banner.md)]
 

@@ -18,14 +18,14 @@ ms.author: lolsen
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: f6e84ea54c7c5a2a451093b37ffedfb4144029b3
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 0c42e9dd6c4f6e583887713f267eaa579f90f8f6
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="respond-by-using-eventhandlerresult-or-types-that-implement-ieventhandlerresult"></a>EventHandlerResult または IEventHandlerResult を実装するタイプを使用して応答
+# <a name="respond-by-using-eventhandlerresult"></a>EventHandlerResult を使用して応答
 
 [!include [banner](../includes/banner.md)]
 

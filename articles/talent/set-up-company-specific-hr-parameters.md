@@ -1,5 +1,5 @@
 ---
-title: "会社固有の HR パラメータの設定"
+title: "会社固有の人事管理 (HR) パラメーターの設定"
 description: "他のパラメーター設定は会社固有ですが、人事管理 (HR) のパラメーター設定は会社間で共有されます。 この記事は、会社固有の HR パラメーターを設定する方法を説明します。"
 author: rschloma
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.author: shielas
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: e195f9976465a933ceaaeb0bd2cbec4f814bc5f8
+ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
+ms.openlocfilehash: f7ecd72a2a6ba4ba15e412e40508462f6ef0d218
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="set-up-company-specific-hr-parameters"></a>会社固有の HR パラメータの設定
+# <a name="set-up-company-specific-human-resources-hr-parameters"></a>会社固有の人事管理 (HR) パラメーターの設定
 
 [!include [banner](includes/banner.md)]
 

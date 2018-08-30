@@ -1,5 +1,5 @@
 ---
-title: "クラスの拡張機能 - メソッドのラッピングとコマンド チェーン"
+title: "メソッドのラッピングとコマンド チェーン経由のクラスの拡張機能 (CoC)"
 description: "このトピックでは、メソッド ラッピングを使用してパブリック メソッドと保護メソッドのビジネス ロジックを拡張する方法について説明します。"
 author: robadawy
 manager: AnnBe
@@ -17,14 +17,14 @@ ms.author: robadawy
 ms.search.validFrom: 2017-08-21
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 77bff661eebea990fc5e30096c028619afb59eed
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 539f63ba45f03660926cd8487a4038a50c4d74b2
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="class-extension-method-wrapping-and-chain-of-command"></a>クラスの拡張機能: メソッドのラッピングとコマンド チェーン
+# <a name="class-extension-via-method-wrapping-and-chain-of-command-coc"></a>メソッドのラッピングとコマンド チェーン経由のクラスの拡張機能 (CoC)
 
 [!include [banner](../includes/banner.md)]
 

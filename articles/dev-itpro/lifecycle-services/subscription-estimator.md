@@ -1,5 +1,5 @@
 ---
-title: "サブスクリプション見積もりツール"
+title: "Lifecycle Services (LCS) のサブスクリプション試算"
 description: "このトピックでは、Lifecycle Services (LCS) で利用可能なサブスクリプション試算ツールを Microsoft Dynamics 365 Finance and Operations で使用する方法について説明します。"
 author: manalidongre
 manager: AnnBe
@@ -18,13 +18,13 @@ ms.author: manado
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform update 12
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 8f99df43b3d74f36dfa7c5916ff31da111c3c87b
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 3496becaa09451f48fdc6bc15dbdb8e7b031e29e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="subscription-estimator"></a>サブスクリプション見積もりツール
+# <a name="subscription-estimator-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) のサブスクリプション試算
 
 [!include [banner](../includes/banner.md)]
 

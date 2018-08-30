@@ -1,5 +1,5 @@
 ---
-title: "委任を使用したアプリケーション起動のカスタマイズ"
+title: "デリゲートを使用してアプリケーション起動をカスタマイズする"
 description: "このトピックでは、拡張機能を使用して、既存のフォームに新しいデータ ソースを追加する方法について説明します。"
 author: robadawy
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: robadawy
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 4
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 115ec2072a123d7e1259df1eaf4fd9831cc4c9da
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: cda6f533e01b6bf25a8f0ac9202cc8aa2ea1b979
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="use-delegates-to-customize-application-startup"></a>委任を使用したアプリケーション起動のカスタマイズ
+# <a name="customize-application-startup-by-using-delegates"></a>デリゲートを使用してアプリケーション起動をカスタマイズする
 
 [!include [banner](../includes/banner.md)]
 

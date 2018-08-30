@@ -1,5 +1,5 @@
 ---
-title: "Lifecycle Services を使用して Azure に Dynamics AX 2012 R3 を配置する"
+title: "Lifecycle Services (LCS) を使用して Azure に Dynamics AX 2012 R3 を配置する"
 description: "このトピックでは、Lifecycle Services (LCS) を使用して Microsoft Dynamics AX 2012 R3 を展開する方法について説明します。"
 author: kfend
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: kfend
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 2fa8f1efeff1e7997775c6603be2c0504dffaf9e
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 595e05c48b63440e3ea7cb68719b11c6e54e8ff7
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="deploy-dynamics-ax-2012-r3-on-azure-using-lifecycle-services"></a>Lifecycle Services を使用して Azure に Dynamics AX 2012 R3 を配置する
+# <a name="deploy-ax-2012-r3-on-azure-by-using-lifecycle-services-lcs"></a>Lifecycle Services (LCS) を使用して Azure に Dynamics AX 2012 R3 を配置する
 
 [!include [banner](../../includes/banner.md)]
 

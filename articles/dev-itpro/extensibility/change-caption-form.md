@@ -1,5 +1,5 @@
 ---
-title: "フォーム キャプションの変更"
+title: "拡張機能によって、フォームのキャプションを変更します。"
 description: "このトピックでは、ユーザーが Web ブラウザーで現在のページを識別するためのフォーム キャプションを変更する方法について説明します。"
 author: ivanv-microsoft
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: ivanv
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: cc51c6aeb80ddaee9735331d5a12f0ff5d5e8389
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: fb8e9e8bf8a1389b603a7ff938ad049c04cd1ea8
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="change-the-caption-on-a-form"></a>フォームのキャプションの変更
+# <a name="change-the-captions-of-forms-through-extension"></a>拡張機能によって、フォームのキャプションを変更します。
 
 [!include [banner](../includes/banner.md)]
 

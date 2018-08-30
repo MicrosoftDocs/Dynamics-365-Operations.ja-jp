@@ -1,5 +1,5 @@
 ---
-title: "休暇管理の概要"
+title: "休暇の管理"
 description: "このトピックでは、休暇管理モジュールの概要を示します。"
 author: ryansandness
 manager: AnnBe
@@ -19,17 +19,17 @@ ms.author: ryansand
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: e59ccde58adb7fae2504d37f8a0bc76110a3348b
+ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
+ms.openlocfilehash: 72bfbb878fa076e204e00c3ccaceb4ba04c00ea9
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="leave-and-absence-management-overview"></a>休暇管理の概要
+# <a name="leave-and-absence-management"></a>休暇の管理
 
 [!include [banner](includes/banner.md)]
 
-[**休暇管理**] モジュールは、休暇管理プロセスを定義するための柔軟なフレームワークを提供します。 従業員が休暇を蓄積するもしくは交付される方法を決定するために、休暇計画を作成できます。 従業員が計画に登録されると、管理者による承認を求めて休暇申請を送信できます。 休暇追跡により、ファーストレベル マネージャーと人事管理 (HR) マネージャーの両方が、休暇を取っている従業員および各従業員の残っている休暇時間を確認することができます。  
+**休暇管理** モジュールは、休暇管理プロセスを定義するための柔軟なフレームワークを提供します。 従業員が休暇を蓄積するもしくは交付される方法を決定するために、休暇計画を作成できます。 従業員が計画に登録されると、管理者による承認を求めて休暇申請を送信できます。 休暇追跡により、ファーストレベル マネージャーと人事管理 (HR) マネージャーの両方が、休暇を取っている従業員および各従業員の残っている休暇時間を確認することができます。  
 
 休暇管理は、次の機能を提供します。 
 

@@ -1,5 +1,5 @@
 ---
-title: "ルックアップ"
+title: "参照モジュール"
 description: "ルックアップは、オプションの一覧からの入力を選択するために使用する入力コントロールです。"
 author: shadykdc
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.author: kashea
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 56a687247b988500b54386d0df9461d2fbc3458b
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 8812aaf7b32edc1c21fbe16f7fc344c4b78f0e5c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="lookup"></a>ルックアップ 
+# <a name="lookup-module"></a>参照モジュール
 
 [!include [banner](../../../../includes/banner.md)]
 

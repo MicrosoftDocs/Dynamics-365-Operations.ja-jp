@@ -1,5 +1,5 @@
 ---
-title: "規制認証"
+title: "機能タイトルの規制認証情報"
 description: "ローカライズ &amp; 翻訳向け LCS ソリューションの要件の一部として、ローカライズ ISV ソリューション プロバイダーは意図したマーケットでの販売を、法律に準拠したものにするために。ソリューションが必要とする規制認証に関する詳細を含める必要があります。 この記事では、機能のタイトルに認証に関する情報をどのように使用しているかを示します。"
 author: ShylaThompson
 manager: AnnBe
@@ -15,17 +15,17 @@ ms.custom: 27581
 ms.assetid: d0b8286a-b2c1-4fa2-905a-3383b1d34d56
 ms.search.region: global
 ms.author: janeaug
-ms.search.validfrom: 2016-02-28
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 6ed7a4e57d2c099b89d38d057efb052dfb3f78d4
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 7229aac5256828f4ae2a9e296cc68850f4f7f853
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="regulatory-certifications"></a>規制認証
+# <a name="regulatory-certification-information-in-feature-titles"></a>機能タイトルの規制認証情報
 
 [!include [banner](../includes/banner.md)]
 

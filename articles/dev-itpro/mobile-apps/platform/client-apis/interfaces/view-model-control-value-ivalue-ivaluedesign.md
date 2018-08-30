@@ -1,5 +1,5 @@
 ---
-title: ValueDesign
+title: "ValueDesign タイプ"
 description: "値 デザイン オブジェクトの種類。"
 author: shadykdc
 manager: AnnBe
@@ -16,10 +16,10 @@ ms.author: kashea
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 063bc7f9b25baa43cc6dc70e9a2e8a456d59e852
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: ddc81fa73c966f4a812dc7dc128b32a6725c488c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 

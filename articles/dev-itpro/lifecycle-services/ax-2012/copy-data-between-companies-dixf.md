@@ -1,5 +1,5 @@
 ---
-title: "Dynamics AX (AX 2012) 会社間でのデータのコピー"
+title: "Dynamics AX 会社間でのデータのコピー"
 description: "Microsoft Dynamics AX 2012 のデータのインポート/エクスポート フレームワークを使用すると、顧客などのエンティティを 1 つの Microsoft Dynamics AX の法人 (会社) から他にコピーすることができます。 この例では、Contoso データ セットの CEC 会社に CEU 会社の特定の顧客グループ内の顧客グループをエクスポートします。"
 author: kfend
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: kfend
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 1dbad4eccd1987784eba6058b44f5ee06f761f10
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 58ff855888be0a7b06eae372bb31f2442ef09b03
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="copy-data-between-dynamics-ax-companies-ax-2012"></a>Dynamics AX (AX 2012) 会社間でのデータのコピー
+# <a name="copy-data-between-dynamics-ax-companies"></a>Dynamics AX 会社間でのデータのコピー
 
 [!include [banner](../../includes/banner.md)]
 

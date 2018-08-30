@@ -1,5 +1,5 @@
 ---
-title: "Retail Modern POS のインストールと更新プログラム"
+title: "Retail Modern POS (MPOS) の設定、インストール、および有効化"
 description: "このトピックでは、さまざまなプラットフォームで Retail Modern POS を構成、ダウンロード、インストールする方法について説明します。 デバイスの有効化を通じて Retail Modern POS を有効化する方法について説明します。"
 author: jashanno
 manager: AnnBe
@@ -20,14 +20,14 @@ ms.author: jashanno
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 25a1e9476b76f6cef0896e3813b19f99321be8c8
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 7343bca676fda89d5dd51c8d26836c9b8e9bee96
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="retail-modern-pos-configuration-and-installation"></a>Retail Modern POS のコンフィギュレーションとインストール
+# <a name="configure-install-and-activate-retail-modern-pos-mpos"></a>Retail Modern POS (MPOS) の設定、インストール、および有効化
 
 [!include [banner](includes/banner.md)]
 

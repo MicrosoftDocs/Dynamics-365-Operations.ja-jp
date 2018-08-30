@@ -1,5 +1,5 @@
 ---
-title: "F クラス - FormStringControl への FormReferenceControl"
+title: "F クラス (FormReferenceControl から FormStringControl)"
 description: "FormReferenceControl から FormStringControl までのクラスの API 参照。"
 author: RobinARH
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 6f9f98e3232abfa8edbd8fe69054612af25fbfc4
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 3e1b4e228d2ed25305667ec4949e45df0c3e5043
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="f-classes---formreferencecontrol-to-formstringcontrol"></a>F クラス - FormStringControl への FormReferenceControl
+# <a name="f-classes-formreferencecontrol-to-formstringcontrol"></a>F クラス (FormReferenceControl から FormStringControl)
 
 [!include [banner](../includes/banner.md)]
 

@@ -18,14 +18,14 @@ ms.author: kfend
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: cd6d20d86263a1394b958339182d5d09c29a6aa1
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: e31891d188146d98ae856f7d9a5c362132ba2507
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="create-an-archive-object-for-the-intelligent-data-management-framework"></a>Intelligent Data Management Framework のアーカイブ オブジェクトの作成
+# <a name="create-archive-objects-for-the-intelligent-data-management-framework"></a>Intelligent Data Management Framework のアーカイブ オブジェクトの作成
 
 [!include [banner](../../includes/banner.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: "カスタマイズ分析"
+title: "Lifecycle Services (LCS) 内のカスタマイズ分析"
 description: "Microsoft Dynamics Lifecycle Services では、カスタマイズ分析がテーブル、クラス、フォーム、および列挙の Microsoft Dynamics AX のベスト プラクティス ルールに対して顧客のモデル ファイルを検証する自動ツールを Microsoft Dynamics AX 2012 の顧客に提供します。 その後、サイトでの概要レポートの表示、すべての問題を一覧表示する詳細な Microsoft Excel レポート、開発者が Microsoft Dynamics AX の開発環境で読み込むことができる開発者レポートを含んだレポートを生成します。"
 author: RobinARH
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: robadawy
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 3494b3840f7cc32e3b46b68816180345d9b10155
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 9bd15953d0f024a8df5959837ff3b39534eba1a9
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="customization-analysis"></a>カスタマイズ分析
+# <a name="customization-analysis-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) 内のカスタマイズ分析
 
 [!include [banner](../../includes/banner.md)]
 

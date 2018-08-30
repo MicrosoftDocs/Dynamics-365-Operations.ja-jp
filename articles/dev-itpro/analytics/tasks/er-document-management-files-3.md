@@ -1,5 +1,5 @@
 --- 
-title: "形式出力でドキュメント管理ファイルを使用するための形式を作成する"
+title: "ER 出力でドキュメント管理ファイルを使用するための形式の作成"
 description: "次の手順では、システム管理者または電子レポート開発者のロールに指定されたユーザーが、ER出力のドキュメント管理ファイル（添付）を使用するために電子レポート（ER）フォーマットをどのように環境設定しているのか説明します。"
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 6d5df842dbbf89f5df72c63919fc0bcbf811a09c
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 934775bbdda13238e16fba91dcb90d6d3249e812
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="create-format-to-use-document-management-files-in-format-outputs"></a>形式出力でドキュメント管理ファイルを使用するための形式を作成する
+# <a name="create-formats-to-use-document-management-files-in-er-output"></a>ER 出力でドキュメント管理ファイルを使用するための形式の作成
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

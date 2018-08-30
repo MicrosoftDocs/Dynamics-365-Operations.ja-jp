@@ -1,5 +1,5 @@
 ---
-title: "1 ボックス環境の SQL Server Reporting Services への修正プログラムの適用"
+title: "1 ボックス環境で SQL Server Reporting Services (SSRS) への修正プログラムの適用"
 description: "SSRS 修正プログラムをワンボックス開発環境に適用します。"
 author: RobinARH
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: shailesn
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 5f9eaa8c008d75e1a83994ebf9e1a309c5aa81e1
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 4620791a4056ee9a013e79340f5f750f29d6b427
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="patch-sql-server-reporting-services-in-a-one-box-environment"></a>1 ボックス環境の SQL Server Reporting Services への修正プログラムの適用
+# <a name="patch-sql-server-reporting-services-ssrs-in-one-box-environments"></a>1 ボックス環境で SQL Server Reporting Services (SSRS) への修正プログラムの適用
 
 [!include [banner](../includes/banner.md)]
 

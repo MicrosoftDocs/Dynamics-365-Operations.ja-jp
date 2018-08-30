@@ -1,5 +1,5 @@
 ---
-title: PageLinkMetadata
+title: "PageLinkMetadata タイプ"
 description: "Pagelink メタデータ タイプ。"
 author: shadykdc
 manager: AnnBe
@@ -16,10 +16,10 @@ ms.author: kashea
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 4963e65fd1b8e1f42f2f21b7eb8d9ce01de12d08
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 4c8ed4ec91c239db2bb9b1a33b44c57677d18b50
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 

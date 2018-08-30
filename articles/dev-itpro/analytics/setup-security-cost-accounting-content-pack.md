@@ -1,7 +1,7 @@
 ---
 title: "原価会計分析 Power BI コンテンツのセキュリティ設定"
 description: "このトピックでは、Microsoft Power BI で行レベルのセキュリティに原価会計のアクセス レベルのセキュリティを反映する方法を説明します。 この機能により、ユーザーがアクセス権を持つ Power BI データのみが表示されるようになります。"
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,14 +14,14 @@ ms.search.scope: Operations
 ms.custom: 270294
 ms.assetid: 3a7ba8b0-ac57-4159-9cd8-4308f6021f36
 ms.search.region: Global
-ms.author: yuyus
+ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: e0c0faf0b12368273decacfae88c57707b350bf4
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: 15d25274b02b0e9423fd4670b82c2e398316a1fa
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 08/09/2018
 
 ---
 
@@ -53,7 +53,7 @@ Power BI にアクセス レベルのセキュリティを反映するには、P
 **原価オブジェクト コントローラー** ロールに追加されているユーザーには、原価会計のアクセス レベル組織階層の定義に従って、許可されたデータのみが表示されます。 **注記:** 行レベル セキュリティは、Power BI から埋め込まれた Microsoft Dynamics 365 for Finance and Operations のタイルとレポートに適用されます。
 
 ## <a name="updating-security"></a>セキュリティの更新
-原価会計のアクセス レベルのセキュリティに更新が行われ、それらの更新を Power BI に反映したい場合、**原価会計分析** Power BI コンテンツのエンティティ格納を更新する必要があります。 Finance and Operations からエンティティ格納の更新を完了後、PowerBI.com のコンポーネントを更新する必要があります。エンティティ格納の更新方法の詳細については、 [エンティティ格納の更新](power-bi-integration-entity-store.md#update-entity-store) を参照してください。 **原価会計分析** Power BI コンテンツの所有者は、新しいユーザーに組織階層へのアクセスが許可された場合にもエンティティ格納の更新を行う必要があります。 また、所有者はその新たなユーザーを PowerBI.com の **原価オブジェクト コントローラー** ロールに追加して、行レベルのセキュリティが適用されるようにする必要があります。
+原価会計のアクセス レベルのセキュリティに更新が行われ、それらの更新を Power BI に反映したい場合、**原価会計分析** Power BI コンテンツのエンティティ格納を更新する必要があります。 Finance and Operations からエンティティ格納の更新を完了後、PowerBI.com のコンポーネントを更新する必要があります。 エンティティ格納の更新方法の詳細については、[エンティティ格納の更新](power-bi-integration-entity-store.md#update-entity-store) を参照してください。 **原価会計分析** Power BI コンテンツの所有者は、新しいユーザーに組織階層へのアクセスが許可された場合にもエンティティ格納の更新を行う必要があります。 また、所有者はその新たなユーザーを PowerBI.com の **原価オブジェクト コントローラー** ロールに追加して、行レベルのセキュリティが適用されるようにする必要があります。
 
 ## <a name="disabling-security"></a>セキュリティの無効化
 ここでは、組織がデータ アクセスを制限すると想定します。 何らかの理由で、原価会計を実行する際にセキュリティ パラメーターが無効になっている場合は、所有者は代わりにユーザーを Power BI の **原価経理担当** ロールに追加する必要があります。 セキュリティを有効状態から無効状態に変更する場合は、**原価オブジェクト コントローラー** ロールからユーザーを削除することをお勧めします。 セキュリティを再び有効にする場合は、その逆を行ないます。 ユーザーは両方のロールに属することができます。 結合アクセスとは両方のロールの結合のことです。 **原価会計分析** Power BI コンテンツの場合、結合アクセスを持つユーザーには無制限のデータ アクセス権があります。 目標がアクセス権を制限することである場合は、ユーザーを **原価オブジェクト コントローラー** ロールのみに割り当てる必要があります。 これらの行レベルのセキュリティの更新はすぐに反映されます。 影響を受けるユーザーは自分のブラウザを更新する必要があります。

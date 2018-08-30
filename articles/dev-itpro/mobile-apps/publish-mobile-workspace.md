@@ -19,14 +19,14 @@ ms.author: sericks
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 203741653d1be8da39787c9403f2b0d3fe079b25
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: b1e0edcc0cf078e4760496085e5171a37775ef09
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="publish-a-mobile-workspace"></a>モバイル ワークスペースの公開
+# <a name="publish-mobile-workspaces"></a>モバイル ワークスペースの公開
 
 [!include [banner](../includes/banner.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: ListDesign
+title: "ListDesign タイプ"
 description: "リスト デザイン オブジェクトの種類。"
 author: shadykdc
 manager: AnnBe
@@ -16,10 +16,10 @@ ms.author: kashea
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 70ecbf943855864cc3692c74053af2c7021f9a2f
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: d7e855df0fd5d4ce7487a39fb589ffc0f107363b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 

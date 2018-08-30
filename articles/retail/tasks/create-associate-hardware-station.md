@@ -1,5 +1,5 @@
 --- 
-title: "ハードウェア ステーションの作成と関連付け"
+title: "ハードウェア ステーションの作成"
 description: "この手順では、新しいハードウェア ステーションを作成する方法を説明します。"
 author: jashanno
 manager: AnnBe
@@ -17,13 +17,13 @@ ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 7a43edf71a1a77ea0d6014266bdd95d563a08cc4
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 3551e37c6aae37c01b5cacff8b908faaf75fb3e2
 ms.contentlocale: ja-jp
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="create-and-associate-a-hardware-station"></a>ハードウェア ステーションの作成と関連付け
+# <a name="create-hardware-stations"></a>ハードウェア ステーションの作成
 
 [!include [task guide banner](../includes/task-guide-banner.md)]
 

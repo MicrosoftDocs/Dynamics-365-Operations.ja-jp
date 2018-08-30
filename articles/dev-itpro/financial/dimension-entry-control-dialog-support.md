@@ -1,7 +1,7 @@
 ---
-title: "分析コード エントリ コントロール ダイアログのサポート"
+title: "ダイアログ上の分析コード エントリ コントロールをサポート"
 description: "分析コード エントリ コントロールをダイアログに配置するためのコード パターンについて説明します。"
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -18,14 +18,14 @@ ms.author: ghenriks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 527ecf806032ac7fe7547e204676c1872dbfb9ad
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: f5eb1b69e85a7d8677638f5b1faf28950b0626b7
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="dimension-entry-control-dialog-support"></a>分析コード エントリ コントロール ダイアログのサポート
+# <a name="support-for-dimension-entry-controls-on-dialogs"></a>ダイアログ上の分析コード エントリ コントロールをサポート
 
 [!include [banner](../includes/banner.md)]
 

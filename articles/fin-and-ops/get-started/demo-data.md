@@ -1,5 +1,5 @@
 ---
-title: "デモ データの概要"
+title: "デモ データ"
 description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations に使用できるデモ データの概要を示します。"
 author: sericks007
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: pmantha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 63bd936fa3299c0cd17359db3e9e88151021fb81
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: beecdd97d5e1d8afd4269b1f0f25d526b383eba1
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="demo-data-overview"></a>デモ データの概要
+# <a name="demo-data"></a>デモ データ
 
 [!include [banner](../includes/banner.md)]
 

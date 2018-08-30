@@ -1,5 +1,5 @@
 ---
-title: "ファクトリ メソッドのサブクラスの登録"
+title: "ファクトリ メソッドのサブクラスを登録"
 description: "このトピックでは、独自のバリエーションを工場に登録する方法について説明します。"
 author: MichaelFruergaardPontoppidan
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: mfp
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: da6b8db08674b783b81b2ba03a5ebe2e9732c3a5
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 5e5727319089bb30de4fbfb0e6f61596f5e9ad80
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="register-a-subclass-for-factory-methods"></a>ファクトリ メソッドのサブクラスの登録
+# <a name="register-subclasses-for-factory-methods"></a>ファクトリ メソッドのサブクラスを登録
 
 [!include [banner](../includes/banner.md)]
 

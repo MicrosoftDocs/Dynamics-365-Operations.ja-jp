@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Dynamics 365 for Finance and Operatios プロジェクトの配送準備"
+title: "Finance and Operations 実装プロジェクトの配送準備"
 description: "このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用して Finance and Operations のプロジェクト用に Microsoft Dynamics 365 を構成する方法について説明します。"
 author: ClaudiaBetz-Haubold
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.author: chaubold
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: de05e4e0020cda71dcd894bed3ccab9763e91a0e
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: 4bf2245355f5b14d89a7ac0ec94c24323633f801
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="onboard-a-finance-and-operations-project"></a>Finance and Operations の配送準備
+# <a name="onboard-a-finance-and-operations-implementation-project"></a>Finance and Operations 実装プロジェクトの配送準備
 
 [!include [banner](../includes/banner.md)]
 

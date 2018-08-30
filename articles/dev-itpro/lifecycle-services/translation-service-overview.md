@@ -18,14 +18,14 @@ ms.author: ejchoGIT
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 8d3d722e762bb45d28f994288396f617357ad743
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 92a2a05bb5028005f277384feb1e7496cebafd49
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="microsoft-dynamics-365-translation-service-overview"></a>Microsoft Dynamics 365 翻訳サービスの概要
+# <a name="microsoft-dynamics-365-translation-service"></a>Microsoft Dynamics 365 翻訳サービス
 
 [!include [banner](../includes/banner.md)]
 

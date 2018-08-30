@@ -1,5 +1,5 @@
 ---
-title: "削除ジョブまたはアーカイブ ジョブの表示 (AX 2012)"
+title: "削除およびアーカイブ ジョブの表示"
 description: "このトピックでは、インテリジェント データ管理フレームワーク (IDMF) を使用して、パージ ジョブとアーカイブ ジョブを表示する方法について説明します。"
 author: kfend
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: kfend
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 5bd9e60521646313c8b4b67fdd72f7724521bf4c
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 465ee69fb1024821350949c0f6757db292a78bcd
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="view-intelligent-data-management-framework-purge-or-archive-jobs-ax-2012"></a>Intelligent Data Management Framework の削除またはアーカイブ ジョブの表示 (AX 2012)
+# <a name="view-purge-and-archive-jobs"></a>削除およびアーカイブ ジョブの表示
 
 [!include [banner](../../includes/banner.md)]
 

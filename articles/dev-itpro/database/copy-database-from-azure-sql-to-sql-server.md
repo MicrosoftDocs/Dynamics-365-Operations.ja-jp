@@ -1,5 +1,5 @@
 ---
-title: "Finance and Operations データベースをコピーする – Azure SQL を SQL Server にコピーする"
+title: "Finance and Operations データベースを Azure SQL データベースから SQL Server 環境にコピーする"
 description: "このトピックでは、 Microsoft Dynamics 365 for Finance and Operations のデータベースを Azure ベースの環境から SQL Server ベースの環境に移動する方法について説明します。"
 author: maertenm
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: maertenm
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: b35f54d75b8b427ff5716c8e8a1f8a3e2afec818
-ms.openlocfilehash: c2e0243e96f0a259b2cf5586f94867eb1a792881
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: a32154f74e043c54edc5d6a2a03634439af9fdd6
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/06/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="copy-a-finance-and-operations-database-from-azure-sql-database-to-a-sql-server-environment"></a>Finance and Operations データベースを Azure SQL データベースから SQL Server 環境にコピーする
+# <a name="copy-finance-and-operations-databases-from-azure-sql-database-to-sql-server-environments"></a>Finance and Operations データベースを Azure SQL データベースから SQL Server 環境にコピーする
 
 [!include [banner](../includes/banner.md)]
 
@@ -57,9 +57,9 @@ ms.lasthandoff: 06/06/2018
 
     > [!IMPORTANT] 
     > サンドボックス環境からデータベースをエクスポートするには、データベースをインポートする環境で同じバージョンの SQL Server Management Studio (SSMS) を実行している必要があります。 これにより、サンドボックス環境で Application Object Server (AOS) を実行するVMに [SQL Server Management Studio の最新バージョン](https://msdn.microsoft.com/en-us/library/mt238290.aspx)をインストールする必要が生じる場合があります。 AOS コンピューターで、bacpac エクスポートを実行します。 この要件は 2 つの理由があります。
-
-    - SQL Server のサンドボックス インスタンスに対するインターネット プロトコル (IP) アクセス制限のため、その環境内のコンピュータのみがインスタンスに接続できます。
-    - エクスポートされた \*.bacpac ファイルは、Management Studio のバージョン固有の機能に依存する可能性があります。 データベースをエクスポートするために使用する SSMS バージョンが、bacpac をインポートするために使用する (ターゲット環境での) SSMS バージョン**より新しいものではない**ことを確認します。
+    > 
+    > - SQL Server のサンドボックス インスタンスに対するインターネット プロトコル (IP) アクセス制限のため、その環境内のコンピュータのみがインスタンスに接続できます。
+    > - エクスポートされた \*.bacpac ファイルは、Management Studio のバージョン固有の機能に依存する可能性があります。 データベースをエクスポートするために使用する SSMS バージョンが、bacpac をインポートするために使用する (ターゲット環境での) SSMS バージョン**より新しいものではない**ことを確認します。
 
 ## <a name="before-you-begin"></a>準備
 
@@ -103,7 +103,7 @@ SELECT * FROM sys.dm_database_copies
 ```
 
 > [!WARNING] 
-> どの Finance and Operations 環境でも、長期間にわたってデータベースのコピーを保持することはできません。 Microsoft は、事前に通知することなく、7 日を超える古いデータベースのコピーを削除する権限を保有します。 
+> どの Finance and Operations 環境でも、長期間にわたってデータベースのコピーを保持することはできません。 Microsoft は、事前に通知することなく、7 日を超える古いデータベースのコピーを削除する権限を保有します。
 
 ## <a name="prepare-the-database"></a>データベースの準備
 
@@ -259,7 +259,7 @@ CREATE USER axretailruntimeuser FROM LOGIN axretailruntimeuser
 EXEC sp_addrolemember 'UsersRole', 'axretailruntimeuser'
 EXEC sp_addrolemember 'ReportUsersRole', 'axretailruntimeuser'
 
-CREATE USER axdeployextuser WITH PASSWORD = '<password from LCS>'
+CREATE USER axdeployextuser FROM LOGIN axdeployextuser
 EXEC sp_addrolemember 'DeployExtensibilityRole', 'axdeployextuser'
 
 CREATE USER [NT AUTHORITY\NETWORK SERVICE] FROM LOGIN [NT AUTHORITY\NETWORK SERVICE]
@@ -310,7 +310,6 @@ DEALLOCATE retail_ftx;
 ソース データベースで変更追跡が有効になっている場合は、ALTER DATABASE コマンドを使用して、ターゲット環境の新たなプロビジョニング データベースで変更追跡を再度有効にしてください。
 
 新しいデータベースで店舗の業務手順の現在のバージョン (変更追跡に関連する) が使用されていることを確認するには、データ管理のデータ エンティティの変更追跡を有効または無効にする必要があります。 これは、店舗の業務手順の更新をトリガーするために必要なので、どのエンティティでも実行できます。
-
 
 ### <a name="re-provision-the-target-environment"></a>対象の環境を再プロビジョニング
 

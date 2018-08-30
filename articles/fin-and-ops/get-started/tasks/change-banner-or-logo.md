@@ -1,5 +1,5 @@
 --- 
-title: "バナーまたはロゴの変更"
+title: "法人のバナーまたはロゴの画像の変更"
 description: "次の手順は、システム管理者が法人用に表示するバナーまたはロゴ画像を更新するために使用できるステップを一覧にしています。"
 author: aneesmsft
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: aneesa
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: d2dac4d1799a958b6eff4c7aa134fe0b136089ca
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: 33be31a8806b5db265fbb45d180997623d475a87
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="change-the-banner-or-logo"></a>バナーまたはロゴの変更
+# <a name="change-the-banners-or-logo-images-for-legal-entities"></a>法人のバナーまたはロゴの画像の変更
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: "独自のデータで担当者検索レポートを拡張します。"
+title: "個人検索レポートを拡張"
 description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations の個人検索レポートを拡張するプロセスについて説明します。"
 author: rschloma
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.author: rschloma
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 3a5f34f4f83a24628f6918e42dfd5b63b3fb71ae
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 102fa4c3fd40059309d08f20aee601a5f0272f37
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="extend-the-person-search-report-with-your-own-data-customer-or-isv"></a>独自のデータで担当者検索レポートを拡張 (顧客または ISV)
+# <a name="extend-the-person-search-report"></a>個人検索レポートを拡張
 
 [!include [banner](../includes/banner.md)]
 

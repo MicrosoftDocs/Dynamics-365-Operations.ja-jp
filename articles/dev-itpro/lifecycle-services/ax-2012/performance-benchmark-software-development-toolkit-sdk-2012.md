@@ -1,5 +1,5 @@
 ---
-title: "パフォーマンス ベンチマーク ソフトウェア開発ツールキット (SDK)"
+title: "パフォーマンス ベンチマーク ソフトウェア開発キット (SDK)"
 description: "Microsoft Dynamics AX 2012 Performance Benchmark ソフトウェア開発キット (SDK) は、VS2013 をサポートしている AX 2012 R3 CU8 およびそれ以降でカスタム実装を忠実に再現するベンチマークを開発するための拡張可能な機能をパートナーや顧客に提供します。"
 author: RobinARH
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: robadawy
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 0fc4c3cdab397cc65e23922f306d7b64e808b3dc
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 5eb54b925e90f450e891c11ae1925425d0a6ca1d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="performance-benchmark-software-development-toolkit-sdk-for-dynamics-ax-2012"></a>Dynamics AX 2012 のパフォーマンス ベンチマーク ソフトウェア開発ツールキット (SDK)
+# <a name="performance-benchmark-software-development-kit-sdk"></a>パフォーマンス ベンチマーク ソフトウェア開発キット (SDK)
 
 [!include [banner](../../includes/banner.md)]
 

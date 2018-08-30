@@ -1,5 +1,5 @@
 ---
-title: "構成"
+title: "Intelligent Data Management Framework (IDMF) での構成"
 description: "このトピックでは、Microsoft Dynamics AX のインテリジェント データ管理フレームワーク (IDMF) 機能について説明します。"
 author: kfend
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: kfend
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 375460b365d159e4556256da384c8ed1592c67bb
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 70b247522d6e7b9f677e65a4c68c8573445a658b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="configuration-in-the-intelligent-data-management-framework-ax-2012"></a>Intelligent Data Management Framework (AX 2012) でのコンフィギュレーション
+# <a name="configuration-in-the-intelligent-data-management-framework-idmf"></a>Intelligent Data Management Framework (IDMF) での構成
 
 [!include [banner](../../includes/banner.md)]
 

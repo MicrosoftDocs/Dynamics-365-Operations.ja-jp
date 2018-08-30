@@ -1,5 +1,5 @@
 ---
-title: "Symbol フォント"
+title: "Dynamics Symbol フォント"
 description: "このトピックでは、各リリースで使用できるシンボルの一覧へのリンクを提供します。 製品で、記号が使用されているさまざまな場所の説明と、場所ごとの使用方法のガイドラインも含まれています。"
 author: RobinARH
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: bensm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 4fd7628cfec0f146a9cf385b9df96ab1e3020769
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 7ca8451fc3811cc1960a6f6211ef461ecb40cb3f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="symbol-font"></a>Symbol フォント
+# <a name="dynamics-symbol-font"></a>Dynamics Symbol フォント
 
 [!include [banner](../includes/banner.md)]
 

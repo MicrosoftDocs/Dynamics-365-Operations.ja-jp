@@ -18,14 +18,14 @@ ms.author: lolsen
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 11
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 01f027b2fe0199a82352e638def121171be2ce3f
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: df2794b3c690acd7a57801fede51c3792c343202
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="extend-table-maps-used-for-versioning"></a>バージョン管理で使用されるテーブル マップの拡張
+# <a name="extend-table-maps-that-are-used-for-versioning"></a>バージョン管理で使用されるテーブル マップの拡張
 
 [!include [banner](../includes/banner.md)]
 

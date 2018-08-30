@@ -1,5 +1,5 @@
 ---
-title: "フォームへの新しいデータ ソースの追加"
+title: "拡張機能によって、フォームにデータ ソースを追加"
 description: "このトピックでは、拡張機能を使用して、既存のフォームに新しいデータ ソースを追加する方法について説明します。"
 author: ivanv-microsoft
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: ivanv
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 4
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: e2aa9806d22e6d90583613ff6fd203ddd393fac0
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 2717528791eae83740d7ea667b54f660406eb9b3
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="add-a-new-data-source-to-a-form"></a>フォームへの新しいデータ ソースの追加
+# <a name="add-data-sources-to-forms-through-extension"></a>拡張機能によって、フォームにデータ ソースを追加
 
 [!include [banner](../includes/banner.md)]
 

@@ -3,7 +3,7 @@ title: "クラウド配置のシステム要件"
 description: "このトピックでは、現在のバージョンの Microsoft Dynamics 365 for Finance and Operations におけるクラウド展開のシステム要件を一覧表示します。"
 author: sericks007
 manager: AnnBe
-ms.date: 05/11/2018
+ms.date: 07/19/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: dc2ab66bf6e3195e1ebf394f99182f59c3ee2125
-ms.openlocfilehash: 64f7fb2910f80aaf35cfe6915fe6053d8aaf7e91
+ms.sourcegitcommit: 66733ca771021b60bcfb9c076038e448fd909c64
+ms.openlocfilehash: 980a583f67832d6efbe38edcbbb81c209fd9994e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
@@ -98,13 +98,13 @@ Finance and Operations では、ドキュメント回覧エージェントなど
     - 最低でも、3 ギガバイト (GB) の ランダム アクセス メモリー (RAM) が必要です。  オフラインの SQL Server と組み合わせるときは、4 GB 以上の RAM が必要です。
     - インターネットにアクセスできる必要があります。
 
-## <a name="retail-modern-pos-for-apple-ipad-requirements"></a>Apple iPad 用 Retail Modern POS の要件
+## <a name="retail-modern-pos-for-apple-iphone-or-ipad-requirements"></a>Apple iPhone または iPad 用 Retail Modern POS の要件
 
-- iOS 8 またはそれ以降
+- iOS 11 またはそれ以降
 
-## <a name="retail-modern-pos-for-android-tablets-requirements"></a>Android タブレット用 Retail Modern POS の要件
+## <a name="retail-modern-pos-for-android-phone-or-tablet-requirements"></a>Android 電話またはタブレット用 Retail Modern POS の要件
 
-- Android OS 4.0.4 以降
+- Android OS 6.0 以降
 
 ## <a name="retail-hardware-station-requirements"></a>Retail hardware station 要件
 ### <a name="supported-operating-systems"></a>サポートされるオペレーティング システム

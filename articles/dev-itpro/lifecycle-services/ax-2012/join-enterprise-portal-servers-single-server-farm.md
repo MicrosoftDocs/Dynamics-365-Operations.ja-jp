@@ -1,5 +1,5 @@
 ---
-title: "エンタープライズ ポータル サーバーの 1 つのサーバー ファームへの結合 (AX 2012)"
+title: "エンタープライズ ポータル サーバーの 1 つのサーバー ファームへの結合"
 description: "この記事では、エンタープライズ ポータル サーバー (Microsoft Dynamics AX 2012 用) を単一のサーバー ファームに参加させる方法について説明します。"
 author: aneesmsft
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: aneesa
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: a85336d8235e9b61df4e0618cc9f73616cae8c2b
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 488afaea08cf10ead1768ec888e0bd8219073a1b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="join-enterprise-portal-servers-into-a-single-server-farm-ax-2012"></a>エンタープライズ ポータル サーバーの 1 つのサーバー ファームへの結合 (AX 2012)
+# <a name="join-enterprise-portal-servers-into-a-single-server-farm"></a>エンタープライズ ポータル サーバーの 1 つのサーバー ファームへの結合
 
 [!include [banner](../../includes/banner.md)]
 
@@ -128,7 +128,11 @@ Microsoft Dynamics Lifecycle Services (LCS) でエンタープライズ ポー�
         <hosts>
         <!--List of hosts -->
         <!-- Replace highlighted with your own EP server name -->
-        <host name="EP-01" cachePort="22233" /> <host name="EP-02" cachePort="22233" /> <host name="EP-03" cachePort="22233" /> <host name="EP-0N" cachePort="22233" /> </hosts>
+        <host name="EP-01" cachePort="22233" /> 
+        <host name="EP-02" cachePort="22233" />  
+        <host name="EP-03" cachePort="22233" /> 
+        <host name="EP-0N" cachePort="22233" /> 
+        </hosts>
         </dataCacheClient>
         <Microsoft.Dynamics>
         <AppFabricCaching CacheName="default" />

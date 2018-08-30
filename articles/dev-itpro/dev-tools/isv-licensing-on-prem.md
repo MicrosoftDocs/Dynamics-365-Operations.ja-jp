@@ -1,5 +1,5 @@
 ---
-title: "オンプレミスの ISV ライセンス"
+title: "独立系ソフトウェア ベンダー (ISV) ライセンス (オンプレミス)"
 description: "このトピックでは、オンプレミス環境における独立系ソフトウェア ベンダー (ISV) のライセンス機能について説明します。"
 author: manalidongre
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: manado
 ms.search.validFrom: 2018-03-07
 ms.dyn365.ops.version: AX 7.3.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 85c00a1a3d282f120a9b2355cee7c032724d55b0
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: a78dbef13408bc4256138198add914cf7d3932e2
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="isv-licensing-on-premises"></a>オンプレミスの ISV ライセンス
+# <a name="independent-software-vendor-isv-licensing-on-premises"></a>独立系ソフトウェア ベンダー (ISV) ライセンス (オンプレミス)
 
 [!include [banner](../includes/banner.md)]
 

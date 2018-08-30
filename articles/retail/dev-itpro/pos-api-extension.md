@@ -1,5 +1,5 @@
 ---
-title: "POS 拡張からの API 呼び出し"
+title: "販売時点管理 (POS) API または POS 拡張からの工程を呼び出す"
 description: "Retail POS API を使用すると、拡張機能を構築したり、POS に新しい機能を追加したりすることができます。"
 author: mugunthanm
 manager: AnnBe
@@ -17,14 +17,14 @@ ms.author: mumani
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: e22f09912ce5ecc46d7b1e8712bf963bc9ce7a80
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 3c59fcb1e2ec2593ff9b4a09f4c163f45e78f97c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="call-a-pos-api-or-operation-from-a-pos-extension"></a>POS 拡張機能からの POS API または操作の呼び出し
+# <a name="call-point-of-sale-pos-apis-or-operations-from-pos-extensions"></a>販売時点管理 (POS) API または POS 拡張からの工程を呼び出す
 
 [!include [banner](../../includes/banner.md)]
 

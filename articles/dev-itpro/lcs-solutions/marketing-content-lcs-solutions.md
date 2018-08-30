@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Dynamics 365 for Finance and Operations ソリューションのステージおよび公開"
+title: "Finance and Operations ソリューションのステージおよび公開"
 description: "このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) ソリューション パッケージのマーケティング コンテンツを Microsoft Cloud Partner Portal にアップロードする方法、およびソリューションを準備して発行する方法について説明します。"
 author: kfend
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.assetid: 80b0cc44-ffbe-400e-b902-60518a930b0d
 ms.search.region: Global
 ms.author: omarc
 ms.translationtype: HT
-ms.sourcegitcommit: 43c18efc4b02da594821018b6d4b8748a4f5eb84
-ms.openlocfilehash: 2afa5844aae15ca489071ac969105f94ce2b5c15
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 49d0c4265baf51345975f433999fc5092c749960
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/12/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="stage-and-publish-a-microsoft-dynamics-365-for-finance-and-operations-solution"></a>Microsoft Dynamics 365 for Finance and Operations ソリューションのステージおよび公開
+# <a name="stage-and-publish-finance-and-operations-solutions"></a>Finance and Operations ソリューションのステージおよび公開
 
 [!include [banner](../includes/banner.md)]
 

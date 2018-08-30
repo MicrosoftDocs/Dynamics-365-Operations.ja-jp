@@ -1,5 +1,5 @@
 ---
-title: "企業間のエンティティ データのコピーと比較 (AX 2012)"
+title: "会社間でのエンティティ データのコピーと比較"
 description: "このトピックでは、Microsoft Dynamics AX 2012 R2 および Microsoft Dynamics AX 2012 R3 の企業間でエンティティ データをコピーする方法についての情報を提供します。"
 author: kfend
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: kfend
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: b482b9816847e3bd7379cf78404ceb2ddb9b97b4
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: c1a5d2a5cd85d8afb8feed8a86c21525a86f8864
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="copying-and-comparing-entity-data-between-companies-ax-2012"></a>企業間のエンティティ データのコピーと比較 (AX 2012)
+# <a name="copy-and-compare-entity-data-between-companies"></a>会社間でのエンティティ データのコピーと比較
 
 [!include [banner](../../includes/banner.md)]
 

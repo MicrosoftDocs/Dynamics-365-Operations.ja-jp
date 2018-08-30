@@ -1,5 +1,5 @@
 ---
-title: "ライセンス数見積もりツール (AX 2012)"
+title: "Lifecycle Services (LCS) のライセンス数見積もりツール"
 description: "この記事では、Microsoft Dynamics Lifecycle Services (LCS) のライセンス数見積もりツールに関する情報を提供します。 ライセンス数見積もりツールは、組織の Microsoft Dynamics AX に必要なライセンスの数の予測に役立ちます。 また、データを入力してレポートを生成する方法についても説明します。これで、ツールの使用を開始できます。"
 author: kfend
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: kfend
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 1fc794115893529aaca7ac0f0b3598fc3c1f8488
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: a3f006c2c7cb37c489a3268217b0e65a1f4d39e4
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="license-sizing-estimator-ax-2012"></a>ライセンス数見積もりツール (AX 2012)
+# <a name="license-sizing-estimator-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) のライセンス数見積もりツール
 
 [!include [banner](../../includes/banner.md)]
 

@@ -18,14 +18,14 @@ ms.author: ntecklu
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: d3fc1e8ea856b6c7c6daffd8f46f2e5e4fb12710
-ms.openlocfilehash: 4383825c37d7aed6de60e8da392a1d5b0c5c713a
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: b952a5c1b56e8f0a8534323d0e20b00401147615
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/04/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="synchronize-a-bpm-library-with-visual-studio-team-services"></a>BPM ライブラリと Visual Studio Team Services の同期
+# <a name="synchronize-bpm-libraries-with-visual-studio-team-services"></a>BPM ライブラリと Visual Studio Team Services の同期
 
 [!include [banner](../includes/banner.md)]
 

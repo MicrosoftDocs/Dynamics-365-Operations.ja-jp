@@ -1,5 +1,5 @@
 ---
-title: "Modern POS およびクラウド POS かの選択をします"
+title: "Retail Modern POS (MPOS) かクラウド POS かの選択"
 description: "このトピックでは、Retail Modern POS およびクラウド POS の主な違いについて説明します。 Microsoft Dynamics 365 for Retail を実装する小売業者が、要件に対して最適な選択ができるよう考慮すべきさまざまな要因についても説明します。"
 author: jblucher
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.author: jeffbl
 ms.search.validFrom: 2017-10-12
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 7eb15f9f73f4773d98160e1b0ec5ce74c159cdea
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: aff9485789a3c7cedcea1a66e233603332c143b2
 ms.contentlocale: ja-jp
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="choose-between-modern-pos-and-cloud-pos"></a>Modern POS およびクラウド POS かの選択をします
+# <a name="choose-between-retail-modern-pos-mpos-and-cloud-pos"></a>Retail Modern POS (MPOS) かクラウド POS かの選択
 
 [!include [banner](includes/banner.md)]
 

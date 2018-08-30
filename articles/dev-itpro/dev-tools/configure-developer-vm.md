@@ -1,5 +1,5 @@
 ---
-title: "1 ボックス開発環境のコンフィギュレーション"
+title: "1 ボックス開発環境の構成"
 description: "この記事では、ワンボックス開発環境の推奨構成について説明します。"
 author: RobinARH
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 9d7d3c9cf2e6f28c671ec764c25d18e627534f1b
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 32a259f093f3788d1f7c16795acf8ccb85fcc93b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="configure-a-one-box-development-environment"></a>1 ボックス開発環境のコンフィギュレーション
+# <a name="configure-one-box-development-environments"></a>1 ボックス開発環境の構成
 
 [!include [banner](../includes/banner.md)]
 

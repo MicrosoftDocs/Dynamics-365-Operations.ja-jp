@@ -1,5 +1,5 @@
 ---
-title: ValueMetadata
+title: "ValueMetadata タイプ"
 description: "値 メタデータ タイプ"
 author: shadykdc
 manager: AnnBe
@@ -16,10 +16,10 @@ ms.author: kashea
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 6376c296f897e0e8e32e27d6a9b14fa4231b519e
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 4a2673a937a0df04a6984e579b6c03f7d7d2e250
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 

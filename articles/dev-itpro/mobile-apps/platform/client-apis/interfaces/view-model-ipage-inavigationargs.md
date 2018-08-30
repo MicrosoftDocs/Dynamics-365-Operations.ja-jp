@@ -1,5 +1,5 @@
 ---
-title: NavigationArgs
+title: "NavigationArgs タイプ"
 description: "NavigationArgs タイプ"
 author: shadykdc
 manager: AnnBe
@@ -16,10 +16,10 @@ ms.author: kashea
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 72ea007926fe6eb6d844b9252346927e9c094da6
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: b1e38920b7a3d529eebfd5b5039591aaaf88a79d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 

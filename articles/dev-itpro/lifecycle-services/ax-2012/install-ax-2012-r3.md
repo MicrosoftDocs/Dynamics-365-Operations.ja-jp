@@ -1,5 +1,5 @@
 ---
-title: "AX 2012 R3 用データのインポート/エクスポート フレームワークのインストール"
+title: "AX 2012 R3 用データのインポート/エクスポート フレームワーク (DIXF) のインストール"
 description: "このトピックでは、Microsoft Dynamics AX 2012 R3 のデータ インポート/エクスポート フレームワークをインストールする方法について説明します。"
 author: kfend
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: kfend
 ms.search.validFrom: 
 ms.dyn365.ops.version: AX 2012 R3 CU8
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 0559c6c33b6a823380f9aed76e2c319ed13cdf38
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: ba70f794f63203c0e14e90ff37114893cb622f47
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="install-the-data-importexport-framework-for-ax-2012-r3"></a>AX 2012 R3 用データのインポート/エクスポート フレームワークのインストール
+# <a name="install-the-data-importexport-framework-dixf-for-ax-2012-r3"></a>AX 2012 R3 用データのインポート/エクスポート フレームワーク (DIXF) のインストール
 
 [!include [banner](../../includes/banner.md)]
 

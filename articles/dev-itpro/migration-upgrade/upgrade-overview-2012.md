@@ -1,5 +1,5 @@
 ---
-title: "Dynamics AX 2012 から Dynamics 365 for Finance and Operations へのアップグレード"
+title: "AX 2012 から Finance and Operations へのアップグレード"
 description: "このトピックでは、Microsoft Dynamics AX 2012 を現在実行している顧客が、データとコードを Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition に移動するために使用できるプロセスについて説明します。"
 author: tariqbell
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.author: tabell
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 5bc4c31ee76c0d318c86885fdacbb813ae47da19
-ms.openlocfilehash: f919c79a9cf00787592ab4b340e39c2269c34d5d
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 8939538f11ebf17c2519470c7c87fe2e4d8a9c14
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="upgrade-microsoft-dynamics-ax-2012-to-microsoft-dynamics-365-for-finance-and-operations"></a>Microsoft Dynamics AX 2012 の Microsoft Dynamics 365 for Finance and Operations へのアップグレード
+# <a name="upgrade-from-ax-2012-to-finance-and-operations"></a>AX 2012 から Finance and Operations へのアップグレード
 
 [!include [banner](../includes/banner.md)]
 

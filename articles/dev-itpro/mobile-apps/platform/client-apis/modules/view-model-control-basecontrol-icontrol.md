@@ -1,5 +1,5 @@
 ---
-title: "状態"
+title: "管理モジュール"
 description: "コントロールは、ページのコンテンツを構成するものです。"
 author: shadykdc
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.author: kashea
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: b33ee29594610348ff262a0dc416eb1b8c9597c3
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 20a3457e8e5b609af4653f658ebe650c8ae7d0e7
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="control"></a>状態 
+# <a name="control-module"></a>管理モジュール
 
 [!include [banner](../../../../includes/banner.md)]
 

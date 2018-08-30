@@ -1,5 +1,5 @@
 ---
-title: CompleteEventArgs
+title: "CompleteEventArgs タイプ"
 description: "CompleteEventArgs タイプ"
 author: shadykdc
 manager: AnnBe
@@ -16,10 +16,10 @@ ms.author: kashea
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 8234a252f175e8c11c1a824bb70ad9cb9972377a
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: a16cc63d718abe769cfc99c18effdece85ef615b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "画像"
+title: "画像タイプ"
 description: "モバイル アプリ内のイメージを表すためのイメージ コントロール インターフェイス。 イメージは、次のいずれかの種類が使用できます&amp;58 DataUri、Base64、URL、AOTResource、または Symbol。"
 author: shadykdc
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.author: kashea
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 7fe2b2833070879f10c821d6c9b4796e40c587c0
+ms.sourcegitcommit: ed6cabcc8c76fba3d4414cd4b564b720c54169e0
+ms.openlocfilehash: 14cfb65eaaf6c2a963edd420caa5b022d147d52f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="image-type"></a>Image タイプ
+# <a name="image-type"></a>画像タイプ
 
 [!include [banner](../../../../includes/banner.md)]
 

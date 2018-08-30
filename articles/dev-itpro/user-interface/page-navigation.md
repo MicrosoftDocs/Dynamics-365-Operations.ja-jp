@@ -1,5 +1,5 @@
 ---
-title: "ナビゲーション"
+title: "ナビゲーション概念"
 description: "この記事では、ダッシュボード、新しいナビゲーション検索機能、ナビゲーション ペイン、ワークスペース、タイルなどの主要なナビゲーションの概念について説明します。"
 author: jasongre
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: a936d92351f4ec28cefa0edb0b6e8d682a759f2e
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 58e9df441f07d72166dac3d67500a51807133852
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="navigation"></a>ナビゲーション
+# <a name="navigation-concepts"></a>ナビゲーション概念
 
 [!include [banner](../includes/banner.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: "オンライン ストアの概要"
+title: "オンライン ストアの設定"
 description: "この記事は、小売オンライン ストアに関する情報および、オンライン ストアを Microsoft Dynamics 365 for Retail で設定する方法について説明します。"
 author: kfend
 manager: AnnBe
@@ -20,14 +20,14 @@ ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 3814e5a4a88f439c89981f191e8896afb2ced68b
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 640f134dff19b60c2b14259f8a6c838e44c8926e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="online-store-overview"></a>オンライン ストアの概要
+# <a name="set-up-online-stores"></a>オンライン ストアの設定
 
 [!include [banner](includes/banner.md)]
 

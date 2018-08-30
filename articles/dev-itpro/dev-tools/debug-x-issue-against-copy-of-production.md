@@ -18,14 +18,14 @@ ms.author: tabell
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 6c6c7c3f63b7a49820811a7ec80248b09b6e3acf
-ms.openlocfilehash: 7e031ed1f815ebc5f70a55b82427593b58509afa
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 8720dae4c5f3889f6ca9ceda1fcff8aaa110fa80
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/19/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="debug-x-against-a-copy-of-a-production-database"></a>生産データベースのコピーに対する X++ のデバッグ
+# <a name="debug-x-against-copies-of-production-databases"></a>生産データベースのコピーに対する X++ のデバッグ
 
 [!include [banner](../includes/banner.md)]
 
@@ -53,7 +53,6 @@ ms.lasthandoff: 06/19/2018
 - デバッグためにデータの破損が発生する可能性がありますので、実稼働環境を直接デバッグできません。 ただし、開発者は実行時に値を操作できます。 あるいは、独自のインスタンスでは、開発者はデータを変更するコード変更を行うことができます。
 
     > [!NOTE] 
-
     > デバッグに使用される開発環境はサンドボックス環境と同じ LCS プロジェクトに存在する必要があり、両方とも Microsoft により管理されている必要があります。 この要件は、サンドボックス データベースのセキュリティを強化するのに役立ちます。 既定では、サンドボックスと生産 SQL データベースの両方にファイアウォールの制限があります。 この制限により、これらの環境内のサーバーのみがデータベースに接続できます。 デバッグを有効にするため、開発環境がサンドボックスのデータベースに接続できるように、ファイアウォールに例外が追加されています。
 
 

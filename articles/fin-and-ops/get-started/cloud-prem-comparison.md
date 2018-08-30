@@ -1,5 +1,5 @@
 ---
-title: "クラウドとオンプレミスの機能比較"
+title: "クラウドおよびオンプレミスの機能比較"
 description: "このトピックでは、クラウドとオンプレミスでサポートされる機能を示します。"
 author: robinarh
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: robinr
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 7bb152334b3b06c86dff024d0e99aea9bb452deb
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: 4354b9d55cc84f7c74020d95617c406dc5fb225c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="cloud-and-on-premises-feature-comparison"></a>クラウドとオンプレミスの機能比較
+# <a name="comparison-of-cloud-and-on-premises-features"></a>クラウドおよびオンプレミスの機能比較
 
 [!include [banner](../includes/banner.md)]
 

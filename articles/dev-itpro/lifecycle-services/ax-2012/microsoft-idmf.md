@@ -1,5 +1,5 @@
 ---
-title: Dynamics AX Intelligent Data Management Framework (AX 2012)
+title: Dynamics AX Intelligent Data Management Framework (IDMF)
 description: "The Microsoft Dynamics AX Intelligent Data Management Framework (IDMF) を使用すると、システム管理者が Microsoft Dynamics AX インストールのパフォーマンスを最適化できます。 IDMF は、Microsoft Dynamics AX アプリケーションの正常性の評価と現在の使用パターンの分析を行い、データベース サイズの削減に役立ちます。"
 author: kfend
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: kfend
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 6c7616603625cf881ff15aff73546f5bb19b635b
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 16bfe36d1afa08d4a55afa793f482440931f6a8c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="dynamics-ax-intelligent-data-management-framework-ax-2012"></a>Dynamics AX Intelligent Data Management Framework (AX 2012)
+# <a name="dynamics-ax-intelligent-data-management-framework-idmf"></a>Dynamics AX Intelligent Data Management Framework (IDMF)
 
 [!include [banner](../../includes/banner.md)]
 

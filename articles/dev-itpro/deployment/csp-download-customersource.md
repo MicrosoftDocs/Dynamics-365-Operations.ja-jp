@@ -1,5 +1,5 @@
 ---
-title: "クラウド サービス プロバイダーを通して、Dynamics AX 2012 へのアクセスを取得します。"
+title: "クラウド ソリューション プロバイダーを通して Finance and Operations を購入した場合は AX 2012 をダウンロードします"
 description: "Microsoft クラウド ソリューション プロバイダー (CSP) を使用して Finance and Operations を購入し、オンプレミス ソフトウェアの権利を有するお客様は、Dynamics AX 2012 R3 を CustomerSource からダウンロードできます。"
 author: margoc
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: margoc
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 2be0bbe3cb4a37e26304c19e9a7c3dd71c18b94a
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: cb878fb7916c7db76be112bc901a2ec5d800f448
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="information-for-customers-who-purchased-finance-and-operations-through-a-cloud-service-provider"></a>クラウド サービス プロバイダーを通じて Finance and Operations を購入した顧客向けの情報
+# <a name="download-ax-2012-if-you-purchased-finance-and-operations-through-a-cloud-solution-provider"></a>クラウド ソリューション プロバイダーを通して Finance and Operations を購入した場合は AX 2012 をダウンロードします
 
 [!include [banner](../includes/banner.md)]
 

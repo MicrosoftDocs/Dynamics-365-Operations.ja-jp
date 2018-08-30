@@ -1,5 +1,5 @@
 ---
-title: "本社からの Retail アカウントとデバイスの管理"
+title: "Retail 有効化アカウントの管理とデバイスの検証"
 description: "このトピックでは、小売業者がModern POS デバイスまたはクラウド POS デバイスを有効にするために Retail アクティベーション アカウント を IT Pro で設定する方法について説明します。"
 author: athinesh99
 manager: AnnBe
@@ -20,14 +20,14 @@ ms.author: athinesh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 93e6db61b9d1e94d68d4cd706f1cb27df2d2eaa7
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 637e9eedb89b202dcb29519737df7f6aa5c2bd14
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="manage-retail-accounts-and-devices-from-headquarters"></a>本社からの Retail アカウントとデバイスの管理
+# <a name="manage-retail-activation-accounts-and-validate-devices"></a>Retail 有効化アカウントの管理とデバイスの検証
 
 [!include [banner](includes/banner.md)]
 

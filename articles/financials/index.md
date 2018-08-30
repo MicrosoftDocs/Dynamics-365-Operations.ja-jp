@@ -21,7 +21,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: b8f2f3a33dc19c2ebc941d1a504eae0c276f3cdf
 ms.openlocfilehash: a64621c5310e5f68b9d6f1545bb39ce1519d71cf
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/25/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
@@ -33,16 +33,23 @@ ms.lasthandoff: 06/25/2018
 
 機能領域を選択すると詳細が表示されます。
 
-:::row::: :::column::: - [買掛金勘定](accounts-payable/accounts-payable.md) 
-        - [売掛金勘定](accounts-receivable/accounts-receivable.md)
+:::row:::
+    :::column:::
+        - [買掛金](accounts-payable/accounts-payable.md) 
+        - [売掛金](accounts-receivable/accounts-receivable.md)
         - [予算作成](budgeting/budgeting-overview.md) 
         - [現金および銀行管理](cash-bank-management/cash-bank-management.md)
-        - [原価計算](cost-accounting/cost-accounting-home-page.md) :::column-end::: :::column::: - [経費管理](expense-management/expense-management.md)
-        - [財務報告](../dev-itpro/analytics/financial-reporting-intro.md?toc=/fin-and-ops/toc.json)
+        - [原価計算](cost-accounting/cost-accounting-home-page.md)
+    :::column-end:::
+    :::column:::
+        - [経費管理](expense-management/expense-management.md)
+        - [財務諸表](../dev-itpro/analytics/financial-reporting-intro.md?toc=/fin-and-ops/toc.json)
         - [固定資産](fixed-assets/fixed-assets.md)
         - [一般会計](general-ledger/general-ledger.md) 
         - [プロジェクト管理](project-management/overview-project-management-accounting.md)
-        - [公的機関](public-sector/public-sector-functionality.md) :::column-end::: :::row-end:::
+        - [公的機関](public-sector/public-sector-functionality.md) 
+    :::column-end:::
+:::row-end:::
 
 
 ## <a name="additional-resources"></a>その他のリソース

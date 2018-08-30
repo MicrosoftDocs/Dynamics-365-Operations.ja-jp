@@ -1,5 +1,5 @@
 ---
-title: "Retail SDK パッケージ"
+title: "配置可能小売パッケージの作成"
 description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations の配置可能小売パッケージを作成する方法について説明します。"
 author: mugunthanm
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: sijoshi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 6c6c7c3f63b7a49820811a7ec80248b09b6e3acf
-ms.openlocfilehash: 37dfe38c7e7912503133a41ce600f0d3543d6e39
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 57a6ede17280da7df18616033d69a18d5919115f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/19/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="retail-sdk-packaging"></a>Retail SDK パッケージ
+# <a name="create-retail-deployable-packages"></a>配置可能小売パッケージの作成
 
 [!include [banner](../../includes/banner.md)]
 

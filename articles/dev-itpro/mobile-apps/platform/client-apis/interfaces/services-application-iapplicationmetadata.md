@@ -1,5 +1,5 @@
 ---
-title: ApplicationMetadata
+title: "ApplicationMetadata タイプ"
 description: "アプリケーションの宣言メタデータを表します"
 author: shadykdc
 manager: AnnBe
@@ -16,10 +16,10 @@ ms.author: kashea
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 42681ef3c71c1efd3fec0b1816edccfe678a03a3
+ms.sourcegitcommit: ed6cabcc8c76fba3d4414cd4b564b720c54169e0
+ms.openlocfilehash: 3d38b632298ccb4457c6a741f3d42777f2aa8306
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 

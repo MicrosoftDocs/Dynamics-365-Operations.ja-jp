@@ -1,5 +1,5 @@
 ---
-title: "F クラス - FormNotifyEventArgs への FormListBoxControl"
+title: "F クラス (FormListBoxControl から FormNotifyEventArgs)"
 description: "FormListBoxControl から FormNotifyEventArgs までのクラスの API 参照。"
 author: RobinARH
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 6353b9f779bbb2d9e726fbd2e46f09dba8ebb01e
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 67faa529681eba2177adfdfb42e1676a0a3aa67d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="f-classes---formlistboxcontrol-to-formnotifyeventargs"></a>F クラス - FormNotifyEventArgs への FormListBoxControl
+# <a name="f-classes-formlistboxcontrol-to-formnotifyeventargs"></a>F クラス (FormListBoxControl から FormNotifyEventArgs)
 
 [!include [banner](../includes/banner.md)]
 

@@ -18,14 +18,14 @@ ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f2e3a40f58b57785079e1940b2d24a3598a3ad1b
-ms.openlocfilehash: 3688029f290af325404d91700750533fd7e2e473
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 9997740a69f1e6ea449ee2cceaab4c0bc8753652
 ms.contentlocale: ja-jp
-ms.lasthandoff: 07/09/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="x-conversion-run-time-functions"></a>X++ 変換ランタイム関数
+# <a name="x-conversion-runtime-functions"></a>X++ 変換ランタイム関数
 
 [!include [banner](../includes/banner.md)]
 

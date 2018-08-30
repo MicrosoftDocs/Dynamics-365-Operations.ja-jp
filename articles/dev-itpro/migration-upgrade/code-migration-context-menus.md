@@ -1,5 +1,5 @@
 ---
-title: "コードの移行 - コンテキスト メニュー"
+title: "コードの移行 - コンテキスト メニュー コード"
 description: "新しいプログラミング モデルには、コンテキスト メニュー (ショートカット メニュー) が必要です。 この記事では、Microsoft Dynamics AX 2012 から Microsoft Dynamics 365 for Finance and Operations へのコンテキスト メニュー コードのマイグレーション プロセスについて説明します。 また、コンテキスト メニューの UX ガイドラインも含まれます。"
 author: jasongre
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: fc4d971ddd894d478482104c4be6c5ebcd463d9c
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 52be3047cdd20ca7f17d9d980164c1a43bf0d2f8
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="code-migration---context-menus"></a>コードの移行 - コンテキスト メニュー
+# <a name="code-migration---context-menu-code"></a>コードの移行 - コンテキスト メニュー コード
 
 [!include [banner](../includes/banner.md)]
 

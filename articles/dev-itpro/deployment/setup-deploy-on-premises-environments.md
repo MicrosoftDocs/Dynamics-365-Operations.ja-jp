@@ -1,5 +1,5 @@
 ---
-title: "オンプレミス環境の設定と配置ランディング ページ"
+title: "オンプレミス環境の設定と配置ホーム ページ"
 description: "このトピックでは、オンプレミス環境の計画、設定、および展開方法に関するトピックへのリンクを提供します。"
 author: sarvanisathish
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: sarvanis
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 8d93b3b0ff46c415dfeda3ee73147b8b49cf6e4d
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: e8377a9a1c4a64b621617ea0ff35171577dd3c21
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="set-up-and-deploy-on-premises-environments-landing-page"></a>オンプレミス環境の設定と配置ランディング ページ
+# <a name="set-up-and-deploy-on-premises-environments-home-page"></a>オンプレミス環境の設定と配置ホーム ページ
 
 [!include [banner](../includes/banner.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: "アップグレードした Dynamics AX 2012 R3 販売キューブをエンティティの店舗へ移行する"
+title: "アップグレードした AX 2012 R3 販売キューブをエンティティ格納へ移行する"
 description: "このチュートリアルでは、アップグレードされた Microsoft Dynamics AX 2012 R3 キューブ スキーマを、Microsoft Dynamics 365 for Finance and Operations のエンティティ格納に移行します。 例として、Dynamics AX 2012 R3 に含まれていた販売キューブを使用します。"
 author: MilindaV2
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: milindav
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 1f2118fb70673c4194f4c31762fbd18099c359f9
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: ba5e8e4b831d0933380349a4d7e8ea00f7fda38c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="migrate-an-upgraded-dynamics-ax-2012-r3-sales-cube-to-the-entity-store"></a>アップグレードした Dynamics AX 2012 R3 販売キューブをエンティティの店舗へ移行する
+# <a name="migrate-upgraded-ax-2012-r3-sales-cubes-to-the-entity-store"></a>アップグレードした AX 2012 R3 販売キューブをエンティティ格納へ移行する
 
 [!include [banner](../includes/banner.md)]
 

@@ -1,9 +1,9 @@
 ---
-title: "クラウド環境への更新プログラムの適用"
+title: "クラウド環境へ更新プログラムを適用"
 description: "このトピックでは、Lifecycle Services (LCS) を使用して、バイナリ更新プログラムまたはアプリケーション (AOT) 展開可能なパッケージをクラウド環境に適用する方法について説明します。"
 author: manalidongre
 manager: AnnBe
-ms.date: 11/16/2017
+ms.date: 07/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,14 +17,14 @@ ms.author: manado
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 ms.translationtype: HT
-ms.sourcegitcommit: d3fc1e8ea856b6c7c6daffd8f46f2e5e4fb12710
-ms.openlocfilehash: 66a8077e7508d8502a27e154ea8e75be234ea701
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: c6a9994550830b3afdeda6b164f7e5c09d52e27f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 06/04/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="apply-updates-to-a-cloud-environment"></a>クラウド環境への更新プログラムの適用
+# <a name="apply-updates-to-cloud-environments"></a>クラウド環境へ更新プログラムを適用
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,6 +38,9 @@ ms.lasthandoff: 06/04/2018
 次のトポロジは、LCS で自動化されたフローを使用するパッケージ配置をサポートします。
 - **LCS 実装プロジェクト** – すべての環境のタイプがサポートされています。 自動化されたパッケージ アプリケーションとは、実稼働環境を除くすべての環境のセルフサービス操作です。 実稼働環境については、顧客は、適用パッケージを要求を送信するため LCS を使用する必要があります。
 - **LCS パートナーと試用プロジェクト** – マルチボックス開発/テスト トポロジを除く、すべての環境のタイプがサポートされています。
+
+> [!NOTE]
+> プロジェクトのタイプに関係なく、ビルド環境があれば、LCS のみを使用してバイナリ更新プログラムとデータ アップグレード パッケージを適用します。 LCS を使用してアプリケーション配置可能パッケージを適用することはできません。
 
 他のトポロジ (以下) については、リモート デスクトップ プロトコル (RDP) を使用して環境に接続し、コマンドラインからインストールする必要があります。 手動のパッケージ配置の詳細については、[配置可能パッケージのインストール](install-deployable-package.md) を参照してください。
 

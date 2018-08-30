@@ -1,5 +1,5 @@
 ---
-title: "顧客注文の概要"
+title: "Retail Modern POS (MPOS) での顧客注文の作成"
 description: "このトピックでは、Retail Modern POS (MPOS) の顧客注文に関する情報を提供します。 顧客注文は、特別注文としても知られています。 このトピックには、関連パラメーターおよびトランザクション フローのディスカッションが含まれています。"
 author: josaw1
 manager: AnnBe
@@ -20,14 +20,14 @@ ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: f46cf7d4df4a8cb0ad1846882292965aa492239b
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 8025df4f8498efa867f71892b253f71631b731c7
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="customer-orders-overview"></a>顧客注文の概要
+# <a name="customer-orders-in-retail-modern-pos-mpos"></a>Retail Modern POS (MPOS) での顧客注文の作成
 
 [!include [banner](includes/banner.md)]
 

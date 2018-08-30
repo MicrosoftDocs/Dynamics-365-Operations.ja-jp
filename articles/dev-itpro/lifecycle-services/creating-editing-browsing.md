@@ -1,5 +1,5 @@
 ---
-title: "BPM ライブラリの作成、編集、および参照"
+title: "ビジネス プロセス モデラー (BPM) のライブラリを作成、編集、および参照"
 description: "このトピックでは、BPM ライブラリを作成または編集する方法と、既存のライブラリを参照する方法について説明します。"
 author: kfend
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: ntecklu
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: 2d123a054e05c5a3d239ea5115d31c2582903552
-ms.openlocfilehash: 938272e761a32476c7a43f6084e010ff2e3aa696
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: d983910ba74346ac810553b4a0a84eca301073b3
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="create-edit-and-browse-bpm-libraries"></a>BPM ライブラリの作成、編集、および参照
+# <a name="create-edit-and-browse-business-process-modeler-bpm-libraries"></a>ビジネス プロセス モデラー (BPM) のライブラリを作成、編集、および参照
 
 [!include [banner](../includes/banner.md)]
 

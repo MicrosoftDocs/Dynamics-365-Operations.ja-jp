@@ -1,5 +1,5 @@
 ---
-title: "Retail Modern POS アーキテクチャ"
+title: "Retail Modern POS (MPOS) アーキテクチャ"
 description: "このトピックでは、POS トポロジについて説明します。"
 author: RobinARH
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: dd23830de2b5b94ae3c365e70b6333fbfd7cdaf1
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 30782a9464cf7ae3a3f083807d360f27acd999f8
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="retail-modern-pos-architecture"></a>Retail Modern POS アーキテクチャ
+# <a name="retail-modern-pos-mpos-architecture"></a>Retail Modern POS (MPOS) アーキテクチャ
 
 [!include [banner](../includes/banner.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: "配置可能パッケージのインストール"
+title: "コマンド ラインからの配置可能パッケージのインストール"
 description: "このトピックでは、開発環境またはビルド環境で作成されたバイナリ更新プログラムまたはアプリケーション (AOT) の展開可能パッケージのいずれかをコマンドラインを使用して適用する手順について説明します。"
 author: manalidongre
 manager: AnnBe
@@ -18,21 +18,21 @@ ms.author: manado
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: aeeed372c604202f33b7f2110ff5629f13db31d0
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 773db05f4b98d30396f420525170d16cf90080aa
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="install-a-deployable-package"></a>配置可能パッケージのインストール
+# <a name="install-deployable-packages-from-the-command-line"></a>コマンド ラインからの配置可能パッケージのインストール
 
 [!include [banner](../includes/banner.md)]
 
 このトピックでは、開発環境またはビルド環境で作成されたバイナリ更新プログラムまたはアプリケーション (AOT) の展開可能パッケージのいずれかをコマンドラインを使用して適用する手順について説明します。
 
 > [!IMPORTANT]
-> ほとんどのタイプの環境については、配置可能パッケージを Microsoft Dynamics Lifecycle Services (LCS) から直接環境に適用できます。 詳細については、[システムで配置可能パッケージの適用](apply-deployable-package-system.md) を参照してください。 したがって、このトピックは主に、LCS による更新の適用をサポートしていない環境タイプに適用されます。 例としては、Microsoft Azure のローカル開発環境 (仮想ハード ディスク [VHDs] からダウンロード可能) およびマルチボックス開発/テスト環境があります (LCS パートナーおよび試用プロジェクト)。 ただし、LCS ではなくコマンド ラインを使用して展開可能パッケージをインストールする場合は、いつでもこのトピックを使用することができます。
+> ほとんどのタイプの環境については、配置可能パッケージを Microsoft Dynamics Lifecycle Services (LCS) から直接環境に適用できます。 詳細については、[システムで配置可能パッケージの適用](apply-deployable-package-system.md) を参照してください。 したがって、このトピックは主に、LCS による更新の適用をサポートしていない環境タイプに適用されます。 例としては、Microsoft Azure のローカル開発環境 (ダウンロード可能な仮想ハード ディスク [VHD])、マルチボックス開発/テスト環境 (LCS パートナーおよび試用プロジェクト) およびビルド環境があります。 ただし、LCS ではなくコマンド ラインを使用して展開可能パッケージをインストールする場合は、いつでもこのトピックを使用することができます。
 
 ## <a name="key-concepts"></a>重要な概念
 - **配置可能パッケージ** - 配置可能パッケージとは、任意の環境に適用できる配置の単位です。 Application Object Server (AOS)、更新されたアプリケーション パッケージ、または新しいアプリケーション パッケージのランタイム コンポーネントに対するバイナリの修正プログラムで構成できます。

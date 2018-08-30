@@ -18,13 +18,13 @@ ms.author: sarvanis
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: dec1a8a3494769ce0ace8277f0dbe46d0661d3af
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 460db6ea6a5cd744a2497efc19e54c7cc1eaea5e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="deploy-a-demo-environment"></a>デモ環境の配置
+# <a name="deploy-demo-environments"></a>デモ環境の配置
 
 [!include [banner](../includes/banner.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: "電子申告フレームワークのコンフィギュレーション"
+title: "電子申告 (ER) フレームワークの構成"
 description: "このトピックでは、電子レポート (ER) フレームワークのパラメーターを構成する方法について説明します。"
 author: NickSelin
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 85372f3269bcffd83e7808e4f57443a0b69da6f9
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: ce0891dfe6c243b1729d3e5fef94c26835e60d8b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="configure-the-electronic-reporting-framework"></a>電子申告フレームワークのコンフィギュレーション
+# <a name="configure-the-electronic-reporting-er-framework"></a>電子申告 (ER) フレームワークの構成
 
 [!include [banner](../includes/banner.md)]
 

@@ -20,7 +20,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
 ms.openlocfilehash: 32b866c252e11cf1d218b6c46b65d3dba67802a4
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
@@ -41,7 +41,7 @@ ms.lasthandoff: 05/08/2018
 <!--- [Migrate from AX 2012 (Office Mix)](https://mix.office.com/watch/4gsvk592c685)
 - [Migrate between versions (Office Mix)](https://mix.office.com/watch/os2wff38zi6f)-->
 - [Lifecycle Services で、コード アップグレード サービスを構成し、実行する](../lifecycle-services/configure-execute-code-upgrade.md)
-- [コード アップグレード後に、VSTS マッピングを構成する](configure-vso-solution.md)
+- [コード アップグレード後に VSTS マッピングを構成する](configure-vso-solution.md)
 <!-- [Resolve conflicts using Visual Studio (Office Mix)](https://mix.office.com/watch/1rl75ei2cs6d7)-->
 - [モデルの分割を理解する](../dev-tools/model-split.md)
 - [削除予定の機能](deprecated-features.md)

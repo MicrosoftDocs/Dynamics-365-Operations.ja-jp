@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Dynamics 365 for Finance and Operations の配置オプション"
+title: "配置オプション"
 description: "Microsoft Dynamics 365 for Finance and Operations は、クラウドまたはオンプレミスでの業務プロセスの実行をサポートしています。 このトピックでは、各種の展開オプションについて説明します。"
 author: kfend
 manager: AnnBe
@@ -18,13 +18,13 @@ ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 659500e54c88636bb7d2d01e0c9f3193d49e7cdc
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: e5a34a5b116d53f53953290cff9f00c94778d506
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="microsoft-dynamics-365-for-finance-and-operations-deployment-options"></a>Microsoft Dynamics 365 for Finance and Operations の配置オプション
+# <a name="deployment-options"></a>配置オプション
 
 [!include [banner](../includes/banner.md)]
 

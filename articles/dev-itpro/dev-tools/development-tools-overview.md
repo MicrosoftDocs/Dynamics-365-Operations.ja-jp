@@ -1,5 +1,5 @@
 ---
-title: "開発ツールの概要"
+title: "Visual Studio 開発ツール"
 description: "Visual Studio 2015 は、単一の開発用統合開発環境 (IDE) です。"
 author: robadawy
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: baba0f4ee3657477216e5d096560621c7acfce07
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: cb32703db45efc02debc8e23a7e9d0b61471aac4
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="development-tools-overview"></a>開発ツールの概要
+# <a name="development-tools-in-visual-studio"></a>Visual Studio 開発ツール
 
 [!include [banner](../includes/banner.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: EventHook
+title: "EventHook タイプ<T>"
 description: "EventHook タイプ"
 author: shadykdc
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.author: kashea
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: e2d13f17741a5c4e2fb4808bf0273376e7faea16
+ms.sourcegitcommit: ed6cabcc8c76fba3d4414cd4b564b720c54169e0
+ms.openlocfilehash: a08a44a7c107d4c4207711a28ee855b91c5616df
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="eventhook-typelttgt"></a>EventHook Type&lt;T&gt;
+# <a name="eventhook-typelttgt"></a>EventHook タイプ&lt;T&gt;
 
 [!include [banner](../../../../includes/banner.md)]
 

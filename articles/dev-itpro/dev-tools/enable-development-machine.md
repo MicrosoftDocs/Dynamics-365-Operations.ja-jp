@@ -3,7 +3,7 @@ title: "開発マシンでの新しいユーザーの作成"
 description: "環境が最初に配置されるとき、1 つのユーザー アカウントのみが仮想マシン (VM)上で開発者として有効になります。 この記事では、開発者が開発 VM に別のユーザー アカウントを有効にする方法について説明します。"
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,18 +18,22 @@ ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: f42949d5d1f1ef9788f086aad98b235990e576b9
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 3edf408281bd8aaaa01ca1a577dfb0bce1d7c1fb
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="create-a-new-user-on-a-development-machine"></a>開発マシンでの新しいユーザーの作成
+# <a name="create-new-users-on-development-machines"></a>開発マシンでの新しいユーザーの作成
 
 [!include [banner](../includes/banner.md)]
 
 この記事では、開発者が開発 VM に別のユーザー アカウントを有効にする方法について説明します。
+
+> [!NOTE]
+> このトピックは、ダウンロードされたローカル仮想マシン (VM) か、顧客のサブスクリプションでホストされている VM にのみ適用されます。 Microsoft が管理する開発およびビルド マシンにおいて、新しいユーザーを作成することはできません。
+
 
 環境が最初に配置されるとき、1 つのユーザー アカウントのみが仮想マシン (VM)上で開発者として有効になります。 このユーザーは、Microsoft Dynamics Lifecycle Services (LCS) によって事前設定するか、ダウンロードした仮想ハードディスク (VHD) のローカル管理者のアカウントです。 ただし、新しいユーザー アカウントを VM で開発できます。 新しいアカウントを有効にした後でも、同じ VM/アプリケーションで一度に開発できる開発者は 1 人だけです。
 

@@ -1,5 +1,5 @@
 ---
-title: "Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 の拡張機能の変更"
+title: "Finance and Operations, Enterprise Edition 7.3 の拡張機能の変更"
 description: "このトピックでは、Dynamics 365 for Finance and Operations、Enterprise エディション 7.3 でリリースされた拡張機能を一覧表示します。"
 author: FrankDahl
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: fdahl
 ms.search.validFrom: 2017-12-20
 ms.dyn365.ops.version: Platform update 4
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 6d39fd273a7a0aaefc92a164de232dfec5799657
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 2a0f2f047cb093b13614a807dde49bfdff44b87a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="extensibility-changes-in-dynamics-365-for-finance-and-operations-enterprise-edition-73"></a>Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 の拡張機能の変更
+# <a name="extensibility-changes-in-finance-and-operations-enterprise-edition-73"></a>Finance and Operations, Enterprise Edition 7.3 の拡張機能の変更
 
 [!include [banner](../includes/banner.md)]
 
@@ -45,16 +45,16 @@ ms.lasthandoff: 04/20/2018
 |ApplicationCommon | ApplicationCommon |
 |ApplicationSuite | Electronic Reporting Application Suite Integration |
 |ApplicationSuite | Foundation Upgrade |
-|ApplicationSuite | 財団 |
+|ApplicationSuite | Foundation |
 |ApplicationSuite | SCMControls |
 |ApplicationSuite | Tax Books Application Suite Integration |
 |ApplicationSuite | Tax Engine Application Suite Integration |
 |CaseManagement | CaseManagement |
-|通貨 | 通貨 |
+|Currency | Currency |
 |DataImpExpApplication | DataImpExpApplication |
 |DataUpgrade | DataUpgrade |
-|ディレクトリ | ディレクトリ |
-|ディレクトリ | SecurityReports |
+|Directory | Directory |
+|Directory | SecurityReports |
 |GeneralLedger | GeneralLedger |
 |Ledger | Ledger |
 |PersonnelManagement | PersonnelManagement |
@@ -116,7 +116,7 @@ ms.lasthandoff: 04/20/2018
 ## <a name="enumerations-that-have-been-made-extensible"></a>拡張可能になった列挙型
 
 列挙の拡張をサポートするために以下の変更が行われました。
-- 標準アプリケーションの多くの列挙が拡張可能になりました。 列挙は、列挙に 2 つのプロパティを設定することにより拡張可能になります。 **IsExtensible** プロパティは **はい** に、**UseEnumValue** プロパティは **いいえ** に設定されます。 
+- 標準アプリケーションの多くの列挙が拡張可能になりました。 列挙を拡張可能にするには、列挙に関する 2 つのプロパティを設定します。 **IsExtensible** プロパティは **はい** に、**UseEnumValue** プロパティは **いいえ** に設定されます。 
 - 一部の列挙型は状態を表します。 拡張機能によって列挙値の追加を可能にする新しいファサード メソッドが追加されました。 列挙型を拡張する方法については、「[列挙値の追加](add-enum-value.md)」を参照してください。
 - 拡張機能をサポートするために、列挙を使用する一部のアプリケーション コードが変更されました。 一般的な変更の内容は以下の通りです。
     + ポストイベント サブスクリプションを許可するための、switch の default ケースの **throw** 例外ステートメントの削除。
@@ -277,13 +277,13 @@ ms.lasthandoff: 04/20/2018
 |VendorInvoiceSearchOptions|
 |VendOutPaymFeeDistribution|
 
-拡張可能な列挙型のサポートを改善するために、Foundation の変更が行われました。 **IsExtensible** が **はい** に設定されている列挙型については、**SysPlugin** フレームワークが使用可能になりました。 列挙型の新しい名前に基づいた構文でのビューが有効になりました。
+拡張可能な列挙型のサポートを改善するために、Foundation の変更が行われました。 **IsExtensible** が **はい** に設定されている列挙型については、**SysPlugin** フレームワークが使用可能になりました。 列挙型の新しい名前に基づく構文で、ビューが使用可能になりました。
 
 ## <a name="data-manipulation-methods-that-do-not-raise-dataevents-or-missing-insert-update-delete-pre--and-post-data-events"></a>DataEvents または欠落している insert、update、delete プリおよびポストデータ イベントを生成しないデータ操作メソッド
 
-一般的な方法として、テーブルのデータ メソッドを使用して、アプリケーションを拡張するために使用できるイベントを発生させます。 コード ベースは必ずしもこのプラクティスに従ったわけではありません。 たとえば、**doInsert**、**doUpdate**、および **doDelete** データ メソッドと特定のテーブルの実装では、データ メソッドで **super()** の呼び出しは行われませんでした。
+一般なプラクティスとして、テーブルのデータ メソッドを使用して、アプリケーションの拡張に使用できるイベントを発生させます。 コード ベースは、必ずしもこのプラクティスに従っていませんでした。 たとえば、**doInsert**、**doUpdate**、および **doDelete** データ メソッドと特定のテーブルの実装では、データ メソッドで **super()** の呼び出しは行われませんでした。
 
-タイプ クラスの **insert**、**update**、および **delete** メソッドはリファクターされました。 データ メソッドで **super()** がより一貫して呼び出されるように変更されました。 これらの変更により、これらのメソッドへの拡張機能の追加が可能になり、その結果、プリイベントとポストイベントが拡張機能で使用できるようになりました。 次の表に、**insert**、**update**、および **delete** イベントが拡張機能に対して有効になったテーブルを表示します。
+タイプ クラスの **insert**、**update**、および **delete** メソッドはリファクターされました。 データ メソッドで **super()** が確実に呼び出されるように変更が行われました。 これらの変更により、これらのメソッドへの拡張機能の追加が可能になり、その結果、プリイベントとポストイベントが拡張機能で使用できるようになりました。 次の表に、**insert**、**update**、および **delete** イベントが拡張機能に対して有効になったテーブルを表示します。
 
 | テーブルとメソッド |
 | ----------------------|
@@ -346,7 +346,7 @@ ms.lasthandoff: 04/20/2018
 
 ## <a name="construct-methods-with-throw-statements"></a>throw ステートメントを使用した construct メソッド
 
-特定の型の実装が欠落していた場合、いくつかの **construct** メソッドが **throw** ステートメントで実装されました。 これは拡張性にはうまくいかないため、これを軽減するために**コンストラクト**方法は例外をスローしないように変更されました。 以下のメソッドは、クラス拡張、またはポストイベント サブスクリプションによって、拡張性に対して使用できるようになりました。
+特定の型の実装が欠落していた場合、いくつかの **construct** メソッドが **throw** ステートメントで実装されました。 これは拡張性に対してはうまく機能しません。この問題を軽減するため、例外をスローしないように、**construct** メソッドが変更されました。 以下のメソッドは、クラス拡張、またはポストイベント サブスクリプションによって、拡張性に対して使用できるようになりました。
 
 | オブジェクト |
 | -------------|
@@ -381,7 +381,7 @@ ms.lasthandoff: 04/20/2018
 
 ## <a name="find-methods-with-throw-statements"></a>throw ステートメントのメソッドを検索します
 
-特定の型の実装が欠落していた場合、いくつかの **find** メソッドが **throw** ステートメントで実装されました。 これは拡張性にはうまくいかないため、これを軽減するために**検索**方法は例外をスローしないように変更されました。 以下のメソッドは、クラス拡張、またはポストイベント サブスクリプションによって、拡張性に対して使用できるようになりました。
+特定の型の実装が欠落していた場合、いくつかの **find** メソッドが **throw** ステートメントで実装されました。 これは拡張性に対してはうまく機能しません。この問題を軽減するため、例外をスローしないように、**find** メソッドが変更されました。 以下のメソッドは、クラス拡張、またはポストイベント サブスクリプションによって、拡張性に対して使用できるようになりました。
 
 | メソッド |
 | -------------|

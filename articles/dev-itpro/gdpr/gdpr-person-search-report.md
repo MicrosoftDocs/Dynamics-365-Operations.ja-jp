@@ -16,14 +16,14 @@ ms.author: rschloma
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 250b8763c76ebe8fc71810afae9bb69b41809d23
-ms.openlocfilehash: cbe7c76ec8a546b853de64dbc40e1cf20128c1f1
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 6f522a41f4ef320c770c5ed01e6cc2bb2e50db2a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="the-person-search-report"></a>個人検索レポート
+# <a name="person-search-report"></a>個人検索レポート
 
 [!include [banner](../includes/banner.md)]
 

@@ -1,9 +1,9 @@
 ---
-title: "トリガーを使用する返品ポリシーの実装"
+title: "トリガーを使用して返品ポリシーを実装してください"
 description: "このトピックでは、トリガーを使用して新しいポリシーを実装する方法の例を 2 つ示しています。"
 author: mugunthanm
 manager: AnnBe
-ms.date: 11/14/2017
+ms.date: 07/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -18,16 +18,17 @@ ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 90c31444fefe16de3258ae9e7b6e3c1d88c6b7be
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 5d8c25dd2a0719dd4c74890e52e91da223fab24d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="implement-a-return-policy-using-triggers"></a>トリガーを使用する返品ポリシーの実装
+# <a name="implement-a-return-policy-by-using-triggers"></a>トリガーを使用して返品ポリシーを実装してください
 
-[!include [banner](../includes/banner.md)]
+> [!NOTE]
+> このトピックは、Dynamics 365 for Finance and Operations の 7.1 およびそれ以降のバージョンに適用可能です。 バージョン 7.2 およびそれ以上の場合は、この実装はサポートされていません。 これらのバージョンでは、オーバーレイせずに拡張モデルに従います。
 
 このトピックでは、トリガーを使用して新しいポリシーを実装する方法の例を 2 つ示しています。
 
@@ -163,8 +164,6 @@ ms.lasthandoff: 04/20/2018
 2.  **仕訳帳の表示**をクリックし、商品を返送してください。 「返却できません。返却日を過ぎています」というエラー メッセージが表示されます。
 3.  別の新しいトランザクションを作成し、4 つの異なるアイテムを追加します。 4 つのアイテムすべてを返すようにしてください。 4番目の項目に関してエラーが発生し、「無効はこれ以上許されません」 というメッセージが表示されます。
 
-**注記:** サンプルコードでは、期間を 100 ミリ秒として返すので、すぐにコードをテストすることができます。 必要に応じて、コンフィギュレーションを変更する必要があります。
-
-
-
+> [!NOTE]
+> サンプルコードでは、期間を 100 ミリ秒として返すので、すぐにコードをテストすることができます。 必要に応じて、コンフィギュレーションを変更する必要があります。
 

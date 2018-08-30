@@ -1,5 +1,5 @@
 ---
-title: "アンケートの配布および記入"
+title: "アンケートの配布およびスケジューリング"
 description: "このトピックは、設計したアンケートを、それらを実行するユーザーまたはユーザー グループが記入できるように配布する方法を説明します。"
 author: kherr75
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 61aebf9190bd7f76a8d4d3e80c06adae1d27f7a3
+ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
+ms.openlocfilehash: eafcb047117eab73fddbd93c4c1d0aafb0023ebd
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="distribute-and-complete-a-questionnaire"></a>アンケートの配布および記入
+# <a name="distribute-and-schedule-questionnaires"></a>アンケートの配布およびスケジューリング
 
 [!include [banner](includes/banner.md)]
 

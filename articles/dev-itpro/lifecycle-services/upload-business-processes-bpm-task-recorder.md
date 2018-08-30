@@ -1,5 +1,5 @@
 ---
-title: "カスタムの業務プロセスをビジネス プロセス モデラーにアップロード"
+title: "独自の業務プロセスからビジネス プロセス モデラー (BPM) へのアップロード"
 description: "Microsoft Dynamics Lifecycle Services では、タスク レコーダーの更新されたバージョンを使用して独自の業務プロセスに関する情報を記録できます。 記録するファイルをビジネス プロセス モデラーにアップロードすることができます。"
 author: RobinARH
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 79d854575b06ecefceba5c14ffbdbc866da43e18
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: ab994313a3e4e99a5577771bd8d5b5096f6fb0f7
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="upload-custom-business-processes-to-business-process-modeler"></a>カスタムの業務プロセスをビジネス プロセス モデラーにアップロード
+# <a name="upload-custom-business-processes-to-business-process-modeler-bpm"></a>独自の業務プロセスからビジネス プロセス モデラー (BPM) へのアップロード
 
 [!include [banner](../includes/banner.md)]
 

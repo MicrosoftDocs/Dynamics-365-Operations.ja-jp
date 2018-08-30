@@ -17,14 +17,14 @@ ms.author: rschloma
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d964fd72f42a39362ebc45c557f7f0dfd1d9bd54
-ms.openlocfilehash: 70a1cc705e9b219ac9f1e3d19dc2296abc8cbba8
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: b7be92d5b32d006f67e3d2595cab87b9124da357
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/18/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="resources-for-responding-to-a-gdpr-data-request"></a>GDPR データ要求に対応するためのリソース
+# <a name="resources-for-responding-to-gdpr-data-requests"></a>GDPR データ要求に対応するためのリソース
 
 [!include [banner](../includes/banner.md)]
 

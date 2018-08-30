@@ -19,10 +19,10 @@ ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: b3c14b8360bcecb05b77e3985c14bd4ab20c9eb1
+ms.sourcegitcommit: dd9ad545f453cf63dc7e804748b7fe82bd27b2da
+ms.openlocfilehash: 9381c63260abd11d0362b800400c893880a695ee
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
@@ -60,7 +60,7 @@ Dynamics 365 for Finance and Operations では、管理者とユーザーの両�
 <td><strong>送信メール サーバー </strong></td>
 <td>目的の SMTP サーバーのホスト名。
 <ul>
-<li><a href="https://support.office.com/en-us/article/Outlook-settings-for-POP-and-IMAP-access-for-Office-365-for-business-or-Microsoft-Exchange-accounts-7fc677eb-2491-4cbc-8153-8e7113525f6c">Office 365 生産</a> (*. onmicrosoft.com アカウントを含む) で smtp.office365.com を使用します。(<strong>設定</strong>&gt;<strong>メール</strong>&gt;<strong>POP および IMAP</strong> の outlook.office.com でこの設定を確認できます。)</li>
+<li><a href="https://support.office.com/en-us/article/Outlook-settings-for-POP-and-IMAP-access-for-Office-365-for-business-or-Microsoft-Exchange-accounts-7fc677eb-2491-4cbc-8153-8e7113525f6c">Office 365 生産</a> (including *.onmicrosoft.com アカウントを含む) は smtp.office365.com を使用します。 (<strong>設定</strong> &gt; <strong>メール</strong> &gt; <strong>POP および IMAP</strong>の outlook.office.com でこの設定を検索します。.)</li>
 <li>Outlook/Hotmail で smtp-mail.outlook.com を使用します。</li>
 </ul></td>
 </tr>
@@ -137,7 +137,7 @@ SysEmail フレームワークを介して有効になっている電子メー�
 1.  Finance and Operations で、**電子メール パラメーター** ページに移動します。
 2.  **SMTP 設定**をクリックします。
 3.  **送信メール サーバー** を要求された SMTP サーバーに設定します。
-    -   [Office 365 生産](https://support.office.com/en-us/article/Outlook-settings-for-POP-and-IMAP-access-for-Office-365-for-business-or-Microsoft-Exchange-accounts-7fc677eb-2491-4cbc-8153-8e7113525f6c) (\*.onmicrosoft.com アカウントを含む) で smtp.office365.com を使用します。(**設定** &gt; **メール** &gt; **POP および IMAP** で outlook.office.com を通してこの設定を検索します。)
+    -   [Office 365 生産](https://support.office.com/en-us/article/Outlook-settings-for-POP-and-IMAP-access-for-Office-365-for-business-or-Microsoft-Exchange-accounts-7fc677eb-2491-4cbc-8153-8e7113525f6c) (\*.onmicrosoft.com アカウントを含む) では、smtp.office365.com を使用します。 (**設定** &gt; **メール** &gt; **POP および IMAP**で outlook.office.com を通してこの設定を検索します。.)
     -   Outlook/Hotmail で smtp-mail.outlook.com を使用します。
 
 4.  ユーザー名とパスワードを適切な電子メール アカウントとパスワードに設定します。
@@ -172,10 +172,10 @@ SysEmail フレームワークを介して有効になっている電子メー�
         1. **終了日なし** を選択し、メール バッチ処理のすべての反復を調整します。
         2. カウントを調整します。
 3. ワークフロー通知システムの電子メール テンプレートを確認します。
-    1. **システム管理** > **設定** > **電子メール** > **電子メール メッセージ** (システム全体のテンプレート) の順に移動します。
+    1. **システム管理** > **設定** > **電子メール** > **システムの電子メール テンプレート** (システム全体のテンプレート) の順に移動します。
     2. **送信者電子メール** フィールドが設定済みで有効であることを確認します。
 4. ワークフロー通知組織の電子メール テンプレートを確認します。
-    1. **組織管理** > **設定** > **電子メール テンプレート** (組織固有のテンプレート) の順に移動します。
+    1. **組織管理** > **設定** > **組織の電子メール テンプレート** (組織固有のテンプレート) の順に移動します。
     2. **送信者電子メール** フィールドが設定済みで有効であることを確認します。
 5. ユーザーが電子メール通知を受信できることを確認します。
     1. **設定** > **ユーザー オプション**に移動します。

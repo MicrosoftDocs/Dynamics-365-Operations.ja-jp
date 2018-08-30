@@ -18,14 +18,14 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 9c7fba9387be7b990db1a1502ba5f9bbed8f81cb
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 44499cad4a9acd0f6f87b0fa0865d9e09ca3c0e4
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="activate-financial-dimensions"></a>財務分析コードの有効化
+# <a name="financial-dimension-activation"></a>財務分析コードの有効化
 
 [!include [banner](../includes/banner.md)]
 

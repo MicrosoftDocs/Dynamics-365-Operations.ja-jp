@@ -1,5 +1,5 @@
 ---
-title: "配置オプション"
+title: "小売機能の配置オプション"
 description: "このトピックでは、Dynamics 365 for Retail と Dynamics 365 for Finance and Operations の間の小売機能の違いについて説明します。"
 author: ashishmsft
 manager: AnnBe
@@ -17,14 +17,14 @@ ms.author: asharchw
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 62698246a3c8fb45d3c2131027041c810e6f95e5
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 60a08a8b45161e98a6c4fb4cadf3187169cdd68f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="deployment-options"></a>配置オプション
+# <a name="deployment-options-for-retail-functionality"></a>小売機能の配置オプション
 
 [!include [banner](../../includes/banner.md)]
 

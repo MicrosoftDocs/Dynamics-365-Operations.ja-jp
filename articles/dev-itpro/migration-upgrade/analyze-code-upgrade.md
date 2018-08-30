@@ -18,14 +18,14 @@ ms.author: tabell
 ms.search.validFrom: 2017-05-31
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: cd0b1c278f1f0013c2270e7a795cb30bd2465915
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 8f5f0361e86a48b6dcdb8c3b8da06b969334b0be
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="upgrade-from-ax-2012---use-the-code-upgrade-service-to-estimate-effort"></a>AX 2012 からのアップグレード - コードのアップグレード サービスを使用した工数見積
+# <a name="upgrade-from-ax-2012---estimate-effort-by-using-the-code-upgrade-service"></a>AX 2012 からのアップグレード - コードのアップグレード サービスを使用した工数見積
 
 [!include [banner](../includes/banner.md)]
 

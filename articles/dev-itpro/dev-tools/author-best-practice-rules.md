@@ -1,5 +1,5 @@
 ---
-title: "ベスト プラクティスの作成"
+title: "ベスト プラクティス ルールを記述する"
 description: "このトピックでは、メタデータと X++ コードの両方について、C# でベスト プラクティス ルールを作成する方法について説明します。"
 author: pvillads
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 08ac6a240120b20e8e5ce0927c1f797049401f4c
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 0406f2b7b25a659aa84dedaff3dae9fa1c4b529d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="authoring-best-practices"></a>ベスト プラクティスの作成
+# <a name="write-best-practice-rules"></a>ベスト プラクティス ルールを記述する
 
 [!include [banner](../includes/banner.md)]
 
@@ -237,7 +237,7 @@ X++ コーディング ガイドラインに準拠するため、アンダース
 
 ### <a name="add-a-class-for-the-diagnostic-message"></a>診断メッセージのクラスの追加
 
-プロジェクトにはすでにエラー メッセージの定型コードが含まれているため、ルールに違反した場合に返される診断メッセージを作成するための出発点として使用します。 各メッセージは、独自のクラスとして実装されます。 各エラー メッセージは、コード化された文脈情報を任意の量で有することができます。 この場合、コンテキスト情報は一覧にない作成者の名前です。 「プロジェクトでそのファイルを開き、文字列を追加します」というメッセージをメッセージ リソース ファイルに追加することから開始します。 AuthorNotCurrent という名前 (エラー モニカーとも呼ばれます) を使用します。 '{0}' 文字列はコンテキスト情報のプレースホルダです。この場合、リストに含まれていない著者の名前です。 エラー メッセージに表示される実際のテキストに加えて、ルールの説明を含む文字列もあります。この情報は、Visual Studio 内のベスト プラクティス ダイアログに表示され、ユーザーがシステムで有効にできるルールを決定できるように設計されています。 診断メッセージのクラスを作成し、AuthorNotCurrentDiagnosticItem.cs という名前を付けます。 NotAllowedWordDiagnosticItem クラスから、次の基となるコードを追加します。
+プロジェクトにはすでにエラー メッセージの定型コードが含まれているため、ルールに違反した場合に返される診断メッセージを作成するための出発点として使用します。 各メッセージは、独自のクラスとして実装されます。 各エラー メッセージは、コード化された文脈情報を任意の量で有することができます。 この場合、コンテキスト情報は一覧にない作成者の名前です。 「プロジェクトでそのファイルを開き、文字列を追加します」というメッセージをメッセージ リソース ファイルに追加することから開始します。 AuthorNotCurrent という名前 (エラー モニカーとも呼ばれます) を使用します。 ‘{0}’ 文字列はコンテキスト情報のプレースホルダで、この場合、リストに含まれていない作成者の名前です。 エラー メッセージに表示される実際のテキストに加えて、ルールの説明を含む文字列もあります。この情報は、Visual Studio 内のベスト プラクティス ダイアログに表示され、ユーザーがシステムで有効にできるルールを決定できるように設計されています。 診断メッセージのクラスを作成し、AuthorNotCurrentDiagnosticItem.cs という名前を付けます。 NotAllowedWordDiagnosticItem クラスから、次の基となるコードを追加します。
 
     namespace CompareAuthorsToList
     {

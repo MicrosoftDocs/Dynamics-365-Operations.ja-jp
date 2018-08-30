@@ -18,15 +18,17 @@ ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: b1ac00edc0c519d4639ad53190148ec94b1780e7
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 9c23010e6dc277837c25f3be0abcd7bf6e29024a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="what-is-a-planned-maintenance-window"></a>計画されているメンテナンス期間とは何ですか ?
 
+# <a name="planned-maintenance-window-faq"></a>予定された保守ウィンドウのよく寄せられる質問
 [!include [banner](../includes/banner.md)]
+
+### <a name="what-is-a-planned-maintenance-window"></a>計画されているメンテナンス期間とは何ですか ?
 
 予定された保守ウィンドウは、重要な更新プログラムをクラウド サービスに適用するために Microsoft によってスケジュールされた時間枠です。
 

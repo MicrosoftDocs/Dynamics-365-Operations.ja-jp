@@ -21,7 +21,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: 0e1be78baa0deee7f86a21ed23b1990ff4215907
 ms.openlocfilehash: 296f9aec795432254f965a09028b1d797f451af0
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/18/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 # <a name="payments-faq"></a>支払の FAQ

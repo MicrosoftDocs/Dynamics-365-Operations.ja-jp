@@ -1,5 +1,5 @@
 ---
-title: "ビジネス プロセス モデラーのフローチャート"
+title: "ビジネス プロセス モデラー (BPM) のフローチャート"
 description: "この記事では、Microsoft Dynamics Lifecycle Services の既定の接続フローチャートを変更し、タスク レコーダーから接続されたフローチャートを作成してアップロードし、別のライブラリからビジネス プロセス モデルのフローチャートをインポートする方法について説明します。"
 author: robadawy
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: robadawy
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: e5707c8600559e53644f7a3677e6a06d4824f0e1
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 127fa250860610414a3b8eb21bcbd5ed1f3e06dd
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="flowcharts-in-business-process-modeler"></a>ビジネス プロセス モデラーのフローチャート
+# <a name="flowcharts-in-business-process-modeler-bpm"></a>ビジネス プロセス モデラー (BPM) のフローチャート
 
 [!include [banner](../includes/banner.md)]
 
