@@ -3,7 +3,7 @@ title: "決済の概要"
 description: "この記事は、決済プロセスに関する一般情報を提供します。 決済できるトランザクションのタイプ、トランザクションの決済時期と決済方法、および決済プロセスの結果について説明します。"
 author: kweekley
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/24/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,8 +16,8 @@ ms.custom: 14551
 ms.assetid: 0968fa71-5984-415b-8689-759a0136d5d1
 ms.search.region: Global
 ms.author: kweekley
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.validFrom: 2018-10-31
+ms.dyn365.ops.version: 8.1
 ms.translationtype: HT
 ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
 ms.openlocfilehash: 2f1f11a7f1340d408374e658ae616ffa99f3c911
@@ -51,7 +51,6 @@ ms.lasthandoff: 11/03/2017
 -   支払金額が請求金額と等しい場合は、支払と請求書の両方が閉じ、両方の残高は 0.00 になります。
 
 現金割引、控除、過少支払により[支払が請求金額より少ない](../accounts-payable/vendor-payments-partial-amount.md)場合、[買掛金勘定パラメーター] および [売掛金勘定パラメーター] の決済の設定によっては、請求書と支払が終了済になる場合があります。 決済は、トランザクションを生成できます。 たとえば、請求書および支払の決済で、現金割引、実現利益や損失、売上税の調整、控除、小額差分を生成する場合があります。
-
 
 
 
