@@ -136,6 +136,10 @@ POS 文字列のテキスト ID を取得するには、デバッグ モード�
 次の例では、この新しいメッセージを CRT 拡張コードで使用する方法を示します。
 
 ```C#
-throw new CommerceException("Microsoft_Dynamics_Commerce_CustomId1", ExceptionSeverity.Warning, null, "Custom error");
+throw new CommerceException("Microsoft_Dynamics_Commerce_CustomId1", ExceptionSeverity.Warning, null, "Custom error")
+                    {
+                        LocalizedMessage = "My new message in US English.",
+                        LocalizedMessageParameters = new object[] { }
+                    };
 ```
 
