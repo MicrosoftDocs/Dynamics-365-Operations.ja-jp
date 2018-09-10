@@ -17,10 +17,10 @@ ms.author: mumani
 ms.search.validFrom: 2018-05-31
 ms.dyn365.ops.version: 8.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: f2e3a40f58b57785079e1940b2d24a3598a3ad1b
-ms.openlocfilehash: ec2806b70830ad3708e668ee6c1f192bec518b26
+ms.sourcegitcommit: 32d5c20aa31e373d097fcdca584c780a1ebf484b
+ms.openlocfilehash: 116cd847aa50eec7edbe13e7f51ed89cec290e72
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/10/2018
 
 ---
 
@@ -136,6 +136,10 @@ ms.lasthandoff: 08/09/2018
 <span data-ttu-id="0165e-199">次の例では、この新しいメッセージを CRT 拡張コードで使用する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="0165e-199">The following example shows how to use this new message in your CRT extension code.</span></span>
 
 ```C#
-throw new CommerceException("Microsoft_Dynamics_Commerce_CustomId1", ExceptionSeverity.Warning, null, "Custom error");
+throw new CommerceException("Microsoft_Dynamics_Commerce_CustomId1", ExceptionSeverity.Warning, null, "Custom error")
+                    {
+                        LocalizedMessage = "My new message in US English.",
+                        LocalizedMessageParameters = new object[] { }
+                    };
 ```
 
