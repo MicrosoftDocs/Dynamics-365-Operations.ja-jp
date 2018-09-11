@@ -1,26 +1,26 @@
----
+--- 
 title: "有効在庫数の確認"
 description: "この手順では、特定の品目番号において現物手持在庫を確認する方法を示します。"
-author: perlynne
+author: 
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: InventOnHandItemListPage, SysQueryForm, InventDimParmFixed, InventSupply, DefaultDashboard, WHSInventPhysicalOnhand, WHSOnHand
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: 
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.search.industry: Distribution
-ms.author: perlynne
+ms.author: 
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: b1c5331379ec1b16ef13ea64ee7f0324828e50a2
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: 4be343a38f3f428261cf30c5b92c7a34d1f1ffa4
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="check-the-availability-of-stock"></a><span data-ttu-id="3336c-103">有効在庫数の確認</span><span class="sxs-lookup"><span data-stu-id="3336c-103">Check the availability of stock</span></span>
@@ -67,4 +67,5 @@ ms.lasthandoff: 08/07/2018
 4. <span data-ttu-id="3336c-144">[分析コードの表示] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3336c-144">Click Display Dimensions.</span></span>
 5. <span data-ttu-id="3336c-145">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3336c-145">Click OK.</span></span>
 6. <span data-ttu-id="3336c-146">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="3336c-146">Close the page.</span></span>
+
 

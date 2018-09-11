@@ -3,24 +3,25 @@ title: "リーン生産の転送活動の作成"
 description: "リーン生産の移動活動を作成します。"
 author: cvocph
 manager: AnnBe
-ms.date: 11/11/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: LeanProductionFlow, PlanActivity, PlanActivityWizard, LeanWorkCellLookup, InventLocationIdLookup
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: 1762d369af9e762c5f9b3833d6b982c74d41eedc
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: e50b2fc071c3f89b8bf1b118da2b46a0b44d6c25
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="create-transfer-activities-for-lean-manufacturing"></a><span data-ttu-id="cac14-103">リーン生産の転送活動の作成</span><span class="sxs-lookup"><span data-stu-id="cac14-103">Create transfer activities for lean manufacturing</span></span>

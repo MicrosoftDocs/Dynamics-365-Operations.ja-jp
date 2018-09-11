@@ -3,24 +3,25 @@ title: "生産フロー バージョンへの既存の活動の追加"
 description: "生産フローの新バージョンを作成する際に、旧バージョン向けに作成された活動を新バージョンに加えることができます。"
 author: cvocph
 manager: AnnBe
-ms.date: 10/26/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: LeanProductionFlow, PlanActivity, PlanActivityAddExisting, PlanActivityAddExistingLookup
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: 571beb23525f6322e4348cc4276a954bd8e4d04a
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: cb185c1ec55346af7cfe0b950f0915072242e961
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="add-an-existing-activity-to-a-production-flow-version"></a><span data-ttu-id="72ec1-103">生産フロー バージョンへの既存の活動の追加</span><span class="sxs-lookup"><span data-stu-id="72ec1-103">Add an existing activity to a production flow version</span></span>

@@ -1,26 +1,27 @@
----
+--- 
 title: "委託販売補充注文の作成"
 description: "この手順では、委託製品の補充注文の作成方法が説明され、仕入先から該当する委託製品在庫までの予定配送を追跡確認できます。"
 author: mkirknel
 manager: AnnBe
-ms.date: 10/13/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ConsignmentReplenishmentOrder, ConsignmentReplenishmentOrderCreate, InventTrans, ConsignmentDraftReplenishmentOrderJournal, InventOnhandMovement, InventOnhandItem, InventItemIdLookupSimple
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: 6366d6188d97ca54ba65c11699140be9ae2d4002
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: 686a4bc1e9d752cc6d33354d03ba3c536c0854dc
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="create-a-consignment-replenishment-order"></a><span data-ttu-id="04915-103">委託販売補充注文の作成</span><span class="sxs-lookup"><span data-stu-id="04915-103">Create a consignment replenishment order</span></span>
@@ -60,7 +61,7 @@ ms.lasthandoff: 08/07/2018
 ## <a name="receive-items"></a><span data-ttu-id="04915-132">品目の受信 (複数)</span><span class="sxs-lookup"><span data-stu-id="04915-132">Receive items</span></span>
 1. <span data-ttu-id="04915-133">[製品受領書] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="04915-133">Click Product receipt.</span></span>
 2. <span data-ttu-id="04915-134">[外部製品受領] フィールドで、値を入力します。</span><span class="sxs-lookup"><span data-stu-id="04915-134">In the External product receipt field, type a value.</span></span>
-3. <span data-ttu-id="04915-135">[数量] フィールドにおいて、ここに表示される数値より小さい数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="04915-135">In the Quantity field, enter a number that’s lower than the number that’s shown there.</span></span>
+3. <span data-ttu-id="04915-135">[数量] フィールドにおいて、ここに表示される数値より小さい数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="04915-135">In the Quantity field, enter a number that’s lower than the number that’s shown there.</span></span> 
 4. <span data-ttu-id="04915-136">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="04915-136">Click OK.</span></span>
 
 ## <a name="check-the-on-hand-inventory"></a><span data-ttu-id="04915-137">手持在庫を確認します。</span><span class="sxs-lookup"><span data-stu-id="04915-137">Check the on-hand inventory</span></span>
@@ -70,4 +71,5 @@ ms.lasthandoff: 08/07/2018
     * <span data-ttu-id="04915-141">仕入先が所有する委託製品在庫として受領された品目は手持在庫として使用できます。</span><span class="sxs-lookup"><span data-stu-id="04915-141">The items that have been received as consignment inventory owned by the vendor are available on-hand.</span></span> <span data-ttu-id="04915-142">委託製品補充注文の残余数量は [合計] フィールドの [注文済] に表示されます。</span><span class="sxs-lookup"><span data-stu-id="04915-142">The remaining quantity on the consignment replenishment order is shown in the Ordered in total field.</span></span>  
 4. <span data-ttu-id="04915-143">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="04915-143">Close the page.</span></span>
 5. <span data-ttu-id="04915-144">[閉じる] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="04915-144">Click Close.</span></span>
+
 

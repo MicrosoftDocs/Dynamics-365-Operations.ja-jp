@@ -1,26 +1,27 @@
----
+--- 
 title: "作業セルで材料が利用可能な場合にプロセスかんばん作業を準備"
 description: "このタスクでは、作業セルですべての材料が利用可能な場合にプロセスかんばん作業を準備することに焦点をあてます。"
 author: johanhoffmann
 manager: AnnBe
-ms.date: 11/11/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: KanbanBoardWorkCell
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: b774179d3c29a6009c37dea491e07f629740027e
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: 34665fe0fe7e1f7989433b31aafcc4fe203141c2
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="prepare-a-process-kanban-job-when-materials-are-available-for-the-work-cell"></a><span data-ttu-id="3e635-103">作業セルで材料が利用可能な場合にプロセスかんばん作業を準備</span><span class="sxs-lookup"><span data-stu-id="3e635-103">Prepare a process kanban job when materials are available for the work cell</span></span>
@@ -40,4 +41,5 @@ ms.lasthandoff: 08/07/2018
     * <span data-ttu-id="3e635-115">複数のジョブが選択されている場合、ピッキング リストには、選択したジョブに必要なすべての品目の合計が表示されます。</span><span class="sxs-lookup"><span data-stu-id="3e635-115">If multiple jobs are selected, the picking list will show the sum of all items needed for the selected jobs.</span></span>  
 6. <span data-ttu-id="3e635-116">[準備] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3e635-116">Click Prepare.</span></span>
     * <span data-ttu-id="3e635-117">準備プロセスは完了です。</span><span class="sxs-lookup"><span data-stu-id="3e635-117">The preparation process is now completed.</span></span> <span data-ttu-id="3e635-118">ピッキング リストのすべての行に関連する選択済みのチェック ボックスは、供給のステータスがピッキングされていることを示します。</span><span class="sxs-lookup"><span data-stu-id="3e635-118">The selected check box for all rows in the picking list indicates that the supply status is picked.</span></span>  
+
 

@@ -1,26 +1,27 @@
----
+--- 
 title: "倉庫の在庫レベルの調整 (基本倉庫)"
 description: "この手順では、倉庫にある製品の在庫レベルを調整するために、在庫調整仕訳帳を作成して転記するプロセスを説明します。"
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: InventJournalLossProfit, InventJournalCreate, InventLocationIdLookup
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mafoge
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: 43083d52b6b656cd7dd31f4d4cf4225efd8fd28c
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: 75ff53872fd81d5b25964c1ba65127f9feaf2b45
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="adjust-stock-levels-in-the-warehouse-basic-warehousing"></a><span data-ttu-id="ecdb4-103">倉庫の在庫レベルの調整 (基本倉庫)</span><span class="sxs-lookup"><span data-stu-id="ecdb4-103">Adjust stock levels in the warehouse (basic warehousing)</span></span>
@@ -58,4 +59,5 @@ ms.lasthandoff: 08/07/2018
 4. <span data-ttu-id="ecdb4-133">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ecdb4-133">Click OK.</span></span>
 5. <span data-ttu-id="ecdb4-134">フォームを閉じます。</span><span class="sxs-lookup"><span data-stu-id="ecdb4-134">Close the form.</span></span>
 6. <span data-ttu-id="ecdb4-135">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="ecdb4-135">Close the page.</span></span>
+
 

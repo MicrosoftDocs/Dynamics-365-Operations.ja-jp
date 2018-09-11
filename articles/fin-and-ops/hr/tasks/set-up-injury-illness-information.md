@@ -3,23 +3,24 @@ title: "けが/病気の情報を設定します"
 description: "雇用者は、従業員がいつ危険な仕事場により、傷害を負ったか、また疾病を患ったかを把握している必要があります。"
 author: ShielaSogge
 manager: AnnBe
-ms.date: 03/02/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
-ms.service: dynamics-365-talent
+ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: HRMInjurySetup
 audience: Application User
 ms.reviewer: rschloma
-ms.search.scope: Operations, Talent
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 9edc4c3f19d7498614211a539bfe685cb0efcdf6
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: 80b103b57d8dca0384778aab47427af4fe5f7eef
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="set-up-injury-and-illness-information"></a><span data-ttu-id="f0da7-103">けが/病気の情報を設定します</span><span class="sxs-lookup"><span data-stu-id="f0da7-103">Set up injury and illness information</span></span>

@@ -3,23 +3,24 @@ title: "候補者採用手段の確認と配置"
 description: "空席を充填する見込みのある候補者のプールを探すことは難しい場合があり、特に複数の固有のスキルが職位に求められる場合に困難です。"
 author: kherr75
 manager: AnnBe
-ms.date: 02/16/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: HcmSkillMapping, HcmJobLookup, HcmSkillMappingLine, HcmPersonCertificate, CCHTMLPrintPreview
 audience: Application User
 ms.reviewer: rschloma
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 6cbaaf6fcb943089886f60e72f4fbab5029b2f8d
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: 552009ae1cae0797191b4cdaeba3a1731b501a7d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="identify-and-deploy-candidate-selection-tools"></a><span data-ttu-id="ed5d4-103">候補者採用手段の確認と配置</span><span class="sxs-lookup"><span data-stu-id="ed5d4-103">Identify and deploy candidate selection tools</span></span>

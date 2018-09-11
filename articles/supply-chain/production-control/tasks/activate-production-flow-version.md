@@ -3,24 +3,25 @@ title: "生産フロー バージョンの有効化"
 description: "かんばん作業が作成され、活動が生産フロー バージョンで処理される前に、バージョンを有効にする必要があります。"
 author: cvocph
 manager: AnnBe
-ms.date: 08/23/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: LeanProductionFlow
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: 17786dc351fff3a2c4162f116c099356299c9fa4
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: ef91a7d4e1bd540a892cfbd6d34dcf382bf42dc5
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="activate-a-production-flow-version"></a><span data-ttu-id="e1dc1-103">生産フロー バージョンの有効化</span><span class="sxs-lookup"><span data-stu-id="e1dc1-103">Activate a production flow version</span></span>

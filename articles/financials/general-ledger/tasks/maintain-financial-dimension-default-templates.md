@@ -3,23 +3,24 @@ title: "財務分析コード用の既定テンプレートの管理"
 description: "この手順では、財務分析コードの既定のテンプレートを設定する方法を示します。"
 author: aprilolson
 manager: AnnBe
-ms.date: 10/24/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: FinancialDimensionDefaultTemplates, DimensionLookup
 audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: ae44399377c4973d4b091d2b3d458de5c5353082
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: 8c8ddcbe1c593e0d6ffad1e45e3286b49b4c2f1e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="maintain-financial-dimension-default-templates"></a><span data-ttu-id="088b9-103">財務分析コード用の既定テンプレートの管理</span><span class="sxs-lookup"><span data-stu-id="088b9-103">Maintain financial dimension default templates</span></span>

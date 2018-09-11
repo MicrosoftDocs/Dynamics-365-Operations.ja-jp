@@ -3,23 +3,24 @@ title: "固定資産の作成"
 description: "このタスク ガイドでは、デモ会社 USMF を使用します。"
 author: saraschi2
 manager: AnnBe
-ms.date: 02/23/2017
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: AssetTable, AssetBook
 audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: da6705955d0c1a5865ebcc914ff4ff31f90c1fb4
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: 9f09a61d13893829dd3de3513deb78cf79a1b25c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="create-a-fixed-asset"></a><span data-ttu-id="2d978-103">固定資産の作成</span><span class="sxs-lookup"><span data-stu-id="2d978-103">Create a fixed asset</span></span>

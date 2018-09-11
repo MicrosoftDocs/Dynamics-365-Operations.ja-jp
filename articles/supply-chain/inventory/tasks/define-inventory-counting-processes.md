@@ -1,26 +1,27 @@
----
+--- 
 title: "在庫棚卸プロセスの定義"
 description: "この手順は、棚卸グループおよび棚卸仕訳帳を作成することによって、基本的な在庫棚卸処理のコンフィギュレーションについて説明します。"
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: InventCountGroup, InventJournalName, InventParameters, EcoResProductDetailsExtended, InventItemLocation, InventLocationIdLookup
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mafoge
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: 88d5dddf025c7a0451e9a812f83784499c3437a6
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: a75d39dc030e28529692241ce637b780421d31ad
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="define-inventory-counting-processes"></a><span data-ttu-id="69ac9-103">在庫棚卸プロセスの定義</span><span class="sxs-lookup"><span data-stu-id="69ac9-103">Define inventory counting processes</span></span>
@@ -84,4 +85,5 @@ ms.lasthandoff: 08/07/2018
 7. <span data-ttu-id="69ac9-170">一覧で棚卸グループの選択</span><span class="sxs-lookup"><span data-stu-id="69ac9-170">In the list, select a counting group</span></span>
     * <span data-ttu-id="69ac9-171">選択した特定倉庫の品目に適用される特定棚卸グループをここで選択できます。</span><span class="sxs-lookup"><span data-stu-id="69ac9-171">Here you can select a specific counting group that should apply to the item in the specific warehouse you have selected.</span></span> <span data-ttu-id="69ac9-172">その倉庫で棚卸が実行される場合、この棚卸ポリシーによって、品目における一般的な棚卸ポリシーは上書きされます。</span><span class="sxs-lookup"><span data-stu-id="69ac9-172">When counting is performed in that warehouse, this counting policy will override the general counting policy for the item.</span></span>  
 8. <span data-ttu-id="69ac9-173">[保存] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="69ac9-173">Click Save.</span></span>
+
 

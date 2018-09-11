@@ -1,26 +1,27 @@
----
+--- 
 title: "仕入先コラボレーションを使用した委託販売在庫の監視"
 description: "この手順は、顧客との委託販売で置いた製品の在庫レベルに関する情報を表示する際の仕入先との連携方法を示します。"
 author: mkirknel
 manager: AnnBe
-ms.date: 10/13/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ConsignmentProductReceiptLines, PurchVendorPortalConfirmedOrders, DefaultDashboard, ConsignmentVendorPortalOnhand
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: 8e4a620fe5f5ab3c0fae8b04d79e9912111b7ece
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: a110c7b85c6ed22622b059b657bd7b6028517335
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="monitor-consignment-inventory-using-vendor-collaboration"></a><span data-ttu-id="2f72a-103">仕入先コラボレーションを使用した委託販売在庫の監視</span><span class="sxs-lookup"><span data-stu-id="2f72a-103">Monitor consignment inventory using vendor collaboration</span></span>
@@ -41,4 +42,5 @@ ms.lasthandoff: 08/07/2018
 ## <a name="view-on-hand-inventory"></a><span data-ttu-id="2f72a-118">手持在庫の表示</span><span class="sxs-lookup"><span data-stu-id="2f72a-118">View on-hand inventory</span></span>
 1. <span data-ttu-id="2f72a-119">[仕入先コラボレーション] > [委託販売在庫] > [手持委託販売在庫] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="2f72a-119">Go to Vendor collaboration > Consignment inventory > On-hand consignment inventory.</span></span>
     * <span data-ttu-id="2f72a-120">手持委託製品在庫のページは、その在庫が顧客の倉庫で所有していることを示します。</span><span class="sxs-lookup"><span data-stu-id="2f72a-120">The On-hand consignment inventory page shows the stock that you own at the customer’s warehouse.</span></span> <span data-ttu-id="2f72a-121">[規模のタブを表示] をクリックして、サイトや倉庫などその他の規模を表示できます。</span><span class="sxs-lookup"><span data-stu-id="2f72a-121">You can show additional dimensions, such as the site and warehouse, by clicking the Display dimensions tab.</span></span>   
+
 

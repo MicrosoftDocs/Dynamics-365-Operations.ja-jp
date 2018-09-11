@@ -3,23 +3,24 @@ title: "事前定義された製品バリアントの作成"
 description: "この手順では、製品分析コードの組み合わせを使用する製品マスターの製品バリアントの作成を説明します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 10/27/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: EcoResProductListPage, EcoResProductCreate, EcoResProductDetails, EcoResProductMasterDimension, EcoResProductVariants, EcoResProductVariantSuggestions
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: 2b9202c24b2c1511da6344df6b54326b4d3106c5
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: 79d44dce56d7e942c990c68f74d340ba3963ff2d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="create-predefined-product-variants"></a><span data-ttu-id="4ffcd-103">事前定義された製品バリアントの作成</span><span class="sxs-lookup"><span data-stu-id="4ffcd-103">Create predefined product variants</span></span>

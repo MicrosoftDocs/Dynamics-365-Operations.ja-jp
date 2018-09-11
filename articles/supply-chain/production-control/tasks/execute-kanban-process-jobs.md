@@ -3,24 +3,25 @@ title: "かんばんプロセス ジョブの実行"
 description: "この手順は、かんばんプロセス ジョブの実行を対象としています。"
 author: ChristianRytt
 manager: AnnBe
-ms.date: 11/11/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: KanbanBoardWorkCell, KanbanJobStatusUpdate
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: fc9a1562dcf638427e5bad0372189135605bec9e
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: d9505b74e5fbb14882356968d0f0273ef2b3feb8
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="execute-kanban-process-jobs"></a><span data-ttu-id="8f561-103">かんばんプロセス ジョブの実行</span><span class="sxs-lookup"><span data-stu-id="8f561-103">Execute kanban process jobs</span></span>

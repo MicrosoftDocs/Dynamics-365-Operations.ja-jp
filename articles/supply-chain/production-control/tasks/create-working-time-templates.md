@@ -3,24 +3,25 @@ title: "作業時間テンプレートの作成"
 description: "作業時間テンプレートは、週の中の勤務時間の定義や、ある期間の作業時間の生成に使用されます。"
 author: sorenva
 manager: AnnBe
-ms.date: 03/02/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: OpResLifeCycleManagementWorkspace, WorkTimeTable, WorkTimeCopyDayDialog
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: sorenand
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: d9290dd363e5e617ec714f9b3ee8b71a21a61166
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: c66c1e62717f0765f99407945497f519d1151767
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="create-working-time-templates"></a><span data-ttu-id="9eb4e-103">作業時間テンプレートの作成</span><span class="sxs-lookup"><span data-stu-id="9eb4e-103">Create working time templates</span></span>

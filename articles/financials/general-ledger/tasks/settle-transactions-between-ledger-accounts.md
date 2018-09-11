@@ -3,23 +3,24 @@ title: "勘定科目間でのトランザクションの決済"
 description: "この手順は、勘定科目間でトランザクションを決済する方法、また元帳決済をキャンセルする方法を示します。"
 author: aprilolson
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: LedgerTransSettlement, LedgerTrialBalanceListPage, LedgerTrialBalanceListPageBalanceParms, LedgerTransAccount, LedgerTransSettled
 audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: 2dbb45b142b575b6a7b0379be68718c14d906a90
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: 479da79142baf8d60eabf1f6c7db5687b4595234
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="settle-transactions-between-ledger-accounts"></a><span data-ttu-id="c9b66-103">勘定科目間でのトランザクションの決済</span><span class="sxs-lookup"><span data-stu-id="c9b66-103">Settle transactions between ledger accounts</span></span>

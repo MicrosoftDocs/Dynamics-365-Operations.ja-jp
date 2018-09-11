@@ -3,23 +3,24 @@ title: "発注書の作成"
 description: "この手順では、手動での注文書の作成方法を説明します。"
 author: FrankDahl
 manager: AnnBe
-ms.date: 06/07/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: PurchTable, PurchCreateOrder, InventDimParmFixed, InventItemIdLookupPurchase, InventProductDimensionLookup, PurchTotals
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: db9637a7e26501e5a6e70a9de34c4c36cbe0bf2e
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: e7256fa4d9768b96873b7f60c3725496af3e57db
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="create-a-purchase-order"></a><span data-ttu-id="c0f31-103">発注書の作成</span><span class="sxs-lookup"><span data-stu-id="c0f31-103">Create a purchase order</span></span>

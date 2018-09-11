@@ -3,23 +3,24 @@ title: "特別償却の設定"
 description: "この手順では、特別減価償却費を作成する方法およびそれを固定資産帳簿に関連付ける方法を説明します。"
 author: saraschi2
 manager: AnnBe
-ms.date: 10/11/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: AssetBonus, AssetGroup, AssetGroupBookSetup, AssetGroupSetupBonus
 audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: 9b8e9b29248d59aed1fd93fb814f4076bcaaaa07
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: 03b5e6c71ebe5070cce88c01daa5e7f2c4a9d036
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="set-up-bonus-depreciation"></a><span data-ttu-id="be6f3-103">特別償却の設定</span><span class="sxs-lookup"><span data-stu-id="be6f3-103">Set up bonus depreciation</span></span>

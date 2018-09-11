@@ -3,23 +3,24 @@ title: "仕訳帳の作成および検証"
 description: "このタスク ガイドでは、仕訳帳および仕訳帳明細行を作成し、検証します。"
 author: ryansandness
 manager: AnnBe
-ms.date: 11/11/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: LedgerJournalTable, LedgerJournalTransDaily
 audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: ryansand
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: 366f92203638d4a20b7ad486510f7cc02e5f25b4
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: 30234edff99fba8313d6bfb01d5eff5edb921e59
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="create-and-validate-journals"></a><span data-ttu-id="07834-103">仕訳帳の作成および検証</span><span class="sxs-lookup"><span data-stu-id="07834-103">Create and validate journals</span></span>

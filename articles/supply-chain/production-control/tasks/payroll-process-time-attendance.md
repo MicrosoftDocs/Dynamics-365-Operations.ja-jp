@@ -1,26 +1,27 @@
----
+--- 
 title: "時刻と出勤の給与プロセスの有効化"
 description: "この手順は、時刻と出勤の給与プロセスを有効にする方法を示します。"
 author: johanhoffmann
 manager: AnnBe
-ms.date: 02/12/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: JmgPayTable, JmgPayRate, JmgPayAgreementTable, JmgPayAgreementLine, HcmWorker
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: 8d80e9be7ded9adb5aa75b3fba9468e58ecb4b4a
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: acf355a3b822cb880b5b1d9348cac5ccd6fe2b42
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="enable-the-payroll-process-for-time-and-attendance"></a><span data-ttu-id="c475f-103">時刻と出勤の給与プロセスの有効化</span><span class="sxs-lookup"><span data-stu-id="c475f-103">Enable the payroll process for time and attendance</span></span>
@@ -68,4 +69,5 @@ ms.lasthandoff: 08/07/2018
 6. <span data-ttu-id="c475f-141">[時間登録] セクションを展開します。</span><span class="sxs-lookup"><span data-stu-id="c475f-141">Expand the Time registration section.</span></span>
 7. <span data-ttu-id="c475f-142">[編集] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c475f-142">Click Edit.</span></span>
 8. <span data-ttu-id="c475f-143">[支払協定] フィールドで値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="c475f-143">In the Pay agreement field, enter or select a value.</span></span>
+
 

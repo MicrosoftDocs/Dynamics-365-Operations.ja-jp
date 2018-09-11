@@ -3,23 +3,24 @@ title: "連結グループおよび追加の連結勘定の作成"
 description: "この手順では、連結勘定グループの作成方法と、グループへの勘定の追加方法について説明します。"
 author: aprilolson
 manager: AnnBe
-ms.date: 11/11/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: LedgerConsolidateAccountGroup, MainAccountConsolidateAccount
 audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: 3f6a889323d8f0e3ad603c320620cf1c3c37733e
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: c8fe116b473478d6d2921c0a63979e8fa8b369d5
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="create-consolidation-groups-and-additional-consolidation-accounts"></a><span data-ttu-id="6ee9c-103">連結グループおよび追加の連結勘定の作成</span><span class="sxs-lookup"><span data-stu-id="6ee9c-103">Create consolidation groups and additional consolidation accounts</span></span>

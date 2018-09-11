@@ -1,26 +1,27 @@
----
+--- 
 title: "倉庫内の現物在庫の移動"
 description: "この手順では、倉庫内の場所間で行われる品目の移動を登録する在庫振替仕訳帳を作成して転記するプロセスを説明します。"
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 03/02/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: InventJournalTransfer, InventJournalCreate, InventItemIdLookupSimple, InventLocationIdLookup, WMSLocationIdLookup, InventTrans
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mafoge
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: 8569ff744e11fb0348dedc4e1e56894203b7b7a3
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: 41057d0a35cab122840a20a5c65ab7ae3133052c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="transfer-physical-inventory-within-the-warehouse"></a><span data-ttu-id="b6f01-103">倉庫内の現物在庫の移動</span><span class="sxs-lookup"><span data-stu-id="b6f01-103">Transfer physical inventory within the warehouse</span></span>
@@ -67,4 +68,5 @@ ms.lasthandoff: 08/07/2018
 1. <span data-ttu-id="b6f01-142">[在庫] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b6f01-142">Click Inventory.</span></span>
 2. <span data-ttu-id="b6f01-143">[トランザクション] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b6f01-143">Click Transactions.</span></span>
     * <span data-ttu-id="b6f01-144">ここで、仕訳帳の転記時に作成されたトランザクションを確認できます。</span><span class="sxs-lookup"><span data-stu-id="b6f01-144">Here you can see the transactions that were created when you posted your journal.</span></span>  
+
 
