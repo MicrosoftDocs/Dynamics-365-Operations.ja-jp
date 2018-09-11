@@ -1,21 +1,22 @@
----
+--- 
 title: "新しい倉庫レイアウトの作成"
 description: "この手順は、倉庫での場所に関する情報を設定する方法を示します。"
 author: perlynne
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: InventParameters, DefaultDashboard, InventLocation, WMSLocationWizard
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
 ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: 253440d81edd6f71b52ae349398e3c6a895bf05c
@@ -49,7 +50,7 @@ ms.lasthandoff: 09/29/2017
 7. 場所の名前セクションの展開を切り替えます。
     * このセクションのオプションは、場所の名前の既定の形式を定義します。 上記の例では、通路番号、ラック番号、棚番号が含まれます。  
 8. [通路を含める] オプションをオンに設定します。
-9. [ラックを含める] オプションをオンに設定します。
+9. [ラックを含める] オプションをオンに設定します。 
 10. ラックの [形式] フィールドに値を入力します。
     * 例: -##  
 11. [棚を含める] オプションをオンに設定します。
@@ -74,4 +75,5 @@ ms.lasthandoff: 09/29/2017
 14. [完了] をクリックします。
 15. ページを閉じます。
 16. ページを更新します。
+
 

@@ -1,28 +1,29 @@
 --- 
-title: "業績仕訳への情報の追加および称賛の送信"
+title: "業績仕訳への追加および称賛の送信"
 description: "パフォーマンスの仕訳帳には、目標を達成した方法、または期間中に実行した方法に関連する情報が保持されます。"
 author: ShielaSogge
 manager: AnnBe
-ms.date: 10/13/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
-ms.service: dynamics-365-talent
+ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: EssWorkspace, HcmPerfJournal, HcmPerfJournalAddLink, HcmPerfPraise, HcmWorkerLookUpByPerson, HcmPerfJournalAdd
 audience: Application User
 ms.reviewer: rschloma
-ms.search.scope: Operations, Talent
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 92cbb25839b8f202ba37a19ad88a54194a73c179
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: e232ba1f5803f6dee148f23098563c99c1622cdf
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/29/2017
 
 ---
-# <a name="add-information-to-your-performance-journal-and-send-praise"></a>業績仕訳への情報の追加および称賛の送信
+# <a name="add-to-your-performance-journal-and-send-praise-to-someone"></a>業績仕訳への追加および称賛の送信
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -42,7 +43,7 @@ ms.lasthandoff: 08/09/2018
 9. [キーワード] フィールドに値を入力します。
 10. [外部リンクの追加] をクリックします。
 11. [説明] フィールドで「Envision」と入力します。
-12. [インターネット アドレス] フィールドに <https://www.microsoft.com/en/envision/default> を入力します。
+12. インターネット アドレス フィールドには、「https://www.microsoft.com/en/envision/default」と入力します。
 13. グリッドに戻るには "パフォーマンス仕訳帳" と呼ばれる [保存] ボタンの下のキャプションをクリックします。
     * 目標を開いた場合に表示されるように、選択した仕訳帳または仕訳帳を目標に追加できます。 [クイック リンク] タブにリンクが追加されます。目標に仕訳帳を追加し、レビューに目標を追加すると、仕訳帳は自動的にレビューに表示されます。  
     * レビューを開いた場合に表示されるように、選択した仕訳帳または仕訳帳をレビューに追加できます。    [クイック リンク] タブにリンクが追加されます。  

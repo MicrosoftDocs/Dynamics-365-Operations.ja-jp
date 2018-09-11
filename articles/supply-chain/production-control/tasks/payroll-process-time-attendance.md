@@ -1,21 +1,22 @@
----
+--- 
 title: "時刻と出勤の給与プロセスの有効化"
 description: "この手順は、時刻と出勤の給与プロセスを有効にする方法を示します。"
 author: johanhoffmann
 manager: AnnBe
-ms.date: 02/12/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: JmgPayTable, JmgPayRate, JmgPayAgreementTable, JmgPayAgreementLine, HcmWorker
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
 ms.sourcegitcommit: dadf0e87eac8522f61bb094c146e37f46a21fc09
 ms.openlocfilehash: 16d8fc2120dfb7b356b238957019a29d05963f9a
@@ -68,4 +69,5 @@ ms.lasthandoff: 02/06/2018
 6. [時間登録] セクションを展開します。
 7. [編集] をクリックします。
 8. [支払協定] フィールドで値を入力または選択します。
+
 

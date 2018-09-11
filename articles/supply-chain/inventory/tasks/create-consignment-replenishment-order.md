@@ -1,21 +1,22 @@
----
+--- 
 title: "委託販売補充注文の作成"
 description: "この手順では、委託製品の補充注文の作成方法が説明され、仕入先から該当する委託製品在庫までの予定配送を追跡確認できます。"
 author: mkirknel
 manager: AnnBe
-ms.date: 10/13/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ConsignmentReplenishmentOrder, ConsignmentReplenishmentOrderCreate, InventTrans, ConsignmentDraftReplenishmentOrderJournal, InventOnhandMovement, InventOnhandItem, InventItemIdLookupSimple
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
 ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
 ms.openlocfilehash: f7f8005ec9e723c94d53e6ab81f04ee388c83faa
@@ -60,7 +61,7 @@ ms.lasthandoff: 09/29/2017
 ## <a name="receive-items"></a>品目の受信 (複数)
 1. [製品受領書] をクリックします。
 2. [外部製品受領] フィールドで、値を入力します。
-3. [数量] フィールドにおいて、ここに表示される数値より小さい数値を入力します。
+3. [数量] フィールドにおいて、ここに表示される数値より小さい数値を入力します。 
 4. [OK] をクリックします。
 
 ## <a name="check-the-on-hand-inventory"></a>手持在庫を確認します。
@@ -70,4 +71,5 @@ ms.lasthandoff: 09/29/2017
     * 仕入先が所有する委託製品在庫として受領された品目は手持在庫として使用できます。 委託製品補充注文の残余数量は [合計] フィールドの [注文済] に表示されます。  
 4. ページを閉じます。
 5. [閉じる] をクリックします。
+
 
