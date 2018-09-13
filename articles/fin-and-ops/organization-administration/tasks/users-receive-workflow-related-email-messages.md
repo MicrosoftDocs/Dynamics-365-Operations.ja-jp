@@ -3,7 +3,7 @@ title: "ワークフロー関連の電子メール メッセージを受信す�
 description: "ワークフロー関連のイベントが発生するときに電子メール メッセージを送信するようにシステムを構成することができます。"
 author: jasongre
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: jasongre
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: 2ddad87b42915ddbd1632c805d6e57a67b6e9638
+ms.sourcegitcommit: abd59b96a2e5dceb2492c2db2c617485b332fbd3
+ms.openlocfilehash: 6800d02878123388611d35760123d0215e9d539f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/13/2018
 
 ---
 # <a name="enable-users-to-receive-workflow-related-email-messages"></a><span data-ttu-id="8b244-103">ワークフロー関連の電子メール メッセージを受信するためのユーザーを有効にする</span><span class="sxs-lookup"><span data-stu-id="8b244-103">Enable users to receive workflow-related email messages</span></span>

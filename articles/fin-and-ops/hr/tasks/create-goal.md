@@ -3,7 +3,7 @@ title: "目標の作成"
 description: "目標を作成し、目標に活動を追加し、測定を追跡し、目標をレビューににリンクすることができます。"
 author: kherr75
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: cfea518c866fe23094119868b580a453cb06c612
+ms.sourcegitcommit: abd59b96a2e5dceb2492c2db2c617485b332fbd3
+ms.openlocfilehash: e3f3bc01113099c5b28f10e702ebf981e26c196a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/13/2018
 
 ---
 # <a name="create-a-goal"></a><span data-ttu-id="17490-103">目標の作成</span><span class="sxs-lookup"><span data-stu-id="17490-103">Create a goal</span></span>
