@@ -3,7 +3,7 @@ title: "目標の作成"
 description: "目標を作成し、目標に活動を追加し、測定を追跡し、目標をレビューににリンクすることができます。"
 author: kherr75
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

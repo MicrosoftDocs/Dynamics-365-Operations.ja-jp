@@ -3,7 +3,7 @@ title: "法人の作成"
 description: "法人は、法的権利の登録によって識別される組織です。"
 author: sericks007
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

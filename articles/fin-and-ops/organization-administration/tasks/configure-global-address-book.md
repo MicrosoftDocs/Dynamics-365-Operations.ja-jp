@@ -3,7 +3,7 @@ title: "グローバル アドレス帳のコンフィギュレーション"
 description: "グローバル アドレス帳の既定値およびセキュリティ ポリシーを設定するには、この手順を使用します。"
 author: kfend
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

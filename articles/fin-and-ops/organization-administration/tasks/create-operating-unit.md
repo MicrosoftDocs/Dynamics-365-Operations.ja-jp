@@ -3,7 +3,7 @@ title: "作業単位の作成"
 description: "作業単位とは、事業における経済資源と運営プロセスの管理を振り分ける際に使用する組織です。"
 author: sericks007
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

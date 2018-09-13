@@ -3,7 +3,7 @@ title: "業績の確認の作成"
 description: "この手順では、パフォーマンス レビューの作成方法を表示し、レビューの各セクションの目的について説明します。"
 author: kherr75
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "ワークフロー履歴の表示"
 description: "処理および承認のためにワークフロー システムに送信されたドキュメントの状態を表示するには、これらのステップを使用します。"
 author: jasongre
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
