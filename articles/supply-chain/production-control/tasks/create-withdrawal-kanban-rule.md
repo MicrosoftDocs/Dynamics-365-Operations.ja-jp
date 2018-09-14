@@ -3,7 +3,7 @@ title: "引き取りかんばんルールの作成"
 description: "この手順は、リーン環境で材料を転送する引き取りかんばんルールを作成するために必要な設定を表示します。"
 author: ChristianRytt
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

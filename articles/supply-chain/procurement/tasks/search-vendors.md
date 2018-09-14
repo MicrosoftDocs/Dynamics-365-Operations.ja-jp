@@ -3,7 +3,7 @@ title: "仕入先の検索"
 description: "特定の基準に基づく仕入先の検索方法を習得します。"
 author: mkirknel
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

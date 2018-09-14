@@ -3,7 +3,7 @@ title: "複数の活動のかんばんルールの作成"
 description: "この手順では、生産フローの複数の活動を含むかんばんルールを作成する方法を示します。"
 author: ChristianRytt
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

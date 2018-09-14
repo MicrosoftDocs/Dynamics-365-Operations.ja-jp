@@ -3,7 +3,7 @@ title: "既存のフォーミュラをコピーしてフォーミュラを作成
 description: "この手順は、既存のフォーミュラからコピーして新しいフォーミュラをすばやく作成する方法を示します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

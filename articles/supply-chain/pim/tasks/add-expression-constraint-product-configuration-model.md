@@ -3,7 +3,7 @@ title: "製品コンフィギュレーション モデルへ式の制約の追�
 description: "この手順は、製品コンフィギュレーション モデルに新しい式の制約を追加する方法を表示します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

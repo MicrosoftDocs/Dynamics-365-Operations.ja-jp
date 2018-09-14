@@ -3,7 +3,7 @@ title: "仕訳帳の作成および検証"
 description: "このタスク ガイドでは、仕訳帳および仕訳帳明細行を作成し、検証します。"
 author: ryansandness
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

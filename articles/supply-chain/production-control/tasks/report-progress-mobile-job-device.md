@@ -3,7 +3,7 @@ title: "モバイル ジョブ デバイスでの進捗のレポート"
 description: "この手順では、ジョブ デバイスの登録フォームで生産ジョブの進行を開始してレポートする方法を示します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "転記された消費税トランザクションの表示"
 description: "必要な内容に応じて、さまざまなページから転記済売上税トランザクションを表示できます。"
 author: twheeloc
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

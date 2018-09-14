@@ -3,7 +3,7 @@ title: "取立情報の確認"
 description: "この手順は、回収情報およびさまざまな設定オプションや回収トランザクションを確認する方法を説明します。"
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "誰かの代わりに製品を注文するためのアクセス許可の
 description: "この手順では、他の作業者に代わって購買要求を作成するためのアクセス許可を作業者に付与する方法を示します。"
 author: mkirknel
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

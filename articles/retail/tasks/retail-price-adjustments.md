@@ -3,7 +3,7 @@ title: "小売価格調整の管理"
 description: "この手順では、小売価格調整の作成を説明します。"
 author: josaw1
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

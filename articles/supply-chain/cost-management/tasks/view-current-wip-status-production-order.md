@@ -3,7 +3,7 @@ title: "製造オーダーの現在の仕掛品ステータスの表示"
 description: "この手順では、製造オーダーの仕掛報告書の表示方法を説明します。"
 author: AndersGirke
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

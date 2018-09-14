@@ -3,7 +3,7 @@ title: "作業時間テンプレートの作成"
 description: "作業時間テンプレートは、週の中の勤務時間の定義や、ある期間の作業時間の生成に使用されます。"
 author: sorenva
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

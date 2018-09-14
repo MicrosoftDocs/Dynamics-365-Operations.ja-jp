@@ -3,7 +3,7 @@ title: "勘定科目のエイリアスの設定"
 description: "この手順では、勘定番号を入力するショートカットを提供する勘定科目エイリアスを作成する方法について説明します。"
 author: aprilolson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

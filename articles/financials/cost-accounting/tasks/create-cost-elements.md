@@ -3,7 +3,7 @@ title: "原価要素の作成"
 description: "原価計算の原価要素を作成するにはいくつかの方法があります。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

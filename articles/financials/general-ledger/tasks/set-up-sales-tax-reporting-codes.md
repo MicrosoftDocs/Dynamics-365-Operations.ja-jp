@@ -3,7 +3,7 @@ title: "消費税レポート コードを設定します"
 description: "売上税レポート コードは、売上税レポートのフィールド番号です。"
 author: twheeloc
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "売上税の割り当ておよび上書き"
 description: "この手順では、小売チャンネルに売上税グループを割り当てる方法を示します。"
 author: mkirknel
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

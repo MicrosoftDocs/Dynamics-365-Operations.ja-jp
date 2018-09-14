@@ -3,7 +3,7 @@ title: "顧客支払の預金"
 description: "顧客支払を預金します。"
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

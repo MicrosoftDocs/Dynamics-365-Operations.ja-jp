@@ -3,7 +3,7 @@ title: "作業時間スケジューリング プロパティの作成"
 description: "作業時間のスケジューリングのプロパティを使用して、作業時間の間隔を分類し、オペレータが考慮する必要のある設定を定義します。"
 author: sorenva
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

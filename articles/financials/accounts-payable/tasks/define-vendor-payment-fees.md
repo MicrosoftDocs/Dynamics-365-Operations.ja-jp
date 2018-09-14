@@ -3,7 +3,7 @@ title: "仕入先の支払手数料の定義"
 description: "仕入先支払手数料を設定します。"
 author: abruer
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

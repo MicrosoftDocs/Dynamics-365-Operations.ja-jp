@@ -3,7 +3,7 @@ title: "仕訳入力またはトランザクションの表示"
 description: "この手順では、仕訳入力やトランザクションを検索するための伝票トランザクションの照会の使用方法について説明します。"
 author: aprilolson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "デバイスの作成と関連付け"
 description: "この手順では、新しいデバイスを作成し、レジスターに関連付ける方法を説明します。"
 author: jashanno
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

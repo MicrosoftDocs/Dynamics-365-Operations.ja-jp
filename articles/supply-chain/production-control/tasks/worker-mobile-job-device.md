@@ -3,7 +3,7 @@ title: "モバイル ジョブ デバイスを使用した作業者のコンフ�
 description: "この手順では、作業者のユーザー アカウントに適切なロールを割り当てる方法を表示します。それによって、作業者が作業現場の登録を行うことをできるようになります。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

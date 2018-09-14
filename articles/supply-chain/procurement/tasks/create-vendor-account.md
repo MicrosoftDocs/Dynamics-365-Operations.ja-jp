@@ -3,7 +3,7 @@ title: "仕入先勘定の作成"
 description: "この手順では、仕入先勘定の作成方法と住所および連絡先情報の追加方法を示します。"
 author: mkirknel
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

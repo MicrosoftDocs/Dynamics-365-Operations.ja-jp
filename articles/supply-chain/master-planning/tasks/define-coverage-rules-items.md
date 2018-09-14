@@ -3,7 +3,7 @@ title: "品目の補充ルールの定義"
 description: "この手順の作成に使用するデモ データの会社は USMF です。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

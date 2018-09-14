@@ -3,7 +3,7 @@ title: "定期的な自由書式の請求書の生成と転記"
 description: "定期請求書は、顧客に対して同じ金額を定期的に請求する際に使用します。"
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

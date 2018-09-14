@@ -3,7 +3,7 @@ title: "督促状順序の作成"
 description: "このタスク ガイドを使用し、督促状順序を作成します。"
 author: mikefalkner
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "販売注文請求書の作成"
 description: "このタスク ガイドでは、販売注文の請求操作について説明します。請求書の結合やバッチ処理も含みます。"
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

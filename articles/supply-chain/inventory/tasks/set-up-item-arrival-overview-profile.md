@@ -3,7 +3,7 @@ title: "着荷の概要プロファイルの設定"
 description: "このタスクでは、着荷の概要プロファイルの設定を中心に説明します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

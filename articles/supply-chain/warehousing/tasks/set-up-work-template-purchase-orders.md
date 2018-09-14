@@ -3,7 +3,7 @@ title: "発注書の作業テンプレートの設定"
 description: "この手順では、入庫済品目のプット アウェイで使用する簡単な作業テンプレートの設定に集中して説明します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

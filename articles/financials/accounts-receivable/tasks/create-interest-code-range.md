@@ -3,7 +3,7 @@ title: "範囲のある利息コードの作成"
 description: "利息コードは値の範囲によって異なる利息金額を計算するように設定できます。"
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

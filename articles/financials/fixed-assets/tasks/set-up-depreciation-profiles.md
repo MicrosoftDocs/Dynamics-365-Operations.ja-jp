@@ -3,7 +3,7 @@ title: "減価償却プロファイルの設定および作成"
 description: "減価償却プロファイルによって、資産の減価償却のタイプと頻度が決まります。"
 author: saraschi2
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "コンフィギュレーション グループの定義"
 description: "この手順では、デモ データの会社 USMF に 2 つのグループを作成することにより、製品コンフィギュレーション グループを定義する方法を示します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

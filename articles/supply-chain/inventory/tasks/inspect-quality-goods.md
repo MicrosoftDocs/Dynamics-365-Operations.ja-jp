@@ -3,7 +3,7 @@ title: "商品の品質の調査"
 description: "この手順では、品質指示を処理する方法を説明します。"
 author: perlynne
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

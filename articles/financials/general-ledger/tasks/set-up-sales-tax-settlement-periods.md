@@ -3,7 +3,7 @@ title: "消費税精算期間を設定します"
 description: "売上税決済期間は、売上税の報告および支払が必要な間隔についての情報を含みます。"
 author: twheeloc
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

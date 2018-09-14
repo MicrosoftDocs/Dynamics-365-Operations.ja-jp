@@ -3,7 +3,7 @@ title: "製品の GTIN コードの入力"
 description: "GTIN コードは、GS1 組織によって割り当てられます。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

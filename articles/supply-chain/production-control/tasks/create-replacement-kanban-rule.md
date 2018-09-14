@@ -3,7 +3,7 @@ title: "交換するかんばんルールの作成"
 description: "この手順では、既存のかんばんルールを特定日付の新しいかんばんルールに置き換えることを対象としています。"
 author: ChristianRytt
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

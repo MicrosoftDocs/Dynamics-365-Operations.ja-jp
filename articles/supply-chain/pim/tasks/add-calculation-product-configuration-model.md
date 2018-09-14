@@ -3,7 +3,7 @@ title: "製品コンフィギュレーション モデルへの計算の追加"
 description: "この手順は、製品コンフィギュレーション モデルに新しい計算を追加する方法を表示します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

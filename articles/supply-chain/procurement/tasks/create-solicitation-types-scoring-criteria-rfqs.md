@@ -3,7 +3,7 @@ title: "RFQ の入札タイプとスコア基準の作成"
 description: "このガイドでは、入札タイプの作成、および入札タイプにスコア方法を関連付ける方法を示します。"
 author: mkirknel
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

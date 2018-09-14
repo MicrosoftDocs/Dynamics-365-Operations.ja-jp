@@ -3,7 +3,7 @@ title: "製品マスターの作成"
 description: "事前に定義されたバリアントのために製品マスターを作成します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

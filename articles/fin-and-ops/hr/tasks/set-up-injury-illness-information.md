@@ -3,7 +3,7 @@ title: "けが/病気の情報を設定します"
 description: "雇用者は、従業員がいつ危険な仕事場により、傷害を負ったか、また疾病を患ったかを把握している必要があります。"
 author: ShielaSogge
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

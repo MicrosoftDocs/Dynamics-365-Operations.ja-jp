@@ -3,7 +3,7 @@ title: "督促状の処理"
 description: "この手順では、督促状の作成、印刷、および転記の方法を示します。"
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

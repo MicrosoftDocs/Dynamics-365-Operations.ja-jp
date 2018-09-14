@@ -3,7 +3,7 @@ title: "元伝票の監査ポリシーの定義"
 description: "この手順は、監査ポリシー ルールを設定および実行する方法を示します。"
 author: ryansandness
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

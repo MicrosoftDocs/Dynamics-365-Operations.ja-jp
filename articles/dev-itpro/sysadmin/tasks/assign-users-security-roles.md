@@ -3,7 +3,7 @@ title: "ユーザーをセキュリティ ロールに割り当てる"
 description: "Microsoft Dynamics 365 for Finance and Operations、Enterprise edition にアクセスするには、ユーザーをセキュリティ ロールに割り当てる必要があります。"
 author: maertenm
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

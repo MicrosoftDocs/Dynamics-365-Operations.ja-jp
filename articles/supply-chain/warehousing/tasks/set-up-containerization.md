@@ -3,7 +3,7 @@ title: "コンテナー詰めの設定"
 description: "この手順では、倉庫管理での積荷のコンテナー詰めを自動化する方法について説明します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

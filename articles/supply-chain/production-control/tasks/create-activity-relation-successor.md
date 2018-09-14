@@ -3,7 +3,7 @@ title: "活動リレーションの作成 - 後続処理"
 description: "リーン生産フローの活動フローは活動関係を通して文書化されています。"
 author: cvocph
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

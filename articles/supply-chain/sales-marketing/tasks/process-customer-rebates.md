@@ -3,7 +3,7 @@ title: "顧客リベートの生成および処理"
 description: "この手順は、要求の生成から売掛金勘定への見越計上として顧客リベートを渡すまでの、顧客リベートの処理方法を示します。"
 author: omulvad
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

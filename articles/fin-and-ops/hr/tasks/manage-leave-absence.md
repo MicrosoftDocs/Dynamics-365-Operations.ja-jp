@@ -3,7 +3,7 @@ title: "休暇の管理"
 description: "この手順では、従業員の休暇レコードの作成について説明します。"
 author: ShielaSogge
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

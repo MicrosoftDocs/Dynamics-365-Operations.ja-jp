@@ -3,7 +3,7 @@ title: "仕入先銀行口座の作成"
 description: "この手順では、仕入先用の銀行口座の作成方法を説明します。"
 author: mkirknel
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

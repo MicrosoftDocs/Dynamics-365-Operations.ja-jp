@@ -3,7 +3,7 @@ title: "製品への画像の追加"
 description: "この手順では、製品に画像を追加する方法を示しています。このタスクの作成に使用されるデモデータの会社は、USMF です。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "製品コンフィギュレーション モデルの BOM の管理"
 description: "この手順を実行するには、既存の製品コンフィギュレーション モデルが必要です。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

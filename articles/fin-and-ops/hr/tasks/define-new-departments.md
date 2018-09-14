@@ -3,7 +3,7 @@ title: "新しい部門の定義"
 description: "部門は、販売または会計など、事業の機能領域を表す作業単位です。"
 author: kherr75
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

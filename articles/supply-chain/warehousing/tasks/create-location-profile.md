@@ -3,7 +3,7 @@ title: "場所プロファイルの作成"
 description: "倉庫の場所は、場所のプロパティに関連したプロファイルを有している必要があります。たとえば、ある場所では品目の混合が許容されているかどうかなどです。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "リーン生産の転送活動の作成"
 description: "リーン生産の移動活動を作成します。"
 author: cvocph
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

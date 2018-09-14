@@ -3,7 +3,7 @@ title: "在庫棚卸プロセスの定義"
 description: "この手順は、棚卸グループおよび棚卸仕訳帳を作成することによって、基本的な在庫棚卸処理のコンフィギュレーションについて説明します。"
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

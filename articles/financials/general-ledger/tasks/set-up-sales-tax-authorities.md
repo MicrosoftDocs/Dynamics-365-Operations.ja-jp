@@ -3,7 +3,7 @@ title: "売上税所轄官庁の設定"
 description: "売上税所轄官庁とは、収集された売上税の報告先および支払先です。"
 author: twheeloc
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

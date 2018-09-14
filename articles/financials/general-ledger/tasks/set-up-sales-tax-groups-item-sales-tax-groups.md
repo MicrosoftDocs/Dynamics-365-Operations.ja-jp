@@ -3,7 +3,7 @@ title: "売上税グループと品目売上税グループの設定"
 description: "このタスクの記録では、売上税および品目売上税のグループ設定について説明します。"
 author: twheeloc
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "機械学習を利用する製品の推奨事項のコンフィギュレ
 description: "この手順では、製品の推奨項目を促進する機械学習システムが使用するエンティティストアが更新され、その後製品の推奨項目がPOSクライアントで有効になります。"
 author: ashishmsft
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

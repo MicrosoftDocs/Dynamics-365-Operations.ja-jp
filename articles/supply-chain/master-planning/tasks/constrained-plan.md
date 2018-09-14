@@ -3,7 +3,7 @@ title: "制約付き計画の生成"
 description: "この手順では、材料制約と能力制約の両方を考慮した計画の作成方法を示します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "生産フロー バージョンへの既存の活動の追加"
 description: "生産フローの新バージョンを作成する際に、旧バージョン向けに作成された活動を新バージョンに加えることができます。"
 author: cvocph
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "レジスターの作成と関連付け"
 description: "この手順では、販売時点管理 (POS) レジスターを作成する方法を示します。"
 author: rubencdelgado
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

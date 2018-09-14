@@ -3,7 +3,7 @@ title: "製造オーダーのスケジュール"
 description: "この手順では、製造オーダーのスケジュール方法を示します。"
 author: johanhoffmann
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

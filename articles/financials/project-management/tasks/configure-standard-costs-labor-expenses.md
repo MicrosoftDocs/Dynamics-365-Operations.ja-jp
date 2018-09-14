@@ -3,7 +3,7 @@ title: "労務および経費の標準原価のコンフィギュレーション
 description: "この手順では、労働者の標準原価とプロジェクトの経費を設定する方法を示します。"
 author: KimANelson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

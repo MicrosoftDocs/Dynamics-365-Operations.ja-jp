@@ -3,7 +3,7 @@ title: "かんばんプロセス ジョブの実行"
 description: "この手順は、かんばんプロセス ジョブの実行を対象としています。"
 author: ChristianRytt
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

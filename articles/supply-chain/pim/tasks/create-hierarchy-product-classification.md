@@ -3,7 +3,7 @@ title: "製品分類の階層の作成"
 description: "この手順では、新しいカテゴリ階層を作成し、商品コード階層タイプを割り当てる方法を示します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

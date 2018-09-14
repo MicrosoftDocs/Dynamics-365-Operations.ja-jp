@@ -3,7 +3,7 @@ title: "源泉徴収税の設定"
 description: "源泉徴収税は仕入先に課せられる税金で、売上税トランザクションを作成しません。"
 author: twheeloc
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

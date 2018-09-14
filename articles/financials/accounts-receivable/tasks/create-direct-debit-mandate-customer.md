@@ -3,7 +3,7 @@ title: "顧客の口座引落の委任状の作成"
 description: "このタスク ガイドでは、口座引落の委任状を作成し、それを請求書に使用する方法を示します。"
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

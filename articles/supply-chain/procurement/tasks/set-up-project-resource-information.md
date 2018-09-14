@@ -3,7 +3,7 @@ title: "プロジェクト リソース情報の設定"
 description: "この手順では、プロジェクト リソースを設定する方法を示します。"
 author: mkirknel
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

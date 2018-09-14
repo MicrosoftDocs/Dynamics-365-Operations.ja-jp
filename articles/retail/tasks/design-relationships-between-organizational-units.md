@@ -3,7 +3,7 @@ title: "組織単位間のリレーションシップのデザイン"
 description: "この手順では、組織単位間の関係をデザインする方法を説明します。"
 author: mugunthanm
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

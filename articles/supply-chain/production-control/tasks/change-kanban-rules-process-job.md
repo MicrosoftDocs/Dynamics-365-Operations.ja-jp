@@ -3,7 +3,7 @@ title: "プロセス ジョブのかんばんルールの変更"
 description: "この手順は、使用されているかんばんルールの指定されたかんばんへの変更を対象としています。"
 author: ChristianRytt
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "固定資産への追加物の入力"
 description: "この手順では、既存の固定資産への追加物を追加する方法を示します。"
 author: saraschi2
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

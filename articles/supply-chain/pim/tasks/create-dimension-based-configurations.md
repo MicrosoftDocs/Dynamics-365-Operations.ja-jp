@@ -3,7 +3,7 @@ title: "分析コードベースのコンフィギュレーションの作成"
 description: "この手順では、分析コード ベース製品のコンフィギュレーションを定義する方法を示します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

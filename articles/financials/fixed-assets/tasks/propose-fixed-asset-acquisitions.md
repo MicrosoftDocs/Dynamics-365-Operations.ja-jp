@@ -3,7 +3,7 @@ title: "固定資産の取得の提案"
 description: "この手順では、固定資産仕訳帳の取得提案を使用して固定資産の取得方法を示します。"
 author: saraschi2
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "主勘定の作成"
 description: "このタスクのガイドは、既存の勘定科目表への主勘定の追加方法について説明します。"
 author: aprilolson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

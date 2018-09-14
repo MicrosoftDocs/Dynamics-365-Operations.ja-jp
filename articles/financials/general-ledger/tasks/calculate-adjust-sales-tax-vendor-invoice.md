@@ -3,7 +3,7 @@ title: "仕入先請求書の売上税の計算と調整"
 description: "オリジナルの元伝票が計算と異なる税額を表示している場合、転記前にこれらの金額を調整できます。"
 author: twheeloc
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

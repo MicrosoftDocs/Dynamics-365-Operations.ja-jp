@@ -3,7 +3,7 @@ title: "既存のかんばんルールを複製して新しいかんばんルー
 description: "この手順では、既存のかんばんルールの複製の作成を中心に説明します。"
 author: ChristianRytt
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

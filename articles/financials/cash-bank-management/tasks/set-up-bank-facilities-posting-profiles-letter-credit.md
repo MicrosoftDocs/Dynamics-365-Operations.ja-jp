@@ -3,7 +3,7 @@ title: "信用状についての銀行融資と転記プロファイルの設定
 description: "この手順では、信用状のプロセスを必要とする銀行融資と転記プロファイルの作成を説明します。"
 author: kweekley
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

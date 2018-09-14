@@ -3,7 +3,7 @@ title: "報酬プロセスの定義と結果の計算"
 description: "報酬プロセスは、固定および変動報酬プランに登録された従業員の新しい報酬金額および報奨を決定するのに使用されます。"
 author: kherr75
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

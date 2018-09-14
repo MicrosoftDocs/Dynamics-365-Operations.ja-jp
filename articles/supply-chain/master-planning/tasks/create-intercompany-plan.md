@@ -3,7 +3,7 @@ title: "会社間計画の作成"
 description: "この手順では、会社間計画を作成する方法を示します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "ISO20022 口座引落コンフィギュレーションのインポート
 description: "この手順では、顧客支払の電子レポートのコンフィギュレーションをインポートする方法を示します。"
 author: mrolecki
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

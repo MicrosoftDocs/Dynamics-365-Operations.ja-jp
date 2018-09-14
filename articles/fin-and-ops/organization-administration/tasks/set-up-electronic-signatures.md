@@ -3,7 +3,7 @@ title: "電子署名の設定"
 description: "電子署名を設定するには、この手順を使用します。"
 author: maertenm
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "運営リソースの作成"
 description: "プロジェクト活動または生産プロセスを実行する運営リソース。"
 author: sorenva
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "仕入先の先日付小切手の登録および転記"
 description: "仕訳伝票を使用して、ベンダーに小切手を発行する前に先日付小切手の詳細を登録できます。"
 author: kweekley
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

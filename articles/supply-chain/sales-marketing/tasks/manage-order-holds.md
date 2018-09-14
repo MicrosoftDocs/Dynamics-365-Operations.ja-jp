@@ -3,7 +3,7 @@ title: "注文保留の管理"
 description: "この手順では、顧客の販売注文を保留に設定する方法、注文保留のチェックアウトの処理の方法、および注文保留の解除方法について説明します。"
 author: omulvad
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

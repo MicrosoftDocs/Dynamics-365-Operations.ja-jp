@@ -3,7 +3,7 @@ title: "リーン スケジュール グループの定義"
 description: "リーン スケジュール グループは、かんばんスケジューリングの製品をグループ化して区別するために定義されます。"
 author: cvocph
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

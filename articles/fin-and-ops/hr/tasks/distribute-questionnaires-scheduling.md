@@ -3,7 +3,7 @@ title: "スケジューリングを使用したアンケートの配布"
 description: "アンケートのスケジューリングによって、複数の回答者に対するアンケートを計画して配布することができます。"
 author: kherr75
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

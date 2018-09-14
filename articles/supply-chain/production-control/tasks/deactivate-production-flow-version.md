@@ -3,7 +3,7 @@ title: "生産フロー バージョンの無効化"
 description: "有効な生産フロー バージョンが不要になった場合、無効化することができます。"
 author: cvocph
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

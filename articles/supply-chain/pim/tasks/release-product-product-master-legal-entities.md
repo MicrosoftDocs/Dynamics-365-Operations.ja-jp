@@ -3,7 +3,7 @@ title: "法人に対する製品/製品マスターのリリース"
 description: "この手順では、一つ以上の法人に製品または製品マスターをリリースする方法を説明します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

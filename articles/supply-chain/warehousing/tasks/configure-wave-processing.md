@@ -3,7 +3,7 @@ title: "ウェーブ処理のコンフィギュレーション"
 description: "このガイドでは、ウェーブが処理されるときに倉庫に対して生成される作業、およびウェーブが手動または自動で処理されるか判断する基準の設定方法について説明します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

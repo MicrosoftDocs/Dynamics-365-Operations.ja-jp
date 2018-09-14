@@ -3,7 +3,7 @@ title: "販売イベントかんばんルールの作成"
 description: "この手順は、販売注文の作成時に発生するかんばんルールを作成するのに必要な設定を対象としています。"
 author: ChristianRytt
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "プロジェクト発注書の作成"
 description: "この手順では、プロジェクト発注書の作成方法を説明します。"
 author: mkirknel
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

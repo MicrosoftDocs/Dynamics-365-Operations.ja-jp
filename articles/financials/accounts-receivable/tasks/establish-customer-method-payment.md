@@ -3,7 +3,7 @@ title: "顧客の支払方法の設定"
 description: "顧客支払の支払方法を作成します。"
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "生産フローおよびバージョンの検証"
 description: "この手順では、新しい生産フローとリーン生産の最初のバージョンを作成する方法を示します。"
 author: ChristianRytt
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

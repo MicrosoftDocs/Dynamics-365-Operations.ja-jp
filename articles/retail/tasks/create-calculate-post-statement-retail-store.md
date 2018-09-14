@@ -3,7 +3,7 @@ title: "小売店舗の明細書の作成、計算、および転記"
 description: "この手順では、店舗の明細書を作成、計算、および転記する手動のステップについて説明します。"
 author: jashanno
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

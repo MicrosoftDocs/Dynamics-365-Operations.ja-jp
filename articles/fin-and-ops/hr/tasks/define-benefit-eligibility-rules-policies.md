@@ -3,7 +3,7 @@ title: "給付金の適格性ルールおよびポリシーの定義"
 description: "この記録は、給付金の適格性ルールとポリシーを作成する方法、給付金にルールを割り当てる方法を示します。"
 author: kherr75
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

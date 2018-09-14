@@ -3,7 +3,7 @@ title: "特定の製品の仕入先の承認"
 description: "この手順では、特定の製品に対する仕入先の承認方法を示します。"
 author: mkirknel
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

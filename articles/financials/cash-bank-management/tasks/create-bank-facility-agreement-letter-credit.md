@@ -3,7 +3,7 @@ title: "信用状の銀行融資契約の作成"
 description: "このタスクは、信用状を処理する銀行融資契約を作成する方法について説明します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

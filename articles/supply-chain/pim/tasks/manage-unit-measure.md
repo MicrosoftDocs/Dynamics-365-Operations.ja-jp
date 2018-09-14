@@ -3,7 +3,7 @@ title: "測定単位の管理"
 description: "この手順は、測定単位の定義方法、単位の翻訳の提供方法とその説明、および関連する単位の変換ルールの定義方法を示します。"
 author: sorenva
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

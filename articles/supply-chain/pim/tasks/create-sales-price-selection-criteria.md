@@ -3,7 +3,7 @@ title: "販売価格の選択基準の作成"
 description: "この手順では、属性ベースの販売価格モデルに対して販売価格の選択基準を作成する方法を示します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

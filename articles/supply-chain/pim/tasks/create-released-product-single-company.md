@@ -3,7 +3,7 @@ title: "1 つの会社に対するリリース済製品の作成"
 description: "この手順は、1 つの法人単位のコンテキストでリリース済製品を 1 つ作成する方法を説明します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

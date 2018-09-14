@@ -3,7 +3,7 @@ title: "製品の作成"
 description: "この手順では、小売製品階層で新しい製品を作成する方法を説明します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "信用保証状についての銀行融資と転記プロファイルの
 description: "このタスクは、信用保証状を処理するために必要な銀行融資と転記プロファイルを作成します。"
 author: kweekley
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

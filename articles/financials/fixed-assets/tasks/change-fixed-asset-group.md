@@ -3,7 +3,7 @@ title: "固定資産グループの変更"
 description: "固定資産は正しい固定資産グループに割り当てる必要があります。"
 author: saraschi2
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

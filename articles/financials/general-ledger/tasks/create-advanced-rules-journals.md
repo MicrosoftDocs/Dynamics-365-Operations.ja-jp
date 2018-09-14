@@ -3,7 +3,7 @@ title: "仕訳帳の詳細なルールの作成"
 description: "この手順は、仕訳帳の詳細なルールの作成について説明します。"
 author: aprilolson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

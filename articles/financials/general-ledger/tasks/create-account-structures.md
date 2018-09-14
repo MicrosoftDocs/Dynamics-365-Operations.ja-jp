@@ -3,7 +3,7 @@ title: "勘定構造の作成"
 description: "このタスク ガイドでは、勘定構造の作成について説明します。"
 author: aprilolson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

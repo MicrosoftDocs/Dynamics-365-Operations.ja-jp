@@ -3,7 +3,7 @@ title: "内部在庫移動の移動文書の生成"
 description: "この手順では、社内の製品移動に関わるドキュメントを作成する方法を示します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

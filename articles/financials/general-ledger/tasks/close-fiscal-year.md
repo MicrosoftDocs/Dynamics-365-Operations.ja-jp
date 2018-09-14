@@ -3,7 +3,7 @@ title: "会計年度の決算"
 description: "この手順では、残高を新しい会計年度に振り替える年度末決算処理について説明します。"
 author: aprilolson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

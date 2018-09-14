@@ -3,7 +3,7 @@ title: "リリース済み製品マスターの基本設定の完了"
 description: "この手順は、製品マスターを BOM バージョンで使用する前に必要な最小限の設定の完了方法を示します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

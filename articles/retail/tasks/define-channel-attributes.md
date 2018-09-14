@@ -3,7 +3,7 @@ title: "チャネル属性の定義"
 description: "チャンネルおよび製品属性を追加して、チャンネルを強化します。"
 author: jashanno
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

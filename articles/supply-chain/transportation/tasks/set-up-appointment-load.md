@@ -3,7 +3,7 @@ title: "積荷の予定の設定"
 description: "この手順では、積荷に対してドッキング予定を設定し、計画する方法を示します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

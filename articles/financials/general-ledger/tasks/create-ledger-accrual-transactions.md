@@ -3,7 +3,7 @@ title: "元帳発生トランザクションの作成"
 description: "このタスク ガイドでは、発生主義スキーマに基づく元帳計上トランザクションの生成について説明します。"
 author: aprilolson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

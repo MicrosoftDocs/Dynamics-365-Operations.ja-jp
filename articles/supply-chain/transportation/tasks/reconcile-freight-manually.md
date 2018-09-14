@@ -3,7 +3,7 @@ title: "運賃の手動調整"
 description: "この手順では、運賃を手動で調整する方法を示します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

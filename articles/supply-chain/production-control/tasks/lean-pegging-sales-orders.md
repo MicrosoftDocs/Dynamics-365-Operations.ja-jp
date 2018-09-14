@@ -3,7 +3,7 @@ title: "販売注文のリーン ペギング"
 description: "この手順で、品目がかんばんで生産される販売明細行からペギング ツリーを検証することに集中します。"
 author: ChristianRytt
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

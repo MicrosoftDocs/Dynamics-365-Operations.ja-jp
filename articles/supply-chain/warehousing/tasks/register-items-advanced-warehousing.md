@@ -3,7 +3,7 @@ title: "品目の着荷仕訳帳を使用した高度な倉庫管理に対応し
 description: "この手順では、高度な倉庫管理プロセスを使用する場合に、着荷仕訳帳を使用して品目を登録する方法を示します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

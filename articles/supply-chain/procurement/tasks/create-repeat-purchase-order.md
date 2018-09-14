@@ -3,7 +3,7 @@ title: "リピート発注書の作成"
 description: "この手順では、以前の購買発注ドキュメントから新しい発注書、または既存の発注書に明細行をコピーして、リピート発注書 (PO) を作成する方法を示します。"
 author: FrankDahl
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

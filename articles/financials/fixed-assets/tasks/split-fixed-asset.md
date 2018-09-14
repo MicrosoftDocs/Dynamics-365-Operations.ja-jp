@@ -3,7 +3,7 @@ title: "固定資産の分割"
 description: "このタスク ガイドでは、1 つの資産帳簿を新しい資産帳簿に分割します。"
 author: saraschi2
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

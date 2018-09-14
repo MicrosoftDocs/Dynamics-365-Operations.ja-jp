@@ -3,7 +3,7 @@ title: "販売注文を作成する。"
 description: "この手順では、販売注文を作成する方法を示します。"
 author: omulvad
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "ドライバーの予定のチェックインおよびチェックアウ
 description: "この手順では、配送担当者のチェックインおよびチェックアウトを登録する方法を示します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

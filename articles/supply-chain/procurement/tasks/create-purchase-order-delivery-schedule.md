@@ -3,7 +3,7 @@ title: "配送スケジュールと発注書の作成"
 description: "この手順では、発注書の配送スケジュールを作成する方法を示します。"
 author: FrankDahl
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

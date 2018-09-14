@@ -3,7 +3,7 @@ title: "作業者のコンフィギュレーション"
 description: "この手順では、POSの販売手数料が適用される販売員としての小売従事者を環境設定する方法を示します。"
 author: jblucher
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

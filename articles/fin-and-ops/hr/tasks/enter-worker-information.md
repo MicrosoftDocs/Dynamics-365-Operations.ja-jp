@@ -3,7 +3,7 @@ title: "作業者情報の入力"
 description: "リクルーターは大量雇用プロジェクトを作成し、職位を生成した後、その次の手順として、採用する作業者の情報を入力します。"
 author: kherr75
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

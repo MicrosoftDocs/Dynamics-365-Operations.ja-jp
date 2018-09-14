@@ -3,7 +3,7 @@ title: "転記された仕訳帳の仕訳入力"
 description: "この手順では、転記された仕訳入力の仕訳を行う方法について説明します。"
 author: aprilolson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

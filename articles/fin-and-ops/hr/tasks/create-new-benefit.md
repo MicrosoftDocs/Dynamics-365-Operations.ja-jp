@@ -3,7 +3,7 @@ title: "新しい給付金の作成"
 description: "このタスクは、新しい福利厚生の作成時に使用する福利厚生の要素の作成方法を示します。"
 author: kherr75
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

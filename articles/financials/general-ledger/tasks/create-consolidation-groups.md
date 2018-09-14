@@ -3,7 +3,7 @@ title: "連結グループおよび追加の連結勘定の作成"
 description: "この手順では、連結勘定グループの作成方法と、グループへの勘定の追加方法について説明します。"
 author: aprilolson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "会社間プロジェクト請求のコンフィギュレーション"
 description: "この手順では、組織内の 2 つの会社間のプロジェクト請求の設定方法を示します。"
 author: KimANelson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

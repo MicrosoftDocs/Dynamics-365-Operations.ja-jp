@@ -3,7 +3,7 @@ title: "サイトの計画の作成"
 description: "生産計画担当者は、特定品目を生産するための材料と能力要件を計算します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

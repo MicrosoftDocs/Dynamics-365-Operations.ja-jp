@@ -3,7 +3,7 @@ title: "RFQ を使用する要求の作成"
 description: "このガイドでは、価格および仕入先情報を RFQ プロセスから購買要求へ追加する方法を示します。"
 author: mkirknel
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

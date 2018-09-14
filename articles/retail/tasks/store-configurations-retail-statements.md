@@ -3,7 +3,7 @@ title: "小売明細書の店舗のコンフィギュレーション"
 description: "この手順では、小売明細書の作成される影響を及ぼす、転記または小売店舗のコンフィギュレーションを説明します。"
 author: jashanno
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

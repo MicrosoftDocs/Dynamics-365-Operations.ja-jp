@@ -3,7 +3,7 @@ title: "倉庫なしの販売注文の出荷"
 description: "このガイドでは、製品が顧客に出荷されたときに販売注文を更新する方法を示します。"
 author: omulvad
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

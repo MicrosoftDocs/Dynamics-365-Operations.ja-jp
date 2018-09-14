@@ -3,7 +3,7 @@ title: "顧客支払条件の設定"
 description: "この手順では、現金割引と期日の設定を定義します。"
 author: aprilolson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

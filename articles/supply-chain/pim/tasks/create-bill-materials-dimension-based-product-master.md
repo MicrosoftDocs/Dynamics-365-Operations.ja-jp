@@ -3,7 +3,7 @@ title: "分析コード ベースの製品マスターの部品表の作成"
 description: "この手順で、この一連の 8 つの記録において既に 4 つのガイドを完了している必要があります。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "最小/最大の補充プロセスの設定"
 description: "この手順では、最小/最大の補充方法を使用する新しい補充プロセスを設定する方法を示します。"
 author: perlynne
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

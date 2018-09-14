@@ -3,7 +3,7 @@ title: "原価オブジェクトの原価エントリの表示"
 description: "この手順では、原価対象の原価のエントリを表示する方法を示します。"
 author: AndersGirke
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "製品コンフィギュレーション モデルの承認"
 description: "この手順を実行するには、少なくとも 1 つの製品コンフィギュレーション モデルが必要です。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

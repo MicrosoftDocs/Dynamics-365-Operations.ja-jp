@@ -3,7 +3,7 @@ title: "選択式の質問の作成"
 description: "選択式の質問には、回答者が選択できるためのオプションが用意されます。"
 author: kherr75
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "需要予測の手動変更"
 description: "この手順では、品目の予測を変更する方法を示します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

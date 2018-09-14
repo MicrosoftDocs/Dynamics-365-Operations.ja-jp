@@ -3,7 +3,7 @@ title: "勘定科目間でのトランザクションの決済"
 description: "この手順は、勘定科目間でトランザクションを決済する方法、また元帳決済をキャンセルする方法を示します。"
 author: aprilolson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

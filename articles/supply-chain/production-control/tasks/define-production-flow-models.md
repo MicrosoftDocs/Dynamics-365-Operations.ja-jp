@@ -3,7 +3,7 @@ title: "生産フロー モデルの定義"
 description: "生産フロー モデルは、リーン生産作業セルの能力の、計算および管理方法を示しています。"
 author: cvocph
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

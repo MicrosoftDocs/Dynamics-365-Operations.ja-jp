@@ -3,7 +3,7 @@ title: "アドレス帳の構成"
 description: "組織に追加のアドレス帳を設定するには、この手順と、グローバル アドレス帳と追加のアドレス帳トピックのコンフィギュレーションの計画で行った決定を使用します。"
 author: kfend
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

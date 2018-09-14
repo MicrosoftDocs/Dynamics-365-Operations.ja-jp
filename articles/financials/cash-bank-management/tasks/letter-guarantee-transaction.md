@@ -3,7 +3,7 @@ title: "信用保証状のトランザクション"
 description: "この手順では、信用保証状のプロセスを説明します。"
 author: kweekley
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

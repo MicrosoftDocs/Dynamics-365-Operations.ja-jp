@@ -3,7 +3,7 @@ title: "生産フロー バージョンの有効化"
 description: "かんばん作業が作成され、活動が生産フロー バージョンで処理される前に、バージョンを有効にする必要があります。"
 author: cvocph
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

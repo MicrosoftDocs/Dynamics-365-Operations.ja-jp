@@ -3,7 +3,7 @@ title: "発注書に記載されている商品の受取の記録"
 description: "この手順では、商品の受取を発注書に直接記録する方法を示します。"
 author: FrankDahl
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

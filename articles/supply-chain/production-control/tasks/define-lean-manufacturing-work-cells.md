@@ -3,7 +3,7 @@ title: "リーン生産作業セルの定義"
 description: "作業セルは、リーン生産のプロセス活動で使用できるリソース グループの特定のフォームです。"
 author: cvocph
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

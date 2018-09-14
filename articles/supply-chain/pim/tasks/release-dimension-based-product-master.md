@@ -3,7 +3,7 @@ title: "分析コードベースの製品マスターのリリース"
 description: "この手順では、分析コード ベースのコンフィギュレーションに使用する製品マスターをリリースする方法を示します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

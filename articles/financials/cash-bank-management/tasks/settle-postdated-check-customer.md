@@ -3,7 +3,7 @@ title: "顧客からの先日付小切手の決済"
 description: "先日付小切手は、銀行で精算された後に決済できます。"
 author: kweekley
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "報酬グリッドの設定"
 description: "[報酬] グリッドは、固定報酬プランの支払構造を定義または維持するために使用します。"
 author: kherr75
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

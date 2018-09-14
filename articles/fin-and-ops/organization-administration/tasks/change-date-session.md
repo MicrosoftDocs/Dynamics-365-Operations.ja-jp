@@ -3,7 +3,7 @@ title: "セッションの日付の変更"
 description: "既定では、仕訳入力や元伝票を入力および転記するときに、現在の日付が使用されます。"
 author: pvillads
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

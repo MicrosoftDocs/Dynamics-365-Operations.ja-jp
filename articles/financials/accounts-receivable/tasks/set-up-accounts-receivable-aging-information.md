@@ -3,7 +3,7 @@ title: "売掛金勘定のエイジング情報の設定および生成"
 description: "このガイドでは、エイジング期間の定義、顧客残高のエイジング、および [指定の期間に達している残高] リストと [回収] ページでの残高表示の設定方法を説明します。"
 author: mikefalkner
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

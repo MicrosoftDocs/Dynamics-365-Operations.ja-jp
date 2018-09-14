@@ -3,7 +3,7 @@ title: "事前定義された製品バリアントの作成"
 description: "この手順では、製品分析コードの組み合わせを使用する製品マスターの製品バリアントの作成を説明します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

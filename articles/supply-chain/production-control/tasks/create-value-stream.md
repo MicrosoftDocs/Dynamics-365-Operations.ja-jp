@@ -3,7 +3,7 @@ title: "バリュー ストリームの作成"
 description: "バリュー ストリームは、作業単位であり、そのグループが 1 つまたは複数の生産フローです。"
 author: cvocph
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

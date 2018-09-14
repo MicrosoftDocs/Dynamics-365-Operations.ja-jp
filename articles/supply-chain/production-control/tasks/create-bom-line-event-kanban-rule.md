@@ -3,7 +3,7 @@ title: "BOM 明細行イベントかんばんルールの作成"
 description: "このタスクは、古典的な実稼働環境と混合リーン内の生産 BOM 明細行の供給を確認するイベントかんばんルールを作成するのに必要な設定を対象としています。"
 author: ChristianRytt
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

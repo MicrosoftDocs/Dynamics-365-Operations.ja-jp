@@ -3,7 +3,7 @@ title: "調達カテゴリ階層に対するポリシーの設定"
 description: "カテゴリの製品を発注するルールを設定するには、この手順を使用します。"
 author: mkirknel
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

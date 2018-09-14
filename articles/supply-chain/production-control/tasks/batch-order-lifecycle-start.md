@@ -3,7 +3,7 @@ title: "作成から開始までのバッチ オーダーのライフサイク�
 description: "この手順では、バッチ オーダーのライフ サイクルの最初の部分を説明します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "生産フロー活動への先行処理の追加"
 description: "生産フロー バージョンでは、すべての活動は順番に配列する必要があります。"
 author: cvocph
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

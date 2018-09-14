@@ -3,7 +3,7 @@ title: "一時仕入先に対する発注書の作成"
 description: "この手順では、一時仕入先向けの発注書の作成方法を説明します。"
 author: FrankDahl
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "複数の固定資産の減価償却方法の変更"
 description: "このタスクは、指定した固定資産グループに適用する減価償却方法を更新します。"
 author: saraschi2
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

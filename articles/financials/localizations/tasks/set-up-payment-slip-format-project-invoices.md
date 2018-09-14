@@ -3,7 +3,7 @@ title: "プロジェクト請求書の支払伝票形式の設定"
 description: "通常、企業は、顧客に役立つように印刷した支払伝票を請求書に添付し、転記および決済用に支払参照を提供します。"
 author: EvgenyPopovMBS
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

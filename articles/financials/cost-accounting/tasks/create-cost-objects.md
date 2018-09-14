@@ -3,7 +3,7 @@ title: "原価オブジェクトの作成"
 description: "この手順では、データ コネクタ経由で Dynamics 365 for Finance and Operations、Enterprise Edition コスト センターの財務分析コードを原価計算にインポートすることによって原価対象を作成する方法を示します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

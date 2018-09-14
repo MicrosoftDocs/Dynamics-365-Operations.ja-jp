@@ -3,7 +3,7 @@ title: "コンフィギュレーション可能な製品の販売注文の作成
 description: "この手順では、販売注文で製品にコンフィギュレーション テンプレートを適用する方法を示します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

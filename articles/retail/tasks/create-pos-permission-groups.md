@@ -3,7 +3,7 @@ title: "POS アクセス許可グループの作成"
 description: "この手順は、POS アクセス許可グループを作成する方法を示します。"
 author: scott-tucker
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

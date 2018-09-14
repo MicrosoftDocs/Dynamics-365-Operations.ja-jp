@@ -3,7 +3,7 @@ title: "申請者およびアプリケーション データの手動入力"
 description: "この手順では、手動で申請者とその申請に関する情報を管理する方法について説明します。"
 author: kherr75
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

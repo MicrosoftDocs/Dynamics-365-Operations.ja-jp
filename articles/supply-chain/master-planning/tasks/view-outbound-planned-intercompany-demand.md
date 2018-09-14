@@ -3,7 +3,7 @@ title: "計画企業内需要 (アウトバウンド) の表示"
 description: "この手順では、会社間仕入先によって達成されるすべての計画オーダーを表示する方法を示します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

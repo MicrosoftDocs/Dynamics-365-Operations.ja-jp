@@ -3,7 +3,7 @@ title: "製造オーダーの完了レポート"
 description: "この手順では、製造オーダーを完了として報告する方法を示します。"
 author: johanhoffmann
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

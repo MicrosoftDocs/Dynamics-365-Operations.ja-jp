@@ -3,7 +3,7 @@ title: "職務分掌の競合の識別と解決"
 description: "異なるユーザーが実行する必要があるタスクを分割するルールを設定できます。"
 author: maertenm
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

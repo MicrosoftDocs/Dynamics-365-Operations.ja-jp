@@ -3,7 +3,7 @@ title: "自動運賃調整の設定"
 description: "この手順では、自動運賃調整のデータ設定方法を示します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

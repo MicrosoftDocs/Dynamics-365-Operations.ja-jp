@@ -3,7 +3,7 @@ title: "プロセス製造向けの生産ジョブの順序付け"
 description: "この手順では、色と梱包サイズの優先順位に従って計画オーダーを配列する方法を示す 1 例として、塗料製品が使用されます。"
 author: ChristianRytt
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "販売契約書の履行"
 description: "この手順は、販売注文と関連付けることによって販売契約書を履行する方法について説明します。"
 author: omulvad
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

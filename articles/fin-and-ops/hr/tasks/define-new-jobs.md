@@ -3,7 +3,7 @@ title: "新しいジョブの定義"
 description: "このタスクは、新しいジョブの作成を中心に説明します。"
 author: kherr75
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

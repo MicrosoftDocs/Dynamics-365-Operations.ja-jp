@@ -3,7 +3,7 @@ title: "定期処理仕訳帳の転記"
 description: "定期処理仕訳帳は、繰返しの仕訳帳とも呼ばれ、定期処理仕訳帳を取得するたびに数量、テキスト、およびその他の情報が繰り返されます。"
 author: aprilolson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "主勘定カテゴリの設定"
 description: "主勘定カテゴリは、財務報告と Power BI の既定のレポートに使用されます。"
 author: aprilolson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

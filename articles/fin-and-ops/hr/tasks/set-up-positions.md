@@ -3,7 +3,7 @@ title: "職位の設定"
 description: "職位は組織階層の下位レベルの重要な要素です。"
 author: DarinKramer
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

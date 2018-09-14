@@ -3,7 +3,7 @@ title: "候補者採用手段の確認と配置"
 description: "空席を充填する見込みのある候補者のプールを探すことは難しい場合があり、特に複数の固有のスキルが職位に求められる場合に困難です。"
 author: kherr75
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

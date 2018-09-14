@@ -3,7 +3,7 @@ title: "詳細ルール構造の作成と割り当て"
 description: "このタスク ガイドでは、詳細ルール構造の作成と勘定構造への割り当てについて説明します。"
 author: aprilolson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

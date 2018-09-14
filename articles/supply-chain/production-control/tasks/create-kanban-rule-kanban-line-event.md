@@ -3,7 +3,7 @@ title: "かんばん明細行イベントを使用したかんばんルールの
 description: "この手順では、プロセス活動からプルをトリガするかんばん明細行イベント設定を使用して、かんばんルールを作成します。"
 author: ChristianRytt
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

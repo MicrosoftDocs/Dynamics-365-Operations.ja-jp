@@ -3,7 +3,7 @@ title: "購入ポリシーの作成"
 description: "この手順では、購買の業務プロセスに対応する購入ポリシーを作成する方法を説明します。"
 author: mkirknel
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

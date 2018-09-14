@@ -3,7 +3,7 @@ title: "従業員のけが/病気の情報の管理"
 description: "設定情報の一部をここで使用するため、「けがおよび病気の設定」タスク ガイドを最初に完了することをお勧めします。"
 author: ShielaSogge
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

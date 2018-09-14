@@ -3,7 +3,7 @@ title: "バナーまたはロゴの変更"
 description: "次の手順は、システム管理者が法人用に表示するバナーまたはロゴ画像を更新するために使用できるステップを一覧にしています。"
 author: aneesmsft
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

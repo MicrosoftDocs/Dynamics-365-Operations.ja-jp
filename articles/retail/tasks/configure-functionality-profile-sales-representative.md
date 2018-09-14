@@ -3,7 +3,7 @@ title: "販売担当者の機能プロファイルのコンフィギュレーシ
 description: "この手順は、販売担当者に適用される店舗の機能プロファイルの設定を構成する方法を示します。"
 author: jblucher
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

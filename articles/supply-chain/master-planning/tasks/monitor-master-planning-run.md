@@ -3,7 +3,7 @@ title: "マスター プランの実行の監視"
 description: "生産計画担当者は、マスター プランの実行中であるかどうかを確認します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

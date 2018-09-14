@@ -3,7 +3,7 @@ title: "ISO20022 口座振替用の会社の銀行口座の設定"
 description: "この手順では、支払ファイルの生成に必要な会社固有の銀行口座情報を設定する方法を示します。"
 author: mrolecki
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
