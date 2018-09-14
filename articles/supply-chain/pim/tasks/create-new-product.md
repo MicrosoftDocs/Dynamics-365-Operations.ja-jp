@@ -3,7 +3,7 @@ title: "新しい製品の作成"
 description: "このタスクは、新しい共有製品を作成する方法を示します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: c214ffaabfd0d185d46b9d80a514f589cc612050
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 7a603d89749242a4c6039ab83da286ec6ab727d8
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="create-a-new-product"></a><span data-ttu-id="cdf84-103">新しい製品の作成</span><span class="sxs-lookup"><span data-stu-id="cdf84-103">Create a new product</span></span>

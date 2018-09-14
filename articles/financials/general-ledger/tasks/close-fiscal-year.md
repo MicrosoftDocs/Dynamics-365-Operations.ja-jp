@@ -3,7 +3,7 @@ title: "会計年度の決算"
 description: "この手順では、残高を新しい会計年度に振り替える年度末決算処理について説明します。"
 author: aprilolson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: f68152d1164f446be7e08d45e7187169c4324d9d
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 628b084dbcc85c3f7c08f209bdb325a110554ad9
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="close-the-fiscal-year"></a><span data-ttu-id="fbe9e-103">会計年度の決算</span><span class="sxs-lookup"><span data-stu-id="fbe9e-103">Close the fiscal year</span></span>

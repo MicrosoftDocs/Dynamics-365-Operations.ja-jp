@@ -3,7 +3,7 @@ title: "特定の製品の仕入先の承認"
 description: "この手順では、特定の製品に対する仕入先の承認方法を示します。"
 author: mkirknel
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: 1e6669d632d4f6228dcbe98d82258eb97a6b255f
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 8f2cd1badb0b924150ab51ef2efc049e6666562a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="approve-vendors-for-specific-products"></a><span data-ttu-id="1ee5a-103">特定の製品の仕入先の承認</span><span class="sxs-lookup"><span data-stu-id="1ee5a-103">Approve vendors for specific products</span></span>

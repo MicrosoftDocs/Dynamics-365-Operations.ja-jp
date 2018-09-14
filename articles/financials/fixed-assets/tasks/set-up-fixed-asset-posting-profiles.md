@@ -3,7 +3,7 @@ title: "固定資産転記プロファイルの設定"
 description: "このタスク ガイドでは、固定資産転記プロファイルを設定します。"
 author: saraschi2
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: b00ad7f8dc77eb80e0ed322c1e09624398cfc4d5
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 286c8732c1f2c92d0f16582b0b9de41990280e5a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="set-up-fixed-asset-posting-profiles"></a><span data-ttu-id="b8973-103">固定資産転記プロファイルの設定</span><span class="sxs-lookup"><span data-stu-id="b8973-103">Set up fixed asset posting profiles</span></span>

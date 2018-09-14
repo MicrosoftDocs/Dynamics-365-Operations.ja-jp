@@ -3,7 +3,7 @@ title: "生産フロー活動への先行処理の追加"
 description: "生産フロー バージョンでは、すべての活動は順番に配列する必要があります。"
 author: cvocph
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: 176dbf03dd4769c94da69910a4a1b1ac83b54df3
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 9acb1c2672af70f535f3dce1c8f5a97e8d479158
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="add-a-predecessor-to-a-production-flow-activity"></a><span data-ttu-id="2692f-103">生産フロー活動への先行処理の追加</span><span class="sxs-lookup"><span data-stu-id="2692f-103">Add a predecessor to a production flow activity</span></span>

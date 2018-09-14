@@ -3,7 +3,7 @@ title: "顧客の口座引落の委任状の作成"
 description: "このタスク ガイドでは、口座引落の委任状を作成し、それを請求書に使用する方法を示します。"
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: 4b3d9e10e176879a6c474ec0bff513c6008bc3a9
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: fc3052fdfc6e3dcf2826b3069f6d644201a70c3c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="create-a-direct-debit-mandate-for-a-customer"></a><span data-ttu-id="f4d96-103">顧客の口座引落の委任状の作成</span><span class="sxs-lookup"><span data-stu-id="f4d96-103">Create a direct debit mandate for a customer</span></span>

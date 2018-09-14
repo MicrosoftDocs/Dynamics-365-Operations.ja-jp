@@ -3,7 +3,7 @@ title: "時刻と出勤の給与プロセスの有効化"
 description: "この手順は、時刻と出勤の給与プロセスを有効にする方法を示します。"
 author: johanhoffmann
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: acf355a3b822cb880b5b1d9348cac5ccd6fe2b42
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 0174f438396d814d153befe4a59a79b6eebb2288
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="enable-the-payroll-process-for-time-and-attendance"></a><span data-ttu-id="c475f-103">時刻と出勤の給与プロセスの有効化</span><span class="sxs-lookup"><span data-stu-id="c475f-103">Enable the payroll process for time and attendance</span></span>

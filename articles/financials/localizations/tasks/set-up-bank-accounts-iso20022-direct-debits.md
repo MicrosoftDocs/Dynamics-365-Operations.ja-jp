@@ -3,7 +3,7 @@ title: "顧客の設定と ISO20022 口座引落用の顧客銀行口座の設�
 description: "このタスクでは、顧客の銀行口座の設定、および ISO20022 口座引落などの顧客支払ファイルを生成するために必要な顧客口座引落の委任状の設定について説明します。"
 author: mrolecki
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: 618ab4fc7b6d815937eeb257fa1b3825f71b3cd4
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: e7d7d79b1d496223b027d800beca105ecaa0bd4c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="set-up-customers-and-customer-bank-accounts-for-iso20022-direct-debits"></a><span data-ttu-id="40e7b-103">顧客の設定と ISO20022 口座引落用の顧客銀行口座の設定</span><span class="sxs-lookup"><span data-stu-id="40e7b-103">Set up customers and customer bank accounts for ISO20022 direct debits</span></span>

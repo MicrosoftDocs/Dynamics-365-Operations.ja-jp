@@ -3,7 +3,7 @@ title: "クロス ドッキングおよび集中的購買のルールとパラ�
 description: "この手順では、補充ルールを作成するための手順を示します。"
 author: josaw1
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: a31a562c970166f3a600a0df318abe23c725ea4c
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: a22756279ba316a7efd4d09c48c55e8cc98ba29d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="set-up-rules-and-parameters-for-cross-docking-and-buyers-push"></a><span data-ttu-id="5f21e-103">クロス ドッキングおよび集中的購買のルールとパラメーターの設定</span><span class="sxs-lookup"><span data-stu-id="5f21e-103">Set up rules and parameters for cross docking and buyer's push</span></span>

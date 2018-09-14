@@ -3,7 +3,7 @@ title: "従業員のけが/病気の情報の管理"
 description: "設定情報の一部をここで使用するため、「けがおよび病気の設定」タスク ガイドを最初に完了することをお勧めします。"
 author: ShielaSogge
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: shielas
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: 6f16a54f243623607ed46899173f4c6ddc604c82
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 03d1e7f7b648e65cbe628aa4ff8b39dfa03ce96b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="maintain-employee-injury-and-illness-information"></a><span data-ttu-id="b1544-103">従業員のけが/病気の情報の管理</span><span class="sxs-lookup"><span data-stu-id="b1544-103">Maintain employee injury and illness information</span></span>

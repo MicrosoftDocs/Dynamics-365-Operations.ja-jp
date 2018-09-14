@@ -3,7 +3,7 @@ title: "デバイスの作成と関連付け"
 description: "この手順では、新しいデバイスを作成し、レジスターに関連付ける方法を説明します。"
 author: jashanno
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: b8ab4b35adf71dfbe95dd78a2d47b55a8cb0e725
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: bb199c9d7cf75827445be4aa8a18cc68698b027c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="create-and-associate-a-device"></a><span data-ttu-id="3e1e0-103">デバイスの作成と関連付け</span><span class="sxs-lookup"><span data-stu-id="3e1e0-103">Create and associate a device</span></span>

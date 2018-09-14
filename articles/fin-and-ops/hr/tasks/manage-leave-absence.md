@@ -3,7 +3,7 @@ title: "休暇の管理"
 description: "この手順では、従業員の休暇レコードの作成について説明します。"
 author: ShielaSogge
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: shielas
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: 1e48cae5b71b08e1aee7129763c711ba86fb1f21
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 7687d31fbf73a02b1b924d092e77ac28b573e694
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="manage-leave-of-absence"></a><span data-ttu-id="8c65e-103">休暇の管理</span><span class="sxs-lookup"><span data-stu-id="8c65e-103">Manage leave of absence</span></span>

@@ -3,7 +3,7 @@ title: "倉庫の在庫レベルの初期化"
 description: "この手順では、在庫移動仕訳帳を使用して手持在庫を手動で更新する方法を示します。"
 author: perlynne
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: 6500092f8d0aa87914828f2a107907cf1176dcfe
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 4bfa40c19e34631edb68b8cff42e7f72eb9ce2ad
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="initialize-stock-levels-in-the-warehouse"></a><span data-ttu-id="96c35-103">倉庫の在庫レベルの初期化</span><span class="sxs-lookup"><span data-stu-id="96c35-103">Initialize stock levels in the warehouse</span></span>

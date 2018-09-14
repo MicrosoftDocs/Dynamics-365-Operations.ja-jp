@@ -3,7 +3,7 @@ title: "ISO20022 口座引落コンフィギュレーションのインポート
 description: "この手順では、顧客支払の電子レポートのコンフィギュレーションをインポートする方法を示します。"
 author: mrolecki
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: 09f748f077583778e431444d47ee4d9b5438c063
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 1757a1477e46f71e327bb70cf4780767b7509e55
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="import-iso20022-direct-debit-configuration"></a><span data-ttu-id="e95f0-103">ISO20022 口座引落コンフィギュレーションのインポート</span><span class="sxs-lookup"><span data-stu-id="e95f0-103">Import ISO20022 direct debit configuration</span></span>

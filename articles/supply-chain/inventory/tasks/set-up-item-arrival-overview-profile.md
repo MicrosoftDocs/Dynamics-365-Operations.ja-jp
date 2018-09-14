@@ -3,7 +3,7 @@ title: "着荷の概要プロファイルの設定"
 description: "このタスクでは、着荷の概要プロファイルの設定を中心に説明します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: 2f5176ddbf9a28f76b37d20c7b354f3c3939e1e8
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 2b61d77072358083a35de28003176cb88e53453e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="set-up-an-item-arrival-overview-profile"></a><span data-ttu-id="d07aa-103">着荷の概要プロファイルの設定</span><span class="sxs-lookup"><span data-stu-id="d07aa-103">Set up an item arrival overview profile</span></span>

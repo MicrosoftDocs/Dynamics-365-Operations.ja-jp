@@ -3,7 +3,7 @@ title: "督促状の処理"
 description: "この手順では、督促状の作成、印刷、および転記の方法を示します。"
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: fe76f2934360580c4015ea13225b9228cc2780b9
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: a1bdf9528b52daa7bb719ea5a751a01e56a8c963
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="process-collection-letters"></a><span data-ttu-id="6e646-103">督促状の処理</span><span class="sxs-lookup"><span data-stu-id="6e646-103">Process collection letters</span></span>

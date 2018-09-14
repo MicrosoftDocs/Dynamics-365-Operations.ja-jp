@@ -3,7 +3,7 @@ title: "生産フローおよびバージョンの検証"
 description: "この手順では、新しい生産フローとリーン生産の最初のバージョンを作成する方法を示します。"
 author: ChristianRytt
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: 555a7564c3fc976bdf89d2295518ba9f687e258d
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 4ae4c5f55d317a99e23ba6e76fc50ddece1e55a1
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="validate-a-production-flow-and-version"></a><span data-ttu-id="22ea1-103">生産フローおよびバージョンの検証</span><span class="sxs-lookup"><span data-stu-id="22ea1-103">Validate a production flow and version</span></span>

@@ -3,7 +3,7 @@ title: "固定資産の移動"
 description: "このタスク ガイドは、財務分析コード セットのいずれかから新しい財務分析コード セットに、固定資産帳簿の財務情報を転送します。"
 author: saraschi2
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: 3eb00df127ed87cadde2b0fc7001d80a7fcc6e43
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: bb8a5b94d9a0bb510daa2a698524e0c380597991
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="transfer-a-fixed-asset"></a><span data-ttu-id="2a887-103">固定資産の移動</span><span class="sxs-lookup"><span data-stu-id="2a887-103">Transfer a fixed asset</span></span>

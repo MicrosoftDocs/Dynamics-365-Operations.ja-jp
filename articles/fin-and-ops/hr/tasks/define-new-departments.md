@@ -3,7 +3,7 @@ title: "新しい部門の定義"
 description: "部門は、販売または会計など、事業の機能領域を表す作業単位です。"
 author: kherr75
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: 689d7d3fca4f48448b240b7561bbde26118bce54
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 6dedddf305e303de5b284b34420cd0eda5170ed1
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="define-new-departments"></a><span data-ttu-id="11500-103">新しい部門の定義</span><span class="sxs-lookup"><span data-stu-id="11500-103">Define new departments</span></span>

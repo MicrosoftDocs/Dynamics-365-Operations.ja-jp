@@ -3,7 +3,7 @@ title: "作業時間スケジューリング プロパティの作成"
 description: "作業時間のスケジューリングのプロパティを使用して、作業時間の間隔を分類し、オペレータが考慮する必要のある設定を定義します。"
 author: sorenva
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: sorenand
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: 488d8bbba7abea0c45193f3cdae395db4bcf996b
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 699ba33a766f5bbb6c03a41821a3eb809e3a3e55
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="create-working-time-scheduling-properties"></a><span data-ttu-id="325ec-103">作業時間スケジューリング プロパティの作成</span><span class="sxs-lookup"><span data-stu-id="325ec-103">Create working time scheduling properties</span></span>

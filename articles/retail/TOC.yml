@@ -99,8 +99,6 @@
       href: call-center-functionality.md
     - name: コール センターのカタログ
       href: call-center-catalogs.md
-    - name: コール センター カタログの作成
-      href: create-call-center-catalogs.md
     - name: 出荷モードと雑費のコンフィギュレーション
       href: configure-call-center-delivery.md
     - name: 詐欺警告の設定および使用
@@ -133,6 +131,8 @@
       href: MPOS-or-CPOS.md
     - name: オンラインおよびオフラインの POS 操作
       href: pos-operations.md
+    - name: カスタマイズされた Retail Modern POS のデバイスの有効化
+      href: dev-itpro/retail-POS-activation-changes.md
     - name: MPOS および Cloud POS のデモ データ画面レイアウト
       href: demo-data.md
     - name: POS での製品および顧客の検索

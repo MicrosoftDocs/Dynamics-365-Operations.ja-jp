@@ -3,7 +3,7 @@ title: "職務分掌の設定"
 description: "異なるユーザーが実行する必要があるタスクを分割するルールを設定できます。"
 author: maertenm
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: maertenm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: 0e20272f09cc8c75bdd93ebcc996cf58b98ccf67
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 68e1a4419eaa11a59e1b634deb8e76a2bb9b6fdf
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="set-up-segregation-of-duties"></a><span data-ttu-id="672b9-103">職務分掌の設定</span><span class="sxs-lookup"><span data-stu-id="672b9-103">Set up segregation of duties</span></span>

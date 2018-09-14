@@ -3,7 +3,7 @@ title: "製品マスターの作成"
 description: "事前に定義されたバリアントのために製品マスターを作成します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: 7f5f231686ce306931d792783a3759ef727960e9
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 6e34f7c630e872468d888938e0f1aa57f3f0d4c4
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="create-a-product-master"></a><span data-ttu-id="8681d-103">製品マスターの作成</span><span class="sxs-lookup"><span data-stu-id="8681d-103">Create a product master</span></span>

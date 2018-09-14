@@ -3,7 +3,7 @@ title: "品目の着荷仕訳帳を使用した高度な倉庫管理に対応し
 description: "この手順では、高度な倉庫管理プロセスを使用する場合に、着荷仕訳帳を使用して品目を登録する方法を示します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: 751e73be385606bc706b2e14ea83c1b56c96402c
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 392884d2a87c10a5f38bf6f51967f879c68c1ca6
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="register-items-for-an-advanced-warehousing-enabled-item-using-an-item-arrival-journal"></a><span data-ttu-id="b6cc2-103">品目の着荷仕訳帳を使用した高度な倉庫管理に対応した品目の登録</span><span class="sxs-lookup"><span data-stu-id="b6cc2-103">Register items for an advanced warehousing enabled item using an item arrival journal</span></span>

@@ -3,7 +3,7 @@ title: "製品モデルのためのデータの転送"
 description: "製品コンフィギュレーション モデルのデータをエクスポートするには、少なくとも 1 つの製品モデルが使用可能である必要があります。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: 1c1353b48d6bf20e8e1589069fe25890b021fe6b
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 8a2bd6d6762010f70bcee95b8befa9dab935335b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="transfer-data-for-product-models"></a><span data-ttu-id="d576b-103">製品モデルのためのデータの転送</span><span class="sxs-lookup"><span data-stu-id="d576b-103">Transfer data for product models</span></span>

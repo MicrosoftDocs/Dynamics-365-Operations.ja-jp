@@ -3,7 +3,7 @@ title: "信用状についての銀行融資と転記プロファイルの設定
 description: "この手順では、信用状のプロセスを必要とする銀行融資と転記プロファイルの作成を説明します。"
 author: kweekley
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: 243071bfa88a6e8fc184dd0cf0ef6877a69d1b02
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 3419d975c087350c01c6854dbbae07b6bb20bc03
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="set-up-bank-facilities-and-posting-profiles-for-letter-of-credit"></a><span data-ttu-id="04704-103">信用状についての銀行融資と転記プロファイルの設定</span><span class="sxs-lookup"><span data-stu-id="04704-103">Set up bank facilities and posting profiles for letter of credit</span></span>

@@ -3,7 +3,7 @@ title: "販売注文の確認"
 description: "この手順は、販売注文を確認する方法を示します。"
 author: omulvad
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: ebeb28bc46caa7f04b82db4590be2815778979e3
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: db475cf967bebec2d442aaa864800d920cf0ab81
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="confirm-sales-orders"></a><span data-ttu-id="62772-103">販売注文の確認</span><span class="sxs-lookup"><span data-stu-id="62772-103">Confirm sales orders</span></span>

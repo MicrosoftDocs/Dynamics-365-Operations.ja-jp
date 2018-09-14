@@ -3,7 +3,7 @@ title: "購買契約書の作成"
 description: "この手順では、購買契約書の作成方法について説明しています。"
 author: mkirknel
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: c547f825c567848b06b84ac1baaa5ae3bc6c2860
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: b317f0a0fc8f198bad9501f325557ac2a4796989
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="create-a-purchase-agreement"></a><span data-ttu-id="d3cdb-103">購買契約書の作成</span><span class="sxs-lookup"><span data-stu-id="d3cdb-103">Create a purchase agreement</span></span>

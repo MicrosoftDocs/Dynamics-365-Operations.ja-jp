@@ -3,7 +3,7 @@ title: "製造オーダーの作成"
 description: "この手順では、製造オーダーを作成する方法を示します。"
 author: johanhoffmann
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: fa2327f7162ac32daaf96b00a335eda34871ec46
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 468465e3e82ff608d7d290b71f058cd790a0f013
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="create-a-production-order"></a><span data-ttu-id="9c35c-103">製造オーダーの作成</span><span class="sxs-lookup"><span data-stu-id="9c35c-103">Create a production order</span></span>

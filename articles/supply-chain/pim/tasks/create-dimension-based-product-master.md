@@ -3,7 +3,7 @@ title: "分析コードベースの製品マスターの作成"
 description: "この手順では、分析コード ベースのコンフィギュレーション テクノロジで新しい製品マスターを作成する方法を示します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: 67d93286690161a716e9e2b621a14fa66748e29b
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: ca1702002bddfacce072f8ce78ad7f503d566242
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="create-a-dimension-based-product-master"></a><span data-ttu-id="15db8-103">分析コードベースの製品マスターの作成</span><span class="sxs-lookup"><span data-stu-id="15db8-103">Create a dimension-based product master</span></span>

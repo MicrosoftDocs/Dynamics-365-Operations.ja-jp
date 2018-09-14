@@ -3,7 +3,7 @@ title: "商品の品質の調査"
 description: "この手順では、品質指示を処理する方法を説明します。"
 author: perlynne
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: c2313ba26eac8abf6e603f0230f06103802536c4
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: f9e9d750f116db62519ac7148f19bf62050430e9
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="inspect-the-quality-of-goods"></a><span data-ttu-id="37e62-103">商品の品質の調査</span><span class="sxs-lookup"><span data-stu-id="37e62-103">Inspect the quality of goods</span></span>

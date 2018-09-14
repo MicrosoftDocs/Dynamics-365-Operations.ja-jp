@@ -3,7 +3,7 @@ title: "製品コンフィギュレーション モデルの BOM の管理"
 description: "この手順を実行するには、既存の製品コンフィギュレーション モデルが必要です。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: ca2f50ffbe7fb95bfe7cc83175cb98e3d5887a98
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 457aa5720919d8455a3099b200980bb36f60577f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="maintain-bom-for-a-product-configuration-model"></a><span data-ttu-id="2b140-103">製品コンフィギュレーション モデルの BOM の管理</span><span class="sxs-lookup"><span data-stu-id="2b140-103">Maintain BOM for a product configuration model</span></span>
