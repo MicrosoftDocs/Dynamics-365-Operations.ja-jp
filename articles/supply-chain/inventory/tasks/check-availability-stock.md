@@ -1,7 +1,7 @@
 --- 
 title: "有効在庫数の確認"
 description: "この手順では、特定の品目番号において現物手持在庫を確認する方法を示します。"
-author: 
+author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
