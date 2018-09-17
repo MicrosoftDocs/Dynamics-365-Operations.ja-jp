@@ -1,21 +1,22 @@
----
+--- 
 title: "生産需要に基づく委託販売在庫の所有権の変更"
 description: "この手順は、生産中における在庫需要があるときに委託製品在庫所有者を仕入先から自らの法人に変更する方法を示します。"
 author: perlynne
 manager: AnnBe
-ms.date: 10/13/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: InventJournalOwnershipChange, InventJournalCreate
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
 ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: 5925f5423d596adc4326dfff4734de2afd80b5a8
@@ -51,4 +52,5 @@ ms.lasthandoff: 09/29/2017
     * 仕訳を記帳する際、仕入先所有の在庫は「所有権変更」の参照で解除されます。 その後在庫は、購入注文製品受領書で更新された在庫トランザクションを使用して手持ちの在庫として受領されます。 記帳済み仕訳に関連するトランザクションのみが作成されることに注意してください。 在庫トランザクションの予定は作成されません。  
 2. [OK] をクリックします。
 3. ページを閉じます。
+
 

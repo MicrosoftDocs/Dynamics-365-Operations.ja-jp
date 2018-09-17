@@ -263,7 +263,7 @@
               href: extensibility/naming-guidelines-extensions.md
             - name: オーバレイを拡張機能にリファクタリングするため、モデルの制限を緩和する
               href: extensibility/refactoring-over-layering.md
-        - name: 操作方法
+        - name: 拡張機能の作成
           items:
             - name: 列挙への値の追加
               href: extensibility/add-enum-value.md
@@ -311,6 +311,28 @@
               href: extensibility/maps-as-interfaces.md
             - name: バージョン管理で使用されるテーブル マップの拡張
               href: extensibility/maps-with-versioning.md
+        - name: 拡張可能なソリューションの作成
+          items:
+            - name: 拡張可能なコードの書き込み
+              href: extensibility/writing-extensible-code.md
+            - name: クラス
+              href: extensibility/extensible-classes.md
+            - name: メソッド
+              href: extensibility/extensible-methods.md
+            - name: フォーム
+              href: extensibility/extensible-forms.md
+            - name: 拡張データ型
+              href: extensibility/extensible-edts.md
+            - name: 拡張可能な列挙
+              href: extensibility/extensible-enums.md
+            - name: 委任
+              href: extensibility/extensible-code-delegates.md
+            - name: テーブル
+              href: extensibility/extensible-tables.md
+            - name: メソッドの拡張属性
+              href: extensibility/extensibility-attributes.md
+            - name: 変更の分割
+              href: extensibility/breaking-changes.md
     - name: パフォーマンス
       items:
         - name: Trace Parser を使用したトレースの実行
@@ -1184,6 +1206,8 @@
       items:
         - name: 最適化アドバイザーのルールの作成
           href: sysadmin/create-rules-optimization-advisor.md
+    - name: 稼働停止をレポート
+      href: lifecycle-services/report-production-outage.md
 - name: Lifecycle Services
   items:
     - name: Lifecycle Services に関するリソース
@@ -1236,6 +1260,8 @@
       href: lifecycle-services/monitoring-diagnostics.md
     - name: 環境サービスの再開
       href: lifecycle-services/restart-environment-services.md
+    - name: 稼働停止をレポート
+      href: lifecycle-services/report-production-outage.md
     - name: ユーザー サインインの追跡
       href: lifecycle-services/user-logins.md
     - name: アセット ライブラリ

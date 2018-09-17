@@ -3,18 +3,19 @@ title: "RFQ の入札タイプとスコア基準の作成"
 description: "このガイドでは、入札タイプの作成、および入札タイプにスコア方法を関連付ける方法を示します。"
 author: mkirknel
 manager: AnnBe
-ms.date: 08/23/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: PurchRFQSolicitationType, PurchRFQCaseTableListPage, PurchCreateRFQCase, PurchRFQCaseTable, PurchRFQScoringRFQCaseCriteria, PurchRFQScoringCriteriaCopy
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
 ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: 095855d552d228375635bdbaa9fca37c47a3b952
@@ -42,6 +43,7 @@ ms.lasthandoff: 09/29/2017
 1. [調達] > [見積依頼] > [すべての見積依頼] の順に移動します。
 2. [新規] をクリックします。
 3. [入札タイプ] フィールドで、作成した入札タイプを選択します。 
+    *   
 4. [OK] をクリックします。
 5. [スコア基準] をクリックします。
     * 表示されるスコア基準は、入札タイプに関連付けたスコア方法からなる基準です。 このページで基準を追加、または削除することもできます。 他のスコア方法から新しい基準をコピーして追加することも可能です。  

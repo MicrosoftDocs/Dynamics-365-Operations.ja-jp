@@ -3,7 +3,7 @@ title: "ローカライズと規制の機能"
 description: "このトピックでは、国/地域固有の機能について詳しく説明しているリソースの一覧を示します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 07/18/2018
+ms.date: 09/05/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 46165351f3c9048cfbecf25a1c49d8aeac1f3e1e
-ms.openlocfilehash: 787ce11701a9df951b38af5209206902d7c98019
+ms.sourcegitcommit: f64292a1b3726ea9b43f959a44c4ed2a1f392484
+ms.openlocfilehash: db18906739529e04710507ee9ff088540894171d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/05/2018
 
 ---
 
@@ -31,7 +31,11 @@ ms.lasthandoff: 08/09/2018
 
 Microsoft Dynamics 365 for Finance and Operations には、[製品のローカライズおよび翻訳の対応状況に関するガイド](https://aka.ms/ax-availabilityguide) に記載されている国/地域向けの機能が用意されています。 この機能は、現在有効な法人の基本住所に基づいて有効になります。 
 
-このトピックでは、国/地域固有のソリューション、更新プログラム、アラートおよび機能について詳しく説明しているリソースの一覧を示します。 
+このトピックには、次の操作に役立つリソースの一覧が含まれます。 
+- 発展途上国/地域固有のソリューションの詳細について確認する
+- 国/地域固有の更新プログラムの取得
+- 規制に関する警告の送信と確認
+- 国/地域固有の機能を使用する方法の確認 
 
 ## <a name="developing-localized-solutions"></a>ローカライズ版ソリューションの開発
 以下のリソースは、国/地域に固有のカスタマイズを作成しているか、または Microsoft によってサポートされていない国向けのソリューションを作成している開発者および ISV にとって有益なガイダンスと情報を提供します。
@@ -75,156 +79,47 @@ Microsoft Dynamics 365 for Finance and Operations には、[製品のローカ�
 詳細については、[タスク ガイド](../../fin-and-ops/get-started/help-overview.md#task-guides)を参照してください。
 
 
-## <a name="countryregion-specific-help-topics"></a>国/地域固有のヘルプ トピック
-以下のセクションに、リソースの一覧を国/地域別に示します。
+## <a name="countryregion-specific-help-content"></a>国/地域固有のヘルプ コンテンツ
+:::row:::
+    :::column:::
+        - [オーストラリア](../../financials/localizations/australia.md)
+        - [オーストリア](../../financials/localizations/austria.md)
+        - [ベルギー](../../financials/localizations/belgium.md)
+        - [ブラジル](../../financials/localizations/brazil.md)
+        - [中国](../../financials/localizations/china.md)
+        - [チェコ共和国](../../financials/localizations/czech-republic.md)
+        - [エストニア](../../financials/localizations/estonia.md)
+        - [ヨーロッパ](../../financials/localizations/europe.md)
+        - [フランス](../../financials/localizations/france.md)
+        - [ドイツ](../../financials/localizations/germany.md)
+    :::column-end:::
+    :::column:::
+        - [ハンガリー](../../financials/localizations/hungary.md)
+        - [インド](../../financials/localizations/india.md)
+        - [イタリア](../../financials/localizations/italy.md)
+        - [日本](../../financials/localizations/japan.md)
+        - [ラトビア](../../financials/localizations/latvia.md)
+        - [リトアニア](../../financials/localizations/lithuania.md)
+        - [メキシコ](../../financials/localizations/mexico.md)
+        - [マレーシア](../../financials/localizations/malaysia.md)
+        - [オランダ](../../financials/localizations/netherlands.md)
+        - [ノルウェー](../../financials/localizations/norway.md)
+    :::column-end:::
+    :::column:::
+        - [ポーランド](../../financials/localizations/poland.md)
+        - [サウジアラビア](../../financials/localizations/saudi-arabia.md)
+        - [シンガポール](../../financials/localizations/singapore.md)
+        - [スペイン](../../financials/localizations/spain.md)
+        - [スウェーデン](../../financials/localizations/sweden.md)
+        - [スイス](../../financials/localizations/switzerland.md)
+        - [タイ](../../financials/localizations/thailand.md)
+        - [英国](../../financials/localizations/united-kingdom.md)
+        - [米国](../../financials/localizations/united-states.md)
+    :::column-end:::
+:::row-end:::
 
-### <a name="australiafinancialslocalizationsaustraliamd"></a>[オーストラリア](../../financials/localizations/australia.md)
-### <a name="austriafinancialslocalizationsaustriamd"></a>[オーストリア](../../financials/localizations/austria.md)
-### <a name="belgiumfinancialslocalizationsbelgiummd"></a>[ベルギー](../../financials/localizations/belgium.md)
 
-### <a name="brazil"></a>ブラジル
 
--   [CIAP 固定資産](../../financials/localizations/latam-bra-ciap-fixed-asset.md)
--   [会計帳簿のコンフィギュレーション](../../financials/localizations/latam-bra-configure-fiscal-books.md)
--   [総勘定元帳連結のトランザクションのエクスポートとインポート (ブラジル用)](../../financials/localizations/latam-bra-general-ledger-consolidation-transactions.md)
--   [会計帳簿](../../financials/localizations/latam-bra-fiscal-books.md)
--   [会計ドキュメントのテキスト プレースホルダー](../../financials/localizations/latam-bra-fiscal-document-text-placeholders.md)
--   [会計ドキュメント](../../financials/localizations/latam-bra-fiscal-documents-fiscal-document-framework.md)
--   [ICMS 税の会計ドキュメント](../../financials/localizations/latam-bra-icms-tax-fiscal-documents.md)
--   [NF E XML ドキュメントと DANFE ファイルのインポートと確認](../../financials/localizations/latam-bra-import-verify-nf-e-xml-documents-danfe-emails.md)
--   [会計ドキュメントのインポート](../../financials/localizations/latam-bra-import-fiscal-documents.md)
--   [電子支払の返金プロセス中に生成される仕訳帳](../../financials/localizations/latam-bra-examples-journals-generated-electronic-payment-return-process.md)
--   [NF-e プロセス](../../financials/localizations/latam-bra-nf-e-process.md)
--   [法人のパラメーター](../../financials/localizations/latam-bra-legal-entity-parameters.md)
--   [電子支払送金の処理 (ブラジル用)](../../financials/localizations/latam-bra-process-electronic-payment-remittances.md)
--   [購買補助会計ドキュメント](../../financials/localizations/latam-bra-purchase-complementary-fiscal-documents.md)
--   [参照される会計ドキュメント](../../financials/localizations/latam-bra-referenced-fiscal-documents.md)
--   [販売補助会計ドキュメント](../../financials/localizations/latam-bra-sales-complementary-fiscal-documents.md)
--   [サービスの電子会計ドキュメント](../../financials/localizations/latam-bra-service-electronic-fiscal-document.md)
--   [NF E XML ドキュメントと DANFE の設定、インポートおよび確認](../../financials/localizations/latam-bra-set-up-import-nfe.md)
--   [税の属性](../../financials/localizations/latam-bra-tax-attributes.md)
--   [税支払](../../financials/localizations/latam-bra-tax-payments.md)
--   [税申告](../../financials/localizations/latam-bra-calculate-taxes.md)
-
-### <a name="chinafinancialslocalizationschinamd"></a>[中国](../../financials/localizations/china.md)
-### <a name="the-czech-republicfinancialslocalizationsczech-republicmd"></a>[チェコ共和国](../../financials/localizations/czech-republic.md)
-### <a name="estoniafinancialslocalizationsestoniamd"></a>[エストニア](../../financials/localizations/estonia.md)
-
-### <a name="europe"></a>ヨーロッパ
-- [前貸し保有者](../../financials/localizations/emea-advance-holders.md)
-- [前貸し保有者トランザクション](../../financials/localizations/emea-advance-holders-transactions.md)
-- [高度な請求](../../financials/localizations/emea-advance-invoice.md)
-- [口座調整](../../financials/localizations/emea-bank-reconciliation.md)
-- [修正請求書](../../financials/localizations/emea-corrective-invoice.md)
-- [定期処理仕訳帳の作成と転記](../../financials/localizations/emea-create-post-periodic-journals.md)
-- [販売注文の請求書 ID の編集](../../financials/localizations/emea-edit-invoice-id-sales-orders.md)
-- [EU 登録証明書](../../financials/localizations/emea-entry-certificates.md)
-- [EU 販売リストのレポート](../../financials/localizations/emea-eu-sales-list.md)
-- [為替レート調整](../../financials/localizations/emea-exchange-rate-adjustments.md)
-- [支払方法のファイル形式](../../financials/localizations/emea-select-file-formats-for-the-method-of-payments.md)
-- [エストニアおよびリトアニアの固定資産の処分](../../financials/localizations/emea-credit-note-reverse-fixed-asset-sale.md)
-- [ISO20022 ファイルのインポート](../../financials/localizations/emea-ISO20022-file-formats.md)
-- [イントラスタット](../../financials/localizations/emea-intrastat.md)
-- [在庫仕訳レポート](../../financials/localizations/emea-set-up-report-inventory-journal-names.md)
-- [ラトビアおよびリトアニアの請求書と梱包明細の番号付け](../../financials/localizations/emea-invoices-packing-slips-numbering.md)
-- [請求書発行の期限](../../financials/localizations/emea-invoice-issue-deadline.md)
-- [OIOUBL 標準](../../financials/localizations/emea-oioubl-standards-electronic-invoicing.md)
-- [支払伝票レポート](../../financials/localizations/emea-eur-payment-slip-report-giro.md)
-- [小口現金](../../financials/localizations/emea-petty-cash.md)
-- [固定資産の取得前価額の転記](../../financials/localizations/emea-pre-acquisition-acquisition-fixed-asset.md)
-- [郵便番号](../../financials/localizations/emea-import-create-postal-codes-manually.md)
-- [登録 ID](../../financials/localizations/emea-registration-ids.md)
-- [逆請求](../../financials/localizations/emea-reverse-charge.md)
-- [SEPA 口座振替の概要](../../financials/accounts-payable/sepa-credit-transfer.md)
-- [単一ユーロ支払地域 (SEPA) 口座引落の概要](../../financials/accounts-receivable/sepa-direct-debit-overview.md)
-- [顧客および仕入先補償の設定](../../financials/localizations/emea-compensation-customer-vendor-transactions.md)
-- [印刷フォームの署名者の設定](../../financials/localizations/emea-set-up-signers-for-printing-forms.md)
-- [逆仕訳会計](../../financials/localizations/emea-storno.md)
-- [税指示](../../financials/localizations/emea-tax-directives.md)
-- [レポートおよびドキュメントの金額表示方法の更新](../../financials/localizations/emea-amount-printing-forms.md) 
-- [VAT 為替レート](../../financials/localizations/emea-vat-exchange-rate.md)
-- [東ヨーロッパの VAT 登録トランザクション](../../financials/localizations/emea-vat-register-transactions.md)
-- [VAT 報告](../../financials/localizations/emea-vat-reporting.md)
-- [決済のトランザクションの表示](../../financials/localizations/emea-transactions-settlement-form.md)
-
-### <a name="francefinancialslocalizationsfrancemd"></a>[フランス](../../financials/localizations/france.md)
-### <a name="germanyfinancialslocalizationsgermanymd"></a>[ドイツ](../../financials/localizations/germany.md)
-### <a name="hungaryfinancialslocalizationshungarymd"></a>[ハンガリー](../../financials/localizations/hungary.md)
-
-### <a name="india"></a>インド
-
-- [固定資産](../../financials/localizations/apac-ind-fixed-assets.md)
-    - [資本品目の固定資産への移動](../../financials/localizations/tasks/apac-ind-transfer-capital-items.md)
-    - [1 日に基づくカレンダーの固定資産帳簿への関連付け](../../financials/localizations/tasks/apac-ind-attach-day-based-calendar.md)
-    - [減価償却を計算するパラメーターの設定](../../financials/localizations/tasks/apac-ind-set-up-depreciation.md)
-    - [減価償却簿での資産グループの減価償却設定](../../financials/localizations/tasks/apac-ind-set-up-asset-group-dep.md)
-    - [資本品目の在庫モデル グループの作成](../../financials/localizations/tasks/apac-ind-create-inventory-model-group.md)
-    - [インドの固定資産減価償却計算のシフト](../../financials/localizations/tasks/apac-ind-shift-depreciation-rates.md)
-    - [帳簿のシフトのタイプと業界を定義し、固定資産を関連付ける](../../financials/localizations/tasks/apac-ind-books-shift-industry-types.md)
-- [税エンジンの概要](../../financials/general-ledger/tax-engine.md)
-    - [税エンジンの統合](../../financials/general-ledger/tax-engine-integration.md)
-    - [税しきい値に関するよく寄せられる質問](../../financials/localizations/apac-ind-tax-thresholds.md)
-    - [税エンジンの拡張](../../financials/general-ledger/extend-tax-engine-configurations.md)
-
-### <a name="italyfinancialslocalizationsitalymd"></a>[イタリア](../../financials/localizations/italy.md)
-### <a name="japan"></a>日本
-
--  [仕入先負担の銀行支払手数料](../../financials/localizations/apac-jpn-bank-payment-fees-vendors.md)
--  [月次締め請求書](../../financials/localizations/apac-jpn-consolidate-invoices.md)
--  [固定資産の配賦ルール](../../financials/localizations/apac-jpn-allocation-rules-fixed-assets.md)
--  [均等償却方法](../../financials/localizations/apac-jpn-equally-divided-depreciation-method.md)
--  [固定資産の減価償却](../../financials/localizations/apac-jpn-fixed-asset-depreciation.md)
--  [キャッシュ生成単位の固定資産減損管理](../../financials/localizations/apac-jpn-impairment-accounting-cash-generating-unit.md)
--  [郵便番号のインポート](../../financials/localizations/apac-jpn-import-postal-codes.md)
--  [固定資産の資産除去責務の設定](../../financials/localizations/apac-jpn-asset-retirement-obligation-fixed-assets.md)
--  [固定資産の圧縮記帳の設定](../../financials/localizations/apac-jpn-reduction-entry-fixed-assets.md)
--  [受取手形の裏書による仕入先への支払](../../financials/localizations/apac-jpn-endorse-bill-of-exchange.md)
--  [累進的源泉徴収税の計算](../../financials/localizations/apac-jpn-progressive-withholding-tax-calculation.md)
-
-### <a name="latviafinancialslocalizationslatviamd"></a>[ラトビア](../../financials/localizations/latvia.md)
-### <a name="lithuaniafinancialslocalizationslithuaniamd"></a>[リトアニア](../../financials/localizations/lithuania.md)
-
-### <a name="mexico"></a>メキシコ
-
--   [DIOT 申告ステータス](../../financials/localizations/latam-mex-diot-declaration-statement.md)
--   [電子元帳計算書](../../financials/localizations/latam-mex-electronic-ledger-accounting-statements.md)
--   [インフレ申告レポートの調整](../../financials/localizations/latam-mex-adjustment-inflation-declaration-report.md)
--   [ISR 申告レポート](../../financials/localizations/latam-mex-isr-declaration-report-supporting-processes.md)
--   [電子請求書 (CFDI)](../../financials/localizations/latam-mex-CFDI-electronic-invoices.md)
-
-### <a name="malaysia"></a>マレーシア
-
--   [商品及びサービス税 (GST)](../../financials/localizations/apac-mys-gst.md)
-
-### <a name="netherlandsfinancialslocalizationsnetherlandsmd"></a>[オランダ](../../financials/localizations/netherlands.md)
-### <a name="norwayfinancialslocalizationsnorwaymd"></a>[ノルウェー](../../financials/localizations/norway.md)
-### <a name="polandfinancialslocalizationspolandmd"></a>[ポーランド](../../financials/localizations/poland.md)
-### <a name="saudi-arabia"></a>サウジアラビア
-
--   [ザカート レポート](../../financials/localizations/emea-sau-zakat-reporting.md)
-
-### <a name="singapore"></a>シンガポール
-
--   [シンガポールの GST-05 レポートの生成](../../financials/localizations/apac-sgp-generate-gst-05-report.md)
-
-### <a name="spainfinancialslocalizationsspainmd"></a>[スペイン](../../financials/localizations/spain.md)
-### <a name="swedenfinancialslocalizationsswedenmd"></a>[スウェーデン](../../financials/localizations/sweden.md)
-### <a name="switzerlandfinancialslocalizationsswitzerlandmd"></a>[スイス](../../financials/localizations/switzerland.md)
-### <a name="thailand"></a>タイ
-
--   [在庫カード レポート](../../financials/localizations/apac-tha-stock-card-reports.md)
--   [税金請求書の代用/調整 (タイ用)](../../financials/localizations/apac-tha-substitution-and-adjustment-invoices.md)
--   [未実現 VAT](../../financials/localizations/apac-tha-unrealized-vat.md)
--   [源泉徴収税](../../financials/localizations/apac-tha-withholding-tax.md)
-
-### <a name="united-kingdomfinancialslocalizationsunited-kingdommd"></a>[英国](../../financials/localizations/united-kingdom.md)
-### <a name="united-states"></a>米国
-
--   [公的機関のフォーム 1099](../../financials/localizations/noam-usa-form-1099-public-sector.md)   
--   [フォーム I-9 の検証](../../fin-and-ops/hr/localizations/noam-usa-form-i-9-verification.md)
--   [年度末の 1099 レポート](../../financials/localizations/noam-usa-year-end-1099-reporting.md)
--   [給与](../../fin-and-ops/hr/localizations/noam-usa-payroll.md)
--   [公的機関](../../financials/public-sector/public-sector-functionality.md)
 
 
 

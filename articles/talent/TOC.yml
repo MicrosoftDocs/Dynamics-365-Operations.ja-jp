@@ -6,6 +6,8 @@
       items:
         - name: 新機能および変更された機能
           items:
+            - name: Dynamics 365 for Talent Core HR の新機能および変更された機能 (2018 年 8 月)
+              href: whats-new-talent-august2018.md
             - name: Dynamics 365 for Talent Core HR の新機能および変更された機能 (2018 年 7 月)
               href: whats-new-talent-july2018.md
         - name: システム要件と更新ポリシー
@@ -16,8 +18,8 @@
           href: remove-talent-environment.md
         - name: Talent のモジュール アプリのプロビジョニング
           href: modular-app-tech-faq.md
-        - name: Talent 機能の拡張
-          href: extend-talent-functionality.md
+        - name: PowerApps アプリの埋め込み
+          href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
         - name: プレビュー機能の利用
           href: access-preview-feature.md
         - name: Talent と Dayforce 間の給与統合のコンフィギュレーション
@@ -39,7 +41,7 @@
           href: formalize-business-processes.md
         - name: ワークフローを使用した従業員情報の管理
           href: workflow-manage-employee-information.md
-        - name: 休暇の管理
+        - name: 休暇および欠勤の管理
           href: leave-absence-overview.md
     - name: 組織のスタッフ配置
       items:

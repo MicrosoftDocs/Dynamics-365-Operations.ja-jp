@@ -3,7 +3,7 @@ title: "PowerApps アプリの埋め込み"
 description: "このトピックでは、PowerApps を Finance and Operations クライアントに組み込んで製品の機能を拡張する方法について説明します。"
 author: jasongre
 manager: AnnBe
-ms.date: 06/08/2018
+ms.date: 09/04/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -105,15 +105,15 @@ PowerApp がページに埋め込まれた後、必要に応じて削除する�
 public final class ClassTest_Extension
 {
 
-    public static boolean isPowerAppPresonalizationEnabled(str pageName)
+    public static boolean isPowerAppPersonalizationEnabled(str pageName)
     {
-        var result = next isPowerAppPresonalizationEnabled(pageName);
+        var result = next isPowerAppPersonalizationEnabled(pageName);
         return true;
     }
 
-    public static boolean isPowerAppTabPresonalizationEnabled(str pageName)   
+    public static boolean isPowerAppTabPersonalizationEnabled(str pageName)   
     {
-        var result = next isPowerAppTabPresonalizationEnabled(pageName);
+        var result = next isPowerAppTabPersonalizationEnabled(pageName);
         return true;
     }
     ```

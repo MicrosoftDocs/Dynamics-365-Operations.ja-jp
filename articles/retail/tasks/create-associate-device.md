@@ -1,31 +1,32 @@
 --- 
-title: "デバイスの作成およびレジスターへの関連付け"
+title: "デバイスの作成と関連付け"
 description: "この手順では、新しいデバイスを作成し、レジスターに関連付ける方法を説明します。"
 author: jashanno
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
-ms.service: dynamics-365-retail
+ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: RetailDevice
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 7df1111a00fc8ad7f684075fb772b1e33916b687
+ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
+ms.openlocfilehash: 19be7c38e9612b54fe56ef6e0fd942587dd64a69
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 02/07/2018
 
 ---
-# <a name="create-devices-and-associate-them-with-registers"></a>デバイスの作成およびレジスターへの関連付け
+# <a name="create-and-associate-a-device"></a>デバイスの作成と関連付け
 
-[!include [task guide banner](../includes/task-guide-banner.md)]
+[!include[task guide banner](../includes/task-guide-banner.md)]
 
 この手順では、新しいデバイスを作成し、レジスターに関連付ける方法を説明します。 レジスターが既に作成されていることが前提となります。  このタスクでは、デモ データの会社 USRT を使用します。 このタスクは、管理者、IT プロフェッショナルまたは小売 IT、および店舗マネージャーのロールを対象としています。
 
