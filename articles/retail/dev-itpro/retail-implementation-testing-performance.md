@@ -18,15 +18,17 @@ ms.author: andreash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: Retail 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 1208d888bb19f1d298a37c10e9c34bde4580f88d
+ms.sourcegitcommit: 965826f5fddc2f53f33157434929eb265979376e
+ms.openlocfilehash: 538aa1a0e8a8fa856649fa14b2483a7759de765d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/17/2018
 
 ---
 
 
 # <a name="testing-and-performance-issues"></a><span data-ttu-id="b3dac-103">テストおよびパフォーマンスの問題</span><span class="sxs-lookup"><span data-stu-id="b3dac-103">Testing and performance issues</span></span>
+
+[!include [banner](../../includes/banner.md)]
 
 <span data-ttu-id="b3dac-104">このドキュメントでは、機能テスト、パフォーマンス テスト、およびパフォーマンスのトラブルシューティングに関連するプラクティスとツールについて説明します。</span><span class="sxs-lookup"><span data-stu-id="b3dac-104">This document describes practices and tools that are related to functional testing, performance testing, and performance troubleshooting.</span></span>
 

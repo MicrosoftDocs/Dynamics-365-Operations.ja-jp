@@ -18,14 +18,16 @@ ms.author: sijoshi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 1bd5f6a8ee9d5a18d13c9caf2014a2e9345d404c
-ms.openlocfilehash: 05ea201f1860b3996e0661bec119d896c50c69e5
+ms.sourcegitcommit: 965826f5fddc2f53f33157434929eb265979376e
+ms.openlocfilehash: 5dfaea195248edb7b22b59ca9b85812d6e70d400
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/17/2018
 
 ---
 
 # <a name="hardware-station-extensibility"></a><span data-ttu-id="51c4c-103">Hardware Station 拡張性</span><span class="sxs-lookup"><span data-stu-id="51c4c-103">Hardware Station extensibility</span></span>
+
+[!include [banner](../../includes/banner.md)]
 
 > [!NOTE]
 > <span data-ttu-id="51c4c-104">このトピックは、Dynamics 365 for Finance and Operations の 7.1 およびそれ以降のバージョンに適用可能です。</span><span class="sxs-lookup"><span data-stu-id="51c4c-104">This topic is applicable for Dynamics 365 for Finance and Operations version 7.1 and earlier.</span></span> <span data-ttu-id="51c4c-105">バージョン 7.2 およびそれ以上の場合は、この実装はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="51c4c-105">This implementation is not supported for versions 7.2 and higher.</span></span> <span data-ttu-id="51c4c-106">これらのバージョンでは、オーバーレイせずに拡張モデルに従います。</span><span class="sxs-lookup"><span data-stu-id="51c4c-106">For those versions, follow the extension model without overlayering.</span></span>

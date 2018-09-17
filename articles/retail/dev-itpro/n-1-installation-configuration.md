@@ -18,14 +18,17 @@ ms.author: jashanno
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 929bd214ade5a28bd15bfe239c1ff040cb853b17
-ms.openlocfilehash: d152e681894ea95fb49ccac43ad9340d816e6411
+ms.sourcegitcommit: 965826f5fddc2f53f33157434929eb265979376e
+ms.openlocfilehash: 9542ceaed1d0c3fccf9636fe8f06313f8b7392fa
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/17/2018
 
 ---
 
 # <a name="phased-rollout-n-1-installation-configuration-and-cutover-guide"></a><span data-ttu-id="2ef58-103">段階的なロールアウト (N-1) インストール、コンフィギュレーション、および切替ガイド</span><span class="sxs-lookup"><span data-stu-id="2ef58-103">Phased Rollout (N-1) installation, configuration, and cutover guide</span></span>
+
+[!include [banner](../../includes/banner.md)]
+
 <span data-ttu-id="2ef58-104">ここでは、Microsoft Dynamics AX for Retail Modern Point of Sale (MPOS) および Retail サーバー、または Microsoft Dynamics AX for Retail Enterprise Point of Sale (EPOS) などの Microsoft Dynamics AX 2012 R3 チャンネル コンポーネントが、Microsoft Dynamics 365 for Retail バックオフィスを使用できるように、段階的ロールアウト (N-1) のコンポーネントを設定する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="2ef58-104">This topic explains how to set up Phased Rollout (N-1) components so that your Microsoft Dynamics AX 2012 R3 channel components, such as Microsoft Dynamics AX for Retail Modern Point of Sale (MPOS) and Retail Server, or Microsoft Dynamics AX for Retail Enterprise Point of Sale (EPOS), can work with Microsoft Dynamics 365 for Retail headquarters.</span></span>
 
 ## <a name="key-terms"></a><span data-ttu-id="2ef58-105">重要な用語</span><span class="sxs-lookup"><span data-stu-id="2ef58-105">Key terms</span></span>
@@ -197,7 +200,7 @@ ms.lasthandoff: 08/09/2018
 
 ### <a name="initialize-the-ax-2012-retail-scheduler"></a><span data-ttu-id="2ef58-371">AX 2012 小売用スケジューラの初期化</span><span class="sxs-lookup"><span data-stu-id="2ef58-371">Initialize the AX 2012 retail scheduler</span></span>
 1. <span data-ttu-id="2ef58-372">小売用バックオフィスにサインインし、**小売\>本社の設定\>小売用スケジューラ \>AX 2012 小売用スケジューラの初期化**に移動します。</span><span class="sxs-lookup"><span data-stu-id="2ef58-372">Sign in to Retail headquarters, and go to **Retail \> Headquarters setup \> Retail scheduler \> Initialize AX 2012 retail scheduler**.</span></span>
-2. <span data-ttu-id="2ef58-373"> **OK**を選択します。</span><span class="sxs-lookup"><span data-stu-id="2ef58-373">Select **OK**.</span></span>
+2. <span data-ttu-id="2ef58-373"> *\*OK*\*を選択します。</span><span class="sxs-lookup"><span data-stu-id="2ef58-373">Select **OK**.</span></span>
 
 ### <a name="distribution-schedule"></a><span data-ttu-id="2ef58-374">配送スケジュール</span><span class="sxs-lookup"><span data-stu-id="2ef58-374">Distribution schedule</span></span>
 > [!NOTE]

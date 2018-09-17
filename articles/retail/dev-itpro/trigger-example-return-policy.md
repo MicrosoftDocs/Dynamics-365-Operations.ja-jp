@@ -18,14 +18,16 @@ ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 5d8c25dd2a0719dd4c74890e52e91da223fab24d
+ms.sourcegitcommit: 965826f5fddc2f53f33157434929eb265979376e
+ms.openlocfilehash: 2d32ee27ca157dcaaf12abbff297a6f84e8a8dbd
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/17/2018
 
 ---
 
 # <a name="implement-a-return-policy-by-using-triggers"></a><span data-ttu-id="621f5-103">トリガーを使用して返品ポリシーを実装してください</span><span class="sxs-lookup"><span data-stu-id="621f5-103">Implement a return policy by using triggers</span></span>
+
+[!include [banner](../../includes/banner.md)]
 
 > [!NOTE]
 > <span data-ttu-id="621f5-104">このトピックは、Dynamics 365 for Finance and Operations の 7.1 およびそれ以降のバージョンに適用可能です。</span><span class="sxs-lookup"><span data-stu-id="621f5-104">This topic is applicable for Dynamics 365 for Finance and Operations version 7.1 and earlier.</span></span> <span data-ttu-id="621f5-105">バージョン 7.2 およびそれ以上の場合は、この実装はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="621f5-105">This implementation is not supported for versions 7.2 and higher.</span></span> <span data-ttu-id="621f5-106">これらのバージョンでは、オーバーレイせずに拡張モデルに従います。</span><span class="sxs-lookup"><span data-stu-id="621f5-106">For those versions, follow the extension model without overlayering.</span></span>

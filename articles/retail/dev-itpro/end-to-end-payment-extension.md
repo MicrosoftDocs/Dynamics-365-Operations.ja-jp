@@ -18,14 +18,16 @@ ms.author: rassadi
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: d617302e020c21a7a7fb077e4ce9481b6c80b796
-ms.openlocfilehash: 9ec7944b7c23c2ff3fd7eada328e2e91e4d7b603
+ms.sourcegitcommit: 965826f5fddc2f53f33157434929eb265979376e
+ms.openlocfilehash: 49cce4a45177cec7652d89421d02026ce4f1924d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/17/2018
 
 ---
 
 # <a name="create-an-end-to-end-payment-integration-for-a-payment-terminal"></a><span data-ttu-id="8f60d-103">支払端末のエンド・ツー・エンド支払統合を作成する</span><span class="sxs-lookup"><span data-stu-id="8f60d-103">Create an end-to-end payment integration for a payment terminal</span></span>
+
+[!include [banner](../../includes/banner.md)]
 
 <span data-ttu-id="8f60d-104">このトピックでは、支払ゲートウェイと直接通信できる支払端末向けに Microsoft Dynamics 365 for Retail Modern POS とクラウド POS (POS) の支払統合を記述する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="8f60d-104">This topic describes how to write a payment integration for Microsoft Dynamics 365 for Retail Modern POS and Cloud POS (the POS) for a payment terminal that can directly communicate with the payment gateway.</span></span>
 

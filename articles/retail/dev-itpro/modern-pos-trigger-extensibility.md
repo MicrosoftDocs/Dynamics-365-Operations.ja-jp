@@ -18,14 +18,16 @@ ms.author: sijoshi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 82eab3c07cd78fde9ccc97bb695284c113c6a85a
+ms.sourcegitcommit: 965826f5fddc2f53f33157434929eb265979376e
+ms.openlocfilehash: 779376807af5294ddcd996934582d03ff57c0e7b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/17/2018
 
 ---
 
 # <a name="retail-modern-pos-mpos-and-cloud-pos-trigger-extensibility"></a><span data-ttu-id="7401b-103">Retail Modern POS (MPOS) およびクラウド POS のトリガー拡張機能</span><span class="sxs-lookup"><span data-stu-id="7401b-103">Retail Modern POS (MPOS) and Cloud POS trigger extensibility</span></span>
+
+[!include [banner](../../includes/banner.md)]
 
 > [!NOTE]
 > <span data-ttu-id="7401b-104">このトピックは、Dynamics 365 for Finance and Operations の 7.1 およびそれ以降のバージョンに適用可能です。</span><span class="sxs-lookup"><span data-stu-id="7401b-104">This topic is applicable for Dynamics 365 for Finance and Operations version 7.1 and earlier.</span></span> <span data-ttu-id="7401b-105">バージョン 7.2 およびそれ以上の場合は、この実装はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="7401b-105">This implementation is not supported for versions 7.2 and higher.</span></span> <span data-ttu-id="7401b-106">これらのバージョンでは、オーバーレイせずに拡張モデルに従います。</span><span class="sxs-lookup"><span data-stu-id="7401b-106">For those versions, follow the extension model without overlayering.</span></span>

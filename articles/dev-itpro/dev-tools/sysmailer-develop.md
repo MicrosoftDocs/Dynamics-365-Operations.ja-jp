@@ -17,14 +17,16 @@ ms.author: cgarty
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Platform update 4
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 9cfa5b4878911db229f405b67c8dede18e5ca756
+ms.sourcegitcommit: 965826f5fddc2f53f33157434929eb265979376e
+ms.openlocfilehash: 7826d799ba449a2261243d8191fd164998beb538
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/17/2018
 
 ---
 
 # <a name="develop-email-experiences-by-using-the-sysmailer-framework"></a><span data-ttu-id="51ad7-103">SysMailerフレームワークを使用して電子メール体験を開発する</span><span class="sxs-lookup"><span data-stu-id="51ad7-103">Develop email experiences by using the SysMailer framework</span></span>
+
+[!include [banner](../includes/banner.md)]
 
 ## <a name="sending-emails"></a><span data-ttu-id="51ad7-104">電子メールを送信しています</span><span class="sxs-lookup"><span data-stu-id="51ad7-104">Sending emails</span></span>
 

@@ -18,15 +18,17 @@ ms.author: andreash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: Retail 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: 0cd07788a3a408f0d359e0500be83de9a50404ea
-ms.openlocfilehash: 7346882795af1acdec83c74aa97c3b8952fababd
+ms.sourcegitcommit: 965826f5fddc2f53f33157434929eb265979376e
+ms.openlocfilehash: 77f6f4c43d7a4e2d448ce99a30914a01ebf5c96a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/17/2018
 
 ---
 
 
 # <a name="implement-finance-and-operations-retail-projects"></a><span data-ttu-id="1bfd9-103">Finance and Operations Retail プロジェクトを実装してください</span><span class="sxs-lookup"><span data-stu-id="1bfd9-103">Implement Finance and Operations Retail projects</span></span>
+
+[!include [banner](../../includes/banner.md)]
 
 <span data-ttu-id="1bfd9-104">このトピックでは、Retail プロジェクトの新しい実装者が複雑さを回避することができるように、実装プロセスの重要な側面について役立つその他のトピックへのリンクを提供します。</span><span class="sxs-lookup"><span data-stu-id="1bfd9-104">This topic provides links to other topics that will help new implementers of Retail projects with important aspects of the implementation process, so that they can avoid complications.</span></span> <span data-ttu-id="1bfd9-105">記載されているガイドラインは、以前の実装プロジェクト中に収集されたベスト プラクティスです。</span><span class="sxs-lookup"><span data-stu-id="1bfd9-105">The guidelines that are mentioned are best practices that have been collected during previous implementation projects.</span></span> <span data-ttu-id="1bfd9-106">したがって、実装者は手順で行き詰まることく、実際の機能に焦点を合わせることができます。</span><span class="sxs-lookup"><span data-stu-id="1bfd9-106">Therefore, implementers can focus on the actual feature work and not become bogged down by the procedures.</span></span>
 

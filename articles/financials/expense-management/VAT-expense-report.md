@@ -17,14 +17,16 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: cf5277bf90799692b4d9d43e3279dae6e1e1bdf7
+ms.sourcegitcommit: 965826f5fddc2f53f33157434929eb265979376e
+ms.openlocfilehash: 8bc9e533de40aa8fe8ddfe422cfe0f4078a360c7
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/17/2018
 
 ---
 
 # <a name="vat-recovery-in-expense-management"></a><span data-ttu-id="0b6ce-103">経費管理における VAT 回収</span><span class="sxs-lookup"><span data-stu-id="0b6ce-103">VAT recovery in Expense management</span></span>
+
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="0b6ce-104">適用できる付加価値税 (VAT) トランザクションの払戻を表示するには、会社または組織が正確な情報を識別、収集、確認および送信する必要があります。</span><span class="sxs-lookup"><span data-stu-id="0b6ce-104">To receive refunds on eligible value-added tax (VAT) transactions, a company or organization must identify, collect, verify, and submit accurate information.</span></span> <span data-ttu-id="0b6ce-105">このプロセスには複数のタスクが含まれ、法人のサイズによって、複数の従業員またはロールを含めることができます。</span><span class="sxs-lookup"><span data-stu-id="0b6ce-105">This process includes multiple tasks and, depending on the size of your company, can include several employees or roles.</span></span>
 
