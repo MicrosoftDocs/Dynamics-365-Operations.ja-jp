@@ -27,6 +27,9 @@ ms.lasthandoff: 08/09/2018
 ---
 
 # <a name="powerbicom-solutions-home-page"></a>PowerBI.com ソリューションのホーム ページ
+
+[!include [banner](../includes/banner.md)]
+
 次の PowerBI.com ソリューションは、Dynamics 365 for Finance and Operation 環境で使用可能です。
 
 ## <a name="powerbicom-solutions-available-from-lifecycle-services-lcs"></a>Lifecycle Services (LCS) から利用可能な PowerBI.com ソリューション

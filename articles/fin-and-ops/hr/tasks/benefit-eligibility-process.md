@@ -1,6 +1,6 @@
 --- 
 title: "給付金適格性処理"
-description: "この手順は、福利厚生の適格性処理が機能する方法を示します。"
+description: "この手順は、給付金適格性処理が機能する方法を示します。"
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
@@ -17,17 +17,17 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 7c05c7613ee0d37d6bdfcb42f4e9611629d215bd
+ms.sourcegitcommit: abc52192848649672cbcb8c770d74ba2aef139be
+ms.openlocfilehash: fe773bd2375b2dea8e13a57918ad584f83f61073
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 02/14/2018
 
 ---
 # <a name="benefit-eligibility-process"></a>給付金適格性処理
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-この手順は、福利厚生の適格性処理が機能する方法を示します。 プロセスが完了すると、結果を表示できます。 この手順の作成に使用するデモ データの会社は USMF です。
+この手順は、給付金適格性処理が機能する方法を示します。 プロセスが完了すると、結果を表示できます。 この手順の作成に使用するデモ データの会社は USMF です。
 
 1. [人事管理] > [福利厚生] > [福利厚生] の順に移動します。
 2. 一覧で、目的のレコードを見つけ、選択します。

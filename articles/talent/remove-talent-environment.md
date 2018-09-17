@@ -26,6 +26,8 @@ ms.lasthandoff: 08/09/2018
 ---
 # <a name="remove-talent-environments"></a>Talent 環境の削除
 
+[!include [banner](includes/banner.md)]
+
 このトピックでは、Microsoft Dynamics 365 for Talent のテスト ドライブまたは実稼働環境の削除について説明します。
 
 ## <a name="removing-a-test-drive-environment"></a>テスト ドライブ環境の削除

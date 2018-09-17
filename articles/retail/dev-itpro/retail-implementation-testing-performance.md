@@ -28,6 +28,8 @@ ms.lasthandoff: 08/09/2018
 
 # <a name="testing-and-performance-issues"></a>テストおよびパフォーマンスの問題
 
+[!include [banner](../../includes/banner.md)]
+
 このドキュメントでは、機能テスト、パフォーマンス テスト、およびパフォーマンスのトラブルシューティングに関連するプラクティスとツールについて説明します。
 
 ## <a name="user-acceptance-testing"></a>ユーザー受け入れテスト

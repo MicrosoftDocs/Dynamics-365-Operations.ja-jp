@@ -26,6 +26,9 @@ ms.lasthandoff: 08/09/2018
 ---
 
 # <a name="phased-rollout-n-1-installation-configuration-and-cutover-guide"></a>段階的なロールアウト (N-1) インストール、コンフィギュレーション、および切替ガイド
+
+[!include [banner](../../includes/banner.md)]
+
 ここでは、Microsoft Dynamics AX for Retail Modern Point of Sale (MPOS) および Retail サーバー、または Microsoft Dynamics AX for Retail Enterprise Point of Sale (EPOS) などの Microsoft Dynamics AX 2012 R3 チャンネル コンポーネントが、Microsoft Dynamics 365 for Retail バックオフィスを使用できるように、段階的ロールアウト (N-1) のコンポーネントを設定する方法について説明します。
 
 ## <a name="key-terms"></a>重要な用語

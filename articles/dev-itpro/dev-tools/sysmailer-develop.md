@@ -26,6 +26,8 @@ ms.lasthandoff: 08/09/2018
 
 # <a name="develop-email-experiences-by-using-the-sysmailer-framework"></a>SysMailerフレームワークを使用して電子メール体験を開発する
 
+[!include [banner](../includes/banner.md)]
+
 ## <a name="sending-emails"></a>電子メールを送信しています
 
 SysMailer フレームワークは Microsoft Dynamics 365 for Finance and Operations で電子メールを送信するための新しい拡張可能な方法です。 CDO.Messaging (SysMailer), MAPI (SysINetMail), および Outlook COM (SmmOutlookEmail) などの電子メールに対して以前のすべてのアプリケーション プログラミング インターフェイス (API) が置き換えられます。 これらの古いメールの API は Finance and Operations で正しく動作しません。 SysPlugin フレームワークと複数の .NET テクノロジを活用することで、SysMailer はユーザー向けのコンフィギュレーション可能な処理を提供し、アプリケーション使用者が電子メールを送信する際に使用する電子メール オプションに依存しない状態を維持することを可能にします。

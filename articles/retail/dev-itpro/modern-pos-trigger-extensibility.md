@@ -27,6 +27,8 @@ ms.lasthandoff: 08/09/2018
 
 # <a name="retail-modern-pos-mpos-and-cloud-pos-trigger-extensibility"></a>Retail Modern POS (MPOS) およびクラウド POS のトリガー拡張機能
 
+[!include [banner](../../includes/banner.md)]
+
 > [!NOTE]
 > このトピックは、Dynamics 365 for Finance and Operations の 7.1 およびそれ以降のバージョンに適用可能です。 バージョン 7.2 およびそれ以上の場合は、この実装はサポートされていません。 これらのバージョンでは、オーバーレイせずに拡張モデルに従います。
 

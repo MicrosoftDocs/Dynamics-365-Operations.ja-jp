@@ -27,6 +27,8 @@ ms.lasthandoff: 08/09/2018
 
 # <a name="create-an-end-to-end-payment-integration-for-a-payment-terminal"></a>支払端末のエンド・ツー・エンド支払統合を作成する
 
+[!include [banner](../../includes/banner.md)]
+
 このトピックでは、支払ゲートウェイと直接通信できる支払端末向けに Microsoft Dynamics 365 for Retail Modern POS とクラウド POS (POS) の支払統合を記述する方法について説明します。
 
 ## <a name="key-terms"></a>重要な用語

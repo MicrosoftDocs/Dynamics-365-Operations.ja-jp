@@ -28,6 +28,8 @@ ms.lasthandoff: 06/12/2018
 
 # <a name="add-location-roles-and-party-relationship-types"></a>場所および関係者のリレーションシップ タイプの追加 
 
+[!include [banner](../includes/banner.md)]
+
 ## <a name="add-location-roles"></a>場所のロールの追加
 
 住所および連絡先情報について、新たに場所ロールを追加するには 2 つの方法があります。
