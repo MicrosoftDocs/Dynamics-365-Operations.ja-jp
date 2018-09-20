@@ -17,10 +17,10 @@ ms.author: asharchw
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 60a08a8b45161e98a6c4fb4cadf3187169cdd68f
+ms.sourcegitcommit: df560a3c3e628f3971af29281f5f8bd0500e42fe
+ms.openlocfilehash: 2e0ffe70db059a0bddac9861c4df8b0dc095d5a8
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 08/14/2018
 
 ---
 
@@ -46,7 +46,7 @@ Dynamics 365 for Retail には、追加機能を有効にするオプション�
 |小売機能のみを提供するスコープのあるソリューションを展開します。 | 有  | はい*<br><br>\* 配置後にコンフィギュレーションできます。  |
 |インテリジェントで最新の企業ビジネス アプリケーションによって、財務および操作を最適化して成長を促進し、リアルタイムのデータに基づく判断を行います。| いいえ*<br><br>\* Unified Operations Plan または Dynamics 365 Plan で追加機能を有効にすることができます。 | 有 |
 
-ライセンスの詳細については、[ライセンス ガイド](http://download.microsoft.com/documents/en-us/dynamics/pricing/Dynamics_365_Enterprise_edition_Licensing_Guide.pdf) を参照してください。
+ライセンスの詳細については、[ライセンス ガイド](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409) を参照してください。
 
 テナントとしての必要なライセンスを取得した後、Lifecycle Services (LCS) を最初にアクセスするとき、実装プロジェクト タイプを選択するように要求されます。実装プロジェクト タイプでは、**Dynamics 365 for Retail** または **Dynamics 365 for Finance and Operations** を選択する必要があります。 上記の考慮事項を使用すると、適切な製品を選択して展開することができます。
  

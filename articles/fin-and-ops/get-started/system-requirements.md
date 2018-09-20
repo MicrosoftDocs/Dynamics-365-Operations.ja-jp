@@ -3,7 +3,7 @@ title: "クラウド配置のシステム要件"
 description: "このトピックでは、現在のバージョンの Microsoft Dynamics 365 for Finance and Operations におけるクラウド展開のシステム要件を一覧表示します。"
 author: sericks007
 manager: AnnBe
-ms.date: 07/19/2018
+ms.date: 08/24/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 66733ca771021b60bcfb9c076038e448fd909c64
-ms.openlocfilehash: 980a583f67832d6efbe38edcbbb81c209fd9994e
+ms.sourcegitcommit: d20bc3519096f1035d26f89d42aa7e8f0fc368cd
+ms.openlocfilehash: ab1c2f8b15e593d25e07de83979ff0ad26564c77
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 08/29/2018
 
 ---
 
@@ -81,6 +81,7 @@ Finance and Operations では、ドキュメント回覧エージェントなど
 
 > [!NOTE]
 > Retai Modern POS でオフライン データベースを使う場合、コンピューターは Microsoft SQL Server のすべてのシステム要件を満たす必要があります。 Retail Modern POS のオフライン データベースは、Service Pack 3 以降の SQL Server 2012、Service Pack 2 以降の SQL Server 2014 、または SQL Server 2016 が必要です。  使用されている SQL Server のバージョンには、フルテキスト検索機能がインストールされている必要があります。 常に利用可能な最新のバージョンを使用し、すべての最新サービス パックをインストールすることをお勧めします。 これらの推奨事項に従うことで、互換性とセキュリティの両方を確保できます。
+> 2018 年 10 月 1 日以降、Retail Modern POS や 他のクライアント側コンポーネントを使用するには、Microsoft .NET Framework version 4.6.1 以降をインストールする必要があります。 インストール手順については、[開発者の .NET Framework のインストール](https://msdn.microsoft.com/en-us/library/5a4x27ek(v=vs.110).aspx) を参照してください。
 
 ### <a name="supported-windows-operating-systems"></a>サポートされる Windows オペレーティング システム
 
@@ -107,6 +108,10 @@ Finance and Operations では、ドキュメント回覧エージェントなど
 - Android OS 6.0 以降
 
 ## <a name="retail-hardware-station-requirements"></a>Retail hardware station 要件
+
+> [!NOTE]
+> 2018 年 10 月 1 日以降、Retail ハードウェア ステーションや 他のクライアント側コンポーネントを使用するには、.NET Framework version 4.6.1 以降をインストールする必要があります。 インストール手順については、[開発者の .NET Framework のインストール](https://msdn.microsoft.com/en-us/library/5a4x27ek(v=vs.110).aspx) を参照してください。
+
 ### <a name="supported-operating-systems"></a>サポートされるオペレーティング システム
 
 - Retail hardware station は 32 ビット アプリケーションですが、x86 と x64 アーキテクチャの両方で動作します。
@@ -130,6 +135,10 @@ Finance and Operations では、ドキュメント回覧エージェントなど
 - サード パーティのハードウェア
 
 ## <a name="retail-store-scale-unit-requirements"></a>Retail Store スケール ユニット要件
+
+> [!NOTE]
+> 2018 年 10 月 1 日以降、Retail Store Scale Unit や他のクライアント側コンポーネントを使用するには、.NET Framework version 4.6.1 以降をインストールする必要があります。 インストール手順については、[開発者の .NET Framework のインストール](https://msdn.microsoft.com/en-us/library/5a4x27ek(v=vs.110).aspx) を参照してください。
+
 以下に示す最小システム要件は、テスト シナリオでの機能へ Retail Store スケール ユニットを取得するのに必要最低限であることをご確認下さい。  以下は実際的な実稼働環境を表すものではありません。  適切なパフォーマンス テストを実行し、使用するハードウェアがユーザーのニーズを満たしているのを検証することが重要です。
 
 ### <a name="supported-operating-systems"></a>サポートされるオペレーティング システム

@@ -17,10 +17,10 @@ ms.author: epegors
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 12
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 5fd1bd44b0a663b781e34b6be863215b7e575342
+ms.sourcegitcommit: d20bc3519096f1035d26f89d42aa7e8f0fc368cd
+ms.openlocfilehash: 3a62d94d34c80a4ad4e245ddd41ef06b07b9852d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 08/29/2018
 
 ---
 
@@ -82,7 +82,10 @@ IIS Express が起動されると、通知領域 (時計の近くにある) に�
 4. メンテナンス モードの活動を完了したら、ステップ 2 および 3 を繰り返しますが、値はステップ 2 で **0** に設定します。
 
 ## <a name="can-i-install-a-license-deployable-package"></a>ライセンス配置可能パッケージをインストールできますか。
-**- devinstall** オプションを使用して、ライセンスが配置可能なパッケージをインストールできる必要があります。 ただし、このシナリオで問題が検出されました。 問題の解決に取り組んでいます。
+### <a name="development-environments"></a>開発環境
+LCS を使用して、クラウド開発環境にライセンス配置可能パッケージをインストールします。
+### <a name="build-environments"></a>ビルド環境
+LCS では、AOT またはライセンス配置可能パッケージをビルド環境にインストールできません。 これを回避するには、VM にリモート接続し、「[配置可能なパッケージのコマンドラインからのインストール](../deployment/install-deployable-package.md)」で説明されているようにコマンド ラインから **-devinstall** オプションを使用してライセンス配置可能パッケージをインストールします。 このコマンド ライン インストールは、プラットフォーム更新 17 で機能します。 プラットフォーム更新 17 より古いプラットフォーム バージョンを実行しており、ビルド環境への管理者アクセス権を持っていない場合、サポート リクエストを作成し、ライセンス配置可能パッケージのインストールを Microsoft に依頼します。
 
 ## <a name="is-licensing-visual-studio-by-entering-a-product-key-supported"></a>プロダクト キーを入力することによってライセンス Visual Studio はサポートされますか。
 Visual Studio に直接プロダクト キーを入力することはサポートされていません。 代わりに、Visual Studio 定期売買ライセンスを使用し、ライセンスに関連付けられている電子メール アドレス (ユーザー アカウント) で Visual Studio にサインインします。 Visual Studio ライセンスをユーザー アカウントにリンクするには、MSDN ライセンスをユーザー アカウントに割り当てるか、または https://www.visualstudio.com/subscriptions-administration を使用してユーザー アカウントにライセンスを割り当てます。

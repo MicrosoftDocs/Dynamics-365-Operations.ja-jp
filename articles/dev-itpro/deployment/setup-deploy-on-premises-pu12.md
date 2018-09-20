@@ -3,7 +3,7 @@ title: "オンプレミス環境の設定と配置 (プラットフォーム更�
 description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations、Enterprise エディション (プラットフォーム更新プログラム 12) にオンプレミス環境を計画、設定、展開する方法について説明します。"
 author: sarvanisathish
 manager: AnnBe
-ms.date: 08/08/2018
+ms.date: 09/04/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: sarvanis
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 12
 ms.translationtype: HT
-ms.sourcegitcommit: 8a3c4ed8f3ed79ab0cb3e59076734877d270bd68
-ms.openlocfilehash: 51aa38a86305281ce567ad7650f926324a2c47c9
+ms.sourcegitcommit: 8a282207246fc1dbce1c4c40af118a3dc9976a2a
+ms.openlocfilehash: 95ff2e7465ee8a749c08e6c3efb320769b974ae9
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/04/2018
 
 ---
 
@@ -48,7 +48,7 @@ Finance and Operations アプリケーションは、次の 3 つの主要なコ
 
 これらのコンポーネントは、次のシステム ソフトウェアによって異なります。
 
-- Microsoft Windows Server 2016 (英語のインストールのみがサポートされます)
+- Microsoft Windows Server 2016 (英語 OS のインストールのみがサポートされます)
 - 以下の特徴を有する Microsoft SQL Server 2016 SP1:
   - フルテキスト インデックス検索が有効にされている。
   - SQL Server Reporting Services (SSRS) - これは BI 仮想マシンに配置されます。
@@ -144,9 +144,10 @@ Finance and Operations は、Windows Servers に基づく Hyper-V 仮想化環�
 
 次の必須ソフトウェアは、LCS からダウンロードされたインフラストラクチャ セットアップ スクリプトによって VM にインストールされます。
 
-| ノード タイプ | コンポーネント | 細目 |
+| ノード タイプ | コンポーネント | 詳細情報 |
 |-----------|-----------|---------|
-| AOS       | SNAC – ODBC ドライバー | <https://www.microsoft.com/en-us/download/details.aspx?id=53339> |
+| AOS       | SNAC – ODBC ドライバー 13 | <https://www.microsoft.com/en-us/download/details.aspx?id=53339> |
+| AOS       | SNAC – ODBC ドライバー 17 | このドライバーは、PU15 以上へのアップグレードに必要です。<https://www.microsoft.com/en-us/download/details.aspx?id=56567> |
 | AOS       | Microsoft .NET Framework version 2.0–3.5 (CLR 2.0) | **Windows の機能:** NET-Framework-Features、NET-Framework-Core、NET-HTTP-Activation、NET-Non-HTTP-Activ |
 | AOS       | Microsoft .NET Framework version 4.0–4.6 (CLR 4.0) | **Windows の機能:** NET-Framework-45-Features、NET-Framework-45-Core、NET-Framework-45-ASPNET、NET-WCF-Services45、NET-WCF-TCP-PortSharing45 |
 | AOS       | インターネット インフォメーション サービス (IIS) | **Windows の機能:** WAS、WAS-Process-Model、WAS-NET-Environment、WAS-Config-APIs、Web-Server、Web-WebServer、Web-Security、Web-Filtering、Web-App-Dev、Web-Net-Ext、Web-Mgmt-Tools、Web-Mgmt-Console |
@@ -418,7 +419,8 @@ Add-Computer -DomainName $domainName -Credential (Get-Credential -Message 'Enter
 
 | コンポーネント | リンクのダウンロード |
 |-----------|---------------|
-| SNAC – ODBC ドライバー | <https://www.microsoft.com/en-us/download/details.aspx?id=53339> |
+| SNAC – ODBC ドライバー 13 | <https://www.microsoft.com/en-us/download/details.aspx?id=53339> |
+| SNAC – ODBC ドライバー 17 | <https://www.microsoft.com/en-us/download/details.aspx?id=56567> |
 | Microsoft SQL Server Management Studio 17.5 | <https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms> |
 | Microsoft Visual Studio 2013 用 Microsoft Visual C++ 再頒布可能パッケージ | <https://support.microsoft.com/en-us/help/3179560> |
 | Microsoft Access データベース エンジン 2010 再頒布可能パッケージ | <https://www.microsoft.com/en-us/download/details.aspx?id=13255> |
@@ -541,7 +543,7 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
 
 > [!IMPORTANT]
 > - セキュリティで保護されたダイアレクト ネゴシエーションでは、SMB 2.0 または 3.0 から SMB 1.0 へのダウングレードを検出または防止できません。 したがって、SMB 1.0 サーバーを無効にすることを強くお勧めします。 SMB 1.0 サーバーを無効にすることで、SMB 暗号化のすべての機能を利用できます。
-> - 環境内の残りの部分でデータが保護されていることを保証するために、BitLocker ドライブ暗号化をすべてのマシンで有効にする必要があります。 BitLocker を有効にする方法については、[BitLocker: Windows Server 2012 以降で配置する方法](/windows/device-security/bitlocker/bitlocker-how-to-deploy-on-windows-server) を参照してください。
+> - 環境内の残りの部分でデータが保護されていることを保証するために、BitLocker ドライブ暗号化をすべてのマシンで有効にする必要があります。 BitLocker を有効にする方法については、[BitLocker: Windows Server 2012 以降で配置する方法](https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-how-to-deploy-on-windows-server) を参照してください。
 
 1. ファイル共有マシンで、次のコマンドを実行します。
 

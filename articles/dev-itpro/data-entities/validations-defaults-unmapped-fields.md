@@ -18,10 +18,10 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 0d38906a782564016f4aba1037b0832583da4fb6
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: af8d38ccc48db39ab7bf071c54a86e2786be18c1
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -29,12 +29,12 @@ ms.lasthandoff: 08/09/2018
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、データ エンティティの値を検証する方法、既定値を設定する方法、およびデータ ソース値にマップされないが、代わりに仮想または計算のデータが含まれるフィールド (マップされていないフィールド) を使用する方法について説明します。 
+このトピックでは、データ エンティティの値を検証する方法、既定値を設定する方法、およびデータ ソース値にマップされないが、代わりに仮想または計算のデータが含まれるフィールド (マップされていないフィールド) を使用する方法について説明します。
 
 ## <a name="validations"></a>検証
-検証は、フィールド レベルとレコード レベルの両方でエンティティをバックアップするテーブルで定義できます。 検証は、データ エンティティ レベルで定義することもできます。 
+検証は、フィールド レベルとレコード レベルの両方でエンティティをバックアップするテーブルで定義できます。 検証は、データ エンティティ レベルで定義することもできます。
 
-### <a name="table-data-source-vs-entity-validation"></a>テーブル (データ ソース) とエンティティ検証 
+### <a name="table-data-source-vs-entity-validation"></a>テーブル (データ ソース) とエンティティ検証
 
 エンティティはテーブル (データ ソース) によってバックアップされ、検証はフィールド レベル (**Table.validateField()**) とレコード レベル (**Table.validateWrite()**) の両方でテーブルに対して定義されます。 検証は、これらのテーブルを使用して構築されたデータ エンティティによって考慮されます。 これらの検証はデータ エンティティを戻すテーブルに組み込まれますが、検証はデータ エンティティ レベルで定義することもできます。 テーブルに基づく検証と同様に、エンティティに基づく検証はフィールド レベル (**DataEntity.validateField()**) またはレコード レベル (**DataEntity.validateWrite()**) で書き込むことができます。
 
@@ -67,20 +67,15 @@ ms.lasthandoff: 08/09/2018
 ### <a name="entity-based-validation-behavior"></a>エンティティ ベースの検証動作
 
 <table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
 <thead>
-<tr class="header">
+<tr>
 <th>検証</th>
 <th>ターゲット</th>
 <th>呼び出し側</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>DataEntity.ValidateField</td>
 <td><ul>
 <li>データ型</li>
@@ -94,7 +89,7 @@ ms.lasthandoff: 08/09/2018
 <li>挿入/更新が X++ コードから発生した場合は、自動的に呼び出されません</li>
 </ul></td>
 </tr>
-<tr class="even">
+<tr>
 <td>DataEntity.ValidateWrite</td>
 <td><ul>
 <li>必須の列</li>
@@ -108,7 +103,7 @@ ms.lasthandoff: 08/09/2018
 <li>挿入/更新が X++ コードから発生した場合は、自動的に呼び出されません</li>
 </ul></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>DataEntity.ValidateDelete</td>
 <td><ul>
 <li>DeleteActions</li>
@@ -123,8 +118,6 @@ ms.lasthandoff: 08/09/2018
 </tr>
 </tbody>
 </table>
-
-
 
 ## <a name="defaults"></a>既定
 初期化と行には既定値を指定できます。
@@ -148,36 +141,31 @@ ms.lasthandoff: 08/09/2018
 ## <a name="unmapped-fields"></a>マップされていないフィールド
 データ エンティティは、データ ソースのフィールドに直接マップされているフィールドに*マップされていない*フィールドを追加できます。 マップされていないフィールドの値を生成するメカニズムは 2 つあります。
 
--   カスタム X++ コード
--   Microsoft SQL Server によって実行される SQL
+- カスタム X++ コード
+- Microsoft SQL Server によって実行される SQL
 
-マップされていない2種類のフィールドは、[*仮想*] と [*計算*] です。 マップされていないフィールドは常に読み取り操作をサポートしますが、機能仕様では、書き込み操作をサポートするための開発作業は必要とされない場合があります。 **仮想フィールド**
+マップされていない2種類のフィールドは、[*仮想*] と [*計算*] です。 マップされていないフィールドは常に読み取り操作をサポートしますが、機能仕様では、書き込み操作をサポートするための開発作業は必要とされない場合があります。
 
--   保持されないフィールド。
--   カスタム X++ コードによって制御されます。
--   読み取り/書き込みは、カスタム X++ コードを通じて発生します。
--   通常は X++ コードを用いて計算される入力値に使用され、計算された列によって置き換わることはできません。
+**仮想フィールド**
+
+- 保持されないフィールド。
+- カスタム X++ コードによって制御されます。
+- 読み取り/書き込みは、カスタム X++ コードを通じて発生します。
+- 通常は X++ コードを用いて計算される入力値に使用され、計算された列によって置き換わることはできません。
 
 **計算フィールド**
 
--   値は、SQL ビューの計算列によって生成されます。
--   読み取り中に、データは SQL によって計算され、ビューから直接フェッチされます。
--   書き込みについては、カスタム X++ コードは入力値を解析し、データ エンティティの通常のフィールドに解析された値を書き込む必要があります。 値はエンティティのデータ ソースの通常のフィールドに格納されます。
--   ほとんどの場合の読み取りに使用されます。
--   計算された列は SQL Server レベルで計算されている一方、仮想フィールドは、X++ の行ごとに計算された行であるため、可能な限り仮想フィールドではなく計算された列を使用することをお勧めします。
+- 値は、SQL ビューの計算列によって生成されます。
+- 読み取り中に、データは SQL によって計算され、ビューから直接フェッチされます。
+- 書き込みについては、カスタム X++ コードは入力値を解析し、データ エンティティの通常のフィールドに解析された値を書き込む必要があります。 値はエンティティのデータ ソースの通常のフィールドに格納されます。
+- ほとんどの場合の読み取りに使用されます。
+- 計算された列は SQL Server レベルで計算されている一方、仮想フィールドは、X++ の行ごとに計算された行であるため、可能な限り仮想フィールドではなく計算された列を使用することをお勧めします。
 
 ### <a name="properties-of-unmapped-fields"></a>マップされていないフィールドのプロパティ
 
 <table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
 <thead>
-<tr class="header">
+<tr>
 <th>カテゴリ</th>
 <th>氏名</th>
 <th>種類</th>
@@ -186,24 +174,24 @@ ms.lasthandoff: 08/09/2018
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>データ</td>
 <td>IsComputedField</td>
 <td>NoYes</td>
 <td>有</td>
 <td><ul>
-<li><strong>はい:</strong> フィールドは、SQL ビューの計算済み列として同期されます。 X++ メソッドは列の SQL 定義文字列を計算する必要があります。 仮想列の定義は静的であり、エンティティが同期されているときに使用されます。 その後は、 X++ メソッドは、実行時に呼び出されません。</li>
+<li><strong>はい:</strong> フィールドは、SQL ビューの計算済み列として同期されます。 X++ メソッドは列の SQL 定義文字列を計算する必要があります。 仮想列の定義は静的であり、エンティティが同期されているときに使用されます。 その後は、X++ メソッドは、実行時に呼び出されません。</li>
 <li><strong>いいえ:</strong> フィールドは、入庫および出荷の値がカスタム コードによって完全に制御される真の仮想フィールドです。</li>
 </ul></td>
 </tr>
-<tr class="even">
+<tr>
 <td>データ</td>
 <td>ComputedFieldMethod</td>
 <td>文字列</td>
 <td></td>
 <td>X++ の静的 <strong>DataEntity</strong> メソッドは、フィールド定義を生成する SQL 式の構築に使用されます。 <strong>IsComputedField</strong> プロパティが <strong>いいえ</strong> に設定されている場合、このプロパティは無効で無関係です。 このメソッドは、<strong>IsComputedField</strong> プロパティが <strong>はい</strong> に設定されている場合に必要です。</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>データ</td>
 <td>ExtendedDataType</td>
 <td>文字列</td>
@@ -216,20 +204,15 @@ ms.lasthandoff: 08/09/2018
 ### <a name="unmapped-field-comparison"></a>マップされていないフィールドの比較
 
 <table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
 <thead>
-<tr class="header">
+<tr>
 <th></th>
 <th>仮想フィールド</th>
 <th>計算フィールド</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>メタデータのプロパティ</td>
 <td>No と算出されます</td>
 <td><ul>
@@ -237,7 +220,7 @@ ms.lasthandoff: 08/09/2018
 <li>計算フィールド メソッド = 静的メソッド</li>
 </ul></td>
 </tr>
-<tr class="even">
+<tr>
 <td>既読</td>
 <td><ul>
 <li>X++ (override <strong>postLoad</strong>)</li>
@@ -248,12 +231,12 @@ ms.lasthandoff: 08/09/2018
 <li>セット ベースの読み取り可能</li>
 </ul></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>書き込み</td>
 <td>X++ (override <strong>mapEntityToDataSource</strong>)</td>
 <td>X++ (override <strong>mapEntityToDataSource</strong>)</td>
 </tr>
-<tr class="even">
+<tr>
 <td>メリット</td>
 <td><ul>
 <li>スキーマにバインドされていないため公開契約は同じですが、実装が変更される可能性があります</li>
@@ -268,12 +251,7 @@ ms.lasthandoff: 08/09/2018
 
 次のテーブルは、**UnitOfMeasure** のリレーションシップが存在する場合の計算例を示し、マップされていないフィールドにその値を表示します。
 
-| 仮想フィールド                                                                                                                                                                                                                                                       | 計算フィールド                                                                                                          |
-|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
+| 仮想フィールド | 計算フィールド |
+|---------------|----------------|
 | postLoad() で、*// フィールドの UnitOfMeasureInternalCode.UnitOfMeasure//Set hasFixedInternalCode 値に基づいてレコードが存在するかどうかを確認します* (this.UnitOfMeasure)this.HasFixedInternalCodeVirtual = NoYes::Yes; else this.HasFixedInternalCodeVirtual = NoYes::No; の場合 | ComputedFieldMethod() で *// 任意の SQL 計算された列の明細書 (T2.RECID が NULL の場合は 0 ELSE 1)INTとして)* |
-
-
-
-
-
 

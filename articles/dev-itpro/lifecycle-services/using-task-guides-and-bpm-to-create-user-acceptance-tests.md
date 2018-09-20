@@ -1,6 +1,6 @@
 ---
 title: "タスク ガイドおよび BPM を使用して、ユーザー承認テスト ライブラリを作成する"
-description: "このトピックでは、タスク ガイドと BPMを 使用して承認テスト スイートを作成および実行することに関する情報を提供します。"
+description: "このトピックでは、タスク ガイドと BPM を 使用して承認テスト スイートを作成および実行することに関する情報を提供します。"
 author: kfend
 manager: AnnBe
 ms.date: 06/07/2018
@@ -18,14 +18,16 @@ ms.author: ntecklu
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: 44b847bed52cd36fcc6af526ed2d17a6b3d50963
-ms.openlocfilehash: 6b5563be710a809d3330bc6677f07d9d8726fdc2
+ms.sourcegitcommit: d20bc3519096f1035d26f89d42aa7e8f0fc368cd
+ms.openlocfilehash: 65af23598d4969f9f5011da181deb8dc8e975f3e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 08/29/2018
 
 ---
 
 # <a name="create-user-acceptance-test-libraries-by-using-task-guides-and-bpm"></a>タスク ガイドおよび BPM を使用して、ユーザー承認テスト ライブラリを作成する
+
+[!include [banner](../includes/banner.md)]
 
 タスク ガイドおよびビジネス プロセス モデラー (BPM) を使用して、ユーザー承認テスト ライブラリを作成することができます。 業務プロセスごとに承認テストを整理してから BPM を Visual Studio Team Services (VSTS) に同期し、テストの実行とテスト結果を管理します。 このトピックでは、手動テストまたは自動テストに使用する承認テスト スイートを作成および実行するプロセスについて説明します。
 

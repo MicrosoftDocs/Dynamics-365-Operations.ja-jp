@@ -3,7 +3,7 @@ title: "Retail Store Scale Unit の構成とインストール"
 description: "このトピックでは、セルフ サービスを使用して、小売用バックオフィスで Retail Store Scale Unit を構成し、ダウンロードして、実店舗の 1 台以上のコンピューターにインストールする方法について説明します。"
 author: jashanno
 manager: AnnBe
-ms.date: 03/27/2018
+ms.date: 08/24/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -20,10 +20,10 @@ ms.author: jashanno
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 9a419886758270cdbe07013426e9218c72280f64
+ms.sourcegitcommit: d20bc3519096f1035d26f89d42aa7e8f0fc368cd
+ms.openlocfilehash: 7b9cfcedff0bcfdb63ea58593b52be6a8f824b08
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 08/29/2018
 
 ---
 
@@ -185,7 +185,7 @@ Retail Store スケール ユニット インストーラーは、まず、関�
 3. Retail で、**Retail** &gt; **本社の設定** &gt; **パラメーター** &gt; **小売共有パラメーター**に移動します。
 4. **ID プロバイダー** を選択します。
 5. **ID プロバイダー**クイック タブで、**+ 追加**を選択します。
-6. 新しい**発行者**行に、新たにインストールした Retail Store スケール ユニットの Retail サーバー URL を入力します。 URL の末尾に **/auth** を追加します。URL は `https://MyComputerName/RetailServer/auth` のようになります。
+6. 新しい**発行者**行に、新たにインストールした Retail Store スケール ユニットの Retail サーバー URL を入力します。 URL の末尾に **/auth** を追加します。URL は `https://<My Case-Sensitive Computer Name>:<Port Number>/RetailServer/auth` のようになります。
 
     > [!NOTE]
     > 上記 URL では、大文字と小文字を区別します。

@@ -17,10 +17,10 @@ ms.author: mumani
 ms.search.validFrom: 2017-10-20
 ms.dyn365.ops.version: AX 7.0.0, Retail October 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 5efffc01319d574f75d4c0c8801830a768993890
+ms.sourcegitcommit: 96a9075294c1f2a9cfde03be1aaaa26af90de4c2
+ms.openlocfilehash: 511aac96e0c67be2fa2a67946b16003a1721345b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/04/2018
 
 ---
 
@@ -32,7 +32,7 @@ Retail サーバー アプリケーション プログラミング インター�
 
 ## <a name="what-is-the-retail-proxy-used-for-and-when-should-you-use-it"></a>Retail プロキシは何に使用される、またそれをいつ使用する必要があるか ?
 
-すべてのクライアントは Retail サーバーと対話するためにプロキシ API を使用します。 Retail プロキシは、Retail Server と Commerce Runtime (CRT) 間のインターフェイスを抽象化します。 たとえば、CRT で要求/応答の操作として新しいエンティティとビジネス ロジックを作成し、そのエンティティおよびそれらの要求/応答の操作を公開するために、新しい Retail サーバー API を追加できます。 販売時点管理 (POS) におけるエンティティと要求/応答動作にアクセスして、あるクライアント ロジックを実行する必要が出てきました。 POS ですべてのエンティティと要求/応答メタデータを手動で作成し、適切なパラメーターを使用して Retail サーバーにアクセスすることができます。 ただし、エンティティ、マネージャ、および 2 つの場所で要求/応答コードを複製する必要があり、および多くのコードの書き込みもする必要があるため、このアプローチには追加の間接費が多く含まれます。
+すべてのクライアントは Retail サーバーとやりとりするためにプロキシ API を使用します。 Retail プロキシは、Retail Server と Commerce Runtime (CRT) 間のインターフェイスを抽象化します。 たとえば、CRT で要求/応答の操作として新しいエンティティとビジネス ロジックを作成し、そのエンティティおよびそれらの要求/応答の操作を公開するために、新しい Retail サーバー API を追加できます。 販売時点管理 (POS) におけるエンティティと要求/応答動作にアクセスして、あるクライアント ロジックを実行する必要が出てきました。 POS ですべてのエンティティと要求/応答メタデータを手動で作成し、適切なパラメーターを使用して Retail サーバーにアクセスすることができます。 ただし、エンティティ、マネージャ、および 2 つの場所で要求/応答コードを複製する必要があり、および多くのコードの書き込みもする必要があるため、このアプローチには追加の間接費が多く含まれます。
 
 Retail プロキシは、Retail Server に追加されたすべてのユーザー定義エンティティと要求/応答操作のプロキシを自動的に作成することによって、この労力を軽減します。 プロキシ ツールは、必須のインターフェイスとすべての必須メタデータを生成し、実際の実装を抽象化します。 この方法では、拡張プロジェクトにファイルを含めることができ、生成されたメタデータとインターフェイスを使用して Retail サーバー API とエンティティにアクセスできます。
 
@@ -40,19 +40,19 @@ Retail プロキシは、Retail Server に追加されたすべてのユーザ�
 
 クロス プラットフォーム シナリオをサポートするプロキシのタイプには 2 つあります。
 
-- **Typescript プロキシ** – POS は、Typescript プロキシを使用して Retail サーバー APIs および CRT エンティティにアクセスします。 POS が Retail サーバーを使用する場合は、Typescript プロキシーが必要です。 それ以外の場合、POS はオペレーションまたはワークフローのために Retail サーバーと通信することができません。
-- **C# プロキシ** - POS はオフラインで、E コマースのために C# プロキシを使用します。 (POS がオフラインの場合、Retail サーバーを使用せずに CRT と直接通信します。) POS がオフラインのときにカスタマイズを動作させ、E コマースクライアントが Retail サーバー API にアクセスするようにするには、C# プロキシを生成する必要があります。
+- **Typescript プロキシ** – POS は、Typescript プロキシを使用して Retail サーバー API および CRT エンティティにアクセスします。 POS が Retail サーバーを使用する場合は、Typescript プロキシが必要です。 それ以外の場合、POS はオペレーションまたはワークフローのために Retail サーバーと通信することができません。
+- **C# プロキシ** - POS はオフラインのときに C# プロキシを使用します。 (POS がオフラインの場合、Retail サーバーを使用せずに CRT と直接通信します)。POS は、Dynamics 電子商取引プラットフォームにもこのプロキシを使用します。 カスタマイゼーションを POS がオフラインのときに動作させ、電子商取引クライアントを Retail Server API にアクセスするようにするには、C＃ プロキシを生成する必要があります。
 
-> [!NOTE]
-> Typescript プロキシと C# プロキシは異なっており、この 2 つを作成する手順も異なります。
+Typescript プロキシを生成する手順と C# プロキシを生成する手順は異なります。 このトピックの後半では、各タイプのプロキシを生成する方法について説明します。
 
 ## <a name="generate-the-typescript-proxy"></a>Typescript プロキシを生成します
 
-以下の手順は、Microsoft Dynamics 365 for Retail (2017 年 7 月リリース) と Microsoft Dynamics 365 for Finance and Operation にのみ適用されます。
+> [!IMPORTANT]
+> 以下の手順は、Microsoft Dynamics 365 for Retail (2017 年 7 月リリース) と Microsoft Dynamics 365 for Finance and Operation にのみ適用されます。
 
-POS の Typescript プロキシを生成するには、Retail SDK\Reference フォルダーから CommerceProxyGenerator.exe ファイルを使用します。
+POS の Typescript プロキシを生成するには、Retail SDK\\Reference フォルダーから CommerceProxyGenerator.exe ファイルを使用します。
 
-1. プロキシを生成する前に、次のライブラリを **Retail SDK\Reference\...** から **Retail SDK\Reference** フォルダーにコピーします。
+1. プロキシを生成する前に、次のライブラリを **Retail SDK\\Reference\\..** から **Retail SDK\\Reference** フォルダーにコピーします。
 
     - Microsoft.OData.Core.dll@ 6.11.0.0
     - Microsoft.OData.Edm.dll@ 6.11.0.0
@@ -60,17 +60,17 @@ POS の Typescript プロキシを生成するには、Retail SDK\Reference フ�
     - System.Web.Http.dll@ 5.2.2.0
     - System.Web.OData.dll@ 5.5.1.0
 
-2. カスタマイズされた Retail サーバーと CRT ライブラリを **Retail SDK\Reference** フォルダーにコピーします。
-3. 管理者モードでコマンド プロンプトを開き、**...\Retail SDK\Reference** フォルダーに移動します。 次のコマンドを実行してプロキシを生成します。 プロキシ ファイルは同じフォルダーに生成されます。
+2. カスタマイズされた Retail サーバーと CRT ライブラリを **Retail SDK\\Reference** フォルダーにコピーします。
+3. 管理者モードでコマンド プロンプトを開き、**...\\Retail SDK\\Reference** フォルダーに移動します。 次のコマンドを実行してプロキシを生成します。 プロキシ ファイルは同じフォルダーに生成されます。
 
     ```
-    CommerceProxyGenerator.exe <Path>\\Microsoft.Dynamics.Retail.RetailServerLibrary.dll <FilePathNameForRetailServerExtensionDLL> /application:typescriptextensions
+    CommerceProxyGenerator.exe <Path>\Microsoft.Dynamics.Retail.RetailServerLibrary.dll <FilePathNameForRetailServerExtensionDLL> /application:typescriptextensions
     ```
 
     次に例を示します。
 
     ``` 
-    CommerceProxyGenerator.exe C:\\RetailSDK\\Reference\\Microsoft.Dynamics.Retail.RetailServerLibrary.dll C:\\RetailSDK\\Reference\\Microsoft.Dynamics.RetailServer.CrossLoyaltySample.dll /application:typescriptextensions
+    CommerceProxyGenerator.exe C:\RetailSDK\Reference\Microsoft.Dynamics.Retail.RetailServerLibrary.dll C:\RetailSDK\Reference\Microsoft.Dynamics.RetailServer.CrossLoyaltySample.dll /application:typescriptextensions
     ```
 
     実行するコマンドで、**Microsoft.Dynamics.RetailServer.CrossLoyaltySample.dll** をカスタム Retail サーバー拡張子ライブラリの名前に変えます。 POS プロジェクトに生成されたファイルを含めます。 このコマンドは、拡張ライブラリに基づいた 2 つのファイル、DataServiceEntities.g.ts と DataServiceRequests.g.tss を生成します。
@@ -78,24 +78,24 @@ POS の Typescript プロキシを生成するには、Retail SDK\Reference フ�
     > [!NOTE]
     > すべての Retail サーバー拡張機能のプロキシを生成する必要があります。
 
-## <a name="generate-the-c-proxy-71-and-72---these-steps-are-not-applicable-for-version-73-and-higher"></a>C# プロキシ (7.1 および 7.2) の生成 - これらの手順は 7.3 およびより大きいバージョンには適用できません
+## <a name="generate-the-c-proxy-71-and-72"></a>C# プロキシ (7.1 および 7.2) の生成
 
-1. **Customization.settings** ファイルを **...Retail SDK\BuildTools** から開きます。
+> [!IMPORTANT]
+> 7.3 以降のバージョンには、次の手順は適用されません。
+
+1. **Customization.settings** ファイルを **...Retail SDK\\BuildTools** から開きます。
 2. **RetailServerLibraryPathForProxyGeneration** ノードの下には、次に示すように、すべてのカスタム Retail サーバー拡張ライブラリを含めます。
 
     ```
     <RetailServerLibraryPathForProxyGeneration Include="$(SdkReferencesPath)\\Microsoft.Dynamics.RetailServer.CrossLoyaltySample.dll"/>;
     ```
 
-    この例では、**Microsoft.Dynamics.RetailServer.CrossLoyaltySample.dll** はカスタム ライブラリです。
+    この例では、カスタム ライブラリは **Microsoft.Dynamics.RetailServer.CrossLoyaltySample.dll** の 1 つだけあります。 ただし、カスタム Retail サーバー拡張ライブラリが含まれるようにします。
 
-    > [!NOTE]
-    > すべてのカスタム Retail サーバー拡張ライブラリを追加します。
-
-3. **RetailSDK\Proxies\RetailProxy\Proxies.RetailProxy.csproj** を開きます。
+3. **RetailSDK\\Proxies\\RetailProxy\\Proxies.RetailProxy.csproj** を開きます。
 4. カスタム CRT プロジェクト ライブラリを **Proxies.RetailProxy.csproj** への参照として含めます。
-5. ソリューションの **RetailSDK\Proxies\RetailProxy\Adapters\UsingStatements.Extensions.txt** を開きます。
-6. **UsingStatements.Extensions.txt** で、CRT エンティティの名前空間および要求/応答の名前空間の **using** ステートメントを追加します。 たとえば、CRT 拡張機能で **Contoso.Commerce.Runtime.DataModel** 名前空間を使用する場合、追加プロキシを生成するため **UsingStatements.Extensions.txt** にその名前空間を追加します。
+5. ソリューションの **RetailSDK\\Proxies\\RetailProxy\\Adapters\\UsingStatements.Extensions.txt** を開きます。
+6. **UsingStatements.Extensions.txt** で、CRT エンティティの名前空間および要求/応答の名前空間の **using** ステートメントを追加します。 たとえば、CRT 拡張機能で **Contoso.Commerce.Runtime.DataModel** 名前空間を使用する場合、ここに示すように、追加プロキシを生成するため **UsingStatements.Extensions.txt** にその名前空間を追加します。
 
     ```
     using Contoso.Commerce.Runtime.DataModel;
@@ -104,82 +104,96 @@ POS の Typescript プロキシを生成するには、Retail SDK\Reference フ�
 7. プロジェクトを構築します。
 8. **アダプタ** フォルダの新しいクラスを追加します。 アダプター フォルダーの他のマネージャー クラスをテンプレートとして使用すると、名前空間全体が含まれます。
 9. インターフェイス マネージャーからクラスを拡張し、必要なインターフェイス メソッドのみを実装します。
-
-    インターフェイス クラスとマネージャ クラスの生成方法については、Retail SDK の Store Hours サンプルを参照してください。 指示は、**RetailSDK\Code\Documents\SampleExtensionsInstructions\StoreHours\readme.txt** ファイルにあります。
-    
-**7.3 で C# プロキシ (これは POS と e コマースの両方に適用されます) を生成する方法**
-
-1.  RetailSDK\\SampleExtensions\\RetailProxy\\RetailProxy.Extensions に移動します。 StoreHoursSample
-
-2.  Proxies.RetailProxy.Extensions.StoreHoursSample プロジェクト ファイルを Visual Studio で開きます。
-
-3.  Visual Studio で、右クリックし、プロジェクトをアップロードします。
-
-4.  プロジェクトを右クリックし、[Proxies.RetailProxy.Extensions.StoreHoursSample.csproj ファイルの編集] を選択します。
-
-5.  最初のプロパティ グループ セクションにある次のノードを更新します。
-
-    <RootNamespace> - ユーザー設定の名前空間で更新します。
-
-    <AssemblyName>- プロキシのカスタム出力ライブラリ名で更新する
-
-    <RetailServerExtensionLibraryNoPrefixForRetailProxyCSharpExtensionGeneration>- Retail サーバー拡張子ライブラリ名で更新します。
-
-    **注記:** プロキシは、このライブラリ名に基づいて生成されます。
-
-6.  csproj ファイルを保存し、プロジェクトを再度読み込みます。
-
-7.  拡張パターンに従って、プロジェクトの名前を変更します。
-
-8.  プロジェクトが読み込まれたら、アダプタ フォルダから StoreDayHoursManager.cs ファイルを削除します。
-
-9.  プロジェクト参照としてすべての関連する CRT ライブラリを追加します。 (Retail サーバーの拡張機能で参照または使用される CRT ライブラリ)
-
-10. プロジェクトをリビルドします。
-
-    注記: プロキシ プロジェクトを作成する前に、すべての CRT および Retail サーバー拡張ライブラリを再構築して、RetailSDK\\References フォルダーにドロップしてください。
-
-11. アダプタ フォルダーに新しいクラス ファイルを追加し、拡張機能のパターンに従って名前をつけます。
-
-12. 前の手順で追加した CRT エンティティと新しいクラスで使用される名前空間が同じであることを確認します。 (参照用に営業時間のサンプル プロキシと営業時間 CRT サンプル プロジェクトを確認する)
-
-13. インターフェイス マネージャーからクラスを拡張およびインターフェイス メソッドを実装します。必要なインターフェイス メソッドのみがそのまま残ります。
-
-    注記: インターフェイス名は、ワード コントローラーなしのコントローラー名に類似したものです。
-
-    フル コード サンプルの RetailSDK\\SampleExtensions\\RetailProxy\\RetailProxy.Extensions.StoreHoursSample for full code sample にある Proxies.RetailProxy.Extensions.StoreHoursSample プロジェクトを確認してください。
   
-14. メソッド内で、実際の CRT 要求/応答を呼び出します。 プロキシ プロジェクトではロジックを回避してください。CRT の要求/応答のみを呼び出す必要があります。
+    インターフェイス クラスとマネージャ クラスの生成方法については、Retail SDK の Store Hours サンプルを参照してください。 指示は、**RetailSDK\\Code\\Documents\\SampleExtensionsInstructions\\StoreHours\\readme.txt** ファイルにあります。
 
-15. プロジェクトを構築します。
+## <a name="generate-the-c-proxy-73"></a>C# プロキシ (7.3) の生成
 
-16. 出力アセンブリをコピーして、RetailSDK\\References フォルダーに貼り付けます。
+> [!IMPORTANT]
+> 次の手順は、POS と電子商取引の両方に適用されます。
 
-17. RetailSDK\\Assets フォルダーに移動して RetailProxy.MPOSOffline.ext.config を開く
+Retail サーバー拡張機能ごとに、別個のプロキシを生成する必要があります。
 
-18. 合成セクションで、新しいプロキシ ライブラリ名を登録します。 (プロキシ プロジェクトの作成後に生成されるアセンブリです。
+1. **RetailSDK\\SampleExtensions\\RetailProxy\\RetailProxy.Extensions.StoreHoursSample** に移動します。
+2. Microsoft Visual Studio で、**Proxies.RetailProxy.Extensions.StoreHoursSample** プロジェクト ファイルを開きます。
+3. 右クリックし、プロジェクトのアンロードを選択します。
+4. プロジェクトを右クリックし、**Proxies.RetailProxy.Extensions.StoreHoursSample.csproj** を選択して編集します。
+5. 最初のプロパティ グループ セクションで、次のノードを更新します。
 
-    前: <add source="assembly" value="Contoso.Commerce.RetailProxy.StoreHoursSample" />
+    - **&lt;RootNamespace&gt;** – ユーザー設定の名前空間を指定します。
+    - **&lt;AssemblyName&gt;** – プロキシのカスタム出力ライブラリ名を指定します。
 
-    **注記:** 値フィールドには、プロキシ ライブラリの名前を追加します (Contoso.Commerce.RetailProxy.StoreHoursSample など)。
+6. Retail サーバーの拡張機能ライブラリ名を指定して、**CommerceProxyGeneratorExtendedAssemblyPaths** 要素を更新します。
 
-19. 手動テストでは、構成セクションでカスタム プロキシ ライブラリ名を持つ、C:\\Program Files (x86)\\Microsoft Dynamics 365\\70\\Retail Modern POS\\ClientBroker\\ext で、RetailProxy.MPOSOffline.ext.config を更新します。
+    次に例を示します。
 
-    前: <add source="assembly" value="Contoso.Commerce.RetailProxy.StoreHoursSample" />
+    ```
+    <CommerceProxyGeneratorExtendedAssemblyPaths Include="..\..\RetailServer\Extensions.StoreHoursSample\bin\$(Configuration)\net451\$(AssemblyNamePrefix).RetailServer.StoreHoursSample.dll" />
+    ```
 
-**注記:** 電子商取引の場合は、電子商取引プロジェクトから呼び出す前に、拡張機能のプロキシを初期化するためのもう 1 つの追加手順を実行する必要があります。
+    > [!NOTE]
+    > **.RetailServer.StoreHoursSample.dll** は、Retail サーバー拡張アセンブリの名前です。残りの値は、接頭語 (接頭語がある場合) と、プロキシ エンジンがこのアセンブリを見つけることができるアセンブリのパスです。 プロキシは、このアセンブリに基づいて生成されます。
 
-1. E コマース Startup.cs (または Web プロジェクトの初期化などの同等のもの) では、Retail プロキシの拡張機能の edm モデルで RetailServerContext を初期化する必要があり、そうせずにプロキシを呼び出そうとした場合、ランタイム エラーを受け取ります。 RetailServerContext を初期化するために、1 回のみこれを行う必要があります。
-             
-前:
-```C#
-  RetailServerContext.Initialize(newIEdmModelExtension[]
-                {
-                   // /* BEGIN SDKSAMPLE_STOREHOURS
- 
-                   new Contoso.Commerce.RetailProxy.StoreHoursSample.EdmModel(),
- 
-                    // END SDKSAMPLE_STOREHOURS */
-                });
-```
+7. ファイルを保存し、プロジェクトを再度読み込みます。
+8. 拡張パターンに従って、プロジェクトの名前を変更します。
+9. プロジェクトが読み込まれた後、**アダプタ** フォルダから **StoreDayHoursManager.cs** ファイルを削除します。
+10. すべての関連する CRT と Retail サーバー ライブラリをプロジェクトまたはアセンブリ参照としてプロキシ プロジェクトに追加します。
+11. プロジェクトをリビルドします。
+
+    アダプタ フォルダー内で新しい Interfaces.g.cs ファイルが生成されると表示されます。
+
+    > [!NOTE]
+    > プロキシ プロジェクトを作成する前に、すべての CRT および Retail サーバー拡張ライブラリを再構築して、**RetailSDK\\References** フォルダーにドロップしてください。
+
+12. プロキシ プロジェクト内に新しい **Interfaces.g.cs** ファイルを含めます。 ただし、このファイルを変更しないでください。
+13. **アダプタ** フォルダーで、新しいクラス ファイルを追加し、拡張機能のパターンに従って名前をつけます。
+14. インターフェイス マネージャー クラスからクラスを拡張し、必要なインターフェイス メソッドのみを実装します。
+
+    > [!NOTE]
+    > Interfaces.g.cs ファイルで、インターフェイス マネージャー クラスの名前を見つけることが できます。
+
+    次の例では、**IStoreDayHoursManager** はインターフェイスの名前です。
+
+    ```C#
+    public interface IStoreDayHoursManager : Microsoft.Dynamics.Commerce.RetailProxy.IEntityManager
+    {
+    }
+    ```
+
+    フル サンプル コードについては、**RetailSDK\\SampleExtensions\\RetailProxy\\RetailProxy.Extensions.StoreHoursSample** にある **Proxies.RetailProxy.Extensions.StoreHoursSample** プロジェクトをご覧ください。
+
+15. メソッド内で、実際の CRT 要求/応答を呼び出します。 プロキシ プロジェクトに任意のロジックを含めないようにしてください。 プロキシ プロジェクトは、CRT 要求/応答だけを呼び出す必要があります。
+16. プロジェクトを構築します。
+17. 出力アセンブリをコピーして、**RetailSDK\\References** フォルダーに貼り付けます。
+18. **RetailSDK\\Assets** フォルダーに移動して **RetailProxy.MPOSOffline.ext.config** を開きます。
+19. **合成** セクションで、新しいプロキシ ライブラリ (つまり、プロキシ プロジェクトをビルドした後に生成されたアセンブリ) の名前を登録します。
+
+    次に例を示します。
+
+    ```
+    <add source="assembly" value="Contoso.Commerce.RetailProxy.StoreHoursSample" />
+    ```
+
+    この例では、プロキシ ライブラリ名は **Contoso.Commerce.RetailProxy.StoreHoursSample** です。 プロキシ ライブラリの名前は、**値** フィールドで指定してください。
+
+20. 手動テストでは、**C:\\Program Files (x86)\\Microsoft Dynamics 365\\70\\Retail Modern POS\\ClientBroker\\ext** にある **RetailProxy.MPOSOffline.ext.config** ファイルを開きます。カスタム プロキシ ライブラリの名前で **合成** セクションを更新します。
+
+    次に例を示します。
+
+    ```
+    <add source="assembly" value="Contoso.Commerce.RetailProxy.StoreHoursSample" />
+    ```
+
+21. 電子商取引の場合、電子商取引プロジェクトから呼び出しする前に、拡張のプロキシを初期化する必要があります。 電子商取引の **Startup.cs** ファイル (または、Web プロジェクトの初期化などの同等のファイル) で、Retail プロキシ拡張の拡張データ モデル (EDM) を使用して **RetailServerContext** を初期化します。 それ以外の場合、プロキシのを呼び出そうとすると、ランタイム エラーが表示されます。 このステップは 1 回のみ完了する必要があります。
+
+    次に例を示します。
+
+    ```C#
+    RetailServerContext.Initialize(newIEdmModelExtension[]
+    {
+        // /* BEGIN SDKSAMPLE_STOREHOURS
+        new Contoso.Commerce.RetailProxy.StoreHoursSample.EdmModel(),
+        // END SDKSAMPLE_STOREHOURS */
+    });
+    ```
 

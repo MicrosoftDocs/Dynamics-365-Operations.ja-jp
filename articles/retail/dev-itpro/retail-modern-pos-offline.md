@@ -3,7 +3,7 @@ title: "オフライン モードの Retail Modern POS (MPOS)"
 description: "この記事では、Retail サーバーが利用できない場合に、オフライン モードで Retail Modern POS デバイスを使用する方法について説明します。"
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -18,10 +18,10 @@ ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: f0e5e7131bf5d6f337b2197f2aa56056870b8a95
+ms.sourcegitcommit: d20bc3519096f1035d26f89d42aa7e8f0fc368cd
+ms.openlocfilehash: 8e3b2fd2e6780570e3480c25df2e7bff42b4d4da
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 08/29/2018
 
 ---
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 08/09/2018
 
 [!include [banner](../includes/banner.md)]
 
-この記事では、Retail サーバーが利用できない場合に、オフライン モードで Retail Modern POS デバイスを使用する方法について説明します。
+このトピックでは、Retail サーバーが利用できない場合に、オフライン モードで Retail Modern POS デバイスを使用する方法について説明します。
 
 Retail サーバーが利用できない場合、Retail Modern POS はオフラインになります。 Retail サーバーとの接続が失われると、販売時点管理 (POS) はオフライン データベースに自動的に接続されます。 オフライン プロファイルでコンフィギュレーションされたタイムアウトの間隔内でデータの要求が成功しない場合、Retail Modern POS は自動的にオフライン データベースに切り替わり、販売トランザクションを続行します。 Retail Modern POS はオフライン プロファイルでコンフィギュレーションされた再接続試行間隔の後に Retail Server への再接続を試みます。 この再接続の試みは、トランザクションの開始時にのみ発生します。
 
@@ -46,7 +46,12 @@ Retail Modern POS の **接続ステータス** ページには、オフライ�
 Retail Modern POS にオンラインとオフライン モードを手動で切り替えるボタンを追加できます。 **POS 操作 917 – データベース接続ステータス**のボタンを作成します。 接続または切断するには、ボタンをトグルとして切り替えて使用します。
 
 ## <a name="operations-that-can-be-completed-when-the-channel-database-is-offline"></a>チャネル データベースがオフラインのときに実行できる操作
-チャネル データベースがオフラインときは、次の操作を完了することができます。 **注記:** Commerce Data Exchange: リアルタイム サービスが必要な機能があれば、操作がサポートされていないことを示すエラー メッセージが表示されます。 **ヒント:** オフライン データベースで使用できるデータにのみ、レポートおよびその他の操作が実行されます。
+チャネル データベースがオフラインときは、次の操作を完了することができます。 
+
+> [!NOTE]
+> Commerce Data Exchange: リアルタイム サービスが必要な機能があれば、操作がサポートされていないことを示すエラー メッセージが表示されます。 この例は、在庫検索操作です。 工程では品目の検索が許可されますが、HQ への接続がない場合、店舗の調達グループで定義された店舗の倉庫と関連する店舗の倉庫から入手可能な在庫データに必要なリアルタイム サービス コールは失敗します。   
+
+**ヒント:** オフライン データベースで使用できるデータにのみ、レポートおよびその他の操作が実行されます。
 
 | 操作 ID | 説明                         |
 |--------------|-------------------------------------|

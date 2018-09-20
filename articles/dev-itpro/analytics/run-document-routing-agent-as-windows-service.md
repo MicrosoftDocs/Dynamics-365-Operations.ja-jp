@@ -18,10 +18,10 @@ ms.author: tjvass
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 6286cb37019938d95a488b000b0d163bf5304354
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: e144c4e8b2e27ff17b1bb5972cae655cd17b5ffc
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -91,20 +91,20 @@ ms.lasthandoff: 04/20/2018
 ### <a name="verify-the-network-printer-connection"></a>ネットワーク プリンターの接続を確認します。
 - 有効なアカウントにネットワーク プリンターへの十分なアクセス権があることを確認します。
 - メモ帳または別のローカル アプリケーションを使用して、ユーザー アカウントがネットワーク デバイスに正常に印刷できることを確認します。
-    
+
 ### <a name="verify-security-roles"></a>セキュリティ ロールの確認
 - ドキュメント ルート指定クライアントのインストールに使用されるアプリケーション リンクにアクセスするには、ユーザーは**ドキュメント ルート指定クライアント**のセキュリティ ロールの一部である必要があります。
-    
+
 ### <a name="review-the-service-accounts-access-rights"></a>サービス アカウントのアクセス権を確認します。
 - ネットワーク デバイスにアクセスできるドメイン アカウントとして **DocumentRoutingService** サービスが実行されていることを確認します。
-    
-### <a name="refresh-the-azure-service-token"></a>Azure サービス トークンを更新  
+
+### <a name="refresh-the-azure-service-token"></a>Azure サービス トークンを更新
 - ドキュメント回覧エージェントが Windows サービスとして実行されている間は Azure 認証トークンを **90 日おきに更新する**必要があります。 サービス トークンを更新するには、クライアントを起動し、メニュー項目を使用してサインアウトし、再びサインインします。
-    
+
 ### <a name="disable-shared-printers-for-remote-access"></a>リモート アクセス用の共有プリンターを無効にします
-- Microsoft リモート デスクトップを使用してホスト マシンに接続するときは、**ローカル リソース** タブの**ローカル デバイスとリソース** セクションで、 **プリンター** オプションがオフになっていることを確認します。 
-    
+- Microsoft リモート デスクトップを使用してホスト マシンに接続するときは、**ローカル リソース** タブの**ローカル デバイスとリソース** セクションで、 **プリンター** オプションがオフになっていることを確認します。
+
 ### <a name="review-the-event-logs"></a>イベント ログを確認
 1. ホスト コンピューターで、イベント ビューアーを開始します。
-2. **アプリケーションとサービス ログ** > **Microsoft** > **Dynamics** > **AX-DocumentRouting** でログを確認します。
+2. **アプリケーションとサービス ログ** \> **Microsoft** \> **Dynamics** \> **AX-DocumentRouting** でログを確認します。
 

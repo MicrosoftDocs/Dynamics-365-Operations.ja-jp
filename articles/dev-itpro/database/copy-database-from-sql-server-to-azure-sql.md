@@ -18,10 +18,10 @@ ms.author: maertenm
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: fa1f2b3f83d8730719ede51edbde10dd2d0b0e9d
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: c990b13a4633a76da7100c843108139a5e264998
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -36,12 +36,12 @@ ms.lasthandoff: 08/09/2018
 ゴールデン データベースを実稼働環境に移行するためにサポートされている手順を次に示します。
 
 1. 顧客やパートナーは、SQL Server のデータベースをエクスポートします。
-2. 顧客またはパートナーは、データベースを Azure SQL データベース上で実行されるサンドボックス環境にインポートします。 
+2. 顧客またはパートナーは、データベースを Azure SQL データベース上で実行されるサンドボックス環境にインポートします。
 3. Microsoft Dynamics Lifecycle Services (LCS) では、顧客またはパートナーが**その他の要求**タイプのサービス要求を送信して、Microsoft Dynamics のサポート エンジニアリング (DSE) チームにサンドボックス データベースを実稼動環境に移動してもらうよう依頼します。
-4. DSE チームでは、データベースをサンドボックス環境から実稼働環境にコピーします。 
+4. DSE チームでは、データベースをサンドボックス環境から実稼働環境にコピーします。
 
 > [!NOTE]
-> Microsoft は、運用する前にのみデータベースを実稼働環境にコピーする要求を受け入れます。 
+> Microsoft は、運用する前にのみデータベースを実稼働環境にコピーする要求を受け入れます。
 
 データベースの移動中に、sqlpackage.exe コマンド ライン ツールを使用して、SQL Server からデータベースをエクスポートし、Azure SQL データベースにインポートします。 エクスポートされたデータ ファイルのファイル名拡張子は .bacpac なので、プロセスは多くの場合 *bacpac プロセス*と呼ばれます。
 
@@ -59,6 +59,7 @@ ms.lasthandoff: 08/09/2018
 
 - ソース環境 (ソース データベースが作成された環境) は、ターゲット環境が実行されているプラットフォームのバージョンよりも前または同じバージョンの Finance and Operations プラットフォームを実行する必要があります。
 - サンドボックス環境からデータベースをインポートするには、データベースをインポートする環境で同じバージョンの SQL Server Management Studio を実行している必要があります。 これにより、サンドボックス環境で Application Object Server (AOS) を実行するコンピューターに [SQL Server Management Studio の最新バージョン](https://msdn.microsoft.com/en-us/library/mt238290.aspx)をインストールする必要が生じる場合があります。 AOS コンピューターで、bacpac エクスポートを実行することができます。 この要件は 2 つの理由があります。
+
     - SQL Server のサンドボックス インスタンスに対するインターネット プロトコル (IP) アクセス制限のため、その環境内のコンピュータのみがインスタンスに接続できます。
     - エクスポートされた \*.bacpac ファイルは、Management Studio のバージョン固有の機能に依存する可能性があります。
 
@@ -184,21 +185,22 @@ SqlPackage.exe /a:import /sf:D:\Exportedbacpac\my.bacpac /tsn:<Azure SQL databas
 - **sf(ソース ファイル)** – インポートするファイルのパスと名前。
 - **tu(ターゲット ユーザー)** – ターゲットの Azure SQL データベース インスタンスの SQL ユーザー名。 標準の **sqladmin** ユーザーを使用することをお勧めします。 LCS プロジェクトからは、このユーザーのパスワードを取得できます。
 - **tp(ターゲット パスワード)** – ターゲットの Azure SQL データベース ユーザーのパスワード。
-- **DatabaseServiceObjective** - S1、P2、P4 などのデータベースのパフォーマンス レベルを指定します。 パフォーマンス要件を満たし、サービス契約を遵守するには、現在の Finance and Operations データベース (AXDB) と同じサービス目標レベルをこの環境で使用します。 現在のデータベースのサービス レベル目標を照会するには、次のクエリを実行します。
-  ```
-  SELECT  d.name,   
-     slo.*    
-  FROM sys.databases d   
-  JOIN sys.database_service_objectives slo    
-  ON d.database_id = slo.database_id;  
-  ```
+- **DatabaseServiceObjective** – S1、P2、P4 などのデータベースのパフォーマンス レベルを指定します。 パフォーマンス要件を満たし、サービス契約を遵守するには、現在の Finance and Operations データベース (AXDB) と同じサービス目標レベルをこの環境で使用します。 現在のデータベースのサービス レベル目標を照会するには、次のクエリを実行します。
+
+    ```
+    SELECT  d.name,   
+        slo.*    
+    FROM sys.databases d   
+    JOIN sys.database_service_objectives slo    
+    ON d.database_id = slo.database_id;  
+    ```
 
 次の警告メッセージを受け取ります。 これは無視してかまいません。
+
 > ターゲット プラットフォームとして SQL Server 2016 を指定するプロジェクトは、Microsoft Azure SQL データベース v12 で互換性の問題が発生する可能性があります。
 
-
 > [!WARNING] 
-> どの Finance and Operations 環境でも、長期間にわたってデータベースのコピーを保持することはできません。 Microsoft は、事前に通知することなく、7 日を超える古いデータベースのコピーを削除する権限を保有します。 
+> どの Finance and Operations 環境でも、長期間にわたってデータベースのコピーを保持することはできません。 Microsoft は、事前に通知することなく、7 日を超える古いデータベースのコピーを削除する権限を保有します。
 
 ## <a name="update-the-database"></a>データベースの更新
 

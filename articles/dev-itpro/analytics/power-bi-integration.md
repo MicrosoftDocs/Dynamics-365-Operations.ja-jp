@@ -19,10 +19,10 @@ ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: c30cb7ac34d01dddf1b7bab79076c53c0f5b2b37
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: f0f4b0e4e1604fe746ac58b2c5f8a2e9e4287043
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -77,7 +77,7 @@ PowerBI.com マーケットプレースには Power BI コンテンツ パック
 
 エンティティ格納を使用して作成されるレポートは、DirectQuery テクノロジを利用します。 この技術により、大量のデータに対するレポートを作成できます。 DirectQuery テクノロジを使用して作成されるレポートは、PowerBI.com サービスにデータをキャッシュしません。 代わりに、データは常に Finance and Operations に保存されます。
 
-エンティティ格納と Power BI 統合の概要については、[エンティティ格納と Power BI の統合の概要](power-bi-integration-entity-store.md) を参照してください。 
+エンティティ格納と Power BI 統合の概要については、[エンティティ格納と Power BI の統合の概要](power-bi-integration-entity-store.md) を参照してください。
 
 Microsoft Dynamics AX 2012 をアップグレードする場合は、エンティティ店舗を使用する集計測定にキューブをアップグレードすることができます。 エンティティ格納を使用して、Power BI レポートを作成することができます。 詳細については、[アップグレードした Dynamics AX 2012 R3 販売キューブをエンティティの店舗へ移行する](../migration-upgrade/migrate-upgraded-cube-entity-store.md) を参照してください。
 
@@ -87,7 +87,7 @@ Power BI desktop オーサリング ツールの使用に加えて、Excel に�
 Excel を使用できるシナリオはいくつかあります。
 
 - Dynamics 365 のページから Excel にデータをエクスポートします。 Excel 内に組み込まれた Power View アドインを使用して、データを視覚化することができます。 Excel ブックは、スタンドアロンのビジュアル化として使用できます。 さらに、PowerBI.com サービスにレポートをインポートすることができます。
--   別のワークシートのデータ (または OData エンドポイントからインポートされたデータ) と外部データとを結合するには、Excel の Power Query 拡張機能を使用します。 Power View を使用すると、結果データを視覚化できます。
+- 別のワークシートのデータ (または OData エンドポイントからインポートされたデータ) と外部データとを結合するには、Excel の Power Query 拡張機能を使用します。 Power View を使用すると、結果データを視覚化できます。
 - 大量のデータを Excel に取り込むには、Excel の PowerPivot 拡張機能を使用します。
 
 アドホックな「1 回限り」のレポートには、Excel のエクスポート機能を使用することを検討してください。 レポートをユーザー グループと共有する場合、エンティティの店舗を使用してそれらを作成することを検討する必要があります。

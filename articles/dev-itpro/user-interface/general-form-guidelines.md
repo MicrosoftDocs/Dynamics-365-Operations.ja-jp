@@ -3,7 +3,7 @@ title: "フォームの全般的なガイドライン"
 description: "このトピックには、フォームのパターンに関係なく、すべてのフォームに適用されるガイドラインが含まれています。 パターン固有のガイドラインに加えて、このチェックリストを使用する必要があります。"
 author: jasongre
 manager: AnnBe
-ms.date: 11/09/2017
+ms.date: 08/14/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: e3844d170a2af858958643a5a85633019d533229
+ms.sourcegitcommit: bb1ee5809c30b4f4836fef02a0491b6885e61219
+ms.openlocfilehash: f25c61a7cadcd99725c0adb0f096b65206a8ccff
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/14/2018
 
 ---
 
@@ -143,7 +143,7 @@ ms.lasthandoff: 04/20/2018
 -   クイック タブにグリッドが含まれている場合は、[ツールバーおよびリスト](toolbar-list-subpattern.md) サブパターン ガイドラインに従う必要があります。
 
 ## <a name="radio-button-guidelines"></a>ラジオ ボタン ガイドライン
--   すべての [ラジオ ボタンに対する Microsoft 標準ガイドライン](http://msdn.microsoft.com/en-us/library/windows/desktop/aa511488.aspx) に従います。 具体的には、次のガイドラインを遵守します。
+-   すべての [ラジオ ボタンに対する Microsoft 標準ガイドライン](https://docs.microsoft.com/en-us/windows/desktop/uxguide/ctrl-radio-buttons) に従います。 具体的には、次のガイドラインを遵守します。
     -   ラジオ ボタン コントロールは、相互に排他的な選択肢からオプションを 1 つ選択するために使用されます。
     -   2 つから 7 つの選択肢があります。 7 つ以上の選択肢がある場合は、コンボ ボックスを使用します。
     -   オプションのいずれも有効な選択肢でない場合、この状況を反映するには、**なし**または**適用されない**などの別のオプションがあります。
@@ -165,7 +165,7 @@ ms.lasthandoff: 04/20/2018
 
 [![checkboxtoggle](./media/checkboxtoggle.jpg)](./media/checkboxtoggle.jpg)  
 
--   すべての [チェック ボックスに対する Microsoft の標準ガイドライン](http://msdn.microsoft.com/en-us/library/windows/desktop/aa511452.aspx) に従います。 具体的には、次のガイドラインを遵守します。
+-   すべての [チェック ボックスに対する Microsoft の標準ガイドライン](https://docs.microsoft.com/en-us/windows/desktop/uxguide/ctrl-check-boxes ) に従います。 具体的には、次のガイドラインを遵守します。
     -   既定では、フォームのチェック ボックスの代わりにトグル ボタンを使用します。 ラベルは、Microsoft のチェックボックス ラベルのガイドラインに従う必要があります。
         -   **例外:**
             -   グループで多数の関連オプションを設定する必要がある場合は、チェック ボックスを使用します。

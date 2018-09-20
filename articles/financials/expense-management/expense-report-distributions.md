@@ -1,7 +1,7 @@
 ---
 title: "経費レポートでの配分"
 description: "経費精算書に経費を入力すると、組織内の複数のプロジェクト、法人、勘定に経費を配分できます。"
-author: saraschi2
+author: ShylaThompson
 manager: AnnBe
 ms.date: 09/19/2017
 ms.topic: article
@@ -12,16 +12,14 @@ audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: saraschi
-ms.search.validFrom:
-- month/year of release that feature was introduced in
-- in format yyyy-mm-dd
+ms.author: shylaw
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 0f3f50061fc5b9b4cfc00000492840061fc3b386
+ms.sourcegitcommit: 384c38f3e154495c882434d1c85cef63396cd897
+ms.openlocfilehash: 00d051a8f644a6a0bedb0acc3eaac9a3dd1109e7
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/15/2018
 
 ---
 
@@ -36,10 +34,10 @@ ms.lasthandoff: 04/13/2018
 ナンシーはフランクフルトで 2 つの異なるプロジェクトの仕事をしたため、彼女は経費レポートを入力するとき、各プロジェクトに応じて経費を配分します。 ナンシーが自分の経費をどのように配分するかを次の表に示します。
 
 
-| <strong>経費タイプ</strong> | <strong>経費合計金額</strong> | <strong>プロジェクト A に配分する量</strong> | <strong>プロジェクト B に配分する量</strong> |
-|-------------------------------|---------------------------------------|--------------------------------------------------|--------------------------------------------------|
-|          トレーニング手数料           |                DKK 578                |                     DKK 405                      |                     DKK 173                      |
-|             ホテル             |                EUR 725                |                     EUR 557                      |                     EUR 168                      |
-|             食費             |                EUR 346                |                     EUR 284                      |                      EUR 62                      |
+| 経費タイプ | 経費合計金額|プロジェクト A に配分する量| プロジェクト B に配分する量 |
+|--------------|---------------------|-------------------------------|---------------------------------|
+|トレーニング手数料   |DKK 578              |DKK 405                        |DKK 173                          |
+|ホテル         |EUR 725              |EUR 557                        |EUR 168                          |
+|食費         |EUR 346              |EUR 284                        |EUR 62                           |
 
 

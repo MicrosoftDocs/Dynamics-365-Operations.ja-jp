@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: a69bbfb80e9e4edc7b7c358e396ab93f6a113169
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: b77ee03e19b6266d8878857c1ccf5dfa0467bce8
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -33,9 +33,9 @@ ms.lasthandoff: 08/09/2018
 
 レポートは、単に構造化されたデータ セットの表示として定義することができます。 これには、表形式のレイアウトで提示されたトランザクション データと集約情報の高度なグラフィカル ビューが含まれます。 この広範な定義を考慮するために、Finance and Operations では、複雑なビジネス要件を満たすレポートを作成するためのツールをいくつか提供しています。 これらのツールの 1 つは、SQL Server Reporting Services です。 SSRS レポートには、以下の利点があります。
 
--   電子メールサポート、バッチによるスケジュール実行、および印刷アーカイブ機能などのバック オフィス ドキュメント管理機能。
--   Finance and Operations ページやその他のレポートへドリルダウン ナビゲーション可能なパラメーター化されたビュー。
--   地方自治体が規制するビジネス慣行に準拠した正確なドキュメントの作成に使用
+- 電子メールサポート、バッチによるスケジュール実行、および印刷アーカイブ機能などのバック オフィス ドキュメント管理機能。
+- Finance and Operations ページやその他のレポートへドリルダウン ナビゲーション可能なパラメーター化されたビュー。
+- 地方自治体が規制するビジネス慣行に準拠した正確なドキュメントの作成に使用します。
 
 詳細については、[次世代の申告ソリューションの作成](create-nextgen-reporting-solutions.md) を参照してください。
 

@@ -3,7 +3,7 @@ title: "Microsoft Dynamics 365 for Field Service との統合"
 description: "このトピックでは、Microsoft Dynamics 365 for Field Service との統合の概要を示します。"
 author: ChristianRytt
 manager: AnnBe
-ms.date: 04/25/2018
+ms.date: 08/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: a57e23691a6b4d48c6b8dd6d1f61fc9730365b39
-ms.openlocfilehash: 0c1268d2fddcf7b28ecfc3197f21e9d30a5a5855
+ms.sourcegitcommit: d20bc3519096f1035d26f89d42aa7e8f0fc368cd
+ms.openlocfilehash: cb21667021a32381fd8038e1c9f0182b05622e3d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/31/2018
+ms.lasthandoff: 08/29/2018
 
 ---
 
@@ -44,7 +44,7 @@ Field Service および Finance and Operations 統合の第 1 のフェーズは
 - [Finance and Operations の販売注文への Field Service のワーク オーダー](field-service-work-order.md)
 - [Finance and Operations の自由書式の請求書への Field Service の契約の請求書](field-service-invoice.md)
 
-Field Service および Finance and Operations 間のワーク オーダーを同期する方法の例を表示するには、短い YouTube ビデオ [Dynamics 365 for Field Service および Finance and Operations 間のワーク オーダーを同期する](https://www.youtube.com/watch?v=hAB4TDVMjxU)をご覧ください。
+Field Service および Finance and Operations 間のワーク オーダーを同期する方法の例を表示するには、短い YouTube ビデオ [ワーク オーダーを Microsoft Dynamics 365 の統合に同期する方法](https://www.youtube.com/watch?v=46ylO7raZAo) をご覧ください。
 
 ## <a name="system-requirements-for-finance-and-operations"></a>Finance and Operations のシステム要件
 Field Service 統合は、次のバージョンがサポートされています。

@@ -3,7 +3,7 @@ title: "モバイル プラットフォームのホーム ページ"
 description: "モバイル プラットフォームを使用して、ワークスペースのモバイル アプリを作成できます。"
 author: RobinARH
 manager: AnnBe
-ms.date: 05/23/2018
+ms.date: 08/30/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: robinr
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 85389fc13ff18bf63c5715d947ff9cab0032116d
+ms.sourcegitcommit: 96a9075294c1f2a9cfde03be1aaaa26af90de4c2
+ms.openlocfilehash: bf7d549c7fc55a2319bf777c35e48f5eacc9744e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/04/2018
 
 ---
 
@@ -151,11 +151,11 @@ ms.lasthandoff: 08/09/2018
 ## <a name="change-needed-for-adfs-to-support-mobile-client-in-on-premises-environments"></a>ADFS がオンプレミス環境でモバイル クライアントをサポートするために必要な変更 
 ADFS がドメインで使用されており、環境がオンプレミスである場合、Windows 統合認証 (WIA) を使用する代わりに **ADFS は標準のフォームベースの認証画面を提供するように構成する必要があります**。 iOS と Android の Microsoft Dynamics Unified Operations アプリには、標準のフォーム ベースの認証画面が必要です。 ADFS は、ブラウザー クライアント (ユース ケース) のみ WIA を提供するように構成する必要があります。 詳細については、[WIA をサポートしていないデバイスのイントラネット フォーム ベースの認証を構成する](https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/operations/configure-intranet-forms-based-authentication-for-devices-that-do-not-support-wia)を参照してください。
 
-## <a name="additional-resources"></a>その他のリソース
-### <a name="whats-new-and-in-development"></a>新機能および開発中の機能
-リリースされた新機能と開発中の新機能については、[Microsoft Dynamics 365 ロードマップ](https://roadmap.dynamics.com/)を参照してください。
-
-### <a name="blogs"></a>ブログ
-Retail およびその他のソリューションに関する意見、ニュース、その他の情報については、[Microsoft Dynamics 365 blog (Microsoft Dynamics 365 ブログ)](https://community.dynamics.com/b/msftdynamicsblog) を参照してください。
-
+## <a name="troubleshooting"></a>トラブルシューティング
+### <a name="i-cant-figure-out-how-to-build-or-change-something-in-my-mobile-client-content"></a>モバイル クライアント コンテンツをビルドまたは変更する方法がわかりません
+多くのリソースを活用して、モバイル クライアントのコンテンツをビルドまたは変更する方法を理解できます。
+- Dynamics 365 for Finance and Operations ヘルプ システムに用意されているドキュメントを確認します。
+- 例については、[フリート管理のサンプル](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples)を確認してください。
+- たとえば、経費管理ワークスペース、および他の標準ワークスペースを発行して確認します。 USSI 企業のデモ データは、経費管理ワークスペースを使用する場合に便利です。 経費管理ワークスペースを構成するフォームおよび X++ コードは、接頭語 "ExpenseMobile" を検索してアプリケーション エクスプローラーで見つけることができます。
+- 答えを検索し、必要に応じて質問することにより、[Finance and Operations (AX) の Dynamics コミュニティ フォーラム](https://community.dynamics.com/ax/f/33)を活用してください。
 

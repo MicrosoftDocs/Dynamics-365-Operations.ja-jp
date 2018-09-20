@@ -3,7 +3,7 @@ title: "財務分析コードとして使用可能なバッキング テーブ�
 description: "このトピックでは、サポート テーブルを財務分析コードとして使用できるようにするために必要な手順について説明します。"
 author: aprilolson
 manager: AnnBe
-ms.date: 04/09/2017
+ms.date: 08/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: 58d304b3ac89fee9a5318d17a3451fd49863c466
+ms.sourcegitcommit: 96a9075294c1f2a9cfde03be1aaaa26af90de4c2
+ms.openlocfilehash: 562c421714727695afd471933c876e302a7cf610
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/04/2018
 
 ---
 
@@ -147,4 +147,32 @@ public void renamePrimaryKey()
 1. SQL でデータを検証するステップ２で始まるこのトピックの手順に従い、**値の使用**ルックアップで表示される分析コードを検証するステップ 5 まで続けます。
 
 **OMOperatingUnitType** は **OMOperatingUnit** テーブルによってサポートされているため、削除、更新および **renamePrimaryKey** メソッドを処理するための汎用コードがすでに存在します。 したがって、これらのメソッドを更新する必要はありません。
+
+## <a name="step-6-setting-a-dimension-to-be-self-referenced"></a>手順 6: 自己参照される分析コードを設定する 
+
+新しいエンティティのデータ エンティティも作成し、そのエンティティが既定の分析コードへの参照を持っている場合、persistEntity() メソッドにこのコードを追加します。
+
+```
+if (_entityCtx.getDatabaseOperation() == DataEntityDatabaseOperation::Insert)
+        {
+            this.<Your entity ‘private’ RecId Dimension field> = DimensionDefaultResolver::checkAndCreateSelfReference(tablenum(<Your backing table>), this.<Your entity Key field>, this.<Your entity ‘public’ DisplayValue field>);
+        }
+
+
+                                                                                                
+e.g.
+
+
+  public void persistEntity(DataEntityRuntimeContext _entityCtx)
+    {
+        if (_entityCtx.getDatabaseOperation() == DataEntityDatabaseOperation::Insert)
+        {
+            this.DefaultDimension = DimensionDefaultResolver::checkAndCreateSelfReference(tablenum(BankAccountTable), this.BankAccountId, this.DefaultDimensionDisplayValue);
+        }
+
+        super(_entityCtx);
+    }
+```
+> [!NOTE]
+> これにより、分析コードが自身を既定の既定値として使用するようにする場合、情報が正しい順序で作成されます。
 

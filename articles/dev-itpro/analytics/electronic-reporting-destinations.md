@@ -19,10 +19,10 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 3aa27b3ac263c6c952de7e4b508f48f21ba489ad
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 301dccaf154c3c12bcc4d611a147cdef03b8f851
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -37,21 +37,21 @@ ms.lasthandoff: 08/09/2018
 ## <a name="availability-and-general-prerequisites"></a>可用性と一般的な前提条件
 電子申告の宛先の機能は、Microsoft Dynamics AX 7.0 (2016 年 2 月) では利用できません。 したがって、このトピックに記載されているすべての機能を使用するには Microsoft Dynamics 365 for Operations バージョン 1611 (2016 年 11 月) をインストールする必要があります。 または、次の前提条件のいずれかをインストールできます。 ただし、これらの代替条件は、ER 出力先のエクスペリエンスがさらに制限されることに注意してください。
 
--   Microsoft Dynamics AX application version 7.0.1 (2016 年 5 月)
--   電子申告宛先管理[アプリケーションの修正プログラム](https://fix.lcs.dynamics.com/issue/results/?q=3160213)
+- Microsoft Dynamics AX application version 7.0.1 (2016 年 5 月)
+- 電子申告宛先管理[アプリケーションの修正プログラム](https://fix.lcs.dynamics.com/issue/results/?q=3160213)
 
 インポートされた電子申告構成、および **電子申告コンフィギュレーション** ページで利用可能な形式に対してのみ送信先を設定することができます。
 
 ## <a name="overview"></a>概要
 電子申告の送信先の管理機能は、 **組織管理** &gt; **電子申告**で利用できます。 ここでは、構成の既定の動作を上書きできます。 **新規**をクリックし、 **参照** フィールドで送信先の設定を作成する構成を選択するまで、インポートされた構成はここに表示されません。
 
-[![参照フィールドで構成を選択する](./media/ger-destinations-2-1611-1024x574.jpg)](./media/ger-destinations-2-1611.jpg) 
+[![参照フィールドで構成を選択する](./media/ger-destinations-2-1611-1024x574.jpg)](./media/ger-destinations-2-1611.jpg)
 
-参照を作成した後は、各フォルダーまたはファイルにファイルの保存先を作成できます。 
+参照を作成した後は、各フォルダーまたはファイルにファイルの保存先を作成できます。
 
 [![ファイル移動先を作成](./media/ger-destinations-1611-1024x586.jpg)](./media/ger-destinations-1611.jpg)
 
-> [!NOTE] 
+> [!NOTE]
 > **ファイル名**フィールドで選択したフォルダーまたはファイルなどの同じ形式の各出力コンポーネントに対して、1 つのファイルの出力先を作成できます。 **送信先の設定** ダイアログ ボックスで、ファイル送信先に対して個別の送信先を有効および無効にできます。 **設定** ボタンは選択したファイルの送信先のすべての送信先を制御するために使用します。 **送信先の設定** ダイアログ ボックスで、 **有効** オプションを設定して各送信先を個別に制御できます。
 
 [![移動先設定ダイアログ ボックス](./media/ger-destinations-settings-1611-1024x589.jpg)](./media/ger-destinations-settings-1611.jpg)
@@ -73,7 +73,7 @@ ms.lasthandoff: 08/09/2018
 
 **管理電子メールの印刷** タイプを選択する場合、**To** フィールドに固定の電子メール アドレスを入力できます。 固定されていない電子メール アドレスを使用するには、ファイルの送信先の電子メール ソース タイプを選択する必要があります。 **顧客**、**仕入先**、**見込顧客**、**連絡先**、**競合他社**、**作業者**、**申請者**、**見込み仕入先**、**不許可仕入先**の値がサポートされます。 電子メール ソース タイプを選択したら、**電子メール ソース** フィールドの横のボタンを使用して、**フォーミュラ デザイナー** フォームを開きます。 このフォームを使用して、電子メールの送信先に選択した関係者のアカウントを表すフォーミュラを関連付けられます。
 
-[![印刷管理電子メールタイプの構成](./media/ger-destinations-email-2-1611-1024x588.jpg)](./media/ger-destinations-email-2-1611.jpg) 
+[![印刷管理電子メールタイプの構成](./media/ger-destinations-email-2-1611-1024x588.jpg)](./media/ger-destinations-email-2-1611.jpg)
 
 フォーミュラは電子申告の構成に固有であることに注意してください。 **フォーミュラ** フィールドで、顧客または仕入先の関係者タイプにドキュメント固有の参照を入力します。 入力せずに、顧客または仕入先を表すデータ ソース ノードを検索でき、フォーミュラを更新するには **データ ソースの追加** ボタンをクリックします。 たとえば、ISO 20022 の口座振替のコンフィギュレーションを使用する場合、仕入先を表すノードは、**'$PaymentsForCoveringLetter'.Creditor.Identification.SourceID** です。 それ以外の場合は、**DE-001** など任意の文字列値を入力してフォーミュラを保存します。
 
@@ -87,23 +87,27 @@ ms.lasthandoff: 08/09/2018
 
 使用するコンフィギュレーションが電子メール アドレスを表すデータ ソースにノードを持つ場合にこの電子メール タイプを使用します。 フォーミュラ デザイナーでデータ ソースと機能を使用して、正しく書式設定された電子メール アドレスを取得できます。
 
-[![電子メールの宛先用に電子メールのデータ ソースを割り当てる](./media/ger-destinations-email-4-1611-1024x587.jpg)](./media/ger-destinations-email-4-1611.jpg) 
+[![電子メールの宛先用に電子メールのデータ ソースを割り当てる](./media/ger-destinations-email-4-1611-1024x587.jpg)](./media/ger-destinations-email-4-1611.jpg)
 
-**注:** Simple Mail Transfer Protocol (SMTP) サーバーを構成し、利用可能にする必要があります。 SMTP サーバーは、Finance and Operations の **システム管理** &gt; **セットアップ** &gt; **電子メール** &gt; **電子メール パラメーター**で指定できます。
+> [!NOTE]
+> Simple Mail Transfer Protocol (SMTP) サーバーを構成し、利用可能にする必要があります。 SMTP サーバーは、Finance and Operations の **システム管理** &gt; **セットアップ** &gt; **電子メール** &gt; **電子メール パラメーター**で指定できます。
 
 ### <a name="archive-destination"></a>アーカイブ先
 
 Microsoft Azure ストレージまたは Microsoft SharePoint フォルダーに出力を送信するには、このオプションを使用できます。 **有効** を **はい** に設定し、選択したドキュメント タイプで定義されている変換先に出力を送信します。 グループが**ファイル**に設定されているドキュメントタイプのみ選択できます。 ドキュメント タイプを **組織管理** &gt; **ドキュメント管理** &gt; **ドキュメント タイプ** で定義します。 電子申告の送信先への構成は、ドキュメント管理システムの構成と同じです。
 
-[![ドキュメント タイプ ページ](./media/ger_documenttypefile-1024x542.jpg)](./media/ger_documenttypefile.jpg) 
+[![ドキュメント タイプ ページ](./media/ger_documenttypefile-1024x542.jpg)](./media/ger_documenttypefile.jpg)
 
-場所は、ファイルの保存場所を決定します。 **アーカイブ** 先を有効にすると、コンフィギュレーション実行の結果をジョブ アーカイブに保存できます。 結果は、**組織管理** &gt; **電子申告** &gt; **電子申告アーカイブ済ジョブ** で表示できます。 **注記:** ジョブ アーカイブのドキュメント タイプは、Finance and Operations の **組織管理** &gt; **ワークスペース** &gt; **電子申告** &gt; **電子申告のパラメーター** で選択できます。
+場所は、ファイルの保存場所を決定します。 **アーカイブ** 先を有効にすると、コンフィギュレーション実行の結果をジョブ アーカイブに保存できます。 結果は、**組織管理** &gt; **電子申告** &gt; **電子申告アーカイブ済ジョブ** で表示できます。
+
+> [!NOTE]
+> ジョブ アーカイブのドキュメント タイプは、Finance and Operations の**組織管理** &gt; **ワークスペース** &gt; **電子申告** &gt; **電子申告のパラメーター**で選択できます。
 
 #### <a name="sharepoint"></a>SharePoint
 
-指定された SharePoint フォルダーにファイルを保存することができます。 既定の SharePoint サーバーを **SharePoint** タブの **組織管理** &gt; **ドキュメント管理** &gt; **ドキュメント管理パラメーター** で定義します。SharePoint フォルダーを構成すると、そのドキュメント タイプ用に電子申告出力を保存するフォルダーとして選択できます。 
+指定された SharePoint フォルダーにファイルを保存することができます。 既定の SharePoint サーバーを **SharePoint** タブの **組織管理** &gt; **ドキュメント管理** &gt; **ドキュメント管理パラメーター** で定義します。SharePoint フォルダーを構成すると、そのドキュメント タイプ用に電子申告出力を保存するフォルダーとして選択できます。
 
-[![SharePoint フォルダーを選択する](./media/ger_sharepointfolderselection-1024x543.jpg)](./media/ger_sharepointfolderselection.jpg) 
+[![SharePoint フォルダーを選択する](./media/ger_sharepointfolderselection-1024x543.jpg)](./media/ger_sharepointfolderselection.jpg)
 
 #### <a name="azure-storage"></a>Azure ストレージ
 
@@ -119,7 +123,10 @@ Microsoft Azure ストレージまたは Microsoft SharePoint フォルダーに
 
 ### <a name="power-bi-destination"></a>Power BI 出力先
 
-**有効** を **はい** に設定し、ER コンフィギュレーションを使用して Finance and Operations のインスタンスから Microsoft Power BI サービスへのデータ転送を調整します。 転送されたファイルは、その目的にコンフィギュレーションされている Microsoft SharePoint Server インスタンスに保存されます。 詳細については、「[Finance and Operations からデータを Power BI に提供する電子申告コンフィギュレーションを使用する](general-electronic-reporting-report-configuration-get-data-powerbi.md)」を参照してください。 **ヒント:** 既定の動作を上書きする (つまり、構成のダイアログ ボックス) には、送信先の参照および主な出力コンポーネントのファイル保存先を作成し、すべての送信先を無効にします。
+**有効** を **はい** に設定し、ER コンフィギュレーションを使用して Finance and Operations のインスタンスから Microsoft Power BI サービスへのデータ転送を調整します。 転送されたファイルは、その目的にコンフィギュレーションされている Microsoft SharePoint Server インスタンスに保存されます。 詳細については、「[Finance and Operations からデータを Power BI に提供する電子申告コンフィギュレーションを使用する](general-electronic-reporting-report-configuration-get-data-powerbi.md)」を参照してください。
+
+> [!TIP]
+> 既定の動作を上書きする (つまり、構成のダイアログ ボックス) には、送信先の参照および主な出力コンポーネントのファイル保存先を作成し、すべての送信先を無効にします。
 
 ## <a name="security-considerations"></a>セキュリティ上の注意事項
 電子申告の送信先への権限と職務の 2 種類が使用されます。 1 つのタイプは、法人に対して構成されている全体の送信先を維持する機能を制御します (つまり、**電子申告の送信先** ページへのアクセスを制御します)。 その他のタイプは、実行時に、電子申告の開発者または電子申告機能コンサルタントで構成されている送信先の設定を上書きするアプリケーション ユーザーの機能を制御します。
@@ -158,7 +165,4 @@ Microsoft Azure ストレージまたは Microsoft SharePoint フォルダーに
 ## <a name="additional-resources"></a>その他のリソース
 
 [電子申告の概要](general-electronic-reporting.md)
-
-
-
 

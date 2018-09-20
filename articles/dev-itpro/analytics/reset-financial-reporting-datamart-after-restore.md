@@ -18,10 +18,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: 97662cc4c2a5d10e58112d36992b66da7c7f9e8d
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 49aa58e90ab8dd03a20889d05c74ba4c589856e8
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -173,11 +173,10 @@ cd F:\MRApplicationService\MRInstallDirectory
 Import-Module .\Server\MRDeploy\MRDeploy.psd1
 Reset-DatamartIntegration -Reason OTHER -ReasonDetail "<reason for resetting>" -SkipMRTableReset
 ```
+
 > [!NOTE]
-> SkipMRTableReset を使用している場合、ツリー ユニット セキュリティを維持します。 
->   - SkipMRTableReset に一致するパラメーターが見つからないエラーが発生する場合は、パラメーターを削除して、もう一度行うことができます (以降のバージョンは、このスイッチを含めるための既定の動作更新が完了)。
-
-
+> - SkipMRTableReset を使用している場合、ツリー ユニット セキュリティを維持します。
+> - SkipMRTableReset に一致するパラメーターが見つからないエラーが発生する場合は、パラメーターを削除して、もう一度行うことができます (以降のバージョンは、このスイッチを含めるための既定の動作更新が完了)。
 
 ここでは **Reset-DatamartIntegration** コマンドのパラメータについて説明します:
 

@@ -19,10 +19,10 @@ ms.author: milindav
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: f85e9af8aafc0ebd20a93d6a712dbd7b0bf31639
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 3e132c1c0d5e0e4cb725058cc06bab4b606b4a28
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -115,7 +115,7 @@ Finance and Operations と PowerBI.com の両方はクラウドベースのサ�
 
     ![Power BI の承認](./media/Authorize.JPG)
 
-    > [!Note]
+    > [!NOTE]
     > この手順に問題がある場合、**トラブルシューティングにおける一般的なエラー**セクションを参照し、**ユーザーが代わって会社データにアクセスするアプリケーションに同意できる**オプションに関する情報に留意します。
 
 4. Azure AD の同意ページは、お客様の同意を求めます。 Finance and Operations がユーザーに代わって PowerBI.com にアクセスするには、ユーザーの同意が必要です。 **受け入れる** を選択します。
@@ -139,7 +139,7 @@ Finance and Operations と PowerBI.com の両方はクラウドベースのサ�
 | Power BI サービスは利用できません。                        | この問題は頻繁には発生しませんが、Power BI サービスに到達できないことがあります。 再登録する必要はありません。 後でタイルをワークスペースに固定してみてください。 |
 | アプリケーションにアクセスすることはできません。                           | 登録プロセス中に、**手順 3 アクセスする API** の下のすべてのチェック ボックスが選択されなかった可能性があります。 Power BI を起動し、登録プロセスを再実行します。 |
 | Power BI タイル ページは空です (コンテンツは表示されません)。     | PowerBI.com アカウントに、ダッシュ ボードまたはタイルがない可能性があります。 サンプル ダッシュ ボードなどのダッシュボードを追加して、もう一度をタイルをピン留めしてみてください。 |
-| Power BI を許可する際のエラー                             | Azure 管理者ダッシュボード内の、**ユーザーおよびグループ > ユーザー設定** の下で、**ユーザーはアプリが会社のデータにアクセスすることに同意できる** オプションが **はい** に設定されていることを確認します。 |
+| Power BI を許可する際のエラー                             | Azure 管理者ダッシュボード内の、**ユーザーおよびグループ \> ユーザー設定** の下で、**ユーザーはアプリが会社のデータにアクセスすることに同意できる** オプションが **はい** に設定されていることを確認します。 |
 
 ## <a name="technical-details-about-oauth-20-authorization-code-grant-flow"></a>OAuth 2.0 承認コード付与フローに関する技術詳細
 

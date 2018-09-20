@@ -18,10 +18,10 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: e431db8f645a5d587a50757a4061019f7cfbabd9
+ms.sourcegitcommit: 96a9075294c1f2a9cfde03be1aaaa26af90de4c2
+ms.openlocfilehash: 024b9d371a5c372525a081f4b5ef3fd71f261e6d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 09/04/2018
 
 ---
 
@@ -110,7 +110,7 @@ https://<base URL>/api/connector/enqueue/<activity ID>?entity=<entity name>
 POST https://usncax1aos.cloud.onebox.dynamics.com/en/api/connector/enqueue/%7B6D31E09F-0249-459F-94F0-AAD9C2C47B64%7D?entity=Customer%20Groups
 ```
 
-アクティビティ ID を取得するには、**スケジュールされたデータ ジョブの管理** ページの **ID** ] フィールドで、グローバルで一意の識別子 (GUID) をコピーします。
+アクティビティ ID を取得するには、**スケジュールされたデータ ジョブの管理** ページの **ID** フィールドで、グローバルで一意の識別子 (GUID) をコピーします。
 
 ![スケジュール済みデータ ジョブ ページの管理での GUID](./media/image015.jpg)
 
@@ -171,6 +171,9 @@ BODY
 | PreProcessingError   | インポート/エクスポート操作はポスト前処理ステージで失敗しました                       |
 | ProcessedWithErrors  | インポート/エクスポート操作は完了しましたが、エラーが発生しました                                    |
 | PostProcessingFailed | インポート/エクスポート操作はポスト処理中に失敗しました                            |
+
+> [!NOTE]
+> BLOB ストレージ内のファイルは、ストレージに 7 日間残ります。その後、自動的に削除されます。
 
 ## <a name="tips-and-tricks"></a>ヒントや秘訣
 ### <a name="viewing-the-batch-job-status-for-recurring-integrations-from-the-data-management-workspace"></a>データ管理ワークスペースからの定期的な統合バッチ ジョブのステータスの表示

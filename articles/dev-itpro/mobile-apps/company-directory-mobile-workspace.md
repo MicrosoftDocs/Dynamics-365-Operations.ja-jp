@@ -1,6 +1,6 @@
 ---
 title: "会社のディレクトリ モバイル ワークスペース"
-description: "このトピックでは、ユーザーが閲覧して組織内の他の従業員と連絡が取れるようにする、会社のディレクトリ モバイル ワークスペースに関する情報を提供します。"
+description: "このトピックでは、ユーザーが閲覧し、組織内の他の従業員と連絡が取れるようにする、会社のディレクトリ モバイル ワークスペースに関する情報を提供します。"
 author: jcart1106
 manager: AnnBe
 ms.date: 06/16/2017
@@ -16,10 +16,10 @@ ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 0b27c5c0ed2cd380819c5208c57fa2a3de1d5aaa
+ms.sourcegitcommit: d20bc3519096f1035d26f89d42aa7e8f0fc368cd
+ms.openlocfilehash: 527d40452bcf52875e3f7b04d328110147417072
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/29/2018
 
 ---
 
@@ -85,10 +85,10 @@ Dynamics 365 for Unified Operations モバイル アプリをダウンロード�
 
 ## <a name="view-the-company-directory-by-using-the-mobile-workspace"></a>モバイル ワークスペースを使用して、会社のディレクトリを表示します。
 1.  モバイル アプリで、**会社のディレクトリ** ワークスペースを選択します。 従業員の一覧が表示されます。
-3.  従業員を選択します。 [従業員のプロファイル] ページが表示されます。 このページの情報には、従業員の名、姓、肩書き、および部署が含まれます。
+3.  従業員を選択します。 **従業員のプロファイル**ページが表示されます。 このページの情報には、従業員の名、姓、肩書き、および部署が含まれます。
 
 ## <a name="search-the-company-directory-by-using-the-mobile-workspace"></a>モバイル ワークスペースを使用して、会社のディレクトリを検索します。
 1.  モバイル アプリで、**会社のディレクトリ** ワークスペースを選択します。
-2.  [検索] フィールドに、従業員の名、姓、肩書き、または部署を入力して検索を開始します。
-3.  従業員を選択します。 [従業員のプロファイル] ページが表示されます。 このページの情報には、従業員の名、姓、肩書き、および部署が含まれます。
+2.  **検索**フィールドに、従業員の名、姓、肩書き、または部署を入力して検索を開始します。
+3.  従業員を選択します。 **従業員のプロファイル**ページが表示されます。 このページの情報には、従業員の名、姓、肩書き、および部署が含まれます。
 

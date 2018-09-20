@@ -19,10 +19,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: e1ffd9cb90b2ffac8f89885aac2f614e2ae3cb71
+ms.sourcegitcommit: ce9c24a0a89dd4e6a0f3f2c7789b4f553d88d412
+ms.openlocfilehash: 3f18a5d7b7f7639b864f579b758005c7a30803a2
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -74,7 +74,7 @@ docs.microsoft.com サイト ([docs.microsoft.com/dynamics365/unified-operations
 Finance and Operations、Retail、Talent のすべては docs サイトの 単一の目次を共有し、顧客がトピックのコンテキストを確認できるようになっています。 また、目次上のフィルタコントロールを使用して、探しているトピックを検索することもできます。
 
 ### <a name="follow-a-topic"></a>次のトピック
-トピックをフォローするには、コメント ボックスの下の +Follow ボタンをクリックします。 次のトピックにログインする必要があります。 詳細については、[コメントをお送りください](#leave-us-a-comment) を参照してください。  
+トピックをフォローするには、コメント ボックスの下の +Follow ボタンをクリックします。 次のトピックにログインする必要があります。 詳細については、[フィードバックをお送りください](#leave-us-feedback)を参照してください。  
 
 ### <a name="use-an-rss-feed"></a>RSS フィードを使用します
 Unified Operations のコンテンツへのすべての更新の RSS フィードを購読するには、Internet Explorer や RSS フィード マネージャなどの RSS フィードをサポートするブラウザから次のリンクを使用します。 

@@ -20,10 +20,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 88bbc54721f5da94dd811ef155e8d3bcf8c2b53c
-ms.openlocfilehash: b06abae184d07cd3b914caf74bdb16a7803919af
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: caf1c13d48d1f8af5c88927ccb23118e99cb38e0
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -35,7 +35,7 @@ ms.lasthandoff: 05/09/2018
 
 **原価管理** Microsoft Power BI コンテンツは、在庫経理担当者または在庫や進行中の作業 (WIP) を担当、または関心を持つ組織の担当者、または標準的な原価差異の分析を担当、または関心を持つ組織の担当者を対象としています。
 
-> [!Note]
+> [!NOTE]
 > このトピックで説明する**原価管理** Power BIコンテンツは Dynamics 365 for Finance and Operations 8.0 に適用されます。
 > 
 > AppSource サイトで利用可能な**原価管理** Power BI コンテンツ パックの使用は推奨されていません。 非推奨に関しての詳細については [AppSource で利用可能な Power BI コンテンツ パック](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource) の記事を参照してください。
@@ -171,7 +171,7 @@ The Power BI コンテンツは **CostObjectStatementCacheMonthly** 集計測定
 |                                         | 好ましくない製造差異の上位 10 リソース  |
 |                                         | 有利な製造差異の上位 10 リソース    |
 
-### <a name="understanding-the-data-model-and-entities"></a>データ モデルおよびエンティティの理解
+## <a name="understanding-the-data-model-and-entities"></a>データ モデルおよびエンティティの理解
 
 Microsoft Dynamics 365 for Finance and Operations からのデータは、**原価管理** Power BI コンテンツのレポート ページを入力するために使用されます。 このデータは、分析用に最適化された Microsoft SQL Server データベースであるエンティティ格納でステージ完了である集計の測定として表されます。 詳細については、[エンティティ ストアとの Power BI の統合](power-bi-integration-entity-store.md) を参照してください。
 
@@ -188,26 +188,25 @@ Microsoft Dynamics 365 for Finance and Operations からのデータは、**原�
 
 | 基準                            | 計算 |
 |------------------------------------|-------------|
-| 期首残高                  | 期首残高 = [期末残高]-[差分変更] |
-| 期首残高数量             | 期首残高数量 = [期末残高数量]-[差分変更数量] |
-| 期末残高                     | 期末残高 = (CALCULATE(SUM([Amount]), FILTER(ALL(FiscalCalendar) ,FiscalCalendar[MONTHSTARTDATE] \<= MAX(FiscalCalendar[MONTHSTARTDATE])))) |
-| 期末残高数量                | 期末残高数量 = CALCULATE(SUM([QTY]), FILTER(ALL(FiscalCalendar),FiscalCalendar[MONTHSTARTDATE] \<= MAX(FiscalCalendar[MONTHSTARTDATE]))) |
-| 差分変更                         | 差分変更 = SUM([AMOUNT]) |
-| 差分変更数量                    | 差分変更数量 = SUM([QTY]) |
-| 金額別の在庫回転率 | 金額別の在庫回転率 = if(OR([在庫平均残高] \<= 0, [販売在庫または消費の払出] \>= 0), 0, ABS([販売在庫または消費の払出])/[在庫平均残高]) |
-| 在庫平均残高          | I在庫平均残高 = (([期末残高] + [期首残高]) / 2) |
-| 手持在庫日数             | 手持在庫日数 = 365 / CostObjectStatementEntries[金額別の在庫回転率] |
-| 在庫の正確性                 | 金額ごとの在庫の正確性 = IF([期末残高] \<= 0, IF(OR([在庫棚卸金額] \<\> 0, [期末残高] \< 0), 0, 1), MAX(0, ([期末残高] - ABS([在庫棚卸金額]))/[期末残高])) |
+| 期首残高                  | 期首残高 = \[期末残高\]-\[差分変更\] |
+| 期首残高数量             | 期首残高数量 = \[期末残高数量\]-\[差分変更数量\] |
+| 期末残高                     | 期末残高 = (CALCULATE(SUM(\[Amount\]), FILTER(ALL(FiscalCalendar) ,FiscalCalendar\[MONTHSTARTDATE\] \<= MAX(FiscalCalendar\[MONTHSTARTDATE\])))) |
+| 期末残高数量                | 期末残高数量 = CALCULATE(SUM(\[QTY\]), FILTER(ALL(FiscalCalendar),FiscalCalendar\[MONTHSTARTDATE\] \<= MAX(FiscalCalendar\[MONTHSTARTDATE\]))) |
+| 差分変更                         | 差分変更 = SUM(\[AMOUNT\]) |
+| 差分変更数量                    | 差分変更数量 = SUM(\[QTY\]) |
+| 金額別の在庫回転率 | 金額別の在庫回転率 = if(OR(\[在庫平均残高\] \<= 0, \[販売在庫または消費の払出\] \>= 0), 0, ABS(\[販売在庫または消費の払出\])/\[在庫平均残高\]) |
+| 在庫平均残高          | 在庫平均残高 = ((\[期末残高\] + \[期首残高\]) / 2) |
+| 手持在庫日数             | 手持在庫日数 = 365 / CostObjectStatementEntries\[金額別の在庫回転率\] |
+| 在庫の正確性                 | 金額ごとの在庫の正確性 = IF(\[期末残高\] \<= 0, IF(OR(\[在庫棚卸金額\] \<\> 0, \[期末残高\] \< 0), 0, 1), MAX(0, (\[期末残高\] - ABS(\[在庫棚卸金額\]))/\[期末残高\])) |
 
 以下のキー分析コードは、より高い粒度を達成し深い分析洞察を取得できるように、集計の測定をスライスするフィルターとして使用されます。
 
 
-|                         エンティティ                          |             属性の例              |
+| エンティティ                                                  | 属性の例                          |
 |---------------------------------------------------------|-------------------------------------------------|
-|                        製品                         | 製品番号、製品名、単位、品目グループ |
-| カテゴリ階層 (原価管理のロールに割り当て) |       カテゴリ階層、カテゴリ レベル        |
-|                     法人                      |               法人名                |
-|                    会計カレンダー                     |  会計カレンダー、年、四半期、期間、月  |
-|                          サイト                           |        ID、名前、住所、都道府県、国        |
-
+| 製品                                                | 製品番号、製品名、単位、品目グループ |
+| カテゴリ階層 (原価管理のロールに割り当て) | カテゴリ階層、カテゴリ レベル              |
+| 法人                                          | 法人名                              |
+| 会計カレンダー                                        | 会計カレンダー、年、四半期、期間、月   |
+| サイト                                                    | ID、名前、住所、都道府県、国               |
 

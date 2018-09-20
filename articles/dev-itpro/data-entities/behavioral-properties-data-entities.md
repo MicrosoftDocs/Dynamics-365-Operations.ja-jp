@@ -18,10 +18,10 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 5f1df494ee70a9cf4e53e114c5a6b1dc30e24eb2
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: da3dc2cdc6f76709b93b6da714c30eb456f72a29
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -41,17 +41,9 @@ ms.lasthandoff: 08/09/2018
 ## <a name="entity-level"></a>エンティティ レベル
 データ エンティティのデザイナーで、ルート ノードの名前をクリックすると、**プロパティ** ウィンドウに**読み取り専用**プロパティがあります。 次のテーブルは、このプロパティの **Yes** と **No** 値の間の動作上の相違点を示しています。
 
-<table style="width:100%;">
-<colgroup>
-<col width="16%" />
-<col width="16%" />
-<col width="16%" />
-<col width="16%" />
-<col width="16%" />
-<col width="16%" />
-</colgroup>
+<table>
 <thead>
-<tr class="header">
+<tr>
 <th>グループ化</th>
 <th>プロパティ名</th>
 <th>表示名</th>
@@ -61,7 +53,7 @@ ms.lasthandoff: 08/09/2018
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>動作</td>
 <td>IsReadOnly</td>
 <td>読み取り専用です。</td>
@@ -78,19 +70,11 @@ ms.lasthandoff: 08/09/2018
 主にエクスポートに使用されるエンティティに対して、**IsReadOnly** を **はい** に設定します。
 
 ## <a name="data-source-level"></a>データ ソース レベル
-データ エンティティに 3 つのデータ ソースがある場合は、その中から 2 つではなく、1 つのデータ ソースのデータを変更するために、エンティティを使用するためのプロセスを許可する場合があります。 読み取り専用データ ソースは、参照目的で使用できます。 エンティティ デザイナーを使用すると、この非常に制度の高い制御を達成することができます。 エンティティの **メタデータ**&gt;**データ ソース** ノードで、エンティティ ノードを選択すると、その 1 つのデータソースの**IsReadOnly** プロパティの値を設定できます。 次のテーブルでは、データ ソース レベルの **IsReadOnly** 設定とエンティティ レベルの相互作用について説明します。
+データ エンティティに 3 つのデータ ソースがある場合は、その中から 2 つではなく、1 つのデータ ソースのデータを変更するために、エンティティを使用するためのプロセスを許可する場合があります。 読み取り専用データ ソースは、参照目的で使用できます。 エンティティ デザイナーを使用すると、この非常に制度の高い制御を達成することができます。 エンティティの **メタデータ**&gt;**データ ソース** ノードで、エンティティ ノードを選択すると、その 1 つのデータソースの **IsReadOnly** プロパティの値を設定できます。 次のテーブルでは、データ ソース レベルの **IsReadOnly** 設定とエンティティ レベルの相互作用について説明します。
 
-<table style="width:100%;">
-<colgroup>
-<col width="16%" />
-<col width="16%" />
-<col width="16%" />
-<col width="16%" />
-<col width="16%" />
-<col width="16%" />
-</colgroup>
+<table>
 <thead>
-<tr class="header">
+<tr>
 <th>グループ化</th>
 <th>プロパティ名</th>
 <th>表示名</th>
@@ -100,7 +84,7 @@ ms.lasthandoff: 08/09/2018
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>動作</td>
 <td>IsReadOnly</td>
 <td>読み取り専用です。</td>
@@ -115,22 +99,14 @@ ms.lasthandoff: 08/09/2018
 </table>
 
 ## <a name="field-level"></a>フィールド レベル
-フィールド レベルにおいて、**AllowEdit** と **AllowEditOnCreate** プロパティは **IsReadOnly** プロパティの代わりに利用可能です。 2 つの**許可**プロパティには、3 番目の利用可能な値として**自動**が含まれています。 **自動** 値は、基になっているテーブルのフィールドにある値を継承します。 
+フィールド レベルにおいて、**AllowEdit** と **AllowEditOnCreate** プロパティは **IsReadOnly** プロパティの代わりに利用可能です。 2 つの**許可**プロパティには、3 番目の利用可能な値として**自動**が含まれています。 **自動** 値は、基になっているテーブルのフィールドにある値を継承します。
 
 > [!NOTE]
 > **自動**の値は、計算フィールドや仮想フィールドなどのマップされていないフィールドでは使用できません。
 
-<table style="width:100%;">
-<colgroup>
-<col width="16%" />
-<col width="16%" />
-<col width="16%" />
-<col width="16%" />
-<col width="16%" />
-<col width="16%" />
-</colgroup>
+<table>
 <thead>
-<tr class="header">
+<tr>
 <th>グループ化</th>
 <th>プロパティ名</th>
 <th>表示名</th>
@@ -140,20 +116,23 @@ ms.lasthandoff: 08/09/2018
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>動作</td>
 <td>AllowEditOnCreate</td>
 <td>作成時の編集を許可</td>
 <td>自動、いいえ、はい</td>
 <td>自動</td>
 <td><ul>
-<li><strong>自動:</strong> 基になるテーブル フィールドから、プロパティを継承します。 <strong>注記:</strong> <strong>自動</strong>の値は、計算フィールドや仮想フィールドなどのマップされていないフィールドでは使用できません。</li>
+<li><strong>自動:</strong> 基になるテーブル フィールドから、プロパティを継承します。
+<blockquote>[!NOTE] <strong>自動</strong>の値は、計算フィールドや仮想フィールドなどのマップされていないフィールドでは使用できません。</blockquote>
+</li>
 <li><strong>いいえ:</strong> ユーザーは、このフィールドのデータを新しいレコードで変更することはできません。</li>
 <li><strong>はい:</strong> ユーザーは、このフィールドのデータを新しいレコードに対して変更することができます。</li>
 </ul>
-この動作は、すべてのコンシューマー (X++、OData など) に適用されます。 <br><strong>重要:</strong> <strong>いいえ</strong>および<strong>はい</strong>の値は、基になるテーブル内のフィールドの設定を上書き<em>しません</em>。</td>
+この動作は、すべてのコンシューマー (X++、OData など) に適用されます。
+<blockquote>[!IMPORTANT] <strong>いいえ</strong>および<strong>はい</strong>の値は、基になるテーブル内のフィールドの設定を上書き<em>しません</em>。</blockquote></td>
 </tr>
-<tr class="even">
+<tr>
 <td>動作</td>
 <td>AllowEdit</td>
 <td>編集を許可</td>
@@ -161,20 +140,15 @@ ms.lasthandoff: 08/09/2018
 <td>自動</td>
 <td>動作は、<strong>AllowEditOnCreate</strong> の動作と同じですが、作成されている新しいレコードではなく、<em>既存の</em>レコードへの更新に適用されます。 この動作は、すべてのコンシューマー (X++、OData など) に適用されます。</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>動作</td>
 <td>必須</td>
 <td>必須</td>
 <td>自動、いいえ、はい</td>
 <td>自動</td>
-<td><strong>自動:</strong> 基になるテーブル フィールドから、プロパティを継承します。 この動作は、すべてのコンシューマー (X++、OData など) に適用されます。 <br>
-<strong>重要:</strong> <strong>いいえ</strong>および<strong>はい</strong>の値は、基になるテーブル内のフィールドの設定を上書き<em>しません</em>。</td>
+<td><strong>自動:</strong> 基になるテーブル フィールドから、プロパティを継承します。 この動作は、すべてのコンシューマー (X++、OData など) に適用されます。
+<blockquote>[!IMPORTANT] <strong>いいえ</strong>および<strong>はい</strong>の値は、基になるテーブル内のフィールドの設定を上書き<em>しません</em>。</blockquote></td>
 </tr>
 </tbody>
 </table>
-
-
-
-
-
 

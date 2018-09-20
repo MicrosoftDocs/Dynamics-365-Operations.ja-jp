@@ -18,10 +18,10 @@ ms.author: tabell
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 ms.translationtype: HT
-ms.sourcegitcommit: 59bbb20464d5849fd0e187aefcb7dcf87abe1755
-ms.openlocfilehash: 90bab71b4c1b9b89c0f025f4cc35b82621386161
+ms.sourcegitcommit: d20bc3519096f1035d26f89d42aa7e8f0fc368cd
+ms.openlocfilehash: 24b75ba2dc8cdefdc383382b891a7e2253331c42
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 08/29/2018
 
 ---
 
@@ -194,7 +194,7 @@ DSE はレベル 2 (Standard Acceptance Test) 以上の 1 つのサンドボッ�
 
 #### <a name="validate-your-sandbox-environment"></a>サンドボックス環境の検証
 
-DSE チームがアップグレード プロセスが完了すると、サービス要求ステータスは **検証の準備完了** に変わります。 システムはこの段階で利用可能です。 更新された環境は、古い環境と同じ URL、同じ環境名、同じマシン名を持ちます。 サービス要求のステータスを検証してから、**検証に成功しました** または **検証に失敗しました** に変更します。 サービス要求を**検証に失敗しました**に設定すると、アップグレードのロールバックが開始されます。 ロールバック要求時には最長で 5 日の作業日があります。 その後、Microsoft は、古い環境を破棄します。
+DSE チームがアップグレード プロセスが完了すると、サービス要求ステータスは **検証の準備完了** に変わります。 システムはこの段階で利用可能です。 更新された環境は、古い環境と同じ URL、同じ環境名、同じマシン名を持ちます。 サービス要求のステータスを検証してから、**検証に成功しました** または **検証に失敗しました** に変更します。 サービス要求を**検証に失敗しました**に設定した場合、サポート リクエストを作成してアップグレードのロールバックを要求できます。 詳しくは、[Finance and Operations サポート エクスペリエンスの管理](../lifecycle-services/cloud-powered-support-lcs.md)をご覧ください。 サポート チームがロールバックを実行する標準的な時間は、2 ～ 4 時間です。 ロールバック要求時には最長で 5 日の作業日があります。  その後、Microsoft は、古い環境を破棄します。
 
 #### <a name="upgrade-additional-tier-2-or-higher-sandbox-environments"></a>追加のレベル 2 またはそれ以上のサンドボックス環境をアップグレードします
 
@@ -207,7 +207,7 @@ DSE チームがアップグレード プロセスが完了すると、サービ
 ### <a name="upgrade-your-production-environment"></a>実稼動環境のアップグレード
 
 1. LCS を使用して、サンドボックス環境の場合と同様に、実稼働環境を更新するためのアップグレード要求を送信します。
-2. サービス要求のステータスを**検証に成功しました**に設定し、検証、テストとサインオフを完了します。 問題が検出され、古い環境をロールバックする場合は、ステータスを **検証に失敗しました**に設定し、ロールバックします。 ロールバック要求時には最長で 5 日の作業日があります。 その後、Microsoft は、古い環境を破棄します。
+2. サービス要求のステータスを**検証に成功しました**に設定し、検証、テストとサインオフを完了します。 問題が検出され、古い環境をロールバックする場合は、ステータスを **検証に失敗しました**に設定し、稼働停止を送信します。 詳細については、「[稼働停止のレポート](https://docs.microsoft.com/en-us/business-applications-release-notes/April18/dynamics365-finance-operations/report-production-outage)」を参照してください。 DSE チームがロールバックを実行する標準的な時間は、2 ～ 4 時間です。 ロールバック要求時には最長で 5 日の作業日があります。 その後、Microsoft は、古い環境を破棄します。
 
 ## <a name="scenario-4-upgrade-to-the-most-current-platform-only"></a>シナリオ 4: 最新のプラットフォームのみにアップグレードする
 

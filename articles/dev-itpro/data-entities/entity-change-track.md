@@ -3,7 +3,7 @@ title: "エンティティへの変更追跡の有効化"
 description: "変更追跡を使用して、Microsoft Dynamics 365 for Finance and Operations のデータを差分エクスポートできます。"
 author: Milindav2
 manager: AnnBe
-ms.date: 09/29/2017
+ms.date: 08/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,17 +18,17 @@ ms.author: milindav
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 72fbe371ccf1bbfd50aed19065c333b54d216b75
+ms.sourcegitcommit: 96a9075294c1f2a9cfde03be1aaaa26af90de4c2
+ms.openlocfilehash: 052d3da8ff93f069c8f43d247f004777596b8e1c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/04/2018
 
 ---
-# <a name="enable-change-tracking-for-entities"></a>エンティティへの変更追跡の有効化
+# <a name="enable-change-tracking-for-entities"></a>エンティティの変更追跡の有効化
 
 [!include [banner](../includes/banner.md)]
 
-変更追跡は、Microsoft Dynamics 365 for Finance and Operations のデータを、データ管理を使用して差分エクスポートする機能です。 増分エクスポートでは、変更されたレコードのみがエクスポートされます。 差分エクスポートを有効にするには、エンティティの変更追跡を有効にする必要があります。 エンティティで追跡を有効にしない場合は、毎回完全なエクスポートしか有効にできません。
+変更追跡は、Microsoft Dynamics 365 for Finance and Operations のデータを、データ管理を使用して差分エクスポートできるようにします。 増分エクスポートでは、変更されたレコードのみがエクスポートされます。 差分エクスポートを有効にするには、エンティティの変更追跡を有効にする必要があります。 エンティティで追跡を有効にしない場合は、毎回完全なエクスポートしか有効にできません。 自分のデータベースの持ち込み (BYOD) ユース ケースでは、データベースでサポートされている場合は変更履歴は削除も追跡できます。
 
 ## <a name="enable-change-tracking"></a>変更追跡の有効化
 データ ストア (BYOD) に 1 つまたは複数のエンティティを発行するとき、変更追跡を有効にすることができます。

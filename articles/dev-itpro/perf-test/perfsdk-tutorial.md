@@ -3,7 +3,7 @@ title: "パフォーマンス SDK および Visual Studio Online を介したマ
 description: "このトピックでは、Performance SDK について説明し、Visual Studio Online を使用してマルチユーザー テストを行う方法を示します。"
 author: jujoh
 manager: AnnBe
-ms.date: 07/09/2018
+ms.date: 08/29/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: jujoh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f2e3a40f58b57785079e1940b2d24a3598a3ad1b
-ms.openlocfilehash: a67ba9129c8c6aed252da83d0018358868da97b7
+ms.sourcegitcommit: 8590b0d235b8078c59cc29f5c31bd593a414d55e
+ms.openlocfilehash: 3e49e56858693829b2d155c4d44111346d79ef04
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 08/29/2018
 
 ---
 
@@ -169,13 +169,19 @@ DispatchedClientHelper helper = new DispatchedClientHelper();
 Client = helper.GetClient();
 ```
 
-タスクのインポーターによって生成されたテスト スクリプトには次の明細行と似ている明細行が含まれている場合があります。
+タスクのインポーターによって生成されたテスト スクリプトには、**TestSetup** メソッドの次の明細行と似ている明細行が含まれている場合があります。
 
 ```
-UserContextRole _context = new UserContextRole(UserManagement.AdminUser);
+UserContext _context = new UserContext(UserManagement.AdminUser);
 ```
 
-ロード テストとして実行される任意のテストからこの明細行を削除します。 このコードはシングル ユーザー テストにのみ必要であり、ロード テストのパフォーマンスに悪影響があります。
+さらに、**TestCleanup** メソッドから次の行を削除する必要もあります。
+
+```
+_userContext.Dispose();
+```
+
+ロード テストとして実行される任意のテストからこれらの明細行を削除します。 このコードはシングル ユーザー テストにのみ必要であり、ロード テストのパフォーマンスに悪影響があります。
 
 タスク記録が行われたときに入力した値がランダム化されていることを確認します。 テスト データを生成するために、データ拡張ツールを最初に使用することが必要な可能性があります。
 

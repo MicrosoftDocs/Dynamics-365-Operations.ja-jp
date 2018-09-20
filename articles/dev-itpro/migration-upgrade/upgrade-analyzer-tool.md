@@ -18,10 +18,10 @@ ms.author: tabell
 ms.search.validFrom: 2017-05-31
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: fd3a58c887f68e15dbdd81edc0299866aa82c7c6
+ms.sourcegitcommit: 96a9075294c1f2a9cfde03be1aaaa26af90de4c2
+ms.openlocfilehash: 1df1e7cead3c802079bf4faba66b91fc30e3e947
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/04/2018
 
 ---
 
@@ -37,7 +37,7 @@ ms.lasthandoff: 08/09/2018
 
 LCS の Microsoft Power BI レポートでは、システム診断サービスの結果を表示できます。 レポートには、AX 2012 環境で完了する必要のあるタスクのリストが表示されます。
 
-アップグレード分析レポートにアクセスするには、https://diag.lcs.dynamics.com/UpgradeAnalysisReport/Report/<ProjectID> に移動します (<ProjectID> を現在のプロジェクト ID で置き換えます。これは現在の LCS プロジェクトの URL にある整数です)。
+アップグレード分析レポートにアクセスするには、https://diag.lcs.dynamics.com/UpgradeAnalysisReport/Report/"ProjectID" に移動します ("ProjectID" を現在のプロジェクト ID で置き換えます。これは現在の LCS プロジェクトの URL にある整数です)。
 
 次の図は、アップグレード アナライザーを使用する手順の概要を示しています。
 
