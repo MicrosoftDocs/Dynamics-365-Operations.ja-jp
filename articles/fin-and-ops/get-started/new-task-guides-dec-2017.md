@@ -25,6 +25,8 @@ ms.lasthandoff: 08/09/2018
 
 # <a name="new-or-updated-task-guides-december-2017"></a>新規または更新されたタスク ガイド (2017 年 12 月)
 
+[!include [banner](../includes/banner.md)]
+
 このトピックでは、Microsoft Dynamics 365 for Operations の Microsoft (2016 年 12 月 -- すべての言語) APQC 統合ライブラリにリリースされた新規または更新されたタスク ガイドを示します。
 
 

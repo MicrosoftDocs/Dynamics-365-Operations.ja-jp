@@ -18,10 +18,10 @@ ms.author: sarvanis
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 3e29c8d68784bd1760bf2c94c7a906797ad4fa3c
+ms.sourcegitcommit: d20bc3519096f1035d26f89d42aa7e8f0fc368cd
+ms.openlocfilehash: 6464e670d8f0cdaa3d34d01b8734f9c3600e1cd1
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 08/29/2018
 
 ---
 
@@ -493,7 +493,7 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
 
 > [!IMPORTANT]
 > - セキュリティで保護されたダイアレクト ネゴシエーションでは、SMB 2.0 または 3.0 から SMB 1.0 へのダウングレードを検出または防止できません。 したがって、SMB 1.0 サーバーを無効にすることを強くお勧めします。 SMB 1.0 サーバーを無効にすることで、SMB 暗号化のすべての機能を利用できます。
-> - 環境内の残りの部分でデータが保護されていることを保証するために、BitLocker ドライブ暗号化をすべてのマシンで有効にする必要があります。 BitLocker を有効にする方法については、[BitLocker: Windows Server 2012 以降で配置する方法](/windows/device-security/bitlocker/bitlocker-how-to-deploy-on-windows-server) を参照してください。
+> - 環境内の残りの部分でデータが保護されていることを保証するために、BitLocker ドライブ暗号化をすべてのマシンで有効にする必要があります。 BitLocker を有効にする方法については、[BitLocker: Windows Server 2012 以降で配置する方法](https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-how-to-deploy-on-windows-server) を参照してください。
 
 1. ファイル共有マシンで、次のコマンドを実行します。
 

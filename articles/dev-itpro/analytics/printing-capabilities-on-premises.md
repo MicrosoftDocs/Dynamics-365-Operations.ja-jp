@@ -17,10 +17,10 @@ ms.author: tjvass
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 10e40e625b041f11cbd064afb92d20952dfa1662
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 99b2caa8d0aeee8d09a29c50cbe3ad335367adce
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 08/09/2018
 Microsoft Dynamics AX 2012 SQL Reporting Services フレームワーク上で構築されたソリューションをアップグレード、または [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com) で利用可能なモダン ソリューションを活用することができます。
 
 ## <a name="document-publishing-services-secure-reliable-and-convenient"></a>ドキュメント公開サービス: セキュリティ、信頼性、便利
-従業員は、移動に多くの時間を費やします。 したがって、従業員がリモートで作業している間、企業は作業員の生産性を維持する能力に依存します。 ただし、現在でも、ドキュメントは業務トランザクションおよび記録管理のために不可欠です。  
+従業員は、移動に多くの時間を費やします。 したがって、従業員がリモートで作業している間、企業は作業員の生産性を維持する能力に依存します。 ただし、現在でも、ドキュメントは業務トランザクションおよび記録管理のために不可欠です。
 
 モバイル デバイスから、ネットワーク プリンターでドキュメントを印刷できます。 また、ビジネス ドキュメントの作成を自動化したり、組み込みツールを使用してドキュメントを複数の受信者に送信するように指定することもできます。
 
@@ -69,16 +69,18 @@ Microsoft Dynamics AX 2012 SQL Reporting Services フレームワーク上で構
 ### <a name="turning-on-embedded-links-in-business-documents"></a>ビジネス ドキュメントでのリンクの埋め込みを有効にする
 PDF ドキュメントで埋め込みドリルスルー リンクの使用を可能にするコードを次に示します。 
 
-    class Controller extends SrsReportRunController
+```
+class Controller extends SrsReportRunController
+{
+    protected void preRunModifyContract()
     {
-        protected void preRunModifyContract()
-        {
-            this.parmReportContract().parmRdlContract().parmEnableFileDrillThrough(true);
-            super();
-        }
-        static void main(Args _args)
-        {
-            ...
-        }
+        this.parmReportContract().parmRdlContract().parmEnableFileDrillThrough(true);
+        super();
     }
+    static void main(Args _args)
+    {
+        ...
+    }
+}
+```
 

@@ -1,6 +1,6 @@
 ---
-title: "発注書の承認および確認"
-description: "この資料は、発注書 (PO) が作成された後の一連の状態と、変更管理の有効化の効果について説明します。"
+title: "発注書の承認と確認"
+description: "このトピックは、発注書 (PO) が作成された後の一連の状態と、変更管理の有効化の効果について説明します。"
 author: FrankDahl
 manager: AnnBe
 ms.date: 06/20/2017
@@ -15,24 +15,25 @@ ms.search.scope: Core, Operations, Retail
 ms.custom: 93143
 ms.assetid: cd12a944-c52c-4579-a301-7abe1d237c72
 ms.search.region: Global
+ms.search.industry: 
 ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 475470fa87455e187e0a93148046cb1df634da1f
+ms.sourcegitcommit: d20bc3519096f1035d26f89d42aa7e8f0fc368cd
+ms.openlocfilehash: e274f52484d3fe1884152f155b6b7f0714f8842e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/29/2018
 
 ---
 
-# <a name="approve-and-confirm-purchase-orders"></a>発注書の承認および確認
+# <a name="approve-and-confirm-purchase-orders"></a>発注書の承認と確認
 
 [!include [banner](../includes/banner.md)]
 
 [!include [retail name](../includes/retail-name.md)]
 
-この資料は、発注書 (PO) が作成された後の一連の状態と、変更管理の有効化の効果について説明します。
+このトピックは、発注書 (PO) が作成された後の一連の状態と、変更管理の有効化の効果について説明します。
 
 注文書 (PO) が作成された後は、承認プロセスを経る必要があります。 仕入先が発注書に同意した後、発注書は **確認済** の状態に設定されます。
 

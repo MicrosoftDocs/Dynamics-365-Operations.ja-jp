@@ -3,7 +3,7 @@ title: "ソフトウェアのライフサイクル ポリシーおよびクラ�
 description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations のオンライン サービスにおけるライフサイクルおよびサポート ポリシーの概要を説明します。"
 author: RyanCCarlson2
 manager: AnnBe
-ms.date: 07/06/2018
+ms.date: 09/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: rcarlson
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: HT
-ms.sourcegitcommit: fa342ba6746490f1738d4c944cff9687736df3ff
-ms.openlocfilehash: c2025439e1c1bae284ee1a01a0783a8d33b94f02
+ms.sourcegitcommit: a1bd314d29b91279dfc31623214a5185e2091c22
+ms.openlocfilehash: aef6157ccc2c94d825331a6c06846a8ec488f338
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/05/2018
 
 ---
 
@@ -59,11 +59,13 @@ Dynamics 365 for Finance and Operations オンライン サービスは、Modern
 | **リリース**                                                 | **メジャーまたはマイナー リリース** | **バージョン**                                                                                                                                           | **ビルド番号** | **適用の対象** | **サービス終了** |
 |-------------------------------------------------------------|----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|------------------|------------------|--------------------|
 | Dynamics 365 for Finance and Operations                     | メジャー リリース              | [8.0](../../fin-and-ops/get-started/whats-new-changed-8-0-April-2018.md)                                                                                                                                                   | 8.0.30           | 2018 年 4 月       | 2019 年 4 月         |
-| Dynamics 365 for Finance and Operations, Enterprise edition | メジャー リリース              | [7.3](../../fin-and-ops/get-started/whats-new-application-7.3-update.md)                       | 7.3.11971.56116  | 2017 年 12 月    | 2020 年 4 月      |
+| Dynamics 365 for Finance and Operations, Enterprise edition | メジャー リリース              | [7.3](../../fin-and-ops/get-started/whats-new-application-7.3-update.md)                       | 7.3.11971.56116  | 2017 年 12 月    | 2020 年 4 月*      |
 | Dynamics 365 for Finance and Operations, Enterprise edition | メジャー リリース              | [2017 年 7 月](../../fin-and-ops/get-started/whats-new-application-July-2017-update.md)           | 7.2.11792.56024  | 2017 年 6 月        | 2019 年 4 月          |
 | Dynamics 365 for Operations                                 | メジャー リリース              | [1611](../../fin-and-ops/get-started/whats-new-dynamics-365-operations-1611.md)                | 7.1.1541.3036    | 2016 年 11 月    | 2019 年 4 月      |
 | Dynamics AX                                                 | マイナー リリース              | [7.0.1](../../fin-and-ops/get-started/whats-new-changed-application-version-7-0-1-may-2016.md) | 7.0.1265.23014   | 2016 年 5 月         | 2017 年 6 月          |
 | Dynamics AX                                                 | メジャー リリース              | [7.0](../../fin-and-ops/get-started/whats-new-changed-7-0-february-2016.md)                    | 7.0.1265.3015    | 2016 年 2 月    | 2017 年 6 月          |
+
+\*最新バージョンに関する唯一の例外は、履行されていない[拡張要求](../extensibility/extensibility-home-page.md)を Microsoft に送信したお客様です。 このようなお客様には、バージョン 7.3 を 2020 年 4 月まで使用できます。
 
 ### <a name="table-2-platform-releases"></a>表 2: プラットフォームのリリース
 
@@ -96,6 +98,7 @@ Dynamics 365 for Finance and Operations オンライン サービスは、Modern
 
 | リリース          | バージョン          | ビルド番号 | 適用の対象  |  
 |------------------|------------------|--------------|---------------|
+|  Dynamics 365 for Finance and Operations | 8.0.4: [KB 4458992 Microsoft Dynamics 365 for Finance and Operations - バージョン 8.0.4 (バイナリ パーツ)\*](https://fix.lcs.dynamics.com/Issue/Details?kb=4458992&bugId=239612&qc=70318005e232acfe98df16bf3ab4cdf8df463634e28ff3ce2ef1db29c8678863)、[KB 4458993 Microsoft Dynamics 365 for Finance and Operations - バージョン 8.0.4 (X++ パーツ)\*](https://fix.lcs.dynamics.com/Issue/Details?kb=4458993&bugId=239610&qc=70318005e232acfe98df16bf3ab4cdf8df463634e28ff3ce2ef1db29c8678863)| 8.0.35.15532  | 2018 年 8 月     |
 |  Dynamics 365 for Finance and Operations | 8.0.3: [KB 4346176 Microsoft Dynamics 365 for Finance and Operations - バージョン 8.0.3 (バイナリ パーツ)\*](https://fix.lcs.dynamics.com/Issue/Details?kb=4346176&bugId=230723&qc=15b7470493e66efed8446f7ad2269bde9804da7174d135900c99b7318bb26e34)、[KB 4346172 Microsoft Dynamics 365 for Finance and Operations - バージョン 8.0.3 (X++ パーツ)\*](https://fix.lcs.dynamics.com/Issue/Details?kb=4346172&bugId=230724&qc=15b7470493e66efed8446f7ad2269bde9804da7174d135900c99b7318bb26e34)| 8.0.35.15342  | 2018 年 7 月     |
 |  Dynamics 365 for Finance and Operations | 8.0.2: [KB 4340414 Microsoft Dynamics 365 for Finance and Operations - バージョン 8.0.2 (バイナリ パーツ)\*](https://fix.lcs.dynamics.com/Issue/Details?kb=4340414&bugId=219341&qc=0d87f4d28eb75753e9c4ceeb997ab6bf2a0ff5d0b58342ecd9512cc721e0cc80)、[KB 4340413 Microsoft Dynamics 365 for Finance and Operations - バージョン 8.0.2 (X++ パーツ)\*](https://fix.lcs.dynamics.com/Issue/Details?kb=4340413&bugId=219344&qc=0d95ca5957e7b1288e6d56bcf3bc6c014baf9e916d976fd100ae24db3d2b1a14)| 8.0.35.15211 | 2018 年 7 月     |
 |  Dynamics 365 for Finance and Operations | 8.0.1: [KB 4295107 Microsoft Dynamics 365 for Finance and Operations - バージョン 8.0.1 (バイナリ パーツ)\*](https://fix.lcs.dynamics.com/Issue/Details?kb=4295107&bugId=192587&qc=70f6f8fbdd96b01197fedc9442b5c43c2e01e2748eb0d5a20d87bceb4c0b939d)、[KB 4294515 Microsoft Dynamics 365 for Finance and Operations - バージョン 8.0.1 (X++ パーツ)\*](https://fix.lcs.dynamics.com/Issue/Details?kb=4294515&bugId=194698&qc=70f6f8fbdd96b01197fedc9442b5c43c2e01e2748eb0d5a20d87bceb4c0b939d) | 8.0.30.15107 | 2018 年 6 月     |

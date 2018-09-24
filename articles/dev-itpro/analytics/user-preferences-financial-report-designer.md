@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 78b41010e4ab56675121ab5479cada37645e9ee3
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 5483a1d40907fab3ed3da8174f1dfb8a5bc86960
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -30,25 +30,24 @@ ms.lasthandoff: 08/09/2018
 
 [!include [banner](../includes/banner.md)]
 
-この記事では、財務諸表デザイナーで、ユーザーとのやり取りをカスタマイズし、最初のサインイン エクスペリエンスを制御するユーザー設定を設定する方法について説明します。 個々の報告、レポート ライブラリ、および既定のファイルの場所の表示方法を制御することもできます。 
+この記事では、財務諸表デザイナーで、ユーザーとのやり取りをカスタマイズし、最初のサインイン エクスペリエンスを制御するユーザー設定を設定する方法について説明します。 個々の報告、レポート ライブラリ、および既定のファイルの場所の表示方法を制御することもできます。
 
-<a name="set-user-preferences"></a>ユーザー基本設定の設定
---------------------
+## <a name="set-user-preferences"></a>ユーザー基本設定の設定
 
-1.  [レポート デザイナー] の **ツール** メニューで、**オプション** をクリックします。
-2.  **オプション** ダイアログ ボックスで、基本設定を選択します。
-3.  **OK** をクリックします
+1. [レポート デザイナー] の **ツール** メニューで、**オプション** をクリックします。
+2. **オプション** ダイアログ ボックスで、基本設定を選択します。
+3. **OK** をクリックします
 
 ## <a name="options-dialog-box-options"></a>[オプション] ダイアログ ボックスのオプション
 <table>
 <thead>
-<tr class="header">
+<tr>
 <th>ユーザー オプション</th>
 <th>説明</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>起動時</td>
 <td>レポート デザイナーの開始時の表示を選択します。 次のオプションのいずれかを選択します。
 <ul>
@@ -57,28 +56,22 @@ ms.lasthandoff: 08/09/2018
 <li><strong>空の環境を表示</strong> – 空のデザイナー ウィンドウを開きます。</li>
 </ul></td>
 </tr>
-<tr class="even">
+<tr>
 <td>レポート デザイナーを終了する前の確認表示</td>
 <td>アプリケーションを終了したとき、警告メッセージを表示するかどうかを選択します。 このメッセージは、意図せずにプログラムを終了しないことを保証するのに役立ちます。</td>
 </tr>
-<tr class="odd">
-<td>[自動的に列ヘッダーのセルに下線を追加する]</td>
+<tr>
+<td>列ヘッダーにセルの下線を自動的に適用</td>
 <td>新しい列ヘッダーのセルに下線を挿入するかどうかを選択します。</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Management Reporter ファイルの場所</td>
 <td>ファイルの既定の場所を指定します。 アプリケーションは、構成要素のグループをエクスポートするときに既定の場所を使用します。</td>
 </tr>
 </tbody>
 </table>
 
-
-
-<a name="additional-resources"></a>その他のリソース
---------
+## <a name="additional-resources"></a>その他のリソース
 
 [財務報告](financial-reporting-intro.md)
-
-
-
 

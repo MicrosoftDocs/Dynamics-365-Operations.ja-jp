@@ -3,7 +3,7 @@ title: "クラウド配置オプション"
 description: "このトピックでは、展開するクラウド環境とサブスクリプション、誰がどのタスクを実行できるか、および Microsoft Dynamics 365 for Finance and Operations で管理する必要があるデータおよびカスタマイズについて説明します。"
 author: kfend
 manager: AnnBe
-ms.date: 03/21/2018
+ms.date: 08/14/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: f764bdfac5e43f27126d3282dd9201536757faff
+ms.sourcegitcommit: d20bc3519096f1035d26f89d42aa7e8f0fc368cd
+ms.openlocfilehash: 6f6ad2e66b4887a375e0d941f030f3479f66ed9f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 08/29/2018
 
 ---
 # <a name="cloud-deployment-option"></a>クラウド配置オプション
@@ -39,7 +39,7 @@ Microsoft は、すべての顧客がすべてのクラウド配置に対して�
 - レベル 2 サンドボックス環境のテストのカスタマイズ、パートナー ソリューション、データ構成
 - 高可用性の運用環境にカスタマイズとデータ構成を展開する
 
-プロジェクトのいくつかのフェーズでは、すべての環境を一度に実行することができます。 既定のライセンスおよび使用可能な層の詳細については、[Dynamics 365 ライセンス ガイド](http://download.microsoft.com/documents/en-us/dynamics/pricing/Dynamics_365_Enterprise_edition_Licensing_Guide.pdf) を参照してください。
+プロジェクトのいくつかのフェーズでは、すべての環境を一度に実行することができます。 既定のライセンスおよび使用可能な層の詳細については、[Dynamics 365 ライセンス ガイド](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409) を参照してください。
 
 条件、顧客、パートナー、および Microsoft サブスクリプションについて聞く場合があります。 *顧客またはパートナーのサブスクリプション* は、評価および開発目的でのみ、顧客またはパートナーが独自の Azure サブスクリプションをもって Dynamics 365 for Finance and Operations 環境を配置することを意味しています。 顧客やパートナーは、Azure 価格リストに基づいて Azure サブスクリプションに展開されるリソースに対して支払います。 *Microsoft サブスクリプション*は、顧客が Dynamics 365 for Finance and Operations ライセンスを購入し、Microsoft が管理する Azure サブスクリプションに環境を配置できることを意味するため、顧客には Azure からの別個の請求はありません。 各 Enterprise オファーでは、既定で 3 つの環境が含まれています。 
 
@@ -47,7 +47,7 @@ Microsoft は、すべての顧客がすべてのクラウド配置に対して�
 - ユーザー受け入れテスト (UAT) 用の、1 つの階層 2 サンド ボックス (マルチ ボックス環境) です。
 - 高可用性 (HA) を備えた 1 つの実稼働環境。 この環境は、Microsoftによって管理され、運用されます。
 
-追加の環境は、アドオンとして購入する場合があります。 ライセンスおよび Microsoft Dynamics 365 に何が含まれるかの詳細については、[Microsoft Dynamics 365 Enterprise edition ライセンス ガイド](http://download.microsoft.com/documents/en-us/dynamics/pricing/Dynamics_365_Enterprise_edition_Licensing_Guide.pdf) を参照してください。
+追加の環境は、アドオンとして購入する場合があります。 ライセンスおよび Microsoft Dynamics 365 に何が含まれるかの詳細については、[Microsoft Dynamics 365 Enterprise edition ライセンス ガイド](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409) を参照してください。
 
 ライフサイクルが使用可能な環境にどうマップするかを次に示します。
 
@@ -115,9 +115,10 @@ Finance and Operations の実稼動環境は、以下のものを含む Azure �
 プライマリのデータ格納場所のみレプリケーションがサポートされます。 つまり、プライマリ データベースから変換されたデータを使用する Management Reporter やエンティティ格納などの 一部の Finance and Operations アプリケーション コンポーネントは、リカバリ サイトが設定され、サービスが開始された後に生成されなければなりません。 顧客コード コンポーネントと回復されたデータの格納場所を使用してサイトを再展開し、RTO (Recovery Time Objective) を 10 時間、Recovery Point Objective を5分に設定します。 詳細については、[Azure SQL データベース ポイントインタイム復元](https://azure.microsoft.com/en-us/blog/azure-sql-database-point-in-time-restore/) を参照してください。
 
 ## <a name="service-availability"></a>サービスの可用性 
-Dynamics Lifecycle Services (LCS) を使用して、他の Microsoft Azure データ センターに Finance and Operations を展開できます。 Azure は一般に世界中のデータセンターや地理的な場所で利用可能です。 Finance and Operations では、顧客は自分の顧客データが格納される地域またはデータセンターを指定することができます。 Microsoft は、データの持続性のためにデータを他の領域に複製する場合がありますが、地理的な場所の外部に顧客データを複製または移動しません。
+Dynamics Lifecycle Services (LCS) を使用して、他の Microsoft Azure データ センターに Finance and Operations を展開できます。 Azure は一般に世界中のデータセンターや地理的な場所で利用可能です。 Finance and Operations では、顧客は自分の顧客データが格納される地域またはデータセンターを指定することができます。 Microsoft は、データの持続性のためにデータを他の領域に複製する場合がありますが、地理的な場所の外部に顧客データを複製または移動しません。 詳細については、[サービス説明のホワイト ペーパー](https://aka.ms/D365-Cloud-Service-Operations)をご覧ください。
 
-**重要:** 顧客データがどこに格納されているかに関係なく、マイクロソフトは顧客またはエンドユーザーがアクセスできる場所を管理したり制限したりしません。
+> [!IMPORTANT]
+> 顧客データがどこに格納されているかに関係なく、マイクロソフトは顧客またはエンドユーザーがアクセスできる場所を管理したり制限したりしません。
 詳細については、[Finance and Operations のデータが格納されている場所](https://www.microsoft.com/en-us/trustcenter/privacy/dynamics365-operations-location) を参照してください。
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問

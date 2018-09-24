@@ -19,10 +19,10 @@ ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 3b296d1951e8909f0f55951e8aa9bde68f0308a0
+ms.sourcegitcommit: 96a9075294c1f2a9cfde03be1aaaa26af90de4c2
+ms.openlocfilehash: 172e800fb43cb60ab2d7bc46736046576ef5ee9e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/04/2018
 
 ---
 
@@ -74,7 +74,7 @@ ms.lasthandoff: 08/09/2018
     ModelUtil.exe -import -metadatastorepath=J:\AOSService\PackagesLocalDirectory -file="E:\Test\AppSuiteModernDesigns.axmodel"
     ```
 
-    モデル ファイルをインポートする方法の詳細については、[モデルの配分: モデルをエクスポートおよびインポートする方法](../dev-tools/models-export-import.md) を参照してください。 モデル ファイルをインポートした後は、Microsoft Visual Studio 2015 を開始します。 アプリケーション エクスプローラーで、**アプリケーション スイート - 最新のデザイン** コレクションが **AOT** ノードの下に表示されていることを確認します。
+    モデル ファイルをインポートする方法の詳細については、[モデルの配分: モデルをエクスポートおよびインポートする方法](../dev-tools/models-export-import.md) を参照してください。 モデル ファイルをインポートした後は、Microsoft Visual Studio 2015 を開始します。 アプリケーション エクスプローラーで、**アプリケーション スイート - 最新のデザイン** コレクションが **AOT** ノードの下に表示されていることを確認します。 アプリケーション エクスプ ローラーを使用する方法の詳細については、[開発ツール チュートリアル](../dev-tools/introduction-visual-studio.md)を参照してください。
 
 アプリケーション スイート最新デザイン モデルを正常にインポートしたので、アプリケーション スイートをリビルドしてメタデータ要素を更新する必要があります。
 

@@ -27,6 +27,8 @@ ms.lasthandoff: 08/09/2018
 
 # <a name="axerd-page-has-been-retired"></a>AxErd ページは破棄されました
 
+[!include [banner](../includes/banner.md)]
+
 残念ながら、多数の Microsoft Dynamics AX 2012 テーブルに対してエンティティ リレーションシップ図 (ERD) を提供した、AxErd Web ページを破棄しなくてはいけませんでした。 プロジェクトのソース コードおよび GitHub リポジトリの Web ページに対する HTML ファイルの両方を転記することができました: https://github.com/Microsoft/ax-2012-doc-tools
 
 HTML ページはリポジトリの [https://github.com/Microsoft/ax-2012-doc-tools/tree/master/AxErd/AxErd/_RelatedFiles_AxErd/Deploy/Default.htm](https://github.com/Microsoft/ax-2012-doc-tools/tree/master/AxErd/AxErd/_RelatedFiles_AxErd/Deploy/Default.htm) にあります。

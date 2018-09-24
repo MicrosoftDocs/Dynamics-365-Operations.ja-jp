@@ -18,10 +18,10 @@ ms.author: tjvass
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: aa1ab9bc2c37f9ae0599b9c05231cb5cb8f9054e
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: a65db6abd3c11fa168fc788fb4a3bf1d30f13bcc
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -58,7 +58,7 @@ ms.lasthandoff: 04/20/2018
 
 Finance and Operations のシステム管理者は、このセクションの情報を使用してネットワーク プリンタを定義します。
 
-1. **組織管理** > **設定** > **ネットワーク プリンター**の順に移動します。
+1. **組織管理** \> **設定** \> **ネットワーク プリンター** の順に移動します。
 2. **ネットワーク プリンター**ページで、新しいプリンターを追加します。 各プリンターで、名前、説明、パス、およびステータスを指定します。 プリンター パスがインストールされているプリンターのネットワーク パスと一致していることを確認します。
 
 **有効**とマークされている項目は、すぐにアプリケーションのユーザーによって利用できるようになるので、ネットワーク プリンター デバイスで文書スタイル レポートの印刷を開始できます。

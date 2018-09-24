@@ -3,7 +3,7 @@ title: "オンプレミス配置のシステム要件"
 description: "このトピックでは、現在のバージョンの Microsoft Dynamics 365 for Finance and Operations におけるオンプレミス開発のシステム要件を一覧表示します。"
 author: kfend
 manager: AnnBe
-ms.date: 02/01/2018
+ms.date: 09/04/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: kfend
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: dc2ab66bf6e3195e1ebf394f99182f59c3ee2125
-ms.openlocfilehash: e7add3719da523f2624c9dcb990ca8dcd566dcfe
+ms.sourcegitcommit: 8a282207246fc1dbce1c4c40af118a3dc9976a2a
+ms.openlocfilehash: 4ffbed088efd7472c1fa65d44a435f05739e3338
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/04/2018
 
 ---
 
@@ -217,7 +217,7 @@ Finance and Operations (オンプレミス) コンポーネントをインスト
 
 | オペレーティング システム                                     | 摘要 |
 |------------------------------------------------------|-------|
-| Microsoft Windows Server 2016 Datacenter または Standard | これらの要件は、AOS をホストするデータベースおよび Service Fabric クラスターに対するものです。 |
+| Microsoft Windows Server 2016 Datacenter または Standard | これらの要件は、AOS をホストするデータベースおよび Service Fabric クラスターに対するものです。 <br><br>en-US OS インストールのみがサポートされます。|
 
 ## <a name="software-requirements-for-database-servers"></a>データベース サーバーのソフトウェア要件
 

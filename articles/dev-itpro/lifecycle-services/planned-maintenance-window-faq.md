@@ -18,10 +18,10 @@ ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 9c23010e6dc277837c25f3be0abcd7bf6e29024a
+ms.sourcegitcommit: 96a9075294c1f2a9cfde03be1aaaa26af90de4c2
+ms.openlocfilehash: b78e6bd5b1ef878b7f8403df2e216377bd4a1a6c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/04/2018
 
 ---
 
@@ -90,7 +90,7 @@ ms.lasthandoff: 08/09/2018
 ### <a name="can-i-reschedule-the-planned-maintenance"></a>計画的なメンテナンスを再スケジューリングできますか。
 計画的なメンテナンスを再スケジューリングするためのオプションは提供していません。 ただし、現在の月の保守サイクルから除外するように選択できます。 LCS を使用して更新のスケジュールを直接変更できるようにするために、LCS にこのオプションを追加する予定です。 
 
-### <a name="how-do-i-opt-out-of-the-the-current-maintenance-cycle"></a>現在のメンテナンス サイクルを停止するにはどうすればよいですか。
+### <a name="how-do-i-opt-out-of-the-current-maintenance-cycle"></a>現在のメンテナンス サイクルを停止するにはどうすればよいですか。
 現在のメンテナンス サイクルを無効にするには、Microsoft にサポート チケットを提出してください。 ご使用の環境は、今月の保守サイクルから除外されます。 ただし、お客様の環境は翌月に更新されます。
 
 ### <a name="how-do-i-report-an-issue-that-is-identified-during-validation-of-the-updates-that-were-applied-to-the-environment"></a>環境に適用された更新の検証時に識別される問題をレポートするにはどうすればよいですか。

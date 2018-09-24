@@ -18,10 +18,10 @@ ms.author: sunilg
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 5bc021ce9f0835f2eda310ef7818c9bc9be749f2
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 48239b48cbc24e34d74bbac36e8f827a15d7b840
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -36,7 +36,7 @@ Microsoft Dynamics 365 for Finance and Operations のデータ管理は、デー
 
 **ファイルの追加** フォームを残さずに第 2 のエンティティ **倉庫** を追加すると、ワークシートの参照により、ファイルを再度アップロードせずに **倉庫** ワークシートを選択できるようになります。 新しいファイルをアップロードする唯一の理由は、**倉庫**のデータが他のファイルにある場合だけです。
 
-![複数のワークシート](./media/AddFileMultipleWorkSheets.png) 
+![複数のワークシート](./media/AddFileMultipleWorkSheets.png)
 
 ## <a name="fix-worksheet-to-entity-mapping"></a>エンティティ マッピングへのワークシートの修正
 
@@ -51,5 +51,4 @@ Microsoft Dynamics 365 for Finance and Operations のデータ管理は、デー
 ## <a name="upload-a-file-using-run-project"></a>プロジェクトを実行してファイルをアップロードする
 
 **プロジェクトを実行** オプションを使用して Excel ファイルをアップロードして、インポート プロジェクトを実行することができます。 データ プロジェクト内のデータ エンティティの既存のマッピングと同じワークシートを持つファイルのみをアップロードするように注意する必要があります。 新しくアップロードされたファイルにワークシートが見つからない場合、システムはエラーを表示してインポートを停止します。 エンティティに対してワークシートへのマッピングを変更する必要がある場合は、**プロジェクトを実行** エクスペリエンスのファイルを使用する前に、データプロジェクト内のマッピングを最初にデータプロジェクト内から更新する必要があります。
-
 

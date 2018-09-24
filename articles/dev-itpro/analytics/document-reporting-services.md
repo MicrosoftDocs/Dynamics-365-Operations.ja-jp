@@ -18,10 +18,10 @@ ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: b32df753bfe22cddff71fa0b9f177d8fd8edcacd
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 2616ef93dcf99ea35f1b123253c26663bda68009
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -31,20 +31,19 @@ ms.lasthandoff: 08/09/2018
 
 この記事では、Microsoft Dynamics 365 for Finance and Operations で利用できる統合レポート ソリューションについて説明します。 このソリューションにより、サービス管理が簡略化され、開発者の生産性が向上し、ユーザーのレポート表示エクスペリエンスが強化されます。
 
-<a name="document-reporting-services"></a>ドキュメントの Reporting Services
----------------------------
+## <a name="document-reporting-services"></a>ドキュメントの Reporting Services
 
 Document Reporting Services は、Microsoft SQL Server Reporting Services (SSRS) に基づいています。 現在のバージョンの Microsoft Dynamics 365 for Finance and Operations では、これらのサービスは Microsoft Azure 計算サービスでホストされます。 1 ボックス環境で開発している場合は、サービスも Azure コンピューティング エミュレーターでローカルに実行されます。
 
 ### <a name="service-deployment--local-vs-cloud"></a>サービスの展開 - ローカルとクラウド
 
-1 ボックス環境では、開発者は Microsoft Visual Studio 2015 を使用して、エンド ツー エンドでレポートを作成、変更、およびプレビューできます。 アプリケーションのメタデータ ストアにレポートを追加するために、別のプロセスは必要ありません。 レポートの変更は、他のソリューションの更新と一緒にパッケージ化され、ローカル環境での開発が完了した後にクラウドに展開されます。 
+1 ボックス環境では、開発者は Microsoft Visual Studio 2015 を使用して、エンド ツー エンドでレポートを作成、変更、およびプレビューできます。 アプリケーションのメタデータ ストアにレポートを追加するために、別のプロセスは必要ありません。 レポートの変更は、他のソリューションの更新と一緒にパッケージ化され、ローカル環境での開発が完了した後にクラウドに展開されます。
 
 [![document-reporting-services-topology](./media/document-reporting-services-topology.png)](./media/document-reporting-services-topology.png)
 
 ### <a name="viewing-reports-in-dynamics-365-for-finance-and-operations"></a>Dynamics 365 for Finance and Operations でのプロジェクトの表示
 
-Finance and Operations がエンドユーザーに提供する拡張レポート表示エクスペリエンスは、Microsoft Visual Studio のレポート プレビュー エクスペリエンスと同じです。 Visual Studio で個別のデザインのプレビューは以後使用しません。 代わりに、Ctrl+F5 を押すだけで、Internet Explorer ウィンドウでレポートを作成してプレビューできます。 レポートはクライアントに表示されるとおりに表示されます。 ユーザーのパラメーターの経験さえ同じです。 次のスクリーン ショットは、Visual Studio から開いたレポート プレビューの例を示しています。 
+Finance and Operations がエンドユーザーに提供する拡張レポート表示エクスペリエンスは、Microsoft Visual Studio のレポート プレビュー エクスペリエンスと同じです。 Visual Studio で個別のデザインのプレビューは以後使用しません。 代わりに、Ctrl+F5 を押すだけで、Internet Explorer ウィンドウでレポートを作成してプレビューできます。 レポートはクライアントに表示されるとおりに表示されます。 ユーザーのパラメーターの経験さえ同じです。 次のスクリーン ショットは、Visual Studio から開いたレポート プレビューの例を示しています。
 
 [![レポート プレビューの例](./media/2_report.png)](./media/2_report.png)
 
@@ -52,18 +51,14 @@ Finance and Operations がエンドユーザーに提供する拡張レポート
 次のテーブルは、Microsoft Dynamics AX 2012 のサービス管理の前提条件と現在のバージョンの Finance and Operations を比較しています。
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
-<tr class="header">
+<tr>
 <th>AX 2012</th>
 <th>Dynamics 365 for Finance and Operations の現在のバージョン</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>レポートの開発環境には、次の前提条件があります。
 <ul>
 <li>SSRS がインストールされている必要があります。</li>
@@ -79,18 +74,14 @@ Finance and Operations がエンドユーザーに提供する拡張レポート
 レポート ソリューションを完全に Visual Studio 2015 で作成および検証できるので、Finance and Operations の現在のバージョンでレポートを作成するプロセスは AX 2012 で行うよりも簡単です。 次のテーブルは、Finance and Operations がどのようにしてクエリに基づく自動設計レポートを追加するための基本手順を簡素化するかを示しています。
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
-<tr class="header">
+<tr>
 <th>AX 2012</th>
 <th>Dynamics 365 for Finance and Operations の現在のバージョン</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td><ol>
 <li>Microsoft Dynamics 365 for Finance and Operations クライアントで、アプリケーション オブジェクト ツリー (AOT) にクエリを作成します。</li>
 <li>Visual Studio で、レポート プロジェクトを作成してクエリを追加します。</li>
@@ -106,15 +97,12 @@ Finance and Operations がエンドユーザーに提供する拡張レポート
 <li>Visual Studio のレポートを編集します。</li>
 <li>Visual Studio で、メニュー項目にレポートを追加し、スタートアップ オブジェクトとしてメニュー項目を設定します。</li>
 <li>AOT を使用してレポートをレポート サーバーに展開します。</li>
-<li>Ctrl+F5 キーを押し、Finance and Operations クライアントでレポートを確認します。 <strong>注記:</strong> モデル エディタからのレポート デザインの個別のプレビューはありません。</li>
+<li>Ctrl+F5 キーを押し、Finance and Operations クライアントでレポートを確認します。
+<blockquote>[!NOTE] モデル エディタからのレポート デザインの個別のプレビューはありません。</blockquote>
+</li>
 <li>ソリューション全体が完了したら、ソリューション全体を 1 つのパッケージにしてクラウドに配置します。</li>
 </ol></td>
 </tr>
 </tbody>
 </table>
-
-
-
-
-
 

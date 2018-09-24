@@ -3,7 +3,7 @@ title: "フォーム、製品、およびコントロールのユーザー補助
 description: "このトピックは、フォーム、製品、またはコントロールのユーザー補助機能を有効にするためのベスト プラクティスについて説明します。 アクセシビリティ チェックリストも含まれます。"
 author: RobinARH
 manager: AnnBe
-ms.date: 11/08/2017
+ms.date: 08/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: tlefor
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 10fee6054a34a84a1110e751d53a2edb39697bfb
+ms.sourcegitcommit: 2a9ceb774a8f205e39abe6a12a0deb69dd4cb69b
+ms.openlocfilehash: 415c1a94ffb146d4c1f7caca957a08249a961526
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/20/2018
 
 ---
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 04/20/2018
 ユーザー補助は包括的です。つまり、障害のある人は、障害のない人と同じタスクを実行できます。 アクセス可能なコントロールまたはフォームの作成は、セキュリティで保護され、高性能、または理解しやすい基本的なものにする必要があります。
 
 ## <a name="keyboard"></a>キーボード
-アクセシビリティの基盤はキーボード専用アクセスです。 キーボードを使用してフォームのすべてのアクションを実行できるとき、全盲の人または手の使用に制限がある人がこのフォームを利用できます。 これは、タブ シーケンス、直接アクション (保存の Ctrl + S など)、またはユーザーがナビゲーション ペイン、アプリ バー、メッセージ センター、メッセージ バーなどのコントロールに移動できるようにする他のショートカット キーを使用してすべてのコントロールに到達できることを意味します。 簡単なテストでは、単にマウスを取り外し、キーボードのみを使用してすべてのコア シナリオとセカンダリ シナリオを完了します。
+アクセシビリティの基盤はキーボード専用アクセスです。 キーボードを使用してフォームのすべてのアクションを実行できるとき、全盲の人または手の使用に制限がある人がこのフォームを利用できます。 これは、タブ シーケンス、直接アクション (保存の **Ctrl + S** など)、またはユーザーがナビゲーション ペイン、アプリ バー、メッセージ センター、メッセージ バーなどのコントロールに移動できるようにする他のショートカット キーを使用してすべてのコントロールに到達できることを意味します。 簡単なテストでは、単にマウスを取り外し、キーボードのみを使用してすべてのコア シナリオとセカンダリ シナリオを完了します。
 
 ## <a name="color"></a>色
 色の使用が推奨されており、記録やその他の情報の状態や状態を表す一般的な方法です。 ただし、色は、状態またはステータスが伝達される唯一の方法ではありません。 付属記号、ヘルプ テキスト、または追加の列に、状態またはステータスのテキスト説明を含める必要があります。 簡単なテストは、システムのすべての色の使用を識別し、色が状態またはステータスを表すために使用されていないことを確認してください。 一般的な例では、赤色は「注意が必要」を表し、緑色は「OK」の状態を意味します。
@@ -88,15 +88,15 @@ statusImage = ImageReference::constructForSymbol(ImageReferenceSymbol::Accept, "
 | ナビゲーション                            |                                                                                                                                                                                                                                    | ナビゲーション コントロールは、実行された場合にナビゲーションが発生することを通信する必要があります。                                                                                                       |                   |
 
 ## <a name="extensible-controls--insights-for-accessibility"></a>拡張可能なコントロール - アクセシビリティのインサイト
-拡張可能コントロールは、単にフレームワークの拡張です。 拡張可能なコントロールの相互作用は、他のどのフレームワーク コントロールとも変わらないと考えられるべきです。 コントロールがマウス アクションを提供する視覚的にリッチなウィジェットであるとき、作成者は、同等のキーボード アクセス機能を使用できるようにする必要があります。 ウィジェットは、標準的なプレゼンテーションとは異なる「アクセス可能モード」で実行されないことがあります。 代わりに、ウィジェットはコントロールの状態を有効化したり切り替えたりする必要なく同様の機能を提供する必要があります。 すべてのカラーの使用はテーマ カラーに基づいている必要があります。モードが「ハイ コントラスト」の場合、配色がテーマの変更と一致します。 World Wide Web コンソーシアム (WC3) Web サイトは、「サポートされている状態とプロパティ」のガイダンス ([www.w3.org/TR/wai aria/states\_および \_properties\#state\_prop\_def](http://www.w3.org/TR/wai-aria/states_and_properties#state_prop_def)) を提供しています。 このサイトは、ARIA タグの役に立つリソースであり、以下に示す定義を提供します。
+拡張可能コントロールは、単にフレームワークの拡張です。 拡張可能なコントロールの相互作用は、他のどのフレームワーク コントロールとも変わらないと考えられるべきです。 コントロールがマウス アクションを提供する視覚的にリッチなウィジェットであるとき、作成者は、同等のキーボード アクセス機能を使用できるようにする必要があります。 ウィジェットは、標準的なプレゼンテーションとは異なる「アクセス可能モード」で実行されないことがあります。 代わりに、ウィジェットはコントロールの状態を有効化したり切り替えたりする必要なく同様の機能を提供する必要があります。 すべてのカラーの使用はテーマ カラーに基づいている必要があります。モードが「ハイ コントラスト」の場合、配色がテーマの変更と一致します。 World Wide Web コンソーシアム (WC3) Web サイトは、「サポートされている状態とプロパティ」のガイダンス ([www.w3.org/TR/wai aria/states\_および \_properties\#state\_prop\_def](https://www.w3.org/WAI/PF/aria-1.1/states_and_properties)) を提供しています。 このサイトは、ARIA タグの役に立つリソースであり、以下に示す定義を提供します。
 
-### <a name="control-should"></a>コントロールの必要
+### <a name="controls-should-do-this"></a>コントロールが行う必要がある操作
 
-##### <a name="introduce-itself"></a>**それ自体を導入します**
+**それ自体を導入します**
 
-重要なことは、コントロールを名前で識別するだけではなく、(ラベルまたは ARIA タグを使用して) 動作の簡単な概要を示すべきであることです。 Aria-describedby。 説明テキストがローカライズ用のフレームワーク ラベル経由で指定されていることを確認します。 
+重要なことは、コントロールを名前で識別するだけではなく、(ラベルまたは ARIA タグを使用して) 動作の簡単な概要を示すべきであることです。 説明テキストがローカライズ用のフレームワーク ラベル経由で指定されていることを確認します。 
 
-[aria describedby](http://www.w3.org/TR/wai-aria/states_and_properties#aria-describedby) - オブジェクトを説明する要素 (または複数の要素) を識別します。
+- *aria describedby* - オブジェクトを説明する要素 (または複数の要素) を識別します。
 
 ***例***
 
@@ -106,7 +106,7 @@ statusImage = ImageReference::constructForSymbol(ImageReferenceSymbol::Accept, "
 
 **ビジー状態であることを示します** 視覚障害のあるユーザーにとって、なぜコントロールが反応しないのかは、必ずしも明らかではありません。 「ビジー」のメッセージを指定すると、そのような場合に役立ちます。
 
-[aria-busy (状態)](http://www.w3.org/TR/wai-aria/states_and_properties#aria-busy) - 要素とそのサブツリーが現在更新されているかどうかを示します。
+- *aria-busy (状態)* - 要素とそのサブツリーが現在更新されているかどうかを示します。
 
 ***例***
 
@@ -114,52 +114,49 @@ statusImage = ImageReference::constructForSymbol(ImageReferenceSymbol::Accept, "
 
 **内容が検証されて、有効でないことを示す** 非同期の性質によりフィールド状態の動的な変化が発生します。 メッセージ バーは、それ自体を視覚障害のあるユーザーに紹介し、コントロール自体は無効な状態を表す必要があります。
 
-[aria-invalid (状態)](http://www.w3.org/TR/wai-aria/states_and_properties#aria-invalid) - 入力された値が、アプリケーションが予期している形式に準拠していないことを示します。
+- *aria-invalid (状態)* - 入力された値が、アプリケーションが予期している形式に準拠していないことを示します。
 
 **フィールドが読み取りであることを示します**
 
-[aria-readonly](http://www.w3.org/TR/wai-aria/states_and_properties#aria-readonly) - 要素が編集可能ではなく、操作可能であることを示します。 関連する aria-disabled を参照してください。
+- *aria-readonly* - 要素が編集可能ではなく、操作可能であることを示します。 関連する *aria-disabled* を参照してください。
 
 **フィールドに入力が必要であることを示します (必須)** 視覚的なシンボルによって、目の見えるユーザーはフィールドが必須であることを理解できます。 盲目のユーザーには識別タグが必要です。
 
-[aria-required](http://www.w3.org/TR/wai-aria/states_and_properties#aria-required) は、フォームが送信される前に、要素にユーザー 入力が必要であることを示します。
+- *aria-required* - フォームが送信される前に、要素にユーザー 入力が必要であることを示します。
 
 **切り替えられた値の状態を説明**切り替えコントロールには切り替え状態があります。 このタグがその状態が表わしています。
 
-[aria-pressed (状態)](http://www.w3.org/TR/wai-aria/states_and_properties#aria-pressed) - 切り替えボタンの現在の「押された」状態を示します。 関連する aria-checked および aria-selected を参照してください。
+- *aria-pressed (状態)* - 切り替えボタンの現在の「押された」状態を示します。 関連する *aria-checked* および *aria-selected* を参照してください。
 
-[aria-valuenow](http://www.w3.org/TR/wai-aria/states_and_properties#aria-valuenow) - 範囲ウィジェットの現在の値を定義します。 関連する aria-valuetext を参照してください。
+- *aria-valuenow* - 範囲ウィジェットの現在の値を定義します。 関連する *aria-valuetext* を参照してください。
 
-[aria-valuetext](http://www.w3.org/TR/wai-aria/states_and_properties#aria-valuetext) - 範囲ウィジェットに aria-valuenow の人が判読可能な代替テキストを定義します。
+- *aria-valuetext* - 範囲ウィジェットに *aria-valuenow* の人が判読可能な代替テキストを定義します。
 
-### <a name="control-could"></a>コントロールができました
+### <a name="controls-could-do-this"></a>コントロールが行うことができる操作
 
-**展開された状態の表示** 複雑な相互作用を学習できますが、現在の状態は実験なしでは決して簡単に判断できません。 aria-expanded タグを使用するとき、コントロールがその現在の状態を説明します。 例として、コントロールのタブまたはクイック タブ セクションへのタブ移動があります。
+**展開された状態の表示** 複雑な相互作用を学習できますが、現在の状態は実験なしでは決して簡単に判断できません。 *aria-expanded* タグを使用するとき、コントロールがその現在の状態を説明します。 例として、コントロールのタブまたはクイック タブ セクションへのタブ移動があります。
 
-[aria-expanded (状態)](http://www.w3.org/TR/wai-aria/states_and_properties#aria-expanded) - 要素または別のグループ化されている要素が、現在展開されているか折りたたまれているかを示します。
+- *aria-expanded (状態)* - 要素または別のグループ化されている要素が、現在展開されているか折りたたまれているかを示します。
 
 **該当するコンテキスト メニューの説明** Microsoft Dynamics 365 for Finance and Operations は、コンテキスト メニューを提供します。 アプリケーション作成者が現在のコントロールまたはコンテキストに機能を提供したときに、ユーザーはその機能を公表することができます。
 
-[aria-haspopup](http://www.w3.org/TR/wai-aria/states_and_properties#aria-haspopup) - 要素にポップアップ コンテキスト メニューまたはサブ レベルのメニューがあることを示します。
+- *aria-haspopup* - 要素にポップアップ コンテキスト メニューまたはサブ レベルのメニューがあることを示します。
 
-**その他**
+**その他のコントロール**
 
-[aria-live](http://www.w3.org/TR/wai-aria/states_and_properties#aria-live) は要素が更新されることを示し、ユーザー エージェント、支援テクノロジー、およびユーザーがライブ リージョンから期待できる更新の種類を示します。
+- *aria-live* - 要素が更新されることを示し、ユーザー エージェント、支援テクノロジー、およびユーザーがライブ リージョンから期待できる更新の種類を示します。
 
-[aria-multiline](http://www.w3.org/TR/wai-aria/states_and_properties#aria-multiline) - テキスト ボックスが複数行の入力を受け入れるか、一行だけを受け入れるかを示します。
+- *aria-multiline* - テキスト ボックスが複数行の入力を受け入れるか、一行だけを受け入れるかを示します。
 
-[aria-multiselectable](http://www.w3.org/TR/wai-aria/states_and_properties#aria-multiselectable) - ユーザーが現在選択可能な子孫からひとつ以上の項目を選択できることを示します。
+- *aria-multiselectable* - ユーザーが現在選択可能な子孫からひとつ以上の項目を選択できることを示します。
 
-[aria-orientation](http://www.w3.org/TR/wai-aria/states_and_properties#aria-orientation) - 要素と方向が水平か垂直かを示します。
+- *aria-orientation* - 要素と方向が水平か垂直かを示します。
 
-[aria-setsize](http://www.w3.org/TR/wai-aria/states_and_properties#aria-setsize) - 現在の listitems および treeitem のセット内の項目の数を定義します。 セット内のすべての要素が DOM にある場合は必要ありません。 関連する aria-posinset を参照してください。
+- *aria-setsize* - 現在の listitems および treeitem のセット内の項目の数を定義します。 セット内のすべての要素が DOM にある場合は必要ありません。 関連する *aria-posinset* を参照してください。
 
-[aria-sort-](http://www.w3.org/TR/wai-aria/states_and_properties#aria-sort) テーブルまたはグリッド内の項目を昇順または降順でソートするかどうかを示します。
+- *aria-sort* - テーブルまたはグリッド内の項目を昇順または降順でソートするかどうかを示します。
 
-[aria-valuemax](http://www.w3.org/TR/wai-aria/states_and_properties#aria-valuemax) - 範囲ウィジェットの最大許容値を定義します。
+- *aria-valuemax* - 範囲ウィジェットの最大許容値を定義します。
 
-[aria-valuemin](http://www.w3.org/TR/wai-aria/states_and_properties#aria-valuemin) - 範囲ウィジェットの最小許容値を定義します。
-
-
-
+- *aria-valuemin* - 範囲ウィジェットの最小許容値を定義します。
 

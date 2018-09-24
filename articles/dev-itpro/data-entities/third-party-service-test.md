@@ -18,10 +18,10 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: f3588af514dd2a3a77d03ec4899324df30c88cd8
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 3012c3b492821dc616dc9334b19fde7fbc31d0f4
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -42,6 +42,7 @@ ms.lasthandoff: 08/09/2018
 外部アプリケーションを使用してサービスをテストする前に、Microsoft Azure、および Finance and Operations にアプリケーションを登録する必要があります。
 
 詳細については、以下を参照してください。
+
 - [AAD にアプリケーションを登録する](services-home-page.md#register-a-native-application-with-aad)
 - [Finance and Operations で外部のアプリケーションを登録する](services-home-page.md#register-your-external-application-in-finance-and-operations)
 
@@ -54,13 +55,13 @@ Postman (<https://www.getpostman.com/postman>) は、アプリケーション �
 3. 環境名を入力し、**一括編集**をクリックします。
 4. 次の表に示すとおり、キーと値のペアを入力します。 行ごとに 1 つのペアを入力し、コロン (:) を使用してキーと値を区切ります。
 
-    | キー           | 先頭値                                                                                               |
-    |---------------|-----------------------------------------------------------------------------------------------------|
+    | キー            | 先頭値                                                                                               |
+    |----------------|-----------------------------------------------------------------------------------------------------|
     | tenant\_id     | 前提条件のセットアップ中に参照した Azure テナント ID                            |
     | client\_id     | 前提条件のセットアップ中に登録した Azure AD アプリケーション ID                   |
     | client\_secret | 前提条件の設定中のアプリケーション登録中に生成した秘密キー |
-    | grant\_type    | client\_credentials                                                                                  |
-    | リソース      | Finance and Operations インスタンスのベース URL                                                 |
+    | grant\_type    | client\_credentials                                                                                 |
+    | リソース       | Finance and Operations インスタンスのベース URL                                                 |
 
 5. キーと値のペアが正しく解析できることを確認するには、**キー-値の編集** を選択し、結果を確認します。
 6. 環境ページを閉じます。
@@ -122,16 +123,16 @@ SoapUI (<https://www.soapui.org/>) は、API の開発とテストが関係す�
 1. SoapUI を起動し、**SOAP** ボタンを選択してプロジェクトを作成します。
 2. プロジェクトの情報を記入してください:
 
-   - **プロジェクト名**フィールドに、プロジェクトの名前を入力します。
-   - **初期 WSDL** フィールドに、サービス アドレスを入力し、接尾語 **?wsdl** を追加します。 (サービスの住所は \[Finance and Operations インスタンスのベース URL\]/soap/services/ \[サービス グループ名\] の形式である必要があります。) 詳細については、[サービスのホーム ページ](services-home-page.md) を参照してください。
+    - **プロジェクト名**フィールドに、プロジェクトの名前を入力します。
+    - **初期 WSDL** フィールドに、サービス アドレスを入力し、接尾語 **?wsdl** を追加します。 (サービスの住所は \[Finance and Operations インスタンスのベース URL\]/soap/services/ \[サービス グループ名\] の形式である必要があります。) 詳細については、[サービスのホーム ページ](services-home-page.md) を参照してください。
 
-       たとえば、URL `https://[Finance and Operations base URL]/soap/services/UserSessionService?wsdl` でユーザー セッション サービスについて問い合わせます。
+        たとえば、URL `https://[Finance and Operations base URL]/soap/services/UserSessionService?wsdl` でユーザー セッション サービスについて問い合わせます。
 
-   - **すべての工程でサンプル依頼を作成しますか?** チェック ボックスをオンにします。
+    - **すべての工程でサンプル依頼を作成しますか?** チェック ボックスをオンにします。
 
-     サンプル要求の作成を選択したため、利用可能なサービス操作ごとに 1 つのサンプル要求が作成されます。
+        サンプル要求の作成を選択したため、利用可能なサービス操作ごとに 1 つのサンプル要求が作成されます。
 
-     ![サンプル要求](./media/soapui3.png)
+        ![サンプル要求](./media/soapui3.png)
 
 3. 新しいプロジェクトを右クリックし、**新しいテスト スイート** を選択してテスト スイートを作成します。 このテスト スイートは、Azure AD 認証トークンに対する POST 要求を生成します。
 4. テスト スイートを右クリックし、**新しいテスト ケース** を選択します。
@@ -140,14 +141,12 @@ SoapUI (<https://www.soapui.org/>) は、API の開発とテストが関係す�
 7. テスト ステップ名を入力します。 POST 要求に使用する必要のあるエンドポイントは、`[https://login.microsoftonline.com/[tenant_id]/oauth2/token](https://login.microsoftonline.com/%5btenant_id%5d/oauth2/token)` です。
 8. **パラメーター** の横にある [プラス記号 (**+**)] ボタンを使用して、次の値を追加します。
 
-
-   |   パラメーター    |                              先頭値                              |
-   |----------------|-----------------------------------------------------------------|
-   |  grant\_type   |                       client\_credentials                       |
-   |   client\_id   |  Azure AD アプリケーション登録のアプリケーション ID  |
-   | client\_secret | Azure AD アプリケーション登録の秘密キーの値 |
-   |    リソース    |         Finance and Operations インスタンスの URL          |
-
+    | パラメーター      | 先頭値                                                           |
+    |----------------|-----------------------------------------------------------------|
+    | grant\_type    | client\_credentials                                             |
+    | client\_id     | Azure AD アプリケーション登録のアプリケーション ID   |
+    | client\_secret | Azure AD アプリケーション登録の秘密キーの値 |
+    | リソース       | Finance and Operations インスタンスの URL                  |
 
 9. パラメーターが POST 本体にあることを確認するには、**Post QueryString** を選択し、**再生** を選択します。 アクセス トークンは応答ウィンドウに戻す必要があります。 **JSON 応答** タブを使用すると、値が最も読みやすくなります。アクセス トークンをコピーして、後続の要求の認証ヘッダーで使用できるようにします。
 10. **GetUserSessionInfo**SOAP サンプル要求で、最初の要求ノードに戻ります。 左側の要求ウィンドウで、プラス記号 (**+**) ボタンを選択して、**認証**というヘッダーを追加します。 アクセストークンを **Value** フィールドに貼り付け、プレフィックス **Bearer** を追加します。

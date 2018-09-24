@@ -28,6 +28,8 @@ ms.lasthandoff: 08/09/2018
 
 # <a name="implement-finance-and-operations-retail-projects"></a>Finance and Operations Retail プロジェクトを実装してください
 
+[!include [banner](../../includes/banner.md)]
+
 このトピックでは、Retail プロジェクトの新しい実装者が複雑さを回避することができるように、実装プロセスの重要な側面について役立つその他のトピックへのリンクを提供します。 記載されているガイドラインは、以前の実装プロジェクト中に収集されたベスト プラクティスです。 したがって、実装者は手順で行き詰まることく、実際の機能に焦点を合わせることができます。
 
 <https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/index> や <https://dynamicsnotes.com> などのブログや他の場所のページからでも、トピックの一部の情報を見つけることができます。 それらのブログとページを個別に読むことができます。また、最初から最後までこのトピックを読んで、実装プロセス中にサブトピック内のリンクされたドキュメントを確認することもできます。

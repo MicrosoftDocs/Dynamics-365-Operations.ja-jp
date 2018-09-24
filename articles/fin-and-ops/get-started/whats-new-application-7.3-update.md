@@ -16,10 +16,10 @@ ms.author: tfehr
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 5bbcb2189aaf7d3c621ad5723ce8c010c6450def
+ms.sourcegitcommit: ce9c24a0a89dd4e6a0f3f2c7789b4f553d88d412
+ms.openlocfilehash: 4ce9ee8cd854075c4a23ad3a9df04f312c8e4fd7
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -198,7 +198,7 @@ Power BI を使用した財務報告に関する追加情報を表示するに�
 
 ### <a name="more-information"></a>詳細情報
 -  [最適化アドバイザー (ビデオ)](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
--  [最適化アドバイザーのルールの作成](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/sysadmin/optimization-advisor)
+-  [最適化アドバイザーのルールの作成](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/sysadmin/create-rules-optimization-advisor)
 
 <a name="partial-release-of-materials-and-release-materials-per-production-operation"></a>材料の部分的なリリースおよび生産工程あたりのリリース材料 
 ----------------------------------------------------------------------------

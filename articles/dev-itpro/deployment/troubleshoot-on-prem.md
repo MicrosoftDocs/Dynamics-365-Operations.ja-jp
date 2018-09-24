@@ -18,10 +18,10 @@ ms.author: sarvanis
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 237d6fd2f3647fecb89f5672a1209dc7b0be7e1b
+ms.sourcegitcommit: ce9c24a0a89dd4e6a0f3f2c7789b4f553d88d412
+ms.openlocfilehash: 352c4a8a58beeaa0f26f6a6119a7c23c3fb0567b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 # <a name="troubleshoot-on-premises-deployments"></a>オンプレミス配置のトラブルシューティング
@@ -77,7 +77,7 @@ Service Fabric Explorer でローカル エージェントなどのステート�
 - AX-BridgeService 
 
 ### <a name="service-fabric-explorer"></a>Service Fabric Explorer
-クラスタ、アプリケーション、およびノードの状態に注意してください。 Service Fabric Explorer にアクセスする方法については、[Service Fabric Explorer にアクセスする](troubleshoot-on-prem.md#accessing-service-fabric-explorer)を参照してください。
+クラスタ、アプリケーション、およびノードの状態に注意してください。 Service Fabric Explorer にアクセスする方法については、[Service Fabric Explorer にアクセスする](troubleshoot-on-prem.md#access-service-fabric-explorer)を参照してください。
 
 #### <a name="error-partition-is-below-target-replica-or-instance-count"></a>エラー、「パーティションがターゲット レプリカまたはインスタンス数を下回っています」
 このエラーはルート エラーではありません。 各ノードのステータスが準備できていないことを示します。 AXSFType (AOS) では、ステータスがまだ **InBuild** である可能性があります。
@@ -417,7 +417,7 @@ Get-ServiceFabricClusterUpgrade
 
 新しい Service Fabric リリースの時期については、[Azure Service Fabric チーム ブログ](https://blogs.msdn.microsoft.com/azureservicefabric/)を参照してください。
 
-アップグレード後に Service Fabric Explorer で警告が表示された場合は、ノードを記録し、ノード、アプリケーション、およびコードの再起動を展開して再起動してください。 手順については、[アプリケーションを再起動する方法 (たとえば、AOS)](troubleshoot-on-prem.md#how-to-restart-applications-example-aos) を参照してください。
+アップグレード後に Service Fabric Explorer で警告が表示された場合は、ノードを記録し、ノード、アプリケーション、およびコードの再起動を展開して再起動してください。
  
 ## <a name="error-unable-to-load-dll-fabricclientdll"></a>エラー、「DLL 'FabricClient.dll' を読み込むことができません」
 このエラーが発生した場合は、閉じて、Windows PowerShell を再起動します。 エラーが引き続き発生する場合は、コンピューターを再起動します。

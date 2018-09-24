@@ -18,10 +18,10 @@ ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 6027b63a72be8014f11fd95877794845c4ceccf2
+ms.sourcegitcommit: 96a9075294c1f2a9cfde03be1aaaa26af90de4c2
+ms.openlocfilehash: 6112bb81f4ccf140bf9c6da5871951c0e44ca2c0
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/04/2018
 
 ---
 
@@ -52,7 +52,7 @@ ISV は独自のライセンスを個別に生成し、ソリューションに�
 
 ### <a name="there-are-two-types-of-license-boolean-and-number"></a>ライセンスには、ブール値と数値の 2 種類があります
 
-ISV は**ブール値**および**番号**の 2 つのタイプを作成できます。 ISV は、いずれかの種類のライセンスと有効期限を関連付けることができます。 この有効期限は ISV ライセンスにのみ適用され、システムの有効期限とは無関係です。 ブール値ライセンスは、単純な有効化ライセンスです。 ライセンスのタイプ (**ブール値** または**数字**) は、ライセンス コード ノードのプロパティによって設定されます。 ISV は、独自のカスタム ロジックを記述し、ISV ライセンスで提供されている数を確認し、そのソリューションがライセンス条件内で使用されていることを確認できます。 詳細については、「<https://msdn.microsoft.com/en-us/library/jj677284.aspx>」を参照してください。
+ISV は**ブール値**および**番号**の 2 つのタイプを作成できます。 ISV は、いずれかの種類のライセンスと有効期限を関連付けることができます。 この有効期限は ISV ライセンスにのみ適用され、システムの有効期限とは無関係です。 ブール値ライセンスは、単純な有効化ライセンスです。 ライセンスのタイプ (**ブール値** または**数字**) は、ライセンス コード ノードのプロパティによって設定されます。 ISV は、独自のカスタム ロジックを記述し、ISV ライセンスで提供されている数を確認し、そのソリューションがライセンス条件内で使用されていることを確認できます。 詳細については、[ISV のライセンス フレームワーク](https://msdn.microsoft.com/en-us/library/jj677284.aspx)を参照してください。
 
 ### <a name="license-validation-errors"></a>ライセンス検証エラー
 
@@ -208,7 +208,7 @@ ISV には証明機関 (CA) から有効な Authenticode 証明書 (X.509) が�
 
         makecert -r -pe -n "CN=IsvCertTestAuthority O=IsvCertTestAuthority" -ss CA -sr LocalMachine -a sha256 -len 2048 -cy authority -sky signature -b 01/01/2016 -sv c:\temp\CA.pvk c:\temp\CA.cer
 
-    詳細については、「<https://msdn.microsoft.com/en-us/library/windows/desktop/aa386968(v=vs.85).aspx>」を参照してください。
+    詳細については、[MakeCert](https://msdn.microsoft.com/en-us/library/windows/desktop/aa386968(v=vs.85).aspx) のドキュメントを参照してください。
 
 2.  CA を使用して証明書を作成します。
 

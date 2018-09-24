@@ -18,10 +18,10 @@ ms.author: kfend
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 178033906e296f250caaf4d2b1d0cc10edd760b0
+ms.sourcegitcommit: 96a9075294c1f2a9cfde03be1aaaa26af90de4c2
+ms.openlocfilehash: 53865c47b9a66c6fa292b14590d962721bdde0db
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/04/2018
 
 ---
 
@@ -30,6 +30,7 @@ ms.lasthandoff: 08/09/2018
 [!include [banner](../../includes/banner.md)]
 
 > [!NOTE] 
+
 > これは、予備的なプレリリース ドキュメントで、予告なしに変更される場合があります。 ここで提供されている情報の正確さは保障されていません。 セキュリティ開発ツールをインストールする前に、次の前提条件を満たしていることを仮定します。
 
 -   Microsoft Dynamics AX 2012 の開発環境を使い慣れています。
@@ -49,7 +50,7 @@ ms.lasthandoff: 08/09/2018
 3.  Microsoft ソフトウェア ライセンス条件に同意し、**インストール**をクリックします。
 4.  ツールが正常にインストールされたことを示すメッセージが表示されたら、**完了** をクリックします。 **インストール** **ウィザード**の実行が完了すると、ファイルは次の場所で使用できます。
     -   64 ビット システム用: %ProgramFiles (x86)%Microsoft%Security 開発ツール
-    -   32 ビット システム用: %ProgramFiles%Microsof%tSecurity 開発ツール
+    -   32 ビット システム用: %ProgramFiles%Microsoft%Security 開発ツール
 
 ### <a name="import-and-compile-the-tool"></a>ツールのインポートおよびコンパイル
 

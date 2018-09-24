@@ -18,10 +18,10 @@ ms.author: tabell
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 0ac74a100aa66af7a9c4bd91a2f3b0ba78cb4cfb
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 1b3608db06ec29b1d48187465d2fb99580e4ecde
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 08/09/2018
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Finance and Operations database のデータベースをファイルにエクスポートし、そのファイルを同じインスタンスまたはアプリケーションの別のインスタンスに再度インポートする方法について説明します。 このステップは、非実稼働環境でのみ使用できます。 
+このトピックでは、Microsoft Dynamics 365 for Finance and Operations database のデータベースをファイルにエクスポートし、そのファイルを同じインスタンスまたはアプリケーションの別のインスタンスに再度インポートする方法について説明します。 このステップは、非実稼働環境でのみ使用できます。
 
 > [!NOTE]
 > このトピックは、サンド ボックスのユーザー受け入れテスト (UAT) 環境に接続されている Microsoft Azure SQL データベースに適用されます。
@@ -43,7 +43,7 @@ Finance and Operations データベース プロセスのコピーを保持す�
 Microsoft は Azure SQL データベース環境を過去 35 日間以内の特定の時点に復元できる標準機能も提供しています。 この復元はサービス要求を介して行われます。 詳細については、[非実稼働環境でのポイントインタイム データベース復元の要求](request-point-in-time-restore.md) を参照してください。
 
 > [!IMPORTANT]
-> このトピックでは、Finance and Operations データベースのコピーを保持する、サポートされている唯一の方法について説明します。 Finance and Operations 環境で、Azure SQL データベースのコピーを実行し続けることはできません。 したがって、CREATE DATABASE AS COPY OF ステートメントの使用は許可されていません。 7 日以上前の Azure SQL データベースのサポートされていないコピーは警告なしに削除されます。 
+> このトピックでは、Finance and Operations データベースのコピーを保持する、サポートされている唯一の方法について説明します。 Finance and Operations 環境で、Azure SQL データベースのコピーを実行し続けることはできません。 したがって、CREATE DATABASE AS COPY OF ステートメントの使用は許可されていません。 7 日以上前の Azure SQL データベースのサポートされていないコピーは警告なしに削除されます。
 
 ## <a name="prerequisites"></a>前提条件
 サンドボックス環境からデータベースをエクスポートするには、その環境で Application Object Server (AOS) を実行しているコンピュータに、最新バージョンの Microsoft SQL Server Management Studio for Microsoft SQL Server 2016 をインストールする必要があります。 その後、AOS コンピューターで、エクスポートを実行してください。 この要件は 2 つの理由があります。
@@ -124,14 +124,15 @@ SqlPackage.exe /a:import /sf:D:\Exportedbacpac\my.bacpac /tsn:<Azure DSQL databa
 - **sf(ソース ファイル)** – インポートするファイルのパスと名前。
 - **tu(ターゲット ユーザー)** – ターゲットの Azure SQL データベース インスタンスの SQL ユーザー名。 標準の **sqladmin** ユーザーを使用することをお勧めします。 LCS プロジェクトからは、このユーザーのパスワードを取得できます。
 - **tp(ターゲット パスワード)** – ターゲットの Azure SQL データベース ユーザーのパスワード。
-- **DatabaseServiceObjective** - S1、P2、P4 などのデータベースのパフォーマンス レベルを指定します。 パフォーマンス要件を満たし、サービス契約を遵守するには、現在の Finance and Operations データベース (AXDB) と同じサービス目標レベルをこの環境で使用します。 現在のデータベースのサービス レベル目標を照会するには、次のクエリを実行します。
-  ```
-  SELECT  d.name,   
-     slo.*    
-  FROM sys.databases d   
-  JOIN sys.database_service_objectives slo    
-  ON d.database_id = slo.database_id;  
-  ```
+- **DatabaseServiceObjective** – S1、P2、P4 などのデータベースのパフォーマンス レベルを指定します。 パフォーマンス要件を満たし、サービス契約を遵守するには、現在の Finance and Operations データベース (AXDB) と同じサービス目標レベルをこの環境で使用します。 現在のデータベースのサービス レベル目標を照会するには、次のクエリを実行します。
+
+    ```
+    SELECT  d.name,   
+        slo.*    
+    FROM sys.databases d   
+    JOIN sys.database_service_objectives slo    
+    ON d.database_id = slo.database_id;  
+    ```
 
 ### <a name="run-a-script-to-update-the-finance-and-operations-database"></a>Finance and Operations データベースを更新するスクリプトを実行する
 
@@ -211,7 +212,7 @@ DEALLOCATE retail_ftx;
 
 ### <a name="re-provision-retail-components-in-the-target-environment"></a>対象となる環境で Retail コンポーネントを再プロビジョニング
 
-データベースを別の環境で復元またはインポートする場合のみ再プロビジョニングが必要です。 
+データベースを別の環境で復元またはインポートする場合のみ再プロビジョニングが必要です。
 
 [!include [environment-reprovision](../includes/environment-reprovision.md)]
 
