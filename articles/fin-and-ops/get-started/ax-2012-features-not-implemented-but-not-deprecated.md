@@ -3,7 +3,7 @@ title: "延期された AX 2012 の機能"
 description: "このトピックでは、Microsoft Dynamics AX 2012 の延期された機能と、その機能が AX 7.0 リリース以降に実装されているかどうかを示しています。"
 author: sericks007
 manager: AnnBe
-ms.date: 04/02/2018
+ms.date: 08/24/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: f1a7e416d79a796c46e4b1b21675dd8214ba2420
+ms.sourcegitcommit: 4198d50bd0bce247bfe8178671264879e95c849e
+ms.openlocfilehash: 41799a706655f49ca4ee4d44c576d34022e2027b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 10/01/2018
 
 ---
 
