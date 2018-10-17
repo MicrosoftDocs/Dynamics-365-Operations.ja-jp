@@ -18,10 +18,10 @@ ms.author: lolsen
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 11
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: df2794b3c690acd7a57801fede51c3792c343202
+ms.sourcegitcommit: 3b7c2b72d97c42076e1f759e9c11c74cb17476c1
+ms.openlocfilehash: d44391c1d630c5aea686e65a016fc33137edeb26
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 10/17/2018
 
 ---
 
@@ -60,6 +60,6 @@ ms.lasthandoff: 08/09/2018
 
 <span data-ttu-id="fa0cd-131">これらの手順で説明するクラス、インターフェイス、および拡張機能を次の図に示します。</span><span class="sxs-lookup"><span data-stu-id="fa0cd-131">The classes, interfaces, and extensions described in these steps are shown in the following diagram.</span></span>
 
-![MapClassExtensions](media/MapsWithVersioning3.png)
+![MapClassExtensions](media/TableMaps.png)
 
 

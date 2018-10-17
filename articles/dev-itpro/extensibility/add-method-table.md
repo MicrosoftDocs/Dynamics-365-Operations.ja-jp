@@ -18,10 +18,10 @@ ms.author: ivanv
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 4
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: e6366831367984659f5d311d8c7005a7e9cdf061
+ms.sourcegitcommit: 3b7c2b72d97c42076e1f759e9c11c74cb17476c1
+ms.openlocfilehash: 5dc3c0f1ec63caa84dfe07f35f53f02205c375a4
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 10/17/2018
 
 ---
 
@@ -37,9 +37,9 @@ ms.lasthandoff: 08/09/2018
 
 ```
 [ExtensionOf(tableStr(InventTable))]
-final class MyInventTable_Extension
+final class InventTableMy_Extension
 {
-    public void defaultMyInventLocationId()
+    public void myDefaultInventLocationId()
     {
         // This would have partner specific logic to initialize the new field.
         this.MyInventLocationId = this.inventLocationId();
@@ -58,7 +58,7 @@ final class MyInventTable_Extension
 <span data-ttu-id="353ff-124">たとえば、イベント ハンドラーから新しいメソッドを使用できるようになります。</span><span class="sxs-lookup"><span data-stu-id="353ff-124">Now you can use your new method, for example, from an event handler:</span></span>
 
 ```
-class MyInventTable_EventHandler
+class InventTableMy_EventHandler
 {
     [DataEventHandler(tableStr(InventTable), DataEventType::Inserting)]
     public static void InventTable_onInserting(Common sender, DataEventArgs e)
