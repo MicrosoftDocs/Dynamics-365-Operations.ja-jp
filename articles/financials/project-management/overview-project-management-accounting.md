@@ -19,10 +19,10 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: e927e45511c5e6c232457a76b2d1fab160fe0f5a
+ms.sourcegitcommit: 1aae5797e37b846a38f957b02870e213da528a2d
+ms.openlocfilehash: c21587499a68143d403760ad32bea65948d7fbc9
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 10/16/2018
 
 ---
 
@@ -35,7 +35,9 @@ ms.lasthandoff: 08/09/2018
 <span data-ttu-id="cdcb9-105">プロジェクトは、サービスの提供、製品の生産、または成果の実現のために設計された活動のグループです。</span><span class="sxs-lookup"><span data-stu-id="cdcb9-105">A project is a group of activities that is designed to provide a service, produce a product, or achieve a result.</span></span> <span data-ttu-id="cdcb9-106">プロジェクトは、リソースを消費し、収益または資産の形式で財務結果を生成します。</span><span class="sxs-lookup"><span data-stu-id="cdcb9-106">Projects consume resources and generate financial results in the form of revenues or assets.</span></span>
 
 ## <a name="projects-across-industries"></a><span data-ttu-id="cdcb9-107">業界全体にわたるプロジェクト</span><span class="sxs-lookup"><span data-stu-id="cdcb9-107">Projects across industries</span></span>
-<span data-ttu-id="cdcb9-108">プロジェクト管理および会計機能は次の図に示すように、複数の業界で使用できます。</span><span class="sxs-lookup"><span data-stu-id="cdcb9-108">The project management and accounting functionality can be used in multiple industries, as shown in the following illustration.</span></span> <span data-ttu-id="cdcb9-109">[![業界全体にわたるプロジェクト](./media/projects-accross-industries.jpg)](./media/projects-accross-industries.jpg)</span><span class="sxs-lookup"><span data-stu-id="cdcb9-109">[![Projects accross industries](./media/projects-accross-industries.jpg)](./media/projects-accross-industries.jpg)</span></span> 
+<span data-ttu-id="cdcb9-108">プロジェクト管理および会計機能は次の図に示すように、複数の業界で使用できます。</span><span class="sxs-lookup"><span data-stu-id="cdcb9-108">The project management and accounting functionality can be used in multiple industries, as shown in the following illustration.</span></span>
+
+<span data-ttu-id="cdcb9-109">[![業界全体にわたるプロジェクト](./media/projects-accross-industries.jpg)](./media/projects-accross-industries.jpg)</span><span class="sxs-lookup"><span data-stu-id="cdcb9-109">[![Projects accross industries](./media/projects-accross-industries.jpg)](./media/projects-accross-industries.jpg)</span></span> 
 
 <span data-ttu-id="cdcb9-110">コール センターでは、チケットは、呼び出しを解決するために必要な一連の活動について説明するために使用できます。</span><span class="sxs-lookup"><span data-stu-id="cdcb9-110">In a call center, a ticket can be used to describe the set of actions that are required to resolve a call.</span></span> <span data-ttu-id="cdcb9-111">経営コンサルティング会社や技術コンサルティング会社、広告代理店などのコンサルティング会社は、プロジェクトとしての活動を参照しています。</span><span class="sxs-lookup"><span data-stu-id="cdcb9-111">Consulting companies, such as management or technical consulting organizations or advertising agencies, refer to their activities as projects.</span></span> <span data-ttu-id="cdcb9-112">マーケティングでは、キャンペーンは配信されなければならない一連の作業を表します。</span><span class="sxs-lookup"><span data-stu-id="cdcb9-112">In marketing, a campaign represents a set of work that must be delivered.</span></span> <span data-ttu-id="cdcb9-113">プロジェクト ベースの製造では、製造オーダーは、完成品を製造するために必要なさまざまな作業を関連付けます。</span><span class="sxs-lookup"><span data-stu-id="cdcb9-113">In project-based manufacturing, a production order relates the various work that must be done to produce some finished goods.</span></span> <span data-ttu-id="cdcb9-114">それらに使用されている名前に関係なく、これらのプロジェクトは、リソース、スケジュール、および原価を含み、Microsoft Dynamics 365 for Finance and Operations のプロジェクト管理および会計機能は、これらのプロジェクトの計画、実行、および分析に役立ちます。</span><span class="sxs-lookup"><span data-stu-id="cdcb9-114">Whatever name is used for them, these projects involve resources, schedules, and costs, and the project management and accounting functionality in Microsoft Dynamics 365 for Finance and Operations can help with the planning, execution, and analysis of these projects.</span></span>
 
