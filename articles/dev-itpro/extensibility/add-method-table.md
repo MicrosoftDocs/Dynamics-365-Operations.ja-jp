@@ -37,9 +37,9 @@ ms.lasthandoff: 08/09/2018
 
 ```
 [ExtensionOf(tableStr(InventTable))]
-final class MyInventTable_Extension
+final class InventTableMy_Extension
 {
-    public void defaultMyInventLocationId()
+    public void myDefaultInventLocationId()
     {
         // This would have partner specific logic to initialize the new field.
         this.MyInventLocationId = this.inventLocationId();
@@ -58,7 +58,7 @@ final class MyInventTable_Extension
 たとえば、イベント ハンドラーから新しいメソッドを使用できるようになります。
 
 ```
-class MyInventTable_EventHandler
+class InventTableMy_EventHandler
 {
     [DataEventHandler(tableStr(InventTable), DataEventType::Inserting)]
     public static void InventTable_onInserting(Common sender, DataEventArgs e)

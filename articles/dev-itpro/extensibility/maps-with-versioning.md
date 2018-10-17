@@ -60,6 +60,6 @@ ms.lasthandoff: 08/09/2018
 
 これらの手順で説明するクラス、インターフェイス、および拡張機能を次の図に示します。
 
-![MapClassExtensions](media/MapsWithVersioning3.png)
+![MapClassExtensions](media/TableMaps.png)
 
 
