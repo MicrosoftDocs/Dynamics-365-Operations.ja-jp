@@ -18,10 +18,10 @@ ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: ec17f99015d5159ab3eb6cbaa6769106590a2d16
+ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
+ms.openlocfilehash: 8f8e9122d5636e414c77dc78f8eea3ef891181cc
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 09/17/2018
 
 ---
 
@@ -40,7 +40,7 @@ ms.lasthandoff: 04/20/2018
 - [継続的ビルドとテストの自動化を使用した開発者トポロジの展開](../perf-test/continuous-build-test-automation.md)
 - [テストと検証](../perf-test/testing-validation.md)
 - [PERF103: PerfSDK および Visual Studio Online によるマルチ ユーザー テストの概要](../perf-test/perfsdk-tutorial.md)
-- [Retail SDK と継続的ビルド システムとの統合 (VSTS)](../../retail/dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md)
+- [Retail SDK を継続的ビルド システム (Azure DevOps) と統合](../../retail/dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md)
 
 ### <a name="advanced-topics-in-build-automation"></a>ビルド自動化に関する詳細
 - [ビルド出力からテスト パッケージを除外](exclude-test-packages.md)

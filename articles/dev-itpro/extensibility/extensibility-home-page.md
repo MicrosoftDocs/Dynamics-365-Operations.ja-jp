@@ -18,23 +18,23 @@ ms.author: fdahl
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: e69dcb250385b375a356ce800f00229035bcaaf5
+ms.sourcegitcommit: 5ea198d50a34a89828277f924848a7f869e57555
+ms.openlocfilehash: 7595076cdc714b28503a9d12589b29c5659f863b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/06/2018
 
 ---
 # <a name="extensibility-home-page"></a>拡張機能のホーム ページ
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Finance and Operations は、パートナー、付加価値再販業者によって、さらに一部の顧客によって、大幅にカスタマイズされます。 これは、アプリケーション コードのオーバーレイによって長くサポートされてきた製品の強みです。 柔軟なサービスと頻繁な更新によるクラウドへの移行には、更新によるカスタム ソリューションへの影響を受けにくくする、侵入性の低いカスタマイズが必要です。 この新しいモデルは *拡張性* と呼ばれ、オーバーレイによるカスタマイズに取って代わります。 
+Microsoft Dynamics 365 for Finance and Operations は、パートナー、付加価値再販業者 (VAR) や、さらには一部の顧客によって大幅にカスタマイズされます。 製品をカスタマイズする機能は、アプリケーション コードのオーバーレイによって長くサポートされてきた強みです。 クラウドへの移行を、柔軟なサービスの提供や頻繁な更新と合わせて行う場合、更新がカスタム ソリューションに及ぼす影響を小さくとどめるため、侵入性の低いカスタマイズが必要となります。 この新しいモデルは *拡張性* と呼ばれており、オーバーレイによるカスタマイズに取って代わる存在となりました。
 
-拡張性は、Microsoft Dynamics 365 for Retail と Microsoft Dynamics 365 for Finance and Operations での唯一のカスタマイズ フレームワークです。 オーバーレイはサポートされません。
+拡張性は、Microsoft Dynamics 365 for Finance and Operations と Microsoft Dynamics 365 for Retail における唯一のカスタマイズ フレームワークです。 オーバーレイはサポートされません。
 
 ## <a name="introduction"></a>概要
 
-この概要のトピックには、カスタマイズがオーバーレイから純粋な拡張ベース モデルにいつ移行したかに関する情報を含む、すべてのカスタマイズに関する一般情報を示します。 このトピックでは、よく寄せられる質問および回答と共に、Microsoft への拡張性の要求を記録する方法についても説明します。
+この概要のトピックでは、カスタマイズに関する一般情報を取り上げています。 カスタマイズからオーバーレイを経て純粋な拡張ベース モデルに至る場合などに関する情報が含まれます。 このトピックでは、Microsoft への拡張性の要求を記録する方法と、よく寄せられる質問 (FAQ) への回答についても解説します。
 
 + [アプリケーション機能拡張計画](extensibility-roadmap.md)
 + [拡張性の要求](extensibility-requests.md) 
@@ -49,26 +49,26 @@ Microsoft Dynamics 365 for Finance and Operations は、パートナー、付加
 
 ## <a name="getting-started"></a>はじめに
 
-「はじめに」では、拡張機能の構築と、オーバーレイ コードに基づいた現在のソリューションの拡張機能ベースソリューションへの移行に取り組みます。 このセクションには、簡単なカスタマイズについて説明した実践ラボが含まれています。
+このセクションのトピックは、拡張機能の構築を開始するのに役立ちます。 また、オーバーレイ コードに基づいた現在のソリューションを、拡張機能ベースのソリューションに移行する上でも参考になる内容です。 このセクションには、簡単なカスタマイズについて説明した実践ラボが含まれています。
 
 + [オーバーレイから拡張機能への移行](migrate-overlayer-extension.md)
 + [拡張機能を使用したモデル要素のカスタマイズ (チュートリアル)](customize-model-elements-extensions.md)
 + [カスタマイズ: オーバーレイと拡張機能](customization-overlayering-extensions.md)
 <!--+ [Customize by overlayering metadata source code (Office Mix)](https://mix.office.com/watch/1ol6ov90jrd4w)-->
 
-## <a name="extensibility-fundamentals"></a>拡張性の基本
+## <a name="fundamentals-on-extensions"></a>拡張機能の基本
 
-拡張性の基本では、拡張機能の作成方法に関する原則や手法について説明します。 以下のトピックの指針では、名前付けのガイドラインも含め、拡張機能を使用してカスタマイズに取り組む方法について説明します。 また、これらのトピックでは、拡張機能やコマンド チェーンなどの Foundation フレームワークについても説明します。
+このセクションでは、拡張機能の作成に関する基本や原則、手法について説明します。 以下のトピックの指針では、拡張機能を使用してカスタマイズに取り組む方法について説明します。 この原則には、名前付けのガイドラインが含まれています。 また、これらのトピックでは、拡張機能やコマンド チェーンなど、基盤となるフレームワークについても説明します。
 
 + [侵入的なカスタマイズ](intrusive-customizations.md)
 + [クラスの拡張機能](class-extensions.md)
 + [クラスの拡張機能: メソッドのラッピングとコマンド チェーン](method-wrapping-coc.md)
 + [名前付けのガイドライン](naming-guidelines-extensions.md)
 + [オーバレイを拡張機能にリファクタリングできるように、モデルの制限を緩和する](refactoring-over-layering.md)
-  
-## <a name="how-do-i"></a>操作方法
 
-ここでは、特定のオブジェクト タイプまたはコードのカスタマイズに関する「操作方法」 について説明します。 このトピックのほとんどは、簡潔で要点を押さえています。 ここには多くのトピックがあるので、特定のトピックの検索が実際に役立つことがあります。
+## <a name="how-do-i-create-extensions"></a>拡張機能の作成方法
+
+このセクションには、特定のオブジェクト タイプやコードをカスタマイズする方法について解説した トピックが含まれています。 このトピックのほとんどは、簡潔で要点を押さえた内容となっています。 ここには多くのトピックがあるため、特定のトピックを検索すると便利にご利用いただける場合があります。
 
 ### <a name="data-types"></a>データ型
 + [列挙値の追加](add-enum-value.md)
@@ -101,9 +101,9 @@ Microsoft Dynamics 365 for Finance and Operations は、パートナー、付加
 ### <a name="labels"></a>ラベル
 + [ラベルの変更](change-label.md)
 
-## <a name="blog-posts"></a>ブログの投稿
+### <a name="blog-posts"></a>ブログの投稿
 
-カスタマイズに関する情報は、さまざまなトピックが話し合われるさまざまなブログでも共有されます。 このセクションには、これらのブログの一部への参照が含まれています。
+カスタマイズに関する情報は、さまざまなトピックが取り上げられるブログでも共有されます。 このセクションには、そのようなブログの一部への参照が含まれています。
 
 + [Dynamics 365 for Finance and Operations の機能の拡張](https://blogs.msdn.microsoft.com/mfp/2017/01/31/extending-dynamics-365-for-operations/)
 + [クラスの状態の機能拡張](https://blogs.msdn.microsoft.com/mfp/2017/01/31/extending-class-state/)
@@ -114,4 +114,21 @@ Microsoft Dynamics 365 for Finance and Operations は、パートナー、付加
 + [onValidatingWrite へのサブスクライブ](https://blogs.msdn.microsoft.com/mfp/2017/01/31/subscribing-to-onvalidatingwrite/)
 + [在庫分析コードの機能拡張](https://blogs.msdn.microsoft.com/mfp/2017/08/10/extensible-inventory-dimensions/)
 + [Dynamics 365 for Finance and Operations での拡張機能の考え方の活用](https://blogs.msdn.microsoft.com/axinthefield/embrace-the-extensions-mindset-with-dynamics-365-for-finance-and-operations/)
+
+## <a name="how-do-i-create-an-extensible-solution"></a>拡張可能なソリューションを作成するには
+
+このセクションでは、コードのユーザーがソリューションを拡張できるように、拡張可能なソリューションを作成する方法や、ソリューションを拡張可能にする方法に関するベスト プラクティスについて説明します。
+
++ [拡張可能なコードの記述](writing-extensible-code.md)
++ [クラス](extensible-classes.md)
++ [メソッド](extensible-methods.md)
++ [フォーム](extensible-forms.md)
++ [拡張データ型](extensible-edts.md)
++ [拡張可能な列挙](extensible-enums.md)
++ [委任](extensible-code-delegates.md)
++ [テーブル](extensible-tables.md)
++ [メソッドの拡張属性](extensibility-attributes.md)
+
+## <a name="breaking-changes"></a>重大な変更
+ソリューションを拡張可能にすると、後で拡張ポイントを壊さずに済むことにもなります。 消費者に重大な影響が及ぶのを防ぐ指針に関しては、[重大な変更](breaking-changes.md) をご覧ください。
 
