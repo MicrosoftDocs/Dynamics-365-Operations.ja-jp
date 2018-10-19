@@ -23,49 +23,49 @@ ms.contentlocale: ja-jp
 ms.lasthandoff: 09/14/2018
 
 ---
-# <a name="create-a-closed-ended-question"></a><span data-ttu-id="72454-103">選択式の質問の作成</span><span class="sxs-lookup"><span data-stu-id="72454-103">Create a closed ended question</span></span>
+# <a name="create-a-closed-ended-question"></a><span data-ttu-id="34e2d-103">選択式の質問の作成</span><span class="sxs-lookup"><span data-stu-id="34e2d-103">Create a closed ended question</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="72454-104">選択式の質問には、回答者が選択できるためのオプションが用意されます。</span><span class="sxs-lookup"><span data-stu-id="72454-104">Closed-ended questions allow you to provide options for the respondent to choose from.</span></span> <span data-ttu-id="72454-105">最初に、回答と回答グループを作成する必要があり、その後回答グループを使用する質問を作成します。</span><span class="sxs-lookup"><span data-stu-id="72454-105">First, you need to create the Answer group with the answers, then create the question that will use the answer group.</span></span> <span data-ttu-id="72454-106">この手順の作成に使用するデモ データの会社は USMF です。</span><span class="sxs-lookup"><span data-stu-id="72454-106">The demo data company used to create this procedure is USMF.</span></span>
+<span data-ttu-id="34e2d-104">選択式の質問には、回答者が選択できるためのオプションが用意されます。</span><span class="sxs-lookup"><span data-stu-id="34e2d-104">Closed-ended questions allow you to provide options for the respondent to choose from.</span></span> <span data-ttu-id="34e2d-105">最初に、回答と回答グループを作成する必要があり、その後回答グループを使用する質問を作成します。</span><span class="sxs-lookup"><span data-stu-id="34e2d-105">First, you need to create the Answer group with the answers, then create the question that will use the answer group.</span></span> <span data-ttu-id="34e2d-106">この手順の作成に使用するデモ データの会社は USMF です。</span><span class="sxs-lookup"><span data-stu-id="34e2d-106">The demo data company used to create this procedure is USMF.</span></span>
 
 
-## <a name="create-an-answer-group"></a><span data-ttu-id="72454-107">回答グループの作成</span><span class="sxs-lookup"><span data-stu-id="72454-107">Create an answer group</span></span>
-1. <span data-ttu-id="72454-108">[アンケート] > [設計] > [回答グループ] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="72454-108">Go to Questionnaire > Design > Answer groups.</span></span>
-2. <span data-ttu-id="72454-109">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="72454-109">Click New.</span></span>
-3. <span data-ttu-id="72454-110">[回答グループ] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="72454-110">In the Answer group field, type a value.</span></span>
-4. <span data-ttu-id="72454-111">[説明] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="72454-111">In the Description field, type a value.</span></span>
-    * <span data-ttu-id="72454-112">回答グループが質問に使用されるたびに、必要に応じて別の順序で回答をランダムに設定するランダム化機能を使用します。</span><span class="sxs-lookup"><span data-stu-id="72454-112">Use the Randomize functionality to randomly place the answers in a different order each time the answer group is used for a question.</span></span>  
-5. <span data-ttu-id="72454-113">[回答] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="72454-113">Click Answer.</span></span>
-6. <span data-ttu-id="72454-114">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="72454-114">Click New.</span></span>
-    * <span data-ttu-id="72454-115">ランダム化機能が回答グループに対して選択されている場合を除いて、番号順序は回答が表示される順序を制御します。</span><span class="sxs-lookup"><span data-stu-id="72454-115">Sequence number controls the order in which the answers are displayed, unless Randomize is selected for the Answer group.</span></span>  
-    * <span data-ttu-id="72454-116">アンケートの採点に対して回答するために、ポイントは支給できます。</span><span class="sxs-lookup"><span data-stu-id="72454-116">Points can be awarded to answers for use in scoring the questionnaire.</span></span>  
-7. <span data-ttu-id="72454-117">[点数] フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="72454-117">In the Points field, enter a number.</span></span>
-    * <span data-ttu-id="72454-118">正解な回答をマークし、選択した回答が正しいものであることを表示できます。</span><span class="sxs-lookup"><span data-stu-id="72454-118">The correct answer can be marked to indicate that the selected answer is the correct one.</span></span> <span data-ttu-id="72454-119">これは、アンケートの採点に使用できます。</span><span class="sxs-lookup"><span data-stu-id="72454-119">This can be used for scoring the questionnaire.</span></span>  
-8. <span data-ttu-id="72454-120">[回答] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="72454-120">In the Answer field, type a value.</span></span>
-    * <span data-ttu-id="72454-121">回答グループに対して選択できる回答オプションを作成し続けます。</span><span class="sxs-lookup"><span data-stu-id="72454-121">Continue to create answer selection options for the answer group.</span></span>  
-9. <span data-ttu-id="72454-122">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="72454-122">Click New.</span></span>
-10. <span data-ttu-id="72454-123">[点数] フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="72454-123">In the Points field, enter a number.</span></span>
-11. <span data-ttu-id="72454-124">[回答] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="72454-124">In the Answer field, type a value.</span></span>
-12. <span data-ttu-id="72454-125">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="72454-125">Click New.</span></span>
-13. <span data-ttu-id="72454-126">[点数] フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="72454-126">In the Points field, enter a number.</span></span>
-14. <span data-ttu-id="72454-127">[回答] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="72454-127">In the Answer field, type a value.</span></span>
-15. <span data-ttu-id="72454-128">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="72454-128">Click New.</span></span>
-16. <span data-ttu-id="72454-129">[点数] フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="72454-129">In the Points field, enter a number.</span></span>
-17. <span data-ttu-id="72454-130">[回答] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="72454-130">In the Answer field, type a value.</span></span>
-18. <span data-ttu-id="72454-131">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="72454-131">Click New.</span></span>
-19. <span data-ttu-id="72454-132">[点数] フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="72454-132">In the Points field, enter a number.</span></span>
-20. <span data-ttu-id="72454-133">[回答] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="72454-133">In the Answer field, type a value.</span></span>
-21. <span data-ttu-id="72454-134">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="72454-134">Close the page.</span></span>
-22. <span data-ttu-id="72454-135">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="72454-135">Close the page.</span></span>
+## <a name="create-an-answer-group"></a><span data-ttu-id="34e2d-107">回答グループの作成</span><span class="sxs-lookup"><span data-stu-id="34e2d-107">Create an answer group</span></span>
+1. <span data-ttu-id="34e2d-108">[アンケート] > [設計] > [回答グループ] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="34e2d-108">Go to Questionnaire > Design > Answer groups.</span></span>
+2. <span data-ttu-id="34e2d-109">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="34e2d-109">Click New.</span></span>
+3. <span data-ttu-id="34e2d-110">[回答グループ] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="34e2d-110">In the Answer group field, type a value.</span></span>
+4. <span data-ttu-id="34e2d-111">[説明] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="34e2d-111">In the Description field, type a value.</span></span>
+    * <span data-ttu-id="34e2d-112">回答グループが質問に使用されるたびに、必要に応じて別の順序で回答をランダムに設定するランダム化機能を使用します。</span><span class="sxs-lookup"><span data-stu-id="34e2d-112">Use the Randomize functionality to randomly place the answers in a different order each time the answer group is used for a question.</span></span>  
+5. <span data-ttu-id="34e2d-113">[回答] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="34e2d-113">Click Answer.</span></span>
+6. <span data-ttu-id="34e2d-114">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="34e2d-114">Click New.</span></span>
+    * <span data-ttu-id="34e2d-115">ランダム化機能が回答グループに対して選択されている場合を除いて、番号順序は回答が表示される順序を制御します。</span><span class="sxs-lookup"><span data-stu-id="34e2d-115">Sequence number controls the order in which the answers are displayed, unless Randomize is selected for the Answer group.</span></span>  
+    * <span data-ttu-id="34e2d-116">アンケートの採点に対して回答するために、ポイントは支給できます。</span><span class="sxs-lookup"><span data-stu-id="34e2d-116">Points can be awarded to answers for use in scoring the questionnaire.</span></span>  
+7. <span data-ttu-id="34e2d-117">[点数] フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="34e2d-117">In the Points field, enter a number.</span></span>
+    * <span data-ttu-id="34e2d-118">正解な回答をマークし、選択した回答が正しいものであることを表示できます。</span><span class="sxs-lookup"><span data-stu-id="34e2d-118">The correct answer can be marked to indicate that the selected answer is the correct one.</span></span> <span data-ttu-id="34e2d-119">これは、アンケートの採点に使用できます。</span><span class="sxs-lookup"><span data-stu-id="34e2d-119">This can be used for scoring the questionnaire.</span></span>  
+8. <span data-ttu-id="34e2d-120">[回答] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="34e2d-120">In the Answer field, type a value.</span></span>
+    * <span data-ttu-id="34e2d-121">回答グループに対して選択できる回答オプションを作成し続けます。</span><span class="sxs-lookup"><span data-stu-id="34e2d-121">Continue to create answer selection options for the answer group.</span></span>  
+9. <span data-ttu-id="34e2d-122">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="34e2d-122">Click New.</span></span>
+10. <span data-ttu-id="34e2d-123">[点数] フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="34e2d-123">In the Points field, enter a number.</span></span>
+11. <span data-ttu-id="34e2d-124">[回答] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="34e2d-124">In the Answer field, type a value.</span></span>
+12. <span data-ttu-id="34e2d-125">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="34e2d-125">Click New.</span></span>
+13. <span data-ttu-id="34e2d-126">[点数] フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="34e2d-126">In the Points field, enter a number.</span></span>
+14. <span data-ttu-id="34e2d-127">[回答] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="34e2d-127">In the Answer field, type a value.</span></span>
+15. <span data-ttu-id="34e2d-128">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="34e2d-128">Click New.</span></span>
+16. <span data-ttu-id="34e2d-129">[点数] フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="34e2d-129">In the Points field, enter a number.</span></span>
+17. <span data-ttu-id="34e2d-130">[回答] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="34e2d-130">In the Answer field, type a value.</span></span>
+18. <span data-ttu-id="34e2d-131">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="34e2d-131">Click New.</span></span>
+19. <span data-ttu-id="34e2d-132">[点数] フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="34e2d-132">In the Points field, enter a number.</span></span>
+20. <span data-ttu-id="34e2d-133">[回答] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="34e2d-133">In the Answer field, type a value.</span></span>
+21. <span data-ttu-id="34e2d-134">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="34e2d-134">Close the page.</span></span>
+22. <span data-ttu-id="34e2d-135">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="34e2d-135">Close the page.</span></span>
 
-## <a name="create-the-question"></a><span data-ttu-id="72454-136">質問の作成</span><span class="sxs-lookup"><span data-stu-id="72454-136">Create the question</span></span>
-1. <span data-ttu-id="72454-137">[アンケート] > [設計] > [質問] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="72454-137">Go to Questionnaire > Design > Questions.</span></span>
-2. <span data-ttu-id="72454-138">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="72454-138">Click New.</span></span>
-3. <span data-ttu-id="72454-139">[タイプ] フィールドを使用して、関連の質問をグループ化します。</span><span class="sxs-lookup"><span data-stu-id="72454-139">Use the Type field to group related questions together.</span></span>
-    * <span data-ttu-id="72454-140">選択式の質問の場合は、チェック ボックス、代替ボタン、またはコンボ ボックスの入力タイプを使用できます。</span><span class="sxs-lookup"><span data-stu-id="72454-140">You can use input types of Check box, Alternative button, or Combo box for closed-ended questions.</span></span>  
-4. <span data-ttu-id="72454-141">[入力タイプ] フィールドで、オプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="72454-141">In the Input type field, select an option.</span></span>
-5. <span data-ttu-id="72454-142">[回答グループ] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="72454-142">In the Answer group field, enter or select a value.</span></span>
-6. <span data-ttu-id="72454-143">[テキスト] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="72454-143">In the Text field, type a value.</span></span>
+## <a name="create-the-question"></a><span data-ttu-id="34e2d-136">質問の作成</span><span class="sxs-lookup"><span data-stu-id="34e2d-136">Create the question</span></span>
+1. <span data-ttu-id="34e2d-137">[アンケート] > [設計] > [質問] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="34e2d-137">Go to Questionnaire > Design > Questions.</span></span>
+2. <span data-ttu-id="34e2d-138">[新規] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="34e2d-138">Click New.</span></span>
+3. <span data-ttu-id="34e2d-139">[タイプ] フィールドを使用して、関連の質問をグループ化します。</span><span class="sxs-lookup"><span data-stu-id="34e2d-139">Use the Type field to group related questions together.</span></span>
+    * <span data-ttu-id="34e2d-140">選択式の質問の場合は、チェック ボックス、代替ボタン、またはコンボ ボックスの入力タイプを使用できます。</span><span class="sxs-lookup"><span data-stu-id="34e2d-140">You can use input types of Check box, Alternative button, or Combo box for closed-ended questions.</span></span>  
+4. <span data-ttu-id="34e2d-141">[入力タイプ] フィールドで、オプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="34e2d-141">In the Input type field, select an option.</span></span>
+5. <span data-ttu-id="34e2d-142">[回答グループ] フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="34e2d-142">In the Answer group field, enter or select a value.</span></span>
+6. <span data-ttu-id="34e2d-143">[テキスト] フィールドに値を入力します。</span><span class="sxs-lookup"><span data-stu-id="34e2d-143">In the Text field, type a value.</span></span>
 
 

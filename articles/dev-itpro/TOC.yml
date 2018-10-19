@@ -9,7 +9,7 @@
   items:
     - name: データ パッケージを使用したデモ データの生成
       href: data-entities/generate-demo-data-packages.md
-- name: Visual Studio を使用した開発およびカスタマイズ
+- name: 開発およびカスタマイズ
   href: dev-tools/developer-home-page.md
   items:
     - name: アプリケーション スタックおよびサーバーのアーキテクチャ
@@ -27,7 +27,7 @@
           href: dev-tools/enable-development-machine.md
         - name: 管理者アクセスを許可しない開発用 VM および ビルド用 VM に関するよく寄せられる質問
           href: sysadmin/VMs-no-admin-access.md
-        - name: Visual Studio Team Services にアクセスするローカル環境の名前の変更
+        - name: Azure DevOps にアクセスするためのローカル環境の名前変更
           href: migration-upgrade/vso-machine-renaming.md
         - name: 開発システム要件
           href: dev-tools/development-system-requirements.md
@@ -104,13 +104,15 @@
               href: dev-ref/xpp-language-reference.md
             - name: X++ の変数とデータ型
               href: dev-ref/xpp-variables-data-types.md
-            - name: X++ ステートメント、ループ、および例外処理
+            - name: X++ のステートメント、ループ、および例外処理
               href: dev-ref/xpp-statements-loops.md
+            - name: X++ の SQL 接続エラー例外
+              href: dev-ref/sql-connection-error.md
             - name: X++ 演算子
               href: dev-ref/xpp-operators.md
             - name: X++ 演算子の優先順位
               href: dev-ref/xpp-operator-precedence.md
-            - name: X++ クラスおよびメソッド
+            - name: X++ のクラスおよびメソッド
               href: dev-ref/xpp-classes-methods.md
             - name: X++ データの選択と操作
               href: dev-ref/xpp-data-query.md
@@ -251,6 +253,10 @@
               href: extensibility/extensibility-changes-802.md
             - name: 拡張機能の変更 (バージョン 8.0.3)
               href: extensibility/extensibility-changes-803.md
+            - name: 拡張機能の変更 (バージョン 8.0.4)
+              href: extensibility/extensibility-changes-804.md
+            - name: 拡張機能の変更 (バージョン 8.1)
+              href: extensibility/extensibility-changes-81.md
         - name: 基本
           items:
             - name: 侵入的なカスタマイズ
@@ -916,10 +922,12 @@
           href: gdpr/gdpr-lcs.md
     - name: データ検証チェックリスト ワークスペース
       href: user-interface/data-validation-workspace.md
-- name: 継続的な配信
+    - name: データ管理エラーの説明
+      href: data-entities/dm-error-descriptions.md
+- name: 継続的配信
   href: dev-tools/continuous-delivery-home-page.md
   items:
-    - name: 開発と継続的な配信に関するよく寄せられる質問
+    - name: 開発と継続的配信に関するよく寄せられる質問
       href: dev-tools/continuous-delivery-faq.md
     - name: ビルド出力からのテスト パッケージの除外
       href: dev-tools/exclude-test-packages.md
@@ -1109,12 +1117,27 @@
               href: migration-upgrade/migrate-upgraded-cube-entity-store.md
             - name: 予算計画のアップグレード
               href: migration-upgrade/upgrade-budget-planning.md
+    - name: AX 2009 から Finance and Operations へのデータ移行
+      href: migration-upgrade/data-migration-tool.md
+      items:
+        - name: AX 2009 の移行 － データ移行ツールのインストール
+          href: migration-upgrade/install-dmt.md
+        - name: AX 2009 の移行 － マップの生成
+          href: migration-upgrade/generate-maps.md
+        - name: AX 2009 の移行 － テンプレートの作成
+          href: migration-upgrade/create-package-templates-dmt.md
+        - name: AX 2009 の移行 － 移行グループの作成
+          href: migration-upgrade/create-definition.md
+        - name: AX 2009 の移行 － パッケージのエクスポート
+          href: migration-upgrade/ax2009-upgrade-export-package.md
+        - name: AX 2009 の移行 － パッケージのインポート
+          href: migration-upgrade/ax2009-upgrade-import-package.md
     - name: コードの移行とアップグレード
       href: migration-upgrade/code-migration-home-page.md
       items:
         - name: コード移行の準備
           href: migration-upgrade/prepare-migration.md
-        - name: Visual Studio Team Services のマッピングのコンフィギュレーション
+        - name: Azure DevOps マッピングの構成
           href: migration-upgrade/configure-vso-solution.md
         - name: 分割されたモデル
           href: dev-tools/model-split.md
@@ -1124,6 +1147,8 @@
       items:
         - name: 最新の更新プログラムに移行するためのプロセス
           href: migration-upgrade/upgrade-latest-update.md
+        - name: バージョン 8.0 から 8.1 への環境の更新
+          href: migration-upgrade/appupdate-80-81.md
         - name: ソフトウェアのライフサイクル ポリシーおよびクラウド リリース
           href: migration-upgrade/versions-update-policy.md
         - name: 最新のプラットフォーム更新プログラムの環境への適用
@@ -1248,7 +1273,7 @@
       href: lifecycle-services/complete-tasks-bpm.md
     - name: BPM ライブラリの活動ダイアグラムでの作業
       href: lifecycle-services/using-activity-diagrams.md
-    - name: BPM ライブラリと Visual Studio Team Services の同期
+    - name: BPM ライブラリと Azure DevOps の同期
       href: lifecycle-services/synchronize-bpm-vsts.md
     - name: タスク ガイドと BPM を使用したユーザー承認テスト ライブラリの作成
       href: lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md
@@ -1264,8 +1289,12 @@
       href: lifecycle-services/report-production-outage.md
     - name: ユーザー サインインの追跡
       href: lifecycle-services/user-logins.md
-    - name: アセット ライブラリ
+    - name: 資産ライブラリ
       href: lifecycle-services/asset-library.md
+    - name: LCS 内のツールを使用した、パフォーマンスのトラブルシューティング
+      href: lifecycle-services/performancetroubleshooting.md
+    - name: クックブックの照会
+      href: lifecycle-services/querycookbook.md
     - name: Microsoft Dynamics 365 Translation Service
       href: lifecycle-services/translation-service-overview.md
       items:
