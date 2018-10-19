@@ -1,9 +1,9 @@
 ---
 title: "Lifecycle Services (LCS) から更新プログラムをダウンロード"
-description: "このチュートリアルを使用して、Lifecycle Services (LCS) から Microsoft Dynamics 365 for Finance and Operations の 修正プログラムをダウンロードします。"
+description: "このトピックでは、期待される更新と、更新を Lifecycle Services (LCS) から取得する方法について説明します。"
 author: AngelMarshall
 manager: AnnBe
-ms.date: 02/27/2018
+ms.date: 10/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,103 +18,107 @@ ms.author: amarshall
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 0c0ec9dd9f45eb6c534215105113f03b15797db2
+ms.sourcegitcommit: e4c1f8c7435a901431286960581754e5b2820dad
+ms.openlocfilehash: 4d6b9c8b50b87dbdf04433bffcf9fc3a18b636cd
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 10/03/2018
 
 ---
 
-# <a name="download-updates-from-lifecycle-services-lcs"></a><span data-ttu-id="1f993-103">Lifecycle Services (LCS) から更新プログラムをダウンロード</span><span class="sxs-lookup"><span data-stu-id="1f993-103">Download updates from Lifecycle Services (LCS)</span></span>
+# <a name="get-updates-from-lifecycle-services-lcs"></a><span data-ttu-id="17803-103">Lifecycle Services (LCS) から更新プログラムを入手</span><span class="sxs-lookup"><span data-stu-id="17803-103">Get updates from Lifecycle Services (LCS)</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="1f993-104">このチュートリアルを使用して、Microsoft Dynamics Lifecycle Services (LCS) から更新プログラムをダウンロードします。</span><span class="sxs-lookup"><span data-stu-id="1f993-104">Use this tutorial to download updates from Microsoft Dynamics Lifecycle Services (LCS).</span></span>
+<span data-ttu-id="17803-104">このトピックでは、期待される更新と、更新を Lifecycle Services (LCS) から取得する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="17803-104">This topic covers what updates you should expect to see and how you can get the updates from Lifecycle Services (LCS).</span></span>
 
-## <a name="types-of-updates"></a><span data-ttu-id="1f993-105">更新のタイプ</span><span class="sxs-lookup"><span data-stu-id="1f993-105">Types of updates</span></span>
+## <a name="types-of-updates"></a><span data-ttu-id="17803-105">更新のタイプ</span><span class="sxs-lookup"><span data-stu-id="17803-105">Types of updates</span></span>
 
-- <span data-ttu-id="1f993-106">**バイナリ更新プログラム**は、コンパイル済みで累積されています。</span><span class="sxs-lookup"><span data-stu-id="1f993-106">**Binary updates** are pre-compiled and cumulative.</span></span> <span data-ttu-id="1f993-107">その後のバイナリ更新には、これまでのすべての更新が含まれます。</span><span class="sxs-lookup"><span data-stu-id="1f993-107">Every subsequent binary update includes all previous updates.</span></span> <span data-ttu-id="1f993-108">これらの更新は、開発環境でコンパイルする必要はなく、LCS から非開発環境に直接適用することもできます。</span><span class="sxs-lookup"><span data-stu-id="1f993-108">These updates don't have to be compiled in a development environment, and they can be applied directly to a non-development environment from LCS.</span></span>
+- <span data-ttu-id="17803-106">**バイナリ更新プログラム**は、コンパイル済みで累積されています。</span><span class="sxs-lookup"><span data-stu-id="17803-106">**Binary updates** are pre-compiled and cumulative.</span></span> <span data-ttu-id="17803-107">その後のバイナリ更新には、これまでのすべての更新が含まれます。</span><span class="sxs-lookup"><span data-stu-id="17803-107">Every subsequent binary update includes all previous updates.</span></span> <span data-ttu-id="17803-108">これらの更新は、開発環境でコンパイルする必要はなく、LCS から非開発環境に直接適用することもできます。</span><span class="sxs-lookup"><span data-stu-id="17803-108">These updates don't have to be compiled in a development environment, and they can be applied directly to a non-development environment from LCS.</span></span>
         
-    <span data-ttu-id="1f993-109">小売機能とカスタマイズされた販売時点管理 (POS) のインスタンスを持つ環境を実行している場合は、Retail SDK のパッケージに記載されている追加手順を完了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="1f993-109">If you're running an environment that has retail functionality and a customized instance of Cloud point of sale (POS), you must complete the additional steps that are listed under Retail SDK packaging.</span></span> <span data-ttu-id="1f993-110">Microsoft Dynamics 365 for Retail で、すべての更新プログラムは、アプリケーション モデルの更新プログラムでさえ、バイナリ更新プログラムとしてリリースされます。</span><span class="sxs-lookup"><span data-stu-id="1f993-110">For Microsoft Dynamics 365 for Retail, all updates, even updates for application models, are released as binary updates.</span></span>
-    
-    > [!NOTE]
-    > <span data-ttu-id="1f993-111">環境がプラットフォーム更新プログラム 4 以上である場合、**すべてのバイナリ更新プログラム**および**プラットフォーム バイナリ更新プログラム**を LCS **環境**ページからダウンロードするオプションがあります。</span><span class="sxs-lookup"><span data-stu-id="1f993-111">If your environment is on Platform Update 4 and above, you will have the option to download **All binary updates** and **Platform binary updates** from the LCS **Environment** page.</span></span>  
-    > - <span data-ttu-id="1f993-112">**すべてのバイナリ更新プログラム** タイルには、アプリケーションとプラットフォームのバイナリ アップデートのパッケージの一覧が含まれています。</span><span class="sxs-lookup"><span data-stu-id="1f993-112">The **All binary updates** tile includes a combined package of application and platform binary updates.</span></span>  
-    > - <span data-ttu-id="1f993-113">**プラットフォーム バイナリの更新プログラム** タイルには、最新のプラットフォーム専用の更新プログラムまたは修正プログラムが含まれます。</span><span class="sxs-lookup"><span data-stu-id="1f993-113">The **Platform binary updates** tile includes the latest platform only updates or hotfixes.</span></span> 
-    
+    <span data-ttu-id="17803-109">小売機能とカスタマイズされた販売時点管理 (POS) のインスタンスを持つ環境を実行している場合は、Retail SDK のパッケージに記載されている追加手順を完了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="17803-109">If you're running an environment that has retail functionality and a customized instance of Cloud point of sale (POS), you must complete the additional steps that are listed under Retail SDK packaging.</span></span> <span data-ttu-id="17803-110">Microsoft Dynamics 365 for Retail で、すべての更新プログラムは、アプリケーション モデルの更新プログラムでさえ、バイナリ更新プログラムとしてリリースされます。</span><span class="sxs-lookup"><span data-stu-id="17803-110">For Microsoft Dynamics 365 for Retail, all updates, even updates for application models, are released as binary updates.</span></span>    
 
-- <span data-ttu-id="1f993-114">**X++ 更新プログラム**には、アプリケーション モデルの特定のアプリケーション機能への更新が含まれます。</span><span class="sxs-lookup"><span data-stu-id="1f993-114">**X++ updates** include updates to specific application functionality in application models.</span></span> <span data-ttu-id="1f993-115">これらの更新は、個別にダウンロードして適用することができます。</span><span class="sxs-lookup"><span data-stu-id="1f993-115">These updates can be independently downloaded and applied.</span></span> <span data-ttu-id="1f993-116">環境に適用する特定の X++ 更新プログラムを選択することができます。</span><span class="sxs-lookup"><span data-stu-id="1f993-116">You can select specific X++ updates to apply to your environment.</span></span>  <span data-ttu-id="1f993-117">依存 X++ 更新は自動的に選択され、ダウンロードされます。</span><span class="sxs-lookup"><span data-stu-id="1f993-117">Dependent X++ updates are automatically selected and downloaded.</span></span>  <span data-ttu-id="1f993-118">X++ の更新はソース コードの更新であり、非開発環境に適用する前に、開発環境でコンパイルして任意のカスタマイズとマージする必要があります。</span><span class="sxs-lookup"><span data-stu-id="1f993-118">Any X++ updates are source code updates, before they can be applied to a non-development environment, they must be compiled in a developer environment and merged with any customizations.</span></span> <span data-ttu-id="1f993-119">X++ の更新プログラムは Microsoft Dynamics 365 for Finance and Operations に対してのみ適用されます。</span><span class="sxs-lookup"><span data-stu-id="1f993-119">X++ updates apply only to Microsoft Dynamics 365 for Finance and Operations.</span></span> 
+- <span data-ttu-id="17803-111">**X++ 更新プログラム**には、アプリケーション モデルの特定のアプリケーション機能への更新が含まれます。</span><span class="sxs-lookup"><span data-stu-id="17803-111">**X++ updates** include updates to specific application functionality in application models.</span></span> <span data-ttu-id="17803-112">これらの更新は、個別にダウンロードして適用することができます。</span><span class="sxs-lookup"><span data-stu-id="17803-112">These updates can be independently downloaded and applied.</span></span> <span data-ttu-id="17803-113">環境に適用する特定の X++ 更新プログラムを選択することができます。</span><span class="sxs-lookup"><span data-stu-id="17803-113">You can select specific X++ updates to apply to your environment.</span></span>  <span data-ttu-id="17803-114">依存 X++ 更新は自動的に選択され、ダウンロードされます。</span><span class="sxs-lookup"><span data-stu-id="17803-114">Dependent X++ updates are automatically selected and downloaded.</span></span> <span data-ttu-id="17803-115">X++ の更新はソース コードの更新であり、非開発環境に適用する前に、開発環境でコンパイルして任意のカスタマイズとマージする必要があります。</span><span class="sxs-lookup"><span data-stu-id="17803-115">Any X++ updates are source code updates, before they can be applied to a non-development environment, they must be compiled in a developer environment and merged with any customizations.</span></span> <span data-ttu-id="17803-116">X++ の更新プログラムは Microsoft Dynamics 365 for Finance and Operations に対してのみ適用されます。</span><span class="sxs-lookup"><span data-stu-id="17803-116">X++ updates apply only to Microsoft Dynamics 365 for Finance and Operations.</span></span>   
 
-    > [!NOTE]
-    > <span data-ttu-id="1f993-120">オンライン環境では、**すべての X++ 更新プログラム**タイルおよび**重要な X++ 更新プログラム**タイルの両方を表示します。</span><span class="sxs-lookup"><span data-stu-id="1f993-120">For online environments, you will see both the **All X++ updates** tile and the **Critical X++ updates** tile.</span></span> <span data-ttu-id="1f993-121">重要な X++ 更新プログラムは、**実稼働環境**のテレメトリ データに基づく推奨 KB です。</span><span class="sxs-lookup"><span data-stu-id="1f993-121">The Critical X++ updates are recommended KBs that are based on the telemetry data in **your production environment**.</span></span>  
-    >
-    > <span data-ttu-id="1f993-122">X++ 更新プログラムをテストして適用するには、X++ 更新プログラムをダウンロードした後で開発環境に適用して展開可能パッケージを作成し、展開可能パッケージをサンドボックスに適用してから実稼働環境に適用します。</span><span class="sxs-lookup"><span data-stu-id="1f993-122">To test and apply any X++ updates, after download the X++ updates, apply them in a development environment to build a deployable package, and then apply the deployable package to your sandbox and then production environments.</span></span> 
-    >
-    > <span data-ttu-id="1f993-123">更新の展開に関する詳細については、[クラウド環境への更新プログラムの適用](../deployment/apply-deployable-package-system.md) を参照してください</span><span class="sxs-lookup"><span data-stu-id="1f993-123">For more information about deploying updates, see [Apply updates to a cloud environment](../deployment/apply-deployable-package-system.md)</span></span>  
+## <a name="get-updates"></a><span data-ttu-id="17803-117">更新プログラムの入手</span><span class="sxs-lookup"><span data-stu-id="17803-117">Get updates</span></span>
 
-## <a name="download-updates"></a><span data-ttu-id="1f993-124">更新プログラムのダウンロード</span><span class="sxs-lookup"><span data-stu-id="1f993-124">Download updates</span></span>
+<span data-ttu-id="17803-118">利用可能な更新プログラムを表示するには、次のようにします。</span><span class="sxs-lookup"><span data-stu-id="17803-118">To view available updates:</span></span>
+1. <span data-ttu-id="17803-119">資格情報を使用して LCS にサインインします。</span><span class="sxs-lookup"><span data-stu-id="17803-119">Sign in to LCS using your credentials.</span></span>
+2. <span data-ttu-id="17803-120">LCS プロジェクトで、環境を選択します。</span><span class="sxs-lookup"><span data-stu-id="17803-120">In the LCS project, select an environment.</span></span>
+3. <span data-ttu-id="17803-121">**環境**ページで、**監視**セクションには更新タイルが含まれています。</span><span class="sxs-lookup"><span data-stu-id="17803-121">On the **Environment** page, the **Monitoring** section includes update tiles.</span></span> 
 
-<span data-ttu-id="1f993-125">利用可能な更新プログラムを表示するには、次のようにします。</span><span class="sxs-lookup"><span data-stu-id="1f993-125">To view available updates:</span></span>
-1. <span data-ttu-id="1f993-126">資格情報を使用して LCS にサインインします。</span><span class="sxs-lookup"><span data-stu-id="1f993-126">Sign in to LCS by using your credentials.</span></span>
-2. <span data-ttu-id="1f993-127">LCS プロジェクトで、環境を選択します。</span><span class="sxs-lookup"><span data-stu-id="1f993-127">In the LCS project, select an environment.</span></span>
-3. <span data-ttu-id="1f993-128">**環境**ページで、**監視**セクションには更新タイルが含まれています。</span><span class="sxs-lookup"><span data-stu-id="1f993-128">On the **Environment** page, the **Monitoring** section includes update tiles.</span></span> 
+## <a name="types-of-tiles"></a><span data-ttu-id="17803-122">タイルのタイプ</span><span class="sxs-lookup"><span data-stu-id="17803-122">Types of tiles</span></span>
 
-   >[!NOTE]
-   > <span data-ttu-id="1f993-129">Retail で、バイナリ更新プログラムのみに対するタイルを表示します。</span><span class="sxs-lookup"><span data-stu-id="1f993-129">For Retail, you will see tile for binary updates only.</span></span> <span data-ttu-id="1f993-130">Finance and Operations で、X++ 更新およびバイナリ更新の両方に対するタイルを表示します。</span><span class="sxs-lookup"><span data-stu-id="1f993-130">For Finance and Operations, you will see tiles for both X++ updates and binary updates.</span></span> <span data-ttu-id="1f993-131">これらの 2 種類の更新は、個別にダウンロードして適用することができます。</span><span class="sxs-lookup"><span data-stu-id="1f993-131">These two types of updates can be independently downloaded and applied.</span></span> <span data-ttu-id="1f993-132">ただし、一部の X++ 更新プログラムはバイナリ更新プログラムに依存し、別のバイナリ更新プログラムは X++ 更新プログラムに依存しています。</span><span class="sxs-lookup"><span data-stu-id="1f993-132">However, some X++ updates might depend on binary updates, and some binary updates might depend on X++ updates.</span></span> <span data-ttu-id="1f993-133">すべての依存関係は、更新の説明に含まています。</span><span class="sxs-lookup"><span data-stu-id="1f993-133">Any dependencies are included in the update description.</span></span>
+<span data-ttu-id="17803-123">タイルには次の 4 つのタイプがあります。</span><span class="sxs-lookup"><span data-stu-id="17803-123">There are 4 different types of tiles:</span></span> 
+1. <span data-ttu-id="17803-124">**すべての X++ 更新プログラム** - このタイルには、Microsoft によりリリースされるすべての細かい X++ 更新プログラムが表示されます。</span><span class="sxs-lookup"><span data-stu-id="17803-124">**All X++ updates** - This tile shows all the granular X++ updates released by Microsoft.</span></span> 
+2. <span data-ttu-id="17803-125">**重要な X++ 更新プログラム** - このタイルには、実稼働環境のテレメトリ データに基づく推奨 KB が表示されます。</span><span class="sxs-lookup"><span data-stu-id="17803-125">**Critical X++ updates** - This tile shows recommended KBs that are based on the telemetry data in your production environment.</span></span> <span data-ttu-id="17803-126">このタイルには、*生産環境*のみ表示され、更新プログラムのサブセットは環境に推奨される **すべての X++ 更新プログラム** の下に表示されます。</span><span class="sxs-lookup"><span data-stu-id="17803-126">This tile will only show *Production environments* and a subset of the updates shown under the **All X++ updates** tile that are recommended for your environments.</span></span> 
+3. <span data-ttu-id="17803-127">**すべてのバイナリ更新プログラム** - このタイルには、アプリケーションとプラットフォームの両方の結合された累積的バイナリ アップデートが表示されます。</span><span class="sxs-lookup"><span data-stu-id="17803-127">**All binary updates** - This tile shows a combined cumulative binary update for both the Application and Platform.</span></span>
+4. <span data-ttu-id="17803-128">**プラットフォーム バイナリ更新プログラム** - このタイルには、プラットフォーム バイナリ更新プログラムのみが表示されます。</span><span class="sxs-lookup"><span data-stu-id="17803-128">**Platform binary updates** - This tile shows only the Platform binary updates.</span></span> <span data-ttu-id="17803-129">プラットフォームだけを更新する場合は、このタイルから更新を取得できます。</span><span class="sxs-lookup"><span data-stu-id="17803-129">If you want to update only the platform, you can get the update from this tile.</span></span> 
+
+<span data-ttu-id="17803-130">製品およびバージョンによっては、タイルの表示が異なります。</span><span class="sxs-lookup"><span data-stu-id="17803-130">Depending on the product and version, the tiles you see will differ.</span></span>
+
+- <span data-ttu-id="17803-131">**Dynamics 365 for Retail** - Dynamics 365 Retail 展開したユーザーには、すべてのアプリケーションとプラットフォーム変更の結合された累積的バイナリ更新プログラムである 1 つのタイルが表示されます。</span><span class="sxs-lookup"><span data-stu-id="17803-131">**Dynamics 365 for Retail** - Customers that have Dynamics 365 for Retail deployed will see a single tile that is a cumulative combined binary update of all the application and platform changes.</span></span> 
+
+- <span data-ttu-id="17803-132">**Dynamics 365 for Finance and Operations**</span><span class="sxs-lookup"><span data-stu-id="17803-132">**Dynamics 365 for Finance and Operations**</span></span> 
+   1. <span data-ttu-id="17803-133">アプリケーションのバージョン 8.1 以降 - 今回のリリースから、サービス更新プログラムの **1 つのタイル**が表示されます。カスタマイズはすべて拡張機能を通じて行われ、コードのオーバーレイがないためです。</span><span class="sxs-lookup"><span data-stu-id="17803-133">Application version 8.1 onwards - Starting with this release, you will see a **single tile** for service updates because any customizations are done via extensions and there is no code overlayering.</span></span> <span data-ttu-id="17803-134">このタイルは、すべてのアプリケーションとプラットフォームの変更の結合された累積的バイナリ アップデートです。</span><span class="sxs-lookup"><span data-stu-id="17803-134">This tile will be a cumulative combined binary update of all the application and platform changes.</span></span> <span data-ttu-id="17803-135">今回のリリースから、細かい X++ 更新プログラムはなくなります。</span><span class="sxs-lookup"><span data-stu-id="17803-135">There will be no granular X++ updates starting with this release.</span></span> <span data-ttu-id="17803-136">すべてのものは累積的な更新になります。</span><span class="sxs-lookup"><span data-stu-id="17803-136">Everything will be a cumulative update.</span></span> 
+ 
+   2. <span data-ttu-id="17803-137">プラットフォーム更新 4 以上を持つアプリケーションのバージョン 7.x または 8.0: この組み合わせを使用するユーザーには、上記の 4 つのタイルがすべて表示されます。</span><span class="sxs-lookup"><span data-stu-id="17803-137">Application version 7.x or 8.0 with Platform update 4 or higher - For customers that are on this combination, you will see all the 4 tiles listed above.</span></span> <span data-ttu-id="17803-138">今回のリリースでは、まだ細かい X++ 更新があります。</span><span class="sxs-lookup"><span data-stu-id="17803-138">This release will still have the granular X++ updates.</span></span> <span data-ttu-id="17803-139">プラットフォーム更新 4 以降、プラットフォーム モジュールではオーバーレイヤーが許可されません。つまり、**プラットフォーム バイナリ更新プログラム** タイルを使用して、累積的な更新としてプラットフォーム更新プログラムを提供できます。</span><span class="sxs-lookup"><span data-stu-id="17803-139">Starting with Platform update 4, no overlayering is allowed on the platform modules, which means that the **Platform binary updates** tile is available to provide the platform updates as a cumulative update.</span></span> 
+
+  3. <span data-ttu-id="17803-140">プラットフォーム更新 3 以下を持つアプリケーション バージョン 7.x - この組み合わせを使用するユーザーには、3 つのタイル **すべての X++ 更新**、**重要な X++ 更新**、および **すべてのバイナリ更新プログラム** が表示されます。</span><span class="sxs-lookup"><span data-stu-id="17803-140">Application version 7.x with Platform update 3 or lower - For customers that are on this combination, you will see 3 tiles - **All X++ updates**, **Critical X++ updates**, and **All binary updates**.</span></span> <span data-ttu-id="17803-141">このリリース プラットフォームは引き続きオーバーレイヤーされるため、**プラットフォーム バイナリ更新プログラム** タイルはありません。</span><span class="sxs-lookup"><span data-stu-id="17803-141">Because this release platform can still be overlayered, there is no **Platform binary updatess** tile.</span></span> 
+  > [!NOTE]
+    > <span data-ttu-id="17803-142">今回のリリースを使用している場合、できるだけ早くアップグレードする必要があります。</span><span class="sxs-lookup"><span data-stu-id="17803-142">If you are on this release, you need to upgrade as soon as possible.</span></span> 
    
-## <a name="download-binary-updates"></a><span data-ttu-id="1f993-134">ダウンロード Binary 更新プログラム</span><span class="sxs-lookup"><span data-stu-id="1f993-134">Download Binary updates</span></span>
+## <a name="download-binary-updates"></a><span data-ttu-id="17803-143">バイナリ更新プログラムのダウンロード</span><span class="sxs-lookup"><span data-stu-id="17803-143">Download binary updates</span></span>
 
-1. <span data-ttu-id="1f993-135">**すべてのバイナリ更新プログラム** タイルをクリックすると、アプリケーションおよびプラットフォームのバイナリ アップデートの組み合わせリスト、またはプラットフォームのみのバイナリ アップデートのための**プラットフォーム バイナリ更新プログラム** タイルが表示されます。</span><span class="sxs-lookup"><span data-stu-id="1f993-135">Click **All binary update** tile to view the combined list of application and platform binary updates, or **Platform binary updates** tile for platform only binary updates.</span></span> 
+1. <span data-ttu-id="17803-144">**すべてのバイナリ更新プログラム** タイルをクリックして、アプリケーションおよびプラットフォームのバイナリ アップデートの組み合わせリストを表示するか、またはプラットフォームのみのバイナリ アップデートのための**プラットフォーム バイナリ更新プログラム** タイルをクリックします。</span><span class="sxs-lookup"><span data-stu-id="17803-144">Click the **All binary update** tile to view the combined list of application and platform binary updates, or click the **Platform binary updates** tile for platform only binary updates.</span></span> 
 
    ![バイナリ タイル](./media/BinaryUpdateTiles.jpg)
 
-2. <span data-ttu-id="1f993-137">**バイナリ更新プログラム**ページで、**パッケージの保存**を選択します。</span><span class="sxs-lookup"><span data-stu-id="1f993-137">On the **Binary Updates** page, select **Save Package**.</span></span>
+2. <span data-ttu-id="17803-146">**バイナリ更新プログラム**ページで、**パッケージの保存**を選択します。</span><span class="sxs-lookup"><span data-stu-id="17803-146">On the **Binary updates** page, select **Save package**.</span></span>
 
    ![バイナリ パッケージの保存](./media/ReviewAndSaveBinaryPackage.jpg)
 
-3. <span data-ttu-id="1f993-139">**更新プログラムの確認と保存**ページで、**パッケージの保存**を選択します。</span><span class="sxs-lookup"><span data-stu-id="1f993-139">On the **Review and Save Updates** page, select **Save package**.</span></span>
+3. <span data-ttu-id="17803-148">**更新プログラムの確認と保存**ページで、**パッケージの保存**を選択します。</span><span class="sxs-lookup"><span data-stu-id="17803-148">On the **Review and save updates** page, select **Save package**.</span></span>
 
 ![更新プログラムの確認と保存](./media/ReviewBinaryPackage.jpg)
 
-4. <span data-ttu-id="1f993-141">**資産ライブラリへのパッケージの保存**スライダーから、**名前**および**説明**を入力し、**パッケージの保存**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="1f993-141">From the **Save package to asset library** slider, enter the **Name** and **Description**, and click **Save package**.</span></span>
+4. <span data-ttu-id="17803-150">**資産ライブラリへのパッケージの保存**スライダーで、**名前**および**説明**を入力し、**パッケージの保存**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="17803-150">On the **Save package to asset library** slider, enter the **Name** and **Description**, and click **Save package**.</span></span>
 
    ![資産ライブラリへのパッケージの保存](./media/SaveBinaryPackage.jpg)
 
-5. <span data-ttu-id="1f993-143">**完了**をクリックし、環境ページに戻ります。</span><span class="sxs-lookup"><span data-stu-id="1f993-143">Click **Done** to return to environment page.</span></span>
+5. <span data-ttu-id="17803-152">**完了**をクリックし、環境ページに戻ります。</span><span class="sxs-lookup"><span data-stu-id="17803-152">Click **Done** to return to environment page.</span></span>
 
    ![DoneSavingBinaryPackage](./media/DoneSavingBinaryPackage.jpg)
  
-6. <span data-ttu-id="1f993-145">資産ライブラリに保存されているバイナリ パッケージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="1f993-145">You'll see the saved binary package in the asset library.</span></span> 
+6. <span data-ttu-id="17803-154">資産ライブラリに保存されているバイナリ パッケージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="17803-154">You'll see the saved binary package in the asset library.</span></span> 
 
    ![ViewSavedBinaryPackageInAssetLibrary](./media/ViewSavedBinaryPackageInAssetLibrary.jpg)
 
-## <a name="download-x-updates"></a><span data-ttu-id="1f993-147">ダウンロード X++ 更新プログラム</span><span class="sxs-lookup"><span data-stu-id="1f993-147">Download X++ updates</span></span>
+## <a name="download-x-updates"></a><span data-ttu-id="17803-156">ダウンロード X++ 更新プログラム</span><span class="sxs-lookup"><span data-stu-id="17803-156">Download X++ updates</span></span>
 
-1. <span data-ttu-id="1f993-148">**すべての X++ 更新プログラム** タイルをクリックすると、使用可能なアプリケーションの更新の一覧を環境に表示、または実稼働環境への推奨アプリケーションの更新プログラムの**重要な X++ 更新プログラム**を表示します。</span><span class="sxs-lookup"><span data-stu-id="1f993-148">Click on **All X++ updates** tile to view the list of available application updates to an environment, or **Critical X++ updates** for recommended application updates to your production environment.</span></span> 
+1. <span data-ttu-id="17803-157">**すべての X++ 更新プログラム** タイルをクリックして、使用可能なアプリケーションの更新の一覧を環境に表示するか、または実稼働環境への推奨アプリケーションの更新プログラムの**重要な X++ 更新プログラム**タイルをクリックします。</span><span class="sxs-lookup"><span data-stu-id="17803-157">Click the **All X++ updates** tile to view the list of available application updates to an environment, or click the **Critical X++ updates** tile for recommended application updates to your production environment.</span></span> 
 
    ![アプリケーション X++ 更新タイル](./media/X++UpdateTiles.jpg)   
   
-2. <span data-ttu-id="1f993-150">**更新プログラムの追加**ページで、該当するナレッジサポート技術情報 (KB) 番号を選択し、**追加**をクリックし、選択した KB を**ダウンロード パッケージ**に追加します。</span><span class="sxs-lookup"><span data-stu-id="1f993-150">On the **Add updates** page, select the applicable Knowledge Base (KB) numbers, and then click **Add** to add selected KBs to the **Download package**.</span></span>
+2. <span data-ttu-id="17803-159">**更新プログラムの追加**ページで、該当するナレッジサポート技術情報 (KB) 番号を選択し、**追加**をクリックし、選択した KB を**ダウンロード パッケージ**に追加します。</span><span class="sxs-lookup"><span data-stu-id="17803-159">On the **Add updates** page, select the applicable Knowledge Base (KB) numbers, and then click **Add** to add selected KBs to the **Download package**.</span></span>
 
     ![X++ の更新プログラムの追加](./media/AddX++Updates.jpg)
 
     > [!NOTE]
-    > <span data-ttu-id="1f993-152">X++ の更新プログラムで、この時点で利用可能なすべての更新プログラムをダウンロードすることができます。</span><span class="sxs-lookup"><span data-stu-id="1f993-152">For X++ updates, you can download all available updates at this point.</span></span> <span data-ttu-id="1f993-153">**すべて選択** を選択して **追加** をクリックし、すべての KB を **ダウンロード パッケージ** に追加します。</span><span class="sxs-lookup"><span data-stu-id="1f993-153">Select **Select all**, and then click **Add** to add all KBs to  the **Download package**.</span></span>
+    > <span data-ttu-id="17803-161">X++ の更新プログラムで、この時点で利用可能なすべての更新プログラムをダウンロードすることができます。</span><span class="sxs-lookup"><span data-stu-id="17803-161">For X++ updates, you can download all available updates at this point.</span></span> <span data-ttu-id="17803-162">**すべて選択** をクリックして **追加** をクリックし、すべての KB を **ダウンロード パッケージ** に追加します。</span><span class="sxs-lookup"><span data-stu-id="17803-162">Click **Select all**, and then click **Add** to add all KBs to  the **Download package**.</span></span>
 
-3. <span data-ttu-id="1f993-154">**ダウンロード パッケージ** を選択します。</span><span class="sxs-lookup"><span data-stu-id="1f993-154">Select **Download package**.</span></span>
+3. <span data-ttu-id="17803-163">**ダウンロード パッケージ** を選択します。</span><span class="sxs-lookup"><span data-stu-id="17803-163">Select **Download package**.</span></span>
 
     ![ダウンロード X++ パッケージ](./media/DownloadX++UpdatePackage.jpg)
 
-4. <span data-ttu-id="1f993-156">**修正プログラムの確認とダウンロード**ページで、選択した修正プログラムを確認したり、パッケージを破棄して、修正プログラムの選択に戻ったり、または最終修正プログラムのパッケージをダウンロードしたりすることができます。</span><span class="sxs-lookup"><span data-stu-id="1f993-156">On the **Review and download hotfixes** page, you can review the hotfixes that you selected, discard the package, return to the hotfix selections, or download the final hotfix package.</span></span>
+4. <span data-ttu-id="17803-165">**修正プログラムの確認とダウンロード**ページで、選択した修正プログラムを確認したり、パッケージを破棄して、修正プログラムの選択に戻ったり、または最終修正プログラムのパッケージをダウンロードしたりすることができます。</span><span class="sxs-lookup"><span data-stu-id="17803-165">On the **Review and download hotfixes** page, you can review the hotfixes that you selected, discard the package, return to the hotfix selections, or download the final hotfix package.</span></span>
 
     ![X++ 更新プログラムの確認とダウンロード](media/ReviewAndDownloadX++Package.jpg)
     
-5. <span data-ttu-id="1f993-158">パッケージをダウンロードして**完了**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="1f993-158">Download the package, and click **Done**.</span></span>
+5. <span data-ttu-id="17803-167">パッケージをダウンロードして**完了**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="17803-167">Download the package, and click **Done**.</span></span>
     
     ![downloaded](media/X++UpdatesDownloadBegin.jpg)
 
-
-## <a name="also-see"></a><span data-ttu-id="1f993-160">参照してください。</span><span class="sxs-lookup"><span data-stu-id="1f993-160">Also see</span></span>
-- [<span data-ttu-id="1f993-161">クラウド環境への更新プログラムの適用</span><span class="sxs-lookup"><span data-stu-id="1f993-161">Apply updates to a cloud environment</span></span>](../deployment/apply-deployable-package-system.md)
-- [<span data-ttu-id="1f993-162">メタデータ修正プログラムのインストール</span><span class="sxs-lookup"><span data-stu-id="1f993-162">Install a metadata hotfix</span></span>](./install-metadata-hotfix-package.md) 
+## <a name="additional-resources"></a><span data-ttu-id="17803-169">その他のリソース</span><span class="sxs-lookup"><span data-stu-id="17803-169">Additional resources</span></span>
+- [<span data-ttu-id="17803-170">クラウド環境への更新プログラムの適用</span><span class="sxs-lookup"><span data-stu-id="17803-170">Apply updates to a cloud environment</span></span>](../deployment/apply-deployable-package-system.md)
+- [<span data-ttu-id="17803-171">メタデータ修正プログラムのインストール</span><span class="sxs-lookup"><span data-stu-id="17803-171">Install a metadata hotfix</span></span>](./install-metadata-hotfix-package.md) 
 
