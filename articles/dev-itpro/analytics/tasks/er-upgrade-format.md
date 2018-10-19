@@ -1,28 +1,29 @@
 --- 
-title: "新しい基本バージョンの採用による形式のアップグレード"
+title: "ER 形式の新しい基準バージョンを採用してその形式をアップグレードする"
 description: "次のステップでは、システム管理者または電子申告開発者のロールに割り当てられているユーザーが、電子申告 (ER) の形式のコンフィギュレーションを維持管理する方法について説明します。"
 author: NickSelin
 manager: AnnBe
-ms.date: 02/06/2017
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ERWorkspace, ERVendorPart, ERSolutionTable, ERSolutionCreateDropDialog, EROperationDesigner, ERComponentTypeDropDialog
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 7a14299c3bdcc33a4441d1cc096b198af4d4ae4c
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 040505f567b9db1a5987e4ada38d46f919440c96
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 10/16/2018
 
 ---
-# <a name="upgrade-formats-by-adopting-new-base-versions"></a>新しい基本バージョンの採用による形式のアップグレード
+# <a name="er-upgrade-your-format-by-adopting-a-new-base-version-of-that-format"></a>ER 形式の新しい基準バージョンを採用してその形式をアップグレードする
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -35,7 +36,7 @@ ms.lasthandoff: 08/09/2018
 
 ## <a name="select-format-configuration-for-customization"></a>カスタマイズする形式のコンフィギュレーションを選択
 1. [組織管理] > [ワークスペース] > [電子申告] の順に移動します。
-    * この例では、サンプル会社 Litware, Inc. (`http://www.litware.com`) が特定の国に対する電子支払の形式コンフィギュレーションをサポートするコンフィギュレーション プロバイダーとして機能します。  サンプル会社 Proseware, Inc. (`http://www.proseware.com`) は、Liteware, Inc. が提供した形式コンフィギュレーションの消費者として機能します。 Proseware, Inc. はその国の特定の地域の形式を使用します。  
+    * この例では、サンプル会社 Litware, Inc. (http://www.litware.com) が特定の国に対する電子支払の形式コンフィギュレーションをサポートするコンフィギュレーション プロバイダーとして機能します。    サンプル会社 Proseware, Inc. (http://www.proseware.com) は、Liteware, Inc. が提供した形式コンフィギュレーションの消費者として機能します。 Proseware, Inc. はその国の特定の地域の形式を使用します。  
 2. [コンフィギュレーションをレポートする] をクリックします。
 3. [フィルターの表示] をクリックします。
 4. [名前] フィールドで "次の値で始まる" フィルター演算子を使用して、値 "BACS (英国企業)" でフィルターを適用します。
@@ -46,7 +47,7 @@ ms.lasthandoff: 08/09/2018
     * [完了] 状態の形式のバージョンは、カスタマイズ用に Proseware Inc. で使用されます 。  
 
 ## <a name="create-a-new-configuration-for-your-custom-format-of-electronic-document"></a>電子ドキュメントのカスタム形式の新規コンフィギュレーションを作成
-Proseware、Inc. は、自身のサービスの定期売買に従って電子支払ドキュメントを生成するための初期形式が含まれている BACS (英国企業) コンフィギュレーションの バージョン 1.1 を受領済です。 Proseware, Inc. は、これを自身の国の標準として使い始めようとしますが、特定の地域の要件をサポートするためのカスタマイズが必要です。 Proseware, Inc. は、その新しいバージョン (新しい国固有の要件をサポートするための変更を含む) が Litware, Inc. からリリースされ次第、カスタム形式をアップグレードする能力も維持したいと考えています。さらに、このアップグレードを最低限の費用で実行したいと考えています。  これを実現するため Proseware, Inc. は、基準として Litware, Inc. のコンフィギュレーション BACS (英国企業) を使用してコンフィギュレーションを作成する必要があります。  
+    * Proseware、Inc. は、自身のサービスの定期売買に従って電子支払ドキュメントを生成するための初期形式が含まれている BACS (英国企業) コンフィギュレーションの バージョン 1.1 を受領済です。 Proseware, Inc. は、これを自身の国の標準として使い始めようとしますが、特定の地域の要件をサポートするためのカスタマイズが必要です。 Proseware, Inc. は、その新しいバージョン (新しい国固有の要件をサポートするための変更を含む) が Litware, Inc. からリリースされ次第、カスタム形式をアップグレードする能力も維持したいと考えています。さらに、このアップグレードを最低限の費用で実行したいと考えています。  これを実現するため Proseware, Inc. は、基準として Litware, Inc. のコンフィギュレーション BACS (英国企業) を使用してコンフィギュレーションを作成する必要があります。  
 1. ページを閉じます。
 2. Proseware, Inc を選択して 有効なプロバイダーとします。
 3. [有効に設定] をクリックします。
@@ -107,13 +108,11 @@ Proseware、Inc. は、自身のサービスの定期売買に従って電子支
     * 作成したコンフィギュレーションが完了したバージョン 1.1.1 として保存されることに注意してください。 これは、BACS の関税 (英国企業の関税) 形式のバージョン 1 であることを意味します。これは BACS (英国企業) 形式のバージョン 1、および支払 (単純化モデル) データ モデルのバージョン 1 に基づきます。  
 
 ## <a name="test-the-customized-format-to-generate-payment-files"></a>カスタマイズされた形式の支払ファイル生成テストの実行
-Dynamics 365 for Finance and Operations の並列セッションの「作成済みの形式を使用して支払用の電子ドキュメントを生成」手順にあるステップを実行します。 電子支払方法のパラメーターで BACS (英国関税) 形式を選択します。 作成した支払ファイルに、地域要件に対応した IBAN コードを表す最新の XML ノードが含まれていることを確認します。  
+    * Dynamics 365 for Finance and Operations, Enterprise Edition 並列セッション内の手順「作成済みの形式を使用して支払用の電子ドキュメントを生成」にあるステップを実行します。 電子支払方法のパラメーターで BACS (英国関税) 形式を選択します。 作成した支払ファイルに、地域要件に対応した IBAN コードを表す最新の XML ノードが含まれていることを確認します。  
 
 ## <a name="update-the-existing-country-specific-configuration"></a>既存の国固有のコンフィギュレーションの更新
-電子ドキュメントの形式を管理するために、Litware, Inc. は BACS (英国の企業) コンフィギュレーションを更新し、新しい国要件を採用する必要があります。 これは後に、Proseware, Inc. を含むサービスのサブスクライバーに提供される、このコンフィギュレーションの新しいバージョンに取り入れられます。  
-
-実際のサービス プロビジョン関連のプロセスでは、Proseware Inc. は BACS (英国企業) の各新規バージョンを Litware, Inc. コンフィギュレーションの LCS レポジトリからインポートできます。 本手順では、サービス プロバイダーに代わり BACS (英国の企業) を更新してこれをシミュレーションします。
-
+    * 電子ドキュメントの形式を管理するために、Litware, Inc. は BACS (英国の企業) コンフィギュレーションを更新し、新しい国要件を採用する必要があります。 これは後に、Proseware, Inc. を含むサービスのサブスクライバーに提供される、このコンフィギュレーションの新しいバージョンに取り入れられます。  
+    * 実際のサービス プロビジョン関連のプロセスでは、Proseware Inc. は BACS (英国企業) の各新規バージョンを Litware, Inc. コンフィギュレーションの LCS レポジトリからインポートできます。 本手順では、サービス プロバイダーに代わり BACS (英国の企業) を更新してこれをシミュレーションします。  
 1. ページを閉じます。
 2. Litware, Inc. の選択 プロバイダー
 3. [有効に設定] をクリックします。
@@ -123,12 +122,9 @@ Dynamics 365 for Finance and Operations の並列セッションの「作成済�
     * Litware、Inc. が所有する プロバイダー BACKS (英国企業) のドラフト バージョンは、国固有の新しい要件をサポートする変更点を取り入れるため選択されます。  
 
 ## <a name="localize-the-base-format-of-the-electronic-document"></a>電子ドキュメントの基準形式のローカライズ
-Litware によりサポートされる国固有の新しい要件があると想定します。  
-- 支払トランザクション毎の債権者の銀行 SWIFT コードの値。  
-- 生成ファイルの仕入先名のテキストの長さの 100 文字制限。  
- 
-必要な変更を取り入れるため、必要なコンフィギュレーションのドラフト バージョンを選択します。  
-
+    * Litware Inc. がサポートする国固有の新しい要件があると想定します: - 支払トランザクション毎の債権者の銀行 SWIFT コードの値。  - 生成ファイルの仕入先名のテキストの長さの 100 文字制限。  
+    * 国固有の新しい要件  
+    * 必要な変更を取り入れるため、必要なコンフィギュレーションのドラフト バージョンを選択します。  
 1. [デザイナー] をクリックします。
 2. [展開] / [折りたたみ] をクリックします。
 3. [展開] / [折りたたみ] をクリックします。
@@ -159,7 +155,7 @@ Litware によりサポートされる国固有の新しい要件があると想
 2. ページを閉じます。
 
 ## <a name="change-the-status-of-the-current-version-of-the-base-format-configuration"></a>基準形式のコンフィギュレーションの現行バージョンの状態を変更
-支払ドキュメントの生成および、そこから派生する形式のコンフィギュレーションの更新に使用できるよう、更新された基準形式のコンフィギュレーションの状態を [ドラフト] から [完了] に変更します。  
+    * 支払ドキュメントの生成および、そこから派生する形式のコンフィギュレーションの更新に使用できるよう、更新された基準形式のコンフィギュレーションの状態を [ドラフト] から [完了] に変更します。  
 1. [状態の変更] をクリックします。
     * 選択したコンフィギュレーションの現在のバージョンが [ドラフト] 状態であることに注意してください。  
 2. [完了] をクリックします。
@@ -168,8 +164,7 @@ Litware によりサポートされる国固有の新しい要件があると想
 5. 一覧で、目的のレコードを見つけ、選択します。
 
 ## <a name="change-the-base-version-for-the-custom-format-configuration"></a>カスタム形式のコンフィギュレーションの基準バージョンの変更
-Proseware, Inc. は最近発表された国固有の要件に従った電子支払ドキュメントの生成に使用できる BACS (英国の企業) コンフィギュレーションの新しいバージョン 1.2 が使用できることを通知されています。 Proseware, Inc. は国の標準としてこの使用を開始することを考えています。  これを実現するには、Proseware, Inc. はカスタム コンフィギュレーション BACS (英国関税) の基準コンフィギュレーション バージョンを変更する必要があります。 BACS (英国の企業) のバージョン 1.1 の代わりに 1.2 を使用します。  
-
+    * Proseware, Inc. は最近発表された国固有の要件に従った電子支払ドキュメントの生成に使用できる BACS (英国の企業) コンフィギュレーションの新しいバージョン 1.2 が使用できることを通知されています。 Proseware, Inc. は国の標準としてこの使用を開始することを考えています。  これを実現するには、Proseware, Inc. はカスタム コンフィギュレーション BACS (英国関税) の基準コンフィギュレーション バージョンを変更する必要があります。 BACS (英国の企業) のバージョン 1.1 の代わりに 1.2 を使用します。  
 1. [組織管理] > [ワークスペース] > [電子申告] の順に移動します。
 2. Proseware, Inc. プロバイダーを選択し、有効なプロバイダーとしてマーク付けします。
 3. [有効に設定] をクリックします。
@@ -203,6 +198,6 @@ Proseware, Inc. は最近発表された国固有の要件に従った電子支�
     * 作成したコンフィギュレーションが完了済のバージョン 1.2.2 として保存されていることに注意してください: 支払 (単純化モデル) データ モデルのバージョン 1 に基づく基準 BACS (英国関税) 形式のバージョン 2 に基づく基準 BACS (英国の企業) 形式のバージョン 2。  
 
 ## <a name="test-the-customized-format-for-payment-files-generation"></a>カスタマイズされた形式の支払ファイル生成テストの実行
-Dynamics 365 for Finance and Operations の並列セッションの「作成済みの形式を使用して支払用の電子ドキュメントを生成」手順にあるステップを実行します。 電子支払方法のパラメーターで作成した「BACS (英国関税)」形式を選択します。 Proseware, Inc. が最近導入した、地域要件に対応した IBAN 口座コードを表す XML ノードが作成した支払ファイルに含まれていることを確認します。 ファイルには Litware, Inc. が最近導入した、国要件に沿った SWIFT 銀行コードを表す XML ノードも含まれている必要があります。  
+    * Dynamics 365 for Finance and Operations, Enterprise Edition 並列セッション内の手順「作成済みの形式を使用して支払用の電子ドキュメントを生成」にあるステップを実行します。 電子支払方法のパラメーターで作成した「BACS (英国関税)」形式を選択します。 Proseware, Inc. が最近導入した、地域要件に対応した IBAN 口座コードを表す XML ノードが作成した支払ファイルに含まれていることを確認します。 ファイルには Litware, Inc. が最近導入した、国要件に沿った SWIFT 銀行コードを表す XML ノードも含まれている必要があります。  
 
 

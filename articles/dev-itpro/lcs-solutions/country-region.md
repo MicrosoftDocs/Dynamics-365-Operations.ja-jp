@@ -3,7 +3,7 @@ title: "ローカライズと規制の機能"
 description: "このトピックでは、国/地域固有の機能について詳しく説明しているリソースの一覧を示します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 09/05/2018
+ms.date: 09/30/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f64292a1b3726ea9b43f959a44c4ed2a1f392484
-ms.openlocfilehash: db18906739529e04710507ee9ff088540894171d
+ms.sourcegitcommit: c5d4fb53939d88fcb1bd83d70bc361ed9879f298
+ms.openlocfilehash: e74ad4442e1b6851812f889e79f2fb09060fb87a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/05/2018
+ms.lasthandoff: 10/16/2018
 
 ---
 
@@ -107,6 +107,7 @@ Microsoft Dynamics 365 for Finance and Operations には、[製品のローカ�
     :::column-end:::
     :::column:::
         - [ポーランド](../../financials/localizations/poland.md)
+        - [ロシア](../../financials/localizations/russia.md)
         - [サウジアラビア](../../financials/localizations/saudi-arabia.md)
         - [シンガポール](../../financials/localizations/singapore.md)
         - [スペイン](../../financials/localizations/spain.md)

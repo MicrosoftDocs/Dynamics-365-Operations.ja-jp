@@ -1,28 +1,29 @@
 --- 
-title: "裏書済受取手形の決済 (日本)"
+title: "裏書済受取手形の決済"
 description: "このタスクは、裏書きされた為替手形の決済について説明します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: CustBillOfExchangeEndorseListPage, VendOpenTrans, CustBillOfExchangeEndorseSettle
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 04104504d4de4e3083b8f7086492967417191ef4
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: a535a43cd006fb69369c884da5ec45693b7e6161
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/16/2018
 
 ---
-# <a name="settle-an-endorsed-bill-of-exchange-japan"></a>裏書済受取手形の決済 (日本)
+# <a name="settle-an-endorsed-bill-of-exchange"></a>裏書済受取手形の決済
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

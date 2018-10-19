@@ -1,31 +1,32 @@
 --- 
-title: "品揃えの管理"
+title: "品揃えの管理 (2016 年 11 月)"
 description: "この手順では、新製品の品揃えを作成し発表する方法およびデモデータ企業USRTの使用方法を示します。"
 author: jashanno
 manager: AnnBe
-ms.date: 10/31/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
-ms.service: dynamics-365-retail
+ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: DefaultDashboard, RetailCategoryAndProductWorkspace, RetailCategoryAndProductAssortment, RetailAssortmentDetails, RetailOperatingUnitPicker, EcoResCategorySingleLookup
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 1c353a135559a1901f98ae6e7c9671254ab625c3
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: f96c79558c3248406a1b5988f9c9dc9783db4406
 ms.contentlocale: ja-jp
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 10/16/2018
 
 ---
-# <a name="manage-assortments"></a>品揃えの管理 
+# <a name="manage-assortments-november-2016"></a>品揃えの管理 (2016 年 11 月)
 
-[!include [task guide banner](../includes/task-guide-banner.md)]
+[!include[task guide banner](../includes/task-guide-banner.md)]
 
 この手順では、新製品の品揃えを作成し発表する方法およびデモデータ企業USRTの使用方法を示します。 この手順を実施するには、Dynamics AX アプリケーション 7.0.1 以降および Dynamics AX platform 7.1が必要です。  
 

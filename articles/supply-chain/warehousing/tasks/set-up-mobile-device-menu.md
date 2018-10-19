@@ -1,29 +1,30 @@
 --- 
-title: "発注書の作業を完了するためのモバイル デバイスのメニュー項目の設定"
+title: "タイプが発注書のタスクを完了するためのモバイル デバイスのメニュー項目を設定します。"
 description: "この手順では、モバイル デバイスのメニュー項目の設定方法について説明します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/25/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: WHSRFMenuItem, WHSRFAutoConfirm, WHSRFMenu
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: b80c258d6a779a8fc5bb6c846abd3af7e69d5e06
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 326a0039d2769ee5f459a87c302c93604d2379aa
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/16/2018
 
 ---
-# <a name="set-up-a-mobile-device-menu-item-for-completing-work-in-a-purchase-order"></a>発注書の作業を完了するためのモバイル デバイスのメニュー項目の設定
+# <a name="set-up-a-mobile-device-menu-item-for-completing-work-of-type-purchase-order"></a>タイプが発注書のタスクを完了するためのモバイル デバイスのメニュー項目を設定します。
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

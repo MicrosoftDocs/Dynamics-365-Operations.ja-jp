@@ -1,28 +1,29 @@
 --- 
-title: "割増償却に対する減価償却プロファイルおよび転記プロファイルのコンフィギュレーション (日本)"
+title: "割増償却に対する減価償却プロファイルおよび転記プロファイルのコンフィギュレーション"
 description: "この手順を使用して、特別償却の減価償却プロファイルと転記プロファイルを構成する方法を説明します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 11/11/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: AssetDepreciationProfile,  AssetPosting
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: c300f9cca6dd49c8fcafd972d250a801cf84672d
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: f064b16597a484b984fa65534755a71220e2ce69
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/16/2018
 
 ---
-# <a name="configure-depreciation-profile-and-posting-profile-for-additional-depreciation-japan"></a>割増償却に対する減価償却プロファイルおよび転記プロファイルのコンフィギュレーション (日本)
+# <a name="configure-depreciation-profile-and-posting-profile-for-additional-depreciation"></a>割増償却に対する減価償却プロファイルおよび転記プロファイルのコンフィギュレーション
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

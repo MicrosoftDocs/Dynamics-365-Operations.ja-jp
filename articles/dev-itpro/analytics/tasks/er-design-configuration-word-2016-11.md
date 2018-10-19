@@ -1,25 +1,26 @@
 --- 
 title: "Word 形式でレポートを生成するための ER コンフィギュレーションのデザイン"
-description: "次の手順では、システム管理者または電子レポート開発者のロールを持つユーザーが、電子レポート (ER) 形式を構成して、Microsoft Word ファイルとしてレポートを生成する方法を説明します。"
+description: "次の手順では、システム管理者または電子申告開発者のロールを持つユーザーが、電子申告形式をコンフィギュレーションして、Microsoft Word ファイルとしてレポートを生成する方法を説明します。"
 author: NickSelin
 manager: AnnBe
-ms.date: 12/21/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ERWorkspace, ERSolutionTable, EROperationDesigner,  LedgerJournalTable, LedgerJournalTransVendPaym
 audience: Application User
-ms.reviewer: kfend
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 615ab4a4f932478b8b847112d4fed8310187f03b
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: dc47d44285af4c720d2f450d11fb1004ef461d0f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 10/16/2018
 
 ---
 # <a name="design-er-configurations-to-generate-reports-in-word-format"></a>Word 形式でレポートを生成するための ER コンフィギュレーションのデザイン
@@ -30,9 +31,9 @@ ms.lasthandoff: 08/09/2018
 
 これらのステップを完了するには、「OPENXML 形式でレポートを生成する ER コンフィギュレーションの作成」タスク ガイドの手順を最初に完了する必要があります。 また事前に、サンプル レポート用に次のテンプレートをダウンロードしてローカルに保存する必要があります。
 
-[支払レポートのテンプレート](https://go.microsoft.com/fwlink/?linkid=862266)
+- [支払レポートのテンプレート](https://go.microsoft.com/fwlink/?linkid=862266)
+- [支払レポートのバインドされたテンプレート](https://go.microsoft.com/fwlink/?linkid=862266)
 
-[支払レポートのバインドされたテンプレート](https://go.microsoft.com/fwlink/?linkid=862266)
 
 この手順は、Microsoft Dynamics 365 for Operations バージョン 1611 に追加された機能です。
 
@@ -49,7 +50,7 @@ ms.lasthandoff: 08/09/2018
 ## <a name="replace-the-excel-template-with-the-word-template"></a>Excel テンプレートを Word テンプレートに置き換えます
     * 現在は、OPENXML 形式で出力を生成するテンプレートとして Excel ドキュメントが使用されます。 レポートのテンプレートを Word 形式でインポートします。  
 1. [添付ファイル] クリックします。
-    * 既存の Excel テンプレートを、以前ダウンロードした Word テンプレート 支払いレポートテンプレートに置き換えます。 このテンプレートには、ER 出力を生成するドキュメントのレイアウトのみが含まれていることに注意してください。  
+    * 既存の Excel テンプレートを、以前ダウンロードした Word テンプレート SampleVendPaymDocReport.docx に置き換えます。 このテンプレートには、ER 出力を生成するドキュメントのレイアウトのみが含まれていることに注意してください。  
 2. [削除] をクリックします。
 3. [はい] をクリックします。
 4. [新規] をクリックします。

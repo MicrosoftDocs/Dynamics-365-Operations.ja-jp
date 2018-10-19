@@ -1,28 +1,29 @@
 --- 
-title: "固定資産の分解一覧の使用 (日本)"
+title: "固定資産の分解一覧の使用"
 description: "日本では、固定資産のコンポーネントを在庫に移転できます。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 11/10/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: AssetTable, AssetComponentList_JP, AssetComponentPriceCalcDropDialog_JP, LedgerJournalTable, LedgerJournalTransAsset
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 7248b789db5e396609ad155357feec065f3a1600
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: b8b50db4fc235708fefaefd62fe3202489e6bfbe
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/16/2018
 
 ---
-# <a name="use-disassemble-list-for-fixed-assets-japan"></a>固定資産の分解一覧の使用 (日本)
+# <a name="use-disassemble-list-for-fixed-assets"></a>固定資産の分解一覧の使用
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

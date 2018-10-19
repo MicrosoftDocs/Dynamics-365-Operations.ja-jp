@@ -1,28 +1,29 @@
 --- 
-title: "ER 出力でドキュメント管理ファイルを使用するためのデータ モデルの拡張"
+title: "ER ドキュメント管理ファイルを形式出力で使用する (第 2 部 - データ モデルの拡張)"
 description: "次の手順では、システム管理者または電子レポート開発者のロールに指定されたユーザーが、ER出力のドキュメント管理ファイル（添付）を使用するために電子レポート（ER）フォーマットをどのように環境設定しているのか説明します。"
 author: NickSelin
 manager: AnnBe
-ms.date: 10/28/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERDataModelContentsItemCreationDialog, ERModelMappingTable, ERModelMappingDesigner, ERExpressionDesignerFormula
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 8363dd2af728577175a620d7b645d90cea84803a
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: cb4c58dc86a159a70634c05408a8db471ebcae4c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 10/16/2018
 
 ---
-# <a name="extend-data-models-to-use-document-management-files-in-er-output"></a>ER 出力でドキュメント管理ファイルを使用するためのデータ モデルの拡張
+# <a name="er-use-document-management-files-in-format-outputs-part-2-extend-data-model"></a>ER 形式の出力 (パート 2: データ モデルの拡張) におけるドキュメント管理ファイルの使用
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -57,7 +58,7 @@ ms.lasthandoff: 08/09/2018
 17. [品目タイプ] フィールドで、「String」を選択します。
 18. [追加] をクリックします。
 
-## <a name="map-new-data-model-elements-to-dynamics-365-for-finance-and-operations-data-sources"></a>新規データ モデル・エレメントを Dynamics 365 for Finance and Operations データ ソースにマッピングします
+## <a name="map-new-data-model-elements-to-dynamics-365-for-finance-and-operations-enterprise-edition-data-sources"></a>新規データ モデル・エレメントを Dynamics 365 for Finance and Operations、Enterprise edition データ ソースにマッピングします
 1. [モデルからデータ ソースへのマップ] をクリックします。
 2. クイック フィルターを使用し、 「InvoiceCustomer」の値により「定義」フィールドでフィルターします。
     * 顧客への請求  

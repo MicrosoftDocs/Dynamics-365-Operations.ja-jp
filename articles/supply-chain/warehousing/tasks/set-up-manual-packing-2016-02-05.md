@@ -1,33 +1,34 @@
 --- 
-title: "手動の梱包の設定 (2016 年 2 月および 5 月のみ)"
+title: "手動梱包の設定 (2016 年 2 月 & 2016 年 5 月)"
 description: "梱包プロセスで、製品を検証してコンテナーに梱包できます。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 11/04/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: WHSLocationProfile, WHSParameters, WHSContainerType, WHSPackProfile, WHSCloseContainerProfile, InventLocationIdLookup, UnitOfMeasureLookup
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 7f992a6a1655cd868d79228c490d59b46bfae715
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: b90b4a71e2447e942dbb4a9645ef93064da630d3
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/16/2018
 
 ---
-# <a name="set-up-manual-packing-february--may-2016-only"></a>手動の梱包の設定 (2016 年 2 月および 5 月のみ)
+# <a name="set-up-manual-packing-february-2016--may-2016"></a>手動梱包の設定 (2016 年 2 月 & 2016 年 5 月)
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-梱包プロセスで、製品を検証してコンテナーに梱包できます。 このプロセスでは、倉庫作業者が製品を保管場所から集荷し、品目の数量および種類をチェックする梱包ステーションに移動して、適切なコンテナーに割り当てます。 コンテナーが完全に梱包され、閉じてから出荷ドックに移動されると、製品を出荷する準備が整います。 この手順では、USMF というデモ会社を使用します。
+梱包プロセスで、製品を検証してコンテナーに梱包できます。 このプロセスでは、倉庫作業者が製品を保管場所から集荷し、品目の数量および種類をチェックする梱包ステーションに移動して、適切なコンテナーに割り当てます。 コンテナーが完全に梱包され、閉じてから出荷ドックに移動されると、製品を出荷する準備が整います。 この手順では、USMF というデモ会社を使用します。 この手順は、Dynamics 365 for Operations の2016 年 2 月と 2016 年 5 月のバージョンのみです。
 
 
 ## <a name="set-up-location-profiles"></a>場所プロファイルを設定します

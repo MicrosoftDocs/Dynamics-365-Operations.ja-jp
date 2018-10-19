@@ -1,28 +1,29 @@
 --- 
-title: "割増償却を使用する固定資産の作成 (日本)"
+title: "割増償却を使用する固定資産の作成"
 description: "日本では、固定資産は特定の条件下で増加償却額を転記することができます。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 10/30/2017
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: AssetTable, AssetBook
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 66f10523fe3fb104550a88f735a9644613ec861b
-ms.openlocfilehash: 0597df998979aa04276104cf95b92de73ae45b16
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: f23861235dfb8e8acd864c9ccb9d0379c8b789dd
 ms.contentlocale: ja-jp
-ms.lasthandoff: 10/30/2017
+ms.lasthandoff: 10/16/2018
 
 ---
-# <a name="create-a-fixed-asset-with-additional-depreciation-japan"></a>割増償却を使用する固定資産の作成 (日本)
+# <a name="create-a-fixed-asset-with-additional-depreciation"></a>割増償却を使用する固定資産の作成
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -41,7 +42,7 @@ ms.lasthandoff: 10/30/2017
 これはデモ データ会社 JPMF を使用して作成されました。
 
 
-## <a name="create-a-fixed-asset-and-assign-an-additional-depreciation-profile-to-it"></a>固定資産の作成および割増減価償却プロファイルの割り当て
+## <a name="create-a-fixed-assset-and-assign-an-additional-depreciation-profile-to-it"></a>固定資産の作成および割増減価償却プロファイルの割り当て
 1. [固定資産] > [固定資産] > [固定資産] に移動します。
 2. [新規] をクリックします。
 3. [固定資産グループ] フィールドで値を選択します。

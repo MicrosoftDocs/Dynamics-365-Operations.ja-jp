@@ -3,7 +3,7 @@ title: "間接費の計算"
 description: "このトピックでは、間接費を計算し配賦するための標準的なプロセスについて説明します。"
 author: AndersGirke
 manager: AnnBe
-ms.date: 04/20/2017
+ms.date: 10/04/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: shylaw
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 549e9b4b073a4e93dd3a1dd52dd6f43e7420a31b
+ms.sourcegitcommit: 12ae99c15bafcd9cc08b30903fe3f251f446b17d
+ms.openlocfilehash: 4de705324ac497cfb11fae3dadc6f57d038fd0b5
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 10/16/2018
 
 ---
 
@@ -191,8 +191,7 @@ ms.lasthandoff: 11/03/2017
 </tbody>
 </table>
 
-コスト動作に関する詳細については、コスト動作ポリシーを参照してください。 (このトピックはまだ完成していないものの、まもなく公開されます。)
-
+詳細については、「[原価動作ポリシーの作成と原価管理単位への割り当て](tasks/create-assign-cost-behavior-policy-cost-control-unit.md)」を参照してください。
 ### <a name="step-2-process-the-cost-distribution-calculation"></a>手順 2: コスト配分計算を処理する
 
 コスト配分は、関連する配賦基準を適用することによって、1 つのコスト オブジェクトから 1 つまたは複数の他のコスト オブジェクトへコストを再配分するために使用されます。 コスト配分とコスト配賦は、コスト配分は常に元のコストの主要コスト要素レベルで起こるという点が異なります。
@@ -430,7 +429,7 @@ ms.lasthandoff: 11/03/2017
 </tbody>
 </table>
 
-コスト配分と配賦基準の詳細については、コスト配分ポリシーおよび配賦基準を参照してください。 (このトピックはまだ完成していないものの、まもなく公開されます。)
+詳細については、「[原価配分ポリシーの作成と原価管理単位への割り当て](tasks/create-assign-cost-distribution-policy-cost-control-unit.md)」を参照してください。 
 
 ### <a name="step-3-process-the-overhead-rate-calculation"></a>手順 3: 間接費率の計算を処理する
 
@@ -618,7 +617,7 @@ ms.lasthandoff: 11/03/2017
 </tbody>
 </table>
 
-間接費率ポリシーの詳細については、間接費率ポリシーおよび配賦基準を参照してください。 (このトピックはまだ完成していないものの、まもなく公開されます。)
+詳細については、「[間接費計算を実行する](cost-rollup.md#perform-overhead-calculation)」を参照してください。
 
 ### <a name="step-4-process-the-cost-allocation-calculation"></a>手順 4: コスト配賦計算を処理する
 
@@ -725,7 +724,8 @@ ms.lasthandoff: 11/03/2017
 </tbody>
 </table>
 
-**注記:** Finance と Operations では、製品に消費される生産時間などの統計測定は、ソース データから抽出できます。 統計測定プロバイダーの詳細については、統計測定プロバイダー テンプレートを参照してください。 (このトピックはまだ完成していないものの、まもなく公開されます。) 次の表は、HR サービスが合計コスト (固定費と変動費) の配賦基準として適用される際の結果を示します。
+> [!NOTE]
+> Finance and Operations では、製品に消費される生産時間などの統計測定は、ソース データから抽出できます。 詳細については、「[統計測定プロバイダー テンプレート](statistical-measure-provider-template.md#statistical-measure-provider-template)」を参照してください。 次の表は、HR サービスが合計コスト (固定費と変動費) の配賦基準として適用される際の結果を示します。
 
 <table>
 <thead>
@@ -1412,7 +1412,7 @@ ms.lasthandoff: 11/03/2017
 </table>
 
 > [!NOTE]
-> このトピックでは、主要コスト要素である 10001 電気がどのようにコスト オブジェクトをフローするかを示します。 したがって、この間接費は組織の最下位レベルに配賦されます。 つまり、最下位レベルのコスト オブジェクトがそのコストを負担します。 コスト オブジェクト間のコストの視覚的なフローが必要な場合は、コスト ロールアップ ポリシー ルールを使用して、コストのフローを視覚化できます。 詳細については、コスト ロールアップ ポリシーを参照してください。 (このトピックはまだ完成していないものの、まもなく公開されます。)
+> このトピックでは、主要コスト要素である 10001 電気がどのようにコスト オブジェクトをフローするかを示します。 したがって、この間接費は組織の最下位レベルに配賦されます。 つまり、最下位レベルのコスト オブジェクトがそのコストを負担します。 コスト オブジェクト間のコストの視覚的なフローが必要な場合は、コスト ロールアップ ポリシー ルールを使用して、コストのフローを視覚化できます。 詳細については、「[原価ロールアップ](cost-rollup.md)」を参照してください。
 
 
 

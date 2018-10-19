@@ -1,28 +1,29 @@
 --- 
-title: "増加償却の提案と転記 (日本)"
+title: "増加償却の提案と転記"
 description: "日本の場合、確認済加速償却ドキュメントのデータに基づいて加速償却を提案することができます。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 02/26/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: LedgerJournalTable, LedgerJournalTransAsset, AssetAcceleratedDepDocument_JP
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 67feb0d8e4e51154229a48e9d4e53fda05e7911b
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 0bdde92813a8d6b54b2713382ec6fd62350c92ee
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/16/2018
 
 ---
-# <a name="propose-and-post-accelerated-depreciation-japan"></a>増加償却の提案と転記 (日本)
+# <a name="propose-and-post-accelerated-depreciation"></a>増加償却の提案と転記
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

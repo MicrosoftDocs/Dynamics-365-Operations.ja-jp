@@ -1,28 +1,29 @@
 --- 
-title: "顧客への自由書式の請求書テンプレートの割り当て"
+title: "自由書式の請求書のテンプレートを顧客へ割り当てる"
 description: "このタスクは顧客に自由書式の請求書テンプレートを割り当てる方法を示します。"
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 11/10/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: CustTable, CustRecurrenceInvoice
 audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 3bcb59c6edd04877dc2a052002be513205ae840a
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 317b3bd4c1f395987ef3dbbd268c40be5c688320
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/16/2018
 
 ---
-# <a name="assign-a-free-text-invoice-template-to-a-customer"></a>顧客への自由書式の請求書テンプレートの割り当て
+# <a name="assign-free-text-invoice-template-to-a-customer"></a>自由書式の請求書のテンプレートを顧客へ割り当てる
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

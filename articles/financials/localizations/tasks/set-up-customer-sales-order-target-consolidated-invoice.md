@@ -1,28 +1,29 @@
 --- 
-title: "月次締め請求書の対象とする顧客および販売注文の設定 (日本)"
+title: "月次締め請求書の対象とする顧客および販売注文の設定"
 description: "通常日本では、顧客はすべてのトランザクションに月次締め請求書を使用します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 02/08/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: CustTable, SalesTableListPage, SalesTable
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: e5c4262e08188dbfedd415c36e44ade0ced34899
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: c9b1994c0f91282f5a66da2c9e259de202b52153
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/16/2018
 
 ---
-# <a name="set-up-a-customer-and-sales-order-to-be-target-of-consolidated-invoice-japan"></a>月次締め請求書の対象とする顧客および販売注文の設定 (日本)
+# <a name="set-up-a-customer-and-sales-order-to-be-target-of-consolidated-invoice"></a>月次締め請求書の対象とする顧客および販売注文の設定
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

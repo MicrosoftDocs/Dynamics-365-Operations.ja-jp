@@ -1,28 +1,29 @@
 --- 
-title: "増加償却ドキュメントの作成および使用状況データの入力 (日本)"
+title: "増加償却ドキュメントの作成および使用状況データの入力"
 description: "日本では、加速償却は、原則ドキュメントごとに申告されます。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 09/22/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: AssetTable, AssetBook, LedgerJournalTable, LedgerJournalTransAsset, AssetAcceleratedDepDocument_JP, SysQueryForm
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 9d3d127e6b0c921f55c08eb6e9814d32a9d717a8
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 875d06031469a60f2c7e093707cbd2fd22ce7313
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/16/2018
 
 ---
-# <a name="create-an-accelerated-depreciation-document-and-enter-usage-data-japan"></a>増加償却ドキュメントの作成および使用状況データの入力 (日本)
+# <a name="create-an-accelerated-depreciation-document-and-enter-usage-data"></a>増加償却ドキュメントの作成および使用状況データの入力
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

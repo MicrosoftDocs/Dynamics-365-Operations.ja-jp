@@ -1,28 +1,29 @@
 --- 
-title: "個別資産の減損インジケーターの管理 (日本)"
+title: "個別資産の減損インジケーターの管理"
 description: "このタスクを使用して、個別資産の減損インジケーターの管理方法を把握します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 09/22/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: AssetTable, AssetBook, AssetImpairmentIndicator_JP, AssetImpairmentReview_JP, SysQueryForm
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 637779191db297695e632f6bdd0e52457ee3d45b
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 1db519837cee597d98d420aa5aa63c2ab924cc06
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/16/2018
 
 ---
-# <a name="maintain-impairment-indicators-on-individual-assets-japan"></a>個別資産の減損インジケーターの管理 (日本)
+# <a name="maintain-impairment-indicators-on-individual-assets"></a>個別資産の減損インジケーターの管理
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

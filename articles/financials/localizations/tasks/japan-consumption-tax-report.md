@@ -1,40 +1,33 @@
 --- 
-title: "消費税レポートの生成 (日本)"
+title: "日本消費税レポートの生成"
 description: "この手順では、日本の消費税申告の生成について説明します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: LedgerConsumptionTaxCalcTrans_JP, LedgerConsumptionTaxReportTrans_JP
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 8beb86f670ebc99212e6ba658f7d0aba041c8f38
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: adf62667a12b6bbb64c8e8188c83f962e8b7a65b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/16/2018
 
 ---
-# <a name="generate-consumption-tax-report-japan"></a>消費税レポートの生成 (日本)
+# <a name="generate-japan-consumption-tax-report"></a>日本消費税レポートの生成
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-この手順では、日本の消費税申告の生成について説明します。
-
-
-
-この手順は、デモ データ会社 JPMF を使用して作成されました。
-
-
-
-
+この手順では、日本の消費税申告の生成について説明します。 この手順は、デモ データ会社 JPMF を使用して作成されました。
 
 1. [税] > [申告] > [売上税] > [消費税申告書] の順に移動します。
 2. [開始日] フィールドに日付を入力します。

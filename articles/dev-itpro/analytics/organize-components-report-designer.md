@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
-ms.openlocfilehash: c9772d45cf9d9941dd8fe0de13ce624ea3aa3b53
+ms.sourcegitcommit: a128f326cb89ab00e69be40801553c0ac551446e
+ms.openlocfilehash: 3f2b34cccfd84a9e4bb76e7a1da64e5cefa9982e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
+ms.lasthandoff: 10/16/2018
 
 ---
 
@@ -37,12 +37,9 @@ ms.lasthandoff: 08/13/2018
 ## <a name="rename-a-folder-or-building-block-in-report-designer"></a>[レポート デザイナー] で、フォルダまたは構成要素の名前を変更
 レポート デザイナーで、フォルダー、レポート定義、行定義、列定義、およびレポート ツリー定義の名前を変更できます。
 
-> [!NOTE]
-> 構成要素の名前を変更すると、構成要素を使用するレポートの定義を更新する必要があります。 そうしないと、新しいレポートを生成することはできません。
+### <a name="rename-a-folder-or-building-block-in-report-designer"></a>レポート デザイナーでのフォルダーまたはレポート パーツの名前変更
 
-### <a name="rename-a-folder-or-building-block-in-report-designer"></a>[レポート デザイナー] で、フォルダまたは構成要素の名前を変更
-
-1. [レポート デザイナー]で、ナビゲーション ウィンドウを使用して、名前を変更するフォルダまたはオブジェクトを探します。
+1. レポート デザイナーで、ナビゲーション ウィンドウを使用して、名前を変更するフォルダーまたはオブジェクトを探します。
 2. フォルダーまたはオブジェクトを右クリックし、**名前の変更** をクリックします。 ナビゲーション ウィンドウの **名前** フィールドが使用できるようになります。
 3. 新しい名前を入力してから、[入力] を押します。
 4. 構成要素が行定義、列定義、またはレポート ツリー定義の場合は、関連付けられる他の構成要素を更新する必要があります。 手順 3 で名前を変更した構成要素を右クリックし、**関連付け** を選択し、一覧から品目を選択して更新します。

@@ -18,10 +18,10 @@ ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d20bc3519096f1035d26f89d42aa7e8f0fc368cd
-ms.openlocfilehash: 7061ee2e8b22d29381131815898902a482b7b730
+ms.sourcegitcommit: 1aae5797e37b846a38f957b02870e213da528a2d
+ms.openlocfilehash: 4ad96a3aa3ac80045345b839ea8a923884061aeb
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/29/2018
+ms.lasthandoff: 10/16/2018
 
 ---
 
@@ -31,8 +31,7 @@ ms.lasthandoff: 08/29/2018
 
 この記事では、Finance and Operations または Microsoft Dynamics Lifecycle Services (LCS) のヘルプを入手する方法について説明します。 
 
-<a name="contact-support"></a>サポートへの問い合わせ
----------------
+## <a name="contact-support"></a>サポートへの問い合わせ
 
 Finance and Operations に関する技術的な質問がおありの場合、または Microsoft Dynamics Lifecycle Services (LCS) にアクセスするのにサポートが必要な場合は、この記事にある情報を使用して Microsoft にお問い合わせください。
 
@@ -89,8 +88,10 @@ CustomerSource へのサインインやアクセス、e ラーニング、検索
 </tbody>
 </table>
 
-Microsoft Dynamics サポート提供の詳細については、「[Microsoft Dynamics Online サポート](https://www.microsoft.com/en-us/dynamics/dynamics-online-support.aspx)」を参照してください。
 
-
+## <a name="additional-resources"></a>その他のリソース
+- [Dynamics 365 for Retail のサポートの入手](../../retail/retail-support.md)
+- [Dynamics 365 for Talent のサポートの入手](../../talent/talent-support.md)
+- Microsoft Dynamics サポート提供の詳細については、「[Microsoft Dynamics Online サポート](https://www.microsoft.com/en-us/dynamics/dynamics-online-support.aspx)」を参照してください。
 
 

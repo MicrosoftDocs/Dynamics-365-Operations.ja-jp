@@ -1,28 +1,29 @@
 --- 
-title: "固定資産仕訳帳を使用した減損損失の提案と転記 (日本)"
+title: "固定資産仕訳帳を使用した減損損失の提案と転記"
 description: "この手順を用いて、固定資産仕訳帳を使用して減損金額を提示および転記する方法を把握します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 11/10/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: LedgerJournalTable, LedgerJournalTransAsset
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 0e508f8adb6572e6712e63593ec676fd644c05d6
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: b7353519782e62d57d66d9ba36a2f6a2b33a7c9c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/16/2018
 
 ---
-# <a name="propose-and-post-the-impairment-amount-by-using-fixed-asset-journal-japan"></a>固定資産仕訳帳を使用した減損損失の提案と転記 (日本)
+# <a name="propose-and-post-the-impairment-amount-by-using-fixed-asset-journal"></a>固定資産仕訳帳を使用した減損損失の提案と転記
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

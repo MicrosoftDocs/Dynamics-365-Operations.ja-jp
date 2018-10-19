@@ -1,28 +1,29 @@
 --- 
-title: "信用状のインポート"
+title: "輸入信用状"
 description: "この手順は、信用状のインポートのプロセスを説明します。"
 author: kweekley
 manager: AnnBe
-ms.date: 02/26/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: VendTable, VendBankAccounts, PurchTable, PurchCreateOrder, InventItemIdLookupPurchase, BankLCImport,  PurchEditLines, VendEditInvoice, SrsReportViewerForm, LedgerJournalTable, LedgerJournalTransVendPaym, VendOpenTrans, SysQueryForm, BankAccountTableLookUp
 audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 02be2627186a149a05eaccfa3e5906a9fe1d74dd
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: c1768494182a79d7a33044498c1e768e61d937d1
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/16/2018
 
 ---
-# <a name="import-a-letter-of-credit"></a>信用状のインポート
+# <a name="import-letter-of-credit"></a>輸入信用状
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -110,7 +111,8 @@ ms.lasthandoff: 09/29/2017
 1. [現金および銀行管理] > [信用状] > [輸入信用状] および [輸入取立] の順に移動します。
 2. 一覧で、目的のレコードを見つけ、選択します。
 3. 一覧で、選択された行のリンクをクリックします。
-    * [輸入信用状] の状態を確認します。  
+    * [輸入信用状] の状態を確認します。    
+    *   
 4. ページを閉じます。
 5. ページを閉じます。
 

@@ -1,28 +1,29 @@
 --- 
-title: "CGU グループおよび資産グループの作成 (日本)"
+title: "CGU グループおよび資産グループの作成"
 description: "日本では、固定資産の減損は、個々の固定資産または資産グループに基づき決定することができます。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 10/30/2017
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: AssetImpairmentCashGenUnitGroup_JP, SysQueryForm, AssetImpairmentCashGenUnit_JP
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 66f10523fe3fb104550a88f735a9644613ec861b
-ms.openlocfilehash: cee8cf43d79bbf24219bd4662ace29e85afd39a0
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: e5c674bd1463447105e6e163e32d07ee24f6b853
 ms.contentlocale: ja-jp
-ms.lasthandoff: 10/30/2017
+ms.lasthandoff: 10/16/2018
 
 ---
-# <a name="create-cgu-group-and-cash-generating-units-japan"></a>CGU グループおよび資産グループの作成 (日本)
+# <a name="create-cgu-group-and-cash-generating-units"></a>CGU グループおよび資産グループの作成
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -77,7 +78,7 @@ ms.lasthandoff: 10/30/2017
 2. [クイック フィルター] を使用して編集する CGU を検索します。
     * 以前にメモした最初の資産グループ番号を入力します。  
 3. [一括インポート] をクリックします。
-    * その条件と一致するすべての資産を一度に追加する条件を指定することをお勧めします。 グリッドに、資産を 1 つずつ入力することもできます。  
+    * その条件と一致するすべての資産を一度に追加する条件を指定することをお勧めします。   グリッドに、資産を 1 つずつ入力することもできます。  
 4. [基準] フィールドに値を入力します。
     * 例: 場所 = 福岡  
 5. [OK] をクリックします。

@@ -1,28 +1,29 @@
 --- 
-title: "データ ソースとして財務分析コードを使用するためのデータ モデルのデザイン"
+title: "ER 財務分析コードをデータ ソースとして使用する (第 1 部 - データ モデルのデザイン)"
 description: "次の手順では、システム管理者または電子レポート開発者が、電子レポート・データソースとしての財務分析コードを使用するために 電子レポート（ER）モデルをどのように環境設定しているのか説明します。"
 author: NickSelin
 manager: AnnBe
-ms.date: 10/18/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ERWorkspace, ERVendorPart, ERSolutionTable, ERSolutionCreateDropDialog, ERDataModelDesigner, ERDataModelContentsItemCreationDialog
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 9b33d78b60ca4e4813dd4b158febee2323cea476
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 84f546b73eefe3ead78c6ab3fdbbc05d0db5fef5
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 10/16/2018
 
 ---
-# <a name="design-data-models-to-use-financial-dimensions-as-data-sources"></a>データ ソースとして財務分析コードを使用するためのデータ モデルのデザイン
+# <a name="er-use-financial-dimensions-as-a-data-source-part-1-design-data-model"></a>ER データ ソース (パート 1: データ モデルのデザイン) としての財務分析コードの使用
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

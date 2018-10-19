@@ -1,28 +1,29 @@
 --- 
-title: "増加償却パラメーターおよび転記プロファイルのコンフィギュレーション (日本)"
+title: "増加償却パラメーターおよび転記プロファイルのコンフィギュレーション"
 description: "日本では、加速償却は [レート係数]、[レートしきい値] および [計算方法] に基づいて計算されます。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 09/16/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: AssetParameters, AssetPosting
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: f35317c41181834491f0efac05b023e635ee1577
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 87b3768043bccb5d308e08ac1d077dba6f691a4c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/16/2018
 
 ---
-# <a name="configure-accelerated-depreciation-parameters-and-posting-profiles-japan"></a>増加償却パラメーターおよび転記プロファイルのコンフィギュレーション (日本)
+# <a name="configure-accelerated-depreciation-parameters-and-posting-profiles"></a>増加償却パラメーターおよび転記プロファイルのコンフィギュレーション
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

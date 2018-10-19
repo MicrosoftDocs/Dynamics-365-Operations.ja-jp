@@ -1,28 +1,29 @@
 --- 
-title: "自由回答式の質問の作成"
+title: "自由回答式の質問を作成します"
 description: "自由回答式の質問は回答者が自分の回答を入力できるようになっています。"
 author: kherr75
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
-ms.service: dynamics-365-talent
+ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: KMQuestion
 audience: Application User
 ms.reviewer: rschloma
-ms.search.scope: Operations, Talent
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 5ae80e9c1c36ea983b21da2d9c7cca5148157b67
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 51d238e41e1c89211d158bd4aee958a85bec772d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 10/16/2018
 
 ---
-# <a name="create-open-ended-questions"></a>自由回答式の質問の作成
+# <a name="create-an-open-ended-question"></a>自由回答式の質問を作成します
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

@@ -1,28 +1,29 @@
 --- 
-title: "圧縮記帳のある固定資産の処分 (日本)"
+title: "圧縮記帳のある固定資産の処分"
 description: "このタスクでは、圧縮記帳のある固定資産の日本での処理方法について説明します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 09/22/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: LedgerJournalTable, LedgerJournalTransAsset, SysQueryForm
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: cc76427abe9d605d52f7a9ca1b674cb17edca8ff
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: f6c759bab60cfe035f63ead45f114a8dd6b7a94f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/16/2018
 
 ---
-# <a name="dispose-of-a-fixed-asset-with-reduction-entry-japan"></a>圧縮記帳のある固定資産の処分 (日本)
+# <a name="dispose-of-a-fixed-asset-with-reduction-entry"></a>圧縮記帳のある固定資産の処分
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

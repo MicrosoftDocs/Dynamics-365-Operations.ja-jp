@@ -1,28 +1,29 @@
 --- 
-title: "月次締め請求書のパラメーターのコンフィギュレーションと買掛金勘定の設定 (日本)"
+title: "月次締め請求書のパラメーターのコンフィギュレーションと買掛金勘定の設定"
 description: "日本では、日本の商習慣に合わせて月次締め請求書を有効にできます。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 10/30/2017
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: VendParameters, PaymDay, PaymTerm
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 66f10523fe3fb104550a88f735a9644613ec861b
-ms.openlocfilehash: 23f312f2ad075b773c334c0d8c807ec0f6577a28
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 12ad568b68c9c1f1574ae1ad0cb3f737d0e7e813
 ms.contentlocale: ja-jp
-ms.lasthandoff: 10/30/2017
+ms.lasthandoff: 10/16/2018
 
 ---
-# <a name="configure-consolidated-invoice-parameters-and-setup-for-accounts-payable-japan"></a>月次締め請求書のパラメーターのコンフィギュレーションと買掛金勘定の設定 (日本)
+# <a name="configure-consolidated-invoice-parameters-and-setup-for-accounts-payable"></a>月次締め請求書のパラメーターのコンフィギュレーションと買掛金勘定の設定
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
