@@ -18,10 +18,10 @@ ms.author: ntecklu
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 8d5a74a512fcd05d2a64a82e26b0998af9423df0
+ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
+ms.openlocfilehash: 8d962732306017075a242413d2802bb5b702e470
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/17/2018
 
 ---
 
@@ -40,7 +40,7 @@ BPM は次のプログラムと互換性があります。
 
 ## <a name="prerequisites"></a>前提条件
 
-BPM を効果的に使用するには、Microsoft Office 2010 と Microsoft Visual Studio Team Services (VSTS) プロジェクトが必要です。
+BPM を効果的に使用するには、Microsoft Office 2010 と Microsoft Azure DevOps プロジェクトが必要です。
 
 ## <a name="getting-started"></a>はじめに
 
@@ -61,7 +61,7 @@ BPM にアクセスするには、これらの手順に従います。
 次のトピックでは、BPM ライブラリを使用して作業する方法について詳しく説明します。
 
 - [BPM ライブラリの作成、編集、または参照](creating-editing-browsing.md)
-- [BPM ライブラリと Visual Studio Team Services の同期](synchronize-bpm-vsts.md)
+- [BPM ライブラリと Azure DevOps の同期](synchronize-bpm-vsts.md)
 - [BPM のタスクの完了](complete-tasks-bpm.md)
 - [BPM 付き活動ダイアグラムを使用する](using-activity-diagrams.md)
 - [ビジネス プロセス モデラーの業務プロセス ライブラリ](business-process-libraries-business-process-modeler.md)

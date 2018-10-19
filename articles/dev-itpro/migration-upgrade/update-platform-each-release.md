@@ -18,10 +18,10 @@ ms.author: tabell
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: c57a0662e3e44c5450f1810d8a05797967fd939c
+ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
+ms.openlocfilehash: 5b313b07ee4751ccb0e710edf82792a9ec59071f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 09/17/2018
 
 ---
 
@@ -70,9 +70,9 @@ ms.lasthandoff: 04/20/2018
 -   パッケージをデモ、第 2 層サンド ボックス、または実稼働環境に適用するには、[[展開可能パッケージの適用](../deployment/apply-deployable-package-system.md)] のトピックのバイナリ修正プログラムの指示に従います。
 
 ## <a name="apply-the-platform-update-package-on-your-development-environment"></a>開発環境にプラットフォーム更新プログラム パッケージを適用する
-### <a name="delete-any-platform-metadata-hotfixes-from-your-vsts-project"></a>VSTS プロジェクトからプラットフォーム メタデータの修正プログラムを削除する
+### <a name="delete-any-platform-metadata-hotfixes-from-your-azure-devops-project"></a>Azure DevOps プロジェクトからプラットフォーム メタデータの修正プログラムを削除する
 
-新しいプラットフォーム更新プログラムをインストールする前に、Visual Studio Team Services (VSTS) ソース コントロール プロジェクトをクリーンアップする必要があります。 既存のプラットフォームにインストールされているすべての X++ またはメタデータの修正プログラムを削除します。 次の Microsoft モデルのいずれかの VSTS プロジェクトでチェックされている X++ またはメタデータの修正プログラムがある場合は、Visual Studio のソース管理エクスプローラーを使用してプロジェクトから削除します。
+新しいプラットフォーム更新プログラムをインストールする前に、Azure DevOps ソース コントロール プロジェクトをクリーンアップする必要があります。 既存のプラットフォームにインストールされているすべての X++ またはメタデータの修正プログラムを削除します。 次の Microsoft モデルのいずれかの Azure DevOps プロジェクトでチェックされている X++ またはメタデータの修正プログラムがある場合は、Visual Studio のソース管理エクスプローラーを使用してプロジェクトから削除します。
 
 -   アプリケーション プラットフォーム
 -   アプリケーション基準
@@ -168,7 +168,7 @@ Microsoft SQL Server の統合サービスの早期リリースに接続して�
 -   ディレクトリ
 -   TestEssentials
 
-1.  Visual Studio で、Microsoft Visual Studio Team Services (VSTS) のバージョン管理プロジェクトに対するすべての保留中の変更をチェックインします。
+1.  Visual Studio で、Microsoft Azure DevOps のバージョン管理プロジェクトに対するすべての保留中の変更をチェックインします。
 2.  Visual Studio を終了します。
 3.  このトピックの前半で説明した、プラットフォーム更新プログラム配置可能パッケージを適用します。
 4.  Visual Studio を起動します。

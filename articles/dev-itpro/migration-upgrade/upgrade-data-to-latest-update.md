@@ -3,7 +3,7 @@ title: "開発、デモ、またはサンドボックスの環境でのデータ
 description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations のデータベースを最新の更新バージョンにアップグレードするプロセスについて説明します。"
 author: tariqbell
 manager: AnnBe
-ms.date: 03/22/2018
+ms.date: 09/17/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: tabell
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 3413dd5ac38dbfe1fd0e5cf7b356b0a1c10147b6
+ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
+ms.openlocfilehash: bf8da82381e59d4ff70a59b3b58c0c3363799d10
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/17/2018
 
 ---
 
@@ -38,6 +38,7 @@ ms.lasthandoff: 08/09/2018
 > [!IMPORTANT]
 > - Finance and Operations の最新の **プラットフォーム** を更新している場合、データベースをアップグレードする必要は**ありません**。 プラットフォーム更新プログラムには、下位互換性のあります。 このトピックは、Microsoft Dynamics 365 for Operations version 1611 (November 2016) から Microsoft Dynamics 365 for Finance and Operations 7.3 へのアップグレードなど、Finance and Operations アプリケーションのリリース間でのアップグレードのプロセスに対してのみ適用されます。
 > - このプロセスは、Microsoft Azure blob ストレージに保存されているドキュメント添付ファイルのアップグレードには適用されません。
+> - アップグレードされたすべてのカスタム コードは、データ アップグレード プロセスを実行する前に環境に適用する必要があります。
 
 ## <a name="before-you-begin"></a>準備
 

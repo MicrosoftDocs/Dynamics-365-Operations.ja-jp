@@ -18,10 +18,10 @@ ms.author: robinr
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
 ms.translationtype: HT
-ms.sourcegitcommit: 96a9075294c1f2a9cfde03be1aaaa26af90de4c2
-ms.openlocfilehash: bf7d549c7fc55a2319bf777c35e48f5eacc9744e
+ms.sourcegitcommit: d6a281e2baa1b96e570850ea946669d3b2a90fb7
+ms.openlocfilehash: 86d3b62473b05cea7cff9a04ef00a6fc5b739942
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/04/2018
+ms.lasthandoff: 09/12/2018
 
 ---
 
@@ -152,6 +152,10 @@ ms.lasthandoff: 09/04/2018
 ADFS がドメインで使用されており、環境がオンプレミスである場合、Windows 統合認証 (WIA) を使用する代わりに **ADFS は標準のフォームベースの認証画面を提供するように構成する必要があります**。 iOS と Android の Microsoft Dynamics Unified Operations アプリには、標準のフォーム ベースの認証画面が必要です。 ADFS は、ブラウザー クライアント (ユース ケース) のみ WIA を提供するように構成する必要があります。 詳細については、[WIA をサポートしていないデバイスのイントラネット フォーム ベースの認証を構成する](https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/operations/configure-intranet-forms-based-authentication-for-devices-that-do-not-support-wia)を参照してください。
 
 ## <a name="troubleshooting"></a>トラブルシューティング
+### <a name="the-mobile-client-app-is-not-working-correctly-on-particular-devices"></a>特定のデバイスでモバイル クライアント アプリケーションが正常に動作しない
+統合工程アプリケーションに関連付けられているキャッシュが破損しているか、古い形式なったため、クリアする必要がある場合があります。 ただし、アプリケーションに関連付けられているデータをクリアする唯一の方法は、アプリケーションをアンインストールすることです。
+アプリケーションを完全にアンインストールするには、"長押ししてゆらゆらした状態でアプリ アイコンの x を押す" 方法を使用しないでください。 代わりに、**設定** > **全般** > **iPhone ストレージ** > **Dynamics 365 Unified Operations** に移動し、**アプリの削除** をクリックしてアプリを完全にアンインストールしてください。 10 ～ 15秒後、アプリケーションを再インストールすることができます。
+
 ### <a name="i-cant-figure-out-how-to-build-or-change-something-in-my-mobile-client-content"></a>モバイル クライアント コンテンツをビルドまたは変更する方法がわかりません
 多くのリソースを活用して、モバイル クライアントのコンテンツをビルドまたは変更する方法を理解できます。
 - Dynamics 365 for Finance and Operations ヘルプ システムに用意されているドキュメントを確認します。

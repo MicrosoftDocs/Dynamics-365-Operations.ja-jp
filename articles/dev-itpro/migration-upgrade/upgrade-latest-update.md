@@ -3,7 +3,7 @@ title: "最新の Finance and Operations 更新プログラムへの移行の処
 description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations を最新の更新バージョンにアップグレードするプロセスについて説明します。"
 author: robadawy
 manager: AnnBe
-ms.date: 11/20/2017
+ms.date: 10/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: tabell
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 ms.translationtype: HT
-ms.sourcegitcommit: d20bc3519096f1035d26f89d42aa7e8f0fc368cd
-ms.openlocfilehash: 24b75ba2dc8cdefdc383382b891a7e2253331c42
+ms.sourcegitcommit: 87663bae532f68c8dbc306b51bf591f33f7f4d63
+ms.openlocfilehash: 7d211f08bfad4123f3b4d44032c56e1b4c254668
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/29/2018
+ms.lasthandoff: 10/04/2018
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 08/29/2018
 
 このトピックでは、Microsoft Dynamics 365 for Finance and Operations の以前のリリースから最新の更新バージョンにアップグレードするプロセスについて説明します。 プロセス全体とサポートされるシナリオを説明しますが、プロセスの各ステップに関する詳細な指示は提示しません。
 
-使用できる各リリースの内容の詳細については、[新機能および変更された機能](../../fin-and-ops/get-started/whats-new-changed.md) を参照してください。
+Dynamics 365 for Finance and Operations の各リリースの内容については、[新機能と変更点](../../fin-and-ops/get-started/whats-new-changed.md)を参照してください。
 
 ## <a name="definitions"></a>定義
 
@@ -129,9 +129,9 @@ Dynamics 365 for Finance and Operations 8.0 およびこれ以降のバージョ
 
 3. コードの移行手順を完了します。
 
-    1. 開発 VM を Microsoft Visual Studio Team Services (VSTS) に接続し、アップグレードされたコードを含む VSTS ブランチにローカル メタデータ フォルダをマップします。
+    1. 開発 VM を Microsoft Azure DevOps に接続し、アップグレードされたコードを含む Azure DevOps ブランチにローカル メタデータ フォルダをマップします。
     2. 同期して、競合を解決し、ビルドしてテストします。
-    3. アップグレード後のコードを含む VSTS ブランチを、主要な開発の分岐とマージします。 詳細については、[フォルダーおよびファイルをマージする](https://www.visualstudio.com/en-us/docs/tfvc/merge-folders-files) を参照してください。
+    3. アップグレード後のコードを含む Azure DevOps ブランチを、主要な開発の分岐とマージします。 詳細については、[フォルダーおよびファイルをマージする](https://www.visualstudio.com/en-us/docs/tfvc/merge-folders-files) を参照してください。
     4. ビルドしテストします。
     5. コードの配置可能パッケージを作成します。
 
@@ -141,6 +141,9 @@ Dynamics 365 for Finance and Operations 8.0 およびこれ以降のバージョ
 コードの移行手順の詳細については、[コードの移行](../dev-tools/developer-home-page.md#code-migration) を参照してください。 コードの移行が完了した後は、シナリオ 3 に進みます。
 
 ## <a name="scenario-3-upgrade-to-the-latest-application-release"></a>シナリオ 3: 最新のアプリケーション リリースにアップグレードする
+
+> [!Important]
+> アプリケーションのバージョン 8.0 を使用していて、8.1 リリースに移行する場合は、[8.0 から 8.1 への環境の更新](./appupdate-80-81.md)にある簡略化された手順に従います。
 
 これらの手順は、以前のリリースで稼動しており、最新のプラットフォームおよびアプリケーションの各リリースに完全にアップグレードする顧客に適用されます。 これらのステップは、まだ稼働していない場合でも、実稼働環境をすでに展開して構成しているお客様にも適用されます。 アプリケーションをアップグレードしていなく、プラットフォームをアップグレードする場合は、代わりに 4 つのシナリオを使用します。
 
@@ -158,7 +161,7 @@ Dynamics 365 for Finance and Operations 8.0 およびこれ以降のバージョ
 
 > [!IMPORTANT]
 > - 開発環境でのデータのアップグレードは必須ステップです。 これにより、サンドボックス ユーザー受け入れテスト (UAT) と実稼働環境をアップグレードする際に、後のダウンタイムの延長やアップグレード エラーのリスクを軽減できます。
-> - データをアップグレードする前に複数のアプリケーション修正プログラムが必要なことがあります。 既存の開発環境を再配置する前に、これらの修正プログラムが必要かどうかを確認します。 必要な修正プログラムをインストールし、VSTS にチェックインします。 このステップは、開発環境の古いバージョンでのみで完了できます。 さまざまな状況で必要な修正プログラムの一覧については、[開発、デモ、またはサンドボックス環境でのデータのアップグレード](upgrade-data-to-latest-update.md#before-you-begin) を参照してください。
+> - データをアップグレードする前に複数のアプリケーション修正プログラムが必要なことがあります。 既存の開発環境を再配置する前に、これらの修正プログラムが必要かどうかを確認します。 必要な修正プログラムをインストールし、Azure DevOps にチェックインします。 このステップは、開発環境の古いバージョンでのみで完了できます。 さまざまな状況で必要な修正プログラムの一覧については、[開発、デモ、またはサンドボックス環境でのデータのアップグレード](upgrade-data-to-latest-update.md#before-you-begin) を参照してください。
  
 ### <a name="upgrade-your-tier2standard-acceptance-test-or-higher-sandbox-environment"></a>階層 2/スタンダード承認テスト (またはそれ以上) サンドボックス環境のアップグレード
 
@@ -178,7 +181,7 @@ DSE はレベル 2 (Standard Acceptance Test) 以上の 1 つのサンドボッ�
     - 予想される期間内にアップグレードを実行できるようにするには、アップグレードを行う前に、アップグレード要求を少なくとも 5 営業日前に提出する必要があります。 新しい環境がダウンタイム期間の前に準備できるように、事前に通知する必要があります。
     
     > [!IMPORTANT] 
-    > 要求は DSE チームが利用可能かどうかによって異なるため、特定のアップグレード ウィンドウを利用可能などうかは保証できません。 コミットするとすぐに、アップグレードのウィンドウを要求することをお勧めします。
+    > 要求は DSE チームが利用可能かどうかによって異なるため、特定のアップグレード ウィンドウを利用可能などうかは確証できません。 コミットするとすぐに、アップグレードのウィンドウを要求することをお勧めします。
     
     - ダウンタイムの開始と終了まで 8 時間以上を許可する必要があります。 この時間は、新しい環境で交換し、データ アップグレード プロセスを完了するために必要です。
 
@@ -202,7 +205,7 @@ DSE チームがアップグレード プロセスが完了すると、サービ
 
 #### <a name="upgrade-tier-1-environments"></a>階層 1 環境のアップグレード
 
-新しいバージョンを使用し、アップグレードされた VSTS ブランチに同期することで、階層 1 環境 (開発/テストもしくはビルド ボックスとも呼ばれます) を配置することができます。 第 1 層環境のデータを取得するには、[[開発環境またはデモ環境のデータ アップグレード プロセス](upgrade-data-to-latest-update.md)] の手順に従ってデータベースをアップグレードします。
+新しいバージョンを使用し、アップグレードされた Azure DevOps ブランチに同期することで、階層 1 環境 (開発/テストもしくはビルド ボックスとも呼ばれます) を配置することができます。 第 1 層環境のデータを取得するには、[[開発環境またはデモ環境のデータ アップグレード プロセス](upgrade-data-to-latest-update.md)] の手順に従ってデータベースをアップグレードします。
 
 ### <a name="upgrade-your-production-environment"></a>実稼動環境のアップグレード
 

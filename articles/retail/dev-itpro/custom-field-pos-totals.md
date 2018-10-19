@@ -16,10 +16,10 @@ ms.author: mumani
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 47e3922ade85b964d60ff5b6131254497f606369
+ms.sourcegitcommit: 1aae5797e37b846a38f957b02870e213da528a2d
+ms.openlocfilehash: 5fb6b23339a28951939298e5344b9b1ae72ea80c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/20/2018
 
 ---
 
@@ -130,7 +130,7 @@ POS の拡張機能プロジェクトでは、この手順を行う必要があ�
         if (isNaN(cart.TotalAmount) || cart.TotalAmount <= 0) {
             return "$0.00";
         }
-        return "$" + (cart.TotalAmount \* 0.1).toFixed(2).toString();
+        return "$" + (cart.TotalAmount * 0.1).toFixed(2).toString();
     }
     ```
 

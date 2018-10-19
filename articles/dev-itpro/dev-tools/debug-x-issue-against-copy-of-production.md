@@ -18,10 +18,10 @@ ms.author: tabell
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 8720dae4c5f3889f6ca9ceda1fcff8aaa110fa80
+ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
+ms.openlocfilehash: fdd2a97245ccc60f6ccc4c21fa437d5ce65b1693
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/17/2018
 
 ---
 
@@ -38,7 +38,7 @@ ms.lasthandoff: 08/09/2018
 [![デバッグ プロセス](./media/debugxpp.jpg)](./media/debugxpp.jpg)
 
 1. Microsoft Dynamics Lifecycle Services (LCS) では、システム管理者がデータベースのコピーをサンドボックス ユーザー受け入れテスト (UAT) 環境に接続するよう要求します。 (つまり、データベース更新を要求します。)
-2. Microsoft Visual Studio Team Services (VSTS) では、開発者が実稼働環境で実行されている同じビルドにローカル コードを同期します。
+2. Microsoft Azure DevOps では、開発者が実稼働環境で実行されている同じビルドにローカル コードを同期します。
 3. Microsoft Azure SQL データベースのサンドボックス インスタンスでは、システム管理者が開発者に一時的な SQL サインインを作成します。 開発者は、サンドボックス データベースに接続するための環境を設定します。
 4. 開発環境がサンドボックスのデータベースに接続できるように、ファイアウォールに例外が追加されています。
 5. 開発者は問題をデバッグします。

@@ -18,10 +18,10 @@ ms.author: jorisde
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 623a45cf1897bd55bdcf5bc66b0a22934137dac0
+ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
+ms.openlocfilehash: fde134e037e7ffa2c385d624eeb045f4076e5f69
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/17/2018
 
 ---
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 08/09/2018
 このトピックでは、これらのサードパーティ ソリューションを管理、配布、展開するための推奨される戦略について説明します。
 
 ## <a name="models-from-third-parties"></a>サード パーティからのモデル
-サード パーティから受け取ったソース コードは、バイナリにコンパイルし、配置可能パッケージに含める必要があります。 モデルは、開発仮想マシン (VM) にインストールしてソース管理に追加する必要があります。 そこからは、ビルド VM はソース コードをピッキング、構築、および配置可能パッケージに含めることができます。 他の開発者は、Microsoft Visual Studio チーム サービス (VSTS) のモデルをそのまま開発 VM に同期できます。 手動でインストールする必要はありません。
+サード パーティから受け取ったソース コードは、バイナリにコンパイルし、配置可能パッケージに含める必要があります。 モデルは、開発仮想マシン (VM) にインストールしてソース管理に追加する必要があります。 そこからは、ビルド VM はソース コードをピッキング、構築、および配置可能パッケージに含めることができます。 他の開発者は、Microsoft Azure DevOps のモデルをそのまま開発 VM に同期できます。 手動でインストールする必要はありません。
 
 開発 VM でモデルをインストールする方法の詳細については、[モデルのエクスポートとインポート](models-export-import.md) を参照してください。
 

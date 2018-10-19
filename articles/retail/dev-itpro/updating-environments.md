@@ -18,10 +18,10 @@ ms.author: andreash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: Retail 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: 2d0cb80cada7633ab4199aefa21be59228f9e51a
-ms.openlocfilehash: a2757dc3ce226d08c8309ab56c0486bfd9f05937
+ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
+ms.openlocfilehash: 3dd56c17f92aed76c19e3e82dd32c651723d4c1c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/14/2018
+ms.lasthandoff: 09/17/2018
 
 ---
 
@@ -171,8 +171,8 @@ Finance and Operations、および小売カスタマイズ パッケージは、
     - **プラットフォームの更新プログラム:** PUXX_MMDDYY の XX はプラットフォームの更新プログラムの番号です。
     - **Binary 更新プログラム パッケージ:** BIN_MMDDYY
     - **X++ 更新プログラム パッケージ:** APP_MMDDYY
-    - **構築された X++ 配置可能パッケージ:** AX_BRANCH_VERSION の BRANCH には適切な分岐の名前、VERSION は Microsoft Visual Studio Team Services (VSTS) のバージョンの文字列になります。
-    - **構築された Retail 組み合わせパッケージ:** RET_BRANCH_VERSION の BRANCH には適切な分岐の名前、VERSION には VSTS のバージョン文字列になります。
+    - **構築された X++ 配置可能パッケージ:** AX_BRANCH_VERSION の BRANCH には適切な分岐の名前、VERSION は Microsoft Azure DevOps のバージョンの文字列になります。
+    - **構築された Retail 組み合わせパッケージ:** RET_BRANCH_VERSION の BRANCH には適切な分岐の名前、VERSION には Azure DevOps のバージョン文字列になります。
 
 - 新しい作業項目を開始するたびに、Visual Studio のソース コード エクスプローラーで**最新を取得**オプションを使用してください。
 - コードの送信は、変更セットを説明する正確かつ詳細なコメントを使用する必要があります。
@@ -193,7 +193,7 @@ Finance and Operations、および小売カスタマイズ パッケージは、
 
 ## <a name="additional-resources"></a>その他のリソース
 
-[新しい環境、Visual Studio Team Services、および小売プロジェクトの分岐を設定します。](./new-environments-visual-studio-teams-branch-retail-projects.md)
+[Retail プロジェクトの新しい環境、Azure DevOps、およびブランチの設定](./new-environments-visual-studio-teams-branch-retail-projects.md)
 
 [テストおよびパフォーマンス](./retail-implementation-testing-performance.md)
 

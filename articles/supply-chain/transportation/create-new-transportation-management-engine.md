@@ -19,10 +19,10 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: ef07784bba90182b3ae78abeedbdaceca0d319a8
+ms.sourcegitcommit: 9755a74cf05d6674f065e36dc224599eb1fed91e
+ms.openlocfilehash: 745aaac9c69b885d9893a6a4bdb9c6ef33240dae
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 09/13/2018
 
 ---
 
@@ -112,7 +112,7 @@ ms.lasthandoff: 04/20/2018
 ## <a name="deploy-the-tms-engine-as-a-package"></a>TMS エンジンをパッケージとして配置する
 サードパーティの TMS エンジンを配置する 1 つの方法は、配置パッケージを介することです。 実稼働環境では、この方法をお勧めします。 開発環境では、次のセクション「Finance and Operations で TMS エンジンを設定する」で説明するように手動でアセンブリをコピーできます。 エンジンをパッケージとして展開するには、次の手順を実行します。
 
-1. <strong>Dynamics 365 **&gt; ** 配置</strong>メニューで、<strong>配置パッケージの作成</strong>をクリックします。
+1. **Dynamics 365** &gt; **配置** メニューで、<strong>配置パッケージの作成</strong> をクリックします。
 2. **配置パッケージの作成**ダイアログ ボックスで、TMSEngines モデルを選択し、パッケージ ファイルを格納する場所のパスを入力します。 
 
    [![TMSEngines モデルの選択](./media/071.png)](./media/071.png)

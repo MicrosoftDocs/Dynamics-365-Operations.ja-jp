@@ -3,7 +3,7 @@ title: "拡張機能とオーバーレイによってカスタマイズする"
 description: "このトピックでは、モデル要素のソース コードとメタ データをカスタマイズするオーバーレイと拡張機能の 2 つの方法、およびサポートされている拡張機能の詳細について説明します。"
 author: robadawy
 manager: AnnBe
-ms.date: 11/08/2017
+ms.date: 09/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 5bbe92e252f4b34decb642409333779744a4f107
+ms.sourcegitcommit: 99d18081e16a98bc58dfe0684476e6c87e0e1b9c
+ms.openlocfilehash: a7eb1def57fc1a74e73c92226611550a35b528bf
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/25/2018
 
 ---
 
@@ -261,10 +261,6 @@ Microsoft Dynamics AX 2012 では、テーブルの基本クラスの仮想メ�
 | onDeleting                      | NULL                             |
 | onDeletingEntityDataSource      | DataEntityContextResultEventArgs |
 | onFindingEntityDataSource       | DataValidationEventArgs          |
-| onFindingEntityDataSource       | DataValidationEventArgs          |
-| onFindingEntityDataSource       | DataValidationEventArgs          |
-| onFindingEntityDataSource       | DataValidationEventArgs          |
-| onFindingEntityDataSource       | DataEntityContextRecordEventArgs |
 | onFoundEntityDataSource         | DataEntityContextRecordEventArgs |
 | onGettingDefaultingDependencies | DefaultingDependenciesEventArgs  |
 | onGotDefaultingDependencies     | DefaultingDependenciesEventArgs  |

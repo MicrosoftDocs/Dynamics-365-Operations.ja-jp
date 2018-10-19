@@ -3,7 +3,7 @@ title: "Lifecycle Services (LCS) の監視および診断ツール"
 description: "このトピックでは、管理する Microsoft Dynamics 365 for Finance and Operations の状態を監視、診断、分析するために、Microsoft Dynamics Lifecycle Services (LCS) が提供するさまざまなツールについて説明します。"
 author: manalidongre
 manager: AnnBe
-ms.date: 07/09/2018
+ms.date: 10/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: manado
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 0eab4dd7ed7287a069af7759e787ed4103a28b74
+ms.sourcegitcommit: e4c1f8c7435a901431286960581754e5b2820dad
+ms.openlocfilehash: 6804960b8e17f3d776cb2607ea94ff15788e65f1
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 10/03/2018
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 08/09/2018
 
 このトピックでは、管理する Microsoft Dynamics 365 for Finance and Operations の状態を監視、診断、分析するために、Microsoft Dynamics Lifecycle Services (LCS) が提供するさまざまなツールについて説明します。
 
-Microsoft Dynamics 365 for Finance and Operations のクラウド サービスへのオンボード エクスペリエンスを成功させるには、環境の状態を常に把握しておく必要があります。 発生するすべての正常性の問題をトラブルシューティングできることも必要です。 Dynamics 365 for Finance and Operations の管理センターである Microsoft Dynamics Lifecycle Services (LCS) には、管理している環境を正確に表示できることを保証する監視および診断ツールのコレクションが含まれています。
+Microsoft Dynamics 365 for Finance and Operations のクラウド サービスへのオンボード エクスペリエンスを成功させるには、環境の状態を常に把握しておく必要があります。 発生するすべての正常性の問題をトラブルシューティングできることも必要です。 Dynamics 365 for Finance and Operations の管理センターである Microsoft Dynamics Lifecycle Services (LCS) には、管理している環境を正確に表示できることを確証する監視および診断ツールのコレクションが含まれています。
 
 ## <a name="telemetry-data"></a>テレメトリ データ
 LCS の監視および診断ポータルの基礎となるテレメトリ データには、監視、診断、分析の 3 つの主要なユース ケースがあります。 [![monitoringanddiagnostics01](./media/monitoringanddiagnostics01.png)](./media/monitoringanddiagnostics01.png)
@@ -60,7 +60,10 @@ Dynamics 365 for Finance and Operations などの管理されたクラウド サ
 3.  **環境の詳細**ページで、**環境の監視**をクリックして、監視および診断ポータルを開きます。 [![howtogettoenvmonitoring](./media/howtogettoenvmonitoring-1024x486.jpg)](./media/howtogettoenvmonitoring.jpg)
 
 ## <a name="tools"></a>ツール
-複数のツールとリソースが、監視および診断ポータルで利用できます。 **注記:** すべての環境に、すべてのツールが含まれるわけではありません。 次のテーブルに、各タイプの環境で使用できるツールを示します。
+複数のツールとリソースが、監視および診断ポータルで利用できます。 
+
+> [!NOTE]
+> すべての環境に、すべてのツールが含まれるわけではありません。 次のテーブルに、各タイプの環境で使用できるツールを示します。
 
 <table>
 <colgroup>
@@ -126,7 +129,8 @@ Dynamics 365 for Finance and Operations などの管理されたクラウド サ
 -   **ユーザー** – 特定のユーザーの活動を表示します。
 -   **検索用語** – 調査中の問題に基づいて検索を作成します。
 
-**重要:** 活動の監視ツールは 30 日間だけデータを保持します。
+> [!IMPORTANT]
+> 活動の監視ツールは 30 日間だけデータを保持します。
 
 ### <a name="raw-information-logs"></a>生の情報ログ
 
@@ -139,27 +143,8 @@ Dynamics 365 for Finance and Operations などの管理されたクラウド サ
 
 ### <a name="sql-insights"></a>SQL インサイト
 
-監視および診断ポータルには、パフォーマンスの分析を有効にする高度な SQL トラブルシューティングのツールも含まれます。 これらのツールの一部は、SQL Microsoft Dynamics AX 2012 でのトラブルシューティングに使用されていた DynPerf ツールと似ています。
+監視および診断ポータルには、パフォーマンスの分析を有効にする高度な SQL トラブルシューティングのツールも含まれます。 これらのツールの一部は、SQL Microsoft Dynamics AX 2012 でのトラブルシューティングに使用されていた DynPerf ツールと似ています。 詳細については、[Lifecycle Services (LCS) でツールを使用したパフォーマンスのトラブルシューティング](performancetroubleshooting.md)を参照してください。
 
-#### <a name="performance-metrics"></a>パフォーマンス メトリックス
-
-**パフォーマンス メトリックス** ページには、論理入出力、実行カウント、期間、CPU 時間、および待機数に基づいて、選択した期間にシステムで実行された最もコストのかかったクエリが表示されます。 このデータは SQL クエリ ストアからクエリされます。 データは 30 日間保持され、ツールは毎日、協定世界時 (UTC) の午後 10 時にデータ収集を実行します。 [![sqlinsights](./media/sqlinsights-1024x512.jpg)](./media/sqlinsights.jpg) このツールを使用するには、次の手順に従います。
-
-1.  過去 30 日間の期間を選択します。
-2.  クエリ結果が表示されたら、期間グラフ内の 1 つ目のバーを選択して、クエリが他の基準に該当する場所を強調表示します。
-3.  **ステートメント**タブで、クエリを表示、またはクエリの実行計画をダウンロードします。
-
-#### <a name="sql-now-tool"></a>SQL now ツール
-
-just-in-time 診断では、SQL now ツールを使用することができます。 たとえば、レポートの実行が遅いと、任意のロック/ブロック問題があるか、およびバック グラウンドでどの SQL ステートメントが実行しているかを表示します。 この場合、レポートの実行中にこのページを開いて更新できます。
-
-#### <a name="index-analysis"></a>インデックス分析
-
-インデックス分析ツールには、ユーザーのスキャン、ユーザーのシーク、ユーザーの更新プログラム、および行の数に基づいて、集計インデックスとテーブル情報が表示されます。 パフォーマンス測定基準と同様に、このツールは追加のテーブル メトリックスと共に選択したインデックスのトレンドを表示します。
-
-### <a name="system-diagnostics"></a>システム診断
-
-システム診断ツールは、環境に対して事前に定義されたルール セットを実行するルール ベースのフレームワークであり、ルールのステータスに関するレポートを提供します。 エラーが発生した場合、このツールは、問題に対処するための推奨事項を提供します。 システムの診断ツールを開始するには、LCSプロジェクト ダッシュ ボードで [ハンバーガー] アイコンをクリックし、**システム診断** をクリックします。
 
 ## <a name="other-resources"></a>その他のリソース
 

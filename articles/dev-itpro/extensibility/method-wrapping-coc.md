@@ -1,9 +1,9 @@
 ---
-title: "メソッドのラッピングとコマンド チェーン経由のクラスの拡張機能 (CoC)"
+title: "クラスの拡張機能 - メソッドのラッピングとコマンド チェーン"
 description: "このトピックでは、メソッド ラッピングを使用してパブリック メソッドと保護メソッドのビジネス ロジックを拡張する方法について説明します。"
 author: robadawy
 manager: AnnBe
-ms.date: 04/06/2018
+ms.date: 09/28/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -11,16 +11,15 @@ ms.technology:
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
-ms.custom: 26961
 ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2017-08-21
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 539f63ba45f03660926cd8487a4038a50c4d74b2
+ms.sourcegitcommit: 7344f460fcb443a78b254e2387fbf5c9134bf674
+ms.openlocfilehash: 8a5910bf0f839c9fa18a5b045f4df52dedffb8b7
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/28/2018
 
 ---
 
@@ -72,7 +71,7 @@ info(c.DoSomething(33));
 > [!IMPORTANT]
 > このトピックで説明する機能 (CoC および保護されたメソッドと変数へのアクセス) は、Platform update 9 で利用できます。 ただし、強化されているクラスは、プラットフォーム更新プログラム 9 またはそれ以降でコンパイルされる必要があります。 2017 年 8 月現在、Finance and Operations のアプリケーションの現在のリリースはすべて Platform Update 8 またはそれ以前でコンパイルされています。 したがって、基本パッケージ (Application Suite など) で定義されているメソッドをラップするには、プラットフォーム更新 9 以降でその基本パッケージを再コンパイルする必要があります。
 例: アプリケーション スイート モデルに存在するクラスを増補する独自の拡張モデルを作成し、CoC を使用している場合や保護されたメソッド/変数にアクセスする場合は、アプリケーション スイートと拡張モデルの両方を構築する必要があります。 ランタイム環境でこの機能を配置するには、両方のモデルを含む配置可能なパッケージを作成する必要があります。
-これは、Microsoft Dynamics 365 for Finance and Operations アプリケーションの次のリリースまでの一時的な状況です。
+これは、Dynamics 365 for Finance and Operations アプリケーションの次のリリースまでの一時的な状況です。
 
 ## <a name="capabilities"></a>処理能力
 次のセクションでは、ラッピング メソッドと CoC メソッドの機能について詳しく説明します。
@@ -238,6 +237,84 @@ class anyClass2
 }
 ```
 
+### <a name="extensions-of-form-nested-concepts-such-as-data-sources-data-fields-and-controls"></a>データ ソース、データ フィールド、および制御といったフォームで入れ子になった概念の拡張
+
+データ ソース、データ フィールド、コントロールなど、フォームで入れ子になった概念の CoC メソッドを実装するため、入れ子になった各概念には拡張クラスが必要です。 
+
+#### <a name="form-data-sources"></a>フォーム データ ソース
+
+この例では、**FormToExtend** はフォーム、**DataSource1** はフォームで有効な既存のデータ ソース、**init** と **validateWrite** はデータ ソースで折り返し可能なメソッドです。
+
+```C#
+[ExtensionOf(formdatasourcestr(FormToExtend, DataSource1))]
+final class FormDataSource1_Extension
+{
+    public void init()
+    {
+        next init();
+        //...
+    }
+ 
+    public boolean validateWrite()
+    {
+        boolean ret;
+        //...
+        ret = next validateWrite();
+        //...
+```
+
+#### <a name="form-data-fields"></a>フォーム データ フィールド
+
+この例では、データ フィールドが拡張されます。 **FormToExtend** はフォーム、**DataSource1** はフォームのデータ ソース、**Field1** はデータ ソースのフィールド、**validate** はこの入れ子になった概念で折り返し可能な多くのメソッドのいずれかです。
+
+```C#
+[ExtensionOf(formdatafieldstr(FormToExtend, DataSource1, Field1))]
+final class FormDataField1_Extension 
+{ 
+public boolean validate()
+{
+    boolean ret
+    //...
+    ret = next validate();
+    //...
+```
+
+#### <a name="controls"></a>コントロール
+
+この例では、**FormToExtend** はフォーム、**Button1** はフォーム内のボタン コントロール、**clicked** はボタン コントロールで折り返し可能なメソッドです。
+
+```C#
+[ExtensionOf(formcontrolstr(FormToExtend, Button1))]
+final class FormButton1_Extension
+{
+    public void clicked()
+    {
+        next clicked();
+        //...
+```
+
+#### <a name="requirements-and-considerations-when-you-write-coc-methods-on-extensions-for-form-nested-concepts"></a>フォームで入れ子になった概念で CoC メソッドを書き込むときの要件と考慮事項
+
+- その他の CoC メソッドと同様、これらのメソッドは常に **next** を呼び出してチェーン内の次のメソッドを呼び出す必要があります。これにより、チェーンは実行時の動作でカーネルまたはネイティブ実装まで進むことができます。 next の呼び出しは、ランタイムにおける基本の動作が常に正常に実行されることを保証する、フォーム自体からの **super()** の呼び出しに相当します。
+- 現時点では、Microsoft Visual Studio の X++ エディターは、折り返し可能なメソッドの検出をサポートしていません。 したがって、折り返し対象となるメソッドとその正確なシグネチャを識別するための入れ子になった各概念については、システムのドキュメントを参照する必要があります。
+- 入れ子になったコントロール タイプの元の基本動作で定義されていないメソッドをラップする CoC を追加することは**できません**。 たとえば、拡張において **methodInButton1** CoC を追加することはできません。 ただし、制御の拡張からは、メソッドがパブリックまたは保護として定義されている場合にこのメソッドへの呼び出しを行うことができます。 以下に、**methodInButton1** メソッドと同じように **Button1** コントロールが **FormToExtend** フォームで定義される例を示します。
+
+    ```C#
+    [Form]
+    public class FormToExtend extends FormRun
+    {
+        [Control("Button")]
+        class Button1
+        {
+            public void methodInButton1 (str param1)
+            {
+                Info("Hi from methodInButton1");
+                //...
+    }
+    ```
+
+- 拡張からのそのフォームで入れ子になった概念における CoC メソッドをサポートするために元のフォームが定義されたモジュールを再コンパイルする必要は**ありません**。 たとえば、前の例の **FormToExtend** フォームが **ApplicationSuite** モジュールにある場合、異なるモジュールからそのフォームで入れ子になった概念の CoC で拡張するために **ApplicationSuite** を再コンパイルする必要はありません。
+
 ## <a name="restrictions-on-wrapper-methods"></a>ラッパー メソッドに関する制限事項
 次のセクションでは、CoC およびメソッド ラッピングの使用上の制限について説明します。
 
@@ -247,9 +324,9 @@ class anyClass2
 ### <a name="x-classes-that-are-compiled-by-using-platform-update-8-or-earlier"></a>プラットフォーム更新プログラム 8 またはそれ以前を使用してコンパイルされた X++ クラス 
 メソッドのラッピング機能には、プラットフォーム update 9 以降の一部である X++ コンパイラによって出力される特定の機能が必要です。 以前のバージョンを使用してコンパイルされたメソッドには、この機能をサポートするインフラストラクチャはありません。
 
-### <a name="nested-class-methods-forms-cant-be-wrapped"></a>入れ子になったクラスのメソッド (フォーム) はラップできません
-X++ の入れ子になったクラスの概念は、データソース メソッドやフォームコ ントロール メソッドを上書きするためのフォームに適用されます。 入れ子になったクラスのメソッドは、クラスの拡張機能でラップできません。
+### <a name="nested-class-methods-in-forms-can-be-wrapped-in-platform-update-16-or-later"></a>プラットフォーム更新 16 以降ではフォームで入れ子になったクラス メソッドをラップ可能を参照してください
+クラス拡張を使用して入れ子になったクラスでメソッドをラップする機能がプラットフォーム更新 16 で追加されました。 X++ の入れ子になったクラスの概念は、データソース メソッドやフォームコ ントロール メソッドを上書きするためのフォームに適用されます。
 
 ### <a name="tooling"></a>ツール
-このトピックに記載されている機能については、Microsoft Visual Studio X++ エディターは、相互参照および Microsoft IntelliSense の完全なサポートまだ提供していません。 Microsoft Dynamics 365 for Finance and Operations Enterprise edition プラットフォーム更新プログラム 10 で完全なサポートが利用できるようにする予定です。
+このトピックに記載されている機能については、Microsoft Visual Studio X++ エディターは、相互参照および Microsoft IntelliSense の完全なサポートまだ提供していません。 Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 10 で完全なサポートが利用できるようにする予定です。
 

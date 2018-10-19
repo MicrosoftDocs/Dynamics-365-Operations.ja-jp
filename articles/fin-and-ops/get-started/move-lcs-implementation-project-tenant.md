@@ -16,10 +16,10 @@ ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: c3d46eab0b0a774930dd999f75c21ede266d23cb
+ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
+ms.openlocfilehash: 9c9588542822ff7f30028c2a128e29f7d93cf858
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/17/2018
 
 ---
 
@@ -63,7 +63,7 @@ Microsoft ボリューム ライセンス契約を通じてライセンスを取
 ## <a name="configure-lcs-on-the-new-tenant"></a>新しいテナントに LCS をコンフィギュレーションします。
 新しいテナントで、開始し設定する必要がある新しい LCS プロジェクトを取得します。
 
-1. LCS を完全に構成します。 コンフィギュレーションの一部として、ユーザー、Microsoft Visual Studio Team Services (VSTS) アソシエーション、サブスクリプション見積り、アセット ライブラリおよびビジネス プロセス モデラー (BPM) などを追加する必要があります。
+1. LCS を完全に構成します。 コンフィギュレーションの一部として、ユーザー、Microsoft Azure DevOps アソシエーション、サブスクリプション見積り、アセット ライブラリおよびビジネス プロセス モデラー (BPM) などを追加する必要があります。
 2. 新しい LCS プロジェクトのすべての非運用環境を配置します。
 3. 必要なコード パッケージを環境に適用します。
 4. 環境にデータをアップロードします。 データ パッケージを使用してデータを移動することも、データベースを復元することもできます。 データベースを復元する場合は、いくつかのプロパティを新しいテナントに再マップするために追加の手順が必要です。

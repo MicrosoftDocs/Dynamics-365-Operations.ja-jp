@@ -3,7 +3,7 @@ title: "自分のデータベースの持ち込み (BYOD)"
 description: "このトピックでは、エンティティを 独自の Azure SQL データベースにエクスポートする方法について説明します。"
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 08/27/2018
+ms.date: 09/19/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -16,10 +16,10 @@ ms.author: sunilg
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: HT
-ms.sourcegitcommit: 96a9075294c1f2a9cfde03be1aaaa26af90de4c2
-ms.openlocfilehash: bbb3bf7343adbde21c01d5334688c34cd1a6ba35
+ms.sourcegitcommit: 1aae5797e37b846a38f957b02870e213da528a2d
+ms.openlocfilehash: fd8e727090948e48e890410557e2a98690a6366e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/04/2018
+ms.lasthandoff: 09/20/2018
 
 ---
 
@@ -167,8 +167,8 @@ BYOD エクスポートの既定のタイムアウトは、切り捨て操作で
 
 BYOD 機能には、次の制限があります。
 
-#### <a name="there-should-be-no-active-sessions-on-your-database-during-synchronization"></a>同期中、データベースにアクティブなセッションが存在してはいけません
-BYOD は独自のデータベースであるため、Finance and Operations からデータが同期されているときは Azure SQL データベースにアクティブなセッションがないことを確認する必要があります。 同期中にデータベースの有効なセッションを実行すると、SQL ロックが発生し、書き込み速度が低下したり Azure SQL データベースへのエクスポートの完全な失敗につながる可能性もあります。
+#### <a name="there-should-be-no-active-locks-on-your-database-during-synchronization"></a>同期中、データベースにアクティブなロックが存在してはいけません
+BYOD は独自のデータベースであるため、Finance and Operations からデータが同期されているときは Azure SQL データベースにアクティブなロックがないことを確認する必要があります。 同期中にデータベースにアクティブなロックがあると、書き込み速度が低下したり Azure SQL データベースへのエクスポートの完全な失敗につながる可能性もあります。
 
 #### <a name="export-data-projects-are-specific-to-a-single-legal-entity"></a>エクスポート データ プロジェクトは単一の法人に固有です。
 

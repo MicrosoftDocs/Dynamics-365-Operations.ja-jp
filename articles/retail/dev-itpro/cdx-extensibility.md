@@ -17,10 +17,10 @@ ms.author: mumani
 ms.search.validFrom: 2017-09-15
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 1ff70019f4b0a086ce4c844621bcc7fec391387c
+ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
+ms.openlocfilehash: 4516ff2d5d01765d87696af4b9cc9b631ba11f79
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/17/2018
 
 ---
 # <a name="enable-custom-commerce-data-exchange-synchronization-via-extension"></a>拡張機能によるカスタム Commerce Data Exchange の同期の有効化
@@ -225,7 +225,7 @@ Microsoft Dynamics 365 for Retail アプリケーション更新プログラム 
 
 ### <a name="setup-steps"></a>設定手順
 
-変更していない Retail ソフトウェア開発キット (SDK) にこれらの変更を実装することをお勧めします。 または、SDK を Microsoft Visual Studio Team Services (VSTS) などのソース管理下で配置することにより任意のステップで、変更を簡単に戻すことができます。 まず、SDK にある .axpp パッケージをインポートします。 次に、チャンネル データベースで、SQL 更新スクリプトを実行します。
+変更していない Retail ソフトウェア開発キット (SDK) にこれらの変更を実装することをお勧めします。 または、SDK を Microsoft Azure DevOps などのソース管理下で配置することにより任意のステップで、変更を簡単に戻すことができます。 まず、SDK にある .axpp パッケージをインポートします。 次に、チャンネル データベースで、SQL 更新スクリプトを実行します。
 
 1. カスタマイズ コードを含む Finance and Operations 側にパッケージをインポートします。
 

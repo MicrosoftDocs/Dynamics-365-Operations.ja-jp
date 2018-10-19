@@ -3,7 +3,7 @@ title: "拡張性 FAQ"
 description: "このトピックでは、拡張機能に関してよくある質問に対する回答を示します。"
 author: FrankDahl
 manager: AnnBe
-ms.date: 04/10/2018
+ms.date: 09/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: fdahl
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 4b847a0025ab0e57bbe982d31b01c14a8c6b2254
+ms.sourcegitcommit: 1aae5797e37b846a38f957b02870e213da528a2d
+ms.openlocfilehash: c413bfe14006be478b8ab96ac507e5f5058885c5
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 09/20/2018
 
 ---
 
@@ -74,4 +74,25 @@ ISV もモデルを封印することをお勧めします。 このステップ
 ## <a name="how-often-will-microsoft-provide-external-updates-so-that-partners-can-see-what-extensibility-enhancements-have-been-made"></a>どのくらいの頻度で Microsoft は外部更新を提供することで、パートナーがどの拡張性の強化が実行されたかを確認できますか。
 
 Microsoft Dynamics 365 for Finance and Operations release 8.0 より後は、プラットフォームとアプリケーションの毎月の更新プログラムの提供を予定しています。
+
+## <a name="why-wasnt-my-extensibility-request-accepted"></a>拡張性要求が承認されなかった理由を教えてください。
+
+一部の拡張性は、重大な変更を要求します。 重大な可能性のあるよくある要求の一部を、その考えられる回避策と共に以下に掲載します。 さらに、[拡張の作成](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/extensibility/add-enum-value)を読んで既存のプラットフォーム拡張機能については理解し、[拡張性要求を記録するためのヒント](https://blogs.msdn.microsoft.com/mfp/2018/09/15/tips-for-logging-extensibility-requests/)を読んで、機能が最新リリースに存在しない場合に適切な要求を作成する方法を確認してください。
+
+### <a name="why-cant-edtstringsize-be-made-extensible"></a>EDT.StringSize を拡張可能にできないのはなぜですか?
+
+- 要求: 拡張を通じて EDT.StringSize を変更可能にする。
+- 問題: テーブル文字列フィールド (FieldX) のタイプが "親 EDT" であり、タイプが EDT2 (EDT2 は "親 EDT" から派生) の別のテーブルのフィールド (FieldY) に関連付けられている (テーブル関係を通じて) いる場合。 EDT2.StringSize の増加を許可することで FieldY が大きい文字列を持つ可能性がある場合、FieldX は新しい文字列サイズを処理できません。 
+- 回避策: 新しい EDT を作成し、テーブル フィールド FieldY にそれを使用します。
+
+### <a name="why-cant-a-unique-table-index-be-made-extensible"></a>固有のテーブル インデックスを拡張可能にできないのはなぜですか?
+
+- 要求: 拡張を通じて固有のテーブル インデックスを拡張可能にする。たとえば、余分なフィールドの追加を許可するによってなど。
+- 問題: 固有のテーブル インデックスが変更され、すべてのデータが新しいインデックスに準拠していない場合、重大な変更となります。 また、重複レコードを取得できるようになったため、クエリに影響を与えます。 たとえば、Person テーブルにキー "Name" があり、name="Chris" が適切な担当者を選択したが、BirthDate がキーに追加された場合、"Chris" に複数のレコードが返される可能性があります。
+- 回避策: validateWrite または validateInsert メソッドに "soft" 制約を追加します。
+
+### <a name="why-cant-countryregioncode-be-made-extensible-it-already-is"></a>CountryRegionCode を拡張可能にできないのはなぜですか? (*既にこのようになっています*)
+- 要求: 拡張を通じて CountryRegionCode を変更可能にする。
+- 問題: プラットフォーム更新 14 以降、CountryRegionCode への変更は、CountryRegionCode プロパティに値が既にある場合にサポートされます。 変更の制限が厳しくなり (要素は一部の国/地域でのみ利用可能になりました)、重大な変更となる可能性があるため、空の CountryRegionCode プロパティを変更することはできません。
+- 回避策: 要素が既に国/地域に固有の場合、既存の CountryRegionCode 拡張機能を使用します。
 

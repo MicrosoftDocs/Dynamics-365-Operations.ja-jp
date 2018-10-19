@@ -3,7 +3,7 @@ title: "ネットワーク印刷を有効にするためにドキュメント回
 description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations 展開向けにドキュメント回覧エージェントをインストールして構成する方法について説明します。"
 author: TJVass
 manager: AnnBe
-ms.date: 04/27/2018
+ms.date: 09/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 3f18f34e66c6b3a3da2b1fbcf8f2f5aaee21d2ca
+ms.sourcegitcommit: 7d4a049a44374276655dce696b5bbbe2e6f9fba9
+ms.openlocfilehash: 659a33d96cf879c2c8e0c3fc3ebeefbad769b9e4
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/12/2018
 
 ---
 
@@ -39,8 +39,8 @@ ms.lasthandoff: 08/09/2018
 - ネットワーク印刷リソースへのアクセスには、Active Directory Domain Services (AD DS) 認証が必要です。
 - ドキュメント回覧エージェントを構成するために使用される Microsoft Azure Active Directory (Azure AD) アカウントには、Azure テナントと同じドメインを共有する必要があります。
 - アプリケーションには、Adobe Acrobat Reader が必要です。
-- クライアントは、Windows 8.1 および Windows 10、または Microsoft Windows Server 2012 R2 でのみサポートされています。
-- Dynamics AX 7.0 & Platform Update 1 配置は、クライアントで Microsoft .NET 4 を要求します。
+- クライアントは、Windows 8.1、Windows 10、Microsoft Windows Server 2012 R2、または Microsoft Windows Server 2016 でのみサポートされています。
+- Dynamics AX 7.0 および Platform Update 1 配置は、クライアントで Microsoft .NET 4 を要求します。
 - プラットフォーム更新プログラム 2 以降には、クライアントに .NET 4.62 が必要です。
 
 Finance and Operations アプリケーションに登録されているネットワーク プリンターは、環境で定義されているすべての法人 (会社とも呼ばれます) で使用できます。 ネットワーク プリンター設定は会社固有です。 したがって、管理者はユーザーのアクティブな会社に基づいてアクセスを制限できます。 たとえば、有効な会社内のユーザーは、ドキュメント回覧エージェントによって登録されるすべてのネットワーク プリンターへアクセスできる可能性があります。 ただし、別の会社内のユーザーは、アクセスがその会社に対して明示的に有効になるまで、それらのプリンターへアクセスできません。
@@ -125,7 +125,7 @@ Finance and Operations アプリケーションは、ドキュメント回覧エ
 
 ### <a name="will-microsoft-add-support-for-microsoft-windows-server-2008-servers"></a>Microsoft は Microsoft Windows Server 2008 サーバーのサポートを追加しますか。
 
-いいえ、この時点ではありません。 Azure の機能には、Windows Server 2012 R2 でのみ使用可能ないくつかの依存関係があります。
+いいえ、この時点ではありません。 Azure の機能には、Microsoft Windows Server 2012 R2 と Microsoft Windows Server 2016 でのみ使用可能ないくつかの依存関係があります。
 
 ### <a name="does-the-user-who-installs-the-document-routing-agent-have-to-be-part-of-a-finance-and-operations-security-group"></a>ドキュメント回覧エージェントをインストールするユーザーは、Finance and Operations セキュリティ グループの一部である必要がありますか。
 

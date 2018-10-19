@@ -1,27 +1,27 @@
 ---
 title: "Finance and Operations データベースを Azure SQL データベースから SQL Server 環境にコピーする"
 description: "このトピックでは、 Microsoft Dynamics 365 for Finance and Operations のデータベースを Azure ベースの環境から SQL Server ベースの環境に移動する方法について説明します。"
-author: maertenm
+author: laneswenka
 manager: AnnBe
-ms.date: 03/30/2018
+ms.date: 10/04/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Developer, IT Pro
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 203764
 ms.assetid: 45efdabf-1714-4ba4-9a9d-217143a6c6e0
 ms.search.region: Global
-ms.author: maertenm
+ms.author: laswenka
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 9b3de8cd019e859942ddfa87a66cbb6f004d6f4f
-ms.openlocfilehash: 68a8b724cfca608e47a75edb35d44a5b9e2553f9
+ms.sourcegitcommit: 162273d39f85e5bdbc011f6fd64064fd60db9302
+ms.openlocfilehash: 28a88883fb0af45fce46b5ed065e23b24ad05d3b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/05/2018
+ms.lasthandoff: 10/04/2018
 
 ---
 
@@ -113,13 +113,37 @@ SELECT * FROM sys.dm_database_copies
 > データベースのコピーの名前を使用できるように、次の **データベースの変更** コマンドを編集する必要があります。
 
 ```
---Prepare a database in Azure SQL Database for export to SQL Server.
+--Prepare a database in Azure SQL ddatabase for export to SQL Server.
+
+-- Re-assign full rext catalogs to [dbo]
+BEGIN
+    DECLARE @catalogName nvarchar(256);
+    DECLARE @sqlStmtTable nvarchar(512)
+
+    DECLARE reassignFullTextCatalogCursor CURSOR
+       FOR SELECT DISTINCT name
+       FROM sys.fulltext_catalogs 
+       
+       -- Open cursor and disable on all tables returned
+       OPEN reassignFullTextCatalogCursor
+       FETCH NEXT FROM reassignFullTextCatalogCursor INTO @catalogName
+
+       WHILE @@FETCH_STATUS = 0
+       BEGIN
+              SET @sqlStmtTable = 'ALTER AUTHORIZATION ON Fulltext Catalog::[' + @catalogName + '] TO [dbo]'
+              EXEC sp_executesql @sqlStmtTable
+              FETCH NEXT FROM reassignFullTextCatalogCursor INTO @catalogName
+       END
+       CLOSE reassignFullTextCatalogCursor
+       DEALLOCATE reassignFullTextCatalogCursor
+END
+
 --Disable change tracking on tables where it is enabled.
 declare
 @SQL varchar(1000)
 set quoted_identifier off
 declare changeTrackingCursor CURSOR for
-select 'ALTER TABLE ' + t.name + ' DISABLE CHANGE_TRACKING'
+select 'ALTER TABLE [' + t.name + '] DISABLE CHANGE_TRACKING'
 from sys.change_tracking_tables c, sys.tables t
 where t.object_id = c.object_id
 OPEN changeTrackingCursor
@@ -143,7 +167,7 @@ declare
 @userSQL varchar(1000)
 set quoted_identifier off
 declare userCursor CURSOR for
-select 'DROP USER ' + name
+select 'DROP USER [' + name + ']'
 from sys.sysusers
 where issqlrole = 0 and hasdbaccess = 1 and name <> 'dbo'
 OPEN userCursor
@@ -170,9 +194,14 @@ where name = 'TEMPTABLEINAXDB'
 TRUNCATE TABLE SYSSERVERCONFIG
 TRUNCATE TABLE SYSSERVERSESSIONS
 TRUNCATE TABLE SYSCORPNETPRINTERS
+TRUNCATE TABLE SYSCLIENTSESSIONS
+TRUNCATE TABLE BATCHSERVERCONFIG
+TRUNCATE TABLE BATCHSERVERGROUP
 --Remove records which could lead to accidentally sending an email externally.
 UPDATE SysEmailParameters
-SET SMTPRELAYSERVERNAME = ''
+SET SMTPRELAYSERVERNAME = '', MAILERNONINTERACTIVE = 'SMTP' --LANE.SWENKA 9/12/18 Forcing SMTP as Exchange provider can still email on refresh
+--Remove encrypted SMTP Password record(s)
+TRUNCATE TABLE SYSEMAILSMTPPASSWORD
 GO
 UPDATE LogisticsElectronicAddress
 SET LOCATOR = ''
@@ -348,16 +377,6 @@ Finance and Operations クライアントでは、暗号化された環境固有
 | SysOAuthUserTokens.EncryptedRefreshToken                 | このフィールドは、AOS で内部的に使用されます。 これは無視できます。 |
 
 ## <a name="known-issues"></a>既知の問題
-
-### <a name="i-cant-drop-users-in-source-database"></a>ソース データベースにユーザーを削除することはできません。
-
-ソース データベース内のユーザーを削除するとき、axdbadmin または axdeployuser ユーザーが削除されないことがあります。それは、そのユーザーがフルテキスト カタログの現在の所有者であるためです。 この問題は、データベースが元々 Dynamics AX 7 (Finance and Operations) の CTP7 または CTP8 用に作成された場合に発生します。 この問題を解決するには、次の Transact-SQL (T-SQL) コマンドを実行して、所有者を **dbo** ユーザーに変更します。
-
-```
-ALTER AUTHORIZATION ON Fulltext Catalog:: TO [dbo]; 
-```
-
-コマンドの詳細については、[代替認証](https://msdn.microsoft.com/en-us/library/ms187359.aspx) を参照してください。
 
 ### <a name="i-cant-download-management-studio-installation-files"></a>Management Studio インストール ファイルをダウンロードできません
 

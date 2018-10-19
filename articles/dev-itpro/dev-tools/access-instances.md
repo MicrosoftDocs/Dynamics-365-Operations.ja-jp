@@ -18,10 +18,10 @@ ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 671f72434a30a3fc73a1c881dd10faab0a2993d5
+ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
+ms.openlocfilehash: dcbf0bab4fbcbfc24fc7ffd40d97f76369c513ac
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/17/2018
 
 ---
 
@@ -227,7 +227,7 @@ Retail もコンフィギュレーションしている場合は、このセク�
 
 ### <a name="base-url-of-the-local-application"></a>ローカル アプリケーションの基本 URL
 
-ユーザーが管理者としてプロビジョニングされた後、ユーザーは次のベース URL に移動してコンピュータ上のインスタンスにアクセスできます: https://usnconeboxax1aos.cloud.onebox.dynamics.com。 バージョン管理を使用しており、複数の開発 VMs を同じ Visual Studio Team Services (VSTS) プロジェクトに接続する予定がある場合は、ローカル VM 名を変更してください。 手順については、[Visual Studio Team Services へのアクセスを有効化するには、ローカルの名前を変更してください](../migration-upgrade/vso-machine-renaming.md) を参照してください。
+ユーザーが管理者としてプロビジョニングされた後、ユーザーは次のベース URL に移動してコンピュータ上のインスタンスにアクセスできます: https://usnconeboxax1aos.cloud.onebox.dynamics.com。 バージョン管理を使用しており、複数の開発 VMs を同じ Azure DevOps プロジェクトに接続する予定がある場合は、ローカル VM 名を変更してください。 手順については、[Azure DevOps へのアクセスを有効化するには、ローカルの名前を変更してください](../migration-upgrade/vso-machine-renaming.md) を参照してください。
 
 #### <a name="retail-configuration"></a>Retail コンフィギュレーション
 

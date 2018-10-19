@@ -17,10 +17,10 @@ ms.author: mumani
 ms.search.validFrom: 2017-01-27
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: be0b4c5db39d17943a31901c8f46fc68d2345835
+ms.sourcegitcommit: 87663bae532f68c8dbc306b51bf591f33f7f4d63
+ms.openlocfilehash: 17fdecd4e471e7f2eaa553c11aab7c4f9030f148
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 10/04/2018
 
 ---
 
@@ -49,12 +49,15 @@ ms.lasthandoff: 08/09/2018
 | PreLockTerminalTrigger    | 解約可能     | POS レジスターのロック前に実行されます。  |
 | PostLockTerminalTrigger   | キャンセル不可 | POS レジスターのロック後に実行されます。   |     
 
-## <a name="cash-nanagement-triggers"></a>現金管理トリガー
+## <a name="cash-management-triggers"></a>現金管理トリガー
 
 | トリガー                      | 種類           | 説明                                                 |
 |------------------------------|----------------|-------------------------------------------------------------|
 | PreTenderDeclarationTrigger  | 解約可能     | POS の支払または入金申告前に実行されます。 |
 | PostTenderDeclarationTrigger | キャンセル不可 | POS の支払または入金申告後に実行されます。  |
+| PreFloatEntryTrigger         | 解約可能     | POS 釣銭入力の前に実行されます。 |
+| PostFloatEntryTrigger        | キャンセル不可 | POS 釣銭入力の後に実行されます。  |    
+
 
 ## <a name="customer-triggers"></a>顧客トリガー
 
@@ -293,7 +296,7 @@ ms.lasthandoff: 08/09/2018
         }
     }
 ```
-9. 新しい .json ファイルを **POSAPIExtension** フォルダーの下に作成し、**manifest.json** という名前を付けます。
+9. 新しい .json ファイルを **SuspendReceiptSample** フォルダーの下に作成し、**manifest.json** という名前を付けます。
 10. **manifest.json** の自動生成されたコードを次のコードに置き換えます。
 
 ```typescript

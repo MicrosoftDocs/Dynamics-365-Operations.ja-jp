@@ -16,10 +16,10 @@ ms.author: chaubold
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 4bf2245355f5b14d89a7ac0ec94c24323633f801
+ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
+ms.openlocfilehash: 0c6c84ec183263d41d965407317a1e964f7b677e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/17/2018
 
 ---
 
@@ -42,7 +42,7 @@ FastTrack チームは、LCS プロジェクトですべてのパートナーお
 - Tenant 検証 
 - LCS の概要
 - LCS プロジェクト ユーザーの設定
-- Microsoft Visual Studio Team Services の設定
+- Microsoft Azure DevOps の設定
 - サブスクリプション見積もりツール/使用状況プロファイラー
 - 環境計画
 - 環境配置

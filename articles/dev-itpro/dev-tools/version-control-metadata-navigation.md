@@ -1,6 +1,6 @@
 ---
-title: "バージョン コントロール、メタデータ、検索、およびナビゲーション"
-description: "このチュートリアルでは、Visual Studio Team Systems (以前の名称は Visual Studio Online) を設定して、モデルのソース管理を有効にします。 これは、\"仕事\" のタスクの作成および整理、メタデータおよびソース コードの検索、関連するモデル要素間の移動、モデルからのプロジェクトの作成を行う機能など、開発ツールでのその他の生産性機能について把握することにも役立ちます。"
+title: "バージョン コントロール、メタデータ検索、およびナビゲーション"
+description: "このチュートリアルでは、Azure DevOps (以前の名称は Visual Studio Online) を設定して、モデルのソース管理を有効にします。 これは、\"仕事\" のタスクの作成および整理、メタデータおよびソース コードの検索、関連するモデル要素間の移動、モデルからのプロジェクトの作成を行う機能など、開発ツールでのその他の生産性機能について把握することにも役立ちます。"
 author: RobinARH
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,29 +18,29 @@ ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: f071fac70bbea15cca7ae697c5aa1957e388ce4e
+ms.sourcegitcommit: 1aae5797e37b846a38f957b02870e213da528a2d
+ms.openlocfilehash: bb5b6fd9aa42ef36ba21469eced3e9fbdf848281
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 09/20/2018
 
 ---
 
-# <a name="version-control-metadata-search-and-navigation"></a>バージョン コントロール、メタデータ、検索、およびナビゲーション
+# <a name="version-control-metadata-search-and-navigation"></a>バージョン コントロール、メタデータ検索、およびナビゲーション
 
 [!include [banner](../includes/banner.md)]
 
-このチュートリアルでは、Visual Studio Team Systems (以前の名称は Visual Studio Online) を設定して、モデルのソース管理を有効にします。 これは、"仕事" のタスクの作成および整理、メタデータおよびソース コードの検索、関連するモデル要素間の移動、モデルからのプロジェクトの作成を行う機能など、開発ツールでのその他の生産性機能について把握することにも役立ちます。
+このチュートリアルでは、Azure DevOps (以前の名称は Visual Studio Online) を設定して、モデルのソース管理を有効にします。 これは、"仕事" のタスクの作成および整理、メタデータおよびソース コードの検索、関連するモデル要素間の移動、モデルからのプロジェクトの作成を行う機能など、開発ツールでのその他の生産性機能について把握することにも役立ちます。
 
-## <a name="configure-your-visual-studio-team-services-account-and-project"></a>Visual Studio Team Services アカウントおよびプロジェクトをコンフィギュレーションする
+## <a name="configure-your-azure-devops-account-and-project"></a>Azure DevOps アカウントおよびプロジェクトをコンフィギュレーションする
 
-このセクションでは、Visual Studio Team Services で新しいプロジェクトを作成します。 このプロジェクトはモデルのソース コードをホストします。 例として、フリート管理モデルを使用します。 Visual Studio チーム サービス アカウントをお持ちでない場合は、作成します。
+このセクションでは、Azure DevOps で新しいプロジェクトを作成します。 このプロジェクトはモデルのソース コードをホストします。 例として、フリート管理モデルを使用します。 Azure DevOps アカウントをお持ちでない場合は、作成します。
 
-### <a name="sign-up-to-visual-studio-team-services-create-an-account-and-create-a-new-project"></a>Visual Studio Team Services への登録、アカウントの作成、および新しいプロジェクトの作成
+### <a name="sign-up-to-azure-devops-create-an-account-and-create-a-new-project"></a>Azure DevOps への登録、アカウントの作成、および新しいプロジェクトの作成
 
-<http://www.visualstudio.com/> に移動して Visual Studio Team Services に登録します。 **サインアップ**をクリックします。 Visual Studio チーム サービス アカウントを既に持っている場合は、このトピックの後半の「Visual Studio チーム サービス プロジェクトの作成」セクションに移動します。 
+<http://www.visualstudio.com/> に移動して Azure DevOps にサインアップします。 **サインアップ**をクリックします。 Azure DevOps アカウントを既に持っている場合は、このトピックの後半の「Azure DevOps プロジェクトの作成」セクションに移動します。 
 
 1.  Microsoft アカウントでサインインします。 **注記**: 組織のアカウント (Microsoft Office 365 ドメイン) を使用することもできます。
-2.  Visual Studio Team Services アカウントを作成し、アカウントの URL を選択します。 これは、Visual Studio でソース管理を設定するときに、開発用コンピューターから接続する URL です。 次は、アカウント URLの例です。 
+2.  Azure DevOps アカウントを作成し、アカウントの URL を選択します。 これは、Visual Studio でソース管理を設定するときに、開発用コンピューターから接続する URL です。 次は、アカウント URLの例です。 
 
     [![AccountURL\_UsingDevoTools](./media/accounturl_usingdevotools.png)](./media/accounturl_usingdevotools.png) 
 
@@ -49,9 +49,9 @@ ms.lasthandoff: 04/20/2018
 
     [![FirstProject\_UsingDevoTools](./media/firstproject_usingdevotools.png)](./media/firstproject_usingdevotools.png)
 
-### <a name="create-a-visual-studio-team-services-team-project"></a>Visual Studio Team Services チーム プロジェクトの作成
+### <a name="create-a-azure-devops-team-project"></a>Azure DevOps チーム プロジェクトの作成
 
-Visual Studio チーム サービス アカウントを既に持っている場合は、Internet Explorer を使用してアカウントに移動します。 このトピックでは、説明のために URL の例として **.visualstudio.com** を使用します。
+Azure DevOps アカウントを既に持っている場合は、Internet Explorer を使用してアカウントに移動します。 このトピックでは、説明のために URL の例として **.visualstudio.com** を使用します。
 
 1. http://.visualstudio.com に移動します。
 2. **最近使用したプロジェクトとチーム** で **新規** をクリックして新しいプロジェクトを作成します。 
@@ -62,7 +62,7 @@ Visual Studio チーム サービス アカウントを既に持っている場�
 
 ### <a name="create-the-recommended-folder-structure-in-your-team-project"></a>チーム プロジェクトで推奨するフォルダー構造を作成する
 
-Lifecycle Services (LCS) 自動化コードのアップグレード ツールを使用して以前のバージョンからコードを移行した場合、以下のフォルダ構造は、Visual Studio Team Services チーム プロジェクトで自動的に作成されます。 
+Lifecycle Services (LCS) 自動化コードのアップグレード ツールを使用して以前のバージョンからコードを移行した場合、以下のフォルダ構造は、Azure DevOps チーム プロジェクトで自動的に作成されます。 
 
 [![VSOfolders](./media/vsofolders1.png)](./media/vsofolders1.png)
 
@@ -75,19 +75,19 @@ Lifecycle Services (LCS) 自動化コードのアップグレード ツールを
 3.  現在のソース管理プラグイン フィールドで **Visual studio Team Foundation Server** を選択します。
 4.  **チーム &gt; Team Foundation Server に接続** を選択します。
 5.  **チーム エクスプローラー**で、**チーム プロジェクトの選択**をクリックします。
-6.  **Team Foundation Server の選択**ドロップダウン リストで、フリート管理プロジェクトをホストする **Visual Studio Team Services アカウント**を選択するか、メニューにない場合は**サーバー**をクリックします。
+6.  **Team Foundation Server の選択**ドロップダウン リストで、フリート管理プロジェクトをホストする **Azure DevOps アカウント**を選択するか、メニューにない場合は**サーバー**をクリックします。
     1.  **Team Foundation Server の追加および削除** ダイアログ ボックスが開いたとき、**追加** をクリックします。
-    2.  Visual Studio Team Services (URL) のアカウントの URL を入力します。
-    3.  **OK** をクリックします。
+    2.  Azure DevOps アカウントの URL を入力します。
+    3.  **OK**をクリックします。
     4.  メッセージが表示されたら、Microsoft アカウントのユーザー名とパスワードを入力します。
 
 7.  **チーム プロジェクト** で **フリート管理** チェック ボックスをオンにし、**接続** をクリックします。 
 
     [![ConnectTFSServer\_UsingDevoTools](./media/connecttfsserver_usingdevotools.png)](./media/connecttfsserver_usingdevotools.png)
 
-### <a name="map-your-visual-studio-team-services-project-to-your-local-model-store-and-projects-folder"></a>Visual Studio Team Services プロジェクトをローカルのモデル ストアとプロジェクト フォルダーにマップ
+### <a name="map-your-azure-devops-project-to-your-local-model-store-and-projects-folder"></a>Azure DevOps プロジェクトをローカルのモデル ストアとプロジェクト フォルダーにマップ
 
-モデル ストアのルート フォルダーには、アプリケーションの一部であるすべてのパッケージとモデルのソース ファイルが含まれています。 展開中には、複数のパッケージにまたがる複数のモデルのソース ファイルを使用するでしょう。 このため、モデル ストアのルート フォルダーを Visual Studio Team Services のチーム プロジェクト メタデータ フォルダーにマップすることをお勧めします。
+モデル ストアのルート フォルダーには、アプリケーションの一部であるすべてのパッケージとモデルのソース ファイルが含まれています。 展開中には、複数のパッケージにまたがる複数のモデルのソース ファイルを使用するでしょう。 このため、モデル ストアのルート フォルダーを Azure DevOps のチーム プロジェクト メタデータ フォルダーにマップすることをお勧めします。
 
 1. Visual studio の**チーム エクスプローラー**で、このドキュメントで前に説明したようにチーム プロジェクトに接続します。
 2. **ソース管理エクスプローラー**から**チーム エクスプローラー**を開きます。
@@ -98,8 +98,8 @@ Lifecycle Services (LCS) 自動化コードのアップグレード ツールを
 4. **マップ**をクリックし、次のダイアログ ボックスで、**No** をクリックします。
 5. 同様に、Visual Studio ソリューションとプロジェクト ファイルを保持する <strong>/Trunk/Main/Projects **サーバー フォルダーから**ローカル プロジェクト フォルダー</strong>にマッピングします。
 
-## <a name="scenario-1-open-the-fleet-management-solution-and-add-it-to-visual-studio-team-services-source-control"></a>シナリオ 1: フリート管理ソリューションを開き、Visual Studio Team Services ソース管理に追加する
-このセクションでは、Visual Studio Team Services のソース管理にソリューションを追加するために必要なステップについて説明します。 このシナリオは、新しいモデルで開発を開始し、初めてソース管理に追加する場合に関係します。 コード移行シナリオまたは他の開発者により作成された新しいモデルを同期する場合は、以下のシナリオ 2 を参照してください。
+## <a name="scenario-1-open-the-fleet-management-solution-and-add-it-to-azure-devops-source-control"></a>シナリオ 1: フリート管理ソリューションを開き、Azure DevOps ソース管理に追加する
+このセクションでは、Azure DevOps のソース管理にソリューションを追加するために必要なステップについて説明します。 このシナリオは、新しいモデルで開発を開始し、初めてソース管理に追加する場合に関係します。 コード移行シナリオまたは他の開発者により作成された新しいモデルを同期する場合は、以下のシナリオ 2 を参照してください。
 
 ### <a name="open-the-fleetmanagement-solution"></a>FleetManagement ソリューションを開く
 
@@ -119,7 +119,7 @@ Lifecycle Services (LCS) 自動化コードのアップグレード ツールを
     [![VSOfolders3](./media/vsofolders31.png)](./media/vsofolders31.png)
 
 4.  [OK] をクリックします。
-5.  **チーム エクスプ ローラー &gt; 保留中の変更**に移動し、**チェックイン**をクリックして、ソリューションおよびモデル要素が Visual Studio Team Services ソース管理にチェックインするようにします。
+5.  **チーム エクスプ ローラー &gt; 保留中の変更**に移動し、**チェックイン**をクリックして、ソリューションおよびモデル要素が Azure DevOps ソース管理にチェックインするようにします。
 
 ### <a name="add-the-model-descriptor-file-to-source-control"></a>ソース コントロールへのモデル記述子ファイルの追加
 
@@ -132,7 +132,7 @@ Lifecycle Services (LCS) 自動化コードのアップグレード ツールを
     [![AddSourceControl\_UsingDevoTools](./media/addsourcecontrol_usingdevotools.png)](./media/addsourcecontrol_usingdevotools.png)
 
 4.  **完了** をクリックします。 **注記**: ソリューションに 2 つのモデルの要素が含まれているため、ソース管理に追加のモデル記述子ファイルを追加する必要があります。C:\\Packages\\FleetManagementExtension\\Descriptor\\FleetManagementExtension.xml
-5.  保留中の品目をチェックインします。 これで、Visual Studio Team Services の最新のクラウド ベースのソース コントロール システムとその他の多くのアプリケーション ライフ サイクルの機能を使用して、項目のフリート管理アプリケーションの開発の準備が整いました。
+5.  保留中の品目をチェックインします。 これで、Azure DevOps の最新のクラウド ベースのソース コントロール システムとその他の多くのアプリケーション ライフ サイクルの機能を使用して、項目のフリート管理アプリケーションの開発の準備が整いました。
 
 ### <a name="experiment-with-source-control"></a>ソース管理を試す
 
@@ -160,7 +160,7 @@ Lifecycle Services (LCS) 自動化コードのアップグレード ツールを
 11. 次のダイアログで取り消しを確認し、**差異**ウィンドウを閉じます。
 
 ## <a name="scenario-2-synchronize-models-from-source-control"></a>シナリオ 2: ソース管理からモデルを同期する
-このセクションでは、Visual Studio Team Services プロジェクトから既存のモデルおよびモデル要素を同期します。 これは以下の場合に関連します。1) 以前のバージョンのコードを LCS 経由で移行した。2) 別の開発者が新しいモデルまたは新しいモデル要素をチェックインし、それらを開発環境と同期させたい。
+このセクションでは、Azure DevOps プロジェクトから既存のモデルおよびモデル要素を同期します。 これは以下の場合に関連します。1) 以前のバージョンのコードを LCS 経由で移行した。2) 別の開発者が新しいモデルまたは新しいモデル要素をチェックインし、それらを開発環境と同期させたい。
 
 1.  ソース管理エクスプローラーで、メタデータを右クリックして**最新バージョンの取得**を選択します。 これにより、ローカル パッケージ フォルダーと最新のコードが同期されます。
 2.  別の方法として、**詳細**メニューを使用して固有のビルド バージョンまたは変更セットを同期することができます。

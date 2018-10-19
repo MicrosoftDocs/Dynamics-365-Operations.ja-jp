@@ -3,7 +3,7 @@ title: "ソフトウェアのライフサイクル ポリシーおよびオン�
 description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations (オンプレミス) リリースにおける ライフサイクルおよびサポート ポリシーの概要を説明します。"
 author: RyanCCarlson2
 manager: AnnBe
-ms.date: 09/05/2018
+ms.date: 09/06/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: rcarlson
 ms.search.validFrom: 2017-07-15
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: HT
-ms.sourcegitcommit: a1bd314d29b91279dfc31623214a5185e2091c22
-ms.openlocfilehash: 1d52b018d9e76bed0c39143646c0b26e3a3007a8
+ms.sourcegitcommit: 8a79ca0b985b0568c35e6a5095332fc6326c9ff1
+ms.openlocfilehash: 7755e4929d127e20882023bb2edcf5ce58dda1b6
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/05/2018
+ms.lasthandoff: 09/06/2018
 
 ---
 
@@ -53,7 +53,7 @@ Microsoft Dynamics 365 for Finance and Operations (オンプレミス) ソフト
 |  Dynamics 365 for Finance and Operations, Enterprise edition (オンプレミス) | 7.3 | 7.3.11971  | 2018 年 3 月 | 2020 年 4 月*     | 2027 年 12 月  |
 |  Dynamics 365 for Finance and Operations, Enterprise edition (オンプレミス) | 2017 年 7 月 | 7.2.11792 | 2017 年 6 月 | 2019 年 4 月     | 2027 年 12 月  |
 
-\*最新バージョンに関する唯一の例外は、履行されていない[拡張要求](../extensibility/extensibility-home-page.md)を Microsoft に送信したお客様です。 このようなお客様には、バージョン 7.3 を 2020 年 4 月まで使用できます。
+\*すべてのユーザーは、2019 年 4 月 30 日までに Finance and Operations の最新バージョンにする必要があります。  ただし、Microsoft に提出された[拡張要求](../extensibility/extensibility-home-page.md)を実行しなかったユーザーには例外を設けます。 それらのユーザーは、2020 年 4 月までバージョン 7.3 を使用することができます。 詳細については、[Dynamics 365 更新ポリシーについてよく寄せられる質問](https://docs.microsoft.com/en-us/dynamics365/get-started/faq-update-policy)を参照してください。
 
 ### <a name="platform-releases"></a>プラットフォームのリリース
 

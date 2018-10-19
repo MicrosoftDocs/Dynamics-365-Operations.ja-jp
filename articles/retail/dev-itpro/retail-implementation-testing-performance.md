@@ -18,10 +18,10 @@ ms.author: andreash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: Retail 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 1208d888bb19f1d298a37c10e9c34bde4580f88d
+ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
+ms.openlocfilehash: 90d56b480a7b940d0a2998e550915d4e271b67d7
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/17/2018
 
 ---
 
@@ -87,7 +87,7 @@ Microsoft Dynamics 365 for Retail および Microsoft Dynamics 365 for Finance a
 さらにパフォーマンスの問題を大きく修正するには、新しいパフォーマンステストを行う必要があります。 多くの場合、大きな問題は、他のより小さな問題をマスクします。 上記の問題が解決された後、次の問題を検出し、パフォーマンスが顧客の期待に達するまで処理されます。
 
 ## <a name="additional-resources"></a>その他のリソース
-[新しい環境、Visual Studio Team Services、および小売プロジェクトの分岐を設定します。](./new-environments-visual-studio-teams-branch-retail-projects.md)
+[Retail プロジェクトの新しい環境、Azure DevOps、およびブランチの設定](./new-environments-visual-studio-teams-branch-retail-projects.md)
 
-[コードおよび小売プロジェクトの環境の更新](./updating-environments.md)
+[Retail プロジェクトのコードと環境の更新](./updating-environments.md)
 

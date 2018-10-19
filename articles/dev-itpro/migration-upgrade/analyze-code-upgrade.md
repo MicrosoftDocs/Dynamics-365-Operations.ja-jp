@@ -18,10 +18,10 @@ ms.author: tabell
 ms.search.validFrom: 2017-05-31
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 8f5f0361e86a48b6dcdb8c3b8da06b969334b0be
+ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
+ms.openlocfilehash: 4d944c26e13f3307fa79b73922e702d3d787a594
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/17/2018
 
 ---
 
@@ -38,8 +38,8 @@ ms.lasthandoff: 08/09/2018
 コード アップグレード サービスは、これらのアクションを実行します。
 
 - いくつかのタイプの競合問題を直接解決します。
-- その他の問題については、Microsoft Visual Studio チーム サービス (VSTS) タスクに記録します。
-- Finance and Operations の形式でコードのバージョンを作成し、VSTS プロジェクトの新しい分岐で新しいバージョンを確認します。
+- その他の問題については、Microsoft Azure DevOps タスクにログ記録します。
+- Finance and Operations の形式でコードのバージョンを作成し、Azure DevOps プロジェクトの新しい分岐で新しいバージョンを確認します。
 
 分析フェーズでは、レポートを使用してコード変換アクティビティを完了するために必要な作業量を見積もります。
 
@@ -49,5 +49,5 @@ ms.lasthandoff: 08/09/2018
 
 コード アップグレード サービスをコンフィギュレーションする方法については、「[Lifecycle Services でコード アップグレード サービスをコンフィギュレーションする](../lifecycle-services/configure-execute-code-upgrade.md)」を参照してください。
 
-コード アップグレード サービスの出力は、Finance and Operations 開発者が消費するように設計されています。 この出力は、開発者がコードのアップグレード タスクを完了するために必要な工数を見積もるのに役立ちます。 見積もりを作成するには、サービスが VSTS で生成するタスクと、サービスが生成する新しいバージョンのコードを確認する必要があります。
+コード アップグレード サービスの出力は、Finance and Operations 開発者が消費するように設計されています。 この出力は、開発者がコードのアップグレード タスクを完了するために必要な工数を見積もるのに役立ちます。 見積もりを作成するには、サービスが Azure DevOps で生成するタスクと、サービスが生成する新しいバージョンのコードを確認する必要があります。
 

@@ -3,7 +3,7 @@ title: "POS ビューの拡張によるカスタム列およびアプリ バー 
 description: "このトピックでは、[顧客の追加/編集] 画面などの既存の POS ビューを拡張する方法について説明します。"
 author: mugunthanm
 manager: AnnBe
-ms.date: 07/09/2018
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -17,10 +17,10 @@ ms.author: mumani
 ms.search.validFrom: 2017-11-22
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: a45dd523c8d29de71fbfed7afd6adf7e130bdb1c
+ms.sourcegitcommit: c59242a350140d4965dd86b8beed4eb18c02cd48
+ms.openlocfilehash: b711b5462558c785f91000f8d64396b471eb7bfd
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 10/01/2018
 
 ---
 
@@ -64,6 +64,10 @@ POS ビューでは、次の拡張ポイントとパターンがサポートさ�
 | SearchStockCountView            | 無                            | 有                          | 無                                   |
 | StockCountDetailsView           | 無                            | 有                          | 無                                   |
 | ResumeCartView                  | 無                            | 有                          | 無                                    |
+| OrderFulfillmentView            | 無                            | 無                           | 有                                   |
+| InventoryLookupMatrixView       | 無                            | 無                           | 有                                   |
+| SuspendTransactionView          | 無                            | 有                          | 無                               |     
+
 
 > [!NOTE]
 > 上記に表示される表は、リリースされた最新バージョンおよび修正プログラムに基づいて更新されています。 旧バージョンでは、これらの拡張ポイントの一部は使用できません。

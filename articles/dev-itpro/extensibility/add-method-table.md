@@ -3,7 +3,7 @@ title: "拡張機能を使用してテーブルにメソッドを追加"
 description: "このトピックでは、拡張機能を使用してテーブルにメソッドを追加する方法について説明します。"
 author: ivanv-microsoft
 manager: AnnBe
-ms.date: 07/10/2017
+ms.date: 10/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

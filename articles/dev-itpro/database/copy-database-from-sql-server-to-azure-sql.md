@@ -18,10 +18,10 @@ ms.author: maertenm
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
-ms.openlocfilehash: c990b13a4633a76da7100c843108139a5e264998
+ms.sourcegitcommit: 1aae5797e37b846a38f957b02870e213da528a2d
+ms.openlocfilehash: 514f31c1b46707be1df0b28582535131ada46adf
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
+ms.lasthandoff: 09/20/2018
 
 ---
 
@@ -329,6 +329,9 @@ DEALLOCATE retail_ftx;
 
 ### <a name="enable-change-tracking"></a>変更追跡の有効化
 ソース データベースで変更追跡が有効になっている場合は、ALTER DATABASE コマンドを使用して、ターゲット環境の新たなプロビジョニング データベースで変更追跡を再度有効にしてください。
+```
+ALTER DATABASE [your database name] SET CHANGE_TRACKING = ON (CHANGE_RETENTION = 6 DAYS, AUTO_CLEANUP = ON);
+```
 
 新しいデータベースで店舗の業務手順の現在のバージョン (変更追跡に関連する) が使用されていることを確認するには、データ管理のデータ エンティティの変更追跡を有効または無効にする必要があります。 これは、店舗の業務手順の更新をトリガーするために必要なので、どのエンティティでも実行できます。
 
