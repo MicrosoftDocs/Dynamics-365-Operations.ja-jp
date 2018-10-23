@@ -18,10 +18,10 @@ ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: edb2b74db6aecafdcf3f4c8a4ffb61dfff503d22
+ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
+ms.openlocfilehash: 04eb3ba177d9151bc34ce13e67564864e3e01563
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/17/2018
 
 ---
 
@@ -67,16 +67,16 @@ LCS コードのアップグレード サービスは、Dynamics AX 2012 R3 モ�
 -   ソリューションのアップグレードに必要な作業を理解する見積を提供します。
 -   ソリューションの一部を自動移行する移行ルールを実行します。
 -   TODO を使って手動で修正する内容を開発者に知らせる移行ルールを実行します。
--   アップグレードされたソリューションを Visual Studio Team Services (VSTS) プロジェクトに自動的にチェックインします。
+-   アップグレードされたソリューションを Azure DevOps プロジェクトに自動的にチェックインします。
 
 コード アップグレード サービスを設定および実行する方法については、[[Lifecycle Services でコード アップグレード サービスを構成および実行する](../lifecycle-services/configure-execute-code-upgrade.md)] を参照してください。
 
 ### <a name="manual-migration-steps"></a>手動での移行の手順
 
-LCS コード アップグレード サービス構成のコードをアップグレードした後、開発者の VM と VSTS にアップグレードされたコード ブランチに接続します。
+LCS コード アップグレード サービス構成のコードをアップグレードした後、開発者の VM と Azure DevOps にアップグレードされたコード ブランチに接続します。
 
 -   [開発者向け VM を構成する](../dev-tools/configure-developer-vm.md)
--   [VSTS のコンフィギュレーション](configure-vso-solution.md)
+-   [Azure DevOps のコンフィギュレーション](configure-vso-solution.md)
 
 コードのアップグレード サービスは、コードをコンパイルするために開くことができる Visual Studio ソリューションを提供します。 競合を含むすべての要素向けの**コード マージ**ソリューションと、すべてのアップグレードされた要素向けの**アップグレード**ソリューション。 通常、以下の順序でコンパイル エラーを修正して、アプリケーションをコンパイルできます。 順序はパッケージの依存関係のグラフに基づいて決定され、グラフの中で最も低いパッケージから開始されます。 パッケージの依存関係を調べるには、[[モデル](../dev-tools/models.md)] を参照してください。 標準的な注文は、Application Platform、Application Foundation、Directory など、Application Suite です。 各アップグレードされたモデル対象:
 

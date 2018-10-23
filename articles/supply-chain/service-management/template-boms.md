@@ -3,7 +3,7 @@ title: "テンプレート BOM"
 description: "テンプレート BOM (部品表) は、定期的にサービスされるサービス対象のコンポーネントの標準化された一覧を提供します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 05/01/2018
+ms.date: 09/19/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 6e3a16b9938f6d4222e0a95078356f457e71a1bb
+ms.sourcegitcommit: 1aae5797e37b846a38f957b02870e213da528a2d
+ms.openlocfilehash: f9c61ecd79f38301f46e3c21a33ec2801f33d19f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 10/16/2018
 
 ---
 
@@ -105,7 +105,7 @@ BOM 内の品目を交換する場合は、BOM デザイナで BOM 明細行の�
 
 
 > [!NOTE]
-> <P>番号順序は Microsoft Dynamics AX 全体に使用され、ID を、必要とするレコードに割り当てます。 テンプレート BOM または BOM 履歴行番号に番号順序を割り当てるには、その前に、番号順序コードを設定する必要があります。</P>
+> <P>番号順序が使用され、ID を必要とするレコードに割り当てます。 テンプレート BOM または BOM 履歴行番号に番号順序を割り当てるには、その前に、番号順序コードを設定する必要があります。</P>
 
 
 ## <a name="set-up-number-sequences"></a>番号順序の設定

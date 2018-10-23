@@ -18,10 +18,10 @@ ms.author: andreash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: Retail 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: 0cd07788a3a408f0d359e0500be83de9a50404ea
-ms.openlocfilehash: 7346882795af1acdec83c74aa97c3b8952fababd
+ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
+ms.openlocfilehash: c340fcdb8ad5ca95defa757b4e469e065c391b32
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/17/2018
 
 ---
 
@@ -36,9 +36,9 @@ ms.lasthandoff: 08/09/2018
 
 Retail 機能を含む Microsoft Dynamics 365 for Finance and Operations の実装に焦点をあてた情報です。
 
-[新しい環境、Visual Studio Team Services、および小売プロジェクトの分岐を設定します。](./new-environments-visual-studio-teams-branch-retail-projects.md)
+[Retail プロジェクトの新しい環境、Azure DevOps、およびブランチの設定](./new-environments-visual-studio-teams-branch-retail-projects.md)
 
-[コードおよび小売プロジェクトの環境の更新](./updating-environments.md)
+[Retail プロジェクトのコードと環境の更新](./updating-environments.md)
 
 [テストおよびパフォーマンス](./retail-implementation-testing-performance.md)
 

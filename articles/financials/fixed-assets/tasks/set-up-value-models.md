@@ -1,28 +1,29 @@
 --- 
-title: "帳簿の設定"
+title: "価値モデルの設定"
 description: "この手順では、新しい固定資産帳簿を作成する方法およびそれを固定資産グループに関連付ける方法を説明します。"
 author: saraschi2
 manager: AnnBe
-ms.date: 10/11/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: AssetBookTable, AssetGroupBookSetup
 audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: a29cae6cdcd03903359a3a468243c6ad03c7adc6
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: e067173b27488422fd05ad45f37528f00f04a2bd
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/16/2018
 
 ---
-# <a name="set-up-books"></a>帳簿の設定
+# <a name="set-up-value-models"></a>価値モデルの設定
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

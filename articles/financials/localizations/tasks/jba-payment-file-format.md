@@ -1,28 +1,29 @@
 --- 
-title: "JBA 支払ファイル形式の有効化 (日本)"
+title: "JBA 支払ファイル形式の有効化"
 description: "日本では、電子資金決済 (EFT) のファイル形式は全国銀行協会 (JBA) により指定されています。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 09/16/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ERWorkspace, ERSolutionRepositoryTable, ERSolutionImport,  VendPaymMode
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 4e9ff0f343f622cc7891bc707af784cd25de77ae
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 8402d10f470166e5db065c3e8236c2eb971b58ee
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/16/2018
 
 ---
-# <a name="enable-the-jba-payment-file-format-japan"></a>JBA 支払ファイル形式の有効化 (日本)
+# <a name="enable-the-jba-payment-file-format"></a>JBA 支払ファイル形式の有効化
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

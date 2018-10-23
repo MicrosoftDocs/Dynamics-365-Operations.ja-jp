@@ -1,28 +1,29 @@
 --- 
-title: "損金の固定資産マスター データ ファイルの保守 (日本)"
+title: "損金の固定資産マスター データ ファイルの管理"
 description: "このタスクでは、損金の固定資産マスター データの保守を行います。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 09/22/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: AssetGroup, AssetGroupBookSetup,  AssetTable, AssetBook
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 1bc09123f11ca2c49d557ffd3d253df6c0da3d65
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 41d436194dfdf94cf8a3ad889e610e151fc35c90
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/16/2018
 
 ---
-# <a name="maintain-fixed-asset-master-data-files-for-deductible-expenses-japan"></a>損金の固定資産マスター データ ファイルの保守 (日本)
+# <a name="maintain-fixed-asset-master-data-files-for-deductible-expenses"></a>損金の固定資産マスター データ ファイルの管理
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

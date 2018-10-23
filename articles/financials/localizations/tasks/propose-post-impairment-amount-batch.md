@@ -1,40 +1,34 @@
 --- 
-title: "バッチごとの減損損失の提案と転記 (日本)"
+title: "バッチごとの減損損失の提案と転記"
 description: "このタスクは、バッチによる減損損失額の提案と転記について説明します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 10/31/2017
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: LedgerJournalTable, LedgerJournalTransAsset
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 858cbf5f5beee4c02ebbb670f35386d26a0883f4
-ms.openlocfilehash: d44d47e88924bed5cca871b160c770d87f4dbeb1
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: f9cb207312fa5b73bd840a1bbadf40bc268483f2
 ms.contentlocale: ja-jp
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 10/16/2018
 
 ---
-# <a name="propose-and-post-the-impairment-amount-by-batch-japan"></a>バッチごとの減損損失の提案と転記 (日本)
+
+# <a name="propose-and-post-the-impairment-amount-by-batch"></a>バッチごとの減損損失の提案と転記
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-このタスクは、バッチによる減損損失額の提案と転記について説明します。
-
-
-
-このタスクを完了するには、減損テストが確認され、保存されている必要があります。
-
-
-
-この手順では、JPMF デモ会社のデータを使用します。
+このタスクは、バッチによる減損損失額の提案と転記について説明します。 このタスクを完了するには、減損テストが確認され、保存されている必要があります。 この手順では、JPMF デモ会社のデータを使用します。
 
 1. [固定資産] > [定期処理のタスク] > [減損提案] の順に移動します。
 2. [仕訳帳名] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。

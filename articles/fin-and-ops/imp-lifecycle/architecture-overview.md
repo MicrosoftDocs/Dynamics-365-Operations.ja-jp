@@ -18,10 +18,10 @@ ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 880701ca7aacadd8895453fbd0362e9cc1b0f34d
+ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
+ms.openlocfilehash: 930980beba1ff4e2cb3958ccd7ecc653d822fbae
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/17/2018
 
 ---
 
@@ -57,7 +57,7 @@ Finance and Operations のクラウド アーキテクチャは、これらの�
     > 実装プロジェクトは、Microsoft-managed Finance and Operations クラウド サービスの LCS プロジェクトです。 Microsoft パートナーとして、目的に合わせて非実装 LCS プロジェクトを準備することもできます。 詳細については、[Lifecycle Services for Finance and Operations のパートナー](../../dev-itpro/lifecycle-services/getting-started-lcs.md)を参照してください。 
 
 - **Finance and Operations** – Finance and Operations は、LCS を通じて展開されます。 開発/テスト/ビルド、受入れテスト、パフォーマンス テスト、高可用性生産など、さまざまなトポロジが利用できます。 さまざまなトポロジの詳細については、[Dynamics 365 の価格設定からの最新の Microsoft Dynamics 365 ライセンス ガイド](https://dynamics.microsoft.com/en-us/pricing/)をダウンロードしてください。
-- **Microsoft Visual Studio Team Services (VSTS)** – VSTS は、主にコードのバージョン管理に使用され、ビルド環境を配置します。 VSTS は、クラウドを利用したサポートを通じて Microsoft に送信される VSTS の作業項目などのサポート インシデントの追跡や、ビジネス プロセス モデラー (BPM) ライブラリ階層を作業項目の階層として VSTS プロジェクトに統合するのにも使用されます。 VSTS はコードのアップグレード時にも使用されます。
+- **Microsoft Azure DevOps** – Azure DevOps は、主にコードのバージョン管理に使用され、ビルド環境を配置します。 Azure DevOps は、クラウドを利用したサポートを通じて Microsoft に送信される Azure DevOps の作業項目などのサポート インシデントの追跡や、ビジネス プロセス モデラー (BPM) ライブラリ階層を作業項目の階層として Azure DevOps プロジェクトに統合するのにも使用されます。 Azure DevOps はコードのアップグレード時にも使用されます。
 
 Finance and Operations では、Azure ストレージ、ネットワーク、監視、Azure SQL データベースなど、Azure プラットフォームの多くの機能を使用しています。 共有サービスが工程に移り、参加者の環境のアプリケーション ライフサイクルが調整されます。 Azure の機能と LCS があいまって、堅牢なクラウド サービスを提供します。
 

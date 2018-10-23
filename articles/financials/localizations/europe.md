@@ -16,10 +16,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ce9c24a0a89dd4e6a0f3f2c7789b4f553d88d412
-ms.openlocfilehash: 9399df070d450b6eb89dc33ca47ddb77fe8e60b1
+ms.sourcegitcommit: 965826f5fddc2f53f33157434929eb265979376e
+ms.openlocfilehash: 137fb8cae0766bed16b6b32d99e1d2c6c9f7b606
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
+ms.lasthandoff: 10/16/2018
 
 ---
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 08/13/2018
 
 [!include [banner](../includes/banner.md)]
 
-このトピックには、ブラジルに基本住所を持つ法人に対して Dynamics 365 for Finance and Operations の設定に役立つ情報およびリソースへのリンクが含まれます。 
+このトピックには、ヨーロッパに基本住所を持つ法人に対して Dynamics 365 for Finance and Operations の設定に役立つ情報およびリソースへのリンクが含まれます。 
 
 - [前貸し保有者](emea-advance-holders.md)
  - [前貸し保有者トランザクション](emea-advance-holders-transactions.md)
@@ -44,9 +44,7 @@ ms.lasthandoff: 08/13/2018
 - [支払方法のファイル形式](emea-select-file-formats-for-the-method-of-payments.md)
 - [会計サービス (ESR) の統合](emea-fiscal-service-integration.md)
 - [エストニアおよびリトアニアの固定資産の処分](emea-credit-note-reverse-fixed-asset-sale.md)
-- [外貨再評価](emea-foreign-currency-revaluation.md)
 - [内部在庫移動の移動文書の生成](tasks/transfer-document-internal-inventory-transfer.md)
-- [EU イントラスタット申告の生成](tasks/eur-00002-eu-intrastat-declaration.md)
 - [EU 販売リスト レポートの生成](tasks/eur-00011-eu-sales-list-report.md)
 - ISO20022 ファイル
   - [ISO20022 ファイルのインポート](emea-ISO20022-file-formats.md)
@@ -61,6 +59,8 @@ ms.lasthandoff: 08/13/2018
   - [ISO20022 支払形式を使用した仕入先支払の作成とエクスポート](tasks/create-export-vendor-payments-iso20022-payment-format.md)
 - [イントラスタット](emea-intrastat.md)
   - [イントラスタットへのトランザクションの転送](tasks/transfer-transactions-intrastat.md)
+  - [EU 内トランザクションの船積住所の指定](tasks/eur-00002-specify-lading-address-intra-community.md)
+  - [EU イントラスタット申告の生成](tasks/eur-00002-eu-intrastat-declaration.md)
 - [在庫仕訳レポート](emea-set-up-report-inventory-journal-names.md)
 - [請求書発行の期限](emea-invoice-issue-deadline.md)
 - [請求処理](emea-invoice-processing.md)
@@ -82,8 +82,6 @@ ms.lasthandoff: 08/13/2018
 - [EU 販売リストのレポートの設定](tasks/eur-00011-eu-sales-list-reporting.md)
 - [プロジェクト請求書の支払伝票形式の設定](tasks/set-up-payment-slip-format-project-invoices.md)
 - [印刷フォームの署名者の設定](emea-set-up-signers-for-printing-forms.md)
-- [社内の商品移動の移動文書の設定](tasks/set-up-transfer-documents-goods-movement-inside-company.md)
-- [EU 内トランザクションの船積住所の指定](tasks/eur-00002-specify-lading-address-intra-community.md)
 - [逆仕訳会計](emea-storno.md)
 - [税指示](emea-tax-directives.md)
 - [レポートおよびドキュメントの金額表示方法の更新](emea-amount-printing-forms.md)

@@ -1,28 +1,29 @@
 --- 
-title: "資産除去債務見積の調整 (日本)"
+title: "資産除去債務見積の調整"
 description: "日本では、資産除去責務 (ARO) の最初の見積を調整できます。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 11/10/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: AssetTable, AssetRetirementObligation_JP, AssetRetirementObligationLine_JP, LedgerJournalTable, LedgerJournalTransAsset, SysQueryForm
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 23944f55a4bb4b318fa10edbaa956998380fd5c6
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 7e441105b35bbfe53d208195c8164458c816a7a0
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/16/2018
 
 ---
-# <a name="adjust-an-asset-retirement-obligation-estimate-japan"></a>資産除去債務見積の調整 (日本)
+# <a name="adjustment-of-the-asset-retirement-obligation-estimate"></a>資産除去債務見積の調整
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

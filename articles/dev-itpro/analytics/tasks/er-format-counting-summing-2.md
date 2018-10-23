@@ -1,28 +1,29 @@
 --- 
-title: "棚卸および集計を行うための計算を構成する"
+title: "ER 棚卸および集計を行うための形式のコンフィギュレーション (第 2 部 - 計算のコンフィギュレーション)"
 description: "次の手順では、システム管理者または電子レポート開発者のロールに指定されたユーザーが、生成済みのテキスト出力に基づく計算と集計の電子レポート（ER）フォーマットをどのように環境設定するのかについて示します。"
 author: NickSelin
 manager: AnnBe
-ms.date: 10/28/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ERWorkspace, ERSolutionTable, ERSolutionCreateDropDialog, EROperationDesigner, ERDataSourceAddDropDialog, ERExpressionDesignerFormula
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d41ce101c0b038627e2baf6b5eac2410095af7ce
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 4ef657b13bc1f7f4a84676821e4175ace32c069a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 10/16/2018
 
 ---
-# <a name="configure-computations-to-do-counting-and-summing"></a>棚卸および集計を行うための計算を構成する
+# <a name="er-configure-format-to-do-counting-and-summing-part-2-configure-computations"></a>ER 棚卸および集計を行うための形式のコンフィギュレーション (パート 2: コンフィギュレーションの計算)
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

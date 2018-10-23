@@ -3,7 +3,7 @@ title: "新規または変更"
 description: "このページでは、最新バージョンの Microsoft Dynamics 365 for Finance and Operations の新しい機能について学ぶ役立つトピックを示します。"
 author: josaw1
 manager: AnnBe
-ms.date: 06/22/2018
+ms.date: 08/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: HT
-ms.sourcegitcommit: 02d66063f721357b354f7959a46ec94d617f55a2
-ms.openlocfilehash: 2a608355718509c90e766825113f386b163ee4fd
+ms.sourcegitcommit: ad0083018d2734cb1e36cbf5f94105376c57cdf9
+ms.openlocfilehash: 201068db3b1bd27438b16ff3f1f51f8a1eb972c5
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 10/02/2018
 
 ---
 
@@ -38,6 +38,8 @@ ms.lasthandoff: 08/09/2018
 [!include [release notes](../includes/release-notes.md)]
 
 ## <a name="application-releases"></a>アプリケーション リリース
+
+次の表は、アプリケーションのメジャー リリースの一覧を示します。 毎月のクラウド更新プログラムについては、[ソフトウェアのライフ サイクル ポリシーおよびクラウド リリース](../../dev-itpro/migration-upgrade/versions-update-policy.md) を参照してください。
 
 <table>
 <colgroup>
@@ -58,9 +60,14 @@ ms.lasthandoff: 08/09/2018
 </thead>
 <tbody>
 <tr class="even">
-
 </tr>
 <tr class="even">
+<td>Microsoft Dynamics 365 for Finance and Operations</td>
+<td>8.1</td>
+<td>8.1.136  </td>
+<td>2018 年 10 月</td>
+  <td><a href="whats-new-changed-8-1-October-2018.md">Dynamics 365 for Finance and Operations バージョン 8.1 (2018 年 10 月) の新機能および変更された機能</a></td>
+</tr>
 <tr class="even">
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>8.0</td>
@@ -121,10 +128,16 @@ ms.lasthandoff: 08/09/2018
 <th>バージョン</th>
 <th>ビルド番号</th>
 <th>適用の対象</th>
-<th>[詳細情報]</th>
+<th>詳細情報</th>
 </tr>
 </thead>
 <tbody>
+<tr class="odd">
+<td>Microsoft Dynamics 365 for Finance and Operations</td>
+<td>プラットフォーム update 20</td>
+<td>7.0.5030</td>
+<td>2018 年 9 月</td>
+<td><a href="whats-new-platform-update-20.md">Dynamics 365 for Finance and Operations、Enterprise edition プラットフォーム更新プログラム 20 (2018 年9 月) の新機能および変更された機能</a></td><tbody>
 <tr class="odd">
 <td>Microsoft Dynamics 365 for Finance and Operations Enterprise Edition</td>
 <td>プラットフォーム update 15</td>

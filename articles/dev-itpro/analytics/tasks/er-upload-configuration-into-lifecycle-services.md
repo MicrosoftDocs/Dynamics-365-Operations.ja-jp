@@ -1,28 +1,29 @@
 --- 
-title: "電子申告コンフィギュレーションの Lifecycle Services へのアップロード"
+title: "Lifecycle Services へのコンフィギュレーションの ER アップロード"
 description: "次の手順では、システム管理者または電子申告開発者の役割のユーザーが、新しい電子申告 (ER) コンフィギュレーションを作成し、Microsoft Lifecycle Services (LCS) にアップロードする方法を説明します。"
 author: NickSelin
 manager: AnnBe
-ms.date: 05/13/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ERWorkspace, ERSolutionTable, ERSolutionCreateDropDialog, ERDataModelDesigner, ERDataModelContentsItemCreationDialog, ERSolutionRepositoryTable, ERSolutionRepositoryCreateDropDialog, ERSolutionImport
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 6aa6bf7e08285d18210741ba6618878955009280
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 19ae8820e5d4a798a5789e9632edb431fe9fede4
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 10/16/2018
 
 ---
-# <a name="upload-electronic-reporting-configurations-into-lifecycle-services"></a>電子申告コンフィギュレーションの Lifecycle Services へのアップロード
+# <a name="er-upload-a-configuration-into-lifecycle-services"></a>Lifecycle Services へのコンフィギュレーションの ER アップロード
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -92,6 +93,6 @@ ms.lasthandoff: 08/09/2018
 10. [開く] をクリックします。
     * LCS リポジトリを選択し、開きます。  
     * 選択されたコンフィギュレーションが、選択された LCS プロジェクトの資産として表示されることに注意してください。  
-    * https://lcs.dynamics.com から LCS を開きます。 リポジトリの登録のために以前に使用されたプロジェクトを開きます。このプロジェクトの「アセット ライブラリ」を開き、「GER コンフィギュレーション」資産タイプの中身を展開します – アップロードされた ER コンフィギュレーションが使用可能になります。 プロバイダーがこの LCS プロジェクトにアクセスできる場合は、アップロードされた LCS コンフィギュレーションは別の Microsoft Dynamics 365 for Finance and Operations インスタンスにインポートできることに注意してください。  
+    * https://lcs.dynamics.com から LCS を開きます。 リポジトリの登録のために以前に使用されたプロジェクトを開きます。このプロジェクトの「アセット ライブラリ」を開き、「GER コンフィギュレーション」資産タイプの中身を展開します – アップロードされた ER コンフィギュレーションが使用可能になります。 プロバイダーがこの LCS プロジェクトにアクセスできる場合は、アップロードされた LCS コンフィギュレーションは別の Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition インスタンスにインポートできることに注意してください。  
 
 

@@ -18,10 +18,10 @@ ms.author: jorisde
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 1889c8167339e65fa77bd2e9ad8160b43df4a54f
+ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
+ms.openlocfilehash: 237f8771170a863ca20d713e83caf0921d2a386d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/17/2018
 
 ---
 
@@ -35,7 +35,7 @@ ms.lasthandoff: 08/09/2018
 
 この新機能は、ビルド プロセスにおけるパッケージ作成ステップの新しいオプション パラメーターを公開します。 このパラメーターはビルド変数で管理されるため、簡単に調整できます。
 
-1. Microsoft Visual Studio Team Services (VSTS) で、**ビルドおよびリリース** ページの**ビルド**にある**すべての定義**タブでビルド定義を検索します。 省略記号 (...)、**編集**の順にクリックします。
+1. Microsoft Azure DevOps で、**ビルドおよびリリース** ページの**ビルド**にある**すべての定義**タブでビルド定義を検索します。 省略記号 (...)、**編集**の順にクリックします。
 
     ![ビルド定義を編集](media/builddef_edit.png)
 

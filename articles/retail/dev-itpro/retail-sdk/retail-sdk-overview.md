@@ -18,10 +18,10 @@ ms.author: sijoshi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 276e38dfc8b72bbc5a8b3440c9b9784bcebaf765
+ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
+ms.openlocfilehash: abe276f5af5dbe5cfcb08f023aba62000b06e5e3
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/17/2018
 
 ---
 
@@ -255,7 +255,7 @@ Retail SDK のディレクトリ ツリー全体は、MSBuild トラバーサル
 
 優れた ALM ソリューションは、バージョン管理、ビルド、自動ビルド、プランニング ツール、追跡ツール、ダッシュ ボード、カスタマイズなどを提供します。 Retail SDK は、これらのタスクをサポートするように編成されています。 
 
-[Visual Studio Team Services](/vsts/) は優れたツールであり、推奨されています。
+[Azure DevOps](/Azure DevOps/) は、優れたツールでありお勧めします。
 
 ### <a name="branching-and-versioning"></a>分岐およびバージョン管理
 

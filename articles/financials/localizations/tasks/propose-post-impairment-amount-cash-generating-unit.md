@@ -1,28 +1,29 @@
 --- 
-title: "資産グループの減損損失の提案と転記 (日本)"
+title: "資産グループの減損損失の提案と転記"
 description: "日本では、減損金額の計算後に、その金額を固定資産仕訳帳に提案し転記することができます。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 02/26/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: LedgerJournalTable, LedgerJournalTransAsset
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: f6934e598208cb53f2ab8179cf543abd2ea99061
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: c5c8692381104d2a9beb4ac2ebecaa52cb320d5c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/16/2018
 
 ---
-# <a name="propose-and-post-the-impairment-amount-on-a-cash-generating-unit-japan"></a>資産グループの減損損失の提案と転記 (日本)
+# <a name="propose-and-post-the-impairment-amount-on-a-cash-generating-unit"></a>資産グループの減損損失の提案と転記
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

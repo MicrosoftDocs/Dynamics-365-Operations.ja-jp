@@ -18,10 +18,10 @@ ms.author: tfehr
 ms.search.validFrom: 
 ms.dyn365.ops.version: Platform update 6
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 6b5c2ec1dc19003d752cdb1d9f6ac2cb563d4111
+ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
+ms.openlocfilehash: 9b1f26b8e43738a159045d5f5ed99ee2749474bd
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 09/17/2018
 
 ---
 
@@ -41,7 +41,7 @@ Dynamics 365 for Operations は、開発者の PowerApps ホスト コントロ�
 ツールバー内の特定のボタンを常にオーバーフローで表示するように設計することで、フォーム上に簡潔なアクション ストーリーを提供することができるようになりました。 これにより、ユーザーが頻繁に使用する操作と、まれにしか使用されない操作とを区別することが容易になります。 この機能を利用するには、ツールバー内にあるボタン グループの新しい **AlwaysInOverflow** メタデータ プロパティを試してください。
 
 ## <a name="build-automation---automatic-update-of-model-version-during-build"></a>ビルド自動化 - ビルド中のモデル バージョンの自動更新 ##
-自動ビルド中に、ビルド中のモデルのバージョンが更新され、ビルド番号が反映されます。 これにより、お客様は、Visual Studio Team Services のビルド履歴に戻り、Dynamics 365 for Operations ウィンドウのモデル バージョンをトレースできます。
+自動ビルド中に、ビルド中のモデルのバージョンが更新され、ビルド番号が反映されます。 これにより、お客様は、Azure DevOps のビルド履歴に戻り、Dynamics 365 for Operations ウィンドウのモデル バージョンをトレースできます。
 
 ## <a name="build-automation---option-to-include-runtime-packages-in-the-deployable-package-of-the-automated-build-output"></a>ビルド自動化 - 自動ビルド出力の配置可能パッケージにランタイム パッケージを含めるオプション ##
 ビルド定義の新しいオプションでは、自動ビルドに指示を出して、ビルド出力用に生成された配置可能なパッケージのすべてのソース管理ランタイム パッケージを含めるようにします。 これにより、お客様は、カスタム コードと ISV などのサード パーティが提供するランタイム パッケージの両方が含まれる、自動ビルドによって生成された 1 つのパッケージを展開できます。

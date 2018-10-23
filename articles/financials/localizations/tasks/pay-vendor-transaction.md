@@ -1,28 +1,29 @@
 --- 
-title: "顧客の受取手形の裏書による仕入先トランザクションの支払 (日本)"
+title: "顧客の受取手形の裏書による仕入先トランザクションの支払"
 description: "このタスクは、顧客為替手形の裏書きによる仕入先トランザクションの支払について説明します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: CustBillOfExchangeEndorseListPage, CustBillOfExchangeEndorseToVendor, DimensionLookup, LedgerTransVoucher
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 54e752efd383a6740ec431f371f90091225cef4e
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: a166d6c8e6153fc086a23c03a1ffa6ca07e909ad
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/16/2018
 
 ---
-# <a name="pay-a-vendor-transaction-by-endorsing-a-customer-bill-of-exchange-japan"></a>顧客の受取手形の裏書による仕入先トランザクションの支払 (日本)
+# <a name="pay-a-vendor-transaction-by-endorsing-a-customer-bill-of-exchange"></a>顧客の受取手形の裏書による仕入先トランザクションの支払
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

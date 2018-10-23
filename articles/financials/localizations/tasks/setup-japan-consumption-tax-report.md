@@ -1,28 +1,29 @@
 --- 
-title: "日本の消費税申告の設定 (日本)"
+title: "日本の消費税レポートの設定"
 description: "このタスクでは、日本の消費税申告をサポートするシステムの設定について説明します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 02/15/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: LedgerParameters, LedgerBadDebtAccounts_JP, OMLegalEntity, TaxTable
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 1a1f56b115ec0c6e0eebd02270f2d62c7123f78d
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 277451e505183d0ae2221ac1d5396ce22424d44c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/16/2018
 
 ---
-# <a name="set-up-japan-consumption-tax-report-japan"></a>日本の消費税申告の設定 (日本)
+# <a name="setup-japan-consumption-tax-report"></a>日本の消費税レポートの設定
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

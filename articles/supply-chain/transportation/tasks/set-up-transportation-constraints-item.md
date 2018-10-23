@@ -3,24 +3,25 @@ title: "品目の配送制約の設定"
 description: "この手順では、選択した品目が選択したハブを通じて配送されないよう配送制約を設定します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/07/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: TMSConstraint, InventLocationIdLookup, InventItemIdLookupSimple
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: f2ef71e2d4d8fa0d0af0d8cb076ca59d32934181
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 900ea1476c95d295a151125afe46aebd9642630e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/16/2018
 
 ---
 # <a name="set-up-transportation-constraints-for-an-item"></a>品目の配送制約の設定
@@ -30,7 +31,7 @@ ms.lasthandoff: 09/29/2017
 この手順では、選択した品目が選択したハブを通じて配送されないよう配送制約を設定します。 通常、このタスクを実施するのは、配送コーディネーターです。 デモ データ会社 USMF でこの手順を使うか、または独自のデータを使うことができます。
 
 
-## <a name="create-an-item-constraint"></a>品目制約の作成
+## <a name="create-an-item-constaint"></a>品目制約の作成
 1. [制約] に移動します。
 2. [新規] をクリックします。
 3. [品目の制約] フィールドに値を入力します。

@@ -17,10 +17,10 @@ ms.author: shielas
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 0b10765f7517c183745decf3e1d676487621b563
+ms.sourcegitcommit: 965826f5fddc2f53f33157434929eb265979376e
+ms.openlocfilehash: 827baf656c34b0bdb35ba32d9dca7421df1c23b6
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/17/2018
 
 ---
 
@@ -109,7 +109,7 @@ Talent で、Microsoft はプロセッサとして動作します。 データ �
 管理者は <https://attract.talent.dynamics.com/personreport> を介して Microsoft Dynamics 365 for Talent:Attract および Microsoft Dynamics 365 for Talent: Onboarding で個人データを検索およびエクスポートできます。
 
 ## <a name="additional-resources"></a>その他のリソース
-GDPR の詳細については、[欧州連合の Web サイト](http://europa.eu/) および [Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx) を参照してください。
+GDPR の詳細については、[欧州連合の Web サイト](https://europa.eu/) および [Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx) を参照してください。
 
 
 

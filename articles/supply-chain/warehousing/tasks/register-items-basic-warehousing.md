@@ -1,29 +1,30 @@
 --- 
-title: "品目の着荷仕訳帳を使用した基本倉庫管理に対応した品目の登録"
+title: "品目を使用して、基本倉庫が有効な品目の品目を着荷仕訳帳登録します。"
 description: "この手順では、在庫管理モジュールで、「基本倉庫」を使用する場合に、着荷仕訳帳を使用して品目を登録する方法を示します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: PurchTable, PurchCreateOrder, WMSJournalTable, WMSJournalCreate, PurchEditLines
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 809a1466b0f4674f503bc654175d8f94b37a6508
-ms.openlocfilehash: c7148bd807ef29b0dd89204a0fbe9b8480095aba
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 5c53a38eb6afdf8d3cc1a316c8da5e84549ab60d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 10/16/2018
 
 ---
-# <a name="register-items-for-a-basic-warehousing-enabled-item-using-an-item-arrival-journal"></a>品目の着荷仕訳帳を使用した基本倉庫管理に対応した品目の登録
+# <a name="register-items-for-a-basic-warehousing-enabled-item-using-an-item-an-item-arrival-journal"></a>品目を使用して、基本倉庫が有効な品目の品目を着荷仕訳帳登録します。
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

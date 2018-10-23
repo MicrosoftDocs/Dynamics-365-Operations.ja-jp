@@ -1,28 +1,29 @@
 --- 
-title: "均等償却を使用した一括比例配分減価償却資産の作成 (日本)"
+title: "均等償却を使用した一括比例配分減価償却資産の作成"
 description: "日本では、耐用年数期間中、毎年均等額で減価償却処理される固定資産のタイプが 3 つあります。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 09/22/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: AssetTable, AssetBook, AssetDepreciationProfile
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: e616a35758f2dd8622ac1c210c9cc5d615210aca
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: f9d2d681bbfcd9d3f5968fd7186b59c71d7f8618
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/16/2018
 
 ---
-# <a name="create-lump-sum-depreciation-assets-using-equally-divided-method-japan"></a>均等償却を使用した一括比例配分減価償却資産の作成 (日本)
+# <a name="create-lump-sum-depreciation-assets-using-equally-divided-method"></a>均等償却を使用した一括比例配分減価償却資産の作成
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

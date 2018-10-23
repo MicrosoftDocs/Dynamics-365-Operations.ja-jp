@@ -1,28 +1,29 @@
 --- 
-title: "月次締め請求書の対象とする仕入先マスターおよび発注書の設定 (日本)"
+title: "月次締め請求書の対象にする仕入先マスターおよび発注書の設定"
 description: "日本では通常、仕入先はトランザクションに月次締め請求書を使用します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: VendTable, PurchTable
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: d0ebd974cf9527a8504700dfb7e0aa9360069c2f
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 7cd4ccf22c9625253b2c15113c0f69394e4c4a3a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/16/2018
 
 ---
-# <a name="set-up-vendor-master-and-purchase-order-to-be-target-of-consolidated-invoice-japan"></a>月次締め請求書の対象とする仕入先マスターおよび発注書の設定 (日本)
+# <a name="setup-vendor-master-and-purchase-order-to-be-target-of-consolidated-invoice"></a>月次締め請求書の対象にする仕入先マスターおよび発注書の設定
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

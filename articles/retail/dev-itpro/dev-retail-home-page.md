@@ -18,10 +18,10 @@ ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 771b6c9e1506191ec66bf64ff91a4c6abd31f6aa
+ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
+ms.openlocfilehash: 23d0cb0e427d9ef46ad5a4d88d0a1a7bc681a8c0
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/17/2018
 
 ---
 
@@ -106,7 +106,7 @@ Retail は、Finance and Operations に依存しています。 中核となる[
 ## <a name="retail-sdk"></a>Retail SDK
 - [Retail SDK の概要](retail-sdk/retail-sdk-overview.md)
 - [Retail SDK 小売パッケージ](retail-sdk/retail-sdk-packaging.md)
-- [Retail SDK を継続的ビルド システムと統合 (VSTS)](retail-sdk/integrate-retail-sdk-continuous-build.md)
+- [Retail SDK を継続的ビルド システム (Azure DevOps) と統合](retail-sdk/integrate-retail-sdk-continuous-build.md)
 - [Retail SDK サンプル](retail-sdk/retail-sdk-samples.md)
 - [チャネル データベース (DB) 拡張機能](channel-db-extensions.md) 
 - [CDX の拡張性](cdx-extensibility.md)

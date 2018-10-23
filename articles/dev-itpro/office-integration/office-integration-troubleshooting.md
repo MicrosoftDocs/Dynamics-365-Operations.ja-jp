@@ -3,7 +3,7 @@ title: "Office 統合のトラブルシューティング (タスク ガイド)"
 description: "このトピックでは、Microsoft Office 統合の機能に関する質問、ヒント、およびトラブルシューティング情報への回答を示します。 説明されている質問と問題は、ユーザー、管理、および開発のシナリオにわたっています。"
 author: ChrisGarty
 manager: AnnBe
-ms.date: 03/01/2018
+ms.date: 09/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: c42463631ce1e33673f4f7f32f2e751deadc5425
-ms.openlocfilehash: 6b51af94a2333da664095a507713bd57f2fe3618
+ms.sourcegitcommit: 1aae5797e37b846a38f957b02870e213da528a2d
+ms.openlocfilehash: 1a8fa3fd9f5219145cef775c0d5e13819819256c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 09/20/2018
 
 ---
 
@@ -36,7 +36,7 @@ ms.lasthandoff: 05/23/2018
 
 ### <a name="what-platforms-do-the-office-add-ins-support"></a>Office アドインはどのようなプットフォームをサポートしますか ?
 
-Microsoft Excel アドインと Microsoft Word アドインは、Office Web/JavaScript アドイン フレームワークを使用して構築されます。 このフレームワークは最初は Microsoft Office 2013 用にリリースされましたが、Microsoft Office 2016 では重要な更新が行われました。 詳細については、[Office アドイン ホストおよびプラットフォームの可用性](http://dev.office.com/add-in-availability) を参照してください。 Excel アドインには ExcelAPI 1.2 が必要です。 したがって、Excel アドインをサポートするプラットフォームを判断するには、[[Office アドイン ホストおよびプラットフォームの可用性](http://dev.office.com/add-in-availability)] マトリックスを使用します。 多くのユーザーにとって、語句「Excel 2016 と最新の更新」で十分です。
+Microsoft Excel アドインと Microsoft Word アドインは、Office Web/JavaScript アドイン フレームワークを使用して構築されます。 このフレームワークは最初は Microsoft Office 2013 用にリリースされましたが、Microsoft Office 2016 では重要な更新が行われました。 詳細については、[Office アドイン ホストおよびプラットフォームの可用性](https://dev.office.com/add-in-availability) を参照してください。 Excel アドインには ExcelAPI 1.2 が必要です。 したがって、Excel アドインをサポートするプラットフォームを判断するには、[[Office アドイン ホストおよびプラットフォームの可用性](https://dev.office.com/add-in-availability)] マトリックスを使用します。 多くのユーザーにとって、語句「Excel 2016 と最新の更新」で十分です。
 
 ### <a name="are-the-office-add-ins-safe"></a>Office アドインは安全ですか。
 
@@ -44,7 +44,7 @@ Microsoft Excel アドインと Microsoft Word アドインは、Office Web/Java
 
 ### <a name="does-the-excel-add-in-support-office-for-mac"></a>Excel アドインは Mac のために Office をサポートしますか。
 
-一連番号 Apple Mac および iOS のサポートは、現在開発中です。 Office JavaScript (JS) API は、特に認証に関しては、Apple Safari と Internet Explorer で動作が異なります。 Office JS API のプラットフォーム サポートの詳細については、[Office アドイン ホストおよびプラットフォームの可用性](http://dev.office.com/add-in-availability) を参照してください。
+一連番号 Apple Mac および iOS のサポートは、現在開発中です。 Office JavaScript (JS) API は、特に認証に関しては、Apple Safari と Internet Explorer で動作が異なります。 Office JS API のプラットフォーム サポートの詳細については、[Office アドイン ホストおよびプラットフォームの可用性](https://dev.office.com/add-in-availability) を参照してください。
 
 ### <a name="what-version-of-office-is-required-for-the-excel-add-in-to-support-ad-fs"></a>Excel アドインが AD FS をサポートするために必要な Office のバージョンとは
 
@@ -64,15 +64,15 @@ Excel アドインは、Internet Explorer ウィンドウ内で動作します�
 
 ### <a name="the-excel-add-in-seems-to-be-slow-when-it-publishes-records-how-can-i-learn-more-about-what-is-occurring"></a>レコードを発行するとき、Excel アドインが遅くなったように見えます。 何が起こっているかについてもっと知るにはどうすればいいですか。
 
-Excel アドインが実行する作業のほとんどは、サーバーで発生させる必要があります。 時間が費やされている場所を知るには、[[Fiddler (無償ダウンロード)](http://www.telerik.com/fiddler)] を使用して Excel アドインが期待通りに機能することを確認してください。
+Excel アドインが実行する作業のほとんどは、サーバーで発生させる必要があります。 時間が費やされている場所を知るには、[[Fiddler (無償ダウンロード)](https://www.telerik.com/fiddler)] を使用して Excel アドインが期待通りに機能することを確認してください。
 
 Excel アドインは、公開されているレコードを要求として送信します。 これらのレコードが処理されると、サーバーから応答が送信されます。 次に、Excel アドインは公開するレコードの次のセットを含む別のメッセージを作成し、その要求を送信します。 Excel アドインでは、サーバーからの以前の応答から、サーバーへの次の要求の間での処理時間に 5 から 10 秒を要します。
 
 Excel アドインとサーバー/サービスの処理時間の関係を確認するには、次の手順を実行します。
 
-1. [Fiddler](http://www.telerik.com/fiddler) を起動します。 
+1. [Fiddler](https://www.telerik.com/fiddler) を起動します。 
 2. プロセスをテストするいくつかのレコードを公開します。
-3. Fiddler でその要求と応答を表示できることを確認します ([HTTPS トラフィックが復号化されていることを確認します](http://docs.telerik.com/fiddler/Configure-Fiddler/Tasks/DecryptHTTPS))。
+3. Fiddler でその要求と応答を表示できることを確認します ([HTTPS トラフィックが復号化されていることを確認します](https://docs.telerik.com/fiddler/Configure-Fiddler/Tasks/DecryptHTTPS))。
 4. 多数のレコードを公開します。 
 5. Fiddler では、要求から応答までに必要な時間と、応答から次の要求までに必要な時間を監視します。
 
@@ -155,7 +155,7 @@ Excel へのエクスポート機能は 10,000 レコードに制限されてい
 
 **長期的な修正プログラム:** 2016 年 5 月 10 日にこの問題の長期的な修正プログラムが適切に配置されました。 Office アドインは、Office チームが追加した新しいダイアログ API を使用するようになりました。 
 
-**AD FS をサポートするアドイン アップデートを利用:** すべての Office のインストールは、**ファイル** > **アカウント** > **更新** (Click-to-Run インストールの場合) または Windows Update(MSI インストールの場合) を経由して更新する必要があります。 AD FS ダイアログ API は、5 月の更新プログラムに含められました ([16.0.6868.2060](http://answers.microsoft.com/en-us/office/forum/office_2016-office_install/may-update-16068682060-for-office-2016-on-windows/ea082237-7ec3-4b06-895b-83490980e6d2?auth=1))。 更新プログラムの詳細については、[Office 365 クライアント更新チャンネルのリリース](https://technet.microsoft.com/en-us/office/mt465751?f=255&MSPPError=-2147217396) ページを参照してください。 
+**AD FS をサポートするアドイン アップデートを利用:** すべての Office のインストールは、**ファイル** > **アカウント** > **更新** (Click-to-Run インストールの場合) または Windows Update(MSI インストールの場合) を経由して更新する必要があります。 AD FS ダイアログ API は、5 月の更新プログラムに含められました ([16.0.6868.2060](https://answers.microsoft.com/en-us/office/forum/office_2016-office_install/may-update-16068682060-for-office-2016-on-windows/ea082237-7ec3-4b06-895b-83490980e6d2?auth=1))。 更新プログラムの詳細については、[Office 365 クライアント更新チャンネルのリリース](https://technet.microsoft.com/en-us/office/mt465751?f=255&MSPPError=-2147217396) ページを参照してください。 
 
 Office ビルドが更新されない場合、遅延したトラックにある場合があります ([Microsoft Office 365 ProPlus 更新チャネル オプション](https://technet.microsoft.com/en-us/library/mt455210.aspx))。 この場合、[Office 配置ツールを使用して現在のチャネルに移動する](https://technet.microsoft.com/en-us/library/jj219422.aspx?f=255&MSPPError=-2147217396) を使用するか、最新の更新プログラムがあることを保証するために [Office Insider プログラム](https://products.office.com/en-us/office-insider) にサインアップできます。 また、[Office 2016 の最新バージョンをインストール](https://dev.office.com/docs/add-ins/develop/install-latest-office-version) および [管理者の Office 2016 配置ガイド](https://technet.microsoft.com/en-us/library/cc303401(v=office.16).aspx) を参照してください。 
 
@@ -183,27 +183,27 @@ Office の更新プログラムをインストールできない場合、次の�
 
 読み込みのために次の URL にアクセスします。
 
-- `http://az689774.vo.msecnd.net:443`
+- `https://az689774.vo.msecnd.net:443`
 - `https://az689774.vo.msecnd.net`
-- `http://appsforoffice.microsoft.com:443`
+- `https://appsforoffice.microsoft.com:443`
 - `https://appsforoffice.microsoft.com`
-- `http://secure.aadcdn.microsoftonline-p.com:443`
+- `https://secure.aadcdn.microsoftonline-p.com:443`
 - `https://secure.aadcdn.microsoftonline-p.com`
-- `http://az416426.vo.msecnd.net:443`
+- `https://az416426.vo.msecnd.net:443`
 - `https://az416426.vo.msecnd.net`
-- `http://telemetryservice.firstpartyapps.oaspapps.com:443`
+- `https://telemetryservice.firstpartyapps.oaspapps.com:443`
 - `https://telemetryservice.firstpartyapps.oaspapps.com`
-- `http://nexus.officeapps.live.com:443`
+- `https://nexus.officeapps.live.com:443`
 - `https://nexus.officeapps.live.com`
-- `http://browser.pipe.aria.microsoft.com:443`
+- `https://browser.pipe.aria.microsoft.com:443`
 - `https://browser.pipe.aria.microsoft.com`
 - `http://schemas.microsoft.com`
 
 認証のために次の URL にアクセスします。
 
-- `http://login.windows.net:443`
+- `https://login.windows.net:443`
 - `https://login.windows.net`
-- `http://login.microsoftonline.com:443`
+- `https://login.microsoftonline.com:443`
 - `https://login.microsoftonline.com`
 
 ## <a name="additional-resources"></a>その他のリソース

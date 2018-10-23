@@ -18,10 +18,10 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 96a9075294c1f2a9cfde03be1aaaa26af90de4c2
-ms.openlocfilehash: 024b9d371a5c372525a081f4b5ef3fd71f261e6d
+ms.sourcegitcommit: 92cd1ea0a6ab6039da7074e032e0f78dd7443cba
+ms.openlocfilehash: 7a5c8e4844b575732bf5be7753ef0535fe0822b2
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/04/2018
+ms.lasthandoff: 09/24/2018
 
 ---
 
@@ -128,6 +128,8 @@ GET https://usncax1aos.cloud.onebox.dynamics.com/en/api/connector/dequeue/%7BC03
 ```
 
 クライアントがデータをダウンロードした後、データを受領したものとしてマークすることができるように、受信確認は Finance and Operations に送り返す必要があります。
+
+blob にアップロードされたファイルがない場合、デキュー API はそのことを示す応答を返します。
 
 ### <a name="api-for-acknowledgment"></a>確認の API
 次 の API を使用します。

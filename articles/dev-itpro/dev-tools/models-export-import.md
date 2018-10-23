@@ -3,7 +3,7 @@ title: "モデルのエクスポートとインポート"
 description: "モデル ファイルは顧客およびパートナーにモデルを配布して、開発環境にインストールすることができます。 これらは Lifecycle Services (LCS) ソリューションの主要なコンポーネントです。 モデル ファイルには、モデル記述子ファイル、メタデータ、ソース コード、および参照先の .NET アセンブリ (ある場合) が含まれます。 この記事では、モデルをモデル ファイルにエクスポートし、モデル ファイルをインストールし、開発環境でモデルを削除する方法について説明します。"
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: ccbe900afef83e834ff412bfa0b8d4cb131bb48e
+ms.sourcegitcommit: c59242a350140d4965dd86b8beed4eb18c02cd48
+ms.openlocfilehash: 6914d8c8e2256885dc42342e6b3f2426e4e6d6fc
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 10/01/2018
 
 ---
 
@@ -30,6 +30,7 @@ ms.lasthandoff: 08/09/2018
 [!include [banner](../includes/banner.md)]
 
 モデル ファイルは顧客およびパートナーにモデルを配布して、開発環境にインストールすることができます。 これらは Lifecycle Services (LCS) ソリューションの主要なコンポーネントです。 モデル ファイルには、モデル記述子ファイル、メタデータ、ソース コード、および参照先の .NET アセンブリ (ある場合) が含まれます。 この記事では、モデルをモデル ファイルにエクスポートし、モデル ファイルをインストールし、開発環境でモデルを削除する方法について説明します。
+
 
 <a name="export-a-model-into-a-model-file-for-distribution"></a>モデルを配布用のモデル ファイルにエクスポート
 -------------------------------------------------
@@ -52,6 +53,9 @@ ms.lasthandoff: 08/09/2018
 モデルが開発環境で既に存在する場合、**-削除**指令を使用し、それを最初に削除する必要があります。
 
     ModelUtil.exe -delete -metadatastorepath=[path of the metadata store] -modelname=[name of the model to delete]
+    
+> [!NOTE]
+> 以前のバージョンを使用している場合、-replace パラメーターを使用して、オーバーレイヤー用の標準モデル (Foundation など) を置き換えることができます。    
 
 ## <a name="resolve-conflicts"></a>競合を解決
 モデルを開発環境にインストールするときに、環境開発にそのモデルへのカスタマイズが含まれている場合、コードまたはメタデータの競合を解決する必要がある場合があります。 開発ツールを使用すると、競合しているすべての品目をグループ化するプロジェクトを作成することができます。

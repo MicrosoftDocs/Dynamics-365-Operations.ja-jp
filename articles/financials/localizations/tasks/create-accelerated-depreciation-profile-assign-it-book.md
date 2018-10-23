@@ -1,28 +1,29 @@
 --- 
-title: "増加償却プロファイルの作成および帳簿への割り当て (日本)"
+title: "加速減価償却プロファイルを作成し、帳簿に割り当てる"
 description: "日本では、ほかの減価償却方法と同様、加速償却に減価償却プロファイルが必要です。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 09/22/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: AssetDepreciationProfile, AssetBookTable
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 1ed5aa5b92f07c064c970d5c42896e95f6c0836a
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 18c182b85821376193ecea5e1edb3b9be2e88f24
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/16/2018
 
 ---
-# <a name="create-an-accelerated-depreciation-profile-and-assign-it-to-book-japan"></a>増加償却プロファイルの作成および帳簿への割り当て (日本)
+# <a name="create-accelerated-depreciation-profile-and-assign-it-to-book"></a>加速減価償却プロファイルを作成し、帳簿に割り当てる
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

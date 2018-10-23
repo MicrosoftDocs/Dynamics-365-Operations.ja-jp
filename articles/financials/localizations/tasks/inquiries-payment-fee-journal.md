@@ -1,28 +1,29 @@
 --- 
-title: "仕訳帳の支払手数料の照会 (日本)"
+title: "仕訳帳の支払手数料の照会"
 description: "このタスクでは、仕訳帳の支払手数料の集計を表示する方法について説明します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: LedgerJournalTable, LedgerJournalTransVendPaym, VendPaymentFeeSummary_JP
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 2058b641ffe1af2b713a3ab548c128a218131c1b
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: bb9f5f4b87fdff12dcc0666f28900732b0c44c9c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/16/2018
 
 ---
-# <a name="inquire-on-payment-fees-in-a-journal-japan"></a>仕訳帳の支払手数料の照会 (日本)
+# <a name="inquiries-of-payment-fee-on-journal"></a>仕訳帳の支払手数料の照会
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

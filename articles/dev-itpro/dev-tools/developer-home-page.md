@@ -1,5 +1,5 @@
 ---
-title: "Visual Studio を使用して開発およびカスタマイズ"
+title: "開発およびカスタマイズ"
 description: "このトピックでは、開発に関するトピックへのリンクを提供します。"
 author: RobinARH
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 1fbfa3ba4f7a4a7c8bfecc982666f81eadfa9c2d
+ms.sourcegitcommit: 84ae968e4f0e309c6cb841c4d63ee92c7676bfab
+ms.openlocfilehash: 0de1e48aa9fbabdcd711aabded726066f9e341b1
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 10/05/2018
 
 ---
 
-# <a name="develop-and-customize-by-using-visual-studio"></a>Visual Studio を使用して開発およびカスタマイズ
+# <a name="develop-and-customize"></a>開発およびカスタマイズ 
 
 [!include [banner](../includes/banner.md)]
 
@@ -51,8 +51,8 @@ Microsoft Dynamics 365 for Finance and Operations は、Microsoft から提供�
 -   [開発システム要件](development-system-requirements.md)
 -   [削除予定の機能](../migration-upgrade/deprecated-features.md)
 -   [非推奨 API's](../migration-upgrade/deprecated-apis.md)
--   [Visual Studio Team Services の名前を変更し、コンピューターを再起動する](../migration-upgrade/vso-machine-renaming.md)
--   [Visual Studio Team Services の概要 (ビデオ)](http://channel9.msdn.com/Events/Build/2014/2-575)
+-   [Azure DevOps の名前を変更し、コンピューターを再起動する](../migration-upgrade/vso-machine-renaming.md)
+-   [Azure DevOps の概要 (ビデオ)](http://channel9.msdn.com/Events/Build/2014/2-575)
 <!-- [Learn about packages, models and Visual Studio (Office Mix)](https://mix.office.com/watch/ies6lyit6773)-->
 <!-- [Development tools performance tips (Office Mix)](https://mix.office.com/watch/rnp6ng9wu8kx)-->
 <!-- [Feedback and support (Office Mix)](https://mix.office.com/watch/92azzna59jj6)-->
@@ -87,7 +87,7 @@ Microsoft Dynamics 365 for Finance and Operations は、Microsoft から提供�
 -   [新しいユーザー アカウントを開発 VM で開発できるようにする](enable-development-machine.md)
 -   [Visual Studio 開発ツールの更新](update-development-tools.md)
 -   [管理者のアクセスを許可しない仮想マシンに関するよく寄せられる質問](../sysadmin/VMs-no-admin-access.md)
-<!--  [Configure version control with VSTS (Office Mix)](https://mix.office.com/watch/1ftubtqzp3xxl)-->
+<!--  [Configure version control with Azure DevOps (Office Mix)](https://mix.office.com/watch/1ftubtqzp3xxl)-->
 
 ## <a name="x-programming-language"></a>X++ プログラミング言語
 ### <a name="tutorials"></a>チュートリアル

@@ -18,10 +18,10 @@ ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 3ff0587a8cfe8ad3d96301c7474759500f1d2cc4
+ms.sourcegitcommit: b40fa2f3b6afbbc26e58de930647bbf7c24dc9ba
+ms.openlocfilehash: aa1c3e419edd33e814cd1bff9e086542da4e4eec
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/17/2018
 
 ---
 
@@ -34,10 +34,10 @@ ms.lasthandoff: 08/09/2018
 
 テクニカル サポートの設定をする前に、Microsoft Azure Active Directory (Azure AD) アカウントを取得する必要があります。 このアカウントは、Microsoft Dynamics 365 for Finance and Operations のサブスクリプション設定時に作成されます。
 
-## <a name="create-a-visual-studio-team-services-project"></a>Visual Studio Team Services プロジェクトの作成
-Lifecycle Services (LCS) プロジェクトの **サポート** タイルは、Microsoft Visual Studio Team Services (VSTS) を使用し、クライアントを通じて送信された問題と、LCS の **サポート** タイルから手動で作成された問題を格納します。 この機能を使用するには、サポートに使用する LCS プロジェクトで VSTS プロジェクトを設定する必要があります。 **サポート**タイルを使用して問題を提出する必要があるすべてのユーザーは、VSTS プロジェクトにアクセスできる必要があり、LCS が VSTS に自身が代わってアクセスできるようにする必要があります。 ほとんどのユーザーは、LCS または VSTS へのアクセス権がありません。 したがって、VSTS プロジェクトでは、問題を提出するために使用できる特別なシステム アカウントを作成する必要があります。
+## <a name="create-an-azure-devops-project"></a>Azure DevOps プロジェクトの作成
+Lifecycle Services (LCS) プロジェクトの **サポート** タイルは、Azure DevOps を使用し、クライアントを通じて送信された問題と、LCS の **サポート** タイルから手動で作成された問題を格納します。 この機能を使用するには、サポートに使用する LCS プロジェクトで Azure DevOps プロジェクトを設定する必要があります。 **サポート**タイルを使用して問題を提出する必要があるすべてのユーザーは、Azure DevOps プロジェクトにアクセスできる必要があり、LCS が Azure DevOps に自身が代わってアクセスできるようにする必要があります。 ほとんどのユーザーは、LCS または Azure DevOps へのアクセス権がありません。 したがって、Azure DevOps プロジェクトでは、問題を提出するために使用できる特別なシステム アカウントを作成する必要があります。
 
-### <a name="create-a-new-vsts-project"></a>新しい VSTS プロジェクトの作成
+### <a name="create-a-new-azure-devops-project"></a>新しい Azure DevOps プロジェクトの作成
 
 1.  <https://www.visualstudio.com/> に移動します。
 2.  右上隅にある**サインイン**をクリックします。
@@ -46,10 +46,10 @@ Lifecycle Services (LCS) プロジェクトの **サポート** タイルは、M
 5.  アカウント URL を指定し、**アカウントの作成** をクリックします。
 6.  プロジェクトに名前を付け、プロセス テンプレートを指定します。 これで、プロジェクトが作成されます。
 
-### <a name="add-users-to-the-vsts-project"></a>VSTS プロジェクトへのユーザーの追加
+### <a name="add-users-to-the-azure-devops-project"></a>Azure DevOps プロジェクトへのユーザーの追加
 
 1.  左上にある **Team Services** をクリックします。
-2.  **ユーザー**タブで、**追加**をクリックし、サポート エクスペリエンスを使用するユーザーを VSTS アカウントに招待します。 招待する各ユーザーについては、**基本**または**利害関係者**のいずれかを選択します。
+2.  **ユーザー**タブで、**追加**をクリックし、サポート エクスペリエンスを使用するユーザーを Azure DevOps アカウントに招待します。 招待する各ユーザーについては、**基本**または**利害関係者**のいずれかを選択します。
 3.  左上にある **Team Services** をクリックします。
 4.  **参照**をクリックし、以前の手順で作成されたプロジェクトを参照します。
 5.  プロジェクトのホーム ページの**メンバー** セクションで、**追加**をクリックして手順 2 で招待したユーザーを追加します。
@@ -78,13 +78,13 @@ Lifecycle Services (LCS) プロジェクトの **サポート** タイルは、M
 ## <a name="configure-lcs"></a>LCS の構成
 1.  Finance and Operations が配置された LCS プロジェクトの **所有者** ロールを持っているアカウントを使用して、LCS にサインインします。
 2.  LCS でプロジェクトを開きます。
-3.  **プロジェクト設定**をクリックし、**Visual Studio Team Services** のリンク をクリックします。
+3.  **プロジェクト設定** をクリックし、**Azure DevOps** リンクをクリックします。
 
     [![LCS-Project-Tiles](./media/lcs-project-tiles-237x300.png)](./media/lcs-project-tiles.png)
     [![LCS-Project-Settings-VSO](./media/lcs-project-settings-vso-1024x320.png)](./media/lcs-project-settings-vso.png)
 
-4.  **Visual Studio Team Services の設定** をクリックします。
-5.  **Visual Studio Team Services サイトの URL** フィールドに、前のセクションで作成した VSTS プロジェクトの URL を入力します。
+4.  **Azure DevOps の設定** をクリックします。
+5.  **Azure DevOps サイトの URL** フィールドに、前のセクションで作成した Azure DevOps プロジェクトの URL を入力します。
 6.  **個人用アクセス トークン** フィールドに、前のセクションで作成した個人用アクセス トークンを入力します。 [![LCS-Project-Settings-VSO-Setup-1](./media/lcs-project-settings-vso-setup-1.png)](./media/lcs-project-settings-vso-setup-1.png)
 7.  **続行** をクリックします。
 8.  使用する VSO プロジェクトを選択し、**続行** をクリックします。
@@ -97,7 +97,7 @@ Lifecycle Services (LCS) プロジェクトの **サポート** タイルは、M
 ## <a name="create-an-issue-in-the-finance-and-operations-client-microsoft-dynamics-ax-70-dynamics-ax-platform-update-1-or-update-2-or-finance-and-operations-platform-update-3"></a>Finance and Operations のクライアント (Microsoft Dynamics AX 7.0、Dynamics AX プラットフォーム更新プログラム 1 または更新プログラム 2、または Finance and Operations プラットフォーム更新プログラム 3) に問題を作成する
 Finance and Operations プラットフォーム更新プログラム 4 を使用している場合、またはプラットフォーム更新プログラム 3 の KB 4010473 を消費した場合、次のセクションをスキップします。
 
-**重要:** オンプレミス配置の Finance and Operations の場合、既存の問題を検索し、オンプレミスの Dynamics 365 for Finance and Operations から Visual Studio Team Services プロジェクトにサポート インシデントを送信するオプションは使用できません。
+**重要:** オンプレミス配置の Finance and Operations の場合、既存の問題を検索し、オンプレミスの Dynamics 365 for Finance and Operations から Azure DevOps プロジェクトにサポート インシデントを送信するオプションは使用できません。
 
 1.  クライアントで、右上隅の**ヘルプ** メニューまたは疑問符アイコンをクリックします。 [![AX7-help-Contact\_Your\_Support](./media/ax7-help-contact_your_support1.png)](./media/ax7-help-contact_your_support1.png)
 2.  **サポート チームに連絡してください**をクリックします。
@@ -115,7 +115,7 @@ LCS に問題が送信されたことを示す確認メッセージが表示さ�
 ## <a name="create-an-issue-in-the-finance-and-operations-client-finance-and-operations-platform-update-4-and-platform-update-3-kb-4010473"></a>Finance and Operations のクライアントで問題を作成する (Finance and Operations プラットフォームのアップデート 4 およびプラットフォームのアップデート 3 KB 4010473)
 Finance and Operations のプラットフォーム更新プログラム 4 を使用しない場合、またはプラットフォーム更新プログラム 3 の KB 4010473 を消費していない場合は、前のセクションの手順を実行します。 Microsoft によって公開されている更新プログラムを表示するため、サポート エクスペリエンスが更新されました。 クライアントの上部バーで、**?** をクリックしてから**サポート**をクリックします。 
 
-**重要:** オンプレミス配置の Finance and Operations の場合、既存の問題を検索し、オンプレミスの Dynamics 365 for Finance and Operations から Visual Studio Team Services プロジェクトにサポート インシデントを送信するオプションは使用できません。
+**重要:** オンプレミス配置の Finance and Operations の場合、既存の問題を検索し、オンプレミスの Dynamics 365 for Finance and Operations から Azure DevOps プロジェクトにサポート インシデントを送信するオプションは使用できません。
 
 [![wiki1](./media/wiki1-1024x518.png)](./media/wiki1.png) 
 
@@ -132,15 +132,15 @@ LCS に接続した後は、既存の Microsoft 更新プログラムおよび�
 割り当てられた職務に基づいて、**ダウンロード表示**または **要求表示**が表示されます。 
 - **ダウンロード表示** - 既定では、この表示はシステム管理者のみが利用できます。 このビューから、直接修正プログラムをダウンロードできます。 
 **注記:** 職務 **DownloadHotfix** は、修正プログラムを要求するのではなく、LCS から直接ダウンロードする機能を制御します。 既定では、システム管理者のみそのアクセス権があります。 この職務権限をシステム管理者以外のユーザーに割り当てる場合は、職務権限を選択したロールに追加します。 
-- **要求表示** - 既定では、システム管理者ではないすべてのユーザーがこのビューを使用できます。 このビューから、修正プログラムのダウンロードを要求できます。 修正プログラムをダウンロードする要求を送信した後は、LCS プロジェクトに関連付けられている VSTS プロジェクトに作業項目が作成されます。 顧客の IT 管理者は、LCS の **サポート** タイルをクリックし、**修正プログラムの要求** タブをクリックして、要求したすべての修正プログラムを表示できます。
+- **要求表示** - 既定では、システム管理者ではないすべてのユーザーがこのビューを使用できます。 このビューから、修正プログラムのダウンロードを要求できます。 修正プログラムをダウンロードする要求を送信した後は、LCS プロジェクトに関連付けられている Azure DevOps プロジェクトに作業項目が作成されます。 顧客の IT 管理者は、LCS の **サポート** タイルをクリックし、**修正プログラムの要求** タブをクリックして、要求したすべての修正プログラムを表示できます。
 
-### <a name="search-for-project-work-items-in-visual-studio-team-services-vsts"></a>Visual Studio Team Services (VSTS) で、プロジェクトの作業項目を検索
+### <a name="search-for-project-work-items-in-azure-devops"></a>Azure DevOps で、プロジェクトの作業項目を検索
 
-Visual Studio Team Services (VSTS) 管理者は、**#SearchableInFinanceAndOperations** を作業項目にタグ付けすることによって、プロジェクトの作業項目を組織のユーザーに発行することができます。 タグ付けされた作業項目は、クライアント サポート検索ボックスからユーザーに対して検索可能になります。 検索結果には、Microsoft が公開した更新プログラムや修正プログラムに加えて、タグ付きの VSTS 作業項目が含まれます。 次のグラフィックは、公開用のタグ付きの VSTS 作業項目を示しています。
+Azure DevOps 管理者は、**#SearchableInFinanceAndOperations** を作業項目にタグ付けすることによって、プロジェクトの作業項目を組織のユーザーに発行することができます。 タグ付けされた作業項目は、クライアント サポート検索ボックスからユーザーに対して検索可能になります。 検索結果には、Microsoft が公開した更新プログラムや修正プログラムに加えて、タグ付きの Azure DevOps 作業項目が含まれます。 次のグラフィックは、公開用のタグ付きの Azure DevOps 作業項目を示しています。
 
 [![vstsTag](./media/VSTS%20Tagging.png)](./media/VSTS%20Tagging.png)
 
-サポート検索ボックスを使用して公開済みの VSTS 作業項目を検索するとき、検索結果は、新しいブラウザー タブに **表示** モードで、作業項目のタイプ、タイトル、状態、および説明が表示されます。  適切なアクセス許可を持つユーザーが、Visual Studio Team Services の作業項目を編集できます。 次のグラフィックは、公開された VSTS 作業項目の検索結果を示しています。
+サポート検索ボックスを使用して公開済みの Azure DevOps 作業項目を検索するとき、検索結果は、新しいブラウザー タブに **表示** モードで、作業項目のタイプ、タイトル、状態、および説明が表示されます。  適切なアクセス許可を持つユーザーが、Azure DevOps の作業項目を編集できます。 次のグラフィックは、公開された Azure DevOps 作業項目の検索結果を示しています。
 
 [![ViewVSTS](./media/ViewVSTSItem.png)](./media/ViewVSTSItem.png)
 
@@ -151,7 +151,7 @@ Visual Studio Team Services (VSTS) 管理者は、**#SearchableInFinanceAndOpera
 
 ## <a name="work-with-issues-in-lcs"></a>LCS での問題についての作業
 ### <a name="view-issues"></a>問題の表示
-LCS **サポート** タイルでは、問題が LCS プロジェクトに関連付けられている VSTS プロジェクトで作業項目として保存されます。 具体的には、問題は、VSTS プロジェクトのタイプに応じて **問題** または **懸案事項** の作業項目として **AxAndLcsGeneratedIssues** 領域に保存されます。 その地域にあるタイプの作業項目のすべてが、**サポート**タイルの問題リストに含まれます。 VSTS で問題点が変更されると、サポート案件で変更内容が反映されます。 問題は、VSTS プロジェクト内のユーザーに割り当てることができます。 ユーザーは、VSTS で案件を取り扱うために、LCS にアクセスする必要はありません。
+LCS **サポート** タイルでは、問題が LCS プロジェクトに関連付けられている Azure DevOps プロジェクトで作業項目として保存されます。 具体的には、問題は、Azure DevOps プロジェクトのタイプに応じて **問題** または **懸案事項** の作業項目として **AxAndLcsGeneratedIssues** 領域に保存されます。 その地域にあるタイプの作業項目のすべてが、**サポート**タイルの問題リストに含まれます。 Azure DevOps で問題点が変更されると、サポート案件で変更内容が反映されます。 問題は、Azure DevOps プロジェクト内のユーザーに割り当てることができます。 ユーザーは、Azure DevOps で案件を取り扱うために、LCS にアクセスする必要はありません。
 
 1.  [lcs.dynamics.com,](https://lcs.dynamics.com/en/) に移動しサインインします。
 2.  払出を表示する環境に関連付けられている LCS プロジェクトを開きます。
@@ -160,11 +160,11 @@ LCS **サポート** タイルでは、問題が LCS プロジェクトに関連
 
 ### <a name="edit-issues"></a>項目を編集
 1.  **問題**グリッドで、問題のタイトルをクリックします。
-2.  このトピックの最初のセクションで設定した VSTS プロジェクトへのアクセス権を持つアカウントを使用して、Visual Studio チーム サービスへログインし、**Visual Studio チーム サービス プロジェクトを作成**します。 
+2.  このトピックの最初のセクションで設定した Azure DevOps プロジェクトへのアクセス権を持つアカウントを使用して、Azure DevOps へログインし、**Azure DevOps プロジェクトを作成**します。 
 
-**注記:** VSTS には、サインインが必要な場合に作業項目を編集するためのリンクが正しく機能しないという問題があります。 VSTS にログインした後に**自分自身に割り当て**クエリが表示された場合、LCS に戻って、問題グリッドで問題のタイトルをもう一度クリックします。
+**注記:** Azure DevOps には、サインインが必要な場合に作業項目を編集するためのリンクが正しく機能しないという問題があります。 Azure DevOps にログインした後に**自分自身に割り当て**クエリが表示された場合、LCS に戻って、問題グリッドで問題のタイトルをもう一度クリックします。
 
-3.  VSTS エディターが開きます。 問題点を編集し、変更を保存します。 変更は**サポート** タイルに反映されます。
+3.  Azure DevOps エディターが開きます。 問題点を編集し、変更を保存します。 変更は**サポート** タイルに反映されます。
 
 ### <a name="troubleshoot-issues"></a>問題のトラブルシューティング
 **注記:** このセクションの情報は、オンプレミスの配置には適用されません。

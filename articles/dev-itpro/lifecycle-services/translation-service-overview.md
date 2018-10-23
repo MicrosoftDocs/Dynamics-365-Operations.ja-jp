@@ -1,15 +1,15 @@
 ---
 title: "Microsoft Dynamics 365 翻訳サービス"
 description: "このトピックでは、Microsoft Dynamics 365 Translation Service (DTS) について説明します。 DTS はパートナーおよび ISV がソリューションの翻訳またはサポートされている Microsoft Dynamics 製品に新しい言語を追加するときにエクスペリエンスを向上するために設計されています。"
-author: kfend
+author: ejcho
 manager: AnnBe
-ms.date: 09/27/2017
+ms.date: 09/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 6154
 ms.assetid: ejchoGIT
@@ -18,10 +18,10 @@ ms.author: ejchoGIT
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 92a2a05bb5028005f277384feb1e7496cebafd49
+ms.sourcegitcommit: 8584119ed4be1e1ad21530b72d17d30150f10612
+ms.openlocfilehash: 264bac810fb20417874727157069b188c3edad01
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/13/2018
 
 ---
 
@@ -51,7 +51,7 @@ DTS では、現在次の製品バージョンがサポートされています�
 | Microsoft Dynamics AX 2012 | すべてのバージョン | .ktd、.ald | .docx | |
 | Microsoft Dynamics 365 for Finance and Operations | すべてのバージョン | .label.txt | .docx | |
 | Microsoft Dynamics 365 for Retail | すべてのバージョン | .label.txt | .docx | |
-| Microsoft Dynamics CRM | 2011–2016 | .resx、.js | .docx | |
+| Microsoft Dynamics CRM | 2011–2016 | .resx | .docx | |
 | Microsoft Dynamics NAV | 2015–2018 | .etx、.stx、.resx、.txt、.xml、.xlf | .docx | NAV 固有の形式は、.txt、.xml、.xlf ファイルに使用されます。 |
 
 ## <a name="accessing-dts"></a>DTS へのアクセス
@@ -90,16 +90,6 @@ DTS には 2 つのプレビュー機能があります。
 
 + **Dynamics 365 翻訳サービス - ドキュメント翻訳サポート** - 製品またはソリューションのドキュメント (たとえば、Microsoft Word 文書など) を翻訳する場合は、この機能を有効にする必要があります。
 + **NAV 製品使用可能性** – NAV 製品の LCS プロジェクトを作成し、プロジェクト内から DTS にアクセスするには、この機能を有効にする必要があります。
-
-
-製品名 |  バージョン |   サポートされているファイル形式 | 注記
---- | --- | --- | ---
-**Dynamics AX 2012**    | すべてのバージョン  | .ktd、.ald    |
-**Dynamics 365 for Finance and Operations** | すべてのバージョン |    .label.txt  |
-**Dynamics 365 for Retail** | すべてのバージョン | .label.txt |
-**Dynamics CRM**    | 2011-2016 |   .resx、.js  |
-**Dynamics NAV** | 2015-2018    | .etx、.stx、.resx、.txt、.xml、.xlf | .txt、.xml、.xlf は NAV 固有の形式
-
 
 ## <a name="glossary"></a>用語集
 

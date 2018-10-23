@@ -16,10 +16,10 @@ ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: a00bf421d6829c68e000ebe2d149b80b9329d949
+ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
+ms.openlocfilehash: f15966617025a6ba6a96c7953fcee3aac0a0e9dd
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/17/2018
 
 ---
 
@@ -48,7 +48,7 @@ Microsoft Dynamics サービス エンジニアリング (DSE) チームによ�
 - 統合は各 LCS プロジェクトで構成される必要があります。
 - 各 LCS プロジェクトには、個別の自分のデータベースの持ち込み (BYOD) インスタンスが必要です。
 - コードが同じ場合でも、各インスタンスでユーザー受け入れテスト (UAT) を行う必要があります。 コード ベースを共有している場合でも、LCS のプロジェクト間で誤差が発生する可能性があるため、各インスタンスに UAT が必要です。 差異の 1 つのソースは LCS プロジェクトごとに個別に実行する必要がある統合設定および BYOD コンフィギュレーションであるため、各 LCS プロジェクトでテストする必要があります。 さらに、地域ごとに違うアプリケーション構成が機能に影響する可能性があったり、別のデータ センターが別の Azure サービスのセットをサポートしたりなど、様々なデータ バリエーションがあります。
-- 各 LCS プロジェクトで、Microsoft Visual Studio チーム サービス (VSTS) が構成される必要があります。 カスタマイズとコードを共有する場合、同じ VSTS プロジェクトを使用することが理にかなっています。
+- Microsoft Azure DevOps は、各 LCS プロジェクトで構成される必要があります。 カスタマイズとコードを共有する場合、同じ Azure DevOps プロジェクトを使用することが理にかなっています。
 
 ## <a name="advantages-of-multiple-lcs-projects"></a>複数の LCS プロジェクトの利点
 複数の LCS プロジェクトを持つことにも利点があります。 次にそのいくつかを挙げます。

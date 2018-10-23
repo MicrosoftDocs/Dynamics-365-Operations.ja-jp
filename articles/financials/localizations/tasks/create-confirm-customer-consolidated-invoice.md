@@ -1,28 +1,29 @@
 --- 
-title: "顧客月次締め請求書の作成および確認 (日本)"
+title: "顧客月次締め請求書の作成および確認"
 description: "日本では、その月の販売請求書および仕入請求書は、未払金額を計算するため月末に連結されます。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 09/16/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: CustConsInvoice_JP
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 3c01589e55d3c02ab168028757672f8352bfe18f
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 70d6dce40bce225ef24d5aeb5e2e074259e16477
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/16/2018
 
 ---
-# <a name="create-and-confirm-a-customer-consolidated-invoice-japan"></a>顧客月次締め請求書の作成および確認 (日本)
+# <a name="create-and-confirm-a-customer-consolidated-invoice"></a>顧客月次締め請求書の作成および確認
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

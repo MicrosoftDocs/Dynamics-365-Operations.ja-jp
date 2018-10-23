@@ -1,29 +1,30 @@
 --- 
-title: "複数レベル構造を使用した BOM の計算 (2016 年 2 月のみ)"
+title: "複数レベル構造を使用した BOM の計算 (2016 年 2 月)"
 description: "この手順は、原価表に基づく複数レベル展開を使用して、完成品のコストを計算する方法を示します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 02/07/2017
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: EcoResProductDetailsExtended, InventItemPrice, BOMCalcDialog, BOMCalcTrans
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 16c2cacaf70df5455c3ed49b8dcb5756e89f8cb8
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: fcc1248d64145c10f1c67bfac49c053e99dc1598
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/16/2018
 
 ---
-# <a name="calculate-a-bom-by-using-a-multilevel-structure-february-2016-only"></a>複数レベル構造を使用した BOM の計算 (2016 年 2 月のみ)
+# <a name="calculate-a-bom-by-using-a-multilevel-structure-february-2016"></a>複数レベル構造を使用した BOM の計算 (2016 年 2 月)
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

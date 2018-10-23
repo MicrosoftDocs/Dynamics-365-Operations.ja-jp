@@ -3,7 +3,7 @@ title: "オンプレミス配置のトラブルシューティング"
 description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations のオンプレミス配置のトラブルシューティング情報を提供します。"
 author: sarvanisathish
 manager: AnnBe
-ms.date: 05/15/2018
+ms.date: 09/17/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: sarvanis
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
 ms.translationtype: HT
-ms.sourcegitcommit: ce9c24a0a89dd4e6a0f3f2c7789b4f553d88d412
-ms.openlocfilehash: 352c4a8a58beeaa0f26f6a6119a7c23c3fb0567b
+ms.sourcegitcommit: 965826f5fddc2f53f33157434929eb265979376e
+ms.openlocfilehash: 5bf8834a83a5f6488286bae05d80826f6a3ac558
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
+ms.lasthandoff: 09/17/2018
 
 ---
 # <a name="troubleshoot-on-premises-deployments"></a>オンプレミス配置のトラブルシューティング
@@ -75,6 +75,17 @@ Service Fabric Explorer でローカル エージェントなどのステート�
 - AX-SetupModuleEvents 
 - AX-SetupInfrastructureEvents 
 - AX-BridgeService 
+
+Dynamics エントリを確認するためのイベント ビューアーのヒント: イベント ビューアーで、**カスタム表示** を右クリックし、**カスタム表示の作成** を選択します。
+
+![カスタム表示の作成](media/Create-Custom-View.png)
+
+イベント ログ ドロップダウン リストを選択し、図のように **Dynamics** を選択します。
+
+![Dynamics の選択](media/Select-Dynamics.png)
+
+
+**カスタム表示** で **管理イベント** も確認してください。
 
 ### <a name="service-fabric-explorer"></a>Service Fabric Explorer
 クラスタ、アプリケーション、およびノードの状態に注意してください。 Service Fabric Explorer にアクセスする方法については、[Service Fabric Explorer にアクセスする](troubleshoot-on-prem.md#access-service-fabric-explorer)を参照してください。
@@ -227,7 +238,6 @@ Service Fabric クラスターを完全に削除するには、以下の手順�
 
 ```powershell
 LocalAgentCLI.exe Install <path of localagent-config.json>
-LocalAgentCLI.exe Upgrade <path of localagent-config.json>
 LocalAgentCLI.exe Cleanup <path of localagent-config.json>
 ```
 
@@ -294,6 +304,20 @@ LocalAgentCLI.exe Cleanup <path of localagent-config.json>
 6. 新しい構成ファイルを使用してもう一度ローカル エージェントをインストールします。
 
 ### <a name="error"></a>エラー
+
+**エラー:** パッケージに指定された資格情報が認識されませんでした。
+
+**理由:** ACL が証明書で正しく定義されていません。
+
+**ステップ:** サービス中、"資産をダウンロードすることができません..." エラーが表示され、詳細に "パッケージに指定された資格情報が認識されませんでした" と表示された場合、ACL がオーケストレータ コンピューター上のクライアント証明書から削除されたかどうかを確認します。 
+
+確認するには、オーケストレータ コンピューターで次のスクリプトを実行し、ACL を確認します。
+- .\Test-D365FOConfiguration.ps1
+
+解決するには、次のスクリプトを実行してリセットします。
+- .\Set-CertificateAcls.ps1
+
+### <a name="error"></a>エラー
 **エラー:**
 
 > パス '\\...\\agent\\assets\\StandAloneSetup-76308-1.zip' へアクセスすることは、拒否されます。
@@ -321,6 +345,13 @@ LocalAgentCLI.exe Cleanup <path of localagent-config.json>
 6. 新しい構成ファイルを使用してもう一度ローカル エージェントをインストールします。
 
 ### <a name="error"></a>エラー
+**エラー:** コマンドの抽出セットアップ フォルダーを取得できません
+
+**理由:** ファイル共有が削除または変更されました。 サービス操作を実行する場合、"コマンドの抽出設定フォルダーを取得できません" エラーが表示されます。 
+
+**ステップ:** 設定先のファイル共有を確認するには、SQL Server Management Studio に移動し、オーケストレータ データベースでクエリ select * from OrchestratorCommandArtifact where CommandId = ‘xxx’ を実行します。
+
+### <a name="error"></a>エラー
 **エラー:**
 
 > ユーザー 'D365\\svc-LocalAgent$' へのログインが失敗しました。 理由: 指定した名前に一致するログインが見つかりませんでした。 \[CLIENT: 10.0.2.23\]
@@ -344,6 +375,17 @@ LocalAgentCLI.exe Cleanup <path of localagent-config.json>
 上記の手順で問題が解決しない場合は、SQL Server インスタンスとデータベースからローカル エージェント ユーザーを手動で削除し、Initialize-Database スクリプトを再実行します。
 
 AD DS でユーザーを再作成する場合、SID が変更されることに注意してください。 この場合、ユーザーの以前の SID を削除し、新しい SID を追加します。
+
+### <a name="error"></a>エラー
+
+**エラー:** データベースを移行できません
+
+**ステップ:**  
+- SQL Server リスナーへのアクセスがあることを確認します。
+- テストする場合、空白のオーケストレーター データベースでやり直すことができます。
+
+### <a name="issue"></a>問題
+[データベースの構成](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#configuredb)手順を実行するとき、SQL Server が名前付きインスタンスの場合は、パラメーター -DatabaseServer [FQDN/Instancename] を使用してください。
 
 ### <a name="issue"></a>問題
 ローカル エージェント ユーザーは、SQL Server インスタンスまたはデータベースに接続できません。
@@ -424,29 +466,6 @@ Get-ServiceFabricClusterUpgrade
 
 ## <a name="what-cluster-id-should-be-used-in-the-agent-configuration"></a>エージェント コンフィギュレーションでどのようなクラスター ID を使用する必要がありますか。
 クラスタ ID は、任意のグローバル一意識別子 (GUID) です。 この GUID は、追跡目的で使用されます。
-
-## <a name="the-local-agent-stops-working-after-the-tenant-for-the-project-from-lcs-is-changed"></a>ローカル エージェントは、LCS からのプロジェクトのテナントが変更されると作業を停止します
-更新されたテナントでローカル エージェントを構成するには、次の手順を実行します。
-
-1. 既にコネクタがインストールされている LCS からすべての環境を削除します。
-2. ローカル エージェントをアンインストールします。
-
-    ```powershell
-    .\LocalAgentCLI.exe Cleanup <path of localagent-config.json>
-    ```
-
-3. ユーザーの環境での適切なセットアップと配置トピックの「テナントの LCS 接続のコンフィギュレーション」セクションにある手順を実行します。
-
-    - [プラットフォーム update 12](setup-deploy-on-premises-pu12.md#configurelcs)
-    - [プラットフォーム更新プログラム 8 とプラットフォーム更新プログラム 11](setup-deploy-on-premises-pu8-pu11.md#configurelcs)
-
-4. 新しいテナントに新しい LCS コネクタを作成します。
-5. **local-agent.config** ファイルをダウンロードします。
-6. ローカル エージェントをインストールします。
-
-    ```powershell
-    .\LocalAgentCLI.exe Install <path of localagent-config.json>
-    ```
 
 ## <a name="encryption-errors"></a>暗号化エラー
 暗号化エラーの例には AXBootstrapperAppType、Bootstrapper、AXDiagnostics、RTGatewayAppType、ゲートウェイの潜在的なエラー関連、Microsoft.D365.Gateways.ClusterGateway.exe などがあります。
@@ -681,10 +700,55 @@ Reset-DatabaseUsers.ps1 を使用した場合、変更内容を有効にする�
 
 - **NETWORKDOMAIN:** `https://DC1.contoso.com/adfs`
 - **NETWORKALIAS:** `AXServiceUser@contoso.com`
+- **IDENTITYPROVIDER:** これは **NETWORKDOMAIN** と一致する必要があります。
 
 AD FS マシンの、サーバー マネージャーで、**ツール** \> **AD FS の管理** \> **サービス**に移動します。 **フェデレーション サービス プロパティの保守と編集** を右クリックします。 **フェデレーション サービスの識別子**は **USERINFO.NETWORKDOMAIN** 値と一致し、URL に HTTPS を持っている必要があります。 (例: `https://DC1.contoso.com/adfs`)。 
 
 AD FS マシンの、イベント ビューアーで、**アプリケーションとサービス ログ** \> **AD FS** \> **管理者**に移動してエラーを確認します。
+
+### <a name="fiddler"></a>Fiddler
+追加のデバッグには Fiddler を使用することができます。 Fiddler について詳しくは、[AD FS 2.0: Fiddler Web デバッガーを使って WS フェデレーション パッシブ サインインを分析する方法](https://social.technet.microsoft.com/wiki/contents/articles/3286.ad-fs-2-0-how-to-use-fiddler-web-debugger-to-analyze-a-ws-federation-passive-sign-in.aspx)と[別の AD FS クレーム プロバイダーからの AD FS トークンのクラッキング](https://blogs.technet.microsoft.com/tangent_thoughts/2014/06/04/cracking-the-ad-fs-token-from-another-ad-fs-claims-provider/)をご覧ください。 
+
+以下のセクションでは、Dynamics に返されるクレームにおける重点的なデバッグ ステップを示します。
+
+#### <a name="repocapture"></a>リポジトリ/キャプチャ
+1. Fiddler を開き、**ツール > オプション > HTTPS** で **HTTPS トラフィックの復号化** を選択します。
+2. トラフィックのキャプチャを開始します (ショートカット キーは F12 キー)。 ツールの左下を調べることで、そのトラフィックがキャプチャされていることを確認できます。
+3. Internet Explorer を InPrivate インスタンスで開くか、Incognito インスタンスを使用して Chrome を開きます。
+4. Finance and Operations にログインします。 (例: `https://ax.d365ffo.onprem.contoso.com/namespaces/AXSF/`)
+5. USERINFO.NETWORKALIAS アカウントとパスワードを使用してログオンします。
+6. ログイン後、Fiddler によるトラフィックのキャプチャを停止します。
+
+#### <a name="analyze"></a>分析 
+Fiddler の右側ウィンドウは、要求と応答と分ける水平分割線で分割されていることに注意してください。 通常は要求と応答に別のフレームを取得するネットワーク トレースとは異なり、Fiddler は要求と応答の両方を含む 1 つのフレームを提供します。
+
+1. Fiddler で、右上隅にある **Inspectors > Raw** を選択します。
+2. 右下隅で、**Cookie** を選択します。
+3. **MSISAuth** を検索します。 
+4. ADFS ホストの 200 の結果を含む行を選択します。
+5. 選択した行の上を見て、今度は 302 の結果の行を選択します。
+
+    AD FS URL、ホスト、ユーザー名、およびパスワードが表示されます。
+    > [!IMPORTANT]
+    > プライバシー保護のため、場合によっては個人を特定できる情報をスクラブする必要があります。
+
+    ![個人情報のスクラブ](media/Scrub-PII.png)
+
+6. 302 の結果を持つ次の行を強調表示します。URL は .../namespaces/AXSF/ です。
+
+    その行に表示されるコード値を書き留めます。
+    
+     ![表示されるコード値を書き留める](media/Note-the-code.png)
+
+7. = (等号) の後のコード行の値をコピーします。
+8. https://www.base64decode.org/ に移動し、手順 7 の結果を貼り付けます。
+9. **ソース文字セット** ドロップダウン リストをクリックして、**ASCII** を選択します。
+10. **デコード** ををクリックします。
+11. 結果をコピーします。 次の操作を行います。
+
+    - **upn** 値を書き留めます。 これは、ユーザー名と一致する必要があります。
+    - **unique_name** 値を書き留めます。 これにより、AD ユーザーがテストされます。
+    - **Active Directory ユーザーとコンピューター > ドメイン > ユーザー** で、これがテストされているユーザーであることを確認します。
 
 ## <a name="sign-in-issues"></a>サインインの問題
 サインインに関する問題が発生した場合には、Service Fabric Explorer で、**Provisioning\_AdminPrincipalName** および **Provisioning\_AdminIdentityProvider** の値が有効であることを確認してください。 値が有効な場合は、プライマリ SQL Server マシンで次のコマンドを実行します。
@@ -708,7 +772,12 @@ select SID, NETWORKDOMAIN, NETWORKALIAS, * from AXDB.dbo.USERINFO where id = 'ad
 
 > 現在の資格情報でログインする権限がありません。 数秒でログイン ページにリダイレクトされます。
 
-このエラーが発生した場合は、このトピックの [AD FS](troubleshoot-on-prem.md#ad-fs) セクションを参照してください。
+このエラーが発生した場合: 
+1. AD FS マシンで、**サーバー マネージャー > ツール > AD FS の管理** に移動します。 **AD FS** を右クリックし、**フェデレーション サービス プロパティの編集** を選択します。 **フェデレーション サービスの識別子** 値を書き留めます。 これは、**Userinfo.NetworkDomain** 値と **UserInfo.IdentityProvider** 値に一致する必要があります。 
+2. AD FS マシンで、PowerShell を開き、**Get-AdfsProperties** を実行します。 **IdTokenIssuer** 値を書き留めます。 これは、手順 1 の **フェデレーション サービス識別子** と、**Service Fabric Explorer > クラスター > アプリケーション > AXSFType > fabric:/AXSF の詳細** タブにある **Provisioning_AdminIdentityProvider** 値に一致する必要があります。
+3. Service Fabric Explorer で、**Provisioning_AdminPrincipalName** 値と **Provisioning_AdminIdentityProvider** 値が有効であることを確認します。
+
+上記の手順で問題が解決しない場合は、このトピックの「[AD FS](troubleshoot-on-prem.md#ad-fs)」を参照してください。
 
 ## <a name="systemdatasqlclientsqlexception-0x80131904-and-systemcomponentmodelwin32exception-0x80004005"></a>System.Data.SqlClient.SqlException (0x80131904) および System.ComponentModel.Win32Exception (0x80004005)
 次のエラーのいずれかが表示される場合があります。
@@ -858,6 +927,28 @@ Microsoft Windows では 260 文字の制限があるため、パッケージの
 
 **プラットフォーム更新プログラム 8 とプラットフォーム更新プログラム 11:** 既知の Skype アプリケーション プログラミング インターフェイス (API) 問題は、オンプレミス環境へのサインイン機能に影響します。 この問題の解決方法を調査しています。 この問題を回避するために、次の例のように URL の末尾に **?debug=true** を追加できます。`https://ax.d365ffo.onprem.contoso.com/namespaces/AXSF/?debug=true`
 
+## <a name="the-local-agent-stops-working-after-the-tenant-for-the-project-from-lcs-is-changed"></a>ローカル エージェントは、LCS からのプロジェクトのテナントが変更されると作業を停止します
+更新されたテナントでローカル エージェントを構成するには、次の手順を実行します。
+
+1. ローカル エージェントをアンインストールします。
+
+    ```powershell
+    .\LocalAgentCLI.exe Cleanup <path of localagent-config.json>
+    ```
+
+2. ユーザーの環境での適切なセットアップと配置トピックの「テナントの LCS 接続のコンフィギュレーション」セクションにある手順を実行します。
+
+    - [プラットフォーム update 12](setup-deploy-on-premises-pu12.md#configurelcs)
+    - [プラットフォーム更新プログラム 8 とプラットフォーム更新プログラム 11](setup-deploy-on-premises-pu8-pu11.md#configurelcs)
+
+3. 新しいテナントに新しい LCS コネクタを作成します。
+4. **local-agent.config** ファイルをダウンロードします。
+5. ローカル エージェントをインストールします。
+
+    ```powershell
+    .\LocalAgentCLI.exe Install <path of localagent-config.json>
+    ```
+
 ## <a name="additional-deployments-for-example-two-sandbox-deployments-or-a-sandbox-and-production-deployment"></a>追加の配置 (たとえば、2 つのサンド ボックス展開、またはサンド ボックスおよび生産の配置)
 
 追加の環境を展開すると、次のエラーが表示されます。
@@ -887,6 +978,8 @@ Microsoft Windows では 260 文字の制限があるため、パッケージの
 
     1. ネイティブ アプリケーション **Microsoft Dynamics 365 for Operations オンプレミス - ネイティブ アプリケーション**を開きます。 新しい環境 (DNS) の リダイレクト URI を追加します。
     2. ネイティブ アプリケーション **Microsoft Dynamics 365 for Operations オンプレミス - 財務諸表 - ネイティブ アプリケーション**を開きます。 新しい環境 (DNS) の リダイレクト URI を追加します。
+    3. Web API **Microsoft Dynamics 365 for Operations オンプレミス - Web API** を開きます。 新しい環境 (DNS) のリダイレクト URI の 2 つのエントリを追加します。
+    4. Web API **Microsoft Dynamics 365 for Operations オンプレミス - Financial Reporting Web API** を開きます。 新しい環境 (DNS) の リダイレクト URI を追加します。
 
 ## <a name="redeploy-ssrs-reports"></a>SSRS レポートを再配置する
 SF.SyncLog のエントリを削除して、AOS マシンの 1 つを再起動します。 AOS コンピューターは DB 同期を再実行し、レポートを配置します。
@@ -896,17 +989,11 @@ SQL Server を再起動すると、tempdb データベースが再作成され�
 
 ```
 \-----
-
 USE [master]
-
 GO
-
-CREATE procedure [dbo].[CREATETEMPDBPERMISSIONS] as begin exec ('USE tempdb; declare \@dbaccesscount int; exec sp_grantlogin ''axdbadmin''; select \@dbaccesscount = COUNT(\*) from master..syslogins where name = ''axdbadmin''; if (\@dbaccesscount \<\> 0) exec sp_grantdbaccess ''axdbadmin''; ALTER USER [axdbadmin] WITH DEFAULT_SCHEMA=dbo; EXEC sp_addrolemember N''db_datareader'', N''axdbadmin''; EXEC sp_addrolemember N''db_datawriter'', N''axdbadmin''; EXEC sp_addrolemember N''db_ddladmin'', N''axdbadmin''; exec sp_grantdbaccess ''contoso\\svc-AXSF\$''; ALTER USER [contoso\\svc-AXSF\$] WITH DEFAULT_SCHEMA=dbo; EXEC sp_addrolemember N''db_datareader'', N''contoso\\svc-AXSF\$''; EXEC sp_addrolemember N''db_datawriter'', N''contoso\\svc-AXSF\$''; EXEC sp_addrolemember N''db_ddladmin'', N''contoso\\svc-AXSF\$'';') end
-
+CREATE procedure [dbo].[CREATETEMPDBPERMISSIONS] as begin exec ('USE tempdb; declare @dbaccesscount int; select @dbaccesscount = COUNT(*) from master..syslogins where name = ''axdbadmin''; if (@dbaccesscount <> 0) exec sp_grantdbaccess ''axdbadmin''; ALTER USER [axdbadmin] WITH DEFAULT_SCHEMA=dbo; EXEC sp_addrolemember N''db_datareader'', N''axdbadmin''; EXEC sp_addrolemember N''db_datawriter'', N''axdbadmin''; EXEC sp_addrolemember N''db_ddladmin'', N''axdbadmin''; exec sp_grantdbaccess ''contoso\svc-AXSF$''; ALTER USER [contoso\svc-AXSF$] WITH DEFAULT_SCHEMA=dbo; EXEC sp_addrolemember N''db_datareader'', N''contoso\svc-AXSF$''; EXEC sp_addrolemember N''db_datawriter'', N''contoso\svc-AXSF$''; EXEC sp_addrolemember N''db_ddladmin'', N''contoso\svc-AXSF$'';') end
 GO
-
 EXEC sp_procoption N'[dbo].[CREATETEMPDBPERMISSIONS]', 'startup', '1'
-
 \-----
 ```
 
@@ -922,4 +1009,55 @@ EXEC sp_procoption N'[dbo].[CREATETEMPDBPERMISSIONS]', 'startup', '1'
 ```powershell
 Remove-AzureRmADSpCredential -ServicePrincipalName "00000015-0000-0000-c000-000000000000" -KeyId <key>
 ```
+## <a name="odbc-driver-17-required-for-platform-updates"></a>プラットフォーム更新には ODBC ドライバー 17 が必要
+最新のプラットフォーム バイナリ更新では、ODBC ドライバー 17 を使用します。 このアップグレードでは、古い ODBC ドライバーにリンクされている安定性の問題が扱われます。 [特典の設定](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#prerequisites)ドキュメントは、各 AOS サーバーに ODBC ドライバー 17 をインストールする必要がある変更を反映するように更新されました。 ODBC ドライバー 17 をインストールしない場合、環境の処理中に DB 同期エラーが表示されます。
+
+エラーの例:
+- Service Fabric で:
+    
+    問題のあるイベント: SourceId=「System.RA」、プロパティ =「ReplicaOpenStatus」、HealthState=「警告」、ConsiderWarningAsError=false。
+    レプリカで、AOS3 で開いているときに複数の障害が発生しました。 API 呼び出し: IStatelessServiceInstance.Open(); Error = System.Exception (-2146233088) **DB sync failed.**
+- AOS コンピューターで:
+    - イベント ビューアー > カスタム ビュー > 管理イベント:
+        
+        アプリケーション: Microsoft.Dynamics.AX.Deployment.Setup.exe フレームワーク バージョン: v4.0.30319 説明: プロセスは未処理の例外によって中止されました。 例外情報: System.IO.FileNotFoundException at Microsoft.Dynamics.AX.Deployment.Setup.Program.Main(System.String[])
+        
+    - C:\ProgramData\SF\AOSx\Fabric\work\Applications\AXSFType_Appxx\log: Microsoft.Dynamics.AX.Deployment.Setup.exe -bindir      "C:\ProgramData\SF\AOS1\Fabric\work\Applications\AXSFType_App18\AXSF.Code.1.0.20180831174152\Packages" -metadatadir "C:\ProgramData\SF\AOS1\Fabric\work\Applications\AXSFType_App18\AXSF.Code.1.0.20180831174152\Packages" -sqluser "axdbadmin" -sqlserver "SQL-LS.contoso.com" -sqldatabase "AXDB" -setupmode servicesync -syncmode fullall -onprem 
+
+        ハンドルされない例外: System.IO.FileNotFoundException: **ファイルまたはアセンブリ 'aoskernel.dll'、あるいはその依存関係のうちのいずれか 1 つを読み込めませんでした。指定されたモジュールが見つかりませんでした。**
+   Microsoft.Dynamics.AX.Deployment.Setup.Program.Main(String[] args) で
+
+        **DB の同期に失敗しました。**
+
+## <a name="running-add-certtoserviceprincipal-results-in-no-subscription-found-in-the-context"></a>Add-CertToServicePrincipal 結果を実行すると、"コンテキストでサブスクリプションが見つかりません" が発生する
+最近の PowerShell バージョンで "コンテキストでサブスクリプションが見つかりません" エラーが発生することがあります。 解決策として、PowerShell の以前のバージョンをインストールして読み込みます。 たとえば、バージョン 5.7.0 などです。 
+
+```powershell
+# Install version 5.7.0 of Azure PowerShell
+Install-Module -Name AzureRM -RequiredVersion 5.7.0
+
+# Load version 5.7.0 of Azure PowerShell
+Import-Module -Name AzureRM -RequiredVersion 5.7.0
+```
+## <a name="service-fabric-explorer-warnings-after-restarting-machine"></a>コンピューターの再起動後の Service Fabric Explorer の警告
+
+**エラー:** エラー event: SourceId='MonitoringAgentService'、プロパティ='ServiceState'。
+System.Management.Automation.RuntimeException: エラー: **渡された GUID は WMI データ プロバイダーにより有効と認識されませんでした。** (HRESULT からの例外: 0x80071068)。 スタック トレース: 
+
+解決方法: 警告メッセージを生成したアプリケーション パッケージを再起動します。 詳しくは、[アプリケーションの再起動 (AOS など)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/troubleshoot-on-prem#restart-applications-such-as-aos) をご覧ください。
+
+## <a name="the-internal-time-zone-version-number-stored-in-the-database-is-higher-than-the-version-supported-by-the-kernel-1312"></a>データベースに格納されている内部タイム ゾーン バージョン番号が、カーネル (13/12) でサポートされているバージョンよりも大きくなっています。
+このデータベース同期エラーにより、新しいビルド (プラットフォーム更新 15) があったデータベースの上に古いプラットフォーム ビルド (プラットフォーム更新 12) が展開される可能性があります。
+
+この問題を解決するには、SYSTIMEZONESVERSION 値を書き留めます。
+
+select * from SQLSYSTEMVARIABLES where parm = 'SYSTIMEZONESVERSION'
+
+エラー メッセージで返された値を更新して設定します。
+
+update SQLSYSTEMVARIABLES set VALUE = 12 where parm = 'SYSTIMEZONESVERSION'
+
+## <a name="printing-randomly-stops"></a>印刷がランダムに停止する
+AOS サーバーにインストールされているすべてのネットワーク プリンターが、AXService.EXE プロセスが実行されている Windows サービス アカウントとして実行されていることを確認します。
+
 

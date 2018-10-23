@@ -1,28 +1,29 @@
 --- 
-title: "棚卸および集計を行うための電子申告形式の作成"
+title: "ER 棚卸および集計を行うための形式のコンフィギュレーション (第 1 部 - 形式の作成)"
 description: "次の手順では、システム管理者または電子レポート開発者のロールに指定されたユーザーが、生成済みのテキスト出力に基づく計算と集計の電子レポート（ER）フォーマットをどのように環境設定するのかについて示します。"
 author: NickSelin
 manager: AnnBe
-ms.date: 11/02/2017
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ERWorkspace, ERVendorPart, ERSolutionRepositoryTable, ERSolutionRepositoryCreateDropDialog, ERSolutionImport,  ERSolutionTable
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 7261a2324b61cacfca8d69ad52762aa545b70220
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: d1f925ef8d772189a505f2793de1176756866bf4
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 10/16/2018
 
 ---
-# <a name="create-electronic-reporting-er-formats-to-do-counting-and-summing"></a>棚卸および集計を行うための電子申告 (ER) 形式の作成
+# <a name="er-configure-format-to-do-counting-and-summing-part-1-create-format"></a>ER 棚卸および集計を行うための形式のコンフィギュレーション (パート 1: 形式の作成)
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

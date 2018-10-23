@@ -18,10 +18,10 @@ ms.author: robadawy
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 127fa250860610414a3b8eb21bcbd5ed1f3e06dd
+ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
+ms.openlocfilehash: 85da46c007d9f1aed18c60cbdd3559c172054442
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/17/2018
 
 ---
 
@@ -103,7 +103,7 @@ Microsoft Dynamics 365 for Finance and Operations の既定の接続フローチ
 5.  ファイルは、開くか保存することができるダウンロードとして扱われます。
 
 ### <a name="mark-a-change-to-not-be-a-gap"></a>ギャップにならないように変更をマークする
-LCS でギャップ機能が廃止されていることに注意してください。 VSTS 同期を使用する方法の詳細については、[[BPM ライブラリを Visual Studio Team Services と同期する](synchronize-bpm-vsts.md)] を参照してください。
+LCS でギャップ機能が廃止されていることに注意してください。 Azure DevOps 同期を使用する方法の詳細については、[[BPM ライブラリを Azure DevOps と同期する](synchronize-bpm-vsts.md)] を参照してください。
 
 フローチャートを変更するたびに、ギャップが自動的に作成されます。 ギャップとみなされないようにするため、任意の変更を修正することができます。 変更するには、次の手順を実行します。
 1.  追加したオブジェクトを選択し、右クリックします。

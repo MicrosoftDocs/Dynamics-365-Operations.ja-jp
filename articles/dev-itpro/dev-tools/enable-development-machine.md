@@ -18,10 +18,10 @@ ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 3edf408281bd8aaaa01ca1a577dfb0bce1d7c1fb
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: 9c12c765c6bc1a55b2d89e3b01b00df8c4a6b132
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 
@@ -32,10 +32,10 @@ ms.lasthandoff: 08/09/2018
 この記事では、開発者が開発 VM に別のユーザー アカウントを有効にする方法について説明します。
 
 > [!NOTE]
-> このトピックは、ダウンロードされたローカル仮想マシン (VM) か、顧客のサブスクリプションでホストされている VM にのみ適用されます。 Microsoft が管理する開発およびビルド マシンにおいて、新しいユーザーを作成することはできません。
-
+> このトピックは、ダウンロードされたローカル仮想マシン (VM) か、顧客のサブスクリプションでホストされている VM にのみ適用されます。 開発者が VM への管理者アクセスを持たない Microsoft が管理する開発およびビルド マシン (プラットフォーム更新 12 以降) において、新しいユーザーを作成することはできません。
 
 環境が最初に配置されるとき、1 つのユーザー アカウントのみが仮想マシン (VM)上で開発者として有効になります。 このユーザーは、Microsoft Dynamics Lifecycle Services (LCS) によって事前設定するか、ダウンロードした仮想ハードディスク (VHD) のローカル管理者のアカウントです。 ただし、新しいユーザー アカウントを VM で開発できます。 新しいアカウントを有効にした後でも、同じ VM/アプリケーションで一度に開発できる開発者は 1 人だけです。
+
 
 ## <a name="prerequisites"></a>前提条件
 新しいユーザー アカウントが VM で開発できるようにするには、ユーザー アカウントが VM の管理者である必要があります。 また、既定の開発者アカウントの資格情報を使用して VM にログオンする必要があります。 VM が Microsoft Azure VM である場合は、この勘定の情報は LCS の環境のページで使用できます。 VM がダウンロードした VHD 上で実行されるローカル VM である場合は、ローカル管理者アカウントを使用します。 詳細については、「[アクセス インスタンス](../dev-tools/access-instances.md)」を参照してください。

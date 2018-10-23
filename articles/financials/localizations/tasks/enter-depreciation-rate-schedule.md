@@ -1,28 +1,29 @@
 --- 
-title: "償却率表の入力および減価償却プロファイルへの関連付け (日本)"
+title: "償却率表の入力および減価償却プロファイルへの関連付け"
 description: "日本では、固定資産減価償却率は政府機関によって発表されます。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 09/16/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: AssetDepRate_JP, AssetDepreciationProfile
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: f4e79f7224e1acc288863ed4418aa67ca4a3e72e
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 1e5f629df10ae8661d46a417cde3220498e20f77
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/16/2018
 
 ---
-# <a name="enter-a-depreciation-rate-schedule-and-associate-to-a-depreciation-profile-japan"></a>償却率表の入力および減価償却プロファイルへの関連付け (日本)
+# <a name="enter-depreciation-rate-schedule-and-associate-to-depreciation-profile"></a>償却率表の入力および減価償却プロファイルへの関連付け
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

@@ -3,7 +3,7 @@ title: "Finance and Operations バージョン 8.0 を使用した、為替レ�
 description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations バージョン 8.0 (2018年4月) で為替レート プロバイダーを設定する方法について説明します。"
 author: aolson
 manager: AnnBe
-ms.date: 04/02/2018
+ms.date: 09/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: jbye
 ms.search.validFrom: 2018-04-02
 ms.dyn365.ops.version: AX 8.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: 13d14e4a11ff43668233dcce6fc1b305080a8c43
+ms.sourcegitcommit: 31834993d3c7321527f77615183ae0d84c72d339
+ms.openlocfilehash: f1bee384ac8de1bdff2dd82ee1413d064dbc3816
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/25/2018
 
 ---
 
@@ -66,7 +66,7 @@ OANDA テスト アカウントを要求し、OANDA 為替レートに関する�
 為替レート プロバイダーを作成するには、これらの手順に従います。 このコード例は、**ExchangeRateProviderOanda** クラスから取得されています。
 
 1. 拡張機能を使用して、新しい為替レート プロバイダーを表す **ExchangeRateProvider** の拡張可能列挙体に新しい値を追加します。
-2. **通貨**モデルで、**IExchangeRateProvider** インターフェイスを実装するクラスを作成します。
+2. 開発モデルで、**IExchangeRateProvider** インターフェイスを実装するクラスを作成します。
 
     ```
     using Microsoft.Dynamics.ApplicationSuite.FinancialManagement.Currency.Framework;

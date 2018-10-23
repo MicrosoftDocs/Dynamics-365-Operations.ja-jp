@@ -1,28 +1,29 @@
 --- 
-title: "仕入先月次締め請求書の作成および確認 (日本)"
+title: "仕入先月次締め請求書の作成および確認"
 description: "日本では、その月の販売請求書および仕入請求書は、未払金額を計算するため月末に連結されます。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: VendConsInvoice_JP
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 9a2686a53affff37f6d776996aa140faa9349e73
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: bc7092ae0a11e0f330d164b26bfca01bb858512a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/16/2018
 
 ---
-# <a name="create-and-confirm-a-vendor-consolidated-invoice-japan"></a>仕入先月次締め請求書の作成および確認 (日本)
+# <a name="create-and-confirm-a-vendor-consolidated-invoice"></a>仕入先月次締め請求書の作成および確認
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

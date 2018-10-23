@@ -1,28 +1,29 @@
 --- 
-title: "資産除去責務ドキュメントの設定と固定資産の ARO 金額の入力 (日本)"
+title: "資産除去責務ドキュメントの設定と固定資産の ARO 金額の入力"
 description: "日本では、資産除去責務 (ARO) ドキュメントは資産除去責務の 1 つのタイプを識別します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 10/31/2017
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: AssetRetirementObligationDocument_JP, AssetTable, AssetRetirementObligation_JP, AssetRetirementObligationLine_JP
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 858cbf5f5beee4c02ebbb670f35386d26a0883f4
-ms.openlocfilehash: bf550371c6a373b4145ebc7b84a2714296256daf
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 3ba26a3a4bdf194c959a21002e060aba5b7f799a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 10/16/2018
 
 ---
-# <a name="set-up-asset-retirement-obligation-documents-and-enter-aro-amount-on-a-fixed-asset-japan"></a>資産除去責務ドキュメントの設定と固定資産の ARO 金額の入力 (日本)
+# <a name="set-up-asset-retirement-obligation-documents-and-enter-aro-amount-on-a-fixed-asset"></a>資産除去責務ドキュメントの設定と固定資産の ARO 金額の入力
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -61,7 +62,7 @@ ms.lasthandoff: 10/31/2017
 7. [帳簿] フィールドで、固定資産の帳簿を選択します。
 8. [ドキュメント ID] フィールドで、固定資産に添付する資産除去ドキュメントの ID を選択します。
 
-## <a name="enter-the-asset-retirement-obligation-amounts"></a>資産除去責務金額の入力
+## <a name="enter-the-asset-retirement-oblgiation-amounts"></a>資産除去責務金額の入力
 1. [作成] をクリックしてドロップ ダイアログを開きます。
 2. [トランザクション日付] フィールドで、資産除去責務を認識する日付を入力します。
 3. [見積除去原価調整] フィールドにキャッシュ フロー金額を入力します。

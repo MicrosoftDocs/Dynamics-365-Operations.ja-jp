@@ -1,28 +1,29 @@
 --- 
-title: "顧客受取手形の裏書による日本の支払の設定 (日本)"
+title: "顧客の為替手形の裏書きによって日本の支払を設定します"
 description: "このタスクでは、日本での顧客の為替手形の裏書きによる支払いの設定について説明します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: CustPosting,  CustParameters
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 563074ffe6d1a9cfce2440e88e425e032991c62d
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: f509cada0dc12c0a2da00b85f560fc48e0be6d9e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/16/2018
 
 ---
-# <a name="set-up-japan-payment-by-endorsing-a-customer-bill-of-exchange-japan"></a>顧客受取手形の裏書による日本の支払の設定 (日本)
+# <a name="setup-japan-payment-by-endorsing-a-customer-bill-of-exchange"></a>顧客の為替手形の裏書きによって日本の支払を設定します
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

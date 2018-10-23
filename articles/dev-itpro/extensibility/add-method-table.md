@@ -3,7 +3,7 @@ title: "拡張機能を使用してテーブルにメソッドを追加"
 description: "このトピックでは、拡張機能を使用してテーブルにメソッドを追加する方法について説明します。"
 author: ivanv-microsoft
 manager: AnnBe
-ms.date: 07/10/2017
+ms.date: 10/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -37,9 +37,9 @@ ms.lasthandoff: 08/09/2018
 
 ```
 [ExtensionOf(tableStr(InventTable))]
-final class MyInventTable_Extension
+final class InventTableMy_Extension
 {
-    public void defaultMyInventLocationId()
+    public void myDefaultInventLocationId()
     {
         // This would have partner specific logic to initialize the new field.
         this.MyInventLocationId = this.inventLocationId();
@@ -58,7 +58,7 @@ final class MyInventTable_Extension
 たとえば、イベント ハンドラーから新しいメソッドを使用できるようになります。
 
 ```
-class MyInventTable_EventHandler
+class InventTableMy_EventHandler
 {
     [DataEventHandler(tableStr(InventTable), DataEventType::Inserting)]
     public static void InventTable_onInserting(Common sender, DataEventArgs e)

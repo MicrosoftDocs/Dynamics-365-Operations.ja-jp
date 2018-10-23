@@ -18,10 +18,10 @@ ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 1cc3ab67dc8b722f14f16cfdd4eeca3fef6b2d8c
+ms.sourcegitcommit: 92cd1ea0a6ab6039da7074e032e0f78dd7443cba
+ms.openlocfilehash: d29324c626195462da1e4f435ebcd0d5dc0e54de
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 09/24/2018
 
 ---
 
@@ -333,7 +333,7 @@ Microsoft Dynamics App for Office は、Word で実行でき、ドキュメン�
     1.  Word で、**挿入** &gt; **アドイン** &gt; **共有フォルダー** &gt; **Microsoft Dynamics** をクリックします。
     2.  **挿入** をクリックします。
     3.  アプリで、**サーバー情報の追加**をクリックします。
-    4.  **サーバー URL** フィールドに、URL (プロトコル + ホスト名) の開始を入力します。 たとえば、**https://topo00dfa4stbobaos.cloudax.test.dynamics.com** と入力します。
+    4.  **サーバー URL** フィールドに、URL (プロトコル + ホスト名) の開始を入力します。 たとえば、「`https://topo00dfa4stbobaos.cloudax.test.dynamics.com`」を入力します。
     5.  **OK** をクリックします。
     6.  **はい**をクリックして設定を適用し、アプリを再読み込みします。
 

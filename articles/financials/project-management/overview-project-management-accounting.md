@@ -19,10 +19,10 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: e927e45511c5e6c232457a76b2d1fab160fe0f5a
+ms.sourcegitcommit: 1aae5797e37b846a38f957b02870e213da528a2d
+ms.openlocfilehash: c21587499a68143d403760ad32bea65948d7fbc9
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 10/16/2018
 
 ---
 
@@ -35,7 +35,9 @@ ms.lasthandoff: 08/09/2018
 プロジェクトは、サービスの提供、製品の生産、または成果の実現のために設計された活動のグループです。 プロジェクトは、リソースを消費し、収益または資産の形式で財務結果を生成します。
 
 ## <a name="projects-across-industries"></a>業界全体にわたるプロジェクト
-プロジェクト管理および会計機能は次の図に示すように、複数の業界で使用できます。 [![業界全体にわたるプロジェクト](./media/projects-accross-industries.jpg)](./media/projects-accross-industries.jpg) 
+プロジェクト管理および会計機能は次の図に示すように、複数の業界で使用できます。
+
+[![業界全体にわたるプロジェクト](./media/projects-accross-industries.jpg)](./media/projects-accross-industries.jpg) 
 
 コール センターでは、チケットは、呼び出しを解決するために必要な一連の活動について説明するために使用できます。 経営コンサルティング会社や技術コンサルティング会社、広告代理店などのコンサルティング会社は、プロジェクトとしての活動を参照しています。 マーケティングでは、キャンペーンは配信されなければならない一連の作業を表します。 プロジェクト ベースの製造では、製造オーダーは、完成品を製造するために必要なさまざまな作業を関連付けます。 それらに使用されている名前に関係なく、これらのプロジェクトは、リソース、スケジュール、および原価を含み、Microsoft Dynamics 365 for Finance and Operations のプロジェクト管理および会計機能は、これらのプロジェクトの計画、実行、および分析に役立ちます。
 

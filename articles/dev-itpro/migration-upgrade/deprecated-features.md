@@ -3,7 +3,7 @@ title: "削除済みまたは推奨されない機能"
 description: "このトピックでは、削除された、または削除される予定の機能について説明します。"
 author: sericks007
 manager: AnnBe
-ms.date: 08/07/2018
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 8a3c4ed8f3ed79ab0cb3e59076734877d270bd68
-ms.openlocfilehash: cd620dcdeb1cd5fd3a89be9ae31c4d35e29a03d0
+ms.sourcegitcommit: d6b7b1219974cb5de1a625d87c3bce2a4439470b
+ms.openlocfilehash: ea24d6d63edc6f3bb1bf4a99d24d348af0d6cdbf
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 10/16/2018
 
 ---
 
@@ -41,6 +41,52 @@ ms.lasthandoff: 08/09/2018
 
 > [!Note]
 > Finance and Operations 内のオブジェクトに関する詳細情報については、[技術参照レポート](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep) を参照してください。 これら異なるバージョンのレポートを比較し、Finance and Operations の各バージョンで変更または削除されたオブジェクトについて確認することができます。
+
+## <a name="dynamics-365-for-finance-and-operations-81-with-platform-update-20"></a>Dynamics 365 for Finance and Operations 8.1 およびプラットフォーム更新プログラム 20
+
+### <a name="batch-transfer-rules-for-subledger-journal-account-entries"></a>補助元帳仕訳勘定項目のバッチ転送ルール
+同期式の転送モードは、一般会計パラメーターで非推奨になっています。  このモードは、転送のオプションとして既に存在する非同期およびスケジュールされているバッチのみに置き換えられます。 
+
+|   |  |
+|------------|--------------------|
+| **廃止 / 削除の理由** | システムのパフォーマンスに影響するため、同期オプションは削除されます。 |
+| **別の機能での置き換え?**   | 非同期およびスケジュールされているバッチとは、同期の代わりに使用するオプションです。   |
+| **影響を受ける製品領域**         | 一般会計、買掛金勘定、売掛金勘定、調達、経費    |
+| **配置オプション**              | All  |
+| **ステータス**                         | 非推奨 - 機能を削除するターゲットのタイムフレームは 10.0 バージョンです。|
+
+### <a name="electronic-reporting-for-russia"></a>ロシアの電子申告
+申告の .txt および .xml ファイルの形式をコンフィギュレーションするための機能です。 
+
+|   |  |
+|------------|--------------------|
+| **廃止 / 削除の理由** | 電子申告に置き換えられます。 |
+| **別の機能での置き換え?**   | はい。 |
+| **影響を受ける製品領域**         | 一般会計 |
+| **配置オプション**              | All |
+| **ステータス**                         | プラットフォーム更新プログラム 20 で Dynamics 365 for Finance and Operations 8.1 から削除されました。 |
+
+### <a name="financial-reports-generator-for-russia"></a>ロシアの財務諸表ジェネレーター
+会計および税務報告書のためのデータ収集を設定し、XLS および DOC レポート テンプレートにデータをエクスポートするツールです。 機能部分: データの XLS および DOC レポート テンプレート、クエリ、固定必要条件へのエクスポートは削除されました。 
+
+|   |  |
+|------------|--------------------|
+| **廃止 / 削除の理由** | 削除されたパーツは、電子申告に置き換えられます。 |
+| **別の機能での置き換え?**   | はい。 GL 勘定または税登録によるデータ収集ルールの設定には、財務報告書の設定ユーザー インターフェイスを使用する必要があります。 さまざまなファイル タイプ、固定必要条件、およびクエリのようなデータ収集ルールへのデータのエクスポートは、電子申告でコンフィギュレーションする必要があります。 |
+| **影響を受ける製品領域**         | 一般会計。 |
+| **配置オプション**              | All |
+| **ステータス**                         | プラットフォーム更新プログラム 20 で Dynamics 365 for Finance and Operations 8.1 から削除されました。 |
+
+### <a name="integration-with-external-providers-for-sending-electronic-reporting-through-communication-channels-for-russia"></a>ロシアの通信チャネル経由で電子申告を送信するための外部プロバイダーとの統合
+生成された申告の電子ファイルをフォルダにエクスポートして、電子申告の公式のプロバイダーにさらに送信したり、状態をインポートしたりする機能です。
+
+|   |  |
+|------------|--------------------|
+| **廃止 / 削除の理由** | 電子メッセージ コンフィギュレーション可能な機能に置き換えられます。 |
+| **別の機能での置き換え?**   | はい。  |
+| **影響を受ける製品領域**         | 一般会計、税 |
+| **配置オプション**              | All |
+| **ステータス**                         | プラットフォーム更新プログラム 20 で Dynamics 365 for Finance and Operations 8.1 から削除されました。 |
 
 ## <a name="dynamics-365-for-finance-and-operations-80-with-platform-update-15"></a>Dynamics 365 for Finance and Operations 8.0 およびプラットフォーム更新プログラム 15
 今回のリリースで削除済みまたは推奨されない機能はありません。 プラットフォーム更新 15 は累積的であり、プラットフォーム更新 13、プラットフォーム更新 14、およびプラットフォーム更新 15 の新機能または変更された機能を含みます。

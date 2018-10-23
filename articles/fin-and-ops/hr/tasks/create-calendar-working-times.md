@@ -3,26 +3,27 @@ title: "カレンダーの作成および作業時間の生成"
 description: "カレンダーは、運営リソースの能力と作業時間を説明します。"
 author: kherr75
 manager: AnnBe
-ms.date: 03/02/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
-ms.service: dynamics-365-talent
+ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: OpResLifeCycleManagementWorkspace, WorkCalendarTable, WorkCalendarDate
 audience: Application User
 ms.reviewer: rschloma
-ms.search.scope: Operations, Talent
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 9e0b574d83272acf9ccad49e29e80827810b783a
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 8a556367857890acdb926ed29518cf2f2f2b92ea
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 10/16/2018
 
 ---
-# <a name="create-calendars-and-generate-working-times"></a>カレンダーの作成および作業時間の生成
+# <a name="create-calendar-and-generate-working-times"></a>カレンダーの作成および作業時間の生成
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

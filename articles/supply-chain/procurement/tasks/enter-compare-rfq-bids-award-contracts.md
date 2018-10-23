@@ -1,28 +1,29 @@
 --- 
-title: "RFQ 入札価格の入力と比較および契約の授与"
+title: "RFQ 入札価格の入力、比較、および契約の授与"
 description: "この手順は、RFQ への返信を入力したり、入札の記録や比較をしたり、また仕入先の 1 つに入札を付与する方法を示します。"
 author: mkirknel
 manager: AnnBe
-ms.date: 06/07/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: PurchRFQCaseTableListPage, PurchRFQCaseTable, PurchRFQReplyTable, PurchRFQCompare, PurchRFQEditLines, PurchRFQEditLinesParameters, PurchTable
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 5dea9d7bfb1bf7b11f6c49cccaab1b73d4e58d16
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 7cd4876acfebcc9595abb358cfc9b355e93041d6
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/16/2018
 
 ---
-# <a name="enter-and-compare-rfq-bids-and-award-contracts"></a>RFQ 入札価格の入力と比較および契約の授与
+# <a name="enter-and-compare-rfq-bids-and-award-contracts"></a>RFQ 入札価格の入力、比較、および契約の授与
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

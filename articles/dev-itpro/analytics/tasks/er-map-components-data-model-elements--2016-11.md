@@ -1,28 +1,29 @@
 --- 
-title: "形式コンポーネントのデータ モデル要素へのマップ"
+title: "ER データ モデル要素に作成された形式のコンポーネントのマップ (2016 年 11 月)"
 description: "次の手順では、システム管理者ロールまたは電子申告開発者ロールのいずれかのユーザーが、支払いビジネス ドメインの電子ドキュメント書式を定義する電子レポート (ER) のコンポーネントにデータ モデルをマッピングする様子を示します。"
 author: NickSelin
 manager: AnnBe
-ms.date: 02/27/2017
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ERWorkspace, ERSolutionTable, EROperationDesigner
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: e065cfbfc645bb7ac48134fe43d87bec013e8c81
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: a24ef0e091379f14a163a6385be988143a1ec608
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 10/16/2018
 
 ---
-# <a name="map-the-components-of-formats-to-data-model-elements"></a>形式コンポーネントのデータ モデル要素へのマップ
+# <a name="er-map-components-of-the-created-format-to-data-model-elements-november-2016"></a>ER データ モデル要素に作成された形式のコンポーネントのマップ (2016 年 11 月)
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

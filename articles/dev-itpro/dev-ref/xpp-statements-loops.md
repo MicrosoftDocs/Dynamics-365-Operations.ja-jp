@@ -18,10 +18,10 @@ ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: e5cb5f1eb3edb49250ba3850fb209fc1008b60b3
+ms.sourcegitcommit: 84ae968e4f0e309c6cb841c4d63ee92c7676bfab
+ms.openlocfilehash: 3e5b06462eba61dc75614189dad40ef138196b30
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 10/05/2018
 
 ---
 
@@ -272,7 +272,7 @@ ms.lasthandoff: 04/20/2018
 
 ### <a name="exceptions-inside-transactions"></a>トランザクション内の例外
 
-例外がトランザクションの内部でスローされる場合は、トランザクションが自動的に中止 (つまり、**ttsAbort** 操作が発生) されます。 この動作は、手動でスローされる例外とシステムがスローする例外の両方に適用されます。 **ttsBegin**-**ttsCommit** トランザクション ブロック内で例外がスローされるとき、そのトランザクション ブロック内の **catch** ステートメントは例外を処理できます。 代わりに、トランザクション ブロックの外部にある最も内側の **catch** ステートメントが、最初にテストされる **catch** ステートメントです。
+例外がトランザクションの内部でスローされる場合は、トランザクションが自動的にキャンセル (つまり、**ttsAbort** 操作が発生) されます。 この動作は、手動でスローされる例外とシステムがスローする例外の両方に適用されます。 **ttsBegin**-**ttsCommit** トランザクション ブロック内で例外がスローされるとき、そのトランザクション ブロック内の **catch** ステートメントは例外を処理できます。 代わりに、トランザクション ブロックの外部にある最も内側の **catch** ステートメントが、最初にテストされる **catch** ステートメントです。
 
 ### <a name="examples-of-exception-handling"></a>例外処理の例
 
@@ -558,6 +558,7 @@ ms.lasthandoff: 04/20/2018
 | UpdateConflict                    | オプティミスティック同時実行制御を使用しているトランザクションでエラーが発生しました。 トランザクションは再試行できます (**catch** ブロックで **retry** ステートメントを使用します)。 |
 | UpdateConflictNotRecovered        | オプティミスティック同時実行制御を使用しているトランザクションでエラーが発生しました。 このコードは再試行されません。 この例外は、トランザクション内では検出されません。    |
 | 警告                           | 例外的なイベントが発生しました。 ユーザーはアクションの実行をする必要がありますが、イベントは致命的ではありません。 **警告**例外をスローしないでください。                         |
+| [TransientSqlConnectionError](sql-connection-x++.md)       | クエリ実行時にエラーが発生しました。 トランザクションはキャンセルされます。 この例外は、トランザクション内では検出されません。 |
 
 ## <a name="loop-statements-for-while-and-dowhile"></a>ループ ステートメント: for、while、do...while
 ループ ステートメントは、**for**、**while**、**do**、**while** の 3 つがあります。 ループでは、ループに設定された条件が **false** になるまで、そのステートメントを繰り返します。 loop ステートメント内では、**break** および **continue** ステートメントを使用することができます。

@@ -38,12 +38,18 @@
               href: ../dev-itpro/migration-upgrade/versions-update-policy.md?toc=/fin-and-ops/toc.json
             - name: ソフトウェアのライフサイクル ポリシーおよびオンプレミス リリース
               href: ../dev-itpro/migration-upgrade/on-prem-version-update-policy.md?toc=/fin-and-ops/toc.json
+            - name: Microsoft Dynamics AX 2009 および 2012 のメインストリーム サポートの終了
+              href: get-started/mainstream-support-ax-2009-2012.md
             - name: 削除済みまたは推奨されない機能
               href: ../dev-itpro/migration-upgrade/deprecated-features.md?toc=/fin-and-ops/toc.json
             - name: 延期された AX 2012 の機能
               href: get-started/ax-2012-features-not-implemented-but-not-deprecated.md
             - name: オンプレミス配置で実装されていない機能
               href: get-started/features-not-implemented-on-prem.md
+            - name: Finance and Operations バージョン 8.1 (2018 年 10 月)
+              href: get-started/whats-new-changed-8-1-October-2018.md
+            - name: Platform update 20 (2018 年 9 月)
+              href: get-started/whats-new-platform-update-20.md
             - name: Finance and Operations バージョン 8.0 (2018 年 4 月)
               href: get-started/whats-new-changed-8-0-April-2018.md
             - name: Platform update 15 (2018 年 3 月)
@@ -456,6 +462,10 @@
               href: ../financials/accounts-payable/accounting-distributions-subledger-journal-entries-vendor-invoices.md
             - name: 請求書照合と会社間発注書
               href: ../financials/accounts-payable/invoice-matching-intercompany-purchase-orders.md
+            - name: 仕入先請求ポリシーの設定
+              href: ../financials/accounts-receivable/tasks/set-up-vendor-invoice-policies.md
+            - name: 仕入先請求書の受領記録および入庫済数量との照合
+              href: ../financials/accounts-receivable/tasks/record-vendor-invoice-match-against-received-quantity.md
             - name: 確認後支払の概要
               href: ../financials/accounts-payable/positive-pay-overview.md
             - name: 確認後支払ファイルの設定と生成
@@ -566,10 +576,6 @@
               href: ../financials/accounts-receivable/waive-reinstate-reverse-interest-fees.md
             - name: 利息の処理
               href: ../financials/accounts-receivable/tasks/process-interest.md
-            - name: 仕入先請求ポリシーの設定
-              href: ../financials/accounts-receivable/tasks/set-up-vendor-invoice-policies.md
-            - name: 仕入先請求書の受領記録および入庫済数量との照合
-              href: ../financials/accounts-receivable/tasks/record-vendor-invoice-match-against-received-quantity.md
             - name: 顧客請求書の作成
               href: ../financials/accounts-receivable/configure-customer-invoices.md
             - name: 顧客支払の預金
@@ -596,6 +602,8 @@
               href: ../financials/accounts-receivable/tasks/create-write-off-journal-customer.md
             - name: 売掛金勘定のエイジング情報の設定および生成
               href: ../financials/accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
+            - name: 共有番号順序を使用して、顧客をコピーする
+              href: ../financials/accounts-receivable/copy-customer.md
             - name: 顧客ワークフロー
               href: ../financials/accounts-receivable/customer-workflow.md
             - name: 支払と決済
@@ -1543,8 +1551,6 @@
               href: ../financials/localizations/emea-fiscal-service-integration.md
             - name: エストニアおよびリトアニアの固定資産の処分
               href: ../financials/localizations/emea-credit-note-reverse-fixed-asset-sale.md
-            - name: 外貨再評価
-              href: ../financials/localizations/emea-foreign-currency-revaluation.md
             - name: 内部在庫移動の移動文書の生成
               href: ../financials/localizations/tasks/transfer-document-internal-inventory-transfer.md
             - name: EU 販売リスト レポートの生成
@@ -2104,6 +2110,8 @@
               href: ../financials/localizations/emea-pol-fixed-assets-depreciation.md
             - name: 固定資産の処分機能の拡張
               href: ../financials/localizations/emea-pol-fixed-asset-disposal-functionality-extension.md
+            - name: 外貨再評価
+              href: ../financials/localizations/emea-foreign-currency-revaluation.md
             - name: 返品可能な梱包
               href: ../financials/localizations/emea-pol-returnable-packages.md
             - name: 消費税レポート
@@ -2114,6 +2122,42 @@
               href: ../financials/localizations/emea-pol-interest-calculation.md
             - name: 売上高残高明細書
               href: ../financials/localizations/emea-pol-turnover-balances-statement.md
+        - name: ロシア
+          href: ../financials/localizations/russia.md
+          items:
+            - name: 前貸し保有者
+              href: ../financials/localizations/rus-advance-holders.md
+              items:
+                - name: 前貸し保有者の作成
+                  href: '../financials/localizations/emea-advance-holders.md#create-an-advance-holder'
+                - name: 前貸し保有者に関する日常業務
+                  href: ../financials/localizations/rus-advance-holders-daily-operations.md
+            - name: 固定資産
+              items:
+                - name: 固定資産の取得および使用
+                  href: ../financials/localizations/rus-fixed-asset-acquisition.md
+                - name: 固定資産取得に関する予算仕訳帳の作成および転記
+                  href: ../financials/localizations/rus-post-budget-fixed-asset-acquisition.md
+                - name: 固定資産棚卸
+                  href: ../financials/localizations/rus-fixed-assets-counting.md
+                - name: 固定資産通貨再評価
+                  href: ../financials/localizations/rus-fixed-asset-currency-revaluation.md
+                - name: 固定資産の部分的分解 (清算)
+                  href: ../financials/localizations/rus-fixed-assets-disassembly.md
+            - name: 支払指図の設定および処理
+              href: ../financials/localizations/rus-payment-order-settings-processing.md
+            - name: 通貨トランザクションに対する為替レートの設定
+              href: ../financials/localizations/rus-exchange-difference.md
+            - name: 元帳トランザクションのプレビュー
+              href: ../financials/localizations/rus-ledger-transactions-preview.md
+            - name: 担当者の設定
+              href: ../financials/localizations/rus-officials.md
+            - name: 銀行口座の設定
+              href: ../financials/localizations/rus-local-settings-requisites-bank-module.md
+            - name: 税務代理店に対する付加価値税 (VAT)
+              href: ../financials/localizations/rus-tax-agent.md
+            - name: 決済に関する分析コード コントロールの設定
+              href: ../financials/localizations/rus-transactions-settlement-date.md
         - name: サウジアラビア
           href: ../financials/localizations/saudi-arabia.md
           items:
@@ -2133,6 +2177,8 @@
               href: ../financials/localizations/emea-esp-cash-discount-applied-invoice.md
             - name: 受取手形オプション
               href: ../financials/localizations/emea-esp-bill-of-exchange-options.md
+            - name: 期日の計算、および平均支払期間に関するレポートの生成
+              href: ../financials/localizations/emea-esp-invoice-due-dates.md
             - name: 条件付消費税
               href: ../financials/localizations/emea-esp-conditional-sales-tax.md
             - name: 請求の貸方記入
@@ -2857,7 +2903,7 @@
               href: ../supply-chain/master-planning/tasks/create-baseline-forecast.md
             - name: 需要予測の手動変更
               href: ../supply-chain/master-planning/tasks/modify-demand-forecast-manually.md
-    - name: Dynamics 365 for Unified Operations モバイル アプリ
+    - name: Dynamics 365 for Unified Operations Mobile アプリ
       href: ../dev-itpro/mobile-apps/Mobile-app-home-page.md?toc=/fin-and-ops/toc.json
       items:
         - name: 利用可能なモバイル ワークスペース

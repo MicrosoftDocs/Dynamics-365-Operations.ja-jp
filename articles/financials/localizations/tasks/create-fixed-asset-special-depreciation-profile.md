@@ -1,42 +1,37 @@
 --- 
-title: "特別償却プロファイルのある固定資産の作成 (日本)"
+title: "特別償却プロファイルのある固定資産の作成"
 description: "日本では、特定の条件下で特別償却額を固定資産に転記できます この手順を使用して、特別償却プロファイルのある固定資産の作成方法を説明します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 11/11/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: AssetTable, AssetBook
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a1c4b7623f3409d4474adcd04fb1331b944b9fbb
-ms.openlocfilehash: e102148545435f63af1c559512fca408805ad1a8
+ms.sourcegitcommit: 965826f5fddc2f53f33157434929eb265979376e
+ms.openlocfilehash: 321bb8d3501d9d8bec3e2725d81a025c5ff0c544
 ms.contentlocale: ja-jp
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 10/16/2018
 
 ---
-# <a name="create-a-fixed-asset-with-special-depreciation-profile-japan"></a>特別償却プロファイルのある固定資産の作成 (日本)
+# <a name="create-a-fixed-asset-with-special-depreciation-profile"></a>特別償却プロファイルのある固定資産の作成
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
 日本では、特定の条件下で特別償却額を固定資産に転記できます
 
-
-
 この手順を使用して、特別償却プロファイルのある固定資産の作成方法を説明します。
 
-
-
 この手順を完了するためには、[固定資産コンフィギュレーション キー] を選択する必要があります。
-
-
 
 この手順では、JPMF デモ会社のデータを使用します。
 

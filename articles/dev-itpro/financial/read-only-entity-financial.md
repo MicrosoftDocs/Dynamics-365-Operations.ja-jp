@@ -18,10 +18,10 @@ ms.author: pbj
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 435c1e9e6f80ec51d00efe8465c9f0f03067eb7a
+ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
+ms.openlocfilehash: 092f7e566c6ac14421e772f538a61af6fa0ef2d7
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/17/2018
 
 ---
 
@@ -36,7 +36,7 @@ ms.lasthandoff: 08/09/2018
 
 配分を使用して適用された財務分析コードと共にすべての仕入先請求明細行のトランザクションを公開しなければならないシナリオを考えてみましょう。 サード パーティのツールによる簡単な消費が不可欠なので、このシナリオ用のエンティティを作成します。 結果として、エンティティは他の関連するエンティティと結合する必要はなく、単独で値を提供できるべきです。
 
-これらの要件を満たすために、サンプル エンティティを作成するプロセスについて説明します。 (これらの手順はすでに文書化されているため、Microsoft Visual Studio Team Services との統合の手順は省略します。)
+これらの要件を満たすために、サンプル エンティティを作成するプロセスについて説明します。 (これらの手順はすでに文書化されているため、Microsoft Azure DevOps との統合の手順は省略します。)
 
 ## <a name="create-a-basic-entity"></a>基本エンティティの作成
 最初のステップは、**新しい品目** を選択して、プロジェクト内に新しい要素を作成することです。. 

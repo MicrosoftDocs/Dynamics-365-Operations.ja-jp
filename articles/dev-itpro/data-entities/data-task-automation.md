@@ -16,10 +16,10 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform update 16
 ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
-ms.openlocfilehash: f9c519cec023b396ff80b507dc9b326c8e880a94
+ms.sourcegitcommit: 033c9bdfce0840e1af1c63708905aec6829bbe90
+ms.openlocfilehash: 24c4b554ef06af25ab35df103ec805b4302b5799
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
+ms.lasthandoff: 09/13/2018
 
 ---
 
@@ -57,9 +57,7 @@ Microsoft Dynamics 365 for Finance and Operations のデータ タスク自動�
     > [!IMPORTANT]
     > データ タスクの自動化はクラウドのすべての環境で実行できますが、実稼動環境の統合 API を使用してすべてのインポート/エクスポート タスクを実行しないことを強くお勧めいたします。 統合 API を含むデータ タスクの自動化は、自動テストにのみ使用する必要があります。
 
-次のビデオは、Data Task Automation Manager の初期リリースを紹介する TechTalk の 55 分です。
-
-> [!Video https://academylive.blob.core.windows.net/media/PAL/TechTalks-EnterpriseEdition/TaskAutomationFrameworkForDataManagement-DYN447PAL2.mp4]
+次のビデオは、Data Task Automation Manager の初期リリースを紹介する TechTalk の 55 分です。[タスク自動化フレームワーク](https://academylive.blob.core.windows.net/media/PAL/TechTalks-EnterpriseEdition/TaskAutomationFrameworkForDataManagement-DYN447PAL2.mp4)。
 
 ## <a name="task-manifest"></a>タスク マニフェスト
 タスクは、XML マニフェストで定義する必要があります。 このセクションでは、マニフェストについて説明します。 マニフェストを名前付けしデザインする方法の指針については、このトピックの後半の、「マニフェストのデザインに対するベスト プラクティス」セクションを参照してください。

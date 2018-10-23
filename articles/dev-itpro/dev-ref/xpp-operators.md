@@ -3,7 +3,7 @@ title: "X++ 演算子"
 description: "このトピックでは、X++ でサポートされている演算子について説明します。"
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 09/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: b9a2e7ea517889073659113d4b460565dc4cfca4
+ms.sourcegitcommit: c4428613441424c81f4fd7dd92bbf842c62ce860
+ms.openlocfilehash: 3a16408380d40248478636d88c9f172e4a3a62d0
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 09/22/2018
 
 ---
 
@@ -279,7 +279,7 @@ ms.lasthandoff: 04/20/2018
 
 ### <a name="the-like-operator"></a>like 演算子
 
-<strong>like</strong> 演算子は、<strong>\</strong>*を 0 文字以上のワイルドカード文字として使用できます。さらに、<strong>?</strong> 1 つの文字に対する 1 つのワイルドカード文字として。 オペランドは 1,000 文字を超えることはできません。 <strong>like</strong> 演算子は、基になる SQL により評価されるため、インストールごとに結果が異なる可能性があります。 比較している式にファイルのパスが含まれている場合は、次の例で示すように、各要素の間で次の 4 つのバックスラッシュを含める必要があります。
+<strong>like</strong> 演算子は、<strong>*</strong> を 0 文字以上のワイルドカード文字として使用できます。さらに、<strong>?</strong> 1 つの文字に対する 1 つのワイルドカード文字として。 オペランドは 1,000 文字を超えることはできません。 <strong>like</strong> 演算子は、基になる SQL により評価されるため、インストールごとに結果が異なる可能性があります。 比較している式にファイルのパスが含まれている場合は、次の例で示すように、各要素の間で次の 4 つのバックスラッシュを含める必要があります。
 
 ```
     select * from xRefpaths

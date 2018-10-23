@@ -1,6 +1,6 @@
 ---
-title: "Visual Studio Team Services へアクセスするためのローカル環境の名前変更"
-description: "複数のコンピューターにまたがる VSTS プロジェクトにアクセスするには、ローカル開発 VM の名前変更が必要です。"
+title: "Azure DevOps にアクセスするためのローカル環境の名前変更"
+description: "複数のコンピューターにまたがる Azure DevOps プロジェクトにアクセスするには、ローカル開発 VM の名前変更が必要です。"
 author: MargoC
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,22 +18,22 @@ ms.author: tabell
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: f4f0e07c4e8cbb549ee5332e7b4e556dee66ebc9
+ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
+ms.openlocfilehash: c2d40d2efd0c5c6fa02dea93ab9a3e0e066a8918
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/17/2018
 
 ---
 
-# <a name="rename-a-local-environment-to-access-visual-studio-team-services"></a>Visual Studio Team Services へアクセスするためのローカル環境の名前変更
+# <a name="rename-a-local-environment-to-access-azure-devops"></a>Azure DevOps にアクセスするためのローカル環境の名前変更
 
 [!include [banner](../includes/banner.md)]
 
-複数のコンピューターにまたがる VSTS プロジェクトにアクセスするには、ローカル開発 VM の名前変更が必要です。
+複数のコンピューターにまたがる Azure DevOps プロジェクトにアクセスするには、ローカル開発 VM の名前変更が必要です。
 
-Visual Studio Team Services (VSTS) (旧名称は Visual Studio Online または VSO) はバージョン コントロールのために必要です。 開発トポロジでは、複数の VM が同じコンピューター名である場合、同じ VSTS プロジェクトにアクセスできません。 VSTS はマシン名を ID として使用します。 Microsoft Lifecycle Services (LCS) からローカル VM で開発する場合は、問題が発生する可能性があります。
+Azure DevOps (旧名称は Visual Studio Online または VSO) はバージョン コントロールのために必要です。 開発トポロジでは、複数の VM が同じコンピューター名である場合、同じ Azure DevOps プロジェクトにアクセスできません。 Azure DevOps はマシン名を ID として使用します。 Microsoft Lifecycle Services (LCS) からローカル VM で開発する場合は、問題が発生する可能性があります。
 
-- この問題を回避するには、開発を開始する前にマシンの名前を変更してリブートし、VSTS に接続します。
+- この問題を回避するには、開発を開始する前にマシンの名前を変更してリブートし、Azure DevOps に接続します。
 - これらを実行した後、SQL Server レポート サーバーもコンフィギュレーションする必要があります。 これを行うには、SQL Server レポート サーバーのデータベース接続文字列で SQL Server 名を (localhost) に変更します。
 
   

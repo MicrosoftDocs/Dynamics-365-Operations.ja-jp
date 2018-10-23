@@ -18,10 +18,10 @@ ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 50ccb257998891d4be531c05214bcb5cf1de468e
+ms.sourcegitcommit: e4c1f8c7435a901431286960581754e5b2820dad
+ms.openlocfilehash: a1de7f5faf1b2eab84f5ac40a0dffee1d0e9abe6
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 10/03/2018
 
 ---
 

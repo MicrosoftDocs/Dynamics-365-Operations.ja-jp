@@ -18,10 +18,10 @@ ms.author: jujoh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 8590b0d235b8078c59cc29f5c31bd593a414d55e
-ms.openlocfilehash: 3e49e56858693829b2d155c4d44111346d79ef04
+ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
+ms.openlocfilehash: c118002b81fe3530ff09c30230a2484df7697980
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/29/2018
+ms.lasthandoff: 09/17/2018
 
 ---
 
@@ -185,12 +185,12 @@ _userContext.Dispose();
 
 タスク記録が行われたときに入力した値がランダム化されていることを確認します。 テスト データを生成するために、データ拡張ツールを最初に使用することが必要な可能性があります。
 
-## <a name="set-up-visual-studio-team-services-for-multiuser-testing"></a>Visual Studio Team Services でマルチ ユーザー テストを設定
+## <a name="set-up-azure-devops-for-multiuser-testing"></a>Azure DevOps でマルチ ユーザー テストを設定
 
-この例では、ユーザーは ProcureToPay.cs ファイルを使用します。 Visual Studio を開始するには、[Visual Studio Team Services portal ポータル](https://app.vssps.visualstudio.com/profile/view) にサインインし、**Visual Studio で開く**を選択する必要があります。
+この例では、ユーザーは ProcureToPay.cs ファイルを使用します。 Visual Studio を開始するにサインインする必要があります、[[Azure DevOps ポータル](https://app.vssps.visualstudio.com/profile/view)] にサインインし、**Visual Studioで開く** を選択する必要があります。
 
 > [!NOTE]
-> このステップは 1 回のみ完了する必要があります。 Visual Studio Team Services にサインインした後、設定が保存されます。
+> このステップは 1 回のみ完了する必要があります。 Azure DevOps にサインインした後、設定が保存されます。
 
 [![Visual Studio で開きます](./media/vsonline-5-1024x323.jpg)](./media/vsonline-5.jpg)
 
@@ -215,7 +215,7 @@ _userContext.Dispose();
 
 ### <a name="test-the-sandbox-environment"></a>サンドボックス環境をテスト
 
-ここまでは、手順で、AOS マシンが開発マシンでもある開発者トポロジを使用していることを前提としていました。 Visual Studio Team Services でロード テストを実行するには、テスト環境がサンドボックス環境である必要があります。 サンドボックス環境と負荷テストを実行するコンピューター間の信頼関係を確立するには、いくつかの追加手順を完了する必要があります。 負荷テストを実行するコンピューターは、開発マシンまたは Visual Studio Online で作成されたテスト エージェントのいずれかです。
+ここまでは、手順で、AOS マシンが開発マシンでもある開発者トポロジを使用していることを前提としていました。 Azure DevOps でロード テストを実行するには、テスト環境がサンドボックス環境である必要があります。 サンドボックス環境と負荷テストを実行するコンピューター間の信頼関係を確立するには、いくつかの追加手順を完了する必要があります。 負荷テストを実行するコンピューターは、開発マシンまたは Visual Studio Online で作成されたテスト エージェントのいずれかです。
 
 1. サンドボックス AOS マシンへのリモート デスクトップ の接続を確立し、**.cer** ファイルを上書きします。 ファイルをダブルクリックして、インストールします。 証明書ストアの入力を要求するメッセージが表示されたら、**個人** を選択します。
 2. IIS を起動し、サイトの一覧で **AOSService** を見つけます。 その後、**エクスプローラー** を選択して、**wif.config** ファイルを検索します。 **Wif.config** ファイルで、**AxTokenIssuer** という機関を検索します。 この権限の捺印のリストに捺印を追加する必要があります。 (以前に生成した証明書の値を使用します。)

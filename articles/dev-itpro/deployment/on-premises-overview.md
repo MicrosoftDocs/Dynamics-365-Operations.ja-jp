@@ -18,10 +18,10 @@ ms.author: arifk
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 2f7a10e993f593d9ef70c19447b05a0ffd1f8b8e
+ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
+ms.openlocfilehash: c8723126214a5ab4e7a3c9c17a5f2b9132b86415
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/17/2018
 
 ---
 # <a name="on-premises-deployment-option"></a>オンプレミス配置オプション
@@ -61,7 +61,7 @@ Microsoft Dynamics 365 for Finance and Operations は、オンプレミスの配
 |---------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Microsoft Dynamics Lifecycle Services | プロジェクトには、プロジェクトのコンテンツおよびファイルが格納されます。 これには、アプリケーション構成データ、コード、メタデータ、アプリケーションやビジネス プロセス モデルを構成するデータ アセットが含まれます。 匿名化されたユーザー活動ログおよびオンボーディング プロセス中に収集された情報に含まれます。 |
 | Microsoft Office サインアップ ポータル        | オンボード プロセス中に収集された顧客情報。                                                                                                                                                                                                                                 |
-| Microsoft Azure Active Directory      | LCS および Visual Studio Team Services の認証。                                                                                                                                                                                                               |
+| Microsoft Azure Active Directory      | LCS と Azure DevOps の認証。                                                                                                                                                                                                               |
   
 
 追加のサービスまたはコンポーネントは、必要に応じてオンプレミス配置を拡張するためにコンフィギュレーションすることができます。ただし、コンフィギュレーションの選択により、コア顧客データが顧客データ センターの外部に転送される可能性があります。 たとえば、オンプレミス配置の外部サービスを統合するために使用されるデータ管理機能のコンフィギュレーションにより、オンプレミス配置外のコア顧客データが転送される可能性があります。 

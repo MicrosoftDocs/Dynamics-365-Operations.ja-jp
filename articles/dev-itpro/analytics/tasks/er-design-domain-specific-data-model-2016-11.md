@@ -1,28 +1,29 @@
 --- 
-title: "ドメイン固有のデータ モデルのデザイン"
+title: "ER 設計ドメイン固有のデータ モデル"
 description: "次の手順では、システム管理者または電子申告開発者の役割のユーザーが、電子支払ドキュメントのデータ モデルを含む新しい電子申告 (ER) のコンフィギュレーションを作成する方法を説明します。"
 author: NickSelin
 manager: AnnBe
-ms.date: 12/21/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ERWorkspace, ERSolutionTable, ERSolutionCreateDropDialog, ERDataModelDesigner, ERDataModelContentsItemCreationDialog, ERDataContainerDescriptorReferenceSwitchDialog
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: c59bdea789c4eafd2443a5d1cf802768259858c6
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 0debb7276c4f3e41c2e85ce6bc63b8df5bc159f8
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 10/16/2018
 
 ---
-# <a name="design-domain-specific-data-models"></a>ドメイン固有のデータ モデルのデザイン
+# <a name="er-design-domain-specific-data-model"></a>ER 設計ドメイン固有のデータ モデル
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -194,8 +195,7 @@ ms.lasthandoff: 08/09/2018
     * 取引日付  
 54. [新規] をクリックすると、ドロップ ダイアログが開きます。
 55. [名前] フィールドに、「InstructedAmount」と入力します。
-    * InstructedAmount
-   
+    * InstructedAmount  
 56. [品目タイプ] フィールドで、「実数」を選択します。
 57. [追加] をクリックします。
 58. [説明] フィールドに、「手数料を控除する前の、債務者と債権者の間を移動する金額」を入力します。 金額は開始側の指示通りの通貨で表示する必要があります。

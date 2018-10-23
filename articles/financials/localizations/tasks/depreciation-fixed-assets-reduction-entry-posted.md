@@ -1,28 +1,29 @@
 --- 
-title: "圧縮記帳が転記されている固定資産の減価償却 (日本)"
+title: "圧縮記帳の転記が存在する固定資産の減価償却"
 description: "このタスクを使用して、圧縮記帳で固定資産の減価償却を実行する方法を把握します。 このタスクを完了するためには、[固定資産コンフィギュレーション キー] を選択する必要があります。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 02/15/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: LedgerJournalTable, LedgerJournalTransAsset, SysQueryForm
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a1c4b7623f3409d4474adcd04fb1331b944b9fbb
-ms.openlocfilehash: f701f55a1d76f568a5d7af21d490cf092e1e64d4
+ms.sourcegitcommit: 965826f5fddc2f53f33157434929eb265979376e
+ms.openlocfilehash: 5d002e07263ade34c3414e73a351fc4b7436cd4f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 10/16/2018
 
 ---
-# <a name="depreciate-fixed-assets-with-reduction-entry-posted-japan"></a>圧縮記帳が転記されている固定資産の減価償却 (日本)
+# <a name="depreciation-of-fixed-assets-with-reduction-entry-posted"></a>圧縮記帳の転記が存在する固定資産の減価償却
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

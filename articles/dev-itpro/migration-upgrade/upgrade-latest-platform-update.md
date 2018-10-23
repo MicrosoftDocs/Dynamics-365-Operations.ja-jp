@@ -18,10 +18,10 @@ ms.author: tabell
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: a139abac2a10df39367f44d62d70d6852e2de833
+ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
+ms.openlocfilehash: ecd0e4def7d053aea635a21b316805716eeb9a29
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/17/2018
 
 ---
 
@@ -194,13 +194,13 @@ Microsoft SQL Server の統合サービスの早期リリースに接続して�
 
 2.  ディレクトリ モデルからオーバーレイを削除できなくてもアップグレードする必要がある場合は、[Finance and Operations の最新アップデートへの移行概要](upgrade-latest-update.md)に記載されているように、プラットフォームとアプリケーション (Finance and Operations version 1611) を完全にアップグレードする必要があります。
 
-### <a name="delete-platform-metadata-hotfixes-from-your-vsts-project-platform-update-2-or-earlier"></a>VSTS プロジェクト (プラットフォーム アップデート 2、またはそれ以前) から、プラットフォーム メタデータの修正プログラムの削除
+### <a name="delete-platform-metadata-hotfixes-from-your-azure-devops-project-platform-update-2-or-earlier"></a>Azure DevOps プロジェクト (プラットフォーム アップデート 2、またはそれ以前) から、プラットフォーム メタデータの修正プログラムの削除
 
 > [!NOTE]
 > このセクションは、既にプラットフォーム更新プログラム 3 および新しいプラットフォームに更新している場合には関係ありません。
 
-新しいプラットフォーム更新プログラムをインストールする前に、Microsoft Visual Studio Team Services (VSTS) ソース コントロール プロジェクトをクリーンアップする必要があります。
-既存のプラットフォームにインストールしたすべての X++ またはメタデータの修正プログラムを削除します。 次の Microsoft モデルのいずれかの VSTS プロジェクトでチェックされている X++ またはメタデータの修正プログラムがある場合は、Microsoft Visual Studio のソース管理エクスプローラーを使用してプロジェクトから削除します。
+新しいプラットフォーム更新プログラムをインストールする前に、Microsoft Azure DevOps ソース コントロール プロジェクトをクリーンアップする必要があります。
+既存のプラットフォームにインストールしたすべての X++ またはメタデータの修正プログラムを削除します。 次の Microsoft モデルのいずれかの Azure DevOps プロジェクトでチェックされている X++ またはメタデータの修正プログラムがある場合は、Microsoft Visual Studio のソース管理エクスプローラーを使用してプロジェクトから削除します。
 
 -   アプリケーション プラットフォーム
 -   アプリケーション基準

@@ -1,6 +1,6 @@
 ---
-title: "新しい環境、VSTS、および小売プロジェクトの分岐の設定"
-description: "このトピックでは、新しい環境、Microsoft Visual Studio Team Services、および Microsoft Dynamics 365 for Retail の実装プロジェクトの分岐を設定するための推奨事項について説明します。"
+title: "Retail プロジェクトの新しい環境、Azure DevOps、およびブランチの設定"
+description: "このトピックでは、新しい環境、Microsoft Azure DevOps、および Microsoft Dynamics 365 for Retail の実装プロジェクトの分岐を設定するための推奨事項について説明します。"
 author: Andreash1
 manager: AnnBe
 ms.date: 07/09/2018
@@ -18,14 +18,14 @@ ms.author: andreash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: Retail 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: 697649245237fc7c9c356af93e0641886f3d21b0
-ms.openlocfilehash: 6df8d7755e3a3bc17b353766561cc1d2d825bb07
+ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
+ms.openlocfilehash: 78f2429d587a6e93269951034b977803f792fdbe
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/31/2018
+ms.lasthandoff: 09/17/2018
 
 ---
 
-# <a name="set-up-new-environments-vsts-and-branches-for-retail-projects"></a>新しい環境、VSTS、および小売プロジェクトの分岐の設定
+# <a name="set-up-new-environments-azure-devops-and-branches-for-retail-projects"></a>Retail プロジェクトの新しい環境、Azure DevOps、およびブランチの設定
 
 [!include [banner](../../includes/banner.md)]
 
@@ -126,7 +126,7 @@ Microsoft Dynamics 365 for Finance and Operations のための実装プロジェ
 
 次の高レベルの手順を使用して、開発作業を開始できるように環境を設定します。 カッコ内の数字の詳細については、前述の図と関連情報を参照してください。
 
-1. Microsoft Visual Studio Team Services (VSTS) [1] にビルド環境と空の Main ブランチを配置します。
+1. ビルド環境と Microsoft Azure DevOps [1] の空の Main ブランチを配置します。
 2. 開発環境の配置をする。
 3. 開発ブランチとリリース ブランチ (たとえば、前の図 ProdRel1) を作成する [2, 3]。
 4. Retail SDK [4–7] を追加します。
@@ -138,19 +138,19 @@ Microsoft Dynamics 365 for Finance and Operations のための実装プロジェ
 
 次のセクションでは、各手順の詳細について説明します。
 
-## <a name="deploy-a-build-environment-and-an-empty-main-branch-in-vsts"></a>ビルド環境と VSTS の空の Main ブランチを配置する
+## <a name="deploy-a-build-environment-and-an-empty-main-branch-in-azure-devops"></a>ビルド環境と Azure DevOps の空の Main ブランチを配置する
 
 LCS のポータルを使用して、新しいビルド環境を配置します。 管理者権限がある場合は、より多くのオプションと機能を有することができるため、クラウド ホスト環境を使用することをお勧めします。 このトピックで前述した、「第 1 層環境の開発」のさまざまな環境ホスティング モデルに関するテーブルを参照してください。
 
-未所持の場合は、新しい VSTS プロジェクトを作成して開始します。 VSTS アカウントで、**新しいプロジェクト**を選択します。
+未所持の場合は、新しい Azure DevOps プロジェクトを作成して開始します。 Azure DevOps アカウントで、**新しいプロジェクト**を選択します。
 
 ![VSTS プロジェクト](./media/2-VSTS-project.png)
 
-新しい VSTS プロジェクトが作成されると、VSTS へのアクセスを許可する必要があります。 最初に、VSTS アカウントに新しい個人用のアクセス トークンを作成します。 次に、正しい URL と個人用アクセス トークンで LCS プロジェクトをコンフィギュレーションします。
+新しい Azure DevOps プロジェクトが作成されると、Azure DevOps へのアクセスを許可する必要があります。 最初に、Azure DevOps アカウントに新しい個人用のアクセス トークンを作成します。 次に、正しい URL と個人用アクセス トークンで LCS プロジェクトをコンフィギュレーションします。
 
 ![LCS プロジェクト](./media/3-LCS-project.png)
 
-LCS プロジェクトが VSTS にリンクされたら、配置の準備ができています。
+LCS プロジェクトが Azure DevOps にリンクされたら、配置の準備ができています。
 
 新しい環境を追加、バージョンを選択、**DEVTEST** をトポロジとして追加、およびビルド環境を選択します。 次のページで、意味のある環境名を入力します。 次に、ビルド エージェントの類似の名前を入力します。
 
@@ -172,7 +172,7 @@ LCS プロジェクトが VSTS にリンクされたら、配置の準備がで�
 
 正しいバージョンを選択し、**DEVTEST** を選択し、**DEV** を選択します。 わかりやすい固有の名前を入力し、詳細設定でもマシン名が固有であることを確認してください。 マシン準備のプロセスは、数時間かかる場合があります。
 
-現在、Dev 分岐は存在しないため、VSTS をローカル ディレクトリにマッピングするプロセスをスキップ可能です。 ただし、後でそのプロセスを完了する必要があります。
+現在、Dev 分岐は存在しないため、Azure DevOps をローカル ディレクトリにマッピングするプロセスをスキップ可能です。 ただし、後でそのプロセスを完了する必要があります。
 
 ## <a name="create-the-dev-and-release-branches"></a>開発およびリリースの分岐を作成する
 
@@ -183,14 +183,14 @@ LCS プロジェクトが VSTS にリンクされたら、配置の準備がで�
 分岐を作成するには、次の手順に従います。
 
 1. 開発環境にサインインします。
-2. 管理者は、Microsoft Visual Studio を起動し、VSTS プロジェクトへのアクセスを持つアカウントを使用して記録するかどうかを確認します。
-3. チーム エクスプローラーでは、この接続が存在しない場合に、VSTS のプロジェクトに Visual Studio を接続します。
+2. 管理者は、Microsoft Visual Studio を起動し、Azure DevOps プロジェクトへのアクセスを持つアカウントを使用して記録するかどうかを確認します。
+3. チーム エクスプローラーでは、この接続が存在しない場合に、Azure DevOps のプロジェクトに Visual Studio を接続します。
 4. **トランク**/**メイン** フォルダーをローカル フォルダーにマップします (このマッピングが既に存在しない場合)。 このマッピングは一時的なものです。
 5. ソース管理エクスプローラーでは、**メイン** フォルダーを右クリックし、**分岐および結合** \> **分岐への変換**を選択します。
 6. **Main** ブランチを右クリックし、**分岐とマージ** \>**分岐**を選択し、新しい分岐を**開発**と名付けます。
-7. **保留中の変更**を使用し、この変更内容を VSTS に送信します。
+7. **保留中の変更**を使用し、この変更内容を Azure DevOps に送信します。
 8. **Main** ブランチを右クリックし、**分岐とマージ** \>**分岐**を選択し、新しい分岐を **ProdRel1** と名付けます。
-9. **保留中の変更**を使用し、この変更内容を VSTS に送信します。
+9. **保留中の変更**を使用し、この変更内容を Azure DevOps に送信します。
 
 この時点で、 Visual Studio の Source Depot エクスプローラーは次の図のようになります。
 
@@ -292,19 +292,19 @@ X++ および Retail SDK をマップするには、現在のワークスペー�
 
 ローカルのソースからデバッガで MPOS を実行できるようになりました。
 
-開発環境を準備するプロセスが完了したところです。 この時点で、任意の拡張コード (X++、Commerce Runtime [CRT]、Retail サーバー、チャネル SQL、小売時点 [POS] など) を VSTS に書き込み、デバッグ、テスト、送信することができます。
+開発環境を準備するプロセスが完了したところです。 この時点で、任意の拡張コード (X++、Commerce Runtime [CRT]、Retail サーバー、チャネル SQL、小売時点 [POS] など) を Azure DevOps に書き込み、デバッグ、テスト、送信することができます。
 
 ## <a name="optional-deploy-a-second-build-environment-for-a-different-release-branch"></a>オプション: 別のリリース ブランチの 2 つ目のビルド環境を配置
 
 複数のリリースを同時に管理する必要がある場合は、異なるコード ブランチ (例えば、Main2 または Main3、または ProdRel1 または ProdRel2) から配置可能パッケージを作成する必要があります。
 
-2 つ目のビルド環境を設定する手順は、最初のビルド環境の手順と同じです。 この時点で、VSTS プロジェクトおよび LCS プロジェクトと VSTS プロジェクト間のリンクが既に存在しています。
+2 つ目のビルド環境を設定する手順は、最初のビルド環境の手順と同じです。 この時点で、Azure DevOps プロジェクトおよび LCS プロジェクトと Azure DevOps プロジェクト間のリンクが既に存在しています。
 
-ビルド環境を分離するには、リリース ブランチの新しい VSTS エージェント キューを作成することをお勧めします。 複数の分岐に対してエージェント キュー (およびそのビルド環境) を共有する方法はありますが、この方法は扱いにくいことがあります。
+ビルド環境を分離するには、リリース ブランチの新しい Azure DevOps エージェント キューを作成することをお勧めします。 複数の分岐に対してエージェント キュー (およびそのビルド環境) を共有する方法はありますが、この方法は扱いにくいことがあります。
 
 現時点では、ビルド環境は、配置中にターゲット環境としてバイナリ修正プログラムのバージョンと同じプラットフォームにする必要があります。 それ以外の場合は、LCS でバージョンの互換性がないため配置可能パッケージを拒否する可能性があります。
 
-最初に新しい VSTS エージェント キューを作成する必要があります。
+最初に新しい Azure DevOps エージェント キューを作成する必要があります。
 
 ![VSTS エージェント キュー](./media/13-VSTS-agent-queue.png)
 
@@ -322,9 +322,9 @@ LCS から配置する際、**PRODREL1** をエージェント プールの名�
 
 このトピックで前述の手順を完了すると、1 つのビルド定義および 2 つのエージェント キューがある必要があり、各エージェント キューは 1 つのエージェントを持つ必要があります。 異なる分岐をビルドするには、ビルド定義を異なる方法でコンフィギュレーションしなければなりません。 したがって、ビルド定義を複製する必要があります。
 
-ただし、ビルド定義を複製する前に、この手順を 2 回実行する必要がないように、Retail SDK をビルドに追加する必要があります。 **Unified Operations プラットフォーム - Build Main** という名前の既存のビルド定義を編集するには、[Retail SDK を継続的ビルド システムと統合 (VSTS)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build) の手順に従って、Main 分岐のメタデータビルドに Retail SDK を統合します。
+ただし、ビルド定義を複製する前に、この手順を 2 回実行する必要がないように、Retail SDK をビルドに追加する必要があります。 **Unified Operations プラットフォーム - Build Main** という名前の既存のビルド定義を編集するには、[Retail SDK を継続的ビルド システムと統合 (Azure DevOps)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build) の手順に従って、Main 分岐のメタデータビルドに Retail SDK を統合します。
 
-複数のビルド ブランチおよび環境がある場合、ビルド定義を複製し、新しいビルド定義に名前を付けるだけで、どのブランチのためであるかを明確にします。 (複製機能は VSTS のポータルで使用することができます)。 作成した新しいエージェント キューを選択し、任意のビルド ステップまたはソース マッピングの次のパスを変更します。 (パスで、**メイン**を **ProdRel1** に変更します。)
+複数のビルド ブランチおよび環境がある場合、ビルド定義を複製し、新しいビルド定義に名前を付けるだけで、どのブランチのためであるかを明確にします。 (複製機能は Azure DevOps のポータルで使用することができます)。 作成した新しいエージェント キューを選択し、任意のビルド ステップまたはソース マッピングの次のパスを変更します。 (パスで、**メイン**を **ProdRel1** に変更します。)
 
 - ソース マッピング
 - Retail SDK ビルド ステップ
@@ -342,7 +342,7 @@ LCS から配置する際、**PRODREL1** をエージェント プールの名�
 - 各分岐の小売カスタマイズのバージョンを変更します。 バージョンは、Dev、Main、および ProdRel1 の分岐で異なっている必要があります。 Customization.settings ファイルを変更するか、RetailSdk\\BuildTools フォルダーに新しい global.props ファイルを追加してください。 ファイル名には、任意の種類の番号を付けることができます。 たとえば、Dev に 1.0.0.x、Main に 1.0.1.x、ProdRel1 に 1.0.2.x と番号を付けることができます。
 - 効率性のため、使用されていないときは、ビルドや開発環境をシャットダウンします。
 - クラウド ホストの階層 1 開発環境（管理者権限を持つ）を使用している場合は、IIS Express から IIS に切り替えることができます。 IIS を使用してすべての Web アプリケーションを実行すると、より堅牢になりパフォーマンスが向上し、切り替えが回避されます。 詳細については、[MSDyn365FO. IIS Express から開発 VM の IIS に切り替える方法](https://ievgensaxblog.wordpress.com/2018/04/02/msdyn365fo-how-to-switch-from-iis-express-to-iis-on-development-vm/)を参照してください。
-- プロトタイプの目的で、開発者は VSTS ソースコントロールを使用せずに開発 VM で Retail SDK を変更したいと思うかもしれません。 手を加えずに常に元の Retail SDK を保持し、一時的に使用できるコピーを作成します。 このようにして、変更されていない Retail SDK を必要に応じて、後でミラー分岐に入れることができます。
+- プロトタイプの目的で、開発者は Azure DevOps ソースコントロールを使用せずに開発 VM で Retail SDK を変更したいと思うかもしれません。 手を加えずに常に元の Retail SDK を保持し、一時的に使用できるコピーを作成します。 このようにして、変更されていない Retail SDK を必要に応じて、後でミラー分岐に入れることができます。
 - 現時点では、ビルド環境は、ターゲット環境としてバイナリ修正プログラムのバージョンと同じプラットフォームにする必要があります。
 
 ## <a name="additional-resources"></a>その他のリソース

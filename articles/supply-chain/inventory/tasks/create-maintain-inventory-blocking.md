@@ -1,29 +1,30 @@
----
+--- 
 title: "在庫ブロックの作成および管理"
 description: "この手順では、在庫ブロックを使用することによって、現物手持在庫が他の元伝票に引当されないようにする方法を説明します。"
 author: perlynne
 manager: AnnBe
-ms.date: 12/02/2015
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: InventBlocking, InventItemIdLookupSimple, InventLocationIdLookup
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 7272349cf16b9459823a752b8d3df915f42606ef
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 09789dc0b89f8bd36cca9b3e5be366bf17246243
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/16/2018
 
 ---
-# <a name="create-and-maintain-inventory-blocking"></a>在庫ブロックの作成および管理
+# <a name="create-and-maintain-an-inventory-blocking"></a>在庫ブロックの作成および管理
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -34,7 +35,7 @@ ms.lasthandoff: 09/29/2017
 1. [在庫管理] > [定期処理タスク] > [在庫ブロック] に移動します。
 2. [新規] をクリックします。
 3. [品目番号] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。
-4. 一覧で、目的の品目を選択します。
+4. 一覧で、目的の品目を選択します。 
     * ブロックする現物手持在庫の品目番号を選択します。 USMF を使用している場合、品目「M9201」を選択できます。  
 5. [数量] フィールドに数値を入力します。
     * 品目「M9201」を使用する場合、200 より小さい品目を選択する必要があります。  
@@ -55,4 +56,5 @@ ms.lasthandoff: 09/29/2017
 1. [削除] をクリックします。
 2. [はい] をクリックします。
 3. ページを閉じます。
+
 

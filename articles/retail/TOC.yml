@@ -12,6 +12,8 @@
       href: ../dev-itpro/deployment/deploy-demo-environment.md?toc=/retail/toc.json
     - name: 配置オプション
       href: dev-itpro/choose-deployment.md
+    - name: Retail に関するサポートの利用
+      href: retail-support.md
 - name: 実装ライフサイクルの理解
   href: ../fin-and-ops/imp-lifecycle/implementation-lifecycle.md
   items:
@@ -37,7 +39,7 @@
       href: ../fin-and-ops/get-started/implement-multiple-projects-aad-tenant.md
     - name: Finance and Operations Retail プロジェクトの実装
       href: dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
-    - name: Retail プロジェクトの新しい環境、VSTS、ブランチの設定
+    - name: Retail プロジェクトの新しい環境、Azure DevOps、およびブランチの設定
       href: dev-itpro/new-environments-visual-studio-teams-branch-retail-projects.md
     - name: Retail プロジェクトのコードと環境の更新
       href: dev-itpro/updating-environments.md
@@ -305,6 +307,14 @@
       href: ../talent/create-job.md
 - name: ローカライズと規制の機能
   items:
+    - name: 東ヨーロッパ
+      items:
+        - name: 東ヨーロッパにおける Retail の事前請求書
+          href: localizations/emea-eeu-advance-invoices-for-retail.md
+        - name: 東ヨーロッパにおける Retail の小口現金管理
+          href: localizations/emea-eeu-petty-cash-for-retail.md
+        - name: "東ヨーロッパ諸国での\_Retail\_顧客請求書および返品販売注文"
+          href: localizations/emea-eeu-retail-invoices.md
     - name: フランス
       items:
         - name: キャッシュ レジスター機能
@@ -317,6 +327,8 @@
           href: localizations/apac-ind-cash-registers.md
         - name: キャッシュ レジスターの配置ガイドライン
           href: localizations/apac-ind-loc-deployment-guidelines.md
+        - name: インドにおけるアップグレードおよび N-1 のサポート
+          href: localizations/apac-ind-n-1-for-india.md
     - name: ノルウェー
       items:
         - name: キャッシュ レジスター機能

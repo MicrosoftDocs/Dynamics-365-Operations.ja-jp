@@ -1,28 +1,29 @@
 --- 
-title: "決済トランザクションを使用した顧客月次締め請求書の決済 (日本)"
+title: "決済トランザクションを使用した顧客月次締め請求書の決済"
 description: "日本では、支払は月次締め請求書に対して行われ決済されます。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 09/16/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: CustConsInvoice_JP, CustTable, CustOpenTrans
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: b18ea91960b7d9ae6bce75b9087c3b41fc9e1a94
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 01fa87965ac95a69f9bfa698c54706ee2e882005
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/16/2018
 
 ---
-# <a name="settle-customer-consolidated-invoices-by-using-settle-transactions-japan"></a>決済トランザクションを使用した顧客月次締め請求書の決済 (日本)
+# <a name="settle-customer-consolidated-invoices-by-using-settle-transactions"></a>決済トランザクションを使用した顧客月次締め請求書の決済
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

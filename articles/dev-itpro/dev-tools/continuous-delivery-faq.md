@@ -18,10 +18,10 @@ ms.author: robadawy
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 2c535b8b8140304ae11ff133ae77818c32064687
+ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
+ms.openlocfilehash: 28f4d159477bc294adee3187e5471e0e2b8a03a3
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/17/2018
 
 ---
 
@@ -75,7 +75,7 @@ ms.lasthandoff: 08/09/2018
 
 ### <a name="how-can-i-be-more-agile-in-my-development"></a>開発に関してどのようにより機敏になれますか。
 
-スプリント (2週間、優先) またはサイクル (1ヶ月) ごとに増分機能を提供します。 各スプリントの終わりでアプリケーションの出荷可能な品質を管理します。 作業項目の進捗管理には Visual Studio Team Services (VSTS) を使用し、常に新しい機能よりもバグに優先度を高くします。 大規模なバックログのバグは、アプリケーションの新しい機能と品質の効率的な配信にとって直ちに負担となります。
+スプリント (2週間、優先) またはサイクル (1ヶ月) ごとに増分機能を提供します。 各スプリントの終わりでアプリケーションの出荷可能な品質を管理します。 作業項目の進捗管理には Azure DevOps を使用し、常に新しい機能よりもバグに優先度を高くします。 大規模なバックログのバグは、アプリケーションの新しい機能と品質の効率的な配信にとって直ちに負担となります。
 
 ### <a name="how-do-i-manage-test-data"></a>テスト データをどのように管理しますか。
 
@@ -101,7 +101,7 @@ ms.lasthandoff: 08/09/2018
 
 -   オンプレミス開発者 VM は、それをサポートするハードウェア、IT インフラストラクチャと Windows サーバー ライセンスが既にある場合、費用効果が高くなります。
 -   限られた期間、追加のリソースが必要な場合は、クラウド VM を使用してスケール アウトします。 オンプレミスでの最悪の場合のキャパシティを計画するよりコスト効率がよくなります。
--   バージョン管理のために、すべての VM (オンプレミスおよびクラウド VM) を VSTS に接続します。
+-   バージョン管理のために、すべての VM (オンプレミスおよびクラウド VM) を Azure DevOps に接続します。
 
 ビルド、機能テスト、デモには、クラウド VM を使用します。 Microsoft Azure サブスクリプションで実行している場合は、使用中でない場合は停止します。
 
@@ -139,7 +139,7 @@ VM ごとに毎月平均 15 USD のストレージ (非プレミアム) を追�
 
 これはサポートされていません。 ただし、同じ VM の 1 つ以上の開発者アカウントをプロビジョニングできますが、同時に開発することはできません。 詳細については、[開発マシンで新しい開発者を有効化する](enable-development-machine.md) を参照してください。
 
-Microsoft パートナーが 1 つ以上の顧客のコードを作成する場合は、顧客ごとに少なくとも 1 つの開発 VM を持つことをお勧めします。 顧客プロジェクトに従事している追加の開発者ごとに、1 つの追加の VM が必要です。 開発 VM は、ソース コードがバージョン コントロール (Visual Studio Team Services) にチェックインされ、テスト データベースのバックアップを保持している限り、使い捨て資産と考えることができます。 
+Microsoft パートナーが 1 つ以上の顧客のコードを作成する場合は、顧客ごとに少なくとも 1 つの開発 VM を持つことをお勧めします。 顧客プロジェクトに従事している追加の開発者ごとに、1 つの追加の VM が必要です。 開発 VM は、ソース コードがバージョン コントロール (Azure DevOps) にチェックインされ、テスト データベースのバックアップを保持している限り、使い捨て資産と考えることができます。 
 
 ## <a name="customer-implementation-lcs-projects"></a>顧客実装 LCS プロジェクト
 ### <a name="how-many-sandbox-environments-do-i-need-within-an-lcs-customer-implementation-project"></a>LCS 顧客実装プロジェクト内でいくつのサンド ボックス環境が必要ですか。

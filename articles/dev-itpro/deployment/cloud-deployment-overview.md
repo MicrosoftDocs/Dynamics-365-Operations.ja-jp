@@ -3,7 +3,7 @@ title: "クラウド配置オプション"
 description: "このトピックでは、展開するクラウド環境とサブスクリプション、誰がどのタスクを実行できるか、および Microsoft Dynamics 365 for Finance and Operations で管理する必要があるデータおよびカスタマイズについて説明します。"
 author: kfend
 manager: AnnBe
-ms.date: 08/14/2018
+ms.date: 09/14/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
 ms.translationtype: HT
-ms.sourcegitcommit: d20bc3519096f1035d26f89d42aa7e8f0fc368cd
-ms.openlocfilehash: 6f6ad2e66b4887a375e0d941f030f3479f66ed9f
+ms.sourcegitcommit: a884f66d72fa90146caa67ceae4265d60ede1c0d
+ms.openlocfilehash: ed1766f4c49289bfd4f0401f4c86013600c2555c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/29/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="cloud-deployment-option"></a>クラウド配置オプション
@@ -100,7 +100,7 @@ Windows Remoting (WinRM) はすべての環境で無効です。 Azure ポータ
 > WinRM を有効にするための例外は、Microsoft が管理する環境では許可されません。 
 
 ## <a name="availability"></a>適用の対象
-Dynamics 365 for Finance and Operations の保証稼働時間は 99.5％ です。 計画的なダウンタイムは月 1 回発生し、8 時間以内に終了します。 ダウンタイム中に完了した作業は必ずしも 8 時間かかるとは限らないため、お客様の環境がダウンすると予想される時間を常にお知らせします。 [Microsoft Dynamics 365 for Finance and Operations および Dynamics Lifecycle Services のサポートを検索](../lifecycle-services/lcs-support.md).
+Dynamics 365 for Finance and Operations の保証稼働時間は 99.9％ です。 計画的なダウンタイムは月 1 回発生し、8 時間以内に終了します。 ダウンタイム中に完了した作業は必ずしも 8 時間かかるとは限らないため、お客様の環境がダウンすると予想される時間を常にお知らせします。 [Microsoft Dynamics 365 for Finance and Operations および Dynamics Lifecycle Services のサポートを検索](../lifecycle-services/lcs-support.md).
 
 ### <a name="high-availability-features"></a>高可用性機能
 サービスの可用性を確保するため、すべての運用環境はデフォルトの Azure 高可用性 (HA) 機能を使用して保護されています。 HA 機能はデータ センター内の単一のノードの失敗により引き起こされるダウンタイムを回避する方法を提供し、DR 機能はデータ センター全体に広く影響を及ぼす機能停止を防止します。 Dynamics 365 for Operations クラウド アーキテクチャは、計算層に Azure 可能性セットを使用して、単一ポイント エラーのイベントを防止します。 Azure 可用性セットの詳細については、[Windows VM のAzure 可用性セット ガイドライン](/azure/virtual-machines/windows/infrastructure-availability-sets-guidelines) を参照してください。

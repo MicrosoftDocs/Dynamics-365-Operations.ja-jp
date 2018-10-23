@@ -1,28 +1,29 @@
 --- 
-title: "固定資産減価償却配賦の設定 (中国)"
+title: "固定資産減価償却配賦の設定"
 description: "日本では、特定の固定資産の減価償却費は複数の部門間で共有できます。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 11/11/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: AssetAllocationRuleSetup_CN,  AssetPosting
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: China (PRC), Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 5868174793c1a613c7a7fe8c8242c4c57b0d0908
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 9bdc139e3a65bd11d77cbaa94ddbae1e607c55aa
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/16/2018
 
 ---
-# <a name="set-up-fixed-asset-depreciation-allocation-china"></a>固定資産減価償却配賦の設定 (中国)
+# <a name="setup-fixed-asset-depreciation-allocation"></a>固定資産減価償却配賦の設定
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

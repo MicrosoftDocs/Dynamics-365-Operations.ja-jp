@@ -1,28 +1,29 @@
 --- 
-title: "単一資産の資産耐用年数期間中の減価償却方法の変更 (日本)"
+title: "単一資産の資産耐用年数期間中の減価償却方法の変更"
 description: "日本では、固定資産の耐用年数期間中、減価償却方法を変更することが許可されています。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 09/22/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: AssetTable, AssetBook, AssetDepProfileChange_JP,  AssetUndepreciatedBalancedSchedule_JP
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 0d965ab57227c48c3b86d61c904040af4ea8a60c
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: ae83c1ebe1ddad4c4f8afea4dbe5e78dbec1039e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/16/2018
 
 ---
-# <a name="change-the-depreciation-method-during-the-asset-life-for-one-asset-japan"></a>単一資産の資産耐用年数期間中の減価償却方法の変更 (日本)
+# <a name="change-the-depreciation-method-during-the-asset-life-for-one-asset"></a>単一資産の資産耐用年数期間中の減価償却方法の変更
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
