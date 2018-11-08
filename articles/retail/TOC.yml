@@ -14,6 +14,8 @@
       href: dev-itpro/choose-deployment.md
     - name: Retail に関するサポートの利用
       href: retail-support.md
+    - name: 1 つのバージョンのサービス更新に関するよく寄せられる質問
+      href: ../fin-and-ops/get-started/one-version.md
 - name: 実装ライフサイクルの理解
   href: ../fin-and-ops/imp-lifecycle/implementation-lifecycle.md
   items:
@@ -145,11 +147,9 @@
       items:
         - name: 小売周辺機器
           href: retail-peripherals-overview.md
-        - name: Microsoft によってテストされた POS ハードウェア周辺機器
-          href: microsoft-tested-pos-hardware-peripherals.md
         - name: 小売の周辺機器シミュレーター
           href: dev-itpro/retail-peripheral-simulator.md
-        - name: 周辺機器の POS への接続
+        - name: POS への周辺機器の接続
           href: define-maintain-channel-clients-registers-hw-stations.md
     - name: 画面レイアウト
       items:
@@ -229,7 +229,9 @@
       href: set-up-rfm-analysis.md
 - name: 割引と価格調整
   items:
-    - name: Retail 販売価格の管理
+    - name: 小売割引
+      href: retail-discounts-overview.md
+    - name: 小売販売価格の管理
       href: price-management.md
     - name: 価格調整と割引
       href: price-adjustments-discounts.md
@@ -271,9 +273,9 @@
       href: ../supply-chain/pim/search-products-product-variants.md
 - name: ロイヤルティ
   items:
-    - name: 顧客ロイヤルティ プログラムの設定
+    - name: ロイヤルティの概要
       href: set-up-customer-loyalty-program.md
-- name: 棚卸資産
+- name: 在庫
   items:
     - name: 店舗在庫管理
       href: work-with-store-inventory.md
@@ -307,14 +309,18 @@
       href: ../talent/create-job.md
 - name: ローカライズと規制の機能
   items:
+    - name: 小売チャネルの会計統合
+      href: localizations/fiscal-integration-for-retail-channel.md
     - name: 東ヨーロッパ
       items:
         - name: 東ヨーロッパにおける Retail の事前請求書
           href: localizations/emea-eeu-advance-invoices-for-retail.md
         - name: 東ヨーロッパにおける Retail の小口現金管理
           href: localizations/emea-eeu-petty-cash-for-retail.md
-        - name: "東ヨーロッパ諸国での\_Retail\_顧客請求書および返品販売注文"
+        - name: 東ヨーロッパ諸国での Retail 顧客請求書および返品販売注文
           href: localizations/emea-eeu-retail-invoices.md
+        - name: チェコ共和国、ハンガリー、およびポーランドのキャッシュ レジスターの配置ガイドライン
+          href: localizations/emea-eeu-deployment.md
     - name: フランス
       items:
         - name: キャッシュ レジスター機能
@@ -329,6 +335,10 @@
           href: localizations/apac-ind-loc-deployment-guidelines.md
         - name: インドにおけるアップグレードおよび N-1 のサポート
           href: localizations/apac-ind-n-1-for-india.md
+    - name: イタリア
+      items:
+        - name: 会計プリンター統合
+          href: localizations/emea-ita-fpi-sample.md
     - name: ノルウェー
       items:
         - name: キャッシュ レジスター機能
@@ -488,8 +498,10 @@
           href: dev-itpro/modern-pos-trigger-extensibility.md
         - name: POS ビューへのカスタム コントロールの追加
           href: dev-itpro/pos-custom-control.md
-        - name: ボタン グリッド デザイナーを使用した POS 操作の POS レイアウトへの追加
+        - name: ボタン グリッド デザイナーを使用して POS 操作を POS レイアウトに追加
           href: dev-itpro/add-POS-operations.md
+        - name: Retail POS API
+          href: dev-itpro/POS-APIs.md
         - name: POS 支払拡張機能
           href: dev-itpro/pos-payment-extension.md
         - name: 外部ギフト カードのサポート

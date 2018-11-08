@@ -1,11 +1,20 @@
-- name: Dynamics 365 for Talent へようこそ
+- name: Dynamics 365 for Talent
   href: index.md
   items:
     - name: 使用開始
       href: talent-get-started.md
       items:
         - name: 新機能および変更された機能
+          href: whats-new.md
           items:
+            - name: Dynamics 365 for Talent Core HR の新機能および変更された機能 (2018 年 10 月 31 日)
+              href: whats-new-talent-october-31.md
+            - name: Dynamics 365 for Talent Core HR の新機能および変更された機能 (2018 年 10 月 19 日)
+              href: whats-new-talent-october-19.md
+            - name: Dynamics 365 for Talent Core HR の新機能および変更された機能 (2018 年 10 月 15 日)
+              href: whats-new-talent-october-11.md
+            - name: Dynamics 365 for Talent Core HR の新機能および変更された機能 (2018 年 10 月 8 日)
+              href: whats-new-talent-october-8.md
             - name: Dynamics 365 for Talent Core HR の新機能および変更された機能 (2018 年 10 月 1 日)
               href: whats-new-talent-october-01.md
             - name: Dynamics 365 for Talent Core HR の新機能および変更された機能 (2018 年 9 月 24 日)
@@ -30,6 +39,8 @@
           href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
         - name: Core HR および Common Data Service for Apps
           href: CoreHREntities.md
+        - name: 統合
+          href: talent-financeandoperations-integration.md
         - name: プレビュー機能の利用
           href: access-preview-feature.md
         - name: Talent と Dayforce 間の給与統合のコンフィギュレーション
@@ -64,6 +75,34 @@
       items:
         - name: Attract の機能
           href: attract-overview.md
+        - name: Attract でのプロセス テンプレートの作成
+          href: Process-templates-Attract.md
+        - name: Attract での職務の作成、承認、および転記
+          href: Creating-jobs-Attract.md
+        - name: 人材プールによるソーシング
+          href: attract-talent-pools.md
+        - name: LinkedIn Recruiter によるソーシング
+          href: attract-linked-in-recruiter.md
+        - name: Attract での採用プロセス活動
+          href: activities-attract.md
+        - name: 拡張性
+          href: extensibility-attract.md
+        - name: キャリア サイトおよび候補者エクスペリエンス
+          href: career-site.md
+        - name: オファー管理の設定
+          href: offer-setup.md
+        - name: オファーの作成、承認、および署名
+          href: creating-offers.md
+        - name: 電子メール テンプレートの作成および管理
+          href: email-templates.md
+        - name: レポートと分析
+          href: Reporting-Analytics-Attract.md
+        - name: Attract でのセキュリティおよびロール管理
+          href: security-attract.md
+        - name: Attract での管理者設定
+          href: Admin-Settings-Attract.md
+        - name: インテリジェントな推奨
+          href: Intelligent-Recommendations.md
         - name: 魅力的な新人研修エクスペリエンスの作成
           href: create-onboarding-experience.md
     - name: 従業員の動機付け
