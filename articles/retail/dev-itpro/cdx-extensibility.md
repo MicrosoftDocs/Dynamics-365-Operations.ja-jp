@@ -17,10 +17,10 @@ ms.author: mumani
 ms.search.validFrom: 2017-09-15
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
-ms.openlocfilehash: 4516ff2d5d01765d87696af4b9cc9b631ba11f79
+ms.sourcegitcommit: d3f974f94b6c327fd70b8098d24f9e1f1e1e8eeb
+ms.openlocfilehash: 1a346c6831556f7f23fb92dbdc78a89c786af2e7
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/17/2018
+ms.lasthandoff: 11/09/2018
 
 ---
 # <a name="enable-custom-commerce-data-exchange-synchronization-via-extension"></a><span data-ttu-id="a1b47-103">拡張機能によるカスタム Commerce Data Exchange の同期の有効化</span><span class="sxs-lookup"><span data-stu-id="a1b47-103">Enable custom Commerce Data Exchange synchronization via extension</span></span>
@@ -200,8 +200,8 @@ ms.lasthandoff: 09/17/2018
 ```
 <Subjob Id="RetailTransactionTable" TargetTableName="CONTOSORETAILTRANSACTIONTABLE" TargetTableSchema="ext"  OverrideTarget="false">
     <AxFields>
-        <Field Name="seatNumber"/>
-        <Field Name="serverStaffId"/>
+        <Field Name="ContosoRetailSeatNumber"/>
+        <Field Name="ContosoRetailServerStaffId"/>
     </AxFields>
 </Subjob>
 ```
@@ -286,8 +286,8 @@ ms.lasthandoff: 09/17/2018
                 <!--Notice that there is no mention of the <ScheduledByJobs></ScheduledByJobs> because the subjob is already part of an upload job. -->
                 <AxFields>
                     <!--If you notice the existing columns are not listed here in the <Field> tag, it's because the existing fields are already mapped in the main RetailCdxSeedData resource file, we only add the delta here. -->
-                    <Field Name="SeatNumber" />
-                    <Field Name="ServerStaffId" />
+                    <Field Name="ContosoRetailSeatNumber" />
+                    <Field Name="ContosoRetailServerStaffId" />
                 </AxFields>
             </Subjob>
         </Subjobs>
