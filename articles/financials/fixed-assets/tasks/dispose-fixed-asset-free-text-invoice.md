@@ -25,6 +25,7 @@ ms.lasthandoff: 10/16/2018
 ---
 # <a name="dispose-of-a-fixed-asset-using-a-free-text-invoice"></a>自由書式の請求書を使用した固定資産の処分
 
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 ここでは、自由書式の請求書を使用した固定資産の廃棄方法を説明します。
 
