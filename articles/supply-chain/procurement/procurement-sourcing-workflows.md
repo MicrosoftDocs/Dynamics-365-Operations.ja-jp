@@ -50,11 +50,12 @@ ms.lasthandoff: 05/08/2018
 | 仕入先追加申請ワークフロー  | 仕入先要求経由で新しい仕入先を追加するための確認と承認ワークフローを作成します。 |
 
 ## <a name="creating-a-workflow"></a>ワークフローの作成
+
 ワークフローを作成するには、[購買および調達 &gt; 設定 &gt; 購買および調達ワークフロー] に移動し、ワークフローのタイプを選択して新しいワークフローを作成します。  
 
 ワークフローのキャンバスにワークフロー要素をデザイナーにドラッグし、要素をフローにリンクすることができます。 ワークフロー要素はコンフィギュレーションする必要があります。 承認とタスクのワークフロー要素において、どの参加者がアクションを実行する必要があるかを設定できます。
-参加者のタイプ
-----------------------
+
+## <a name="types-of-participants"></a>参加者のタイプ
 
 参加者の次のグループに承認ステップを割り当てることができます。
 
@@ -68,13 +69,12 @@ ms.lasthandoff: 05/08/2018
 
 
 
-<a name="additional-resources"></a>その他のリソース
---------
+## <a name="additional-resources"></a>その他のリソース
 
-[購買要求のビジネス プロセスのワークフローの定義](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions)
+- [購買要求のビジネス プロセスのワークフローの定義](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions)
 
-[購買要求ワークフロー](purchase-requisitions-workflow.md)
+- [購買要求ワークフロー](purchase-requisitions-workflow.md)
 
-[オンボーディングの仕入先](vendor-onboarding.md)
+- [オンボーディングの仕入先](vendor-onboarding.md)
 
 
