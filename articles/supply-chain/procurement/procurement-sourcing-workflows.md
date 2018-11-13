@@ -19,10 +19,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: 06ab745d9df9b095b861cf7bc79aba6d1361eeb0
+ms.sourcegitcommit: cc995b474e86272b49629f97e1b4d4b4fb597b9d
+ms.openlocfilehash: d25ca64fb6a3fa7d7898ec68568703f3de7b1595
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 11/13/2018
 
 ---
 
@@ -50,11 +50,12 @@ ms.lasthandoff: 08/07/2018
 | <span data-ttu-id="f824b-128">仕入先追加申請ワークフロー</span><span class="sxs-lookup"><span data-stu-id="f824b-128">Vendor add application workflow</span></span>  | <span data-ttu-id="f824b-129">仕入先要求経由で新しい仕入先を追加するための確認と承認ワークフローを作成します。</span><span class="sxs-lookup"><span data-stu-id="f824b-129">Create review and approval workflows for adding new vendors via vendor requests.</span></span> |
 
 ## <a name="creating-a-workflow"></a><span data-ttu-id="f824b-130">ワークフローの作成</span><span class="sxs-lookup"><span data-stu-id="f824b-130">Creating a workflow</span></span>
+
 <span data-ttu-id="f824b-131">ワークフローを作成するには、[購買および調達 &gt; 設定 &gt; 購買および調達ワークフロー] に移動し、ワークフローのタイプを選択して新しいワークフローを作成します。</span><span class="sxs-lookup"><span data-stu-id="f824b-131">To create a workflow, go to Procurement and sourcing &gt; Setup &gt; Procurement and sourcing workflows and create a new workflow by selecting the type of workflow you want to create.</span></span>  
 
 <span data-ttu-id="f824b-132">ワークフローのキャンバスにワークフロー要素をデザイナーにドラッグし、要素をフローにリンクすることができます。</span><span class="sxs-lookup"><span data-stu-id="f824b-132">In the workflow canvas you can drag workflow elements into the designer and link the elements into a flow.</span></span> <span data-ttu-id="f824b-133">ワークフロー要素はコンフィギュレーションする必要があります。</span><span class="sxs-lookup"><span data-stu-id="f824b-133">The workflow elements should be configured.</span></span> <span data-ttu-id="f824b-134">承認とタスクのワークフロー要素において、どの参加者がアクションを実行する必要があるかを設定できます。</span><span class="sxs-lookup"><span data-stu-id="f824b-134">For approval and task workflow elements you can configure which participant should take action.</span></span>
-<span data-ttu-id="f824b-135">参加者のタイプ</span><span class="sxs-lookup"><span data-stu-id="f824b-135">Types of participants</span></span>
-----------------------
+
+## <a name="types-of-participants"></a><span data-ttu-id="f824b-135">参加者のタイプ</span><span class="sxs-lookup"><span data-stu-id="f824b-135">Types of participants</span></span>
 
 <span data-ttu-id="f824b-136">参加者の次のグループに承認ステップを割り当てることができます。</span><span class="sxs-lookup"><span data-stu-id="f824b-136">You can assign an approval step to the following groups of participants.</span></span>
 
@@ -68,13 +69,12 @@ ms.lasthandoff: 08/07/2018
 
 
 
-<a name="additional-resources"></a><span data-ttu-id="f824b-149">その他のリソース</span><span class="sxs-lookup"><span data-stu-id="f824b-149">Additional resources</span></span>
---------
+## <a name="additional-resources"></a><span data-ttu-id="f824b-149">その他のリソース</span><span class="sxs-lookup"><span data-stu-id="f824b-149">Additional resources</span></span>
 
-[<span data-ttu-id="f824b-150">購買要求のビジネス プロセスのワークフローの定義</span><span class="sxs-lookup"><span data-stu-id="f824b-150">Defining business process workflows for purchase requisitions</span></span>](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions)
+- [<span data-ttu-id="f824b-150">購買要求のビジネス プロセスのワークフローの定義</span><span class="sxs-lookup"><span data-stu-id="f824b-150">Defining business process workflows for purchase requisitions</span></span>](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions)
 
-[<span data-ttu-id="f824b-151">購買要求ワークフロー</span><span class="sxs-lookup"><span data-stu-id="f824b-151">Purchase requisition workflow</span></span>](purchase-requisitions-workflow.md)
+- [<span data-ttu-id="f824b-151">購買要求ワークフロー</span><span class="sxs-lookup"><span data-stu-id="f824b-151">Purchase requisition workflow</span></span>](purchase-requisitions-workflow.md)
 
-[<span data-ttu-id="f824b-152">オンボーディングの仕入先</span><span class="sxs-lookup"><span data-stu-id="f824b-152">Onboarding vendors</span></span>](vendor-onboarding.md)
+- [<span data-ttu-id="f824b-152">オンボーディングの仕入先</span><span class="sxs-lookup"><span data-stu-id="f824b-152">Onboarding vendors</span></span>](vendor-onboarding.md)
 
 
