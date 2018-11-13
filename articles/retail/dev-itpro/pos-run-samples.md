@@ -17,10 +17,10 @@ ms.author: mumani
 ms.search.validFrom: 2017-11-27
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: dec83a01385cb3f7c9affde1ac0b93102d859fb7
+ms.sourcegitcommit: 5511645e9287198ee603cdc7611c9168b7cb9982
+ms.openlocfilehash: ce0d4af4dae49f0661b8668a6b9f07ac7d174cf0
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 11/13/2018
 
 ---
 
@@ -43,10 +43,10 @@ ms.lasthandoff: 08/09/2018
     {
         "extensionPackages": [
             {
-                "baseUrl": " SampleExtensions"
+                "baseUrl": "SampleExtensions"
             },
             {
-                "baseUrl": " SampleExtensions2"
+                "baseUrl": "SampleExtensions2"
             }
         ] 
     }
