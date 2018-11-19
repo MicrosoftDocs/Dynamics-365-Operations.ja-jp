@@ -3,7 +3,7 @@ title: "Dynamics 365 for Finance and Operations バージョン 8.1.1 の拡張�
 description: "このトピックでは、Dynamics 365 for Finance and Operations バージョン 8.1.1 でリリースされた拡張機能を一覧表示します。"
 author: FrankDahl
 manager: AnnBe
-ms.date: 10/09/2018
+ms.date: 11/19/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -29,7 +29,6 @@ ms.lasthandoff: 11/03/2018
 
 [!include [banner](../includes/banner.md)]
 
-[!include [preview-banner](../includes/preview-banner.md)]
 
 これは、Dynamics 365 for Finance and Operations バージョン 8.1.1 に実装された拡張機能の一覧です。 拡張性をサポートする変更のスケジュールの詳細については、「[アプリケーション機能拡張計画](extensibility-roadmap.md)」を参照してください。
 

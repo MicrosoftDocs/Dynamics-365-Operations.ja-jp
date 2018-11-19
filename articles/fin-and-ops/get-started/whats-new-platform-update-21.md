@@ -3,7 +3,7 @@ title: "Dynamics 365 for Finance and Operations プラットフォーム更新�
 description: "このトピックでは、Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 21 の新機能または変更された機能について説明します。 このバージョンは 2018 年 10 月にリリースされました。"
 author: tonyafehr
 manager: AnnBe
-ms.date: 10/29/2018
+ms.date: 11/19/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -27,7 +27,6 @@ ms.lasthandoff: 11/01/2018
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-platform-update-21-october-2018"></a>Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 21 (2018 年 10 月) の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 
 このトピックでは、Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 21 の新機能または変更された機能について説明します。 このバージョンは 2018 年 10 月にリリースされ、ビルド番号は 7.0.5073 です。
