@@ -18,10 +18,10 @@ ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: dd9ad545f453cf63dc7e804748b7fe82bd27b2da
-ms.openlocfilehash: 3cdcd39f17be310450971f5cd89002d7a87dd4d1
+ms.sourcegitcommit: d540d8093743073aa61bd3c7ab3b66dbedd35b03
+ms.openlocfilehash: 564d86ea7f29eb5f4bd5cbb3692e5848381d43eb
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 11/01/2018
 
 ---
 
@@ -53,11 +53,10 @@ ms.lasthandoff: 08/09/2018
 
 | 機能 | X++ | C# | コメント |
 |---|---|---|---|
-| 申告 | すべての宣言は、すべての X++ ステートメントより前にメソッドの開始をする必要があります。 | 宣言は、メソッド内のどこでも実行できます。 | 両方の言語は同じタイプの複数の変数を 1 つの宣言にまとめて一覧表示できます。 両方の言語を使用すると宣言ステートメントに初期値を割り当てることができます。 |
 | `if` および `else` の条件付きステートメント | `if` ステートメントは、ブール値に自動的に変換できる式のあらゆる型を受け付けます。 一般的な例は、0 が false を意味する `int`、または Null が false を意味するオブジェクトを含みます。 | `if` ステートメントには、ブール式が必要です。 | 中括弧と括弧に関する構文構造は、X++ と C# でまったく同じです。 |
 | リテラル文字列 | リテラル文字列は、次のいずれかの方法で区切ることができます。<ul><li>二重引用符 (") 文字のペア。</li><li>単一引用符 (') 文字のペア。</li></ul> | リテラル文字列は、二重引用符 (") のペアで区切る必要があります。 | X++ で、二重引用符文字は通常、文字列を区切るために使用されます。 ただし、文字列に二重引用符文字を含める必要がある場合、単一引用符文字で文字列を区切るのが便利です。|
 | char `type` | X++ には `char` または文字タイプがありません。 長さ 1 の `str` を宣言することができますが、文字列のままです。<br> `str 1 myString = "a";` | C# には `char` があります。 最初に `char` を `string` に明示的に変換できますが、パラメーターとして `char` を `string` パラメーターを入力するメソッドに渡すことはできません。| X++ データ型の詳細については、プリミティブ データ型を参照してください。|
-| メッセージの出力| X++ は情報ログ ウィンドウ内でユーザーにメッセージを提供します。 一般的なメソッドは次のとおりです。<ul><li><strong>print</strong> ステートメント:</li><li>`Global` クラスの静的メソッド:<ul><li>Global::info</li><li>Global::warning</li><li>Global::error</li></ul></li></ul>| コマンド ライン C# プログラムで、コンソールにメッセージを配信することができます。 一般的なメソッドは次のとおりです。<ul><li>`Console.Out.WriteLine`</li><li>`Console.Error.WriteLine`</li></ul>| <strong>purint</strong> ステートメントは、関数 nor でもメソッドでもありません。 推奨値は `print(mystring);` ではなく `print mystring;` を使います。 `pause;` ステートメントは、<strong>印刷</strong>ステートメントの直後に便利です。 print ステートメントは、<strong>int</strong> およびその他のプリミティブ値を表示する文字列に自動的に変換するので、テストに便利です。 詳細については、「明細書の印刷」を参照してください。 `Global` クラスは、X++ コンパイラで特別に認識されます。 `info` メソッドは、接頭 Global:: なしで呼び出すことができます語。|
+| メッセージの出力| X++ は情報ログ ウィンドウ内でユーザーにメッセージを提供します。 一般的なメソッドは次のとおりです。<ul><li><strong>print</strong> ステートメント:</li><li>`Global` クラスの静的メソッド:<ul><li>Global::info</li><li>Global::warning</li><li>Global::error</li></ul></li></ul>| コマンド ライン プログラムで、コンソールにメッセージを配信することができます。 一般的なメソッドは次のとおりです。<ul><li>`Console.Out.WriteLine`</li><li>`Console.Error.WriteLine`</li></ul>|  |
 
 ### <a name="x-and-c-samples"></a>X++ および C++ のサンプル
 
@@ -245,7 +244,7 @@ C#
     }
 
 
- 
+ 
 ##### <a name="output"></a>出力
 
 C# プログラムのコンソール出力は次のとおりです。
@@ -289,7 +288,7 @@ X++ では、カウンター変数は **for** ステートメントの一部と�
 }
 
 
- 
+ 
 ##### <a name="output"></a>出力
 
 X++ 印刷ウィンドウの出力は次のようになります。
@@ -331,7 +330,7 @@ C#
     }
 
 
- 
+ 
 ##### <a name="output"></a>出力
 
 C# プログラムのコンソール出力は次のとおりです。1 (任意のキーを押して再開します。) 2 (任意のキーを押して再開します。) 3 (任意のキーを押して再開します。) 4 (任意のキーを押して再開します。) (任意のキーを押して再開します。)
@@ -441,7 +440,7 @@ C#
     ***/
 
 
- 
+ 
 ## <a name="x-c-comparison-string-case-and-delimiters"></a>X++、C# の比較: 文字列の大文字小文字の区別および区切り記号
 このセクションでは、X++ と C\# の混合ケーシングによる文字列の処理を比較します。 また、X++ で使用できる文字列の区切り記号についても説明します。
 
@@ -944,7 +943,7 @@ static void JobRs008a_Exceptions(Args _args)
     info("End of program.");
 }</pre>
 
- 
+ 
 ##### <a name="output"></a>出力
 
 情報ログ ウィンドウからの出力を次に示します。
@@ -1021,7 +1020,7 @@ End of program.
     } // EOClass
 
 
- 
+ 
 ##### <a name="output"></a>出力
 
 C\# コンソールへの実際の出力を次に示します。
@@ -1111,7 +1110,7 @@ Console.WriteLine ("In catch of -- Exception. catch をそのままにします�
 } Console.WriteLine("End of C# callee method."); return bReturnCode; } }
 
 
- 
+ 
 #### <a name="output"></a>出力
 
 コンソールへの出力を次に示します。
@@ -1242,7 +1241,7 @@ X++ の例で注目すべき重要なことは次のとおりです。
             myXppClass.myDelegate(_stringFromJob);
         }
     }
-</pre> 
+</pre> 
 
 以前の X++ ジョブの出力は次のとおりです。
 
@@ -1453,8 +1452,8 @@ Message (04:02:29 pm)
 4001 , The Bulb
 ***/
 </pre>
- 
-### <a name="x-sql-keywords"></a>X++ SQL キーワード
+ 
+### X++ SQL キーワード
 
 次の X++ SQL キーワードは、ANSI SQL に含まれていないものです。
 -   crosscompany
@@ -1504,8 +1503,8 @@ static void OByWhere453Job(Args _args)
     }
 }
 </pre>
- 
-### <a name="aggregate-fields"></a>集計フィールド
+ 
+### 集計フィールド
 
 次のテーブルは、**選択** 列リストの集計フィールドが X++ SQL と ANSI SQL の間でどのように参照されるかの相違点を示しています。 集計フィールドとは、**合計**または**平均**などの機能によって派生したものです。
 

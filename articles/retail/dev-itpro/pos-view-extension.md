@@ -3,7 +3,7 @@ title: "POS ビューの拡張によるカスタム列およびアプリ バー 
 description: "このトピックでは、[顧客の追加/編集] 画面などの既存の POS ビューを拡張する方法について説明します。"
 author: mugunthanm
 manager: AnnBe
-ms.date: 10/01/2018
+ms.date: 10/30/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -17,10 +17,10 @@ ms.author: mumani
 ms.search.validFrom: 2017-11-22
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: c59242a350140d4965dd86b8beed4eb18c02cd48
-ms.openlocfilehash: b711b5462558c785f91000f8d64396b471eb7bfd
+ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
+ms.openlocfilehash: 75f17f5d322b0c8127451a4898c1b581c21ff7e4
 ms.contentlocale: ja-jp
-ms.lasthandoff: 10/01/2018
+ms.lasthandoff: 11/01/2018
 
 ---
 
@@ -46,6 +46,7 @@ POS ビューでは、次の拡張ポイントとパターンがサポートさ�
 > [!NOTE]
 > 今後のリリースと修正プログラムで、他のビューの拡張ポイントをさらにサポートします。
 
+
 | POS ビュー                        | カスタム コントロールがサポートされています | カスタム列がサポートされています | カスタムのアプリ バーのボタンがサポートされています |
 |---------------------------------|-------------------------------|------------------------------|--------------------------------------|
 | カート ビュー (画面レイアウトに基づく) | 有                           | 有                          | 無                                   |
@@ -66,7 +67,13 @@ POS ビューでは、次の拡張ポイントとパターンがサポートさ�
 | ResumeCartView                  | 無                            | 有                          | 無                                    |
 | OrderFulfillmentView            | 無                            | 無                           | 有                                   |
 | InventoryLookupMatrixView       | 無                            | 無                           | 有                                   |
-| SuspendTransactionView          | 無                            | 有                          | 無                               |     
+| SuspendTransactionView          | 無                            | 有                          | 無                               |   
+| ManageShiftView                 | 無                            | 無                           | 有                               |  
+| ReportDetailsView               | 無                            | 無                           | 有                               |
+| SearchReceiptsView              | 無                            | 無                           | 有                               |
+| StockCountDetailsView           | 無                            | 無                          | 有                               |
+
+
 
 
 > [!NOTE]

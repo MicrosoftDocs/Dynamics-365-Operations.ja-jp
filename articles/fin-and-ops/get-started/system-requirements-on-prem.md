@@ -3,7 +3,7 @@ title: "オンプレミス配置のシステム要件"
 description: "このトピックでは、現在のバージョンの Microsoft Dynamics 365 for Finance and Operations におけるオンプレミス開発のシステム要件を一覧表示します。"
 author: kfend
 manager: AnnBe
-ms.date: 09/04/2018
+ms.date: 10/19/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: kfend
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 8a282207246fc1dbce1c4c40af118a3dc9976a2a
-ms.openlocfilehash: 4ffbed088efd7472c1fa65d44a435f05739e3338
+ms.sourcegitcommit: cc73d8c8146495801d122b5a73536a88cf81bcc0
+ms.openlocfilehash: 9c0548e9c712e723b790f7361e5975ea387d1ac6
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/04/2018
+ms.lasthandoff: 10/19/2018
 
 ---
 
@@ -204,6 +204,8 @@ SQL Server は、生産用として少なくとも 2 つのノードを持つ高
 ## <a name="virtual-host-requirements"></a>仮想ホストの要件
 Finance and Operations (オンプレミス) 環境の仮想ホストを設定する場合は、[Service Fabric クラスターの計画および準備](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation) と [Service Fabric クラスターの説明](/azure/service-fabric/service-fabric-cluster-resource-manager-cluster-description) のガイドラインを参照してください。 各仮想ホストには、サイズ変更されているインフラストラクチャ用のコアが十分にある必要があります。 SQL Server が物理ハードウェア上に存在し、その他のすべてが仮想化されている場合は、複数の高度な構成が可能です。 SQL Server が仮想化されている場合、ディスク サブシステムは高速 SAN または同等のものにする必要があります。 いずれの場合も、仮想ホストの基本設定が高可用性および重複であることを確認してください。 いずれの場合も、仮想化を使用する場合は、VM スナップショットを作成する必要はありません。
 
+Finance and Operations には、非 Microsoft 仮想化プラットフォーム (具体的には VMWare) での操作に関する Microsoft の標準サポート ポリシーが適用されます。 詳細については、[Microsoft ソフトウェアのサポート ポリシー](https://support.microsoft.com/en-us/help/897615/support-policy-for-microsoft-software-that-runs-on-non-microsoft-hardw)を参照してください。 つまり、この環境では製品をサポートしますが、問題の調査を依頼された場合、仮想化プラットフォームのない状態または Microsoft 仮想化プラットフォームで問題を再現するようまずお客様に依頼する場合があります。
+
 ## <a name="software-requirements-for-all-server-computers"></a>すべてのサーバー コンピュータのソフトウェア要件
 Finance and Operations (オンプレミス) コンポーネントをインストールする前に、次のソフトウェアがコンピュータに存在している必要があります:
 
@@ -222,6 +224,7 @@ Finance and Operations (オンプレミス) コンポーネントをインスト
 ## <a name="software-requirements-for-database-servers"></a>データベース サーバーのソフトウェア要件
 
 - 64 ビット バージョンの SQL Server 2016 のみがサポートされています。
+- サーバーおよびデータベースの照合順序では、**SQL_Latin1_General_CP1_CI_AS** のみ有効です。
 - 実稼動環境では、使用している SQL Server のバージョンの最新の累積的な更新プログラム (CU) をインストールすることをお勧めします。
 - Finance and Operations (オンプレミス) では、大文字小文字を区別しない、アクセントを区別する、カナを区別する、および幅を区別しない Unicode 照合順序をサポートします。 照合順序は、AOS インスタンスを実行しているコンピュータの Windows ロケールと一致する必要があります。 新しいインストールを設定する場合は、SQL Server 照合の代わりに Windows 照合を選択することをお勧めします。 SQL Server データベースの照合順序を選択する方法の詳細については、「[SQL Server に関するドキュメント](/sql/sql-server/sql-server-technical-documentation)」を参照してください。
 

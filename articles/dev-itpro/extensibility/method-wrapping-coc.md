@@ -1,31 +1,32 @@
 ---
 title: "クラスの拡張機能 - メソッドのラッピングとコマンド チェーン"
 description: "このトピックでは、メソッド ラッピングを使用してパブリック メソッドと保護メソッドのビジネス ロジックを拡張する方法について説明します。"
-author: robadawy
+author: ChrisGarty
 manager: AnnBe
-ms.date: 09/28/2018
+ms.date: 11/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.search.region: Global
-ms.author: robadawy
+ms.author: cgarty
 ms.search.validFrom: 2017-08-21
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7344f460fcb443a78b254e2387fbf5c9134bf674
-ms.openlocfilehash: 8a5910bf0f839c9fa18a5b045f4df52dedffb8b7
+ms.sourcegitcommit: 53c0da5e9697deaf946ccd4fbcd2102faa62b195
+ms.openlocfilehash: e59004490056a6482786a31b53421304552158fb
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/28/2018
+ms.lasthandoff: 11/02/2018
 
 ---
 
 # <a name="class-extension-via-method-wrapping-and-chain-of-command-coc"></a>メソッドのラッピングとコマンド チェーン経由のクラスの拡張機能 (CoC)
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 クラス拡張やクラス強化の機能が、Microsoft Dynamics 365 for Finance and Operations で強化されました。 強化対象である基本クラスで定義されたメソッド関連のロジックをラップできるようになりました。 イベント ハンドラーを使用せずに、パブリック メソッドとプロテクト メソッドのロジックを拡張することができます。 メソッドをラップするとき、基本クラスのパブリック メソッドと保護されたメソッド、および変数にもアクセスできます。 この方法で、トランザクションを開始し、クラスに関連付けられた状態変数を容易に管理することができます。
 
@@ -34,21 +35,23 @@ ms.lasthandoff: 09/28/2018
 ```
 class BusinessLogic1
 {
-    str DoSomething(int arg) {
-    …
+    str doSomething(int arg) 
+    {
+        // ...
     }
 }
 ```
 
-同じメソッド名を再利用することにより、拡張クラス内の **DoSomething** メソッドの機能を強化することができるようになりました。 拡張クラスは強化されたクラスが定義されているモデルを参照するパッケージに属している必要があります。
+同じメソッド名を再利用することにより、拡張クラス内の **doSomething** メソッドの機能を強化することができるようになりました。 拡張クラスは強化されたクラスが定義されているモデルを参照するパッケージに属している必要があります。
 
 ```
-[ExtensionOf(ClassStr(BusinessLogic1))]
+[ExtensionOf(classStr(BusinessLogic1))]
 final class BusinessLogic1_Extension
 {
-    str DoSomething(int arg) {
+    str doSomething(int arg) 
+    {
         // Part 1
-        var s = next DoSomething(arg + 4);
+        var s = next doSomething(arg + 4);
         // Part 2
         return s;
     }
@@ -56,16 +59,16 @@ final class BusinessLogic1_Extension
 ```
 
 
-この例では、**DoSomething** のラッパーと **next** キーワードを必要に応じて使用することにより、メソッドのコマンド チェーン (CoC) を作成します。 CoC は、要求が一連の受信者によって処理される設計パターンです。 パターンは、送信者と受信者の疎結合をサポートします。
+この例では、**doSomething** のラッパーと **next** キーワードを必要に応じて使用することにより、メソッドのコマンド チェーン (CoC) を作成します。 CoC は、要求が一連の受信者によって処理される設計パターンです。 パターンは、送信者と受信者の疎結合をサポートします。
 
 現在は次のコードを実行します。
 
 ```
-BusinessLogic1 c = new BusinessLogic1();
-info(c.DoSomething(33));
+BusinessLogic1 object = new BusinessLogic1();
+info(object.doSomething(33));
 ```
 
-このコードが実行されると、システムは、**DoSomething** メソッドをラップするメソッドを検索します。 システムは、**BusinessLogic1_Extension** クラスの **DoSomething** メソッドなど、これらのメソッドの 1 つをランダムに実行します。 次の **DoSomething** メソッドへの呼び出しが発生すると、システムは CoC 内の別のメソッドをランダムに選択します。 ラップされたメソッドがこれ以上ない場合は、システムは元の実装を呼び出します。
+このコードが実行されると、システムは、**doSomething** メソッドをラップするメソッドを検索します。 システムは、**BusinessLogic1_Extension** クラスの **doSomething** メソッドなど、これらのメソッドの 1 つをランダムに実行します。 次の **doSomething** メソッドへの呼び出しが発生すると、システムは CoC 内の別のメソッドをランダムに選択します。 ラップされたメソッドがこれ以上ない場合は、システムは元の実装を呼び出します。
 
 ## <a name="supported-versions"></a>サポートされているバージョン
 > [!IMPORTANT]
@@ -77,10 +80,10 @@ info(c.DoSomething(33));
 次のセクションでは、ラッピング メソッドと CoC メソッドの機能について詳しく説明します。
 
 ### <a name="wrapping-public-and-protected-methods"></a>パブリック メソッドと保護対象メソッドのラッピング
-クラス、テーブル、またはフォームの保護またはパブリック メソッドは、そのクラス、テーブル、またはフォームを補足する拡張子クラスを使用してラップできます。 ラッパー メソッドは、基本メソッドと同じシグネチャを持つ必要があります。
+クラス、テーブル、データ エンティティ、またはフォームの保護またはパブリック メソッドは、拡張子クラスを使用してラップできます。 ラッパー メソッドは、基本メソッドと同じシグネチャを持つ必要があります。
 
 - フォーム クラスを拡張するときは、ルート レベルのメソッドのみをラップできます。 入れ子になったクラスで定義されているメソッドをラップすることはできません。
-- 通常のクラスで定義されているメソッドのみラップできます。 拡張クラスで定義されているメソッドは、拡張クラスを強化してラップできません。
+- 現在のところ、通常のクラスで定義されているメソッドのみラップできます。 拡張クラスで定義されているメソッドは、拡張クラスを強化してラップできません。 この機能は、将来の更新で計画されています。
 
 ### <a name="what-about-default-parameters"></a>既定のパラメーターはどうなのですか ?
 既定のパラメーターを持つメソッドは、拡張クラスでラップできます。 ただし、ラッパー メソッドのメソッド シグネチャは、パラメータの既定値を含む必要がありません。
@@ -90,17 +93,20 @@ info(c.DoSomething(33));
 ``` 
 class Person 
 {
-    Public void salute( str message = "Hi"){ }
+    public void salute(str message = "Hi") {...}
 }
 ```
 
 この場合、ラッパー メソッドは次の例のようにする必要があります。
 
 ```
-[ExtensionOf(classtr(Person))]
-final class aPerson_Extension
+[ExtensionOf(classStr(Person))]
+final class APerson_Extension
 {
-    Public void salute( str message ){ }
+    public void salute(str message)
+    {
+        // ...
+    }
 }
 ```
 
@@ -114,9 +120,9 @@ final class aPerson_Extension
 ```
 class A 
 {
-    public static void aStaticMethod( int parameter1)
+    public static void aStaticMethod(int parameter1)
     {
-    // …
+        // ...
     }
 }
 ```
@@ -124,12 +130,13 @@ class A
 この場合、ラッパー メソッドは次の例のようにする必要があります。
 
 ```
-[ExtensionOf(classstr(A)]
+[ExtensionOf(classStr(A)]
 final class An_Extension
 {
-    public static void aStaticMethod( int parameter1)
+    public static void aStaticMethod(int parameter1)
     {
-        Next aStaticMethod( 10 );
+        // ...
+        next aStaticMethod(parameter1);
     }
 }
 ```
@@ -151,7 +158,7 @@ final class An_Extension
 - 論理式は最適化されているため、**次へ**の呼び出しは論理式では実行できません。 実行時に、完全な式の実行は保証されません。
 
 > [!NOTE]
-> メソッドの元の実装の作成者は、次への呼び出しのスキップをラッパー メソッドに明示的に許可できます。 ラッピングしているメソッドが [置き換え可能な] 属性でタグされている場合は、**次の**キーワードを呼び出さずにこのメソッドをラップすることができます。 置き換え可能なメソッドは、カスタムの実装によって安全に "置き換える" ことができるロジックを実装するメソッドです。 この機能は、Platform Update 11 のリリースで利用できます。 
+> メソッドが置き換え可能な場合は、拡張担当者はコマンド チェーンを使用してメソッドをラップするときに無条件に **next** を呼び出す必要はありません。 拡張担当者はチェーンを中断できますが、条件がある場合のみ中断することが期待されます。 コンパイラは、属性 **Replaceable** を持つメソッドの **next** の呼び出しを強制しません。  
 
 ### <a name="wrapping-a-base-method-in-an-extension-of-a-derived-class"></a>派生クラスの拡張で基本メソッドをラッピング
 次の例は、派生クラスの拡張機能で基準メソッドをラップする方法を示しています。 この例では、次のクラス階層が使用されます。
@@ -160,41 +167,41 @@ final class An_Extension
 class A
 {
     public void salute(str message)
-    {
-        Info(message);
+    {   
+        info(message);
     }
 }
 
-class B extends A { }
-class C extends A { }
+class B extends A {}
+class C extends A {}
 ```
 
 したがって、1 つの基本クラス **A** があり、2 つのクラス **B** および **C** が **A** から派生します。ここに示すように、派生クラスの 1 つ (この場合は **B**) の拡張クラスを追加または作成します。
 
 ```
-[Extensionof(classstr(B))]
-final class aB_Extension
+[ExtensionOf(classStr(B))]
+final class B_Extension
 {
     public void salute(str message)
     {
-        next salute( message );
-        Info("B extension");
+        next salute(message);
+        info("B extension");
     }
 }
 ```
 
-**aB_Extension** クラスは **B** の拡張子ではあり、**B** は **salute** メソッドのメソッドの定義がありませんが、**salute** メソッドを基本クラス **A** で定義しラップすることができます。したがって、**B** クラスのインスタンスのみが **salute** メソッドのラッピングを含みます。 **A** クラスおよび **C** クラスのインスタンスは、**B** クラスの拡張機能に定義されているラッパー メソッドを呼び出すことはありません。 
+**B_Extension** クラスは **B** の拡張子ではあり、**B** は **salute** メソッドのメソッドの定義がありませんが、**salute** メソッドを基本クラス **A** で定義しラップすることができます。したがって、**B** クラスのインスタンスのみが **salute** メソッドのラッピングを含みます。 **A** クラスおよび **C** クラスのインスタンスは、**B** クラスの拡張機能に定義されているラッパー メソッドを呼び出すことはありません。 
 
 これらの 3 つのクラスを使用するメソッドを実装すると、この動作はより明確になります。
 
 ```
 class ProgramTest 
 {
-    Public static void Main( Args _args)
+    public static void main(Args args)
     {
-        var a = new A( );
-        var b = new B( );
-        var c = new C( );
+        var a = new A();
+        var b = new B();
+        var c = new C();
 
         a.salute("Hi");
         b.salute("Hi");
@@ -211,13 +218,13 @@ class ProgramTest
 プラットフォーム更新プログラム 9 では、拡張クラスから保護されたメンバーにアクセスできます。 これらの保護されたメンバーには、フィールドとメソッドが含まれます。 このサポートは、メソッドのラップに固有ではありませんが、クラス拡張内のすべてのメソッドを適用することに注意してください。 したがって、クラス拡張は以前よりも強力です。
 
 ### <a name="the-hookable-attribute"></a>Hookable 属性
-メソッドが **[Hookable(false)]** として明示的にマークされている場合、メソッドを拡張子クラスで囲むことはできません。 次の例では、**anyMethod** は **anyClass1** を補強するクラスでラップできません。
+メソッドが **[Hookable(false)]** として明示的にマークされている場合、メソッドを拡張子クラスで囲むことはできません。 次の例では、**anyMethod** は **AnyClass1** を補強するクラスでラップできません。
 
 ```
-class anyClass1 
+class AnyClass1 
 {
     [HookableAttribute(false)]
-    public void anyMethod() {…}
+    public void anyMethod() {...}
 }
 ```
 
@@ -227,15 +234,16 @@ class anyClass1
 次の例では、**doSomething** メソッドは、パブリック メソッドである場合でもラップできないものとして明示的にマークされます。 **doSomethingElse** メソッドは、最後のメソッドであっても、折り返し可能と明示的にマークされます。
 
 ```
-class anyClass2 
+class AnyClass2 
 {
     [Wrappable(false)]
-    public void  doSomething(str message) { …}
+    public void doSomething(str message) {...}
 
     [Wrappable(true)]
-    final public void  doSomethingElse(str message){ …}
+    final public void doSomethingElse(str message) {...}
 }
 ```
+
 
 ### <a name="extensions-of-form-nested-concepts-such-as-data-sources-data-fields-and-controls"></a>データ ソース、データ フィールド、および制御といったフォームで入れ子になった概念の拡張
 
@@ -261,6 +269,9 @@ final class FormDataSource1_Extension
         //...
         ret = next validateWrite();
         //...
+        return ret;
+    }
+}
 ```
 
 #### <a name="form-data-fields"></a>フォーム データ フィールド
@@ -271,12 +282,15 @@ final class FormDataSource1_Extension
 [ExtensionOf(formdatafieldstr(FormToExtend, DataSource1, Field1))]
 final class FormDataField1_Extension 
 { 
-public boolean validate()
-{
-    boolean ret
-    //...
-    ret = next validate();
-    //...
+    public boolean validate()
+    {
+        boolean ret
+        //...
+        ret = next validate();
+        //...
+        return ret;
+    }
+}
 ```
 
 #### <a name="controls"></a>コントロール
@@ -284,13 +298,15 @@ public boolean validate()
 この例では、**FormToExtend** はフォーム、**Button1** はフォーム内のボタン コントロール、**clicked** はボタン コントロールで折り返し可能なメソッドです。
 
 ```C#
-[ExtensionOf(formcontrolstr(FormToExtend, Button1))]
+[ExtensionOf(formControlStr(FormToExtend, Button1))]
 final class FormButton1_Extension
 {
     public void clicked()
     {
         next clicked();
         //...
+    }
+}
 ```
 
 #### <a name="requirements-and-considerations-when-you-write-coc-methods-on-extensions-for-form-nested-concepts"></a>フォームで入れ子になった概念で CoC メソッドを書き込むときの要件と考慮事項
@@ -306,26 +322,114 @@ final class FormButton1_Extension
         [Control("Button")]
         class Button1
         {
-            public void methodInButton1 (str param1)
+            public void methodInButton1(str param1)
             {
-                Info("Hi from methodInButton1");
+                info("Hi from methodInButton1");
                 //...
-    }
     ```
 
 - 拡張からのそのフォームで入れ子になった概念における CoC メソッドをサポートするために元のフォームが定義されたモジュールを再コンパイルする必要は**ありません**。 たとえば、前の例の **FormToExtend** フォームが **ApplicationSuite** モジュールにある場合、異なるモジュールからそのフォームで入れ子になった概念の CoC で拡張するために **ApplicationSuite** を再コンパイルする必要はありません。
 
+### <a name="extensions-of-tables-and-data-entities"></a>テーブルとデータ エンティティの拡張機能
+
+拡張機能クラスは、概念ごとに必要です。 
+
+#### <a name="tables"></a>テーブル
+
+この例では、**TableToExtend** はテーブルであり、**delete**、**canSubmitToWorkflow**、**caption** はテーブルでラップできるメソッドです。
+
+```C#
+[ExtensionOf(tablestr(TableToExtend))]
+final class TableToExtend_Extension
+{
+    public void delete()
+    {
+        next delete();
+        //...
+    }
+ 
+     public boolean canSubmitToWorkflow(str _workflowType)
+    {
+        boolean ret;
+        //...
+        ret = next canSubmitToWorkflow(_workflowType);
+        //...
+        return ret;
+    }
+        
+    public str caption()
+    {
+        str ret;
+        //...
+        ret = next caption();
+        //...
+        return ret;
+    }
+}
+```
+
+#### <a name="data-entities"></a>データ エンティティ
+この例では、**DataEntityToExtend** はデータ エンティティで、**validateDelete** および **validateWrite** はデータ エンティティでラップできるメソッドです。
+
+```C#
+[ExtensionOf(TableStr(LedgerJournalEntity))]
+final class LedgerJournalEntity_Extension
+{
+        public boolean validateDelete()
+    {
+        boolean ret;
+        //...
+        ret = next validateDelete();
+        //...
+        return ret;
+    }
+
+    public boolean validateWrite()
+    {
+        boolean ret;
+        //...
+        ret = next validateWrite();
+        //...
+        return ret;
+    }
+}
+```
+
 ## <a name="restrictions-on-wrapper-methods"></a>ラッパー メソッドに関する制限事項
 次のセクションでは、CoC およびメソッド ラッピングの使用上の制限について説明します。
-
-### <a name="kernel-methods-cant-be-wrapped"></a>カーネル メソッドをラップすることはできません。
-カーネル クラスは、X++ クラスではありません。 代わりに、それらは Microsoft Dynamics 365 Unified Operations プラットフォームのカーネルで定義されているクラスです。 拡張子クラスはカーネルクラスでサポートされていますが、カーネルクラスのメソッドではメソッドのラッピングはサポートされません。 つまり、メソッドをラップする場合、基準メソッドは X++ メソッドである必要があります。
 
 ### <a name="x-classes-that-are-compiled-by-using-platform-update-8-or-earlier"></a>プラットフォーム更新プログラム 8 またはそれ以前を使用してコンパイルされた X++ クラス 
 メソッドのラッピング機能には、プラットフォーム update 9 以降の一部である X++ コンパイラによって出力される特定の機能が必要です。 以前のバージョンを使用してコンパイルされたメソッドには、この機能をサポートするインフラストラクチャはありません。
 
-### <a name="nested-class-methods-in-forms-can-be-wrapped-in-platform-update-16-or-later"></a>プラットフォーム更新 16 以降ではフォームで入れ子になったクラス メソッドをラップ可能を参照してください
+### <a name="methods-on-types-nested-within-forms-can-be-wrapped-in-platform-update-16-and-later"></a>プラットフォーム更新 16 以降ではフォーム内で入れ子になったタイプのメソッドをラップできます。
+クラス拡張を使用してフォーム (データ ソースとコントロール) 内で入れ子になった型のメソッドをラップする機能がプラットフォーム更新 16 で追加されました。 つまり、コマンド チェーンを使用して、データ ソース メソッドおよびフォーム制御メソッドのオーバーライドを提供できます。
+
+ただし、これらの入れ子にされた型 (フォーム コントロールとフォーム データ ソース) の純粋な X++ メソッドのラップ (拡張) は、他の型 (フォーム、テーブル、データ エンティティ) と同様にまだサポートされていません。 現時点では、開発者は、フォーム内の型の純粋な X++ メソッドでコマンド チェーンを使用する場合、コンパイルしますが、実行時に拡張メソッドじゃ呼び出されません。 この機能は、将来の更新で計画されています。
+
+### <a name="unimplemented-system-methods-on-tables-and-data-entities-can-be-wrapped-in-platform-update-22-and-later"></a>テーブルとデータ エンティティの実装されていないシステム メソッドは、プラットフォーム更新 22 以降でラップできます。
 クラス拡張を使用して入れ子になったクラスでメソッドをラップする機能がプラットフォーム更新 16 で追加されました。 X++ の入れ子になったクラスの概念は、データソース メソッドやフォームコ ントロール メソッドを上書きするためのフォームに適用されます。
+
+### <a name="next-calls-can-be-put-inside-trycatchfinally-in-platform-update-21-and-later"></a>プラットフォーム更新 21 以降では、次の呼び出しを try/catch/finally 内に配置できます 
+CoC 拡張メソッドでは、次の呼び出しを条件付きで呼び出してはなりません。 ただし、プラットフォーム更新 21 以降では、例外およびリソースのクリーンアップの標準的な処理を許可するため、次の呼び出しを try/catch/finally 内に配置できます。
+
+```C#
+    public void someMethod()
+    {
+        try
+        {
+            //...
+            next updateBalances();
+            //...
+        }
+        catch(Exception::Error)
+        {
+            //...
+        }
+    }
+```
+
+### <a name="extensions-of-extensions-are-not-yet-supported"></a>拡張機能の拡張機能はまだサポートされていません
+現在のところ、通常のクラスで定義されているメソッドのみラップできます。 拡張クラスで定義されているメソッドは、拡張クラスを強化してラップできません。 この機能は、将来のリリースで計画されています。
 
 ### <a name="tooling"></a>ツール
 このトピックに記載されている機能については、Microsoft Visual Studio X++ エディターは、相互参照および Microsoft IntelliSense の完全なサポートまだ提供していません。 Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 10 で完全なサポートが利用できるようにする予定です。

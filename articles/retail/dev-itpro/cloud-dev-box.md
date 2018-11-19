@@ -3,7 +3,7 @@ title: "管理者アクセスのないクラウド ホスト開発環境での�
 description: "このトピックは、クラウドでホストされている開発マシンで作業している Retail 開発者向けのコンフィギュレーション手順について説明します。"
 author: mugunthanm
 manager: AnnBe
-ms.date: 07/13/2018
+ms.date: 10/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -19,10 +19,10 @@ ms.author: mumani
 ms.search.validFrom: 2017-12-08
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: a0fc60a16e5fa2f924a3394d701553d8e7652095
+ms.sourcegitcommit: 2eb46f436305a4c81ea99553e4dc07288ee74008
+ms.openlocfilehash: 498d06175e50b635a0a5b556b8d40b7df03338f3
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 10/22/2018
 
 ---
 # <a name="development-in-cloud-hosted-development-environments-without-admin-access"></a>管理者アクセスのないクラウド ホスト開発環境での開発
@@ -47,11 +47,28 @@ Lifecycle Services (LCS) の Microsoft Azure サブスクリプションを使�
     Filename: redirection.config
     Error: Cannot read configuration file
     ``` 
-    この問題を解決するには、次のようにします。
-    1. Visual Studio を閉じます。
-    2. **%userprofile%\Documents\IISExpress\config** フォルダーの名前を変更します。 ステップ *iv* の新しい場所に、**applicationhost.config** のコピーがあるので、ファイルを削除しないでください。
-    3. Cloud POS プロジェクトを使用して Visual Studio を再度起動します。 **%userprofile%\Documents\IISExpress\config** フォルダーは、既定の構成ファイルを使用して再作成されます。
-    4. **applicationhost.config** ファイルを、ステップ *ii* で名前を変更したフォルダーから、ステップ *iii* で作成したフォルダーにコピーします。 
+
+**この問題を解決するには**
+
+1. Visual Studio を閉じます。
+2. **aspnet.config** および **redirection.config** ファイルを **%userprofile%\Documents\IISExpress\config** にコピーします。
+3. **%userprofile%\Documents\IISExpress\config** フォルダーで **applicationhost.config** ファイルを開きます。
+4. **applicationhost.config** で、RetailCloudPos の physcialPath を変更し、SDK の場所をポイントするようにします。
+   たとえば、physicalPath="K:\RetailSDK\POS\Web" です。 全体的なセクションは、次のようになります。
+   
+```
+   <site name="RetailCloudPOs" id="4" serverAutoStart="true">
+        <application path="/" applicationPool="Dynamics365">
+            <virtualDirectory path="/" physicalPath="K:\RetailSDK\POS\Web" />
+        </application>
+```
+5. 変更を **applicationhost.config** に保存します 
+6. **%userprofile%\Documents\IISExpress\config** フォルダーの名前を変更します。 **ステップ 8** の新しい場所に **applicationhost.config** ファイルをコピーするため、ファイルを削除しないでください。
+7. Cloud POS プロジェクトを使用して Visual Studio を再度起動します。 **%userprofile%\Documents\IISExpress\config** フォルダーは、既定の構成ファイルを使用して再作成されます。
+8. **applicationhost.config** ファイルを、**ステップ 6** で名前を変更したフォルダーから、**ステップ 7** で作成したフォルダーにコピーします。 
+9. Pos.Web プロジェクトを右クリックし、**プロパティ** をクリックします。
+10. **プロパティ** ウィンドウで、**Web** タブをクリックします。**開始 URL** ラジオ オプションをオンにし、クラウド POS URL として開始 URL を設定します。 たとえば、`https://usnconeboxax1pos.cloud.onebox.dynamics.com`。
+11. 変更を保存します。
 
 ## <a name="install-the-developer-topology-prerequisites"></a>開発者トポロジの前提条件のインストール
 

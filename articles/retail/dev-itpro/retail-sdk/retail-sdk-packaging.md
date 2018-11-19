@@ -3,7 +3,7 @@ title: "配置可能小売パッケージの作成"
 description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations の配置可能小売パッケージを作成する方法について説明します。"
 author: mugunthanm
 manager: AnnBe
-ms.date: 06/08/2018
+ms.date: 10/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -18,10 +18,10 @@ ms.author: sijoshi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 57a6ede17280da7df18616033d69a18d5919115f
+ms.sourcegitcommit: 003b7eac16c1be50bc982da0672df42a87a69722
+ms.openlocfilehash: 06ebcfb1a43e4ab3300b13678f8ea415a71fd960
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 11/05/2018
 
 ---
 
@@ -130,6 +130,8 @@ Retail SDK の詳細情報は、[Retail SDK 概要](retail-sdk-overview.md) を�
 ### <a name="database-scripts"></a>データベース スクリプト
 データベース スクリプトは、Retail サーバーおよび Modern POS オフライン パッケージとともにパッケージ化され、Retail Server および Modern POS がインストールされたときに実行されます。 複数のカスタム データベース スクリプトがある場合は、アルファベット順に実行されます。 したがって、スクリプトを特定の順序で実行したい場合は、それに応じて名前を付ける必要があります。 CRT.RETAILUPGRADEHISTORY テーブルは、データベースに既に適用されているスクリプトを追跡します。 したがって、次のパッケージ アップグレードは、CRT.RETAILUPGRADEHISTORY テーブルに項目がないアップグレード スクリプトのみを実行します。
 
+チャネル データベース拡張機能の詳細については、[チャネル データベース拡張機能](../channel-db-extensions.md)を参照してください。
+
 ## <a name="update-the-extension-configuration-files"></a>拡張機能の構成ファイルを更新します
 CRT、Retail Server、ハードウェア ステーション、またはプロキシに新しい拡張機能がある場合は、関連する拡張構成ファイルの\<構成\>セクションに拡張アセンブリの詳細を登録する必要があります。 すべての拡張設定ファイルは次で見つけることができます。\\RetailSDK\\資産フォルダ。 すべての拡張機能は拡張ファイルの情報に基づいて読み込まれるため、アセンブリを登録する必要があります。
 
@@ -197,6 +199,18 @@ CRT、Retail Server、ハードウェア ステーション、またはプロキ
 次の図は、Retail サーバーの Web.config ファイルの例を示します。
 
 [![Retail サーバーの Web.config ファイル](./media/retail-server-web-config.png)](./media/retail-server-web-config.png)
+
+> [!NOTE]
+> 上記の例、またはチャネル構成ファイルのいずれかで、カスタム設定を追加したり変更したりしないでください。 サポートされている唯一の変更は、構成セクションでのカスタム アセンブリの詳細の追加です。
+
+> また、拡張機能またはパッケージの一部として、構成ファイルのいずれも編集しないでください。 これらの構成ファイルは、配置の際にコア Microsoft パッケージの最新のファイルで更新され、変更内容は失われます。
+
+> - CommerceRuntime.config
+> - dllhost.exe.config
+> - HardwareStation.Dedicated.config
+> - HardwareStation.Shared.config
+> - workflowFoundation.config
+> - ハードウェア ステーション - Web.config
 
 ## <a name="generate-a-retail-deployable-package"></a>配置可能小売パッケージを生成
 配置可能小売パッケージを生成するには、MSBuild ビルド コマンド プロンプト ウィンドウを開きます。 (開発者仮想マシンの、**開始**メニューで **msbuild** を検索します。) そして、次のコマンドを実行します。

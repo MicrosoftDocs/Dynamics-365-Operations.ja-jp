@@ -3,7 +3,7 @@ title: "Finance and Operations のヘルプ システム"
 description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations のヘルプ システム コンポーネントの概要が示されます。 また、組織の独自のドキュメントやトレーニングを提供する方法について説明します。"
 author: margoc
 manager: AnnBe
-ms.date: 07/12/2018
+ms.date: 10/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ce9c24a0a89dd4e6a0f3f2c7789b4f553d88d412
-ms.openlocfilehash: 3f18a5d7b7f7639b864f579b758005c7a30803a2
+ms.sourcegitcommit: 75be5c5f675885aececb8ac0b25e699882ea77ab
+ms.openlocfilehash: dc2a3d49041acf42814149eb71d4cc021bdad838
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
+ms.lasthandoff: 10/17/2018
 
 ---
 
@@ -45,14 +45,14 @@ Finance and Operations には、2 つの主要なコンポーネントに基づ�
 -   ドキュメント サイト
 -   タスク ガイド
 
-使用しているどの製品においても [ヘルプ] ウィンドウからヘルプ トピックおよびタスク ガイドの両方にアクセスできます。 次のスクリーンショットは、Dynamics 365 for Finance and Operations を示します。
+使用している製品のヘルプ ウィンドウからヘルプを表示できます。 次のスクリーンショットは、Finance and Operations を示します。
 
 ![[ヘルプ] ウィンドウ](./media/help-pane-ops-task-guides.png)
 
 このトピックは、ヘルプ システムについて説明し、組織のカスタム ドキュメントおよびトレーニング リソースを作成方法を説明します。
 
 > [!IMPORTANT]
-> **タスク ガイド** タブは、Microsoft Dynamics 365 for Talent および Microsoft Dynamics 365 for Retail で現在使用できません。 将来のリリースではこの機能を有効にするよう、作業が進行中です。 [Talent] での [はじめに] の経験タスク ガイドは、基本的機能をカバーするために引き続き使用可能です。 [Retail] および [Talent] の両方に関する docs.microsoft.com サイト上 ([docs.microsoft.com/dynamics365/unified-operations](../../index.md)) でも利用可能な、手順を追ったヘルプ。
+> **タスク ガイド**は、Retail または Talent のヘルプ ウィンドウで現在使用できません (いくつかのタスク ガイドは、Talent のはじめにウィンドウで使用できます)。 Retail および Talent 両方の手順を追ったヘルプは、docs.microsoft.com サイト上 ([docs.microsoft.com/dynamics365/unified-operations](../../index.md)) で利用可能です。
 
 ## <a name="help-on-docsmicrosoftcom"></a>docs.microsoft.com のヘルプ
 
@@ -64,17 +64,16 @@ docs.microsoft.com サイト ([docs.microsoft.com/dynamics365/unified-operations
 -   **業務プロセスをサポートするコンテンツ** – サイトには Microsoft Dynamics Lifecycle Services (LCS) のビジネス プロセス モデラー (BPM) を活用する、業務プロセス指向のコンテンツが含まれます。
 
 ### <a name="searching-on-docsmicrosoftcom"></a>docs.microsoft.com での検索
-コンテンツを検索する方法について多くの質問が寄せられています。 当サイトでは、Finance and Operations に関するページから始めると、検索の範囲は Finance and Operations のコンテンツに限定されます。 範囲を解除するには、検索ボックスの [Operations] の横にある [X] をクリックします。 
+コンテンツを検索する方法について多くの質問が寄せられています。 当サイトでは、Finance and Operations に関するページから始めると、検索の範囲は Finance and Operations のコンテンツに限定されます。 範囲を解除するには、検索ボックスの Unified Operations の横にある X をクリックします。 
 
 ![検索](./media/search-scope-2.png)
 
 任意の検索エンジンを使ってコンテンツを探すこともできます。 最適な結果を得るには、次のようなサイト検索を使用することをお勧めします: site:docs.microsoft.com dynamics 365 "検索用語"。  
 
 ### <a name="the-docsmicrosoftcom-table-of-contents"></a>docs.microsoft.com の目次
-Finance and Operations、Retail、Talent のすべては docs サイトの 単一の目次を共有し、顧客がトピックのコンテキストを確認できるようになっています。 また、目次上のフィルタコントロールを使用して、探しているトピックを検索することもできます。
+Finance and Operations、および Retail のすべては docs サイトの 単一の目次を共有し、顧客がトピックのコンテキストを確認できるようになっています。 また、目次上のフィルタコントロールを使用して、探しているトピックを検索することもできます。 
 
-### <a name="follow-a-topic"></a>次のトピック
-トピックをフォローするには、コメント ボックスの下の +Follow ボタンをクリックします。 次のトピックにログインする必要があります。 詳細については、[フィードバックをお送りください](#leave-us-feedback)を参照してください。  
+他の Dynamics 365 製品を検索するか、またはサイトの階層リンクをクリックしてハブ ページにアクセスすることでヘルプを表示できます。 
 
 ### <a name="use-an-rss-feed"></a>RSS フィードを使用します
 Unified Operations のコンテンツへのすべての更新の RSS フィードを購読するには、Internet Explorer や RSS フィード マネージャなどの RSS フィードをサポートするブラウザから次のリンクを使用します。 
@@ -106,17 +105,18 @@ Unified Operations のコンテンツへのすべての更新の RSS フィー�
 
 
 > [!NOTE]
-> 現時点では英語のリポジトリへの寄稿のみを受け付けています。  
+> 現時点では英語のコンテンツ セットへの寄稿のみを受け付けています。  
 
 
 ## <a name="task-guides"></a>タスク ガイド
 タスク ガイドは、制御された、ガイド付きでインタラクティブな方法による、タスクまたは業務プロセスの手順の説明です。 [ヘルプ] ウィンドウからタスク ガイドを開く (再生する) ことができます。 最初にタスク ガイドをクリックすると、[ヘルプ] ウィンドウには、タスクのステップ バイ ステップの手順が表示されます。 ローカライズされたタスク ガイドが利用可能になりました。 
 
-Dynamics 365 for Retail、Dynamics 365 for Finance and Operations、Dynamics 365 for Talent といった製品ごとに、さまざまなタスク ガイドのセットを提供します。 [ヘルプ ウィンドウからタスク ガイドへのアクセス] セクションでは、製品の正しいタスク ガイドを検索する方法について説明します。 
+Microsoftは、 2017 年 12 月 までの Finance and Operations のリリースのタスク ガイド ライブラリを出荷しました。 [ヘルプ ウィンドウからタスク ガイドへのアクセス](help-overview.md#accessing-task-guides-from-the-help-pane)セクションでは、製品の正しいタスク ガイドを検索する方法について説明します。 
 
 ![タスク ガイドの読み取りビュー](./media/task-guide-ops.png)
 
 ガイドのあるインタラクティブな経験を開始するには、[ヘルプ] ページ下部の **タスク ガイドの開始** をクリックします。 黒のポインタが、実行する必要があるアクションを開いて、表示します。 UI に表示される指示に従い、指示されたデータを入力します。 
+
 ![タスク ガイドの手順書](./media/task-guide-step-1-ops.png)
 
 > [!IMPORTANT] 
@@ -126,7 +126,11 @@ Dynamics 365 for Retail、Dynamics 365 for Finance and Operations、Dynamics 365
 
 タスク ガイドは、タスク レコーダーを使用して作成されます。 タスク レコーダーを使用すると、Finance and Operations UI で実行するアクション (メニューのクリック、設定の変更、データの入力) はすべて記録されます。 記録する手順は、[タスク記録] と呼ばれます。 前のセクションで説明したように、タスク記録は [ヘルプ] ウィンドウに表示され、タスク ガイドとして再生できます。 ただし、タスク記録を使用できるそのほかの方法があります。
 
--   **タスク記録を BPM に保存** – LCS の BPM ライブラリの階層の明細行にタスク記録を保存できます。 BPM にタスク記録を保存すると、フローチャートの図が生成され、記録のステップとともに表示されます。 **メモ:** Finance and Operations の [ヘルプ] ウィンドウに表示させてタスク ガイドとして再生するには、記録を BPM ライブラリに保存します。
+-   **タスク記録を BPM に保存** – LCS の BPM ライブラリの階層の明細行にタスク記録を保存できます。 BPM にタスク記録を保存すると、フローチャートの図が生成され、記録のステップとともに表示されます。 
+
+    > [!Note]
+    > Finance and Operations のヘルプ ウィンドウに表示させてタスク ガイドとして再生するには、記録を BPM ライブラリに保存します。
+    
 -   **タスク記録をWord文書として保存** – Microsoft Word文書としてタスク記録を保存すると、組織の印刷可能なトレーニング ガイドを簡単に作成できます。
 
 タスク レコーダーの詳細については、「[Finance and Operations のタスク レコーダー](../../dev-itpro/user-interface/task-recorder.md)」を参照してください。
@@ -142,7 +146,7 @@ Finance and Operations 内のヘルプ コンテンツにアクセスするに�
 
 ### <a name="accessing-help-topics-from-the-help-pane"></a>ヘルプ ウィンドウからヘルプ トピックへのアクセス
 
-[ヘルプ] ウィンドウから、Finance and Operations クライアントに適用する記事にアクセスできます。 最初に [ヘルプ] ウィンドウを開いてから **Wiki** タブをクリックすると、Finance and Operations の現在のページに対応する記事が表示されます。 記事がない場合は、検索するキーワードを入力できます。 [ヘルプ] ウィンドウで記事をクリックすると、ブラウザで新しいタブが開いて記事を表示します。 
+[ヘルプ] ウィンドウから、Finance and Operations クライアントに適用する記事にアクセスできます。 最初にヘルプ ウィンドウを開いてから**ヘルプ**タブをクリックすると、Finance and Operations の現在のページに対応する記事が表示されます。 記事がない場合は、検索するキーワードを入力できます。 [ヘルプ] ウィンドウで記事をクリックすると、ブラウザで新しいタブが開いて記事を表示します。 
 
 > [!IMPORTANT]
 > このセクションは、Dynamics 365 for Talent には適用されません。 [Talent] のヘルプ システムは、製品のタスクのガイドに自動的に関連付けられます。 さらに、[Talent] のカスタム タスク ガイドを作成することはできません。 
@@ -160,7 +164,9 @@ Finance and Operations 内のヘルプ コンテンツにアクセスするに�
 **システム パラメーター** ページで、次の手順に従います。
 
 1.  **重要:** ヘルプ タブを初めて開く際には、Lifecycle Services に接続する必要があります。 フォームの中程のリンクをクリックし、接続されるまで待機し、ダイアログ ボックスを閉じ、**OK** をクリックしてパラメーター フォームを取得します。
+
 ![LCS に接続](./media/connect-to-lcs-crop-1024x365.png)
+
 2.  接続する Lifecycle Services プロジェクトを選択します。
 3.  タスク記録を取得する BPM ライブラリ (選択したプロジェクト内) を選択します。
     - Finance and Operations、Microsoft のコンテンツ用に、Microsoft Dynamics 365 for Finance and Operations の「2017 年 2 月 QPC 統合ライブラリ」を選択します。 
@@ -173,38 +179,29 @@ Finance and Operations 内のヘルプ コンテンツにアクセスするに�
 
 ![タスク ガイドの読み取りビュー](./media/task-guide-ops.png)
 
-### <a name="where-are-the-translated-task-guides"></a>翻訳されたタスク ガイドはどこにありますか。
+### <a name="where-are-the-translated-task-guides-for-microsoft-libraries"></a>Microsoft ライブラリの翻訳されたタスク ガイドはどこにありますか。
 
 翻訳されたタスク ガイドは、タイトルの「すべての言語」を持つライブラリでリリースされます。 Finance and Operations でローカライズされたタスク ガイドのヘルプを参照するには、適切なライブラリに接続できることを確認してください。 タスク ガイドの表示言語は、**オプション** &gt; **基本設定** の [言語の設定] でユーザーごとに制御されます。 
 -   タスク ガイドが翻訳されている場合、そのタスク ガイドを開くと、タスク ガイドのすべてのテキストは選択した言語で表示されます。
 -   タスク ガイドが翻訳されていない場合、それを開くと、一部のテキスト (コントロールのテキスト) のみが選択した言語で表示されます。
 
 ## <a name="additional-resources"></a>その他のリソース
-次の表に Web サイトの一覧を示します。 コンテンツ Web サイトは顧客のライフ サイクルをサポートするために編成されています。 各フェーズは、別の一連のサイトによってサポートされます。 名前の横にアスタリスク (\*) のあるサイトには、サービス計画と関連付けられたアカウントでサインインする必要があります。
+
+- [Finance and Operations のヘルプ システム (ダウンロード可能なファクト シート)](https://mbs.microsoft.com/customersource/global/AX/learning/fact-sheets/msdaxhelpsystemfactsheet)
+- [タスク レコーダー](../../dev-itpro/user-interface/task-recorder.md)
+- [タスク記録を使用してドキュメントやトレーニングを作成](../../dev-itpro/user-interface/task-recorder.md)
+
+次の表に Web サイトの一覧を示します。 名前の横にアスタリスク (\*) のあるサイトには、サービス計画と関連付けられたアカウントでサインインする必要があります。
 
 | サイト                                                                     | 説明                                                                                                                                                                                                                                |
 |--------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Docs.microsoft.com](/dynamics365/) | Dynamics 365 のすべての製品ドキュメントのホストまたはリンクです。                                                                                                                                                               |
-| [Lifecycle Services](http://lcs.dynamics.com/en/)\*                      | 事前販売からの実装および工程にいたるまで Dynamics 365 for Finance and Operations のプロジェクトを管理するのに、顧客とパートナーが使用できるクラウドベースの共同ワークスペースを提供します。 このサイトは、実装のすべてのフェーズに役立ちます。 |
-| [CustomerSource](http://www.customersource.com/)\*                       | 徹底したトレーニング リソースのホストであり、Dynamics 365 for Finance and Operations の主なサポート サイトです。 サイト固有のリソースにアクセスするためにサインインが必要な場合があります。                                                                      |
+| [Microsoft Learn](https://docs.microsoft.com/learn/) | Microsoft の無料 e ラーニング サイトです。                                                                                                                                                               |
+| [Lifecycle Services](https://lcs.dynamics.com/en/)\*                      | 事前販売からの実装および工程にいたるまで Dynamics 365 for Finance and Operations のプロジェクトを管理するのに、顧客とパートナーが使用できるクラウドベースの共同ワークスペースを提供します。 このサイトは、実装のすべてのフェーズに役立ちます。 |
 | [サポート ブログ](http://aka.ms/AXSupportBlog)                              | Dynamics 365 for Finance and Operations のサポート チームによって投稿されるヒントおよび秘訣を提供します。                                                                                                                                                  |
-| [MSDN](http://aka.ms/AXMSDN)                                             | 開発者向けに書き込まれた以前のリリースのコンテンツをホストします。                                                                                                                                                                       |
-| [TechNet](http://aka.ms/TechNet)                                         | IT プロフェッショナルやアプリケーション ユーザー向けに書き込まれた以前のリリースのコンテンツをホストします。                                                                                                                                           |
-| [Dynamics コミュニティ](http://community.dynamics.com/)                  | ブログ、フォーラムおよびビデオをホストします。                                                                                                                                                                                                           |
+| [Docs.microsoft.com/previous versions](https://docs.microsoft.com/en-us/previous-versions/dynamics/)                                             | 以前のリリースのコンテンツをホストします。                                                                                                                                                                       |
+| [Dynamics コミュニティ](https://community.dynamics.com/)                  | ブログ、フォーラムおよびビデオをホストします。                                                                                                                                                                                                           |
 | [Microsoft.com/dynamics365/](https://www.microsoft.com/en-us/dynamics365/home)                 | 評価と販売情報を提供します。                                                                                                                                                                                                 |
+| [CustomerSource](https://mbs.microsoft.com/customersource/)\*                      | Finance and Operations、ダウンロード可能なレポート、およびホワイト ペーパーの一部のトレーニング リソースをホストする、サービス計画保持者の主なサポート サイトです。 サイトのいくつかのリソースにアクセスするためには、サービス計画が必要な場合があります。     |
 
-
-
-<a name="additional-resources"></a>その他のリソース
---------
-[Finance and Operations のヘルプ システム (ダウンロード可能なファクト シート)](https://mbs.microsoft.com/customersource/global/AX/learning/fact-sheets/msdaxhelpsystemfactsheet)
-
-[タスク レコーダー](../../dev-itpro/user-interface/task-recorder.md)
-
-[タスク記録を使用してドキュメントやトレーニングを作成](../../dev-itpro/user-interface/task-recorder.md)
-
-[新規または更新されたタスク ガイド (2016 年 11 月)](new-task-guides-november-2016.md)
-[新規または更新されたタスク ガイド (2016 年 8 月)](new-updated-task-guides-available-august-2016.md)
-[新規または更新されたタスク ガイド (2016 年 5 月)](new-updated-task-guides-available-may-2016.md)
-[新規または更新されたタスク ガイド (2016 年 2 月)](new-task-guides-available-february-2016.md)
 

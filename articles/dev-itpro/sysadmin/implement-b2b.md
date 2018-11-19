@@ -19,10 +19,10 @@ ms.author: sarvanis
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Platform update 12
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 7a3ed6620d34d91db12b0953a3d99b2edf51c313
+ms.sourcegitcommit: 55e5d957de6ef5b24c0cda59738c0755cac810b1
+ms.openlocfilehash: b20839a6847e4a23e82e4a5149b57fdcdfcdb424
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 10/13/2018
 
 ---
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 08/09/2018
 
 過去には、B2B ユーザーは .csv ファイルに手動でエクスポートされていました。 その後、Azure AD テナントの管理者は、このファイルを使用して Azure ポータルを使用してユーザーを Azure AD に手動で追加する必要があります。 
 
-自動エクスポート機能を有効にするには、ワンタイム設定と構成プロセスを完了する必要があります。 このプロセスが完了したら、**新しいユーザーのプロビジョニング** ワークフロー タスクを使用して、Azure AD に B2B ユーザーを自動的にエクスポートできます。
+自動エクスポート機能を有効にするには、ワンタイム設定と構成プロセスを完了する必要があります。 このプロセスが完了したら、**Azure AD B2B ユーザーのプロビジョニング** ワークフロー タスクを使用して、Azure AD に B2B ユーザーを自動的にエクスポートできます。
 
 1回限りの設定とコンフィギュレーションでは、次のことが必要になります。 
 1. Azure AD で B2B 招待サービス アプリケーションを設定します。
@@ -100,5 +100,5 @@ Azure AD テナントのテナント管理者は、以下の手順を完了す�
 
 7. 設定を**保存します**。
 
-これで、ワークフローで**新しいユーザーのプロビジョニング** ワークフロー タスクの使用を開始して、Azure AD に B2B ユーザーを自動的にエクスポートできます。
+これで、ワークフローで**Azure AD B2B ユーザーのプロビジョニング** ワークフロー タスクの使用を開始して、Azure AD に B2B ユーザーを自動的にエクスポートできます。
 

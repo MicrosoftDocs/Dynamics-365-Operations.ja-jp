@@ -1,9 +1,9 @@
 ---
 title: "簡易リストおよび簡易詳細のフォーム パターン"
-description: "この記事では、簡易リストと詳細フォームのパターンについての情報を提供します。 このパターンは、中程度の複雑さのエンティティのデータを維持するために使用されます。"
+description: "このトピックでは、簡易リストと詳細フォームのパターンについての情報を提供します。 このパターンは、中程度の複雑さのエンティティのデータを維持するために使用されます。"
 author: jasongre
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: c4adabb11d584da4715c88e7821503809af84580
+ms.sourcegitcommit: 6db29d422e7dfd7b2481b4fcbc404278e37511d1
+ms.openlocfilehash: 5e32d208398e6ccf4bf525c95fd36844414952dd
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 10/08/2018
 
 ---
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 04/20/2018
 
 [!include [banner](../includes/banner.md)]
 
-この記事では、簡易リストと詳細フォームのパターンについての情報を提供します。 このパターンは、中程度の複雑さのエンティティのデータを維持するために使用されます。
+このトピックでは、簡易リストと詳細フォームのパターンについての情報を提供します。 このパターンは、中程度の複雑さのエンティティのデータを維持するために使用されます。
 
 <a name="usage"></a>用途
 -----
@@ -159,7 +159,7 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 -   **利息フォームなどの従来の状況でクイック タブ ルールの例外を許可する方法。**
     -   可能な限り、SL&Dパターンに合わせてフォームをリファクターします (**利息** フォームが完了したとき)。 それ以外の場合、カスタム コンテナーを使用します。
 -   **UI のフィールドのハイパーリンクを防ぐ方法。**
-    -   一部のフィールドでは、UI でハイパーリンクを防ぐため **IgnoreEDTRelation 設定**=**はい**にできます。  他のフィールドについては、最終的には、無効なハイパーリンクで使用できる **EnableFormRef** プロパティを持つことを計画しています。
+    -   一部のフィールドでは、UI でハイパーリンクを防ぐため **IgnoreEDTRelation 設定**=**はい**にできます。 (プラットフォーム構成 17 の時点で) いずれにしても、入力コントロールで **EnableFormRef**=**No** を設定してハイパーリンクを無効にできます。
 
 ### <a name="ax-2012-content"></a>AX 2012 コンテンツ
 

@@ -3,7 +3,7 @@ title: "Retail ソフトウェア開発キット (SDK)"
 description: "このトピックでは、Retail SDK に関する一般情報を提供します。 Retail SDK は、小売クライアントをカスタマイズするために使用できる、コード、コード サンプル、テンプレート、およびツールが含まれています。"
 author: RobinARH
 manager: AnnBe
-ms.date: 05/07/2018
+ms.date: 10/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -18,10 +18,10 @@ ms.author: sijoshi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
-ms.openlocfilehash: abe276f5af5dbe5cfcb08f023aba62000b06e5e3
+ms.sourcegitcommit: 61f737edea3af5281b6d2fd7c3c0899082782067
+ms.openlocfilehash: 69a481cab9e425674792247a0afca0deba4671e5
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/17/2018
+ms.lasthandoff: 10/16/2018
 
 ---
 
@@ -33,7 +33,10 @@ ms.lasthandoff: 09/17/2018
 
 ## <a name="overview"></a>概要
 
-Retail ソフトウェア開発キット (SDK) は、小売クライアントをカスタマイズするために使用できる、コード、コード サンプル、テンプレート、およびツールが含まれています。 SDK は、迅速な開発、完全な MSBuild 統合、パッケージの生成、およびコード分離をサポートします。
+Retail ソフトウェア開発キット (SDK) は、新規小売機能を追加するか既存の小売機能をカスタマイズするために使用できる、コード、コード サンプル、テンプレート、およびツールが含まれています。 SDK は、迅速な開発、完全な MSBuild 統合、パッケージの生成、およびコード分離をサポートします。
+
+> [!NOTE]
+> Retail SDK では、TLS (トランスポート層セキュリティ) 1.2 標準がサポートされています。Retail SDK を使用して構築されたカスタマイズはすべて、TLS 1.2 標準に準拠する必要があります。
 
 ### <a name="download-the-retail-sdk"></a>Retail SDK をダウンロード
 
@@ -58,8 +61,7 @@ Retail SDK には、サービスを配置するために必要なすべてのも
 
 ### <a name="better-code-separation"></a>より良いコードの分離
 
-Retail SDK の更新が必要なときはいつでも、潜在的なコード結合が必要です。 この要件は、既存のコードが変更された場合に適用されます。 SDK の実装とフォルダー構造のいくつかの機能は、サンプル コードからカスタム コードをより適切に分離するのに役立ちます。 したがって、これらの機能は、この問題の多くを削除します。 将来この領域がさらに改善されることを期待することができます。
-
+Retail SDK の更新が必要な場合、潜在的なコード結合が必要です。 この要件は、既存のコード サンプルまたは変更されているテンプレートに適用されます。 SDK の実装とフォルダー構造のいくつかの機能は、サンプル コードからカスタム コードをより簡単に分離するのに役立ちます。 将来のリリースでコード分離のその他の機能強化が追加される予定です。
 ### <a name="real-world-implementation-samples"></a>実際の実装サンプル
 
 一部の Retail 実装のソース コードに加えて、Retail SDK には特定のシナリオを実装する方法を示すサンプル コードが含まれています。

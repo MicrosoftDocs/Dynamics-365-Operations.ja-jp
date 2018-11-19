@@ -3,7 +3,7 @@ title: "オンプレミス配置で実装されていない機能"
 description: "このトピックでは、オンプレミス展開で実装されていない機能を一覧表示します。"
 author: sericks007
 manager: AnnBe
-ms.date: 03/30/2018
+ms.date: 11/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: sericks
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: d060ec6f75be25605f5c57d256cd4cff49cf3d1b
+ms.sourcegitcommit: 53c0da5e9697deaf946ccd4fbcd2102faa62b195
+ms.openlocfilehash: 030d94de58177bc016e9fa6746d888d424af06e9
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 11/02/2018
 
 ---
 
@@ -41,15 +41,19 @@ ms.lasthandoff: 08/09/2018
 | **サポート** ウィンドウ                                                         | **サポート** ウィンドウ (**ヘルプとサポート** > **サポート**) はまだ使用できません。                                                                                                                                                   |
 | PowerBI.com 統合                                          | PowerBI.com 統合は、まだオンプレミス展開では使用できません。 たとえば、タイルをピン留めする、またはワークスペースに PowerBI.com 定期売買からレポートする機能は使用できません。 |
 | Microsoft Office 統合                                             | SharePoint オンプレミス サポートは、まだ使用できません。 SharePoint オンラインもまだサポートされていません (認証の問題のため)。<br><br>Skype for Business オンプレミス サポートは、まだ使用できません。 Skype for Business オンラインがサポートされます。  |
-| データ統合 | データ管理でのパッケージ API 経由のデータのインポートおよびエクスポート機能は、Finance and Operations のすべてのバージョン (プラットフォーム更新プログラム 12 を含むバージョン 7.2、ビルド 7.0.4709.41184を除く) で、まだ使用できません。 | 
 | 電子申告 (ER) と LCS の統合                   | LCS との ER 統合はサポートされません。 ER 構成は、LCS から Finance and Operations へ直接ダウンロードことはできません。                                   |
 | ER と SharePoint の統合            | SharePoint との統合はサポートされていません。 SharePoint サーバーを、ER を使用して生成された電子ドキュメントの出力先として構成することはできません。                           |
 | OData を使用して Power BI レポートを作成する                              | Power BI desktop または Excel PowerQuery ツールを使用して OData で Power BI レポートを作成することはサポートされていません。                                                                                  |
-|Retail| オンプレミス展開で現在利用可能な小売機能の一覧を表示するには、[[オンプレミス展開で利用可能な小売機能](../../retail/retail-onprem.md)] を参照してください。 Retail 機能の可用性に関する詳細については、[Dynamics 365 for Retail オンプレミス – 変動配置オプションの有効化](https://community.dynamics.com/enterprise/b/365forretail/archive/2017/12/15/dynamics-365-for-retail-on-premises-enabling-flexible-deployment-options) を参照してください。
 |購買要求: 外部カタログからのパンチアウト |外部カタログから購買要求にショッピング カートをチェックアウトすることはできません。 |
 |Trace Parser および PerfTimer |これらのツールは動作していないか、このリリースで機能が制限されています。 これらの機能は、将来のリリースで実装される予定です。 |
 |SSRS スケール アウト  |現在の SQL Server Reporting Services (SSRS) はスケール アウトをサポートしていません。この機能は将来のリリースの際に追加されます。 |
 |テレメトリ  |現在、テレメトリはクラウドへ転送されません。 今後の更新プログラムで、テレメトリ データをクラウドに転送できるようになります。 |
+|データ タスクの自動化  |[データ タスクの自動化](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/data-task-automation)は現在実装されていません。 |
+
+## <a name="features-available-in-81"></a>8.1 で使用可能な機能
+| **機能**                                                      | **説明**                                                                                                                                                                          |
+|------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|Retail  |オンプレミス展開で現在利用可能な小売機能の一覧を表示するには、[オンプレミス展開で利用可能な小売機能](../../retail/retail-onprem.md)を参照してください。|
 
 ## <a name="features-not-intended-for-use-in-on-premises-deployments"></a>オンプレミス配置での使用を目的としない機能
 次の機能は、オンプレミスの配置での使用を目的としていません。 オンプレミスの展開でこれらの機能を実装する計画はありません。

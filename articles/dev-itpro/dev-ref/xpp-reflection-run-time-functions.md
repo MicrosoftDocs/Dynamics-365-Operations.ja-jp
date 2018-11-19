@@ -18,10 +18,10 @@ ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: bd1da05f97d4adaf5b008c24849834fab6e65cec
+ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
+ms.openlocfilehash: a247cfecb3fe56dc096cd437a8e96d8989b5ee0f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 11/01/2018
 
 ---
 
@@ -306,19 +306,6 @@ X++ 配列内で領域が割り当てられているインデックス要素の�
             idx = indexName2Id(id, "AddrIdx");
             print "Index ID for index name AddrIdx of table Address is " + int2Str(idx);
     }
-
-## <a name="refprintall-no-content"></a>refPrintAll (コンテンツなし)
-集計
-
-    void refPrintAll(class object, str filename, str title)
-
-### <a name="parameters"></a>パラメーター
-
-| パラメーター | 説明 |
-|-----------|-------------|
-| オブジェクト    | 説明 |
-| filename  | 説明 |
-| title     | 説明 |
 
 ## <a name="tableid2name"></a>tableId2Name
 テーブルの名前を含む文字列を取得します。

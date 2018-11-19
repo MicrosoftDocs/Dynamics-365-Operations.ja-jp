@@ -1,9 +1,9 @@
 ---
 title: "Retail Server OData コントローラーの拡張"
-description: "この記事では、CustomController クラスを拡張するコードを説明します。"
+description: "このトピックでは、CustomController クラスを拡張するコードを説明します。"
 author: kfend
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -18,10 +18,10 @@ ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: f34a0a3cebcf5a374e8d6b3857af6b0dfa619e04
+ms.sourcegitcommit: 6514e32b100ea0169d98629fee09afaa66129217
+ms.openlocfilehash: 496ab6512cfb1478ed762eb165a760c872e7e222
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 11/01/2018
 
 ---
 
@@ -29,38 +29,31 @@ ms.lasthandoff: 04/20/2018
 
 [!include [banner](../includes/banner.md)]
 
-この記事では、CustomController クラスを拡張するコードを説明します。
+このトピックでは、CustomersController クラスを拡張するコードを説明します。
 
-コントローラーは、commerce エンティティ タイプの作成、読み取り、更新、および削除 (CRUD) の動作とアクションをコントロールする commerce エンティティのマッピングです。 各コマース エンティティには、対応するコントローラーが必要です。 Microsoft Dynamics 365 for Retail に含まれるコントローラーを拡張して、業務上の要件を満たすように新しい業務処理を追加することができます。 既存のコント ローラーを拡張するには、既存のコントローラー クラスを拡張する新しいクラスを定義する必要があります。 新しいクラスで、**ExtendedController** 属性を使用して、新しいクラスが既存のコントローラーを拡張していること、および新しいクラスがどのコントローラーを拡張するかを示します。 この例では、新しいクラスが**顧客**エンティティ タイプのコントローラーを拡張します。 各エンティティ タイプは、1 つのコント ローラーのみに関連付けられます。 既存のコント ローラーを上書きする新しいコント ローラーを作成するときは、**ExtendedController** 属性を持つ新しいコント ローラーが元のコントローラーの代わりに使用されます。 次の例では、**ExtendedCustomersController** クラスは **CustomersController** クラスを拡張して、**顧客**エンティティ タイプのエンティティ タイプとキー フィールドをパラメーターとして受け取ります。 サンプル コードは、Retail ソフトウェアの開発キット (SDK) 内のこのトピックから見つけることができます。
+コントローラーは、commerce エンティティ タイプの作成、読み取り、更新、および削除 (CRUD) の動作とアクションをコントロールする commerce エンティティのマッピングです。 各コマース エンティティには、対応するコントローラーが必要です。 Microsoft Dynamics 365 for Retail に含まれるコントローラーを拡張して、業務上の要件を満たすように新しい業務処理を追加することができます。 既存のコント ローラーを拡張するには、既存のコントローラー クラスを拡張する新しいクラスを定義する必要があります。 既存のコント ローラーを拡張する新しいコント ローラーを作成するときは、新しいコントローラーは拡張されるコントローラーで新しいメソッドを作成するか既存のメソッドをオーバーライドできます。 オーバーライドされていない拡張コントローラー内のすべてのメソッドは、引き続き同じように機能します。 この例では、**ExtendedCustomersController** クラスは **CustomersController** クラスを拡張し、**CustomersController**クラスは **Customers** エンティティ タイプのコントローラーです。  Retail サーバー Web.config ファイルの **extensionComposition** セクションを更新する必要があります。 詳細については、[Commerce Runtime (CRT) および Retail サーバー拡張機能](commerce-runtime-extensibility.md)の **MPOS/クラウド POS から新しい Retail サーバー API を呼び出す方法** セクションを参照してください。 サンプル コードは、Retail ソフトウェアの開発キット (SDK) 内のこのトピックから見つけることができます。 
 
-    namespace Microsoft.Dynamics.RetailServer.ExtensionSamples
+```csharp
+using System.Web.Http;
+using System.Web.OData;
+using Microsoft.Dynamics.Commerce.Runtime;
+using Microsoft.Dynamics.Commerce.Runtime.DataModel;
+using Microsoft.Dynamics.Retail.RetailServerLibrary;
+using Microsoft.Dynamics.Retail.RetailServerLibrary.ODataControllers;
+    
+namespace Microsoft.Dynamics.RetailServer.ExtensionSamples
+{
+    class ExtendedCustomersController : CustomersController
     {
-        using System;
-        using System.Collections.Generic;
-        using System.Linq;
-        using System.Runtime.InteropServices;
-        using Microsoft.Dynamics.Commerce.Runtime.DataModel;
-        using Microsoft.Dynamics.Retail.StoreServerServiceLibrary;
-        using Microsoft.Dynamics.Retail.StoreServerServiceLibrary.ODataControllers;
-        [ExtendedController("Customers")]
-        [ComVisible(false)]
-        public class ExtendedCustomersController : CustomersController
+        [CommerceAuthorization(new string[] { "Employee", "Application" })]
+        [HttpPost]
+        public override PageResult<GlobalCustomer> Search(ODataActionParameters parameters)
         {
-            public override IQueryable<Customer> Get()
-            {
-                List<Customer> customers = new List<Customer>();
-                for (int i = 0; i < 10; i++)
-                {
-                    var customer = new Customer();
-                    customer.AccountNumber = "customer" + i;
-                    customer.Name = "Name" + i;
-                    customers.Add(customer);
-                }
-                return customers.AsQueryable();
-            }
+            ThrowIf.Null<ODataActionParameters>(parameters, nameof(parameters));
+            parameters["customerSearchCriteria"] += " My custom criteria";
+            return base.Search(parameters);
         }
     }
-
-
-
+}
+```
 

@@ -18,10 +18,10 @@ ms.author: manado
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: e4c1f8c7435a901431286960581754e5b2820dad
-ms.openlocfilehash: 6804960b8e17f3d776cb2607ea94ff15788e65f1
+ms.sourcegitcommit: 657c19896b20a514dc5308bf7fb086085b482fec
+ms.openlocfilehash: 581c671afd275b61c9b20f668429f445e700241d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 10/03/2018
+ms.lasthandoff: 10/08/2018
 
 ---
 
@@ -41,7 +41,7 @@ LCS の監視および診断ポータルの基礎となるテレメトリ デー
 業務運営ソフトウェアでは、環境が立ち上がっており実行中であるかどうか常に把握して、業務運営を実行できるようにする必要があります。 LCS を通じて環境の稼働状態を簡単に表示できる必要があります。 Microsoft は、2 種類の監視機能をサポートします。
 
 -   **可用性の監視** - このタイプの監視は、いつでも利用可能であることを確認するため、環境に対してチェックを実行します。 チェックが失敗した場合、Microsoft サービス エンジニアリング チームにすぐに通知されます。
--   **稼働状態の監視** – 可用性チェックに加えて、基本的な正常性チェックを実行する必要があります。 これらの基本的な正常性チェックには、CPU レベル、仮想マシン (VM) のメモリ消費量、および 5 分間の合計デッドロック数が含まれます。 Microsoft テレメトリ インフラストラクチャは、環境から多くの正常性指標を収集します。 メトリックがしきい値を超えている場合は、Microsoft サービス エンジニアリング チームに警告が表示され、問題を調査できます。
+-   **稼働状態の監視** – 可用性チェックに加えて、基本的な正常性チェックを実行する必要があります。 これらの基本的な正常性チェックには、CPU レベル、コンピューターのメモリ消費量、および 5 分間の合計デッドロック数が含まれます。 Microsoft テレメトリ インフラストラクチャは、環境から多くの正常性指標を収集します。 メトリックがしきい値を超えている場合は、Microsoft サービス エンジニアリング チームに警告が表示され、問題を調査できます。
 
 ### <a name="diagnostics"></a>診断
 
@@ -56,7 +56,7 @@ Dynamics 365 for Finance and Operations などの管理されたクラウド サ
 
 ## <a name="access-the-monitoring-and-diagnostics-portal"></a>監視および診断ポータルへのアクセス
 1.  LCS を開き、適切なプロジェクトに移動します。
-2.  **環境**セクションで、表示する環境を選択してから**完全な詳細**をクリックします。
+2.  **環境** セクションで、表示する**環境**を選択してから **完全な詳細** をクリックします。
 3.  **環境の詳細**ページで、**環境の監視**をクリックして、監視および診断ポータルを開きます。 [![howtogettoenvmonitoring](./media/howtogettoenvmonitoring-1024x486.jpg)](./media/howtogettoenvmonitoring.jpg)
 
 ## <a name="tools"></a>ツール

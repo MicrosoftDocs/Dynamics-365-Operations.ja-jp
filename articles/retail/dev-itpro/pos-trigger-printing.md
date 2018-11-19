@@ -3,7 +3,7 @@ title: "Retail Modern POS (MPOS) のトリガーと印刷"
 description: "トリガーを使用すると、いずれかの Retail Modern POS の操作前後に発生するイベントを取得できます。"
 author: mugunthanm
 manager: AnnBe
-ms.date: 07/09/2018
+ms.date: 10/30/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -17,10 +17,10 @@ ms.author: mumani
 ms.search.validFrom: 2017-01-27
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 87663bae532f68c8dbc306b51bf591f33f7f4d63
-ms.openlocfilehash: 17fdecd4e471e7f2eaa553c11aab7c4f9030f148
+ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
+ms.openlocfilehash: 989034169127aed5ec792a623618e0f43209e8bf
 ms.contentlocale: ja-jp
-ms.lasthandoff: 10/04/2018
+ms.lasthandoff: 11/01/2018
 
 ---
 
@@ -83,6 +83,8 @@ ms.lasthandoff: 10/04/2018
 | PostTotalDiscountAmountTrigger  | キャンセル不可 | 合計金額がカートに追加した後に実行されます。          |
 | PreTotalDiscountPercentTrigger  | 解約可能     | 合計割引額がカートに追加される前に実行されます。       |
 | PostTotalDiscountPercentTrigger | キャンセル不可 | 合計割引額がカートに追加した後に実行されます。        |
+| PreAddCouponTrigger             | 解約可能     | 割引クーポンをカートに追加する前に実行されます。             |
+| PostAddCouponTrigger            | キャンセル不可 | 割引クーポンをカートに追加した後に実行されます。              |
 
 ## <a name="operation-triggers"></a>工程のトリガー
 
@@ -101,11 +103,12 @@ ms.lasthandoff: 10/04/2018
 | PreVoidPaymentTrigger   | 解約可能     | POS で支払行が無効になる前に実行されます。  |
 | PostVoidPaymentTrigger  | キャンセル不可 | POS で支払行が無効になった後に実行されます。   |
 
-印刷トリガー
+## <a name="printing-triggers"></a>印刷トリガー
 
 | トリガー                    | 種類       | 説明                                                                                                     |
 |----------------------------|------------|--------|
 | PrePrintReceiptCopyTrigger | 解約可能 | レシートのコピーが、表示仕訳帳の画面またはレシート表示ー画面から印刷される前に実行されます。 |
+| PostReceiptPromptTrigger   | キャンセル不可 | レシート プロンプト (レシートを印刷するかどうか) 後に実行されます。 |
 
 ## <a name="product-triggers"></a>製品トリガー
 

@@ -3,7 +3,7 @@ title: "Finance and Operations データベースを Azure SQL データベー�
 description: "このトピックでは、 Microsoft Dynamics 365 for Finance and Operations のデータベースを Azure ベースの環境から SQL Server ベースの環境に移動する方法について説明します。"
 author: laneswenka
 manager: AnnBe
-ms.date: 10/04/2018
+ms.date: 10/29/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: laswenka
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 162273d39f85e5bdbc011f6fd64064fd60db9302
-ms.openlocfilehash: 28a88883fb0af45fce46b5ed065e23b24ad05d3b
+ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
+ms.openlocfilehash: 6f4e24a467887febbb7be737b9bf28929a486e26
 ms.contentlocale: ja-jp
-ms.lasthandoff: 10/04/2018
+ms.lasthandoff: 11/01/2018
 
 ---
 
@@ -115,6 +115,23 @@ SELECT * FROM sys.dm_database_copies
 ```
 --Prepare a database in Azure SQL ddatabase for export to SQL Server.
 
+--Remove certificates in database from Electronic Signature usage
+DECLARE @SQLElectronicSig nvarchar(512)
+DECLARE certCursor CURSOR for
+select 'DROP CERTIFICATE ' + QUOTENAME(c.name) + ';'
+from sys.certificates c;
+OPEN certCursor;
+FETCH certCursor into @SQLElectronicSig;
+WHILE @@Fetch_Status = 0
+BEGIN
+print @SQLElectronicSig;
+exec(@SQLElectronicSig);
+FETCH certCursor into @SQLElectronicSig;
+END;
+CLOSE certCursor;
+DEALLOCATE certCursor;
+
+
 -- Re-assign full rext catalogs to [dbo]
 BEGIN
     DECLARE @catalogName nvarchar(256);
@@ -161,6 +178,11 @@ ALTER DATABASE
 -- SET THE NAME OF YOUR DATABASE BELOW
 MyNewCopy
 set CHANGE_TRACKING = OFF
+
+--Change ownership of alternate schemas to DBO
+ALTER AUTHORIZATION ON schema::shadow TO [dbo]
+ALTER AUTHORIZATION ON schema::[BACKUP] TO [dbo]
+
 --Remove the database level users from the database
 --these will be recreated after importing in SQL Server.
 declare
@@ -199,7 +221,7 @@ TRUNCATE TABLE BATCHSERVERCONFIG
 TRUNCATE TABLE BATCHSERVERGROUP
 --Remove records which could lead to accidentally sending an email externally.
 UPDATE SysEmailParameters
-SET SMTPRELAYSERVERNAME = '', MAILERNONINTERACTIVE = 'SMTP' --LANE.SWENKA 9/12/18 Forcing SMTP as Exchange provider can still email on refresh
+SET SMTPRELAYSERVERNAME = '', MAILERNONINTERACTIVE = 'SMTP' 
 --Remove encrypted SMTP Password record(s)
 TRUNCATE TABLE SYSEMAILSMTPPASSWORD
 GO
@@ -340,14 +362,6 @@ DEALLOCATE retail_ftx;
 
 新しいデータベースで店舗の業務手順の現在のバージョン (変更追跡に関連する) が使用されていることを確認するには、データ管理のデータ エンティティの変更追跡を有効または無効にする必要があります。 これは、店舗の業務手順の更新をトリガーするために必要なので、どのエンティティでも実行できます。
 
-### <a name="re-provision-the-target-environment"></a>対象の環境を再プロビジョニング
-
-[!include [environment-reprovision](../includes/environment-reprovision.md)]
-
-### <a name="reset-the-financial-reporting-database"></a>財務報告データベースのリセット
-
-Management Reporter という以前の名前を持った財務報告を使用する場合は、[データベースを復元した後の財務報告のデータ マートのリセット](../analytics/reset-financial-reporting-datamart-after-restore.md)の手順に従って、財務報告データベースをリセットする必要があります
-
 ## <a name="start-to-use-the-new-database"></a>新しいデータベースの使用を開始します。
 
 環境を切り替えて新しいデータベースを使用するには、最初に次のサービスを停止します。
@@ -359,6 +373,14 @@ Management Reporter という以前の名前を持った財務報告を使用す
 サービスが停止した後、AxDB データベース **AxDB\_orig** の名前を変更し、新しくインポートしたデータベース **AxDB** の名前を変更し、そして 3 つのサービスを再起動します。
 
 元のデータベースに戻すには、このプロセスを逆にします。 つまり、サービスを停止し、データベースの名前を変更してから、サービスを再起動します。
+
+### <a name="re-provision-the-target-environment"></a>対象の環境を再プロビジョニング
+
+[!include [environment-reprovision](../includes/environment-reprovision.md)]
+
+### <a name="reset-the-financial-reporting-database"></a>財務報告データベースのリセット
+
+Management Reporter という以前の名前を持った財務報告を使用する場合は、[データベースを復元した後の財務報告のデータ マートのリセット](../analytics/reset-financial-reporting-datamart-after-restore.md)の手順に従って、財務報告データベースをリセットする必要があります
 
 ## <a name="re-enter-data-from-encrypted-and-environment-specific-fields-in-the-target-database"></a>ターゲット データベースの暗号化された環境固有のフィールドからデータを再入力
 

@@ -3,7 +3,7 @@ title: "クラウド環境へ更新プログラムを適用"
 description: "このトピックでは、Lifecycle Services (LCS) を使用して、バイナリ更新プログラムまたはアプリケーション (AOT) 展開可能なパッケージをクラウド環境に適用する方法について説明します。"
 author: manalidongre
 manager: AnnBe
-ms.date: 07/12/2018
+ms.date: 10/17/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,10 +17,10 @@ ms.author: manado
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: c6a9994550830b3afdeda6b164f7e5c09d52e27f
+ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
+ms.openlocfilehash: 86d6bab2916966ff0baed2665ed7fecc47db72b3
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 11/01/2018
 
 ---
 
@@ -42,21 +42,23 @@ ms.lasthandoff: 08/09/2018
 > [!NOTE]
 > プロジェクトのタイプに関係なく、ビルド環境があれば、LCS のみを使用してバイナリ更新プログラムとデータ アップグレード パッケージを適用します。 LCS を使用してアプリケーション配置可能パッケージを適用することはできません。
 
-他のトポロジ (以下) については、リモート デスクトップ プロトコル (RDP) を使用して環境に接続し、コマンドラインからインストールする必要があります。 手動のパッケージ配置の詳細については、[配置可能パッケージのインストール](install-deployable-package.md) を参照してください。
+他のトポロジ (以下) については、リモート デスクトップ プロトコル (RDP) を使用して環境に接続し、コマンドラインからインストールする必要があります。 手動のパッケージ配置の詳細については、[コマンド ラインからの配置可能パッケージのインストール](install-deployable-package.md) を参照してください。
 
 - ローカルの開発環境 (仮想ハード ディスク [VHD] からダウンロード可能)
 - Microsoft Azure (パートナーおよび試用プロジェクト) でのマルチボックス開発/テスト環境
 
 ## <a name="key-concepts"></a>重要な概念
 
-開始する前に、*配置可能パッケージ*、*runbooks*、および *AXInstaller* を理解する必要があります。 デプロイ可能なパッケージは、どのような環境でも利用可能なデプロイメントの単位です。 デプロイ可能なパッケージは、プラットフォームまたは他のランタイム コンポーネント、更新されたアプリケーション (AOT) パッケージ、または新しいアプリケーション (AOT) パッケージのバイナリ更新です。 AXInstaller は、パッケージのインストールを可能にする runbook を作成します。 詳細については、このトピックの最後で [パッケージ、Runbook、および AXUpdateInstaller の詳細](#packages-runbooks-and-the-AXUpdateInstaller-in-depth) を参照してください。
+開始する前に、*配置可能パッケージ*、*runbooks*、および *AXInstaller* を理解する必要があります。 デプロイ可能なパッケージは、どのような環境でも利用可能なデプロイメントの単位です。 デプロイ可能なパッケージは、プラットフォームまたは他のランタイム コンポーネント、更新されたアプリケーション (AOT) パッケージ、または新しいアプリケーション (AOT) パッケージのバイナリ更新です。 AXInstaller は、パッケージのインストールを可能にする runbook を作成します。 詳細については、このトピックの最後で [パッケージ、Runbook、および AXUpdateInstaller の詳細](apply-deployable-package-system.md#packages-runbooks-and-the-axupdateinstaller-in-depth) を参照してください。
 
 ## <a name="supported-package-types"></a>サポートされているパッケージの種類
 
 - **AOT の配置可能パッケージ** - アプリケーション メタデータおよびソース コードから生成される配置可能なパッケージ。 この展開可能なパッケージは、開発環境またはビルド環境で作成されます。
 - **バイナリ更新プログラム パッケージ** - ダイナミックリンク ライブラリ (DLL)と、プラットフォームとアプリケーションが依存するその他のバイナリとメタデータを含む配置可能パッケージ。 これは、Microsoft によってリリースされたパッケージです。
-- **結合された配置可能小売パッケージ** - 小売コードが結合された後に生成されるさまざまな小売パッケージの組み合わせ。
-- **マージ済パッケージ** – 各タイプの 1 つのパッケージを組み合わせて作成されたパッケージ。 たとえば、1 つのバイナリ更新プログラム パッケージ、1 つの AOT パッケージ、および 1 つの小売パッケージを組み合わせることができます。 パッケージは、LCS のプロジェクトのアセット ライブラリでマージされます。
+- **配置可能小売パッケージ** - 小売コードが結合された後に生成されるさまざまな小売パッケージの組み合わせ。
+- **マージ済パッケージ** – 各タイプの 1 つのパッケージを組み合わせて作成されたパッケージ。 たとえば、1 つのバイナリ更新パッケージと 1 つの AOT パッケージ、または 1 つの AOT パッケージと 1 つの小売展開可能パッケージを結合することができます。 パッケージは、LCS のプロジェクトのアセット ライブラリでマージされます。
+> [!NOTE] 
+> バイナリ パッケージおよび小売展開可能パッケージは、同じ結合済パッケージにまとめることはできません。
 
 ## <a name="prerequisite-steps"></a>前提条件のステップ
 
@@ -142,7 +144,7 @@ ms.lasthandoff: 08/09/2018
 1. 更新プログラムを LCS からダウンロードします。 LCS から更新プログラムをダウンロードする方法の詳細については、[Lifecycle Services から更新プログラムをダウンロード](../migration-upgrade/download-hotfix-lcs.md) を参照してください。
 
     - バイナリ更新プログラムで、更新プログラムの配置可能パッケージを直接資産ライブラリにアップロードします。
-    - アプリケーション/X++ 更新プログラムについては、開発環境でパッケージを適用します。 すべての競合を解決した後、Visual Studio で配置可能パッケージを生成し、アセット ライブラリにパッケージをアップロードします。 資産ライブラリにアップロードおよび配置可能なパッケージを作成する方法の詳細については、[配置可能なパッケージの作成と適用](create-apply-deployable-package.md) を参照してください。
+    - アプリケーション/X++ 更新プログラムについては、開発環境でパッケージを適用します。 すべての競合を解決した後、Visual Studio で配置可能パッケージを生成し、アセット ライブラリにパッケージをアップロードします。 アセット ライブラリにアップロードおよび配置可能なパッケージを作成する方法の詳細については、[モデルの配置可能パッケージの作成](create-apply-deployable-package.md) を参照してください。
 
 2. LCS の**資産ライブラリ**ページの、対応する資産のタイプのタブで(**ソフトウェア可能パッケージ**)、パッケージを選択し、**リリース候補**をクリックします。
 3. このトピックの前半の手順を使用して、サンドボックス環境でパッケージを適用します。
@@ -208,7 +210,7 @@ ms.lasthandoff: 08/09/2018
 
 ## <a name="deploying-packages-in-retail-environments"></a>小売環境でのパッケージの展開
 
-環境内の配置可能パッケージを適用した後に、小売コンポーネント (Retail Modern POS など) を使用している場合、店舗内コンポーネントも更新する必要があります。 詳細については、[Retail Modern POS のインストールと更新](../../retail/retail-modern-pos-device-activation.md) を参照してください。
+環境内の配置可能パッケージを適用した後に、小売コンポーネント (Retail Modern POS など) を使用している場合、店舗内コンポーネントも更新する必要があります。 詳細については、[Retail Modern POS (MPOS) の構成、インストール、有効化](../../retail/retail-modern-pos-device-activation.md)を参照してください。
 
 ## <a name="packages-runbooks-and-the-axupdateinstaller-in-depth"></a>パッケージ、Runbook、および AXUpdateInstaller の詳細
 
@@ -226,5 +228,5 @@ ms.lasthandoff: 08/09/2018
 
 ## <a name="additional-resources"></a>その他のリソース
 
-[配置可能パッケージのインストール](install-deployable-package.md)
+[配置可能なパッケージのコマンドラインからのインストール](install-deployable-package.md)
 

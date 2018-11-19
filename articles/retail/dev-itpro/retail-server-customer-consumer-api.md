@@ -18,10 +18,10 @@ ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 4e3154a12755e7bb1962bb08328b405f9ff6cecc
+ms.sourcegitcommit: 61f737edea3af5281b6d2fd7c3c0899082782067
+ms.openlocfilehash: d202ad2403eb93e6424e54be2d87cc7f45c36c8c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 10/16/2018
 
 ---
 
@@ -49,6 +49,9 @@ Retail サーバー (Retail プロキシ経由) へのすべての要求リク�
 -   CommerceRole.Customer
 
 匿名および顧客ロールは、電子商取引 (顧客/消費者) シナリオに適用されます。 匿名ロールは、サインインしていない電子商取引顧客を表す要求に使用されます。 顧客ロールは、認証済みでサインインしている電子商取引顧客を表す要求に使用されます。 ロール フィルターは、Retail サーバーで公開されているすべての API に適用されます。 eCommerce シナリオでは、関連する CommerceRole.Anonymous または CommerceRole.Customer のいずれかを持つ API のみを使用することができます。
+
+> [!NOTE]
+> 既定では、匿名アクセスは有効ではありません。 環境の匿名アクセスを有効にするには、[サポート](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-support)に問い合わせてください。
 
 ### <a name="apis-that-are-available-for-an-authenticated-customer-role"></a>認証された顧客ロールで有効な API
 

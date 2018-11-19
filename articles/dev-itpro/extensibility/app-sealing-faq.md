@@ -3,7 +3,7 @@ title: "拡張性 FAQ"
 description: "このトピックでは、拡張機能に関してよくある質問に対する回答を示します。"
 author: FrankDahl
 manager: AnnBe
-ms.date: 09/18/2018
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: fdahl
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
 ms.translationtype: HT
-ms.sourcegitcommit: 1aae5797e37b846a38f957b02870e213da528a2d
-ms.openlocfilehash: c413bfe14006be478b8ab96ac507e5f5058885c5
+ms.sourcegitcommit: 1c9af9bf27af48679c4b53475b7bc89b38998da4
+ms.openlocfilehash: f91cc10d471f8df41d5c472efe31fafc31ba98a1
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/20/2018
+ms.lasthandoff: 10/24/2018
 
 ---
 
@@ -95,4 +95,9 @@ Microsoft Dynamics 365 for Finance and Operations release 8.0 より後は、プ
 - 要求: 拡張を通じて CountryRegionCode を変更可能にする。
 - 問題: プラットフォーム更新 14 以降、CountryRegionCode への変更は、CountryRegionCode プロパティに値が既にある場合にサポートされます。 変更の制限が厳しくなり (要素は一部の国/地域でのみ利用可能になりました)、重大な変更となる可能性があるため、空の CountryRegionCode プロパティを変更することはできません。
 - 回避策: 要素が既に国/地域に固有の場合、既存の CountryRegionCode 拡張機能を使用します。
+
+### <a name="why-cant-the-table-field-properties-allowedit-alloweditoncreate-mandatory-or-ignoreedtrelation-be-made-extensible"></a>テーブル フィールド プロパティ AllowEdit、AllowEditOnCreate、Mandatory、または IgnoreEDTRelation を拡張可能にできないのはなぜですか?
+- リクエスト: テーブル フィールド プロパティ AllowEdit、AllowEditOnCreate、Mandatory、IgnoreEDTRelation を拡張機能経由で変更可能にします。
+- 問題: テーブル フィールドで "編集を許可"、"作成時の編集を許可"、"必須"、"IgnoreEDTRelation" プロパティを変更できると、重大な変更が生じます。 編集を許可するフィールドを変更すると、フィールドの目的が変更されます。 フィールドの編集を許可しないと、既存の動作が遮断されることがあります。 関係を変更すると、その関係の当初の目的が中断され、重大な変更となります。 フィールドを必須にすると、既存の動作が中断される可能性があります。
+- 対応策: 拡張機能経由で新しいテーブル フィールドを追加し、必要に応じてそれを制御します。
 

@@ -3,7 +3,7 @@ title: "システム診断のインストールと実行"
 description: "Microsoft Dynamics Lifecycle Services では、Microsoft Dynamics AX 環境を検出してデータを収集するサービスが使用できるようになる前にインストールする必要があるオンプレミス コンポーネントがシステム診断に含まれています。"
 author: manalidongre
 manager: AnnBe
-ms.date: 11/13/2017
+ms.date: 10/10/2018
 ms.topic: article
 ms.prod: dynamics-ax-2012
 ms.service: 
@@ -18,10 +18,10 @@ ms.author: manado
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 58359e84c44fd4dbda109308754eee5e3cb7098c
+ms.sourcegitcommit: fc61ba6131ed6d93132701aa799243e78a289134
+ms.openlocfilehash: d51f75f9ebbf42d6ce0125124463dae35d3084bd
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 10/10/2018
 
 ---
 
@@ -105,8 +105,8 @@ Group Policy では、AOS のサービスをリモートで利用できるよう
 2.  左ウィンドウで、**コンピューターの構成** &gt; **Windows の設定** &gt; **セキュリティ設定** &gt; **ローカル ポリシー** &gt; **セキュリティ オプション**を展開します。
 3.  右ウィンドウで、**ネットワーク アクセス: リモートからアクセスできるレジストリ パスおよびサブ パス**をダブルクリックします。
 4.  次のパスがリストにない場合は、リストの最後にそれを追加し、**OK** をクリックします。
-    -   SystemCurrentControlSetControlPriorityControl
-    -   SystemCurrentControlSetservicesDynamics Server6.0
+    -   System\CurrentControlSet\Control\PriorityControl
+    -   System\CurrentControlSet\services\Dynamics Server\6.0
 
 #### <a name="configure-windows-event-log-and-wmi-permissions"></a>Windows イベント ログおよび WMI のアクセス許可をコンフィギュレーションする
 

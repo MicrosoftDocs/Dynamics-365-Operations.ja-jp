@@ -3,7 +3,7 @@ title: "Sales から Finance and Operations の連絡先または顧客への連
 description: "このトピックでは、Microsoft Dynamics 365 for Sales から Microsoft Dynamics 365 for Finance and Operations に対して、連絡先 (連絡先) と連絡先 (顧客) エンティティを同期するために使用されるテンプレートと基本的なタスクについて説明します。"
 author: ChristianRytt
 manager: AnnBe
-ms.date: 10/25/2017
+ms.date: 10/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 021a43c78cec83b23aff5dcc40db1a4be81aefc3
+ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
+ms.openlocfilehash: 5363c64cd1a475f0047c079d9166718ddc765f02
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 11/01/2018
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 03/26/2018
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> 見込顧客を現金化するソリューションを使用する前に、[Dynamics 365 データ統合](/common-data-service/entity-reference/dynamics-365-integration) をよく理解しておく必要があります。
+> 見込顧客を現金化するソリューションを使用する前に、[Common Data Service for Apps へデータを統合](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator) をよく理解しておく必要があります。
 
 このトピックでは、Microsoft Dynamics 365 for Sales から Microsoft Dynamics 365 for Finance and Operations に対して、連絡先 (連絡先) と連絡先 (顧客) エンティティを直接同期するために使用されるテンプレートと基本的なタスクについて説明します。
 
@@ -73,22 +73,22 @@ Sales から Finance and Operations へ連絡先 (連絡先) エンティティ�
 
 Sales の連絡先は Finance and Operations の連絡先または顧客になります。 Sales の連絡先を Finance and Operations の連絡先または顧客として同期する必要があるかどうかを判断するために、システムは Sales の連絡先の次のプロパティを調べます。
 
-- **Finance and Operations の顧客への同期:** [有効な顧客] が [はい] に設定されている連絡先
-- **Finance and Operations の連絡先との同期:** [有効な顧客] が [いいえ] に設定され、**会社** (親勘定/連絡先) がアカウント (連絡先ではない) を表す連絡先
+- **Finance and Operations の顧客への同期:** **有効な顧客**が**はい**に設定されている連絡先
+- **Finance and Operations の連絡先との同期:** **有効な顧客**が**いいえ**に設定され、**会社** (親勘定/連絡先) がアカウント (連絡先ではない) を表す連絡先
 
 ## <a name="prospect-to-cash-solution-for-sales"></a>売上の見込顧客を現金化するソリューション
 
-新しい [有効な顧客] フィールドが連絡先に追加されました。 このフィールドは、営業活動を持つ連絡先と営業活動を持たない連絡先を区別するために使用されます。 [有効な顧客] は、関連する見積書、注文、または請求書を持つ連絡先に対してのみ [はい] に設定されます。 これらの連絡先のみが顧客として Finance and Operations に同期されます。
+新しい**有効な顧客**フィールドが連絡先に追加されました。 このフィールドは、営業活動を持つ連絡先と営業活動を持たない連絡先を区別するために使用されます。 **有効な顧客**は、関連する見積書、注文、または請求書を持つ連絡先に対してのみ**はい**に設定されます。 これらの連絡先のみが顧客として Finance and Operations に同期されます。
 
-新しい [IsCompanyAnAccount] フィールドが連絡先に追加されました。 このフィールドは、連絡先が**アカウント**タイプの会社 (親勘定/連絡先) にリンクされているかどうかを示します。 この情報は、Finance and Operations の連絡先として同期する必要がある連絡先を識別するために使用されます。
+新しい **IsCompanyAnAccount** フィールドが連絡先に追加されました。 このフィールドは、連絡先が**アカウント**タイプの会社 (親勘定/連絡先) にリンクされているかどうかを示します。 この情報は、Finance and Operations の連絡先として同期する必要がある連絡先を識別するために使用されます。
 
-新しい [連絡先番号] フィールドが連絡先に追加され、統合をサポートするための固有のナチュラル キーが保証されます。 新しい連絡先が作成されると、**連絡先番号**値は、番号順序を使用して自動的に生成されます。 値は **CON** で構成され、続いて番号順序が増加し、6 文字の接尾辞が続きます。 次に例を示します: **CON-01000-BVRCPS**
+新しい**連絡先番号**フィールドが連絡先に追加され、統合をサポートするための固有のナチュラル キーが保証されます。 新しい連絡先が作成されると、**連絡先番号**値は、番号順序を使用して自動的に生成されます。 値は **CON** で構成され、続いて番号順序が増加し、6 文字の接尾辞が続きます。 次に例を示します: **CON-01000-BVRCPS**
 
-Sales の統合ソリューションが適用されている場合、アップグレード スクリプトは、先に述べた番号順序を使用して、既存の連絡先の [連絡先番号] フィールドを設定します。 また、アップグレード スクリプトでは、営業活動を持っている任意の連絡先の [有効な顧客] フィールドが [はい] に設定されます。
+Sales の統合ソリューションが適用されている場合、アップグレード スクリプトは、先に述べた番号順序を使用して、既存の連絡先の**連絡先番号**フィールドを設定します。 また、アップグレード スクリプトでは、営業活動を持っている任意の連絡先の**有効な顧客**フィールドが**はい**に設定されます。
 
 ## <a name="in-finance-and-operations"></a>Finance and Operations
 
-[IsContactPersonExternallyMaintained] プロパティを使用し、連絡先をタグ付けします。 このプロパティは、指定された連絡先が外部で管理されていることを示します。 この場合、外部で管理されている連絡先は Sales に保持されます。
+**IsContactPersonExternallyMaintained** プロパティを使用し、連絡先をタグ付けします。 このプロパティは、指定された連絡先が外部で管理されていることを示します。 この場合、外部で管理されている連絡先は Sales に保持されます。
 
 ## <a name="preconditions-and-mapping-setup"></a>前提条件とマッピングの設定
 
