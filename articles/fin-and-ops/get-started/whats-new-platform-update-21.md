@@ -3,7 +3,7 @@ title: "Dynamics 365 for Finance and Operations プラットフォーム更新�
 description: "このトピックでは、Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 21 の新機能または変更された機能について説明します。 このバージョンは 2018 年 10 月にリリースされました。"
 author: tonyafehr
 manager: AnnBe
-ms.date: 10/29/2018
+ms.date: 11/19/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,16 +18,15 @@ ms.author: tfehr
 ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Platform 21
 ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
-ms.openlocfilehash: a4a950a0fb8b1acfd300ceedfd80ac76bdeaca6f
+ms.sourcegitcommit: cda5df9bec24bf8fc63ab3a5b2f3de9f84a03923
+ms.openlocfilehash: 1219efbf4bc6a244574ccd3974713f86f4500105
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/01/2018
+ms.lasthandoff: 11/19/2018
 
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-platform-update-21-october-2018"></a><span data-ttu-id="bfb2a-104">Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 21 (2018 年 10 月) の新機能および変更された機能</span><span class="sxs-lookup"><span data-stu-id="bfb2a-104">What's new or changed in Dynamics 365 for Finance and Operations platform update 21 (October 2018)</span></span>
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 
 <span data-ttu-id="bfb2a-105">このトピックでは、Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 21 の新機能または変更された機能について説明します。</span><span class="sxs-lookup"><span data-stu-id="bfb2a-105">This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations platform update 21.</span></span> <span data-ttu-id="bfb2a-106">このバージョンは 2018 年 10 月にリリースされ、ビルド番号は 7.0.5073 です。</span><span class="sxs-lookup"><span data-stu-id="bfb2a-106">This version was released in October 2018 and has a build number of 7.0.5073.</span></span>

@@ -17,17 +17,16 @@ ms.author: mikefalkner
 ms.search.validFrom: 2018-11-30
 ms.dyn365.ops.version: 8.1.1
 ms.translationtype: HT
-ms.sourcegitcommit: c6502a6fb0ceaed75fd5bb6ec5b2f13db1879eea
-ms.openlocfilehash: ec659a53c187b1bdfd81565d6e2f20a59e08834c
+ms.sourcegitcommit: cda5df9bec24bf8fc63ab3a5b2f3de9f84a03923
+ms.openlocfilehash: b02a1a066913c9959e9a55e78789e5ff1a175c56
 ms.contentlocale: ja-jp
-ms.lasthandoff: 10/12/2018
+ms.lasthandoff: 11/19/2018
 
 ---
 
 # <a name="ledger-settlements"></a><span data-ttu-id="8308d-103">元帳決済</span><span class="sxs-lookup"><span data-stu-id="8308d-103">Ledger settlements</span></span>
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 <span data-ttu-id="8308d-104">元帳決済では、一般会計の借方および貸方トランザクションを照合し、決済済としてマークすることができます。</span><span class="sxs-lookup"><span data-stu-id="8308d-104">Ledger settlements let you match debit and credit transactions in the general ledger, and mark them as settled.</span></span> <span data-ttu-id="8308d-105">この方法で、関連するトランザクションがクリアされていることを確認することができます。</span><span class="sxs-lookup"><span data-stu-id="8308d-105">In this way, you can make sure that related transactions have been cleared.</span></span> <span data-ttu-id="8308d-106">誤って行われた決済を取り消すこともできます。</span><span class="sxs-lookup"><span data-stu-id="8308d-106">You can also reverse settlements if they were made by mistake.</span></span>
 

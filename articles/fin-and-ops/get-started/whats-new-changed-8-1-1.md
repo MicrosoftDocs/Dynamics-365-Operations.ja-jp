@@ -3,7 +3,7 @@ title: "Dynamics 365 for Finance and Operations バージョン 8.1.1 (2018 年 
 description: "このトピックでは、Dynamics 365 for Finance and Operations バージョン 8.1.1 の新機能または変更された機能について説明します。 このバージョンは 2018 年 10 月にリリースされました。"
 author: tonyafehr
 manager: AnnBe
-ms.date: 10/09/2018
+ms.date: 11/19/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,16 +18,16 @@ ms.author: tfehr
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Release 8.1.1
 ms.translationtype: HT
-ms.sourcegitcommit: 77770c731b711600fdd91dcf790568f7632fd2d6
-ms.openlocfilehash: ac56c4b1b86e6fc592463527b9faef0ab57f7962
+ms.sourcegitcommit: cda5df9bec24bf8fc63ab3a5b2f3de9f84a03923
+ms.openlocfilehash: 5c4a408b0b56eede4c1cc2f32c410e75372f325f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2018
+ms.lasthandoff: 11/19/2018
 
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-version-811-october-2018"></a><span data-ttu-id="8c686-104">Dynamics 365 for Finance and Operations バージョン 8.1.1 (2018 年 10 月) の新機能および変更された機能</span><span class="sxs-lookup"><span data-stu-id="8c686-104">What's new or changed in Dynamics 365 for Finance and Operations version 8.1.1 (October 2018)</span></span>
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+
 
 <span data-ttu-id="8c686-105">このトピックでは、Microsoft Dynamics 365 for Finance and Operations バージョン 8.1.1 (2018 年 10 月) の新機能または変更された機能について説明します。</span><span class="sxs-lookup"><span data-stu-id="8c686-105">This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations version 8.1.1 (October 2018).</span></span> <span data-ttu-id="8c686-106">このバージョンは 2018 年 10 月にリリースされ、ビルド番号は 8.1.170 です。</span><span class="sxs-lookup"><span data-stu-id="8c686-106">This version was released in October 2018 and has a build number of 8.1.170.</span></span>
 
