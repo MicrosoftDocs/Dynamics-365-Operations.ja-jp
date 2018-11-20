@@ -17,10 +17,10 @@ ms.author: mikefalkner
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1
 ms.translationtype: HT
-ms.sourcegitcommit: c5d4fb53939d88fcb1bd83d70bc361ed9879f298
-ms.openlocfilehash: 4c27e0f75a45a2e4290ec4b6f72ee67d792449a0
+ms.sourcegitcommit: a8c033caa8a4c4cf579ec166dce7a9982408d816
+ms.openlocfilehash: 0c492cd76fc9742aa4cff8fe588541cb2c6f1863
 ms.contentlocale: ja-jp
-ms.lasthandoff: 10/01/2018
+ms.lasthandoff: 10/11/2018
 
 ---
 
@@ -38,7 +38,7 @@ ms.lasthandoff: 10/01/2018
 
 手動仕入先 ID を使用する場合、法人間で仕入先をコピーすることもできます。 ただし、仕入先 ID が既に存在している法人に仕入先をコピーしようとした場合、コピー プロセスは開始しません。
 
-## <a name="copy-a-vendor"></a>仕入先をコピーする
+## <a name="copy-a-vendor"></a>仕入先のコピー
 
 仕入先をコピーするには、**すべての仕入先** リスト ページで **新規** を選択し、**すべての仕入先、新規レコード** ページを開きます。 新規仕入先 ID は、すぐには割り当てられません。 この挙動は、Microsoft Dynamics 365 for Finance and Operations の旧バージョンとは異なります。 仕入先グループが選択されていないため、使用する正しい番号順序を決定できません。 また、仕入先を新規に作成しようとしているのか、それとも仕入先をコピーしようとしているのか、を判断できません。 したがって、ページ下端にある **保存** を選択するまで、仕入先 ID は割り当てられません。
 

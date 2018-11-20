@@ -3,7 +3,7 @@ title: "POS 要求ハンドラーのオーバーライド"
 description: "このトピックでは、RetailTransactionServiceEx クラスに拡張メソッドを追加して、Commerce Data Exchange - リアルタイム サービスを拡張する方法について説明します。 リアルタイム サービスは、Retail クライアントがリアルタイムで小売機能を操作できるようします。"
 author: mugunthanm
 manager: AnnBe
-ms.date: 09/07/2018
+ms.date: 10/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -18,10 +18,10 @@ ms.author: mumani
 ms.search.validFrom: 209/07/2018
 ms.dyn365.ops.version: AX 7.3.5
 ms.translationtype: HT
-ms.sourcegitcommit: 7d4a049a44374276655dce696b5bbbe2e6f9fba9
-ms.openlocfilehash: 10a18e209e9e4591ac1dda492616dd2a2480c312
+ms.sourcegitcommit: fc61ba6131ed6d93132701aa799243e78a289134
+ms.openlocfilehash: 0399841a119744956d2771afd0d1b8b395d493e6
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/12/2018
+ms.lasthandoff: 10/10/2018
 
 ---
 
@@ -102,6 +102,9 @@ ms.lasthandoff: 09/12/2018
 | CreateTenderRemovalTransactionClientRequestHandler | POS で支払/入金の削除操作を行うときに実行されます。              |
 | CreateFloatEntryTransactionClientRequestHandler    | POS で釣銭入力操作を行うときに実行されます。                 |
 | SelectZipCodeInfoClientRequestHandler              | POS で住所の追加/編集ビューで郵便番号を入力するときに実行されます。 |
+| CreateStartingAmountTransactionClientRequestHandler | POS で開始金額申告を行うときに実行されます。 |
+| LoyaltyCardPointsBalanceOperationRequestHandler     | POS でロイヤルティ カード残高操作を行うときに実行されます。 | 
+
 
 **支払/入金計算要求ハンドラー**
 
@@ -111,6 +114,14 @@ ms.lasthandoff: 09/12/2018
 | GetTenderDetailsClientRequestHandler                   | POS で支払/入金申告の詳細を取得するときに実行されます。  |
 | CreateBankDropTransactionClientRequestHandler          | POS で銀行入金操作を行うときに実行されます。          |
 | CreateTenderDeclarationTransactionClientRequestHandler | POS で支払/入金申告操作を行うときに実行されます。 |
+
+
+**販売注文の要求ハンドラー**
+
+| 要求名                                           | 説明                                               |
+|--------------------------------------------------------|-----------------------------------------------------------|
+| GetGiftReceiptsClientRequestHandler                | POS でギフト レシートを印刷するときに実行されます。          |
+
 
 **POS でハンドラーをオーバーライドする方法**
 

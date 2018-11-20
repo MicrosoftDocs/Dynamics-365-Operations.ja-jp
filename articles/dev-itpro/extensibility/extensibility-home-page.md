@@ -18,10 +18,10 @@ ms.author: fdahl
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
 ms.translationtype: HT
-ms.sourcegitcommit: 5ea198d50a34a89828277f924848a7f869e57555
-ms.openlocfilehash: 7595076cdc714b28503a9d12589b29c5659f863b
+ms.sourcegitcommit: 3b7c2b72d97c42076e1f759e9c11c74cb17476c1
+ms.openlocfilehash: 6024a1654b9d16b381cbfd4c1cebcb917bdb8714
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/06/2018
+ms.lasthandoff: 10/17/2018
 
 ---
 # <a name="extensibility-home-page"></a>拡張機能のホーム ページ
@@ -94,12 +94,12 @@ Microsoft Dynamics 365 for Finance and Operations は、パートナー、付加
 + [フォームのキャプションの変更](change-caption-form.md)
 + [フォーム コントロールのプロパティの変更](modify-control-properties.md)
 
+### <a name="others"></a>その他
++ [小数点以下の精度の拡張](decimal-point-precision.md)
+
 ### <a name="reports"></a>レポート
 + [電子申告機能の一覧の拡張](../analytics/general-electronic-reporting-formulas-list-extension.md)
 + [アプリ スイート レポートのカスタマイズ](../analytics/customize-app-suite-reports-with-extensions.md)
-
-### <a name="labels"></a>ラベル
-+ [ラベルの変更](change-label.md)
 
 ### <a name="blog-posts"></a>ブログの投稿
 

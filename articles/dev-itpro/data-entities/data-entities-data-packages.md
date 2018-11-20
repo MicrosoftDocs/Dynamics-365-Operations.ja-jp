@@ -3,7 +3,7 @@ title: "データ管理"
 description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations のデータ管理に関する一般情報を提供します。"
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 96a9075294c1f2a9cfde03be1aaaa26af90de4c2
-ms.openlocfilehash: 920e6b28ecfff42e18ab50e543f92e9848a453d7
+ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
+ms.openlocfilehash: b84ace2c5bb6ca3486ef356bbe6565177e727741
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/04/2018
+ms.lasthandoff: 11/01/2018
 
 ---
 
@@ -242,6 +242,7 @@ ms.lasthandoff: 09/04/2018
 ### <a name="export-process-troubleshooting"></a>プロセス トラブルシューティングをエキスポート
 - エクスポート プロセス中にエラーが発生した場合、**実行ログの表示**をクリックし、ログのテキスト、ステージング ログ詳細、詳細情報の情報ログをを確認します。
 - エクスポート プロセス中にエラーが発生し、ステージングをスキップするように指示ノートが表示された場合、**ステージングをスキップ** オプションをオフにし、エンティティを追加します。 複数のデータ エンティティをエクスポートする場合は、個々のデータ エンティティに対して**ステージングのスキップ**ボタンを使用できます。
+- エクスポート処理により処理可能なファイル サイズには、256 MB の制限があります。 エクスポートされるレコード数が多い場合、生成されるファイル サイズがこの制限を超えないようにします。 このようなシナリオを処理するための別の方法は、データのサブセットのみをエクスポートするようエンティティでフィルターを使用することです。 現実的ではない場合、ソリューション全体で自分のデータベースの持ち込みを考慮する必要があります。
 
 ### <a name="import-process-troubleshooting"></a>プロセス トラブルシューティングのインポート
 データ エンティティ ファイルをアップロードするとき、次の操作を行います。
@@ -266,30 +267,42 @@ ms.lasthandoff: 09/04/2018
 
 - 次の Insert ステートメントを使用してレコードを追加します。適切な値に置き換えてください。 
 
-  INSERT INTO SYSFLIGHTING VALUES (‘DMFEnableAllCompanyExport’, 1, 12719367, 5637144576, 5637144576, 1) 
+  INSERT INTO SYSFLIGHTING VALUES (‘DMFEnableAllCompanyExport’, 1, Flight service ID, Partition, RecID, 1) 
     - フライト名 = DMFEnableAllCompanyExport
     - 有効 = 1
-    - フライト サービス ID = 12719367 (上の #2 に示すように D365)
-    - パーティション = 環境から取得されたパーティション ID
-    - RecID = パーティションと同じ ID
+    - フライト サービス ID = 12719367
+    - パーティション = 環境のパーティション ID。レコードを照会 (選択) することで取得できます。 すべてのレコードには、ここでコピーおよび使用する必要があるパーティション ID があります。
+    - RecID = パーティションと同じ ID。
     - RecVersion = 1
-- 環境の web.config を変更します。 
-    - add key="DataAccess.FlightingServiceCatalogID" value="12719367"
 
 **DMFExportToPackageForceSync** - このフライトは、ExportToPackage 統合 API で同期動作を有効にする機能を表します。 既定では、動作は非同期です。 これは、サポート リクエストを作成することで実稼働環境で同期に変更できます。 非実稼働環境で、次の手順に従う必要があります。
 
-- 次の Insert ステートメントを使用してレコードを追加します。適切な値に置き換えてください。 
+- 次の Insert ステートメントを使用してレコードを追加します。適切な値に置き換えてください
 
-  INSERT INTO SYSFLIGHTING VALUES (‘DMFExportToPackageForceSync’, 1, 12719367, 5637144576, 5637144576, 1) 
-    - フライト名 = DMFExportToPackageForceSync
-    - 有効 = 1
-    - フライト サービス ID = 12719367 (上の #2 に示すように D365)
-    - パーティション = 環境から取得されたパーティション ID
-    - RecID = パーティションと同じ ID
-    - RecVersion = 1
-- 環境の web.config を変更します。 
-    - add key="DataAccess.FlightingServiceCatalogID" value="12719367"
-    
+INSERT INTO SYSFLIGHTING VALUES ('DMFExportToPackageForceSync', 1, Flight service ID, Partition, RecID, 1) 
+- フライト名 = DMFExportToPackageForceSync
+- 有効 = 1
+- フライト サービス ID = 12719367
+- パーティション = 環境のパーティション ID。レコードを照会 (選択) することで取得できます。 すべてのレコードには、ここでコピーおよび使用する必要があるパーティション ID があります。
+- RecID = パーティションと同じ ID。
+- RecVersion = 1
+
+-IIS の再起動
+
+**EntityNamesInPascalCaseInXMLFiles** - エンティティの XML ファイルの Pascal Case にエンティティ名前が必要な場合、このフライトを有効にすることができます。 これは、この仕様に統合パイプが組み込まれている場合に便利です。 ただし、そのような依存関係がない場合、このフライトは無視でき、既定では XML ファイルには大文字のエンティティ名があります。 実稼働環境でこのフライトを有効にするには、サポート案件を記録する必要があります。 
+
+非実稼働環境で、次の手順に従う必要があります。
+
+- 次の Insert ステートメントを使用してレコードを追加します。適切な値に置き換えてください。
+
+INSERT INTO SYSFLIGHTING VALUES ('EntityNamesInPascalCaseInXMLFiles', 1, Flight service ID, Partition, RecID, 1) 
+- フライト名 = DMFExportToPackageForceSync
+- 有効 = 1
+- フライト サービス ID = 12719367
+- パーティション = 環境のパーティション ID。レコードを照会 (選択) することで取得できます。 すべてのレコードには、ここでコピーおよび使用する必要があるパーティション ID があります。
+- RecID = パーティションと同じ ID。
+- RecVersion = 1
+
 ## <a name="additional-resources"></a>その他のリソース
 - [データ エンティティ](data-entities.md)
 

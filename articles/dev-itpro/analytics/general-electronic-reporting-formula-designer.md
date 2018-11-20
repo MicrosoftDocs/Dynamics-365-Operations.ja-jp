@@ -3,14 +3,14 @@ title: "電子申告 (ER) のフォーミュラ デザイナー"
 description: "このトピックでは、電子申告 (ER) でのフォーミュラ デザイナーの使用方法を説明します。"
 author: NickSelin
 manager: AnnBe
-ms.date: 04/04/2018
+ms.date: 10/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
-ms.reviewer: kfend
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
@@ -19,10 +19,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: d3ac6ea7b104428f364385e1fd3ed221cae8498d
+ms.sourcegitcommit: f0ded563ecf0b6d0ce67f046f631d8c4dcfc7802
+ms.openlocfilehash: 1dc584355c8992ee701169fd5d29ad7b0300a498
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 10/22/2018
 
 ---
 
@@ -192,7 +192,7 @@ Finance and Operations データ ソースのメソッドにパラメータが�
 値がこのメソッドのタイプのパラメータに渡される方法を制限することができます。
 
 - このタイプのメソッドに、定数だけを渡すことができます。 定数の値は、デザイン時に定義されます。
-- このタイプのパラメーターで、プリミティブ (基本) データ型のみがサポートされています。 (プリミティブ データ型は整数、実数、ブール値、文字列などです)。
+- このタイプのパラメーターで、プリミティブ (基本) データ型のみがサポートされています。 (プリミティブ データ型は整数、実数、ブール値、文字列などです。)
 
 #### <a name="paths"></a>パス
 
@@ -250,6 +250,12 @@ Finance and Operations データ ソースのメソッドにパラメータが�
 <td>SPLIT (入力, 長さ)</td>
 <td>指定された入力文字列を指定された長さのサブ文字列に分割します。 新しいリストとして結果を返します。</td>
 <td><strong>SPLIT (&quot;abcd&quot;, 3)</strong> は、<strong>文字列</strong> フィールドがある 2 つのレコードで構成される新しいリストを返します。 最初のレコードのフィールドには、テキスト <strong>&quot;abc&quot;</strong> が、2 つ目のレコードのフィールドには、テキスト <strong>&quot;d&quot;</strong> が入力されます。</td>
+</tr>
+<tr>
+<td>SPLIT (入力、区切り記号)</td>
+<td>指定された入力文字列を指定された区切り記号に基づいてサブ文字列に分割します。</td>
+<td><strong>SPLIT (&quot;XAb aBy&quot;, &quot;aB&quot;)</strong> は、<strong>STRING</strong> フィールドがある 3 つのレコードで構成される新しいリストを返します。 最初のレコードのフィールドには、テキスト <strong>&quot;X&quot;</strong> が、2 つ目のレコードのフィールドには、テキスト&quot;&nbsp;&quot;が、3 つ目のレコードのフィールドにはテキスト <strong>&quot;y&quot;</strong> が入力されます。 区切り記号が空の場合、入力テキストを含む <strong>文字列</strong> フィールドを持つ 1 つのレコードで構成される新しいリストが返されます。 入力が空の場合は、新しい空のリストが返されます。
+入力または区切り記号のいずれかを指定しない場合 (null)、アプリケーション例外がスローされます。</td>
 </tr>
 <tr>
 <td>SPLITLIST (リスト, 番号)</td>
@@ -399,12 +405,13 @@ SELECT ... FROM CUSTINVOICETABLE T1 CROSS JOIN CUSTINVOICEJOUR T2 CROSS JOIN CUS
 </ul>
 実行時に、<strong>ラベル</strong> および <strong>説明</strong> フィールドは、形式の言語設定と特定の言語に基づく値を返します。 <strong>翻訳済み</strong> フィールドは、<strong>ラベル</strong> フィールドが指定した言語に翻訳されていることを示します。
 </td>
-<td>たとえば、<strong>計算済フィールド</strong> データ ソース型を使用して、<strong>enumType</strong>データ モデル列挙に対する <strong>enumType_de</strong> および <strong>enumType_deCH</strong> データ ソースをコンフィギュレーションします。
+<td>たとえば、<strong>計算済フィールド</strong>データ ソース型を使用して、<strong>enumType</strong> データ モデル列挙に対する <strong>enumType_de</strong> および <strong>enumType_deCH</strong> データ ソースをコンフィギュレーションします。
 <ul>
 <li>enumType_de = <strong>LISTOFFIELDS</strong> (enumType、&quot;de&quot;)</li>
 <li>enumType_deCH = <strong>LISTOFFIELDS</strong> (enumType, &quot;de-CH&quot;)</li>
 </ul>
-この場合、この翻訳が使用可能な場合は、スイス ドイツ語の列挙値のラベルを取得する次の式を使用できます。 スイス ドイツ語翻訳を使用できない場合、ラベルはドイツ語になります。<strong>IF (NOT (enumType_deCH.IsTranslated), enumType_de.Label, enumType_deCH.Label)</strong>。
+<p>この場合、この翻訳が使用可能な場合は、スイス ドイツ語の列挙値のラベルを取得する次の式を使用できます。 スイス ドイツ語翻訳を使用できない場合、ラベルはドイツ語になります。</p>
+IF (NOT (enumType_deCH.IsTranslated), enumType_de.Label, enumType_deCH.Label)
 </td>
 </tr>
 <tr>
@@ -421,7 +428,7 @@ SELECT ... FROM CUSTINVOICETABLE T1 CROSS JOIN CUSTINVOICEJOUR T2 CROSS JOIN CUS
 <p><a href="./media/ger-splitlistbylimit-datasources.png"><img src="./media/ger-splitlistbylimit-datasources.png" alt="Data sources" class="alignnone size-full wp-image-1204073" width="320" height="208" /></a></p>
 <p>次の図は、形式が実行される際の結果を示します。 この場合、出力は、商品のフラット リストです。</p>
 <p><a href="./media/ger-splitlistbylimit-output.png"><img src="./media/ger-splitlistbylimit-output.png" alt="Output" class="alignnone size-full wp-image-1204083" width="462" height="204" /></a></p>
-<p>次の図では、1 つのバッチに合計重量が 9 を超えない商品を含める必要がある場合、商品アイテムのリストをバッチに表示するために調整されたフォーマットと同じフォーマットを示しています。</p>
+<p>次の図では、1 つのバッチに合計重量が 9 を超えない商品を含める必要がある場合、商品アイテムのリストをバッチに表示するために同じフォーマットが調整されています。</p>
 <p><a href="./media/ger-splitlistbylimit-format-1.png"><img src="./media/ger-splitlistbylimit-format-1.png" alt="Adjusted format" class="alignnone size-full wp-image-1204103" width="466" height="438" /></a></p>
 <p><a href="./media/ger-splitlistbylimit-datasources-1.png"><img src="./media/ger-splitlistbylimit-datasources-1.png" alt="Data sources for the adjusted format" class="alignnone size-full wp-image-1204093" width="645" height="507" /></a></p>
 <p>次の図は、調整された形式が実行される際の結果を示します。</p>
@@ -432,7 +439,7 @@ SELECT ... FROM CUSTINVOICETABLE T1 CROSS JOIN CUSTINVOICEJOUR T2 CROSS JOIN CUS
 <tr>
 <td>FILTER (リスト, 条件)</td>
 <td>指定した条件に対してフィルター処理するためクエリが変更された後、指定されたリストを返します。 この関数は <strong>WHERE</strong> 関数とは異なります。指定された条件がデータベース レベルで <strong>テーブル レコード</strong> タイプの任意の ER データ ソースに適用されるためです。 テーブルおよび関係を使用して、リストと条件を定義することができます。</td>
-<td><strong>仕入先</strong>を VendTable テーブルを参照する ER データ ソースとしてコンフィギュレーションすると、<strong>FILTER(Vendors, Vendors.VendGroup = &quot;40&quot;)</strong> は仕入先グループ 40 に属している仕入先のみのリストを返します。 <strong>仕入先</strong> は <strong>VendTable</strong> テーブルを参照する ER データ ソースとしてコンフィギュレーションされており、<strong>parmVendorBankGroup</strong> が <strong>文字列</strong> データ型で値を返す ER データ ソースとしてコンフィギュレーションされる場合、<strong>FILTER (Vendor.'&lt;Relations'.VendBankAccount, Vendor.'&lt;Relations'.VendBankAccount.BankGroupID = parmVendorBankGroup)</strong> は特定の銀行グループに属している仕入先のみの一覧を返します。</td>
+<td><strong>仕入先</strong>を VendTable テーブルを参照する ER データ ソースとしてコンフィギュレーションすると、<strong>FILTER(Vendors, Vendors.VendGroup = &quot;40&quot;)</strong> は仕入先グループ 40 に属している仕入先のみのリストを返します。 <strong>仕入先</strong>が VendTable テーブルを参照する ER データ ソースとしてコンフィギュレーションされ、<strong>parmVendorBankGroup</strong> が <strong>文字列</strong>データ型の値を返す ER データ ソースとしてコンフィギュレーションされている場合、 <strong>FILTER (Vendor.'&lt;Relations'.VendBankAccount, Vendor.'&lt;Relations'.VendBankAccount.BankGroupID = parmVendorBankGroup)</strong> が特定の銀行グループに属する仕入先の一覧を返します。</td>
 </tr>
 </tbody>
 </table>
@@ -446,12 +453,69 @@ SELECT ... FROM CUSTINVOICETABLE T1 CROSS JOIN CUSTINVOICEJOUR T2 CROSS JOIN CUS
 | NOT (条件) | 指定された条件の取消論理値を返します。 | **NOT (TRUE)** は **FALSE** を返します。 |
 | AND (条件 1\[, 条件 2, ...\]) | *すべて*の指定された条件が真の場合、**TRUE** を返します。 それ以外の場合は、**FALSE** を返します。 | **AND (1=1, "a"="a")** は、**TRUE** を返します。 **AND (1=2, "a"="a")** は、**FALSE** を返します。 |
 | OR (条件 1\[, 条件 2, ...\]) | *すべて*の指定された条件が偽の場合、**FALSE** を返します。 *いずれか*の指定された条件が真の場合、**TRUE** を返します。 | **OR (1=2, "a"="a")** は、**TRUE** を返します。 |
+| VALUEIN (入力、リスト、項目式のリスト) | 指定された入力が、指定されたリスト内の項目の値と一致するかどうかを決定します。 指定した入力が、少なくとも 1 つのレコードの指定された式を実行した結果と一致する場合は、**TRUE** を返します。 それ以外の場合は、**FALSE** を返します。 **入力**パラメーターは、データ ソース要素のパスを表します。 この要素の値は一致します。 **リスト**パラメーターは、レコード リスト タイプのデータ ソース要素のパスを、式を含むレコードの一覧として表します。 この要素の値は、指定された入力と比較されます。 **項目式のリスト**引数は、照合に使用されるべき指定されたリストの 1 つのフィールドを指し示すか、そのフィールドを含む式を表します。 | 例については、次のセクション [例: VALUEIN (入力、リスト、項目式のリスト)](#examples-valuein-input-list-list-item-expression)を参照してください。 |
+
+#### <a name="examples-valuein-input-list-list-item-expression"></a>例: VALUEIN (入力、リスト、項目式のリスト)
+一般に、**VALUEIN** 関数は一連の **OR** 条件に変換されます。
+
+(input = list.item1.value) OR (input = list.item2.value) OR …
+
+##### <a name="example-1"></a>例 1
+モデル マッピングに次のデータ ソースを定義します:**リスト** (**計算済フィールド**タイプ)。 このデータ ソースには、式 **SPLIT ("a,b,c", ",")** が含まれています。
+
+**VALUEIN ("B", List, List.Value)** 式としてコンフィギュレーションされたデータ ソースが呼び出されると、**TRUE** を返します。 この場合、**VALUEIN** 関数は次の一連の条件に変換されます:
+
+**("B" = "b")** が **TRUE** と等しい場合、**(("B" = "a") or ("B" = "b") or ("B" = "c"))**
+
+**VALUEIN ("B", List, LEFT(List.Value, 0))** 式としてコンフィギュレーションされたデータ ソースが呼び出されると、**FALSE** を返します。 この場合、**VALUEIN** 関数は次の条件に変換されます:
+
+**TRUE** と等しくない **("B" = "")**
+
+このような条件のテキストの文字数の上限は 32,768 文字であることに注意してください。 したがって、実行時に制限を超える可能性があるデータ ソースを作成しないでください。 制限を超過した場合は、アプリケーションは実行を停止し、例外がスローされます。 たとえば、この状況は、データ ソースが **WHERE (List1, VALUEIN (List1.ID, List2, List2.ID)** としてコンフィギュレーションされ、**List1** および **List2** リストに大量のレコードが含まれているときに生じます。
+
+場合によっては、**VALUEIN** 関数は **EXISTS JOIN** オペレーターを使用することでデータベース ステートメントに変換されます。 この動作は、**FILTER** 関数が使用され、次の条件が満たされているときに発生します。
+
+- **ASK FOR QUERY** オプションは、レコードのリストを参照する **VALUEIN** 関数のデータ ソースに対してオフになっています。 (このデータ ソースには実行時に適用される追加の条件はありません。)
+- 入れ子になった式は、レコードのリストを参照する **VALUEIN** 関数のデータ ソース用にコンフィギュレーションされません。
+- **VALUEIN** 関数のリスト品目は、指定されたデータ ソースのフィールド (式またはメソッドではない) を参照します。
+
+この例の前半で説明した **WHERE** 関数の代わりにこのオプションを使用することを検討してください。
+
+##### <a name="example-2"></a>例 2
+
+モデル マッピングでは、次のデータ ソースを定義します。
+
+- イントラスタット テーブルを参照する **In** (**テーブル レコード**タイプ)
+- IntrastatPort テーブルを参照する **ポート** (**テーブル レコード**タイプ)
+
+**FILTER (In, VALUEIN(In.Port, Port, Port.PortId)** 式としてコンフィギュレーションされたデータソースが呼び出されると、次の SQL ステートメントが生成され、イントラスタット テーブルのフィルターされたレコードを返します:
+
+```
+select … from Intrastat
+exists join TableId from IntrastatPort
+where IntrastatPort.PortId = Intrastat.Port
+```
+
+**dataAreaId** フィールドの場合、**IN** 演算子を使用して最終的な SQL ステートメントが生成されます。
+
+##### <a name="example-3"></a>例 3
+
+モデル マッピングでは、次のデータ ソースを定義します。
+
+- 式 **SPLIT ("DEMF,GBSI,USMF", ",")** を含む **Le** (**計算済フィールド**タイプ)
+- **会社間**オプションがオンになっていて、イントラスタット テーブルを参照する **In** (**テーブル レコード**タイプ)
+
+**FILTER (In, VALUEIN (In.dataAreaId, Le, Le.Value)** 式としてコンフィギュレーションされたデータソースが呼び出されると、最終的な SQL ステートメントには次の条件が含まれています:
+
+```
+Intrastat.dataAreaId IN ('DEMF', 'GBSI', 'USMF')
+```
 
 ### <a name="mathematical-functions"></a>算術関数
 
-| 機能 | 説明 | 例 |
+| 職務 | 説明 | 例 |
 |----------|-------------|---------|
-| ABS (数値) | 指定された数の絶対値を返します。 (つまり、サインのない番号を返します)。 | **ABS (-1)** は、**1** を返します。 |
+| ABS (数値) | 指定された数の絶対値を返します。 (つまり、符号のない数値を返します。) | **ABS (-1)** は、**1** を返します。 |
 | POWER (数値, 累乗) | 指定された正の数に指定された累乗をした結果を返します。 | **POWER (10, 2)** は、**100** を返します。 |
 | NUMBERVALUE (文字列、小数点記号、桁区切り記号) | 指定された文字列を数字に変換します。 指定した小数点記号は、整数と小数点以下の数の間で使用されます。 指定した桁区切り記号は千の位の区切り記号として使用されます。 | **NUMBERVALUE("1 234,56", ",", " ")** は、**1234.56** の値を返します。 |
 | VALUE (文字列) | 指定された文字列を数字に変換します。 コンマとドット (.) が小数点の区切り記号とみなされ、先頭のハイフン (-) は負の記号として使用されます。 他の数値以外の文字が指定された文字列に含まれている場合、例外をスローします。 | **VALUE ("1 234,56")** は例外をスローします。 |
@@ -539,7 +603,7 @@ SELECT ... FROM CUSTINVOICETABLE T1 CROSS JOIN CUSTINVOICEJOUR T2 CROSS JOIN CUS
 </tr>
 <tr>
 <td>REPLACE (文字列, パターン, 置換, 正規表現フラグ)</td>
-<td>指定された正規表現フラグが <strong>true</strong> である場合、この関数のパターン引数として指定される正規表現を適用して変更した後に、指定された文字列を返します。 この式は、置換する必要のある文字列を検索するために使用されます。 指定された置換引数の文字は、見つかった文字を置換するために使用されます。 指定された正規表現フラグが<strong>偽</strong>である場合、この関数は <strong>TRANSLATE</strong> のように機能します。</td>
+<td>指定された<strong>正規表現フラグ</strong>パラメーターが <strong>true</strong> の場合、この関数の<strong>パターン</strong>引数として指定される正規表現を適用して変更した後に、指定された文字列を返します。 この式は、置換する必要のある文字列を検索するために使用されます。 指定された<strong>置換</strong>引数の文字は、見つかった文字を置換するために使用されます。 指定された<strong>正規表現フラグ</strong>パラメーターが <strong>false</strong> である場合、この関数は <strong>TRANSLATE</strong> のように機能します。</td>
 <td><strong>REPLACE (&quot;+1 923 456 4971&quot;, &quot;[^0-9]&quot;, &quot;&quot;, true)</strong> は、すべての数値以外の記号を削除する正規表現を適用し、<strong>&quot;19234564971&quot;</strong> を返します。 <strong>REPLACE (&quot;abcdef&quot;, &quot;cd&quot;, &quot;GH&quot;, false)</strong> は、パターン <strong>&quot;cd&quot;</strong> を文字列 <strong>&quot;GH&quot;</strong> に置換して、<strong>&quot;abGHef&quot;</strong> を返します。</td>
 </tr>
 <tr>
@@ -549,7 +613,7 @@ SELECT ... FROM CUSTINVOICETABLE T1 CROSS JOIN CUSTINVOICEJOUR T2 CROSS JOIN CUS
 </tr>
 <tr>
 <td>FORMAT (文字列 1, 文字列 2[, 文字列 3, …])</td>
-<td>すべての <strong>%N</strong> を <em>n</em> 番目の引数に置き換えて書式設定した後に、指定された文字列を返します。 引数は文字列です。 パラメーターに引数が指定されない場合は、パラメーターは文字列内では <strong>&quot;%N&quot;</strong> として返されます。 <strong>実数</strong>型の値では、文字列変換が小数点第 2 位に制限されます。</td>
+<td>すべての <strong>%N</strong> を <em>n</em> 番目の引数に置き換えて書式設定した後に、指定された文字列を返します。 引数は文字列です。 パラメーターに引数が指定されない場合は、文字列内では <strong>&quot;%N&quot;</strong> として返されます。 <strong>実数</strong>型の値では、文字列変換が小数点第 2 位に制限されます。</td>
 <td>この図では、<strong>PaymentModel</strong> データ ソースは <strong>顧客</strong>コンポーネント経由で顧客のリスト、<strong>ProcessingDate</strong> フィールド経由で処理日の値を返します。
 <p><a href="./media/picture-format-datasource.jpg"><img src="./media/picture-format-datasource.jpg" alt="PaymentModel data source" class="alignnone wp-image-290751 size-full" width="293" height="143" /></a></p>
 <p>選択した顧客の電子ファイルを生成するよう設計されている ER 形式では、<strong>PaymentModel</strong> がデータ ソースとして選択され、プロセス フローを制御します。 選択した顧客がレポートが処理される日付に停止されている場合、例外がユーザーに通知してスローされます。 このタイプの処理制御のために設計された式は、次のリソースを使用できます。</p>
@@ -567,14 +631,14 @@ SELECT ... FROM CUSTINVOICETABLE T1 CROSS JOIN CUSTINVOICEJOUR T2 CROSS JOIN CUS
 </ul>
 <p>設計できる式を次に示します。</p>
 <p>FORMAT (CONCATENATE (@&quot;SYS70894&quot;, &quot;. &quot;, @&quot;SYS18389&quot;), model.Customer.Name, DATETIMEFORMAT (model.ProcessingDate, &quot;d&quot;))</p>
-<p>レポートが 2015 年 12 月 17 日に <strong>EN-US</strong> カルチャおよび <strong>EN-US</strong> 言語で <strong>Litware Retail</strong> の顧客に対して処理される場合、この式はユーザーへの例外メッセージとして示すことができる次のテキストを返します。</p>
+<p>レポートが 2015 年 12 月 17 日に <strong>EN-US</strong> カルチャおよび <strong>EN-US</strong> 言語で <strong>Litware Retail</strong> の顧客に対して処理される場合、この式は例外メッセージとしてユーザーに示すことができる次のテキストを返します:</p>
 <p>&quot;印刷対象なし。 顧客の Litware Retail は 2015 年 12 月 17 日に停止されます。&quot;</p>
 <p>同じレポートが 2015 年 12 月 17 日に <strong>DE</strong> カルチャおよび <strong>DE</strong> 言語で <strong>Litware Retail</strong> の顧客に対して処理される場合、この式は別の日付形式を使用する次のテキストを返します。</p>
 <p>&quot;Nichts zu drucken。 顧客の Litware Retail は 2015 年 12 月 17 日に停止されます。&quot;</p>
 <blockquote>[!NOTE] 次の構文は ER の式でラベルに適用されます。
 <ul>
-<li><strong>Finance and Operations リソースのラベルの場合: </strong><strong>@&quot;X&quot;</strong>、X はアプリケーション オブジェクト ツリー (AOT) のラベル ID です</li>
-<li><strong>ER コンフィギュレーションに存在するラベルの場合: </strong><strong>@&quot;GER_LABEL:X&quot;</strong>、X は、ER コンフィギュレーションのラベル ID です</li>
+<li><strong>Finance and Operations リソースのラベルの場合: </strong><strong>@&quot;X&quot;</strong>、<strong>X</strong> はアプリケーション オブジェクト ツリー (AOT) のラベル ID です</li>
+<li><strong>ER コンフィギュレーションに存在するラベルの場合: </strong><strong>@&quot;GER_LABEL:X&quot;</strong>、<strong>X</strong> は ER コンフィギュレーションのラベル ID です</li>
 </ul>
 </blockquote>
 </td>
@@ -616,7 +680,7 @@ SELECT ... FROM CUSTINVOICETABLE T1 CROSS JOIN CUSTINVOICEJOUR T2 CROSS JOIN CUS
 </tr>
 <tr>
 <td>GUIDVALUE (入力)</td>
-<td><strong>文字列</strong>データ型の指定された入力を、<strong>GUID</strong>データ型のデータ項目に変換します。</td>
+<td><strong>文字列</strong>データ型の指定された入力を、<strong>GUID</strong>データ型のデータ項目に変換します。<blockquote>[!NOTE] 逆方向に変換を行うには (つまり、<strong>GUID</strong> データ型の指定された入力を<strong>文字列</strong>データ型のデータ項目に変換するには)、<strong>TEXT()</strong> 関数を使用します。</blockquote></td>
 <td>モデル マッピングでは、次のデータ ソースを定義します。
 <ul>
 <li>式 <strong>GUIDVALUE (&quot;AF5CCDAC-F728-4609-8C8B-A4B30B0C0AA0&quot;)</strong>を含む <strong>myID</strong> (<strong>計算済フィールド</strong>タイプ)</li>
@@ -637,7 +701,7 @@ SELECT ... FROM CUSTINVOICETABLE T1 CROSS JOIN CUSTINVOICEJOUR T2 CROSS JOIN CUS
 
 | 職務 | 説明 | 例 |
 |----------|-------------|---------|
-| TEXT (入力) | 現在の Finance and Operations インスタンスのサーバーのロケール設定に従って書式設定されるテキスト文字列に変換した後に、指定された入力を返します。 **実数**型の値では、文字列変換が小数点第 2 位に制限されます。 | Finance and Operations インスタンスのサーバーのロケールが **EN-US** で定義されている場合、**TEXT (NOW ())** は現在の Finance and Operations セッションの日付 12/17/2015 をテキスト文字列 **12/17/2015 07:59:23 AM** として返します。 **TEXT (1/3)** は、**"0.33"** を返します。 |
+| TEXT (入力) | 現在の Finance and Operations インスタンスのサーバーのロケール設定に従って書式設定されるテキスト文字列に変換した後に、指定された入力を返します。 **実数**型の値では、文字列変換が小数点第 2 位に制限されます。 | Finance and Operations インスタンスのサーバーのロケールが **EN-US** で定義されている場合、**TEXT (NOW ())** は現在の Finance and Operations セッションの日付 2015 年 12 月 17 日 をテキスト文字列 **"12/17/2015 07:59:23 AM"** として返します。 **TEXT (1/3)** は、**"0.33"** を返します。 |
 | QRCODE (文字列) | 指定された文字列の Quick Response Code (QR コード) 画像を Base64 バイナリ形式で返します。 | **QRCODE (「サンプル テキスト」)** は **U2FtcGxlIHRleHQ=** を返します。 |
 
 ### <a name="data-collection-functions"></a>データ収集機能
@@ -645,11 +709,11 @@ SELECT ... FROM CUSTINVOICETABLE T1 CROSS JOIN CUSTINVOICEJOUR T2 CROSS JOIN CUS
 | 職務 | 説明 | 例 |
 |----------|-------------|---------|
 | FORMATELEMENTNAME () | 現在の形式の要素の名前を返します。 現在のファイルの **出力の詳細を収集** フラグを無効にすると空の文字列が返されます。 | これらの関数の用途の詳細については、**IT サービス/ソリューション コンポーネントの取得/開発** 業務プロセスの一部である **ER 棚卸および集計のために出力された形式の使用**タスク ガイドを参照してください。 |
-| SUMIFS (集計のためのキー文字列, 基準範囲 1 の文字列, 基準値 1 の文字列 \[, 基準範囲 2 の文字列, 基準値 2 の文字列, …\]) | この形式の実行中に収集されて、入力した指定条件 (範囲と値のペア) を満たす XML ノード (キーとして定義された名前を持つ) の合計値を返します。 **出力の詳細を収集** フラグを無効にすると **0** (ゼロ) が返されます。 | |
-| SUMIF (集計のためのキー文字列, 基準範囲の文字列, 基準値の文字列) | この形式の実行中に収集されて、入力した指定条件 (範囲と値のペア) を満たす XML ノード (キーとして定義された名前を持つ) の合計値を返します。 **出力の詳細を収集** フラグを無効にすると **0** (ゼロ) が返されます。 | |
-| COUNTIFS (基準範囲 1 の文字列, 基準値 1 の文字列 \[, 基準範囲 2 の文字列, 基準値 2 の文字列, …\]) | この形式の実行中に収集されて、入力した指定条件 (範囲と値のペア) を満たす XML ノードの数を返します。 **出力の詳細を収集** フラグを無効にすると **0** (ゼロ) が返されます。 | |
-| COUNTIF (基準範囲の文字列, 基準値の文字列) | この形式の実行中に収集されて、指定した条件 (範囲と値) を満たす XML のノードの数を返します。 現在のファイルの **出力の詳細を収集** フラグを無効にすると **0** (zero) が返されます。 | |
-| COLLECTEDLIST (基準範囲 1 の文字列, 基準値 1 の文字列 \[, 基準範囲 2 の文字列, 基準値 2 の文字列, …\]) | この形式の実行中に収集されて、指定した条件 (範囲と値) を満たす XML の XML ノード値のリストを返します。 現在のファイルの**出力の詳細を収集**フラグを無効にすると空のリストが返されます。 | |
+| SUMIFS (集計のためのキー文字列, 基準範囲 1 の文字列, 基準値 1 の文字列 \[, 基準範囲 2 の文字列, 基準値 2 の文字列, …\]) | 形式が実行され、指定された条件 (範囲と値のペア) を満たすときに XML ノード (キーとして定義された名前を持つ) に対して収集された値の合計を返します。 **出力の詳細を収集** フラグを無効にすると **0** (ゼロ) が返されます。 | |
+| SUMIF (集計のためのキー文字列, 基準範囲の文字列, 基準値の文字列) | 形式が実行され、指定された条件 (範囲と値) を満たすときに XML ノード (キーとして定義された名前を持つ) に対して収集された値の合計を返します。 **出力の詳細を収集** フラグを無効にすると **0** (ゼロ) が返されます。 | |
+| COUNTIFS (基準範囲 1 の文字列, 基準値 1 の文字列 \[, 基準範囲 2 の文字列, 基準値 2 の文字列, …\]) | 形式が実行され、指定された条件 (範囲と値のペア) を満たすときに収集された XML ノードの数を返します。 **出力の詳細を収集** フラグを無効にすると **0** (ゼロ) が返されます。 | |
+| COUNTIF (基準範囲の文字列, 基準値の文字列) | 形式が実行され、指定された条件 (範囲と値) を満たすときに収集された XML ノードの数を返します。 現在のファイルの **出力の詳細を収集** フラグを無効にすると **0** (zero) が返されます。 | |
+| COLLECTEDLIST (基準範囲 1 の文字列, 基準値 1 の文字列 \[, 基準範囲 2 の文字列, 基準値 2 の文字列, …\]) | 形式が実行され、指定された条件 (範囲と値) を満たすときに XML ノードに対して収集された値のリストを返します。 現在のファイルの**出力の詳細を収集**フラグを無効にすると空のリストが返されます。 | |
 
 ### <a name="other-business-domainspecific-functions"></a>その他 (ビジネス ドメインの特定の) 関数
 
@@ -667,6 +731,9 @@ SELECT ... FROM CUSTINVOICETABLE T1 CROSS JOIN CUSTINVOICEJOUR T2 CROSS JOIN CUS
 | FA\_BALANCE (固定資産コード, 価値モデル コード, レポート年度, 報告日) | 固定資産残高の準備済データ コンテナーを返します。 レポート年度は、Finance and Operations の列挙の値 **AssetYear** として指定される必要があります。 | **FA\_SUM (「COMP-000001」、「Current」、AxEnumAssetYear.ThisYear、SESSIONTODAY ())** は、現在の Finance and Operations セッションの日付で、値モデル **現行** である固定資産 **COMP-000001** の残高の準備済データ コンテナーを返します。 |
 | TABLENAME2ID (文字列) | 指定されたテーブル名のテーブル ID の整数表現を返します。 | **TABLENAME2ID (「イントラスタット」)** は **1510** を返します。 |
 | ISVALIDCHARACTERISO7064 (文字列) | 指定された文字列が有効な国際銀行番号 (IBAN) を表す場合、ブール値 **TRUE** を返します。 それ以外の場合、ブール値 **FALSE** を返します。 | **ISVALIDCHARACTERISO7064 ("AT61 1904 3002 3457 3201")** は **TRUE** を返します。 **ISVALIDCHARACTERISO7064 ("AT61")** は **FALSE** を返します。 |
+| NUMSEQVALUE (番号順序コード、スコープ、スコープ ID) | 指定された番号順序コード、スコープ、およびスコープ ID に基づいて、番号順序の新しく生成された値を返します。 スコープは、**ERExpressionNumberSequenceScopeType** 列挙 (**共有**、**法人**、または**会社**) の値として指定する必要があります。 **共有**スコープでは、スコープ ID として空の文字列を指定します。 **会社**および**法人**スコープでは、会社コードとスコープ ID を指定します。 **会社**および**法人**スコープでは、スコープ ID として空の文字列を指定した場合、現在の会社コードを使用します。 | モデル マッピングでは、次のデータ ソースを定義します。<ul><li>**ERExpressionNumberSequenceScopeType** 列挙を参照する **enumScope** (**Dynamics 365 for Operations 列挙**タイプ)</li><li>式 **NUMSEQVALUE ("Gene\_1", enumScope.Company, "")** を含む **NumSeq** (**計算済フィールド**タイプ)</li></ul>**NumSeq** データ ソースが呼び出されると、ER 形式が実行されているコンテキストを提供する会社用にコンフィギュレーションされた **Gene\_1** 番号順序の新しく生成された値を返します。 |
+| NUMSEQVALUE (番号順序コード) | 指定された番号順序、**会社**スコープ、および (スコープIDとして) ER 形式が実行されているコンテキストを提供する会社のコードに基づいて、番号順序の新しく生成された値を返します。 | モデル マッピングに次のデータ ソースを定義します: **NumSeq** (**計算済フィールド**タイプ)。 このデータ ソースには、式 **NUMSEQVALUE ("Gene\_1")** が含まれています。 **NumSeq** データ ソースが呼び出されると、ER 形式が実行されているコンテキストを提供する会社用にコンフィギュレーションされた **Gene\_1** 番号順序の新しく生成された値を返します。 |
+| NUMSEQVALUE (番号順序レコード ID) | 指定された番号順序レコード ID に基づいて、番号順序の新しく生成された値を返します。 | モデル マッピングでは、次のデータ ソースを定義します。<ul><li>LedgerParameters テーブルを参照する **LedgerParms** (**テーブル**タイプ)</li><li>式 **NUMSEQVALUE (LedgerParameters.'numRefJournalNum()'.NumberSequenceId)** を含む **NumSeq** (**計算済フィールド**タイプ)</li></ul>**NumSeq** データ ソースが呼び出されると、ER 形式が実行されているコンテキストを提供する会社用に一般会計パラメーターでコンフィギュレーションされた、番号順序の新しく生成された値を返します。 この番号順序は、仕訳帳を一意に識別し、トランザクションをリンクするバッチ番号として機能します。 |
 
 ### <a name="functions-list-extension"></a>関数の一覧の拡張
 
@@ -674,7 +741,6 @@ ER では ER の式で使用される関数の一覧を拡張できます。 こ
 
 ## <a name="additional-resources"></a>その他のリソース
 
-[電子申告の概要](general-electronic-reporting.md)
-
-[電子申告 (ER) 関数の一覧の拡張](general-electronic-reporting-formulas-list-extension.md)
+- [電子申告の概要](general-electronic-reporting.md)
+- [電子申告 (ER) 関数の一覧の拡張](general-electronic-reporting-formulas-list-extension.md)
 

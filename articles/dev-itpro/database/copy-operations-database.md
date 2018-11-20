@@ -1,9 +1,9 @@
 ---
 title: "後で復元する Finance and Operations のデータベースのコピーをエクスポートする"
 description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations database のデータベースをファイルにエクスポートし、そのファイルを同じインスタンスまたはアプリケーションの別のインスタンスに再度インポートする方法について説明します。"
-author: tariqbell
+author: LaneSwenka
 manager: AnnBe
-ms.date: 03/30/2018
+ms.date: 10/29/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -14,14 +14,14 @@ ms.search.scope: Operations
 ms.custom: 269254
 ms.assetid: 7464b180-8ace-4b65-8b53-ba608d0611e1
 ms.search.region: Global
-ms.author: tabell
+ms.author: LaneSwenka
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
 ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
-ms.openlocfilehash: 1b3608db06ec29b1d48187465d2fb99580e4ecde
+ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
+ms.openlocfilehash: 3aec4a71d49ac09e8237f2ebf763de7f103dec61
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
+ms.lasthandoff: 11/01/2018
 
 ---
 
@@ -209,6 +209,44 @@ CLOSE retail_ftx;
 DEALLOCATE retail_ftx; 
 -- End Refresh Retail FullText Catalogs
 ```
+## <a name="synchronize-the-database"></a>データベースの同期
+
+1. リモート デスクトップを使用して、ターゲット環境内のすべてのコンピュータに接続し、services.msc を使用して次の Microsoft Windows サービスを停止します。 これらのサービスでは、Finance and Operations のデータベースへの接続が提供されます。 サービスを停止した後に、既存の Finance and Operations データベースを新しくインポートされたデータベースに置き換えることができます。
+
+    - ワールド ワイド ウェブ公開サービス (すべての AOS コンピュータ上)
+    - Microsoft Dynamics 365 for Finance and Operations バッチ管理サービス (非プライベート AOS コンピュータ上のみ)
+    - Management Reporter 2012 のプロセス サービス (ビジネス インテリジェンス \[BI\] コンピューターのみ)
+
+2. bacpac インポートが実行された AOS コンピューターで、Management Studio の次のスクリプトを実行します。 このスクリプトは、元のデータベースの名前を変更し、新しくインポートされたデータベースの名前を変更して元のデータベース名を使用するようにします。 この例では、元のデータベースは axdb\_123456789 という名前が付けられ、新しくインポートされたデータベースは importeddb という名前が付けられました。
+
+    > [!NOTE]
+    > Management Studio の SQL Server 2016 バージョンを使用していることを確認します。
+
+    ```
+    ALTER DATABASE [axdb_123456789] MODIFY NAME = [axdb_123456789_original]
+    ALTER DATABASE [importeddb] MODIFY NAME = [axdb_123456789]
+    ```
+
+3. データベースを同期させます。 管理者として **コマンド プロンプト** ウィンドウを開き、次のコマンドを実行します。
+
+    ```
+    cd F:\AosService\WebRoot\bin
+
+    Microsoft.Dynamics.AX.Deployment.Setup.exe -bindir "F:\AosService\PackagesLocalDirectory" -metadatadir F:\AosService\PackagesLocalDirectory -sqluser axdbadmin -sqlserver <Azure SQL database server name>.database.windows.net -sqldatabase <database name> -setupmode sync -syncmode fullall -isazuresql true -sqlpwd <SQL password> >log.txt 2>&1
+    ```
+
+4. services.msc を使用して、以前に停止したサービスを再起動します。
+
+    - ワールド ワイド ウェブ公開サービス (すべての AOS コンピュータ上)
+    - Microsoft Dynamics 365 for Finance and Operations バッチ管理サービス (非プライベート AOS コンピュータ上のみ)
+    - Management Reporter 2012 のプロセス サービス (BI コンピューターのみ)
+
+5. この時点で、Finance and Operations アプリケーション URL を開いてサイン インすることができます。 アプリケーションが予期したとおりに動作することを確認します。 次に、bacpac のインポートを実行した AOS コンピューターの Management Studio で以下のスクリプトを実行して、元のデータベースを削除します。
+
+    ```
+    DROP DATABASE [axdb_123456789_original]
+    ```
+
 
 ### <a name="re-provision-retail-components-in-the-target-environment"></a>対象となる環境で Retail コンポーネントを再プロビジョニング
 

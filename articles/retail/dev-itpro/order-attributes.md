@@ -17,10 +17,10 @@ ms.author: mumani
 ms.search.validFrom: 2017-10-24
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 6c512871aea36c065b17de750eb3fc5fec19073e
+ms.sourcegitcommit: 08ef5e11bdc5cf7f52da63100a6e5f084c2e4797
+ms.openlocfilehash: ee4d16640b05600fa1b6850ce4b619fba2c7d00b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 10/25/2018
 
 ---
 
@@ -35,6 +35,9 @@ ms.lasthandoff: 08/09/2018
 現金売りトランザクション、顧客注文、またはコールセンターの注文に新しいフィールドを追加し、POS または小売の本社で情報をキャプチャする場合は、顧客属性を使用します。 以前は、現金売りトランザクション (トランザクション ヘッダーまたは行) または POS の顧客注文に新しいフィールドを追加するには、小売用バックオフィスとチャネル データベースで新しい拡張テーブルを作成し、CRT および POS コードにインライン変更を加えて各種画面および操作を処理する必要がありました。 また、チャネル データベースと小売用バックオフィス間でデータを同期するように Commerce Data Exchange を構成する必要がありました。 ただし、顧客属性はコンフィギュレーションを通してこれらすべてのアクションを完了できます。 コードを記述またはカスタム拡張機能テーブルを作成する必要はありませんが、主要なビジネス ロジックおよび POS UI を作成する必要があります。
 
 この最初のバージョンは **String** 属性タイプのみをサポートしますが、将来のバージョンは他の属性タイプをサポートします。 データをマスター テーブルから取得し、そのデータに X++ の複雑な検索ロジックとコア ビジネス ロジックが必要な場合は、拡張プロパティを使用する必要があります。
+
+> [!NOTE]
+> 顧客注文および現金店頭払いのトランザクションでのみ属性がサポートされます。他のトランザクション タイプはサポートされていません。
 
 ## <a name="define-attribute-types"></a>属性タイプを定義
 

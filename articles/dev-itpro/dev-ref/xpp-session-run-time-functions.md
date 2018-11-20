@@ -18,10 +18,10 @@ ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 69fa9878a2a1729e67423374054f26de6ebe2c17
+ms.sourcegitcommit: 46315f12e1d26c29f9df7c6809bfd444f4dc5ad5
+ms.openlocfilehash: a3cf485e8ab08145ae09125df8afde2e3c487cd7
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 10/09/2018
 
 ---
 
@@ -41,10 +41,6 @@ ms.lasthandoff: 08/09/2018
 ### <a name="return-value"></a>戻り値
 
 現在の会社の内線電話番号。
-
-### <a name="remarks"></a>備考
-
-サーバー層への呼び出しを回避するには、このメソッドを使用します。 代わりに、サーバー層を呼び出す**アプリケーション** クラスの **company** メソッドを使用することもできます。
 
 ### <a name="example"></a>例
 

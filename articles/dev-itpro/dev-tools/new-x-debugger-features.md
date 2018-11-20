@@ -18,10 +18,10 @@ ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e4c1f8c7435a901431286960581754e5b2820dad
-ms.openlocfilehash: a1de7f5faf1b2eab84f5ac40a0dffee1d0e9abe6
+ms.sourcegitcommit: 8b9b80b0e7d3d6b66f241e24e58dd9b91a55b975
+ms.openlocfilehash: 8706e9ea940c535271f01aabcee90f5f3a340c4d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 10/03/2018
+ms.lasthandoff: 11/02/2018
 
 ---
 
@@ -447,7 +447,7 @@ try/catch 文にオプションの finally 句を追加できるようになり�
     creditCardNumber = "12345678901234567890Excess string";
 
 ## <a name="casting"></a>キャスティング
-X++ の以前のバージョンは、型キャストの処理で、非常に少ない制限でした。 アップキャストとダウンキャストの両方が、プログラマの介在なしに許可されています。 レガシ X++ で許可されるキャストの一部は、.NET ランタイム環境の範囲に実装することはできません。 X++ を含む、オブジェクト指向のプログラミング言語では、キャストは宣言された型が両方同じ継承チェーンにある変数間の代入を表します。 キャストはダウン キャストまたはアップ キャストのいずれかです。 この説明の準備として、いくつかのわかりやすいクラス階層、[![Casting\_DebugFeatures](./media/casting_debugfeatures.png)](./media/casting_debugfeatures.png) を紹介します。ご覧のとおり、MotorVehicle クラスは Animal キャストとは関係ありません。 **up-cast** は派生型の式を基本型に割り当てる場合に発生します。
+X++ の以前のバージョンは、型キャストの処理で、非常に少ない制限でした。 アップキャストとダウンキャストの両方が、プログラマの介在なしに許可されています。 レガシ X++ で許可されるキャストの一部は、.NET ランタイム環境の範囲に実装することはできません。 X++ を含む、オブジェクト指向のプログラミング言語では、キャストは宣言された型が両方同じ継承チェーンにある変数間の代入を表します。 キャストはダウン キャストまたはアップ キャストのいずれかです。 この説明の準備として、いくつかのわかりやすいクラス階層、[![Casting\_DebugFeatures](./media/casting_debugfeatures.png)](./media/casting_debugfeatures.png) を紹介します。ご覧のとおり、MotorVehicle クラスは Animal クラスとは関係ありません。 **up-cast** は派生型の式を基本型に割り当てる場合に発生します。
 
       Animal a = new Horse();
 
@@ -455,7 +455,7 @@ X++ の以前のバージョンは、型キャストの処理で、非常に少�
 
     Horse h = new Animal();
 
-アップキャストとダウンキャストの両方が X++ でサポートされています。 ただし、ダウン キャストは危険であり、できる限り回避する必要があります。 割り当てが意味をなさないため、上記の例は実行時に InvalidCastException で失敗します。 X++ はオブジェクトおよび formrun などの、わずかなタイプで遅延バインドをサポートします。 これは、つまり、そのメソッドがその型に対して明示的に宣言されていない場合、コンパイラは、コンパイル時に、それらの型に対して呼び出されているメソッドを見てもエラーを診断しないということを意味します。 開発者は彼らが何をしているかを把握しているとみなされます。 たとえば、フォーム内で検索される次のコードを参照してください。
+アップキャストとダウンキャストの両方が X++ でサポートされています。 ただし、ダウン キャストは危険であり、できる限り回避する必要があります。 割り当てが意味をなさないため、上記の例は実行時に InvalidCastException で失敗します。 X++ はオブジェクトおよび formrun などの、いくつかのタイプで遅延バインドをサポートします。 これは、つまり、そのメソッドがその型に対して明示的に宣言されていない場合、コンパイラは、コンパイル時に、それらの型に対して呼び出されているメソッドを見てもエラーを診断しないということを意味します。 開発者は彼らが何をしているかを把握しているとみなされます。 たとえば、フォーム内で検索される次のコードを参照してください。
 
     Object o = element.args().caller();
       o.MyMethod(3.14, “Banana”);
@@ -581,7 +581,7 @@ X++ print ステートメントは、デバッグのためだけに存在して�
 
 ### <a name="the-auto-and-infolog-windows"></a>自動および情報ログ ウィンドウ
 
-デバッガーを使用すると、アプリケーションの状態の特定の部分に簡単にアクセスできます。 この情報は、現在の会社、パーティション、トランザクション レベル、および現在のユーザー ID が一覧表示される [自動] ウィンドウで使用できます。 [![自動 \_DebugFeatures](./media/autos_debugfeatures.png)](./media/autos_debugfeatures.png) また、情報ログに書き込まれるデータを示すウィンドウもあります。 [![Infolog\_DebugFeatures](./media/infolog_debugfeatures.png)](./media/infolog_debugfeatures.png)
+デバッガーを使用すると、アプリケーションの状態の特定の部分にアクセスできます。 この情報は、現在の会社、パーティション、トランザクション レベル、および現在のユーザー ID が一覧表示される [自動] ウィンドウで使用できます。 [![自動 \_DebugFeatures](./media/autos_debugfeatures.png)](./media/autos_debugfeatures.png) また、情報ログに書き込まれるデータを示すウィンドウもあります。 [![Infolog\_DebugFeatures](./media/infolog_debugfeatures.png)](./media/infolog_debugfeatures.png)
 
 ### <a name="new-breakpoint-features"></a>新しいブレークポイント機能
 

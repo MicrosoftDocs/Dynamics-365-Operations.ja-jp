@@ -3,7 +3,7 @@ title: "X++ データの選択と操作"
 description: "このトピックでは、X++ 言語でのデータの選択と操作のサポートについて説明します。"
 author: RobinARH
 manager: AnnBe
-ms.date: 04/21/2017
+ms.date: 10/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: robinr
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 68ed4401d0d7b47fed1c130bab3a4ac6874bde5d
+ms.sourcegitcommit: fc61ba6131ed6d93132701aa799243e78a289134
+ms.openlocfilehash: 4033237ce255b6b862ccdc332a57446152dd1f94
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 10/10/2018
 
 ---
 
@@ -539,7 +539,7 @@ SalesOrderLine テーブルには、**SalesOrderID** という名前の外部キ
 
 ### <a name="while-select-example"></a>while select の例
 
-次の例では、アカウント番号が指定された範囲内にある CustTable テーブルのすべての顧客の名前の参照と電話番号を出力します。
+次の例では、アカウント番号が指定された範囲内にある CustTable テーブルのすべての顧客のアカウント番号と売上グループを出力します。
 
     static void JobPrintTel(Args _args)
     {
@@ -959,7 +959,7 @@ SalesOrderLine テーブルには、**SalesOrderID** という名前の外部キ
 
 ### <a name="insertrecordset-syntax"></a>insert\_recordset 構文
 
-*ListOfFields* 出力先テーブルは、ソース テーブル内のフィールドのリストと一致する必要があります。 データは、フィールドの一覧に表示されている順に転送されます。 フィールドの一覧に表示されていない出力先テーブルのフィールドは、他の領域と同じように、**0** (ゼロ) の値に割り当てられています。 **RecId** などのシステム フィールドは、出力先テーブルのカーネルによって透過的に割り当てられます。 **挿入\_レコードセット** *DestinationTable* **(** *ListOfFields* **)** の、*WhereClause* **\]** **\[ にある** *SourceTable* **から** *ListOfFields1* **を選択**し、*JoinedWhereClause* **\]\]** **\[ にある** *JoinedSourceTable* **から** *ListOfFields2* **\[ を統合する**
+*ListOfFields* 出力先テーブルは、ソース テーブル内のフィールドのリストと一致する必要があります。 データは、フィールドの一覧に表示されている順に転送されます。 フィールドの一覧に表示されていない出力先テーブルのフィールドは、他の領域と同じように、**0** (ゼロ) の値に割り当てられています。 **RecId** などのシステム フィールドは、出力先テーブルのカーネルによって透過的に割り当てられます。 **挿入\_レコードセット** *DestinationTable* **(** *ListOfFields* **)** の、\[*WhereClause* **にある****\]** *SourceTable* **から** *ListOfFields1* **を選択**し、\[\[*JoinedWhereClause* **にある****\]** *JoinedSourceTable* **から** *ListOfFields2*  **を統合する**\]
 
 ### <a name="example-inserting-data-from-another-table"></a>例: 別のテーブルからデータを挿入
 

@@ -3,7 +3,7 @@ title: "X++ ステートメント、ループ、および例外処理"
 description: "このトピックでは、X++ の構文、ループ、および例外処理について説明します。"
 author: RobinARH
 manager: AnnBe
-ms.date: 11/03/2017
+ms.date: 10/30/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 84ae968e4f0e309c6cb841c4d63ee92c7676bfab
-ms.openlocfilehash: 3e5b06462eba61dc75614189dad40ef138196b30
+ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
+ms.openlocfilehash: 0eb1645c0f17456aec645420516f7bd25263eba8
 ms.contentlocale: ja-jp
-ms.lasthandoff: 10/05/2018
+ms.lasthandoff: 11/01/2018
 
 ---
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 10/05/2018
 <a name="comments"></a>コメント
 --------
 
-コードにコメントを追加することをお勧めします。 コメントは、プログラムを読みやすく、またわかりやすくします。 コメントは、プログラムをコンパイルする際には無視されます。 コメントには、<strong>//</strong> スタイルまたは <strong>/\</strong><em>…</em><em>\*/</em>* スタイルのいずれかを使用できます。 ただし、ベスト プラクティスは、コメント、および複数行コメントの<strong>//</strong>スタイルを使用するためのものです。
+コードにコメントを追加することをお勧めします。 コメントは、プログラムを読みやすく、またわかりやすくします。 コメントは、プログラムをコンパイルする際には無視されます。 コメントには、**//** スタイルまたは **/** スタイルのいずれかを使用できます。 ただし、ベスト プラクティスは、コメント、および複数行コメントの**//** スタイルを使用するためのものです。
 
     // This is an example of a comment.
     /* Here is another example of a comment. */
@@ -251,7 +251,7 @@ ms.lasthandoff: 10/05/2018
 
 次のコードは、**error** メソッドの宣言方法を示しています。
 
-    server client static Exception error
+    static Exception error
         (SysInfoLogStr txt,
         URL helpURL = '',
         SysInfoAction _sysInfoAction = null)
@@ -558,7 +558,7 @@ ms.lasthandoff: 10/05/2018
 | UpdateConflict                    | オプティミスティック同時実行制御を使用しているトランザクションでエラーが発生しました。 トランザクションは再試行できます (**catch** ブロックで **retry** ステートメントを使用します)。 |
 | UpdateConflictNotRecovered        | オプティミスティック同時実行制御を使用しているトランザクションでエラーが発生しました。 このコードは再試行されません。 この例外は、トランザクション内では検出されません。    |
 | 警告                           | 例外的なイベントが発生しました。 ユーザーはアクションの実行をする必要がありますが、イベントは致命的ではありません。 **警告**例外をスローしないでください。                         |
-| [TransientSqlConnectionError](sql-connection-x++.md)       | クエリ実行時にエラーが発生しました。 トランザクションはキャンセルされます。 この例外は、トランザクション内では検出されません。 |
+| [TransientSqlConnectionError](sql-connection-error.md)       | クエリ実行時にエラーが発生しました。 トランザクションはキャンセルされます。 この例外は、トランザクション内では検出されません。 |
 
 ## <a name="loop-statements-for-while-and-dowhile"></a>ループ ステートメント: for、while、do...while
 ループ ステートメントは、**for**、**while**、**do**、**while** の 3 つがあります。 ループでは、ループに設定された条件が **false** になるまで、そのステートメントを繰り返します。 loop ステートメント内では、**break** および **continue** ステートメントを使用することができます。
@@ -575,7 +575,7 @@ ms.lasthandoff: 10/05/2018
 
     // An example where all items are printed in 
     // a fixed array called ra with 100 reals. 
-    int ra[10];
+    int ra[100];
     int i; // Control variable.
     for (i=1; i<=100; i+=1)
     {
@@ -642,7 +642,7 @@ ms.lasthandoff: 10/05/2018
     // and i is incremented before the if statement is tried again.
     int i;
     int Iarray[100];
-    for (i=1; i<100; i++)
+    for (i=1; i<=100; i++)
     {
         if (Iarray[i] <= 0)
         continue;
@@ -688,17 +688,17 @@ ms.lasthandoff: 10/05/2018
 ## <a name="todo-comments"></a>TODO コメント
 コンパイラは、コメントの先頭に**仕事**という文字列があると認識します。 **TODO** 文字列は、Microsoft Visual Studio の **タスク一覧** ウィンドウでコメント テキストの残りの部分を報告するようにコンパイラに求めます。 **タスク一覧** ウィンドウを開くには、**表示** を選択し、**タスク ウィンドウ** を選択します。 **タスク ウィンドウ**は、明細行番号を報告します。**TODO** コメントがコード内にあります。 コメントで **TODO** を使用するためのルールを次に示します。
 
-- <strong>TODO</strong> 文字列は、<strong>//</strong> スタイル、または <strong>/\</strong><em>...</em><em>\*/</em>* スタイルを使うコメントに表示されます。
+- **TODO** 文字列は、**//** スタイル、または **/** スタイルを使うコメントに表示されます。
 - **"TODO"** 文字列は、コメント内の最初の空白文字以外の文字列にする必要があります。 キャリッジ リターン、改行、タブ、およびスペース、すべて空白と見なされます。
 - コメントの開始と **"仕事"** の間に空白は必要ありません。
 - **TODO** 文字列では大文字と小文字が区別されません。 ただし、規則では **ToDo** またはその他のバリエーションの代わりに、全大文字で **TODO** が入力されます。
 - **TODO** 文字列には任意の文字を追加できます。 ただし、規則は、コロンを **TODO** 文字列に追加するかまたは空白で続けるかのいずれかです。
 - **TODO** 文字列の後のコメントの残りは、タスク記述として報告されます。 コメントが 200 文字よりも長い場合は、**タスク** タブで切り詰められるとうに表示されることがあります。
-- <strong>/\</strong><em>...</em><em>\*/</em>* コメント スタイルが使用されている場合、<strong>TODO</strong> タスクの説明は複数行にまたがることができます。
+- **/** コメント スタイルが使用されている場合、**TODO** タスクの説明は複数行にまたがることができます。
 
 ### <a name="examples-of-todo-comments"></a>TODO コメントの例
 
-次の例では、<strong>//</strong> と <strong>/\</strong><em>...</em><em>\*/</em>* スタイルを使用する<strong>TODO</strong> コメントを示しています。
+次の例では、**//** と **/** スタイルを使用する <strong>TODO</strong> コメントを示しています。
 
     // An example of using TODO in the // style of comment.
     public boolean isLate()
@@ -751,7 +751,4 @@ ms.lasthandoff: 10/05/2018
             textFromFile = sr.ReadToEnd();
         }
     }
-
-
-
 

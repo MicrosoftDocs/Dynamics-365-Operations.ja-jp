@@ -3,7 +3,7 @@ title: "財務分析コードとして使用可能なバッキング テーブ�
 description: "このトピックでは、サポート テーブルを財務分析コードとして使用できるようにするために必要な手順について説明します。"
 author: aprilolson
 manager: AnnBe
-ms.date: 08/20/2018
+ms.date: 10/17/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 96a9075294c1f2a9cfde03be1aaaa26af90de4c2
-ms.openlocfilehash: 562c421714727695afd471933c876e302a7cf610
+ms.sourcegitcommit: 3b7c2b72d97c42076e1f759e9c11c74cb17476c1
+ms.openlocfilehash: 94e8223ef7e76b73e316f46a0936ed3c37efeb7d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/04/2018
+ms.lasthandoff: 10/17/2018
 
 ---
 
@@ -66,8 +66,13 @@ ms.lasthandoff: 09/04/2018
 1. **プロパティ**ウィンドウの **TitleField1** フィールドに、**値**を入力します。
 1. **プロパティ**ウィンドウの **TitleField2** フィールドに、**名前**を入力します。
 1. バッキング テーブルのプロパティを確認し、使用している config キーを識別します。 **表示**で、バッキング テーブルと同じ**コンフィギュレーション キー**を入力します。
-1. **DimensionEssentials** を検索してプロジェクトに追加します。 **DimensionEssentials** を展開し、**アクセス許可**を右クリックし、その後**新しいアクセス許可**を選択します。 **プロパティ** ウィンドウで、**アクセス レベル**を**読み取り**に設定します。 **セキュリティ権限**をクリックし、**読み取り**の**アクセス レベル**を**アクセス許可**ノードの下に追加します。 これらの 1 つを使用しているモデルに拡張することが必要な場合があります。
-1. **表示** を右クリックし、**コードの表示** を選択します。 ビューに次のコードを追加します。 これにより、分析コード フレームワークに登録されます。 CustTable に対して作成されたビューを使用する例を次に示します。
+
+  > [!IMPORTANT]
+  > 管理者以外のユーザーに、新しいビューのセキュリティ アクセス権を付与する必要があります。
+  > - オーバーレイが使用されるリリース 7.2 およびそれ以前では、**DimensionEssentials** を検索し、プロジェクトに追加します。 **DimensionEssentials** を展開し、**アクセス許可**を右クリックし、その後**新しいアクセス許可**を選択します。 **プロパティ** ウィンドウで、**アクセス レベル**を**読み取り**に設定します。 **セキュリティ権限**をクリックし、**読み取り**の**アクセス レベル**を**アクセス許可**ノードの下に追加します。 これらの 1 つを使用しているモデルに拡張することが必要な場合があります。
+  > - 拡張機能が使用されているリリース 7.3 以降では、新しいビューと共にカスタム モデルで新しいセキュリティ権限を作成します。 **アクセス許可** ノードを右クリックし、**新しいアクセス許可** を選択します。 上記の手順 2 で作成した新しい DimAttribute[DimensionName] ビューの名前を入力し、**アクセス レベル** を **読み取り** に設定します。 **セキュリティ職務権限 SysServerAXBasicMaintain** を検索します。 右クリックし、**拡張機能の作成** を作成します。 必要に応じて拡張機能の名前を変更します。 新たに作成された **セキュリティ特権** を **特権リスト** にドラッグ アンド ドロップします。  
+       
+14. **表示** を右クリックし、**コードの表示** を選択します。 ビューに次のコードを追加します。 これにより、分析コード フレームワークに登録されます。 CustTable に対して作成されたビューを使用する例を次に示します。
       ```
       [SubscribesTo(classstr(DimensionEnabledType),
       delegatestr(DimensionEnabledType,
@@ -78,8 +83,8 @@ ms.lasthandoff: 09/04/2018
          _dimensionEnabledType.registerViewIdentifier(tablestr(DimAttribute**CustTable**));
       }
       ```
-1. **Microsoft Dynamics 365** を選択して **オプション** をクリックします。 **ベスト プラクティス** を選択します。 モデルを選択し、**Microsoft.Dynamics.AX.Framework.ViewRules/ViewDimensionEnabledTypeChecker** が表示されるまでスクロールします。 ルールとその子が選択されていることを確認します。
-1.  ビューをビルドしてから同期します。
+15. **Microsoft Dynamics 365** を選択して **オプション** をクリックします。 **ベスト プラクティス** を選択します。 モデルを選択し、**Microsoft.Dynamics.AX.Framework.ViewRules/ViewDimensionEnabledTypeChecker** が表示されるまでスクロールします。 ルールとその子が選択されていることを確認します。
+16.  ビューをビルドしてから同期します。
 
 ## <a name="step-2-validate-that-the-view-returns-the-correct-data-in-sql"></a>手順 2: ビューが SQL で正しいデータを返すことを検証する
 

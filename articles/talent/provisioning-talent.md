@@ -18,10 +18,10 @@ ms.author: rschloma
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: c5d4fb53939d88fcb1bd83d70bc361ed9879f298
-ms.openlocfilehash: d28ca1f9cf2bef73dc687a85592056cccc767da5
+ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
+ms.openlocfilehash: 6fb41a8c1ff4ce95bab5b169256955f244e66071
 ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
+ms.lasthandoff: 11/01/2018
 
 ---
 # <a name="provision-talent"></a>Talent のプロビジョニング
@@ -47,7 +47,7 @@ Talent を使い始める方法については、新しいプロジェクトで�
 LCS プロジェクトを作成した後は、環境に Talent をプロビジョニングすることができます。
 
 1. LCS プロジェクトでは、**Talent アプリの管理** タイルを選択します。
-2. Talent は PowerApps の統合および拡張機能を有効にするために Microsoft PowerApps の環境に常にプロビジョニングされています。 続行する前に、このトピックの「PowerApps 環境の選択」を参照してください。 
+2. Talent は、Microsoft PowerApps の環境に常にプロビジョニングされていて、これにより PowerApps の統合および拡張機能が有効になります。 続行する前に、このトピックの「PowerApps 環境の選択」を参照してください。 まだ PowerApps 環境を持っていない場合は、LCS で環境の管理を選択するか、または PowerApps 管理センターに移動します。 次に、以下の手順に従います [PowerApps 環境の作成](https://docs.microsoft.com/en-us/powerapps/administrator/create-environment)。
 
     > [!NOTE]
     > 既存の環境を表示、または新しい環境を作成するために、Talent をプロビジョニングするテナント管理者は PowerApps P2 ライセンスに割り当てられる必要があります。 組織に PowerApps P2 ライセンスがない場合、CSP または [PowerApps 価格ページ](https://powerapps.microsoft.com/en-us/pricing/) から入手することができます。
@@ -73,7 +73,7 @@ Talent と PowerApps 環境との統合では、PowerApps ツールを使用し�
 Talent を配置する PowerApps 環境を決定する際には、次のガイダンスを参考にしてください。 
 1. LCS で管理の環境を選択するか、または PowerApps 管理者センターに直接移動して、既存の環境を表示および新しい環境を作成できます。
 2. 1 つの Talent 環境は、1 つの PowerApps 環境にマップされます。
-3. PowerApps 環境には、対応する PowerApps、フロー、および CDS アプリケーションと共に、Talent アプリケーションが「含まれて」います。 PowerApps 環境を削除すると、その中のアプリも削除されます。
+3. PowerApps 環境には、対応する PowerApps、フロー、および CDS アプリケーションと共に、Talent アプリケーションが「含まれて」います。 PowerApps 環境を削除すると、その中のアプリも削除されます。 Talent 環境をプロビジョニングする場合、「試用版」または「製品版」のいずれかをプロビジョニングできます。 環境の使用方法に基づいて環境のタイプを選択します。 
 4. データの統合およびテスト戦略を考慮する必要があります。たとえばサンドボックス、UAT、生産などです。 したがって、後に PowerApps 環境にマッピングされる Talent 環境を変更することは容易ではないため、配置へのさまざまな影響について考慮することをお勧めします。
 5. 次の PowerApps 環境は Talent に対しては使用できず、LCS 内の選択リストからもフィルター処理されます。
  

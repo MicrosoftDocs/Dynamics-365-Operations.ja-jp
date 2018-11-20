@@ -18,10 +18,10 @@ ms.author: tfehr
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Release 8.1
 ms.translationtype: HT
-ms.sourcegitcommit: ad0083018d2734cb1e36cbf5f94105376c57cdf9
-ms.openlocfilehash: 80794240825262b1e31896d2181a47e9eb2a45c6
+ms.sourcegitcommit: 81214cc52b1488bb70ac5fd6ccc817f6f979163d
+ms.openlocfilehash: 5cc10d6fe07b59f934cf01d8163a68686237081c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 10/02/2018
+ms.lasthandoff: 10/16/2018
 
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-version-81-october-2018"></a>Dynamics 365 for Finance and Operations バージョン 8.1 (2018 年 10 月) の新機能および変更された機能
@@ -29,6 +29,8 @@ ms.lasthandoff: 10/02/2018
 [!include [banner](../includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 for Finance and Operations バージョン 8.0 (2018 年 10 月) の新機能または変更された機能について説明します。 このバージョンは 2018 年 10 月にリリースされ、ビルド番号は 8.1.136 です。
+
+Microsoft Dynamics 365 for Retail の最新リリースの新機能と変更については、[Dynamics 365 for Retail の新機能と変更点](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/get-started/whats-new)を参照してください。
 
 ### <a name="announcing-the-dynamics-365-october-18-release-notes"></a>Dynamics 365 2018 年 10 月リリース ノートの発表
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか? 

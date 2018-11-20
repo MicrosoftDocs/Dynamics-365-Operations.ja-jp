@@ -1,27 +1,27 @@
 ---
 title: "バッチ処理"
-description: "この記事では、Microsoft Dynamics 365 for Finance and Operations のバッチ処理の概要について説明します。"
-author: maertenm
+description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations のバッチ処理の概要について説明します。"
+author: hasaid
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: IT Pro
-ms.reviewer: robinr
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 62333
 ms.assetid: 6135bcf7-bf8f-42ae-b2c6-458f6538e6a4
 ms.search.region: Global
-ms.author: maertenm
+ms.author: hasaid
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 34377119b12c537679c423d79449169f3d25dc21
+ms.sourcegitcommit: f3e3a22dbc343db1485190402371859861e46d1c
+ms.openlocfilehash: 6ed136b3aae92977f253b4bea3a1e99c1ef91c94
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 10/26/2018
 
 ---
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 08/09/2018
 
 [!include [banner](../includes/banner.md)]
 
-この記事では、Microsoft Dynamics 365 for Finance and Operations のバッチ処理の概要について説明します。
+このトピックでは、Microsoft Dynamics 365 for Finance and Operations のバッチ処理の概要について説明します。
 
 Finance and Operations では、多くのタスクをバッチ ジョブの一部として実行できます。 たとえば、バッチ ジョブには、レポートの印刷、管理の実行、電子ドキュメントの送信などのタスクを含めることができます。 バッチ ジョブを使用すると、通常の就業時間内におけるコンピュータまたはサーバーの処理速度の低下を回避できます。 
 
@@ -45,6 +45,15 @@ Finance and Operations では、多くのタスクをバッチ ジョブの一�
 
 たとえば、サーバー A がレポートを印刷するよう設定され、サーバー B が電子ドキュメントを送信するよう設定されます。 バッチ グループを使用することで、レポート タスクがサーバー A で実行され、電子ドキュメントがサーバー B で処理されることを保証することができます。
 
+詳細については、[バッチ処理とバッチ サーバー](batch-server-overview.md) を参照してください。
 
 
+## <a name="batch-functions"></a>バッチ関数
+
+管理者およびバッチ マネージャーは、バッチ ジョブの作成とコピー、バッチ ジョブ ユーザーの変更、ジョブを実行しない期間の指定などの一般的なタスクを実行できます。 これらのタスクの詳細については、次のトピックを参照してください。
+
+-  [バッチ ジョブの作成](tasks/create-batch-job.md)
+-  [バッチ マネージャー ロール](runby.md)
+-  [バッチ アクティブ期間](activeperiod.md)
+-  [バッチ ジョブのコピー](copy-batch-job.md)
 

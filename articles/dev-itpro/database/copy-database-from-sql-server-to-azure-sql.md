@@ -1,9 +1,9 @@
 ---
 title: "Finance and Operations データベースを SQL Server から Azure SQL データベース運用環境にコピーする"
 description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations データベースを SQL Server をベースとした開発、ビルド、またはデモ環境 (第 1 層または ワンボックス) から Azure SQL データベースをベースしたサンドボックス UAT 環境 (第 2 層以上) に移動する方法について説明します。"
-author: maertenm
+author: laneswenka
 manager: AnnBe
-ms.date: 07/09/2018
+ms.date: 10/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -14,14 +14,14 @@ ms.search.scope: Operations
 ms.custom: 256464
 ms.assetid: 4cc5f2aa-dd4e-4981-9607-e75fd1d57941
 ms.search.region: Global
-ms.author: maertenm
+ms.author: laneswenka
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 1aae5797e37b846a38f957b02870e213da528a2d
-ms.openlocfilehash: 514f31c1b46707be1df0b28582535131ada46adf
+ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
+ms.openlocfilehash: 9b6ce447f417a869f6812ae49af4a02accb1d28b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/20/2018
+ms.lasthandoff: 11/01/2018
 
 ---
 
@@ -37,7 +37,7 @@ ms.lasthandoff: 09/20/2018
 
 1. 顧客やパートナーは、SQL Server のデータベースをエクスポートします。
 2. 顧客またはパートナーは、データベースを Azure SQL データベース上で実行されるサンドボックス環境にインポートします。
-3. Microsoft Dynamics Lifecycle Services (LCS) では、顧客またはパートナーが**その他の要求**タイプのサービス要求を送信して、Microsoft Dynamics のサポート エンジニアリング (DSE) チームにサンドボックス データベースを実稼動環境に移動してもらうよう依頼します。
+3. Microsoft Dynamics Lifecycle Services (LCS) では、顧客またはパートナーが**サンドボックスから実稼働環境**タイプのサービス要求を送信して、Microsoft Dynamics のサポート エンジニアリング (DSE) チームにサンドボックス データベースを実稼動環境に移動してもらうよう依頼します。
 4. DSE チームでは、データベースをサンドボックス環境から実稼働環境にコピーします。
 
 > [!NOTE]
@@ -68,9 +68,13 @@ ms.lasthandoff: 09/20/2018
 
 ## <a name="before-you-begin"></a>準備
 
-暗号化された環境固有の値を新しい環境にインポートすることはできません。 インポート処理を完了した後は、ターゲット環境内のソース環境から一部のデータを再入力する必要があります。
+### <a name="supported-sql-server-collation"></a>サポートされる SQL Server の照合順序
+
+クラウドの Finance and Operations データベースでサポートされている唯一の照合順序は、**SQL_Latin1_General_CP1_CI_AS** です。 開発環境の SQL Server とデータベース照合順序がこれに設定されていることを確認してください。 また、サンドボックスに発行されたすべてのコンフィギュレーション環境にこれと同じ照合順序があることを確認します。
 
 ### <a name="document-the-values-of-encrypted-fields"></a>暗号化されたフィールドの値を文書化
+
+暗号化された環境固有の値を新しい環境にインポートすることはできません。 インポート処理を完了した後は、ターゲット環境内のソース環境から一部のデータを再入力する必要があります。
 
 データ暗号化に使用される証明書に関連する技術的な制限のため、データベースの暗号化されたフィールドに格納されている値はそのデータベースが新しい環境にインポートされた後は読み取れません。 したがって、インポート後、暗号化されたフィールドに格納されている値を手動で削除して再入力する必要があります。 インポート後に暗号化されたフィールドに入力される新しい値は読み取り可能になります。 次のフィールドが影響されます。 フィールド名は Table.Field 形式で指定されます。
 
@@ -242,10 +246,10 @@ EXEC sp_addrolemember 'ReportUsersRole', 'axretailruntimeuser'
 CREATE USER axretaildatasyncuser WITH PASSWORD = '<password from LCS>'
 EXEC sp_addrolemember 'DataSyncUsersRole', 'axretaildatasyncuser'
 
-ALTER DATABASE SCOPED CONFIGURATION  SET MAXDOP=2
-ALTER DATABASE SCOPED CONFIGURATION  SET LEGACY_CARDINALITY_ESTIMATION=ON
-ALTER DATABASE SCOPED CONFIGURATION  SET PARAMETER_SNIFFING= ON
-ALTER DATABASE SCOPED CONFIGURATION  SET QUERY_OPTIMIZER_HOTFIXES=OFF
+ALTER DATABASE SCOPED CONFIGURATION  SET MAXDOP=2
+ALTER DATABASE SCOPED CONFIGURATION  SET LEGACY_CARDINALITY_ESTIMATION=ON
+ALTER DATABASE SCOPED CONFIGURATION  SET PARAMETER_SNIFFING= ON
+ALTER DATABASE SCOPED CONFIGURATION  SET QUERY_OPTIMIZER_HOTFIXES=OFF
 
 ALTER DATABASE <imported database name> SET COMPATIBILITY_LEVEL = 130;
 ALTER DATABASE <imported database name> SET QUERY_STORE = ON;
@@ -345,22 +349,18 @@ Management Reporter という以前の名前を持った財務報告を使用す
 
 ## <a name="submit-a-service-request-to-copy-the-database"></a>データベースをコピーするサービス要求を送信
 
-ゴールデン データベースを実稼働環境にコピーするには、LCS に **Other request** タイプのサービス要求を送信する必要があります。 この要求では、Microsoft がコピー操作を実行することを求めます。
+ゴールデン データベースを実稼働環境にコピーするには、LCS に **サンドボックスから実稼働環境** タイプのサービス要求を送信する必要があります。 この要求では、Microsoft がコピー操作を実行することを求めます。
 
 > [!NOTE]
 > 要求には実稼働環境へのコピーが含まれるので、**データベースを最新の情報に更新要求** タイプの要求を使用することはできません。
 
-1. LCS で、ハンバーガー アイコンを選択してから、**作業項目**を選択します。
-
-    [![作業項目](./media/lcsworkitemsmenu.png)](./media/lcsworkitemsmenu.png)
-
-2. **作業項目**ページで、**追加**を選択し、**その他の要求**を選択します。
-3. **その他の要求**ダイアログ ボックスで、次の手順に従います。
+1. LCS のプロジェクト ホーム ページで、**サービス要求** を選択します。
+2. **サービス要求** ページで、**追加** を選択し、**サンドボックスから実稼働環境** を選択します。
+3. **サンドボックスから実稼働環境** ダイアログ ボックスで、次の手順に従います。
 
     1. **環境名**フィールドで、実稼動環境を選択します。
     2. **ダウンタイム開始日を優先** および **ダウンタイム終了日を優先** フィールドを設定します。 サイクル終了日は、サイクル開始日の少なくとも 1 時間後でなければなりません。 要求を実行するためのリソースが確保されるようにするには、推奨ダウンタイム ウィンドウの少なくとも 24 時間前にリクエストを送信してください。
-    3. **要求**フィールドに次の詳細を入力します。**これはサンドボックス環境 &lt;ソース サンドボックス環境名&gt; から実稼働へのゴールデン データベースのコピーに関する要求です。これにより、実稼働中のデータベースが上書きされることを承認します。**
-    4. 下部にあるチェック ボックスをオンにして、条項に同意します。
+    3. 下部にあるチェック ボックスをオンにして、条項に同意します。
 
 ## <a name="additional-steps-for-retail-environments"></a>小売環境の追加手順
 

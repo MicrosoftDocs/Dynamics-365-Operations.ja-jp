@@ -1,9 +1,9 @@
 ---
-title: "オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 12)"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations、Enterprise エディション (プラットフォーム更新プログラム 12) にオンプレミス環境を計画、設定、展開する方法について説明します。"
+title: "オンプレミス環境の設定と配置 (Platform update 12 以降)"
+description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 12 以降 にオンプレミス環境を計画、設定、展開する方法について説明します。"
 author: sarvanisathish
 manager: AnnBe
-ms.date: 09/04/2018
+ms.date: 11/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,21 +18,21 @@ ms.author: sarvanis
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 12
 ms.translationtype: HT
-ms.sourcegitcommit: 8a282207246fc1dbce1c4c40af118a3dc9976a2a
-ms.openlocfilehash: 95ff2e7465ee8a749c08e6c3efb320769b974ae9
+ms.sourcegitcommit: b8fb8c963e2bba2e6fe7cb31e71a38232f1e8a54
+ms.openlocfilehash: 23d636cebd9da60c3cf05a322d1bbe56cb99c5bb
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/04/2018
+ms.lasthandoff: 11/02/2018
 
 ---
 
-# <a name="set-up-and-deploy-on-premises-environments-platform-update-12"></a>オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 12)
+# <a name="set-up-and-deploy-on-premises-environments-platform-update-12-and-later"></a>オンプレミス環境の設定と配置 (Platform update 12 以降)
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、展開を計画し、インフラストラクチャを設定し、Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (オンプレミス)、プラットフォーム更新プログラム 12 を展開する方法について説明します。 プラットフォーム更新プログラム 12 での設定変更に関する詳細については、[プラットフォーム更新プログラム 12 のオンプレミス配置での新機能または変更内容](../../fin-and-ops/get-started/whats-new-LBD-PU12-App72.md) を参照してください。 
+このトピックでは、展開を計画し、インフラストラクチャを設定し、Microsoft Dynamics 365 for Finance and Operations (オンプレミス) プラットフォーム更新プログラム 12 以降を展開する方法について説明します。
 
 > [!IMPORTANT]
-> このトピックは、プラットフォーム更新プログラム 12 にオンプレミス環境を展開する場合にのみ適用されます。 プラットフォーム更新プログラム 8 および 11 のインストールへの配置方法については、[オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 8 および 11)](setup-deploy-on-premises-pu8-pu11.md)を参照してください。 
+> このトピックは、プラットフォーム更新プログラム 12 以降にオンプレミス環境を展開する場合にのみ適用されます。 プラットフォーム更新プログラム 8 および 11 のインストールへの配置方法については、[オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 8 および 11)](setup-deploy-on-premises-pu8-pu11.md)を参照してください。 
 
 [ローカル ビジネス データ Yammer グループ](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=13595809&view=all)が利用可能になりました。 オンプレミス展開に関する質問またはフィードバックをそこに投稿することができます。
 
@@ -89,7 +89,11 @@ Finance and Operations の設定は、Service Fabric (SF) 内に一連のアプ�
 
 ## <a name="infrastructure"></a>インフラストラクチャ
 
-Finance and Operations は、Windows Servers に基づく Hyper-V 仮想化環境で作業するよう設計されています。
+Finance and Operations には、非 Microsoft 仮想化プラットフォーム (具体的には VMWare) での操作に関する Microsoft の標準サポート ポリシーが適用されます。 詳細については、[Microsoft ソフトウェアのサポート ポリシー](https://support.microsoft.com/en-us/help/897615/support-policy-for-microsoft-software-that-runs-on-non-microsoft-hardw)を参照してください。 つまり、この環境では製品をサポートしますが、問題の調査を依頼された場合、仮想化プラットフォームのない状態または Microsoft 仮想化プラットフォームで問題を再現するようまずお客様に依頼する場合があります。
+
+VMWare を使用している場合は、次の Web ページに記載されている修正プログラムを実装する必要があります。
+- [仮想マシンをハードウェア バージョン 11 にアップグレード後、ネットワーク依存ワークロードのパフォーマンスが低下する (2129176)](https://kb.vmware.com/s/article/2129176)
+- [vmxnet3 仮想アダプターのいくつかの問題](https://vinfrastructure.it/2016/05/several-issues-vmxnet3-virtual-adapter)
 
  > [!WARNING]
  > Azure を含む、任意のパブリック クラウド インフラストラクチャでサポートされていない、Microsoft Dynamics 365 for Finance and Operations のオンプレミス配置。
@@ -425,6 +429,11 @@ Add-Computer -DomainName $domainName -Credential (Get-Credential -Message 'Enter
 | Microsoft Visual Studio 2013 用 Microsoft Visual C++ 再頒布可能パッケージ | <https://support.microsoft.com/en-us/help/3179560> |
 | Microsoft Access データベース エンジン 2010 再頒布可能パッケージ | <https://www.microsoft.com/en-us/download/details.aspx?id=13255> |
 
+> [!IMPORTANT]
+> Microsoft SQL Server Management Studio の設定が、対象となるコンピューターのオペレーティング システムと同じ言語であることを確認します。
+> NodeTopologyDefinition.xml で定義されているインストーラー ファイルが指定されていることを確認します。
+> msodbcsql.ms SSMS-Setup-*.exe vcredist_x64.exe AccessDatabaseEngine_x64.exe
+
 #### <a name="follow-these-steps-for-each-vm-or-use-remoting-from-a-single-machine"></a>各 VM についてこれらのステップに従うか、または単一のコンピューターからリモート処理を使用します。
 
 > [!NOTE]
@@ -559,7 +568,7 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
    4. **データ アクセスを暗号化**を確認してください。
    5. OrchestratorType を除いて、Service Fabric クラスター内のすべてのマシンに対して**変更**許可を与えます。
    6. AOS ドメイン ユーザー (contoso\\AXServiceUser) と gMSA ユーザー (contoso\\svc-AXSF$) に対して、**変更**アクセス許可を付与します。
-    
+
       >[!NOTE]
       > マシンを追加するために**オブジェクト タイプ**の下の**コンピューター**を、またはサービス アカウントを追加するために**オブジェクト タイプ**下の**サービス アカウント**を有効にする必要がある場合があります。
 
@@ -568,6 +577,36 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
     1. サーバー マネージャーで、**ファイルと保管サービス** \> **共有** を選択します。
     2. **タスク**\>**新しい共有** を選択し、新しい共有を作成します。 共有に**エージェント**と名前を付けます。
     3. ローカル展開エージェント (contoso\\svc-LocalAgent$) の gMSA ユーザーに対して **フル コントロール** のアクセス許可を与えます。
+
+    ```PowerShell
+    # Specify user names
+    $AOSDomainUser = 'Contoso\AXServiceUser';
+    $LocalDeploymentAgent = 'contoso\svc-LocalAgent$';
+
+    # Specify the path
+    $AosStorageFolderPath = 'D:\aos-storage';
+    $AgentFolderPath = 'D:\agent';
+
+    # Create new directory
+    $AosStorageFolder = New-Item -type directory -path $AosStorageFolderPath;
+    $AgentFolder = New-Item -type directory -path $AgentFolderPath;
+
+    # Create new SMB share
+    New-SmbShare –Name aos-storage -Path $AosStorageFolderPath -EncryptData $True
+    New-SmbShare –Name agent -Path $AgentFolderPath
+
+    # Set ACL for AOS storage folder
+    $Acl = Get-Acl $AosStorageFolder.FullName;
+    $Ar = New-Object system.security.accesscontrol.filesystemaccessrule($AOSDomainUser,'Modify','Allow');
+    $Acl.SetAccessRule($Ar);
+    Set-Acl $AosStorageFolder.FullName $Acl;
+
+    # Set ACL for AgentFolder
+    $Acl = Get-Acl $AgentFolder.FullName;
+    $Ar = New-Object system.security.accesscontrol.filesystemaccessrule($LocalDeploymentAgent,'FullControl','Allow');
+    $Acl.SetAccessRule($Ar);
+    Set-Acl $AgentFolder.FullName $Acl;
+    ```
 
 ### <a name="setupsql"></a> 13. SQL Server の設定
 
@@ -788,22 +827,28 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
 
 この手順を完了する前に、AD FS を Windows Server 2016 に展開する必要があります。 AD FS を展開する方法については、[Windows Server 2016 配置ガイドおよび 2012 R2 AD FS 配置ガイド](/windows-server/identity/ad-fs/deployment/windows-server-2012-r2-ad-fs-deployment-guide) を参照してください。
 
-Finance and Operations では、AD FS の既定で標準のコンフィギュレーション以外の追加のコンフィギュレーションが必要です。 以下の手順では、Windows PowerShell は AD FS ロール サービスがインストールされているマシン上で実行されます。 ユーザー アカウントには、AD FS を管理するための十分なアクセス許可が必要です。 たとえば、ユーザーには、ドメイン管理者アカウントが必要です。
+Finance and Operations では、AD FS の既定で標準のコンフィギュレーション以外の追加のコンフィギュレーションが必要です。 以下の Windows PowerShell コマンドを、AD FS ロール サービスがインストールされているマシン上で実行する必要があります。 ユーザー アカウントには、AD FS を管理するための十分なアクセス許可が必要です。 たとえば、ユーザーには、ドメイン管理者アカウントが必要です。 複雑な AD FS シナリオでは、ドメイン管理者に問い合わせてください。
 
 1. AD FS 識別子を構成して、AD FS トークン発行者と一致するようにします。
 
-    ```powershell
+   このコマンドは、Finance and Operations クライアントの **ユーザー** ページ (**システム管理 > ユーザー > ユーザー**) で **ユーザーをインポート** オプションを使用した新しいユーザーの追加に関連しています。
+
+    ```PowerShell
     $adfsProperties = Get-AdfsProperties
     Set-AdfsProperties -Identifier $adfsProperties.IdTokenIssuer
     ```
 
 2. 混在環境用に AD FS を構成していない限り、イントラネット認証接続用に Windows 統合認証 (WIA) を無効にする必要があります。 WIA を AD FS で使用できるように構成する方法の詳細については、[AD FS で Windows 統合認証 (WIA) を使用するようにブラウザを構成する](/windows-server/identity/ad-fs/operations/configure-ad-fs-browser-wia) を参照してください。
 
+   このコマンドは、Finance and Operations クライアントへのログイン時のフォーム認証の使用に関連しています。 シングル サインオンなど、追加の設定が必要な他のオプションが使用可能な場合があります。
+
     ```powershell
     Set-AdfsGlobalAuthenticationPolicy -PrimaryIntranetAuthenticationProvider FormsAuthentication, MicrosoftPassportAuthentication
     ```
 
 3. サインインの場合、ユーザーの電子メール アドレスは許容される認証入力でなければなりません。
+
+   このコマンドは、電子メール要求の設定に関連しています。 変換ルールなど、追加の設定が必要な他のオプションが使用可能な場合があります。
 
     ```powershell
     Add-Type -AssemblyName System.Net

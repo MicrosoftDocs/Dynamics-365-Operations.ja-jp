@@ -17,10 +17,10 @@ ms.author: epegors
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 12
 ms.translationtype: HT
-ms.sourcegitcommit: d20bc3519096f1035d26f89d42aa7e8f0fc368cd
-ms.openlocfilehash: 3a62d94d34c80a4ad4e245ddd41ef06b07b9852d
+ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
+ms.openlocfilehash: 8a0f7c00b3b4b07555f3e29554ace8baad2534c0
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/29/2018
+ms.lasthandoff: 11/01/2018
 
 ---
 
@@ -45,7 +45,7 @@ Microsoft SQL Server、SQL Server Reporting Services (SSRS)、SQL Server Integra
 はい、サービス ボリューム ドライブに対する完全なアクセス権があります。 したがって、監視データをクリーンアップすることができます。
 
 ## <a name="what-are-the-alternatives-to-vms-that-dont-allow-administrator-access"></a>管理者アクセスを許可しない VM に代わる方法とは
-プライベート Azure サブスクリプションの Microsoft Azure VM とローカル仮想ハード ディスク (VHD) の両方は管理者アクセスを許可します。 ただし、Visual Studio を管理者として実行する必要があります。 管理者は明示的にではなく、**管理者**グループを介してのみこれらの代替手段にアクセスできるため、この要件が適用されます。
+プライベート Azure サブスクリプションの Microsoft Azure 環境とローカル仮想ハード ディスク (VHD) の両方は管理者アクセスを許可します。 ただし、Visual Studio を管理者として実行する必要があります。 管理者は明示的にではなく、**管理者**グループを介してのみこれらの代替手段にアクセスできるため、この要件が適用されます。
 
 ## <a name="can-i-run-visual-studio-as-an-administrator"></a>Visual Studio を管理者として実行できますか。
 Platform update 12 以降、Visual Studio を管理者として実行する必要がなくなりました。 Microsoft 所有の Azure サブスクリプションである VM に対して、リモート デスクトップ プロトコル (RDP) を使用して管理者として接続することはできなくなりました。 これらの VM には、サブスクリプションおよび Tier 1 アドオン VM に含まれる Tier 1 VM が含まれます。 ただし、管理者として Microsoft 所有のサブスクリプションの下にはない VM に接続する場合、管理者として引き続き Visual Studio を実行する必要があります。
@@ -55,6 +55,11 @@ IIS Express を使用する必要があります。 詳細については、次�
 
 ## <a name="what-are-the-instructions-for-using-iis-express"></a>IIS Express の使用方法は ?
 IIS Express が起動されると、通知領域 (時計の近くにある) にアイコンが表示されます。 IIS Express アイコンを右クリックすると、実行中のすべてのサイトが一覧表示されます。 そのメニューから IIS Express を停止することができます。 Visual Studio でのいくつかのアクションによって IIS Express が起動しますが、**Dynamics 365** メニューで **IIS Express の再起動** を選択することで、Visual Studio から明示的に IIS Express を起動することもできます。
+
+IIS Express および Unified Operations Visual Studio プロジェクトでデバッグが正常に機能することを確実にするため、次のインターネット オプションの設定をお勧めします。
+
+- **コントロール パネル** > **インターネット オプション** > **セキュリティ** タブ >**インターネット** に移動し、**保護モードの有効化** チェック ボックスをオンにします。
+- **コントロール パネル** > **インターネット オプション** > **セキュリティ** タブ >**制限付きサイト** に移動し、**保護モードの有効化** チェック ボックスをオンにします。
 
 ## <a name="can-i-install-additional-development-tools-such-as-fiddler-and-pepper"></a>追加の開発ツール (Fiddler や Pepper など) をインストールすることはできますか。
 いいえ、追加の開発ツールをインストールすることはできません。

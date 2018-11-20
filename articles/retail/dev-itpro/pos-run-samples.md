@@ -43,10 +43,10 @@ ms.lasthandoff: 08/09/2018
     {
         "extensionPackages": [
             {
-                "baseUrl": " SampleExtensions"
+                "baseUrl": "SampleExtensions"
             },
             {
-                "baseUrl": " SampleExtensions2"
+                "baseUrl": "SampleExtensions2"
             }
         ] 
     }

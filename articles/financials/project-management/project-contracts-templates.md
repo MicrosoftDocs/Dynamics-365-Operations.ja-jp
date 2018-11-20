@@ -3,7 +3,7 @@ title: "プロジェクト契約およびプロジェクトを Project Service A
 description: "このトピックでは、Microsoft Dynamics 365 for Project Service Automation から Microsoft Dynamics 365 for Finance and Operations へプロジェクト契約およびプロジェクトを、直接同期させるために使用されるテンプレートと基本的なタスクについて説明します。"
 author: KimANelson
 manager: AnnBe
-ms.date: 07/20/2018
+ms.date: 10/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: knelson
 ms.search.validFrom: 2017-12-13
 ms.dyn365.ops.version: AX 7.3.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: 65a274323a2d95c9c76727c9e40aa7e649e6350a
+ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
+ms.openlocfilehash: 0889bc233674cb80dd056ac77edb5c936c6633a7
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 11/01/2018
 
 ---
 
@@ -95,8 +95,8 @@ Project Service Automation から Finance and Operations 統合ソリューシ�
 ## <a name="prerequisites-and-mapping-setup"></a>前提条件およびマッピングの設定
 
 - プロジェクト契約とプロジェクトの同期を行う前に、勘定を同期する必要があります。
-- 接続の設定、**msdyn\_organizationalunits** の統合キー フィールドのマッピングを **msdyn\_名前\[名前\]** へ追加します。 まず最初に、接続の設定にプロジェクトを追加する必要があります。 統合キーの詳細情報については、[Dynamics 365 データ統合](https://docs.microsoft.com/en-us/common-data-service/entity-reference/dynamics-365-integration) を参照してください。
-- 接続の設定、**msdyn\_プロジェクト**の統合キー フィールドのマッピングを **msdynce\_projectnumber \[プロジェクト番号\]** へ追加します。 まず最初に、接続の設定にプロジェクトを追加する必要があります。 統合キーの詳細情報については、[Dynamics 365 データ統合](https://docs.microsoft.com/en-us/common-data-service/entity-reference/dynamics-365-integration) を参照してください。
+- 接続の設定、**msdyn\_organizationalunits** の統合キー フィールドのマッピングを **msdyn\_名前\[名前\]** へ追加します。 最初に、接続の設定にプロジェクトを追加する必要があります。 詳細については、[Common Data Service for Apps へデータを統合](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator) を参照してください。
+- 接続の設定、**msdyn\_プロジェクト**の統合キー フィールドのマッピングを **msdynce\_projectnumber \[プロジェクト番号\]** へ追加します。 最初に、接続の設定にプロジェクトを追加する必要があります。 詳細については、[Common Data Service for Apps へデータを統合](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator) を参照してください。
 - **SourceDataID** のプロジェクト契約およびプロジェクトは異なる値に更新、またはマッピングから削除することができます。 既定のテンプレート値は **Project Service Automation** です。
 - **PaymentTerms** マッピングは、Finance and Operations で有効な支払条件が反映できるように更新する必要があります。 プロジェクト タスクからマッピングを削除することもできます。 既定値のマップにはデモ データの既定値があります。 次のテーブルでは、Project Service Automation の値を示します。
 

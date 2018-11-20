@@ -3,7 +3,7 @@ title: "拡張機能を使用してテーブルにメソッドを追加"
 description: "このトピックでは、拡張機能を使用してテーブルにメソッドを追加する方法について説明します。"
 author: ivanv-microsoft
 manager: AnnBe
-ms.date: 10/16/2018
+ms.date: 10/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: ivanv
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 4
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: e6366831367984659f5d311d8c7005a7e9cdf061
+ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
+ms.openlocfilehash: 67f58f863104af56b6f96cd1bcc7a92db7013982
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 11/01/2018
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 08/09/2018
 
 テーブルに関連付けられているビジネス ロジックを拡張するとき、コードをクリーンに維持するために役立つ一般的なコーディング原則はまだ適用されます。 したがって、最終的にアクションをテーブルの別々のメソッドにカプセル化する必要があります。 Microsoft Dynamics AX 2012 では、オーバーレイ経由でテーブルに直接メソッドを追加することによってそのタスクを完了していました。 拡張を使用して同じタスクを完了するには、別の方法を使用します。 具体的には、拡張クラスを作成します。
 
-たとえば、**MyInventLocationId** という名前新しいフィールドが、拡張機能によって InventTable テーブルに追加されました。 **挿入**イベント用のデータ イベント ハンドラーも作成されました。新しいフィールドに入力するロジックを実装する必要があります。 そのアクションをカプセル化するには、InventTable で新しいメソッドを作成し、そのメソッドに **defaultMyInventLocationId** という名前を付けます。
+たとえば、**MyInventLocationId** という名前新しいフィールドが、拡張機能によって InventTable テーブルに追加されました。 **挿入**イベント用のデータ イベント ハンドラーも作成されました。新しいフィールドに入力するロジックを実装する必要があります。 そのアクションをカプセル化するには、InventTable で新しいメソッドを作成し、そのメソッドに **myDefaultInventLocationId** という名前を付けます。
 
 最初に、拡張モデルに新しいクラスを作成します。 このクラスは InventTable テーブルを拡張し、読みやすく理解しやすい方法でテーブルのフィールドとメソッドにアクセスできるようにします 強化クラスに正しい名前を選択することが重要です。 この名前は、展開されるすべてのモデルのすべてのタイプにわたって一意でなければなりません。 詳細については、[モデル拡張機能の名前付けガイドライン](naming-guidelines-extensions.md) を参照してください。
 
@@ -65,7 +65,7 @@ class InventTableMy_EventHandler
     {
         InventTable inventTable = sender as InventTable;
         // Call the method as if it was defined directly on InventTable.
-        inventTable.defaultMyInventLocationId();
+        inventTable.myDefaultInventLocationId();
     }
 }
 

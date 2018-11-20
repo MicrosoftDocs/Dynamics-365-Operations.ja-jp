@@ -16,10 +16,10 @@ ms.author: kfend
 ms.search.validFrom: 2018-06-21
 ms.dyn365.ops.version: Platform update 17
 ms.translationtype: HT
-ms.sourcegitcommit: 1aae5797e37b846a38f957b02870e213da528a2d
-ms.openlocfilehash: df8739623b49cb35c8d8ce56c1e7fa26a29635a8
+ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
+ms.openlocfilehash: a301bafc023af117a38e6901e1e0d01232f6e79b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/20/2018
+ms.lasthandoff: 11/01/2018
 
 ---
 
@@ -28,6 +28,9 @@ ms.lasthandoff: 09/20/2018
 [!include [banner](../includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics AX 2009 から Microsoft Dynamics 365 for Finance and Operations にデータを移行できるように、データ移行ツール (DMT) を設定する方法について説明します。
+
+> [!IMPORTANT]
+> 現時点で、DMT はプライベート プレビューです。 関心をお持ちの場合、[プレビュー プログラム](https://microsoft.qualtrics.com/jfe/form/SV_brOLCioQ7mmeykB)にサインアップすることができます。 DMT の公開リリース日は設定されていません。 
 
 ## <a name="prerequisites"></a>前提条件
 

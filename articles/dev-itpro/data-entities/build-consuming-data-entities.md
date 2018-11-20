@@ -3,7 +3,7 @@ title: "データ エンティティのビルドおよび使用"
 description: "このチュートリアルでは、エンティティを構築する方法と、統合シナリオで一部のアウト・オブ・バンド (OOB) エンティティを使用する方法を示します。"
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 07/09/2018
+ms.date: 10/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
-ms.openlocfilehash: fa322a6cad0245a7a8d5b7b48a282556ae4c04af
+ms.sourcegitcommit: c85df707f2ed345985e6de0fba5f82e4dc71defc
+ms.openlocfilehash: 8567553bf3008866799c315a9c7ab90d23c86ad4
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
+ms.lasthandoff: 10/10/2018
 
 ---
 
@@ -86,6 +86,9 @@ FMLabCustomerEntity
 2. **データ エンティティ** を選択し、**名前** プロパティを **FMLabCustomerEntity** に設定します。
 3. **追加** をクリックします。
 4. **データ エンティティ** ウィザードで、作成しているデータ エンティティのプロパティを指定します。 次のスクリーン ショットに表示される値を使用します。
+
+    > [!NOTE]
+    > エンティティの名前に「_」や数字 (0...9) を使用することはできません。 これらの文字を使用すると、後でマッピング エラーが発生することがあります。
 
     [![データ エンティティ ウィザード](./media/data-entity-wizard.png)](./media/data-entity-wizard.png)
 

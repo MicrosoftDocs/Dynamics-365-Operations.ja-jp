@@ -3,13 +3,13 @@ title: "オンプレミス環境の設定と配置ホーム ページ"
 description: "このトピックでは、オンプレミス環境の計画、設定、および展開方法に関するトピックへのリンクを提供します。"
 author: sarvanisathish
 manager: AnnBe
-ms.date: 03/05/2018
+ms.date: 11/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 
 ms.assetid: 
@@ -18,10 +18,10 @@ ms.author: sarvanis
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: e8377a9a1c4a64b621617ea0ff35171577dd3c21
+ms.sourcegitcommit: 003b7eac16c1be50bc982da0672df42a87a69722
+ms.openlocfilehash: 564993425826e4e57a3e5fd01a2e49f788e214d1
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 11/05/2018
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 08/09/2018
 オンプレミス環境を配置するためのプロセスは、プラットフォーム更新プログラム 12 とそれ以前のプラットフォーム更新プログラムとでは異なります。 プラットフォーム更新プログラム 12 での設定変更に関する詳細については、[プラットフォーム更新プログラム 12 のオンプレミス配置での新機能または変更内容](../../fin-and-ops/get-started/whats-new-LBD-PU12-App72.md) を参照してください。 
 
 セットアップ手順については、以下を参照してください。 
-- [オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 12)](setup-deploy-on-premises-pu12.md)
+- [オンプレミス環境の設定と配置 (Platform update 12 以降)](setup-deploy-on-premises-pu12.md)
 - [オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 8 および 11)](setup-deploy-on-premises-pu8-pu11.md)
 
 

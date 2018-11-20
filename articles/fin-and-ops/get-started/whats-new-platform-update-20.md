@@ -3,7 +3,7 @@ title: "Dynamics 365 for Finance and Operations プラットフォーム更新�
 description: "このトピックでは、Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 20 の新機能または変更された機能について説明します。 このバージョンは 2018 年 9 月にリリースされました。"
 author: tonyafehr
 manager: AnnBe
-ms.date: 09/21/2018
+ms.date: 10/29/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: tfehr
 ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Platform update 16, Platform update 17, Platform update 18, Platform update 19, Platform 20
 ms.translationtype: HT
-ms.sourcegitcommit: d6b7b1219974cb5de1a625d87c3bce2a4439470b
-ms.openlocfilehash: b7ef4cacc7cf99f39b4e6eb9bf1b9f00e0997ffb
+ms.sourcegitcommit: 53c0da5e9697deaf946ccd4fbcd2102faa62b195
+ms.openlocfilehash: 8aa3c79d33e718b13ba55fc68e9a77438230d340
 ms.contentlocale: ja-jp
-ms.lasthandoff: 10/01/2018
+ms.lasthandoff: 11/02/2018
 
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-platform-update-20-september-2018"></a>Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 20 (2018 年9 月) の新機能および変更された機能
@@ -51,8 +51,28 @@ ms.lasthandoff: 10/01/2018
 ## <a name="adding-and-removing-columns-in-a-grid-is-easier"></a>グリッドでの列の追加と削除の方がより簡単に
 ユーザーがグリッドに行う最も一般的な変更は、列の追加、削除、サイズ変更、および順序変更などです。 この更新では、**列の追加** および **この列を非表示にする** アクションを直接グリッド列ヘッダーのコンテキスト メニューにプロモートすることにより列の追加と削除をより簡単にしました。 
 
+## <a name="improved-behavior-of-non-replacing-lookups"></a>非置き換えルックアップの動作の改良
+Finance and Operations の一部のルックアップは、*非置き換え*です。つまり、ルックアップから値を選択しても、既にフィールドにある内容は置き換えられず、このフィールドに選択した値が追加されます。 たとえば、**高度なフィルター/並べ替え** ダイアログ ボックスのルックアップは既定で非置き換えです。  
+
+非置き換えルックアップの動作は、次のように改良されました。 
+
+- 非置換ルックアップでは先行入力動作がオフになります。 
+
+- ルックアップ グリッド内への配置に使用するルックアップが開かれた後に入力した文字だけが使用されます。
+
+- ルックアップが開かれる前にフィールドになった内容に、ルックアップから選択した値が付加されます (つまり、ルックアップが開いているときに入力した文字はすべて、ルックアップから選択した値を追加したときに置き換えられます)。  
+
+- 非置き換えルックアップに新しいアイコンが表示され、通常のルックアップと区別しすくなりました。
+
+これらの調整により、ユーザーは **高度なフィルター/並べ替え** ダイアログ ボックスを使用してデータをフィルター処理できるようになります。
+
+## <a name="suppressing-hyperlinks"></a>ハイパーリンクを非表示にする 
+開発者は、**EnableFormRef** プロパティを **いいえ** に設定することで、フォームでハイパーリンクを非表示にすることができます。 このプロパティは、フォームおよびフォーム拡張機能の両方で設定できます。 ハイパーリンクが非表示になると、右クリック コンテキスト メニューの対応する **詳細を表示** オプションの非表示になります。 
+ 
+現在ユーザーが一部のハイパーリンクをクリックすると、ナビゲーションが試みられてエラー メッセージが表示されます。開くターゲット フォームがないためです。 このようなシナリオでハイパーリンクを非表示にすると、わかりにくいハイパーリンクがなくなってユーザー エクスペリエンスが向上します。  
+
 ## <a name="chain-of-command-on-nested-types"></a>入れ子にされた型のコマンド チェーン 
-今回のリリースでは、データ ソースやコントロールを含む、フォーム内の入れ子になった型でコマンド チェーンを有効にしました。 これにより、フォームに関連する幅広い拡張シナリオでコマンド チェーンを使用できるようになります。 詳細については、[プラットフォーム更新 16 以降ではフォームで入れ子になったクラス メソッドをラップ可能](../../dev-itpro/extensibility/method-wrapping-coc.md#nested-class-methods-in-forms-can-be-wrapped-in-platform-update-16-or-later)を参照してください。
+今回のリリースでは、データ ソースやコントロールを含む、フォーム内の入れ子になった型でコマンド チェーンを有効にしました。 これにより、フォームに関連する幅広い拡張シナリオでコマンド チェーンを使用できるようになります。 詳細については、[プラットフォーム更新 16 以降ではフォームで入れ子になったクラス メソッドをラップ可能](../../dev-itpro/extensibility/method-wrapping-coc.md#methods-on-types-nested-within-forms-can-be-wrapped-in-platform-update-16-and-later)を参照してください。 プラットフォーム更新 16 以降ではフォーム内で入れ子になったタイプのメソッドをラップできます。
 
 ## <a name="change-form-patterns-to-custom-using-form-extensions"></a>フォームの拡張機能を使用してフォーム パターンをカスタムに変更する
 この更新では、フォームの拡張機能を使用して、フォームのパターンをカスタムに変更できます。 これにより、拡張するフォームの構造の柔軟性が高まります。 ただし、将来のフォームの更新がカスタマイズと競合しないように、基本構造は同じままです。
@@ -113,6 +133,16 @@ Microsoft Dynamics 365 for Finance and Operations のデータ タスク自動�
 
 個人用設定の詳細については、[ユーザー エクスペリエンスのパーソナライズ](personalize-user-experience.md)を参照してください。
 
-## <a name="updates-to-the-performance-software-development-kit"></a>パフォーマンス ソフトウェア開発キットの更新
-プラットフォーム更新 20 の時点で、証明書を作成したり、リモート デスクトップを使用してテスト環境にログインし、パフォーマンス ソフトウェア開発キット (パフォーマンス SDK) を構成する必要はありません。 新しいパフォーマンス SDK では、テスト ユーザーを認証するのに Azure Active Directory (AAD) アプリケーションを使用します。
+## <a name="batch-manager-security-role"></a>バッチ マネージャーのセキュリティ ロール
+プラットフォーム更新 20 より前では、バッチ ジョブを管理するシステム管理者や IT 管理者セキュリティ ロールにユーザーを割り当てる必要がありました。 プラットフォーム更新 20 のリリースには、より対象を絞り込んだロール、バッチ マネージャーがあります。 このセキュリティ ロールでは、ユーザーはバッチ ジョブをコピーする、ジョブを実行するユーザーを変更する、ジョブを実行できる時間範囲を指定するアクセス許可を持ちます。 バッチ管理セキュリティ特権は、バッチ管理者セキュリティ ロールの一部です。これにより、ユーザーはアド ホック バッチ ジョブを作成して、他のユーザーに権限を付与できます。
+
+詳細については、「[バッチ管理者ロール](../../dev-itpro/sysadmin/runby.md)」を参照してください。
+
+## <a name="copy-batch-job"></a>バッチ ジョブのコピー
+
+ 別の法人の同じバッチ ジョブのコピーを作成し、コピー バッチ ジョブ機能を使用して、定期的なアイテムを含む既存のバッチ ジョブとバッチ タスクをコピーできます。
+
+説明、会社、スケジュールの開始日および時間、繰り返し、およびアカウントごとの実行を同時に設定することができます。 バッチ ジョブをコピーするときに、元のジョブから警告と依存関係もコピーされます。
+
+詳細については、[バッチ ジョブのコピー](../../dev-itpro/sysadmin/copy-batch-job.md)を参照してください。
 

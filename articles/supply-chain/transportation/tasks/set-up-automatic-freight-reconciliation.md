@@ -3,7 +3,7 @@ title: "自動運賃調整の設定"
 description: "この手順では、自動運賃調整のデータ設定方法を示します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 10/16/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 97f0c4d8fe06ab2fc252b9543cb688306214c79f
+ms.sourcegitcommit: d990efd7c929b15d57d64e850bc3308349abb978
+ms.openlocfilehash: b7772ad779495b36941a3dc86cc456d80a964467
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/17/2018
 
 ---
 # <a name="set-up-automatic-freight-reconciliation"></a>自動運賃調整の設定
@@ -36,9 +36,9 @@ ms.lasthandoff: 09/29/2017
     * 運賃請求書タイプは、運賃請求書と配送業者の請求書をどのようにして照合するべきかを定義します。  
 2. [新規] をクリックします。
 3. [運賃請求書タイプ] フィールドで値を入力します。
-4. [エンジン アセンブリ] フィールドで、「Microsoft.Dynamics.Ax.Tms.Bll.GenericNormalizer」と入力します。
+4. エンジン アセンブリ フィールドで、「Microsoft.Dynamics.Ax.Tms.dll」と入力します。
     * これは標準の輸送管理照合エンジン コード ライブラリです。  
-5. [エンジン クラス] フィールドで、「Microsoft.Dynamics.Ax.Tms.dll」と入力します。
+5. エンジン クラス フィールドで、「Microsoft.Dynamics.Ax.Tms.Bll.GenericNormalizer」と入力します。
     * これは標準の輸送管理照合エンジン クラスです。  
 6. [新規] をクリックします。
 7. [説明] フィールドで、運賃請求書と配送業者の請求書で照合する必要のある値を選択します。  
