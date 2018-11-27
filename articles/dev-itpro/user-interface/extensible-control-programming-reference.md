@@ -18,10 +18,10 @@ ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 97a92e9fbb281abde39bfb4188e516f7d638a80f
-ms.openlocfilehash: d0b830df5818026f53fa23a38f82a96fdc04c25c
+ms.sourcegitcommit: 2ca390e6835b3a9769db9c95a9aa078c1c239578
+ms.openlocfilehash: 424bbcdf3e26ea3409b03894f745c5cecc4c1c70
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/20/2018
+ms.lasthandoff: 11/27/2018
 
 ---
 
@@ -65,7 +65,7 @@ ms.lasthandoff: 11/20/2018
 
 <span data-ttu-id="7a512-142">次の例は、"MyControl" という名前のコントロールの標準的なクラスと属性の宣言を示しています。</span><span class="sxs-lookup"><span data-stu-id="7a512-142">The following example shows a typical class and attribute declaration for a control named "MyControl".</span></span>
 
-    [FormControlAttribute('MyControl', '/resources/html/MyControl', classstr(MyControlBuild))]
+    [FormControlAttribute('MyControl', '/resources/html/MyControl', classStr(MyControlBuild))]
     class MyControl extends FormTemplateControl
 
 ## <a name="runtime-formcommandattribute"></a><span data-ttu-id="7a512-143">ランタイム: FormCommandAttribute</span><span class="sxs-lookup"><span data-stu-id="7a512-143">Runtime: FormCommandAttribute</span></span>
@@ -106,13 +106,13 @@ ms.lasthandoff: 11/20/2018
 
 ```
 [FormPropertyAttribute(FormPropertyKind::Value, "Text", true)
-private void parmText(str value = textProperty.parmValue())
+private str parmText(str _value = textProperty.parmValue())
 {
-        if(!prmisDefault(value))
-        {
-                textProperty.setValueOrBinding(value);
-        }
-        return textProperty.parmValue();
+    if(!prmIsDefault(_value))
+    {
+        textProperty.setValueOrBinding(_value);
+    }
+    return textProperty.parmValue();
 }
 ```
 
@@ -129,40 +129,43 @@ private void parmText(str value = textProperty.parmValue())
 <span data-ttu-id="7a512-215">次の例は、典型的なコントロールの X++ ランタイム クラスで使用されている **FormProperty** を示しています。</span><span class="sxs-lookup"><span data-stu-id="7a512-215">The following example shows a **FormProperty** being used in a typical controls’ X++ runtime class.</span></span>
 
 ```
-[FormControlAttribute("MyControl", "/resources/html/MyControl", classstr(BuildMyControl))]
+[FormControlAttribute("MyControl", "/resources/html/MyControl", classStr(BuildMyControl))]
 class MyControl extends FormTemplateControl
 {             
-        FormProperty textProperty;          
+    FormProperty textProperty;          
 
-        public void new(FormBuildControl _build, FormRun _formRun)
-        {
-                super(_build, _formRun);
-                this.setTemplateId("MyControl");
-                this.setResourceBundleName("/resources/html/MyControl");
-                textProperty = this.addProperty(
-                methodStr(MyControl, parmText), Types::String);
-        }
+    public void new(FormBuildControl _build, FormRun _formRun)
+    {
+        super(_build, _formRun);
+        
+        this.setTemplateId("MyControl");
+        this.setResourceBundleName("/resources/html/MyControl");
+        textProperty = this.addProperty(
+        methodStr(MyControl, parmText), Types::String);
+    }
 
-        public void applyBuild()
-        {
-                BuildMyControl build;
-                super();
-                build = this.build();
-                if(build)
-                {
-                        this.parmText(build.Text());
-                }
-        }
+    public void applyBuild()
+    {
+        BuildMyControl build;
+        
+        super();
 
-        [FormPropertyAttribute(FormPropertyKind::Value, "Text", true)
-        private void parmText(str value = textProperty.parmValue())
+        build = this.build();
+        if(build)
         {
-                if(!prmisDefault(value))
-                {
-                        textProperty.setValueOrBinding(value);
-                }
-                return textProperty.parmValue();
+            this.parmText(build.Text());
         }
+    }
+
+    [FormPropertyAttribute(FormPropertyKind::Value, "Text", true)
+    private str parmText(str _value = textProperty.parmValue())
+    {
+        if(!prmIsDefault(_value))
+        {
+            textProperty.setValueOrBinding(_value);
+        }
+        return textProperty.parmValue();
+    }
 }
 ```
 
@@ -175,40 +178,43 @@ class MyControl extends FormTemplateControl
 ## <a name="runtime-formbindingutilinitbinding-method"></a><span data-ttu-id="7a512-226">ランタイム: FormBindingUtil::initbinding メソッド</span><span class="sxs-lookup"><span data-stu-id="7a512-226">Runtime: FormBindingUtil::initbinding method</span></span>
 <span data-ttu-id="7a512-227">**FormBindingUtil** は、コントロール フレームワークで提供される API です。</span><span class="sxs-lookup"><span data-stu-id="7a512-227">The **FormBindingUtil** is an API provided by the control framework.</span></span> <span data-ttu-id="7a512-228">データ ソースで FormProperties をデータ フィールドおよびデータ メソッドにバインドするために使用されます。</span><span class="sxs-lookup"><span data-stu-id="7a512-228">It is used to bind FormProperties to data fields and data methods on a data source.</span></span> <span data-ttu-id="7a512-229">次の例では、DataSource1 という名前のデータ ソース上の "Value" という名前のデータ フィールドを、ランタイムクラスの textProperty FormProperty にバインドします。</span><span class="sxs-lookup"><span data-stu-id="7a512-229">The following example binds the data field with name "Value" on the data source with name "DataSource1" to the textProperty FormProperty of the runtime class.</span></span>
 
-    [FormControlAttribute("MyControl", "/resources/html/MyControl", classstr(BuildMyControl))]
+    [FormControlAttribute("MyControl", "/resources/html/MyControl", classStr(BuildMyControl))]
     class MyControl extends FormTemplateControl
     {
-            FormProperty textProperty;
-            public void new(FormBuildControl _build, FormRun _formRun)
-            {
-                    super(_build, _formRun);
-                    this.setTemplateId("MyControl");
-                    this.setResourceBundleName("/resources/html/MyControl");
-                    textProperty = this.addProperty(
-                    methodStr(MyControl, parmText), Types::String);
-            }
+        FormProperty textProperty;
 
-            public void applyBuild()
-            {
-                    BuildMyControl build;
-                    super();
-                    build = this.build();
-                    if(build)
-                    {
-                            this.parmText(FormBindingUtil::initBinding(
-                            "DataSource1", "Value", this.formRun()));
-                    }
-            }
+        public void new(FormBuildControl _build, FormRun _formRun)
+        {
+            super(_build, _formRun);
+            this.setTemplateId("MyControl");
+            this.setResourceBundleName("/resources/html/MyControl");
+            textProperty = this.addProperty(
+            methodStr(MyControl, parmText), Types::String);
+        }
 
-            [FormPropertyAttribute(FormPropertyKind::Value, "Text", true)
-            private void parmText(str value = textProperty.parmValue())
+        public void applyBuild()
+        {
+            BuildMyControl build;
+            
+            super();
+           
+            build = this.build();
+            if(build)
             {
-                    if(!prmisDefault(value))
-                    {
-                            textProperty.setValueOrBinding(value);
-                    }
-                    return textProperty.parmValue();
+                this.parmText(FormBindingUtil::initBinding(
+                "DataSource1", "Value", this.formRun()));
             }
+        }
+
+        [FormPropertyAttribute(FormPropertyKind::Value, "Text", true)
+        private str parmText(str _value = textProperty.parmValue())
+        {
+            if(!prmIsDefault(_value))
+            {
+                textProperty.setValueOrBinding(_value);
+            }
+            return textProperty.parmValue();
+        }
     }
 
 ## <a name="design-time-the-x-build-class"></a><span data-ttu-id="7a512-230">デザイン時間: X++ ビルド クラス</span><span class="sxs-lookup"><span data-stu-id="7a512-230">Design time: The X++ build class</span></span>
@@ -229,17 +235,17 @@ class MyControl extends FormTemplateControl
     [FormDesignControlAttribute("MyControl")]
     class MyControlBuild extends FormBuildControl
     {
-            str text; 
+        str text; 
 
-            [FormDesignPropertyAttribute("Text", "Data")]
-            public str Text(str value = text)
+        [FormDesignPropertyAttribute("Text", "Data")]
+        public str Text(str _value = text)
+        {
+            if(!prmIsDefault(_value))
             {
-                    if(!prmisDefault(value))
-                    {
-                            text = value;
-                    }
-                    return text;
+                text = _value;
             }
+            return text;
+        }
     }
 
 ## <a name="design-time-formdesignproperty-attribute"></a><span data-ttu-id="7a512-239">デザイン時間: FormDesignProperty\*\* \*\*属性</span><span class="sxs-lookup"><span data-stu-id="7a512-239">Design time: FormDesignProperty\*\* \*\*Attribute</span></span>
@@ -271,56 +277,58 @@ class MyControl extends FormTemplateControl
     [FormDesignControlAttribute("MyControl")]
     class MyControlBuild extends FormBuildControl
     {
-            str dataSource; 
-            str dataField;
-            str dataMethod;
+        str dataSource; 
+        str dataField;
+        str dataMethod;
 
-            [FormDesignPropertyAttribute("Data source", "Data"),
-            FormDesignPropertyDataSourceAttribute]
-            public str DataSource(str value = dataSource)
+        [FormDesignPropertyAttribute("Data source", "Data"),
+         FormDesignPropertyDataSourceAttribute]
+        public str DataSource(str _value = dataSource)
+        {
+            if(!prmIsDefault(_value))
             {
-                    if(!prmisDefault(value))
-                    {
-                            dataSource = value;
-                    }
-                    return dataSource;
+                dataSource = _value;
             }
+            return dataSource;
+        }
 
-            [FormDesignPropertyAttribute("Data Field", "Data"),
-            FormDesignPropertyDataFieldAttribute(methodStr(MyControlBuild, DataSource))]
-            public str DataField(str value = dataField)
+        [FormDesignPropertyAttribute("Data Field", "Data"),
+         FormDesignPropertyDataFieldAttribute(methodStr(MyControlBuild, DataSource))]
+        public str DataField(str _value = dataField)
+        {
+            if(!prmIsDefault(dataField))
             {
-                    if(!prmisDefault(dataField))
-                    {
-                            dataField = value;
-                    }
-                    return dataField;
+                dataField = _value;
             }
+            return dataField;
+        }
 
-            [FormDesignPropertyAttribute("Data Method", "Data"),
-            FormDesignPropertyDataMethodAttribute(methodStr(MyControlBuild, DataSource))]
-            public str DataMethod(str value = dataMethod)
+        [FormDesignPropertyAttribute("Data Method", "Data"),
+         FormDesignPropertyDataMethodAttribute(methodStr(MyControlBuild, DataSource))]
+        public str DataMethod(str _value = dataMethod)
+        {
+            if(!prmIsDefault(dataMethod))
             {
-                    if(!prmisDefault(dataMethod))
-                    {
-                            dataMethod = value;
-                    }
-                    return dataMethod;
+                dataMethod = _value;
             }
+            return dataMethod;
+        }
     }
 
 <span data-ttu-id="7a512-266">上記のようなデザイン時クラスを持つコントロールは、以下に示すように、指定されたデータ ソースと applyBuild メソッド内のデータ フィールドにバインドできます。</span><span class="sxs-lookup"><span data-stu-id="7a512-266">A control with a design time class like the one above can then bind to the specified data source and data field inside of the applyBuild method, as show below.</span></span>
 
     public void applyBuild()
     {
-            BuildMyControl build;
-            super();
-            build = this.build();
-            if(build)
-            {
-                    this.parmText(FormBindingUtil::initBinding(
-                    build.DataSource(), build.DataField(), this.formRun(), build.DataMethod()));
-            }
+        BuildMyControl build;
+
+        super();
+
+        build = this.build();
+        if(build)
+        {
+            this.parmText(FormBindingUtil::initBinding(
+            build.DataSource(), build.DataField(), this.formRun(), build.DataMethod()));
+        }
     }
 
 <span data-ttu-id="7a512-267">データ フィールドとデータ メソッドの両方を FormBindingUtil :: initBinding に渡すと、データ フィールド バインディングはデータ メソッド バインディングをオーバーライドします。</span><span class="sxs-lookup"><span data-stu-id="7a512-267">If you supply both a data field and data method to FormBindingUtil::initBinding, the data field binding will override the data method binding.</span></span>
@@ -399,8 +407,8 @@ class MyControl extends FormTemplateControl
 <script>
 ... // boilerplate code
 self.ElementClicked = function (event) {
-/* handle the click event */
-alert('Hello');
+    /* handle the click event */
+    alert('Hello');
 };
 ...
 </script>
@@ -416,16 +424,16 @@ alert('Hello');
 <script>
 ... // boilerplate code
 self.ParentElementClicked = function (event) {
-        /* handle the click event */
-        alert('Hi');
+    /* handle the click event */
+    alert('Hi');
 };
 
 self.ElementClicked = function (event) {
-        /* prevents the event form bubbling up to parent elements*/
-        event.stopPropagation();
+    /* prevents the event form bubbling up to parent elements*/
+    event.stopPropagation();
 
-        /* handle the click event */
-        alert('Hello');
+    /* handle the click event */
+    alert('Hello');
 };
 
 ...
@@ -556,18 +564,18 @@ self.colors = ['Red','Blue','Green'];
 <script>
 ... // boilerplate code
 self.colors = [
-{
+    {
         Name: 'Red',
         Variants: ['Maroon','Burgundy','Sunrise']
-},
-{
+    },
+    {
         Name: 'Green',
         Variants: ['Sage','Forest','Lime']
-},
-{
+    },
+    {
         Name: 'Blue',
         Variants: ['Navy','Sky','Ice']
-}
+    }
 ];
 ...
 </script>
@@ -831,16 +839,14 @@ $dyn.observe(myObs, function (value) { console.log(value);});
 self.FirstName = $dyn.observable("Joanne");
 self.LastName = $dyn.observable("Gordon");
 $dyn.observe(
-function ()
-{
+    function () {
         // Joann + " " + Gordon
-            return $dyn.value(self.FirstName) + " " + $dyn.value(self.LastName);
-},
-function (value)
-{
-            // "Joanne Gordon"
-            console.log(value);
-}
+        return $dyn.value(self.FirstName) + " " + $dyn.value(self.LastName);
+    },
+    function (value) {
+        // "Joanne Gordon"
+        console.log(value);
+    }
 );
 ```
 
@@ -849,18 +855,16 @@ function (value)
 ```
 self.FirstName = $dyn.observable("Joanne");
 self.LastName = $dyn.observable("Gordon");
-self.myComp = $dyn.computed(function ()
-{
-        // Joanne + " " + Gordon
-        return $dyn.value(self.FirstName) + " " + $dyn.value(self.LastName);
+self.myComp = $dyn.computed(function () {
+    // Joanne + " " + Gordon
+    return $dyn.value(self.FirstName) + " " + $dyn.value(self.LastName);
 });
 $dyn.observe(
-self.myComp,
-function (value)
-{
+    self.myComp,
+    function (value) {
         // "Joanne Gordon"
         console.log(value)
-);
+    );
 },
 {FirstNameLabel: label1, LastNameLabel: label2}
 );
@@ -1000,7 +1004,7 @@ $dyn.computed(observer, [context], [disposableObserver])
 ```
 self.Name = "Joanne M Gordon";
 var printName = function () {
-        console.log(this.Name);
+    console.log(this.Name);
 };
 $dyn.callFunction(printName, self);
 ```
@@ -1009,11 +1013,11 @@ $dyn.callFunction(printName, self);
 
 ```
 var getWholeName = function (first, middle, last) {
-        var wholeName = first + " " + middle + " " + last;
-        return wholeName;
+    var wholeName = first + " " + middle + " " + last;
+    return wholeName;
 };
 var printName = function (wholeName) {
-console.log("Your name is: " + wholeName);
+    console.log("Your name is: " + wholeName);
 };
 var firstName = "Joanne";
 var middleName = "M";
@@ -1072,8 +1076,8 @@ var $dyn.format("Your name is : {0} {1} {2}", first, middle, last);
 
 ```
 Globalize.addCultureInfo("en", {
-messages: {
-    "greeting": "Hello!"
+    messages: {
+        "greeting": "Hello!"
     },
 });
 console.log($dyn.label("greeting"));
@@ -1098,9 +1102,4 @@ console.log($dyn.label("greeting"));
 
 ### <a name="control-instantiation"></a><span data-ttu-id="7a512-596">インスタンス化の制御</span><span class="sxs-lookup"><span data-stu-id="7a512-596">Control Instantiation</span></span>
 <span data-ttu-id="7a512-597">[![ExtensibilityProcess](./media/extensibilityprocess-951x1024.png)](./media/extensibilityprocess.png)</span><span class="sxs-lookup"><span data-stu-id="7a512-597">[![ExtensibilityProcess](./media/extensibilityprocess-951x1024.png)](./media/extensibilityprocess.png)</span></span>
-
-
-
-
-
 
