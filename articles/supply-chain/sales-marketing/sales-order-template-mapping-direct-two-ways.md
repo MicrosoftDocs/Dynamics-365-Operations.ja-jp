@@ -1,0 +1,201 @@
+---
+title: "販売注文の Sales、Finance and Operations 間の直接同期"
+description: "このトピックでは、Microsoft Dynamics 365 for Sales と Microsoft Dynamics 365 for Finance and Operations との間で、販売注文の直接同期を実行させるために使用されるテンプレートと基本的なタスクについて説明します。"
+author: ChristianRytt
+manager: AnnBe
+ms.date: 10/11/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+ms.search.form: 
+audience: Application User, IT Pro
+ms.reviewer: josaw
+ms.search.scope: Core, Operations
+ms.custom: 
+ms.assetid: 
+ms.search.region: global
+ms.search.industry: 
+ms.author: crytt
+ms.dyn365.ops.version: July 2017 update
+ms.search.validFrom: 2017-07-8
+ms.translationtype: HT
+ms.sourcegitcommit: a8c033caa8a4c4cf579ec166dce7a9982408d816
+ms.openlocfilehash: 985a5a908308bc2268b80e8eef7117fdd6d54af6
+ms.contentlocale: ja-jp
+ms.lasthandoff: 10/11/2018
+
+---
+
+# <a name="synchronization-of-sales-orders-directly-between-sales-and-finance-and-operations"></a>販売注文の Sales、Finance and Operations 間の直接同期
+
+[!include [banner](../includes/banner.md)]
+
+このトピックでは、Microsoft Dynamics 365 for Sales と Microsoft Dynamics 365 for Finance and Operations との間で、販売注文の直接同期を実行させるために使用されるテンプレートと基本的なタスクについて説明します。
+
+## <a name="data-flow-in-prospect-to-cash"></a>見込み客の現金化へのデータフロー
+
+見込み客の現金化ソリューションは、Finance and Operations と Sales のインスタンス間でデータを同期するため、データの統合機能を使用します。 データ統合機能で利用可能な見込み顧客を現金化するテンプレートにより、Finance and Operations と Sales 間での勘定、連絡先、製品および販売見積、販売注文、および売上請求書のデータの流れが可能になります。 次の図は、Finance and Operations と Sales の間でデータを同期させる方法を示しています。
+
+[![見込み客の現金化へのデータフロー](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
+
+## <a name="templates-and-tasks"></a>テンプレートおよびタスク
+
+利用可能なテンプレートにアクセスするには、[PowerApps 管理者センター](https://preview.admin.powerapps.com/dataintegration) を開きます。 **プロジェクト**を選択した後、右上隅にある **新しいプロジェクト** を選択してパブリック テンプレートを選択します。
+
+Finance and Operations と Sales の間での販売注文の直接同期の実行には、以下のテンプレートと基本的なタスクが使用されます。
+
+- **データ統合でのテンプレートの名前:** 
+
+    - 販売注文 (Sales から Finance and Operations) - ダイレクト
+    - 販売注文 (Finance and Operations から Sales) - ダイレクト
+
+- **データ統合プロジェクトのタスク名:**
+
+    - OrderHeader
+    - OrderLine
+
+販売請求書ヘッダーと明細行を同期させるには、次の同期タスクが必要です。
+
+- 製品 (Finance and Operations から Sales) - 直接
+- 勘定 (Sales から Finance and Operations) - 直接(使用されている場合)
+- 顧客への連絡先 (Sales から Finance and Operations) - ダイレクト (使用されている場合)
+
+## <a name="entity-set"></a>エンティティ セット
+
+| Finance and Operations  | 売上             |
+|-------------------------|-------------------|
+| CDS 販売注文ヘッダー | SalesOrders       |
+| CDS 販売注文明細行   | SalesOrderDetails |
+
+## <a name="entity-flow"></a>エンティティのフロー
+
+**販売注文 (Sales からFinance and Operations) - 直接** テンプレートに基づいたプロジェクトに対して **プロジェクトの実行** が発生する場合、Sales で作成された販売注文が Finance and Operations に同期されます。 全ての**受注製品**が外部で管理される製品で構成されている場合にのみ、Sales からの販売注文を同期できます。 したがって、リスト外製品は存在しません。 注文を有効にすると、販売注文はユーザー インターフェイス (UI) で読み取り専用になります。 この時点で、更新は Finance and Operations から行われます。 販売注文が **確認済** 状態となった後に、**販売注文 (Finance and Operations から Sales) － 直接** テンプレートに基づいたプロジェクトは Finance and Operations から Sales に更新またはフルフィルメントの状態を同期するために使用できます。
+
+Sales で注文を作成する必要はありません。 代わりに、Finance and Operations で新しい販売注文を作成することができます。 販売注文が**確認済**のステータスになった後、前の段落で説明するように Sales に同期されます。
+
+Finance and Operations では、テンプレートのフィルタは関連する販売注文のみが同期に含まれていることを保証します。
+
+- 販売注文では、受注顧客と請求顧客の両方が Sales から生成されて同期に含める必要があります。 Finance and Operations で、**OrderingCustomerIsExternallyMaintained** および **InvoiceCustomerIsExternallyMaintained** フィールドは、データ エンティティからの販売注文をフィルタするために使用されます。
+- Finance and Operations で [販売注文] を確定する必要があります。 **出荷済** や **請求済** など、確認済の販売注文または処理ステータスの高い販売注文のみが Sales に同期されます。
+- 販売注文を作成または変更した後、Finance and Operations で **販売合計の計算** のバッチ ジョブを実行する必要があります。 販売合計が計算された販売注文のみが Sales に同期されます。
+
+## <a name="freight-tax"></a>運賃税
+
+Sales は、明細行レベルで税が格納されるため、ヘッダー レベルでの税をサポートしていません。 運賃税など Finance and Operations からヘッダー レベルでの税をサポートするためには、システムは **運賃税** と呼ぶリスト外製品として税を Sales に同期して、Finance and Operations からの税額を含めます。 これにより、Sales での標準価の計算は、Finance and Operations からヘッダー レベルで税がある場合でも合計金額として使用できます。
+
+## <a name="discount-calculation-and-rounding"></a>割引計算と丸め
+
+Sales での割引計算モデルは、Finance and Operations の割引計算モデルとは異なります。 Finance and Operations では、販売注文明細行の最終的な割引金額は、割引額と割引率の組み合わせの結果です。 この最終割引額をライン上の数量で割ると、丸め処理が発生する可能性があります。 ただし、この丸め処理単位の割引額が Sales に同期されている場合は、この丸め処理は考慮されません。 Finance and Operations の販売ラインからの全額割引が Sales に正しく同期されるようにするには、全額を明細行の数量で除算せずに同期させる必要があります。 したがって、Sales で **割引の計算方法** を **明細行品目** として定義する必要があります。
+
+販売注文行が Sales から Finance and Operations に同期される場合、明細行全体の割引額が使用されます。 Finance and Operations には、明細行の完全な割引金額を格納できるフィールドがないため、金額は数量で除算されて、**行割引** フィールドに格納されます。 この区分中に発生する丸め処理は販売注文明細行の**売上諸掛**フィールドに格納されます。
+
+### <a name="example"></a>例
+
+**Sales から Finance and Operations への同期**
+
+- **Sales:** 数量 = 3、行あたりの割引 = 10.00 USD
+- **Finance and Operations:** 数量 = 3、行割引金額 = 3.33 USD、販売手数料 = -0.01 USD 
+
+**Finance and Operations から Sales への同期**
+
+- **Finance and Operations:** 数量 = 3、行割引金額 = 3.33 USD、販売手数料 = -0.01 USD
+- **Sales:** 数量 = 3、行あたりの割引 = (3 × 3.33 USD) + 0.01 USD = 10.00 USD
+
+## <a name="prospect-to-cash-solution-for-sales"></a>売上の見込顧客を現金化するソリューション
+
+新しいフィールドが **注文** エンティティに追加され、ページに表示されます。
+
+- **外部で管理** - 注文が Finance and Operations から来る場合、このオプションを **はい** に設定します。
+- **処理状態** - このフィールドには、Finance and Operations の注文の処理状態が表示されます。 使用可能な値は次のとおりです。
+
+    - **ドラフト** – Sales で受注が作成される場合の初期ステータス。 Sales では、この処理ステータスの注文のみ編集することができます。
+    - **有効** – **有効**ボタンを使用すると、受注後のステータスが Sales で有効になります。
+    - **確認済**
+    - **梱包明細**
+    - **請求済**
+    - **ピッキング済**
+    - **一部ピック済**
+    - **一部ピック済**
+    - **出荷済**
+    - **一部出荷済**
+    - **一部請求済**
+    - **キャンセル済**
+
+**外部で管理される製品のみ** 設定が注文時に使用され、販売注文が外部から管理された製品で完全に構成されているかどうかが一貫して追跡されます。 受注が外部から管理された製品で完全に構成されている場合、製品は Finance and Operations で管理されます。 この設定は、Finance and Operations に不明な製品を含む販売注文明細行を有効化したり、同期化しようとするのを防ぐのに役立ちます。
+
+**販売注文** ページで、**請求書の作成**、**注文のキャンセル**、**再計算**、**製品の取得** および **ルックアップ アドレス** ボタンは外部で管理される注文用に非表示となります。それは Finance and Operations で請求書が作成され Sales に同期されるためです。 これらの注文は、販売注文情報が有効化後に Finance and Operations から同期されるため編集することができません。
+
+販売発注状況は**有効** のままにすると、Finance and Operations からの変更が Sales の販売注文に流れることを保証します。 この動作を制御するためには、データ統合プロジェクトで、既定の **Statecode \[状態\]** を**有効**に設定します。
+
+## <a name="preconditions-and-mapping-setup"></a>前提条件とマッピングの設定
+
+販売注文を同期する前に、システムで以下の設定を更新することが重要です。
+
+### <a name="setup-in-sales"></a>Sales での設定
+
+- Sales で設定された接続のユーザーが割り当てられているチームのアクセス許可として設定されていることを確認します。 デモデータを使用している場合、通常、ユーザーは管理者権限を持っていますが、チームには管理者権限がありません。 データ統合からプロジェクトを実行するときにチームに管理者権限がない場合、主要なチームがないというエラー メッセージが表示されます。
+
+    **設定** &gt; **セキュリティ** &gt; **チーム**の順に移動し、関連チームを選択してから、**ロール管理** をクリックして **システム管理者** などの必要なアクセス許可を持つロールを選択します。
+
+- Sales および Finance and Operations の両方で割引の計算が正しいことを確認するには、**割引の計算方法** が **行項目** に設定される必要があります。
+- **設定** &gt; **管理** &gt; **システム設定** &gt; **Sales** へと順に進み、次の設定が使用されていることを確認してください。
+
+    - **システム プライジング計算システムの使用** オプションが、**はい** に設定されている。
+    - **割引の計算方法** フィールドが、**明細行品目** に設定されている。
+
+### <a name="setup-in-finance-and-operations"></a>Finance and Operations での設定
+
+- **販売とマーケティング**&gt;**定期処理のタスク**&gt;**販売合計を計算する**の順に移動してから、バッチ ジョブとして実行されるようにジョブを設定します。 **販売注文合計を計算する**オプションを**はい**に設定します。 販売合計が計算された販売注文のみが Sales に同期されるため、このステップは重要です。 バッチジョブの頻度は、販売注文同期の頻度と一致させる必要があります。
+
+### <a name="setup-in-the-sales-orders-sales-to-fin-and-ops---direct-data-integration-project"></a>販売注文のセット アップ (Sales から Finance and Operations) - ダイレクト データ統合プロジェクト
+
+- 必要なマッピングが **Shipto\_country** から **DeliveryAddressCountryRegionISOCode** に存在することを確認します。 値マップで既定値を空白にして、国内の注文の国を入力を回避することができます。 左側を「空白」のままにして、右側を希望する国または地域に設定します。
+
+    テンプレート値は、いくつかの国または地域がマップされている値マップで、「空白」= アメリカ合衆国です。
+
+### <a name="setup-in-the-sales-orders-fin-and-ops-to-sales---direct-data-integration-project"></a>販売注文の設定 (Finance and Operations から Sales) - ダイレクト データ統合プロジェクト
+
+#### <a name="salesheader-task"></a>SalesHeader タスク
+
+- 価格リストは、Sales で注文を作成するために必要です。 Sales で通貨ごとに使用される価格リストへの **pricelevelid.name \[価格リスト名\]** の値マップを更新します。 1つの通貨に対する既定の価格リストを使用することができます。 または、複数の通貨で価格リストがある場合、値マップを使用することもできます。
+
+    **pricelevelid.name\[価格リスト名\]** の既定のテンプレートの値は、**CRM サービス USA (サンプル)** です。
+
+#### <a name="salesline-task"></a>SalesLine タスク
+
+- Finance and Operation で **SalesUnitSymbol** 用の必要な値マップを確認します。
+- Sales に必要な単位が定義されていることを確認します。
+
+    値マップを持つテンプレート値は、**SalesUnitSymbol** から **oumid.name** に対して定義されています。
+
+## <a name="template-mapping-in-data-integration"></a>データ統合のテンプレートのマッピング
+
+> [!NOTE]
+> **支払条件**、**運賃条件**、**配送条件**、**送付方法**、および **配送モード** フィールドは、既定のマッピングの一部ではありません。 これらのフィールドをマップするには、エンティティ間で同期される組織内のデータに固有の値マッピングを設定する必要があります。
+
+次の図は、データ統合のテンプレート マッピングの例を示しています。
+
+> [!NOTE]
+> マッピングでは、Sales から Finance and Operations に、または Finance and Operations から Sales に同期するフィールド情報を表示します。
+
+### <a name="sales-orders-fin-and-ops-to-sales---direct-orderheader"></a>販売注文 (Finance and Operations から Sales) - 直接: OrderHeader
+
+[![データ統合のテンプレートのマッピング](./media/sales-order-direct-template-mapping-data-integrator-1.png)](./media/sales-order-direct-template-mapping-data-integrator-1.png)
+
+### <a name="sales-orders-fin-and-ops-to-sales---direct-orderline"></a>販売注文 (Finance and Operations から Sales) - 直接: OrderLine
+
+[![データ統合のテンプレートのマッピング](./media/sales-order-direct-template-mapping-data-integrator-2.png)](./media/sales-order-direct-template-mapping-data-integrator-2.png)
+
+### <a name="sales-orders-sales-to-fin-and-ops---direct-orderheader"></a>販売注文 (Sales から Finance and Operations) - 直接: OrderHeader
+
+[![データ統合のテンプレートのマッピング](./media/sales-order-direct-template-mapping-data-integrator-3.png)](./media/sales-order-direct-template-mapping-data-integrator-3.png)
+
+### <a name="sales-orders-sales-to-fin-and-ops---direct-orderline"></a>販売注文 (Sales から Finance and Operations) - 直接: OrderLine
+
+[![データ統合のテンプレートのマッピング](./media/sales-order-direct-template-mapping-data-integrator-4.png)](./media/sales-order-direct-template-mapping-data-integrator-4.png)
+
+## <a name="related-topics"></a>関連トピック
+
+[見込顧客を現金化](prospect-to-cash.md)
+
