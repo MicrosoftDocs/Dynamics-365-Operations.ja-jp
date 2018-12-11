@@ -7,6 +7,10 @@
         - name: 新機能および変更された機能
           href: whats-new.md
           items:
+            - name: Dynamics 365 for Talent Core HR の新機能および変更された機能 (2018 年 11 月 27 日)
+              href: whats-new-talent-november-27.md
+            - name: Dynamics 365 for Talent Core HR の新機能および変更された機能 (2018 年 11 月 15 日)
+              href: whats-new-talent-november-15.md
             - name: Dynamics 365 for Talent Core HR の新機能および変更された機能 (2018 年 10 月 31 日)
               href: whats-new-talent-october-31.md
             - name: Dynamics 365 for Talent Core HR の新機能および変更された機能 (2018 年 10 月 19 日)
@@ -95,8 +99,6 @@
           href: creating-offers.md
         - name: 電子メール テンプレートの作成および管理
           href: email-templates.md
-        - name: レポートと分析
-          href: Reporting-Analytics-Attract.md
         - name: Attract でのセキュリティおよびロール管理
           href: security-attract.md
         - name: Attract での管理者設定
@@ -266,3 +268,27 @@
           href: ../fin-and-ops/hr/tasks/create-goal.md?toc=/dynamics365/unified-operations/talent/toc.json
         - name: 業績の確認の作成
           href: ../fin-and-ops/hr/tasks/create-performance-review.md?toc=/dynamics365/unified-operations/talent/toc.json
+    - name: Talent のトラブルシューティング
+      items:
+        - name: 分析レポートが更新されない
+          href: analytic-reports-not-updated.md
+        - name: PowerApps 管理センターで環境を作成できない
+          href: create-envi-powerapps-admin-ctr.md
+        - name: Talent クライアントの接続が切断される
+          href: client-disconnects.md
+        - name: データベース バックアップの処理方法
+          href: database-backups.md
+        - name: 職位階層でテキストの一部が切り捨てられないようにし、Visio にエクスポートする
+          href: avoid-text-truncation-position-hierarchy-visio.md
+        - name: 報酬プロセスを実行する
+          href: run-compensation-process.md
+        - name: LCS にタスク ガイドを保存して再生する
+          href: save-play-task-guides-LCS.md
+        - name: セキュリティ ロールで個人住所にアクセスする
+          href: security-roles-addresses.md
+        - name: Microsoft Dynamics 365 アプリ (CDS1.0) で Talent が表示されない
+          href: talent-not-in-home-CDS.md
+        - name: ユーザーが Core HR にアクセスできるが、Onboard または Attract アプリにアクセスできない
+          href: user-access-core-hr.md
+        - name: Talent のレポート オプション
+          href: talent-reporting-options.md
