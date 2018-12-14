@@ -3,7 +3,7 @@ title: "マスター プランのホーム ページ"
 description: "マスター プランにより、会社が原材料および会社の目標を満たす能力に対する将来の必要性を特定し調整することができます。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 11/20/2017
+ms.date: 12/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 18ed011fa1c1aa35b4a401d51bffc6af19395577
-ms.openlocfilehash: 030579ac73d6333ac4ed55433b9679a58247c088
+ms.sourcegitcommit: 99c10649d7683265fcac86c1825c5a965bbdb415
+ms.openlocfilehash: 1a294327149cf46202fed8b63377ee77f13c11d5
 ms.contentlocale: ja-jp
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -58,13 +58,13 @@ ms.lasthandoff: 02/13/2018
 
 ## <a name="quick-links"></a>クイック リンク
 
-|      |   |
-|------|---|
-|        [マスター プラン](master-plans.md)       |     [制約付き計画の生成](./tasks/constrained-plan.md)  |
-| [連産品の材料計画の作成](./tasks/create-material-plan-co-products.md)   |  [マスタ プランとマルチサイト機能](master-plan-multisite-functionality.md)  |
-| [会社間計画の作成](./tasks/create-intercompany-plan.md) | [需要予測の概要](introduction-demand-forecasting.md)  | 
-|[下方修正キー](reduction-keys.md)| [マスター プラン エッセンシャル](https://mbspartner.microsoft.com/AX/CourseOverview/1275) (eLearning) (CustomerSource アカウントが必要です)     |
-|  [プロセス製造のマスター プラン](https://mbspartner.microsoft.com/D365E/CourseOverview/1514) (eLearning) (CustomerSource アカウントが必要です) | [会社間マスター プラン](https://mbspartner.microsoft.com/AX/CourseOverview/1276) (eLearning) (CustomerSource アカウントが必要です)|
+- [マスター プラン](master-plans.md)  
+- [制約付き計画の生成](./tasks/constrained-plan.md)
+- [連産品の材料計画の作成](./tasks/create-material-plan-co-products.md)
+- [マスタ プランとマルチサイト機能](master-plan-multisite-functionality.md)
+- [会社間計画の作成](./tasks/create-intercompany-plan.md)
+- [需要予測の概要](introduction-demand-forecasting.md)
+- [下方修正キー](reduction-keys.md)
                                   
 ## <a name="additional-resources"></a>その他のリソース
 
@@ -75,7 +75,7 @@ ms.lasthandoff: 02/13/2018
 [Dynamics AX Manufacturing R&D Team Blog (Dynamics AX 製造研究開発チーム ブログ)](https://blogs.msdn.microsoft.com/axmfg) および [Supply Chain Management in Dynamics AX R&D Team Blog (Dynamics AX のサプライ チェーン マネジメント研究開発チーム ブログ)](https://blogs.msdn.microsoft.com/dynamicsaxscm) で、マスター プランやその他のソリューションに関する意見、ニュース、その他の情報を見つけることができます。
 
 ### <a name="task-guides"></a>タスク ガイド
-Finance and Operations には、タスク ガイドとして使用できる追加のヘルプが用意されています。 タスク ガイドにアクセスするには、ページの [**ヘルプ**] ボタンをクリックします。
+Finance and Operations には、タスク ガイドとして使用できる追加のヘルプが用意されています。 タスク ガイドにアクセスするには、ページの **ヘルプ** ボタンをクリックします。
 
 ### <a name="webinars"></a>ウェビナー
 [需要予測用 Azure Machine Learning の使用](https://www.youtube.com/watch?v=4nQsccdFFDA&feature=youtu.be)

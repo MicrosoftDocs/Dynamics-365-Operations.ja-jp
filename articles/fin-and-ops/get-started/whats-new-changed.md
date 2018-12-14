@@ -3,7 +3,7 @@ title: "新規または変更"
 description: "このページでは、最新バージョンの Microsoft Dynamics 365 for Finance and Operations の新しい機能について学ぶ役立つトピックを示します。"
 author: josaw1
 manager: AnnBe
-ms.date: 11/03/2018
+ms.date: 12/04/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: HT
-ms.sourcegitcommit: 9b72fe490601d474c54c8bee556719608f4379d3
-ms.openlocfilehash: cd5403a5ab5a4be06b5565528ced30fa0be3cee0
+ms.sourcegitcommit: 99c10649d7683265fcac86c1825c5a965bbdb415
+ms.openlocfilehash: e82fffa6a67808de66d5f17d2228549c1b09b75d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -61,6 +61,12 @@ ms.lasthandoff: 11/03/2018
 <tbody>
 <tr class="even">
 </tr>
+<tr class="even">
+<td>Microsoft Dynamics 365 for Finance and Operations</td>
+<td>8.1.3</td>
+<td>8.1.227  </td>
+<td>2018 年 12 月</td>
+  <td><a href="whats-new-changed-8-1-3.md">Dynamics 365 for Finance and Operations バージョン 8.1.3 (2018 年 12 月) の新機能および変更された機能</a></td>
 <tr class="even">
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>8.1.2</td>
@@ -144,11 +150,16 @@ ms.lasthandoff: 11/03/2018
 </tr>
 </thead>
 <tbody>
+<td>Microsoft Dynamics 365 for Finance and Operations</td>
+<td>プラットフォーム update 23</td>
+<td>7.0.5126 </td>
+<td>2018 年 12 月</td>
+<td><a href="whats-new-platform-update-23.md">Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 23 (2018 年 12 月) の新機能および変更された機能</a></td><tbody>
 <tr class="odd">
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>プラットフォーム update 22</td>
 <td>7.0.5095</td>
-<td>2018 年 10 月</td>
+<td>2018 年 11 月</td>
 <td><a href="whats-new-platform-update-22.md">Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 22 (2018 年 11 月) の新機能および変更された機能</a></td><tbody><tr class="odd">
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>プラットフォーム update 21</td>
