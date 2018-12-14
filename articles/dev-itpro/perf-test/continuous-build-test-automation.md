@@ -18,10 +18,10 @@ ms.author: shailesn
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 1aae5797e37b846a38f957b02870e213da528a2d
-ms.openlocfilehash: 3a5ea0462bf53e7b868dd8f3c1b7c2e19b073f93
+ms.sourcegitcommit: cda5df9bec24bf8fc63ab3a5b2f3de9f84a03923
+ms.openlocfilehash: 860cf388ce7bc1f3848bd40e6cb146ff71c7b051
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/20/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -49,11 +49,11 @@ Lifecycle Services (LCS) で Azure DevOps サブスクリプションを設定�
 -   **無料の Azure DevOps アカウントには、ビルド エージェントが 1 つだけ用意されています**。 社内の Visual Studio Enterprise サブスクライバーにはそれぞれ、追加のパイプラインが付与されます。 
 
 
-現在許可されているよりも多くのビルド パイプラインを使用するには、Azure DevOps アカウントを Azure 請求で設定します。[アカウントの請求を設定する](/VSTS/billing/set-up-billing-for-your-account-vs) 
+現在許可されているよりも多くのビルド パイプラインを使用するには、Azure DevOps アカウントを Azure 請求で設定します。[アカウントの請求を設定する](https://docs.microsoft.com/en-us/azure/devops/organizations/billing/set-up-billing-for-your-organization-vs?view=vsts) 
 
 [![VSTS1](./media/vsts1-300x155.jpg)](./media/vsts1.jpg)
 
--   Azure サブスクリプションを使用してアカウントにリンクした後、Azure 管理ポータルの指示に従い、より多くの同時パイプラインを購入します [VSTS の同時パイプライン](/VSTS/build-release/concepts/licensing/concurrent-pipelines-ts) 
+-   Azure サブスクリプションを使用してアカウントにリンクした後、Azure 管理ポータルの指示に従い、より多くの同時パイプラインを購入します [VSTS の同時パイプライン](https://docs.microsoft.com/en-us/azure/devops/pipelines/licensing/concurrent-jobs-vsts?branch=master&view=vsts) 
 
 
 [![VSTS2](./media/vsts2-300x151.jpg)](./media/vsts2.jpg) 

@@ -3,7 +3,7 @@ title: "Dynamics Service Engineering チームへのサービス要求の送信"
 description: "このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用して、Dynamics サービス エンジニアリング チームにサービス要求を直接送信する方法について説明します。"
 author: manalidongre
 manager: AnnBe
-ms.date: 10/19/2018
+ms.date: 11/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: manado
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
 ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
-ms.openlocfilehash: d69e72ea7954609d8173b5ce2f25267b0f1a4659
+ms.sourcegitcommit: 596cfa056c6f2e64f554b643bb5a61d09c7bf20c
+ms.openlocfilehash: cf8855ee265db7eb7ce086ec15342da58781b4ed
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/01/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -132,5 +132,5 @@ Microsoft は、受信したすべてのサービス要求を頻繁に確認し�
 |                                | 実稼働 | メンテナンス モード | 5 時間 | 顧客はサービス要求においていつ環境のメンテナンス モードを再度終了する必要があるかを示しているため、適用不可 |
 |                                | 実稼働 | IP ホワイトリスト ルール | 5 時間 | 2 時間 |
 |                                | 実稼働 | Power BI Embedded | 5 時間 | 2 時間 |
-|                                | 実稼働 | 特殊なフォント | 5 時間 | 2 時間 |
+
 

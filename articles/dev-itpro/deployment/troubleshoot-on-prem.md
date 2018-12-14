@@ -3,7 +3,7 @@ title: "オンプレミス配置のトラブルシューティング"
 description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations のオンプレミス配置のトラブルシューティング情報を提供します。"
 author: sarvanisathish
 manager: AnnBe
-ms.date: 09/17/2018
+ms.date: 11/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: sarvanis
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 965826f5fddc2f53f33157434929eb265979376e
-ms.openlocfilehash: 5bf8834a83a5f6488286bae05d80826f6a3ac558
+ms.sourcegitcommit: f7df0a91948a494465fbd55af99757e3890357ce
+ms.openlocfilehash: 30a7f1b88be24ddbe5633655f8b110b5499d7b4d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/17/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 # <a name="troubleshoot-on-premises-deployments"></a>オンプレミス配置のトラブルシューティング
@@ -130,7 +130,7 @@ Microsoft Dynamics Lifecycle Services (LCS) で環境のに対する現在の配
 ## <a name="remove-a-specific-application"></a>特定のアプリケーションを削除
 配置の削除またはクリーンアップに LCS を使用することをお勧めします。 ただし、必要に応じて、アプリケーションを削除する Service Fabric Explorer を使用することもできます。
 
-Service Fabric エクスプローラーで、**アプリケーション ノード** \> **アプリケーション** \> **MonitoringAgentAppType-Agent** に移動します。 **ファブリック:/エージェント監視**の横にある省略記号 **...** をクリックし、アプリケーションを削除します。 確認のためにアプリケーションの正式名称を入力します。
+Service Fabric エクスプローラーで、**アプリケーション ノード** \> **アプリケーション** \> **MonitoringAgentAppType-Agent** に移動します。 **ファブリック:/エージェント監視**の横にある省略記号 [**...**] をクリックし、アプリケーションを削除します。 確認のためにアプリケーションの正式名称を入力します。
 
 また、省略記号ボタンの選択および**非引当タイプ**の順に選択することにより、MonitoringAgentAppType-Agent を削除することができます。 アプリケーションの削除を確認するために、正式名称を入力します。
 
@@ -1060,4 +1060,29 @@ update SQLSYSTEMVARIABLES set VALUE = 12 where parm = 'SYSTIMEZONESVERSION'
 ## <a name="printing-randomly-stops"></a>印刷がランダムに停止する
 AOS サーバーにインストールされているすべてのネットワーク プリンターが、AXService.EXE プロセスが実行されている Windows サービス アカウントとして実行されていることを確認します。
 
+## <a name="ax-databasesynchronize-is-not-being-populated-with-events"></a>Ax-DatabaseSynchronize にイベントが設定されていない
+プラットフォーム更新 20 およびそれ以降では、データベース同期ログの問題があります。この問題では、同期ログが Ax DatabaseSynchronize の下でイベント ビューアーに書き込まれません。 
+
+この問題を解決するには、<SF-dir>\AOS_<x>\Fabric\work\Applications\AXSFType_App<X>\log に移動します。 たとえば、C:\ProgramData\SF\AOS_11\Fabric\work\Applications\AXSFType_App183\log です。
+    
+ここに、Code_AXSF_M_<X>.out ファイル内の DatabaseSynchronize からの出力を示します。 このコンポーネントに関する問題をトラブルシューティングします。
+
+## <a name="unable-to-access-finance-and-operations-aadsts50058-a-silent-sign-in-request-was-sent-but-no-user-is-signed-in"></a>Finance and Operations にアクセスできません: AADSTS50058: サイレント サインイン要求が送信されましたが、ユーザーがログインしていません
+このエラーは、Finance and Operations にログインするときに発生する可能性があります。 ユーザーが資格情報を入力すると、ブラウザーにアプリケーションのレイアウトが短時間表示された後、Finance and Operations の外部へのリダイレクトが試みられ、次のエラーで失敗します。
+
+> AADSTS50058: サイレント サインイン要求が送信されましたが、ユーザーがログインしていません。 
+
+ユーザーのセッションを表すために使用する Cookie が Azure AD への要求で送信されませんでした。 これは、ユーザーが Internet Explorer または Edge を使用しており、サイレント サインイン要求を送信する Web アプリが Azure AD エンドポイント (login.microsoftonline.com) とは異なる IE セキュリティ ゾーンにある場合に発生する可能性があります。
+
+これは、Skype プレゼンス API に変更があり、設置環境が既定でそれに接続するために発生します。
+
+問題を解決するには、この SQL Server クエリを実行します: update [AXDB].[dbo].[SYSCLIENTPERF] set SkypeEnabled = 0
+
+または
+
+**クライアント パフォーマンス オプション** ページで **Skype プレゼンスが有効** オプションをオフにします (**システム管理 > セットアップ > クライアント パフォーマンス オプション**)。
+
+これを行うには、Finance and Operations にログインする必要があります。 リダイレクトは、ログインしてそのアクションを実行できるように、ブラウザー内でブロックされている必要があります。 Skype プレゼンスを無効にすると、リダイレクトをもう一度ブロック解除できます。
+
+Chrome ブラウザーでは、既定でリダイレクトがブロックされます。
 

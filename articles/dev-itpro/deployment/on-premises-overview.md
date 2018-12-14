@@ -3,7 +3,7 @@ title: "オンプレミス配置オプション"
 description: "Dynamics 365 for Finance and Operations は、オンプレミスまたはローカル ビジネス データ (LBD) の展開オプションを使用して、顧客データ センターでビジネス プロセスを実行することをサポートします。"
 author: kfend
 manager: AnnBe
-ms.date: 06/13/2017
+ms.date: 11/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: arifk
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
 ms.translationtype: HT
-ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
-ms.openlocfilehash: c8723126214a5ab4e7a3c9c17a5f2b9132b86415
+ms.sourcegitcommit: f7df0a91948a494465fbd55af99757e3890357ce
+ms.openlocfilehash: 086449be8a41aa121a22931496bf658ab67d7c77
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/17/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 # <a name="on-premises-deployment-option"></a>オンプレミス配置オプション
@@ -41,7 +41,7 @@ Microsoft Dynamics 365 for Finance and Operations は、オンプレミスの配
 - Application Object Servers (AOS) – Finance and Operations アプリケーション機能をクライアント、バッチ、およびインポート/エクスポートのシナリオで実行する機能を提供します。 
 - Management Reporter (MR) – 財務レポートの機能を提供します。 
 - SQL Server Reporting Services (SSRS): ドキュメント レポート機能を提供します。 
-- 環境オーケストレータ – LCS からオンプレミス環境管理を有効にします。 注記: Retail サーバーは現時点ではオンプレミス配置でサポートされていません。 
+- 環境オーケストレータ – LCS からオンプレミス環境管理を有効にします。 
 
 図 1 は、Service Fabric スタンドアロン クラスターで配置されるノード タイプの論理的な図を示します。 
 

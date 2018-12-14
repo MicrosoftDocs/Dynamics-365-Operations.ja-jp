@@ -3,7 +3,7 @@ title: "POS ビューの拡張によるカスタム列およびアプリ バー 
 description: "このトピックでは、[顧客の追加/編集] 画面などの既存の POS ビューを拡張する方法について説明します。"
 author: mugunthanm
 manager: AnnBe
-ms.date: 10/30/2018
+ms.date: 11/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -17,10 +17,10 @@ ms.author: mumani
 ms.search.validFrom: 2017-11-22
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
-ms.openlocfilehash: 75f17f5d322b0c8127451a4898c1b581c21ff7e4
+ms.sourcegitcommit: 48e2eea2cc986edc49d5192945c3d913c3bb9756
+ms.openlocfilehash: c0fbd1dc5bc081a027f4896e055d22311861514d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/01/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -72,8 +72,7 @@ POS ビューでは、次の拡張ポイントとパターンがサポートさ�
 | ReportDetailsView               | 無                            | 無                           | 有                               |
 | SearchReceiptsView              | 無                            | 無                           | 有                               |
 | StockCountDetailsView           | 無                            | 無                          | 有                               |
-
-
+| TransferOrderDetailsView        | 無                            | 無                          | 有                               |
 
 
 > [!NOTE]

@@ -3,7 +3,7 @@ title: "POS 要求ハンドラーのオーバーライド"
 description: "このトピックでは、RetailTransactionServiceEx クラスに拡張メソッドを追加して、Commerce Data Exchange - リアルタイム サービスを拡張する方法について説明します。 リアルタイム サービスは、Retail クライアントがリアルタイムで小売機能を操作できるようします。"
 author: mugunthanm
 manager: AnnBe
-ms.date: 10/10/2018
+ms.date: 11/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -18,10 +18,10 @@ ms.author: mumani
 ms.search.validFrom: 209/07/2018
 ms.dyn365.ops.version: AX 7.3.5
 ms.translationtype: HT
-ms.sourcegitcommit: fc61ba6131ed6d93132701aa799243e78a289134
-ms.openlocfilehash: 0399841a119744956d2771afd0d1b8b395d493e6
+ms.sourcegitcommit: 48e2eea2cc986edc49d5192945c3d913c3bb9756
+ms.openlocfilehash: c7f173f7d30809d12c528fd7b68cd9175954a845
 ms.contentlocale: ja-jp
-ms.lasthandoff: 10/10/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -51,6 +51,7 @@ ms.lasthandoff: 10/10/2018
 | ShowChangeDueClientRequestHandler          | トランザクションの終了時に期日の変更ダイアログ ボックスが表示されるときに実行されます。                             |
 | GetReceiptEmailAddressClientRequestHandler | 受信者のメール アドレスを取得するときに実行されます。                                                 |
 | DepositOverrideOperationRequestHandler     | 預金をオーバーライドするときに実行されます。                                                          |
+| GetShippingChargeClientRequestHandler      | 顧客注文フロー中に開始された出荷費用ワークフローを取得するときに実行されます。                                                             |
 
 **支払拡張機能ハンドラー**
 
@@ -82,6 +83,10 @@ ms.lasthandoff: 10/10/2018
 | PaymentTerminalCancelOperationRequestHandler                  | 支払ターミナル/デバイスを使用してカード支払がキャンセルされたときに実行されます。                                                                                          |
 | PaymentTerminalEndTransactionRequestHandler                   | 支払ターミナル/デバイスを使用してカード支払が終了したときに実行されます。                                                                                              |
 | CashDrawerOpenRequestHandler                                  | キャッシュ ドロワー オープン要求が POS によって開始されるときに実行されます。                                                                                                     |
+| PaymentTerminalActivateGiftCardPeripheralRequestHandler       | POS により開始されたギフト カード要求をアクティブにしたときに実行されます。                                                                                                     |
+| PaymentTerminalAddBalanceToGiftCardPeripheralRequestHandler   | POS により開始されたギフト カード要求に残高を追加したときに実行されます。                                                                                                     |
+ 
+ 
 
 **スキャン要求ハンドラー**
 
@@ -94,6 +99,8 @@ ms.lasthandoff: 10/10/2018
 | 要求名                         | 説明                                                          |
 |--------------------------------------|----------------------------------------------------------------------|
 | PrintPackingSlipClientRequestHandler | 店舗フルフィルメント ビューから梱包明細を印刷するときに実行されます。 |
+| MarkAsPickedServiceRequestHandler    | 店舗フルフィルメント ビューからピッキングされた販売注文明細行をマークするときに実行されます。 |
+
 
 **店舗運営要求ハンドラー**
 
@@ -121,6 +128,8 @@ ms.lasthandoff: 10/10/2018
 | 要求名                                           | 説明                                               |
 |--------------------------------------------------------|-----------------------------------------------------------|
 | GetGiftReceiptsClientRequestHandler                | POS でギフト レシートを印刷するときに実行されます。          |
+| SelectCustomerOrderTypeClientRequestHandler        | 顧客注文または見積のどちらかを選択するためのオプションがあるダイアログ ボックスを取得するときに実行されます。          |
+
 
 
 **POS でハンドラーをオーバーライドする方法**
@@ -260,13 +269,13 @@ ms.lasthandoff: 10/10/2018
 ```Typescrip
  {
  "extensionPackages": [
-    { 
-       "baseUrl": "SampleExtensions2" 
-     }, 
-     { 
-       "baseUrl": " SampleExtensions" 
-     }, 
-     {
+    { 
+       "baseUrl": "SampleExtensions2" 
+     }, 
+     { 
+       "baseUrl": " SampleExtensions" 
+     }, 
+     {
       "baseUrl": "POSRequestHandlerExtension"
  }
  ]

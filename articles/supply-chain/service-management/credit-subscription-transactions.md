@@ -1,6 +1,6 @@
 ---
 title: "定期売買トランザクションの貸方記入"
-description: 
+description: "このトピックでは、定期売買手数料トランザクションの貸方への記入方法について説明します。"
 author: ShylaThompson
 manager: AnnBe
 ms.date: 05/01/2018
@@ -19,10 +19,10 @@ ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 14bc2c8667cf095006ea35d5ec8678d1a7cf4ea5
+ms.sourcegitcommit: b589a6ce02cdc02436e256f9e81346fe8b766687
+ms.openlocfilehash: cd6c91126604fc704ac0283d5db062077275e725
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 

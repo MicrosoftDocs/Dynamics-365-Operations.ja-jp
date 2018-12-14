@@ -3,7 +3,7 @@ title: "Dynamics 365 for Finance and Operations プラットフォーム更新�
 description: "このトピックでは、Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 20 の新機能または変更された機能について説明します。 このバージョンは 2018 年 9 月にリリースされました。"
 author: tonyafehr
 manager: AnnBe
-ms.date: 10/29/2018
+ms.date: 11/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: tfehr
 ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Platform update 16, Platform update 17, Platform update 18, Platform update 19, Platform 20
 ms.translationtype: HT
-ms.sourcegitcommit: 53c0da5e9697deaf946ccd4fbcd2102faa62b195
-ms.openlocfilehash: 8aa3c79d33e718b13ba55fc68e9a77438230d340
+ms.sourcegitcommit: 4dee9d9ee2f9f3f63af829fb12f4c886e8c396c4
+ms.openlocfilehash: 8d52c2515c3e1572da75da1f0a0ddbcc81ecdad3
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/02/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-platform-update-20-september-2018"></a>Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 20 (2018 年9 月) の新機能および変更された機能
@@ -100,6 +100,8 @@ OData フローは、ユーザー セキュリティ特権も過度にチェッ�
 
 ## <a name="data-task-automation"></a>データ タスクの自動化
 Microsoft Dynamics 365 for Finance and Operations のデータ タスク自動化は、各種のデータ タスクを簡単に繰り返し、各タスクの結果を検証を可能にします。 データ タスクの自動化は、実装フェーズにあるプロジェクトで非常に便利です。 たとえば、データ プロジェクトの作成およびコンフィギュレーションを自動化することができます。 また、デモ データおよび高品質の構成データ、およびデータ移行に関連する他のタスクなどの、インポート/エクスポート オペレーションの実行を構成およびトリガーすることができます。 また、タスクの結果の検証を使用して、データ エンティティの自動テストを作成することもできます。
+
+詳細については、[データ タスクの自動化](../../dev-itpro/data-entities/data-task-automation.md)の差し込みデータの概要を参照してください。
 
 ## <a name="extensibility-enhancements"></a>拡張性の強化
 プラットフォーム更新 20 には、次の拡張機能が含まれます。

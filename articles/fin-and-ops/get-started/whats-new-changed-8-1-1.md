@@ -3,7 +3,7 @@ title: "Dynamics 365 for Finance and Operations バージョン 8.1.1 (2018 年 
 description: "このトピックでは、Dynamics 365 for Finance and Operations バージョン 8.1.1 の新機能または変更された機能について説明します。 このバージョンは 2018 年 10 月にリリースされました。"
 author: tonyafehr
 manager: AnnBe
-ms.date: 11/19/2018
+ms.date: 11/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: tfehr
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Release 8.1.1
 ms.translationtype: HT
-ms.sourcegitcommit: 77770c731b711600fdd91dcf790568f7632fd2d6
-ms.openlocfilehash: ac56c4b1b86e6fc592463527b9faef0ab57f7962
+ms.sourcegitcommit: 3a2b42b147596ed2bcbe29fcc20f88058bea6056
+ms.openlocfilehash: d6c4da8730c049689901ef37d4c616b88b3e5111
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-version-811-october-2018"></a>Dynamics 365 for Finance and Operations バージョン 8.1.1 (2018 年 10 月) の新機能および変更された機能
@@ -52,4 +52,7 @@ Finance and Operations 8.1.1 の一部である更新プログラムのそれぞ
 
 ## <a name="extensibility-enhancements"></a>拡張性の強化
 Finance and Operations の今回のリリースでは、列挙、メタデータ、メソッドの強化など、拡張性をサポートするために、さまざまな拡張機能の強化が加えられています。 詳しくは、[Dynamics 365 for Finance and Operations バージョン 8.1.1 の拡張機能の変更](../../dev-itpro/extensibility/extensibility-changes-811.md)をご覧ください 
+
+## <a name="vat-declaration-for-russia"></a>ロシアの VAT申告
+今回のリリースでは、電子的な形式でロシアの VAT 申告を生成する ER コンフィギュレーションを確認できます。 詳細については、[電子形式の RUS/ロシア VAT 申告](https://support.microsoft.com/en-us/help/4477332/rusrussiavatdeclarationinelectronicformat)を参照してください。
 

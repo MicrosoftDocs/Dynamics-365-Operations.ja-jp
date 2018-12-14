@@ -18,10 +18,10 @@ ms.author: sarvanis
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 12
 ms.translationtype: HT
-ms.sourcegitcommit: b8fb8c963e2bba2e6fe7cb31e71a38232f1e8a54
-ms.openlocfilehash: 23d636cebd9da60c3cf05a322d1bbe56cb99c5bb
+ms.sourcegitcommit: 248b72a96b5eed4d4b788d0a6f3de1dfce3d3670
+ms.openlocfilehash: c86682b2308d2d5660c848d695ad33a71a5d4f4e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/02/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 

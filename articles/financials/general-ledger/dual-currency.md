@@ -17,14 +17,16 @@ ms.author: kweekley
 ms.search.validFrom: 2018-10
 ms.dyn365.ops.version: 8.1
 ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
-ms.openlocfilehash: c026a540fb7d30644d485b6a057c2c46bd7c091d
+ms.sourcegitcommit: b589a6ce02cdc02436e256f9e81346fe8b766687
+ms.openlocfilehash: 8de178ec80f7408d657e746b633703f386c8e02d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/01/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
 # <a name="dual-currency"></a>二重通貨
+
+[!include [banner](../includes/banner.md)]
 
 Microsoft Dynamics 365 for Finance and Operations バージョン 8.1 (2018 年 10 月) で導入された機能は、レポート通貨の別目的での使用および 2 番目の会計通貨としての使用を有効にします。 この機能は、*二重通貨*と呼ばれます。 二重通貨の変更を、コンフィギュレーション キーまたはパラメーターを通じて無効にはできません。 レポート通貨が 2 つ目の会計通貨として使用され、転記論理でのレポート通貨の計算方法が変更されたためです。
 
@@ -67,8 +69,8 @@ Microsoft Dynamics 365 for Finance and Operations バージョン 8.1 (2018 年 
 
 - [一般会計](#general-ledger)
 - [財務報告](#financial-reporting)
-- [買掛金勘定](#accounts-payable/accounts-receivable)
-- [売掛金](#accounts-payable/accounts-receivable)
+- [買掛金勘定](#accounts-payable-and-accounts-receivable)
+- [売掛金](#accounts-payable-and-accounts-receivable)
 - [現金および銀行管理](#cash-and-bank-management)
 - [固定資産](#fixed-assets)
 
@@ -90,7 +92,7 @@ Microsoft Dynamics 365 for Finance and Operations バージョン 8.1 (2018 年 
 
 この変更は、列定義の**通貨の表示**設定を通じて使用可能です。 **元帳のレポート通貨**を選択した場合、列の金額は変換されません。 代わりに、総勘定元帳から直接報告されます。 列が変換された金額を表示するようにするには、**XXXX に変換**オプションを選択します。この場所、*XXXX* は、列を表示する必要があるレポート通貨です。 この場合、既存の変換機能を使用して、会計通貨金額は選択した通貨に変換されます。
 
-### <a name="accounts-payableaccounts-receivable"></a>買掛金勘定/売掛金勘定
+### <a name="accounts-payable-and-accounts-receivable"></a>買掛金勘定および売掛金勘定
 
 **買掛金勘定**および**売掛金勘定**モジュールは、既にレポート通貨金額を追跡しています。 ただし、金額が表示されなかったり、またはさまざまなプロセスに使用されています。 次の変更が加えられました。
 

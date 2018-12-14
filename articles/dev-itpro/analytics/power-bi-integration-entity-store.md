@@ -3,7 +3,7 @@ title: "エンティティ格納と Power BI の統合"
 description: "エンティティ格納は、Microsoft Dynamics 365 for Finance and Operations に含まれている運用データ ストアです。 このトピックでは、エンティティ ストアで Power BI を Finance and Operations と統合する方法について説明します。"
 author: MilindaV2
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: milindav
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 3f48b2e1527eb55fdd8ed6b03693976b3a852a19
+ms.sourcegitcommit: 80d7e4d0837cebf48b82f76a8b01b550b11dfdc7
+ms.openlocfilehash: 8381c04636dc9ef3811a0021efef4c58f415adb3
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -70,4 +70,16 @@ Microsoft Dynamics AX の 2016 年 2 月のリリースでは、データ エン
 [![ダイアログ ボックスの更新構成](./media/retail-cube-refresh-1024x548.jpg)](./media/retail-cube-refresh.jpg)
 
 バッチ フレームワークはスケジューリングに使用されます。 したがって、更新ジョブは、バッチ フレームワークの機能を使用して監視、負荷分散、優先順位付けを行うことができます。 2016 年 5 月更新時点では、完全な更新プログラムのみがサポートされます。 ただし、まもなく差分更新が有効化されます。 最終的には、将来の更新プログラムにおいて、システムが実際の使用パターンに基づくエンティティ格納が更新されます。 したがって、管理者は **更新のコンフィギュレーション** ダイアログ ボックスを例外としてのみ使用する必要があります。
+
+### <a name="connecting-to-the-entity-store-database"></a>エンティティ格納データベースに接続する
+トラブルシューティングや診断の場合、関連するサンドボックス環境から直接エンティティ格納データベースに接続することができます。  接続するには
+
+1. サンドボックスにアクセスするには、リモート デスクトップを使用します。  RDP ファイルは、IP アドレスをホワイトリストに登録した後、**環境の詳細** ページからダウンロードできます。
+2. SQL Server Management Studio を開き、**環境の詳細** ページで指定したサーバーに接続します。  
+    * **データベース アカウント** というセクションを見つけます。  名前 **axdwadmin** を持つユーザーのエントリを探します。  
+    * サーバー名は、**SQL サーバー\データベース名** フィールドの最初の部分です。  これは、**SQLServerName.database.windows.net** の形式で使用する必要があります。ここで、SQLServerName は LCS からの値です。
+    * 認証の種類は、Windows 認証から SQL Server 認証に変更する必要があります。
+    * ログインは、axdwadmin となり、パスワードは LCS からの値となります。
+3. **オプション** ボタンを使用するか **接続のプロパティ** タブを参照して、**データベースに接続** プロパティを既定値から、LCS からの **データベース名** 値に変更します。
+4. **接続** をクリックしてデータベースにアクセスします。
 

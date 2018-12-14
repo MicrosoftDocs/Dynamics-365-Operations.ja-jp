@@ -29,7 +29,7 @@
               href: get-started/public-preview-releases.md
             - name: Finance and Operations の購入
               items:
-                - name: Finance and Operations (on-premises) の購入
+                - name: Finance and Operations (オンプレミス) の購入
                   href: get-started/purchase-on-premises.md
         - name: 新機能および変更された機能
           href: get-started/whats-new-changed.md
@@ -48,6 +48,10 @@
               href: get-started/ax-2012-features-not-implemented-but-not-deprecated.md
             - name: オンプレミス配置で実装されていない機能
               href: get-started/features-not-implemented-on-prem.md
+            - name: Finance and Operations バージョン 8.1.3 (2018 年 12 月)
+              href: get-started/whats-new-changed-8-1-3.md
+            - name: Platform update 23 (2018 年 12 月)
+              href: get-started/whats-new-platform-update-23.md
             - name: Platform update 22 (2018 年 11 月)
               href: get-started/whats-new-platform-update-22.md
             - name: Finance and Operations バージョン 8.1.2 (2018 年 11 月)
@@ -152,7 +156,9 @@
               href: get-started/help-overview.md
             - name: ヘルプ システムに接続する
               href: get-started/help-connect.md
-            - name: フィールド説明の表示およびエクスポート
+            - name: カスタム ヘルプ サイトに接続する
+              href: get-started/help-custom.md
+            - name: フィールドの説明の表示およびエクスポート
               href: get-started/view-export-field-descriptions.md
             - name: タスク ガイドとタスク レコーダー
               items:
@@ -1243,6 +1249,8 @@
               href: ../dev-itpro/analytics/modify-row-definition-cells-financial-reporting.md?toc=/fin-and-ops/toc.json
             - name: 財務報告のデータ マートのリセット
               href: ../dev-itpro/analytics/reset-financial-reporting-datamart-after-restore.md?toc=/fin-and-ops/toc.json
+        - name: 電子メッセージ
+          href: ../financials/general-ledger/electronic-messaging.md
     - name: ローカライズと規制の機能
       href: ../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json
       items:
@@ -2222,10 +2230,14 @@
               href: ../financials/localizations/rus-transactions-settlement-date.md
             - name: 支払の請求書
               href: ../financials/localizations/rus-invoice-payment.md
+            - name: 財務諸表
+              href: ../financials/localizations/rus-financial-reports.md
+            - name: 購買帳簿の作成
+              href: ../financials/localizations/rus-sales-books-purchase-books.md
         - name: サウジアラビア
           href: ../financials/localizations/saudi-arabia.md
           items:
-            - name: 消費税
+            - name: 売上税
               href: ../financials/localizations/apac-sau-sales-tax.md
             - name: サウジアラビアのザカート レポート
               href: ../financials/localizations/emea-sau-zakat-reporting.md
@@ -2741,6 +2753,8 @@
                   href: ../dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/fin-and-ops/toc.json
                 - name: Lifecycle Services からのコンフィギュレーションのインポート
                   href: ../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/fin-and-ops/toc.json
+                - name: コンフィギュレーション規制コンフィギュレーション サービス (RCS) からの電子申告 (ER) 構成のインポート
+                  href: ../dev-itpro/analytics/rcs-download-configurations.md
                 - name: Lifecycle Services からのコンフィギュレーションのダウンロード
                   href: ../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/fin-and-ops/toc.json
                 - name: コンフィギュレーションのインポート
@@ -4145,10 +4159,12 @@
               href: ../supply-chain/warehousing/change-warehouse-mobile-device-displays.md
             - name: モバイル デバイスでの混合ライセンス プレートの受取
               href: ../supply-chain/warehousing/mixed-license-plate-receiving.md
-            - name: モバイル デバイスで倉庫内の古いバッチの表示をコンフィギュレーション
+            - name: モバイル デバイスで倉庫内の古いバッチの表示を構成
               href: ../supply-chain/warehousing/display-older-batches-within-warehouses.md
             - name: モバイル デバイスで最も古いバッチをピッキング
               href: ../supply-chain/warehousing/pick-oldest-batch.md
+            - name: プロセス ガイドのフレームワーク
+              href: ../supply-chain/warehousing/process-guide-framework.md
         - name: アップグレードおよび移行
           items:
             - name: Microsoft Dynamics AX 2012 から Finance and Operations への倉庫管理プロセスのアップグレード

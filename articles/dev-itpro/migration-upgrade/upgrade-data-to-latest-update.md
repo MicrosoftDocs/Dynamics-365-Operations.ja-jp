@@ -18,10 +18,10 @@ ms.author: tabell
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 ms.translationtype: HT
-ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
-ms.openlocfilehash: bf8da82381e59d4ff70a59b3b58c0c3363799d10
+ms.sourcegitcommit: 222041860cd29274a3edddba037773a833b21d14
+ms.openlocfilehash: e2ae208d36979147e8cced814592961eefb68f4c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/17/2018
+ms.lasthandoff: 12/05/2018
 
 ---
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 09/17/2018
 
 トピックでは、Microsoft Dynamics 365 for Finance and Operations、レベル 1 環境のデータベースを最新の更新バージョンにアップグレードするプロセスについて説明します。 レベル 1 環境は、開発、1 ボックス、またはデモ環境とも呼ばれます。 指示は、標準/プレミア承認テスト サンドボックス環境 (層 2または 層 3) 以上のサンドボックス層にも適用されます。
 
-一部のレベル 2 以上の環境では、Microsoft サービス エンジニアリング チーム (DSE) がデータのアップグレードを実行します。 詳細については、[Microsoft Dynamics 365 for Finance and Operations の最新の更新への移動の概要](upgrade-latest-update.md#scenario-3-upgrade-to-the-latest-application-release) で「エンド ツー エンドのアップグレード プロセス」を参照してください。
+一部のレベル 2 以上の環境では、Microsoft サービス エンジニアリング チーム (DSE) がデータのアップグレードを実行します。 詳細については、[Finance and Operations の最新の更新への移動プロセス](upgrade-latest-update.md) で「エンド ツー エンドのアップグレード プロセス」を参照してください。
 
 > [!IMPORTANT]
 > - Finance and Operations の最新の **プラットフォーム** を更新している場合、データベースをアップグレードする必要は**ありません**。 プラットフォーム更新プログラムには、下位互換性のあります。 このトピックは、Microsoft Dynamics 365 for Operations version 1611 (November 2016) から Microsoft Dynamics 365 for Finance and Operations 7.3 へのアップグレードなど、Finance and Operations アプリケーションのリリース間でのアップグレードのプロセスに対してのみ適用されます。
@@ -291,10 +291,10 @@ CREATE PROCEDURE [DBO].PATCHRELATIONTYPE
         EXEC (@SQLTATEMENT);
     END;
 GO
-exec PatchRelationType  'CAMDATADIMENSIONHIERARCHYNODE'
-exec PatchRelationType  'CAMDataJournal'
-exec PatchRelationType  'CAMDataCostAccountingLedgerSourceEntryProvider'
-exec PatchRelationType  'CAMDataImportedDimensionMember'
+exec PatchRelationType  'CAMDATADIMENSIONHIERARCHYNODE'
+exec PatchRelationType  'CAMDataJournal'
+exec PatchRelationType  'CAMDataCostAccountingLedgerSourceEntryProvider'
+exec PatchRelationType  'CAMDataImportedDimensionMember'
 ```
 
 ### <a name="an-index-cant-be-created-on-inventdistinctproduct"></a>InventDistinctProduct にインデックスを作成することはできません

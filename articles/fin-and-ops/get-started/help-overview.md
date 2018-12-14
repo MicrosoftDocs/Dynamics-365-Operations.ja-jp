@@ -1,9 +1,9 @@
 ---
 title: "Finance and Operations のヘルプ システム"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations のヘルプ システム コンポーネントの概要が示されます。 また、組織の独自のドキュメントやトレーニングを提供する方法について説明します。"
+description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations のヘルプ システム コンポーネントの概要が示されます。"
 author: margoc
 manager: AnnBe
-ms.date: 10/10/2018
+ms.date: 11/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 75be5c5f675885aececb8ac0b25e699882ea77ab
-ms.openlocfilehash: dc2a3d49041acf42814149eb71d4cc021bdad838
+ms.sourcegitcommit: 87ca6afe817d27de12479f1b7d8155d11d800233
+ms.openlocfilehash: dc057faf3cd08ea1c939d0cc35ae404bde59e514
 ms.contentlocale: ja-jp
-ms.lasthandoff: 10/17/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 10/17/2018
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Finance and Operations のヘルプ システム コンポーネントの概要が示されます。 また、組織の独自のドキュメントやトレーニングを提供する方法について説明します。 
+このトピックでは、Microsoft Dynamics 365 for Finance and Operations のヘルプ システム コンポーネントの概要が示されます。 
 
 > [!NOTE] 
 > 次の製品間には密接な関係があります: Dynamics 365 for Finance and Operations、Dynamics 365 for Retail、および Dynamics 365 for Talent。 すべての 3 つの製品上に同じ機能が表示されることがあります。 結果として、主に [Retail] に関連するトピックでの製品名は Dynamics 365 for Retail、主に [Talent] に関連するトピックでの製品名は Dynamics 365 for Talent、コア製品に関連するトピックでの製品名は、Dynamics 365 for Finance and Operations となります。 1 つの製品で記述されているトピックは、関連する製品の同じ機能にも当てはまる可能性があります。
@@ -48,8 +48,6 @@ Finance and Operations には、2 つの主要なコンポーネントに基づ�
 使用している製品のヘルプ ウィンドウからヘルプを表示できます。 次のスクリーンショットは、Finance and Operations を示します。
 
 ![[ヘルプ] ウィンドウ](./media/help-pane-ops-task-guides.png)
-
-このトピックは、ヘルプ システムについて説明し、組織のカスタム ドキュメントおよびトレーニング リソースを作成方法を説明します。
 
 > [!IMPORTANT]
 > **タスク ガイド**は、Retail または Talent のヘルプ ウィンドウで現在使用できません (いくつかのタスク ガイドは、Talent のはじめにウィンドウで使用できます)。 Retail および Talent 両方の手順を追ったヘルプは、docs.microsoft.com サイト上 ([docs.microsoft.com/dynamics365/unified-operations](../../index.md)) で利用可能です。
@@ -83,7 +81,7 @@ Unified Operations のコンテンツへのすべての更新の RSS フィー�
 ### <a name="give-feedback"></a>フィードバックを送る 
 お客様からのフィードバックをぜひいただきたいです。 GitHub を通じて、コメントを投稿したり、コンテンツへの変更を提案することができます。 フィードバック システムの詳細については、[このブログ投稿](https://docs.microsoft.com/teamblog/a-new-feedback-system-is-coming-to-docs) を参照してください。
 
-##### <a name="leave-us-feedback"></a>フィードバックをお送りください 
+#### <a name="leave-us-feedback"></a>フィードバックをお送りください 
 フィードバックまたはトピックに関するご質問がある場合は、ページ下部にコメントを記入してください。  
 
 1. **フィードバック**をクリックしてページ下部のコメントに移動し、**製品のフィードバック**、または**サインインしてフィードバックを送信**をクリックします。
@@ -93,8 +91,6 @@ Unified Operations のコンテンツへのすべての更新の RSS フィー�
 2. コメントを入力して、**フィードバックを送信**をクリックします。
 
 ![コメントを投稿](./media/feedback.png)
-
-
 
 ##### <a name="suggest-a-change-or-contribute-content-through-github"></a>GitHub を通じてコンテンツの変更や提案を投稿する
 変更を提案するには、GitHub アカウントを所有し、コントリビューター ライセンス契約に署名する必要があります。  プル要求が送信された後、提案された変更が確認されます。 必要に応じて、内部的に検討してから返答します。  
@@ -122,22 +118,7 @@ Microsoftは、 2017 年 12 月 までの Finance and Operations のリリース
 > [!IMPORTANT] 
 > タスク ガイドの再生時には、実際のデータを入力します。 実稼働環境である場合、データは現在使用している会社で入力されます。
 
-### <a name="it-all-begins-with-task-recorder"></a>すべてタスク レコーダーから始まります。
-
-タスク ガイドは、タスク レコーダーを使用して作成されます。 タスク レコーダーを使用すると、Finance and Operations UI で実行するアクション (メニューのクリック、設定の変更、データの入力) はすべて記録されます。 記録する手順は、[タスク記録] と呼ばれます。 前のセクションで説明したように、タスク記録は [ヘルプ] ウィンドウに表示され、タスク ガイドとして再生できます。 ただし、タスク記録を使用できるそのほかの方法があります。
-
--   **タスク記録を BPM に保存** – LCS の BPM ライブラリの階層の明細行にタスク記録を保存できます。 BPM にタスク記録を保存すると、フローチャートの図が生成され、記録のステップとともに表示されます。 
-
-    > [!Note]
-    > Finance and Operations のヘルプ ウィンドウに表示させてタスク ガイドとして再生するには、記録を BPM ライブラリに保存します。
-    
--   **タスク記録をWord文書として保存** – Microsoft Word文書としてタスク記録を保存すると、組織の印刷可能なトレーニング ガイドを簡単に作成できます。
-
-タスク レコーダーの詳細については、「[Finance and Operations のタスク レコーダー](../../dev-itpro/user-interface/task-recorder.md)」を参照してください。
-
-### <a name="creating-customized-task-recordings"></a>カスタマイズされたタスク記録の作成
-
-独自のタスク記録を作成するか、Microsoft の提供するタスク記録をダウンロードしてカスタマイズすることができます。 したがって、固有の Finance and Operations の実装を反映する、組織のカスタマイズされたヘルプを作成できます。 Finance and Operations の [ヘルプ] ウィンドウに表示させてタスク ガイドとして再生するには、LCD で記録を BPM ライブラリに保存します。 パートナーの場合、ライブラリを会社のライブラリに昇格してソリューションに含める場合、顧客が使用できます。 詳細な手順については、「[ドキュメントとトレーニングの作成にタスク記録を使用](../../dev-itpro/user-interface/task-recorder.md)」を参照してください。
+タスク レコーダーを使用して、独自のカスタム タスク ガイドを作成することができます。 詳細については、[タスク記録を使用したドキュメントやトレーニングの作成](../../dev-itpro/user-interface/task-recorder-training-docs.md) を参照してください。
 
 ## <a name="in-product-help"></a>製品内ヘルプ
 Finance and Operations 内のヘルプ コンテンツにアクセスするには、**ヘルプ** (**?**) アイコンをクリックしてからヘルプを選択するか、Ctrl + Shift + ? を押します。 どちらの場合も、[ヘルプ] ウィンドウが開きます。 [ヘルプ] ウィンドウから記事またはタスク ガイドにアクセスできます。 
@@ -184,6 +165,11 @@ Finance and Operations 内のヘルプ コンテンツにアクセスするに�
 翻訳されたタスク ガイドは、タイトルの「すべての言語」を持つライブラリでリリースされます。 Finance and Operations でローカライズされたタスク ガイドのヘルプを参照するには、適切なライブラリに接続できることを確認してください。 タスク ガイドの表示言語は、**オプション** &gt; **基本設定** の [言語の設定] でユーザーごとに制御されます。 
 -   タスク ガイドが翻訳されている場合、そのタスク ガイドを開くと、タスク ガイドのすべてのテキストは選択した言語で表示されます。
 -   タスク ガイドが翻訳されていない場合、それを開くと、一部のテキスト (コントロールのテキスト) のみが選択した言語で表示されます。
+
+## <a name="creating-custom-help"></a>カスタム ヘルプの作成
+カスタム タスク ガイドを作成することで、ユーザーへのヘルプを作成したり、自分の Web サイトをヘルプ ウィンドウに接続したりすることができます。 詳細については、以下を参照してください。 
+- [ドキュメントやトレーニングとして使用するタスク記録の作成方法](../../dev-itpro/user-interface/task-recorder.md)。
+- [Finance and Operations のカスタム ヘルプの作成 (ホワイト ペーパー)](https://go.microsoft.com/fwlink/?linkid=2041185)
 
 ## <a name="additional-resources"></a>その他のリソース
 

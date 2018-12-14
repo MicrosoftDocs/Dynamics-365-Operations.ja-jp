@@ -3,7 +3,7 @@ title: "1 つのバージョンのサービス更新に関するよく寄せら�
 description: "このトピックは、一貫性があり、予測可能でシームレスな方法で最新の状態に保つために使用できるサービスの更新、プロセス、ツールを明確にすることを目的としています。"
 author: meeramahabala
 manager: AnnBe
-ms.date: 10/29/2018
+ms.date: 12/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: meeram
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1
 ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
-ms.openlocfilehash: 3fe8e665849ba06e6146ca37c609303e97f40697
+ms.sourcegitcommit: 23a83fdca0996c83a3ffea605b8da5073ca8dfc1
+ms.openlocfilehash: 82440131f6c03814223d8edfae8cc9078d068fb4
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/01/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -111,7 +111,7 @@ Finance and Operations 用の [Regression Suite Automation Tool](https://docs.mi
 
 | 日 | 拡張性の要求 |
 |----------|---------------------------------------------------------------------------------------------------------|
-| 2019 月 1 日 | 拡張機能のすべての要求は、2019 年 1 月 1 日までにログインする必要があります。 ISV とユーザーは、この時点までにコードを分析し、これらの要求を行うことが要求されます。 要求が 2019 年 1 月 1 日までに提出されない場合、2020 年 4 月より後に 7.3 を維持するための例外は提供されません。 |
+| 2019 月 1 日 | 拡張機能のすべての要求は、2019 年 1 月 1 日までにログインする必要があります。 ISV とユーザーは、この時点までにコードを分析し、これらの要求を行うことが要求されます。 要求が 2019 年 1 月 1 日までに提出されない場合、2019 年 4 月より後に 7.3 を維持するための例外は提供されません。 |
 | 2019 年 12 月 | 2019 年 1 月 1 日によって記録された要求については、拡張機能は 2019 年 12 月 31 日以前に入手可能になります。 これらの拡張機能を使用しているユーザーは、2020 年 4 月までに現在のバージョンに移行する必要があります。    |
 
 ### <a name="what-does-end-of-service-mean"></a>サービスの終了にはどのような意味がありますか?

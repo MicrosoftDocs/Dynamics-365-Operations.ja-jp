@@ -3,7 +3,7 @@ title: Retail POS API
 description: "このトピックでは、使用可能な POS API の一覧とそれらにアクセスする方法を示します。"
 author: mugunthanm
 manager: AnnBe
-ms.date: 10/29/2018
+ms.date: 12/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -19,10 +19,10 @@ ms.author: mumani
 ms.search.validFrom: 2018-29-10
 ms.dyn365.ops.version: AX 8.0, AX 8.1
 ms.translationtype: HT
-ms.sourcegitcommit: b7f970f681872cd938a15f9aea469df1e9e1bce3
-ms.openlocfilehash: e86ca46515581fea17e4312c7ce01695dd7bb482
+ms.sourcegitcommit: 4fe430afe625328ce212fd2f72e836585f920490
+ms.openlocfilehash: e126c65837f4057a3ace0cf5e4c877a41c82d784
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/05/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 # <a name="retail-pos-apis"></a>Retail POS API
@@ -43,7 +43,7 @@ POS API は、3 つのさまざまなシナリオに分類されます。
 API の多くは、拡張機能で消費できます。 たとえば、外部の Web サービス コールに基づいて品目の価格を変更する場合は、品目の価格を変更する PriceOverrideOperationRequest を呼び出すことができます。 消費では、API は買い物カゴ、周辺機器、店舗運営のようなモジュールごとにサブカテゴリに入れられます。
 
 > [!NOTE]
-> すべての API の一覧は、**Pos.Api.d.ts** にあります。これは、Retail SDK (...Retail SDK\POS\Extensions\Pos.Api.d.ts) の一部です。
+> すべての API の一覧は、**Pos.Api.d.ts** にあります。これは、Retail SDK (...Retail SDK\POS\Extensions\Pos.Api.d.ts) の一部です。 拡張機能は、公開されている要求と、POS.Api.d.ts からの応答のみを使用する必要があり、Pos.Api.d.ts を変更することはできません。 拡張機能は、POS API、プロパティ、メソッド、またはハンドラーを、POS Commerce またはセッション オブジェクトから直接使用したり更新したりすることはできません。 
 
 ## <a name="how-to-consume-apis-in-your-extension"></a>拡張機能で API を使用する方法
 
@@ -200,6 +200,7 @@ currentCart = getCurrentCartClientResponse.data.result;
 | CreateEmptyCartServiceRequest                   |
 | GetTaxOverridesServiceRequest                   |
 | UpdateTenderLineSignatureServiceRequest         |
+| CarryoutSelectedProductsOperationRequest |
 
 ### <a name="payments"></a>支払利息
 
@@ -260,6 +261,7 @@ currentCart = getCurrentCartClientResponse.data.result;
 | GetCustomerClientRequest |
 |CreateCustomerServiceRequest |
 |UpdateCustomerServiceRequest |
+|SelectCustomerClientRequest |
 
 
 ### <a name="authentication"></a>認証
@@ -355,6 +357,7 @@ currentCart = getCurrentCartClientResponse.data.result;
 | SelectProductVariantClientRequest          |
 | GetSerialNumberClientRequest               |
 | GetRefinerValuesByTextServiceRequest       |
+| SelectProductClientRequest |
 
 ### <a name="salesorders"></a>SalesOrders
 

@@ -3,7 +3,7 @@ title: "オンプレミス環境での小売チャネルのコンポーネント
 description: "このトピックでは、オンプレミス環境での小売チャネルのコンポーネントのインストール手順について説明します。"
 author: aamirallaqaband
 manager: AnnBe
-ms.date: 11/01/2018
+ms.date: 11/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: aamiral
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1
 ms.translationtype: HT
-ms.sourcegitcommit: b8fb8c963e2bba2e6fe7cb31e71a38232f1e8a54
-ms.openlocfilehash: 5b7edf0d9beb50480f2c75a591a83ea1030055af
+ms.sourcegitcommit: 0967b10c2037c24c044f38c49b1b998f6771c66b
+ms.openlocfilehash: 09fdcb014c010a79ba92f8578cc7e1207bb6e238
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/02/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -43,7 +43,7 @@ ms.lasthandoff: 11/02/2018
 
 ## <a name="installation-steps"></a>インストール手順
 
-1.  以前に作成したファイル共有で、**RetailSelfServicePackages** と呼ばれる新しいフォルダーを作成します。
+1.  以前に作成した[ファイル共有](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu8-pu11#setupfile)で、**RetailSelfServicePackages** と呼ばれる新しいフォルダーを作成します。
 2.  各 AOS コンピューターで、次の PowerShell スクリプトを実行します。
 
 ```powershell

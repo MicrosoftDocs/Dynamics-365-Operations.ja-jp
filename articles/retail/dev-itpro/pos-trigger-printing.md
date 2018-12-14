@@ -3,7 +3,7 @@ title: "Retail Modern POS (MPOS) のトリガーと印刷"
 description: "トリガーを使用すると、いずれかの Retail Modern POS の操作前後に発生するイベントを取得できます。"
 author: mugunthanm
 manager: AnnBe
-ms.date: 10/30/2018
+ms.date: 11/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -17,10 +17,10 @@ ms.author: mumani
 ms.search.validFrom: 2017-01-27
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
-ms.openlocfilehash: 989034169127aed5ec792a623618e0f43209e8bf
+ms.sourcegitcommit: 48e2eea2cc986edc49d5192945c3d913c3bb9756
+ms.openlocfilehash: e19fa12ce7608aa7105afdbe5c64fdd32ef1fe58
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/01/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -47,7 +47,9 @@ ms.lasthandoff: 11/01/2018
 | PostLogOnTriggerTrigger   | キャンセル不可 | POS ログ オン後に実行されます。                                                                                                       |
 | PostLogOffTrigger         | キャンセル不可 | POS ログ オフ後に実行されます。                                                                                                      | 
 | PreLockTerminalTrigger    | 解約可能     | POS レジスターのロック前に実行されます。  |
-| PostLockTerminalTrigger   | キャンセル不可 | POS レジスターのロック後に実行されます。   |     
+| PostLockTerminalTrigger   | キャンセル不可 | POS レジスターのロック後に実行されます。   | 
+| PostDeviceActivation      | キャンセル不可 | POS のアクティブ化後に実行されます。   | 
+
 
 ## <a name="cash-management-triggers"></a>現金管理トリガー
 

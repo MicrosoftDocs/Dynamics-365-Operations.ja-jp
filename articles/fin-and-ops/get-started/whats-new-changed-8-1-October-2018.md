@@ -3,7 +3,7 @@ title: "Dynamics 365 for Finance and Operations バージョン 8.1 (2018 年 10
 description: "このトピックでは、Dynamics 365 for Finance and Operations バージョン 8.1 の新機能または変更された機能について説明します。 このバージョンは 2018 年 10 月にリリースされました。"
 author: tonyafehr
 manager: AnnBe
-ms.date: 10/01/2018
+ms.date: 11/06/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: tfehr
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Release 8.1
 ms.translationtype: HT
-ms.sourcegitcommit: 81214cc52b1488bb70ac5fd6ccc817f6f979163d
-ms.openlocfilehash: 5cc10d6fe07b59f934cf01d8163a68686237081c
+ms.sourcegitcommit: 389e8c4241ec0803e1fde848b6e50357be5b4775
+ms.openlocfilehash: aaae890065305ae7f2795681b69516bca94bc868
 ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-version-81-october-2018"></a>Dynamics 365 for Finance and Operations バージョン 8.1 (2018 年 10 月) の新機能および変更された機能
@@ -72,6 +72,11 @@ Microsoft Dynamics 365 for Retail の最新リリースの新機能と変更に�
 エンティティを使用して、派生分析コードのセグメントと値を設定することができます。
 
 詳細については、「[財務分析コード](../../financials/general-ledger/financial-dimensions.md)」を参照してください。
+
+## <a name="dual-currency"></a>二重通貨
+レポート通貨は、2 つ目の会計通貨として転用できるようになりました。 この機能は、二重通貨と呼ばれます。 二重通貨の変更を、コンフィギュレーション キーまたはパラメーターを通じて無効にはできません。 レポート通貨が 2 つ目の会計通貨として使用され、転記論理でのレポート通貨の計算方法が変更されたためです。
+
+詳細については、[二重通貨](../../financials/general-ledger/dual-currency.md)を参照してください。
 
 ## <a name="extensibility-enhancements"></a>拡張性の強化
 Finance and Operations の今回のリリースでは、コマンド チェーン、委任、またはメンバーへのアクセスを提供することにより拡張性をサポートするために、さまざまな拡張機能の強化が加えられています。 さらに、列挙、メタデータ、および SQL 操作に拡張が加えられました。 詳しくは、[Dynamics 365 for Finance and Operations バージョン 8.1 の拡張機能の変更](../../dev-itpro/extensibility/extensibility-changes-81.md)をご覧ください 

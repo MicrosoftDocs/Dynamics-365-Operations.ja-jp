@@ -1,6 +1,6 @@
 ---
 title: "対象となる標準のプラットフォーム リリース"
-description: 
+description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations のさまざまなリリース オプションについての情報を提供します。"
 author: kfend
 manager: AnnBe
 ms.date: 01/29/2018
@@ -18,10 +18,10 @@ ms.author: kfend
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Platform update 11
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: fea069c13a4bf8577ba4c130952a5f22b94b9487
+ms.sourcegitcommit: b589a6ce02cdc02436e256f9e81346fe8b766687
+ms.openlocfilehash: 96fef6546be32afb91086887e769336e26f0ca96
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 

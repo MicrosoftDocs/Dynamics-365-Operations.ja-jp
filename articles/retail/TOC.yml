@@ -47,15 +47,19 @@
       href: dev-itpro/updating-environments.md
     - name: テストおよびパフォーマンスに関する問題
       href: dev-itpro/retail-implementation-testing-performance.md
+- name: 分散型注文管理 (DOM)
+  href: dom.md
 - name: 支払
   items:
     - name: 支払方法
       href: payment-methods.md
     - name: クレジット カードの設定、認証、および取得
       href: ../financials/accounts-receivable/credit-card-authorizations.md
-    - name: POS の現金貨幣単位のコンフィギュレーション
+    - name: POS の現金貨幣単位の構成
       href: cash-denominations.md
-    - name: 支払に関するよく寄せられる質問
+    - name: 請求書の支払シナリオを設定する
+      href: payinvoice.md
+    - name: 支払に関してよく寄せられる質問
       href: dev-itpro/payments-retail.md
 - name: 発注書
   items:
@@ -209,10 +213,12 @@
   items:
     - name: 店舗注文のフルフィルメント
       href: Order-fulfillment-overview.md
-    - name: 店舗における注文のフルフィルメントを設定
+    - name: 店舗における注文のフルフィルメントの設定
       href: Order-fulfillment-POS-setup.md
     - name: POS の注文通知の表示
       href: Notifications-POS.md
+- name: 返品注文に対する交換のコンフィギュレーションとプロセス
+  href: orderexchanges.md
 - name: 監視と分析
   items:
     - name: 販売と利益幅のパフォーマンスの監視
@@ -235,6 +241,8 @@
       href: price-management.md
     - name: 価格調整と割引
       href: price-adjustments-discounts.md
+    - name: 製品に対する複数の小売割引の適用
+      href: Apply-multiple-retail-discounts.md
     - name: 重複する割引の最適な組み合わせの決定
       href: optimal-combination-overlapping-discounts.md
     - name: チャネル固有の割引の定義
@@ -371,7 +379,7 @@
       href: tasks/configure-machine-learning-product-recommendations.md
     - name: デバイスの作成およびレジスターとの関連付け
       href: tasks/create-associate-device.md
-    - name: ハードウェア ステーションの作成
+    - name: Hardware Station の作成
       href: tasks/create-associate-hardware-station.md
     - name: POS レジスターの作成
       href: tasks/create-associate-registers.md
@@ -405,7 +413,7 @@
       href: tasks/design-relationships-between-organizational-units.md
     - name: 品揃えの管理
       href: tasks/manage-assortments-2016-11.md
-    - name: セルフサービスを使用したハードウェア ステーションのダウンロード
+    - name: セルフサービスを使用した Hardware Station のダウンロード
       href: tasks/perform-self-service-download-hardware-station.md
     - name: オンラインの販売と支払の転記
       href: tasks/posting-online-sales-payments.md
@@ -480,7 +488,7 @@
       items:
         - name: 組織の法律条項およびプライバシーに関する声明へのリンクの追加
           href: ../dev-itpro/sysadmin/legal-terms-privacy-statement.md?toc=/retail/toc.json
-        - name: Bing 地図の管理
+        - name: Bing地図の管理
           href: dev-itpro/manage-bing-maps.md
     - name: Retail 拡張リソースおよびラベル ファイルのローカライズ
       href: dev-itpro/extension-resource-localization.md
@@ -488,6 +496,8 @@
       items:
         - name: Retail POS 画面レイアウト
           href: pos-screen-layouts.md
+        - name: POS で URL を開く
+          href: Open-URL-in-POS.md
         - name: POS のレイアウト デザイナーのインストール
           href: install-pos-layout-designer.md
         - name: オフライン モードの Retail Modern POS
@@ -506,9 +516,13 @@
           href: dev-itpro/pos-payment-extension.md
         - name: 外部ギフト カードのサポート
           href: dev-itpro/gift-card.md
-        - name: ブランド化の作成と Retail Experience アプリへの適用
+        - name: ブランドの作成と Retail Experience アプリへの適用
           href: dev-itpro/create-retail-experience-app.md
-    - name: ハードウェア ステーションの拡張機能
+        - name: Android および iOS での POS Hybrid アプリのセットアップ
+          href: dev-itpro/hybridApp.md
+        - name: POS 要求ハンドラーのオーバーライド
+          href: dev-itpro/pos-handler.md
+    - name: Hardware Station の拡張機能
       href: dev-itpro/hardware-station-extensibility.md
     - name: Retail Server の拡張機能
       items:
@@ -562,9 +576,13 @@
           href: dev-itpro/payment-custom-error-messages.md
         - name: 支払コネクタ用の Windows インストーラーの作成
           href: dev-itpro/create-windows-installer-payment-connector.md
+        - name: 支払データの使用
+          href: payment-connector-data-fields.md
     - name: Retail SDK
       href: dev-itpro/retail-sdk/retail-sdk-overview.md
       items:
+        - name: Retail SDK の今後の変更
+          href: dev-itpro/UpcomingSDKChanges.md
         - name: Retail および Finance and Operations 用ビルド システムのマージ
           href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
         - name: Retail SDK の拡張機能サンプル

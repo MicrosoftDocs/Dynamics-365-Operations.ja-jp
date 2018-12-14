@@ -3,7 +3,7 @@ title: "削除済みまたは推奨されない機能"
 description: "このトピックでは、削除された、または削除される予定の機能について説明します。"
 author: sericks007
 manager: AnnBe
-ms.date: 10/01/2018
+ms.date: 12/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
-ms.openlocfilehash: 6750cfc62e2d151ddf760ff3dc36bab9c078b2d9
+ms.sourcegitcommit: 48e2eea2cc986edc49d5192945c3d913c3bb9756
+ms.openlocfilehash: 8a3405c434e402af68e59950f1e4d1a31cbf2813
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/01/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -87,6 +87,19 @@ ms.lasthandoff: 11/01/2018
 | **影響を受ける製品領域**         | 一般会計、税 |
 | **配置オプション**              | All |
 | **ステータス**                         | プラットフォーム更新プログラム 20 で Dynamics 365 for Finance and Operations 8.1 から削除されました。 |
+
+
+### <a name="profit-tax-register-wizard"></a>利益税登録ウィザード
+新しい利益税登録用のテンプレートを作成するための機能 この機能は、適切な計算ロジックが追加されたテンプレートとして作成された、新しいレジスター用の X++ オブジェクトを作成します。
+
+|   |  |
+|------------|--------------------|
+| **廃止 / 削除の理由** | 機能は、Dynamics 365 for Finance and Operations の拡張性モデルとは互換性がありません。 |
+| **別の機能での置き換え?**   | 無 |
+| **影響を受ける製品領域**         | Tax |
+| **配置オプション**              | All |
+| **ステータス**                         | プラットフォーム更新プログラム 20 で Dynamics 365 for Finance and Operations 8.1 から削除されました。 |
+
 
 ## <a name="dynamics-365-for-finance-and-operations-80-with-platform-update-15"></a>Dynamics 365 for Finance and Operations 8.0 およびプラットフォーム更新プログラム 15
 今回のリリースで削除済みまたは推奨されない機能はありません。 プラットフォーム更新 15 は累積的であり、プラットフォーム更新 13、プラットフォーム更新 14、およびプラットフォーム更新 15 の新機能または変更された機能を含みます。
@@ -993,6 +1006,17 @@ Microsoft Dynamics AX 2012 は、未実現税に対するメキシコ固有の�
 | **別の機能での置き換え?**   | はい。 制約ベースのコンフィギュレーションは、将来のバージョンでプロダクト ビルダーの減価償却がすでに発表されている Dynamics AX 2012 で導入されました。 コンフィギュレーションを有効にするために、製品マスターに対して制約ベースのコンフィギュレーション テクノロジが選択されています。 詳細については次を参照してください。[製品コンフィギュレーション モデルの構築](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/pim/build-product-configuration-model) |
 | **影響を受ける製品領域**         | 製品情報管理、販売とマーケティング  |
 | **ステータス**                         | Dynamics AX 7.0 から削除されました。      |
+
+### <a name="production-floor-app"></a>生産フロア用アプリ
+これは、Windows 8.1 RT および Windows 8.1 Pro を実行しているタブレット デバイス用のアプリです。
+
+|   |  |
+|------------|--------------------|
+| **廃止 / 削除の理由** | Web ベースのクライアントに変更することで、ネイティブの Dynamics AX 7.0 クライアントを通じて同様の機能を提供することが可能です。 ジョブ カード デバイスは、タッチおよびタブレット フォーム ファクター向けに最適化された生産フロアのユーザー インターフェイスを提供します。 |
+| **別の機能での置き換え?**   | はい。 Dynamics AX 7.0 のネイティブの一部であるジョブ カードのデバイスです。                                                                           |
+| **影響を受ける製品領域**         | 生産管理                                                |
+| **ステータス**                         | 非推奨: この機能の Microsoft ストアからの削除日はまだ設定されていません。                                                |
+
 
 ### <a name="rename-product-dimension"></a>製品分析コードの名前を変更
 

@@ -3,7 +3,7 @@ title: "仕入先コラボレーションの設定と管理"
 description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations においてベンダー コラボレーションをセットアップする方法について説明します。 また、新しい仕入先コラボレーション ユーザーのプロビジョニング方法およびそれらのユーザーのセキュリティ ロールの管理方法についても説明します。"
 author: mkirknel
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 12/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,13 +19,13 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: ce10ec5568b45ce8a01e006244c56e1774631774
+ms.sourcegitcommit: 23a83fdca0996c83a3ffea605b8da5073ca8dfc1
+ms.openlocfilehash: a1d0ec4c5aa5a3abf9ab6c38107b90b61c69c588
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 12/04/2018
 
 ---
-.md
+
 # <a name="set-up-and-maintain-vendor-collaboration"></a>仕入先コラボレーションの設定と管理
 
 [!include [banner](../includes/banner.md)]
@@ -119,7 +119,7 @@ Finance and Operations で提供されている **仕入先見込顧客 (外部)
 #### <a name="branch-to-provision-new-users"></a>新しいユーザーをプロビジョニングするための分岐
 
 1. 新しいユーザーに仕入先コラボレーション情報へのアクセスを許可することを承諾する担当者に、承認タスクを割り当てます。
-2. Azure ポータルで新しい Microsoft Azure Active Directory (Azure AD) ユーザー アカウントを要求する担当者にタスクを割り当てます。 この手順では、事前に定義された **Azure B2B ユーザー招待状の送信**タスクを使用します。 Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 では、B2B ユーザーを自動的に Azure AD にエクスポートすることができます。 詳細については、[Azure AD に B2B ユーザーをエクスポート](../../dev-itpro/sysadmin/implement-b2b.md) を参照してください。
+2. Azure ポータルで新しい Microsoft Azure Active Directory (Azure AD) ユーザー アカウントを要求する担当者にタスクを割り当てます。 この手順では、事前に定義された **Azure B2B ユーザー招待状の送信**タスクを使用します。 Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 以降のバージョンでは、B2B ユーザーを自動的に Azure AD にエクスポートすることができます。 定義済みの **Azure AD B2B ユーザーのプロビジョニング** を使用します。 詳細については、[Azure AD に B2B ユーザーをエクスポート](../../dev-itpro/sysadmin/implement-b2b.md) を参照してください。
 3. 承認タスクを Azure にアップロードするユーザーに割り当てます。 勘定が正常に作成されていない場合、このユーザーはタスクを却下し、ワークフローを終了します。 この承認タスクは、B2B アプリケーション プログラミング インターフェイス (API) を使用して Azure に新しいユーザー アカウントを自動的にエクスポートするステップを含めるとスキップできます。
 4. Finance and Operations で新しいユーザーをプロビジョニングする自動化タスクを追加します。 この手順では、事前に定義された**ユーザーの自動プロビジョニング**タスクを使用します。
 5. 新しいユーザーに通知するタスクを追加します。 Finance and Operations の URL を含むようこそ電子メールを新しいユーザーに送信する可能性があります。 このメールでは、**電子メール メッセージ**ページで作成したテンプレートを使用して、**ユーザー ワークフロー パラメーター**ページを選択できます。 テンプレートには、**%portal URL%** タグを含めることができます。 ようこそ電子メールが生成されると、このタグは Finance and Operations のテナントの URL に置き換わります。
