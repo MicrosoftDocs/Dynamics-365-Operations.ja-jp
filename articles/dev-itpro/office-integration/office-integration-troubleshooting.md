@@ -3,7 +3,7 @@ title: "Office 統合のトラブルシューティング (タスク ガイド)"
 description: "このトピックでは、Microsoft Office 統合の機能に関する質問、ヒント、およびトラブルシューティング情報への回答を示します。 説明されている質問と問題は、ユーザー、管理、および開発のシナリオにわたっています。"
 author: ChrisGarty
 manager: AnnBe
-ms.date: 10/23/2018
+ms.date: 12/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,18 +19,16 @@ ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 81df289f07c41fe68c9d8f4732272abc9be22cb4
-ms.openlocfilehash: 1b6b8fbbadf07d9dc34d9357bee26c5c5cc099f3
+ms.sourcegitcommit: 6f821c89e2c37f4ef06524ca99c7a96174b9588a
+ms.openlocfilehash: 1fbaa132b588240681034b666b357f82dc5b91bf
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/02/2018
+ms.lasthandoff: 12/18/2018
 
 ---
 
 # <a name="troubleshoot-the-office-integration"></a><span data-ttu-id="17301-104">Office 統合のトラブルシューティング (タスク ガイド)</span><span class="sxs-lookup"><span data-stu-id="17301-104">Troubleshoot the Office integration</span></span>
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 
 <span data-ttu-id="17301-105">このトピックでは、Microsoft Office 統合の機能に関する質問、ヒント、およびトラブルシューティング情報への回答を示します。</span><span class="sxs-lookup"><span data-stu-id="17301-105">This topic provides answers to questions, tips, and troubleshooting information about the capabilities of the Microsoft Office integration.</span></span> <span data-ttu-id="17301-106">説明されている質問と問題は、ユーザー、管理、および開発のシナリオにわたっています。</span><span class="sxs-lookup"><span data-stu-id="17301-106">The questions and issues that are discussed range across user, administration, and development scenarios.</span></span>
