@@ -3,7 +3,7 @@ title: "クラスの拡張機能 - メソッドのラッピングとコマンド
 description: "このトピックでは、メソッド ラッピングを使用してパブリック メソッドと保護メソッドのビジネス ロジックを拡張する方法について説明します。"
 author: ChrisGarty
 manager: AnnBe
-ms.date: 11/02/2018
+ms.date: 12/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -16,17 +16,16 @@ ms.author: cgarty
 ms.search.validFrom: 2017-08-21
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 53c0da5e9697deaf946ccd4fbcd2102faa62b195
-ms.openlocfilehash: e59004490056a6482786a31b53421304552158fb
+ms.sourcegitcommit: 844c23fc908c962203e644f1154cc480425d830b
+ms.openlocfilehash: cd7d4301e2de58bb773915e7e3e8ece478fd40c1
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/02/2018
+ms.lasthandoff: 12/18/2018
 
 ---
 
 # <a name="class-extension-via-method-wrapping-and-chain-of-command-coc"></a><span data-ttu-id="75b64-103">メソッドのラッピングとコマンド チェーン経由のクラスの拡張機能 (CoC)</span><span class="sxs-lookup"><span data-stu-id="75b64-103">Class extension via method wrapping and Chain of Command (CoC)</span></span>
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 <span data-ttu-id="75b64-104">クラス拡張やクラス強化の機能が、Microsoft Dynamics 365 for Finance and Operations で強化されました。</span><span class="sxs-lookup"><span data-stu-id="75b64-104">The functionality for class extension, or class augmentation, has been improved in Microsoft Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="75b64-105">強化対象である基本クラスで定義されたメソッド関連のロジックをラップできるようになりました。</span><span class="sxs-lookup"><span data-stu-id="75b64-105">You can now wrap logic around methods that are defined in the base class that you're augmenting.</span></span> <span data-ttu-id="75b64-106">イベント ハンドラーを使用せずに、パブリック メソッドとプロテクト メソッドのロジックを拡張することができます。</span><span class="sxs-lookup"><span data-stu-id="75b64-106">You can extend the logic of public and protected methods without having to use event handlers.</span></span> <span data-ttu-id="75b64-107">メソッドをラップするとき、基本クラスのパブリック メソッドと保護されたメソッド、および変数にもアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="75b64-107">When you wrap a method, you can also access public and protected methods, and variables of the base class.</span></span> <span data-ttu-id="75b64-108">この方法で、トランザクションを開始し、クラスに関連付けられた状態変数を容易に管理することができます。</span><span class="sxs-lookup"><span data-stu-id="75b64-108">In this way, you can start transactions and easily manage state variables that are associated with your class.</span></span>
 

@@ -3,7 +3,7 @@ title: "Dynamics 365 for Finance and Operations バージョン 8.1.2 の拡張�
 description: "このトピックでは、Dynamics 365 for Finance and Operations バージョン 8.1.2 でリリースされた拡張機能を一覧表示します。"
 author: FrankDahl
 manager: AnnBe
-ms.date: 11/02/2018
+ms.date: 12/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,18 +18,16 @@ ms.author: fdahl
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: App 8.1.2
 ms.translationtype: HT
-ms.sourcegitcommit: d6c7c2af4dc6088d03a214ae2b289aaaa7244100
-ms.openlocfilehash: 8f5bbf27fea600262a020a97f95b5b975a28393b
+ms.sourcegitcommit: 844c23fc908c962203e644f1154cc480425d830b
+ms.openlocfilehash: 0414ecec86aa2ec22b385394c87a142dc1432df9
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2018
+ms.lasthandoff: 12/18/2018
 
 ---
 
 # <a name="extensibility-changes-in-dynamics-365-for-finance-and-operations-version-812"></a><span data-ttu-id="781ff-103">Dynamics 365 for Finance and Operations バージョン 8.1.2 の拡張機能の変更</span><span class="sxs-lookup"><span data-stu-id="781ff-103">Extensibility changes in Dynamics 365 for Finance and Operations version 8.1.2</span></span>
 
 [!include [banner](../includes/banner.md)]
-
-[!include [preview-banner](../includes/preview-banner.md)]
 
 <span data-ttu-id="781ff-104">これは、Dynamics 365 for Finance and Operations バージョン 8.1.2 に実装された拡張機能の一覧です。</span><span class="sxs-lookup"><span data-stu-id="781ff-104">This is a list of extensibility features that were implemented in Dynamics 365 for Finance and Operations version 8.1.2.</span></span> <span data-ttu-id="781ff-105">拡張性をサポートする変更のスケジュールの詳細については、「[アプリケーション機能拡張計画](extensibility-roadmap.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="781ff-105">For more information about the schedule of changes that support extensibility, see [Application extensibility plans](extensibility-roadmap.md).</span></span>
 
