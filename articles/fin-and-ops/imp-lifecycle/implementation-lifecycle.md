@@ -34,15 +34,18 @@ ms.lasthandoff: 08/09/2018
 [Microsoft FastTrack for Dynamics 365](../get-started/fasttrack-dynamics-365-overview.md)
 
 ## <a name="tools"></a>ツール
+
 [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com)
 
 [顧客向け Lifecycle Services の概要](../../dev-itpro/lifecycle-services/lcs-works-lcs.md)
 
 ## <a name="processes"></a>プロセス
+
 [実装プロジェクトの研修](onboard.md)
 
-[Go-Live の準備](prepare-go-live.md) 
+[Go-Live の準備](prepare-go-live.md)
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
+
 [Go-Live に関するよく寄せられる質問](go-live-faq.md)
 

@@ -30,14 +30,16 @@ ms.lasthandoff: 12/04/2018
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft は、Microsoft Dynamics 365 for Finance and Operations でカスタム ヘルプのサイトを作成およびヘルプ ウィンドウに接続する方法について説明するホワイト ペーパーおよびサンプル コードを提供しています。 
+Microsoft は、Microsoft Dynamics 365 for Finance and Operations でカスタム ヘルプのサイトを作成およびヘルプ ウィンドウに接続する方法について説明するホワイト ペーパーおよびサンプル コードを提供しています。
 
 カスタム ヘルプ ソリューションの設定のプロセスは、HTML としてのコンテンツの発行、サイトの配置、サイトに接続するためのヘルプ ウィンドウの拡張で構成されます。
 
 ## <a name="resources"></a>リソース
+
 - [Finance and Operations のカスタム ヘルプの作成 (ホワイト ペーパー)](https://go.microsoft.com/fwlink/?linkid=2041185)
 - [カスタム ヘルプ GitHub リポジトリ](https://github.com/microsoft/dynamics356f-o-custom-help)
 
 ## <a name="see-also"></a>参照
+
 [タスク記録を使用してドキュメントやトレーニングを作成](../../dev-itpro/user-interface/task-recorder-training-docs.md)
 
