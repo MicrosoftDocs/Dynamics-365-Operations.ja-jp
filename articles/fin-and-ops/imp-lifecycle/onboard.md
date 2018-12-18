@@ -16,10 +16,10 @@ ms.author: chaubold
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
-ms.openlocfilehash: 0c6c84ec183263d41d965407317a1e964f7b677e
+ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
+ms.openlocfilehash: c124599b72cde7451c04f23632515e6e7da4abae
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/17/2018
+ms.lasthandoff: 12/18/2018
 
 ---
 
@@ -39,7 +39,7 @@ ms.lasthandoff: 09/17/2018
 
 <span data-ttu-id="89387-112">FastTrack チームは、LCS プロジェクトですべてのパートナーおよび顧客ユーザーに連絡し、Skype 経由で 60分のオンボード コールをスケジュールします。</span><span class="sxs-lookup"><span data-stu-id="89387-112">The FastTrack team will contact all the partner and customer users in your LCS project to schedule a 60-minute onboarding call via Skype.</span></span> <span data-ttu-id="89387-113">呼び出し中に、チームが FastTrack プログラムを導入し、LCS プロジェクトおよび関連するタスクの初期構成に役立ちます。</span><span class="sxs-lookup"><span data-stu-id="89387-113">During this call, the team will introduce the FastTrack program and help you with the initial configuration of the LCS project and related tasks:</span></span>
 
-- <span data-ttu-id="89387-114">Tenant 検証</span><span class="sxs-lookup"><span data-stu-id="89387-114">Tenant validation</span></span> 
+- <span data-ttu-id="89387-114">Tenant 検証</span><span class="sxs-lookup"><span data-stu-id="89387-114">Tenant validation</span></span>
 - <span data-ttu-id="89387-115">LCS の概要</span><span class="sxs-lookup"><span data-stu-id="89387-115">Introduction to LCS</span></span>
 - <span data-ttu-id="89387-116">LCS プロジェクト ユーザーの設定</span><span class="sxs-lookup"><span data-stu-id="89387-116">Setup of LCS project users</span></span>
 - <span data-ttu-id="89387-117">Microsoft Azure DevOps の設定</span><span class="sxs-lookup"><span data-stu-id="89387-117">Setup of Microsoft Azure DevOps</span></span>

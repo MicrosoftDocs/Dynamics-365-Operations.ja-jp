@@ -17,10 +17,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611, July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: fc5a65c299adbf86fb2f38dff1a9aaa36f7367fa
-ms.openlocfilehash: 3ff05fca0297411cd75511b359ef03f5e1dc884b
+ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
+ms.openlocfilehash: 4500820beadb9057244dfbfe58ef5f02d70a3155
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 12/18/2018
 
 ---
 
@@ -59,7 +59,7 @@ ms.lasthandoff: 08/09/2018
 ### <a name="tiered-services-for-finance-and-operations"></a><span data-ttu-id="531da-129">Finance and Operations のための階層化されたサービス</span><span class="sxs-lookup"><span data-stu-id="531da-129">Tiered services for Finance and Operations</span></span>
 
 | <span data-ttu-id="531da-130">座席数</span><span class="sxs-lookup"><span data-stu-id="531da-130">Number of seats</span></span>                                                                         | <span data-ttu-id="531da-131">TechTalks</span><span class="sxs-lookup"><span data-stu-id="531da-131">TechTalks</span></span> | <span data-ttu-id="531da-132">ワークショップ</span><span class="sxs-lookup"><span data-stu-id="531da-132">Workshops</span></span>     | <span data-ttu-id="531da-133">評価</span><span class="sxs-lookup"><span data-stu-id="531da-133">Assessments</span></span>                  | <span data-ttu-id="531da-134">専用 FastTrack ソリューション アーキテクト</span><span class="sxs-lookup"><span data-stu-id="531da-134">Dedicated FastTrack solution architect</span></span> | <span data-ttu-id="531da-135">コミュニティ</span><span class="sxs-lookup"><span data-stu-id="531da-135">Community</span></span> |
-|-----------------------------------------------------------------------------------------|:---------:|:-------------:|:----------------------------:|:--------------------------------------:|:---------:|
+|-----------------------------------------------------------------------------------------|-----------|---------------|------------------------------|----------------------------------------|-----------|
 | <span data-ttu-id="531da-136">20–149 の合算されたアプリまたは計画のユーザー サブスクリプション ライセンスまたは同等のもの</span><span class="sxs-lookup"><span data-stu-id="531da-136">20–149 combined eligible App or Plan user subscription licenses, or the equivalent</span></span>      | <span data-ttu-id="531da-137">✓</span><span class="sxs-lookup"><span data-stu-id="531da-137">✓</span></span>         | <span data-ttu-id="531da-138">使用不可</span><span class="sxs-lookup"><span data-stu-id="531da-138">Not available</span></span> | <span data-ttu-id="531da-139">電子メールによる Go-Live 評価</span><span class="sxs-lookup"><span data-stu-id="531da-139">Go-live assessment via email</span></span> | <span data-ttu-id="531da-140">使用不可</span><span class="sxs-lookup"><span data-stu-id="531da-140">Not available</span></span>                          | <span data-ttu-id="531da-141">✓</span><span class="sxs-lookup"><span data-stu-id="531da-141">✓</span></span>         |
 | <span data-ttu-id="531da-142">150 以上の組み合わせの適格なアプリまたは計画のユーザー サブスクリプション ライセンスまたは同等のもの</span><span class="sxs-lookup"><span data-stu-id="531da-142">150 or more combined eligible App or Plan user subscription licenses, or the equivalent</span></span> | <span data-ttu-id="531da-143">✓</span><span class="sxs-lookup"><span data-stu-id="531da-143">✓</span></span>         | <span data-ttu-id="531da-144">✓</span><span class="sxs-lookup"><span data-stu-id="531da-144">✓</span></span>             | <span data-ttu-id="531da-145">Go-Live 評価ワークショップ</span><span class="sxs-lookup"><span data-stu-id="531da-145">Go-live assessment workshop</span></span>  | <span data-ttu-id="531da-146">✓</span><span class="sxs-lookup"><span data-stu-id="531da-146">✓</span></span>                                      | <span data-ttu-id="531da-147">✓</span><span class="sxs-lookup"><span data-stu-id="531da-147">✓</span></span>         |
 
@@ -80,7 +80,6 @@ ms.lasthandoff: 08/09/2018
 
 ## <a name="community"></a><span data-ttu-id="531da-163">コミュニティ</span><span class="sxs-lookup"><span data-stu-id="531da-163">Community</span></span>
 <span data-ttu-id="531da-164">FastTrack Finance and Operations コミュニティでは、顧客およびパートナーが質問を投稿し、ベスト プラクティスおよびガイダンスについて FastTrack ソリューションの設計者から回答を得ることができるプラットフォームを提供します。</span><span class="sxs-lookup"><span data-stu-id="531da-164">The FastTrack Finance and Operations community provides a platform where customers and partners can post questions and get answers from FastTrack solution architects about best practices and guidance.</span></span> <span data-ttu-id="531da-165">コミュニティに参加するには、[FastTrack Finance and Operations フォーラム](https://community.dynamics.com/365/fasttrack/f/770)もしくは [FastTrack Finance and Operations オンプレミス フォーラム](https://community.dynamics.com/365/fasttrack/f/772)をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="531da-165">To participate in the community, see [FastTrack Finance and Operations Forum](https://community.dynamics.com/365/fasttrack/f/770) or [FastTrack Finance and Operations On-premises Forum](https://community.dynamics.com/365/fasttrack/f/772).</span></span>
-
 
 ## <a name="workshops"></a><span data-ttu-id="531da-166">ワークショップ</span><span class="sxs-lookup"><span data-stu-id="531da-166">Workshops</span></span>
 

@@ -18,10 +18,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 96a9075294c1f2a9cfde03be1aaaa26af90de4c2
-ms.openlocfilehash: ed8bc910b3bf5501d8abb07d50fc20955f306820
+ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
+ms.openlocfilehash: 5b9921883d952ebc42eff9f678bb300d8304e379
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/04/2018
+ms.lasthandoff: 12/18/2018
 
 ---
 
@@ -51,7 +51,7 @@ ms.lasthandoff: 09/04/2018
 <p><span data-ttu-id="a8421-111"><a href="get-started/fasttrack-dynamics-365-overview.md">FastTrack for Dynamics 365</a></span><span class="sxs-lookup"><span data-stu-id="a8421-111"><a href="get-started/fasttrack-dynamics-365-overview.md">FastTrack for Dynamics 365</a></span></span></p>
 <p><span data-ttu-id="a8421-112"><a href="imp-lifecycle/onboard.md">プロジェクトの研修</a></span><span class="sxs-lookup"><span data-stu-id="a8421-112"><a href="imp-lifecycle/onboard.md">Onboarding a project</a></span></span></p>
 <p><span data-ttu-id="a8421-113"><a href="imp-lifecycle/prepare-go-live.md">Go-Live の準備</a></span><span class="sxs-lookup"><span data-stu-id="a8421-113"><a href="imp-lifecycle/prepare-go-live.md">Preparing for go-live</a></span></span></p>
-  
+
 <h3><span data-ttu-id="a8421-114"><a href="../financials/index.md">財務管理</a></span><span class="sxs-lookup"><span data-stu-id="a8421-114"><a href="../financials/index.md">Financial management</a></span></span></h3>
 <p><span data-ttu-id="a8421-115"><a href="../financials/accounts-payable/accounts-payable.md">買掛金勘定</a></span><span class="sxs-lookup"><span data-stu-id="a8421-115"><a href="../financials/accounts-payable/accounts-payable.md">Accounts payable</a></span></span></p>
 <p><span data-ttu-id="a8421-116"><a href="../financials/accounts-receivable/accounts-receivable.md">売掛金勘定</a></span><span class="sxs-lookup"><span data-stu-id="a8421-116"><a href="../financials/accounts-receivable/accounts-receivable.md">Accounts receivable</a></span></span></p>
@@ -65,7 +65,7 @@ ms.lasthandoff: 09/04/2018
 <p><span data-ttu-id="a8421-124"><a href="../financials/public-sector/public-sector-functionality.md">公的機関</a></span><span class="sxs-lookup"><span data-stu-id="a8421-124"><a href="../financials/public-sector/public-sector-functionality.md">Public sector</a></span></span></p>
 <p><span data-ttu-id="a8421-125"><a href="../dev-itpro/lcs-solutions/country-region.md">地域の規制機能</a></span><span class="sxs-lookup"><span data-stu-id="a8421-125"><a href="../dev-itpro/lcs-solutions/country-region.md">Regional regulatory features</a></span></span></p>
 
-<H3><span data-ttu-id="a8421-126"><a href="hr/hr-landing-page.md">人事管理</a></span><span class="sxs-lookup"><span data-stu-id="a8421-126"><a href="hr/hr-landing-page.md">Human resources</a></span></span></h3>
+<h3><span data-ttu-id="a8421-126"><a href="hr/hr-landing-page.md">人事管理</a></span><span class="sxs-lookup"><span data-stu-id="a8421-126"><a href="hr/hr-landing-page.md">Human resources</a></span></span></h3>
 <p><span data-ttu-id="a8421-127"><a href="../talent/manage-benefit-program.md">福利厚生</a></span><span class="sxs-lookup"><span data-stu-id="a8421-127"><a href="../talent/manage-benefit-program.md">Benefits</a></span></span></p>
 <p><span data-ttu-id="a8421-128"><a href="../talent/performance-management-overview.md">従業員の開発とトレーニング</a></span><span class="sxs-lookup"><span data-stu-id="a8421-128"><a href="../talent/performance-management-overview.md">Employee development and training</a></span></span></p>
 <p><span data-ttu-id="a8421-129"><a href="../talent/questionnaires.md">アンケート</a></span><span class="sxs-lookup"><span data-stu-id="a8421-129"><a href="../talent/questionnaires.md">Questionnaire</a></span></span></p>

@@ -16,14 +16,15 @@ ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
 ms.translationtype: HT
-ms.sourcegitcommit: dcbe39a5d9ca4a9fc109468772b6dd89b0dd971e
-ms.openlocfilehash: d4e606fb9caf37472597c0ed2fe15214d30087cb
+ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
+ms.openlocfilehash: 337ff1778c90eb82ce76ef6e5bf5229c29521c5c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 12/18/2018
 
 ---
 
 # <a name="move-environments-between-data-centers"></a><span data-ttu-id="892b1-103">データ センター間で環境を移動する</span><span class="sxs-lookup"><span data-stu-id="892b1-103">Move environments between data centers</span></span>
+
 [!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="892b1-104">場合によっては、Microsoft によって管理されている Microsoft Dynamics 365 for Finance and Operations 環境を異なる Microsoft Azure データ センターに移動する必要があります。</span><span class="sxs-lookup"><span data-stu-id="892b1-104">Occasionally, you must move Microsoft Dynamics 365 for Finance and Operations environments that are managed by Microsoft to a different Microsoft Azure data center.</span></span> <span data-ttu-id="892b1-105">この移動が必要になる場合のいくつかのシナリオを次に示します。</span><span class="sxs-lookup"><span data-stu-id="892b1-105">Here are some scenarios where this move might be required:</span></span>
@@ -39,9 +40,11 @@ ms.lasthandoff: 08/09/2018
 <span data-ttu-id="892b1-112">データ センターを変更するには、すべての環境を再配置する必要があります。</span><span class="sxs-lookup"><span data-stu-id="892b1-112">To change the data center, you must redeploy all environments.</span></span> <span data-ttu-id="892b1-113">サンド ボックス環境 (サンド ボックスのスタンダード承認テスト環境、およびサンド ボックスの開発およびテスト環境) のプロセスは実稼動環境のプロセスとは異なります。</span><span class="sxs-lookup"><span data-stu-id="892b1-113">The process differs for sandbox environments (sandbox standard acceptance test environments, and sandbox develop and test environments) and production environments.</span></span>
 
 ## <a name="move-sandbox-environments"></a><span data-ttu-id="892b1-114">サンドボックス環境の移動</span><span class="sxs-lookup"><span data-stu-id="892b1-114">Move sandbox environments</span></span>
+
 <span data-ttu-id="892b1-115">この移動はセルフサービスのアクションなので、パートナーや顧客は Microsoft の関与なしで既存のサンドボックス環境を移動する必要があります。</span><span class="sxs-lookup"><span data-stu-id="892b1-115">Because this move is a self-service action, the partner and/or customer must move the existing sandbox environments without Microsoft involvement.</span></span> <span data-ttu-id="892b1-116">このアクションには、パートナーまたは顧客のリソースの側でわずかな作業量が必要ですが、エンド ツー エンド プロセスの完了には数日かかることがあります。</span><span class="sxs-lookup"><span data-stu-id="892b1-116">Although this action requires little effort on the part of the partner or customer resources, completion of the end-to-end process might require a few days.</span></span> <span data-ttu-id="892b1-117">環境間でデータの移動を効率化するには、移動を開始する前に、最適な順序を決定するために計画を作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="892b1-117">To streamline the data movement between environments, you should develop a plan to determine the best sequence before you begin the move.</span></span>
 
 ### <a name="save-data"></a><span data-ttu-id="892b1-118">データの保存</span><span class="sxs-lookup"><span data-stu-id="892b1-118">Save data</span></span>
+
 <span data-ttu-id="892b1-119">移動を開始する前に、データを保存する必要があります。</span><span class="sxs-lookup"><span data-stu-id="892b1-119">Before you begin the move, you must save your data.</span></span>
 
 - <span data-ttu-id="892b1-120">**Microsoft SQL Server に基づくレベル 1 環境データベース:** データベースのバックアップを作成します。</span><span class="sxs-lookup"><span data-stu-id="892b1-120">**Tier 1 environment database that is based on Microsoft SQL Server:** Make a backup of the database.</span></span>
@@ -53,6 +56,7 @@ ms.lasthandoff: 08/09/2018
     - <span data-ttu-id="892b1-125">**オプション 4:** データ パッケージとしてデータを保存し、再配置が完了した後にパッケージをインポートします。</span><span class="sxs-lookup"><span data-stu-id="892b1-125">**Option 4:** Save data as data packages, and then import the packages after the redeployment is completed.</span></span>
 
 ### <a name="move-the-environments"></a><span data-ttu-id="892b1-126">環境の移動</span><span class="sxs-lookup"><span data-stu-id="892b1-126">Move the environments</span></span>
+
 <span data-ttu-id="892b1-127">データ保存後、これらの手順に従ってください。</span><span class="sxs-lookup"><span data-stu-id="892b1-127">After you've saved your data, follow these steps.</span></span>
 
 1. <span data-ttu-id="892b1-128">コードのすべてのパッケージが LCS でアセット ライブラリにアップロードされていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="892b1-128">Verify that all code packages have been uploaded to the Asset library in LCS.</span></span>
@@ -65,12 +69,13 @@ ms.lasthandoff: 08/09/2018
     5. <span data-ttu-id="892b1-134">**地理/場所**フィールドで、使用するデータ センターを選択します。</span><span class="sxs-lookup"><span data-stu-id="892b1-134">In the **Geography/location** field, select the data center to use.</span></span>
     6. <span data-ttu-id="892b1-135">環境が再配置された後は、コード パッケージを適用します。</span><span class="sxs-lookup"><span data-stu-id="892b1-135">After the environment is deployed, apply the code packages.</span></span>
     7. <span data-ttu-id="892b1-136">再配置された環境がビルド環境として使用されている場合は、[継続的ビルドとテストの自動化を使用した配置](../../dev-itpro/perf-test/continuous-build-test-automation.md)に記載されている必要なコンフィギュレーションを完了します。</span><span class="sxs-lookup"><span data-stu-id="892b1-136">If the redeployed environment is used as the build environment, complete the required configurations that are described in [Deployment with continuous build and test automation](../../dev-itpro/perf-test/continuous-build-test-automation.md).</span></span>
-    8.  <span data-ttu-id="892b1-137">データを復元します。</span><span class="sxs-lookup"><span data-stu-id="892b1-137">Restore the data.</span></span>
+    8. <span data-ttu-id="892b1-137">データを復元します。</span><span class="sxs-lookup"><span data-stu-id="892b1-137">Restore the data.</span></span>
 
-> [!NOTE] 
+> [!NOTE]
 > - <span data-ttu-id="892b1-138">サンド ボックス環境では、Azure BLOB ストレージに格納されているファイルの移動はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="892b1-138">The movement of files that are stored in Azure Blob Storage isn't supported in sandbox environments.</span></span>
 > - <span data-ttu-id="892b1-139">小売顧客は、移動後に小売コンポーネントが正常に機能するため追加の手順が必要であることに注意する必要があります。</span><span class="sxs-lookup"><span data-stu-id="892b1-139">Retail customers should be aware that extra steps are required for Retail components to work correctly after a move.</span></span> <span data-ttu-id="892b1-140">詳細については、[データ管理](../../dev-itpro/data-entities/data-entities-data-packages.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="892b1-140">For more information, see [Data management](../../dev-itpro/data-entities/data-entities-data-packages.md).</span></span>
 
 ## <a name="move-production-environments"></a><span data-ttu-id="892b1-141">実稼働環境の移動</span><span class="sxs-lookup"><span data-stu-id="892b1-141">Move production environments</span></span>
+
 <span data-ttu-id="892b1-142">実稼働環境を既に配置している場合は、すべてのサンドボックス環境の移動が完了した後に、実稼働環境を別のデータセンターに移動するためのサポート要求を開く必要があります。</span><span class="sxs-lookup"><span data-stu-id="892b1-142">If you already have a production environment deployed, you must open a Support request to move the production environment to another data center after you've finished moving all the sandbox environments.</span></span> <span data-ttu-id="892b1-143">このシナリオはまれであり、移動を完了するための自動/セルフサービス アクションはありません。</span><span class="sxs-lookup"><span data-stu-id="892b1-143">This scenario is rare, and there is no automated/self-service action to complete the move.</span></span> <span data-ttu-id="892b1-144">このシナリオでは、Azure BLOB ストレージに格納されているファイルも移動されます。</span><span class="sxs-lookup"><span data-stu-id="892b1-144">In this scenario, files that are stored in Azure Blob Storage will also be moved.</span></span> <span data-ttu-id="892b1-145">実稼働環境を別のデータ センターに移動するために必要な保守ウィンドウとダウンタイムの詳細については、次を参照してください。[サービスの説明](https://go.microsoft.com/fwlink/?LinkId=867755&clcid=0x409)と関連するサービス レベル契約 (SLA) のドキュメント。</span><span class="sxs-lookup"><span data-stu-id="892b1-145">For information about the maintenance window and downtime that are required in order to move a production environment to a different data center, see [Service Description](https://go.microsoft.com/fwlink/?LinkId=867755&clcid=0x409) and the related service-level agreement (SLA) documents.</span></span>
 

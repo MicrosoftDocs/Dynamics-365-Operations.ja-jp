@@ -16,14 +16,15 @@ ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
 ms.translationtype: HT
-ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
-ms.openlocfilehash: 9c9588542822ff7f30028c2a128e29f7d93cf858
+ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
+ms.openlocfilehash: 8663d0eaebe8cae33256220e96feebb3baac259e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/17/2018
+ms.lasthandoff: 12/18/2018
 
 ---
 
 # <a name="move-lcs-implementation-projects-to-different-azure-ad-tenants"></a><span data-ttu-id="af0b0-103">LCS 実装プロジェクトを異なる Azure AD テナントに移動する</span><span class="sxs-lookup"><span data-stu-id="af0b0-103">Move LCS implementation projects to different Azure AD tenants</span></span>
+
 [!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="af0b0-104">サブスクリプションと Microsoft Dynamics Lifecyle Services (LCS) 導入プロジェクトを別の Microsoft Azure Active Directory (Azure AD) テナントに移すことができます。</span><span class="sxs-lookup"><span data-stu-id="af0b0-104">You can move your subscriptions and your Microsoft Dynamics Lifecyle Services (LCS) Implementation project to a different Microsoft Azure Active Directory (Azure AD) tenant.</span></span> <span data-ttu-id="af0b0-105">この移動が必要になる場合のいくつかのシナリオを次に示します。</span><span class="sxs-lookup"><span data-stu-id="af0b0-105">Here are some scenarios where this move might be required:</span></span>
@@ -40,14 +41,17 @@ ms.lasthandoff: 09/17/2018
 ![定期売買を移動するためのプロセス](./media/move-subscription-process.png)
 
 ## <a name="activate-subscriptions-on-the-new-tenant"></a><span data-ttu-id="af0b0-112">新しいテナントのサブスクリプションを有効化</span><span class="sxs-lookup"><span data-stu-id="af0b0-112">Activate subscriptions on the new tenant</span></span>
+
 <span data-ttu-id="af0b0-113">クラウド サービス プロバイダまたはボリューム ライセンスの再販業者と協力して、新しい Azure AD テナントに対するサブスクリプションを有効にします。</span><span class="sxs-lookup"><span data-stu-id="af0b0-113">Work with your cloud service provider or volume license reseller to activate the subscriptions against the new Azure AD tenant.</span></span> <span data-ttu-id="af0b0-114">ユーザーおよびアドオン環境のすべてのサブスクリプションを有効にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="af0b0-114">All subscriptions for users, and for add-on environments, must be activated.</span></span>
 
 ### <a name="cloud-service-provider"></a><span data-ttu-id="af0b0-115">クラウド サービス プロバイダー</span><span class="sxs-lookup"><span data-stu-id="af0b0-115">Cloud service provider</span></span>
+
 <span data-ttu-id="af0b0-116">Microsoft クラウド ソリューション プロバイダー (CSP) 契約を通じてライセンスを取得している場合は、クラウド サービス プロバイダーから新しいテナントに対して必要なサブスクリプションを購入してください。</span><span class="sxs-lookup"><span data-stu-id="af0b0-116">If you're licensed through a Microsoft Cloud Solution Provider (CSP) agreement, purchase the required subscriptions against the new tenant from your cloud service provider.</span></span> <span data-ttu-id="af0b0-117">新しいテナントが既に存在する場合、クラウド サービス プロバイダは、再販業者関係を要求する必要があります。</span><span class="sxs-lookup"><span data-stu-id="af0b0-117">If the new tenant already exists, the cloud service provider must request a reseller relationship.</span></span> <span data-ttu-id="af0b0-118">または、パートナー センターのクラウド サービス プロバイダで必要な既定ドメイン名の新しい顧客を作成する必要があります**\*.onmicrosoft.com** (たとえば、**contoso.onmicrosoft.com**)。</span><span class="sxs-lookup"><span data-stu-id="af0b0-118">Alternatively, in Partner Center, the cloud service provider must create a new customer that has the desired default domain name, **\*.onmicrosoft.com** (for example, **contoso.onmicrosoft.com**).</span></span>
 
 <span data-ttu-id="af0b0-119">クラウド サービス プロバイダーに、今回は既存のサブスクリプションを中断しないよう依頼します。</span><span class="sxs-lookup"><span data-stu-id="af0b0-119">Ask the cloud service provider not to suspend the existing subscriptions at this time.</span></span>
 
 ### <a name="volume-licensing"></a><span data-ttu-id="af0b0-120">ボリューム ライセンス</span><span class="sxs-lookup"><span data-stu-id="af0b0-120">Volume Licensing</span></span>
+
 <span data-ttu-id="af0b0-121">Microsoft ボリューム ライセンス契約を通じてライセンスを取得している場合は、[ボリューム ライセンス サポート センター](https://www.microsoft.com/Licensing/servicecenter/Help/Contact.aspx)に連絡し、サブスクリプションを古いテナントから新しいテナントに再マップするように依頼する必要があります。</span><span class="sxs-lookup"><span data-stu-id="af0b0-121">If you're licensed through a Microsoft Volume Licensing agreement, you must call the [Volume Licensing support center](https://www.microsoft.com/Licensing/servicecenter/Help/Contact.aspx) and ask that the subscriptions be remapped from the old tenant to the new tenant.</span></span> <span data-ttu-id="af0b0-122">Microsoft Office 365 管理センターからボリューム ライセンスのサポートに連絡することができます。</span><span class="sxs-lookup"><span data-stu-id="af0b0-122">You can contact Volume Licensing Support through Microsoft Office 365 Admin center.</span></span> <span data-ttu-id="af0b0-123">定期売買が両方のテナントで有効になると、支払猶予期間を要求します。</span><span class="sxs-lookup"><span data-stu-id="af0b0-123">Request a grace period, when the subscriptions will be active on both tenants.</span></span> <span data-ttu-id="af0b0-124">顧客プライバシーの問題が原因で、顧客がこの要求を実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="af0b0-124">Because of customer privacy concerns, this request must be made by the customer.</span></span> <span data-ttu-id="af0b0-125">次の情報が必要です。</span><span class="sxs-lookup"><span data-stu-id="af0b0-125">You should have the following information available:</span></span>
 
 - <span data-ttu-id="af0b0-126">公的顧客番号</span><span class="sxs-lookup"><span data-stu-id="af0b0-126">Public customer number</span></span>
@@ -61,6 +65,7 @@ ms.lasthandoff: 09/17/2018
 > <span data-ttu-id="af0b0-132">古いテナントで LCS の廃棄が完了するまでの数週間、定期売買が両方のテナントで並行して有効であることが非常に重要です。</span><span class="sxs-lookup"><span data-stu-id="af0b0-132">It's crucial that the subscriptions be active on both tenants in parallel for a few weeks, until you've finished decommissioning LCS on the old tenant.</span></span>
 
 ## <a name="configure-lcs-on-the-new-tenant"></a><span data-ttu-id="af0b0-133">新しいテナントに LCS をコンフィギュレーションします。</span><span class="sxs-lookup"><span data-stu-id="af0b0-133">Configure LCS on the new tenant</span></span>
+
 <span data-ttu-id="af0b0-134">新しいテナントで、開始し設定する必要がある新しい LCS プロジェクトを取得します。</span><span class="sxs-lookup"><span data-stu-id="af0b0-134">On the new tenant, you will get a new LCS project that you must initiate and set up.</span></span>
 
 1. <span data-ttu-id="af0b0-135">LCS を完全に構成します。</span><span class="sxs-lookup"><span data-stu-id="af0b0-135">Fully configure LCS.</span></span> <span data-ttu-id="af0b0-136">コンフィギュレーションの一部として、ユーザー、Microsoft Azure DevOps アソシエーション、サブスクリプション見積り、アセット ライブラリおよびビジネス プロセス モデラー (BPM) などを追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="af0b0-136">As part of this configuration, you must add users, a Microsoft Azure DevOps association, subscription estimates, the Asset library, Business process modeler (BPM), and so on.</span></span>
@@ -99,9 +104,11 @@ ms.lasthandoff: 09/17/2018
 > <span data-ttu-id="af0b0-163">この期間中、2 つの並列 LCS プロジェクトがあります。</span><span class="sxs-lookup"><span data-stu-id="af0b0-163">During this period, you will have two parallel LCS projects.</span></span> <span data-ttu-id="af0b0-164">LCS 内の**定期売買を使用可能**ページの LCS プロジェクトに関連付けられている Azure AD テナントの名前と ID を確認できます。</span><span class="sxs-lookup"><span data-stu-id="af0b0-164">You can verify the name and ID of the Azure AD tenant that is associated with an LCS project on the **Subscriptions available** page in LCS.</span></span> <span data-ttu-id="af0b0-165">Azure Blob Storage に保存されている添付ファイルを処理するドキュメントは失われます。</span><span class="sxs-lookup"><span data-stu-id="af0b0-165">You will lose any document handling attachments that are stored in Azure Blob storage.</span></span>
 
 ## <a name="delete-environments-on-the-old-tenant"></a><span data-ttu-id="af0b0-166">古いテナントの環境の削除</span><span class="sxs-lookup"><span data-stu-id="af0b0-166">Delete environments on the old tenant</span></span>
+
 <span data-ttu-id="af0b0-167">新しい Azure AD テナントに対する新しい LCS プロジェクトが完全に機能した後、古い LCS プロジェクトで環境を停止、開放および削除する必要があります。</span><span class="sxs-lookup"><span data-stu-id="af0b0-167">After the new LCS project against the new Azure AD tenant is fully functional, you must stop, deallocate, and delete the environments on the old LCS project.</span></span> <span data-ttu-id="af0b0-168">完了したとき、**コンフィグレーション** ボタンは環境ごとに使用できるようになります。</span><span class="sxs-lookup"><span data-stu-id="af0b0-168">When you've finished, the **Configure** button becomes available for each environment.</span></span> <span data-ttu-id="af0b0-169">後で必要になる可能性のある残りのコンポーネントは、アセット ライブラリから保管する必要があります。</span><span class="sxs-lookup"><span data-stu-id="af0b0-169">You should save any remaining artifacts from the Asset library that you might require later.</span></span> <span data-ttu-id="af0b0-170">Microsoft は、顧客のアカウントを無効にし、サービスが長期間にわたって中断された後に顧客データを削除する権限を保有します。</span><span class="sxs-lookup"><span data-stu-id="af0b0-170">Microsoft reserves the right to disable the customer's account and delete the customer data after the service has been suspended for an extended period.</span></span>
 
 ## <a name="suspend-subscriptions-on-the-old-tenant"></a><span data-ttu-id="af0b0-171">古いテナントで定期売買を中断します。</span><span class="sxs-lookup"><span data-stu-id="af0b0-171">Suspend subscriptions on the old tenant</span></span>
+
 1. <span data-ttu-id="af0b0-172">すべての環境が削除されると、必要な LCS コンポーネントを保存し、クラウド サービス プロバイダまたは Volume Licensing Support と協力して、以前の Azure AD テナントのすべてのライセンスを中断します。</span><span class="sxs-lookup"><span data-stu-id="af0b0-172">After all the environments have been deleted, and you've saved the LCS artifacts that you require, work with your cloud service provider or Volume Licensing Support to suspend all the licenses on the old Azure AD tenant.</span></span>
 
     - <span data-ttu-id="af0b0-173">**クラウド サービス プロバイダー:** 古いテナントに対して既存の定期売買を中断します。</span><span class="sxs-lookup"><span data-stu-id="af0b0-173">**Cloud service provider:** Suspend the existing subscriptions against the old tenant.</span></span>

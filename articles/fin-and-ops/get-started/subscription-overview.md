@@ -16,14 +16,15 @@ ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
 ms.translationtype: HT
-ms.sourcegitcommit: dcbe39a5d9ca4a9fc109468772b6dd89b0dd971e
-ms.openlocfilehash: 87c3990e33e8e88e70cb9ef5ef0e4c306498efbf
+ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
+ms.openlocfilehash: e3a5eda1f219a9e1c0ee448864ec3763f9fe155f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 12/18/2018
 
 ---
 
 # <a name="subscriptions-lcs-projects-and-azure-active-directory-tenants-faq"></a><span data-ttu-id="c29d8-103">サブスクリプション、LCS プロジェクト、および Azure Active Directory テナントに関するよく寄せられる質問</span><span class="sxs-lookup"><span data-stu-id="c29d8-103">Subscriptions, LCS projects, and Azure Active Directory tenants FAQ</span></span>
+
 [!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="c29d8-104">顧客は、マイクロソフト ボリューム ライセンス契約またはマイクロソフト クラウド ソリューション プロバイダー (CSP) 契約を通じて、 Microsoft Dynamics 365 for Finance and Operations に加入すると、Microsoft Azure Active Directory (Azure AD) テナント、Microsoft Dynamics Lifecycle Services (LCS) 実装プロジェクトと、顧客が選択した 1 つのデータ センターに配備された任意の数のサンドボックス環境と、Finance and Operations の 1 つの実働インスタンスです。</span><span class="sxs-lookup"><span data-stu-id="c29d8-104">When customers subscribe to Microsoft Dynamics 365 for Finance and Operations through a Microsoft Volume Licensing agreement or a Microsoft Cloud Solution Provider (CSP) agreement, they usually have one Microsoft Azure Active Directory (Azure AD) tenant, one Microsoft Dynamics Lifecycle Services (LCS) Implementation project and any number of sandbox environments that are deployed to one data center of the customer's choice, and one production instance of Finance and Operations.</span></span> <span data-ttu-id="c29d8-105">これらのコア概念の詳細については、[Finance and operations アーキテクチャの概要](../imp-lifecycle/architecture-overview.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c29d8-105">For more information about these core concepts, see [Finance and operations architecture overview](../imp-lifecycle/architecture-overview.md).</span></span> <span data-ttu-id="c29d8-106">この設定は、ほとんどのプロジェクトで適切に動作しますが、さらに高度なシナリオが必要な場合もあります。または、導入ライフサイクル中の変更に対応する必要もあります。</span><span class="sxs-lookup"><span data-stu-id="c29d8-106">Although this setup works well for most projects, more advanced scenarios are sometimes required, or changes during the implementation lifecycle must be accommodated.</span></span>
