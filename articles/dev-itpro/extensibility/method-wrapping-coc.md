@@ -3,7 +3,7 @@ title: "クラスの拡張機能 - メソッドのラッピングとコマンド
 description: "このトピックでは、メソッド ラッピングを使用してパブリック メソッドと保護メソッドのビジネス ロジックを拡張する方法について説明します。"
 author: ChrisGarty
 manager: AnnBe
-ms.date: 11/02/2018
+ms.date: 12/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -26,7 +26,6 @@ ms.lasthandoff: 11/02/2018
 # <a name="class-extension-via-method-wrapping-and-chain-of-command-coc"></a>メソッドのラッピングとコマンド チェーン経由のクラスの拡張機能 (CoC)
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 クラス拡張やクラス強化の機能が、Microsoft Dynamics 365 for Finance and Operations で強化されました。 強化対象である基本クラスで定義されたメソッド関連のロジックをラップできるようになりました。 イベント ハンドラーを使用せずに、パブリック メソッドとプロテクト メソッドのロジックを拡張することができます。 メソッドをラップするとき、基本クラスのパブリック メソッドと保護されたメソッド、および変数にもアクセスできます。 この方法で、トランザクションを開始し、クラスに関連付けられた状態変数を容易に管理することができます。
 
