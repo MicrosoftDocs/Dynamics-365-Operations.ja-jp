@@ -20,10 +20,10 @@ ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: dda9c8cb7f3da99fb2e7df0372e59769cfaf77d1
-ms.openlocfilehash: ced27adb8fe481270cb008e187693cda96773339
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: 91d6e34c25710716788542dabb3bd7d935b2d4ab
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/13/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -40,6 +40,7 @@ ms.lasthandoff: 11/13/2018
 ![POS 画面レイアウト エンティティ](../retail/media/POS-layout-configuration-entities-diagram.png)
 
 ## <a name="visual-profile"></a><span data-ttu-id="43e2f-108">ビジュアル プロファイル</span><span class="sxs-lookup"><span data-stu-id="43e2f-108">Visual profile</span></span>
+
 <span data-ttu-id="43e2f-109">視覚プロファイルはレジスターに割り当てられ、レジスター固有でユーザー間で共有される視覚要素を指定します。</span><span class="sxs-lookup"><span data-stu-id="43e2f-109">Visual profiles are assigned to registers, and they specify the visual elements that are register-specific and shared across users.</span></span> <span data-ttu-id="43e2f-110">レジスターにサインインするユーザーには、同じテーマ、色、および画像が表示されます。</span><span class="sxs-lookup"><span data-stu-id="43e2f-110">Every user who signs in to the register sees the same theme, colors, and images.</span></span>
 
 ![Light テーマの POS ようこそ画面](../retail/media/POS-Welcome-Screen-with-Light-theme.png)
@@ -55,6 +56,7 @@ ms.lasthandoff: 11/13/2018
 - <span data-ttu-id="43e2f-123">**アプリケーションの背景** - アプリケーション全体で無地のテーマ色の代わりに使用されている背景画像を指定できます。</span><span class="sxs-lookup"><span data-stu-id="43e2f-123">**Application background** – You can specify a background image that is used instead of the solid theme color throughout the application.</span></span> <span data-ttu-id="43e2f-124">ログイン バックグラウンドに関しては、ファイル サイズをできる限り小さくする必要があります。</span><span class="sxs-lookup"><span data-stu-id="43e2f-124">As for login backgrounds, the file size should be kept as small as possible.</span></span>
 
 ## <a name="screen-layouts"></a><span data-ttu-id="43e2f-125">画面レイアウト</span><span class="sxs-lookup"><span data-stu-id="43e2f-125">Screen layouts</span></span>
+
 <span data-ttu-id="43e2f-126">画面レイアウト構成によって、POS ようこそ画面および**トランザクション**画面での UI コントロールのアクション、コンテンツ、および配置が決定されます。</span><span class="sxs-lookup"><span data-stu-id="43e2f-126">Screen layout configurations determine the actions, content, and placement of UI controls on the POS welcome screen and **Transaction** screen.</span></span>
 
 ![POS 画面レイアウト表示](../retail/media/POS-Screen-Layout-View.png)
@@ -95,6 +97,7 @@ ms.lasthandoff: 11/13/2018
 ![POS のレイアウト サイズ](../retail/media/POS-Session-Information.png)
 
 ### <a name="button-grids"></a><span data-ttu-id="43e2f-163">ボタン グリッド</span><span class="sxs-lookup"><span data-stu-id="43e2f-163">Button grids</span></span>
+
 <span data-ttu-id="43e2f-164">画面レイアウトでのレイアウト サイズごとに、POS ようこそ画面と**トランザクション**画面のボタン グリッドをコンフィギュレーションし、割り当てることができます。</span><span class="sxs-lookup"><span data-stu-id="43e2f-164">For each layout size in a screen layout, you can configure and assign button grids for the POS welcome screen and **Transaction** screen.</span></span> <span data-ttu-id="43e2f-165">ようこそ画面のボタン グリッドは、左から右へ、最も小さい番号 (ようこそ画面 1) から最も大きい番号へ自動的にレイアウトされます。</span><span class="sxs-lookup"><span data-stu-id="43e2f-165">Button grids for the welcome screen are automatically laid out from left to right, from the lowest number (Welcome screen 1) to the highest number.</span></span>
 
 <span data-ttu-id="43e2f-166">フル POS レイアウトでは、ボタン グリッドの配置は画面レイアウト デザイナーで指定されます。</span><span class="sxs-lookup"><span data-stu-id="43e2f-166">In Full POS layouts, the placement of button grids is specified in the screen layout designer.</span></span>
@@ -104,6 +107,7 @@ ms.lasthandoff: 11/13/2018
 ![コンパクト レイアウトのボタン グリッド](../retail/media/Compact-View-Button-Grids.png)
 
 ### <a name="images"></a><span data-ttu-id="43e2f-170">イメージ</span><span class="sxs-lookup"><span data-stu-id="43e2f-170">Images</span></span>
+
 <span data-ttu-id="43e2f-171">画面レイアウトでの各レイアウト サイズで、POS UI に含めるための画像を指定できます。</span><span class="sxs-lookup"><span data-stu-id="43e2f-171">For each layout size in a screen layout, you can specify images to include in the POS UI.</span></span> <span data-ttu-id="43e2f-172">フル POS レイアウトには、ようこそ画面に 1 つの画像を指定できます。</span><span class="sxs-lookup"><span data-stu-id="43e2f-172">For Full POS layouts, a single image can be specified for the welcome screen.</span></span> <span data-ttu-id="43e2f-173">この画像は、左側に最初の UI 要素として表示されます。</span><span class="sxs-lookup"><span data-stu-id="43e2f-173">This image appears as the first UI element on the left.</span></span> <span data-ttu-id="43e2f-174">**トランザクション**画面で、タブの画像、またはロゴとして画像を使用することができます。</span><span class="sxs-lookup"><span data-stu-id="43e2f-174">On the **Transaction** screen, images can be used as tab images or as a logo.</span></span> <span data-ttu-id="43e2f-175">コンパクト POS レイアウトは、これらの画像を使用しません。</span><span class="sxs-lookup"><span data-stu-id="43e2f-175">Compact POS layouts don't use these images.</span></span>
 
 ### <a name="screen-layout-designer"></a><span data-ttu-id="43e2f-176">画面レイアウト デザイナー</span><span class="sxs-lookup"><span data-stu-id="43e2f-176">Screen layout designer</span></span>
@@ -141,11 +145,13 @@ ms.lasthandoff: 11/13/2018
     - <span data-ttu-id="43e2f-222">**カスタム コントロール** – カスタム コントロールは、画面レイアウト内のプレース ホルダーとして機能し、カスタム コンテンツ用のスペースを確保できるようにします。</span><span class="sxs-lookup"><span data-stu-id="43e2f-222">**Custom control** – The custom control acts as a placeholder in the screen layout and lets you reserve space for custom content.</span></span> <span data-ttu-id="43e2f-223">カスタム コントロールは、フル レイアウトでのみ使用できます。</span><span class="sxs-lookup"><span data-stu-id="43e2f-223">The custom control is available only for Full layouts.</span></span>
 
 ### <a name="compact-layout-designer"></a><span data-ttu-id="43e2f-224">コンパクト レイアウト デザイナー</span><span class="sxs-lookup"><span data-stu-id="43e2f-224">Compact layout designer</span></span>
+
 <span data-ttu-id="43e2f-225">フル レイアウト デザイナーと同様、コンパクト レイアウト デザイナーでは電話や小さなタブレット用の POS 画面レイアウトをコンフィギュレーションできます。</span><span class="sxs-lookup"><span data-stu-id="43e2f-225">Like the Full layout designer, the Compact layout designer lets you configure the POS screen layout for phones and small tablets.</span></span> <span data-ttu-id="43e2f-226">ただし、この場合は、レイアウト自体は固定されています。</span><span class="sxs-lookup"><span data-stu-id="43e2f-226">However, in this case, the layout itself is fixed.</span></span> <span data-ttu-id="43e2f-227">右クリックしてショートカット メニューを使用することで、レイアウトのコントロールをコンフィギュレーションできます。</span><span class="sxs-lookup"><span data-stu-id="43e2f-227">You can configure the controls in the layout by right-clicking and using the shortcut menu.</span></span> <span data-ttu-id="43e2f-228">ただし、追加のコンテンツにドラッグ アンド ドロップ操作を使用することはできません。</span><span class="sxs-lookup"><span data-stu-id="43e2f-228">However, you can't use drag-and-drop operations for additional content.</span></span>
 
 ![コンパクト レイアウト デザイナー](../retail/media/Compact-Layout-Designer.png)
 
 ### <a name="button-grid-designer"></a><span data-ttu-id="43e2f-230">ボタン グリッド デザイナー</span><span class="sxs-lookup"><span data-stu-id="43e2f-230">Button grid designer</span></span>
+
 <span data-ttu-id="43e2f-231">ボタン グリッドのデザイナーにより、フルおよびコンパクト両方のレイアウトの、POS ようこそ画面および**トランザクション**画面で使用可能なボタン グリッドをコンフィギュレーションできます。</span><span class="sxs-lookup"><span data-stu-id="43e2f-231">The button grid designer lets you configure button grids that can be used on the POS welcome screen and **Transaction** screen for both Full and Compact layouts.</span></span> <span data-ttu-id="43e2f-232">さまざまなレイアウトとレイアウト タイプで、同じボタン グリッドを使用できます。</span><span class="sxs-lookup"><span data-stu-id="43e2f-232">The same button grid can be used across layouts and layout types.</span></span> <span data-ttu-id="43e2f-233">画面レイアウト デザイナーと同様、ボタン グリッド デザイナーは、ユーザーがアクセスするたびに ClickOnce の配置テクノロジーを使用してアプリケーションの最新バージョンをダウンロード、インストール、および起動します。</span><span class="sxs-lookup"><span data-stu-id="43e2f-233">Like the screen layout designer, the button grid designer uses the ClickOnce deployment technology to download, install, and start the latest version of the application every time that users access it.</span></span> <span data-ttu-id="43e2f-234">必ず ClickOnce のブラウザの要件を確認してください。</span><span class="sxs-lookup"><span data-stu-id="43e2f-234">Be sure to check the browser requirements for ClickOnce.</span></span> <span data-ttu-id="43e2f-235">Google Chrome などの一部のブラウザーでは、拡張機能が必要です。</span><span class="sxs-lookup"><span data-stu-id="43e2f-235">Some browsers, such as Google Chrome, require extensions.</span></span>
 
 ![ボタン グリッド デザイナー](../retail/media/Button-Grid-Designer.png)

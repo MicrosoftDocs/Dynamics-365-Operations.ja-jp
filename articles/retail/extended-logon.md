@@ -20,10 +20,10 @@ ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 4e3f8042871e5e423b559bb0e0dae0006af00194
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: c5771146723b791eb0b3eb5f571ef012cfaadcb9
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -68,7 +68,4 @@ ms.lasthandoff: 08/09/2018
 ## <a name="using-extended-logon"></a><span data-ttu-id="1f487-133">拡張ログオンの使用</span><span class="sxs-lookup"><span data-stu-id="1f487-133">Using extended logon</span></span>
 
 <span data-ttu-id="1f487-134">拡張ログオンを構成すると、作業者にバーコードまたは磁気ストライプが割り当てられ、作業者は POS ログオン ページが表示されている間に、自分のカードを読み取るか、またはスキャンする必要があります。</span><span class="sxs-lookup"><span data-stu-id="1f487-134">When extended logon is configured, and a worker has been assigned a bar code or magnetic stripe, the worker just has to swipe or scan his or her card while the POS logon page is displayed.</span></span> <span data-ttu-id="1f487-135">ログオンを続行する前にパスワードが必要な場合、作業者は自分のパスワードを入力するように要求されます。</span><span class="sxs-lookup"><span data-stu-id="1f487-135">If a password is also required before logon can proceed, the worker is prompted to enter his or her password.</span></span>
-
-
-
 

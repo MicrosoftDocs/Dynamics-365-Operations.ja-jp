@@ -20,10 +20,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 2b536ad4f29a3bb76294ef2fba30c529c24f1375
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: 8b78762ce70b318e1f77e1e49ffaa7b72f01667f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -42,25 +42,30 @@ ms.lasthandoff: 08/09/2018
 <span data-ttu-id="8e24b-112">このページでは、設定、コンフィギュレーション、および Dynamics 365 for Retail のコール センター機能の機能使用に関連する該当ドキュメントへのリンクが提供されます。</span><span class="sxs-lookup"><span data-stu-id="8e24b-112">This page provides links to relevant documentation related to the setup, configuration, and functional use of the call center features in Dynamics 365 for Retail.</span></span>
 
 ## <a name="configure-the-call-center"></a><span data-ttu-id="8e24b-113">コール センターのコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="8e24b-113">Configure the call center</span></span>
+
 [<span data-ttu-id="8e24b-114">注文処理オプションの設定</span><span class="sxs-lookup"><span data-stu-id="8e24b-114">Set up order processing options</span></span>](set-up-order-processing-options.md)
 
 ## <a name="configure-order-processing"></a><span data-ttu-id="8e24b-115">注文処理のコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="8e24b-115">Configure order processing</span></span>
+
 [<span data-ttu-id="8e24b-116">詐欺警告の設定</span><span class="sxs-lookup"><span data-stu-id="8e24b-116">Set up fraud alerts</span></span>](set-up-fraud-alerts.md)
 
 [<span data-ttu-id="8e24b-117">手動の注文保留</span><span class="sxs-lookup"><span data-stu-id="8e24b-117">Manual Order Holds</span></span>](work-with-order-holds.md)
 
 ## <a name="configure-payment-processing"></a><span data-ttu-id="8e24b-118">支払処理のコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="8e24b-118">Configure payment processing</span></span>
+
 [<span data-ttu-id="8e24b-119">コール センターでの支払方法</span><span class="sxs-lookup"><span data-stu-id="8e24b-119">Payment methods in a call center</span></span>](work-with-payments.md)
 
 ## <a name="configure-delivery-modes"></a><span data-ttu-id="8e24b-120">出荷モードの構成</span><span class="sxs-lookup"><span data-stu-id="8e24b-120">Configure delivery modes</span></span>
+
 [<span data-ttu-id="8e24b-121">コール センターの出荷モードと雑費の構成</span><span class="sxs-lookup"><span data-stu-id="8e24b-121">Configure call center delivery modes and charges</span></span>](configure-call-center-delivery.md)
 
 ## <a name="configure-direct-marketing"></a><span data-ttu-id="8e24b-122">直接マーケティングのコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="8e24b-122">Configure direct marketing</span></span>
+
 [<span data-ttu-id="8e24b-123">コール センターのカタログ</span><span class="sxs-lookup"><span data-stu-id="8e24b-123">Call center catalogs</span></span>](call-center-catalogs.md)
 
 [<span data-ttu-id="8e24b-124">最新/頻度/金額 (RFM) 分析の設定</span><span class="sxs-lookup"><span data-stu-id="8e24b-124">Set up RFM analysis</span></span>](set-up-rfm-analysis.md)
 
 ## <a name="configure-continuity-programs"></a><span data-ttu-id="8e24b-125">連続プログラムのコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="8e24b-125">Configure continuity programs</span></span>
-[<span data-ttu-id="8e24b-126">コール センターの連続プログラムの設定</span><span class="sxs-lookup"><span data-stu-id="8e24b-126">Set up a continuity program for a call center</span></span>](set-up-continuity-program.md)
 
+[<span data-ttu-id="8e24b-126">コール センターの連続プログラムの設定</span><span class="sxs-lookup"><span data-stu-id="8e24b-126">Set up a continuity program for a call center</span></span>](set-up-continuity-program.md)
 

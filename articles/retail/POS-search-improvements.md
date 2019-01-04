@@ -19,10 +19,10 @@ ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 50b0cec27e343b3b6aba464a04c9883160ab263a
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: 1fa38002377fac24a5f3e25bd5924ecb23fec70a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -66,7 +66,7 @@ ms.lasthandoff: 08/09/2018
 - <span data-ttu-id="ab046-145">小売業者は、ユーザーが製品名を入力すると検索候補を表示する製品検索をコンフィギュレーションできるようになりました。</span><span class="sxs-lookup"><span data-stu-id="ab046-145">Retailers can now configure product search to show search suggestions as users type product names.</span></span> <span data-ttu-id="ab046-146">この機能の新しい設定は、**製品検索** という名前のグループで、POS 機能プロファイルで使用できます。</span><span class="sxs-lookup"><span data-stu-id="ab046-146">A new setting for this functionality is available in the POS functionality profile, in a group that is named **Product search**.</span></span> <span data-ttu-id="ab046-147">設定は **入力中に検索提案を表示** と呼ばれます。</span><span class="sxs-lookup"><span data-stu-id="ab046-147">The setting is named **Show search suggestions while typing**.</span></span> <span data-ttu-id="ab046-148">この機能は、全体の名前を手動で入力する必要がないため、従業員が検索している製品をすばやく見つけるのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="ab046-148">This functionality can help employees quickly find the product that they are searching for, because they don't have to type the whole name manually.</span></span>
 - <span data-ttu-id="ab046-149">製品検索アルゴリズムは、製品の **検索名** プロパティで検索された条件も検索するようになります。</span><span class="sxs-lookup"><span data-stu-id="ab046-149">The product search algorithm now also searches for the searched terms in the **Search name** property of the product.</span></span>
 
-<span data-ttu-id="ab046-150">![製品候補](./media/Productsuggestions.png "製品候補")</span><span class="sxs-lookup"><span data-stu-id="ab046-150">![Product suggestions](./media/Productsuggestions.png "Product suggestions")</span></span>
+    <span data-ttu-id="ab046-150">![製品候補](./media/Productsuggestions.png "製品候補")</span><span class="sxs-lookup"><span data-stu-id="ab046-150">![Product suggestions](./media/Productsuggestions.png "Product suggestions")</span></span>
 
 ## <a name="customer-search"></a><span data-ttu-id="ab046-151">顧客検索</span><span class="sxs-lookup"><span data-stu-id="ab046-151">Customer search</span></span>
 
