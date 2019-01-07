@@ -18,10 +18,10 @@ ms.author: laneswenka
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
-ms.openlocfilehash: 9b6ce447f417a869f6812ae49af4a02accb1d28b
+ms.sourcegitcommit: a388e0efe6c19a3aabe04e7fff039ce11ae023c4
+ms.openlocfilehash: cde3fd4833847975b8d94f0396013a7f4b797106
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/01/2018
+ms.lasthandoff: 01/07/2019
 
 ---
 
