@@ -25,11 +25,11 @@
                   href: get-started/system-requirements-on-prem.md
                 - name: オンプレミス配置の倉庫管理のコンフィギュレーション
                   href: ../dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/fin-and-ops/toc.json
-            - name: 対象となる標準のプラットフォーム リリース
+            - name: 標準および最初のリリース サービス更新
               href: get-started/public-preview-releases.md
             - name: Finance and Operations の購入
               items:
-                - name: Finance and Operations (オンプレミス) の購入
+                - name: Finance and Operations (on-premises) の購入
                   href: get-started/purchase-on-premises.md
         - name: 新機能および変更された機能
           href: get-started/whats-new-changed.md
@@ -48,13 +48,13 @@
               href: get-started/ax-2012-features-not-implemented-but-not-deprecated.md
             - name: オンプレミス配置で実装されていない機能
               href: get-started/features-not-implemented-on-prem.md
-            - name: Finance and Operations バージョン 8.1.3 (2018 年 12 月)
+            - name: Finance and Operations バージョン 8.1.3 (2019 年 1 月)
               href: get-started/whats-new-changed-8-1-3.md
-            - name: Platform update 23 (2018 年 12 月)
+            - name: Platform update 23 (2019 年 1 月)
               href: get-started/whats-new-platform-update-23.md
-            - name: Platform update 22 (2018 年 11 月)
+            - name: Platform update 22 (2018 年 12 月)
               href: get-started/whats-new-platform-update-22.md
-            - name: Finance and Operations バージョン 8.1.2 (2018 年 11 月)
+            - name: Finance and Operations バージョン 8.1.2 (2018 年 12 月)
               href: get-started/whats-new-changed-8-1-2.md
             - name: Finance and Operations バージョン 8.1.1 (2018 年 10 月)
               href: get-started/whats-new-changed-8-1-1.md
@@ -373,10 +373,22 @@
                       href: ../supply-chain/sales-marketing/field-service-work-order.md
                     - name: Field Service の契約の請求書と Finance and Operations の自由書式の請求書との同期
                       href: ../supply-chain/sales-marketing/field-service-invoice.md
+                    - name: Field Service から Finance and Operations への在庫振替および在庫調整の同期
+                      href: ../supply-chain/sales-marketing/synchronize-inventory-adjustments.md
+                    - name: Finance and Operations から Field Service への在庫レベル情報の同期
+                      href: ../supply-chain/sales-marketing/synchronize-inventory-level-info.md
+                    - name: Finance and Operations から Field Service への製品在庫単位の同期
+                      href: ../supply-chain/sales-marketing/synchronize-products-inv-unit.md
+                    - name: Finance and Operations から Field Service へのプロジェクト リストの同期
+                      href: ../supply-chain/sales-marketing/synchronize-project-list.md
+                    - name: Finance and Operations から Field Service への倉庫の同期
+                      href: ../supply-chain/sales-marketing/synchronize-warehouse.md
+                    - name: Finance and Operations から Field Service へのワーク オーダーの同期
+                      href: ../supply-chain/sales-marketing/synchronize-work-orders.md
                 - name: Project Service Automation 統合のコンフィギュレーション
                   href: ../financials/project-management/PSA-integration.md?toc=/fin-and-ops/toc.json
                   items:
-                    - name: Project Service Automation 統合パラメータ
+                    - name: Project Service Automation 統合パラメーター
                       href: ../financials/project-management/PSA-parameters.md?toc=/fin-and-ops/toc.json
                     - name: プロジェクト契約とプロジェクトの同期
                       href: ../financials/project-management/project-contracts-templates.md?toc=/fin-and-ops/toc.json
@@ -388,8 +400,8 @@
                       href: ../financials/project-management/project-estimates-templates.md?toc=/fin-and-ops/toc.json
                     - name: プロジェクト実績のプロジェクト統合仕訳帳への同期
                       href: ../financials/project-management/project-actuals-templates.md?toc=/fin-and-ops/toc.json
-                - name: 外部 Web サービスの使用
-                  href: ../dev-itpro/data-entities/consume-external-web-service.md?toc=/fin-and-ops/toc.json
+        - name: 外部 Web サービスの使用
+          href: ../dev-itpro/data-entities/consume-external-web-service.md?toc=/fin-and-ops/toc.json
     - name: データ管理
       href: ../dev-itpro/data-entities/data-entities-data-packages.md?toc=/fin-and-ops/toc.json
       items:
@@ -405,6 +417,8 @@
                   href: ../dev-itpro/data-entities/configuration-data-packages.md
                 - name: コンフィギュレーション データ パッケージ (2017 年 7 月リリースのみ)
                   href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/fin-and-ops/toc.json
+                - name: エンティティ格納を Data Lake として使用可能にする
+                  href: ../dev-itpro/data-entities/entity-store-data-lake.md?toc=/fin-and-ops/toc.json
             - name: コンフィギュレーション データ テンプレート
               href: ../dev-itpro/data-entities/configuration-data-templates.md?toc=/fin-and-ops/toc.json
             - name: エンティティの変更の追跡
@@ -529,6 +543,8 @@
                   href: ../financials/accounts-payable/centralized-payments-accounts-payable.md
                 - name: 決済のコンフィギュレーション
                   href: ../financials/cash-bank-management/configure-settlement.md
+                - name: 残余決済
+                  href: ../financials/cash-bank-management/settle-remainder.md
                 - name: 仕入先支払の概要
                   href: ../financials/cash-bank-management/tasks/vendor-payment-overview.md
                 - name: 仕入先支払ワークスペース
@@ -2103,8 +2119,6 @@
               href: ../financials/localizations/latam-mex-isr-declaration-report-supporting-processes.md
             - name: 自由書式の請求書の転記
               href: ../financials/localizations/tasks/mx-00010-post-free-text-invoice.md
-            - name: メキシコの電子勘定科目レポート バージョン 1.1 の作成
-              href: ../financials/localizations/tasks/mx-00020-electronic-ledger.md
             - name: 電子請求書のパラメーターの設定
               href: ../financials/localizations/tasks/mx-00010-set-parameters-electronic-invoice.md
             - name: メキシコの売上税コードの設定
