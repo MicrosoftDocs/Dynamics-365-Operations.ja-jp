@@ -147,11 +147,13 @@
       href: POS-search-improvements.md
     - name: POS での在庫検索
       href: product-variants-POS.md
+    - name: POS でのトランザクションの中断および再開
+      href: pos-suspend-recall-transactions.md
     - name: ハードウェア周辺機器
       items:
-        - name: 小売周辺機器
+        - name: Retail 周辺機器
           href: retail-peripherals-overview.md
-        - name: 小売の周辺機器シミュレーター
+        - name: Retail 周辺機器シミュレーター
           href: dev-itpro/retail-peripheral-simulator.md
         - name: POS への周辺機器の接続
           href: define-maintain-channel-clients-registers-hw-stations.md
@@ -478,8 +480,10 @@
       items:
         - name: Retail のアップグレードおよび N-1 のサポート
           href: dev-itpro/overview-upgrade-n-minus1.md
-        - name: Phased Rollout (N-1) のインストール、コンフィギュレーション、切替
+        - name: Phased Rollout (N-1) のインストール、構成、切替
           href: dev-itpro/n-1-installation-configuration.md
+        - name: Retail チャネル拡張機能を最新の Retail SDK にアップグレード
+          href: dev-itpro/retailSDK-update.md
     - name: 実装ガイダンス
       items:
         - name: デバイス管理実装ガイダンス

@@ -261,6 +261,8 @@
               href: extensibility/extensibility-changes-811.md
             - name: 拡張機能の変更 (バージョン 8.1.2)
               href: extensibility/extensibility-changes-812.md
+            - name: 拡張機能の変更 (バージョン 8.1.3)
+              href: extensibility/extensibility-changes-813.md
         - name: 基本
           items:
             - name: 侵入的なカスタマイズ
@@ -883,12 +885,33 @@
       href: deployment/deploy-demo-environment.md
     - name: クラウド配置
       items:
+        - name: セルフサービス配置
+          href: deployment/infrastructure-stack.md
+          items:
+            - name: 新しい環境の配置
+              href: deployment/deployenvironment-newinfrastructure.md
+            - name: 配置に関するよく寄せられる質問
+              href: deployment/deploymentFAQ.md
+            - name: セルフサービス配置に関する既知の問題
+              href: deployment/known-issues-new-deployment-experience.md
+            - name: 配置の保守操作
+              href: deployment/maintenanceoperationsguide-newinfrastructure.md
+            - name: 環境の更新
+              href: deployment/updateenvironment-newinfrastructure.md
+            - name: セルフサービス配置で配置された環境のトラブルシューティング
+              href: deployment/troubleshoot-newinfrastructure.md
         - name: Azure Resource Manager の研修の完了
           href: deployment/arm-onboarding.md
         - name: Azure ExpressRoute と Finance and Operations
           href: deployment/expressroute.md
         - name: Finance and Operations のアーキテクチャ
           href: ../fin-and-ops/imp-lifecycle/architecture-overview.md
+        - name: クラウド環境への更新プログラムの適用
+          href: deployment/apply-deployable-package-system.md
+        - name: クラウドでホストされている Retail チャネル コンポーネントへの更新プログラムと拡張機能の適用
+          href: deployment/Update-retail-channel.md
+        - name: クラウドでホストされている Retail チャネル コンポーネントの初期化
+          href: deployment/Initialize-Retail-Channels.md
     - name: オンプレミス配置
       href: deployment/on-premises-deployment-landing-page.md
       items:
@@ -931,8 +954,6 @@
       items:
         - name: モデルの配置可能なパッケージの作成
           href: deployment/create-apply-deployable-package.md
-        - name: クラウド環境への更新プログラムの適用
-          href: deployment/apply-deployable-package-system.md
         - name: 配置可能なパッケージのコマンドラインからのインストール
           href: deployment/install-deployable-package.md
         - name: パッケージのアンインストール
@@ -1021,8 +1042,6 @@
           href: migration-upgrade/upgrade-latest-platform-update.md
         - name: Dynamics AX プラットフォームの 2016 年 8 月リリースへのアップグレード
           href: migration-upgrade/update-platform-each-release.md
-        - name: サンドボックス環境のアップグレード
-          href: migration-upgrade/upgrade-sandbox-environment.md
         - name: 開発環境、デモ環境、サンドボックス環境でのデータのアップグレード
           href: migration-upgrade/upgrade-data-to-latest-update.md
         - name: 開発ツールの更新
