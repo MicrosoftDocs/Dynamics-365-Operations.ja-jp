@@ -1,7 +1,7 @@
 ---
 title: "パフォーマンス SDK および Visual Studio Online を介したマルチ ユーザー テスト"
 description: "このトピックでは、Performance SDK について説明し、Visual Studio Online を使用してマルチユーザー テストを行う方法を示します。"
-author: jujoh
+author: kfend
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: article
