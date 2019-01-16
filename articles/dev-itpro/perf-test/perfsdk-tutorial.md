@@ -1,7 +1,7 @@
 ---
 title: "パフォーマンス SDK および Visual Studio Online を介したマルチ ユーザー テスト"
 description: "このトピックでは、Performance SDK について説明し、Visual Studio Online を使用してマルチユーザー テストを行う方法を示します。"
-author: jujoh
+author: kfend
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: article
@@ -18,10 +18,10 @@ ms.author: jujoh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
-ms.openlocfilehash: c118002b81fe3530ff09c30230a2484df7697980
+ms.sourcegitcommit: 41ea8a6d8743e8919e8c52afe134e8a3c3c576b2
+ms.openlocfilehash: 0348149280bffe9e83e16cd994c1021b5876a6aa
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/17/2018
+ms.lasthandoff: 01/16/2019
 
 ---
 
