@@ -18,10 +18,10 @@ ms.author: tabell
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 ms.translationtype: HT
-ms.sourcegitcommit: 222041860cd29274a3edddba037773a833b21d14
-ms.openlocfilehash: e2ae208d36979147e8cced814592961eefb68f4c
+ms.sourcegitcommit: 0cdf6e0a15bb61f4529de19a76ea2a31e8a945f8
+ms.openlocfilehash: ca89dd5bb0aee58be56e0e7b2fcea974e82c4c06
 ms.contentlocale: ja-jp
-ms.lasthandoff: 12/05/2018
+ms.lasthandoff: 12/28/2018
 
 ---
 
@@ -31,14 +31,15 @@ ms.lasthandoff: 12/05/2018
 
 このトピックでは、古いデータベースを最新の Finance and Operations のアプリケーション リリースにアップグレードする方法について説明します。
 
-トピックでは、Microsoft Dynamics 365 for Finance and Operations、レベル 1 環境のデータベースを最新の更新バージョンにアップグレードするプロセスについて説明します。 レベル 1 環境は、開発、1 ボックス、またはデモ環境とも呼ばれます。 指示は、標準/プレミア承認テスト サンドボックス環境 (層 2または 層 3) 以上のサンドボックス層にも適用されます。
+トピックでは、Microsoft Dynamics 365 for Finance and Operations、レベル 1 環境のデータベースを最新の更新バージョンにアップグレードするプロセスについて説明します。 レベル 1 環境は、開発、1 ボックス、またはデモ環境とも呼ばれます。 
 
-一部のレベル 2 以上の環境では、Microsoft サービス エンジニアリング チーム (DSE) がデータのアップグレードを実行します。 詳細については、[Finance and Operations の最新の更新への移動プロセス](upgrade-latest-update.md) で「エンド ツー エンドのアップグレード プロセス」を参照してください。
+運用環境を含むレベル 2 以上の環境では、[Finance and Operations の最新の更新プログラムに移動するためのプロセス](upgrade-latest-update.md)で説明されているセルフ サービスのアップグレード手順を実行します。
 
 > [!IMPORTANT]
-> - Finance and Operations の最新の **プラットフォーム** を更新している場合、データベースをアップグレードする必要は**ありません**。 プラットフォーム更新プログラムには、下位互換性のあります。 このトピックは、Microsoft Dynamics 365 for Operations version 1611 (November 2016) から Microsoft Dynamics 365 for Finance and Operations 7.3 へのアップグレードなど、Finance and Operations アプリケーションのリリース間でのアップグレードのプロセスに対してのみ適用されます。
+> - Finance and Operations の最新の **プラットフォーム** を更新している場合、データベースをアップグレードする必要は**ありません**。 プラットフォーム更新プログラムには、下位互換性のあります。 このトピックは、Microsoft Dynamics 365 for Operations version 1611 (November 2016) から Microsoft Dynamics 365 for Finance and Operations 8.0 へのアップグレードなど、Finance and Operations アプリケーションのリリース間でのアップグレードのプロセスに対してのみ適用されます。
 > - このプロセスは、Microsoft Azure blob ストレージに保存されているドキュメント添付ファイルのアップグレードには適用されません。
 > - アップグレードされたすべてのカスタム コードは、データ アップグレード プロセスを実行する前に環境に適用する必要があります。
+> - バージョン 8.0 以降のFinance and Operations を使用している場合、アプリケーションのバージョンの間でデータのアップグレードは行われなくなりました。
 
 ## <a name="before-you-begin"></a>準備
 
@@ -100,6 +101,7 @@ ms.lasthandoff: 12/05/2018
     - Finance and Operations の以前のリリースを 2017 年 7 月リリース (7.2) にアップグレードする場合、パッケージ名は **DataUpgrade-July2017** から始まります。 アップグレードするリリースに対応するパッケージを選択します。 
     - Finance and Operations の以前のリリースをリリース 7.3 (2017 年 12 月) にアップグレードする場合、パッケージ名は **DataUpgrade-7-3** から始まります。
     - Finance and Operations の以前のリリースをリリース 8.0 (2018 年 4 月) にアップグレードする場合、パッケージ名は **DataUpgrade-8-0** から始まります。
+    - Finance and Operations の以前のリリースをリリース 8.1 (2018 年 10 月) にアップグレードする場合、パッケージ名は **DataUpgrade-8-1** から始まります。
 
 > [!NOTE]
 > LCS から展開されたコンピュータには、ローカル データ アップグレード パッケージが既に用意されています。 ただし、これらのファイルは最新ではない可能性があります。 常に LCS から最新のデータのアップグレード パッケージをダウンロードします。
@@ -430,7 +432,7 @@ KB 番号 3170386 がインストールされていない場合、次のエラ�
 | SysOAuthUserTokens.EncryptedAccessToken                          | 無                       |
 | SysOAuthUserTokens.EncryptedRefreshToken                         | 無                       |
 
-## <a name="additional-resources"></a>その他のリソース
+## <a name="additional-resources"></a>追加リソース
 
-[Microsoft Dynamics 365 for Finance and Operations の最新更新への移行の概要](upgrade-latest-update.md)
+[最新の Finance and Operations 更新プログラムへの移行の処理](upgrade-latest-update.md)
 

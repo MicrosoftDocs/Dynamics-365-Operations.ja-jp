@@ -18,10 +18,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 237ff2935ab8e2dee90bd716179b45c5fca455c3
+ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
+ms.openlocfilehash: cf12f2dfb62645fc5d6886ef429441c48982d484
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 12/18/2018
 
 ---
 
@@ -31,10 +31,12 @@ ms.lasthandoff: 08/09/2018
 
 この記事では、Microsoft Dynamics AX の Microsoft (2016 年 5 月 - すべての言語) APQC 統合ライブラリにリリースされた新規または更新されたタスク ガイドを示します。 新規の「はじめに」ライブラリは、リリースされていません。 
 
-<a name="task-guides-in-the-may-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>Microsoft Dynamics AX 用の APQC 統合ライブラリに含まれるタスク ガイド (2016 年 5 月 - すべての言語)
-------------------------------------------------------------------------------------------------
+## <a name="task-guides-in-the-may-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>Microsoft Dynamics AX 用の APQC 統合ライブラリに含まれるタスク ガイド (2016 年 5 月 - すべての言語)
 
-APQC 統合ライブラリ (2016 年 5 月) には、2016 年 5 月に更新された Microsoft Dynamics AX および 2016 年 2 月にリリースされた Microsoft Dynamics AX のヘルプの使用を想定したタスク ガイドが含まれています。 APQC 統合ライブラリ (2016 年 2 月) でリリースされたローカライズ版のタスク ガイドは、このライブラリで使用可能です。 タスク ガイド ライブラリのヘルプ システムを接続する方法の詳細については、「[ヘルプの入門](help-overview.md)」を参照してください。 <strong>注記:</strong> ビジネス プロセス モデラー (BPM) 行のタイトルの横にあるアスタリスク (<strong>\</strong>*) は、そのビジネス プロセスのタスク ガイドが、Dynamics AX 2016 年 5 月更新のために作成されたことを示しており、Microsoft Dynamics AX の以前のバージョンでサポートされていません。
+APQC 統合ライブラリ (2016 年 5 月) には、2016 年 5 月に更新された Microsoft Dynamics AX および 2016 年 2 月にリリースされた Microsoft Dynamics AX のヘルプの使用を想定したタスク ガイドが含まれています。 APQC 統合ライブラリ (2016 年 2 月) でリリースされたローカライズ版のタスク ガイドは、このライブラリで使用可能です。 タスク ガイド ライブラリのヘルプ システムを接続する方法の詳細については、「[ヘルプの入門](help-overview.md)」を参照してください。
+
+> [!NOTE]
+> ビジネス プロセス モデラー (BPM) 行のタイトルの横にあるアスタリスク (\*) は、そのビジネス プロセスのタスク ガイド Dynamics AX 2016 年 5 月更新のために作成されたことを示しており、Microsoft Dynamics AX の以前のバージョンではサポートされていません。
 
 ### <a name="countryregion-functionality"></a>国/地域の機能
 
@@ -62,15 +64,15 @@ APQC 統合ライブラリ (2016 年 5 月) には、2016 年 5 月に更新さ�
 
 ### <a name="electronic-reporting"></a>電子申告
 
-|                                  BPM 明細行                                  | 国/地域 |
+| BPM 明細行                                                                   | 国/地域 |
 |----------------------------------------------------------------------------|----------------|
-|                         ER コンフィギュレーション先                          |     グローバル     |
-|     ER は、OPENXML 形式でレポートを生成するコンフィギュレーションを設計する     |     グローバル     |
-| 書式設定のコンフィギュレーションを使用する、支払用の ER 生成の電子ドキュメント |     グローバル     |
-|             Lifecycle Services からのコンフィギュレーションの ER インポート              |     グローバル     |
-|               <strong>\</strong>*ER サービス プロバイダを選択する                |     グローバル     |
-|   ER は、その形式の新しい基準バージョンの採用により、形式をアップグレードする    |     グローバル     |
-|             Lifecycle Services へのコンフィギュレーションの ER アップロード              |     グローバル     |
+| ER コンフィギュレーション先                                                  | グローバル         |
+| ER は、OPENXML 形式でレポートを生成するコンフィギュレーションを設計する         | グローバル         |
+| 書式設定のコンフィギュレーションを使用する、支払用の ER 生成の電子ドキュメント | グローバル         |
+| Lifecycle Services からのコンフィギュレーションの ER インポート                          | グローバル         |
+| \*ER サービス プロバイダを選択する                                               | グローバル         |
+| ER は、その形式の新しい基準バージョンの採用により、形式をアップグレードする      | グローバル         |
+| Lifecycle Services へのコンフィギュレーションの ER アップロード                          | グローバル         |
 
 ### <a name="human-capital-management"></a>人材管理
 
@@ -176,25 +178,21 @@ APQC 統合ライブラリ (2016 年 5 月) には、2016 年 5 月に更新さ�
 
 ### <a name="warehouse-and-transportation"></a>在庫および輸送
 
-|                                     BPM ライン                                     | 国/地域 |
-|----------------------------------------------------------------------------------|----------------|
-|                            ウェーブ処理のコンフィギュレーション                             |     グローバル     |
-| <strong>\</strong>*ライセンス プレートにより制御されていない場所での完了レポート |     グローバル     |
-|                      最小/最大の補充プロセスを設定する                      |     グローバル     |
-|                             コンテナー詰めの設定                              |     グローバル     |
-|                              手動梱包を設定する                               |     グローバル     |
-|                  品目の配送制約の設定                   |     グローバル     |
-|                <strong>\</strong>*倉庫作業ポリシーの設定                 |     グローバル     |
+|                                     BPM 明細行                    | 国/地域 |
+|-----------------------------------------------------------------|----------------|
+| ウェーブ処理をコンフィギュレーションする                                       | グローバル         |
+| \*ライセンス プレートにより制御されていない場所での完了レポート | グローバル         |
+| 最小/最大の補充プロセスを設定する                          | グローバル         |
+| コンテナー詰めの設定                                         | グローバル         |
+| 手動梱包を設定する                                           | グローバル         |
+| 品目の配送制約の設定                   | グローバル         |
+| \*倉庫作業ポリシーの設定                                | グローバル         |
 
-<a name="additional-resources"></a>その他のリソース
---------
+## <a name="additional-resources"></a>追加リソース
 
 [新しいタスク ガイド (2016 年 2 月)](new-task-guides-available-february-2016.md)
 
 [新規または更新されたタスク ガイド (2016 年 8 月)](new-updated-task-guides-available-august-2016.md)
 
 [新規または更新されたタスク ガイド (2016 年 11 月)](new-task-guides-november-2016.md)
-
-
-
 

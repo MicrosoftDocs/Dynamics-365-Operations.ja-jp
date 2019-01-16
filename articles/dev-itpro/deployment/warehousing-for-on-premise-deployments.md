@@ -18,10 +18,10 @@ ms.author: mafoge
 ms.search.validFrom: 2017-12-04
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: 626b4317e9308bd37e6be8a3acfa469de2ad0a21
+ms.sourcegitcommit: 5fea76237e60f786e53ab3127e177c8aa081b36a
+ms.openlocfilehash: 820a557dc77f259c9503f02c7eac9eadfa8f9512
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 12/07/2018
 
 ---
 # <a name="configure-the-warehousing-app-for-on-premises-deployments"></a>オンプレミス配置の倉庫管理アプリを構成
@@ -47,7 +47,7 @@ AD FS およびFinance and Operations 間で認証を正常に交換するため
 
 1.  アプリケーションのエントリを作成する Windows PowerShell コンソールに、次のコマンドを入力します。  
     
-        Add-AdfsClient -Name 'Dynamics 365 for Finance and Operations - Warehousing' -ClientId ([guid]::NewGuid()) -ClientType Confidential -GenerateClientSecret -RedirectUri '\<Resource URL\>' -ADUserPrincipalName '\<Admin user\>' 
+        Add-AdfsClient -Name 'Dynamics 365 for Finance and Operations - Warehousing' -ClientId ([guid]::NewGuid()) -ClientType Confidential -GenerateClientSecret -RedirectUri '\<Resource URL\>' -ADUserPrincipalName '\<Admin user\>' 
 
     - \<リソース URL\> は、たとえば `https://ax.d365ffo.onprem.contoso.com` などです (`https://ax.d365ffo.onprem.contoso.com` は、Finance and Operations にアクセスするための URL です)。
     - \<管理者ユーザー\> は、AD FS コンピューターへの管理者のアクセス権を持つ任意のユーザーにすることができます。
@@ -84,7 +84,7 @@ Dynamics 365 for Finance and Operations で AD FS アプリケーションを使
 
 ## <a name="certificates"></a>証明書 
 
-アプリがインストールされているデバイスに、リソースにアクセスする適切な証明書があることを確認します。 これらの自己署名証明書を使用している場合、これらは各デバイスにインストールされている必要があります。 詳細については、[自己署名証明書の作成およびエクスポート](https://technet.microsoft.com/en-us/library/ff710475(v=ws.10).aspx) を参照してください。
+アプリがインストールされているデバイスに、リソースにアクセスする適切な証明書があることを確認します。 自己署名証明書を使用している場合、コンピューター アカウント/ユーザー アカウントの信頼されているルートに star(AX) と AD FS をインポートすることで、これらが各デバイスにインストールされている必要があります。 詳細については、[自己署名証明書の作成およびエクスポート](https://technet.microsoft.com/en-us/library/ff710475(v=ws.10).aspx) を参照してください。
 
 ## <a name="configure-the-application"></a>アプリケーションのコンフィギュレーション
 

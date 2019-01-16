@@ -3,7 +3,7 @@ title: "Attract での管理者設定"
 description: "このトピックでは、Attract 内のユーザーおよび組織との機能を有効にする方法について説明します。"
 author: 
 manager: AnnBe
-ms.date: 10/15/2018
+ms.date: 12/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -19,10 +19,10 @@ ms.author: rschloma
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
 ms.translationtype: HT
-ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
-ms.openlocfilehash: 52b48d5daab985c43d59f29ad7b80dda99a7fcef
+ms.sourcegitcommit: be66d9f95551066bb8bc25445c652d4fa59066d4
+ms.openlocfilehash: fb7b5e5b98ddb8e0e44fccbb0ddbb05199265414
 ms.contentlocale: ja-jp
-ms.lasthandoff: 10/22/2018
+ms.lasthandoff: 12/07/2018
 
 ---
 
@@ -37,7 +37,7 @@ Microsoft Dynamics 365 for Talent の管理者センター: Attract には、構
 
 ## <a name="linkedin-integration"></a>LinkedIn の統合
 
-LinkedIn Recruiter System Connect (RSC) で統合を設定します。 LinkedIn の資格情報を使い、LinkedIn に接続した後は、応募者の LinkedIn プロファイル、アプリケーション、面接フィードバック、および雇用チームのメモを同期できます。 LinkedIn 採用担当者のフル ライセンスが必要です。 RSC の詳細は、[Recruiter System Connect (RSC) – FAQ](https://www.linkedin.com/help/recruiter/answer/90483) を参照してください。
+LinkedIn Recruiter System Connect (RSC) で統合を設定します。 LinkedIn の資格情報を使い、LinkedIn に接続した後は、応募者の LinkedIn プロファイル、アプリケーション、面接フィードバック、および雇用チームのメモを同期できます。 LinkedIn 採用担当者のフル ライセンスが必要です。 LinkedIn Recruiter の詳細については、[Recruiter System Connect (RSC) – よくある質問](https://www.linkedin.com/help/recruiter/answer/90483) を参照してください。
 
 ## <a name="user-permissions"></a>ユーザーのアクセス許可
 

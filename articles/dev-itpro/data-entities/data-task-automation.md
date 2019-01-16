@@ -3,7 +3,7 @@ title: "データ タスクの自動化"
 description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations のデータ タスク自動化を使用して、各種のデータ タスクを簡単に繰り返し、各タスクの結果を検証する方法について説明します。"
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 11/02/2018
+ms.date: 12/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -16,10 +16,10 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform update 16
 ms.translationtype: HT
-ms.sourcegitcommit: 8b9b80b0e7d3d6b66f241e24e58dd9b91a55b975
-ms.openlocfilehash: 27c5192da2eca78f026bd5f19e279732675f148a
+ms.sourcegitcommit: 64204d438d46fc772005fc8077664818926cf58f
+ms.openlocfilehash: 1f2d5fb01a83a9fde45d8201aa8b15b7a6d02ce0
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/02/2018
+ms.lasthandoff: 12/10/2018
 
 ---
 
@@ -123,6 +123,11 @@ Microsoft Dynamics 365 for Finance and Operations のデータ タスク自動�
     <PreventUploadWhenZeroRecords>No</PreventUploadWhenZeroRecords>
     <UseCompanyFromMessage>Yes</UseCompanyFromMessage>
     <LegalEntity>DAT</LegalEntity>
+    <PackageAPIExecute>true</PackageAPIExecute>
+    <PackageAPIOverwrite>false</PackageAPIOverwrite>
+    <PackageAPIReexecute>false</PackageAPIReexecute>
+    <DefinitionGroupID>TestExport</DefinitionGroupID>
+    <PackageName>TestExportPackage</PackageName>
 </JobDefinition>
 ```
 
@@ -143,6 +148,11 @@ Microsoft Dynamics 365 for Finance and Operations のデータ タスク自動�
 |                   | \<UseCompanyFromMessage\>        | 1..1                |           | これははい、またはいいえに設定できるブール値フィールドです。 これはモードが*定期実行されるバッチ*に設定されており、操作が*インポート*の場合にのみ適用されます。 |
 |                   | \<LegalEntity\>                  | 1..1                |           | これをは、インポート/エクスポート ジョブを実行する必要がある法人を指定するために使用されます。 |
 |                   | \<ConfigurationOnly\>            | 1..1                |           | これを使用して、データのプロジェクトおよび構成する定期的なスケジュールを作成できます。 インポートまたはエクスポートの操作は実行されません。 ただし、データ プロジェクトを正しく設定するには、操作とモードを指定する必要があります。 これは、はいまたはいいえを取るブール値フィールドです。 |
+|                   | \<PackageAPIExecute\>            | 1..1                |           | このパラメーターを理解するためにパッケージ API ドキュメントを参照してください。 これは、"true" または "false" を取るブール値フィールドです。 |
+|                   | \<PackageAPIOverwrite\>            | 1..1                |           | このパラメーターを理解するためにパッケージ API ドキュメントを参照してください。 これは、"true" または "false" を取るブール値フィールドです。 |
+|                   | \<PackageAPIReexecute\>            | 1..1                |           | このパラメーターを理解するためにパッケージ API ドキュメントを参照してください。 これは、"true" または "false" を取るブール値フィールドです。 |
+|                   | \<DefinitionGroupID\>            | 1..1                |           | このパラメーターを理解するためにパッケージ API ドキュメントを参照してください。 これは文字列フィールドです。 |
+|                   | \<PackageName\>            | 1..1                |           | このパラメーターを理解するためにパッケージ API ドキュメントを参照してください。 これは文字列フィールドです。 |
 
 ### <a name="entity-setup"></a>エンティティ設定
 **エンティティ設定** セクションは、マニフェストのタスクが使用するエンティティの特性を定義します。 マニフェスト内のタスクによって使用されるエンティティごとに、1 つずつ複数の定義が存在する可能性があります。

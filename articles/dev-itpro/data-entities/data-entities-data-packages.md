@@ -3,7 +3,7 @@ title: "データ管理"
 description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations のデータ管理に関する一般情報を提供します。"
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 10/25/2018
+ms.date: 12/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
-ms.openlocfilehash: b84ace2c5bb6ca3486ef356bbe6565177e727741
+ms.sourcegitcommit: 9cf60373f2c04bd610059c52e75a6c04955a30a8
+ms.openlocfilehash: b6d05e58856006bcca460c277ddc28c852b6aa12
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/01/2018
+ms.lasthandoff: 12/19/2018
 
 ---
 
@@ -261,48 +261,35 @@ ms.lasthandoff: 11/01/2018
 - レコードが **UserInfo** テーブル (管理者レコードが存在する可能性があります) に既に存在する場合、インポートはそれらのレコードでは失敗しますが、他のレコードでは機能します。
 
 ## <a name="features-flighted-in-data-management-and-enabling-flighted-features"></a>データ管理でフライトされる機能とフライトされた機能の有効化
-フライト経由で次の機能が有効になります。 *フライト*は、機能を既定でオンまたはオフにできる概念です。 フライトされる機能を有効または無効にするには、次のプロセスに従う必要があります。
+フライト経由で次の機能が有効になります。 *フライト*は、機能を既定でオンまたはオフにできる概念です。 
 
-**DMFEnableAllCompanyExport** - このフライトは、1 回のエクスポート ジョブを使用してすべての会社から自分のデータベースの持ち込み (BYOD) にデータをエクスポートする機能を表します。 この既定値はオフです。 実稼働環境で有効にするには、サポート案件を作成する必要があります。 サンドボックス環境でこれを有効にするには、次の手順に従う必要があります。
+| フライト名                           | 説明 |
+|---------------------------------------|---------------|
+| DMFEnableAllCompanyExport             | 同じエクスポート ジョブ内のすべての会社から BYOD エクスポートを使用できます。 この既定値はオフです。 |
+| DMFExportToPackageForceSync           | データ パッケージ API エクスポートの同期実行を実行できます。 既定では、非同期式です。 |
+| EntityNamesInPascalCaseInXMLFiles     | エンティティの XML ファイルでエンティティの名前が Pascal Case である場合の動作が有効になります。 既定では、名前は大文字です。 |
+| DMFByodMissingDelete                  | 特定の条件下で、変更の追跡を使用して特定の削除操作が BYOD に同期されなかった場合の以前の動作が有効になります。 |
+| DMFDisableExportFieldsMappingCache    | ターゲット フィールド マッピングを作成するときに、ロジックのキャッシュを無効にします。 |
+| EnableAttachmentForPackageApi         | パッケージ API で添付ファイル機能を有効にします。 |
+| FailErrorOnBatchForExport             | エクスポート ジョブの実行単位またはレベルでエラー時の失敗が有効になります。 |
+| IgnorePreventUploadWhenZeroRecord     | "レコード数が 0 の場合にアップロードしない" 機能を無効にします。 |
+| DMFInsertStagingLogToContainer        | この既定値は ON です。 これにより、パフォーマンスが向上し、ステージング テーブル内のエラー ログの機能の問題が修正されます。 |
+| ExportWhileDataEntityListIsBeingRefreshed     | 有効な場合、エンティティの更新の実行中にジョブがスケジューリングされると、マッピングで追加の検証が行われます。 この既定値はオフです。|
+| DMFDisableXSLTTransformationForCompositeEntity     | これは、複合エンティティで変換の適用を無効にできます。 |
+| DMFDisableInputFileCheckInPackageImport     | すべてのエンティティ ファイルがデータ パッケージから欠落している場合にエラー メッセージが表示されるように、追加の検証が行われます。 これは既定の動作です。 必要な場合、このフライトによりこれを OFF にできます。  |
 
-- 次の Insert ステートメントを使用してレコードを追加します。適切な値に置き換えてください。 
 
-  INSERT INTO SYSFLIGHTING VALUES (‘DMFEnableAllCompanyExport’, 1, Flight service ID, Partition, RecID, 1) 
-    - フライト名 = DMFEnableAllCompanyExport
-    - 有効 = 1
-    - フライト サービス ID = 12719367
-    - パーティション = 環境のパーティション ID。レコードを照会 (選択) することで取得できます。 すべてのレコードには、ここでコピーおよび使用する必要があるパーティション ID があります。
-    - RecID = パーティションと同じ ID。
+次の手順では、非運用環境でフライトを有効にします。 次の SQL コマンドを実行します。
+
+INSERT INTO SYSFLIGHTING VALUES ('<Flight name>', 1, 12719367, Partition, RecID, 1)
+
+パラメーターの説明は、次に示します。
+ - <Flight name> は、有効または無効にする必要があるフライトの名前。
+ - 有効 (1)
+ - パーティション - 環境のパーティション ID。レコードを照会 (選択) することで取得できます。 すべてのレコードには、ここでコピーおよび使用する必要があるパーティション ID があります。
+ - RecID - パーティションと同じ ID。 ただし、複数のフライトが有効な場合、これは一意の値を持つようにするためパーティション ID + "n" にすることができます。
     - RecVersion = 1
 
-**DMFExportToPackageForceSync** - このフライトは、ExportToPackage 統合 API で同期動作を有効にする機能を表します。 既定では、動作は非同期です。 これは、サポート リクエストを作成することで実稼働環境で同期に変更できます。 非実稼働環境で、次の手順に従う必要があります。
-
-- 次の Insert ステートメントを使用してレコードを追加します。適切な値に置き換えてください
-
-INSERT INTO SYSFLIGHTING VALUES ('DMFExportToPackageForceSync', 1, Flight service ID, Partition, RecID, 1) 
-- フライト名 = DMFExportToPackageForceSync
-- 有効 = 1
-- フライト サービス ID = 12719367
-- パーティション = 環境のパーティション ID。レコードを照会 (選択) することで取得できます。 すべてのレコードには、ここでコピーおよび使用する必要があるパーティション ID があります。
-- RecID = パーティションと同じ ID。
-- RecVersion = 1
-
--IIS の再起動
-
-**EntityNamesInPascalCaseInXMLFiles** - エンティティの XML ファイルの Pascal Case にエンティティ名前が必要な場合、このフライトを有効にすることができます。 これは、この仕様に統合パイプが組み込まれている場合に便利です。 ただし、そのような依存関係がない場合、このフライトは無視でき、既定では XML ファイルには大文字のエンティティ名があります。 実稼働環境でこのフライトを有効にするには、サポート案件を記録する必要があります。 
-
-非実稼働環境で、次の手順に従う必要があります。
-
-- 次の Insert ステートメントを使用してレコードを追加します。適切な値に置き換えてください。
-
-INSERT INTO SYSFLIGHTING VALUES ('EntityNamesInPascalCaseInXMLFiles', 1, Flight service ID, Partition, RecID, 1) 
-- フライト名 = DMFExportToPackageForceSync
-- 有効 = 1
-- フライト サービス ID = 12719367
-- パーティション = 環境のパーティション ID。レコードを照会 (選択) することで取得できます。 すべてのレコードには、ここでコピーおよび使用する必要があるパーティション ID があります。
-- RecID = パーティションと同じ ID。
-- RecVersion = 1
-
-## <a name="additional-resources"></a>その他のリソース
+## <a name="additional-resources"></a>追加リソース
 - [データ エンティティ](data-entities.md)
 

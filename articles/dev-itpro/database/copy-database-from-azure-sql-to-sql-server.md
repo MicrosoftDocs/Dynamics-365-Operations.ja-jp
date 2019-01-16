@@ -3,7 +3,7 @@ title: "Finance and Operations データベースを Azure SQL データベー�
 description: "このトピックでは、 Microsoft Dynamics 365 for Finance and Operations のデータベースを Azure ベースの環境から SQL Server ベースの環境に移動する方法について説明します。"
 author: laneswenka
 manager: AnnBe
-ms.date: 10/29/2018
+ms.date: 01/07/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: laswenka
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
-ms.openlocfilehash: 6f4e24a467887febbb7be737b9bf28929a486e26
+ms.sourcegitcommit: a388e0efe6c19a3aabe04e7fff039ce11ae023c4
+ms.openlocfilehash: 519cdb523e93225857c0d8bed5bb9b03b7277921
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/01/2018
+ms.lasthandoff: 01/07/2019
 
 ---
 
@@ -33,33 +33,25 @@ ms.lasthandoff: 11/01/2018
 
 ## <a name="overview"></a>概要
 
-データベースを移動するには、sqlpackage.exe コマンドライン ツールを使用して Azure SQL データベースからデータベースをエクスポートし、Microsoft SQL Server 2016 にインポートします。 エクスポートされたデータのファイル名拡張子は .bacpac なので、このプロセスは多くの場合 *bacpac プロセス*と呼ばれます。
+データベースを移動するには、セルフ サービス アクションを使用して Azure SQL データベースからデータベースをエクスポートし、Microsoft SQL Server にインポートします。 エクスポートされたデータのファイル名拡張子は .bacpac なので、このプロセスは多くの場合 *bacpac プロセス*と呼ばれます。
 
 データベース移動の高レベルのプロセスには、次のフェーズが含まれます。
 
-1. ソース データベースの複製を作成します。
-2. データベースの準備のため SQL スクリプトを実行します。
-3. Azure SQL データベースからデータベースをエキスポートします。
-4. SQL Server 2016 にデータベースをインポートします。
-5. データベースの更新のため SQL スクリプトを実行します。
+1. LCS 資産ライブラリにソース環境をエクスポートします。
+2. SQL Server にデータベースをインポートします。
+3. データベースの更新のため SQL スクリプトを実行します。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必要条件
 
 データベースを移動するには、次の前提条件を満たす必要があります。
 
 - ソース環境 (つまりソース データベースに接続されている環境) は、ターゲット環境が実行されているプラットフォームのバージョンよりも前または同じバージョンの Finance and Operations プラットフォームを実行する必要があります。
-- その顧客が SQL アクセスを持つデータベースのみコピーできます。 実稼働環境をコピーする必要がある場合は、最初に、その環境をサンド ボックス環境にコピーする必要があります。 サンドボックス環境から作業します。
+- サンドボックス環境データベースのみをエクスポートできます。 実稼働環境をコピーする必要がある場合は、最初に、その環境をサンド ボックス環境に更新する必要があります。 
 
     > [!NOTE]
-    > この記事では、*サンドボックス* という用語を使用して SQL Azure データベースに接続されている標準またはプレミア承認テスト (レベル 2/3)、またはより高度な環境を示します。
+    > このトピックでは、*サンドボックス* という用語を使用して SQL Azure データベースに接続されている標準またはプレミア承認テスト (レベル 2 以上)、またはより高度な環境を示します。
 
 - 出力先の SQL Server 環境では、SQL Server 2016 Release to Manufacturing (RTM) (13.00.1601.5) 以降を実行する必要があります。 SQL Server 2016 の Community Technology Preview (CTP) バージョンでは、インポート処理中にエラーが発生する可能性があります。
-
-    > [!IMPORTANT] 
-    > サンドボックス環境からデータベースをエクスポートするには、データベースをインポートする環境で同じバージョンの SQL Server Management Studio (SSMS) を実行している必要があります。 これにより、サンドボックス環境で Application Object Server (AOS) を実行するVMに [SQL Server Management Studio の最新バージョン](https://msdn.microsoft.com/en-us/library/mt238290.aspx)をインストールする必要が生じる場合があります。 AOS コンピューターで、bacpac エクスポートを実行します。 この要件は 2 つの理由があります。
-    > 
-    > - SQL Server のサンドボックス インスタンスに対するインターネット プロトコル (IP) アクセス制限のため、その環境内のコンピュータのみがインスタンスに接続できます。
-    > - エクスポートされた \*.bacpac ファイルは、Management Studio のバージョン固有の機能に依存する可能性があります。 データベースをエクスポートするために使用する SSMS バージョンが、bacpac をインポートするために使用する (ターゲット環境での) SSMS バージョン**より新しいものではない**ことを確認します。
 
 ## <a name="before-you-begin"></a>準備
 
@@ -88,190 +80,18 @@ ms.lasthandoff: 11/01/2018
 - 支払サービス (**売掛金勘定** &gt; **支払設定** &gt; **支払サービス**) に移動します。
 - ハードウェア プロファイル (**小売りとコマース** &gt; **チャネル設定** &gt; **POS 設定** &gt; **POS プロファイル** &gt; **ハードウェア プロファイル**)
 
-## <a name="create-a-copy-of-the-source-database"></a>ソース データベースのコピーを作成します。
+## <a name="self-service-database-export"></a>データベースのセルフ サービスエクスポート
 
-ソース Azure SQL データベースをエクスポートする前に、変更追跡をオフにしてデータベース ユーザーを削除する必要があるため、そのデータベースのコピーを作成してください。 元のデータベースから情報を削除する代わりに、コピーで作業することができます。 次の SQL ステートメントは、axdb\_mySourceDatabaseToCopy データベースのコピーを作成し、**MyNewCopy** という名前を付けます。 データベースの名前を使用するように、このスクリプトを編集します。
-
-```
-CREATE DATABASE MyNewCopy AS COPY OF axdb_mySourceDatabaseToCopy
-```
-
-この SQL ステートメントは、非同期で実行されます。 つまり、1 分後に完了するように見えますが、実際はバックグラウンドで実行しています。 詳細については、[データベースの作成 (Azure SQL データベース)](https://msdn.microsoft.com/en-us/library/dn268335.aspx) を参照してください。 コピー操作の進行状況を監視するには、同じインスタンス内の MASTER データベースに対して次のクエリを実行します。
-
-```
-SELECT * FROM sys.dm_database_copies
-```
-
-> [!WARNING] 
-> どの Finance and Operations 環境でも、長期間にわたってデータベースのコピーを保持することはできません。 Microsoft は、事前に通知することなく、7 日を超える古いデータベースのコピーを削除する権限を保有します。
-
-## <a name="prepare-the-database"></a>データベースの準備
-
-データベースのコピーに対して次のスクリプトを実行して変更追跡を停止し、SQL データベース ユーザーとシステム ビューを削除します。 また、スクリプトはシステムフラグを修正し、以前の環境への参照を削除し、バッチを保留し、電子メールの設定を削除します。 これらの変更はデータベースのエクスポートとインポートが正常に行われるために必要です。 これらの変更では、起動すると、AOS コンピューターが対象となる環境で開始されると、何も自動的に実行を保証できます。
-
-> [!NOTE]
-> データベースのコピーの名前を使用できるように、次の **データベースの変更** コマンドを編集する必要があります。
-
-```
---Prepare a database in Azure SQL ddatabase for export to SQL Server.
-
---Remove certificates in database from Electronic Signature usage
-DECLARE @SQLElectronicSig nvarchar(512)
-DECLARE certCursor CURSOR for
-select 'DROP CERTIFICATE ' + QUOTENAME(c.name) + ';'
-from sys.certificates c;
-OPEN certCursor;
-FETCH certCursor into @SQLElectronicSig;
-WHILE @@Fetch_Status = 0
-BEGIN
-print @SQLElectronicSig;
-exec(@SQLElectronicSig);
-FETCH certCursor into @SQLElectronicSig;
-END;
-CLOSE certCursor;
-DEALLOCATE certCursor;
-
-
--- Re-assign full rext catalogs to [dbo]
-BEGIN
-    DECLARE @catalogName nvarchar(256);
-    DECLARE @sqlStmtTable nvarchar(512)
-
-    DECLARE reassignFullTextCatalogCursor CURSOR
-       FOR SELECT DISTINCT name
-       FROM sys.fulltext_catalogs 
-       
-       -- Open cursor and disable on all tables returned
-       OPEN reassignFullTextCatalogCursor
-       FETCH NEXT FROM reassignFullTextCatalogCursor INTO @catalogName
-
-       WHILE @@FETCH_STATUS = 0
-       BEGIN
-              SET @sqlStmtTable = 'ALTER AUTHORIZATION ON Fulltext Catalog::[' + @catalogName + '] TO [dbo]'
-              EXEC sp_executesql @sqlStmtTable
-              FETCH NEXT FROM reassignFullTextCatalogCursor INTO @catalogName
-       END
-       CLOSE reassignFullTextCatalogCursor
-       DEALLOCATE reassignFullTextCatalogCursor
-END
-
---Disable change tracking on tables where it is enabled.
-declare
-@SQL varchar(1000)
-set quoted_identifier off
-declare changeTrackingCursor CURSOR for
-select 'ALTER TABLE [' + t.name + '] DISABLE CHANGE_TRACKING'
-from sys.change_tracking_tables c, sys.tables t
-where t.object_id = c.object_id
-OPEN changeTrackingCursor
-FETCH changeTrackingCursor into @SQL
-WHILE @@Fetch_Status = 0
-BEGIN
-exec(@SQL)
-FETCH changeTrackingCursor into @SQL
-END
-CLOSE changeTrackingCursor
-DEALLOCATE changeTrackingCursor
-
---Disable change tracking on the database itself.
-ALTER DATABASE
--- SET THE NAME OF YOUR DATABASE BELOW
-MyNewCopy
-set CHANGE_TRACKING = OFF
-
---Change ownership of alternate schemas to DBO
-ALTER AUTHORIZATION ON schema::shadow TO [dbo]
-ALTER AUTHORIZATION ON schema::[BACKUP] TO [dbo]
-
---Remove the database level users from the database
---these will be recreated after importing in SQL Server.
-declare
-@userSQL varchar(1000)
-set quoted_identifier off
-declare userCursor CURSOR for
-select 'DROP USER [' + name + ']'
-from sys.sysusers
-where issqlrole = 0 and hasdbaccess = 1 and name <> 'dbo'
-OPEN userCursor
-FETCH userCursor into @userSQL
-WHILE @@Fetch_Status = 0
-BEGIN
-exec(@userSQL)
-FETCH userCursor into @userSQL
-END
-CLOSE userCursor
-DEALLOCATE userCursor
---Delete the SYSSQLRESOURCESTATSVIEW view as it has an Azure-specific definition in it.
---We will run db synch later to recreate the correct view for SQL Server.
-if(1=(select 1 from sys.views where name = 'SYSSQLRESOURCESTATSVIEW'))
-DROP VIEW SYSSQLRESOURCESTATSVIEW
---Next, set system parameters ready for being a SQL Server Database.
-update sysglobalconfiguration
-set value = 'SQLSERVER'
-where name = 'BACKENDDB'
-update sysglobalconfiguration
-set value = 0
-where name = 'TEMPTABLEINAXDB'
---Clean up the batch server configuration, server sessions, and printers from the previous environment.
-TRUNCATE TABLE SYSSERVERCONFIG
-TRUNCATE TABLE SYSSERVERSESSIONS
-TRUNCATE TABLE SYSCORPNETPRINTERS
-TRUNCATE TABLE SYSCLIENTSESSIONS
-TRUNCATE TABLE BATCHSERVERCONFIG
-TRUNCATE TABLE BATCHSERVERGROUP
---Remove records which could lead to accidentally sending an email externally.
-UPDATE SysEmailParameters
-SET SMTPRELAYSERVERNAME = '', MAILERNONINTERACTIVE = 'SMTP' 
---Remove encrypted SMTP Password record(s)
-TRUNCATE TABLE SYSEMAILSMTPPASSWORD
-GO
-UPDATE LogisticsElectronicAddress
-SET LOCATOR = ''
-WHERE Locator LIKE '%@%'
-GO
-TRUNCATE TABLE PrintMgmtSettings
-TRUNCATE TABLE PrintMgmtDocInstance
---Set any waiting, executing, ready, or canceling batches to withhold.
-UPDATE BatchJob
-SET STATUS = 0
-WHERE STATUS IN (1,2,5,7)
-GO
--- Clear encrypted hardware profile merchand properties
-update dbo.RETAILHARDWAREPROFILE set SECUREMERCHANTPROPERTIES = null where SECUREMERCHANTPROPERTIES is not null
-```
-
-## <a name="export-the-database"></a>データベースをエキスポート
-
-**コマンド プロンプト** ウィンドウを開き、次のコマンドを実行します。
-
-```
-cd C:\Program Files (x86)\Microsoft SQL Server\140\DAC\bin
-
-SqlPackage.exe /a:export /ssn:<server>.database.windows.net /sdn:<database to export> /tf:D:\Exportedbacpac\my.bacpac /p:CommandTimeout=1200 /p:VerifyFullTextDocumentTypesSupported=false /sp:<SQL password> /su:<sql user>
-```
-
-パラメータの説明を以下に示します。
-
-- **ssn(ソース サーバー名)** – エクスポートする Azure SQL データベース サーバーの名前。
-- **sdn(ソース データベース名)** – エクスポートするデータベースの名前。
-- **tf(ターゲット ファイル)** – エクスポートするファイルのパスと名前。
-- **sp(ソース パスワード)** – ソース SQL Server の SQL パスワード。
-- **su(ソース ユーザー)** – ソース SQL Server の SQL ユーザー名。 **sqladmin** ユーザーを使用することをお勧めします。 このユーザーは、展開中に Finance and Operations のすべての SQLインスタンスで作成されます。 このユーザーのパスワードは、Microsoft Dynamics Lifecycle Services (LCS) 内のプロジェクトから取得することができます。
-
-エクスポートが完了すると、次のコマンドを実行してデータベース コピーを削除します。
-
-```
-DROP DATABASE [MyNewCopy]
-```
+[!include [dbmovement-export](../includes/dbmovement-export.md)]
 
 ## <a name="import-the-database"></a>データベースのインポート
 
-データベースをインポートするときは、これらのガイドラインに従うことお勧めします。
+.bacpac ファイルをダウンロードした後、レベル 1 環境の手動インポート操作を開始することができます。 データベースをインポートするときは、これらのガイドラインに従うことお勧めします。
 
 - 必要な場合は、後で戻すことができるように、既存の AxDB データベースのコピーを保持します。
 - **AxDB\_fromProd** などの新しい名前の下に新しいデータベースをインポートします。
 
-最高のパフォーマンスを保証するには、\*.bacpac ファイルをインポート元のローカル コンピューターにコピーします。 **コマンド プロンプト** ウィンドウを開き、次のコマンドを実行します。
+最高のパフォーマンスを確保するには、\*.bacpac ファイルをインポート元のローカル コンピューターにコピーします。 **コマンド プロンプト** ウィンドウを開き、次のコマンドを実行します。
 
 ```
 cd C:\Program Files (x86)\Microsoft SQL Server\140\DAC\bin
@@ -360,6 +180,10 @@ DEALLOCATE retail_ftx;
 ### <a name="enable-change-tracking"></a>変更追跡の有効化
 ソース データベースで変更追跡が有効になっている場合は、ALTER DATABASE コマンドを使用して、ターゲット環境の新たなプロビジョニング データベースで変更追跡を再度有効にしてください。
 
+```
+ALTER DATABASE [your database name] SET CHANGE_TRACKING = ON (CHANGE_RETENTION = 6 DAYS, AUTO_CLEANUP = ON);
+```
+
 新しいデータベースで店舗の業務手順の現在のバージョン (変更追跡に関連する) が使用されていることを確認するには、データ管理のデータ エンティティの変更追跡を有効または無効にする必要があります。 これは、店舗の業務手順の更新をトリガーするために必要なので、どのエンティティでも実行できます。
 
 ## <a name="start-to-use-the-new-database"></a>新しいデータベースの使用を開始します。
@@ -371,6 +195,11 @@ DEALLOCATE retail_ftx;
 - Management Reporter 2012 処理サービス
 
 サービスが停止した後、AxDB データベース **AxDB\_orig** の名前を変更し、新しくインポートしたデータベース **AxDB** の名前を変更し、そして 3 つのサービスを再起動します。
+
+データベースの名前を変更するには、次の ALTER DATABASE コマンドを使用します。
+```
+ALTER DATABASE [your database name] MODIFY NAME = [new database name];
+```
 
 元のデータベースに戻すには、このプロセスを逆にします。 つまり、サービスを停止し、データベースの名前を変更してから、サービスを再起動します。
 

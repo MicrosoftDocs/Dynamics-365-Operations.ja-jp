@@ -3,7 +3,7 @@ title: "Affordable Care Act (ACA) 報告の生成"
 description: "機能は、Affordable Care Act の雇用主委託部分をサポートするための形式 1095-B および 1095-C で報告された情報を追跡する必要がある雇用主を支援するのに利用可能です。この機能は、米国内の法人にのみ有効であることに注意してください。"
 author: kherr75
 manager: AnnBe
-ms.date: 07/01/2017
+ms.date: 12/17/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -18,10 +18,10 @@ ms.author: kherr
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
-ms.openlocfilehash: 25d2b8326bba69ac627f3fa7e05a6c850bd04c91
+ms.sourcegitcommit: f1456b91d6fc29ec65d0e9382d3f5f7682a8b516
+ms.openlocfilehash: 0ea2824093d33b9f233cd992399de22198bfc27a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 12/17/2018
 
 ---
 # <a name="generate-affordable-care-act-aca-reports"></a>Affordable Care Act (ACA) 報告の生成
@@ -54,7 +54,7 @@ Affordable Care Act 補償グループ値の例外を入力するには、[作�
 ## <a name="generate-1095b-and-1095c-forms"></a>1095B および 1095C フォームの生成
 製品内から 109-B および 1095-C フォームを生成し、各従業員に配布することもできます。 1095-C および対応する1094-C 送信書類ファイルを電子的に生成します。それらは IRS に送信するために使用され、システムからも作成できます。  
 
-1095-C フォームを生成する場合、該当するカレンダーまたは税年度と共に 2 ページまたは 3 ページから成るフォームを印刷するかを入力します。 3 ページから成るフォームは、雇用主が自家保険を提供する場合、および従業員が自身を含む 6 人以上の対象となる被保険者がいる場合にのみ必要です。 システムから 2 ページから成るフォームを生成する場合、従業員に 6 人以上の対象となる被保険者がいるかどうか、およびフォームの生成時にその従業員が含まれないことを自動で検出します。 また、システムから 3 ページから成るフォームを生成するのは、それらの従業員に 6 人以上の対象となる被保険者がいる場合のみです。
+1095-C フォームを生成する場合、該当する税年度を入力し、社会保障番号がマスクされるべきかどうかを示します。 500 人を超える従業員に対して 1095-C フォームを印刷する場合は、1 つ以上の PDF ファイルを受け取ります。 **ドキュメント管理パラメーター**ウィンドウで、**最大ファイル サイズ**を 150 MB に拡大することをお勧めします。
 
 ## <a name="viewing-information"></a>情報の表示
 **作業者の Affordable Care Act 補償** ページを使用して、どの従業員が各補償グループに割り当てられているか、どの従業員がレポートに含められる必要がないか、さらにどの従業員が割り当てられていないかを確認します。

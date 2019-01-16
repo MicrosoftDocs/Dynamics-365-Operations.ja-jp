@@ -3,7 +3,7 @@ title: "LinkedIn Recruiter によるソーシング"
 description: "このトピックでは、ジョブおよびジョブ候補の推奨事項を取得する機械学習の使用に関する情報を提供します。"
 author: josaw
 manager: AnnBe
-ms.date: 10/15/2018
+ms.date: 12/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -20,10 +20,10 @@ ms.author: josaw
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2fc6bf25d303d7d8de8002a923a080b90dcfbeab
-ms.openlocfilehash: 106103e2c3d8f3d89aac5140174e5794da22536f
+ms.sourcegitcommit: be66d9f95551066bb8bc25445c652d4fa59066d4
+ms.openlocfilehash: 9bb323728923ff3b09ff0bfba3849f3c5d84eb34
 ms.contentlocale: ja-jp
-ms.lasthandoff: 10/24/2018
+ms.lasthandoff: 12/07/2018
 
 ---
 
@@ -83,7 +83,12 @@ Attract 管理者が LinkedIn Recruiter 能力を有効にした後、採用マ�
 
 応募者の LinkedIn プロファイルを Attract で表示できます。 ATS 情報がユーザーの LinkedIn 情報と一致すると、Linkedln ウイジェット では候補者のプロファイルが表示されます。
 
-プロファイルを表示するには、ジョブまたは人材プールのいずれかより候補者のプロファイルへ移動します。 候補者のプロファイルにて **LinkedIn** タブを選択し、プロファイル ウィジェットを読み込みます。 プロファイル ウィジェットを使用して、正しい一致であるかどうかを示します。 一致しない場合は、正しい担当者を検索します。 候補者をこのページから LinkedIn Recruiter プロジェクトに保存することもできます。
+プロファイルを表示するには、ジョブまたは人材プールのいずれかより候補者のプロファイルへ移動します。 候補者のプロファイルにて **LinkedIn** タブを選択し、プロファイル ウィジェットを読み込みます。 候補者をこのページから LinkedIn Recruiter プロジェクトに保存することもできます。
+1. LinkedIn が 電子メールと LinkedIn メンバー ID (完全な一致) に基づいて一致を見つけた場合は、候補者のプロファイルが表示されます。 ユーザーには、まだプロファイルをリンク/リンク解除するためのオプションがあります。
+
+2. LinkedIn で電子メール、またはメンバー ID に基づいて候補者が見つからない場合、候補者の名前に基づいて一致している可能性のある候補者のリストが表示され、ユーザーはそれらのいずれかを選択してプロファイルをリンクすることができます。  
+
+3. LinkedIn が名前に基づいて候補を見つけられない場合は、一致が見つからなかったことを返します。
 
 ### <a name="1-click-export"></a>1 クリック エクスポート 
 
@@ -117,11 +122,14 @@ LinkedIn Recruiter を使用すると、候補者が組織内の他のジョブ�
 
 6.  **メモ**タブを選択し、Attract で申請者にキャプチャされたメモを参照してください。
 
+> [!NOTE]
+> 候補者が過去の見込顧客のステージに移動していない場合、候補者とアプリケーションのデータは LinkedIn Recruiter には同期されません。
+
 ### <a name="inmail-history"></a>InMail 履歴
 
 LinkedIn InMail 履歴は、LinkedIn Recruiter と契約レベルのアクセスで使用できます。 有効な場合は、候補者とともに全体の InMail 履歴を表示できます。 また、組織の誰が候補者と InMail を交換できたのかも確認できますが、両間でメッセージを表示することはできません。
 
-InMail 履歴を表示するには、応募者のプロファイルから **LinkedIn** タブに移動し、履歴を表示するページの下にスクロールします。 候補者が要求に答え、LinkedIn でプロファイルの共有を選択する場合にのみ、InMail 履歴を表示することができます。 InMail からのメッセージは、数時間ごとに Attract と同期します。
+InMail 履歴を表示するには、応募者のプロファイルから **LinkedIn** タブに移動し、履歴を表示するページの下にスクロールします。 候補者とのディスカッションを行った場合は、InMail 履歴を表示できます。 InMail からのメッセージは、数時間ごとに Attract と同期します。
 
 ### <a name="notes-history"></a>メモの履歴 
 
@@ -131,7 +139,7 @@ LinkedIn メモの履歴は、LinkedIn Recruiter と契約レベルのアクセ�
 
 ### <a name="inmail-stub-profile"></a>InMail スタブ プロファイル
 
-InMail スタブ プロファイルは、LinkedIn Recruiter と契約レベルのアクセスで使用できます。 候補者が組織内のユーザーとその LinkedIn プロファイルの共有に同意する場合は、Attract 候補者を追跡でき、新しい候補者のレコードが各候補者へ作成されます。
+InMail スタブ プロファイルは、LinkedIn Recruiter と契約レベルのアクセスで使用できます。 候補者が組織内のユーザーとその LinkedIn プロファイルの共有に同意する場合は、Attract 候補者を追跡でき、新しい候補者のレコードが各候補者へ作成されます。 候補者が既にシステムに電子メール アドレスと共に存在しているか、候補者と採用担当者のアドレスを共有するように選択されている場合は、候補者のEメールアドレスを表示できます。
 
 候補者の一覧を表示するには、**人材プール**に移動し、システムで作成された LinkedIn 人材プールを参照してください。 この人材プールには、LinkedIn から受信した候補者リストと スタブ プロファイルが含まれています。リストには候補者の名前と姓が表示されています。 候補者が自身の電子メール アドレスを共有すると選択した場合、電子メール IDが表示されます。
 

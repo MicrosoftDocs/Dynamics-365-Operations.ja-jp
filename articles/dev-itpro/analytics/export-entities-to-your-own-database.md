@@ -3,7 +3,7 @@ title: "自分のデータベースの持ち込み (BYOD)"
 description: "このトピックでは、エンティティを 独自の Azure SQL データベースにエクスポートする方法について説明します。"
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 09/19/2018
+ms.date: 12/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -16,10 +16,10 @@ ms.author: sunilg
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: HT
-ms.sourcegitcommit: 1aae5797e37b846a38f957b02870e213da528a2d
-ms.openlocfilehash: fd8e727090948e48e890410557e2a98690a6366e
+ms.sourcegitcommit: 64204d438d46fc772005fc8077664818926cf58f
+ms.openlocfilehash: 31ae2cbeb5d6589d2ad7c16a6119812213cb40f1
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/20/2018
+ms.lasthandoff: 12/10/2018
 
 ---
 
@@ -147,6 +147,9 @@ BYOD からデータを読み取るレポート システムのシナリオで�
 ![ページをエクスポート](media/091eb0da74bf94c620c3785bca92b41e.png)
 
 複数のエンティティを持つデータ プロジェクトを作成することができます。 Finance and Operations バッチ フレームワークを使用することにより、このデータ プロジェクトの実行をスケジュールすることができます。 また、**バッチ処理でのエクスポート** オプションを選択することにより、データ エクスポート ジョブを定期的に実行するようにスケジュールします。
+
+> [!NOTE]
+> BYOD のために **管理 > 定期的なデータ ジョブの管理** で定期的なエクスポートを使用することはお勧めしません。 **バッチ処理でのエクスポート** オプションを使用する必要があります。
 
 ### <a name="incremental-export"></a>差分エクスポート
 データ エクスポートのエンティティを追加するとき、増分エクスポート (増分プッシュとも呼ばれます) またはフル プッシュをするかを選択できます。 作業する増分プッシュについては、このトピックで前述されているように、Finance and Operations データベースで**変更追跡**オプションを有効にし、適切な変更追跡オプションを指定する必要があります。

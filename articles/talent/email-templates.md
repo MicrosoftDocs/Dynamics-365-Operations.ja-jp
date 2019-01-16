@@ -19,10 +19,10 @@ ms.author: rschloma
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
 ms.translationtype: HT
-ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
-ms.openlocfilehash: 85581968d9d242460117693174acbf906463997f
+ms.sourcegitcommit: 8166047a768c47219855c55a1008f3dd24cd5344
+ms.openlocfilehash: e02912ad242186fe3e2dd8d7a4cc7312aec6015e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 10/22/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -30,6 +30,9 @@ ms.lasthandoff: 10/22/2018
 [!include[banner](../includes/banner.md)]
 
 電子メール テンプレート ライブラリを使用すると、管理者は Microsoft Dynamics 365 for Talent: Attract を通じて送信されるすべての電子メールに対する一定のテーマやブランディングを作成できます。 管理者は、その他のユーザーが使用する電子メール コンテンツ テンプレートのコレクションをキュレートすることもできます。 採用チームはワークフローでこれらのテンプレートを使用して、より効率的に電子メールを送信できます。 Attract のいくつかの電子メールは自動的に送信されるようコンフィギュレーションされ、管理者は電子メール テンプレート ライブラリを使用してそれらの電子メールのコンテンツをカスタマイズできます。
+
+> [!NOTE]
+> 電子メール テンプレートを使用するには、包括採用アドオンが組織に必要です。
 
 ## <a name="global-template-configurations"></a>グローバル テンプレート コンフィギュレーション
 

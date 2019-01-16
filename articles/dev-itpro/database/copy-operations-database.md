@@ -3,7 +3,7 @@ title: "後で復元する Finance and Operations のデータベースのコピ
 description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations database のデータベースをファイルにエクスポートし、そのファイルを同じインスタンスまたはアプリケーションの別のインスタンスに再度インポートする方法について説明します。"
 author: LaneSwenka
 manager: AnnBe
-ms.date: 10/29/2018
+ms.date: 12/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: LaneSwenka
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
 ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
-ms.openlocfilehash: 3aec4a71d49ac09e8237f2ebf763de7f103dec61
+ms.sourcegitcommit: 0cdf6e0a15bb61f4529de19a76ea2a31e8a945f8
+ms.openlocfilehash: 62e0d3fcea6c1de70c6d2a328c5395befa891f16
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/01/2018
+ms.lasthandoff: 12/28/2018
 
 ---
 
@@ -42,58 +42,12 @@ Finance and Operations データベース プロセスのコピーを保持す�
 
 Microsoft は Azure SQL データベース環境を過去 35 日間以内の特定の時点に復元できる標準機能も提供しています。 この復元はサービス要求を介して行われます。 詳細については、[非実稼働環境でのポイントインタイム データベース復元の要求](request-point-in-time-restore.md) を参照してください。
 
-> [!IMPORTANT]
-> このトピックでは、Finance and Operations データベースのコピーを保持する、サポートされている唯一の方法について説明します。 Finance and Operations 環境で、Azure SQL データベースのコピーを実行し続けることはできません。 したがって、CREATE DATABASE AS COPY OF ステートメントの使用は許可されていません。 7 日以上前の Azure SQL データベースのサポートされていないコピーは警告なしに削除されます。
-
-## <a name="prerequisites"></a>前提条件
-サンドボックス環境からデータベースをエクスポートするには、その環境で Application Object Server (AOS) を実行しているコンピュータに、最新バージョンの Microsoft SQL Server Management Studio for Microsoft SQL Server 2016 をインストールする必要があります。 その後、AOS コンピューターで、エクスポートを実行してください。 この要件は 2 つの理由があります。
-
-- Microsoft SQL Server のサンドボックス インスタンスに対するインターネット プロトコル (IP) アクセス制限のため、その環境内のコンピューターからのみ接続が許可されます。
-- 既定でインストールされる Management Studio のバージョンは、以前のバージョンの SQL Server 用であり、必要なタスクを実行できません。
-
-## <a name="export-the-finance-and-operations-database"></a>Finance and Operations データベースをエキスポート
-
-### <a name="stop-services"></a>サービスの停止
-
-リモート デスクトップを使用して、環境内のすべてのコンピュータに接続し、services.msc を使用して次の Microsoft Windows サービスを停止します。 これらのサービスでは、Finance and Operations のデータベースへの接続が提供されます。
-
-- ワールド ワイド ウェブ公開サービス (すべての AOS コンピュータ上)
-- Microsoft Dynamics 365 for Finance and Operations バッチ管理サービス (非プライベート AOS コンピュータ上のみ)
-- Management Reporter 2012 のプロセス サービス (ビジネス インテリジェンス \[BI\] コンピューターのみ)
-
-### <a name="run-sqlpackage-to-export-the-finance-and-operations-database"></a>Finance and Operations データベースをエクスポートする sqlpackage を実行する
-
-管理者として **コマンド プロンプト** ウィンドウを開き、次のコマンドを実行します。
-
-```
-cd C:\Program Files (x86)\Microsoft SQL Server\130\DAC\bin
-
-SqlPackage.exe /a:export /ssn:<server>.database.windows.net /sdn:<database to export> /tf:D:\Exportedbacpac\my.bacpac /p:CommandTimeout=1200 /p:VerifyFullTextDocumentTypesSupported=false /sp:<SQL password> /su:<SQL user>
-```
-
-パラメータの説明を以下に示します。
-
-- **ssn(ソース サーバー名)** – エクスポートする Azure SQL データベース サーバーの名前。
-- **sdn(ソース データベース名)** – エクスポートするデータベースの名前。
-- **tf(ターゲット ファイル)** – エクスポートするファイルのパスと名前。
-- **sp(ソース パスワード)** – ソース SQL Server の SQL パスワード。
-- **su(ソース ユーザー)** – ソース SQL Server の SQL ユーザー名。 **sqladmin** ユーザーを使用することをお勧めします。 このユーザーは、展開中にすべての SQLインスタンスで作成されます。 このユーザーのパスワードは、Microsoft Dynamics Lifecycle Services (LCS) 内のプロジェクトから取得することができます。
-
-このコマンドは、D:\\Exportedbacpac フォルダに .bacpac ファイルを作成します。 このファイルを安全な場所にコピーまたはアップロードすることにより、後で別の環境にインポートすることができます。 AzCopy コマンドライン ユーティリティを使用すると、Azure ストレージ アカウントにファイルをアップロードして、対象となる AOS コンピューターにダウンロードすることができます。 詳細については、[Azure ストレージ アカウントへのファイルのコピーまたはアップロード](/azure/storage/storage-use-azcopy) を参照してください。
-
 > [!NOTE]
-> Microsoft は、Finance and Operations の契約の一部としてストレージ アカウントを提供しません。 ストレージ アカウントを購入するか、別の Azure サブスクリプションからストレージ アカウントを使用する必要があります。
+> このプロセスでは、レベル 2 以上の環境でリモート デスクトップへのアクセスを必要としていましたが、必要なくなりました。 これらの操作を実行するには、Lifecycle Services でセルフ サービス アクションを使用します。
 
-> [!IMPORTANT]
-> Azure 仮想マシン (VM) 上の D ドライブの動作に注意してください。 このドライブにエクスポートされたデータベース ファイルを完全には保存しないでください。 それ以外の場合、それらが失われる可能性があります。 詳細については、[Windows Azure 仮想マシン上のテンポラリー ドライブを理解する](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/) ブログ投稿を参照してください。
+## <a name="self-service-database-export"></a>データベースのセルフ サービス エクスポート
 
-### <a name="start-services"></a>サービスを開始します。
-
-services.msc を使用して、以前に停止したサービスを再起動します。
-
-- ワールド ワイド ウェブ公開サービス (すべての AOS コンピュータ上)
-- Microsoft Dynamics 365 for Finance and Operations バッチ管理サービス (非プライベート AOS コンピュータ上のみ)
-- Management Reporter 2012 のプロセス サービス (BI コンピューターのみ)
+[!include [dbmovement-export](../includes/dbmovement-export.md)]
 
 ## <a name="import-the-finance-and-operations-database"></a>Finance and Operations データベースのインポート
 
@@ -174,12 +128,17 @@ EXEC sp_addrolemember 'ReportingIntegrationUser', 'axmrruntimeuser'
 EXEC sp_addrolemember 'db_datareader', 'axmrruntimeuser'
 EXEC sp_addrolemember 'db_datawriter', 'axmrruntimeuser'
 
+CREATE USER axretaildatasyncuser WITH PASSWORD = '<password from LCS>'
+EXEC sp_addrolemember 'DataSyncUsersRole', 'axretaildatasyncuser'
+
 CREATE USER axretailruntimeuser WITH PASSWORD = '<password from LCS>'
 EXEC sp_addrolemember 'UsersRole', 'axretailruntimeuser'
 EXEC sp_addrolemember 'ReportUsersRole', 'axretailruntimeuser'
 
 CREATE USER axdeployextuser WITH PASSWORD = '<password from LCS>'
 EXEC sp_addrolemember 'DeployExtensibilityRole', 'axdeployextuser'
+
+
 
 GO
 -- Begin Refresh Retail FullText Catalogs

@@ -3,13 +3,13 @@ title: "Sharepoint からのデータのインポートの構成"
 description: "このトピックでは、Microsoft SharePoint からデータをインポートする方法について説明します。"
 author: NickSelin
 manager: AnnBe
-ms.date: 05/21/2018
+ms.date: 11/29/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 220314
 ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
@@ -18,17 +18,17 @@ ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
 ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
-ms.openlocfilehash: 9f23f73e9a98fc50c622255bf6ed027c41ec8010
+ms.sourcegitcommit: 060c3dec71e2b953d9341c5b5c89e60925fda34d
+ms.openlocfilehash: 8053b0316c86c614b87b0e658dffade3a135f2cc
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
+ms.lasthandoff: 12/07/2018
 
 ---
 # <a name="configure-data-import-from-sharepoint"></a>Sharepoint からのデータのインポートの構成
 
 [!include[banner](../includes/banner.md)]
 
-電子申告 (ER) フレームワークを使用して受信ファイルからデータをインポートするには、インポート処理をサポートする ER 形式をコンフィギュレーションし、データ ソースとしてその形式を使用する**宛先**タイプのモデル マッピングを実行する必要があります。 データをインポートするには、インポートするファイルに移動する必要があります。 受信ファイルは、ユーザーにより手動で選択できます。 Microsoft Sharepoint からのデータのインポートをサポートするための新しい ER 機能を使用すると、このプロセスを無人プロセスとして構成できます。 ER コンフィギュレーションを使用して、Microsoft SharePoint フォルダーに格納されているファイルからデータのインポートを実行できます。 このトピックでは、SharePoint から Microsoft Dynamics 365 for Finance and Operations へのインポートを完了する方法について説明します。 例では、業務データとして仕入先トランザクションを使用します。
+電子申告 (ER) フレームワークを使用して受信ファイルからデータをインポートするには、インポート処理をサポートする ER 形式をコンフィギュレーションし、データ ソースとしてその形式を使用する**宛先**タイプのモデル マッピングを実行する必要があります。 データをインポートするには、インポートするファイルに移動する必要があります。 受信ファイルは、ユーザーにより手動で選択できます。 Microsoft Sharepoint からのデータのインポートをサポートするための新しい ER 機能を使用すると、このプロセスを無人プロセスとしてコンフィギュレーションできます。 ER コンフィギュレーションを使用して、Microsoft SharePoint フォルダーに格納されているファイルからデータのインポートを実行できます。 このトピックでは、SharePoint から Microsoft Dynamics 365 for Finance and Operations へのインポートを完了する方法について説明します。 例では、業務データとして仕入先トランザクションを使用します。
 
 ## <a name="prerequisites"></a>前提条件
 このトピックの例を完了するには、次のアクセスが必要です:
@@ -39,66 +39,71 @@ ms.lasthandoff: 08/13/2018
     - 電子申告機能コンサルタント
     - システム管理者
 
-- Finance and Operations で使用するようにコンフィギュレーションされた Microsoft SharePoint Server のインスタンスへのアクセス
-- 1099 支払の ER 形式およびモデル コンフィギュレーション
+- Finance and Operations で使用するようにコンフィギュレーションされた Microsoft SharePoint Server のインスタンスへアクセスします。
+- 1099 支払の ER 形式およびモデル コンフィギュレーション。
 
 ### <a name="create-required-er-configurations"></a>必須な ER コンフィギュレーションの作成
-**7.5.4.3 IT サービス/ソリューション コンポーネントの取得/開発 (10677)** 業務プロセスの一部である **Microsoft Excel ファイルからの ER インポート データ**タスク ガイドを再生します。 これらのタスク ガイドでは、デザインのプロセスおよび外部の Microsoft Excel ファイルから仕入先トランザクションを対話型でインポートする ER コンフィギュレーションの使用について説明します。 詳細については、[Microsoft Excel で受信ドキュメントを解析する](parse-incoming-documents-excel.md) を参照してください。 最後に、次のものがあります。
+**7.5.4.3 IT サービス/ソリューション コンポーネントの取得/開発 (10677)** 業務プロセスの一部である **Microsoft Excel ファイルからの ER インポート データ**タスク ガイドを再生します。 これらのタスク ガイドでは、デザインのプロセスおよび Microsoft Excel ファイルから仕入先トランザクションを対話型でインポートする ER コンフィギュレーションの使用について説明します。 詳細については、[Microsoft Excel で受信ドキュメントを解析する](parse-incoming-documents-excel.md) を参照してください。 タスク ガイドが完了したら、次の設定を行う必要があります。
 
-- ER コンフィギュレーション
+#### <a name="er-configurations"></a>ER コンフィギュレーション
 
-    - ER モデル構成、**1099 支払モデル**
-    - ER 形式コンフィギュレーション、**Excel から仕入先のトランザクションをインポートするための形式**
+- ER モデル構成、**1099 支払モデル**
+- ER 形式コンフィギュレーション、**Excel から仕入先のトランザクションをインポートするための形式**
 
-    [![SharePoint からデータをインポートするための ER コンフィギュレーション](./media/GERImportFromSharePoint-01-Configurations.PNG)](./media/GERImportFromSharePoint-01-Configurations.PNG)
+![SharePoint からデータをインポートするための ER コンフィギュレーション](./media/GERImportFromSharePoint-01-Configurations.PNG)
 
-- データのインポートに対する受信ファイルのサンプル:
+#### <a name="sample-of-the-incoming-file-for-data-import"></a>データのインポートに対する受信ファイルのサンプル
 
-    - Excel ファイル **1099import-data.xlsx** と、Finance and Operations にインポートする必要がある仕入先トランザクション
+- Excel ファイル **1099import-data.xlsx** と、Finance and Operations にインポートする必要がある仕入先トランザクション。
 
-    [![SharePoint からインポートするための Microsoft Excel ファイルのサンプル](./media/GERImportFromSharePoint-02-Excel.PNG)](./media/GERImportFromSharePoint-02-Excel.PNG)
-
+![SharePoint からインポートするための Microsoft Excel ファイルのサンプル](./media/GERImportFromSharePoint-02-Excel.PNG)
+    
 > [!NOTE]
 > 仕入先トランザクションをインポートするための形式が既定のモデル マッピングとして選択されます。 したがって、**1099 支払モデル**のモデル マッピングを実行し、そのモデル マッピングが**宛先**タイプの場合、モデル マッピングは外部ファイルからデータをインポートするこの形式を実行します。 続いてそのデータを使用して、アプリケーション テーブルを更新します。
 
-## <a name="configure-document-management-parameters"></a>ドキュメント管理パラメーターのコンフィギュレーション
-1. **ドキュメント管理パラメーター**ページで、現在サインインしている会社により使用される SharePoint Server インスタンスへのアクセスをコンフィギュレーションします。 この例では、会社は USMF です。
-2. アクセス権があることを確認するために、SharePoint Server インスタンスへの接続をテストします。
+## <a name="configure-access-to-sharepoint-for-file-storage"></a>ファイル ストレージの SharePoint へのアクセスをコンフィギュレーションする
+電子レポート ファイルを SharePoint の場所に保管するには、現在の会社によって使用される SharePoint Server のインスタンスへのアクセスをコンフィギュレーションする必要があります。 この例では、会社は USMF です。 手順については、[SharePoint ストレージのコンフィギュレーション](../../fin-and-ops/organization-administration/configure-document-management.md#configure-sharepoint-storage) を参照してください。
 
-    [![ドキュメント管理設定 – SharePoint サーバー](./media/GERImportFromSharePoint-03-SharePointSetup.png)](./media/GERImportFromSharePoint-03-SharePointSetup.png)
+1. [SharePoint ストレージのコンフィギュレーション](../../fin-and-ops/organization-administration/configure-document-management.md#configure-sharepoint-storage) で手順を完了します。
+2. コンフィギュレーションされた SharePoint サイトを開きます。
+3. 受信した電子申告ファイルを保存できる次のフォルダーを作成します。
 
-3. コンフィギュレーション済の SharePoint サイトを開き、受信ファイルが格納されるフォルダーを作成します。
+     - ファイルのインポート ソース (メイン) (次のスクリーン ショットに示された例)
+     - ファイルのインポート ソース (代替)
 
-    - ファイルのインポート ソース (メイン)
-    - ファイルのインポート ソース (代替)
+    ![ファイルのインポート ソース (メイン)](./media/GERImportFromSharePoint-04-SharePointFolder1.png)
 
-    [![ドキュメント管理設定 – SharePoint サーバー](./media/GERImportFromSharePoint-04-SharePointFolder1.png)](./media/GERImportFromSharePoint-04-SharePointFolder1.png)
+4. (オプション) インポート後にファイルを保存できる次のフォルダーを作成します。 
 
-    [![ドキュメント管理設定 – SharePoint サーバー](./media/GERImportFromSharePoint-05-SharePointFolder2.png)](./media/GERImportFromSharePoint-05-SharePointFolder2.png)
+    - ファイル アーカイブ フォルダー - このフォルダーは正常にインポートしたファイル用です。
+    - ファイル警告フォルダー - このフォルダーは警告付きでインポートしたファイル用です。
+    - ファイル エラー フォルダー - このフォルダーはインポートに失敗したファイル用です。
 
-4. Finance and Operations では、**ドキュメント タイプ**ページで、作成した SharePoint フォルダーにアクセスするために使用される次のドキュメント タイプを作成します。
+4. Finance and Operations では、**組織管理 > ドキュメント管理 > ドキュメントのタイプ**の順に移動します。
+5. 先ほど作成した SharePoint フォルダーにアクセスするために使用される次のドキュメント タイプを作成します。 手順については、[ドキュメント タイプのコンフィギュレーション](../../fin-and-ops/organization-administration/configure-document-management.md#configure-document-types) を参照してください。
 
-    - SP メイン
-    - SP 代替
+|文書種類       | グループ化              | 保管場所      | SharePoint フォルダー      |
+|--------------------|--------------------|---------------|------------------------|
+|SP メイン             |ファイル                |SharePoint     |ファイルのインポート ソース (メイン)|
+|SP 代替             |ファイル                |SharePoint     |ファイルのインポート ソース (代替)|
+|SP アーカイブ             |ファイル                |SharePoint     |ファイル アーカイブ フォルダー|
+|SP 警告             |ファイル                |SharePoint     |ファイル警告フォルダー|
+|SP エラー             |ファイル                |SharePoint     |ファイル エラー フォルダー|
 
-5. ドキュメント タイプについては、**グループ**フィールドに**ファイル**を入力し、**場所**フィールドに **SharePoint** を入力します。 SharePoint フォルダのアドレスを入力します。
-
-    - **SP メイン**ドキュメント タイプ用: ファイルのインポート ソース (メイン)
-    - **SP 代替**ドキュメント タイプ用: ファイルのインポート ソース (代替)
-
-    [![SharePoint 設定 – 新しいドキュメント タイプ](./media/GERImportFromSharePoint-06-SharePointDocumentTypesSetup.png)](./media/GERImportFromSharePoint-06-SharePointDocumentTypesSetup.png)
+![SharePoint 設定 – 新しいドキュメント タイプ](./media/GERImportFromSharePoint-06-SharePointDocumentTypesSetup.png)
 
 ## <a name="configure-er-sources-for-the-er-format"></a>ER 形式の ER ソースをコンフィギュレーションします。
 1. **組織管理** \> **電子申告** \> **電子申告ソース**の順にクリックします。
 2. **電子申告ソース**ページで、コンフィギュレーション済の ER 形式を使用してデータ インポートのソース ファイルをコンフィギュレーションします。
 3. .Xlsx 拡張子のファイルのみがインポートされるように、ファイル名マスクを定義します。 ファイル名マスクはオプションであり、定義された場合にのみ使用されます。 ER 形式ごとにマスクを 1 つだけ定義できます。
-4. 以前に作成した両方の SharePoint フォルダーを選択します。
+4. 多数のインポート用ファイルが存在し、インポート順序は重要ではない場合は、**ファイルをインポート前に並べ替える**を**並べ替えない**に変更します。
+5. 以前に作成したすべての SharePoint フォルダーを選択します。
 
     [![ER ファイル ソースの設定](./media/GERImportFromSharePoint-07-FormatSourceSetup.PNG)](./media/GERImportFromSharePoint-07-FormatSourceSetup.PNG)
 
 > [!NOTE]
 > - ER *ソース*は、アプリケーションの会社ごとに個別に定義されます。 対照的に、ER *コンフィギュレーション*は会社間で共有されます。
-> - ER 形式の ER ソース設定を削除すると、接続されているすべてのファイルの状態 (以下を参照) も削除されます。
+> - ER 形式の ER ソース設定を削除すると、接続されているすべてのファイルの状態 (以下を参照) も確認によって削除されます。
 
 ## <a name="review-the-files-states-for-the-er-format"></a>ER 形式のファイルの状態を確認します。
 1. **電子申告ソース**ページで、**ソースのファイル状態**を選択して現在の ER 形式のコンフィギュレーション済ファイル ソースの内容を確認します。
@@ -114,13 +119,13 @@ ms.lasthandoff: 08/13/2018
 
     [![SharePoint コンテンツ – インポート用 Microsoft Excel ファイル](./media/GERImportFromSharePoint-08-UploadFile.png)](./media/GERImportFromSharePoint-08-UploadFile.png)
 
-2. Finance and Operations では、**ソースのファイルの状態**ページで、**更新**を選択してページを更新します。 このフォームで表示される SharePoint にアップロードされた Excel ファイルのステータスが**準備完了**となることに注意してください。 次のステータスは、現在サポートされています。
+2. Finance and Operations では、**ソースのファイルの状態**ページで、**更新**を選択してページを更新します。 このページに表示される SharePoint にアップロードされた Excel ファイルの状態が**準備完了**となることに注意してください。 次のステータスは、現在サポートされています。
 
     - **準備完了** – SharePoint フォルダで新しいファイルごとに自動的に割り当てられます。 このステータスは、ファイルがインポートの準備ができていることを意味します。
     - **インポート中** – 他のプロセス (それらの多くが同時に実行されている場合) による使用を防ぐためにインポート プロセスによってファイルがロックされるときに、ER レポートによって自動的に割り当てられます。
     - **インポート済** – ファイルのインポートが正常に完了するときに、ER レポートによって自動的に割り当てられます。 このステータスは、インポートされたファイルがコンフィギュレーション済ファイル ソース (SharePoint フォルダ) から削除されたことを意味します。
     - **失敗** – ファイルのインポートがエラーまたは例外で完了するときに、ER レポートによって自動的に割り当てられます。
-    - **保留中** – このフォーム上のユーザーによって手動で割り当てられます。 このステータスは、ファイルが現在インポートされないことを意味します。 このステータスは、いくつかのファイルのインポートを延期するために使用されます。
+    - **保留中** – このページ上のユーザーによって手動で割り当てられます。 このステータスは、ファイルが現在インポートされないことを意味します。 このステータスは、いくつかのファイルのインポートを延期するために使用されます。
 
     [![選択したソースの ER ファイル状態のページ](./media/GERImportFromSharePoint-09-FileStatesForm.png)](./media/GERImportFromSharePoint-09-FileStatesForm.png)
 
@@ -130,19 +135,15 @@ ms.lasthandoff: 08/13/2018
 
     [![選択したソースの ER ファイル状態のページ](./media/GERImportFromSharePoint-10-SelectModelMapping.PNG)](./media/GERImportFromSharePoint-10-SelectModelMapping.PNG)
 
-3. **実行**を選択し、選択したモデル マッピングを実行します。 ER 形式のファイル ソースをコンフィギュレーションしたため、必要な**ファイル ソース**オプションの設定を変更できます。 このオプションの設定を維持すると、コンフィギュレーション済ソース (この例では SharePoint フォルダ) から .xslx ファイルがインポートされます。
+3. **実行**を選択し、選択したモデル マッピングを実行します。 ER 形式のファイル ソースをコンフィギュレーションしたため、必要に応じて**ファイル ソース**オプションの設定を変更できます。 このオプションの設定を維持すると、コンフィギュレーション済ソース (この例では SharePoint フォルダ) から .xslx ファイルがインポートされます。
 
     この例では、1 つだけファイルをインポートしています。 ただし、複数のファイルがある場合、SharePoint フォルダに追加された順序でインポートするよう選択されます。 ER 形式の各実行で、単一の選択されたファイルをインポートします。
 
     [![ER モデル マッピングの実行](./media/GERImportFromSharePoint-11-RunModelMapping.PNG)](./media/GERImportFromSharePoint-11-RunModelMapping.PNG)
 
-4. モデル マッピングはバッチ モードで無人で実行できます。 この場合、バッチがこの ER 形式を実行するたびに、単一のファイルがコンフィギュレーションされたファイル ソースからインポートされます。 このバッチの実行を実装するには、次のコードを使用します。
+4. モデル マッピングはバッチ モードで無人で実行できます。 この場合、バッチがこの ER 形式を実行するたびに、単一のファイルがコンフィギュレーションされたファイル ソースからインポートされます。
 
-    ```
-    ERObjectsFactory::createMappingDestinationRunByImportFormatMappingId().run()
-    ```
-
-    SharePoint フォルダからファイルが正常にインポートされない場合、そのフォルダーから削除されます。
+    ファイルが SharePoint フォルダーから正常にインポートされると、そのフォルダから削除され、正常にインポートされたファイルのフォルダー、または警告付きでインポートされたファイルのフォルダーに移動されます。 それ以外の場合は、失敗したファイルのフォルダーに移動されるか、失敗したファイルのフォルダーが設定されていない場合にはこのフォルダー内に保持されます。 
 
 5. **V-00001** などの伝票 ID を入力し、**OK** を選択します。
 
@@ -178,7 +179,7 @@ ms.lasthandoff: 08/13/2018
 8. **実行**を選択し、変更した ER モデル マッピングを実行します。
 9. **V-00002** などの伝票 ID を入力し、**OK** を選択します。
 
-    SharePoint フォルダ ファイルに存在していることを示す通知には、正しくない仕入先勘定が含まれインポートできないという情報ログが含まれることに注意してください。
+    情報ログには、正しくない仕入先勘定が含まれたファイルが SharePoint フォルダー にあり、インポートできないという通知が含まれることに注意してください。
 
     [![ER モデル マッピングの実行](./media/GERImportFromSharePoint-17-ModelMappingRunFinished.PNG)](./media/GERImportFromSharePoint-17-ModelMappingRunFinished.PNG)
 
@@ -186,10 +187,9 @@ ms.lasthandoff: 08/13/2018
 
     [![選択したソースの ER ファイル状態のページ](./media/GERImportFromSharePoint-18-FileStatesForm.PNG)](./media/GERImportFromSharePoint-18-FileStatesForm.PNG)
 
-    **インポート フォーマットのソース ログ**セクションでは、インポート プロセスが失敗したこと、およびファイルがまだ SharePoint フォルダーの中にあることを示します (**削除済**チェック ボックスが選択されていません)。 適切な仕入先コードを追加し、**インポート フォーマットのソース ログ**セクションでファイルのステータスを**失敗**から**準備完了**に変更することにより SharePoint でこのファイルを修正する場合、もう一度ファイルをインポートできます。
+   **インポート形式のソース ログ**セクションでは、インポート プロセスが失敗したこと、およびファイルがまだ SharePoint フォルダーの中にあることを示します (**削除済**チェック ボックスが選択されていません)。 適切な仕入先コードを追加して SharePoint 上でこのファイルを修正してから、ファイルのインポート ソース (メイン) の SharePoint フォルダーに移動すると、ファイルを再度インポートできます。
 
-11. **ファイルのインポート ソース (メイン)** SharePoint フォルダを確認します。 インポートされなかった Excel ファイルがまだこのフォルダ内にあることを通知します。
-12. Finance and Operations で、**買掛金勘定** \> **定期処理のタスク** \> **税金 1099** \> **1099 の仕入先決済**の順に選択し、**開始日**および**終了日**フィールドで適切な値を入力し、**手動 1099 トランザクション**を選択します。
+11. Finance and Operations で、**買掛金勘定** \> **定期処理のタスク** \> **税金 1099** \> **1099 の仕入先決済**の順に選択し、**開始日**および**終了日**フィールドで適切な値を入力し、**手動 1099 トランザクション**を選択します。
 
     伝票 V-00001 のトランザクションのみが使用可能です。 Excel ファイルで最後にインポートされたトランザクションのエラーが見つかった場合でも、伝票 V-00002 のトランザクションは存在しません。
 

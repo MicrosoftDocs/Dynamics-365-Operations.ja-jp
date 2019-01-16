@@ -20,21 +20,21 @@ ms.author: shajain
 ms.search.validFrom: 2018-10-23
 ms.dyn365.ops.version: AX 8.1.0, Retail October 2018 update
 ms.translationtype: HT
-ms.sourcegitcommit: e75ebfba5a76c373d55c80e7a95540d58ce873b9
-ms.openlocfilehash: d0ff01335317682d4fa28a4eddc02cfbc4f7c992
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: 1f20dc054e6a150e19e8bf96f90dd9dfdf1115b1
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/02/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
 # <a name="retail-discounts"></a>小売割引
-[!include [banner](includes/banner.md)]
 
+[!include [banner](includes/banner.md)]
 
 ## <a name="overview"></a>概要
 このトピックは、Dynamics 365 for Retail での割引機能の概要を示します。 さまざまな割引フォームにあるプロパティとおよび割引管理のベスト プラクティスについて説明します。 ただし、このトピックでは、さまざまな割引のタイプの詳細、たとえば、単純割引、数量割引、組み合わせ割引、およびしきい値割引などについては扱いません。 これらの詳細については、これらの割引タイプごとに作成された個別のトピックで説明します。
 
-小売業者は、柔軟な割引を必要としており、割引のスタイルとタイプは小売業界によって異なるため、Dynamics 365 for Retail で割引を定義するにはさまざまな方法があります。 小売の割引機能は、コア製品 (Supply Chain Management) の既存の割引機能に追加されたため、いくつかの重複機能があります。 その結果、割引タイプは、5 つの異なるエンティティ (顧客、ロイヤルティ プログラム、チャンネル、カタログ、および所属) にコンフィギュレーションすることができます。 割引オプションの数が多いため、割引戦略を計画して文書化することは特に重要です。 
+小売業者は、柔軟な割引を必要としており、割引のスタイルとタイプは小売業界によって異なるため、Dynamics 365 for Retail で割引を定義するにはさまざまな方法があります。 小売の割引機能は、コア製品 (Supply Chain Management) の既存の割引機能に追加されたため、いくつかの重複機能があります。 その結果、割引タイプは、5 つの異なるエンティティ (顧客、ロイヤルティ プログラム、チャンネル、カタログ、および所属) にコンフィギュレーションすることができます。 割引オプションの数が多いため、割引戦略を計画して文書化することは特に重要です。
 
 ## <a name="creating-discounts"></a>割引の作成
 

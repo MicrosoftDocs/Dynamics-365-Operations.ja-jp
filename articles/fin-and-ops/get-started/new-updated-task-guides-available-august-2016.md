@@ -18,10 +18,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: c7fc274bb9d942e85012211b1a7a14873447e5f3
+ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
+ms.openlocfilehash: 4fac04d1ea028bae9323b7961e64f3e49b74e482
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 12/18/2018
 
 ---
 
@@ -31,10 +31,9 @@ ms.lasthandoff: 08/09/2018
 
 このトピックでは、Microsoft Dynamics AX の Microsoft (2016 年 8 月 - すべての言語) APQC 統合ライブラリにリリースされた新規または更新されたタスク ガイドを示します。 新規の「はじめに」ライブラリは、リリースされていません。
 
-<a name="task-guides-in-the-august-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>Microsoft Dynamics AX 用の APQC 統合ライブラリに含まれるタスク ガイド (2016 年 8 月 - すべての言語)
----------------------------------------------------------------------------------------------------
+## <a name="task-guides-in-the-august-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>Microsoft Dynamics AX 用の APQC 統合ライブラリに含まれるタスク ガイド (2016 年 8 月 - すべての言語)
 
-APQC 統合ライブラリ (2016 年 8 月 - すべての言語) には、Dynamics AX プラットフォーム更新プログラム 2、2016 年 5 月に更新された Microsoft Dynamics AX アプリケーション、および 2016 年 2 月にリリースされた Microsoft Dynamics AX のヘルプの使用を想定したタスク ガイドが含まれています。 これらのリリースに関する詳細については、「[新規または変更](whats-new-changed.md)」を参照してください。 ローカライズ版のタスク ガイドは、このライブラリで使用できます。 タスク ガイド ライブラリのヘルプ システムを接続する方法の詳細については、「[ヘルプの入門](help-overview.md)」を参照してください。
+APQC 統合ライブラリ (2016 年 8 月 - すべての言語) には、Dynamics AX プラットフォーム更新プログラム 2、2016 年 5 月に更新された Microsoft Dynamics AX アプリケーション、および 2016 年 2 月にリリースされた Microsoft Dynamics AX のヘルプの使用を想定したタスク ガイドが含まれています。 これらのリリースに関する詳細については、[新規または変更](whats-new-changed.md)を参照してください。 ローカライズ版のタスク ガイドは、このライブラリで使用できます。 タスク ガイド ライブラリのヘルプ システムを接続する方法の詳細については、「[ヘルプの入門](help-overview.md)」を参照してください。
 
 ### <a name="data-access"></a>データ アクセス
 
@@ -95,17 +94,11 @@ APQC 統合ライブラリ (2016 年 8 月 - すべての言語) には、Dynami
 |-----------------------------------------------------------------------------|----------------|
 | タイプが発注書のタスクを完了するためのモバイル デバイスのメニュー項目を設定します。 | グローバル         |
 
-
-
-<a name="additional-resources"></a>その他のリソース
---------
+## <a name="additional-resources"></a>その他のリソース
 
 [新しいタスク ガイド (2016 年 2 月)](new-task-guides-available-february-2016.md)
 
 [新規または更新されたタスク ガイド (2016 年 5 月)](new-updated-task-guides-available-may-2016.md)
 
 [新規または更新されたタスク ガイド (2016 年 11 月)](new-task-guides-november-2016.md)
-
-
-
 

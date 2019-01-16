@@ -19,10 +19,10 @@ ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: c9f9368dc3e0fb4ed63250889016d6abe7d15a8c
-ms.openlocfilehash: 557e43c05f7015b04380f45fbd69f58a7250829a
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: 9354e0dbf8bed9383a9dfcc383a2c9db57457dd0
 ms.contentlocale: ja-jp
-ms.lasthandoff: 12/04/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -42,7 +42,8 @@ ms.lasthandoff: 12/04/2018
 - **トランザクション画面**: この操作は、POS トランザクション画面で設定されている POS ボタングリッドから呼び出すことができます。
 - **ウェルカム画面** － この操作は、POS ウェルカム画面で構成されている POS ボタン グリッドから呼び出すことができます。
 
-注記: 以下の操作は、Dynamics 365 for Retail の最新バージョンに適用されます。 以前のバージョンではいくつかの操作が変更されているか、または使用できないことがあります。
+> [!NOTE]
+> 以下の操作は、Dynamics 365 for Retail の最新バージョンに適用されます。 以前のバージョンではいくつかの操作が変更されているか、または使用できないことがあります。
 
 | ID | 工程 | 説明 | ボタン グリッド | 取引画面 | 「ようこそ」画面 | オフラインで使用可 | ローケル固有  |
 |----|-----------|-------------|-------------|--------------------|----------------|-------------------|-----------------|
