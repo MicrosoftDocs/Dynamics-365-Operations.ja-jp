@@ -24,6 +24,7 @@ ms.lasthandoff: 08/09/2018
 ---
 
 # <a name="subscriptions-lcs-projects-and-azure-active-directory-tenants-faq"></a>サブスクリプション、LCS プロジェクト、および Azure Active Directory テナントに関するよく寄せられる質問
+
 [!include [banner](../includes/banner.md)]
 
 顧客は、マイクロソフト ボリューム ライセンス契約またはマイクロソフト クラウド ソリューション プロバイダー (CSP) 契約を通じて、 Microsoft Dynamics 365 for Finance and Operations に加入すると、Microsoft Azure Active Directory (Azure AD) テナント、Microsoft Dynamics Lifecycle Services (LCS) 実装プロジェクトと、顧客が選択した 1 つのデータ センターに配備された任意の数のサンドボックス環境と、Finance and Operations の 1 つの実働インスタンスです。 これらのコア概念の詳細については、[Finance and operations アーキテクチャの概要](../imp-lifecycle/architecture-overview.md)を参照してください。 この設定は、ほとんどのプロジェクトで適切に動作しますが、さらに高度なシナリオが必要な場合もあります。または、導入ライフサイクル中の変更に対応する必要もあります。

@@ -3,7 +3,7 @@ title: "データ統合方法 (インポート/エクスポート) の選択"
 description: "このトピックは、設計者と開発者が Microsoft Dynamics 365 for Finance and Operations の統合シナリオを実装する際に意思決定を適切に行えるようにすることを目的としています。"
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 03/30/2018
+ms.date: 12/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -16,10 +16,10 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
-ms.openlocfilehash: f9421b7ecb06b63281274ac30acf30cd1369f300
+ms.sourcegitcommit: 64204d438d46fc772005fc8077664818926cf58f
+ms.openlocfilehash: d59e8e6a703dab0e0ccdbb9f7fcbf7994535646c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
+ms.lasthandoff: 12/10/2018
 
 ---
 
@@ -92,6 +92,9 @@ ms.lasthandoff: 08/13/2018
 ## <a name="typical-scenarios-and-patterns-that-use-odata-integrations"></a>OData 統合を使用する一般的なシナリオとパターン
 
 OData 統合を使用する典型的なシナリオを次に示します。
+
+> [!NOTE]
+> Power BI レポートの OData の使用はお勧めしません。 このような状況ではエンティティ格納を使用することをお勧めします。
 
 ### <a name="create-and-update-product-information"></a>製品情報の作成および更新
 

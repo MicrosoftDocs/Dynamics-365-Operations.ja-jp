@@ -1,9 +1,9 @@
 ---
-title: "Azure DevOps にアクセスするためのローカル環境の名前変更"
-description: "複数のコンピューターにまたがる Azure DevOps プロジェクトにアクセスするには、ローカル開発 VM の名前変更が必要です。"
+title: "ローカル開発 (VHD) 環境の名前変更"
+description: "このトピックでは、複数のコンピューター間で Microsoft Azure DevOps プロジェクトにアクセスし、1 つのバージョンのサービスの更新プログラムを正常にインストールできるように、ローカル開発 (VHD) 環境の名前を変更する方法について説明します。"
 author: MargoC
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/03/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,26 +18,68 @@ ms.author: tabell
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
-ms.openlocfilehash: c2d40d2efd0c5c6fa02dea93ab9a3e0e066a8918
+ms.sourcegitcommit: 74539d9bc4069e1bc9e338295eba4f240b0593b6
+ms.openlocfilehash: 9d424ad3e911fcd7b98e1a14c7c7226b6710774a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/17/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
-# <a name="rename-a-local-environment-to-access-azure-devops"></a>Azure DevOps にアクセスするためのローカル環境の名前変更
+# <a name="rename-a-local-development-vhd-environment"></a>ローカル開発 (VHD) 環境の名前変更
 
 [!include [banner](../includes/banner.md)]
 
-複数のコンピューターにまたがる Azure DevOps プロジェクトにアクセスするには、ローカル開発 VM の名前変更が必要です。
+ローカル開発 (VHD) 環境では、次のシナリオで名前を変更する必要があります。
 
-Azure DevOps (旧名称は Visual Studio Online または VSO) はバージョン コントロールのために必要です。 開発トポロジでは、複数の VM が同じコンピューター名である場合、同じ Azure DevOps プロジェクトにアクセスできません。 Azure DevOps はマシン名を ID として使用します。 Microsoft Lifecycle Services (LCS) からローカル VM で開発する場合は、問題が発生する可能性があります。
+* **複数のコンピューター間で 1 つの Microsoft Azure DevOps プロジェクトにアクセスする:** Azure DevOps がバージョン管理のために必要です。 以前は Visual Studio Online (VSO) または Visual Studio Team Services (VSTS) と呼ばれていました。 開発トポロジでは、複数の仮想マシン (VM) が同じコンピューター名である場合、同じ Azure DevOps プロジェクトにアクセスできません。 Azure DevOps はマシン名を ID として使用します。 Microsoft Dynamics Lifecycle Services (LCS) からダウンロードされたローカル VM で開発する場合は、問題が発生する可能性があります。
+* **1 つのバージョンのサービスの更新プログラムをインストールする:** 8.1.x などの 1 つのバージョンのサービス更新プログラムを、runbook を使用して VHD 環境にインストールする必要があります。 Runbook が正常に完了するようにするため、VHD 環境の名前を変更する必要があります。 このトピックに記載されているその他の手順を実行する必要もあります。
 
-- この問題を回避するには、開発を開始する前にマシンの名前を変更してリブートし、Azure DevOps に接続します。
-- これらを実行した後、SQL Server レポート サーバーもコンフィギュレーションする必要があります。 これを行うには、SQL Server レポート サーバーのデータベース接続文字列で SQL Server 名を (localhost) に変更します。
+## <a name="rename-the-machine"></a>コンピューターの名前を変更する
+開発を開始するか Azure DevOps に接続する前にマシンの名前を変更してリブートします。 新しい名前が Azure DevOps プロジェクトで使用されるすべてのコンピューター間で一意であることを確認します。
 
-  
+## <a name="update-the-server-name-in-sql-server"></a>SQL Server でサーバー名を更新する
+次のコマンドを実行して、Microsoft SQL Server 2016 でサーバー名を更新します。 
 
+    sp_dropserver [old_name];
+    GO
+    sp_addserver [new_name], local;
+    GO
 
+これらのコマンドでは、必ず **old\_name** をサーバーの古い名前に、**new\_name** を新しい名前に置き換えてください。 既定では、古い名前は **MININT-F36S5EH** ですが、**select @@servername** を実行して古い名前を取得できます。 また、コマンドの実行が完了した後、必ず SQL Server サービスを再起動してください。
 
+## <a name="update-sql-server-reporting-services"></a>SQL Server Reporting Services の更新
+Reporting Services 構成マネージャーを使用して、SQL Server Reporting Service (SSRS) データベースを更新します。 **データベース** を選択し、**データベースの変更** を選択して新しいサーバー名を使用します。 必ず、SQL Server 2016 用の Reporting Services 構成マネージャーを使用してください。
+
+## <a name="additional-steps-to-install-one-version-service-updates"></a>1 つのバージョンのサービスの更新プログラムをインストールする追加の手順
+VHD 環境で 1 つのバージョンのサービスの更新プログラムをインストールするには、次の追加手順が必要です。
+
+### <a name="update-the-azure-storage-emulator"></a>Azure Storage エミュレーター を更新する
+Azure Storage エミュレーターを更新し、それが実行されているかどうかを確認します。 **スタート** メニューで、**Microsoft Azure Storage エミュレーター - v4.0** を開き、次のコマンドを実行します。
+
+このコマンドは、エミュレーターを起動します。
+
+    AzureStorageEmulator.exe start
+
+このコマンドは、エミュレーターが実行されていることを確認します。
+
+    AzureStorageEmulator.exe status
+
+**-server** スイッチまたは **-forcecreate** スイッチを使用して **init**オプションを試してください。 必ず、**new\_name** を新しい名前に置き換えてください。
+
+    AzureStorageEmulator.exe init -server new_name
+    AzureStorageEmulator.exe init -forcecreate
+
+**init** コマンドが失敗した場合、SQL Server Management Studio を使用してストレージ エミュレーター データベースを削除します。 次に、次のコマンドを入力します。
+
+    AzureStorageEmulator.exe init
+
+このコマンドを実行すると、次のエラー メッセージが表示される場合があります: "エラー: データベースを作成できません。" ただし、通常、エミュレーターは引き続き起動されます。 エミュレーターを起動するだけでかまいません。
+
+### <a name="update-financial-reporting"></a>財務諸表の更新
+1 つのバージョンのサービスの更新プログラムに含まれるスクリプトを使用して、財務報告のためのサーバー名を更新します。 コマンドを取得するには、1 つのバージョンのサービスの更新をダウンロードして展開する必要があります。
+
+管理者として Microsoft Windows PowerShell コマンド ウィンドウを開き、次のコマンドを実行します。 このコマンドには、更新する必要がある既定のパスワードが含まれます。 必ず、**new\_name** を新しい名前に置き換えてください。
+
+    cd <update folder>\MROneBox\Scripts\Update
+    .\ConfigureMRDatabase.ps1 -NewAosDatabaseName AxDB -NewAosDatabaseServerName new_name -NewMRDatabaseName ManagementReporter -NewAxAdminUserPassword AOSWebSite@123 -NewMRAdminUserName MRUser -NewMRAdminUserPassword MRWebSite@123 -NewMRRuntimeUserName MRUSer -NewMRRuntimeUserPassword MRWebSite@123 -NewAxMRRuntimeUserName MRUser -NewAxMRRuntimeUserPassword MRWebSite@123
 

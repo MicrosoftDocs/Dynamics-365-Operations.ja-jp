@@ -3,7 +3,7 @@ title: "データ プロトコル (OData) を開く"
 description: "このトピックでは、Open Data Protocol (OData) に関する情報を提供し、OData V4 を使用して更新可能なビューを公開する方法について説明します。"
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 11/10/2017
+ms.date: 12/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 3db781b31bbf2fd6490897cdb5c75d23834dc4b7
-ms.openlocfilehash: 5ef0a1a3b66b9846c0f2a6c32e14f7d8a71433bb
+ms.sourcegitcommit: 64204d438d46fc772005fc8077664818926cf58f
+ms.openlocfilehash: 92c58076e05c8b7642ab8c7a7d82782014f3a713
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/15/2018
+ms.lasthandoff: 12/10/2018
 
 ---
 
@@ -45,8 +45,7 @@ OData の詳細については、次の Web ページを参照してください
 | トピック                                                               | Webpage                                                 |
 |---------------------------------------------------------------------|---------------------------------------------------------|
 | OData 標準                                                     | <http://www.odata.org/documentation/>                   |
-| OData: Web、クラウド、モバイル デバイスなどのデータ アクセス | <http://msdn.microsoft.com/en-us/data/hh237663.aspx>    |
-| 例を通じた OData                                              | <http://msdn.microsoft.com/en-us/library/ff478141.aspx> |
+| OData: Web、クラウド、モバイル デバイスなどのデータ アクセス | <https://docs.microsoft.com/aspnet/web-api/overview/odata-support-in-aspnet-web-api/>    |
 
 パブリック OData サービス エンドポイントにより、幅広いクライアントにわたって、一貫した方法でデータにアクセスできるようになります。 公開されているすべてのエンティティの一覧を表示するには、OData サービスのルート URLを開きます。 システムのサービス ルートの URL の形式は **\[お客様の組織のルート URL\]/data** です。
 
@@ -200,7 +199,12 @@ public int CalculateMaintenanceDuration()
 
 この例では、**SysODataActionAttribute** クラスがアクションとして公開されている **CalculateMaintenanceDuration** メソッドを修飾します。 属性の最初の引数は公開されているアクションの名前で、2 番目の引数はこのアクションが常に利用可能かどうかを示します。 アクションとして公開されているメソッドは、任意のプリミティブ型または別のパブリックの更新可能なビューを返すことができます。 このメソッドが公開されると、OData $ メタデータに表示されます。 次に例を示します。
 
-[![OData $ メタデータで公開されているメソッド](./media/1_odata.png)](./media/1_odata.png)
+```
+<Action Name="CalcMaintenanceDuration" m:IsAlwaysBindable="true" IsBindable="true" ReturnType="Edm.Int32">
+    <Parameter Name="ViewMaintenance" Type="Microsoft.Dynamics.AX.Resources.ViewMaintenance"/>
+</Action>
+
+```
 
 次の OData アクションの例では、パラメーターで取り、リストを返します。
 

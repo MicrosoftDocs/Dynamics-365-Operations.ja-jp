@@ -18,10 +18,10 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
-ms.openlocfilehash: cdd2e960faa0a9e9442f089f7b7b65c1f7839371
+ms.sourcegitcommit: 64204d438d46fc772005fc8077664818926cf58f
+ms.openlocfilehash: 3d325ac7405a9f0ef54866ffdf44907e7780d445
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
+ms.lasthandoff: 12/10/2018
 
 ---
 
@@ -73,7 +73,7 @@ Microsoft Azure Active Directory (AAD) では、次の 2 種類のアプリケ�
 
 ![クライアント資格情報を使用したサービス間呼び出し](./media/S2SAuth.jpg)
 
-### <a name="register-a-native-application-with-aad"></a>AAD にネイティブ アプリケーションを登録する
+### <a name="register-a-web-application-with-aad"></a>AAD に Web アプリケーションを登録する
 
 クライアントがサービスと通信するには、事前に AAD に登録する必要があります。 これらの手順を使用すると、AAD でアプリケーションに登録できます。
 

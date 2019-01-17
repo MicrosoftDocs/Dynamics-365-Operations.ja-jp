@@ -18,10 +18,10 @@ ms.author: chaubold
 ms.search.validFrom: 2018-08-01
 ms.dyn365.ops.version: Finance and Operations
 ms.translationtype: HT
-ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
-ms.openlocfilehash: e465ad091a9ed69160b203ed9b0a2d3c99d81768
+ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
+ms.openlocfilehash: af454de06ee41c953f9225658fdfa4163c95cbef
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/17/2018
+ms.lasthandoff: 12/18/2018
 
 ---
 
@@ -39,9 +39,10 @@ ms.lasthandoff: 09/17/2018
 - **環境トポロジ**: 環境と目的の構成。 例としては、第 1 層環境の**開発**および**ビルドとテスト**があります。
 - **環境層**: 環境のタイプやカテゴリ。 例には、第 1 層環境と第 2 層環境が含まれます。
 
-さまざまな環境と層の詳細については、[Dynamics 365 の価格設定](https://dynamics.microsoft.com/en-us/pricing/)から最新の *Microsoft Dynamics 365 ライセンス ガイド*をダウンロードしてください。
+さまざまな環境と層の詳細については、[Dynamics 365 の価格設定](https://dynamics.microsoft.com/pricing/)から最新の *Microsoft Dynamics 365 ライセンス ガイド*をダウンロードしてください。
 
 ### <a name="environment-types"></a>環境タイプ
+
 プロジェクトでは次のタイプの環境を使用できます。
 
 - **標準**: この環境は、標準的なオファーに含まれ、Microsoft サブスクリプションで Microsoft が管理します。 標準環境には、製造環境、レベル 2 スタンダード承認テスト環境、およびレベル 1 開発およびテスト環境が含まれます。
@@ -53,11 +54,12 @@ ms.lasthandoff: 09/17/2018
 > *顧客またはパートナーの Azure サブスクリプション*では、評価および開発目的でのみ、顧客またはパートナーが独自の Azure サブスクリプションをもって Finance and Operations 環境をそのサブスクリプションに配置します。 顧客やパートナーは、Azure サブスクリプションに展開されるリソースに対して支払います。 顧客やパートナーの支払額は、Azure 価格リストに基づきます。 これに対して、*Microsoft サブスクリプション*では、顧客は Finance and Operations ライセンスを購入します。 これらのライセンスは、顧客が Microsoft によって管理されている Azure サブスクリプションに環境を配置できるようにします。 したがって、顧客に別個の Azure の請求はありません。
 
 ### <a name="tier-1-vs-tier-2-and-higher"></a>レベル 1 とレベル 2 以上の比較
+
 | レベル 1 | レベル 2 以上 |
 |--------|-------------------|
 | シングルボックス環境 | マルチボックス環境 |
 | すべてのコンポーネントは、同じサーバーにインストールされます。 これらのコンポーネントには、Application Object Server (AOS)、データベース、Microsoft Dynamics 365 for Retail、Management Reporter が含まれます。 | コンポーネントは、複数のサーバーにインストールされます。 |
-| Microsoft SQL Server が使用されます。 | [Azure SQL データベース](https://docs.microsoft.com/en-us/azure/sql-database/)が使用されます。 |
+| Microsoft SQL Server が使用されます。 | [Azure SQL データベース](https://docs.microsoft.com/azure/sql-database/)が使用されます。 |
 | アーキテクチャは、開発チームの効率を最大化するため、実稼働環境のアーキテクチャとは異なります。 | アーキテクチャは、実稼働環境のアーキテクチャと同じです。ただし、このような環境はサイズがさまざまで、災害復旧に対応していません。 |
 | さまざまな方法で環境を配置することができます。 たとえば、アドオンとして配置する、クラウド ホストにする、または環境イメージ (VHD) として配置することができます。 | 環境は、標準環境またはアドオン環境としてのみ展開することができます。 クラウド ホストにすることはできません。 |
 | この環境は、UAT またはパフォーマンス テストに適していません。 | この環境は、UAT およびパフォーマンス テストに適しています。 |
@@ -71,7 +73,7 @@ ms.lasthandoff: 09/17/2018
 - **実稼働環境**: テナントあたり 1 つの生産インスタンスが用意されています。 生産マルチ ボックス インスタンスには、障害復旧と高可用性が含まれています。 実装が運用段階に近づき、Microsoft Dynamics Lifecycle Services (LCS) 手法の必要なアクティビティと正常な運用評価が完了するとプロビジョニングされます。 また、いくらかのファイル ストレージとデータベース ストレージはサービスに含まれます。
 
     - **ファイル ストレージ:** すべての顧客は、ファイルまたはバイナリ データ用のファイル/Azure blob クラウド ストレージを 100 GB 受け取ります。 その他のファイル/blob ストレージは購入することができます。
-    - **データベース ストレージ:** すべての Finance and Operations サブスクリプションには、追加料金なしで顧客ごとに 10 GB の Azure SQL データベース ストレージが含まれています。 ユーザーとデバイス サービス ライセンスの数が増えると、組織には無償で追加のストレージ容量が提供されます。 さまざまな環境とさまざまな種類のストレージの詳細については、[Dynamics 365 の価格設](https://dynamics.microsoft.com/en-us/pricing/)定から最新の *Microsoft Dynamics 365 ライセンス ガイド*をダウンロードしてください。
+    - **データベース ストレージ:** すべての Finance and Operations サブスクリプションには、追加料金なしで顧客ごとに 10 GB の Azure SQL データベース ストレージが含まれています。 ユーザーとデバイス サービス ライセンスの数が増えると、組織には無償で追加のストレージ容量が提供されます。 さまざまな環境とさまざまな種類のストレージの詳細については、[Dynamics 365 の価格設](https://dynamics.microsoft.com/pricing/)定から最新の *Microsoft Dynamics 365 ライセンス ガイド*をダウンロードしてください。
 
 ### <a name="provisioning-of-standard-environments"></a>標準環境のプロビジョニング
 
@@ -100,7 +102,7 @@ ms.lasthandoff: 09/17/2018
 
 顧客は、ソリューションをビルドするのではなく**運用**するために実稼働環境を使用する必要がある。 実稼働環境が業務の遂行に合ったサイズになっている。 サイズ決定は、サブスクリプションの見積とパフォーマンス テストの診断データに基づいて行われます。 展開後、顧客は実稼働環境でモック切替および最終的な一連の検証を行うことができ、その必要があります。 最後切替の前に、顧客はポイント イン タイム復元を要求し、実稼働環境をクリーンなスナップショット (最大 35 日前) に復元できます。
 
-実稼働環境の適切なデータ センターを選択するには、ビジネスが運営されている地理的な場所から待機時間を検討してください。 [PsPing](https://docs.microsoft.com/en-us/sysinternals/downloads/psping) や [azurespeed.com](http://azurespeed.com/) などのツールを使って、Azure データ センターの待機時間をテストします。
+実稼働環境の適切なデータ センターを選択するには、ビジネスが運営されている地理的な場所から待機時間を検討してください。 [PsPing](https://docs.microsoft.com/sysinternals/downloads/psping) や [azurespeed.com](http://azurespeed.com/) などのツールを使って、Azure データ センターの待機時間をテストします。
 
 次の図は、環境計画プロセスを示しています。
 
@@ -132,7 +134,7 @@ ms.lasthandoff: 09/17/2018
 |---------------------------------------|-----------------|--------------|-------------------|
 | パブリック URL                            | ✓ | ✓ | サポートされていません |
 | 統合開発               | ✓ | ✓ | 追加の設定が必要です。 (たとえば、管理者ユーザー プロビジョニング ツールを実行します。) |
-| Azure DevOps                                  | ✓ | ✓ | 追加の設定が必要です。 (たとえば、コンピューター名を変更します。) |
+| Azure DevOps                          | ✓ | ✓ | 追加の設定が必要です。 (たとえば、コンピューター名を変更します。) |
 | LCS から配置可能なパッケージを適用 | 自動化 | 自動化 | Runbook を通じて手動 |
 | LCS からデータ パッケージを展開      | ✓ | ✓ | サポートされていません |
 | 管理                           | Microsoft が管理 | お客様/パートナーが管理 | お客様/パートナーが管理 |
@@ -153,7 +155,7 @@ ms.lasthandoff: 09/17/2018
 ![サブスクリプション見積](./media/environment-planning-4-subscription-estimate.png)
 
 > [!IMPORTANT]
-> レベル 2 以上の環境の将来の管理者ロックダウンがあると、サーバーへのリモート デスクトップ プロトコル (RDP) 接続ができなくなります。 Microsoft ロードマップの一環として、RDP アクセスが必要な最も一般的なアクションは LCS でのセルフ サービス タスクによって置き換えられます。 たとえば、「[Finance and Operations データベースを SQL Server から Azure SQL データベース運用環境にコピーする](../../dev-itpro/database/copy-database-from-sql-server-to-azure-sql.md)」で現在説明されている手順は、Microsoft からサービスとして利用できます。 したがって、Finance and Operations データベースを SQL Server から Azure SQL データベース環境にコピーするには、LCS でサービス要求を作成する必要があります。 詳しくは、[LCS ブログ](https://blogs.msdn.microsoft.com/lcs/2018/02/27/notice-of-upcoming-change-removing-rdp-access-to-tiers-2-3-4-and-5-standard-acceptance-test-or-sandbox-environments-deployed-in-microsoft-subscription/)と[ドキュメント](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/)をご覧ください。
+> レベル 2 以上の環境の将来の管理者ロックダウンがあると、サーバーへのリモート デスクトップ プロトコル (RDP) 接続ができなくなります。 Microsoft ロードマップの一環として、RDP アクセスが必要な最も一般的なアクションは LCS でのセルフ サービス タスクによって置き換えられます。 たとえば、「[Finance and Operations データベースを SQL Server から Azure SQL データベース運用環境にコピーする](../../dev-itpro/database/copy-database-from-sql-server-to-azure-sql.md)」で現在説明されている手順は、Microsoft からサービスとして利用できます。 したがって、Finance and Operations データベースを SQL Server から Azure SQL データベース環境にコピーするには、LCS でサービス要求を作成する必要があります。 詳しくは、[LCS ブログ](https://blogs.msdn.microsoft.com/lcs/2018/02/27/notice-of-upcoming-change-removing-rdp-access-to-tiers-2-3-4-and-5-standard-acceptance-test-or-sandbox-environments-deployed-in-microsoft-subscription/)と[ドキュメント](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/)をご覧ください。
 
 ### <a name="purchasing-add-on-environments"></a>アドオン環境の購入
 
@@ -164,7 +166,7 @@ ms.lasthandoff: 09/17/2018
 ![アドオンの調達](./media/environment-planning-5-procuring-add-on.png)
 
 > [!IMPORTANT]
-> マイクロソフト ボリューム ライセンス契約をお持ちの場合、Microsoft の製品およびサービス契約 (MPSA) ライセンス プログラムを通じて月間ベースでアドオン環境にサブスクライブできます。 または、Microsoft クラウド ソリューション プロバイダー (CSP) プログラムからサブスクライブすることができます。 さまざまな環境と層の詳細については、[Dynamics 365 の価格設定](https://dynamics.microsoft.com/en-us/pricing/)から最新の *Microsoft Dynamics 365 ライセンス ガイド*をダウンロードしてください。
+> マイクロソフト ボリューム ライセンス契約をお持ちの場合、Microsoft の製品およびサービス契約 (MPSA) ライセンス プログラムを通じて月間ベースでアドオン環境にサブスクライブできます。 または、Microsoft クラウド ソリューション プロバイダー (CSP) プログラムからサブスクライブすることができます。 さまざまな環境と層の詳細については、[Dynamics 365 の価格設定](https://dynamics.microsoft.com/pricing/)から最新の *Microsoft Dynamics 365 ライセンス ガイド*をダウンロードしてください。
 
 ## <a name="environments-plan"></a>環境計画
 

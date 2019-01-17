@@ -20,10 +20,10 @@ ms.author: jashanno
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 53c0da5e9697deaf946ccd4fbcd2102faa62b195
-ms.openlocfilehash: 4dd9c3ebc74280b6ba9a87cdc95a303700e0429e
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: aa33b3c6e39bb7d4c5fa55b65a39b6331190dcc8
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/02/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -47,6 +47,7 @@ ms.lasthandoff: 11/02/2018
 > オンプレミス環境で使用するための Modern POS をインストールする場合、Modern POS はデバイスの有効化に Azure Active Directory の資格情報を使用しません。
 
 ## <a name="setup"></a>セットアップ
+
 このトピックで説明されている手順を開始する前に、次の手順を実行します。
 
 - 小売用バックオフィスにサインインするための資格情報があることを確認します。
@@ -54,7 +55,8 @@ ms.lasthandoff: 11/02/2018
 - デバイスから Retail サーバーにアクセスできることを確認します。
 - Microsoft Dynamics 365 for Retail 環境では、**人事管理**モジュールに小売アクセス許可のグループとジョブが含まれています。 これらの権限グループとジョブは、デモ データの一部としてインストールされている必要があります。
 
-## <a id="Install"> </a>Retail Modern POS ダウンロードとインストール
+## <a name="download-and-install-retail-modern-pos"></a> Retail Modern POS ダウンロードとインストール
+
 ### <a name="verify-that-the-device-is-correctly-configured"></a>デバイスが正しくコンフィギュレーションされていることを確認します。
 
 1. 小売用バック オフィスで、**Retail** &gt; **チャネル** &gt; **チャネル配置** に移動します。
@@ -103,11 +105,12 @@ ms.lasthandoff: 11/02/2018
 ### <a name="run-the-installer-on-a-windows-computer"></a>Windows コンピューターでインストーラーを実行する
 
 > [!NOTE]
-> Retail Modern POS インストーラーを実行する前に、すべての[システム要件](../fin-and-ops/get-started/system-requirements.md)が満たされていることを確認してください。
+> - Retail Modern POS インストーラーを実行する前に、すべての[システム要件](../fin-and-ops/get-started/system-requirements.md)が満たされていることを確認してください。
 > - インストーラーは、最新のアプリケーションをサイドロードします。 したがって、サイドロードされたアプリケーションを許可するようにグループ ポリシー エントリを設定する必要があります。 インストーラーは、このインストールを可能にするために、次のように関連するレジストリ キーを変更します。
->     - **パス:** HKLM:SoftwarePoliciesMicrosoftWindowsAppx
->     - **プロパティ:** AllowAllTrustedApps
->     - **値:** 1
+>
+>    - **パス:** HKLM:SoftwarePoliciesMicrosoftWindowsAppx
+>    - **プロパティ:** AllowAllTrustedApps
+>    - **値:** 1
 
 オンプレミス環境で使用する Retail Modern POS をインストールする場合は、次のようにコマンド ラインからインストーラーを起動する必要があります。
 
@@ -125,7 +128,7 @@ Retail Modern POS インストーラーは、まず関連付けられている�
 
     > [!NOTE]
     > - インストーラーは正しい言語をダウンロードしようとします。 ただし、特定の言語を必要とする場合、SQL Server を手動でインストールすることを強くお勧めします。 インストーラーが言語を正しく指定できない場合は、既定で SP2 で SQL Server 2014 Express の英語版をインストールします。 通常、SQL のインストールが完了したら、Retail Modern POS のインストールを続行する前にシステムを再起動する必要があります。
-    > - このプロセスには、コンピュータの速度とインターネット接続に応じて、時間がかかることがあります。 この手順で前提条件が満たされない場合は、まずインストーラを再試行してください。 それでもインストーラーに失敗する場合は、このトピックの「トラブルシューティング」を参照します。
+    > - このプロセスには、コンピュータの速度とインターネット接続に応じて、時間がかかることがあります。 この手順で前提条件が満たされない場合は、まずインストーラを再試行してください。 それでもインストーラーに失敗する場合は、このトピックの[トラブルシューティング](#troubleshooting)を参照します。
 
 3. インストーラー は Retail Modern POS をインストールします。
 4. インストールが成功したことを示すページで、**閉じる**を選択しインストーラーを終了します。
@@ -153,6 +156,7 @@ Retail Modern POS インストーラーは、まず関連付けられている�
 プログラムを開始できるようになりました。
 
 ## <a name="create-a-worker"></a>作業者を作成
+
 このトピックのでは、既に作業者を作成し、彼らを提供されているデモ データ内のヒューストン アドレス帳に割り当てました。 したがって、このトピックでは事前生成データを使用します。
 
 ### <a name="create-a-worker"></a>作業者を作成
@@ -200,15 +204,16 @@ Retail Modern POS インストーラーは、まず関連付けられている�
 
 ### <a name="run-the-validate-devices-for-activation-check"></a>有効化チェックのためにデバイス検証を実行
 
-1. 小売用バック オフィスで、**デバイス** ページ (**Retail** **と Commerce** &gt; **POS の設定** &gt; **デバイス**) を開きます。
+1. 小売用バックオフィスで、**デバイス** ページ (**Retail と Commerce** &gt; **POS の設定** &gt; **デバイス**) を開きます。
 2. デバイスの有効化を検証するデバイスを選択し、**デバイスで有効化を検証する** を選択します。 たとえば、デバイスの **HOUSTON-3** を選択します。
 3. 表示されるダイアログ ボックスで、デバイスを検証する作業者 (前の手順で Azure AD アカウントにマップされた作業者) を選択します。 たとえば、作業者の **000160** を選択します。
 4. **OK** を選択し、次のメッセージが表示されることを確認します。「デバイス HOUSTON-3 とスタッフ 000160 の有効化前の検証が完了しました。 検証: 成功
 
 ## <a name="activate-a-device"></a>デバイスのアクティブ化
+
 1. コンピューターで Retail Modern POS を起動します。 **開始する前に**ページの手順を読み、完了したことを確認します。 その後、**次へ** を選択します。
 2. **有効化** を選択します。 Azure AD サインイン ページにリダイレクトされます。
-3. **admin@&lt;MyCompany&gt;.onmicrosoft.com** など、以前マップした Azure AD アカウントおよびパスワードを入力します。
+3. `admin@<MyCompany>.onmicrosoft.com` など、以前マップした Azure AD アカウントおよびパスワードを入力します。
 4. 有効化が完了したら、**開始** を選択します。
 5. 作業者アカウント **000160** とパスワード **123** を使用して Retail Modern POS にログインします。
 
@@ -216,15 +221,15 @@ Retail Modern POS インストーラーは、まず関連付けられている�
 
 ## <a name="update-the-retail-modern-pos-application"></a>Retail Modern POS アプリケーションの更新
 
-
-**注記:** 配置可能パッケージの詳細については、[配置可能パッケージの適用](../dev-itpro/deployment/apply-deployable-package-system.md) の記事を参照してください。
-
+> [!NOTE]
+> 配置可能パッケージの詳細については、[配置可能パッケージの適用](../dev-itpro/deployment/apply-deployable-package-system.md)の記事を参照してください。
 
 1. Retail Modern POS アプリケーションが環境にアップロードされた後、デバイスでパッケージのバージョンを選択することができます。 パッケージ一覧には、新しいアップロードされたアプリケーションが含まれている必要があります。
-2. Retail Modern POS アプリケーションを更新するには、[[ Retail Modern POSをダウンロードしてインストールする](#Install)] セクションの手順に従ってください。 インプレース更新を行うには、新しいバージョンのセルフ サービス インストーラーを実行します。 アンインストールは必須でないか、推奨されていません。 デバイスの有効化状態は更新後も維持されます。
+2. Retail Modern POS アプリケーションを更新するには、[[ Retail Modern POSをダウンロードしてインストールする](#download-and-install-retail-modern-pos)] セクションの手順に従ってください。 インプレース更新を行うには、新しいバージョンのセルフ サービス インストーラーを実行します。 アンインストールは必須でないか、推奨されていません。 デバイスの有効化状態は更新後も維持されます。
 3. インストーラーは、現在インストールされているコンフィギュレーション設定を使用します。 Retail でさまざまな構成が変更したために、構成ファイルが変更した場合、更新によって Retail Modern POS アプリケーションは変更されません。
 
 ## <a name="troubleshooting"></a>トラブルシューティング
+
 ### <a name="troubleshoot-installation"></a>インストールに関するトラブルシューティング
 
 - ブラウザーが、生成されるダウンロード ポップアップをブロックします。
@@ -251,11 +256,15 @@ Retail Modern POS インストーラーは、まず関連付けられている�
     1. 管理者として**コマンド プロンプト** ウィンドウを開きます。
     2. 次のコマンドを入力します。
 
-            lodctr /s:"perf_backup.txt"
+        ```
+        lodctr /s:"perf_backup.txt"
+        ```
 
     3. 次のコマンドを入力します。
 
-            lodctr /R
+        ```
+        lodctr /R
+        ```
 
     4. システムでシステムのバックアップのパフォーマンス カウンター設定が再構築されない場合、**lodctr/R** コマンドを再実行します。
     5. Retail Modern POS インストーラーを再実行します。
@@ -265,7 +274,7 @@ Retail Modern POS インストーラーは、まず関連付けられている�
     - **ソリューション 1:** ダウンロードした VHD では、Azure ストレージ エミュレーターがインストールされており、正しく動作している必要があります。 そうしないと、セルフサービス パッケージを正しくダウンロードすることはできません。
     - **ソリューション 2:** VHD を Microsoft Hyper-V に統合するプロセス中にエラーが発生した可能性があります。 パッケージを正しくダウンロードする前に、手動でアクセス許可を編集する必要があります。 以下の手順を実行します。
 
-        1. ファイル エクスプローラーで、**C:\Microsoft Dynamics 365\70\Retail Server** を参照します。
+        1. ファイル エクスプローラーで、**C:\\Microsoft Dynamics 365\\70\\Retail Server** を参照します。
         2. **SelfServicePackages** フォルダーを右クリックし、**プロパティ** を選択します。
         3. **セキュリティ**タブで、**編集**をクリックします。
         4. **SelfServiceDeployment のアクセス許可**ダイアログ ボックスで、**追加**を選択します。
@@ -290,7 +299,7 @@ Retail Modern POS インストーラーは、まず関連付けられている�
     **ソリューション:** すべてのデータが正しいことを確認するには、このチェックリストに従ってください。
 
     - 小売用バックオフィスで有効化のためにデバイスを検証チェックを完了し、デバイスが検証をパスしたことを確認します。
-    - デバイスを有効化しているクライアント コンピューターで、Retail サーバー URL 正常性チェックにアクセスし、正常性チェックが承認されていることを確認します。 URL には次の形式を使用します: https://MyCompanyNameret.axcloud.dynamics.com/commerce/healthcheck?testname=ping
+    - デバイスを有効化しているクライアント コンピューターで、Retail サーバー URL 正常性チェックにアクセスし、正常性チェックが承認されていることを確認します。 URL には次の形式を使用します: `https://MyCompanyNameret.axcloud.dynamics.com/commerce/healthcheck?testname=ping`
     - 作業者は、Azure AD アカウント (**外部 ID** 下) にマップする必要があります。
     - マッピングされる Azure AD アカウントは、同じテナントに属している必要があります。
     - 作業者を Azure AD アカウントにマップするには、Microsoft Dynamics Lifecycle Services (LCS) の管理者アカウントを使用して小売用バックオフィスにサインインします。
@@ -305,9 +314,10 @@ Retail Modern POS インストーラーは、まず関連付けられている�
     - 電子決済 (EFT) のコンフィギュレーションの値があることを確認します。
 
 ### <a name="troubleshoot-retail-modern-pos-connectivity"></a>Retail Modern POS 接続のトラブルシューティング
+
 シングル コンピュータ システムでは、開発者トポロジまたはデモ環境など、または Retail Store スケール ユニットと Retail Modern POS が同じコンピュータにインストールされている場合、Retail Modern POS はデバイス有効化を完了できません。
 
-**ソリューション:** この問題は、Retail Modern POS が同じコンピュータへのネットワーク コール (つまり、それ自体の呼び出し) を行うことができないために発生します。 この問題を緩和するには、同じコンピュータに対して通信できるように AppContainer ループバック例外を有効にする必要があります。 Retail Modern POS のこのループバックを有効にするのにさまざまなアプリケーションが役立ちます。 ループバックの詳細については、[ループバックの有効化およびネットワーク分離のトラブルシューティングの方法](https://msdn.microsoft.com/en-us/library/windows/apps/hh780593.aspx) を参照してください。
+**ソリューション:** この問題は、Retail Modern POS が同じコンピュータへのネットワーク コール (つまり、それ自体の呼び出し) を行うことができないために発生します。 この問題を緩和するには、同じコンピュータに対して通信できるように AppContainer ループバック例外を有効にする必要があります。 Retail Modern POS のこのループバックを有効にするのにさまざまなアプリケーションが役立ちます。 ループバックの詳細については、[ループバックの有効化およびネットワーク分離のトラブルシューティングの方法](https://msdn.microsoft.com/library/windows/apps/hh780593.aspx) を参照してください。
 
 ## <a name="additional-resources"></a>その他のリソース
 

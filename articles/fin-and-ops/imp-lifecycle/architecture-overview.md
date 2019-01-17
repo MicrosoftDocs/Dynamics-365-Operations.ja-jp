@@ -18,10 +18,10 @@ ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
-ms.openlocfilehash: 930980beba1ff4e2cb3958ccd7ecc653d822fbae
+ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
+ms.openlocfilehash: d380aaeed728fd2671669af7bf54636682c690e1
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/17/2018
+ms.lasthandoff: 12/18/2018
 
 ---
 
@@ -29,15 +29,15 @@ ms.lasthandoff: 09/17/2018
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Finance and Operations クラウド アーキテクチャには、すべての Microsoft クラウド提供に共通する全ての要素が含まれています。以下に記載されているとおりです。[定期売買、ライセンス、アカウントおよび Microsoft のクラウド提供のテナント](https://docs.microsoft.com/en-us/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings)。 さらに、ソフトウェアの展開とプロビジョニング、運用の監視とレポート、およびシームレスなアプリケーション ライフサイクル管理を自動化するサービスが含まれます。 
+Microsoft Dynamics 365 for Finance and Operations クラウド アーキテクチャには、すべての Microsoft クラウド提供に共通する全ての要素が含まれています。以下に記載されているとおりです。[定期売買、ライセンス、アカウントおよび Microsoft のクラウド提供のテナント](https://docs.microsoft.com/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings)。 さらに、ソフトウェアの展開とプロビジョニング、運用の監視とレポート、およびシームレスなアプリケーション ライフサイクル管理を自動化するサービスが含まれます。
 
 ![クラウド アーキテクチャ](./media/cloud-architecture.png)
 
 Finance and Operations のクラウド アーキテクチャは、これらの概念領域で構成されています。
 
-- **サブスクリプション** ー Microsoft Dynamics 365 for Finance and Operations (クラウド) のサブスクリプションでは、オンライン クラウド環境 (または複数の環境) および経験を付与します。 
-- **ライセンス** – 顧客は、組織または関連会社の従業員のために、およびオンサイト エージェント、仕入先、直接または間接的に Finance and Operations にアクセスする契約社員のサブスクリプション ライセンス (SL) を購買する必要があります。 Finance and Operations は、Microsoft ボリューム ライセンスおよび Microsoft クラウド ソリューション プロバイダー (CSP) プログラムを通じてライセンスされています。 詳細については、[Dynamics 365 の価格設定からの最新の Microsoft Dynamics 365 ライセンス ガイド](https://dynamics.microsoft.com/en-us/pricing/)をダウンロードしてください。
-- **テナント** – Microsoft Azure Active Directory (AAD) で、テナントは組織を表示します。 Microsoft との関係を作成するとき (たとえば、Azure、Microsoft Intune または Microsoft Office 365 など Microsoft クラウド サービスにサインアップすることにより)、組織が受け取り所有する AAD サービスの専用インスタンスです。 すべての AAD テナントは特徴的で、他の AAD テナントとは区別されます。 AAD テナントの詳細については、[Azure Active Directory テナントを取得する方法](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-howto-tenant)を参照してください。
+- **サブスクリプション** ー Microsoft Dynamics 365 for Finance and Operations (クラウド) のサブスクリプションでは、オンライン クラウド環境 (または複数の環境) および経験を付与します。
+- **ライセンス** – 顧客は、組織または関連会社の従業員のために、およびオンサイト エージェント、仕入先、直接または間接的に Finance and Operations にアクセスする契約社員のサブスクリプション ライセンス (SL) を購買する必要があります。 Finance and Operations は、Microsoft ボリューム ライセンスおよび Microsoft クラウド ソリューション プロバイダー (CSP) プログラムを通じてライセンスされています。 詳細については、[Dynamics 365 の価格設定からの最新の Microsoft Dynamics 365 ライセンス ガイド](https://dynamics.microsoft.com/pricing/)をダウンロードしてください。
+- **テナント** – Microsoft Azure Active Directory (AAD) で、テナントは組織を表示します。 Microsoft との関係を作成するとき (たとえば、Azure、Microsoft Intune または Microsoft Office 365 など Microsoft クラウド サービスにサインアップすることにより)、組織が受け取り所有する AAD サービスの専用インスタンスです。 すべての AAD テナントは特徴的で、他の AAD テナントとは区別されます。 AAD テナントの詳細については、[Azure Active Directory テナントを取得する方法](https://docs.microsoft.com//azure/active-directory/develop/active-directory-howto-tenant)を参照してください。
 
     テナントには、会社のユーザー情報が格納されています。 この情報には、パスワード、ユーザー プロファイル データ、アクセス許可、および関連情報が含まれます。 テナントには、組織やそのセキュリティに関するグループ、アプリケーション、およびその他の情報も含まれています。
 
@@ -45,8 +45,8 @@ Finance and Operations のクラウド アーキテクチャは、これらの�
 
     組織では、複数の AAD テナントを持つことができます。 複数のテナントがある場合は、Finance and Operations のサブスクリプションが正しいテナントに関連付けられていることを確認してください。
 
-- **Azure Active Directory (AAD)** – AAD は、マルチ テナントで Microsoft のコア ディレクトリ サ―ビス、アプリケーション アクセス管理、および単一ソリューションの ID 保護を組み合わせたクラウドベース ディレクトリと管理サービス ID です。 詳細については、[Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/) を参照してください。 Finance and Operations は、店舗の ID として AAD を使用します。 AAD へのアクセスは、Finance and Operations へのサブスクリプションの一部として提供されます。
-- **Office 365 管理者センター** – Office 365 管理者センターは、Office 365 が管理者に提供する定期売買管理ポータルです。 ユーザー (AAD) および定期売買の管理機能を提供するのに使用されます。 これらの管理機能の一部として、サービスの正常性に関する情報を提供します。 詳細については、[Office 365 管理者センターについて](https://support.office.com/en-us/article/about-the-office-365-admin-center-758befc4-0888-4009-9f14-0d147402fd23?ui=en-US&rs=en-US&ad=US)を参照してください。 
+- **Azure Active Directory (AAD)** – AAD は、マルチ テナントで Microsoft のコア ディレクトリ サ―ビス、アプリケーション アクセス管理、および単一ソリューションの ID 保護を組み合わせたクラウドベース ディレクトリと管理サービス ID です。 詳細については、[Azure Active Directory](https://docs.microsoft.com/azure/active-directory/) を参照してください。 Finance and Operations は、店舗の ID として AAD を使用します。 AAD へのアクセスは、Finance and Operations へのサブスクリプションの一部として提供されます。
+- **Office 365 管理者センター** – Office 365 管理者センターは、Office 365 が管理者に提供する定期売買管理ポータルです。 ユーザー (AAD) および定期売買の管理機能を提供するのに使用されます。 これらの管理機能の一部として、サービスの正常性に関する情報を提供します。 詳細については、[Office 365 管理者センターについて](https://support.office.com/article/about-the-office-365-admin-center-758befc4-0888-4009-9f14-0d147402fd23)を参照してください。
 
     > [!NOTE]
     > Office 365 ライセンスを配置するために Finance and Operations を取得する必要はありません。 ただし、特定の Office 統合シナリオのライセンスが必要な場合があります。 詳細については、[Office 統合](../../dev-itpro/office-integration/office-integration.md)を参照してください。
@@ -54,9 +54,9 @@ Finance and Operations のクラウド アーキテクチャは、これらの�
 - **Microsoft Dynamics Lifecycle Services (LCS)** – LCS は、Finance and Operations 実装のアプリケーション ライフサイクルの管理に役立つ環境と定期的に更新される一連のサービスを提供するコラボレーション ポータルです。 詳細については、[Lifecycle Services for Finance and Operations](../../dev-itpro/lifecycle-services/lcs.md) を参照してください。 Finance and Operations を購入してサブスクリプションを有効化した後、**実装プロジェクト**ワークスペースでテナント管理者が初めてサインインすると、LCS にプロビジョニングされます。
 
     > [!NOTE]
-    > 実装プロジェクトは、Microsoft-managed Finance and Operations クラウド サービスの LCS プロジェクトです。 Microsoft パートナーとして、目的に合わせて非実装 LCS プロジェクトを準備することもできます。 詳細については、[Lifecycle Services for Finance and Operations のパートナー](../../dev-itpro/lifecycle-services/getting-started-lcs.md)を参照してください。 
+    > 実装プロジェクトは、Microsoft-managed Finance and Operations クラウド サービスの LCS プロジェクトです。 Microsoft パートナーとして、目的に合わせて非実装 LCS プロジェクトを準備することもできます。 詳細については、[Lifecycle Services for Finance and Operations のパートナー](../../dev-itpro/lifecycle-services/getting-started-lcs.md)を参照してください。
 
-- **Finance and Operations** – Finance and Operations は、LCS を通じて展開されます。 開発/テスト/ビルド、受入れテスト、パフォーマンス テスト、高可用性生産など、さまざまなトポロジが利用できます。 さまざまなトポロジの詳細については、[Dynamics 365 の価格設定からの最新の Microsoft Dynamics 365 ライセンス ガイド](https://dynamics.microsoft.com/en-us/pricing/)をダウンロードしてください。
+- **Finance and Operations** – Finance and Operations は、LCS を通じて展開されます。 開発/テスト/ビルド、受入れテスト、パフォーマンス テスト、高可用性生産など、さまざまなトポロジが利用できます。 さまざまなトポロジの詳細については、[Dynamics 365 の価格設定からの最新の Microsoft Dynamics 365 ライセンス ガイド](https://dynamics.microsoft.com/pricing/)をダウンロードしてください。
 - **Microsoft Azure DevOps** – Azure DevOps は、主にコードのバージョン管理に使用され、ビルド環境を配置します。 Azure DevOps は、クラウドを利用したサポートを通じて Microsoft に送信される Azure DevOps の作業項目などのサポート インシデントの追跡や、ビジネス プロセス モデラー (BPM) ライブラリ階層を作業項目の階層として Azure DevOps プロジェクトに統合するのにも使用されます。 Azure DevOps はコードのアップグレード時にも使用されます。
 
 Finance and Operations では、Azure ストレージ、ネットワーク、監視、Azure SQL データベースなど、Azure プラットフォームの多くの機能を使用しています。 共有サービスが工程に移り、参加者の環境のアプリケーション ライフサイクルが調整されます。 Azure の機能と LCS があいまって、堅牢なクラウド サービスを提供します。

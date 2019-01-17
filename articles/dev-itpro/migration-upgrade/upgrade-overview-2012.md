@@ -3,7 +3,7 @@ title: "AX 2012 から Finance and Operations へのアップグレード"
 description: "このトピックでは、Microsoft Dynamics AX 2012 を現在実行している顧客が、データとコードを Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition に移動するために使用できるプロセスについて説明します。"
 author: tariqbell
 manager: AnnBe
-ms.date: 06/06/2018
+ms.date: 12/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -16,10 +16,10 @@ ms.author: tabell
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 8939538f11ebf17c2519470c7c87fe2e4d8a9c14
+ms.sourcegitcommit: b8002c547b4f5e7ca485778af90d5b5293496f79
+ms.openlocfilehash: 9cfd0433d00802cef07d148e79aaefefca5fefda
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 12/10/2018
 
 ---
 
@@ -55,7 +55,7 @@ Finance and Operations を購入する前に分析活動を実行するには、
 
 AX 2012 に既存の LCS プロジェクトがある場合は、追加の Finance and Operations の LCS プロジェクトにサインアップする必要があります。
 
-顧客用に LCS トライアル プロジェクトを取得する方法の詳細については、https://mbs.microsoft.com/customersource/global/AX/news-events/news/Microsoft_Dynamics_AX_Public_Preview を参照してください。
+顧客用に LCS トライアル プロジェクトを取得する方法の詳細については、https://go.microsoft.com/fwlink/?LinkId=2017742&clcid=0x409 を参照してください。
 
 LCS パートナー プロジェクトを取得する方法の詳細については、https://mbs.microsoft.com/partnersource/global/news-events/news/Microsoft_Dynamics_AX_Public_Preview を参照してください。
 

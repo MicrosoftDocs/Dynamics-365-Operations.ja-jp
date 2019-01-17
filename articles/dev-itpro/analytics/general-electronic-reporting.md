@@ -19,10 +19,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 99c10649d7683265fcac86c1825c5a965bbdb415
-ms.openlocfilehash: f27f228e48da653a9caf666f9053fe45a7c23745
+ms.sourcegitcommit: 67dc5b5cdec797f19a742addd05c6002aa31cf15
+ms.openlocfilehash: e619b24fc790399452d6233b2d04987357d87186
 ms.contentlocale: ja-jp
-ms.lasthandoff: 12/04/2018
+ms.lasthandoff: 01/03/2019
 
 ---
 
@@ -174,11 +174,11 @@ ER レポジトリは ER コンフィギュレーションを格納します。 
 - 開発のために配置されたクラウド ホスト環境 (囲まれたスイートのテスト モデルを含む)
 - ローカルに配置された環境 (オンプレミスまたはローカルのビジネス データ配置 (LBD))
 
-詳細については、[電子申告 (ER) コンフィギュレーションのインポート](/electronic-reporting-import-ger-configurations.md) を参照してください。
+詳細については、[電子申告 (ER) コンフィギュレーションのインポート](./electronic-reporting-import-ger-configurations.md) を参照してください。
 
 **RCS インスタンス**リポジトリは、リポジトリの登録段階で選択された特定の RCS インスタンスのコンフィギュレーションの一覧へのアクセス許可を提供します。 ER を使用すると、選択した RCS インスタンスから完了または共有コンフィギュレーションを現在の Finance and Operations インスタンスにインポートし、電子申告に使用できます。
 
-詳細については、[規制コンフィギュレーション サービスから電子申告 (ER) コンフィギュレーションをインポートする](/rcs-download-configurations.md) ページを参照してください。
+詳細については、[規制コンフィギュレーション サービスから電子申告 (ER) コンフィギュレーションをインポートする](./rcs-download-configurations.md) ページを参照してください。
 
 必要な **LCS プロジェクト**、**ファイル システム**、および**規制コンフィギュレーション サービス (RCS)** リポジトリは、現在の Finance and Operations インスタンスの各コンフィギュレーション プロバイダーに対して個別に登録できます。 各リポジトリは、特定のコンフィギュレーション プロバイダー専用にできます。
 

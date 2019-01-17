@@ -7,6 +7,10 @@
         - name: 新機能および変更された機能
           href: whats-new.md
           items:
+            - name: Dynamics 365 for Talent Core HR の新機能および変更された機能 (2018 年 12 月 14 日)
+              href: whats-new-talent-december-14.md
+            - name: Dynamics 365 for Talent Core HR の新機能および変更された機能 (2018 年 12 月 6 日)
+              href: whats-new-talent-december-6.md
             - name: Dynamics 365 for Talent Core HR の新機能および変更された機能 (2018 年 11 月 27 日)
               href: whats-new-talent-november-27.md
             - name: Dynamics 365 for Talent Core HR の新機能および変更された機能 (2018 年 11 月 15 日)
@@ -71,6 +75,8 @@
     - name: 休暇および欠勤の管理
       href: leave-absence-overview.md
       items:
+        - name: 休暇および欠勤の概念
+          href: leave-absence-concepts.md
         - name: 作業時間に基づく休暇取得権利の発生
           href: leave-accrue-hours-worked.md
         - name: 作業時間カレンダー
@@ -127,11 +133,14 @@
           href: skills.md
         - name: トレーニング コースの設定
           href: courses.md
-    - name: 給付金プログラムの定義および管理
-      href: manage-benefit-program.md
-    - name: 給付金の適格性ポリシー
-      href: benefit-eligibility-policies.md
+    - name: 福利厚生プログラムの定義および管理
       items:
+        - name: 福利厚生プログラムの管理
+          href: manage-benefit-program.md
+        - name: 給付金の適格性ポリシー
+          href: benefit-eligibility-policies.md
+        - name: 医療費負担適正化法 (Affordable Care Act) 報告の生成
+          href: generate-aca-reports.md
         - name: 作業者への貸与品目の管理
           href: loan-items.md
     - name: アンケートによる情報の収集
@@ -276,8 +285,6 @@
           href: create-envi-powerapps-admin-ctr.md
         - name: Talent クライアントの接続が切断される
           href: client-disconnects.md
-        - name: データベース バックアップの処理方法
-          href: database-backups.md
         - name: 職位階層でテキストの一部が切り捨てられないようにし、Visio にエクスポートする
           href: avoid-text-truncation-position-hierarchy-visio.md
         - name: 報酬プロセスを実行する

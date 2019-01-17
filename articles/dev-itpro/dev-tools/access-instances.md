@@ -18,10 +18,10 @@ ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
-ms.openlocfilehash: dcbf0bab4fbcbfc24fc7ffd40d97f76369c513ac
+ms.sourcegitcommit: 74539d9bc4069e1bc9e338295eba4f240b0593b6
+ms.openlocfilehash: b65dd78e9c6561f1e642fe60b4b918435f544c23
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/17/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -171,7 +171,7 @@ Retail もコンフィギュレーションしている場合は、このセク�
 
 1.  RetailTenantUpdateTool を実行します。
     -   このツールのアイコンは、デスクトップ上で使用できます。
-    -   このツールは、次の場所から使用することもできます: C:\windowsSystem32WindowsPowerShellv1.0PowerShell.exe-ファイルC:\RetailSDKToolsRetailTenantUpdateTool.ps1
+    -   このツールは、次の場所から使用することもできます: C:\windows\System32\WindowsPowerShell\v1.0\PowerShell.exe -File C:\RetailSDK\Tools\RetailTenantUpdateTool.ps1
 
 2.  このツールを開始するには、アイコンをダブルクリックします。 自身の Azure AD 資格情報を求められます。 管理者ユーザーのプロビジョニング ツールで以前使用したものと同じ資格情報を使用する必要があります。
 

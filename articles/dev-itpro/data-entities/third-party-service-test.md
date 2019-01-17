@@ -18,10 +18,10 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
-ms.openlocfilehash: 3012c3b492821dc616dc9334b19fde7fbc31d0f4
+ms.sourcegitcommit: d4e5d20d7f632a074cffdbe57e6a31140adf17c5
+ms.openlocfilehash: 4bc87f193c4e0deda4399ef7d2afffa0ea4440ae
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
+ms.lasthandoff: 12/11/2018
 
 ---
 
@@ -43,7 +43,7 @@ ms.lasthandoff: 08/13/2018
 
 詳細については、以下を参照してください。
 
-- [AAD にアプリケーションを登録する](services-home-page.md#register-a-native-application-with-aad)
+- [AAD にアプリケーションを登録する](services-home-page.md#register-a-web-application-with-aad)
 - [Finance and Operations で外部のアプリケーションを登録する](services-home-page.md#register-your-external-application-in-finance-and-operations)
 
 ## <a name="query-finance-and-operations-odata-by-using-postman"></a>Postman を使った Finance and Operations OData の照会

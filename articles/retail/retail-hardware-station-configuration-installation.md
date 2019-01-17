@@ -20,10 +20,10 @@ ms.author: jashanno
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 298d4c01401a4d9eb346e6135aaf9c28c2d6e079
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: 380473cfb819adf881364fd2e6d50f5983ef0da8
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -124,7 +124,7 @@ Retail ハードウェア ステーション インストーラーは、まず�
     > - システムの再起動が必要な場合は、インストーラーでこれに関する要件を確認できますが、通常インストールを続行できます。
     > - 小売販売時点管理の Object Linking and Embedding (OPOS) 標準に基づいたハードウェアを使用する前に、OPOS コモン コントロール オブジェクトをインストールする必要があります。 インストールされていない場合は、インストーラーでこれに関する要件を確認できますが、通常インストールを続行できます。
 
-2. Retail Server URL を入力し (たとえば、**https://MyCompanyNameret.axcloud.dynamics.com/Commerce**)、**次**を選択します。
+2. Retail Server URL を入力し (たとえば、`https://MyCompanyNameret.axcloud.dynamics.com/Commerce`)、**次** を選択します。
 
     > [!NOTE]
     > Retail Server の URL は **小売店舗詳細** ページ上の **ハードウェア ステーション** クイック タブの最上部で見つけることができます。
@@ -147,7 +147,7 @@ Retail ハードウェア ステーション インストーラーは、まず�
     > [!NOTE]
     > インストールされているハードウェア ステーションが支払に関連する作業の使用されない場合、残りの手順を終了せずに**商社の情報をインストール**ウィンドウを閉じません。 このインストールが正常に完了しないと、ハードウェア ステーションは機能しません。
 
-8. Install マーチャント情報ツールは、Azure AD 資格情報を要求する可能性があります。 小売ハードウェア ステーションをインストールするユーザーの Azure AD 資格情報を入力します。
+8. Install マーチャント情報ツールは、Azure AD 資格情報を要求する可能性があります。 Retail ハードウェア ステーションをインストールするユーザーの Azure AD 資格情報を入力します。
 9. Retail Server URL は、Retail ハードウェア ステーションのインストールによって決定され、自動的に入力されます。 インストーラーは、この URL を使用して、ユーザーがアドレス帳を介して接続している店舗のリストをロードします。
 10. ハードウェア ステーションがインストールされた小売店舗を選択します。
 11. 現在のコンピューターにインストールされていたハードウェア ステーションに一致するハードウェア プロファイルを選択します。
@@ -155,6 +155,7 @@ Retail ハードウェア ステーション インストーラーは、まず�
 13. 商業口座情報が正しくインストールされたことを示すメッセージが表示されたら**閉じる** ボタンを選択してインストーラーを終了します。
 
 ## <a name="help-secure-retail-hardware-station"></a>Retail ハードウェア ステーションのセキュリティを強化する
+
 現在のセキュリティ基準では、実稼動環境で次のオプションを設定する必要があります。
 
 > [!NOTE]
@@ -165,10 +166,12 @@ Retail ハードウェア ステーション インストーラーは、まず�
 
     > [!NOTE]
     > 既定では、SSL および TLS 1.2 を除くすべてのバージョンの TLS は無効になります。 これらを値の編集または有効化するには、次の手順に従います。
+    >
     > 1. Windows ロゴキーと R キーを同時に押して、**実行**ウィンドウを開きます。
     > 2. **開く**フィールドに、**Regedit** と入力してから **OK** を選択します。
     > 3. **ユーザー アカウント コントロール** ウィンドウが現われたら、**はい**を選択します。
     > 4. 新しい**レジストリ エディター** ウィンドウで、**HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\SecurityProviders\\SCHANNEL\\Protocols** に移動します。 TLS 1.2 のみを有効にするために、以下のキーは自動的に挿入されています:
+    >
     >    - TLS 1.2\\Server:Enabled=1
     >    - TLS 1.2\\Server:DisabledByDefault=0
     >    - TLS 1.2\\Client:Enabled=1
@@ -191,13 +194,14 @@ Retail ハードウェア ステーション インストーラーは、まず�
 > - IIS と Payment Card Industry (PCI) の要件向けのセキュリティ ガイドラインを確認することが重要です。
 
 ## <a name="troubleshooting"></a>トラブルシューティング
+
 ### <a name="retail-modern-pos-can-detect-the-hardware-station-in-its-list-for-selection-but-it-cant-complete-the-pairing"></a>Retail Modern POS は、選択リストにあるハードウェア ステーションを検出できますが、ペアリングを完了することはできません
 
 **ソリューション:** 以下の潜在的障害ポイントを確認してください:
 
 - Retail Modern POS を実行しているコンピューターは、Retail ハードウェア ステーションを実行しているコンピューターで使用されている証明書を信頼します。
 
-    - この設定を確認するには、Web ブラウザーで次の URL にアクセスします。URL: https://&lt;Computer Name&gt;:&lt;Port Number&gt;/HardwareStation/ping。
+    - Web ブラウザーでこの設定を確認するには、次のURL `https://<Computer Name>:<Port Number>/HardwareStation/ping` に移動します。
     - この URL は ping を使用してコンピュータにアクセスできるかどうかを確認し、ブラウザは証明書が信頼できるかどうかを示します。 (たとえば、Internet Explorer では、カギの記号がアドレス バーに表示されます。 この記号をクリックすると、Internet Explorer は証明書が現在信頼されているかどうかを確認します。 表示される証明書の詳細を見ることで、ローカル コンピュータに証明書をインストールできます)。
 
 - Retail ハードウェア ステーションを実行するコンピュータで、ハードウェア ステーションで使用されるポートはファイアウォールで開かれます。
@@ -209,9 +213,10 @@ Retail ハードウェア ステーション インストーラーは、まず�
 
 - 小売ハードウェア ステーションが小売用バックオフィスに正しく設定されていない。 このトピックで説明した手順を使用して、ハードウェア ステーションのプロファイルとハードウェア ステーションが正しく入力されていることを確認します。
 - チャンネル構成を更新するジョブが実行されていません。 この場合、チャンネル構成用に 1070 のジョブを実行します。
-- そのコンピューターからハードウェア ステーションにアクセスすることはできません。 Web ブラウザーからハードウェア ステーション URL ping テストを利用できることを確認します。 この URL は、ハードウェア ステーション インストーラーの最後にあり、https://&lt;Computer Name&gt;:&lt;Port Number&gt;/HardwareStation/ping の形式です
+- そのコンピューターからハードウェア ステーションにアクセスすることはできません。 Web ブラウザーからハードウェア ステーション URL ping テストを利用できることを確認します。 この URL は、ハードウェア ステーション インストーラーの最後にあり、`https://<Computer Name>:<Port Number>/HardwareStation/ping` の形式です
 
 ## <a name="uninstall-retail-hardware-station"></a>Retail ハードウェア ステーションのアンインストール
+
 Microsoft Windows でコントロール パネルを使用して Retail ハードウェア ステーションをアンインストールすることができます。
 
 1. Windows ロゴ キーを押し、検索ボックスに**コントロール パネル**と入力します。 検索結果の一覧で、**コントロール パネル**を選択します。

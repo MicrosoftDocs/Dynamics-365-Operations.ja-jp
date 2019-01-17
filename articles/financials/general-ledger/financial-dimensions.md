@@ -3,7 +3,7 @@ title: "財務分析コード"
 description: "このトピックは、財務分析コードのさまざまなタイプと設定方法を説明します。"
 author: aprilolson
 manager: AnnBe
-ms.date: 10/26/2018
+ms.date: 01/03/2019
 ms.topic: article
 ems.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: aolson
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1
 ms.translationtype: HT
-ms.sourcegitcommit: 003b7eac16c1be50bc982da0672df42a87a69722
-ms.openlocfilehash: bda8b14b1752ca67fc4eeec6d6345dcf3968179d
+ms.sourcegitcommit: 92d1f2997ca8ea1bd47dfe47d91bf7f6234833b0
+ms.openlocfilehash: 2fb325e143eff067e1c9d0f23a1f913fc2dc36f3
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/05/2018
+ms.lasthandoff: 01/03/2019
 
 ---
 
@@ -93,6 +93,8 @@ ms.lasthandoff: 11/05/2018
 この機能は、分析コードの設定によって制御されます。 **DimensionName** が分析コードの名前である場合、この設定の名前は**作成されたそれぞれの新しい DimensionName でこの分析コードに値をコピーする**です。 既定では、機能が無効になっています。 ただし、いつでも有効にすることができます。
 
 分析コードのレコードが既に存在する場合、この機能を有効にすると、マスター レコードが更新されます。 ただし、既存のドキュメントおよびトランザクションは更新されません。
+
+マスター レコードを作成するためにテンプレートを使用している場合は、マスターの分析コードのテンプレートの値が空白であることを確認してください。 たとえば、テンプレートから顧客を作成する場合は、テンプレートの顧客の分析コードが空白であることを確認してください。 新しい顧客を作成する際、新しい顧客番号の顧客分析コード値が既定で使用されます。  
 
 ## <a name="derived-dimensions"></a>派生分析コード
 

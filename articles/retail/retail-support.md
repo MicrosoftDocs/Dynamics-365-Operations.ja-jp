@@ -18,10 +18,10 @@ ms.author: anupams
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: Retail
 ms.translationtype: HT
-ms.sourcegitcommit: 1aae5797e37b846a38f957b02870e213da528a2d
-ms.openlocfilehash: 41eb08ba5bc00aa049c07b1895cc01c9d7145d23
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: 2e74554338e4b12991756f63257f67ee3e2e6dc4
 ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -29,10 +29,9 @@ ms.lasthandoff: 10/16/2018
 
 [!include [banner](../includes/banner.md)]
 
-この記事では、Dynamics 365 for Retail のヘルプを入手する方法について説明します。 
+この記事では、Dynamics 365 for Retail のヘルプを入手する方法について説明します。
 
-<a name="contact-support"></a>サポートへの問い合わせ
----------------
+## <a name="contact-support"></a>サポートへの問い合わせ
 
 Retail に関する技術的な質問がある場合は、この記事にある情報を使用して Microsoft にお問い合わせください。
 
@@ -41,55 +40,50 @@ Retail に関する技術的な質問がある場合は、この記事にある�
 Retail のサポートを得るには、次の表にあるリソースを使用します。 これらのリソースは、トラブルシューティングの際に従うことを推奨する順序で一覧表示されています。
 
 <table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-</colgroup>
 <thead>
-<tr class="header">
+<tr>
 <th>タスク</th>
 <th>詳細情報</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>コミュニティに質問します。</td>
-<td><a href="https://community.dynamics.com/365/retail"><span style="color: #0066cc;">Dynamics 365 for Retail</span></a> コミュニティ ページに移動して Dynamics コミュニティから質問のヘルプを検索します。</td>
+<td><a href="https://community.dynamics.com/365/retail">Dynamics 365 for Retail</a>コミュニティ ページに移動して Dynamics コミュニティから質問のヘルプを検索します。</td>
 </tr>
-<tr class="even">
+<tr>
 <td>問題検索ツールを使用します。</td>
-<td><a href="https://lcs.dynamics.com/"><span style="color: #0066cc;">LCS</span></a> では、問題検索を使用して Microsoft Knowledge Base (KB) 記事、修正プログラム、および Retail の報告された問題の回避策をすぐに検索します。 特定の機能領域について、どの報告された問題が修正処理中か、あるいは修正済みかを表示できます。 詳細については、「<a href="https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lifecycle-services/issue-search-lcs"><span style="color: #0066cc;">問題検索 (Lifecycle Services, LCS)</span></a>」を参照してください。</td>
+<td><a href="https://lcs.dynamics.com/">LCS</a> では、問題検索を使用して Microsoft Knowledge Base (KB) 記事、修正プログラム、および Retail で報告された問題の回避策をすぐに検索します。 特定の機能領域について、どの報告された問題が修正処理中か、あるいは修正済みかを表示できます。 詳細については、<a href="https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/issue-search-lcs">問題検索 (Lifecycle Services, LCS)</a> を参照してください。</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>クラウドを利用したサポート ツールを使用します。</td>
-<td><a href="https://lcs.dynamics.com/"><span style="color: #0066cc;">LCS</span></a> では、<strong>サポート</strong> タイルはサポート インシデント管理の支援ツールです。 Microsoft に直接問題を送信するには、LCS プロジェクトで <strong>サポート</strong> タイルに移動します。 そこからは、2 つの方法で問題を送信することができます。
+<td><a href="https://lcs.dynamics.com/">LCS</a> では、<strong>サポート</strong> タイルはサポート インシデント管理の支援ツールです。 Microsoft に直接問題を送信するには、LCS プロジェクトで <strong>サポート</strong> タイルに移動します。 そこからは、2 つの方法で問題を送信することができます。
 <ul>
 <li><strong>アクティブな問題</strong> タブで問題を選択し、次に <strong>Microsoft に送信</strong> をクリックします。</li>
 <li><strong>Microsoft に送信</strong> タブで、<strong>新しいインシデントを送信</strong> をクリックして問題を送信します。</li>
 </ul>
-注記: Microsoft Premier の顧客やパートナーも、上記の手順を使用してプレミア サポート チケットを送信できます。</td>
+<blockquote>[!NOTE] Microsoft Premier の顧客やパートナーも、上記の手順を使用してプレミア サポート チケットを送信できます。</blockquote>
+</td>
 </tr>
-<tr class="even">
+<tr>
 <td>サポート チームでチケットを開きます。</td>
-<td>LCS の <strong>サポート</strong> タイルから Microsoft にチケットを送信しようとする際に問題が生じる場合は、「<a href="https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/global_support_contacts_eng"><span style="color: #0066cc;">Microsoft Business Solutions Support に問い合わせる</span></a>」を参照して Microsoft Dynamics Regional Operations Center への問い合わせに関する情報を入手してください。 サポート チームは、次のタイプの技術的な問題を解決するのに役立ちます。
+<td>LCS の<strong>サポート</strong>タイルから Microsoft にチケットを送信しようとする際に問題が生じる場合は、<a href="https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/global_support_contacts_eng">Microsoft Business Solutions Support に問い合わせる</a>を参照して Microsoft Dynamics Regional Operations Center への問い合わせに関する情報を入手してください。 サポート チームは、次のタイプの技術的な問題を解決するのに役立ちます。
 <ul>
 <li>LCS を使用するときに発生するエラー、または LCS にアクセスしようとするときに発生する問題。</li>
 <li>Retail を使用するときに発生するエラー。</li>
 </ul>
-CustomerSource へのサインインやアクセス、e ラーニング、検索、サポート技術情報、ファイル ダウンロードおよびページまたはシステム エラーに関連する技術的な質問については、「<a href="https://mbs2.microsoft.com/members/VoiceSupport/VoiceSupportInternal.aspx"><span style="color: #0066cc;">Web サイト サポート</span></a>」にアクセスしてください。</td>
+CustomerSource へのサインインやアクセス、e ラーニング、検索、サポート技術情報、ファイル ダウンロードおよびページまたはシステム エラーに関連する技術的な質問については、<a href="https://mbs2.microsoft.com/members/VoiceSupport/VoiceSupportInternal.aspx">Web サイト サポート</a>にアクセスしてください。</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Retail または Finance and Operations のライセンスに関する質問のヘルプを入手します。</td>
 <td>パートナー、ラージ アカウント リセラー (LAR)、または Microsoft 販売担当者に問い合わせます。</td>
 </tr>
-<tr class="even">
+<tr>
 <td>LCS イベント監視ダッシュボードを使用します。</td>
 <td>プラットフォームとサービスの現在の正常性の状態を確認するには、LCS プロジェクトの <strong>環境</strong> セクションに移動します。</td>
 </tr>
 </tbody>
 </table>
 
-Microsoft Dynamics サポート提供の詳細については、「[Microsoft Dynamics Online サポート](https://www.microsoft.com/en-us/dynamics/dynamics-online-support.aspx)」を参照してください。
-
-
+Microsoft Dynamics サポート提供の詳細については、「[Microsoft Dynamics Online サポート](https://www.microsoft.com/dynamics/dynamics-online-support.aspx)」を参照してください。
 

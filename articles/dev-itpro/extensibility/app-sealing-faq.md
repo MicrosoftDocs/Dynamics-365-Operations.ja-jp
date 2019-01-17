@@ -3,7 +3,7 @@ title: "拡張性 FAQ"
 description: "このトピックでは、拡張機能に関してよくある質問に対する回答を示します。"
 author: FrankDahl
 manager: AnnBe
-ms.date: 10/24/2018
+ms.date: 12/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: fdahl
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
 ms.translationtype: HT
-ms.sourcegitcommit: 1c9af9bf27af48679c4b53475b7bc89b38998da4
-ms.openlocfilehash: f91cc10d471f8df41d5c472efe31fafc31ba98a1
+ms.sourcegitcommit: 9aab2503b38fa25878b3db641531d713a1a0e327
+ms.openlocfilehash: 28568d7a959d3b29e7ea179c018c7e2fb9bd7e7e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 10/24/2018
+ms.lasthandoff: 12/18/2018
 
 ---
 
@@ -100,4 +100,9 @@ Microsoft Dynamics 365 for Finance and Operations release 8.0 より後は、プ
 - リクエスト: テーブル フィールド プロパティ AllowEdit、AllowEditOnCreate、Mandatory、IgnoreEDTRelation を拡張機能経由で変更可能にします。
 - 問題: テーブル フィールドで "編集を許可"、"作成時の編集を許可"、"必須"、"IgnoreEDTRelation" プロパティを変更できると、重大な変更が生じます。 編集を許可するフィールドを変更すると、フィールドの目的が変更されます。 フィールドの編集を許可しないと、既存の動作が遮断されることがあります。 関係を変更すると、その関係の当初の目的が中断され、重大な変更となります。 フィールドを必須にすると、既存の動作が中断される可能性があります。
 - 対応策: 拡張機能経由で新しいテーブル フィールドを追加し、必要に応じてそれを制御します。
+
+### <a name="why-cant-security-privileges-be-made-extensible"></a>セキュリティ権限を拡張可能にできないのはなぜですか?
+- 要求: 拡張を通じてセキュリティ権限を変更可能にする。
+- 問題: セキュリティ権限を変更できると、変更が分割される可能性があります。これはセキュリティ メタデータの最下位レベルであるためです。
+- 対応策: 必要な場合は、新しいセキュリティ権限を作成し、それを使用します。
 

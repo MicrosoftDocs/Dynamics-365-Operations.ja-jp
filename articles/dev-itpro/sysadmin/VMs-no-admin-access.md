@@ -3,7 +3,7 @@ title: "管理者アクセスを許可しない開発用 VM および ビルド�
 description: "このトピックでは、管理者アクセスを許可しない仮想マシンに関するよくある質問 (FAQ) への回答を示します。"
 author: yukonpeegs
 manager: AnnBe
-ms.date: 05/03/2018
+ms.date: 01/03/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: epegors
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 12
 ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
-ms.openlocfilehash: 8a0f7c00b3b4b07555f3e29554ace8baad2534c0
+ms.sourcegitcommit: 74539d9bc4069e1bc9e338295eba4f240b0593b6
+ms.openlocfilehash: f58d29a67607f529469c0259acfa7eb7cbb7741a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/01/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -70,6 +70,15 @@ IIS Express および Unified Operations Visual Studio プロジェクトでデ�
 ## <a name="is-the-trace-parser-supported"></a>Trace Parser はサポートされていますか。
 現在 Trace Parser を使用するには、ユーザーが管理者であることが必要です。
 
+## <a name="is-the-admin-user-provisioning-tool-supported"></a>管理者ユーザー プロビジョニング ツールはサポートされますか?
+**管理者ユーザー プロビジョニング** ツールを使用するには現在、ユーザーが管理者である必要があります。 **管理者ユーザー プロビジョニング** ツールは通常、環境のテナントを変更するために使用され、必要ありません。 管理者ユーザーまたは他のユーザーのデータベースで情報を更新またはサインインすることができます。 この環境または同じテナントの別の環境にアクセスできるユーザーからの SID およびネットワーク エイリアス (電子メール アドレスなど) のみ必要です。 多くの場合、SID とネットワーク エイリアスは当初の環境に付属していたデータベースにあります。 次のコマンドを実行してソース環境から適切な SID とネットワーク エイリアスを取得し、それぞれ対象の環境で更新します。
+
+    -- get value from source env.
+    select ID, SID, NETWORKALIAS from USERINFO where ID = 'Admin'
+
+    -- update value in target env.
+    update USERINFO set SID = 'new_SID', NETWORKALIAS = 'new_NetworkAlias' where ID = 'Admin'
+
 ## <a name="can-the-system-be-put-into-maintenance-mode"></a>システムをメンテナンス モードにすることはできますか。
 システムをメンテナンス モードにしてライセンス コンフィギュレーションを変更することができます。 ただし、[メンテナンス モード](maintenance-mode.md) に記載されている手順はサポートされていません。 すべての環境におけるメンテナンス モードのセルフ サービス サポートが将来 LCS に追加されます。 このサポートが LCS で利用可能になるまで、以下の手順に従ってシステムをメンテナンス モードにすることができます。
 
@@ -80,7 +89,7 @@ IIS Express および Unified Operations Visual Studio プロジェクトでデ�
     update SQLSYSTEMVARIABLES SET VALUE = 1 where PARM = 'CONFIGURATIONMODE'
     ```
 
-3. **World Wide Web 公開サービス** サービスを再起動して IIS をリセットします。
+3. **World Wide Web 公開サービス** を再起動して IIS をリセットします。
 
     サービスが再起動されると、システムはメンテナンス モードになります。
 

@@ -18,10 +18,10 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 00c1ae6732a24bff288d3f0738ce2783a3dc81aa
+ms.sourcegitcommit: 9290114388b210dfdfd980e293df2e21d0aa50ea
+ms.openlocfilehash: 4c788fb4dc7d463e1d22e0585d3e616c0437425b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 12/20/2018
 
 ---
 
@@ -97,10 +97,6 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
     -   標準フォーム ガイドラインは、[全般的なガイドライン](general-form-guidelines.md) ドキュメントに統合されました。
 
 ## <a name="examples"></a>例
-フォーム: **CLIPatterns\_ListPanel** **(FormTabPageControl1)** 
-
-[![ListPanel(2)](./media/listpanel2-1024x283.png)](./media/listpanel2.png) 
-
 フォーム: **SalesSummaryParameters (GroupQuotation)** 
 
 [![ListPanel(3)](./media/listpanel3.png)](./media/listpanel3.png)

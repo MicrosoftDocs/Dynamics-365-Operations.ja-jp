@@ -1,7 +1,7 @@
 ---
 title: "オンプレミス環境でのパフォーマンス SDK およびマルチユーザー テスト"
 description: "このトピックでは、パフォーマンス ソフトウェア開発キット (SDK) を使用して、オンプレミス環境でマルチユーザー負荷テストを実行する方法について説明します。"
-author: jujoh
+author: kfend
 manager: AnnBe
 ms.date: 07/20/2018
 ms.topic: article

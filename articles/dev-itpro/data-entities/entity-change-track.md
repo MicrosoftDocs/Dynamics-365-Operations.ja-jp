@@ -18,10 +18,10 @@ ms.author: milindav
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 96a9075294c1f2a9cfde03be1aaaa26af90de4c2
-ms.openlocfilehash: 052d3da8ff93f069c8f43d247f004777596b8e1c
+ms.sourcegitcommit: 64204d438d46fc772005fc8077664818926cf58f
+ms.openlocfilehash: 1a79787266fb8eca27bde8376fcb7fbf3bc604c6
 ms.contentlocale: ja-jp
-ms.lasthandoff: 09/04/2018
+ms.lasthandoff: 12/10/2018
 
 ---
 # <a name="enable-change-tracking-for-entities"></a>エンティティの変更追跡の有効化
@@ -50,7 +50,7 @@ ms.lasthandoff: 09/04/2018
     | カスタム クエリの有効化  | エンティティでの変更をトリガーする必要がある一連のカスタム フィールドを任意のテーブルから選択します。 |
 
     > [!NOTE]
-    > 変更が発生した場合、エンティティ レコードが出力先をエクスポートされます。 選択したオプションに関係なく、エンティティのフィールドの数はターゲットにエクスポートされた数になります。
+    > 変更がトリガーされた場合、変更はフィールド レベルではなくレコード全体で追跡されます。 エンティティ レコード全体がエクスポート先にエクスポートされます。 選択したオプションに関係なく、エンティティのフィールドの数はターゲットにエクスポートされた数になります。
 
 ## <a name="custom-query-for-change-tracking"></a>変更追跡用のカスタム クエリ
 次の例は、エンティティに静的メソッドを追加する方法を示しています。 メソッドがクエリを返し、ルート ノードがエンティティと同様であることを確認する必要があります。 たとえば、顧客エンティティについては、ルート ノードは custTable で、その変更追跡クエリも custTable です。

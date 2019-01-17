@@ -42,25 +42,30 @@ Dynamics 365 for Retail では、コール センターはアプリケーショ�
 このページでは、設定、コンフィギュレーション、および Dynamics 365 for Retail のコール センター機能の機能使用に関連する該当ドキュメントへのリンクが提供されます。
 
 ## <a name="configure-the-call-center"></a>コール センターのコンフィギュレーション
+
 [注文処理オプションの設定](set-up-order-processing-options.md)
 
 ## <a name="configure-order-processing"></a>注文処理のコンフィギュレーション
+
 [詐欺警告の設定](set-up-fraud-alerts.md)
 
 [手動の注文保留](work-with-order-holds.md)
 
 ## <a name="configure-payment-processing"></a>支払処理のコンフィギュレーション
+
 [コール センターでの支払方法](work-with-payments.md)
 
 ## <a name="configure-delivery-modes"></a>出荷モードの構成
+
 [コール センターの出荷モードと雑費の構成](configure-call-center-delivery.md)
 
 ## <a name="configure-direct-marketing"></a>直接マーケティングのコンフィギュレーション
+
 [コール センターのカタログ](call-center-catalogs.md)
 
 [最新/頻度/金額 (RFM) 分析の設定](set-up-rfm-analysis.md)
 
 ## <a name="configure-continuity-programs"></a>連続プログラムのコンフィギュレーション
-[コール センターの連続プログラムの設定](set-up-continuity-program.md)
 
+[コール センターの連続プログラムの設定](set-up-continuity-program.md)
 

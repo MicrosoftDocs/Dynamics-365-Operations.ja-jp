@@ -3,7 +3,7 @@ title: "クラウド環境へ更新プログラムを適用"
 description: "このトピックでは、Lifecycle Services (LCS) を使用して、バイナリ更新プログラムまたはアプリケーション (AOT) 展開可能なパッケージをクラウド環境に適用する方法について説明します。"
 author: manalidongre
 manager: AnnBe
-ms.date: 10/17/2018
+ms.date: 12/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,10 +17,10 @@ ms.author: manado
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
-ms.openlocfilehash: 86d6bab2916966ff0baed2665ed7fecc47db72b3
+ms.sourcegitcommit: b8002c547b4f5e7ca485778af90d5b5293496f79
+ms.openlocfilehash: b5f05d27c554de5e23d28332810122c4aa89c647
 ms.contentlocale: ja-jp
-ms.lasthandoff: 11/01/2018
+ms.lasthandoff: 12/10/2018
 
 ---
 
@@ -118,7 +118,7 @@ ms.lasthandoff: 11/01/2018
 2. ログ ファイルを解凍します。
 3. **AOS** や **BI** など、ステップが失敗したロールを選択します。
 4. ステップが失敗した VM を選択します。 この情報は **環境の更新** セクションの **コンピューター名** 列に表示されます。
-5. VM のログで、問題が発生したステップに対応するフォルダーを選択します。 フォルダー名は、各フォルダーが対応するステップを識別します。 たとえば、ステップの実行で問題が発生した場合、<strong>ExecuteRunbook\</strong>* フォルダーを選択します。
+5. VM のログで、問題が発生したステップに対応するフォルダーを選択します。 フォルダー名は、各フォルダーが対応するステップを識別します。 たとえば、ステップの実行で問題が発生した場合、**ExecuteRunbook** フォルダーを選択します。
 
     たとえば、フォルダー名が ExecuteRunbook-b0c5c413-dae3-4a7a-a0c4-d558614f7e98-1\_I0\_R0 である場合、ステップ番号が強調表示され、グローバル一意識別子 (GUID) の後の番号になります。
 
@@ -208,9 +208,11 @@ ms.lasthandoff: 11/01/2018
     
 - 失敗した要求を閉じるときは、**作業項目の詳細を編集** ダイアログ ボックスで、**サービス要求の状態** フィールドを **"中止"** に設定します。
 
-## <a name="deploying-packages-in-retail-environments"></a>小売環境でのパッケージの展開
+## <a name="applying-retail-updates-and-extensions"></a>小売用の更新および拡張機能を適用する
 
-環境内の配置可能パッケージを適用した後に、小売コンポーネント (Retail Modern POS など) を使用している場合、店舗内コンポーネントも更新する必要があります。 詳細については、[Retail Modern POS (MPOS) の構成、インストール、有効化](../../retail/retail-modern-pos-device-activation.md)を参照してください。
+アプリケーション バージョン 8.1.2.x 以降でレベル 2 サンドボックスまたは運用環境を更新し、クラウドで Retail チャンル コンポーネントの短縮ダウンタイム更新を有効にした場合は、Retail チャネル コンポーネントも更新する必要があります。 詳細については、[クラウドでホストされている Retail チャネル コンポーネントへの更新プログラムと拡張機能の適用](Update-retail-channel.md)を参照してください。
+
+環境内で更新プログラムと拡張機能を適用した後に、小売コンポーネント (Retail Modern POS など) を使用している場合、店舗内コンポーネントも更新する必要があります。 詳細については、[Retail Modern POS (MPOS) の構成、インストール、有効化](../../retail/retail-modern-pos-device-activation.md)を参照してください。
 
 ## <a name="packages-runbooks-and-the-axupdateinstaller-in-depth"></a>パッケージ、Runbook、および AXUpdateInstaller の詳細
 

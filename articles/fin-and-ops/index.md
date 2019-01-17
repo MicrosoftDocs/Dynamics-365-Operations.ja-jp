@@ -51,7 +51,7 @@ ms.lasthandoff: 08/09/2018
 <p><a href="get-started/fasttrack-dynamics-365-overview.md">FastTrack for Dynamics 365</a></p>
 <p><a href="imp-lifecycle/onboard.md">プロジェクトの研修</a></p>
 <p><a href="imp-lifecycle/prepare-go-live.md">Go-Live の準備</a></p>
-  
+
 <h3><a href="../financials/index.md">財務管理</a></h3>
 <p><a href="../financials/accounts-payable/accounts-payable.md">買掛金勘定</a></p>
 <p><a href="../financials/accounts-receivable/accounts-receivable.md">売掛金勘定</a></p>
@@ -65,7 +65,7 @@ ms.lasthandoff: 08/09/2018
 <p><a href="../financials/public-sector/public-sector-functionality.md">公的機関</a></p>
 <p><a href="../dev-itpro/lcs-solutions/country-region.md">地域の規制機能</a></p>
 
-<H3><a href="hr/hr-landing-page.md">人事管理</a></h3>
+<h3><a href="hr/hr-landing-page.md">人事管理</a></h3>
 <p><a href="../talent/manage-benefit-program.md">福利厚生</a></p>
 <p><a href="../talent/performance-management-overview.md">従業員の開発とトレーニング</a></p>
 <p><a href="../talent/questionnaires.md">アンケート</a></p>
