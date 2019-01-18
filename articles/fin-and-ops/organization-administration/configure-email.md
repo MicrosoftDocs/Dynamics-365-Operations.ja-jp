@@ -57,7 +57,7 @@ Dynamics 365 for Finance and Operations では、管理者とユーザーの両�
 <td>送信メール サーバー </td>
 <td>目的の SMTP サーバーのホスト名。
 <ul>
-<li><a href="https://support.office.com/article/Outlook-settings-for-POP-and-IMAP-access-for-Office-365-for-business-or-Microsoft-Exchange-accounts-7fc677eb-2491-4cbc-8153-8e7113525f6c">Office 365 生産</a> (including *.onmicrosoft.com アカウントを含む) は smtp.office365.com を使用します。 (<strong>設定</strong> &gt; <strong>メール</strong> &gt; <strong>POP および IMAP</strong>の outlook.office.com でこの設定を検索します。.)</li>
+<li><a href="https://support.office.com/article/Outlook-settings-for-POP-and-IMAP-access-for-Office-365-for-business-or-Microsoft-Exchange-accounts-7fc677eb-2491-4cbc-8153-8e7113525f6c">Office 365 製品</a> (*.onmicrosoft.com アカウントを含む) は smtp.office365.com を使用します。 (<strong>設定</strong> &gt; <strong>メール</strong> &gt; <strong>POP および IMAP</strong>の outlook.office.com でこの設定を検索します。.)</li>
 <li>Outlook/Hotmail で smtp-mail.outlook.com を使用します。</li>
 </ul>
 </td>
@@ -142,7 +142,7 @@ SysEmail フレームワークを介して有効になっている電子メー�
 2. **SMTP 設定**をクリックします。
 3. **送信メール サーバー** を要求された SMTP サーバーに設定します。
 
-    - [Office 365 生産](https://support.office.com/article/Outlook-settings-for-POP-and-IMAP-access-for-Office-365-for-business-or-Microsoft-Exchange-accounts-7fc677eb-2491-4cbc-8153-8e7113525f6c) (\*.onmicrosoft.com アカウントを含む) では、smtp.office365.com を使用します。 (**設定** &gt; **メール** &gt; **POP および IMAP**で outlook.office.com を通してこの設定を検索します。.)
+    - [Office 365 製品](https://support.office.com/article/Outlook-settings-for-POP-and-IMAP-access-for-Office-365-for-business-or-Microsoft-Exchange-accounts-7fc677eb-2491-4cbc-8153-8e7113525f6c) (\*.onmicrosoft.com アカウントを含む) では、smtp.office365.com を使用します。 (**設定** &gt; **メール** &gt; **POP および IMAP**で outlook.office.com を通してこの設定を検索します。.)
     - Outlook/Hotmail で smtp-mail.outlook.com を使用します。
 
 4. ユーザー名とパスワードを適切な電子メール アカウントとパスワードに設定します。

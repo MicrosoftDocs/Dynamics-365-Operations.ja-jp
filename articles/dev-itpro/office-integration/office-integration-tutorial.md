@@ -444,7 +444,7 @@ SysEmail フレームワークを介して有効になっている電子メー�
 1.  Internet Explorer で、**システム管理** &gt; **設定** &gt; **電子メール** &gt; **電子メール パラメーター**に移動します。
 2.  **SMTP 設定**をクリックします。
 3.  **送信メール サーバー** を要求された SMTP サーバーに設定します。
-    -   [Office 365 生産](https://support.office.com/en-us/article/Outlook-settings-for-POP-and-IMAP-access-for-Office-365-for-business-or-Microsoft-Exchange-accounts-7fc677eb-2491-4cbc-8153-8e7113525f6c) (\*.onmicrosoft.com アカウントを含む) 用 smtp.office365.com (**設定** &gt; **メール** &gt; **POP および IMAP** で outlook.office.com を通してこの設定を検索します。)
+    -   [Office 365 製品](https://support.office.com/en-us/article/Outlook-settings-for-POP-and-IMAP-access-for-Office-365-for-business-or-Microsoft-Exchange-accounts-7fc677eb-2491-4cbc-8153-8e7113525f6c) (\*.onmicrosoft.com アカウントを含む) 用 smtp.office365.com (**設定** &gt; **メール** &gt; **POP および IMAP** で outlook.office.com を通してこの設定を検索します。)
     -   Outlook/Hotmail 用: smtp-mail.outlook.com
 
 4.  ユーザー名とパスワードを適切な電子メール アカウントとパスワードに設定します。
