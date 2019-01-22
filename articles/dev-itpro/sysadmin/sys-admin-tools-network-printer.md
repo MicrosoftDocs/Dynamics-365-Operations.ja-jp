@@ -29,8 +29,6 @@ ms.lasthandoff: 12/12/2018
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/private-preview-banner.md)]
-
 > [!IMPORTANT]
 > 新しいシステム管理ユーティリティへのアクセスは、Carbon Flighting Service によって管理されます。 Microsoft Dynamics 365 for Finance and Operations プラットフォーム更新 23 (2018 年 12 月) には、システム管理者用の **システム ネットワーク プリンター管理** ページが含まれています。
 
