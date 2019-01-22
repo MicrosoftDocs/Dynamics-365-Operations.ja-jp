@@ -29,7 +29,6 @@ ms.lasthandoff: 12/07/2018
 
 [!include [banner](../includes/banner.md)]
 
-[!include [preview-banner](../includes/preview-banner.md)]
 
 これは、Dynamics 365 for Finance and Operations バージョン 8.1.3 に実装された拡張機能の一覧です。 拡張性をサポートする変更のスケジュールの詳細については、「[アプリケーション機能拡張計画](extensibility-roadmap.md)」を参照してください。
 

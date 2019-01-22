@@ -28,8 +28,6 @@ ms.lasthandoff: 01/03/2019
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
-
 このトピックでは、Microsoft Dynamics 365 for Finance and Operations バージョン 8.1.3 の新機能または変更された機能について説明します。 このバージョンは 2019 年 1 月にリリースされ、ビルド番号は 8.1.227 です。
 
 Microsoft Dynamics 365 for Retail の最新リリースの新機能と変更については、[Dynamics 365 for Retail の新機能と変更点](https://docs.microsoft.com/dynamics365/unified-operations/retail/get-started/whats-new)を参照してください。
