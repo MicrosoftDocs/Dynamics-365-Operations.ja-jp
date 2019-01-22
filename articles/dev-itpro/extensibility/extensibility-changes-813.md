@@ -18,10 +18,10 @@ ms.author: fdahl
 ms.search.validFrom: 2018-12-07
 ms.dyn365.ops.version: App 8.1.3
 ms.translationtype: HT
-ms.sourcegitcommit: be66d9f95551066bb8bc25445c652d4fa59066d4
-ms.openlocfilehash: 344492ebf4d9a44740f4d3e46c8859947a532d7c
+ms.sourcegitcommit: fb8424c313a03de693862b091c16ae08d6a36581
+ms.openlocfilehash: d3d40b0d17d5c042253e6d42fba289ed1e57319c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 12/07/2018
+ms.lasthandoff: 01/22/2019
 
 ---
 
@@ -29,7 +29,6 @@ ms.lasthandoff: 12/07/2018
 
 [!include [banner](../includes/banner.md)]
 
-[!include [preview-banner](../includes/preview-banner.md)]
 
 <span data-ttu-id="b8223-104">これは、Dynamics 365 for Finance and Operations バージョン 8.1.3 に実装された拡張機能の一覧です。</span><span class="sxs-lookup"><span data-stu-id="b8223-104">This is a list of extensibility features that were implemented in Dynamics 365 for Finance and Operations version 8.1.3.</span></span> <span data-ttu-id="b8223-105">拡張性をサポートする変更のスケジュールの詳細については、「[アプリケーション機能拡張計画](extensibility-roadmap.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b8223-105">For more information about the schedule of changes that support extensibility, see [Application extensibility plans](extensibility-roadmap.md).</span></span>
 

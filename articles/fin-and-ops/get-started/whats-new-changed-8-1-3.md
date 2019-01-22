@@ -18,17 +18,15 @@ ms.author: tfehr
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: Release 8.1.3
 ms.translationtype: HT
-ms.sourcegitcommit: c093c9af7184d93b1200a8bcab16573f2bb4be09
-ms.openlocfilehash: b446f44ffbd40f5a574e1fe409ae1f53c9d4da22
+ms.sourcegitcommit: 50a3d967cfc2f0518bfbb1385180fe07c901a9b4
+ms.openlocfilehash: 4adb2e0665aff774b95a9c56760596591512c02c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 01/03/2019
+ms.lasthandoff: 01/22/2019
 
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-version-813-january-2019"></a><span data-ttu-id="2c117-104">Dynamics 365 for Finance and Operations バージョン 8.1.3 (2019 年 1 月) の新機能および変更された機能</span><span class="sxs-lookup"><span data-stu-id="2c117-104">What's new or changed in Dynamics 365 for Finance and Operations version 8.1.3 (January 2019)</span></span>
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 <span data-ttu-id="2c117-105">このトピックでは、Microsoft Dynamics 365 for Finance and Operations バージョン 8.1.3 の新機能または変更された機能について説明します。</span><span class="sxs-lookup"><span data-stu-id="2c117-105">This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations version 8.1.3.</span></span> <span data-ttu-id="2c117-106">このバージョンは 2019 年 1 月にリリースされ、ビルド番号は 8.1.227 です。</span><span class="sxs-lookup"><span data-stu-id="2c117-106">This version will be released in January 2019 and has a build number of 8.1.227.</span></span>
 
