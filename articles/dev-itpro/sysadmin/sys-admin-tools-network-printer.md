@@ -18,18 +18,16 @@ ms.author: tjvass
 ms.search.validFrom: 2018-12-04
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: b2a7a0724ddb2f5640a10eb43a999f8e21fb47f7
-ms.openlocfilehash: 8bbea1299d3e2fc4e2123b93d1d3f22fb7426f1d
+ms.sourcegitcommit: 18eaadf417ce6d0aacf0b13b3e4f857e06031e66
+ms.openlocfilehash: 37a538b9453c05ba7288f789fa208bfcabc36d7a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 12/12/2018
+ms.lasthandoff: 01/22/2019
 
 ---
 
 # <a name="manage-access-to-network-printers-across-legal-entities"></a><span data-ttu-id="2b06e-103">法人間でのネットワーク プリンターへのアクセスの管理</span><span class="sxs-lookup"><span data-stu-id="2b06e-103">Manage access to network printers across legal entities</span></span>
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/private-preview-banner.md)]
 
 > [!IMPORTANT]
 > <span data-ttu-id="2b06e-104">新しいシステム管理ユーティリティへのアクセスは、Carbon Flighting Service によって管理されます。</span><span class="sxs-lookup"><span data-stu-id="2b06e-104">Access to the new System administration utility is managed by the Carbon Flighting Service.</span></span> <span data-ttu-id="2b06e-105">Microsoft Dynamics 365 for Finance and Operations プラットフォーム更新 23 (2018 年 12 月) には、システム管理者用の **システム ネットワーク プリンター管理** ページが含まれています。</span><span class="sxs-lookup"><span data-stu-id="2b06e-105">Microsoft Dynamics 365 for Finance and Operations platform update 23 (December 2018) includes the **System network printers management** page for system admins.</span></span>
