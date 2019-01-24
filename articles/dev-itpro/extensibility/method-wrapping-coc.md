@@ -16,10 +16,10 @@ ms.author: cgarty
 ms.search.validFrom: 2017-08-21
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 844c23fc908c962203e644f1154cc480425d830b
-ms.openlocfilehash: cd7d4301e2de58bb773915e7e3e8ece478fd40c1
+ms.sourcegitcommit: 7ebc3cceab12288551b3bad7dab7bd0a83b82163
+ms.openlocfilehash: bfc2d9c637de579562160fc982c9de32dc162437
 ms.contentlocale: ja-jp
-ms.lasthandoff: 12/18/2018
+ms.lasthandoff: 01/24/2019
 
 ---
 
@@ -260,6 +260,8 @@ final class FormDataSource1_Extension
     {
         next init();
         //...
+        //use element.FormToExtendVariable to access form's variables and datasources
+        //element.FormToExtendMethod() to call form methods
     }
  
     public boolean validateWrite()

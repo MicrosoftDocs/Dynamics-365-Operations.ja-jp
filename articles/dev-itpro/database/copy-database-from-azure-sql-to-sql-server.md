@@ -18,10 +18,10 @@ ms.author: laswenka
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: ea143e231f8090b80df376a9054bb23f3997d7ac
-ms.openlocfilehash: 6ca2337fb3de93a50a74627caa5f7bbf4597df81
+ms.sourcegitcommit: 0968096c97ad43dea4f10bb43155ee1ee6f98794
+ms.openlocfilehash: 89ec024006598ac27736b71c5f2316445ad590ab
 ms.contentlocale: ja-jp
-ms.lasthandoff: 01/08/2019
+ms.lasthandoff: 01/24/2019
 
 ---
 
@@ -96,7 +96,7 @@ ms.lasthandoff: 01/08/2019
 ```
 cd C:\Program Files (x86)\Microsoft SQL Server\140\DAC\bin
 
-SqlPackage.exe /a:import /sf:D:\Exportedbacpac\my.bacpac /tsn:localhost /tdn:<target database name> /p:CommandTimeout=1200
+SqlPackage.exe /a:import /sf:D:\Exportedbacpac\my.bacpac /tsn:localhost /tdn:<target database name> /p:CommandTimeout=2400
 ```
 
 <span data-ttu-id="68572-166">パラメータの説明を以下に示します。</span><span class="sxs-lookup"><span data-stu-id="68572-166">Here is an explanation of the parameters:</span></span>
