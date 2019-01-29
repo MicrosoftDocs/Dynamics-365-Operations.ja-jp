@@ -89,7 +89,7 @@ AOS リソースとして保存されるイメージは、ユーザー データ
         {
             // there is no image… the container is null
             // show a generic person outline image
-            imgRef = ImageReference::constructForSymbol(&quot;Person&quot;);
+            imgRef = ImageReference::constructForSymbol("Person");
             imgContainer = imgRef.pack();
         }
         return imgContainer;
