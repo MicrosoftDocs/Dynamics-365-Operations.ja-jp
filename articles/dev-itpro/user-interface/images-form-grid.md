@@ -18,10 +18,10 @@ ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: cdb844cdfd40ea258563cd8277759b4754006ebd
+ms.sourcegitcommit: 1dd85cdd4b39f704e8a0b9d2a8c18787e6a80b54
+ms.openlocfilehash: 43257e6ed0c8a7ca74a7cddc685e6113352a1c03
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 01/29/2019
 
 ---
 
@@ -89,7 +89,7 @@ ms.lasthandoff: 08/09/2018
         {
             // there is no image… the container is null
             // show a generic person outline image
-            imgRef = ImageReference::constructForSymbol(&quot;Person&quot;);
+            imgRef = ImageReference::constructForSymbol("Person");
             imgContainer = imgRef.pack();
         }
         return imgContainer;
