@@ -30,7 +30,6 @@ ms.lasthandoff: 08/09/2018
 
 [!include [banner](includes/banner.md)]
 
-[!include [retail name](includes/retail-name.md)]
 
 部門、職務、および職位は、人事管理で管理される組織の要素です。 このトピックでは、これらの要素についての概念に関する情報を説明します。 
 
