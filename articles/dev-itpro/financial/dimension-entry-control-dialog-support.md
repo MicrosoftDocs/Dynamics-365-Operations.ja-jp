@@ -3,7 +3,7 @@ title: "ダイアログ上の分析コード エントリ コントロールを�
 description: "分析コード エントリ コントロールをダイアログに配置するためのコード パターンについて説明します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 02/06/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: ghenriks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: f5eb1b69e85a7d8677638f5b1faf28950b0626b7
+ms.sourcegitcommit: f004451a260b5be6c15c3975cd9e63ba9c1a7a2e
+ms.openlocfilehash: 5522591f25e4f92f3abbe1aa1d2742dd85c41a23
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 02/06/2019
 
 ---
 
@@ -40,10 +40,13 @@ ms.lasthandoff: 08/09/2018
     dimDefaultingController.loadValues(dimensionAttributeValueSetId);
 
 <span data-ttu-id="d1860-107">現在のリリースでは、このコードは次のように変換されます。</span><span class="sxs-lookup"><span data-stu-id="d1860-107">In the current release, this code would be converted to:</span></span>
-
+    
+    //When you create a dialog
     DialogField dimensionEntryField;
     DimensionEntryControl dimensionEntryValues;
     dimensionEntryField = DimensionEntryControlBuild::addToDialog(dialog, classstr(LedgerDimensionEntryController));
+    
+    //These lines should be executed after the dialog form is created (for example on “dialogPostRun()” or “postRun()”)
     dimensionEntryValues = dimensionEntryField.control();
     dimensionEntryValues.parmNonActiveValueErrorTolerance(ErrorTolerance::Error);
     dimensionEntryValues.parmDisplayValues(true);

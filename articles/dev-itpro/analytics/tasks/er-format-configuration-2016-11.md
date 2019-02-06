@@ -17,10 +17,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 13469aad7fdcefb3a1706eec0527f29968e007eb
-ms.openlocfilehash: 10511fe5b936135471b522fc7152a54686a3be87
+ms.sourcegitcommit: f004451a260b5be6c15c3975cd9e63ba9c1a7a2e
+ms.openlocfilehash: 6fa5023a29c95ab9f10d8aacd51edc1a06c3c152
 ms.contentlocale: ja-jp
-ms.lasthandoff: 12/18/2018
+ms.lasthandoff: 02/06/2019
 
 ---
 # <a name="er-create-a-format-configuration-november-2016"></a><span data-ttu-id="50b42-103">ER 書式設定のコンフィギュレーションの作成 (2016 年 11 月)</span><span class="sxs-lookup"><span data-stu-id="50b42-103">ER Create a format configuration (November 2016)</span></span>
@@ -35,8 +35,10 @@ ms.lasthandoff: 12/18/2018
 2. <span data-ttu-id="50b42-109">**コンフィギュレーションをレポートする**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="50b42-109">Click **Reporting configurations**.</span></span>
 3. <span data-ttu-id="50b42-110">ツリーで、**支払 (単純化モデル)** を選択します。</span><span class="sxs-lookup"><span data-stu-id="50b42-110">In the tree, select **Payments (simplified model)**.</span></span>
 4. <span data-ttu-id="50b42-111">**コンフィギュレーションの作成**をクリックして、ドロップ ダイアログを開きます。</span><span class="sxs-lookup"><span data-stu-id="50b42-111">Click **Create configuration** to open the drop dialog.</span></span>
+
  > [!NOTE]
  > <span data-ttu-id="50b42-112">**コンフィギュレーションの作成**が表示されない場合は、**電子申告のパラメーター**ページでデザイン モードを有効にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="50b42-112">If you don't see **Create configuration**, you must enable design mode on the **Electronic reporting parameters** page.</span></span> 
+ 
 5. <span data-ttu-id="50b42-113">**新規**フィールドで、**PaymentModel データ モデルに基づいた書式**と入力します。</span><span class="sxs-lookup"><span data-stu-id="50b42-113">In the **New** field, enter **Format based on data model PaymentModel**.</span></span>
 6. <span data-ttu-id="50b42-114">**名前**フィールドに、**BACS (英国企業)** と入力します。</span><span class="sxs-lookup"><span data-stu-id="50b42-114">In the **Name** field, type **BACS (UK fictitious)**.</span></span>
 7. <span data-ttu-id="50b42-115">**説明**フィールドに、**BACS 仕入先支払形式 (英国企業)** と入力します。</span><span class="sxs-lookup"><span data-stu-id="50b42-115">In the **Description** field, type **BACS vendor payment format (UK fictitious)**.</span></span>
@@ -44,6 +46,7 @@ ms.lasthandoff: 12/18/2018
     * <span data-ttu-id="50b42-119">電子ドキュメントの特定の形式を定義できます。</span><span class="sxs-lookup"><span data-stu-id="50b42-119">A particular format of electronic document can be defined.</span></span> <span data-ttu-id="50b42-120">実行時に形式を選択する場合は、このフィールドを空白のままにします。</span><span class="sxs-lookup"><span data-stu-id="50b42-120">Leave this field blank if you want to select a format at run-time.</span></span>  
 8. <span data-ttu-id="50b42-121">**データ モデル定義**フィールドで、値を入力または選択します。</span><span class="sxs-lookup"><span data-stu-id="50b42-121">In the **Data model definition** field, enter or select a value.</span></span>
 9. <span data-ttu-id="50b42-122">**コンフィギュレーションの作成**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="50b42-122">Click **Create configuration**.</span></span> <span data-ttu-id="50b42-123">新しいコンフィギュレーションが作成されました。</span><span class="sxs-lookup"><span data-stu-id="50b42-123">A new configuration has been created.</span></span> <span data-ttu-id="50b42-124">ドラフト バージョンは、電子ドキュメントを管理するためのデザイン形式の保存に使用できます。</span><span class="sxs-lookup"><span data-stu-id="50b42-124">The draft version can be used to store the design format for managing electronic documents.</span></span>  
+
  > [!NOTE]
  > <span data-ttu-id="50b42-125">**コンフィギュレーションの作成**が表示されない場合は、**電子申告のパラメーター**ページでデザイン モードを有効にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="50b42-125">If you don't see **Create configuration**, you must enable design mode on the **Electronic reporting parameters** page.</span></span>
 
