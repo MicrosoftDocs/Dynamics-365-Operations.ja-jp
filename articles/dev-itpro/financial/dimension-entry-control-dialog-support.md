@@ -3,7 +3,7 @@ title: "ダイアログ上の分析コード エントリ コントロールを�
 description: "分析コード エントリ コントロールをダイアログに配置するためのコード パターンについて説明します。"
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 02/06/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -40,10 +40,13 @@ ms.lasthandoff: 08/09/2018
     dimDefaultingController.loadValues(dimensionAttributeValueSetId);
 
 現在のリリースでは、このコードは次のように変換されます。
-
+    
+    //When you create a dialog
     DialogField dimensionEntryField;
     DimensionEntryControl dimensionEntryValues;
     dimensionEntryField = DimensionEntryControlBuild::addToDialog(dialog, classstr(LedgerDimensionEntryController));
+    
+    //These lines should be executed after the dialog form is created (for example on “dialogPostRun()” or “postRun()”)
     dimensionEntryValues = dimensionEntryField.control();
     dimensionEntryValues.parmNonActiveValueErrorTolerance(ErrorTolerance::Error);
     dimensionEntryValues.parmDisplayValues(true);
