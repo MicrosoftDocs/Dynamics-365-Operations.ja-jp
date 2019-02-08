@@ -30,7 +30,6 @@ ms.lasthandoff: 08/09/2018
 
 [!include [banner](includes/banner.md)]
 
-[!include [retail name](includes/retail-name.md)]
 
 このトピックでは、ジョブに含められる概念に関する要素の説明、および組織内の要素の使用方法の例を示します。 
 
