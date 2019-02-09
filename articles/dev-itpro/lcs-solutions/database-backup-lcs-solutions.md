@@ -37,8 +37,7 @@ Microsoft Dynamics 365 for Finance and Operations データベースのバック
 
 [![databasebackup01](./media/databasebackup01.jpg)](./media/databasebackup01.jpg)
 
-<a name="additional-resources"></a>その他のリソース
---------
+## <a name="additional-resources"></a>その他のリソース
 
 [AppSource の Dynamics 365 for Finance and Operations アプリを公開](lcs-solutions-app-source.md)
 

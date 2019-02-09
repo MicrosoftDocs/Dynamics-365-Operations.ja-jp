@@ -91,9 +91,9 @@ ms.lasthandoff: 12/04/2018
 2. **製品 (1040)** を選択し、アクション ペインで **今すぐ実行** を選択します。 メッセージが表示されたら、**はい** を選択します。 このステップは、新しい属性、属性タイプ、または属性グループを追加した場合にのみ必要です。
 3. **チャネル コンフィギュレーション ジョブ (1070)** を選択し、アクション ペインで **今すぐ実行** を選択します。 メッセージが表示されたら、**はい** を選択します。
 
-# <a name="show-order-attributes-in-the-pos-transaction-screen-using-the-attribute-control-this-feature-is-available-in-version-813-and-later"></a>属性コントロールを使用して POS トランザクション画面に注文属性を表示します (この機能はバージョン 8.1.3 以降で使用できます)。
+## <a name="show-order-attributes-in-the-pos-transaction-screen-using-the-attribute-control-this-feature-is-available-in-version-813-and-later"></a>属性コントロールを使用して POS トランザクション画面に注文属性を表示します (この機能はバージョン 8.1.3 以降で使用できます)。
 
-## <a name="retail-headquarters"></a>Retail Headquarters
+### <a name="retail-headquarters"></a>Retail Headquarters
 
 1. **Retail > チャネル設定 > POS 設定 > POS > 画面レイアウト** を選択します。
 2. 画面レイアウトページで、**新規** をクリックして新しい画面レイアウトを作成するか、既存の画面レイアウトを選択します。
@@ -109,7 +109,7 @@ ms.lasthandoff: 12/04/2018
     12. **小売 > 小売 IT > 配送スケジュール**の順に移動します。
     13. レジスター ジョブ (1090) を選択し、アクション ペインで **今すぐ実行** を選択します。 メッセージが表示されたら、はい を選択します。
 
-## <a name="pos"></a>POS
+### <a name="pos"></a>POS
 
 1. POS を起動し、任意の品目をトランザクションに追加します。 ヘッダーと明細行の両方のコンフィギュレーション済の属性と共に、トランザクション画面に属性パネルが表示されます。
 2. 属性パネルで **編集** アイコンをクリックして、属性の値を更新します。
