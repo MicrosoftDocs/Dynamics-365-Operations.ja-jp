@@ -17,10 +17,10 @@ ms.author: mumani
 ms.search.validFrom: 2017-10-24
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 99c10649d7683265fcac86c1825c5a965bbdb415
-ms.openlocfilehash: 277de741066c090d88d54565cb2fbac864480a4d
+ms.sourcegitcommit: d9c48adeff6fed1d6c84d74036f4a50a793503f1
+ms.openlocfilehash: 8f8f2144f1a957f78b052b5041ea9a389a1fa575
 ms.contentlocale: ja-jp
-ms.lasthandoff: 12/04/2018
+ms.lasthandoff: 02/08/2019
 
 ---
 
@@ -91,9 +91,9 @@ ms.lasthandoff: 12/04/2018
 2. <span data-ttu-id="7d985-167">**製品 (1040)** を選択し、アクション ペインで **今すぐ実行** を選択します。</span><span class="sxs-lookup"><span data-stu-id="7d985-167">Select **Products (1040)**, and then, on the Action Pane, select **Run now**.</span></span> <span data-ttu-id="7d985-168">メッセージが表示されたら、**はい** を選択します。</span><span class="sxs-lookup"><span data-stu-id="7d985-168">When you're prompted, select **Yes**.</span></span> <span data-ttu-id="7d985-169">このステップは、新しい属性、属性タイプ、または属性グループを追加した場合にのみ必要です。</span><span class="sxs-lookup"><span data-stu-id="7d985-169">This step is required only if you added any new attributes, attribute types, or attribute groups.</span></span>
 3. <span data-ttu-id="7d985-170">**チャネル コンフィギュレーション ジョブ (1070)** を選択し、アクション ペインで **今すぐ実行** を選択します。</span><span class="sxs-lookup"><span data-stu-id="7d985-170">Select **Channel configuration job (1070)**, and then, on the Action Pane, select **Run now**.</span></span> <span data-ttu-id="7d985-171">メッセージが表示されたら、**はい** を選択します。</span><span class="sxs-lookup"><span data-stu-id="7d985-171">When you're prompted, select **Yes**.</span></span>
 
-# <a name="show-order-attributes-in-the-pos-transaction-screen-using-the-attribute-control-this-feature-is-available-in-version-813-and-later"></a><span data-ttu-id="7d985-172">属性コントロールを使用して POS トランザクション画面に注文属性を表示します (この機能はバージョン 8.1.3 以降で使用できます)。</span><span class="sxs-lookup"><span data-stu-id="7d985-172">Show order attributes in the POS transaction screen using the Attribute control (this feature is available in version 8.1.3 and later)</span></span>
+## <a name="show-order-attributes-in-the-pos-transaction-screen-using-the-attribute-control-this-feature-is-available-in-version-813-and-later"></a><span data-ttu-id="7d985-172">属性コントロールを使用して POS トランザクション画面に注文属性を表示します (この機能はバージョン 8.1.3 以降で使用できます)。</span><span class="sxs-lookup"><span data-stu-id="7d985-172">Show order attributes in the POS transaction screen using the Attribute control (this feature is available in version 8.1.3 and later)</span></span>
 
-## <a name="retail-headquarters"></a><span data-ttu-id="7d985-173">Retail Headquarters</span><span class="sxs-lookup"><span data-stu-id="7d985-173">Retail headquarters</span></span>
+### <a name="retail-headquarters"></a><span data-ttu-id="7d985-173">Retail Headquarters</span><span class="sxs-lookup"><span data-stu-id="7d985-173">Retail headquarters</span></span>
 
 1. <span data-ttu-id="7d985-174">**Retail > チャネル設定 > POS 設定 > POS > 画面レイアウト** を選択します。</span><span class="sxs-lookup"><span data-stu-id="7d985-174">Select **Retail > Channel setup > POS Setup > POS > Screen layouts**.</span></span>
 2. <span data-ttu-id="7d985-175">画面レイアウトページで、**新規** をクリックして新しい画面レイアウトを作成するか、既存の画面レイアウトを選択します。</span><span class="sxs-lookup"><span data-stu-id="7d985-175">On the screen layout page, click **New** to create a new screen layout, or select an existing screen layout.</span></span>
@@ -109,7 +109,7 @@ ms.lasthandoff: 12/04/2018
     12. <span data-ttu-id="7d985-186">**小売 > 小売 IT > 配送スケジュール**の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="7d985-186">Go to **Retail > Retail IT > Distribution schedule**.</span></span>
     13. <span data-ttu-id="7d985-187">レジスター ジョブ (1090) を選択し、アクション ペインで **今すぐ実行** を選択します。</span><span class="sxs-lookup"><span data-stu-id="7d985-187">Select the Registers job (1090), and then, on the Action Pane, select **Run now**.</span></span> <span data-ttu-id="7d985-188">メッセージが表示されたら、はい を選択します。</span><span class="sxs-lookup"><span data-stu-id="7d985-188">When you're prompted, select Yes.</span></span>
 
-## <a name="pos"></a><span data-ttu-id="7d985-189">POS</span><span class="sxs-lookup"><span data-stu-id="7d985-189">POS</span></span>
+### <a name="pos"></a><span data-ttu-id="7d985-189">POS</span><span class="sxs-lookup"><span data-stu-id="7d985-189">POS</span></span>
 
 1. <span data-ttu-id="7d985-190">POS を起動し、任意の品目をトランザクションに追加します。</span><span class="sxs-lookup"><span data-stu-id="7d985-190">Start POS, and add any item to a transaction.</span></span> <span data-ttu-id="7d985-191">ヘッダーと明細行の両方のコンフィギュレーション済の属性と共に、トランザクション画面に属性パネルが表示されます。</span><span class="sxs-lookup"><span data-stu-id="7d985-191">You should see the Attribute panel in the transaction screen with the configured attributes both for header and lines.</span></span>
 2. <span data-ttu-id="7d985-192">属性パネルで **編集** アイコンをクリックして、属性の値を更新します。</span><span class="sxs-lookup"><span data-stu-id="7d985-192">Click the **Edit** icon in the attribute panel to update the attribute value.</span></span>

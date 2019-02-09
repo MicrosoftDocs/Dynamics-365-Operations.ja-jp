@@ -16,10 +16,10 @@ ms.assetid: fc0f06e8-1a20-45f7-ae98-ee074fe1f030
 ms.search.region: Global
 ms.author: omarc
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: d67756a944106ce98c36a0c0f6a9ed053e422eea
+ms.sourcegitcommit: d9c48adeff6fed1d6c84d74036f4a50a793503f1
+ms.openlocfilehash: 4c47453b0b247fc9553e143f4d24cb45afeffbaf
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 02/08/2019
 
 ---
 
@@ -33,12 +33,11 @@ ms.lasthandoff: 08/09/2018
 
 <a name="compress-backup-selected-in-the-set-backup-compression-fieldmediadatabasebackup01jpgmediadatabasebackup01jpg"></a><span data-ttu-id="3f56a-111">[![セット バックアップ圧縮フィールドで選択されたバックアップを圧縮](./media/databasebackup01.jpg)](./media/databasebackup01.jpg)</span><span class="sxs-lookup"><span data-stu-id="3f56a-111">[![Compress backup selected in the Set backup compression field](./media/databasebackup01.jpg)](./media/databasebackup01.jpg)</span></span>
 =======
-<span data-ttu-id="3f56a-112">デモまたは開発環境では、データベースは通常 AXDBRain と呼ばれます。</span><span class="sxs-lookup"><span data-stu-id="3f56a-112">On demo or development environments, the database is typically called AXDBRain.</span></span> <span data-ttu-id="3f56a-113">データベースのバックアップは、15 ギガバイト (GB) 未満にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="3f56a-113">Your database backup should be no larger than 15 gigabyte (GB).</span></span> <span data-ttu-id="3f56a-114">データベースが大きい場合、Lifecycle Services (LCS) で<strong>アセット ライブラリ**にデータベースをアップロードしようとすると、タイムアウト エラーが発生する場合があります。データベース バックアップを圧縮するには、SQL Server Management Studio で、**データベースのバックアップ</strong> ページの<strong>バックアップ圧縮の設定</strong>フィールドで、<strong>バックアップの圧縮</strong>を選択します。</span><span class="sxs-lookup"><span data-stu-id="3f56a-114">If your database is larger, a timeout error may occur when you try to upload the database to the <strong>Asset library **in Lifecycle Services (LCS). To compress your database backup, in SQL Server Management Studio, on the **Back Up Database</strong> page, in the <strong>Set backup compression</strong> field, select <strong>Compress backup</strong>.</span></span> 
+<span data-ttu-id="3f56a-112">デモまたは開発環境では、データベースは通常 AXDBRain と呼ばれます。</span><span class="sxs-lookup"><span data-stu-id="3f56a-112">On demo or development environments, the database is typically called AXDBRain.</span></span> <span data-ttu-id="3f56a-113">データベースのバックアップは、15 ギガバイト (GB) 未満にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="3f56a-113">Your database backup should be no larger than 15 gigabyte (GB).</span></span> <span data-ttu-id="3f56a-114">データベースが大きい場合、Lifecycle Services (LCS) で<strong>アセット ライブラリ**にデータベースをアップロードしようとすると、タイムアウト エラーが発生する場合があります。データベース バックアップを圧縮するには、SQL Server Management Studio で、**データベースのバックアップ</strong> ページの<strong>バックアップ圧縮の設定</strong>フィールドで、<strong>バックアップの圧縮</strong>を選択します。</span><span class="sxs-lookup"><span data-stu-id="3f56a-114">If your database is larger, a timeout error may occur when you try to upload the database to the <strong>Asset library \*\*in Lifecycle Services (LCS). To compress your database backup, in SQL Server Management Studio, on the \*\*Back Up Database</strong> page, in the <strong>Set backup compression</strong> field, select <strong>Compress backup</strong>.</span></span> 
 
 <span data-ttu-id="3f56a-115">[![databasebackup01](./media/databasebackup01.jpg)](./media/databasebackup01.jpg)</span><span class="sxs-lookup"><span data-stu-id="3f56a-115">[![databasebackup01](./media/databasebackup01.jpg)](./media/databasebackup01.jpg)</span></span>
 
-<a name="additional-resources"></a><span data-ttu-id="3f56a-116">その他のリソース</span><span class="sxs-lookup"><span data-stu-id="3f56a-116">Additional resources</span></span>
---------
+## <a name="additional-resources"></a><span data-ttu-id="3f56a-116">その他のリソース</span><span class="sxs-lookup"><span data-stu-id="3f56a-116">Additional resources</span></span>
 
 [<span data-ttu-id="3f56a-117">AppSource の Dynamics 365 for Finance and Operations アプリを公開</span><span class="sxs-lookup"><span data-stu-id="3f56a-117">Publishing an App for Dynamics 365 for Finance and Operations in AppSource</span></span>](lcs-solutions-app-source.md)
 

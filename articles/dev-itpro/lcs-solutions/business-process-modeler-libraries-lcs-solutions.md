@@ -16,10 +16,10 @@ ms.assetid: 6e6d6896-edef-4739-98ad-c4ea19180972
 ms.search.region: Global
 ms.author: omarc
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 5a923da121bd7ee81027312b3a1b8c2908eb2a7f
+ms.sourcegitcommit: d9c48adeff6fed1d6c84d74036f4a50a793503f1
+ms.openlocfilehash: 7fcac90fd8d0b3a96ebd8f60599173be81c6aedc
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 02/08/2019
 
 ---
 
@@ -29,8 +29,7 @@ ms.lasthandoff: 08/09/2018
 
 <span data-ttu-id="0ac8b-104">このトピックでは、ビジネス プロセス モデラー (BPM) ライブラリを作成して使用する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="0ac8b-104">This topic explains how to create and work with Business process modeler (BPM) libraries.</span></span>
 
-<a name="create-a-business-process-library"></a><span data-ttu-id="0ac8b-105">業務プロセス ライブラリの作成</span><span class="sxs-lookup"><span data-stu-id="0ac8b-105">Create a business process library</span></span>
----------------------------------
+## <a name="create-a-business-process-library"></a><span data-ttu-id="0ac8b-105">業務プロセス ライブラリの作成</span><span class="sxs-lookup"><span data-stu-id="0ac8b-105">Create a business process library</span></span>
 
 <span data-ttu-id="0ac8b-106">BPM ライブラリを作成する 2 つの方法があります。</span><span class="sxs-lookup"><span data-stu-id="0ac8b-106">There are two ways to create a BPM library.</span></span> <span data-ttu-id="0ac8b-107">明細行記録またはタスク記録がない新しいライブラリを作成、または既存のライブラリをコピーすることができます。</span><span class="sxs-lookup"><span data-stu-id="0ac8b-107">You can create a new library that has no lines or task recordings, or you can copy an existing library.</span></span>
 
@@ -111,7 +110,7 @@ ms.lasthandoff: 08/09/2018
 1.  <span data-ttu-id="0ac8b-169">**LCS に保存**を選択します。</span><span class="sxs-lookup"><span data-stu-id="0ac8b-169">Select **Save to LCS**.</span></span>
 2.  <span data-ttu-id="0ac8b-170">業務プロセス ライブラリを選択します。</span><span class="sxs-lookup"><span data-stu-id="0ac8b-170">Select a business process library.</span></span>
 3.  <span data-ttu-id="0ac8b-171">記録に関連付ける業務プロセス ラインを選択します。</span><span class="sxs-lookup"><span data-stu-id="0ac8b-171">Select the business process line to associate with the recording.</span></span>
-4.  <span data-ttu-id="0ac8b-172"> **OK**を選択します。</span><span class="sxs-lookup"><span data-stu-id="0ac8b-172">Select **OK**.</span></span>
+4.  <span data-ttu-id="0ac8b-172"> *\*OK*\*を選択します。</span><span class="sxs-lookup"><span data-stu-id="0ac8b-172">Select **OK**.</span></span>
 
 <span data-ttu-id="0ac8b-173">LCS の業務プロセス ライブラリで記録するタスクを表示できるようになりました。</span><span class="sxs-lookup"><span data-stu-id="0ac8b-173">You can now view the task recording in the business process library in LCS.</span></span>
 

@@ -16,10 +16,10 @@ ms.assetid: ff06961e-2d11-4e4c-addf-5e4b9528a924
 ms.search.region: Global
 ms.author: omarc
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 0dbd2e0105ec0a3b1a53e45dd4b85bd1ddd9ce05
+ms.sourcegitcommit: d9c48adeff6fed1d6c84d74036f4a50a793503f1
+ms.openlocfilehash: ea0df0ab978123161c79199a4329f5ded801b7a8
 ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 02/08/2019
 
 ---
 
@@ -159,8 +159,7 @@ ms.lasthandoff: 08/09/2018
 -   <span data-ttu-id="e0f5b-258">**プロセス データ パッケージの使用**ページで、パッケージを選択し、**履歴**を選択します。</span><span class="sxs-lookup"><span data-stu-id="e0f5b-258">On the **Consume process data package** page, select a package, and then select **History**.</span></span> <span data-ttu-id="e0f5b-259">データ パッケージの状態をレビューすることができます。</span><span class="sxs-lookup"><span data-stu-id="e0f5b-259">You can review the status of the data package.</span></span> <span data-ttu-id="e0f5b-260">利用可能な情報には、ターゲット環境、会社、パッケージ名、開始時刻と終了時刻、データ エンティティ別のステータス、およびデータ パッケージの全体的なステータスがあります。</span><span class="sxs-lookup"><span data-stu-id="e0f5b-260">The available information includes the target environment, company, package name, start and end times, status by data entity, and overall status of the data package.</span></span> <span data-ttu-id="e0f5b-261">発生したエラーの詳細を表示するには、ターゲット環境にサインインします。</span><span class="sxs-lookup"><span data-stu-id="e0f5b-261">To see the details of any errors that occurred, you can sign in to the target environment.</span></span>
 
 
-<a name="additional-resources"></a><span data-ttu-id="e0f5b-262">その他のリソース</span><span class="sxs-lookup"><span data-stu-id="e0f5b-262">Additional resources</span></span>
---------
+### <a name="additional-resources"></a><span data-ttu-id="e0f5b-262">その他のリソース</span><span class="sxs-lookup"><span data-stu-id="e0f5b-262">Additional resources</span></span>
 
 [<span data-ttu-id="e0f5b-263">AppSource の Dynamics 365 for Finance and Operations アプリを公開</span><span class="sxs-lookup"><span data-stu-id="e0f5b-263">Publishing an App for Dynamics 365 for Finance and Operations in AppSource</span></span>](lcs-solutions-app-source.md)
 
