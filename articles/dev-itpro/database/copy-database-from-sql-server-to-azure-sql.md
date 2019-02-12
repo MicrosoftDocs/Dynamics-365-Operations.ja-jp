@@ -1,4 +1,5 @@
 ---
+redirect_url: /dynamics365/unified-operations/dev-itpro/database/dbmovement-operations
 title: "Finance and Operations データベースを SQL Server から Azure SQL データベース運用環境にコピーする"
 description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations データベースを SQL Server をベースとした開発、ビルド、またはデモ環境 (第 1 層または ワンボックス) から Azure SQL データベースをベースしたサンドボックス UAT 環境 (第 2 層以上) に移動する方法について説明します。"
 author: laneswenka
@@ -18,10 +19,10 @@ ms.author: laneswenka
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a388e0efe6c19a3aabe04e7fff039ce11ae023c4
-ms.openlocfilehash: cde3fd4833847975b8d94f0396013a7f4b797106
+ms.sourcegitcommit: 20f399701df76bb4adf0948291732bca64fb8d5a
+ms.openlocfilehash: e081cdd84dc37f9211047a5dba74e5b993ebdc2d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 01/07/2019
+ms.lasthandoff: 02/12/2019
 
 ---
 
