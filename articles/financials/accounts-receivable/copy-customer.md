@@ -1,13 +1,13 @@
 ---
-title: "共有番号順序を使用して、顧客をコピーする"
-description: "このトピックでは、同じ顧客 ID を維持したまま共有番号順序を使用して顧客を別の法人にコピーする方法について、説明します。"
+title: 共有番号順序を使用して、顧客をコピーする
+description: このトピックでは、同じ顧客 ID を維持したまま共有番号順序を使用して顧客を別の法人にコピーする方法について、説明します。
 author: mikefalkner
 manager: aolson
 ms.date: 08/31/2018
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustTable
 audience: Application User
 ms.reviewer: shylaw
@@ -15,15 +15,14 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mikefalkner
 ms.search.validFrom: 2018-10-31
-ms.dyn365.ops.version: 8.1
-ms.translationtype: HT
-ms.sourcegitcommit: c093c9af7184d93b1200a8bcab16573f2bb4be09
+ms.dyn365.ops.version: 8.0999999999999996
 ms.openlocfilehash: 7a1e6c6e3a995ad745522d58960e850d72c2ee57
-ms.contentlocale: ja-jp
-ms.lasthandoff: 01/03/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302511"
 ---
-
 # <a name="copy-customers-by-using-shared-number-sequences"></a>共有番号順序を使用して、顧客をコピーする
 
 [!include [banner](../includes/banner.md)]
@@ -66,4 +65,3 @@ ms.lasthandoff: 01/03/2019
 
 1. **顧客をコピー** オプションが表示されます。 このオプションの既定値は **いいえ** です。 顧客を現在の法人にコピーするには、このオプションで **はい** を指定します。 
 2. **選択** を選択します。 顧客が新規に作成されます。
-

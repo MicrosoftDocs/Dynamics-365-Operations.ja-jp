@@ -1,13 +1,13 @@
 ---
-title: "売掛金勘定ホーム ページ"
-description: "顧客請求書および入金される支払を追跡するには、売掛金勘定を使用します。"
+title: 売掛金勘定ホーム ページ
+description: 顧客請求書および入金される支払を追跡するには、売掛金勘定を使用します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/18/2017
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustomerInvoiceWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
 ms.openlocfilehash: 303d67c0b662e6c21cebb5aa10ed28555459522e
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302549"
 ---
-
 # <a name="accounts-receivable-home-page"></a>売掛金勘定ホーム ページ
 
 [!include [banner](../includes/banner.md)]
@@ -93,7 +92,7 @@ ms.lasthandoff: 08/09/2018
 :::row-end:::
 
 
-### <a name="additional-resources"></a>その他のリソース
+### <a name="additional-resources"></a>追加リソース
 
 #### <a name="whats-new-and-in-development"></a>新機能および開発中の機能
 
@@ -101,7 +100,7 @@ ms.lasthandoff: 08/09/2018
 
 #### <a name="blogs"></a>ブログ
 
-売掛金勘定およびその他のソリューションに関する意見、ニュース、その他の情報については、[Microsoft Dynamics 365 blog (Microsoft Dynamics 365 ブログ)](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) を参照してください。
+売掛金勘定およびその他のソリューションに関する意見、ニュース、その他の情報については、[Microsoft Dynamics365 blog (Microsoft Dynamics 365 ブログ)](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise)を参照してください。
 
 [Microsoft Dynamics AX product team blog (Microsoft Dynamics AX 製品チームのブログ)](https://blogs.msdn.microsoft.com/dax/) には、売掛金勘定に関する多くの投稿があります。 これらの投稿の一部は、以前のバージョンの売掛金勘定用に書かれたものですが、同じ概念が適用されます。 手順も、現在のバージョンと似ています。
 
@@ -112,8 +111,7 @@ Finance and Operations には、タスク ガイドとして使用できる追�
 
 #### <a name="videos"></a>ビデオ
 
-[Microsoft Dynamics 365 YouTube チャンネル](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ)のハウツー ビデオをご覧ください。
-
+[Microsoft Dynamics 365 YouTube チャンネル](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) のハウツー ビデオをご覧ください。
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "現金および銀行管理ホーム ページ"
-description: "現金および銀行管理を使用して、法人の銀行口座と、その銀行口座に関連付けられている財務証書を管理できます。"
+title: 現金および銀行管理ホーム ページ
+description: 現金および銀行管理を使用して、法人の銀行口座と、その銀行口座に関連付けられている財務証書を管理できます。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankTreasurerWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 944030859c26a1aadeb98a070d071e30f8b86dc4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 46eeb9cb19eed71256d38db78738c09761060c66
-ms.contentlocale: ja-jp
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302553"
 ---
-
 # <a name="cash-and-bank-management-home-page"></a>現金および銀行管理ホーム ページ
 
 [!include [banner](../includes/banner.md)]
@@ -83,7 +82,7 @@ ms.lasthandoff: 02/07/2018
 
 
 
-### <a name="additional-resources"></a>その他のリソース
+### <a name="additional-resources"></a>追加リソース
 
 #### <a name="whats-new-and-in-development"></a>新機能および開発中の機能
 
@@ -91,9 +90,9 @@ ms.lasthandoff: 02/07/2018
 
 #### <a name="blogs"></a>ブログ
 
-現金および銀行管理やその他のソリューションに関する意見、ニュース、その他の情報については、[Microsoft Dynamics 365 ブログ](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise)を参照してください。
+現金および銀行管理やその他のソリューションに関する意見、ニュース、その他の情報については、[Microsoft Dynamics 365 blog (Microsoft Dynamics 365 ブログ)] (https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) を参照してください。
 
-[Microsoft Dynamics AX 製品チームのブログ](https://blogs.msdn.microsoft.com/dax/)には、現金および銀行管理に関する多くの投稿があります。 これらの投稿の一部は現金および銀行管理の以前のバージョンに関して書かれていますが、現在のバージョンでも同じ概念を適用でき、手順も類似しています。
+[Microsoft Dynamics AX product team blog (Microsoft Dynamics AX 製品チームのブログ)](https://blogs.msdn.microsoft.com/dax/) には、現金および銀行管理に関する多くの投稿があります。 これらの投稿の一部は現金および銀行管理の以前のバージョンに関して書かれていますが、現在のバージョンでも同じ概念を適用でき、手順も類似しています。
 
 [Microsoft Dynamics Operations Partner Community Blog (Microsoft Dynamics Operations パートナー コミュニティのブログ)](https://community.dynamics.com/partner/b/operationspartnercommunityblog) では、MBS Operations に関する最新情報とトレンドを知るための単一のリソースが Microsoft Dynamics パートナー向けに提供されています。
 
@@ -102,5 +101,4 @@ Finance and Operations には、タスク ガイドとして使用できる追�
 
 #### <a name="videos"></a>ビデオ
 
-[Microsoft Dynamics 365 YouTube チャンネル](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ)のハウツー ビデオをご覧ください。
-
+[Microsoft Dynamics 365 YouTube チャンネル] (https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) のハウツー ビデオをご覧ください。

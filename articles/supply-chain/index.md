@@ -1,29 +1,24 @@
 ---
-title: "サプライ チェーン マネジメントのホーム ページ"
-description: "このページでは、Microsoft Dynamics 365 for Finance and Operations のサプライ チェーン マネジメント機能に関するヘルプ トピックとその他のリソースの一覧を示します。"
+# required metadata
+title: サプライ チェーン マネジメントのホーム ページ
+description: このページでは、Microsoft Dynamics 365 for Finance and Operations のサプライ チェーン マネジメント機能に関するヘルプ トピックとその他のリソースの一覧を示します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 05/09/2018
 ms.topic: index-page
-ms.prod: 
+ms.prod: null
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: null
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations
-ms.custom: 
+ms.search.scope: 'Core, Operations'
+ms.custom: null
 ms.assetid: ad2a889a-acfd-4b59-a3b3-4017dd374c7b
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: null
 ms.author: shylaw
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: '2016-11-30'
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 02cdf4615e2071f2b7de2e86b6f9e6637c6e5d8d
-ms.openlocfilehash: df35f70d8297aa2a832d143217542e3d558040ea
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/09/2018
-
 ---
 
 # <a name="supply-chain-management-home-page"></a>サプライ チェーン マネジメントのホーム ページ
@@ -93,7 +88,7 @@ ms.lasthandoff: 05/09/2018
 -  [Get the best out of your warehouse management system (倉庫管理システムを最大限に活用する)](https://www.youtube.com/watch?v=--_didmZKHo&t=10s)
 -  [Advanced R3 Warehouse Management - Inbound Processing and Min/Max Replenishment (高度な R3 倉庫管理 - 入庫処理と最小/最大の補充)](https://www.youtube.com/watch?v=z5_V5Eqlf5M&t=48s)
 -  [Advanced R3 Warehouse Management - A day in the life, outbound processing and Demand Replenishment (高度な R3 倉庫管理 - 出庫処理と要求補充)](https://youtu.be/Og0gLlVp7jA)
--  [Labels in the new Microsoft Dynamics AX 2012 R3 warehouse management (新しい Microsoft Dynamics AX 2012 R3 倉庫管理でのラベル)](https://youtu.be/5w1MngVchBA)
+-  [Labels in the new Microsoft Dynamics AX 2012 R3 Warehouse management (新しい Microsoft Dynamics AX 2012 R3 倉庫管理でのラベル)](https://youtu.be/5w1MngVchBA)
 -  [Dynamics AX 2012 R3: Advanced warehouse management - A day in the life of process manufacturing (高度な倉庫管理 - プロセス製造)](https://www.youtube.com/embed/QUxXUrN-7n4)
 
 **生産管理**
@@ -115,6 +110,5 @@ ms.lasthandoff: 05/09/2018
 
 ## <a name="elearning-courses"></a>eLearning コース
 Microsoft Dynamics 365 for Finance and Operations のトレーニングの詳細については、<a href="https://mbspartner.microsoft.com/AX/LearningPlans/">Microsoft Dynamics ラーニング ポータル</a>を参照してください。 (CustomerSource アカウントが必要です) 
-
 
 

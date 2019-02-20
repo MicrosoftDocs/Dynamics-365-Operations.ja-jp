@@ -1,13 +1,13 @@
 ---
-title: "顧客ワークフロー"
-description: "このトピックでは、顧客ワークフローに関する情報を提供します。 顧客の特定のフィールドを変更したら、その変更内容を顧客に追加する前に、承認のためワークフローを使用して送信します。"
+title: 顧客ワークフロー
+description: このトピックでは、顧客ワークフローに関する情報を提供します。 顧客の特定のフィールドを変更したら、その変更内容を顧客に追加する前に、承認のためワークフローを使用して送信します。
 author: mikefalkner
 manager: aolson
 ms.date: 08/24/2018
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: Customer
 audience: Application User
 ms.reviewer: shylaw
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: mikefalkner
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.translationtype: HT
-ms.sourcegitcommit: 98ed3378ab05c0c69c9e5b2a82310113a81c2264
 ms.openlocfilehash: 1b0e1621b256e6bbb42f97134b87dd65fa146193
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/31/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302537"
 ---
-
 # <a name="customer-workflow"></a>顧客ワークフロー
 
 [!include [banner](../includes/banner.md)]
@@ -62,4 +61,3 @@ ms.lasthandoff: 08/31/2018
     ページのステータスが **変更の承認待ち** に変わります。
 
 ワークフローは、Finance and Operations の標準的なワークフロー プロセスに従います。 承認者は **顧客** ページに転送され、そこで **提案済みの変更** ページの変更を確認してから **ワークフロー \> 承認** を選択してワークフローを承認します。 すべての承認が完了すると、フィールドは提示した値に更新されます。
-

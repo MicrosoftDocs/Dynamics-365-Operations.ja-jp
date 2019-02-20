@@ -1,13 +1,13 @@
 ---
-title: "予算作成用のホーム ページ"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations の予算作成機能コンポーネント、予算作成ツール、およびレポート機能の概要を説明します。"
+title: 予算作成用のホーム ページ
+description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations の予算作成機能コンポーネント、予算作成ツール、およびレポート機能の概要を示します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/09/2017
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BudgetPlanningWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 84321b78c9869a4920c3488373876bb56bcb3a29
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: efe348d9967ab7594afd22a3ebb4df76dc6607f8
-ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302545"
 ---
-
 # <a name="budgeting-home-page"></a>予算作成用のホーム ページ
 
 [!include [banner](../includes/banner.md)]
@@ -48,7 +47,7 @@ ms.lasthandoff: 03/26/2018
 -   [予算計画: 概要およびコンフィギュレーション](budget-planning-overview-configuration.md)
 -   [職位予測](position-forecasting.md)
 -   [予算計画妥当性ドキュメント](budget-planning-justification-docs.md)
--   [予算計画用 Microsoft Excel テンプレート](budget-planning-excel-templates.md)
+-   [Microsoft Excel の予算計画テンプレート](budget-planning-excel-templates.md)
 
 ## <a name="budgeting-tools-in-finance-and-operations"></a>Finance and Operations の予算作成ツール
 [![予算作成ツール](./media/budgeting-tools.jpg)](./media/budgeting-tools.jpg) 
@@ -66,7 +65,6 @@ ms.lasthandoff: 03/26/2018
 Finance and Operations では、ユーザーは直接 Finance and Operations クライアントで (コンフィギュレーション可能な予算計画ドキュメント ページを使用することにより)、または Excel を使用して、予算計画を作成できます。 Excel は、いくつかの追加機能を提供します。 たとえば、予算計画のソースとして外部データを使用し、カスタム計算を実行し、Microsoft PivotTable やグラフを使用できます。 予算計画プロセスの変数のほとんどは、コンフィギュレーションできます。 
 
 たとえば、予算作成者、予算作成する対象、プロセスの概要を定義できます。 予算計画には Excel を使用できますが、Finance and Operations では、まったくの単一のソースとして保持され、予算管理の問題を防ぐのに役立ちます。 定期処理プロセスは、予算作成の初期データを予算計画に移動するために使用できます。 Finance and Operations では、予算作成データを表示および分析できる一連の標準的なレポートの照会ページを提供します。 予算計画データは、Management Reporter を使用してアクセスでき、別の予算計画シナリオは、Management Reporter レポートで列として表示できます。
-
 
 
 

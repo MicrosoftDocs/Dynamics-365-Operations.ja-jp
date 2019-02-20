@@ -1,13 +1,13 @@
 ---
-title: "買掛金勘定ホーム ページ"
-description: "このトピックでは、買掛金勘定の概要を示します。"
+title: 買掛金勘定ホーム ページ
+description: このトピックでは、買掛金勘定の概要を示します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/18/2017
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendInvoiceWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -18,21 +18,20 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
+ms.openlocfilehash: 6cc7ee98b3fabb774339dd1fc027d38d00d8b31f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 7bc09cbd108949b37ea1b2207fc3e0c6961abf4b
-ms.contentlocale: ja-jp
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302531"
 ---
-
 # <a name="accounts-payable-home-page"></a>買掛金勘定ホーム ページ
 
 [!include [banner](../includes/banner.md)]
 
 このトピックでは、買掛金勘定の概要を示します。 
 
-仕入先請求書を手動で入力するか、またはデータ エンティティによって電子的にそれらを受け取ることができます。 請求書の入力または入庫後、請求書承認仕訳または [**仕入先請求書**] ページを使用して、請求書を確認および承認できます。 確認プロセスを自動化するために請求書照合、仕入先請求書ポリシー、およびワークフローを使用すると、特定の基準を満たす請求書は自動的に承認され、残りの請求書には承認されたユーザーが確認するようにフラグが設定されます。
+仕入先請求書を手動で入力するか、またはデータ エンティティによって電子的にそれらを受け取ることができます。 請求書の入力または入庫後、請求書承認仕訳または**仕入先請求書**ページを使用して、請求書を確認および承認できます。 確認プロセスを自動化するために請求書照合、仕入先請求書ポリシー、およびワークフローを使用すると、特定の基準を満たす請求書は自動的に承認され、残りの請求書には承認されたユーザーが確認するようにフラグが設定されます。
 
 **業務プロセス**
 
@@ -120,7 +119,7 @@ ms.lasthandoff: 02/07/2018
 
 
 
-### <a name="additional-resources"></a>その他のリソース
+### <a name="additional-resources"></a>追加リソース
 
 #### <a name="whats-new-and-in-development"></a>新機能および開発中の機能
 
@@ -128,7 +127,7 @@ ms.lasthandoff: 02/07/2018
 
 #### <a name="blogs"></a>ブログ
 
-買掛金勘定およびその他のソリューションに関する意見、ニュース、その他の情報については、[Microsoft Dynamics 365 blog (Microsoft Dynamics 365 ブログ)](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) を参照してください。
+買掛金勘定およびその他のソリューションに関する意見、ニュース、その他の情報については、[Microsoft Dynamics365 blog (Microsoft Dynamics 365 ブログ)](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise)を参照してください。
 
 [Microsoft Dynamics AX product team blog (Microsoft Dynamics AX 製品チームのブログ)](https://blogs.msdn.microsoft.com/dax/) には、買掛金勘定に関する多くの投稿があります。 これらの投稿の一部は買掛金勘定の以前のバージョンに関して書かれていますが、現在のバージョンでも同じ概念を適用でき、手順も類似しています。
 
@@ -139,8 +138,7 @@ Finance and Operations には、タスク ガイドとして使用できる追�
 
 #### <a name="videos"></a>ビデオ
 
-[Microsoft Dynamics 365 YouTube チャンネル](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ)のハウツー ビデオをご覧ください。
-
+[Microsoft Dynamics 365 YouTube チャンネル](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) のハウツー ビデオをご覧ください。
 
 
 
