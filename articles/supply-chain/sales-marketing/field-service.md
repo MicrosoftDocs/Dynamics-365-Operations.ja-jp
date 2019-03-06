@@ -1,37 +1,36 @@
 ---
-title: "Microsoft Dynamics 365 for Field Service との統合"
-description: "このトピックでは、Microsoft Dynamics 365 for Field Service との統合の概要を示します。"
+title: Microsoft Dynamics 365 for Field Service との統合
+description: このトピックでは、Microsoft Dynamics 365 for Field Service との統合の概要を提供します。
 author: ChristianRytt
 manager: AnnBe
-ms.date: 08/25/2018
+ms.date: 02/05/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
+ms.openlocfilehash: d636e77888fff383849b3a91bf643475a6d516ac
+ms.sourcegitcommit: 383a344deb5abf48584ea2ee7774b8dbbbec49b3
 ms.translationtype: HT
-ms.sourcegitcommit: 95031534c43dc0578e258bc3e5376c429d72b0ab
-ms.openlocfilehash: 673ab2a101cee1a3dbbb1249f582d959cecc7f7f
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/23/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "377881"
 ---
-
 # <a name="integration-with-microsoft-dynamics-365-for-field-service"></a>Microsoft Dynamics 365 for Field Service との統合
 
 [!include[banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Finance and Operations は、Finance and Operations および Microsoft Dynamics 365 for Field Service 間の業務プロセスの同期を有効にします。 統合シナリオは、業務プロセスの同期を有効にするため、拡張データ インテグレーター テンプレートおよび Common Data Service (CD) を使用して構成します。
+Microsoft Dynamics 365 for Finance and Operations は、Finance and Operations および Microsoft Dynamics 365 for Field Service 間の業務プロセスの同期を有効にします。 統合シナリオは、業務プロセスの同期を有効にするため、拡張データ インテグレーター テンプレートおよび Common Data Service (CDS) を使用して構成します。
 標準テンプレートを使用してカスタム統合プロジェクトを作成し、追加の標準フィールドとカスタム フィールド、およびエンティティをマップして統合を調整して、特定のビジネス ニーズを満たすことができます。 
 
 Field Service 統合は、既存の見込顧客の現金化機能の上に構築します。
@@ -48,23 +47,7 @@ Field Service および Finance and Operations 統合の第 1 のフェーズは
 
 Field Service および Finance and Operations 間のワーク オーダーを同期する方法の例を表示するには、短い YouTube ビデオ [ワーク オーダーを Microsoft Dynamics 365 の統合に同期する方法](https://www.youtube.com/watch?v=46ylO7raZAo) をご覧ください。
 
-## <a name="system-requirements-for-finance-and-operations"></a>Finance and Operations のシステム要件
-Field Service 統合は、次のバージョンがサポートされています。
-
-### <a name="dynamics-365-for-finance-and-operations-version-80-april-2018-or-later"></a>Dynamics 365 for Finance and Operations バージョン 8.0 (2018 年 4 月) またはそれ以降
-
-- Dynamics 365 for Finance and Operations バージョン 8.0 (2018 年 4 月) は 2018 年 4 月にリリースされ、アプリケーション ビルド番号 8.0.30.8020、プラットフォーム更新プログラム 15 (7.0.4841.35234) となっています。 
-
-## <a name="system-requirements-for-field-service"></a>Field Service のシステム要件
-Field Service 統合ソリューションを使用するには、以下のコンポーネントをインストールする必要があります:
-
-### <a name="microsoft-dynamics-365-for-field-service-90-or-later"></a>Microsoft Dynamics 365 for Field Service 9.0 またはそれ以降
-
-- Dynamics 365 for Field Service バージョン 1612 (9.0.1.733) (DB 9.0.1.733) オンラインまたはそれ以降のバージョン。
-- Dynamics 365 for Sales バージョン 1.15.0.1 またはそれ以降のバージョンの見込顧客を現金化 (P2C) するソリューション。 このソリューションは、[AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3) からダウンロードできます。
-- Dynamics 365 バージョン 1.0.0.0 またはそれ以降のバージョンの Field Service 統合ソリューション。 このソリューションは、[AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.p2cfieldserviceintegration) からダウンロードできます。
-
-# <a name="integration-with-microsoft-dynamics-365-for-field-service-including-inventory-and-project-information"></a>在庫およびプロジェクト情報を含む、Microsoft Dynamics 365 for Field Service との統合
+## <a name="integration-with-microsoft-dynamics-365-for-field-service-including-inventory-and-project-information"></a>在庫およびプロジェクト情報を含む、Microsoft Dynamics 365 for Field Service との統合
 
 この第 2 のフェーズの追加機能では、フィールド技術者に Finance and Operations からの在庫情報について洞察を与え、在庫レベルを更新し、材料を移動できるようにすることに重点を置いています。 さらに、販売品を設置またはサービスする会社は、プロジェクトからの統合により、販売およびサービスの全プロセスをより適切に管理および可視化することができます。
 
@@ -74,7 +57,7 @@ Field Service 統合ソリューションを使用するには、以下のコン
 - 在庫移動
 - 在庫調整
 - Dynamics 365 for Field Service のワーク オーダーと接続した Dynamics 365 for Finance and Operations プロジェクト
-- Dynamics 365 for Field and Operations プロジェクトへのリンクを含む Dynamics 365 for Field Service ワーク オーダーは、このプロジェクト番号を Dynamics 365 for Finance and Operations 販売注文に適用して、プロジェクトからの請求を可能にします。 
+- Dynamics 365 for Finance and Operations プロジェクトへのリンクを含む Dynamics 365 for Field Serviceワーク オーダーは、このプロジェクト番号を Dynamics 365 for Finance and Operations 販売注文に適用して、プロジェクトからの請求を可能にします。 
 
 ![Finance and Operations および Field Service 間の業務プロセスの同期](./media/FSv2overview.png)
 
@@ -87,15 +70,16 @@ Field Service 統合ソリューションを使用するには、以下のコン
 - プロジェクトのワーク オーダー (Field Service から Finance and Operations) - プロジェクトへのサポートを含む、Finance and Operations の販売注文に対する Field Service のワーク オーダー [高度なクエリ] 
 - Field Service 製品と在庫単位 (Finance and Operations から Sales) - Field Service への、在庫単位を含む Finance and Operations の「販売可能なリリース済製品」から Sales 「製品」 
 
-## <a name="system-requirements-for-finance-and-operations"></a>Finance and Operations のシステム要件
+## <a name="system-requirements"></a>システム要件
+
+### <a name="system-requirements-for-finance-and-operations"></a>Finance and Operations のシステム要件
 Field Service 統合は、次のバージョンがサポートされています。
 
-- Dynamics 365 for Finance and Operations バージョン 8.1.2 (2019 年 12 月) は 2019 年 12 月にリリースされ、アプリケーション ビルド番号 8.1.195、プラットフォーム更新 22 (7.0.5095) となっています。 
+- Dynamics 365 for Finance and Operations バージョン 8.1.2 (2019 年 12 月) は、2019 年 12 月にリリースされ、アプリケーション ビルド番号 8.1.195、プラットフォーム更新 22 (7.0.5095) となっています。 
 
-## <a name="system-requirements-for-field-service"></a>Field Service のシステム要件
+### <a name="system-requirements-for-field-service"></a>Field Service のシステム要件
 Field Service 統合ソリューションを使用するには、以下のコンポーネントをインストールする必要があります:
 
 - Field Service for Dynamics 365 (バージョン 8.2.0.286) または、Dynamics 365 9.1.x のそれ以降のバージョン - 2018 年 11 月リリース
 - Dynamics 365 for Sales バージョン 1.15.0.1 またはそれ以降のバージョンの見込顧客を現金化 (P2C) するソリューション。 このソリューションは、[AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3) からダウンロードできます。
 - Dynamics 365 の「Field Service 統合、プロジェクトと在庫」ソリューション、バージョン 2.0.0.0 またはそれ以降のバージョン。 このソリューションは、[AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.p2cfieldserviceintegrationv2) からダウンロードできます。
-
