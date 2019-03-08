@@ -1,13 +1,13 @@
 ---
-title: "製造オーダーの開始"
-description: "この手順では、作業現場での製造オーダーの開始方法を説明します。"
+title: 製造オーダーの開始
+description: この手順では、作業現場での製造オーダーの開始方法を説明します。
 author: johanhoffmann
 manager: AnnBe
 ms.date: 11/11/2016
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -16,58 +16,57 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
 ms.openlocfilehash: f83091a9f3e96a9176860bd16fa5969507488a25
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/07/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "346229"
 ---
-# <a name="start-a-production-order"></a><span data-ttu-id="611d6-103">製造オーダーの開始</span><span class="sxs-lookup"><span data-stu-id="611d6-103">Start a production order</span></span>
+# <a name="start-a-production-order"></a><span data-ttu-id="d72e6-103">製造オーダーの開始</span><span class="sxs-lookup"><span data-stu-id="d72e6-103">Start a production order</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="611d6-104">この手順では、作業現場での製造オーダーの開始方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="611d6-104">This procedure shows how to start a production order on the shop floor.</span></span> <span data-ttu-id="611d6-105">時間および材料の消費は、このプロセスでレポートされます。</span><span class="sxs-lookup"><span data-stu-id="611d6-105">Time and material consumption are reported in this process.</span></span> <span data-ttu-id="611d6-106">この手順の作成に使用するデモ データの会社は USMF です。</span><span class="sxs-lookup"><span data-stu-id="611d6-106">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="611d6-107">これは、製造オーダーのライフ サイクルを説明する 7 個の手順の 5 番目です。</span><span class="sxs-lookup"><span data-stu-id="611d6-107">This is the fifth procedure out of seven which explains the production order lifecycle.</span></span>
+<span data-ttu-id="d72e6-104">この手順では、作業現場での製造オーダーの開始方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="d72e6-104">This procedure shows how to start a production order on the shop floor.</span></span> <span data-ttu-id="d72e6-105">時間および材料の消費は、このプロセスでレポートされます。</span><span class="sxs-lookup"><span data-stu-id="d72e6-105">Time and material consumption are reported in this process.</span></span> <span data-ttu-id="d72e6-106">この手順の作成に使用するデモ データの会社は USMF です。</span><span class="sxs-lookup"><span data-stu-id="d72e6-106">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="d72e6-107">これは、製造オーダーのライフ サイクルを説明する 7 個の手順の 5 番目です。</span><span class="sxs-lookup"><span data-stu-id="d72e6-107">This is the fifth procedure out of seven which explains the production order lifecycle.</span></span>
 
 
-## <a name="start-a-production-order"></a><span data-ttu-id="611d6-108">製造オーダーの開始</span><span class="sxs-lookup"><span data-stu-id="611d6-108">Start a production order</span></span>
-1. <span data-ttu-id="611d6-109">[生産管理] > [製造オーダー] > [すべての製造オーダー] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="611d6-109">Go to Production control > Production orders > All production orders.</span></span>
-    * <span data-ttu-id="611d6-110">ステータスが [リリース済] の製造オーダーを選択します。</span><span class="sxs-lookup"><span data-stu-id="611d6-110">Select a production order that has the Released status.</span></span>  
-2. <span data-ttu-id="611d6-111">アクション ウィンドウで、[製造オーダー] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="611d6-111">On the Action Pane, click Production order.</span></span>
-3. <span data-ttu-id="611d6-112">[開始] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="611d6-112">Click Start.</span></span>
-    * <span data-ttu-id="611d6-113">このページで、製造オーダーの開始を確認できます。</span><span class="sxs-lookup"><span data-stu-id="611d6-113">On this page, you can confirm the start of the production order.</span></span>  
-4. <span data-ttu-id="611d6-114">[一般] タブをクリックします。</span><span class="sxs-lookup"><span data-stu-id="611d6-114">Click the General tab.</span></span>
-5. <span data-ttu-id="611d6-115">[開始行程</span><span class="sxs-lookup"><span data-stu-id="611d6-115">In the From Oper.</span></span> <span data-ttu-id="611d6-116">一連番号</span><span class="sxs-lookup"><span data-stu-id="611d6-116">No.</span></span> <span data-ttu-id="611d6-117">フィールドで、「10」を入力します。</span><span class="sxs-lookup"><span data-stu-id="611d6-117">field, enter '10'.</span></span>
-6. <span data-ttu-id="611d6-118">[自動工順消費] フィールドで、「常に」を選択します。</span><span class="sxs-lookup"><span data-stu-id="611d6-118">In the Automatic route consumption field, select 'Always'.</span></span>
-7. <span data-ttu-id="611d6-119">[工順カード転記] チェック ボックスをクリックします。</span><span class="sxs-lookup"><span data-stu-id="611d6-119">Click the Post route card now checkbox.</span></span>
-8. <span data-ttu-id="611d6-120">[自動 BOM 消費] フィールドで、「常に」を選択します。</span><span class="sxs-lookup"><span data-stu-id="611d6-120">In the Automatic BOM consumption field, select 'Always'.</span></span>
-9. <span data-ttu-id="611d6-121">[ピッキング リスト転記] チェックボックスをクリックします。</span><span class="sxs-lookup"><span data-stu-id="611d6-121">Click the Post picking list now checkbox.</span></span>
-10. <span data-ttu-id="611d6-122">[ピッキング リストの印刷] チェックボックスをクリックします。</span><span class="sxs-lookup"><span data-stu-id="611d6-122">Click the Print picking list checkbox.</span></span>
-11. <span data-ttu-id="611d6-123">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="611d6-123">Click OK.</span></span>
-    * <span data-ttu-id="611d6-124">これは、製造オーダーに使用される材料を示す印刷されたピッキング リストです。</span><span class="sxs-lookup"><span data-stu-id="611d6-124">This is the printed picking list that shows the materials used for the production order.</span></span>  
-12. <span data-ttu-id="611d6-125">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="611d6-125">Close the page.</span></span>
+## <a name="start-a-production-order"></a><span data-ttu-id="d72e6-108">製造オーダーの開始</span><span class="sxs-lookup"><span data-stu-id="d72e6-108">Start a production order</span></span>
+1. <span data-ttu-id="d72e6-109">[生産管理] > [製造オーダー] > [すべての製造オーダー] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="d72e6-109">Go to Production control > Production orders > All production orders.</span></span>
+    * <span data-ttu-id="d72e6-110">ステータスが [リリース済] の製造オーダーを選択します。</span><span class="sxs-lookup"><span data-stu-id="d72e6-110">Select a production order that has the Released status.</span></span>  
+2. <span data-ttu-id="d72e6-111">アクション ウィンドウで、[製造オーダー] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d72e6-111">On the Action Pane, click Production order.</span></span>
+3. <span data-ttu-id="d72e6-112">[開始] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d72e6-112">Click Start.</span></span>
+    * <span data-ttu-id="d72e6-113">このページで、製造オーダーの開始を確認できます。</span><span class="sxs-lookup"><span data-stu-id="d72e6-113">On this page, you can confirm the start of the production order.</span></span>  
+4. <span data-ttu-id="d72e6-114">[一般] タブをクリックします。</span><span class="sxs-lookup"><span data-stu-id="d72e6-114">Click the General tab.</span></span>
+5. <span data-ttu-id="d72e6-115">[開始行程</span><span class="sxs-lookup"><span data-stu-id="d72e6-115">In the From Oper.</span></span> <span data-ttu-id="d72e6-116">一連番号</span><span class="sxs-lookup"><span data-stu-id="d72e6-116">No.</span></span> <span data-ttu-id="d72e6-117">フィールドで、「10」を入力します。</span><span class="sxs-lookup"><span data-stu-id="d72e6-117">field, enter '10'.</span></span>
+6. <span data-ttu-id="d72e6-118">[自動工順消費] フィールドで、「常に」を選択します。</span><span class="sxs-lookup"><span data-stu-id="d72e6-118">In the Automatic route consumption field, select 'Always'.</span></span>
+7. <span data-ttu-id="d72e6-119">[工順カード転記] チェック ボックスをクリックします。</span><span class="sxs-lookup"><span data-stu-id="d72e6-119">Click the Post route card now checkbox.</span></span>
+8. <span data-ttu-id="d72e6-120">[自動 BOM 消費] フィールドで、「常に」を選択します。</span><span class="sxs-lookup"><span data-stu-id="d72e6-120">In the Automatic BOM consumption field, select 'Always'.</span></span>
+9. <span data-ttu-id="d72e6-121">[ピッキング リスト転記] チェックボックスをクリックします。</span><span class="sxs-lookup"><span data-stu-id="d72e6-121">Click the Post picking list now checkbox.</span></span>
+10. <span data-ttu-id="d72e6-122">[ピッキング リストの印刷] チェックボックスをクリックします。</span><span class="sxs-lookup"><span data-stu-id="d72e6-122">Click the Print picking list checkbox.</span></span>
+11. <span data-ttu-id="d72e6-123">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d72e6-123">Click OK.</span></span>
+    * <span data-ttu-id="d72e6-124">これは、製造オーダーに使用される材料を示す印刷されたピッキング リストです。</span><span class="sxs-lookup"><span data-stu-id="d72e6-124">This is the printed picking list that shows the materials used for the production order.</span></span>  
+12. <span data-ttu-id="d72e6-125">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="d72e6-125">Close the page.</span></span>
 
-## <a name="validate-the-picking-list"></a><span data-ttu-id="611d6-126">ピッキング リストの検証</span><span class="sxs-lookup"><span data-stu-id="611d6-126">Validate the picking list</span></span>
-1. <span data-ttu-id="611d6-127">アクション ウィンドウで、[表示] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="611d6-127">On the Action Pane, click View.</span></span>
-2. <span data-ttu-id="611d6-128">[ピッキング リスト] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="611d6-128">Click Picking list.</span></span>
-3. <span data-ttu-id="611d6-129">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="611d6-129">In the list, find and select the desired record.</span></span>
-4. <span data-ttu-id="611d6-130">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="611d6-130">In the list, click the link in the selected row.</span></span>
-5. <span data-ttu-id="611d6-131">[編集] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="611d6-131">Click Edit.</span></span>
-6. <span data-ttu-id="611d6-132">[消費] フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="611d6-132">In the Consumption field, enter a number.</span></span>
-7. <span data-ttu-id="611d6-133">[転記] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="611d6-133">Click Post.</span></span>
-8. <span data-ttu-id="611d6-134">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="611d6-134">Click OK.</span></span>
-    * <span data-ttu-id="611d6-135">ピッキング リスト仕訳帳には、製造オーダーによって消費される材料が転記されます。</span><span class="sxs-lookup"><span data-stu-id="611d6-135">In the picking list journal, the materials consumed by the production order are posted.</span></span> <span data-ttu-id="611d6-136">見積数量と実際の消費量に差がある場合は、仕訳帳を転記する前に調整することができます。</span><span class="sxs-lookup"><span data-stu-id="611d6-136">Before posting the journal, you can make adjustments if there is a difference between the estimated quantity and the actual consumed quantity.</span></span>  
-9. <span data-ttu-id="611d6-137">[グリッド パネル] タブをクリックします。</span><span class="sxs-lookup"><span data-stu-id="611d6-137">Click the GridPanel tab.</span></span>
-10. <span data-ttu-id="611d6-138">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="611d6-138">Close the page.</span></span>
+## <a name="validate-the-picking-list"></a><span data-ttu-id="d72e6-126">ピッキング リストの検証</span><span class="sxs-lookup"><span data-stu-id="d72e6-126">Validate the picking list</span></span>
+1. <span data-ttu-id="d72e6-127">アクション ウィンドウで、[表示] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d72e6-127">On the Action Pane, click View.</span></span>
+2. <span data-ttu-id="d72e6-128">[ピッキング リスト] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d72e6-128">Click Picking list.</span></span>
+3. <span data-ttu-id="d72e6-129">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="d72e6-129">In the list, find and select the desired record.</span></span>
+4. <span data-ttu-id="d72e6-130">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="d72e6-130">In the list, click the link in the selected row.</span></span>
+5. <span data-ttu-id="d72e6-131">[編集] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d72e6-131">Click Edit.</span></span>
+6. <span data-ttu-id="d72e6-132">[消費] フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="d72e6-132">In the Consumption field, enter a number.</span></span>
+7. <span data-ttu-id="d72e6-133">[転記] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d72e6-133">Click Post.</span></span>
+8. <span data-ttu-id="d72e6-134">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d72e6-134">Click OK.</span></span>
+    * <span data-ttu-id="d72e6-135">ピッキング リスト仕訳帳には、製造オーダーによって消費される材料が転記されます。</span><span class="sxs-lookup"><span data-stu-id="d72e6-135">In the picking list journal, the materials consumed by the production order are posted.</span></span> <span data-ttu-id="d72e6-136">見積数量と実際の消費量に差がある場合は、仕訳帳を転記する前に調整することができます。</span><span class="sxs-lookup"><span data-stu-id="d72e6-136">Before posting the journal, you can make adjustments if there is a difference between the estimated quantity and the actual consumed quantity.</span></span>  
+9. <span data-ttu-id="d72e6-137">[グリッド パネル] タブをクリックします。</span><span class="sxs-lookup"><span data-stu-id="d72e6-137">Click the GridPanel tab.</span></span>
+10. <span data-ttu-id="d72e6-138">ページを閉じます。</span><span class="sxs-lookup"><span data-stu-id="d72e6-138">Close the page.</span></span>
 
-## <a name="verify-the-route-card-journal"></a><span data-ttu-id="611d6-139">工順カード仕訳帳の確認</span><span class="sxs-lookup"><span data-stu-id="611d6-139">Verify the route card journal</span></span>
-1. <span data-ttu-id="611d6-140">アクション ウィンドウで、[表示] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="611d6-140">On the Action Pane, click View.</span></span>
-2. <span data-ttu-id="611d6-141">[工順カード] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="611d6-141">Click Route card.</span></span>
-3. <span data-ttu-id="611d6-142">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="611d6-142">In the list, find and select the desired record.</span></span>
-4. <span data-ttu-id="611d6-143">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="611d6-143">In the list, click the link in the selected row.</span></span>
-5. <span data-ttu-id="611d6-144">[編集] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="611d6-144">Click Edit.</span></span>
-6. <span data-ttu-id="611d6-145">[時間] フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="611d6-145">In the Hours field, enter a number.</span></span>
-7. <span data-ttu-id="611d6-146">[転記] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="611d6-146">Click Post.</span></span>
-8. <span data-ttu-id="611d6-147">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="611d6-147">Click OK.</span></span>
-    * <span data-ttu-id="611d6-148">[工順カード仕訳帳] では、個々の工程にかかった時間が記録されます。</span><span class="sxs-lookup"><span data-stu-id="611d6-148">In the Route card journal, the time spent on the individual operations is recorded.</span></span> <span data-ttu-id="611d6-149">良品および不良品の数量をレポートできます。</span><span class="sxs-lookup"><span data-stu-id="611d6-149">Good and error quantity can also be reported.</span></span>  
-
+## <a name="verify-the-route-card-journal"></a><span data-ttu-id="d72e6-139">工順カード仕訳帳の確認</span><span class="sxs-lookup"><span data-stu-id="d72e6-139">Verify the route card journal</span></span>
+1. <span data-ttu-id="d72e6-140">アクション ウィンドウで、[表示] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d72e6-140">On the Action Pane, click View.</span></span>
+2. <span data-ttu-id="d72e6-141">[工順カード] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d72e6-141">Click Route card.</span></span>
+3. <span data-ttu-id="d72e6-142">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="d72e6-142">In the list, find and select the desired record.</span></span>
+4. <span data-ttu-id="d72e6-143">一覧で、選択された行のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="d72e6-143">In the list, click the link in the selected row.</span></span>
+5. <span data-ttu-id="d72e6-144">[編集] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d72e6-144">Click Edit.</span></span>
+6. <span data-ttu-id="d72e6-145">[時間] フィールドに数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="d72e6-145">In the Hours field, enter a number.</span></span>
+7. <span data-ttu-id="d72e6-146">[転記] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d72e6-146">Click Post.</span></span>
+8. <span data-ttu-id="d72e6-147">[OK] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d72e6-147">Click OK.</span></span>
+    * <span data-ttu-id="d72e6-148">[工順カード仕訳帳] では、個々の工程にかかった時間が記録されます。</span><span class="sxs-lookup"><span data-stu-id="d72e6-148">In the Route card journal, the time spent on the individual operations is recorded.</span></span> <span data-ttu-id="d72e6-149">良品および不良品の数量をレポートできます。</span><span class="sxs-lookup"><span data-stu-id="d72e6-149">Good and error quantity can also be reported.</span></span>  

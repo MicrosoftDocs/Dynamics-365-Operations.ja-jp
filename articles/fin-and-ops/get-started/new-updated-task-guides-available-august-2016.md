@@ -1,13 +1,13 @@
 ---
-title: "新規または更新されたタスク ガイド (2016 年 8 月)"
-description: "このトピックでは、Microsoft Dynamics AX の Microsoft (2016 年 8 月 - すべての言語) APQC 統合ライブラリにリリースされた新規または更新されたタスク ガイドを示します。 新規の「はじめに」ライブラリは、リリースされていません。"
+title: 新規または更新されたタスク ガイド (2016 年 8 月)
+description: このトピックでは、 Microsoft Dynamics AX の Microsoft (2016 年 8 月 - すべての言語) APQC 統合ライブラリにリリースされた新規または更新されたタスク ガイドを示します。 新規の「はじめに」ライブラリは、リリースされていません。
 author: josaw1
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -17,88 +17,86 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 4fac04d1ea028bae9323b7961e64f3e49b74e482
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "344642"
 ---
-
-# <a name="new-or-updated-task-guides-august-2016"></a><span data-ttu-id="56323-104">新規または更新されたタスク ガイド (2016 年 8 月)</span><span class="sxs-lookup"><span data-stu-id="56323-104">New or updated task guides (August 2016)</span></span>
+# <a name="new-or-updated-task-guides-august-2016"></a><span data-ttu-id="a7ed4-104">新規または更新されたタスク ガイド (2016 年 8 月)</span><span class="sxs-lookup"><span data-stu-id="a7ed4-104">New or updated task guides (August 2016)</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="56323-105">このトピックでは、Microsoft Dynamics AX の Microsoft (2016 年 8 月 - すべての言語) APQC 統合ライブラリにリリースされた新規または更新されたタスク ガイドを示します。</span><span class="sxs-lookup"><span data-stu-id="56323-105">This topic lists the new or updated Task guides that were released to the Microsoft (August 2016 - all languages) APQC Unified Library for Microsoft Dynamics AX.</span></span> <span data-ttu-id="56323-106">新規の「はじめに」ライブラリは、リリースされていません。</span><span class="sxs-lookup"><span data-stu-id="56323-106">No new Getting Started Library was released.</span></span>
+<span data-ttu-id="a7ed4-105">このトピックでは、 Microsoft Dynamics AX の Microsoft (2016 年 8 月 - すべての言語) APQC 統合ライブラリにリリースされた新規または更新されたタスク ガイドを示します。</span><span class="sxs-lookup"><span data-stu-id="a7ed4-105">This topic lists the new or updated Task guides that were released to the Microsoft (August 2016 - all languages) APQC Unified Library for Microsoft Dynamics AX.</span></span> <span data-ttu-id="a7ed4-106">新規の「はじめに」ライブラリは、リリースされていません。</span><span class="sxs-lookup"><span data-stu-id="a7ed4-106">No new Getting Started Library was released.</span></span>
 
-## <a name="task-guides-in-the-august-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a><span data-ttu-id="56323-107">Microsoft Dynamics AX 用の APQC 統合ライブラリに含まれるタスク ガイド (2016 年 8 月 - すべての言語)</span><span class="sxs-lookup"><span data-stu-id="56323-107">Task guides in the (August 2016 - all languages) APQC Unified Library for Microsoft Dynamics AX</span></span>
+## <a name="task-guides-in-the-august-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a><span data-ttu-id="a7ed4-107">Microsoft Dynamics AX 用の APQC 統合ライブラリに含まれるタスク ガイド (2016 年 8 月 - すべての言語) </span><span class="sxs-lookup"><span data-stu-id="a7ed4-107">Task guides in the (August 2016 - all languages) APQC Unified Library for Microsoft Dynamics AX</span></span>
 
-<span data-ttu-id="56323-108">APQC 統合ライブラリ (2016 年 8 月 - すべての言語) には、Dynamics AX プラットフォーム更新プログラム 2、2016 年 5 月に更新された Microsoft Dynamics AX アプリケーション、および 2016 年 2 月にリリースされた Microsoft Dynamics AX のヘルプの使用を想定したタスク ガイドが含まれています。</span><span class="sxs-lookup"><span data-stu-id="56323-108">The (August 2016 - all languages) APQC Unified Library contains the Task guides that are intended to be used for Help with Microsoft Dynamics AX platform update 2 (August 2016), the Dynamics AX May 2016 application update, and the Microsoft Dynamics AX February 2016 release.</span></span> <span data-ttu-id="56323-109">これらのリリースに関する詳細については、[新規または変更](whats-new-changed.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="56323-109">For more information about these releases, see [What's new or changed](whats-new-changed.md).</span></span> <span data-ttu-id="56323-110">ローカライズ版のタスク ガイドは、このライブラリで使用できます。</span><span class="sxs-lookup"><span data-stu-id="56323-110">Localized versions of the Task guides are available in this library.</span></span> <span data-ttu-id="56323-111">タスク ガイド ライブラリのヘルプ システムを接続する方法の詳細については、「[ヘルプの入門](help-overview.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="56323-111">For more information about how to connect the Help system to a Task guide library, see [Get started with Help](help-overview.md).</span></span>
+<span data-ttu-id="a7ed4-108">APQC 統合ライブラリ (2016 年 8 月 - すべての言語) には、Microsoft Dynamics AX プラットフォーム更新プログラム 2 (2016 年 8 月)、Dynamics AX 2016 年 5 月アプリケーション更新プログラム、および Microsoft Dynamics AX 2016 年 2 月リリースのヘルプの使用を想定したタスク ガイドが含まれています。</span><span class="sxs-lookup"><span data-stu-id="a7ed4-108">The (August 2016 - all languages) APQC Unified Library contains the Task guides that are intended to be used for Help with Microsoft Dynamics AX platform update 2 (August 2016), the Dynamics AX May 2016 application update, and the Microsoft Dynamics AX February 2016 release.</span></span> <span data-ttu-id="a7ed4-109">これらのリリースに関する詳細については、[新規または変更](whats-new-changed.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a7ed4-109">For more information about these releases, see [What's new or changed](whats-new-changed.md).</span></span> <span data-ttu-id="a7ed4-110">ローカライズ版のタスク ガイドは、このライブラリで使用できます。</span><span class="sxs-lookup"><span data-stu-id="a7ed4-110">Localized versions of the Task guides are available in this library.</span></span> <span data-ttu-id="a7ed4-111">タスク ガイド ライブラリのヘルプ システムを接続する方法の詳細については、「[ヘルプの入門](help-overview.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a7ed4-111">For more information about how to connect the Help system to a Task guide library, see [Get started with Help](help-overview.md).</span></span>
 
-### <a name="data-access"></a><span data-ttu-id="56323-112">データ アクセス</span><span class="sxs-lookup"><span data-stu-id="56323-112">Data access</span></span>
+### <a name="data-access"></a><span data-ttu-id="a7ed4-112">データ アクセス</span><span class="sxs-lookup"><span data-stu-id="a7ed4-112">Data access</span></span>
 
-| <span data-ttu-id="56323-113">BPM 明細行</span><span class="sxs-lookup"><span data-stu-id="56323-113">BPM line</span></span>           | <span data-ttu-id="56323-114">国/地域</span><span class="sxs-lookup"><span data-stu-id="56323-114">Country/region</span></span> |
+| <span data-ttu-id="a7ed4-113">BPM 明細行</span><span class="sxs-lookup"><span data-stu-id="a7ed4-113">BPM line</span></span>           | <span data-ttu-id="a7ed4-114">国/地域</span><span class="sxs-lookup"><span data-stu-id="a7ed4-114">Country/region</span></span> |
 |--------------------|----------------|
-| <span data-ttu-id="56323-115">バッチ ジョブの作成</span><span class="sxs-lookup"><span data-stu-id="56323-115">Create a batch job</span></span> | <span data-ttu-id="56323-116">グローバル</span><span class="sxs-lookup"><span data-stu-id="56323-116">Global</span></span>         |
+| <span data-ttu-id="a7ed4-115">バッチ ジョブの作成</span><span class="sxs-lookup"><span data-stu-id="a7ed4-115">Create a batch job</span></span> | <span data-ttu-id="a7ed4-116">グローバル</span><span class="sxs-lookup"><span data-stu-id="a7ed4-116">Global</span></span>         |
 
-### <a name="inventory"></a><span data-ttu-id="56323-117">棚卸資産</span><span class="sxs-lookup"><span data-stu-id="56323-117">Inventory</span></span>
+### <a name="inventory"></a><span data-ttu-id="a7ed4-117">棚卸資産</span><span class="sxs-lookup"><span data-stu-id="a7ed4-117">Inventory</span></span>
 
-| <span data-ttu-id="56323-118">BPM 明細行</span><span class="sxs-lookup"><span data-stu-id="56323-118">BPM line</span></span>                                | <span data-ttu-id="56323-119">国/地域</span><span class="sxs-lookup"><span data-stu-id="56323-119">Country/region</span></span> |
+| <span data-ttu-id="a7ed4-118">BPM 明細行</span><span class="sxs-lookup"><span data-stu-id="a7ed4-118">BPM line</span></span>                                | <span data-ttu-id="a7ed4-119">国/地域</span><span class="sxs-lookup"><span data-stu-id="a7ed4-119">Country/region</span></span> |
 |-----------------------------------------|----------------|
-| <span data-ttu-id="56323-120">有効在庫数の確認</span><span class="sxs-lookup"><span data-stu-id="56323-120">Check the availability of stock</span></span>         | <span data-ttu-id="56323-121">グローバル</span><span class="sxs-lookup"><span data-stu-id="56323-121">Global</span></span>         |
-| <span data-ttu-id="56323-122">着荷の品目プロファイルの設定</span><span class="sxs-lookup"><span data-stu-id="56323-122">Set up an item arrival overview profile</span></span> | <span data-ttu-id="56323-123">グローバル</span><span class="sxs-lookup"><span data-stu-id="56323-123">Global</span></span>         |
+| <span data-ttu-id="a7ed4-120">有効在庫数の確認</span><span class="sxs-lookup"><span data-stu-id="a7ed4-120">Check the availability of stock</span></span>         | <span data-ttu-id="a7ed4-121">グローバル</span><span class="sxs-lookup"><span data-stu-id="a7ed4-121">Global</span></span>         |
+| <span data-ttu-id="a7ed4-122">着荷の品目プロファイルの設定</span><span class="sxs-lookup"><span data-stu-id="a7ed4-122">Set up an item arrival overview profile</span></span> | <span data-ttu-id="a7ed4-123">グローバル</span><span class="sxs-lookup"><span data-stu-id="a7ed4-123">Global</span></span>         |
 
-### <a name="inventory-management"></a><span data-ttu-id="56323-124">在庫管理</span><span class="sxs-lookup"><span data-stu-id="56323-124">Inventory management</span></span>
+### <a name="inventory-management"></a><span data-ttu-id="a7ed4-124">在庫管理</span><span class="sxs-lookup"><span data-stu-id="a7ed4-124">Inventory management</span></span>
 
-| <span data-ttu-id="56323-125">BPM 明細行</span><span class="sxs-lookup"><span data-stu-id="56323-125">BPM line</span></span>              | <span data-ttu-id="56323-126">国/地域</span><span class="sxs-lookup"><span data-stu-id="56323-126">Country/region</span></span> |
+| <span data-ttu-id="a7ed4-125">BPM 明細行</span><span class="sxs-lookup"><span data-stu-id="a7ed4-125">BPM line</span></span>              | <span data-ttu-id="a7ed4-126">国/地域</span><span class="sxs-lookup"><span data-stu-id="a7ed4-126">Country/region</span></span> |
 |-----------------------|----------------|
-| <span data-ttu-id="56323-127">品質指示の設定</span><span class="sxs-lookup"><span data-stu-id="56323-127">Set up quality orders</span></span> | <span data-ttu-id="56323-128">グローバル</span><span class="sxs-lookup"><span data-stu-id="56323-128">Global</span></span>         |
+| <span data-ttu-id="a7ed4-127">品質指示の設定</span><span class="sxs-lookup"><span data-stu-id="a7ed4-127">Set up quality orders</span></span> | <span data-ttu-id="a7ed4-128">グローバル</span><span class="sxs-lookup"><span data-stu-id="a7ed4-128">Global</span></span>         |
 
-### <a name="procurement"></a><span data-ttu-id="56323-129">調達</span><span class="sxs-lookup"><span data-stu-id="56323-129">Procurement</span></span>
+### <a name="procurement"></a><span data-ttu-id="a7ed4-129">調達</span><span class="sxs-lookup"><span data-stu-id="a7ed4-129">Procurement</span></span>
 
-| <span data-ttu-id="56323-130">BPM 明細行</span><span class="sxs-lookup"><span data-stu-id="56323-130">BPM line</span></span>                                          | <span data-ttu-id="56323-131">国/地域</span><span class="sxs-lookup"><span data-stu-id="56323-131">Country/region</span></span> |
+| <span data-ttu-id="a7ed4-130">BPM 明細行</span><span class="sxs-lookup"><span data-stu-id="a7ed4-130">BPM line</span></span>                                          | <span data-ttu-id="a7ed4-131">国/地域</span><span class="sxs-lookup"><span data-stu-id="a7ed4-131">Country/region</span></span> |
 |---------------------------------------------------|----------------|
-| <span data-ttu-id="56323-132">一時仕入先に対する発注書の作成</span><span class="sxs-lookup"><span data-stu-id="56323-132">Create a purchase order for a one-time supplier</span></span>   | <span data-ttu-id="56323-133">グローバル</span><span class="sxs-lookup"><span data-stu-id="56323-133">Global</span></span>         |
-| <span data-ttu-id="56323-134">配送スケジュールと発注書の作成</span><span class="sxs-lookup"><span data-stu-id="56323-134">Create a purchase order with a delivery schedule</span></span>  | <span data-ttu-id="56323-135">グローバル</span><span class="sxs-lookup"><span data-stu-id="56323-135">Global</span></span>         |
-| <span data-ttu-id="56323-136">購買返品注文の作成</span><span class="sxs-lookup"><span data-stu-id="56323-136">Create a purchase return order</span></span>                    | <span data-ttu-id="56323-137">グローバル</span><span class="sxs-lookup"><span data-stu-id="56323-137">Global</span></span>         |
-| <span data-ttu-id="56323-138">リピート発注書の作成</span><span class="sxs-lookup"><span data-stu-id="56323-138">Create a repeat purchase order</span></span>                    | <span data-ttu-id="56323-139">グローバル</span><span class="sxs-lookup"><span data-stu-id="56323-139">Global</span></span>         |
-| <span data-ttu-id="56323-140">発注書に記載されている商品の受取の記録</span><span class="sxs-lookup"><span data-stu-id="56323-140">Record the receipt of goods on the purchase order</span></span> | <span data-ttu-id="56323-141">グローバル</span><span class="sxs-lookup"><span data-stu-id="56323-141">Global</span></span>         |
+| <span data-ttu-id="a7ed4-132">一時仕入先に対する発注書の作成</span><span class="sxs-lookup"><span data-stu-id="a7ed4-132">Create a purchase order for a one-time supplier</span></span>   | <span data-ttu-id="a7ed4-133">グローバル</span><span class="sxs-lookup"><span data-stu-id="a7ed4-133">Global</span></span>         |
+| <span data-ttu-id="a7ed4-134">配送スケジュールと発注書の作成</span><span class="sxs-lookup"><span data-stu-id="a7ed4-134">Create a purchase order with a delivery schedule</span></span>  | <span data-ttu-id="a7ed4-135">グローバル</span><span class="sxs-lookup"><span data-stu-id="a7ed4-135">Global</span></span>         |
+| <span data-ttu-id="a7ed4-136">購買返品注文の作成</span><span class="sxs-lookup"><span data-stu-id="a7ed4-136">Create a purchase return order</span></span>                    | <span data-ttu-id="a7ed4-137">グローバル</span><span class="sxs-lookup"><span data-stu-id="a7ed4-137">Global</span></span>         |
+| <span data-ttu-id="a7ed4-138">リピート発注書の作成</span><span class="sxs-lookup"><span data-stu-id="a7ed4-138">Create a repeat purchase order</span></span>                    | <span data-ttu-id="a7ed4-139">グローバル</span><span class="sxs-lookup"><span data-stu-id="a7ed4-139">Global</span></span>         |
+| <span data-ttu-id="a7ed4-140">発注書に記載されている商品の受取の記録</span><span class="sxs-lookup"><span data-stu-id="a7ed4-140">Record the receipt of goods on the purchase order</span></span> | <span data-ttu-id="a7ed4-141">グローバル</span><span class="sxs-lookup"><span data-stu-id="a7ed4-141">Global</span></span>         |
 
-### <a name="resource-and-activities"></a><span data-ttu-id="56323-142">リソースと活動</span><span class="sxs-lookup"><span data-stu-id="56323-142">Resource and activities</span></span>
+### <a name="resource-and-activities"></a><span data-ttu-id="a7ed4-142">リソースと活動</span><span class="sxs-lookup"><span data-stu-id="a7ed4-142">Resource and activities</span></span>
 
-| <span data-ttu-id="56323-143">BPM 明細行</span><span class="sxs-lookup"><span data-stu-id="56323-143">BPM line</span></span>                                                | <span data-ttu-id="56323-144">国/地域</span><span class="sxs-lookup"><span data-stu-id="56323-144">Country/region</span></span> |
+| <span data-ttu-id="a7ed4-143">BPM 明細行</span><span class="sxs-lookup"><span data-stu-id="a7ed4-143">BPM line</span></span>                                                | <span data-ttu-id="a7ed4-144">国/地域</span><span class="sxs-lookup"><span data-stu-id="a7ed4-144">Country/region</span></span> |
 |---------------------------------------------------------|----------------|
-| <span data-ttu-id="56323-145">生産フロー バージョンの有効化</span><span class="sxs-lookup"><span data-stu-id="56323-145">Activate a production flow version</span></span>                      | <span data-ttu-id="56323-146">グローバル</span><span class="sxs-lookup"><span data-stu-id="56323-146">Global</span></span>         |
-| <span data-ttu-id="56323-147">複数の活動に対するかんばんルールの作成</span><span class="sxs-lookup"><span data-stu-id="56323-147">Create a kanban rule for multiple activities</span></span>            | <span data-ttu-id="56323-148">グローバル</span><span class="sxs-lookup"><span data-stu-id="56323-148">Global</span></span>         |
-| <span data-ttu-id="56323-149">かんばん明細行イベントを使用してかんばんルールを作成</span><span class="sxs-lookup"><span data-stu-id="56323-149">Create a kanban rule using a kanban line event</span></span>          | <span data-ttu-id="56323-150">グローバル</span><span class="sxs-lookup"><span data-stu-id="56323-150">Global</span></span>         |
-| <span data-ttu-id="56323-151">最小の在庫イベントを使用してかんばんルールを作成</span><span class="sxs-lookup"><span data-stu-id="56323-151">Create a kanban rule using a minimum stock event</span></span>        | <span data-ttu-id="56323-152">グローバル</span><span class="sxs-lookup"><span data-stu-id="56323-152">Global</span></span>         |
-| <span data-ttu-id="56323-153">安全在庫仕訳帳を使用して最小補充を更新します。</span><span class="sxs-lookup"><span data-stu-id="56323-153">Use the safety stock journal to update minimum coverage</span></span> | <span data-ttu-id="56323-154">グローバル</span><span class="sxs-lookup"><span data-stu-id="56323-154">Global</span></span>         |
+| <span data-ttu-id="a7ed4-145">生産フロー バージョンの有効化</span><span class="sxs-lookup"><span data-stu-id="a7ed4-145">Activate a production flow version</span></span>                      | <span data-ttu-id="a7ed4-146">グローバル</span><span class="sxs-lookup"><span data-stu-id="a7ed4-146">Global</span></span>         |
+| <span data-ttu-id="a7ed4-147">複数の活動に対するかんばんルールの作成</span><span class="sxs-lookup"><span data-stu-id="a7ed4-147">Create a kanban rule for multiple activities</span></span>            | <span data-ttu-id="a7ed4-148">グローバル</span><span class="sxs-lookup"><span data-stu-id="a7ed4-148">Global</span></span>         |
+| <span data-ttu-id="a7ed4-149">かんばん明細行イベントを使用してかんばんルールを作成</span><span class="sxs-lookup"><span data-stu-id="a7ed4-149">Create a kanban rule using a kanban line event</span></span>          | <span data-ttu-id="a7ed4-150">グローバル</span><span class="sxs-lookup"><span data-stu-id="a7ed4-150">Global</span></span>         |
+| <span data-ttu-id="a7ed4-151">最小の在庫イベントを使用してかんばんルールを作成</span><span class="sxs-lookup"><span data-stu-id="a7ed4-151">Create a kanban rule using a minimum stock event</span></span>        | <span data-ttu-id="a7ed4-152">グローバル</span><span class="sxs-lookup"><span data-stu-id="a7ed4-152">Global</span></span>         |
+| <span data-ttu-id="a7ed4-153">安全在庫仕訳帳を使用して最小補充を更新します。</span><span class="sxs-lookup"><span data-stu-id="a7ed4-153">Use the safety stock journal to update minimum coverage</span></span> | <span data-ttu-id="a7ed4-154">グローバル</span><span class="sxs-lookup"><span data-stu-id="a7ed4-154">Global</span></span>         |
 
-### <a name="supplier-relationship-management"></a><span data-ttu-id="56323-155">仕入先関係管理</span><span class="sxs-lookup"><span data-stu-id="56323-155">Supplier relationship management</span></span>
+### <a name="supplier-relationship-management"></a><span data-ttu-id="a7ed4-155">仕入先関係管理</span><span class="sxs-lookup"><span data-stu-id="a7ed4-155">Supplier relationship management</span></span>
 
-| <span data-ttu-id="56323-156">BPM 明細行</span><span class="sxs-lookup"><span data-stu-id="56323-156">BPM line</span></span>                                                           | <span data-ttu-id="56323-157">国/地域</span><span class="sxs-lookup"><span data-stu-id="56323-157">Country/region</span></span> |
+| <span data-ttu-id="a7ed4-156">BPM 明細行</span><span class="sxs-lookup"><span data-stu-id="a7ed4-156">BPM line</span></span>                                                           | <span data-ttu-id="a7ed4-157">国/地域</span><span class="sxs-lookup"><span data-stu-id="a7ed4-157">Country/region</span></span> |
 |--------------------------------------------------------------------|----------------|
-| <span data-ttu-id="56323-158">特定の調達カテゴリに対する仕入先の承認</span><span class="sxs-lookup"><span data-stu-id="56323-158">Approve vendors for specific procurement categories</span></span>                | <span data-ttu-id="56323-159">グローバル</span><span class="sxs-lookup"><span data-stu-id="56323-159">Global</span></span>         |
-| <span data-ttu-id="56323-160">調達カタログの作成</span><span class="sxs-lookup"><span data-stu-id="56323-160">Create a procurement catalog</span></span>                                       | <span data-ttu-id="56323-161">グローバル</span><span class="sxs-lookup"><span data-stu-id="56323-161">Global</span></span>         |
-| <span data-ttu-id="56323-162">RFQ を使用する要求の作成</span><span class="sxs-lookup"><span data-stu-id="56323-162">Create a requisition that uses an RFQ</span></span>                              | <span data-ttu-id="56323-163">グローバル</span><span class="sxs-lookup"><span data-stu-id="56323-163">Global</span></span>         |
-| <span data-ttu-id="56323-164">RFQ のスコア方法を作成</span><span class="sxs-lookup"><span data-stu-id="56323-164">Create a scoring method for RFQs</span></span>                                   | <span data-ttu-id="56323-165">グローバル</span><span class="sxs-lookup"><span data-stu-id="56323-165">Global</span></span>         |
-| <span data-ttu-id="56323-166">仕入先銀行口座の作成</span><span class="sxs-lookup"><span data-stu-id="56323-166">Create a vendor bank account</span></span>                                       | <span data-ttu-id="56323-167">グローバル</span><span class="sxs-lookup"><span data-stu-id="56323-167">Global</span></span>         |
-| <span data-ttu-id="56323-168">購入ポリシーの作成</span><span class="sxs-lookup"><span data-stu-id="56323-168">Create purchasing policies</span></span>                                         | <span data-ttu-id="56323-169">グローバル</span><span class="sxs-lookup"><span data-stu-id="56323-169">Global</span></span>         |
-| <span data-ttu-id="56323-170">入札タイプ、および RFQ に対するスコア基準の作成</span><span class="sxs-lookup"><span data-stu-id="56323-170">Create solicitation types and scoring criteria for RFQs</span></span>            | <span data-ttu-id="56323-171">グローバル</span><span class="sxs-lookup"><span data-stu-id="56323-171">Global</span></span>         |
-| <span data-ttu-id="56323-172">誰かの代わりに製品注文のアクセス許可を設定する</span><span class="sxs-lookup"><span data-stu-id="56323-172">Set up permissions for ordering products on behalf of someone else</span></span> | <span data-ttu-id="56323-173">グローバル</span><span class="sxs-lookup"><span data-stu-id="56323-173">Global</span></span>         |
-| <span data-ttu-id="56323-174">調達カテゴリ階層に対するポリシーの設定</span><span class="sxs-lookup"><span data-stu-id="56323-174">Set up policies for procurement category hierarchies</span></span>               | <span data-ttu-id="56323-175">グローバル</span><span class="sxs-lookup"><span data-stu-id="56323-175">Global</span></span>         |
+| <span data-ttu-id="a7ed4-158">特定の調達カテゴリに対する仕入先の承認</span><span class="sxs-lookup"><span data-stu-id="a7ed4-158">Approve vendors for specific procurement categories</span></span>                | <span data-ttu-id="a7ed4-159">グローバル</span><span class="sxs-lookup"><span data-stu-id="a7ed4-159">Global</span></span>         |
+| <span data-ttu-id="a7ed4-160">調達カタログの作成</span><span class="sxs-lookup"><span data-stu-id="a7ed4-160">Create a procurement catalog</span></span>                                       | <span data-ttu-id="a7ed4-161">グローバル</span><span class="sxs-lookup"><span data-stu-id="a7ed4-161">Global</span></span>         |
+| <span data-ttu-id="a7ed4-162">RFQ を使用する要求の作成</span><span class="sxs-lookup"><span data-stu-id="a7ed4-162">Create a requisition that uses an RFQ</span></span>                              | <span data-ttu-id="a7ed4-163">グローバル</span><span class="sxs-lookup"><span data-stu-id="a7ed4-163">Global</span></span>         |
+| <span data-ttu-id="a7ed4-164">RFQ のスコア方法を作成</span><span class="sxs-lookup"><span data-stu-id="a7ed4-164">Create a scoring method for RFQs</span></span>                                   | <span data-ttu-id="a7ed4-165">グローバル</span><span class="sxs-lookup"><span data-stu-id="a7ed4-165">Global</span></span>         |
+| <span data-ttu-id="a7ed4-166">仕入先銀行口座の作成</span><span class="sxs-lookup"><span data-stu-id="a7ed4-166">Create a vendor bank account</span></span>                                       | <span data-ttu-id="a7ed4-167">グローバル</span><span class="sxs-lookup"><span data-stu-id="a7ed4-167">Global</span></span>         |
+| <span data-ttu-id="a7ed4-168">購入ポリシーの作成</span><span class="sxs-lookup"><span data-stu-id="a7ed4-168">Create purchasing policies</span></span>                                         | <span data-ttu-id="a7ed4-169">グローバル</span><span class="sxs-lookup"><span data-stu-id="a7ed4-169">Global</span></span>         |
+| <span data-ttu-id="a7ed4-170">入札タイプ、および RFQ に対するスコア基準の作成</span><span class="sxs-lookup"><span data-stu-id="a7ed4-170">Create solicitation types and scoring criteria for RFQs</span></span>            | <span data-ttu-id="a7ed4-171">グローバル</span><span class="sxs-lookup"><span data-stu-id="a7ed4-171">Global</span></span>         |
+| <span data-ttu-id="a7ed4-172">誰かの代わりに製品注文のアクセス許可を設定する</span><span class="sxs-lookup"><span data-stu-id="a7ed4-172">Set up permissions for ordering products on behalf of someone else</span></span> | <span data-ttu-id="a7ed4-173">グローバル</span><span class="sxs-lookup"><span data-stu-id="a7ed4-173">Global</span></span>         |
+| <span data-ttu-id="a7ed4-174">調達カテゴリ階層に対するポリシーの設定</span><span class="sxs-lookup"><span data-stu-id="a7ed4-174">Set up policies for procurement category hierarchies</span></span>               | <span data-ttu-id="a7ed4-175">グローバル</span><span class="sxs-lookup"><span data-stu-id="a7ed4-175">Global</span></span>         |
 
-### <a name="warehouse-and-transportation"></a><span data-ttu-id="56323-176">在庫および輸送</span><span class="sxs-lookup"><span data-stu-id="56323-176">Warehouse and transportation</span></span>
+### <a name="warehouse-and-transportation"></a><span data-ttu-id="a7ed4-176">在庫および輸送</span><span class="sxs-lookup"><span data-stu-id="a7ed4-176">Warehouse and transportation</span></span>
 
-| <span data-ttu-id="56323-177">BPM 明細行</span><span class="sxs-lookup"><span data-stu-id="56323-177">BPM line</span></span>                                                                    | <span data-ttu-id="56323-178">国/地域</span><span class="sxs-lookup"><span data-stu-id="56323-178">Country/region</span></span> |
+| <span data-ttu-id="a7ed4-177">BPM 明細行</span><span class="sxs-lookup"><span data-stu-id="a7ed4-177">BPM line</span></span>                                                                    | <span data-ttu-id="a7ed4-178">国/地域</span><span class="sxs-lookup"><span data-stu-id="a7ed4-178">Country/region</span></span> |
 |-----------------------------------------------------------------------------|----------------|
-| <span data-ttu-id="56323-179">タイプが発注書のタスクを完了するためのモバイル デバイスのメニュー項目を設定します。</span><span class="sxs-lookup"><span data-stu-id="56323-179">Set up a mobile device menu item for completing work of type Purchase order</span></span> | <span data-ttu-id="56323-180">グローバル</span><span class="sxs-lookup"><span data-stu-id="56323-180">Global</span></span>         |
+| <span data-ttu-id="a7ed4-179">タイプが発注書のタスクを完了するためのモバイル デバイスのメニュー項目を設定します。</span><span class="sxs-lookup"><span data-stu-id="a7ed4-179">Set up a mobile device menu item for completing work of type Purchase order</span></span> | <span data-ttu-id="a7ed4-180">グローバル</span><span class="sxs-lookup"><span data-stu-id="a7ed4-180">Global</span></span>         |
 
-## <a name="additional-resources"></a><span data-ttu-id="56323-181">その他のリソース</span><span class="sxs-lookup"><span data-stu-id="56323-181">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="a7ed4-181">その他のリソース</span><span class="sxs-lookup"><span data-stu-id="a7ed4-181">Additional resources</span></span>
 
-[<span data-ttu-id="56323-182">新しいタスク ガイド (2016 年 2 月)</span><span class="sxs-lookup"><span data-stu-id="56323-182">New Task guides (February 2016)</span></span>](new-task-guides-available-february-2016.md)
+[<span data-ttu-id="a7ed4-182">新しいタスク ガイド (2016 年 2 月)</span><span class="sxs-lookup"><span data-stu-id="a7ed4-182">New Task guides (February 2016)</span></span>](new-task-guides-available-february-2016.md)
 
-[<span data-ttu-id="56323-183">新規または更新されたタスク ガイド (2016 年 5 月)</span><span class="sxs-lookup"><span data-stu-id="56323-183">New or updated Task guides (May 2016)</span></span>](new-updated-task-guides-available-may-2016.md)
+[<span data-ttu-id="a7ed4-183">新規または更新されたタスク ガイド (2016 年 5 月)</span><span class="sxs-lookup"><span data-stu-id="a7ed4-183">New or updated Task guides (May 2016)</span></span>](new-updated-task-guides-available-may-2016.md)
 
-[<span data-ttu-id="56323-184">新規または更新されたタスク ガイド (2016 年 11 月)</span><span class="sxs-lookup"><span data-stu-id="56323-184">New or updated Task guides (November 2016)</span></span>](new-task-guides-november-2016.md)
-
+[<span data-ttu-id="a7ed4-184">新規または更新されたタスク ガイド (2016 年 11 月)</span><span class="sxs-lookup"><span data-stu-id="a7ed4-184">New or updated Task guides (November 2016)</span></span>](new-task-guides-november-2016.md)
