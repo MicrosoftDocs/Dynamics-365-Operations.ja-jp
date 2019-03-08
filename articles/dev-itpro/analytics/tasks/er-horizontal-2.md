@@ -1,13 +1,13 @@
---- 
-title: "ER 水平に拡張された範囲を使用して Excel のレポートに列を動的に追加する (第 2 部 - 形式の実行)"
-description: "次の手順は、システム管理者または電子レポートのロールに割り当てられたユーザーが、 OPENXML ワークシート (Excel) ファイル（要求された列が水平に展開される範囲として動的に作成される）としてのレポートを生成する電子レポート（ER）フォーマットをどのように設定するのか説明します。"
+---
+title: ER 水平に拡張された範囲を使用して Excel のレポートに列を動的に追加する (第 2 部 - 形式の実行)
+description: 次の手順は、システム管理者または電子レポートのロールに割り当てられたユーザーが、 OPENXML ワークシート (Excel) ファイル（要求された列が水平に展開される範囲として動的に作成される）としてのレポートを生成する電子レポート（ER）フォーマットをどのように設定するのか説明します。
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERSolutionTable, SysQueryForm
 audience: Application User
 ms.reviewer: kfend
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 33c1a3134659bb66a67166fec3d7f53af0aa4c6c
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "361064"
 ---
 # <a name="er-use-horizontally-expandable-ranges-to-dynamically-add-columns-in-excel-reports-part-2-run-format"></a>ER 水平に拡張された範囲を使用して Excel のレポートに列を動的に追加する (パート 2: 形式の実行)
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 10/16/2018
 
 これらの手順を完了するには、まず「水平に展開可能な範囲をER 使用してExcelレポートに動的に列を加える (パート1: デザインフォーマット」の手順を完了する必要があります。
 
-この手順は、Dynamics 365 for Operations、バージョン 1611 に追加された機能です。
+この手順は Dynamics 365 for Operations バージョン 1611 に追加された機能です。
 
 
 ## <a name="find-created-format"></a>作成されたフォーマットを検索する
@@ -50,6 +50,5 @@ ms.lasthandoff: 10/16/2018
     * 00057..00058  
 7. [OK] をクリックします。
 8. [OK] をクリックします。
-    * 生成された出荷を確認します。 新しく作成したExcel ファイルには、財務分析コードに対して選択された同じ数の列が含まれることに注意してください。 これらの列のレポートヘッダーは財務分析コードの名称を表します。 これらの列のトランザクションの明細行は財務分析コードを表します。 このレポートを実行し異なる分析コードを選択して、レポートが選択した分析コードの数または Dynamics 365 for Finance and Operations、Enterprise Edition インスタンスに構成した分析コードの数に依存していないことを確認します。  
-
+    * 生成された出荷を確認します。 新しく作成したExcel ファイルには、財務分析コードに対して選択された同じ数の列が含まれることに注意してください。 これらの列のレポートヘッダーは財務分析コードの名称を表します。 これらの列のトランザクションの明細行は財務分析コードを表します。 このレポートを実行し異なる分析コードを選択して、レポートが選択した分析コードの数または Dynamics 365 for Finance and Operations Enterprise Edition インスタンスに構成した分析コードの数に依存していないことを確認します。  
 

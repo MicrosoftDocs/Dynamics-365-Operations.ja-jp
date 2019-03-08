@@ -1,13 +1,13 @@
---- 
-title: "候補者採用手段の確認と配置"
-description: "空席を充填する見込みのある候補者のプールを探すことは難しい場合があり、特に複数の固有のスキルが職位に求められる場合に困難です。"
+---
+title: 候補者採用手段の確認と配置
+description: 空席を充填する見込みのある候補者のプールを探すことは難しい場合があり、特に複数の固有のスキルが職位に求められる場合に困難です。
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmSkillMapping, HcmJobLookup, HcmSkillMappingLine, HcmPersonCertificate, CCHTMLPrintPreview
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: df7956cfdc3c470b5e652b62e659060120cdd770
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 1eb6e6121d39f9fc089afe38354b96eb88e5501d
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "332728"
 ---
 # <a name="identify-and-deploy-candidate-selection-tools"></a>候補者採用手段の確認と配置
 
@@ -57,5 +57,4 @@ ms.lasthandoff: 09/29/2017
     * レポートでは、最適なマッチがレポートの先頭に一覧表示されます。  ギャップのある要素が一覧されていることを確認できます。  これは、スキル マッピングに表示されるレベルと、従業員に割り当てられたスキル レベルとの差です。  
 24. ページを閉じます。
 25. [保存] をクリックします。
-
 

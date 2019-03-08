@@ -1,13 +1,13 @@
---- 
-title: "書式設定のコンフィギュレーションを使用する、支払用の ER 生成の電子ドキュメント"
-description: "次の手順では、システム管理者または電子申告開発者の役割のユーザーが、支払処理の電子ドキュメントを生成する新しい電子申告 (ER) 形式のコンフィギュレーションを使用する方法を説明します。"
+---
+title: 書式設定のコンフィギュレーションを使用する、支払用の ER 生成の電子ドキュメント
+description: 次の手順では、システム管理者または電子申告開発者の役割のユーザーが、支払処理の電子ドキュメントを生成する新しい電子申告 (ER) 形式のコンフィギュレーションを使用する方法を説明します。
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendPaymMode, LedgerJournalTable, LedgerJournalTransVendPaym, BankAccountTableLookUp
 audience: Application User
 ms.reviewer: kfend
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: cf2ae8fb451eba1054bb94edbce009dcfa8c872c
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "348322"
 ---
 # <a name="er-generate-electronic-documents-for-payments-using-a-format-configuration"></a>書式設定のコンフィギュレーションを使用する、支払用の ER 生成の電子ドキュメント
 
@@ -81,5 +81,4 @@ ms.lasthandoff: 10/16/2018
 24. [OK] をクリックします。
 25. [OK] をクリックします。
     * XML 形式で作成した支払ファイルを分析します。 設計されたドキュメント レイアウトおよび定義された支払トランザクションの属性と比較します。  
-
 

@@ -1,13 +1,13 @@
---- 
-title: "業績の確認の作成"
-description: "この手順では、パフォーマンス レビューの作成方法を表示し、レビューの各セクションの目的について説明します。"
+---
+title: 業績の確認の作成
+description: この手順では、パフォーマンス レビューの作成方法を表示し、レビューの各セクションの目的について説明します。
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DefaultDashboard, EssWorkspace, HcmDiscussionNewDialog, HcmDiscussion, HcmDiscussionChangeSettings, HcmDiscussionAddGoalDialog, HcmTopicCreate, HcmMeasurementDetailDialog, HcmPerfJournalAdd
 audience: Application User
 ms.reviewer: rschloma
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: abd59b96a2e5dceb2492c2db2c617485b332fbd3
 ms.openlocfilehash: 437a63159f0333434175acce081fa4ff417c334b
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "338478"
 ---
 # <a name="create-a-performance-review"></a>業績の確認の作成
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-この手順では、パフォーマンス レビューの作成方法を表示し、レビューの各セクションの目的について説明します。 この手順は、デモ データ会社 USMF を使用して作成されました。 この手順は、Dynamics 365 for Operations、バージョン 1611 に追加された機能です。
+この手順では、パフォーマンス レビューの作成方法を表示し、レビューの各セクションの目的について説明します。 この手順は、デモ データ会社 USMF を使用して作成されました。 この手順は Dynamics 365 for Operations バージョン 1611 に追加された機能です。
 
 1. [従業員セルフ サービス] をクリックします。
 2. 新しいレビューを作成するには、[新しいレビュー] をクリックします。
@@ -79,5 +79,4 @@ ms.lasthandoff: 09/13/2018
     * レビューは実行ステータスに応じて、従業員およびマネージャーは、各目標またはコンピテンシーのコメントを追加できます。  
 42. [サインオフ] タブをクリックします。
     * 作業者およびマネージャーはレビューの取り消しが可能です。 すべての必要なサインオフが完了すると、ステータスは [完了] に変更され、それ以降は内容を変更することはできません。  
-
 

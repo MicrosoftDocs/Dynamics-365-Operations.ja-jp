@@ -1,13 +1,13 @@
---- 
-title: "特別償却の提案"
-description: "日本では、特定の条件下で特別償却が許可されます。"
+---
+title: 特別償却の提案
+description: 日本では、特定の条件下で特別償却が許可されます。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransAsset, SysQueryForm
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: d8929755858ce3a531a367ea18869cdc3761382b
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371145"
 ---
 # <a name="propose-special-depreciation"></a>特別償却の提案
 
@@ -70,5 +70,4 @@ ms.lasthandoff: 10/16/2018
 11. [OK] をクリックします。
 12. [OK] をクリックします。
 13. [転記] をクリックします。
-
 

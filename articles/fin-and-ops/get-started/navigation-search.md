@@ -1,13 +1,13 @@
 ---
-title: "ナビゲーション検索"
-description: "このトピックでは、検索機能を使用して Microsoft Dynamics 365 for Finance and Operations のページに移動する方法を説明します。"
+title: ナビゲーション検索
+description: このトピックでは、検索機能を使用して Microsoft Dynamics 365 for Finance and Operations で他のページに移動する方法を説明します。
 author: aneesmsft
 manager: AnnBe
 ms.date: 04/27/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 7c05098815c6b330cbb9c7f5ce886779927c6804
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "353014"
 ---
-
 # <a name="navigation-search"></a>ナビゲーション検索
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、検索機能を使用して Microsoft Dynamics 365 for Finance and Operations のページに移動する方法を説明します。
+このトピックでは、検索機能を使用して Microsoft Dynamics 365 for Finance and Operations で他のページに移動する方法を説明します。
 
 Finance および Operations は、幅広い業界や業種に機能を提供します。 アプリケーションには、さまざまなタスクを実行するのに役立ついくつかの領域とページが含まれています。 タスクを完了するために必要なページをすばやく見つけるには、ナビゲーション検索機能を使用します。
 
@@ -64,4 +63,3 @@ Finance および Operations は、幅広い業界や業種に機能を提供し
 ## <a name="development"></a>開発
 
 開発の観点からすれば、ナビゲーション検索機能は、メニュー項目の配置と検索結果の表示機能の間に遅延がないため、活用が非常に容易です。 メニュー項目は、ナビゲーション ウィンドウまたはダッシュボードにリンクされている場合、自動的に検索可能になります。
-

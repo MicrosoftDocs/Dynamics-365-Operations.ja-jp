@@ -1,13 +1,13 @@
 ---
-title: "ワークフローでの承認ステップのコンフィギュレーション"
-description: "このトピックでは、承認ステップのプロパティをコンフィギュレーションする方法について説明します。"
+title: ワークフローでの承認ステップのコンフィギュレーション
+description: このトピックでは、承認ステップのプロパティをコンフィギュレーションする方法について説明します。
 author: sericks007
 manager: AnnBe
 ms.date: 08/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8f52b6ffed7c1edb97c7a673cefbc8bf486ba831
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 813866d63f38f5865666bad96f6f3590716a93ad
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368056"
 ---
-
 # <a name="configure-approval-steps-in-a-workflow"></a>ワークフローでの承認ステップのコンフィギュレーション
 
 [!include [banner](../includes/banner.md)]
@@ -135,7 +134,7 @@ ms.lasthandoff: 08/09/2018
     </tr>
     <tr>
     <td>ユーザー</td>
-    <td>特定の Microsoft Dynamics 365 for Finance and Operations ユーザー</td>
+    <td>特定 Microsoft Dynamics 365 for Finance and Operations ユーザー</td>
     <td>
     <ol>
     <li><strong>ユーザー</strong> を選択したのち、<strong>ユーザー</strong> タブをクリックします。</li>
@@ -278,4 +277,3 @@ ms.lasthandoff: 08/09/2018
 
 5. エスカレーション パスに追加するユーザーごとに、ステップ 3～4 を繰り返します。 ユーザーの順序は、変更できます。
 6. エスカレーション パスに含まれるユーザーが、割り当てられた時間内に対応しない場合、システムによってドキュメントが自動的に処理されます。 システムによる処理を指定するには、**アクション**行を選択し、**アクションの終了**タブでアクションを選択します。
-

@@ -1,13 +1,13 @@
---- 
-title: "買掛金請求書照合の検証の設定"
-description: "このレコードでは、USMF デモ会社を使用します。"
+---
+title: 買掛金請求書照合の検証の設定
+description: このレコードでは、USMF デモ会社を使用します。
 author: abruer
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendParameters
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 7a26a057b524f162e4b288b88e8c30f7c5db7a45
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "346850"
 ---
 # <a name="set-up-accounts-payable-invoice-matching-validation"></a>買掛金請求書照合の検証の設定
 
@@ -50,5 +50,4 @@ ms.lasthandoff: 10/16/2018
 11. [諸費用の照合] セクションの展開を切り替えます。
 12. 発注書情報に基づいて、実際の請求金額を予定請求金額と照合するには、[諸費用の照合] チェック ボックスをオンにします。
 13. ページを閉じます。
-
 

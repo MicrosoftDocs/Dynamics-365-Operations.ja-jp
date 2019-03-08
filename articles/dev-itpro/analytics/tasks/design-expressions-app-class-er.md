@@ -1,13 +1,13 @@
---- 
-title: "アプリケーション クラスのメソッドを呼び出す ER 式の設計"
-description: "このガイドは、ER の式で必要なアプリケーション クラスのメソッドを呼び出すことによって、電子申告 (ER) コンフィギュレーションで既存のアプリケーション ロジックを再利用する方法に関する情報を提供します。"
+---
+title: アプリケーション クラスのメソッドを呼び出す ER 式の設計
+description: このガイドは、ER の式で必要なアプリケーション クラスのメソッドを呼び出すことによって、電子申告 (ER) コンフィギュレーションで既存のアプリケーション ロジックを再利用する方法に関する情報を提供します。
 author: NickSelin
 manager: AnnBe
 ms.date: 12/12/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: fdacd852eeed33b443a3c79b96fc4c4af04bb6b2
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "357246"
 ---
 # <a name="design-er-expressions-to-call-application-class-methods"></a>アプリケーション クラスのメソッドを呼び出す ER 式の設計
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 08/09/2018
 
 1. [組織管理] > [ワークスペース] > [電子申告] の順に移動します。
     * サンプル会社 Litware, Inc. のコンフィギュレーション プロバイダーが使用可能であり、アクティブとしてマークされていることを確認します。 このコンフィギュレーション プロバイダーが表示されない場合は、「コンフィギュレーション プロバイダーの作成および有効なプロバイダーとしてのマーク付け」という手順のステップを完了する必要があります。   
-    * アプリケーション データ更新のために受取口座取引明細書を解析するプロセスを設計しているとしましょう。 受取口座取引明細書が、IBAN コードを含んだテキスト ファイルとして届きます。 インポート プロセスの口座取引明細書の一部として、Dynamics 365 for Finance and Operations ですでに利用可能なロジックを使用して、この IBAN コードの正確性を検証する必要があります。   
+    * アプリケーション データ更新のために受取口座取引明細書を解析するプロセスを設計しているとしましょう。 受取口座取引明細書が、IBAN コードを含んだテキスト ファイルとして届きます。 口座取引明細書のインポート プロセスの一部として、Dynamics 365 for Finance and Operations ですでに利用可能なロジックを使用して、この IBAN コードの正確性を検証する必要があります。   
 
 ## <a name="import-a-new-er-model-configuration"></a>新しい ER モデル コンフィギュレーションのインポート
 1. 一覧で、目的のレコードを見つけ、選択します。
@@ -103,7 +103,7 @@ ms.lasthandoff: 08/09/2018
     * データ モデルへのマッピング  
 6. [保存] をクリックします。
 7. [デザイナー] をクリックします。
-8. ツリーで、[Dynamics 365 for Operations\Class] を選択します。
+8. ツリーで、「Dynamics 365 for Operations\Class」を選択します。
 9. [ルートの追加] をクリックします。
     * IBAN コード検証のために既存のアプリケーション ロジックを呼び出すための新しいデータ ソースを追加します。  
 10. [名称] フィールドで、「check_codes」と入力します。
@@ -157,5 +157,4 @@ ms.lasthandoff: 08/09/2018
     * [参照] をクリックし、以前ダウンロードした SampleIncomingMessage.txt ファイルに移動します。  
 2. [OK] をクリックします。
     * 選択ファイルからインポートされてデータ モデルにポートされたデータを表すXML 書式の出力を確認します。 インポートされた TXT ファイルの 3 つの行のみが処理されたことに注意してください。 有効でない明細行 4 の IBAN コードはスキップされ、情報ログにエラー メッセージが表示されます。  
-
 

@@ -1,13 +1,13 @@
 ---
-title: "ワークフローの作成"
-description: "このトピックでは、ワークフローの作成方法を説明します。"
+title: ワークフローの作成
+description: このトピックでは、ワークフローの作成方法を説明します。
 author: sericks007
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WorkflowSelectTemplateRnr, WorkflowTableListPageRnr
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
+ms.openlocfilehash: 7d4a3c5e12b226a7d801d8db9abcbd15738c1ce0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 0edf6f1a97b3bbd074168a3cb8bb5c2375492b71
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "353359"
 ---
-
 # <a name="create-workflows"></a>ワークフローの作成
 
 [!include [banner](../includes/banner.md)]
@@ -34,7 +33,7 @@ ms.lasthandoff: 08/09/2018
 
 ## <a name="open-the-workflow-editor"></a>ワークフロー エディターを開く
 
-使用している Microsoft Dynamics 365 for Finance and Operations モジュールで、作成できるワークフローのタイプが決まります。 次の手順に従って、作成するワークフローのタイプを選択し、ワークフロー エディターを開きます。
+作成可能なワークフローのタイプは、使用している Microsoft Dynamics 365 for Finance and Operations モジュールによって決まります。 次の手順に従って、作成するワークフローのタイプを選択し、ワークフロー エディターを開きます。
 
 1. 新しいワークフローを作成するモジュールを開きます。 たとえば、購買要求ワークフローを作成するには、**調達**をクリックします。
 2. **設定** &gt; **\[モジュール名\] ワークフロー** の順にクリックします。
@@ -85,4 +84,3 @@ ms.lasthandoff: 08/09/2018
 
     - ワークフローのこのバージョンを有効にするには、**新しいバージョンの有効化**をクリックします。 ワークフローが有効な場合は、ユーザーが、処理するドキュメントをワークフローに送信できます。
     - このバージョンを有効にしない場合は、**新しいバージョンを有効にしない**をクリックします。 ワークフローは後で有効にすることができます。
-

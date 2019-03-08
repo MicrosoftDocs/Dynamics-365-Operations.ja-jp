@@ -1,14 +1,14 @@
 ---
-title: "CFO ワークスペースへの財務分析コードの追加"
-description: "このトピックでは、CFO ワークスペースに財務分析コードを追加し、それにより元帳および予算のレポートを使用できるようにする方法を説明します。"
+title: CFO ワークスペースへの財務分析コードの追加
+description: このトピックでは、CFO ワークスペースに財務分析コードを追加し、それにより元帳および予算のレポートを使用できるようにする方法を説明します。
 author: aprilolson
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -18,24 +18,23 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: a15414eff99751d4e77e5b3bf315a556efb7ad5d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 5faefe5da8c3a64987a38ebef92eb87049ebe874
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "332682"
 ---
-
 # <a name="add-financial-dimensions-to-the-cfo-workspace"></a>CFO ワークスペースへの財務分析コードの追加
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、最高財務責任者 (CFO) ワークスペースに財務分析コードを追加し、それにより元帳および予算のレポートを使用できるようにする方法を説明します。 CFO ワークスペースには、[概要] タブと [財務] タブがあります。これら 2 つのタブ上のレポートは、LedgerActivityMeasure および BudgetActivityMeasure という 2 つの措置によってサポートされています。 Microsoft Dynamics 365 for Finance and Operations、Enterprise edition (2017 年 7 月) では、それら 2 つの措置と DimensionCombinationEntity エンティティの間にリレーションがあります。 したがって、分析コードを選択できます。
+このトピックでは、最高財務責任者 (CFO) ワークスペースに財務分析コードを追加し、それにより元帳および予算のレポートを使用できるようにする方法を説明します。 CFO ワークスペースには、**概要**タブと**財務**タブがあります。これら 2 つのタブ上のレポートは、LedgerActivityMeasure および BudgetActivityMeasure という 2 つの措置によってサポートされています。 Microsoft Dynamics 365 for Finance and Operations、Enterprise edition (2017 年 7 月) には、これら 2 つの措置と DimensionCombinationEntity エンティティの間に関係があります。 したがって、分析コードを選択できます。
 
 1. Finance and Operations の **エンティティ格納** ページで、**LedgerActivityMeasure** および **BudgetActivityMeasure** 措置を更新します。
-2. Microsoft Visual Studioで、アプリケーション エクスプ ローラーを開き、**LedgerCFO**を検索します。
+2. Microsoft Visual Studio で、アプリケーション エクスプローラーを開き、**LedgerCFO** を検索します。
 3. **リソース**で、**LedgerCFOWorkspacePBIX**を開きます。
-4. Microsoft Power BI Desktop でリソースを開く場合、**データの取得**を選択し、**SQL Server データベース**を選択し、次に **接続**を選択します。
+4. Microsoft Power BI Desktop でリソースを開く場合、**データの取得**を選択し、**SQL Server データベース**を選択し、**接続**を選択します。
 5. サーバー名を入力し、**AxDW** をデータベースとして入力します。 **DirectQuery**を選択し **OK**を選択します。
 6. **LedgerActivityMeasure\_DimensionCombination**を検索して選択し、**読み込み**を選択します。
 
@@ -57,4 +56,3 @@ ms.lasthandoff: 11/03/2017
 16. プロジェクトを構築して、結果を表示するアプリケーションを開きます。
 
     [![完了済ワークスペース](./media/workspace.png)](./media/workspace.png)
-

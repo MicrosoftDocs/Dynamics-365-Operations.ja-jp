@@ -1,13 +1,13 @@
 ---
-title: "製品コンフィギュレーション モデルでの式の制約とテーブルの制約"
-description: "このトピックでは、式の制約およびテーブル制約の使用について説明します。 制約は、販売注文、販売見積、発注書、または製造オーダーのための製品をコンフィギュレーションするときに選択できる属性値を制御します。 制約の作成方法に基づいて、式の制約またはテーブル制約を使用できます。"
+title: 製品コンフィギュレーション モデルでの式の制約とテーブルの制約
+description: このトピックでは、式の制約およびテーブル制約の使用について説明します。 制約は、販売注文、販売見積、発注書、または製造オーダーのための製品をコンフィギュレーションするときに選択できる属性値を制御します。 制約の作成方法に基づいて、式の制約またはテーブル制約を使用できます。
 author: cvocph
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PCGlobalTableConstraintEdit, PCProductConfigurationModelDetails, PCTableConstraintAttachAttributeTree, PCTableConstraintDefinition
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 88d52031f4c916f5ec3e970f38864977e69a9d9a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: b6b5b7e7894cb74e33e08893934b3eaede957556
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "356648"
 ---
-
 # <a name="expression-constraints-and-table-constraints-in-product-configuration-models"></a>製品コンフィギュレーション モデルでの式の制約とテーブルの制約
 
 [!include [banner](../includes/banner.md)]
@@ -223,7 +222,7 @@ ms.lasthandoff: 05/08/2018
 |        (x)        |                           かっこは既定の優先順位より優先されます。                            |
 
 ## <a name="why-arent-my-expression-constraints-validated-correctly"></a>式の制約がなぜ正しく検証されないのですか。
-製品コンフィギュレーション モデルの属性、コンポーネント、またはサブコンポーネントのソルバー名として予約済みのキーワードは使用できません。 ここでは、使用できない予約済みキーワードの一覧を示します。
+製品コンフィギュレーション モデルの属性、コンポーネント、またはサブコンポーネントのソルバー名として予約済みのキーワードは使用できません。ここでは、使用できない予約済みキーワードの一覧を示します:
 
 -   シーリング
 -   要素
@@ -252,7 +251,6 @@ ms.lasthandoff: 05/08/2018
 [製品コンフィギュレーション モデルへ式の制約の作成 (タスク ガイド)](tasks/add-expression-constraint-product-configuration-model.md)
 
 [製品コンフィギュレーション モデルへの計算の追加 (タスク ガイド)](tasks/add-calculation-product-configuration-model.md)
-
 
 
 

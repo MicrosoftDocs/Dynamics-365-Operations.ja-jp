@@ -1,32 +1,31 @@
 ---
-title: "標準原価の前提条件"
-description: "このトピックでは、標準原価を使用するための基本的な手順について説明します。"
+title: 標準原価の前提条件
+description: このトピックでは、標準原価を使用するための基本的な手順について説明します。
 author: AndersGirke
 manager: AnnBe
 ms.date: 01/17/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventStdCostConv, CostingVersion
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
 ms.openlocfilehash: d5a4a4e49ef1cee923011ddab24497c65f85c1e3
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "359086"
 ---
-
 # <a name="prerequisites-for-standard-costs"></a>標準原価の前提条件
 
 [!include [banner](../includes/banner.md)]
@@ -81,4 +80,3 @@ ms.lasthandoff: 08/09/2018
 
 - [Dynamics 365 for Finance and Operations で直接材料の標準原価を設定する方法](https://financefunction.tech/2018/06/07/how-to-set-up-standard-costs-for-direct-materials-in-dynamics-365-for-finance-and-operations)
 - [Dynamics 365 for Finance and Operations での標準直接人件費](https://financefunction.tech/2018/07/16/standard-direct-labor-cost-in-dynamics-365-for-finance-and-operations)
-

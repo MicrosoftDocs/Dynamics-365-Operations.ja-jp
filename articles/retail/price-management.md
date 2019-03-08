@@ -1,14 +1,14 @@
 ---
-title: "小売販売の価格管理"
-description: "このトピックでは、Microsoft Dynamics 365 for Retail での販売価格を作成および管理するための概念について説明します。"
+title: 小売販売の価格管理
+description: このトピックでは、Microsoft Dynamics 365 for Retail で販売価格を作成および管理するための概念について説明します。
 author: ShalabhjainMSFT
 manager: AnnBe
 ms.date: 04/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-retail
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
@@ -17,19 +17,18 @@ ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 28a095588bd3c312a2d1c4b83e668487a209077f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 6da38f69abe72665fc79a43e0e163a856f9ee34d
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "362145"
 ---
-
-# <a name="retail-sales-price-management"></a>小売販売の価格管理
+# <a name="retail-sales-price-management"></a>Retail 販売価格の管理
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Retail での販売価格を作成および管理する手順についての情報を提供します。 このプロセスに含まれる概念、および販売価格のさまざまなコンフィギュレーション オプションへの影響に焦点を当てます。
+このトピックでは、Microsoft Dynamics 365 for Retail における販売価格の作成と管理のプロセスについて情報を提供します。 このプロセスに含まれる概念、および販売価格のさまざまなコンフィギュレーション オプションへの影響に焦点を当てます。
 
 ## <a name="terminology"></a>用語
 
@@ -54,7 +53,7 @@ ms.lasthandoff: 08/09/2018
 
 価格グループを作成するときに、小売エンティティの複数のタイプ用に単一の価格グループを使用するべきではありません。 それ以外の場合、なぜ特定の価格または割引がトランザクションに適用されるかを特定することは難しくなります。
 
-図にある赤い点線は、Retail がコア顧客に直接設定された価格グループの Microsoft Dynamics 365 コア機能をサポートすることを示します。 ただし、この場合は、販売価格の売買契約のみを取得します。 顧客固有の価格を適用する場合は、顧客に直に価格グループを設定しないようお勧めします。 代わりに、所属を使用する必要があります。
+図にある赤い点線は、Retail が顧客に直接設定された価格グループのコアな Microsoft Dynamics 365 機能をサポートすることを示します。 ただし、この場合は、販売価格の売買契約のみを取得します。 顧客固有の価格を適用する場合は、顧客に直に価格グループを設定しないようお勧めします。 代わりに、所属を使用する必要があります。
 
 次のセクションでは、価格グループを使用する際に特徴的価格を設定するのに使用できる、小売エンティティに関する詳細情報を提供します。 これらすべてのエンティティの価格および割引のコンフィギュレーションには 2 つの手順があります。 これらの手順は、いずれかの順序で実行できます。 ただし、まず論理的な順序がエンティティの価格グループに設定されます。それはこの手順が実装時に行われる 1 回だけの設定である可能性が高いからです。 次に、価格と割引が作成され、それらの価格および割引に個別に価格グループを設定できます。
 
@@ -149,7 +148,7 @@ Microsoft Dynamics 365 では、次の 3 つの箇所で、商品の価格を設
 
 ### <a name="sales-price-trade-agreement"></a>販売価格の売買契約
 
-売買契約仕訳帳を使用することにより、各商品の販売価格の売買契約を作成できます。 Microsoft Dynamics 365 では、販売価格の売買契約の 3 つの顧客スコープがあります: **テーブル**、**グループ**、および **すべて**。 顧客スコープは、特定の販売価格の売買契約が適用される顧客を決定します。
+売買契約仕訳帳を使用することにより、各商品の販売価格の売買契約を作成できます。 Microsoft Dynamics 365 では、販売価格の売買契約の 3 つの顧客スコープがあります: **テーブル**、**グループ**、および**すべて**。 顧客スコープは、特定の販売価格の売買契約が適用される顧客を決定します。
 
 **テーブル** 販売価格の売買契約は、売買契約に直接設定されている単一の顧客に対するものです。 このシナリオは、一般的な企業と顧客間 (B2C) シナリオではありません。 ただし、そうなる場合、価格を決定する際に小売価格決定エンジンは **テーブル** 売買契約を使用します。
 
@@ -232,4 +231,3 @@ Microsoft Dynamics 365 で販売価格を設定する場合、設定する価格
 
 - 価格は、製品マスター価格に最も限定的なバリアント価格から最も限定的でないバリアント価格の順に、製品分析コードに基づきます。 2 つの製品分析コード (たとえば、色やサイズ) を使用して設定される価格は、1 つだけの製品分析コード (たとえば、サイズ) を使用して設定される価格の前に使用されます。
 - 価格および割引を管理するため、同じ価格グループを使用できます。
-

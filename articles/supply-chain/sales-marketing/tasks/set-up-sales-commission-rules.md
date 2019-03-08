@@ -1,13 +1,13 @@
---- 
-title: "販売コミッション ルールの設定"
-description: "この手順は、販売コミッションの計算および追跡を設定して有効にする方法を示します。"
+---
+title: 販売コミッション ルールの設定
+description: この手順は、販売コミッションの計算および追跡を設定して有効にする方法を示します。
 author: omulvad
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CommissionCustomerGroup, CommissionItemGroup, CommissionSalesGroup, CommissionSalesMember, DirPartyLookup, CommissionCalc, InventPosting, CustTable, EcoResProductDetailsExtended
 audience: Application User
 ms.reviewer: kfend
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 0ed7ec4ca74e4b6863ab2feff7f20de319789038
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 8d81765884f741443d1c0f5b0cb8bc545945e1a1
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "334223"
 ---
 # <a name="set-up-sales-commission-rules"></a>販売コミッション ルールの設定
 
@@ -97,5 +97,4 @@ ms.lasthandoff: 09/29/2017
 15. 販売セクションを展開します。
 16. [コミッション グループ] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。
 17. 一覧で、以前に作成したコミッショングループを選択します。
-
 

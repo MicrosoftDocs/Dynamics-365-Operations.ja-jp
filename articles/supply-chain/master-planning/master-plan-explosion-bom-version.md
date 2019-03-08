@@ -1,13 +1,13 @@
 ---
-title: "BOM バージョンの展開"
-description: "この記事では、部品表 (BOM) のバージョンの展開を含むマスター プランのシナリオを説明します。"
+title: BOM バージョンの展開
+description: この記事では、部品表 (BOM) のバージョンの展開を含むマスター プランのシナリオを説明します。
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReqTransExplosion
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 4f3c800d96805df38a2e31018f2d6c305e3ed7da
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 80c9fa6ec98bd2cdc3edd5329e2a619ef9cc8cb2
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "353911"
 ---
-
 # <a name="explosion-of-a-bom-version"></a>BOM バージョンの展開
 
 [!include [banner](../includes/banner.md)]
@@ -46,7 +45,6 @@ BOM バージョンの需要展開は、特定サイト (および場合によ�
 [マスター プラン - BOM バージョンを決定する方法](master-plan-bom-version-determined.md)
 
 [マスタ プランとマルチサイト機能](master-plan-multisite-functionality.md)
-
 
 
 

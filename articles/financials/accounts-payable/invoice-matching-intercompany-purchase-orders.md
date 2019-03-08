@@ -1,13 +1,13 @@
 ---
-title: "請求書照合と会社間発注"
-description: "会社間の売買取引に関連する購買側の法人が、買掛金勘定の請求書照合を使用する設定になる場合があります。 その場合、会社間の売買取引と買掛金勘定の請求書照合の両方の転記要件が合っていないと、会社間仕入先請求書は転記できません。"
+title: 請求書照合と会社間発注
+description: 会社間の売買取引に関連する購買側の法人が、買掛金勘定の請求書照合を使用する設定になる場合があります。 その場合、会社間の売買取引と買掛金勘定の請求書照合の両方の転記要件が合っていないと、会社間仕入先請求書は転記できません。
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchLineMatchingPolicy
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 68b586f8afe7557bf6edee3eca0261d1e9cac0f2
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 3d0eb5c19c07313f4d4c0bac1b9c48375446afd9
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "357568"
 ---
-
 # <a name="invoice-matching-and-intercompany-purchase-orders"></a>請求書照合と会社間発注
 
 [!include [banner](../includes/banner.md)]
@@ -66,7 +65,6 @@ ms.lasthandoff: 11/03/2017
 2.  Fabrikam Sales で ICSO999 の請求書を更新します。 品目が在庫切れで、まだ受領されていないので、転記は失敗します。 したがって、財務情報は更新できません。
 3.  Fabrikam Sales で、品目の受領を登録し、ICSO999 の梱包明細を転記します。 ICPO333 の製品受領書が Fabrikam Purchase に自動的に転記されます。 Fabrikam Purchase の品目 B-R14 の受領数量は 100 に変化します。
 4.  Fabrikam Sales で ICSO999 の請求書を更新します。 両方の法人で転記が成功します。 Fabrikam Purchase の品目 B-R14 の購買済数量は 100 に変化します。
-
 
 
 

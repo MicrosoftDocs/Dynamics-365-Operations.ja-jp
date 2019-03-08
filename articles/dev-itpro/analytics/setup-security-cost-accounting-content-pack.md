@@ -1,13 +1,13 @@
 ---
-title: "原価会計分析 Power BI コンテンツのセキュリティ設定"
-description: "このトピックでは、Microsoft Power BI で行レベルのセキュリティに原価会計のアクセス レベルのセキュリティを反映する方法を説明します。 この機能により、ユーザーがアクセス権を持つ Power BI データのみが表示されるようになります。"
+title: 原価会計分析の Power BI コンテンツのセキュリティ設定
+description: このトピックでは、Microsoft Power BI で行レベルのセキュリティに原価会計のアクセス レベルのセキュリティを反映する方法を説明します。 この機能により、ユーザーがアクセス権を持つ Power BI データのみが表示されるようになります。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: d1cd378a58d4a4fe4388238f97e84a8e2b07937b
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "352876"
 ---
-
-# <a name="set-up-security-for-the-cost-accounting-analysis-power-bi-content"></a>原価会計分析 Power BI コンテンツのセキュリティ設定
+# <a name="set-up-security-for-the-cost-accounting-analysis-power-bi-content"></a>原価会計分析の Power BI コンテンツのセキュリティ設定
 
 [!include [banner](../includes/banner.md)]
 
@@ -33,13 +32,13 @@ ms.lasthandoff: 08/13/2018
 
 ## <a name="overview"></a>概要
 
-**原価会計分析** Microsoft Power BI コンテンツは、Power BI 行レベルのセキュリティを使用してユーザーのアクセスを制限します。 セキュリティは、原価会計パラメーターで設定されたアクセス レベルの組織階層に基づきます。 **原価会計分析** Power BI コンテンツに関する詳細については、[原価会計分析 Power BI コンテンツ](cost-accounting-analysis-content-pack.md) を参照してください。
+**原価会計分析** Microsoft Power BI コンテンツは、Power BI 行レベルのセキュリティを使用してユーザーのアクセスを制限します。 セキュリティは、原価会計パラメーターで設定されたアクセス レベルの組織階層に基づきます。 **原価会計分析** Power BI コンテンツに関する詳細については、「[原価会計分析 Power BI コンテンツ](cost-accounting-analysis-content-pack.md)」を参照してください。
 
-## <a name="setup"></a>段取り
+## <a name="setup"></a>セットアップ
 Power BI にアクセス レベルのセキュリティを反映するには、Power BI コンテンツの所有者は、次の手順に従います。
 
 > [!NOTE]
-> **原価会計分析** Power BI コンテンツを公開するユーザーが自動的に所有者になります。 所有者のみが Power BI のセキュリティを設定できます。 また、所有者が PowerBI.com で他のユーザーを追加するまで、所有者以外は **原価会計分析** Power BI コンテンツ内のデータを参照することはできません。
+> **原価会計分析** Power BI コンテンツを公開するユーザーが自動的に所有者になります。 所有者のみが Power BI のセキュリティを設定できます。 また、所有者が PowerBI.com で他のユーザーを追加するまで、所有者以外は**原価会計分析** Power BI コンテンツ内のデータを参照することはできません。
 
 1. Power BI に定義ファイルを公開します。
 2. PowerBI.com にサインインします。
@@ -61,8 +60,7 @@ Power BI にアクセス レベルのセキュリティを反映するには、P
 原価会計のアクセス レベルのセキュリティに更新が行われ、それらの更新を Power BI に反映したい場合、**原価会計分析** Power BI コンテンツのエンティティ格納を更新する必要があります。 Finance and Operations からエンティティ格納の更新を完了後、PowerBI.com のコンポーネントを更新する必要があります。 エンティティ格納の更新方法の詳細については、[エンティティ格納の更新](power-bi-integration-entity-store.md#update-entity-store) を参照してください。 **原価会計分析** Power BI コンテンツの所有者は、新しいユーザーに組織階層へのアクセスが許可された場合にもエンティティ格納の更新を行う必要があります。 また、所有者はその新たなユーザーを PowerBI.com の **原価オブジェクト コントローラー** ロールに追加して、行レベルのセキュリティが適用されるようにする必要があります。
 
 ## <a name="disabling-security"></a>セキュリティの無効化
-ここでは、組織がデータ アクセスを制限すると想定します。 何らかの理由で、原価会計を実行する際にセキュリティ パラメーターが無効になっている場合は、所有者は代わりにユーザーを Power BI の **原価経理担当** ロールに追加する必要があります。 セキュリティを有効状態から無効状態に変更する場合は、**原価オブジェクト コントローラー**ロールからユーザーを削除することをお勧めします。 セキュリティを再び有効にする場合は、その逆を行ないます。 ユーザーは両方のロールに属することができます。 結合アクセスとは両方のロールの結合のことです。 **原価会計分析** Power BI コンテンツの場合、結合アクセスを持つユーザーには無制限のデータ アクセス権があります。 目標がアクセス権を制限することである場合は、ユーザーを **原価オブジェクト コントローラー** ロールのみに割り当てる必要があります。 これらの行レベルのセキュリティの更新はすぐに反映されます。 影響を受けるユーザーは自分のブラウザを更新する必要があります。
+ここでは、組織がデータ アクセスを制限すると想定します。 何らかの理由で、原価会計を実行する際にセキュリティ パラメーターが無効になっている場合は、所有者は代わりにユーザーを Power BI の**原価経理担当**ロールに追加する必要があります。 セキュリティを有効状態から無効状態に変更する場合は、**原価オブジェクト コントローラー**ロールからユーザーを削除することをお勧めします。 セキュリティを再び有効にする場合は、その逆を行ないます。 ユーザーは両方のロールに属することができます。 結合アクセスとは両方のロールの結合のことです。 **原価会計分析** Power BI コンテンツの場合、結合アクセスを持つユーザーには無制限のデータ アクセス権があります。 目標がアクセス権を制限することである場合は、ユーザーを **原価オブジェクト コントローラー** ロールのみに割り当てる必要があります。 これらの行レベルのセキュリティの更新はすぐに反映されます。 影響を受けるユーザーは自分のブラウザを更新する必要があります。
 
 ## <a name="additional-resources"></a>追加リソース
-Power BI の行レベルのセキュリティの詳細については、[Power BI のモデルでのセキュリティ管理](https://powerbi.microsoft.com/en-us/documentation/powerbi-admin-rls/#manage-security-on-your-model) を参照してください。
-
+Power BI の行レベルのセキュリティの詳細については、「[Power BI のモデルでのセキュリティ管理](https://powerbi.microsoft.com/en-us/documentation/powerbi-admin-rls/#manage-security-on-your-model)」を参照してください。

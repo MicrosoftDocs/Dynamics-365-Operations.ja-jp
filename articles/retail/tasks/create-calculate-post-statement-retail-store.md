@@ -1,13 +1,13 @@
---- 
-title: "小売店舗の明細書の作成、計算、および転記"
-description: "この手順では、店舗の明細書を作成、計算、および転記する手動のステップについて説明します。"
+---
+title: 小売店舗の明細書の作成、計算、および転記
+description: この手順では、店舗の明細書を作成、計算、および転記する手動のステップについて説明します。
 author: jashanno
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailChannelOperationsWorkspace, RetailStatementTable
 audience: Application User
 ms.reviewer: josaw
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 9ea30e7e008bfcce77a7ee2f4d7d01a6cf1ababc
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 33ebb28196baa9ae944dbd124274b05cb587fea4
-ms.contentlocale: ja-jp
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "354394"
 ---
 # <a name="create-calculate-and-post-a-statement-for-a-retail-store"></a>小売店舗の明細書の作成、計算、および転記
 
@@ -47,5 +47,4 @@ ms.lasthandoff: 02/07/2018
 10. [閉じる] をクリックします。
 11. [小売りとコマース] > [チャンネル] > [小売店舗の財務] の順に移動します。
 12. [転記済明細書] のタブをクリックします。
-
 

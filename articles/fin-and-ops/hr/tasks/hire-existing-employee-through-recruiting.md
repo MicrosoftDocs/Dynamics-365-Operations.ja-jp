@@ -1,13 +1,13 @@
---- 
-title: "採用による既存の従業員の雇用"
-description: "場合によっては、空いている職位が既に組織の従業員である候補者によって一杯になることがあります。"
+---
+title: 採用による既存の従業員の雇用
+description: 場合によっては、空いている職位が既に組織の従業員である候補者によって一杯になることがあります。
 author: rschloma
 manager: AnnBe
 ms.date: 02/10/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
 ms.openlocfilehash: 71793ce48142b19b288e2315dcd44a07d8e39f90
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365388"
 ---
 # <a name="hire-existing-employees-through-recruitment"></a>採用による既存の従業員の雇用
 
@@ -40,5 +40,4 @@ ms.lasthandoff: 08/09/2018
 8. 必要に応じて理由コードを選択できます。 例: 再編成
 9. [職位の変更] をクリックします。
     * この時点で、報酬を変更することもできます。 この時点で報酬を割り当てていない場合、作業者フォームに移動して、[報酬] タブを選択し、「固定プラン」を選択すると、報酬を変更できます。 「職位の変更」を選択すると、申請のステータスは「採用済」に更新されます。  
-
 

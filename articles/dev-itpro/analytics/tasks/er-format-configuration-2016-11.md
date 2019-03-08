@@ -1,13 +1,13 @@
---- 
-title: "ER 書式設定のコンフィギュレーションの作成 (2016 年 11 月)"
-description: "次の手順では、システム管理者または電子申告開発者の役割のユーザーが、電子申告 (ER) にコンフィギュレーションの書式設定を作成する方法を説明します。"
+---
+title: ER 書式設定のコンフィギュレーションの作成 (2016 年 11 月)
+description: 次の手順では、システム管理者または電子申告開発者の役割のユーザーが、電子申告 (ER) にコンフィギュレーションの書式設定を作成する方法を説明します。
 author: NickSelin
 manager: AnnBe
 ms.date: 11/27/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERSolutionCreateDropDialog, EROperationDesigner, ERComponentTypeDropDialog
 audience: Application User
 ms.reviewer: kfend
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 582e1a2baee805fe6770465edc7958954f638f1c
+ms.sourcegitcommit: 29e19b6d91e5761178627ef2051f3385f5d7cfe5
 ms.translationtype: HT
-ms.sourcegitcommit: 13469aad7fdcefb3a1706eec0527f29968e007eb
-ms.openlocfilehash: 10511fe5b936135471b522fc7152a54686a3be87
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/18/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "377552"
 ---
 # <a name="er-create-a-format-configuration-november-2016"></a>ER 書式設定のコンフィギュレーションの作成 (2016 年 11 月)
 
@@ -46,10 +46,6 @@ ms.lasthandoff: 12/18/2018
     * 電子ドキュメントの特定の形式を定義できます。 実行時に形式を選択する場合は、このフィールドを空白のままにします。  
 8. **データ モデル定義**フィールドで、値を入力または選択します。
 9. **コンフィギュレーションの作成**をクリックします。 新しいコンフィギュレーションが作成されました。 ドラフト バージョンは、電子ドキュメントを管理するためのデザイン形式の保存に使用できます。  
-
- > [!NOTE]
- > **コンフィギュレーションの作成**が表示されない場合は、**電子申告のパラメーター**ページでデザイン モードを有効にする必要があります。
-
 
 ## <a name="design-the-format-of-an-electronic-document"></a>電子ドキュメントの形式のデザイン
 1. **デザイナー** をクリックします。
@@ -162,5 +158,4 @@ ms.lasthandoff: 12/18/2018
 41. **OK** をクリックします。
 42. **保存** をクリックします。
 43. ページを閉じます。
-
 

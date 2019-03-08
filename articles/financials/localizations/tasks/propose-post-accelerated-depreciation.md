@@ -1,13 +1,13 @@
---- 
-title: "増加償却の提案と転記"
-description: "日本の場合、確認済加速償却ドキュメントのデータに基づいて加速償却を提案することができます。"
+---
+title: 増加償却の提案と転記
+description: 日本の場合、確認済加速償却ドキュメントのデータに基づいて加速償却を提案することができます。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransAsset, AssetAcceleratedDepDocument_JP
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 0bdde92813a8d6b54b2713382ec6fd62350c92ee
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371018"
 ---
 # <a name="propose-and-post-accelerated-depreciation"></a>増加償却の提案と転記
 
@@ -57,5 +57,4 @@ ms.lasthandoff: 10/16/2018
 11. ページを閉じます。
 12. [固定資産] > [定期処理タスク] > [加速償却] > [加速償却ドキュメント] の順に移動します。
     * 転記済ドキュメントのステータスが更新されていることを確認します。  
-
 

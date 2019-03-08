@@ -1,32 +1,31 @@
 ---
-title: "原価ロールアップ ポリシーおよび間接費の計算"
-description: "このトピックでは、適切なレベルの二次コスト要素を決定し、組織のレポートまたコスト トレーサビリティに適合するコスト ロールアップ ルールを作成する方法についての情報を提供します。"
+title: 原価ロールアップ ポリシーおよび間接費の計算
+description: このトピックでは、適切なレベルの二次コスト要素を決定し、組織のレポートまたコスト トレーサビリティに適合するコスト ロールアップ ルールを作成する方法についての情報を提供します。
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CAMCostRollupRule, CAMDimensionHierarchy
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: e809cb2cadadc623134805e028de7f2e64dd662f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 1150a63fe7c9d51c5fa83f4b0295cfdca7b998dc
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "356142"
 ---
-
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>原価ロールアップ ポリシーおよび間接費の計算 
 
 [!include [banner](../includes/banner.md)]
@@ -251,7 +250,7 @@ HR サービスは、次の大きさの配分によって消費されます。
 | CC003       | 組み立て     | SC-CC002 | 財務         | 11.527,75   | 31-01-2017 |
 | CC004       | 梱包業    | SC-CC002 | 財務         | 6.207,25    | 31-01-2017 |
 
-**間接費計算** が完了すると、Microsoft SharePoint ワークスペース、Excel、または Power BI などのツールを使用して結果をレポートできます。
+**間接費計算**が完了すると、Microsoft SharePoint ワークスペース、Excel、または Power BI などのツールを使用して結果をレポートできます。
 
 ## <a name="view-reporting-in-excel"></a>Excel でのレポートの表示 
 
@@ -302,4 +301,3 @@ HR サービスは、次の大きさの配分によって消費されます。
 -  [原価要素分析コード](cost-elements.md)
 -  [分析コード階層](dimension-hierarchy.md)
 -  [間接費の計算](overhead-calculation.md)
-

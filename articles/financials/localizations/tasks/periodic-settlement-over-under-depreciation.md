@@ -1,13 +1,13 @@
---- 
-title: "償却超過額/償却不足額の定期決済"
-description: "このタスクでは、損金の減価償却費を計算および記録する方法を説明します。"
+---
+title: 償却超過額/償却不足額の定期決済
+description: このタスクでは、損金の減価償却費を計算および記録する方法を説明します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransAsset, SysQueryForm, AssetDepPreTaxDedProcess_JP, AssetDepPreTaxDedProcessDetail_JP
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 5bd14f3e21d61cb3ca9552ff9cf9bbcb5c4a91e4
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371138"
 ---
 # <a name="periodic-settlement-of-over-and-under-depreciation"></a>償却超過額/償却不足額の定期決済
 
@@ -74,5 +74,4 @@ ms.lasthandoff: 10/16/2018
 12. [決済結果の表示] をクリックします。
     * 正しい結果が作成されていることを確認します。  
 13. [転記] をクリックします。
-
 

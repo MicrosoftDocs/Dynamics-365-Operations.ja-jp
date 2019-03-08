@@ -1,13 +1,13 @@
 ---
-title: "出荷プロセス"
-description: "このトピックでは、在庫管理の出荷プロセスの概要を示します。"
+title: 出荷プロセス
+description: このトピックでは、在庫管理の出荷プロセスの概要を示します。
 author: perlynne
 manager: AnnBe
 ms.date: 10/04/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WMSOrder, WMSShipment, MCRPickingWorkbench, WMSPickingRegistration, CustomFilterGroup
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
+ms.openlocfilehash: 5ac3260f128acbc819d7207f68f17adb085da11c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
-ms.openlocfilehash: f2cae64263769b5168d2bb9614d6388b42e23b49
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/14/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "334384"
 ---
-
 # <a name="outbound-process"></a>出荷プロセス
 
 [!include [banner](../includes/banner.md)]
@@ -47,19 +46,19 @@ ms.lasthandoff: 12/14/2017
 
 ## <a name="picking-route-status-for-sales-and-transfer-orders"></a>販売および移動オーダーのピッキング ルートのステータス 
 
-[**売掛金勘定**] \> [**設定**] \> [**売掛金勘定パラメーター**] の順に移動し、[**更新**] タブで、[**ピッキング ルートのステータス**] フィールドの値を選択します。
+**売掛金勘定** \> **設定** \> **売掛金勘定パラメーター** の順に移動し、**更新** タブで、**ピッキング ルートのステータス** フィールドの値を選択します。
 
 [![販売注文のピッキング ルート ステータス フィールド](./media/picking-route-status-sales-order.png)](./media/picking-route-status-sales-order.png)
 
-[**ピッキング ルートのステータス**] フィールドが [**完了**] 設定されると、ピッキング リストを生成するプロセスの一部として、ピッキング プロセスが自動的に行われます。 このフィールドが [**有効化**] に設定されている場合、ピッキング リスト明細行は手動で更新する必要があります。
+**ピッキング ルートのステータス** フィールドが **完了** 設定されると、ピッキング リストを生成するプロセスの一部として、ピッキング プロセスが自動的に行われます。 このフィールドが **有効化** に設定されている場合、ピッキング リスト明細行は手動で更新する必要があります。
 
-同じ設定が移動オーダーに適用されます。 [**在庫管理**] \> [**設定**] \> [**在庫および倉庫管理パラメーター**] の順に移動し、[**配送**] タブで、[**ピッキング ルートのステータス**] フィールドで値を選択します。
+同じ設定が移動オーダーに適用されます。 **在庫管理** \> **設定** \> **在庫および倉庫管理パラメーター** の順に移動し、**配送** タブで、**ピッキング ルートのステータス** フィールドで値を選択します。
 
 [![移動オーダーのピッキング ルート ステータス フィールド](./media/picking-route-status-transfer-order.png)](./media/picking-route-status-transfer-order.png)
 
 ## <a name="end-output-inventory-orders"></a>在庫出荷注文の終了
 
-[**在庫管理**] \> [**設定**] \> [**在庫および倉庫管理パラメーター**] の順に移動し、[**一般**] タブで、[**在庫出荷注文の終了**] オプションを設定します。
+**在庫管理** \> **設定** \> **在庫および倉庫管理パラメーター** の順に移動し、**一般** タブで、**在庫出荷注文の終了** オプションを設定します。
 
 [![在庫出荷注文の終了オプション](./media//end-output-inventory-order.png)](./media//end-output-inventory-order.png)
 
@@ -71,19 +70,18 @@ ms.lasthandoff: 12/14/2017
 
 ## <a name="reduce-quantity"></a>数量の削減
 
-ピッキング リストを生成するプロセスの一部として使用できる 3 番目のパラメーターは、[**数量の削減**] パラメーターです。 このパラメーターの設定は、[**引当**] 設定と強調し、引当プロセスを倉庫へのリリースの一部としてトリガーします。
+ピッキング リストを生成するプロセスの一部として使用できる 3 番目のパラメーターは、**数量の削減** パラメーターです。 このパラメーターの設定は、**引当** 設定と強調し、引当プロセスを倉庫へのリリースの一部としてトリガーします。
 
 [![数量の削減パラメーター](./media/reduce-quantity.png)](./media/reduce-quantity.png)
 
 ## <a name="example-of-an-outbound-process-for-a-sales-order"></a>販売注文の出荷プロセスの例
 
-この例では、2 つの品目の販売注文があります。 ピッキング リストの生成時に、[**数量の削減**] パラメーターを選択します。 したがって、使用可能な手持在庫に対してのみ、ピッキング明細行をリリースおよび作成します。 ピッキング リストの登録プロセスを介したピッキングを報告する必要があります (**ピッキング ルートのステータス** = **有効化**)。
+この例では、2 つの品目の販売注文があります。 ピッキング リストの生成時に、**数量の削減** パラメーターを選択します。 したがって、使用可能な手持在庫に対してのみ、ピッキング明細行をリリースおよび作成します。 ピッキング リストの登録プロセスを介したピッキングを報告する必要があります (**ピッキング ルートのステータス** = **有効化**)。
 
 まだ引当されていない在庫は、ピッキング リストの生成時に引当されます。 在庫がピッキング可能な場合、使用できない在庫は販売注文から削除されるか、または後で発信処理として倉庫へのリリースされるかのいずれかです。
 
 [![ピッキング リストの更新](./media/update-picking-list.png)](./media/update-picking-list.png)
 
-[**ピッキング リスト登録**] ページですべてのピッキング ラインがピッキングされるとすぐに、関連付けられている出荷が完了します。 販売注文の梱包明細のプロセスは、ピッキング済の在庫に基づいて初期化されます。
+**ピッキング リスト登録** ページですべてのピッキング ラインがピッキングされるとすぐに、関連付けられている出荷が完了します。 販売注文の梱包明細のプロセスは、ピッキング済の在庫に基づいて初期化されます。
 
 [![出荷配送の更新](./media/outbound-shipments.png)](./media/outbound-shipments.png)
-

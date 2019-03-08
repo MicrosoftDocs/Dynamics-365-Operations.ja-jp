@@ -1,13 +1,13 @@
 ---
-title: "Project Service Automation の統合パラメーター"
-description: "このトピックでは、Microsoft Dynamics 365 for Project Service Automation を Microsoft Dynamics 365 for Finance and Operations に統合するときに既定のデータを入力しコンフィギュレーションする方法について説明します。"
+title: Project Service Automation の統合パラメーター
+description: このトピックでは、Microsoft Dynamics 365 for Project Service Automation を Microsoft Dynamics 365 for Finance and Operations に統合するときに既定のデータを入力しコンフィギュレーションする方法について説明します。
 author: KimANelson
 manager: AnnBe
 ms.date: 07/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,23 +17,22 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-11-28
 ms.dyn365.ops.version: AX 7.3.0
-ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
 ms.openlocfilehash: 33960a97f69d6bcc70a3035d4d68095ca6993a10
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347057"
 ---
-
-# <a name="project-service-automation-integration-parameters"></a>Project Service Automation の統合パラメーター
+# <a name="project-service-automation-integration-parameters"></a>Project Service Automation 統合パラメーター
 
 [!include[banner](../includes/banner.md)]
 
-**Project Service Automation 統合パラメータ**ページで、Microsoft Dynamics 365 for Project Service Automation を Microsoft Dynamics 365 for Finance and Operations に統合するときに既定のデータを入力する方法をコンフィギュレーションできます。 Project Service Automation から Finance and Operations にプロジェクトが正常に同期されるには、次のフィールドが設定される必要があります。
+**Project Service Automation 統合パラメーター** ページで、Microsoft Dynamics 365 for Project Service Automation を Microsoft Dynamics 365 for Finance and Operations に統合するときに既定のデータを入力する方法をコンフィギュレーションできます。 Project Service Automation から Finance and Operations にプロジェクトが正常に同期されるには、次のフィールドが設定される必要があります。
 
 > [!NOTE]
 > - プロジェクト タスクの統合、経費トランザクションのカテゴリ、時間見積、経費見積、および機能ロックは、Microsoft Dynamics 365 for Finance and Operations バージョン 8.0 で利用できます。
-> - 実績の統合は、Microsoft Dynamics 365 for Finance and Operations バージョン 8.01 以降で使用可能です。
+> - 実績の統合は、Microsoft Dynamics 365 for Finance and Operations バージョン 8.0.1 以降で使用可能です。
 > - Microsoft Dynamics 365 for Finance and Operations、Enterprise edition 7.3.0 を使用している場合、KB 4132657 および KB 4132660 をインストールした後に、テンプレートを使用してプロジェクト タスクの統合、経費トランザクションのカテゴリ、時間見積、経費見積、実績、および機能ロックをコンフィギュレーションできます。 勘定配布をリセットする必要がある場合、KB 4131710 をインストールすることをお勧めします。
 
 | タブ                    | フィールド                | 説明 |
@@ -46,4 +45,3 @@ ms.lasthandoff: 08/09/2018
 | 請求タイプの既定値  | 請求タイプ         | **新規**をクリックして行を追加し、既定の明細行プロパティを設定する請求タイプを選択できます。 特定の請求タイプは、コンフィギュレーションで 1 回のみ選択できます。 |
 |                        | 明細行プロパティ        | 指定された請求タイプの既定の明細行プロパティを選択します。 新しい時間見積、新しい経費見積、または新しい実績が Project Service Automation から同期されるときに、**明細行プロパティ**フィールドは請求タイプの既定値に設定されます。 |
 | 機能ロック  | 該当なし       | Project Service Automation から作成されたプロジェクトおよび契約の Finance and Operations で無効にする機能を選択します。 たとえば、契約およびプロジェクトを編集し、作業分解構造を作成し、Finance and Operations でタイムシートを入力する機能を無効にできます。 パラメーター設定によって利用できない場合でも、会計関連のフィールドは継続して有効になります。 既定では、すべての機能が有効になります。 |
-

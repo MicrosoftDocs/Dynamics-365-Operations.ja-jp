@@ -1,13 +1,13 @@
---- 
-title: "資産除去責務に関連するトランザクションの照会"
-description: "日本では、資産除去責務 (ARO) のトランザクションと金額は、基になる固定資産とは別にレポートする必要があります。"
+---
+title: 資産除去責務に関連するトランザクションの照会
+description: 日本では、資産除去責務 (ARO) のトランザクションと金額は、基になる固定資産とは別にレポートする必要があります。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetTrans, AssetTable, AssetRetirementObligation_JP, AssetRetirementObligationExplorer_JP
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: aaedc5bd0808f230f082b79f7cbde08831c13442
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371040"
 ---
 # <a name="inquiries-of-the-asset-retirement-obligation-related-transactions"></a>資産除去責務に関連するトランザクションの照会
 
@@ -55,5 +55,4 @@ ms.lasthandoff: 10/16/2018
     * これらのタブは、[予定金額]、[転記 (実際の) 金額] および差額をそれぞれ表示します。  
 5. [転記金額] セクションを展開または折りたたみます。
 6. [差異] セクションを展開または折りたたみます。
-
 

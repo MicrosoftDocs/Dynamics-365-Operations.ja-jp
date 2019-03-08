@@ -1,13 +1,13 @@
---- 
-title: "売買契約を作成するためのカテゴリの価格決定ルール"
-description: "この手順は、カテゴリ価格決定ルールを使用して販売価格の売買契約を作成する方法を示します。"
+---
+title: 売買契約を作成するためのカテゴリの価格決定ルール
+description: この手順は、カテゴリ価格決定ルールを使用して販売価格の売買契約を作成する方法を示します。
 author: scott-tucker
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DefaultDashboard, RetailDiscountPricingWorkspace, RetailPricingDiscountCategoryPriceRule, RetailCategoryPriceRule, EcoResCategorySingleLookup, RetailCategoryPriceWizard, PriceDiscAdm, PriceDiscAdmTable
 audience: Application User
 ms.reviewer: josaw
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 8d252982cf1e4fa2f06646d0909e6f82d16f4cfc
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 133ca34a0e85454dc40d4e1d36fbe8278019c7e4
-ms.contentlocale: ja-jp
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355521"
 ---
 # <a name="category-pricing-rules-to-create-trade-agreements"></a>売買契約を作成するためのカテゴリの価格決定ルール
 
@@ -58,5 +58,4 @@ ms.lasthandoff: 02/07/2018
 23. ページを閉じます。
 24. [カテゴリ価格のルール] タブをクリックします。
     * チャンネルの特定の [カテゴリ価格決定ルール] はこのリストに表示されます。  
-
 

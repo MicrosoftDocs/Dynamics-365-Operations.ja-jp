@@ -1,13 +1,13 @@
---- 
-title: "割増償却を使用する固定資産の作成"
-description: "日本では、固定資産は特定の条件下で増加償却額を転記することができます。"
+---
+title: 割増償却を使用する固定資産の作成
+description: 日本では、固定資産は特定の条件下で増加償却額を転記することができます。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetTable, AssetBook
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: f23861235dfb8e8acd864c9ccb9d0379c8b789dd
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371066"
 ---
 # <a name="create-a-fixed-asset-with-additional-depreciation"></a>割増償却を使用する固定資産の作成
 
@@ -53,5 +53,4 @@ ms.lasthandoff: 10/16/2018
 8. [特別減価償却] フィールド グループ下で、日付を入力します。
     * 割増償却は、この日の翌日から開始します。  
 9. [保存] をクリックします。
-
 

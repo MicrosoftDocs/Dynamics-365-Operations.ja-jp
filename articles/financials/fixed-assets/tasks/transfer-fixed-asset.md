@@ -1,13 +1,13 @@
---- 
-title: "固定資産の移動"
-description: "このタスク ガイドは、財務分析コード セットのいずれかから新しい財務分析コード セットに、固定資産帳簿の財務情報を転送します。"
+---
+title: 固定資産の移動
+description: このタスク ガイドは、財務分析コード セットのいずれかから新しい財務分析コード セットに、固定資産帳簿の財務情報を転送します。
 author: saraschi2
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetTable, AssetTransfer, DimensionLookup, AssetTransferConfirmation
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: bb8a5b94d9a0bb510daa2a698524e0c380597991
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: b193cf6fbed810f0d5234514573d0f5c23c7b2c8
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "357200"
 ---
 # <a name="transfer-a-fixed-asset"></a>固定資産の移動
 
@@ -46,5 +46,4 @@ ms.lasthandoff: 09/29/2017
     * 転送を終了する前に変更をプレビューする機会があります。  
     * 固定資産の帳簿を転送する前に結果を確認します。  
 10. [転送] をクリックします。
-
 

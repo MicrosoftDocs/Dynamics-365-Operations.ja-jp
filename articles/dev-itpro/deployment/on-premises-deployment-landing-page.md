@@ -1,28 +1,28 @@
 ---
-title: "オンプレミス配置のホーム ページ"
-description: "このトピックでは、オンプレミス配置に関するコンテンツへのリンクと情報を提供します。"
+title: オンプレミス配置のホーム ページ
+description: このトピックでは、オンプレミス配置に関するコンテンツへのリンクと情報を提供します。
 author: kfend
 manager: AnnBe
-ms.date: 11/02/2018
+ms.date: 02/01/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 55651
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
+ms.openlocfilehash: c51cce929384b7e822213dcb9df9007edfe3700c
+ms.sourcegitcommit: bacad87e2b9146e08e6fe16af01356954eb90574
 ms.translationtype: HT
-ms.sourcegitcommit: b8fb8c963e2bba2e6fe7cb31e71a38232f1e8a54
-ms.openlocfilehash: c80a41427db18607577b4f89c8e30fe6c8f872d3
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/02/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "373280"
 ---
 # <a name="on-premises-deployments-home-page"></a>オンプレミス配置のホーム ページ
 
@@ -59,10 +59,11 @@ Microsoft Dynamics 365 for Finance and Operations (オンプレミス) を配置
 ## <a name="retail"></a>Retail
 - [オンプレミス配置で使用できる小売機能](../../retail/retail-onprem.md)
 - [オンプレミス環境での小売チャネルのコンポーネントのインストール手順](deploy-retail-onprem.md)
-- [Retail Modern POS (MPOS) の設定、インストール、および有効化](../../retail/retail-modern-pos-device-activation.md)
-- [Retail Store Scale Unit のコンフィギュレーションとインストール](../../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md)
+- [コンフィギュレーション、インストール、および有効化 Retail Modern POS (MPOS)](../../retail/retail-modern-pos-device-activation.md)
+- [コンフィギュレーションおよびインストール Retail Store Scale Unit](../../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md)
 
-
+## <a name="upgrade"></a>アップグレード
+- [オンプレミス環境のインプレース アップグレード プロセス](../migration-upgrade/on-prem-upgrade.md)
 
 ## <a name="other-resources"></a>その他のリソース
 - [オンプレミス配置のトラブルシューティング](troubleshoot-on-prem.md)
@@ -71,4 +72,3 @@ Microsoft Dynamics 365 for Finance and Operations (オンプレミス) を配置
 - [削除済みまたは推奨されない機能](../migration-upgrade/deprecated-features.md)
 - [ソフトウェアのライフサイクル ポリシーおよびオンプレミス リリース](../migration-upgrade/on-prem-version-update-policy.md)
  
-

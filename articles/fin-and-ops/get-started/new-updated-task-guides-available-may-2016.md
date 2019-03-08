@@ -1,13 +1,13 @@
 ---
-title: "新規または更新されたタスク ガイド (2016 年 5 月)"
-description: "この記事では、Microsoft Dynamics AX の Microsoft (2016 年 5 月 - すべての言語) APQC 統合ライブラリにリリースされた新規または更新されたタスク ガイドを示します。 新規の「はじめに」ライブラリは、リリースされていません。"
+title: 新規または更新されたタスク ガイド (2016 年 5 月)
+description: この記事では、 Microsoft Dynamics AX の Microsoft (2016 年 5 月 - すべての言語) APQC 統合ライブラリにリリースされた新規または更新されたタスク ガイドを示します。 新規の「はじめに」ライブラリは、リリースされていません。
 author: josaw1
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -17,32 +17,31 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: cf12f2dfb62645fc5d6886ef429441c48982d484
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341353"
 ---
-
 # <a name="new-or-updated-task-guides-may-2016"></a>新規または更新されたタスク ガイド (2016 年 5 月)
 
 [!include [banner](../includes/banner.md)]
 
-この記事では、Microsoft Dynamics AX の Microsoft (2016 年 5 月 - すべての言語) APQC 統合ライブラリにリリースされた新規または更新されたタスク ガイドを示します。 新規の「はじめに」ライブラリは、リリースされていません。 
+この記事では、 Microsoft Dynamics AX の Microsoft (2016 年 5 月 - すべての言語) APQC 統合ライブラリにリリースされた新規または更新されたタスク ガイドを示します。 新規の「はじめに」ライブラリは、リリースされていません。 
 
 ## <a name="task-guides-in-the-may-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>Microsoft Dynamics AX 用の APQC 統合ライブラリに含まれるタスク ガイド (2016 年 5 月 - すべての言語)
 
-APQC 統合ライブラリ (2016 年 5 月) には、2016 年 5 月に更新された Microsoft Dynamics AX および 2016 年 2 月にリリースされた Microsoft Dynamics AX のヘルプの使用を想定したタスク ガイドが含まれています。 APQC 統合ライブラリ (2016 年 2 月) でリリースされたローカライズ版のタスク ガイドは、このライブラリで使用可能です。 タスク ガイド ライブラリのヘルプ システムを接続する方法の詳細については、「[ヘルプの入門](help-overview.md)」を参照してください。
+APQC 統合ライブラリ (2016 年 5 月) には、Microsoft Dynamics AX 2016 年 5 月更新プログラム、および Microsoft Dynamics AX 2016 年 2 月リリースのヘルプの使用を想定したタスク ガイドが含まれています。 APQC 統合ライブラリ (2016 年 2 月) でリリースされたローカライズ版のタスク ガイドは、このライブラリで使用可能です。 タスク ガイド ライブラリのヘルプ システムを接続する方法の詳細については、「[ヘルプの入門](help-overview.md)」を参照してください。
 
 > [!NOTE]
-> ビジネス プロセス モデラー (BPM) 行のタイトルの横にあるアスタリスク (\*) は、そのビジネス プロセスのタスク ガイド Dynamics AX 2016 年 5 月更新のために作成されたことを示しており、Microsoft Dynamics AX の以前のバージョンではサポートされていません。
+> ビジネス プロセス モデラー (BPM) 行のタイトルの横にあるアスタリスク (\*) は、そのビジネス プロセスのタスク ガイドは Dynamics AX 2016 年 5 月更新のために作成されたことを示しており、Microsoft Dynamics AX の以前のバージョンではサポートされていません。
 
 ### <a name="countryregion-functionality"></a>国/地域の機能
 
-| BPM 明細行                                                                 | 国/地域                    |
+| BPM ライン                                                                 | 国/地域                    |
 |--------------------------------------------------------------------------|-----------------------------------|
-| OIOUBL 電子請求を設定                                       | デンマーク                           |
+| OIOUBL 電子請求の設定                                       | デンマーク                           |
 | EUR-00002 EU イントラスタット申告の生成                           | ヨーロッパ                            |
 | EUR-00002 イントラスタットにトランザクションを転送                         | ヨーロッパ                            |
 | FR-00004 顧客支払方法の更新                            | ヨーロッパ                            |
@@ -195,4 +194,3 @@ APQC 統合ライブラリ (2016 年 5 月) には、2016 年 5 月に更新さ�
 [新規または更新されたタスク ガイド (2016 年 8 月)](new-updated-task-guides-available-august-2016.md)
 
 [新規または更新されたタスク ガイド (2016 年 11 月)](new-task-guides-november-2016.md)
-

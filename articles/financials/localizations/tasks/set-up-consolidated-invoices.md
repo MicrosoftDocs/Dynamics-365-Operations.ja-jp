@@ -1,13 +1,13 @@
---- 
-title: "月次締め請求書の設定"
-description: "日本では、日本の商習慣に合わせて月次締め請求書を有効にできます。"
+---
+title: 月次締め請求書の設定
+description: 日本では、日本の商習慣に合わせて月次締め請求書を有効にできます。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustParameters, PaymDay, PaymTerm
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 8d7f69eeb00c3ab3210433e86be30d214cceff94
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371084"
 ---
 # <a name="set-up-consolidated-invoices"></a>月次締め請求書の設定
 
@@ -56,5 +56,4 @@ ms.lasthandoff: 10/16/2018
     * [支払方法] として [締日] を選択  
     * [締日] は R1 リリースでは表示されません。 代わりに [当月] を選択できます。 この結果、手動での調整を必要とするわずかな差が生じる場合があります。  
 4. [支払期日] フィールドに値を入力します。
-
 

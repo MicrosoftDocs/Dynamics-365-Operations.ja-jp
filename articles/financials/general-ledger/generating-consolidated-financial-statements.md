@@ -1,14 +1,14 @@
 ---
-title: "連結財務諸表の生成"
-description: "このトピックでは、連結財務諸表を生成することがあるさまざまなシナリオについて説明します。"
+title: 連結財務諸表の生成
+description: このトピックでは、連結財務諸表を生成することがあるさまざまなシナリオについて説明します。
 author: aprilolson
 manager: AnnBe
 ms.date: 07/09/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: 2a9ceb774a8f205e39abe6a12a0deb69dd4cb69b
 ms.openlocfilehash: 76e675373212195cbe3f6cf43d128b2104f92fc6
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/20/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355199"
 ---
-
 # <a name="generate-consolidated-financial-statements"></a>連結財務諸表の生成
 
 [!include [banner](../includes/banner.md)]
@@ -225,4 +224,3 @@ ms.lasthandoff: 08/20/2018
 連結および通貨換算の詳細については、このトピックの親トピック [財務連結および通貨換算](./financial-consolidations-currency-translation.md) を参照してください。
 
 オンライン連結の詳細を入力する方法については、[オンラインで連結](./consolidate-online.md)を参照してください。
-

@@ -1,13 +1,13 @@
---- 
-title: "固定資産の取得と政府助成金の申請"
-description: "固定資産の取得および政府補助金の申請についての説明を見るには、このタスクを使用します。"
+---
+title: 固定資産の取得と政府助成金の申請
+description: 固定資産の取得および政府補助金の申請についての説明を見るには、このタスクを使用します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransAsset, SysQueryForm
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: aa1212248f1c35246992b54de2cd323b4c02531e
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371074"
 ---
 # <a name="acquire-a-fixed-asset-and-claim-for-the-government-grant-subsidy"></a>固定資産の取得と政府助成金の申請
 
@@ -69,5 +69,4 @@ ms.lasthandoff: 10/16/2018
 13. [貸方] フィールドに数値を入力します。
     * 政府助成金を入力します。  
 14. [転記] をクリックします。
-
 

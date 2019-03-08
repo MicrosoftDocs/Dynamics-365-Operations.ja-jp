@@ -1,31 +1,30 @@
 ---
-title: "Dynamics 365 for Retail のサポートの入手"
-description: "この記事では、Microsoft Dynamics 365 for Retail のヘルプを入手する方法について説明します。"
+title: Dynamics 365 for Retail に関するサポートの利用
+description: この記事では、Microsoft Dynamics 365 for Retail のヘルプを入手する方法について説明します。
 author: josaw1
 manager: AnnBe
 ms.date: 09/18/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-retail
-ms.technology: 
+ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
 ms.search.scope: Retail
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: Retail
+ms.openlocfilehash: 3d437b16e96d53216032f1f31df3d4c0ba63e117
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
-ms.openlocfilehash: 2e74554338e4b12991756f63257f67ee3e2e6dc4
-ms.contentlocale: ja-jp
-ms.lasthandoff: 01/04/2019
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "364054"
 ---
-
-# <a name="get-support-for-dynamics-365-for-retail"></a>Dynamics 365 for Retail のサポートの入手
+# <a name="get-support-for-dynamics-365-for-retail"></a>Dynamics 365 for Retail に関するサポートの利用
 
 [!include [banner](../includes/banner.md)]
 
@@ -43,13 +42,13 @@ Retail のサポートを得るには、次の表にあるリソースを使用�
 <thead>
 <tr>
 <th>タスク</th>
-<th>詳細情報</th>
+<th>詳細</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>コミュニティに質問します。</td>
-<td><a href="https://community.dynamics.com/365/retail">Dynamics 365 for Retail</a>コミュニティ ページに移動して Dynamics コミュニティから質問のヘルプを検索します。</td>
+<td><a href="https://community.dynamics.com/365/retail">Dynamics 365 for Retail</a> コミュニティ ページに移動して Dynamics コミュニティから質問のヘルプを検索します。</td>
 </tr>
 <tr>
 <td>問題検索ツールを使用します。</td>
@@ -67,7 +66,7 @@ Retail のサポートを得るには、次の表にあるリソースを使用�
 </tr>
 <tr>
 <td>サポート チームでチケットを開きます。</td>
-<td>LCS の<strong>サポート</strong>タイルから Microsoft にチケットを送信しようとする際に問題が生じる場合は、<a href="https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/global_support_contacts_eng">Microsoft Business Solutions Support に問い合わせる</a>を参照して Microsoft Dynamics Regional Operations Center への問い合わせに関する情報を入手してください。 サポート チームは、次のタイプの技術的な問題を解決するのに役立ちます。
+<td>LCS の<strong>サポート</strong>タイルから Microsoft にチケットを送信しようとする際に問題が生じる場合は、<a href="https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/global_support_contacts_eng">Microsoft Business Solutions Support に問い合わせる</a>を参照して  Microsoft Dynamics Regional Operations Center への問い合わせに関する情報を入手してください。 サポート チームは、次のタイプの技術的な問題を解決するのに役立ちます。
 <ul>
 <li>LCS を使用するときに発生するエラー、または LCS にアクセスしようとするときに発生する問題。</li>
 <li>Retail を使用するときに発生するエラー。</li>
@@ -85,5 +84,4 @@ CustomerSource へのサインインやアクセス、e ラーニング、検索
 </tbody>
 </table>
 
-Microsoft Dynamics サポート提供の詳細については、「[Microsoft Dynamics Online サポート](https://www.microsoft.com/dynamics/dynamics-online-support.aspx)」を参照してください。
-
+Microsoft Dynamics サポート提供の詳細については、「[Microsoft Dynamics オンライン サポート](https://dynamics.microsoft.com/en-us/support/)」を参照してください。

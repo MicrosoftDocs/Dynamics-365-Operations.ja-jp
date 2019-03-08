@@ -1,13 +1,13 @@
 ---
-title: "品質管理プロセス"
-description: "この記事は、不適合製品に対する品質管理プロセスについての情報を提供します。 品質テスト機能の使用方法、不適合の定義および管理方法、および修正方法について説明します。"
+title: 品質管理プロセス
+description: この記事は、不適合製品に対する品質管理プロセスについての情報を提供します。 品質テスト機能の使用方法、不適合の定義および管理方法、および修正方法について説明します。
 author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventItemSampling, InventNonConformanceHistory, InventNonConformanceTable, InventQualityOrderLineResults, InventQualityOrderTable, InventTestCorrection, InventTestDiagnosticType, InventTestInstrument, InventTestReportSetup, InventTestTable
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 22372bd2d42b526d10e39174e7fb5ec5281d1b73
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 18920dd3490b69e9668e2d023c5ca1cc094c8126
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "354555"
 ---
-
 # <a name="quality-management-processes"></a>品質管理プロセス
 
 [!include [banner](../includes/banner.md)]
@@ -102,4 +101,3 @@ ms.lasthandoff: 05/08/2018
 [品質指示の設定 (タスク ガイド)](tasks/set-up-quality-orders.md)
 
 [商品の品質の調査 (タスク ガイド)](tasks/inspect-quality-goods.md)
-

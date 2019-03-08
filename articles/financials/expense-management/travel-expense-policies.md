@@ -1,13 +1,13 @@
 ---
-title: "経費ポリシーを定義します"
-description: "Microsoft Dynamics 365 for Finance and Operations で、作業者が経費精算書と出張費要求を入力して提出する際に従う必要がある経費ポリシーを定義できます。"
+title: 経費ポリシーを定義します
+description: Microsoft Dynamics 365 for Finance and Operations では、作業者が経費精算書と出張費要求を入力して提出する際に従う必要がある経費ポリシーを定義できます。
 author: saraschi2
 manager: AnnBe
 ms.date: 02/23/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysPolicyListPage, TrvPolicyRule
 audience: Application User
 ms.reviewer: shylaw
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 04eaff110fea021ddee32be650be540894eb703b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 3b2a28fe6acf03e52c292048a797ce997f58bcce
-ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "342434"
 ---
-
 # <a name="expense-policies"></a>経費ポリシー
 
 [!include [banner](../includes/banner.md)]
@@ -49,4 +48,3 @@ ms.lasthandoff: 03/26/2018
   およびニューヨーク市間では、休暇旅行シーズンのピーク時に高くなる可能性があります。 制限する航空経費ルールを定義できます      
   ニューヨーク行きの航空運賃を DKK 5000 に制限し、このルールが 3 月 15 日から有効になるよう指定できます      
   9 月 15 日。
-

@@ -1,13 +1,13 @@
---- 
-title: "ER 棚卸および集計を行うための形式のコンフィギュレーション (第 3 部 - 出力を作成するための計算の使用)"
-description: "次の手順では、システム管理者または電子レポート開発者のロールに指定されたユーザーが、生成済みのテキスト出力に基づく計算と集計の電子レポート（ER）フォーマットをどのように環境設定するのかについて示します。"
+---
+title: ER 棚卸および集計を行うための形式のコンフィギュレーション (第 3 部 - 出力を作成するための計算の使用)
+description: 次の手順では、システム管理者または電子レポート開発者のロールに指定されたユーザーが、生成済みのテキスト出力に基づく計算と集計の電子レポート（ER）フォーマットをどのように環境設定するのかについて示します。
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, EROperationDesigner, ERDataSourceAddDropDialog, ERExpressionDesignerFormula, ERComponentTypeDropDialog
 audience: Application User
 ms.reviewer: kfend
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 5c870c134a9dae81cd619268bed7ce545bdd5f52
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347080"
 ---
 # <a name="er-configure-format-to-do-counting-and-summing-part-3-use-computations-to-make-the-output"></a>ER 棚卸および集計を行うための形式のコンフィギュレーション (パート 3: 出力を作成するためのコンフィギュレーションの使用)
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 10/16/2018
 
 これらの手順を完了するには、まず「計算と集計を行うER設定フォーマット（パート2：計算の環境設定）」の手順を完了する必要があります。
 
-この手順は、Dynamics 365 for Operations、バージョン 1611 に追加された機能です。
+この手順は Dynamics 365 for Operations バージョン 1611 に追加された機能です。
 
 
 ## <a name="configure-this-report-to-use-counting-and-summing-info"></a>計算と集計の情報を使用するには、このレポートを設定します。
@@ -132,5 +132,4 @@ ms.lasthandoff: 10/16/2018
 76. ページを閉じます。
 77. [保存] をクリックします。
 78. ページを閉じます。
-
 

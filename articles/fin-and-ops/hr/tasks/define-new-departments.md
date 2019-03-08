@@ -1,13 +1,13 @@
---- 
-title: "新しい部門の定義"
-description: "部門は、販売または会計など、事業の機能領域を表す作業単位です。"
+---
+title: 新しい部門の定義
+description: 部門は、販売または会計など、事業の機能領域を表す作業単位です。
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: OMOperatingUnit, HierarchyDesigner, OMNodeSelection, HierarchyPublishAndCloseForm
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 6dedddf305e303de5b284b34420cd0eda5170ed1
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "342848"
 ---
 # <a name="define-new-departments"></a>新しい部門の定義
 
@@ -51,5 +51,4 @@ ms.lasthandoff: 09/14/2018
     * 部門の階層を公開する際、変更をいつ有効にするかを選択できます。 変更を将来の日付にすることもできます。 たとえば、次の会計年度の期首に追加の部門を追加することがわかっている場合があります。 会計年度の期首に有効日を設定すれば、階層の変更はその日付に有効になります。  
 16. [変更の説明] フィールドで、値を入力します。
 17. [発行] をクリックします。
-
 

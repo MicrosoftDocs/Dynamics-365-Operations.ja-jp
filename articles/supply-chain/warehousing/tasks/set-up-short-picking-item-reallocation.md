@@ -1,13 +1,13 @@
---- 
-title: "品目再配賦の未処理ピッキングの設定"
-description: "この手順では、倉庫の在庫が不十分な場合、倉庫従事者はどのようにすれば他の倉庫を素早く見つけることができるか説明します。"
+---
+title: 品目再配賦の未処理ピッキングの設定
+description: この手順では、倉庫の在庫が不十分な場合、倉庫従事者はどのようにすれば他の倉庫を素早く見つけることができるか説明します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSWorkException, WHSWorker
 audience: Application User
 ms.reviewer: shylaw
@@ -17,18 +17,18 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: bf56a0811c4793ee2e3eaf78c8696c3c29e984c3
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: b67965b6c8641b5d91ab3c5b0a7a7fd28a07cba6
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "361225"
 ---
 # <a name="set-up-short-picking-item-reallocation"></a>品目再配賦の未処理ピッキングの設定
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-この手順では、倉庫の在庫が不十分な場合、倉庫従事者はどのようにすれば他の倉庫を素早く見つけることができるか説明します。 自動的な再配分をすることは可能で、他の場所が手配できる場合、製品を再配分させる指示があります。 また手動再配分を行う場合、有効数量の対応が可能な場所の一覧がモバイル端末に表示され、これにより倉庫従事者は在庫にはどの場所がよいか選択することができます。 デモ データの会社 USMF でこの手順を使用できます。 この手順は、Dynamics 365 for Operations、バージョン 1611 に追加された機能です。
+この手順では、倉庫の在庫が不十分な場合、倉庫従事者はどのようにすれば他の倉庫を素早く見つけることができるか説明します。 自動的な再配分をすることは可能で、他の場所が手配できる場合、製品を再配分させる指示があります。 また手動再配分を行う場合、有効数量の対応が可能な場所の一覧がモバイル端末に表示され、これにより倉庫従事者は在庫にはどの場所がよいか選択することができます。 デモ データの会社 USMF でこの手順を使用できます。 この手順は Dynamics 365 for Operations バージョン 1611 に追加された機能です。
 
 
 ## <a name="set-up-work-exceptions"></a>作業例外を設定します
@@ -53,5 +53,4 @@ ms.lasthandoff: 09/29/2017
 4. リストで、[作業者 24] を選択します。
 5. 作業セクションを展開します。
 6. [手動による再配置を許可] フィールドで [はい] を選択します。
-
 

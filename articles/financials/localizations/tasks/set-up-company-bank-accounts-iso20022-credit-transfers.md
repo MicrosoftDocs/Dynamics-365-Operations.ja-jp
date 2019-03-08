@@ -1,13 +1,13 @@
---- 
-title: "ISO20022 口座振替用の会社の銀行口座の設定"
-description: "この手順では、支払ファイルの生成に必要な会社固有の銀行口座情報を設定する方法を示します。"
+---
+title: ISO20022 口座振替用の会社の銀行口座の設定
+description: この手順では、支払ファイルの生成に必要な会社固有の銀行口座情報を設定する方法を示します。
 author: mrolecki
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankAccountTable, OMLegalEntity, BankAccountTableLookUp
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 2a84408ea24e4221b041782b681c2a2bf1bd8436
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 1d0eabdfdeb5ed7d0bdb6df87ebdfa0d41e87492
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "334936"
 ---
 # <a name="set-up-company-bank-accounts-for-iso20022-credit-transfers"></a>ISO20022 口座振替用の会社の銀行口座の設定
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/29/2017
 
 この手順の作成に使用するデモ データの会社は DEMF です。
 
-これは、5 つのうち 2 つ目の手順で、電子レポートのコンフィギュレーションを使用する仕入先支払処理を説明しています。 この手順は、Dynamics 365 for Operations、バージョン 1611 に追加された機能です。
+これは、5 つのうち 2 つ目の手順で、電子レポートのコンフィギュレーションを使用する仕入先支払処理を説明しています。 この手順は Dynamics 365 for Operations バージョン 1611 に追加された機能です。
 
 
 ## <a name="set-up-iban-and-swift-code"></a>IBAN および SWIFT コードの設定
@@ -51,5 +51,4 @@ ms.lasthandoff: 09/29/2017
 3. [銀行口座情報] セクションを展開します。
 4. [銀行口座] フィールドで、値を入力または選択します。
 5. [保存] をクリックします。
-
 

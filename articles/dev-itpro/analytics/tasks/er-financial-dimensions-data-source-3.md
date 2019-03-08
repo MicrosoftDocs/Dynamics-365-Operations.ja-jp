@@ -1,13 +1,13 @@
---- 
-title: "ER 財務分析コードをデータ ソースとして使用する (第 3 部 - レポートのデザイン)"
-description: "次の手順では、システム管理者に指定されたユーザーまたは電子レポート開発者のロールが、電子レポート・データソースとしての財務分析コードを使用するために 電子レポート（ER）モデルをどのように環境設定しているのか説明します。"
+---
+title: ER 財務分析コードをデータ ソースとして使用する (第 3 部 - レポートのデザイン)
+description: 次の手順では、システム管理者に指定されたユーザーまたは電子レポート開発者のロールが、電子レポート・データソースとしての財務分析コードを使用するために 電子レポート（ER）モデルをどのように環境設定しているのか説明します。
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERSolutionTable, ERSolutionCreateDropDialog, EROperationDesigner, ERComponentTypeDropDialog
 audience: Application User
 ms.reviewer: kfend
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 45096a728ad6f9e331b53b4e12ca0ff9317a3939
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "362996"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-3-design-the-report"></a>ER データ ソース (パート 3: レポートのデザイン) としての財務分析コードの使用
 
@@ -143,5 +143,4 @@ ms.lasthandoff: 10/16/2018
 44. [バインド] をクリックします。
 45. [保存] をクリックします。
 46. ページを閉じます。
-
 

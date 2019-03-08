@@ -1,13 +1,13 @@
 ---
-title: "コールセンターの注文保留のコンフィギュレーションと作業"
-description: "このトピックでは、Microsoft Dynamics 365 for Retail を使用して、注文の保留について説明します。"
+title: コールセンターの注文保留のコンフィギュレーションと作業
+description: このトピックでは、Microsoft Dynamics 365 for Retail を使用して注文を保留する方法について説明します。
 author: josaw1
 manager: AnnBe
 ms.date: 05/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: MCRHoldCodeTable, MCRSalesTableOrderHistory, MCRHoldCodeTrans
 audience: Application User
 ms.reviewer: josaw
@@ -19,19 +19,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: ba8fade84358c960dcfd1e8d9ffef1ffede34871
-ms.contentlocale: ja-jp
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "335304"
 ---
-
-# <a name="configure-and-work-with-call-center-order-holds"></a>コールセンターの注文保留のコンフィギュレーションと作業
+# <a name="configure-and-work-with-call-center-order-holds"></a>コール センターの注文保留のコンフィギュレーションおよび作業
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Retail がコール センターの注文に対して持っている注文保留機能について説明します。
+このトピックでは、Microsoft Dynamics 365 for Retail がコール センターの注文に対して保持している注文保留機能について説明します。
 
 ## <a name="configuring-call-center-order-holds"></a>コール センターの注文保留をコンフィギュレーションしています
 
@@ -63,7 +62,7 @@ ms.lasthandoff: 01/04/2019
 
 ### <a name="viewing-hold-information-for-a-single-sales-order"></a>1 つの販売注文の保留情報の表示
 
-**顧客サービス** ページで、注文明細行は特定の色で強調表示されるため、ユーザーは保留中の注文を視覚的に識別できます。 この色は**売掛金勘定パラメーター** ページの**保留中販売注文状態*** フィールドによって定義されています。
+**顧客サービス** ページで、注文明細行は特定の色で強調表示されるため、ユーザーは保留中の注文を視覚的に識別できます。 この色は**売掛金勘定パラメーター** ページの**保留中販売注文状態**フィールドによって定義されています。
 
 > [!NOTE]
 > 明細行がページで選択されている場合、強調表示色は表示されません。
@@ -104,4 +103,3 @@ ms.lasthandoff: 01/04/2019
 ## <a name="reporting-options"></a>レポート オプション
 
 日付範囲、保留コード、またはその他の関連の基準による注文保留に関するレポートを実行するため、**小売** \> **照会およびレポート** \> **コール センター レポート** \> **注文保留レポート**に移動します。
-

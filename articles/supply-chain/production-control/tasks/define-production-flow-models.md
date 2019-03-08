@@ -1,13 +1,13 @@
---- 
-title: "生産フロー モデルの定義"
-description: "生産フロー モデルは、リーン生産作業セルの能力の、計算および管理方法を示しています。"
+---
+title: 生産フロー モデルの定義
+description: 生産フロー モデルは、リーン生産作業セルの能力の、計算および管理方法を示しています。
 author: cvocph
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LeanProductionFlowModel
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: e410928bc850e1f3427c9536e9943d1196be7a05
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 7850a121ca06f25f6c532e49e18c0b6811bd7455
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336730"
 ---
 # <a name="define-production-flow-models"></a>生産フロー モデルの定義
 
@@ -45,5 +45,4 @@ ms.lasthandoff: 09/29/2017
     * 計画タイム フェンスは、関連する作業セルに能力の予約を作成できる日数について説明します。 [計画タイム フェンス] で、日数を入力します。   この期間外にあるかんばんプロセス ジョブは、自動計画では計画されません。 通常、計画タイム フェンスは、生産フローまたは作業セルで生産した製品の在庫の平均リード タイムの 2 倍です。 EPE サイクルが計画タイム フェンスの半分を超えることはできません。     
 8. [能力不足に対する反応] フィールドで、オプションを選択します。
     * オプションには次のものが含まれます:   [延期] - 利用可能なスループットで、次に作業可能な生産日のスケジューリング イベントの全需要を延期します。 [キャンセル] - スケジューリング イベントの自動計画を終了し、関連するジョブを予定外にしておきます。   [要求された日に追加] - 要求された期間に要求されたジョブを計画します。 これによりこの日のセルはオーバーロードし、プランナーは手動インタラクションを確認する必要があります。   [作業可能な期間への配分] - 最初の作業可能日から始めて、スケジューリング イベントのさまざまなジョブをすべての作業可能な生産日に対して配分します。 最少配分数量は、かんばん作業数量です。 この配分により、最少計画数量 (かんばん数量) が十分な利用可能のスループットで各日に割り当てられます。  
-
 

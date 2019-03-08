@@ -1,13 +1,13 @@
 ---
-title: "日本の郵便番号のインポート"
-description: "このトピックでは、日本の郵便番号をインポートする方法について説明します。"
+title: 日本の郵便番号のインポート
+description: このトピックでは、日本の郵便番号をインポートする方法について説明します。
 author: yijialuan
 manager: AnnBe
 ms.date: 05/29/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DirPartyTable
 audience: Application User
 ms.reviewer: shylaw
@@ -16,14 +16,13 @@ ms.search.region: Japan
 ms.author: riluan
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: e4a876b3a41c92d6247dde581bfb164d3ad9958e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 995a2263683ecd311501a36bb6fd895ed5431b26
-ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371114"
 ---
-
 # <a name="import-postal-codes-for-japan"></a>日本の郵便番号のインポート
 
 [!include [banner](../includes/banner.md)]
@@ -40,10 +39,9 @@ ms.lasthandoff: 03/26/2018
 3. ファイルで、7 桁に満たない郵便番号コードには前にゼロを追加します。 (7 桁に満たない郵便番号コードは認められません。)
 
 ## <a name="create-a-data-import-project-and-import-the-data"></a>データのインポート プロジェクトを作成し、データをインポートします。
-1. [システム管理] > [ワークスペース] > [データ管理] の順に移動します。
-2. [インポート] をクリックしてインポート プロジェクトを作成します。
-3. 名前を入力し、[日本の郵便番号] をエンティティの名前として選択します。
+1. **システム管理** > **ワークスペース** > **データ管理**の順に移動します。
+2. **インポート**をクリックしてインポート プロジェクトを作成します。
+3. 名前を入力し、**日本の郵便番号**をエンティティの名前として選択します。
 4. データ ファイルをアップロードします。
-5. [インポート] をクリックします。
+5. **インポート**をクリックします。
 6. インポート プロセスの結果を検証します。
-

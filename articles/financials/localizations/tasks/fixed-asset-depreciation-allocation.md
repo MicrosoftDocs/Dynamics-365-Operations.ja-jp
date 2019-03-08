@@ -1,13 +1,13 @@
---- 
-title: "固定資産減価償却配賦の設定"
-description: "日本では、特定の固定資産の減価償却費は複数の部門間で共有できます。"
+---
+title: 固定資産減価償却配賦の設定
+description: 日本では、特定の固定資産の減価償却費は複数の部門間で共有できます。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetAllocationRuleSetup_CN,  AssetPosting
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: China (PRC), Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 9bdc139e3a65bd11d77cbaa94ddbae1e607c55aa
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371112"
 ---
 # <a name="setup-fixed-asset-depreciation-allocation"></a>固定資産減価償却配賦の設定
 
@@ -66,5 +66,4 @@ ms.lasthandoff: 10/16/2018
 5. [減価償却配賦ルール] セクションを展開します。
 6. [減価償却の資産の配賦ルール] フィールドに値を入力します。
 7. [保存] をクリックします。
-
 

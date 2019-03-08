@@ -1,13 +1,13 @@
---- 
-title: "コール センター チャネルの作成およびチャネル属性の定義"
-description: "この手順では、新しい小売チャネルを作成し、チャネル属性を定義する方法を説明します。"
+---
+title: コール センター チャネルの作成およびチャネル属性の定義
+description: この手順では、新しい小売チャネルを作成し、チャネル属性を定義する方法を説明します。
 author: mugunthanm
 manager: AnnBe
 ms.date: 05/22/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations, Retail
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
 ms.openlocfilehash: 7ef094535214ecf4c65f95c36a93455446d7e388
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "346758"
 ---
 # <a name="create-call-center-channels-and-define-channel-attributes"></a>コール センター チャネルの作成およびチャネル属性の定義
 
@@ -99,5 +99,4 @@ ms.lasthandoff: 08/09/2018
 64. 一覧で、選択された行のリンクをクリックします。
 65. [保存] をクリックします。
 66. ページを閉じます。
-
 

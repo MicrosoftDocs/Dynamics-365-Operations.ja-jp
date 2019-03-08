@@ -1,13 +1,13 @@
---- 
-title: "発注書のプット アウェイ場所のディレクティブの設定"
-description: "この手順では、簡単な場所ディレクティブの設定方法を説明します。"
+---
+title: 発注書のプット アウェイ場所のディレクティブの設定
+description: この手順では、簡単な場所ディレクティブの設定方法を説明します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 11/02/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 9ca4b3c2598a268c065011daff31296521faa918
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 4bb4af7cb7aff101a8b9e6162823515f63b12886
-ms.openlocfilehash: 98ce3ad38dddda33be5466490fcd39d81251679c
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/02/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "349081"
 ---
 # <a name="set-up-a-location-directive-for-purchase-order-put-away"></a>発注書のプット アウェイ場所のディレクティブの設定
 
@@ -93,5 +93,4 @@ ms.lasthandoff: 11/02/2017
 4. [基準] フィールドに値を入力します。
 5. [OK] をクリックします。
     * 倉庫のすべての可能なシナリオが対象となるまで、ディレクティブ明細行とディレクティブ アクションの追加を続行できます。  
-
 

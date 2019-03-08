@@ -1,13 +1,13 @@
---- 
-title: "JBA 形式で EFT 支払ファイルを生成"
-description: "日本では一般的に、銀行間の電子資金決済 (EFT) には全国銀行協会 (JBA) のファイル形式が使用されています。"
+---
+title: JBA 形式で EFT 支払ファイルを生成
+description: 日本では一般的に、銀行間の電子資金決済 (EFT) には全国銀行協会 (JBA) のファイル形式が使用されています。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransVendPaym
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 07e7228a0cb980b9b4097444f6c2bf5cbaa361c2
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371133"
 ---
 # <a name="generate-eft-payment-file-with-jba-format"></a>JBA 形式で EFT 支払ファイルを生成
 
@@ -55,5 +55,4 @@ ms.lasthandoff: 10/16/2018
 14. [OK] をクリックします。
     * .zip ファイルが生成され、ファイルをダウンロードするように求めるメッセージが表示されます。  
     * [支払ステータス] が、[送信済] に切り替わります。  
-
 

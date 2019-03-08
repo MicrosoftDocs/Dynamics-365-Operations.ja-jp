@@ -1,13 +1,13 @@
 ---
-title: "製造オーダーのリリース"
-description: "リリースされた製造オーダーは、生産が承認された注文です。 生産の作業現場と倉庫でのプロセス実行に使用でき製造オーダーには、製造オーダーのライフ サイクルの状態を説明するのに \"リリース済\" という語句が使用されます。"
+title: 製造オーダーのリリース
+description: リリースされた製造オーダーは、生産が承認された注文です。 生産の作業現場と倉庫でのプロセス実行に使用でき製造オーダーには、製造オーダーのライフ サイクルの状態を説明するのに "リリース済" という語句が使用されます。
 author: johanhoffmann
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProdParmRelease
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 400c2786d80681827829286e6e9667b4d51612c4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 9b9009c714445871c15363c26829da812e56c688
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "339375"
 ---
-
 # <a name="release-production-orders"></a>製造オーダーのリリース
 
 [!include [banner](../includes/banner.md)]
@@ -44,7 +43,7 @@ ms.lasthandoff: 11/03/2017
 -   現物引当済である材料の場合、倉庫の作業が生成され、製造オーダーに対する材料のピッキングを行います。
 
 ## <a name="releasing-jobs-to-the-shop-floor"></a>作業現場へのジョブのリリース
-製造オーダーがリリースされた後、注文に関連付けられる生産ジョブが表示され、登録が実行できるようになります。 操作員は、[**ジョブ カード ターミナル**] ページまたは [**ジョブ カード デバイス**] ページのいずれかで、開始、停止、完了などのジョブ登録を行うことができます。 登録された時間と数量は、登録ページから生産仕訳帳に自動的に転送され、消費時間と数量が記録されます。
+製造オーダーがリリースされた後、注文に関連付けられる生産ジョブが表示され、登録が実行できるようになります。 操作員は、**ジョブ カード ターミナル** ページまたは **ジョブ カード デバイス** ページのいずれかで、開始、停止、完了などのジョブ登録を行うことができます。 登録された時間と数量は、登録ページから生産仕訳帳に自動的に転送され、消費時間と数量が記録されます。
 
 ## <a name="route-cards"></a>工順カード
 工順カードには、工順と工程の設定から、および開始工程とジョブのスケジュール方法から取得された情報の概要が記載されます。
@@ -61,7 +60,6 @@ ms.lasthandoff: 11/03/2017
 -   材料をピッキングする倉庫の場所を決定する、原材料ピッキングの場所のディレクティブ
 -   倉庫作業の実行ポリシーを構成する、原材料のウェーブ テンプレート
 -   材料をプットする場所を決定する、生産入庫の場所
-
 
 
 

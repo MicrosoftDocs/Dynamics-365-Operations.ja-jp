@@ -1,13 +1,13 @@
 ---
-title: "出張費要求"
-description: "このトピックでは、出張費要求について説明します。 出張費要求は、出張のために発生する経費を文書化したものです。"
+title: 出張費要求
+description: このトピックでは、出張費要求について説明します。 出張費要求は、出張のために発生する経費を文書化したものです。
 author: saraschi2
 manager: AnnBe
 ms.date: 02/23/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TrvRequisitionList
 audience: Application User
 ms.reviewer: shylaw
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: e69cf1112dcb4fd31c79592bf0d7a2ecd4a21adf
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 25fa39dc81fc721d7593a25a102ce47041ebc5f0
-ms.openlocfilehash: 135d787d03fe6d3ec3ca8d2324ac3055b72f2962
-ms.contentlocale: ja-jp
-ms.lasthandoff: 03/13/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "339720"
 ---
-
 # <a name="travel-requisitions"></a>出張費要求
 
 [!include [banner](../includes/banner.md)]
@@ -34,5 +33,4 @@ ms.lasthandoff: 03/13/2018
 
 出張費要求およびポリシーは、予算管理で役立てるために使用できます。 たとえば、組織が、出張が必要な固定価格プロジェクトで作業している場合、プロジェクト チームのメンバの旅行経費は、プロジェクトの予算内に合わせる必要があります。 旅行経費が発生する前に承認するように要求すると、組織はプロジェクトが予算内であることを確認することが可能になります。
 
-[出張費要求] ぺージで、出張費要求のポリシーを設定できます。
-
+**出張費要求**ぺージで、出張費要求のポリシーを設定できます。

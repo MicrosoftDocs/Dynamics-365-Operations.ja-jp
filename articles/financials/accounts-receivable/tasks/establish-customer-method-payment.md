@@ -1,13 +1,13 @@
---- 
-title: "顧客の支払方法の設定"
-description: "顧客支払の支払方法を作成します。"
+---
+title: 顧客の支払方法の設定
+description: 顧客支払の支払方法を作成します。
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustPaymMode, BankAccountTableLookUp
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: ab035c6268b701c78da32d589e99ece38c31781d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: cabcfe83ac83a8210ce4e0d46a08acdc48f4bf3b
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "348966"
 ---
 # <a name="establish-customer-method-of-payment"></a>顧客の支払方法の設定
 
@@ -54,5 +54,4 @@ ms.lasthandoff: 09/29/2017
     * たとえば、この支払方法ですべての支払を預金する必要がある場合、このタブのオプションを選択できます。  
 15. この支払方法に使用する支払属性を定義するには、[支払属性] タブを使用します。
 16. [保存] をクリックします。
-
 

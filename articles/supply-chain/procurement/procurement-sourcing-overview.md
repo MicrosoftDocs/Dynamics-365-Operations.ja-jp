@@ -1,13 +1,13 @@
 ---
-title: "調達の概要"
-description: "この記事は、調達モジュールで使用できる機能の概要を示します。"
+title: 調達の概要
+description: この記事は、調達モジュールで使用できる機能の概要を示します。
 author: FrankDahl
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CatProcureCatalogListPage, CatVendorCatalogListPage, PurchTable
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 1fc824a308d17c75d9c16391778570272e160699
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ba426692e2e404ab75e5730b8205115fc59e402f
-ms.openlocfilehash: 91881ca3999b4937d20161b8beab8e80c2675eb6
-ms.contentlocale: ja-jp
-ms.lasthandoff: 02/08/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "351634"
 ---
-
 # <a name="procurement-and-sourcing-overview"></a>調達の概要
 
 [!include [banner](../includes/banner.md)]
@@ -57,11 +56,11 @@ ms.lasthandoff: 02/08/2018
 
 発注書は*確認済*で、契約は仕入先と確立されたことを表します。 発注書は、異なる状態を使用して、最終的に請求されるか、キャンセルされるまで徐々に処理されます。  
 
-発注書を作成すると、フィールドの多くには [仕入先] ページに格納されている仕入先に関する情報が既定値として入力されます。 これは既定値の上書きを選択できますが、発注書で入力する必要があるフィールドの数に制限があることを意味します。
+発注書を作成すると、フィールドの多くには**仕入先**ページに格納されている仕入先に関する情報が既定値として入力されます。 これは既定値の上書きを選択できますが、発注書で入力する必要があるフィールドの数に制限があることを意味します。
 
 ### <a name="prices-and-discounts"></a>価格と割引
 
-価格や割引には、価格、割引、提供されるリベートの条件に関する情報が含まれます。 価格と割引は、*取引契約*として表すことができます。 売買契約は価格または割引の仕入先価格リストを表し、契約が有効になる特定の一連の日付があります。 価格と割引は、交渉の条件の前提条件として、特定の数量または金額の購入の確約のような条件を伴う*購買契約書*により、交渉され、表すことができます。 特定の製品または製品グループの調達で、購入金額または数量に応じた仕入先からのリベートがトリガされる場合、仕入先との*リベート契約*を作成できます。
+価格や割引には、価格、割引、提供されるリベートの条件に関する情報が含まれます。 価格と割引は、*売買契約*として表すことができます。 売買契約は価格または割引の仕入先価格リストを表し、契約が有効になる特定の一連の日付があります。 価格と割引は、交渉の条件の前提条件として、特定の数量または金額の購入の確約のような条件を伴う*購買契約書*により、交渉され、表すことができます。 特定の製品または製品グループの調達で、購入金額または数量に応じた仕入先からのリベートがトリガされる場合、仕入先との*リベート契約*を作成できます。
 
 ### <a name="delivery-options"></a>出荷のオプション
 
@@ -90,7 +89,6 @@ ms.lasthandoff: 02/08/2018
 
 ## <a name="vendor-performance"></a>仕入先のパフォーマンス
 支出分析および仕入先パフォーマンスの分析を含む、*調達および買掛金勘定レポート*で、購買のパフォーマンスと確認がサポートされます。
-
 
 
 

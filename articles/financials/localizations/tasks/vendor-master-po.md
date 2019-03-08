@@ -1,13 +1,13 @@
---- 
-title: "月次締め請求書の対象にする仕入先マスターおよび発注書の設定"
-description: "日本では通常、仕入先はトランザクションに月次締め請求書を使用します。"
+---
+title: 月次締め請求書の対象にする仕入先マスターおよび発注書の設定
+description: 日本では通常、仕入先はトランザクションに月次締め請求書を使用します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendTable, PurchTable
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 7cd4ccf22c9625253b2c15113c0f69394e4c4a3a
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371148"
 ---
 # <a name="setup-vendor-master-and-purchase-order-to-be-target-of-consolidated-invoice"></a>月次締め請求書の対象にする仕入先マスターおよび発注書の設定
 
@@ -53,5 +53,4 @@ ms.lasthandoff: 10/16/2018
 4. [ビューの変更] をクリックします。
 5. [ヘッダーの表示] をクリックします。
     * [締めの対象] スライダーが「はい」に設定されていることを確認します。  
-
 

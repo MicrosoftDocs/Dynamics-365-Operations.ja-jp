@@ -1,13 +1,13 @@
---- 
-title: "JBA 支払ファイル形式の有効化"
-description: "日本では、電子資金決済 (EFT) のファイル形式は全国銀行協会 (JBA) により指定されています。"
+---
+title: JBA 支払ファイル形式の有効化
+description: 日本では、電子資金決済 (EFT) のファイル形式は全国銀行協会 (JBA) により指定されています。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionRepositoryTable, ERSolutionImport,  VendPaymMode
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 8402d10f470166e5db065c3e8236c2eb971b58ee
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371134"
 ---
 # <a name="enable-the-jba-payment-file-format"></a>JBA 支払ファイル形式の有効化
 
@@ -54,5 +54,4 @@ ms.lasthandoff: 10/16/2018
 5. [書式設定のコンフィギュレーションのエクスポート] フィールドで、ドロップダウン ボタンをクリックしてルックアップを開きます。
 6. 一覧で、JBA [支払ファイル (JP)] を選択します。
 7. [保存] をクリックします。
-
 

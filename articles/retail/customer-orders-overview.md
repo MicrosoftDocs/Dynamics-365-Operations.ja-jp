@@ -1,13 +1,13 @@
 ---
-title: "Retail Modern POS (MPOS) での顧客注文の作成"
-description: "このトピックでは、Retail Modern POS (MPOS) の顧客注文に関する情報を提供します。 顧客注文は、特別注文としても知られています。 このトピックには、関連パラメーターおよびトランザクション フローのディスカッションが含まれています。"
+title: Retail Modern POS (MPOS) の顧客注文
+description: このトピックでは、Retail Modern POS (MPOS) の顧客注文に関する情報を提供します。 顧客注文は、特別注文としても知られています。 このトピックには、関連パラメーターおよびトランザクション フローのディスカッションが含まれています。
 author: josaw1
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailFunctionalityProfile
 audience: Application User
 ms.reviewer: josaw
@@ -19,15 +19,14 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: b54f39cc7896871d77f9371e6197bf6dbaac51de
-ms.contentlocale: ja-jp
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336615"
 ---
-
-# <a name="customer-orders-in-retail-modern-pos-mpos"></a>Retail Modern POS (MPOS) での顧客注文の作成
+# <a name="customer-orders-in-retail-modern-pos-mpos"></a>Retail Modern POS (MPOS) の顧客注文
 
 [!include [banner](includes/banner.md)]
 
@@ -57,7 +56,7 @@ ms.lasthandoff: 01/04/2019
 
 ## <a name="transaction-flow-for-customer-orders"></a>顧客注文のトランザクション フロー
 
-### <a name="create-a-customer-order-in-retail-modern-pos"></a>Retail Modern POS での顧客注文の作成
+### <a name="create-a-customer-order-in-retail-modern-pos"></a>Retail Modern POS で顧客注文を作成する
 
 1. トランザクションに顧客を追加します。
 2. 製品をカートに追加します。
@@ -102,4 +101,3 @@ ms.lasthandoff: 01/04/2019
 ## <a name="additional-resources"></a>その他のリソース
 
 [ハイブリッド顧客注文](hybrid-customer-orders.md)
-

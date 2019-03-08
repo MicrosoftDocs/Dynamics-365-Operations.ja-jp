@@ -1,13 +1,13 @@
---- 
-title: "Word 形式でレポートを生成するための ER コンフィギュレーションのデザイン"
-description: "次の手順では、システム管理者または電子申告開発者のロールを持つユーザーが、電子申告形式をコンフィギュレーションして、Microsoft Word ファイルとしてレポートを生成する方法を説明します。"
+---
+title: Word 形式でレポートを生成するための ER コンフィギュレーションのデザイン
+description: 次の手順では、システム管理者または電子申告開発者のロールを持つユーザーが、電子申告形式をコンフィギュレーションして、Microsoft Word ファイルとしてレポートを生成する方法を説明します。
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, EROperationDesigner,  LedgerJournalTable, LedgerJournalTransVendPaym
 audience: Application User
 ms.reviewer: shylaw
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: dc47d44285af4c720d2f450d11fb1004ef461d0f
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "362352"
 ---
 # <a name="design-er-configurations-to-generate-reports-in-word-format"></a>Word 形式でレポートを生成するための ER コンフィギュレーションのデザイン
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-次の手順では、システム管理者または電子レポート開発者のロールを持つユーザーが、電子レポート (ER) 形式を構成して、Microsoft Word ファイルとしてレポートを生成する方法を説明します。 これらのステップは GBSI 会社で実行できます。
+次の手順では、システム管理者または電子申告開発者のロールを持つユーザーが、電子申告 (ER) 形式をコンフィギュレーションして、Microsoft Word ファイルとしてレポートを生成する方法を説明します。 これらのステップは GBSI 会社で実行できます。
 
 これらのステップを完了するには、「OPENXML 形式でレポートを生成する ER コンフィギュレーションの作成」タスク ガイドの手順を最初に完了する必要があります。 また事前に、サンプル レポート用に次のテンプレートをダウンロードしてローカルに保存する必要があります。
 
@@ -35,7 +35,7 @@ ms.lasthandoff: 10/16/2018
 - [支払レポートのバインドされたテンプレート](https://go.microsoft.com/fwlink/?linkid=862266)
 
 
-この手順は、Microsoft Dynamics 365 for Operations バージョン 1611 に追加された機能です。
+この手順は Microsoft Dynamics 365 for Operations バージョン 1611 に追加された機能です。
 
 
 ## <a name="select-the-existing-er-report-configuration"></a>既存の ER レポート コンフィギュレーションを選択します
@@ -99,5 +99,4 @@ ms.lasthandoff: 10/16/2018
 16. [OK] をクリックします。
 17. [OK] をクリックします。
     * 生成された出力を解析します。 作成された出力が Word 形式で表示され、その出力に処理済みの支払の詳細が含まれます。  
-
 

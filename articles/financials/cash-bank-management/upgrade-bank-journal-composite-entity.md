@@ -1,13 +1,13 @@
 ---
-title: "銀行仕訳帳の複合エンティティの更新"
-description: "追加のBankTransactionType フィールドに複合 BankJournalEntity を追加するには以下の手順が必要です。"
+title: 銀行仕訳帳の複合エンティティの更新
+description: 追加のBankTransactionType フィールドに複合 BankJournalEntity を追加するには以下の手順が必要です。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 70db65dca4cfadd1ed8769386b4b437cecc217a2
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: a8b11df3b21f8d97986d934ff3c65931aa7ee0c6
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "359362"
 ---
-
 # <a name="update-the-bank-journal-composite-entity"></a>銀行仕訳帳の複合エンティティの更新
 
 [!include [banner](../includes/banner.md)]
@@ -45,14 +44,13 @@ ms.lasthandoff: 11/03/2017
         -   ソースデータ形式 = XML-Element
         -   エンティティ名 = 銀行仕訳帳
         -   データ ファイルのアップロード = 新しいバージョンの SampleBankJournalCompositeEntity.xml
-        -   既存のファイルを上書きするには、[**はい**]をクリックします。
-        -   最初からマッピングを生成するためには、[**はい**] をクリックします。
+        -   既存のファイルを上書きするには、**はい**をクリックします。
+        -   最初からマッピングを生成するためには、**はい** をクリックします。
         -   銀行トランザクション タイプがマップされていることを確認します。
-            -   明細行エンティティの [**マップの表示**] をクリックします。
+            -   明細行エンティティの **マップの表示** をクリックします。
             -   銀行トランザクション タイプがソースからステージングにマップされたことを確認します。
 
 3.  新しい明細書をインポートします。
-
 
 
 

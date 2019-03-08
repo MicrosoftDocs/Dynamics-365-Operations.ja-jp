@@ -1,13 +1,13 @@
 ---
-title: "日本の累進的源泉徴収税"
-description: "このトピックでは、日本の累進的源泉徴収税に関する情報を提供します。"
+title: 日本の累進的源泉徴収税
+description: このトピックでは、日本の累進的源泉徴収税に関する情報を提供します。
 author: yijialuan
 manager: AnnBe
 ms.date: 03/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TaxWithholdGroup, TaxWithholdTable, TaxWithholdTrans
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Japan
 ms.author: riluan
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 44b15e29d20d02cfac9962e25bb588a94c3b587e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 2bd7a868a4ec01f2027c97231d16528edae3a490
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371003"
 ---
-
 # <a name="progressive-withholding-tax-for-japan"></a>日本の累進的源泉徴収税
 
 [!include [banner](../includes/banner.md)]
@@ -127,5 +126,4 @@ ms.lasthandoff: 04/13/2018
 |       1,001 ～ 2,000       | 15% |                    1,000.00                     |         150.00          |
 |         2,001 ～ 0         | 20% |                    2,545.00                     |         509.00          |
 |                         |            |        <strong>合計 WHT 金額</strong>        | <strong>759.00</strong> |
-
 

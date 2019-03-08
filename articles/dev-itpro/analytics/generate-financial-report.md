@@ -1,13 +1,13 @@
 ---
-title: "財務諸表の生成"
-description: "このトピックでは、財務諸表の生成に関する情報を提供します。"
+title: 財務諸表の生成
+description: このトピックでは、財務諸表の生成に関する情報を提供します。
 author: aprilolson
 manager: AnnBe
 ms.date: 09/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: a128f326cb89ab00e69be40801553c0ac551446e
 ms.openlocfilehash: 70fa1298c3af43f62b8fa0b833fa817f17858c47
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "340893"
 ---
-
 # <a name="generate-financial-reports"></a>財務諸表の生成
 
 [!include [banner](../includes/banner.md)]
@@ -41,7 +40,7 @@ ms.lasthandoff: 10/16/2018
 
 レポートを生成すると、[レポート定義 ] タブで指定したオプションを使用します。
 
-## <a name="generate-a-financial-report"></a>財務諸表の生成
+## <a name="generate-a-financial-report"></a>財務諸表を生成します
 
 Microsoft Dynamics 365 for Finance and Operations の財務諸表を生成するには、**一般会計** \> **照会およびレポート** \> **財務諸表**の順に移動します。
 
@@ -115,7 +114,7 @@ Microsoft Dynamics 365 for Finance and Operations の財務諸表を生成する
 > [!TIP]
 > 検証の目的で、このプロセスは、月次レポートを生成する前、また新しいレポート パーツを作成するときに実行する必要があります。
 
-レポートに値の範囲がある場合、欠落している勘定がある可能性は少なくなります。 可能であれば、作成時に新規の勘定を含むよう構成要素に範囲を使用してください。 レポート定義が [@ANY] 会社に設定されている場合、特定の会社にログオンし、その会社の欠落している勘定分析を実行できます。
+レポートに値の範囲がある場合、欠落している勘定がある可能性は少なくなります。 可能であれば、作成時に新規の勘定を含むよう構成要素に範囲を使用してください。 レポート定義が [@ANY (任意)] の会社に設定されている場合、特定の会社にログオンし、その会社の欠落している勘定分析を実行できます。
 
 > [!NOTE]
 > 新しい会社が追加された場合、既存のレポートのレポート ツリーに新しい会社を追加する必要があります。そうしないと、その会社は欠落している勘定分析には含まれません。
@@ -158,4 +157,3 @@ Microsoft Dynamics 365 for Finance and Operations の財務諸表を生成する
 [財務報告](financial-reporting-intro.md)
 
 [レポート デザイナー インターフェイス](report-designer-interface.md)
-

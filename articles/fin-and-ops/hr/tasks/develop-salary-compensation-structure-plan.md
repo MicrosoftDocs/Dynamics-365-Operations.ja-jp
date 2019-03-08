@@ -1,13 +1,13 @@
---- 
-title: "給与/報酬の構造と計画の作成"
-description: "このタスク ガイドでは、固定報酬プランを作成するプロセス、および適格性ルールで計画に登録する従業員を有効にするプロセスについて説明します。"
+---
+title: 給与/報酬の構造と計画の作成
+description: このタスク ガイドでは、固定報酬プランを作成するプロセス、および適格性ルールで計画に登録する従業員を有効にするプロセスについて説明します。
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DefaultDashboard, HcmCompensationWorkspace, HcmCompFixedPlansPart, HRMCompFixedPlanTable, HRMCompCreateGridDialog, HRCCompGridView, HRMCompEligibility,  HRCCompGrid
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 28d044cedbcc9f483a4deb7739aef0f8e3abf9ec
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "332774"
 ---
 # <a name="develop-salarycompensation-structure-and-plan"></a>給与/報酬の構造と計画の作成
 
@@ -74,5 +74,4 @@ ms.lasthandoff: 10/16/2018
     * 従業員が報酬プランの登録対象になるために満たす必要のある基準を選択します。 基準には、部門、労働組合、場所 (報酬場所)、職務、機能、ジョブ タイプ、および報酬レベルを含むことができます。 従業員は、報酬プランの登録対象になるには、指定された基準をすべて満たす必要があります。 基準が指定されていない場合、すべての従業員が報酬プランの登録対象になります。 従業員が適格性ルールで指定した条件を満たさない場合、または適格性ルールが報酬プランに対して指定されていない場合は、従業員の固定報酬レコードを作成するときに報酬プランがルックアップに表示されません。  
 7. ページを閉じます。
 8. ページを閉じます。
-
 

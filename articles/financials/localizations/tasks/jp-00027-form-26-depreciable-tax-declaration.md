@@ -1,13 +1,13 @@
---- 
-title: "JP-00027 減価償却税申告のフォーム 26"
-description: "このタスクでは、登録番号の固定資産への割り当て方法と申告 26 レポートの印刷について説明します。"
+---
+title: JP-00027 減価償却税申告のフォーム 26
+description: このタスクでは、登録番号の固定資産への割り当て方法と申告 26 レポートの印刷について説明します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: OMLegalEntity, LogisticsPostalAddress, SysLookupMultiSelectGrid, LogisticsAddressCityLookup, AssetLocation, AssetLocationEdit_JP, AssetGroup, AssetTable, LedgerJournalTable, LedgerJournalTransAsset, DefaultDashboard
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: dde62161f1b7020d9ce21efce8df7d4784b04a3d
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371078"
 ---
 # <a name="jp-00027-form-26-for-depreciable-tax-declaration"></a>JP-00027 減価償却税申告のフォーム 26
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 10/16/2018
 
 このタスクを完了するためには、[固定資産コンフィギュレーション キー] を選択する必要があります。
 
-この手順では、JPMF デモ会社のデータを使用します。 この手順は、Dynamics 365 for Operations、バージョン 1611 に追加された機能です。
+この手順では、JPMF デモ会社のデータを使用します。 この手順は Dynamics 365 for Operations バージョン 1611 に追加された機能です。
 
 
 ## <a name="create-a-registration-number"></a>登録番号の作成
@@ -100,5 +100,4 @@ ms.lasthandoff: 10/16/2018
 4. [登録番号] フィールドで、値を入力または選択します。
     * 必要な場所でレポートを表示/保存します。  印刷レポートの検証、固定資産を登録番号ごとに分類してグループ化します。  
     * 同様の固定資産の分類 n グループが、申告 26-1 n 申告 26-2 レポートに提示されます  
-
 

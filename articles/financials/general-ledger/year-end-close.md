@@ -1,13 +1,13 @@
 ---
-title: "年度末決算"
-description: "このトピックでは、一般会計の年度末決算処理を実行するために必要な設定と手順について説明します。"
+title: 年度末決算
+description: このトピックでは、一般会計の年度末決算処理を実行するために必要な設定と手順について説明します。
 author: kweekley
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerClosingSheet
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 9ec2316dd259cd12a5cab187b08dbd17ca100572
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: bf9d0a6ab0fcf7d6f5a31813d68f0bd452ce1019
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347885"
 ---
-
 # <a name="year-end-close"></a>年度末決算
 
 [!include [banner](../includes/banner.md)]
@@ -39,7 +38,7 @@ ms.lasthandoff: 11/03/2017
 ## <a name="prepare-to-run-the-year-end-close"></a>年度末決算実行のための準備
 年度末決算処理を実行する前に、次の設定を検証します。 
 
-[**主勘定**] ページ:
+**主勘定** ページ:
 
 -   **主勘定タイプ** が各主勘定に対して正しく定義されているか検証します。 主勘定タイプは、主勘定の残高が開始残高として繰り越されるか、開始トランザクションで利益剰余金として決算されるかどう決定するために使用されます。
 -   **開始勘定** フィールドは、主勘定の残高を年度末決算中に新しい主勘定へ転送するのに使用できます。 新しい主勘定は **開始勘定** フィールドに入力されます。 通常これは、主勘定が無効になり、新しい会計年度に新しい主勘定が使用されるとき、賃借対照表の主勘定に使用されます。
@@ -86,7 +85,6 @@ ms.lasthandoff: 11/03/2017
 年度末決算処理は既定ではバッチ モードで実行されます。 推奨設定は、ユーザーが他の活動に戻れるようバッチ モードで処理を実行することです。 年度末決算処理が完了すると、**昨年の年度末決算処理の日付** フィールドがセッションの日付で更新されます。
 
 詳細については、[期末に一般会計を決算](close-general-ledger-at-period-end.md) と [会計年度期間を終了](tasks/close-fiscal-year.md) を参照してください。
-
 
 
 

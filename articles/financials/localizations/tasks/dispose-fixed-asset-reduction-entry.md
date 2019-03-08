@@ -1,13 +1,13 @@
---- 
-title: "圧縮記帳のある固定資産の処分"
-description: "このタスクでは、圧縮記帳のある固定資産の日本での処理方法について説明します。"
+---
+title: 圧縮記帳のある固定資産の処分
+description: このタスクでは、圧縮記帳のある固定資産の日本での処理方法について説明します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransAsset, SysQueryForm
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: f6c759bab60cfe035f63ead45f114a8dd6b7a94f
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371061"
 ---
 # <a name="dispose-of-a-fixed-asset-with-reduction-entry"></a>圧縮記帳のある固定資産の処分
 
@@ -53,5 +53,4 @@ ms.lasthandoff: 10/16/2018
     * 圧縮記帳ドキュメントは、固定資産ドキュメントとは別に処分されます。  
     * 元の助成金額および累計償却額は、固定資産の転記プロファイルのコンフィギュレーションに従って自動的に設定されます。  
 13. [転記] をクリックします。
-
 

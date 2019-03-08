@@ -1,13 +1,13 @@
 ---
-title: "BOM とフォーミュラ明細行を倉庫にリリース"
-description: "このトピックでは、BOM 明細行とフォーミュラ明細行の原材料消費を倉庫にリリースするプロセスについて説明します。"
+title: BOM とフォーミュラ明細行を倉庫にリリース
+description: このトピックでは、BOM 明細行とフォーミュラ明細行の原材料消費を倉庫にリリースするプロセスについて説明します。
 author: johanhoffmann
 manager: AnnBe
 ms.date: 10/30/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysOperationTemplateForm
 audience: Application User
 ms.reviewer: josaw
@@ -16,15 +16,14 @@ ms.custom: 1705903
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
+ms.openlocfilehash: 8ccdb71f49652d6cca6ced2e9e9764d9ad0fffd8
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
-ms.openlocfilehash: 2bccabb033f5ba142b145e69930ce516aad596f2
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "343147"
 ---
-
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a>BOM とフォーミュラ明細行を倉庫にリリース
 
 [!include [banner](../includes/banner.md)]
@@ -84,7 +83,7 @@ BOM とフォーミュラ明細行をリリースするために使用する方�
 
 ![工程番号ごとの材料のリリースの例](media/two-operations.PNG)
 
-完成品の量に比例して材料をリリースする方法の簡単なデモについては、この短い YouTube ビデオをご覧ください。[Dynamics 365 for Finance and Operations の製造オーダー リリース プロセスの拡張機能](https://www.youtube.com/watch?v=Rm3ojAz6Zu0)
+完成品の量に比例して材料をリリースする方法の簡単なデモについては、この短い YouTube ビデオをご覧ください: [Dynamics 365 for Finance and Operations の製造オーダー リリース プロセスの拡張機能](https://www.youtube.com/watch?v=Rm3ojAz6Zu0)
 
 ### <a name="release-material-in-proportion-to-the-amount-of-finished-goods"></a>完成品の量に比例して材料をリリース
 
@@ -99,4 +98,3 @@ BOM とフォーミュラ明細行をリリースするために使用する方�
     使用可能な単位は、完成品の単位順序グループ ID で定義されます。
 
     たとえば完成品は、ポンド単位 (Ibs) とパレット (PL) の間の単位換算で、1 パレット = 100 ポンドとなります。 10,000 ポンドの製造オーダーを作成します。 その完成品のうち、生産予定のパレット番号の原材料をリリースできます。 単位で **PL** を選び、そして **数量** フィールドで対応する数を選択します。
-

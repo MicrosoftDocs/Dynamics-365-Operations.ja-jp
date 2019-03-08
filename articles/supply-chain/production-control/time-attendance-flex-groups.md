@@ -1,13 +1,13 @@
 ---
-title: "フレックス グループ"
-description: "このトピックでは、時刻と出勤でのフレックス グループの使用方法について説明します。"
+title: フレックス グループ
+description: このトピックでは、時刻と出勤でのフレックス グループの使用方法について説明します。
 author: johanhoffmann
 manager: AnnBe
 ms.date: 03/15/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: JmgFlexGroup
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
+ms.openlocfilehash: aae00f3605a6598a34e58fad3e06e687476dd859
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: e21a2de2f46c619f27eddad4d7cced260a90bbb8
-ms.openlocfilehash: 20f317ff57fac25b5b5b0d702fe64845eb849e87
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/09/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "361202"
 ---
-
 # <a name="flex-groups"></a>フレックス グループ
 
 [!include[banner](../includes/banner.md)]
@@ -153,7 +152,7 @@ ms.lasthandoff: 04/09/2018
     | FlexCnt  | フレックス カウンター | 午後 06 時 00 分  | 午前 12 時 00 分 | 02.00   | 06.00   | 2.00   |
 
     > [!NOTE]
-    > 個々の明細行は、異なる時間間隔に対して使用され異なる係数を有します。 作業者が時間間隔で働くフレックス時間は、その明細行の係数によって乗算されます。 たとえば、午後 6 時から午後 8 時までの作業時間には 1.50 が掛けられます。 係数は、[**支払協定行**] ぺージの [**一般**] タブの [**係数**] フィールドで指定します。
+    > 個々の明細行は、異なる時間間隔に対して使用され異なる係数を有します。 作業者が時間間隔で働くフレックス時間は、その明細行の係数によって乗算されます。 たとえば、午後 6 時から午後 8 時までの作業時間には 1.50 が掛けられます。 係数は、**支払協定行** ぺージの **一般** タブの **係数** フィールドで指定します。
 
 作業者は、その日の次の登録を入力します。
 
@@ -163,7 +162,7 @@ ms.lasthandoff: 04/09/2018
 | 生産ジョブ            | 午前 7 時 00 分 | 午後 09 時 00 分 |
 | 退勤                 | 午後 09 時 00 分 | 午後 09 時 00 分 |
 
-支払う必要のある金額は、[**承認**] ページで、作業者の登録に基づいて計算されます。 登録が計算された後、[**時間**] タブで結果を表示できます。このシナリオでは、次のフィールドに関心があります。
+支払う必要のある金額は、**承認** ページで、作業者の登録に基づいて計算されます。 登録が計算された後、**時間** タブで結果を表示できます。このシナリオでは、次のフィールドに関心があります。
 
 | フレックス + | フレックス - | 時刻  | 有給時間内勤務 |
 |--------|--------|-------|----------|
@@ -186,4 +185,3 @@ ms.lasthandoff: 04/09/2018
 | 午後 06 時 00 分 | 午後 08 時 00 分 | 2    | 1.5       | 3            |
 | 午後 08 時 00 分 | 午後 09 時 00 分 | 1    | 2         | 2            |
 |          |          |      | **合計** | **8**        |
-

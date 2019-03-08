@@ -1,13 +1,13 @@
---- 
-title: "取立情報の確認"
-description: "この手順は、回収情報およびさまざまな設定オプションや回収トランザクションを確認する方法を説明します。"
+---
+title: 取立情報の確認
+description: この手順は、回収情報およびさまざまな設定オプションや回収トランザクションを確認する方法を説明します。
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustCollectionsPool, SysQueryForm, CustCollectionsAgent, OMTeamSelectMemberDialog, CustVendReportInterval, CustParameters, CustAgingSnapshot, CustVendAgingBucketLookUp, CustCollectionsPoolsListPage, CustCollectionsContactPart, CustCollections
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 44d89d2bacc8f301a19bfd09d229809d492a55fb
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: eb0866505702ec5d047b6c8f3f0657aae787bedc
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "349104"
 ---
 # <a name="review-collections-information"></a>取立情報の確認
 
@@ -131,5 +131,4 @@ ms.lasthandoff: 09/29/2017
     * 顧客に割り当てられた回収ケースを選択するか、このフィールドを空白のままにします。 ケースが選択されている場合、ケースに関連付けられる活動およびトランザクションのみがこのフォームで表示されます。  
 8. [リストを表示] をクリックします。
     * 顧客 ID を選択するか、既定のエントリを使用します。 既定では、これはリスト ページで、またはこのフォームを開いたフォームで選択した顧客 ID です。 リスト ページからフォームを開いた場合は、リストの顧客は、リスト ページで使用される回収プールに含まれる顧客です。  
-
 

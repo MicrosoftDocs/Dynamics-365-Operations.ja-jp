@@ -1,13 +1,13 @@
---- 
-title: "会社間財務データ共有のコンフィギュレーション"
-description: "この手順では、会社間でデータを共有するときに、コンフィギュレーション、有効化、検証、および競合を解決する方法を示します。"
+---
+title: 会社間財務データ共有のコンフィギュレーション
+description: この手順では、会社間でデータを共有するときに、コンフィギュレーション、有効化、検証、および競合を解決する方法を示します。
 author: aprilolson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DataManagementWorkspace, DMFQuickImportExportRnr, DMFExecutionHistoryWorkspace, DMFExecutionHistorySummary, DMFExecutionHistoryEntities,  SysDataSharingConfiguration, SysDataSharingDiscrepencies
 audience: Application User
 ms.reviewer: margoc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 784a925fa06148cad780b494c88b9a7af1809c9d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 779722bd3acd10a85b089a4d30757b62293ea4e4
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "357844"
 ---
 # <a name="configure-financial-cross-company-data-sharing"></a>会社間財務データ共有のコンフィギュレーション
 
@@ -63,5 +63,4 @@ ms.lasthandoff: 09/29/2017
 26. [会社 1 の値を使用] をクリックします。
 27. ページを更新します。
 28. ページを閉じます。
-
 

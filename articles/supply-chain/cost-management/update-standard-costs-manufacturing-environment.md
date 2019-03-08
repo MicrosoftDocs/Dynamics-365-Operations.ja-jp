@@ -1,13 +1,13 @@
 ---
-title: "製造環境での標準原価を更新"
-description: "この記事は、製造環境での標準原価の更新方法についてのガイダンスを提供します。"
+title: 製造環境での標準原価を更新
+description: この記事は、製造環境での標準原価の更新方法についてのガイダンスを提供します。
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CostingVersion, InventStdCostConv
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: fccfcec3d74bd13aa1b6511ebd37ee1454d1b47b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b9ad13071c3e0c3a294e9d4413de160a58559640
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "332360"
 ---
-
 # <a name="update-standard-costs-in-a-manufacturing-environment"></a>製造環境での標準原価を更新
 
 [!include [banner](../includes/banner.md)]
@@ -46,7 +45,6 @@ ms.lasthandoff: 11/03/2017
 -   定義済み、承認済みで有効な BOM および工順情報を基にして、新しい製造品目の原価を計算します。
 
 いずれの場合も、標準原価の更新方法を慎重に検討する必要があります。
-
 
 
 

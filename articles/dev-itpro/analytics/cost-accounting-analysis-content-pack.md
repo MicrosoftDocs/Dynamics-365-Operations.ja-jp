@@ -1,13 +1,13 @@
 ---
-title: "原価会計分析 Power BI コンテンツ"
-description: "このトピックでは、原価会計分析 Power BI コンテンツの内容について説明します。 Power BI レポートにアクセスする方法を説明し、コンテンツを作成するために使用したデータ モデルおよびエンティティについての情報を提供します。"
+title: 原価会計分析 Power BI コンテンツ
+description: このトピックでは、原価会計分析 Power BI コンテンツの内容について説明します。 Power BI レポートにアクセスする方法を説明し、コンテンツを作成するために使用したデータ モデルおよびエンティティについての情報を提供します。
 author: AndersGirke
 manager: AnnBe
 ms.date: 12/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: d0b563044843157940f456b07479bbd6006a42f9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: af87f3f7c3fab9b6baecefbedcd855a764f31cbe
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347448"
 ---
-
 # <a name="cost-accounting-analysis-power-bi-content"></a>原価会計分析 Power BI コンテンツ
 
 [!include [banner](../includes/banner.md)]
@@ -41,14 +40,14 @@ ms.lasthandoff: 08/09/2018
 
 原価会計に関する詳細については、「[原価会計ホーム ページ](../../financials/cost-accounting/cost-accounting-home-page.md)」を参照してください。
 
-原価会計のアクセス レベルのセキュリティを定義して、Power BI で行レベルのセキュリティと組み合わせることにより、すべての原価オブジェクトの所有者に**原価会計分析** Power BI コンテンツにアクセス権を付与できます。 表示されるすべてのデータは、原価会計で操作するアクセス レベルに基づいてフィルター処理されます。 アクセス レベルのセキュリティおよび行レベルのセキュリティの詳細については、「[Power BI の原価会計コンテンツ向けセキュリティの設定](setup-security-cost-accounting-content-pack.md)」を参照してください。
+原価会計のアクセス レベルのセキュリティを定義して、Power BI で行レベルのセキュリティと組み合わせることにより、すべての原価オブジェクトの所有者に**原価会計分析** Power BI コンテンツにアクセス権を付与できます。 表示されるすべてのデータは、原価会計で操作するアクセス レベルに基づいてフィルター処理されます。 アクセス レベルのセキュリティおよび行レベルのセキュリティの詳細については、[Power BI の原価会計コンテンツ向けセキュリティの設定](setup-security-cost-accounting-content-pack.md) を参照してください。
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI コンテンツへのアクセス
-**原価会計分析** Power BI コンテンツは、Microsoft Dynamics Lifecycle Services (LCS) の共有アセット ライブラリにあります。 コンテンツのダウンロード方法および組織で実装する方法の詳細については、「[Microsoft およびパートナーからの LCS での Power BI コンテンツ](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/)」を参照してください。
+**原価会計分析** Power BI コンテンツは、Microsoft Dynamics Lifecycle Services (LCS) の共有アセット ライブラリにあります。 コンテンツのダウンロード方法および組織で実装する方法の詳細については、[Microsoft およびパートナーからの LCS での Power BI コンテンツ](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/) を参照してください。
 
 <!--To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.-->
 
-ご使用のバージョンの Microsoft Dynamics 365 に適用する **原価会計分析** コンテンツをダウンロードしてください。
+ご使用のバージョンの Microsoft Dynamics 365 に適用される**原価会計分析**コンテンツをダウンロードしてください。
 
 > [!NOTE]
 > KB 4011327 は、この Power BI コンテンツの前提条件となります。 LCS にサインインすると、<https://fix.lcs.dynamics.com/issue/results/?q=kb4011327> でサポート技術情報にアクセスできます。
@@ -56,7 +55,7 @@ ms.lasthandoff: 08/09/2018
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Power BI コンテンツに含まれるメトリックス
 コンテンツには、レポートのページ一式が含まれます。 各ページは、グラフ、タイル、テーブルとして視覚化される一連のメトリックスで構成されています。 次の表に、**原価会計分析** Power BI コンテンツの表示の概要を示します。
 
-| レポート ページ                      | グラフ                                                                                                                         | タイル                                          |
+| レポート ページ                      | チャート                                                                                                                         | タイル                                          |
 |----------------------------------|-------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|
 | 会計期間ごとの原価管理    | 原価要素階層レベルごとの実績原価と予算原価                                                                   | 実際原価対予算原価                    |
 |                                  | 原価要素階層レベルごとの予算変動                                                                               | 実際原価率対予算原価率          |
@@ -75,7 +74,7 @@ ms.lasthandoff: 08/09/2018
 |                                  | 原価要素階層レベルおよび原価要素の分析コード メンバー名ごとの実際原価                                       |                                               |
 
 ## <a name="understanding-the-data-model-and-entities"></a>データ モデルおよびエンティティの理解
-次のデータは、**原価会計分析** Power BI コンテンツのレポート ページに入力するために使用されます。 このデータは、エンティティ ストアで実施される集計の測定として表されます。 エンティティ ストアは、分析に最適化された Microsoft SQL Server データベースです。 詳細については、「[エンティティ ストアとの Power BI の統合](power-bi-integration-entity-store.md)」を参照してください。
+次のデータは、**原価会計分析** Power BI コンテンツのレポート ページに入力するために使用されます。 このデータは、エンティティ ストアで実施される集計の測定として表されます。 エンティティ ストアは、分析に最適化された Microsoft SQL Server データベースです。 詳細については、[エンティティ格納と Power BI の統合の概要](power-bi-integration-entity-store.md) を参照してください。
 
 以下のキー集計の測定は、コンテンツの基準として使用されます。
 
@@ -127,4 +126,3 @@ ms.lasthandoff: 08/09/2018
 | 会計カレンダー                   | カレンダー、カレンダーの説明                                                                                       |
 | 年度                       | 暦年                                                                                                        |
 | 会計年度期間                     | 暦年                                                                                                 |
-

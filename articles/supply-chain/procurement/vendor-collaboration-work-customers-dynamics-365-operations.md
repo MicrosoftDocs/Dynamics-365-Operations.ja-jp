@@ -1,13 +1,13 @@
 ---
-title: "顧客対応における仕入先コラボレーション"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations で仕入先コラボレーションを使用して発注書を処理し委託販売在庫を監視する方法について説明します。"
+title: 顧客対応における仕入先コラボレーション
+description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations で仕入先コラボレーションを使用して発注書を処理し委託販売在庫を監視する方法について説明します。
 author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ConsignmentProductReceiptLines, ConsignmentVendorPortalOnHand, PurchVendorPortalConfirmedOrders, PurchVendorPortalOriginalOrder, PurchVendorPortalResponsesHistoryList, PurchVendorPortalResponsesPart
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: bd3967da105b3cec4a722ee8e04fac13c798feec
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 6ab1d60839131b3d4bb1782319754ba63d54cfd7
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "342940"
 ---
-
 # <a name="vendor-collaboration-with-customers"></a>顧客との仕入先コラボレーション
 
 [!include [banner](../includes/banner.md)]
@@ -144,4 +143,3 @@ RFQ が修正された場合は、新しい入札を入力する必要があり�
 ## <a name="additional-resources"></a>その他のリソース
 
 [仕入先コラボレーション ユーザーの管理](manage-vendor-collaboration-users.md)
-

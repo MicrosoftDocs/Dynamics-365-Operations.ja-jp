@@ -1,13 +1,13 @@
 ---
-title: "SEPA の口座引落の概要"
-description: "単一ユーロ支払地域 (SEPA) は欧州委員会によって設定され、個人、事業または組織および銀行がどの国または地域にあるかに関係なく、すべての電子支払は国内と見なされます。 国内支払と国境を越えた支払の間に違いはありません。 SEPA には、28 の欧州連合 (EU) の加盟国とアイスランド、リヒテンシュタイン、ノルウェー、スイス、およびモナコとサンマリノが含まれます。 SEPA により、欧州経済領域 (EEA) 内の支払トランザクションの単一市場が形成されます。 最終的に、SEPA により、銀行、事業、および個人が扱う支払形式の数を減らすと予想されます。"
+title: SEPA の口座引落の概要
+description: 単一ユーロ支払地域 (SEPA) は欧州委員会によって設定され、個人、事業または組織および銀行がどの国または地域にあるかに関係なく、すべての電子支払は国内と見なされます。 国内支払と国境を越えた支払の間に違いはありません。 SEPA には、28 の欧州連合 (EU) の加盟国とアイスランド、リヒテンシュタイン、ノルウェー、スイス、およびモナコとサンマリノが含まれます。 SEPA により、欧州経済領域 (EEA) 内の支払トランザクションの単一市場が形成されます。 最終的に、SEPA により、銀行、事業、および個人が扱う支払形式の数を減らすと予想されます。
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankAccountTable, CustBankAccounts, CustParameters, CustTable
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 23c418c6412e4bd300616eed4577e2b1d3f3d181
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: fb55f4b0b06019891c2e490eda837cfad882e6db
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "359201"
 ---
-
 # <a name="sepa-direct-debit-overview"></a>SEPA の口座引落の概要
 
 [!include [banner](../includes/banner.md)]
@@ -80,7 +79,6 @@ SEPA 口座引落用の電子支払ファイルを次の形式で生成します
 
 ## <a name="how-do-refunds-and-returns-work-with-sepa-direct-debits"></a>払戻および返品は SEPA 口座引落ではどのように扱われますか。
 両方の SEPA 口座引落のスキームで、顧客には払戻の一定の権利があります。 顧客は、理由を与えずに、期日から 8 週間の間に承認されたトランザクションを取り消すことができます。 無許可のトランザクションの場合、期間は期日から 13 か月に延長されます。 [顧客トランザクション] ページの [支払いのキャンセル] ボタンを使用して、既に支払われたどんな支払でも手動で取り消すことができます。
-
 
 
 

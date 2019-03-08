@@ -1,13 +1,13 @@
---- 
-title: "番号順序を個別に設定する"
-description: "番号順序は、マスタ データ レコードおよびトランザクション レコードに必要な読みやすい固有 ID の生成に使用されます。"
+---
+title: 番号順序を個別に設定する
+description: 番号順序は、マスタ データ レコードおよびトランザクション レコードに必要な読みやすい固有 ID の生成に使用されます。
 author: sericks007
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: NumberSequenceTableListPage, NumberSequenceDetails
 audience: Application User
 ms.reviewer: sericks
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 6734d66a06f8a8dc90a48bd68b7b4e22177b4672
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 4e2808e57dc8d137fac892d48e99d7687ff1bf81
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "362214"
 ---
 # <a name="set-up-number-sequences-on-an-individual-basis"></a>番号順序を個別に設定する
 
@@ -43,5 +43,4 @@ ms.lasthandoff: 09/29/2017
 8. [一般] セクションを展開します。
     * [全般] クイック タブで、番号順序を手動で生成するかどうか、および連続させるかどうかを選択します。 また、番号順序で使用できる最小番号と最大番号を入力します。     連続しない番号順序を連続する番号順序に変更することはお勧めしません。 番号順序が、完全には連続しなくなります。 この変更を行うと、データベースに重複キーエラーが発生してしまうこともあります。 また、連続する番号順序は、パフォーマンスに大きな影響を与えます。   
 9. [保存] をクリックします。
-
 

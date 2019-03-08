@@ -1,13 +1,13 @@
 ---
-title: "間接費の計算"
-description: "このトピックでは、間接費を計算し配賦するための標準的なプロセスについて説明します。"
+title: 間接費の計算
+description: このトピックでは、間接費を計算し配賦するための標準的なプロセスについて説明します。
 author: AndersGirke
 manager: AnnBe
 ms.date: 10/04/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CAMActualVersion, CAMBudgetVersion, CAMOverheadCalculation
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.translationtype: HT
-ms.sourcegitcommit: 12ae99c15bafcd9cc08b30903fe3f251f446b17d
 ms.openlocfilehash: 4de705324ac497cfb11fae3dadc6f57d038fd0b5
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "335120"
 ---
-
 # <a name="overhead-calculation"></a>間接費の計算
 
 [!include [banner](../includes/banner.md)]
@@ -1413,7 +1412,6 @@ ms.lasthandoff: 10/16/2018
 
 > [!NOTE]
 > このトピックでは、主要コスト要素である 10001 電気がどのようにコスト オブジェクトをフローするかを示します。 したがって、この間接費は組織の最下位レベルに配賦されます。 つまり、最下位レベルのコスト オブジェクトがそのコストを負担します。 コスト オブジェクト間のコストの視覚的なフローが必要な場合は、コスト ロールアップ ポリシー ルールを使用して、コストのフローを視覚化できます。 詳細については、「[原価ロールアップ](cost-rollup.md)」を参照してください。
-
 
 
 

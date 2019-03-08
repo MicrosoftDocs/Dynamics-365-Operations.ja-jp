@@ -1,13 +1,13 @@
 ---
-title: "受取手形の設定"
-description: "このトピックでは、為替手形を設定するための手順を説明します。"
+title: 受取手形の設定
+description: このトピックでは、為替手形を設定するための手順を説明します。
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 09/17/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustBillOfExchangeJour
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 965826f5fddc2f53f33157434929eb265979376e
 ms.openlocfilehash: cda597b1d99e99ac5c5c396bcfcec9c0712f0eb1
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "344711"
 ---
-
 # <a name="set-up-bills-of-exchange"></a>受取手形の設定
 
 [!include [banner](../includes/banner.md)]
@@ -82,7 +81,6 @@ ms.lasthandoff: 10/16/2018
 ## <a name="set-up-customers-for-bills-of-exchange"></a>為替手形の顧客の設定
 
 **顧客** ページでは、為替手形で支払を行う契約をした各顧客に対する為替手形の既定の支払方法を **支払の既定値** タブで設定できます。
-
 
 
 

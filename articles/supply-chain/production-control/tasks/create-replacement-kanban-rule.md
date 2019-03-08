@@ -1,13 +1,13 @@
---- 
-title: "交換するかんばんルールの作成"
-description: "この手順では、既存のかんばんルールを特定日付の新しいかんばんルールに置き換えることを対象としています。"
+---
+title: 交換するかんばんルールの作成
+description: この手順では、既存のかんばんルールを特定日付の新しいかんばんルールに置き換えることを対象としています。
 author: ChristianRytt
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KanbanRules, KanbanRuleDuplicate
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: c8a9367d4796999857e473bcbe36a709d534f3b0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: e5b27200a8d56192d473887f01076eced0f92e4c
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "362283"
 ---
 # <a name="create-a-replacement-kanban-rule"></a>交換するかんばんルールの作成
 
@@ -55,5 +55,4 @@ ms.lasthandoff: 09/29/2017
 ## <a name="modify-maximum-quantity-for-the-replacement-kanban-rule"></a>交換するかんばんルールの最大数量の変更
 1. 最大数量を「100」に設定します。
     * Quantities FastTab を展開して、Maximum quantity field を確認します。 100 に最大数量を変更すると、100 のかんばんが処理されるようになります。    これは、このタスクの最後のステップです。  
-
 

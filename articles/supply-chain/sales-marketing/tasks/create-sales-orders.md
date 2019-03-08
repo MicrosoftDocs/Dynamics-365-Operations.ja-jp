@@ -1,13 +1,13 @@
---- 
-title: "販売注文を作成する。"
-description: "この手順では、販売注文を作成する方法を示します。"
+---
+title: 販売注文を作成する。
+description: この手順では、販売注文を作成する方法を示します。
 author: omulvad
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, InventDimParmFixed, InventProductDimensionLookup, SalesTotals
 audience: Application User
 ms.reviewer: kfend
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 8af0333d979ba3a4e12d4f22b1225f3b72d66a7a
+ms.sourcegitcommit: 2ebea3cbddfa0a5ef0e0fd13d3693da6152bc288
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 4ccd2c4ace41f07dce14498031e3cc29ecb61b1c
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "352117"
 ---
 # <a name="create-sales-orders"></a>販売注文を作成する。
 
@@ -68,5 +68,4 @@ ms.lasthandoff: 09/29/2017
 2. [合計] をクリックします。
     * [合計] ページは、注文全体に関する詳細を表示します。 これには、小計金額が含まれます。小計金額は、明細行割引を加味して調整された明細行の正味金額、注文レベルの割引を加味して調整済の合計請求金額、手数料、売上税、顧客の与信限度額の条件、およびその他の金額の合計です。  請求金額は、顧客の請求書に表示される金額です。  
 3. [OK] をクリックします。
-
 

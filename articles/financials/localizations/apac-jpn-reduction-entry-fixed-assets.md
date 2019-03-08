@@ -1,13 +1,13 @@
 ---
-title: "固定資産の圧縮記帳の設定"
-description: "この記事は、固定資産の圧縮記帳に関する情報および、固定資産の圧縮記帳を Microsoft Dynamics 365 for Finance and Operations で設定する方法について説明します。 圧縮記帳は、政府助成金を使用して取得される固定資産の特別な会計処理です。 耐用年数中に、これらの資産の法人所得税を繰延する場合に使用できます。"
+title: 固定資産の圧縮記帳の設定
+description: この記事は、固定資産の圧縮記帳に関する情報、および固定資産の圧縮記帳を Microsoft Dynamics 365 for Finance and Operations で設定する方法について説明します。 圧縮記帳は、政府助成金を使用して取得される固定資産の特別な会計処理です。 耐用年数中に、これらの資産の法人所得税を繰延する場合に使用できます。
 author: yijialuan
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetReductionEntryMassUpdate_JP, AssetReductionEntryProfile_JP
 audience: Application User
 ms.reviewer: shylaw
@@ -17,19 +17,18 @@ ms.search.region: Japan
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 1310824e2e7965a4ff9ddf7ef551ef6e4d9eec7e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: cd53a08d02bd89865274b28b9914c48873d14825
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371153"
 ---
-
 # <a name="set-up-reduction-entries-for-fixed-assets"></a>固定資産の圧縮記帳の設定
 
 [!include [banner](../includes/banner.md)]
 
-この記事は、固定資産の圧縮記帳に関する情報および、固定資産の圧縮記帳を Microsoft Dynamics 365 for Finance and Operations で設定する方法について説明します。 圧縮記帳は、政府助成金を使用して取得される固定資産の特別な会計処理です。 耐用年数中に、これらの資産の法人所得税を繰延する場合に使用できます。 
+この記事は、固定資産の圧縮記帳に関する情報、および固定資産の圧縮記帳を Microsoft Dynamics 365 for Finance and Operations で設定する方法について説明します。 圧縮記帳は、政府助成金を使用して取得される固定資産の特別な会計処理です。 耐用年数中に、これらの資産の法人所得税を繰延する場合に使用できます。 
 
 政府助成金を使用して固定資産を取得すると、助成は非課税の収益として処理されます。 ただし、すべての政府補助金を収益として説明すると、結果として法人所得税が大きくなり、補助金の助成効果が減少します。 したがって、圧縮記帳と呼ばれる特殊な会計処理が許可されています。 基本的に、圧縮記帳は、取得した固定資産の耐用年数中の法人所得税を延期します。 2 種類の会計処理が許可されています。
 
@@ -60,13 +59,13 @@ ms.lasthandoff: 04/13/2018
 <tr class="even">
 <td>関連する設定作業</td>
 <td><ul>
-<li>既定の帳簿、理由コード、および番号順序などの、基本的な固定資産パラメーターを <strong>[固定資産パラメーター]</strong> ページで確実に設定します。</li>
+<li>既定の帳簿、理由コード、および番号順序などの、基本的な固定資産パラメーターを<strong>固定資産パラメーター</strong>ページで確実に設定&#39;します。</li>
 <li>固定資産グループを<strong>固定資産グループ</strong>ページで定義します。</li>
 <li>減価償却量を転記するための、通貨および丸めルールを設定します。</li>
 <li><strong>固定資産の場所</strong>ページで固定資産の場所を設定します。</li>
 <li>減価償却の会計カレンダーを設定し、元帳にカレンダーを割り当てます。</li>
-<li>固定資産レコードが作成済みであることを確認します。</li>
-<li>[<strong>帳簿</strong>] ページで固定資産に帳簿が設定されていることを確認します。</li>
+<li>固定資産レコードが作成済みであることを確認&#39;します。</li>
+<li><strong>帳簿</strong>ページで固定資産に帳簿が設定されていることを確認&#39;します。</li>
 </ul></td>
 </tr>
 </tbody>
@@ -104,7 +103,6 @@ Finance and Operations では、既存の固定資産の機能の最上部で、
 
 | カテゴリ           | 前提条件                                                                                                                                               |
 |--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| コンフィギュレーション キー | **資産コンフィギュレーション** キーが、[データ ディクショナリ] &gt; [コンフィギュレーション キー] ノードで使用可能であることを確認します。 |
-
+| コンフィギュレーション キー | **資産コンフィギュレーション** キーが、**データ ディクショナリ** &gt; **コンフィギュレーション キー**ノードで使用可能であることを確認します。 |
 
 

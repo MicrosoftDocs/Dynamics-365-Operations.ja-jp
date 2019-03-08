@@ -1,13 +1,13 @@
---- 
-title: "自動運賃調整の設定"
-description: "この手順では、自動運賃調整のデータ設定方法を示します。"
+---
+title: 自動運賃調整の設定
+description: この手順では、自動運賃調整のデータ設定方法を示します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/16/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TMSFreightBillType, TMSFreightBillTypeAssignment, TMSCarrierCodeLookup, DefaultDashboard, TMSAuditMaster
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: d990efd7c929b15d57d64e850bc3308349abb978
 ms.openlocfilehash: b7772ad779495b36941a3dc86cc456d80a964467
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/17/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "357476"
 ---
 # <a name="set-up-automatic-freight-reconciliation"></a>自動運賃調整の設定
 
@@ -71,5 +71,4 @@ ms.lasthandoff: 10/17/2018
     * 金額が運賃請求書と配送業者の請求書で異なる場合、差異が許容範囲レベル内であれば、超過/不足支払の理由コードに応じて差額を登録する必要のある勘定が指定されます。  
 11. [過少支払の理由コード] フィールドで、値を入力または選択します。
 12. ページを閉じます。
-
 

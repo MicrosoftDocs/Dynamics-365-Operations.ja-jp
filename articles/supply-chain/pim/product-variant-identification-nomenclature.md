@@ -1,13 +1,13 @@
 ---
-title: "製品バリアント番号と名前の分類"
-description: "このトピックでは、固定形式 [製品マスター番号 - コンフィギュレーション - サイズ - 色 - スタイル] を置換するために製品番号の分類を設定する方法を説明します。"
+title: 製品バリアント番号と名前の分類
+description: このトピックでは、固定形式 [製品マスター番号 - コンフィギュレーション - サイズ - 色 - スタイル] を置換するために製品番号の分類を設定する方法を説明します。
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EcoResNomenclature, EcoResProductDimensionGroup, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelDetails
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
+ms.openlocfilehash: f84b6982af8b81ff83086d163a77e1c2f58ca478
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 3baf1d7313d8ff03ae5ece035b6f3641c0f1d707
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336684"
 ---
-
 # <a name="nomenclature-of-product-variant-numbers-and-names"></a>製品バリアント番号と名前の分類
 
 [!include [banner](../includes/banner.md)]
@@ -198,5 +197,4 @@ BOM には、2 つのコンフィギュレーション グループに分割さ�
 [事前定義された製品バリアントの製品番号の分類の作成](tasks/create-product-number-nomenclature-predefined-variants-2016-11.md)
 
 [コンフィギュレーション済製品バリアントにおける製品番号の分類の作成](tasks/create-product-number-nomenclature-product-variants_2016_11.md)
-
 

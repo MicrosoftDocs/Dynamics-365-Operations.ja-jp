@@ -1,13 +1,13 @@
 ---
-title: "小売明細書"
-description: "このトピックでは、明細書を作成および転記する方法について説明します。"
+title: 小売明細書
+description: このトピックでは、明細書を作成および転記する方法について説明します。
 author: ashishmsft
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailParameters
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 9e88a8b22b73aca5c2cee6984ecad3c62e597102
-ms.contentlocale: ja-jp
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347701"
 ---
-
 # <a name="retail-statements"></a>小売明細書
 
 [!include [banner](includes/banner.md)]
@@ -89,4 +88,3 @@ Microsoft Dynamics 365 for Retail では、クラウド販売時点管理 (POS) 
 - Microsoft Dynamics 365 for Retail POS のトランザクションに顧客が追加された小売販売により、個別の販売注文と請求書が固有の顧客ごとに 1 つずつ生成されます。
 
 支払仕訳帳は明細書の支払に対して自動的に作成され、在庫は POS 店舗に更新されます。
-

@@ -1,13 +1,13 @@
---- 
-title: "雇用検証 i9 検証"
-description: "連邦移民改革管理法 (IRCA) により、米国の雇用主は、新しく雇用した従業員の雇用適格性の状態を確認する必要があります。"
+---
+title: 雇用検証 i9 検証
+description: 連邦移民改革管理法 (IRCA) により、米国の雇用主は、新しく雇用した従業員の雇用適格性の状態を確認する必要があります。
 author: ShielaSogge
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmWorker, HcmPersonIdentificationNumber, Hcmi9Document
 audience: Application User
 ms.reviewer: josaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 4d7346507179d237f60459978b9b7c6351f48611
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "333326"
 ---
 # <a name="employment-verification-i9-verification"></a>雇用検証 i9 検証
 
@@ -54,5 +54,4 @@ ms.lasthandoff: 10/16/2018
 21. [ I-9 ドキュメント タイプ] フィールドで、従業員が提出したドキュメントのタイプを選択します。
 22. [文章番号] フィールドで、値を入力または選択します。
 23. [保存] をクリックします。
-
 

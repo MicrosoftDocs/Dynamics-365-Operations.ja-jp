@@ -1,30 +1,29 @@
 ---
-title: "プラクティス マネージャー Power BI コンテンツ"
-description: "このトピックでは、プラクティス マネージャー Power BI コンテンツの内容について説明します。 コンテンツに含まれているレポートにアクセスする方法を説明し、コンテンツを作成するために使用するデータ モデルおよびエンティティについての情報を提供します。"
+title: プラクティス マネージャー Power BI コンテンツ
+description: このトピックでは、プラクティス マネージャー Power BI コンテンツの内容について説明します。 コンテンツに含まれているレポートにアクセスする方法を説明し、コンテンツを作成するために使用するデータ モデルおよびエンティティについての情報を提供します。
 author: KimANelson
 manager: AnnBe
 ms.date: 12/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProjManagementWorkspace
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 7b2c13573aca2ceb0eca36cf4aeee80d2f56ab8a
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "367803"
 ---
-
 # <a name="practice-manager-power-bi-content"></a>プラクティス マネージャー Power BI コンテンツ
 
 [!include [banner](../includes/banner.md)]
@@ -55,11 +54,11 @@ ms.lasthandoff: 08/13/2018
 | EVM               | プロジェクト別の原価とスケジュール業績インデックス |
 | 時間             | <ul><li>[支払い請求可能な実績稼働時間数] 対 [支払請求可能な実績非稼動時間数] 対 [予算時間]</li><li>プロジェクト別の [支払い請求可能な実績稼働時間数] 対 [支払請求可能な実績非稼動時間数]</li><li>リソース別の [支払い請求可能な実績稼働時間数] 対 [支払請求可能な実績非稼動時間数]</li><li>プロジェクト別の請求可能な実績時間の比率</li><li>リソース別の請求可能な実績時間数の比率</li></ul> |
 
-これらすべてのレポートのグラフとタイルはフィルター処理し、ダッシュボードに固定することができます。 Power BI のフィルター処理と固定方法の詳細については、「[ダッシュボードの作成およびコンフィギュレーション](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards/)」を参照してください。 また、基になるデータをエクスポートする機能を使用するなら、視覚化で要約されている基になるデータをエクスポートすることができます。
+これらすべてのレポートのグラフとタイルはフィルター処理し、ダッシュボードに固定することができます。 Power BI のフィルター処理と固定方法の詳細については、[ダッシュボードの作成および構成](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards/) を参照してください。 また、基になるデータをエクスポートする機能を使用するなら、視覚化で要約されている基になるデータをエクスポートすることができます。
 
 ## <a name="understanding-the-data-model-and-entities"></a>データ モデルおよびエンティティの理解
 
-次のデータは、**プラクティス マネージャー** Power BI コンテンツのレポート ページに入力するために使用されます。 このデータは、エンティティ ストアで実施される集計の測定として表されます。 エンティティ ストアは、分析に最適化された Microsoft SQL Server データベースです。 詳細については、「[エンティティ ストアとの Power BI の統合](power-bi-integration-entity-store.md)」を参照してください。
+次のデータは、**プラクティス マネージャー** Power BI コンテンツのレポート ページに入力するために使用されます。 このデータは、エンティティ ストアで実施される集計の測定として表されます。 エンティティ ストアは、分析に最適化された Microsoft SQL Server データベースです。 詳細については、[エンティティ格納と Power BI の統合の概要](power-bi-integration-entity-store.md) を参照してください。
 
 次のセクションでは、各エンティティで使用される集計の測定について説明します。
 
@@ -119,4 +118,3 @@ ms.lasthandoff: 08/13/2018
 | キー集計の測定       | フィールド               | 説明 |
 |---------------------------------|---------------------|-------------|
 | 完了した活動の予定原価 | Sum(TotalCostPrice) | 完了タスクのすべてのプロジェクト トランザクション タイプにおける合計原価価格の見積。 |
-

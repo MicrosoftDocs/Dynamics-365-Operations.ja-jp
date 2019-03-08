@@ -1,13 +1,13 @@
 ---
-title: "コンフィギュレーション キーおよびデータ エンティティ"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations でコンフィギュレーション キーおよびデータ エンティティ間の関係を説明します。"
+title: コンフィギュレーション キーおよびデータ エンティティ
+description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations のコンフィギュレーション キーとデータ エンティティの関係を示します。
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 01/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 8d07a0572e56e97d42c0e1b841905f828edc6f51
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336477"
 ---
-
 # <a name="configuration-keys-and-data-entities"></a>コンフィギュレーション キーおよびデータ エンティティ
 
 [!include [banner](../includes/banner.md)]
@@ -96,4 +95,3 @@ Finance and Operations でコンフィギュレーション キーの詳細に�
 エンティティ、テーブルまたはフィールド レベルでコンフィギュレーション キーを更新する時はいつでも、データ管理フレームワークのエンティティ リストは更新されている必要があります。 このプロセスでは、フレームワークが、最新のコンフィギュレーション キー設定をピックアップすることが保証されます。 エンティティ リストが更新されるまで、エンティティ リストのページに、次の警告メッセージが表示されます。 更新されたコンフィギュレーション キーの変更は、エンティティ リストが更新されたすぐ後に、有効になります。 コンフィギュレーション キーの変更が有効になった後、期待どおりに動作するかどうかを確認するため、既存のデータ プロジェクトおよびジョブを検証することをお勧めします。
 
 ![ターゲット フィールド](./media/Target_fields_3.png)
-

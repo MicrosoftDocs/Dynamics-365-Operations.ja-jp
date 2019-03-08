@@ -1,13 +1,13 @@
 ---
-title: "シリアル化された製品の販売時点管理 (POS) 改善"
-description: "このトピックでは、時間の節約および生産性を向上するため、シリアル化された製品に対して実行された改善を一覧にします。"
+title: シリアル化された製品の販売時点管理 (POS) 改善
+description: このトピックでは、時間の節約および生産性を向上するため、シリアル化された製品に対して実行された改善を一覧にします。
 author: ShalabhjainMSFT
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
@@ -16,14 +16,13 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-08-01
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 17cd46ba9ee972c92db8950eea1cd258d67c2e92
-ms.contentlocale: ja-jp
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "346206"
 ---
-
 # <a name="point-of-sale-pos-improvements-for-serialized-products"></a>シリアル化された製品の販売時点管理 (POS) 改善
 
 [!include [banner](includes/banner.md)]
@@ -43,4 +42,3 @@ ms.lasthandoff: 01/04/2019
 - **シリアル番号は顧客注文をするために必要ではありません** – 顧客注文は 1 つの店舗で実行され別の店舗で達成されます。 顧客注文を実行するレジ担当者は、シリアル番号を提供する必要がありません。 ピッキングまたは集荷手順の際、シリアル番号が提供されます。 ただし、**実行** 配送タイプが選択されているすべての明細行品目のシリアル番号が提供される必要があります。 それ以外の場合、トランザクションを完了することはできません。
 - **シリアル化された製品は、トランザクション画面で集計されません** – **機能プロファイル** ページの **ターミナル** フィールド グループでの **製品の集計** 設定は、トランザクション画面でシリアル化されていない同じ製品を集計できるようにします。 同じ商品を集計すると、トランザクション グリッドで簡単に確認できます。 ただし、通常シリアル番号は固有であるため、店員はチェック アウトまでシリアル番号を入力する必要がなく、**製品の集計** 設定はシリアル化された製品には適用されません。 したがって、**製品の集計** 設定が選択されると、シリアル化された製品はトランザクション画面に集計されません。
 - **仕訳帳をシリアル番号で検索する機能** – 仕訳帳はシリアル番号により補足的に検索されます。 これを行うには、「仕訳帳」工程を開き、アプリ バーで「高度な検索」ボタンをクリックします。 「フィルターの追加」ボタンを使用して、シリアル番号を検索するようフィルターを適用することもできます。
-

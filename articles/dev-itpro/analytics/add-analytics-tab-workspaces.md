@@ -1,13 +1,13 @@
 ---
-title: "Power BI Embedded を使用したワークスペースへの分析の追加"
-description: "このトピックでは、ワークスペースの分析タブで Power BI レポートを組み込む方法を説明します。"
+title: Power BI Embedded を使用したワークスペースへの分析の追加
+description: このトピックでは、ワークスペースの分析タブで Power BI レポートを組み込む方法を説明します。
 author: tjvass
 manager: AnnBe
 ms.date: 06/21/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application user, IT Pro
 ms.reviewer: robinr
 ms.search.scope: Core, Operations
@@ -15,14 +15,13 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: a190e15dc304f60739c80d75222830ee737c5a32
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
-ms.openlocfilehash: 3f6b83166ba942e40e5e1f7c0ef9df40a44bfbc5
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355222"
 ---
-
 # <a name="add-analytics-to-workspaces-by-using-power-bi-embedded"></a>Power BI Embedded を使用したワークスペースへの分析の追加
 
 [!include [banner](../includes/banner.md)]
@@ -35,7 +34,7 @@ ms.lasthandoff: 08/13/2018
 
 ## <a name="prerequisites"></a>前提条件
 + プラットフォーム更新プログラム 8 以降を実行する開発環境へのアクセス。
-+ Microsoft Power BI Desktop を使用して作成され、Entity ストア データベースから取得されたデータ モデルを持つ分析レポート (.pbix ファイル)。
++ Microsoft Power BI Desktop を使用して作成され、エンティティ格納 データベースから取得されたデータ モデルを持つ分析レポート (.pbix ファイル) です。
 
 ## <a name="overview"></a>概要
 既存のアプリケーション ワークスペースを拡張する場合でも、自分の新しいワークスペースを導入する場合でも、埋め込み分析ビューを使用して、ビジネス データの洞察的でインタラクティブなビューを提供できます。 分析ワークスペース タブを追加するプロセスには、4 つのステップがあります。
@@ -46,10 +45,10 @@ ms.lasthandoff: 08/13/2018
 4. オプション: 表示をカスタマイズする拡張機能を追加します。
 
 > [!NOTE]
-> 分析レポートを作成する方法の詳細については、[Power BI デスクトップの使い方](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/)を参照してください。 このページは、魅力的な分析レポート作成ソリューションの作成に役立つ素晴らしいソースです。
+> 分析レポートを作成する方法の詳細については、[Power BI Desktop の使い方](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/)を参照してください。 このページは、魅力的な分析レポート作成ソリューションの作成に役立つ素晴らしいソースです。
 
 ## <a name="add-a-pbix-file-as-a-resource"></a>リソースとして .pbix ファイルを追加します。
-開始する前に、ワークスペースに埋め込む Power BI レポートを作成または取得する必要があります。 分析レポートを作成する方法の詳細については、[Power BI デスクトップの使い方](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/)を参照してください。
+開始する前に、ワークスペースに埋め込む Power BI レポートを作成または取得する必要があります。 分析レポートを作成する方法の詳細については、[Power BI Desktop の使い方](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/)を参照してください。
 
 .pbix ファイルを Visual Studio プロジェクト コンポーネントとして追加するには、次の手順を実行します。
 
@@ -177,4 +176,3 @@ public static void initializeReportControl(
 | showFilterPane   | フィルタ ウィンドウを表示 (**true**) または非表示 (**false**) するかを示すブール値。     |
 | showNavPane      | ナビゲーション ウィンドウを表示 (**true**) または非表示 (**false**) するかを示すブール値。 |
 | defaultFilters   | Power BI レポートの既定のフィルター。                                                                 |
-

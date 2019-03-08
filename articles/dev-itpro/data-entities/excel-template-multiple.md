@@ -1,30 +1,29 @@
 ---
-title: "複数のワークシートを含む Excel データ エンティティ テンプレートからのデータ インポート"
-description: "このトピックでは、Excel データ エンティティ テンプレートを使用して、Microsoft Dynamics 365 for Finance and Operations にデータをインポートする方法について説明します。"
+title: 複数のワークシートを含む Excel データ エンティティ テンプレートからのデータ インポート
+description: このトピックでは、Excel データ エンティティのテンプレートを使用して Microsoft Dynamics 365 for Finance and Operations にデータをインポートする方法について説明します。
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 01/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
 ms.search.scope: Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 48239b48cbc24e34d74bbac36e8f827a15d7b840
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "351266"
 ---
-
 # <a name="import-data-from-excel-data-entity-templates-that-have-multiple-worksheets"></a>複数のワークシートを含む Excel データ エンティティ テンプレートからのデータ インポート
 
 [!include [banner](../includes/banner.md)]
@@ -51,4 +50,3 @@ Microsoft Dynamics 365 for Finance and Operations のデータ管理は、デー
 ## <a name="upload-a-file-using-run-project"></a>プロジェクトを実行してファイルをアップロードする
 
 **プロジェクトを実行** オプションを使用して Excel ファイルをアップロードして、インポート プロジェクトを実行することができます。 データ プロジェクト内のデータ エンティティの既存のマッピングと同じワークシートを持つファイルのみをアップロードするように注意する必要があります。 新しくアップロードされたファイルにワークシートが見つからない場合、システムはエラーを表示してインポートを停止します。 エンティティに対してワークシートへのマッピングを変更する必要がある場合は、**プロジェクトを実行** エクスペリエンスのファイルを使用する前に、データプロジェクト内のマッピングを最初にデータプロジェクト内から更新する必要があります。
-

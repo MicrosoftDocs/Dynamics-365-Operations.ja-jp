@@ -1,13 +1,13 @@
---- 
-title: "画像が埋め込まれた Office 形式でレポートを生成するコンフィギュレーションの確認"
-description: "これらのステップを完了するには、まず、「ER 埋め込み画像付きで MS Office 形式のレポートを作成する (パート 1 - パラメータの設定)」タスク ガイドにあるステップを完了する必要があります。"
+---
+title: 画像が埋め込まれた Office 形式でレポートを生成するコンフィギュレーションの確認
+description: これらのステップを完了するには、まず、「ER 埋め込み画像付きで MS Office 形式のレポートを作成する (パート 1 - パラメータの設定)」タスク ガイドにあるステップを完了する必要があります。
 author: NickSelin
 manager: AnnBe
 ms.date: 06/13/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 8f3462f16ad7638071ab0aa2175d0bc291eeae89
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "331417"
 ---
 # <a name="review-configurations-to-generate-reports-in-office-format-that-have-embedded-images"></a>画像が埋め込まれた Office 形式でレポートを生成するコンフィギュレーションの確認
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 08/09/2018
 
 これらのステップを完了するには、まず、「ER 埋め込み画像付きで MS Office 形式のレポートを作成する (パート 1: パラメータの設定)」タスク ガイドにあるステップを完了する必要があります。
 
-この手順では、電子レポート (ER) コンフィギュレーションを設計して、Microsoft Excel と Microsoft Word の埋め込み画像を含む電子ドキュメントを生成する方法を示します。 この例では、サンプル会社 Litware, Inc. 用に作成した ER コンフィギュレーションを確認します。 
+この手順では、電子申告 (ER) コンフィギュレーションを設計して、Microsoft Excel と Microsoft Word の埋め込み画像を含む電子ドキュメントを生成する方法を示します。 この例では、サンプル会社 Litware, Inc. 用に作成した ER コンフィギュレーションを確認します。 
 
 この手順は、「システム管理者」または「電子レポート開発者」ロールが割り当てられているユーザーを対象としています。 ステップは、USMF データ セットを使用して完了することができます。
 
@@ -91,5 +91,4 @@ ms.lasthandoff: 08/09/2018
 14. ツリーで、「labels: Container」を展開します。
     * テスト用に作成されている場合、プレプリントされた小切手フォームに表示されるいくつかのラベルがレポートに含まれます。 ただし、それらのラベルは、プレプリントされたフォームにすでに含まれているために実際の印刷中には印刷されません。  
 15. ページを閉じます。
-
 

@@ -1,13 +1,13 @@
 ---
-title: "Finance and Operations のヘルプ システム"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations のヘルプ システム コンポーネントの概要が示されます。"
+title: Finance and Operations のヘルプ システム
+description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations のヘルプ システムのコンポーネントの概要を提供します。
 author: margoc
 manager: AnnBe
 ms.date: 11/13/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: SystemParameters
 audience: Application User, Developer, IT Pro
 ms.reviewer: margoc
@@ -18,22 +18,21 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 23bf579c1a4a315d0c12f848a71f89fc297c8625
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350737"
 ---
-
 # <a name="finance-and-operations-help-system"></a>Finance and Operations のヘルプ システム
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Finance and Operations のヘルプ システム コンポーネントの概要が示されます。
+このトピックでは、Microsoft Dynamics 365 for Finance and Operations のヘルプ システムのコンポーネントの概要を提供します。
 
 > [!NOTE]
-> 次の製品間には密接な関係があります: Dynamics 365 for Finance and Operations、Dynamics 365 for Retail、および Dynamics 365 for Talent。 すべての 3 つの製品上に同じ機能が表示されることがあります。 結果として、主に [Retail] に関連するトピックでの製品名は Dynamics 365 for Retail、主に [Talent] に関連するトピックでの製品名は Dynamics 365 for Talent、コア製品に関連するトピックでの製品名は、Dynamics 365 for Finance and Operations となります。 1 つの製品で記述されているトピックは、関連する製品の同じ機能にも当てはまる可能性があります。
+> 次の製品は密接に関係しています: Dynamics 365 for Finance and Operations; Dynamics 365 for Retail; および Dynamics 365 for Talent。 すべての 3 つの製品上に同じ機能が表示されることがあります。 このため、主に Retail に関連するトピックの場合、製品名は Dynamics 365 for Retail になります。主に Talent に関連するトピックの場合、製品名は Dynamics 365 for Talent になります。さらにコア製品に関連するトピックの場合、製品名は Dynamics 365 for Finance and Operations になります。 1 つの製品で記述されているトピックは、関連する製品の同じ機能にも当てはまる可能性があります。
 
 ヘルプ システムは、次の製品により共有されます。
 
@@ -78,7 +77,7 @@ Finance and Operations、および Retail のすべては docs サイトの 単�
 
 ### <a name="use-an-rss-feed"></a>RSS フィードを使用します
 
-Unified Operations のコンテンツへのすべての更新の RSS フィードを購読するには、Internet Explorer や RSS フィード マネージャなどの RSS フィードをサポートするブラウザから次のリンクを使用します。
+Unified Operations のコンテンツへのすべての更新の RSS フィードを購読するには、Internet Explorer や RSS フィード マネージャなどの RSS フィードをサポートするブラウザから次のリンクを使用します:
 
 [RSS フィード](https://docs.microsoft.com/api/search/rss?locale=en-us&$filter=scopes%2Fany(t%3A%20t%20eq%20%27Unified%20Operations%27))
 
@@ -137,7 +136,7 @@ Finance and Operations 内のヘルプ コンテンツにアクセスするに�
 [ヘルプ] ウィンドウから、Finance and Operations クライアントに適用する記事にアクセスできます。 最初にヘルプ ウィンドウを開いてから**ヘルプ**タブをクリックすると、Finance and Operations の現在のページに対応する記事が表示されます。 記事がない場合は、検索するキーワードを入力できます。 [ヘルプ] ウィンドウで記事をクリックすると、ブラウザで新しいタブが開いて記事を表示します。
 
 > [!IMPORTANT]
-> このセクションは、Dynamics 365 for Talent には適用されません。 [Talent] のヘルプ システムは、製品のタスクのガイドに自動的に関連付けられます。 さらに、[Talent] のカスタム タスク ガイドを作成することはできません。
+> このセクションは Dynamics 365 for Talent には適用されません。 [Talent] のヘルプ システムは、製品のタスクのガイドに自動的に関連付けられます。 さらに、[Talent] のカスタム タスク ガイドを作成することはできません。
 
 ### <a name="accessing-task-guides-from-the-help-pane"></a>ヘルプ ウィンドウからタスク ガイドへのアクセス
 
@@ -195,9 +194,8 @@ Finance and Operations 内のヘルプ コンテンツにアクセスするに�
 | [Docs.microsoft.com](/dynamics365/)                                                            | Dynamics 365 のすべての製品ドキュメントのホストまたはリンクです。 |
 | [Microsoft Learn](https://docs.microsoft.com/learn/)                                           | Microsoft の無料 e ラーニング サイトです。 |
 | [Lifecycle Services](https://lcs.dynamics.com/)\*                                              | 事前販売からの実装および工程にいたるまで Dynamics 365 for Finance and Operations のプロジェクトを管理するのに、顧客とパートナーが使用できるクラウドベースの共同ワークスペースを提供します。 このサイトは、実装のすべてのフェーズに役立ちます。 |
-| [サポート ブログ](http://aka.ms/AXSupportBlog)                                                    | Dynamics 365 for Finance and Operations のサポート チームによって投稿されるヒントおよび秘訣を提供します。 |
+| [サポート ブログ](http://aka.ms/AXSupportBlog)                                                    | Dynamics 365 for Finance and Operations のサポート チームによって投稿されるトリックおよびヒントを提供します。 |
 | [Docs.microsoft.com/previous versions](https://docs.microsoft.com/previous-versions/dynamics/) | 以前のリリースのコンテンツをホストします。 |
 | [Dynamics コミュニティ](https://community.dynamics.com/)                                          | ブログ、フォーラムおよびビデオをホストします。 |
 | [Microsoft.com/dynamics365/](https://www.microsoft.com/dynamics365/home)                       | 評価と販売情報を提供します。 |
 | [CustomerSource](https://mbs.microsoft.com/customersource/)\*                                  | Finance and Operations、ダウンロード可能なレポート、およびホワイト ペーパーの一部のトレーニング リソースをホストする、サービス計画保持者の主なサポート サイトです。 サイトのいくつかのリソースにアクセスするためには、サービス計画が必要な場合があります。 |
-

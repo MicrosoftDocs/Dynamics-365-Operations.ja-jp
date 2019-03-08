@@ -1,13 +1,13 @@
---- 
-title: "バッチごとの減損損失の提案と転記"
-description: "このタスクは、バッチによる減損損失額の提案と転記について説明します。"
+---
+title: バッチごとの減損損失の提案と転記
+description: このタスクは、バッチによる減損損失額の提案と転記について説明します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransAsset
 audience: Application User
 ms.reviewer: shylaw
@@ -16,14 +16,13 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: f9cb207312fa5b73bd840a1bbadf40bc268483f2
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371141"
 ---
-
 # <a name="propose-and-post-the-impairment-amount-by-batch"></a>バッチごとの減損損失の提案と転記
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
@@ -48,5 +47,4 @@ ms.lasthandoff: 10/16/2018
 13. [明細行] をクリックします。
     * 固定資産が正しく作成され、減損損失額が正しいことを確認します。  
 14. [転記] をクリックします。
-
 

@@ -1,13 +1,13 @@
---- 
-title: "適用できる価格および割引の検索"
-description: "この手順は、特定の顧客に対して現在有効な製品の価格や割引を、販売注文を作成せずに検索する方法を示します。"
+---
+title: 適用できる価格および割引の検索
+description: この手順は、特定の顧客に対して現在有効な製品の価格や割引を、販売注文を作成せずに検索する方法を示します。
 author: omulvad
 manager: AnnBe
 ms.date: 11/10/2016
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: ba95e651898da0e0fbd1221f61436ffac59db09e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 809a1466b0f4674f503bc654175d8f94b37a6508
-ms.openlocfilehash: 7ef63151f352b3664bccd7a59e7417dfddc7470b
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/02/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "359868"
 ---
 # <a name="look-up-applicable-prices-and-discounts"></a>適用できる価格および割引の検索
 
@@ -59,5 +59,4 @@ ms.lasthandoff: 11/02/2017
 3. [行割引の表示] をクリックします。
     * 製品 T0012 には、2 つの行割引契約があります。つまり、1 から 10 の注文明細行数量で 5% の割引が指定され、10 以上では注文数量が 7％ 割引されています。 割引は、製品グループ、この例では、製品 T0012 が所属するグループ コード 01 に適用されることに注意してください。  
 4. ページを閉じます。
-
 

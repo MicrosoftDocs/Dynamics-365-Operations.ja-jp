@@ -1,13 +1,13 @@
---- 
-title: "レジスターの作成と関連付け"
-description: "この手順では、販売時点管理 (POS) レジスターを作成する方法を示します。"
+---
+title: レジスターの作成と関連付け
+description: この手順では、販売時点管理 (POS) レジスターを作成する方法を示します。
 author: rubencdelgado
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailTerminalTable
 audience: Application User
 ms.reviewer: josaw
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 07e4b9f32a3a74b273272bd0b759d35c2a963e2e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 1de4e71fd554ba0486a5d2f65803f0806df37fe4
-ms.contentlocale: ja-jp
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "360650"
 ---
 # <a name="create-and-associate-registers"></a>レジスターの作成と関連付け
 
@@ -43,5 +43,4 @@ ms.lasthandoff: 02/07/2018
 8. [EFT POS レジスター番号] フィールドに値を入力します。
     * EFT POS レジスター番号はどの支払ターミナルが認証要求を送信しているかを支払処理担当者に通知するために使用されます。 この値は、「ターミナル ID」、または「TID」と呼ばれます。 TID は、支払デバイスのステッカーの明細行から見つけることができます。  
 9. [保存] をクリックします。
-
 

@@ -1,40 +1,39 @@
 ---
-title: "オンラインおよびオフラインでの販売時点管理 (POS) の操作"
-description: "このトピックでは、Microsoft Dynamics 365 for Retail の販売時点管理 (POS) オペレーションについて詳しく説明します。 アプリケーション内で操作を呼び出すことができる場所と、オフラインモードで使用できるかどうかを指定します。"
+title: オンラインおよびオフラインでの販売時点管理 (POS) の操作
+description: このトピックでは、Microsoft Dynamics 365 for Retail の販売時点管理 (POS) の詳細情報を提供します。 アプリケーション内で操作を呼び出すことができる場所と、オフラインモードで使用できるかどうかを指定します。
 author: jblucher
 manager: AnnBe
 ms.date: 10/12/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 9354e0dbf8bed9383a9dfcc383a2c9db57457dd0
-ms.contentlocale: ja-jp
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "353819"
 ---
-
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>オンラインおよびオフラインでの販売時点管理 (POS) の操作
 
 [!include [banner](includes/banner.md)]
 
-ユーザーが販売時点管理 (POS) で行うほとんどのアクションは、操作と見なされます。 操作は、Microsoft Dynamics 365 for Retail バックオフィスで構成および管理されます。 多くの操作を POS ボタングリッドのボタンに追加できます。 その後、ユーザーは、操作を呼び出すためのボタンを選択し、その機能を実行することができます。 他の操作はメインの POS アプリケーションの一部であり、画面上のボタンから呼び出されるか、他のワークフローやプロセスの一部として呼び出されます。
+ユーザーが販売時点管理 (POS) で行うほとんどのアクションは、操作と見なされます。 操作は、Microsoft Dynamics 365 for Retail バック オフィスで構成および管理されます。 多くの操作を POS ボタングリッドのボタンに追加できます。 その後、ユーザーは、操作を呼び出すためのボタンを選択し、その機能を実行することができます。 他の操作はメインの POS アプリケーションの一部であり、画面上のボタンから呼び出されるか、他のワークフローやプロセスの一部として呼び出されます。
 
-次の表は、Dynamics 365 for Retail の Retail Modern POS と Cloud POS で使用できる操作について説明しています。 表は、アプリケーションがオペレーションを呼び出すことができる場所と、POS がオフライン モードのときに使用可能かどうかも指定します。
+次の表は、Dynamics 365 for Retail 用 Retail Modern POS およびクラウド POS で使用可能な操作に関する詳細を示しています。 表は、アプリケーションがオペレーションを呼び出すことができる場所と、POS がオフライン モードのときに使用可能かどうかも指定します。
 
-いくつかの操作は、Dynamics 365 for Retail の Retail Modern POS または Cloud POS で現在使用できません。 これらの操作の一部は、追加の拡張と構成を必要とするロケール固有の操作です。 その他は、現在サポートされていない Microsoft Dynamics AX 2012 の機能です。
+いくつかの操作は、現在 Dynamics 365 for Retail 用 Retail Modern POS またはクラウド POS では使用できません。 これらの操作の一部は、追加の拡張と構成を必要とするロケール固有の操作です。 その他は、現在サポートされていない Microsoft Dynamics AX 2012 の機能です。
 
 次の列は、操作を呼び出すことができる場所を指定します。
 
@@ -199,4 +198,3 @@ ms.lasthandoff: 01/04/2019
 § POS がオフラインの場合、現在のオフラインデータベース内のトランザクションのみを取り消して返品することができます。
 
 \*\* POS がオフラインの場合、現在のオフライン チャンネル データベース内のトランザクションのみを仕訳に表示します。
-

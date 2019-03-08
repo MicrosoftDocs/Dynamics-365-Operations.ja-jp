@@ -1,13 +1,13 @@
---- 
-title: "自由回答式の質問を作成します"
-description: "自由回答式の質問は回答者が自分の回答を入力できるようになっています。"
+---
+title: 自由回答式の質問を作成します
+description: 自由回答式の質問は回答者が自分の回答を入力できるようになっています。
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KMQuestion
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 51d238e41e1c89211d158bd4aee958a85bec772d
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347908"
 ---
 # <a name="create-an-open-ended-question"></a>自由回答式の質問を作成します
 
@@ -37,5 +37,4 @@ ms.lasthandoff: 10/16/2018
 5. [入力タイプ] フィールドで、オプションを選択します。
     * テキストまたはメモの入力タイプは自由回答式の質問に使用されます。  
 6. [テキスト] フィールドに、質問を入力します。
-
 

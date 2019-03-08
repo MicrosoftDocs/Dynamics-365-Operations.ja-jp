@@ -1,13 +1,13 @@
---- 
-title: "販売時点管理 (POS) 視覚プロファイルの作成"
-description: "この手順では、新しい POS (販売時点管理) の視覚プロファイルの作成方法を説明します。"
+---
+title: 販売時点管理 (POS) 視覚プロファイルの作成
+description: この手順では、新しい POS (販売時点管理) の視覚プロファイルの作成方法を説明します。
 author: jashanno
 manager: AnnBe
 ms.date: 12/05/2015
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations, Retail
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
 ms.openlocfilehash: 0234512e037d8818ce2282959cfd0763b41b9429
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358143"
 ---
 # <a name="create-point-of-sale-pos-visual-profiles"></a>販売時点管理 (POS) 視覚プロファイルの作成
 
@@ -47,5 +47,4 @@ ms.lasthandoff: 08/09/2018
 16. RequestPopup 画像 ID。
 17. 一覧で、選択された行のリンクをクリックします。
 18. [保存] をクリックします。
-
 

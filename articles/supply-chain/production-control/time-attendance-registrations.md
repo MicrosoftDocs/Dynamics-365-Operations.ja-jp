@@ -1,13 +1,13 @@
 ---
-title: "時刻と出勤の登録"
-description: "時間登録作業者は、さまざまなタイプの時間登録を入力できます (出勤、退勤、間接活動の登録、および休暇登録時など)。 このトピックは、登録とその計算、承認、およびタイムシートの承認プロセスに構造と自動承認を追加するためのワークフローの使用について説明します。"
+title: 時刻と出勤の登録
+description: 時間登録作業者は、さまざまなタイプの時間登録を入力できます (出勤、退勤、間接活動の登録、および休暇登録時など)。 このトピックは、登録とその計算、承認、およびタイムシートの承認プロセスに構造と自動承認を追加するためのワークフローの使用について説明します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmWorker, JmgCalcApprovePickDialog, JmgGroupApprove, JmgGroupCalc, JmgGroupSigningTable, JmgRegistration, JmgTimeCalcParmeters, WorkflowTableListPageRnr
 audience: Application User
 ms.reviewer: rschloma
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 7ec008cd65fe7c11eb24ae8c5088d53f11dc2c88
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 29040d0c96183898672bc405364ec59707bff53a
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "335925"
 ---
-
 # <a name="time-and-attendance-registration"></a>時刻と出勤の登録
 
 [!include [banner](../includes/banner.md)]
@@ -116,7 +115,6 @@ ms.lasthandoff: 11/03/2017
 -   時間消費量
 -   プロジェクト手数料
 -   プロジェクト品目
-
 
 
 

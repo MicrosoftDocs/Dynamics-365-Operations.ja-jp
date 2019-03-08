@@ -1,13 +1,13 @@
 ---
-title: "総勘定元帳と財務報告のホーム ページ"
-description: "法人の財務レコードを定義および管理するには、一般会計を使用します。"
+title: 総勘定元帳と財務報告のホーム ページ
+description: 法人の財務レコードを定義および管理するには、一般会計を使用します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/31/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: GeneralJournalEntryWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 85afebcc88ad1c087d5f1dabaac56f694534cf98
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 03bab1d03be71c0e23a6ea93f542d6a52a212a1f
-ms.openlocfilehash: 9ee3f73cd11b38ed2237ea3fe08db18000e55f07
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/25/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "363364"
 ---
-
 # <a name="general-ledger"></a>一般会計 
 
 [!include [banner](../includes/banner.md)]
@@ -60,11 +59,11 @@ ms.lasthandoff: 06/25/2018
 
 ### <a name="videos"></a>ビデオ
 
-[Microsoft Dynamics 365 YouTube チャンネル](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ)のハウツー ビデオをご覧ください。
+「[Microsoft Dynamics 365 YouTube チャンネル](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ)」のハウツー ビデオをご覧ください。
 
 ### <a name="blogs"></a>ブログ
 
-買掛金勘定およびその他のソリューションに関する意見、ニュース、その他の情報については、[Microsoft Dynamics 365 blog (Microsoft Dynamics 365 ブログ)](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) を参照してください。
+買掛金勘定およびその他のソリューションに関する意見、ニュース、その他の情報については、[Microsoft Dynamics365 blog (Microsoft Dynamics 365 ブログ)](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise)を参照してください。
 
 [Microsoft Dynamics AX product team blog (Microsoft Dynamics AX 製品チームのブログ)](https://blogs.msdn.microsoft.com/dax/) には、一般会計に関する多くの投稿があります。 これらの投稿の一部は一般会計の以前のバージョンに関して書かれていますが、現在のバージョンでも同じ概念を適用でき、手順も類似しています。
 
@@ -73,5 +72,4 @@ ms.lasthandoff: 06/25/2018
 #### <a name="community-blogs"></a>コミュニティのブログ
 
 - [Dynamics 365 for Finance and Operations の元帳に関する確認事項](https://financefunction.tech/2018/04/29/what-you-should-know-about-ledger-in-dynamics-365-for-finance-and-operations)
-
 

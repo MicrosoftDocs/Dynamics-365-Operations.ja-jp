@@ -1,32 +1,30 @@
 ---
-title: "返品品目を検査に渡す"
-description: "返品品目を登録する場合、品目を在庫に戻すか、なんらかの手段で処分する前に、品目を検査に送ります。"
+title: 返品品目を検査に渡す
+description: 返品品目を登録する場合、品目を在庫に戻すか、なんらかの手段で処分する前に、品目を検査に送ります。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 05/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WMSJournalTable
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 70aafb752b2c847d5d48236fd5d201a73e088c24
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 4a60e6635e3bb1723ced7aba1a71135116b53272
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "334085"
 ---
-
-
 # <a name="pass-returned-items-on-to-inspection"></a>返品品目を検査に渡す 
 
 [!include [banner](../includes/banner.md)]
@@ -57,5 +55,4 @@ ms.lasthandoff: 05/08/2018
 [検査による返却品目の受入](take-returned-items-through-inspection.md)
 
 [返品品目の廃棄方法の指定](specify-how-to-dispose-of-returned-items.md)
-
 

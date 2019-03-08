@@ -1,13 +1,13 @@
 ---
-title: "即時補充"
-description: "このトピックでは、場所のディレクティブが在庫の配賦に失敗したときに、在庫を補充するため、即時補充を使用する方法について説明します。"
+title: 即時補充
+description: このトピックでは、場所のディレクティブが在庫の配賦に失敗したときに、在庫を補充するため、即時補充を使用する方法について説明します。
 author: Mirzaab
 manager: AnnBe
 ms.date: 03/15/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSLocDirTable
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
+ms.openlocfilehash: ab1f06951d5daceaf002b2cc23236dd818457985
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a11a26df85647aa36cd30c42f81be4ec2af4409b
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "348598"
 ---
-
 # <a name="immediate-replenishment"></a>即時補充
 
 [!include [banner](../includes/banner.md)]
@@ -48,7 +47,7 @@ ms.lasthandoff: 04/13/2018
 
 ## <a name="set-up-immediate-replenishment"></a>即時補充の設定
 
-- [**倉庫管理**] \> [**設定**] \> [**場所ディレクティブ**] の順に移動し、次に、[**即時補充テンプレート**] リストの [**明細行**] タブで、 ウェーブ需要に対する補充テンプレートを選択します。
+- **倉庫管理** \> **設定** \> **場所ディレクティブ** の順に移動し、次に、**即時補充テンプレート** リストの **明細行** タブで、 ウェーブ需要に対する補充テンプレートを選択します。
 
 場所ディレクティブの明細行が専用測定単位の配賦に失敗した場合は、補充テンプレートが適用されます。
 
@@ -56,6 +55,5 @@ ms.lasthandoff: 04/13/2018
 
 即時補充が場所ディレクティブの明細行に対して選択されているが、場所ディレクティブの明細行に対して要求補充テンプレートを使用する際に補充作業が生成されない場合、2 つの主要な原因を調査する必要があります。
 
-- 適用される要求補充テンプレートが、正しい場所テンプレートを使用し、[**補充**] タイプの作業テンプレートに設定されているかどうかを確認します。
+- 適用される要求補充テンプレートが、正しい場所テンプレートを使用し、**補充** タイプの作業テンプレートに設定されているかどうかを確認します。
 - 要求補充テンプレートが補充の手持在庫を検索する場所で、十分な手持在庫があることを確認します。
-

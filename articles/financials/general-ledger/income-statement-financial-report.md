@@ -1,13 +1,13 @@
 ---
-title: "損益計算書財務諸表"
-description: "この記事では、損益計算書の既定のレポートについて説明します。 また、このレポートに関連付けられる構成要素を説明します。"
+title: 損益計算書財務諸表
+description: この記事では、損益計算書の既定のレポートについて説明します。 また、このレポートに関連付けられる構成要素を説明します。
 author: jcart1106
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 9105e1de86ed2834b04f75c7d08c4021402bcfda
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 9310508082ff710cd040b74519044f5a90c23988
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "364008"
 ---
-
 # <a name="income-statement-financial-report"></a>損益計算書財務諸表
 
 [!include [banner](../includes/banner.md)]
@@ -69,7 +68,6 @@ ms.lasthandoff: 05/08/2018
 [財務諸表の表示](view-financial-reports.md)
 
 [Dynamics Financial Reporting ブログ](http://blogs.msdn.com/b/dynamics_financial_reporting/)
-
 
 
 

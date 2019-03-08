@@ -1,13 +1,13 @@
 ---
-title: "ファントム品目"
-description: "このトピックでは、部品表 (BOM) の明細行および Microsoft Dynamics 365 for Finance and Operations のフォーミュラで、ファントム明細行タイプを利用する方法を詳細に説明します。"
+title: ファントム品目
+description: このトピックでは、部品表 (BOM) の明細行および Microsoft Dynamics 365 for Finance and Operations のフォーミュラで、ファントム明細行タイプを使用する方法を詳細に説明します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysOperationTemplateForm
 audience: Application User
 ms.reviewer: shylaw
@@ -15,16 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: 1705903
 ms.search.region: Global
 ms.author: shylaw
-ms.search.validfrom: 
-ms.dyn365.ops.version: 8.1
-ms.translationtype: HT
-ms.sourcegitcommit: c5d4fb53939d88fcb1bd83d70bc361ed9879f298
+ms.search.validfrom: ''
+ms.dyn365.ops.version: 8.0999999999999996
 ms.openlocfilehash: a92dd82f309867586f047e0dfc36e452a44a0f9c
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341813"
 ---
-
 # <a name="phantom-items"></a>ファントム品目
 
 [!include [banner](../includes/banner.md)]
@@ -52,7 +51,7 @@ ms.lasthandoff: 10/16/2018
 
 2 つの操作シートがあったエンジニアリング BOM とは異なり、製造 BOM には 1 つの操作シートのみがあります。 パーツ G にリンクされた梱包操作も上昇し、製品 H の操作シートの一部になりました。電気単位のアセンブリは最初の操作です。 この単位は次の操作である機械アセンブリに使用されるため、この順序は理にかなっています。 最後の操作は、2 つの梱包材 (C と D) を消費する梱包操作です。
 
-Microsoft Dynamics 365 for Finance and Operations では、ファントム BOM 明細行タイプを通してエンジニアリング BOM と製造 BOM 間での移行が有効になります。 「ファントム」という用語が示すように、パーツ F および G が 2 つの BOM タイプ間の移行中に実在しなくなりました。 この例では、エンジニアリング BOM で、ファントム明細行タイプがパーツ F および G の BOM 明細行に適用されます。 製造オーダーまたはバッチ オーダーが作成されると、エンジニアリング BOM は製造オーダーまたはバッチ オーダーにコピーされます。 次に、前の図に示すように、オーダーの見積時にエンジニアリング BOM から製造 BOM への移行が発生します。 2 番目の図の操作シートから、操作用に梱包材 C および D が入力されます。 
+Microsoft Dynamics 365 for Finance and Operations、ファントム BOM 明細行タイプを通してエンジニアリング BOM と製造 BOM 間での移行が有効になります。 「ファントム」という用語が示すように、パーツ F および G が 2 つの BOM タイプ間の移行中に実在しなくなりました。 この例では、エンジニアリング BOM で、ファントム明細行タイプがパーツ F および G の BOM 明細行に適用されます。 製造オーダーまたはバッチ オーダーが作成されると、エンジニアリング BOM は製造オーダーまたはバッチ オーダーにコピーされます。 次に、前の図に示すように、オーダーの見積時にエンジニアリング BOM から製造 BOM への移行が発生します。 2 番目の図の操作シートから、操作用に梱包材 C および D が入力されます。 
 
 ## <a name="multilevel-phantom-bom-structures"></a>複数レベルのファントム BOM 構造
 次の図に示すように、ファントム明細行タイプは複数レベルの BOM 構造で使用できます。 この図では、(a) は製品 G の BOM、(b) はパーツ E と F および製品 G の工順シートです。 
@@ -74,4 +73,3 @@ Microsoft Dynamics 365 for Finance and Operations では、ファントム BOM �
 次の図では、(a) は製品 G およびパーツ F の BOM、(b) は製品 G およびパーツ F の工順シートです。
 
 ![工順シートを含む製品 G およびパーツ F](media/product-G-part-F-with-route-sheet.png)
-

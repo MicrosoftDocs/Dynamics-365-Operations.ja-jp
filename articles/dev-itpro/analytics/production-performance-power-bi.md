@@ -1,13 +1,13 @@
 ---
-title: "生産パフォーマンス Power BI コンテンツ"
-description: "このトピックでは、生産パフォーマンス Power BI コンテンツに何が含まれているのか説明します。 Power BI レポートにアクセスする方法を説明し、コンテンツを作成するために使用したデータ モデルおよびエンティティについての情報を提供します。"
+title: 生産パフォーマンス Power BI コンテンツ
+description: このトピックでは、生産パフォーマンス Power BI コンテンツに何が含まれているのか説明します。 Power BI レポートにアクセスする方法を説明し、コンテンツを作成するために使用したデータ モデルおよびエンティティについての情報を提供します。
 author: AndersGirke
 manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProductionPerformancePowerBI
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 2bc4c409b831b78ef737a98ce985bf144853a454
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365963"
 ---
-
 # <a name="production-performance-power-bi-content"></a>生産パフォーマンス Power BI コンテンツ
 
 [!include [banner](../includes/banner.md)]
@@ -63,7 +62,7 @@ Power BI コンテンツは、期限までに生産を完了するための組�
 
 ## <a name="understanding-the-data-model-and-entities"></a>データ モデルおよびエンティティの理解
 
-次のデータは、**生産パフォーマンス** Power BI コンテンツのレポート ページに使用されます。 このデータは、エンティティ ストアで実施される集計の測定として表されます。 エンティティ ストアは、分析に最適化された Microsoft SQL Server データベースです。 エンティティ格納の詳細については、「[エンティティ格納および Power BI の統合](power-bi-integration-entity-store.md)」を参照してください。
+次のデータは、**生産パフォーマンス** Power BI コンテンツのレポート ページに使用されます。 このデータは、エンティティ ストアで実施される集計の測定として表されます。 エンティティ ストアは、分析に最適化された Microsoft SQL Server データベースです。 エンティティ格納の詳細については、[エンティティ格納および Power BI の統合](power-bi-integration-entity-store.md)を参照してください。
 
 次の表では、Power BI コンテンツの基準として使用されるキー集計の測定が表示されます。
 
@@ -130,4 +129,3 @@ Power BI コンテンツは、期限までに生産を完了するための組�
 | エンティティ                  | ID および名前                                                   |
 | リソース                 | リソース ID、リソース名、リソースのタイプ、およびリソース グループ |
 | 製品                  | 製品番号、製品名、品目 ID、および品目グループ         |
-

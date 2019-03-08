@@ -1,13 +1,13 @@
 ---
-title: "明細行品目ワークフローのコンフィギュレーション"
-description: "このトピックでは、行項目ワークフローの要素をコンフィギュレーションする方法を説明します。"
+title: 明細行品目ワークフローのコンフィギュレーション
+description: このトピックでは、行項目ワークフローの要素をコンフィギュレーションする方法を説明します。
 author: sericks007
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 66e79389bba4566176330914ace462110cd0aa22
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 0a57baa3ecae727721f62477cfc5fa41f60ad06d
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336109"
 ---
-
 # <a name="configure-line-item-workflows"></a>明細行品目ワークフローのコンフィギュレーション
 
 [!include [banner](../includes/banner.md)]
@@ -56,4 +55,3 @@ ms.lasthandoff: 08/09/2018
     6. 入力した条件セットが正しく構成されていることを検証するには、**テスト**をクリックします。 **ワークフロー条件のテスト**ページの、**条件の検証**領域で、レコードを選択して、**テスト**をクリックします。 システムによってレコードが評価され、定義した条件を満たすかどうかが判定されます。 **OK**、または**キャンセル**をクリックして、**プロパティ**ページに戻ります。
 
     **ワークフロー**タブで、定義した条件セットを満たす行項目の処理に使用するワークフローを選択します。
-

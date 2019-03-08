@@ -1,13 +1,13 @@
 ---
-title: "部門、職務、職位を使用した従業員の編成"
-description: "部門、職務、および職位は、人事管理で管理される組織の要素です。 このトピックでは、これらの要素についての概念に関する情報を説明します。"
+title: 部門、職務、職位を使用した従業員の編成
+description: 部門、職務、および職位は、人事管理で管理される組織の要素です。 このトピックでは、これらの要素についての概念に関する情報を説明します。
 author: rschloma
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmJob, HcmPosition, OMOperatingUnit
 audience: Application User
 ms.reviewer: rschloma
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
+ms.openlocfilehash: 8b74542b85810409e062a42e323c0527711d562f
+ms.sourcegitcommit: 49a642cd5e0519e381ff558f59c993ee77f55108
 ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
-ms.openlocfilehash: b2a79c42b67621272af8107661202ea2ce092193
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "374400"
 ---
-
 # <a name="organize-your-workforce-by-using-departments-jobs-and-positions"></a>部門、職務、職位を使用した従業員の編成
 
 [!include [banner](includes/banner.md)]
@@ -164,7 +163,6 @@ ms.lasthandoff: 08/09/2018
 </table>
 
 前のテーブルに示されている職位または職務の情報を変更し、職位または職務への変更が有効になる日付を指定できます。 たとえば、一つの職位は 1 人の作業者にのみ割り当てることができますが、経理担当-A の職位に割り当てられている Patel Sanjay は 2 週間以内に退職します。 Joe Healy は、Sanjay Patel が退職した後、その職位に就きます。 Sanjay がまだ彼の職位に割り当てられている場合でも、Sanjay の最終日の後にのみ割り当てが有効になるように Joe Heal を同じ職位に割り当てることができます。
-
 
 
 

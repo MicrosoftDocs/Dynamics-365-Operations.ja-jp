@@ -1,13 +1,13 @@
---- 
-title: "職務分掌の競合の識別と解決"
-description: "異なるユーザーが実行する必要があるタスクを分割するルールを設定できます。"
+---
+title: 職務分掌の競合の識別と解決
+description: 異なるユーザーが実行する必要があるタスクを分割するルールを設定できます。
 author: maertenm
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysSecSegregationOfDutiesConflict, SysSecSegregationOfDutiesRule
 audience: Application User
 ms.reviewer: margoc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: maertenm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 9d4a6bd14090213cc19a072d030bc26886c7a8d0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: c3a366ea4b558ba4e4af7336992dbb091b0b1414
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "353106"
 ---
 # <a name="identify-and-resolve-conflicts-in-segregation-of-duties"></a>職務分掌の競合の識別と解決
 
@@ -48,5 +48,4 @@ ms.lasthandoff: 09/29/2017
     * ルールを選択します。  
 2. [職務とロールの検証] をクリックします。
     * 既存のロールが選択したルールに違反している場合、ロールの名前と競合する職務を示すメッセージが表示されます。 管理者は、職務分掌のルールに違反しないように、セキュリティ リスクの軽減策を示すか、ロールの変更をする必要があります。     選択したルールに違反するロールがない場合、すべてのロールがルールに遵守していることを示すメッセージが表示されます。  
-
 

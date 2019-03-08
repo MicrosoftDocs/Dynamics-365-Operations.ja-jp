@@ -1,13 +1,13 @@
 ---
-title: "元帳配賦ルール"
-description: "この記事は、元帳配賦ルールに関する情報を提供します。 これらの配賦ルールのさまざまなコンポーネントと使用できる配賦方法を説明します。"
+title: 元帳配賦ルール
+description: この記事は、元帳配賦ルールに関する情報を提供します。 これらの配賦ルールのさまざまなコンポーネントと使用できる配賦方法を説明します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerAllocation, LedgerAllocationBasisRule, LedgerAllocationRequest, LedgerAllocationRule
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: abbeb1bb4481139dff902916362a479f94fb96e5
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 63562cde3f2813fdcfc9df7ccbfc623aa2fbe9b1
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365733"
 ---
-
 # <a name="ledger-allocation-rules"></a>元帳配賦ルール
 
 [!include [banner](../includes/banner.md)]
@@ -48,7 +47,6 @@ ms.lasthandoff: 11/03/2017
 -   **出力先** – このコンポーネントでは、配賦計算の結果を配賦先明細行に配分し計上する方法を定義します。 たとえば、各部門には、配賦先明細行が 1 つあります。
 -   **相殺** – このコンポーネントでは、主勘定および分析コードが配賦先入力の収支を合わせるための相殺仕訳に決定される方法を定義します。 ユーザー定義のオプションは通常、ソースに基づく勘定および分析コードの代わりに使用されます。 **データ ソース**に**固定値**が設定されている場合、**ソース**は選択肢として使用できません。
 -   **元帳配賦基準ルール** – これらのルールは、独自のソース基準を使用して、元帳残高を配賦に使用するかを決定します (たとえば、部門ごとの収益)。 各配賦基準ルールは、複数の配賦ルールで使用できます。
-
 
 
 

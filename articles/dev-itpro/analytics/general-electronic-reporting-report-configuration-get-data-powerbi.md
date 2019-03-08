@@ -1,13 +1,13 @@
 ---
-title: "Power BI にデータをプルする電子申告 (ER) のコンフィギュレーション"
-description: "このトピックでは、電子申告 (ER) コンフィギュレーションを使用して Finance and Operations のインスタンスから Power BI サービスへのデータ転送を調整する方法について説明します。"
+title: Power BI にデータをプルするよう電子申告 (ER) を構成する
+description: このトピックでは、電子申告 (ER) コンフィギュレーションを使用して Finance and Operations のインスタンスから Power BI サービスへのデータ転送を調整する方法について説明します。
 author: NickSelin
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: e2d3c03a75fd03dfd3a96a181eff20f934546ec4
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "335787"
 ---
-
-# <a name="configure-electronic-reporting-er-to-pull-data-into-power-bi"></a>Power BI にデータをプルする電子申告 (ER) のコンフィギュレーション
+# <a name="configure-electronic-reporting-er-to-pull-data-into-power-bi"></a>Power BI にデータをプルするよう電子申告 (ER) を構成する
 
 [!include [banner](../includes/banner.md)]
 
@@ -33,15 +32,15 @@ ms.lasthandoff: 08/13/2018
 
 ## <a name="overview"></a>概要
 
-Microsoft Power BI は、外部のデータ ソースを一貫性、視覚的な没入型、および対話型の洞察に変換するソフトウェア サービス、アプリ、コネクタの集合です。 電子申告 (ER) は、Microsoft Dynamics 365 for Finance and Operations のユーザーが容易にデータ ソースをコンフィギュレーションし、Finance and Operations から Power BI へデータの転送を手配します。 データは、OpenXML ワークシート (Microsoft Excel ワークブックのファイル) 形式のファイルとして転送されます。 転送されたファイルは、その目的にコンフィギュレーションされた Microsoft SharePoint Server に保存されます。 保存されたファイルは、視覚化 (テーブル、グラフ、マップなど) を含むレポートを作成し、Power BI で使用されます。 Power BI レポートは、Power BI ユーザーで共有され、Power BI ダッシュボード、および Finance and Operations のページでアクセスされます。 ここでは、次のタスクについて説明します:
+Microsoft Power BI は、外部のデータ ソースを一貫性、視覚的な没入型、および対話型の洞察に変換するソフトウェア サービス、アプリ、コネクタの集合です。 電子申告 (ER) により、Microsoft Dynamics 365 for Finance and Operations のユーザーは簡単にデータ ソースをコンフィギュレーションし、Finance and Operations から Power BI へのデータ転送を調整できます。 データは、OpenXML ワークシート (Microsoft Excel ワークブックのファイル) 形式のファイルとして転送されます。 転送されたファイルは、その目的のためにコンフィギュレーションされた Microsoft SharePoint Server に保存されます。 保存されたファイルは、視覚化 (テーブル、グラフ、マップなど) を含むレポートを作成し、Power BI で使用されます。 Power BI レポートは、Power BI ユーザーで共有され、Power BI ダッシュボード、および Finance and Operations のページでアクセスされます。 ここでは、次のタスクについて説明します:
 
 - Finance and Operations を構成します。
 - Finance and Operations からデータを取得するために、ER形式のコンフィギュレーションを準備します。
-- Power BI にデータを転送するために ER 環境のコンフィギュレーション。
-- Power BI レポートを作成するために転送されたデータの使用。
+- Power BI にデータを転送するために ER 環境をコンフィギュレーションします。
+- Power BI レポートを作成するために転送されたデータを使用します。
 - Power BI レポートが Finance and Operations にアクセスできるようにします。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必要条件
 このトピックの例を完了するには、次のアクセスが必要です:
 
 - 次のロールのいずれか 1 つのために Finance and Operations にアクセスします:
@@ -54,13 +53,13 @@ Microsoft Power BI は、外部のデータ ソースを一貫性、視覚的な
 - Power BI フレームワークへのアクセス
 
 ## <a name="configure-document-management-parameters"></a>ドキュメント管理パラメーターのコンフィギュレーション
-1. **ドキュメント管理パラメーター** ページで、サイン インしている会社 (この例では DEMF 会社) が使用する SharePoint Serverへのアクセスをコンフィギュレーションします。
+1. **ドキュメント管理パラメーター**ページで、サインインしている会社 (この例では DEMF 会社) が使用する SharePoint Serverへのアクセスをコンフィギュレーションします。
 2. アクセス権があることを確認するために、SharePoint Server への接続をテストします。
 
     [![ドキュメント管理パラメーター ページ](./media/ger-power-bi-sharepoint-server-setting-1024x369.png)](./media/ger-power-bi-sharepoint-server-setting.png)
 
 3. コンフィギュレーションされた SharePoint サイトを開きます。 Power BI データセットのソースとして Power BI レポートに必要なビジネス データがある Excel ファイルを ER が格納する新しいフォルダーを作成します。
-4. Finance and Operations では、**ドキュメント タイプ** ページで、作成した SharePoint フォルダーにアクセスするために使用される新しいドキュメント タイプを作成します。 **グループ** フィールドに **ファイル** を入力し、**場所** フィールドに **SharePoint** を入力し、SharePoint フォルダーのアドレスを入力します。
+4. Finance and Operations では、**ドキュメント タイプ**ページで、作成した SharePoint フォルダーにアクセスするために使用される新しいドキュメント タイプを作成します。 **グループ**フィールドに**ファイル**を入力し、**場所**フィールドに **SharePoint** を入力し、SharePoint フォルダーのアドレスを入力します。
 
     [![ドキュメント タイプ ページ](./media/ger-power-bi-sharepoint-document-type-1024x485.png)](./media/ger-power-bi-sharepoint-document-type.png)
 
@@ -113,7 +112,7 @@ Power BI レポートで使用されるビジネス データのソースとし�
 ## <a name="configure-the-er-destination"></a>ER 送信先のコンフィギュレーション
 特別な方法で新しい ER 形式のコンフィギュレーションの出力結果を送信するために ER フレームワークをコンフィギュレーションする必要があります。
 
-- 出力結果は、選択した SharePoint Server のフォルダに送信する必要があります。
+- 出力結果は、選択した SharePoint Server のフォルダーに送信する必要があります。
 - 形式のコンフィギュレーションを実行するたびに、同じ Excel ファイルの新しいバージョンを作成する必要があります。
 
 **電子申告** のページ (**組織管理** &gt; **電子申告**) で、**電子申告の送信先** の項目をクリックして、新しい送信先を追加します。 **参照**フィールドで、以前に作成した**エクスポート/インポート活動**の形式のコンフィギュレーションを選択します。 参照用の新しいファイル送信先レコードを追加するには、次の手順に従います。
@@ -123,8 +122,8 @@ Power BI レポートで使用されるビジネス データのソースとし�
 
 新しい送信先レコードの **設定** ボタンをクリックします。 次に、**送信先の設定** のダイアログ ボックスで、次の手順に従います。
 
-1. **Power BI** タブで、**有効** オプションを **はい** に設定します。
-2. **SharePoint** フィールドで、以前に作成した **共有** ドキュメント タイプを選択します。
+1. **Power BI** タブで、**有効**オプションを**はい**に設定します。
+2. **SharePoint** フィールドで、以前に作成した**共有**ドキュメント タイプを選択します。
 
 ## <a name="schedule-execution-of-the-configured-er-format"></a>コンフィギュレーションされた ER 形式の実行をスケジュールする
 1. **コンフィギュレーション** ページ (**組織管理** &gt; **電子申告** &gt; **コンフィギュレーション**) のコンフィギュレーション ツリーで、以前に作成した **インポート/エクスポート活動** のコンフィギュレーションを選択します。
@@ -142,7 +141,7 @@ Power BI レポートで使用されるビジネス データのソースとし�
 
     [![バッチ ジョブのページ](./media/ger-power-bi-format-configuration-running-job-1024x410.png)](./media/ger-power-bi-format-configuration-running-job.png)
 
-7. このジョブを初めて実行すると、送信先は、選択した SharePoint のフォルダにコンフィギュレーションされた名前を持つ新しい Excel ファイルを作成します。 その後ジョブが実行されるたびに、送信先は新しいバージョンの Excel ファイルを作成します。
+7. このジョブを初めて実行すると、送信先は、選択した SharePoint のフォルダーにコンフィギュレーションされた名前を持つ新しい Excel ファイルを作成します。 その後ジョブが実行されるたびに、送信先は新しいバージョンの Excel ファイルを作成します。
 
     [![Excel ファイルの新しいバージョン](./media/ger-power-bi-output-file-in-sharepoint-server-folder-2-1024x412.png)](./media/ger-power-bi-output-file-in-sharepoint-server-folder-2.png)
 
@@ -151,8 +150,8 @@ Power BI レポートで使用されるビジネス データのソースとし�
 
     [![データセットの作成](./media/ger-power-bi-add-dataset-1024x524.png)](./media/ger-power-bi-add-dataset.png)
 
-2. **SharePoint – チーム サイト** オプションを選択してから、使用している SharePoint Server のパス (上記の例では、`https://ax7partner.litware.com`) を入力します。
-3. **/共有ドキュメント/GER データ/PowerBI** フォルダを参照し、新しい Power BI データセットのためのデータのソースとして作成した Excel ファイルを選択します。
+2. **SharePoint – チーム サイト**オプションを選択してから、使用している SharePoint Server のパス (上記の例では、`https://ax7partner.litware.com`) を入力します。
+3. **/共有ドキュメント/GER データ/PowerBI** フォルダーを参照し、新しい Power BI データセットのためのデータのソースとして作成した Excel ファイルを選択します。
 
     [![Excel ファイルの選択](./media/ger-power-bi-add-dataset-select-excel-file-1024x522.png)](./media/ger-power-bi-add-dataset-select-excel-file.png)
 
@@ -160,10 +159,10 @@ Power BI レポートで使用されるビジネス データのソースとし�
 
     [![ダッシュボードのデータセット](./media/ger-power-bi-added-dataset-1024x489.png)](./media/ger-power-bi-added-dataset.png)
 
-5. このデータセットの更新スケジュールをコンフィギュレーションして、定期更新を強制します。 定期更新により、SharePoint Server 上に作成された Excel ファイル の新しいバージョンを使用して ER レポートの定期実行による Finance and Operations からの新しいビジネス データの消費が可能になります。
+5. このデータセットの更新スケジュールをコンフィギュレーションして、定期更新を強制します。 定期更新により、SharePoint Server 上に作成された Excel ファイル の新しいバージョンを使用した ER レポートの定期実行による Finance and Operations からの新しいビジネス データの消費が可能になります。
 
 ## <a name="create-a-power-bi-report-by-using-the-new-dataset"></a>新しいデータセットを使用して Power BI レポートを作成
-1. 作成した **インポートとエクスポートの詳細** Power BI データセットをクリックします。
+1. 作成した**インポートとエクスポートの詳細** Power BI データセットをクリックします。
 2. 視覚化をコンフィギュレーションします。 たとえば **入力済マップ** の視覚化を選択して、次のようにコンフィギュレーションします:
 
     - **CountryOrigin** データセット フィールドをマップ視覚化の **場所** フィールドに割り当てます。
@@ -185,17 +184,16 @@ Power BI レポートで使用されるビジネス データのソースとし�
     [![更新されたマップ](./media/ger-power-bi-new-run-new-map-1024x511.png)](./media/ger-power-bi-new-run-new-map.png)
 
 ## <a name="access-power-bi-report-in-finance-and-operations"></a>Finance and Operations で Power BI レポートにアクセスします。
-Finance and Operations と Power BI の統合を設定します。 詳細については、「[ワークスペースの Power BI 統合のコンフィギュレーション](configure-power-bi-integration.md)」を参照してください。
+Finance and Operations と Power BI の統合を設定します。 詳細については、[ワークスペースの Power BI 統合のコンフィギュレーション](configure-power-bi-integration.md) を参照してください。
 
-1. Power BI 統合 (**組織管理** &gt; **ワークスペース** &gt; **電子申告ワークスペース**) をサポートする **電子申告** ワークスペース ページで、**オプション** &gt; **レポート カタログを開く** をクリックします。
-2. 作成した **インポートとエクスポートの詳細** Power BI レポートを選択して、選択されたページでアクション項目としてレポートを表示します。
+1. Power BI 統合 (**組織管理** &gt; **ワークスペース** &gt; **電子申告ワークスペース**) をサポートする**電子申告**ワークスペース ページで、**オプション** &gt; **レポート カタログを開く**をクリックします。
+2. 作成した**インポートとエクスポートの詳細** Power BI レポートを選択して、選択されたページでアクション項目としてレポートを表示します。
 3. アクション項目をクリックして、Power BI でデザインされたレポートを表示する Finance and Operations のページを開きます。
 
     [![インポートとエクスポートの詳細レポート](./media/ger-power-bi-review-bi-report-in-ax-form-1024x586.png)](./media/ger-power-bi-review-bi-report-in-ax-form.png)
 
-## <a name="additional-resources"></a>その他のリソース
+## <a name="additional-resources"></a>追加リソース
 
 [電子申告の送信先](electronic-reporting-destinations.md)
 
 [電子申告の概要](general-electronic-reporting.md)
-

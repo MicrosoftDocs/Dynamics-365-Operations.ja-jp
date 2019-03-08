@@ -1,13 +1,13 @@
---- 
-title: "前の質問の回答に応じた質問の作成"
-description: "条件付き質問は、前の質問に対する回答に基づいて、回答者に提供するフォローアップの質問を指定することを可能にします。"
+---
+title: 前の質問の回答に応じた質問の作成
+description: 条件付き質問は、前の質問に対する回答に基づいて、回答者に提供するフォローアップの質問を指定することを可能にします。
 author: twheeloc
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KMCollection, KMCollectionQuestion, KMCollectionQuestionTree
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: deb79398f5a0ebdbdb774c106c90ca50a69c275e
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341284"
 ---
 # <a name="make-a-question-dependent-on-the-answer-of-the-previous-question"></a>前の質問の回答に応じた質問の作成
 
@@ -55,5 +55,4 @@ ms.lasthandoff: 09/14/2018
 9. [保存] をクリックします。
 10. ツリーで、「質問\自分の作業に対して公正な給料をもらっている」を選択します。
     * 依存関係を表示する更新された質問ツリーに注意します。  
-
 

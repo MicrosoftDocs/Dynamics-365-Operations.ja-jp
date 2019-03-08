@@ -1,28 +1,28 @@
 ---
-title: "オファー管理の設定"
-description: "このトピックでは、Talent でのオファーの設定方法について説明します。"
+title: オファー管理の設定
+description: このトピックでは、Talent でのオファーの設定方法について説明します。
 author: josaw
 manager: AnnBe
-ms.date: 12/07/2018
+ms.date: 02/04/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Talent
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-10-18
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: fa6c8c80870dd7bd06498c7571ba8a110be85c86
+ms.sourcegitcommit: 3b12ff5ca81650ae666ff443b0bc998182f3931e
 ms.translationtype: HT
-ms.sourcegitcommit: be66d9f95551066bb8bc25445c652d4fa59066d4
-ms.openlocfilehash: bb90f0a3c87c64a74ca63610105abfeb8223900a
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/07/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "376510"
 ---
 # <a name="set-up-offer-management"></a>オファー管理の設定 
 
@@ -203,5 +203,7 @@ Attract 管理者によって設定可能なオファー作成プロセスの部
 
     - ESign - これは、すぐに使用できる既定のオプションで、ユーザーは名前とイニシャルを入力してオファーに署名することができます。
 
-オファー作成プロセスの詳細については、[作成、承認、および署名](./creating-offers.md)を参照してください。
+>[!NOTE]
+> Adobe Sign ライセンスおよび無料試用版については、この[リンク](https://acrobat.adobe.com/us/en/business/integrations/microsoft-dynamics-365-for-talent.html)を参照してください。
 
+オファー作成プロセスの詳細については、[作成、承認、および署名](./creating-offers.md)を参照してください。

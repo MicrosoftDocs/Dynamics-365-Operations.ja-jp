@@ -1,13 +1,13 @@
 ---
-title: "電子申告 (ER) コンフィギュレーション ライフサイクルの管理"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations ソリューションの電子申告 (ER) コンフィギュレーションのライフサイクルを管理する方法について説明します。"
+title: 電子申告 (ER) コンフィギュレーション ライフサイクルの管理
+description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations ソリューションの電子申告 (ER) コンフィギュレーションのライフ サイクルを管理する方法について説明します。
 author: NickSelin
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERMappedFormatDesigner, ERModelMappingDesigner, ERModelMappingTable, ERSolutionImport, ERSolutionTable, ERVendorTable, ERWorkspace
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 5724ba62bfb2c6e75ae895dc9285966c25f387a2
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 76ea412a3c10bf33fc06603bab8b94b2eadb9803
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "344803"
 ---
-
 # <a name="manage-the-electronic-reporting-er-configuration-lifecycle"></a>電子申告 (ER) コンフィギュレーション ライフサイクルの管理
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Finance and Operations ソリューションの電子申告 (ER) コンフィギュレーションのライフサイクルを管理する方法について説明します。
+このトピックでは、Microsoft Dynamics 365 for Finance and Operations ソリューションの電子申告 (ER) コンフィギュレーションのライフ サイクルを管理する方法について説明します。
 
 ## <a name="overview"></a>概要
 
@@ -89,4 +88,3 @@ ER に関連する次の理由から、個別の Finance and Operations イン�
 ## <a name="additional-resources"></a>その他のリソース
 
 [電子申告の概要](general-electronic-reporting.md)
-

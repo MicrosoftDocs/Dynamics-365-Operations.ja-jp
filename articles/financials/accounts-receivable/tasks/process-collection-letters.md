@@ -1,13 +1,13 @@
---- 
-title: "督促状の処理"
-description: "この手順では、督促状の作成、印刷、および転記の方法を示します。"
+---
+title: 督促状の処理
+description: この手順では、督促状の作成、印刷、および転記の方法を示します。
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 12/04/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustPosting, CustCollectionLetterNote
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2018-12-01
 ms.dyn365.ops.version: 8.1.3
+ms.openlocfilehash: 8a3f74d2891c050294e089eae14ba2386449d7c9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 075d0f5dc0c9dc4e46dc92a2da75da9f7a207472
-ms.openlocfilehash: 33d9fd62a780ab109474eefa9e322a9c529f9e72
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/06/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358856"
 ---
 # <a name="process-collection-letters"></a>督促状の処理
 
@@ -80,4 +80,3 @@ ms.lasthandoff: 12/06/2018
 督促状コードを計算する時に支払とクレジット メモを無視するには、次の操作を行います。
 1. **貸方転記および取立 > 設定 > 売掛金勘定パラメーター**に移動し、**回収**タブをクリックします。 
 2. Change the value of **督促状コードを計算する時に支払とクレジット メモを無視する**の値を**はい**に変更します。
-

@@ -1,13 +1,13 @@
 ---
-title: "品質管理の概要"
-description: "このトピックは、Microsoft Dynamics 365 for Finance and Operations で品質管理を使用してサプライ チェーン内の製品の品質を向上させる方法について説明します。"
+title: 品質管理の概要
+description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations で品質管理を使用してサプライ チェーン内の製品の品質を向上させる方法について説明します。
 author: perlynne
 manager: AnnBe
 ms.date: 11/02/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventTestAssociationTable, InventTestGroup, InventTestItemQualityGroup, InventTestTable, InventTestVariable, InventTestVariableOutcome
 audience: Application User
 ms.reviewer: josaw
@@ -19,21 +19,20 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 1630d13437d7e930fdf32ed5fdc61fc62bc33817
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 79b3127f726a08cc24c20145b5ad9969157a899c
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "338317"
 ---
-
 # <a name="quality-management-overview"></a>品質管理の概要
 
 [!include [banner](../includes/banner.md)]
 
-このトピックは、Microsoft Dynamics 365 for Finance and Operations で品質管理を使用してサプライ チェーン内の製品の品質を向上させる方法について説明します。
+このトピックでは、Microsoft Dynamics 365 for Finance and Operations で品質管理を使用してサプライ チェーン内の製品の品質を向上させる方法について説明します。
 
-品質管理で、不適合製品を処理する際に原産地に関係なく応答時間を管理することができます。 診断タイプは修正レポートにリンクされているため、Microsoft Dynamics 365 for Finance および Operations では、問題を修正して再発を防ぐためのタスクをスケジュールできます。
+品質管理で、不適合製品を処理する際に原産地に関係なく応答時間を管理することができます。 診断タイプは修正レポートにリンクされているため、Microsoft Dynamics 365 for Finance and Operations では、問題を修正して再発を防ぐためのタスクをスケジュールできます。
 
 不適合を管理するための機能に加えて、品質管理には、問題タイプ (内部の問題も含む) で問題を追跡し、短期または長期でソリューションを識別する機能が含まれています。 主要業績評価指標 (KPI) に関する統計で、以前の不適合問題の履歴と修正に使用されたソリューションを分析できます。 履歴データを使用して、以前の品質尺度の有効性を確認し、今後使用する適切な尺度を決定することができます。
 
@@ -338,7 +337,7 @@ ms.lasthandoff: 05/08/2018
 </tr>
 <tr class="even">
 <td>品目品質グループ</td>
-<td>品質グループに割り当てられる品目、または品目に割り当てられる品質グループを、設定、編集、および表示するには、このページを使用します。 品質グループとは、複数の品目に共通するテスト要件です。 <strong>テスト グループ</strong> ページのテスト要件を定義した後、品質指示を自動生成するルールを定義できます。 プロセスを簡略化するために、個別の品目のルールを定義しません。 代わりに、<strong>品質関連</strong>ページを使用して品質グループのルールを定義します。 選択した品質グループの<strong>品目品質グループ</strong> ページを使用して、そのグループに関連品目を割り当てることもできます。 選択した品目の<strong>品目品質グループ</strong> ページを使用して、その品目に関連品質グループを割り当てることもできます。</td>
+<td>品質グループに割り当てられる品目、または品目に割り当てられる品質グループを、設定、編集、および表示するには、このページを使用します。 品質グループとは、複数の品目に共通するテスト要件です。 <strong>テスト グループ</strong> ページのテスト要件を定義した後、品質指示を自動生成するルールを定義できます。 プロセスを簡略化するために、個別の品目のルールは定義しません。 代わりに、<strong>品質関連</strong>ページを使用して品質グループのルールを定義します。 選択した品質グループの<strong>品目品質グループ</strong> ページを使用して、そのグループに関連品目を割り当てることもできます。 選択した品目の<strong>品目品質グループ</strong> ページを使用して、その品目に関連品質グループを割り当てることもできます。</td>
 <td>ある製造会社で、受入検査に同じテスト要件があるさまざまな原材料を購入しています。 その会社では、品質グループを定義し、そのグループに原材料と関連付けた品目番号を割り当てます。 後で、同じテスト要件がある新しいタイプの原材料を購入します。 新しい材料の新しいテスト要件を設定せずに、既存の品質グループに新しい材料の品目番号を追加します。 また、この製造会社では、同じ製造テスト要件の品目を製造し、同じ要件で出荷前テストを実行して品目を出荷しています。 この会社は、さらに 2 つの品質グループを定義し、各グループに関連品目番号を割り当てます。</td>
 </tr>
 <tr class="odd">
@@ -362,4 +361,3 @@ ms.lasthandoff: 05/08/2018
 [品質管理プロセス](quality-management-processes.md)
 
 [不適合管理の有効化](enable-nonconformance-management.md)
-

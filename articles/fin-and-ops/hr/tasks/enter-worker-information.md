@@ -1,13 +1,13 @@
---- 
-title: "作業者情報の入力"
-description: "リクルーターは大量雇用プロジェクトを作成し、職位を生成した後、その次の手順として、採用する作業者の情報を入力します。"
+---
+title: 作業者情報の入力
+description: リクルーターは大量雇用プロジェクトを作成し、職位を生成した後、その次の手順として、採用する作業者の情報を入力します。
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HRMMassHireProject, HRMMassHireLine
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 0d850f271a3add191fcdc8ff5624bebbc6c6327f
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "339559"
 ---
 # <a name="enter-worker-information"></a>作業者情報の入力
 
@@ -44,5 +44,4 @@ ms.lasthandoff: 09/14/2018
 7. 一覧で、目的のレコードを見つけ、選択します。
 8. 一覧で、選択された行のマークを解除します。
     * 次のプロジェクトの職位を選択し、採用する各作業者の情報を入力し続けます。  
-
 

@@ -1,13 +1,13 @@
---- 
-title: "個別資産の減損インジケーターの管理"
-description: "このタスクを使用して、個別資産の減損インジケーターの管理方法を把握します。"
+---
+title: 個別資産の減損インジケーターの管理
+description: このタスクを使用して、個別資産の減損インジケーターの管理方法を把握します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetTable, AssetBook, AssetImpairmentIndicator_JP, AssetImpairmentReview_JP, SysQueryForm
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 1db519837cee597d98d420aa5aa63c2ab924cc06
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371129"
 ---
 # <a name="maintain-impairment-indicators-on-individual-assets"></a>個別資産の減損インジケーターの管理
 
@@ -83,5 +83,4 @@ ms.lasthandoff: 10/16/2018
 17. [回収可能金額] フィールドに、数値を入力します。
     * 1500000.00 を入力します。  
 18. [インジケーターの更新] をクリックします。
-
 

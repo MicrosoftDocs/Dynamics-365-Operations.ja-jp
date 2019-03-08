@@ -1,13 +1,13 @@
 ---
-title: "製造オーダーのステータスの取り消し"
-description: "このトピックでは、製造オーダーのステータスを取り消す方法について説明します。"
+title: 製造オーダーのステータスの取り消し
+description: このトピックでは、製造オーダーのステータスを取り消す方法について説明します。
 author: johanhoffmann
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProdParmStatusDecrease
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 7ca5a62b4509f0c7e49da94128e72eae5f35829e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4761e44b6bbc93ebf4a395948f42c2a73013ecb9
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "367320"
 ---
-
 # <a name="reverse-the-production-order-status"></a>製造オーダーのステータスの取り消し
 
 [!include [banner](../includes/banner.md)]
@@ -51,7 +50,6 @@ ms.lasthandoff: 11/03/2017
 
 ## <a name="from-started-to-released"></a>[開始済] から [リリース済] へ
 製造オーダーのステータスを **開始済**から**リリース済**に戻すと、完了したとして報告されたすべての品目の設定は戻されます。 材料がピッキング済であるか、入庫および出荷の配送が生産に対して行われていた場合は、これらの設定は戻されます。 製造オーダーの BOM 明細行の**残余のステータス**フィールドは、**終了済** から**材料消費量**に変更されます。 時間が登録済または数量が生産工順の工程で完了と報告される場合、これらの設定は取り消されます。 生産工順における**残余のステータス**フィールドは、**終了済** から**工順消費**に変更されます。 プロセス中またはプロセスの作業としてと転記されたすべての品目の設定は戻されます。 **製造オーダーの詳細**ページで、開始または完了報告された数量を示すフィールドはリセットされます。 これらのトランザクションの日付も、リセットされます。
-
 
 
 

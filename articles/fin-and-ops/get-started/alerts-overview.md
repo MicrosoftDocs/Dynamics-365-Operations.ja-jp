@@ -1,13 +1,13 @@
 ---
-title: "警告"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations の警告に関する一般情報を提供します。 警告を使用することで、作業日に追跡したいイベントに関する情報を常に受け取ることができます。"
+title: 警告
+description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations の警告に関する一般情報を提供します。 警告を使用することで、作業日に追跡したいイベントに関する情報を常に受け取ることができます。
 author: tjvass
 manager: AnnBe
 ms.date: 07/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EventCreateRule
 audience: Application user
 ms.reviewer: sericks
@@ -16,20 +16,19 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
+ms.openlocfilehash: 28ee34cd9133c634af98a50168e22efd0f74abce
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 38309e986c1d284ed63be760745b20a5415adb4c
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "367458"
 ---
-
 # <a name="alerts"></a>警告
 
 [!include [banner](../includes/banner.md)]
 
 ## <a name="about-alerts"></a>警告について
-警告は、Microsoft Dynamics 365 for Finance and Operations の重大なイベントの通知システムを形成します。 警告を使用することで、作業日に追跡したいイベントに関する情報を常に受け取ることができます。 延滞した出荷、削除された注文、変更された価格、またはその他対応が必要なイベントに関する警告を受け取る独自の警告ルール セットを、簡単に作成できます。
+Microsoft Dynamics 365 for Finance and Operations の重大なイベントの通知システムは、警告によって形成されます。 警告を使用することで、作業日に追跡したいイベントに関する情報を常に受け取ることができます。 延滞した出荷、削除された注文、変更された価格、またはその他対応が必要なイベントに関する警告を受け取る独自の警告ルール セットを、簡単に作成できます。
 
 エンタープライズ リソース プランニング (ERP) では、Finance and Operations での警告機能を使用できる、いくつかの一般的なシナリオがあります。 次にいくつか例を挙げます。
 
@@ -78,4 +77,3 @@ ms.lasthandoff: 08/09/2018
 ## <a name="email-notifications-from-alerts"></a>警告からの電子メール通知
 
 警告からの電子メール通知はまだ有効なっていません。 これは今後の更新で有効になります。
-

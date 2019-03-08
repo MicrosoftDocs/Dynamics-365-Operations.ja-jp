@@ -1,32 +1,31 @@
 ---
-title: "原価オブジェクト コントローラーのアクセス権の定義"
-description: "このトピックでは、原価オブジェクト コント ローラーのアクセス権に関する情報を提供します。"
+title: 原価オブジェクト コントローラーのアクセス権の定義
+description: このトピックでは、原価オブジェクト コント ローラーのアクセス権に関する情報を提供します。
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/24/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CAMCostControlWorkspace, CAMParameters
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 290b16eeb99ac7ddb9b552b289215c99a0451660
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 1cac3c3b724dda4ab39a65aa5221eda427767eb8
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355544"
 ---
-
 # <a name="access-rights-of-a-cost-object-controller"></a>原価オブジェクト コントローラーのアクセス権
 
 [!include [banner](../includes/banner.md)]
@@ -107,4 +106,3 @@ ms.lasthandoff: 05/08/2018
 - [原価管理ワークスペース](cost-control-workspace.md)
 - [分析コード階層](dimension-hierarchy.md)
 - [原価会計コンテンツ パックのセキュリティ設定](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md)
-

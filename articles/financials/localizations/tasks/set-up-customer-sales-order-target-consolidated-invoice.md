@@ -1,13 +1,13 @@
---- 
-title: "月次締め請求書の対象とする顧客および販売注文の設定"
-description: "通常日本では、顧客はすべてのトランザクションに月次締め請求書を使用します。"
+---
+title: 月次締め請求書の対象とする顧客および販売注文の設定
+description: 通常日本では、顧客はすべてのトランザクションに月次締め請求書を使用します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustTable, SalesTableListPage, SalesTable
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: c9b1994c0f91282f5a66da2c9e259de202b52153
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371126"
 ---
 # <a name="set-up-a-customer-and-sales-order-to-be-target-of-consolidated-invoice"></a>月次締め請求書の対象とする顧客および販売注文の設定
 
@@ -53,5 +53,4 @@ ms.lasthandoff: 10/16/2018
 3. [ヘッダー] をクリックします。
     * [締めの対象] スライダーが「はい」に設定されていることを確認します。  
     * スライダーが「いいえ」に設定されている場合、タスク ガイドのロックを解除し、[編集] をクリックしてこのフィールドを更新します。  
-
 

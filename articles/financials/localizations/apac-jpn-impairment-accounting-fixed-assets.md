@@ -1,13 +1,13 @@
 ---
-title: "日本の固定資産の減損会計"
-description: "このトピックでは、日本の固定資産の減損会計に関する情報について説明します。"
+title: 日本の固定資産の減損会計
+description: このトピックでは、日本の固定資産の減損会計に関する情報について説明します。
 author: yijialuan
 manager: AnnBe
 ms.date: 03/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetImpairmentAssetTransInquire_JP, AssetImpairmentIndicator_JP, AssetImpairmentManageTestResult_JP
 audience: Application User
 ms.reviewer: shylaw
@@ -17,21 +17,20 @@ ms.search.region: Japan
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: bb9dc86b3c12ca29ec249319483bc37ca7c71db6
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: f8a35182cd1f1f891503325da8fc9ead0655c22f
-ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371054"
 ---
-
 # <a name="impairment-accounting-for-fixed-assets-for-japan"></a>日本の固定資産の減損会計
 
 [!include [banner](../includes/banner.md)]
 
 このトピックでは、日本の固定資産の減損会計に関する情報について説明します。
 
-Microsoft Dynamics 365 for Finance and Operations を使用して固定資産の減損を設定および計算するには、次のタスクを実行できます。
+Microsoft Dynamics 365 for Finance and Operations を使用して、固定資産の減損を設定および計算するには、次のタスクを実行できます。
 
 -   減損された可能性のある固定資産の一覧を生成します。 一覧の各資産の値引き前キャッシュ フロー、公正価額、復旧可能な金額を手動で確認し、計算して、固定資産が減損されるかどうかを決定できます。
 -   固定資産の値引き前キャッシュ フローなど減損のインジケーターを更新します。
@@ -40,10 +39,10 @@ Microsoft Dynamics 365 for Finance and Operations を使用して固定資産の
 -   固定資産の減損のトランザクションの詳細を表示します。
 
 ## <a name="how-can-i-identify-impairments-in-fixed-assets"></a>固定資産の減損をどのように識別できますか。
-固定資産の減損を識別するために減損のインジケーターを使用できます。 [減損の確認] ページで、減損しているとみられる固定資産の一覧を生成できます。 値引き前キャッシュ フローを手動で計算し、[減損インジケーターの更新] ページで固定資産の減損インジケーターを更新します。 減損の認識テストの実行時に、固定資産の減損を識別するには、更新した減損インジケーターを使用できます。
+固定資産の減損を識別するために減損のインジケーターを使用できます。 **減損の確認**ページで、減損しているとみられる固定資産の一覧を生成できます。 値引き前キャッシュ フローを手動で計算し、**減損インジケーターの更新**ページで固定資産の減損インジケーターを更新します。 減損の認識テストの実行時に、固定資産の減損を識別するには、更新した減損インジケーターを使用できます。
 
 ## <a name="can-i-select-which-assets-to-test-for-impairment"></a>減損をテストする資産を選択できますか。
-減損をテストする資産を選択できます。 基準を指定するには、[減損認識のテスト] ページの [クエリ] をクリックします。
+減損をテストする資産を選択できます。 基準を指定するには、**減損認識のテスト**ページの**クエリ**をクリックします。
 
 ## <a name="how-often-can-i-check-fixed-assets-for-impairment"></a>減損について固定資産をどれほどの頻度で確認できますか。
 バッチ ジョブを作成して、スケジュールに基づいて減損について固定資産を確認するよう Finance and Operations を設定できます。
@@ -71,6 +70,5 @@ Microsoft Dynamics 365 for Finance and Operations を使用して固定資産の
 - [固定資産仕訳帳を使用した減損損失の提案と転記](./tasks/propose-post-impairment-amount-fixed-asset-journal.md)
 - [認識テストの実行と個別資産の減損損失の計算](./tasks/run-recognition-test-calculate.md)
 - [減損会計の共通パラメーターおよび転記プロファイルの設定](./tasks/impairment-accounting.md)
-
 
 

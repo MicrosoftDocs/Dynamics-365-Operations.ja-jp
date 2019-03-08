@@ -1,13 +1,13 @@
 ---
-title: "モバイル デバイスでのプロジェクト タイムシート"
-description: "タイムシート (モバイルに最適化) で、従業員はモバイル デバイスで特定のプロジェクトの作業時間を記録するプロジェクト タイムシートを作成および送信できます。"
+title: モバイル デバイスでのプロジェクト タイムシート
+description: タイムシート (モバイルに最適化) で、従業員はモバイル デバイスで特定のプロジェクトの作業時間を記録するプロジェクト タイムシートを作成および送信できます。
 author: abruer
 manager: AnnBe
 ms.date: 03/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -15,14 +15,13 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: April 2018 update
+ms.openlocfilehash: 96ad2af40ffb68649dca7a90d5ae14cd64b43ce9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 3e09433a9bb819cf24ee74443dd7e2d80a2b6b2e
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "360949"
 ---
-
 # <a name="project-timesheets-on-a-mobile-device"></a>モバイル デバイスでのプロジェクト タイムシート
 
 [!include [banner](../includes/banner.md)]
@@ -33,25 +32,25 @@ ms.lasthandoff: 04/13/2018
 
 **確認用タイムシート (モバイルに最適化)** によりタイムシートの承認権限を持つプロジェクト管理者は、モバイル デバイスでプロジェクト タイムシートを表示および承認できます。 編集または財務分析コード情報の表示は、モバイル アプリからはサポートされていません。 **確認用タイムシート (モバイルに最適化)** はモバイル デバイスで Web ブラウザーからアクセスできます。
 
-このモバイル アプリケーションは iPhone および Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 15 と互換性があります。
-アンドロイドは使用できるようになったとき、プラットフォーム更新プログラム 16 と互換性があります。
+このモバイル アプリケーションは Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 15 の iPhone と互換性があります。
+Android は使用できるようになると、プラットフォーム更新プログラム 16 との互換性を持ちます。
 
 <a name="create-a-project-timesheet-on-your-mobile-device"></a>モバイル デバイスでプロジェクト タイムシートを作成します。
 ------------------------------------------------
 
-1.  Dynamics 365 URL は [**プロジェクト管理と会計**] \> [**タイムシート**] \> [**タイムシート (モバイルに最適化)**] ページに対応することに注意してください。
+1.  Dynamics 365 URL は **プロジェクト管理と会計** \> **タイムシート** \> **タイムシート (モバイルに最適化)** ページに対応することに注意してください。
 
 2.  モバイル デバイスの Web ブラウザーで、前の手順に記載されている URL にアクセスします。
  
-3.  [**プロジェクト管理と会計**] \> [**タイムシート**] \> [**タイムシート (モバイルに最適化)**] を選択します。
+3.  **プロジェクト管理と会計** \> **タイムシート** \> **タイムシート (モバイルに最適化)** を選択します。
 
-4.  [新規] を選択します。
+4.  **新規**を選択します。
 
 5.  リソースを選択します。
 
 6.  現在の週のカレンダーの日付が表示されます。
 
-7.  [**OK**] をクリックします。
+7.  **OK** をクリックします。
 
 8.  **+** をクリックして新しい行を追加します。
 
@@ -65,5 +64,4 @@ ms.lasthandoff: 04/13/2018
 
 13. オプション: 追加のタイムシート行を入力します。
 
-14. タイムシート行の入力を完了した後は、ワークフローの承認プロセスにタイムシートを送信するため [**ワークフロー**] \> [**送信**] アクションを選択します。
-
+14. タイムシート行の入力を完了した後は、ワークフローの承認プロセスにタイムシートを送信するため **ワークフロー** \> **送信** アクションを選択します。

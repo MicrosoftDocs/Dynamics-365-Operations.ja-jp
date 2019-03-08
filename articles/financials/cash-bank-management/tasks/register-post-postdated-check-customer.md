@@ -1,13 +1,13 @@
---- 
-title: "顧客の先日付小切手の登録および転記"
-description: "顧客から受け取った先日付小切手の詳細を登録できます。"
+---
+title: 顧客の先日付小切手の登録および転記
+description: 顧客から受け取った先日付小切手の詳細を登録できます。
 author: kweekley
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 131e4f364c62d03b95fb4b77f472828b9483d5e1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 621ad64c06a6cebff90e888ac89bba922052cf35
-ms.openlocfilehash: f75dea40d0cc77c851569608f18229339ed30af9
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/26/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347379"
 ---
 # <a name="register-and-post-a-postdated-check-for-a-customer"></a>顧客の先日付小切手の登録および転記
 
@@ -49,5 +49,4 @@ ms.lasthandoff: 10/26/2017
     * 先日付小切手の銀行詳細を入力します。  
 15. [転記] をクリックします。
 16. ページを閉じます。
-
 

@@ -1,13 +1,13 @@
---- 
-title: "転記された消費税トランザクションの表示"
-description: "必要な内容に応じて、さまざまなページから転記済売上税トランザクションを表示できます。"
+---
+title: 転記された消費税トランザクションの表示
+description: 必要な内容に応じて、さまざまなページから転記済売上税トランザクションを表示できます。
 author: twheeloc
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TaxTrans, TaxPeriod, TaxTable
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: f18f2ab02af571f81149ec3564bbac0f98b1d2c6
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 3a6aa136018e586fd66e77c0f2af3a9f321f822f
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "356372"
 ---
 # <a name="view-posted-sales-tax-transactions"></a>転記された消費税トランザクションの表示
 
@@ -41,5 +41,4 @@ ms.lasthandoff: 09/29/2017
 10. [税] > [間接税] > [売上税] > [売上税コード] の順に移動します。
 11. [アクション] ペインで [売上税コード] をクリックします。
 12. [転記済売上税] をクリックします。
-
 

@@ -1,13 +1,13 @@
 ---
-title: "倉庫管理における作業が関連付けられている在庫の移動"
-description: "このトピックでは、モバイル デバイスからピース ピッキングの確認を設定して適用する方法について説明します。"
+title: 倉庫管理における作業が関連付けられている在庫の移動
+description: このトピックでは、モバイル デバイスからピース ピッキングの確認を設定して適用する方法について説明します。
 author: Mirzaab
 manager: AnnBe
 ms.date: 05/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSWorker
 audience: Application User
 ms.reviewer: josaw
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 618942ff22b6a81c75bd472955e4add14e6f4d84
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 7b330d6aa8e972d3c35bb7783ec0a39f09775011
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347655"
 ---
-
 # <a name="movement-of-inventory-with-associated-work-in-warehouse-management"></a>倉庫管理における作業が関連付けられている在庫の移動
 
 [!include [banner](../includes/banner.md)]
@@ -53,11 +52,10 @@ ms.lasthandoff: 11/03/2017
 
 ### <a name="set-up-permission-to-move-reserved-inventory-for-individual-workers"></a>個々の作業者の引当済の在庫を移動するためのアクセス許可を設定します。
 
-引当済の在庫移動を許可されている作業者については、[**倉庫管理**] > [**設定**] > [**作業者**] の順に移動して、[**関連付けられている作業で在庫移動を許可する**] チェック ボックスを選択します。  
+引当済の在庫移動を許可されている作業者については、**倉庫管理** > **設定** > **作業者** の順に移動して、**関連付けられている作業で在庫移動を許可する** チェック ボックスを選択します。  
 
 ### <a name="backported"></a>バックポート済み
 
 この機能も Microsoft Dynamics AX 2012 R3 にバックポートされているため、CU12 の一部として利用可能になります。
 KB 番号 3192548 を通じて個別にダウンロードすることもできます。 
-
 

@@ -1,13 +1,13 @@
 ---
-title: "購入する前に"
-description: "Dynamics 365 for Finance and Operations の購入を検討しているときに使用するステップ バイ ステップのガイドです。"
+title: 購入する前に
+description: Dynamics 365 for Finance and Operations の購買を検討しているときに使用するステップ バイ ステップのガイドです。
 author: kfend
 manager: AnnBe
 ms.date: 01/04/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: margoc
 ms.search.scope: Core, Operations
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.translationtype: HT
-ms.sourcegitcommit: 74539d9bc4069e1bc9e338295eba4f240b0593b6
 ms.openlocfilehash: 7aed6895d526011e353eef7b85e4e2f096a25e5a
-ms.contentlocale: ja-jp
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "345470"
 ---
-
 # <a name="before-you-buy"></a>購入する前に
 
 [!include [banner](../includes/banner.md)]
@@ -32,7 +31,7 @@ Dynamics 365 for Finance and Operations は初めてですか。 お客様が Fi
 
 ## <a name="step-one-try-out-finance-and-operations-free-for-30-days"></a>ステップ 1: Finance and Operations の 30 日間無料トライアル
 
-Dynamics 365 for Finance and Operations は、簡単な E メールでのサインアップを通じて 30 日間お試しいただけます。 Finance and Operations のトライアル版には、実行中の特定のシナリオを表示することによりステップ バイ ステップの手順が記載されている「はじめに」のタスク ガイドが含まれています。 この製品は、シナリオの探索や練習には使用できますが、カスタマイズすることはできません。 製品の使用を簡単にするため、また経験がより意味あるものになるためにデモ データが含まれています。 トライアル版の有効期限が終了する 3 日前に、通知の電子メールが送信されます。 [www.microsoft.com/dynamics365/operations](https://www.microsoft.com/dynamics365/operations) で詳細を確認できます。
+Dynamics 365 for Finance and Operations は、簡単な電子メールでのサインアップを通じて 30 日間お試しいただけます。 Finance and Operations のトライアル版には、実行中の特定のシナリオを表示することによりステップ バイ ステップの手順が記載されている「はじめに」のタスク ガイドが含まれています。 この製品は、シナリオの探索や練習には使用できますが、カスタマイズすることはできません。 製品の使用を簡単にするため、また経験がより意味あるものになるためにデモ データが含まれています。 トライアル版の有効期限が終了する 3 日前に、通知の電子メールが送信されます。 [www.microsoft.com/dynamics365/operations](https://www.microsoft.com/dynamics365/operations) で詳細を確認できます。
 
 ## <a name="step-two-choose-a-deployment-option"></a>ステップ 2: 配置オプションを選択
 
@@ -54,7 +53,7 @@ Dynamics 365 for Finance and Operations は、簡単な E メールでのサイ�
 
 定期売買のオプションを表示するには、[Dynamics 365](https://www.microsoft.com/dynamics365/pricing) の価格ページに移動します。 このページには、組織のニーズに合わせて複数の異なる計画が含まれています。
 
-Dynamics 365 for Finance and Operations の定期売買には多くのオプションがあります:
+Dynamics 365 for Finance and Operations の定期売買には多くのオプションがあります。
 
 - パートナーを通じて購入し、ボリューム ライセンス (クラウドまたはオンプレミス) を使用
 - クラウド ソリューション プロバイダー (クラウドのみ) を使用して購入
@@ -79,7 +78,7 @@ Microsoft クラウド ソリューション プロバイダーはお客様と�
 
 ### <a name="buy-through-a-dynamics-partner-on-premises"></a>Dynamics パートナー (オンプレミス) から購入
 
-Finance and Operations オンプレミスを購入するにはパートナーと協力する必要があります。 詳細については、[Dynamics 365 for Finance and Operations (オンプレミス) の購入](purchase-on-premises.md) を参照してください。
+Finance and Operations オンプレミスを購入するにはパートナーと協力する必要があります。 詳細については、[Dynamics 365 for Finance and Operations (オンプレミス) の購入](purchase-on-premises.md)を参照してください。
 
 ### <a name="choose-your-support-option"></a>サポート オプションの選択
 
@@ -94,7 +93,6 @@ Microsoft は柔軟性の高い、業界をリードするサポート、サー�
 
 Microsoft FastTrack for Dynamics 365 は、ビジネス上の価値をより速く達成できるように、Dynamics 365 を円滑かつ確実に移行できるように設計されています。 FastTrack プログラムに参加すると、ベスト プラクティスに関するガイダンスと正常に行われる展開を計画する方法が表示されます。 新しいユーザーを有効にし、機能を拡張する方法も自分のペースで学習します。 さらに、Dynamics 365 でのお客様の経験を成功させるために尽力している Microsoft エンジニアリング リソースにアクセスできます。 詳細については、[Microsoft FastTrack for Dynamics 365 の概要](fasttrack-dynamics-365-overview.md)を参照してください。
 
-## <a name="if-you-are-upgrading-from-dynamics-ax-2012-or-migrating-from-ax-2009"></a>Dynamics AX 2012 からアップグレードまたは AX 2009 から移行する場合
+## <a name="if-you-are-upgrading-from-dynamics-ax-2012-or-migrating-from-ax-2009"></a>AX 2012 からアップグレードまたは AX 2009 から移行する場合
 
 Microsoft Dynamics AX 2012 からアップグレードまたは Microsoft Dynamics AX 2009 から移行する場合は、さらに長い期間のトライアル版の対象となる可能性があります。 詳細については、<daxcf@microsoft.com> にお問い合わせください。
-

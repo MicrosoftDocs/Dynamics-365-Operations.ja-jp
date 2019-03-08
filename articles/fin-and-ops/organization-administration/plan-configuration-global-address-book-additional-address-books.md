@@ -1,13 +1,13 @@
 ---
-title: "グローバル アドレス帳およびその他のアドレス帳の設定"
-description: "このトピックは、Microsoft Dynamics 365 for Finance and Operations のグローバル アドレス帳と追加のアドレス帳を設定しコンフィギュレーションする前に、計画プロセス中に決定する必要のある考慮事項について説明します。 決定の中には、組織階層など、製品の他の領域に対して行われている決定を確認する必要があります。"
+title: グローバル アドレス帳およびその他のアドレス帳の設定
+description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations のグローバル アドレス帳と追加のアドレス帳を設定しコンフィギュレーションする前に、計画プロセス中に決定する必要のある考慮事項について説明します。 決定の中には、組織階層など、製品の他の領域に対して行われている決定を確認する必要があります。
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DirAddressBook, DirAddressBookTeam, DirParameters, DirPartyTable
 audience: Application User
 ms.reviewer: kfend
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 20795cb8dd752a32f6c57fdb8f369691e41139b3
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "332659"
 ---
-
 # <a name="plan-for-the-global-address-book-and-other-address-books"></a>グローバル アドレス帳およびその他のアドレス帳の設定
 
 [!include [banner](../includes/banner.md)]
 
-このトピックは、Microsoft Dynamics 365 for Finance and Operations のグローバル アドレス帳と追加のアドレス帳を設定しコンフィギュレーションする前に、計画プロセス中に決定する必要のある考慮事項について説明します。 決定の中には、組織階層など、製品の他の領域に対して行われている決定を確認する必要があります。
+このトピックでは、Microsoft Dynamics 365 for Finance and Operations のグローバル アドレス帳と追加のアドレス帳を設定しコンフィギュレーションする前に、計画プロセス中に決定する必要のある考慮事項について説明します。 決定の中には、組織階層など、製品の他の領域に対して行われている決定を確認する必要があります。
 
 ## <a name="global-address-book"></a>グローバル アドレス帳
 
@@ -67,4 +66,3 @@ ms.lasthandoff: 12/18/2018
 **意思決定:**
 
 - どのチームが作成した新しい各アドレス帳へのアクセス権を持ちますか。
-

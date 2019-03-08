@@ -1,13 +1,13 @@
 ---
-title: "製品コンフィギュレーション モデルを設定します。"
-description: "この記事は、製品コンフィギュレーション モデルを設定および作成するステップについて説明します。"
+title: 製品コンフィギュレーション モデルを設定します。
+description: この記事は、製品コンフィギュレーション モデルを設定および作成するステップについて説明します。
 author: cvocph
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PCProductConfigurationModelListPage
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 10faa26a53b026a70487124d696b0313d1f5814d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 8504eb789b0d449cf2e29d4314d189dc0b8a6b43
-ms.contentlocale: ja-jp
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "360673"
 ---
-
 # <a name="set-up-a-product-configuration-model"></a>製品コンフィギュレーション モデルを設定します。
 
 [!include [banner](../includes/banner.md)]
@@ -49,7 +48,6 @@ ms.lasthandoff: 02/07/2018
 | 製品コンフィギュレーション モデルをテストします。                         | **制約ベースの製品コンフィギュレーション モデルの詳細**ページまたは**製品コンフィギュレーション モデルの一覧**ページから、製品コンフィギュレーション モデルをテストします。 製品コンフィギュレーション モデルをテストすると、注文の処理中に発生するプロダクト モデルのコンフィギュレーション プロセスがシミュレーションされます。                                                                                                |
 | 製品コンフィギュレーション モデル テンプレートを作成します。                | **コンフィギュレーション テンプレート** ページで、製品コンフィギュレーション モデルのテンプレートを作成します。 コンフィギュレーション テンプレートには、製品コンフィギュレーション モデルの属性値が含まれます。 **コンフィギュレーション明細** ページで、属性値を選択します。 製品モデルのコンフィギュレーション中に、製品モデルのコンフィギュレーション テンプレートを読み込むように選択できます。                                                   |
 | 品目をコンフィギュレーションします。                                          | 製品コンフィギュレーション モデルは、販売注文、販売見積、発注書、または製造オーダーからコンフィギュレーションできます。                                                                                                                                                                                                                                                                           |
-
 
 
 

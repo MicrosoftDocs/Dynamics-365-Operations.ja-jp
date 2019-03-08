@@ -1,13 +1,13 @@
---- 
-title: "不適合管理の前提条件を設定する"
-description: "この手順を使用して不適合管理プロセスを有効化します。"
+---
+title: 不適合管理の前提条件を設定する
+description: この手順を使用して不適合管理プロセスを有効化します。
 author: perlynne
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventParameters, InventTestReportSetup, SysUserManagement, SysUserSetup, InventTestDiagnosticType, InventTestMiscCharges, InventTestOperation, InventProblemType, InventProblemTypeSetup, InventQuarantineZone
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 0a4062acc91e024e3a0a41c0b3cb35ff5ffe2a4a
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "337673"
 ---
 # <a name="set-up-prerequisites-for-nonconformance-management"></a>不適合管理の前提条件を設定する
 
@@ -102,5 +102,4 @@ ms.lasthandoff: 10/16/2018
 3. [検査ゾーン] フィールドに値を入力します。
 4. [説明] フィールドに値を入力します。
 5. ページを閉じます。
-
 

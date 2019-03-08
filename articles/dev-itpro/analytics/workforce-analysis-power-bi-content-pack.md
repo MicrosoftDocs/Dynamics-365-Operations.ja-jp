@@ -1,13 +1,13 @@
 ---
-title: "従業員のメトリック Power BI コンテンツ"
-description: "このトピックでは、従業員のメトリック Power BI コンテンツについて説明します。 レポートにアクセスする方法を説明し、コンテンツを作成するために使用したデータ モデルおよびエンティティについての情報を提供します。"
+title: 要員指標 Power BI コンテンツ
+description: このトピックでは、要員指標 Power BI コンテンツについて説明します。 レポートにアクセスする方法を説明し、コンテンツを作成するために使用したデータ モデルおよびエンティティについての情報を提供します。
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmWorkforceWorkspace
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -18,22 +18,21 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 1bb4b55fd929c105c20a1d4b1086bbb7f07d5eb1
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "345792"
 ---
-
-# <a name="workforce-metrics-power-bi-content"></a>従業員のメトリック Power BI コンテンツ
+# <a name="workforce-metrics-power-bi-content"></a>要員指標 Power BI コンテンツ
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、**従業員のメトリック** Microsoft Power BI コンテンツについて説明します。 Power BI レポートにアクセスする方法を説明し、コンテンツを作成するために使用したデータ モデルおよびエンティティについての情報を提供します。
+このトピックでは、**要員指標** Microsoft Power BI コンテンツについて説明します。 Power BI レポートにアクセスする方法を説明し、コンテンツを作成するために使用したデータ モデルおよびエンティティについての情報を提供します。
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI コンテンツへのアクセス
-これらの製品のいずれかを使用する場合、**従業員のメトリック** Power BI コンテンツは **人事管理** ワークスペースに表示されます。
+これらの製品のいずれかを使用する場合、**要員指標** Power BI コンテンツは **人事管理**ワークスペースに表示されます。
 
 - Microsoft Dynamics 365 for Finance and Operations
 - Microsoft Dynamics 365 for Talent
@@ -57,9 +56,9 @@ ms.lasthandoff: 08/13/2018
 | 従業員の誕生日                               | 今月の誕生日、来月の誕生日、従業員の誕生日、および月と部門別の誕生日 |
 | 大量雇用プロジェクト                               | 大量雇用プロジェクトの合計、ステータス別大量雇用プロジェクト、部門および所有者別の大量雇用プロジェクト、ジョブ別の大量雇用プロジェクト、および大量雇用プロジェクト |
 
-これらのレポートのグラフとタイルをフィルター処理し、ダッシュボードに固定することができます。 Power BI のフィルター処理と固定方法の詳細については、「[ダッシュボードの作成およびコンフィギュレーション](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards)」を参照してください。
+これらのレポートのグラフとタイルをフィルター処理し、ダッシュボードに固定することができます。 Power BI のフィルター処理と固定方法の詳細については、[ダッシュボードの作成および構成](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards) を参照してください。
 
-ご使用のバージョンの Microsoft Dynamics 365 に適用する **従業員のメトリック** Power BI コンテンツをダウンロードしてください。
+必ず、使用している Microsoft Dynamics 365 バージョンに適用される**要員指標** Power BI コンテンツをダウンロードしてください。
 
 > [!NOTE]
 > Lifecycle Services で使用できる .pbix ファイルは、Finance and Operations にのみ適用されます。
@@ -88,4 +87,3 @@ ms.lasthandoff: 08/13/2018
 | 従業員のトレンド           | 時間経過に伴う作業者、人員、会社、職位                                 | 会社、地理的な場所、従業員名、レポート先、カレンダーのオフセット、日付、従業員の肩書き、従業員層、雇用、職務 |
 | 大量雇用プロジェクト        | 大量雇用プロジェクト、プロジェクトの所有者、およびプロジェクトのステータスの数                     | 会社、大量雇用ライン |
 | 大量雇用ライン           | 部門、雇用タイプ、および職位                                           | 日付、職務、大量採用プロジェクト |
-

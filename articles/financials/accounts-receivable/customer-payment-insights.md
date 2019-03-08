@@ -1,28 +1,27 @@
 ---
-title: "顧客支払インサイト (プレビュー)"
-description: "このトピックでは、請求書に支払が行われる時を予測し、組織が期限厳守で支払が行われる確度を改善するための最適化戦略を作成するのに、顧客支払インサイトがどのように役立つかについて説明します。"
+title: 顧客支払インサイト (プレビュー)
+description: このトピックでは、請求書に支払が行われる時を予測し、組織が期限厳守で支払が行われる確度を改善するための最適化戦略を作成するのに、顧客支払インサイトがどのように役立つかについて説明します。
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 07/17/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: 
+ms.search.scope: ''
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2018-04-02
 ms.dyn365.ops.version: AX 8.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 841ea53f754f61c2930e77fdafc85eac72f47d7a
 ms.openlocfilehash: 9e722db6302d7ef51c01601cde245d4f4a333eba
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "344665"
 ---
-
 # <a name="customer-payment-insights-preview"></a>顧客支払インサイト (プレビュー)
 
 [!include[banner](../includes/banner.md)]
@@ -78,4 +77,3 @@ ms.lasthandoff: 08/09/2018
 ## <a name="privacy-statement"></a>プライバシーに関する声明
 
 プレビューは米国の顧客データを保存します。 さらに、プレビューは (1) Dynamics 365 for Finance and Operations サービスを下回るプライバシーおよびセキュリティ対策を使用している場合があり、(2) このサービスのためにサービス レベル契約には含まれておらず、(3) 個人データや、その他法律上または規制順守要件の対象となるデータを処理することはできず、(4) サポートが制限されます。
-

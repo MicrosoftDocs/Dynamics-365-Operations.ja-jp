@@ -1,13 +1,13 @@
 ---
-title: "小売周辺機器"
-description: "このトピックでは、小売周辺機器に関連する概念を説明します。"
+title: 小売周辺機器
+description: このトピックでは、小売周辺機器に関連する概念を説明します。
 author: rubencdelgado
 manager: AnnBe
-ms.date: 11/14/2017
+ms.date: 01/16/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailTerminalTable, RetailDevice, RetailHardwareProfile
 audience: Application User, IT Pro
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 8fa2be91db8213845c2be16b1cc0a0f5457a708b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
-ms.openlocfilehash: c2539af8a29b580a10002bc8648505d42c7b8456
-ms.contentlocale: ja-jp
-ms.lasthandoff: 01/04/2019
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347862"
 ---
-
 # <a name="retail-peripherals"></a>小売周辺機器
 
 [!include [banner](includes/banner.md)]
@@ -40,7 +39,7 @@ ms.lasthandoff: 01/04/2019
 
 ### <a name="devices"></a>デバイス
 
-ナビゲーション: **小売** &gt; **チャネル設定** &gt; **POS 設定** &gt; **デバイス** をクリックします。 デバイスとは、POS レジスターにマップされているデバイスの物理的なインスタンスを表すエンティティです。 デバイスが作成されると、POS レジスターにマップされます。 デバイス エンティティは、POS レジスターが有効化された時間、使用しているクライアントのタイプ、および特定のデバイスに配置されているアプリケーション パッケージに関する情報を追跡します。 デバイスは、次のアプリケーション タイプにマップすることができます: Retail Modern POS、小売クラウド POS、 Retail Modern POS – Windows Phone、Retail Modern POS – Android、Retail Modern POS – iOS。
+ナビゲーション: **小売** &gt; **チャネル設定** &gt; **POS 設定** &gt; **デバイス** をクリックします。 デバイスとは、POS レジスターにマップされているデバイスの物理的なインスタンスを表すエンティティです。 デバイスが作成されると、POS レジスターにマップされます。 デバイス エンティティは、POS レジスターが有効化された時間、使用しているクライアントのタイプ、および特定のデバイスに配置されているアプリケーション パッケージに関する情報を追跡します。 デバイスは、次のアプリケーション タイプにマップすることができます: Retail Modern POS、Retail Cloud POS、Retail Modern POS – Windows Phone、Retail Modern POS – Android、および Retail Modern POS – iOS。
 
 ### <a name="retail-modern-pos"></a>Retail Modern POS
 
@@ -56,7 +55,7 @@ iOS 用 Modern POS は iOS ベース バージョンの Modern POS で、iOS デ
 
 ### <a name="modern-pos-for-android"></a>Android 用 Modern POS
 
-Android 用 Modern POS はAndroid ベース バージョンの Modern POS で、Android デバイスに配置できます。
+Android 用 Modern POS は Android ベース バージョンの Modern POS で、Android デバイスに配置できます。
 
 ### <a name="pos-peripherals"></a>POS 周辺機器
 
@@ -191,7 +190,7 @@ Modern POS は**専用**タイプのハードウェア ステーションを、�
 
 ネットワーク周辺機器の IP アドレスは、2 箇所で指定できます。 Modern POS の Windows クライアントが一式のネットワーク周辺機器を使用している場合、レジスタ自体のアクション ペインの **IP コンフィギュレーション** オプションを使用してこれらのデバイスの IP アドレスを設定する必要があります。 POS レジスタで共有されているネットワーク デバイスの場合、ネットワーク デバイスを割り当てているハードウェア プロファイルを共有ハードウェア ステーションに直接マップすることができます。 IP アドレスを割り当てるには、**小売店舗** ページでハードウェア ステーションを選択し、**ハードウェア ステーション** セクションの **IP コンフィギュレーション** オプションを使用し、そのハードウェア ステーションに割り当てられているネットワーク デバイスを指定します。 ネットワーク デバイスのみを使用するハードウェア ステーションの場合、ハードウェア ステーション自体を配置する必要はありません。 この場合、小売店舗内の場所に従ってネットワーク対応可能なデバイスを概念的にグループ化するためにのみ、ハードウェア ステーションは必要となります。
 
-#### <a name="cloud-pos-modern-pos-for-ios-and-modern-pos-for-android"></a>クラウド POS、iOS 用 Modern POS、アンドロイド用 Modern POS
+#### <a name="cloud-pos-modern-pos-for-ios-and-modern-pos-for-android"></a>Cloud POS、iOS 用 Modern POS、Android 用 Modern POS
 
 物理的に接続されている周辺機器およびネットワーク対応可能な周辺機器の駆動ロジックは、ハードウェア ステーションに含まれています。 したがって Windows 用 以外の Modern POS クライアントの場合、周辺機器がハードウェア ステーションに物理的に接続されているかネットワークに対応しているかに関係なく、POS とそれらの周辺機器との通信を可能にするためには、IIS ハードウェア ステーションを配置し有効化する必要があります。
 
@@ -203,7 +202,7 @@ Modern POS は**専用**タイプのハードウェア ステーションを、�
 
 ### <a name="modern-pos-for-windows-setup-and-configuration"></a>Windows 用 Modern POS の設定とコンフィギュレーション
 
-詳細については、[Retail Modern POS のコンフィギュレーションとインストール](retail-modern-pos-device-activation.md) を参照してください。
+詳細については、「[Retail Modern POS のコンフィギュレーションとインストール](retail-modern-pos-device-activation.md)」を参照してください。
 
 ### <a name="opos-device-setup-and-configuration"></a>OPOS デバイスの設定とコンフィギュレーション
 
@@ -296,7 +295,7 @@ ServiceOPOS レジストリ内では、設定されているデバイスは OPOS
 <ul>
 <li>OPOS</li>
 <li>ネットワーク
-<blockquote>[!NOTE] ドロワーに<strong>共有シフトを使用</strong>が設定されている場合、ドロワーを 1 つだけ設定できます。</blockquote>
+<blockquote>注: ドロワーに<strong>共有シフトを使用</strong>が設定されている場合、ドロワーを 1 つだけ設定できます。</blockquote>
 </li>
 </ul>
 </td>
@@ -307,7 +306,7 @@ ServiceOPOS レジストリ内では、設定されているデバイスは OPOS
 <ul>
 <li>OPOS</li>
 <li>ネットワーク
-<blockquote>[!NOTE] ドロワーに<strong>共有シフトを使用</strong>が設定されている場合、ドロワーを 1 つだけ設定できます。</blockquote>
+<blockquote>注: ドロワーに<strong>共有シフトを使用</strong>が設定されている場合、ドロワーを 1 つだけ設定できます。</blockquote>
 </li>
 </ul>
 </td>
@@ -375,7 +374,7 @@ ServiceOPOS レジストリ内では、設定されているデバイスは OPOS
 <ul>
 <li>OPOS</li>
 <li>Windows ドライバー
-<blockquote>[!NOTE] ネットワーク上の Windows プリンターの場合、ハードウェア ステーションのユーザーはプリンターへのアクセス許可が必要です。</blockquote>
+<blockquote>注: ネットワーク上の Windows プリンターの場合、ハードウェア ステーションのユーザーはプリンターへのアクセス許可が必要です。</blockquote>
 </li>
 <li>ネットワーク</li>
 </ul>
@@ -405,7 +404,7 @@ ServiceOPOS レジストリ内では、設定されているデバイスは OPOS
 <ul>
 <li>OPOS</li>
 <li>ネットワーク
-<blockquote>[!NOTE] ドロワーに<strong>共有シフトを使用</strong>が設定されている場合、ハードウェア プロファイル毎にドロワーは 1 つだけ設定できます。</blockquote>
+<blockquote>注: ドロワーに<strong>共有シフトを使用</strong>が設定されている場合、ハードウェア プロファイルごとにドロワーは 1 つだけ設定できます。</blockquote>
 </li>
 </ul>
 </td>
@@ -470,7 +469,7 @@ ServiceOPOS レジストリ内では、設定されているデバイスは OPOS
 <ul>
 <li>OPOS</li>
 <li>Windows ドライバー
-<blockquote>[!NOTE] ネットワーク上の Windows プリンターの場合、ハードウェア ステーションのユーザーはプリンターへのアクセス許可が必要です。</blockquote>
+<blockquote>注: ネットワーク上の Windows プリンターの場合、ハードウェア ステーションのユーザーはプリンターへのアクセス許可が必要です。</blockquote>
 </li>
 <li>ネットワーク</li>
 </ul>
@@ -492,7 +491,7 @@ ServiceOPOS レジストリ内では、設定されているデバイスは OPOS
 <ul>
 <li>OPOS</li>
 <li>ネットワーク
-<blockquote>[!NOTE] ドロワーに<strong>共有シフトを使用</strong>が設定されている場合、ハードウェア プロファイル毎にドロワーは 1 つだけ設定できます。</blockquote>
+<blockquote>注: ドロワーに<strong>共有シフトを使用</strong>が設定されている場合、ハードウェア プロファイルごとにドロワーは 1 つだけ設定できます。</blockquote>
 </li>
 </ul>
 </td>
@@ -564,7 +563,7 @@ ServiceOPOS レジストリ内では、設定されているデバイスは OPOS
 5. 店舗に新しいハードウェア プロファイルを同期させるため、**1090** 配分スケジュールを選択します。 POS に変更を同期させるため、**今すぐ実行** をクリックします。
 6. 店舗に新しいハードウェア ステーションを同期させるため、**1040** 配分スケジュールを選択します。 POS に変更を同期させるため、**今すぐ実行** をクリックします。
 7. ハードウェア ステーションをインストールします。 ハードウェア ステーションをインストールする方法の詳細については、[Retail ハードウェア ステーションのコンフィギュレーションとインストール](retail-hardware-station-configuration-installation.md) を参照してください。
-8. Modern POS をインストールして有効化します。 Modern POS をインストールする方法の詳細については、 [Retail Modern POS のコンフィギュレーションとインストール](retail-modern-pos-device-activation.md) を参照してください。
+8. Modern POS をインストールして有効化します。 Modern POS をインストールする方法の詳細については、「[Retail Modern POS のコンフィギュレーションとインストール](retail-modern-pos-device-activation.md)」を参照してください。
 9. Modern POS にサイン インするには、**非ドロワー操作の実行** を選択します。
 10. **ハードウェア ステーションの管理**操作を開始します。
 11. **管理** をクリックします。
@@ -593,7 +592,7 @@ ServiceOPOS レジストリ内では、設定されているデバイスは OPOS
 6. 店舗に新しいハードウェア プロファイルを同期させるため、**1090** 配分スケジュールを選択します。 POS に変更を同期させるため、**今すぐ実行** をクリックします。
 7. 店舗に新しいハードウェア ステーションを同期させるため、**1040** 配分スケジュールを選択します。 POS に変更を同期させるため、**今すぐ実行** をクリックします。
 8. 手順 2 と 3 で設定したハードウェア ステーションを、各ホスト コンピューターにインストールします。 ハードウェア ステーションをインストールする方法の詳細については、[Retail ハードウェア ステーションのコンフィギュレーションとインストール](retail-hardware-station-configuration-installation.md) を参照してください。
-9. Modern POS をインストールして有効化します。 Modern POS をインストールする方法の詳細については、 [Retail Modern POS のコンフィギュレーションとインストール](retail-modern-pos-device-activation.md) を参照してください。
+9. Modern POS をインストールして有効化します。 Modern POS をインストールする方法の詳細については、「[Retail Modern POS のコンフィギュレーションとインストール](retail-modern-pos-device-activation.md)」を参照してください。
 10. Modern POS にサイン インするには、**非ドロワー操作の実行** を選択します。
 11. **ハードウェア ステーションの管理**操作を開始します。
 12. **管理** をクリックします。
@@ -743,7 +742,6 @@ ServiceOPOS レジストリ内では、設定されているデバイスは OPOS
 | Epson        | TM-T88V  | OPOS      |                           |
 | Star         | TSP650II | OPOS      |                           |
 | Star         | TSP650II | ユーザー設定    | ネットワーク経由で接続     |
-| Star         | TSP100   | OPOS      | TSP650II ドライバが必要 |
 | HP           | F7M67AA  | OPOS      | Powered USB               |
 
 #### <a name="bar-code-scanner"></a>バーコード スキャナー
@@ -818,7 +816,6 @@ ServiceOPOS レジストリ内では、設定されているデバイスは OPOS
 | Epson        | TM-T88V  | OPOS      |                           |
 | Star         | TSP650II | OPOS      |                           |
 | Star         | TSP650II | ユーザー設定    | ネットワーク経由で接続     |
-| Star         | TSP100   | OPOS      | TSP650II ドライバが必要 |
 | HP           | F7M67AA  | OPOS      | Powered USB               |
 
 #### <a name="payment-terminal"></a>支払ターミナル
@@ -894,4 +891,3 @@ ServiceOPOS レジストリ内では、設定されているデバイスは OPOS
 ## <a name="additional-resources"></a>その他のリソース
 
 [小売の周辺機器シミュレーター](dev-itpro/retail-peripheral-simulator.md)
-

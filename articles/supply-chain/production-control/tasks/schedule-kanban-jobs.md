@@ -1,13 +1,13 @@
---- 
-title: "かんばん作業のスケジューリング"
-description: "この手順は、特定の作業セルに対してプロセスかんばん作業をスケジュールすることに焦点を当てています。"
+---
+title: かんばん作業のスケジューリング
+description: この手順は、特定の作業セルに対してプロセスかんばん作業をスケジュールすることに焦点を当てています。
 author: ChristianRytt
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KanbanJobSchedulingListPage, KanbanPeriodCapacityPart, SysLookupMultiSelectGrid, KanbanBoardScheduleJobForward
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 5170fecf0190591d74f45d35fecc4472e7f5e900
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: f36544993a9280ae10489a19252bc105abd40ac9
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "359546"
 ---
 # <a name="schedule-kanban-jobs"></a>かんばん作業のスケジューリング
 
@@ -61,5 +61,4 @@ ms.lasthandoff: 09/29/2017
 6. [スケジュール] をクリックします。
     * 両方のジョブが目的としている期間に追加されていることを確認します。  
     * [期間能力] セクションで、各期間の負荷を確認できます。 [消費] フィールドにはこの期間にスケジューリングされた消費が表示されます。 スケジュールされた消費がこの期間に使用可能な能力よりも高い場合、負荷状態にある消費が選択されます。  
-
 

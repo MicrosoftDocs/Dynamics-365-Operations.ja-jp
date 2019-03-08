@@ -1,13 +1,13 @@
---- 
-title: "割増償却に対する減価償却プロファイルおよび転記プロファイルのコンフィギュレーション"
-description: "この手順を使用して、特別償却の減価償却プロファイルと転記プロファイルを構成する方法を説明します。"
+---
+title: 割増償却に対する減価償却プロファイルおよび転記プロファイルのコンフィギュレーション
+description: この手順を使用して、特別償却の減価償却プロファイルと転記プロファイルを構成する方法を説明します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetDepreciationProfile,  AssetPosting
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: f064b16597a484b984fa65534755a71220e2ce69
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371090"
 ---
 # <a name="configure-depreciation-profile-and-posting-profile-for-additional-depreciation"></a>割増償却に対する減価償却プロファイルおよび転記プロファイルのコンフィギュレーション
 
@@ -60,5 +60,4 @@ ms.lasthandoff: 10/16/2018
     * 特別償却は特別減価償却として転記されます。  
     * オプション: [主勘定] および [相手勘定] をコンフィギュレーションします。  
     * これらの勘定のフィールドを変更するためには [編集] をクリックする必要があります。  
-
 

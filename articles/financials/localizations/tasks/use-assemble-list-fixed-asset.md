@@ -1,13 +1,13 @@
---- 
-title: "固定資産の組み立て一覧の使用"
-description: "日本では、在庫品目を固定資産に移転できます。"
+---
+title: 固定資産の組み立て一覧の使用
+description: 日本では、在庫品目を固定資産に移転できます。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetTable, AssetComponentList_JP, LedgerJournalTable, LedgerJournalTransAsset
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 86fe8520355055fd7bf44c6b9643b5da9f613d6e
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371094"
 ---
 # <a name="use-assemble-list-of-a-fixed-asset"></a>固定資産の組み立て一覧の使用
 
@@ -61,5 +61,4 @@ ms.lasthandoff: 10/16/2018
 8. [借方] フィールドに数値を入力します。
     * 在庫品目の原価を入力します。  
 9. [転記] をクリックします。
-
 

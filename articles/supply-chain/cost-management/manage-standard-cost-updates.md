@@ -1,13 +1,13 @@
 ---
-title: "標準原価の更新の管理"
-description: "標準原価データの更新は、1 バージョン アプローチまたは 2 バージョン アプローチという 2 つの異なるアプローチを使用して管理できます。"
+title: 標準原価の更新の管理
+description: 標準原価データの更新は、1 バージョン アプローチまたは 2 バージョン アプローチという 2 つの異なるアプローチを使用して管理できます。
 author: AndersGirke
 manager: AnnBe
 ms.date: 10/24/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CostingVersion
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8e72d4e90ac83787ed7c58d91c2102696acfac68
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b64d9e53736fd3b81ee997ed28ccfa62ed7e9ce6
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "367550"
 ---
-
 # <a name="manage-standard-cost-updates"></a>標準原価の更新の管理
 
 [!include [banner](../includes/banner.md)]
@@ -45,7 +44,6 @@ ms.lasthandoff: 11/03/2017
 -   **原価データの更新に対する 2 バージョン アプローチ** : 2 バージョン アプローチでは、原価の更新だけを格納する追加の原価バージョンが必要です。 このバージョンの識別子は 2016-STD-CHANGES です。 原価の更新は 2016-STD-CHANGES に記録され、ステータスが "保留中" に設定されます。 2 バージョン アプローチの場合、製造品目の保留中の原価の BOM の計算は、予備のデータ ソースを必要とします。 これは、追加の原価バージョン 2016-STD-CHANGES には、原価データのサブセットだけが格納されるためです。 予備は、有効原価として、または原価バージョン 2016-STD として表現できます。これは、2016-STD-CHANGES 内に原価データが含まれない場合、どちらで表現しても、原価データのソースが識別されるためです。 保留中の原価が有効化になった後、原価バージョン 2016-STD-CHANGES には、更新を反映する現在の有効原価が格納され、オリジナルの原価バージョン 2016-STD は変更されません。 2 バージョン アプローチを使用する場合は、更新を禁止するようにオリジナルの原価バージョンのブロック ポリシーを設定する必要があります。 指定された開始日と、更新を許可するブロック ポリシーを選択により使用していることを除いて、追加の原価バージョンに対して同一のポリシーを設定する必要があります。 指定された開始日は、スケジュールされた有効化日付を反映するように、変更バッチごとに更新される必要があります。
 
 この例では 1 つの追加の原価計算バージョンを使用して 2016 年度中の更新を管理します。 更新のバッチごとに異なるバージョンなどが使用され、複数の追加の原価計算バージョンが使用されます。 複数の追加の原価を使用する場合は、有効原価が複数の原価バージョンに拡散されるため、予備を有効原価として表現する必要があります。
-
 
 
 

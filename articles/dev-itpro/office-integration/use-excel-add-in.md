@@ -1,13 +1,13 @@
 ---
-title: "Excel でエンティティ データを開き、Excel アドインを使用して更新する"
-description: "このトピックでは、Microsoft Excel でエンティティ データを開き、Excel 用の Microsoft Dynamics Office アドインを使用してそのデータを表示、更新、また編集する方法を説明します。"
+title: Excel でエンティティ データを開き、Excel アドインを使用して更新する
+description: このトピックでは、Microsoft Excel でエンティティ データを開き、Excel 用の Microsoft Dynamics Office アドインを使用してそのデータを表示、更新、また編集する方法を説明します。
 author: ChrisGarty
 manager: AnnBe
 ms.date: 04/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 01474a82e860c6f51b316cb683cd44fb9bf2a6bc
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "340640"
 ---
-
 # <a name="open-entity-data-in-excel-and-update-it-by-using-the-excel-add-in"></a>Excel でエンティティ データを開き、Excel アドインを使用して更新する
 
 [!include [banner](../includes/banner.md)]
@@ -34,12 +33,12 @@ ms.lasthandoff: 08/09/2018
 Excel でエンティティ データを開くことにより、Excel アドインを使用して迅速かつ簡単にデータを表示し編集することができます。 このアドインには Microsoft Excel 2016 が必要です。
 
 > [!NOTE]
-> Microsoft Azure Active Directory (Azure AD) テナントが Active Directory フェデレーション サービス (AD FS) を使用するようにコンフィギュレーションされている場合は、Excel のアドインに正しくサインインできるように、2016 年 5 月の Office の更新が適用されていることを確認する必要があります。
+> Microsoft Azure Active Directory (Azure AD) テナントが Active Directory フェデレーション サービス (AD FS) を使用するようにコンフィギュレーションされている場合は、Excel のアドインに正しくサインインできるように、2016 年 5 月の Office の更新が適用されていることを確認する必要があります。
 
 Excel アドインの使用に関する詳細については、短い [Dynamics 365 for Finance and Operations でヘッダーと明細行のパターンの Excel テンプレートを作成する](https://youtu.be/RTicLb-6dbI) ビデオをご覧ください。
 
 ## <a name="open-entity-data-in-excel-when-you-start-from-finance-and-operations"></a>Finance and Operations から開始して Excel でエンティティ データを開く
-1. Finance and Operations のページで、**Microsoft Office で開く** を選択します。
+1. Finance and Operations のページで、**Microsoft Office で開く**を選択します。
 
     そのページのルート データ ソース (テーブル) がエンティティのルート データ ソースと同じである場合は、既定の **Excel で開く** オプションがそのページに生成されます。 **Excel で開く** オプションは **すべての仕入先** や **すべての顧客** などの頻繁に使用するページに表示されます。
  
@@ -52,7 +51,7 @@ Excel アドインが、選択したエンティティのデータを自動的�
 
 ## <a name="open-entity-data-in-excel-when-you-start-from-excel"></a>Excel から開始して Excel でエンティティ データを開く
 1. Excel の **挿入** タブの **アドイン** グループで、**ストア** を選択して Office ストアを開きます。
-2. Office ストアで、**Dynamics**で検索し、**Microsoft Dynamics Office アドイン** (Excel アドイン) の隣の **Add** をクリックします。
+2. Office ストアで、**Dynamics** で検索し、**Microsoft Dynamics Office アドイン** (Excel アドイン) の隣の**追加**を選択します。
 3. 初めて Excel アドインを実行する場合は、**このアドインを信頼します** を選択して Excel アドインの実行を有効化します。 Excel のウィンドウ右側のウィンドウで Excel アドインが実行されます。
 4. **サーバー情報の追加** を選択して **オプション** ウィンドウを開きます。
 5. お使いのブラウザで、ターゲットの Finance and Operations インスタンスから URL をコピーし、それを **サーバー URL** フィールドに貼り付けてから、ホスト名以降をすべて消去します。 結果の URL はホスト名のみである必要があります。
@@ -124,5 +123,4 @@ Excel アドインで **公開** を選択することにより、必要に応�
 
 - **アプレットのロードボタンが表示されます** – サインイン後に Excel アドインに **アプレットの読み込み** ボタンがある場合は、正しいユーザーとしてサインインしていない可能性があります。 この問題を解決するために、Excel アドインの右上隅に正しいユーザー名が表示されることを確認します。 正しくないユーザー名が表示されている場合は、それを選択し、サインアウトしてから再度サインインします。
 - **禁止されたメッセージを受信する** - Excel アドインのメタデータの読み込み中に「禁止された」メッセージを受信する場合、Excel アドインにサインインしているアカウントには、対象のサービス、インスタンス、またはデータベースを使用するためのアクセス許可がありません。 この問題を解決するために、Excel アドインの右上隅に正しいユーザー名が表示されることを確認します。 正しくないユーザー名が表示されている場合は、それを選択し、サインアウトしてから再度サインインします。
-- **Excel 上に空白の Web ページが表示される** - サインイン プロセス中に空白の Web ページが開く場合、そのアカウントには AD FS が必要ですが、Excel のアドインを実行している Excel のバージョンがサインイン ダイアログ ボックスを読み込めるほど新しくありません。 この問題を解決するには、使用している Excel のバージョンを更新します。 繰延チャンネルの企業にいる場合に Excel のバージョンを更新するには、[繰延チャンネルから現在のチャンネルに移動する](https://technet.microsoft.com/library/mt455210.aspx) ために [Office 配置ツール](https://technet.microsoft.com/library/jj219422.aspx) を使用します。
-
+- **Excel 上に空白の Web ページが表示される** – サインイン プロセス中に空白の Web ページが開く場合、そのアカウントには AD FS が必要ですが、Excel のアドインを実行している Excel のバージョンがサインイン ダイアログ ボックスを読み込めるほど新しくありません。 この問題を解決するには、使用している Excel のバージョンを更新します。 繰延チャンネルの企業にいる場合に Excel のバージョンを更新するには、[繰延チャンネルから現在のチャンネルに移動する](https://technet.microsoft.com/library/mt455210.aspx) ために [Office 配置ツール](https://technet.microsoft.com/library/jj219422.aspx) を使用します。

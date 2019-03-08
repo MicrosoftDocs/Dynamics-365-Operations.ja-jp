@@ -1,13 +1,13 @@
 ---
-title: "仕入先要求コンフィギュレーション"
-description: "このトピックでは、新しい仕入先要求で設定する必要があるフィールドについて説明します。"
+title: 仕入先要求コンフィギュレーション
+description: このトピックでは、新しい仕入先要求で設定する必要があるフィールドについて説明します。
 author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendProspectiveVendorRegistrationConfig
 audience: Application User
 ms.reviewer: josaw
@@ -15,15 +15,14 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2017-12-31
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
+ms.openlocfilehash: d238e0dbb754e88dcffa171456aa0a2336238cab
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ba426692e2e404ab75e5730b8205115fc59e402f
-ms.openlocfilehash: e9b22a6f846607e8afc5d4f01c685f1364b1c01d
-ms.contentlocale: ja-jp
-ms.lasthandoff: 02/08/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "332521"
 ---
-
 # <a name="vendor-request-configurations"></a>仕入先要求コンフィギュレーション
 [!include [banner](../includes/banner.md)]
 
@@ -51,8 +50,7 @@ ms.lasthandoff: 02/08/2018
 ### <a name="create-a-vendor-configuration-for-a-specific-countryregion"></a>特定の国/地域に対する仕入先のコンフィギュレーションを作成します。
 1.  **調達** > **設定** > **仕入先** をクリックし、次に **仕入先要求コンフィギュレーション** をクリックします。
 2.  **新規** をクリックして新しいコンフィギュレーションを作成し、コンフィギュレーションの名前を指定します。
-3.  [**保存**] をクリックします。
+3.  **保存** をクリックします。
 4.  **国/地域** タブを開き、コンフィギュレーションを使用すべき国/地域を選択します。
 5.  既定のコンフィギュレーションに対する以下のガイドラインに従って、コンフィギュレーションを完了します。
-
 

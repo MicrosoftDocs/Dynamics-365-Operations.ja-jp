@@ -1,13 +1,13 @@
---- 
-title: "コンフィギュレーション ルートの定義"
-description: "この手順では、コンフィギュレーション グループの表示順序を決定するコンフィギュレーション ルートの定義を対象としています。"
+---
+title: コンフィギュレーション ルートの定義
+description: この手順では、コンフィギュレーション グループの表示順序を決定するコンフィギュレーション ルートの定義を対象としています。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BOMTable
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: abe1d5c5a8ec744ec61739e3ec6505236022b8d8
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "361179"
 ---
 # <a name="define-configuration-route"></a>コンフィギュレーション ルートの定義
 
@@ -45,5 +45,4 @@ ms.lasthandoff: 10/16/2018
 14. 一覧で、目的のレコードを見つけ、選択します。
 15. 一覧で、選択された行のリンクをクリックします。
 16. [保存] をクリックします。
-
 

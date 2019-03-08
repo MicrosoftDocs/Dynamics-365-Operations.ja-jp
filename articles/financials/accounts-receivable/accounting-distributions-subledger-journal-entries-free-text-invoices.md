@@ -1,13 +1,13 @@
 ---
-title: "自由書式の請求書の勘定配布と補助元帳仕訳"
-description: "勘定配布は収益、税金、雑費などの金額がどのように自由書式の請求書に計上されるかを定義するために使用されます。 自由書式の請求書が仕訳されたときに計上する必要のあるすべての金額に勘定配布があります。"
+title: 自由書式の請求書の勘定配布と補助元帳仕訳
+description: 勘定配布は収益、税金、雑費などの金額がどのように自由書式の請求書に計上されるかを定義するために使用されます。 自由書式の請求書が仕訳されたときに計上する必要のあるすべての金額に勘定配布があります。
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustFreeInvoice
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 5d1546e8537110daec5d6655f68d3328a58ca1cb
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d13fbd98597fc8138bfb4d549608d75f790e0e52
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "334867"
 ---
-
 # <a name="accounting-distributions-and-subledger-journal-entries-for-free-text-invoices"></a>自由書式の請求書の勘定配布と補助元帳仕訳
 
 [!include [banner](../includes/banner.md)]
@@ -134,7 +133,6 @@ ms.lasthandoff: 11/03/2017
 
 ## <a name="subledger-journals-for-free-text-invoices"></a>自由書式の請求書の補助元帳
 自由書式の請求書を転記する前に、請求書が適切な勘定に転記されることを保証するために借方と貸方が含まれる請求書の完全な勘定項目を表示できます。 全勘定項目の表示は補助元帳と呼ばれます。 自由書式の請求書を仕訳入力する前に、プレビューした結果、補助元帳仕訳が正しくない場合、補助元帳仕訳は変更できません。 代わりに、勘定配布または転記プロファイルを変更する必要があります。 勘定配布は、勘定項目の借方または貸方のいずれか一方を定義するために使用されます。 相殺補助元帳仕訳勘定項目は、顧客勘定または税などの転記プロファイルから作成されます。
-
 
 
 

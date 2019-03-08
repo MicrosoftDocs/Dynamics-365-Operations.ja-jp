@@ -1,13 +1,13 @@
 ---
-title: "固定資産トランザクションのオプション"
-description: "この記事は、固定資産トランザクションの作成に使用できるさまざまな方法について説明します。"
+title: 固定資産トランザクションのオプション
+description: このトピックは、固定資産トランザクションの作成に使用できるさまざまな方法について説明します。
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 02/07/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetTable, PurchCreateOrder
 audience: Application User
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 6362a63bca43b5ac8da14becf6b966e459365ce1
+ms.sourcegitcommit: 68df883200b5c477ea1799cc28d3ef467cd29202
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 18352ad921c2e2d110a7535f979272685105662f
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "377185"
 ---
-
 # <a name="fixed-asset-transaction-options"></a>固定資産トランザクションのオプション
 
 [!include [banner](../includes/banner.md)]
 
-この記事は、固定資産トランザクションの作成に使用できるさまざまな方法について説明します。
+このトピックは、固定資産トランザクションの作成に使用できるさまざまな方法について説明します。
 
 買掛金勘定、売掛金勘定、調達、および一般会計との統合のために、固定資産を設定できます。 また、これらの項目を内部で使用する場合は、在庫管理の品目を固定資産に転送できます。
 
@@ -66,9 +65,6 @@ ms.lasthandoff: 11/03/2017
 | ** **                               | 売掛金管理      | 自由書式の請求書                         |
 
 
+減価償却トランザクション タイプの仕訳帳明細行がデータ エンティティを通じて手動で作成またはインポートされた場合、固定資産の減価償却期間の残存価額は更新されません。 この値は、減価償却提案プロセスを使用して仕訳帳明細行を作成したときに更新されます。
 
 詳細については、「[固定資産の統合](fixed-asset-integration.md)」を参照してください。
-
-
-
-

@@ -1,13 +1,13 @@
---- 
-title: "生産フロー バージョンの有効化"
-description: "かんばん作業が作成され、活動が生産フロー バージョンで処理される前に、バージョンを有効にする必要があります。"
+---
+title: 生産フロー バージョンの有効化
+description: かんばん作業が作成され、活動が生産フロー バージョンで処理される前に、バージョンを有効にする必要があります。
 author: cvocph
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LeanProductionFlow
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 909ed89cfd498f69ed99cd9642bbd9fab698dbb7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 7f081d9d591c71cbe02e25bbdb50aa999b558ffa
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "339099"
 ---
 # <a name="activate-a-production-flow-version"></a>生産フロー バージョンの有効化
 
@@ -40,5 +40,4 @@ ms.lasthandoff: 09/29/2017
     * [計画ステータス] フィールドでドラフトを持つ生産フロー バージョンを選択します。  
 5. [有効化] をクリックします。
 6. [OK] をクリックします。
-
 

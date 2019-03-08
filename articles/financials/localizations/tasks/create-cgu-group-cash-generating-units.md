@@ -1,13 +1,13 @@
---- 
-title: "CGU グループおよび資産グループの作成"
-description: "日本では、固定資産の減損は、個々の固定資産または資産グループに基づき決定することができます。"
+---
+title: CGU グループおよび資産グループの作成
+description: 日本では、固定資産の減損は、個々の固定資産または資産グループに基づき決定することができます。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetImpairmentCashGenUnitGroup_JP, SysQueryForm, AssetImpairmentCashGenUnit_JP
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: e5c674bd1463447105e6e163e32d07ee24f6b853
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371104"
 ---
 # <a name="create-cgu-group-and-cash-generating-units"></a>CGU グループおよび資産グループの作成
 
@@ -99,5 +99,4 @@ ms.lasthandoff: 10/16/2018
 1. [有効化] をクリックします。
     * 認識テストの実行に使用できるのは、有効な CGU グループだけです。  
 2. [はい] をクリックします。
-
 

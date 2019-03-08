@@ -1,13 +1,13 @@
 ---
-title: "小売階層"
-description: "この記事は、Microsoft Dynamics 365 for Retail の小売階層について説明します。"
+title: 小売階層
+description: この記事は、Microsoft Dynamics 365 for Retail の小売階層について説明します。
 author: jblucher
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: OMHierarchyManager
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: 198c8da336f3e225c5d6da2eb02c86581dc9b4d6
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: e94b59540c9ef188a07e2e24ef4a04829b9d37f8
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341905"
 ---
-
 # <a name="retail-hierarchies"></a>小売階層
 
 [!include [banner](includes/banner.md)]
@@ -46,4 +45,3 @@ ms.lasthandoff: 11/03/2017
 | 小売ナビゲーション階層   | この階層タイプを使用すると、製品をグループ化してカテゴリに整理し、製品がオンラインまたは POS で閲覧できるようになります。 |
 
 小売カテゴリ階層を使用して製品を構造化することで、製品の属性およびプロパティをカテゴリ レベルで設定および管理できます。 これらの属性およびプロパティには、製品分析コードおよび POS の設定が含まれます。 そのカテゴリに割り当てる製品は、定義するプロパティと属性を自動的に継承します。 また、選択したカテゴリの複数の製品に、製品のプロパティ設定を同時にコピーできます。
-

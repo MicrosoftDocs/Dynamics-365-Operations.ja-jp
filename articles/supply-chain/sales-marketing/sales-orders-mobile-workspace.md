@@ -1,13 +1,13 @@
 ---
-title: "販売注文モバイル ワークスペース"
-description: "このトピックでは、販売注文モバイル ワークスペースについての情報を提供します。 このワークスペースは、どこでも、いつでも販売注文について最新の状態に保つのに役立ちます。"
+title: 販売注文モバイル ワークスペース
+description: このトピックでは、販売注文モバイル ワークスペースについての情報を提供します。 このワークスペースは、どこでも、いつでも販売注文について最新の状態に保つのに役立ちます。
 author: Mirzaab
 manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -18,21 +18,20 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
+ms.openlocfilehash: 03e8908ecb78b4f72dae8426b0165f9350d5fe85
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: a3b06832112779a4b0826a51b696a1ced10711ec
-ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365066"
 ---
-
 # <a name="sales-orders-mobile-workspace"></a>販売注文モバイル ワークスペース
 
 [!include [banner](../includes/banner.md)]
 
 このトピックでは、**販売注文**モバイル ワークスペースについての情報を提供します。 このワークスペースは、どこでも、いつでも販売注文について最新の状態に保つのに役立ちます。 
 
-このモバイル ワークスペースは、Microsoft Dynamics 365 for Unified Operations モバイル アプリで使用するためのものです。
+このモバイル ワークスペースは、Microsoft Dynamics 365 for Unified Operations Mobile アプリで使用するためのものです。
 
 ## <a name="overview"></a>概要
 **販売注文**モバイル ワークスペースを使用して、各販売注文に関する詳細情報を表示できます。 この情報には、注文のステータス、顧客の連絡先情報および注文受付者の連絡先情報が含まれます。 **販売注文** モバイル ワークスペースは、販売注文のインスタント ビューを提供します。 すべての販売注文、顧客別の販売注文、または特定の販売注文に関する情報を表示できます。 
@@ -81,13 +80,13 @@ ms.lasthandoff: 03/26/2018
         -   注文明細行
         -   販売注文がいつどのように出荷されたかを示す出荷
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必要条件
 組織に配置されている Microsoft Dynamics 365 のバージョンに基づいて、前提条件は異なります。
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Microsoft Dynamics 365 for Finance and Operations を使用している場合の前提条件 
-Dynamics 365 for Finance and Operations を組織に配置している場合、システム管理者は [販売注文] モバイル ワークスペースを公開する必要があります。 手順については、「[モバイル ワークスペースの公開](../../dev-itpro/mobile-apps/publish-mobile-workspace.md)」を参照してください。
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Microsoft Dynamics 365 for Finance and Operations を使用する場合の前提条件 
+Dynamics 365 for Finance and Operations が組織に配置されている場合、システム管理者は**販売注文**モバイル ワークスペースを公開する必要があります。 手順については、「[モバイル ワークスペースの公開](../../dev-itpro/mobile-apps/publish-mobile-workspace.md)」を参照してください。
 
-### <a name="prerequisites-if-you-use-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Dynamics 365 for Operations バージョン 1611 およびプラットフォーム更新プログラム 3 以降を使用している場合の前提条件
+### <a name="prerequisites-if-you-use-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Dynamics 365 for Operations バージョン 1611 およびプラットフォーム 更新プログラム 3 以降を使用する場合の前提条件
 Dynamics 365 for Operations バージョン 1611 およびプラットフォーム更新プログラム 3 以降を組織に配置している場合、システム管理者は次の前提条件を満たす必要があります。 
 
 <table>
@@ -105,7 +104,7 @@ Dynamics 365 for Operations バージョン 1611 およびプラットフォー�
 
 <td>KB 4013633 は、<strong>販売注文</strong>モバイル ワークスペースを含む X++ の更新またはメタデータ修正プログラムです。 KB 4013633 を実装するには、システム管理者は次の手順に従う必要があります。
 <ol>
-<li><a href="../../dev-itpro/migration-upgrade/download-hotfix-lcs.md">Microsoft Dynamics Lifecycle Services (LCS) からメタデータ修正プログラムをダウンロードします</a>。</li>
+<li><a href="../../dev-itpro/migration-upgrade/download-hotfix-lcs.md">Microsoft Dynamics Lifecycle Services (LCS)</a> からメタデータ修正プログラムをダウンロードします。</li>
 <li><a href="../../dev-itpro/migration-upgrade/install-metadata-hotfix-package.md">メタデータ修正プログラムをインストールします。</a></li>
 <li><strong>SCMMobile</strong> モデルを含む<a href="../../dev-itpro/deployment/create-apply-deployable-package.md">配置可能パッケージを作成し</a>、配置可能パッケージを LCS にアップロードします。</li>
 <li><a href="../../dev-itpro/deployment/apply-deployable-package-system.md">配置可能パッケージを適用します</a>。</li>
@@ -143,4 +142,3 @@ Dynamics 365 for Unified Operations モバイル アプリをダウンロード�
 4.  顧客を選択します。
 5.  **連絡先情報** または **販売注文**を選択します。 **販売注文** を選択すると、顧客の販売注文の一覧が表示されます。
 6.  **販売注文**を選択します。 販売注文明細行、出荷に関する情報、顧客の連絡先情報、および注文受付者の連絡先情報を表示できるようになりました。
-

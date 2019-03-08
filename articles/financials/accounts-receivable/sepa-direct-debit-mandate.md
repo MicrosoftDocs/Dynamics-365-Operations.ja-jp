@@ -1,13 +1,13 @@
 ---
-title: "SEPA の口座引落の委任状の設定"
-description: "顧客が債権者に署名済み委任状を付与した場合、単一ユーロ支払地域 (SEPA) の口座引落により、債権者は顧客の銀行口座から資金を収集することができます。"
+title: SEPA の口座引落の委任状の設定
+description: 顧客が債権者に署名済み委任状を付与した場合、単一ユーロ支払地域 (SEPA) の口座引落により、債権者は顧客の銀行口座から資金を収集することができます。
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustParameters
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 757f3f6e0c5443054d2d6bd21381d9f692e1b9a5
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 242d6d3d517ad5190b96ace36bd585a5769ae994
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "334821"
 ---
-
 # <a name="set-up-sepa-direct-debit-mandate"></a>SEPA の口座引落の委任状の設定
 
 [!include [banner](../includes/banner.md)]
@@ -54,5 +53,4 @@ ms.lasthandoff: 05/08/2018
 [口座引落の概要](sepa-direct-debit-overview.md) 
 
 [顧客の口座引落の委任状の作成](tasks/create-direct-debit-mandate-customer.md) 
-
 

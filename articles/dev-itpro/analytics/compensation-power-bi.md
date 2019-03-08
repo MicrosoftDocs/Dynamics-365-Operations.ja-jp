@@ -1,13 +1,13 @@
 ---
-title: "報酬 Power BI コンテンツ"
-description: "このトピックでは、報酬 Power BI コンテンツについて説明します。 レポートにアクセスする方法を説明し、コンテンツを作成するために使用したデータ モデルおよびエンティティについての情報を提供します。"
+title: 補償 Power BI コンテンツ
+description: このトピックでは、補償 Power BI コンテンツについて説明します。 レポートにアクセスする方法を説明し、コンテンツを作成するために使用したデータ モデルおよびエンティティについての情報を提供します。
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmCompensationWorkspace
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -16,28 +16,27 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: 8457182fee49e28256f2a1102ba77b2b4e89d5b2
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 93c005d4b85b56f77ddd488c91e477970f4ccd07
-ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347287"
 ---
-
-# <a name="compensation-power-bi-content"></a>報酬 Power BI コンテンツ
+# <a name="compensation-power-bi-content"></a>補償 Power BI コンテンツ
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、**報酬** Microsoft Power BI コンテンツについて説明します。 レポートにアクセスする方法を説明し、コンテンツを作成するために使用したデータ モデルおよびエンティティについての情報を提供します。
+このトピックでは、**補償** Microsoft Power BI コンテンツについて説明します。 レポートにアクセスする方法を説明し、コンテンツを作成するために使用したデータ モデルおよびエンティティについての情報を提供します。
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI コンテンツへのアクセス
-次の製品のいずれかを使用する場合、**報酬** Power BI コンテンツは **報酬管理** ワークスペースに表示されます。
+次の製品のいずれかを使用する場合、**補償** Power BI コンテンツは、**補償管理**ワークスペースに表示されます。
 
 - Microsoft Dynamics 365 for Finance and Operations
 - Microsoft Dynamics 365 for Talent
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Power BI コンテンツに含まれるレポート
-**報酬** Power BI コンテンツに含まれるレポートには、追加情報を含むグラフとテーブルの両方があります。 次の表にレポートを示します。
+**補償** Power BI コンテンツに含まれるレポートには、追加情報を含むグラフとテーブルの両方があります。 次の表にレポートを示します。
 
 | レポート                      | コンテンツ |
 |----------------------------|----------|
@@ -46,10 +45,10 @@ ms.lasthandoff: 03/26/2018
 | 職位給与分析      | 最高および最低の時給と月給、最高および最低給与の職位、およびフルタイムとパートタイムの職位 |
 | 報酬プランの分析 | 選択した給付金での従業員の登録 |
 
-これらのレポートのグラフとタイルをフィルター処理し、ダッシュボードに固定することができます。 Power BI のフィルター処理と固定方法の詳細については、「[ダッシュボードの作成およびコンフィギュレーション](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards)」を参照してください。
+これらのレポートのグラフとタイルをフィルター処理し、ダッシュボードに固定することができます。 Power BI のフィルター処理と固定方法の詳細については、[ダッシュボードの作成およびコンフィギュレーション](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards) を参照してください。
 
 ## <a name="understanding-the-data-model-and-entities"></a>データ モデルおよびエンティティの理解
-次のデータを使用して、**報酬** Power BI コンテンツのレポートを入力します。 この表に、コンテンツが基づいているエンティティを示します。
+次のデータを使用して、**補償** Power BI コンテンツのレポートを入力します。 この表に、コンテンツが基づいているエンティティを示します。
 
 | エンティティ                   | コンテンツ                                                                                                   | 他のエンティティとの関係 |
 |--------------------------|------------------------------------------------------------------------------------------------------------|-----------------------------------|
@@ -73,4 +72,3 @@ ms.lasthandoff: 03/26/2018
 | 従業員名            | 名、姓、フルネーム                                                                       | 現在の従業員、退職済従業員、従業員のトレンド |
 | 従業員の肩書き           | 役職と勤続日数                                                                                   | 現在の従業員、退職済従業員、従業員のトレンド |
 | 従業員のトレンド           | 時間経過に伴う作業者、人員、会社、職位                                                        | 会社、報酬、地理的な場所、従業員名、レポート先、カレンダーのオフセット、日付、従業員の肩書き、従業員層、雇用、職務、福利厚生 |
-

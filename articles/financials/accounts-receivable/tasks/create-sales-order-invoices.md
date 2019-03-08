@@ -1,13 +1,13 @@
---- 
-title: "販売注文請求書の作成"
-description: "このタスク ガイドでは、販売注文の請求操作について説明します。請求書の結合やバッチ処理も含みます。"
+---
+title: 販売注文請求書の作成
+description: このタスク ガイドでは、販売注文の請求操作について説明します。請求書の結合やバッチ処理も含みます。
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SalesTableListPage, SalesEditLines,  SysQueryForm, SysRecurrence
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 5a57d204c0dcb44cbce7a0cc4d2f00b75b57e219
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 4b72d5b283f9401d358ee68f4650c486ebb2fd7d
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "353313"
 ---
 # <a name="create-sales-order-invoices"></a>販売注文請求書の作成
 
@@ -74,5 +74,4 @@ ms.lasthandoff: 09/29/2017
 9. [OK] をクリックします。
 10. [キャンセル] をクリックします。
 11. [はい] をクリックします。
-
 

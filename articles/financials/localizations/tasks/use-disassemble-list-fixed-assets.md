@@ -1,13 +1,13 @@
---- 
-title: "固定資産の分解一覧の使用"
-description: "日本では、固定資産のコンポーネントを在庫に移転できます。"
+---
+title: 固定資産の分解一覧の使用
+description: 日本では、固定資産のコンポーネントを在庫に移転できます。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetTable, AssetComponentList_JP, AssetComponentPriceCalcDropDialog_JP, LedgerJournalTable, LedgerJournalTransAsset
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: b8b50db4fc235708fefaefd62fe3202489e6bfbe
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371110"
 ---
 # <a name="use-disassemble-list-for-fixed-assets"></a>固定資産の分解一覧の使用
 
@@ -70,5 +70,4 @@ ms.lasthandoff: 10/16/2018
     * 分解の一覧にある貸方金額が、原価として自動的に取得されていることを確認します。  
     * 貸方金額を変更できます。  
 8. [転記] をクリックします。
-
 

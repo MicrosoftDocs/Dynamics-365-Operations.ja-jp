@@ -1,13 +1,13 @@
---- 
-title: "消費税コードを設定します"
-description: "売上税コードは、法人が計算、収集、税務当局への支払いの義務のあるそれぞれの間接税または関税について作成されます。"
+---
+title: 消費税コードを設定します
+description: 売上税コードは、法人が計算、収集、税務当局への支払いの義務のあるそれぞれの間接税または関税について作成されます。
 author: twheeloc
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TaxTable, TaxData
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: f29442c2ef2e3d0008a74298fda218e4cbd93f8e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 968f4bb9f7d54cdb4de4f7842ed1777c9a9acd64
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "349173"
 ---
 # <a name="set-up-sales-tax-codes"></a>消費税コードを設定します
 
@@ -52,5 +52,4 @@ ms.lasthandoff: 09/29/2017
 15. [保存] をクリックします。
 16. ページを閉じます。
 17. [保存] をクリックします。
-
 

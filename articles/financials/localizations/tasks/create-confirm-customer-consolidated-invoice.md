@@ -1,13 +1,13 @@
---- 
-title: "顧客月次締め請求書の作成および確認"
-description: "日本では、その月の販売請求書および仕入請求書は、未払金額を計算するため月末に連結されます。"
+---
+title: 顧客月次締め請求書の作成および確認
+description: 日本では、その月の販売請求書および仕入請求書は、未払金額を計算するため月末に連結されます。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustConsInvoice_JP
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 70d6dce40bce225ef24d5aeb5e2e074259e16477
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371023"
 ---
 # <a name="create-and-confirm-a-customer-consolidated-invoice"></a>顧客月次締め請求書の作成および確認
 
@@ -54,5 +54,4 @@ ms.lasthandoff: 10/16/2018
     * 請求済の販売注文が月次締め請求書に含まれていることを確認します。  
 5. [確認] をクリックします。
     * [確定] をクリックすると、[月次締め請求書のステータス] は「確定済」に変わります。 確定後、月次締め請求書はロックされ編集できません。  
-
 

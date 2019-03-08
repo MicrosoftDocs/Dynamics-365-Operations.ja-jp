@@ -1,13 +1,13 @@
---- 
-title: "既存のかんばんルールを複製して新しいかんばんルールを作成"
-description: "この手順では、既存のかんばんルールの複製の作成を中心に説明します。"
+---
+title: 既存のかんばんルールを複製して新しいかんばんルールを作成
+description: この手順では、既存のかんばんルールの複製の作成を中心に説明します。
 author: ChristianRytt
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KanbanRules, KanbanRuleDuplicate, InventItemIdLookupSimple
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 7f72dbca0debf9e6a03ee700a979d4f4c110f819
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 6bdd79de9f7dd71c3acbfa32c4decbf0b4593798
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350346"
 ---
 # <a name="create-a-new-kanban-rule-by-duplicating-an-existing-kanban-rule"></a>既存のかんばんルールを複製して新しいかんばんルールを作成
 
@@ -43,5 +43,4 @@ ms.lasthandoff: 09/29/2017
     * M0007 を選択します。  
 3. [OK] をクリックします。
     * かんばんルール 000017 の複製が作成されることに注目してください。    
-
 

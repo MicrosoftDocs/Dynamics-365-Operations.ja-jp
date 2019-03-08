@@ -1,13 +1,13 @@
---- 
-title: "ER ドキュメント管理ファイルを形式出力で使用する (第 1 部 - データ モデルの準備)"
-description: "次の手順では、システム管理者または電子レポート開発者のロールに指定されたユーザーが、ER出力のドキュメント管理ファイル（添付）を使用するために電子レポート（ER）フォーマットをどのように環境設定しているのか説明します。"
+---
+title: ER ドキュメント管理ファイルを形式出力で使用する (第 1 部 - データ モデルの準備)
+description: 次の手順では、システム管理者または電子レポート開発者のロールに指定されたユーザーが、ER出力のドキュメント管理ファイル（添付）を使用するために電子レポート（ER）フォーマットをどのように環境設定しているのか説明します。
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace, ERVendorPart, ERSolutionRepositoryTable, ERSolutionRepositoryCreateDropDialog, ERSolutionImport,  ERSolutionTable, ERSolutionCreateDropDialog
 audience: Application User
 ms.reviewer: kfend
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 00d366e61077e27a13b13e31a55acc89ae2b0cd0
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "345240"
 ---
 # <a name="er-use-document-management-files-in-format-outputs-part-1-prepare-data-model"></a>ER 形式の出力 (パート 1: データ モデルの準備) におけるドキュメント管理ファイルの使用
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 10/16/2018
 
 これらの手順を完了するには、先に「コンフィギュレーション プロバイダーの作成および有効なプロバイダーとしてのマーク付け」の手順の各ステップを完了する必要があります。
 
-この手順は、Dynamics 365 for Operations、バージョン 1611 に追加された機能です。
+この手順は Dynamics 365 for Operations バージョン 1611 に追加された機能です。
 
 
 ## <a name="get-access-to-the-list-of-configurations-provided-by-microsoft"></a>Microsoft 提供の設定リストにアクセスする
@@ -67,5 +67,4 @@ ms.lasthandoff: 10/16/2018
 3. [名称] フィールドに、「顧客請求書モデル（カスタム）」を入力します。
     * 顧客請求書モデル（カスタム）  
 4. [コンフィギュレーションの作成] をクリックします。
-
 

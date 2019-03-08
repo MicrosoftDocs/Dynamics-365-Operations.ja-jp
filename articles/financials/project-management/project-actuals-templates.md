@@ -1,13 +1,13 @@
 ---
-title: "プロジェクト実績を、Project Service Automation から Finance and Operations へ転記する統合仕訳帳に、直接同期させます。"
-description: "このトピックでは、Microsoft Dynamics 365 for Project Service Automation から Microsoft Dynamics 365 for Finance and Operations へ直接プロジェクト実績を同期させるために使用されるテンプレートと基本的なタスクについて説明します。"
+title: プロジェクト実績を、Project Service Automation から Finance and Operations へ転記する統合仕訳帳に、直接同期させます。
+description: このトピックでは、Microsoft Dynamics 365 for Project Service Automation から Microsoft Dynamics 365 for Finance and Operations にプロジェクト実績を直接同期させるために使用されるテンプレートと基本的なタスクについて説明します。
 author: KimANelson
 manager: AnnBe
 ms.date: 07/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,23 +17,23 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-11-28
 ms.dyn365.ops.version: AX 7.3.0
-ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
 ms.openlocfilehash: 0a965e8de596decf39a15977e6df8a6aa9dd35b0
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "343354"
 ---
 # <a name="synchronize-project-actuals-directly-from-project-service-automation-to-the-project-integration-journal-for-posting-in-finance-and-operations"></a>プロジェクト実績を、Project Service Automation から Finance and Operations へ転記する統合仕訳帳に、直接同期させます。
 
 [!include[banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Project Service Automation から Microsoft Dynamics 365 for Finance and Operations へ直接プロジェクト実績を同期させるために使用されるテンプレートと基本的なタスクについて説明します。
+このトピックでは、Microsoft Dynamics 365 for Project Service Automation から Microsoft Dynamics 365 for Finance and Operations にプロジェクト実績を直接同期させるために使用されるテンプレートと基本的なタスクについて説明します。
 
 テンプレートは、Project Service Automation から Finance and Operations のステージング テーブルへ、トランザクションを同期します。 同期が完了した後、ステージング テーブルから統合仕訳帳にデータをインポートするよう**指定する**必要があります。
 
 > [!NOTE]
-> - プロジェクト実績の統合は、Microsoft Dynamics 365 for Finance and Operations バージョン 8.01 以降で使用可能です。
+> - プロジェクト実績の統合は、Microsoft Dynamics 365 for Finance and Operations バージョン 8.0.1 以降で使用可能です。
 > - Microsoft Dynamics 365 for Finance and Operations、Enterprise edition 7.3.0 を使用している場合、KB 4132657 および KB 4132660 をインストールした後に、テンプレートを使用してプロジェクト タスクの統合、経費トランザクションのカテゴリ、時間見積、経費見積、実績、および機能ロックをコンフィギュレーションできます。 勘定配布をリセットする必要がある場合、KB 4131710 をインストールすることをお勧めします。
 > - Finance and Operations 7.3.0 を使用し、Project Service Automation から手数料トランザクションを挿入する場合は、プロジェクト請求書にそれらの手数料を含めるために KB 4345320 をインストールする必要があります。
 > - Project Service Automation で時間や経費のトランザクションに対する消費税金額を入力する場合は、Project Service Automation 更新プログラム 7 をインストールする必要があります。 それ以外の場合は、税の実績は関連付けられている時間または経費の実績にリンクされず、Finance and Operations に同期されません。 詳細については、サポートにお問い合わせください。
@@ -140,4 +140,3 @@ Project Service Automation から Finance and Operations の統合ソリュー�
 [![テンプレートのマッピング](./media/ActualsUpdateMapping.jpg)](./media/ActualsUpdateMapping.jpg)
 
 [![テンプレートのマッピング](./media/TransactionConnectionsUpdate.jpg)](./media/TransactionConnectionsUpdate.jpg)
-

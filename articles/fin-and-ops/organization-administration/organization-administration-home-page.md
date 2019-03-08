@@ -1,13 +1,13 @@
 ---
-title: "組織管理ホーム ページ"
-description: "このトピックでは、組織での Microsoft Dynamics 365 for Fianance と Operations の使用に役立つリソースを示します。"
+title: 組織管理ホーム ページ
+description: このトピックでは、組織での Microsoft Dynamics 365 for Finance and Operations の使用に役立つリソースを示します。
 author: sericks007
 manager: AnnBe
 ms.date: 08/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,21 +17,20 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 0a693529b55b66eb940f8215a336d5c4ae0acedd
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: a2c1d846527eac4db0a043c7f1c51da0e73bd796
-ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "332820"
 ---
-
 # <a name="organization-administration-home-page"></a>組織管理ホーム ページ
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Power Users および Administrators が Microsoft Dynamics 365 for Finance and Operations をコンフィギュレーションするのに役立つコンテンツを示します。 このコンテンツは、組織と業務を円滑かつ効率的に操作するようシステムをコンフィギュレーションするのに役立ちます。
+このトピックでは、Power Users または Administrators Microsoft Dynamics 365 for Finance and Operations を構成するのに役立つコンテンツを示します。 このコンテンツは、組織と業務を円滑かつ効率的に操作するようシステムをコンフィギュレーションするのに役立ちます。
 
-ここに表示されるコンテンツの多くは、[**組織管理**] モジュールでの機能に適用されます。 ただし、レコード テンプレートを作成および使用するなどの、組織をより効率的に実行するのに役立つ任意のモジュールで実行できる、いくつかのタスクがあります。
+ここに表示されるコンテンツの多くは、**組織管理** モジュールでの機能に適用されます。 ただし、レコード テンプレートを作成および使用するなどの、組織をより効率的に実行するのに役立つ任意のモジュールで実行できる、いくつかのタスクがあります。
 
 ## <a name="number-sequences"></a>番号順序
 
@@ -103,4 +102,3 @@ Finance and Operations では、重要なビジネス プロセスに電子署�
 - [ドキュメント管理のコンフィギュレーション](configure-document-management.md)
 - [電子メールのコンフィギュレーションと送信](configure-email.md)
 - [日時データとタイム ゾーン](date-time-zones.md)
-

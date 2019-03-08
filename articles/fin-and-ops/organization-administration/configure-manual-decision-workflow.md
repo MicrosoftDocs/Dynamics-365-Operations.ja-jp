@@ -1,13 +1,13 @@
 ---
-title: "ワークフローでの手動決定のコンフィギュレーション"
-description: "このトピックでは、手動決定のプロパティをコンフィギュレーションする方法について説明します。"
+title: ワークフローでの手動決定のコンフィギュレーション
+description: このトピックでは、手動決定のプロパティをコンフィギュレーションする方法について説明します。
 author: sericks007
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: d09e99a5bf99593a8fa7682f9d4f29eaa4e7c836
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341399"
 ---
-
 # <a name="configure-manual-decisions-in-a-workflow"></a>ワークフローでの手動決定のコンフィギュレーション
 
 [!include [banner](../includes/banner.md)]
@@ -164,7 +163,7 @@ ms.lasthandoff: 12/18/2018
     </tr>
     <tr>
     <td>ユーザー</td>
-    <td>特定の Microsoft Dynamics 365 for Finance and Operations ユーザー</td>
+    <td>特定 Microsoft Dynamics 365 for Finance and Operations ユーザー</td>
     <td>
     <ol>
     <li><strong>ユーザー</strong> を選択したのち、<strong>ユーザー</strong> タブをクリックします。</li>
@@ -372,4 +371,3 @@ ms.lasthandoff: 12/18/2018
     - **年** – 決定の実行期限を曜日、週、月で選択します。 たとえば、12 月の第 3 週の金曜日までに決定を実行する必要があるように設定できます。
 
 4. 時間制限を超過した場合は、システムによって決定が行われます。 **アクション**の一覧から、システムで選択するオプションを選択します。
-

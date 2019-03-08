@@ -1,13 +1,13 @@
 ---
-title: "残余決済"
-description: "その金額を勘定科目に適用することで、決済活動から残りの金額を決済することができます。"
+title: 残余決済
+description: その金額を勘定科目に適用することで、決済活動から残りの金額を決済することができます。
 author: mikefalkner
 manager: aolson
 ms.date: 10/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym, LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
 ms.reviewer: shylaw
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: mikefalkner
 ms.search.validFrom: 2018-12-01
 ms.dyn365.ops.version: 8.1.3
+ms.openlocfilehash: 408a36a7cf221463b38260bd8830b422e58ccb64
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 075d0f5dc0c9dc4e46dc92a2da75da9f7a207472
-ms.openlocfilehash: e67bd36adc92bffea48087d0322ab14e9c066a4e
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/06/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "367205"
 ---
-
 # <a name="settle-remainder"></a>残余決済
 
 [!include [banner](../includes/banner.md)]
@@ -71,4 +70,3 @@ ms.lasthandoff: 12/06/2018
 7)  また、決済残高を含む支払仕訳帳を作成するか、または仕訳帳なしで転記するかを選択できます。 支払仕訳帳を作成するには、**仕訳帳で編集**で**はい**を選択します。 作成した支払仕訳帳を編集することができます。
 8)  **残余決済**をクリックします。 仕訳帳を作成することを選択した場合、ボタンは**仕訳帳の作成**に変わります。 代わりに、**仕訳帳の作成**をクリックします。
 9)  支払仕訳帳を作成した場合は、**残余決済**をクリックした後に仕訳帳ページが開きます。 仕訳帳明細行は、金額として残余決済金額を使用し、相手勘定として残余決済勘定を使用して、仕訳に追加されます。 他の顧客または仕入先に決済金額を転記できるように顧客または仕入先を追加した場合は、その顧客または仕入先に決済金額を転記するための明細行が仕訳帳に追加されます。
-

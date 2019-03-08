@@ -1,13 +1,13 @@
---- 
-title: "増加償却ドキュメントの作成および使用状況データの入力"
-description: "日本では、加速償却は、原則ドキュメントごとに申告されます。"
+---
+title: 増加償却ドキュメントの作成および使用状況データの入力
+description: 日本では、加速償却は、原則ドキュメントごとに申告されます。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetTable, AssetBook, LedgerJournalTable, LedgerJournalTransAsset, AssetAcceleratedDepDocument_JP, SysQueryForm
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 875d06031469a60f2c7e093707cbd2fd22ce7313
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371079"
 ---
 # <a name="create-an-accelerated-depreciation-document-and-enter-usage-data"></a>増加償却ドキュメントの作成および使用状況データの入力
 
@@ -93,5 +93,4 @@ ms.lasthandoff: 10/16/2018
     * 既に過剰使用率を計算した場合、計算ステップを省いて過剰使用率を直接入力し、提案目的でドキュメントを確定することができます。  
 14. [確認] をクリックします。
     * 確認済 [加速償却ドキュメント] のみ提案として使用できます。  
-
 

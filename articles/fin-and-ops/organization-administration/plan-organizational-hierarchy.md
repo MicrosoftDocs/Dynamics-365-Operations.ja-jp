@@ -1,13 +1,13 @@
 ---
-title: "組織階層の計画"
-description: "組織と組織階層を設定する前に、組織をシミュレーションする最善の方法を理解するようにしてください。"
+title: 組織階層の計画
+description: 組織と組織階層を設定する前に、組織をシミュレーションする最善の方法を理解するようにしてください。
 author: sericks007
 manager: AnnBe
 ms.date: 08/28/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: OMHierarchyManager, OMLegalEntity, OMOperatingUnit
 audience: Application User
 ms.reviewer: sericks
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 633d85333a510cec9cee2721e6e2330a47b6c78c
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "331992"
 ---
-
 # <a name="plan-your-organizational-hierarchy"></a>組織階層の計画
 
 [!include [banner](../includes/banner.md)]
@@ -168,7 +167,7 @@ Finance and Operations のある機能は、組織が法人か作業単位であ
 
 #### <a name="if-the-organization-is-modeled-as-a-legal-entity"></a>組織を法人としてシミュレーションする場合
 
-Finance and Operations でサポートされる国 / 地域については、ほとんどの法定レポートを作成できます。 それぞれの国や地域で使用できるレポートについては、Finance and Operations の「[Microsoft Dynamics のローカライズのポータル](https://mbs.microsoft.com/customersource/global/ax/support/support-news/GFMLocalizationPortalMC)」を参照してください。 (CustomerSource のログオンが必要です)。
+Finance and Operations でサポートされる国 / 地域については、ほとんどの法定レポートを作成できます。 それぞれの国や地域で使用できるレポートについては、[Microsoft Dynamics ローカライズのポータル](https://mbs.microsoft.com/customersource/global/ax/support/support-news/GFMLocalizationPortalMC) for Finance and Operations を参照してください。 (CustomerSource ログオンは必須です。)
 
 > [!NOTE]
 > Finance and Operations では、一般会計の転記階層によって、子会社とは異なる会計基準を使用する親会社に対して調整エントリを作成できます。 たとえば、英国の一般会計慣行 (UK GAAP) を使用する法人の場合、転記階層に調整エントリを作成できます。 これらのエントリは、米国の一般会計原則 (GAAP) を使用する親法人に統合できます。 調整エントリは、英国の GAAP レポートには影響しません。
@@ -243,4 +242,3 @@ Finance and Operations でサポートされる国 / 地域については、ほ
 - 主要な建て直しシナリオをモデル化する前に、階層の有効日数を使用して、影響分析および検証テストを実行します。
 - 実稼働環境で新しいバージョンを発行する前に、ドラフト モードを使用して階層を変更します。
 - 実稼働環境で階層から組織を追加または削除する権限を持つ人員の数を制限します。 番号が小さくなると、費用のかかる間違いが発生し、修正が必要となる可能性が少なくなります。
-

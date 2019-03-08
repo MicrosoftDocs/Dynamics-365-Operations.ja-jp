@@ -1,13 +1,13 @@
---- 
-title: "形式作成時のデータ モデル定義の選択"
-description: "この手順にあるステップを完了するには、まず「ER コンフィギュレーション プロバイダーの作成および有効なプロバイダーとしてのマーク付け」にある手順を完了する必要があります。"
+---
+title: 形式作成時のデータ モデル定義の選択
+description: この手順にあるステップを完了するには、まず「ER コンフィギュレーション プロバイダーの作成および有効なプロバイダーとしてのマーク付け」にある手順を完了する必要があります。
 author: NickSelin
 manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: dc357db8acbdb98741a694a8a9d3c0c0625c50e4
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "334499"
 ---
 # <a name="select-data-model-definitions-when-you-create-formats"></a>形式作成時のデータ モデル定義の選択
 
@@ -81,7 +81,7 @@ ms.lasthandoff: 08/09/2018
     * ER デザイナーを使用して、必要なルート項目のモデル マッピングを指定します。  
 2. [デザイナー] をクリックします。
     * 選択したモデルのルート項目の選択したモデル マッピングの設定をシミュレーションします。  
-3. ツリーで、[Dynamics 365 for Operations\Table records] を選択します。
+3. ツリーで、'Dynamics 365 for Operations\Table records'を選択します。
 4. [ルートの追加] をクリックします。
 5. [名前] フィールドに、「元帳」と入力します。
 6. [テーブル] フィールドで、「LedgerJournalTrans」と入力します。
@@ -98,5 +98,4 @@ ms.lasthandoff: 08/09/2018
 4. [データモデル定義] フィールドで、値を入力または選択します。
     * アプリケーション データ ソースにマップするのに、現在 1 つのみのルート項目が使用可能であることに注意してください。 少なくとも 1 つのモデル マッピングが導入されると、アプリケーション データ ソースにマップされているモデルのルート項目のみが、ER 形式が追加されるときにモデル定義として選択できます。   
 5. ページを閉じます。
-
 

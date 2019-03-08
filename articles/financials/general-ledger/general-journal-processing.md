@@ -1,13 +1,13 @@
 ---
-title: "一般仕訳帳の処理"
-description: "このトピックでは、一般仕訳帳の処理を容易にすることができ、正確なデータがキャプチャされ、内部コントロールが悪影響を受けていないことを確認するのに役立つ Microsoft Dynamics 365 for Finance and Operations の機能について説明します。"
+title: 一般仕訳帳の処理
+description: このトピックでは、一般仕訳帳の処理を容易にすることができ、正確なデータがキャプチャされ内部コントロールが悪影響を受けていないことを確認する手助けとなる Microsoft Dynamics 365 for Finance and Operations の機能について説明します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 09/24/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalSetup, LedgerJournalTable
 audience: Application User
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: cf744bc41ffcca6d029da5dd2031ada607a0109b
 ms.openlocfilehash: e77aafafed5c972a6ad8c064107306d3ebde0b79
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358442"
 ---
-
 # <a name="general-journal-processing"></a>一般仕訳帳の処理
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、一般仕訳帳の処理を容易にすることができ、正確なデータがキャプチャされ、内部コントロールが悪影響を受けていないことを確認するのに役立つ Microsoft Dynamics 365 for Finance and Operations の機能について説明します。  
+このトピックでは、一般仕訳帳の処理を容易にすることができ、正確なデータがキャプチャされ内部コントロールが悪影響を受けていないことを確認する手助けとなる Microsoft Dynamics 365 for Finance and Operations の機能について説明します。  
 
 ## <a name="journal-names"></a>仕訳帳名
 
@@ -97,4 +96,3 @@ ms.lasthandoff: 10/16/2018
 **検証**メニューで、ほとんどの仕訳帳の**シミュレート転記**を検索できます。 **検証**機能を使用して仕訳帳を検証すると、システムは特定のエラー条件について仕訳帳をテストします。 **シミュレート転記**を使用すると、転記中に実行されるすべてのプロセスが実際に転記されずに実行されます。 その後、表示される転記メッセージの確認、エラーの修正を行い、**転記**メニューをクリックして、仕訳帳を転記します。 
 
 **シミュレート転記**はバッチ処理では使用できません。 ただし、バッチの転記をシミュレートするために使用可能なコードがあり、開発者はコードを拡張してその機能を追加することができます。  
-

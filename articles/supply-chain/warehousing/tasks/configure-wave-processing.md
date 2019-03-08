@@ -1,13 +1,13 @@
---- 
-title: "ウェーブ処理のコンフィギュレーション"
-description: "このガイドでは、ウェーブが処理されるときに倉庫に対して生成される作業、およびウェーブが手動または自動で処理されるか判断する基準の設定方法について説明します。"
+---
+title: ウェーブ処理のコンフィギュレーション
+description: このガイドでは、ウェーブが処理されるときに倉庫に対して生成される作業、およびウェーブが手動または自動で処理されるか判断する基準の設定方法について説明します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSParameters, ProdParameters
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 399146d35388a0151abb23e57bc36ec0173be928
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: f7a6db585468c235e07c4a0117a83995ec93f4b0
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "337512"
 ---
 # <a name="configure-wave-processing"></a>ウェーブ処理のコンフィギュレーション
 
@@ -68,5 +68,4 @@ ms.lasthandoff: 09/29/2017
 24. [倉庫にリリース] フィールドで、オプションを選択します。
     * 販売注文とかんばん注文では、棚卸資産は注文が倉庫にリリースされる前に引当する必要があります。 そうしなければ、品門行または配賦行はウェーブで処理することはできません。 製造オーダーでは、[部分引当の許可] を選択するというオプションもあります。 たとえば、生産を開始する必要がある材料があり、プロセスを終了するための追加の材料が利用可能になるまで待機できる場合に役立ちます。 このオプションを選択する場合、追加の材料が使用可能になるときに、倉庫プロセスに手動でリリースを繰り返す必要があります。  
 25. ページを閉じます。
-
 

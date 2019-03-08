@@ -1,13 +1,13 @@
 ---
-title: "販売時点管理 (POS) アプリケーションおよびユーザー言語の設定"
-description: "このトピックでは、Retail Modern POS (MPOS) とクラウド POS の言語設定を変更する方法を説明します。"
+title: 販売時点管理 (POS) アプリケーションおよびユーザー言語の設定
+description: このトピックでは、Retail Modern POS (MPOS) とクラウド POS の言語設定を変更する方法を説明します。
 author: jblucher
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmWorker, RetailStoreTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: faf8cdcee70b55842072298b51789f6cd7a577af
-ms.contentlocale: ja-jp
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336753"
 ---
-
 # <a name="point-of-sale-pos-application-and-user-language-settings"></a>販売時点管理 (POS) アプリケーションおよびユーザー言語の設定
 
 [!include [banner](includes/banner.md)]
@@ -35,7 +34,7 @@ ms.lasthandoff: 01/04/2019
 
 ## <a name="overview"></a>概要
 
-Retail Modern POS (MPOS) と Cloud POS は、言語設定と翻訳が店舗とユーザーの設定によって異なる場合があります。 たとえば、店舗は顧客にとって英語が最も一般的な地域に位置することができますが、一部の作業者はフランス語の翻訳でアプリケーションを使用することを好みます。
+Retail Modern POS (MPOS) とクラウド POS は、言語設定と翻訳が店舗とユーザーの設定によって異なる場合があります。 たとえば、店舗は顧客にとって英語が最も一般的な地域に位置することができますが、一部の作業者はフランス語の翻訳でアプリケーションを使用することを好みます。
 
 ## <a name="data-language"></a>データ言語
 
@@ -67,4 +66,3 @@ POS ユーザーの言語設定は、**小売 &gt; 言語**の下の**作業者*
 | **会社** | 既定                    | 既定                                                       |
 | **店舗**   | 会社を上書き          | 会社を上書き                                             |
 | **ユーザー**    | 店舗又は会社を上書き | なし                                                         |
-

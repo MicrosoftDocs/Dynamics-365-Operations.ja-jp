@@ -1,13 +1,13 @@
---- 
-title: "均等償却を使用した一括比例配分減価償却資産の作成"
-description: "日本では、耐用年数期間中、毎年均等額で減価償却処理される固定資産のタイプが 3 つあります。"
+---
+title: 均等償却を使用した一括比例配分減価償却資産の作成
+description: 日本では、耐用年数期間中、毎年均等額で減価償却処理される固定資産のタイプが 3 つあります。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetTable, AssetBook, AssetDepreciationProfile
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Japan
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: f9d2d681bbfcd9d3f5968fd7186b59c71d7f8618
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371118"
 ---
 # <a name="create-lump-sum-depreciation-assets-using-equally-divided-method"></a>均等償却を使用した一括比例配分減価償却資産の作成
 
@@ -62,5 +62,4 @@ ms.lasthandoff: 10/16/2018
     * [方法] が [均等] であることを確認します。  
     * [均等償却年数] が 3 年であることを確認します。  
     * この値は、固定資産のタイプが一括比例配分か、繰延資産か、または低価額資産かによって異なります。  
-
 

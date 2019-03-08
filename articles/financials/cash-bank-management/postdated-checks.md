@@ -1,13 +1,13 @@
 ---
-title: "先日付小切手"
-description: "この記事では、Microsoft Dynamics 365 for Finance and Operations の先日付小切手のサポートについて説明します。 先日付小切手とは、将来の日付で支払を履行または受け取るために発行される小切手です。 したがって、小切手は、特定の日付まで清算できません。"
+title: 先日付小切手
+description: この記事は、Microsoft Dynamics 365 for Finance and Operations の先日付小切手のサポートについて説明します。 先日付小切手とは、将来の日付で支払を履行または受け取るために発行される小切手です。 したがって、小切手は、特定の日付まで清算できません。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendPostDatedChecks, CustPostDatedChecks
 audience: Application User
 ms.reviewer: shylaw
@@ -18,21 +18,20 @@ ms.search.region: Global
 ms.author: leguo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 7ea1cd9926f3ea55d82f9030372a15b3545ed824
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 8fd721dc3166dcd981b749c673d3c625b4e5ae36
-ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "362927"
 ---
-
 # <a name="postdated-checks"></a>先日付小切手
 
 [!include [banner](../includes/banner.md)]
 
-この記事では、Microsoft Dynamics 365 for Finance and Operations の先日付小切手のサポートについて説明します。 先日付小切手とは、将来の日付で支払を履行または受け取るために発行される小切手です。 したがって、小切手は、特定の日付まで清算できません。
+この記事は、Microsoft Dynamics 365 for Finance and Operations の先日付小切手のサポートについて説明します。 先日付小切手とは、将来の日付で支払を履行または受け取るために発行される小切手です。 したがって、小切手は、特定の日付まで清算できません。
 
-Microsoft Dynamics 365 for Finance and Operations では、次の表に示すように、売掛金勘定と買掛金勘定の両方の先日付小切手の完全な管理サイクルをサポートします。
+Microsoft Dynamics 365 for Finance and Operations は、次の表に示すように、売掛金勘定と買掛金勘定の両方の先日付小切手の完全な管理サイクルをサポートします。
 <table>
 <colgroup>
 <col width="50%" />
@@ -97,7 +96,6 @@ Microsoft Dynamics 365 for Finance and Operations では、次の表に示すよ
 [仕入先の先日付小切手の登録および転記](tasks/register-post-postdated-check-vendor.md) 
 
 [仕入先の先日付小切手の決済](tasks/settle-postdated-check-vendor.md)
-
 
 
 

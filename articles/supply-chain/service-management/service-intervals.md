@@ -1,31 +1,30 @@
 ---
-title: "サービス期間"
-description: "サービス間隔は、サービス注文を作成する場合に、サービス契約項目に対してサービス注文明細行が作成される頻度を表します。"
+title: サービス期間
+description: サービス間隔は、サービス注文を作成する場合に、サービス契約項目に対してサービス注文明細行が作成される頻度を表します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 02/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SMAAgreementTable
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 10078cbd02209126e9655b823fcf844b692a4794
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 4ea10e4c0fbfd21538bba16d2b01deb3e4b3a10d
-ms.openlocfilehash: 4a51a3c3483e81cefdaf3d8e62a4f1f47fcd706b
-ms.contentlocale: ja-jp
-ms.lasthandoff: 02/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "352945"
 ---
-
 # <a name="service-intervals"></a>サービス期間
 
 [!include [banner](../includes/banner.md)]
@@ -83,7 +82,7 @@ ms.lasthandoff: 02/20/2018
 1. **サービス合意** ページの **アクション ウィンドウ** の **出荷** タブで、**計画されたサービス注文**をクリックします。
 2. **Create service orders** ページで **開始日** フィールドに現在の日付を、**終了日** フィールドに現在の日付から 1 か月後の日付を入力します。
 3. **時間** スライダーを **はい** に設定します。 
-4. [**OK**] をクリックします。
+4. **OK** をクリックします。
 
 **サービス注文の組み合わせ** の **サービス契約別** オプションで定義したサービス注文にはグループ化が存在しないため、サービス注文ごとに 1 つのサービス注文明細行が作成されます。
 
@@ -94,5 +93,4 @@ ms.lasthandoff: 02/20/2018
 ## <a name="related-topics"></a>関連トピック
 
 [サービス期間の設定](set-up-service-intervals.md)  
-
 

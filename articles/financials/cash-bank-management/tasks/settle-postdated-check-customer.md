@@ -1,13 +1,13 @@
---- 
-title: "顧客からの先日付小切手の決済"
-description: "先日付小切手は、銀行で精算された後に決済できます。"
+---
+title: 顧客からの先日付小切手の決済
+description: 先日付小切手は、銀行で精算された後に決済できます。
 author: kweekley
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustPostDatedChecks, SystemDate, LedgerJournalTable, LedgerJournalTransDaily, LedgerTransVoucher
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 86cefaac99a1ce5aa777f4f62456c3248045cc27
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: a905166dcfbf8cee5b0e5831b47c95d443a74f8d
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "338248"
 ---
 # <a name="settle-a-postdated-check-from-a-customer"></a>顧客からの先日付小切手の決済
 
@@ -55,5 +55,4 @@ ms.lasthandoff: 09/29/2017
 9. [行] をクリックします。
 10. [伝票] をクリックします。
 11. ページを閉じます。
-
 

@@ -1,13 +1,13 @@
 ---
-title: "従業員の開発 Power BIコンテンツ"
-description: "このトピックでは、従業員の開発 Power BI コンテンツについて説明します。"
+title: 従業員の開発 Power BI コンテンツ
+description: このトピックでは、従業員の開発 Power BI コンテンツについて説明します。
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations, Talent
@@ -15,15 +15,14 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 6b934b87cb5098641fba8c5b9214a0b2b6cde40d
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347172"
 ---
-
-# <a name="employee-development-power-bi-content"></a>従業員の開発 Power BIコンテンツ
+# <a name="employee-development-power-bi-content"></a>従業員の開発 Power BI コンテンツ
 
 [!include [banner](../includes/banner.md)]
 
@@ -42,7 +41,7 @@ ms.lasthandoff: 08/13/2018
 | パフォーマンス評価の分析   | 仕事別の従業員の最高評価と最低評価、部門別の従業員評価、従業員の評価別と職位別、職位別の最高評価と最低評価 |
 | 従業員パフォーマンスの分析 | マネージャーによる選択された評価に対する従業員の評価 |
 
-これらのレポートのグラフとタイルをフィルター処理し、ダッシュボードに固定することができます。 Power BI のフィルター処理と固定方法の詳細については、「[ダッシュボードの作成およびコンフィギュレーション](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards)」を参照してください。
+これらのレポートのグラフとタイルをフィルター処理し、ダッシュボードに固定することができます。 Power BI のフィルター処理と固定方法の詳細については、[ダッシュボードの作成およびコンフィギュレーション](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards) を参照してください。
 
 ## <a name="understanding-the-data-model-and-entities"></a>データ モデルおよびエンティティの理解
 
@@ -70,4 +69,3 @@ ms.lasthandoff: 08/13/2018
 | 従業員のスキル分析  | 証明済、レベル、取得日、スキル                                                                    | 従業員名前、スキル |
 | パフォーマンス              | 評価、説明、評価モデル                                                                      | 現在の従業員、現在の職位、従業員のトレンド、ジョブ優先スキル、過去の職位の割り当て、職位トレンド、退職済従業員 |
 | スキル                    | スキル、スキル タイプおよび評価                                                                              | 従業員のスキルの分析、ジョブ優先スキル |
-

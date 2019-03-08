@@ -1,13 +1,13 @@
---- 
-title: "かんばん作業状態を元に戻す"
-description: "この手順は、間違ったかんばん作業ステータスを元に戻すことに焦点をあてます。"
+---
+title: かんばん作業状態を元に戻す
+description: この手順は、間違ったかんばん作業ステータスを元に戻すことに焦点をあてます。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KanbanBoardWorkCell, KanbanJobStatusUpdate
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 27874f89cede151b52b869fa0d58e320d548e6d3
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 55d359232da5f3087b1e6baed182a20da09aeff7
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "352094"
 ---
 # <a name="revert-kanban-job-status"></a>かんばん作業状態を元に戻す
 
@@ -54,5 +54,4 @@ ms.lasthandoff: 09/29/2017
 5. 一覧で、選択された行のマークを解除します。
     * 同じジョブを選択します。  
     * 空のかんばんアイコンによって示される、かんばん作業のジョブ ステータスが [計画済] に戻されていることを確認してください。  
-
 

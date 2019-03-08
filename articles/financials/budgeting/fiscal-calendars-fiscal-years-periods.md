@@ -1,13 +1,13 @@
 ---
-title: "会計カレンダー、会計年度期間、および会計年度"
-description: "この記事は、法人、固定資産、予算作成で会計カレンダー、会計年度、会計期間を活用する方法について説明します。"
+title: 会計カレンダー、会計年度期間、および会計年度
+description: この記事は、法人、固定資産、予算作成で会計カレンダー、会計年度、会計期間を活用する方法について説明します。
 author: aprilolson
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: FiscalCalendars
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 360695ddfbcf1eab62dd5087e1b5bb34ccaf7c7f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 431d654aaffc27d54fd590dc7d5d2ab6c2313908
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "361662"
 ---
-
 # <a name="fiscal-calendars-fiscal-years-and-periods"></a>会計カレンダー、会計年度期間、および会計年度
 
 [!include [banner](../includes/banner.md)]
@@ -60,7 +59,6 @@ ms.lasthandoff: 11/03/2017
 
 ## <a name="maintain-periods-for-your-organization"></a>組織の期間の管理
 元帳カレンダーのページを使用して、組織で使用される会計カレンダー、会計年度、および期間の詳細を表示できます。 また、期間の状態を変更して、会計トランザクションを期間に転記できるユーザーを選択できます。 たとえば、新しい期間の開始時に、ユーザーの 1 つのグループが前の期間の財務トランザクションの転記を終了し、他のグループは新しい期間でのみ作業する場合に役立ちます。
-
 
 
 

@@ -1,33 +1,32 @@
 ---
-title: "電子メッセージ"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations の概要と、電子メッセージの設定情報が提供されます。"
+title: 電子メッセージ
+description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations の電子メッセージの概要および設定情報を提供します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 11/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2018-10-28
-ms.dyn365.ops.version: 8.1
-ms.translationtype: HT
-ms.sourcegitcommit: 232398a6c4193d0074881e26fff361deb9784bf2
+ms.dyn365.ops.version: 8.0999999999999996
 ms.openlocfilehash: 082ad886f40a52457900523f44158da3ed939458
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "357936"
 ---
-
 # <a name="electronic-messaging"></a>電子メッセージ
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Finance and Operations の概要と、電子メッセージの設定情報が提供されます。
+このトピックでは、Microsoft Dynamics 365 for Finance and Operations の電子メッセージの概要および設定情報を提供します。
 
 最近では、世界中の様々な国や地域の政府および立法当局が、それらの国または地域に登録されている企業の報告要件を実施しています。 要件の目的は、それらの企業から電子フォーマットで、会計、保管、処理されたシステムから直接、データを取得できるようにするためです。
 
@@ -47,7 +46,7 @@ Finance and Operations の電子メッセージ機能は、Finance and Operation
 
 電子メッセージ機能は、次のシナリオをサポートしています。
 
-- Microsoft Excel、XML、JavaScript Object Notation (JSON)、PDF、テキスト、および Microsoft Word など、様々なタイプの関連するエクスポート ER フォーマットに基づいて、メッセージを手動で作成し、レポートを生成します。
+- Microsoft Excel、XML、JavaScript Object Notation (JSON)、PDF、テキスト、および Microsoft Word など、様々なタイプの関連するエクスポート ER 形式に基づいて、メッセージを手動で作成し、レポートを生成します。
 - 関連するインポート ER 形式を経由して機関から要求および取得されたメッセージを、自動的に作成し処理します。
 - メッセージ項目として、データ ソース (Finance and Operations テーブル) からの情報を収集し処理します。
 - 追加の情報を格納し、メッセージまたはメッセージ項目に関連して特別に定義された実行可能なクラスを呼び出すことによってさまざまな値を評価します。
@@ -452,4 +451,3 @@ ER 形式を作成してデータソースにマップし、完成させた後�
 ![メッセージ状態の更新](media/update-status.png)
 
 メッセージ状態が**準備済**に更新され、**レポートの生成**を選択してレポートを生成できるようになりました。 レポートが生成され、メッセージ状態およびアクションのログは更新されます。 生成されたレポートを表示するには、アクション ウィンドウの**添付ファイル** ボタンを選択します。
-

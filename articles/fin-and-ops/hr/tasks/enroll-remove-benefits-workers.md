@@ -1,13 +1,13 @@
---- 
-title: "作業者の福利厚生の登録および削除"
-description: "この手順では、1 人の作業者が 1 つ以上の福利厚生に登録する方法、および複数の作業者が 1 つの福利厚生に登録する方法を示します。"
+---
+title: 作業者の福利厚生の登録および削除
+description: この手順では、1 人の作業者が 1 つ以上の福利厚生に登録する方法、および複数の作業者が 1 つの福利厚生に登録する方法を示します。
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmWorker, HcmWorkerEnrollment, HcmBenefitByEligibilityLookup, HcmMassBenefitEnrollment, HcmBenefitLookup, HcmMassBenefitEnrollmentResults
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 32f0e641f5e6824df89112aa5ea21dc3a708efa0
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341859"
 ---
 # <a name="enroll-and-remove-benefits-from-workers"></a>作業者の福利厚生の登録および削除
 
@@ -57,5 +57,4 @@ ms.lasthandoff: 09/14/2018
 13. 探している福利厚生の結果のレコードを検索します。
 14. 一覧で、選択された行のリンクをクリックします。
 15. このページは、福利厚生に登録された従業員と、登録されていない従業員を表示することができます。
-
 

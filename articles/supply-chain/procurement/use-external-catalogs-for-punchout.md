@@ -1,13 +1,13 @@
 ---
-title: "パンチアウト eProcurement の外部カタログの使用"
-description: "このトピックでは、外部カタログを使用して要求を作成し送信する方法について説明します。"
+title: パンチアウト eProcurement の外部カタログの使用
+description: このトピックでは、外部カタログを使用して要求を作成し送信する方法について説明します。
 author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchVendorPortalRequests
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 0734db6f777de2bcd6ea024c9255f589c155e44f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 76d0c911bdddbc5a34644dc96ec13dd8fd53a338
-ms.contentlocale: ja-jp
-ms.lasthandoff: 03/08/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "342802"
 ---
-
 # <a name="use-external-catalogs-for-punchout-eprocurement"></a>パンチアウト eProcurement の外部カタログの使用
 
 [!include [banner](../includes/banner.md)]
@@ -34,7 +33,7 @@ ms.lasthandoff: 03/08/2018
 
 自身のマスター データでは仕入先の製品の説明や価格を管理しないようにします。 代わりに、パンチアウト e-procurement の外部カタログを使用します。 その後、従業員は要求を作成するときに仕入先の外部カタログ サイトに「パンチアウト」できます (つまり、システムを離れて仕入先のサイトに移動します)。 仕入先の Web サイトでショッピング カートに追加される製品は、要求明細行に変換できます。 そのため、製品 ID、名前、価格などの正しい製品情報を取得することになります。
 
-外部カタログを使用するには、従業員は [**自分の購買要求**] ページで要求を作成する必要があります。
+外部カタログを使用するには、従業員は **自分の購買要求** ページで要求を作成する必要があります。
 
 要求を作成する従業員は、要求の作成者と呼ばれます。 作成者として、次のタスクを実行できます。
 
@@ -50,5 +49,4 @@ ms.lasthandoff: 03/08/2018
 調達カテゴリの複数のオプションがある場合は、要求に明細行を追加する前に、正しい調達カテゴリを選択します。
 明細行が要求に追加されると、外部カタログを使用せずにさらに明細行を追加することができます。 または、外部カタログを使用して明細行の追加を続行することができます。
 
-要求が準備できたら、[**ワークフロー**] > [**送信**] アクションを使用して承認のためにその要求を送信します。
-
+要求が準備できたら、**ワークフロー** > **送信** アクションを使用して承認のためにその要求を送信します。

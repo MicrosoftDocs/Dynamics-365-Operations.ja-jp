@@ -1,13 +1,13 @@
 ---
-title: "購買要求ワークフロー"
-description: "ワークフロー プロセスは、レビュー プロセスを介し、[ドラフト] の状態から [承認済] の最終状態へ購買要求を移動します。 購買要求が作成されレビュー用に送信されると、ワークフロー プロセスが開始されます。 購買要求が承認されると、発注書が購買要求明細行に対して生成され、仕入先に注文処理のために送信されます。"
+title: 購買要求ワークフロー
+description: ワークフロー プロセスは、レビュー プロセスを介し、[ドラフト] の状態から [承認済] の最終状態へ購買要求を移動します。 購買要求が作成されレビュー用に送信されると、ワークフロー プロセスが開始されます。 購買要求が承認されると、発注書が購買要求明細行に対して生成され、仕入先に注文処理のために送信されます。
 author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchReqAuthorization, WorkflowParticipantExpenToken
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 0adc43f3ed238a7a49cde44dd5f2d3bd55201cb4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: a5dcc294b3dde7dc7e0f789d9e7678b75bc699b0
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355774"
 ---
-
 # <a name="purchase-requisition-workflow"></a>購買要求ワークフロー
 
 [!include [banner](../includes/banner.md)]
@@ -116,7 +115,6 @@ ms.lasthandoff: 05/08/2018
 [調達ワークフロー](procurement-sourcing-workflows.md)
 
 [購買要求の概要](purchase-requisitions-overview.md)
-
 
 
 

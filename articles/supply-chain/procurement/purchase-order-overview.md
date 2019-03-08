@@ -1,13 +1,13 @@
 ---
-title: "発注書の概要"
-description: "この記事では、発注書 (PO) の概要について説明し、発注書が実行するさまざまなステージに関連する追加の記事へのリンクが提供されます。"
+title: 発注書の概要
+description: この記事では、発注書 (PO) の概要について説明し、発注書が実行するさまざまなステージに関連する追加の記事へのリンクが提供されます。
 author: FrankDahl
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchTable
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: b86e934a0ac25b1fe77a3359b74e707fb372ae6b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: d01ef1c496c7c79795d9d740ee755e84434dfdf1
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "338984"
 ---
-
 # <a name="purchase-order-overview"></a>発注書の概要
 
 [!include [banner](../includes/banner.md)]
@@ -92,7 +91,6 @@ PO には次の 3 つのタイプがあります。 注文書を作成すると�
 [発注書に対応する製品受領書](product-receipt-against-purchase-orders.md)
 
 [仕入先請求書の概要](../../financials/accounts-payable/vendor-invoices-overview.md)
-
 
 
 
