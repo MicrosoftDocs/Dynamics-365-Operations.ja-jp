@@ -1,32 +1,31 @@
 ---
-title: "販売時点管理 (POS) の在庫検索"
-description: "このトピックでは、販売時点管理 (POS) での在庫情報を表示するために使用できるオプションについて説明します。"
+title: 販売時点管理 (POS) の在庫検索
+description: このトピックでは、販売時点管理 (POS) での在庫情報を表示するために使用できるオプションについて説明します。
 author: ashishmsft
 manager: AnnBe
 ms.date: 03/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application update 5, AX 8.0
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: cd2dc460c9e862503ebbf1942dcf998d67829d86
-ms.contentlocale: ja-jp
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "314420"
 ---
-
 # <a name="inventory-lookup-in-the-point-of-sale-pos"></a>販売時点管理 (POS) の在庫検索
 
 [!include [banner](includes/banner.md)]
@@ -35,7 +34,7 @@ ms.lasthandoff: 01/04/2019
 
 組織間の在庫の正確なリアルタイム表示により、店舗関係者が適切なタイミングで、より優れた顧客サービスを提供できるようにします。 最も重要な時点は、顧客が購入決定をする準備ができている時点です。 製品の出荷や受取を正確に保証できるように、店舗のレジ担当者が、リアルタイムの在庫情報に精通していることが重要です。
 
-**Retail Modern POS** ワークスペースまたは **Retail Cloud POS** ワークスペースから **在庫検索** ページを開くことができます。
+**Retail Modern POS** ワークスペースまたは **Retail Cloud POS** ワークスペースから **在庫検索**ページを開くことができます。
 
 ![POS ホーム ページの在庫検索タイル](media/POSHomepage.png)
 
@@ -53,7 +52,7 @@ ms.lasthandoff: 01/04/2019
 場所のリストには、エンティティの 2 つのタイプが含まれます。
 
 - **小売店舗** – Retail で現在の店舗に対する店舗ロケーター グループを使用してコンフィギュレーションされる店舗の一覧を示します。
-- **流通センター** – 物流センター (倉庫など) のさまざまなタイプを Microsoft Dynamics 365 for Retail でコンフィギュレーションできます。 ただし、一覧は **標準** 既定のタイプの物流センターに対してのみ使用可能な在庫情報を表示します。
+- **物流センター** – 物流センター (倉庫など) のさまざまなタイプを Microsoft Dynamics 365 for Retail でコンフィギュレーションできます。 ただし、一覧は **標準** 既定のタイプの物流センターに対してのみ使用可能な在庫情報を表示します。
 
     > [!NOTE]
     > 使用可能な在庫情報は、POS の **輸送**、**検査**、および **ルートの商品** タイプの倉庫に対しては表示されません。
@@ -116,4 +115,3 @@ ms.lasthandoff: 01/04/2019
 | 適用の対象         | 選択した場所の選択したバリアントの組み合わせに対する ATP 情報を表示します。 |
 | すべての場所を表示します   | 標準の在庫検索ビューに切り替え、店舗ロケーター グループ、および **標準/既定** タイプの流通センターのすべての店舗間で品目バリアントの使用可能な在庫情報を強調します。 |
 | 製品の詳細表示 | 関連付けられている製品マスターの **製品の詳細** ページに、ユーザーをリダイレクトします。 |
-

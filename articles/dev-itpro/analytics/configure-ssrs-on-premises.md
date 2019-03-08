@@ -1,34 +1,34 @@
 ---
-title: "オンプレミス配置の SQL Server Reporting Services のコンフィギュレーション"
-description: "このトピックでは、オンプレミス配置の SQL Server Reporting Services (SSRS) のコンフィギュレーションに関する情報が提供されます。"
+title: オンプレミス配置の SQL Server Reporting Services のコンフィギュレーション
+description: このトピックでは、オンプレミス配置の SQL Server Reporting Services (SSRS) のコンフィギュレーションに関する情報が提供されます。
 author: sarvanisathish
 manager: AnnBe
 ms.date: 06/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Operations
 ms.custom: 55651
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 166d419f16866f699b96013222ce8da147a5ec21
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "315133"
 ---
 # <a name="configure-sql-server-reporting-services-for-on-premises-deployments"></a>オンプレミス配置の SQL Server Reporting Services のコンフィギュレーション
 
 [!include [banner](../includes/banner.md)]
 
-このトピックの手順を使用し、Microsoft Dynamics 365 for Finance and Operations エディションのオンプレミス配置に SQL Server Reporting Services (SSRS) を構成します。
+このトピックの手順を使用して、Microsoft Dynamics 365 for Finance and Operations のオンプレミス配置に SQL Server Reporting Services (SSRS) を構成します。
 
 1. SQL Reporting Services Configuration Manager アプリケーションを開きます。
 2. **サーバー名**を既定のままにし、現在のコンピューターの名前、および**レポート サーバーのインスタンス**、**MSSQLSERVER** にします。
@@ -87,11 +87,10 @@ ms.lasthandoff: 08/13/2018
 
     [![スケール アウト配置タブ](./media/ssrs-config-manager-12.png)](./media/ssrs-config-manager-12.png)
 
-    **Power BI 統合**タブでは既定の設定を変更しません。
+    **Power BI 統合**タブで既定の設定を変更しないでください。
 
     [![Power BI 統合タブ](./media/ssrs-config-manager-13.png)](./media/ssrs-config-manager-13.png)
 
 13. **終了**をクリックし、**Reporting Services 構成マネージャー**を閉じます。
 
     [![reporting services 構成マネージャーの終了](./media/ssrs-config-manager-14.png)](./media/ssrs-config-manager-14.png)
-

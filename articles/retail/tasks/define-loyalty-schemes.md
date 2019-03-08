@@ -1,13 +1,13 @@
---- 
-title: "ロイヤルティ スキーマの定義"
-description: "この手順は、ロイヤルティ スキームの定義方法を説明します。"
+---
+title: ロイヤルティ スキーマの定義
+description: この手順は、ロイヤルティ スキームの定義方法を説明します。
 author: jashanno
 manager: AnnBe
 ms.date: 11/14/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations, Retail
@@ -16,14 +16,13 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 362d6cf877c484c438641980d109b3bed4464b68
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: f398197566918c571128433c2fba3bf7d7c2fe3d
-ms.contentlocale: ja-jp
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "315156"
 ---
-
 # <a name="define-loyalty-schemes"></a>ロイヤルティ スキーマの定義
 
 [!include [task guide banner](../includes/task-guide-banner.md)]
@@ -70,5 +69,4 @@ ms.lasthandoff: 02/07/2018
 26. [OK] をクリックします。
 27. [保存] をクリックします。
     * ロイヤルティ スキームのチャンネルを変更する場合は、ロイヤルティ スキーム プロセスを実行する必要があります。 この方法で、チャンネルは更新されたロイヤルティ スキームを取得できます。  
-
 

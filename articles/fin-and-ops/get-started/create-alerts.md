@@ -1,13 +1,13 @@
 ---
-title: "警告ルールの作成"
-description: "このトピックでは、警告に関する情報を提供し、警告ルールを作成して到着日や発生する特定の変更などのイベントについて通知する方法について説明します。"
+title: 警告ルールの作成
+description: このトピックでは、警告に関する情報を提供し、警告ルールを作成して到着日や発生する特定の変更などのイベントについて通知する方法について説明します。
 author: tjvass
 manager: AnnBe
 ms.date: 06/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EventCreateRule
 audience: Application user
 ms.reviewer: sericks
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
+ms.openlocfilehash: cbf4917424e72a70a6d513b5daf45f6bf9cd57c7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 78e1e6f7be04e1d4fecae080cbd4a285358590fb
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "329416"
 ---
-
 # <a name="create-alert-rules"></a>警告ルールの作成
 
 [!include [banner](../includes/banner.md)]
@@ -84,4 +83,3 @@ ms.lasthandoff: 08/09/2018
 7. **件名**フィールドの**警告の対象**クイック タブで、電子メール メッセージの既定の件名ヘッダー情報を受け入れるか、新しい件名を入力します。 テキストは、警告が発生したときに受信する電子メール メッセージの件名のヘッダーとして使用されます。
 8. **メッセージ**フィールドにオプションのメッセージを入力します。 テキストは、警告の発生時に受信するメッセージとして使用されます。
 9. **OK** を選択して、設定を保存し、警告ルールを作成します。
-

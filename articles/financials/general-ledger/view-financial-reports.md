@@ -1,13 +1,13 @@
 ---
-title: "財務諸表の表示"
-description: "この記事では、Microsoft Dynamics 365 for Finance and Operations で財務報告書を表示、および検討する方法について説明します。 外観とを含まれるデータを変更するために、財務報告書に適用できるさまざまなオプションに関する情報が含まれています。"
+title: 財務諸表の表示
+description: この記事では、Microsoft Dynamics 365 for Finance and Operations での財務報告書を表示、および検討する方法について説明します。 外観とを含まれるデータを変更するために、財務報告書に適用できるさまざまなオプションに関する情報が含まれています。
 author: kweekley
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 4a939ce2f43645963392363fc6452f8bc55bd963
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: d9c7bcb8cae7b17636ffc0c87bb1147b9d27a6c8
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312948"
 ---
-
 # <a name="view-financial-reports"></a>財務諸表の表示
 
 [!include [banner](../includes/banner.md)]
 
-この記事では、Microsoft Dynamics 365 for Finance and Operations で財務報告書を表示、および検討する方法について説明します。 外観とを含まれるデータを変更するために、財務報告書に適用できるさまざまなオプションに関する情報が含まれています。
+この記事では、Microsoft Dynamics 365 for Finance and Operations での財務報告書を表示、および検討する方法について説明します。 外観とを含まれるデータを変更するために、財務報告書に適用できるさまざまなオプションに関する情報が含まれています。
 
 <a name="financial-reporting-overview"></a>財務諸表の概要
 ----------------------------
@@ -84,11 +83,10 @@ ms.lasthandoff: 05/08/2018
 ## <a name="export-a-financial-report"></a>財務諸表のエクスポート
 財務諸表をエクスポートするには、アクション ウィンドウで、**エクスポート** をクリックします。 レポートは、Microsoft Excel にエクスポートされ、使用しているブラウザーには、エクスポート済みファイルを開くか、保存するかを確認するメッセージが表示されます。 レポートのデザインで定義されているエクスポート設定が、エクスポートされるレポートに適用されます。    
 
-<a name="additional-resources"></a>その他のリソース
+<a name="additional-resources"></a>追加リソース
 --------
 
 [Microsoft Dynamics AX の財務報告書](../../dev-itpro/analytics/financial-reporting-intro.md)
-
 
 
 

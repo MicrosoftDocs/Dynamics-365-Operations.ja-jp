@@ -1,13 +1,13 @@
 ---
-title: "顧客転記プロファイル"
-description: "顧客転記プロファイルは、顧客トランザクションから総勘定元帳への転記を制御します。"
+title: 顧客転記プロファイル
+description: 顧客転記プロファイルは、顧客トランザクションから総勘定元帳への転記を制御します。
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustPosting
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 956dca24c2cfa7e22d718ff84b338bc4ba030394
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: f246780a320f9a5e25ca423a099669a4f7e57bab
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "322355"
 ---
-
 # <a name="customer-posting-profiles"></a>顧客転記プロファイル
 
 [!include [banner](../includes/banner.md)]
@@ -44,7 +43,7 @@ ms.lasthandoff: 04/13/2018
 ## <a name="creating-a-posting-profile"></a>転記プロファイルの作成
 選択した転記プロファイルを使用するトランザクションを転記する際に使用される勘定科目を指定します。 選択した転記プロファイルについて、アカウント コードおよび (可能な場合) アカウント番号またはグループ番号を選択します。 転記プロセスでは、次の優先順位に従って特定のアカウント コード、アカウント番号、グループ番号の組み合わせを検索することにより、各トランザクションの最も適切な転記プロファイルを見つけます。
 
-| [アカウント コード] フィールド値 | [アカウント/グループ番号] フィールド値            | 検索の優先順位 |
+| **アカウント コード** フィールド値 | **アカウント/グループ番号**フィールド値            | 検索の優先順位 |
 |------------------------------|-------------------------------------------------|-----------------|
 | **テーブル**                    | 特定の顧客 ID                       | 1               |
 | **グループ**                    | 顧客に割り当てられた顧客グループ | 2               |
@@ -72,9 +71,9 @@ ms.lasthandoff: 04/13/2018
 <td><strong>アカウント コード</strong></td>
 <td>転記プロファイルを単一の顧客に適用するか、複数の顧客に適用するか、またはすべての顧客に適用するかを指定します。
 <ul>
-<li>[<strong>テーブル</strong>] – 単一の顧客に転記ルールが適用されます。 [アカウント/グループ番号] フィールドで顧客 ID を選択してください。</li>
-<li>[<strong>グループ</strong>] – 顧客グループに転記ルールが適用されます。 [アカウント/グループ番号] フィールドで顧客グループを選択してください。</li>
-<li>[<strong>全て</strong>] – 全ての顧客に転記ルールが適用されます。 [アカウント/グループ番号] フィールドを空欄のままにします。</li>
+<li><strong>テーブル</strong> – 単一の顧客に転記ルールが適用されます。 [アカウント/グループ番号] フィールドで顧客 ID を選択してください。</li>
+<li><strong>グループ</strong> – 顧客グループに転記ルールが適用されます。 [アカウント/グループ番号] フィールドで顧客グループを選択してください。</li>
+<li><strong>全て</strong> – 全ての顧客に転記ルールが適用されます。 [アカウント/グループ番号] フィールドを空欄のままにします。</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -140,5 +139,4 @@ ms.lasthandoff: 04/13/2018
 
 
 詳細については、「[顧客支払の概要](../cash-bank-management/tasks/customer-payment-overview.md)」を参照してください。
-
 

@@ -1,13 +1,13 @@
---- 
-title: "信用保証状についての銀行融資と転記プロファイルの設定"
-description: "このタスクは、信用保証状を処理するために必要な銀行融資と転記プロファイルを作成します。"
+---
+title: 信用保証状についての銀行融資と転記プロファイルの設定
+description: このタスクは、信用保証状を処理するために必要な銀行融資と転記プロファイルを作成します。
 author: kweekley
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankParameters, DefaultDashboard, BankDocumentSetup, BankDocumentPosting
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 0f696f5aa809692a0cc2c4ff559945a301480d7e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 022b5d411b8240390c543ba726fe0d6838752944
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "321665"
 ---
 # <a name="set-up-bank-facilities-and-posting-profiles-for-letters-of-guarantee"></a>信用保証状についての銀行融資と転記プロファイルの設定
 
@@ -77,5 +77,4 @@ ms.lasthandoff: 09/29/2017
 9. [清算勘定] フィールドで、信用保証状トランザクションの清算勘定を選択します。 
 10. [保存] をクリックします。
 11. ページを閉じます。
-
 

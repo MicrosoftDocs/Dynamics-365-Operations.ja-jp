@@ -1,13 +1,13 @@
 ---
-title: "製品コンフィギュレーション モデルの概要"
-description: "この記事では、製品コンフィギュレーション モデルに関連する用語と概念を定義します。 製品コンフィギュレーション モデルを使用すると、単一の製品に多数の製品バリアントをコンフィギュレーションするのに使用できるノーブランド商品の構造を構築することができます。"
+title: 製品コンフィギュレーション モデルの概要
+description: この記事では、製品コンフィギュレーション モデルに関連する用語と概念を定義します。 製品コンフィギュレーション モデルを使用すると、単一の製品に多数の製品バリアントをコンフィギュレーションするのに使用できるノーブランド商品の構造を構築することができます。
 author: cvocph
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PCProductConfigurationModelDetails, PCProductConfigurationModelListPage
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: d908b9e58da06646e07ddc5fc4d937cc1f1849cd
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 0ddc9d43f62df937a6fb18e15c718c37442bb9b4
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "313960"
 ---
-
 # <a name="product-configuration-models-overview"></a>製品コンフィギュレーション モデルの概要
 
 [!include [banner](../includes/banner.md)]
@@ -71,7 +70,7 @@ ms.lasthandoff: 04/13/2018
 <li>固定リストの有無にかかわらない<strong>テキスト</strong></li>
 <li><strong>ブール値</strong></li>
 </ul>
-属性タイプが範囲のある<strong>ブール型</strong>、<strong>整数</strong>、または固定リストのある<strong>テキスト</strong>の場合、値のセットは製品コンフィギュレーション モデルが設定されている場合に使用できます。 [<strong>注記:</strong>] 製品コンフィギュレーション ソルバー では、[<strong>ブール型</strong>]、固定リストのある [<strong>テキスト</strong>]、および範囲のある [<strong>整数</strong>] のみを属性タイプとして認識します。 したがって、式の制約と条件ではこれらの属性タイプのみ使用できます。</td>
+属性タイプが範囲のある<strong>ブール型</strong>、<strong>整数</strong>、または固定リストのある<strong>テキスト</strong>の場合、値のセットは製品コンフィギュレーション モデルが設定されている場合に使用できます。 <strong>注記:</strong> 製品コンフィギュレーション ソルバー では、<strong>ブール型</strong>、固定リストのある <strong>テキスト</strong>、および範囲のある <strong>整数</strong> のみを属性タイプとして認識します。 したがって、式の制約と条件ではこれらの属性タイプのみ使用できます。</td>
 </tr>
 <tr class="even">
 <td>制約</td>
@@ -123,17 +122,17 @@ ms.lasthandoff: 04/13/2018
 </tr>
 <tr class="odd">
 <td>計算</td>
-<td>計算は制約の補足を表します。 [<strong>小数</strong>] および [<strong>整数</strong>] 型の算術演算、または固定リストのある [<strong>テキスト</strong>] および [<strong>ブール</strong>] 型の属性に関係する論理工程を実行する計算を使用できます。 計算には計算式の結果を保持するターゲット属性があります。 式エディタを使用して計算式を構築します。</td>
+<td>計算は制約の補足を表します。 <strong>小数</strong> および <strong>整数</strong> 型の算術演算、または固定リストのある <strong>テキスト</strong> および <strong>ブール</strong> 型の属性に関係する論理工程を実行する計算を使用できます。 計算には計算式の結果を保持するターゲット属性があります。 式エディタを使用して計算式を構築します。</td>
 </tr>
 <tr class="even">
 <td>サブコンポーネント</td>
 <td>サブコンポーネントには、製品コンフィギュレーション モデルのツリー構造が反映されます。 サブコンポーネントは製品コンフィギュレーション モデル構造の作成に使用できます。 サブコンポーネントは既存のコンポーネントを参照します。 したがって、サブコンポーネントによって、複数の製品コンフィギュレーション モデルのコンポーネントの再利用が容易になります。 サブコンポーネントの <strong>BOM 明細行の詳細</strong>ページでは、サブコンポーネントに固有の値を選択できます。 また、製品コンフィギュレーション モデルの設定時に選択する値の属性を選択することもできます。 コンポーネントまたはサブコンポーネントとして製品を含めるには、製品の作成時に<strong>製品の作成</strong>ページの次の情報を指定する必要があります。
 <ul>
-<li>[<strong>製品タイプ</strong>] フィールドで、[<strong>品目</strong>] を選択します。</li>
-<li>[<strong>製品サブタイプ</strong>] フィールドで、[<strong>製品マスター</strong>] を選択します。</li>
-<li>[<strong>コンフィギュレーション テクノロジ</strong>] フィールドで、[<strong>制約ベースのコンフィギュレーション</strong>] を選択します。</li>
+<li><strong>製品タイプ</strong> フィールドで、<strong>品目</strong> を選択します。</li>
+<li><strong>製品サブタイプ</strong> フィールドで、<strong>製品マスター</strong> を選択します。</li>
+<li><strong>コンフィギュレーション テクノロジ</strong> フィールドで、<strong>制約ベースのコンフィギュレーション</strong> を選択します。</li>
 </ul>
-リリースされた製品をコンポーネントまたはサブコンポーネントとして使用できるかどうかは、[<strong>リリース済製品の詳細</strong>] ページの [<strong>一般</strong>] タブで確認できます。 [<strong>コンフィギュレーション テクノロジ</strong>] フィールドで、[<strong>制約ベースのコンフィギュレーション</strong>] を選択した場合、製品はコンポーネントまたはサブコンポーネントとして使用できます。 サブコンポーネントは、コンフィギュレーション セッション中にユーザーに表示されないように、非表示にすることができます。 属性、サブコンポーネント、およびサブコンポーネントに関連付けられたユーザー要件も非表示になります。</td>
+リリースされた製品をコンポーネントまたはサブコンポーネントとして使用できるかどうかは、<strong>リリース済製品の詳細</strong> ページの <strong>一般</strong> タブで確認できます。 <strong>コンフィギュレーション テクノロジ</strong> フィールドで、<strong>制約ベースのコンフィギュレーション</strong> を選択した場合、製品はコンポーネントまたはサブコンポーネントとして使用できます。 サブコンポーネントは、コンフィギュレーション セッション中にユーザーに表示されないように、非表示にすることができます。 属性、サブコンポーネント、およびサブコンポーネントに関連付けられたユーザー要件も非表示になります。</td>
 </tr>
 <tr class="odd">
 <td>ユーザーの要件</td>
@@ -149,7 +148,6 @@ ms.lasthandoff: 04/13/2018
 </tr>
 </tbody>
 </table>
-
 
 
 

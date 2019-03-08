@@ -1,13 +1,13 @@
 ---
-title: "コンテンツを XML のままで追加してレポートを生成する"
-description: "XML 形式で送信ドキュメントを生成する電子申告 (ER) 形式をデザインできます。"
+title: コンテンツを XML のままで追加してレポートを生成する
+description: XML 形式で送信ドキュメントを生成する電子申告 (ER) 形式をデザインできます。
 author: NickSelin
 manager: AnnBe
 ms.date: 05/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
+ms.openlocfilehash: 39503d051e3b4686bbaa0130fe5be7cb980fbcb4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 56a5f53e1d3da8aa57e98e7d34fbc9c4005b6df8
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312189"
 ---
-
 # <a name="generate-reports-by-adding-content-as-raw-xml"></a>コンテンツを XML のままで追加してレポートを生成する
 
 [!include[banner](../includes/banner.md)]
@@ -39,4 +38,3 @@ XML 形式で送信ドキュメントを生成する電子申告 (ER) 形式を�
 > フレームワークは、**未加工の XML** 形式要素を使用して生成されるドキュメントに配置される XML コンテンツが正しいかどうかを制御しないことに注意してください。
 
 この機能の詳細については、**7.5.4.3 IT サービス/ソリューション コンポーネントの取得/開発 (10677)** 業務プロセスの一部である **ER 未加工 XML データを使用して XML レポートを生成する (第 1 部: データ モデルの設計)** および **ER 未加工 XML データを使用して XML レポートを生成する (第 2 部: レポートの設計および実行)** タスク ガイドを再生し、[Microsoft ダウンロード センター](https://go.microsoft.com/fwlink/?linkid=874684) からダウンロードできます。 これらのタスク ガイドでは、生成されるファイルに未加工の XML データを挿入するための、ER 形式のコンフィギュレーションのプロセスについて説明します。
-

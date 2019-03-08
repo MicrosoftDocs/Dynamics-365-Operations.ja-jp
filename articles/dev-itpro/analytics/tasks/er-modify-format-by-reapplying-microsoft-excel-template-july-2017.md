@@ -1,13 +1,13 @@
---- 
-title: "Excel テンプレートの再適用による形式の変更"
-description: "この手順にあるステップを完了するには、まず「ER - OPENXML 形式でレポートを生成するコンフィギュレーションの設計」の手順を完了する必要があります。"
+---
+title: Excel テンプレートの再適用による形式の変更
+description: この手順にあるステップを完了するには、まず「ER - OPENXML 形式でレポートを生成するコンフィギュレーションの設計」の手順を完了する必要があります。
 author: NickSelin
 manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 3d5752caba9327475bb28c7bc6b0ee7e072f44f3
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327116"
 ---
 # <a name="modify-formats-by-reapplying-excel-templates"></a>Excel テンプレートの再適用による形式の変更
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 08/09/2018
 
 この手順にあるステップを完了するには、まず「ER - OPENXML 形式でレポートを生成するコンフィギュレーションの設計」の手順を完了する必要があります。
 
-この手順では、変更された Microsoft Excel テンプレートの更新を再適用して、電子レポート (ER) 形式コンフィギュレーションを変更する方法について説明します。 この手順では、サンプル会社 Litware, Inc. 用に作成した ER 形式コンフィギュレーションへ変更した Excel テンプレートをインポートし、電子ドキュメントを生成します。 この手順は、「システム管理者」または「電子レポート開発者」ロールを持つユーザーを対象としています。 これらのステップは、GBSI データ セットを使用して完了することができます。 開始する前に、ヘルプトピック「Microsoft Excel テンプレートを再適用して電子申告形式を変更」 (modify-electronic-reporting-format-reapply-excel-template/) 内で一覧表示されている SampleVendPaymWsReport2.xlsx ファイルをダウンロードして保存します。
+この手順では、変更された Microsoft Excel テンプレートの更新を再適用して、電子申告 (ER) 形式コンフィギュレーションを変更する方法について説明します。 この手順では、サンプル会社 Litware, Inc. 用に作成した ER 形式コンフィギュレーションへ変更した Excel テンプレートをインポートし、電子ドキュメントを生成します。 この手順は、「システム管理者」または「電子レポート開発者」ロールを持つユーザーを対象としています。 これらのステップは、GBSI データ セットを使用して完了することができます。 開始する前に、ヘルプトピック「Microsoft Excel テンプレートを再適用して電子申告形式を変更」 (modify-electronic-reporting-format-reapply-excel-template/) 内で一覧表示されている SampleVendPaymWsReport2.xlsx ファイルをダウンロードして保存します。
 
 1. [組織管理] > [ワークスペース] > [電子申告] の順に移動します。
     * サンプル会社 Litware, Inc. のコンフィギュレーション プロバイダーが使用可能であり、アクティブとしてマークされていることを確認します。 このコンフィギュレーション プロバイダーが表示されない場合は、「コンフィギュレーション プロバイダーの作成および有効なプロバイダーとしてのマーク付け」という手順のステップを完了する必要があります。  
@@ -83,5 +83,4 @@ ms.lasthandoff: 08/09/2018
 
 ## <a name="use-the-modified-draft-version-of-the-er-format-for-payment-journal-processing"></a>支払仕訳処理に ER 形式の変更されたドラフト バージョンを使用する
     * 支払日という支払い明細行の新しい詳細を含む、作成したワークシートを確認します。  
-
 

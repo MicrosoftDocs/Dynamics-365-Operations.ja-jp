@@ -1,29 +1,28 @@
 ---
-title: "二重通貨"
-description: "このトピックでは、レポート通貨が Microsoft Dynamics 365 for Finance and Operations の 2 番目の会計通貨として使用されている二重通貨に関する情報を提供します。"
+title: 二重通貨
+description: このトピックでは、レポート通貨が Microsoft Dynamics 365 for Finance and Operations の 2 番目の会計通貨として使用されている二重通貨に関する情報を提供します。
 author: kweekley
 manager: AnnBe
 ms.date: 10/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTable, Ledger, AssetTransReportingCurrencyAmountsWizard,BankAccountTransReportingCurrencyAmountsWizard, LedgerTrialBalanceListPage
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: 
+ms.search.scope: ''
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10
-ms.dyn365.ops.version: 8.1
-ms.translationtype: HT
-ms.sourcegitcommit: b589a6ce02cdc02436e256f9e81346fe8b766687
+ms.dyn365.ops.version: 8.0999999999999996
 ms.openlocfilehash: 8de178ec80f7408d657e746b633703f386c8e02d
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "330313"
 ---
-
 # <a name="dual-currency"></a>二重通貨
 
 [!include [banner](../includes/banner.md)]
@@ -184,4 +183,3 @@ Microsoft Dynamics 365 for Finance and Operations バージョン 8.1 (2018 年 
     - 固定資産仕訳帳で減価償却トランザクション タイプを入力すると、レポート通貨金額が新しい列に表示されます。 それらの値は変更可能です。
     - 元帳の会計通貨およびレポート通貨が同じである場合、金額が同期しています。**貸方**金額を変更すると、**レポート通貨での貸方**金額がそれに一致するよう自動で変更されます。
     - 固定資産仕訳帳で別のトランザクション タイプを入力すると、転記の前後どちらでも**レポート通貨での借方**および**レポート通貨での貸方**金額は決して表示されません。 会計通貨およびレポート通貨金額は、総勘定元帳に転記された伝票で引き続き利用できます。
-

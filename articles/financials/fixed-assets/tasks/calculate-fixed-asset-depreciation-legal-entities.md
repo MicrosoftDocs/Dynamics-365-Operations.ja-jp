@@ -1,13 +1,13 @@
---- 
-title: "法人間での固定資産減価償却の計算"
-description: "固定資産減価償却は、単一のステップで複数の法人に対して実行することができます。"
+---
+title: 法人間での固定資産減価償却の計算
+description: 固定資産減価償却は、単一のステップで複数の法人に対して実行することができます。
 author: saraschi2
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetParameters, AssetProposalDepreciation, DefaultDashboard, LedgerJournalTable
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: b2575354af322827972ffa650e9c732170c5a6eb
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "316996"
 ---
 # <a name="calculate-fixed-asset-depreciation-across-legal-entities"></a>法人間での固定資産減価償却の計算
 
@@ -50,5 +50,4 @@ ms.lasthandoff: 10/16/2018
     * バッチ処理オプションが既定で有効になっています。 このオプションを有効にすると、減価償却の仕訳帳の作成と転記がバック グラウンドで実行されます。  
 5. [仕訳帳の作成] をクリックします。
 6. [固定資産] > [仕訳入力] > [固定資産仕訳帳] の順に移動します。
-
 

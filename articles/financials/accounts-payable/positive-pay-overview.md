@@ -1,13 +1,13 @@
 ---
-title: "確認後支払の概要"
-description: "この記事は確認後支払についての情報を提供し、銀行に提出する小切手の電子リストを生成するのに使用されます。"
+title: 確認後支払の概要
+description: この記事は確認後支払についての情報を提供し、銀行に提出する小切手の電子リストを生成するのに使用されます。
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankPositivePaySummary
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
+ms.openlocfilehash: a7af2fc0e2c9915c4267f60e27dbddac320af6a5
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 13a7a842e7b4522b508a34fdf86bb3bf58a0845f
-ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "315179"
 ---
-
 # <a name="positive-pay-overview"></a>確認後支払の概要
 
 [!include [banner](../includes/banner.md)]
@@ -42,12 +41,11 @@ ms.lasthandoff: 03/26/2018
 
 確認後支払情報を生成する銀行口座ごとに、確認後支払形式を割り当てる必要があります。 確認後支払ファイルを生成した後に、一つの法人と一つの銀行口座に対する確認後支払ファイルを生成できます。 また、複数の法人と銀行口座の確認後支払ファイルを同時に生成することもできます。 
 
-確認後支払ファイルに記載されている小切手が支払われた後、銀行から確認番号を受け取ります。 次に、Microsoft Dynamics 365 for Finance and Operations で確認後支払ファイルを確認できます。 
+確認後支払ファイルに記載されている小切手が支払われた後、銀行から確認番号を受け取ります。 その後、Microsoft Dynamics 365 for Finance and Operations で確認後支払ファイルを確認できます。 
 
 確認後支払ファイルを変更する必要がある場合は、それを取り消すことができます。 その後、確認後支払ファイルの小切手ごとに、小切手が確認後支払ファイルに含まれているかどうかを示すフィールドがリセットされます。
 
 詳細については、「[確認後支払ファイルの設定と生成](set-up-generate-positive-pay-files.md)」を参照してください。
-
 
 
 

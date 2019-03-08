@@ -1,13 +1,13 @@
 ---
-title: "パーソナライズされた製品の推奨事項"
-description: "このトピックでは、販売時点管理 (POS) デバイスに表示できる Dynamics 365 for Retail 製品の推奨事項について説明します。"
+title: カスタマイズされた製品推奨事項
+description: このトピックでは、販売時点管理 (POS) デバイスに表示できる Dynamics 365 for Retail 製品の推奨事項について説明します。
 author: ashishmsft
 manager: AnnBe
 ms.date: 02/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailParameters
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: d6706cbb7630aeb230bc9eb1c187397897c9de68
-ms.contentlocale: ja-jp
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326472"
 ---
-
 # <a name="personalized-product-recommendations"></a>パーソナライズされた製品の推奨事項
 
 [!include [banner](includes/banner.md)]
@@ -34,7 +33,7 @@ ms.lasthandoff: 01/04/2019
 > [!NOTE]
 > より良いアルゴリズムとより新しい小売指向の機能を加えたこの機能をデザインするため、製品レコメンデーション サービスの現在のバージョンを削除します。 詳細については、[削除済みまたは推奨されない機能](../dev-itpro/migration-upgrade/deprecated-features.md)を参照してください。
 
-Dynamics 365 for Retail では、POS (営業拠点) デバイスに製品の推奨事項を表示することができます。 推奨事項は、顧客の購買履歴、欲しい物のリストの品目、他の顧客がオンラインや従来型の店舗で購入した品目に基づいた興味を持ちそうな品目のことです。 大規模カタログの小売業者には、製品の発見に役立つ推奨事項があります。 製品の推奨事項は、顧客の関心と購買習慣を対象とした製品を展示することで、アップセルおよびクロスセルを行う小売業者を支援し、顧客維持を強化することができます。 Dynamics 365 for Retail では、認知サービスと Microsoft Azure 機械学習によって、小売りと製品の推奨が強化されます。
+Dynamics 365 for Retail では、POS (営業拠点) デバイスに製品の推奨事項を表示することができます。 推奨事項は、顧客の購買履歴、欲しい物のリストの品目、他の顧客がオンラインや従来型の店舗で購入した品目に基づいた興味を持ちそうな品目のことです。 大規模カタログの小売業者には、製品の発見に役立つ推奨事項があります。 製品の推奨事項は、顧客の関心と購買習慣を対象とした製品を展示することで、アップセルおよびクロスセルを行う小売業者を支援し、顧客維持を強化することができます。 Dynamics 365 for Retail では、製品推奨事項は認識サービスおよび Microsoft Azure 機械学習によって強化されています。
 
 ## <a name="scenarios"></a>シナリオ
 
@@ -63,7 +62,7 @@ Dynamics 365 for Retail では、POS (営業拠点) デバイスに製品の推�
 
     [![customerdetailsrecommendations](./media/customerdetailsrecommendations.png)](./media/customerdetailsrecommendations.png)
 
-## <a name="configure-dynamics-365-for-retail-to-enable-pos-recommendations"></a>Dynamics 365 for Retail を構成して POS 推奨事項を有効にします。
+## <a name="configure-dynamics-365-for-retail-to-enable-pos-recommendations"></a>Dynamics 365 for Retail をコンフィギュレーションして POS 推奨事項を有効化する
 
 製品の推奨事項を設定するには、次の設定を行う必要があります。
 
@@ -83,7 +82,7 @@ Dynamics 365 for Retail では、POS (営業拠点) デバイスに製品の推�
 
 **推奨事項の有効化** をオンにして構成ジョブを実行すると、次の操作が実行されます。
 
-- モデル資格情報と ID は API から取得され、Dynamics 365 for Retail 運用データベース、AOS 用 web.config、および小売サーバーに格納されます。
+- モデル資格情報と ID は API から取得され、 Dynamics 365 for Retail 運用データベース、AOS 用 web.config、および小売サーバーに格納されます。
 - モデルの資格情報と ID は CRT で利用できるようになっており、オンライン モードで Cloud POS と MPOS からの製品推奨事項を守ることができます。
 
 ## <a name="troubleshoot-issues-where-you-have-product-recommendations-already-enabled"></a>[製品推奨事項] が既に有効な場合の問題のトラブルシューティング
@@ -94,4 +93,3 @@ Dynamics 365 for Retail では、POS (営業拠点) デバイスに製品の推�
 ## <a name="additional-resources"></a>その他のリソース
 
 [POS デバイスのトランザクション ページへのレコメンデーション コントロールの追加](add-recommendations-control-pos-screen.md)
-

@@ -1,13 +1,13 @@
 ---
-title: "ワークフロー プロパティのコンフィギュレーション"
-description: "このトピックでは、ワークフローの各種プロパティをコンフィギュレーションする方法について説明します。"
+title: ワークフロー プロパティのコンフィギュレーション
+description: このトピックでは、ワークフローの各種プロパティをコンフィギュレーションする方法について説明します。
 author: sericks007
 manager: AnnBe
 ms.date: 07/17/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 576ce368b2a8672aa39116eb0cc6e3d3f2a06bb3
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "328473"
 ---
-
 # <a name="configure-workflow-properties"></a>ワークフロー プロパティのコンフィギュレーション
 
 [!include [banner](../includes/banner.md)]
@@ -56,7 +55,7 @@ ms.lasthandoff: 12/18/2018
 
 ## <a name="enter-instructions-for-users"></a>ユーザーに対する指示の入力
 
-処理と承認を求めてドキュメントを送信するユーザーに指示を入力できます。 これらのユーザーは、[*作成者*] とも呼ばれます。 たとえば、購買要求ワークフローを作成しており、指示を入力するとします。 これらの指示は、**購買要求**ページで、購買要求を入力するユーザーに対して表示できます。 指示を表示するには、作成者がワークフロー メッセージ バーのアイコンをクリックします。 次の手順に従って、ユーザーに対する指示を入力します。
+処理と承認を求めてドキュメントを送信するユーザーに指示を入力できます。 これらのユーザーは、*作成者* とも呼ばれます。 たとえば、購買要求ワークフローを作成しており、指示を入力するとします。 これらの指示は、**購買要求**ページで、購買要求を入力するユーザーに対して表示できます。 指示を表示するには、作成者がワークフロー メッセージ バーのアイコンをクリックします。 次の手順に従って、ユーザーに対する指示を入力します。
 
 1. 左ウィンドウで**基本設定**をクリックします。
 2. **送信指示**フィールドで、指示を入力します。
@@ -184,4 +183,3 @@ ms.lasthandoff: 12/18/2018
 2. **ワークフローに関するコメントの入力**フィールドにコメントを入力します。
 3. 入力したコメントを確認します。 追加したコメントは変更できません。
 4. **追加**をクリックして、**コメントの履歴**領域にコメントを追加します。
-

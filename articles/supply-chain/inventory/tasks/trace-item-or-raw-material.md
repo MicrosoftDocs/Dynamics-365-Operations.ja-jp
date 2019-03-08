@@ -1,13 +1,13 @@
---- 
-title: "品目または原材料の追跡"
-description: "この手順は、品目の追跡を使用して、品目または原材料が使用された場所または使用されている場所を識別する方法を示します。"
+---
+title: 品目または原材料の追跡
+description: この手順は、品目の追跡を使用して、品目または原材料が使用された場所または使用されている場所を識別する方法を示します。
 author: pjacobse
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventTrackingDimTracing, InventTrackingDimTracingCriteria, InventTrackingItemIdLookup, InventBatchIdLookup, CustTable, SalesLine
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: pjacobse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 897a777b3f4ce05fe995aa98a72feb99d82837ef
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: d7eb282ddf9597385d6660a3fc0ef73f403ab898
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "315846"
 ---
 # <a name="trace-an-item-or-raw-material"></a>品目または原材料の追跡
 
@@ -55,5 +55,4 @@ ms.lasthandoff: 09/29/2017
 8. [アクション] ウィンドウで、[追跡] をクリックします。
 9. [未出荷の販売注文] をクリックします。
 10. ページを閉じます。
-
 

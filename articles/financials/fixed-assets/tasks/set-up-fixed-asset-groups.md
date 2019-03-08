@@ -1,13 +1,13 @@
---- 
-title: "固定資産グループを設定します"
-description: "この手順では、新しい固定資産グループを作成する方法を説明します。"
+---
+title: 固定資産グループを設定します
+description: この手順では、新しい固定資産グループを作成する方法を説明します。
 author: saraschi2
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetGroup, AssetGroupBookSetup
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 48784ef4eb12a4a1cae3387e3a45afdf34f2a0fd
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: c44ce1219c0fc860d621aa32c8eec7c5d640fa03
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "321803"
 ---
 # <a name="set-up-fixed-asset-groups"></a>固定資産グループを設定します
 
@@ -41,5 +41,4 @@ ms.lasthandoff: 09/29/2017
     * 耐用年数を設定した後に減価償却期間のフィールド値が計算されることに注意してください。  
 8. [減価償却方法] フィールドで、オプションを選択します。
 9. ページを閉じます。
-
 

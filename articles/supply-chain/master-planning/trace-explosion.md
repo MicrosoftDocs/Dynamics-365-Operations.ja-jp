@@ -1,13 +1,13 @@
 ---
-title: "展開のトレースを使用する"
-description: "この記事は、注文の展開結果の背後にある原因を参照して追跡する方法について説明します。"
+title: 展開のトレースを使用する
+description: この記事は、注文の展開結果の背後にある原因を参照して追跡する方法について説明します。
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReqTransExplosion
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: d4a6123d7443cce51e95aa6d1fdb1fdc19d001d1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 2642ced283d815ad671512cc5a17e531e9169f91
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "309452"
 ---
-
 # <a name="use-tracing-for-explosion"></a>展開のトレースを使用する
 
 [!include [banner](../includes/banner.md)]
@@ -46,7 +45,6 @@ ms.lasthandoff: 05/08/2018
 --------
 
 [マスター プラン](master-plans.md)
-
 
 
 

@@ -1,13 +1,13 @@
---- 
-title: "価値モデルの設定"
-description: "この手順では、新しい固定資産帳簿を作成する方法およびそれを固定資産グループに関連付ける方法を説明します。"
+---
+title: 価値モデルの設定
+description: この手順では、新しい固定資産帳簿を作成する方法およびそれを固定資産グループに関連付ける方法を説明します。
 author: saraschi2
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetBookTable, AssetGroupBookSetup
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: e067173b27488422fd05ad45f37528f00f04a2bd
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "311798"
 ---
 # <a name="set-up-value-models"></a>価値モデルの設定
 
@@ -53,5 +53,4 @@ ms.lasthandoff: 10/16/2018
 3. [耐用年数] フィールドに数値を入力します。
     * 耐用年数を設定した後に減価償却期間が計算されることに注意してください。  
     * 税務用の減価償却方法を必要に応じて設定できます。  
-
 

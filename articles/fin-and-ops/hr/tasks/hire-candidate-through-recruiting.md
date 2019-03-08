@@ -1,13 +1,13 @@
---- 
-title: "採用による候補者の雇用"
-description: "この手順によって、リクルーターは、特定の採用プロジェクトで雇用申請を提出した申請者を雇用できます。"
+---
+title: 採用による候補者の雇用
+description: この手順によって、リクルーターは、特定の採用プロジェクトで雇用申請を提出した申請者を雇用できます。
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HRMApplication, HcmWorkerNewWorker, HcmPositionLookup, HcmWorker, HcmPosition, HcmPositionDateManager,  DefaultDashboard
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 9057a3ada63ab91f25475a07266f45acd5088af4
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "328289"
 ---
 # <a name="hiring-candidate-through-recruiting"></a>採用による候補者の雇用
 
@@ -45,5 +45,4 @@ ms.lasthandoff: 10/16/2018
 14. [住所] セクションを展開または折りたたみます。
 15. [連絡先情報] セクションを展開または折りたたみます。
 16. [個人情報] セクションを展開または折りたたみます。
-
 

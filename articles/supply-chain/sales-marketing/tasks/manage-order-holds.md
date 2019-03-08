@@ -1,13 +1,13 @@
---- 
-title: "注文保留の管理"
-description: "この手順では、顧客の販売注文を保留に設定する方法、注文保留のチェックアウトの処理の方法、および注文保留の解除方法について説明します。"
+---
+title: 注文保留の管理
+description: この手順では、顧客の販売注文を保留に設定する方法、注文保留のチェックアウトの処理の方法、および注文保留の解除方法について説明します。
 author: omulvad
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: MCRHoldCodeTable, SalesTableListPage, SalesCreateOrder, SalesTable, MCRHoldCodeTrans
 audience: Application User
 ms.reviewer: kfend
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: ad19ff166c15748b7bbb4b82ef71dbf3e1e8ebd2
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 3edb8d2fe0fda6634bc2edb8e3bafc5a60344b7a
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "323965"
 ---
 # <a name="manage-order-holds"></a>注文保留の管理
 
@@ -74,5 +74,4 @@ ms.lasthandoff: 09/29/2017
     * 解除して送信のアクションは、コール センター機能を使用するときだけ適用可能です。  
 8. [保留の解除] をクリックします。
     * 注文から保留が解除され、有効な保留のリストから削除されるようになりました。 特定の状態に基づいてすべての保留中またはされらのサブセットを表示するには、[表示] フィールドの値を変更します。     
-
 

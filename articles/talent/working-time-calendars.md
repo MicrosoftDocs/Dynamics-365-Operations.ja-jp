@@ -1,31 +1,30 @@
 ---
-title: "作業時間カレンダー"
-description: "このトピックでは、カレンダーの設定方法と共に、Dynamics 365 for Talent -- Core HR での作業時間カレンダーについて説明します。"
+title: 作業時間カレンダー
+description: このトピックでは、カレンダーの設定方法と共に、Dynamics 365 for Talent -- Core HR での作業時間カレンダーについて説明します。
 author: jcart1106
 manager: AnnBe
 ms.date: 09/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Talent
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2018-07-01
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 1bf37d65cd8ce6a98fc2d2fb11ae9587cf6958a3
 ms.openlocfilehash: 2465065d7db18a5468d7c979e0d6cb9c7e76f969
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305115"
 ---
-
 # <a name="working-time-calendars"></a>作業時間カレンダー
 
 [!include [banner](includes/banner.md)]
@@ -59,4 +58,3 @@ ms.lasthandoff: 10/16/2018
 10. カレンダーを従業員に割り当てるには、アクション ウィンドウで**従業員に割り当て**を選択します。 このカレンダーを割り当てたい従業員を選択してから、**割り当て**をクリックします。
 
 従業員には割り当てられたカレンダーは必要ありません。 作業時間カレンダーが定義されている場合、休暇日は自動的に申請から除外されます。 時間数または日数による期間の既定値は、カレンダーで定義されている作業時間になります。 従業員に割り当てられたカレンダーがない場合、すべての日数は休暇に対して利用可能で、休暇の期間は申請の既定ではありません。 
-

@@ -1,13 +1,13 @@
 ---
-title: "特別償却"
-description: "この記事は、特別償却機能の概要を示します。"
+title: 特別償却
+description: この記事は、特別償却機能の概要を示します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetBonus
 audience: Application User
 ms.reviewer: shylaw
@@ -18,21 +18,20 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 5e05c0c195ddb948547ae008d050686bbcdc6ed3
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 48d50cbba648beb9831e186cd160853abe79c4e4
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "323321"
 ---
-
 # <a name="bonus-depreciation"></a>特別償却
 
 [!include [banner](../includes/banner.md)]
 
 この記事は、特別償却機能の概要を示します。
 
-特別減価償却に関しては、資産を利用し始め、償却を開始した最初の年に追加の減価償却額または特別減価償却額を適用できます。 特別減価償却は、他の減価償却計算の前に実行される必要があります。 したがって、総勘定元帳の機能への転記が無効となった帳簿との特別償却の使用をお勧めします。 [総勘定元帳に転記されないトランザクションの削除] オプションを使用して、総勘定元帳に転記しない帳簿のトランザクション履歴を削除できます。 それから以前に転記された減価償却トランザクションを消去することにより、特別減価償却トランザクションに対応できます。 
+特別減価償却に関しては、資産を利用し始め、償却を開始した最初の年に追加の減価償却額または特別減価償却額を適用できます。 特別減価償却は、他の減価償却計算の前に実行される必要があります。 したがって、総勘定元帳の機能への転記が無効となった帳簿との特別償却の使用をお勧めします。 **総勘定元帳に転記されないトランザクションの削除**オプションを使用して、総勘定元帳に転記しない帳簿のトランザクション履歴を削除できます。 それから以前に転記された減価償却トランザクションを消去することにより、特別減価償却トランザクションに対応できます。 
 
 提案プロセスを使用して特別償却を計算することも、手動特別償却トランザクションを作成することもできます。 該当する固定資産帳簿に対し、減価償却トランザクションまたは減価償却調整トランザクションが存在する場合には、特別償却トランザクションは作成できません。
 
@@ -63,7 +62,6 @@ ms.lasthandoff: 11/03/2017
 特別償却レコードは無数に作成できます。 固定資産グループ帳簿にこのレコードを割り当てた後、これらは固定資産帳簿に適用されます。 
 
 特別償却はパーセンテージまたは固定金額として入力します。 減価償却提案を転記すると、特別償却トランザクションが、減価償却トランザクションとは別のトランザクションとして、減価償却簿に転記されます。
-
 
 
 

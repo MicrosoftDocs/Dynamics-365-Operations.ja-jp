@@ -1,13 +1,13 @@
---- 
-title: "売上税の元帳転記グループの設定"
-description: "売上税が計算されると、元帳転記グループで指定されている主勘定に転記されます。"
+---
+title: 売上税の元帳転記グループの設定
+description: 売上税が計算されると、元帳転記グループで指定されている主勘定に転記されます。
 author: twheeloc
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TaxAccountGroup
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 15421da6f325dfee22a303e9fe83a0e72895fa08
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "308348"
 ---
 # <a name="set-up-ledger-posting-groups-for-sales-tax"></a>売上税の元帳転記グループの設定
 
@@ -48,5 +48,4 @@ ms.lasthandoff: 10/16/2018
 11. [顧客現金割引] フィールドで、この元帳転記グループと関連付けられた売上税コードについての現金割引を転記する主勘定を選択します。
     * これはオプションです。勘定が入力されていない場合、現金割引コードの主勘定が使用されます。 [売上税] グループの現金割引オプションで逆請求売上税を使用している場合、元帳転記グループごとに異なる勘定を使用すると便利です。  
 12. [保存] をクリックします。
-
 

@@ -1,13 +1,13 @@
---- 
-title: "オンライン チャンネルの作成およびチャンネルの属性の定義"
-description: "この手順では、新しいオンライン チャンネルを作成し、組織階層に追加する手順を説明しています。"
+---
+title: オンライン チャンネルの作成およびチャンネルの属性の定義
+description: この手順では、新しいオンライン チャンネルを作成し、組織階層に追加する手順を説明しています。
 author: jashanno
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailSPOnlineStoreDetailPage, SysLookupMultiSelectGrid, DimensionLookup, OMHierarchyManager, HierarchyDesigner, OMNodeSelection, HierarchyPublishAndCloseForm
 audience: Application User
 ms.reviewer: josaw
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: e066e9901a97bd5b72815a7af472247ef519ecb9
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312373"
 ---
 # <a name="create-online-channel-and-define-channel-attributes"></a>オンライン チャンネルの作成およびチャンネルの属性の定義
 
@@ -60,5 +60,4 @@ ms.lasthandoff: 10/16/2018
 9. [発行] をクリックして、ドロップ ダイアログを開きます。
 10. [有効日] フィールドに日時を入力します。
 11. [発行] をクリックします。
-
 

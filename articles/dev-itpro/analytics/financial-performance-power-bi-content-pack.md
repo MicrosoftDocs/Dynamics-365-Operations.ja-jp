@@ -1,13 +1,13 @@
 ---
-title: "財務パフォーマンス PowerBI.com ソリューション"
-description: "このトピックでは、財務パフォーマンス PowerBI.com ソリューションについて説明します。"
+title: 財務パフォーマンス PowerBI.com ソリューション
+description: このトピックでは、財務パフォーマンス PowerBI.com ソリューションについて説明します。
 author: kweekley
 manager: AnnBe
 ms.date: 05/09/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,20 +17,19 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 78512e39e82e24f94dae93bbac116e6f07d25438
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "315110"
 ---
-
 # <a name="financial-performance-powerbicom-solution"></a>財務パフォーマンス PowerBI.com ソリューション
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> この PowerBI.com ソリューションは [AppSource で利用可能な Power BI コンテンツ パック](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource)で記載されたものとして非推奨になっています。
+> この PowerBI.com ソリューションは [AppSource で利用可能な Power BI コンテンツ パック](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource) で記載されたものとして非推奨になっています。
 
 このトピックでは、**財務パフォーマンス** PowerBI.com ソリューションについて説明します。 含まれているダッシュボードおよびレポートについて説明し、ソリューションを作成するために使用したデータ モデルとエンティティに関する情報を提供します。
 
@@ -90,4 +89,3 @@ ms.lasthandoff: 08/13/2018
 - ChartofAccounts
 
 これらのエンティティは、データ モデルの計算メジャーを作成するために使用されました。 計算メジャーは、主要業績評価指標 (KPI) およびコンテンツで使用されるレポートを計算するために使用されます。 既定では、コンテンツにより、過去 3 年間および将来 1 年間のデータが取得されます。 追加の計算をレポートおよびダッシュボードに含めるには、[Microsoft Excel ワークブック](https://mbs.microsoft.com/customersource/global/AX/downloads/reports/msdaxfinpercontentpowerbi) を変更できます。 このワークブックはコンテンツを作成するために使用された既定のデータ モデルです。
-

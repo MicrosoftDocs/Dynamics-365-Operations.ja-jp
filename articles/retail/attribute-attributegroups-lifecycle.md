@@ -1,32 +1,31 @@
 ---
-title: "属性および属性グループ"
-description: "このトピックでは、ユーザー定義フィールドを通して製品およびその特性を説明する方法を提供する、属性の使用方法について説明します。"
+title: 属性および属性グループ
+description: このトピックでは、ユーザー定義フィールドを通して製品およびその特性を説明する方法を提供する、属性の使用方法について説明します。
 author: ashishmsft
 manager: AnnBe
 ms.date: 04/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 76b78a898a619f1bc7faa4749e5380a0ccfef527
-ms.contentlocale: ja-jp
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326242"
 ---
-
 # <a name="attributes-and-attribute-groups"></a>属性および属性グループ
 
 [!include [banner](includes/banner.md)]
@@ -104,7 +103,7 @@ ms.lasthandoff: 01/04/2019
 
 これらのオプションは、もともとオンライン店舗の検索機能を向上させることを意図していました。 Finance and Operations には、すぐに使えるオンライン店舗が含まれていませんが、電子商取引発行ソフトウェア開発キット (SDK) は含まれています。 顧客は、この SDK を使用して任意の検索インデックスに製品を配置することが可能です。 製品データはインポートされますが、顧客は引き続き検索可能なデータ、クエリ可能なデータなどを区別することができるはずです。 この方法により、最適なインデックスを作成して、*これらの意見で* がインデックスされる属性のみをインデックス化できるようにすることができます。
 
-これらの残りのオプションの目的については、[SharePoint Server 2013 の検索スキーマの概要](https://technet.microsoft.com/library/jj219669.aspx) を参照してください。
+これらの残りのオプションの目的については、[SharePointServer 2013 の検索スキーマの概要](https://technet.microsoft.com/library/jj219669.aspx)を参照してください。
 
 ## <a name="filter-settings-for-attributes"></a>属性のためのフィルター設定
 
@@ -257,4 +256,3 @@ ms.lasthandoff: 01/04/2019
 
     > [!NOTE]
     > 共有製品メディアと共有製品属性が Finance and Operations で作成される場合、それらはすべての小売製品に適用されます。
-

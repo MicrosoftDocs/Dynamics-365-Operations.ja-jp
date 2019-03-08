@@ -1,31 +1,30 @@
 ---
-title: "サービス対象の関係"
-description: "サービス対象とサービス合意またはサービス注文の間に、サービス対象の関係を作成できます。"
+title: サービス対象の関係
+description: サービス対象とサービス合意またはサービス注文の間に、サービス対象の関係を作成できます。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 02/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SMAServiceObjectRelation
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 03047b3eccf3c90d4cf7426ddaec83f10dbea1b0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 221b9dae7e83e7f4a535ac60f2a2011533d7861c
-ms.openlocfilehash: 0e54a0dc9b643077d45fe76e073772e81f99ea44
-ms.contentlocale: ja-jp
-ms.lasthandoff: 02/21/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "314374"
 ---
-
 # <a name="service-object-relations"></a>サービス対象の関係 
 
 [!include [banner](../includes/banner.md)]
@@ -78,5 +77,4 @@ ms.lasthandoff: 02/21/2018
 ## <a name="automatically-created-service-orders"></a>自動的に作成されるサービス注文
 
 サービス合意に対してサービス注文を自動的に作成すると、合意におけるサービス対象の関係が、サービス注文にも作成されます。
-
 

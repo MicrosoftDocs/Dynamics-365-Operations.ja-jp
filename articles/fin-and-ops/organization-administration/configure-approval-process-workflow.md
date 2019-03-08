@@ -1,13 +1,13 @@
 ---
-title: "ワークフローでの承認プロセスのコンフィギュレーション"
-description: "承認プロセスのプロパティをコンフィギュレーションするには、次の手順に従います。"
+title: ワークフローでの承認プロセスのコンフィギュレーション
+description: 承認プロセスのプロパティをコンフィギュレーションするには、次の手順に従います。
 author: sericks007
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 08641eaac31813a8bee3231118f8e2bf802ea3e1
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "325644"
 ---
-
 # <a name="configure-approval-processes-in-a-workflow"></a>ワークフローでの承認プロセスのコンフィギュレーション
 
 [!include [banner](../includes/banner.md)]
@@ -124,7 +123,7 @@ ms.lasthandoff: 12/18/2018
     </tr>
     <tr>
     <td><strong>ユーザー</strong></td>
-    <td>特定の Microsoft Dynamics 365 for Finance and Operations ユーザー</td>
+    <td>特定 Microsoft Dynamics 365 for Finance and Operations ユーザー</td>
     <td>
     <ol>
     <li><strong>ユーザー</strong> を選択したのち、<strong>ユーザー</strong> タブをクリックします。</li>
@@ -184,4 +183,3 @@ ms.lasthandoff: 12/18/2018
 1. ワークフロー エディターで、承認プロセスをダブルクリックします。 ワークフロー エディターに承認プロセスのステップが表示されます。
 2. 承認ステップを追加するには、**ワークフロー要素**領域からキャンバスにステップをドラッグします。
 3. 承認ステップをコンフィギュレーションするには、[承認ステップのコンフィギュレーション](configure-approval-step-workflow.md)を参照してください。
-

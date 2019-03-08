@@ -1,31 +1,30 @@
 ---
-title: "オファーの作成、承認、および署名"
-description: "このトピックでは、Dynamics 365 for Talent を使用して候補者へのオファーを作成、承認、および署名する方法について説明します。"
+title: オファーの作成、承認、および署名
+description: このトピックでは、Dynamics 365 for Talent を使用して候補者へのオファーを作成、承認、および署名する方法について説明します。
 author: josaw
 manager: AnnBe
 ms.date: 12/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-10-19
 ms.dyn365.ops.version: Talent October 2018 update
-ms.translationtype: HT
-ms.sourcegitcommit: be66d9f95551066bb8bc25445c652d4fa59066d4
 ms.openlocfilehash: f189df052ef299a2cca1d92065a7a4d377d25399
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/07/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305203"
 ---
-
 # <a name="creating-approving-and-signing-offers"></a>オファーの作成、承認、および署名
 
 [!include[banner](../includes/banner.md)]
@@ -149,4 +148,3 @@ Attract 管理者により設定されたテンプレートを使用して、オ
 ## <a name="closing-an-offer"></a>オファーの終了 
 
 オファーが承諾され、辞退され、またはさらなるアクションの必要もなく取り消された場合、オファーを終了してこのオファー パッケージがそれ以上変更されないようにできます。
-

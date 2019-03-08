@@ -1,13 +1,13 @@
---- 
-title: "原価オブジェクトの作成"
-description: "この手順では、データ コネクタ経由で Dynamics 365 for Finance and Operations、Enterprise Edition コスト センターの財務分析コードを原価計算にインポートすることによって原価対象を作成する方法を示します。"
+---
+title: 原価オブジェクトの作成
+description: この手順では、データ コネクタ経由で Dynamics 365 for Finance and Operations Enterprise Edition コスト センターの財務分析コードを原価計算にインポートすることによって原価対象を作成する方法を示します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CAMDimension, CAMAXFinancialDimensionMemberProviderConfiguration, CAMDimensionMember
 audience: Application User
 ms.reviewer: shylaw
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 1e12de1d51658092fb19f652cef7c1cc78b255b5
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 5d43274aed2edbb91fd4e399cb8d45e91646b055
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "322677"
 ---
 # <a name="create-cost-objects"></a>原価オブジェクトの作成 
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-この手順では、データ コネクタ経由で Dynamics 365 for Finance and Operations、Enterprise Edition コスト センターの財務分析コードを原価計算にインポートすることによって原価対象を作成する方法を示します。 この手順の作成に使用するデモ データの会社は USMF です。 この手順は、Dynamics 365 for Operations、バージョン 1611 に追加された原価会計機能です。
+この手順では、データ コネクタ経由で Dynamics 365 for Finance and Operations Enterprise Edition コスト センターの財務分析コードを原価計算にインポートすることによって原価対象を作成する方法を示します。 この手順の作成に使用するデモ データの会社は USMF です。 この手順は Dynamics 365 for Operations バージョン 1611 に追加された原価計算の機能についての手順です。
 
 
 ## <a name="create-new-cost-objects"></a>新規原価対象を作成する
@@ -50,5 +50,4 @@ ms.lasthandoff: 09/29/2017
 
 ## <a name="view-the-imported-cost-centers"></a>インポートされたコストセンターを表示します。
 1. [分析コード メンバーの表示] をクリックします。
-
 

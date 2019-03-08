@@ -1,31 +1,30 @@
 ---
-title: "Dynamics 365 for Talent Core HR の新機能および変更された機能 (2018 年 9 月 10 日)"
-description: "このトピックでは、Microsoft Dynamics 365 for Talent Core HR の新機能または変更された機能について説明します。"
+title: Dynamics 365 for Talent Core HR の新機能および変更された機能 (2018 年 9 月 10 日)
+description: このトピックでは、Microsoft Dynamics 365 for Talent Core HR の新機能または変更された機能について説明します。
 author: Darinkramer
 manager: AnnBe
 ms.date: 09/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-09-06
 ms.dyn365.ops.version: Talent September 10, 2018 update
-ms.translationtype: HT
-ms.sourcegitcommit: 7d4a049a44374276655dce696b5bbbe2e6f9fba9
 ms.openlocfilehash: b41ce93c8ae93054d2b0d71340b99e0910d4510f
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305210"
 ---
-
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-september-10-2018"></a>Dynamics 365 for Talent Core HR の新機能および変更された機能 (2018 年 9 月 10 日)
 
 [!include [banner](includes/banner.md)]
@@ -101,4 +100,3 @@ ms.lasthandoff: 10/16/2018
 - 契約社員の雇用時には、**報酬**タブは要求/アクション ページで使用できないようにする必要があります。
 - 退職申請プロセス中には、すべての必須フィールドにデータが入力されるまで続行できません。
 - 人事管理分析上の並べ替え順序と日付表示の問題は、解決されました。
-

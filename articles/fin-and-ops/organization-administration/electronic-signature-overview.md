@@ -1,13 +1,13 @@
 ---
-title: "電子署名"
-description: "この記事では、Microsoft Dynamics 365 for Finance and Operations の電子署名の概要と使用方法を説明します。"
+title: 電子署名
+description: この記事では、電子署名の概要と Microsoft Dynamics 365 for Finance and Operations での使用方法を説明します。
 author: maertenm
 manager: AnnBe
 ms.date: 08/24/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SIGParameters, SIGProcSetup, SIGReasonCode
 audience: Application User
 ms.reviewer: sericks
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: maertenm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 676510ef503d51d914ba762e7ac15e2c4811c6ba
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "325667"
 ---
-
 # <a name="electronic-signatures"></a>電子署名
 
 [!include [banner](../includes/banner.md)]
 
-この記事では、Microsoft Dynamics 365 for Finance and Operations の電子署名の概要と使用方法を説明します。
+この記事では、電子署名の概要と Microsoft Dynamics 365 for Finance and Operations での使用方法を説明します。
 
 ## <a name="what-is-an-electronic-signature"></a>電子署名とは
 
@@ -111,4 +110,3 @@ Finance and Operations でドキュメントに電子署名を行うには、各
 1. **オプション**ページの**アカウント**タブで**指定の承認者**をクリックします。
 2. **承認ユーザー ID** フィールドで、別のユーザーの変更に署名する必要があるユーザーの ID を選択します。
 3. **ユーザー ID に対する署名**フィールドで、変更に署名してもらう必要があるユーザーの ID を選択します。
-

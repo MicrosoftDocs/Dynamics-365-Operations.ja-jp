@@ -1,29 +1,29 @@
 ---
-title: "Dynamics 365 for Talent Core HR の新機能および変更された機能 (2018 年 12 月 6 日)"
-description: "このトピックでは、Microsoft Dynamics 365 for Talent Core HR の新機能または変更された機能について説明します。"
+title: Dynamics 365 for Talent Core HR の新機能および変更された機能 (2018 年 12 月 6 日)
+description: このトピックでは、Microsoft Dynamics 365 for Talent Core HR の新機能または変更された機能について説明します。
 author: Darinkramer
 manager: AnnBe
 ms.date: 12/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-12-06
 ms.dyn365.ops.version: Talent
-ms.translationtype: HT
-ms.sourcegitcommit: 09936c7161a7e303a0ada2f48ef3281b81a67295
 ms.openlocfilehash: 6fae56d2feeec8e5c26fc86bdf89b8ab4c282144
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/10/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305228"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-december-6-2018"></a>Dynamics 365 for Talent Core HR の新機能および変更された機能 (2018 年 12 月 6 日)
 
@@ -62,7 +62,7 @@ Excel へのエクスポート機能は、Talent のグリッドから最大 100
 
 ### <a name="configure-uk-payroll-integration-between-talent-and-dayforce"></a>Talent と Dayforce 間の UK 給与統合のコンフィギュレーション
 
-Microsoft Dynamics 365 for Talent と Ceridian Dayforce の統合は、英国のプレビューで利用可能です。 詳細については、次のトピックを参照してください。[Talent と Dayforce の間での給与統合のコンフィギュレーション](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/configure-payroll-integration)
+Microsoft Dynamics 365 for Talent および Ceridian Dayforce の統合は、英国のプレビューで利用可能です。 詳細については、次のトピックを参照してください。[Talent と Dayforce の間での給与統合のコンフィギュレーション](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/configure-payroll-integration)
 
 ## <a name="coming-soon"></a>間もなく公開
 
@@ -142,5 +142,4 @@ Microsoft Dynamics 365 for Talent と Ceridian Dayforce の統合は、英国の
 ![作業者から作業者タスク](./media/WorkerMapping.png)
 
 ![性別フィールドの変換](./media/WorkerTransform.png)
-
 

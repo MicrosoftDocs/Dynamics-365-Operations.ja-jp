@@ -1,13 +1,13 @@
 ---
-title: "Microsoft Dynamics AX 2012 から Finance and Operations への倉庫管理のアップグレード"
-description: "このトピックでは、製品および倉庫管理の移行オプションの概要を示します。"
+title: Microsoft Dynamics AX 2012 から Finance and Operations への倉庫管理のアップグレード
+description: このトピックでは、製品および倉庫管理の移行オプションの概要を示します。
 author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventLocationWHSProcessEnablement, WHSLocationProfile, InventTableStorageDimensionGroupChange, InventUpdateBlockedItem, WHSParameters, WHSReservationHierarchy, WHSUOMSeqGroupTable
 audience: Application User
 ms.reviewer: josaw
@@ -18,26 +18,25 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 768d0bd16a41a3458b25606b74d606318d176ff0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: e0ff3a22b89ce22096198d2e1dd1ea9ed10239a9
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "324471"
 ---
-
 # <a name="upgrade-warehouse-management-from-microsoft-dynamics-ax-2012-to-finance-and-operations"></a>Microsoft Dynamics AX 2012 から Finance and Operations への倉庫管理のアップグレード
 
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、WMSII モジュールを実行している Microsoft Dynamics AX 2012 R3 から Microsoft Dynamics 365 for Finance and Operations にアップグレードするプロセスの概要を示します。
+このトピックでは、WMSII モジュールを実行している Microsoft DynamicsAX 2012 R3 から Microsoft Dynamics 365 for Finance and Operations にアップグレードするプロセスの概要を示します。
 
-Finance および Operations は、Microsoft Dynamics AX 2012 のレガシ **WMSII** モジュールをサポートしていません。 代わりに、**倉庫管理**モジュールが使用できます。 WMSII モジュールでは、場所とパレット ID の在庫分析コードを資産在庫用に選択することができます。ただし、パレット ID の在庫分析コードは、Finance and Operations の資産在庫で使用することはできません。
+Finance and Operations は、Microsoft Dynamics AX 2012 のレガシ **WMSII** モジュールをサポートしていません。 代わりに、**倉庫管理**モジュールが使用できます。 WMSII モジュールでは、場所とパレット ID の在庫分析コードを資産在庫用に選択することができます。ただし、パレット ID の在庫分析コードは、Finance and Operations の資産在庫で使用することはできません。
 
 アップグレード時に、パレット ID の在庫分析コードを使用する保管分析コード グループに関連付けられているすべての製品が識別され、ブロック済としてマークされますが、アップグレード用にはプロセスされません。
 
-## <a name="upgrading-to-finance-and-operations-when-ax-2012-r3-wmsii-is-used"></a>AX 2012 R3 WMSII を使用している場合、Finance および Operations にアップグレードします。
+## <a name="upgrading-to-finance-and-operations-when-ax-2012-r3-wmsii-is-used"></a>AX 2012 R3 WMSII を使用している場合、Finance and Operations にアップグレードします。
 アップグレード後、**品目の保管分析コード グループの変更**フォームの一連のオプションを使用して、アップグレード中にブロックされた製品のブロック解除、およびそれらの製品のトランザクションの処理ができます。
 
 ### <a name="enabling-items-in-finance-and-operations"></a>Finance および Operations の有効な品目
@@ -81,7 +80,6 @@ Finance および Operations では、品目の追跡は倉庫管理プロセス
 3.  **引当階層** ページで、品目の保管および追跡用分析コード グループに沿って、新しい引当階層を定義します。
 4.  少なくとも品目の在庫単位に使用されている同じ単位が含まれる、1 つまたはそれ以上の単位順序グループを作成します。
 5.  **倉庫管理**&gt;、**設定**&gt;、**倉庫管理プロセスの有効化**&gt;、**品目の保管分析コード グループの変更**の順にクリックします。
-6.  **品目の保管分析コード グループの変更** ページで、品目番号、保管分析コード グループ、および単位順序グループを追加します。 ページ上に直接、Microsoft Office 統合の使用、または[データ管理](../../dev-itpro/data-entities/data-entities.md)にあるデータ エンティティプロセスを使用してこのステップを完了できます。
+6.  **品目の保管分析コード グループの変更** ページで、品目番号、保管分析コード グループ、および単位順序グループを追加します。 ページ上に直接、Microsoft Office 統合の使用、または [データ管理](../../dev-itpro/data-entities/data-entities.md) にあるデータ エンティティ プロセスを使用してこのステップを完了できます。
 7.  変更の検証。 検証プロセスの一部として、データの整合性のさまざまな検証が実行されます。 より大きなアップグレード プロセスの一部として、発生した問題をソースの実装上で調整する必要があるかもしれません。 この場合は、追加のデータ アップグレードが必要になります。
 8.  変更の処理。 すべての在庫分析コードの更新にはしばらく時間がかかる場合があります。 バッチ ジョブタスクを使用して、進捗状況を監視することができます。
-

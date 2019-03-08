@@ -1,13 +1,13 @@
 ---
-title: "買掛金勘定の集中支払"
-description: "複数の法人を含む組織では、すべての支払を処理する単一の法人を使用して支払を作成および管理できます。 したがって、同じ支払を複数の法人に入力する必要はありません。 この記事は、集中支払に対する転記がさまざまなシナリオで処理される方法の例を示します。"
+title: 買掛金勘定の集中支払
+description: 複数の法人を含む組織では、すべての支払を処理する単一の法人を使用して支払を作成および管理できます。 したがって、同じ支払を複数の法人に入力する必要はありません。 この記事は、集中支払に対する転記がさまざまなシナリオで処理される方法の例を示します。
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: e6744aae97499385405e192cd6d6cb8590dd79b7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 54329582abd36a8ca896ce731ce06ca4de58bbb0
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327070"
 ---
-
 # <a name="centralized-payments-for-accounts-payable"></a>買掛金勘定の集中支払
 
 [!include [banner](../includes/banner.md)]
@@ -39,8 +38,8 @@ ms.lasthandoff: 11/03/2017
 次の各例で、さまざまなシナリオにおける転記の処理方法を示します。 これらすべての例について、次の構成が想定されます。
 
 -   法人は Fabrikam、Fabrikam East、および Fabrikam West です。 支払は、Fabrikam で構成されています。
--   [会社間会計] ページの [現金割引の転記] フィールドには**請求書の法人**が設定されます。
--   [会社間会計] ページの [為替差益または差損の転記] フィールドには**請求書の支払**が設定されます。
+-   **会社間会計**ページの**現金割引の転記**フィールドには**請求書の法人**が設定されます。
+-   **会社間会計**ページの**為替差益または差損の転記**フィールドには**請求書の支払**が設定されます。
 -   仕入先の Fourth Coffee は、各法人の仕入先として設定されています。 異なる法人の仕入先は同一のグローバル アドレス帳 ID を共有するため、同じ仕入先として識別されます。
 
 | ディレクトリ ID | 仕入先 | 氏名          | 個法  |
@@ -297,7 +296,6 @@ Fabrikam は、仕入先 3004 の Fourth Coffee に対する 75.00 の支払を�
 | Fabrikam 借り (Fabrikam West)      |              | 75.00         |
 | 買掛金 (Fabrikam West)     | 25.00        |               |
 | Fabrikam East 借り (Fabrikam West) |              | 25.00         |
-
 
 
 

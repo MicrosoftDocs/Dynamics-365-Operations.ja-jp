@@ -1,13 +1,13 @@
 ---
-title: "一般仕訳エンティティを使用して伝票をインポートするためのベスト プラクティス"
-description: "このトピックでは、一般仕訳エンティティを使用して一般仕訳帳にデータをインポートするためのヒントを提供します。"
+title: 一般仕訳エンティティを使用して伝票をインポートするためのベスト プラクティス
+description: このトピックでは、一般仕訳エンティティを使用して一般仕訳帳にデータをインポートするためのヒントを提供します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 29cb4b940875b96cabaff540360674da528f8f39
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "322516"
 ---
-
 # <a name="best-practices-for-importing-vouchers-by-using-the-general-journal-entity"></a>一般仕訳エンティティを使用して伝票をインポートするためのベスト プラクティス
 
 [!include [banner](../includes/banner.md)]
@@ -67,4 +66,3 @@ ms.lasthandoff: 08/13/2018
 - **伝票番号** フィールドが **自動生成** に設定されている場合、インポートは成功しません。 **伝票番号** フィールドの **自動生成** の設定はサポートされていません。
 
 既定では、一般仕訳帳エンティティは、セット ベースのプロセスを使用します。 組織のビジネス要件を評価した後、**セット ベースのプロセス** 設定は **データ管理** ワークスペースの **データ エンティティ** をクリックして変更できます。 セットベースのプロセスを使用して、インポート処理を高速化します。 セットベースのプロセスを使用しない場合は、一般仕訳帳エンティティ インポートのインポートは速度が遅くなります。
-

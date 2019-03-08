@@ -1,13 +1,13 @@
 ---
-title: "アンケート"
-description: "このトピックは、アンケートに関する一般情報、およびより詳しい情報へのリンクを提供します。 アンケートとは、多様な目的の情報を収集するために使用される一連の質問です。 アンケートのデザイン、作成、配布、および回答の完了を行い、結果を分析することができます。"
+title: アンケート
+description: このトピックは、アンケートに関する一般情報、およびより詳しい情報へのリンクを提供します。 アンケートとは、多様な目的の情報を収集するために使用される一連の質問です。 アンケートのデザイン、作成、配布、および回答の完了を行い、結果を分析することができます。
 author: kherr75
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KMCollection, KMKnowledgeCollectorParameters, KmWorkspace
 audience: Application User
 ms.reviewer: rschloma
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
 ms.openlocfilehash: d5c3e02bf5bc17db7232ccbb56e4dfbc062795b4
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305119"
 ---
-
 # <a name="questionnaires"></a>アンケート
 
 [!include [banner](includes/banner.md)]
@@ -58,5 +57,4 @@ Microsoft Dynamics 365 for Finance and Operations で使用できるさまざま
 [アンケートの配布および記入](distribute-questionnaires.md)
 
 [アンケート結果を表示して評価する](evaluate-questionnaire-results.md)
-
 

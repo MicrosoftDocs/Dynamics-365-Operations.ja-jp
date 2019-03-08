@@ -1,13 +1,13 @@
 ---
-title: "原価計算表"
-description: "原価計算表の設定には、2 つの目的があります。 最初の目的は、製品または製造オーダーに関する売却済商品の原価情報の表示形式を定義することです。 書式設定された表示は、原価計算表と呼ばれます。 2 つ目の目的は、間接原価の計算の基準を定義することです。 原価計算表設定は、情報表示用および間接原価計算式用の原価グループ機能の上に構築されます。 原価計算表設定の 2 つの目的はこの項目で説明します。"
+title: 原価計算表
+description: 原価計算表の設定には、2 つの目的があります。 最初の目的は、製品または製造オーダーに関する売却済商品の原価情報の表示形式を定義することです。 書式設定された表示は、原価計算表と呼ばれます。 2 つ目の目的は、間接原価の計算の基準を定義することです。 原価計算表設定は、情報表示用および間接原価計算式用の原価グループ機能の上に構築されます。 原価計算表設定の 2 つの目的はこの項目で説明します。
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CostSheetDesigner
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 1421049adb86916202ad6f7ee748c8525fd55fa8
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 3988bd478cfad791b5d4c73d28a86c9cfb68288f
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312764"
 ---
-
 # <a name="costing-sheets"></a>原価計算表
 
 [!include [banner](../includes/banner.md)]
@@ -46,7 +45,6 @@ ms.lasthandoff: 11/03/2017
 原価計算表の形式と間接原価の計算を定義した後で、別の手順を実行して、情報を検証および保存する必要があります。 原価計算表は、売却済商品の原価情報を一貫して表示するための会社全体の形式を表します。 
 
 原価計算表は、**品目原価の計算**ページの一部として表示されます。 原価計算表は、**品目価格**ページの製品の計算済原価レコードに対して、または **BOM 計算の結果**ページの注文固有計算レコードに対して表示できます。 また、製造オーダーの**価格計算**ページの一部として表示されます。
-
 
 
 

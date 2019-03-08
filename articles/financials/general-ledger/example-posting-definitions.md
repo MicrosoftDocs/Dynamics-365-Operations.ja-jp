@@ -1,13 +1,13 @@
 ---
-title: "転記の定義"
-description: "この記事では、発注書の債務および予算割り当てに対する転記の定義の使用方法を示す例を示します。"
+title: 転記の定義
+description: この記事では、発注書の債務および予算割り当てに対する転記の定義の使用方法を示す例を示します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: JournalizingDefinition, JournalizingDefinitionTrans
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f5fb08a86639e9a9a79dca5fc1200e73e5870432
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 10015952773ce0ae6ab36912df636919b572704d
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310257"
 ---
-
 # <a name="posting-definition-examples"></a>転記の定義の例
 
 [!include [banner](../includes/banner.md)]
@@ -41,7 +40,7 @@ ms.lasthandoff: 04/13/2018
 
 転記の定義と、トランザクションの勘定と分析コード値について**照合基準**ページで、勘定と分析コード値の間に一致があった場合、転記の定義の**生成されたエントリ** ペインに基づいて、元帳エントリが生成されます。 
 > [!NOTE]
-> 転記の定義を特定のトランザクション タイプに関連付けるには、**トランザクションの転記の定義**ページを使用します。 転記の定義をトランザクション タイプに関連付け、**一般会計パラメーター** ページで [転記の定義の使用] を選択した後、選択されたトランザクション タイプのすべてのトランザクションでは、転記の定義を使用する必要があります。
+> 転記の定義を特定のトランザクション タイプに関連付けるには、**トランザクションの転記の定義**ページを使用します。 転記の定義をトランザクション タイプに関連付け、**一般会計パラメーター** ページで**転記の定義の使用**を選択した後、選択されたトランザクション タイプのすべてのトランザクションでは、転記の定義を使用する必要があります。
 
 ## <a name="example-purchase-order-encumbrances"></a>例: 発注書の債務
 **総勘定元帳パラメーター** ページの**債務プロセスの有効化**を選択して債務処理を有効にした場合、転記の定義を使用して、引当対象の勘定の総勘定元帳に債務を記録する必要があります。 ほとんどの場合、すべての経費勘定は、貸借対照表で引当が行われます。 
@@ -56,7 +55,7 @@ ms.lasthandoff: 04/13/2018
 |-------------------------|----------------------|----------|
 | 勘定構造 - P&L | \*                   | 1        |
 
-<em>**[照合勘定番号]</em>* フィールドの空白の値は、定義された勘定構造のすべての照合勘定が一致するルールの一部になります。
+<em>**照合勘定番号</em>* フィールドの空白の値は、定義された勘定構造のすべての照合勘定が一致するルールの一部になります。
 
 ### <a name="posting-definition--generated-entries"></a>転記の定義 – 生成されたエントリ
 
@@ -97,7 +96,7 @@ ms.lasthandoff: 04/13/2018
 |-------------------------|----------------------|----------|
 | 勘定構造 - P&L | \*                   | 1        |
 
-<em>**[照合勘定番号]</em>* フィールドの空白の値は、定義された勘定構造のすべての照合勘定が一致するルールの一部になります。
+<em>**照合勘定番号</em>* フィールドの空白の値は、定義された勘定構造のすべての照合勘定が一致するルールの一部になります。
 
 ### <a name="posting-definition--generated-entries"></a>転記の定義 – 生成されたエントリ
 
@@ -124,7 +123,6 @@ ms.lasthandoff: 04/13/2018
 | 300146-OU\_1-OU\_3566-トレーニング | 250.00 |        |         |
 
 この例では、勘定構造 - P&L の一部であるいずれかの口座が転記の定義の基準に一致します。 したがって、606400-OU\_1-OU\_3566-トレーニングが評価されると、生成された元帳エントリが作成されます。
-
 
 
 

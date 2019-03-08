@@ -1,13 +1,13 @@
---- 
-title: "データベース レベルでの集約計算に対するモデル マッピング コンフィギュレーションの使用"
-description: "この手順は、新しい電子申告 (ER) モデル マッピング コンフィギュレーションをデザインして、効率的な集計計算の組み込み ER 機能を使用する方法に関する情報を提供します。"
+---
+title: データベース レベルでの集約計算に対するモデル マッピング コンフィギュレーションの使用
+description: この手順は、新しい電子申告 (ER) モデル マッピング コンフィギュレーションをデザインして、効率的な集計計算の組み込み ER 機能を使用する方法に関する情報を提供します。
 author: NickSelin
 manager: AnnBe
 ms.date: 12/12/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: a462a3997644a494b5cea89c9530ddba67c32450
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "313638"
 ---
 # <a name="use-model-mapping-configurations-for-aggregate-calculations-at-the-database-level"></a>データベース レベルでの集約計算に対するモデル マッピング コンフィギュレーションの使用
 
@@ -37,7 +37,7 @@ ms.lasthandoff: 08/09/2018
 3. ツリーで、「イントラスタット モデル\イントラスタットのサンプル マッピング」を選択します。
 4. [デザイナー] をクリックします。
 5. [デザイナー] をクリックします。
-6. ツリーで、[Dynamics 365 for Operations\Table records] を選択します。
+6. ツリーで、'Dynamics 365 for Operations\Table records'を選択します。
 7. [ルートの追加] をクリックします。
     * グループ化するレコードを表す新しいデータ ソースを追加  
 8. [名前] フィールドで、「Transactions」と入力します。
@@ -116,5 +116,4 @@ ms.lasthandoff: 08/09/2018
 67. ツリーで、「Commodity record(Intrastat)」を展開します。
 68. [保存] をクリックします。
     * [実行場所] フィールドは、たとえ集約定義が無く、「テーブル レコード」タイプの選択されたデータ ソースが同じ「イントラスタット」テーブルを参照しても、このグループ化はメモリーの実行時に実行されることを示します。 これは、そのデータ ソースがまだ SQL データベース レベルに翻訳できないいくつかの計算済フィールドを含むからです。  
-
 

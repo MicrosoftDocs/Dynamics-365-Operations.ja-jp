@@ -1,13 +1,13 @@
 ---
-title: "期末に一般会計を決算"
-description: "このトピックでは、一般会計の期間締めを実行する場合に通常完了するタスクについて説明します"
+title: 期末に一般会計を決算
+description: このトピックでは、一般会計の期間締めを実行する場合に通常完了するタスクについて説明します
 author: aprilolson
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerPeriodCloseWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 23d4b9b070a48e1964ecd6896afe071b564d1194
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 5643a06cb23eedd7c8676ad48be2ad2e78cdfc9b
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "329301"
 ---
-
 # <a name="close-the-general-ledger-at-period-end"></a>期末に一般会計を決算
 
 [!include [banner](../includes/banner.md)]
@@ -43,7 +42,7 @@ ms.lasthandoff: 11/03/2017
 -   トランザクションを仕訳し、**元帳仕訳帳**レポートを確認します。
 -   連結会社または財務報告を使用して連結を実行します。
 -   財務報告を使用して期末財務諸表を生成します。
--   他の転記が発生しないように、元帳期間を [保留中] に設定します。 期末の活動の実行中に、使いやすさのため、期を特定のユーザー グループに制限できます。 決算済みの期間を再度開くことはできないため、期間を [完全に閉じる] に設定するのは、よい考えではありません。
+-   他の転記が発生しないように、元帳期間を**保留中**に設定します。 期末の活動の実行中に、使いやすさのため、期を特定のユーザー グループに制限できます。 決算済みの期間を再度開くことはできないため、期間を**完全に閉じる**に設定するのは、よい考えではありません。
 
 財務期間終了ワークスペースを使用して、さまざまな期末処理プロセスに必要なタスクを整理して追跡できます。 
 
@@ -52,7 +51,6 @@ ms.lasthandoff: 11/03/2017
 - [財務期間終了ワークスペース](financial-period-close-workspace.md) 
 - [年度末決算](Year-end-close.md)  
 - [財務期間一括終了](tasks/mass-financial-period-close.md)
-
 
 
 

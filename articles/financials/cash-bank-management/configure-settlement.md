@@ -1,13 +1,13 @@
 ---
-title: "決済のコンフィギュレーション"
-description: "トランザクションを決済する方法とタイミングは複雑な題目になります。そのため、業務上の要件を満たすためのパラメータを理解し、適切に定義する必要があります。 このトピックでは、買掛金勘定と売掛金勘定の両方の決済に使用するパラメーターについて説明します。"
+title: 決済のコンフィギュレーション
+description: トランザクションを決済する方法とタイミングは複雑な題目になります。そのため、業務上の要件を満たすためのパラメータを理解し、適切に定義する必要があります。 このトピックでは、買掛金勘定と売掛金勘定の両方の決済に使用するパラメーターについて説明します。
 author: kweekley
 manager: AnnBe
 ms.date: 05/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustOpenTrans, CustParameters, VendOpenTrans, VendParameters
 audience: Application User
 ms.reviewer: shylaw
@@ -18,21 +18,20 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 66e2fdbf7038a2c15fb373d4f96cd6e6c4c87ea0
 ms.openlocfilehash: 1361bce94f6542112cf29e369f2238f211d0647e
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "319273"
 ---
-
 # <a name="configure-settlement"></a>決済のコンフィギュレーション
 
 [!include [banner](../includes/banner.md)]
 
 トランザクションを決済する方法とタイミングは複雑な題目になります。そのため、業務上の要件を満たすためのパラメータを理解し、適切に定義する必要があります。 このトピックでは、買掛金勘定と売掛金勘定の両方の決済に使用するパラメーターについて説明します。 
 
-このパラメーターは、Microsoft Dynamics 365 for Finance and Operations での決算の処理方法に影響を与えます。 決済は、支払票または訂正票に対する請求書を決済するプロセスです。 これらのパラメーターは、**売掛金勘定パラメーター**ページと**買掛金勘定パラメーター**ページの**決済**領域にあります。
+次のパラメーターは、決済が Microsoft Dynamics 365 for Finance and Operations で処理される方法に影響を与えます。 決済は、支払票または訂正票に対する請求書を決済するプロセスです。 これらのパラメーターは、**売掛金勘定パラメーター**ページと**買掛金勘定パラメーター**ページの**決済**領域にあります。
 
 - **自動決済** – トランザクションの転記時に別の未処理トランザクションに対して自動的に決済する場合は、このオプションを**はい**に設定します。 このオプションが**いいえ**に設定されている場合、**トランザクションの決済**ページを使用して、支払の入力時または入力後に、手動でトランザクションを決済できます。
 - **現金割引管理** – [請求書が過剰支払の場合に現金割引を処理する](cash-discount-handling-overpayments.md) の方法を指定します。 過剰支払の場合、現金割引を減額することができ、現金割引を差額として処理することができ、現金割引を仕入先または顧客の分割払としてそのままにしておくことができます。
@@ -68,4 +67,3 @@ ms.lasthandoff: 08/09/2018
 
 -   多くの場合、組織は必要ではない財務分析コードにゼロを入力するために固定分析コードを使用します。 これは、売掛金勘定/買掛金勘定などの貸借対照表勘定の一般的なケースです。 通常ゼロが入力される財務分析コードを追跡しないために勘定構造を使用できます。  貸借対照表勘定用の固定分析コードは削除することができ、固定分析コードを使用する必要をなくすことができます。
 -   組織が売掛金勘定/買掛金勘定の主勘定で固定分析コードを必要とし、支払いの固定分析コードを既定値にする方法がある場合、支払に対する固定分析コードは仕入先トランザクションに保管されます。 これによって、システムは売掛金勘定/買掛金勘定の主勘定を再構築して、固定分析コードの値を含めることができます。 固定分析コードの値は、仕入先または支払仕訳帳の仕訳帳名のいずれかで既定として定義されます。
-

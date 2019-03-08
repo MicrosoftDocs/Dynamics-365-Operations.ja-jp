@@ -1,13 +1,13 @@
---- 
-title: "電子署名の設定"
-description: "電子署名を設定するには、この手順を使用します。"
+---
+title: 電子署名の設定
+description: 電子署名を設定するには、この手順を使用します。
 author: maertenm
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysConfiguration, SIGParameters, SIGReasonCode, SIGProcSetup
 audience: Application User
 ms.reviewer: sericks
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: maertenm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: eb6bf529b1e94d598e219482f182140402f2928a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 11fee0b2358e6a2b84c221f8eb06e32c888e5f44
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "318583"
 ---
 # <a name="set-up-electronic-signatures"></a>電子署名の設定
 
@@ -77,5 +77,4 @@ ms.lasthandoff: 09/29/2017
     * どのような場合に署名が必要かを指定します。     フィールドのデータが変更されるときに署名を要求する場合は、[常に] を選択します。     署名が特定の条件下のみで必要な場合は、[1 回だけ] を選択します。 [1 回だけ] を選択する際、次のいすれかのオプションも選択する必要があります: レコードの挿入時、更新時、または削除時。  
 10. [保存] をクリックします。
 11. ページを閉じます。
-
 

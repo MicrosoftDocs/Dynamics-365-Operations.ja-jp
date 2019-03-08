@@ -1,13 +1,13 @@
---- 
-title: "原価会計元帳のデータ ソースの管理"
-description: "原価会計元帳の一般会計データ ソースを管理するには、この手順を使用します。"
+---
+title: 原価会計元帳のデータ ソースの管理
+description: 原価会計元帳の一般会計データ ソースを管理するには、この手順を使用します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/27/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f53101d73bc69199fafb00de0fa1759d59ea4ce8
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 5735cabd5a1eab23fbe2b92cf1395110cb33a93c
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "319319"
 ---
 # <a name="manage-a-data-source-for-the-cost-accounting-ledger"></a>原価会計元帳のデータ ソースの管理
 
@@ -36,7 +36,7 @@ ms.lasthandoff: 09/29/2017
 6. [新規] をクリックします。
 7. [名前] フィールドに値を入力します。
 8. [データ プロバイダー] フィールドで、値を入力または選択します。
-    * この例では、Dynamics 365 for Finance and Operations - 一般会計エントリを選択します。  
+    * この例の場合、[Dynamics 365 for Finance and Operations - 一般会計エントリ] を選択します。  
 9. [原価要素分析コード] フィールドで、値を入力または選択します。
     * この例の場合、[原価要素] を選択します。  
 10. [保存] をクリックします。
@@ -46,5 +46,4 @@ ms.lasthandoff: 09/29/2017
 13. [新規] をクリックします。
 14. [転記階層] フィールドで、[現行] を選択します。
 15. [OK] をクリックします。
-
 

@@ -1,13 +1,13 @@
---- 
-title: "出荷配送業者の設定"
-description: "この手順では、出荷の配送業者を設定し、サービス、出荷モード、輸送入札、輸送機関の制約、および出荷レートなどの詳細を定義する方法について説明します。"
+---
+title: 出荷配送業者の設定
+description: この手順では、出荷の配送業者を設定し、サービス、出荷モード、輸送入札、輸送機関の制約、および出荷レートなどの詳細を定義する方法について説明します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 11/14/2016
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 6c5ac13d17c97f20ee79e7faf57c570f02158424
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: e27be049bebd63c9266029b8981874417a9f0a8c
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "314489"
 ---
 # <a name="set-up-shipping-carriers"></a>出荷配送業者の設定
 
@@ -94,5 +94,4 @@ ms.lasthandoff: 09/29/2017
 18. [輸送時間エンジン] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。
 19. 一覧で、選択された行のリンクをクリックします。
 20. [保存] をクリックします。
-
 

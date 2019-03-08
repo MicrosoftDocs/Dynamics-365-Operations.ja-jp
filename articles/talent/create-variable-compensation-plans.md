@@ -1,13 +1,13 @@
 ---
-title: "変動報酬プランの作成"
-description: "変動報酬は賞与または株式報奨などの従業員の不規則な支払を構成します。 このトピックは、変動報酬を使用し、従業員を変動報酬プランに登録する前に設定する必要があるコンポーネントを説明します。"
+title: 変動報酬プランの作成
+description: 変動報酬は賞与または株式報奨などの従業員の不規則な支払を構成します。 このトピックは、変動報酬を使用し、従業員を変動報酬プランに登録する前に設定する必要があるコンポーネントを説明します。
 author: kherr75
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 ms.search.form: HCMCompEligibility, HcmJobFunction, HcmWorker, HRMCompPerfPlan
 audience: Application User
 ms.reviewer: rschloma
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
 ms.openlocfilehash: 338e58522f9b9fba3ce22b22488affbab24b1315
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305231"
 ---
-
 # <a name="create-variable-compensation-plans"></a>変動報酬プランの作成
 
 [!include [banner](includes/banner.md)]
@@ -104,7 +103,6 @@ ms.lasthandoff: 08/09/2018
 --------
 
 [報酬プラン](compensation-plans.md)
-
 
 
 

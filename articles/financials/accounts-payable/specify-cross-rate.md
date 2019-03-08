@@ -1,14 +1,14 @@
 ---
-title: "クロス レートの指定"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations のクロス レートに関する情報を提供します。"
+title: クロス レートの指定
+description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations のクロス レートに関する情報を提供します。
 author: abruer
 manager: AnnBe
 ms.date: 05/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: cf531c3a8f3bdb17314d1de436b98249169f82a3
 ms.openlocfilehash: 112f77738b33aae94babe0cf8e9e61ff2ea3d004
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "320239"
 ---
-
 # <a name="specify-the-cross-rate"></a>クロス レートの指定
 
 [!include [banner](../includes/banner.md)]
@@ -45,4 +44,3 @@ ms.lasthandoff: 08/09/2018
 3.  顧客用に、**すべての顧客**リスト ページで、**収集 > 未処理トランザクションの決済**に移動します。 仕入先用に、**すべての仕入先**リスト ページで、**請求書 > 未処理トランザクションの決済**に移動します。 
 4.  基本支払であるトランザクションを選択し、**支払をマーク**をクリックします。 **マーク**列のチェック ボックスがオンになり、**基本支払**列に情報アイコンが表示されます。 
 5.  **クロス レート** フィールドに、決済日現在の請求通貨と支払通貨の間の為替レートを入力します。 
-

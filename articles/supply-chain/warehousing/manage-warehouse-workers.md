@@ -1,13 +1,13 @@
 ---
-title: "倉庫作業者の管理"
-description: "この記事では、倉庫の従業員によって実行される作業の管理と監視に、Dynamics 365 for Finance and Operations を使用する方法について説明します。"
+title: 倉庫作業者の管理
+description: この記事では、倉庫の従業員によって実行される作業の管理と監視に、Dynamics 365 for Finance and Operations を使用する方法について説明します。
 author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmWorker, InventLocation, WHSLaborStandards, WHSWorker, WHSWorkTable, WHSWorkTableListPage
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: b5a35d0a52d6f5bf995ce54f10eab92147b0e76a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 211ced007e7729265621a05c2162a228eb0023c2
-ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310993"
 ---
-
 # <a name="manage-warehouse-workers"></a>倉庫作業者の管理
 
 [!include [banner](../includes/banner.md)]
@@ -54,7 +53,6 @@ ms.lasthandoff: 03/26/2018
 
 -   **ユーザー別の労務** – このレポートは、予想時間に対して、実際の時間に基づいて作業者の生産性を表示します。
 -   **作業トランザクション タイプ別の労務** – 特定の倉庫プロセスの非能率性を調査するのに、このレポートを使用できます。 たとえば、移動オーダーのピッキングが、今週は前の週よりも長い時間がかかっていることに気づきます。 詳細な調査に対してこの情報を使用できます。
-
 
 
 

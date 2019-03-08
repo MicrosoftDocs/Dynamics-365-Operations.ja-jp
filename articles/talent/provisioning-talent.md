@@ -1,13 +1,13 @@
 ---
-title: "Talent のプロビジョニング"
-description: "このトピックでは、Microsoft Dynamics 365 for Talent の新しい環境のプロビジョニングについて説明します。"
+title: Talent のプロビジョニング
+description: このトピックでは、Microsoft Dynamics 365 for Talent の新しい環境のプロビジョニングについて説明します。
 author: rschloma
 manager: AnnBe
 ms.date: 09/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
 ms.openlocfilehash: 6fb41a8c1ff4ce95bab5b169256955f244e66071
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/01/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305206"
 ---
 # <a name="provision-talent"></a>Talent のプロビジョニング
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Talent の新しい実稼働環境のプロビジョニングについて説明します。 このトピックでは、Talent をクラウド ソリューション プロバイダー、またはエンタープライズ アーキテクチャ (EA) 契約を通して購入したことを前提にしています。 Talent サービス プランがすでに含まれている Microsoft Dynamics 365 ライセンスがあり、このトピックの手順を完了できない場合は、サポートに問い合わせてください。
+このトピックでは、Microsoft Dynamics 365 for Talent の新しい実稼動環境のプロビジョニングについて説明します。 このトピックでは、Talent をクラウド ソリューション プロバイダー、またはエンタープライズ アーキテクチャ (EA) 契約を通して購入したことを前提にしています。 Talent サービス プランがすでに含まれている Microsoft Dynamics 365 ライセンスがあり、このトピックの手順を完了できない場合は、サポートに問い合わせてください。
 
 始めに、グローバル管理者は [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com) (LCS) にサインインし、新しい Talent プロジェクトを作成します。 ライセンスの問題で Talent プロビジョニングが妨げられない限り、サポートまたは Dynamics サービス エンジニアリング チーム (DSE) の担当者に問い合わせる必要はありません
 
@@ -38,7 +38,7 @@ Talent 環境を管理するために LCS を使用するには、最初に LCS 
 1. Talent をサブスクライブするために使用したアカウントを使用して [LCS](https://lcs.dynamics.com/Logon/Index) にサインインします。
 2. プラス記号 (**+**) を選択してプロジェクトを作成します。
 3. 製品名、製品バージョンとして **Microsoft Dynamics 365 for Talent** を選択します。
-4. **Dynamics 365 for Talent** の方法を選択します。
+4. **Dynamics 365 for Talent** 方法を選択します。
 5. **作成** を選択します。
 
 Talent を使い始める方法については、新しいプロジェクトで作成した **Talent** の方法を参照してくだい。 プロジェクトの作成が終了したら、Talent 環境を設定するために次の手順を完了してください。
@@ -79,7 +79,7 @@ Talent を配置する PowerApps 環境を決定する際には、次のガイ�
  
    **既定の PowerApps 環境** 各テナントは、既定の PowerApps 環境で自動的にプロビジョニングされますが、すべてのテナント ユーザーは PowerApps 環境にアクセスすることができ、PowerApps または Flow 統合を使用してテストや調査を行う際に意図せずに生産データが壊れる可能性があるため、Talent でそれらを使用することはお勧めしません。
    
-   <strong>テスト ドライブ環境</strong> 「TestDrive – alias@domain」のような名前の環境は、60 日間の有効期限で作成され、その期間が経過すると有効期限切れになり、環境が自動的に削除されます。
+   <strong>テスト ドライブ環境</strong>「TestDrive – alias@domain」のような名前の環境は、60 日間の有効期限で作成され、その期間が経過すると有効期限切れになり、環境が自動的に削除されます。
    
    **サポートされていない地域** 現在の Talent は、次の地域でのみサポートされます: 米国、ヨーロッパ、またはオーストラリア。
   
@@ -87,5 +87,4 @@ Talent を配置する PowerApps 環境を決定する際には、次のガイ�
  
 ## <a name="grant-access-to-the-environment"></a>環境へのアクセスを付与
 既定では、環境を作成したグローバル管理者がそこにアクセスできます。 ただし、追加のアプリケーション ユーザーは、明示的にアクセスを許可する必要があります。 アクセスを許可するには、Core HR 環境で [ユーザーの追加](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) および [適切なロールを割り当て](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles)ます。 Talent を展開するグローバル管理者は、初期化を完了して、他のテナント ユーザーのアクセスを有効にするため、Attract および Onboard アプリケーションの両方も起動する必要があります。  これが発生するまで、他のユーザーは Attract および Onboard アプリケーションにアクセスすることはできませんし、アクセス違反エラーが発生します。
-
 

@@ -1,14 +1,14 @@
 ---
-title: "Talent のプレビュー機能の利用"
-description: "このトピックでは、管理者がプレビュー機能を有効にできる方法について説明し、プレビューで現在有効な機能を一覧表示します。"
+title: Talent のプレビュー機能の利用
+description: このトピックでは、管理者がプレビュー機能を有効にできる方法について説明し、プレビューで現在有効な機能を一覧表示します。
 author: rschloma
 manager: AnnBe
 ms.date: 04/17/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Talent, Core
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
-ms.translationtype: HT
-ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
 ms.openlocfilehash: cd738cafc97477182e574ee0f363fdcf1df7da7a
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/22/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305141"
 ---
-
 # <a name="access-preview-features-in-talent"></a>Talent のプレビュー機能の利用
 
 [!include[banner](../includes/banner.md)]
@@ -43,7 +42,7 @@ Microsoft Dynamics 365 for Talent 管理者センターでプレビュー機能�
 
 ### <a name="enable-or-disable-preview-features-for-your-organization"></a>組織のプレビュー機能を有効化または無効化します
 
-#### <a name="attract"></a>Attract
+#### <a name="attract"></a>人材の獲得
 
 1. Microsoft Dynamics 365 for Talent: Attract にサインインします。
 2. 右上隅の**設定**メニュー (ギヤ記号) で、**管理者設定**を選択します。
@@ -92,4 +91,3 @@ Microsoft Dynamics 365 for Talent 管理者センターでプレビュー機能�
 
 > [!TIP]
 > リリースに際して新しいプレビュー機能に関して最新の状態を保つため、このトピックをブックマークし、頻繁に確認してください。
-

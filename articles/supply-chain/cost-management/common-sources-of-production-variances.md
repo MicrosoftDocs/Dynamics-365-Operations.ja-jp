@@ -1,13 +1,13 @@
 ---
-title: "製造差異の一般的な発生源"
-description: "この記事は、製造差異のタイプごとの一般的な発生源について説明します。"
+title: 製造差異の一般的な発生源
+description: この記事は、製造差異のタイプごとの一般的な発生源について説明します。
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventCostTrans
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 50f8cd7904e1d32175edd321fbd6533e985fb324
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f8eea27edaa97150ceb2c36996177395cba8bdb9
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "308693"
 ---
-
 # <a name="common-sources-of-production-variances"></a>製造差異の一般的な発生源
 
 [!include [banner](../includes/banner.md)]
@@ -60,7 +59,6 @@ ms.lasthandoff: 11/03/2017
 -   工程を生産工順に手動追加し、その工程を消費済としてレポート。
 -   製造オーダーの作成時に別の BOM バージョンを選択。その BOM バージョンは、標準原価計算で使用されるものと異なっている。
 -   製造オーダーの作成時に別の工順バージョンを選択。その工順バージョンは、標準原価計算で使用されるものと異なっている。
-
 
 
 

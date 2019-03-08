@@ -1,13 +1,13 @@
 ---
-title: "業務プロセスの形式化"
-description: "このトピックでは、業務プロセス機能を使用して、組織内で完了する必要のあるプロセス用の業務プロセス テンプレートを作成する方法を説明します。"
+title: 業務プロセスの形式化
+description: このトピックでは、業務プロセス機能を使用して、組織内で完了する必要のあるプロセス用の業務プロセス テンプレートを作成する方法を説明します。
 author: ShielaSogge
 manager: AnnBe
 ms.date: 01/09/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 ms.search.form: PersonnelBusinessProcessGenericWorkspace, BusinessProcessGenericTemplateListpage, BusinessProcessGenericMyTemplates, BusinessProcessGroupAssignment
 audience: Application User
 ms.reviewer: rschloma
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: ShielaS
 ms.search.validFrom: 2018-01-09
 ms.dyn365.ops.version: AX 7.1.0, Talent October 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: ee4035f3156a91faecdecba45289dbb1ca6e947a
 ms.openlocfilehash: fd538677d897c1e7d3103cd714c688373aab8d29
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305217"
 ---
 # <a name="formalize-business-processes"></a>業務プロセスの形式化
 
@@ -58,7 +58,7 @@ ms.lasthandoff: 08/09/2018
 業務プロセス テンプレートにおいて、**プロセス開始**を選択することによって、業務プロセスが開始されます。 プロセスが開始されると、選択された作業者、またはテンプレートに含まれるタスクで定義された職位にタスクが作成されます。 「タスク」内で説明されているように、期日は目標期日からオフセットの日数を加算または減算することにより、各タスクにも割り当てられます。 有効な業務プロセスは、**業務プロセス** ワークスペースで確認できます。
 
 ## <a name="employee-self-service"></a>従業員セルフサービス
-従業員にタスクが割り当てられた後、その従業員は**従業員セルフ サービス** ページ上で、そのタスクおよびその他の割り当てられたタスクを確認できます。 割り当てられた各業務プロセス タスクについて、従業員はその名前、タスクの説明、完了するための指示、および連絡担当者を参照できます。 **従業員セルフ サービス** ページから、従業員は Microsoft Dynamics 365 内の関連付けられたページまたは関連付けられた Web ページを開くこともでき、タスクを進行中、キャンセル済、または完了としてマークすることもできます。
+従業員にタスクが割り当てられた後、その従業員は**従業員セルフ サービス** ページ上で、そのタスクおよびその他の割り当てられたタスクを確認できます。 割り当てられた各業務プロセス タスクについて、従業員はその名前、タスクの説明、完了するための指示、および連絡担当者を参照できます。 **従業員セルフ サービス**ページから、従業員は Microsoft Dynamics 365 内の関連付けられたページまたは関連付けられた Web ページを開くこともでき、タスクを進行中、キャンセル済、または完了としてマークすることもできます。
 
 ## <a name="business-process-workspace"></a>業務プロセス ワークスぺース
 人事担当者は、**業務プロセス** ワークスペースで有効な業務プロセスを表示できます。 このワークスペースには、すべての有効なプロセスと、それぞれに関連付けられているタスクが一覧表示されます。 包括的なタスクの一覧を、期日でフィルター処理できます ワークスペースには、期限超過のタスク、および人事担当者向けに特別に割り当てられたタスクも一覧表示されています。 人事担当者はすべてのタスクのステータスを更新することもでき、必要に応じてタスクを再割り当てして、全体的な業務プロセスを続行させることができます。
@@ -74,5 +74,4 @@ ms.lasthandoff: 08/09/2018
 - **プロセスの開始**を選択して、選択した業務プロセスを開始し、タスクを割り当て、期日を計算します。
 
 有効なプロセスおよび関連するタスクを表示するには、**業務プロセス** ワークスペースを開きます。
-
 

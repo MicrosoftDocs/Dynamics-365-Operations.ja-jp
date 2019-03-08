@@ -1,13 +1,13 @@
 ---
-title: "現金割引"
-description: "現金割引は、買掛金勘定および売掛金勘定に設定され、共有されます。  現金割引の使用可能なオプションは、顧客請求書または仕入先請求書で定義でき、現金割引日以内に請求書が支払われた場合に適用されます。"
+title: 現金割引
+description: 現金割引は、買掛金勘定および売掛金勘定に設定され、共有されます。  現金割引の使用可能なオプションは、顧客請求書または仕入先請求書で定義でき、現金割引日以内に請求書が支払われた場合に適用されます。
 author: kweekley
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CashDisc
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: dd15a021244e55ea988a95184a758a321ebeafb3
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 5ccf41d1184280d3c4a000db13847733fd2cf4d2
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "320032"
 ---
-
 # <a name="cash-discounts"></a>現金割引
 
 [!include [banner](../includes/banner.md)]
@@ -66,5 +65,4 @@ ms.lasthandoff: 05/08/2018
 
 > [!NOTE]
 > [一部支払の現金割引を計算] オプションが売掛金勘定パラメーターまたは買掛金管理パラメーター ページで選択されている場合、それぞれの一部支払の日に有効となる為替レートが使用されます。 
-
 

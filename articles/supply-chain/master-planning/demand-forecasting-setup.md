@@ -1,13 +1,13 @@
 ---
-title: "需要予測の設定"
-description: "このトピックでは、需要予測の準備として実行する必要のある設定タスクについて説明します。"
+title: 需要予測の設定
+description: このトピックでは、需要予測の準備として実行する必要のある設定タスクについて説明します。
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReqDemPlanDefaultAlgorithmParameters, ReqDemPlanForecastParameters
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 59fb8938720ce1634735dd728eee3874660a4289
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: be962bffd9dfe756b444f6946990058971896a27
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "330451"
 ---
-
 # <a name="demand-forecasting-setup"></a>需要予測の設定
 
 [!include [banner](../includes/banner.md)]
@@ -43,7 +42,7 @@ ms.lasthandoff: 05/08/2018
 品目配賦キーに最小在庫管理単位 (SKU) を追加するには、**マスター プラン** &gt; **設定** &gt; **需要予測** &gt; **品目配賦キー**に移動します。 **品目の割り当て**ページを使用して、品目を配賦キーに割り当てます。
 
 ## <a name="intercompany-planning-groups"></a>会社間計画グループ
-需要予測は会社間予測を生成します。 Microsoft Dynamics 365 for Finance and Operations では、まとめて計画された会社は 1 つの会社間計画グループにグループ化されます。 需要予測と見なされる品目配賦キーを会社ごとに指定するには、**Mマスター プラン** &gt; **設定** &gt; **会社間計画グループ**の順に移動して、品目配賦キーを会社間計画グループのメンバーに関連付けます。 
+需要予測は会社間予測を生成します。 Microsoft Dynamics 365 for Finance and Operations では、まとめて計画された会社は一つの会社間計画グループにグループ化されます。 需要予測と見なされる品目配賦キーを会社ごとに指定するには、**Mマスター プラン** &gt; **設定** &gt; **会社間計画グループ**の順に移動して、品目配賦キーを会社間計画グループのメンバーに関連付けます。 
 
 既定では、品目配賦キーが会社間計画グループのメンバーに割り当てられない場合、需要予測は、すべての Finance and Operations 会社からのすべての品目配賦キーに割り当てられたすべての品目について計算されます。 会社および品目配賦キーの追加のフィルタ処理オプションは、**統計ベースライン予測の生成**ページで使用できます。 
 
@@ -64,7 +63,7 @@ Finance and Operations で予測されるベースラインを作成するため
 
 需要予測の観点からみてすべての品目は同じ方法で動作しません。 同様の品目は、一つの品目配賦キーおよびトランザクション タイプなどのパラメーターにグループ化でき、予測方法の設定は品目配賦キーごとに設定できます。 **需要予測パラメーター**ページの左ウィンドウにある**品目配賦キー**をクリックします。 
 
-予測を生成する場合、Finance and Operations では、Machine Learning Web サービスを使用します。 サービスに接続する場合、Microsoft Azure Machine Learning Studio にサインインしたら、Finance and Operations に次の情報を提供する必要があります:
+予測を生成する場合、Finance and Operations では、Machine Learning Web サービスを使用します。 サービスに接続するには、Microsoft Azure Machine Learning Studio にサインインする場合は、Finance and Operations に次の情報を提供する必要があります:
 
 -   Web サービス アプリケーション プログラミング インターフェイス (API) キー
 -   Web サービス エンドポイント URL
@@ -86,7 +85,6 @@ Finance and Operations の需要予測サービスでコンフィギュレーシ
 [統計ベースライン予測の生成](generate-statistical-baseline-forecast.md)
 
 [ベースライン予測の手動調整の実施](manual-adjustments-baseline-forecast.md)
-
 
 
 

@@ -1,13 +1,13 @@
---- 
-title: "顧客支払の概要"
-description: "このタスク ガイドでは、顧客支払の入力に使用するさまざまな方法を説明します。"
+---
+title: 顧客支払の概要
+description: このタスク ガイドでは、顧客支払の入力に使用するさまざまな方法を説明します。
 author: kweekley
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTable, CustPaymEntry, CustTableLookup, LedgerJournalTransCustPaym, CustOpenTrans, BankAccountTableLookUp
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 6e82be0d68165f62bbdc72a70b0675c7418b14ae
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: e6e10d0d0a05b0594ba5cf6a77f474b461bd9dca
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "317410"
 ---
 # <a name="customer-payment-overview"></a>顧客支払の概要
 
@@ -62,5 +62,4 @@ ms.lasthandoff: 09/29/2017
 21. [支払の参照] フィールドに、支払の参照を入力します。 します。
     * 支払参照が必要となるのは、預金伝票の支払を含むようにマークを付けた場合に限られます。  
 22. 顧客支払を転記します。 
-
 

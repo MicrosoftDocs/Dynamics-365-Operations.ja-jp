@@ -1,13 +1,13 @@
---- 
-title: "廃棄コードの設定"
-description: "この手順では、返品注文の受信プロセスでモバイル デバイスで使用できる廃棄コードの設定を中心に説明します。"
+---
+title: 廃棄コードの設定
+description: この手順では、返品注文の受信プロセスでモバイル デバイスで使用できる廃棄コードの設定を中心に説明します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 11/11/2016
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 85402e05d55367da5fe89b242ad8eafc727b441e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: c004543188656dfd53d7539717cd6e93d0b9f47a
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "324126"
 ---
 # <a name="set-up-dispositions-codes"></a>廃棄コードの設定
 
@@ -39,5 +39,4 @@ ms.lasthandoff: 09/29/2017
     * オプション: 返品注文に関連付けられる作業テンプレート コードを選択します。 値が入力されていない場合は、作業テンプレートは、システムでコンフィギュレーションされた標準のルールを使用して解決されます。 作業テンプレートを選択すると、この廃棄コードを使用できるプロセスが制限されます。 たとえば、廃棄コードが、ワーク オーダー タイプが発注書である作業テンプレートを含む場合、顧客からの返品品目の登録に使用することはできません。  
 6. [返品廃棄コード] フィールドに値を入力します。
     * 返品廃棄コードにより、登録された品目の返品注文プロセスの残りが決まります。 この例では、顧客は貸方票を受け取る必要があります。 アクションの貸方を含む返品廃棄コードを追加します。  
-
 

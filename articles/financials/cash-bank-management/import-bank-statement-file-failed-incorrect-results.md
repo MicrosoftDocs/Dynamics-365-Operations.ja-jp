@@ -1,13 +1,13 @@
 ---
-title: "口座取引明細書ファイルのインポートのトラブルシューティング"
-description: "銀行からの口座取引明細書ファイルが、Microsoft Dynamics 365 for Finance and Operations がサポートするレイアウトと一致することが重要です。 口座取引明細書の基準が厳しいために、ほとんどの統合が正しく動作します。 ただし、明細書ファイルがインポートできない場合または不正確な結果が含まれている場合があります。 通常、これらの問題は口座取引明細書ファイルの小さな差異によって引き起こされます。 この記事は、これらの差異を修正し問題を解決する方法を説明します。"
+title: 口座取引明細書ファイルのインポートのトラブルシューティング
+description: 銀行からの口座取引明細書ファイルが、Microsoft Dynamics 365 for Finance and Operations がサポートするレイアウトと一致することが重要です。 口座取引明細書の基準が厳しいために、ほとんどの統合が正しく動作します。 ただし、明細書ファイルがインポートできない場合または不正確な結果が含まれている場合があります。 通常、これらの問題は口座取引明細書ファイルの小さな差異によって引き起こされます。 この記事は、これらの差異を修正し問題を解決する方法を説明します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankStatementFormat
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a4006bf35673e3bb61bcf11619ecc68d295f29eb
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: c408f30c783d58766ab93b13c589079c3ef375de
-ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "324448"
 ---
-
 # <a name="bank-statement-file-import-troubleshooting"></a>口座取引明細書ファイルのインポートのトラブルシューティング
 
 [!include [banner](../includes/banner.md)]
@@ -65,14 +64,14 @@ BAI2 と MT940 ファイルはテキスト ベースのファイルで、XSLT (E
 
 詳細については、「<https://msdn.microsoft.com/en-us/library/ms255605.aspx>」を参照してください。
 
-1.  Microsoft Visual Studio を開始します。
+1.  Microsoft Visual Studio を起動します。
 2.  コンソール アプリケーションを作成します。
 3.  適切な XSLT を開きます。
 4.  XLST とプロパティ ページをクリックします。
 5.  口座取引明細書ファイルの場所の入力を設定します。
 6.  出力の場所とファイル名を定義します。
 7.  必要な区切り点を設定します。
-8.  メニューで、[**XML**] &gt; [**XSLT デバッグの開始**] をクリックします。
+8.  メニューで、**XML** &gt; **XSLT デバッグの開始** をクリックします。
 
 ### <a name="format-the-xslt-output"></a>XSLT 出力の書式設定
 
@@ -99,7 +98,6 @@ BAI2 と MT940 ファイルはテキスト ベースのファイルで、XSLT (E
 | DynamicsAXMT940Layout                                   | MT940StatementExample                |
 | DynamicsAXISO20022Layout                                | ISO20022StatementExample             |
 | DynamicsAXBAI2Layout                                    | BAI2StatementExample                 |
-
 
 
 

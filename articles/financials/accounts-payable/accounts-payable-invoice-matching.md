@@ -1,13 +1,13 @@
 ---
-title: "買掛金請求書照合"
-description: "買掛金勘定の請求書照合は、仕入先請求書、発注書、および製品受領情報を照合するプロセスです。"
+title: 買掛金請求書照合
+description: 買掛金勘定の請求書照合は、仕入先請求書、発注書、および製品受領情報を照合するプロセスです。
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendInvoicePostingHistory
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 11cc2d4ddbd30ff4d010f6b34119a7ad96d5aecb
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: dc5e072f23cbb0dcc2d3d1d390070bb11a2d2f06
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310280"
 ---
-
 # <a name="accounts-payable-invoice-matching"></a>買掛金請求書照合
 
 [!include [banner](../includes/banner.md)]
@@ -191,7 +190,6 @@ ms.lasthandoff: 11/03/2017
 -   請求書の正味単価と発注書の正味単価の間の価格照合不一致を表示して承認する。 法人、仕入先、品目に品目を価格の許容率を設定できます。 仕入先請求書の明細行価格が価格許容範囲外にある場合は、転記の承認が得られるまで、あるいは仕入先から訂正を受け取るまで、請求書を保存できます。
 
 詳細については、[3状況照合ポリシー](three-way-matching-policies.md) および [買掛金請求書照合の検証の設定](tasks/set-up-accounts-payable-invoice-matching-validation.md)を参照してください。 
-
 
 
 

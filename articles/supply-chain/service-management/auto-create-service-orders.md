@@ -1,31 +1,30 @@
 ---
-title: "サービス注文を自動で作成します"
-description: "サービス契約が有効期間にあるサービス契約に基づいてサービス注文を生成できます。"
+title: サービス注文を自動で作成します
+description: サービス契約が有効期間にあるサービス契約に基づいてサービス注文を生成できます。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 05/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 0189a9f99ffbb6ed2387211ba9e3b9f3bcdb3b52
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 2d942d4448e0f792945603d3f5960fb82095be30
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "331187"
 ---
-
 # <a name="automatically-create-service-orders"></a>サービス注文を自動で作成します 
 
 [!include [banner](../includes/banner.md)]
@@ -58,6 +57,5 @@ ms.lasthandoff: 05/08/2018
 サービス合意の期間は 2012 年 1 月 1 日～ 2012 年 12 月 31 日です。 このサービス合意に 2 つのサービス合意項目が関連付けられています。 最初のサービス合意項目は、開始日が 2012 年 1 月 2 日で、終了日が 2012 年 3 月 1 日です。 2 つ目のサービス合意項目は、開始日が 2012 年 4 月 1 日で、終了日が 2012 年 12 月 31 日です。 **サービス注文の作成**フオームで指定する期間は、2012 年 10 月 1 日～ 2012年 12 月 31 日です。 この場合、最初の合意項目の開始日と終了日が、サービス注文に指定した期間よりも前の日付であるため、サービス注文は 2 番目の合意項目に対してのみ生成されます。
 
   
-
 
 

@@ -1,31 +1,30 @@
 ---
-title: "理由コードの作成"
-description: "サービス注文のステージを更新する理由を説明する、理由コードを作成できます。"
+title: 理由コードの作成
+description: サービス注文のステージを更新する理由を説明する、理由コードを作成できます。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 05/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SMAReasonCodeTable
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 906325ddc7c5873a3050745100ceef6a6b8a8aa0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: f80a858ac92bfa7825bef85ef941f29cc6de1c49
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310901"
 ---
-
 # <a name="create-reason-codes"></a>理由コードの作成    
 
 [!include [banner](../includes/banner.md)]
@@ -40,6 +39,5 @@ ms.lasthandoff: 05/08/2018
 サービス注文ステージの更新の理由を説明する理由コードの指定を要求された場合は、ここで作成する理由コードのいずれかを選択できます。
 
   
-
 
 

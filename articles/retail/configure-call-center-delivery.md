@@ -1,13 +1,13 @@
 ---
-title: "コール センターの配送モードと費用の構成"
-description: "このトピックでは、Microsoft Dynamics 365 for Retail のコール センター注文の配送および費用のモード設定について説明します。"
+title: コール センターの配送モードと費用の構成
+description: このトピックでは、デリバリー モードの設定方法および Microsoft Dynamics 365 for Retail のコール センターの注文料金を定義します。
 author: josaw1
 manager: AnnBe
 ms.date: 04/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailMCRChannelDetailPage, MCROrderParameters
 audience: Application User
 ms.reviewer: josaw
@@ -17,14 +17,13 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: 2571b4ffd6c13dbf755ef2dfa93b757822890d96
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: dc2ab66bf6e3195e1ebf394f99182f59c3ee2125
-ms.openlocfilehash: ebc8ee52da7d10ca18147684a0190e52a495ad5a
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "328427"
 ---
-
 # <a name="configure-call-center-delivery-modes-and-charges"></a>コール センターの配送モードと費用の構成
 
 [!INCLUDE [banner](includes/banner.md)]
@@ -96,4 +95,3 @@ Microsoft Dynamics 365 for Retail で販売注文が発注される時、販売�
 たとえば、翌日航空便によって出荷される注文については、毎日午後 1 時までに倉庫でピッキングが行われる必要があります。 この場合、急送コードを作成し、そのコードをシステムで構成されている任意の翌日配送モードにリンクできます。 倉庫がピッキング ウェーブを作成する時、**急送**フィールドの適切な急送コードがフィルターとして使用され、そのコードにリンクされている配送モードを持つ注文に対してのみピッキングが行われます。
 
 また、コール センター注文が入力されると、販売注文ヘッダーまたは個々の販売注文明細行に急送コードが手動で適用されます。 並べ替えまたはレポート作成の目的のためにコードが再度使用されます。 場合によっては、顧客サービスの問題のために注意深く注文が処理される必要があります。 この場合、特定の急送コードは、フルフィルメント プロセス中の注文と優先順位の識別をするために注文ヘッダーまたは明細行に適用されます。
-

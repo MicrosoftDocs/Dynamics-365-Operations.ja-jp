@@ -1,13 +1,13 @@
 ---
-title: "仕入先ワークフロー"
-description: "仕入先情報を変更し、それを承認するワークフローを使用します。"
+title: 仕入先ワークフロー
+description: 仕入先情報を変更し、それを承認するワークフローを使用します。
 author: mikefalkner
 manager: annbe
 ms.date: 08/24/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: Vendor
 audience: Application User
 ms.reviewer: shylaw
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: mikefalkner
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.translationtype: HT
-ms.sourcegitcommit: 98ed3378ab05c0c69c9e5b2a82310113a81c2264
 ms.openlocfilehash: 950a1852acf9f3e4747ce2d55738c0eb3a646897
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/31/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "329692"
 ---
-
 # <a name="vendor-workflow"></a>仕入先ワークフロー
 
 [!include [banner](../includes/banner.md)]
@@ -50,7 +49,7 @@ ms.lasthandoff: 08/31/2018
 
 ## <a name="change-vendor-information-and-submit-the-changes-to-the-workflow"></a>仕入先情報の変更およびワークフローへの変更の送信
 
-ワークフローに対する有効なフィールドを変更する場合、**提案済み変更内容**ページが表示されます。 このページでは、フィールドの元の値および入力した新しい値が表示されます。 変更したフィールドは、元の値に戻されました。 ステータス メッセージは、変更が送信されていないことも通知します。 
+ワークフローに対する有効なフィールドを変更する場合、**提案済み変更内容**ページが表示されます。 このページでは、フィールドの元の値と入力した新しい値が表示されます。 変更したフィールドは、元の値に戻されました。 ステータス メッセージは、変更が送信されていないことも通知します。 
 
 ワークフローに対する有効なフィールドを変更するたびに、そのフィールドが**提案済み変更内容**ページの一覧に追加されます。 フィールドの提案値を破棄するには、リスト内のフィールドの横にある**破棄**ボタンを使用します。 すべての変更を破棄するには、ページの下部にある**すべての変更を破棄**ボタンを使用します。 **OK** を選択してページを閉じます。
 
@@ -59,7 +58,6 @@ ms.lasthandoff: 08/31/2018
 1. **提案済み変更内容**を選択して**提案済み変更内容**ページを開き、変更内容を確認します。
 2. **変更をワークフローに送信するためワークフロー \> 送信**を選択します。
 
-    ページのステータスが**変更内容が承認保留中です**に変更されます。
+    ページのステータスが **変更の承認待ち** に変わります。
 
-ワークフローは、Microsoft Dynamics 365 for Finance and Operations で標準のワークフロー プロセスに従います。 承認者が**仕入先**ページに転送されると、**提案済み変更内容**ページで変更を確認でき、**ワークフロー \> 承認**を選択してワークフローを承認します。 すべての承認が完了すると、フィールドが提案された値で更新されます。
-
+ワークフローは、Microsoft Dynamics 365 for Finance and Operations の標準的なワークフロー プロセスに従います。 承認者が**仕入先**ページに転送されると、**提案済み変更内容**ページで変更を確認でき、**ワークフロー \> 承認**を選択してワークフローを承認します。 すべての承認が完了すると、フィールドは提示した値に更新されます。

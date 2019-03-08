@@ -1,13 +1,13 @@
 ---
-title: "Dynamics AX application version 7.0.1 (2016 年 5 月) の新機能および変更された機能"
-description: "この記事では、Microsoft Dynamics AX application version 7.0.1 の新機能または変更された機能について説明します。 このバージョンは、2016 年 5 月にリリースされ、7.0.1265.23014 のビルド番号を持ちます。"
+title: Dynamics AX application version 7.0.1 (2016 年 5 月) の新機能および変更された機能
+description: この記事では、Microsoft Dynamics AX application version 7.0.1 の新機能および変更された機能について説明します。 このバージョンは、2016 年 5 月にリリースされ、7.0.1265.23014 のビルド番号を持ちます。
 author: sericks007
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: c830952b5d9e4887a816b5ab66d0944bddf5b505
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "314512"
 ---
-
 # <a name="whats-new-or-changed-in-dynamics-ax-application-version-701-may-2016"></a>Dynamics AX application version 7.0.1 (2016 年 5 月) の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
 
-この記事では、Microsoft Dynamics AX application version 7.0.1 の新機能または変更された機能について説明します。 このバージョンは、2016 年 5 月にリリースされ、7.0.1265.23014 のビルド番号を持ちます。
+この記事では、Microsoft Dynamics AX application version 7.0.1 の新機能および変更された機能について説明します。 このバージョンは、2016 年 5 月にリリースされ、7.0.1265.23014 のビルド番号を持ちます。
 
 ## <a name="electronic-reporting-er"></a>電子申告 (ER)
 
@@ -40,18 +39,18 @@ ms.lasthandoff: 12/18/2018
 | OPENXML ワークシート形式で作成した電子文書の動的に生成された列にデータを入力するため、ER レポートをコンフィギュレーションします。 | ER レポートでは、水平方向に複製された列を使用して、生成された OPENXML ワークシートにデータを入力します。 したがって、同じ ER レポートのコンフィギュレーションは、動的に生成された列の数が異なる電子ドキュメントを生成するために再利用できます。 |
 | 形式の出力結果が特定の送信先に指定されるように ER の送信先をコンフィギュレーションします。ファイル、電子メール、またはアーカイブ (Microsoft SharePoint フォルダーまたは Microsoft Azure ストレージ)。 | 以前は、ER コンフィギュレーションを実行したときに、ユーザーはメッセージ ボックスに保存したりファイルを開く必要がありました。 現在は各形式のコンフィギュレーション、および各出力のコンポーネント (フォルダやファイル) の出力先を別々に事前にコンフィギュレーションできます。 適切なアクセス権を持っているユーザーは、実行時に送信先の設定を変更することもできます。 |
 
-## <a name="pos--microsoft-dynamics-ax-retail"></a>POS – Microsoft Dynamics AX Retail
+## <a name="pos--microsoft-dynamics-ax-retail"></a>POS – Microsoft Dynamics AX 小売
 
 | 何ができますか。 | これは、なぜ重要ですか。 |
 |------------------|------------------------|
-| Google Chrome ブラウザーを使用します。 | 小売業者は、クラウド POS のChrome ブラウザーから起動でき、クラウド POS の Microsoft Edge および Internet Explorer バージョンで利用可能なすべての機能を経験することができます。 |
+| Google Chrome ブラウザーを使用します。 | 小売業者は、クロム ブラウザーからクラウド POS を起動でき、クラウド POS の Microsoft Edge および Internet Explorer バージョンで利用可能なすべての機能を経験することができます。 |
 
 ## <a name="financial-reporting"></a>財務報告
 
 | 何ができますか。 | これは、なぜ重要ですか。 |
 |------------------|------------------------|
 | 財務レポートのデータ マートを再構築します。 | Dynamics AX データベースを環境間で移動したり、Dynamics AX 環境への他の侵害となる変更をする場合、財務レポート データベースを再構築する必要があります。 その再構築をするために Windows PowerShell スクリプトが提供されています。 |
-| 有効ではないレポート デザイナー オプションを選択する必要はありません。 | Management reporter の市場バージョンで使用されていたいくつかのレポート デザイナー オプションは、この Dynamics AX バージョンには適用されません。 これらのオプションは、財務諸表のデザイン、出力、およびリンクに関連していました。 これらのオプションは、ユーザーによるエラーを防ぐために財務諸表デザイナーから削除されました。 |
+| 有効ではないレポート デザイナー オプションを選択する必要はありません。 | Management Reporter の市場バージョンで使用されていたいくつかのレポート デザイナー オプションは、この Dynamics AX バージョンには適用されません。 これらのオプションは、財務諸表のデザイン、出力、およびリンクに関連していました。 これらのオプションは、ユーザーによるエラーを防ぐために財務諸表デザイナーから削除されました。 |
 
 ## <a name="financial-management"></a>財務管理
 
@@ -107,4 +106,3 @@ ms.lasthandoff: 12/18/2018
 [新機能および変更された機能](whats-new-changed.md)
 
 [新規または更新されたタスク ガイド (2016年 5月)](new-updated-task-guides-available-may-2016.md)
-

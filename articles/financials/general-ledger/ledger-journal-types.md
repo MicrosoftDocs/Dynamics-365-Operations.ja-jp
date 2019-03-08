@@ -1,13 +1,13 @@
 ---
-title: "仕訳元帳タイプ"
-description: "このトピックでは、財務仕訳帳に設定できる仕訳帳タイプについて説明します。"
+title: 仕訳元帳タイプ
+description: このトピックでは、財務仕訳帳に設定できる仕訳帳タイプについて説明します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalSetup
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 81214cc52b1488bb70ac5fd6ccc817f6f979163d
 ms.openlocfilehash: fff557d20a230922b5512aea9e49aa9993a694dd
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "308670"
 ---
-
 # <a name="ledger-journal-types"></a>仕訳元帳タイプ
 
 [!include [banner](../includes/banner.md)]
@@ -64,7 +63,6 @@ ms.lasthandoff: 10/16/2018
 | 仕入先請求記録          | 仕訳帳にある仕入先請求書を転記します。                                                                                                                                                                                                                                                                                                                 | 請求仕訳帳                                                |
 | 仕入先再振出支払手形     | 既に組織の銀行が受け取っている支払手形を再度振り出します。                                                                                                                                                                                                                                                                      | 支払手形仕訳帳の再振出                                 |
 | 仕入先決済支払手形     | 仕入先決済支払手形トランザクションを作成します。                                                                                                                                                                                                                                                                                                          | 支払手形仕訳帳の決済                                 |
-
 
 
 

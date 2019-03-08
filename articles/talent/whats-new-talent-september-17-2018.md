@@ -1,31 +1,30 @@
 ---
-title: "Dynamics 365 for Talent Core HR の新機能および変更された機能 (2018 年 9 月 17 日)"
-description: "このトピックでは、Microsoft Dynamics 365 for Talent Core HR の新機能または変更された機能について説明します。"
+title: Dynamics 365 for Talent Core HR の新機能および変更された機能 (2018 年 9 月 17 日)
+description: このトピックでは、Microsoft Dynamics 365 for Talent Core HR の新機能または変更された機能について説明します。
 author: Darinkramer
 manager: AnnBe
 ms.date: 09/17/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-09-14
 ms.dyn365.ops.version: Talent
-ms.translationtype: HT
-ms.sourcegitcommit: 1aae5797e37b846a38f957b02870e213da528a2d
 ms.openlocfilehash: 6586761fc62c13c701e8a8f61e15eedc66e2f751
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305175"
 ---
-
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-september-17-2018"></a>Dynamics 365 for Talent Core HR の新機能および変更された機能 (2018 年 9 月 17 日)
 
 [!include [banner](includes/banner.md)]
@@ -57,4 +56,3 @@ ms.lasthandoff: 10/16/2018
 ## <a name="bug-fixes"></a>バグ修正
 
 このリリースには ACA、ADA、および I9 への参照を含むいくつかの追加のバグ修正が含まれ、米国企業でのみ有効になります。
-

@@ -1,13 +1,13 @@
 ---
-title: "製造品目の固定費の償却"
-description: "製造品目の固定費は、工程の段取り時間と、数量または仕損金額が一定のコンポーネントを反映します。"
+title: 製造品目の固定費の償却
+description: 製造品目の固定費は、工程の段取り時間と、数量または仕損金額が一定のコンポーネントを反映します。
 author: AndersGirke
 manager: AnnBe
 ms.date: 04/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BOMCalcDialog, BOMCalcTable, BOMCalcTrans
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
+ms.openlocfilehash: 7ccd5ce3e2ed58db8f13eebbcfa6fe5fb544d6c7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 75c0f5bcff0aae63aa8c7dae9b0767f8c7e6a81c
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "329462"
 ---
-
 # <a name="amortize-constant-costs-for-a-manufactured-item"></a>製造品目の固定費の償却
 
 [!include [banner](../includes/banner.md)]
@@ -43,7 +42,6 @@ ms.lasthandoff: 11/03/2017
 -   注文固有の BOM 計算における指定された計算量 : 注文固有の BOM 計算は、販売注文、販売見積、またはサービス注文の品目に対して実行できます。 指定された計算量では元の明細行品目の数量が使用されますが、この既定の数量は上書きできます。 注文固有の BOM 計算では、受注生産とマルチレベル展開モードのどちらを使用するかを選択できます。
 
 製造品目の償却される固定費の計算金額は雑費と呼ばれます。
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "財務諸表のレポート ツリー定義"
-description: "この記事では、レポート ツリー定義に関する情報を示します。 レポート ツリー定義は、組織の構造と階層の定義に役立つレポート コンポーネント、または構成要素です。"
+title: 財務諸表のレポート ツリー定義
+description: この記事では、レポート ツリー定義に関する情報を示します。 レポート ツリー定義は、組織の構造と階層の定義に役立つレポート コンポーネント、または構成要素です。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 00219f21076af60f8e2f16ca365b1138bb279400
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "316950"
 ---
-
 # <a name="reporting-tree-definitions-in-financial-reports"></a>財務諸表のレポート ツリー定義
 
 [!include [banner](../includes/banner.md)]
@@ -51,7 +50,7 @@ ms.lasthandoff: 08/13/2018
 
 | [レポート ツリー列] | 説明 |
 |-----------------------|-------------|
-| 法人               | レポート単位に対する会社名。 通常集計レベルにのみ割り当てられる **@ANY** 値は、すべての会社に対してレポート ツリーの使用を有効にします。 すべての子分岐には、割り当てられている会社があります。 |
+| 法人               | レポート単位に対する会社名。 通常、集計レベルにのみ割り当てられる **@ANY** 値によって、レポート ツリーがすべての会社で使用できます。 すべての子分岐には、割り当てられている会社があります。 |
 | 単位名             | グラフィック レポート ツリーで、このレポート単位を識別するコード。 一貫しており、ユーザーが容易に理解できる固有のコーディング システムを確立してください。 |
 | [単位の説明]      | レポート単位のタイトルは **UnitDesc** をコードとして、レポート定義の **ヘッダーとフッター** タブに入力すると、レポート ヘッダーまたはフッターに表示されます。 タイトルは **UnitDesc** を、行定義の **説明** セルに入力すると、レポート行の説明に表示されます。 |
 | 分析コード            | レポート単位は、財務データから情報を直接引出します。 これは、勘定および関連するセグメントの論理的な配置と長さを定義します。 すべてのレポート単位の行はこの列に分析コードが必要になります。 (たとえば、その単位に直接関連している経費に対してなど) 集計単位の行に分析コードを配置することもできます。 集計単位の行に分析コードを入力する場合、親単位で使用される勘定を子単位では使用できません。 そうしないと、勘定が重複する可能性があります。 |
@@ -166,9 +165,9 @@ ms.lasthandoff: 08/13/2018
 3. **単位のセキュリティ** ダイアログ ボックスで名前を選択し、**削除** をクリックします。
 4. **OK** をクリックします
 
-### <a name="link-to-reports"></a>レポートへのリンク
+### <a name="link-toreports"></a>レポートへのリンク
 
-行定義の **レポート** 列を作成して、レポートに含めるレポートの指定後はリンクされている列およびレポートに関する情報を含むレポート ツリーを更新する必要があります。 レポートは、レポート ツリーのどの単位にもインポートできます。
+行定義の **レポート**列を作成して、レポートに含めるレポートの指定後はリンクされている列およびレポートに関する情報を含むレポート ツリーを更新する必要があります。 レポートは、レポート ツリーのどの単位にもインポートできます。
 
 ### <a name="identify-the-report-in-a-reporting-tree"></a>レポート ツリーのレポートの識別
 
@@ -222,4 +221,3 @@ ms.lasthandoff: 08/13/2018
 ## <a name="additional-resources"></a>その他のリソース
 
 [財務報告](financial-reporting-intro.md)
-

@@ -1,13 +1,13 @@
 ---
-title: "財務インサイト"
-description: "財務インサイトは、Microsoft Power BIを使用して、財務の主要業績評価指標 (KPI)、グラフ、および財務諸表を結び付けます。"
+title: 財務インサイト
+description: 財務インサイトは、Microsoft Power BI を使用して、財務の主要業績評価指標 (KPI)、グラフ、および財務諸表を結び付けます。
 author: kweekley
 manager: AnnBe
 ms.date: 08/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -16,25 +16,24 @@ ms.assetid: 517e6a88-e7a1-4398-9971-b22fa83306ba
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: 7.3
-ms.translationtype: HT
-ms.sourcegitcommit: 4f4cb254ad2d4328e146f5dba471aafb21660986
+ms.dyn365.ops.version: 7.2999999999999998
 ms.openlocfilehash: 2c261d2aea66b578bc976a66b6184384f0a5bf5d
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "308854"
 ---
-
 # <a name="financial-insights"></a>財務インサイト
 
 [!include [banner](../includes/banner.md)]
 
-**財務インサイト** は、Microsoft Power BIを使用して、財務の主要業績評価指標 (KPI)、グラフ、および財務諸表を結び付けます。 Microsoft Dynamics 365 Finance and Operations に埋め込まれている Power BI。 **財務インサイト** のフォーカスは分析レポートです。 組織全体にわたる役割として、表示、研究、理解、および実行できます。 
+**財務インサイト**は、Microsoft Power BI を使用して、財務の主要業績評価指標 (KPI)、グラフ、および財務諸表を結び付けます。 Power BI は Microsoft Dynamics 365 Finance and Operations に埋め込まれています。 **財務インサイト** のフォーカスは分析レポートです。 組織全体にわたる役割として、表示、研究、理解、および実行できます。 
 
 **財務インサイト** は、組織の財務の健全性をより完全に把握できるよう、総勘定元帳および補助元帳からのデータを結合します。
 
 > [!NOTE]
-> このドキュメントは、次の Power BI 用語を使用します。
+> このドキュメントは、次の Power BI 用語を使用します:
 > 
 > - **レポート** – すべてのタブですべてのビジュアルが保存されている単一の .pbix ファイル。
 > - **ページ** – 単一の .pbix ファイル内のタブ。 各ページには、1 つ以上のビジュアルを含めることができます。
@@ -87,7 +86,7 @@ ms.lasthandoff: 08/14/2018
 |-----------------------------------------|-------|------------|
 | CFO の概要ワークスペースの表示             | 最高財務責任者 | この職務は、CFO の概要ワークスペースへのアクセスを提供します。 既定では、有効な会社はフィルタとして使用されます。 ただし、ユーザーが他の法人へのアクセスできるかどうかに関係なく、すべての法人を追加することができます。 |
 | 現在の会社間の財務インサイトの表示 | <ul><li>経理担当</li><li>会計マネージャー</li><li>会計監修者</li><li>監査担当者</li><li>予算マネージャー</li><li>最高経営責任者</li><li>最高財務責任者</li><li>財務コントローラー</li></ul> | この職務は、財務インサイトへのアクセスを提供します。 既定では、有効な会社はフィルタとして使用されます。 他の法人を追加することはできません。 |
-| 会社間の財務インサイトの表示   | Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 で、この職務はロールに割り当てられていません。 次のリリースで、最高財務責任者ロールにこの職務が割り当てられます。 | この職務は、CFO の概要ワークスペースのメニュー項目にアクセスを提供します。 既定では、有効な会社はフィルタとして使用されます。 ただし、ユーザーが他の法人へのアクセスできるかどうかに関係なく、すべての法人を追加することができます。 |
+| 会社間の財務インサイトの表示   | Microsoft Dynamics 365 for Finance and Operations Enterprise Edition 7.3 では、この職務はロールに割り当てられていません。 次のリリースで、最高財務責任者ロールにこの職務が割り当てられます。 | この職務は、CFO の概要ワークスペースのメニュー項目にアクセスを提供します。 既定では、有効な会社はフィルタとして使用されます。 ただし、ユーザーが他の法人へのアクセスできるかどうかに関係なく、すべての法人を追加することができます。 |
 
 
 ## <a name="financial-reporting-vs-finanical-insights"></a>[財務諸表] 対 [財務インサイト]
@@ -125,7 +124,7 @@ ms.lasthandoff: 08/14/2018
 ## <a name="edit-visuals"></a>ビジュアルの編集
 **財務インサイト** の初期リリースでは、ビジュアルはいずれも編集できません。 将来のリリースでは、適切なセキュリティを持つユーザーが新しいビジュアルを作成し、既存のビジュアルをコピーし、およびビジュアルを編集できます。 レポートを含む .pbix ファイルをリソースとして使用できますが、既定のレポートを編集することはお勧めしません。 カスタムの財務諸表の作成に使用されるデータ モデル、既定のレポート、および財務諸表ビジュアルへの追加の変更が行われます。 したがって、次のリリースのデータ モデルに対する新しい機能および変更を活用するには、Microsoft Power BI Desktop を通して既定のレポートに当てはめた変更を再実行する必要があります。
 
-## <a name="filtering"></a>フィルター処理
+## <a name="filtering"></a>フィルター
 ユーザーは、左側の **フィルター** ウィンドウを使用して、レポートをフィルター処理できます。 このウィンドウは、Power BI Desktop を通して利用可能な同じウィンドウです。 フィルタリングのさまざまなレベルがあります。そのうちの幾つかは使用できない場合があり、それはユーザーがページ (タブ) で何を選択したか、またはドリルスルー機能を使用しているかどうかに依存します。
 
 - **レポート レベルのフィルター** – すべてのページ (タブ) ですべてのビジュアルに対して、これらのフィルターが適用されます。
@@ -194,7 +193,7 @@ Power BI を通して表示のさまざまなレベルが利用可能です。 �
 
 行の集計の最上位レベルを返すため、**ドリルアップ** ボタンを使用し続けることができます。
 
-Power BI には、階層 (**ドリル オン** フィールド後の 2 番目のボタン) の次のレベルに移動することができるボタンもあります。 このボタンの効果は、階層を展開するのに使用される **展開** ボタン (**ドリル オン** フィールド後の3番目のボタン) の効果とは違います。 階層を展開すると、階層はレポートで管理されます。 たとえば、以前に表示したように、主勘定タイプを展開すると、レポートで引き続き主勘定タイプを表示できます。 ただし、階層で次のレベルに移動すると、次の図に示すようにレポートは階層内で親を表示しなくなります。
+Power BI には、階層 (**ドリル オン**フィールド後の 2 番目のボタン) の次のレベルに移動することができるボタンもあります。 このボタンの効果は、階層を展開するのに使用される **展開** ボタン (**ドリル オン** フィールド後の3番目のボタン) の効果とは違います。 階層を展開すると、階層はレポートで管理されます。 たとえば、以前に表示したように、主勘定タイプを展開すると、レポートで引き続き主勘定タイプを表示できます。 ただし、階層で次のレベルに移動すると、次の図に示すようにレポートは階層内で親を表示しなくなります。
 
 ![試算表](./media/trial-balance5.png)
 
@@ -250,4 +249,3 @@ Power BI は、空の行を表示または非表示するオプションを提�
 - <https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/>
 
 - <https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces>
-

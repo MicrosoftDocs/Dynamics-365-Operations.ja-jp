@@ -1,37 +1,36 @@
 ---
-title: "売上請求書ヘッダーおよび明細行の Finance and Operations から Sales への直接同期"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations から Microsoft Dynamics 365 for Sales に対して、売上請求書ヘッダーと明細行を直接同期するために使用されるテンプレートと基本的なタスクについて説明します。"
+title: 売上請求書ヘッダーおよび明細行の Finance and Operations から Sales への直接同期
+description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations から Microsoft Dynamics 365 for Sales に売上請求書ヘッダーおよび明細行を直接同期するために使用されるテンプレートと基本的なタスクについて説明します。
 author: ChristianRytt
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
+ms.openlocfilehash: 70fc842463254b02d812447f93970a9da676057d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: afbf4a24b737cf7221bac4b688b8801b1bcd839c
-ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "319503"
 ---
-
-# <a name="synchronize-sales-invoice-headers-and-lines-directly-from-finance-and-operations-to-sales"></a>売上請求書ヘッダーおよび明細行の Finance and Operations から Sales への直接同期
+# <a name="synchronize-sales-invoice-headers-and-lines-directly-from-finance-and-operations-to-sales"></a>売上請求書のヘッダーおよび明細行の Finance and Operations から Sales への直接同期
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Finance and Operations から Microsoft Dynamics 365 for Sales に対して、売上請求書ヘッダーと明細行を直接同期するために使用されるテンプレートと基本的なタスクについて説明します。
+このトピックでは、Microsoft Dynamics 365 for Finance and Operations から Microsoft Dynamics 365 for Sales に売上請求書ヘッダーおよび明細行を直接同期するために使用されるテンプレートと基本的なタスクについて説明します。
 
 ## <a name="data-flow-in-prospect-to-cash"></a>見込み客の現金化へのデータフロー
 
@@ -74,9 +73,9 @@ Finance and Operations から Sales への売上請求書ヘッダーと明細�
 
 ## <a name="prospect-to-cash-solution-for-sales"></a>売上の見込顧客を現金化するソリューション
 
-- [請求書番号] フィールドが [請求書] エンティティに追加され、ページに表示されます。
-- 請求書が Finance and Operations で作成され Sales に同期されるため、[販売注文] ページで [請求書の作成] ボタンは非表示になります。 請求書は Finance and Operations から同期されるため、[請求書] ページは編集できません。
-- Finance and Operations からの関連する請求書が Sales に同期されると、[販売注文状態] 値は自動的に [請求済] に変更します。 さらに、請求書の作成元である販売注文の所有者は、請求書の所有者として割り当てられます。 したがって、販売注文書の所有者は、請求書を表示することができます。
+- **請求書番号**フィールドが**請求書**エンティティに追加され、ページに表示されます。
+- 請求書が Finance and Operations で作成され Sales に同期されるため、**販売注文**ページで**請求書の作成**ボタンは非表示になります。 請求書は Finance and Operations から同期されるため、**請求書**ページは編集できません。
+- Finance and Operations からの関連する請求書が Sales に同期されると、**販売注文状態**値は自動的に**請求済**に変更します。 さらに、請求書の作成元である販売注文の所有者は、請求書の所有者として割り当てられます。 したがって、販売注文書の所有者は、請求書を表示することができます。
 
 ## <a name="preconditions-and-mapping-setup"></a>前提条件とマッピングの設定
 
@@ -84,34 +83,34 @@ Finance and Operations から Sales への売上請求書ヘッダーと明細�
 
 ### <a name="setup-in-sales"></a>Sales での設定
 
-[設定] > [管理] > [システムの設定] > [Sales] の順に移動し、次の設定を使用することを確認します。
+**設定** > **管理** > **システムの設定** > **Sales** の順に移動し、次の設定を使用することを確認します。
 
-- [**システム プライジング計算システムの使用**] オプションが、[**はい**] に設定されている。
-- [割引の計算方法] フィールドが、[明細行品目] に設定されている。
+- **システム プライジング計算システムの使用** オプションが、**はい** に設定されている。
+- **割引の計算方法**フィールドが、**明細行品目**に設定されている。
 
 ### <a name="setup-in-the-data-integration-project"></a>データ統合プロジェクトでの設定
 
 #### <a name="salesinvoiceheader-task"></a>SalesInvoiceHeader タスク
 
-- [InvoiceCountryRegionId] から [BillingAddress\_Country] に必要なマッピングが存在することを確認します。
+- **InvoiceCountryRegionId** から **BillingAddress\_Country** に必要なマッピングが存在することを確認します。
 
     テンプレートの値は、複数の国または地域がマップされている値マップです。
 
-- Sales で請求書を作成するには価格リストが必要です。 Sales で通貨ごとに使用される価格リストへの [pricelevelid.name \[価格リスト名\]] の値マップを更新します。 1つの通貨に対する既定の価格リストを使用することができます。 または、複数の通貨で価格リストがある場合、値マップを使用することもできます。
+- Sales で請求書を作成するには価格リストが必要です。 Sales で通貨ごとに使用される価格リストへの **pricelevelid.name \[価格リスト名\]** の値マップを更新します。 1つの通貨に対する既定の価格リストを使用することができます。 または、複数の通貨で価格リストがある場合、値マップを使用することもできます。
 
-    [pricelevelid.name\[価格リスト名\]] のテンプレート値は、USD = CRM サービス USA (サンプル) のように通貨に基づく値マップです。  
+    **pricelevelid.name\[価格リスト名\]** のテンプレート値は、USD = CRM サービス USA (サンプル) のように通貨に基づく値マップです。  
     
 #### <a name="salesinvoiceline-task"></a>SalesInvoiceLine タスク
 
-- [測定単位] で必要なマッピングが存在することを確認します。
-- Finance and Operation で [SalesUnitSymbol] 用の必要な値マップを確認します。
+- **測定単位**で必要なマッピングが存在することを確認します。
+- Finance and Operation で **SalesUnitSymbol** 用の必要な値マップを確認します。
 
-    [**SalesUnitSymbol**] から [**Quantity\_** UMO] に対して値マップを持つテンプレート値が定義されます。
+    **SalesUnitSymbol** から **Quantity\_** UMO に対して値マップを持つテンプレート値が定義されます。
 
 ## <a name="template-mapping-in-data-integration"></a>データ統合のテンプレートのマッピング
 
 > [!NOTE]
-> [**支払条件**]、[**運賃条件**]、[**配送条件**]、[**送付方法**]、および [**配送モード**] フィールドは、既定のマッピングには含まれていません。 これらのフィールドをマップするには、エンティティ間で同期される組織内のデータに固有の値マッピングを設定する必要があります。
+> **支払条件**、**運賃条件**、**配送条件**、**送付方法**、および **配送モード** フィールドは、既定のマッピングには含まれていません。 これらのフィールドをマップするには、エンティティ間で同期される組織内のデータに固有の値マッピングを設定する必要があります。
 
 次の図は、データ統合のテンプレート マッピングの例を示しています。 
 
@@ -139,7 +138,6 @@ Finance and Operations から Sales への売上請求書ヘッダーと明細�
 [Finance and Operations の連絡先または顧客への Sales の連絡先の直接同期](contacts-template-mapping-direct.md)
 
 [販売注文ヘッダーおよび明細行の Finance and Operations から Sales への直接同期](sales-order-template-mapping-direct-two-ways.md)
-
 
 
 

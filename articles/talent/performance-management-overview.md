@@ -1,13 +1,13 @@
 ---
-title: "パフォーマンス管理"
-description: "業績管理プロセスにより、従業員は管理者と業績を文書化し、話し合うことができます。 次に、管理者は、従業員にフィードバックおよびガイダンスを提供できます。"
+title: パフォーマンス管理
+description: 業績管理プロセスにより、従業員は管理者と業績を文書化し、話し合うことができます。 次に、管理者は、従業員にフィードバックおよびガイダンスを提供できます。
 author: mikefalkner
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Core, Operations, Talent
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 67da25514edc6b27f8478a7b317f6690720ab592
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
-ms.openlocfilehash: e7621b4c1358d1ecd6ff1c9ce2f1de08766a4bf6
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305102"
 ---
-
 # <a name="performance-management"></a>パフォーマンス管理
 
 [!include [banner](includes/banner.md)]
@@ -56,9 +55,9 @@ ms.lasthandoff: 08/09/2018
 
 また、サイトの URL の保存によって外部 Web サイトへ業績仕訳帳をリンクすることもできます。 仕訳帳が目標または業績確認に関連する場合は、それらの一つ以上にリンクできます。 業績仕訳帳は、**MSS** のページからアクセスする場合、従業員仕訳帳に入力できる同じ情報を入力できます。 また、仕訳帳が作成される従業員を指定することもできます。 従業員と管理者仕訳帳を共有するかどうかを選択できます。
 
-### <a name="praise"></a>称賛
+### <a name="send-feedback"></a>フィードバックの送信
 
-業績仕訳帳には称賛と名付けられた追加機能が含まれます。 **称賛の送信** をクリックした場合、従業員を選択し、従業員に電子メールでフィードバックを提供できます。 メッセージは、称賛されている従業員、その従業員の管理者、称賛を送っている従業員、その従業員の管理者に送信されます。 業績仕訳帳入力は称賛メッセージを受け取る従業員ごとに作成されます。
+業績仕訳帳にはフィードバックと名付けられた追加機能が含まれます。 **フィードバックの送信**をクリックすると、従業員を選択して、その従業員に電子メールでフィードバックを提供できます。 メッセージは、フィードバックを受け取る従業員、その従業員の管理者、フィードバックを送っている従業員、その従業員の管理者に送信されます。 業績仕訳帳入力はフィードバック メッセージを受け取る従業員ごとに作成されます。
 
 ## <a name="goals"></a>目標
 **業績目標** ページは、従業員およびその管理者が作成した目標を追跡できます。 任意の目標数を作成でき、それらの目標は異なる期間と業績確認にまたがることができます。 また、目標に関して入力する情報の量によって、簡単または複雑な目標を作成できます。 目標は業績確認には必要ありません。 
@@ -151,7 +150,6 @@ Worker Review ワークフローには 2 つの要素があります:
 ### <a name="review-types"></a>確認タイプ
 
 業績確認タイプは、確認の動作をコントロールできます。 確認のためのワークフローを有効にするか、または無効にすることができます。 確認がワークフローを使用していない場合は、確認の作成時に使用される既定のステータスを定義できます。 従業員、管理者、または両方が確認でサインオフする必要があるかどうかを選択することもできます。
-
 
 
 

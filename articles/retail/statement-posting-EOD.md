@@ -1,13 +1,13 @@
 ---
-title: "明細書転記機能の改良"
-description: "このトピックでは、明細書転記の機能に加えられた機能強化事項について説明します。"
+title: 明細書転記機能の改良
+description: このトピックでは、明細書転記の機能に加えられた機能強化事項について説明します。
 author: josaw1
 manager: AnnBe
 ms.date: 04/26/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
@@ -16,21 +16,20 @@ ms.search.industry: retail
 ms.author: anpurush
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 3e8c5466a68fa87326c46a4e36bf7399be1279c6
-ms.contentlocale: ja-jp
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "321435"
 ---
-
 # <a name="improvements-to-statement-posting-functionality"></a>明細書転記機能の改良
 
 [!include[banner](includes/banner.md)]
 
 このトピックでは、明細書転記の機能に加えられた最初の一連の機能強化事項について説明します。 これらの機能強化事項は、Microsoft Dynamics 365 for Finance and Operations 7.3.2 で利用可能です。
 
-## <a name="activation"></a>アクティブ化
+## <a name="activation"></a>有効化
 
 既定では、Finance and Operations 7.3.2 の展開中に、プログラムは明細書転記のレガシ機能を使用するために設定されます。 改良された明細書転記機能を有効にするには、そのためのコンフィギュレーション キーをオンにする必要があります。
 
@@ -171,4 +170,3 @@ Finance and Operations には、これらのコンフィギュレーション �
 
     - **小売** \> **本社の設定** \> **パラメーター** \> **小売パラメーター**の順にを移動します。 その後、**明細レベル**フィールドの、**在庫更新**クイック タブの、**転記**タブで、**集計**を選択します。
     - **小売** \> **本社の設定** \> **パラメーター** \> **小売パラメーター**の順にを移動します。 それから、**集計**クイック タブの、**転記**タブで、**伝票トランザクション**オプションを**はい**に設定します。
-

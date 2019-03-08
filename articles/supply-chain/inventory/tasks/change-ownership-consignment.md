@@ -1,13 +1,13 @@
---- 
-title: "生産需要に基づく委託販売在庫の所有権の変更"
-description: "この手順は、生産中における在庫需要があるときに委託製品在庫所有者を仕入先から自らの法人に変更する方法を示します。"
+---
+title: 生産需要に基づく委託販売在庫の所有権の変更
+description: この手順は、生産中における在庫需要があるときに委託製品在庫所有者を仕入先から自らの法人に変更する方法を示します。
 author: perlynne
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventJournalOwnershipChange, InventJournalCreate
 audience: Application User
 ms.reviewer: shylaw
@@ -17,18 +17,18 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: d1324da6996230eb383e2f37d3a133ec35cb0f41
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 5925f5423d596adc4326dfff4734de2afd80b5a8
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "319020"
 ---
 # <a name="change-the-ownership-of-consignment-inventory-based-on-production-demand"></a>生産需要に基づく委託販売在庫の所有権の変更
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-この手順は、生産中における在庫需要があるときに委託製品在庫所有者を仕入先から自らの法人に変更する方法を示します。 所有権を変更するには、在庫所有権変更仕訳を作成、転記します。 所有権変更は、既存の生産需要に基づき、この記録で示されるように手作業で作成します。 通常、現場の監督者がこの作業を実施します。 デモ データ会社 USMF でこの手順を使うか、または独自のデータを使うことができます。 自分のデータを使用する場合は、次の条件があることを確認します: 在庫所有権変更に設定された在庫仕訳、物理的に記録された仕入先所有の手持在庫品目、原材料の複数の製造オーダーライン この手順は、Dynamics 365 for Operations、バージョン 1611 に追加された機能です。
+この手順は、生産中における在庫需要があるときに委託製品在庫所有者を仕入先から自らの法人に変更する方法を示します。 所有権を変更するには、在庫所有権変更仕訳を作成、転記します。 所有権変更は、既存の生産需要に基づき、この記録で示されるように手作業で作成します。 通常、現場の監督者がこの作業を実施します。 デモ データ会社 USMF でこの手順を使うか、または独自のデータを使うことができます。 自分のデータを使用する場合は、次の条件があることを確認します: 在庫所有権変更に設定された在庫仕訳、物理的に記録された仕入先所有の手持在庫品目、原材料の複数の製造オーダーライン この手順は Dynamics 365 for Operations バージョン 1611 に追加された機能です。
 
 
 ## <a name="create-an-inventory-ownership-journal"></a>在庫所有権仕訳を作成する
@@ -52,5 +52,4 @@ ms.lasthandoff: 09/29/2017
     * 仕訳を記帳する際、仕入先所有の在庫は「所有権変更」の参照で解除されます。 その後在庫は、購入注文製品受領書で更新された在庫トランザクションを使用して手持ちの在庫として受領されます。 記帳済み仕訳に関連するトランザクションのみが作成されることに注意してください。 在庫トランザクションの予定は作成されません。  
 2. [OK] をクリックします。
 3. ページを閉じます。
-
 

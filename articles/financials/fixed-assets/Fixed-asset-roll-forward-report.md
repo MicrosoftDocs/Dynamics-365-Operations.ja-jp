@@ -1,14 +1,14 @@
 ---
-title: "固定資産ロール フォワード レポート"
-description: "このトピックでは、固定資産ロール フォワード レポートを使用する方法について説明します。"
+title: 固定資産ロール フォワード レポート
+description: このトピックでは、固定資産ロール フォワード レポートを使用する方法について説明します。
 author: saraschi2
-manager: 
+manager: ''
 ms.date: 01/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,23 +17,23 @@ ms.assetid: d7e86f72-95db-4423-9b04-761e9536a959
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-12-20
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
+ms.openlocfilehash: 3f2da6d552dd27566d3e012d3e6055fcaa194e4b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 16f7c199fb4c9905c465e5d4596d3eaa90104b83
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "313753"
 ---
 # <a name="fixed-assets-roll-forward-report"></a>固定資産ロール フォワード レポート
 
 [!include [banner](../includes/banner.md)]
 
-**固定資産ロール フォワード** レポートは、分かりやすい Microsoft Excel 形式で、ユーザーが必要とする期間決算、財務諸表、および税レポートの詳細な固定資産データを提供します。 レポートには、期間中の評価移動と共に、固定資産の開始および終了時の残高、および期間中に発生した任意の新しい資産の取得と処分が含まれます。 個々の固定資産ごとにデータが報告され、値は固定資産グループおよび法人に対しても集計されます。
+**固定資産ロール フォワード**レポートは、分かりやすい Microsoft Excel 形式で、ユーザーが必要とする期間決算、財務諸表、および税レポートの詳細な固定資産データを提供します。 レポートには、期間中の評価移動と共に、固定資産の開始および終了時の残高、および期間中に発生した任意の新しい資産の取得と処分が含まれます。 個々の固定資産ごとにデータが報告され、値は固定資産グループおよび法人に対しても集計されます。
 
 **固定資産ロール フォワード** レポートは、電子申告 (ER) フレームワークを使用します。 レポートを実行する前に、固定資産モデルと固定資産ロール フォワード コンフィギュレーションを Microsoft Dynamics Lifecycle Services (LCS) からインポートする必要があります。 手順については、[Lifecycle Services の電子申告コンフィギュレーションのダウンロード](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs)を参照してください。
 
-このレポートは、Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3、または Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (2017 年 7 月) の修正プログラムとして使用できます。 2017 年 7 月リリースのある環境には、3 つの修正プログラムを適用する必要があります。
+このレポートは、Microsoft Dynamics 365 for Finance and Operations Enterprise Edition 7.3、または Microsoft Dynamics 365 for Finance and Operations Enterprise Edition (2017年7月) の修正プログラムとして利用可能です。 2017 年 7 月リリースのある環境には、3 つの修正プログラムを適用する必要があります。
 
 - **KB 4041754:** 電子申告 (ER) コンフィギュレーションは、LCS からダウンロードできません。プラットフォーム更新プログラムのパッケージの適用後、現在のアプリケーション バージョンに該当しないためです
 - **KB 4056107:** 電子申告 (GER) 累積更新プログラム 5
@@ -66,5 +66,4 @@ ms.lasthandoff: 04/13/2018
 |            処分: 販売額            |                                                                                               処分となる固定資産帳簿の販売額 – 販売トランザクション                                                                                                |
 |           処分: 仕損額            |                                                                                               処分となる固定資産帳簿の仕損額 – 仕損トランザクション                                                                                               |
 |           処分: 利益/損失            |                                                                                 固定資産帳簿に対する処分トランザクションの一部として計算される利益または損失の値。                                                                                 |
-
 

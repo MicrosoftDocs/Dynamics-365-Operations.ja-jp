@@ -1,13 +1,13 @@
 ---
-title: "Talent 用サポートの入手"
-description: "このトピックでは、Dynamics 365 for Talent のヘルプを入手する方法について説明します。"
+title: Talent に関するサポートの利用
+description: このトピックでは、Dynamics 365 for Talent のヘルプを入手する方法について説明します。
 author: Darinkramer
 manager: AnnBe
 ms.date: 09/18/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent
@@ -15,15 +15,14 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: Talent September 10, 2018 update
-ms.translationtype: HT
-ms.sourcegitcommit: 1bf37d65cd8ce6a98fc2d2fb11ae9587cf6958a3
 ms.openlocfilehash: 9b2d7159b458b6f3b2cbb3271210c10ab486f496
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305233"
 ---
-
-# <a name="get-support-for-talent"></a>Talent 用サポートの入手
+# <a name="get-support-for-talent"></a>Talent に関するサポートの利用
 
 [!include [banner](includes/banner.md)]
 
@@ -55,4 +54,3 @@ Attract および Onboard のサポートを得るには、次の表のリソー
 | 問題をレポート                                                        | メニューの **?** アイコンを選択し、問題を報告するオプションを選択します。 説明に問題を入力し、報告している問題のフォローアップしたい場合は、電子メール アドレスを含めます。                                                                                           |
 | Talent ライセンスに関する質問のヘルプを入手します。                         | パートナー、または Microsoft 販売担当者に問い合わせます。                                                                                                                                                                                                                                        |
 | Attract および Onboard 内で新機能および機能の要求 | **?** アイコンをクリックして**アイデア**を選択、または次のリンクを使用して表示、検索、投票、または新しいアイデアを追加します: [Attract](https://powerusers.microsoft.com/t5/Ideas-for-Attract/idb-p/Attract) または [Onboard](https://powerusers.microsoft.com/t5/Ideas-for-Onboard/idb-p/Onboard)。 |
-

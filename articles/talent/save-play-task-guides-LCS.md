@@ -1,31 +1,30 @@
 ---
-title: "LCS にタスク ガイドを保存し、それらを再生する"
-description: "このトピックでは、タスク ガイドを Microsoft Dynamics Lifecycle Services (LCS) に保存し、それらを再生する方法について説明します。"
+title: LCS にタスク ガイドを保存して再生する
+description: このトピックでは、タスク ガイドを Microsoft Dynamics Lifecycle Services (LCS) に保存し、それらを再生する方法について説明します。
 author: Darinkramer
 manager: AnnBe
 ms.date: 11/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.translationtype: HT
-ms.sourcegitcommit: d3f974f94b6c327fd70b8098d24f9e1f1e1e8eeb
 ms.openlocfilehash: 40b4c3154a04a557b8a670e1f1ae3722c71122fe
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305176"
 ---
-
-# <a name="save-task-guides-to-lcs-and-replay-them"></a>LCS にタスク ガイドを保存し、それらを再生する
+# <a name="save-task-guides-to-lcs-and-replay-them"></a>LCS にタスク ガイドを保存して再生する
 
 [!include [banner](includes/banner.md)]
 
@@ -66,4 +65,3 @@ LCS からタスク ガイドを再生するにはこれらの手順に従いま
 2. **LCS から開く**を選択します。
 3. タスク ガイドが保存されているライブラリと BPM ノードを選択します。
 4. タスク ガイドを開きます。
-

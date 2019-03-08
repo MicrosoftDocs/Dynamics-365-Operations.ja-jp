@@ -1,13 +1,13 @@
---- 
-title: "新しい売買契約の作成"
-description: "この手順は、特定の顧客と合意した新しい製品販売価格を登録する売買契約の作成方法を示します。"
+---
+title: 新しい売買契約の作成
+description: この手順は、特定の顧客と合意した新しい製品販売価格を登録する売買契約の作成方法を示します。
 author: omulvad
 manager: AnnBe
 ms.date: 11/16/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: f7df0a91948a494465fbd55af99757e3890357ce
 ms.openlocfilehash: e132cd20437b7929e81fcaa123d70bb57fb320c8
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "323505"
 ---
 # <a name="create-a-new-trade-agreement"></a>新しい売買契約の作成
 
@@ -66,7 +66,6 @@ ms.lasthandoff: 12/04/2018
     * 作成した価格の売買契約の詳細を確認します。    
 5. ページを閉じます。
 
-## <a name="additional-resources"></a>その他のリソース
+## <a name="additional-resources"></a>追加リソース
 ### <a name="community-blogs"></a>コミュニティのブログ
 - [Dynamics 365 for Finance and Operations での販売価格](https://financefunction.tech/2018/11/14/sales-prices-in-dynamics-365-for-finance-and-operations/#sales_price_in_trade_agreements)
-

@@ -1,13 +1,13 @@
 ---
-title: "配賦の処理"
-description: "この記事では、配賦を Microsoft Dynamics 365 for Finance and Operations で処理するオプション、および予算の計画で使用する方法に関する情報を提供します。 配賦は、複数の勘定科目の組み合わせ全体で金額を配分するのに使用されます。 経費、または収益が正しい会計のオブジェクトに付けられることを保証します。"
+title: 配賦の処理
+description: この記事では、配賦、Microsoft Dynamics 365 for Finance and Operations で配賦を処理するためのオプション、および予算計画でそれらを使用する方法についての情報を提供します。 配賦は、複数の勘定科目の組み合わせ全体で金額を配分するのに使用されます。 経費、または収益が正しい会計のオブジェクトに付けられることを保証します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AccountingDistribution, LedgerAllocationRule, MainAccount
 audience: Application User
 ms.reviewer: shylaw
@@ -18,21 +18,20 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: ac531726e04ebec4da9062f47726568723364cce
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 26e7f607e070ac6c09a92d7809d65bac34d51f0b
-ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "322217"
 ---
-
 # <a name="process-allocations"></a>配賦の処理
 
 [!include [banner](../includes/banner.md)]
 
-この記事では、配賦を Microsoft Dynamics 365 for Finance and Operations で処理するオプション、および予算の計画で使用する方法に関する情報を提供します。 配賦は、複数の勘定科目の組み合わせ全体で金額を配分するのに使用されます。 経費、または収益が正しい会計のオブジェクトに付けられることを保証します。
+この記事では、配賦、Microsoft Dynamics 365 for Finance and Operations で配賦を処理するためのオプション、および予算計画でそれらを使用する方法についての情報を提供します。 配賦は、複数の勘定科目の組み合わせ全体で金額を配分するのに使用されます。 経費、または収益が正しい会計のオブジェクトに付けられることを保証します。
 
-Microsoft Dynamics 365 for Finance and Operations では、このプロセスをサポートするために、次の機能を提供します:
+Microsoft Dynamics 365 for Finance and Operations は、このプロセスをサポートするために、次の機能を提供します。
 
 -   勘定配布で分割アクションを使用する、またはドキュメントに財務分析コードの既定のテンプレートを適用することにより、トランザクション金額を手動で割り当てます。 詳細については、「[勘定配布](../accounts-payable/accounting-distributions.md)」を参照してください。
 -   個別の主勘定で定義された配賦条件に基づいてトランザクション金額を自動的に割り当てます。 配賦勘定項目は、勘定項目がソースの勘定科目に定義した条件を満たす場合に、割合と相手方の勘定科目に基づいて仕訳帳ごとに生成されます。
@@ -44,7 +43,6 @@ Microsoft Dynamics 365 for Finance and Operations では、このプロセスを
 
 > [!NOTE]
 > 会社間元帳配賦ルールは予算計画には使用できません。
-
 
 
 

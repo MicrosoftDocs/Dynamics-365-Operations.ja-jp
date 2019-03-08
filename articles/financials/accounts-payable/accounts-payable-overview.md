@@ -1,13 +1,13 @@
 ---
-title: "買掛金勘定のコンフィギュレーション"
-description: "この記事は、Microsoft Dynamics 365 for Finance and Operations の買掛金勘定の基本機能およびオプション機能の設定に使用するページについて説明します。 また、買掛金勘定の設定を開始する前に実行しなければならない設定手順について説明します。"
+title: 買掛金勘定のコンフィギュレーション
+description: この記事は、Microsoft Dynamics 365 for Finance and Operations の買掛金勘定の基本機能およびオプション機能の設定に使用するページについて説明します。 また、買掛金勘定の設定を開始する前に実行しなければならない設定手順について説明します。
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/08/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankAccountTable, DeliveryMode, PaymTerm, VendGroup, VendParameters, VendPaymMode, VendTable
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 6a832a30870f77578503bae6eea17ad1d0881d91
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 60313da23fdbd5a06b71c7c91a236165f8f189de
-ms.contentlocale: ja-jp
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326702"
 ---
-
 # <a name="configure-accounts-payable"></a>買掛金勘定のコンフィギュレーション
 
 [!include [banner](../includes/banner.md)]
@@ -144,7 +143,6 @@ ms.lasthandoff: 03/26/2018
 **現金および銀行管理**
 
 -   支払目的コード ページでは、中央銀行の支払目的コードを設定します。
-
 
 
 

@@ -1,13 +1,13 @@
---- 
-title: "新しい給付金の作成"
-description: "このタスクは、新しい福利厚生の作成時に使用する福利厚生の要素の作成方法を示します。"
+---
+title: 新しい給付金の作成
+description: このタスクは、新しい福利厚生の作成時に使用する福利厚生の要素の作成方法を示します。
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmBenefitElementSetup, HcmBenefit, HcmBenefitNewBenefit, HcmBenefitPlanLookup
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 5136af93ccd751e6ac710a75914bf5f04750f7a1
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "313730"
 ---
 # <a name="create-a-new-benefit"></a>新しい給付金の作成
 
@@ -54,5 +54,4 @@ ms.lasthandoff: 09/14/2018
 5. [オプション] フィールドで値を入力または選択します。
 6. [有効開始] フィールドで、日付と時刻を入力します。
 7. [福利厚生の作成] をクリックします。
-
 

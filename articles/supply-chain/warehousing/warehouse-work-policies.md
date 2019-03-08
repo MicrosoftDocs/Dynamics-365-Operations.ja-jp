@@ -1,13 +1,13 @@
 ---
-title: "倉庫作業ポリシー"
-description: "倉庫作業ポリシーは、ワーク オーダーのタイプ、在庫場所、および製品に基づいて、製造の倉庫プロセスのために倉庫作業が作成されるかどうかをコントロールします。"
+title: 倉庫作業ポリシー
+description: 倉庫作業ポリシーは、ワーク オーダーのタイプ、在庫場所、および製品に基づいて、製造の倉庫プロセスのために倉庫作業が作成されるかどうかをコントロールします。
 author: johanhoffmann
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSWorkPolicy
 audience: Application User
 ms.reviewer: josaw
@@ -19,19 +19,18 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
+ms.openlocfilehash: 0710eac8daba7f51f6b5d1522476b812a130960d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: c2d72509b0dc4d0cea5b4f2478ae7f8fc163e78c
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "325598"
 ---
-
 # <a name="warehouse-work-policies"></a>倉庫作業ポリシー
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Finance and Operations で倉庫作業ポリシーは、ワーク オーダーのタイプ、在庫場所、および製品に基づいて、製造の倉庫プロセスのために倉庫作業が作成されるかどうかをコントロールします。
+Microsoft Dynamics 365 for Finance and Operations の倉庫作業ポリシーは、ワーク オーダーのタイプ、在庫場所、および製品に基づいて、製造の倉庫プロセスのために倉庫作業が作成されるかどうかをコントロールします。
 
 この作業ポリシーは、製造の倉庫プロセスのために倉庫作業が作成されるかどうかをコントロールします。 **作業オーダー タイプ**、**在庫場所**、および**製品**の組み合わせを使用して作業ポリシーを設定できます。 たとえば、製品 L0101 は、出荷場所 001 に完了済として報告されます。 完成品は、後に出荷場所 001 で別の製造オーダーに消費されます。 この場合、出荷場所 001 に完了済として L0101 製品の報告の際に、作成から完成品のプット アウェイの作業を回避するために作業ポリシーを設定できます。 作業ポリシーは次の情報を表すことができる個々のエンティティです:
 
@@ -47,10 +46,10 @@ Microsoft Dynamics 365 for Finance and Operations で倉庫作業ポリシーは
 -   連産物と副産物のプット アウェイ
 -   原材料のピッキング
 
-[**作業作成方法**] のフィールドは、値が**なし**になります。 この値は、作業ポリシーが選択したワーク オーダー タイプのために作成された倉庫作業を防ぐことを示します。
+**作業作成方法** のフィールドは、値が**なし**になります。 この値は、作業ポリシーが選択したワーク オーダー タイプのために作成された倉庫作業を防ぐことを示します。
 
 ## <a name="inventory-locations"></a>在庫場所
-作業ポリシーが適用される場所を選択できます。 場所は作業ポリシーに関連付けられなければ、作業ポリシーはプロセスに適用されません。 [**場所**] ページで、特定の場所の作業ポリシーの選択を選択するか、またはキャンセルできます。
+作業ポリシーが適用される場所を選択できます。 場所は作業ポリシーに関連付けられなければ、作業ポリシーはプロセスに適用されません。 **場所** ページで、特定の場所の作業ポリシーの選択を選択するか、またはキャンセルできます。
 
 ## <a name="products"></a>製品
 作業ポリシーが適用される製品を選択できます。 すべての製品または選択した製品に作業ポリシーを適用できます。
@@ -126,7 +125,7 @@ Microsoft Dynamics 365 for Finance and Operations で倉庫作業ポリシーは
 <tr>
 <td></td>
 <td>2.</td>
-<td>一覧で、リソース グループ '5102' を選択します。</td>
+<td>一覧で、リソース グループ「5102」を選択します。</td>
 </tr>
 <tr>
 <td></td>
@@ -136,17 +135,17 @@ Microsoft Dynamics 365 for Finance and Operations で倉庫作業ポリシーは
 <tr>
 <td></td>
 <td>4.</td>
-<td>[出荷倉庫] フィールドに、'51' を入力します。</td>
+<td>出荷倉庫フィールドに、「51」を入力します。</td>
 </tr>
 <tr>
 <td></td>
 <td>5.</td>
-<td>[出荷場所] フィールドに、'001' を入力します。</td>
+<td>出荷場所フィールドに、「001」を入力します。</td>
 </tr>
 <tr>
 <td></td>
 <td>6.</td>
-<td>場所 001 は、ライセンス プレートにより制御される場所ではありません。 場所に適用できる作業ポリシーが存在する場合にのみ、ライセンス プレートのない出荷場所を設定できます。</td>
+<td>場所 001 はライセンス プレートにより制御される場所ではありません。 場所に適用できる作業ポリシーが存在する場合にのみ、ライセンス プレートのない出荷場所を設定できます。</td>
 </tr>
 <tr>
 <td colspan="3"><strong>下位タスク: 製造オーダーを作成して完了済として報告します。</strong></td>
@@ -169,7 +168,7 @@ Microsoft Dynamics 365 for Finance and Operations で倉庫作業ポリシーは
 <tr>
 <td></td>
 <td>4.</td>
-<td>[品目番号] フィールドに、'L0101' を入力します。</td>
+<td>品目番号フィールドに、「L0101」を入力します。</td>
 </tr>
 <tr>
 <td></td>
@@ -204,7 +203,7 @@ Microsoft Dynamics 365 for Finance and Operations で倉庫作業ポリシーは
 <tr>
 <td></td>
 <td>11.</td>
-<td>[自動 BOM 消費] フィールドで、'なし' を選択します。</td>
+<td>自動 BOM 消費フィールドで、「なし」を選択します。</td>
 </tr>
 <tr>
 <td></td>
@@ -248,7 +247,6 @@ Microsoft Dynamics 365 for Finance and Operations で倉庫作業ポリシーは
 </tr>
 </tbody>
 </table>
-
 
 
 

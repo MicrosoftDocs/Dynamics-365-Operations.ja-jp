@@ -1,39 +1,38 @@
 ---
-title: "見込顧客を現金化"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations および Microsoft Dynamics 365 for Sales における見込顧客を現金化するソリューションについて概説します。"
+title: 見込顧客を現金化
+description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations と Microsoft Dynamics 365 for Sales における見込顧客を現金化するソリューションの概要を示します。
 author: ChristianRytt
 manager: AnnBe
 ms.date: 04/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustTable, SalesTable, EcoResProductListPage
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.translationtype: HT
-ms.sourcegitcommit: ce9c24a0a89dd4e6a0f3f2c7789b4f553d88d412
 ms.openlocfilehash: b46ece384a28f8e78989253fcf467fbf3feaf1b7
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "309498"
 ---
-
 # <a name="prospect-to-cash"></a>見込顧客を現金化
 
 [!include [banner](../includes/banner.md)]
 
-この見込顧客を現金化するソリューションは、Dynamics 365 for Finance and Operations、および Dynamics 365 for Sales 間で直接同期を提供します。 データ統合機能で利用可能な見込み顧客を現金化するテンプレートは、Finance and Operations と Sales 間での勘定、連絡先、製品および販売見積、販売注文、および売上請求書のデータの流れを可能にします。 データは Finance and Operations と Sales との間を流れていますが、Sales のセールスおよびマーケティング活動を行い、Finance and Operations の在庫管理を使用して注文の履行を処理することができます。 
+見込顧客を現金化するソリューションは、Dynamics 365 for Finance and Operations および Dynamics 365 for Sales 間で直接同期を提供します。 データ統合機能で利用可能な見込み顧客を現金化するテンプレートは、Finance and Operations と Sales 間での勘定、連絡先、製品および販売見積、販売注文、および売上請求書のデータの流れを可能にします。 データは Finance and Operations と Sales との間を流れていますが、Sales のセールスおよびマーケティング活動を行い、Finance and Operations の在庫管理を使用して注文の履行を処理することができます。 
 
-見込顧客の現金化への統合の詳細については、短い YouTube ビデオ [見込顧客の現金統合](https://www.youtube.com/watch?v=AVV9x5x-XCg) を確認してください。
+見込顧客の現金化への統合の詳細については、短い YouTube ビデオ[見込顧客の現金化への統合](https://www.youtube.com/watch?v=AVV9x5x-XCg)をご覧ください。
 
 現在のバージョンでは、見込顧客を現金化するソリューションは次のタイプの直接同期を提供します:
 
@@ -47,13 +46,13 @@ ms.lasthandoff: 08/13/2018
 ## <a name="system-requirements-for-finance-and-operations"></a>Finance and Operations のシステム要件
 見込顧客の現金化は次のバージョンでサポートされています。
 
-### <a name="microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-73-december-2017"></a>Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 (2017 年 12 月)
+### <a name="microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-73-december-2017"></a>Microsoft Dynamics 365 for Finance and Operations、Enterprise edition 7.3 (2017 年 12 月)
 
-- Dynamics 365 for Finance and Operations, Enterprise edition (2017 年 12 月) - プラットフォーム アップデート 12 (7.0.4709.41129) によるアプリケーション ビルド 7.3.11971.56116
+- Dynamics 365 for Finance and Operations、Enterprise edition (2017 年 12 月) - アプリケーション ビルド 7.3.11971.56116 とプラットフォーム更新プログラム 12 (7.0.4709.41129)
 
-### <a name="dynamics-365-for-finance-and-operations-enterprise-edition-july-2017"></a>Dynamics 365 for Finance and Operations, Enterprise edition (2017 年 7 月)
+### <a name="dynamics-365-for-finance-and-operations-enterprise-edition-july-2017"></a>Dynamics 365 for Finance and Operations Enterprise edition (2017 年 7 月)
 
-- Dynamics 365 for Finance and Operations, Enterprise edition (2017 年 7 月) - プラットフォーム アップデート 8 (プラットフォーム ビルド 7.0.4565.16212 によるアプリケーション ビルド 7.2.11792.56024) による。
+- Dynamics 365 for Finance and Operations、Enterprise edition (2017 年 7 月) - プラットフォーム更新プログラム 8 (アプリケーション ビルド 7.2.11792.56024 とプラットフォーム ビルド 7.0.4565.16212)。
 - 次の修正プログラムが必要です。
 
   - **[KB4045570](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4045570&bugId=3851320&qc=ac1145034fd04ab71ccc4d14aa012f245176712c9af7c36bb77a118726d46160)** – この修正プログラムはデータ統合機能を利用した Sales から Finance and Operations への販売注文の同期を有効にします。 他のいくつかの機能拡張も提供されています。
@@ -63,9 +62,9 @@ ms.lasthandoff: 08/13/2018
     > [!NOTE]
     > インストールに他の修正プログラムからの変更が含まれているため、KB4045570 のみをインストールしなければなりません。 
 
-### <a name="dynamics-365-for-finance-and-operations-version-1611-november-2016"></a>Dynamics 365 for Finance and Operations バージョン 1611 (2016 年 11月)
+### <a name="dynamics-365-for-finance-and-operations-version-1611-november-2016"></a>Dynamics 365 for Finance and Operations バージョン 1611 (2016 年 11 月)
 
-- プラットフォーム アップデート 8 またはそれ以降による Dynamics 365 for Finance and Operations バージョン 1611 (2016 年 11 月)
+- Dynamics 365 for Finance and Operations バージョン1611 (2016 年 11 月) プラットフォーム更新プログラム 8 またはそれ以降
 
 - 次の修正プログラムが必要です。
 
@@ -82,5 +81,4 @@ ms.lasthandoff: 08/13/2018
 見込顧客を現金化するソリューションを使用するには、以下のコンポーネントをインストールする必要があります:
 
 - Dynamics 365 for Sales バージョン 1612 (8.2.1.207) (DB 8.2.1.207) オンラインまたはそれ以降のバージョン
-- Dynamics 365 for Sales バージョン 1.15.0.0 またはそれ以降のバージョンの見込顧客を現金化するソリューション。 このソリューションは、AppSource からダウンロードできます。 [Dynamics 365、見込顧客を現金化のダウンロード](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3)。
-
+- Dynamics 365 for Sales バージョン 1.15.0.0またはそれ以降のバージョンの、見込顧客を現金化するソリューション。 このソリューションは、AppSource からダウンロードできます。 [Dynamics 365、見込顧客を現金化のダウンロード](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3)。

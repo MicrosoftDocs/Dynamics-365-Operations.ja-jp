@@ -1,13 +1,13 @@
 ---
-title: "Talent 環境の削除"
-description: "このトピックでは、Microsoft Dynamics 365 for Talent のテスト ドライブまたは実稼働環境の削除について説明します。"
+title: Talent 環境の削除
+description: このトピックでは、Microsoft Dynamics 365 for Talent のテスト ドライブ環境または実稼動環境の削除について説明します。
 author: rschloma
 manager: AnnBe
 ms.date: 11/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Talent
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
+ms.openlocfilehash: e0422a5b7ac227ad03ccafb4e34e614dc770a363
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
-ms.openlocfilehash: 5080f1ec182b8cbdf281967185a1afeb9887f682
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305239"
 ---
 # <a name="remove-talent-environments"></a>Talent 環境の削除
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Talent のテスト ドライブまたは実稼働環境の削除について説明します。
+このトピックでは、Microsoft Dynamics 365 for Talent のテスト ドライブ環境または実稼動環境の削除について説明します。
 
 ## <a name="removing-a-test-drive-environment"></a>テスト ドライブ環境の削除
 
@@ -36,7 +36,7 @@ Talent テスト ドライブは、60 日間の有効期限ポリシーでプロ
 
 1. [PowerApps 管理センター](https://admin.businessplatform.microsoft.com/) に移動します。
 2. **環境**を選択します。
-3. テスト ドライブ環境を選択します。これには、次のような命名パターンがあります。TestDrive - alias@domain
+3. テスト ドライブ環境を選択します。これには、次のような命名パターンがあります: TestDrive - alias@domain
 4. **削除**を選択し、決定内容を確認します。 
 
 既存のテスト ドライブ環境が削除されます。 削除すると、新しいテスト ドライブ環境にサイン アップが可能です。 
@@ -73,5 +73,4 @@ Talent や関連付けられたアプリ、およびフローを含む PowerApps
 6. LCS プロジェクトでは、**Talent アプリの管理** タイルを選択します。 
 7. 削除するインスタンスを選択します。そのさい、配置ステータスが **失敗** とマークされている必要があります。
 8. **インスタンスの削除**を選択して決定内容を確認します。 
-
 

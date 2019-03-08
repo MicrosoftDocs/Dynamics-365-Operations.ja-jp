@@ -1,13 +1,13 @@
---- 
-title: "配送スケジュールの作成"
-description: "この手順は、販売注文の配送スケジュールを作成する方法を示します。"
+---
+title: 配送スケジュールの作成
+description: この手順は、販売注文の配送スケジュールを作成する方法を示します。
 author: omulvad
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, SalesDeliverySchedule, SalesEditLines,  SrsReportViewerForm
 audience: Application User
 ms.reviewer: kfend
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: d99dfae5e045262d34daf3529a6a3f4716b4afe3
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327967"
 ---
 # <a name="create-delivery-schedule"></a>配送スケジュールの作成
 
@@ -65,5 +65,4 @@ ms.lasthandoff: 10/16/2018
 22. [OK] をクリックします。
 23. [はい] をクリックします。
 24. ページを閉じます。
-
 

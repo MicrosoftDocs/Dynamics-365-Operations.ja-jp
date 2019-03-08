@@ -1,13 +1,13 @@
 ---
-title: "バーコード スキャナー用かんばん転送ボードのサポート"
-description: "かんばん転送ボードは、かんばん作業を選択、開始、完了、および空にするためのウィジェット バーコード スキャナーのスキャナー入力をサポートします。"
+title: バーコード スキャナー用かんばん転送ボードのサポート
+description: かんばん転送ボードは、かんばん作業を選択、開始、完了、および空にするためのウィジェット バーコード スキャナーのスキャナー入力をサポートします。
 author: ChristianRytt
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KanbanBoardTransferJob
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: e63a33af63144b78d0c375022b9802e11c255598
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: a8393efd51032271d3023f1e0569425a16222cc3
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "319457"
 ---
-
 # <a name="kanban-transfer-board-support-for-barcode-scanners"></a>バーコード スキャナー用かんばん転送ボードのサポート
 
 [!include [banner](../includes/banner.md)]
@@ -45,17 +44,17 @@ ms.lasthandoff: 11/03/2017
 | 空                 | かんばんカードで参照される材料取り扱い単位を空として登録します。              |
 | 選択                | かんばんカード番号を登録すると、自動的にかんばんリストに参照されるジョブが選択されます。 |
 
- 
-<a name="registration-mode-select"></a>[選択] の登録モード
+ 
+[選択] の登録モード
 ------------------------
 
-ジョブを選択するのにバーコードを使用する場合、かんばんボードの表示モードを変更します。 このモードでは、次の要件が適用されます:
+ジョブを選択するのにバーコードを使用する場合、かんばんボードの表示モードを変更します。このモードでは、次の要件が適用されます:
 
 -   スキャンしたかんばん作業のみを表示します。
 -   選択したジョブの詳細は、**詳細**クイック タブに表示されます。
 -   **メッセージ** クイック タブでは、選択したジョブに対してのみメッセージが表示されます。
 -   [アクション ウィンドウ] で使用できる機能を使用してジョブのステータスを変更できます。 今回、かんばん転送ボードは 1 つのジョブのみを継続して表示します。
--   ジョブのリストの情報を手動で更新するには、アクション ペインの \[**更新**\] (Shift+F5) をクリックします。 情報を更新すると、ジョブのフィルターの完全な結果が再び表示されます。
+-   ジョブのリストの情報を手動で更新するには、アクション ペインの **更新** (Shift+F5) をクリックします。 情報を更新すると、ジョブのフィルターの完全な結果が再び表示されます。
 
 ## <a name="job-status-and-possible-actions"></a>ジョブ状態と実行可能なアクション
 選択したジョブのステータスおよびイベントのかんばんにペギングされたジョブのステータスによって、このジョブをさらに処理するかどうかが決まります。 次の表に、これらのステータスやタスクに関する情報が表示されます。
@@ -188,7 +187,6 @@ ms.lasthandoff: 11/03/2017
 </tr>
 </tbody>
 </table>
-
 
 
 

@@ -1,31 +1,30 @@
 ---
-title: "Dynamics 365 for Talent Core HR の新機能および変更された機能 (2018 年 8 月)"
-description: "このトピックでは、Microsoft Dynamics 365 for Talent Core HR の新機能または変更された機能について説明します。"
+title: Dynamics 365 for Talent Core HR の新機能および変更された機能 (2018 年 8 月)
+description: このトピックでは、Microsoft Dynamics 365 for Talent Core HR の新機能または変更された機能について説明します。
 author: Darinkramer
 manager: AnnBe
 ms.date: 08/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-08-27
 ms.dyn365.ops.version: Talent August 2018 update
-ms.translationtype: HT
-ms.sourcegitcommit: d20bc3519096f1035d26f89d42aa7e8f0fc368cd
 ms.openlocfilehash: cdf0893835c1ee9edd89c43b3c5c842d89e6d526
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/29/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305205"
 ---
-
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-august-2018"></a>Dynamics 365 for Talent Core HR の新機能および変更された機能 (2018 年 8 月)
 
 [!include [banner](includes/banner.md)]
@@ -78,7 +77,7 @@ ms.lasthandoff: 08/29/2018
 
 従業員の特定の日付のいずれかを使用するように構成する場合は、登録プロセスでは指定された日付を使用して見越計上期間を計算します。 見越計上期間の基準は、見越計上処理中に何が使用されるかを理解するための従業員の計画登録にも表示されます。
 
-## <a name="microsoft-word-integration"></a>Microsoft Word の統合
+## <a name="microsoft-word-integration"></a>Microsoft Word 統合
 
 ドキュメント テンプレートは Core HR 全体で有効になります。 この機能により、作成した Word テンプレートに基づく文字およびレポートを作成できます。
 
@@ -88,4 +87,3 @@ ms.lasthandoff: 08/29/2018
 ## <a name="other-fixes"></a>その他の修正
 
 今回のリリースには、複数のバグ修正、新しいエンティティの追加、既存のエンティティの修正、およびローカライズされたラベルの変更が含まれます。
-

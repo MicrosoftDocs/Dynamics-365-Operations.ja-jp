@@ -1,13 +1,13 @@
 ---
-title: "作業テンプレートと場所ディレクティブを使用した倉庫作業の制御"
-description: "このトピックでは、作業テンプレートと場所ディレクティブを使用して作業が倉庫のどこでどのように実行されるかを決定する方法を説明します。"
+title: 作業テンプレートと場所ディレクティブを使用した倉庫作業の制御
+description: このトピックでは、作業テンプレートと場所ディレクティブを使用して作業が倉庫のどこでどのように実行されるかを決定する方法を説明します。
 author: perlynne
 manager: AnnBe
 ms.date: 09/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSLocDirFailure, WHSLocDirHint, WHSLocDirTable, WHSLocDirTableUOM, WHSRFMenuItem, WHSWork, WHSWorkClass, WHSWorkPool, WHSWorkTemplateTable
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: c4428613441424c81f4fd7dd92bbf842c62ce860
 ms.openlocfilehash: 74e7c36fb912f35252d6e40d17477ac2962cbc23
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "325414"
 ---
-
 # <a name="control-warehouse-work-by-using-work-templates-and-location-directives"></a>作業テンプレートと場所ディレクティブを使用した倉庫作業の制御
 
 [!include [banner](../includes/banner.md)]
@@ -56,7 +55,7 @@ ms.lasthandoff: 10/16/2018
 
 場所ディレクティブの明細行が、ルールを検索する場所検索ルールの適用に対し追加の制限を設定します。 ディレクティブを適用すべき最小数量と最大数量を指定でき、ディレクティブが特定の棚卸資産ユニットのためのものであることも指定できます。 たとえば、測定単位がパレットである場合、パレットの品目を特定の場所に配置できます。 数量が複数の場所に分割できるかどうかも指定できます。 場所ディレクティブ ヘッダーのように、各場所ディレクティブ明細行には、明細行を評価する順序を決定する順序番号があります。 
 
-場所ディレクティブには 1 つの追加の詳細レベルがあります: [*場所ディレクティブのアクション*]。 各明細行について複数の場所ディレクティブのアクションを定義できます。 この場合も、アクションが評価される順序を決定する番号順序が使用されます。 このレベルでは、倉庫内の最適な場所を検索する方法を定義するクエリを設定できます。 事前に定義された**戦略**設定を使用して最適な場所を検索することもできます。
+場所ディレクティブには 1 つの追加の詳細レベルがあります: *場所ディレクティブのアクション*。 各明細行について複数の場所ディレクティブのアクションを定義できます。 この場合も、アクションが評価される順序を決定する番号順序が使用されます。 このレベルでは、倉庫内の最適な場所を検索する方法を定義するクエリを設定できます。 事前に定義された**戦略**設定を使用して最適な場所を検索することもできます。
 
 ## <a name="location-directives-configuration-details"></a>場所のディレクティブ コンフィギュレーションの詳細 
 
@@ -163,4 +162,3 @@ ms.lasthandoff: 10/16/2018
 この例では、入荷ドックに登録されたばかりの在庫品目のために倉庫内で使用されていない収容能力を場所ディレクティブが検索する必要がある発注書プロセスについて考慮します。 最初に、既存の手持在庫との連結によって倉庫内の使用されていない収容能力を検索する必要があります。 連結ができない場合、空の場所を見つける必要があります。 
 
 このシナリオでは、2 つの場所ディレクティブ アクションを定義する必要があります。 順序の最初のアクションでは、**連結**戦略を使用する必要があり、2番目では、**作業を受け取らない空の場所**戦略を使用する必要があります。 倉庫内に収容能力がもうない場合、オーバーフローのシナリオを処理する 3 番目のアクションを定義しない限り、可能性として二通りの結果があります: 場所が定義されていなくても作業を作成できる、または作業作成プロセスが失敗する。 **場所ディレクティブ エラー**ページの設定で、結果を決定します。そのページで、各作業オーダー タイプごとに**場所のディレクティブ エラーで作業を停止する**オプションを選択するかどうか決定できます。
-

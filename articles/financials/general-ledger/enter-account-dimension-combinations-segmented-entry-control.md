@@ -1,13 +1,13 @@
 ---
-title: "勘定と分析コードの組み合わせの入力 (セグメント化されたエントリのコントロール)"
-description: "この記事は、勘定と分析コードの組み合わせまたは勘定科目を入力する方法について説明します。 入力経験は、多くの場合、セグメント化されたエントリのコントロールと呼ばれます。"
+title: 勘定と分析コードの組み合わせの入力 (セグメント化されたエントリのコントロール)
+description: この記事は、勘定と分析コードの組み合わせまたは勘定科目を入力する方法について説明します。 入力経験は、多くの場合、セグメント化されたエントリのコントロールと呼ばれます。
 author: aprilolson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DimensionConfigureAccountStructure
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c9addb2897bac68115a38f0239764ab65af2378c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: a4d8be319d74610bb2c1d4532a6d204d092bce84
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "315662"
 ---
-
 # <a name="enter-account-and-dimension-combinations-segmented-entry-control"></a>勘定と分析コードの組み合わせの入力 (セグメント化されたエントリのコントロール)
 
 [!include [banner](../includes/banner.md)]
@@ -106,11 +105,10 @@ ms.lasthandoff: 11/03/2017
 </tr>
 <tr class="odd">
 <td>Alt + W キー</td>
-<td>[<strong>すべて表示l</strong>] と [<strong>有効なものを表示</strong>] を切り替えます。</td>
+<td><strong>すべて表示l</strong> と <strong>有効なものを表示</strong> を切り替えます。</td>
 </tr>
 </tbody>
 </table>
-
 
 
 

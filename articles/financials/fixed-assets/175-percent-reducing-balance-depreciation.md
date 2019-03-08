@@ -1,13 +1,13 @@
 ---
-title: "175% 逓減残高による減価償却"
-description: "このトピックは、減価償却の 175% 逓減残高法の概要を示します。"
+title: 175% 逓減残高による減価償却
+description: このトピックは、減価償却の 175% 逓減残高法の概要を示します。
 author: saraschi2
 manager: AnnBe
 ms.date: 10/30/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 2a63293dbf24c27733f8013947aeab5792fa0db9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 8f78eb06930eab26d300fba6fd28333a5ce39cf8
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "320170"
 ---
-
 # <a name="175-percent-reducing-balance-depreciation"></a>175% 逓減残高による減価償却
 
 [!include [banner](../includes/banner.md)]
@@ -86,7 +85,6 @@ ms.lasthandoff: 05/08/2018
 
 > [!NOTE] 
 > 通常、175% 逓減残高による減価償却方法を使用して計算される金額が、定額法を使用して計算された金額より低くなる場合、残余耐用期間では定額法への換算が行われます。
-
 
 
 

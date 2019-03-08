@@ -1,13 +1,13 @@
 ---
-title: "倉庫のコンフィギュレーション"
-description: "この記事は、倉庫をコンフィギュレーションする方法について説明します。 これには、倉庫レイアウトおよび倉庫プロセスを有効にする方法に関する情報が含まれます。"
+title: 倉庫のコンフィギュレーション
+description: この記事は、倉庫をコンフィギュレーションする方法について説明します。 これには、倉庫レイアウトおよび倉庫プロセスを有効にする方法に関する情報が含まれます。
 author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventLocation, WHSLocation, WHSLocationBuild, WHSLocationProfile, WHSLocationType, WHSLocDirTable, WHSParameters, WHSWaveTemplateTable, WHSWorkPool, WHSWorkTemplateTable, WHSZone, WHSZoneGroup
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 7e50d03718234748d9ad5092500b970216c40284
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 79e0ce728cb3c1eec450d0814d0a3aeda131fe89
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "318445"
 ---
-
 # <a name="warehouse-configuration"></a>倉庫のコンフィギュレーション
 
 [!include [banner](../includes/banner.md)]
@@ -35,7 +34,7 @@ ms.lasthandoff: 05/08/2018
 **メモ:** この記事は、**倉庫管理**モジュールの機能が対象です (詳細な倉庫保管)。 **在庫管理**モジュールの倉庫機能は対象外です。
 
 ## <a name="warehouse-layout"></a>倉庫レイアウト
-Microsoft Dynamics 365 for Finance and Operations の倉庫管理システムは、変化するニーズを満たす倉庫レイアウトを定義する柔軟な方法を提供し、最適な倉庫効率を達成できるようにします。
+Microsoft Dynamics 365 for Finance and Operations の倉庫管理システムは、最適な倉庫効率を達成できるよう、変化するニーズを満たす倉庫レイアウトを定義する柔軟な方法を提供します。
 
 -   商品を最適に配置するために、優先順位が高い保管エリアと優先順位の低い保管エリアを設定できます。
 -   品目の温度条件や回転率など、さまざまな倉庫のニーズに対応するため、倉庫をゾーンに分割できます。
@@ -116,7 +115,6 @@ Finance and Operations で倉庫管理を使用するには、倉庫を作成し
 --------
 
 [WMS が有効な倉庫での位置の構成 (タスク ガイド)](tasks/configure-locations-wms-enabled-warehouse.md)
-
 
 
 

@@ -1,30 +1,29 @@
 ---
-title: "分析レポートは更新されない"
-description: "このトピックでは、顧客のデータの変更が、顧客のワークスペースに表示されない場合の対処方法について説明します。"
+title: 分析レポートは更新されない
+description: このトピックでは、顧客のデータの変更が、顧客のワークスペースに表示されない場合の対処方法について説明します。
 author: Darinkramer
 manager: AnnBe
 ms.date: 11/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.translationtype: HT
-ms.sourcegitcommit: d3f974f94b6c327fd70b8098d24f9e1f1e1e8eeb
 ms.openlocfilehash: 46f426a4b0012e87b4d9d21032870ac7fc33c4ae
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305123"
 ---
-
 # <a name="analytic-reports-are-not-updated"></a>分析レポートは更新されない
 
 [!include [banner](includes/banner.md)]
@@ -46,4 +45,3 @@ ms.lasthandoff: 12/04/2018
 1. ページの上部で**編集**を選択して、開始予定日/時刻を現在の時刻に近い分析を更新する値に設定します。
 
 ![バッチ ジョブ](media/batch-jobs.png)
-

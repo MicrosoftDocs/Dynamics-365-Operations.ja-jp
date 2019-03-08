@@ -1,13 +1,13 @@
 ---
-title: "需要予測の概要"
-description: "需要予測は、販売注文からの独立要求および顧客注文のすべての減結合ポイントで依存要求を予測する場合に使用されます。 拡張された需要予測の削減ルールは、大量のカスタマイズに理想的なソリューションを提供します。"
+title: 需要予測の概要
+description: 需要予測は、販売注文からの独立要求および顧客注文のすべての減結合ポイントで依存要求を予測する場合に使用されます。 拡張された需要予測の削減ルールは、大量のカスタマイズに理想的なソリューションを提供します。
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReqDemPlanCreateForecastDialog
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a645ee6f7e6085abc6e872d490b078f512c15aa1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 20eb67a341f462328bc73907fb3052b3405190d4
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310004"
 ---
-
 # <a name="demand-forecasting-overview"></a>需要予測の概要
 
 [!include [banner](../includes/banner.md)]
@@ -61,7 +60,7 @@ ms.lasthandoff: 05/08/2018
 
 [![需要予測の導入図](./media/demand-forecasting-introduction.png)](./media/demand-forecasting-introduction.png)
 
-需要予測の生成は、Finance and Operations で開始されます。 Finance and Operations トランザクション データベースからの履歴トランザクション データが収集され、ステージング テーブルに値が入力されます。 このステージング テーブルが Machine Learning サービスに後ほど提供されます。 最低限のカスタマイズで、さまざまなデータ ソースをステージング テーブルにプラグできます。 データ ソースには Microsoft Excel ファイル、コンマ区切り値 (CSV) ファイル、および Microsoft Dynamics AX 2009 および Microsoft Dynamics AX 2012 のデータが含まれます。 したがって、複数のシステムにまたがった履歴データを考慮する需要予測を生成できます。 ただし、品目名、販売単位などのマスター データは、さまざまなデータ ソース間でも同じである必要があります。
+需要予測の生成は、Finance and Operations で開始されます。 Finance and Operations トランザクション データベースからの履歴トランザクション データが収集され、ステージング テーブルに値が入力されます。 このステージング テーブルが Machine Learning サービスに後ほど提供されます。 最低限のカスタマイズで、さまざまなデータ ソースをステージング テーブルにプラグできます。 データ ソースには、Microsoft Excel ファイル、コンマ区切り値 (CSV) ファイル、および Microsoft Dynamics AX 2009 と Microsoft Dynamics AX 2012 からのデータが含まれます。 したがって、複数のシステムにまたがった履歴データを考慮する需要予測を生成できます。 ただし、品目名、販売単位などのマスター データは、さまざまなデータ ソース間でも同じである必要があります。
 
 Finance and Operations Demand forecasting Machine Learning experiments を使用する場合、ベースラインの予測を計算する 5 つの予測方法から一番最適な予測を検索します。 予測方法のパラメーターは Finance and Operations に統合されます。 
 
@@ -88,7 +87,6 @@ Finance and Operations での需要予測は、製造業界の顧客が予測プ
 [需要予測を計算するときにトランザクション履歴データから異常値を削除する](remove-historical-outliers-calculating-demand-forecast.md)
 
 [Extend the demand forecasting functionality (需要予測機能の拡張)](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
-
 
 
 

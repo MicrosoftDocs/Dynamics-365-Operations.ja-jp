@@ -1,13 +1,13 @@
---- 
-title: "買掛金勘定からの資産の作成と取得"
-description: "このタスク ガイドでは、購買プロセスで固定資産を作成し、取得する方法を説明します。"
+---
+title: 買掛金勘定からの資産の作成と取得
+description: このタスク ガイドでは、購買プロセスで固定資産を作成し、取得する方法を説明します。
 author: saraschi2
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetParameters, VendInvoiceWorkspace, VendEditInvoice, VendTableLookup, InventItemIdLookupSimple, AssetTable
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: e6c36338cc67855c79ec97d88bb8b633417b85c7
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "316421"
 ---
 # <a name="create-and-acquire-assets-from-accounts-payable"></a>買掛金勘定からの資産の作成と取得
 
@@ -58,5 +58,4 @@ ms.lasthandoff: 10/16/2018
 17. 一覧で、選択された行のリンクをクリックします。
 18. [転記] をクリックします。
     * 固定資産は、請求書の転記時に作成および取得されます。  
-
 

@@ -1,13 +1,13 @@
 ---
-title: "アンケートの設計"
-description: "このトピックは、アンケートを作成するプロセスについて説明します。 最初の手順では、アンケートを設計します。 アンケートを設計する場合は、質問と回答を書き込むだけでなく、回答を記録し、表にする構造を作成します。"
+title: アンケートの設計
+description: このトピックは、アンケートを作成するプロセスについて説明します。 最初の手順では、アンケートを設計します。 アンケートを設計する場合は、質問と回答を書き込むだけでなく、回答を記録し、表にする構造を作成します。
 author: kherr75
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KCMCollectionType, KMAnswerCollection, KMCollection
 audience: Application User
 ms.reviewer: rschloma
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
 ms.openlocfilehash: cd13fa1c424d1769b356d90012b187a77473473d
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "305166"
 ---
-
 # <a name="design-questionnaires"></a>アンケートの設計
 
 [!include [banner](includes/banner.md)]
@@ -94,7 +93,7 @@ ms.lasthandoff: 08/09/2018
 データの作成を開始する前にすべてのパラメータを定義する必要があります。 アンケート パラメータ設定はいつでも変更できます。
 
 ## <a name="questionnaire-components"></a>アンケート コンポーネント
-アンケートは 3 つの主要な要素から成り立ちます。多項選択の質問、質問、アンケート自体の回答を含んだ回答グループ。 オプションでアンケートの質問を結果グループにグループ化できます。 結果グループは、質問を分類し、アンケートの更なる分析を提供します。 
+アンケートは 3 つの主要な要素から成り立ちます。多項選択の質問、質問、アンケート自体の回答を含んだ回答グループ。オプションでアンケートの質問を結果グループにグループ化できます。 結果グループは、質問を分類し、アンケートの更なる分析を提供します。 
 
 [![QuestionnaireComponents](./media/questionnairecomponents-1024x615.png)](./media/questionnairecomponents.png)
 
@@ -154,7 +153,7 @@ ms.lasthandoff: 08/09/2018
 
 ### <a name="modify-a-questionnaire"></a>アンケートの変更
 
-**アンケート**ページで、次の作業を実行できます。
+**アンケート** ページで、次の作業を実行できます。
 
 -   結果グループや質問などの、アンケートの情報を編集します。
 -   質問を削除および追加します。
@@ -238,5 +237,4 @@ ms.lasthandoff: 08/09/2018
 [アンケートの配布および記入](distribute-questionnaires.md)
 
 [アンケート結果を表示して評価する](evaluate-questionnaire-results.md)
-
 
