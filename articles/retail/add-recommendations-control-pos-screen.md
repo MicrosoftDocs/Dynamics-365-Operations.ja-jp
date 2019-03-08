@@ -1,13 +1,13 @@
 ---
-title: "POS デバイスのトランザクション画面への推奨事項コントロールの追加"
-description: "このトピックでは、Microsoft Dynamics 365 for Retail の画面レイアウト デザイナーを使用して販売時点管理 (POS) デバイスのトランザクション画面にレコメンデーション コントロールを追加する方法について説明します。"
+title: POS デバイスのトランザクション画面への推奨事項コントロールの追加
+description: このトピックでは、Microsoft Dynamics 365 for Retail の画面レイアウト デザイナーを使用して販売時点管理 (POS) デバイスのトランザクション画面にレコメンデーション コントロールを追加する方法について説明します。
 author: ashishmsft
 manager: AnnBe
 ms.date: 02/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailStoreTable, RetailTillLayout
 audience: Application User
 ms.reviewer: josaw
@@ -19,80 +19,78 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 213b47422a5e31c2cfc2d173b8c7d9efdecc7568
-ms.contentlocale: ja-jp
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "320446"
 ---
-
-# <a name="add-a-recommendations-control-to-the-transaction-screen-on-pos-devices"></a><span data-ttu-id="63e3d-103">POS デバイスのトランザクション画面への推奨事項コントロールの追加</span><span class="sxs-lookup"><span data-stu-id="63e3d-103">Add a recommendations control to the transaction screen on POS devices</span></span>
+# <a name="add-a-recommendations-control-to-the-transaction-screen-on-pos-devices"></a><span data-ttu-id="9d92a-103">POS デバイスのトランザクション画面への推奨事項コントロールの追加</span><span class="sxs-lookup"><span data-stu-id="9d92a-103">Add a recommendations control to the transaction screen on POS devices</span></span>
 
 [!include [banner](includes/banner.md)]
 
 > [!NOTE]
-> <span data-ttu-id="63e3d-104">より良いアルゴリズムとより新しい小売指向の機能を加えたこの機能をデザインするため、製品レコメンデーション サービスの現在のバージョンを削除します。</span><span class="sxs-lookup"><span data-stu-id="63e3d-104">We are removing the current version of the product recommendation service as we redesign this feature with a better algorithm and newer retail-oriented capabilities.</span></span> <span data-ttu-id="63e3d-105">詳細については、[削除済みまたは推奨されない機能](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="63e3d-105">For more information see [Removed or deprecated features](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features).</span></span>
+> <span data-ttu-id="9d92a-104">より良いアルゴリズムとより新しい小売指向の機能を加えたこの機能をデザインするため、製品レコメンデーション サービスの現在のバージョンを削除します。</span><span class="sxs-lookup"><span data-stu-id="9d92a-104">We are removing the current version of the product recommendation service as we redesign this feature with a better algorithm and newer retail-oriented capabilities.</span></span> <span data-ttu-id="9d92a-105">詳細については、[削除済みまたは推奨されない機能](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="9d92a-105">For more information see [Removed or deprecated features](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features).</span></span>
 
-<span data-ttu-id="63e3d-106">このトピックでは、Microsoft Dynamics 365 for Retail の画面レイアウト デザイナーを使用して販売時点管理 (POS) デバイスのトランザクション画面にレコメンデーション コントロールを追加する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="63e3d-106">This topic describes how to add a recommendations control to the transaction screen on a point of sale (POS) device using the screen layout designer in Microsoft Dynamics 365 for Retail.</span></span>
+<span data-ttu-id="9d92a-106">このトピックでは、Microsoft Dynamics 365 for Retail の画面レイアウト デザイナーを使用して販売時点管理 (POS) デバイスのトランザクション画面にレコメンデーション コントロールを追加する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="9d92a-106">This topic describes how to add a recommendations control to the transaction screen on a point of sale (POS) device using the screen layout designer in Microsoft Dynamics 365 for Retail.</span></span>
 
-<span data-ttu-id="63e3d-107">Microsoft Dynamics 365 for Retail を使用するときに、POS デバイスに製品レコメンデーションを表示できます。</span><span class="sxs-lookup"><span data-stu-id="63e3d-107">You can display product recommendations on your POS device when you use Microsoft Dynamics 365 for Retail.</span></span> <span data-ttu-id="63e3d-108">[*レコメンデーション*] は、顧客の購買履歴、欲しい物のリストの品目、他の顧客がオンラインや従来型の店舗で購入した品目に基づいた興味を持ちそうな品目です。</span><span class="sxs-lookup"><span data-stu-id="63e3d-108">*Recommendations* are items that your customer might be interested in based on their purchase history, items in their wish list, and items that other customers purchased online and in brick-and-mortar stores.</span></span> <span data-ttu-id="63e3d-109">製品レコメンデーションを表示するには、画面レイアウト デザイナーを使用してトランザクション画面にコントロールを追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="63e3d-109">To display product recommendations, you need to add a control to the transaction screen using the screen layout designer.</span></span>
+<span data-ttu-id="9d92a-107">Microsoft Dynamics 365 for Retail を使用するときに、POS デバイスに製品レコメンデーションを表示できます。</span><span class="sxs-lookup"><span data-stu-id="9d92a-107">You can display product recommendations on your POS device when you use Microsoft Dynamics 365 for Retail.</span></span> <span data-ttu-id="9d92a-108">*レコメンデーション* は、顧客の購買履歴、欲しい物のリストの品目、他の顧客がオンラインや従来型の店舗で購入した品目に基づいた興味を持ちそうな品目です。</span><span class="sxs-lookup"><span data-stu-id="9d92a-108">*Recommendations* are items that your customer might be interested in based on their purchase history, items in their wish list, and items that other customers purchased online and in brick-and-mortar stores.</span></span> <span data-ttu-id="9d92a-109">製品レコメンデーションを表示するには、画面レイアウト デザイナーを使用してトランザクション画面にコントロールを追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="9d92a-109">To display product recommendations, you need to add a control to the transaction screen using the screen layout designer.</span></span>
 
-## <a name="open-layout-designer"></a><span data-ttu-id="63e3d-110">レイアウト デザイナーを開く</span><span class="sxs-lookup"><span data-stu-id="63e3d-110">Open Layout designer</span></span>
+## <a name="open-layout-designer"></a><span data-ttu-id="9d92a-110">レイアウト デザイナーを開く</span><span class="sxs-lookup"><span data-stu-id="9d92a-110">Open Layout designer</span></span>
 
-1. <span data-ttu-id="63e3d-111">**小売り** &gt; **チャンネル設定** &gt; **POS 設定** &gt; **POS** &gt; **画面レイアウト**の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="63e3d-111">Go to **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **POS** &gt; **Screen layouts**.</span></span>
-2. <span data-ttu-id="63e3d-112">クイック フィルターを使用して、コントロールを追加する画面を検索します。</span><span class="sxs-lookup"><span data-stu-id="63e3d-112">Use the Quick Filter to find the screen that you want to add the control to.</span></span> <span data-ttu-id="63e3d-113">たとえば、「F2CP16:9M」の値を使用して**画面レイアウト ID** フィールドをフィルター処理します。</span><span class="sxs-lookup"><span data-stu-id="63e3d-113">For example, filter on the **Screen layout ID** field using a value of 'F2CP16:9M'.</span></span>
-3. <span data-ttu-id="63e3d-114">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="63e3d-114">In the list, find and select the desired record.</span></span> <span data-ttu-id="63e3d-115">たとえば、「名前: F2CP16:9M 画面レイアウト ID: F2CP16:9M」を選択します。</span><span class="sxs-lookup"><span data-stu-id="63e3d-115">For example, select 'Name: F2CP16:9M Screen Layout ID: F2CP16:9M'.</span></span>
-4. <span data-ttu-id="63e3d-116">**レイアウト デザイナー**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="63e3d-116">Click **Layout designer**.</span></span>
-5. <span data-ttu-id="63e3d-117">プロンプトに従ってレイアウト デザイナーを起動します。</span><span class="sxs-lookup"><span data-stu-id="63e3d-117">Follow the prompts to launch the layout designer.</span></span> <span data-ttu-id="63e3d-118">資格情報を求められたら、レイアウト デザイナーを**画面レイアウト**ページから起動した際に使用していたものと同じ資格情報を入力します。</span><span class="sxs-lookup"><span data-stu-id="63e3d-118">When prompted for credentials, enter the same credentials that were in use when the Layout designer was launched from **Screen layouts** page.</span></span>
-6. <span data-ttu-id="63e3d-119">ログインすると、以下のものに類似したページが表示されます。</span><span class="sxs-lookup"><span data-stu-id="63e3d-119">When you log in, a page similar to the one below appears.</span></span> <span data-ttu-id="63e3d-120">レイアウトは、店舗に対して行われたカスタマイズによって異なります。</span><span class="sxs-lookup"><span data-stu-id="63e3d-120">The layout will be different depending on the customizations that were made for your store.</span></span>
+1. <span data-ttu-id="9d92a-111">**小売り** &gt; **チャンネル設定** &gt; **POS 設定** &gt; **POS** &gt; **画面レイアウト**の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="9d92a-111">Go to **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **POS** &gt; **Screen layouts**.</span></span>
+2. <span data-ttu-id="9d92a-112">クイック フィルターを使用して、コントロールを追加する画面を検索します。</span><span class="sxs-lookup"><span data-stu-id="9d92a-112">Use the Quick Filter to find the screen that you want to add the control to.</span></span> <span data-ttu-id="9d92a-113">たとえば、「F2CP16:9M」の値を使用して**画面レイアウト ID** フィールドをフィルター処理します。</span><span class="sxs-lookup"><span data-stu-id="9d92a-113">For example, filter on the **Screen layout ID** field using a value of 'F2CP16:9M'.</span></span>
+3. <span data-ttu-id="9d92a-114">一覧で、目的のレコードを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="9d92a-114">In the list, find and select the desired record.</span></span> <span data-ttu-id="9d92a-115">たとえば、「名前: F2CP16:9M 画面レイアウト ID: F2CP16:9M」を選択します。</span><span class="sxs-lookup"><span data-stu-id="9d92a-115">For example, select 'Name: F2CP16:9M Screen Layout ID: F2CP16:9M'.</span></span>
+4. <span data-ttu-id="9d92a-116">**レイアウト デザイナー**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9d92a-116">Click **Layout designer**.</span></span>
+5. <span data-ttu-id="9d92a-117">プロンプトに従ってレイアウト デザイナーを起動します。</span><span class="sxs-lookup"><span data-stu-id="9d92a-117">Follow the prompts to launch the layout designer.</span></span> <span data-ttu-id="9d92a-118">資格情報を求められたら、レイアウト デザイナーを**画面レイアウト**ページから起動した際に使用していたものと同じ資格情報を入力します。</span><span class="sxs-lookup"><span data-stu-id="9d92a-118">When prompted for credentials, enter the same credentials that were in use when the Layout designer was launched from **Screen layouts** page.</span></span>
+6. <span data-ttu-id="9d92a-119">ログインすると、以下のものに類似したページが表示されます。</span><span class="sxs-lookup"><span data-stu-id="9d92a-119">When you log in, a page similar to the one below appears.</span></span> <span data-ttu-id="9d92a-120">レイアウトは、店舗に対して行われたカスタマイズによって異なります。</span><span class="sxs-lookup"><span data-stu-id="9d92a-120">The layout will be different depending on the customizations that were made for your store.</span></span>
 
-    <span data-ttu-id="63e3d-121">[![screenlayout-pic-1](./media/screenlayout-pic-1.png)](./media/screenlayout-pic-1.png)</span><span class="sxs-lookup"><span data-stu-id="63e3d-121">[![screenlayout-pic-1](./media/screenlayout-pic-1.png)](./media/screenlayout-pic-1.png)</span></span>
+    <span data-ttu-id="9d92a-121">[![screenlayout-pic-1](./media/screenlayout-pic-1.png)](./media/screenlayout-pic-1.png)</span><span class="sxs-lookup"><span data-stu-id="9d92a-121">[![screenlayout-pic-1](./media/screenlayout-pic-1.png)](./media/screenlayout-pic-1.png)</span></span>
 
-## <a name="choose-a-display-option"></a><span data-ttu-id="63e3d-122">表示オプションを選択</span><span class="sxs-lookup"><span data-stu-id="63e3d-122">Choose a display option</span></span>
+## <a name="choose-a-display-option"></a><span data-ttu-id="9d92a-122">表示オプションを選択</span><span class="sxs-lookup"><span data-stu-id="9d92a-122">Choose a display option</span></span>
 
-<span data-ttu-id="63e3d-123">使用できる 2 つのコンフィギュレーション オプションがあります。</span><span class="sxs-lookup"><span data-stu-id="63e3d-123">There are two configurations options available.</span></span> <span data-ttu-id="63e3d-124">店舗に最も合っているオプションを選択し、残りの手順にに従ってコントロールのセットアップを完了します。</span><span class="sxs-lookup"><span data-stu-id="63e3d-124">Choose the option that works best for your store, and follow the remaining instructions to finish setting up the control.</span></span> <span data-ttu-id="63e3d-125">2 つのオプションは次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="63e3d-125">The two options are:</span></span>
+<span data-ttu-id="9d92a-123">使用できる 2 つのコンフィギュレーション オプションがあります。</span><span class="sxs-lookup"><span data-stu-id="9d92a-123">There are two configurations options available.</span></span> <span data-ttu-id="9d92a-124">店舗に最も合っているオプションを選択し、残りの手順にに従ってコントロールのセットアップを完了します。</span><span class="sxs-lookup"><span data-stu-id="9d92a-124">Choose the option that works best for your store, and follow the remaining instructions to finish setting up the control.</span></span> <span data-ttu-id="9d92a-125">2 つのオプションは次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="9d92a-125">The two options are:</span></span>
 
-- <span data-ttu-id="63e3d-126">レコメンデーションは常に表示できます。</span><span class="sxs-lookup"><span data-stu-id="63e3d-126">Recommendations are always visible.</span></span>
-- <span data-ttu-id="63e3d-127">**レコメンデーション**タブが画面の右側のグリッドに表示されます。</span><span class="sxs-lookup"><span data-stu-id="63e3d-127">A **Recommendations** tab appears in the grid on the right side of the screen.</span></span>
+- <span data-ttu-id="9d92a-126">レコメンデーションは常に表示できます。</span><span class="sxs-lookup"><span data-stu-id="9d92a-126">Recommendations are always visible.</span></span>
+- <span data-ttu-id="9d92a-127">**レコメンデーション**タブが画面の右側のグリッドに表示されます。</span><span class="sxs-lookup"><span data-stu-id="9d92a-127">A **Recommendations** tab appears in the grid on the right side of the screen.</span></span>
 
-### <a name="make-recommendations-always-visible"></a><span data-ttu-id="63e3d-128">レコメンデーションを常に表示する</span><span class="sxs-lookup"><span data-stu-id="63e3d-128">Make recommendations always visible</span></span>
+### <a name="make-recommendations-always-visible"></a><span data-ttu-id="9d92a-128">レコメンデーションを常に表示する</span><span class="sxs-lookup"><span data-stu-id="9d92a-128">Make recommendations always visible</span></span>
 
-1. <span data-ttu-id="63e3d-129">左側が顧客パネルと同じ高さになるように、トランザクション明細行の詳細領域の高さを下げます。</span><span class="sxs-lookup"><span data-stu-id="63e3d-129">Reduce the height of the transaction lines details area so that it is the same height as the customer panel to its left.</span></span>
+1. <span data-ttu-id="9d92a-129">左側が顧客パネルと同じ高さになるように、トランザクション明細行の詳細領域の高さを下げます。</span><span class="sxs-lookup"><span data-stu-id="9d92a-129">Reduce the height of the transaction lines details area so that it is the same height as the customer panel to its left.</span></span>
 
-    <span data-ttu-id="63e3d-130">[![screenlayout-pic-2](./media/screenlayout-pic-2.png)](./media/screenlayout-pic-2.png)</span><span class="sxs-lookup"><span data-stu-id="63e3d-130">[![screenlayout-pic-2](./media/screenlayout-pic-2.png)](./media/screenlayout-pic-2.png)</span></span>
+    <span data-ttu-id="9d92a-130">[![screenlayout-pic-2](./media/screenlayout-pic-2.png)](./media/screenlayout-pic-2.png)</span><span class="sxs-lookup"><span data-stu-id="9d92a-130">[![screenlayout-pic-2](./media/screenlayout-pic-2.png)](./media/screenlayout-pic-2.png)</span></span>
 
-2. <span data-ttu-id="63e3d-131">左側のメニューから、トランザクション明細行の詳細領域とトランザクション画面の中央下にあるボタン グリッドの間にレコメンデーション コントロールをドラッグ アンド ドロップします。</span><span class="sxs-lookup"><span data-stu-id="63e3d-131">From the menu on the left, drag and drop the recommendations control to between the transaction line details area and the button grid in the center bottom of the transaction screen.</span></span> <span data-ttu-id="63e3d-132">そのスペースに合うようにコントロールのサイズを変更します。</span><span class="sxs-lookup"><span data-stu-id="63e3d-132">Resize the control so it fits in that space.</span></span>
+2. <span data-ttu-id="9d92a-131">左側のメニューから、トランザクション明細行の詳細領域とトランザクション画面の中央下にあるボタン グリッドの間にレコメンデーション コントロールをドラッグ アンド ドロップします。</span><span class="sxs-lookup"><span data-stu-id="9d92a-131">From the menu on the left, drag and drop the recommendations control to between the transaction line details area and the button grid in the center bottom of the transaction screen.</span></span> <span data-ttu-id="9d92a-132">そのスペースに合うようにコントロールのサイズを変更します。</span><span class="sxs-lookup"><span data-stu-id="9d92a-132">Resize the control so it fits in that space.</span></span>
 
-    <span data-ttu-id="63e3d-133">[![screenlayout-pic-3](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)</span><span class="sxs-lookup"><span data-stu-id="63e3d-133">[![screenlayout-pic-3](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)</span></span>
+    <span data-ttu-id="9d92a-133">[![screenlayout-pic-3](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)</span><span class="sxs-lookup"><span data-stu-id="9d92a-133">[![screenlayout-pic-3](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)</span></span>
 
-3. <span data-ttu-id="63e3d-134">**X** をクリックして、レイアウト デザイナーを保存して終了します。</span><span class="sxs-lookup"><span data-stu-id="63e3d-134">Click the **X** to save and exit Layout designer.</span></span>
-4. <span data-ttu-id="63e3d-135">Dynamics 365 for Retail で、**小売り** &gt; **小売 IT** &gt; **配送スケジュール**に移動します。</span><span class="sxs-lookup"><span data-stu-id="63e3d-135">In Dynamics 365 for Retail, go to **Retail** &gt; **Retail IT** &gt; **Distribution schedules**.</span></span>
-5. <span data-ttu-id="63e3d-136">ボックスの一覧で、 **1090 レジスター**を選択します。</span><span class="sxs-lookup"><span data-stu-id="63e3d-136">In the list, select **1090 Registers**.</span></span>
-6. <span data-ttu-id="63e3d-137">**今すぐ実行**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="63e3d-137">Click **Run now**.</span></span>
+3. <span data-ttu-id="9d92a-134">**X** をクリックして、レイアウト デザイナーを保存して終了します。</span><span class="sxs-lookup"><span data-stu-id="9d92a-134">Click the **X** to save and exit Layout designer.</span></span>
+4. <span data-ttu-id="9d92a-135">Dynamics 365 for Retail で、**小売り** &gt; **小売 IT** &gt; **配送スケジュール**に移動します。</span><span class="sxs-lookup"><span data-stu-id="9d92a-135">In Dynamics 365 for Retail, go to **Retail** &gt; **Retail IT** &gt; **Distribution schedules**.</span></span>
+5. <span data-ttu-id="9d92a-136">ボックスの一覧で、 **1090 レジスター**を選択します。</span><span class="sxs-lookup"><span data-stu-id="9d92a-136">In the list, select **1090 Registers**.</span></span>
+6. <span data-ttu-id="9d92a-137">**今すぐ実行**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9d92a-137">Click **Run now**.</span></span>
 
-### <a name="add-a-recommendations-tab-to-the-button-grid-on-the-right-side-of-the-screen"></a><span data-ttu-id="63e3d-138">画面の右側のボタン グリッドにレコメンデーション タブを追加する</span><span class="sxs-lookup"><span data-stu-id="63e3d-138">Add a Recommendations tab to the button grid on the right side of the screen</span></span>
+### <a name="add-a-recommendations-tab-to-the-button-grid-on-the-right-side-of-the-screen"></a><span data-ttu-id="9d92a-138">画面の右側のボタン グリッドにレコメンデーション タブを追加する</span><span class="sxs-lookup"><span data-stu-id="9d92a-138">Add a Recommendations tab to the button grid on the right side of the screen</span></span>
 
-1. <span data-ttu-id="63e3d-139">ページの右側にあるボタン グリッドで最後のタブの下にある空いている場所を右クリックします。</span><span class="sxs-lookup"><span data-stu-id="63e3d-139">Right-click in the empty space below the last tab on the button grid located on the right side of the page.</span></span>
-2. <span data-ttu-id="63e3d-140"> *\*カスタマイズ*\*をクリックします。</span><span class="sxs-lookup"><span data-stu-id="63e3d-140">Click **Customize**.</span></span>
+1. <span data-ttu-id="9d92a-139">ページの右側にあるボタン グリッドで最後のタブの下にある空いている場所を右クリックします。</span><span class="sxs-lookup"><span data-stu-id="9d92a-139">Right-click in the empty space below the last tab on the button grid located on the right side of the page.</span></span>
+2. <span data-ttu-id="9d92a-140"> *\*カスタマイズ*\*をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9d92a-140">Click **Customize**.</span></span>
 
-    <span data-ttu-id="63e3d-141">[![pic-5](./media/pic-5.png)](./media/pic-5.png)</span><span class="sxs-lookup"><span data-stu-id="63e3d-141">[![pic-5](./media/pic-5.png)](./media/pic-5.png)</span></span>
+    <span data-ttu-id="9d92a-141">[![pic-5](./media/pic-5.png)](./media/pic-5.png)</span><span class="sxs-lookup"><span data-stu-id="9d92a-141">[![pic-5](./media/pic-5.png)](./media/pic-5.png)</span></span>
 
-3. <span data-ttu-id="63e3d-142">**新しいタブ**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="63e3d-142">Click **New tab**.</span></span>
-4. <span data-ttu-id="63e3d-143">さっき追加した新しいタブを探します。</span><span class="sxs-lookup"><span data-stu-id="63e3d-143">Find the new tab that you just added.</span></span> <span data-ttu-id="63e3d-144">スクロール ダウンしなければならない場合があります。</span><span class="sxs-lookup"><span data-stu-id="63e3d-144">You may need to scroll down.</span></span>
-5. <span data-ttu-id="63e3d-145">**コンテンツ**のドロップダウンで、**お勧めの製品**を選択します。</span><span class="sxs-lookup"><span data-stu-id="63e3d-145">In the **Contents** drop-down, select **Recommended products**.</span></span>
+3. <span data-ttu-id="9d92a-142">**新しいタブ**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9d92a-142">Click **New tab**.</span></span>
+4. <span data-ttu-id="9d92a-143">さっき追加した新しいタブを探します。</span><span class="sxs-lookup"><span data-stu-id="9d92a-143">Find the new tab that you just added.</span></span> <span data-ttu-id="9d92a-144">スクロール ダウンしなければならない場合があります。</span><span class="sxs-lookup"><span data-stu-id="9d92a-144">You may need to scroll down.</span></span>
+5. <span data-ttu-id="9d92a-145">**コンテンツ**のドロップダウンで、**お勧めの製品**を選択します。</span><span class="sxs-lookup"><span data-stu-id="9d92a-145">In the **Contents** drop-down, select **Recommended products**.</span></span>
 
-    <span data-ttu-id="63e3d-146">[![pic-6](./media/pic-6.png)](./media/pic-6.png)</span><span class="sxs-lookup"><span data-stu-id="63e3d-146">[![pic-6](./media/pic-6.png)](./media/pic-6.png)</span></span>
+    <span data-ttu-id="9d92a-146">[![pic-6](./media/pic-6.png)](./media/pic-6.png)</span><span class="sxs-lookup"><span data-stu-id="9d92a-146">[![pic-6](./media/pic-6.png)](./media/pic-6.png)</span></span>
 
-6. <span data-ttu-id="63e3d-147">**ラベル**フィールドに、このレコメンデーション タブの名前を入力します。たとえば、「お勧めの製品」と入力します。</span><span class="sxs-lookup"><span data-stu-id="63e3d-147">In the **Label** field, type a name for the recommendations tab. For example, type 'Recommended products'.</span></span>
-7. <span data-ttu-id="63e3d-148">**画像**フィールドで、タブで表示する画像を選択します。</span><span class="sxs-lookup"><span data-stu-id="63e3d-148">In the **Image** field, select the image to appear on the tab.</span></span>
-8. <span data-ttu-id="63e3d-149"> *\*OK** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="63e3d-149">Click **OK**.</span></span> <span data-ttu-id="63e3d-150">新しいタブがボタン グリッドに表示されます。</span><span class="sxs-lookup"><span data-stu-id="63e3d-150">The new tab appears in the button grid.</span></span>
-9. <span data-ttu-id="63e3d-151">**X** をクリックして、レイアウト デザイナーを保存して終了します。</span><span class="sxs-lookup"><span data-stu-id="63e3d-151">Click the **X** to save and exit Layout designer.</span></span>
-10. <span data-ttu-id="63e3d-152">Dynamics 365 for Retail で、**小売り** &gt; **Retail IT** &gt; **配送スケジュール**に移動します。</span><span class="sxs-lookup"><span data-stu-id="63e3d-152">In Dynamics 365 for Retail, go to **Retail** &gt; **Retail IT** &gt; **Distribution schedules**.</span></span>
-11. <span data-ttu-id="63e3d-153">一覧で、 **1090 レジスター**を選択します。</span><span class="sxs-lookup"><span data-stu-id="63e3d-153">In the list, select **1090 Registers**.</span></span>
-12. <span data-ttu-id="63e3d-154">**今すぐ実行**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="63e3d-154">Click **Run now**.</span></span>
+6. <span data-ttu-id="9d92a-147">**ラベル**フィールドに、このレコメンデーション タブの名前を入力します。たとえば、「お勧めの製品」と入力します。</span><span class="sxs-lookup"><span data-stu-id="9d92a-147">In the **Label** field, type a name for the recommendations tab. For example, type 'Recommended products'.</span></span>
+7. <span data-ttu-id="9d92a-148">**画像**フィールドで、タブで表示する画像を選択します。</span><span class="sxs-lookup"><span data-stu-id="9d92a-148">In the **Image** field, select the image to appear on the tab.</span></span>
+8. <span data-ttu-id="9d92a-149"> *\*OK*\*をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9d92a-149">Click **OK**.</span></span> <span data-ttu-id="9d92a-150">新しいタブがボタン グリッドに表示されます。</span><span class="sxs-lookup"><span data-stu-id="9d92a-150">The new tab appears in the button grid.</span></span>
+9. <span data-ttu-id="9d92a-151">**X** をクリックして、レイアウト デザイナーを保存して終了します。</span><span class="sxs-lookup"><span data-stu-id="9d92a-151">Click the **X** to save and exit Layout designer.</span></span>
+10. <span data-ttu-id="9d92a-152">Dynamics 365 for Retail で、**小売り** &gt; **小売 IT** &gt; **配送スケジュール**に移動します。</span><span class="sxs-lookup"><span data-stu-id="9d92a-152">In Dynamics 365 for Retail, go to **Retail** &gt; **Retail IT** &gt; **Distribution schedules**.</span></span>
+11. <span data-ttu-id="9d92a-153">一覧で、 **1090 レジスター**を選択します。</span><span class="sxs-lookup"><span data-stu-id="9d92a-153">In the list, select **1090 Registers**.</span></span>
+12. <span data-ttu-id="9d92a-154">**今すぐ実行**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9d92a-154">Click **Run now**.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="63e3d-155">その他のリソース</span><span class="sxs-lookup"><span data-stu-id="63e3d-155">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="9d92a-155">その他のリソース</span><span class="sxs-lookup"><span data-stu-id="9d92a-155">Additional resources</span></span>
 
-[<span data-ttu-id="63e3d-156">カスタマイズされた製品推奨事項の概要</span><span class="sxs-lookup"><span data-stu-id="63e3d-156">Personalized product recommendations overview</span></span>](personalized-product-recommendations.md)
-
+[<span data-ttu-id="9d92a-156">カスタマイズされた製品推奨事項の概要</span><span class="sxs-lookup"><span data-stu-id="9d92a-156">Personalized product recommendations overview</span></span>](personalized-product-recommendations.md)

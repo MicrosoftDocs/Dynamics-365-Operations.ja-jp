@@ -1,39 +1,37 @@
 ---
-title: "WebSearchAX ページは破棄されました"
-description: "WebSearchAX ページを破棄する必要があります。 お気に入りの検索エンジンからサイト検索を使用して、置換することをお勧めします。"
+title: WebSearchAX ページは破棄されました
+description: WebSearchAX ページを破棄する必要があります。 お気に入りの検索エンジンからサイト検索を使用して、置換することをお勧めします。
 author: margoc
 manager: AnnBe
 ms.date: 10/12/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: margoc
 ms.search.scope: AX 2012
 ms.custom: 62303
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: AX 2012
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: f1b9be6c3a0c8f96b98e2705c4d98516812702e3
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "324310"
 ---
-
-# <a name="websearchax-page-has-been-retired"></a><span data-ttu-id="51c24-104">WebSearchAX ページは破棄されました</span><span class="sxs-lookup"><span data-stu-id="51c24-104">WebSearchAX page has been retired</span></span>
+# <a name="websearchax-page-has-been-retired"></a><span data-ttu-id="96486-104">WebSearchAX ページは破棄されました</span><span class="sxs-lookup"><span data-stu-id="96486-104">WebSearchAX page has been retired</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="51c24-105">WebSearchAX ページを破棄する必要があります。</span><span class="sxs-lookup"><span data-stu-id="51c24-105">We've had to retire the WebSearchAX page.</span></span> <span data-ttu-id="51c24-106">お気に入りの検索エンジンからサイト検索を使用して、置換することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="51c24-106">We recommend that you use site search from your favorite search engine to replace it.</span></span> <span data-ttu-id="51c24-107">例:</span><span class="sxs-lookup"><span data-stu-id="51c24-107">For example:</span></span>
+<span data-ttu-id="96486-105">WebSearchAX ページを破棄する必要があります。</span><span class="sxs-lookup"><span data-stu-id="96486-105">We've had to retire the WebSearchAX page.</span></span> <span data-ttu-id="96486-106">お気に入りの検索エンジンからサイト検索を使用して、置換することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="96486-106">We recommend that you use site search from your favorite search engine to replace it.</span></span> <span data-ttu-id="96486-107">例:</span><span class="sxs-lookup"><span data-stu-id="96486-107">For example:</span></span>
 
-<span data-ttu-id="51c24-108">サイト: technet.microsoft.com dynamics ax 2012「検索用語」</span><span class="sxs-lookup"><span data-stu-id="51c24-108">site:technet.microsoft.com dynamics ax 2012 "search term"</span></span>
+<span data-ttu-id="96486-108">サイト: technet.microsoft.com dynamics ax 2012「検索用語」</span><span class="sxs-lookup"><span data-stu-id="96486-108">site:technet.microsoft.com dynamics ax 2012 "search term"</span></span>
 
-<span data-ttu-id="51c24-109">- または -</span><span class="sxs-lookup"><span data-stu-id="51c24-109">–or–</span></span>
+<span data-ttu-id="96486-109">- または -</span><span class="sxs-lookup"><span data-stu-id="96486-109">–or–</span></span>
 
-<span data-ttu-id="51c24-110">サイト: msdn.microsoft.com Dynamics AX 2012 「検索用語」</span><span class="sxs-lookup"><span data-stu-id="51c24-110">site:msdn.microsoft.com dynamics ax 2012 "search term"</span></span>
-
+<span data-ttu-id="96486-110">サイト: msdn.microsoft.com Dynamics AX 2012 「検索用語」</span><span class="sxs-lookup"><span data-stu-id="96486-110">site:msdn.microsoft.com dynamics ax 2012 "search term"</span></span>

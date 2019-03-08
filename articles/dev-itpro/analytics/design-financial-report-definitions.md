@@ -1,13 +1,13 @@
 ---
-title: "財務諸表デザイナーでのレポート定義"
-description: "この記事では、レポート定義に関する情報を示します。 レポート定義は、行定義、列定義、およびオプションのレポート ツリー定義を使用してレポートを作成するレポート コンポーネント (または構成要素) です。 レポート定義は、レポートをカスタマイズするためのオプションおよび設定も提供します。"
+title: 財務諸表デザイナーでのレポート定義
+description: この記事では、レポート定義に関する情報を示します。 レポート定義は、行定義、列定義、およびオプションのレポート ツリー定義を使用してレポートを作成するレポート コンポーネント (または構成要素) です。 レポート定義は、レポートをカスタマイズするためのオプションおよび設定も提供します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,72 +18,70 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 322f1cca32053224e1cd6dbaf29c098b983b5e1f
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327346"
 ---
-
-# <a name="report-definitions-in-financial-report-designer"></a><span data-ttu-id="9d458-105">財務諸表デザイナーでのレポート定義</span><span class="sxs-lookup"><span data-stu-id="9d458-105">Report definitions in financial report designer</span></span>
+# <a name="report-definitions-in-financial-report-designer"></a><span data-ttu-id="1a9a0-105">財務諸表デザイナーでのレポート定義</span><span class="sxs-lookup"><span data-stu-id="1a9a0-105">Report definitions in financial report designer</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="9d458-106">この記事では、レポート定義に関する情報を示します。</span><span class="sxs-lookup"><span data-stu-id="9d458-106">This article provides information about report definitions.</span></span> <span data-ttu-id="9d458-107">レポート定義は、行定義、列定義、およびオプションのレポート ツリー定義を使用してレポートを作成するレポート コンポーネント (または構成要素) です。</span><span class="sxs-lookup"><span data-stu-id="9d458-107">A report definition is a report component (or building block) that uses a row definition, a column definition, and an optional reporting tree definition to create a report.</span></span> <span data-ttu-id="9d458-108">レポート定義は、レポートをカスタマイズするためのオプションおよび設定も提供します。</span><span class="sxs-lookup"><span data-stu-id="9d458-108">A report definition also provides options and settings that for customizing a report.</span></span> 
+<span data-ttu-id="1a9a0-106">この記事では、レポート定義に関する情報を示します。</span><span class="sxs-lookup"><span data-stu-id="1a9a0-106">This article provides information about report definitions.</span></span> <span data-ttu-id="1a9a0-107">レポート定義は、行定義、列定義、およびオプションのレポート ツリー定義を使用してレポートを作成するレポート コンポーネント (または構成要素) です。</span><span class="sxs-lookup"><span data-stu-id="1a9a0-107">A report definition is a report component (or building block) that uses a row definition, a column definition, and an optional reporting tree definition to create a report.</span></span> <span data-ttu-id="1a9a0-108">レポート定義は、レポートをカスタマイズするためのオプションおよび設定も提供します。</span><span class="sxs-lookup"><span data-stu-id="1a9a0-108">A report definition also provides options and settings that for customizing a report.</span></span> 
 
-<span data-ttu-id="9d458-109">レポート定義は、行定義、列定義、およびオプションのレポート ツリー定義を使用してレポートを作成するレポート コンポーネント (または構成要素) です。</span><span class="sxs-lookup"><span data-stu-id="9d458-109">A report definition is a report component (or building block) that uses a row definition, a column definition, and an optional reporting tree definition to create a report.</span></span> <span data-ttu-id="9d458-110">レポート定義は、レポートのカスタマイズに使用できるオプションおよび設定も提供しています。</span><span class="sxs-lookup"><span data-stu-id="9d458-110">A report definition also provides options and settings that you can use to customize a report.</span></span> <span data-ttu-id="9d458-111">行定義と列定義を定義したら、レポート定義に結合する必要があります。</span><span class="sxs-lookup"><span data-stu-id="9d458-111">After you define row definitions and column definitions, you must combine them in a report definition.</span></span> <span data-ttu-id="9d458-112">この時点で、詳細レベルおよびレポートの日付などの定義の他の側面も定義します。</span><span class="sxs-lookup"><span data-stu-id="9d458-112">At this point, you also define other aspects of the definitions, such as the detail level and report date.</span></span> <span data-ttu-id="9d458-113">これで、レポートの保存および生成ができます。</span><span class="sxs-lookup"><span data-stu-id="9d458-113">You can then save and generate a report.</span></span> <span data-ttu-id="9d458-114">財務諸表は、レポート用に次の詳細レベルを提供します。</span><span class="sxs-lookup"><span data-stu-id="9d458-114">Financial reporting offers the following levels of detail:</span></span>
+<span data-ttu-id="1a9a0-109">レポート定義は、行定義、列定義、およびオプションのレポート ツリー定義を使用してレポートを作成するレポート コンポーネント (または構成要素) です。</span><span class="sxs-lookup"><span data-stu-id="1a9a0-109">A report definition is a report component (or building block) that uses a row definition, a column definition, and an optional reporting tree definition to create a report.</span></span> <span data-ttu-id="1a9a0-110">レポート定義は、レポートのカスタマイズに使用できるオプションおよび設定も提供しています。</span><span class="sxs-lookup"><span data-stu-id="1a9a0-110">A report definition also provides options and settings that you can use to customize a report.</span></span> <span data-ttu-id="1a9a0-111">行定義と列定義を定義したら、レポート定義に結合する必要があります。</span><span class="sxs-lookup"><span data-stu-id="1a9a0-111">After you define row definitions and column definitions, you must combine them in a report definition.</span></span> <span data-ttu-id="1a9a0-112">この時点で、詳細レベルおよびレポートの日付などの定義の他の側面も定義します。</span><span class="sxs-lookup"><span data-stu-id="1a9a0-112">At this point, you also define other aspects of the definitions, such as the detail level and report date.</span></span> <span data-ttu-id="1a9a0-113">これで、レポートの保存および生成ができます。</span><span class="sxs-lookup"><span data-stu-id="1a9a0-113">You can then save and generate a report.</span></span> <span data-ttu-id="1a9a0-114">財務諸表は、レポート用に次の詳細レベルを提供します。</span><span class="sxs-lookup"><span data-stu-id="1a9a0-114">Financial reporting offers the following levels of detail:</span></span>
 
-- <span data-ttu-id="9d458-115">財務</span><span class="sxs-lookup"><span data-stu-id="9d458-115">Financial</span></span>
-- <span data-ttu-id="9d458-116">[財務と勘定]</span><span class="sxs-lookup"><span data-stu-id="9d458-116">Financial and Account</span></span>
-- <span data-ttu-id="9d458-117">[財務]、[勘定] および [トランザクション]</span><span class="sxs-lookup"><span data-stu-id="9d458-117">Financial, Account, and Transaction</span></span>
+- <span data-ttu-id="1a9a0-115">財務</span><span class="sxs-lookup"><span data-stu-id="1a9a0-115">Financial</span></span>
+- <span data-ttu-id="1a9a0-116">[財務と勘定]</span><span class="sxs-lookup"><span data-stu-id="1a9a0-116">Financial and Account</span></span>
+- <span data-ttu-id="1a9a0-117">[財務]、[勘定] および [トランザクション]</span><span class="sxs-lookup"><span data-stu-id="1a9a0-117">Financial, Account, and Transaction</span></span>
 
-<span data-ttu-id="9d458-118">ただし、Microsoft Dynamics ERP システムへのデータの保管方法により、トランザクションの詳細がレポートに使用できない場合があります。</span><span class="sxs-lookup"><span data-stu-id="9d458-118">However, depending on how data is stored in the Microsoft Dynamics ERP system, transaction details might not be available in reports.</span></span>
+<span data-ttu-id="1a9a0-118">ただし、Microsoft Dynamics ERP システムにデータを格納する方法によって、トランザクションの詳細がレポートで使用できない場合があります。</span><span class="sxs-lookup"><span data-stu-id="1a9a0-118">However, depending on how data is stored in the Microsoft Dynamics ERP system, transaction details might not be available in reports.</span></span>
 
-## <a name="create-a-report-definition"></a><span data-ttu-id="9d458-119">レポート定義の作成</span><span class="sxs-lookup"><span data-stu-id="9d458-119">Create a report definition</span></span>
-1. <span data-ttu-id="9d458-120">[レポート デザイナー] の**ファイル**メニューで、**新規**をクリックし、**レポート定義**を選択します。</span><span class="sxs-lookup"><span data-stu-id="9d458-120">In Report Designer, on the **File** menu, click **New**, and then select **Report Definition**.</span></span>
-2. <span data-ttu-id="9d458-121">**レポート**、**出荷および配送**、**ヘッダーおよびフッター**、**設定**タブで、適切な情報を指定します。</span><span class="sxs-lookup"><span data-stu-id="9d458-121">Specify the appropriate information on the **Report**, **Output and Distribution**, **Headers and Footers**, and **Settings** tabs.</span></span>
+## <a name="create-a-report-definition"></a><span data-ttu-id="1a9a0-119">レポート定義の作成</span><span class="sxs-lookup"><span data-stu-id="1a9a0-119">Create a report definition</span></span>
+1. <span data-ttu-id="1a9a0-120">[レポート デザイナー] の**ファイル**メニューで、**新規**をクリックし、**レポート定義**を選択します。</span><span class="sxs-lookup"><span data-stu-id="1a9a0-120">In Report Designer, on the **File** menu, click **New**, and then select **Report Definition**.</span></span>
+2. <span data-ttu-id="1a9a0-121">**レポート**、**出荷および配送**、**ヘッダーおよびフッター**、**設定**タブで、適切な情報を指定します。</span><span class="sxs-lookup"><span data-stu-id="1a9a0-121">Specify the appropriate information on the **Report**, **Output and Distribution**, **Headers and Footers**, and **Settings** tabs.</span></span>
 
-## <a name="contents-of-a-report-definition"></a><span data-ttu-id="9d458-122">レポート定義の内容</span><span class="sxs-lookup"><span data-stu-id="9d458-122">Contents of a report definition</span></span>
-<span data-ttu-id="9d458-123">次の表は、レポート定義のタブと、情報の使用方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="9d458-123">The following table describes the tabs in a report definition and how the information is used.</span></span>
+## <a name="contents-of-a-report-definition"></a><span data-ttu-id="1a9a0-122">レポート定義の内容</span><span class="sxs-lookup"><span data-stu-id="1a9a0-122">Contents of a report definition</span></span>
+<span data-ttu-id="1a9a0-123">次の表は、レポート定義のタブと、情報の使用方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="1a9a0-123">The following table describes the tabs in a report definition and how the information is used.</span></span>
 
 <table>
 <thead>
 <tr>
-<th><span data-ttu-id="9d458-124">タブ</span><span class="sxs-lookup"><span data-stu-id="9d458-124">Tab</span></span></th>
-<th><span data-ttu-id="9d458-125">説明</span><span class="sxs-lookup"><span data-stu-id="9d458-125">Description</span></span></th>
+<th><span data-ttu-id="1a9a0-124">タブ</span><span class="sxs-lookup"><span data-stu-id="1a9a0-124">Tab</span></span></th>
+<th><span data-ttu-id="1a9a0-125">説明</span><span class="sxs-lookup"><span data-stu-id="1a9a0-125">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><span data-ttu-id="9d458-126">レポート </span><span class="sxs-lookup"><span data-stu-id="9d458-126">Report</span></span></td>
-<td><span data-ttu-id="9d458-127">レポートを作成し、レポートをコンフィギュレーションし、既存のレポートを変更します。</span><span class="sxs-lookup"><span data-stu-id="9d458-127">Create a report, configure a report, or modify an existing report.</span></span></td>
+<td><span data-ttu-id="1a9a0-126">レポート </span><span class="sxs-lookup"><span data-stu-id="1a9a0-126">Report</span></span></td>
+<td><span data-ttu-id="1a9a0-127">レポートを作成し、レポートをコンフィギュレーションし、既存のレポートを変更します。</span><span class="sxs-lookup"><span data-stu-id="1a9a0-127">Create a report, configure a report, or modify an existing report.</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="9d458-128">[出荷および配送]</span><span class="sxs-lookup"><span data-stu-id="9d458-128">Output and Distribution</span></span></td>
-<td><span data-ttu-id="9d458-129">レポートの出力のタイプと出力先を変更します。</span><span class="sxs-lookup"><span data-stu-id="9d458-129">Change the output type and destination of the report.</span></span></td>
+<td><span data-ttu-id="1a9a0-128">[出荷および配送]</span><span class="sxs-lookup"><span data-stu-id="1a9a0-128">Output and Distribution</span></span></td>
+<td><span data-ttu-id="1a9a0-129">レポートの出力のタイプと出力先を変更します。</span><span class="sxs-lookup"><span data-stu-id="1a9a0-129">Change the output type and destination of the report.</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="9d458-130">[ヘッダーとフッター]</span><span class="sxs-lookup"><span data-stu-id="9d458-130">Headers and Footers</span></span></td>
-<td><span data-ttu-id="9d458-131">レポートのヘッダーおよびフッターを定義および書式設定します。</span><span class="sxs-lookup"><span data-stu-id="9d458-131">Define and format the headers and footers for the report.</span></span> <span data-ttu-id="9d458-132">たとえば、ヘッダーまたはフッターにテキストや画像を追加できます。</span><span class="sxs-lookup"><span data-stu-id="9d458-132">For example, you can add text or images to the header or footer.</span></span> <span data-ttu-id="9d458-133">財務諸表は、画像の .bmp、.jpg、.png ファイルをサポートします。</span><span class="sxs-lookup"><span data-stu-id="9d458-133">Financial reporting supports .bmp, .jpg, and .png files for images.</span></span> <span data-ttu-id="9d458-134">自動テキスト コードを追加して、会社名、レポート名、ページ番号などの他の情報を挿入できます。</span><span class="sxs-lookup"><span data-stu-id="9d458-134">You can also add autotext codes to insert other information, such as a company name, report name, or page number.</span></span></td>
+<td><span data-ttu-id="1a9a0-130">[ヘッダーとフッター]</span><span class="sxs-lookup"><span data-stu-id="1a9a0-130">Headers and Footers</span></span></td>
+<td><span data-ttu-id="1a9a0-131">レポートのヘッダーおよびフッターを定義および書式設定します。</span><span class="sxs-lookup"><span data-stu-id="1a9a0-131">Define and format the headers and footers for the report.</span></span> <span data-ttu-id="1a9a0-132">たとえば、ヘッダーまたはフッターにテキストや画像を追加できます。</span><span class="sxs-lookup"><span data-stu-id="1a9a0-132">For example, you can add text or images to the header or footer.</span></span> <span data-ttu-id="1a9a0-133">財務諸表は、画像の .bmp、.jpg、.png ファイルをサポートします。</span><span class="sxs-lookup"><span data-stu-id="1a9a0-133">Financial reporting supports .bmp, .jpg, and .png files for images.</span></span> <span data-ttu-id="1a9a0-134">自動テキスト コードを追加して、会社名、レポート名、ページ番号などの他の情報を挿入できます。</span><span class="sxs-lookup"><span data-stu-id="1a9a0-134">You can also add autotext codes to insert other information, such as a company name, report name, or page number.</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="9d458-135">設定</span><span class="sxs-lookup"><span data-stu-id="9d458-135">Settings</span></span></td>
-<td><span data-ttu-id="9d458-136">次の設定などのレポート定義の設定を指定します :</span><span class="sxs-lookup"><span data-stu-id="9d458-136">Specify report definition settings, such as the following settings:</span></span>
+<td><span data-ttu-id="1a9a0-135">設定</span><span class="sxs-lookup"><span data-stu-id="1a9a0-135">Settings</span></span></td>
+<td><span data-ttu-id="1a9a0-136">次の設定などのレポート定義の設定を指定します :</span><span class="sxs-lookup"><span data-stu-id="1a9a0-136">Specify report definition settings, such as the following settings:</span></span>
 <ul>
-<li><span data-ttu-id="9d458-137">金額の書式設定および丸め</span><span class="sxs-lookup"><span data-stu-id="9d458-137">Formatting and rounding amounts</span></span></li>
-<li><span data-ttu-id="9d458-138">詳細レポートの書式設定</span><span class="sxs-lookup"><span data-stu-id="9d458-138">Format detail reports</span></span></li>
-<li><span data-ttu-id="9d458-139">レポート ツリーの書式設定</span><span class="sxs-lookup"><span data-stu-id="9d458-139">Format reporting trees</span></span></li>
-<li><span data-ttu-id="9d458-140">例外レポートの生成</span><span class="sxs-lookup"><span data-stu-id="9d458-140">Generate an exception report</span></span></li>
-<li><span data-ttu-id="9d458-141">通貨換算の指定</span><span class="sxs-lookup"><span data-stu-id="9d458-141">Specify currency conversion</span></span></li>
-<li><span data-ttu-id="9d458-142">小計およびフィルターの勘定の詳細</span><span class="sxs-lookup"><span data-stu-id="9d458-142">Subtotal and filter account details</span></span></li>
+<li><span data-ttu-id="1a9a0-137">金額の書式設定および丸め</span><span class="sxs-lookup"><span data-stu-id="1a9a0-137">Formatting and rounding amounts</span></span></li>
+<li><span data-ttu-id="1a9a0-138">詳細レポートの書式設定</span><span class="sxs-lookup"><span data-stu-id="1a9a0-138">Format detail reports</span></span></li>
+<li><span data-ttu-id="1a9a0-139">レポート ツリーの書式設定</span><span class="sxs-lookup"><span data-stu-id="1a9a0-139">Format reporting trees</span></span></li>
+<li><span data-ttu-id="1a9a0-140">例外レポートの生成</span><span class="sxs-lookup"><span data-stu-id="1a9a0-140">Generate an exception report</span></span></li>
+<li><span data-ttu-id="1a9a0-141">通貨換算の指定</span><span class="sxs-lookup"><span data-stu-id="1a9a0-141">Specify currency conversion</span></span></li>
+<li><span data-ttu-id="1a9a0-142">小計およびフィルターの勘定の詳細</span><span class="sxs-lookup"><span data-stu-id="1a9a0-142">Subtotal and filter account details</span></span></li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
 
-## <a name="additional-resources"></a><span data-ttu-id="9d458-143">その他のリソース</span><span class="sxs-lookup"><span data-stu-id="9d458-143">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="1a9a0-143">その他のリソース</span><span class="sxs-lookup"><span data-stu-id="1a9a0-143">Additional resources</span></span>
 
-[<span data-ttu-id="9d458-144">財務報告</span><span class="sxs-lookup"><span data-stu-id="9d458-144">Financial reporting</span></span>](financial-reporting-intro.md)
-
+[<span data-ttu-id="1a9a0-144">財務報告</span><span class="sxs-lookup"><span data-stu-id="1a9a0-144">Financial reporting</span></span>](financial-reporting-intro.md)

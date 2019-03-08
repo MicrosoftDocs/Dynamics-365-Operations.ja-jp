@@ -1,13 +1,13 @@
 ---
-title: "ワークスペースのフィルター処理およびコンフィギュレーション"
-description: "この記事は、ワークスペースを構成してフィルター処理する方法の概要について説明します。"
+title: ワークスペースのフィルター処理およびコンフィギュレーション
+description: この記事は、ワークスペースを構成してフィルター処理する方法の概要について説明します。
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankTreasurerWorkspace, HcmBenefitWorkspace, BudgetPlanningWorkspace, BusinessProcessGenericWorkspace, RetailCatalogManagementWorkspace, RetailCategoryAndProductWorkspace, RetailChannelManagementWorkspace, HcmCompensationWorkspace, CAMCostAccountingLedgerAdminWorkspace, CostAdminWorkspace, CostAnalysisWorkspace, CAMCostControlWorkspace, CustomerCollectionManagerWorkspace, CustomerInvoiceWorkspace, CustPaymentWorkspace, DataManagementWorkspace, DataValidationWorkspace, ERWorkspace, LedgerPeriodCloseProjectWorkspace, AssetWorkspace, GeneralJournalEntryWorkspace, VendVendorPortalInvoiceWorkspace, BudgetTrackingWorkspace, ReqCreatePlanWorkspace, BusinessProcessGenericOwnerWorkspace, SelfHealingWorkspace, WHSOutboundWorkMonitoringWorkspace, WHSWavePlanningWorkspace, PayrollWorkspace, HcmWorkforceWorkspace, RetailDiscountPricingWorkspace, EcoResProductDiscreteManufacturingWorkspace, KanbanPrepareProductForLeanWorkspace, EcoResProductProcessManufacturingWorkspace, EcoResProductVariantMaintainWorkspace, JmgShopSupervisorWorkspace, ProjProjectManagementWorkspace, VendVendorPortalWorkspace, PurchOrderMaintainWorkspace, PurchOrderProcessReceiptsWorkspace, HcmRecruitmentWorkspace, EcoResProductMaintainWorkspace, FMClerkWorkspace, OpResLifecycleManagementWorkspace, RetailITWorkspace, RetailChannelOperationsWorkspace, RetailStoreManagementWorkspace, SalesOrderProcessingWorkspace, SalesReturnWorkspace, SystemAdministrationWorkspaceForm, VendVendorRequestForQuotationsWorkspace, VendVendorProfileManagementWorkspace, VendInvoiceWorkspace, VendPaymentWorkspace
 audience: Application User
 ms.reviewer: sericks
@@ -18,51 +18,49 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 77d30759d2a8ed85a28f8a29663057f20496f16d
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "325690"
 ---
-
-# <a name="configure-and-filter-workspaces"></a><span data-ttu-id="831cd-103">ワークスペースのフィルター処理およびコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="831cd-103">Configure and filter workspaces</span></span>
+# <a name="configure-and-filter-workspaces"></a><span data-ttu-id="da207-103">ワークスペースのフィルター処理およびコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="da207-103">Configure and filter workspaces</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="831cd-104">この記事は、ワークスペースを構成してフィルター処理する方法の概要について説明します。</span><span class="sxs-lookup"><span data-stu-id="831cd-104">This article provides an overview about how to configure and filter workspaces.</span></span>
+<span data-ttu-id="da207-104">この記事は、ワークスペースを構成してフィルター処理する方法の概要について説明します。</span><span class="sxs-lookup"><span data-stu-id="da207-104">This article provides an overview about how to configure and filter workspaces.</span></span>
 
-## <a name="configuring-a-workspace"></a><span data-ttu-id="831cd-105">ワークスペースのコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="831cd-105">Configuring a workspace</span></span>
+## <a name="configuring-a-workspace"></a><span data-ttu-id="da207-105">ワークスペースのコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="da207-105">Configuring a workspace</span></span>
 
-<span data-ttu-id="831cd-106">ワークスペース全体に適用される設定を変更することにより、ワークスペースの外観と動作を変更できます。</span><span class="sxs-lookup"><span data-stu-id="831cd-106">You can change the appearance and behavior of some workspaces by updating settings that apply to the whole workspace.</span></span> <span data-ttu-id="831cd-107">ワークスペースが構成できる場合、[アクション] ウィンドウには設定を変更するボタンがあり、これをクリックするように指示が表示されます。</span><span class="sxs-lookup"><span data-stu-id="831cd-107">When a workspace can be configured, the Action Pane includes a button that instructs you to click it to make configuration changes.</span></span> <span data-ttu-id="831cd-108">たとえば次の図では、**自分のワークスペースのコンフィギュレーション**というボタンが表示されています。</span><span class="sxs-lookup"><span data-stu-id="831cd-108">For example, in the following illustration, the button is named **Configure my workspace**.</span></span>
+<span data-ttu-id="da207-106">ワークスペース全体に適用される設定を変更することにより、ワークスペースの外観と動作を変更できます。</span><span class="sxs-lookup"><span data-stu-id="da207-106">You can change the appearance and behavior of some workspaces by updating settings that apply to the whole workspace.</span></span> <span data-ttu-id="da207-107">ワークスペースが構成できる場合、[アクション] ウィンドウには設定を変更するボタンがあり、これをクリックするように指示が表示されます。</span><span class="sxs-lookup"><span data-stu-id="da207-107">When a workspace can be configured, the Action Pane includes a button that instructs you to click it to make configuration changes.</span></span> <span data-ttu-id="da207-108">たとえば次の図では、**自分のワークスペースのコンフィギュレーション**というボタンが表示されています。</span><span class="sxs-lookup"><span data-stu-id="da207-108">For example, in the following illustration, the button is named **Configure my workspace**.</span></span>
 
-<span data-ttu-id="831cd-109">[![ワークスペースの構成とフィルター](./media/configure-and-filter-workspaces.png)](./media/configure-and-filter-workspaces.png)</span><span class="sxs-lookup"><span data-stu-id="831cd-109">[![configure-and-filter-workspaces](./media/configure-and-filter-workspaces.png)](./media/configure-and-filter-workspaces.png)</span></span>
+<span data-ttu-id="da207-109">[![ワークスペースの構成とフィルター](./media/configure-and-filter-workspaces.png)](./media/configure-and-filter-workspaces.png)</span><span class="sxs-lookup"><span data-stu-id="da207-109">[![configure-and-filter-workspaces](./media/configure-and-filter-workspaces.png)](./media/configure-and-filter-workspaces.png)</span></span>
 
-<span data-ttu-id="831cd-110">ボタンをクリックすると、ワークスペースの定義済設定を変更できるダイアログが表示されます。</span><span class="sxs-lookup"><span data-stu-id="831cd-110">When you click the button, a dialog appears, where you can modify the predefined settings for the workspace.</span></span> <span data-ttu-id="831cd-111">このダイアログに表示される特定の設定は、各ワークスペースによって異なり、ワークスペースで使用できる特定のコントロールや業務データによっても異なります。</span><span class="sxs-lookup"><span data-stu-id="831cd-111">The specific settings that you see in this dialog vary by workspace, and depend on the specific controls and business data that are available in the workspace.</span></span>
+<span data-ttu-id="da207-110">ボタンをクリックすると、ワークスペースの定義済設定を変更できるダイアログが表示されます。</span><span class="sxs-lookup"><span data-stu-id="da207-110">When you click the button, a dialog appears, where you can modify the predefined settings for the workspace.</span></span> <span data-ttu-id="da207-111">このダイアログに表示される特定の設定は、各ワークスペースによって異なり、ワークスペースで使用できる特定のコントロールや業務データによっても異なります。</span><span class="sxs-lookup"><span data-stu-id="da207-111">The specific settings that you see in this dialog vary by workspace, and depend on the specific controls and business data that are available in the workspace.</span></span>
 
-<span data-ttu-id="831cd-112">[![マイ ワークスペースの構成](./media/configure-my-workspace.png)](./media/configure-my-workspace.png)</span><span class="sxs-lookup"><span data-stu-id="831cd-112">[![configure-my-workspace](./media/configure-my-workspace.png)](./media/configure-my-workspace.png)</span></span>
+<span data-ttu-id="da207-112">[![マイ ワークスペースの構成](./media/configure-my-workspace.png)](./media/configure-my-workspace.png)</span><span class="sxs-lookup"><span data-stu-id="da207-112">[![configure-my-workspace](./media/configure-my-workspace.png)](./media/configure-my-workspace.png)</span></span>
 
-## <a name="filtering-a-workspace"></a><span data-ttu-id="831cd-113">ワークスペースのフィルタ処理</span><span class="sxs-lookup"><span data-stu-id="831cd-113">Filtering a workspace</span></span>
+## <a name="filtering-a-workspace"></a><span data-ttu-id="da207-113">ワークスペースのフィルタ処理</span><span class="sxs-lookup"><span data-stu-id="da207-113">Filtering a workspace</span></span>
 
-<span data-ttu-id="831cd-114">多くのワークスペースでは、表示される内容をフィルタ処理することができます。</span><span class="sxs-lookup"><span data-stu-id="831cd-114">Many workspaces let you filter the content that appears in them.</span></span> <span data-ttu-id="831cd-115">使用できるコントロールにより、ワークスペースのすべて内容や、ワークスペースの特定のセクションにある内容をフィルタ処理できる場合があります。</span><span class="sxs-lookup"><span data-stu-id="831cd-115">The controls that are available might let you filter all the content in the workspace or only the content in a specific section of the workspace.</span></span> <span data-ttu-id="831cd-116">ワークスペースのフィルターは、ルックアップ、コンボ ボックス、自由書式のテキスト フィールド、または他のコントロール タイプである場合があります。</span><span class="sxs-lookup"><span data-stu-id="831cd-116">The filters on workspaces can be lookups, combo boxes, free-form text fields, or other types of controls.</span></span> <span data-ttu-id="831cd-117">ただし、次のセクションで説明するように、それぞれのフィルタのタイプは同じ効果があります。</span><span class="sxs-lookup"><span data-stu-id="831cd-117">However, every type of filter has the same effects, as described in the following sections.</span></span>
+<span data-ttu-id="da207-114">多くのワークスペースでは、表示される内容をフィルタ処理することができます。</span><span class="sxs-lookup"><span data-stu-id="da207-114">Many workspaces let you filter the content that appears in them.</span></span> <span data-ttu-id="da207-115">使用できるコントロールにより、ワークスペースのすべて内容や、ワークスペースの特定のセクションにある内容をフィルタ処理できる場合があります。</span><span class="sxs-lookup"><span data-stu-id="da207-115">The controls that are available might let you filter all the content in the workspace or only the content in a specific section of the workspace.</span></span> <span data-ttu-id="da207-116">ワークスペースのフィルターは、ルックアップ、コンボ ボックス、自由書式のテキスト フィールド、または他のコントロール タイプである場合があります。</span><span class="sxs-lookup"><span data-stu-id="da207-116">The filters on workspaces can be lookups, combo boxes, free-form text fields, or other types of controls.</span></span> <span data-ttu-id="da207-117">ただし、次のセクションで説明するように、それぞれのフィルタのタイプは同じ効果があります。</span><span class="sxs-lookup"><span data-stu-id="da207-117">However, every type of filter has the same effects, as described in the following sections.</span></span>
 
-### <a name="workspace-wide-filters"></a><span data-ttu-id="831cd-118">ワークスペース全体のフィルター</span><span class="sxs-lookup"><span data-stu-id="831cd-118">Workspace-wide filters</span></span>
+### <a name="workspace-wide-filters"></a><span data-ttu-id="da207-118">ワークスペース全体のフィルター</span><span class="sxs-lookup"><span data-stu-id="da207-118">Workspace-wide filters</span></span>
 
-<span data-ttu-id="831cd-119">ワークスペース全体のフィルターを使用すると、ワークスペース全体をフィルター処理できます。</span><span class="sxs-lookup"><span data-stu-id="831cd-119">You can filter the whole workspace by using a workspace-wide filter.</span></span> <span data-ttu-id="831cd-120">ワークスペース全体のフィルターは、ワークスペースの左上隅にあります。</span><span class="sxs-lookup"><span data-stu-id="831cd-120">A workspace-wide filter appears in the upper-left corner of the workspace.</span></span> <span data-ttu-id="831cd-121">ドロップダウン リストで特定の値を選択すると、その選択内容に基づいてワークスペースのコンテンツがフィルター処理されます。</span><span class="sxs-lookup"><span data-stu-id="831cd-121">When you select a specific value in the drop-down list, the contents of the workspace are filtered based on that selection.</span></span>
+<span data-ttu-id="da207-119">ワークスペース全体のフィルターを使用すると、ワークスペース全体をフィルター処理できます。</span><span class="sxs-lookup"><span data-stu-id="da207-119">You can filter the whole workspace by using a workspace-wide filter.</span></span> <span data-ttu-id="da207-120">ワークスペース全体のフィルターは、ワークスペースの左上隅にあります。</span><span class="sxs-lookup"><span data-stu-id="da207-120">A workspace-wide filter appears in the upper-left corner of the workspace.</span></span> <span data-ttu-id="da207-121">ドロップダウン リストで特定の値を選択すると、その選択内容に基づいてワークスペースのコンテンツがフィルター処理されます。</span><span class="sxs-lookup"><span data-stu-id="da207-121">When you select a specific value in the drop-down list, the contents of the workspace are filtered based on that selection.</span></span>
 
-<span data-ttu-id="831cd-122">[![ワークスペース フィルター](./media/workspace-filter.png)](./media/workspace-filter.png)</span><span class="sxs-lookup"><span data-stu-id="831cd-122">[![workspace-filter](./media/workspace-filter.png)](./media/workspace-filter.png)</span></span>
+<span data-ttu-id="da207-122">[![ワークスペース フィルター](./media/workspace-filter.png)](./media/workspace-filter.png)</span><span class="sxs-lookup"><span data-stu-id="da207-122">[![workspace-filter](./media/workspace-filter.png)](./media/workspace-filter.png)</span></span>
 
-<span data-ttu-id="831cd-123">クリックしてフィルターを開くと、複数のオプションが表示されます。</span><span class="sxs-lookup"><span data-stu-id="831cd-123">When you click to open the filter, you're presented with several options.</span></span>
+<span data-ttu-id="da207-123">クリックしてフィルターを開くと、複数のオプションが表示されます。</span><span class="sxs-lookup"><span data-stu-id="da207-123">When you click to open the filter, you're presented with several options.</span></span>
 
-<span data-ttu-id="831cd-124">[![展開済ワークスペース フィルター](./media/workspace-filter-expanded.png)](./media/workspace-filter-expanded.png)</span><span class="sxs-lookup"><span data-stu-id="831cd-124">[![workspace-filter-expanded](./media/workspace-filter-expanded.png)](./media/workspace-filter-expanded.png)</span></span>
+<span data-ttu-id="da207-124">[![展開済ワークスペース フィルター](./media/workspace-filter-expanded.png)](./media/workspace-filter-expanded.png)</span><span class="sxs-lookup"><span data-stu-id="da207-124">[![workspace-filter-expanded](./media/workspace-filter-expanded.png)](./media/workspace-filter-expanded.png)</span></span>
 
-<span data-ttu-id="831cd-125">オプションに基づいワークスペースのてフィルターを適用するオプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="831cd-125">Select an option to filter the workspace based on that option.</span></span>
+<span data-ttu-id="da207-125">オプションに基づいワークスペースのてフィルターを適用するオプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="da207-125">Select an option to filter the workspace based on that option.</span></span>
 
-### <a name="workspace-section-filters"></a><span data-ttu-id="831cd-126">ワークスペース セクション フィルター</span><span class="sxs-lookup"><span data-stu-id="831cd-126">Workspace section filters</span></span>
+### <a name="workspace-section-filters"></a><span data-ttu-id="da207-126">ワークスペース セクション フィルター</span><span class="sxs-lookup"><span data-stu-id="da207-126">Workspace section filters</span></span>
 
-<span data-ttu-id="831cd-127">ワークスペースのそれぞれのセクションにフィルタが存在する場合は、各セクションを個別にフィルタ処理できます。</span><span class="sxs-lookup"><span data-stu-id="831cd-127">If individual sections of the workspace have filters, you can filter each section separately.</span></span> <span data-ttu-id="831cd-128">次の図では、フィルター (テキスト「フィルター」を含むフィールド) は自由書式のテキスト フィールドのフィルターの例です。</span><span class="sxs-lookup"><span data-stu-id="831cd-128">In the following illustration, the filter (the field that contains the text "Filter") is an example of a free-form text field filter.</span></span>
+<span data-ttu-id="da207-127">ワークスペースのそれぞれのセクションにフィルタが存在する場合は、各セクションを個別にフィルタ処理できます。</span><span class="sxs-lookup"><span data-stu-id="da207-127">If individual sections of the workspace have filters, you can filter each section separately.</span></span> <span data-ttu-id="da207-128">次の図では、フィルター (テキスト「フィルター」を含むフィールド) は自由書式のテキスト フィールドのフィルターの例です。</span><span class="sxs-lookup"><span data-stu-id="da207-128">In the following illustration, the filter (the field that contains the text "Filter") is an example of a free-form text field filter.</span></span>
 
-<span data-ttu-id="831cd-129">[![ワークスペース セクション フィルター](./media/workspace-section-filters.png)](./media/workspace-section-filters.png)</span><span class="sxs-lookup"><span data-stu-id="831cd-129">[![workspace-section-filters](./media/workspace-section-filters.png)](./media/workspace-section-filters.png)</span></span>
+<span data-ttu-id="da207-129">[![ワークスペース セクション フィルター](./media/workspace-section-filters.png)](./media/workspace-section-filters.png)</span><span class="sxs-lookup"><span data-stu-id="da207-129">[![workspace-section-filters](./media/workspace-section-filters.png)](./media/workspace-section-filters.png)</span></span>
 
-<span data-ttu-id="831cd-130">ワークスペース全体のフィルターと同じように、希望のフィルター値を選択または入力して、セクションのコンテンツを絞り込みます。</span><span class="sxs-lookup"><span data-stu-id="831cd-130">As with a workspace-wide filter, select or enter a value in the field to filter the contents of the section.</span></span>
-
+<span data-ttu-id="da207-130">ワークスペース全体のフィルターと同じように、希望のフィルター値を選択または入力して、セクションのコンテンツを絞り込みます。</span><span class="sxs-lookup"><span data-stu-id="da207-130">As with a workspace-wide filter, select or enter a value in the field to filter the contents of the section.</span></span>

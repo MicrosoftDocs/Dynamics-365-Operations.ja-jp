@@ -1,13 +1,13 @@
---- 
-title: "販売担当者の機能プロファイルのコンフィギュレーション"
-description: "この手順は、販売担当者に適用される店舗の機能プロファイルの設定を構成する方法を示します。"
+---
+title: 販売担当者の機能プロファイルのコンフィギュレーション
+description: この手順は、販売担当者に適用される店舗の機能プロファイルの設定を構成する方法を示します。
 author: jblucher
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailFunctionalityProfile
 audience: Application User
 ms.reviewer: josaw
@@ -17,24 +17,23 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 650c97c5feecb674f18086e2da1e5fee0ffad254
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312580"
 ---
-# <a name="configure-the-functionality-profile-for-a-sales-representative"></a><span data-ttu-id="834fa-103">販売担当者の機能プロファイルのコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="834fa-103">Configure the functionality profile for a sales representative</span></span>
+# <a name="configure-the-functionality-profile-for-a-sales-representative"></a><span data-ttu-id="ae68f-103">販売担当者の機能プロファイルのコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="ae68f-103">Configure the functionality profile for a sales representative</span></span>
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-<span data-ttu-id="834fa-104">この手順は、販売担当者に適用される店舗の機能プロファイルの設定を構成する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="834fa-104">This procedure demonstrates how to configure a store's functionality profile settings that apply to sales representatives.</span></span> <span data-ttu-id="834fa-105">この手順では、 USRT デモ データの会社が使用されます。</span><span class="sxs-lookup"><span data-stu-id="834fa-105">This procedures uses the USRT demo data company.</span></span>
+<span data-ttu-id="ae68f-104">この手順は、販売担当者に適用される店舗の機能プロファイルの設定を構成する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="ae68f-104">This procedure demonstrates how to configure a store's functionality profile settings that apply to sales representatives.</span></span> <span data-ttu-id="ae68f-105">この手順では、 USRT デモ データの会社が使用されます。</span><span class="sxs-lookup"><span data-stu-id="ae68f-105">This procedures uses the USRT demo data company.</span></span>
 
-1. <span data-ttu-id="834fa-106">[小売りと商業] > [チャンネル設定] > [POS 設定] > [POS プロファイル] > [機能プロファイル]の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="834fa-106">Go to Retail and commerce > Channel setup > POS setup > POS profiles > Functionality profiles.</span></span>
-2. <span data-ttu-id="834fa-107">[編集] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="834fa-107">Click Edit.</span></span>
-3. <span data-ttu-id="834fa-108">[機能] セクションを展開します。</span><span class="sxs-lookup"><span data-stu-id="834fa-108">Expand the Functions section.</span></span>
-    * <span data-ttu-id="834fa-109">POSの環境設定を実行する機能プロファイル設定を使用して、レジ担当者の既定の販売グループの自動追加、販売グループの確認、販売グループの要求を行うことができます。</span><span class="sxs-lookup"><span data-stu-id="834fa-109">You can use the functionality profile settings to configure POS to automatically add the cashier's default sales group, to prompt for sales groups, and to require sales groups.</span></span>  
-4. <span data-ttu-id="834fa-110">[販売担当者への確認] フィールドで、オプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="834fa-110">In the Prompt for sales representative field, select an option.</span></span>
-5. <span data-ttu-id="834fa-111">[販売担当者の要求] フィールドで、[はい] を選択します。</span><span class="sxs-lookup"><span data-stu-id="834fa-111">Select Yes in the Require sales representative field.</span></span>
-
+1. <span data-ttu-id="ae68f-106">[小売りと商業] > [チャンネル設定] > [POS 設定] > [POS プロファイル] > [機能プロファイル]の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="ae68f-106">Go to Retail and commerce > Channel setup > POS setup > POS profiles > Functionality profiles.</span></span>
+2. <span data-ttu-id="ae68f-107">[編集] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ae68f-107">Click Edit.</span></span>
+3. <span data-ttu-id="ae68f-108">[機能] セクションを展開します。</span><span class="sxs-lookup"><span data-stu-id="ae68f-108">Expand the Functions section.</span></span>
+    * <span data-ttu-id="ae68f-109">POSの環境設定を実行する機能プロファイル設定を使用して、レジ担当者の既定の販売グループの自動追加、販売グループの確認、販売グループの要求を行うことができます。</span><span class="sxs-lookup"><span data-stu-id="ae68f-109">You can use the functionality profile settings to configure POS to automatically add the cashier's default sales group, to prompt for sales groups, and to require sales groups.</span></span>  
+4. <span data-ttu-id="ae68f-110">[販売担当者への確認] フィールドで、オプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="ae68f-110">In the Prompt for sales representative field, select an option.</span></span>
+5. <span data-ttu-id="ae68f-111">[販売担当者の要求] フィールドで、[はい] を選択します。</span><span class="sxs-lookup"><span data-stu-id="ae68f-111">Select Yes in the Require sales representative field.</span></span>
 
