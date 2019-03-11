@@ -1,0 +1,50 @@
+---
+title: クラスとメソッドの属性を使用した SysTest フィルタリング
+description: このトピックでは、テストのフィルター処理の目的で SysTest クラスおよびメソッドで使用できる属性について説明します。
+author: jorisdg
+manager: AnnBe
+ms.date: 01/22/2019
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
+audience: Developer
+ms.reviewer: kfend
+ms.search.scope: Operations
+ms.search.region: Global
+ms.author: jorisde
+ms.search.validFrom: 2017-11-15
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f26dd879e421ad1dee43f54745c9466871127642
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369270"
+---
+# <a name="systest-filtering-using-class-and-method-attributes"></a><span data-ttu-id="9f0eb-103">クラスおよびメソッドの属性を使用した SysTest フィルター処理</span><span class="sxs-lookup"><span data-stu-id="9f0eb-103">SysTest Filtering using class and method attributes</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="9f0eb-104">プラットフォーム更新プログラム 12 以降、SysTest フレームワークには、X++ で SysTest クラスおよびメソッドの属性の強化が含まれています。</span><span class="sxs-lookup"><span data-stu-id="9f0eb-104">Starting with Platform update 12, the SysTest framework contains improvements to the SysTest class and method attributes in X++.</span></span> <span data-ttu-id="9f0eb-105">これらの機能強化により、これらの属性が、Visual Studio テスト ウィンドウおよび自動ビルドプロセスで使用されるツールである Visual Studio テスト コンソールでどのように機能するかも変わります。</span><span class="sxs-lookup"><span data-stu-id="9f0eb-105">These improvements also change how these attributes work in the Visual Studio test window as well as the Visual Studio Test Console, which is the tool used in the automated build process.</span></span> <span data-ttu-id="9f0eb-106">SysTest フレームワークは、MSTest フレームワーク アダプターと同等になるように、アダプター内の主要なテスト属性をサポートするようになりました。</span><span class="sxs-lookup"><span data-stu-id="9f0eb-106">The SysTest framework now supports the major test attributes in the adaptor to be on par with the MSTest framework adaptor.</span></span> <span data-ttu-id="9f0eb-107">これには**カテゴリ**、**所有者**、**優先順位**、および**テスト プロパティ**などの属性が含まれます。</span><span class="sxs-lookup"><span data-stu-id="9f0eb-107">This includes attributes like **Category**, **Owner**, **Priority**, and **Test Property**.</span></span>
+
+## <a name="testcategory"></a><span data-ttu-id="9f0eb-108">TestCategory</span><span class="sxs-lookup"><span data-stu-id="9f0eb-108">TestCategory</span></span>
+
+<span data-ttu-id="9f0eb-109">**カテゴリ**属性である **SysTestCategory** は、**SysTestCategory** 属性を使用した以前のプラットフォーム更新プログラムですでに利用可能でした。</span><span class="sxs-lookup"><span data-stu-id="9f0eb-109">The **Category** attribute, **SysTestCategory**, was already available in previous platform updates using the **SysTestCategory** attribute.</span></span> <span data-ttu-id="9f0eb-110">プラットフォーム更新プログラム 12 以降、クラス レベルと個々のメソッド レベルの両方で複数のカテゴリを指定できます。</span><span class="sxs-lookup"><span data-stu-id="9f0eb-110">Starting with Platform update 12, you can specify multiple categories on both the class level and the individual method level.</span></span> <span data-ttu-id="9f0eb-111">さらに、**TestCategory** では、Visual Studio テスト コンソールでのフィルター処理が有効になっています。</span><span class="sxs-lookup"><span data-stu-id="9f0eb-111">Additionally, **TestCategory** is enabled for filtering in the Visual Studio Test Console.</span></span> <span data-ttu-id="9f0eb-112">つまり、特定のカテゴリのテスト フィルターを使用して、ビルド パイプラインを作成できます。</span><span class="sxs-lookup"><span data-stu-id="9f0eb-112">This means that you can create build pipelines with test filters on specific categories.</span></span> <span data-ttu-id="9f0eb-113">ビルド パイプラインで、**TestFilter** 変数を使用できます。</span><span class="sxs-lookup"><span data-stu-id="9f0eb-113">You can use the **TestFilter** variable in the build pipeline.</span></span> <span data-ttu-id="9f0eb-114">たとえば、カテゴリ **Nightly** でのみテストを実行するには、変数を **TestCategory=Nightly** に設定します。</span><span class="sxs-lookup"><span data-stu-id="9f0eb-114">For example, to run tests only with a category **Nightly**, set the variable to **TestCategory=Nightly**.</span></span>
+
+## <a name="priority"></a><span data-ttu-id="9f0eb-115">優先順位</span><span class="sxs-lookup"><span data-stu-id="9f0eb-115">Priority</span></span>
+
+<span data-ttu-id="9f0eb-116">整数値を必要とする **Priority** 属性の **SysTestPriority** が利用可能になりました。</span><span class="sxs-lookup"><span data-stu-id="9f0eb-116">The **Priority** attribute **SysTestPriority**, which requires an integer value, is now available.</span></span> <span data-ttu-id="9f0eb-117">優先順位は 1 回のみ指定できますが、クラスとメソッドの両方のレベルでサポートされ、メソッド レベルはクラス レベルよりも優先されます。</span><span class="sxs-lookup"><span data-stu-id="9f0eb-117">A priority can only be specified once, but is supported on both the class and method level, with method level taking precedence over class level.</span></span> <span data-ttu-id="9f0eb-118">優先順位は、テスト フィルターとしても公開されます。</span><span class="sxs-lookup"><span data-stu-id="9f0eb-118">The priority is also exposed as a test filter.</span></span> <span data-ttu-id="9f0eb-119">したがって、ビルド パイプラインで、**TestFilter** 変数を使用できます。</span><span class="sxs-lookup"><span data-stu-id="9f0eb-119">This means that you can use the **TestFilter** variable in the build pipeline.</span></span> <span data-ttu-id="9f0eb-120">たとえば、優先順位 **1** でのみテストを実行するには、変数を **Priority=1** に設定します。</span><span class="sxs-lookup"><span data-stu-id="9f0eb-120">For example, to only run tests with a priority of **1**, set the variable to **Priority=1**.</span></span>
+
+## <a name="owner"></a><span data-ttu-id="9f0eb-121">所有者</span><span class="sxs-lookup"><span data-stu-id="9f0eb-121">Owner</span></span>
+
+<span data-ttu-id="9f0eb-122">**所有者**属性である **SysTestOwner** も追加されました。</span><span class="sxs-lookup"><span data-stu-id="9f0eb-122">The **Owner** attribute, **SysTestOwner**, has also been added.</span></span> <span data-ttu-id="9f0eb-123">この属性は技術的には既に **Test Toolbox** ウィンドウでのフィルター処理に対してサポートされていましたが、属性自体は X ++ にはありませんでした。</span><span class="sxs-lookup"><span data-stu-id="9f0eb-123">This attribute was technically already supported for filtering in the **Test Toolbox** window, but the attribute itself was missing in X++.</span></span> <span data-ttu-id="9f0eb-124">**Priority** と同様に、所有者は 1 回のみ指定でき、クラスとメソッドの両方のレベルでサポートされ、メソッド レベルが優先されます。</span><span class="sxs-lookup"><span data-stu-id="9f0eb-124">Similar to **Priority**, an owner can only be specified once and is supported on both the class and method level, with the method level taking precedence.</span></span> <span data-ttu-id="9f0eb-125">**所有者**は、コンソール用のテストフィルターとしては使用できません。これは、Visual Studio テスト コンソール用の MSTest アダプターに対応しています。</span><span class="sxs-lookup"><span data-stu-id="9f0eb-125">**Owner** is not available as a test filter for the console, which aligns with the MSTest adaptor for Visual Studio Test Console.</span></span> <span data-ttu-id="9f0eb-126">ただし、**所有者**は Visual Studio の **Test Toolbox** ウィンドウに表示されます。</span><span class="sxs-lookup"><span data-stu-id="9f0eb-126">However, **Owner** will appear in the **Test Toolbox** window in Visual Studio.</span></span>
+
+## <a name="test-property"></a><span data-ttu-id="9f0eb-127">テスト プロパティ</span><span class="sxs-lookup"><span data-stu-id="9f0eb-127">Test Property</span></span>
+
+<span data-ttu-id="9f0eb-128">**テスト プロパティ** 属性の **SysTestProperty** は、プラットフォームの以前のリリースに存在していましたが、完全には機能しませんでした。</span><span class="sxs-lookup"><span data-stu-id="9f0eb-128">The **Test Property** attribute, **SysTestProperty**, has existed in previous releases of the platform, but wasn't fully functional.</span></span> <span data-ttu-id="9f0eb-129">ただし、**SysTestProperty** 属性は **Test Essentials** パッケージに存在する他の属性とは対照的に、**アプリケーション基準**パッケージに存在します。</span><span class="sxs-lookup"><span data-stu-id="9f0eb-129">Unfortunately, the **SysTestProperty** attribute exists in the **Application Foundation** package as opposed to the other attributes which exist in the **Test Essentials** package.</span></span> <span data-ttu-id="9f0eb-130">プラットフォームの下位互換性への確約のため、現在この属性を予定の場所に移動することはできません。そのため、使用するには**アプリケーション基準**パッケージへの参照が必要になります。</span><span class="sxs-lookup"><span data-stu-id="9f0eb-130">Because of our commitment to backward compatibility of the platform, we currently cannot move this attribute to its expected location, so your code will need a reference to the **Application Foundation** package to use it.</span></span> <span data-ttu-id="9f0eb-131">**SysTestProperty** はプロパティと値 (2 つの文字列) を指定し、Visual Studio の **Test Toolbox** ウィンドウで使用できるようになりました。</span><span class="sxs-lookup"><span data-stu-id="9f0eb-131">**SysTestProperty** specifies a property and a value (two strings), and can now be used in the **Test Toolbox** window in Visual Studio.</span></span> <span data-ttu-id="9f0eb-132">**テスト プロパティ**は複数回指定でき、クラスとメソッドの両方のレベルで存在できます。</span><span class="sxs-lookup"><span data-stu-id="9f0eb-132">**Test Property** can be specified multiple times, and can exist on both the class and method level.</span></span> <span data-ttu-id="9f0eb-133">**テスト プロパティ**は、MSTest アダプタに従って、Visual Studio テスト コンソールのフィルター処理のテストには使用できません。</span><span class="sxs-lookup"><span data-stu-id="9f0eb-133">**Test Property** is not available for test filtering in the Visual Studio Test Console, in line with the MSTest adaptor.</span></span>
+
+<span data-ttu-id="9f0eb-134">Visual Studio テスト コンソールで使用できる高度なフィルター処理構文および MSTest フレームワークのフィルター処理例の確認については、[選択可能な単位テストの実行](https://docs.microsoft.com/en-us/dotnet/core/testing/selective-unit-tests) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="9f0eb-134">For advanced filtering syntax that can be used with the Visual Studio Test Console and to review the filtering example for the MSTest framework, see [Running selective unit tests](https://docs.microsoft.com/en-us/dotnet/core/testing/selective-unit-tests).</span></span> 
+
+> [!NOTE]
+> <span data-ttu-id="9f0eb-135">フィルター処理のテストの目的で、SysTest フレームワークを使用して **FullyQualifiedName** と **名前**でフィルター処理することができます。</span><span class="sxs-lookup"><span data-stu-id="9f0eb-135">For test filtering purposes, the SysTest framework allows you to filter on **FullyQualifiedName** and **Name**.</span></span>

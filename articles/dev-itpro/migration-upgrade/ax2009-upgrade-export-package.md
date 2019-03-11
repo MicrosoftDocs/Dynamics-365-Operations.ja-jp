@@ -1,13 +1,13 @@
 ---
-title: "AX 2009 の移行 － パッケージのエクスポート"
-description: "このトピックでは、Microsoft Dynamics AX 2009 から Microsoft Dynamics 365 for Finance and Operations への移行用にデータ パッケージをエクスポートする方法について説明します。"
+title: AX 2009 の移行 － パッケージのエクスポート
+description: このトピックは、Microsoft Dynamics AX 2009 から Microsoft Dynamics 365 for Finance and Operations に移行するためにデータ パッケージをエクスポートする方法について説明します。
 author: kfend
 manager: AnnBe
 ms.date: 06/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,27 +15,25 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2018-06-21
 ms.dyn365.ops.version: Platform update 17
-ms.translationtype: HT
-ms.sourcegitcommit: 1aae5797e37b846a38f957b02870e213da528a2d
 ms.openlocfilehash: 94366c6a904e9cdb6a0bd3daa3ca514973ab18cd
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/20/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369936"
 ---
-
-# <a name="ax-2009-migration--export-packages"></a><span data-ttu-id="e9d1e-103">AX 2009 の移行 – パッケージのエクスポート</span><span class="sxs-lookup"><span data-stu-id="e9d1e-103">AX 2009 migration – Export packages</span></span>
+# <a name="ax-2009-migration--export-packages"></a><span data-ttu-id="cad8c-103">AX 2009 の移行 - パッケージのエクスポート</span><span class="sxs-lookup"><span data-stu-id="cad8c-103">AX 2009 migration – Export packages</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="e9d1e-104">Microsoft Dynamics AX 2009 でデータのインポート/エクスポート フレームワーク (DIXF) サービスを使用して、Microsoft Dynamics 365 for Finance and Operations に移行する必要があるデータを取得することができます。</span><span class="sxs-lookup"><span data-stu-id="e9d1e-104">You can use the Data Import/Export Framework (DIXF) service in Microsoft Dynamics AX 2009 to retrieve data that must be migrated to Microsoft Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="e9d1e-105">エクスポート プロセスは、ジョブ ID を使用して行われます。</span><span class="sxs-lookup"><span data-stu-id="e9d1e-105">The export process is completed through a job ID.</span></span> <span data-ttu-id="e9d1e-106">エクスポートする場合は、エクスポート ジョブを定義する方法を指定できます。</span><span class="sxs-lookup"><span data-stu-id="e9d1e-106">When you export, you can specify how the export job is defined.</span></span> <span data-ttu-id="e9d1e-107">エクスポートするソース データ、変換値、およびフィールド マップを選択できます。</span><span class="sxs-lookup"><span data-stu-id="e9d1e-107">You can select the source data to export, the conversion value, and the field mapping.</span></span> <span data-ttu-id="e9d1e-108">各ソースにクエリを適用して、エクスポートされる内容を制限することもできます。</span><span class="sxs-lookup"><span data-stu-id="e9d1e-108">You can also apply a query to each source to limit what is exported.</span></span>
+<span data-ttu-id="cad8c-104">データのインポート/エクスポート フレームワーク (DIXF) サービスを Microsoft Dynamics AX 2009 で使用して、Microsoft Dynamics 365 for Finance and Operations に移行する必要があるデータを取得することができます。</span><span class="sxs-lookup"><span data-stu-id="cad8c-104">You can use the Data Import/Export Framework (DIXF) service in Microsoft Dynamics AX 2009 to retrieve data that must be migrated to Microsoft Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="cad8c-105">エクスポート プロセスは、ジョブ ID を使用して行われます。</span><span class="sxs-lookup"><span data-stu-id="cad8c-105">The export process is completed through a job ID.</span></span> <span data-ttu-id="cad8c-106">エクスポートする場合は、エクスポート ジョブを定義する方法を指定できます。</span><span class="sxs-lookup"><span data-stu-id="cad8c-106">When you export, you can specify how the export job is defined.</span></span> <span data-ttu-id="cad8c-107">エクスポートするソース データ、変換値、およびフィールド マップを選択できます。</span><span class="sxs-lookup"><span data-stu-id="cad8c-107">You can select the source data to export, the conversion value, and the field mapping.</span></span> <span data-ttu-id="cad8c-108">各ソースにクエリを適用して、エクスポートされる内容を制限することもできます。</span><span class="sxs-lookup"><span data-stu-id="cad8c-108">You can also apply a query to each source to limit what is exported.</span></span>
 
-<span data-ttu-id="e9d1e-109">データ移行ツール (DMT) が生成するエクスポート パッケージは、1 つまたは複数のデータ エンティティで構成できます。</span><span class="sxs-lookup"><span data-stu-id="e9d1e-109">The export package that the Data migration tool (DMT) generates can consist of one or many data entities.</span></span> <span data-ttu-id="e9d1e-110">標準的なデータ パッケージは、インポートなどの特定のタスクのエンティティ グループで構成されています。</span><span class="sxs-lookup"><span data-stu-id="e9d1e-110">A typical data package consists of a group of entities for a specific task, such as import.</span></span> <span data-ttu-id="e9d1e-111">たとえば、システムの設定に必要なデータ エンティティは、1 つのデータ パッケージの一部である可能性があります。</span><span class="sxs-lookup"><span data-stu-id="e9d1e-111">For example, the data entities that are required for system setup might be part of one data package.</span></span> <span data-ttu-id="e9d1e-112">データ パッケージの形式は、パッケージ マニフェスト、パッケージ ヘッダー、および含まれているデータ エンティティの追加ファイルを含む圧縮ファイルです。</span><span class="sxs-lookup"><span data-stu-id="e9d1e-112">The format of a data package is a compressed file that contains a package manifest, a package header, and any additional files for the data entities that are included.</span></span>
+<span data-ttu-id="cad8c-109">データ移行ツール (DMT) が生成するエクスポート パッケージは、1 つまたは複数のデータ エンティティで構成できます。</span><span class="sxs-lookup"><span data-stu-id="cad8c-109">The export package that the Data migration tool (DMT) generates can consist of one or many data entities.</span></span> <span data-ttu-id="cad8c-110">標準的なデータ パッケージは、インポートなどの特定のタスクのエンティティ グループで構成されています。</span><span class="sxs-lookup"><span data-stu-id="cad8c-110">A typical data package consists of a group of entities for a specific task, such as import.</span></span> <span data-ttu-id="cad8c-111">たとえば、システムの設定に必要なデータ エンティティは、1 つのデータ パッケージの一部である可能性があります。</span><span class="sxs-lookup"><span data-stu-id="cad8c-111">For example, the data entities that are required for system setup might be part of one data package.</span></span> <span data-ttu-id="cad8c-112">データ パッケージの形式は、パッケージ マニフェスト、パッケージ ヘッダー、および含まれているデータ エンティティの追加ファイルを含む圧縮ファイルです。</span><span class="sxs-lookup"><span data-stu-id="cad8c-112">The format of a data package is a compressed file that contains a package manifest, a package header, and any additional files for the data entities that are included.</span></span>
 
-<span data-ttu-id="e9d1e-113">データ パッケージを作成する前に、何を含める必要があるかを計画します。</span><span class="sxs-lookup"><span data-stu-id="e9d1e-113">Before you create a data package, plan out what should be included.</span></span> <span data-ttu-id="e9d1e-114">この方法で、正しいエンティティ、エンティティの順序、およびフィールドが含まれていることを保証します。</span><span class="sxs-lookup"><span data-stu-id="e9d1e-114">In this way, you help guarantee that the correct entities, entity sequence, and fields are included.</span></span>
+<span data-ttu-id="cad8c-113">データ パッケージを作成する前に、何を含める必要があるかを計画します。</span><span class="sxs-lookup"><span data-stu-id="cad8c-113">Before you create a data package, plan out what should be included.</span></span> <span data-ttu-id="cad8c-114">この方法で、正しいエンティティ、エンティティの順序、およびフィールドが含まれていることを保証します。</span><span class="sxs-lookup"><span data-stu-id="cad8c-114">In this way, you help guarantee that the correct entities, entity sequence, and fields are included.</span></span>
 
-<span data-ttu-id="e9d1e-115">データ パッケージをエクスポートするには、これらの手順に従います。</span><span class="sxs-lookup"><span data-stu-id="e9d1e-115">Follow these steps to export the data package.</span></span>
+<span data-ttu-id="cad8c-115">データ パッケージをエクスポートするには、これらの手順に従います。</span><span class="sxs-lookup"><span data-stu-id="cad8c-115">Follow these steps to export the data package.</span></span>
 
-1. <span data-ttu-id="e9d1e-116">AX 2009 のナビゲーション ウィンドウで、**データ移行** \> **共通** \> **移行グループの作成** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e9d1e-116">In AX 2009, in the navigation pane, click **Data migration** \> **Common** \> **Create migration group**.</span></span>
-2. <span data-ttu-id="e9d1e-117">**移行グループ** フォームで、エクスポートする移行グループを選択し、**今すぐエクスポート** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e9d1e-117">In the **Migration group** form, select the migration group to export, and then click **Export now**.</span></span>
-3. <span data-ttu-id="e9d1e-118">**データのエクスポート** フォームで、必要に応じてエクスポート ファイル パスを更新し、**OK** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e9d1e-118">In the **Export data** form, update the export file path as required, and then click **OK**.</span></span>
-
+1. <span data-ttu-id="cad8c-116">AX 2009 の、ナビゲーション ウィンドウで、**データ移行** \> **共通** \> **移行グループの作成** の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="cad8c-116">In AX 2009, in the navigation pane, click **Data migration** \> **Common** \> **Create migration group**.</span></span>
+2. <span data-ttu-id="cad8c-117">**移行グループ** フォームで、エクスポートする移行グループを選択し、**今すぐエクスポート** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="cad8c-117">In the **Migration group** form, select the migration group to export, and then click **Export now**.</span></span>
+3. <span data-ttu-id="cad8c-118">**データのエクスポート** フォームで、必要に応じてエクスポート ファイル パスを更新し、**OK** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="cad8c-118">In the **Export data** form, update the export file path as required, and then click **OK**.</span></span>

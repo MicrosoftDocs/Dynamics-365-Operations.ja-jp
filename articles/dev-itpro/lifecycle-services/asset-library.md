@@ -1,106 +1,104 @@
 ---
-title: "Lifecycle Services (LCS) のアセット ライブラリ"
-description: "このトピックでは、Lifecycle Services (LCS) のアセット ライブラリ機能について説明します。"
+title: Lifecycle Services (LCS) のアセット ライブラリ
+description: このトピックでは、Lifecycle Services (LCS) のアセット ライブラリ機能について説明します。
 author: manalidongre
 manager: AnnBe
 ms.date: 06/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Operations
 ms.custom: 266824
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 82d6c21d4ed63f406da286b0e2767f15829fa874
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368958"
 ---
-
-# <a name="asset-library-in-lifecycle-services-lcs"></a><span data-ttu-id="f2840-103">Lifecycle Services (LCS) のアセット ライブラリ</span><span class="sxs-lookup"><span data-stu-id="f2840-103">Asset library in Lifecycle Services (LCS)</span></span>
+# <a name="asset-library-in-lifecycle-services-lcs"></a><span data-ttu-id="6d795-103">Lifecycle Services (LCS) のアセット ライブラリ</span><span class="sxs-lookup"><span data-stu-id="6d795-103">Asset library in Lifecycle Services (LCS)</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="f2840-104">アセット ライブラリは、Microsoft Dynamics Lifecycle Services (LCS) のテナントに関連付けられているさまざまな資産の保管場所です。</span><span class="sxs-lookup"><span data-stu-id="f2840-104">The Asset library is a storage location for the various assets that are associated with a tenant in Microsoft Dynamics Lifecycle Services (LCS).</span></span> <span data-ttu-id="f2840-105">LCS には、共用資産ライブラリとプロジェクト レベルのアセット ライブラリの 2 種類のアセット ライブラリがあります。</span><span class="sxs-lookup"><span data-stu-id="f2840-105">Two types of Asset library are available in LCS: the Shared asset library and the project-level Asset library.</span></span>
+<span data-ttu-id="6d795-104">アセット ライブラリは、Microsoft Dynamics Lifecycle Services (LCS) のテナントに関連付けられているさまざまな資産の保管場所です。</span><span class="sxs-lookup"><span data-stu-id="6d795-104">The Asset library is a storage location for the various assets that are associated with a tenant in Microsoft Dynamics Lifecycle Services (LCS).</span></span> <span data-ttu-id="6d795-105">LCS には、共用資産ライブラリとプロジェクト レベルのアセット ライブラリの 2 種類のアセット ライブラリがあります。</span><span class="sxs-lookup"><span data-stu-id="6d795-105">Two types of Asset library are available in LCS: the Shared asset library and the project-level Asset library.</span></span>
 
-- <span data-ttu-id="f2840-106">**共有資産ライブラリ** – 共有資産ライブラリは、Microsoft およびパートナーによって資産を共有するために複数のテナント、プロジェクト、および LCS の環境の間で 使用されます。</span><span class="sxs-lookup"><span data-stu-id="f2840-106">**Shared asset library** – The Shared asset library is used by Microsoft and Partners to share assets across multiple tenants, projects, and environments in LCS.</span></span> <span data-ttu-id="f2840-107">このライブラリは、LCS にサインインするすべてのユーザーがアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="f2840-107">This library can be accessed by any user who signs in to LCS.</span></span> <span data-ttu-id="f2840-108">共用資産ライブラリにアクセスするには、LCS にサイン インして、**共用資産ライブラリ** タイルをクリックします。</span><span class="sxs-lookup"><span data-stu-id="f2840-108">To access the Shared asset library, sign in to LCS, and then click the **Shared asset library** tile.</span></span>
+- <span data-ttu-id="6d795-106">**共有資産ライブラリ** – 共有資産ライブラリは、Microsoft およびパートナーによって資産を共有するために複数のテナント、プロジェクト、および LCS の環境の間で 使用されます。</span><span class="sxs-lookup"><span data-stu-id="6d795-106">**Shared asset library** – The Shared asset library is used by Microsoft and Partners to share assets across multiple tenants, projects, and environments in LCS.</span></span> <span data-ttu-id="6d795-107">このライブラリは、LCS にサインインするすべてのユーザーがアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="6d795-107">This library can be accessed by any user who signs in to LCS.</span></span> <span data-ttu-id="6d795-108">共用資産ライブラリにアクセスするには、LCS にサイン インして、**共用資産ライブラリ** タイルをクリックします。</span><span class="sxs-lookup"><span data-stu-id="6d795-108">To access the Shared asset library, sign in to LCS, and then click the **Shared asset library** tile.</span></span>
 
-    <span data-ttu-id="f2840-109">[![共有アセット ライブラリ タイル](./media/SharedAssetLibrary.jpg)](./media/SharedAssetLibrary.jpg)</span><span class="sxs-lookup"><span data-stu-id="f2840-109">[![Shared asset library tile](./media/SharedAssetLibrary.jpg)](./media/SharedAssetLibrary.jpg)</span></span>
+    <span data-ttu-id="6d795-109">[![共有アセット ライブラリ タイル](./media/SharedAssetLibrary.jpg)](./media/SharedAssetLibrary.jpg)</span><span class="sxs-lookup"><span data-stu-id="6d795-109">[![Shared asset library tile](./media/SharedAssetLibrary.jpg)](./media/SharedAssetLibrary.jpg)</span></span>
 
-- <span data-ttu-id="f2840-110">**プロジェクト レベルのアセット ライブラリ** – プロジェクト レベルの資産ライブラリは、LCS のプロジェクト内の環境全体で資産を共有するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="f2840-110">**Project-level Asset library** – The project-level Asset library is used to share assets across environments within a project in LCS.</span></span> <span data-ttu-id="f2840-111">このライブラリはプロジェクト内のすべてのユーザーがアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="f2840-111">This library can be accessed by all users within a project.</span></span> <span data-ttu-id="f2840-112">。プロジェクト レベルのアセット ライブラリにアクセスするには、LCS にサイン インし、プロジェクトを開きます。</span><span class="sxs-lookup"><span data-stu-id="f2840-112">To access the project-level Asset library, sign in to LCS, and open a project.</span></span> <span data-ttu-id="f2840-113">ハンバーガー メニューで、**アセット ライブラリ** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f2840-113">Then, on the hamburger menu, click **Asset library**.</span></span>
+- <span data-ttu-id="6d795-110">**プロジェクト レベルのアセット ライブラリ** – プロジェクト レベルの資産ライブラリは、LCS のプロジェクト内の環境全体で資産を共有するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="6d795-110">**Project-level Asset library** – The project-level Asset library is used to share assets across environments within a project in LCS.</span></span> <span data-ttu-id="6d795-111">このライブラリはプロジェクト内のすべてのユーザーがアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="6d795-111">This library can be accessed by all users within a project.</span></span> <span data-ttu-id="6d795-112">。プロジェクト レベルのアセット ライブラリにアクセスするには、LCS にサイン インし、プロジェクトを開きます。</span><span class="sxs-lookup"><span data-stu-id="6d795-112">To access the project-level Asset library, sign in to LCS, and open a project.</span></span> <span data-ttu-id="6d795-113">ハンバーガー メニューで、**アセット ライブラリ** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6d795-113">Then, on the hamburger menu, click **Asset library**.</span></span>
 
-    <span data-ttu-id="f2840-114">[![プロジェクト レベル資産ライブラリを開きます](./media/ProjectAssetLibrary.jpg)](./media/ProjectAssetLibrary.jpg)</span><span class="sxs-lookup"><span data-stu-id="f2840-114">[![Opening the project-level Asset library](./media/ProjectAssetLibrary.jpg)](./media/ProjectAssetLibrary.jpg)</span></span>
+    <span data-ttu-id="6d795-114">[![プロジェクト レベル資産ライブラリを開きます](./media/ProjectAssetLibrary.jpg)](./media/ProjectAssetLibrary.jpg)</span><span class="sxs-lookup"><span data-stu-id="6d795-114">[![Opening the project-level Asset library](./media/ProjectAssetLibrary.jpg)](./media/ProjectAssetLibrary.jpg)</span></span>
 
-## <a name="asset-library-support"></a><span data-ttu-id="f2840-115">アセット ライブラリ サポート</span><span class="sxs-lookup"><span data-stu-id="f2840-115">Asset library support</span></span>
-<span data-ttu-id="f2840-116">アセット ライブラリは、複数のタイプの資産をサポートしています。</span><span class="sxs-lookup"><span data-stu-id="f2840-116">The Asset library supports multiple types of assets.</span></span> <span data-ttu-id="f2840-117">頻繁に使用されるいくつかの資産タイプを次に示します。</span><span class="sxs-lookup"><span data-stu-id="f2840-117">Here are some asset types that are frequently used:</span></span>
+## <a name="asset-library-support"></a><span data-ttu-id="6d795-115">アセット ライブラリ サポート</span><span class="sxs-lookup"><span data-stu-id="6d795-115">Asset library support</span></span>
+<span data-ttu-id="6d795-116">アセット ライブラリは、複数のタイプの資産をサポートしています。</span><span class="sxs-lookup"><span data-stu-id="6d795-116">The Asset library supports multiple types of assets.</span></span> <span data-ttu-id="6d795-117">頻繁に使用されるいくつかの資産タイプを次に示します。</span><span class="sxs-lookup"><span data-stu-id="6d795-117">Here are some asset types that are frequently used:</span></span>
 
-- <span data-ttu-id="f2840-118">**ソフトウェア配置可能パッケージ** – この資産のタイプは、環境を最新のアップデートセットで更新するために使用されるすべてのパッケージを表します。</span><span class="sxs-lookup"><span data-stu-id="f2840-118">**Software deployable package** – This asset type represents all the packages that are used to update an environment with the latest set of updates.</span></span>
-- <span data-ttu-id="f2840-119">**データ パッケージ** - このアセット タイプは、コンフィギュレーションおよびデータ管理に使用されるアセットを格納します。</span><span class="sxs-lookup"><span data-stu-id="f2840-119">**Data package** – This asset type stores assets that are used for configuration and data management.</span></span>
-- <span data-ttu-id="f2840-120">**GER コンフィギュレーション** – この資産タイプは、クライアントに適用されるすべてのローカライズおよび翻訳資産を格納します。</span><span class="sxs-lookup"><span data-stu-id="f2840-120">**GER Configuration** – This asset type stores all localization and translation assets that are applied to the client.</span></span>
-- <span data-ttu-id="f2840-121">**Dynamics 365 for Retail SDK** - この資産タイプには Retail ソフトウェアの開発キット (SDK) の最新のスクリプトがすべて格納されます。</span><span class="sxs-lookup"><span data-stu-id="f2840-121">**Dynamics 365 for Retail SDK** – This asset type stores all the latest scripts for the Retail software development kit (SDK).</span></span>
+- <span data-ttu-id="6d795-118">**ソフトウェア配置可能パッケージ** – この資産のタイプは、環境を最新のアップデートセットで更新するために使用されるすべてのパッケージを表します。</span><span class="sxs-lookup"><span data-stu-id="6d795-118">**Software deployable package** – This asset type represents all the packages that are used to update an environment with the latest set of updates.</span></span>
+- <span data-ttu-id="6d795-119">**データ パッケージ** - このアセット タイプは、コンフィギュレーションおよびデータ管理に使用されるアセットを格納します。</span><span class="sxs-lookup"><span data-stu-id="6d795-119">**Data package** – This asset type stores assets that are used for configuration and data management.</span></span>
+- <span data-ttu-id="6d795-120">**GER コンフィギュレーション** – この資産タイプは、クライアントに適用されるすべてのローカライズおよび翻訳資産を格納します。</span><span class="sxs-lookup"><span data-stu-id="6d795-120">**GER Configuration** – This asset type stores all localization and translation assets that are applied to the client.</span></span>
+- <span data-ttu-id="6d795-121">**Dynamics 365 for Retail SDK** - この資産タイプには Retail ソフトウェアの開発キット (SDK) の最新のスクリプトがすべて格納されます。</span><span class="sxs-lookup"><span data-stu-id="6d795-121">**Dynamics 365 for Retail SDK** – This asset type stores all the latest scripts for the Retail software development kit (SDK).</span></span>
 
-### <a name="asset-scopes"></a><span data-ttu-id="f2840-122">アセット スコープ</span><span class="sxs-lookup"><span data-stu-id="f2840-122">Asset scopes</span></span>
-<span data-ttu-id="f2840-123">アセット ライブラリがサポートするすべての資産には複数のスコープがあります。</span><span class="sxs-lookup"><span data-stu-id="f2840-123">Every asset that the Asset library supports has multiple scopes.</span></span> <span data-ttu-id="f2840-124">サポートされる資産スコープのいくつかを次に示します。</span><span class="sxs-lookup"><span data-stu-id="f2840-124">Here are some of the supported asset scopes:</span></span>
+### <a name="asset-scopes"></a><span data-ttu-id="6d795-122">アセット スコープ</span><span class="sxs-lookup"><span data-stu-id="6d795-122">Asset scopes</span></span>
+<span data-ttu-id="6d795-123">アセット ライブラリがサポートするすべての資産には複数のスコープがあります。</span><span class="sxs-lookup"><span data-stu-id="6d795-123">Every asset that the Asset library supports has multiple scopes.</span></span> <span data-ttu-id="6d795-124">サポートされる資産スコープのいくつかを次に示します。</span><span class="sxs-lookup"><span data-stu-id="6d795-124">Here are some of the supported asset scopes:</span></span>
 
-- <span data-ttu-id="f2840-125">**自分自身** – 資産は、アップロードされるときに、**自分自身**スコープに設定されます。</span><span class="sxs-lookup"><span data-stu-id="f2840-125">**Me** – When an asset is uploaded, it's set to the **Me** scope.</span></span> <span data-ttu-id="f2840-126">**Me** スコープの資産は、資産をアップロードしたユーザーにのみに表示されます。</span><span class="sxs-lookup"><span data-stu-id="f2840-126">An asset that has the **Me** scope is visible only to the person who uploaded the asset.</span></span>
-- <span data-ttu-id="f2840-127">**プロジェクト** – プロジェクトを**グローバル** スコープから別のプロジェクトにインポートすると、**プロジェクト** スコープに設定されます。</span><span class="sxs-lookup"><span data-stu-id="f2840-127">**Project** – When a project is imported from the **Global** scope to another project, it's set to the **Project** scope.</span></span>
-- <span data-ttu-id="f2840-128">**組織** – テナント内の複数のユーザーで資産を共有するとき、テナント管理は、資産を**組織**スコープに昇格できます。</span><span class="sxs-lookup"><span data-stu-id="f2840-128">**Organization** – When an asset must be shared with multiple users within a tenant, the tenant admin can promote the asset to the **Organization** scope.</span></span>
-- <span data-ttu-id="f2840-129">**グローバル** – Microsoft だけが資産を**グローバル** スコープにアップロードできます。</span><span class="sxs-lookup"><span data-stu-id="f2840-129">**Global** – Only Microsoft can upload assets to the **Global** scope.</span></span> <span data-ttu-id="f2840-130">これらのアセットは、Microsoft がすべての LCS プロジェクトおよびユーザーに公に利用されることを望むアセットです。</span><span class="sxs-lookup"><span data-stu-id="f2840-130">These assets are assets that Microsoft wants to be made publicly available to all LCS projects and users.</span></span>
+- <span data-ttu-id="6d795-125">**自分自身** – 資産は、アップロードされるときに、**自分自身**スコープに設定されます。</span><span class="sxs-lookup"><span data-stu-id="6d795-125">**Me** – When an asset is uploaded, it's set to the **Me** scope.</span></span> <span data-ttu-id="6d795-126">**Me** スコープの資産は、資産をアップロードしたユーザーにのみに表示されます。</span><span class="sxs-lookup"><span data-stu-id="6d795-126">An asset that has the **Me** scope is visible only to the person who uploaded the asset.</span></span>
+- <span data-ttu-id="6d795-127">**プロジェクト** – プロジェクトを**グローバル** スコープから別のプロジェクトにインポートすると、**プロジェクト** スコープに設定されます。</span><span class="sxs-lookup"><span data-stu-id="6d795-127">**Project** – When a project is imported from the **Global** scope to another project, it's set to the **Project** scope.</span></span>
+- <span data-ttu-id="6d795-128">**組織** – テナント内の複数のユーザーで資産を共有するとき、テナント管理は、資産を**組織**スコープに昇格できます。</span><span class="sxs-lookup"><span data-stu-id="6d795-128">**Organization** – When an asset must be shared with multiple users within a tenant, the tenant admin can promote the asset to the **Organization** scope.</span></span>
+- <span data-ttu-id="6d795-129">**グローバル** – Microsoft だけが資産を**グローバル** スコープにアップロードできます。</span><span class="sxs-lookup"><span data-stu-id="6d795-129">**Global** – Only Microsoft can upload assets to the **Global** scope.</span></span> <span data-ttu-id="6d795-130">これらのアセットは、Microsoft がすべての LCS プロジェクトおよびユーザーに公に利用されることを望むアセットです。</span><span class="sxs-lookup"><span data-stu-id="6d795-130">These assets are assets that Microsoft wants to be made publicly available to all LCS projects and users.</span></span>
 
-### <a name="asset-status"></a><span data-ttu-id="f2840-131">アセット ステータス</span><span class="sxs-lookup"><span data-stu-id="f2840-131">Asset status</span></span>
-<span data-ttu-id="f2840-132">すべての資産には**ドラフト**または**発行済**の 2 つ状態のどちらかがあります。</span><span class="sxs-lookup"><span data-stu-id="f2840-132">Every asset has one of two statuses: **Draft** or **Published**.</span></span>
+### <a name="asset-status"></a><span data-ttu-id="6d795-131">アセット ステータス</span><span class="sxs-lookup"><span data-stu-id="6d795-131">Asset status</span></span>
+<span data-ttu-id="6d795-132">すべての資産には**ドラフト**または**発行済**の 2 つ状態のどちらかがあります。</span><span class="sxs-lookup"><span data-stu-id="6d795-132">Every asset has one of two statuses: **Draft** or **Published**.</span></span>
 
-- <span data-ttu-id="f2840-133">**ドラフト** - 資産はまだ編集できます。</span><span class="sxs-lookup"><span data-stu-id="f2840-133">**Draft** – The asset can still be edited.</span></span>
-- <span data-ttu-id="f2840-134">**公開済** – 資産は、**組織**または**グローバル** スコープ、および編集を完了します。</span><span class="sxs-lookup"><span data-stu-id="f2840-134">**Published** – The asset is published at an **Organization** or **Global** scope, and edits are completed.</span></span>
+- <span data-ttu-id="6d795-133">**ドラフト** - 資産はまだ編集できます。</span><span class="sxs-lookup"><span data-stu-id="6d795-133">**Draft** – The asset can still be edited.</span></span>
+- <span data-ttu-id="6d795-134">**公開済** – 資産は、**組織**または**グローバル** スコープ、および編集を完了します。</span><span class="sxs-lookup"><span data-stu-id="6d795-134">**Published** – The asset is published at an **Organization** or **Global** scope, and edits are completed.</span></span>
 
-## <a name="actions-in-the-asset-library"></a><span data-ttu-id="f2840-135">資産ライブラリのアクション</span><span class="sxs-lookup"><span data-stu-id="f2840-135">Actions in the Asset library</span></span>
-<span data-ttu-id="f2840-136">必要に応じてアセット ライブラリでさまざまなアクションを実行することができます。</span><span class="sxs-lookup"><span data-stu-id="f2840-136">You can perform various actions in the Asset library as you require.</span></span>
+## <a name="actions-in-the-asset-library"></a><span data-ttu-id="6d795-135">資産ライブラリのアクション</span><span class="sxs-lookup"><span data-stu-id="6d795-135">Actions in the Asset library</span></span>
+<span data-ttu-id="6d795-136">必要に応じてアセット ライブラリでさまざまなアクションを実行することができます。</span><span class="sxs-lookup"><span data-stu-id="6d795-136">You can perform various actions in the Asset library as you require.</span></span>
 
-### <a name="upload-an-asset-to-the-asset-library"></a><span data-ttu-id="f2840-137">アセットをアセット ライブラリにアップロード</span><span class="sxs-lookup"><span data-stu-id="f2840-137">Upload an asset to the Asset library</span></span>
-1. <span data-ttu-id="f2840-138">資産をアップロードするタブを選択します。</span><span class="sxs-lookup"><span data-stu-id="f2840-138">Select the tab to upload the asset to.</span></span>
-2. <span data-ttu-id="f2840-139">プラス記号 (**+**) をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="f2840-139">Click the plus sign (**+**).</span></span>
-3. <span data-ttu-id="f2840-140">資産の名前と説明を入力します。</span><span class="sxs-lookup"><span data-stu-id="f2840-140">Enter a name and description for the asset.</span></span>
-4. <span data-ttu-id="f2840-141">アセットのファイルをアップロードし、**確定** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f2840-141">Upload the file for the asset, and then click **Confirm**.</span></span>
+### <a name="upload-an-asset-to-the-asset-library"></a><span data-ttu-id="6d795-137">アセットをアセット ライブラリにアップロード</span><span class="sxs-lookup"><span data-stu-id="6d795-137">Upload an asset to the Asset library</span></span>
+1. <span data-ttu-id="6d795-138">資産をアップロードするタブを選択します。</span><span class="sxs-lookup"><span data-stu-id="6d795-138">Select the tab to upload the asset to.</span></span>
+2. <span data-ttu-id="6d795-139">プラス記号 (**+**) をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="6d795-139">Click the plus sign (**+**).</span></span>
+3. <span data-ttu-id="6d795-140">資産の名前と説明を入力します。</span><span class="sxs-lookup"><span data-stu-id="6d795-140">Enter a name and description for the asset.</span></span>
+4. <span data-ttu-id="6d795-141">アセットのファイルをアップロードし、**確定** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6d795-141">Upload the file for the asset, and then click **Confirm**.</span></span>
 
-### <a name="upload-a-new-version-for-a-specific-asset"></a><span data-ttu-id="f2840-142">特定のアセットの新しいバージョンをアップロード</span><span class="sxs-lookup"><span data-stu-id="f2840-142">Upload a new version for a specific asset</span></span>
-1. <span data-ttu-id="f2840-143">アセット ライブラリで資産を選択します。</span><span class="sxs-lookup"><span data-stu-id="f2840-143">Select the asset in the Asset library.</span></span>
-2. <span data-ttu-id="f2840-144">ツール バーで、**アップロード**ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="f2840-144">On the toolbar, click the **Upload** button.</span></span>
-3. <span data-ttu-id="f2840-145">前の手順の手順を繰り返し、「資産を資産ライブラリにアップロード」します。</span><span class="sxs-lookup"><span data-stu-id="f2840-145">Repeat the steps in the previous procedure, "Upload an asset to the asset library."</span></span>
-4. <span data-ttu-id="f2840-146">ツール バーで、**バージョン**をクリックして、単一の資産の複数のバージョンを表示します。</span><span class="sxs-lookup"><span data-stu-id="f2840-146">On the toolbar, click **Versions** to view multiple versions for a single asset.</span></span>
+### <a name="upload-a-new-version-for-a-specific-asset"></a><span data-ttu-id="6d795-142">特定のアセットの新しいバージョンをアップロード</span><span class="sxs-lookup"><span data-stu-id="6d795-142">Upload a new version for a specific asset</span></span>
+1. <span data-ttu-id="6d795-143">アセット ライブラリで資産を選択します。</span><span class="sxs-lookup"><span data-stu-id="6d795-143">Select the asset in the Asset library.</span></span>
+2. <span data-ttu-id="6d795-144">ツール バーで、**アップロード**ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="6d795-144">On the toolbar, click the **Upload** button.</span></span>
+3. <span data-ttu-id="6d795-145">前の手順の手順を繰り返し、「資産を資産ライブラリにアップロード」します。</span><span class="sxs-lookup"><span data-stu-id="6d795-145">Repeat the steps in the previous procedure, "Upload an asset to the asset library."</span></span>
+4. <span data-ttu-id="6d795-146">ツール バーで、**バージョン**をクリックして、単一の資産の複数のバージョンを表示します。</span><span class="sxs-lookup"><span data-stu-id="6d795-146">On the toolbar, click **Versions** to view multiple versions for a single asset.</span></span>
 
-### <a name="move-assets-from-the-global-asset-library-to-the-project-level-asset-library"></a><span data-ttu-id="f2840-147">グローバル アセット ライブラリからプロジェクト レベルのアセット ライブラリへのアセット移動</span><span class="sxs-lookup"><span data-stu-id="f2840-147">Move assets from the Global asset library to the project-level Asset library</span></span>
-<span data-ttu-id="f2840-148">グローバル アセット ライブラリからプロジェクト レベル アセット ライブラリにアセットを移動するには、アセットをインポートするかコピーするかの 2 つの方法があります。</span><span class="sxs-lookup"><span data-stu-id="f2840-148">There are two ways to move an asset from the Global asset library to the project-level asset library: you can import the asset or copy it.</span></span>
+### <a name="move-assets-from-the-global-asset-library-to-the-project-level-asset-library"></a><span data-ttu-id="6d795-147">グローバル アセット ライブラリからプロジェクト レベルのアセット ライブラリへのアセット移動</span><span class="sxs-lookup"><span data-stu-id="6d795-147">Move assets from the Global asset library to the project-level Asset library</span></span>
+<span data-ttu-id="6d795-148">グローバル アセット ライブラリからプロジェクト レベル アセット ライブラリにアセットを移動するには、アセットをインポートするかコピーするかの 2 つの方法があります。</span><span class="sxs-lookup"><span data-stu-id="6d795-148">There are two ways to move an asset from the Global asset library to the project-level asset library: you can import the asset or copy it.</span></span>
 
-#### <a name="import-from-the-global-asset-library"></a><span data-ttu-id="f2840-149">グローバル アセット ライブラリからのインポート</span><span class="sxs-lookup"><span data-stu-id="f2840-149">Import from the Global asset library</span></span>
-<span data-ttu-id="f2840-150">グローバル アセット ライブラリからの資産をプロジェクト レベルのアセット ライブラリへインポートして、環境間で適用できるようにするには、これらの手順に従います。</span><span class="sxs-lookup"><span data-stu-id="f2840-150">Follow these steps to import an asset from the Global asset library to the project-level Asset library so that it can be applied across environments.</span></span>
+#### <a name="import-from-the-global-asset-library"></a><span data-ttu-id="6d795-149">グローバル アセット ライブラリからのインポート</span><span class="sxs-lookup"><span data-stu-id="6d795-149">Import from the Global asset library</span></span>
+<span data-ttu-id="6d795-150">グローバル アセット ライブラリからの資産をプロジェクト レベルのアセット ライブラリへインポートして、環境間で適用できるようにするには、これらの手順に従います。</span><span class="sxs-lookup"><span data-stu-id="6d795-150">Follow these steps to import an asset from the Global asset library to the project-level Asset library so that it can be applied across environments.</span></span>
 
-1. <span data-ttu-id="f2840-151">プロジェクト レベルのアセット ライブラリで、インポートするアセット タイプのタブを選択します。</span><span class="sxs-lookup"><span data-stu-id="f2840-151">In the project-level Asset library, select the tab for the asset type to import.</span></span>
-2. <span data-ttu-id="f2840-152">**インポート** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f2840-152">Click **Import**.</span></span>
-3. <span data-ttu-id="f2840-153">共有アセット ライブラリのアセットの一覧で、インポートするアセットを選択してから**選択**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f2840-153">In the list of assets in the Shared asset library, select the asset to import, and then click **Pick**.</span></span>
+1. <span data-ttu-id="6d795-151">プロジェクト レベルのアセット ライブラリで、インポートするアセット タイプのタブを選択します。</span><span class="sxs-lookup"><span data-stu-id="6d795-151">In the project-level Asset library, select the tab for the asset type to import.</span></span>
+2. <span data-ttu-id="6d795-152">**インポート** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6d795-152">Click **Import**.</span></span>
+3. <span data-ttu-id="6d795-153">共有アセット ライブラリのアセットの一覧で、インポートするアセットを選択してから**選択**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6d795-153">In the list of assets in the Shared asset library, select the asset to import, and then click **Pick**.</span></span>
 
-<span data-ttu-id="f2840-154">選択したアセットをインポートし、プロジェクト レベルのアセット ライブラリに配置します。</span><span class="sxs-lookup"><span data-stu-id="f2840-154">The selected asset is imported and put into the project-level Asset library.</span></span> <span data-ttu-id="f2840-155">プロジェクト レベルのアセット ライブラリのアセットの状態は **公開済** に設定されています。</span><span class="sxs-lookup"><span data-stu-id="f2840-155">The status of the asset in the project-level Asset library is set to **Published**.</span></span> <span data-ttu-id="f2840-156">このメソッドは、編集する予定のないパッケージを対象としています。</span><span class="sxs-lookup"><span data-stu-id="f2840-156">This method is for packages that you don't plan to edit.</span></span> <span data-ttu-id="f2840-157">インポートされたパッケージを編集する場合は、次の手順を使用して、コピーを作成します。</span><span class="sxs-lookup"><span data-stu-id="f2840-157">If you want to edit an imported package, create a copy by using the following procedure.</span></span> <span data-ttu-id="f2840-158">パッケージの状態は **ドラフト** になります。</span><span class="sxs-lookup"><span data-stu-id="f2840-158">The status of the package will then be **Draft**.</span></span>
+<span data-ttu-id="6d795-154">選択したアセットをインポートし、プロジェクト レベルのアセット ライブラリに配置します。</span><span class="sxs-lookup"><span data-stu-id="6d795-154">The selected asset is imported and put into the project-level Asset library.</span></span> <span data-ttu-id="6d795-155">プロジェクト レベルのアセット ライブラリのアセットの状態は **公開済** に設定されています。</span><span class="sxs-lookup"><span data-stu-id="6d795-155">The status of the asset in the project-level Asset library is set to **Published**.</span></span> <span data-ttu-id="6d795-156">このメソッドは、編集する予定のないパッケージを対象としています。</span><span class="sxs-lookup"><span data-stu-id="6d795-156">This method is for packages that you don't plan to edit.</span></span> <span data-ttu-id="6d795-157">インポートされたパッケージを編集する場合は、次の手順を使用して、コピーを作成します。</span><span class="sxs-lookup"><span data-stu-id="6d795-157">If you want to edit an imported package, create a copy by using the following procedure.</span></span> <span data-ttu-id="6d795-158">パッケージの状態は **ドラフト** になります。</span><span class="sxs-lookup"><span data-stu-id="6d795-158">The status of the package will then be **Draft**.</span></span>
 
-#### <a name="copy-from-the-global-asset-library"></a><span data-ttu-id="f2840-159">グローバル アセット ライブラリからのコピー</span><span class="sxs-lookup"><span data-stu-id="f2840-159">Copy from the Global asset library</span></span>
-<span data-ttu-id="f2840-160">資産のコピーを編集できるよう作成するには、これらの手順に従います。</span><span class="sxs-lookup"><span data-stu-id="f2840-160">Follow these steps to create a copy of an asset so that it can be edited.</span></span>
+#### <a name="copy-from-the-global-asset-library"></a><span data-ttu-id="6d795-159">グローバル アセット ライブラリからのコピー</span><span class="sxs-lookup"><span data-stu-id="6d795-159">Copy from the Global asset library</span></span>
+<span data-ttu-id="6d795-160">資産のコピーを編集できるよう作成するには、これらの手順に従います。</span><span class="sxs-lookup"><span data-stu-id="6d795-160">Follow these steps to create a copy of an asset so that it can be edited.</span></span>
 
-1. <span data-ttu-id="f2840-161">プロジェクト レベルのアセット ライブラリで、コピーするアセット タイプのタブを選択します。</span><span class="sxs-lookup"><span data-stu-id="f2840-161">In the project-level Asset library, select the tab for the asset type to copy.</span></span>
-2. <span data-ttu-id="f2840-162">コピーするアセットを選択し、ツール バーで **コピー** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f2840-162">Select the asset to copy, and then, on the toolbar, click **Copy**.</span></span>
+1. <span data-ttu-id="6d795-161">プロジェクト レベルのアセット ライブラリで、コピーするアセット タイプのタブを選択します。</span><span class="sxs-lookup"><span data-stu-id="6d795-161">In the project-level Asset library, select the tab for the asset type to copy.</span></span>
+2. <span data-ttu-id="6d795-162">コピーするアセットを選択し、ツール バーで **コピー** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6d795-162">Select the asset to copy, and then, on the toolbar, click **Copy**.</span></span>
 
-<span data-ttu-id="f2840-163">発行済みのアセットのコピーが作成され、状態は **Draft** に設定されています。</span><span class="sxs-lookup"><span data-stu-id="f2840-163">A copy of the published asset is created, and the status is set to **Draft**.</span></span>
+<span data-ttu-id="6d795-163">発行済みのアセットのコピーが作成され、状態は **Draft** に設定されています。</span><span class="sxs-lookup"><span data-stu-id="6d795-163">A copy of the published asset is created, and the status is set to **Draft**.</span></span>
 
-### <a name="save-to-my-library"></a><span data-ttu-id="f2840-164">自分のライブラリに保存</span><span class="sxs-lookup"><span data-stu-id="f2840-164">Save to my library</span></span>
-<span data-ttu-id="f2840-165">アセットを編集した後、以下の手順に従って編集したアセットを共有アセット ライブラリに戻し、**組織**スコープを促進させることにより複数の顧客と共有することができます。</span><span class="sxs-lookup"><span data-stu-id="f2840-165">After you've edited an asset, follow these steps to move the edited asset back to the Shared asset library so that it can be promoted to the **Organization** scope and shared with multiple customers.</span></span>
+### <a name="save-to-my-library"></a><span data-ttu-id="6d795-164">自分のライブラリに保存</span><span class="sxs-lookup"><span data-stu-id="6d795-164">Save to my library</span></span>
+<span data-ttu-id="6d795-165">アセットを編集した後、以下の手順に従って編集したアセットを共有アセット ライブラリに戻し、**組織**スコープを促進させることにより複数の顧客と共有することができます。</span><span class="sxs-lookup"><span data-stu-id="6d795-165">After you've edited an asset, follow these steps to move the edited asset back to the Shared asset library so that it can be promoted to the **Organization** scope and shared with multiple customers.</span></span>
 
-1. <span data-ttu-id="f2840-166">プロジェクト レベルのアセット ライブラリで、インポートするアセット タイプのタブを選択します。</span><span class="sxs-lookup"><span data-stu-id="f2840-166">In the project-level Asset library, select the tab for the asset type to import.</span></span>
-2. <span data-ttu-id="f2840-167">保存する資産を選択し、**ライブラリに保存** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f2840-167">Select the asset to save, and then click **Save to my library**.</span></span>
+1. <span data-ttu-id="6d795-166">プロジェクト レベルのアセット ライブラリで、インポートするアセット タイプのタブを選択します。</span><span class="sxs-lookup"><span data-stu-id="6d795-166">In the project-level Asset library, select the tab for the asset type to import.</span></span>
+2. <span data-ttu-id="6d795-167">保存する資産を選択し、**ライブラリに保存** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6d795-167">Select the asset to save, and then click **Save to my library**.</span></span>
 
-<span data-ttu-id="f2840-168">資産が、プロジェクト レベルのアセット ライブラリから共有アセット ライブラリに再び保存され、範囲が **自分自身** に設定されます。</span><span class="sxs-lookup"><span data-stu-id="f2840-168">The asset is saved from the project-level Asset library back to the Shared asset library, and the scope is set to **Me**.</span></span>
-
+<span data-ttu-id="6d795-168">資産が、プロジェクト レベルのアセット ライブラリから共有アセット ライブラリに再び保存され、範囲が **自分自身** に設定されます。</span><span class="sxs-lookup"><span data-stu-id="6d795-168">The asset is saved from the project-level Asset library back to the Shared asset library, and the scope is set to **Me**.</span></span>

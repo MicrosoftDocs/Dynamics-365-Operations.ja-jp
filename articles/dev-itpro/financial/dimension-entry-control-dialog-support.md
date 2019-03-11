@@ -1,13 +1,13 @@
 ---
-title: "ダイアログ上の分析コード エントリ コントロールをサポート"
-description: "分析コード エントリ コントロールをダイアログに配置するためのコード パターンについて説明します。"
+title: ダイアログ上の分析コード エントリ コントロールをサポート
+description: 分析コード エントリ コントロールをダイアログに配置するためのコード パターンについて説明します。
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 02/06/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,21 +17,20 @@ ms.search.region: Global
 ms.author: ghenriks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 5522591f25e4f92f3abbe1aa1d2742dd85c41a23
+ms.sourcegitcommit: f004451a260b5be6c15c3975cd9e63ba9c1a7a2e
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: f5eb1b69e85a7d8677638f5b1faf28950b0626b7
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "376003"
 ---
-
-# <a name="support-for-dimension-entry-controls-on-dialogs"></a><span data-ttu-id="d1860-103">ダイアログ上の分析コード エントリ コントロールをサポート</span><span class="sxs-lookup"><span data-stu-id="d1860-103">Support for Dimension Entry controls on dialogs</span></span>
+# <a name="support-for-dimension-entry-controls-on-dialogs"></a><span data-ttu-id="1c4ba-103">ダイアログ上の分析コード エントリ コントロールをサポート</span><span class="sxs-lookup"><span data-stu-id="1c4ba-103">Support for Dimension Entry controls on dialogs</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="d1860-104">分析コード エントリ コントロールをダイアログに配置するためのコード パターンについて説明します。</span><span class="sxs-lookup"><span data-stu-id="d1860-104">Describes the code pattern for putting a Dimension Entry control on a dialog.</span></span>
+<span data-ttu-id="1c4ba-104">分析コード エントリ コントロールをダイアログに配置するためのコード パターンについて説明します。</span><span class="sxs-lookup"><span data-stu-id="1c4ba-104">Describes the code pattern for putting a Dimension Entry control on a dialog.</span></span>
 
-<span data-ttu-id="d1860-105">分析コード エントリ コントロールをダイアログに追加するためのコード パターンが Dynamics AX 2012 から変更されました。</span><span class="sxs-lookup"><span data-stu-id="d1860-105">The code pattern to add Dimension Entry controls to dialogs has changed from Dynamics AX 2012.</span></span> <span data-ttu-id="d1860-106">これは、古いモデルの例です。</span><span class="sxs-lookup"><span data-stu-id="d1860-106">This is an example of the old model:</span></span>
+<span data-ttu-id="1c4ba-105">分析コード エントリ コントロールをダイアログに追加するためのコード パターンが Dynamics AX 2012 から変更されました。</span><span class="sxs-lookup"><span data-stu-id="1c4ba-105">The code pattern to add Dimension Entry controls to dialogs has changed from Dynamics AX 2012.</span></span> <span data-ttu-id="1c4ba-106">これは、古いモデルの例です。</span><span class="sxs-lookup"><span data-stu-id="1c4ba-106">This is an example of the old model:</span></span>
 
     DimensionDefaultingControllerNoDS dimDefaultingController;
     dimDefaultingController = DimensionDefaultingControllerNoDS::constructInGroupWithValues(true, true, true, 0, _formRun, financialDimensionGroup, "@SYS123456");
@@ -39,25 +38,27 @@ ms.lasthandoff: 08/09/2018
     dimDefaultingController.pageActivated();
     dimDefaultingController.loadValues(dimensionAttributeValueSetId);
 
-<span data-ttu-id="d1860-107">現在のリリースでは、このコードは次のように変換されます。</span><span class="sxs-lookup"><span data-stu-id="d1860-107">In the current release, this code would be converted to:</span></span>
-
+<span data-ttu-id="1c4ba-107">現在のリリースでは、このコードは次のように変換されます。</span><span class="sxs-lookup"><span data-stu-id="1c4ba-107">In the current release, this code would be converted to:</span></span>
+    
+    //When you create a dialog
     DialogField dimensionEntryField;
     DimensionEntryControl dimensionEntryValues;
     dimensionEntryField = DimensionEntryControlBuild::addToDialog(dialog, classstr(LedgerDimensionEntryController));
+    
+    //These lines should be executed after the dialog form is created (for example on “dialogPostRun()” or “postRun()”)
     dimensionEntryValues = dimensionEntryField.control();
     dimensionEntryValues.parmNonActiveValueErrorTolerance(ErrorTolerance::Error);
     dimensionEntryValues.parmDisplayValues(true);
     dimensionEntryValues.reactivate();
     dimensionEntryValues.loadAttributeValueSet(dimensionAttributeValueSetId);
 
-<span data-ttu-id="d1860-108">`addToDialog` の 2 番目のパラメーターでは、ダイアログの要件を満たすコントローラー クラスを選択します。</span><span class="sxs-lookup"><span data-stu-id="d1860-108">For the second parameter on `addToDialog`, choose the controller class that satisfies the requirements for your dialog.</span></span>
+<span data-ttu-id="1c4ba-108">`addToDialog` の 2 番目のパラメーターでは、ダイアログの要件を満たすコントローラー クラスを選択します。</span><span class="sxs-lookup"><span data-stu-id="1c4ba-108">For the second parameter on `addToDialog`, choose the controller class that satisfies the requirements for your dialog.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="d1860-109">その他のリソース</span><span class="sxs-lookup"><span data-stu-id="d1860-109">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="1c4ba-109">その他のリソース</span><span class="sxs-lookup"><span data-stu-id="1c4ba-109">Additional resources</span></span>
 
-[<span data-ttu-id="d1860-110">分析コード エントリ コントロールのチュートリアル</span><span class="sxs-lookup"><span data-stu-id="d1860-110">Dimension Entry control migration walkthrough</span></span>](dimension-entry-control-migration.md)
+[<span data-ttu-id="1c4ba-110">分析コード エントリ コントロールのチュートリアル</span><span class="sxs-lookup"><span data-stu-id="1c4ba-110">Dimension Entry control migration walkthrough</span></span>](dimension-entry-control-migration.md)
 
-[<span data-ttu-id="d1860-111">分析コード エントリ コントロールの取得</span><span class="sxs-lookup"><span data-stu-id="d1860-111">Dimension Entry control uptake</span></span>](dimension-entry-control-uptake.md)
-
+[<span data-ttu-id="1c4ba-111">分析コード エントリ コントロールの取得</span><span class="sxs-lookup"><span data-stu-id="1c4ba-111">Dimension Entry control uptake</span></span>](dimension-entry-control-uptake.md)
 
 
 

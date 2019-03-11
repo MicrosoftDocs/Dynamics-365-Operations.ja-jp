@@ -1,13 +1,13 @@
 ---
-title: "L クラス"
-description: "文字 L で始まるシステム API クラス。"
+title: L クラス
+description: 文字 L で始まるシステム API クラス。
 author: RobinARH
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,631 +17,630 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 0f6ba5193e0c2fb14ce5e28379b5e1d92eb79839
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369850"
 ---
-
-# <a name="l-classes"></a><span data-ttu-id="bcebd-103">L クラス</span><span class="sxs-lookup"><span data-stu-id="bcebd-103">L classes</span></span>
+# <a name="l-classes"></a><span data-ttu-id="3bab6-103">L クラス</span><span class="sxs-lookup"><span data-stu-id="3bab6-103">L classes</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="bcebd-104">文字 L で始まるシステム API クラス。</span><span class="sxs-lookup"><span data-stu-id="bcebd-104">System API classes that start with the letter L.</span></span>
+<span data-ttu-id="3bab6-104">文字 L で始まるシステム API クラス。</span><span class="sxs-lookup"><span data-stu-id="3bab6-104">System API classes that start with the letter L.</span></span>
 
-<a name="class-label"></a><span data-ttu-id="bcebd-105">クラス ラベル</span><span class="sxs-lookup"><span data-stu-id="bcebd-105">Class Label</span></span>
+<a name="class-label"></a><span data-ttu-id="3bab6-105">クラス ラベル</span><span class="sxs-lookup"><span data-stu-id="3bab6-105">Class Label</span></span>
 -----------
 
     class Label extends Object
 
-<span data-ttu-id="bcebd-106">Label クラスは、ラベル ID およびラベル ファイルを管理します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-106">The Label class manages label IDs and label files.</span></span>
+<span data-ttu-id="3bab6-106">Label クラスは、ラベル ID およびラベル ファイルを管理します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-106">The Label class manages label IDs and label files.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="bcebd-107">備考</span><span class="sxs-lookup"><span data-stu-id="bcebd-107">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="3bab6-107">備考</span><span class="sxs-lookup"><span data-stu-id="3bab6-107">Remarks</span></span>
 
-<span data-ttu-id="bcebd-108">SysLabel クラスは、Label クラスを拡張します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-108">The SysLabel class extends the Label class.</span></span>
+<span data-ttu-id="3bab6-108">SysLabel クラスは、Label クラスを拡張します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-108">The SysLabel class extends the Label class.</span></span>
 
-### <a name="examples"></a><span data-ttu-id="bcebd-109">例</span><span class="sxs-lookup"><span data-stu-id="bcebd-109">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="3bab6-109">例</span><span class="sxs-lookup"><span data-stu-id="3bab6-109">Examples</span></span>
 
-### <a name="methods"></a><span data-ttu-id="bcebd-110">メソッド</span><span class="sxs-lookup"><span data-stu-id="bcebd-110">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="3bab6-110">メソッド</span><span class="sxs-lookup"><span data-stu-id="3bab6-110">Methods</span></span>
 
-| <span data-ttu-id="bcebd-111">方法</span><span class="sxs-lookup"><span data-stu-id="bcebd-111">Method</span></span>                                                                | <span data-ttu-id="bcebd-112">説明</span><span class="sxs-lookup"><span data-stu-id="bcebd-112">Description</span></span>                                                                                         |
+| <span data-ttu-id="3bab6-111">方法</span><span class="sxs-lookup"><span data-stu-id="3bab6-111">Method</span></span>                                                                | <span data-ttu-id="3bab6-112">説明</span><span class="sxs-lookup"><span data-stu-id="3bab6-112">Description</span></span>                                                                                         |
 |-----------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="bcebd-113">public LabelBulkEditor bulkEditor(str module)</span><span class="sxs-lookup"><span data-stu-id="bcebd-113">public LabelBulkEditor bulkEditor(str module)</span></span>                         | <span data-ttu-id="bcebd-114">LabelBulkEditor クラスのインスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-114">Creates an instance of the LabelBulkEditor class.</span></span>                                                   |
-| <span data-ttu-id="bcebd-115">public boolean createLabelFile(str module, str language)</span><span class="sxs-lookup"><span data-stu-id="bcebd-115">public boolean createLabelFile(str module, str language)</span></span>              | <span data-ttu-id="bcebd-116">指定されたラベル ID のラベル ファイルを作成します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-116">Creates a label file for a specified label ID.</span></span>                                                      |
-| <span data-ttu-id="bcebd-117">public boolean delete(str label)</span><span class="sxs-lookup"><span data-stu-id="bcebd-117">public boolean delete(str label)</span></span>                                      | <span data-ttu-id="bcebd-118">指定したラベルを削除します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-118">Deletes a specified label.</span></span>                                                                          |
-| <span data-ttu-id="bcebd-119">public boolean exists(str label)</span><span class="sxs-lookup"><span data-stu-id="bcebd-119">public boolean exists(str label)</span></span>                                      | <span data-ttu-id="bcebd-120">指定したラベル ID が存在するかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-120">Indicates whether a specified label ID exists.</span></span>                                                      |
-| <span data-ttu-id="bcebd-121">public str extractComment(str label)</span><span class="sxs-lookup"><span data-stu-id="bcebd-121">public str extractComment(str label)</span></span>                                  | <span data-ttu-id="bcebd-122">指定されたラベル ID に関連付けられているコメントを返します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-122">Returns a comment that is associated with a specified label ID.</span></span>                                     |
-| <span data-ttu-id="bcebd-123">public str extractString(str label)</span><span class="sxs-lookup"><span data-stu-id="bcebd-123">public str extractString(str label)</span></span>                                   | <span data-ttu-id="bcebd-124">指定されたラベル ID に関連付けられているテキストを返します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-124">Returns the text that is associated with a specified label ID.</span></span>                                      |
-| <span data-ttu-id="bcebd-125">public str getFirstLabelFile()</span><span class="sxs-lookup"><span data-stu-id="bcebd-125">public str getFirstLabelFile()</span></span>                                        | <span data-ttu-id="bcebd-126">最初のラベル ファイル ID レコードを返します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-126">Returns the first label file ID record.</span></span>                                                             |
-| <span data-ttu-id="bcebd-127">public Date getLabelFileCreatedDate(str labelFile, str language)</span><span class="sxs-lookup"><span data-stu-id="bcebd-127">public Date getLabelFileCreatedDate(str labelFile, str language)</span></span>      | <span data-ttu-id="bcebd-128">指定したラベル ファイルが作成された日付を返します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-128">Returns the date that a specified label file was created.</span></span>                                           |
-| <span data-ttu-id="bcebd-129">public int getLabelFileCreatedTime(str labelFile, str language)</span><span class="sxs-lookup"><span data-stu-id="bcebd-129">public int getLabelFileCreatedTime(str labelFile, str language)</span></span>       | <span data-ttu-id="bcebd-130">指定したラベル ファイルが作成された時刻を返します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-130">Returns the time that a specified label file was created.</span></span>                                           |
-| <span data-ttu-id="bcebd-131">public Date getLabelFileModificationDate(str labelFile, str language)</span><span class="sxs-lookup"><span data-stu-id="bcebd-131">public Date getLabelFileModificationDate(str labelFile, str language)</span></span> | <span data-ttu-id="bcebd-132">変更したラベル ファイルが作成された日付を返します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-132">Returns the date that a specified label file was modified.</span></span>                                          |
-| <span data-ttu-id="bcebd-133">public int getLabelFileModificationTime(str labelFile, str language)</span><span class="sxs-lookup"><span data-stu-id="bcebd-133">public int getLabelFileModificationTime(str labelFile, str language)</span></span>  | <span data-ttu-id="bcebd-134">変更したラベル ファイルが作成された時刻を返します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-134">Returns the time that a specified label file was modified.</span></span>                                          |
-| <span data-ttu-id="bcebd-135">public str getNextLabelFile()</span><span class="sxs-lookup"><span data-stu-id="bcebd-135">public str getNextLabelFile()</span></span>                                         | <span data-ttu-id="bcebd-136">次のラベル ファイル ID レコードを返します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-136">Returns the next label file ID record.</span></span>                                                              |
-| <span data-ttu-id="bcebd-137">public str insert(str text, str comment, str module)</span><span class="sxs-lookup"><span data-stu-id="bcebd-137">public str insert(str text, str comment, str module)</span></span>                  | <span data-ttu-id="bcebd-138">指定されたテキスト文字列のラベル ID を作成します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-138">Creates a label ID for a specified text string.</span></span>                                                     |
-| <span data-ttu-id="bcebd-139">public int labelId(str label)</span><span class="sxs-lookup"><span data-stu-id="bcebd-139">public int labelId(str label)</span></span>                                         | <span data-ttu-id="bcebd-140">指定したラベル ID に含まれる番号を返します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-140">Returns the number that is included in a specified label ID.</span></span>                                        |
-| <span data-ttu-id="bcebd-141">public int maxLabelId(str module)</span><span class="sxs-lookup"><span data-stu-id="bcebd-141">public int maxLabelId(str module)</span></span>                                     | <span data-ttu-id="bcebd-142">指定したラベル ファイル内の最後のラベルの ID を返します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-142">Returns the ID for the last label in the specified label file.</span></span>                                      |
-| <span data-ttu-id="bcebd-143">public boolean modify(str label, str text, \[str comment\])</span><span class="sxs-lookup"><span data-stu-id="bcebd-143">public boolean modify(str label, str text, \[str comment\])</span></span>           | <span data-ttu-id="bcebd-144">指定されたラベルに関連付けられているテキストおよびコメントを変更します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-144">Modifies the text and comment that are associated with a specified label.</span></span>                           |
-| <span data-ttu-id="bcebd-145">public str moduleId(str label)</span><span class="sxs-lookup"><span data-stu-id="bcebd-145">public str moduleId(str label)</span></span>                                        | <span data-ttu-id="bcebd-146">指定したラベル ID のラベル ファイルを返します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-146">Returns the label file ID for a specified label ID.</span></span>                                                 |
-| <span data-ttu-id="bcebd-147">public boolean moreLabelFiles()</span><span class="sxs-lookup"><span data-stu-id="bcebd-147">public boolean moreLabelFiles()</span></span>                                       | <span data-ttu-id="bcebd-148">追加のラベル ファイルがあるかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-148">Indicates whether there are additional label files.</span></span>                                                 |
-| <span data-ttu-id="bcebd-149">public str name(str module, int labelId)</span><span class="sxs-lookup"><span data-stu-id="bcebd-149">public str name(str module, int labelId)</span></span>                              | <span data-ttu-id="bcebd-150">指定したラベル ファイル ID およびラベル ID 番号に基づいて、ラベル ID を返します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-150">Returns a label ID, based on a specified label file ID and label ID number.</span></span>                         |
-| <span data-ttu-id="bcebd-151">public str searchFirst(str searchString)</span><span class="sxs-lookup"><span data-stu-id="bcebd-151">public str searchFirst(str searchString)</span></span>                              | <span data-ttu-id="bcebd-152">指定した検索用語で検出された最初のラベル ID を返します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-152">Returns the first label ID that is found for a specified search term.</span></span>                               |
-| <span data-ttu-id="bcebd-153">public str searchNext()</span><span class="sxs-lookup"><span data-stu-id="bcebd-153">public str searchNext()</span></span>                                               | <span data-ttu-id="bcebd-154">searchFirst メソッドに渡される検索用語のある次のラベル ID を返します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-154">Returns the next label ID that is found for a search term that is passed to the searchFirst method.</span></span> |
-| <span data-ttu-id="bcebd-155">::public static boolean flush(str labelFileId, str language)</span><span class="sxs-lookup"><span data-stu-id="bcebd-155">::public static boolean flush(str labelFileId, str language)</span></span>          | <span data-ttu-id="bcebd-156">ディスクにラベル ファイル バッファーをフラッシュします。</span><span class="sxs-lookup"><span data-stu-id="bcebd-156">Flushes the label file buffers to disk.</span></span>                                                             |
-| <span data-ttu-id="bcebd-157">public void new(\[str language\])</span><span class="sxs-lookup"><span data-stu-id="bcebd-157">public void new(\[str language\])</span></span>                                     | <span data-ttu-id="bcebd-158">ラベル クラスの新しいインスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-158">Creates a new instance of the Label class.</span></span>                                                          |
-| <span data-ttu-id="bcebd-159">public void finalize()</span><span class="sxs-lookup"><span data-stu-id="bcebd-159">public void finalize()</span></span>                                                | <span data-ttu-id="bcebd-160">現在のラベル ファイルを閉じます。</span><span class="sxs-lookup"><span data-stu-id="bcebd-160">Closes the current label file.</span></span>                                                                      |
+| <span data-ttu-id="3bab6-113">public LabelBulkEditor bulkEditor(str module)</span><span class="sxs-lookup"><span data-stu-id="3bab6-113">public LabelBulkEditor bulkEditor(str module)</span></span>                         | <span data-ttu-id="3bab6-114">LabelBulkEditor クラスのインスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-114">Creates an instance of the LabelBulkEditor class.</span></span>                                                   |
+| <span data-ttu-id="3bab6-115">public boolean createLabelFile(str module, str language)</span><span class="sxs-lookup"><span data-stu-id="3bab6-115">public boolean createLabelFile(str module, str language)</span></span>              | <span data-ttu-id="3bab6-116">指定されたラベル ID のラベル ファイルを作成します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-116">Creates a label file for a specified label ID.</span></span>                                                      |
+| <span data-ttu-id="3bab6-117">public boolean delete(str label)</span><span class="sxs-lookup"><span data-stu-id="3bab6-117">public boolean delete(str label)</span></span>                                      | <span data-ttu-id="3bab6-118">指定したラベルを削除します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-118">Deletes a specified label.</span></span>                                                                          |
+| <span data-ttu-id="3bab6-119">public boolean exists(str label)</span><span class="sxs-lookup"><span data-stu-id="3bab6-119">public boolean exists(str label)</span></span>                                      | <span data-ttu-id="3bab6-120">指定したラベル ID が存在するかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-120">Indicates whether a specified label ID exists.</span></span>                                                      |
+| <span data-ttu-id="3bab6-121">public str extractComment(str label)</span><span class="sxs-lookup"><span data-stu-id="3bab6-121">public str extractComment(str label)</span></span>                                  | <span data-ttu-id="3bab6-122">指定されたラベル ID に関連付けられているコメントを返します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-122">Returns a comment that is associated with a specified label ID.</span></span>                                     |
+| <span data-ttu-id="3bab6-123">public str extractString(str label)</span><span class="sxs-lookup"><span data-stu-id="3bab6-123">public str extractString(str label)</span></span>                                   | <span data-ttu-id="3bab6-124">指定されたラベル ID に関連付けられているテキストを返します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-124">Returns the text that is associated with a specified label ID.</span></span>                                      |
+| <span data-ttu-id="3bab6-125">public str getFirstLabelFile()</span><span class="sxs-lookup"><span data-stu-id="3bab6-125">public str getFirstLabelFile()</span></span>                                        | <span data-ttu-id="3bab6-126">最初のラベル ファイル ID レコードを返します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-126">Returns the first label file ID record.</span></span>                                                             |
+| <span data-ttu-id="3bab6-127">public Date getLabelFileCreatedDate(str labelFile, str language)</span><span class="sxs-lookup"><span data-stu-id="3bab6-127">public Date getLabelFileCreatedDate(str labelFile, str language)</span></span>      | <span data-ttu-id="3bab6-128">指定したラベル ファイルが作成された日付を返します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-128">Returns the date that a specified label file was created.</span></span>                                           |
+| <span data-ttu-id="3bab6-129">public int getLabelFileCreatedTime(str labelFile, str language)</span><span class="sxs-lookup"><span data-stu-id="3bab6-129">public int getLabelFileCreatedTime(str labelFile, str language)</span></span>       | <span data-ttu-id="3bab6-130">指定したラベル ファイルが作成された時刻を返します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-130">Returns the time that a specified label file was created.</span></span>                                           |
+| <span data-ttu-id="3bab6-131">public Date getLabelFileModificationDate(str labelFile, str language)</span><span class="sxs-lookup"><span data-stu-id="3bab6-131">public Date getLabelFileModificationDate(str labelFile, str language)</span></span> | <span data-ttu-id="3bab6-132">変更したラベル ファイルが作成された日付を返します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-132">Returns the date that a specified label file was modified.</span></span>                                          |
+| <span data-ttu-id="3bab6-133">public int getLabelFileModificationTime(str labelFile, str language)</span><span class="sxs-lookup"><span data-stu-id="3bab6-133">public int getLabelFileModificationTime(str labelFile, str language)</span></span>  | <span data-ttu-id="3bab6-134">変更したラベル ファイルが作成された時刻を返します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-134">Returns the time that a specified label file was modified.</span></span>                                          |
+| <span data-ttu-id="3bab6-135">public str getNextLabelFile()</span><span class="sxs-lookup"><span data-stu-id="3bab6-135">public str getNextLabelFile()</span></span>                                         | <span data-ttu-id="3bab6-136">次のラベル ファイル ID レコードを返します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-136">Returns the next label file ID record.</span></span>                                                              |
+| <span data-ttu-id="3bab6-137">public str insert(str text, str comment, str module)</span><span class="sxs-lookup"><span data-stu-id="3bab6-137">public str insert(str text, str comment, str module)</span></span>                  | <span data-ttu-id="3bab6-138">指定されたテキスト文字列のラベル ID を作成します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-138">Creates a label ID for a specified text string.</span></span>                                                     |
+| <span data-ttu-id="3bab6-139">public int labelId(str label)</span><span class="sxs-lookup"><span data-stu-id="3bab6-139">public int labelId(str label)</span></span>                                         | <span data-ttu-id="3bab6-140">指定したラベル ID に含まれる番号を返します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-140">Returns the number that is included in a specified label ID.</span></span>                                        |
+| <span data-ttu-id="3bab6-141">public int maxLabelId(str module)</span><span class="sxs-lookup"><span data-stu-id="3bab6-141">public int maxLabelId(str module)</span></span>                                     | <span data-ttu-id="3bab6-142">指定したラベル ファイル内の最後のラベルの ID を返します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-142">Returns the ID for the last label in the specified label file.</span></span>                                      |
+| <span data-ttu-id="3bab6-143">public boolean modify(str label, str text, \[str comment\])</span><span class="sxs-lookup"><span data-stu-id="3bab6-143">public boolean modify(str label, str text, \[str comment\])</span></span>           | <span data-ttu-id="3bab6-144">指定されたラベルに関連付けられているテキストおよびコメントを変更します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-144">Modifies the text and comment that are associated with a specified label.</span></span>                           |
+| <span data-ttu-id="3bab6-145">public str moduleId(str label)</span><span class="sxs-lookup"><span data-stu-id="3bab6-145">public str moduleId(str label)</span></span>                                        | <span data-ttu-id="3bab6-146">指定したラベル ID のラベル ファイルを返します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-146">Returns the label file ID for a specified label ID.</span></span>                                                 |
+| <span data-ttu-id="3bab6-147">public boolean moreLabelFiles()</span><span class="sxs-lookup"><span data-stu-id="3bab6-147">public boolean moreLabelFiles()</span></span>                                       | <span data-ttu-id="3bab6-148">追加のラベル ファイルがあるかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-148">Indicates whether there are additional label files.</span></span>                                                 |
+| <span data-ttu-id="3bab6-149">public str name(str module, int labelId)</span><span class="sxs-lookup"><span data-stu-id="3bab6-149">public str name(str module, int labelId)</span></span>                              | <span data-ttu-id="3bab6-150">指定したラベル ファイル ID およびラベル ID 番号に基づいて、ラベル ID を返します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-150">Returns a label ID, based on a specified label file ID and label ID number.</span></span>                         |
+| <span data-ttu-id="3bab6-151">public str searchFirst(str searchString)</span><span class="sxs-lookup"><span data-stu-id="3bab6-151">public str searchFirst(str searchString)</span></span>                              | <span data-ttu-id="3bab6-152">指定した検索用語で検出された最初のラベル ID を返します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-152">Returns the first label ID that is found for a specified search term.</span></span>                               |
+| <span data-ttu-id="3bab6-153">public str searchNext()</span><span class="sxs-lookup"><span data-stu-id="3bab6-153">public str searchNext()</span></span>                                               | <span data-ttu-id="3bab6-154">searchFirst メソッドに渡される検索用語のある次のラベル ID を返します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-154">Returns the next label ID that is found for a search term that is passed to the searchFirst method.</span></span> |
+| <span data-ttu-id="3bab6-155">::public static boolean flush(str labelFileId, str language)</span><span class="sxs-lookup"><span data-stu-id="3bab6-155">::public static boolean flush(str labelFileId, str language)</span></span>          | <span data-ttu-id="3bab6-156">ディスクにラベル ファイル バッファーをフラッシュします。</span><span class="sxs-lookup"><span data-stu-id="3bab6-156">Flushes the label file buffers to disk.</span></span>                                                             |
+| <span data-ttu-id="3bab6-157">public void new(\[str language\])</span><span class="sxs-lookup"><span data-stu-id="3bab6-157">public void new(\[str language\])</span></span>                                     | <span data-ttu-id="3bab6-158">ラベル クラスの新しいインスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-158">Creates a new instance of the Label class.</span></span>                                                          |
+| <span data-ttu-id="3bab6-159">public void finalize()</span><span class="sxs-lookup"><span data-stu-id="3bab6-159">public void finalize()</span></span>                                                | <span data-ttu-id="3bab6-160">現在のラベル ファイルを閉じます。</span><span class="sxs-lookup"><span data-stu-id="3bab6-160">Closes the current label file.</span></span>                                                                      |
 
-### <a name="method-bulkeditor"></a><span data-ttu-id="bcebd-161">メソッド bulkEditor</span><span class="sxs-lookup"><span data-stu-id="bcebd-161">Method bulkEditor</span></span>
+### <a name="method-bulkeditor"></a><span data-ttu-id="3bab6-161">メソッド bulkEditor</span><span class="sxs-lookup"><span data-stu-id="3bab6-161">Method bulkEditor</span></span>
 
-<span data-ttu-id="bcebd-162">LabelBulkEditor クラスのインスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-162">Creates an instance of the LabelBulkEditor class.</span></span>
+<span data-ttu-id="3bab6-162">LabelBulkEditor クラスのインスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-162">Creates an instance of the LabelBulkEditor class.</span></span>
 
     public LabelBulkEditor bulkEditor(str module)
 
-#### <a name="parameters"></a><span data-ttu-id="bcebd-163">パラメーター</span><span class="sxs-lookup"><span data-stu-id="bcebd-163">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="3bab6-163">パラメーター</span><span class="sxs-lookup"><span data-stu-id="3bab6-163">Parameters</span></span>
 
-<span data-ttu-id="bcebd-164">モジュール</span><span class="sxs-lookup"><span data-stu-id="bcebd-164">module</span></span>  
-<span data-ttu-id="bcebd-165">3 文字のラベル ファイル ID を指定する文字列データ型。</span><span class="sxs-lookup"><span data-stu-id="bcebd-165">A string data type that specifies a three-letter label file ID.</span></span>
+<span data-ttu-id="3bab6-164">モジュール</span><span class="sxs-lookup"><span data-stu-id="3bab6-164">module</span></span>  
+<span data-ttu-id="3bab6-165">3 文字のラベル ファイル ID を指定する文字列データ型。</span><span class="sxs-lookup"><span data-stu-id="3bab6-165">A string data type that specifies a three-letter label file ID.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-166">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-166">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-166">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-166">Return Value</span></span>
 
-<span data-ttu-id="bcebd-167">LabelBulkEditor クラスのインスタンス。</span><span class="sxs-lookup"><span data-stu-id="bcebd-167">An instance of the LabelBulkEditor class.</span></span>
+<span data-ttu-id="3bab6-167">LabelBulkEditor クラスのインスタンス。</span><span class="sxs-lookup"><span data-stu-id="3bab6-167">An instance of the LabelBulkEditor class.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="bcebd-168">備考</span><span class="sxs-lookup"><span data-stu-id="bcebd-168">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="3bab6-168">備考</span><span class="sxs-lookup"><span data-stu-id="3bab6-168">Remarks</span></span>
 
-<span data-ttu-id="bcebd-169">LabelBulkEditor クラスを使用すると、ラベル ファイルが簡単に変更されます。</span><span class="sxs-lookup"><span data-stu-id="bcebd-169">The LabelBulkEditor class is used to quickly modify a label file.</span></span> <span data-ttu-id="bcebd-170">このメソッドは、クライアント層から呼び出されたときに nullNothingnullptrunita null 参照 (Visual BasicではNothing) を返します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-170">This method returns nullNothingnullptrunita null reference (Nothing in Visual Basic) when it is invoked from the client tier.</span></span>
+<span data-ttu-id="3bab6-169">LabelBulkEditor クラスを使用すると、ラベル ファイルが簡単に変更されます。</span><span class="sxs-lookup"><span data-stu-id="3bab6-169">The LabelBulkEditor class is used to quickly modify a label file.</span></span> <span data-ttu-id="3bab6-170">このメソッドは、クライアント層から呼び出されたときに nullNothingnullptrunita null 参照 (Visual Basic ではNothing) を返します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-170">This method returns nullNothingnullptrunita null reference (Nothing in Visual Basic) when it is invoked from the client tier.</span></span>
 
-### <a name="method-createlabelfile"></a><span data-ttu-id="bcebd-171">メソッド createLabelFile</span><span class="sxs-lookup"><span data-stu-id="bcebd-171">Method createLabelFile</span></span>
+### <a name="method-createlabelfile"></a><span data-ttu-id="3bab6-171">メソッド createLabelFile</span><span class="sxs-lookup"><span data-stu-id="3bab6-171">Method createLabelFile</span></span>
 
-<span data-ttu-id="bcebd-172">指定されたラベル ID のラベル ファイルを作成します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-172">Creates a label file for a specified label ID.</span></span>
+<span data-ttu-id="3bab6-172">指定されたラベル ID のラベル ファイルを作成します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-172">Creates a label file for a specified label ID.</span></span>
 
     public boolean createLabelFile(str module, str language)
 
-#### <a name="parameters"></a><span data-ttu-id="bcebd-173">パラメーター</span><span class="sxs-lookup"><span data-stu-id="bcebd-173">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="3bab6-173">パラメーター</span><span class="sxs-lookup"><span data-stu-id="3bab6-173">Parameters</span></span>
 
-<span data-ttu-id="bcebd-174">モジュール</span><span class="sxs-lookup"><span data-stu-id="bcebd-174">module</span></span>  
-<span data-ttu-id="bcebd-175">言語の接頭語を使用して、言語を指定する文字列データ型。</span><span class="sxs-lookup"><span data-stu-id="bcebd-175">A string data type that specifies a language by using a language prefix.</span></span>
+<span data-ttu-id="3bab6-174">モジュール</span><span class="sxs-lookup"><span data-stu-id="3bab6-174">module</span></span>  
+<span data-ttu-id="3bab6-175">言語の接頭語を使用して、言語を指定する文字列データ型。</span><span class="sxs-lookup"><span data-stu-id="3bab6-175">A string data type that specifies a language by using a language prefix.</span></span>
 
 <!-- -->
 
-<span data-ttu-id="bcebd-176">言語</span><span class="sxs-lookup"><span data-stu-id="bcebd-176">language</span></span>  
-<span data-ttu-id="bcebd-177">言語の接頭語を使用して、言語を指定する文字列データ型。</span><span class="sxs-lookup"><span data-stu-id="bcebd-177">A string data type that specifies a language by using a language prefix.</span></span>
+<span data-ttu-id="3bab6-176">言語</span><span class="sxs-lookup"><span data-stu-id="3bab6-176">language</span></span>  
+<span data-ttu-id="3bab6-177">言語の接頭語を使用して、言語を指定する文字列データ型。</span><span class="sxs-lookup"><span data-stu-id="3bab6-177">A string data type that specifies a language by using a language prefix.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-178">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-178">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-178">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-178">Return Value</span></span>
 
-<span data-ttu-id="bcebd-179">ファイルが作成された場合は true。それ以外の場合は false。</span><span class="sxs-lookup"><span data-stu-id="bcebd-179">true if a file is created; otherwise, false.</span></span>
+<span data-ttu-id="3bab6-179">ファイルが作成された場合は true。それ以外の場合は false。</span><span class="sxs-lookup"><span data-stu-id="3bab6-179">true if a file is created; otherwise, false.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="bcebd-180">備考</span><span class="sxs-lookup"><span data-stu-id="bcebd-180">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="3bab6-180">備考</span><span class="sxs-lookup"><span data-stu-id="3bab6-180">Remarks</span></span>
 
-<span data-ttu-id="bcebd-181">ラベル ファイルは、ファイル バッファがディスクにフラッシュされた後に作成されます。これは、サーバーが閉じるときに発生します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-181">The label file is created after the file buffers are flushed to disk, which occurs when the server closes.</span></span>
+<span data-ttu-id="3bab6-181">ラベル ファイルは、ファイル バッファがディスクにフラッシュされた後に作成されます。これは、サーバーが閉じるときに発生します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-181">The label file is created after the file buffers are flushed to disk, which occurs when the server closes.</span></span>
 
-### <a name="method-delete"></a><span data-ttu-id="bcebd-182">メソッド delete</span><span class="sxs-lookup"><span data-stu-id="bcebd-182">Method delete</span></span>
+### <a name="method-delete"></a><span data-ttu-id="3bab6-182">メソッド delete</span><span class="sxs-lookup"><span data-stu-id="3bab6-182">Method delete</span></span>
 
-<span data-ttu-id="bcebd-183">指定したラベルを削除します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-183">Deletes a specified label.</span></span>
+<span data-ttu-id="3bab6-183">指定したラベルを削除します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-183">Deletes a specified label.</span></span>
 
     public boolean delete(str label)
 
-#### <a name="parameters"></a><span data-ttu-id="bcebd-184">パラメーター</span><span class="sxs-lookup"><span data-stu-id="bcebd-184">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="3bab6-184">パラメーター</span><span class="sxs-lookup"><span data-stu-id="3bab6-184">Parameters</span></span>
 
-<span data-ttu-id="bcebd-185">ラベル</span><span class="sxs-lookup"><span data-stu-id="bcebd-185">label</span></span>  
-<span data-ttu-id="bcebd-186">ラベル ID を指定する文字列。</span><span class="sxs-lookup"><span data-stu-id="bcebd-186">A string that specifies the label ID.</span></span> <span data-ttu-id="bcebd-187">文字列には、アットマーク (@)、ラベル ファイル ID、数字が含まれている必要があります。</span><span class="sxs-lookup"><span data-stu-id="bcebd-187">The string must include the at sign (@) followed by a label file ID and a number.</span></span>
+<span data-ttu-id="3bab6-185">ラベル</span><span class="sxs-lookup"><span data-stu-id="3bab6-185">label</span></span>  
+<span data-ttu-id="3bab6-186">ラベル ID を指定する文字列。</span><span class="sxs-lookup"><span data-stu-id="3bab6-186">A string that specifies the label ID.</span></span> <span data-ttu-id="3bab6-187">文字列には、アットマーク (@)、ラベル ファイル ID、数字が含まれている必要があります。</span><span class="sxs-lookup"><span data-stu-id="3bab6-187">The string must include the at sign (@) followed by a label file ID and a number.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-188">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-188">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-188">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-188">Return Value</span></span>
 
-<span data-ttu-id="bcebd-189">ラベル ID が削除された場合は true。それ以外の場合は false。</span><span class="sxs-lookup"><span data-stu-id="bcebd-189">true if the label ID is deleted; otherwise, false.</span></span>
+<span data-ttu-id="3bab6-189">ラベル ID が削除された場合は true。それ以外の場合は false。</span><span class="sxs-lookup"><span data-stu-id="3bab6-189">true if the label ID is deleted; otherwise, false.</span></span>
 
-### <a name="method-exists"></a><span data-ttu-id="bcebd-190">メソッド exists</span><span class="sxs-lookup"><span data-stu-id="bcebd-190">Method exists</span></span>
+### <a name="method-exists"></a><span data-ttu-id="3bab6-190">メソッド exists</span><span class="sxs-lookup"><span data-stu-id="3bab6-190">Method exists</span></span>
 
-<span data-ttu-id="bcebd-191">指定したラベル ID が存在するかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-191">Indicates whether a specified label ID exists.</span></span>
+<span data-ttu-id="3bab6-191">指定したラベル ID が存在するかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-191">Indicates whether a specified label ID exists.</span></span>
 
     public boolean exists(str label)
 
-#### <a name="parameters"></a><span data-ttu-id="bcebd-192">パラメーター</span><span class="sxs-lookup"><span data-stu-id="bcebd-192">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="3bab6-192">パラメーター</span><span class="sxs-lookup"><span data-stu-id="3bab6-192">Parameters</span></span>
 
-<span data-ttu-id="bcebd-193">ラベル</span><span class="sxs-lookup"><span data-stu-id="bcebd-193">label</span></span>  
-<span data-ttu-id="bcebd-194">アット マーク (@) を含むラベル ID 文字列からの literalStr 関数の出力。</span><span class="sxs-lookup"><span data-stu-id="bcebd-194">The output of the literalStr function from a label ID string that includes the at sign (@).</span></span>
+<span data-ttu-id="3bab6-193">ラベル</span><span class="sxs-lookup"><span data-stu-id="3bab6-193">label</span></span>  
+<span data-ttu-id="3bab6-194">アット マーク (@) を含むラベル ID 文字列からの literalStr 関数の出力。</span><span class="sxs-lookup"><span data-stu-id="3bab6-194">The output of the literalStr function from a label ID string that includes the at sign (@).</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-195">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-195">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-195">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-195">Return Value</span></span>
 
-<span data-ttu-id="bcebd-196">ラベル ID が存在する場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="bcebd-196">true if the label ID exists; otherwise, false.</span></span>
+<span data-ttu-id="3bab6-196">ラベル ID が存在する場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="3bab6-196">true if the label ID exists; otherwise, false.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="bcebd-197">備考</span><span class="sxs-lookup"><span data-stu-id="bcebd-197">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="3bab6-197">備考</span><span class="sxs-lookup"><span data-stu-id="3bab6-197">Remarks</span></span>
 
-<span data-ttu-id="bcebd-198">ラベル パラメーターの値の形式は、literalStr と同様でなければいけません ("@SYS24359")。</span><span class="sxs-lookup"><span data-stu-id="bcebd-198">The format of the label parameter value must resemble literalStr("@SYS24359").</span></span>
+<span data-ttu-id="3bab6-198">ラベル パラメーターの値の形式は、literalStr と同様でなければいけません ("@SYS24359")。</span><span class="sxs-lookup"><span data-stu-id="3bab6-198">The format of the label parameter value must resemble literalStr("@SYS24359").</span></span>
 
-### <a name="method-extractcomment"></a><span data-ttu-id="bcebd-199">メソッド extractComment</span><span class="sxs-lookup"><span data-stu-id="bcebd-199">Method extractComment</span></span>
+### <a name="method-extractcomment"></a><span data-ttu-id="3bab6-199">メソッド extractComment</span><span class="sxs-lookup"><span data-stu-id="3bab6-199">Method extractComment</span></span>
 
-<span data-ttu-id="bcebd-200">指定されたラベル ID に関連付けられているコメントを返します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-200">Returns a comment that is associated with a specified label ID.</span></span>
+<span data-ttu-id="3bab6-200">指定されたラベル ID に関連付けられているコメントを返します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-200">Returns a comment that is associated with a specified label ID.</span></span>
 
     public str extractComment(str label)
 
-#### <a name="parameters"></a><span data-ttu-id="bcebd-201">パラメーター</span><span class="sxs-lookup"><span data-stu-id="bcebd-201">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="3bab6-201">パラメーター</span><span class="sxs-lookup"><span data-stu-id="3bab6-201">Parameters</span></span>
 
-<span data-ttu-id="bcebd-202">ラベル</span><span class="sxs-lookup"><span data-stu-id="bcebd-202">label</span></span>  
-<span data-ttu-id="bcebd-203">ラベル ID を指定する文字列。</span><span class="sxs-lookup"><span data-stu-id="bcebd-203">A string that specifies the label ID.</span></span> <span data-ttu-id="bcebd-204">文字列には、アットマーク (@)、ラベル ファイル ID、数字が含まれている必要があります。</span><span class="sxs-lookup"><span data-stu-id="bcebd-204">The string must include the at sign (@) followed by a label file ID and a number.</span></span>
+<span data-ttu-id="3bab6-202">ラベル</span><span class="sxs-lookup"><span data-stu-id="3bab6-202">label</span></span>  
+<span data-ttu-id="3bab6-203">ラベル ID を指定する文字列。</span><span class="sxs-lookup"><span data-stu-id="3bab6-203">A string that specifies the label ID.</span></span> <span data-ttu-id="3bab6-204">文字列には、アットマーク (@)、ラベル ファイル ID、数字が含まれている必要があります。</span><span class="sxs-lookup"><span data-stu-id="3bab6-204">The string must include the at sign (@) followed by a label file ID and a number.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-205">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-205">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-205">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-205">Return Value</span></span>
 
-<span data-ttu-id="bcebd-206">指定されたラベル ID に関連付けられているコメントを示す文字列値。</span><span class="sxs-lookup"><span data-stu-id="bcebd-206">A string value that indicates the comment that is associated with the specified label ID.</span></span>
+<span data-ttu-id="3bab6-206">指定されたラベル ID に関連付けられているコメントを示す文字列値。</span><span class="sxs-lookup"><span data-stu-id="3bab6-206">A string value that indicates the comment that is associated with the specified label ID.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="bcebd-207">備考</span><span class="sxs-lookup"><span data-stu-id="bcebd-207">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="3bab6-207">備考</span><span class="sxs-lookup"><span data-stu-id="3bab6-207">Remarks</span></span>
 
-<span data-ttu-id="bcebd-208">存在しないラベル ID を指定する場合、このメソッドは文字列として指定した ID を返します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-208">If you specify a label ID that does not exist, this method returns the specified ID as a string.</span></span> <span data-ttu-id="bcebd-209">ラベル パラメーターの値に @ を含めない場合は、メソッドはラベル ID を返します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-209">If you do not include the @ in the label parameter value, the method returns the label ID.</span></span>
+<span data-ttu-id="3bab6-208">存在しないラベル ID を指定する場合、このメソッドは文字列として指定した ID を返します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-208">If you specify a label ID that does not exist, this method returns the specified ID as a string.</span></span> <span data-ttu-id="3bab6-209">ラベル パラメーターの値に @ を含めない場合は、メソッドはラベル ID を返します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-209">If you do not include the @ in the label parameter value, the method returns the label ID.</span></span>
 
-### <a name="method-extractstring"></a><span data-ttu-id="bcebd-210">メソッド extractString</span><span class="sxs-lookup"><span data-stu-id="bcebd-210">Method extractString</span></span>
+### <a name="method-extractstring"></a><span data-ttu-id="3bab6-210">メソッド extractString</span><span class="sxs-lookup"><span data-stu-id="3bab6-210">Method extractString</span></span>
 
-<span data-ttu-id="bcebd-211">指定されたラベル ID に関連付けられているテキストを返します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-211">Returns the text that is associated with a specified label ID.</span></span>
+<span data-ttu-id="3bab6-211">指定されたラベル ID に関連付けられているテキストを返します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-211">Returns the text that is associated with a specified label ID.</span></span>
 
     public str extractString(str label)
 
-#### <a name="parameters"></a><span data-ttu-id="bcebd-212">パラメーター</span><span class="sxs-lookup"><span data-stu-id="bcebd-212">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="3bab6-212">パラメーター</span><span class="sxs-lookup"><span data-stu-id="3bab6-212">Parameters</span></span>
 
-<span data-ttu-id="bcebd-213">ラベル</span><span class="sxs-lookup"><span data-stu-id="bcebd-213">label</span></span>  
-<span data-ttu-id="bcebd-214">ラベル ID を指定する文字列データ型。</span><span class="sxs-lookup"><span data-stu-id="bcebd-214">A string data type that specifies a label ID.</span></span> <span data-ttu-id="bcebd-215">文字列には、アットマーク (@)、ラベル ファイル ID、数字が含まれている必要があります。</span><span class="sxs-lookup"><span data-stu-id="bcebd-215">The string must include the at sign (@) followed by a label file ID and a number.</span></span>
+<span data-ttu-id="3bab6-213">ラベル</span><span class="sxs-lookup"><span data-stu-id="3bab6-213">label</span></span>  
+<span data-ttu-id="3bab6-214">ラベル ID を指定する文字列データ型。</span><span class="sxs-lookup"><span data-stu-id="3bab6-214">A string data type that specifies a label ID.</span></span> <span data-ttu-id="3bab6-215">文字列には、アットマーク (@)、ラベル ファイル ID、数字が含まれている必要があります。</span><span class="sxs-lookup"><span data-stu-id="3bab6-215">The string must include the at sign (@) followed by a label file ID and a number.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-216">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-216">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-216">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-216">Return Value</span></span>
 
-<span data-ttu-id="bcebd-217">指定されたラベル ID に関連付けられているテキストを示す文字列データ型の値。</span><span class="sxs-lookup"><span data-stu-id="bcebd-217">A string data type value that indicates the text that is associated with the specified label ID.</span></span>
+<span data-ttu-id="3bab6-217">指定されたラベル ID に関連付けられているテキストを示す文字列データ型の値。</span><span class="sxs-lookup"><span data-stu-id="3bab6-217">A string data type value that indicates the text that is associated with the specified label ID.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="bcebd-218">備考</span><span class="sxs-lookup"><span data-stu-id="bcebd-218">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="3bab6-218">備考</span><span class="sxs-lookup"><span data-stu-id="3bab6-218">Remarks</span></span>
 
-<span data-ttu-id="bcebd-219">存在しないラベル ID を指定する場合、メソッドは文字列として指定した ID を返します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-219">If you specify a label ID that does not exist, the method returns the specified ID as a string.</span></span> <span data-ttu-id="bcebd-220">ラベル パラメーターの値に @ を含めない場合は、メソッドはラベル ID を返します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-220">If you do not include the @ in the label parameter value, the method returns the label ID.</span></span>
+<span data-ttu-id="3bab6-219">存在しないラベル ID を指定する場合、メソッドは文字列として指定した ID を返します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-219">If you specify a label ID that does not exist, the method returns the specified ID as a string.</span></span> <span data-ttu-id="3bab6-220">ラベル パラメーターの値に @ を含めない場合は、メソッドはラベル ID を返します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-220">If you do not include the @ in the label parameter value, the method returns the label ID.</span></span>
 
-### <a name="method-getfirstlabelfile"></a><span data-ttu-id="bcebd-221">メソッド getFirstLabelFile</span><span class="sxs-lookup"><span data-stu-id="bcebd-221">Method getFirstLabelFile</span></span>
+### <a name="method-getfirstlabelfile"></a><span data-ttu-id="3bab6-221">メソッド getFirstLabelFile</span><span class="sxs-lookup"><span data-stu-id="3bab6-221">Method getFirstLabelFile</span></span>
 
-<span data-ttu-id="bcebd-222">最初のラベル ファイル ID レコードを返します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-222">Returns the first label file ID record.</span></span>
+<span data-ttu-id="3bab6-222">最初のラベル ファイル ID レコードを返します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-222">Returns the first label file ID record.</span></span>
 
     public str getFirstLabelFile()
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-223">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-223">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-223">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-223">Return Value</span></span>
 
-<span data-ttu-id="bcebd-224">ラベル ファイル ID を示す文字列データ型の値。</span><span class="sxs-lookup"><span data-stu-id="bcebd-224">A string data type value that indicates the label file ID.</span></span>
+<span data-ttu-id="3bab6-224">ラベル ファイル ID を示す文字列データ型の値。</span><span class="sxs-lookup"><span data-stu-id="3bab6-224">A string data type value that indicates the label file ID.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="bcebd-225">備考</span><span class="sxs-lookup"><span data-stu-id="bcebd-225">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="3bab6-225">備考</span><span class="sxs-lookup"><span data-stu-id="3bab6-225">Remarks</span></span>
 
-<span data-ttu-id="bcebd-226">ラベル ファイル ID は、ラベル ファイルの 3 文字の識別子です。</span><span class="sxs-lookup"><span data-stu-id="bcebd-226">A label file ID is a three-letter identifier for a label file.</span></span>
+<span data-ttu-id="3bab6-226">ラベル ファイル ID は、ラベル ファイルの 3 文字の識別子です。</span><span class="sxs-lookup"><span data-stu-id="3bab6-226">A label file ID is a three-letter identifier for a label file.</span></span>
 
-### <a name="method-getlabelfilecreateddate"></a><span data-ttu-id="bcebd-227">メソッド getLabelFileCreatedDate</span><span class="sxs-lookup"><span data-stu-id="bcebd-227">Method getLabelFileCreatedDate</span></span>
+### <a name="method-getlabelfilecreateddate"></a><span data-ttu-id="3bab6-227">メソッド getLabelFileCreatedDate</span><span class="sxs-lookup"><span data-stu-id="3bab6-227">Method getLabelFileCreatedDate</span></span>
 
-<span data-ttu-id="bcebd-228">指定したラベル ファイルが作成された日付を返します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-228">Returns the date that a specified label file was created.</span></span>
+<span data-ttu-id="3bab6-228">指定したラベル ファイルが作成された日付を返します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-228">Returns the date that a specified label file was created.</span></span>
 
     public Date getLabelFileCreatedDate(str labelFile, str language)
 
-#### <a name="parameters"></a><span data-ttu-id="bcebd-229">パラメーター</span><span class="sxs-lookup"><span data-stu-id="bcebd-229">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="3bab6-229">パラメーター</span><span class="sxs-lookup"><span data-stu-id="3bab6-229">Parameters</span></span>
 
-<span data-ttu-id="bcebd-230">labelFile</span><span class="sxs-lookup"><span data-stu-id="bcebd-230">labelFile</span></span>  
-<span data-ttu-id="bcebd-231">言語の接頭語を使用して、言語を指定する文字列データ型。</span><span class="sxs-lookup"><span data-stu-id="bcebd-231">A string data type that specifies a language by using a language prefix.</span></span>
+<span data-ttu-id="3bab6-230">labelFile</span><span class="sxs-lookup"><span data-stu-id="3bab6-230">labelFile</span></span>  
+<span data-ttu-id="3bab6-231">言語の接頭語を使用して、言語を指定する文字列データ型。</span><span class="sxs-lookup"><span data-stu-id="3bab6-231">A string data type that specifies a language by using a language prefix.</span></span>
 
 <!-- -->
 
-<span data-ttu-id="bcebd-232">言語</span><span class="sxs-lookup"><span data-stu-id="bcebd-232">language</span></span>  
-<span data-ttu-id="bcebd-233">言語の接頭語を使用して、言語を指定する文字列データ型。</span><span class="sxs-lookup"><span data-stu-id="bcebd-233">A string data type that specifies a language by using a language prefix.</span></span>
+<span data-ttu-id="3bab6-232">言語</span><span class="sxs-lookup"><span data-stu-id="3bab6-232">language</span></span>  
+<span data-ttu-id="3bab6-233">言語の接頭語を使用して、言語を指定する文字列データ型。</span><span class="sxs-lookup"><span data-stu-id="3bab6-233">A string data type that specifies a language by using a language prefix.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-234">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-234">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-234">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-234">Return Value</span></span>
 
-<span data-ttu-id="bcebd-235">ラベル ファイルの作成日時を示す Date データ タイプ値。</span><span class="sxs-lookup"><span data-stu-id="bcebd-235">A Date data type value that indicates when a label file is created.</span></span>
+<span data-ttu-id="3bab6-235">ラベル ファイルの作成日時を示す Date データ タイプ値。</span><span class="sxs-lookup"><span data-stu-id="3bab6-235">A Date data type value that indicates when a label file is created.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="bcebd-236">備考</span><span class="sxs-lookup"><span data-stu-id="bcebd-236">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="3bab6-236">備考</span><span class="sxs-lookup"><span data-stu-id="3bab6-236">Remarks</span></span>
 
-<span data-ttu-id="bcebd-237">date2str 関数を使用すると日付をテキスト文字列に変換することができます。</span><span class="sxs-lookup"><span data-stu-id="bcebd-237">You can use the date2str function to convert the date to a text string.</span></span>
+<span data-ttu-id="3bab6-237">date2str 関数を使用すると日付をテキスト文字列に変換することができます。</span><span class="sxs-lookup"><span data-stu-id="3bab6-237">You can use the date2str function to convert the date to a text string.</span></span>
 
-### <a name="method-getlabelfilecreatedtime"></a><span data-ttu-id="bcebd-238">メソッド getLabelFileCreatedTime</span><span class="sxs-lookup"><span data-stu-id="bcebd-238">Method getLabelFileCreatedTime</span></span>
+### <a name="method-getlabelfilecreatedtime"></a><span data-ttu-id="3bab6-238">メソッド getLabelFileCreatedTime</span><span class="sxs-lookup"><span data-stu-id="3bab6-238">Method getLabelFileCreatedTime</span></span>
 
-<span data-ttu-id="bcebd-239">指定したラベル ファイルが作成された時刻を返します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-239">Returns the time that a specified label file was created.</span></span>
+<span data-ttu-id="3bab6-239">指定したラベル ファイルが作成された時刻を返します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-239">Returns the time that a specified label file was created.</span></span>
 
     public int getLabelFileCreatedTime(str labelFile, str language)
 
-#### <a name="parameters"></a><span data-ttu-id="bcebd-240">パラメーター</span><span class="sxs-lookup"><span data-stu-id="bcebd-240">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="3bab6-240">パラメーター</span><span class="sxs-lookup"><span data-stu-id="3bab6-240">Parameters</span></span>
 
-<span data-ttu-id="bcebd-241">labelFile</span><span class="sxs-lookup"><span data-stu-id="bcebd-241">labelFile</span></span>  
-<span data-ttu-id="bcebd-242">言語の接頭語を使用して、言語を指定する文字列データ型。</span><span class="sxs-lookup"><span data-stu-id="bcebd-242">A string data type that specifies a language by using a language prefix.</span></span>
+<span data-ttu-id="3bab6-241">labelFile</span><span class="sxs-lookup"><span data-stu-id="3bab6-241">labelFile</span></span>  
+<span data-ttu-id="3bab6-242">言語の接頭語を使用して、言語を指定する文字列データ型。</span><span class="sxs-lookup"><span data-stu-id="3bab6-242">A string data type that specifies a language by using a language prefix.</span></span>
 
 <!-- -->
 
-<span data-ttu-id="bcebd-243">言語</span><span class="sxs-lookup"><span data-stu-id="bcebd-243">language</span></span>  
-<span data-ttu-id="bcebd-244">言語の接頭語を使用して、言語を指定する文字列データ型。</span><span class="sxs-lookup"><span data-stu-id="bcebd-244">A string data type that specifies a language by using a language prefix.</span></span>
+<span data-ttu-id="3bab6-243">言語</span><span class="sxs-lookup"><span data-stu-id="3bab6-243">language</span></span>  
+<span data-ttu-id="3bab6-244">言語の接頭語を使用して、言語を指定する文字列データ型。</span><span class="sxs-lookup"><span data-stu-id="3bab6-244">A string data type that specifies a language by using a language prefix.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-245">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-245">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-245">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-245">Return Value</span></span>
 
-<span data-ttu-id="bcebd-246">ラベル ファイルが作成された時間を示す整数データ型値。</span><span class="sxs-lookup"><span data-stu-id="bcebd-246">An integer data type value that indicates the time that a label file is created.</span></span>
+<span data-ttu-id="3bab6-246">ラベル ファイルが作成された時間を示す整数データ型値。</span><span class="sxs-lookup"><span data-stu-id="3bab6-246">An integer data type value that indicates the time that a label file is created.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="bcebd-247">備考</span><span class="sxs-lookup"><span data-stu-id="bcebd-247">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="3bab6-247">備考</span><span class="sxs-lookup"><span data-stu-id="3bab6-247">Remarks</span></span>
 
-<span data-ttu-id="bcebd-248">詳細については、「方法: ラベル ファイルの作成」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="bcebd-248">For more information, see How to: Create a Label File.</span></span> <span data-ttu-id="bcebd-249">time2str 関数を使用すると整数をテキスト文字列に変換することができます。</span><span class="sxs-lookup"><span data-stu-id="bcebd-249">You can use the time2str function to convert the integer to a text string.</span></span>
+<span data-ttu-id="3bab6-248">詳細については、「方法: ラベル ファイルの作成」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="3bab6-248">For more information, see How to: Create a Label File.</span></span> <span data-ttu-id="3bab6-249">time2str 関数を使用すると整数をテキスト文字列に変換することができます。</span><span class="sxs-lookup"><span data-stu-id="3bab6-249">You can use the time2str function to convert the integer to a text string.</span></span>
 
-### <a name="method-getlabelfilemodificationdate"></a><span data-ttu-id="bcebd-250">メソッド getLabelFileModificationDate</span><span class="sxs-lookup"><span data-stu-id="bcebd-250">Method getLabelFileModificationDate</span></span>
+### <a name="method-getlabelfilemodificationdate"></a><span data-ttu-id="3bab6-250">メソッド getLabelFileModificationDate</span><span class="sxs-lookup"><span data-stu-id="3bab6-250">Method getLabelFileModificationDate</span></span>
 
-<span data-ttu-id="bcebd-251">変更したラベル ファイルが作成された日付を返します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-251">Returns the date that a specified label file was modified.</span></span>
+<span data-ttu-id="3bab6-251">変更したラベル ファイルが作成された日付を返します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-251">Returns the date that a specified label file was modified.</span></span>
 
     public Date getLabelFileModificationDate(str labelFile, str language)
 
-#### <a name="parameters"></a><span data-ttu-id="bcebd-252">パラメーター</span><span class="sxs-lookup"><span data-stu-id="bcebd-252">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="3bab6-252">パラメーター</span><span class="sxs-lookup"><span data-stu-id="3bab6-252">Parameters</span></span>
 
-<span data-ttu-id="bcebd-253">labelFile</span><span class="sxs-lookup"><span data-stu-id="bcebd-253">labelFile</span></span>  
-<span data-ttu-id="bcebd-254">言語の接頭語を使用して、言語を指定する文字列データ型。</span><span class="sxs-lookup"><span data-stu-id="bcebd-254">A string data type that specifies a language by using a language prefix.</span></span>
+<span data-ttu-id="3bab6-253">labelFile</span><span class="sxs-lookup"><span data-stu-id="3bab6-253">labelFile</span></span>  
+<span data-ttu-id="3bab6-254">言語の接頭語を使用して、言語を指定する文字列データ型。</span><span class="sxs-lookup"><span data-stu-id="3bab6-254">A string data type that specifies a language by using a language prefix.</span></span>
 
 <!-- -->
 
-<span data-ttu-id="bcebd-255">言語</span><span class="sxs-lookup"><span data-stu-id="bcebd-255">language</span></span>  
-<span data-ttu-id="bcebd-256">言語の接頭語を使用して、言語を指定する文字列データ型。</span><span class="sxs-lookup"><span data-stu-id="bcebd-256">A string data type that specifies a language by using a language prefix.</span></span>
+<span data-ttu-id="3bab6-255">言語</span><span class="sxs-lookup"><span data-stu-id="3bab6-255">language</span></span>  
+<span data-ttu-id="3bab6-256">言語の接頭語を使用して、言語を指定する文字列データ型。</span><span class="sxs-lookup"><span data-stu-id="3bab6-256">A string data type that specifies a language by using a language prefix.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-257">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-257">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-257">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-257">Return Value</span></span>
 
-<span data-ttu-id="bcebd-258">ラベル ファイルの変更日時を示す Date データ タイプ値。</span><span class="sxs-lookup"><span data-stu-id="bcebd-258">A Date data type value that indicates when a label file was modified.</span></span>
+<span data-ttu-id="3bab6-258">ラベル ファイルの変更日時を示す Date データ タイプ値。</span><span class="sxs-lookup"><span data-stu-id="3bab6-258">A Date data type value that indicates when a label file was modified.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="bcebd-259">備考</span><span class="sxs-lookup"><span data-stu-id="bcebd-259">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="3bab6-259">備考</span><span class="sxs-lookup"><span data-stu-id="3bab6-259">Remarks</span></span>
 
-<span data-ttu-id="bcebd-260">date2str 関数を使用すると日付をテキスト文字列に変換することができます。</span><span class="sxs-lookup"><span data-stu-id="bcebd-260">You can use the date2str function to convert the date to a text string.</span></span>
+<span data-ttu-id="3bab6-260">date2str 関数を使用すると日付をテキスト文字列に変換することができます。</span><span class="sxs-lookup"><span data-stu-id="3bab6-260">You can use the date2str function to convert the date to a text string.</span></span>
 
-### <a name="method-getlabelfilemodificationtime"></a><span data-ttu-id="bcebd-261">メソッド getLabelFileModificationTime</span><span class="sxs-lookup"><span data-stu-id="bcebd-261">Method getLabelFileModificationTime</span></span>
+### <a name="method-getlabelfilemodificationtime"></a><span data-ttu-id="3bab6-261">メソッド getLabelFileModificationTime</span><span class="sxs-lookup"><span data-stu-id="3bab6-261">Method getLabelFileModificationTime</span></span>
 
-<span data-ttu-id="bcebd-262">変更したラベル ファイルが作成された時刻を返します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-262">Returns the time that a specified label file was modified.</span></span>
+<span data-ttu-id="3bab6-262">変更したラベル ファイルが作成された時刻を返します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-262">Returns the time that a specified label file was modified.</span></span>
 
     public int getLabelFileModificationTime(str labelFile, str language)
 
-#### <a name="parameters"></a><span data-ttu-id="bcebd-263">パラメーター</span><span class="sxs-lookup"><span data-stu-id="bcebd-263">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="3bab6-263">パラメーター</span><span class="sxs-lookup"><span data-stu-id="3bab6-263">Parameters</span></span>
 
-<span data-ttu-id="bcebd-264">labelFile</span><span class="sxs-lookup"><span data-stu-id="bcebd-264">labelFile</span></span>  
-<span data-ttu-id="bcebd-265">言語の接頭語を使用して、言語を指定する文字列データ型。</span><span class="sxs-lookup"><span data-stu-id="bcebd-265">A string data type that specifies a language by using a language prefix.</span></span>
+<span data-ttu-id="3bab6-264">labelFile</span><span class="sxs-lookup"><span data-stu-id="3bab6-264">labelFile</span></span>  
+<span data-ttu-id="3bab6-265">言語の接頭語を使用して、言語を指定する文字列データ型。</span><span class="sxs-lookup"><span data-stu-id="3bab6-265">A string data type that specifies a language by using a language prefix.</span></span>
 
 <!-- -->
 
-<span data-ttu-id="bcebd-266">言語</span><span class="sxs-lookup"><span data-stu-id="bcebd-266">language</span></span>  
-<span data-ttu-id="bcebd-267">言語の接頭語を使用して、言語を指定する文字列データ型。</span><span class="sxs-lookup"><span data-stu-id="bcebd-267">A string data type that specifies a language by using a language prefix.</span></span>
+<span data-ttu-id="3bab6-266">言語</span><span class="sxs-lookup"><span data-stu-id="3bab6-266">language</span></span>  
+<span data-ttu-id="3bab6-267">言語の接頭語を使用して、言語を指定する文字列データ型。</span><span class="sxs-lookup"><span data-stu-id="3bab6-267">A string data type that specifies a language by using a language prefix.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-268">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-268">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-268">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-268">Return Value</span></span>
 
-<span data-ttu-id="bcebd-269">ラベル ファイルが変更された時間を示す整数データ型値。</span><span class="sxs-lookup"><span data-stu-id="bcebd-269">An integer value that indicates the time that a label file was modified.</span></span>
+<span data-ttu-id="3bab6-269">ラベル ファイルが変更された時間を示す整数データ型値。</span><span class="sxs-lookup"><span data-stu-id="3bab6-269">An integer value that indicates the time that a label file was modified.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="bcebd-270">備考</span><span class="sxs-lookup"><span data-stu-id="bcebd-270">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="3bab6-270">備考</span><span class="sxs-lookup"><span data-stu-id="3bab6-270">Remarks</span></span>
 
-<span data-ttu-id="bcebd-271">time2str 関数を使用すると整数をテキスト文字列に変換することができます。</span><span class="sxs-lookup"><span data-stu-id="bcebd-271">You can use the time2str function to convert the integer to a text string.</span></span>
+<span data-ttu-id="3bab6-271">time2str 関数を使用すると整数をテキスト文字列に変換することができます。</span><span class="sxs-lookup"><span data-stu-id="3bab6-271">You can use the time2str function to convert the integer to a text string.</span></span>
 
-### <a name="method-getnextlabelfile"></a><span data-ttu-id="bcebd-272">メソッド getNextLabelFile</span><span class="sxs-lookup"><span data-stu-id="bcebd-272">Method getNextLabelFile</span></span>
+### <a name="method-getnextlabelfile"></a><span data-ttu-id="3bab6-272">メソッド getNextLabelFile</span><span class="sxs-lookup"><span data-stu-id="3bab6-272">Method getNextLabelFile</span></span>
 
-<span data-ttu-id="bcebd-273">次のラベル ファイル ID レコードを返します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-273">Returns the next label file ID record.</span></span>
+<span data-ttu-id="3bab6-273">次のラベル ファイル ID レコードを返します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-273">Returns the next label file ID record.</span></span>
 
     public str getNextLabelFile()
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-274">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-274">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-274">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-274">Return Value</span></span>
 
-<span data-ttu-id="bcebd-275">ラベル ファイル ID を示す文字列データ型の値。</span><span class="sxs-lookup"><span data-stu-id="bcebd-275">A string data type value that indicates the label file ID.</span></span>
+<span data-ttu-id="3bab6-275">ラベル ファイル ID を示す文字列データ型の値。</span><span class="sxs-lookup"><span data-stu-id="3bab6-275">A string data type value that indicates the label file ID.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="bcebd-276">備考</span><span class="sxs-lookup"><span data-stu-id="bcebd-276">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="3bab6-276">備考</span><span class="sxs-lookup"><span data-stu-id="3bab6-276">Remarks</span></span>
 
-<span data-ttu-id="bcebd-277">ラベル ファイル ID は、ラベル ファイルの 3 文字の識別子です。</span><span class="sxs-lookup"><span data-stu-id="bcebd-277">A label file ID is a three-letter identifier for a label file.</span></span>
+<span data-ttu-id="3bab6-277">ラベル ファイル ID は、ラベル ファイルの 3 文字の識別子です。</span><span class="sxs-lookup"><span data-stu-id="3bab6-277">A label file ID is a three-letter identifier for a label file.</span></span>
 
-### <a name="method-insert"></a><span data-ttu-id="bcebd-278">メソッド insert</span><span class="sxs-lookup"><span data-stu-id="bcebd-278">Method insert</span></span>
+### <a name="method-insert"></a><span data-ttu-id="3bab6-278">メソッド insert</span><span class="sxs-lookup"><span data-stu-id="3bab6-278">Method insert</span></span>
 
-<span data-ttu-id="bcebd-279">指定されたテキスト文字列のラベル ID を作成します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-279">Creates a label ID for a specified text string.</span></span>
+<span data-ttu-id="3bab6-279">指定されたテキスト文字列のラベル ID を作成します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-279">Creates a label ID for a specified text string.</span></span>
 
     public str insert(str text, str comment, str module)
 
-#### <a name="parameters"></a><span data-ttu-id="bcebd-280">パラメーター</span><span class="sxs-lookup"><span data-stu-id="bcebd-280">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="3bab6-280">パラメーター</span><span class="sxs-lookup"><span data-stu-id="3bab6-280">Parameters</span></span>
 
-<span data-ttu-id="bcebd-281">テキスト</span><span class="sxs-lookup"><span data-stu-id="bcebd-281">text</span></span>  
-<span data-ttu-id="bcebd-282">3 文字のラベル ファイル ID を指定する文字列データ型。</span><span class="sxs-lookup"><span data-stu-id="bcebd-282">A string data type that specifies a three-letter label file ID.</span></span>
-
-<!-- -->
-
-<span data-ttu-id="bcebd-283">comment</span><span class="sxs-lookup"><span data-stu-id="bcebd-283">comment</span></span>  
-<span data-ttu-id="bcebd-284">3 文字のラベル ファイル ID を指定する文字列データ型。</span><span class="sxs-lookup"><span data-stu-id="bcebd-284">A string data type that specifies a three-letter label file ID.</span></span>
+<span data-ttu-id="3bab6-281">テキスト</span><span class="sxs-lookup"><span data-stu-id="3bab6-281">text</span></span>  
+<span data-ttu-id="3bab6-282">3 文字のラベル ファイル ID を指定する文字列データ型。</span><span class="sxs-lookup"><span data-stu-id="3bab6-282">A string data type that specifies a three-letter label file ID.</span></span>
 
 <!-- -->
 
-<span data-ttu-id="bcebd-285">モジュール</span><span class="sxs-lookup"><span data-stu-id="bcebd-285">module</span></span>  
-<span data-ttu-id="bcebd-286">3 文字のラベル ファイル ID を指定する文字列データ型。</span><span class="sxs-lookup"><span data-stu-id="bcebd-286">A string data type that specifies a three-letter label file ID.</span></span>
+<span data-ttu-id="3bab6-283">comment</span><span class="sxs-lookup"><span data-stu-id="3bab6-283">comment</span></span>  
+<span data-ttu-id="3bab6-284">3 文字のラベル ファイル ID を指定する文字列データ型。</span><span class="sxs-lookup"><span data-stu-id="3bab6-284">A string data type that specifies a three-letter label file ID.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-287">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-287">Return Value</span></span>
+<!-- -->
 
-<span data-ttu-id="bcebd-288">作成されるラベル ID の文字列データ型の値。</span><span class="sxs-lookup"><span data-stu-id="bcebd-288">A string data type value for the label ID that is created.</span></span>
+<span data-ttu-id="3bab6-285">モジュール</span><span class="sxs-lookup"><span data-stu-id="3bab6-285">module</span></span>  
+<span data-ttu-id="3bab6-286">3 文字のラベル ファイル ID を指定する文字列データ型。</span><span class="sxs-lookup"><span data-stu-id="3bab6-286">A string data type that specifies a three-letter label file ID.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="bcebd-289">備考</span><span class="sxs-lookup"><span data-stu-id="bcebd-289">Remarks</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-287">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-287">Return Value</span></span>
 
-<span data-ttu-id="bcebd-290">この操作では、すべての言語に新しいラベル ID が割り当てられます。</span><span class="sxs-lookup"><span data-stu-id="bcebd-290">This operation allocates a new label ID across all languages.</span></span>
+<span data-ttu-id="3bab6-288">作成されるラベル ID の文字列データ型の値。</span><span class="sxs-lookup"><span data-stu-id="3bab6-288">A string data type value for the label ID that is created.</span></span>
 
-### <a name="method-labelid"></a><span data-ttu-id="bcebd-291">メソッド labelId</span><span class="sxs-lookup"><span data-stu-id="bcebd-291">Method labelId</span></span>
+#### <a name="remarks"></a><span data-ttu-id="3bab6-289">備考</span><span class="sxs-lookup"><span data-stu-id="3bab6-289">Remarks</span></span>
 
-<span data-ttu-id="bcebd-292">指定したラベル ID に含まれる番号を返します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-292">Returns the number that is included in a specified label ID.</span></span>
+<span data-ttu-id="3bab6-290">この操作では、すべての言語に新しいラベル ID が割り当てられます。</span><span class="sxs-lookup"><span data-stu-id="3bab6-290">This operation allocates a new label ID across all languages.</span></span>
+
+### <a name="method-labelid"></a><span data-ttu-id="3bab6-291">メソッド labelId</span><span class="sxs-lookup"><span data-stu-id="3bab6-291">Method labelId</span></span>
+
+<span data-ttu-id="3bab6-292">指定したラベル ID に含まれる番号を返します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-292">Returns the number that is included in a specified label ID.</span></span>
 
     public int labelId(str label)
 
-#### <a name="parameters"></a><span data-ttu-id="bcebd-293">パラメーター</span><span class="sxs-lookup"><span data-stu-id="bcebd-293">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="3bab6-293">パラメーター</span><span class="sxs-lookup"><span data-stu-id="3bab6-293">Parameters</span></span>
 
-<span data-ttu-id="bcebd-294">ラベル</span><span class="sxs-lookup"><span data-stu-id="bcebd-294">label</span></span>  
-<span data-ttu-id="bcebd-295">ラベル ID を指定する文字列データ型。</span><span class="sxs-lookup"><span data-stu-id="bcebd-295">A string data type that specifies the label ID.</span></span> <span data-ttu-id="bcebd-296">文字列には、アットマーク (@)、ラベル ファイル ID、数字が含まれている必要があります。</span><span class="sxs-lookup"><span data-stu-id="bcebd-296">The string must include the at sign (@) followed by a label file ID and a number.</span></span>
+<span data-ttu-id="3bab6-294">ラベル</span><span class="sxs-lookup"><span data-stu-id="3bab6-294">label</span></span>  
+<span data-ttu-id="3bab6-295">ラベル ID を指定する文字列データ型。</span><span class="sxs-lookup"><span data-stu-id="3bab6-295">A string data type that specifies the label ID.</span></span> <span data-ttu-id="3bab6-296">文字列には、アットマーク (@)、ラベル ファイル ID、数字が含まれている必要があります。</span><span class="sxs-lookup"><span data-stu-id="3bab6-296">The string must include the at sign (@) followed by a label file ID and a number.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-297">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-297">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-297">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-297">Return Value</span></span>
 
-<span data-ttu-id="bcebd-298">ラベル ID に含まれる番号を示す整数データ型値。</span><span class="sxs-lookup"><span data-stu-id="bcebd-298">An integer data type value that indicates the number that is included in a label ID.</span></span>
+<span data-ttu-id="3bab6-298">ラベル ID に含まれる番号を示す整数データ型値。</span><span class="sxs-lookup"><span data-stu-id="3bab6-298">An integer data type value that indicates the number that is included in a label ID.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="bcebd-299">備考</span><span class="sxs-lookup"><span data-stu-id="bcebd-299">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="3bab6-299">備考</span><span class="sxs-lookup"><span data-stu-id="3bab6-299">Remarks</span></span>
 
-<span data-ttu-id="bcebd-300">searchFirst または searchNext メソッドを呼び出してから、パラメーターとして戻り値をこのメソッドに渡す必要があります。</span><span class="sxs-lookup"><span data-stu-id="bcebd-300">You must call the searchFirst or searchNext method, and then pass the return value as a parameter to this method.</span></span>
+<span data-ttu-id="3bab6-300">searchFirst または searchNext メソッドを呼び出してから、パラメーターとして戻り値をこのメソッドに渡す必要があります。</span><span class="sxs-lookup"><span data-stu-id="3bab6-300">You must call the searchFirst or searchNext method, and then pass the return value as a parameter to this method.</span></span>
 
-### <a name="method-maxlabelid"></a><span data-ttu-id="bcebd-301">メソッド maxLabelId</span><span class="sxs-lookup"><span data-stu-id="bcebd-301">Method maxLabelId</span></span>
+### <a name="method-maxlabelid"></a><span data-ttu-id="3bab6-301">メソッド maxLabelId</span><span class="sxs-lookup"><span data-stu-id="3bab6-301">Method maxLabelId</span></span>
 
-<span data-ttu-id="bcebd-302">指定したラベル ファイル内の最後のラベルの ID を返します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-302">Returns the ID for the last label in the specified label file.</span></span>
+<span data-ttu-id="3bab6-302">指定したラベル ファイル内の最後のラベルの ID を返します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-302">Returns the ID for the last label in the specified label file.</span></span>
 
     public int maxLabelId(str module)
 
-#### <a name="parameters"></a><span data-ttu-id="bcebd-303">パラメーター</span><span class="sxs-lookup"><span data-stu-id="bcebd-303">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="3bab6-303">パラメーター</span><span class="sxs-lookup"><span data-stu-id="3bab6-303">Parameters</span></span>
 
-<span data-ttu-id="bcebd-304">モジュール</span><span class="sxs-lookup"><span data-stu-id="bcebd-304">module</span></span>  
-<span data-ttu-id="bcebd-305">3 文字のラベル ファイル ID を指定する文字列。</span><span class="sxs-lookup"><span data-stu-id="bcebd-305">A string that specifies a three-letter label file ID.</span></span>
+<span data-ttu-id="3bab6-304">モジュール</span><span class="sxs-lookup"><span data-stu-id="3bab6-304">module</span></span>  
+<span data-ttu-id="3bab6-305">3 文字のラベル ファイル ID を指定する文字列。</span><span class="sxs-lookup"><span data-stu-id="3bab6-305">A string that specifies a three-letter label file ID.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-306">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-306">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-306">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-306">Return Value</span></span>
 
-<span data-ttu-id="bcebd-307">指定したラベル ファイルの最大ラベル ID を示す整数。</span><span class="sxs-lookup"><span data-stu-id="bcebd-307">An integer that indicates the maximum label ID for the specified label file.</span></span>
+<span data-ttu-id="3bab6-307">指定したラベル ファイルの最大ラベル ID を示す整数。</span><span class="sxs-lookup"><span data-stu-id="3bab6-307">An integer that indicates the maximum label ID for the specified label file.</span></span>
 
-### <a name="method-modify"></a><span data-ttu-id="bcebd-308">メソッド modify</span><span class="sxs-lookup"><span data-stu-id="bcebd-308">Method modify</span></span>
+### <a name="method-modify"></a><span data-ttu-id="3bab6-308">メソッド modify</span><span class="sxs-lookup"><span data-stu-id="3bab6-308">Method modify</span></span>
 
-<span data-ttu-id="bcebd-309">指定されたラベルに関連付けられているテキストおよびコメントを変更します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-309">Modifies the text and comment that are associated with a specified label.</span></span>
+<span data-ttu-id="3bab6-309">指定されたラベルに関連付けられているテキストおよびコメントを変更します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-309">Modifies the text and comment that are associated with a specified label.</span></span>
 
     public boolean modify(str label, str text, [str comment])
 
-#### <a name="parameters"></a><span data-ttu-id="bcebd-310">パラメーター</span><span class="sxs-lookup"><span data-stu-id="bcebd-310">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="3bab6-310">パラメーター</span><span class="sxs-lookup"><span data-stu-id="3bab6-310">Parameters</span></span>
 
-<span data-ttu-id="bcebd-311">ラベル</span><span class="sxs-lookup"><span data-stu-id="bcebd-311">label</span></span>  
-<span data-ttu-id="bcebd-312">ラベル ID に関連付けられているコメントを指定する文字列。</span><span class="sxs-lookup"><span data-stu-id="bcebd-312">A string that specifies the comment that is associated with a label ID.</span></span>
-
-<!-- -->
-
-<span data-ttu-id="bcebd-313">テキスト</span><span class="sxs-lookup"><span data-stu-id="bcebd-313">text</span></span>  
-<span data-ttu-id="bcebd-314">ラベル ID に関連付けられているコメントを指定する文字列。</span><span class="sxs-lookup"><span data-stu-id="bcebd-314">A string that specifies the comment that is associated with a label ID.</span></span>
+<span data-ttu-id="3bab6-311">ラベル</span><span class="sxs-lookup"><span data-stu-id="3bab6-311">label</span></span>  
+<span data-ttu-id="3bab6-312">ラベル ID に関連付けられているコメントを指定する文字列。</span><span class="sxs-lookup"><span data-stu-id="3bab6-312">A string that specifies the comment that is associated with a label ID.</span></span>
 
 <!-- -->
 
-<span data-ttu-id="bcebd-315">comment</span><span class="sxs-lookup"><span data-stu-id="bcebd-315">comment</span></span>  
-<span data-ttu-id="bcebd-316">ラベル ID に関連付けられているコメントを指定する文字列。</span><span class="sxs-lookup"><span data-stu-id="bcebd-316">A string that specifies the comment that is associated with a label ID.</span></span>
+<span data-ttu-id="3bab6-313">テキスト</span><span class="sxs-lookup"><span data-stu-id="3bab6-313">text</span></span>  
+<span data-ttu-id="3bab6-314">ラベル ID に関連付けられているコメントを指定する文字列。</span><span class="sxs-lookup"><span data-stu-id="3bab6-314">A string that specifies the comment that is associated with a label ID.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-317">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-317">Return Value</span></span>
+<!-- -->
 
-<span data-ttu-id="bcebd-318">ラベル ID が修正された場合は true。それ以外の場合は false。</span><span class="sxs-lookup"><span data-stu-id="bcebd-318">true if the label ID is modified; otherwise, false.</span></span>
+<span data-ttu-id="3bab6-315">comment</span><span class="sxs-lookup"><span data-stu-id="3bab6-315">comment</span></span>  
+<span data-ttu-id="3bab6-316">ラベル ID に関連付けられているコメントを指定する文字列。</span><span class="sxs-lookup"><span data-stu-id="3bab6-316">A string that specifies the comment that is associated with a label ID.</span></span>
 
-### <a name="method-moduleid"></a><span data-ttu-id="bcebd-319">メソッド moduleId</span><span class="sxs-lookup"><span data-stu-id="bcebd-319">Method moduleId</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-317">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-317">Return Value</span></span>
 
-<span data-ttu-id="bcebd-320">指定したラベル ID のラベル ファイルを返します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-320">Returns the label file ID for a specified label ID.</span></span>
+<span data-ttu-id="3bab6-318">ラベル ID が修正された場合は true。それ以外の場合は false。</span><span class="sxs-lookup"><span data-stu-id="3bab6-318">true if the label ID is modified; otherwise, false.</span></span>
+
+### <a name="method-moduleid"></a><span data-ttu-id="3bab6-319">メソッド moduleId</span><span class="sxs-lookup"><span data-stu-id="3bab6-319">Method moduleId</span></span>
+
+<span data-ttu-id="3bab6-320">指定したラベル ID のラベル ファイルを返します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-320">Returns the label file ID for a specified label ID.</span></span>
 
     public str moduleId(str label)
 
-#### <a name="parameters"></a><span data-ttu-id="bcebd-321">パラメーター</span><span class="sxs-lookup"><span data-stu-id="bcebd-321">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="3bab6-321">パラメーター</span><span class="sxs-lookup"><span data-stu-id="3bab6-321">Parameters</span></span>
 
-<span data-ttu-id="bcebd-322">ラベル</span><span class="sxs-lookup"><span data-stu-id="bcebd-322">label</span></span>  
-<span data-ttu-id="bcebd-323">ラベル ID を指定する文字列。</span><span class="sxs-lookup"><span data-stu-id="bcebd-323">A string that specifies the label ID.</span></span> <span data-ttu-id="bcebd-324">文字列には、アットマーク (@)、ラベル ファイル ID、数字が含まれている必要があります。</span><span class="sxs-lookup"><span data-stu-id="bcebd-324">The string must include the at sign (@) followed by a label file ID and a number.</span></span>
+<span data-ttu-id="3bab6-322">ラベル</span><span class="sxs-lookup"><span data-stu-id="3bab6-322">label</span></span>  
+<span data-ttu-id="3bab6-323">ラベル ID を指定する文字列。</span><span class="sxs-lookup"><span data-stu-id="3bab6-323">A string that specifies the label ID.</span></span> <span data-ttu-id="3bab6-324">文字列には、アットマーク (@)、ラベル ファイル ID、数字が含まれている必要があります。</span><span class="sxs-lookup"><span data-stu-id="3bab6-324">The string must include the at sign (@) followed by a label file ID and a number.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-325">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-325">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-325">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-325">Return Value</span></span>
 
-<span data-ttu-id="bcebd-326">指定したラベル ID のラベル ファイル ID を示す文字列。</span><span class="sxs-lookup"><span data-stu-id="bcebd-326">A string that indicates the label file ID for a specified label ID.</span></span>
+<span data-ttu-id="3bab6-326">指定したラベル ID のラベル ファイル ID を示す文字列。</span><span class="sxs-lookup"><span data-stu-id="3bab6-326">A string that indicates the label file ID for a specified label ID.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="bcebd-327">備考</span><span class="sxs-lookup"><span data-stu-id="bcebd-327">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="3bab6-327">備考</span><span class="sxs-lookup"><span data-stu-id="3bab6-327">Remarks</span></span>
 
-<span data-ttu-id="bcebd-328">SearchFirst または searchNext のメソッドを呼び出すパラメーターとして戻り値を labelId メソッドに渡す必要があります。</span><span class="sxs-lookup"><span data-stu-id="bcebd-328">You need to call the searchFirst or searchNext method, and then pass the return value as a parameter to the labelId method.</span></span>
+<span data-ttu-id="3bab6-328">SearchFirst または searchNext のメソッドを呼び出すパラメーターとして戻り値を labelId メソッドに渡す必要があります。</span><span class="sxs-lookup"><span data-stu-id="3bab6-328">You need to call the searchFirst or searchNext method, and then pass the return value as a parameter to the labelId method.</span></span>
 
-### <a name="method-morelabelfiles"></a><span data-ttu-id="bcebd-329">メソッド moreLabelFiles</span><span class="sxs-lookup"><span data-stu-id="bcebd-329">Method moreLabelFiles</span></span>
+### <a name="method-morelabelfiles"></a><span data-ttu-id="3bab6-329">メソッド moreLabelFiles</span><span class="sxs-lookup"><span data-stu-id="3bab6-329">Method moreLabelFiles</span></span>
 
-<span data-ttu-id="bcebd-330">追加のラベル ファイルがあるかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-330">Indicates whether there are additional label files.</span></span>
+<span data-ttu-id="3bab6-330">追加のラベル ファイルがあるかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-330">Indicates whether there are additional label files.</span></span>
 
     public boolean moreLabelFiles()
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-331">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-331">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-331">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-331">Return Value</span></span>
 
-<span data-ttu-id="bcebd-332">追加のラベル ファイルがある場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="bcebd-332">true if there are additional label files; otherwise, false.</span></span>
+<span data-ttu-id="3bab6-332">追加のラベル ファイルがある場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="3bab6-332">true if there are additional label files; otherwise, false.</span></span>
 
-### <a name="method-name"></a><span data-ttu-id="bcebd-333">メソッド名</span><span class="sxs-lookup"><span data-stu-id="bcebd-333">Method name</span></span>
+### <a name="method-name"></a><span data-ttu-id="3bab6-333">メソッド名</span><span class="sxs-lookup"><span data-stu-id="3bab6-333">Method name</span></span>
 
-<span data-ttu-id="bcebd-334">指定したラベル ファイル ID およびラベル ID 番号に基づいて、ラベル ID を返します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-334">Returns a label ID, based on a specified label file ID and label ID number.</span></span>
+<span data-ttu-id="3bab6-334">指定したラベル ファイル ID およびラベル ID 番号に基づいて、ラベル ID を返します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-334">Returns a label ID, based on a specified label file ID and label ID number.</span></span>
 
     public str name(str module, int labelId)
 
-#### <a name="parameters"></a><span data-ttu-id="bcebd-335">パラメーター</span><span class="sxs-lookup"><span data-stu-id="bcebd-335">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="3bab6-335">パラメーター</span><span class="sxs-lookup"><span data-stu-id="3bab6-335">Parameters</span></span>
 
-<span data-ttu-id="bcebd-336">モジュール</span><span class="sxs-lookup"><span data-stu-id="bcebd-336">module</span></span>  
-<span data-ttu-id="bcebd-337">ラベル ID の数値部分を指定する整数。</span><span class="sxs-lookup"><span data-stu-id="bcebd-337">An integer that specifies the numeric part of a label ID.</span></span>
+<span data-ttu-id="3bab6-336">モジュール</span><span class="sxs-lookup"><span data-stu-id="3bab6-336">module</span></span>  
+<span data-ttu-id="3bab6-337">ラベル ID の数値部分を指定する整数。</span><span class="sxs-lookup"><span data-stu-id="3bab6-337">An integer that specifies the numeric part of a label ID.</span></span>
 
 <!-- -->
 
-<span data-ttu-id="bcebd-338">labelId</span><span class="sxs-lookup"><span data-stu-id="bcebd-338">labelId</span></span>  
-<span data-ttu-id="bcebd-339">ラベル ID の数値部分を指定する整数。</span><span class="sxs-lookup"><span data-stu-id="bcebd-339">An integer that specifies the numeric part of a label ID.</span></span>
+<span data-ttu-id="3bab6-338">labelId</span><span class="sxs-lookup"><span data-stu-id="3bab6-338">labelId</span></span>  
+<span data-ttu-id="3bab6-339">ラベル ID の数値部分を指定する整数。</span><span class="sxs-lookup"><span data-stu-id="3bab6-339">An integer that specifies the numeric part of a label ID.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-340">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-340">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-340">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-340">Return Value</span></span>
 
-<span data-ttu-id="bcebd-341">ラベル ID を示す文字列値。</span><span class="sxs-lookup"><span data-stu-id="bcebd-341">A string value that indicates the label ID.</span></span>
+<span data-ttu-id="3bab6-341">ラベル ID を示す文字列値。</span><span class="sxs-lookup"><span data-stu-id="3bab6-341">A string value that indicates the label ID.</span></span>
 
-### <a name="method-searchfirst"></a><span data-ttu-id="bcebd-342">メソッド searchFirst</span><span class="sxs-lookup"><span data-stu-id="bcebd-342">Method searchFirst</span></span>
+### <a name="method-searchfirst"></a><span data-ttu-id="3bab6-342">メソッド searchFirst</span><span class="sxs-lookup"><span data-stu-id="3bab6-342">Method searchFirst</span></span>
 
-<span data-ttu-id="bcebd-343">指定した検索用語で検出された最初のラベル ID を返します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-343">Returns the first label ID that is found for a specified search term.</span></span>
+<span data-ttu-id="3bab6-343">指定した検索用語で検出された最初のラベル ID を返します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-343">Returns the first label ID that is found for a specified search term.</span></span>
 
     public str searchFirst(str searchString)
 
-#### <a name="parameters"></a><span data-ttu-id="bcebd-344">パラメーター</span><span class="sxs-lookup"><span data-stu-id="bcebd-344">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="3bab6-344">パラメーター</span><span class="sxs-lookup"><span data-stu-id="3bab6-344">Parameters</span></span>
 
-<span data-ttu-id="bcebd-345">searchString</span><span class="sxs-lookup"><span data-stu-id="bcebd-345">searchString</span></span>  
-<span data-ttu-id="bcebd-346">検索用語を指定する文字列。</span><span class="sxs-lookup"><span data-stu-id="bcebd-346">A string that specifies the search term.</span></span>
+<span data-ttu-id="3bab6-345">searchString</span><span class="sxs-lookup"><span data-stu-id="3bab6-345">searchString</span></span>  
+<span data-ttu-id="3bab6-346">検索用語を指定する文字列。</span><span class="sxs-lookup"><span data-stu-id="3bab6-346">A string that specifies the search term.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-347">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-347">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-347">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-347">Return Value</span></span>
 
-<span data-ttu-id="bcebd-348">ラベル ID を示す文字列値。</span><span class="sxs-lookup"><span data-stu-id="bcebd-348">A string value that indicates the label ID.</span></span>
+<span data-ttu-id="3bab6-348">ラベル ID を示す文字列値。</span><span class="sxs-lookup"><span data-stu-id="3bab6-348">A string value that indicates the label ID.</span></span>
 
-### <a name="method-searchnext"></a><span data-ttu-id="bcebd-349">メソッド searchNext</span><span class="sxs-lookup"><span data-stu-id="bcebd-349">Method searchNext</span></span>
+### <a name="method-searchnext"></a><span data-ttu-id="3bab6-349">メソッド searchNext</span><span class="sxs-lookup"><span data-stu-id="3bab6-349">Method searchNext</span></span>
 
-<span data-ttu-id="bcebd-350">searchFirst メソッドに渡される検索用語のある次のラベル ID を返します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-350">Returns the next label ID that is found for a search term that is passed to the searchFirst method.</span></span>
+<span data-ttu-id="3bab6-350">searchFirst メソッドに渡される検索用語のある次のラベル ID を返します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-350">Returns the next label ID that is found for a search term that is passed to the searchFirst method.</span></span>
 
     public str searchNext()
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-351">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-351">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-351">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-351">Return Value</span></span>
 
-<span data-ttu-id="bcebd-352">ラベル ID を示す文字列値。</span><span class="sxs-lookup"><span data-stu-id="bcebd-352">A string value that indicates the label ID.</span></span>
+<span data-ttu-id="3bab6-352">ラベル ID を示す文字列値。</span><span class="sxs-lookup"><span data-stu-id="3bab6-352">A string value that indicates the label ID.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="bcebd-353">備考</span><span class="sxs-lookup"><span data-stu-id="bcebd-353">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="3bab6-353">備考</span><span class="sxs-lookup"><span data-stu-id="3bab6-353">Remarks</span></span>
 
-<span data-ttu-id="bcebd-354">このメソッドを呼び出す前に、searchFirst メソッドを呼び出す必要があります。</span><span class="sxs-lookup"><span data-stu-id="bcebd-354">You must call the searchFirst method before you call this method.</span></span> <span data-ttu-id="bcebd-355">それ以外の場合、このメソッドは、ランダムなラベル ID を返します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-355">Otherwise, this method returns a random label ID.</span></span>
+<span data-ttu-id="3bab6-354">このメソッドを呼び出す前に、searchFirst メソッドを呼び出す必要があります。</span><span class="sxs-lookup"><span data-stu-id="3bab6-354">You must call the searchFirst method before you call this method.</span></span> <span data-ttu-id="3bab6-355">それ以外の場合、このメソッドは、ランダムなラベル ID を返します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-355">Otherwise, this method returns a random label ID.</span></span>
 
-### <a name="method-flush"></a><span data-ttu-id="bcebd-356">メソッド flush</span><span class="sxs-lookup"><span data-stu-id="bcebd-356">Method flush</span></span>
+### <a name="method-flush"></a><span data-ttu-id="3bab6-356">メソッド flush</span><span class="sxs-lookup"><span data-stu-id="3bab6-356">Method flush</span></span>
 
-<span data-ttu-id="bcebd-357">ディスクにラベル ファイル バッファーをフラッシュします。</span><span class="sxs-lookup"><span data-stu-id="bcebd-357">Flushes the label file buffers to disk.</span></span>
+<span data-ttu-id="3bab6-357">ディスクにラベル ファイル バッファーをフラッシュします。</span><span class="sxs-lookup"><span data-stu-id="3bab6-357">Flushes the label file buffers to disk.</span></span>
 
     public static boolean flush(str labelFileId, str language)
 
-#### <a name="parameters"></a><span data-ttu-id="bcebd-358">パラメーター</span><span class="sxs-lookup"><span data-stu-id="bcebd-358">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="3bab6-358">パラメーター</span><span class="sxs-lookup"><span data-stu-id="3bab6-358">Parameters</span></span>
 
-<span data-ttu-id="bcebd-359">labelFileId</span><span class="sxs-lookup"><span data-stu-id="bcebd-359">labelFileId</span></span>  
-<span data-ttu-id="bcebd-360">言語の接頭語を使用して、言語を指定する文字列。</span><span class="sxs-lookup"><span data-stu-id="bcebd-360">A string that specifies a language by using a language prefix.</span></span>
+<span data-ttu-id="3bab6-359">labelFileId</span><span class="sxs-lookup"><span data-stu-id="3bab6-359">labelFileId</span></span>  
+<span data-ttu-id="3bab6-360">言語の接頭語を使用して、言語を指定する文字列。</span><span class="sxs-lookup"><span data-stu-id="3bab6-360">A string that specifies a language by using a language prefix.</span></span>
 
 <!-- -->
 
-<span data-ttu-id="bcebd-361">言語</span><span class="sxs-lookup"><span data-stu-id="bcebd-361">language</span></span>  
-<span data-ttu-id="bcebd-362">言語の接頭語を使用して、言語を指定する文字列。</span><span class="sxs-lookup"><span data-stu-id="bcebd-362">A string that specifies a language by using a language prefix.</span></span>
+<span data-ttu-id="3bab6-361">言語</span><span class="sxs-lookup"><span data-stu-id="3bab6-361">language</span></span>  
+<span data-ttu-id="3bab6-362">言語の接頭語を使用して、言語を指定する文字列。</span><span class="sxs-lookup"><span data-stu-id="3bab6-362">A string that specifies a language by using a language prefix.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-363">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-363">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-363">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-363">Return Value</span></span>
 
-### <a name="method-new"></a><span data-ttu-id="bcebd-364">メソッド new</span><span class="sxs-lookup"><span data-stu-id="bcebd-364">Method new</span></span>
+### <a name="method-new"></a><span data-ttu-id="3bab6-364">メソッド new</span><span class="sxs-lookup"><span data-stu-id="3bab6-364">Method new</span></span>
 
-<span data-ttu-id="bcebd-365">ラベル クラスの新しいインスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-365">Creates a new instance of the Label class.</span></span>
+<span data-ttu-id="3bab6-365">ラベル クラスの新しいインスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-365">Creates a new instance of the Label class.</span></span>
 
     public void new([str language])
 
-#### <a name="parameters"></a><span data-ttu-id="bcebd-366">パラメーター</span><span class="sxs-lookup"><span data-stu-id="bcebd-366">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="3bab6-366">パラメーター</span><span class="sxs-lookup"><span data-stu-id="3bab6-366">Parameters</span></span>
 
-<span data-ttu-id="bcebd-367">言語</span><span class="sxs-lookup"><span data-stu-id="bcebd-367">language</span></span>  
-<span data-ttu-id="bcebd-368">言語の接頭語を使用して、言語を指定する文字列。</span><span class="sxs-lookup"><span data-stu-id="bcebd-368">A string that specifies a language by using a language prefix.</span></span>
+<span data-ttu-id="3bab6-367">言語</span><span class="sxs-lookup"><span data-stu-id="3bab6-367">language</span></span>  
+<span data-ttu-id="3bab6-368">言語の接頭語を使用して、言語を指定する文字列。</span><span class="sxs-lookup"><span data-stu-id="3bab6-368">A string that specifies a language by using a language prefix.</span></span>
 
-### <a name="method-finalize"></a><span data-ttu-id="bcebd-369">メソッド finalize</span><span class="sxs-lookup"><span data-stu-id="bcebd-369">Method finalize</span></span>
+### <a name="method-finalize"></a><span data-ttu-id="3bab6-369">メソッド finalize</span><span class="sxs-lookup"><span data-stu-id="3bab6-369">Method finalize</span></span>
 
-<span data-ttu-id="bcebd-370">現在のラベル ファイルを閉じます。</span><span class="sxs-lookup"><span data-stu-id="bcebd-370">Closes the current label file.</span></span>
+<span data-ttu-id="3bab6-370">現在のラベル ファイルを閉じます。</span><span class="sxs-lookup"><span data-stu-id="3bab6-370">Closes the current label file.</span></span>
 
     public void finalize()
 
-## <a name="class-labelbulkeditor"></a><span data-ttu-id="bcebd-371">クラス LabelBulkEditor</span><span class="sxs-lookup"><span data-stu-id="bcebd-371">Class LabelBulkEditor</span></span>
+## <a name="class-labelbulkeditor"></a><span data-ttu-id="3bab6-371">クラス LabelBulkEditor</span><span class="sxs-lookup"><span data-stu-id="3bab6-371">Class LabelBulkEditor</span></span>
     class LabelBulkEditor extends Object
 
-<span data-ttu-id="bcebd-372">LabelBulkEditor クラスを使用すると、ラベル ファイルが簡単に変更されます。</span><span class="sxs-lookup"><span data-stu-id="bcebd-372">The LabelBulkEditor class is used to quickly modify label files.</span></span>
+<span data-ttu-id="3bab6-372">LabelBulkEditor クラスを使用すると、ラベル ファイルが簡単に変更されます。</span><span class="sxs-lookup"><span data-stu-id="3bab6-372">The LabelBulkEditor class is used to quickly modify label files.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="bcebd-373">備考</span><span class="sxs-lookup"><span data-stu-id="bcebd-373">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="3bab6-373">備考</span><span class="sxs-lookup"><span data-stu-id="3bab6-373">Remarks</span></span>
 
-<span data-ttu-id="bcebd-374">LabelBulkEditor クラスは、Label.bulkEditor() メソッドを通じてインスタンス化されます。</span><span class="sxs-lookup"><span data-stu-id="bcebd-374">The LabelBulkEditor class is instantiated through the Label.bulkEditor() method.</span></span> <span data-ttu-id="bcebd-375">ラベル ファイルは、クラスのインスタンスが作成されたときに変更用に開かれ、インスタンスがガベージ コレクションされたときにラベル ファイルは閉じられます。</span><span class="sxs-lookup"><span data-stu-id="bcebd-375">The label file is opened for modification when the instance of the class is created, and the label file is closed when the instance has garbage collected.</span></span>
+<span data-ttu-id="3bab6-374">LabelBulkEditor クラスは、Label.bulkEditor() メソッドを通じてインスタンス化されます。</span><span class="sxs-lookup"><span data-stu-id="3bab6-374">The LabelBulkEditor class is instantiated through the Label.bulkEditor() method.</span></span> <span data-ttu-id="3bab6-375">ラベル ファイルは、クラスのインスタンスが作成されたときに変更用に開かれ、インスタンスがガベージ コレクションされたときにラベル ファイルは閉じられます。</span><span class="sxs-lookup"><span data-stu-id="3bab6-375">The label file is opened for modification when the instance of the class is created, and the label file is closed when the instance has garbage collected.</span></span>
 
-### <a name="examples"></a><span data-ttu-id="bcebd-376">例</span><span class="sxs-lookup"><span data-stu-id="bcebd-376">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="3bab6-376">例</span><span class="sxs-lookup"><span data-stu-id="3bab6-376">Examples</span></span>
 
-### <a name="methods"></a><span data-ttu-id="bcebd-377">メソッド</span><span class="sxs-lookup"><span data-stu-id="bcebd-377">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="3bab6-377">メソッド</span><span class="sxs-lookup"><span data-stu-id="3bab6-377">Methods</span></span>
 
-| <span data-ttu-id="bcebd-378">方法</span><span class="sxs-lookup"><span data-stu-id="bcebd-378">Method</span></span>                                                      | <span data-ttu-id="bcebd-379">説明</span><span class="sxs-lookup"><span data-stu-id="bcebd-379">Description</span></span>                                                                  |
+| <span data-ttu-id="3bab6-378">方法</span><span class="sxs-lookup"><span data-stu-id="3bab6-378">Method</span></span>                                                      | <span data-ttu-id="3bab6-379">説明</span><span class="sxs-lookup"><span data-stu-id="3bab6-379">Description</span></span>                                                                  |
 |-------------------------------------------------------------|------------------------------------------------------------------------------|
-| <span data-ttu-id="bcebd-380">public boolean delete(str label)</span><span class="sxs-lookup"><span data-stu-id="bcebd-380">public boolean delete(str label)</span></span>                            | <span data-ttu-id="bcebd-381">指定したラベルを削除します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-381">Deletes a specified label.</span></span>                                                   |
-| <span data-ttu-id="bcebd-382">public boolean modify(str label, str text, \[str comment\])</span><span class="sxs-lookup"><span data-stu-id="bcebd-382">public boolean modify(str label, str text, \[str comment\])</span></span> | <span data-ttu-id="bcebd-383">指定されたラベル ID に関連付けられているテキストおよびコメントを変更します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-383">Modifies the text and comment that are associated with a specified label ID.</span></span> |
-| <span data-ttu-id="bcebd-384">public void new()</span><span class="sxs-lookup"><span data-stu-id="bcebd-384">public void new()</span></span>                                           | <span data-ttu-id="bcebd-385">LabelBulkEditor クラスのインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-385">Initializes an instance of the LabelBulkEditor class.</span></span>                        |
+| <span data-ttu-id="3bab6-380">public boolean delete(str label)</span><span class="sxs-lookup"><span data-stu-id="3bab6-380">public boolean delete(str label)</span></span>                            | <span data-ttu-id="3bab6-381">指定したラベルを削除します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-381">Deletes a specified label.</span></span>                                                   |
+| <span data-ttu-id="3bab6-382">public boolean modify(str label, str text, \[str comment\])</span><span class="sxs-lookup"><span data-stu-id="3bab6-382">public boolean modify(str label, str text, \[str comment\])</span></span> | <span data-ttu-id="3bab6-383">指定されたラベル ID に関連付けられているテキストおよびコメントを変更します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-383">Modifies the text and comment that are associated with a specified label ID.</span></span> |
+| <span data-ttu-id="3bab6-384">public void new()</span><span class="sxs-lookup"><span data-stu-id="3bab6-384">public void new()</span></span>                                           | <span data-ttu-id="3bab6-385">LabelBulkEditor クラスのインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-385">Initializes an instance of the LabelBulkEditor class.</span></span>                        |
 
-### <a name="method-delete"></a><span data-ttu-id="bcebd-386">メソッド delete</span><span class="sxs-lookup"><span data-stu-id="bcebd-386">Method delete</span></span>
+### <a name="method-delete"></a><span data-ttu-id="3bab6-386">メソッド delete</span><span class="sxs-lookup"><span data-stu-id="3bab6-386">Method delete</span></span>
 
-<span data-ttu-id="bcebd-387">指定したラベルを削除します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-387">Deletes a specified label.</span></span>
+<span data-ttu-id="3bab6-387">指定したラベルを削除します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-387">Deletes a specified label.</span></span>
 
     public boolean delete(str label)
 
-#### <a name="parameters"></a><span data-ttu-id="bcebd-388">パラメーター</span><span class="sxs-lookup"><span data-stu-id="bcebd-388">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="3bab6-388">パラメーター</span><span class="sxs-lookup"><span data-stu-id="3bab6-388">Parameters</span></span>
 
-<span data-ttu-id="bcebd-389">ラベル</span><span class="sxs-lookup"><span data-stu-id="bcebd-389">label</span></span>  
-<span data-ttu-id="bcebd-390">ラベル ID を指定する文字列。</span><span class="sxs-lookup"><span data-stu-id="bcebd-390">A string that specifies the label ID.</span></span> <span data-ttu-id="bcebd-391">文字列には、アットマーク (@)、ラベル ファイル ID、数字が含まれている必要があります。</span><span class="sxs-lookup"><span data-stu-id="bcebd-391">The string must include an at sign (@) followed by a label file ID and a number.</span></span>
+<span data-ttu-id="3bab6-389">ラベル</span><span class="sxs-lookup"><span data-stu-id="3bab6-389">label</span></span>  
+<span data-ttu-id="3bab6-390">ラベル ID を指定する文字列。</span><span class="sxs-lookup"><span data-stu-id="3bab6-390">A string that specifies the label ID.</span></span> <span data-ttu-id="3bab6-391">文字列には、アットマーク (@)、ラベル ファイル ID、数字が含まれている必要があります。</span><span class="sxs-lookup"><span data-stu-id="3bab6-391">The string must include an at sign (@) followed by a label file ID and a number.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-392">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-392">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-392">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-392">Return Value</span></span>
 
-<span data-ttu-id="bcebd-393">ラベルが削除された場合は true。それ以外の場合は false。</span><span class="sxs-lookup"><span data-stu-id="bcebd-393">true if the label is deleted; otherwise, false.</span></span>
+<span data-ttu-id="3bab6-393">ラベルが削除された場合は true。それ以外の場合は false。</span><span class="sxs-lookup"><span data-stu-id="3bab6-393">true if the label is deleted; otherwise, false.</span></span>
 
-### <a name="method-modify"></a><span data-ttu-id="bcebd-394">メソッド modify</span><span class="sxs-lookup"><span data-stu-id="bcebd-394">Method modify</span></span>
+### <a name="method-modify"></a><span data-ttu-id="3bab6-394">メソッド modify</span><span class="sxs-lookup"><span data-stu-id="3bab6-394">Method modify</span></span>
 
-<span data-ttu-id="bcebd-395">指定されたラベル ID に関連付けられているテキストおよびコメントを変更します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-395">Modifies the text and comment that are associated with a specified label ID.</span></span>
+<span data-ttu-id="3bab6-395">指定されたラベル ID に関連付けられているテキストおよびコメントを変更します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-395">Modifies the text and comment that are associated with a specified label ID.</span></span>
 
     public boolean modify(str label, str text, [str comment])
 
-#### <a name="parameters"></a><span data-ttu-id="bcebd-396">パラメーター</span><span class="sxs-lookup"><span data-stu-id="bcebd-396">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="3bab6-396">パラメーター</span><span class="sxs-lookup"><span data-stu-id="3bab6-396">Parameters</span></span>
 
-<span data-ttu-id="bcebd-397">ラベル</span><span class="sxs-lookup"><span data-stu-id="bcebd-397">label</span></span>  
-<span data-ttu-id="bcebd-398">ラベル ID に関連付けられているコメントを指定する文字列。</span><span class="sxs-lookup"><span data-stu-id="bcebd-398">A string that specifies the comment that is associated with the label ID.</span></span>
-
-<!-- -->
-
-<span data-ttu-id="bcebd-399">テキスト</span><span class="sxs-lookup"><span data-stu-id="bcebd-399">text</span></span>  
-<span data-ttu-id="bcebd-400">ラベル ID に関連付けられているコメントを指定する文字列。</span><span class="sxs-lookup"><span data-stu-id="bcebd-400">A string that specifies the comment that is associated with the label ID.</span></span>
+<span data-ttu-id="3bab6-397">ラベル</span><span class="sxs-lookup"><span data-stu-id="3bab6-397">label</span></span>  
+<span data-ttu-id="3bab6-398">ラベル ID に関連付けられているコメントを指定する文字列。</span><span class="sxs-lookup"><span data-stu-id="3bab6-398">A string that specifies the comment that is associated with the label ID.</span></span>
 
 <!-- -->
 
-<span data-ttu-id="bcebd-401">comment</span><span class="sxs-lookup"><span data-stu-id="bcebd-401">comment</span></span>  
-<span data-ttu-id="bcebd-402">ラベル ID に関連付けられているコメントを指定する文字列。</span><span class="sxs-lookup"><span data-stu-id="bcebd-402">A string that specifies the comment that is associated with the label ID.</span></span>
+<span data-ttu-id="3bab6-399">テキスト</span><span class="sxs-lookup"><span data-stu-id="3bab6-399">text</span></span>  
+<span data-ttu-id="3bab6-400">ラベル ID に関連付けられているコメントを指定する文字列。</span><span class="sxs-lookup"><span data-stu-id="3bab6-400">A string that specifies the comment that is associated with the label ID.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-403">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-403">Return Value</span></span>
+<!-- -->
 
-<span data-ttu-id="bcebd-404">ラベルが修正された場合は true。それ以外の場合は false。</span><span class="sxs-lookup"><span data-stu-id="bcebd-404">true if the label is modified; otherwise, false.</span></span>
+<span data-ttu-id="3bab6-401">comment</span><span class="sxs-lookup"><span data-stu-id="3bab6-401">comment</span></span>  
+<span data-ttu-id="3bab6-402">ラベル ID に関連付けられているコメントを指定する文字列。</span><span class="sxs-lookup"><span data-stu-id="3bab6-402">A string that specifies the comment that is associated with the label ID.</span></span>
 
-### <a name="method-new"></a><span data-ttu-id="bcebd-405">メソッド new</span><span class="sxs-lookup"><span data-stu-id="bcebd-405">Method new</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-403">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-403">Return Value</span></span>
 
-<span data-ttu-id="bcebd-406">LabelBulkEditor クラスのインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-406">Initializes an instance of the LabelBulkEditor class.</span></span>
+<span data-ttu-id="3bab6-404">ラベルが修正された場合は true。それ以外の場合は false。</span><span class="sxs-lookup"><span data-stu-id="3bab6-404">true if the label is modified; otherwise, false.</span></span>
+
+### <a name="method-new"></a><span data-ttu-id="3bab6-405">メソッド new</span><span class="sxs-lookup"><span data-stu-id="3bab6-405">Method new</span></span>
+
+<span data-ttu-id="3bab6-406">LabelBulkEditor クラスのインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-406">Initializes an instance of the LabelBulkEditor class.</span></span>
 
     public void new()
 
-## <a name="class-lastaotselection"></a><span data-ttu-id="bcebd-407">クラス LastAotSelection</span><span class="sxs-lookup"><span data-stu-id="bcebd-407">Class LastAotSelection</span></span>
+## <a name="class-lastaotselection"></a><span data-ttu-id="3bab6-407">クラス LastAotSelection</span><span class="sxs-lookup"><span data-stu-id="3bab6-407">Class LastAotSelection</span></span>
     class LastAotSelection extends Object
 
-### <a name="remarks"></a><span data-ttu-id="bcebd-408">備考</span><span class="sxs-lookup"><span data-stu-id="bcebd-408">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="3bab6-408">備考</span><span class="sxs-lookup"><span data-stu-id="3bab6-408">Remarks</span></span>
 
-### <a name="examples"></a><span data-ttu-id="bcebd-409">例</span><span class="sxs-lookup"><span data-stu-id="bcebd-409">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="3bab6-409">例</span><span class="sxs-lookup"><span data-stu-id="3bab6-409">Examples</span></span>
 
-### <a name="methods"></a><span data-ttu-id="bcebd-410">メソッド</span><span class="sxs-lookup"><span data-stu-id="bcebd-410">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="3bab6-410">メソッド</span><span class="sxs-lookup"><span data-stu-id="3bab6-410">Methods</span></span>
 
-| <span data-ttu-id="bcebd-411">方法</span><span class="sxs-lookup"><span data-stu-id="bcebd-411">Method</span></span>                           | <span data-ttu-id="bcebd-412">説明</span><span class="sxs-lookup"><span data-stu-id="bcebd-412">Description</span></span>                                               |
+| <span data-ttu-id="3bab6-411">方法</span><span class="sxs-lookup"><span data-stu-id="3bab6-411">Method</span></span>                           | <span data-ttu-id="3bab6-412">説明</span><span class="sxs-lookup"><span data-stu-id="3bab6-412">Description</span></span>                                               |
 |----------------------------------|-----------------------------------------------------------|
-| <span data-ttu-id="bcebd-413">public TreeNode first()</span><span class="sxs-lookup"><span data-stu-id="bcebd-413">public TreeNode first()</span></span>          |                                                           |
-| <span data-ttu-id="bcebd-414">public TreeNode next()</span><span class="sxs-lookup"><span data-stu-id="bcebd-414">public TreeNode next()</span></span>           |                                                           |
-| <span data-ttu-id="bcebd-415">public ProjectNode projectRoot()</span><span class="sxs-lookup"><span data-stu-id="bcebd-415">public ProjectNode projectRoot()</span></span> |                                                           |
-| <span data-ttu-id="bcebd-416">public int selectionCount()</span><span class="sxs-lookup"><span data-stu-id="bcebd-416">public int selectionCount()</span></span>      |                                                           |
-| <span data-ttu-id="bcebd-417">public void new()</span><span class="sxs-lookup"><span data-stu-id="bcebd-417">public void new()</span></span>                | <span data-ttu-id="bcebd-418">LastAotSelection クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-418">Initializes a new instance of the LastAotSelection class.</span></span> |
-| <span data-ttu-id="bcebd-419">public void finalize()</span><span class="sxs-lookup"><span data-stu-id="bcebd-419">public void finalize()</span></span>           |                                                           |
+| <span data-ttu-id="3bab6-413">public TreeNode first()</span><span class="sxs-lookup"><span data-stu-id="3bab6-413">public TreeNode first()</span></span>          |                                                           |
+| <span data-ttu-id="3bab6-414">public TreeNode next()</span><span class="sxs-lookup"><span data-stu-id="3bab6-414">public TreeNode next()</span></span>           |                                                           |
+| <span data-ttu-id="3bab6-415">public ProjectNode projectRoot()</span><span class="sxs-lookup"><span data-stu-id="3bab6-415">public ProjectNode projectRoot()</span></span> |                                                           |
+| <span data-ttu-id="3bab6-416">public int selectionCount()</span><span class="sxs-lookup"><span data-stu-id="3bab6-416">public int selectionCount()</span></span>      |                                                           |
+| <span data-ttu-id="3bab6-417">public void new()</span><span class="sxs-lookup"><span data-stu-id="3bab6-417">public void new()</span></span>                | <span data-ttu-id="3bab6-418">LastAotSelection クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-418">Initializes a new instance of the LastAotSelection class.</span></span> |
+| <span data-ttu-id="3bab6-419">public void finalize()</span><span class="sxs-lookup"><span data-stu-id="3bab6-419">public void finalize()</span></span>           |                                                           |
 
-### <a name="method-first"></a><span data-ttu-id="bcebd-420">メソッド first</span><span class="sxs-lookup"><span data-stu-id="bcebd-420">Method first</span></span>
+### <a name="method-first"></a><span data-ttu-id="3bab6-420">メソッド first</span><span class="sxs-lookup"><span data-stu-id="3bab6-420">Method first</span></span>
 
     public TreeNode first()
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-421">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-421">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-421">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-421">Return Value</span></span>
 
-### <a name="method-next"></a><span data-ttu-id="bcebd-422">メソッド next</span><span class="sxs-lookup"><span data-stu-id="bcebd-422">Method next</span></span>
+### <a name="method-next"></a><span data-ttu-id="3bab6-422">メソッド next</span><span class="sxs-lookup"><span data-stu-id="3bab6-422">Method next</span></span>
 
     public TreeNode next()
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-423">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-423">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-423">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-423">Return Value</span></span>
 
-### <a name="method-projectroot"></a><span data-ttu-id="bcebd-424">メソッド projectRoot</span><span class="sxs-lookup"><span data-stu-id="bcebd-424">Method projectRoot</span></span>
+### <a name="method-projectroot"></a><span data-ttu-id="3bab6-424">メソッド projectRoot</span><span class="sxs-lookup"><span data-stu-id="3bab6-424">Method projectRoot</span></span>
 
     public ProjectNode projectRoot()
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-425">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-425">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-425">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-425">Return Value</span></span>
 
-### <a name="method-selectioncount"></a><span data-ttu-id="bcebd-426">メソッド selectionCount</span><span class="sxs-lookup"><span data-stu-id="bcebd-426">Method selectionCount</span></span>
+### <a name="method-selectioncount"></a><span data-ttu-id="3bab6-426">メソッド selectionCount</span><span class="sxs-lookup"><span data-stu-id="3bab6-426">Method selectionCount</span></span>
 
     public int selectionCount()
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-427">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-427">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-427">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-427">Return Value</span></span>
 
-### <a name="method-new"></a><span data-ttu-id="bcebd-428">メソッド new</span><span class="sxs-lookup"><span data-stu-id="bcebd-428">Method new</span></span>
+### <a name="method-new"></a><span data-ttu-id="3bab6-428">メソッド new</span><span class="sxs-lookup"><span data-stu-id="3bab6-428">Method new</span></span>
 
-<span data-ttu-id="bcebd-429">LastAotSelection クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-429">Initializes a new instance of the LastAotSelection class.</span></span>
+<span data-ttu-id="3bab6-429">LastAotSelection クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-429">Initializes a new instance of the LastAotSelection class.</span></span>
 
     public void new()
 
-### <a name="method-finalize"></a><span data-ttu-id="bcebd-430">メソッド finalize</span><span class="sxs-lookup"><span data-stu-id="bcebd-430">Method finalize</span></span>
+### <a name="method-finalize"></a><span data-ttu-id="3bab6-430">メソッド finalize</span><span class="sxs-lookup"><span data-stu-id="3bab6-430">Method finalize</span></span>
 
     public void finalize()
 
-## <a name="class-list"></a><span data-ttu-id="bcebd-431">クラス リスト</span><span class="sxs-lookup"><span data-stu-id="bcebd-431">Class List</span></span>
+## <a name="class-list"></a><span data-ttu-id="3bab6-431">クラス リスト</span><span class="sxs-lookup"><span data-stu-id="3bab6-431">Class List</span></span>
     class List extends Object
 
-<span data-ttu-id="bcebd-432">順にアクセスされる任意の数の要素を含みます。</span><span class="sxs-lookup"><span data-stu-id="bcebd-432">Contains any number of elements that are accessed sequentially.</span></span> <span data-ttu-id="bcebd-433">リストは、あらゆる X++ 型の値を含めることができる構造です。</span><span class="sxs-lookup"><span data-stu-id="bcebd-433">Lists are structures that can contain values of any X++ type.</span></span> <span data-ttu-id="bcebd-434">リスト内のすべての値は同じタイプである必要があります。</span><span class="sxs-lookup"><span data-stu-id="bcebd-434">All the values in the list must be of the same type.</span></span>
+<span data-ttu-id="3bab6-432">順にアクセスされる任意の数の要素を含みます。</span><span class="sxs-lookup"><span data-stu-id="3bab6-432">Contains any number of elements that are accessed sequentially.</span></span> <span data-ttu-id="3bab6-433">リストは、あらゆる X++ 型の値を含めることができる構造です。</span><span class="sxs-lookup"><span data-stu-id="3bab6-433">Lists are structures that can contain values of any X++ type.</span></span> <span data-ttu-id="3bab6-434">リスト内のすべての値は同じタイプである必要があります。</span><span class="sxs-lookup"><span data-stu-id="3bab6-434">All the values in the list must be of the same type.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="bcebd-435">備考</span><span class="sxs-lookup"><span data-stu-id="bcebd-435">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="3bab6-435">備考</span><span class="sxs-lookup"><span data-stu-id="3bab6-435">Remarks</span></span>
 
-<span data-ttu-id="bcebd-436">リスト内の値のタイプは、リストが作成されたときに指定され、後で変更することはできません。</span><span class="sxs-lookup"><span data-stu-id="bcebd-436">The type of the values in the list is specified when the list is created and cannot be changed afterwards.</span></span> <span data-ttu-id="bcebd-437">リストの実装は、リスト要素のトラバーサルを非常に高速にします。</span><span class="sxs-lookup"><span data-stu-id="bcebd-437">The implementation of lists makes traversal of the list elements very fast.</span></span> <span data-ttu-id="bcebd-438">リストを移動するには、ListEnumerator クラスを使用します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-438">Lists can be traversed by using the ListEnumerator class.</span></span> <span data-ttu-id="bcebd-439">ListEnumerator オブジェクトを作成するには、List.getEnumerator を使用します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-439">To create a ListEnumerator object, use List.getEnumerator.</span></span>
+<span data-ttu-id="3bab6-436">リスト内の値のタイプは、リストが作成されたときに指定され、後で変更することはできません。</span><span class="sxs-lookup"><span data-stu-id="3bab6-436">The type of the values in the list is specified when the list is created and cannot be changed afterwards.</span></span> <span data-ttu-id="3bab6-437">リストの実装は、リスト要素のトラバーサルを非常に高速にします。</span><span class="sxs-lookup"><span data-stu-id="3bab6-437">The implementation of lists makes traversal of the list elements very fast.</span></span> <span data-ttu-id="3bab6-438">リストを移動するには、ListEnumerator クラスを使用します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-438">Lists can be traversed by using the ListEnumerator class.</span></span> <span data-ttu-id="3bab6-439">ListEnumerator オブジェクトを作成するには、List.getEnumerator を使用します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-439">To create a ListEnumerator object, use List.getEnumerator.</span></span>
 
-### <a name="examples"></a><span data-ttu-id="bcebd-440">例</span><span class="sxs-lookup"><span data-stu-id="bcebd-440">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="3bab6-440">例</span><span class="sxs-lookup"><span data-stu-id="3bab6-440">Examples</span></span>
 
-<span data-ttu-id="bcebd-441">次の例では、整数のリストを作成し、リストの説明とそれに含まれる値を出力します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-441">The following example creates a list of integers and prints out a description of the list and the values that it contains.</span></span>
+<span data-ttu-id="3bab6-441">次の例では、整数のリストを作成し、リストの説明とそれに含まれる値を出力します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-441">The following example creates a list of integers and prints out a description of the list and the values that it contains.</span></span>
 
     { 
         // Create a list of integers 
@@ -656,65 +655,65 @@ ms.lasthandoff: 08/09/2018
         pause; 
     }
 
-### <a name="methods"></a><span data-ttu-id="bcebd-442">メソッド</span><span class="sxs-lookup"><span data-stu-id="bcebd-442">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="3bab6-442">メソッド</span><span class="sxs-lookup"><span data-stu-id="3bab6-442">Methods</span></span>
 
-| <span data-ttu-id="bcebd-443">方法</span><span class="sxs-lookup"><span data-stu-id="bcebd-443">Method</span></span>                                                | <span data-ttu-id="bcebd-444">説明</span><span class="sxs-lookup"><span data-stu-id="bcebd-444">Description</span></span>                                                                           |
+| <span data-ttu-id="3bab6-443">方法</span><span class="sxs-lookup"><span data-stu-id="3bab6-443">Method</span></span>                                                | <span data-ttu-id="3bab6-444">説明</span><span class="sxs-lookup"><span data-stu-id="3bab6-444">Description</span></span>                                                                           |
 |-------------------------------------------------------|---------------------------------------------------------------------------------------|
-| <span data-ttu-id="bcebd-445">public AnyType addEnd(AnyType element)</span><span class="sxs-lookup"><span data-stu-id="bcebd-445">public AnyType addEnd(AnyType element)</span></span>                | <span data-ttu-id="bcebd-446">リストの末尾に値を追加します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-446">Adds a value to the end of the list.</span></span>                                                  |
-| <span data-ttu-id="bcebd-447">public AnyType addStart(AnyType element)</span><span class="sxs-lookup"><span data-stu-id="bcebd-447">public AnyType addStart(AnyType element)</span></span>              | <span data-ttu-id="bcebd-448">リストの冒頭に値を追加します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-448">Adds a value to the start of the list.</span></span>                                                |
-| <span data-ttu-id="bcebd-449">public str definitionString()</span><span class="sxs-lookup"><span data-stu-id="bcebd-449">public str definitionString()</span></span>                         | <span data-ttu-id="bcebd-450">リスト内のすべての要素のタイプの説明を返します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-450">Returns a description of the type of the elements in the list.</span></span>                        |
-| <span data-ttu-id="bcebd-451">public int elements()</span><span class="sxs-lookup"><span data-stu-id="bcebd-451">public int elements()</span></span>                                 | <span data-ttu-id="bcebd-452">リスト内の要素の数を指定します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-452">Specifies the number of elements in a list.</span></span>                                           |
-| <span data-ttu-id="bcebd-453">public boolean empty()</span><span class="sxs-lookup"><span data-stu-id="bcebd-453">public boolean empty()</span></span>                                | <span data-ttu-id="bcebd-454">一覧が空であるかどうかを判定します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-454">Determines whether a list is empty.</span></span>                                                   |
-| <span data-ttu-id="bcebd-455">public boolean equalTo(List l)</span><span class="sxs-lookup"><span data-stu-id="bcebd-455">public boolean equalTo(List l)</span></span>                        | <span data-ttu-id="bcebd-456">一覧が現在の一覧と同じかどうかを判定します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-456">Determines whether a list is the same as the current list.</span></span>                            |
-| <span data-ttu-id="bcebd-457">public ListEnumerator getEnumerator()</span><span class="sxs-lookup"><span data-stu-id="bcebd-457">public ListEnumerator getEnumerator()</span></span>                 | <span data-ttu-id="bcebd-458">リストのスキャンを可能にするリストの列挙子を作成します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-458">Creates an enumerator for a list which allows you to traverse the list.</span></span>               |
-| <span data-ttu-id="bcebd-459">public container pack()</span><span class="sxs-lookup"><span data-stu-id="bcebd-459">public container pack()</span></span>                               | <span data-ttu-id="bcebd-460">List クラスの現在のインスタンスをシリアル化します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-460">Serializes the current instance of the List class.</span></span>                                    |
-| <span data-ttu-id="bcebd-461">public str toString()</span><span class="sxs-lookup"><span data-stu-id="bcebd-461">public str toString()</span></span>                                 | <span data-ttu-id="bcebd-462">リスト内の値の説明を返します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-462">Returns a description of the values in the list.</span></span>                                      |
-| <span data-ttu-id="bcebd-463">public Types typeId()</span><span class="sxs-lookup"><span data-stu-id="bcebd-463">public Types typeId()</span></span>                                 | <span data-ttu-id="bcebd-464">リスト内の値のタイプを返します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-464">Returns the type of the values in a list.</span></span>                                             |
-| <span data-ttu-id="bcebd-465">public str xml(\[int indent\])</span><span class="sxs-lookup"><span data-stu-id="bcebd-465">public str xml(\[int indent\])</span></span>                        | <span data-ttu-id="bcebd-466">現在のオブジェクトを表す XML 文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-466">Returns an XML string that represents the current object.</span></span>                             |
-| <span data-ttu-id="bcebd-467">::public static List create(container container)</span><span class="sxs-lookup"><span data-stu-id="bcebd-467">::public static List create(container container)</span></span>      | <span data-ttu-id="bcebd-468">以前の List.pack メソッドの呼び出しで取得したコンテナーからリストを作成します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-468">Creates a list from the container obtained from a prior call to the List.pack method.</span></span> |
-| <span data-ttu-id="bcebd-469">::public static List createFromXML(Object xmlnode)</span><span class="sxs-lookup"><span data-stu-id="bcebd-469">::public static List createFromXML(Object xmlnode)</span></span>    |                                                                                       |
-| <span data-ttu-id="bcebd-470">::public static boolean equal(List list1, List list2)</span><span class="sxs-lookup"><span data-stu-id="bcebd-470">::public static boolean equal(List list1, List list2)</span></span> | <span data-ttu-id="bcebd-471">2 つのリストが同じかどうかを判定します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-471">Determines whether two lists are identical.</span></span>                                           |
-| <span data-ttu-id="bcebd-472">::public static List merge(List list1, List list2)</span><span class="sxs-lookup"><span data-stu-id="bcebd-472">::public static List merge(List list1, List list2)</span></span>    | <span data-ttu-id="bcebd-473">2 つのリストを組み合わせ、新しいリストを作成します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-473">Combines two lists to create a new list.</span></span>                                              |
-| <span data-ttu-id="bcebd-474">public void appendList(List list)</span><span class="sxs-lookup"><span data-stu-id="bcebd-474">public void appendList(List list)</span></span>                     |                                                                                       |
-| <span data-ttu-id="bcebd-475">public void new(Types Type)</span><span class="sxs-lookup"><span data-stu-id="bcebd-475">public void new(Types Type)</span></span>                           | <span data-ttu-id="bcebd-476">リストを作成します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-476">Creates a list.</span></span>                                                                       |
+| <span data-ttu-id="3bab6-445">public AnyType addEnd(AnyType element)</span><span class="sxs-lookup"><span data-stu-id="3bab6-445">public AnyType addEnd(AnyType element)</span></span>                | <span data-ttu-id="3bab6-446">リストの末尾に値を追加します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-446">Adds a value to the end of the list.</span></span>                                                  |
+| <span data-ttu-id="3bab6-447">public AnyType addStart(AnyType element)</span><span class="sxs-lookup"><span data-stu-id="3bab6-447">public AnyType addStart(AnyType element)</span></span>              | <span data-ttu-id="3bab6-448">リストの冒頭に値を追加します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-448">Adds a value to the start of the list.</span></span>                                                |
+| <span data-ttu-id="3bab6-449">public str definitionString()</span><span class="sxs-lookup"><span data-stu-id="3bab6-449">public str definitionString()</span></span>                         | <span data-ttu-id="3bab6-450">リスト内のすべての要素のタイプの説明を返します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-450">Returns a description of the type of the elements in the list.</span></span>                        |
+| <span data-ttu-id="3bab6-451">public int elements()</span><span class="sxs-lookup"><span data-stu-id="3bab6-451">public int elements()</span></span>                                 | <span data-ttu-id="3bab6-452">リスト内の要素の数を指定します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-452">Specifies the number of elements in a list.</span></span>                                           |
+| <span data-ttu-id="3bab6-453">public boolean empty()</span><span class="sxs-lookup"><span data-stu-id="3bab6-453">public boolean empty()</span></span>                                | <span data-ttu-id="3bab6-454">一覧が空であるかどうかを判定します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-454">Determines whether a list is empty.</span></span>                                                   |
+| <span data-ttu-id="3bab6-455">public boolean equalTo(List l)</span><span class="sxs-lookup"><span data-stu-id="3bab6-455">public boolean equalTo(List l)</span></span>                        | <span data-ttu-id="3bab6-456">一覧が現在の一覧と同じかどうかを判定します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-456">Determines whether a list is the same as the current list.</span></span>                            |
+| <span data-ttu-id="3bab6-457">public ListEnumerator getEnumerator()</span><span class="sxs-lookup"><span data-stu-id="3bab6-457">public ListEnumerator getEnumerator()</span></span>                 | <span data-ttu-id="3bab6-458">リストのスキャンを可能にするリストの列挙子を作成します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-458">Creates an enumerator for a list which allows you to traverse the list.</span></span>               |
+| <span data-ttu-id="3bab6-459">public container pack()</span><span class="sxs-lookup"><span data-stu-id="3bab6-459">public container pack()</span></span>                               | <span data-ttu-id="3bab6-460">List クラスの現在のインスタンスをシリアル化します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-460">Serializes the current instance of the List class.</span></span>                                    |
+| <span data-ttu-id="3bab6-461">public str toString()</span><span class="sxs-lookup"><span data-stu-id="3bab6-461">public str toString()</span></span>                                 | <span data-ttu-id="3bab6-462">リスト内の値の説明を返します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-462">Returns a description of the values in the list.</span></span>                                      |
+| <span data-ttu-id="3bab6-463">public Types typeId()</span><span class="sxs-lookup"><span data-stu-id="3bab6-463">public Types typeId()</span></span>                                 | <span data-ttu-id="3bab6-464">リスト内の値のタイプを返します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-464">Returns the type of the values in a list.</span></span>                                             |
+| <span data-ttu-id="3bab6-465">public str xml(\[int indent\])</span><span class="sxs-lookup"><span data-stu-id="3bab6-465">public str xml(\[int indent\])</span></span>                        | <span data-ttu-id="3bab6-466">現在のオブジェクトを表す XML 文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-466">Returns an XML string that represents the current object.</span></span>                             |
+| <span data-ttu-id="3bab6-467">::public static List create(container container)</span><span class="sxs-lookup"><span data-stu-id="3bab6-467">::public static List create(container container)</span></span>      | <span data-ttu-id="3bab6-468">以前の List.pack メソッドの呼び出しで取得したコンテナーからリストを作成します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-468">Creates a list from the container obtained from a prior call to the List.pack method.</span></span> |
+| <span data-ttu-id="3bab6-469">::public static List createFromXML(Object xmlnode)</span><span class="sxs-lookup"><span data-stu-id="3bab6-469">::public static List createFromXML(Object xmlnode)</span></span>    |                                                                                       |
+| <span data-ttu-id="3bab6-470">::public static boolean equal(List list1, List list2)</span><span class="sxs-lookup"><span data-stu-id="3bab6-470">::public static boolean equal(List list1, List list2)</span></span> | <span data-ttu-id="3bab6-471">2 つのリストが同じかどうかを判定します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-471">Determines whether two lists are identical.</span></span>                                           |
+| <span data-ttu-id="3bab6-472">::public static List merge(List list1, List list2)</span><span class="sxs-lookup"><span data-stu-id="3bab6-472">::public static List merge(List list1, List list2)</span></span>    | <span data-ttu-id="3bab6-473">2 つのリストを組み合わせ、新しいリストを作成します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-473">Combines two lists to create a new list.</span></span>                                              |
+| <span data-ttu-id="3bab6-474">public void appendList(List list)</span><span class="sxs-lookup"><span data-stu-id="3bab6-474">public void appendList(List list)</span></span>                     |                                                                                       |
+| <span data-ttu-id="3bab6-475">public void new(Types Type)</span><span class="sxs-lookup"><span data-stu-id="3bab6-475">public void new(Types Type)</span></span>                           | <span data-ttu-id="3bab6-476">リストを作成します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-476">Creates a list.</span></span>                                                                       |
 
-### <a name="method-addend"></a><span data-ttu-id="bcebd-477">メソッド addEnd</span><span class="sxs-lookup"><span data-stu-id="bcebd-477">Method addEnd</span></span>
+### <a name="method-addend"></a><span data-ttu-id="3bab6-477">メソッド addEnd</span><span class="sxs-lookup"><span data-stu-id="3bab6-477">Method addEnd</span></span>
 
-<span data-ttu-id="bcebd-478">リストの末尾に値を追加します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-478">Adds a value to the end of the list.</span></span>
+<span data-ttu-id="3bab6-478">リストの末尾に値を追加します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-478">Adds a value to the end of the list.</span></span>
 
     public AnyType addEnd(AnyType element)
 
-#### <a name="parameters"></a><span data-ttu-id="bcebd-479">パラメーター</span><span class="sxs-lookup"><span data-stu-id="bcebd-479">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="3bab6-479">パラメーター</span><span class="sxs-lookup"><span data-stu-id="3bab6-479">Parameters</span></span>
 
-<span data-ttu-id="bcebd-480">要素</span><span class="sxs-lookup"><span data-stu-id="bcebd-480">element</span></span>  
-<span data-ttu-id="bcebd-481">リストの末尾に追加する値。</span><span class="sxs-lookup"><span data-stu-id="bcebd-481">The value to add to the end of the list.</span></span>
+<span data-ttu-id="3bab6-480">要素</span><span class="sxs-lookup"><span data-stu-id="3bab6-480">element</span></span>  
+<span data-ttu-id="3bab6-481">リストの末尾に追加する値。</span><span class="sxs-lookup"><span data-stu-id="3bab6-481">The value to add to the end of the list.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-482">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-482">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-482">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-482">Return Value</span></span>
 
-<span data-ttu-id="bcebd-483">リストに追加される値。</span><span class="sxs-lookup"><span data-stu-id="bcebd-483">The value that is added to the list.</span></span>
+<span data-ttu-id="3bab6-483">リストに追加される値。</span><span class="sxs-lookup"><span data-stu-id="3bab6-483">The value that is added to the list.</span></span>
 
-### <a name="method-addstart"></a><span data-ttu-id="bcebd-484">メソッド addStart</span><span class="sxs-lookup"><span data-stu-id="bcebd-484">Method addStart</span></span>
+### <a name="method-addstart"></a><span data-ttu-id="3bab6-484">メソッド addStart</span><span class="sxs-lookup"><span data-stu-id="3bab6-484">Method addStart</span></span>
 
-<span data-ttu-id="bcebd-485">リストの冒頭に値を追加します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-485">Adds a value to the start of the list.</span></span>
+<span data-ttu-id="3bab6-485">リストの冒頭に値を追加します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-485">Adds a value to the start of the list.</span></span>
 
     public AnyType addStart(AnyType element)
 
-#### <a name="parameters"></a><span data-ttu-id="bcebd-486">パラメーター</span><span class="sxs-lookup"><span data-stu-id="bcebd-486">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="3bab6-486">パラメーター</span><span class="sxs-lookup"><span data-stu-id="3bab6-486">Parameters</span></span>
 
-<span data-ttu-id="bcebd-487">要素</span><span class="sxs-lookup"><span data-stu-id="bcebd-487">element</span></span>  
-<span data-ttu-id="bcebd-488">リストの冒頭に追加する値。</span><span class="sxs-lookup"><span data-stu-id="bcebd-488">The value to add to the start of the list.</span></span>
+<span data-ttu-id="3bab6-487">要素</span><span class="sxs-lookup"><span data-stu-id="3bab6-487">element</span></span>  
+<span data-ttu-id="3bab6-488">リストの冒頭に追加する値。</span><span class="sxs-lookup"><span data-stu-id="3bab6-488">The value to add to the start of the list.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-489">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-489">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-489">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-489">Return Value</span></span>
 
-<span data-ttu-id="bcebd-490">このリストに追加される値。</span><span class="sxs-lookup"><span data-stu-id="bcebd-490">The value added to the list.</span></span>
+<span data-ttu-id="3bab6-490">このリストに追加される値。</span><span class="sxs-lookup"><span data-stu-id="3bab6-490">The value added to the list.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="bcebd-491">備考</span><span class="sxs-lookup"><span data-stu-id="bcebd-491">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="3bab6-491">備考</span><span class="sxs-lookup"><span data-stu-id="3bab6-491">Remarks</span></span>
 
-<span data-ttu-id="bcebd-492">要素は、List.addEnd メソッドを使用して、リストの最後に追加できます。</span><span class="sxs-lookup"><span data-stu-id="bcebd-492">Elements can be added to the end of the list by using the List.addEnd method.</span></span>
+<span data-ttu-id="3bab6-492">要素は、List.addEnd メソッドを使用して、リストの最後に追加できます。</span><span class="sxs-lookup"><span data-stu-id="3bab6-492">Elements can be added to the end of the list by using the List.addEnd method.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="bcebd-493">例</span><span class="sxs-lookup"><span data-stu-id="bcebd-493">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="3bab6-493">例</span><span class="sxs-lookup"><span data-stu-id="3bab6-493">Examples</span></span>
 
-<span data-ttu-id="bcebd-494">次の例では、整数のリストを作成し、値の 1 と 2 をリストの末尾に追加し、値 3 をリストの先頭に追加します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-494">The following example creates a list of integers, adds the values 1 and 2 to the end of the list, and then adds the value 3 to the start of the list.</span></span> <span data-ttu-id="bcebd-495">List.toString メソッドによって返される値は{3,1,2}です。</span><span class="sxs-lookup"><span data-stu-id="bcebd-495">The values that are returned by the List.toString method are {3, 1, 2}.</span></span>
+<span data-ttu-id="3bab6-494">次の例では、整数のリストを作成し、値の 1 と 2 をリストの末尾に追加し、値 3 をリストの先頭に追加します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-494">The following example creates a list of integers, adds the values 1 and 2 to the end of the list, and then adds the value 3 to the start of the list.</span></span> <span data-ttu-id="3bab6-495">List.toString メソッドによって返される値は {3, 1, 2} です。</span><span class="sxs-lookup"><span data-stu-id="3bab6-495">The values that are returned by the List.toString method are {3, 1, 2}.</span></span>
 
     { 
         // Create a list of integers 
@@ -729,23 +728,23 @@ ms.lasthandoff: 08/09/2018
         pause; 
     }
 
-### <a name="method-definitionstring"></a><span data-ttu-id="bcebd-496">メソッド definitionString</span><span class="sxs-lookup"><span data-stu-id="bcebd-496">Method definitionString</span></span>
+### <a name="method-definitionstring"></a><span data-ttu-id="3bab6-496">メソッド definitionString</span><span class="sxs-lookup"><span data-stu-id="3bab6-496">Method definitionString</span></span>
 
-<span data-ttu-id="bcebd-497">リスト内のすべての要素のタイプの説明を返します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-497">Returns a description of the type of the elements in the list.</span></span>
+<span data-ttu-id="3bab6-497">リスト内のすべての要素のタイプの説明を返します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-497">Returns a description of the type of the elements in the list.</span></span>
 
     public str definitionString()
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-498">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-498">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-498">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-498">Return Value</span></span>
 
-<span data-ttu-id="bcebd-499">リストの定義を含む文字列。</span><span class="sxs-lookup"><span data-stu-id="bcebd-499">A string that contains a definition of the list.</span></span>
+<span data-ttu-id="3bab6-499">リストの定義を含む文字列。</span><span class="sxs-lookup"><span data-stu-id="3bab6-499">A string that contains a definition of the list.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="bcebd-500">備考</span><span class="sxs-lookup"><span data-stu-id="bcebd-500">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="3bab6-500">備考</span><span class="sxs-lookup"><span data-stu-id="3bab6-500">Remarks</span></span>
 
-<span data-ttu-id="bcebd-501">たとえば、このメソッドは、「int の一覧」を返すことができます。</span><span class="sxs-lookup"><span data-stu-id="bcebd-501">For example, this method could return "list of int".</span></span> <span data-ttu-id="bcebd-502">リスト内の値の一覧を印刷するには、List.toString メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-502">To print a list of the values within the list, use the List.toString method.</span></span>
+<span data-ttu-id="3bab6-501">たとえば、このメソッドは、「int の一覧」を返すことができます。</span><span class="sxs-lookup"><span data-stu-id="3bab6-501">For example, this method could return "list of int".</span></span> <span data-ttu-id="3bab6-502">リスト内の値の一覧を印刷するには、List.toString メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-502">To print a list of the values within the list, use the List.toString method.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="bcebd-503">例</span><span class="sxs-lookup"><span data-stu-id="bcebd-503">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="3bab6-503">例</span><span class="sxs-lookup"><span data-stu-id="3bab6-503">Examples</span></span>
 
-<span data-ttu-id="bcebd-504">次の例では、整数のリストを作成します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-504">The following example creates a list of integers.</span></span> <span data-ttu-id="bcebd-505">definitionString メソッドを使用して、リストの説明を出力します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-505">The definitionString method is used to print a description of the list.</span></span>
+<span data-ttu-id="3bab6-504">次の例では、整数のリストを作成します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-504">The following example creates a list of integers.</span></span> <span data-ttu-id="3bab6-505">definitionString メソッドを使用して、リストの説明を出力します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-505">The definitionString method is used to print a description of the list.</span></span>
 
     { 
         // Create a list of integers 
@@ -760,19 +759,19 @@ ms.lasthandoff: 08/09/2018
         pause; 
     }
 
-### <a name="method-elements"></a><span data-ttu-id="bcebd-506">メソッド elements</span><span class="sxs-lookup"><span data-stu-id="bcebd-506">Method elements</span></span>
+### <a name="method-elements"></a><span data-ttu-id="3bab6-506">メソッド elements</span><span class="sxs-lookup"><span data-stu-id="3bab6-506">Method elements</span></span>
 
-<span data-ttu-id="bcebd-507">リスト内の要素の数を指定します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-507">Specifies the number of elements in a list.</span></span>
+<span data-ttu-id="3bab6-507">リスト内の要素の数を指定します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-507">Specifies the number of elements in a list.</span></span>
 
     public int elements()
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-508">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-508">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-508">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-508">Return Value</span></span>
 
-<span data-ttu-id="bcebd-509">リスト内の要素の数。</span><span class="sxs-lookup"><span data-stu-id="bcebd-509">The number of elements in the list.</span></span>
+<span data-ttu-id="3bab6-509">リスト内の要素の数。</span><span class="sxs-lookup"><span data-stu-id="3bab6-509">The number of elements in the list.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="bcebd-510">例</span><span class="sxs-lookup"><span data-stu-id="bcebd-510">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="3bab6-510">例</span><span class="sxs-lookup"><span data-stu-id="3bab6-510">Examples</span></span>
 
-<span data-ttu-id="bcebd-511">次の例では、整数のリストを作成し、いくつかの要素を追加します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-511">The following example creates a list of integers and adds some elements to it.</span></span> <span data-ttu-id="bcebd-512">要素メソッドは、リストに 3 つの要素があるかどうかをテストするために使用されます。</span><span class="sxs-lookup"><span data-stu-id="bcebd-512">The elements method is used to test whether there are three elements in the list.</span></span>
+<span data-ttu-id="3bab6-511">次の例では、整数のリストを作成し、いくつかの要素を追加します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-511">The following example creates a list of integers and adds some elements to it.</span></span> <span data-ttu-id="3bab6-512">要素メソッドは、リストに 3 つの要素があるかどうかをテストするために使用されます。</span><span class="sxs-lookup"><span data-stu-id="3bab6-512">The elements method is used to test whether there are three elements in the list.</span></span>
 
     { 
         List il = new List(Types::Integer); 
@@ -785,68 +784,68 @@ ms.lasthandoff: 08/09/2018
         } 
     }
 
-### <a name="method-empty"></a><span data-ttu-id="bcebd-513">メソッド empty</span><span class="sxs-lookup"><span data-stu-id="bcebd-513">Method empty</span></span>
+### <a name="method-empty"></a><span data-ttu-id="3bab6-513">メソッド empty</span><span class="sxs-lookup"><span data-stu-id="3bab6-513">Method empty</span></span>
 
-<span data-ttu-id="bcebd-514">一覧が空であるかどうかを判定します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-514">Determines whether a list is empty.</span></span>
+<span data-ttu-id="3bab6-514">一覧が空であるかどうかを判定します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-514">Determines whether a list is empty.</span></span>
 
     public boolean empty()
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-515">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-515">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-515">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-515">Return Value</span></span>
 
-<span data-ttu-id="bcebd-516">リストが空の場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="bcebd-516">true if the list is empty; otherwise, false.</span></span>
+<span data-ttu-id="3bab6-516">リストが空の場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="3bab6-516">true if the list is empty; otherwise, false.</span></span>
 
-### <a name="method-equalto"></a><span data-ttu-id="bcebd-517">メソッド equalTo</span><span class="sxs-lookup"><span data-stu-id="bcebd-517">Method equalTo</span></span>
+### <a name="method-equalto"></a><span data-ttu-id="3bab6-517">メソッド equalTo</span><span class="sxs-lookup"><span data-stu-id="3bab6-517">Method equalTo</span></span>
 
-<span data-ttu-id="bcebd-518">一覧が現在の一覧と同じかどうかを判定します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-518">Determines whether a list is the same as the current list.</span></span>
+<span data-ttu-id="3bab6-518">一覧が現在の一覧と同じかどうかを判定します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-518">Determines whether a list is the same as the current list.</span></span>
 
     public boolean equalTo(List l)
 
-#### <a name="parameters"></a><span data-ttu-id="bcebd-519">パラメーター</span><span class="sxs-lookup"><span data-stu-id="bcebd-519">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="3bab6-519">パラメーター</span><span class="sxs-lookup"><span data-stu-id="3bab6-519">Parameters</span></span>
 
-<span data-ttu-id="bcebd-520">l</span><span class="sxs-lookup"><span data-stu-id="bcebd-520">l</span></span>  
-<span data-ttu-id="bcebd-521">現在のリストと比較されるリスト。</span><span class="sxs-lookup"><span data-stu-id="bcebd-521">The list to be compared with the current list.</span></span>
+<span data-ttu-id="3bab6-520">l</span><span class="sxs-lookup"><span data-stu-id="3bab6-520">l</span></span>  
+<span data-ttu-id="3bab6-521">現在のリストと比較されるリスト。</span><span class="sxs-lookup"><span data-stu-id="3bab6-521">The list to be compared with the current list.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-522">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-522">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-522">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-522">Return Value</span></span>
 
-<span data-ttu-id="bcebd-523">指定したリストが、メソッドが呼び出されたリストと同一である場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="bcebd-523">true if the specified list is identical to the list on which the method is called; otherwise, false.</span></span>
+<span data-ttu-id="3bab6-523">指定したリストが、メソッドが呼び出されたリストと同一である場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="3bab6-523">true if the specified list is identical to the list on which the method is called; otherwise, false.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="bcebd-524">備考</span><span class="sxs-lookup"><span data-stu-id="bcebd-524">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="3bab6-524">備考</span><span class="sxs-lookup"><span data-stu-id="3bab6-524">Remarks</span></span>
 
-<span data-ttu-id="bcebd-525">2 つのリストが同じ型の場合、リストは別のリストと等しくなり、要素の同じ番号を含み、同じ順序で要素が発生します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-525">A list is equal to another list if the two lists are the same type, contain the same number of elements, and the elements occur in the same order.</span></span> <span data-ttu-id="bcebd-526">equalTo メソッドは、List.equal メソッドを使用するためのショートカットです。(this、l) と等しい。</span><span class="sxs-lookup"><span data-stu-id="bcebd-526">The equalTo method is a shortcut for using the List.equal method: equal(this, l).</span></span>
+<span data-ttu-id="3bab6-525">2 つのリストが同じ型の場合、リストは別のリストと等しくなり、要素の同じ番号を含み、同じ順序で要素が発生します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-525">A list is equal to another list if the two lists are the same type, contain the same number of elements, and the elements occur in the same order.</span></span> <span data-ttu-id="3bab6-526">equalTo メソッドは、List.equal メソッドを使用するためのショートカットです。(this、l) と等しい。</span><span class="sxs-lookup"><span data-stu-id="3bab6-526">The equalTo method is a shortcut for using the List.equal method: equal(this, l).</span></span>
 
-### <a name="method-getenumerator"></a><span data-ttu-id="bcebd-527">メソッド getEnumerator</span><span class="sxs-lookup"><span data-stu-id="bcebd-527">Method getEnumerator</span></span>
+### <a name="method-getenumerator"></a><span data-ttu-id="3bab6-527">メソッド getEnumerator</span><span class="sxs-lookup"><span data-stu-id="3bab6-527">Method getEnumerator</span></span>
 
-<span data-ttu-id="bcebd-528">リストのスキャンを可能にするリストの列挙子を作成します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-528">Creates an enumerator for a list which allows you to traverse the list.</span></span>
+<span data-ttu-id="3bab6-528">リストのスキャンを可能にするリストの列挙子を作成します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-528">Creates an enumerator for a list which allows you to traverse the list.</span></span>
 
     public ListEnumerator getEnumerator()
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-529">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-529">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-529">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-529">Return Value</span></span>
 
-<span data-ttu-id="bcebd-530">現在のリストの listEnumerator オブジェクト。</span><span class="sxs-lookup"><span data-stu-id="bcebd-530">A listEnumerator object for the current list.</span></span>
+<span data-ttu-id="3bab6-530">現在のリストの listEnumerator オブジェクト。</span><span class="sxs-lookup"><span data-stu-id="3bab6-530">A listEnumerator object for the current list.</span></span>
 
-### <a name="method-pack"></a><span data-ttu-id="bcebd-531">メソッド pack</span><span class="sxs-lookup"><span data-stu-id="bcebd-531">Method pack</span></span>
+### <a name="method-pack"></a><span data-ttu-id="3bab6-531">メソッド pack</span><span class="sxs-lookup"><span data-stu-id="3bab6-531">Method pack</span></span>
 
-<span data-ttu-id="bcebd-532">List クラスの現在のインスタンスをシリアル化します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-532">Serializes the current instance of the List class.</span></span>
+<span data-ttu-id="3bab6-532">List クラスの現在のインスタンスをシリアル化します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-532">Serializes the current instance of the List class.</span></span>
 
     public container pack()
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-533">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-533">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-533">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-533">Return Value</span></span>
 
-<span data-ttu-id="bcebd-534">List クラスの現在のインスタンスを含むコンテナーです。</span><span class="sxs-lookup"><span data-stu-id="bcebd-534">A container that contains the current instance of the List class.</span></span>
+<span data-ttu-id="3bab6-534">List クラスの現在のインスタンスを含むコンテナーです。</span><span class="sxs-lookup"><span data-stu-id="3bab6-534">A container that contains the current instance of the List class.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="bcebd-535">備考</span><span class="sxs-lookup"><span data-stu-id="bcebd-535">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="3bab6-535">備考</span><span class="sxs-lookup"><span data-stu-id="3bab6-535">Remarks</span></span>
 
-<span data-ttu-id="bcebd-536">このメソッドで作成されたコンテナーには、リストの最初の要素の前に 3 つの要素が含まれます。</span><span class="sxs-lookup"><span data-stu-id="bcebd-536">The container created by this method contains 3 elements before the first element from the list:</span></span>
+<span data-ttu-id="3bab6-536">このメソッドで作成されたコンテナーには、リストの最初の要素の前に 3 つの要素が含まれます。</span><span class="sxs-lookup"><span data-stu-id="3bab6-536">The container created by this method contains 3 elements before the first element from the list:</span></span>
 
--   <span data-ttu-id="bcebd-537">コンテナのバージョン番号</span><span class="sxs-lookup"><span data-stu-id="bcebd-537">A version number for the container</span></span>
--   <span data-ttu-id="bcebd-538">リスト要素のデータ型を識別する整数</span><span class="sxs-lookup"><span data-stu-id="bcebd-538">An integer that identifies the data type of the list elements</span></span>
--   <span data-ttu-id="bcebd-539">リスト内の要素の数。</span><span class="sxs-lookup"><span data-stu-id="bcebd-539">The number of elements in the list</span></span>
+-   <span data-ttu-id="3bab6-537">コンテナのバージョン番号</span><span class="sxs-lookup"><span data-stu-id="3bab6-537">A version number for the container</span></span>
+-   <span data-ttu-id="3bab6-538">リスト要素のデータ型を識別する整数</span><span class="sxs-lookup"><span data-stu-id="3bab6-538">An integer that identifies the data type of the list elements</span></span>
+-   <span data-ttu-id="3bab6-539">リスト内の要素の数。</span><span class="sxs-lookup"><span data-stu-id="3bab6-539">The number of elements in the list</span></span>
 
-<span data-ttu-id="bcebd-540">リスト内の要素がオブジェクトとなっている場合は、梱包は、各オブジェクトに対して pack メソッドを連続して呼び出し、サブコンテナーを取得することによって行われます。</span><span class="sxs-lookup"><span data-stu-id="bcebd-540">If the elements in the list are objects, packing is performed by calling the pack method successively on each object to yield a subcontainer.</span></span> <span data-ttu-id="bcebd-541">List.create メソッドを使用して、パックされたコンテナーからリストを取得できます。</span><span class="sxs-lookup"><span data-stu-id="bcebd-541">The list can be retrieved from the packed container by using the List.create method.</span></span>
+<span data-ttu-id="3bab6-540">リスト内の要素がオブジェクトとなっている場合は、梱包は、各オブジェクトに対して pack メソッドを連続して呼び出し、サブコンテナーを取得することによって行われます。</span><span class="sxs-lookup"><span data-stu-id="3bab6-540">If the elements in the list are objects, packing is performed by calling the pack method successively on each object to yield a subcontainer.</span></span> <span data-ttu-id="3bab6-541">List.create メソッドを使用して、パックされたコンテナーからリストを取得できます。</span><span class="sxs-lookup"><span data-stu-id="3bab6-541">The list can be retrieved from the packed container by using the List.create method.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="bcebd-542">例</span><span class="sxs-lookup"><span data-stu-id="bcebd-542">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="3bab6-542">例</span><span class="sxs-lookup"><span data-stu-id="3bab6-542">Examples</span></span>
 
-<span data-ttu-id="bcebd-543">次の例では、レコードのリストを作成し、新しい projReverseMarking オブジェクトを作成するためのパラメーターとしてパックされたリストに渡します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-543">The following example creates a list of records and passes in the packed list as a parameter for creating a new projReverseMarking object.</span></span>
+<span data-ttu-id="3bab6-543">次の例では、レコードのリストを作成し、新しい projReverseMarking オブジェクトを作成するためのパラメーターとしてパックされたリストに渡します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-543">The following example creates a list of records and passes in the packed list as a parameter for creating a new projReverseMarking object.</span></span>
 
     public boolean canClose() 
     { 
@@ -867,23 +866,23 @@ ms.lasthandoff: 08/09/2018
         return canClose; 
     }
 
-### <a name="method-tostring"></a><span data-ttu-id="bcebd-544">メソッド toString</span><span class="sxs-lookup"><span data-stu-id="bcebd-544">Method toString</span></span>
+### <a name="method-tostring"></a><span data-ttu-id="3bab6-544">メソッド toString</span><span class="sxs-lookup"><span data-stu-id="3bab6-544">Method toString</span></span>
 
-<span data-ttu-id="bcebd-545">リスト内の値の説明を返します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-545">Returns a description of the values in the list.</span></span>
+<span data-ttu-id="3bab6-545">リスト内の値の説明を返します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-545">Returns a description of the values in the list.</span></span>
 
     public str toString()
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-546">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-546">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-546">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-546">Return Value</span></span>
 
-<span data-ttu-id="bcebd-547">リストの要素の値を説明する文字列。</span><span class="sxs-lookup"><span data-stu-id="bcebd-547">A string that describes the values of the elements in the list.</span></span>
+<span data-ttu-id="3bab6-547">リストの要素の値を説明する文字列。</span><span class="sxs-lookup"><span data-stu-id="3bab6-547">A string that describes the values of the elements in the list.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="bcebd-548">備考</span><span class="sxs-lookup"><span data-stu-id="bcebd-548">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="3bab6-548">備考</span><span class="sxs-lookup"><span data-stu-id="3bab6-548">Remarks</span></span>
 
-<span data-ttu-id="bcebd-549">リスト内の要素のタイプの説明を印刷するには、List.definitionString メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-549">To print a description of the type of the elements in the list, use the List.definitionString method.</span></span>
+<span data-ttu-id="3bab6-549">リスト内の要素のタイプの説明を印刷するには、List.definitionString メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-549">To print a description of the type of the elements in the list, use the List.definitionString method.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="bcebd-550">例</span><span class="sxs-lookup"><span data-stu-id="bcebd-550">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="3bab6-550">例</span><span class="sxs-lookup"><span data-stu-id="3bab6-550">Examples</span></span>
 
-<span data-ttu-id="bcebd-551">次の例では、整数のリストを作成します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-551">The following example creates a list of integers.</span></span> <span data-ttu-id="bcebd-552">toString メソッドを使用して、リストにある値の説明を出力します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-552">The toString method is used to print a description of the values in the list.</span></span>
+<span data-ttu-id="3bab6-551">次の例では、整数のリストを作成します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-551">The following example creates a list of integers.</span></span> <span data-ttu-id="3bab6-552">toString メソッドを使用して、リストにある値の説明を出力します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-552">The toString method is used to print a description of the values in the list.</span></span>
 
     { 
         // Create a list of integers 
@@ -898,57 +897,57 @@ ms.lasthandoff: 08/09/2018
         pause; 
     }
 
-### <a name="method-typeid"></a><span data-ttu-id="bcebd-553">メソッド typeId</span><span class="sxs-lookup"><span data-stu-id="bcebd-553">Method typeId</span></span>
+### <a name="method-typeid"></a><span data-ttu-id="3bab6-553">メソッド typeId</span><span class="sxs-lookup"><span data-stu-id="3bab6-553">Method typeId</span></span>
 
-<span data-ttu-id="bcebd-554">リスト内の値のタイプを返します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-554">Returns the type of the values in a list.</span></span>
+<span data-ttu-id="3bab6-554">リスト内の値のタイプを返します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-554">Returns the type of the values in a list.</span></span>
 
     public Types typeId()
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-555">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-555">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-555">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-555">Return Value</span></span>
 
-<span data-ttu-id="bcebd-556">リスト要素のタイプ。</span><span class="sxs-lookup"><span data-stu-id="bcebd-556">The type of the list elements.</span></span>
+<span data-ttu-id="3bab6-556">リスト要素のタイプ。</span><span class="sxs-lookup"><span data-stu-id="3bab6-556">The type of the list elements.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="bcebd-557">備考</span><span class="sxs-lookup"><span data-stu-id="bcebd-557">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="3bab6-557">備考</span><span class="sxs-lookup"><span data-stu-id="3bab6-557">Remarks</span></span>
 
-<span data-ttu-id="bcebd-558">リストのタイプは、リストが作成されるときに指定され、リストの存続期間中は同じままです。</span><span class="sxs-lookup"><span data-stu-id="bcebd-558">The type of the list is specified when the list is created, and remains the same throughout the life of the list.</span></span>
+<span data-ttu-id="3bab6-558">リストのタイプは、リストが作成されるときに指定され、リストの存続期間中は同じままです。</span><span class="sxs-lookup"><span data-stu-id="3bab6-558">The type of the list is specified when the list is created, and remains the same throughout the life of the list.</span></span>
 
-### <a name="method-xml"></a><span data-ttu-id="bcebd-559">メソッド xml</span><span class="sxs-lookup"><span data-stu-id="bcebd-559">Method xml</span></span>
+### <a name="method-xml"></a><span data-ttu-id="3bab6-559">メソッド xml</span><span class="sxs-lookup"><span data-stu-id="3bab6-559">Method xml</span></span>
 
-<span data-ttu-id="bcebd-560">現在のオブジェクトを表す XML 文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-560">Returns an XML string that represents the current object.</span></span>
+<span data-ttu-id="3bab6-560">現在のオブジェクトを表す XML 文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-560">Returns an XML string that represents the current object.</span></span>
 
     public str xml([int indent])
 
-#### <a name="parameters"></a><span data-ttu-id="bcebd-561">パラメーター</span><span class="sxs-lookup"><span data-stu-id="bcebd-561">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="3bab6-561">パラメーター</span><span class="sxs-lookup"><span data-stu-id="3bab6-561">Parameters</span></span>
 
-<span data-ttu-id="bcebd-562">インデント</span><span class="sxs-lookup"><span data-stu-id="bcebd-562">indent</span></span>  
-<span data-ttu-id="bcebd-563">返された XML 文字列のインデントの量 (省略可能)。</span><span class="sxs-lookup"><span data-stu-id="bcebd-563">The amount of indentation of the returned XML string; optional.</span></span>
+<span data-ttu-id="3bab6-562">インデント</span><span class="sxs-lookup"><span data-stu-id="3bab6-562">indent</span></span>  
+<span data-ttu-id="3bab6-563">返された XML 文字列のインデントの量 (省略可能)。</span><span class="sxs-lookup"><span data-stu-id="3bab6-563">The amount of indentation of the returned XML string; optional.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-564">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-564">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-564">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-564">Return Value</span></span>
 
-<span data-ttu-id="bcebd-565">現在のオブジェクトを表す XML 文字列です。</span><span class="sxs-lookup"><span data-stu-id="bcebd-565">An XML string that represents the current object.</span></span>
+<span data-ttu-id="3bab6-565">現在のオブジェクトを表す XML 文字列です。</span><span class="sxs-lookup"><span data-stu-id="3bab6-565">An XML string that represents the current object.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="bcebd-566">備考</span><span class="sxs-lookup"><span data-stu-id="bcebd-566">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="3bab6-566">備考</span><span class="sxs-lookup"><span data-stu-id="3bab6-566">Remarks</span></span>
 
-<span data-ttu-id="bcebd-567">このメソッドをオーバーライドして、その型に対して意味のある値を返すことができます。</span><span class="sxs-lookup"><span data-stu-id="bcebd-567">This method can be overridden to return values that are meaningful for that type.</span></span>
+<span data-ttu-id="3bab6-567">このメソッドをオーバーライドして、その型に対して意味のある値を返すことができます。</span><span class="sxs-lookup"><span data-stu-id="3bab6-567">This method can be overridden to return values that are meaningful for that type.</span></span>
 
-### <a name="method-create"></a><span data-ttu-id="bcebd-568">メソッド create</span><span class="sxs-lookup"><span data-stu-id="bcebd-568">Method create</span></span>
+### <a name="method-create"></a><span data-ttu-id="3bab6-568">メソッド create</span><span class="sxs-lookup"><span data-stu-id="3bab6-568">Method create</span></span>
 
-<span data-ttu-id="bcebd-569">以前の List.pack メソッドの呼び出しで取得したコンテナーからリストを作成します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-569">Creates a list from the container obtained from a prior call to the List.pack method.</span></span>
+<span data-ttu-id="3bab6-569">以前の List.pack メソッドの呼び出しで取得したコンテナーからリストを作成します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-569">Creates a list from the container obtained from a prior call to the List.pack method.</span></span>
 
     public static List create(container container)
 
-#### <a name="parameters"></a><span data-ttu-id="bcebd-570">パラメーター</span><span class="sxs-lookup"><span data-stu-id="bcebd-570">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="3bab6-570">パラメーター</span><span class="sxs-lookup"><span data-stu-id="3bab6-570">Parameters</span></span>
 
-<span data-ttu-id="bcebd-571">コンテナー</span><span class="sxs-lookup"><span data-stu-id="bcebd-571">container</span></span>  
-<span data-ttu-id="bcebd-572">パックされたリストを保持するコンテナー。</span><span class="sxs-lookup"><span data-stu-id="bcebd-572">The container that holds the packed list.</span></span>
+<span data-ttu-id="3bab6-571">コンテナー</span><span class="sxs-lookup"><span data-stu-id="3bab6-571">container</span></span>  
+<span data-ttu-id="3bab6-572">パックされたリストを保持するコンテナー。</span><span class="sxs-lookup"><span data-stu-id="3bab6-572">The container that holds the packed list.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-573">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-573">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-573">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-573">Return Value</span></span>
 
-<span data-ttu-id="bcebd-574">コンテナーに梱包されたものと同一のリスト。</span><span class="sxs-lookup"><span data-stu-id="bcebd-574">A list identical to the one that was packed into the container.</span></span>
+<span data-ttu-id="3bab6-574">コンテナーに梱包されたものと同一のリスト。</span><span class="sxs-lookup"><span data-stu-id="3bab6-574">A list identical to the one that was packed into the container.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="bcebd-575">例</span><span class="sxs-lookup"><span data-stu-id="bcebd-575">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="3bab6-575">例</span><span class="sxs-lookup"><span data-stu-id="3bab6-575">Examples</span></span>
 
-<span data-ttu-id="bcebd-576">次の例では、リストを作成し、それをコンテナーにパックします。</span><span class="sxs-lookup"><span data-stu-id="bcebd-576">The following example creates a list and packs it into a container.</span></span> <span data-ttu-id="bcebd-577">次に、create メソッドを使用してコンテナーを展開し、元のリストと同じリストを作成します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-577">The create method is then used to unpack the container and create a list identical to the original one.</span></span>
+<span data-ttu-id="3bab6-576">次の例では、リストを作成し、それをコンテナーにパックします。</span><span class="sxs-lookup"><span data-stu-id="3bab6-576">The following example creates a list and packs it into a container.</span></span> <span data-ttu-id="3bab6-577">次に、create メソッドを使用してコンテナーを展開し、元のリストと同じリストを作成します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-577">The create method is then used to unpack the container and create a list identical to the original one.</span></span>
 
     { 
         List il = new List(Types::Integer); 
@@ -966,67 +965,67 @@ ms.lasthandoff: 08/09/2018
         pause; 
     }
 
-### <a name="method-createfromxml"></a><span data-ttu-id="bcebd-578">メソッド createFromXML</span><span class="sxs-lookup"><span data-stu-id="bcebd-578">Method createFromXML</span></span>
+### <a name="method-createfromxml"></a><span data-ttu-id="3bab6-578">メソッド createFromXML</span><span class="sxs-lookup"><span data-stu-id="3bab6-578">Method createFromXML</span></span>
 
     public static List createFromXML(Object xmlnode)
 
-#### <a name="parameters"></a><span data-ttu-id="bcebd-579">パラメーター</span><span class="sxs-lookup"><span data-stu-id="bcebd-579">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="3bab6-579">パラメーター</span><span class="sxs-lookup"><span data-stu-id="3bab6-579">Parameters</span></span>
 
-<span data-ttu-id="bcebd-580">xmlnode</span><span class="sxs-lookup"><span data-stu-id="bcebd-580">xmlnode</span></span>  
+<span data-ttu-id="3bab6-580">xmlnode</span><span class="sxs-lookup"><span data-stu-id="3bab6-580">xmlnode</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-581">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-581">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-581">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-581">Return Value</span></span>
 
-### <a name="method-equal"></a><span data-ttu-id="bcebd-582">メソッド equal</span><span class="sxs-lookup"><span data-stu-id="bcebd-582">Method equal</span></span>
+### <a name="method-equal"></a><span data-ttu-id="3bab6-582">メソッド equal</span><span class="sxs-lookup"><span data-stu-id="3bab6-582">Method equal</span></span>
 
-<span data-ttu-id="bcebd-583">2 つのリストが同じかどうかを判定します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-583">Determines whether two lists are identical.</span></span>
+<span data-ttu-id="3bab6-583">2 つのリストが同じかどうかを判定します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-583">Determines whether two lists are identical.</span></span>
 
     public static boolean equal(List list1, List list2)
 
-#### <a name="parameters"></a><span data-ttu-id="bcebd-584">パラメーター</span><span class="sxs-lookup"><span data-stu-id="bcebd-584">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="3bab6-584">パラメーター</span><span class="sxs-lookup"><span data-stu-id="3bab6-584">Parameters</span></span>
 
-<span data-ttu-id="bcebd-585">list1</span><span class="sxs-lookup"><span data-stu-id="bcebd-585">list1</span></span>  
-<span data-ttu-id="bcebd-586">比較する 2 番目のリスト。</span><span class="sxs-lookup"><span data-stu-id="bcebd-586">The second list to be compared.</span></span>
+<span data-ttu-id="3bab6-585">list1</span><span class="sxs-lookup"><span data-stu-id="3bab6-585">list1</span></span>  
+<span data-ttu-id="3bab6-586">比較する 2 番目のリスト。</span><span class="sxs-lookup"><span data-stu-id="3bab6-586">The second list to be compared.</span></span>
 
 <!-- -->
 
-<span data-ttu-id="bcebd-587">list2</span><span class="sxs-lookup"><span data-stu-id="bcebd-587">list2</span></span>  
-<span data-ttu-id="bcebd-588">比較する 2 番目のリスト。</span><span class="sxs-lookup"><span data-stu-id="bcebd-588">The second list to be compared.</span></span>
+<span data-ttu-id="3bab6-587">list2</span><span class="sxs-lookup"><span data-stu-id="3bab6-587">list2</span></span>  
+<span data-ttu-id="3bab6-588">比較する 2 番目のリスト。</span><span class="sxs-lookup"><span data-stu-id="3bab6-588">The second list to be compared.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-589">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-589">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-589">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-589">Return Value</span></span>
 
-<span data-ttu-id="bcebd-590">2 つのリストが同一である場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="bcebd-590">true if the two lists are identical; otherwise, false.</span></span>
+<span data-ttu-id="3bab6-590">2 つのリストが同一である場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="3bab6-590">true if the two lists are identical; otherwise, false.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="bcebd-591">備考</span><span class="sxs-lookup"><span data-stu-id="bcebd-591">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="3bab6-591">備考</span><span class="sxs-lookup"><span data-stu-id="3bab6-591">Remarks</span></span>
 
-<span data-ttu-id="bcebd-592">2 つのリストが同じ型の場合、リストは別のリストと等しくなり、要素の同じ番号を含み、同じ順序で要素が発生します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-592">A list is equal to another list if the two lists are the same type, contain the same number of elements, and the elements occur in the same order.</span></span>
+<span data-ttu-id="3bab6-592">2 つのリストが同じ型の場合、リストは別のリストと等しくなり、要素の同じ番号を含み、同じ順序で要素が発生します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-592">A list is equal to another list if the two lists are the same type, contain the same number of elements, and the elements occur in the same order.</span></span>
 
-### <a name="method-merge"></a><span data-ttu-id="bcebd-593">メソッド merge</span><span class="sxs-lookup"><span data-stu-id="bcebd-593">Method merge</span></span>
+### <a name="method-merge"></a><span data-ttu-id="3bab6-593">メソッド merge</span><span class="sxs-lookup"><span data-stu-id="3bab6-593">Method merge</span></span>
 
-<span data-ttu-id="bcebd-594">2 つのリストを組み合わせ、新しいリストを作成します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-594">Combines two lists to create a new list.</span></span>
+<span data-ttu-id="3bab6-594">2 つのリストを組み合わせ、新しいリストを作成します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-594">Combines two lists to create a new list.</span></span>
 
     public static List merge(List list1, List list2)
 
-#### <a name="parameters"></a><span data-ttu-id="bcebd-595">パラメーター</span><span class="sxs-lookup"><span data-stu-id="bcebd-595">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="3bab6-595">パラメーター</span><span class="sxs-lookup"><span data-stu-id="3bab6-595">Parameters</span></span>
 
-<span data-ttu-id="bcebd-596">list1</span><span class="sxs-lookup"><span data-stu-id="bcebd-596">list1</span></span>  
-<span data-ttu-id="bcebd-597">新しいリストを作成するために最初のリストの最後に追加されるリスト。</span><span class="sxs-lookup"><span data-stu-id="bcebd-597">The list that will be added to the end of the first to create the new list.</span></span>
+<span data-ttu-id="3bab6-596">list1</span><span class="sxs-lookup"><span data-stu-id="3bab6-596">list1</span></span>  
+<span data-ttu-id="3bab6-597">新しいリストを作成するために最初のリストの最後に追加されるリスト。</span><span class="sxs-lookup"><span data-stu-id="3bab6-597">The list that will be added to the end of the first to create the new list.</span></span>
 
 <!-- -->
 
-<span data-ttu-id="bcebd-598">list2</span><span class="sxs-lookup"><span data-stu-id="bcebd-598">list2</span></span>  
-<span data-ttu-id="bcebd-599">新しいリストを作成するために最初のリストの最後に追加されるリスト。</span><span class="sxs-lookup"><span data-stu-id="bcebd-599">The list that will be added to the end of the first to create the new list.</span></span>
+<span data-ttu-id="3bab6-598">list2</span><span class="sxs-lookup"><span data-stu-id="3bab6-598">list2</span></span>  
+<span data-ttu-id="3bab6-599">新しいリストを作成するために最初のリストの最後に追加されるリスト。</span><span class="sxs-lookup"><span data-stu-id="3bab6-599">The list that will be added to the end of the first to create the new list.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-600">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-600">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-600">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-600">Return Value</span></span>
 
-<span data-ttu-id="bcebd-601">新しいリスト。</span><span class="sxs-lookup"><span data-stu-id="bcebd-601">The new list.</span></span>
+<span data-ttu-id="3bab6-601">新しいリスト。</span><span class="sxs-lookup"><span data-stu-id="3bab6-601">The new list.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="bcebd-602">備考</span><span class="sxs-lookup"><span data-stu-id="bcebd-602">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="3bab6-602">備考</span><span class="sxs-lookup"><span data-stu-id="3bab6-602">Remarks</span></span>
 
-<span data-ttu-id="bcebd-603">リストのタイプは同じにする必要があります。</span><span class="sxs-lookup"><span data-stu-id="bcebd-603">The types of the lists must be the same.</span></span>
+<span data-ttu-id="3bab6-603">リストのタイプは同じにする必要があります。</span><span class="sxs-lookup"><span data-stu-id="3bab6-603">The types of the lists must be the same.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="bcebd-604">例</span><span class="sxs-lookup"><span data-stu-id="bcebd-604">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="3bab6-604">例</span><span class="sxs-lookup"><span data-stu-id="3bab6-604">Examples</span></span>
 
-<span data-ttu-id="bcebd-605">次の例では、2 つの整数値のリストを作成し、それらをマージして新しいリストを作成し、新しい組み合わせリストに値を出力します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-605">The following example creates two lists of integer values, merges them to create a new list, and then prints out the values in the new combined list.</span></span>
+<span data-ttu-id="3bab6-605">次の例では、2 つの整数値のリストを作成し、それらをマージして新しいリストを作成し、新しい組み合わせリストに値を出力します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-605">The following example creates two lists of integer values, merges them to create a new list, and then prints out the values in the new combined list.</span></span>
 
     { 
         List list1  = new List(Types::Integer); 
@@ -1046,50 +1045,50 @@ ms.lasthandoff: 08/09/2018
         pause; 
     }
 
-### <a name="method-appendlist"></a><span data-ttu-id="bcebd-606">メソッド appendList</span><span class="sxs-lookup"><span data-stu-id="bcebd-606">Method appendList</span></span>
+### <a name="method-appendlist"></a><span data-ttu-id="3bab6-606">メソッド appendList</span><span class="sxs-lookup"><span data-stu-id="3bab6-606">Method appendList</span></span>
 
     public void appendList(List list)
 
-#### <a name="parameters"></a><span data-ttu-id="bcebd-607">パラメーター</span><span class="sxs-lookup"><span data-stu-id="bcebd-607">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="3bab6-607">パラメーター</span><span class="sxs-lookup"><span data-stu-id="3bab6-607">Parameters</span></span>
 
-<span data-ttu-id="bcebd-608">リスト</span><span class="sxs-lookup"><span data-stu-id="bcebd-608">list</span></span>  
+<span data-ttu-id="3bab6-608">リスト</span><span class="sxs-lookup"><span data-stu-id="3bab6-608">list</span></span>  
 
-### <a name="method-new"></a><span data-ttu-id="bcebd-609">メソッド new</span><span class="sxs-lookup"><span data-stu-id="bcebd-609">Method new</span></span>
+### <a name="method-new"></a><span data-ttu-id="3bab6-609">メソッド new</span><span class="sxs-lookup"><span data-stu-id="3bab6-609">Method new</span></span>
 
-<span data-ttu-id="bcebd-610">リストを作成します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-610">Creates a list.</span></span>
+<span data-ttu-id="3bab6-610">リストを作成します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-610">Creates a list.</span></span>
 
     public void new(Types Type)
 
-#### <a name="parameters"></a><span data-ttu-id="bcebd-611">パラメーター</span><span class="sxs-lookup"><span data-stu-id="bcebd-611">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="3bab6-611">パラメーター</span><span class="sxs-lookup"><span data-stu-id="3bab6-611">Parameters</span></span>
 
-<span data-ttu-id="bcebd-612">種類</span><span class="sxs-lookup"><span data-stu-id="bcebd-612">Type</span></span>  
-<span data-ttu-id="bcebd-613">リスト内の要素が持つべきタイプ。</span><span class="sxs-lookup"><span data-stu-id="bcebd-613">The type that the elements in the list should have.</span></span>
+<span data-ttu-id="3bab6-612">種類</span><span class="sxs-lookup"><span data-stu-id="3bab6-612">Type</span></span>  
+<span data-ttu-id="3bab6-613">リスト内の要素が持つべきタイプ。</span><span class="sxs-lookup"><span data-stu-id="3bab6-613">The type that the elements in the list should have.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="bcebd-614">備考</span><span class="sxs-lookup"><span data-stu-id="bcebd-614">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="3bab6-614">備考</span><span class="sxs-lookup"><span data-stu-id="3bab6-614">Remarks</span></span>
 
-<span data-ttu-id="bcebd-615">Type パラメーターの使用可能な値は、Type システム列挙によって提供されます。</span><span class="sxs-lookup"><span data-stu-id="bcebd-615">The possible values for the Type parameter are supplied by the Types system enum.</span></span> <span data-ttu-id="bcebd-616">リストを作成した後、そのリストに含まれている要素のタイプを変更することはできません。</span><span class="sxs-lookup"><span data-stu-id="bcebd-616">After you have created a list, you cannot change the type of the elements it contains.</span></span>
+<span data-ttu-id="3bab6-615">Type パラメーターの使用可能な値は、Type システム列挙によって提供されます。</span><span class="sxs-lookup"><span data-stu-id="3bab6-615">The possible values for the Type parameter are supplied by the Types system enum.</span></span> <span data-ttu-id="3bab6-616">リストを作成した後、そのリストに含まれている要素のタイプを変更することはできません。</span><span class="sxs-lookup"><span data-stu-id="3bab6-616">After you have created a list, you cannot change the type of the elements it contains.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="bcebd-617">例</span><span class="sxs-lookup"><span data-stu-id="bcebd-617">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="3bab6-617">例</span><span class="sxs-lookup"><span data-stu-id="3bab6-617">Examples</span></span>
 
-<span data-ttu-id="bcebd-618">次の例では、文字列のリストを作成します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-618">The following example creates a list of strings.</span></span>
+<span data-ttu-id="3bab6-618">次の例では、文字列のリストを作成します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-618">The following example creates a list of strings.</span></span>
 
     { 
         // Creates a list of integers. 
         List il = new List(Types::String); 
     }
 
-## <a name="class-listenumerator"></a><span data-ttu-id="bcebd-619">クラス ListEnumerator</span><span class="sxs-lookup"><span data-stu-id="bcebd-619">Class ListEnumerator</span></span>
+## <a name="class-listenumerator"></a><span data-ttu-id="3bab6-619">クラス ListEnumerator</span><span class="sxs-lookup"><span data-stu-id="3bab6-619">Class ListEnumerator</span></span>
     class ListEnumerator extends Object
 
-<span data-ttu-id="bcebd-620">ListEnumerator クラスを使用すると、一覧内の要素上を移動できます。</span><span class="sxs-lookup"><span data-stu-id="bcebd-620">The ListEnumerator class lets you traverse the elements in a list.</span></span>
+<span data-ttu-id="3bab6-620">ListEnumerator クラスを使用すると、一覧内の要素上を移動できます。</span><span class="sxs-lookup"><span data-stu-id="3bab6-620">The ListEnumerator class lets you traverse the elements in a list.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="bcebd-621">備考</span><span class="sxs-lookup"><span data-stu-id="bcebd-621">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="3bab6-621">備考</span><span class="sxs-lookup"><span data-stu-id="3bab6-621">Remarks</span></span>
 
-<span data-ttu-id="bcebd-622">リストの列挙子は、リストの最初の要素の前に開始します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-622">List enumerators start before the first element in the list.</span></span> <span data-ttu-id="bcebd-623">リストの最初の要素を指すようにするために ListEnumerator.moveNext メソッドを呼び出す必要があります。</span><span class="sxs-lookup"><span data-stu-id="bcebd-623">You must call the ListEnumerator.moveNext method to make it point to the first element in the list.</span></span> <span data-ttu-id="bcebd-624">list.getEnumerator メソッドが呼び出されたときに、リストと同じ層で列挙子が自動的に作成されるため、ListIterator クラスではなく、ListEnumerator クラスを使用することがベスト プラクティスです。</span><span class="sxs-lookup"><span data-stu-id="bcebd-624">It is best practice to use the ListEnumerator class instead of the ListIterator class, because enumerators are automatically created on the same tier as the list (when the list.getEnumerator method is called).</span></span> <span data-ttu-id="bcebd-625">これにより、Caller from としてマークされたコードの潜在的な問題を回避します。反復子とリストは別々の層に置くことができます。</span><span class="sxs-lookup"><span data-stu-id="bcebd-625">This avoids a potential problem in code that is marked as Called from, where the iterator and list can be on separate tiers.</span></span> <span data-ttu-id="bcebd-626">さらに、リスト列挙子はリスト反復子よりも少ないコードを必要とするためパフォーマンスが少し向上します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-626">In addition, list enumerators require less code than list iterators and therefore perform slightly better.</span></span> <span data-ttu-id="bcebd-627">リスト反復子を使用する必要がある唯一の状況は、リストから項目を削除する場合です (ListIterator.delete メソッドを使用します)。</span><span class="sxs-lookup"><span data-stu-id="bcebd-627">The only situation where you have to use a list iterator is if you want to delete items from a list (use the ListIterator.delete method).</span></span>
+<span data-ttu-id="3bab6-622">リストの列挙子は、リストの最初の要素の前に開始します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-622">List enumerators start before the first element in the list.</span></span> <span data-ttu-id="3bab6-623">リストの最初の要素を指すようにするために ListEnumerator.moveNext メソッドを呼び出す必要があります。</span><span class="sxs-lookup"><span data-stu-id="3bab6-623">You must call the ListEnumerator.moveNext method to make it point to the first element in the list.</span></span> <span data-ttu-id="3bab6-624">list.getEnumerator メソッドが呼び出されたときに、リストと同じ層で列挙子が自動的に作成されるため、ListIterator クラスではなく、ListEnumerator クラスを使用することがベスト プラクティスです。</span><span class="sxs-lookup"><span data-stu-id="3bab6-624">It is best practice to use the ListEnumerator class instead of the ListIterator class, because enumerators are automatically created on the same tier as the list (when the list.getEnumerator method is called).</span></span> <span data-ttu-id="3bab6-625">これにより、Caller from としてマークされたコードの潜在的な問題を回避します。反復子とリストは別々の層に置くことができます。</span><span class="sxs-lookup"><span data-stu-id="3bab6-625">This avoids a potential problem in code that is marked as Called from, where the iterator and list can be on separate tiers.</span></span> <span data-ttu-id="3bab6-626">さらに、リスト列挙子はリスト反復子よりも少ないコードを必要とするためパフォーマンスが少し向上します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-626">In addition, list enumerators require less code than list iterators and therefore perform slightly better.</span></span> <span data-ttu-id="3bab6-627">リスト反復子を使用する必要がある唯一の状況は、リストから項目を削除する場合です (ListIterator.delete メソッドを使用します)。</span><span class="sxs-lookup"><span data-stu-id="3bab6-627">The only situation where you have to use a list iterator is if you want to delete items from a list (use the ListIterator.delete method).</span></span>
 
-### <a name="examples"></a><span data-ttu-id="bcebd-628">例</span><span class="sxs-lookup"><span data-stu-id="bcebd-628">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="3bab6-628">例</span><span class="sxs-lookup"><span data-stu-id="3bab6-628">Examples</span></span>
 
-<span data-ttu-id="bcebd-629">次の例では、整数のリストを作成し、いくつかの値をその中に入れます。</span><span class="sxs-lookup"><span data-stu-id="bcebd-629">The following example creates a list of integers and puts some values into it.</span></span> <span data-ttu-id="bcebd-630">その後、列挙子を作成し、一覧の最初の要素、一覧の 2 番目の要素に列挙子を設定します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-630">It then creates an enumerator, and then sets the enumerator to the first element in the list and then the second element in the list.</span></span>
+<span data-ttu-id="3bab6-629">次の例では、整数のリストを作成し、いくつかの値をその中に入れます。</span><span class="sxs-lookup"><span data-stu-id="3bab6-629">The following example creates a list of integers and puts some values into it.</span></span> <span data-ttu-id="3bab6-630">その後、列挙子を作成し、一覧の最初の要素、一覧の 2 番目の要素に列挙子を設定します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-630">It then creates an enumerator, and then sets the enumerator to the first element in the list and then the second element in the list.</span></span>
 
     { 
         List list = new List(Types::Integer); 
@@ -1114,29 +1113,29 @@ ms.lasthandoff: 08/09/2018
         pause; 
     }
 
-### <a name="methods"></a><span data-ttu-id="bcebd-631">メソッド</span><span class="sxs-lookup"><span data-stu-id="bcebd-631">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="3bab6-631">メソッド</span><span class="sxs-lookup"><span data-stu-id="3bab6-631">Methods</span></span>
 
-| <span data-ttu-id="bcebd-632">方法</span><span class="sxs-lookup"><span data-stu-id="bcebd-632">Method</span></span>                        | <span data-ttu-id="bcebd-633">説明</span><span class="sxs-lookup"><span data-stu-id="bcebd-633">Description</span></span>                                                                                                   |
+| <span data-ttu-id="3bab6-632">方法</span><span class="sxs-lookup"><span data-stu-id="3bab6-632">Method</span></span>                        | <span data-ttu-id="3bab6-633">説明</span><span class="sxs-lookup"><span data-stu-id="3bab6-633">Description</span></span>                                                                                                   |
 |-------------------------------|---------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="bcebd-634">public AnyType current()</span><span class="sxs-lookup"><span data-stu-id="bcebd-634">public AnyType current()</span></span>      | <span data-ttu-id="bcebd-635">列挙子によりポイントされている値を取得します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-635">Retrieves the value that is pointed to by the enumerator.</span></span>                                                     |
-| <span data-ttu-id="bcebd-636">public str definitionString()</span><span class="sxs-lookup"><span data-stu-id="bcebd-636">public str definitionString()</span></span> | <span data-ttu-id="bcebd-637">列挙子の説明を返します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-637">Returns a description of the enumerator.</span></span>                                                                      |
-| <span data-ttu-id="bcebd-638">public boolean moveNext()</span><span class="sxs-lookup"><span data-stu-id="bcebd-638">public boolean moveNext()</span></span>     | <span data-ttu-id="bcebd-639">列挙子が有効なリスト要素を示すかどうかを決定します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-639">Determines whether the enumerator denotes a valid list element.</span></span>                                               |
-| <span data-ttu-id="bcebd-640">public str toString()</span><span class="sxs-lookup"><span data-stu-id="bcebd-640">public str toString()</span></span>         | <span data-ttu-id="bcebd-641">列挙子が現在ポイントしているリスト内の要素の内容の説明を返します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-641">Returns a description of the content of the element in the list that the enumerator is currently pointing to.</span></span> |
-| <span data-ttu-id="bcebd-642">public void reset()</span><span class="sxs-lookup"><span data-stu-id="bcebd-642">public void reset()</span></span>           | <span data-ttu-id="bcebd-643">列挙子をリストの先頭に移動します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-643">Moves the enumerator to the start of the list.</span></span>                                                                |
+| <span data-ttu-id="3bab6-634">public AnyType current()</span><span class="sxs-lookup"><span data-stu-id="3bab6-634">public AnyType current()</span></span>      | <span data-ttu-id="3bab6-635">列挙子によりポイントされている値を取得します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-635">Retrieves the value that is pointed to by the enumerator.</span></span>                                                     |
+| <span data-ttu-id="3bab6-636">public str definitionString()</span><span class="sxs-lookup"><span data-stu-id="3bab6-636">public str definitionString()</span></span> | <span data-ttu-id="3bab6-637">列挙子の説明を返します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-637">Returns a description of the enumerator.</span></span>                                                                      |
+| <span data-ttu-id="3bab6-638">public boolean moveNext()</span><span class="sxs-lookup"><span data-stu-id="3bab6-638">public boolean moveNext()</span></span>     | <span data-ttu-id="3bab6-639">列挙子が有効なリスト要素を示すかどうかを決定します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-639">Determines whether the enumerator denotes a valid list element.</span></span>                                               |
+| <span data-ttu-id="3bab6-640">public str toString()</span><span class="sxs-lookup"><span data-stu-id="3bab6-640">public str toString()</span></span>         | <span data-ttu-id="3bab6-641">列挙子が現在ポイントしているリスト内の要素の内容の説明を返します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-641">Returns a description of the content of the element in the list that the enumerator is currently pointing to.</span></span> |
+| <span data-ttu-id="3bab6-642">public void reset()</span><span class="sxs-lookup"><span data-stu-id="3bab6-642">public void reset()</span></span>           | <span data-ttu-id="3bab6-643">列挙子をリストの先頭に移動します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-643">Moves the enumerator to the start of the list.</span></span>                                                                |
 
-### <a name="method-current"></a><span data-ttu-id="bcebd-644">メソッド current</span><span class="sxs-lookup"><span data-stu-id="bcebd-644">Method current</span></span>
+### <a name="method-current"></a><span data-ttu-id="3bab6-644">メソッド current</span><span class="sxs-lookup"><span data-stu-id="3bab6-644">Method current</span></span>
 
-<span data-ttu-id="bcebd-645">列挙子によりポイントされている値を取得します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-645">Retrieves the value that is pointed to by the enumerator.</span></span>
+<span data-ttu-id="3bab6-645">列挙子によりポイントされている値を取得します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-645">Retrieves the value that is pointed to by the enumerator.</span></span>
 
     public AnyType current()
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-646">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-646">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-646">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-646">Return Value</span></span>
 
-<span data-ttu-id="bcebd-647">リスト内で現在指定されている値。</span><span class="sxs-lookup"><span data-stu-id="bcebd-647">The value that is currently pointed to in the list.</span></span> <span data-ttu-id="bcebd-648">戻り値のタイプは、リスト内の項目のタイプによって決まります。</span><span class="sxs-lookup"><span data-stu-id="bcebd-648">The type of the return value is determined by the type of the items in the list.</span></span>
+<span data-ttu-id="3bab6-647">リスト内で現在指定されている値。</span><span class="sxs-lookup"><span data-stu-id="3bab6-647">The value that is currently pointed to in the list.</span></span> <span data-ttu-id="3bab6-648">戻り値のタイプは、リスト内の項目のタイプによって決まります。</span><span class="sxs-lookup"><span data-stu-id="3bab6-648">The type of the return value is determined by the type of the items in the list.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="bcebd-649">例</span><span class="sxs-lookup"><span data-stu-id="bcebd-649">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="3bab6-649">例</span><span class="sxs-lookup"><span data-stu-id="3bab6-649">Examples</span></span>
 
-<span data-ttu-id="bcebd-650">次の例では、リストを反復処理し、dimensionTopic 変数を現在のリスト要素の値に設定します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-650">The following example iterates through the list and sets the dimensionTopic variable to the value of the current list element.</span></span>
+<span data-ttu-id="3bab6-650">次の例では、リストを反復処理し、dimensionTopic 変数を現在のリスト要素の値に設定します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-650">The following example iterates through the list and sets the dimensionTopic variable to the value of the current list element.</span></span>
 
     public DimensionTopic firstDimensionTopic() 
     { 
@@ -1150,23 +1149,23 @@ ms.lasthandoff: 08/09/2018
         return dimensionTopic; 
     }
 
-### <a name="method-definitionstring"></a><span data-ttu-id="bcebd-651">メソッド definitionString</span><span class="sxs-lookup"><span data-stu-id="bcebd-651">Method definitionString</span></span>
+### <a name="method-definitionstring"></a><span data-ttu-id="3bab6-651">メソッド definitionString</span><span class="sxs-lookup"><span data-stu-id="3bab6-651">Method definitionString</span></span>
 
-<span data-ttu-id="bcebd-652">列挙子の説明を返します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-652">Returns a description of the enumerator.</span></span>
+<span data-ttu-id="3bab6-652">列挙子の説明を返します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-652">Returns a description of the enumerator.</span></span>
 
     public str definitionString()
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-653">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-653">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-653">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-653">Return Value</span></span>
 
-<span data-ttu-id="bcebd-654">列挙子の説明を含む文字列。</span><span class="sxs-lookup"><span data-stu-id="bcebd-654">A string that contains a description of the enumerator.</span></span>
+<span data-ttu-id="3bab6-654">列挙子の説明を含む文字列。</span><span class="sxs-lookup"><span data-stu-id="3bab6-654">A string that contains a description of the enumerator.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="bcebd-655">備考</span><span class="sxs-lookup"><span data-stu-id="bcebd-655">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="3bab6-655">備考</span><span class="sxs-lookup"><span data-stu-id="3bab6-655">Remarks</span></span>
 
-<span data-ttu-id="bcebd-656">たとえば、整数のリストの列挙子は、int リスト列挙子を返します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-656">For example, an enumerator for a list of integers would return int list enumerator.</span></span>
+<span data-ttu-id="3bab6-656">たとえば、整数のリストの列挙子は、int リスト列挙子を返します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-656">For example, an enumerator for a list of integers would return int list enumerator.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="bcebd-657">例</span><span class="sxs-lookup"><span data-stu-id="bcebd-657">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="3bab6-657">例</span><span class="sxs-lookup"><span data-stu-id="3bab6-657">Examples</span></span>
 
-<span data-ttu-id="bcebd-658">次の例では、リストとそのリストの列挙子を作成します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-658">The following example creates a list and an enumerator for the list.</span></span> <span data-ttu-id="bcebd-659">definitionString メソッドを使用して、列挙子の説明を出力します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-659">It uses the definitionString method to print a description of the enumerator.</span></span>
+<span data-ttu-id="3bab6-658">次の例では、リストとそのリストの列挙子を作成します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-658">The following example creates a list and an enumerator for the list.</span></span> <span data-ttu-id="3bab6-659">definitionString メソッドを使用して、列挙子の説明を出力します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-659">It uses the definitionString method to print a description of the enumerator.</span></span>
 
     { 
         List list = new List(Types::Integer); 
@@ -1182,23 +1181,23 @@ ms.lasthandoff: 08/09/2018
         pause; 
     }
 
-### <a name="method-movenext"></a><span data-ttu-id="bcebd-660">メソッド moveNext</span><span class="sxs-lookup"><span data-stu-id="bcebd-660">Method moveNext</span></span>
+### <a name="method-movenext"></a><span data-ttu-id="3bab6-660">メソッド moveNext</span><span class="sxs-lookup"><span data-stu-id="3bab6-660">Method moveNext</span></span>
 
-<span data-ttu-id="bcebd-661">列挙子が有効なリスト要素を示すかどうかを決定します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-661">Determines whether the enumerator denotes a valid list element.</span></span>
+<span data-ttu-id="3bab6-661">列挙子が有効なリスト要素を示すかどうかを決定します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-661">Determines whether the enumerator denotes a valid list element.</span></span>
 
     public boolean moveNext()
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-662">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-662">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-662">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-662">Return Value</span></span>
 
-<span data-ttu-id="bcebd-663">リスト内の現在の職位が有効な要素を保持している場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="bcebd-663">true if the current position in the list holds a valid element; otherwise, false.</span></span>
+<span data-ttu-id="3bab6-663">リスト内の現在の職位が有効な要素を保持している場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="3bab6-663">true if the current position in the list holds a valid element; otherwise, false.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="bcebd-664">備考</span><span class="sxs-lookup"><span data-stu-id="bcebd-664">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="3bab6-664">備考</span><span class="sxs-lookup"><span data-stu-id="3bab6-664">Remarks</span></span>
 
-<span data-ttu-id="bcebd-665">リストの列挙子は、リストの最初の要素の前に開始します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-665">List enumerators start before the first element in the list.</span></span> <span data-ttu-id="bcebd-666">リストの最初の要素を指すようにするために moveNext メソッドを呼び出す必要があります。</span><span class="sxs-lookup"><span data-stu-id="bcebd-666">You must call the moveNext method to make it point to the first element in the list.</span></span>
+<span data-ttu-id="3bab6-665">リストの列挙子は、リストの最初の要素の前に開始します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-665">List enumerators start before the first element in the list.</span></span> <span data-ttu-id="3bab6-666">リストの最初の要素を指すようにするために moveNext メソッドを呼び出す必要があります。</span><span class="sxs-lookup"><span data-stu-id="3bab6-666">You must call the moveNext method to make it point to the first element in the list.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="bcebd-667">例</span><span class="sxs-lookup"><span data-stu-id="bcebd-667">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="3bab6-667">例</span><span class="sxs-lookup"><span data-stu-id="3bab6-667">Examples</span></span>
 
-<span data-ttu-id="bcebd-668">次の例では、moveNext メソッドを使用してリスト内に別の要素があるかどうかを確認し、dimensionTopic 変数を現在のリスト要素の値に設定します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-668">The following example uses the moveNext method to check whether there is another element in the list and then sets the dimensionTopic variable to the value of the current list element.</span></span>
+<span data-ttu-id="3bab6-668">次の例では、moveNext メソッドを使用してリスト内に別の要素があるかどうかを確認し、dimensionTopic 変数を現在のリスト要素の値に設定します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-668">The following example uses the moveNext method to check whether there is another element in the list and then sets the dimensionTopic variable to the value of the current list element.</span></span>
 
     public DimensionTopic firstDimensionTopic() 
     { 
@@ -1212,19 +1211,19 @@ ms.lasthandoff: 08/09/2018
         return dimensionTopic; 
     }
 
-### <a name="method-tostring"></a><span data-ttu-id="bcebd-669">メソッド toString</span><span class="sxs-lookup"><span data-stu-id="bcebd-669">Method toString</span></span>
+### <a name="method-tostring"></a><span data-ttu-id="3bab6-669">メソッド toString</span><span class="sxs-lookup"><span data-stu-id="3bab6-669">Method toString</span></span>
 
-<span data-ttu-id="bcebd-670">列挙子が現在ポイントしているリスト内の要素の内容の説明を返します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-670">Returns a description of the content of the element in the list that the enumerator is currently pointing to.</span></span>
+<span data-ttu-id="3bab6-670">列挙子が現在ポイントしているリスト内の要素の内容の説明を返します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-670">Returns a description of the content of the element in the list that the enumerator is currently pointing to.</span></span>
 
     public str toString()
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-671">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-671">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-671">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-671">Return Value</span></span>
 
-<span data-ttu-id="bcebd-672">現在のリスト要素の説明を含む文字列。</span><span class="sxs-lookup"><span data-stu-id="bcebd-672">A string that contains a description of the current list element.</span></span>
+<span data-ttu-id="3bab6-672">現在のリスト要素の説明を含む文字列。</span><span class="sxs-lookup"><span data-stu-id="3bab6-672">A string that contains a description of the current list element.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="bcebd-673">例</span><span class="sxs-lookup"><span data-stu-id="bcebd-673">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="3bab6-673">例</span><span class="sxs-lookup"><span data-stu-id="3bab6-673">Examples</span></span>
 
-<span data-ttu-id="bcebd-674">次の例では、リストを作成し、最初の要素と 2 番目の要素の内容をリストに出力します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-674">The following example creates a list, and then prints the content of the first and second elements in the list.</span></span>
+<span data-ttu-id="3bab6-674">次の例では、リストを作成し、最初の要素と 2 番目の要素の内容をリストに出力します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-674">The following example creates a list, and then prints the content of the first and second elements in the list.</span></span>
 
     { 
         List list = new List(Types::Integer); 
@@ -1248,19 +1247,19 @@ ms.lasthandoff: 08/09/2018
         pause; 
     }
 
-### <a name="method-reset"></a><span data-ttu-id="bcebd-675">メソッド reset</span><span class="sxs-lookup"><span data-stu-id="bcebd-675">Method reset</span></span>
+### <a name="method-reset"></a><span data-ttu-id="3bab6-675">メソッド reset</span><span class="sxs-lookup"><span data-stu-id="3bab6-675">Method reset</span></span>
 
-<span data-ttu-id="bcebd-676">列挙子をリストの先頭に移動します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-676">Moves the enumerator to the start of the list.</span></span>
+<span data-ttu-id="3bab6-676">列挙子をリストの先頭に移動します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-676">Moves the enumerator to the start of the list.</span></span>
 
     public void reset()
 
-#### <a name="remarks"></a><span data-ttu-id="bcebd-677">備考</span><span class="sxs-lookup"><span data-stu-id="bcebd-677">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="3bab6-677">備考</span><span class="sxs-lookup"><span data-stu-id="3bab6-677">Remarks</span></span>
 
-<span data-ttu-id="bcebd-678">reset メソッドは、列挙子をリストの先頭、リストの最初の要素の前に移動します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-678">The reset method moves the enumerator to the start of the list, before the first element in the list.</span></span> <span data-ttu-id="bcebd-679">リストの最初の要素を指すようにするために ListEnumerator.moveNext メソッドを呼び出す必要があります。</span><span class="sxs-lookup"><span data-stu-id="bcebd-679">You must call the ListEnumerator.moveNext method to make it point to the first element in the list.</span></span>
+<span data-ttu-id="3bab6-678">reset メソッドは、列挙子をリストの先頭、リストの最初の要素の前に移動します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-678">The reset method moves the enumerator to the start of the list, before the first element in the list.</span></span> <span data-ttu-id="3bab6-679">リストの最初の要素を指すようにするために ListEnumerator.moveNext メソッドを呼び出す必要があります。</span><span class="sxs-lookup"><span data-stu-id="3bab6-679">You must call the ListEnumerator.moveNext method to make it point to the first element in the list.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="bcebd-680">例</span><span class="sxs-lookup"><span data-stu-id="bcebd-680">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="3bab6-680">例</span><span class="sxs-lookup"><span data-stu-id="3bab6-680">Examples</span></span>
 
-<span data-ttu-id="bcebd-681">次の例では、リストを作成し、そのリストの列挙子を作成します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-681">The following example creates a list and then an enumerator for the list.</span></span> <span data-ttu-id="bcebd-682">reset メソッドを使用して一覧の先頭に移動し、moveNext メソッドを使用して一覧の最初の要素に移動します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-682">It uses the reset method to move to the start of the list and then uses the moveNext method to move to the first element in the list.</span></span>
+<span data-ttu-id="3bab6-681">次の例では、リストを作成し、そのリストの列挙子を作成します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-681">The following example creates a list and then an enumerator for the list.</span></span> <span data-ttu-id="3bab6-682">reset メソッドを使用して一覧の先頭に移動し、moveNext メソッドを使用して一覧の最初の要素に移動します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-682">It uses the reset method to move to the start of the list and then uses the moveNext method to move to the first element in the list.</span></span>
 
     { 
         List list = new List(Types::Integer); 
@@ -1280,18 +1279,18 @@ ms.lasthandoff: 08/09/2018
         pause; 
     }
 
-## <a name="class-listiterator"></a><span data-ttu-id="bcebd-683">クラス ListIterator</span><span class="sxs-lookup"><span data-stu-id="bcebd-683">Class ListIterator</span></span>
+## <a name="class-listiterator"></a><span data-ttu-id="3bab6-683">クラス ListIterator</span><span class="sxs-lookup"><span data-stu-id="3bab6-683">Class ListIterator</span></span>
     class ListIterator extends Object
 
-<span data-ttu-id="bcebd-684">ListIterator クラスは、一覧内の要素を反復処理するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="bcebd-684">The ListIterator class is used to iterate over the elements in a list.</span></span>
+<span data-ttu-id="3bab6-684">ListIterator クラスは、一覧内の要素を反復処理するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="3bab6-684">The ListIterator class is used to iterate over the elements in a list.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="bcebd-685">備考</span><span class="sxs-lookup"><span data-stu-id="bcebd-685">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="3bab6-685">備考</span><span class="sxs-lookup"><span data-stu-id="3bab6-685">Remarks</span></span>
 
-<span data-ttu-id="bcebd-686">リストの反復子は、反復処理する対象となるリストにポインターとして表示することができます。</span><span class="sxs-lookup"><span data-stu-id="bcebd-686">List iterators can be viewed as pointers into the lists over which they iterate.</span></span> <span data-ttu-id="bcebd-687">繰り返しを開始する機能は利用可能であり、より多くの要素が利用可能であるかどうかを決定し、繰り返しによりポイントされる要素をフェッチします。</span><span class="sxs-lookup"><span data-stu-id="bcebd-687">Functionality is available to start the iteration, determine whether more elements are available, and fetch the element that is pointed to by the iterator.</span></span> <span data-ttu-id="bcebd-688">繰り返し中に要素が発生する順序は、要素が挿入される順序によって定義されます。</span><span class="sxs-lookup"><span data-stu-id="bcebd-688">The order in which the elements occur during iteration is defined by the sequence in which the elements are inserted.</span></span> <span data-ttu-id="bcebd-689">要素を挿入するには、List.addStart、List.addEnd、または ListIterator.insert メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-689">Elements can be inserted by using the List.addStart, List.addEnd, or ListIterator.insert method.</span></span> <span data-ttu-id="bcebd-690">ListIterator クラスよりも ListEnumerator クラスを使用することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="bcebd-690">It is better to use the ListEnumerator class than the ListIterator class.</span></span> <span data-ttu-id="bcebd-691">反復処理するリストの反復子およびマップは、同じクライアント/サーバー側にある必要があります。</span><span class="sxs-lookup"><span data-stu-id="bcebd-691">List iterators and the maps over which they iterate must be on the same client/server side.</span></span> <span data-ttu-id="bcebd-692">ListIterator クラスを使用し、コードが Called from としてマークされている場合、リストと反復子が別の層で終了する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="bcebd-692">If you use the ListIterator class, and code is marked as Called from, it is possible that the list and the iterator will be on different tiers.</span></span> <span data-ttu-id="bcebd-693">この場合、コードは失敗します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-693">In this case, the code will fail.</span></span> <span data-ttu-id="bcebd-694">ListEnumerator クラスを使用する場合、列挙子はリストと同じ層に自動的に作成されます。</span><span class="sxs-lookup"><span data-stu-id="bcebd-694">If you use the ListEnumerator class, the enumerator is automatically created on the same tier as the list.</span></span> <span data-ttu-id="bcebd-695">また、リスト内の次のアイテムに移動するには、反復子リストを使用している場合は、より多くのメソッドと次のメソッドを明示的に呼び出す必要があります。</span><span class="sxs-lookup"><span data-stu-id="bcebd-695">Additionally, to move to the next item in a list, you must explicitly call the more and next methods if you are using a list iterator.</span></span> <span data-ttu-id="bcebd-696">ListEnumerator クラスを使用する場合、moveNext メソッドを呼び出すだけです。</span><span class="sxs-lookup"><span data-stu-id="bcebd-696">If you use the ListEnumerator class, you only have to call the moveNext method.</span></span> <span data-ttu-id="bcebd-697">リスト列挙子を使用できない唯一の状況は、リストから要素を削除する必要がある場合です。</span><span class="sxs-lookup"><span data-stu-id="bcebd-697">The only situation where you cannot use a list enumerator is where you need to delete elements from a list.</span></span> <span data-ttu-id="bcebd-698">詳細については、「メソッドの削除」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="bcebd-698">For more information, see the delete method.</span></span>
+<span data-ttu-id="3bab6-686">リストの反復子は、反復処理する対象となるリストにポインターとして表示することができます。</span><span class="sxs-lookup"><span data-stu-id="3bab6-686">List iterators can be viewed as pointers into the lists over which they iterate.</span></span> <span data-ttu-id="3bab6-687">繰り返しを開始する機能は利用可能であり、より多くの要素が利用可能であるかどうかを決定し、繰り返しによりポイントされる要素をフェッチします。</span><span class="sxs-lookup"><span data-stu-id="3bab6-687">Functionality is available to start the iteration, determine whether more elements are available, and fetch the element that is pointed to by the iterator.</span></span> <span data-ttu-id="3bab6-688">繰り返し中に要素が発生する順序は、要素が挿入される順序によって定義されます。</span><span class="sxs-lookup"><span data-stu-id="3bab6-688">The order in which the elements occur during iteration is defined by the sequence in which the elements are inserted.</span></span> <span data-ttu-id="3bab6-689">要素を挿入するには、List.addStart、List.addEnd、または ListIterator.insert メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-689">Elements can be inserted by using the List.addStart, List.addEnd, or ListIterator.insert method.</span></span> <span data-ttu-id="3bab6-690">ListIterator クラスよりも ListEnumerator クラスを使用することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="3bab6-690">It is better to use the ListEnumerator class than the ListIterator class.</span></span> <span data-ttu-id="3bab6-691">反復処理するリストの反復子およびマップは、同じクライアント/サーバー側にある必要があります。</span><span class="sxs-lookup"><span data-stu-id="3bab6-691">List iterators and the maps over which they iterate must be on the same client/server side.</span></span> <span data-ttu-id="3bab6-692">ListIterator クラスを使用し、コードが Called from としてマークされている場合、リストと反復子が別の層で終了する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="3bab6-692">If you use the ListIterator class, and code is marked as Called from, it is possible that the list and the iterator will be on different tiers.</span></span> <span data-ttu-id="3bab6-693">この場合、コードは失敗します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-693">In this case, the code will fail.</span></span> <span data-ttu-id="3bab6-694">ListEnumerator クラスを使用する場合、列挙子はリストと同じ層に自動的に作成されます。</span><span class="sxs-lookup"><span data-stu-id="3bab6-694">If you use the ListEnumerator class, the enumerator is automatically created on the same tier as the list.</span></span> <span data-ttu-id="3bab6-695">また、リスト内の次のアイテムに移動するには、反復子リストを使用している場合は、より多くのメソッドと次のメソッドを明示的に呼び出す必要があります。</span><span class="sxs-lookup"><span data-stu-id="3bab6-695">Additionally, to move to the next item in a list, you must explicitly call the more and next methods if you are using a list iterator.</span></span> <span data-ttu-id="3bab6-696">ListEnumerator クラスを使用する場合、moveNext メソッドを呼び出すだけです。</span><span class="sxs-lookup"><span data-stu-id="3bab6-696">If you use the ListEnumerator class, you only have to call the moveNext method.</span></span> <span data-ttu-id="3bab6-697">リスト列挙子を使用できない唯一の状況は、リストから要素を削除する必要がある場合です。</span><span class="sxs-lookup"><span data-stu-id="3bab6-697">The only situation where you cannot use a list enumerator is where you need to delete elements from a list.</span></span> <span data-ttu-id="3bab6-698">詳細については、「メソッドの削除」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="3bab6-698">For more information, see the delete method.</span></span>
 
-### <a name="examples"></a><span data-ttu-id="bcebd-699">例</span><span class="sxs-lookup"><span data-stu-id="bcebd-699">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="3bab6-699">例</span><span class="sxs-lookup"><span data-stu-id="3bab6-699">Examples</span></span>
 
-<span data-ttu-id="bcebd-700">次の例では、リストとそれを指す反復子を作成します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-700">The following example creates a list and an iterator to point to it.</span></span> <span data-ttu-id="bcebd-701">ListIterator クラスのさまざまなメソッドを使用して、一覧の説明と一覧内の項目を出力します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-701">It then uses various methods on the ListIterator class to print a description of the list, and the items in the list.</span></span>
+<span data-ttu-id="3bab6-700">次の例では、リストとそれを指す反復子を作成します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-700">The following example creates a list and an iterator to point to it.</span></span> <span data-ttu-id="3bab6-701">ListIterator クラスのさまざまなメソッドを使用して、一覧の説明と一覧内の項目を出力します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-701">It then uses various methods on the ListIterator class to print a description of the list, and the items in the list.</span></span>
 
     { 
         List il = new List(types::Integer); 
@@ -1318,57 +1317,57 @@ ms.lasthandoff: 08/09/2018
         pause; 
     }
 
-### <a name="methods"></a><span data-ttu-id="bcebd-702">メソッド</span><span class="sxs-lookup"><span data-stu-id="bcebd-702">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="3bab6-702">メソッド</span><span class="sxs-lookup"><span data-stu-id="3bab6-702">Methods</span></span>
 
-| <span data-ttu-id="bcebd-703">方法</span><span class="sxs-lookup"><span data-stu-id="bcebd-703">Method</span></span>                               | <span data-ttu-id="bcebd-704">説明</span><span class="sxs-lookup"><span data-stu-id="bcebd-704">Description</span></span>                                                                                    |
+| <span data-ttu-id="3bab6-703">方法</span><span class="sxs-lookup"><span data-stu-id="3bab6-703">Method</span></span>                               | <span data-ttu-id="3bab6-704">説明</span><span class="sxs-lookup"><span data-stu-id="3bab6-704">Description</span></span>                                                                                    |
 |--------------------------------------|------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="bcebd-705">public str definitionString()</span><span class="sxs-lookup"><span data-stu-id="bcebd-705">public str definitionString()</span></span>        | <span data-ttu-id="bcebd-706">反復子のタイプのテキスト表現を返します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-706">Returns a textual representation of the type of the iterator.</span></span>                                  |
-| <span data-ttu-id="bcebd-707">public AnyType insert(AnyType value)</span><span class="sxs-lookup"><span data-stu-id="bcebd-707">public AnyType insert(AnyType value)</span></span> | <span data-ttu-id="bcebd-708">反復子が現在ポイントしているリスト内の位置に新しい値を挿入します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-708">Inserts a new value at the position in the list that the iterator currently points to.</span></span>         |
-| <span data-ttu-id="bcebd-709">public boolean more()</span><span class="sxs-lookup"><span data-stu-id="bcebd-709">public boolean more()</span></span>                | <span data-ttu-id="bcebd-710">リスト反復子が有効な要素を指しているかどうかを判定します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-710">Determines whether the list iterator points to a valid element.</span></span>                                |
-| <span data-ttu-id="bcebd-711">public str toString()</span><span class="sxs-lookup"><span data-stu-id="bcebd-711">public str toString()</span></span>                | <span data-ttu-id="bcebd-712">反復子によりポイントされている現在のリスト値のテキスト形式を返します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-712">Returns a textual representation of the current list value that is pointed to by the iterator.</span></span> |
-| <span data-ttu-id="bcebd-713">public AnyType value()</span><span class="sxs-lookup"><span data-stu-id="bcebd-713">public AnyType value()</span></span>               | <span data-ttu-id="bcebd-714">反復子によりポイントされている値を取得します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-714">Retrieves the value that is pointed to by the iterator.</span></span>                                        |
-| <span data-ttu-id="bcebd-715">public void begin()</span><span class="sxs-lookup"><span data-stu-id="bcebd-715">public void begin()</span></span>                  | <span data-ttu-id="bcebd-716">反復子をリストの先頭に移動します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-716">Moves the iterator to the start of the list.</span></span>                                                   |
-| <span data-ttu-id="bcebd-717">public void next()</span><span class="sxs-lookup"><span data-stu-id="bcebd-717">public void next()</span></span>                   | <span data-ttu-id="bcebd-718">リストで次の要素に反復子を移動します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-718">Moves the iterator to the next element in the list.</span></span>                                            |
-| <span data-ttu-id="bcebd-719">public void end()</span><span class="sxs-lookup"><span data-stu-id="bcebd-719">public void end()</span></span>                    | <span data-ttu-id="bcebd-720">リストで最後の要素の後に反復子を移動します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-720">Moves the iterator past the last element in the list.</span></span>                                          |
-| <span data-ttu-id="bcebd-721">public void delete()</span><span class="sxs-lookup"><span data-stu-id="bcebd-721">public void delete()</span></span>                 | <span data-ttu-id="bcebd-722">反復子によってポイントされている要素を一覧から削除します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-722">Removes the element that is pointed to by the iterator from the list.</span></span>                          |
-| <span data-ttu-id="bcebd-723">public void new(List list)</span><span class="sxs-lookup"><span data-stu-id="bcebd-723">public void new(List list)</span></span>           | <span data-ttu-id="bcebd-724">特定のリストに対する新しい反復子を作成します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-724">Creates a new iterator for a particular list.</span></span>                                                  |
+| <span data-ttu-id="3bab6-705">public str definitionString()</span><span class="sxs-lookup"><span data-stu-id="3bab6-705">public str definitionString()</span></span>        | <span data-ttu-id="3bab6-706">反復子のタイプのテキスト表現を返します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-706">Returns a textual representation of the type of the iterator.</span></span>                                  |
+| <span data-ttu-id="3bab6-707">public AnyType insert(AnyType value)</span><span class="sxs-lookup"><span data-stu-id="3bab6-707">public AnyType insert(AnyType value)</span></span> | <span data-ttu-id="3bab6-708">反復子が現在ポイントしているリスト内の位置に新しい値を挿入します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-708">Inserts a new value at the position in the list that the iterator currently points to.</span></span>         |
+| <span data-ttu-id="3bab6-709">public boolean more()</span><span class="sxs-lookup"><span data-stu-id="3bab6-709">public boolean more()</span></span>                | <span data-ttu-id="3bab6-710">リスト反復子が有効な要素を指しているかどうかを判定します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-710">Determines whether the list iterator points to a valid element.</span></span>                                |
+| <span data-ttu-id="3bab6-711">public str toString()</span><span class="sxs-lookup"><span data-stu-id="3bab6-711">public str toString()</span></span>                | <span data-ttu-id="3bab6-712">反復子によりポイントされている現在のリスト値のテキスト形式を返します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-712">Returns a textual representation of the current list value that is pointed to by the iterator.</span></span> |
+| <span data-ttu-id="3bab6-713">public AnyType value()</span><span class="sxs-lookup"><span data-stu-id="3bab6-713">public AnyType value()</span></span>               | <span data-ttu-id="3bab6-714">反復子によりポイントされている値を取得します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-714">Retrieves the value that is pointed to by the iterator.</span></span>                                        |
+| <span data-ttu-id="3bab6-715">public void begin()</span><span class="sxs-lookup"><span data-stu-id="3bab6-715">public void begin()</span></span>                  | <span data-ttu-id="3bab6-716">反復子をリストの先頭に移動します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-716">Moves the iterator to the start of the list.</span></span>                                                   |
+| <span data-ttu-id="3bab6-717">public void next()</span><span class="sxs-lookup"><span data-stu-id="3bab6-717">public void next()</span></span>                   | <span data-ttu-id="3bab6-718">リストで次の要素に反復子を移動します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-718">Moves the iterator to the next element in the list.</span></span>                                            |
+| <span data-ttu-id="3bab6-719">public void end()</span><span class="sxs-lookup"><span data-stu-id="3bab6-719">public void end()</span></span>                    | <span data-ttu-id="3bab6-720">リストで最後の要素の後に反復子を移動します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-720">Moves the iterator past the last element in the list.</span></span>                                          |
+| <span data-ttu-id="3bab6-721">public void delete()</span><span class="sxs-lookup"><span data-stu-id="3bab6-721">public void delete()</span></span>                 | <span data-ttu-id="3bab6-722">反復子によってポイントされている要素を一覧から削除します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-722">Removes the element that is pointed to by the iterator from the list.</span></span>                          |
+| <span data-ttu-id="3bab6-723">public void new(List list)</span><span class="sxs-lookup"><span data-stu-id="3bab6-723">public void new(List list)</span></span>           | <span data-ttu-id="3bab6-724">特定のリストに対する新しい反復子を作成します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-724">Creates a new iterator for a particular list.</span></span>                                                  |
 
-### <a name="method-definitionstring"></a><span data-ttu-id="bcebd-725">メソッド definitionString</span><span class="sxs-lookup"><span data-stu-id="bcebd-725">Method definitionString</span></span>
+### <a name="method-definitionstring"></a><span data-ttu-id="3bab6-725">メソッド definitionString</span><span class="sxs-lookup"><span data-stu-id="3bab6-725">Method definitionString</span></span>
 
-<span data-ttu-id="bcebd-726">反復子のタイプのテキスト表現を返します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-726">Returns a textual representation of the type of the iterator.</span></span>
+<span data-ttu-id="3bab6-726">反復子のタイプのテキスト表現を返します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-726">Returns a textual representation of the type of the iterator.</span></span>
 
     public str definitionString()
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-727">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-727">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-727">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-727">Return Value</span></span>
 
-<span data-ttu-id="bcebd-728">反復子のタイプを含む文字列。</span><span class="sxs-lookup"><span data-stu-id="bcebd-728">A string that contains the type of the iterator.</span></span>
+<span data-ttu-id="3bab6-728">反復子のタイプを含む文字列。</span><span class="sxs-lookup"><span data-stu-id="3bab6-728">A string that contains the type of the iterator.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="bcebd-729">備考</span><span class="sxs-lookup"><span data-stu-id="bcebd-729">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="3bab6-729">備考</span><span class="sxs-lookup"><span data-stu-id="3bab6-729">Remarks</span></span>
 
-<span data-ttu-id="bcebd-730">例: int リスト反復子。</span><span class="sxs-lookup"><span data-stu-id="bcebd-730">For example: int list iterator.</span></span>
+<span data-ttu-id="3bab6-730">例: int リスト反復子。</span><span class="sxs-lookup"><span data-stu-id="3bab6-730">For example: int list iterator.</span></span>
 
-### <a name="method-insert"></a><span data-ttu-id="bcebd-731">メソッド insert</span><span class="sxs-lookup"><span data-stu-id="bcebd-731">Method insert</span></span>
+### <a name="method-insert"></a><span data-ttu-id="3bab6-731">メソッド insert</span><span class="sxs-lookup"><span data-stu-id="3bab6-731">Method insert</span></span>
 
-<span data-ttu-id="bcebd-732">反復子が現在ポイントしているリスト内の位置に新しい値を挿入します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-732">Inserts a new value at the position in the list that the iterator currently points to.</span></span>
+<span data-ttu-id="3bab6-732">反復子が現在ポイントしているリスト内の位置に新しい値を挿入します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-732">Inserts a new value at the position in the list that the iterator currently points to.</span></span>
 
     public AnyType insert(AnyType value)
 
-#### <a name="parameters"></a><span data-ttu-id="bcebd-733">パラメーター</span><span class="sxs-lookup"><span data-stu-id="bcebd-733">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="3bab6-733">パラメーター</span><span class="sxs-lookup"><span data-stu-id="3bab6-733">Parameters</span></span>
 
-<span data-ttu-id="bcebd-734">値</span><span class="sxs-lookup"><span data-stu-id="bcebd-734">value</span></span>  
-<span data-ttu-id="bcebd-735">リストに挿入する項目の値。</span><span class="sxs-lookup"><span data-stu-id="bcebd-735">The value of the item to insert into the list.</span></span>
+<span data-ttu-id="3bab6-734">値</span><span class="sxs-lookup"><span data-stu-id="3bab6-734">value</span></span>  
+<span data-ttu-id="3bab6-735">リストに挿入する項目の値。</span><span class="sxs-lookup"><span data-stu-id="3bab6-735">The value of the item to insert into the list.</span></span>
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-736">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-736">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-736">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-736">Return Value</span></span>
 
-<span data-ttu-id="bcebd-737">リストに挿入された値。</span><span class="sxs-lookup"><span data-stu-id="bcebd-737">The value that was inserted into the list.</span></span>
+<span data-ttu-id="3bab6-737">リストに挿入された値。</span><span class="sxs-lookup"><span data-stu-id="3bab6-737">The value that was inserted into the list.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="bcebd-738">備考</span><span class="sxs-lookup"><span data-stu-id="bcebd-738">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="3bab6-738">備考</span><span class="sxs-lookup"><span data-stu-id="3bab6-738">Remarks</span></span>
 
-<span data-ttu-id="bcebd-739">value パラメーターは、リストと同じタイプである必要があります。</span><span class="sxs-lookup"><span data-stu-id="bcebd-739">The value parameter must be the same type as the list.</span></span>
+<span data-ttu-id="3bab6-739">value パラメーターは、リストと同じタイプである必要があります。</span><span class="sxs-lookup"><span data-stu-id="3bab6-739">The value parameter must be the same type as the list.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="bcebd-740">例</span><span class="sxs-lookup"><span data-stu-id="bcebd-740">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="3bab6-740">例</span><span class="sxs-lookup"><span data-stu-id="3bab6-740">Examples</span></span>
 
-<span data-ttu-id="bcebd-741">次の例では、10 個のアイテムを持つリストを作成し、ListIterator.insert メソッドを使用してリスト内の 3 番目のアイテムとして新しい値を挿入します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-741">The following example creates a list that has ten items and then uses the ListIterator.insert method to insert a new value as the third item in the list.</span></span>
+<span data-ttu-id="3bab6-741">次の例では、10 個のアイテムを持つリストを作成し、ListIterator.insert メソッドを使用してリスト内の 3 番目のアイテムとして新しい値を挿入します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-741">The following example creates a list that has ten items and then uses the ListIterator.insert method to insert a new value as the third item in the list.</span></span>
 
     { 
         List il = new List(Types::Integer); 
@@ -1398,23 +1397,23 @@ ms.lasthandoff: 08/09/2018
         pause; 
     }
 
-### <a name="method-more"></a><span data-ttu-id="bcebd-742">メソッド more</span><span class="sxs-lookup"><span data-stu-id="bcebd-742">Method more</span></span>
+### <a name="method-more"></a><span data-ttu-id="3bab6-742">メソッド more</span><span class="sxs-lookup"><span data-stu-id="3bab6-742">Method more</span></span>
 
-<span data-ttu-id="bcebd-743">リスト反復子が有効な要素を指しているかどうかを判定します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-743">Determines whether the list iterator points to a valid element.</span></span>
+<span data-ttu-id="3bab6-743">リスト反復子が有効な要素を指しているかどうかを判定します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-743">Determines whether the list iterator points to a valid element.</span></span>
 
     public boolean more()
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-744">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-744">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-744">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-744">Return Value</span></span>
 
-<span data-ttu-id="bcebd-745">リスト反復子が有効な要素を指定する場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="bcebd-745">true if the list iterator points to a valid element; otherwise, false.</span></span>
+<span data-ttu-id="3bab6-745">リスト反復子が有効な要素を指定する場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="3bab6-745">true if the list iterator points to a valid element; otherwise, false.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="bcebd-746">備考</span><span class="sxs-lookup"><span data-stu-id="bcebd-746">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="3bab6-746">備考</span><span class="sxs-lookup"><span data-stu-id="3bab6-746">Remarks</span></span>
 
-<span data-ttu-id="bcebd-747">このメソッドが false を返すときに要素にアクセスしようとするとエラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-747">Attempting to access an element when this method returns false will cause an error.</span></span>
+<span data-ttu-id="3bab6-747">このメソッドが false を返すときに要素にアクセスしようとするとエラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-747">Attempting to access an element when this method returns false will cause an error.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="bcebd-748">例</span><span class="sxs-lookup"><span data-stu-id="bcebd-748">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="3bab6-748">例</span><span class="sxs-lookup"><span data-stu-id="3bab6-748">Examples</span></span>
 
-<span data-ttu-id="bcebd-749">次の例では、ListIterator.more メソッドを使用してリストに要素があるかどうかを確認し、リスト内のすべての要素の値を出力する while ループを実行します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-749">The following example uses the ListIterator.more method to check whether there are more elements in the list and then runs through the while loop, which prints the values of all the elements in the list.</span></span>
+<span data-ttu-id="3bab6-749">次の例では、ListIterator.more メソッドを使用してリストに要素があるかどうかを確認し、リスト内のすべての要素の値を出力する while ループを実行します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-749">The following example uses the ListIterator.more method to check whether there are more elements in the list and then runs through the while loop, which prints the values of all the elements in the list.</span></span>
 
     { 
         List il = new List(Types::Integer); 
@@ -1435,26 +1434,26 @@ ms.lasthandoff: 08/09/2018
         pause; 
     }
 
-### <a name="method-tostring"></a><span data-ttu-id="bcebd-750">メソッド toString</span><span class="sxs-lookup"><span data-stu-id="bcebd-750">Method toString</span></span>
+### <a name="method-tostring"></a><span data-ttu-id="3bab6-750">メソッド toString</span><span class="sxs-lookup"><span data-stu-id="3bab6-750">Method toString</span></span>
 
-<span data-ttu-id="bcebd-751">反復子によりポイントされている現在のリスト値のテキスト形式を返します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-751">Returns a textual representation of the current list value that is pointed to by the iterator.</span></span>
+<span data-ttu-id="3bab6-751">反復子によりポイントされている現在のリスト値のテキスト形式を返します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-751">Returns a textual representation of the current list value that is pointed to by the iterator.</span></span>
 
     public str toString()
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-752">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-752">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-752">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-752">Return Value</span></span>
 
-<span data-ttu-id="bcebd-753">現在の値の説明を含む文字列。</span><span class="sxs-lookup"><span data-stu-id="bcebd-753">A string that contains a description of the current value.</span></span>
+<span data-ttu-id="3bab6-753">現在の値の説明を含む文字列。</span><span class="sxs-lookup"><span data-stu-id="3bab6-753">A string that contains a description of the current value.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="bcebd-754">備考</span><span class="sxs-lookup"><span data-stu-id="bcebd-754">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="3bab6-754">備考</span><span class="sxs-lookup"><span data-stu-id="3bab6-754">Remarks</span></span>
 
-<span data-ttu-id="bcebd-755">反復子がリスト内の最初の要素を指している場合、文字列には "(開始)\[値\]" という形式の文字列が含まれます。反復子が要素を指していない場合 (つまり、more() メソッドが false を返す場合)、返される次の文字列は: (終了) になります。</span><span class="sxs-lookup"><span data-stu-id="bcebd-755">If the iterator points to the first element in the list, the string will contain an indication of this, in the form "(begin)\[value\]" If the iterator does not point to an element (that is, the more() method returns false), the following string returned is: (end).</span></span> <span data-ttu-id="bcebd-756">反復子が値をポイントしている場合、文字列は "\[値\]" で、値が要素値の文字列表現です。</span><span class="sxs-lookup"><span data-stu-id="bcebd-756">If the iterator points to a value, the string is "\[value\]", where value is a string representation of the element value.</span></span>
+<span data-ttu-id="3bab6-755">反復子がリスト内の最初の要素を指している場合、文字列には "(開始)\[値\]" という形式の文字列が含まれます。反復子が要素を指していない場合 (つまり、more() メソッドが false を返す場合)、返される次の文字列は: (終了) になります。</span><span class="sxs-lookup"><span data-stu-id="3bab6-755">If the iterator points to the first element in the list, the string will contain an indication of this, in the form "(begin)\[value\]" If the iterator does not point to an element (that is, the more() method returns false), the following string returned is: (end).</span></span> <span data-ttu-id="3bab6-756">反復子が値をポイントしている場合、文字列は "\[値\]" で、値が要素値の文字列表現です。</span><span class="sxs-lookup"><span data-stu-id="3bab6-756">If the iterator points to a value, the string is "\[value\]", where value is a string representation of the element value.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="bcebd-757">例</span><span class="sxs-lookup"><span data-stu-id="bcebd-757">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="3bab6-757">例</span><span class="sxs-lookup"><span data-stu-id="3bab6-757">Examples</span></span>
 
-<span data-ttu-id="bcebd-758">次の例では、リスト内の 2 つの値の値の説明を表示します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-758">The following example prints the following description of the values of the two values in a list:</span></span>
+<span data-ttu-id="3bab6-758">次の例では、リスト内の 2 つの値の値の説明を表示します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-758">The following example prints the following description of the values of the two values in a list:</span></span>
 
-1.  <span data-ttu-id="bcebd-759">(開始) \[2\]</span><span class="sxs-lookup"><span data-stu-id="bcebd-759">(begin) \[2\]</span></span>
-2.  <span data-ttu-id="bcebd-760">\[1\]</span><span class="sxs-lookup"><span data-stu-id="bcebd-760">\[1\]</span></span>
+1.  <span data-ttu-id="3bab6-759">(開始) \[2\]</span><span class="sxs-lookup"><span data-stu-id="3bab6-759">(begin) \[2\]</span></span>
+2.  <span data-ttu-id="3bab6-760">\[1\]</span><span class="sxs-lookup"><span data-stu-id="3bab6-760">\[1\]</span></span>
 
 <!-- -->
 
@@ -1470,39 +1469,39 @@ ms.lasthandoff: 08/09/2018
         pause; 
     }
 
-### <a name="method-value"></a><span data-ttu-id="bcebd-761">メソッド value</span><span class="sxs-lookup"><span data-stu-id="bcebd-761">Method value</span></span>
+### <a name="method-value"></a><span data-ttu-id="3bab6-761">メソッド value</span><span class="sxs-lookup"><span data-stu-id="3bab6-761">Method value</span></span>
 
-<span data-ttu-id="bcebd-762">反復子によりポイントされている値を取得します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-762">Retrieves the value that is pointed to by the iterator.</span></span>
+<span data-ttu-id="3bab6-762">反復子によりポイントされている値を取得します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-762">Retrieves the value that is pointed to by the iterator.</span></span>
 
     public AnyType value()
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-763">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-763">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-763">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-763">Return Value</span></span>
 
-<span data-ttu-id="bcebd-764">反復子によりポイントされている値。</span><span class="sxs-lookup"><span data-stu-id="bcebd-764">The value that is pointed to by the iterator.</span></span>
+<span data-ttu-id="3bab6-764">反復子によりポイントされている値。</span><span class="sxs-lookup"><span data-stu-id="3bab6-764">The value that is pointed to by the iterator.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="bcebd-765">備考</span><span class="sxs-lookup"><span data-stu-id="bcebd-765">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="3bab6-765">備考</span><span class="sxs-lookup"><span data-stu-id="3bab6-765">Remarks</span></span>
 
-<span data-ttu-id="bcebd-766">リスト要素の値を取得する前に、ListIterator.more メソッドを使用して要素が存在するかどうかをテストします。</span><span class="sxs-lookup"><span data-stu-id="bcebd-766">Before you try to retrieve the value of a list element, use the ListIterator.more method to test whether an element exists.</span></span>
+<span data-ttu-id="3bab6-766">リスト要素の値を取得する前に、ListIterator.more メソッドを使用して要素が存在するかどうかをテストします。</span><span class="sxs-lookup"><span data-stu-id="3bab6-766">Before you try to retrieve the value of a list element, use the ListIterator.more method to test whether an element exists.</span></span>
 
-### <a name="method-begin"></a><span data-ttu-id="bcebd-767">メソッド begin</span><span class="sxs-lookup"><span data-stu-id="bcebd-767">Method begin</span></span>
+### <a name="method-begin"></a><span data-ttu-id="3bab6-767">メソッド begin</span><span class="sxs-lookup"><span data-stu-id="3bab6-767">Method begin</span></span>
 
-<span data-ttu-id="bcebd-768">反復子をリストの先頭に移動します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-768">Moves the iterator to the start of the list.</span></span>
+<span data-ttu-id="3bab6-768">反復子をリストの先頭に移動します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-768">Moves the iterator to the start of the list.</span></span>
 
     public void begin()
 
-### <a name="method-next"></a><span data-ttu-id="bcebd-769">メソッド next</span><span class="sxs-lookup"><span data-stu-id="bcebd-769">Method next</span></span>
+### <a name="method-next"></a><span data-ttu-id="3bab6-769">メソッド next</span><span class="sxs-lookup"><span data-stu-id="3bab6-769">Method next</span></span>
 
-<span data-ttu-id="bcebd-770">リストで次の要素に反復子を移動します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-770">Moves the iterator to the next element in the list.</span></span>
+<span data-ttu-id="3bab6-770">リストで次の要素に反復子を移動します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-770">Moves the iterator to the next element in the list.</span></span>
 
     public void next()
 
-#### <a name="remarks"></a><span data-ttu-id="bcebd-771">備考</span><span class="sxs-lookup"><span data-stu-id="bcebd-771">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="3bab6-771">備考</span><span class="sxs-lookup"><span data-stu-id="3bab6-771">Remarks</span></span>
 
-<span data-ttu-id="bcebd-772">ListIterator.more メソッドを使用して、反復子が有効な要素を指しているかどうかを判断します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-772">Use the ListIterator.more method to determine whether the iterator points to a valid element.</span></span>
+<span data-ttu-id="3bab6-772">ListIterator.more メソッドを使用して、反復子が有効な要素を指しているかどうかを判断します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-772">Use the ListIterator.more method to determine whether the iterator points to a valid element.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="bcebd-773">例</span><span class="sxs-lookup"><span data-stu-id="bcebd-773">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="3bab6-773">例</span><span class="sxs-lookup"><span data-stu-id="3bab6-773">Examples</span></span>
 
-<span data-ttu-id="bcebd-774">次の例では、ListIterator.next メソッドを使用して、各要素の値が出力されるときにリストをスキャンします。</span><span class="sxs-lookup"><span data-stu-id="bcebd-774">The following example uses the ListIterator.next method to traverse a list as the value of each element is printed.</span></span>
+<span data-ttu-id="3bab6-774">次の例では、ListIterator.next メソッドを使用して、各要素の値が出力されるときにリストをスキャンします。</span><span class="sxs-lookup"><span data-stu-id="3bab6-774">The following example uses the ListIterator.next method to traverse a list as the value of each element is printed.</span></span>
 
     { 
         List il = new List(Types::Integer); 
@@ -1524,29 +1523,29 @@ ms.lasthandoff: 08/09/2018
         pause; 
     }
 
-### <a name="method-end"></a><span data-ttu-id="bcebd-775">メソッド end</span><span class="sxs-lookup"><span data-stu-id="bcebd-775">Method end</span></span>
+### <a name="method-end"></a><span data-ttu-id="3bab6-775">メソッド end</span><span class="sxs-lookup"><span data-stu-id="3bab6-775">Method end</span></span>
 
-<span data-ttu-id="bcebd-776">リストで最後の要素の後に反復子を移動します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-776">Moves the iterator past the last element in the list.</span></span>
+<span data-ttu-id="3bab6-776">リストで最後の要素の後に反復子を移動します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-776">Moves the iterator past the last element in the list.</span></span>
 
     public void end()
 
-#### <a name="remarks"></a><span data-ttu-id="bcebd-777">備考</span><span class="sxs-lookup"><span data-stu-id="bcebd-777">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="3bab6-777">備考</span><span class="sxs-lookup"><span data-stu-id="3bab6-777">Remarks</span></span>
 
-<span data-ttu-id="bcebd-778">このメソッドが実行すると、ListIterator.more メソッドが false に戻ります。</span><span class="sxs-lookup"><span data-stu-id="bcebd-778">After this method runs, the ListIterator.more method will return false.</span></span>
+<span data-ttu-id="3bab6-778">このメソッドが実行すると、ListIterator.more メソッドが false に戻ります。</span><span class="sxs-lookup"><span data-stu-id="3bab6-778">After this method runs, the ListIterator.more method will return false.</span></span>
 
-### <a name="method-delete"></a><span data-ttu-id="bcebd-779">メソッド delete</span><span class="sxs-lookup"><span data-stu-id="bcebd-779">Method delete</span></span>
+### <a name="method-delete"></a><span data-ttu-id="3bab6-779">メソッド delete</span><span class="sxs-lookup"><span data-stu-id="3bab6-779">Method delete</span></span>
 
-<span data-ttu-id="bcebd-780">反復子によってポイントされている要素を一覧から削除します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-780">Removes the element that is pointed to by the iterator from the list.</span></span>
+<span data-ttu-id="3bab6-780">反復子によってポイントされている要素を一覧から削除します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-780">Removes the element that is pointed to by the iterator from the list.</span></span>
 
     public void delete()
 
-#### <a name="remarks"></a><span data-ttu-id="bcebd-781">備考</span><span class="sxs-lookup"><span data-stu-id="bcebd-781">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="3bab6-781">備考</span><span class="sxs-lookup"><span data-stu-id="3bab6-781">Remarks</span></span>
 
-<span data-ttu-id="bcebd-782">反復子は、この削除の後に次の要素を指します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-782">The iterator will point to the next element after the deletion.</span></span>
+<span data-ttu-id="3bab6-782">反復子は、この削除の後に次の要素を指します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-782">The iterator will point to the next element after the deletion.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="bcebd-783">例</span><span class="sxs-lookup"><span data-stu-id="bcebd-783">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="3bab6-783">例</span><span class="sxs-lookup"><span data-stu-id="3bab6-783">Examples</span></span>
 
-<span data-ttu-id="bcebd-784">次の例では、3 つの要素を含むリストを作成し、リスト内の要素の説明を出力します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-784">The following example creates a list that contains three elements and prints a description of the elements in the list.</span></span> <span data-ttu-id="bcebd-785">一覧の最初の要素を削除し、残りの要素の説明を印刷します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-785">It then deletes the first element in the list and prints a description of the remaining elements.</span></span>
+<span data-ttu-id="3bab6-784">次の例では、3 つの要素を含むリストを作成し、リスト内の要素の説明を出力します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-784">The following example creates a list that contains three elements and prints a description of the elements in the list.</span></span> <span data-ttu-id="3bab6-785">一覧の最初の要素を削除し、残りの要素の説明を印刷します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-785">It then deletes the first element in the list and prints a description of the remaining elements.</span></span>
 
     { 
         List li = new List(Types::Integer); 
@@ -1561,497 +1560,496 @@ ms.lasthandoff: 08/09/2018
         pause; 
     }
 
-### <a name="method-new"></a><span data-ttu-id="bcebd-786">メソッド new</span><span class="sxs-lookup"><span data-stu-id="bcebd-786">Method new</span></span>
+### <a name="method-new"></a><span data-ttu-id="3bab6-786">メソッド new</span><span class="sxs-lookup"><span data-stu-id="3bab6-786">Method new</span></span>
 
-<span data-ttu-id="bcebd-787">特定のリストに対する新しい反復子を作成します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-787">Creates a new iterator for a particular list.</span></span>
+<span data-ttu-id="3bab6-787">特定のリストに対する新しい反復子を作成します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-787">Creates a new iterator for a particular list.</span></span>
 
     public void new(List list)
 
-#### <a name="parameters"></a><span data-ttu-id="bcebd-788">パラメーター</span><span class="sxs-lookup"><span data-stu-id="bcebd-788">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="3bab6-788">パラメーター</span><span class="sxs-lookup"><span data-stu-id="3bab6-788">Parameters</span></span>
 
-<span data-ttu-id="bcebd-789">リスト</span><span class="sxs-lookup"><span data-stu-id="bcebd-789">list</span></span>  
-<span data-ttu-id="bcebd-790">反復子を作成するリスト。</span><span class="sxs-lookup"><span data-stu-id="bcebd-790">The list for which to create an iterator.</span></span>
+<span data-ttu-id="3bab6-789">リスト</span><span class="sxs-lookup"><span data-stu-id="3bab6-789">list</span></span>  
+<span data-ttu-id="3bab6-790">反復子を作成するリスト。</span><span class="sxs-lookup"><span data-stu-id="3bab6-790">The list for which to create an iterator.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="bcebd-791">備考</span><span class="sxs-lookup"><span data-stu-id="bcebd-791">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="3bab6-791">備考</span><span class="sxs-lookup"><span data-stu-id="3bab6-791">Remarks</span></span>
 
-<span data-ttu-id="bcebd-792">反復子は、リストが空でない場合、リストの最初の値に配置されます。</span><span class="sxs-lookup"><span data-stu-id="bcebd-792">The iterator is positioned at the first value in the list, if the list is not empty.</span></span> <span data-ttu-id="bcebd-793">反復子および繰り返すリストは、同じクライアント/サーバー側にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="bcebd-793">Iterators and the lists that they iterate over must be on the same client/server side.</span></span>
+<span data-ttu-id="3bab6-792">反復子は、リストが空でない場合、リストの最初の値に配置されます。</span><span class="sxs-lookup"><span data-stu-id="3bab6-792">The iterator is positioned at the first value in the list, if the list is not empty.</span></span> <span data-ttu-id="3bab6-793">反復子および繰り返すリストは、同じクライアント/サーバー側にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="3bab6-793">Iterators and the lists that they iterate over must be on the same client/server side.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="bcebd-794">例</span><span class="sxs-lookup"><span data-stu-id="bcebd-794">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="3bab6-794">例</span><span class="sxs-lookup"><span data-stu-id="3bab6-794">Examples</span></span>
 
-<span data-ttu-id="bcebd-795">次の例では、整数リストの反復子を作成します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-795">The following example creates an iterator for a list of integers.</span></span>
+<span data-ttu-id="3bab6-795">次の例では、整数リストの反復子を作成します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-795">The following example creates an iterator for a list of integers.</span></span>
 
     List il = new List(types::Integer); 
     ListIterator it; 
     it = new ListIterator (il);
 
-## <a name="class-listpage"></a><span data-ttu-id="bcebd-796">クラス ListPage</span><span class="sxs-lookup"><span data-stu-id="bcebd-796">Class ListPage</span></span>
+## <a name="class-listpage"></a><span data-ttu-id="3bab6-796">クラス ListPage</span><span class="sxs-lookup"><span data-stu-id="3bab6-796">Class ListPage</span></span>
     class ListPage extends Page
 
-### <a name="remarks"></a><span data-ttu-id="bcebd-797">備考</span><span class="sxs-lookup"><span data-stu-id="bcebd-797">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="3bab6-797">備考</span><span class="sxs-lookup"><span data-stu-id="3bab6-797">Remarks</span></span>
 
-### <a name="examples"></a><span data-ttu-id="bcebd-798">例</span><span class="sxs-lookup"><span data-stu-id="bcebd-798">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="3bab6-798">例</span><span class="sxs-lookup"><span data-stu-id="3bab6-798">Examples</span></span>
 
-### <a name="methods"></a><span data-ttu-id="bcebd-799">メソッド</span><span class="sxs-lookup"><span data-stu-id="bcebd-799">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="3bab6-799">メソッド</span><span class="sxs-lookup"><span data-stu-id="3bab6-799">Methods</span></span>
 
-| <span data-ttu-id="bcebd-800">方法</span><span class="sxs-lookup"><span data-stu-id="bcebd-800">Method</span></span>                                                                      | <span data-ttu-id="bcebd-801">説明</span><span class="sxs-lookup"><span data-stu-id="bcebd-801">Description</span></span>                                       |
+| <span data-ttu-id="3bab6-800">方法</span><span class="sxs-lookup"><span data-stu-id="3bab6-800">Method</span></span>                                                                      | <span data-ttu-id="3bab6-801">説明</span><span class="sxs-lookup"><span data-stu-id="3bab6-801">Description</span></span>                                       |
 |-----------------------------------------------------------------------------|---------------------------------------------------|
-| <span data-ttu-id="bcebd-802">public str actionPaneControlParameters(str controlName, \[str parameters\])</span><span class="sxs-lookup"><span data-stu-id="bcebd-802">public str actionPaneControlParameters(str controlName, \[str parameters\])</span></span> |                                                   |
-| <span data-ttu-id="bcebd-803">public Array activeActionPaneTabNames()</span><span class="sxs-lookup"><span data-stu-id="bcebd-803">public Array activeActionPaneTabNames()</span></span>                                     | <span data-ttu-id="bcebd-804">指定された有効なタブの名前を取得します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-804">Gets the name of the specified active tab.</span></span>        |
-| <span data-ttu-id="bcebd-805">public str caption(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="bcebd-805">public str caption(\[str value\])</span></span>                                           |                                                   |
-| <span data-ttu-id="bcebd-806">public ListPageArgs listPageArgs()</span><span class="sxs-lookup"><span data-stu-id="bcebd-806">public ListPageArgs listPageArgs()</span></span>                                          |                                                   |
-| <span data-ttu-id="bcebd-807">public int listPageFieldDataField(str fieldName)</span><span class="sxs-lookup"><span data-stu-id="bcebd-807">public int listPageFieldDataField(str fieldName)</span></span>                            |                                                   |
-| <span data-ttu-id="bcebd-808">public Array listPageFieldNames()</span><span class="sxs-lookup"><span data-stu-id="bcebd-808">public Array listPageFieldNames()</span></span>                                           |                                                   |
-| <span data-ttu-id="bcebd-809">public int listPageFieldTableId(str fieldName)</span><span class="sxs-lookup"><span data-stu-id="bcebd-809">public int listPageFieldTableId(str fieldName)</span></span>                              |                                                   |
-| <span data-ttu-id="bcebd-810">public boolean listPageFieldVisible(str fieldName, \[boolean visible\])</span><span class="sxs-lookup"><span data-stu-id="bcebd-810">public boolean listPageFieldVisible(str fieldName, \[boolean visible\])</span></span>     |                                                   |
-| <span data-ttu-id="bcebd-811">public str modeledQueryName(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="bcebd-811">public str modeledQueryName(\[str value\])</span></span>                                  |                                                   |
-| <span data-ttu-id="bcebd-812">public void new()</span><span class="sxs-lookup"><span data-stu-id="bcebd-812">public void new()</span></span>                                                           | <span data-ttu-id="bcebd-813">ListPage クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-813">Initializes a new instance of the ListPage class.</span></span> |
+| <span data-ttu-id="3bab6-802">public str actionPaneControlParameters(str controlName, \[str parameters\])</span><span class="sxs-lookup"><span data-stu-id="3bab6-802">public str actionPaneControlParameters(str controlName, \[str parameters\])</span></span> |                                                   |
+| <span data-ttu-id="3bab6-803">public Array activeActionPaneTabNames()</span><span class="sxs-lookup"><span data-stu-id="3bab6-803">public Array activeActionPaneTabNames()</span></span>                                     | <span data-ttu-id="3bab6-804">指定された有効なタブの名前を取得します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-804">Gets the name of the specified active tab.</span></span>        |
+| <span data-ttu-id="3bab6-805">public str caption(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="3bab6-805">public str caption(\[str value\])</span></span>                                           |                                                   |
+| <span data-ttu-id="3bab6-806">public ListPageArgs listPageArgs()</span><span class="sxs-lookup"><span data-stu-id="3bab6-806">public ListPageArgs listPageArgs()</span></span>                                          |                                                   |
+| <span data-ttu-id="3bab6-807">public int listPageFieldDataField(str fieldName)</span><span class="sxs-lookup"><span data-stu-id="3bab6-807">public int listPageFieldDataField(str fieldName)</span></span>                            |                                                   |
+| <span data-ttu-id="3bab6-808">public Array listPageFieldNames()</span><span class="sxs-lookup"><span data-stu-id="3bab6-808">public Array listPageFieldNames()</span></span>                                           |                                                   |
+| <span data-ttu-id="3bab6-809">public int listPageFieldTableId(str fieldName)</span><span class="sxs-lookup"><span data-stu-id="3bab6-809">public int listPageFieldTableId(str fieldName)</span></span>                              |                                                   |
+| <span data-ttu-id="3bab6-810">public boolean listPageFieldVisible(str fieldName, \[boolean visible\])</span><span class="sxs-lookup"><span data-stu-id="3bab6-810">public boolean listPageFieldVisible(str fieldName, \[boolean visible\])</span></span>     |                                                   |
+| <span data-ttu-id="3bab6-811">public str modeledQueryName(\[str value\])</span><span class="sxs-lookup"><span data-stu-id="3bab6-811">public str modeledQueryName(\[str value\])</span></span>                                  |                                                   |
+| <span data-ttu-id="3bab6-812">public void new()</span><span class="sxs-lookup"><span data-stu-id="3bab6-812">public void new()</span></span>                                                           | <span data-ttu-id="3bab6-813">ListPage クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-813">Initializes a new instance of the ListPage class.</span></span> |
 
-### <a name="method-actionpanecontrolparameters"></a><span data-ttu-id="bcebd-814">メソッド actionPaneControlParameters</span><span class="sxs-lookup"><span data-stu-id="bcebd-814">Method actionPaneControlParameters</span></span>
+### <a name="method-actionpanecontrolparameters"></a><span data-ttu-id="3bab6-814">メソッド actionPaneControlParameters</span><span class="sxs-lookup"><span data-stu-id="3bab6-814">Method actionPaneControlParameters</span></span>
 
     public str actionPaneControlParameters(str controlName, [str parameters])
 
-#### <a name="parameters"></a><span data-ttu-id="bcebd-815">パラメーター</span><span class="sxs-lookup"><span data-stu-id="bcebd-815">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="3bab6-815">パラメーター</span><span class="sxs-lookup"><span data-stu-id="3bab6-815">Parameters</span></span>
 
-<span data-ttu-id="bcebd-816">controlName</span><span class="sxs-lookup"><span data-stu-id="bcebd-816">controlName</span></span>  
+<span data-ttu-id="3bab6-816">controlName</span><span class="sxs-lookup"><span data-stu-id="3bab6-816">controlName</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="bcebd-817">パラメータ</span><span class="sxs-lookup"><span data-stu-id="bcebd-817">parameters</span></span>  
+<span data-ttu-id="3bab6-817">パラメータ</span><span class="sxs-lookup"><span data-stu-id="3bab6-817">parameters</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-818">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-818">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-818">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-818">Return Value</span></span>
 
-### <a name="method-activeactionpanetabnames"></a><span data-ttu-id="bcebd-819">メソッド activeActionPaneTabNames</span><span class="sxs-lookup"><span data-stu-id="bcebd-819">Method activeActionPaneTabNames</span></span>
+### <a name="method-activeactionpanetabnames"></a><span data-ttu-id="3bab6-819">メソッド activeActionPaneTabNames</span><span class="sxs-lookup"><span data-stu-id="3bab6-819">Method activeActionPaneTabNames</span></span>
 
-<span data-ttu-id="bcebd-820">指定された有効なタブの名前を取得します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-820">Gets the name of the specified active tab.</span></span>
+<span data-ttu-id="3bab6-820">指定された有効なタブの名前を取得します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-820">Gets the name of the specified active tab.</span></span>
 
     public Array activeActionPaneTabNames()
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-821">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-821">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-821">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-821">Return Value</span></span>
 
-<span data-ttu-id="bcebd-822">アクティブなタブの名前を含む配列です。</span><span class="sxs-lookup"><span data-stu-id="bcebd-822">An array that contains the names of the active tabs.</span></span>
+<span data-ttu-id="3bab6-822">アクティブなタブの名前を含む配列です。</span><span class="sxs-lookup"><span data-stu-id="3bab6-822">An array that contains the names of the active tabs.</span></span>
 
-### <a name="method-caption"></a><span data-ttu-id="bcebd-823">メソッド caption</span><span class="sxs-lookup"><span data-stu-id="bcebd-823">Method caption</span></span>
+### <a name="method-caption"></a><span data-ttu-id="3bab6-823">メソッド caption</span><span class="sxs-lookup"><span data-stu-id="3bab6-823">Method caption</span></span>
 
     public str caption([str value])
 
-#### <a name="parameters"></a><span data-ttu-id="bcebd-824">パラメーター</span><span class="sxs-lookup"><span data-stu-id="bcebd-824">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="3bab6-824">パラメーター</span><span class="sxs-lookup"><span data-stu-id="3bab6-824">Parameters</span></span>
 
-<span data-ttu-id="bcebd-825">値</span><span class="sxs-lookup"><span data-stu-id="bcebd-825">value</span></span>  
+<span data-ttu-id="3bab6-825">値</span><span class="sxs-lookup"><span data-stu-id="3bab6-825">value</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-826">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-826">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-826">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-826">Return Value</span></span>
 
-### <a name="method-listpageargs"></a><span data-ttu-id="bcebd-827">メソッド listPageArgs</span><span class="sxs-lookup"><span data-stu-id="bcebd-827">Method listPageArgs</span></span>
+### <a name="method-listpageargs"></a><span data-ttu-id="3bab6-827">メソッド listPageArgs</span><span class="sxs-lookup"><span data-stu-id="3bab6-827">Method listPageArgs</span></span>
 
     public ListPageArgs listPageArgs()
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-828">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-828">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-828">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-828">Return Value</span></span>
 
-### <a name="method-listpagefielddatafield"></a><span data-ttu-id="bcebd-829">メソッド listPageFieldDataField</span><span class="sxs-lookup"><span data-stu-id="bcebd-829">Method listPageFieldDataField</span></span>
+### <a name="method-listpagefielddatafield"></a><span data-ttu-id="3bab6-829">メソッド listPageFieldDataField</span><span class="sxs-lookup"><span data-stu-id="3bab6-829">Method listPageFieldDataField</span></span>
 
     public int listPageFieldDataField(str fieldName)
 
-#### <a name="parameters"></a><span data-ttu-id="bcebd-830">パラメーター</span><span class="sxs-lookup"><span data-stu-id="bcebd-830">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="3bab6-830">パラメーター</span><span class="sxs-lookup"><span data-stu-id="3bab6-830">Parameters</span></span>
 
-<span data-ttu-id="bcebd-831">fieldName</span><span class="sxs-lookup"><span data-stu-id="bcebd-831">fieldName</span></span>  
+<span data-ttu-id="3bab6-831">fieldName</span><span class="sxs-lookup"><span data-stu-id="3bab6-831">fieldName</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-832">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-832">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-832">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-832">Return Value</span></span>
 
-### <a name="method-listpagefieldnames"></a><span data-ttu-id="bcebd-833">メソッド listPageFieldNames</span><span class="sxs-lookup"><span data-stu-id="bcebd-833">Method listPageFieldNames</span></span>
+### <a name="method-listpagefieldnames"></a><span data-ttu-id="3bab6-833">メソッド listPageFieldNames</span><span class="sxs-lookup"><span data-stu-id="3bab6-833">Method listPageFieldNames</span></span>
 
     public Array listPageFieldNames()
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-834">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-834">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-834">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-834">Return Value</span></span>
 
-### <a name="method-listpagefieldtableid"></a><span data-ttu-id="bcebd-835">メソッド listPageFieldTableId</span><span class="sxs-lookup"><span data-stu-id="bcebd-835">Method listPageFieldTableId</span></span>
+### <a name="method-listpagefieldtableid"></a><span data-ttu-id="3bab6-835">メソッド listPageFieldTableId</span><span class="sxs-lookup"><span data-stu-id="3bab6-835">Method listPageFieldTableId</span></span>
 
     public int listPageFieldTableId(str fieldName)
 
-#### <a name="parameters"></a><span data-ttu-id="bcebd-836">パラメーター</span><span class="sxs-lookup"><span data-stu-id="bcebd-836">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="3bab6-836">パラメーター</span><span class="sxs-lookup"><span data-stu-id="3bab6-836">Parameters</span></span>
 
-<span data-ttu-id="bcebd-837">fieldName</span><span class="sxs-lookup"><span data-stu-id="bcebd-837">fieldName</span></span>  
+<span data-ttu-id="3bab6-837">fieldName</span><span class="sxs-lookup"><span data-stu-id="3bab6-837">fieldName</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-838">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-838">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-838">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-838">Return Value</span></span>
 
-### <a name="method-listpagefieldvisible"></a><span data-ttu-id="bcebd-839">メソッド listPageFieldVisible</span><span class="sxs-lookup"><span data-stu-id="bcebd-839">Method listPageFieldVisible</span></span>
+### <a name="method-listpagefieldvisible"></a><span data-ttu-id="3bab6-839">メソッド listPageFieldVisible</span><span class="sxs-lookup"><span data-stu-id="3bab6-839">Method listPageFieldVisible</span></span>
 
     public boolean listPageFieldVisible(str fieldName, [boolean visible])
 
-#### <a name="parameters"></a><span data-ttu-id="bcebd-840">パラメーター</span><span class="sxs-lookup"><span data-stu-id="bcebd-840">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="3bab6-840">パラメーター</span><span class="sxs-lookup"><span data-stu-id="3bab6-840">Parameters</span></span>
 
-<span data-ttu-id="bcebd-841">fieldName</span><span class="sxs-lookup"><span data-stu-id="bcebd-841">fieldName</span></span>  
+<span data-ttu-id="3bab6-841">fieldName</span><span class="sxs-lookup"><span data-stu-id="3bab6-841">fieldName</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="bcebd-842">表示</span><span class="sxs-lookup"><span data-stu-id="bcebd-842">visible</span></span>  
+<span data-ttu-id="3bab6-842">表示</span><span class="sxs-lookup"><span data-stu-id="3bab6-842">visible</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-843">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-843">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-843">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-843">Return Value</span></span>
 
-### <a name="method-modeledqueryname"></a><span data-ttu-id="bcebd-844">メソッド modeledQueryName</span><span class="sxs-lookup"><span data-stu-id="bcebd-844">Method modeledQueryName</span></span>
+### <a name="method-modeledqueryname"></a><span data-ttu-id="3bab6-844">メソッド modeledQueryName</span><span class="sxs-lookup"><span data-stu-id="3bab6-844">Method modeledQueryName</span></span>
 
     public str modeledQueryName([str value])
 
-#### <a name="parameters"></a><span data-ttu-id="bcebd-845">パラメーター</span><span class="sxs-lookup"><span data-stu-id="bcebd-845">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="3bab6-845">パラメーター</span><span class="sxs-lookup"><span data-stu-id="3bab6-845">Parameters</span></span>
 
-<span data-ttu-id="bcebd-846">値</span><span class="sxs-lookup"><span data-stu-id="bcebd-846">value</span></span>  
+<span data-ttu-id="3bab6-846">値</span><span class="sxs-lookup"><span data-stu-id="3bab6-846">value</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-847">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-847">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-847">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-847">Return Value</span></span>
 
-### <a name="method-new"></a><span data-ttu-id="bcebd-848">メソッド new</span><span class="sxs-lookup"><span data-stu-id="bcebd-848">Method new</span></span>
+### <a name="method-new"></a><span data-ttu-id="3bab6-848">メソッド new</span><span class="sxs-lookup"><span data-stu-id="3bab6-848">Method new</span></span>
 
-<span data-ttu-id="bcebd-849">ListPage クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-849">Initializes a new instance of the ListPage class.</span></span>
+<span data-ttu-id="3bab6-849">ListPage クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-849">Initializes a new instance of the ListPage class.</span></span>
 
     public void new()
 
-## <a name="class-listpageargs"></a><span data-ttu-id="bcebd-850">クラス ListPageArgs</span><span class="sxs-lookup"><span data-stu-id="bcebd-850">Class ListPageArgs</span></span>
+## <a name="class-listpageargs"></a><span data-ttu-id="3bab6-850">クラス ListPageArgs</span><span class="sxs-lookup"><span data-stu-id="3bab6-850">Class ListPageArgs</span></span>
     class ListPageArgs extends PageArgs
 
-### <a name="remarks"></a><span data-ttu-id="bcebd-851">備考</span><span class="sxs-lookup"><span data-stu-id="bcebd-851">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="3bab6-851">備考</span><span class="sxs-lookup"><span data-stu-id="3bab6-851">Remarks</span></span>
 
-### <a name="examples"></a><span data-ttu-id="bcebd-852">例</span><span class="sxs-lookup"><span data-stu-id="bcebd-852">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="3bab6-852">例</span><span class="sxs-lookup"><span data-stu-id="3bab6-852">Examples</span></span>
 
-### <a name="methods"></a><span data-ttu-id="bcebd-853">メソッド</span><span class="sxs-lookup"><span data-stu-id="bcebd-853">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="3bab6-853">メソッド</span><span class="sxs-lookup"><span data-stu-id="3bab6-853">Methods</span></span>
 
-| <span data-ttu-id="bcebd-854">方法</span><span class="sxs-lookup"><span data-stu-id="bcebd-854">Method</span></span> | <span data-ttu-id="bcebd-855">説明</span><span class="sxs-lookup"><span data-stu-id="bcebd-855">Description</span></span> |
+| <span data-ttu-id="3bab6-854">方法</span><span class="sxs-lookup"><span data-stu-id="3bab6-854">Method</span></span> | <span data-ttu-id="3bab6-855">説明</span><span class="sxs-lookup"><span data-stu-id="3bab6-855">Description</span></span> |
 |--------|-------------|
 |        |             |
 
-## <a name="class-listpageinteraction"></a><span data-ttu-id="bcebd-856">クラス ListPageInteraction</span><span class="sxs-lookup"><span data-stu-id="bcebd-856">Class ListPageInteraction</span></span>
+## <a name="class-listpageinteraction"></a><span data-ttu-id="3bab6-856">クラス ListPageInteraction</span><span class="sxs-lookup"><span data-stu-id="3bab6-856">Class ListPageInteraction</span></span>
     class ListPageInteraction extends PageInteraction
 
-### <a name="remarks"></a><span data-ttu-id="bcebd-857">備考</span><span class="sxs-lookup"><span data-stu-id="bcebd-857">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="3bab6-857">備考</span><span class="sxs-lookup"><span data-stu-id="3bab6-857">Remarks</span></span>
 
-### <a name="examples"></a><span data-ttu-id="bcebd-858">例</span><span class="sxs-lookup"><span data-stu-id="bcebd-858">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="3bab6-858">例</span><span class="sxs-lookup"><span data-stu-id="3bab6-858">Examples</span></span>
 
-### <a name="methods"></a><span data-ttu-id="bcebd-859">メソッド</span><span class="sxs-lookup"><span data-stu-id="bcebd-859">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="3bab6-859">メソッド</span><span class="sxs-lookup"><span data-stu-id="3bab6-859">Methods</span></span>
 
-| <span data-ttu-id="bcebd-860">方法</span><span class="sxs-lookup"><span data-stu-id="bcebd-860">Method</span></span>                                           | <span data-ttu-id="bcebd-861">説明</span><span class="sxs-lookup"><span data-stu-id="bcebd-861">Description</span></span>                                                   |
+| <span data-ttu-id="3bab6-860">方法</span><span class="sxs-lookup"><span data-stu-id="3bab6-860">Method</span></span>                                           | <span data-ttu-id="3bab6-861">説明</span><span class="sxs-lookup"><span data-stu-id="3bab6-861">Description</span></span>                                                   |
 |--------------------------------------------------|---------------------------------------------------------------|
-| <span data-ttu-id="bcebd-862">public ListPage listPage()</span><span class="sxs-lookup"><span data-stu-id="bcebd-862">public ListPage listPage()</span></span>                       |                                                               |
-| <span data-ttu-id="bcebd-863">public void tabChanged(container activeTabNames)</span><span class="sxs-lookup"><span data-stu-id="bcebd-863">public void tabChanged(container activeTabNames)</span></span> | <span data-ttu-id="bcebd-864">アクティブなタブが変更されたときに呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="bcebd-864">Called when the active tab is changed.</span></span>                        |
-| <span data-ttu-id="bcebd-865">public void initializing()</span><span class="sxs-lookup"><span data-stu-id="bcebd-865">public void initializing()</span></span>                       |                                                               |
-| <span data-ttu-id="bcebd-866">public void initialized()</span><span class="sxs-lookup"><span data-stu-id="bcebd-866">public void initialized()</span></span>                        |                                                               |
-| <span data-ttu-id="bcebd-867">public void selectionChanged()</span><span class="sxs-lookup"><span data-stu-id="bcebd-867">public void selectionChanged()</span></span>                   |                                                               |
-| <span data-ttu-id="bcebd-868">public void initializeQuery(Query query)</span><span class="sxs-lookup"><span data-stu-id="bcebd-868">public void initializeQuery(Query query)</span></span>         |                                                               |
-| <span data-ttu-id="bcebd-869">public void new(ListPage listPage)</span><span class="sxs-lookup"><span data-stu-id="bcebd-869">public void new(ListPage listPage)</span></span>               | <span data-ttu-id="bcebd-870">listPage 上で動作する新しい PageInteraction オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-870">Creates a new PageInteraction object operating on a listPage.</span></span> |
+| <span data-ttu-id="3bab6-862">public ListPage listPage()</span><span class="sxs-lookup"><span data-stu-id="3bab6-862">public ListPage listPage()</span></span>                       |                                                               |
+| <span data-ttu-id="3bab6-863">public void tabChanged(container activeTabNames)</span><span class="sxs-lookup"><span data-stu-id="3bab6-863">public void tabChanged(container activeTabNames)</span></span> | <span data-ttu-id="3bab6-864">アクティブなタブが変更されたときに呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="3bab6-864">Called when the active tab is changed.</span></span>                        |
+| <span data-ttu-id="3bab6-865">public void initializing()</span><span class="sxs-lookup"><span data-stu-id="3bab6-865">public void initializing()</span></span>                       |                                                               |
+| <span data-ttu-id="3bab6-866">public void initialized()</span><span class="sxs-lookup"><span data-stu-id="3bab6-866">public void initialized()</span></span>                        |                                                               |
+| <span data-ttu-id="3bab6-867">public void selectionChanged()</span><span class="sxs-lookup"><span data-stu-id="3bab6-867">public void selectionChanged()</span></span>                   |                                                               |
+| <span data-ttu-id="3bab6-868">public void initializeQuery(Query query)</span><span class="sxs-lookup"><span data-stu-id="3bab6-868">public void initializeQuery(Query query)</span></span>         |                                                               |
+| <span data-ttu-id="3bab6-869">public void new(ListPage listPage)</span><span class="sxs-lookup"><span data-stu-id="3bab6-869">public void new(ListPage listPage)</span></span>               | <span data-ttu-id="3bab6-870">listPage 上で動作する新しい PageInteraction オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-870">Creates a new PageInteraction object operating on a listPage.</span></span> |
 
-### <a name="method-listpage"></a><span data-ttu-id="bcebd-871">メソッド listPage</span><span class="sxs-lookup"><span data-stu-id="bcebd-871">Method listPage</span></span>
+### <a name="method-listpage"></a><span data-ttu-id="3bab6-871">メソッド listPage</span><span class="sxs-lookup"><span data-stu-id="3bab6-871">Method listPage</span></span>
 
     public ListPage listPage()
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-872">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-872">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-872">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-872">Return Value</span></span>
 
-### <a name="method-tabchanged"></a><span data-ttu-id="bcebd-873">メソッド tabChanged</span><span class="sxs-lookup"><span data-stu-id="bcebd-873">Method tabChanged</span></span>
+### <a name="method-tabchanged"></a><span data-ttu-id="3bab6-873">メソッド tabChanged</span><span class="sxs-lookup"><span data-stu-id="3bab6-873">Method tabChanged</span></span>
 
-<span data-ttu-id="bcebd-874">アクティブなタブが変更されたときに呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="bcebd-874">Called when the active tab is changed.</span></span>
+<span data-ttu-id="3bab6-874">アクティブなタブが変更されたときに呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="3bab6-874">Called when the active tab is changed.</span></span>
 
     public void tabChanged(container activeTabNames)
 
-#### <a name="parameters"></a><span data-ttu-id="bcebd-875">パラメーター</span><span class="sxs-lookup"><span data-stu-id="bcebd-875">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="3bab6-875">パラメーター</span><span class="sxs-lookup"><span data-stu-id="3bab6-875">Parameters</span></span>
 
-<span data-ttu-id="bcebd-876">activeTabNames</span><span class="sxs-lookup"><span data-stu-id="bcebd-876">activeTabNames</span></span>  
-<span data-ttu-id="bcebd-877">アクティブなタブの名前を含むコンテナーです。</span><span class="sxs-lookup"><span data-stu-id="bcebd-877">A container containing the names of the active tabs.</span></span>
+<span data-ttu-id="3bab6-876">activeTabNames</span><span class="sxs-lookup"><span data-stu-id="3bab6-876">activeTabNames</span></span>  
+<span data-ttu-id="3bab6-877">アクティブなタブの名前を含むコンテナーです。</span><span class="sxs-lookup"><span data-stu-id="3bab6-877">A container containing the names of the active tabs.</span></span>
 
-### <a name="method-initializing"></a><span data-ttu-id="bcebd-878">メソッド initializing</span><span class="sxs-lookup"><span data-stu-id="bcebd-878">Method initializing</span></span>
+### <a name="method-initializing"></a><span data-ttu-id="3bab6-878">メソッド initializing</span><span class="sxs-lookup"><span data-stu-id="3bab6-878">Method initializing</span></span>
 
     public void initializing()
 
-### <a name="method-initialized"></a><span data-ttu-id="bcebd-879">メソッド initialized</span><span class="sxs-lookup"><span data-stu-id="bcebd-879">Method initialized</span></span>
+### <a name="method-initialized"></a><span data-ttu-id="3bab6-879">メソッド initialized</span><span class="sxs-lookup"><span data-stu-id="3bab6-879">Method initialized</span></span>
 
     public void initialized()
 
-### <a name="method-selectionchanged"></a><span data-ttu-id="bcebd-880">メソッド selectionChanged</span><span class="sxs-lookup"><span data-stu-id="bcebd-880">Method selectionChanged</span></span>
+### <a name="method-selectionchanged"></a><span data-ttu-id="3bab6-880">メソッド selectionChanged</span><span class="sxs-lookup"><span data-stu-id="3bab6-880">Method selectionChanged</span></span>
 
     public void selectionChanged()
 
-### <a name="method-initializequery"></a><span data-ttu-id="bcebd-881">メソッド initializeQuery</span><span class="sxs-lookup"><span data-stu-id="bcebd-881">Method initializeQuery</span></span>
+### <a name="method-initializequery"></a><span data-ttu-id="3bab6-881">メソッド initializeQuery</span><span class="sxs-lookup"><span data-stu-id="3bab6-881">Method initializeQuery</span></span>
 
     public void initializeQuery(Query query)
 
-#### <a name="parameters"></a><span data-ttu-id="bcebd-882">パラメーター</span><span class="sxs-lookup"><span data-stu-id="bcebd-882">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="3bab6-882">パラメーター</span><span class="sxs-lookup"><span data-stu-id="3bab6-882">Parameters</span></span>
 
-<span data-ttu-id="bcebd-883">クエリ</span><span class="sxs-lookup"><span data-stu-id="bcebd-883">query</span></span>  
+<span data-ttu-id="3bab6-883">クエリ</span><span class="sxs-lookup"><span data-stu-id="3bab6-883">query</span></span>  
 
-### <a name="method-new"></a><span data-ttu-id="bcebd-884">メソッド new</span><span class="sxs-lookup"><span data-stu-id="bcebd-884">Method new</span></span>
+### <a name="method-new"></a><span data-ttu-id="3bab6-884">メソッド new</span><span class="sxs-lookup"><span data-stu-id="3bab6-884">Method new</span></span>
 
-<span data-ttu-id="bcebd-885">listPage 上で動作する新しい PageInteraction オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-885">Creates a new PageInteraction object operating on a listPage.</span></span>
+<span data-ttu-id="3bab6-885">listPage 上で動作する新しい PageInteraction オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-885">Creates a new PageInteraction object operating on a listPage.</span></span>
 
     public void new(ListPage listPage)
 
-#### <a name="parameters"></a><span data-ttu-id="bcebd-886">パラメーター</span><span class="sxs-lookup"><span data-stu-id="bcebd-886">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="3bab6-886">パラメーター</span><span class="sxs-lookup"><span data-stu-id="3bab6-886">Parameters</span></span>
 
-<span data-ttu-id="bcebd-887">listPage</span><span class="sxs-lookup"><span data-stu-id="bcebd-887">listPage</span></span>  
-<span data-ttu-id="bcebd-888">指定した ListPage オブジェクト。</span><span class="sxs-lookup"><span data-stu-id="bcebd-888">The specified ListPage object.</span></span>
+<span data-ttu-id="3bab6-887">listPage</span><span class="sxs-lookup"><span data-stu-id="3bab6-887">listPage</span></span>  
+<span data-ttu-id="3bab6-888">指定した ListPage オブジェクト。</span><span class="sxs-lookup"><span data-stu-id="3bab6-888">The specified ListPage object.</span></span>
 
-## <a name="class-loadautocompletedataeventargs"></a><span data-ttu-id="bcebd-889">クラス LoadAutoCompleteDataEventArgs</span><span class="sxs-lookup"><span data-stu-id="bcebd-889">Class LoadAutoCompleteDataEventArgs</span></span>
+## <a name="class-loadautocompletedataeventargs"></a><span data-ttu-id="3bab6-889">クラス LoadAutoCompleteDataEventArgs</span><span class="sxs-lookup"><span data-stu-id="3bab6-889">Class LoadAutoCompleteDataEventArgs</span></span>
     class LoadAutoCompleteDataEventArgs extends Object
 
-### <a name="remarks"></a><span data-ttu-id="bcebd-890">備考</span><span class="sxs-lookup"><span data-stu-id="bcebd-890">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="3bab6-890">備考</span><span class="sxs-lookup"><span data-stu-id="3bab6-890">Remarks</span></span>
 
-### <a name="examples"></a><span data-ttu-id="bcebd-891">例</span><span class="sxs-lookup"><span data-stu-id="bcebd-891">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="3bab6-891">例</span><span class="sxs-lookup"><span data-stu-id="3bab6-891">Examples</span></span>
 
-### <a name="methods"></a><span data-ttu-id="bcebd-892">メソッド</span><span class="sxs-lookup"><span data-stu-id="bcebd-892">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="3bab6-892">メソッド</span><span class="sxs-lookup"><span data-stu-id="3bab6-892">Methods</span></span>
 
-| <span data-ttu-id="bcebd-893">方法</span><span class="sxs-lookup"><span data-stu-id="bcebd-893">Method</span></span>                                                                                          | <span data-ttu-id="bcebd-894">説明</span><span class="sxs-lookup"><span data-stu-id="bcebd-894">Description</span></span> |
+| <span data-ttu-id="3bab6-893">方法</span><span class="sxs-lookup"><span data-stu-id="3bab6-893">Method</span></span>                                                                                          | <span data-ttu-id="3bab6-894">説明</span><span class="sxs-lookup"><span data-stu-id="3bab6-894">Description</span></span> |
 |-------------------------------------------------------------------------------------------------|-------------|
-| <span data-ttu-id="bcebd-895">public AutoCompleteDataMode autoCompleteDataMode(\[AutoCompleteDataMode autoCompleteDataMode\])</span><span class="sxs-lookup"><span data-stu-id="bcebd-895">public AutoCompleteDataMode autoCompleteDataMode(\[AutoCompleteDataMode autoCompleteDataMode\])</span></span> |             |
-| <span data-ttu-id="bcebd-896">public boolean canPage(\[boolean canPage\])</span><span class="sxs-lookup"><span data-stu-id="bcebd-896">public boolean canPage(\[boolean canPage\])</span></span>                                                     |             |
-| <span data-ttu-id="bcebd-897">public str filterValue()</span><span class="sxs-lookup"><span data-stu-id="bcebd-897">public str filterValue()</span></span>                                                                        |             |
-| <span data-ttu-id="bcebd-898">public AnyType lastPagedTag()</span><span class="sxs-lookup"><span data-stu-id="bcebd-898">public AnyType lastPagedTag()</span></span>                                                                   |             |
-| <span data-ttu-id="bcebd-899">public FormSegment segment()</span><span class="sxs-lookup"><span data-stu-id="bcebd-899">public FormSegment segment()</span></span>                                                                    |             |
-| <span data-ttu-id="bcebd-900">public void addAutoCompleteData(str value, str description, AnyType tag)</span><span class="sxs-lookup"><span data-stu-id="bcebd-900">public void addAutoCompleteData(str value, str description, AnyType tag)</span></span>                        |             |
+| <span data-ttu-id="3bab6-895">public AutoCompleteDataMode autoCompleteDataMode(\[AutoCompleteDataMode autoCompleteDataMode\])</span><span class="sxs-lookup"><span data-stu-id="3bab6-895">public AutoCompleteDataMode autoCompleteDataMode(\[AutoCompleteDataMode autoCompleteDataMode\])</span></span> |             |
+| <span data-ttu-id="3bab6-896">public boolean canPage(\[boolean canPage\])</span><span class="sxs-lookup"><span data-stu-id="3bab6-896">public boolean canPage(\[boolean canPage\])</span></span>                                                     |             |
+| <span data-ttu-id="3bab6-897">public str filterValue()</span><span class="sxs-lookup"><span data-stu-id="3bab6-897">public str filterValue()</span></span>                                                                        |             |
+| <span data-ttu-id="3bab6-898">public AnyType lastPagedTag()</span><span class="sxs-lookup"><span data-stu-id="3bab6-898">public AnyType lastPagedTag()</span></span>                                                                   |             |
+| <span data-ttu-id="3bab6-899">public FormSegment segment()</span><span class="sxs-lookup"><span data-stu-id="3bab6-899">public FormSegment segment()</span></span>                                                                    |             |
+| <span data-ttu-id="3bab6-900">public void addAutoCompleteData(str value, str description, AnyType tag)</span><span class="sxs-lookup"><span data-stu-id="3bab6-900">public void addAutoCompleteData(str value, str description, AnyType tag)</span></span>                        |             |
 
-### <a name="method-autocompletedatamode"></a><span data-ttu-id="bcebd-901">メソッド autoCompleteDataMode</span><span class="sxs-lookup"><span data-stu-id="bcebd-901">Method autoCompleteDataMode</span></span>
+### <a name="method-autocompletedatamode"></a><span data-ttu-id="3bab6-901">メソッド autoCompleteDataMode</span><span class="sxs-lookup"><span data-stu-id="3bab6-901">Method autoCompleteDataMode</span></span>
 
     public AutoCompleteDataMode autoCompleteDataMode([AutoCompleteDataMode autoCompleteDataMode])
 
-#### <a name="parameters"></a><span data-ttu-id="bcebd-902">パラメーター</span><span class="sxs-lookup"><span data-stu-id="bcebd-902">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="3bab6-902">パラメーター</span><span class="sxs-lookup"><span data-stu-id="3bab6-902">Parameters</span></span>
 
-<span data-ttu-id="bcebd-903">autoCompleteDataMode</span><span class="sxs-lookup"><span data-stu-id="bcebd-903">autoCompleteDataMode</span></span>  
+<span data-ttu-id="3bab6-903">autoCompleteDataMode</span><span class="sxs-lookup"><span data-stu-id="3bab6-903">autoCompleteDataMode</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-904">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-904">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-904">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-904">Return Value</span></span>
 
-### <a name="method-canpage"></a><span data-ttu-id="bcebd-905">メソッド canPage</span><span class="sxs-lookup"><span data-stu-id="bcebd-905">Method canPage</span></span>
+### <a name="method-canpage"></a><span data-ttu-id="3bab6-905">メソッド canPage</span><span class="sxs-lookup"><span data-stu-id="3bab6-905">Method canPage</span></span>
 
     public boolean canPage([boolean canPage])
 
-#### <a name="parameters"></a><span data-ttu-id="bcebd-906">パラメーター</span><span class="sxs-lookup"><span data-stu-id="bcebd-906">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="3bab6-906">パラメーター</span><span class="sxs-lookup"><span data-stu-id="3bab6-906">Parameters</span></span>
 
-<span data-ttu-id="bcebd-907">canPage</span><span class="sxs-lookup"><span data-stu-id="bcebd-907">canPage</span></span>  
+<span data-ttu-id="3bab6-907">canPage</span><span class="sxs-lookup"><span data-stu-id="3bab6-907">canPage</span></span>  
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-908">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-908">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-908">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-908">Return Value</span></span>
 
-### <a name="method-filtervalue"></a><span data-ttu-id="bcebd-909">メソッド filterValue</span><span class="sxs-lookup"><span data-stu-id="bcebd-909">Method filterValue</span></span>
+### <a name="method-filtervalue"></a><span data-ttu-id="3bab6-909">メソッド filterValue</span><span class="sxs-lookup"><span data-stu-id="3bab6-909">Method filterValue</span></span>
 
     public str filterValue()
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-910">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-910">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-910">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-910">Return Value</span></span>
 
-### <a name="method-lastpagedtag"></a><span data-ttu-id="bcebd-911">メソッド lastPagedTag</span><span class="sxs-lookup"><span data-stu-id="bcebd-911">Method lastPagedTag</span></span>
+### <a name="method-lastpagedtag"></a><span data-ttu-id="3bab6-911">メソッド lastPagedTag</span><span class="sxs-lookup"><span data-stu-id="3bab6-911">Method lastPagedTag</span></span>
 
     public AnyType lastPagedTag()
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-912">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-912">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-912">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-912">Return Value</span></span>
 
-### <a name="method-segment"></a><span data-ttu-id="bcebd-913">メソッド segment</span><span class="sxs-lookup"><span data-stu-id="bcebd-913">Method segment</span></span>
+### <a name="method-segment"></a><span data-ttu-id="3bab6-913">メソッド segment</span><span class="sxs-lookup"><span data-stu-id="3bab6-913">Method segment</span></span>
 
     public FormSegment segment()
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-914">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-914">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-914">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-914">Return Value</span></span>
 
-### <a name="method-addautocompletedata"></a><span data-ttu-id="bcebd-915">メソッド addAutoCompleteData</span><span class="sxs-lookup"><span data-stu-id="bcebd-915">Method addAutoCompleteData</span></span>
+### <a name="method-addautocompletedata"></a><span data-ttu-id="3bab6-915">メソッド addAutoCompleteData</span><span class="sxs-lookup"><span data-stu-id="3bab6-915">Method addAutoCompleteData</span></span>
 
     public void addAutoCompleteData(str value, str description, AnyType tag)
 
-#### <a name="parameters"></a><span data-ttu-id="bcebd-916">パラメーター</span><span class="sxs-lookup"><span data-stu-id="bcebd-916">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="3bab6-916">パラメーター</span><span class="sxs-lookup"><span data-stu-id="3bab6-916">Parameters</span></span>
 
-<span data-ttu-id="bcebd-917">値</span><span class="sxs-lookup"><span data-stu-id="bcebd-917">value</span></span>  
-
-<!-- -->
-
-<span data-ttu-id="bcebd-918">description</span><span class="sxs-lookup"><span data-stu-id="bcebd-918">description</span></span>  
+<span data-ttu-id="3bab6-917">値</span><span class="sxs-lookup"><span data-stu-id="3bab6-917">value</span></span>  
 
 <!-- -->
 
-<span data-ttu-id="bcebd-919">タグ</span><span class="sxs-lookup"><span data-stu-id="bcebd-919">tag</span></span>  
+<span data-ttu-id="3bab6-918">description</span><span class="sxs-lookup"><span data-stu-id="3bab6-918">description</span></span>  
 
-## <a name="class-loginproperty"></a><span data-ttu-id="bcebd-920">クラス LoginProperty</span><span class="sxs-lookup"><span data-stu-id="bcebd-920">Class LoginProperty</span></span>
+<!-- -->
+
+<span data-ttu-id="3bab6-919">タグ</span><span class="sxs-lookup"><span data-stu-id="3bab6-919">tag</span></span>  
+
+## <a name="class-loginproperty"></a><span data-ttu-id="3bab6-920">クラス LoginProperty</span><span class="sxs-lookup"><span data-stu-id="3bab6-920">Class LoginProperty</span></span>
     class LoginProperty extends Object
 
-<span data-ttu-id="bcebd-921">LoginProperty クラスでは、OdbcConnection クラスのインスタンスにログオン情報を渡すことができます。</span><span class="sxs-lookup"><span data-stu-id="bcebd-921">The LoginProperty class enables logon information to be passed to an instance of the OdbcConnection class.</span></span>
+<span data-ttu-id="3bab6-921">LoginProperty クラスでは、OdbcConnection クラスのインスタンスにログオン情報を渡すことができます。</span><span class="sxs-lookup"><span data-stu-id="3bab6-921">The LoginProperty class enables logon information to be passed to an instance of the OdbcConnection class.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="bcebd-922">備考</span><span class="sxs-lookup"><span data-stu-id="bcebd-922">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="3bab6-922">備考</span><span class="sxs-lookup"><span data-stu-id="3bab6-922">Remarks</span></span>
 
-### <a name="examples"></a><span data-ttu-id="bcebd-923">例</span><span class="sxs-lookup"><span data-stu-id="bcebd-923">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="3bab6-923">例</span><span class="sxs-lookup"><span data-stu-id="3bab6-923">Examples</span></span>
 
-### <a name="methods"></a><span data-ttu-id="bcebd-924">メソッド</span><span class="sxs-lookup"><span data-stu-id="bcebd-924">Methods</span></span>
+### <a name="methods"></a><span data-ttu-id="3bab6-924">メソッド</span><span class="sxs-lookup"><span data-stu-id="3bab6-924">Methods</span></span>
 
-| <span data-ttu-id="bcebd-925">方法</span><span class="sxs-lookup"><span data-stu-id="bcebd-925">Method</span></span>                                                | <span data-ttu-id="bcebd-926">説明</span><span class="sxs-lookup"><span data-stu-id="bcebd-926">Description</span></span>                                                                                                                                                                                            |
+| <span data-ttu-id="3bab6-925">方法</span><span class="sxs-lookup"><span data-stu-id="3bab6-925">Method</span></span>                                                | <span data-ttu-id="3bab6-926">説明</span><span class="sxs-lookup"><span data-stu-id="3bab6-926">Description</span></span>                                                                                                                                                                                            |
 |-------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="bcebd-927">public str getDatabase()</span><span class="sxs-lookup"><span data-stu-id="bcebd-927">public str getDatabase()</span></span>                              | <span data-ttu-id="bcebd-928">LoginProperty クラスに格納されている、データベースの名前を取得します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-928">Retrieves the name of the database, as stored in the LoginProperty class.</span></span>                                                                                                                              |
-| <span data-ttu-id="bcebd-929">public str getDSN()</span><span class="sxs-lookup"><span data-stu-id="bcebd-929">public str getDSN()</span></span>                                   | <span data-ttu-id="bcebd-930">LoginProperty クラスに格納されているデータ ソース名 (DSN) を取得します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-930">Retrieves the data source name (DSN) that is stored in the LoginProperty class.</span></span>                                                                                                                        |
-| <span data-ttu-id="bcebd-931">public str getOciServiceName()</span><span class="sxs-lookup"><span data-stu-id="bcebd-931">public str getOciServiceName()</span></span>                        | <span data-ttu-id="bcebd-932">LoginProperty クラスに格納されている Oracle サービス名を取得します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-932">Retrieves the Oracle service name that is stored in the LoginProperty class.</span></span>                                                                                                                           |
-| <span data-ttu-id="bcebd-933">public str getOther()</span><span class="sxs-lookup"><span data-stu-id="bcebd-933">public str getOther()</span></span>                                 | <span data-ttu-id="bcebd-934">LoginProperty クラスに格納されているその他のログオン パラメーターを取得します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-934">Retrieves the additional logon parameters that are stored in the LoginProperty class.</span></span>                                                                                                                  |
-| <span data-ttu-id="bcebd-935">public str getServer()</span><span class="sxs-lookup"><span data-stu-id="bcebd-935">public str getServer()</span></span>                                | <span data-ttu-id="bcebd-936">LoginProperty クラスに格納されているサーバー名を取得します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-936">Retrieves the server name that is stored in the LoginProperty class.</span></span>                                                                                                                                   |
-| <span data-ttu-id="bcebd-937">public str getTcpIpPort()</span><span class="sxs-lookup"><span data-stu-id="bcebd-937">public str getTcpIpPort()</span></span>                             | <span data-ttu-id="bcebd-938">LoginProperty クラスに格納されている TCP/IP ポートを取得します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-938">Retrieves the TCP/IP port that is stored in the LoginProperty class.</span></span>                                                                                                                                   |
-| <span data-ttu-id="bcebd-939">public boolean getUsePredefinedService()</span><span class="sxs-lookup"><span data-stu-id="bcebd-939">public boolean getUsePredefinedService()</span></span>              | <span data-ttu-id="bcebd-940">loginProperty クラスが、loginProperty クラスでサーバーおよびデータベース情報を指定する代わりに、事前定義された Oracle サービスを使用するように設定されているかどうかを返します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-940">Returns whether the loginProperty class is set to use a predefined Oracle service instead of specifying the server and database information on the loginProperty class.</span></span>                                |
-| <span data-ttu-id="bcebd-941">public void setTcpIpPort(str tcpipPort)</span><span class="sxs-lookup"><span data-stu-id="bcebd-941">public void setTcpIpPort(str tcpipPort)</span></span>               | <span data-ttu-id="bcebd-942">Oracle に接続するために使用される TCP/IP ポートを指定します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-942">Specifies which TCP/IP port is used to connect to Oracle.</span></span>                                                                                                                                              |
-| <span data-ttu-id="bcebd-943">public void setDatabase(str database)</span><span class="sxs-lookup"><span data-stu-id="bcebd-943">public void setDatabase(str database)</span></span>                 | <span data-ttu-id="bcebd-944">ログイン先のデータベースの名前を設定します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-944">Sets the name of the database to log on to.</span></span>                                                                                                                                                            |
-| <span data-ttu-id="bcebd-945">public void setDSN(str datasourceName)</span><span class="sxs-lookup"><span data-stu-id="bcebd-945">public void setDSN(str datasourceName)</span></span>                | <span data-ttu-id="bcebd-946">データ ソースへのアクセスに使用される DSN を設定します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-946">Sets the DSN that is used to access the data source.</span></span>                                                                                                                                                   |
-| <span data-ttu-id="bcebd-947">public void new()</span><span class="sxs-lookup"><span data-stu-id="bcebd-947">public void new()</span></span>                                     | <span data-ttu-id="bcebd-948">LoginProperty クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-948">Initializes a new instance of the LoginProperty class.</span></span>                                                                                                                                                 |
-| <span data-ttu-id="bcebd-949">public void setOciServiceName(str ociServiceName)</span><span class="sxs-lookup"><span data-stu-id="bcebd-949">public void setOciServiceName(str ociServiceName)</span></span>     | <span data-ttu-id="bcebd-950">Oracle サービス名を指定します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-950">Specifies an Oracle service name.</span></span>                                                                                                                                                                      |
-| <span data-ttu-id="bcebd-951">public void setOther(str otherOdbcParameters)</span><span class="sxs-lookup"><span data-stu-id="bcebd-951">public void setOther(str otherOdbcParameters)</span></span>         | <span data-ttu-id="bcebd-952">LoginProperty クラスに格納されているその他の非標準ログオン パラメーターを設定します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-952">Sets additional nonstandard logon parameters that are stored in the LoginProperty class.</span></span>                                                                                                               |
-| <span data-ttu-id="bcebd-953">public void setServer(str serverName)</span><span class="sxs-lookup"><span data-stu-id="bcebd-953">public void setServer(str serverName)</span></span>                 | <span data-ttu-id="bcebd-954">データベースが置かれているサーバーの名前を設定します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-954">Sets the name of the server on which the database resides.</span></span>                                                                                                                                             |
-| <span data-ttu-id="bcebd-955">public void setUsePredefinedService(boolean newValue)</span><span class="sxs-lookup"><span data-stu-id="bcebd-955">public void setUsePredefinedService(boolean newValue)</span></span> | <span data-ttu-id="bcebd-956">接続情報に事前に定義された Oracle サービス (Oracle ネットワーク コンフィギュレーション ツールを使用して作成) を使用するかどうか、または loginProperty クラスで指定するかどうかを指定します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-956">Specifies whether to use a predefined Oracle service (created by using Oracle network configuration tools) for the connection information, or whether it will be specified in the loginProperty class.</span></span> |
+| <span data-ttu-id="3bab6-927">public str getDatabase()</span><span class="sxs-lookup"><span data-stu-id="3bab6-927">public str getDatabase()</span></span>                              | <span data-ttu-id="3bab6-928">LoginProperty クラスに格納されている、データベースの名前を取得します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-928">Retrieves the name of the database, as stored in the LoginProperty class.</span></span>                                                                                                                              |
+| <span data-ttu-id="3bab6-929">public str getDSN()</span><span class="sxs-lookup"><span data-stu-id="3bab6-929">public str getDSN()</span></span>                                   | <span data-ttu-id="3bab6-930">LoginProperty クラスに格納されているデータ ソース名 (DSN) を取得します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-930">Retrieves the data source name (DSN) that is stored in the LoginProperty class.</span></span>                                                                                                                        |
+| <span data-ttu-id="3bab6-931">public str getOciServiceName()</span><span class="sxs-lookup"><span data-stu-id="3bab6-931">public str getOciServiceName()</span></span>                        | <span data-ttu-id="3bab6-932">LoginProperty クラスに格納されている Oracle サービス名を取得します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-932">Retrieves the Oracle service name that is stored in the LoginProperty class.</span></span>                                                                                                                           |
+| <span data-ttu-id="3bab6-933">public str getOther()</span><span class="sxs-lookup"><span data-stu-id="3bab6-933">public str getOther()</span></span>                                 | <span data-ttu-id="3bab6-934">LoginProperty クラスに格納されているその他のログオン パラメーターを取得します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-934">Retrieves the additional logon parameters that are stored in the LoginProperty class.</span></span>                                                                                                                  |
+| <span data-ttu-id="3bab6-935">public str getServer()</span><span class="sxs-lookup"><span data-stu-id="3bab6-935">public str getServer()</span></span>                                | <span data-ttu-id="3bab6-936">LoginProperty クラスに格納されているサーバー名を取得します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-936">Retrieves the server name that is stored in the LoginProperty class.</span></span>                                                                                                                                   |
+| <span data-ttu-id="3bab6-937">public str getTcpIpPort()</span><span class="sxs-lookup"><span data-stu-id="3bab6-937">public str getTcpIpPort()</span></span>                             | <span data-ttu-id="3bab6-938">LoginProperty クラスに格納されている TCP/IP ポートを取得します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-938">Retrieves the TCP/IP port that is stored in the LoginProperty class.</span></span>                                                                                                                                   |
+| <span data-ttu-id="3bab6-939">public boolean getUsePredefinedService()</span><span class="sxs-lookup"><span data-stu-id="3bab6-939">public boolean getUsePredefinedService()</span></span>              | <span data-ttu-id="3bab6-940">loginProperty クラスが、loginProperty クラスでサーバーおよびデータベース情報を指定する代わりに、事前定義された Oracle サービスを使用するように設定されているかどうかを返します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-940">Returns whether the loginProperty class is set to use a predefined Oracle service instead of specifying the server and database information on the loginProperty class.</span></span>                                |
+| <span data-ttu-id="3bab6-941">public void setTcpIpPort(str tcpipPort)</span><span class="sxs-lookup"><span data-stu-id="3bab6-941">public void setTcpIpPort(str tcpipPort)</span></span>               | <span data-ttu-id="3bab6-942">Oracle に接続するために使用される TCP/IP ポートを指定します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-942">Specifies which TCP/IP port is used to connect to Oracle.</span></span>                                                                                                                                              |
+| <span data-ttu-id="3bab6-943">public void setDatabase(str database)</span><span class="sxs-lookup"><span data-stu-id="3bab6-943">public void setDatabase(str database)</span></span>                 | <span data-ttu-id="3bab6-944">ログイン先のデータベースの名前を設定します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-944">Sets the name of the database to log on to.</span></span>                                                                                                                                                            |
+| <span data-ttu-id="3bab6-945">public void setDSN(str datasourceName)</span><span class="sxs-lookup"><span data-stu-id="3bab6-945">public void setDSN(str datasourceName)</span></span>                | <span data-ttu-id="3bab6-946">データ ソースへのアクセスに使用される DSN を設定します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-946">Sets the DSN that is used to access the data source.</span></span>                                                                                                                                                   |
+| <span data-ttu-id="3bab6-947">public void new()</span><span class="sxs-lookup"><span data-stu-id="3bab6-947">public void new()</span></span>                                     | <span data-ttu-id="3bab6-948">LoginProperty クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-948">Initializes a new instance of the LoginProperty class.</span></span>                                                                                                                                                 |
+| <span data-ttu-id="3bab6-949">public void setOciServiceName(str ociServiceName)</span><span class="sxs-lookup"><span data-stu-id="3bab6-949">public void setOciServiceName(str ociServiceName)</span></span>     | <span data-ttu-id="3bab6-950">Oracle サービス名を指定します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-950">Specifies an Oracle service name.</span></span>                                                                                                                                                                      |
+| <span data-ttu-id="3bab6-951">public void setOther(str otherOdbcParameters)</span><span class="sxs-lookup"><span data-stu-id="3bab6-951">public void setOther(str otherOdbcParameters)</span></span>         | <span data-ttu-id="3bab6-952">LoginProperty クラスに格納されているその他の非標準ログオン パラメーターを設定します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-952">Sets additional nonstandard logon parameters that are stored in the LoginProperty class.</span></span>                                                                                                               |
+| <span data-ttu-id="3bab6-953">public void setServer(str serverName)</span><span class="sxs-lookup"><span data-stu-id="3bab6-953">public void setServer(str serverName)</span></span>                 | <span data-ttu-id="3bab6-954">データベースが置かれているサーバーの名前を設定します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-954">Sets the name of the server on which the database resides.</span></span>                                                                                                                                             |
+| <span data-ttu-id="3bab6-955">public void setUsePredefinedService(boolean newValue)</span><span class="sxs-lookup"><span data-stu-id="3bab6-955">public void setUsePredefinedService(boolean newValue)</span></span> | <span data-ttu-id="3bab6-956">接続情報に事前に定義された Oracle サービス (Oracle ネットワーク コンフィギュレーション ツールを使用して作成) を使用するかどうか、または loginProperty クラスで指定するかどうかを指定します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-956">Specifies whether to use a predefined Oracle service (created by using Oracle network configuration tools) for the connection information, or whether it will be specified in the loginProperty class.</span></span> |
 
-### <a name="method-getdatabase"></a><span data-ttu-id="bcebd-957">メソッド getDatabase</span><span class="sxs-lookup"><span data-stu-id="bcebd-957">Method getDatabase</span></span>
+### <a name="method-getdatabase"></a><span data-ttu-id="3bab6-957">メソッド getDatabase</span><span class="sxs-lookup"><span data-stu-id="3bab6-957">Method getDatabase</span></span>
 
-<span data-ttu-id="bcebd-958">LoginProperty クラスに格納されている、データベースの名前を取得します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-958">Retrieves the name of the database, as stored in the LoginProperty class.</span></span>
+<span data-ttu-id="3bab6-958">LoginProperty クラスに格納されている、データベースの名前を取得します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-958">Retrieves the name of the database, as stored in the LoginProperty class.</span></span>
 
     public str getDatabase()
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-959">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-959">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-959">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-959">Return Value</span></span>
 
-<span data-ttu-id="bcebd-960">データベースの名前です。</span><span class="sxs-lookup"><span data-stu-id="bcebd-960">The name of the database.</span></span>
+<span data-ttu-id="3bab6-960">データベースの名前です。</span><span class="sxs-lookup"><span data-stu-id="3bab6-960">The name of the database.</span></span>
 
-### <a name="method-getdsn"></a><span data-ttu-id="bcebd-961">メソッド getDSN</span><span class="sxs-lookup"><span data-stu-id="bcebd-961">Method getDSN</span></span>
+### <a name="method-getdsn"></a><span data-ttu-id="3bab6-961">メソッド getDSN</span><span class="sxs-lookup"><span data-stu-id="3bab6-961">Method getDSN</span></span>
 
-<span data-ttu-id="bcebd-962">LoginProperty クラスに格納されているデータ ソース名 (DSN) を取得します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-962">Retrieves the data source name (DSN) that is stored in the LoginProperty class.</span></span>
+<span data-ttu-id="3bab6-962">LoginProperty クラスに格納されているデータ ソース名 (DSN) を取得します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-962">Retrieves the data source name (DSN) that is stored in the LoginProperty class.</span></span>
 
     public str getDSN()
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-963">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-963">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-963">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-963">Return Value</span></span>
 
-<span data-ttu-id="bcebd-964">DSN。</span><span class="sxs-lookup"><span data-stu-id="bcebd-964">The DSN.</span></span>
+<span data-ttu-id="3bab6-964">DSN。</span><span class="sxs-lookup"><span data-stu-id="3bab6-964">The DSN.</span></span>
 
-### <a name="method-getociservicename"></a><span data-ttu-id="bcebd-965">メソッド getOciServiceName</span><span class="sxs-lookup"><span data-stu-id="bcebd-965">Method getOciServiceName</span></span>
+### <a name="method-getociservicename"></a><span data-ttu-id="3bab6-965">メソッド getOciServiceName</span><span class="sxs-lookup"><span data-stu-id="3bab6-965">Method getOciServiceName</span></span>
 
-<span data-ttu-id="bcebd-966">LoginProperty クラスに格納されている Oracle サービス名を取得します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-966">Retrieves the Oracle service name that is stored in the LoginProperty class.</span></span>
+<span data-ttu-id="3bab6-966">LoginProperty クラスに格納されている Oracle サービス名を取得します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-966">Retrieves the Oracle service name that is stored in the LoginProperty class.</span></span>
 
     public str getOciServiceName()
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-967">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-967">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-967">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-967">Return Value</span></span>
 
-<span data-ttu-id="bcebd-968">Oracle サービス名。</span><span class="sxs-lookup"><span data-stu-id="bcebd-968">The Oracle service name.</span></span>
+<span data-ttu-id="3bab6-968">Oracle サービス名。</span><span class="sxs-lookup"><span data-stu-id="3bab6-968">The Oracle service name.</span></span>
 
-### <a name="method-getother"></a><span data-ttu-id="bcebd-969">メソッド getOther</span><span class="sxs-lookup"><span data-stu-id="bcebd-969">Method getOther</span></span>
+### <a name="method-getother"></a><span data-ttu-id="3bab6-969">メソッド getOther</span><span class="sxs-lookup"><span data-stu-id="3bab6-969">Method getOther</span></span>
 
-<span data-ttu-id="bcebd-970">LoginProperty クラスに格納されているその他のログオン パラメーターを取得します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-970">Retrieves the additional logon parameters that are stored in the LoginProperty class.</span></span>
+<span data-ttu-id="3bab6-970">LoginProperty クラスに格納されているその他のログオン パラメーターを取得します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-970">Retrieves the additional logon parameters that are stored in the LoginProperty class.</span></span>
 
     public str getOther()
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-971">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-971">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-971">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-971">Return Value</span></span>
 
-<span data-ttu-id="bcebd-972">文字列としての追加ログオン パラメーター。</span><span class="sxs-lookup"><span data-stu-id="bcebd-972">The additional logon parameters as a string.</span></span>
+<span data-ttu-id="3bab6-972">文字列としての追加ログオン パラメーター。</span><span class="sxs-lookup"><span data-stu-id="3bab6-972">The additional logon parameters as a string.</span></span>
 
-### <a name="method-getserver"></a><span data-ttu-id="bcebd-973">メソッド getServer</span><span class="sxs-lookup"><span data-stu-id="bcebd-973">Method getServer</span></span>
+### <a name="method-getserver"></a><span data-ttu-id="3bab6-973">メソッド getServer</span><span class="sxs-lookup"><span data-stu-id="3bab6-973">Method getServer</span></span>
 
-<span data-ttu-id="bcebd-974">LoginProperty クラスに格納されているサーバー名を取得します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-974">Retrieves the server name that is stored in the LoginProperty class.</span></span>
+<span data-ttu-id="3bab6-974">LoginProperty クラスに格納されているサーバー名を取得します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-974">Retrieves the server name that is stored in the LoginProperty class.</span></span>
 
     public str getServer()
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-975">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-975">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-975">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-975">Return Value</span></span>
 
-<span data-ttu-id="bcebd-976">サーバーの名前。</span><span class="sxs-lookup"><span data-stu-id="bcebd-976">The name of the server.</span></span>
+<span data-ttu-id="3bab6-976">サーバーの名前。</span><span class="sxs-lookup"><span data-stu-id="3bab6-976">The name of the server.</span></span>
 
-### <a name="method-gettcpipport"></a><span data-ttu-id="bcebd-977">メソッド getTcpIpPort</span><span class="sxs-lookup"><span data-stu-id="bcebd-977">Method getTcpIpPort</span></span>
+### <a name="method-gettcpipport"></a><span data-ttu-id="3bab6-977">メソッド getTcpIpPort</span><span class="sxs-lookup"><span data-stu-id="3bab6-977">Method getTcpIpPort</span></span>
 
-<span data-ttu-id="bcebd-978">LoginProperty クラスに格納されている TCP/IP ポートを取得します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-978">Retrieves the TCP/IP port that is stored in the LoginProperty class.</span></span>
+<span data-ttu-id="3bab6-978">LoginProperty クラスに格納されている TCP/IP ポートを取得します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-978">Retrieves the TCP/IP port that is stored in the LoginProperty class.</span></span>
 
     public str getTcpIpPort()
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-979">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-979">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-979">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-979">Return Value</span></span>
 
-<span data-ttu-id="bcebd-980">TCP/IP ポート。</span><span class="sxs-lookup"><span data-stu-id="bcebd-980">The TCP/IP port.</span></span>
+<span data-ttu-id="3bab6-980">TCP/IP ポート。</span><span class="sxs-lookup"><span data-stu-id="3bab6-980">The TCP/IP port.</span></span>
 
-### <a name="method-getusepredefinedservice"></a><span data-ttu-id="bcebd-981">メソッド getUsePredefinedService</span><span class="sxs-lookup"><span data-stu-id="bcebd-981">Method getUsePredefinedService</span></span>
+### <a name="method-getusepredefinedservice"></a><span data-ttu-id="3bab6-981">メソッド getUsePredefinedService</span><span class="sxs-lookup"><span data-stu-id="3bab6-981">Method getUsePredefinedService</span></span>
 
-<span data-ttu-id="bcebd-982">loginProperty クラスが、loginProperty クラスでサーバーおよびデータベース情報を指定する代わりに、事前定義された Oracle サービスを使用するように設定されているかどうかを返します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-982">Returns whether the loginProperty class is set to use a predefined Oracle service instead of specifying the server and database information on the loginProperty class.</span></span>
+<span data-ttu-id="3bab6-982">loginProperty クラスが、loginProperty クラスでサーバーおよびデータベース情報を指定する代わりに、事前定義された Oracle サービスを使用するように設定されているかどうかを返します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-982">Returns whether the loginProperty class is set to use a predefined Oracle service instead of specifying the server and database information on the loginProperty class.</span></span>
 
     public boolean getUsePredefinedService()
 
-#### <a name="return-value"></a><span data-ttu-id="bcebd-983">戻り値</span><span class="sxs-lookup"><span data-stu-id="bcebd-983">Return Value</span></span>
+#### <a name="return-value"></a><span data-ttu-id="3bab6-983">戻り値</span><span class="sxs-lookup"><span data-stu-id="3bab6-983">Return Value</span></span>
 
-<span data-ttu-id="bcebd-984">定義済みの Oracle サービスが接続に使用される場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="bcebd-984">true if a predefined Oracle service is used to connect; otherwise, false.</span></span>
+<span data-ttu-id="3bab6-984">定義済みの Oracle サービスが接続に使用される場合は true。それ以外の場合は、false。</span><span class="sxs-lookup"><span data-stu-id="3bab6-984">true if a predefined Oracle service is used to connect; otherwise, false.</span></span>
 
-### <a name="method-settcpipport"></a><span data-ttu-id="bcebd-985">メソッド setTcpIpPort</span><span class="sxs-lookup"><span data-stu-id="bcebd-985">Method setTcpIpPort</span></span>
+### <a name="method-settcpipport"></a><span data-ttu-id="3bab6-985">メソッド setTcpIpPort</span><span class="sxs-lookup"><span data-stu-id="3bab6-985">Method setTcpIpPort</span></span>
 
-<span data-ttu-id="bcebd-986">Oracle に接続するために使用される TCP/IP ポートを指定します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-986">Specifies which TCP/IP port is used to connect to Oracle.</span></span>
+<span data-ttu-id="3bab6-986">Oracle に接続するために使用される TCP/IP ポートを指定します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-986">Specifies which TCP/IP port is used to connect to Oracle.</span></span>
 
     public void setTcpIpPort(str tcpipPort)
 
-#### <a name="parameters"></a><span data-ttu-id="bcebd-987">パラメーター</span><span class="sxs-lookup"><span data-stu-id="bcebd-987">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="3bab6-987">パラメーター</span><span class="sxs-lookup"><span data-stu-id="3bab6-987">Parameters</span></span>
 
-<span data-ttu-id="bcebd-988">tcpipPort</span><span class="sxs-lookup"><span data-stu-id="bcebd-988">tcpipPort</span></span>  
-<span data-ttu-id="bcebd-989">使用する TCP/IP ポート。</span><span class="sxs-lookup"><span data-stu-id="bcebd-989">The TCP/IP port to use.</span></span>
+<span data-ttu-id="3bab6-988">tcpipPort</span><span class="sxs-lookup"><span data-stu-id="3bab6-988">tcpipPort</span></span>  
+<span data-ttu-id="3bab6-989">使用する TCP/IP ポート。</span><span class="sxs-lookup"><span data-stu-id="3bab6-989">The TCP/IP port to use.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="bcebd-990">備考</span><span class="sxs-lookup"><span data-stu-id="bcebd-990">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="3bab6-990">備考</span><span class="sxs-lookup"><span data-stu-id="3bab6-990">Remarks</span></span>
 
-<span data-ttu-id="bcebd-991">既定のポートは 1521 です。</span><span class="sxs-lookup"><span data-stu-id="bcebd-991">The default port is 1521.</span></span>
+<span data-ttu-id="3bab6-991">既定のポートは 1521 です。</span><span class="sxs-lookup"><span data-stu-id="3bab6-991">The default port is 1521.</span></span>
 
-### <a name="method-setdatabase"></a><span data-ttu-id="bcebd-992">メソッド setDatabase</span><span class="sxs-lookup"><span data-stu-id="bcebd-992">Method setDatabase</span></span>
+### <a name="method-setdatabase"></a><span data-ttu-id="3bab6-992">メソッド setDatabase</span><span class="sxs-lookup"><span data-stu-id="3bab6-992">Method setDatabase</span></span>
 
-<span data-ttu-id="bcebd-993">ログイン先のデータベースの名前を設定します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-993">Sets the name of the database to log on to.</span></span>
+<span data-ttu-id="3bab6-993">ログイン先のデータベースの名前を設定します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-993">Sets the name of the database to log on to.</span></span>
 
     public void setDatabase(str database)
 
-#### <a name="parameters"></a><span data-ttu-id="bcebd-994">パラメーター</span><span class="sxs-lookup"><span data-stu-id="bcebd-994">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="3bab6-994">パラメーター</span><span class="sxs-lookup"><span data-stu-id="3bab6-994">Parameters</span></span>
 
-<span data-ttu-id="bcebd-995">データベース</span><span class="sxs-lookup"><span data-stu-id="bcebd-995">database</span></span>  
-<span data-ttu-id="bcebd-996">データベースの名前です。</span><span class="sxs-lookup"><span data-stu-id="bcebd-996">The name of the database.</span></span>
+<span data-ttu-id="3bab6-995">データベース</span><span class="sxs-lookup"><span data-stu-id="3bab6-995">database</span></span>  
+<span data-ttu-id="3bab6-996">データベースの名前です。</span><span class="sxs-lookup"><span data-stu-id="3bab6-996">The name of the database.</span></span>
 
-### <a name="method-setdsn"></a><span data-ttu-id="bcebd-997">メソッド setDSN</span><span class="sxs-lookup"><span data-stu-id="bcebd-997">Method setDSN</span></span>
+### <a name="method-setdsn"></a><span data-ttu-id="3bab6-997">メソッド setDSN</span><span class="sxs-lookup"><span data-stu-id="3bab6-997">Method setDSN</span></span>
 
-<span data-ttu-id="bcebd-998">データ ソースへのアクセスに使用される DSN を設定します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-998">Sets the DSN that is used to access the data source.</span></span>
+<span data-ttu-id="3bab6-998">データ ソースへのアクセスに使用される DSN を設定します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-998">Sets the DSN that is used to access the data source.</span></span>
 
     public void setDSN(str datasourceName)
 
-#### <a name="parameters"></a><span data-ttu-id="bcebd-999">パラメーター</span><span class="sxs-lookup"><span data-stu-id="bcebd-999">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="3bab6-999">パラメーター</span><span class="sxs-lookup"><span data-stu-id="3bab6-999">Parameters</span></span>
 
-<span data-ttu-id="bcebd-1000">datasourceName</span><span class="sxs-lookup"><span data-stu-id="bcebd-1000">datasourceName</span></span>  
-<span data-ttu-id="bcebd-1001">データ ソースの名前。</span><span class="sxs-lookup"><span data-stu-id="bcebd-1001">The name of the data source.</span></span>
+<span data-ttu-id="3bab6-1000">datasourceName</span><span class="sxs-lookup"><span data-stu-id="3bab6-1000">datasourceName</span></span>  
+<span data-ttu-id="3bab6-1001">データ ソースの名前。</span><span class="sxs-lookup"><span data-stu-id="3bab6-1001">The name of the data source.</span></span>
 
-### <a name="method-new"></a><span data-ttu-id="bcebd-1002">メソッド new</span><span class="sxs-lookup"><span data-stu-id="bcebd-1002">Method new</span></span>
+### <a name="method-new"></a><span data-ttu-id="3bab6-1002">メソッド new</span><span class="sxs-lookup"><span data-stu-id="3bab6-1002">Method new</span></span>
 
-<span data-ttu-id="bcebd-1003">LoginProperty クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-1003">Initializes a new instance of the LoginProperty class.</span></span>
+<span data-ttu-id="3bab6-1003">LoginProperty クラスの新しいインスタンスを初期化します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-1003">Initializes a new instance of the LoginProperty class.</span></span>
 
     public void new()
 
-### <a name="method-setociservicename"></a><span data-ttu-id="bcebd-1004">メソッド setOciServiceName</span><span class="sxs-lookup"><span data-stu-id="bcebd-1004">Method setOciServiceName</span></span>
+### <a name="method-setociservicename"></a><span data-ttu-id="3bab6-1004">メソッド setOciServiceName</span><span class="sxs-lookup"><span data-stu-id="3bab6-1004">Method setOciServiceName</span></span>
 
-<span data-ttu-id="bcebd-1005">Oracle サービス名を指定します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-1005">Specifies an Oracle service name.</span></span>
+<span data-ttu-id="3bab6-1005">Oracle サービス名を指定します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-1005">Specifies an Oracle service name.</span></span>
 
     public void setOciServiceName(str ociServiceName)
 
-#### <a name="parameters"></a><span data-ttu-id="bcebd-1006">パラメーター</span><span class="sxs-lookup"><span data-stu-id="bcebd-1006">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="3bab6-1006">パラメーター</span><span class="sxs-lookup"><span data-stu-id="3bab6-1006">Parameters</span></span>
 
-<span data-ttu-id="bcebd-1007">ociServiceName</span><span class="sxs-lookup"><span data-stu-id="bcebd-1007">ociServiceName</span></span>  
-<span data-ttu-id="bcebd-1008">サービスの名前。</span><span class="sxs-lookup"><span data-stu-id="bcebd-1008">The name of the service.</span></span>
+<span data-ttu-id="3bab6-1007">ociServiceName</span><span class="sxs-lookup"><span data-stu-id="3bab6-1007">ociServiceName</span></span>  
+<span data-ttu-id="3bab6-1008">サービスの名前。</span><span class="sxs-lookup"><span data-stu-id="3bab6-1008">The name of the service.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="bcebd-1009">備考</span><span class="sxs-lookup"><span data-stu-id="bcebd-1009">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="3bab6-1009">備考</span><span class="sxs-lookup"><span data-stu-id="3bab6-1009">Remarks</span></span>
 
-<span data-ttu-id="bcebd-1010">このメソッドは、loginProperty クラスが事前定義済みの Oracle サービスを使用するように設定されていない場合に使用されます。</span><span class="sxs-lookup"><span data-stu-id="bcebd-1010">This method is used when the loginProperty class is not set to use a predefined Oracle service.</span></span>
+<span data-ttu-id="3bab6-1010">このメソッドは、loginProperty クラスが事前定義済みの Oracle サービスを使用するように設定されていない場合に使用されます。</span><span class="sxs-lookup"><span data-stu-id="3bab6-1010">This method is used when the loginProperty class is not set to use a predefined Oracle service.</span></span>
 
-### <a name="method-setother"></a><span data-ttu-id="bcebd-1011">メソッド setOther</span><span class="sxs-lookup"><span data-stu-id="bcebd-1011">Method setOther</span></span>
+### <a name="method-setother"></a><span data-ttu-id="3bab6-1011">メソッド setOther</span><span class="sxs-lookup"><span data-stu-id="3bab6-1011">Method setOther</span></span>
 
-<span data-ttu-id="bcebd-1012">LoginProperty クラスに格納されているその他の非標準ログオン パラメーターを設定します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-1012">Sets additional nonstandard logon parameters that are stored in the LoginProperty class.</span></span>
+<span data-ttu-id="3bab6-1012">LoginProperty クラスに格納されているその他の非標準ログオン パラメーターを設定します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-1012">Sets additional nonstandard logon parameters that are stored in the LoginProperty class.</span></span>
 
     public void setOther(str otherOdbcParameters)
 
-#### <a name="parameters"></a><span data-ttu-id="bcebd-1013">パラメーター</span><span class="sxs-lookup"><span data-stu-id="bcebd-1013">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="3bab6-1013">パラメーター</span><span class="sxs-lookup"><span data-stu-id="3bab6-1013">Parameters</span></span>
 
-<span data-ttu-id="bcebd-1014">otherOdbcParameters</span><span class="sxs-lookup"><span data-stu-id="bcebd-1014">otherOdbcParameters</span></span>  
-<span data-ttu-id="bcebd-1015">ODBC 書式に設定された追加のパラメータ。</span><span class="sxs-lookup"><span data-stu-id="bcebd-1015">The additional ODBC-formatted parameters.</span></span>
+<span data-ttu-id="3bab6-1014">otherOdbcParameters</span><span class="sxs-lookup"><span data-stu-id="3bab6-1014">otherOdbcParameters</span></span>  
+<span data-ttu-id="3bab6-1015">ODBC 書式に設定された追加のパラメータ。</span><span class="sxs-lookup"><span data-stu-id="3bab6-1015">The additional ODBC-formatted parameters.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="bcebd-1016">備考</span><span class="sxs-lookup"><span data-stu-id="bcebd-1016">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="3bab6-1016">備考</span><span class="sxs-lookup"><span data-stu-id="3bab6-1016">Remarks</span></span>
 
-<span data-ttu-id="bcebd-1017">このメソッドは、使用するデータソースに追加の非標準のパラメーターが必要な場合にのみ使用してください。</span><span class="sxs-lookup"><span data-stu-id="bcebd-1017">This method should be used only if the data source that you want to use requires some additional, nonstandard parameters.</span></span> <span data-ttu-id="bcebd-1018">パラメーターは、標準の ODBC 形式の &lt;parm1&gt;=&lt;value1&gt;;&lt;parm2&gt;=&lt;value2&gt; で、たとえば、MODE=1;PATCH=32 で適用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="bcebd-1018">The parameters must be applied in the standard ODBC format: &lt;parm1&gt;=&lt;value1&gt;;&lt;parm2&gt;=&lt;value2&gt;,... For example: MODE=1;PATCH=32</span></span>
+<span data-ttu-id="3bab6-1017">このメソッドは、使用するデータソースに追加の非標準のパラメーターが必要な場合にのみ使用してください。</span><span class="sxs-lookup"><span data-stu-id="3bab6-1017">This method should be used only if the data source that you want to use requires some additional, nonstandard parameters.</span></span> <span data-ttu-id="3bab6-1018">パラメーターは、標準の ODBC 形式の &lt;parm1&gt;=&lt;value1&gt;;&lt;parm2&gt;=&lt;value2&gt; で、たとえば、MODE=1;PATCH=32 で適用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="3bab6-1018">The parameters must be applied in the standard ODBC format: &lt;parm1&gt;=&lt;value1&gt;;&lt;parm2&gt;=&lt;value2&gt;,... For example: MODE=1;PATCH=32</span></span>
 
-### <a name="method-setserver"></a><span data-ttu-id="bcebd-1019">メソッド setServer</span><span class="sxs-lookup"><span data-stu-id="bcebd-1019">Method setServer</span></span>
+### <a name="method-setserver"></a><span data-ttu-id="3bab6-1019">メソッド setServer</span><span class="sxs-lookup"><span data-stu-id="3bab6-1019">Method setServer</span></span>
 
-<span data-ttu-id="bcebd-1020">データベースが置かれているサーバーの名前を設定します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-1020">Sets the name of the server on which the database resides.</span></span>
+<span data-ttu-id="3bab6-1020">データベースが置かれているサーバーの名前を設定します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-1020">Sets the name of the server on which the database resides.</span></span>
 
     public void setServer(str serverName)
 
-#### <a name="parameters"></a><span data-ttu-id="bcebd-1021">パラメーター</span><span class="sxs-lookup"><span data-stu-id="bcebd-1021">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="3bab6-1021">パラメーター</span><span class="sxs-lookup"><span data-stu-id="3bab6-1021">Parameters</span></span>
 
-<span data-ttu-id="bcebd-1022">serverName</span><span class="sxs-lookup"><span data-stu-id="bcebd-1022">serverName</span></span>  
-<span data-ttu-id="bcebd-1023">データベースがあるサーバーの名前。</span><span class="sxs-lookup"><span data-stu-id="bcebd-1023">The name of the server where the database is located.</span></span>
+<span data-ttu-id="3bab6-1022">serverName</span><span class="sxs-lookup"><span data-stu-id="3bab6-1022">serverName</span></span>  
+<span data-ttu-id="3bab6-1023">データベースがあるサーバーの名前。</span><span class="sxs-lookup"><span data-stu-id="3bab6-1023">The name of the server where the database is located.</span></span>
 
-### <a name="method-setusepredefinedservice"></a><span data-ttu-id="bcebd-1024">メソッド setUsePredefinedService</span><span class="sxs-lookup"><span data-stu-id="bcebd-1024">Method setUsePredefinedService</span></span>
+### <a name="method-setusepredefinedservice"></a><span data-ttu-id="3bab6-1024">メソッド setUsePredefinedService</span><span class="sxs-lookup"><span data-stu-id="3bab6-1024">Method setUsePredefinedService</span></span>
 
-<span data-ttu-id="bcebd-1025">接続情報に事前に定義された Oracle サービス (Oracle ネットワーク コンフィギュレーション ツールを使用して作成) を使用するかどうか、または loginProperty クラスで指定するかどうかを指定します。</span><span class="sxs-lookup"><span data-stu-id="bcebd-1025">Specifies whether to use a predefined Oracle service (created by using Oracle network configuration tools) for the connection information, or whether it will be specified in the loginProperty class.</span></span>
+<span data-ttu-id="3bab6-1025">接続情報に事前に定義された Oracle サービス (Oracle ネットワーク コンフィギュレーション ツールを使用して作成) を使用するかどうか、または loginProperty クラスで指定するかどうかを指定します。</span><span class="sxs-lookup"><span data-stu-id="3bab6-1025">Specifies whether to use a predefined Oracle service (created by using Oracle network configuration tools) for the connection information, or whether it will be specified in the loginProperty class.</span></span>
 
     public void setUsePredefinedService(boolean newValue)
 
-#### <a name="parameters"></a><span data-ttu-id="bcebd-1026">パラメーター</span><span class="sxs-lookup"><span data-stu-id="bcebd-1026">Parameters</span></span>
+#### <a name="parameters"></a><span data-ttu-id="3bab6-1026">パラメーター</span><span class="sxs-lookup"><span data-stu-id="3bab6-1026">Parameters</span></span>
 
-<span data-ttu-id="bcebd-1027">newValue</span><span class="sxs-lookup"><span data-stu-id="bcebd-1027">newValue</span></span>  
-<span data-ttu-id="bcebd-1028">事前定義された Oracle サービスを使用するかどうかを示すブール値。</span><span class="sxs-lookup"><span data-stu-id="bcebd-1028">A Boolean value that indicates whether to use a predefined Oracle service.</span></span>
+<span data-ttu-id="3bab6-1027">newValue</span><span class="sxs-lookup"><span data-stu-id="3bab6-1027">newValue</span></span>  
+<span data-ttu-id="3bab6-1028">事前定義された Oracle サービスを使用するかどうかを示すブール値。</span><span class="sxs-lookup"><span data-stu-id="3bab6-1028">A Boolean value that indicates whether to use a predefined Oracle service.</span></span>
 
-#### <a name="remarks"></a><span data-ttu-id="bcebd-1029">備考</span><span class="sxs-lookup"><span data-stu-id="bcebd-1029">Remarks</span></span>
+#### <a name="remarks"></a><span data-ttu-id="3bab6-1029">備考</span><span class="sxs-lookup"><span data-stu-id="3bab6-1029">Remarks</span></span>
 
-<span data-ttu-id="bcebd-1030">既定では、事前に定義されたサービスは使用されません。</span><span class="sxs-lookup"><span data-stu-id="bcebd-1030">By default, a predefined service is not used.</span></span>
-
+<span data-ttu-id="3bab6-1030">既定では、事前に定義されたサービスは使用されません。</span><span class="sxs-lookup"><span data-stu-id="3bab6-1030">By default, a predefined service is not used.</span></span>
 
 
 

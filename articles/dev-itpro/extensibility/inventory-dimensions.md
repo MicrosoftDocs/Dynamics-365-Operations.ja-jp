@@ -1,74 +1,73 @@
 ---
-title: "拡張機能を通じた新しい在庫分析コードの追加"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations の拡張機能を使用して、新しい在庫分析コードを追加する方法について説明します。"
+title: 拡張機能を通じた新しい在庫分析コードの追加
+description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations の拡張機能を通じて新しい在庫分析コードを追加する方法について説明します。
 author: MichaelFruergaardPontoppidan
 manager: AnnBe
 ms.date: 02/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: AnnBe
 ms.search.scope: Operations
 ms.custom: 89563
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: c7351337f64fdf62c6206aed174f203df3bfef17
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369644"
 ---
-
-# <a name="add-new-inventory-dimensions-through-extension"></a><span data-ttu-id="2f750-103">拡張機能を通じた新しい在庫分析コードの追加</span><span class="sxs-lookup"><span data-stu-id="2f750-103">Add new inventory dimensions through extension</span></span>
+# <a name="add-new-inventory-dimensions-through-extension"></a><span data-ttu-id="20dc1-103">拡張機能を通じた新しい在庫分析コードの追加</span><span class="sxs-lookup"><span data-stu-id="20dc1-103">Add new inventory dimensions through extension</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="2f750-104">このトピックでは、拡張機能を使用して新しい在庫分析コードを追加する方法の概要を示します。</span><span class="sxs-lookup"><span data-stu-id="2f750-104">This topic provides a high-level overview of how to add new inventory dimensions through extensions.</span></span> <span data-ttu-id="2f750-105">また、実際の実装を含むサンプル アプリケーションへのアクセス方法に関する情報も含まれます。</span><span class="sxs-lookup"><span data-stu-id="2f750-105">It also includes information about how to access a sample application that contains an actual implementation.</span></span>
+<span data-ttu-id="20dc1-104">このトピックでは、拡張機能を使用して新しい在庫分析コードを追加する方法の概要を示します。</span><span class="sxs-lookup"><span data-stu-id="20dc1-104">This topic provides a high-level overview of how to add new inventory dimensions through extensions.</span></span> <span data-ttu-id="20dc1-105">また、実際の実装を含むサンプル アプリケーションへのアクセス方法に関する情報も含まれます。</span><span class="sxs-lookup"><span data-stu-id="20dc1-105">It also includes information about how to access a sample application that contains an actual implementation.</span></span>
 
-## <a name="solution-overview"></a><span data-ttu-id="2f750-106">ソリューションの概要</span><span class="sxs-lookup"><span data-stu-id="2f750-106">Solution overview</span></span>
-<span data-ttu-id="2f750-107">このソリューションで重要なことは、複数のロールが、拡張機能を介して新しい在庫分析コードを追加するライフサイクルに参加することです。</span><span class="sxs-lookup"><span data-stu-id="2f750-107">The cornerstone in this solution is that multiple roles participate in the life cycle of adding new inventory dimensions through extensions.</span></span> <span data-ttu-id="2f750-108">次の説明では、このソリューションを簡略化して一般化していますが、現実にはロールの重複があり、時には同じ人が複数のロールを果たす場合もあります。</span><span class="sxs-lookup"><span data-stu-id="2f750-108">The following description simplifies and generalizes this solution, however, in real life there is overlap between the roles, and sometimes it might even be the same person filling several roles.</span></span>
+## <a name="solution-overview"></a><span data-ttu-id="20dc1-106">ソリューションの概要</span><span class="sxs-lookup"><span data-stu-id="20dc1-106">Solution overview</span></span>
+<span data-ttu-id="20dc1-107">このソリューションで重要なことは、複数のロールが、拡張機能を介して新しい在庫分析コードを追加するライフサイクルに参加することです。</span><span class="sxs-lookup"><span data-stu-id="20dc1-107">The cornerstone in this solution is that multiple roles participate in the life cycle of adding new inventory dimensions through extensions.</span></span> <span data-ttu-id="20dc1-108">次の説明では、このソリューションを簡略化して一般化していますが、現実にはロールの重複があり、時には同じ人が複数のロールを果たす場合もあります。</span><span class="sxs-lookup"><span data-stu-id="20dc1-108">The following description simplifies and generalizes this solution, however, in real life there is overlap between the roles, and sometimes it might even be the same person filling several roles.</span></span>
 
-### <a name="microsofts-role"></a><span data-ttu-id="2f750-109">Microsoft のロール</span><span class="sxs-lookup"><span data-stu-id="2f750-109">Microsoft's role</span></span>
-<span data-ttu-id="2f750-110">Microsoft は、使用されていない分析コード フィールドの限定的なセットを提供します。</span><span class="sxs-lookup"><span data-stu-id="2f750-110">Microsoft provides a finite set of unused dimension fields.</span></span>
+### <a name="microsofts-role"></a><span data-ttu-id="20dc1-109">Microsoft のロール</span><span class="sxs-lookup"><span data-stu-id="20dc1-109">Microsoft's role</span></span>
+<span data-ttu-id="20dc1-110">Microsoft は、使用されていない分析コード フィールドの限定的なセットを提供します。</span><span class="sxs-lookup"><span data-stu-id="20dc1-110">Microsoft provides a finite set of unused dimension fields.</span></span>
 
-<span data-ttu-id="2f750-111">15 の既存の分析コードに加えて、Microsoft は 10 の一般的な分析コードをサポートします。</span><span class="sxs-lookup"><span data-stu-id="2f750-111">In addition to the 15 existing dimensions, Microsoft supports 10 generic dimensions:</span></span> 
-- <span data-ttu-id="2f750-112">8 つの文字列ベース</span><span class="sxs-lookup"><span data-stu-id="2f750-112">8 string-based</span></span>
-- <span data-ttu-id="2f750-113">リアルベース 1 つ</span><span class="sxs-lookup"><span data-stu-id="2f750-113">1 real-based</span></span>
-- <span data-ttu-id="2f750-114">utcdatetime ベース 1 つ</span><span class="sxs-lookup"><span data-stu-id="2f750-114">1 utcdatetime-based</span></span>
+<span data-ttu-id="20dc1-111">15 の既存の分析コードに加えて、Microsoft は 10 の一般的な分析コードをサポートします。</span><span class="sxs-lookup"><span data-stu-id="20dc1-111">In addition to the 15 existing dimensions, Microsoft supports 10 generic dimensions:</span></span> 
+- <span data-ttu-id="20dc1-112">8 つの文字列ベース</span><span class="sxs-lookup"><span data-stu-id="20dc1-112">8 string-based</span></span>
+- <span data-ttu-id="20dc1-113">リアルベース 1 つ</span><span class="sxs-lookup"><span data-stu-id="20dc1-113">1 real-based</span></span>
+- <span data-ttu-id="20dc1-114">utcdatetime ベース 1 つ</span><span class="sxs-lookup"><span data-stu-id="20dc1-114">1 utcdatetime-based</span></span>
  
-  <span data-ttu-id="2f750-115">これにより、標準アプリケーションのインベントリ ディメンションの合計数が 25 になります。</span><span class="sxs-lookup"><span data-stu-id="2f750-115">This brings the total number of inventory dimensions in the standard application to 25:</span></span>
-- <span data-ttu-id="2f750-116">4 製品分析コード: 色、サイズ、スタイル、およびコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="2f750-116">4 product dimensions: Color, Size, Style, and Config</span></span>
-- <span data-ttu-id="2f750-117">5 つの追跡用分析コード: シリアル、バッチ、所有者、プロファイル (ロシアのみ)、および GTD (ロシアのみ)</span><span class="sxs-lookup"><span data-stu-id="2f750-117">5 tracking dimensions: Serial, Batch, Owner, Profile (Russia only), and GTD (Russia only)</span></span>
-- <span data-ttu-id="2f750-118">6. 保管分析コード: サイト、倉庫、場所、ステータス、ライセンス プレートおよびパレット (アップグレードと移行のみ)</span><span class="sxs-lookup"><span data-stu-id="2f750-118">6 storage dimensions: Site, Warehouse, Location, Status, License Plate, and Pallet (for upgrade and migration only)</span></span>
-- <span data-ttu-id="2f750-119">10 個の未割り当ての一般的な分析コード: InventDimension10 から InventDimension1</span><span class="sxs-lookup"><span data-stu-id="2f750-119">10 unassigned generic dimensions: InventDimension1 to InventDimension10</span></span>
+  <span data-ttu-id="20dc1-115">これにより、標準アプリケーションのインベントリ ディメンションの合計数が 25 になります。</span><span class="sxs-lookup"><span data-stu-id="20dc1-115">This brings the total number of inventory dimensions in the standard application to 25:</span></span>
+- <span data-ttu-id="20dc1-116">4 製品分析コード: 色、サイズ、スタイル、およびコンフィギュレーション</span><span class="sxs-lookup"><span data-stu-id="20dc1-116">4 product dimensions: Color, Size, Style, and Config</span></span>
+- <span data-ttu-id="20dc1-117">5 つの追跡用分析コード: シリアル、バッチ、所有者、プロファイル (ロシアのみ)、および GTD (ロシアのみ)</span><span class="sxs-lookup"><span data-stu-id="20dc1-117">5 tracking dimensions: Serial, Batch, Owner, Profile (Russia only), and GTD (Russia only)</span></span>
+- <span data-ttu-id="20dc1-118">6. 保管分析コード: サイト、倉庫、場所、ステータス、ライセンス プレートおよびパレット (アップグレードと移行のみ)</span><span class="sxs-lookup"><span data-stu-id="20dc1-118">6 storage dimensions: Site, Warehouse, Location, Status, License Plate, and Pallet (for upgrade and migration only)</span></span>
+- <span data-ttu-id="20dc1-119">10 個の未割り当ての一般的な分析コード: InventDimension10 から InventDimension1</span><span class="sxs-lookup"><span data-stu-id="20dc1-119">10 unassigned generic dimensions: InventDimension1 to InventDimension10</span></span>
 
-<span data-ttu-id="2f750-120">Microsoft は、物理スキーマを提供しています。</span><span class="sxs-lookup"><span data-stu-id="2f750-120">Microsoft provides the physical schema.</span></span>
+<span data-ttu-id="20dc1-120">Microsoft は、物理スキーマを提供しています。</span><span class="sxs-lookup"><span data-stu-id="20dc1-120">Microsoft provides the physical schema.</span></span>
 
-### <a name="isv-role"></a><span data-ttu-id="2f750-121">ISV 役割</span><span class="sxs-lookup"><span data-stu-id="2f750-121">ISV role</span></span>
-<span data-ttu-id="2f750-122">ISV は、新規在庫分析コードを追加します。</span><span class="sxs-lookup"><span data-stu-id="2f750-122">The ISV adds new inventory dimensions.</span></span> <span data-ttu-id="2f750-123">ISV ソリューションは、分析コードの特定のすべての機能を提供します。強力な種類で、管理、テストしやすく、パフォーマンスの高いものでなければなりません。</span><span class="sxs-lookup"><span data-stu-id="2f750-123">The ISV solution provides all the specific functionality for the dimension - it must be strong-typed, maintainable, testable, and performant.</span></span> <span data-ttu-id="2f750-124">さらに、ソリューションは、その他の ISV のソリューションに依存しないようにする必要があります。</span><span class="sxs-lookup"><span data-stu-id="2f750-124">In addition, the solution must be agnostic to other ISV's solutions.</span></span>
-<span data-ttu-id="2f750-125">ISV は、物理スキーマを直接参照せず、シームレスに行うことができる間接参照を通過するソリューションを構築します。</span><span class="sxs-lookup"><span data-stu-id="2f750-125">The ISV builds a solution that doesn't reference the physical schema directly, but goes through an indirection, which can be done seamlessly.</span></span> 
+### <a name="isv-role"></a><span data-ttu-id="20dc1-121">ISV 役割</span><span class="sxs-lookup"><span data-stu-id="20dc1-121">ISV role</span></span>
+<span data-ttu-id="20dc1-122">ISV は、新規在庫分析コードを追加します。</span><span class="sxs-lookup"><span data-stu-id="20dc1-122">The ISV adds new inventory dimensions.</span></span> <span data-ttu-id="20dc1-123">ISV ソリューションは、分析コードの特定のすべての機能を提供します。強力な種類で、管理、テストしやすく、パフォーマンスの高いものでなければなりません。</span><span class="sxs-lookup"><span data-stu-id="20dc1-123">The ISV solution provides all the specific functionality for the dimension - it must be strong-typed, maintainable, testable, and performant.</span></span> <span data-ttu-id="20dc1-124">さらに、ソリューションは、その他の ISV のソリューションに依存しないようにする必要があります。</span><span class="sxs-lookup"><span data-stu-id="20dc1-124">In addition, the solution must be agnostic to other ISV's solutions.</span></span>
+<span data-ttu-id="20dc1-125">ISV は、物理スキーマを直接参照せず、シームレスに行うことができる間接参照を通過するソリューションを構築します。</span><span class="sxs-lookup"><span data-stu-id="20dc1-125">The ISV builds a solution that doesn't reference the physical schema directly, but goes through an indirection, which can be done seamlessly.</span></span> 
 
-<span data-ttu-id="2f750-126">ISV は、論理実装を提供します。</span><span class="sxs-lookup"><span data-stu-id="2f750-126">The ISV provides the logical implementation.</span></span>
+<span data-ttu-id="20dc1-126">ISV は、論理実装を提供します。</span><span class="sxs-lookup"><span data-stu-id="20dc1-126">The ISV provides the logical implementation.</span></span>
 
-### <a name="var-role"></a><span data-ttu-id="2f750-127">VAR ロール</span><span class="sxs-lookup"><span data-stu-id="2f750-127">VAR role</span></span>
-<span data-ttu-id="2f750-128">VAR は、完全に機能するシステムを顧客に出荷できる必要があります。</span><span class="sxs-lookup"><span data-stu-id="2f750-128">The VAR must be able to deliver a fully functional system to a customer.</span></span> <span data-ttu-id="2f750-129">システムには、複数の ISV のソリューションを含めることができます。それぞれに新しい在庫分析コードが含まれる可能性があります。</span><span class="sxs-lookup"><span data-stu-id="2f750-129">The system can contain solutions from multiple ISV's - each potentially containing new inventory dimensions.</span></span> <span data-ttu-id="2f750-130">合計で最大 10 個の ISV 分析コード フィールドがサポートされます。</span><span class="sxs-lookup"><span data-stu-id="2f750-130">In total, up to 10 ISV dimension fields are supported.</span></span>
+### <a name="var-role"></a><span data-ttu-id="20dc1-127">VAR ロール</span><span class="sxs-lookup"><span data-stu-id="20dc1-127">VAR role</span></span>
+<span data-ttu-id="20dc1-128">VAR は、完全に機能するシステムを顧客に出荷できる必要があります。</span><span class="sxs-lookup"><span data-stu-id="20dc1-128">The VAR must be able to deliver a fully functional system to a customer.</span></span> <span data-ttu-id="20dc1-129">システムには、複数の ISV のソリューションを含めることができます。それぞれに新しい在庫分析コードが含まれる可能性があります。</span><span class="sxs-lookup"><span data-stu-id="20dc1-129">The system can contain solutions from multiple ISV's - each potentially containing new inventory dimensions.</span></span> <span data-ttu-id="20dc1-130">合計で最大 10 個の ISV 分析コード フィールドがサポートされます。</span><span class="sxs-lookup"><span data-stu-id="20dc1-130">In total, up to 10 ISV dimension fields are supported.</span></span>
 
-<span data-ttu-id="2f750-131">VAR により、物理的データ モデルと論理的実装が結合されます。</span><span class="sxs-lookup"><span data-stu-id="2f750-131">The VAR provides the binding between the physical data model and logical implementation.</span></span>
+<span data-ttu-id="20dc1-131">VAR により、物理的データ モデルと論理的実装が結合されます。</span><span class="sxs-lookup"><span data-stu-id="20dc1-131">The VAR provides the binding between the physical data model and logical implementation.</span></span>
 
-## <a name="details"></a><span data-ttu-id="2f750-132">細目</span><span class="sxs-lookup"><span data-stu-id="2f750-132">Details</span></span>
-<span data-ttu-id="2f750-133">ソリューションの前半はシンプルです。</span><span class="sxs-lookup"><span data-stu-id="2f750-133">The first half of the solution is straight forward.</span></span> <span data-ttu-id="2f750-134">新しいクラス階層が導入されています。</span><span class="sxs-lookup"><span data-stu-id="2f750-134">A new class hierarchy is introduced.</span></span> <span data-ttu-id="2f750-135">それぞれの新しい分析コードは、InventProductDimension または InventTrackingDimension のいずれかから派生する新しいクラスに実装する必要があります。</span><span class="sxs-lookup"><span data-stu-id="2f750-135">Each new dimension must be implemented in a new class deriving from either InventProductDimension or InventTrackingDimension.</span></span> <span data-ttu-id="2f750-136">現在、保管分析コードのサポートがされていません。</span><span class="sxs-lookup"><span data-stu-id="2f750-136">Currently, there is no support for storage dimensions.</span></span> <span data-ttu-id="2f750-137">これを使用すると、ISV は InventDim テーブルのロジックを変更せずに新しい分析コードを導入することができます。</span><span class="sxs-lookup"><span data-stu-id="2f750-137">With this, ISVs can introduce new dimensions without having to change any of the logic on the InventDim table.</span></span> 
+## <a name="details"></a><span data-ttu-id="20dc1-132">細目</span><span class="sxs-lookup"><span data-stu-id="20dc1-132">Details</span></span>
+<span data-ttu-id="20dc1-133">ソリューションの前半はシンプルです。</span><span class="sxs-lookup"><span data-stu-id="20dc1-133">The first half of the solution is straight forward.</span></span> <span data-ttu-id="20dc1-134">新しいクラス階層が導入されています。</span><span class="sxs-lookup"><span data-stu-id="20dc1-134">A new class hierarchy is introduced.</span></span> <span data-ttu-id="20dc1-135">それぞれの新しい分析コードは、InventProductDimension または InventTrackingDimension のいずれかから派生する新しいクラスに実装する必要があります。</span><span class="sxs-lookup"><span data-stu-id="20dc1-135">Each new dimension must be implemented in a new class deriving from either InventProductDimension or InventTrackingDimension.</span></span> <span data-ttu-id="20dc1-136">現在、保管分析コードのサポートがされていません。</span><span class="sxs-lookup"><span data-stu-id="20dc1-136">Currently, there is no support for storage dimensions.</span></span> <span data-ttu-id="20dc1-137">これを使用すると、ISV は InventDim テーブルのロジックを変更せずに新しい分析コードを導入することができます。</span><span class="sxs-lookup"><span data-stu-id="20dc1-137">With this, ISVs can introduce new dimensions without having to change any of the logic on the InventDim table.</span></span> 
 
 ![InventDimensionClassHierarchy](media/InventDimensions1.png)
 
-<span data-ttu-id="2f750-139">厳密に型指定された新しい分析コードを参照するために、ISV では InventDim テーブルにテーブル拡張クラスが導入されました。</span><span class="sxs-lookup"><span data-stu-id="2f750-139">To reference the new dimension in a strongly-typed fashion, the ISV introduces a table extension class to the InventDim table.</span></span> <span data-ttu-id="2f750-140">スタイル、色、サイズの拡張クラスをテンプレートとして使用できます。</span><span class="sxs-lookup"><span data-stu-id="2f750-140">The extension classes for Style, Color, and Size can be used as templates.</span></span>
+<span data-ttu-id="20dc1-139">厳密に型指定された新しい分析コードを参照するために、ISV では InventDim テーブルにテーブル拡張クラスが導入されました。</span><span class="sxs-lookup"><span data-stu-id="20dc1-139">To reference the new dimension in a strongly-typed fashion, the ISV introduces a table extension class to the InventDim table.</span></span> <span data-ttu-id="20dc1-140">スタイル、色、サイズの拡張クラスをテンプレートとして使用できます。</span><span class="sxs-lookup"><span data-stu-id="20dc1-140">The extension classes for Style, Color, and Size can be used as templates.</span></span>
  
-<span data-ttu-id="2f750-141">**例: InventDimStyle_Extension**</span><span class="sxs-lookup"><span data-stu-id="2f750-141">**Example: InventDimStyle_Extension**</span></span> 
+<span data-ttu-id="20dc1-141">**例: InventDimStyle_Extension**</span><span class="sxs-lookup"><span data-stu-id="20dc1-141">**Example: InventDimStyle_Extension**</span></span> 
 
 ```
 /// <summary>
@@ -97,7 +96,7 @@ final class InventDimStyle_Extension
 }
 ```
 
-<span data-ttu-id="2f750-142">分析コードは、次のように参照することができます。</span><span class="sxs-lookup"><span data-stu-id="2f750-142">The dimensions can be referenced like this.</span></span>
+<span data-ttu-id="20dc1-142">分析コードは、次のように参照することができます。</span><span class="sxs-lookup"><span data-stu-id="20dc1-142">The dimensions can be referenced like this.</span></span>
 
 ```
 //Setting a value
@@ -108,46 +107,45 @@ select inventDim
     where inventDim.(InventDim::fieldIdISVDim()) == "Some value";
 ```
 
-<span data-ttu-id="2f750-143">ISV は、新しい在庫分析コードの分析コード値のリストを保持するために、データ モデルおよびユーザー インターフェイスなどのロジックを構築できるようになりました。</span><span class="sxs-lookup"><span data-stu-id="2f750-143">The ISV can now build logic, including the data model and user interface for maintaining the list of dimension values, for the new inventory dimension.</span></span>
+<span data-ttu-id="20dc1-143">ISV は、新しい在庫分析コードの分析コード値のリストを保持するために、データ モデルおよびユーザー インターフェイスなどのロジックを構築できるようになりました。</span><span class="sxs-lookup"><span data-stu-id="20dc1-143">The ISV can now build logic, including the data model and user interface for maintaining the list of dimension values, for the new inventory dimension.</span></span>
 
-<span data-ttu-id="2f750-144">ソリューションの後半はデータ モデルです。</span><span class="sxs-lookup"><span data-stu-id="2f750-144">The second half of the solution is the data model.</span></span> <span data-ttu-id="2f750-145">標準アプリケーションには、新しい分析コードごとに次の内容が含まれます。</span><span class="sxs-lookup"><span data-stu-id="2f750-145">The standard application will contain the following for each new dimension:</span></span>
-- <span data-ttu-id="2f750-146">ラベル ファイル。</span><span class="sxs-lookup"><span data-stu-id="2f750-146">A label file.</span></span>
-- <span data-ttu-id="2f750-147">コンフィギュレーション キー。</span><span class="sxs-lookup"><span data-stu-id="2f750-147">A configuration key.</span></span>
-- <span data-ttu-id="2f750-148">2 つの拡張データ型 (EDT) (InventDim のフィールド用と InventDimParm のフラグ用) です。</span><span class="sxs-lookup"><span data-stu-id="2f750-148">Two extended data types (EDTs) (for the field on InventDim and for the flag on InventDimParm).</span></span>
-- <span data-ttu-id="2f750-149">InventDim テーブルの 1 つのフィールドです。</span><span class="sxs-lookup"><span data-stu-id="2f750-149">One field on InventDim table.</span></span>
-- <span data-ttu-id="2f750-150">InventDimParm テーブルの 1 つのフィールドです。</span><span class="sxs-lookup"><span data-stu-id="2f750-150">One field on InventDimParm table.</span></span>
-- <span data-ttu-id="2f750-151">InventDimFieldMap マップの 1 つのフィールドと、各テーブルの 1 つのフィールド (約 30) がマップされています。</span><span class="sxs-lookup"><span data-stu-id="2f750-151">One field on InventDimFieldMap map and one field on each of the tables (approximately 30) mapped.</span></span>
+<span data-ttu-id="20dc1-144">ソリューションの後半はデータ モデルです。</span><span class="sxs-lookup"><span data-stu-id="20dc1-144">The second half of the solution is the data model.</span></span> <span data-ttu-id="20dc1-145">標準アプリケーションには、新しい分析コードごとに次の内容が含まれます。</span><span class="sxs-lookup"><span data-stu-id="20dc1-145">The standard application will contain the following for each new dimension:</span></span>
+- <span data-ttu-id="20dc1-146">ラベル ファイル。</span><span class="sxs-lookup"><span data-stu-id="20dc1-146">A label file.</span></span>
+- <span data-ttu-id="20dc1-147">コンフィギュレーション キー。</span><span class="sxs-lookup"><span data-stu-id="20dc1-147">A configuration key.</span></span>
+- <span data-ttu-id="20dc1-148">2 つの拡張データ型 (EDT) (InventDim のフィールド用と InventDimParm のフラグ用) です。</span><span class="sxs-lookup"><span data-stu-id="20dc1-148">Two extended data types (EDTs) (for the field on InventDim and for the flag on InventDimParm).</span></span>
+- <span data-ttu-id="20dc1-149">InventDim テーブルの 1 つのフィールドです。</span><span class="sxs-lookup"><span data-stu-id="20dc1-149">One field on InventDim table.</span></span>
+- <span data-ttu-id="20dc1-150">InventDimParm テーブルの 1 つのフィールドです。</span><span class="sxs-lookup"><span data-stu-id="20dc1-150">One field on InventDimParm table.</span></span>
+- <span data-ttu-id="20dc1-151">InventDimFieldMap マップの 1 つのフィールドと、各テーブルの 1 つのフィールド (約 30) がマップされています。</span><span class="sxs-lookup"><span data-stu-id="20dc1-151">One field on InventDimFieldMap map and one field on each of the tables (approximately 30) mapped.</span></span>
 
-<span data-ttu-id="2f750-152">VAR の職務は、特定の顧客の InventDim の分析コード フィールドに ISV ソリューションを書き込むことです。</span><span class="sxs-lookup"><span data-stu-id="2f750-152">The VAR's job is to wire the ISV solutions to the available dimension fields on InventDim for a given customer.</span></span> <span data-ttu-id="2f750-153">この作業を最小にするために、現在以下が含まれています。</span><span class="sxs-lookup"><span data-stu-id="2f750-153">To minimize this work, it currently includes the following:</span></span>
-- <span data-ttu-id="2f750-154">バインディング マッピングを実装します。</span><span class="sxs-lookup"><span data-stu-id="2f750-154">Implement the binding mapping.</span></span> <span data-ttu-id="2f750-155">これは、メソッド InventDimFieldBinding.className2FieldName() メソッドを拡張するよって行います。</span><span class="sxs-lookup"><span data-stu-id="2f750-155">This is accomplished by extending the method InventDimFieldBinding.className2FieldName().</span></span>
-- <span data-ttu-id="2f750-156">コンフィギュレーション キーを有効にします。</span><span class="sxs-lookup"><span data-stu-id="2f750-156">Enable the configuration key.</span></span>
-- <span data-ttu-id="2f750-157">右側の文字列のサイズを指定するには、EDT を拡張します。</span><span class="sxs-lookup"><span data-stu-id="2f750-157">Extend the EDT to specify the right string size.</span></span>
-- <span data-ttu-id="2f750-158">ISV 製ラベルを正しいラベル ファイルにコピーするなど、ラベル ファイルを拡張します。</span><span class="sxs-lookup"><span data-stu-id="2f750-158">Extend the Label file, such as copy the ISV-provided labels into the correct label file.</span></span>
-- <span data-ttu-id="2f750-159">InventDim の ProductDimensions または TrackingDimensions フィールド グループおよび分析コードのタイプに応じていくつかの他のテーブルを拡張します。</span><span class="sxs-lookup"><span data-stu-id="2f750-159">Extend the ProductDimensions or TrackingDimensions field groups on InventDim, and a few other tables, depending on the type of dimension.</span></span>
-- <span data-ttu-id="2f750-160">関係およびインデックスを必要に応じて、InventDim で拡張します。</span><span class="sxs-lookup"><span data-stu-id="2f750-160">Extend relations and index as needed on InventDim.</span></span>
+<span data-ttu-id="20dc1-152">VAR の職務は、特定の顧客の InventDim の分析コード フィールドに ISV ソリューションを書き込むことです。</span><span class="sxs-lookup"><span data-stu-id="20dc1-152">The VAR's job is to wire the ISV solutions to the available dimension fields on InventDim for a given customer.</span></span> <span data-ttu-id="20dc1-153">この作業を最小にするために、現在以下が含まれています。</span><span class="sxs-lookup"><span data-stu-id="20dc1-153">To minimize this work, it currently includes the following:</span></span>
+- <span data-ttu-id="20dc1-154">バインディング マッピングを実装します。</span><span class="sxs-lookup"><span data-stu-id="20dc1-154">Implement the binding mapping.</span></span> <span data-ttu-id="20dc1-155">これは、メソッド InventDimFieldBinding.className2FieldName() メソッドを拡張するよって行います。</span><span class="sxs-lookup"><span data-stu-id="20dc1-155">This is accomplished by extending the method InventDimFieldBinding.className2FieldName().</span></span>
+- <span data-ttu-id="20dc1-156">コンフィギュレーション キーを有効にします。</span><span class="sxs-lookup"><span data-stu-id="20dc1-156">Enable the configuration key.</span></span>
+- <span data-ttu-id="20dc1-157">右側の文字列のサイズを指定するには、EDT を拡張します。</span><span class="sxs-lookup"><span data-stu-id="20dc1-157">Extend the EDT to specify the right string size.</span></span>
+- <span data-ttu-id="20dc1-158">ISV 製ラベルを正しいラベル ファイルにコピーするなど、ラベル ファイルを拡張します。</span><span class="sxs-lookup"><span data-stu-id="20dc1-158">Extend the Label file, such as copy the ISV-provided labels into the correct label file.</span></span>
+- <span data-ttu-id="20dc1-159">InventDim の ProductDimensions または TrackingDimensions フィールド グループおよび分析コードのタイプに応じていくつかの他のテーブルを拡張します。</span><span class="sxs-lookup"><span data-stu-id="20dc1-159">Extend the ProductDimensions or TrackingDimensions field groups on InventDim, and a few other tables, depending on the type of dimension.</span></span>
+- <span data-ttu-id="20dc1-160">関係およびインデックスを必要に応じて、InventDim で拡張します。</span><span class="sxs-lookup"><span data-stu-id="20dc1-160">Extend relations and index as needed on InventDim.</span></span>
 
 ![InventDimensionISVVARExtensions](media/InventDimensions4.png)
 
-## <a name="known-issues"></a><span data-ttu-id="2f750-162">既知の問題</span><span class="sxs-lookup"><span data-stu-id="2f750-162">Known issues</span></span>
+## <a name="known-issues"></a><span data-ttu-id="20dc1-162">既知の問題</span><span class="sxs-lookup"><span data-stu-id="20dc1-162">Known issues</span></span>
 
-<span data-ttu-id="2f750-163">ソリューションの設計に影響を与えるいくつかの技術的な制限があります。</span><span class="sxs-lookup"><span data-stu-id="2f750-163">There are some technical limitations influencing the design of the solution.</span></span> <span data-ttu-id="2f750-164">最も重要なのは、InventDim のWhere 句を含むアプリケーション全体の SQL 文です。</span><span class="sxs-lookup"><span data-stu-id="2f750-164">The most significant is the SQL statements throughout the application that contain where-clauses on InventDim.</span></span> <span data-ttu-id="2f750-165">これらのほとんどはマクロを使用して実装され、SQL ステートメントが拡張可能ではないという事実を変更しません。</span><span class="sxs-lookup"><span data-stu-id="2f750-165">Most of these are implemented using macros, which doesn't change the fact that SQL statements are not extensible.</span></span> <span data-ttu-id="2f750-166">SQL ステートメントの多くは書き換えることができ、クエリ オブジェクトを使用して拡張できますが、多くの delete_from および update_recordset は残ります。</span><span class="sxs-lookup"><span data-stu-id="2f750-166">Many of the SQL statements could be rewritten to use query objects to make them extensible, however many delete_from and update_recordset would remain.</span></span> <span data-ttu-id="2f750-167">実行可能なソリューションは、新しい分析コードを追加するときに、これらの SQL ステートメントへの変更を要求することはできません。</span><span class="sxs-lookup"><span data-stu-id="2f750-167">A viable solution cannot require changes to these SQL statements when adding new dimensions.</span></span>
+<span data-ttu-id="20dc1-163">ソリューションの設計に影響を与えるいくつかの技術的な制限があります。</span><span class="sxs-lookup"><span data-stu-id="20dc1-163">There are some technical limitations influencing the design of the solution.</span></span> <span data-ttu-id="20dc1-164">最も重要なのは、InventDim のWhere 句を含むアプリケーション全体の SQL 文です。</span><span class="sxs-lookup"><span data-stu-id="20dc1-164">The most significant is the SQL statements throughout the application that contain where-clauses on InventDim.</span></span> <span data-ttu-id="20dc1-165">これらのほとんどはマクロを使用して実装され、SQL ステートメントが拡張可能ではないという事実を変更しません。</span><span class="sxs-lookup"><span data-stu-id="20dc1-165">Most of these are implemented using macros, which doesn't change the fact that SQL statements are not extensible.</span></span> <span data-ttu-id="20dc1-166">SQL ステートメントの多くは書き換えることができ、クエリ オブジェクトを使用して拡張できますが、多くの delete_from および update_recordset は残ります。</span><span class="sxs-lookup"><span data-stu-id="20dc1-166">Many of the SQL statements could be rewritten to use query objects to make them extensible, however many delete_from and update_recordset would remain.</span></span> <span data-ttu-id="20dc1-167">実行可能なソリューションは、新しい分析コードを追加するときに、これらの SQL ステートメントへの変更を要求することはできません。</span><span class="sxs-lookup"><span data-stu-id="20dc1-167">A viable solution cannot require changes to these SQL statements when adding new dimensions.</span></span>
 
-<span data-ttu-id="2f750-168">もう 1 つの技術的な制限は、サポートできる在庫分析コードの量です。</span><span class="sxs-lookup"><span data-stu-id="2f750-168">Another technical limitation is the amount of inventory dimensions that can be supported.</span></span> <span data-ttu-id="2f750-169">それぞれが小さなオーバーヘッドを追加し、InventDimFixed EDT は上限を 32 に設定します。</span><span class="sxs-lookup"><span data-stu-id="2f750-169">Each adds a small overhead, and the InventDimFixed EDT sets an upper limit at 32.</span></span> <span data-ttu-id="2f750-170">この EDT には各分析コードのビットマスクが含まれており、EDT は整数であるため制限は 32 です。</span><span class="sxs-lookup"><span data-stu-id="2f750-170">This EDT contains a bit mask for each dimension, and because the EDT is an integer, the limit is 32.</span></span> <span data-ttu-id="2f750-171">指定されたソリューションは 32 の制限内で保持されます。</span><span class="sxs-lookup"><span data-stu-id="2f750-171">The provided solution stays within the limit of 32.</span></span> <span data-ttu-id="2f750-172">将来に必要になる場合、InventDimFixed を Int64、コンテナーに変更するまたは削除することができます。</span><span class="sxs-lookup"><span data-stu-id="2f750-172">If required in the future, InventDimFixed could be changed to be an Int64, a container, or it could be removed.</span></span>
+<span data-ttu-id="20dc1-168">もう 1 つの技術的な制限は、サポートできる在庫分析コードの量です。</span><span class="sxs-lookup"><span data-stu-id="20dc1-168">Another technical limitation is the amount of inventory dimensions that can be supported.</span></span> <span data-ttu-id="20dc1-169">それぞれが小さなオーバーヘッドを追加し、InventDimFixed EDT は上限を 32 に設定します。</span><span class="sxs-lookup"><span data-stu-id="20dc1-169">Each adds a small overhead, and the InventDimFixed EDT sets an upper limit at 32.</span></span> <span data-ttu-id="20dc1-170">この EDT には各分析コードのビットマスクが含まれており、EDT は整数であるため制限は 32 です。</span><span class="sxs-lookup"><span data-stu-id="20dc1-170">This EDT contains a bit mask for each dimension, and because the EDT is an integer, the limit is 32.</span></span> <span data-ttu-id="20dc1-171">指定されたソリューションは 32 の制限内で保持されます。</span><span class="sxs-lookup"><span data-stu-id="20dc1-171">The provided solution stays within the limit of 32.</span></span> <span data-ttu-id="20dc1-172">将来に必要になる場合、InventDimFixed を Int64、コンテナーに変更するまたは削除することができます。</span><span class="sxs-lookup"><span data-stu-id="20dc1-172">If required in the future, InventDimFixed could be changed to be an Int64, a container, or it could be removed.</span></span>
 
-## <a name="sample-application"></a><span data-ttu-id="2f750-173">サンプル アプリケーション</span><span class="sxs-lookup"><span data-stu-id="2f750-173">Sample application</span></span>
+## <a name="sample-application"></a><span data-ttu-id="20dc1-173">サンプル アプリケーション</span><span class="sxs-lookup"><span data-stu-id="20dc1-173">Sample application</span></span>
 
-<span data-ttu-id="2f750-174">「製品フレーバーの分析コード サンプル アプリケーション」と呼ばれるサンプル アプリケーションは、[GitHub](https://github.com/Microsoft/Product-flavor-dimension-sample-app) で見つけることができます。</span><span class="sxs-lookup"><span data-stu-id="2f750-174">A sample application called "Product flavor dimension sample app" can be found on [GitHub](https://github.com/Microsoft/Product-flavor-dimension-sample-app).</span></span> 
+<span data-ttu-id="20dc1-174">「製品フレーバーの分析コード サンプル アプリケーション」と呼ばれるサンプル アプリケーションは、[GitHub](https://github.com/Microsoft/Product-flavor-dimension-sample-app) で見つけることができます。</span><span class="sxs-lookup"><span data-stu-id="20dc1-174">A sample application called "Product flavor dimension sample app" can be found on [GitHub](https://github.com/Microsoft/Product-flavor-dimension-sample-app).</span></span> 
 
-<span data-ttu-id="2f750-175">この例は 3 つのモデルで構成されています。</span><span class="sxs-lookup"><span data-stu-id="2f750-175">This sample consists of three models:</span></span> 
- - <span data-ttu-id="2f750-176">ISV の生産コード</span><span class="sxs-lookup"><span data-stu-id="2f750-176">ISV production code</span></span>
- - <span data-ttu-id="2f750-177">ISV テスト コード</span><span class="sxs-lookup"><span data-stu-id="2f750-177">ISV test code</span></span>
- - <span data-ttu-id="2f750-178">VAR 統合コード</span><span class="sxs-lookup"><span data-stu-id="2f750-178">VAR integration code</span></span>
+<span data-ttu-id="20dc1-175">この例は 3 つのモデルで構成されています。</span><span class="sxs-lookup"><span data-stu-id="20dc1-175">This sample consists of three models:</span></span> 
+ - <span data-ttu-id="20dc1-176">ISV の生産コード</span><span class="sxs-lookup"><span data-stu-id="20dc1-176">ISV production code</span></span>
+ - <span data-ttu-id="20dc1-177">ISV テスト コード</span><span class="sxs-lookup"><span data-stu-id="20dc1-177">ISV test code</span></span>
+ - <span data-ttu-id="20dc1-178">VAR 統合コード</span><span class="sxs-lookup"><span data-stu-id="20dc1-178">VAR integration code</span></span>
  
-<span data-ttu-id="2f750-179">これらのモデルを組み合わせると、新しい在庫分析コードを実装するための出発点となります。</span><span class="sxs-lookup"><span data-stu-id="2f750-179">Together these models provide a great starting point for implementing new inventory dimensions.</span></span> <span data-ttu-id="2f750-180">サンプル アプリケーションでは、Flavor という新しい製品ディメンションが導入されています。</span><span class="sxs-lookup"><span data-stu-id="2f750-180">The sample application introduces a new product dimension: Flavor.</span></span> 
+<span data-ttu-id="20dc1-179">これらのモデルを組み合わせると、新しい在庫分析コードを実装するための出発点となります。</span><span class="sxs-lookup"><span data-stu-id="20dc1-179">Together these models provide a great starting point for implementing new inventory dimensions.</span></span> <span data-ttu-id="20dc1-180">サンプル アプリケーションでは、Flavor という新しい製品ディメンションが導入されています。</span><span class="sxs-lookup"><span data-stu-id="20dc1-180">The sample application introduces a new product dimension: Flavor.</span></span> 
 
-<span data-ttu-id="2f750-181">アプリケーションでは、さまざまなフレーバーの品目の製造、購入、販売などの多くのエンド ツー エンドのビジネス シナリオがサポートされています。</span><span class="sxs-lookup"><span data-stu-id="2f750-181">The application supports many end-to-end business scenarios, for example creating, buying, and selling items with various flavors.</span></span>
+<span data-ttu-id="20dc1-181">アプリケーションでは、さまざまなフレーバーの品目の製造、購入、販売などの多くのエンド ツー エンドのビジネス シナリオがサポートされています。</span><span class="sxs-lookup"><span data-stu-id="20dc1-181">The application supports many end-to-end business scenarios, for example creating, buying, and selling items with various flavors.</span></span>
 
-<span data-ttu-id="2f750-182">必要な場合は、問題を GitHub に直接記録し、追加の補充を提供するサンプル アプリケーションへ自由に投稿してください。</span><span class="sxs-lookup"><span data-stu-id="2f750-182">If needed, please log issues directly in GitHub, and feel free to contribute to the sample application to provide additional coverage.</span></span>
+<span data-ttu-id="20dc1-182">必要な場合は、問題を GitHub に直接記録し、追加の補充を提供するサンプル アプリケーションへ自由に投稿してください。</span><span class="sxs-lookup"><span data-stu-id="20dc1-182">If needed, please log issues directly in GitHub, and feel free to contribute to the sample application to provide additional coverage.</span></span>
  
 ![InventDimensionFlavorScreenshot](media/InventDimensions5.jpg)
-
