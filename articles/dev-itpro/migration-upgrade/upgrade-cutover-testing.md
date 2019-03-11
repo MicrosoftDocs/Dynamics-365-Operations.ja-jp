@@ -1,13 +1,13 @@
 ---
-title: "AX 2012 からのアップグレード - 切替テスト (模擬切替)"
-description: "このトピックでは、AX 2012 環境をオフにしてから Dynamics 365 for Finance and Operations をオンにするまでの切替えプロセスをテストする方法について説明します。"
+title: AX 2012 からのアップグレード - 切替テスト (切替モック)
+description: このトピックでは、AX 2012 環境をオフにしてから Dynamics 365 for Finance and Operations をオンにするまでの切替えプロセスをテストする方法について説明します。
 author: robadawy
 manager: AnnBe
 ms.date: 06/06/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: margoc
 ms.search.scope: Operations
@@ -15,21 +15,20 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
-ms.translationtype: HT
-ms.sourcegitcommit: 8914723f6ef436bfc9e3a98cc82d5486042b0761
 ms.openlocfilehash: 2c24e6770fc13172074c7e44d459c03811fd262d
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369635"
 ---
-
-# <a name="upgrade-from-ax-2012---cutover-testing-mock-cutover"></a>AX 2012 からのアップグレード - 切替テスト (模擬切替)
+# <a name="upgrade-from-ax-2012---cutover-testing-mock-cutover"></a>AX 2012 からのアップグレード - 切替テスト (切替モック)
 
 [!include [banner](../includes/banner.md)]
 
 [!include [upgrade banner](../includes/upgrade-banner.md)]
 
-*切替*という用語は、新しいシステムを稼働させる最後のプロセスに使用します。 この切替プロセスは、Microsoft Dynamics AX 2012 をオフにした後、Microsoft Dynamics 365 for Finance and Operations をオンにする前に実行されるタスクで構成されています。 アップグレード切替テスト (切替モック) の目的は、切替プロセスを練習することで、実際の切替中に関係するすべての人がスムーズに作業できるようにすることです。
+*切替*という用語は、新しいシステムを稼働させる最後のプロセスに使用します。 切替プロセスは、Microsoft Dynamics AX 2012 をオフにした後、かつ Microsoft Dynamics 365 for Finance and Operations をオンにする前に発生するタスクで構成されます。 アップグレード切替テスト (切替モック) の目的は、切替プロセスを練習することで、実際の切替中に関係するすべての人がスムーズに作業できるようにすることです。
 
 切替中には、3 つの主要なワーク ストリームがあります。
 
@@ -56,7 +55,7 @@ ms.lasthandoff: 08/09/2018
 
 ## <a name="technical-workstream"></a>技術的なワーク ストリーム
 
-技術的なワーク ストリームに含まれるさまざまな技術チームのメンバー: データベース管理者 (DBA)、AX 2012 のシステム管理者、サーバー管理者、AX 2012 および Finance and Operations に精通している開発者。 このトピックでは、どのタスクがどのロールを含めるかについて説明します。
+技術的なワークストリームに含まれるさまざまな技術チームのメンバー: データベース管理者 (DBA)、AX 2012 のシステム管理者、サーバー管理者、AX 2012 および Finance and Operations に精通している開発者。 このトピックでは、どのタスクがどのロールを含めるかについて説明します。
 
 切替テスト中には、技術チームは、データ アップグレード プロセスのパフォーマンスと信頼性のテストに焦点を当てて、ビジネスのダウンタイム制限を満たすようにします。 ハードウェアとソフトウェアの多くの要素がこのプロセスに関連しています。 これらの要素の一部はオンプレミスですが、他の要素は Microsoft クラウドに含まれています。 加えて、カスタム アプリケーション コードと標準コードの多くの要素が含まれています。 このテストの結果は、環境の切替プロセスを信頼する必要があります。
 
@@ -65,7 +64,7 @@ ms.lasthandoff: 08/09/2018
 > [!NOTE]
 > 技術的なワークストリームについては、切替テストのプロセスは、実際/稼働の切替プロセスの高レベルの手順と同じです。
 
-技術的なワークストリームについては、切替テストのプロセスは [AX 2012 からのアップグレード - サンドボックス環境でのデータ アップグレード](upgrade-data-sandbox.md)で説明したものと同じです。
+技術的なワークストリームについては、切替テストのプロセスは [AX 2012 からのアップグレード - サンドボックス環境でのデータ アップグレード](upgrade-data-sandbox.md) で説明したものと同じです。
 
 ## <a name="functional-workstream"></a>機能的なワーク ストリーム
 
@@ -89,4 +88,3 @@ ms.lasthandoff: 08/09/2018
 ## <a name="roll-back-to-ax-2012"></a>AX 2012 にロールバックする
 
 このタスクの目的は、AX 2012 をオフにしたときのバックアップを使用してデータベースを復元し、AX 2012 を再度オンにすることです。 統合システムの状態も復元する必要があります。 ただし、統合システムは企業間で異なるため、特定の状況に応じてこのシナリオを個別に計画する必要があります。 ロールバックする必要はありませんが、必要な場合に備えてテスト済みのプロセスがあることが非常に重要です。
-

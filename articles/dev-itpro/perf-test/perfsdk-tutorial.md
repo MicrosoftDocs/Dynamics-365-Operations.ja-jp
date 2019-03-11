@@ -1,13 +1,13 @@
 ---
-title: "パフォーマンス SDK および Visual Studio Online を介したマルチ ユーザー テスト"
-description: "このトピックでは、Performance SDK について説明し、Visual Studio Online を使用してマルチユーザー テストを行う方法を示します。"
+title: パフォーマンス SDK および Visual Studio Online を介したマルチ ユーザー テスト
+description: このトピックでは、Performance SDK について説明し、Visual Studio Online を使用してマルチユーザー テストを行う方法を示します。
 author: kfend
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: margoc
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: jujoh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 0348149280bffe9e83e16cd994c1021b5876a6aa
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
-ms.openlocfilehash: c118002b81fe3530ff09c30230a2484df7697980
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/17/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368419"
 ---
-
 # <a name="performance-sdk-and-multiuser-testing-via-visual-studio-online"></a>パフォーマンス SDK および Visual Studio Online を介したマルチ ユーザー テスト
 
 [!include [banner](../includes/banner.md)]
@@ -34,9 +33,9 @@ ms.lasthandoff: 09/17/2018
 > [!NOTE]
 > 管理者として環境を利用できる必要があります。 詳細については、「[アクセス インスタンス](../dev-tools/access-instances.md)」を参照してください。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必要条件
 
-- Microsoft Visual Studio 2015 Enterprise
+- Microsoft Visual Studio 2015 年エンタープライズ
 - 数量データを含むデプロイメント
 - パフォーマンス SDK (SDK は K:\\PerfSDK\\PerfSDKLocalDirectory にある可能性があります。 ただし、環境によっては C:\\PerfSDK にある可能性があります。)
 
@@ -59,7 +58,7 @@ ms.lasthandoff: 09/17/2018
 
 ## <a name="run-a-single-user-performance-test-by-using-the-performance-sdk"></a>パフォーマンス SDK を使用して単一ユーザー パフォーマンス テストを実行
 
-1. Microsoft Windows のコントロール パネルで、**システムとセキュリティ** &gt; **システム** &gt; **システムの詳細設定**を選択します。 **TestRoot**環境変数が PerfSDK フォルダーのパスに設定されていることを確認します。
+1. Microsoft Windows のコントロール パネルで、**システムとセキュリティ**  &gt; **システム** &gt; **システムの詳細設定**を選択します。 **TestRoot**環境変数が PerfSDK フォルダーのパスに設定されていることを確認します。
 
     [![EnvironmentVariable](./media/EnvironmentVariable.PNG)](./media/EnvironmentVariable.PNG)
 
@@ -103,7 +102,7 @@ ms.lasthandoff: 09/17/2018
 
 9. **wif.config** ファイルを更新して Application Object Server (AOS) が証明書を信頼できるようにするには、これらの手順に従います。
 
-    1. Microsoft インターネット インフォメーション サービス (IIS) を起動し、サイトの一覧で **Microsoft Dynamics 365 for Finance and Operations** を見つけます。
+    1. Microsoft インターネット インフォメーション サービス (IIS) を起動し、サイトの一覧にある **Microsoft Dynamics 365 for Finance and Operations** を検索します。
     2. **エクスプローラー** を選択して、**wif.config** ファイルを検索します。
 
         [![wif.config ファイル](./media/wifconfig.jpg)](./media/wifconfig.jpg)
@@ -114,7 +113,7 @@ ms.lasthandoff: 09/17/2018
 
     4. IIS を再起動します。
 
-10. Visual Studio で、**PerfSDKSample** プロジェクトを開き、**PurchaseReq.cs** ファイルを検索します。 このファイルは、サンプル シングルユーザー テストです。 ファイルで、次の行をコメントアウトします。
+10. Visual Studio で **PerfSDKSample** プロジェクトを開き、**PurchaseReq.cs** ファイルを検索します。 このファイルは、サンプル シングルユーザー テストです。 ファイルで、次の行をコメントアウトします。
 
     ```
     if (this.TestContext !=null)
@@ -187,12 +186,12 @@ _userContext.Dispose();
 
 ## <a name="set-up-azure-devops-for-multiuser-testing"></a>Azure DevOps でマルチ ユーザー テストを設定
 
-この例では、ユーザーは ProcureToPay.cs ファイルを使用します。 Visual Studio を開始するにサインインする必要があります、[[Azure DevOps ポータル](https://app.vssps.visualstudio.com/profile/view)] にサインインし、**Visual Studioで開く** を選択する必要があります。
+この例では、ユーザーは ProcureToPay.cs ファイルを使用します。 Visual Studio を開始するにサインインする必要があります、[Azure DevOps ポータル](https://app.vssps.visualstudio.com/profile/view)にサインインし、**Visual Studio で開く**を選択する必要があります。
 
 > [!NOTE]
 > このステップは 1 回のみ完了する必要があります。 Azure DevOps にサインインした後、設定が保存されます。
 
-[![Visual Studio で開きます](./media/vsonline-5-1024x323.jpg)](./media/vsonline-5.jpg)
+[![Visual Studio で開く](./media/vsonline-5-1024x323.jpg)](./media/vsonline-5.jpg)
 
 1. **PerfSDKSample** プロジェクトを開きます。
 2. **CloudEnvironment.Config** ファイルで、**UserFormat** エントリを更新して、管理者ユーザー URL を反映します。 たとえば、`admin@example.com` に対して、ユーザー形式として **TST\_{0}@example.com** を使用します。 また、**UserCount** 値をパフォーマンス テストに含めるユーザーの数に変更します。
@@ -242,7 +241,7 @@ _userContext.Dispose();
     Environment.SetEnvironmentVariable("testroot", testroot);
     ```
 
-2. [https://www.microsoft.com/en-us/download/details.aspx?id=50420](https://www.microsoft.com/en-us/download/details.aspx?id=50420)から、SQL サーバーの Microsoft ODBC ドライバー 13 のインストーラー (MSI) ファイルをダウンロードします。 (64 ビット バージョンの .msi ファイルを選択します。) ファイルを **PerfSDK** ディレクトリの **Visual Studio Online** フォルダーに配置します。
+2. [https://www.microsoft.com/en-us/download/details.aspx?id=50420](https://www.microsoft.com/en-us/download/details.aspx?id=50420)から、SQL サーバーの Microsoft ODBC ドライバー 13 のインストーラー (MSI) ファイルをダウンロードします。 (64 ビット バージョンの .msi ファイルを選択します。) ファイルを **PerfSDK** の **Visual Studio Online** フォルダーに配置します。
 3. **Visual Studio Online** フォルダで **setup.cmd** ファイルの内容を変更し、次のコードと一致するようにします。
 
     ```
@@ -271,14 +270,14 @@ _userContext.Dispose();
         - C:\\PerfSDK\\CloudEnvironment.Config
         - C:\\PerfSDK\\authcert.pfx
         - C:\\PerfSDK\\MS.Dynamics.Test.Team.Foundation.WebClient.InteractionService.dll.config
-        - C:\\PerfSDK\\Visual Studio Online\\
+        - C:\\PerfSDK\\Visual Studio オンライン\\
 
         [![フィールドを配置するための追加ファイルおよびディレクトリ](./media/PerfSDKOnlineTestSettings.PNG)](./media/PerfSDKOnlineTestSettings.PNG)
 
         > [!NOTE]
         > PerfSDK フォルダーが異なっている場合があります。
 
-7. **スクリプトの設定とクリーンアップ**タブで、**PerfSDK** ディレクトリ内の **Visual Studio Online** フォルダーにある **setup.cmd** ファイルを選択します。
+7. **スクリプトの設定とクリーンアップ** タブで、**PerfSDK** ディレクトリ内の **Visual Studio Online** フォルダーにある **setup.cmd** ファイルを選択します。
 8. **追加設定**タブで、**64 ビット コンピューターで 64 ビット プロセスのテストを実行**を選択します。
 9. テストを実行するには、**SampleLoadTest.loadtest** ファイルを開き、**負荷テストを実行** を選択します。
 
@@ -323,9 +322,9 @@ Initialization method <Test class name>.TestSetup threw exception. System.Invali
 
 Internet Explorer で、次のレジストリ キーを変更することにより、ズーム係数を 100% に変更できます。
 
-- コンピュータ\\HKEY\_現在\_ユーザー\\ソフトウェア\\Microsoft\\Internet Explorer\\ズーム\\ResetZoomOnStartup = 0
-- コンピュータ\\HKEY\_現在\_ユーザー\\ソフトウェア\\Microsoft\\Internet Explorer\\ズーム\\ResetZoomOnStartup2 = 0
-- コンピュータ\\HKEY\_現在\_ユーザー\\ソフトウェア\\Microsoft\\Internet Explorer\\ズーム\\Zoomfactor = 80000
+- Computer\\HKEY\_CURRENT\_USER\\SOFTWARE\\Microsoft\\Internet Explorer\\Zoom\\ResetZoomOnStartup = 0
+- Computer\\HKEY\_CURRENT\_USER\\SOFTWARE\\Microsoft\\Internet Explorer\\Zoom\\ResetZoomOnStartup2 = 0
+- Computer\\HKEY\_CURRENT\_USER\\SOFTWARE\\Microsoft\\Internet Explorer\\Zoom\\Zoomfactor = 80000
  
 使用されているローカル コンピューターのバージョンによっては、リモート デスクトップ プロトコル (RDP) セッションを開始する前に、**テキスト、アプリ、その他のアイテムのサイズを変更**を選択する必要があります。 このフィールドは、Windows の**表示設定**で使用できます。 
  
@@ -427,7 +426,7 @@ Initialization method <Test class name>.TestSetup threw exception. System.Servic
     MS.Dynamics.Performance.CreateUsers.exe
     ```
 
-    CreateUsers スクリプトを引数なしで実行すると、作成されたテスト ユーザーの電子メール アドレスは正しくフォーマットされません。 これらのユーザーを使用してテストを実行すると、テストは禁止された要求のエラーを生成します。 このシナリオがエラーの原因であることを確認するには、Microsoft Dynamics 365 for Finance and Operations でユーザーを表示します テスト ユーザーの正しくない電子メール アドレスは、次の図の電子メール アドレスに類似します。
+    CreateUsers スクリプトを引数なしで実行すると、作成されたテスト ユーザーの電子メール アドレスは正しくフォーマットされません。 これらのユーザーを使用してテストを実行すると、テストは禁止された要求のエラーを生成します。 このシナリオで Microsoft Dynamics 365 for Finance and Operations のユーザーを表示することによってエラーが発生することを確認できますします。 テスト ユーザーの正しくない電子メール アドレスは、次の図の電子メール アドレスに類似します。
 
     [![電子メール アドレスの設定が正しくない](./media/PerfSDKBadUserFormat.PNG)](./media/PerfSDKBadUserFormat.PNG)
 
@@ -558,4 +557,3 @@ System.TypeInitializationException: The type initializer for 'MS.Dynamics.TestTo
 #### <a name="solution"></a>ソリューション
 
 この問題を解決する修正プログラムが利用可能です。 Microsoft サポート技術情報 (KB) 番号は 4095640 です。
-

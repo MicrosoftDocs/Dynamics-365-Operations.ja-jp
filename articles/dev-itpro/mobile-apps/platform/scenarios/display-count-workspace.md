@@ -1,30 +1,29 @@
 ---
-title: "フィールドに数を表示"
-description: "このトピックでは、正確で、迅速に表示される数を計算する方法について説明します。"
+title: フィールドに数を表示
+description: このトピックでは、正確で、迅速に表示される数を計算する方法について説明します。
 author: makhabaz
 manager: AnnBe
 ms.date: 07/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: robinr
 ms.search.scope: Operations
 ms.custom: 255544
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: makhabaz
 ms.search.validFrom: 2017-07-20
 ms.dyn365.ops.version: Platform update 3
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: c73c504301945cf371dd10e5508a44222724a8fc
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368332"
 ---
-
 # <a name="show-counts-in-fields"></a>フィールドに数を表示
 
 [!include [banner](../../../includes/banner.md)]
@@ -53,5 +52,4 @@ ms.lasthandoff: 08/09/2018
     ![ビジネス ロジックの変更](media/optimizing-workspace/ChangesToBL.png)
 
 この方法を使用することにより、**pageLink** コントロールのローカライズされたラベルも取得します。 ワークスペースが読み込まれると、結果ははるかに高速になります。
-
 

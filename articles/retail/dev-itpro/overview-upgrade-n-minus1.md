@@ -1,13 +1,13 @@
 ---
-title: "アップグレードおよび 小売用 N-1 サポート"
-description: "Dynamics 365 for Retail のリリースで、アップグレードと N-1 サポートが有効になりました。 N-1 のサポートによって、AX 2012 R3 CU10 を実行する店舗を持つ顧客は、アップグレード後に Dynamics 365 for Retail headquarters で作業できます。"
+title: アップグレードおよび 小売用 N-1 サポート
+description: Dynamics 365 for Retail のリリースで、アップグレードと N-1 サポートが有効になりました。 N-1 のサポートによって、AX 2012 R3 CU10 を実行する店舗を持つ顧客は、アップグレード後に Dynamics 365 for Retail headquarters で作業できます。
 author: athinesh99
 manager: AnnBe
 ms.date: 11/14/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: Dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations, Retail
@@ -16,15 +16,14 @@ ms.search.region: Global
 ms.author: athinesh
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
 ms.openlocfilehash: b16c2543f87f6d7b9f394c17728a7bee3dc52050
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368807"
 ---
-
-# <a name="upgrade-and-n-1-support-for-retail"></a>アップグレードおよび 小売用 N-1 サポート
+# <a name="upgrade-and-n-1-support-for-retail"></a>Retail のアップグレードおよび N-1 のサポート
 
 [!include [banner](../../includes/banner.md)]
 
@@ -38,7 +37,7 @@ Microsoft Dynamics 365 for Retail の 7 月のリリースで、アップグレ�
 - アップグレード プロセスでは、エラー処理とメッセージングが強化されているため、顧客は問題を迅速にデバッグできます。
 - ユーザーは、ツールを使用して、既存の小売用バック オフィスのカスタムの X++ コードを、そのバック オフィスのアップグレードされたバージョンに移行することができます。
 
-アップグレード手順は、Retail を最新バージョンにアップグレードする手順とほぼ同じです。 一般にアップグレードに関する詳細については、[アップグレードの概要: AX 2012 を Dynamics 365 for Retail へ](../../dev-itpro/migration-upgrade/upgrade-overview-2012.md) を参照してください。
+アップグレード手順は、Retail を最新バージョンにアップグレードする手順とほぼ同じです。 一般に、アップグレードに関する詳細については、「[AX 2012 から Dynamics 365 for Retail へのアップグレードの概要](../../dev-itpro/migration-upgrade/upgrade-overview-2012.md)」を参照してください。
 
 計画的なダウンタイムが必要です。 アップグレード分析を最初に行います。 アップグレード分析は、Microsoft Dynamics AX 2012 データベースに対して実行され、Microsoft Dynamics Lifecycle Services (LCS) 診断サービスに基づいています。 このステップでは、アップグレードをより迅速かつ低コストで行うための作業を特定します。 また、必要な SQL 構成、データ バックオフィス クリーンアップ、推奨されない機能を識別します。
   
@@ -50,5 +49,4 @@ N-1 サポートで、顧客は、小売用バックオフィスで N-1 パッ�
 
 小売用バックオフィスをアップグレードし、N-1 セットアップを完了した後、N-1 店舗のコンポーネントは、小売用バック オフィスと通信できます。 N-1 のサポートのためにインストールが必要なチャネル側コンポーネントはありません。 ただし、小売用バックオフィスと通信する N-1店舗を有効にし、レジ担当者は初めてサインインするそのパスワードを変更する必要があります。
  
-N-1 インストールする手順については、[Microsoft Dynamics 365 for Retail で使用する N-1 コンポーネントをインストールする](n-1-installation-configuration.md) を参照してください。
-
+N-1 インストール手順については、「[Microsoft Dynamics 365 for Retail で使用する N-1 コンポーネントのインストール](n-1-installation-configuration.md)」を参照してください。

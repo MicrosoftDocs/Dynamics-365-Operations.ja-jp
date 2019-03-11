@@ -1,13 +1,13 @@
 ---
-title: "移行後のフォームのフォーム パターン"
-description: "このトピックでは、移行するフォームに最適なフォーム パターンを選択するのに役立つ情報を提供します。"
+title: 移行後のフォームのフォーム パターン
+description: このトピックでは、移行するフォームに最適なフォーム パターンを選択するのに役立つ情報を提供します。
 author: jasongre
 manager: AnnBe
 ms.date: 11/09/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 209804c4a733c350566fa1ac90d670750ca66a79
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369324"
 ---
-
 # <a name="form-patterns-for-migrated-forms"></a>移行後のフォームのフォーム パターン
 
 [!include [banner](../includes/banner.md)]
@@ -508,7 +507,6 @@ ms.lasthandoff: 08/09/2018
 ![HowToSelectAFormPattern (30)](./media/howtoselectaformpattern-30.jpg)
 
 [分析コード式ビルダー](../financial/dimension-expression-builder-subpattern.md) このフォーム パターンは、分析コード式ビルダー コントロールを含むコンテナーで使用します。
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "セクション タブ付きリストのサブパターン"
-description: "この記事では、セクション タブ付きリストのサブパターンに関する情報を提供します。 このサブパターンは、それぞれにデータのフィルタ処理されたリストを含む垂直タブセットが入ったパノラマ セクション専用の、運用ワークスペース パターンの一部として使用されます。"
+title: セクション タブ付きリストのサブパターン
+description: この記事では、セクション タブ付きリストのサブパターンに関する情報を提供します。 このサブパターンは、それぞれにデータのフィルタ処理されたリストを含む垂直タブセットが入ったパノラマ セクション専用の、運用ワークスペース パターンの一部として使用されます。
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 61b0bd619eef4e20b68b08d338e6d2d31e76141d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 9db48ebafaddb57d4ebfd9ce316743f720538fff
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368806"
 ---
-
 # <a name="section-tabbed-list-subpattern"></a>セクション タブ付きリストのサブパターン
 
 [!include [banner](../includes/banner.md)]
@@ -39,7 +38,7 @@ ms.lasthandoff: 04/20/2018
 ## <a name="wireframe"></a>ワイヤーフレーム
 [![sectionTabbedListWireframe](./media/sectiontabbedlistwireframe.png)](./media/sectiontabbedlistwireframe.png)
 
-## <a name="pattern-changes-for-microsoft-dynamics-ax"></a>Microsoft Dynamics AX のパータン変更
+## <a name="pattern-changes-for-microsoft-dynamics-ax"></a>Microsoft Dynamics AX 用のパターンの変更
 このパターンは、Microsoft Dynamics AX 2012 では存在しませんでした。
 
 ## <a name="model"></a>モデル
@@ -82,4 +81,3 @@ ms.lasthandoff: 04/20/2018
 ### <a name="open-issues"></a>未処理の問題
 
 None
-

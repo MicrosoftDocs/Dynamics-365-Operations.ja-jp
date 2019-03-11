@@ -1,13 +1,13 @@
 ---
-title: "X++ と C# の比較"
-description: "このトピックでは、X++ と C# の構文とプログラミングを比較します。"
+title: X++ と C# の比較
+description: このトピックでは、X++ と C# の構文とプログラミングを比較します。
 author: RobinARH
 manager: AnnBe
 ms.date: 07/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: d540d8093743073aa61bd3c7ab3b66dbedd35b03
 ms.openlocfilehash: 564d86ea7f29eb5f4bd5cbb3692e5848381d43eb
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/01/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369251"
 ---
-
 # <a name="x-and-c-comparison"></a>X++ と C# の比較
 
 [!include [banner](../includes/banner.md)]
@@ -68,7 +67,7 @@ ms.lasthandoff: 11/01/2018
 -   `!=` 演算子
 -   `+` 文字列を連結する演算子
 -   Global:: 接頭語を使用する場合と使用しない場合の、メッセージ出力の Global::info
--   Global::error for message output
+-   メッセージ出力の Global::error
 -   文字列区切り文字としての一重引用符および二重引用符 (' および ") の使用。
 
 **注記**: ユーザーに表示される可能性のあるすべての文字列に二重引用符を使用することをお勧めします。
@@ -892,7 +891,7 @@ X++ と C\# 間の例外関連の違いは、次のテーブルで説明しま�
 | <strong>最終的に</strong>| `finally` キーワードは、`try` および `catch` キーワードの後に使用することがサポートされます。| <strong>finally</strong> キーワードは、<strong>try</strong> および <strong>catch</strong> ブロックに従うコードのブロックをマークします。 例外がスローされたかキャッチされたかどうかに関係なく、確定が実行されます。| セマンティクスは C# のセマンティクスと同じです。|
 | 特定の固有| X++ では、例外は、**エラー**、**デッドロック**、または **CodeAccessSecurity** など `Exception` 列挙型の要素です。 別のものを含めることができる例外はありません。| C# では、例外は `System.Exception` 基本クラスまたは継承された任意のクラスのインスタンスです。 スローされた例外の `InnerException` プロパティに例外を含めることができます。| X++ では、スローされた各例外は Exception 列挙型の値です。 詳細については、「例外列挙」を参照してください。|
 | 例外メッセージ| X++ では、例外が発生したときに作成されるメッセージは情報ログでのみ使用でき、そのメッセージは例外に直接関連付けられません。| C# では、メッセージは `System.Exception` オブジェクトの `Message` のメンバーです。| X++ では、Global::error メソッドは情報ログで例外メッセージを表示するメカニズムです。 詳細については、「トライおよびキャッチ キーワードで例外処理」を参照してください。|
-| 例外条件| X++ では、まだ何も代入されていないオブジェクト変数でインスタンス メソッドを呼び出すとエラーが発生します。 ただし、このエラーと共に例外は発生しません。 したがって、割り当てられていない変数が `try` ブロックで誤用されても、`catch` ブロックは制御を獲得できません。 次のコード例では、コード `box4.toString();` で発生したエラーにより、コントロールは任意の `catch` ブロックに移行しません。`DialogBox box4;``try` { ` box4.toString();`` info("toString did not error, but expected an error.");` } catch (Exception::Error) // これを検出する例外値はありません。 { ` info("Invalid use of box4 gave control to catch, unexpected.");` }| C# では、初期化されていない変数がオブジェクト参照として扱われる場合、`System.NullReferenceException` が発生します。
+| 例外条件| X++ では、まだ何も代入されていないオブジェクト変数でインスタンス メソッドを呼び出すとエラーが発生します。 ただし、このエラーと共に例外は発生しません。 したがって、割り当てられていない変数が `try` ブロックで誤用されても、`catch` ブロックは制御を獲得できません。 次のコード例では、コード `box4.toString();` で発生したエラーにより、コントロールは任意の `catch` ブロックに移行しません。`DialogBox box4;` `try` { ` box4.toString();` ` info("toString did not error, but expected an error.");` } catch (Exception::Error) // これを検出する例外値はありません。 { ` info("Invalid use of box4 gave control to catch, unexpected.");` }| C# では、初期化されていない変数がオブジェクト参照として扱われる場合、`System.NullReferenceException` が発生します。
 | 例外を発生させる条件にはいくつかの相違点があります。|
 | SQL トランザクション| X++ で、SQL 例外が <strong>ttsBegin</strong> - <strong>ttsCommit</strong> トランザクションで発生する場合、そのトランザクション ブロック内の <strong>catch</strong> ステートメントは例外を処理できます。| C# では、SQL トランザクション内部の catch ブロックは例外を検出できます。| |
 
@@ -1037,7 +1036,7 @@ End of program.
 
 ### <a name="code-samples-for-retry"></a>再試行のためのコード サンプル
 
-次の X++ サンプル プログラムは、Exception :: Error を発生させます。 これは、最初に無効なインデックス値を使用して `sStrings` 配列から要素を読み取ろうとするときに発生します。 例外がキャッチされると、**catch** ブロック内で、実行時に是正措置が行われます。 その後再試行ステートメントは、**try** ブロックの最初のステートメントに戻ります。 この 2 回目の繰り返しは、例外が発生することなく動作します。
+次の X++ サンプル プログラムは、Exception::Error を発生させます。 これは、最初に無効なインデックス値を使用して `sStrings` 配列から要素を読み取ろうとするときに発生します。 例外がキャッチされると、**catch** ブロック内で、実行時に是正措置が行われます。 その後再試行ステートメントは、**try** ブロックの最初のステートメントに戻ります。 この 2 回目の繰り返しは、例外が発生することなく動作します。
 
 <pre>
 static void JobRs008b_ExceptionsAndRetry(Args _args)
@@ -1103,7 +1102,7 @@ End of X++ retry program.
                 if (bReturnCode)
                 {
                     bReturnCode = this
-  .Rs008b_CSharp_ExceptionsAndRetry_Callee (参照 iIndex); } 他 { break; } } Console.WriteLine(「呼び出し元メソッドの終了」); } プライベート ブール Rs008b_CSharp_ExceptionsAndRetry_Callee (参照 int iIndex) { bool bReturnCode = true; // このメソッドを再び呼び出します。
+  .Rs008b_CSharp_ExceptionsAndRetry_Callee (ref iIndex); } else { break; } } Console.WriteLine("End of C# caller method."); } private bool Rs008b_CSharp_ExceptionsAndRetry_Callee (ref int iIndex) { bool bReturnCode = true; // このメソッドを再び呼び出します。
 string[] sStrings = new string[4]; string sTemp; sStrings[0] = "最初の配列要素。"; try { Console.WriteLine("try ブロックのトップで: " + iIndex.ToString()); sTemp = sStrings[iIndex]; Console.WriteLine( "配列要素は: " + sTemp ); bReturnCode = false; // このメソッドを再び呼び出さないことを意味します。
 } catch (Exception) { Console.WriteLine ("In catch of -- Exception. Entering catch."); ++iIndex; // The 'ref' parameter in C#。
 Console.WriteLine ("In catch of -- Exception. catch をそのままにします。」)。//retry; // C# では caller メソッドに retry キーワードが // X++ で行う作業をさせます。
@@ -1555,6 +1554,5 @@ End.
 |null の結果。|**while** select ステートメントで、**where** 句がすべての行を除外する場合、それをレポートする特別なカウント行は返されません。|**select** で、**where** 句がすべての行を除外する場合、特別なカウント行が返されます。 カウント値は 0 です。|コメントはありません。|
 |戻された行を移動するためのカーソル。|while select 文は、カーソル機能を提供します。 代わりに、**next** キーワードを使用することもできます。|**select** ステートメントから戻される行間ループのために、**cursor** を宣言することができます。||
 |**From** 句。|列がリストされず、1 つのテーブルだけが参照される場合、**from** キーワードはオプションです。 次の 2 つの構文オプションは同等です。 <br>`select \* from tCustTable;` <br>`select tCustTable;`|**選択**ステートメントは、**from** 句が使用されていない限り、テーブルから読み取ることはできません。|X++ SQL では、シンプルな**選択**ステートメントが返された最初の行でテーブル バッファ変数を入力します。 これは、次のコード フラグメントによって示されています。 <br>`select \* from tCustTable;` <br>`info(tCustTable.Name);`|
-
 
 

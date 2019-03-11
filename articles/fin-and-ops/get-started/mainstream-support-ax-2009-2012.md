@@ -1,29 +1,28 @@
 ---
-title: "Microsoft Dynamics AX 2009、Dynamics AX 2012、Dynamics AX 2012 R2 のメインストリーム サポートの終了"
-description: "このトピックでは、Microsoft Dynamics AX 2009、Dynamics AX 2012、Dynamics AX 2012 R2 のメインストリーム サポートの終了に関する詳細情報を提供します。"
+title: Microsoft Dynamics AX 2009、Dynamics AX 2012、および Dynamics AX 2012 R2 のメインストリーム サポートの終了
+description: このトピックでは、Microsoft Dynamics AX 2009、Dynamics AX 2012、Dynamics AX 2012 R2 のメインストリーム サポートの終了に関する詳細情報を提供します。
 author: meeramahabala
 manager: AnnBe
 ms.date: 10/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2018-10-31
-ms.dyn365.ops.version: 8.1
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
+ms.dyn365.ops.version: 8.0999999999999996
 ms.openlocfilehash: b0b13a5f55c52ecd27025f82ece464694afd9d35
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369954"
 ---
-
-# <a name="end-of-mainstream-support-for-microsoft-dynamics-ax-2009-dynamics-ax-2012-and-dynamics-ax-2012-r2"></a>Microsoft Dynamics AX 2009、Dynamics AX 2012、Dynamics AX 2012 R2 のメインストリーム サポートの終了
+# <a name="end-of-mainstream-support-for-microsoft-dynamics-ax-2009-dynamics-ax-2012-and-dynamics-ax-2012-r2"></a>Microsoft Dynamics AX 2009、Dynamics AX 2012、および Dynamics AX 2012 R2 のメインストリーム サポートの終了
 
 [!include[banner](../includes/banner.md)]
 
@@ -35,8 +34,8 @@ Dynamics AX 2009 SP1、Dynamics AX 2012 および Dynamics AX 2012 R2 の顧客�
 
 Dynamics 365 for Finance and Operations の最新バージョンにアップグレードすることを推奨します。
 
-- Dynamics AX 2009 Service Pack 1 ユーザーは、入手可能な[移行ツール](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-home-page)を使用してください。
-- Dynamics AX 2012 および Dynamics AX 2012 R2 ユーザーは、入手可能なアップグレード ツールを使って Dynamics AX 2012 R3 を通じて Dynamics 365 for Finance and Operations にアップグレードする必要があります。 アップグレードに関する追加情報は、[AX 2012 から Finance and Operations へのアップグレード](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-overview-2012)トピックにあります。
+- Dynamics AX 2009 Service Pack 1 ユーザーは、入手可能な「[移行ツール](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-home-page)」を使用してください。
+- Dynamics AX 2012 および Dynamics AX 2012 R2 ユーザーは、入手可能なアップグレード ツールを使って Dynamics AX 2012 R3 を通じて Dynamics 365 for Finance and Operations にアップグレードする必要があります。 アップグレードに関する追加情報は、「[AX 2012 から Finance and Operations へのアップグレード](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-overview-2012)」トピックにあります。
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
@@ -69,4 +68,3 @@ Dynamics 365 for Finance and Operations の最新バージョンにアップグ�
 ### <a name="how-are-binary-hotfixes-handled-for-dynamics-ax-2009-service-pack-1-dynamics-ax-2012-and-dynamics-ax-2012-r2"></a>Dynamics AX 2009 Service Pack 1、Dynamics AX 2012、および Dynamics AX 2012 R2 のバイナリ修正プログラムはどのように処理されますか?
 
 Microsoft がソース コードを提供しないシステムの一部に修正プログラムが必要であり、セキュリティ不具合ではない場合、修正プログラムは提供されません。
-

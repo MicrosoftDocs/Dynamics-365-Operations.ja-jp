@@ -1,30 +1,29 @@
 ---
-title: "カスタム モデルの開発とオンプレミス環境への配置"
-description: "このトピックでは、カスタマイズと拡張機能を開発し、オンプレミス環境に展開するプロセスについて説明します。"
+title: カスタム モデルの開発とオンプレミス環境への配置
+description: このトピックでは、カスタマイズと拡張機能を開発し、オンプレミス環境に展開するプロセスについて説明します。
 author: kfend
 manager: AnnBe
 ms.date: 06/09/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Operations
 ms.custom: 107013
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 8
+ms.openlocfilehash: 8181af97392d58304bc3520fa4d783acc492f567
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 4877a9c08bd79fc07a6bdcf5f02d8ae5f4cec5c5
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368520"
 ---
-
 # <a name="develop-and-deploy-custom-models-to-on-premises-environments"></a>カスタム モデルの開発とオンプレミス環境への配置
 
 [!include [banner](../includes/banner.md)]
@@ -85,7 +84,7 @@ Azure サブスクリプションに開発環境またはビルド環境を展�
 3. 展開可能なパッケージをアップロードするには、プラス記号 (**+**) をクリックします。 
 
 ## <a name="configure-an-on-premises-runtime-environment-that-uses-your-code"></a>コードを使用するオンプレミスのランタイム環境をコンフィギュレーションする
-2017 年 7 月リリースの Microsoft Dynamics 365 for Finance and Operations (オンプレミス) では、サンボックスの配置または実稼動中にのみカスタマイズや拡張機能を適用できます。
+2017 年 7 月リリースの Microsoft Dynamics 365 for Finance and Operations (オンプレミス) では、サンボックスの配置または実稼動環境中にのみカスタマイズや拡張機能を適用できます。
 
 1. LCS プロジェクトで、**構成**をクリックして環境を配置します。
 
@@ -101,4 +100,3 @@ Azure サブスクリプションに開発環境またはビルド環境を展�
 
 4. **展開する AOT パッケージの選択**フィールドで、カスタマイズを含むアプリケーション (AOT) の展開可能パッケージを選択します。 このフィールドには、アセット ライブラリのすべての AOT パッケージがリストされます。
 5. **完了**をクリックして**配置設定**ページを閉じ、環境の展開プロセスを続行します。
-

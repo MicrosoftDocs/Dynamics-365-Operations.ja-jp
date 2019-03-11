@@ -1,13 +1,13 @@
 ---
-title: "リスト パネルのサブパターン"
-description: "この記事では、リスト パネル フォームのサブパターンに関する情報を提供します。 アプリケーション チームはこのサブパターンを使用して相互にデータを移動する 2 つのリストを管理します。"
+title: リスト パネルのサブパターン
+description: この記事では、リスト パネル フォームのサブパターンに関する情報を提供します。 アプリケーション チームはこのサブパターンを使用して相互にデータを移動する 2 つのリストを管理します。
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 9290114388b210dfdfd980e293df2e21d0aa50ea
 ms.openlocfilehash: 4c788fb4dc7d463e1d22e0585d3e616c0437425b
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/20/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368888"
 ---
-
 # <a name="list-panel-subpattern"></a>リスト パネルのサブパターン
 
 [!include [banner](../includes/banner.md)]
@@ -117,9 +116,8 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 
 ### <a name="open-issues"></a>未処理の問題
 
--   None
+-   なし
 
 ### <a name="ax-2012-content"></a>AX 2012 コンテンツ
 
 [![ListPanel(4)](./media/listpanel4.png)](./media/listpanel4.png)
-

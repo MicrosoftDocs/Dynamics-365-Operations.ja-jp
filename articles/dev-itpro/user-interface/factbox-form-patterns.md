@@ -1,13 +1,13 @@
 ---
-title: "情報ボックスのフォーム パターン"
-description: "このトピックでは、FactBox フォームのパターンについて説明します。 情報ボックスはレコードに関連情報を指定するために使用されます。"
+title: 情報ボックスのフォーム パターン
+description: このトピックでは、FactBox フォームのパターンについて説明します。 情報ボックスはレコードに関連情報を指定するために使用されます。
 author: jasongre
 manager: AnnBe
 ms.date: 11/09/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 10ab104d4bd35e7ef3f0e41f6dc9321543f9084f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: b07e62cc4962f159ac263cf5e5006883f18870ef
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369923"
 ---
-
 # <a name="factbox-form-patterns"></a>情報ボックスのフォーム パターン
 
 [!include [banner](../includes/banner.md)]
@@ -149,7 +148,7 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 
 ### <a name="ax-2012-content"></a>AX 2012 コンテンツ
 
-#### <a name="ax-2012-links"></a>AX 2012 のリンク
+#### <a name="ax-2012-links"></a>AX 2012 リンク
 
 -   [AX 2012 MSDN リスト ページ ガイドライン (FactBoxes を含む)](http://msdn.microsoft.com/EN-US/library/gg853328.aspx)
 
@@ -158,4 +157,3 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 **CustTable** &gt; **ContactsInfoPart** 
 
 [![情報ボックス (5)](./media/factbox5.png)](./media/factbox5.png)
-

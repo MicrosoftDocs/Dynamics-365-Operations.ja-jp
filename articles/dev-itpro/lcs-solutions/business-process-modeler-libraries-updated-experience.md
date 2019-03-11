@@ -1,13 +1,13 @@
 ---
-title: "ビジネス プロセス モデラーのライブラリ (更新された BPM エクスペリエンス )"
-description: "このトピックでは、更新されたビジネス プロセス モデラー (BPM) ライブラリ エクスペリエンスを作成して使用する方法について説明します。"
+title: ビジネス プロセス モデラーのライブラリ (更新された BPM エクスペリエンス )
+description: このトピックでは、更新されたビジネス プロセス モデラー (BPM) ライブラリ エクスペリエンスを作成して使用する方法について説明します。
 author: kfend
 manager: AnnBe
 ms.date: 06/13/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Lifecycle Services
@@ -15,14 +15,13 @@ ms.custom: 196953
 ms.assetid: 6e7h6896-edef-4739-98ad-c9ea12880972
 ms.search.region: Global
 ms.author: omarc
-ms.translationtype: HT
-ms.sourcegitcommit: 0a66ec615a91c84c1e47592394b95ee813baa2bd
 ms.openlocfilehash: cf8b6d0057a31504ef3a6b77f81525d7f01ddd26
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369555"
 ---
-
 # <a name="business-process-modeler-library-updated-bpm-experience"></a>ビジネス プロセス モデラーのライブラリ (更新された BPM エクスペリエンス )
 
 [!include [banner](../includes/banner.md)]
@@ -34,7 +33,7 @@ ms.lasthandoff: 08/09/2018
 
 BPM ライブラリを作成する 2 つの方法があります。 明細行記録またはタスク記録がない新しいライブラリを作成、または既存のライブラリをコピーすることができます。
 
-1.  Microsoft Dynamics Lifecycle Services (LCS) で、プロジェクトを開き、**追加ツール**セクションが表示されるまで右にスクロールしてから、**ビジネス プロセス モデラー**タイルを選択します。 ３ つのセクション (ライブラリのタイプごとに1つずつ) が表示される **業務プロセス ライブラリ** ページ:
+1.  Microsoft Dynamics Lifecycle Services (LCS) で、プロジェクトを開き、**追加ツール** セクションが表示されるまで右にスクロールしてから、**ビジネス プロセス モデラー** タイルを選択します。 ３ つのセクション (ライブラリのタイプごとに1つずつ) が表示される **業務プロセス ライブラリ** ページ:
 
     -   **自分のライブラリ** – ユーザーが作成または追加したビジネス プロセス。
     -   **コーポレート ライブラリ** - 組織内のユーザーがアップロードした独自の業務プロセス。
@@ -94,7 +93,7 @@ BPM ライブラリを作成する 2 つの方法があります。 明細行記
 
 ## <a name="create-a-task-recording-and-associate-it-with-a-business-process"></a>タスク記録を作成し、業務プロセスに関連付ける
 
-カスタム データとカスタマイズを持つ Microsoft Finance and Operations 環境では、タスク記録を作成する必要があります。 タスク レコーダーに関する参照情報については、「[Microsoft Dynamics 365 for Finance and Operations のタスク レコーダー](../user-interface/task-recorder.md)」を参照してください。
+カスタム データとカスタマイズを持つ Microsoft Finance and Operations 環境では、タスク記録を作成する必要があります。 タスク レコーダーの詳細については、[Microsoft Dynamics 365 for Finance and Operations のタスク レコーダー](../user-interface/task-recorder.md)を参照してください。
 
 ### <a name="create-a-task-recording"></a>タスク記録の作成
 
@@ -134,8 +133,7 @@ LCS の業務プロセス ライブラリで記録するタスクを表示でき
 6.  完了したら、**タスク ガイドの停止**を選択します。
 
 
-<a name="additional-resources"></a>その他のリソース
+<a name="additional-resources"></a>追加リソース
 --------
 
 [AppSource の Dynamics 365 for Finance and Operations アプリを公開](lcs-solutions-app-source.md)
-

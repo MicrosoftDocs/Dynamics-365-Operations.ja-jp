@@ -1,13 +1,13 @@
 ---
-title: "テスト データ転送ツール (ベータ) の実行"
-description: "このトピックでは、Microsoft Dynamics AX でデータ転送ツールのテストを実行する方法について説明します。"
+title: テスト データ転送ツール (ベータ) の実行
+description: このトピックでは、Microsoft Dynamics AX でデータ転送ツールのテストを実行する方法について説明します。
 author: kfend
 manager: AnnBe
 ms.date: 11/13/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012
-ms.service: 
-ms.technology: 
+ms.service: ''
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: AX 2012
@@ -15,16 +15,15 @@ ms.custom: 17571
 ms.assetid: f98591d7-f3ba-416c-982b-350823f16dad
 ms.search.region: Global
 ms.author: kfend
-ms.search.validFrom: 
+ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: ce39c8e14565bcc3babf3051cf5d8caf0d92accf
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369982"
 ---
-
 # <a name="run-the-test-data-transfer-tool-beta"></a>テスト データ転送ツール (ベータ) の実行
 
 [!include [banner](../../includes/banner.md)]
@@ -32,7 +31,7 @@ ms.lasthandoff: 08/09/2018
 <a name="security-and-permissions"></a>セキュリティおよびアクセス許可
 ------------------------
 
-テスト データを転送ツール (ベータ) に必要なのは、Microsoft SQL Server のアクセス許可のみです。
+テスト データ転送ツール (ベータ) には、Microsoft SQL Server アクセス許可のみが必要です。
 
 > [!WARNING]
 > テスト データ転送ツール (ベータ) では、Microsoft Dynamics AX に組み込まれているセキュリティ メカニズムはまったく認識されません。
@@ -145,7 +144,7 @@ Metadata.xml ファイルを更新するには、次の手順を実行します�
 これらのフィルタは、要件に完全ではないかもしれません。 たとえば、既定でフィルター除外されるデータの一部をエクスポートする、またはエクスポートされない追加のテーブルがある場合があります。
 
 > [!IMPORTANT]
-> テーブルが含まれている場合、**RecVersion**列で、テスト データ転送ツール (beta) テーブルで現在の値を無視し、常に1の値を使用して、テーブルをエクスポートします。 この機能を使用すると、.out ファイルを比較して意味のある違いのみを簡単に確認できます。 この機能は、データをバージョン管理システムに保存する場合に特に便利です。 ほとんどの Microsoft Dynamics AX テーブルには、**RecVersion** 列が含まれています。
+> テーブルが含まれている場合、**RecVersion**列で、テスト データ転送ツール (beta) テーブルで現在の値を無視し、常に1の値を使用して、テーブルをエクスポートします。 この機能を使用すると、.out ファイルを比較して意味のある違いのみを簡単に確認できます。 この機能は、データをバージョン管理システムに保存する場合に特に便利です。 ほとんどの Microsoft Dynamics AX テーブルには、**RecVersion** 列が含まれます。
 
 次のテーブルでは、標準除外ファイルと Filters.xml ファイルで使用されるエクスポート方法について説明します。
 
@@ -274,7 +273,6 @@ DP.exe インポート Import_March2013 AXTestDB
 
 ## <a name="run-sql-scripts-after-import"></a>インポート後に SQL スクリプトを実行
 テスト データ転送ツール (ベータ) では、インポートを完了した後に SQL スクリプトを実行できます。 インポートされたデータに対して行う変更は、SQL スクリプトを使用することによって完了できます。 データのインポートを完了する前に、SQL スクリプトを作成し、ツールと同じ場所にある\[インポート\] サブフォルダーに .sql ファイルとして保存します。 インポートが完了したら、ツールは、\[インポート\] フォルダに保存されている SQL スクリプト ファイルを自動的に実行します。
-
 
 
 

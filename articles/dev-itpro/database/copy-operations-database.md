@@ -1,13 +1,13 @@
 ---
-title: "後で復元する Finance and Operations のデータベースのコピーをエクスポートする"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations database のデータベースをファイルにエクスポートし、そのファイルを同じインスタンスまたはアプリケーションの別のインスタンスに再度インポートする方法について説明します。"
+title: 後で復元する Finance and Operations のデータベースのコピーをエクスポートする
+description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations データベースをファイルにエクスポートしてから、そのファイルをアプリケーションの同じインスタンスかまたは別のインスタンスに再インポートする方法を説明します。
 author: LaneSwenka
 manager: AnnBe
 ms.date: 12/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: margoc
 ms.search.scope: Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: LaneSwenka
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.translationtype: HT
-ms.sourcegitcommit: 0cdf6e0a15bb61f4529de19a76ea2a31e8a945f8
 ms.openlocfilehash: 62e0d3fcea6c1de70c6d2a328c5395befa891f16
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/28/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368951"
 ---
-
 # <a name="export-copies-of-finance-and-operations-databases-to-restore-later"></a>後で復元する Finance and Operations のデータベースのコピーをエクスポートする
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Finance and Operations database のデータベースをファイルにエクスポートし、そのファイルを同じインスタンスまたはアプリケーションの別のインスタンスに再度インポートする方法について説明します。 このステップは、非実稼働環境でのみ使用できます。
+このトピックでは、Microsoft Dynamics 365 for Finance and Operations データベースをファイルにエクスポートしてから、そのファイルをアプリケーションの同じインスタンスかまたは別のインスタンスに再インポートする方法を説明します。 このステップは、非実稼働環境でのみ使用できます。
 
 > [!NOTE]
 > このトピックは、サンド ボックスのユーザー受け入れテスト (UAT) 環境に接続されている Microsoft Azure SQL データベースに適用されます。
@@ -56,7 +55,7 @@ Microsoft は Azure SQL データベース環境を過去 35 日間以内の特�
 リモート デスクトップを使用して、環境内のすべてのコンピュータに接続し、services.msc を使用して次の Windows サービスを停止します。 これらのサービスでは、Finance and Operations のデータベースへの接続が提供されます。
 
 - ワールド ワイド ウェブ公開サービス (すべての AOS コンピュータ上)
-- Microsoft Dynamics 365 for Finance and Operations バッチ管理サービス (非プライベート AOS コンピュータ上のみ)
+- Microsoft Dynamics 365 for Finance and Operations バッチ管理サービス (非プライベート AOS コンピューター上のみ)
 - Management Reporter 2012 のプロセス サービス (BI コンピューターのみ)
 
 ### <a name="import-the-bacpac-file"></a>.bacpac ファイルのインポート
@@ -173,7 +172,7 @@ DEALLOCATE retail_ftx;
 1. リモート デスクトップを使用して、ターゲット環境内のすべてのコンピュータに接続し、services.msc を使用して次の Microsoft Windows サービスを停止します。 これらのサービスでは、Finance and Operations のデータベースへの接続が提供されます。 サービスを停止した後に、既存の Finance and Operations データベースを新しくインポートされたデータベースに置き換えることができます。
 
     - ワールド ワイド ウェブ公開サービス (すべての AOS コンピュータ上)
-    - Microsoft Dynamics 365 for Finance and Operations バッチ管理サービス (非プライベート AOS コンピュータ上のみ)
+    - Microsoft Dynamics 365 for Finance and Operations バッチ管理サービス (非プライベート AOS コンピューター上のみ)
     - Management Reporter 2012 のプロセス サービス (ビジネス インテリジェンス \[BI\] コンピューターのみ)
 
 2. bacpac インポートが実行された AOS コンピューターで、Management Studio の次のスクリプトを実行します。 このスクリプトは、元のデータベースの名前を変更し、新しくインポートされたデータベースの名前を変更して元のデータベース名を使用するようにします。 この例では、元のデータベースは axdb\_123456789 という名前が付けられ、新しくインポートされたデータベースは importeddb という名前が付けられました。
@@ -197,7 +196,7 @@ DEALLOCATE retail_ftx;
 4. services.msc を使用して、以前に停止したサービスを再起動します。
 
     - ワールド ワイド ウェブ公開サービス (すべての AOS コンピュータ上)
-    - Microsoft Dynamics 365 for Finance and Operations バッチ管理サービス (非プライベート AOS コンピュータ上のみ)
+    - Microsoft Dynamics 365 for Finance and Operations バッチ管理サービス (非プライベート AOS コンピューター上のみ)
     - Management Reporter 2012 のプロセス サービス (BI コンピューターのみ)
 
 5. この時点で、Finance and Operations アプリケーション URL を開いてサイン インすることができます。 アプリケーションが予期したとおりに動作することを確認します。 次に、bacpac のインポートを実行した AOS コンピューターの Management Studio で以下のスクリプトを実行して、元のデータベースを削除します。
@@ -215,4 +214,3 @@ DEALLOCATE retail_ftx;
 
 ## <a name="limitations"></a>制限
 データベースをインポートすると、Azure Blob Storage に保管されているデータベースおよびドキュメント処理のドキュメント間のリンクが破損している可能性があります。 X++ **FileUpload** クラスを使用して BLOB ストレージにファイルを格納するカスタム コードがある場合、それらのファイルへのリンクも壊れる可能性があります。
-

@@ -1,13 +1,13 @@
 ---
-title: "為替レート プロバイダーの作成"
-description: "この記事では、為替レート プロバイダーの設定方法について説明します。"
+title: 為替レート プロバイダーの作成
+description: この記事では、為替レート プロバイダーの設定方法について説明します。
 author: RobinARH
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: jbye
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: d80d9173bb8f3ae82fd02d717cda37e0824350e4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: c8b84fa3a4f31c0e59419edd71a03c2f1e175f2b
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368839"
 ---
-
 # <a name="create-exchange-rate-providers"></a>為替レート プロバイダーの作成
 
 [!include [banner](../includes/banner.md)]
@@ -59,7 +58,7 @@ ms.lasthandoff: 04/20/2018
 ## <a name="writing-an-exchange-rate-provider"></a>為替レート プロバイダーを記述
 コード例は、**ExchangeRateProviderOanda** クラスから取得されます。 為替レート プロバイダーを作成するには、これらの手順に従います。
 
-1.  **通貨**モデルで、**IExchangeRateProvider** インターフェイスを実装するクラスを作成します。
+1.  自身の開発モデルで、**IExchangeRateProvider** インターフェイスを実装するクラスを作成します。
 
         using Microsoft.Dynamics.ApplicationSuite.FinancialManagement.Currency.Framework;
         using Microsoft.Dynamics.Currency.Instrumentation;
@@ -444,7 +443,6 @@ ms.lasthandoff: 04/20/2018
 -   **他の為替レート タイプからの為替レートを取得するプロバイダー** – このシナリオにより、さまざまな為替レート タイプ間の為替レートの同期が可能になります。 この機能は、さまざまな元帳間の分離を維持するために、多くの為替レート タイプが存在する状況で役立ちます。 
 -   **為替レート サービスの任意の形式を ExchangeRateResponse クラスのインスタンスに変換するために Extensible Stylesheet Language Transformations (XSLT) を使用するプロバイダー** – このシナリオが実装されると、ユーザーは為替レート サービスに必要な XSLT 変換を追加することができ、アプリケーションはそのサービスをサポートします。 プロバイダー固有のコードは必要ありません。
 -   **一部の為替レート プロバイダー サービスは、消費されるすべてのレートに対して料金を請求します** – サービスで消費されるレート毎に課金されるシナリオのために、このリストの最初のアイデアと、サービスから取得するレートの数の制限を組み合わせることを検討してください。
-
 
 
 

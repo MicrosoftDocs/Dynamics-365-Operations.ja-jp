@@ -1,13 +1,13 @@
 ---
-title: "A クラス"
-description: "文字 A で始まるシステム API クラス。"
+title: A クラス
+description: 文字 A で始まるシステム API クラス。
 author: RobinARH
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 9efb519a03ca5604db541f042dd7ddc1c2b87ef6
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368796"
 ---
-
 # <a name="a-classes"></a>A クラス
 
 [!include [banner](../includes/banner.md)]
@@ -40,7 +39,7 @@ ms.lasthandoff: 08/09/2018
 
 ### <a name="examples"></a>例
 
-### <a name="methods"></a>メソッド
+### <a name="methods"></a>方法
 
 | 方法                                                                            | 説明                                                   |
 |-----------------------------------------------------------------------------------|---------------------------------------------------------------|
@@ -1291,13 +1290,13 @@ AsciiIo クラスのこのインスタンスを作成するために使用する
 ## <a name="class-assemblydeploymanager"></a>クラス AssemblyDeployManager
     class AssemblyDeployManager extends Object
 
-AssemblyDeployManager クラスを使用すると、.NET 呼び出し時に X++ ランタイムによって使用できる AOS VSAssemblies フォルダーに、AOT Visual Studio プロジェクトに格納されているアセンブリを展開できます。
+AssemblyDeployManager クラスを使用すると、.NET 呼び出し時に X++ ランタイムによって使用できる AOS VSAssemblies フォルダーに、AOT Visual Studio プロジェクトに格納されているアセンブリを展開することができます。
 
 ### <a name="remarks"></a>備考
 
 ### <a name="examples"></a>例
 
-### <a name="methods"></a>メソッド
+### <a name="methods"></a>方法
 
 | 方法                                                        | 説明                                                                                             |
 |---------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
@@ -1482,7 +1481,6 @@ Microsoft 社内のみで使用。
 AxaptaCOMConnectorMonitor クラスの新しいインスタンスを初期化します。
 
     public void new()
-
 
 
 

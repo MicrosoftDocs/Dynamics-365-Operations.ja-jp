@@ -1,13 +1,13 @@
 ---
-title: "Lifecycle Services (LCS) での方法"
-description: "LCS の方法では、さらなる反復可能で予測可能な実装プロジェクトを保証するために使用できるツールが提供されます。 いずれかの既成の方法を使用するか、自分の方法を作成することができます。 方法を使用すると、進捗状況を容易に追跡およびレポートすることができます。"
+title: Lifecycle Services (LCS) での方法
+description: LCS の方法では、さらなる反復可能で予測可能な実装プロジェクトを保証するために使用できるツールが提供されます。 いずれかの既成の方法を使用するか、自分の方法を作成することができます。 方法を使用すると、進捗状況を容易に追跡およびレポートすることができます。
 author: kfend
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012
-ms.service: 
-ms.technology: 
+ms.service: ''
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: AX 2012
@@ -15,16 +15,15 @@ ms.custom: 18671
 ms.assetid: 8917c8ca-53dd-49f4-9e41-a3ac1fd9c293
 ms.search.region: Global
 ms.author: kfend
-ms.search.validFrom: 
+ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: edb50814928d87d578b12500d7883c0e5fc8cabf
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368539"
 ---
-
 # <a name="methodologies-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) での方法
 
 [!include [banner](../../includes/banner.md)]
@@ -64,7 +63,6 @@ LCS の方法では、さらなる反復可能で予測可能な実装プロジ�
 --------
 
 [Lifecycle Services のセキュリティのコンフィギュレーション](../configure-lcs-security.md)
-
 
 
 

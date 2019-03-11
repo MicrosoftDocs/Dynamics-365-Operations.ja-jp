@@ -1,30 +1,29 @@
 ---
-title: "標準および対象となるサービス更新"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations のさまざまなリリース オプションについての情報を提供します。"
+title: 標準および対象となるサービス更新
+description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations の各種のリリース オプションについて説明します。
 author: meeramahabala
 manager: AnnBe
 ms.date: 01/02/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Platform update 11
+ms.openlocfilehash: f09fa9e01e47e3bb3ebddce1638aa85d83784ea9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: c093c9af7184d93b1200a8bcab16573f2bb4be09
-ms.openlocfilehash: ad7c59cf288f326463b8a09b4ebaf336bfe1a796
-ms.contentlocale: ja-jp
-ms.lasthandoff: 01/03/2019
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368588"
 ---
-
 # <a name="standard-and-first-release-service-updates"></a>標準および最初のリリース サービス更新
 
 [!include [banner](../includes/banner.md)]
@@ -35,7 +34,7 @@ Dynamics 365 for Finance and Operations では、コストのかかるアップ�
 
 ## <a name="release-processes"></a>プロセスのリリース
 
-それぞれの新しいリリースは、Dynamics 365 for Finance and Operations チームによって設計されます。 新しいリリースはまず機能チームによって、次に Dynamic 365 for Finance and Operations および Retail チームによってテストおよび検証されます。 このとき、広範なテストがさまざまなトポロジで行われます。 互換性チェックでは、下位互換性を確保するためのテストも実行されます。 さらに、複数の顧客データベースおよびコードが、中断が生じないようにするために自動化によりベンチマーク テストされます。
+それぞれの新しいリリースは、Dynamics 365 for Finance and Operations チームによって設計、開発されます。 新しいリリースはまず機能チームによって、次に Dynamic 365 for Finance and Operations および Retail チームによってテストおよび検証されます。 このとき、広範なテストがさまざまなトポロジで行われます。 互換性チェックでは、下位互換性を確保するためのテストも実行されます。 さらに、複数の顧客データベースおよびコードが、中断が生じないようにするために自動化によりベンチマーク テストされます。
 
 - リング 2 は、対象となるリリースです。 今回のリリースは、[Insider プログラム](https://experience.dynamics.com/)を通じてオプトインし、Preview Early Access Program (PEAP) に参加しているパートナー、顧客、および ISV が利用できます。 対象となるリリース時、Microsoft はテレメトリを監視してフィードバックを収集し、主なメトリックスを監視することによってさらに品質を検証します。 この段階では、リリースを開発またはテスト環境に展開する必要があります。 このプレビュー フェーズでは、パートナー、顧客、および ISV はリリースを使用してカスタマイズを検証し、フィードバックを提供します。 このリリースを運用環境で使用することはできません。
 - リング 3 は、オプトインした顧客向けの運用環境に対応した*最初のリリース*です。 この段階では、顧客は、運用環境までこのリリースを使用することを選択でき、Microsoft が更新を管理するか、更新を自己管理するかを選択できます。 最初のリリースに参加することには、更新を正常に行うため、Microsoft エンジニアリング チームに異常がないか更新を詳細に監視してもらえるという利点があります。
@@ -56,7 +55,7 @@ Dynamics 365 for Finance and Operations では、コストのかかるアップ�
 
 最初のリリースでは、Microsoft が、最新の運用環境対応サービス更新を顧客が利用できるようにします。
 
-- **最初のリリースの自動更新**: このプログラムでは、Microsoft が UAT および運用環境の両方の更新を管理します。 このプログラムでは、次の更新について通知された後、指定されたレベル 2 サンドボックスに対するその次の更新について通知されます。 参加者は、Microsoft に直接フィードバックを提供しながら新しい環境で作業することができます。 参加者は、提示された問題について Microsoft から直接サポートを受けます。 その後、次の週に検証済みの更新が運用環境に適用されます。 [Insider プログラム](https://experience.dynamics.com/)を通じてプログラムにサインアップすることができます。
+- **最初のリリースの自動更新**: このプログラムでは、Microsoft が UAT および運用環境の両方の更新を管理します。 このプログラムでは、次の更新について通知された後、指定されたレベル 2 サンドボックスに対するその次の更新について通知されます。 参加者は、Microsoft に直接フィードバックを提供しながら新しい環境で作業することができます。 参加者は、提示された問題について Microsoft から直接サポートを受けます。 その後、次の週に検証済みの更新が運用環境に適用されます。 [Insider プログラム](https://experience.dynamics.com/insider) を通じてプログラムにサインアップすることができます。
 - **最初のリリースを自己更新**: このプログラムでは、運用環境対応更新に早期アクセスでき、選択した環境 (サンドボックスまたは運用環境) に適用することを選択できます。 更新の適用は顧客によって管理され、問題を Microsoft に報告することができます。 このプログラムには、必要な場合に検証のための追加の時間が提供されるという利点があります。 このプログラムのサインアップ オプションは LCS から入手できます。
 
 ## <a name="targeted-release-ring-2"></a>対象となるリリース (リング 2)
@@ -66,4 +65,3 @@ Preview Early Access Program (PEAP) は、顧客、パートナー、および I
 ## <a name="access-targeted-releases-or-first-release"></a>対象となるアクセス リリースまたは最初のリリース 
 
 Finance and Operations の対象となるリリースまたは最初のリリースの参加に興味のあるユーザーで、使用可能なオプションについて知りたい場合は、[Insider プログラム](https://experience.dynamics.com/)を参照します。
-

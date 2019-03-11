@@ -1,13 +1,13 @@
 ---
-title: "機密データへのアクセスを管理"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations のユーザー ログ機能について説明します。"
+title: 機密データへのアクセスを管理
+description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations でのユーザー ログの機能に関する情報を提供します。
 author: ToddLefor
 manager: AnnBe
 ms.date: 12/31/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 250b8763c76ebe8fc71810afae9bb69b41809d23
 ms.openlocfilehash: 40da174d5967097f7b58c0850c5c2693ea03e97b
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369594"
 ---
-
 # <a name="manage-access-to-sensitive-data"></a>機密データへのアクセスを管理
 
 [!include [banner](../includes/banner.md)]
@@ -50,11 +49,10 @@ ms.lasthandoff: 08/09/2018
 ![[ユーザー ログのクリーンアップ] ページ](../media/gdpr-sensitive-data-4.jpg)
 
 >[!Note]
-> この機能はバージョン 8.0 で使用することができます。 この機能は、Dynamics AX 2012 R3 (KB 4074643) を使用した際に有効です。
+> この機能はバージョン 8.0 で使用することができます。 この機能は、Dynamics AX 2012 R3 (KB 4074643) で有効です。
 
-## <a name="additional-resources"></a>その他のリソース
+## <a name="additional-resources"></a>追加リソース
 GDPR の詳細については、[欧州連合の Web サイト](http://europa.eu/) および [Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx) を参照してください。
 
 ### <a name="disclaimer"></a>免責事項
 (c)2018 Microsoft Corporation. All rights reserved. このドキュメントは、"現状のまま" 提供されます。 URL およびその他のインターネット Web サイトの参照を含む、このドキュメントの情報および見解は、予告なしに変更することがあります。 このドキュメントの使用上のリスクは、すべてユーザーが負うものとします。 このドキュメントは、Microsoft の製品に含まれる知的財産に対する法律上の権利をお客様に付与するものではありません。 内部での参照を目的とする場合、このドキュメントをコピーして使用できます。
-

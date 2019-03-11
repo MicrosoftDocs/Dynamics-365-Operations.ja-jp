@@ -1,37 +1,36 @@
 ---
-title: "AX 2012 からのアップグレード - データ アップグレード前のチェックリスト"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations のデータ アップグレードに関連した、Microsoft Dynamics AX 2012  チェックリストの各タスクについて説明します。"
+title: AX 2012 からのアップグレード - データ アップグレードのためのアップグレード前のチェックリスト
+description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations へのデータ アップグレードに関連付けられている Microsoft DynamicsAX 2012 チェックリストの各タスクについて説明します。
 author: robadawy
 manager: AnnBe
 ms.date: 02/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: margoc
 ms.search.scope: Operations
 ms.custom: 106163
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2017-05-31
 ms.dyn365.ops.version: Platform update 8
+ms.openlocfilehash: 5643f86ecc842629bda864cfe91efe11dc0803f4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 93e6e6c0bcebc806a54accc8b583a2e5ab9b0629
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369763"
 ---
-
-# <a name="upgrade-from-ax-2012---pre-upgrade-checklist-for-data-upgrade"></a>AX 2012 からのアップグレード - データ アップグレード前のチェックリスト
+# <a name="upgrade-from-ax-2012---pre-upgrade-checklist-for-data-upgrade"></a>AX 2012 からのアップグレード - データ アップグレードのためのアップグレード前のチェックリスト
 
 [!include [banner](../includes/banner.md)]
 
 [!include [upgrade banner](../includes/upgrade-banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Finance and Operations のデータ アップグレードに関連した、Microsoft Dynamics AX 2012  チェックリストの各タスクについて説明します。
+このトピックでは、Microsoft Dynamics 365 for Finance and Operations へのデータ アップグレードに関連付けられている Microsoft DynamicsAX 2012 チェックリストの各タスクについて説明します。
 
 ## <a name="installation"></a>インストール
 アップグレード前のチェックリストを使用して、アップグレード手順に必要なデータを入力します。 
@@ -55,7 +54,7 @@ model データベース全体を Azure SQL データベースにコピーしな
 
 データ アップグレード中のもう 1 つの目標は、セキュリティ ロールの割り当てを維持することです。 このタスクは、前の「モデル メタデータの準備」タスクに似ています。 AX 2012 モデル データベースに格納されているセキュリティ ロールの情報は、アップグレード後も情報が Finance and Operations 環境に残るように、AX 2012 ビジネス データ データベースにコピーする必要があります。 データ アップグレード中に、同じセキュリティ ロールは更新された Finance and Operations の環境に戻されます。
 
-1. Dynamics 365 for Finance and Operations のデータ アップグレード チェックリストで、**セキュリティ ロール メタデータの準備**をクリックします。
+1. Dynamics 365 for Finance and Operations データ アップグレードのチェックリストで、**セキュリティ ロール メタデータを準備する**をクリックします。
 1. メッセージが表示されたら、**はい** をクリックします。
 1. コピー処理が完了するまで待ちます。
 
@@ -63,7 +62,7 @@ model データベース全体を Azure SQL データベースにコピーしな
 
 ## <a name="set-up-user-mapping"></a>ユーザー マッピングの設定
 
-AX 2012 では、ユーザーはオンプレミスの Active Directory サーバーで認証されます。 ただし、Finance and Operations では、ユーザーは Azure Active Directory (Azure AD) に対して認証されています。 このタスクは、既存の AX 2012 ユーザーを同等 Azure AD にマップするフォームを提供します。 AX 2012 ユーザーは、Finance and Operations にアクセスできるようになります。
+AX 2012 では、ユーザーはオンプレミスの Active Directory サーバーで認証されます。 ただし、Finance and Operations では、ユーザーは、Azure Active Directory (Azure AD) に対して認証されます。 このタスクは、既存の AX 2012 ユーザーを同等 Azure AD にマップするフォームを提供します。 AX 2012 ユーザーは、Finance and Operations にアクセスできるようになります。
 
 1. Finance and Operations のデータ アップグレード チェックリストで、**ユーザー マッピングの設定**をクリックします。
 2. **ユーザー情報電子メール マッピング** フォームが表示されます。 グリッドに記入するには、次のいずれかのステップを実行します。
@@ -101,4 +100,3 @@ AX 2012 では、ユーザーはオンプレミスの Active Directory サーバ
 - Finance and Operations のデータ アップグレード チェックリストで、**小売 salt データのアーカイブ**をクリックします。
 
 プロセスが正常に行われた場合は、タスクは完了としてマークされています。
-

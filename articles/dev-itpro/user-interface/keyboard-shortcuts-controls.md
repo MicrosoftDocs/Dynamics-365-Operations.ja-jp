@@ -1,13 +1,13 @@
 ---
-title: "拡張可能なコントロールのキーボード ショートカット"
-description: "このトピックでは、拡張可能なコントロールのキーボード ショートカットを実装するための推奨される方法について説明します。"
+title: 拡張可能なコントロールのキーボード ショートカット
+description: このトピックでは、拡張可能なコントロールのキーボード ショートカットを実装するための推奨される方法について説明します。
 author: robinarh
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: robinarh
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
+ms.openlocfilehash: ca7d50668cfbdb37bd88cb0b4f5c56bfab726d6f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 426271ae5b38a9f98274ff55382809d3aba3a973
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368475"
 ---
-
 # <a name="keyboard-shortcuts-for-extensible-controls"></a>拡張可能なコントロールのキーボード ショートカット
 
 [!include [banner](../includes/banner.md)]
@@ -32,7 +31,7 @@ ms.lasthandoff: 04/20/2018
 キーボード ショートカットは、拡張可能コントロールを作成するときの重要な考慮事項です。 このトピックでは、拡張可能なコントロールのキーボード ショートカットを選択するのに役立つ情報を提供します。 また、拡張可能なコントロールのキーボード ショートカットを実装するための推奨される方法について説明します。
 
 ## <a name="overview"></a>概要
-アクセシビリティに関しては、キーボード専用ユーザーがコントロールを使用できることが重要です。 したがって、キーボード ショートカットは、拡張可能コントロールを作成するときの重要な考慮事項です。 このトピックでは、キーボード ショートカットとして使用するキーの組み合わせを選択するのに役立つ情報を提供します。 これにより、Microsoft Dynamics 365 for Finance and Operations およびサポートされているブラウザーで使用されているショートカット、Dynamics 365 for Finance and Operations で実装を計画しているショートカット、1 つ以上のブラウザーがオーバーライドを許可しないショートカットが強調表示されます。 このトピックは、拡張可能なコントロールのキーボード ショートカットを実装するための推奨の方法についても説明します。
+アクセシビリティに関しては、キーボード専用ユーザーがコントロールを使用できることが重要です。 したがって、キーボード ショートカットは、拡張可能コントロールを作成するときの重要な考慮事項です。 このトピックでは、キーボード ショートカットとして使用するキーの組み合わせを選択するのに役立つ情報を提供します。 ここでは、Microsoft Dynamics 365 for Finance and Operations およびサポートされているブラウザーで使用されているショートカット、Dynamics 365 for Finance and Operations で実装を計画しているショートカット、1 つ以上のブラウザーがオーバーライドを許可しないショートカットを取り上げます。 このトピックは、拡張可能なコントロールのキーボード ショートカットを実装するための推奨の方法についても説明します。
 
 ## <a name="choosing-a-key-combination"></a>キーの組み合わせの選択
 キーボード ショートカットとして使用するキーの組み合わせを選択するときは、その他の既存のショートカットを分かっていることが重要です。 この方法で、ショートカットが既存のショートカットと重複しないことを保証できます。 既存のショートカットと衝突しようとすると、次のいずれかの結果が発生する可能性があります。
@@ -57,7 +56,7 @@ Dynamics 365 for Finance and Operations およびサポートされているブ�
 - <a href="https://support.microsoft.com/en-us/help/15357/windows-internet-explorer-11-keyboard-shortcuts">Internet Explorer 11</a>
 - <a href="https://support.apple.com/kb/PH21483">Apple Safari</a>
 
-### <a name="planned-keyboard-shortcuts-for-dynamics-365-for-finance-and-operations"></a>Dynamics 365 for Finance and Operations の計画キーボード ショートカット
+### <a name="planned-keyboard-shortcuts-for-dynamics-365-for-finance-and-operations"></a>Dynamics 365 for Finance and Operations で計画されているキーボード ショートカット
 Dynamics 365 for Finance and Operations で使用されているキーボード ショートカットに加えて、今後の実装が計画されているいくつかのショートカットがあります。 フレームワークによって指定されたショートカットと競合を避けるために、拡張可能なコントロールには以下のキーの組み合わせを選択しないでください。
 <table>
 <tbody>
@@ -312,6 +311,5 @@ Shortcuts: $dyn.extendPrototype($dyn.controls.Form.prototype.Shortcuts, {
     },
 })
 ```
-
 
 

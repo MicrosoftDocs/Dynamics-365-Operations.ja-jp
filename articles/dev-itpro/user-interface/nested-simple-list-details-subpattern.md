@@ -1,13 +1,13 @@
 ---
-title: "入れ子になった簡易リストおよび簡易詳細のサブパターン"
-description: "この記事では、ネストされた簡易リストと詳細 (NSL + D) サブパターンについての情報を提供します。 このサブパターンは、子エンティティが別のフォーム タイプ内に存在するとき、セカンダリ エンティティ、すなわち、その子エンティティに関する情報を表示するために使用されます。"
+title: 入れ子になった簡易リストおよび簡易詳細のサブパターン
+description: この記事では、ネストされた簡易リストと詳細 (NSL + D) サブパターンについての情報を提供します。 このサブパターンは、子エンティティが別のフォーム タイプ内に存在するとき、セカンダリ エンティティ、すなわち、その子エンティティに関する情報を表示するために使用されます。
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8275d834f2620a5ed3bd7856dae2c7781183f7cc
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: f15f006fe8ead8a4b17766b118646ee0ca53e979
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368959"
 ---
-
 # <a name="nested-simple-list-and-details-subpattern"></a>入れ子になった簡易リストおよび簡易詳細のサブパターン
 
 [!include [banner](../includes/banner.md)]
@@ -43,7 +42,7 @@ ms.lasthandoff: 04/20/2018
 ## <a name="wireframe"></a>ワイヤーフレーム
 [![patternNSLD](./media/patternnsld.png)](./media/patternnsld.png)[](./media/nestedsimplelistanddetails1.png)
 
-## <a name="pattern-changes-for-microsoft-dynamics-365-for-finance-and-operations"></a>Microsoft Dynamics 365 for Finance and Operations のパターン変更
+## <a name="pattern-changes-for-microsoft-dynamics-365-for-finance-and-operations"></a>Microsoft Dynamics 365 for Finance and Operations 用のパターンの変更
 Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主な変更を次に示します。
 
 -   このパターンは新しいものです。 SL+D パターンへのパターンの変更は、[簡易リストと詳細](simple-list-details-form-pattern.md)パターン ドキュメントで確認できます。
@@ -118,4 +117,3 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 ### <a name="ax-2012-content"></a>AX 2012 コンテンツ
 
 [![AX 2012 の例](./media/nestedsimplelistanddetails3.png)](./media/nestedsimplelistanddetails3.png)
-

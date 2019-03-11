@@ -1,13 +1,13 @@
 ---
-title: "Finance and Operations バージョン 8.0 を使用した、為替レート プロバイダーの作成"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations バージョン 8.0 (2018年4月) で為替レート プロバイダーを設定する方法について説明します。"
+title: Finance and Operations バージョン 8.0 を使用した、為替レート プロバイダーの作成
+description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations バージョン 8.0 (2018 年 4 月) で為替レート プロバイダーを設定する方法について説明します。
 author: aolson
 manager: AnnBe
 ms.date: 09/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: shylaw
 ms.search.scope: Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: jbye
 ms.search.validFrom: 2018-04-02
 ms.dyn365.ops.version: AX 8.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 31834993d3c7321527f77615183ae0d84c72d339
 ms.openlocfilehash: f1bee384ac8de1bdff2dd82ee1413d064dbc3816
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/25/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369892"
 ---
-
-# <a name="create-exchange-rate-providers-in-finance-and-operations-version-80"></a>Finance and Operations バージョン 8.0 を使用した、為替レート プロバイダーの作成
+# <a name="create-exchange-rate-providers-in-finance-and-operations-version-80"></a>Finance and Operations バージョン 8.0 を使用した為替レート プロバイダーの作成
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Finance and Operations バージョン 8.0 (2018年4月) で為替レート プロバイダーを設定するのに必要な手順について説明します。 説明のために、このトピック全体で OANDA 為替レート サービスが使用されます。
+このトピックでは、Microsoft Dynamics 365 for Finance and Operations バージョン 8.0 (2018 年 4 月) で為替レート プロバイダーを設定するために必要なステップについて説明します。 説明のために、このトピック全体で OANDA 為替レート サービスが使用されます。
 
 このトピックで説明している手順に従って、機能為替レート プロバイダーを作成できます。 このコードは生産コードです。 ソースは **ExchangeRateProviderOanda** クラスで見つけることができます。 必要に応じて、このトピックからそのクラスを参照することができます。
 
@@ -478,4 +477,3 @@ OANDA テスト アカウントを要求し、OANDA 為替レートに関する�
 - **他の為替レート タイプからの為替レートを取得するプロバイダー** – このシナリオを実装すると、さまざまな為替レート タイプ間の為替レートの同期が可能になります。 この機能は、さまざまな元帳間の分離を維持するために、多くの為替レート タイプが存在する状況で役立ちます。
 - **為替レート サービスの任意の形式を ExchangeRateResponse クラスのインスタンスに変換するために Extensible Stylesheet Language Transformations (XSLT) を使用するプロバイダー** – このシナリオを実装すると、ユーザーは為替レート サービスに必要な XSLT 変換を追加することができ、アプリケーションはそのサービスをサポートします。 プロバイダー固有のコードは必要ありません。
 - **一部の為替レート プロバイダー サービスは、消費されるすべてのレートに対して料金を請求します** – このリストの最初のアイデアと、サービスから取得するレートの数の制限を組み合わせることを検討してください。 この機能は、サービスから消費される料金ごとに課金されるシナリオに役立ちます。
-

@@ -1,13 +1,13 @@
 ---
-title: "ケース管理"
-description: "このトピックでは、計画、追跡、およびMicrosoft Dynamics AXでの分析を含むケースの管理の概要を示します。このトピックでは、Microsoft Dynamics AX での計画、追跡、分析など、ケース管理の概要を示します。"
+title: ケース管理
+description: このトピックでは、Microsoft Dynamics AX での、計画、追跡、分析などのケース管理の概要を示します。
 author: kfend
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CaseDetail
 audience: IT Pro
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 9e1518b100fb57cced8bcd34f01c8abfe2b3a794
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369280"
 ---
-
 # <a name="case-management"></a>ケース管理
 
 [!include [banner](../includes/banner.md)]
@@ -51,4 +50,3 @@ Fabrikam 社のイギリス部門を担当する一般人事担当者の Cristin
 ### <a name="in-the-united-states"></a>米国での事例
 
 Fabrikam 社の米国部門を担当する一般人事担当者の Luke が、Fabrikam 社の従業員の Shannon から電子メールを受け取ります。 Shannon は、6 か月前に仕事で怪我をした機械オペレータです。 それ以降、Shannon は医療費の支払を求めて Humongous Insurance 社とやりとりを行っています。 Shannon はこの問題について 4 週間前に Luke に連絡したので、ケースはすでに作成されました。 Shannon の新しい電子メール メッセージには、Humongous Insurance 社からまだ電話連絡がないことが記載されています。 Luke は、既存のケースを開いて Shannon の電子メール メッセージをドキュメントとして追加し、ケース ログに目を通します。 Luke は、このケースを作成した際に、それに **保険** というカテゴリを割り当てました。 Luke は今、**保険** カテゴリに関連付けられている新しいナレッジ記事があることを発見します。 Luke は、ナレッジ記事を読み、Humongous Insurance 社の電話システムが更新中で、すべての電話が使えないことを知ります。 この記事には、保険会社がすべての顧客に電子メール メッセージを送信したものの、保険会社の電子メール システムに問題があるために一部の顧客にメッセージが届かなかったことが記載されています。 有効な保険金を請求中のすべての顧客は Humongous Insurance 社に電子メールまたは郵便でお問い合わせを依頼するよう要請しています。 Luke は、保険金請求を解決する方法を記載した電子メール メッセージを Shannon に送ります。 また、ナレッジ記事を役立つ情報のソースとしてランク付けします。 Luke は、保険金請求が解決するのを見届けるため、Shannon と Humongous Insurance 社の両方を今後 4 週間フォローアップできるように別の活動を自分に対して作成します。 4 週間後、Luke は Shannon に連絡します。 Luke は Humongous Insurance 社が Shannon の請求を支払い、彼女がその解決策に満足していることを知ります。 Luke が、ケースのステータスを**解決済み**に変更します。
-

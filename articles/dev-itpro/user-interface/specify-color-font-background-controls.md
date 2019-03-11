@@ -1,13 +1,13 @@
 ---
-title: "入力、テーブル、およびグリッド コントロール用のフォントと背景"
-description: "このトピックでは、色を選択できるようにするための新しいカラー ピッカー コントロールについて説明します。"
+title: 入力、テーブル、およびグリッド コントロール用のフォントと背景
+description: このトピックでは、色を選択できるようにするための新しいカラー ピッカー コントロールについて説明します。
 author: RobinARH
 manager: AnnBe
 ms.date: 11/09/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 6a14e32f334da23ca156796b228b35c0775e775b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 5e7ceed2c5237dd7eb81e11980ab61753a614e70
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368301"
 ---
-
 # <a name="font-and-background-colors-for-input-table-and-grid-controls"></a>入力、テーブル、およびグリッド コントロール用のフォントと背景
 
 [!include [banner](../includes/banner.md)]
@@ -159,7 +158,6 @@ Microsoft Dynamics AX 2012 では、色の選択に次の特性がありまし�
     Static int GrayColor = 0xdcdcdc
 
     Static int GrayColor = 14474460; // DCDCDC or 220,220,220
-
 
 
 

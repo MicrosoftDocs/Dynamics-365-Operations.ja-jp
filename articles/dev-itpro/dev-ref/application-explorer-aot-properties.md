@@ -1,13 +1,13 @@
 ---
-title: "アプリケーション エクスプローラーのプロパティ"
-description: "このトピックでは、アプリケーション エクスプローラーの品目向けに Microsoft Visual Studio の [プロパティ] ウィンドウに表示されるプロパティについて説明します。"
+title: アプリケーション エクスプローラーのプロパティ
+description: このトピックでは、アプリケーション エクスプローラーの品目向けに Microsoft Visual Studio のプロパティ ウィンドウに表示されるプロパティについて説明します。
 author: RobinARH
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: reference
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c6c6eaa9152652df1b78f6ad42b5025913ccec4d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: e5d27d3db31a2e28d75a621aa6df8bbbf0bfbc3e
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368498"
 ---
-
 # <a name="application-explorer-properties"></a>アプリケーション エクスプローラーのプロパティ
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、アプリケーション エクスプローラーの品目向けに Microsoft Visual Studio の [プロパティ] ウィンドウに表示されるプロパティについて説明します。
+このトピックでは、アプリケーション エクスプローラーの品目向けに Microsoft Visual Studio のプロパティ ウィンドウに表示されるプロパティについて説明します。
 
 アプリケーション エクスプローラーの多くのノードは、それに関連付けられているプロパティを持つ要素を表します。 Microsoft Visual Studio の **プロパティ** ウィンドウで、これらのプロパティを読み取りまたは変更することができます。
 
@@ -75,7 +74,7 @@ ms.lasthandoff: 04/20/2018
 <td>キューブにおける列挙値の役割を指定します。 この設定は、列挙を参照するすべてのテーブル フィールドに自動的に反映されます。 ただし、テーブル フィールドの設定を上書きできます。  次のオプションを使用できます。
 <ul>
 <li><strong>属性 </strong>- 列挙を参照するフィールドは、分析コードの属性です。</li>
-<li><strong>なし </strong>- 列挙を参照するフィールドは、分析コードの属性ではありません。</li>
+<li><strong>なし</strong> - 列挙型を参照するフィールドは分析コードの属性ではありません。</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -174,7 +173,7 @@ ms.lasthandoff: 04/20/2018
 <li><strong>なし </strong>- EDT を参照するフィールドは、分析コードの属性でも測定でもありません。</li>
 <li><strong>自動 </strong>- このオプションは、派生 EDT に適用されます。 親 EDT が使用される <strong>AnalysisUsage</strong> プロパティの値。</li>
 </ul>
-<strong>注記:</strong> 列挙型に基づいたデータ型は、測定することができません。</td>
+<strong>注記:</strong> 列挙型に基づいたデータ型は測定することができません。</td>
 </tr>
 <tr class="even">
 <td>ArrayLength</td>
@@ -470,9 +469,9 @@ ms.lasthandoff: 04/20/2018
 <td>分析視点の具体化オプションを指定します。  次のオプションを使用できます。
 <ul>
 <li><strong>AdHocReporting </strong>- 分析視点は、トランザクションの Semantic Model Definition Language (SMDL) モデルを生成するために使用されます。</li>
-<li><strong>OLAP</strong> - 分析視点は、Microsoft SQL Server Analysis Services (SSAS) ビジネス インテリジェンス プロジェクトでキューブを生成するために使用されます。</li>
+<li><strong>OLAP </strong> - 分析視点は、Microsoft SQL Server Analysis Services (SSAS) ビジネス インテリジェンス プロジェクトでキューブを生成するために使用されます。</li>
 <li><strong>両方 </strong>- 分析視点は、SSAS Business Intelligence プロジェクトでトランザクション SDML モデルと、キューブの両方を生成するために使用されます。</li>
-<li><strong>なし </strong>- 分析視点は実現されません。</li>
+<li><strong>なし</strong> - 分析視点は実現されません。</li>
 </ul>
 既定値は <strong>なし</strong> です。</td>
 </tr>
@@ -500,7 +499,7 @@ ms.lasthandoff: 04/20/2018
 <tbody>
 <tr class="odd">
 <td>抽象</td>
-<td>テーブルが継承をサポートするかどうかを指定します。 既定値は <strong>いいえ</strong> です。 値が<strong>はい</strong>に設定されている場合、テーブルが、<strong>update_recordset</strong>および<strong>select</strong> ステートメントのような X++ SQL ステートメントの直接ターゲットにはなりません。 <strong>注記:</strong> <strong>SupportInheritance</strong> プロパティが<strong>いいえ</strong>に設定されている場合、このプロパティは使用できません。</td>
+<td>テーブルが継承をサポートするかどうかを指定します。 既定値は <strong>いいえ</strong> です。 値が<strong>はい</strong>に設定されている場合、テーブルが、<strong>update_recordset</strong> および <strong>select</strong> ステートメントのような X++ SQL ステートメントの直接ターゲットにはなりません。 <strong>注記:</strong> <strong>SupportInheritance</strong> プロパティが<strong>いいえ</strong>に設定されている場合、このプロパティは使用できません。</td>
 </tr>
 <tr class="even">
 <td>AnalysisDimensionType</td>
@@ -529,7 +528,7 @@ ms.lasthandoff: 04/20/2018
 </tr>
 <tr class="odd">
 <td>CacheLookup</td>
-<td>ルックアップ操作中に取得されたレコードをキャッシュする方法を指定します。 このプロパティは、別のテーブルを継承しないテーブルにのみ存在します。 継承ルート テーブルで、アプリケーション エクスプローラー<strong>プロパティ</strong> ウィンドウを使用して、このプロパティを <strong>EntireTable</strong> に設定することはできません。 継承ルート テーブルにこの値を割り当てるために、他の手法を使用しないでください。 たとえば、この値を割り当てる <strong>TreeNode</strong> クラスの <strong>AOTsetProperty</strong> メソッドを使用しないでください。</td>
+<td>ルックアップ操作中に取得されたレコードをキャッシュする方法を指定します。 このプロパティは、別のテーブルを継承しないテーブルにのみ存在します。 継承ルート テーブルで、アプリケーション エクスプローラー <strong>プロパティ</strong> ウィンドウを使用して、このプロパティを <strong>EntireTable</strong> に設定することはできません。 継承ルート テーブルにこの値を割り当てるために、他の手法を使用しないでください。 たとえば、この値を割り当てる <strong>TreeNode</strong> クラスの <strong>AOTsetProperty</strong> メソッドを使用しないでください。</td>
 </tr>
 <tr class="even">
 <td>ClusterIndex</td>
@@ -761,7 +760,7 @@ ms.lasthandoff: 04/20/2018
 </tr>
 <tr class="odd">
 <td>AnalysisDefaultTotal</td>
-<td>レポート モデルについては、このプロパティを使用して、テーブルの自動合計が SSRS およびレポート モデルを使用して構築されるレポートに表示されるときに、フィールド データを集計する方法を指定します。 既定値は <strong>いいえ</strong> で、フィールドが自動的に合計として表示されないことを示します。 OLAP キューブで、測定の集計関数を指定するため、このプロパティを使用します。 <strong>AnalysisUsage</strong> プロパティが<strong>測定</strong>に設定されている場合、このプロパティを使用します。  次のオプションを使用できます。
+<td>レポート モデルについては、このプロパティを使用して、テーブルの自動合計が SSRS およびレポート モデルを使用して構築されるレポートに表示されるときに、フィールド データを集計する方法を指定します。 既定値は<strong>いいえ</strong>で、フィールドが自動的に合計として表示されないことを示します。 OLAP キューブで、測定の集計関数を指定するため、このプロパティを使用します。 <strong>AnalysisUsage</strong> プロパティが<strong>測定</strong>に設定されている場合、このプロパティを使用します。  次のオプションを使用できます。
 <ul>
 <li><strong>合計 </strong>- セット内のすべての値の合計を返します。</li>
 <li><strong>カウント</strong> - セット内の null 以外の品目の数を返します。</li>
@@ -829,13 +828,13 @@ ms.lasthandoff: 04/20/2018
 </tr>
 <tr class="odd">
 <td>必須</td>
-<td>ユーザーがページ上のフィールドにデータを追加する必要があるかどうかを指定します。 このプロパティを <strong>はい</strong> を設定し、各データ型の既定または初期化値がデータベースへの持続として許容できないことを示します。 次のリストは、ページの必須フィールドに使用できないいくつかの既定値を示しています。
+<td>ユーザーがページ上のフィールドにデータを追加する必要があるかどうかを指定します。 このプロパティを<strong>はい</strong>を設定し、各データ型の既定または初期化値がデータベースへの持続として許容できないことを示します。 次のリストは、ページの必須フィールドに使用できないいくつかの既定値を示しています。
 <ul>
 <li>空は str (文字列) フィールドには受け入れられません。</li>
 <li>date および utcdatetime などの日付/時刻フィールドでは、最小日時は受け入れられません。</li>
 <li>int、real、enum などの数値フィールドでは、0 (ゼロ) の値は受け入れられません。</li>
 </ul>
-Finance and Operations は、ほとんどの SQL データベース製品に標準的な <strong>Null</strong> 値に対するセマンティクスをサポートしません。 フィールドはデータベースで Null にはなりません。 したがって、<strong>Mandatory</strong> プロパティは、<strong>null</strong> 値の概念とは関係ありません。 <strong>注意:</strong> 必須テーブル フィールドは、<strong>EnumType</strong> プロパティを列挙に設定できます。 整数値 <strong>0</strong> を持つ品目を含む列挙型としてフィールドを定義することがあります。 この場合、<strong>0</strong> はページで選択可能な項目ではありません。 フォーム システムは自動的に、<strong>必須</strong> プロパティの設定を強制する <strong>validateWrite</strong> メソッドを呼び出します。 ただし、<strong>必須</strong>プロパティはテーブル フィールドの値を挿入または更新する直接の X++ SQL の動作には影響を与えません。 直接の X++ SQL では、テーブル バッファ変数に <strong>validateWrite</strong> メソッドへの呼び出しを含めることができます。 バッファ変数は、<strong>xRecord</strong> クラスからメソッドを継承します。</td>
+Finance and Operations は、ほとんどの SQL データベース製品に標準的な <strong>null</strong> 値に対するセマンティクスをサポートしません。 フィールドはデータベースで Null にはなりません。 したがって、<strong>Mandatory</strong> プロパティは、<strong>null</strong> 値の概念とは関係ありません。 <strong>注意:</strong> 必須テーブル フィールドは、<strong>EnumType</strong> プロパティを列挙に設定できます。 整数値 <strong>0</strong> を持つ品目を含む列挙型としてフィールドを定義することがあります。 この場合、<strong>0</strong> はページで選択可能な項目ではありません。 フォーム システムは自動的に、<strong>必須</strong> プロパティの設定を強制する <strong>validateWrite</strong> メソッドを呼び出します。 ただし、<strong>必須</strong>プロパティはテーブル フィールドの値を挿入または更新する直接の X++ SQL の動作には影響を与えません。 直接の X++ SQL では、テーブル バッファ変数に <strong>validateWrite</strong> メソッドへの呼び出しを含めることができます。 バッファ変数は、<strong>xRecord</strong> クラスからメソッドを継承します。</td>
 </tr>
 <tr class="even">
 <td>MinReadAccess</td>
@@ -919,7 +918,7 @@ Finance and Operations は、ほとんどの SQL データベース製品に標�
 <tbody>
 <tr class="odd">
 <td>基数</td>
-<td>参照テーブルの各主キー値が現在のテーブルの外部キー列で発生しなければならない回数。 たとえば、<strong>OneMore</strong> 値は、1 以上で、0 ではないことを意味します。 この値は、すべての親キー値が子テーブル&#39;の外部キー列に最低 1 回現れなければならないことを示します。 ビジネス ルールが、販売された少なくとも 1 つの品目に関連する親 SalesTable テーブルのすべてのレコードを必要とする場合、SalesLine テーブルのリレーション ノードは、<strong>OneMore</strong> 値を使用します。 現在、Finance and Operations は<strong>カーディナリティ</strong> プロパティを使用しません。 ただし、今後のリリースはこのプロパティおよび <strong>RelatedTableCardinality</strong> プロパティを使用する可能性があります。</td>
+<td>参照テーブルの各主キー値が現在のテーブルの外部キー列で発生しなければならない回数。 たとえば、<strong>OneMore</strong> 値は、1 以上で、0 ではないことを意味します。 この値は、すべての親キー値が子テーブルの外部キー列に最低 1 回現れなければならないことを示します。 ビジネス ルールが、販売された少なくとも 1 つの品目に関連する親 SalesTable テーブルのすべてのレコードを必要とする場合、SalesLine テーブルのリレーション ノードは、<strong>OneMore</strong> 値を使用します。 現在、Finance and Operations は<strong>カーディナリティ</strong> プロパティを使用しません。 ただし、今後のリリースはこのプロパティおよび <strong>RelatedTableCardinality</strong> プロパティを使用する可能性があります。</td>
 </tr>
 <tr class="even">
 <td>CreateNavigationPropertyMethods</td>
@@ -971,11 +970,11 @@ Finance and Operations は、ほとんどの SQL データベース製品に標�
 </tr>
 <tr class="odd">
 <td>UseDefaultRoleNames</td>
-<td><strong>はい</strong>の値は、システムが<strong>ロール</strong>および <strong>RelatedTableRole</strong> プロパティの規定値を生成する必要があることを示します。 プロパティが<strong>はい</strong>に設定されている場合でも、<strong>ロール</strong>および <strong>RelatedTableRole</strong> に対して生成された値は、<strong>プロパティ</strong>ウィンドウに表示されません。 また、<strong>TreeNode</strong> クラスは、生成値を使用できません。 ただし、<strong>DictRelation</strong> リフレクション クラスでは生成された値が使用されます。</td>
+<td><strong>はい</strong>の値は、システムが<strong>ロール</strong>および <strong>RelatedTableRole</strong> プロパティの規定値を生成する必要があることを示します。 プロパティが<strong>はい</strong>に設定されている場合でも、<strong>ロール</strong>および <strong>RelatedTableRole</strong> に対して生成された値は、<strong>プロパティ</strong> ウィンドウに表示されません。 また、<strong>TreeNode</strong> クラスは、生成値を使用できません。 ただし、<strong>DictRelation</strong> リフレクション クラスでは生成された値が使用されます。</td>
 </tr>
 <tr class="even">
 <td>検証</td>
-<td><strong>はい</strong>の値は、ページがレコードを子テーブルに挿入するときに、関連するレコードが参照されている親テーブルに存在しないかぎり、挿入が拒否されたことを示します。 また、ページが親テーブルからレコードを削除すると、削除は拒否されるか、子テーブルで関連するレコードに重ねて表示されます。 <strong>RelationshipType</strong> プロパティが <strong>リンク</strong> に設定されているとき、値を <strong>いいえ</strong> に設定します。 いくつかのアップグレード シナリオなどの特別な一時的なケースでは、値を <strong>いいえ</strong> に設定する可能性もあります。 値の設定を <strong>はい</strong> に戻したとき、値が <strong>いいえ</strong> の間に挿入または削除されたレコードについては検証は実行されません。 <strong>注意:</strong> <strong>Validate</strong> プロパティの <strong>Yes</strong> の値は、直接 X++ SQL データ操作が親レコードを削除したり、外部キーデータの整合性に違反する子レコードを挿入したりすることを防ぎません。</td>
+<td><strong>はい</strong>の値は、ページがレコードを子テーブルに挿入するときに、関連するレコードが参照されている親テーブルに存在しないかぎり、挿入が拒否されたことを示します。 また、ページが親テーブルからレコードを削除すると、削除は拒否されるか、子テーブルで関連するレコードに重ねて表示されます。 <strong>RelationshipType</strong> プロパティが <strong>リンク</strong> に設定されているとき、値を <strong>いいえ</strong> に設定します。 いくつかのアップグレード シナリオなどの特別な一時的なケースでは、値を <strong>いいえ</strong> に設定する可能性もあります。 値の設定を <strong>はい</strong> に戻したとき、値が <strong>いいえ</strong> の間に挿入または削除されたレコードについては検証は実行されません。 <strong>注意:</strong> <strong>Validate</strong> プロパティの<strong>はい</strong>の値は、直接 X++ SQL データ操作が親レコードを削除したり、外部キーデータの整合性に違反する子レコードを挿入したりすることを防ぎません。</td>
 </tr>
 </tbody>
 </table>
@@ -1047,7 +1046,7 @@ Finance and Operations は、ほとんどの SQL データベース製品に標�
 </tr>
 <tr class="even">
 <td>構成</td>
-<td>この要素は、集約関係のより強力なタイプです。 テーブルには、複数の構成関係を持つことはできません。 たとえば、建物は部屋で構成され、および指定された部屋は複数の建物の中に存在します。</td>
+<td>この要素は、集約関係のより強力なタイプです。 テーブルには、複数の構成関係を持つことはできません。 たとえば、建物は部屋で構成され、指定された部屋は複数の建物の中に存在します。</td>
 <td>合成の基準を満たしていますが、<strong>集計</strong>または<strong>関連</strong>の値を手動で割り当てる場合、システムではその値は<strong>集計</strong>または<strong>関連</strong>としてそのまま残ります。</td>
 </tr>
 <tr class="odd">
@@ -1278,8 +1277,8 @@ Finance and Operations は、ほとんどの SQL データベース製品に標�
 <td>AllowCheck</td>
 <td>データ セットにアクセスする前にセキュリティ チェックを行うかどうかを指定します。  次のオプションを使用できます。
 <ul>
-<li><strong>はい </strong>- ユーザーの読み取りアクセス許可は、データ セットにアクセスする前に検証されます。</li>
-<li><strong>いいえ </strong>- ユーザーの読み取りアクセス許可は、データ セットにアクセスした後でのみが検証されます。 ユーザーが基になるデータ ソースに対して十分なアクセス許可を持っていない場合は、データは取得されません。</li>
+<li><strong>はい</strong> - ユーザーの読み取りアクセス許可は、データ セットにアクセスする前に検証されます。</li>
+<li><strong>いいえ</strong> - ユーザーの読み取りアクセス許可は、データ セットにアクセスした後でのみが検証されます。 ユーザーが基になるデータ ソースに対して十分なアクセス許可を持っていない場合は、データは取得されません。</li>
 </ul>
 <strong>はい</strong> が既定値で、通常お勧めします。</td>
 </tr>
@@ -1352,7 +1351,7 @@ Finance and Operations は、ほとんどの SQL データベース製品に標�
 </tr>
 <tr class="odd">
 <td>OnlyFetchActive</td>
-<td>データ ソース内のすべてのフィールドをフェッチするか、データ セットにより使用されるフィールドのみをフェッチするかどうかを指定します。 このプロパティを <strong>はい</strong> に設定すると、データ セットからレコードを削除できません。 この制限は、不完全なレコードに対して削除操作が行われないことを保証するために、データの整合性を維持するのに役立ちます。</td>
+<td>データ ソース内のすべてのフィールドをフェッチするか、データ セットにより使用されるフィールドのみをフェッチするかどうかを指定します。 このプロパティを<strong>はい</strong>に設定すると、データ セットからレコードを削除できません。 この制限は、不完全なレコードに対して削除操作が行われないことを保証するために、データの整合性を維持するのに役立ちます。</td>
 </tr>
 <tr class="even">
 <td>OptionalRecordMode</td>
@@ -1381,7 +1380,7 @@ Finance and Operations は、ほとんどの SQL データベース製品に標�
 <ul>
 <li><strong>CreateNewTimePeriod</strong> - 前のレコードになっているレコードでは、<strong>ValidTo</strong> 日付フィールドは、現在の日付よりも遅くない日付に設定されます。 同じトランザクションでは、新しい現在のレコードが <strong>ValidFrom</strong> フィールドを、前のレコードの <strong>ValidTo</strong> の日付の直後に設定します。</li>
 <li><strong>修正</strong> - 既存の行の <strong>ValidFrom</strong> または <strong>ValidTo</strong> の値は、レコード セットが更新された後に日付有効データの有効期間を保持するように変更する必要があります。</li>
-<li><strong>EffectiveBased</strong> - 過去のレコードは編集できません。 現在アクティブなレコードは、CreateNewTimePeriod モードに似た方法で編集されます。 修正モードと似た方法で、将来のレコードが編集されます。</li>
+<li><strong>EffectiveBased </strong> - 過去のレコードは編集できません。 現在アクティブなレコードは、CreateNewTimePeriod モードに似た方法で編集されます。 修正モードと似た方法で、将来のレコードが編集されます。</li>
 </ul>
 既定値は <strong>CreateNewTimePeriod</strong> です。</td>
 </tr>
@@ -1426,8 +1425,8 @@ Finance and Operations は、ほとんどの SQL データベース製品に標�
 <td>AllowUserSetUp</td>
 <td>ユーザーがフォーム上のコントロールを移動できるかどうかと、コントロール プロパティの値を変更できるかどうかを指定します。 このプロパティは、フォームのデザインにもあります。  次のオプションを使用できます。
 <ul>
-<li><strong>いいえ </strong>- ユーザーはこのコンテナー内のコントロールをカスタマイズできません。</li>
-<li><strong>制限 </strong>- ユーザーは個々のコントロールのプロパティを変更できますが、コントロールを移動することはできません。</li>
+<li><strong>いいえ</strong> - ユーザーはこのコンテナー内のコントロールをカスタマイズできません。</li>
+<li><strong>制限</strong> - ユーザーは個々のコントロールのプロパティを変更できますが、コントロールを移動することはできません。</li>
 <li><strong>はい </strong>- ユーザーの設定に制限はありません。</li>
 </ul>
 既定値は <strong>はい</strong> です。 <strong>注意:</strong> コントロールの親コンテナのいずれかにユーザー設定レベルの制限がある場合、完全なユーザー設定は許可されません。 フォーム データ ソースの <strong>AllowAdd</strong> プロパティにより、ユーザーがフォームにフィールドを追加できるかどうかが決まります。</td>
@@ -1851,7 +1850,7 @@ Finance and Operations は、ほとんどの SQL データベース製品に標�
 <td>CorrectPermissions</td>
 <td>メニュー項目に特権が割り当てられるときに適切なアクセス許可を選択できるかどうかを指定します。  次のオプションを使用できます。
 <ul>
-<li><strong>自動 </strong>- アクセス許可が、<strong>エントリ ポイント</strong> ノードの下にある、このメニュー項目の<strong>権限</strong>ノードで、権限として選択可能になります。</li>
+<li><strong>自動</strong> - アクセス許可が、<strong>エントリ ポイント</strong> ノードの下にある、このメニュー項目の<strong>権限</strong>ノードで、権限として選択可能になります。</li>
 <li><strong>いいえ</strong> - アクセス許可は、メニュー項目の権限として選択できません。</li>
 </ul>
 既定値は <strong>自動</strong> です。</td>
@@ -1868,7 +1867,7 @@ Finance and Operations は、ほとんどの SQL データベース製品に標�
 <td>CreatePermissions</td>
 <td>メニュー項目に特権が割り当てられるときに作成アクセス許可を選択できるかどうかを指定します。  次のオプションを使用できます。
 <ul>
-<li><strong>自動 </strong>- アクセス許可が、<strong>エントリ ポイント</strong> ノードの下にある、このメニュー項目の<strong>権限</strong>ノードで、権限として選択可能になります。</li>
+<li><strong>自動</strong> - アクセス許可が、<strong>エントリ ポイント</strong> ノードの下にある、このメニュー項目の<strong>権限</strong>ノードで、権限として選択可能になります。</li>
 <li><strong>いいえ</strong> - アクセス許可は、メニュー項目の権限として選択できません。</li>
 </ul>
 既定値は <strong>自動</strong> です。</td>
@@ -1877,7 +1876,7 @@ Finance and Operations は、ほとんどの SQL データベース製品に標�
 <td>DeletePermissions</td>
 <td>メニュー項目に特権が割り当てられるときに削除アクセス許可を選択できるかどうかを指定します。  次のオプションを使用できます。
 <ul>
-<li><strong>自動 </strong>- アクセス許可が、<strong>エントリ ポイント</strong> ノードの下にある、このメニュー項目の<strong>権限</strong>ノードで、権限として選択可能になります。</li>
+<li><strong>自動</strong> - アクセス許可が、<strong>エントリ ポイント</strong> ノードの下にある、このメニュー項目の<strong>権限</strong>ノードで、権限として選択可能になります。</li>
 <li><strong>いいえ</strong> - アクセス許可は、メニュー項目の権限として選択できません。</li>
 </ul>
 既定値は <strong>自動</strong> です。</td>
@@ -1983,7 +1982,7 @@ Finance and Operations は、ほとんどの SQL データベース製品に標�
 <td>ReadPermissions</td>
 <td>メニュー項目に特権が割り当てられるときに読み取りアクセス許可がセクションに利用可能かどうかを指定します。  次のオプションを使用できます。
 <ul>
-<li><strong>自動 </strong>- アクセス許可が、<strong>エントリ ポイント</strong> ノードの下にある、このメニュー項目の<strong>権限</strong>ノードで、権限として選択可能になります。</li>
+<li><strong>自動</strong> - アクセス許可が、<strong>エントリ ポイント</strong> ノードの下にある、このメニュー項目の<strong>権限</strong>ノードで、権限として選択可能になります。</li>
 <li><strong>いいえ</strong> - アクセス許可は、メニュー項目の権限として選択できません。</li>
 </ul>
 既定値は <strong>自動</strong> です。</td>
@@ -1998,21 +1997,21 @@ Finance and Operations は、ほとんどの SQL データベース製品に標�
 <ul>
 <li><strong>FormRun</strong> クラスは常にクライアント上で実行されるため、フォームはインスタンス化されてクライアント上で実行されます。</li>
 <li><strong>ReportRun</strong> クラスは常に呼び出された場所で実行されるため、レポートは、インスタンス化され、メニュー項目の <strong>RunOn</strong> プロパティで指定されたとおりに実行されます。 プロパティを<strong>呼び出し元</strong>に設定する必要があります。 レポートをクライアントで実行するように設定すると、レポートはバッチで実行され、レポートは失敗します。 レポートをサーバーで実行するように設定すると、レポートは画面に表示され、レポートは失敗します。</li>
-<li>クラスの<strong>メイン</strong>メソッドは、モディファイアーで指定されたとおりに実行されます。 クラス自体は、<strong>RunOn</strong> プロパティで指定されたとおりにインスタンス化されます。 インスタンス化は、<strong>main</strong> メソッドで発生する可能性があります。</li>
+<li>クラスの<strong>メイン</strong> メソッドは、モディファイアーで指定されたとおりに実行されます。 クラス自体は、<strong>RunOn</strong> プロパティで指定されたとおりにインスタンス化されます。 インスタンス化は、<strong>main</strong> メソッドで発生する可能性があります。</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>UpdatePermissions</td>
 <td>メニュー項目に特権が割り当てられるときに更新アクセス許可がセクションに利用可能かどうかを指定します。  次のオプションを使用できます。
 <ul>
-<li><strong>自動 </strong>– アクセス許可が、<strong>エントリ ポイント</strong> ノードの下にある、このメニュー項目の<strong>権限</strong>ノードで、権限としてセクションで利用可能になります。</li>
-<li><strong>いいえ</strong> - アクセス許可は、メニュー項目の権限としてセクションで使用できません。</li>
+<li><strong>自動</strong> - アクセス許可が、<strong>エントリ ポイント</strong> ノードの下にある、このメニュー項目の<strong>権限</strong>ノードで、権限のセクションで使用可能になります。</li>
+<li><strong>いいえ</strong> - アクセス許可は、メニュー項目の権限のセクションで選択できません。</li>
 </ul>
 既定値は <strong>自動</strong> です。</td>
 </tr>
 <tr class="odd">
 <td>Web</td>
-<td>メニュー項目を実行するときに開かれる URL を指定します。 このプロパティ値は使用されなくなりました。 プロパティを使用しないでください。</td>
+<td>メニュー項目を実行するときに開かれる URL を指定します。 このプロパティ値は使用されなくなりました。 このプロパティを使用しないでください。</td>
 </tr>
 <tr class="even">
 <td>WebConfigurationKey</td>
@@ -2033,7 +2032,7 @@ Finance and Operations は、ほとんどの SQL データベース製品に標�
 </tr>
 <tr class="odd">
 <td>WebPage</td>
-<td>メニュー項目にリンクされている Web ページを指定します。 このプロパティ値は使用されなくなりました。 プロパティを使用しないでください。</td>
+<td>メニュー項目にリンクされている Web ページを指定します。 このプロパティ値は使用されなくなりました。 このプロパティを使用しないでください。</td>
 </tr>
 <tr class="even">
 <td>WebSecureTransaction</td>
@@ -2179,7 +2178,7 @@ Finance and Operations は、ほとんどの SQL データベース製品に標�
 </ul></td>
 </tr>
 <tr class="odd">
-<td>先頭値</td>
+<td>金額</td>
 <td>取得されるレコードの範囲を指定します。 列挙型を使用する場合は、テキスト文字列を使用しません。 列挙 ID を使用する必要があります。</td>
 </tr>
 </tbody>
@@ -3006,7 +3005,7 @@ Finance and Operations は、ほとんどの SQL データベース製品に標�
 <td>職務権限が有効かどうかを示す値。  次のオプションを使用できます。
 <ul>
 <li><strong>はい</strong> - 職務権限を有効にします。</li>
-<li><strong>いいえ</strong> - 関税を無効にします。</li>
+<li><strong>いいえ</strong> - 職務権限を無効にします。</li>
 </ul></td>
 </tr>
 </tbody>
@@ -3377,7 +3376,7 @@ T次のテーブルでは、アプリケーション エクスプローラーの
 <td>職務権限が有効かどうかを示す値。  次のオプションを使用できます。
 <ul>
 <li><strong>はい</strong> - 職務権限を有効にします。</li>
-<li><strong>いいえ</strong> - 関税を無効にします。</li>
+<li><strong>いいえ</strong> - 職務権限を無効にします。</li>
 </ul></td>
 </tr>
 </tbody>
@@ -3453,8 +3452,8 @@ T次のテーブルでは、アプリケーション エクスプローラーの
 <td>有</td>
 <td>セキュリティ ポリシーが主テーブルから返されるレコードのデータ値を制限するかどうかをコントロールする値。  次のオプションを使用できます。
 <ul>
-<li><strong>はい </strong>- セキュリティ ポリシーはプライマリ テーブルには適用されます。</li>
-<li><strong>いいえ </strong>- セキュリティ ポリシーはプライマリ テーブルには適用されません。</li>
+<li><strong>はい  </strong>- セキュリティ ポリシーはプライマリ テーブルには適用されます。</li>
+<li><strong>いいえ</strong> - セキュリティ ポリシーはプライマリ テーブルには適用されません。</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -3462,8 +3461,8 @@ T次のテーブルでは、アプリケーション エクスプローラーの
 <td>有</td>
 <td>システムが実行時間に、ポリシーを適用するかどうかをコントロールする値。  次のオプションを使用できます。
 <ul>
-<li><strong>はい </strong>- セキュリティ ポリシーを有効にします。</li>
-<li><strong>いいえ</strong> - セキュリティ ポリシーを無効にします。</li>
+<li><strong>はい  </strong>- セキュリティ ポリシーを有効にします。</li>
+<li><strong>いいえ </strong> - セキュリティ ポリシーを無効にします。</li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -3484,9 +3483,9 @@ T次のテーブルでは、アプリケーション エクスプローラーの
 <td>有</td>
 <td>セキュリティ ポリシーのコンテキスト タイプをコントロールする値。  次のオプションを使用できます。
 <ul>
-<li><strong>ContextString</strong> - <strong>ContextString</strong> プロパティの値を指定する必要があります。 セキュリティ ポリシーは、ポリシーに特定のアプリケーション コンテキストを使用します。</li>
-<li><strong>RoleName </strong>- セキュリティ ポリシーは、<strong>RoleName</strong> の値に割り当てられているアプリケーション ユーザーにのみ適用されます。</li>
-<li><strong>RoleProperty </strong>- この値は、<strong>ContextString</strong> と組み合わせて使用され、複数のロール コンテキストを指定します。</li>
+<li><strong>ContextString </strong> - <strong>ContextString</strong> プロパティの値を指定する必要があります。 セキュリティ ポリシーは、ポリシーに特定のアプリケーション コンテキストを使用します。</li>
+<li><strong>RoleName  </strong>- セキュリティ ポリシーは、<strong>RoleName</strong> の値に割り当てられているアプリケーション ユーザーにのみ適用されます。</li>
+<li><strong>RoleProperty  </strong>- この値は、<strong>ContextString</strong> と組み合わせて使用され、複数のロール コンテキストを指定します。</li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -3620,7 +3619,7 @@ T次のテーブルでは、アプリケーション エクスプローラーの
 <td>職務権限が有効かどうかを示す値。  次のオプションを使用できます。
 <ul>
 <li><strong>はい</strong> - 職務権限を有効にします。</li>
-<li><strong>いいえ</strong> - 関税を無効にします。</li>
+<li><strong>いいえ</strong> - 職務権限を無効にします。</li>
 </ul></td>
 </tr>
 </tbody>
@@ -3831,7 +3830,7 @@ T次のテーブルでは、アプリケーション エクスプローラーの
 </tr>
 <tr class="even">
 <td>モデル</td>
-<td>モデルを指定します。 モデルは、レイヤー内の要素の論理グループです。 要素例には、テーブルまたはクラスが含まれます。 要素は、レイヤー内の 1 つのモデルに正確に存在します。 上位層にあるモデルのカスタマイズされたバージョンに、同じ要素が存在できます。</td>
+<td>モデルを指定します。 モデルはレイヤー内の要素の論理グループです。 要素例には、テーブルまたはクラスが含まれます。 要素は、レイヤー内の 1 つのモデルに正確に存在します。 上位層にあるモデルのカスタマイズされたバージョンに、同じ要素が存在できます。</td>
 </tr>
 <tr class="odd">
 <td>SetCompany</td>
@@ -3841,8 +3840,8 @@ T次のテーブルでは、アプリケーション エクスプローラーの
 <td>ShowParentModule</td>
 <td>メニュー項目の親モジュールに基づいて QuickLaunch を更新するかどうかを指定します。  次のオプションを使用できます。
 <ul>
-<li><strong>はい </strong>- メニュー項目の親モジュールに基づいて QuickLaunch を常に更新してください。</li>
-<li><strong>いいえ</strong> - メニュー項目の親モジュールが、現在のモジュールと異なる場合でも QuickLaunch を変更せずにそのままにします。</li>
+<li><strong>はい  </strong>- メニュー項目の親モジュールに基づいて QuickLaunch を常に更新してください。</li>
+<li><strong>いいえ </strong> - メニュー項目の親モジュールが、現在のモジュールと異なる場合でも QuickLaunch を変更せずにそのままにします。</li>
 </ul>
 既定値は <strong>はい</strong> です。</td>
 </tr>
@@ -3868,19 +3867,19 @@ T次のテーブルでは、アプリケーション エクスプローラーの
 <td>ビッグ</td>
 <td>アクション ウィンドウに使用されるボタンのサイズを指定します。  次のオプションを使用できます。
 <ul>
-<li><strong>はい </strong>- ボタンはフル サイズで表示され、グループの先頭に位置します。</li>
-<li><strong>いいえ</strong> - ボタンは小さいサイズで表示され、グループの右側にあります。</li>
+<li><strong>はい  </strong>- ボタンはフル サイズで表示され、グループの先頭に位置します。</li>
+<li><strong>いいえ </strong> - ボタンは小さいサイズで表示され、グループの右側にあります。</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>CloseDialogBehavior</td>
 <td>ダイアログ ボックスが閉じるときに親ウィンドウで実行されるアクションを指定します。  次のオプションを使用できます。
 <ul>
-<li><strong>自動 </strong>- ダイアログ ボックスの使用方法に応じて、適切な更新アクションが、ダイアログ ボックスが閉じたときに実行されます。</li>
-<li><strong>RefreshDataSource </strong>- 親フォーム上の読み取り専用データ ソースは更新されます。 このオプションは、現在の選択を保存し、データソースに対して <strong>Research()</strong> 操作を実行します。</li>
-<li><strong>RefreshPage </strong>- ページを更新します。</li>
-<li><strong>送信 </strong>- 親ページを更新します。</li>
-<li><strong>なし </strong>- アクションは実行されません。</li>
+<li><strong>自動  </strong>- ダイアログ ボックスの使用方法に応じて、適切な更新アクションが、ダイアログ ボックスが閉じたときに実行されます。</li>
+<li><strong>RefreshDataSource  </strong>- 親フォーム上の読み取り専用データ ソースは更新されます。 このオプションは、現在の選択を保存し、データソースに対して <strong>Research()</strong> 操作を実行します。</li>
+<li><strong>RefreshPage  </strong>- ページを更新します。</li>
+<li><strong>送信  </strong>- 親ページを更新します。</li>
+<li><strong>なし  </strong>- アクションは実行されません。</li>
 </ul>
 既定値は <strong>自動</strong> です。</td>
 </tr>
@@ -3916,30 +3915,29 @@ T次のテーブルでは、アプリケーション エクスプローラーの
 <td>WindowMode</td>
 <td>開いているページに使用するウィンドウのタイプを指定します。  次のオプションを使用できます。
 <ul>
-<li><strong>インライン</strong> - 開いているページは、ブラウザの既存の内容に置き換えられます。 Web メニュー項目にダイアログ ボックスからアクセスしている場合、新しいブラウザー ウィンドウで開くページが開きます。</li>
-<li><strong>モーダル</strong> - 開いているダイアログ ボックスがない場合は、新しいダイアログ ボックスが作成されます。 Web メニュー項目にダイアログ ボックスからアクセスしている場合、現在のダイアログ ボックスのコンテンツが開いているページに置き換えられます。</li>
-<li><strong>NewModal</strong> - 開いているページは常に新しいダイアログ ボックスで開きます。</li>
-<li><strong>NewWindow</strong> - 開いているページは新しいブラウザー ウィンドウで開きます。</li>
+<li><strong>インライン </strong> - 開いているページは、ブラウザの既存の内容に置き換えられます。 Web メニュー項目にダイアログ ボックスからアクセスしている場合、新しいブラウザー ウィンドウで開くページが開きます。</li>
+<li><strong>モーダル </strong> - 開いているダイアログ ボックスがない場合は、新しいダイアログ ボックスが作成されます。 Web メニュー項目にダイアログ ボックスからアクセスしている場合、現在のダイアログ ボックスのコンテンツが開いているページに置き換えられます。</li>
+<li><strong>NewModal </strong> - 開いているページは常に新しいダイアログ ボックスで開きます。</li>
+<li><strong>NewWindow </strong> - 開いているページは新しいブラウザー ウィンドウで開きます。</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>WindowParameters</td>
-<td>SharePoint ダイアログ ボックスの外観を制御する追加のパラメーターを指定します。 パラメータは、かっこ ({}) で囲み、コンマで区切る必要があります。 次の例は、ダイアログボックスのサイズが 400 × 300 ピクセルになり、<strong>閉じる</strong> ボタンまたは <strong>最大化</strong> ボタンが表示されるように <strong>WindowParameters</strong> プロパティを設定する方法を示しています。{幅: 400、高さ: 300、showClose: false、allowMaximize: false}</td>
+<td>SharePoint ダイアログ ボックスの外観を制御する追加のパラメーターを指定します。 パラメータは、かっこ ({}) で囲み、コンマで区切る必要があります。 次の例は、ダイアログボックスのサイズが 400 × 300 ピクセルになり、<strong>閉じる</strong>ボタンまたは<strong>最大化</strong>ボタンが表示されるように <strong>WindowParameters</strong> プロパティを設定する方法を示しています。{width:400, height:300, showClose:false, allowMaximize:false}</td>
 </tr>
 <tr class="even">
 <td>WindowSize</td>
 <td>開いているページに使用するウィンドウのサイズを指定します。  次のオプションを使用できます。
 <ul>
-<li><strong>最小 </strong>- 330 × 200 ピクセル</li>
-<li><strong>小 </strong>- 550 × 450 ピクセル</li>
-<li><strong>中</strong> - 800 × 630 ピクセル</li>
-<li><strong>大</strong> - 930 × 630 ピクセル</li>
-<li><strong>最大</strong> - メインのブラウザー ウィンドウの境界内に収まる最大のサイズ</li>
+<li><strong>最小 </strong>– 330 × 200 ピクセル</li>
+<li><strong>小 </strong>– 550 × 450 ピクセル</li>
+<li><strong>中 </strong>– 800 × 630 ピクセル</li>
+<li><strong>大 </strong>– 930 × 630 ピクセル</li>
+<li><strong>最大 </strong> - メインのブラウザー ウィンドウの境界内に収まる最大のサイズ</li>
 </ul></td>
 </tr>
 </tbody>
 </table>
-
 
 
 

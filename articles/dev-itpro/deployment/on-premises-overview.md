@@ -1,34 +1,34 @@
 ---
-title: "オンプレミス配置オプション"
-description: "Dynamics 365 for Finance and Operations は、オンプレミスまたはローカル ビジネス データ (LBD) の展開オプションを使用して、顧客データ センターでビジネス プロセスを実行することをサポートします。"
+title: オンプレミス配置のオプション
+description: Dynamics 365 for Finance and Operations は、オンプレミスまたはローカル ビジネス データ (LBD) の展開オプションを使用して、顧客データ センターでビジネス プロセスを実行することをサポートします。
 author: kfend
 manager: AnnBe
 ms.date: 11/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: robinr
 ms.search.scope: Operations
 ms.custom: 60373
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: arifk
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.translationtype: HT
-ms.sourcegitcommit: f7df0a91948a494465fbd55af99757e3890357ce
 ms.openlocfilehash: 086449be8a41aa121a22931496bf658ab67d7c77
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369931"
 ---
-# <a name="on-premises-deployment-option"></a>オンプレミス配置オプション
+# <a name="on-premises-deployment-option"></a>オンプレミス配置のオプション
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Finance and Operations は、オンプレミスの配置オプションを使用して、顧客データ センターでの業務プロセスの実行をサポートします。 この配置オプションでは、アプリケーション サーバーおよび Microsoft SQL Server データベースは顧客のデータ センター内で実行されます。 顧客およびパートナーは、Microsoft Dynamics Lifecycle Services (LCS) を利用して、社内展開を管理します。 LCS は、クラウドおよびオンプレミスでの Microsoft Dynamics 365 for Finance and Operations 実装のアプリケーション ライフサイクルを管理するためのツールおよびサービスを提供するアプリケーション管理ポータルです。 業務プロセス モデリング、ソフトウェアの展開および修正、監視および診断などの LCS の機能は、オンプレミス配置をサポートするために使用されます。 
+Microsoft Dynamics 365 for Finance and Operations は、オンプレミスの展開オプションを使用して、顧客データ センターでビジネス プロセスを実行することをサポートします。 この配置オプションでは、アプリケーション サーバーおよび Microsoft SQL Server データベースは顧客のデータ センター内で実行されます。 顧客およびパートナーは、Microsoft Dynamics Lifecycle Services (LCS) を利用して、社内展開を管理します。 LCS は、クラウドおよびオンプレミスでの Microsoft Dynamics 365 for Finance and Operations 実装のアプリケーション ライフサイクルを管理するためのツールおよびサービスを提供するアプリケーション管理ポータルです。 業務プロセス モデリング、ソフトウェアの展開および修正、監視および診断などの LCS の機能は、オンプレミス配置をサポートするために使用されます。 
 > [!IMPORTANT]
 > Azure を含む、任意のパブリック クラウド インフラストラクチャでサポートされていない、Microsoft Dynamics 365 for Finance and Operations のオンプレミス配置。 
 
@@ -65,4 +65,3 @@ Microsoft Dynamics 365 for Finance and Operations は、オンプレミスの配
   
 
 追加のサービスまたはコンポーネントは、必要に応じてオンプレミス配置を拡張するためにコンフィギュレーションすることができます。ただし、コンフィギュレーションの選択により、コア顧客データが顧客データ センターの外部に転送される可能性があります。 たとえば、オンプレミス配置の外部サービスを統合するために使用されるデータ管理機能のコンフィギュレーションにより、オンプレミス配置外のコア顧客データが転送される可能性があります。 
-

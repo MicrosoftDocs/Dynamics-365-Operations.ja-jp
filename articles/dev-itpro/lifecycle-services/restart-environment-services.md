@@ -1,28 +1,27 @@
 ---
-title: "環境サービスの再開"
-description: "このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を通じて展開される環境で個々のサービスを再起動する方法について説明します。こ"
+title: 環境サービスの再開
+description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を通じて展開される環境で個々のサービスを再起動する方法について説明します。こ
 author: kfend
 manager: AnnBe
 ms.date: 03/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2018-03-05
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
+ms.openlocfilehash: be24c3824399732e30ac442cf001a0a4032b4942
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 080dc1dc52a7ad7f368c9075eb02e08c164b7ff7
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369159"
 ---
-
 # <a name="restart-environment-services"></a>環境サービスの再開
 
 [!include [banner](../includes/banner.md)]
@@ -51,4 +50,3 @@ Microsoft Dynamics Lifecycle Services (LCS) のサービスの再開機能を使
 
     > [!NOTE]
     > サービスの再起動には数秒しかかからないため、**環境の状態**の値はすでに**配置済み**にリセットされている可能性があります。 再起動が完了すると、エントリが **履歴** ページに追加されます。
-

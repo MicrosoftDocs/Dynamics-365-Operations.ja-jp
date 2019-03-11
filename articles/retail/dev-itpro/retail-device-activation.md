@@ -1,13 +1,13 @@
 ---
-title: "小売販売時点管理 (POS) デバイスのライセンス認証"
-description: "この記事では、Retail Cloud POS および Retail Modern POS の新しいガイド付きデバイスの有効化について説明し、ユーザーが手動で登録およびデバイスID情報を入力しなくても簡単にデバイスをアクティブ化できるクライアントの簡略化について説明します。"
+title: 小売販売時点管理 (POS) デバイスのライセンス認証
+description: この記事では、Retail Cloud POS および Retail Modern POS の新しいガイド付きデバイスの有効化について説明し、ユーザーが手動で登録およびデバイスID情報を入力しなくても簡単にデバイスをアクティブ化できるクライアントの簡略化について説明します。
 author: athinesh99
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailSharedParameters, RetailDevice
 audience: IT Pro
 ms.reviewer: sericks
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: athinesh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
 ms.openlocfilehash: c51d363be4e6da9d0a181cd528e54a55d8045a47
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369474"
 ---
-
 # <a name="retail-point-of-sale-pos-device-activation"></a>小売販売時点管理 (POS) デバイスのライセンス認証
 
 [!include [banner](../includes/banner.md)]
@@ -37,7 +36,7 @@ ms.lasthandoff: 08/09/2018
 
 1.  HQ で**有効化のためにデバイスを検証**チェックを完了し、デバイスが検証をパスしたことを確認します。
 2.  デバイスを有効化しているクライアント マシンで、Retail サーバー URL 正常性チェックにアクセスし、正常性チェックが承認されていることを確認します。 次の形式を使用します: https://clxtestax404ret.cloud.test.dynamics.com/en/healthcheck?testname=ping
-3.  作業者は Microsoft Azure Active Directory (AAD) アカウント (**外部 ID** 下) にマップする必要があります。
+3.  作業者は、Microsoft Azure Active Directory (AAD) アカウント (**外部 ID 下**) にマップする必要があります。
 4.  マッピングする AAD アカウントは、同じテナントに属している必要があります。
 5.  作業者を AAD アカウントにマップするには、Microsoft Dynamics Lifecycle Services (LCS) の管理者アカウントを使用して HQ に サインインします。
 6.  作業者がマネージャー ロール内のユーザーとして設定されていることを確認します (検証でチェックされます)。
@@ -106,7 +105,6 @@ IT プロフェッショナルは、Cloud POS URL の一部として、デバイ
 [![クラウド POS URL フィールド](./media/p15_11_16.png)](./media/p15_11_16.png) 
 
 クラウド POS は手動入力モードで起動し、Retail サーバー URL、デバイス ID、およびレジスター IDは、有効化のために事前設定されています。
-
 
 
 

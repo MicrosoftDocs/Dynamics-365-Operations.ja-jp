@@ -1,28 +1,27 @@
 ---
-title: "InputControl タイプ"
-description: "すべてのコントロールのメソッドと属性を持つ入力コントロール インターフェイス。 入力コントロールは、たとえば新しいコントロールに対するユーザー入力を収集するために通常はタスク ページで使用されます。"
+title: InputControl タイプ
+description: すべてのコントロールのメソッドと属性を持つ入力コントロール インターフェイス。 入力コントロールは、たとえば新しいコントロールに対するユーザー入力を収集するために通常はタスク ページで使用されます。
 author: shadykdc
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
-ms.search.scope: 
+ms.search.scope: ''
 ms.search.region: Global
 ms.author: kashea
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
-ms.translationtype: HT
-ms.sourcegitcommit: ed6cabcc8c76fba3d4414cd4b564b720c54169e0
+ms.search.validFrom: ''
+ms.dyn365.ops.version: ''
 ms.openlocfilehash: 24965ad43137c2c158db45051fd9561b2393d40e
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369542"
 ---
-
 # <a name="inputcontrol-type"></a>InputControl タイプ
 
 [!include [banner](../../../../includes/banner.md)]
@@ -203,6 +202,5 @@ root(): [Page](view-model-ipage-ipage.md)
 onDataChanged: [EventHook](event-ievent-ieventhook.md) &lt;null&gt;
 
 入力コントロールのデータが変更されたときに発生するイベントです。
-
 
 

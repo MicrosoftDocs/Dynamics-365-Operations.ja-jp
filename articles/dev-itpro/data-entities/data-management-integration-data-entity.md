@@ -1,13 +1,13 @@
 ---
-title: "データ エンティティを使用したデータ管理と統合"
-description: "このトピックでは、同期と非同期の統合の仕組みについて簡単に説明します。"
+title: データ エンティティを使用したデータ管理と統合
+description: このトピックでは、同期と非同期の統合の仕組みについて簡単に説明します。
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: margoc
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: cd03d9c14533324b28fe3fa363b1910de355c118
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369520"
 ---
-
 # <a name="data-management-and-integration-by-using-data-entities"></a>データ エンティティを使用したデータ管理と統合
 
 [!include [banner](../includes/banner.md)]
@@ -60,4 +59,3 @@ ms.lasthandoff: 08/13/2018
 32,768 文字を超える文字列をインポートする必要がある場合は、コンテナー エンティティ フィールドを使用することをお勧めします。
 
 詳細については、FastTrack 技術解説のビデオ: [Dynamics 365 for Operations – 技術解説: 統合](https://www.youtube.com/watch?v=fooBvQhIo6I)をご覧ください。
-

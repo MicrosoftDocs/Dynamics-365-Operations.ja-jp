@@ -1,36 +1,35 @@
 ---
-title: "クライアント インターネット接続"
-description: "このトピックは、オンプレミス配置で、クライアント マシンがインターネットにアクセスできない場合に何が起きるかについて説明します。"
+title: クライアント インターネット接続
+description: このトピックは、オンプレミス配置で、クライアント マシンがインターネットにアクセスできない場合に何が起きるかについて説明します。
 author: jasongre
 manager: AnnBe
 ms.date: 05/23/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
 ms.custom: 29151
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 220d30917196ac5e417ef9f47e2e3a7a6cb96935
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369690"
 ---
-
 # <a name="client-internet-connectivity"></a>クライアント インターネット接続
 
 [!include [banner](../includes/banner.md)]
 
 
-Finance and Operations 用の Dynamics 365 のオンプレミス配置用のローカル ネットワークの構成は、Web クライアントの利用可能な機能に影響を与える可能性があります。 特に、ネットワーク構成がインターネットにアクセスするクライアント マシンを許可していない場合、Web クライアントで複数のパフォーマンス低下が発生します。 コピーされるフィールドは次のとおりです。    
+Dynamics 365 for Finance and Operations のオンプレミス展開用のローカル ネットワークの構成は、Web クライアントで利用可能な機能に影響を与える可能性があります。 特に、ネットワーク構成がインターネットにアクセスするクライアント マシンを許可していない場合、Web クライアントで複数のパフォーマンス低下が発生します。 コピーされるフィールドは次のとおりです。    
 
 + ナビゲーション バーにおける Office アプリ ランチャおよび Dynamics 365 領域はクリック可能でなくなりました。
 + ヘルプ ウィンドウにはアクセスできません。  
@@ -51,4 +50,3 @@ Finance and Operations 用の Dynamics 365 のオンプレミス配置用のロ�
 
 - **インターネット接続が有効** - 管理者は、Web クライアントが外部から行う外部接続をすべてオフにすることができます。
 - **Skype プレゼンスが有効** - 管理者がスカイプへの外部接続をオフにし、そうでなければWeb クライアントが行います。
-

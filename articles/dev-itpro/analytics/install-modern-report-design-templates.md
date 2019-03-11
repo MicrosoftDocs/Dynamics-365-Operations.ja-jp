@@ -1,13 +1,13 @@
 ---
-title: "現代レポートのデザイン テンプレートのインストール"
-description: "このトピックでは、最新のレポート デザイン テンプレートをアプリケーション スイートにインストールする方法について説明します。 これらのサンプルを使用すると、ヘッダーとフッターに柔軟なブランドのあるグラフィックの豊富なビジネス ドキュメントを作成することができます。"
+title: 現代レポートのデザイン テンプレートのインストール
+description: このトピックでは、最新のレポート デザイン テンプレートをアプリケーション スイートにインストールする方法について説明します。 これらのサンプルを使用すると、ヘッダーとフッターに柔軟なブランドのあるグラフィックの豊富なビジネス ドキュメントを作成することができます。
 author: tjvass
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: PrintMgmtSetupUIMain
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 96a9075294c1f2a9cfde03be1aaaa26af90de4c2
 ms.openlocfilehash: 172e800fb43cb60ab2d7bc46736046576ef5ee9e
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368611"
 ---
-
 # <a name="install-modern-report-design-templates"></a>現代レポートのデザイン テンプレートのインストール
 
 [!include [banner](../includes/banner.md)]
@@ -123,4 +122,3 @@ Application Suite Modern Designs モデルは、Application Suite モデルの�
 
 6. 別のページを開きます。 このステップでは、保存操作が強制的に実行されます。
 7. アプリケーションで最新のデザインを表示するために販売注文を転記します。
-

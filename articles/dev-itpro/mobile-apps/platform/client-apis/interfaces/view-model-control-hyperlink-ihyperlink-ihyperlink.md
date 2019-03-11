@@ -1,28 +1,27 @@
 ---
-title: "HyperLink タイプ"
-description: "Hyperlink コントロール タイプ。 ハイパーリンク コントロールは、ハイパーリンクを示すコントロールです。 ほとんどの場合、Pagelinks も使用できます。"
+title: HyperLink タイプ
+description: Hyperlink コントロール タイプ。 ハイパーリンク コントロールは、ハイパーリンクを示すコントロールです。 ほとんどの場合、Pagelinks も使用できます。
 author: shadykdc
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
-ms.search.scope: 
+ms.search.scope: ''
 ms.search.region: Global
 ms.author: kashea
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
-ms.translationtype: HT
-ms.sourcegitcommit: ed6cabcc8c76fba3d4414cd4b564b720c54169e0
+ms.search.validFrom: ''
+ms.dyn365.ops.version: ''
 ms.openlocfilehash: 849c108929f143926c8b45e3dbc7bb18eb4fc734
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 2ebea3cbddfa0a5ef0e0fd13d3693da6152bc288
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "369093"
 ---
-
 # <a name="hyperlink-type"></a>HyperLink タイプ
 
 [!include [banner](../../../../includes/banner.md)]
@@ -274,6 +273,5 @@ onDataChanged: [EventHook](event-ievent-ieventhook.md) &lt;null&gt;
 入力コントロールのデータが変更されたときに発生するイベントです。
 
 > [InputControl](view-model-control-basecontrol-iinputcontrol-iinputcontrol.md).[onDataChanged](view-model-control-basecontrol-iinputcontrol-iinputcontrol.md#ondatachanged) から継承
-
 
 

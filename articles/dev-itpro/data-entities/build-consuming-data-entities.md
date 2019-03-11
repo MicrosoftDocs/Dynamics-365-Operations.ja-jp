@@ -1,13 +1,13 @@
 ---
-title: "データ エンティティのビルドおよび使用"
-description: "このチュートリアルでは、エンティティを構築する方法と、統合シナリオで一部のアウト・オブ・バンド (OOB) エンティティを使用する方法を示します。"
+title: データ エンティティのビルドおよび使用
+description: このチュートリアルでは、エンティティを構築する方法と、統合シナリオで一部のアウト・オブ・バンド (OOB) エンティティを使用する方法を示します。
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 10/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: margoc
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: c85df707f2ed345985e6de0fba5f82e4dc71defc
 ms.openlocfilehash: 8567553bf3008866799c315a9c7ab90d23c86ad4
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/10/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368835"
 ---
-
 # <a name="build-and-consume-data-entities"></a>データ エンティティのビルドおよび使用
 
 [!include [banner](../includes/banner.md)]
@@ -40,7 +39,7 @@ ms.lasthandoff: 10/10/2018
 - ローカル仮想マシン (VM) の、基準 URL は https://usnconeboxax1aos.cloud.onebox.dynamics.com です。
 
 ## <a name="key-concepts"></a>重要な概念
-- Microsoft Visual Studio でのデータ エンティティの開発
+- Microsoft Visual Studio のデータ エンティティの開発
 - データ管理および OData サービスのデータ エンティティを有効化
 - 統合シナリオでデータ エンティティを消費する
 
@@ -77,7 +76,7 @@ FMLabCustomerEntity
 
 ### <a name="create-a-new-project"></a>新しいプロジェクトの作成
 
-1. Visual Studio で、**ファイル** &gt; **新規** &gt; **プロジェクト**をクリックしてから、**Finance and Operations のプロジェクト**を選択します。
+1. Visual Studio で、**ファイル** &gt; **新規** &gt; **プロジェクト** の順にクリックしてから、**Finance and Operations のプロジェクト** を選択します。
 2. プロジェクトを右クリックして **プロパティ** をクリックし、プロジェクトがフリート管理モデルであることを確認します。 設定されていない場合、**モデル** プロパティを**フリート管理**に設定します。
 
 ### <a name="add-a-new-data-entity-to-your-project"></a>プロジェクトへの新しいデータ エンティティの追加
@@ -128,7 +127,7 @@ FMLabCustomerEntity
 
     ![プロパティ ページ](./media/property-pages.png)
 
-3. Visual Studio ツール バーで、**構築** &gt; **ソリューションの構築**をクリックしてプロジェクトを構築します。
+3. Visual Studio ツールバーで、**構築** &gt; **ソリューションの構築** の順にクリックしてプロジェクトを構築します。
 4. ビルドにエラーが含まれていないことを確認します。 この時点でチュートリアルは警告が許可されています。
 
 ### <a name="visually-validate-and-customize-an-entity"></a>目視による検証とエンティティのカスタマイズ
@@ -209,7 +208,7 @@ FMLabCustomerEntity
 
 データ エンティティを作成した後は、インポート/エクスポートを検証することができます。
 
-1. インポートできる CSV ファイルのサンプルを作成します。 次のテキストをコピーし、**FM Lab Customer Import.csv** として保存します。
+1. インポートすることができる CSV ファイルのサンプルを作成します。 次のテキストをコピーし、**FM Lab Customer Import.csv** として保存します。
 
     ```
     CELLPHONE,DRIVERSLICENSE,EMAIL,FIRSTNAME,LASTNAME,CUSTOMERGROUP,ADDRESSLINE1,ADDRESSLINE2,CITY,STATE,ZIPCODE,COUNTRY(999) 555-0100,S615-3939-2349,chris.spencer@adatum.com,Chris,Spencer,adv\_mem\_1,444 Main Street,,Orlando,FL,77899,US(188) 555-0101,S615-3939-2350,Ichiro.lannin@blueyonderairlines.com,Ichiro,Lannin,non\_mem\_1,12 Long Street,,New York City,NY,99087,US(777) 555-0102,S615-3939-2351,josh.smith@fourthcoffee.com,Josh,Smith,adv\_mem\_1,9606 122th Avenue,,Sydney,TX,99874,US(456) 555-0103,S615-3939-2352,Vince@fabrikam.us,Vince,Ahmed,non\_mem\_1,123 Microsoft Way,Unit 87,Seattle,WA,90001,US(345) 555-0104,S615-3939-2353,tony.parker@lucernepublishing.com,Tony,Parker,non\_mem\_1,12012 11th PLNE,Apt 160,San Francisco,CA,75645,US(312) 555-0105,S615-3939-2354,Julia@fineartschool.net,Julia,Natarajan,exec\_mem\_1,449 Long Street,Apt 160,Bruxelles,ID,34213,US
@@ -231,7 +230,7 @@ FMLabCustomerEntity
 
     [![ソースをステージングにマップ](./media/map-source-to-staging.png)](./media/map-source-to-staging.png)
 
-9. ブラウザーの**戻る**ボタンをクリックして、**インポート ジョブ** ページに戻ります。 エンティティ リストのチェック マークは、エンティティがインポートの準備ができていることを示します。
+9. ブラウザーの **戻る** ボタンをクリックして、**インポート ジョブ** ページに戻ります。 エンティティ リストのチェック マークは、エンティティがインポートの準備ができていることを示します。
 
     [![新規レコード 2 のインポート](./media/import-new-record-2.png)](./media/import-new-record-2.png)
 
@@ -298,7 +297,7 @@ FMLabCustomerEntity
 3. **レジストリ エディター** ダイアログ ボックスで、**はい**をクリックします。
 4. **OK** をクリックします。
 
-Internet Explorer を使用して一部の OData URI を表示できるようになりました。
+Internet Explorer  を使用して一部の OData URI を表示できるようになりました。
 
 1. Internet Explorer を起動し、アドレス バーに URL \[baseURL\]/data/$metadata を入力します。OData エンティティに関連付けられたすべてのメタデータが表示されます。
 
@@ -315,7 +314,7 @@ Internet Explorer を使用して一部の OData URI を表示できるように
     > エンティティ名は大文字と小文字が区別されます。
 
 4. 顧客のすべてのプロパティを取得しない場合は、選択したプロパティのみを取得できます。 たとえば、**FirstName** および **LastName** のみを取得するには、次の URL を入力します: \[baseURL\]/data/FleetCustomers?$filter=FirstName.LastName
-5. また、フィルターを適用することもできます。 たとえば、**FirstName**=**Phil** であるすべての顧客をフィルター処理するには、次の URL を入力します: \[baseUrl\]/data/FleetCustomers?$filter=FirstName%20eq%20'Phil' 
+5. また、フィルターを適用することもできます。 たとえば、**FirstName**=**Phil** であるすべての顧客をフィルター処理するには、次の URL を入力します: \[baseUrl\]/data/FleetCustomers?$filter=FirstName%20eq%20'Phil'
 
     > [!NOTE]
     > これらの URL はコピーおよび貼り付けする場合、機能しません。 アドレス バーに手動で入力する必要があります。
@@ -383,7 +382,7 @@ Internet Explorer を使用して一部の OData URI を表示できるように
 6. コード エディターで、次の文字列を組織の URL に置き換えます。
 
     ```
-    <baseURL> public const string MetadataDocumentUri = "<baseURL>/data/"
+    <baseURL> public const string MetadataDocumentUri = "<baseURL>/data/"
     ```
 
 7. OdataProxyGenerator.tt ファイルを保存します。
@@ -395,7 +394,7 @@ Internet Explorer を使用して一部の OData URI を表示できるように
 13. F5 キーを押してアプリケーションを実行し、出力コンソール ウィンドウで指示に従います。 アプリケーションによって、Dynamics AX の資格情報を入力するよう求められる場合があります。 アプリケーションが実行された後、新しい顧客と対応する引当が作成されます。
 14. **レンタル**ページで新しい予約が表示されることを確認するには、これらの手順に従います。
 
-    1. Internet Explorer を起動して、アドレス バーに URL \[baseURL\]/?mi=FMRental を入力します。**FMRental** ページにレンタルの一覧が表示されます。
+    1. Internet Explorer を起動して、アドレス バーに URL \[baseURL\]/?mi=FMRental を入力します。**FMRental**  ページにレンタルの一覧が表示されます。
 
         [![レンタル リスト](./media/rental-list.png)](./media/rental-list.png)
 
@@ -430,4 +429,3 @@ Cannot create a row of size xxx which is greater than the allowable maximum row 
 ## <a name="additional-resources"></a>その他のリソース
 
 [エンティティを開発してデータ移行に使用する](develop-entity-for-data-migration.md)
-

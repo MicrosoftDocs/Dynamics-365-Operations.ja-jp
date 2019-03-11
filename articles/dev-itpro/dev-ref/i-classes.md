@@ -1,13 +1,13 @@
 ---
-title: "I クラス"
-description: "文字 I で始まるシステム API クラス。"
+title: I クラス
+description: 文字 I で始まるシステム API クラス。
 author: RobinARH
 manager: AnnBe
 ms.date: 11/07/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: f06f3929aad48c39dc87b18eba406d0521323b71
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368651"
 ---
-
 # <a name="i-classes"></a>I クラス
 
 [!include [banner](../includes/banner.md)]
@@ -2276,7 +2275,7 @@ pixel
 
 #### <a name="remarks"></a>備考
 
-RGB カラー値を ARGB 値に変換するには、Image :: rgb メソッドを使用します。
+RGB カラー値を ARGB 値に変換するには、Image::rgb メソッドを使用します。
 
 ### <a name="method-transparent"></a>メソッド transparent
 
@@ -3820,7 +3819,7 @@ InteropPermission クラスは、特定の API のアクセス許可をチェッ
         CodeAccessPermission::revertAssert(); 
     }
 
-### <a name="methods"></a>メソッド
+### <a name="methods"></a>方法
 
 | 方法                                                 | 説明                                                                        |
 |--------------------------------------------------------|------------------------------------------------------------------------------------|
@@ -4169,7 +4168,6 @@ mode パラメーターは、次のモードのいずれかになります。
         // Close the code access permission scope. 
         CodeAccessPermission::revertAssert(); 
     }
-
 
 
 

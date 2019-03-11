@@ -1,13 +1,13 @@
 ---
-title: "メンテナンス モード"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations のメンテナンス モードについて説明します。 メンテナンス モードは、システム機能に影響を与える可能性のあるシステム変更を、システム管理者が安全に実行できるシステム全体に適用される設定です。"
+title: メンテナンス モード
+description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations のメンテナンス モードに関する情報を提供します。 メンテナンス モードは、システム機能に影響を与える可能性のあるシステム変更を、システム管理者が安全に実行できるシステム全体に適用される設定です。
 author: manalidongre
 manager: AnnBe
 ms.date: 12/13/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysConfiguration
 audience: IT Pro
 ms.reviewer: sericks
@@ -18,21 +18,20 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 7e04df9f0e60c221919f8fc5f6dbc9c3454a120f
 ms.openlocfilehash: 83cfa380120be25335e3feeb35f1fc09e8de0760
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368826"
 ---
-
 # <a name="maintenance-mode"></a>メンテナンス モード
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/limited-availability.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Finance and Operations のメンテナンス モードについて説明します。 メンテナンス モードを有効にすると、システム機能に影響を与える可能性のあるシステム変更を、システム管理者が安全に実行する方法が提供されます。 たとえば、コンフィギュレーション キーは、有効または無効にすることができます。 メンテナンス モードがオンのとき、システム管理者および **メンテナンス モード ユーザー** ロールを持つユーザーのみがシステムにサインインすることができます。 既定では、メンテナンス モードがオフになっています。 メンテナンス モードがオフのとき、**ライセンス コンフィギュレーション** ページを編集することはできません。
+このトピックでは、Microsoft Dynamics 365 for Finance and Operations のメンテナンス モードに関する情報を提供します。 メンテナンス モードを有効にすると、システム機能に影響を与える可能性のあるシステム変更を、システム管理者が安全に実行する方法が提供されます。 たとえば、コンフィギュレーション キーは、有効または無効にすることができます。 メンテナンス モードがオンのとき、システム管理者および **メンテナンス モード ユーザー** ロールを持つユーザーのみがシステムにサインインすることができます。 既定では、メンテナンス モードがオフになっています。 メンテナンス モードがオフのとき、**ライセンス コンフィギュレーション** ページを編集することはできません。
 
 ## <a name="turn-maintenance-mode-on-and-off-in-sandbox-and-production-environments-through-lifecycle-services-in-preview"></a>Lifecycle Services を通じてサンドボックスおよび運用環境でメンテナンス モードを有効または無効にする (プレビュー)
 サンドボックスおよび運用環境で、Lifecycle Services (LCS) を通じて直接メンテナンス モードを有効または無効にできます。 これを行うには、次の手順を参照してください。
@@ -64,7 +63,7 @@ ms.lasthandoff: 12/13/2018
 | --setupmode maintenancemode | システムをメンテナンス モードにするかメンテナンス モードを解除するかをセットアップ ツールに通知するには、このパラメーターを使用します。    |
 | --metadatadir               | メタデータ ディレクトリ を指定するには、このパラメーターを使用します。 既定のパッケージ ディレクトリを使用する必要があります。              |
 | --bindir                    | バイナリ ディレクトリ を指定するには、このパラメーターを使用します。 既定のパッケージ ディレクトリを使用する必要があります。              |
-| --sqlserver                 | Microsoft SQL Server を指定するには、このパラメーターを使用します。 1 ボックス環境では、ピリオド (**.**) を使用します。           |
+| --sqlserver                 | このパラメーターを使用して Microsoft SQL Server を指定します。 1 ボックス環境では、ピリオド (**.**) を使用します。           |
 | --sqluser                   | SQL Server のユーザーを指定するには、このパラメーターを使用します。 **AOSUser** を使用する必要があります。                                    |
 | --sqlpwd                    | SQL Server のパスワードを指定するには、このパラメーターを使用します。                                                            |
 | --isinmaintenancemode       | 構成モードを有効または無効にするには、このパラメーターを使用します。 オンにするには **true** とし、オフにするには **false** にします。 |
@@ -86,7 +85,6 @@ Dynamics サービス エンジニアリング チームは、システムをメ
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 イベント ビューアーにエラーが検出できます。
-
 
 
 

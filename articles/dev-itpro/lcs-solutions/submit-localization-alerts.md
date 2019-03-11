@@ -1,13 +1,13 @@
 ---
-title: "国または地域固有の規制機能に関わる通知を送信"
-description: "このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用して、ローカリゼーションおよび翻訳サービスを通じて警告を送信する方法について説明します。 このトピックは、計画およびリリースされた規制機能を、LCS 問題検索を使用して追跡する方法についても説明します。"
+title: 国または地域固有の規制機能に関わる通知を送信
+description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用して、Localization および Translation service を通じて警告を送信する方法について説明します。 このトピックは、計画およびリリースされた規制機能を、LCS 問題検索を使用して追跡する方法についても説明します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 12/07/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: shylaw
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: global
 ms.author: janeaug
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 5efa1df21092c4d2022deeb7f147dce7990aafab
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369783"
 ---
-
 # <a name="submit-alerts-about-countryregion-specific-regulatory-features"></a>国または地域固有の規制機能に関わる通知を送信
 
 [!include [banner](../includes/banner.md)]
@@ -209,5 +208,4 @@ LCS で問題検索を使用して計画済みおよびリリース済みの規�
 
 -   **製品** - 興味のある製品と製品のバージョンを選択します。
 -   **ステータス** - 特定のステータスを選択してください。
-
 

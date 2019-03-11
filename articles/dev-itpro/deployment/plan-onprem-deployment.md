@@ -1,35 +1,34 @@
 ---
-title: "オンプレミス配置の計画および準備"
-description: "このトピックは、オンプレミス展開の計画と準備に役立ちます。"
+title: オンプレミス配置の計画および準備
+description: このトピックは、オンプレミス展開の計画と準備に役立ちます。
 author: robinarh
 manager: AnnBe
 ms.date: 04/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: robinr
 ms.search.scope: Operations
 ms.custom: 60373
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2017-12-20
 ms.dyn365.ops.version: Platform Update 8
-ms.translationtype: HT
-ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
 ms.openlocfilehash: 2a1c89c1f4004ae835df006cb464aae7dba8e5f7
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/17/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369711"
 ---
-
 # <a name="plan-and-prepare-for-on-premises-deployments"></a>オンプレミス配置の計画および準備
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Finance and Operations は、オンプレミスの配置オプションを使用して、顧客データ センターでの業務プロセスの実行をサポートします。 この配置オプションでは、アプリケーション サーバーおよび Microsoft SQL Server データベースは顧客のデータ センター内で実行されます。
+Microsoft Dynamics 365 for Finance and Operations は、オンプレミスの展開オプションを使用して、顧客データ センターでビジネス プロセスを実行することをサポートします。 この配置オプションでは、アプリケーション サーバーおよび Microsoft SQL Server データベースは顧客のデータ センター内で実行されます。
 
 このトピックは、オンプレミス展開の計画と準備に役立ちます。
 
@@ -63,7 +62,7 @@ LCS の詳細については、[Lifecycle Services](../lifecycle-services/lcs.md
 Finance and Operations の開発経験は、クラウドとオンプレミスの配置で同じです。 開発者環境にアクセスするには、[[インスタンスのアクセス](../dev-tools/access-instances.md)] を参照してください。
 
 ### <a name="sandbox-environment"></a>サンドボックス環境
-ビジネス ユーザーと機能チームのメンバーは、サンドボックス環境を使用してアプリケーション機能を検証します。 この機能には、Microsoft Dynamics AX 2012 環境からもたらされたカスタマイズとデータが含まれます。 オンプレミス サンドボックス環境を展開するには、[[オンプレミス環境のセットアップと展開](setup-deploy-on-premises-environments.md)] を参照してください。
+ビジネス ユーザーと機能チームのメンバーは、サンドボックス環境を使用してアプリケーション機能を検証します。 この機能には、カスタマイズ内容や Microsoft Dynamics AX 2012 環境から継承されたデータが含まれます。 オンプレミス サンドボックス環境を展開するには、[[オンプレミス環境のセットアップと展開](setup-deploy-on-premises-environments.md)] を参照してください。
 
 少なくとも、オンプレミスのサンドボックス環境には次のものが必要です。
 - 環境オーケストレータを実行している 3 台のコンピューター
@@ -194,7 +193,7 @@ Service Fabric の詳細については、次のトピックを参照してく�
 ほとんどの場合、広範囲に使用されない限り、2 つのノードを使用する推奨最小要件が適切に動作します。 頻繁な使用がある場合のみ、3 つ以上のノードを必要とし、その後は必要に応じてを縮尺を調整することができます。
 
 ### <a name="sql-server-reporting-services"></a>SQL Server Reporting Services
-Finance and Operations の Dynamics 365 の最新のリリースについては、1 つの SSRS ノードのみを配置することができます。 テスト中に SSRS ノードを監視し、SSRS で使用可能なコアの数を必要に応じて増やします。 SSRS VM とは異なる仮想ホストで事前構成されたセカンダリ ノードを使用できることを確認してください。 これは、SSRS または仮想ホストをホストする仮想マシンに問題がある場合に重要です。 この場合、ノードは交換する必要があります。
+Dynamics 365 for Finance and Operations の現在のリリースは、1 つの SSRS ノードしか展開できません。 テスト中に SSRS ノードを監視し、SSRS で使用可能なコアの数を必要に応じて増やします。 SSRS VM とは異なる仮想ホストで事前構成されたセカンダリ ノードを使用できることを確認してください。 これは、SSRS または仮想ホストをホストする仮想マシンに問題がある場合に重要です。 この場合、ノードは交換する必要があります。
 
 ### <a name="environment-orchestrator"></a>環境オーケストレーター
 オーケストレータ サービスは、展開および LCS との関連する通信を管理するサービスです。 このサービスはプライマリ Service Fabric サービスとして展開され、最低 3 台の VM が必要です。 このサービスは、サービス ファブリック オーケストレーション サービスと同じ場所に配置されています。 これは、クラスターのピーク負荷に合わせたサイズにする必要があります。 詳細については、[Service Fabric クラスターの能力計画に関する考慮事項](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-capacity)を参照してください。
@@ -206,7 +205,7 @@ AOS のようなミッション クリティカルなサービスは、コア、
 
 オンプレミスの配置では、次の認証方法が使用されます。
 
-- **Azure Active Directory (Azure AD)** - Azure AD は LCS へのログインに使用される認証方法です。 Azure AD は LCS ローカル エージェントの構成に使用されます。 詳細については、[Azure Active Directory について](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-whatis) を参照してください。
+- **Azure Active Directory(Azure AD)** - Azure AD は LCS へのログインに使用される認証方法です。 Azure AD は LCS ローカル エージェントの構成に使用されます。 詳細については、「[Azure Active Directory とは何か](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-whatis)」を参照してください。
 - **Active Directory ドメイン サービス (AD DS)** - Finance and Operations (オンプレミス) コンポーネントをホストするコンピューターは、Active Directory ドメインに属している必要があります。 Active Directory ドメイン サービス (AD DS) はネイティブ モードで構成する必要があります。 詳細については、[Active Directory ドメイン サービス](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/active-directory-domain-services) を参照してください。
 - **Active Directory フェデレーション サービス (AD FS)** - AD FS は、オンプレミス配置で使用される認証方法です。 AD FS は、Office 365、クラウド ベースの SaaS アプリケーション、会社のネットワーク上のアプリケーションを含むさまざまなアプリケーション全体でアクセス制御とシングル サインオンを提供します。
   - IT 組織については、同じ資格情報とポリシーのセットに基づいて、最新および従来のアプリケーション、クラウドのオンプレミスの両方への署名とアクセス制御を提供できます。
@@ -219,7 +218,7 @@ AOS のようなミッション クリティカルなサービスは、コア、
 
 Finance and Operations のオンプレミス配置オプションは、オンプレミスのコア顧客データを格納します。 コア顧客データは、[Microsoft Trust Center](https://www.microsoft.com/en-us/trustcenter/privacy/how-microsoft-defines-customer-data) で提供される顧客データ定義のサブセットです。
 
-次のテーブルは、米国内にある Azure データ センターに顧客データを保存するために使用されるサービスの概要を示しています。 サービスには、Lifecycle Services (LCS)、Microsoft Office サインアップ ポータル、および Azure Active Directory が含まれます。 これらのサービスにより、サポート インシデントの初期オンボーディング、開始、追跡、サービスの更新とアップグレードが可能になります。 コア顧客データと呼ばれる他のすべての顧客データは、オンプレミスに保管されます。
+次のテーブルは、米国内にある Azure データ センターに顧客データを保存するために使用されるサービスの概要を示しています。 サービスには、Lifecycle Services (LCS)、Microsoft Office サインアップ ポータルおよび Azure Active Directory が含まれます。 これらのサービスにより、サポート インシデントの初期オンボーディング、開始、追跡、サービスの更新とアップグレードが可能になります。 コア顧客データと呼ばれる他のすべての顧客データは、オンプレミスに保管されます。
 
 | サポート サービス               | 顧客データの定義                      |
 |---------------------------------------|----------------------------------------------------|
@@ -234,4 +233,3 @@ Finance and Operations のオンプレミス配置オプションは、オンプ
 このトピックに記載されている計画活動を完了した後、[Onboard](on-premises-deployment-landing-page.md#onboard) のセクションで [オンプレミス配置 ランディング ページ](on-premises-deployment-landing-page.md) に記載されているリストの手順に従って開始することができます。
 
 計画、展開、メンテナンス、およびトラブルシューティングの詳細については、実装を通じて [オンプレミス配置 ランディング ページ](on-premises-deployment-landing-page.md) を参照してください。
-

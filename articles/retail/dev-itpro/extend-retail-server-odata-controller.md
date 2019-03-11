@@ -1,13 +1,13 @@
 ---
-title: "Retail Server OData コントローラーの拡張"
-description: "このトピックでは、CustomController クラスを拡張するコードを説明します。"
+title: Retail Server OData コントローラーの拡張
+description: このトピックでは、CustomController クラスを拡張するコードを説明します。
 author: kfend
 manager: AnnBe
 ms.date: 11/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations, Retail
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 6514e32b100ea0169d98629fee09afaa66129217
 ms.openlocfilehash: 496ab6512cfb1478ed762eb165a760c872e7e222
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/01/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369749"
 ---
-
 # <a name="extend-a-retail-server-odata-controller"></a>Retail Server OData コントローラーの拡張
 
 [!include [banner](../includes/banner.md)]
@@ -56,4 +55,3 @@ namespace Microsoft.Dynamics.RetailServer.ExtensionSamples
     }
 }
 ```
-

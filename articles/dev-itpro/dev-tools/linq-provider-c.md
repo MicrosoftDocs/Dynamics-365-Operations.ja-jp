@@ -1,13 +1,13 @@
 ---
-title: "C# の統合言語クエリ (LINQ) プロバイダー"
-description: "このトピックでは、LINQ プロバイダーについて説明します。"
+title: C# の統合言語クエリ (LINQ) プロバイダー
+description: このトピックでは、LINQ プロバイダーについて説明します。
 author: pvillads
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 7ffd29a18875dd13da35856bb4b55ebc27d41078
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369552"
 ---
-
 # <a name="language-integrated-query-linq-provider-for-c"></a>C# の統合言語クエリ (LINQ) プロバイダー
 
 [!include [banner](../includes/banner.md)]
@@ -169,7 +168,6 @@ LINQ クエリは、CRUD 操作に対して適用できます。 ただし、レ
 [プログラミング言語のサポート](programming-language-support.md)
 
 [技術概念ガイド](developer-home-page.md)
-
 
 
 

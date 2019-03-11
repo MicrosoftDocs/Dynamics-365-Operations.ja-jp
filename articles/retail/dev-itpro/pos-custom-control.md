@@ -1,13 +1,13 @@
 ---
-title: "POS ビューへのカスタム コントロールの追加"
-description: "このトピックでは、カスタム コントロールを追加することで、Dynamics 365 for Retail の [POS] ビューに表示される情報を改善する方法について説明します。"
+title: POS ビューへのカスタム コントロールの追加
+description: このトピックでは、カスタム コントロールを追加することで、Dynamics 365 for Retail の POS ビューに表示される情報を改善する方法について説明します。
 author: mugunthanm
 manager: AnnBe
 ms.date: 09/15/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations, Retail
@@ -16,15 +16,13 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-09-15
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
 ms.openlocfilehash: 1b92379157d9d72ac9f5cb162c640e8b5c2adbb1
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369438"
 ---
-
-
 # <a name="add-custom-controls-to-pos-views"></a>POS ビューへのカスタム コントロールの追加
 
 [!include [banner](../../includes/banner.md)]
@@ -53,8 +51,8 @@ Microsoft Dynamics 365 for Retail POS のビューに表示される情報を改
 
 > [!NOTE]
 > カスタム コントロールは、次の製品バージョンでのみサポートされます。
-> - **画面レイアウト デザイナーに基づいていないビューの場合:** Microsoft Dynamics 365 for Finance and Operations アプリケーション更新プログラム 3 および Microsoft Dynamics 365 for Retail アプリケーション更新プログラム 3
-> - **画面レイアウト デザイナーに基づくビューの場合:** Microsoft Dynamics 365 for Finance and Operations アプリケーション更新プログラム 4 および Microsoft Dynamics 365 for Retail アプリケーション更新プログラム 4
+> - **画面レイアウト デザイナーに基づかないビュー:** Microsoft Dynamics 365 for Finance and Operations アプリケーション更新プログラム 3 と Microsoft Dynamics 365 for Retail アプリケーション更新プログラム 3
+> - **画面レイアウト デザイナーに基づくビュー:** Microsoft Dynamics 365 for Finance and Operations アプリケーション更新プログラム 4 と Microsoft Dynamics 365 for Retail アプリケーション更新プログラム 4
 
 ## <a name="create-a-custom-control"></a>カスタム コントロールの作成
 
@@ -204,4 +202,3 @@ Microsoft Dynamics 365 for Retail POS のビューに表示される情報を改
     ![製品の詳細ビューに表示された製品の可用性情報](media/pos-custom-control-2.png)
 
 このサンプルの完全なコードは RetailSDK\\Code\\POS\\Extensions\\SampleExtensions\\ViewExtensions\\SimpleProductDetails からコピーすることができます。
-

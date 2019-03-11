@@ -1,28 +1,27 @@
 ---
-title: "Design タイプ"
-description: "デザイン オブジェクトの種類。"
+title: Design タイプ
+description: デザイン オブジェクトの種類。
 author: shadykdc
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
-ms.search.scope: 
+ms.search.scope: ''
 ms.search.region: Global
 ms.author: kashea
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.search.validFrom: ''
+ms.dyn365.ops.version: ''
 ms.openlocfilehash: 7f07dc332f5e2c27ac9ca2c9071febf27753d9bb
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369042"
 ---
-
 # <a name="design-type"></a>Design タイプ
 
 [!include [banner](../../../../includes/banner.md)]
@@ -80,7 +79,7 @@ bindings: any (optional)
 
 ### <a name="border"></a>border
 
-border: "none" &#124; "solid" &#124; "left" &#124; "right" &#124; "top" &#124; "bottom" (optional) 
+border: "none" &#124; "solid" &#124; "left" &#124; "right" &#124; "top" &#124; "bottom" (省略可) 
 
 コントロールの境界動作。 このプロパティは、子によって継承されません。
 
@@ -170,6 +169,5 @@ padding: "none" &#124; "small" &#124; "std" (省略可)
 type: [ControlType](../modules/view-model-control-basecontrol-icontrol.md#controltype) (省略可) 
 
 文字列としてのコントロールのタイプ。
-
 
 

@@ -1,13 +1,13 @@
 ---
-title: "Visual Studio のプロジェクトのテスト"
-description: "このトピックでは、Visual Studio でテストするためのオプションについて説明します。"
+title: Visual Studio のプロジェクトのテスト
+description: このトピックでは、Visual Studio でテストするためのオプションについて説明します。
 author: RobinARH
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: shailesn
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c86c0a2fa1e6d33e0e584c796b65480b618aeac9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 581338a2b1c0558374784e2bcd8cdcec613bd0d8
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369109"
 ---
-
 # <a name="test-projects-in-visual-studio"></a>Visual Studio のプロジェクトのテスト
 
 [!include [banner](../includes/banner.md)]
@@ -36,11 +35,11 @@ ms.lasthandoff: 04/20/2018
 [![1\_サポート](./media/1_support.png)](./media/1_support.png)
 
 ## <a name="author-unitcomponent-test-code-by-using-the-systest-framework"></a>SysTest フレームワークを使用して単位またはコンポーネント テスト コードを作成
-Visual Studioでプロジェクトを作成するときは、X++ 単体テストを追加できます。 **SysTestCase** を含むクラスを拡張し、その後 **SysTestMethodAttribute** 属性を追加するか、またはメソッド名に "test" を含むケースを接頭語として付けます。
+Visual Studio でプロジェクトを作成するときは、X++ 単体テストを追加できます。 **SysTestCase** を含むクラスを拡張し、その後 **SysTestMethodAttribute** 属性を追加するか、またはメソッド名に "test" を含むケースを接頭語として付けます。
 
     class FMUnitTestSample extends SysTestCase
     {
-        [SysTestMethodAttribute]
+        [SysTestMethod]
         public void testTotalsEngineConfig()
         {
         }
@@ -67,6 +66,6 @@ Visual Studioでプロジェクトを作成するときは、X++ 単体テスト
 
 生成されたコードは SysTest フレームワークおよび FormAdaptors に基づいています。 FormAdaptors は、ページ上のラッパー クラスです。 これらは、ページ機能をテストするために使用できる強く型付けされたアプリケーション プログラミング インターフェイス (API) を提供します。 組み込みのページの各パッケージに、事前に生成した FormAdapters が含まれます。 テスト モジュールで、テスト コードを実行するヘルパー メソッドを含む、パッケージおよび「Test Essentials」に対応する FormAdaptor への参照を追加します。
 
+## <a name="advanced-options"></a>詳細オプション
 
-
-
+分類および実行のためのテストをフィルター処理する詳細オプションは、[systest-filtering.md] を参照してください。

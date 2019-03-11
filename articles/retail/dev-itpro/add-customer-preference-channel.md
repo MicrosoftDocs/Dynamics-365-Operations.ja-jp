@@ -1,13 +1,13 @@
 ---
-title: "顧客の基本設定データをチャネル データベースに追加"
-description: "このチュートリアルでは、RetailCustPreferences テーブルを小売チャネルのコマース ランタイム (CRT) に追加する方法と、新しいテーブルのデータをチャネル データベースに移動するサブジョブを作成する方法を示します。"
+title: 顧客の基本設定データをチャネル データベースに追加
+description: このチュートリアルでは、RetailCustPreferences テーブルを小売チャネルのコマース ランタイム (CRT) に追加する方法と、新しいテーブルのデータをチャネル データベースに移動するサブジョブを作成する方法を示します。
 author: kfend
 manager: AnnBe
 ms.date: 07/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations, Retail
@@ -18,20 +18,19 @@ ms.search.industry: Retail
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
 ms.openlocfilehash: 3828997488c7e9f770dd8da6e8b906ea58600b51
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368721"
 ---
-
 # <a name="add-customer-preference-data-to-channel-databases"></a>顧客の基本設定データをチャネル データベースに追加
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> このトピックは、Dynamics 365 for Finance and Operations の 7.1 およびそれ以降のバージョンに適用可能です。 バージョン 7.2 およびそれ以上の場合は、この実装はサポートされていません。 これらのバージョンでは、オーバーレイせずに拡張モデルに従います。
+> このトピックは、Dynamics 365 for Finance and Operations バージョン 7.1 およびそれ以前のバージョンに適用されます。 バージョン 7.2 およびそれ以上の場合は、この実装はサポートされていません。 これらのバージョンでは、オーバーレイせずに拡張モデルに従います。
 
 このチュートリアルでは、RetailCustPreferences テーブルを小売チャネルのコマース ランタイム (CRT) に追加する方法と、新しいテーブルのデータをチャネル データベースに移動するサブジョブを作成する方法を示します。
 
@@ -55,7 +54,7 @@ ms.lasthandoff: 08/09/2018
 4. **チャネル テーブル名**フィールドで、**ax.RetailCustPreference** を選択します。
 5. **テーブル名**フィールドで、**RetailCustPreference** を選択します。
 6. **チャネル フィールド マッピング**タブで、**フィールドの照合**をクリックします。 **開始** フィールドと **終了** フィールドの列に入力されます。 **上記の手順で UI を使用する代わりに、代替方法として、コードで実行することもできます。**
-   1.  Microsoft Visual Studio を起動し、次にアプリケーション オブジェクト ツリー (AOT) で **RetailCDXSeedData\_AX7** クラスを見つけます。
+   1.  Microsoft Visual Studio を起動してから、アプリケーション オブジェクト ツリー (AOT) で **RetailCDXSeedData\_AX7** クラスを見つけます。
    2.  次のメソッドを追加します。
 
            private void C_RetailCustPreference()
@@ -76,7 +75,7 @@ ms.lasthandoff: 08/09/2018
    6.  **小売** &gt; **本社の設定** &gt; **小売用スケジューラ** &gt; **小売用スケジューラの初期化**の順にクリックします。 必要なスケジューラ サブジョブ定義が生成され、サブジョブがスケジューラ ジョブに追加されます。
 
 7. **小売** &gt; **本社の設定** &gt; **小売用スケジューラ** &gt; **小売チャネル スキーマ**の順にクリックします。
-8. **小売チャンネル スキーマ**ページの、左側のナビゲーション ウィンドウで、**Dynamics 365 for Retail** をクリックします。
+8. **小売チャンネル スキーマ** ページの、左側のナビゲーション ウィンドウで、**Dynamics 365 for Retail** をクリックします。
 9. **小売データの配布**タブで、**エクスポート**をクリックします。
 10. 使用しているブラウザーに応じて、次のいずれかのステップを実行します。
     -   Google Chrome を使用している場合は、XML ファイルをダウンロードするように求められる必要があります。 ファイルをパスに保存します。
@@ -99,5 +98,4 @@ ms.lasthandoff: 08/09/2018
 16. **小売** &gt; **本社の設定** &gt; **小売用スケジューラ** &gt; **スケジューラ ジョブ**の順にクリックします。
 17. **スケジューラ ジョブ**ページで、**1010** をクリックし、「顧客」ジョブを選択します。
 18. **サブジョブ**タブで、**新規**をクリックし、**RetailCustPreference** をサブジョブ番号として入力します。 **保存** をクリックします。
-19. <strong>小売チャネル スキーマ</strong>ページで、スキーマ名として **Dynamics 365 for Retail** を選択し、**クエリの生成**をクリックします。
-
+19. <strong>小売チャネル スキーマ</strong> ページで、スキーマ名として **Dynamics 365 for Retail** を選択してから、**クエリの生成** をクリックします。

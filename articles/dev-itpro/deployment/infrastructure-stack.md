@@ -1,13 +1,13 @@
 ---
-title: "セルフサービス配置"
-description: "このトピックでは、Finance and Operations のセルフ サービス配置の概要を示します。"
+title: セルフサービス配置
+description: このトピックでは、Finance and Operations のセルフ サービス配置の概要を示します。
 author: sarvanisathish
 manager: AnnBe
 ms.date: 12/19/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -15,23 +15,22 @@ ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
-ms.translationtype: HT
-ms.sourcegitcommit: f704679606b4e203a6f300b9b4a4a11ddc509675
 ms.openlocfilehash: a35b24f06745945009271168a54ed699d22e1be5
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/26/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369487"
 ---
-
 # <a name="self-service-deployment"></a>セルフサービス配置
 
 [!include[banner](../includes/banner.md)]
 [!include [banner](../includes/limited-availability.md)]
 
-セルフ サービス配置は、Dynamics 365 for Finance and Operations クラウド環境で使用できます。 セルフ サービス配置により、簡単な配置が可能になり配置時間が大幅に減少します。
+Dynamics 365 for Finance and Operationsクラウド環境では、セルフサービス配置が可能です。 セルフ サービス配置により、簡単な配置が可能になり配置時間が大幅に減少します。
 
 > [!IMPORTANT]
-> この機能は、Microsoft Azure の国/地域に基づいて段階的でリリースされます。 ただし、この機能は現在、Finance and Operations のサインアップ過程にいる**新しい顧客**のみ利用可能です。 現在の顧客の既存の環境に変更はありません。
+> この機能は、Microsoft Azure の国/地域に基づいて段階的にリリースされます。 ただし、この機能は現在、Finance and Operations のサインアップ過程にいる**新しい顧客**のみ利用可能です。 現在の顧客の既存の環境に変更はありません。
 >
 > すべての新しい顧客にこの機能が表示されるわけではない点に注意してください。 ただし、アクセス権を持つ新しい顧客の数は、徐々に増加します。 
 
@@ -56,4 +55,3 @@ ms.lasthandoff: 12/26/2018
 - レベル 2 以上では SQL Server アクセスはありません。 Just-In-Time アクセスを使用して SQL データベース アクセスすることは引き続きできます。
 
 - カスタマイズのための結合された配置可能パッケージを提供する必要があります。 つまり、ISV パッケージを含む、すべてのカスタム拡張機能パッケージは、1 つのソフトウェア配置可能パッケージとして配置する必要があります。 一度に 1 つのモジュールを配置することはできません。 これは常に推奨されるベスト プラクティスであり、適用されるようになりました。
-

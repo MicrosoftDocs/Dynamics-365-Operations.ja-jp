@@ -1,28 +1,27 @@
 ---
-title: "Part タイプ"
-description: "パーツ コントロール タイプ。 パーツは、ページのみを含むコンテナー コントロールで、ページがページ内に埋め込まれるのを許可します。"
+title: Part タイプ
+description: パーツ コントロール タイプ。 パーツは、ページのみを含むコンテナー コントロールで、ページがページ内に埋め込まれるのを許可します。
 author: shadykdc
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
-ms.search.scope: 
+ms.search.scope: ''
 ms.search.region: Global
 ms.author: kashea
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.search.validFrom: ''
+ms.dyn365.ops.version: ''
 ms.openlocfilehash: 67bd5662259f11a5f148c4ac2f815172bf721813
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368303"
 ---
-
 # <a name="part-type"></a>Part タイプ
 
 [!include [banner](../../../../includes/banner.md)]
@@ -268,7 +267,6 @@ root(): [Page](view-model-ipage-ipage.md)
 > [Control](view-model-control-basecontrol-icontrol-icontrol.md).[root](view-model-control-basecontrol-icontrol-icontrol.md#root) から継承
 
 #### <a name="returns-pageview-model-ipage-ipagemd"></a>[Page](view-model-ipage-ipage.md) を返します
-
 
 
 

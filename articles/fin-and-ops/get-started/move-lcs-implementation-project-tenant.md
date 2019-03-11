@@ -1,13 +1,13 @@
 ---
-title: "LCS 実装プロジェクトを異なる Azure AD テナントに移動する"
-description: "このトピックでは、定期売買と LCS 実装プロジェクトを異なる Azure AD テナントに移動する方法について説明します。"
+title: LCS 実装プロジェクトを別の Azure AD テナントに移動する
+description: このトピックでは、サブスクリプションと LCS 実装プロジェクトを異なる Azure AD テナントに移動する方法について説明します。
 author: ClaudiaBetz-Haubold
 manager: AnnBe
 ms.date: 06/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: IT Pro
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,26 +15,25 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
+ms.openlocfilehash: 8663d0eaebe8cae33256220e96feebb3baac259e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
-ms.openlocfilehash: 9c9588542822ff7f30028c2a128e29f7d93cf858
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/17/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369048"
 ---
-
-# <a name="move-lcs-implementation-projects-to-different-azure-ad-tenants"></a>LCS 実装プロジェクトを異なる Azure AD テナントに移動する
+# <a name="move-lcs-implementation-projects-to-different-azure-ad-tenants"></a>LCS 実装プロジェクトを別の Azure AD テナントに移動する
 
 [!include [banner](../includes/banner.md)]
 
 サブスクリプションと Microsoft Dynamics Lifecyle Services (LCS) 導入プロジェクトを別の Microsoft Azure Active Directory (Azure AD) テナントに移すことができます。 この移動が必要になる場合のいくつかのシナリオを次に示します。
 
-- 誤って定期売買が正しくない Azure AD テナントに対して購入されました。
+- 誤ってサブスクリプションが正しくない Azure AD テナントに対して購入されました。
 
     > [!NOTE]
     > クラウド サービス プロバイダーであり、既存の顧客に Microsoft Dynamics 365 for Finance and Operations のサブスクリプションを販売する場合は、その顧客との再販業者関係を要求して、顧客の既存の Azure AD テナントにサブスクリプションを配置する必要があります。 Microsoft パートナー センターで新しい顧客レコードを作成する場合、顧客の新しい Azure AD テナントを作成します。
 
-- 定期売買が購入された後、顧客は Azure AD テナントの構造を変更します。
+- サブスクリプションが購入された後、顧客は Azure AD テナントの構造を変更します。
 
 定期購読および関連するすべてのコンポーネントの移動のプロセスには、次の図に示すように、次の 4 つの主要なステップがあります。
 
@@ -101,7 +100,7 @@ Microsoft ボリューム ライセンス契約を通じてライセンスを取
 Web サービスへの呼び出しが、環境の**ホーム**テナントからのみ許可されていることに注意してください。 たとえば、元のテナントは companya.com であり、統合は `services@companya.com` として実行されました。 この場合、テナントを companyb.com に切り替えると、**userInfo.networkdomain** を `https://sts.windows.net/companyb.com` に更新してもWeb サービスの呼び出しに対して `services@companya.com` を使用できなくなります。
 
 > [!IMPORTANT]
-> この期間中、2 つの並列 LCS プロジェクトがあります。 LCS 内の**定期売買を使用可能**ページの LCS プロジェクトに関連付けられている Azure AD テナントの名前と ID を確認できます。 Azure Blob Storage に保存されている添付ファイルを処理するドキュメントは失われます。
+> この期間中、2 つの並列 LCS プロジェクトがあります。 LCS 内の**利用可能なサブスクリプション**ページの LCS プロジェクトに関連付けられている Azure AD テナントの名前と ID を確認できます。 Azure Blob Storage に保存されている添付ファイルを処理するドキュメントは失われます。
 
 ## <a name="delete-environments-on-the-old-tenant"></a>古いテナントの環境の削除
 
@@ -115,4 +114,3 @@ Web サービスへの呼び出しが、環境の**ホーム**テナントから
     - **ボリューム ライセンス サポート:** 作業が完了したこと、およびサブスクリプションが古いテナントに対してすぐ中断することを確認するボリューム ライセンス サポート センター。
 
 2. 古い LCS プロジェクトを削除するサポート チケットをファイルします。
-

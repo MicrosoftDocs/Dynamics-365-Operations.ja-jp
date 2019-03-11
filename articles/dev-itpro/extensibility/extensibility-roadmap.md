@@ -1,35 +1,34 @@
 ---
-title: "アプリケーション拡張機能ロードマップ"
-description: "このトピックでは、コードをオーバーレイ ベースから拡張ベースに変換するための要件とスケジュールについて説明します。"
+title: アプリケーション拡張機能ロードマップ
+description: このトピックでは、コードをオーバーレイ ベースから拡張ベースに変換するための要件とスケジュールについて説明します。
 author: FrankDahl
 manager: AnnBe
 ms.date: 07/10/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
 ms.custom: 89563
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2017-07-10
 ms.dyn365.ops.version: Platform update 1
+ms.openlocfilehash: 535e6c441f22d1bc60ddc894cad4c3af82deba05
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: aebd9935cdd03776ac46b2e852074336c119ac65
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368411"
 ---
-
 # <a name="application-extensibility-roadmap"></a>アプリケーション拡張機能ロードマップ
 
 [!include [banner](../includes/banner.md)]
 
-実装およびアップグレード作業を減らすことは、Microsoft Dynamics 365 for Finance and Operations 開発チームの主要なイニシアティブです。 この構想のメリットは、短期間で、Microsoft とパートナーからの新しいイノベーションを利用でき、総保有コストが削減され、品質向上を実現できることです。 この取り組みの主要な部分は、製品のカスタマイズ方法を変更することです。 Dynamics AX 2012 では、いくつかの拡張機能が製品に追加されました。 たとえば、プリイベントとポストイベントのメソッドを使用する、イベントに基づくカスタマイズの機能が導入されました。 拡張子の機能は、Dynamics 365 for Finance and Operations への進化の中で成長し続けています。  
+実装およびアップグレード作業を減らすことが、Microsoft Dynamics 365 for Finance and Operations 開発チームの主な戦略です。 この構想のメリットは、短期間で、Microsoft とパートナーからの新しいイノベーションを利用でき、総保有コストが削減され、品質向上を実現できることです。 この取り組みの主要な部分は、製品のカスタマイズ方法を変更することです。 Dynamics AX 2012 では、いくつかの拡張性機能が製品に追加されました。 たとえば、プリイベントとポストイベントのメソッドを使用する、イベントに基づくカスタマイズの機能が導入されました。 拡張性は Dynamics 365 for Finance and Operations への進化と共に継続します。  
 
 拡張子ベース カスタマイズには、特に実装およびアップグレードの作業量を削減する場合に、オーバーレイヤー ベースのカスタマイズの従来のアプローチよりもいくつかの利点があります。  
 + オーバーレイヤー ベースのカスタマイズには、コード アップグレード、再コンパイル時刻、広範なテストが必要です。 これにより、修正プログラムをシームレスに適用する機能が制限されます。 これらの原価は、お客様が Microsoft やパートナーの新機能を含む新しいバージョンにアップグレードする際の阻害要因となります。  
@@ -38,7 +37,7 @@ ms.lasthandoff: 04/20/2018
 
 これらの理由により、製品モデルを徐々にシールしてきており、拡張ベース カスタマイズのみをサポートします。 **AppPlatform** および **AppFoundation** が最初のものでした。 これらのモデルは、プラットフォーム更新プログラム 3 (2016 年 11 月) にオーバーレイされてシールされました。 これらのモデルにはバイナリ更新プログラムが月ごとに提供されており、アップグレード コストを削減しより速いリズムで顧客にイノベーションを届けるという目標を達成しています。 
 
-Microsoft Dynamics 365 for Finance and Operations リリース 8.0 では、すべての製品モデルをシールドしました。 現在、拡張機能ベースのカスタマイズのみがサポートされています。
+Microsoft Dynamics 365 for Finance and Operations リリース 8.0 では、すべての製品モデルをシールします。 現在、拡張機能ベースのカスタマイズのみがサポートされています。
 
 次の図は、オーバーレイから、拡張機能に移動したときに従ったロードマップを示しています。
 
@@ -47,9 +46,8 @@ Microsoft Dynamics 365 for Finance and Operations リリース 8.0 では、す�
 > [!NOTE]
 > ソフト シールは、オーバーレイ時にコンパイラの警告を表示します。 ハード シールは、オーバーレイ時にコンパイラのエラーを表示します。 
 
-最新のサポート ポリシーは、リリースから 3 年間のサポートを提供します。 この場合、オーバーレイ コードは Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 リリースで 2017 年 11 月 から始まり、3 年間サポートが続行されます。 ただし、このコードは、オーバーレイ コードが拡張機能に移動されるまでは、後続の製品リリースに移動されません。  
+最新のサポート ポリシーは、リリースから 3 年間のサポートを提供します。 このため、overlayered コードは 2017 年 11 月を起点として 3 年間継続して、Microsoft Dynamics 365 for Finance and Operations、Enterprise edition 7.3 リリースでサポートされます。 ただし、このコードは、オーバーレイ コードが拡張機能に移動されるまでは、後続の製品リリースに移動されません。  
 
-この目標を達成するために、Microsoft、パートナー、顧客には相当量の作業があります。 ワークショップ、営業時間、ヘルプ トピック、および他のリソースは、このエコシステムのトレーニングおよび共同作業で使用可能です。 内部的には、コア プラットフォームとアプリケーションの両方でより多くの拡張性を構築する準備が整いました。 パートナーが拡張機能に移行しているときにパターンを定義するために、AppSource に関するアプリケーションに対して、パートナーと密接に連携して作業しています。
+この目標を達成するために、Microsoft、パートナー、顧客には相当量の作業があります。 ワークショップ、営業時間、ヘルプ トピック、および他のリソースは、このエコシステムのトレーニングおよび共同作業で使用可能です。 内部的には、コア プラットフォームとアプリケーションの両方でより多くの拡張性を構築する準備が整いました。 パートナーが拡張機能に移行しているときにパターンを定義するために、AppSource でのアプリケーションに関して、パートナーと密接に連携して作業しています。
 
 アップグレード時の摩擦が緩和されるというメリットが得られ、イノベーションが実現されるため、オーバーレイを削除する作業を行う価値があります。
-

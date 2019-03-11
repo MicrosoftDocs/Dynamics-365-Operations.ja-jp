@@ -1,13 +1,13 @@
 ---
-title: "Retail ハードウェア ステーションのコンフィギュレーションとインストール"
-description: "このトピックでは、セルフサービスを使用して Retail ハードウェア ステーションを構成、ダウンロード、およびインストールする方法について説明します。 また、Retail ハードウェア ステーションをアンインストールする方法についても説明します。"
+title: Retail ハードウェア ステーションのコンフィギュレーションとインストール
+description: このトピックでは、セルフサービスを使用して Retail ハードウェア ステーションを構成、ダウンロード、およびインストールする方法について説明します。 また、Retail ハードウェア ステーションをアンインストールする方法についても説明します。
 author: jashanno
 manager: AnnBe
 ms.date: 03/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailHardwareStation
 audience: IT Pro
 ms.reviewer: sericks
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 380473cfb819adf881364fd2e6d50f5983ef0da8
-ms.contentlocale: ja-jp
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369831"
 ---
-
 # <a name="configure-and-install-retail-hardware-station"></a>Retail ハードウェア ステーションのコンフィギュレーションとインストール
 
 [!include [banner](includes/banner.md)]
@@ -38,9 +37,9 @@ ms.lasthandoff: 01/04/2019
 ### <a name="configure-a-new-retail-hardware-station-profile-start-here-for-dynamics-365-for-retail-february-2016"></a>新しい Retail ハードウェア ステーション プロファイルをコンフィギュレーションする (Dynamics 365 for Retail、2016 年 2 月)
 
 > [!NOTE]
-> このステップは、Microsoft Dynamics 365 for RetailのFebruary 2016 (RTW) バージョンを実行している場合にのみ必要です。 バージョン 1611 を実行している場合は、次の手順で開始します。
+> このステップは、Microsoft Dynamics 365 for Retail の February 2016 (RTW) バージョンを実行している場合にのみ必要です。 バージョン 1611 を実行している場合は、次の手順で開始します。
 
-1. Microsoft Azure Active Directory (Azure AD) 証明書を使用して、小売用バックオフィスまたは Microsoft Dynamics 365 for Retail の評価版にサインインします。
+1. Microsoft Azure Active Directory (Azure AD) 証明書を使用して、小売用バックオフィスまたは Microsoft Dynamics 365 for Retail トライアル版にサインインします。
 2. **ようこそ**ページで、左上隅のメニューを使用して、**小売** &gt; **チャネル設定** &gt; **POS 設定** &gt; **POS プロファイル** &gt; **ハードウェア ステーションのプロファイル**に移動します。
 3. **ハードウェア ステーションのプロファイル**ページの、アクション ペインで、**新規**を選択します。
 4. **ハードウェア ステーション ID** フィールドに、一意なハードウェア ステーション ID を入力します。
@@ -58,9 +57,9 @@ ms.lasthandoff: 01/04/2019
 ### <a name="configure-a-new-retail-hardware-station-start-here-for-dynamics-365-for-retail-version-1611-or-later"></a>新しい Retail ハードウェア ステーションをコンフィギュレーションする (Dynamics 365 for Retail、バージョン 1611 以降)
 
 > [!NOTE]
-> Dynamics 365 for Retail (初回リリース) のアップグレードされていないバージョンである 2016 年 2 月を実行している場合は、手順 6 はスキップします。
+> Dynamics 365 for Retail(初回リリース) のアップグレードされていないバージョンである 2016 年 2 月を実行している場合は、手順 6 はスキップします。
 
-1. Azure AD 証明書を使用して、Dynamics 365 for Retail 評価版にサインインします。
+1. Azure AD 証明書を使用して、Dynamics 365 for Retail トライアル版にサインインします。
 2. **ようこそ**ページで、左上隅のメニューを使用して、**小売** &gt; **チャンネル** &gt; **小売店舗** &gt; **すべての小売店舗**に移動します。
 3. **すべての小売店舗**ページで、目的の店舗の小売チャネル ID を選択します。 店舗の詳細ビューが表示されます。
 
@@ -90,7 +89,7 @@ ms.lasthandoff: 01/04/2019
 
 ### <a name="download-the-retail-hardware-station-installer"></a>Retail ハードウェア ステーション インストーラーをダウンロード
 
-1. Azure AD 証明書を使用して、小売用バックオフィスまたは Dynamics 365 for Retail 評価版にサインインします。
+1. Azure AD 証明書を使用して、小売用バックオフィスまたは Dynamics 365 for Retail トライアル版にサインインします。
 2. **ようこそ**ページで、左上隅のメニューを使用して、**小売** &gt; **チャンネル** &gt; **小売店舗** &gt; **すべての小売店舗**に移動します。
 3. **すべての小売店舗**ページで、目的の店舗の小売チャネル ID を選択します。 店舗の詳細ビューが表示されます。
 
@@ -138,7 +137,7 @@ Retail ハードウェア ステーション インストーラーは、まず�
 5. 使用する HTTPS ポートを入力します。
 
     > [!NOTE]
-    > - HTTPS ポートは Dynamics 365 for Retail 内で見つけることができます。 (このトピックで前述したコンフィギュレーションの指示を参照してください)。
+    > - Dynamics 365 for Retail で HTTPS ポートを検索することができます。 (このトピックで前述したコンフィギュレーションの指示を参照してください)。
     > - インストーラーは自動的にホスト名を入力します。 何らかの理由で、インストールのためにホスト名を変更する必要がある場合は、ここで変更できます。 ホスト名はシステムの完全修飾ドメイン名 (FQDN) でなければなりません。また、選択したハードウェア ステーション エントリの **ホスト名**フィールドに入力する必要があります。
 
 6. インストーラーは Retail ハードウェア ステーションをインストールし、インストールが成功したかどうかを示します。
@@ -199,10 +198,10 @@ Retail ハードウェア ステーション インストーラーは、まず�
 
 **ソリューション:** 以下の潜在的障害ポイントを確認してください:
 
-- Retail Modern POS を実行しているコンピューターは、Retail ハードウェア ステーションを実行しているコンピューターで使用されている証明書を信頼します。
+- Retail Modern POS を実行しているコンピュータは、Retail hardware station を実行しているコンピュータで使用される証明書を信頼します。
 
     - Web ブラウザーでこの設定を確認するには、次のURL `https://<Computer Name>:<Port Number>/HardwareStation/ping` に移動します。
-    - この URL は ping を使用してコンピュータにアクセスできるかどうかを確認し、ブラウザは証明書が信頼できるかどうかを示します。 (たとえば、Internet Explorer では、カギの記号がアドレス バーに表示されます。 この記号をクリックすると、Internet Explorer は証明書が現在信頼されているかどうかを確認します。 表示される証明書の詳細を見ることで、ローカル コンピュータに証明書をインストールできます)。
+    - この URL は ping を使用してコンピュータにアクセスできるかどうかを確認し、ブラウザは証明書が信頼できるかどうかを示します。 (たとえば、Internet Explorer ではカギのシンボルがアドレス バーに表示されます。 このシンボルを選択すると、Internet Explorer は証明書が現在信頼されているかどうかを確認します。 表示される証明書の詳細を見ることで、ローカル コンピュータに証明書をインストールできます)。
 
 - Retail ハードウェア ステーションを実行するコンピュータで、ハードウェア ステーションで使用されるポートはファイアウォールで開かれます。
 - 小売ハードウェア ステーションのインストールの最後に実行される支払商社情報インストール ツールを使用して、小売ハードウェア ステーションに支払商社情報が正しくインストールされます。
@@ -221,6 +220,5 @@ Microsoft Windows でコントロール パネルを使用して Retail ハー�
 
 1. Windows ロゴ キーを押し、検索ボックスに**コントロール パネル**と入力します。 検索結果の一覧で、**コントロール パネル**を選択します。
 2. コントロール パネルで、**プログラム** &gt; **プログラムのアンインストール**を選択します。 **プログラムと機能** ウィンドウが開きます。
-3. **Retail ハードウェア ステーション用 Microsoft Dynamics 365 for Retail** を選択し、プログラムの一覧の上にある **アンインストール** を選択します。
+3. **Retail ハードウェア ステーション用 Microsoft Dynamics 365 for Retail** を選択し、プログラムの一覧の上にある**アンインストール**を選択します。
 4. アンインストールがプログラムの削除を完了するまで待ちます。
-

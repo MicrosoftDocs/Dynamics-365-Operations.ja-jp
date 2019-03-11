@@ -1,13 +1,13 @@
 ---
-title: "S クラス"
-description: "文字 S で始まるシステム API クラス。"
+title: S クラス
+description: 文字 S で始まるシステム API クラス。
 author: RobinARH
 manager: AnnBe
 ms.date: 11/07/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 4f60a1052c05b9e48bd3df1d34b853b3c78f66a1
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368736"
 ---
-
 # <a name="s-classes"></a>S クラス
 
 [!include [banner](../includes/banner.md)]
@@ -484,11 +483,11 @@ neededAccessLevel プロパティの現在の値。
 
 AccessType システム列挙値の使用可能な値は次のとおりです。
 
--   AccessType::NoAccess.
--   AccessType::View.
--   AccessType::Edit.
--   AccessType::Add.
--   AccessType::Delete.
+-   AccessType::NoAccess。
+-   AccessType::View。
+-   AccessType::Edit。
+-   AccessType::Add。
+-   AccessType::Delete。
 
 ### <a name="method-securitykey"></a>メソッド securityKey
 
@@ -623,7 +622,7 @@ SecurityPolicy クラスには、セキュリティ ポリシーに関する情�
 
 ### <a name="examples"></a>例
 
-### <a name="methods"></a>メソッド
+### <a name="methods"></a>方法
 
 | 方法                                                                 | 説明                                             |
 |------------------------------------------------------------------------|---------------------------------------------------------|
@@ -1148,7 +1147,7 @@ SecurityTableRights クラスのインスタンスを初期化します。
 
 ### <a name="examples"></a>例
 
-### <a name="methods"></a>メソッド
+### <a name="methods"></a>方法
 
 | 方法                                                                                                                 | 説明                                                                |
 |------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
@@ -5268,7 +5267,7 @@ scope
 
 ### <a name="examples"></a>例
 
-### <a name="methods"></a>メソッド
+### <a name="methods"></a>方法
 
 | 方法                                                                | 説明                                            |
 |-----------------------------------------------------------------------|--------------------------------------------------------|
@@ -5538,7 +5537,6 @@ systemSequence クラスの新しいインスタンスを初期化します。
 #### <a name="parameters"></a>パラメーター
 
 tableId  
-
 
 
 

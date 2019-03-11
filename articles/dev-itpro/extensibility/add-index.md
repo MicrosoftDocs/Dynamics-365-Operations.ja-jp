@@ -1,30 +1,29 @@
 ---
-title: "拡張機能を使用してテーブルにインデックスを追加"
-description: "このトピックでは、テーブルにインデックスを追加する方法について説明します。"
+title: 拡張機能を使用してテーブルにインデックスを追加
+description: このトピックでは、テーブルにインデックスを追加する方法について説明します。
 author: ivanv-microsoft
 manager: AnnBe
 ms.date: 07/10/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
 ms.custom: 268724
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ivanv
 ms.search.validFrom: 2017-06-01
 ms.dyn365.ops.version: Platform update 4
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 3dab4107711edd95859b694c22085d4464811914
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368695"
 ---
-
 # <a name="add-indexes-to-tables-through-extension"></a>拡張機能を使用してテーブルにインデックスを追加
 
 [!include [banner](../includes/banner.md)]
@@ -40,4 +39,3 @@ ms.lasthandoff: 08/09/2018
 
 > [!WARNING]
 > 固有のインデックスを作成するのに、この手法は用いないでください。 この変更は、他の独立系ソフトウェア ベンダー (ISV) のソリューションが同じ環境に展開されている場合、そのソリューションを破壊する可能性のある侵入的な変更です。 この機能は、将来のプラットフォーム リリースでは削除されます。
-

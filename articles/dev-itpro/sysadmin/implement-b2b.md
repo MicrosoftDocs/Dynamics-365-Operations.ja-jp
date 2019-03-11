@@ -1,32 +1,31 @@
 ---
-title: "Azure Active Directory への企業間 (B2B) のユーザーをエクスポートします。"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations で企業間のトランザクション機能を実装する方法について説明します。"
+title: Azure Active Directory への企業間 (B2B) のユーザーのエクスポート
+description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations で企業間のトランザクション機能を実装する方法について説明します。
 author: sarvanisathish
 manager: AnnBe
 ms.date: 07/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: B2BInvitationConfiguration
 audience: developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Platform update 12
-ms.translationtype: HT
-ms.sourcegitcommit: 55e5d957de6ef5b24c0cda59738c0755cac810b1
 ms.openlocfilehash: b20839a6847e4a23e82e4a5149b57fdcdfcdb424
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368991"
 ---
-
-# <a name="export-business-to-business-b2b-users-to-azure-active-directory"></a>Azure Active Directory への企業間 (B2B) のユーザーをエクスポートします。
+# <a name="export-business-to-business-b2b-users-to-azure-active-directory"></a>Azure Active Directory への企業間 (B2B) のユーザーのエクスポート
 
 [!include [banner](../includes/banner.md)]
 
@@ -40,12 +39,12 @@ ms.lasthandoff: 10/13/2018
 1. Azure AD で B2B 招待サービス アプリケーションを設定します。
 2. Finance and Operations で B2B 招待サービスの設定のコンフィギュレーションをします。
 
-### <a name="set-up-a-b2b-invitation-service-application-in-azure-ad"></a>Azure AD で B2B 招待サービス アプリケーションを設定
+### <a name="set-up-a-b2b-invitation-service-application-in-azure-ad"></a>Azure AD での B2B 招待サービス アプリケーションの設定
 Azure AD テナントのテナント管理者は、以下の手順を完了する必要があります。
 
 1. [Azure ポータル](https://portal.azure.com)にテナント管理者としてログオンします。 
 
-2. **Azure Active Directory** > **プロパティ**をクリックします。
+2. **Azure Active Directory** > **プロパティ** をクリックします。
 
 3. **ディレクトリ ID** (これはテナント ID) をコピーし、保存します。 これは後で必要になります。
 
@@ -100,5 +99,4 @@ Azure AD テナントのテナント管理者は、以下の手順を完了す�
 
 7. 設定を**保存します**。
 
-これで、ワークフローで**Azure AD B2B ユーザーのプロビジョニング** ワークフロー タスクの使用を開始して、Azure AD に B2B ユーザーを自動的にエクスポートできます。
-
+これで、ワークフローで **Azure AD B2B ユーザーのプロビジョニング** ワークフロー タスクの使用を開始して、Azure AD に B2B ユーザーを自動的にエクスポートできます。

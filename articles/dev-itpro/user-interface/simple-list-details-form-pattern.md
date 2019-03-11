@@ -1,13 +1,13 @@
 ---
-title: "簡易リストおよび簡易詳細のフォーム パターン"
-description: "このトピックでは、簡易リストと詳細フォームのパターンについての情報を提供します。 このパターンは、中程度の複雑さのエンティティのデータを維持するために使用されます。"
+title: 簡易リストおよび簡易詳細のフォーム パターン
+description: このトピックでは、簡易リストと詳細フォームのパターンについての情報を提供します。 このパターンは、中程度の複雑さのエンティティのデータを維持するために使用されます。
 author: jasongre
 manager: AnnBe
 ms.date: 10/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 6db29d422e7dfd7b2481b4fcbc404278e37511d1
 ms.openlocfilehash: 5e32d208398e6ccf4bf525c95fd36844414952dd
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368417"
 ---
-
 # <a name="simple-list-and-details-form-pattern"></a>簡易リストおよび簡易詳細のフォーム パターン
 
 [!include [banner](../includes/banner.md)]
@@ -102,7 +101,7 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 
 **標準フォーム ガイドライン:**
 
--   標準フォーム ガイドラインは、Microsoft Dynamics AX の[全般的なガイドライン](general-form-guidelines.md) ドキュメントに統合されました。
+-   標準フォーム ガイドラインは、Microsoft Dynamics AX [全般的なガイドライン](general-form-guidelines.md) ドキュメントに統合されました。
 
 **簡易リスト & 詳細 ガイドライン:**
 
@@ -164,4 +163,3 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 ### <a name="ax-2012-content"></a>AX 2012 コンテンツ
 
 [![AX 2012 の例](./media/simplelistanddetails5.png)](./media/simplelistanddetails5.png)
-

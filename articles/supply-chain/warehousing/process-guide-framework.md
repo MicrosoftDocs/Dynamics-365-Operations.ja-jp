@@ -1,13 +1,13 @@
 ---
-title: "プロセス ガイド フレームワーク"
-description: "このトピックでは、X++ で倉庫モバイル プロセスを拡張する開発者のプロセス ガイド フレームワークに関する情報を提供します。"
+title: プロセス ガイド フレームワーク
+description: このトピックでは、X++ で倉庫モバイル プロセスを拡張する開発者のプロセス ガイド フレームワークに関する情報を提供します。
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 11/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: shylaw
 ms.search.scope: Operations
@@ -16,14 +16,13 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.translationtype: HT
-ms.sourcegitcommit: 917e3c0ad5a907017c6ac57ff97a2635da52e833
 ms.openlocfilehash: dc23b23a6812db8e9aa56c15ed49076363cc05bb
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368908"
 ---
-
 # <a name="process-guide-framework"></a>プロセス ガイド フレームワーク
 
 [!include [banner](../includes/banner.md)]
@@ -465,4 +464,3 @@ public class ProcessGuideOKAction extends ProcessGuideAction
 拡張方法:
 
 -   **isComplete()** メソッドを拡張し、追加ロジックを構築します。
-

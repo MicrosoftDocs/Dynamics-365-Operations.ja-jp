@@ -1,13 +1,13 @@
 ---
-title: "ウィザードのフォーム パターン"
-description: "この記事では、ウィザードのフォーム パターンに関する情報を提供します。 ウィザードは、順序付けられた一連のタブ ページを使用して、ユーザーがタスクを実行するユーザー アシスタントの特別なフォームです。"
+title: ウィザードのフォーム パターン
+description: この記事では、ウィザードのフォーム パターンに関する情報を提供します。 ウィザードは、順序付けられた一連のタブ ページを使用して、ユーザーがタスクを実行するユーザー アシスタントの特別なフォームです。
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: b6da7e67f1f4917d07d0405d3a05a30bd7b5da84
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 2e0b1748d6dfdf3121fd96687133013b8c96c1f7
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368884"
 ---
-
 # <a name="wizard-form-pattern"></a>ウィザードのフォーム パターン
 
 [!include [banner](../includes/banner.md)]
@@ -78,7 +77,7 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 
 **標準フォーム ガイドライン:**
 
--   標準フォーム ガイドラインは、Microsoft Dynamics AX の[全般的なガイドライン](general-form-guidelines.md) ドキュメントに統合されました。
+-   標準フォーム ガイドラインは、Microsoft Dynamics AX [全般的なガイドライン](general-form-guidelines.md) ドキュメントに統合されました。
 
 **ウィザード** **ガイドライン:**
 
@@ -105,16 +104,15 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 
 ### <a name="open-issues"></a>未処理の問題
 
--   None
+-   なし
 
 ### <a name="ax-2012-content"></a>AX 2012 コンテンツ
 
-#### <a name="ax-2012-links"></a>AX 2012 のリンク
+#### <a name="ax-2012-links"></a>AX 2012 リンク
 
--   [Microsoft Dynamics AX での MSDN ウィザード \[AX 2012\]](http://msdn.microsoft.com/en-us/library/aa622644.aspx)
+-   [Microsoft DynamicsAX\[AX 2012\] の MSDN ウィザード](http://msdn.microsoft.com/en-us/library/aa622644.aspx)
 -   [ウィザード開発のための MSDN ガイドライン \[AX 2012\]](http://msdn.microsoft.com/EN-US/library/aa853845.aspx)
 
 #### <a name="ax-2012-example"></a>AX 2012 の例
 
 [![AX 2012 の例](./media/wizard3.png)](./media/wizard3.png)
-

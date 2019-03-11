@@ -1,34 +1,34 @@
 ---
-title: "Lifecycle Services (LCS) でのオンプレミス プロジェクトの設定"
-description: "このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) でオンプレミス プロジェクトを設定するプロセスについて説明します。"
+title: Lifecycle Services (LCS) でのオンプレミス プロジェクトの設定
+description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) でオンプレミス プロジェクトを設定するプロセスについて説明します。
 author: manalidongre
 manager: AnnBe
 ms.date: 03/29/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Operations
 ms.custom: 60373
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: c14c55fd4e616c673a7fd5cb08fcbbb7ea22afa2
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368396"
 ---
 # <a name="set-up-on-premises-projects-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) でのオンプレミス プロジェクトの設定
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics Lifecycle Services (LCS) を使用して、Microsoft Dynamics 365 for Finance and Operations (オンプレミス) のインスタンスを配置し更新する必要があります。 ボリューム ライセンス フローまたは Dynamics 価格リストを通じてサーバーとユーザーのライセンスを購入した後は、トピックを参照して、[Dynamics 365 for Finance and Operations (オンプレミス) を購買 ](../../fin-and-ops/get-started/purchase-on-premises.md)、Azure AD アカウントを作成、または既存の Azure AD アカウントを使用してすべてのサインアップ手順を完了します。 ユーザーは LCS へリダイレクトされ、そこでオンプレミス実装プロジェクトがプロビジョニングされます。
+Microsoft Dynamics Lifecycle Services (LCS) を使用して、Microsoft Dynamics 365 for Finance and Operations (オンプレミス) のインスタンスを配置し更新する必要があります。 ボリューム ライセンス フローまたは Dynamics 価格リスト フローを通じてサーバーとユーザーのライセンスを購入した後は、「[Dynamics 365 for Finance and Operations (オンプレミス) の購入](../../fin-and-ops/get-started/purchase-on-premises.md)」を参照して、Azure AD アカウントを作成、または既存の Azure AD アカウントを使用してすべてのサインアップ手順を完了します。 ユーザーは LCS へリダイレクトされ、そこでオンプレミス実装プロジェクトがプロビジョニングされます。
 
  [![On-premises 実装プロジェクト](./media/lbd-proejcts-01.png)](./media/lbd-proejcts-01.png)
 
@@ -47,4 +47,3 @@ Microsoft Dynamics Lifecycle Services (LCS) を使用して、Microsoft Dynamics
 - **SharePoint のオンライン ライブラリ** – オンラインの Microsoft SharePoint ライブラリに接続します。
 
 オンプレミス実装を開始するには、プロジェクトを正しくセットアップし、開発者とビルド環境を展開してから、サンドボックス環境と実稼働環境を展開する方法の手順に従う必要があります。 展開に役立つように、2 つの環境スロットがオンプレミス プロジェクトにあらかじめ割り当てられています。 一方のスロットはサンドボックス環境用で、もう一方のスロットは実稼働環境用です。 これらのスロットは、サービス フロー中に使用され、パッケージが実稼働環境で適用される前にサンドボックス環境でテストされることを保証します。
-

@@ -1,13 +1,13 @@
 ---
-title: "アプリケーション オブジェクト ツリー (AOT) のテーブル プロパティ"
-description: "このトピックでは、アプリケーション オブジェクト ツリー (AOT) におけるテーブル要素の <strong>プロパティ</strong> ウィンドウにあるプロパティについて説明します。 テーブル要素は、<strong>データ ディクショナリ</strong> &gt; <strong>テーブル</strong> にあります。"
+title: アプリケーション オブジェクト ツリー (AOT) のテーブル プロパティ
+description: このトピックでは、アプリケーション オブジェクト ツリー (AOT) におけるテーブル要素の <strong>プロパティ</strong> ウィンドウにあるプロパティについて説明します。 テーブル要素は、<strong>データ ディクショナリ</strong> &gt; <strong>テーブル</strong> にあります。
 author: kfend
 manager: AnnBe
 ms.date: 11/13/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012
-ms.service: 
-ms.technology: 
+ms.service: ''
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: AX 2012
@@ -15,16 +15,15 @@ ms.custom: 18141
 ms.assetid: 1ad8b7e9-80b3-44a3-b57d-7e9fc88db038
 ms.search.region: Global
 ms.author: kfend
-ms.search.validFrom: 
+ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: b52bf9b7c8a6abcdd362d16c178a14fa12fef31b
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369185"
 ---
-
 # <a name="table-properties-in-the-application-object-tree-aot"></a>アプリケーション オブジェクト ツリー (AOT) のテーブル プロパティ
 
 [!include [banner](../../includes/banner.md)]
@@ -41,7 +40,7 @@ ms.lasthandoff: 08/09/2018
 <tr class="header">
 <th>プロパティ</th>
 <th>説明</th>
-<th>今回のバージョンの Microsoft Dynamics AX での新要素</th>
+<th>このバージョンの Microsoft DynamicsAX の新要素</th>
 </tr>
 </thead>
 <tbody>
@@ -310,7 +309,7 @@ ms.lasthandoff: 08/09/2018
 </tr>
 <tr class="odd">
 <td><strong><span class="ui">TableType</span></strong></td>
-<td>Microsoft Dynamics AX 2009 にある<strong><span class="ui">一時的</span></strong>なプロパティを置き換えます。 詳細については、<a href="http://msdn.microsoft.com/library/9986b514-6079-499a-b491-9a95589f8229(AX.60).aspx">一時テーブルおよび TableType プロパティ</a> を参照してください。</td>
+<td>Microsoft Dynamics AX 2009 にある <strong><span class="ui">一時的な</span></strong> プロパティを置き換えます。 詳細については、<a href="http://msdn.microsoft.com/library/9986b514-6079-499a-b491-9a95589f8229(AX.60).aspx">一時テーブルおよび TableType プロパティ</a> を参照してください。</td>
 <td>AX 2012</td>
 </tr>
 <tr class="even">
@@ -325,7 +324,7 @@ ms.lasthandoff: 08/09/2018
 </tr>
 <tr class="odd">
 <td><strong><span class="ui">TypicalRowCount</span></strong></td>
-<td>テーブル内に通常表示されるレコード数を指定します。 <strong><span class="code">AnalysisSelection</span></strong> プロパティが設定されていない場合、<strong><span class="code">TypicalRowCount</span></strong> プロパティは、Microsoft SQL Server レポート サービスのレポート ビルダーを使用してレコードを選択する方法を決定します。 <strong><span class="code">TypicalRowCount</span></strong> プロパティの設定は、ドロップダウン リスト、リスト ボックス、フィルタリングされたリスト ボックスを使用してテーブル レコードを選択するかどうかに影響します。 詳細については、<a href="http://msdn.microsoft.com/library/5def498e-107d-4a2b-a621-fbbe0243e399(AX.60).aspx">テーブル プロパティのベスト プラクティス</a> を参照してください。</td>
+<td>テーブル内に通常表示されるレコード数を指定します。 <strong><span class="code">AnalysisSelection</span></strong> プロパティが設定されていない場合は、<strong><span class="code">TypicalRowCount</span></strong> プロパティは、Microsoft SQL Server Reporting Services 用のレポート ビルダーを使用してレコードを選択する方法を決定します。 <strong><span class="code">TypicalRowCount</span></strong> プロパティの設定は、ドロップダウン リスト、リスト ボックス、フィルタリングされたリスト ボックスを使用してテーブル レコードを選択するかどうかに影響します。 詳細については、<a href="http://msdn.microsoft.com/library/5def498e-107d-4a2b-a621-fbbe0243e399(AX.60).aspx">テーブル プロパティのベスト プラクティス</a> を参照してください。</td>
 <td></td>
 </tr>
 <tr class="even">
@@ -355,7 +354,6 @@ ms.lasthandoff: 08/09/2018
 --------
 
 [AOT のデータ ディクショナリ ノード](http://msdn.microsoft.com/library/4d7d1f77-11b8-4d8a-a44c-85e7d288c368(AX.60).aspx)
-
 
 
 

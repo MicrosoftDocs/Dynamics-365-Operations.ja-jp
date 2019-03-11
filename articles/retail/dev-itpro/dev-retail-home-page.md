@@ -1,13 +1,13 @@
 ---
-title: "IT プロおよび開発者向けのホーム ページ"
-description: "このページには、IT プロと Retail をサポートする開発者が利用できるリソースが一覧表示されています。"
+title: IT プロおよび開発者向けのホーム ページ
+description: このページには、IT プロと Retail をサポートする開発者が利用できるリソースが一覧表示されています。
 author: RobinARH
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: robinr
 ms.search.scope: Operations, Retail
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
 ms.openlocfilehash: 23d0cb0e427d9ef46ad5a4d88d0a1a7bc681a8c0
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/17/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369509"
 ---
-
 # <a name="retail-for-it-pros-and-developers-home-page"></a>IT プロおよび開発者向けのホーム ページ
 
 [!include [banner](../includes/banner.md)]
@@ -38,7 +37,7 @@ Retail は、Finance and Operations に依存しています。 中核となる[
 -   [MPOS アーキテクチャ](retail-modern-pos-architecture.md)
 -   [レポート サーバーのアーキテクチャ](retail-server-architecture.md)
 -   [小売オンライン ストア発行アーキテクチャ](retail-online-store-publishing-architecture.md)
--   [小売チャネル パフォーマンス Power BI コンテンツ](../../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)
+-   [Retail Channel Performance Power BI コンテンツ](../../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)
 
 ## <a name="retail-deployment"></a>小売の配置
 -   [Retail Modern POS のコンフィギュレーションとインストール](../retail-modern-pos-device-activation.md)
@@ -46,7 +45,7 @@ Retail は、Finance and Operations に依存しています。 中核となる[
 -   [Retail POS デバイスのライセンス認証](retail-device-activation.md)
 -   [POS のレイアウト デザイナーのインストール](../install-pos-layout-designer.md)
 -   [Retail Hardware Station のコンフィギュレーションとインストール](../retail-hardware-station-configuration-installation.md)
--   [小売店舗スケール ユニットのコンフィギュレーションとインストール](retail-store-scale-unit-configuration-installation.md)
+-   [Retail Store Scale Unit のコンフィギュレーションとインストール](retail-store-scale-unit-configuration-installation.md)
 -   [診断とトラブルシューティングの Retail コンポーネント イベント](retail-component-events-diagnostics-troubleshooting.md)
 -   [アクセス インスタンス](../../dev-itpro/dev-tools/access-instances.md)
 
@@ -60,7 +59,7 @@ Retail は、Finance and Operations に依存しています。 中核となる[
 ## <a name="customize-pos"></a>カスタマイズ POS
 - [Retail POS 画面レイアウト](../pos-screen-layouts.md)
 - [POS のレイアウト デザイナーのインストール](../install-pos-layout-designer.md)
-- [Retail Modern POS をオフライン モードで使用する](retail-modern-pos-offline.md)
+- [オフライン モードで Retail Modern POS を使用する](retail-modern-pos-offline.md)
 - [新規またはカスタマイズされた CRT サービスをオフライン モードで呼び出す](call-crt-service-offline.md)
 - [モダン POS およびクラウド POS のトリガー拡張機能](modern-pos-trigger-extensibility.md)
 - [MPOS 画面レイアウトに新しいカスタム コントロールを追加する](add-new-custom-control-mpos-screen-layout.md)
@@ -93,9 +92,9 @@ Retail は、Finance and Operations に依存しています。 中核となる[
 -   [Retail ハードウェア ステーションのコンフィギュレーションとインストール](../retail-hardware-station-configuration-installation.md)
 -   [ハードウェア ステーションの拡張性](hardware-station-extensibility.md)
 
-## <a name="retail-store-scale-unit"></a>Retail Store スケール ユニット
+## <a name="retail-store-scale-unit"></a>Retail Store Scale Unit
 -   [Retail Store Scale Unit の概要](retail-store-system-begin.md)
--   [小売店舗スケール ユニットのコンフィギュレーションとインストール](retail-store-scale-unit-configuration-installation.md)
+-   [Retail Store Scale Unit のコンフィギュレーションとインストール](retail-store-scale-unit-configuration-installation.md)
 
 ## <a name="commerce-runtime"></a>Commerce Runtime
 -   [Commerce Runtime の概要](commerce-runtime-overview.md)
@@ -133,7 +132,6 @@ Retail は、Finance and Operations に依存しています。 中核となる[
 - [支払コネクタと支払デバイスの実装 (ホワイト ペーパー)](http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx)
 -   [支払コネクタ用の Windows インストーラーの作成](create-windows-installer-payment-connector.md)
 -   [支払コネクタの配置](deploy-payment-connector.md)
-
 
 
 

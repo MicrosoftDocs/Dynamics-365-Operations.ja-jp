@@ -1,28 +1,28 @@
 ---
-title: "クラウド配置オプション"
-description: "このトピックでは、展開するクラウド環境とサブスクリプション、誰がどのタスクを実行できるか、および Microsoft Dynamics 365 for Finance and Operations で管理する必要があるデータおよびカスタマイズについて説明します。"
+title: クラウド配置オプション
+description: このトピックでは、展開するクラウド環境とサブスクリプション、誰がどのタスクを実行できるか、および Microsoft Dynamics 365 for Finance and Operations で管理する必要があるデータおよびカスタマイズについて説明します。
 author: kfend
 manager: AnnBe
 ms.date: 09/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Operations
 ms.custom: 60373
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.translationtype: HT
-ms.sourcegitcommit: a884f66d72fa90146caa67ceae4265d60ede1c0d
 ms.openlocfilehash: ed1766f4c49289bfd4f0401f4c86013600c2555c
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369326"
 ---
 # <a name="cloud-deployment-option"></a>クラウド配置オプション
 
@@ -41,7 +41,7 @@ Microsoft は、すべての顧客がすべてのクラウド配置に対して�
 
 プロジェクトのいくつかのフェーズでは、すべての環境を一度に実行することができます。 既定のライセンスおよび使用可能な層の詳細については、[Dynamics 365 ライセンス ガイド](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409) を参照してください。
 
-条件、顧客、パートナー、および Microsoft サブスクリプションについて聞く場合があります。 *顧客またはパートナーのサブスクリプション* は、評価および開発目的でのみ、顧客またはパートナーが独自の Azure サブスクリプションをもって Dynamics 365 for Finance and Operations 環境を配置することを意味しています。 顧客やパートナーは、Azure 価格リストに基づいて Azure サブスクリプションに展開されるリソースに対して支払います。 *Microsoft サブスクリプション*は、顧客が Dynamics 365 for Finance and Operations ライセンスを購入し、Microsoft が管理する Azure サブスクリプションに環境を配置できることを意味するため、顧客には Azure からの別個の請求はありません。 各 Enterprise オファーでは、既定で 3 つの環境が含まれています。 
+条件、顧客、パートナー、および Microsoft サブスクリプションについて聞く場合があります。 *顧客またはパートナー サブスクリプション*とは、評価および開発目的でのみ、顧客またはパートナーが独自の Azure サブスクリプションをもって Dynamics 365 for Finance and Operations 環境を配置することを意味します。 顧客やパートナーは、Azure 価格リストに基づいて Azure サブスクリプションに展開されるリソースに対して支払います。 *Microsoft サブスクリプション*とは、顧客が Dynamics 365 for Finance and Operations ライセンスを購入し、Microsoft が管理する Azure サブスクリプションに環境を配置できることを意味します。これにより、顧客には Azure からの別個の請求はありません。 各 Enterprise オファーでは、既定で 3 つの環境が含まれています。 
 
 - 1 つの階層 1 サンド ボックス (ここでは、開発またはビルド環境です)。
 - ユーザー受け入れテスト (UAT) 用の、1 つの階層 2 サンド ボックス (マルチ ボックス環境) です。
@@ -62,9 +62,9 @@ Microsoft は、すべての顧客がすべてのクラウド配置に対して�
 Finance and Operations アプリケーション製造インスタンスには、次の機能があります。
 
 ## <a name="security-and-compliance"></a>セキュリティとコンプライアンス
-Dynamics 365 for Operations は、PA-DSS 3.1 認定を受けています。これは、コンポーネント間のすべての通信が直ちに保護されることを意味します。 
+Dynamics 365 for Operations は、PA-DSS 3.1 認定を受けています。これは、コンポーネント間のすべての通信が何もしなくても保護されることを意味します。 
 
-Microsoft Azure のすべての Dynamics 365 for Operations フロントエンド仮想マシンは配置中に TLS 1.2 のみを承諾するようにコンフィギュレーションされています。 
+Microsoft Azure のすべての Dynamics 365 for Operations フロント エンド仮想マシンは、TLS 1.2 のみを受け入れるように配置時に構成されます。 
 
 > [!IMPORTANT]
 > 購入したアドオン サンドボックスを含む Microsoft 管理対象のサンドボックスに管理者権限を持つお客様は、次のガイドラインに従わなければなりません。
@@ -75,7 +75,7 @@ Microsoft Azure のすべての Dynamics 365 for Operations フロントエン�
 ## <a name="remote-desktop"></a>リモート デスクトップ
 
 ### <a name="microsoft-managed-environments"></a>Microsoft が管理する環境
-顧客は、Microsoft Remote Desktop (RDP) を介して、Dynamics 365 for Finance and Operations (VM) に接続するための追加セットアップを完了する必要があります。 この追加の設定は、 レベル 1 〜 レベル 5 のサンドボックスとアドオンを含む、Microsoft が管理するすべての環境に適用されます。 レベル 1 からレベル 5 のサンドボックス環境に接続するためには、明示的に組織の IP アドレス空間からのアクセスを有効にする (ホワイトリストする) 必要があります。 これは、リモート デスクトップを介して仮想マシンに接続するために使用される IP アドレス スペースを入力できる**環境ページ** (**Maintain** > **Enable Access**) にアクセスできる Lifecycle Services (LCS) ユーザーによって実行できます。 アクセス ルールは、単一の IP アドレス (例: 10.10.10.10) または IP アドレスの範囲 (例: 192.168.1.0/24) です。 セミコロン (;) で区切られたリスト (例: 10.10.10.10;20.20.20.20;192.168.1.0/24) として複数のエントリを一度に追加する場合があります。 これらのエントリは、環境の仮想ネットワークに関連付けられている Azure ネットワーク セキュリティ グループの設定に使用されます。 詳細については、[ネットワークのセキュリティ グループでネットワーク トラフィックのフィルター処理](/azure/virtual-network/virtual-networks-nsg) を参照してください。
+顧客は、Microsoft Remote Desktop (RDP) を介して、Dynamics 365 for Finance and Operations 仮想マシン (VM) に接続するための追加セットアップを完了する必要があります。 この追加の設定は、 レベル 1 〜 レベル 5 のサンドボックスとアドオンを含む、Microsoft が管理するすべての環境に適用されます。 レベル 1 からレベル 5 のサンドボックス環境に接続するためには、明示的に組織の IP アドレス空間からのアクセスを有効にする (ホワイトリストする) 必要があります。 これは、リモート デスクトップを介して仮想マシンに接続するために使用される IP アドレス スペースを入力できる**環境ページ** (**Maintain** > **Enable Access**) にアクセスできる Lifecycle Services (LCS) ユーザーによって実行できます。 アクセス ルールは、単一の IP アドレス (例: 10.10.10.10) または IP アドレスの範囲 (例: 192.168.1.0/24) です。 セミコロン (;) で区切られたリスト (例: 10.10.10.10;20.20.20.20;192.168.1.0/24) として複数のエントリを一度に追加する場合があります。 これらのエントリは、環境の仮想ネットワークに関連付けられている Azure ネットワーク セキュリティ グループの設定に使用されます。 詳細については、[ネットワークのセキュリティ グループでネットワーク トラフィックのフィルター処理](/azure/virtual-network/virtual-networks-nsg) を参照してください。
 
 > [!IMPORTANT]
 > 顧客は、上記の明示的な IP ホワイトリストのルールを通じて RDP エンドポイントを確実に保護する必要があります。 IP ホワイトリスト ルールは、以下の条件に準拠し、環境がセキュリティで保護され、知的財産が保護されるようにする必要があります。
@@ -99,11 +99,11 @@ Windows Remoting (WinRM) はすべての環境で無効です。 Azure ポータ
 > [!WARNING]
 > WinRM を有効にするための例外は、Microsoft が管理する環境では許可されません。 
 
-## <a name="availability"></a>適用の対象
-Dynamics 365 for Finance and Operations の保証稼働時間は 99.9％ です。 計画的なダウンタイムは月 1 回発生し、8 時間以内に終了します。 ダウンタイム中に完了した作業は必ずしも 8 時間かかるとは限らないため、お客様の環境がダウンすると予想される時間を常にお知らせします。 [Microsoft Dynamics 365 for Finance and Operations および Dynamics Lifecycle Services のサポートを検索](../lifecycle-services/lcs-support.md).
+## <a name="availability"></a>在庫状態
+Dynamics 365 for Finance and Operations の保証稼働時間は 99.9％ です。 計画的なダウンタイムは月 1 回発生し、8 時間以内に終了します。 ダウンタイム中に完了した作業は必ずしも 8 時間かかるとは限らないため、お客様の環境がダウンすると予想される時間を常にお知らせします。 [Microsoft Dynamics 365 for Finance and Operations および Dynamics Lifecycle Services のサポートの検索](../lifecycle-services/lcs-support.md)
 
 ### <a name="high-availability-features"></a>高可用性機能
-サービスの可用性を確保するため、すべての運用環境はデフォルトの Azure 高可用性 (HA) 機能を使用して保護されています。 HA 機能はデータ センター内の単一のノードの失敗により引き起こされるダウンタイムを回避する方法を提供し、DR 機能はデータ センター全体に広く影響を及ぼす機能停止を防止します。 Dynamics 365 for Operations クラウド アーキテクチャは、計算層に Azure 可能性セットを使用して、単一ポイント エラーのイベントを防止します。 Azure 可用性セットの詳細については、[Windows VM のAzure 可用性セット ガイドライン](/azure/virtual-machines/windows/infrastructure-availability-sets-guidelines) を参照してください。
+サービスの可用性を確保するため、すべての運用環境はデフォルトの Azure 高可用性 (HA) 機能を使用して保護されています。 HA 機能はデータ センター内の単一のノードの失敗により引き起こされるダウンタイムを回避する方法を提供し、DR 機能はデータ センター全体に広く影響を及ぼす機能停止を防止します。 Dynamics 365 for Operations クラウド アーキテクチャは、計算層に Azure 可用性セットを使用して、単一障害点イベントを防止します。 Azure 可用性セットの詳細については、[Windows VM のAzure 可用性セット ガイドライン](/azure/virtual-machines/windows/infrastructure-availability-sets-guidelines) を参照してください。
 データベースの高可用性は Azure SQL を通してサポートされます。 詳細については、[Azure SQL データベースの事業継続性の概要](/azure/sql-database/sql-database-business-continuity) を参照してください。
 
 ### <a name="disaster-recovery-features"></a>障害復旧の機能
@@ -152,4 +152,3 @@ Microsoft が管理するレベル 1 〜 レベル 5 のサンドボックス環
 - Microsoft は、ガイドラインに違反していたため、ホワイトリストの IP アドレスを含む規則を削除しました。
 
 環境へのアクセスを回復するには、接続先のコンピュータの IP アドレスを追加する必要があります。 これを行うには、このドキュメントの [[リモート デスクトップ](#remote-desktop)] セクションの手順を実行します。
-

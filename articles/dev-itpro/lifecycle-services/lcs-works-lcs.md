@@ -1,13 +1,13 @@
 ---
-title: "Finance and Operations の顧客用の Lifecycle Services (LCS)"
-description: "この記事は、現在のバージョンの Microsoft Dynamics 365 for Finance and Operations にサインアップしているお客様を対象としています。 顧客と連携して Lifecycle Services (LCS) プロジェクトのライフサイクルを進めることができるようにするパートナーにとっても、この情報は便利です。"
+title: Finance and Operations の顧客用の Lifecycle Services (LCS)
+description: この記事は、現在のバージョンの Microsoft Dynamics 365 for Finance and Operations にサインアップしているお客様を対象としています。 顧客と連携して Lifecycle Services (LCS) プロジェクトのライフサイクルを進めることができるようにするパートナーにとっても、この情報は便利です。
 author: manalidongre
 manager: AnnBe
 ms.date: 10/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 2b5adfde75e098bfe5b8a9a8091eb25a1422a506
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369925"
 ---
-
 # <a name="lifecycle-services-lcs-for-finance-and-operations-customers"></a>Finance and Operations の顧客用の Lifecycle Services (LCS)
 
 [!include [banner](../includes/banner.md)]
@@ -80,7 +79,6 @@ Microsoft Dynamics 365 for Finance and Operations の現在のバージョンに
 入力する情報により操作性が決まるため、入力を十分に確認してください。 必要な情報をすべて入力後、配置要求にはサインオフが必要です。 サインオフを完了したユーザーは、Finance and Operations インスタンスのシステム管理者になります。 適切なユーザーが配置の承認を完了したことを確認します。 サインオフが完了した後、Microsoft サイトの信頼性エンゲージメント チームがリクエストを確認します。 入力した情報をチームが確認した後、プロビジョニングを始めます。 情報が正しくない場合、チームよりユーザーに連絡します。 プロビジョニングが完了した後、次のスクリーン ショットに示すように、ステータスが更新され、環境が展開されたことを示します。 プロビジョニング時間が予想よりもかかる場合、 Microsoft サイト信頼性エンジニアリング チームはステータスを確認し、適切なアクションを実行します。 これらのアクションは、連絡を含む場合もあります。 環境がプロビジョニングされたら、**完全な詳細**をクリックして**詳細環境**ページを開き、システムにサインインしたり、監視状況を表示したり、関連する更新を表示したりできます。 
 
 [![正常に準備されている環境のステータス](./media/12.jpg)](./media/12.jpg)
-
 
 
 

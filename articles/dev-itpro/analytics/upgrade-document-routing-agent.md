@@ -1,13 +1,13 @@
 ---
-title: "ドキュメント回覧エージェントのアップグレード"
-description: "このトピックでは、ドキュメント巡回エージェントをアップグレードする方法について説明します。"
+title: ドキュメント回覧エージェントのアップグレード
+description: このトピックでは、ドキュメント巡回エージェントをアップグレードする方法について説明します。
 author: TJVass
 manager: AnnBe
 ms.date: 04/06/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -15,14 +15,13 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
 ms.openlocfilehash: 96c09e7784a6e3111247466c4e933f0198936e78
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369841"
 ---
-
 # <a name="upgrade-the-document-routing-agent"></a>ドキュメント回覧エージェントのアップグレード
 
 [!include[banner](../includes/banner.md)]
@@ -38,7 +37,7 @@ DRA の既存のインストールをプラットフォーム更新プログラ�
 IT 管理者は、Finance and Operations の DRA をホストするために使用される各ドメイン リソースに対して、次の手順を実行する必要があります。
 
 ## <a name="get-started"></a>使用開始
-DRA を Microsoft Windows サービスとして引き続き実行するには、サービスを実行するために使用されるドメイン アカウントのユーザー名とパスワードの両方が必要です。 この情報は、アップグレード完了後に使用可能になっている必要があります。 有効なサービス アカウントの情報を検索するには、Microsoft 管理コンソール (MMC) サービス スナップインを起動し、一覧から **Microsoft Dynamics 365 ドキュメント ルート指定サービス** を選択します。
+DRA を Microsoft Windows サービスとして引き続き実行するには、サービスを実行するために使用されるドメイン アカウントのユーザー名とパスワードの両方が必要です。 この情報は、アップグレード完了後に使用可能になっている必要があります。 有効なサービス アカウントの情報を検索するには、Microsoft 管理コンソール (MMC) サービス スナップインを起動し、一覧から **Microsoft Dynamics 365 ドキュメント回覧サービス**を選択します。
 
 ![マネージャー スナップイン](media/Services_dialog.png)
 
@@ -53,4 +52,3 @@ DRA を Microsoft Windows サービスとして引き続き実行するには、
 
 ## <a name="install-the-latest-document-routing-agent"></a>最新のドキュメント回覧エージェントのインストール
 定期売買で使用可能な最新の DRA をインストールする方法の詳細については、[ネットワーク プリンター デバイスを有効にするためにドキュメント回覧エージェントをインストールする](install-document-routing-agent.md) を参照してください。
-

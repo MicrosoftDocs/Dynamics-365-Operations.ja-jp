@@ -1,13 +1,13 @@
 ---
-title: "モデルとパッケージ"
-description: "この記事では、モデルとパッケージの概念について説明します。 また、新しいモデルを作成するために Microsoft Visual Studio の開発ツールを使用する方法、既存のモデルのパラメーターを更新する方法、およびモデル間の依存関係を表示する方法についても説明します。"
+title: モデルとパッケージ
+description: この記事では、モデルとパッケージの概念について説明します。 また、新しいモデルを作成するために Microsoft Visual Studio の開発ツールを使用する方法、既存のモデルのパラメーターを更新する方法、およびモデル間の依存関係を表示する方法についても説明します。
 author: robadawy
 manager: AnnBe
 ms.date: 05/30/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: b96446b19fe9559b3f04fc7451ade16140e8f679
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369582"
 ---
-
 # <a name="models-and-packages"></a>モデルとパッケージ
 
 [!include [banner](../includes/banner.md)]
@@ -87,18 +86,17 @@ ms.lasthandoff: 08/09/2018
 1. 次のサービスを停止: AOS Web サービスおよびバッチ管理サービス
 2. モデル フォルダー  C:\AOSService\PackagesLocalDirectory\<PackageName>\MyModel1 (In this example PackageName=ApplicationSuite) を削除します
 3. 手順 1 からサービスを再開
-4. Visual Studio で、モデルを更新します (Visual Studio > Dynamics 365 > モデル管理 > モデルの更新)。
+4. Visual Studio で、モデルを更新します (Visual Studio > Dynamics 365 > モデル管理 > モデルの更新)
 5. Visual Studio で、削除したモデルが属しているパッケージをビルドします (Visual Studio > Dynamics 365 > モデルをビルド...)
 6. Visual Studio で、完全なデータベース同期を実行します (Visual Studio > Dynamics 365 > データベースの同期...)
 
-## <a name="additional-resources"></a>その他のリソース
+## <a name="additional-resources"></a>追加リソース
 
 [開発ツールの概要](development-tools-overview.md)
 
 [開発者ホーム ページ](developer-home-page.md)
 
 [モデルの配分: モデル ファイルをエクスポートおよびインポートする方法](models-export-import.md)
-
 
 
 

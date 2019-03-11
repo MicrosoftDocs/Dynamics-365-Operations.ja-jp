@@ -1,13 +1,13 @@
 ---
-title: "ロールベース セキュリティ"
-description: "この記事では、Microsoft Dynamics 365 for Finance and Operations のロールベースのセキュリティの要素の概要を説明します。"
+title: ロールベース セキュリティ
+description: この記事では、Microsoft Dynamics 365 for Finance and Operations のロールベースのセキュリティの要素の概要を説明します。
 author: sericks007
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysSecRolesEditUsers, SysSecConfiguration, SysUserGroupInfo, SysSecRoleExcludeUsers
 audience: IT Pro
 ms.reviewer: sericks
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: dbe795c61312ada89ca8c6ed08f00411d9c35812
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 846a4b1e65e76109055666737fc32fad3298c199
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369825"
 ---
-
 # <a name="role-based-security"></a>ロールベース セキュリティ
 
 [!include [banner](../includes/banner.md)]
@@ -34,7 +33,7 @@ ms.lasthandoff: 04/20/2018
 
 ロールベース セキュリティでは、個々のユーザーではなく、セキュリティ ロールに対してのみアクセスを許可します。 ユーザーはロールに割り当てられます。 セキュリティ ロールに割り当てられているユーザーは、そのロールに関連付けられている一連の権限にアクセスできます。 任意のロールに割り当てられていないユーザーには権限がありません。 
 
-Microsoft Dynamics 365 for Finance and Operations では、ロール ベース セキュリティが業務の構造で調整されます。 ユーザーは、組織内の担当と業務プロセスへの参加に基づいて、セキュリティ ロールに割り当てられます。 管理者は、ユーザーが使用する必要があるプログラム要素へのアクセスではなく、ロールのユーザーが実行する職務権限へのアクセスを許可します。 
+Microsoft Dynamics 365 for Finance and Operations では、ロールベースのセキュリティを業務の構造に合わせられます。 ユーザーは、組織内の担当と業務プロセスへの参加に基づいて、セキュリティ ロールに割り当てられます。 管理者は、ユーザーが使用する必要があるプログラム要素へのアクセスではなく、ロールのユーザーが実行する職務権限へのアクセスを許可します。 
 
 自動ロール割り当てのルールを設定できるため、ユーザーの責任が変更されるたびに管理者が関与する必要はありません。 セキュリティ ロールとルールが設定された後、業務管理者は、業務データに基づく日常的なユーザーのアクセスを制御できます。
 
@@ -45,7 +44,7 @@ Microsoft Dynamics 365 for Finance and Operations では、ロール ベース �
 
 次の図は、ロールベースのセキュリティとそれらの関係の要素を示しています。 
 
-[![役割に基づいた AX 7 のセキュリティ フレームワーク](./media/rbs.png)](./media/rbs.png)
+[![ロールベースの AX 7 のセキュリティ フレームワーク](./media/rbs.png)](./media/rbs.png)
 
 <a name="security-roles"></a>セキュリティ ロール
 --------------
@@ -80,7 +79,6 @@ Finance and Operations のセキュリティ モデルでは、ジョブを実�
 フォームまたはサービスなどの Finance and Operations の各機能は、エントリ ポイントを使ってアクセスします。 メニュー項目、Web コンテンツ項目、およびサービス工程は、総称してエントリ ポイントと呼ばれます。 
 
 Finance and Operations のセキュリティ モデルでは、セキュリティ保護可能なオブジェクトと機能を実行するために必要なアクセス レベルは権限によってグループ化されます。 これには、エントリ ポイントからアクセスされるテーブル、フィールド、フォーム、またはサーバー側のメソッドが含まれます。
-
 
 
 

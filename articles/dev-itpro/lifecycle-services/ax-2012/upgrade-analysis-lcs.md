@@ -1,13 +1,13 @@
 ---
-title: "Lifecycle Services (LCS) におけるアップグレード分析"
-description: "このトピックでは、Lifecycle Services (LCS) でアップグレード分析を使用する方法について説明します。 アップグレード分析は、Microsoft Dynamics AX 2012 のフル バージョン、マイナー バージョン、およびインプレース アップグレードの計画に役立ちます。"
+title: Lifecycle Services (LCS) におけるアップグレード分析
+description: このトピックでは、Lifecycle Services (LCS) でアップグレード分析を使用する方法について説明します。 アップグレード分析は、Microsoft Dynamics AX 2012 のフル バージョン、マイナー バージョン、およびインプレース アップグレードの計画に役立ちます。
 author: RobinARH
 manager: AnnBe
 ms.date: 11/13/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012
-ms.service: 
-ms.technology: 
+ms.service: ''
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: AX 2012
@@ -15,16 +15,15 @@ ms.custom: 11394
 ms.assetid: 86375ca9-6c2a-47a8-badc-b713b186b4e8
 ms.search.region: Global
 ms.author: robadawy
-ms.search.validFrom: 
+ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: a561ba18e20579349a1d497e33e1824be9ef8fad
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369188"
 ---
-
 # <a name="upgrade-analysis-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) におけるアップグレード分析
 
 [!include [banner](../../includes/banner.md)]
@@ -56,12 +55,12 @@ RDC ファイルと AOD ファイルは任意の順序でアップロードす�
 5.  使用可能なレポートの詳細については、「レポートをダウンロード」セクションを参照してください。
 
 ## <a name="collect-and-upload-files-for-analysis-in-place-upgrade-ax-2012"></a>解析のためのファイルの収集とアップロード (インプレース アップグレード: AX 2012)
-インプレース アップグレードについては、zip ファイルとしてエクスポートしたモデル ストアをアップロードする必要があります。 開始する前に、[準備](http://technet.microsoft.com/library/eb8193f4-0318-427f-bcc9-2919f47afb8f(AX.60).aspx#Prerequisites) セクションの [シナリオ: AX 2012 R2 または AX 2012 R3 の インプレース アップグレードを実行する](http://technet.microsoft.com/library/eb8193f4-0318-427f-bcc9-2919f47afb8f(AX.60).aspx) トピックの手順に従ってください。
+インプレース アップグレードについては、zip ファイルとしてエクスポートしたモデル ストアをアップロードする必要があります。 開始する前に、[シナリオ: AX 2012 R2 または AX 2012 R3 へのインプレース アップグレードを実行する](http://technet.microsoft.com/library/eb8193f4-0318-427f-bcc9-2919f47afb8f(AX.60).aspx) トピックの、[準備](http://technet.microsoft.com/library/eb8193f4-0318-427f-bcc9-2919f47afb8f(AX.60).aspx#Prerequisites) の手順に従ってください。
 
 ### <a name="export-and-zip-your-model-store"></a>モデル ストアをエキスポートおよび圧縮
 
 1.  Microsoft Windows PowerShell または AxUtil コマンドライン ユーティリティを使用して、アップグレードする予定のシステムからモデル ストアをエクスポートします。 詳細については、[方法: モデル ストアのインポートとエクスポート](http://msdn.microsoft.com/library/754c52af-4025-4495-979c-f99d8c5b7d89(AX.60).aspx) を参照してください。
-2.  Microsoft Windows または別のシステムを使用してファイルを zip で圧縮します。
+2.  Microsoft Windows または別のシステムを使用してファイルを zip 圧縮します。
 
 ### <a name="upload-and-analyze-files"></a>ファイルのアップロードと分析
 
@@ -98,13 +97,12 @@ RDC ファイルと AOD ファイルは任意の順序でアップロードす�
 
 
 
-<a name="additional-resources"></a>その他のリソース
+<a name="additional-resources"></a>追加リソース
 --------
 
 [Microsoft Dynamics AX の新しいバージョンにアップグレードする](https://msdn.microsoft.com/en-us/library/aa588216.aspx)
 
-[シナリオ: AX 2012 R2 または AX 2012 R3 の インプレース アップグレードを実行する](https://technet.microsoft.com/en-us/library/jj733502.aspx)
-
+[シナリオ: AX 2012 R2 または AX 2012 R3 への インプレース アップグレードを実行する](https://technet.microsoft.com/en-us/library/jj733502.aspx)
 
 
 

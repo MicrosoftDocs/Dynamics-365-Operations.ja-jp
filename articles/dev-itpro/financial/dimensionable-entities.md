@@ -1,30 +1,29 @@
 ---
-title: "財務分析コードとして使用可能なバッキング テーブルの作成"
-description: "このトピックでは、サポート テーブルを財務分析コードとして使用できるようにするために必要な手順について説明します。"
+title: 財務分析コードとして使用可能なバッキング テーブルの作成
+description: このトピックでは、サポート テーブルを財務分析コードとして使用できるようにするために必要な手順について説明します。
 author: aprilolson
 manager: AnnBe
 ms.date: 11/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: shylaw
 ms.search.scope: Operations
 ms.custom: 191363
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: d0e20dd8109e6fd10bdc8f45d3e473311980a472
 ms.openlocfilehash: f3a19200d222ca71c461bcbe92e8af309366f33b
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368576"
 ---
-
 # <a name="make-backing-tables-consumable-as-financial-dimensions"></a>財務分析コードとして使用可能なバッキング テーブルの作成
 
 [!include [banner](../includes/banner.md)]
@@ -62,7 +61,7 @@ ms.lasthandoff: 12/04/2018
 最初のステップは、バッキング テーブルと同じモデルでビューを作成することです。 以下の手順を実行する前に、**テーブルのプロパティ** ウィンドウでバッキング テーブルが **Create Rec Id Index = Yes** であることを確認します。 または、テーブルに一意のインデックスがあり、RECID がそのインデックスの最初のセグメントであることを確認してください。
 
 1.  プロジェクトで**追加** > **新しい項目**とクリックします。 **表示** を選択し、**追加** をクリックします。
-1.  **表示** を右クリックし、**名前の変更** を選択します。 ビューに **DimAttribute**[BackingTableName] と名前を付けます。 たとえば、DimAttributeCustTable。
+1.  **表示** を右クリックし、**名前の変更** を選択します。 **DimAttribute**[BackingTableName] ビューに名前を付けます。 たとえば、DimAttributeCustTable。
 1.  **メタデータの表示**を展開し、テーブルを画面上の**データ ソース**ノードにドラッグします。
 1.  ノードの名前を **BackingTableName** から **BackingEntity** に変更します。
 1.  財務分析コードとして使用するテーブルのキー、値、および名前を識別します。 フィールドを検索して、BackingEntity データ ソースの一覧にドラッグし、またはデータ ソース上のフィールドにコピーして貼り付けます。 3 つのフィールドの名前を変更します。
@@ -81,7 +80,7 @@ ms.lasthandoff: 12/04/2018
   > [!IMPORTANT]
   > 管理者以外のユーザーに、新しいビューのセキュリティ アクセス権を付与する必要があります。
   > - オーバーレイが使用されるリリース 7.2 およびそれ以前では、**DimensionEssentials** を検索し、プロジェクトに追加します。 **DimensionEssentials** を展開し、**アクセス許可**を右クリックし、その後**新しいアクセス許可**を選択します。 **プロパティ** ウィンドウで、**アクセス レベル**を**読み取り**に設定します。 **セキュリティ権限**をクリックし、**読み取り**の**アクセス レベル**を**アクセス許可**ノードの下に追加します。 これらの 1 つを使用しているモデルに拡張することが必要な場合があります。
-  > - 拡張機能が使用されているリリース 7.3 以降では、新しいビューと共にカスタム モデルで新しいセキュリティ権限を作成します。 **アクセス許可** ノードを右クリックし、**新しいアクセス許可** を選択します。 上記の手順 2 で作成した新しい DimAttribute[DimensionName] ビューの名前を入力し、**アクセス レベル** を **読み取り** に設定します。 **セキュリティ職務権限 SysServerAXBasicMaintain** を検索します。 右クリックし、**拡張機能の作成** を作成します。 必要に応じて拡張機能の名前を変更します。 新たに作成された **セキュリティ特権** を **特権リスト** にドラッグ アンド ドロップします。  
+  > - 拡張機能が使用されているリリース 7.3 以降では、新しいビューと共にカスタム モデルで新しいセキュリティ権限を作成します。 **アクセス許可** ノードを右クリックし、**新しいアクセス許可** を選択します。 上記の手順 2 で作成した新しい DimAttribute[DimensionName] ビューの名前を入力し、**アクセス レベル** を**読み取り**に設定します。 **セキュリティ職務権限 SysServerAXBasicMaintain** を検索します。 右クリックし、**拡張機能の作成** を作成します。 必要に応じて拡張機能の名前を変更します。 新たに作成された **セキュリティ特権** を **特権リスト** にドラッグ アンド ドロップします。  
        
 14. **表示** を右クリックし、**コードの表示** を選択します。 ビューに次のコードを追加します。 これにより、分析コード フレームワークに登録されます。 CustTable に対して作成されたビューを使用する例を次に示します。
       ```
@@ -94,7 +93,7 @@ ms.lasthandoff: 12/04/2018
          _dimensionEnabledType.registerViewIdentifier(tablestr(DimAttribute**CustTable**));
       }
       ```
-15. **Microsoft Dynamics 365** を選択して **オプション** をクリックします。 **ベスト プラクティス** を選択します。 モデルを選択し、**Microsoft.Dynamics.AX.Framework.ViewRules/ViewDimensionEnabledTypeChecker** が表示されるまでスクロールします。 ルールとその子が選択されていることを確認します。
+15. **Microsoft Dynamics 365** を選択し、**オプション**をクリックします。 **ベスト プラクティス** を選択します。 モデルを選択し、**Microsoft.Dynamics.AX.Framework.ViewRules/ViewDimensionEnabledTypeChecker** が表示されるまでスクロールします。 ルールとその子が選択されていることを確認します。
 16.  ビューをビルドしてから同期します。
 
 ## <a name="step-2-validate-that-the-view-returns-the-correct-data-in-sql"></a>手順 2: ビューが SQL で正しいデータを返すことを検証する
@@ -157,7 +156,7 @@ public void renamePrimaryKey()
 
 新しい組織モデル OMOperatingUnitType 列挙が追加された場合、次元として使用可能にする手順は類似していますが、次のように短くすることができます。
 
-1. 既存の DimAttributeOM [BackingTableName] ビューの 1 つをコピーし、適切に名前を変更して、関連するすべてのラベルとヘルプ テキストを調整します。
+1. 既存の DimAttributeOM[BackingTableName] ビューの 1 つをコピーし、適切に名前を変更して、関連するすべてのラベルとヘルプ テキストを調整します。
 1. コピーしたビューで、Datasource\BackingEntity (OMOperatingUnit) \Ranges ノードを展開します。 範囲内の値プロパティを、追加された新しい OMOperatingUnitType 列挙型に変更します。
 1. プロジェクトをビルドして同期します。
 1. SQL でデータを検証するステップ２で始まるこのトピックの手順に従い、**値の使用**ルックアップで表示される分析コードを検証するステップ 5 まで続けます。
@@ -191,4 +190,3 @@ e.g.
 ```
 > [!NOTE]
 > これにより、分析コードが自身を既定の既定値として使用するようにする場合、情報が正しい順序で作成されます。
-

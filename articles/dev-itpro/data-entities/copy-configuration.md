@@ -1,13 +1,13 @@
 ---
-title: "会社間また法人間の構成データをコピー"
-description: "このトピックでは、構成データ プロジェクトと構成データ テンプレートを使用して、Microsoft Dynamics 365 for Finance and Operations のインスタンス間で企業または法人の構成データを移動する方法について説明します。"
+title: 会社間また法人間の構成データをコピー
+description: このトピックでは、コンフィギュレーション データ プロジェクトとコンフィギュレーション データ テンプレートを使用して、Microsoft Dynamics 365 for Finance and Operations のインスタンス間で企業または法人のコンフィギュレーション データを移動する方法について説明します。
 author: mikefalkner
 manager: AnnBe
 ms.date: 12/14/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: margoc
 ms.search.scope: Operations
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Platform update 7
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: c95c4678951247ab882398b5658822a6e3b77123
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368535"
 ---
-# <a name="copy-configuration-data-between-companies-or-legal-entities"></a>会社間また法人間の構成データをコピー
+# <a name="copy-configuration-data-between-companies-or-legal-entities"></a>会社間または法人間のコンフィギュレーション データのコピー
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Finance and Operations 用の構成データをコピーするには、次の 2 つのオプションがあります。
+Microsoft Dynamics 365 for Finance and Operations では、コンフィギュレーション データをコピーするために 2 つのオプションがあります。
 
 - Finance and Operations のインスタンス間でデータを移動するには、最初にある会社からデータをエクスポートしてから、別の会社にインポートする必要があります。
 - データを同一インスタンス内のある法人から別の法人に移動するには、**法人にコピー**機能を使用します。
@@ -65,7 +65,7 @@ Microsoft Dynamics 365 for Finance and Operations 用の構成データをコピ
 - エンティティにフィルターを追加するには、**フィルター** ボタンを使用します。 フィルターを追加する場合、**フィルター** ボタンが**編集**ボタンに変更されます。 データはエクスポートする前にフィルタ処理されます。 テンプレートを追加して、そのテンプレートにフィルターが含まれる場合、それらのフィルターはプロジェクトに追加されます。 ただし、必要に応じて変更または削除できます。
 - エンティティ マッピングを変更する必要がある場合、**マップの表示**ボタンを使用します。 テンプレートを追加して、そのテンプレートにマッピングの変更が含まれる場合、それらの変更はプロジェクトに適用されます。 ただし、必要に応じて変更できます。
 - データ プロジェクトをエクスポートするときにエンティティが一時的に使用されないようにするには、**無効化** 列のチェックボックスを使用します。
-- Microsoft Excel ブックでグリッドの内容を開くには、**Excel で開く** ボタンを使用します。 必要に応じてエンティティを変更してから、**公開**ボタンを使用して Finance and Operations に変更をアップロードします。
+- Microsoft Excel ブックでグリッドの内容を開くには、**Excel で開く**ボタンを使用します。 必要に応じてエンティティを変更してから、**公開**ボタンを使用して Finance and Operations に変更をアップロードします。
 
 エクスポートが完了したら、次の作業を行います。
 
@@ -97,8 +97,8 @@ Microsoft Dynamics 365 for Finance and Operations 用の構成データをコピ
 | 製品情報管理 | 製品 | 製品とリリース済み製品エンティティは、構成に使用する必要があります。 OData シナリオでは、製品マスターおよびリリース済み製品マスター エンティティを使用する必要があります。 |
 | | 製品ドキュメントの添付ファイル | 製品ドキュメントのリリース済製品のドキュメントの添付については、追加の手順がステージング環境で実行されるため、ステージングを決してスキップしないでください。 エクスポート ファイルには添付ファイルの入ったリソース フォルダが必要なため、エクスポートとインポート用にデータ パッケージを使用する必要があります。 エンティティは、画像、ドキュメント、メモ、およびリンクをサポートします。 エクスポートするとき、グローバル一意識別子 (GUID) のような名前を持つ画像ファイルが表示されます。 このファイルは、インポートを完了するために必要となる有効なデータ パッケージです。 |
 | | 製品属性値 | 製品属性値は、ユーザーが **製品詳細** ページから **属性値** ページを開いたときにのみ割り当てられます。 現在、ゴールデン ビルドでこのステップが実行されていない限り、値をインポートすることはできません。 |
-| 調達 | 仕入先カタログ | サプライ チェーン マネジメント ブログで、[Dynamics AX の仕入先カタログ](https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/05/25/vendor-catalogs-in-dynamics-ax/)の「仕入先のカタログをインポート」を参照してください。 |
-| Project | 共有カテゴリ | 共有カテゴリ エンティティは、フィールド **CATEGORYID**、**CATEGORYNAME**、**EXPENSETYPE**、**USINEXPENSE**、**USINPRODUCTION**、**USEINPROJECT** を公開するようになりました。 **USEINEXPENSE** フィールドの値を**はい**に変更すると、**EXPENSETYPE** を**共有カテゴリ** ページの**経費タイプ** フィールドで使用できる有効な値のいずれかに設定する必要があります。 |
+| 調達 | 仕入先カタログ | Supply Chain Management ブログで、[Dynamics AX の仕入先カタログ](https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/05/25/vendor-catalogs-in-dynamics-ax/)の「仕入先のカタログをインポート」を参照してください。 |
+| プロジェクト | 共有カテゴリ | 共有カテゴリ エンティティは、フィールド **CATEGORYID**、**CATEGORYNAME**、**EXPENSETYPE**、**USINEXPENSE**、**USINPRODUCTION**、**USEINPROJECT** を公開するようになりました。 **USEINEXPENSE** フィールドの値を**はい**に変更すると、**EXPENSETYPE** を**共有カテゴリ** ページの**経費タイプ** フィールドで使用できる有効な値のいずれかに設定する必要があります。 |
 
 ### <a name="remove-the-mapping-and-apply-filters-for-specific-entity-fields"></a>マッピングを削除して、特定のエンティティ フィールドにフィルターを適用
 
@@ -303,8 +303,8 @@ Microsoft Dynamics 365 for Finance and Operations 用の構成データをコピ
 ルールの拡張機能には、次の 3 つの変更が必要です。
 
 1. 拡張可能 **DMFRulesType** の列挙 (列挙) へルールの名前を追加します。
-2. 各プロジェクトの定義グループについては、作成したばかりの列挙 (たとえば、**DMFRulesType::NewRule**) を DMFRules テーブルに挿入します。 ソースの法人、ルールの種類、および定義グループの名前を使用します。 ルールにさまざまなオプションなど、さらにデータを格納することが必要な場合は、独自のテーブルを作成し、DMFRules テーブルを拡張できます。
-3. ルールが動作するデータを処理する、独自のクラスを作成します。 ルールをインスタンス化する DMFRules フレームワークについては、**\[DMFRulesBaseFactoryAttribute(DMFRulesType::NewRule)\]** 属性でクラスを修飾する必要があります。
+2. 各プロジェクト定義グループに対して、作成したばかりの列挙 (たとえば、**DMFRulesType::NewRule**) を DMFRules テーブルに挿入します。 ソースの法人、ルールの種類、および定義グループの名前を使用します。 ルールにさまざまなオプションなど、さらにデータを格納することが必要な場合は、独自のテーブルを作成し、DMFRules テーブルを拡張できます。
+3. ルールが動作するデータを処理する、独自のクラスを作成します。 DMFRules フレームワークでルールをインスタンス化するには、**\[DMFRulesBaseFactoryAttribute(DMFRulesType::NewRule)\]** 属性でクラスを修飾する必要があります。
 
 クラスは、**DMFRulesBase** クラスも拡張する必要があります。 この拡張は、**DMFRulesBase.runRule(Common\_staging)** メソッドの実装が必要になります。 \_staging レコードは、ルールが適用されるステージング レコードのバッファーになります。
 
@@ -341,4 +341,3 @@ Finance and Operations が更新されると、エンティティの機能を更
 
 > [!NOTE]
 > 既定では、DAT 会社は国/地域のコンテキストを持っていません。 トランザクション コードおよび 1099 フィールドに使用されるエンティティなどの一部のエンティティは、国/地域コンテキストが必要なため、DAT 会社のデータ プロジェクトに追加された場合は正しくマッピングされません。
-

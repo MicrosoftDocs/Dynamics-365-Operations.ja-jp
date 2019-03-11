@@ -1,13 +1,13 @@
 ---
-title: "タスク シングルのフォーム パターン"
-description: "この記事では、タスク シングル フォームのパターンに関する情報を提供します。 このパターンは、ユーザーが複数のレコードを持つ単一のデータソースから発生したと認識するデータを表示するために以前は使用されていました。"
+title: タスク シングルのフォーム パターン
+description: この記事では、タスク シングル フォームのパターンに関する情報を提供します。 このパターンは、ユーザーが複数のレコードを持つ単一のデータソースから発生したと認識するデータを表示するために以前は使用されていました。
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f2fc183e925356d8fcc559042d78bdb4ddc7c988
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 162346b22ec029a9729213ebb01f723cd8ffe7a8
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369403"
 ---
-
 # <a name="task-single-form-pattern"></a>タスク シングルのフォーム パターン
 
 [!include [banner](../includes/banner.md)]
@@ -91,7 +90,7 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 
 **標準フォーム ガイドライン:**
 
--   標準フォーム ガイドラインは、Microsoft Dynamics AX の[全般的なガイドライン](general-form-guidelines.md) ドキュメントに統合されました。
+-   標準フォーム ガイドラインは、Microsoft Dynamics AX [全般的なガイドライン](general-form-guidelines.md) ドキュメントに統合されました。
 
 **タスクの 1 つのガイドライン :**
 
@@ -112,9 +111,8 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 
 ### <a name="open-issues"></a>未処理の問題
 
--   None
+-   なし
 
 ### <a name="ax-2012-content"></a>AX 2012 コンテンツ
 
 [![AX 2012 視覚例](./media/tasksingle4.png)](./media/tasksingle4.png)
-

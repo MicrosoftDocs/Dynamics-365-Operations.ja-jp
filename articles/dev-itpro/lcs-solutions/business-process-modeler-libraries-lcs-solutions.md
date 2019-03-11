@@ -1,13 +1,13 @@
 ---
-title: "Finance and Operations ソリューションのビジネス プロセス モデラー ライブラリの設定"
-description: "このトピックでは、ビジネス プロセス モデラー (BPM) ライブラリを作成して使用する方法について説明します。"
+title: Finance and Operations ソリューションのビジネス プロセス モデラー ライブラリの設定
+description: このトピックでは、ビジネス プロセス モデラー (BPM) ライブラリを作成して使用する方法について説明します。
 author: kfend
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Lifecycle Services
@@ -15,25 +15,25 @@ ms.custom: 196953
 ms.assetid: 6e6d6896-edef-4739-98ad-c4ea19180972
 ms.search.region: Global
 ms.author: omarc
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 5a923da121bd7ee81027312b3a1b8c2908eb2a7f
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369527"
 ---
-
 # <a name="set-up-business-process-modeler-libraries-for-finance-and-operations-solutions"></a>Finance and Operations ソリューションのビジネス プロセス モデラー ライブラリの設定
 
 [!include [banner](../includes/banner.md)]
 
 このトピックでは、ビジネス プロセス モデラー (BPM) ライブラリを作成して使用する方法について説明します。
 
-## <a name="create-a-business-process-library"></a>業務プロセス ライブラリの作成
+<a name="create-a-business-process-library"></a>業務プロセス ライブラリの作成
+---------------------------------
 
 BPM ライブラリを作成する 2 つの方法があります。 明細行記録またはタスク記録がない新しいライブラリを作成、または既存のライブラリをコピーすることができます。
 
-1.  Microsoft Dynamics Lifecycle Services (LCS) で、プロジェクトを開き、**追加ツール**セクションが表示されるまで右にスクロールしてから、**ビジネス プロセス モデラー**タイルを選択します。 ３ つのセクション (ライブラリのタイプごとに1つずつ) が表示される **業務プロセス ライブラリ** ページ:
+1.  Microsoft Dynamics Lifecycle Services (LCS) で、プロジェクトを開き、**追加ツール** セクションが表示されるまで右にスクロールしてから、**ビジネス プロセス モデラー** タイルを選択します。 ３ つのセクション (ライブラリのタイプごとに1つずつ) が表示される **業務プロセス ライブラリ** ページ:
 
     -   **自分のライブラリ** – ユーザーが作成または追加したビジネス プロセス。
     -   **コーポレート ライブラリ** - 組織内のユーザーがアップロードした独自の業務プロセス。
@@ -93,7 +93,7 @@ BPM ライブラリを作成する 2 つの方法があります。 明細行記
 
 ## <a name="create-a-task-recording-and-associate-it-with-a-business-process"></a>タスク記録を作成し、業務プロセスに関連付ける
 
-カスタム データとカスタマイズを持つ Microsoft Finance and Operations 環境では、タスク記録を作成する必要があります。 タスク レコーダーに関する参照情報については、「[Microsoft Dynamics 365 for Finance and Operations のタスク レコーダー](../user-interface/task-recorder.md)」を参照してください。
+カスタム データとカスタマイズを持つ Microsoft Finance and Operations 環境では、タスク記録を作成する必要があります。 タスク レコーダーの詳細については、[Microsoft Dynamics 365 for Finance and Operations のタスク レコーダー](../user-interface/task-recorder.md)を参照してください。
 
 ### <a name="create-a-task-recording"></a>タスク記録の作成
 
@@ -133,8 +133,7 @@ LCS の業務プロセス ライブラリで記録するタスクを表示でき
 6.  完了したら、**タスク ガイドの停止**を選択します。
 
 
-<a name="additional-resources"></a>その他のリソース
+<a name="additional-resources"></a>追加リソース
 --------
 
 [AppSource の Dynamics 365 for Finance and Operations アプリを公開](lcs-solutions-app-source.md)
-

@@ -1,13 +1,13 @@
 ---
-title: "クラスの拡張機能 - メソッドのラッピングとコマンド チェーン"
-description: "このトピックでは、メソッド ラッピングを使用してパブリック メソッドと保護メソッドのビジネス ロジックを拡張する方法について説明します。"
+title: クラスの拡張機能 - メソッドのラッピングとコマンド チェーン
+description: このトピックでは、メソッド ラッピングを使用してパブリック メソッドと保護メソッドのビジネス ロジックを拡張する方法について説明します。
 author: ChrisGarty
 manager: AnnBe
 ms.date: 12/18/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -15,14 +15,13 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2017-08-21
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: bfc2d9c637de579562160fc982c9de32dc162437
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 53c0da5e9697deaf946ccd4fbcd2102faa62b195
-ms.openlocfilehash: e59004490056a6482786a31b53421304552158fb
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/02/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369466"
 ---
-
 # <a name="class-extension-via-method-wrapping-and-chain-of-command-coc"></a>メソッドのラッピングとコマンド チェーン経由のクラスの拡張機能 (CoC)
 
 [!include [banner](../includes/banner.md)]
@@ -434,4 +433,3 @@ CoC 拡張メソッドでは、次の呼び出しを条件付きで呼び出し�
 
 ### <a name="tooling"></a>ツール
 このトピックに記載されている機能については、Microsoft Visual Studio X++ エディターは、相互参照および Microsoft IntelliSense の完全なサポートまだ提供していません。 Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 10 で完全なサポートが利用できるようにする予定です。
-

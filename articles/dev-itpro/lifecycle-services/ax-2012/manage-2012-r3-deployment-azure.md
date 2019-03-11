@@ -1,13 +1,13 @@
 ---
-title: "Azure 上での AX 2012 R3 の 配置管理"
-description: "このトピックでは、Microsoft Azure での Microsoft Dynamics AX 2012 R3 の導入および管理の方法について説明します。"
+title: Azure 上での AX 2012 R3 の 配置管理
+description: このトピックでは、Microsoft Azure での Microsoft Dynamics AX 2012 R3 の配置および管理の方法について説明します。
 author: kfend
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012
-ms.service: 
-ms.technology: 
+ms.service: ''
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: AX 2012
@@ -15,16 +15,15 @@ ms.custom: 18491
 ms.assetid: 04d5d43f-07da-4a81-adce-50e214133b94
 ms.search.region: Global
 ms.author: kfend
-ms.search.validFrom: 
+ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 4fbbf4489f1121d08245f03944e1493b9944e40b
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368330"
 ---
-
 # <a name="manage-ax-2012-r3-deployments-on-azure"></a>Azure 上での AX 2012 R3 の 配置管理
 
 [!include [banner](../../includes/banner.md)]
@@ -85,7 +84,7 @@ AX 2012 R3 環境内の仮想マシンにログオンするには、次の手順
 4.  仮想マシンを追加する環境を選択します。
 5.  フォームの先頭の近くにある編集 (鉛筆) アイコンをクリックします。
 6.  環境に追加する仮想マシンの数を示します。 次に、それらの仮想マシンのサイズを指定します。
-    -   この環境で各仮想マシンにインストールされているソフトウェアの詳細については、[Azure での Microsoft Dynamics AX 2012 R3 配置の計画](plan-2012-r3-deployment-azure.md) を参照してください。
+    -   この環境で各仮想マシンにインストールされているソフトウェアの詳細については、「[Azure での Microsoft Dynamics AX 2012 R3 配置の計画](plan-2012-r3-deployment-azure.md)」を参照してください。
     -   仮想マシンに関するサイズおよび価格決定の詳細については、[仮想マシンの価格決定の詳細](http://azure.microsoft.com/en-us/pricing/details/virtual-machines/) を参照してください。
 
 7.  ライセンスの条項を確認するには、**ソフトウェア ライセンス条項**をクリックします。 次に、チェック ボックスを選択して、条件に同意することを示します。
@@ -146,7 +145,7 @@ Azure に展開した AX 2012 R3 環境をシャット ダウンする場合は�
 
 1. [Azure 管理ポータル](https://manage.windowsazure.com/)にログオンします。
 2. 左のナビゲーション ウィンドウで、**仮想マシン**をクリックします。 **仮想マシン** ページが表示されます。
-3. <strong>名前</strong> および <strong>場所</strong> の列の情報を使用して、プロジェクトの AX 2012 R3 環境に関連付けられている仮想マシンを特定します。 プロジェクトには複数の仮想マシンが関連付けられている場合がありますが、必要なのは選択するだけです。 <strong>注記: **適切な仮想マシンを見つけたかどうかを確認するには、このページに表示されている名前と、[Lifecycle Services](https://lcs.dynamics.com/en/) の**クラウド ホスト環境</strong>ページに一覧表示されている仮想マシンの名前を比較してください。
+3. <strong>名前</strong>および<strong>場所</strong>の列の情報を使用して、プロジェクトの AX 2012 R3 環境に関連付けられている仮想マシンを特定します。 プロジェクトには複数の仮想マシンが関連付けられている場合がありますが、必要なのは選択するだけです。 <strong>注記: **適切な仮想マシンを見つけたかどうかを確認するには、このページに表示されている名前と、[Lifecycle Services](https://lcs.dynamics.com/en/) の**クラウド ホスト環境</strong>ページに一覧表示されている仮想マシンの名前を比較してください。
 4. 仮想マシンの名前の横にある矢印をクリックします。
 5. ページ上部の**ダッシュボード**をクリックします。
 6. ページの **ディスク** セクションまで下にスクロールします。
@@ -176,7 +175,7 @@ Azure に展開した AX 2012 R3 環境をシャット ダウンする場合は�
 
 ### <a name="4-delete-vhd-files-from-the-storage-account"></a>4. ストレージ アカウントから VHD ファイルを削除する
 
-各 Lifecycle Services プロジェクトに関連付けられたストレージ アカウントに保存されるコンポーネントがいくつかあります。 最大のファイルは、Lifecycle Services プロジェクトの AX 2012 R3 環境用の仮想マシンを作成するために使用された VHD ファイルの *コピー* です。 (これらは、前の手順で削除した VHD ファイルのコピーです。) VHD ファイルが含まれている場合は、ストレージ アカウントを削除することはできません。 ストレージ アカウントから VHD ファイルを削除するには、次の手順を完了します。
+各 Lifecycle Services プロジェクトに関連付けられたストレージ アカウントに保存されるコンポーネントがいくつかあります。 最大のファイルは、Lifecycle Services プロジェクトの AX 2012 R3 環境用の仮想マシンを作成するために使用された VHD ファイルの*コピー*です。 (これらは、前の手順で削除した VHD ファイルのコピーです。) VHD ファイルが含まれている場合は、ストレージ アカウントを削除することはできません。 ストレージ アカウントから VHD ファイルを削除するには、次の手順を完了します。
 
 1.  [Azure 管理ポータル](https://manage.windowsazure.com/)にログオンします。
 2.  左のナビゲーション ウィンドウで、**ストレージ**をクリックします。 **ストレージ** ページが表示されます。
@@ -208,7 +207,7 @@ Lifecycle Services プロジェクトに関連付けられている管理証明�
     1.  Lifecycle Services にログオンします。
     2.  プロジェクトを開きます。
     3.  **クラウド ホスト環境**をクリックします。
-    4.  **Microsoft Azure の設定**をクリックします。 Microsoft Azure 設定パネルが画面の横に表示されます。
+    4.  **Microsoft Azure 設定**をクリックします。 Microsoft Azure 設定パネルが画面の横に表示されます。
     5.  **次へ** をクリックします。
     6.  **ダウンロード**をクリックして管理証明書をダウンロードします。
 
@@ -230,7 +229,7 @@ Lifecycle Services プロジェクトを削除するには、次の手順を実�
 4.  ページの下部にある**削除**をクリックします。
 
 ## <a name="how-is-the-azure-internal-load-balancer-used"></a>Azure 内部ロード バランサはどのように使用されますか。
-テストおよび高可用性環境では、クライアント コンポーネントの RPC (2712) と WCF ポート (8101、8201) に関して Azure 内部ロード バランサー (ILB) が利用されます。 これにより、インスタンスがダウンした場合の高可用性を実現できます。 Azure にはポーリング メソッドがあり既定では 15 秒おきにチェックされ、2 つのエラーの後、ILB からそのノードを削除します。 Windows ホスト ファイル (C:\Windows\System32\driver\setchosts) を介して Microsoft Dynamics AX が ILB を利用する方法。 エントリは仮想名 (AOSLoadBalancer) で作成され IP アドレスが割り当てられます (10.1.1.4)。 そこからは、Microsoft Dynamics AX 2012 のコンフィギュレーションが、AOSLoadBalancer に設定されます。 Azure PowerShell スクリプトを使用して、ILB は各 AOS インスタンスに対して 2712、8101、および 8201 に設定されます。 (Lifecycle Services の編集ボタンを使用して) 新しい AOS インスタンスを追加するときに、追加する新しい AOS インスタンスを組み込むためにこれらの PowerShell スクリプトが実行されることに留意してください。
+テストおよび高可用性環境では、クライアント コンポーネントの RPC (2712) と WCF ポート (8101、8201) に関して Azure 内部ロード バランサー (ILB) が利用されます。 これにより、インスタンスがダウンした場合の高可用性を実現できます。 Azure にはポーリング メソッドがあり既定では 15 秒おきにチェックされ、2 つのエラーの後、ILB からそのノードを削除します。 Windows ホスト ファイル (C:\Windows\System32\driver\setchosts) を介して Microsoft Dynamics AXが ILB を利用する方法。 エントリは仮想名 (AOSLoadBalancer) で作成され IP アドレスが割り当てられます (10.1.1.4)。 そこからは、Microsoft Dynamics AX 2012 のコンフィギュレーションが、AOSLoadBalancer に設定されます。 Azure PowerShell スクリプトを使用して、ILB は各 AOS インスタンスに対して 2712、8101、および 8201 に設定されます。 (Lifecycle Services の編集ボタンを使用して) 新しい AOS インスタンスを追加するときに、追加する新しい AOS インスタンスを組み込むためにこれらの PowerShell スクリプトが実行されることに留意してください。
 
 ## <a name="how-do-i-set-up-remote-desktop-access-via-corpnet-connected-users"></a>CORPNET 接続されたユーザー経由でモート デスクトップ アクセスを設定するにはどうすればよいですか。
 ユーザーが Azure 仮想ネットワークへのトンネル アクセスを介してリモート デスクトップを使用するには、展開でリモート デスクトップ サービス (RDS) を構成し、有効にする必要があります。 Lifecycle Services を使用して RDS が配置されると、配置された RDS 接続ブローカー VM に対して Azure 内部ロード バランサー エンドポイントが作成されます。
@@ -238,4 +237,3 @@ Lifecycle Services プロジェクトを削除するには、次の手順を実�
 1.  Lifecycle Services によって作成された Azure 内部ロード バランサー エンドポイントは、Lifecycle Services の クラウド ホスト環境ページの詳細ウィンドウにあります。 具体的には、"RDS ファーム アクセス" リンクによって指定されたエンドポイント ドメインです。 RDSFarm\#\#\#\#\#.domain.com のように表示されます。
 2.  ブラウザーで [http://manage.windowsazure.com](http://manage.windowsazure.com/) を開き、サブスクリプションにログインすることで、このドメインに作成された IP アドレスを取得します。 **クラウド サービス**を開き、RDS マシンに関連付けられているクラウド サービス名をクリックします。 内部 IP である RDS\* VM IP を検索します (例: 10.1.3.4) (ポート 3389)。 これは、RDSFarm \#\#\#.domain.com アドレスに関連付けられている Azure 内部ロード バランサのIPです。
 3.  そのドメイン名/IP/ロード バランサーに到達するために、会社のネットワークのユーザーに適切なルーティングおよび DNS エントリを設定します。 その場合、ユーザーは会社のネットワークからリモート デスクトップ アクセスを使用することができます。
-

@@ -1,13 +1,13 @@
 ---
-title: "[Excel で開く] エクスペリエンスの作成"
-description: "Excel と Word を Office エクスペリエンスで開く機能について学んで作成します。"
+title: '[Excel で開く] エクスペリエンスの作成'
+description: Excel と Word を Office エクスペリエンスで開く機能について学んで作成します。
 author: ChrisGarty
 manager: AnnBe
 ms.date: 04/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 5c4ce8a671ba4b7035ff000a9d1a2cef33c00a2e
+ms.sourcegitcommit: 2ebea3cbddfa0a5ef0e0fd13d3693da6152bc288
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 4283bbfab9997f71bad770519f7e6e8cad5bcc1f
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "369081"
 ---
-
 # <a name="create-open-in-excel-experiences"></a>[Excel で開く] エクスペリエンスの作成
 
 [!include [banner](../includes/banner.md)]
@@ -44,23 +43,23 @@ Excel と Word を Office エクスペリエンスで開く機能について学
 [![off101a](./media/off101a.png)](./media/off101a.png)
 
 ## <a name="where-are-the-open-in-excel-experiences"></a>[Excel で開く] エクスペリエンスが存在する場所は
-「Excel で開く」エクスペリエンスは、通常「Microsoft Office で開く」メニューの「Excel で開く」セクションの下にありますが、これらのエクスペリエンスには明示的なボタンを追加することができます。
+Excel で開くエクスペリエンスは、通常Microsoft Office で開くメニューのExcel で開くセクションの下にありますが、これらのエクスペリエンスには明示的なボタンを追加することができます。
 
 ## <a name="whats-the-difference-between-export-to-excel-and-open-in-excel"></a>"Excel にエクスポート" と "Excel で開く" の違い
-Excel にエクスポート オプションおよびエクスペリエンスは、どちらも [Microsoft Office で開く] メニューにあります。
+Excel にエクスポート オプションおよびエクスペリエンスは、どちらも Microsoft Office で開くメニューにあります。
 
 -   Excel にエクスポート オプションは、グリッド データの静的エクスポートです。 それぞれ表示されているグリッドに対応しています。 現在のフィルター内にあるすべてのグリッド データはブックに格納されます。
 -   [Excel で開く] エクスペリエンスは、Excel アドインを利用して更新と公開を行います。
 
-次の図は、**フリート顧客** フォームの **Microsoft Office で開く** メニューをテンプレート **Excel で開く** オプション、生成された **Excel で開く** オプション、および静的な **Excel にエクスポート** オプションと共に示しています。
+次の図は、**フリート顧客**フォームの **Microsoft Office で開く**メニューをテンプレート **Excel で開く**オプション、生成された **Excel で開く**オプション、および静的な **Excel にエクスポート**オプションと共に示しています。
 
 [![off101b](./media/off101b.png)](./media/off101b.png)
 
 ## <a name="when-will-an-entity-show-as-an-open-in-excel-option"></a>エンティティはいつ [Excel で開く] オプションとして表示されますか ?
-エンティティにフォームと同じルート データ ソース (テーブル) が存在するとき、そのデータソースは、[Microsoft Office で開く] メニューの [Excel で開く] セクションのオプションとして追加されます。 これは、「生成済み」オプションと呼ばれます。
+エンティティにフォームと同じルート データ ソース (テーブル) が存在するとき、そのデータソースは、Microsoft Office で開くメニューの Excel で開くセクションのオプションとして追加されます。 これは、「生成済み」オプションと呼ばれます。
 
 ## <a name="what-fields-will-be-shown-in-the-workbook"></a>ブックに何というフィールドが表示されますか ?
-ワークブックに追加される既定のフィールドは、エンティティのキー フィールドと必須フィールドです。 デフォルトで別のフィールドセットを提供する必要がある場合は、これらのフィールドをエンティティの**自動レポートのフィールド グループ**に追加できます。 次の図は、FMCustomerEntity の AutoReport フィールド グループの Visual Studio ビューを示しています。
+ワークブックに追加される既定のフィールドは、エンティティのキー フィールドと必須フィールドです。 デフォルトで別のフィールドセットを提供する必要がある場合は、これらのフィールドをエンティティの**自動レポートのフィールド グループ**に追加できます。 次の図は、FMCustomerEntity の AutoReport フィールド グループの Visual Studio  ビューを示しています。
 
 [![off101c](./media/off101c.png)](./media/off101c.png)
 
@@ -128,7 +127,7 @@ Excel アドインを含むワークブックを取得すると、追加のデ�
 [![off101f](./media/off101f.png)](./media/off101f.png)
 
 ## <a name="when-will-a-template-show-as-an-open-in-excel-option"></a>テンプレートはいつ [Excel で開く] オプションとして表示されますか ?
-**共通** &gt; **共通** &gt; **Office 統合** &gt; **ドキュメント テンプレート** フォーム (DocuTemplate) に表示されているテンプレートで、ShowInOpenInOfficeMenu が "はい" に設定されていて、ルート データ ソース (テーブル) が現在のフォームと同じとき、そのテンプレートは、"Microsoft Office で開く" メニューの "Excel で開く" セクションのオプションとして追加されます。 次の図は、**ドキュメント テンプレート** フォームを示しています。
+**共通** &gt; **共通** &gt; **Office 統合** &gt; **ドキュメント テンプレート** フォーム (DocuTemplate) に表示されているテンプレートで、ShowInOpenInOfficeMenu が "はい" に設定されていて、ルート データ ソース (テーブル) が現在のフォームと同じとき、そのテンプレートは、Microsoft Office で開くメニューの Excel で開くセクションのオプションとして追加されます。 次の図は、**ドキュメント テンプレート** フォームを示しています。
 
 [![off101g](./media/off101g.png)](./media/off101g.png)
 
@@ -319,7 +318,7 @@ Excel データ コネクタでリレーションシップ ルックアップを
 ## <a name="how-can-i-enable-users-to-create-new-header-records-as-well-as-lines-in-a-workbook"></a>ブック内の明細行と共に新しいヘッダー レコードを作成するユーザーをどのように有効にできますか。
 ヘッダー レコードと関連行の作成を有効にするには、ヘッダー データソースを「フィールド」のセットとして追加し、行データ ソースを関連テーブルとして追加する必要があります。 このパターンは、仕訳入力などの文書データ入力シナリオでうまく機能します。
 
-ヘッダー レコードと関連行の詳細については、[[Dynamics 365 for Finance and Operations でヘッダーと明細行のパターンの Excel テンプレートを作成する](https://youtu.be/RTicLb-6dbI)] ビデオをご覧ください。
+ヘッダー レコードと関連行の詳細については、「[Dynamics 365 for Finance and Operations でヘッダーと明細行のパターンの Excel テンプレートを作成する](https://youtu.be/RTicLb-6dbI)」ビデオをご覧ください。
 
 ヘッダーの作成を有効にするヘッダー フィールドと行テーブルを含むブックを設計するには、次の手順を実行します。
 1. Excel アドインで、**デザイン**をクリックしてデザイナーを開きます。 **フィールドを追加** を選択してヘッダー データ ソースを追加します。
@@ -417,4 +416,3 @@ Excel データ コネクタでリレーションシップ ルックアップを
 14. 必要に応じて zip ファイルの名前を変更します。たとえば、ファイル 2015-05-25-FleetCustomersWithLocations.zip の名前を変更します。
 15. zip ファイル拡張子を .xlsx に変更します。
 16. 必要な場合は、ブック .xlsx ファイルを再発行します。
-

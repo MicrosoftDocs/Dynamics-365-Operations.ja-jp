@@ -1,13 +1,13 @@
 ---
-title: "新しい環境の配置"
-description: "このトピックでは、セルフ サービス配置エクスペリエンスを使用して新しい環境を配置する方法について説明します。"
+title: 新しい環境の配置
+description: このトピックでは、セルフ サービス配置エクスペリエンスを使用して新しい環境を配置する方法について説明します。
 author: manado
 manager: AnnBe
 ms.date: 12/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
-ms.translationtype: HT
-ms.sourcegitcommit: 61aee27fce705231c0ac89cc596bb19b95426608
 ms.openlocfilehash: 1e1b5dbdb6cf09dcb7e9e03a4bc23398678ac5b9
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368938"
 ---
-
 # <a name="deploy-a-new-environment"></a>新しい環境の配置
 
 [!include [banner](../includes/banner.md)]
@@ -56,4 +55,3 @@ ms.lasthandoff: 12/14/2018
 
 > [!NOTE]
 > 環境を再配置するには、環境を削除し、上記の手順を使用してもう一度を配置する必要があります。 
-

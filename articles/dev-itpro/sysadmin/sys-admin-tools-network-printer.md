@@ -1,13 +1,13 @@
 ---
-title: "法人間でのネットワーク プリンターへのアクセスの管理"
-description: "このトピックでは、新しいシステム管理ユーティリティを使用してネットワーク プリンターを設定する方法に関する情報が提供されます。"
+title: 法人間でのネットワーク プリンターへのアクセスの管理
+description: このトピックでは、新しいシステム管理ユーティリティを使用してネットワーク プリンターを設定する方法に関する情報が提供されます。
 author: tjvass
 manager: AnnBe
 ms.date: 12/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: IT Pro
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
@@ -17,20 +17,19 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2018-12-04
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 37a538b9453c05ba7288f789fa208bfcabc36d7a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: b2a7a0724ddb2f5640a10eb43a999f8e21fb47f7
-ms.openlocfilehash: 8bbea1299d3e2fc4e2123b93d1d3f22fb7426f1d
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/12/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368944"
 ---
-
 # <a name="manage-access-to-network-printers-across-legal-entities"></a>法人間でのネットワーク プリンターへのアクセスの管理
 
 [!include [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
-> 新しいシステム管理ユーティリティへのアクセスは、Carbon Flighting Service によって管理されます。 Microsoft Dynamics 365 for Finance and Operations プラットフォーム更新 23 (2018 年 12 月) には、システム管理者用の **システム ネットワーク プリンター管理** ページが含まれています。
+> 新しいシステム管理ユーティリティへのアクセスは、Carbon Flighting Service によって管理されます。 Microsoft Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 23 (2018年12月) には、システム管理者用の**システム ネットワーク プリンター管理**ページが含まれています。
 
 ドメイン管理者は、ドキュメント回覧エージェント (DRA) を使用して、Microsoft Dynamics 365 for Finance and Operations サービスにネットワーク プリンターを登録します。 プリンターが登録されると、組織管理者がユーザーに利用できるようにします。 設定は **ネットワーク プリンターの管理**ページで管理されます (**組織管理** \> **設定** \> **ネットワーク プリンター**)。
 
@@ -54,4 +53,3 @@ ms.lasthandoff: 12/12/2018
 - 組織内のすべての法人のネットワーク プリンターが削除されます。
 - ドメイン管理者は、古いプリンター名を使用してデバイスを登録することができます。
 - 組織管理者、引き続き既存のツールを使用して、1 つの法人のネットワーク プリンターの設定を管理できます。
-

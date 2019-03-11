@@ -1,31 +1,30 @@
 ---
-title: "データ プロトコル (OData) を開く"
-description: "このトピックでは、Open Data Protocol (OData) に関する情報を提供し、OData V4 を使用して更新可能なビューを公開する方法について説明します。"
+title: データ プロトコル (OData) を開く
+description: このトピックでは、Open Data Protocol (OData) に関する情報を提供し、OData V4 を使用して更新可能なビューを公開する方法について説明します。
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 12/10/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: margoc
 ms.search.scope: Operations
 ms.custom: 24841
 ms.assetid: 7137b0a0-1473-4134-b769-ede5e07fd6f5
 ms.search.region: Global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 64204d438d46fc772005fc8077664818926cf58f
 ms.openlocfilehash: 92c58076e05c8b7642ab8c7a7d82782014f3a713
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/10/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369335"
 ---
-
 # <a name="open-data-protocol-odata"></a>データ プロトコル (OData) を開く
 
 [!include [banner](../includes/banner.md)]
@@ -66,7 +65,7 @@ OData REST エンドポイントを提供します。 このエンドポイン�
 
 <!--For more information, see the [Office Mix presentation about OData Services](https://mix.office.com/watch/1aym08mqyjghi).-->
 
-OData サービスを使用するためのコード例は、[Microsoft Dynamics AX 統合 GitHub リポジトリ](https://github.com/Microsoft/Dynamics-AX-Integration/tree/master/ServiceSamples/ODataConsoleApplication) です。
+OData サービスを使用するためのコード例は、「[Microsoft Dynamics AX 統合 GitHub リポジトリ](https://github.com/Microsoft/Dynamics-AX-Integration/tree/master/ServiceSamples/ODataConsoleApplication)」です。
 
 ### <a name="supported-features-from-the-odata-specification"></a>OData 仕様からサポートされている機能
 
@@ -301,4 +300,3 @@ public static void CreateVendor(Resources context)
 
 ### <a name="handling-duplicate-names-between-enums-and-entities-in-metadata"></a>メタデータ内の列挙とエンティティ間の重複する名前の処理
 列挙とエンティティが同じ名前を共有する場合があります。 この名前の重複により、OData クライアント コードの生成エラーが発生します。 このエラーから回復するには、gitHub のヘルパー コード <https://github.com/Microsoft/Dynamics-AX-Integration/blob/master/ServiceSamples/ODataConsoleApplication/MetadataDocumentValidator.cs> を、削除しなければならない重複する名前のインスタンスを識別するために使用できます。 生成されたメタデータ ドキュメントは、クライアント側で Odata ロジックの処理を進めるために使用できます。
-

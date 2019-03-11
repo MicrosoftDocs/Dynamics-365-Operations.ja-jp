@@ -1,13 +1,13 @@
 ---
-title: "Retail サーバーの顧客およびコンシューマー API"
-description: "この記事では、さまざまな役割で利用可能であり、さまざまなクライアントで使用できる API の概要について説明します 中心は、顧客フェーシング アプリケーション クライアントと e コマース クライアントについてです。"
+title: Retail サーバーの顧客およびコンシューマー API
+description: この記事では、さまざまな役割で利用可能であり、さまざまなクライアントで使用できる API の概要について説明します 中心は、顧客フェーシング アプリケーション クライアントと e コマース クライアントについてです。
 author: RobinARH
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations, Retail
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 61f737edea3af5281b6d2fd7c3c0899082782067
 ms.openlocfilehash: d202ad2403eb93e6424e54be2d87cc7f45c36c8c
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368420"
 ---
-
 # <a name="retail-server-customer-and-consumer-apis"></a>Retail サーバーの顧客およびコンシューマー API
 
 [!include [banner](../includes/banner.md)]
@@ -241,7 +240,6 @@ Retail サーバー (Retail プロキシ経由) へのすべての要求リク�
 -   Task&lt;PagedResult&lt;ProductPrice&gt;&gt; ProductManager.GetActivePrices(ProjectionDomain projectDomain, IEnumerable&lt;Int64&gt; productIds, DateTimeOffset activeDate, String customerId, IEnumerable&lt;AffiliationLoyaltyTier&gt; affiliationLoyaltyTiers, QueryResultSettings queryResultSettings)
 -   Task&lt;PagedResult&lt;MediaLocation&gt;&gt; ProductManager.GetMediaLocations(Int64 recordId, Int64 channelId, Int64 catalogId, QueryResultSettings queryResultSettings)
 -   Task&lt;PagedResult&lt;MediaBlob&gt;&gt; ProductManager.GetMediaBlobs(Int64 recordId, Int64 channelId, Int64 catalogId, QueryResultSettings queryResultSettings)
-
 
 
 

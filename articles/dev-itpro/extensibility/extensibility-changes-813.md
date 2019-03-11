@@ -1,30 +1,29 @@
 ---
-title: "Dynamics 365 for Finance and Operations バージョン 8.1.3 の拡張機能の変更"
-description: "このトピックでは、Dynamics 365 for Finance and Operations バージョン 8.1.3 でリリースされた拡張機能を一覧表示します。"
+title: Dynamics 365 for Finance and Operations バージョン 8.1.3 の拡張機能の変更
+description: これは、Dynamics 365 for Finance and Operations バージョン 8.1.3 に実装された拡張機能の一覧です。
 author: FrankDahl
 manager: AnnBe
 ms.date: 12/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: josaw
 ms.search.scope: Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2018-12-07
 ms.dyn365.ops.version: App 8.1.3
+ms.openlocfilehash: d3d40b0d17d5c042253e6d42fba289ed1e57319c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: be66d9f95551066bb8bc25445c652d4fa59066d4
-ms.openlocfilehash: 344492ebf4d9a44740f4d3e46c8859947a532d7c
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/07/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369643"
 ---
-
 # <a name="extensibility-changes-in-dynamics-365-for-finance-and-operations-version-813"></a>Dynamics 365 for Finance and Operations バージョン 8.1.3 の拡張機能の変更
 
 [!include [banner](../includes/banner.md)]
@@ -429,4 +428,3 @@ ms.lasthandoff: 12/07/2018
 次の追加の変更が、拡張機能に対して行われました。
 
 - 計算済のエイジング バケットの数を増やすためにカスタマイズ機能をサポートする、更新されたエイジングおよび残高リスト クラスおよびフォーム。 
-

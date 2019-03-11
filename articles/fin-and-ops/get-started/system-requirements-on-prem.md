@@ -1,42 +1,41 @@
 ---
-title: "オンプレミス配置のシステム要件"
-description: "このトピックでは、現在のバージョンの Microsoft Dynamics 365 for Finance and Operations におけるオンプレミス開発のシステム要件を一覧表示します。"
+title: オンプレミス配置のシステム要件
+description: このトピックは、現在のバージョンの Microsoft Dynamics 365 for Finance and Operations におけるオンプレミス展開のシステム要件を一覧表示します。
 author: kfend
 manager: AnnBe
 ms.date: 10/19/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Operations
 ms.custom: 55651
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 56844aba921d7daf7c1536e4e7f9a50695d752d8
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368538"
 ---
-
 # <a name="system-requirements-for-on-premises-deployments"></a>オンプレミス配置のシステム要件
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、現在のバージョンの Microsoft Dynamics 365 for Finance and Operations におけるオンプレミス開発のシステム要件を一覧表示します。 Finance and Operations をインストールする前に、このステップが適切な場合、作業しているシステムがネットワーク、ハードウェア、およびソフトウェアの最小要件を満たしているか、または超えているかを検証します。
+このトピックは、現在のバージョンの Microsoft Dynamics 365 for Finance and Operations におけるオンプレミス展開のシステム要件を一覧表示します。 Finance and Operations をインストールする前に、このステップが適切な場合、作業しているシステムがネットワーク、ハードウェア、およびソフトウェアの最小要件を満たしているか、または超えているかを検証します。
 
 > [!IMPORTANT]
 > Azure を含む、任意のパブリック クラウド インフラストラクチャでサポートされていない、Microsoft Dynamics 365 for Finance and Operations のオンプレミス配置。
 
 ## <a name="network-requirements"></a>ネットワーク要件
 
-Microsoft Dynamics 365 for Finance and Operations (オンプレミス) は、Internet Protocol Version 4 (IPv4) または Internet Protocol Version 6 (IPv6) を使用するネットワークで動作できます。 システムを計画して次のガイドラインを使用するには、ネットワーク環境を検討してください。
+Microsoft Dynamics 365 for Finance and Operations (オンプレミス) は、インターネット プロトコル バージョン 4 (IPv4) またはインターネット プロトコル バージョン 6 (IPv6) を使用するネットワークで処理できます。 システムを計画して次のガイドラインを使用するには、ネットワーク環境を検討してください。
 
 ### <a name="network-response-time"></a>ネットワークの応答時間
 
@@ -77,7 +76,7 @@ Finance and Operations (オンプレミス) は、ユーザー ワークステ�
 </tr>
 <tr>
 <td><strong>サーバー</strong></td>
-<td>AOS または Microsoft Service Fabric 層は、LCS と通信できる必要があります。 オンプレミス ブラウザーベースのクライアントには、インターネットへのアクセスは不要です。</td>
+<td>AOS または Microsoft Azure Service Fabric 層は、LCS と通信できる必要があります。 オンプレミス ブラウザーベースのクライアントには、インターネットへのアクセスは不要です。</td>
 </tr>
 <tr>
 <td><strong>テレメトリ</strong></td>
@@ -217,7 +216,7 @@ SQL Server は、生産用として少なくとも 2 つのノードを持つ高
 
 ## <a name="storage"></a>保管
 
-- **AOS** - Finance and Operations (オンプレミス) を使用して、サーバー メッセージ ブロック (SMB) 3.0 共有に構造化されていないデータを格納します。 詳細については、「[Windows Server 2016 の Storage Spaces Direct](/windows-server/storage/storage-spaces/storage-spaces-direct-overview)」を参照してください。
+- **AOS** - Finance and Operations (オンプレミス) を使用して、サーバー メッセージ ブロック (SMB) 3.0 共有に構造化されていないデータを格納します。 詳細については、[Windows Server 2016 の Storage Spaces Direct](/windows-server/storage/storage-spaces/storage-spaces-direct-overview) を参照してください。
 - **SQL** – 次のオプションは実行可能です。
 
     - 高可用性 SSD 設定
@@ -261,7 +260,7 @@ Finance and Operations (オンプレミス) コンポーネントをインスト
 
 | 必要量                                                      | 摘要 |
 |------------------------------------------------------------------|-------|
-| Microsoft SQL Server 2016 Standard エディションまたは Enterprise エディション | SQL Server 2016 のハードウェア要件については、「[SQL Server 2016 インストール用のハードウェアおよびソフトウェア要件](/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server)」を参照してください。 |
+| Microsoft SQL Server2016 Standard Edition または Enterprise Edition | SQL Server 2016 のハードウェア要件については、「[SQL Server 2016 インストール用のハードウェアおよびソフトウェア要件](/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server)」を参照してください。 |
 
 ## <a name="software-requirements-for-application-object-server-aos"></a>Application Object Server (AOS) のソフトウェア要件
 
@@ -289,14 +288,13 @@ Windows Server 2016 の Active Directory Federation Services (AD FS) は必要�
 - [Active Directory 機能レベルとは](https://technet.microsoft.com/library/cc787290(v=ws.10).aspx)
 - [Active Directory ドメイン サービス機能のレベルを理解する](https://technet.microsoft.com/library/understanding-active-directory-functional-levels(v=ws.10).aspx)
 
-## <a name="supported-microsoft-office-applications"></a>サポートされている Microsoft Office アプリケーション
+## <a name="supported-microsoft-office-applications"></a>サポートされる Microsoft Office アプリケーション
 
 次の Microsoft Office アプリケーションは、Finance and Operations のクラウドおよびオンプレミス配置でサポートされています。
 
-- Microsoft Excel と Microsoft Word のアドインを実行するには、Windows 用の Microsoft Office 2016 をインストールしておく必要があります バージョン要求の詳細については、[Office 統合トラブルシューティング](../../dev-itpro/office-integration/office-integration-troubleshooting.md) を参照してください。
-- [Excel にエクスポート] または [Word にエクスポート] 機能によって生成されたドキュメントを表示するには、Microsoft Office 2007 以降をインストールしておく必要があります。
+- Microsoft Excel と Microsoft Word のアドインを実行するには、Windows 用の Microsoft Office 2016 をインストールしておく必要があります。 バージョン要求の詳細については、[Office 統合トラブルシューティング](../../dev-itpro/office-integration/office-integration-troubleshooting.md) を参照してください。
+- Excel にエクスポートまたはWord にエクスポート機能によって生成されたドキュメントを表示するには、Microsoft Office 2007 以降をインストールしておく必要があります。
 
 ## <a name="hardware-and-software-requirements-for-retail-components"></a>小売コンポーネントのハードウェアおよびソフトウェア要件
 
 現在、Finance and Operations (オンプレミス) は Retail コンポーネントを含んでいません。
-

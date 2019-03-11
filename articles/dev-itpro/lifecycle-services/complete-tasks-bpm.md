@@ -1,37 +1,36 @@
 ---
-title: "ビジネス プロセス モデラー (BPM) でのタスクの完了"
-description: "このトピックでは、業務プロセス モデル (BPM) で完了できるその他のタスクに関する情報が提供されます。 たとえば、BPM ライブラリの発行、方法のエクスポート、および BPM ライブラリを配布することができます。"
+title: ビジネス プロセス モデラー (BPM) でのタスクの完了
+description: このトピックでは、業務プロセス モデル (BPM) で完了できるその他のタスクに関する情報が提供されます。 たとえば、BPM ライブラリの発行、方法のエクスポート、および BPM ライブラリを配布することができます。
 author: kfend
 manager: AnnBe
 ms.date: 09/17/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: AX 2012, Operations
 ms.custom: 13301
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ntecklu
-ms.search.validFrom: 
+ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 7b7540a1bffff8dea1a69f36cfad9317747f57c7
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370028"
 ---
-
 # <a name="complete-tasks-in-business-process-modeler-bpm"></a>ビジネス プロセス モデラー (BPM) でのタスクの完了
 
 [!include [banner](../includes/banner.md)]
 
 ## <a name="upload-a-task-recording"></a>タスク記録のアップロード
 
-1. Microsoft Dynamics Lifecycle Services (LCS) で、プロジェクトの**業務プロセス ライブラリ** ページで、タスク記録をアップロードするライブラリを選択します。
+1. Microsoft Dynamics Lifecycle Services (LCS) で、プロジェクトの**業務プロセス ライブラリ**ページにて、タスク記録をアップロードするライブラリを選択します。
 
     ![業務プロセス ライブラリ ページのライブラリ](./media/choose-library.PNG "業務プロセス ライブラリ ページのライブラリ")
 
@@ -59,9 +58,8 @@ ms.lasthandoff: 08/09/2018
 
 ## <a name="distribute-a-bpm-library"></a>BPM ライブラリを配分
 
-BPM ライブラリを配布すると、そのライブラリは、組織に所属するすべてのユーザーが利用できます。 つまり、組織のドメインを使用して LCS にサインインするすべてのユーザーが利用できるようになります (たとえば、@contoso.com アカウントを持つすべてのユーザー)。
+BPM ライブラリを配布すると、そのライブラリは、組織に所属するすべてのユーザーが利用できます。 つまり、組織のドメインを使用して LCS にサインインするすべてのユーザー (たとえば、 @contoso.com アカウントを持つすべてのユーザー)が利用できるようになります。
 
 1. プロジェクトに招待するよう顧客に依頼します。
 2. 組織のアカウントを使用して、顧客の LCS プロジェクトにログインします。
 3. **業務プロセス ライブラリ**ページで、ライブラリを**コーポレート ライブラリ**ウィンドウから、顧客のプロジェクトにコピーします。
-

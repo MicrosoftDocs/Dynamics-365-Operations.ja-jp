@@ -1,13 +1,13 @@
 ---
-title: "Lifecycle Services (LCS) から更新プログラムをダウンロード"
-description: "このトピックでは、期待される更新と、更新を Lifecycle Services (LCS) から取得する方法について説明します。"
+title: Lifecycle Services (LCS) から更新プログラムをダウンロード
+description: このトピックでは、期待される更新と、更新を Lifecycle Services (LCS) から取得する方法について説明します。
 author: AngelMarshall
 manager: AnnBe
 ms.date: 10/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: margoc
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: amarshall
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e4c1f8c7435a901431286960581754e5b2820dad
 ms.openlocfilehash: 4d6b9c8b50b87dbdf04433bffcf9fc3a18b636cd
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/03/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369360"
 ---
-
 # <a name="get-updates-from-lifecycle-services-lcs"></a>Lifecycle Services (LCS) から更新プログラムを入手
 
 [!include [banner](../includes/banner.md)]
@@ -37,7 +36,7 @@ ms.lasthandoff: 10/03/2018
         
     小売機能とカスタマイズされた販売時点管理 (POS) のインスタンスを持つ環境を実行している場合は、Retail SDK のパッケージに記載されている追加手順を完了する必要があります。 Microsoft Dynamics 365 for Retail で、すべての更新プログラムは、アプリケーション モデルの更新プログラムでさえ、バイナリ更新プログラムとしてリリースされます。    
 
-- **X++ 更新プログラム**には、アプリケーション モデルの特定のアプリケーション機能への更新が含まれます。 これらの更新は、個別にダウンロードして適用することができます。 環境に適用する特定の X++ 更新プログラムを選択することができます。  依存 X++ 更新は自動的に選択され、ダウンロードされます。 X++ の更新はソース コードの更新であり、非開発環境に適用する前に、開発環境でコンパイルして任意のカスタマイズとマージする必要があります。 X++ の更新プログラムは Microsoft Dynamics 365 for Finance and Operations に対してのみ適用されます。   
+- **X++ 更新プログラム**には、アプリケーション モデルの特定のアプリケーション機能への更新が含まれます。 これらの更新は、個別にダウンロードして適用することができます。 環境に適用する特定の X++ 更新プログラムを選択することができます。  依存 X++ 更新は自動的に選択され、ダウンロードされます。 X++ の更新はソース コードの更新であり、非開発環境に適用する前に、開発環境でコンパイルして任意のカスタマイズとマージする必要があります。 X++ 更新プログラムは Microsoft Dynamics 365 for Finance and Operations にのみ適用されます。   
 
 ## <a name="get-updates"></a>更新プログラムの入手
 
@@ -56,7 +55,7 @@ ms.lasthandoff: 10/03/2018
 
 製品およびバージョンによっては、タイルの表示が異なります。
 
-- **Dynamics 365 for Retail** - Dynamics 365 Retail 展開したユーザーには、すべてのアプリケーションとプラットフォーム変更の結合された累積的バイナリ更新プログラムである 1 つのタイルが表示されます。 
+- **Dynamics 365 for Retail** - Dynamics 365 for Retail を展開したユーザーには、すべてのアプリケーションとプラットフォーム変更が結合された累積的バイナリ更新プログラムである 1 つのタイルが表示されます。 
 
 - **Dynamics 365 for Finance and Operations** 
    1. アプリケーションのバージョン 8.1 以降 - 今回のリリースから、サービス更新プログラムの **1 つのタイル**が表示されます。カスタマイズはすべて拡張機能を通じて行われ、コードのオーバーレイがないためです。 このタイルは、すべてのアプリケーションとプラットフォームの変更の結合された累積的バイナリ アップデートです。 今回のリリースから、細かい X++ 更新プログラムはなくなります。 すべてのものは累積的な更新になります。 
@@ -121,4 +120,3 @@ ms.lasthandoff: 10/03/2018
 ## <a name="additional-resources"></a>その他のリソース
 - [クラウド環境への更新プログラムの適用](../deployment/apply-deployable-package-system.md)
 - [メタデータ修正プログラムのインストール](./install-metadata-hotfix-package.md) 
-

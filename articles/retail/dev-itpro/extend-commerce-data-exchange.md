@@ -1,13 +1,13 @@
 ---
-title: "Commerce Data Exchange を拡張 - Real-time Service"
-description: "このトピックでは、RetailTransactionServiceEx クラスに拡張メソッドを追加して、Commerce Data Exchange - リアルタイム サービスを拡張する方法について説明します。"
+title: Commerce Data Exchange の拡張 - リアルタイム サービス
+description: このトピックでは、RetailTransactionServiceEx クラスに拡張メソッドを追加して、Commerce Data Exchange - リアルタイム サービスを拡張する方法について説明します。
 author: mugunthanm
 manager: AnnBe
 ms.date: 10/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations, Retail
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 61f737edea3af5281b6d2fd7c3c0899082782067
 ms.openlocfilehash: dbf138d5f60c5b72689460c4477f957b464d71f9
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369247"
 ---
-
-# <a name="extend-commerce-data-exchange---real-time-service"></a>Commerce Data Exchange を拡張 - Real-time Service
+# <a name="extend-commerce-data-exchange---real-time-service"></a>Commerce Data Exchange の拡張 - リアルタイム サービス
 
 [!include [banner](../includes/banner.md)]
 
@@ -42,10 +41,10 @@ Commerce Data Exchange - リアルタイム サービスを拡張するには、
     -   int64
     -   str
     -   guid
-    -   実数
+    -   実績
 
 ## <a name="create-and-call-a-new-extension-method"></a>新しい拡張メソッドの作成と呼び出し
-1. Microsoft Visual Studio を開始します。
+1. Microsoft Visual Studio を起動します。
 2. **Dynamics 365** メニューで、**モデル管理 > モデルの作成** をクリックします。
 3. **モデルの作成**ダイアログ ボックスに、次の詳細を入力します。
    -   **モデル名** - Contoso
@@ -142,6 +141,5 @@ Commerce Runtime (CRT) で CDX メソッドを使用するには、ExtensionOf(c
 
 > [!NOTE]
 > **InvokeExtensionMethod** メソッドは 2 つのパラメーターを取ります。 1 つのパラメ ーターはリアルタイム サービス メソッド名であり、その他はパラメータの一覧を使用する必要があります。 渡されるメソッド名は、**ContosoRetailTransactionServiceSample** クラスで作成したメソッド名と同じにする必要があります。
-
 
 

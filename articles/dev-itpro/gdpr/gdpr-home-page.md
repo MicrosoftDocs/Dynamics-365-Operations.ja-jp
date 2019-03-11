@@ -1,13 +1,13 @@
 ---
-title: "GDPR データ要求に対応するためのリソース"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operation、およびその他の Dynamics 製品を使用する顧客として、一般データ保護規制 (GDPR) に基づくデータ権利要求への対応に役立つ情報へのリンクを提供します。"
+title: GDPR データ要求に対応するためのリソース
+description: このトピックでは、Microsoft Dynamics 365 for Finance and Operation、およびその他の Dynamics 製品を使用する顧客として、一般データ保護規制 (GDPR) に基づくデータ権利要求への対応に役立つ情報へのリンクを提供します。
 author: rschloma
 manager: AnnBe
 ms.date: 05/18/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: tlefor
 ms.search.scope: Operations
@@ -16,25 +16,24 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: b7be92d5b32d006f67e3d2595cab87b9124da357
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369305"
 ---
-
 # <a name="resources-for-responding-to-gdpr-data-requests"></a>GDPR データ要求に対応するためのリソース
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Finance and Operations (Dynamics 365 for Retail を含む)、Dynamics 365 for Talent、および Microsoft Dynamics AX 2012 を使用している顧客として、一般データ保護規制 (GDPR) の下での情報要求への対応に役立つ情報へのリンクを提供します。 
+このトピックでは、Microsoft Dynamics 365 for Finance and Operation (Dynamics 365 for Retail を含みます)、Dynamics 365 for Talent、およびMicrosoft Dynamics AX 2012 を使用する顧客として、一般データ保護規制 (GDPR) に基づくデータ権利要求への対応に役立つ情報へのリンクを提供します。 
 
 データの要求に応答する最初のステップは、通常、個人検索レポートを使用して、要求されるデータを特定することです。 場合によっては、他のレポートを使用したり、使用している製品で特定のページにアクセスしたり、個人検索レポートを拡張したりする必要があります。 (レポートは現在 Microsoft Dynamics AX 2012 では使用できません。) このトピックでは、これらのタスクを完了するのに役立つコンテンツを示しています。
 
 ## <a name="overview"></a>概要
 
-- [Microsoft Dynamics 365 for Finance and Operations の GDPR に関するガイド](gdpr-guide.md)
+- [Microsoft Dynamics 365 for Finance and Operations のための GDPR ガイド](gdpr-guide.md)
 - [個人検索レポートを使用](gdpr-person-search-report.md)
 - [個人検索レポートを拡張](gdpr-extend-person-search-report.md)
 - [組織内で機密データへのアクセス権があるロールをレビューする](gdpr-auditing-sensitive-data.md)
@@ -42,9 +41,9 @@ ms.lasthandoff: 08/09/2018
 
 ## <a name="product-specific-considerations"></a>製品固有の考慮事項
 
-- [Microsoft Dynamics AX 2012 のデータに対する DRS 要求に応答する](gdpr-ax2012.md)
-- [Microsoft Dynamics 365 for Talent のデータに対する DRS 要求に応答する](respond-dsr-request-talent.md)
-- [Microsoft Dynamics 365 for Finance and Operations の GDPR に関するガイド](gdpr-guide.md)
+- [Microsoft Dynamics AX 2012 からの DSR データ要求に対応する](gdpr-ax2012.md)
+- [Mircosoft Dynamics 365 for Talent からの DSR データ要求に対応する](respond-dsr-request-talent.md)
+- [Microsoft Dynamics 365 for Finance and Operations のための GDPR ガイド](gdpr-guide.md)
 - [Lifecycle Services の GDPR データ要求](gdpr-lcs.md)
 
 ## <a name="compliance-manager"></a>コンプライアンス マネージャー
@@ -72,4 +71,3 @@ ms.lasthandoff: 08/09/2018
 ## <a name="additional-resources"></a>その他のリソース
 
 GDPR および組織がデータの要求に対して実行する必要があるアクションの詳細については、[Microsoft サービス信頼ポータル](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=77b002ad-06f7-4a9b-8493-e18e2cb0577f&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ%20and%20White%20Papers) にアクセスしてください。
-

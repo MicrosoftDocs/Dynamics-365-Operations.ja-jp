@@ -1,13 +1,13 @@
 ---
-title: "コンフィギュレーション データ プロジェクト"
-description: "このトピックでは、構成データ プロジェクトと構成データ テンプレートの概要、およびそれらを使用して Dynamics 365 for Finance and Operations のインスタンス間で企業の構成データを移動するプロセスの概要を示します。"
+title: コンフィギュレーション データ プロジェクト
+description: このトピックでは、構成データ プロジェクトと構成データ テンプレートの概要、およびそれらを使用して Dynamics 365 for Finance and Operations のインスタンス間で企業の構成データを移動するプロセスの概要を示します。
 author: mikefalkner
 manager: AnnBe
 ms.date: 09/29/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: margoc
 ms.search.scope: Operations
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Platform update 7
+ms.openlocfilehash: a67ac88653f0a41e192435b60b36a64549b8fac3
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 0b849752e48eaa832107f3b7e5d68827513126d8
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368436"
 ---
 # <a name="configuration-data-projects"></a>コンフィギュレーション データ プロジェクト
 
 [!include [banner](../includes/banner.md)]
 
-コンフィギュレーション データ プロジェクトは、Microsoft Dynamics 365 for Finance and Operations のインスタンス間の会社のコンフィギュレーション データの移動を管理するために使用されます。 これらは、次のシナリオをサポートすることを目的としています。
+コンフィギュレーション データ プロジェクトは、Microsoft Dynamics 365 for Finance and Operations のインスタンス間での会社のコンフィギュレーション データ移動を管理するために使用します。 これらは、次のシナリオをサポートすることを目的としています。
 
 - **コンフィギュレーションのエクスポート** - エンティティのコンフィギュレーションを作成し、データ管理フレームワークを使用してコンフィギュレーションをパッケージにエクスポートします。
 - **コンフィギュレーションのインポート** – コンフィギュレーション パッケージをアップロードして、およびデータ管理フレームワークを使用して、パッケージをインポートします。
@@ -37,7 +37,7 @@ ms.lasthandoff: 04/20/2018
 コンフィグレーション データ テンプレートは、データ プロジェクトで使用できる各モジュール領域のエンティティの事前定義リストです。 **データ管理** ワークスペース内の **テンプレート** ページを使用することにより、これらのテンプレートを作成、表示、および修正することができます。
 
 > [!IMPORTANT]
-> 既定の構成テンプレートは、Microsoft Dynamics 365 for Finance and Operations Enterprise Edition 2017 年 7 月の更新プログラムで提供されました。 コンフィギュレーション データ プロジェクト機能は、Microsoft Dynamics 365 for Operations プラットフォーム更新プログラム 7 で使用できます。 現在の製品リリースで、自分自身のテンプレートを作成および使用することができます。
+> 既定のコンフィギュレーション テンプレートは、Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition 2017 年 7 月更新プログラムで配信されました。 コンフィギュレーション データ プロジェクト機能は、Microsoft Dynamics 365 for Operations プラットフォーム更新プログラム 7 でが利用可能です。 現在の製品リリースで、自分自身のテンプレートを作成および使用することができます。
 
 ## <a name="process-for-working-with-configuration-data-projects"></a>コンフィギュレーション データ プロジェクトを操作するためのプロセス
 コンフィギュレーション データ プロジェクトの使用を開始するときは、このプロセスに従うことをお勧めします。
@@ -88,4 +88,3 @@ ms.lasthandoff: 04/20/2018
 
 1. **データ管理**ワークスペースで、**データ ソースの構成**タイルを選択してから**データ ソース**を選択します。
 2. 適切なデータ ソースに既定のファイル名拡張子を追加します。
-

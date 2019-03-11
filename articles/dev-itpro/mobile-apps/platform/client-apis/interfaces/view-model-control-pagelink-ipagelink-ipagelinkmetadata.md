@@ -1,28 +1,27 @@
 ---
-title: "PageLinkMetadata タイプ"
-description: "Pagelink メタデータ タイプ。"
+title: PageLinkMetadata タイプ
+description: Pagelink メタデータ タイプ。
 author: shadykdc
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
-ms.search.scope: 
+ms.search.scope: ''
 ms.search.region: Global
 ms.author: kashea
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.search.validFrom: ''
+ms.dyn365.ops.version: ''
 ms.openlocfilehash: 4c8ed4ec91c239db2bb9b1a33b44c57677d18b50
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369832"
 ---
-
 # <a name="pagelinkmetadata-type"></a>PageLinkMetadata タイプ
 
 [!include [banner](../../../../includes/banner.md)]
@@ -241,9 +240,8 @@ UseDataContext: boolean (オプション)
 
 ### <a name="onnavigate"></a>OnNavigate
 
-OnNavigate: 機能 (ナビゲーション:[NavigationArgs](view-model-ipage-inavigationargs.md) & #124; 文字列): すべて (オプション) 
+OnNavigate: function(navigation: [NavigationArgs](view-model-ipage-inavigationargs.md) &#124; string): any (optional) 
 
 ナビゲーションがトリガーされたときに発生するイベントです。
-
 
 

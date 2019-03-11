@@ -1,13 +1,13 @@
 ---
-title: "バッチ マネージャーのセキュリティ ロール"
-description: "このトピックでは、バッチ ジョブの管理に使用されるバッチ管理者のセキュリティ ロールに関する情報を提供します。"
+title: バッチ マネージャーのセキュリティ ロール
+description: このトピックでは、バッチ ジョブの管理に使用されるバッチ管理者のセキュリティ ロールに関する情報を提供します。
 author: hasaid
 manager: AnnBe
 ms.date: 10/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: IT Pro
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: hasaid
 ms.search.validFrom: 2018-08-15
 ms.dyn365.ops.version: Platform update 20
-ms.translationtype: HT
-ms.sourcegitcommit: f3e3a22dbc343db1485190402371859861e46d1c
 ms.openlocfilehash: ddbd50f13e92802b738bf9fd44aa332c8cb2ea7a
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/26/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368585"
 ---
-
 # <a name="batch-manager-security-role"></a>バッチ マネージャーのセキュリティ ロール
 
 [!include [banner](../includes/banner.md)]
@@ -54,4 +53,3 @@ ms.lasthandoff: 10/26/2018
 
  ![実行者ユーザー](./media/runby-user.png)  
  
-

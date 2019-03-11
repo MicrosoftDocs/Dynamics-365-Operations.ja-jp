@@ -1,13 +1,13 @@
 ---
-title: "Azure 上での AX 2012 R3の 配置計画"
-description: "Microsoft Azure に Microsoft Dynamics AX 2012 R3 を展開する前に、いくつかの点を考慮し決定する必要があります。 この記事では、計画プロセスについて説明します。"
+title: Azure 上での AX 2012 R3の 配置計画
+description: Microsoft Azure に Microsoft Dynamics AX 2012 R3 を展開する前に、いくつかの点を考慮し決定する必要があります。 この記事では、計画プロセスについて説明します。
 author: kfend
 manager: AnnBe
 ms.date: 11/13/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012
-ms.service: 
-ms.technology: 
+ms.service: ''
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: AX 2012
@@ -15,16 +15,15 @@ ms.custom: 18591
 ms.assetid: 84e597d7-6ad3-4322-8ac3-6b6151dd24f6
 ms.search.region: Global
 ms.author: kfend
-ms.search.validFrom: 
+ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 908ea8ea8d609de145c6d078203328d97682e6b1
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369297"
 ---
-
 # <a name="plan-ax-2012-r3-deployments-on-azure"></a>Azure 上での AX 2012 R3の 配置計画
 
 [!include [banner](../../includes/banner.md)]
@@ -42,10 +41,10 @@ Azure 上の AX 2012 R3 の配備は、Microsoft が次のシナリオでサポ�
 > [!NOTE]
 > Azure 環境でサポートされていない AX 2012 R3 に問題があり、LCS 経由で Azure に展開された、またはローカルに展開された AX 2012 R3 環境で同じ問題を再現することができる場合、Microsoft がサポートを提供できます。
 > 
-> AX 2012 R3 は、オンプレミスでも配置できます。 詳細については、トピックの [Microsoft Dynamics AX 2012 のインストール](https://technet.microsoft.com/en-us/library/dd362138.aspx) を参照してください。
+> AX 2012 R3 は、オンプレミスでも配置できます。 詳細については、[Microsoft Dynamics AX 2012 のインストール](https://technet.microsoft.com/en-us/library/dd362138.aspx) のトピックを参照してください。
 
 ## <a name="verify-that-you-can-log-on-to-lifecycle-services"></a>Lifecycle Services にログオンできることを確認します。
-Lifecycle Services (LCS) は、顧客およびパートナーが Microsoft Dynamics AX のプロジェクトの管理に使用できるクラウドベースの共同ワークスペースです。 Azure 上に AX 2012 R3 を配置するには、Lifecycle Services Web サイトで利用できるクラウド ホスト環境ツールを使用します。 Lifecycle Services は顧客やパートナーがサポート計画の一部として使用できます。 CustomerSource または PartnerSource の資格情報でアクセスすることができます。 [Lifecycle Services にログオンできることを確認する](https://lcs.dynamics.com/)
+Lifecycle Services (LCS) は、顧客およびパートナーが Microsoft Dynamics AX プロジェクトの管理に使用できるクラウドベースの共同ワークスペースです。 Azure 上に AX 2012 R3 を配置するには、Lifecycle Services Web サイトで利用できるクラウド ホスト環境ツールを使用します。 Lifecycle Services は顧客やパートナーがサポート計画の一部として使用できます。 CustomerSource または PartnerSource の資格情報でアクセスすることができます。 [Lifecycle Services にログオンできることを確認する](https://lcs.dynamics.com/)
 
 ## <a name="purchase-an-azure-subscription"></a>Azure サブスクリプションの購買
 Azure を使用するには、サブスクリプションを購入する必要があります。 サブスクリプション プランおよび価格決定の詳細については、[Azure 価格決定](https://azure.microsoft.com/en-us/pricing/) ページを参照してください。 その後、そのページの指示に従ってサブスクリプションを購入します。 サブスクリプションは、Azure に配備する AX 2012 R3 環境をサポートするのに十分な大きさでなければなりません。 次のテーブルは、Azure に配置できる AX 2012 R3 環境のタイプと、各環境を既定のコンフィギュレーションで配置するために必要なコアの数を示しています。 
@@ -173,7 +172,7 @@ TempDB とログは、パフォーマンスの向上のために記憶域上に�
 -   トレース フラグの有効  -T1204、 -T1222。
 
 ## <a name="estimate-costs-and-understand-the-azure-billing-process"></a>減価を見積もり、Azure 請求プロセスに同意
-Azure での AX 2012 R3 の展開コストを見積もるには、[[Azure 価格計算ツール](http://azure.microsoft.com/en-us/pricing/calculator/)] を使用します。 Azure に AX 2012 R3 を配置する前に、Azure 請求プロセスについて理解することも重要です。 サンプル請求書、および現在の請求期間に対する毎日の使用データをダウンロードする方法に関する情報にリンクする Azure 請求プロセスの概要については、[請求書を理解する](http://azure.microsoft.com/en-us/support/understand-your-bill/) を参照してください。 **注記:** 使用されていないときに Azure 上に配置されている AX 2012 R3 環境をシャット ダウンすることができることに留意してください。 たとえば、コスト削減のため週末に環境をシャット ダウンする場合があります。 環境をシャット ダウンすると、その環境はまだ存在します。ただし、その環境内の仮想マシンはシャット ダウンされます。 仮想マシンが実行されていないときは、それに対して課金されません。 詳細については、「環境をシャット ダウンする方法とは」を参照してください。 [Azure 上の Microsoft Dynamics AX 2012 R3 配置の管理](manage-2012-r3-deployment-azure.md) の記事にあります。
+Azure での AX 2012 R3 の展開コストを見積もるには、[Azure 価格計算ツール](http://azure.microsoft.com/en-us/pricing/calculator/)を使用します。 Azure に AX 2012 R3 を配置する前に、Azure 請求プロセスについて理解することも重要です。 サンプル請求書、および現在の請求期間に対する毎日の使用データをダウンロードする方法に関する情報にリンクする Azure 請求プロセスの概要については、[請求書を理解する](http://azure.microsoft.com/en-us/support/understand-your-bill/) を参照してください。 **注記:** 使用されていないときに Azure 上に配置されている AX 2012 R3 環境をシャット ダウンすることができることに留意してください。 たとえば、コスト削減のため週末に環境をシャット ダウンする場合があります。 環境をシャット ダウンすると、その環境はまだ存在します。ただし、その環境内の仮想マシンはシャット ダウンされます。 仮想マシンが実行されていないときは、それに対して課金されません。 詳細については、「環境をシャット ダウンする方法とは」を参照してください。 [Azure での Microsoft Dynamics AX 2012 R3 配置の管理](manage-2012-r3-deployment-azure.md)という記事の中です。
 
 ## <a name="consider-legal-and-regulatory-requirements"></a>法的および規制要件を考慮する
 Microsoft は、複数の地域や税務署にわたる一般的な運用方法と機能で Azure サービスを実行します。 ただし、Microsoft サービスがユーザーの規制の必要を満たしているかどうかを判断するのは、最終的にはユーザー次第となります。 最新の情報を提供するために、[Azure セキュリティ センター](http://azure.microsoft.com/en-us/support/trust-center/) はセキュリティ、プライバシー、コンプライアンスに関する以下の情報を提供します。
@@ -223,8 +222,8 @@ AX 2012 R3 仮想マシン環境のさまざまなコンポーネントのライ
 </ul>
 <ul>
 <li><strong>Azure プログラムのソフトウェア保証によるライセンス モビリティ</strong>ソフトウェア保証によるライセンス モビリティにより、Microsoft ボリューム ライセンスの顧客は、Azure でアクティブなソフトウェア保証を使用して、適格なサーバー アプリケーションを配置する柔軟性を得ることができます。 このソフトウェア保証給付金では、新しいライセンスを購入する必要がなく、関連するモビリティ費用がかかりません。 これにより、既存のライセンスを Azure クラウド プラットフォームに簡単に展開できます。 詳細については、<a href="http://www.windowsazure.com/en-us/pricing/license-mobility/">このページ</a>を参照してください。 開発、テスト、および SharePoint の高可用性トポロジ トライアル版用に、Visual Studio、SQL Server および Office が提供されています。 評価の範囲は 30〜180 日間です。 それに応じてライセンスを適用してください。</li>
-<li><strong>Microsoft Dynamics AX ボリューム ライセンス バイヤー ガイド </strong>Microsoft Dynamics AX を使用したキー ライセンス オプションの概要については、<a href="http://go.microsoft.com/fwlink/?LinkId=397363">このページ</a>を参照してください。</li>
-<li><strong>Office 365 ProPlus の共有コンピュータの有効化</strong>共有コンピューターの有効化により、複数のユーザーがアクセスする組織内のコンピュータに Office 365 ProPlus を配置できます。 詳細については、<a href="https://technet.microsoft.com/en-us/library/dn782860(v=office.15).aspx">このページ</a>を参照してください。</li>
+<li><strong>Microsoft Dynamics AX ボリューム ライセンス バイヤー ガイド</strong> Microsoft Dynamics AX を使用したキー ライセンス オプションの概要については、<a href="http://go.microsoft.com/fwlink/?LinkId=397363">このページ</a>を参照してください。</li>
+<li><strong>Office 365 ProPlus の共有コンピュータの有効化</strong> 共有コンピューターの有効化により、複数のユーザーがアクセスする組織内のコンピュータに Office 365 ProPlus を配置できます。 詳細については、<a href="https://technet.microsoft.com/en-us/library/dn782860(v=office.15).aspx">このページ</a>を参照してください。</li>
 </ul></td>
 </tr>
 </tbody>
@@ -270,7 +269,7 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 <td>デモ マシン</td>
 <td><strong>サイズ:</strong>D3: 標準計算層 (4 コア、14 GB メモリ) <strong>既定名:</strong>DEMO-&lt;GUID&gt;</td>
 <td><ul>
-<li>Windows Server 2012 R2、以下を含む:
+<li>次を含む Windows Server2012 R2:
 <ul>
 <li>Active Directory</li>
 <li>ドメイン名サービス (DNS)</li>
@@ -288,7 +287,7 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 </ul></li>
 <li>Microsoft SharePoint Server 2013</li>
 <li>Microsoft Office 2013</li>
-<li>AX 2012 R3 または AX 2012 R3 CU8 コンポーネント:
+<li>AX 2012 R3 または AX 2012 R3 CU8 のコンポーネント:
 <ul>
 <li>データベース</li>
 <li>サーバー コンポーネント:
@@ -320,7 +319,7 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 <li>開発者ツール:
 <ul>
 <li>デバッガー</li>
-<li>Visual Studio Tools</li>
+<li>Visual Studio ツール</li>
 <li>Trace Parser</li>
 </ul></li>
 <li>統合コンポーネント:
@@ -332,8 +331,8 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 <li>小売コンポーネント:
 <ul>
 <li>Retail POS</li>
-<li>Retail Headquarters</li>
-<li>Commerce Data Exchange コンポーネント:
+<li>小売用バックオフィス</li>
+<li>Commerce Data Exchange コンポーネント
 <ul>
 <li>Synch Service</li>
 <li>Real-time Service</li>
@@ -396,7 +395,7 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 <li>Management Studio</li>
 <li>開発者ツール</li>
 </ul></li>
-<li>AX 2012 R3 コンポーネント:
+<li>AX 2012 R3 のコンポーネント:
 <ul>
 <li>データベース</li>
 <li>サーバー コンポーネント:
@@ -413,14 +412,14 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 </ul></li>
 <li>小売コンポーネント:
 <ul>
-<li>Retail Headquarters</li>
+<li>小売用バックオフィス</li>
 <li>Commerce Data Exchange コンポーネント:
 <ul>
 <li>Real-time Service</li>
 <li>Async Server</li>
 <li>Async Client</li>
 </ul></li>
-<li>Retail チャンネル データベース</li>
+<li>小売チャネル データベース</li>
 </ul></li>
 </ul></li>
 </ul></td>
@@ -442,7 +441,7 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 > この環境の仮想マシンは、単一インスタンスの仮想マシンです。 シングル インスタンス仮想マシンは、Azure [サービス レベル アグリーメント](http://azure.microsoft.com/en-us/support/legal/sla/)の対象となりません。
 
 ## <a name="test-environment"></a>テスト環境
-この環境には、既定で数台の仮想マシンが含まれます。 これらの仮想マシンには、すでにインストールされている Windows Server および AX 2012 R3 のテストに必要なソフトウェアがあります。 次のテーブルは、既定のテスト環境の詳細を示しています。 環境を配置するとき、環境に追加の仮想マシンを追加する、または仮想マシンのサイズを変更することができます。 
+この環境には、既定で数台の仮想マシンが含まれます。 これらの仮想マシンには、Windows Server と、AX 2012 R3 のテストに必要なすべてのソフトウェアが既にインストールされています。 次のテーブルは、既定のテスト環境の詳細を示しています。 環境を配置するとき、環境に追加の仮想マシンを追加する、または仮想マシンのサイズを変更することができます。 
 
 > [!NOTE]
 > この環境の仮想マシンは、単一インスタンスの仮想マシンです。 シングル インスタンス仮想マシンは、Azure [サービス レベル アグリーメント](http://azure.microsoft.com/en-us/support/legal/sla/)の対象となりません。 データのインポート/エクスポート フレームワーク (DIXF) コンポーネントは既定ではインストールされていません。 DIXF を使用する場合は、独自の SQL Server インストール メディアを使用して、SQL Server マシンに SQL Server Integration Services (SSIS) をインストールする必要があります。 SSIS をインストールした後は、Dynamics AX CD (VM 内の接続されたドライブで利用可能) を使用し、DIXF コンポーネントを AOS およびクライアント マシンにインストールできます。
@@ -466,7 +465,7 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 <td>ドメイン コントローラー</td>
 <td><strong>サイズ:</strong>D1: 基本的な計算層 (1 コア、3.5 GB メモリ) <strong>既定名:</strong>AD-&lt;GUID&gt;</td>
 <td><ul>
-<li>Windows Server 2012 R2、以下を含む:
+<li>次を含む Windows Server2012 R2:
 <ul>
 <li>Active Directory</li>
 <li>ドメイン名サービス (DNS)</li>
@@ -478,7 +477,7 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 <td>AOS サーバー</td>
 <td><strong>サイズ:</strong>D3: 標準計算層 (4 コア、14 GB メモリ) <strong>既定名:</strong>AOS-&lt;GUID&gt;</td>
 <td><ul>
-<li>Windows Server 2012 R2、以下を含む:
+<li>次を含む Windows Server2012 R2:
 <ul>
 <li>インターネット インフォメーション サービス (IIS)</li>
 </ul></li>
@@ -489,7 +488,7 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 <li>Management Studio</li>
 <li>ネイティブ クライアント</li>
 </ul></li>
-<li>AX 2012 R3 または AX 2012 R3 CU8 コンポーネント:
+<li>AX 2012 R3 または AX 2012 R3 CU8 のコンポーネント:
 <ul>
 <li>サーバー コンポーネント:
 <ul>
@@ -509,7 +508,7 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 <li>管理ユーティリティ</li>
 <li>小売コンポーネント:
 <ul>
-<li>Retail Headquarters</li>
+<li>小売用バックオフィス</li>
 <li>Commerce Data Exchange コンポーネント:
 <ul>
 <li>Synch Service</li>
@@ -537,7 +536,7 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 </ul>
     <strong>注記:</strong> Reporting Services は、ネイティブモードで実行するようにコンフィギュレーションされています。 電源表示を使用するには、追加の構成手順を実行する必要があります。 詳細については、<a href="https://technet.microsoft.com/en-us/library/jj933492.aspx">キューブに接続するための Power View を使用したレポートの作成</a>に一覧表示された前提条件を参照してください。
 <ul>
-<li>AX 2012 R3 または AX 2012 R3 CU8 コンポーネント:
+<li>AX 2012 R3 または AX 2012 R3 CU8 のコンポーネント:
 <ul>
 <li>データベース</li>
 <li>ビジネス インテリジェンス コンポーネント:
@@ -553,7 +552,7 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 <td>エンタープライズ ポータル サーバー</td>
 <td><strong>サイズ:</strong>D3: 標準計算層 (4 コア、14 GB メモリ) <strong>既定名:</strong>EP-&lt;GUID&gt;</td>
 <td><ul>
-<li>Windows Server 2012 R2、以下を含む:
+<li>次を含む Windows Server2012 R2:
 <ul>
 <li>インターネット インフォメーション サービス (IIS)</li>
 </ul></li>
@@ -562,7 +561,7 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 <li>フル テキスト検索</li>
 </ul></li>
 <li>Microsoft SharePoint Server 2013</li>
-<li>AX 2012 R3 または AX 2012 R3 CU8 コンポーネント:
+<li>AX 2012 R3 または AX 2012 R3 CU8 のコンポーネント:
 <ul>
 <li>サーバー コンポーネント:
 <ul>
@@ -607,7 +606,7 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 </ul></li>
 <li>Microsoft SharePoint Server 2013 クライアント コンポーネント SDK</li>
 <li>Microsoft Office 365 ProPlus</li>
-<li>AX 2012 R3 または AX 2012 R3 CU8 コンポーネント:
+<li>AX 2012 R3 または AX 2012 R3 CU8 のコンポーネント:
 <ul>
 <li>Management Reporter コンポーネント:
 <ul>
@@ -622,7 +621,7 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 <li>開発者ツール:
 <ul>
 <li>デバッガー</li>
-<li>Visual Studio Tools</li>
+<li>Visual Studio ツール</li>
 <li>Trace Parser</li>
 </ul></li>
 <li>管理ユーティリティ</li>
@@ -638,12 +637,12 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 <td>リモート デスクトップ サービス サーバー</td>
 <td><strong>サイズ:</strong>D3: 標準計算層 (4 コア、14 GB メモリ) <strong>既定名:</strong>RDS-&lt;GUID&gt;</td>
 <td><ul>
-<li>Windows Server 2012 R2、以下を含む:
+<li>次を含む Windows Server2012 R2:
 <ul>
 <li>インターネット インフォメーション サービス (IIS)</li>
 <li>リモート デスクトップ サービス</li>
 </ul></li>
-<li>Microsoft SQL Server 2012 Native Client</li>
+<li>Microsoft SQL Server 2012 ネイティブ クライアント</li>
 </ul></td>
 </tr>
 </tbody>
@@ -652,7 +651,7 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 
 
 ## <a name="retail-essentials-devtest-environment"></a>Retail Essentials 開発/テスト環境
-この環境を配置して、Retail essentials の機能を開発またはテストします。 この環境には、既定で 1 台の仮想マシンが含まれます。 この仮想マシンには、Windows Server と、Retail Essentials の開発とテストの目的で必要となるソフトウェアが既にインストールされています。 次のテーブルは、既定の Retail Essentials 開発/テスト環境の詳細を示しています。 環境を配置するとき、環境に追加の仮想マシンを追加する、または仮想マシンのサイズを変更することができます。 
+この環境を配置して、Retail essentials の機能を開発またはテストします。 この環境には、既定で 1 台の仮想マシンが含まれます。 この仮想マシンには、Windows Server と、Retail Essentials の開発とテストで必要となるソフトウェアが既にインストールされています。 次のテーブルは、既定の Retail Essentials 開発/テスト環境の詳細を示しています。 環境を配置するとき、環境に追加の仮想マシンを追加する、または仮想マシンのサイズを変更することができます。 
 
 > [!NOTE]
 > この環境の仮想マシンは、単一インスタンスの仮想マシンです。 シングル インスタンス仮想マシンは、Azure [サービス レベル アグリーメント](http://azure.microsoft.com/en-us/support/legal/sla/)の対象となりません。
@@ -683,7 +682,7 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 <li>Management Studio</li>
 <li>開発者ツール</li>
 </ul></li>
-<li>AX 2012 R3 コンポーネント:
+<li>AX 2012 R3 のコンポーネント:
 <ul>
 <li>データベース</li>
 <li>サーバー コンポーネント:
@@ -700,14 +699,14 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 </ul></li>
 <li>小売コンポーネント:
 <ul>
-<li>Retail Headquarters</li>
+<li>小売用バックオフィス</li>
 <li>Commerce Data Exchange コンポーネント:
 <ul>
 <li>Real-time Service</li>
 <li>Async Server</li>
 <li>Async Client</li>
 </ul></li>
-<li>Retail チャンネル データベース</li>
+<li>小売チャネル データベース</li>
 </ul></li>
 </ul></li>
 </ul></td>
@@ -718,7 +717,7 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 
 
 ## <a name="retail-ecommerce-devtest-environment"></a>Retail E-commerce 開発/テスト環境
-この環境を導入して、AX 2012 R3 と完全に統合されたオンライン販売チャネルを作成し、テストします。 この環境には、既定で 1 台の仮想マシンが含まれます。 この仮想マシンには、Windows Server と、小売電子商取引に必要なソフトウェアが既にインストールされています。 次のテーブルは、既定の Retail E-commerce 開発/テスト環境の詳細を示しています。 環境を配置するとき、環境に追加の仮想マシンを追加する、または仮想マシンのサイズを変更することができます。 
+この環境を配置して、AX 2012 R3 と完全に統合されたオンライン販売チャネルを作成し、テストします。 この環境には、既定で 1 台の仮想マシンが含まれます。 この仮想マシンには、Windows Server と、小売電子商取引に必要なソフトウェアが既にインストールされています。 次のテーブルは、既定の Retail E-commerce 開発/テスト環境の詳細を示しています。 環境を配置するとき、環境に追加の仮想マシンを追加する、または仮想マシンのサイズを変更することができます。 
 
 > [!NOTE]
 > この環境の仮想マシンは、単一インスタンスの仮想マシンです。 シングル インスタンス仮想マシンは、Azure [サービス レベル アグリーメント](http://azure.microsoft.com/en-us/support/legal/sla/)の対象となりません。
@@ -744,7 +743,7 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 <td><ul>
 <li>Windows Server 2012 R2</li>
 <li>Microsoft SharePoint Server 2013</li>
-<li>AX 2012 R3 コンポーネント:
+<li>AX 2012 R3 のコンポーネント:
 <ul>
 <li>小売コンポーネント:
 <ul>
@@ -753,7 +752,7 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 <li>Async Client</li>
 </ul></li>
 <li>小売オンライン チャネル</li>
-<li>Retail チャンネル データベース</li>
+<li>小売チャネル データベース</li>
 </ul></li>
 </ul></li>
 </ul></td>
@@ -762,7 +761,7 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 </table>
 
 ## <a name="retail-mobility-devtest-environment"></a>Retail mobility 開発/テスト環境
-この環境を配置することで、販売スタッフが販売トランザクションを処理し、顧客注文を入力し、店舗内のどこでもモバイル デバイスを使用して日々の操作と在庫管理を実行できます。 この環境には、既定で 1 台の仮想マシンが含まれます。 この仮想マシンには、Windows Server と、小売モビリティに必要なソフトウェアが既にインストールされています。 次のテーブルは、既定の Retail Mobility 開発/テスト環境の詳細を示しています。 環境を配置するとき、環境に追加の仮想マシンを追加する、または仮想マシンのサイズを変更することができます。 
+この環境を配置することで、販売スタッフが販売トランザクションを処理し、顧客注文を入力し、店舗内のどこでもモバイル デバイスを使用して日々の操作と在庫管理を実行できます。 この環境には、既定で 1 台の仮想マシンが含まれます。 この仮想マシンには、Windows Server と、Retail mobilityに必要なソフトウェアが既にインストールされています。 次のテーブルは、既定の Retail Mobility 開発/テスト環境の詳細を示しています。 環境を配置するとき、環境に追加の仮想マシンを追加する、または仮想マシンのサイズを変更することができます。 
 > [!NOTE]
 > この環境の仮想マシンは、単一インスタンスの仮想マシンです。 シングル インスタンス仮想マシンは、Azure [サービス レベル アグリーメント](http://azure.microsoft.com/en-us/support/legal/sla/)の対象となりません。
 
@@ -786,7 +785,7 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 <td><strong>サイズ:</strong>D3: 標準計算層 (4 コア、14 GB メモリ) <strong>既定名:</strong>MOBIL-&lt;GUID&gt;</td>
 <td><ul>
 <li>Windows Server 2012 R2</li>
-<li>AX 2012 R3 コンポーネント:
+<li>AX 2012 R3 のコンポーネント:
 <ul>
 <li>小売コンポーネント:
 <ul>
@@ -795,7 +794,7 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 <li>Async Client</li>
 </ul></li>
 <li>Retail サーバー</li>
-<li>Retail チャンネル データベース</li>
+<li>小売チャネル データベース</li>
 </ul></li>
 </ul></li>
 </ul></td>
@@ -806,7 +805,7 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 
 
 ## <a name="high-availability-environment"></a>高可用性環境
-この環境を配置して、高可用性のために構成できる環境で AX 2012 R3 を使用します。 この環境には、数台の仮想マシンが含まれます。 これらの仮想マシンには、すでにインストールされている Windows Server および AX 2012 R3 を使用するために必要なソフトウェアがあります。 次のテーブルは、既定の高可用性環境の詳細を示しています。 環境を配置するとき、環境に追加の仮想マシンを追加する、または仮想マシンのサイズを変更することができます。 
+この環境を配置して、高可用性のためにコンフィギュレーションできる環境で AX 2012 R3 を使用します。 この環境には、数台の仮想マシンが含まれます。 これらの仮想マシンには、Windows Server と、AX 2012 R3 を使用するために必要なソフトウェアが既にインストールされています。 次のテーブルは、既定の高可用性環境の詳細を示しています。 環境を配置するとき、環境に追加の仮想マシンを追加する、または仮想マシンのサイズを変更することができます。 
 
 > [!NOTE]
 > Azure Premium Storage は高可用性環境が必要です。 詳細については、[Azure での高可用性環境の配置](deploy-high-availability-environment-azure.md) を参照してください。 この環境の仮想マシンは、Azure [サービス レベル アグリーメント](http://azure.microsoft.com/en-us/support/legal/sla/)の対象となります。 データのインポート/エクスポート フレームワーク (DIXF) コンポーネントは既定ではインストールされていません。 DIXF を使用する場合は、独自の SQL Server インストール メディアを使用して、SQL Server マシンに SQL Server Integration Services (SSIS) をインストールする必要があります。 SSIS をインストールした後は、Dynamics AX CD (VM 内の接続されたドライブで利用可能) を使用し、DIXF コンポーネントを AOS およびクライアント マシンにインストールできます。
@@ -830,7 +829,7 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 <td>ドメイン コントローラー</td>
 <td><strong>サイズ:</strong>D1: 基本的な計算層 (1 コア、3.5 GB メモリ) <strong>既定名:</strong>AD-&lt;GUID&gt;</td>
 <td><ul>
-<li>Windows Server 2012 R2、以下を含む:
+<li>次を含む Windows Server2012 R2:
 <ul>
 <li>Active Directory</li>
 <li>ドメイン名サービス (DNS)</li>
@@ -842,7 +841,7 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 <td>AOS サーバー</td>
 <td><strong>サイズ:</strong>D3: 標準計算層 (4 コア、14 GB メモリ) <strong>既定名:</strong>AOS-&lt;GUID&gt;</td>
 <td><ul>
-<li>Windows Server 2012 R2、以下を含む:
+<li>次を含む Windows Server2012 R2:
 <ul>
 <li>インターネット インフォメーション サービス (IIS)</li>
 </ul></li>
@@ -853,7 +852,7 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 <li>Management Studio</li>
 <li>ネイティブ クライアント</li>
 </ul></li>
-<li>AX 2012 R3 または AX 2012 R3 CU8 コンポーネント:
+<li>AX 2012 R3 または AX 2012 R3 CU8 のコンポーネント:
 <ul>
 <li>サーバー コンポーネント:
 <ul>
@@ -873,7 +872,7 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 <li>管理ユーティリティ</li>
 <li>小売コンポーネント:
 <ul>
-<li>Retail Headquarters</li>
+<li>小売用バックオフィス</li>
 <li>Commerce Data Exchange コンポーネント:
 <ul>
 <li>Synch Service</li>
@@ -903,7 +902,7 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 <td><strong>メモ</strong></td>
 </tr>
 <tr class="even">
-<td>クォーラム サーバーも配置されます。 この仮想マシンは、AlwaysOn 可用性グループのリスナーです。 この仮想マシンは、o    [高可用性 VM] ボックスの一覧には表示されませんが、高可用性環境で展開されます。o    QRM -&lt;GUID&gt; という名前です。 この名前は customized.o にはできません    A2 仮想マシン.o です    Windows Server 2012 R2.o 配置後のギャラリー 画像を実行します。この VM は、高可用性環境に VM を追加するときに「データベース サーバー」として表示されます。 ここで参照されている 3 番目の VM は、明示的に SQL Server ではない A2 Quorum Server です。</td>
+<td>クォーラム サーバーも配置されます。 この仮想マシンは、AlwaysOn 可用性グループのリスナーです。 この仮想マシンは、o    [高可用性 VM] ボックスの一覧には表示されませんが、高可用性環境で展開されます。o    QRM -&lt;GUID&gt; という名前です。 この名前はカスタマイズできません。o    A2 仮想マシンです。o    Windows Server 2012 R2 のギャラリー画像を実行します。o    配置後には、この VM は、高可用性環境に VM を追加するときに「データベース サーバー」として表示されます。 ここで参照されている 3 番目の VM は、明示的に SQL Server ではない A2 Quorum Server です。</td>
 </tr>
 <tr class="odd">
 <td><strong>メモ</strong></td>
@@ -914,7 +913,7 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 </tbody>
 </table>
 <ul>
-<li>AX 2012 R3 または AX 2012 R3 CU8 コンポーネント:
+<li>AX 2012 R3 または AX 2012 R3 CU8 のコンポーネント:
 <ul>
 <li>データベース</li>
 </ul></li>
@@ -945,7 +944,7 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 </tbody>
 </table>
 <ul>
-<li>AX 2012 R3 または AX 2012 R3 CU8 コンポーネント:
+<li>AX 2012 R3 または AX 2012 R3 CU8 のコンポーネント:
 <ul>
 <li>ビジネス インテリジェンス コンポーネント:
 <ul>
@@ -960,7 +959,7 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 <td>エンタープライズ ポータル サーバー</td>
 <td><strong>サイズ:</strong>D3: 標準計算層 (4 コア、14 GB メモリ) <strong>既定名:</strong>EP-&lt;GUID&gt;</td>
 <td><ul>
-<li>Windows Server 2012 R2、以下を含む:
+<li>次を含む Windows Server2012 R2:
 <ul>
 <li>インターネット インフォメーション サービス (IIS)</li>
 </ul></li>
@@ -969,7 +968,7 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 <li>フル テキスト検索</li>
 </ul></li>
 <li>Microsoft SharePoint Server 2013</li>
-<li>AX 2012 R3 または AX 2012 R3 CU8 コンポーネント:
+<li>AX 2012 R3 または AX 2012 R3 CU8 のコンポーネント:
 <ul>
 <li>サーバー コンポーネント:
 <ul>
@@ -1014,7 +1013,7 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 </ul></li>
 <li>Microsoft SharePoint Server 2013 クライアント コンポーネント SDK</li>
 <li>Microsoft Office 365 ProPlus</li>
-<li>AX 2012 R3 または AX 2012 R3 CU8 コンポーネント:
+<li>AX 2012 R3 または AX 2012 R3 CU8 のコンポーネント:
 <ul>
 <li>Management Reporter コンポーネント:
 <ul>
@@ -1029,7 +1028,7 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 <li>開発者ツール:
 <ul>
 <li>デバッガー</li>
-<li>Visual Studio Tools</li>
+<li>Visual Studio ツール</li>
 <li>Trace Parser</li>
 </ul></li>
 <li>管理ユーティリティ</li>
@@ -1045,12 +1044,12 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 <td>リモート デスクトップ サービス サーバー</td>
 <td><strong>サイズ:</strong>D3: 標準計算層 (4 コア、14 GB メモリ) <strong>既定名:</strong>RDS-&lt;GUID&gt;</td>
 <td><ul>
-<li>Windows Server 2012 R2、以下を含む:
+<li>次を含む Windows Server2012 R2:
 <ul>
 <li>インターネット インフォメーション サービス (IIS)</li>
 <li>リモート デスクトップ サービス</li>
 </ul></li>
-<li>Microsoft SQL Server 2012 Native Client</li>
+<li>Microsoft SQL Server 2012 ネイティブ クライアント</li>
 </ul></td>
 </tr>
 </tbody>
@@ -1059,7 +1058,7 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 
 
 ## <a name="next-steps"></a>次のステップ
-- [Azure に AX 2012 R3 または AX 2012 R3 CU8 デモ環境を配置する](deploy-ax-2012-r3-ax-2012-r3-cu8-demo-environment-azure.md) 
+- [Azure に AX 2012 R3 または AX 2012 R3 CU8 デモ環境を配置します](deploy-ax-2012-r3-ax-2012-r3-cu8-demo-environment-azure.md) 
 - [Azure での Retail Essentials デモ環境の配置](deploy-retail-essentials-demo-environment-azure.md) 
 - [Azure での開発環境の配置](deploy-development-environment-azure.md) 
 - [Azure でのテスト環境の配置](deploy-test-environment-azure.md) 
@@ -1067,4 +1066,3 @@ Azure 上に AX 2012 R3 環境を配置するには、Lifecycle Services のク�
 - [Azure での Retail E-commerce 開発/テスト環境の配置](deploy-retail-ecommerce-devtest-environment-azure.md) 
 - [Azure での Retail Mobility 開発/テスト環境の配置](deploy-retail-mobility-devtest-environment-azure.md) 
 - [Azure に高可用性環境を配置する](deploy-high-availability-environment-azure.md)
-

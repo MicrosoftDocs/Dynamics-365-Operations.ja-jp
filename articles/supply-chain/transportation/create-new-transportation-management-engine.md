@@ -1,13 +1,13 @@
 ---
-title: "新しい輸送管理エンジンの作成"
-description: "この記事では、Microsoft Dynamics 365 for Finance and Operations の新しい輸送管理エンジンを作成する方法について説明します。"
+title: 新しい輸送管理エンジンの作成
+description: この記事では、Microsoft Dynamics 365 for Finance and Operations で新しい輸送管理エンジンを作成する方法について説明します。
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TMSGenericEngine
 audience: Developer
 ms.reviewer: josaw
@@ -18,21 +18,20 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 9755a74cf05d6674f065e36dc224599eb1fed91e
 ms.openlocfilehash: 745aaac9c69b885d9893a6a4bdb9c6ef33240dae
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368590"
 ---
-
 # <a name="create-a-new-transportation-management-engine"></a>新しい輸送管理エンジンの作成
 
 [!include [banner](../includes/banner.md)]
 
-この記事では、Microsoft Dynamics 365 for Finance and Operations の新しい輸送管理エンジンを作成する方法について説明します。 
+この記事では、Microsoft Dynamics 365 for Finance and Operations で新しい輸送管理エンジンを作成する方法について説明します。 
 
-輸送管理 (TMS) エンジンは、輸送管理で配送率を生成およびプロセスするために使用するロジックを定義します。 Microsoft Dynamics 365 for Finance and Operations には、レート、輸送時間、および輸送中に越えるゾーンの数などのさまざまなパラメーターを計算する複数の異なるエンジン タイプがあります。 この記事では、Microsoft Visual Studio 開発環境と Finance and Operations 開発ツールを使用して新しい TMS エンジンを作成して展開する方法と、次に Operations でエンジンを設定する方法について説明します。 Finance and Operations が提供するエンジンの詳細については、[輸送管理エンジン](transportation-management-engines.md) を参照してください。
+輸送管理 (TMS) エンジンは、輸送管理で配送率を生成およびプロセスするために使用するロジックを定義します。 Microsoft Dynamics 365 for Finance and Operations は、レート、輸送時間、および輸送中に越えるゾーンの数などのさまざまなパラメーターを計算する複数の異なるエンジン タイプを提供します。 この記事では、Microsoft Visual Studio 開発環境と Finance and Operations 開発ツールを使用して新しい TMS エンジンを作成して展開する方法と、次に Operations でエンジンを設定する方法について説明します。 Finance and Operations が提供するエンジンの詳細については、[輸送管理エンジン](transportation-management-engines.md) を参照してください。
 
 ## <a name="create-a-new-tms-engine"></a>新しい TMS エンジンを作成する
 このセクションでは、TMS エンジン実装を持つクラス ライブラリを作成する方法と、Finance and Operations モデルからクラス ライブラリを参照する方法について説明します。
@@ -56,7 +55,7 @@ ms.lasthandoff: 09/13/2018
 5. 新しいソリューションで、新しい Finance and Operations プロジェクトを作成し、**TMSThirdParty** と名前を付けます。 プロジェクト プロパティで、プロジェクトのモデルを **TMSEngines** に設定します。
 6. ソリューションに新しい C\# クラス ライブラリを追加し、**ThirdPartyTMSEngines** という名前をつけます。
 7. ThirdPartyTMSEngines プロジェクトで、Finance and Operations 固有のアセンブリへの参照を追加します。
-   -   X++ タイプの参照を有効にするアプリケーション アセンブリ。 これらのアセンブリは、次の場所にあります。 \[パッケージ ルート\] は、C:\\パッケージなど、配置された Dynamics 365 for Finance and Operations アセンブリが配置されている場所のバスです。
+   -   X++ タイプの参照を有効にするアプリケーション アセンブリ。 これらのアセンブリは、次の場所にあります。 \[パッケージ ルート\] は、C:\\パッケージなど、展開された Dynamics 365 for Finance and Operations アセンブリが配置されている場所のバスです。
 
            [Packages root]\ApplicationPlatform\bin\Dynamics.AX.ApplicationPlatform.dll
            [Packages root]\ApplicationFoundation\bin\Dynamics.AX.ApplicationFoundation.dll
@@ -141,7 +140,6 @@ ms.lasthandoff: 09/13/2018
 -   Finance and Operations の開発ツールを使用している場合、ソリューションに新しい Finance and Operations プロジェクトを追加すると便利です。 このプロジェクトをスタートアップ プロジェクトとして設定した場合、デバッグ セッションを開始すると、同じデバッグ セッションで X++ と C\# コードの両方のコードをデバッグできます。
 -   ThirdPartyTMSEngines プロジェクトを変更して再コンパイルするたびに、アセンブリの結果を Finance and Operations バイナリの場所に手動でコピーするか、展開パッケージを通じて展開する必要があります。 それ以外の場合、古いアセンブリを使用して実行される場合があります。
 -   Finance and Operations で TMS 固有の操作を実行した後、Internet Information Services (IIS) ワーカー プロセスによって ThirdPartyTMSEngines アセンブリが、ロックされアセンブリを更新することができなくなることがあります。 この場合、w3svc プロセスを再起動します。
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "開発マシンでの新しいユーザーの作成"
-description: "環境が最初に配置されるとき、1 つのユーザー アカウントのみが仮想マシン (VM)上で開発者として有効になります。 この記事では、開発者が開発 VM に別のユーザー アカウントを有効にする方法について説明します。"
+title: 開発マシンでの新しいユーザーの作成
+description: 環境が最初に配置されるとき、1 つのユーザー アカウントのみが仮想マシン (VM)上で開発者として有効になります。 この記事では、開発者が開発 VM に別のユーザー アカウントを有効にする方法について説明します。
 author: RobinARH
 manager: AnnBe
 ms.date: 07/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
 ms.openlocfilehash: 9c12c765c6bc1a55b2d89e3b01b00df8c4a6b132
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/11/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368400"
 ---
-
 # <a name="create-new-users-on-development-machines"></a>開発マシンでの新しいユーザーの作成
 
 [!include [banner](../includes/banner.md)]
@@ -42,7 +41,7 @@ ms.lasthandoff: 09/11/2018
 
 ## <a name="steps"></a>ステップ
 1.  スクリプト ProvisionAxDeveloper.ps1 をダウンロードしてください。スクリプトは、<https://github.com/Microsoft/Dynamics-AX-Scripts> で利用可能です。
-2.  Microsoft Windows **PowerShell コマンド プロンプト** ウィンドウを管理者として開きます。
+2.  Microsoft Windows PowerShell **コマンド プロンプト** ウィンドウを管理者として開きます。
 3.  ProvisionAxDeveloper.ps1 スクリプトを実行します。 次のパラメーターを指定します。
 
     -   **DatabaseServerName** - 通常、これは、コンピューター名です。
@@ -57,7 +56,6 @@ ms.lasthandoff: 09/11/2018
 4.  1 つ以上のユーザー アカウントが同じバージョン管理ワークスペース上で開発されている場合、ワークスペースをパブリックにする必要があります。
     1.  Visual Studio で、**ソース管理エクスプローラー**を開き、ワークスペース ドロップダウンを選択し、**ワークスペースの管理**を選択します。
     2.  アプリケーション ワークスペースを選択して、**編集** をクリックし、**詳細** をクリックしてワークスペースを **パブリック ワークスペース**.[![publicworkspace](./media/publicworkspace.png)](./media/publicworkspace.png) にせっていします
-
 
 
 

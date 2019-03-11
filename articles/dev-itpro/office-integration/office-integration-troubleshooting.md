@@ -1,13 +1,13 @@
 ---
-title: "Office 統合のトラブルシューティング (タスク ガイド)"
-description: "このトピックでは、Microsoft Office 統合の機能に関する質問、ヒント、およびトラブルシューティング情報への回答を示します。 説明されている質問と問題は、ユーザー、管理、および開発のシナリオにわたっています。"
+title: Office 統合のトラブルシューティング (タスク ガイド)
+description: このトピックでは、Microsoft Office 統合の機能に関する質問、ヒント、およびトラブルシューティング情報への回答を示します。 説明されている質問と問題は、ユーザー、管理、および開発のシナリオにわたっています。
 author: ChrisGarty
 manager: AnnBe
 ms.date: 12/18/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: OfficeAppParameters, SysEmailParameters
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 1fbaa132b588240681034b666b357f82dc5b91bf
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 81df289f07c41fe68c9d8f4732272abc9be22cb4
-ms.openlocfilehash: 1b6b8fbbadf07d9dc34d9357bee26c5c5cc099f3
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/02/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369455"
 ---
-
 # <a name="troubleshoot-the-office-integration"></a>Office 統合のトラブルシューティング (タスク ガイド)
 
 [!include [banner](../includes/banner.md)]
@@ -57,7 +56,7 @@ Office ビルドが更新されない場合、遅延したトラックにある�
 
 ### <a name="why-cant-you-tell-me-what-version-of-office-or-excel-a-particular-issue-is-fixed-in"></a>どのバージョンの Office または Excel で特定の問題が修正されたか知ることができないのはなぜですか。
 
-Office には、多くのリリースがあります。 これらのリリースは、さまざまな時刻にアップデートを受け取り、対応しないさまざまなバージョン番号を持ちます。 頻繁に使用されるいくつかのバージョンの Office および更新メソッドは、Click to Run (C2R) Current channel、C2R Deferred、C2R First Update Deferred、Office Insider Fast、Office Insider Slow、MSI/MSO (DVD からインストール) です。 Office バージョンの詳細については、[Office 365 クライアント更新チャンネルのリリース](https://technet.microsoft.com/en-us/office/mt465751?f=255&MSPPError=-2147217396) ページを参照してください。
+Office には、多くのリリースがあります。 これらのリリースは、さまざまな時刻にアップデートを受け取り、対応しないさまざまなバージョン番号を持ちます。 頻繁に使用されるいくつかのバージョンの Office および更新メソッドは、Click to Run (C2R) Current channel、C2R Deferred、C2R First Update Deferred、Office Insider Fast、Office Insider Slow、MSI/MSO (DVD からインストール) です。 Office バージョンの詳細については、「[Office 365 クライアント更新チャンネルのリリース](https://technet.microsoft.com/en-us/office/mt465751?f=255&MSPPError=-2147217396)」ページを参照してください。
 
 ### <a name="why-am-i-having-trouble-signing-into-the-excel-add-in"></a>Excel アドインへのサインインに問題が生じるのはなぜですか。
 
@@ -107,9 +106,9 @@ Excel にエクスポートの理想的な代替は、[Excel で開く] と Exce
 
 **問題:** Excel アドインへのサインイン中に、次のエラー メッセージが表示されます。「AADSTS65001: ユーザーまたは管理者が ID XYZ でアプリケーションを使用することに同意しませんでした」。
 
-**説明:** 通常、この問題は、Microsoft Azure Active Directory (Azure AD) が Excel アドインを表す Azure AD アプリケーションを検出できないために発生します。 その問題は、[Microsoft Power BI のコンフィギュレーション](../analytics/configure-power-bi-integration.md)中、アプリケーション ID URI が環境 URL に設定された Azure AD アプリケーションが追加されたために発生します。 
+**説明:** 通常、この問題は、Microsoft Azure Active Directory (Azure AD) が Excel アドインを表す Azure AD アプリケーションを検出できないために発生します。 その問題は、「[Microsoft Power BI のコンフィギュレーション](../analytics/configure-power-bi-integration.md)」中、アプリケーション ID URI が環境 URL に設定された Azure AD アプリケーションが追加されたために発生します。 
 
-**修正:** Azure AD アプリケーションのアプリケーション ID URI が環境 URL に設定されていないことを確認します。 アプリ ID URI は、`https://contosoAXPowerBI` などの固有の URI で作成する必要があります。
+**修正**: Azure AD アプリケーションのアプリケーション ID URI が環境 URL に設定されていないことを確認します。 アプリ ID URI は、`https://contosoAXPowerBI` などの固有の URI で作成する必要があります。
 
 ### <a name="fixed-issue-during-sign-in-to-the-excel-add-in-i-receive-the-following-error-message-aadsts50001-the-application-named-abc-was-not-found-in-the-tenant-named-xyz"></a>\[固定\] 問題: Excel アドインへのサインイン中に、次のエラー メッセージが表示されます: 「AADSTS50001: ABC という名前のアプリケーションが XYZ という名前のテナントに見つかりませんでした」
 
@@ -123,9 +122,9 @@ Excel にエクスポートの理想的な代替は、[Excel で開く] と Exce
 
 **問題:** Excel アドインを開始してデータを更新すると、次のエラー メッセージが表示されます。「データ キャッシュに書き込み中にエラーが発生しました」。 エラー状態の詳細は次の通りです。「引数が無効または不足している、またはフォーマットが正しくありません」 
 
-**説明:** クライアントを Internet Explorer で開いていて、ユーザーが **Excel で開く**オプションを選択した直後に、**開く**をクリックすると、このエラー メッセージが表示されます。 Internet Explorer が一時的なインターネット ファイルを処理する方法は、Excel で問題を引き起こします。 この問題は、API 呼び出しの失敗の原因となります。 
+**説明**: クライアントを Internet Explorer で開いていて、ユーザーが **Excel で開く**オプションを選択した直後に、**開く**をクリックすると、このエラー メッセージが表示されます。 Internet Explorer が一時的なインターネット ファイルを処理する方法は、Excel で問題を引き起こします。 この問題は、API 呼び出しの失敗の原因となります。 
 
-**回避策:** Internet Explorer でブックを開く際、まず**保存**をクリックし、それから**開く**をクリックしてください。 ファイルはダウンロード フォルダーから開かれます。 別の方法として、Edge または Google Chrome ブラウザを使用します。 既定では、これらの両方のブラウザはファイルをダウンロード フォルダに保存します。 したがって、問題は発生しません。 
+**回避策**: Internet Explorer でブックを開く際、まず**保存**をクリックし、それから**開く**をクリックしてください。 ファイルはダウンロード フォルダーから開かれます。 別の方法として、Edge または Google Chrome ブラウザを使用します。 既定では、これらの両方のブラウザはファイルをダウンロード フォルダに保存します。 したがって、問題は発生しません。 
 
 **長期的な修正プログラム:** Office チームと協力してこの問題を理解し、Excel で解決できるようにしています。
 
@@ -135,7 +134,7 @@ Excel にエクスポートの理想的な代替は、[Excel で開く] と Exce
 
 **説明:** この問題は、通常、電子メール アカウントの送信者アクセス許可が正しく設定されていないために発生します。 
 
-**修正:** Office 365 管理者センター (portal.office.com/Admin) で送信者アクセス許可をコンフィギュレーションすることができます。 **ユーザー** > **有効なユーザー** > **ユーザー** > **メールボックスのアクセス許可を編集** > **このメールボックスから電子メールを送信する**の順にクリックします。 詳細については、[Office 365 - 管理者ヘルプで別のユーザーにメールボックスのアクセス許可を付与する](https://support.office.com/en-us/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E) を参照してください。 
+**修正**: Office 365 管理者センター (portal.office.com/Admin) で送信者アクセス許可をコンフィギュレーションすることができます。 **ユーザー** > **有効なユーザー** > **ユーザー** > **メールボックスのアクセス許可を編集** > **このメールボックスから電子メールを送信する**の順にクリックします。 詳細については、「[Office 365 - 管理者ヘルプで別のユーザーにメールボックスのアクセス許可を付与する](https://support.office.com/en-us/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E)」を参照してください。 
 
 次の図は、**電子メール パラメーター** ページでの SMTP の設定を示しています。 ここで、送信メール サーバー、ポート、ユーザー名、パスワード、および Secure Sockets Layer (SSL) の要件を指定する必要があります。 
 
@@ -152,13 +151,13 @@ Excel にエクスポートの理想的な代替は、[Excel で開く] と Exce
 
 **影響を受けるバージョン:** CTP8 と 2016 年 2 月のリリース 
 
-**問題:** Active Directory フェデレーションサービス (AD FS) を使用する Azure AD テナントのユーザーが Office アドインにサインインしようとすると (つまり、ユーザーがアカウントを入力して Tab キーを押すか、フィールド内をクリックしてパスワードを入力すると)、別のブラウザウィンドウが開きます。 このブラウザ ウィンドウには通常、`https://az689774.vo.msecnd.net/dynamicsofficeapp/v1.2.1.0/App/DynamicsApp.html\#id\_token=` で始まる URL があります。 ユーザーがログインできません。 
+**問題**: Active Directory フェデレーションサービス (AD FS) を使用する Azure AD テナントのユーザーが Office アドインにサインインしようとすると (つまり、ユーザーがアカウントを入力して Tab キーを押すか、フィールド内をクリックしてパスワードを入力すると)、別のブラウザウィンドウが開きます。 このブラウザ ウィンドウには通常、`https://az689774.vo.msecnd.net/dynamicsofficeapp/v1.2.1.0/App/DynamicsApp.html\#id\_token=` で始まる URL があります。 ユーザーがログインできません。 
 
 **説明:** Office アドイン (Excel アドインと Word アドインの両方) へのサインイン中、テナントの AD FS サイトへのリダイレクトが発生します。 ただし、そのサイトは不明なため、許可されていないアプリケーション ドメイン (AppDomain) です。 
 
 **長期的な修正プログラム:** 2016 年 5 月 10 日にこの問題の長期的な修正プログラムが適切に配置されました。 Office アドインは、Office チームが追加した新しいダイアログ API を使用するようになりました。 
 
-**AD FS をサポートするアドイン アップデートを利用:** すべての Office のインストールは、**ファイル** > **アカウント** > **更新** (Click-to-Run インストールの場合) または Windows Update(MSI インストールの場合) を経由して更新する必要があります。 AD FS ダイアログ API は、5 月の更新プログラムに含められました ([16.0.6868.2060](https://answers.microsoft.com/en-us/office/forum/office_2016-office_install/may-update-16068682060-for-office-2016-on-windows/ea082237-7ec3-4b06-895b-83490980e6d2?auth=1))。 更新プログラムの詳細については、[Office 365 クライアント更新チャンネルのリリース](https://technet.microsoft.com/en-us/office/mt465751?f=255&MSPPError=-2147217396) ページを参照してください。 
+**AD FS をサポートするアドイン アップデートを利用:** すべての Office のインストールは、**ファイル** > **アカウント** > **更新** (Click-to-Run インストールの場合) または Windows Update(MSI インストールの場合) を経由して更新する必要があります。 AD FS ダイアログ API は、5 月の更新プログラムに含められました ([16.0.6868.2060](https://answers.microsoft.com/en-us/office/forum/office_2016-office_install/may-update-16068682060-for-office-2016-on-windows/ea082237-7ec3-4b06-895b-83490980e6d2?auth=1))。 更新プログラムの詳細については、「[Office 365 クライアント更新チャンネルのリリース](https://technet.microsoft.com/en-us/office/mt465751?f=255&MSPPError=-2147217396)」ページを参照してください。 
 
 Office ビルドが更新されない場合、遅延したトラックにある場合があります ([Microsoft Office 365 ProPlus 更新チャネル オプション](https://technet.microsoft.com/en-us/library/mt455210.aspx))。 この場合、[Office 配置ツールを使用して現在のチャネルに移動する](https://technet.microsoft.com/en-us/library/jj219422.aspx?f=255&MSPPError=-2147217396) を使用するか、最新の更新プログラムがあることを保証するために [Office Insider プログラム](https://products.office.com/en-us/office-insider) にサインアップできます。 また、[Office 2016 の最新バージョンをインストール](https://dev.office.com/docs/add-ins/develop/install-latest-office-version) および [管理者の Office 2016 配置ガイド](https://technet.microsoft.com/en-us/library/cc303401(v=office.16).aspx) を参照してください。 
 
@@ -168,19 +167,19 @@ Office の更新プログラムをインストールできない場合、次の�
 
 この回避策には、ユーザーの知識と追加の手順が必要です。 この解決策についてユーザーが教育を受けた後は、解決が容易になります。 
 
-**ユーザー ステップ:** Excel (または Word) を開く前に、Internet Explorer を使用してクライアントにサインインする必要があります。 
+**ユーザー ステップ**: Excel (または Word) を開く前に、Internet Explorer を使用してクライアントにサインインする必要があります。 
 
 **説明:** Excel または Word のアドインではサインイン コンテキストが使用され、リダイレクトは必要ありません。 Office アドインが Excel および Word の Internet Explorer ウィンドウ内で実行されるため、以前のサインインは Internet Explorer で実行する必要があります。 サインインのコンテキストは、ポリシーに応じて 6〜24 時間続きます。 したがって、Internet Explorer を介した新しいサインインが必要な場合があります。
 
 1.  Internet Explorer および Excelを終了します。
-2.  Internet Explorer を起動し、クライアントにログインします。
-3.  [Excel で開く] エクスペリエンスを使用して Excel アドインをテストします。 (たとえば、**フリート管理**&gt;**顧客**&gt;**顧客**&gt; **Microsoft Office で開く** &gt;**Excel で開く**&gt;**フリート管理の顧客**をクリックします。)
+2.  Internet Explorer を起動し、クライアントにサインインします。
+3.  [Excel で開く] エクスペリエンスを使用して Excel アドインをテストします。 (たとえば、**フリート管理** &gt; **顧客** &gt; **顧客** &gt; **Microsoft Office で開く** &gt; **Excel で開く** &gt; **フリート管理の顧客**をクリックします。)
 
 ### <a name="fixed-issue-the-excel-add-in-doesnt-correctly-run-or-enable-sign-in"></a>\[固定\] 問題: Excel アドインが正しく実行されず、サインインが有効にならない
 
 **問題:** ユーザーが Excel アドインにサインインしようとすると、認証ページの代わりに空白の認証ダイアログボックスが表示されるか、エラー メッセージが表示されます。 ユーザーがログインできません。 
 
-**説明:** Excel アドインは、Office Web JS アドイン プラットフォームを依存し、認証に Azure AD を使用します。 プロキシを使用する場合、ユーザーが Excel アドインを実行してサインインするには、いくつかの URL にアクセスできる必要があります。 また、AD FS が使用される場合は、AD FS URL が HTTPS を使用する必要があります。 
+**説明**: Excel アドインは、Office Web JS アドイン プラットフォームを依存し、認証に Azure AD を使用します。 プロキシを使用する場合、ユーザーが Excel アドインを実行してサインインするには、いくつかの URL にアクセスできる必要があります。 また、AD FS が使用される場合は、AD FS URL が HTTPS を使用する必要があります。 
 
 **ソリューション:** この問題は顧客固有のネットワーク問題であるため、顧客固有の解決策が必要です。 AD FS が使用される場合は、AD FS URL が HTTPS を使用していることを確認します。 また、次のすべての URL がユーザーのコンピューターからアクセスできることを確認してください。
 
@@ -215,5 +214,4 @@ Office の更新プログラムをインストールできない場合、次の�
 
 [Office 統合のチュートリアル](office-integration-tutorial.md)
 
-[Power BI 統合の構成](../analytics/configure-power-bi-integration.md)
-
+[Power BI 統合のコンフィギュレーション](../analytics/configure-power-bi-integration.md)

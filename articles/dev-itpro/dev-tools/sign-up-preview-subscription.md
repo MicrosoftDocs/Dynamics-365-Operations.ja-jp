@@ -1,13 +1,13 @@
 ---
-title: "プレビュー サブスクリプションのサインアップ"
-description: "このトピックでは、プレビュー/パートナー オファーをサブスクライブして環境を配置する方法について説明します。"
+title: プレビュー サブスクリプションのサインアップ
+description: このトピックでは、プレビュー/パートナー オファーをサブスクライブして環境を配置する方法について説明します。
 author: RobinARH
 manager: AnnBe
 ms.date: 05/30/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: robinr
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 015c6b54948129b5e629a9c01669de5d8867dc77
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368877"
 ---
-
 # <a name="sign-up-for-preview-subscriptions"></a>プレビュー サブスクリプションのサインアップ
 
 [!include [banner](../includes/banner.md)]
@@ -43,13 +42,13 @@ ms.lasthandoff: 08/09/2018
 - **Microsoft Azure Active Directory** – クラウド環境には、Azure AD が含まれます。 オンプレミス環境の管理と同様、Azure AD はオンライン アプリケーションのユーザー、グループ、セキュリティ ロール、およびライセンスを管理するのに役立ちます。
 - **ユーザー** – 組織がサブスクリプションしているサービスのユーザーは Azure AD で管理されます。 テナント内のすべてのユーザーを追加して、セキュリティ ロールに割り当てることができます。
 - **開発者と管理者** - 開発者と管理者は、プロジェクトや環境を管理できる LCS にもアクセスできるユーザーです。 これらのユーザーは、エンド ユーザーでもあります。
-- **組織アカウント** – ユーザーは Azure AD 資格情報を取得します。 これらの資格情報は、他のデスクトップまたは企業の資格情報とは異なります。 Azure AD 資格情報は、Microsoft Office 365 およびその他の Microsoft クラウド サービスへのログインに使用されます。 ユーザーは組織のアカウントを使用してサインインします。
+- **組織アカウント** – ユーザーは Azure AD 資格情報を取得します。 これらの資格情報は、他のデスクトップまたは企業の資格情報とは異なります。 Azure AD 資格情報は、Microsoft Office 365 およびその他の Microsoft クラウド サービスへのサインインに使用されます。 ユーザーは組織のアカウントを使用してサインインします。
 
     > [!IMPORTANT]
     > 今回のリリースでは、Office 365 または Microsoft Dynamics CRM Online などの他のオンライン サービスに関連付けられている、既存の資格情報を使用しないようお勧めします。
 
 - **Microsoft アカウント** – Microsoft アカウントは、以前は Passport アカウントまたは Windows Live ID アカウントと呼ばれていました。 現在、Microsoft Dynamics 365 for Finance and Operations、Microsoft Dynamics 365 for Retail、またはその他の Microsoft オンライン サービスで Microsoft アカウントを使用することはできません。 ただし、Microsoft アカウントは、CustomerSource、PartnerSource、ソース情報、および Microsoft Dynamics コミュニティなどの Microsoft Connect および他の Microsoft Business Solutions サイトに対して必要です。 これらのサービスにアクセスするには、Microsoft アカウントを引き続き使用します。
-- **Microsoft Office 365 管理者センター** – Office 365 管理者センターは、Office 365 が管理者に提供する定期売買管理ポータルです。 Office 365 管理者センターを使用して、ユーザーおよび定期売買の管理機能を提供します。
+- **Microsoft Office 365 管理者センター** – Office 365 管理者センターは、Office 365 が管理者に提供する定期売買管理ポータルです。 Office 365 管理者センターは、ユーザーおよびサブスクリプションの管理機能を提供するために使用されます。
 - **環境** - 必要に応じて、仮想マシン (VM) の単一インスタンスをいくつでも配置できます。 これらのインスタンスを *環境* と呼び出ます。
 
 ## <a name="prerequisites"></a>前提条件
@@ -109,7 +108,7 @@ LCS プロジェクトのユーザーとして既に設定しています。 他
 
 LCS でプロジェクト ページを開始します。
 
-1. **環境**セクションで、プラス記号 (**+**) を選択します。 **Microsoft Azure 設定** ダイアログ ボックスが表示されます。
+1. **環境**セクションで、プラス記号 (**+**) を選択します。 **Microsoft Azure 設定**ダイアログ ボックスが表示されます。
 2. Azure サブスクリプション ID を入力します。 Azure サブスクリプション ID は Azure Portal (<https://ms.portal.azure.com/>) の、左下の **設定** で見つけることができます。
 3. **次へ** を選択します。
 4. Azure Management Certificate をコンピューターのローカル フォルダーにダウンロードし、**設定** &gt; **管理証明書**にアクセスして Azure Management Portal を更新します。 この証明書は、自分の代わりに LCS が Azure と通信できるようにします。
@@ -164,4 +163,3 @@ LCS は、オンライン管理アクティビティを実行するための出�
         > このページにアクセスするには、組織の Microsoft Online Services テナントにおいて**グローバル管理者** ロールのメンバーである必要があります。 インストール ユーザーは常にグローバル管理者ですが、他のユーザーをこのロールに追加する必要があります。
 
         [![Office 365 管理者センターの有効なユーザー](./media/activeusersadmin.png)](./media/activeusersadmin.png)
-

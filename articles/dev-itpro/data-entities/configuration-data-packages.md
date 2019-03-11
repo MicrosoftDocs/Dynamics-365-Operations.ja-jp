@@ -1,29 +1,28 @@
 ---
-title: "コンフィギュレーション データ パッケージ"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations の 2017 年 7 月リリースの構成データ パッケージの概要を示します。"
+title: コンフィギュレーション データ パッケージ
+description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations の 2017 年 7 月リリースのコンフィギュレーション データ パッケージの概要を説明します。
 author: saraschi2
 manager: AnnBe
 ms.date: 12/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: margoc
 ms.search.scope: Operations
-ms.custom: 
+ms.custom: ''
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-26
 ms.dyn365.ops.version: Platform update 8
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 2f82c01eeec45a1bbfca319229027f4bebe41164
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369175"
 ---
-
 # <a name="configuration-data-packages"></a>コンフィギュレーション データ パッケージ
 
 [!include [banner](../includes/banner.md)]
@@ -31,7 +30,7 @@ ms.lasthandoff: 08/13/2018
 > [!IMPORTANT]
 > このトピックは、Microsoft Dynamics 365 for Finance and Operations の 2017 年 7 月リリースにのみ適用されます。 今後のリリースを実行している場合、「[コンフィギュレーションのコピー](copy-configuration.md)」というトピックを参照します。 
 
-コンフィギュレーション データ パッケージは、Microsoft Dynamics Lifecycle Services (LCS) からプロセス データ パッケージとして入手できます。 これらのデータ パッケージは、実装の再現性を向上させ、Microsoft Dynamics 365 for Finance and Operations の設定を迅速化します。
+コンフィギュレーション データ パッケージは、Microsoft Dynamics Lifecycle Services (LCS) からプロセス データ パッケージとして入手できます。 これらのデータ パッケージは、実装の再現性を向上させ、Microsoft Dynamics 365 for Finance and Operations の構成を迅速化します。
 
 データ パッケージにはコンフィギュレーション エンティティ スプレッドシートが含まれています。 これらのエンティティ スプレッドシートには、初期のゴールデン ビルドを作成するために使用できるベスト プラクティス データが含まれています。 データ パッケージ内のデータ エンティティも適切に順序付けされ、1 回のクリックによるインポートを成功させるのに役立ちます。 
 
@@ -324,4 +323,3 @@ LCS から構成データ パッケージにアクセスすることができま
 | 配送条件                                       |                     |                 | x           |
 | 支払条件                                        |                     |                 | x           |
 | 割引合計顧客グループ                          |                     |                 | x           |
-

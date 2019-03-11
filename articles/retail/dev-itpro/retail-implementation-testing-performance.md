@@ -1,14 +1,14 @@
 ---
-title: "テストおよびパフォーマンスの問題"
-description: "このトピックでは、Microsoft Dynamics 365 for Retail 実装プロジェクトのテスト、およびパフォーマンスの推奨事項について説明します。"
+title: テストおよびパフォーマンスの問題
+description: このトピックでは、Microsoft Dynamics 365 for Retail のテスティングおよびパフォーマンスの推奨事項について説明します。
 author: Andreash1
 manager: AnnBe
 ms.date: 07/09/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: IT Pro
 ms.reviewer: kfend
 ms.search.scope: Operations, Retail
@@ -17,16 +17,14 @@ ms.search.industry: Retail
 ms.author: andreash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: Retail 7.3
-ms.translationtype: HT
-ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
 ms.openlocfilehash: 90d56b480a7b940d0a2998e550915d4e271b67d7
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/17/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368682"
 ---
-
-
-# <a name="testing-and-performance-issues"></a>テストおよびパフォーマンスの問題
+# <a name="testing-and-performance-issues"></a>テストおよびパフォーマンスに関する問題
 
 [!include [banner](../../includes/banner.md)]
 
@@ -55,12 +53,12 @@ Retail Modern POS/クラウド POS を使用する場合は、正しいユーザ
 - 追加のチャネル データベース拡張機能。 カスタム SQL が効率的で、正しいインデックスを使用していることを確認してください。
 - 同じカスタムまたは組み込みの CRT SQL クエリを複数回実行します。 この方法ではコストがかかりすぎる場合は、CRT 要求ハンドラーでキャッシュを適切に適用することができます。
 
-詳細については、[IT プロおよび開発者向けの Microsoft Dynamics 365 for Retail](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page) トピックを参照してください。
+詳細については、「[IT プロおよび開発者向け Microsoft Dynamics 365 for Retail](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page)」を参照してください。
 
 店舗のパフォーマンスを調査するときは、[小売チャンネル実績調査](https://dynamicsnotes.com/retail-channel-performance-investigations/)にある提案に従ってください。
 
 ### <a name="using-telemetry-data-to-find-performance-issues"></a>テレメトリ データを使用してパフォーマンスの問題を検索する
-Microsoft Dynamics 365 for Retail および Microsoft Dynamics 365 for Finance and Operations (特に低速の SQL クエリまたは SQL デッドロック)、でパフォーマンスのトラブルシューティングを行う必要がある場合には Microsoft Dynamics Lifecycle Services (LCS) の環境の診断のページで、重要なテレメトリ データを表示します。 このデータを使用して、コード、構成、またはデザインの潜在的なパフォーマンスの問題を見つけることができます。 詳細については、[環境監視未加工ログの使用方法](https://blogs.msdn.microsoft.com/axsa/2018/06/05/how-to-use-environment-monitoring-view-raw-logs/)を参照してください。 その情報により、いくつかのバッチ処理またはフォームの読み込みが遅い理由が明らかになります。
+Microsoft Dynamics 365 for Retail および Microsoft Dynamics 365 for Finance and Operations のパフォーマンスのトラブルシューティングを行う必要がある場合 (特に速度が低下する SQL クエリまたは SQL デッドロック)、Microsoft Dynamics Lifecycle Services (LCS) の環境診断ページでは、貴重な遠隔測定データが表示されます。 このデータを使用して、コード、構成、またはデザインの潜在的なパフォーマンスの問題を見つけることができます。 詳細については、[環境監視未加工ログの使用方法](https://blogs.msdn.microsoft.com/axsa/2018/06/05/how-to-use-environment-monitoring-view-raw-logs/)を参照してください。 その情報により、いくつかのバッチ処理またはフォームの読み込みが遅い理由が明らかになります。
 
 ### <a name="performance-testing"></a>パフォーマンス テスト
 
@@ -90,4 +88,3 @@ Microsoft Dynamics 365 for Retail および Microsoft Dynamics 365 for Finance a
 [Retail プロジェクトの新しい環境、Azure DevOps、およびブランチの設定](./new-environments-visual-studio-teams-branch-retail-projects.md)
 
 [Retail プロジェクトのコードと環境の更新](./updating-environments.md)
-

@@ -1,13 +1,13 @@
 ---
-title: "拡張可能コントロールの構築"
-description: "このトピックでは、Visual Studio にプロパティ シートを持ち、サーバーサイドのビジネス ロジックを持つ新しいアプリケーション コントロールを作成する方法について説明します。"
+title: 拡張可能コントロールの構築
+description: このトピックでは、Visual Studio にプロパティ シートを持ち、サーバーサイドのビジネス ロジックを持つ新しいアプリケーション コントロールを作成する方法について説明します。
 author: TLeforMicrosoft
 manager: AnnBe
 ms.date: 11/09/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,21 +17,20 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 418df375c714bbeddfe6d36ea1d7a71f4aa23e7d
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368580"
 ---
-
-# <a name="build-extensible-controls"></a>拡張可能コントロールの構築
+# <a name="build-extensible-controls"></a>拡張可能なコントロールの構築
 
 [!include [banner](../includes/banner.md)]
 
 このトピックでは、Visual Studio にプロパティ シートを持ち、サーバーサイドのビジネス ロジックを持つ新しいアプリケーション コントロールを作成する方法について説明します。
 
-<a name="prerequisites"></a>前提条件
+<a name="prerequisites"></a>必要条件
 -------------
 
 このチュートリアルでは、リモート デスクトップを使用して環境にアクセスし、インスタンスの管理者としてプロビジョニングされる必要があります。 詳細については、「[開発インスタンスへのアクセス](../dev-tools/access-instances.md)」を参照してください。
@@ -39,9 +38,9 @@ ms.lasthandoff: 08/09/2018
 ## <a name="overview"></a>概要
 コントロール拡張フレームワークを使用すると、新しいアプリケーション コントロールを作成できます。 Microsoft では、グラフ コントロールなど、プログラムで既に記述されている制御を構築するために使用するのと同じツールを使用することができます。 拡張可能なコントロールを開発するプロセスには、次の 3 つの重要なアーティファクトが含まれます。
 
--   **X++ ビルド クラス** – ビルド クラスにより開発者は、コントロールの Microsoft Visual Studio のプロパティ シートに表示されるプロパティを定義できます。 開発者は、コントロールがフォーム デザイナーで使用されているときに、コントロールのモデリング動作を定義することもできます。 ビルド クラスは、プロパティ シートのプロパティの値に基づいてコントロールの状態を初期化するために、ランタイム クラスによって消費されます。
+-   **X++ ビルド クラス** – ビルド クラスにより開発者は、コントロールの Microsoft Visual Studio のプロパティ シートに表示されるプロパティを定義することができます。 開発者は、コントロールがフォーム デザイナーで使用されているときに、コントロールのモデリング動作を定義することもできます。 ビルド クラスは、プロパティ シートのプロパティの値に基づいてコントロールの状態を初期化するために、ランタイム クラスによって消費されます。
 -   **X++ ランタイム クラス** – ランタイム クラスにより開発者は、拡張可能なコントロールのサーバー側のビジネス ロジックとデータへのアクセスのパターンを定義できます。 拡張可能なコントロールのビルドに特有の概念には、X++ クラスで定義される*プロパティ*と*コマンド*の 2 つがあります。 定義されている各プロパティとコマンドは、実行時に JavaScript ビュー モデルにシリアル化され、拡張可能なコントロール (HTML および JavaScript) のクライアント部分によって消費される可能性があります。 これらのプロパティとコマンドは、コントロールのサーバー側とクライアント側の間で情報を移動するための主要なチャネルです。
--   **コントロール HTML および JavaScript** – 各コントロールは、視覚化およびクライアント側の相互作用パターンの制御を定義するために HTML、JavaScript および CSS ファイルを使用します。 jQuery と共に Microsoft Dynamics HTML バインディング構文を使用することで、開発者は強力なデータ駆動型 UI を設計するために X++ で定義されているプロパティとコマンドを使用できます。
+-   **コントロール HTML および JavaScript** – 各コントロールは、視覚化およびクライアント側の相互作用パターンの制御を定義するために HTML、JavaScript および CSS ファイルを使用します。 jQuery と共に Microsoft Dynamics HTML バインディング構文を使用することで、開発者は強力なデータ駆動型 UI を設計するために X++ で定義されているプロパティとコマンドを使用することができます。
 
 拡張可能コントロール開発のすべての 3 つのコンポーネントについては、以降のセクションで詳しく説明します。
 
@@ -51,10 +50,10 @@ ms.lasthandoff: 08/09/2018
 -   HTML と CSS を使用して、拡張可能なコントロールのビューを定義する
 -   JavaScript を使用して拡張可能なコントロールのビュー モデルを定義する
 
-## <a name="setup"></a>段取り
+## <a name="setup"></a>セットアップ
 ### <a name="import-the-tutorial-project-and-transactional-data"></a>チュートリアル プロジェクトおよびトランザクション データのインポート
 
-Visual Studio を使用して、チュートリアル プロジェクトをインポートします。 チュートリアル プロジェクトには、このチュートリアルを完了するために使用する成果物が含まれています。 Visual Studio を使用して FMTutorial プロジェクトを開き、チュートリアル用のデータを読み込みます。 フリート管理チュートリアルのデータを読み込むために、**FMTDataHelper** クラスを使用します。
+Visual Studio を使用してチュートリアル プロジェクトをインポートします。 チュートリアル プロジェクトには、このチュートリアルを完了するために使用する成果物が含まれています。 Visual Studio を使用して FMTutorial プロジェクトを開き、チュートリアル用のデータを読み込みます。 フリート管理チュートリアルのデータを読み込むために、**FMTDataHelper** クラスを使用します。
 
 1. フリート管理のサンプルを <https://github.com/Microsoft/FMLab> からダウンロードし、**C:\\** に保存してから解凍します。
 2. デスクトップで、Visual Studio ショートカットをダブルクリックして、開発環境を開きます。
@@ -83,7 +82,7 @@ FMTAggregateMeasurements を使用して、Microsoft SQL Server Analysis Service
 連絡先コントロールの構築を開始する前に、現在の実装の外観を確認します。 次のセクションでは、コントロール拡張フレームワークを使用して、コントロールとフォームの視覚化を強化します。
 
 1.  ソリューション エクスプローラーで**フォーム**を展開し、**FMTClerkWorkspace** を右クリックしてから、**スタートアップ オブジェクトとして設定**をクリックします。
-2.  Ctrl+F5 キーを押して、Internet Explorer で**フリート管理係**ページを開きます。 次のスクリーン ショットに示されているように、複数の文字列および日付を含むリスト スタイルの単純なグリッドとしてこのページではデータが表示されます。 
+2.  Ctrl+F5 キーを押して、Internet Explorer で **フリート管理係** ページを開きます。 次のスクリーン ショットに示されているように、複数の文字列および日付を含むリスト スタイルの単純なグリッドとしてこのページではデータが表示されます。 
 
     [![Ext2](./media/ext2-1024x515.png)](./media/ext2.png)
 
@@ -104,7 +103,7 @@ FMTAggregateMeasurements を使用して、Microsoft SQL Server Analysis Service
 
     [![x2](./media/x2.png)](./media/x2.png)
 
-    次のスクリーン ショットは、このプロパティが Visual Studioの **プロパティ** ウィンドウにどのように表示されるかを示しています。 
+    次のスクリーン ショットは、このプロパティが Visual Studio の **プロパティ** ウィンドウにどのように表示されるかを示しています。 
 
     [![Ext3](./media/ext3.png)](./media/ext3.png)
 
@@ -420,7 +419,6 @@ HTML バインディング構文の追加機能の 1 つは、バインディン
 
 ## <a name="bidirectional-or-right-to-left-support"></a>双方向または右から左へのサポート
 拡張可能コントロールの右から左 (RTL) サポートを検証するには、HTML ドキュメントの**dir** (方向) 属性を設定するだけです。 この属性が変更されると、ブラウザーは、コントロールのレイアウトの方向を自動的に変更します。 このレイアウトと競合するすべてのスタイルがコントロールで実装されていないことを確認する必要があります。 この属性を手動で設定するのではなく、フォームにコントロールを配置して、右から左へ読み書きする言語を選択することでも検証できます。 RTL 言語を選択すると、クライアントは **dir** 属性も適切に更新します。 詳細については、HTML 標準で [ディレクトリ属性](http://www.w3.org/TR/html5/dom.html#the-dir-attribute) を参照してください。
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "開発環境でのメタデータの修正プログラムのインストール"
-description: "このトピックでは、開発環境にアプリケーション メタデータの修正プログラムをインストールする方法について説明します。"
+title: 開発環境でのメタデータの修正プログラムのインストール
+description: このトピックでは、開発環境にアプリケーション メタデータの修正プログラムをインストールする方法について説明します。
 author: RobinARH
 manager: AnnBe
 ms.date: 09/18/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 99d18081e16a98bc58dfe0684476e6c87e0e1b9c
 ms.openlocfilehash: 5614b49df7ba9ab82b20718760946ecf3f012671
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/25/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368681"
 ---
-
 # <a name="install-metadata-hotfixes-in-development-environments"></a>開発環境でのメタデータの修正プログラムのインストール
 
 [!include [banner](../includes/banner.md)]
@@ -106,14 +105,13 @@ Azure DevOps/TFS パラメーターを使用して、パッケージによって
 修正プログラムの影響を受けるすべてのモデルをビルドし、アプリケーションをテストします。
 
 ## <a name="check-pending-changes-in-to-version-control"></a>バージョン管理の保留中の変更のチェック
-この更新プログラムに関連するすべての変更で問題がなければ、Microsoft Visual Studio のチーム エクスプ ローラーを使用して、保留中の変更を Azure DevOps にチェックインします。 **コメント**フィールドにコメントを入力し、**チェック イン**をクリックします。 ソース コード リポジトリには、変更の履歴が維持されます。 **注記:** ビルドとテストの自動化にビルド環境を使用する場合、ビルドの自動化プロセスは、Azure DevOps プロジェクトにあるメタデータの修正プログラム ファイルを作成できます。 それが属しているモデルの記述子ファイルがバージョン管理にチェックインする場合にのみ、修正プログラムを構築できます。 たとえば、修正プログラムのインストール プロセスがディレクトリ モデル (このファイルは保留中の変更の一覧に表示されます) が属しているファイルを変更した場合、ディレクトリ モデル (c:\\AOSService\\PackagesLocalDirectory\\ディレクトリ\\記述子\\Directory.xml) の記述子ファイルが既に Azure DevOps プロジェクトにチェックインされていることを確認します。 チェックインされていない場合は、ソース管理エクスプローラーを使用してチェックインする前に、追加保留中の変更の一覧に追加します。 [![保留中の変更のリストに記述子ファイルを手動で追加します](./media/configureinstallhotfix-8.png)](./media/configureinstallhotfix-8.png)
+この更新プログラムに関連するすべての変更で問題がなければ、Microsoft Visual Studio のチーム エクスプローラーを使用して、保留中の変更を Azure DevOps にチェックインします。 **コメント**フィールドにコメントを入力し、**チェック イン**をクリックします。 ソース コード リポジトリには、変更の履歴が維持されます。 **注記:** ビルドとテストの自動化にビルド環境を使用する場合、ビルドの自動化プロセスは、Azure DevOps プロジェクトにあるメタデータの修正プログラム ファイルを作成できます。 それが属しているモデルの記述子ファイルがバージョン管理にチェックインする場合にのみ、修正プログラムを構築できます。 たとえば、修正プログラムのインストール プロセスがディレクトリ モデル (このファイルは保留中の変更の一覧に表示されます) が属しているファイルを変更した場合、ディレクトリ モデル (c:\\AOSService\\PackagesLocalDirectory\\ディレクトリ\\記述子\\Directory.xml) の記述子ファイルが既に Azure DevOps プロジェクトにチェックインされていることを確認します。 チェックインされていない場合は、ソース管理エクスプローラーを使用してチェックインする前に、追加保留中の変更の一覧に追加します。 [![保留中の変更のリストに記述子ファイルを手動で追加します](./media/configureinstallhotfix-8.png)](./media/configureinstallhotfix-8.png)
 
 ## <a name="synchronize-other-development-vms"></a>その他の開発 VM を同期
 この記事で記載されているように、修正プログラムが開発 VM でインストールされた後、再インストール、競合の解決、同じ Azure DevOps プロジェクトに接続されている他の開発 VMでの検証をする必要はありません。 同じ Azure DevOps プロジェクトに接続されている開発者とテスターは、ローカル VM に変更を同期させてビルドするだけで済みます。
 
 ## <a name="deploy"></a>配置
 開発環境にメタデータの修正プログラムを適用した後、競合を解決し、変更を検証したら、配置可能パッケージを作成しテスト環境またはサンドボックス環境に変更する必要があります。 ビルドとテストの自動化にビルド インスタンスを使用すると、ビルド プロセスによって配置可能なパッケージが自動的に作成されます。 詳細については、[配置可能パッケージの作成および適用](../deployment/create-apply-deployable-package.md) を参照してください。
-
 
 
 

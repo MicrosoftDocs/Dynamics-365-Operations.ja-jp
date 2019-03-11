@@ -1,13 +1,13 @@
 ---
-title: "J クラス"
-description: "文字 J で始まるシステム API クラス。"
+title: J クラス
+description: 文字 J で始まるシステム API クラス。
 author: RobinARH
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: bd7c6e1b65d72f055ec5722b9bbcbd8715bff575
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369404"
 ---
-
 # <a name="j-classes"></a>J クラス
 
 [!include [banner](../includes/banner.md)]
@@ -69,7 +68,7 @@ Job クラスを使用すると、X++ コードとメタデータの作成、読
 
 #### <a name="return-value"></a>戻り値
 
-ソース コードが含まれている場合の文字列、それ以外の場合、nullNothingnullptrunita null 参照 (Visual Basic にはなし)。
+ソース コードが含まれている文字列が存在する場合。それ以外の場合は nullNothingnullptrunita null を参照 (Visual Basic にはなし)。
 
 #### <a name="remarks"></a>備考
 
@@ -234,7 +233,6 @@ Finance and Operations アプリケーション オブジェクト ツリー (AO
 #### <a name="remarks"></a>備考
 
 ノードがメソッドである場合は、コード エディタが開きます。 ノードがドキュメンテーションの対象である場合は、ヘルプ エディタが開きます。
-
 
 
 

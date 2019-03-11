@@ -1,13 +1,13 @@
 ---
-title: "ダイアログのフォーム パターン"
-description: "このトピックでは、ダイアログ フォームのパターンについて説明します。 ダイアログ ボックスは、ユーザーが明示的にコミットまたはキャンセルできる活動またはアクションを表します。"
+title: ダイアログのフォーム パターン
+description: このトピックでは、ダイアログ フォームのパターンについて説明します。 ダイアログ ボックスは、ユーザーが明示的にコミットまたはキャンセルできる活動またはアクションを表します。
 author: jasongre
 manager: AnnBe
 ms.date: 10/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 61f737edea3af5281b6d2fd7c3c0899082782067
 ms.openlocfilehash: 71958edf24ae91e49108a141548efc2908389167
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369968"
 ---
-
 # <a name="dialog-form-pattern"></a>ダイアログのフォーム パターン
 
 [!include [banner](../includes/banner.md)]
@@ -262,4 +261,3 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 ### <a name="ax-2012-content"></a>AX 2012 コンテンツ
 
 [![DialogForm(10)](./media/dialogform10.png)](./media/dialogform10.png)
-

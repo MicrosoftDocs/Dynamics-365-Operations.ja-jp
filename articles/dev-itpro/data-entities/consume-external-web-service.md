@@ -1,13 +1,13 @@
 ---
-title: "Finance and Operations における外部 Web サービスの使用"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations で外部 Web サービスを使用する方法について説明します。"
+title: Finance and Operations における外部 Web サービスの使用
+description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations で外部 Web サービスを使用する方法について説明します。
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 11/10/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,24 +17,23 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: cf7a214fd77a55da46b6281aaf64e6883a3e3a42
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369047"
 ---
-
 # <a name="consume-external-web-services-in-finance-and-operations"></a>Finance and Operations における外部 Web サービスの使用
 
 [!include [banner](../includes/banner.md)]
 
-新しいクラス ライブラリを Microsoft Dynamics 365 for Finance and Operations に追加することにより、 Web サービスを使用することができます。 Microsoft Dynamics AX 2012 では、Microsoft Visual Studio プロジェクトを参照として追加して **Aif::CreateServiceClient** を使用することで、X++ コードから Web サービスを使用できました。 このシナリオはサポートされていますが、ステップが変更されています。 アプリケーション統合フレームワーク (AIF) は現在サポートされていません。
+Microsoft Dynamics 365 for Finance and Operations に新しいクラス ライブラリを追加することによって、Web サービスを使用できます。 Microsoft Dynamics AX 2012 では、Microsoft Visual Studio プロジェクトを参照として追加し、**Aif::CreateServiceClient** を使用することで、X++ コードから Web サービスを使用できました。 このシナリオはサポートされていますが、ステップが変更されています。 アプリケーション統合フレームワーク (AIF) は現在サポートされていません。
 
 次の手順は、X++ から外部 StockQuote サービスを使用する方法を示しています。
 
 1. Visual Studio で新しいクラス ライブラリ プロジェクトを作成し、**ExternalServiceLibrary.csproj** という名前を付けます。
-2. Visual Studio プロジェクトで、外部 Web サービスへのサービスの参照を追加します: `http://www.webservicex.net/stockquote.asmx`。
+2. Visual Studio プロジェクトで、外部 Web サービス `http://www.webservicex.net/stockquote.asmx` へのサービス参照を追加します。
 3. 新しい静的クラスを作成し、次の例に示すように StockQuote サービス操作をラップします。
 
     ```
@@ -50,7 +49,7 @@ ms.lasthandoff: 08/13/2018
     ```
 
 4. プロジェクトを構築します。 バイナリ ExternalServiceLibrary.dll が作成されます。
-5. Visual Studio で新しい Dynamics プロジェクトを作成します。
+5. Visual Studio で、新しい Dynamics プロジェクトを作成します。
 6. 参照として **ExternalServiceLibrary.dll** を追加します。
 7. X++ クラスでは、ExternalesrviceLibrary.dll で参照されていた外部 Web サービスを使用することができます。
 
@@ -60,4 +59,3 @@ ms.lasthandoff: 08/13/2018
         info(ServiceLibrary.StockQuoteClass::GetQuote("MSFT"));
     }
     ```
-

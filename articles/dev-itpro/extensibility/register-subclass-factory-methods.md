@@ -1,30 +1,29 @@
 ---
-title: "ファクトリ メソッドのサブクラスを登録"
-description: "このトピックでは、独自のバリエーションを工場に登録する方法について説明します。"
+title: ファクトリ メソッドのサブクラスを登録
+description: このトピックでは、独自のバリエーションを工場に登録する方法について説明します。
 author: MichaelFruergaardPontoppidan
 manager: AnnBe
 ms.date: 07/10/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
 ms.custom: 89563
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 5e5727319089bb30de4fbfb0e6f61596f5e9ad80
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369152"
 ---
-
 # <a name="register-subclasses-for-factory-methods"></a>ファクトリ メソッドのサブクラスを登録
 
 [!include [banner](../includes/banner.md)]
@@ -83,4 +82,3 @@ X++ では、2 つの拡張フレームワークは同じ目的で機能しま�
     {
         // Your code here.
     }
-

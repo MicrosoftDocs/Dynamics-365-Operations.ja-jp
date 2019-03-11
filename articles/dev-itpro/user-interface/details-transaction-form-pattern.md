@@ -1,13 +1,13 @@
 ---
-title: "詳細トランザクション フォーム パターン"
-description: "このトピックでは、詳細トランザクション フォームのパターンについて説明します。 このパターンを使用するフォームには、ユーザーが切り替えることができる2 つの詳細ビューがあります - ヘッダー ビューおよび明細行ビュー"
+title: 詳細トランザクション フォーム パターン
+description: このトピックでは、詳細トランザクション フォームのパターンについて説明します。 このパターンを使用するフォームには、ユーザーが切り替えることができる2 つの詳細ビューがあります - ヘッダー ビューおよび明細行ビュー
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f4ebe8877d91cf9552f7fc80bb999da47503aeb4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 05f114af4c225c6d5428b4f83c94ef28ac46c187
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369951"
 ---
-
 # <a name="details-transaction-form-pattern"></a>詳細トランザクション フォーム パターン
 
 [!include [banner](../includes/banner.md)]
@@ -137,7 +136,7 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 ## <a name="ux-guidelines"></a>UX ガイドライン
 検証チェックリストには、フォームが UX ガイドラインに準拠しているかどうかを手動で確認する手順が示されています。 このチェックリストには、開発環境を通じて自動的に実施されるガイドラインは含まれていません。 ブラウザーでフォームを開いて、これらの手順を確認します。 **標準フォーム ガイドライン:**
 
--   標準フォーム ガイドラインは、Microsoft Dynamics AX の[全般的なガイドライン](general-form-guidelines.md) ドキュメントに統合されました。
+-   標準フォーム ガイドラインは、Microsoft Dynamics AX [全般的なガイドライン](general-form-guidelines.md) ドキュメントに統合されました。
 
 **詳細トランザクション ガイドライン**
 
@@ -193,9 +192,9 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 
 ### <a name="ax-2012-content"></a>AX 2012 コンテンツ
 
-#### <a name="ax-2012-links"></a>AX 2012 のリンク
+#### <a name="ax-2012-links"></a>AX 2012 リンク
 
--   [ユーザー エクスペリエンス ガイドライン明細を含む MSDN 詳細フォーム \[AX 2012\]](http://msdn.microsoft.com/EN-US/library/gg886601.aspx)
+-   [ユーザー エクスペリエンス ガイドラインの詳細を含む MSDN 詳細フォーム \[AX 2012\]](http://msdn.microsoft.com/EN-US/library/gg886601.aspx)
 -   [MSDN 詳細フォーム \[AX 2012\]](http://msdn.microsoft.com/EN-US/library/hh397318.aspx)
 
 #### <a name="ax-2012-example"></a>AX 2012 の例
@@ -211,7 +210,6 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 ##### <a name="grid-view"></a>グリッド ビュー
 
 [![AX 2012 の例: グリッド ビュー](./media/detailstransaction9-1024x727.png)](./media/detailstransaction9.png)
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "フリート管理のサンプル アプリケーションのエンド ツー エンドのシナリオ"
-description: "このチュートリアルでは、フリート管理のサンプル アプリケーションがサポートするように設計されたエンド ツー エンドのシナリオを説明します。"
+title: フリート管理のサンプル アプリケーションのエンド ツー エンドのシナリオ
+description: このチュートリアルでは、フリート管理のサンプル アプリケーションがサポートするように設計されたエンド ツー エンドのシナリオを説明します。
 author: RobinARH
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 75ab30b185ecc6774b3f1b77ff0ad6f9479af4f0
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368577"
 ---
-
 # <a name="end-to-end-scenario-for-the-fleet-management-sample-application"></a>フリート管理のサンプル アプリケーションのエンド ツー エンドのシナリオ
 
 [!include [banner](../includes/banner.md)]
@@ -212,7 +211,6 @@ Web クライアントを使用すると、適切な権限を持つユーザー�
 7.  上記の手順でセキュリティ ロールを割り当てたユーザーの資格情報を使用してログインします。
 8.  ダッシュボードで、このユーザーはセキュリティ ロールに関連する項目のみ確認できることに注意してください。 システム管理者が確認できる項目は非表示になります。
 9.  セッションをサインアウトするには、**サインアウト**をクリックします。
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "Q クラス"
-description: "文字 Q で始まるシステム API クラス。"
+title: Q クラス
+description: 文字 Q で始まるシステム API クラス。
 author: RobinARH
 manager: AnnBe
 ms.date: 11/07/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 478236c6d1436ee428768ca7a596cfaf4d345dcb
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369996"
 ---
-
 # <a name="q-classes"></a>Q クラス
 
 [!include [banner](../includes/banner.md)]
@@ -3727,7 +3726,7 @@ obj
 
 #### <a name="remarks"></a>備考
 
-Object :: equal メソッドの既定の実装では、照会の等価性のみをサポートします。 ただし、派生クラスは、値の等価性をサポートするために Object::equal メソッドを上書きできます。
+Object::equal メソッドの既定の実装では、照会の等価性のみをサポートします。 ただし、派生クラスは、値の等価性をサポートするために Object::equal メソッドをオーバーライドできます。
 
 ### <a name="method-form"></a>メソッド form
 
@@ -4282,7 +4281,6 @@ sourceCursor
 <!-- -->
 
 isForward  
-
 
 
 

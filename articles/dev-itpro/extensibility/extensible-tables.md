@@ -1,30 +1,29 @@
 ---
-title: "拡張可能なテーブルの書き込み"
-description: "このトピックでは、拡張可能テーブルを書き込む方法について説明します。"
+title: 拡張可能なテーブルの書き込み
+description: このトピックでは、拡張可能テーブルを書き込む方法について説明します。
 author: MichaelFruergaardPontoppidan
 manager: AnnBe
 ms.date: 09/09/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: kfend
 ms.search.scope: Operations
 ms.custom: 268724
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.translationtype: HT
-ms.sourcegitcommit: d8a0183faf93ea87c39e8d3ed3b4b454ebb16a3d
 ms.openlocfilehash: 358ccdda7c16056afdcab11804bd3e7485d35b7f
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/10/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369351"
 ---
-
 # <a name="write-extensible-tables"></a>拡張可能なテーブルの書き込み
 [!include [banner](../includes/banner.md)]
 
@@ -44,4 +43,3 @@ ms.lasthandoff: 09/10/2018
 
 ## <a name="field-groups"></a>フィールド グループ
 必ず、関連するフィールドをグループ化するため、フォームおよびレポートを構築するために、フィールド グループを使用します。 一貫してこの方法を使用することで、フィールド グループを拡張することによって、追加フィールドをフォームやレポートに表示する拡張を有効にします。
-

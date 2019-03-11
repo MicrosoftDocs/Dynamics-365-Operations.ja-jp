@@ -1,13 +1,13 @@
 ---
-title: "Power BI 統合によって利用できる機能とサービス"
-description: "このトピックでは、Microsoft Power BI に含まれる機能およびサービスを使用して、データからのインサイトにアクセス、参照、取得する方法を説明します。"
+title: Power BI 統合を通じて利用できる機能やサービス
+description: このトピックでは、Microsoft Power BI に含まれる機能およびサービスを使用して、データからのインサイトにアクセス、参照、取得する方法を説明します。
 author: TJVass
 manager: AnnBe
 ms.date: 02/09/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: PowerBIConfiguration
 audience: IT Pro
 ms.reviewer: sericks
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: f0f4b0e4e1604fe746ac58b2c5f8a2e9e4287043
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368424"
 ---
-
-# <a name="features-and-services-available-through-power-bi-integration"></a>Power BI 統合によって利用できる機能とサービス
+# <a name="features-and-services-available-through-power-bi-integration"></a>Power BI 統合を通じて利用できる機能やサービス
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Power BI は、データを分析して情報を共有できる一連のビジネス分析ツールです。 Power BI ツールを使用することにより、データを検証し豊富なレポートおよびダッシュボードをすばやく作成できます。 ユーザーおよび同僚は任意のデバイス上で対話的にレポートを使用することができます。 Microsoft Dynamics 365 for Finance and Operations は、データ検索に Power BI を使用します。
+Microsoft Power BI は、データを分析して情報を共有できる一連のビジネス分析ツールです。 Power BI ツールを使用することにより、データを検証し豊富なレポートおよびダッシュボードをすばやく作成できます。 ユーザーおよび同僚は任意のデバイス上で対話的にレポートを使用することができます。 Microsoft Dynamics 365 for Finance and Operations では、データ検索に Power BI が使用されます。
 
 ## <a name="data-exploration-through-power-bi"></a>Power BI を使用しデータを検索
 Finance and Operations にはさまざまなタイプのレポートがあります。
@@ -51,10 +50,10 @@ Power BI では、Microsoft SQL Server のメモリ内データベース テク�
 
 Finance and Operations で概念をレポートする詳細ディスカッションについては、[情報へのアクセスとレポート](information-access-reporting.md) を参照してください。
 
-## <a name="ready-made-power-bi-content"></a>既存の Power BI コンテンツ
+## <a name="ready-made-power-bi-content"></a>既製の Power BI コンテンツ
 既製の Power BI レポートをすぐに使用することができます。 2 種類の Power BI コンテンツを利用できます。
 
-- Microsoft Dynamics Lifecycle Service (LCS) で使用可能な Power BI コンテンツ
+- Microsoft Dynamics Lifecycle サービス (LCS) で利用できる Power BI コンテンツ
 - PowerBI.com マーケットプレースで配布される Power BI コンテンツ パック
 
 バージョンによっては、両方のタイプのコンテンツのいずれかを使用できます。
@@ -67,7 +66,7 @@ LCS は、Finance and Operations の環境を管理できるサービスです�
 ### <a name="power-bi-content-packs-that-are-distributed-in-the-powerbicom-marketplace"></a>PowerBI.com マーケットプレースで配布される Power BI コンテンツ パック
 PowerBI.com マーケットプレースには Power BI コンテンツ パックがいくつかあります。 これらのコンテンツ パックは通知があるまで引き続きサポートされますが、コンテンツ パックの将来の投資はエンティティ格納に基づき、またコンテンツは LCS 経由でリリースされます。
 
-コンテンツの詳細については、[Power BI コンテンツ](power-bi-home-page.md) を参照してください。
+コンテンツの詳細については、「[Power BI コンテンツ](power-bi-home-page.md)」を参照してください。
 
 ## <a name="extending-creating-and-distributing-power-bi-reports"></a>Power BI レポートの拡張、作成、配布
 最初のステップとして、既製の Power BI コンテンツを使用する必要があります。 既製のレポートを変更したり、PowerBI.com に組み込まれている機能を使用して、それらを拡張することができます。 既製のレポートを変更するだけでなく、Power BI desktop などの Power BI オーサリング ツールを使用して拡張することができます。 新しいレポートを作成することもできます。 いくつかの方法を使用して、新しい Power BI レポートを作成することができます。
@@ -77,11 +76,11 @@ PowerBI.com マーケットプレースには Power BI コンテンツ パック
 
 エンティティ格納を使用して作成されるレポートは、DirectQuery テクノロジを利用します。 この技術により、大量のデータに対するレポートを作成できます。 DirectQuery テクノロジを使用して作成されるレポートは、PowerBI.com サービスにデータをキャッシュしません。 代わりに、データは常に Finance and Operations に保存されます。
 
-エンティティ格納と Power BI 統合の概要については、[エンティティ格納と Power BI の統合の概要](power-bi-integration-entity-store.md) を参照してください。
+エンティティ格納と Power BI 統合の概要については、「[エンティティ格納と Power BI の統合](power-bi-integration-entity-store.md)」を参照してください。
 
-Microsoft Dynamics AX 2012 をアップグレードする場合は、エンティティ店舗を使用する集計測定にキューブをアップグレードすることができます。 エンティティ格納を使用して、Power BI レポートを作成することができます。 詳細については、[アップグレードした Dynamics AX 2012 R3 販売キューブをエンティティの店舗へ移行する](../migration-upgrade/migrate-upgraded-cube-entity-store.md) を参照してください。
+Microsoft Dynamics AX 2012 をアップグレードする場合は、エンティティ格納を使用する集計測定にキューブをアップグレードすることができます。 エンティティ格納を使用して、Power BI レポートを作成することができます。 詳細については、「[アップグレードした Dynamics AX 2012 R3 販売キューブをエンティティ格納へ移行する](../migration-upgrade/migrate-upgraded-cube-entity-store.md)」を参照してください。
 
-### <a name="creating-power-bi-reports-by-using-excel"></a>Excel を使用して Power BI レポートを作成しています
+### <a name="creating-power-bi-reports-by-using-excel"></a>Exel を使用して Power BI レポートを作成する
 Power BI desktop オーサリング ツールの使用に加えて、Excel に採用されている「Power ツール」を使用して視覚エフェクトを作成できます。 組織には、既に Excel を毎日使用している多くのユーザーが存在する可能性があります。 クイック「1 回限り」レポートでは、Excel はこれらのユーザーに対して最適なオプションである可能性があります。
 
 Excel を使用できるシナリオはいくつかあります。
@@ -97,7 +96,7 @@ PowerBI.com は、Microsoft が提供するサービスです。 これにより
 
 レポートをアップロードした後、ユーザーは Web 上で (自宅またはオフィスでインターネットに接続されている場合) またはデバイス上のアプリを使用して表示、調整、検索することができます。
 
-Power BI の概念の詳細については、[Power BI ドキュメント](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-how-should-i-share-my-dashboard/) を参照してください。
+Power BI の概念の詳細については、「[Power BI ドキュメント](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-how-should-i-share-my-dashboard/)」を参照してください。
 
 ## <a name="pinning-power-bi-content-to-the-finance-and-operations-client"></a>Finance and Operations クライアントに Power BI コンテンツを固定
 PowerBI.com は、組織または業務単位のレポートおよびダッシュ ボード ソリューションとして独自に使用できます。 ただし、ユーザーは自分の PowerBI.com アカウントから Finance and Operations のワークスペースにタイルおよびレポートをピン留めすることもできます。 Dynamics 365 の Power BI コンテンツは、事業運営に関連するコンテキスト インサイトを提供します。
@@ -113,7 +112,6 @@ Power BI コンテンツを固定する前に、Dynamics 365 環境で Power BI 
 Dynamics 365 クライアントに固定されている Power BI タイルは、わかりやすいビジュアルの概要を提供します。 ユーザーは、対話型分析 PowerBI.com を開くこともできます。 詳細については、「[ワークスペースの Power BI 統合のコンフィギュレーション](configure-power-bi-integration.md)」を参照してください。
 
 ### <a name="pinning-powerbicom-reports-to-workspaces"></a>PowerBI.com レポートをワークスペースにピン留めする
-パワー ユーザー、ビジネス アナリスト、または開発者は、 Power BI デスクトップを使用してエンティティ格納を使用するレポートを作成できます。 これらのレポートは豊富で対話型であるだけではなく、ユーザーは他のユーザーに依存することがなく変更することができます。
+パワー ユーザー、ビジネス アナリスト、または開発者は、Power BI デスクトップを使用してエンティティ格納を使用するレポートを作成できます。 これらのレポートは豊富で対話型であるだけではなく、ユーザーは他のユーザーに依存することがなく変更することができます。
 
-PowerBI.com 内のレポートは強力かつ独自での対話型ではありますが、ワークスペースに固定することもできます。 ユーザーは自身で、レポートをワークスペースにピン留めできます。 ワークスペースにレポートをピン留めする方法の詳細については、[Power BI レポートをワークスペースにピン留めする](pin-power-bi-reports.md) を参照してください。
-
+PowerBI.com 内のレポートは強力かつ独自での対話型ではありますが、ワークスペースに固定することもできます。 ユーザーは自身で、レポートをワークスペースにピン留めできます。 ワークスペースにレポートをピン留めする方法の詳細については、「[Power BI レポートをワークスペースにピン留めする](pin-power-bi-reports.md)」を参照してください。

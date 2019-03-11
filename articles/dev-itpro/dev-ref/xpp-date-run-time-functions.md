@@ -1,13 +1,13 @@
 ---
-title: "X++ 日付ランタイム関数"
-description: "このトピックでは、日付ランタイム関数について説明します。"
+title: X++ 日付ランタイム関数
+description: このトピックでは、日付ランタイム関数について説明します。
 author: RobinARH
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 3ace3f85d1460241d95deabc6946fb1a8ebe747b
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369155"
 ---
-
 # <a name="x-date-runtime-functions"></a>X++ 日付ランタイム関数
 
 [!include [banner](../includes/banner.md)]
@@ -191,7 +190,7 @@ ms.lasthandoff: 08/09/2018
 
 ### <a name="remarks"></a>備考
 
-データが無効である場合は、このメソッドは **0** (zero, 1/1/1900) 日付を返します。 Dynamics AX 7.0 (2016 年 2 月) から、その年のショートカット値 1975 の 75 などはサポートされていません。 その年のショートカット値を指定すると、1900 年 1 月 1 日の日付が返されます。
+データが無効である場合は、このメソッドは **0** (zero, 1/1/1900) 日付を返します。 Dynamics AX 7.0 (2016 年 2 月) から、1975 年の 75 のような、その年のショートカット値はサポートされていません。 その年のショートカット値を指定すると、1900 年 1 月 1 日の日付が返されます。
 
 ### <a name="example"></a>例
 
@@ -600,7 +599,6 @@ ISO 8601 仕様に従って、日付に該当する年の週を計算します�
 ### <a name="remarks"></a>備考
 
     year(0221998); //Returns the value 1998.
-
 
 
 

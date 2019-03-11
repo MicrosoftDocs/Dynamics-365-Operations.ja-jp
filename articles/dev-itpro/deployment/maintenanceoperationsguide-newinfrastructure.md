@@ -1,13 +1,13 @@
 ---
-title: "配置の保守操作"
-description: "このトピックでは、セルフ サービス配置エクスペリエンスを使用して配置された環境の保守操作を実行する方法について説明します。"
+title: 配置の保守操作
+description: このトピックでは、セルフ サービス配置エクスペリエンスを使用して配置された環境の保守操作を実行する方法について説明します。
 author: manado
 manager: AnnBe
 ms.date: 12/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -16,20 +16,19 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
-ms.translationtype: HT
-ms.sourcegitcommit: 96290e93b20af32d7103317d8fa8f041e599df96
 ms.openlocfilehash: 55762be3e3481f1daa71c852a40657e0c8b05c1e
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/19/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368625"
 ---
-
 # <a name="maintenance-operations-for-deployments"></a>配置の保守操作
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/limited-availability.md)]
 
-このドキュメントでは、[セルフ サービス配置](infrastructure-stack.md)エクスペリエンスを使用して配置された Dynamics 365 for Finance and Operations 環境の保守操作を実行する方法について説明します。
+このドキュメントでは、「[セルフ サービス配置](infrastructure-stack.md)」エクスペリエンスを使用して配置された Dynamics 365 for Finance and Operations 環境の保守操作を実行する方法について説明します。
 
 ## <a name="restart-services"></a>サービスをリセット
 サービスの再開機能を使用すると、Microsoft サブスクリプションで展開された階層 2、階層 3、階層 4、または階層 5 の標準承認テスト (サンドボックス) 環境に関連付けられた個々のサービスを再開することができます。
@@ -72,5 +71,4 @@ Finance and Operations には、[メンテナンス モード](../sysadmin/maint
 >- 要求を送信するとすぐに**自動承認**されます。 数分以内に LCS 環境の詳細ページでデータベース アクセスの資格情報を確認できるようになります。 
 >- 資格情報は 8 時間有効であり、その期間の後に有効期限が切れることに注意してください。 8 時間の後、アクセス権が有効期限切れになり、もう一度アクセス権を要求する必要があります。 
 > 上記の手順を実行する方法の詳細については、この機能が 1 月に Lifecycle Services から利用可能になるとすぐに公開されます。
-
 

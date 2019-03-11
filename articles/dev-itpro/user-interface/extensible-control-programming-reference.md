@@ -1,13 +1,13 @@
 ---
-title: "拡張可能なコントロールのプログラミング リファレンス"
-description: "このトピックでは、拡張可能なコントロール プログラミングの参考資料を提供します。"
+title: 拡張可能なコントロールのプログラミング リファレンス
+description: このトピックでは、拡張可能なコントロール プログラミングの参考資料を提供します。
 author: TLeforMicrosoft
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 424bbcdf3e26ea3409b03894f745c5cecc4c1c70
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: b9ff1b76f428d7f23186175f0ccd9599a53ad123
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369863"
 ---
-
 # <a name="extensible-control-programming-reference"></a>拡張可能なコントロールのプログラミング リファレンス
 
 [!include [banner](../includes/banner.md)]
@@ -61,7 +60,7 @@ ms.lasthandoff: 04/20/2018
 
 -   **テンプレート ID**: テンプレートの ID を指定する文字列。 テンプレート ID は JavaScript クラス名であり、コントロールの HTML 要素 ID です。 慣例として、TemplateID はコントロールのランタイム クラスのクラス名と一致します。
 -   **リソース バンドル パス**: リソース バンドルへのパスを指定する文字列。 リソース バンドル パスは、主要な HTM ファイルが置かれている Web パスです。 実行時に、クライアント フレームワークはリソース バンドル パスで指定された HTM ファイルを読み込みます。 実行時に、クライアント フレームワークは指定されたテンプレート ID と一致する ID を持つ HTML 要素のリソース バンドルを検索します。 実行時に、クライアント フレームワークはテンプレート ID で指定された JavaScript クラスをインスタンス化します。 このパスは Web ディレクトリのルートからの相対パスです。
--   **ビルド クラス名**: ビルド クラスの名前を指定する文字列。 ビルド クラス名は、デザイン時の動作を決定する X++ クラスです。 デザイン時に、Visual Studio のフレームワークはこの属性を反映しデザイナー クラスとして指定された X++ クラスを読み込みます。 実行時に、X++ フレームワークは指定した X++ クラスを applyBuild() の super のビルド クラスとしてインスタンス化します。
+-   **ビルド クラス名**: ビルド クラスの名前を指定する文字列。 ビルド クラス名は、デザイン時の動作を決定する X++ クラスです。 デザイン時に、Visual Studio のフレームワークはこの属性を反映し、デザイナー クラスとして指定された X++ クラスを読み込みます。 実行時に、X++ フレームワークは指定した X++ クラスを applyBuild() の super のビルド クラスとしてインスタンス化します。
 
 次の例は、"MyControl" という名前のコントロールの標準的なクラスと属性の宣言を示しています。
 
@@ -257,7 +256,7 @@ FormDesignControlAttribute は、フォームのデザイン ノードを右ク�
 -   \[FormDesignPropertyFieldGroupAttribute(&lt;データ ソース名&gt;)\] - 指定されたデータ ソースのフィールド グループのリストを表示します。
 -   \[FormDesignPropertyExtendsClassAttribute (&lt;クラス名&gt;)\] - 指定されたクラスを拡張するクラスのリストを表示します。
 -   \[FormDesignPropertyImplementsAttribute (&lt;インターフェイス名&gt;)\] - 指定されたインターフェイスを実装するクラスのリストを表示します。
--   \[FormDesignPropertyReferenceAttribute (&lt;FormDesignPropertyReferenceType::&lt;タイプ&gt;)\] - 特定のタイプで指定された AOT コンポーネントのリストを表示します。 サポートされている種類は次のとおりです。
+-   \[FormDesignPropertyReferenceAttribute(&lt;FormDesignPropertyReferenceType::&lt;type&gt;\]) - これは、特定のタイプで指定された AOT コンポーネントのリストを表示します。 サポートされている種類は次のとおりです。
     -   テーブル
     -   表示
     -   マップ
@@ -331,7 +330,7 @@ FormDesignControlAttribute は、フォームのデザイン ノードを右ク�
         }
     }
 
-データ フィールドとデータ メソッドの両方を FormBindingUtil :: initBinding に渡すと、データ フィールド バインディングはデータ メソッド バインディングをオーバーライドします。
+データ フィールドとデータ メソッドの両方を FormBindingUtil::initBinding に渡すと、データ フィールド バインディングはデータ メソッド バインディングを上書きします。
 
 ## <a name="html"></a>HTML
 ## <a name="html-framework-attributes"></a>HTML: フレームワーク属性
@@ -1102,4 +1101,3 @@ console.log($dyn.label("greeting"));
 
 ### <a name="control-instantiation"></a>インスタンス化の制御
 [![ExtensibilityProcess](./media/extensibilityprocess-951x1024.png)](./media/extensibilityprocess.png)
-

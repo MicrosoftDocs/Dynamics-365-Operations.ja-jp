@@ -1,13 +1,13 @@
 ---
-title: "要素デザイナー"
-description: "この記事では、要素デザイナーを確認し、それらを使用する方法について説明します。"
+title: 要素デザイナー
+description: この記事では、要素デザイナーを確認し、それらを使用する方法について説明します。
 author: RobinARH
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 929600beb1638ccb210594d41d4f7bd22d37802d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 4c24b416d82940ac8832d88c7543583c73b5ca56
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368387"
 ---
-
 # <a name="element-designers"></a>要素デザイナー
 
 [!include [banner](../includes/banner.md)]
@@ -41,7 +40,7 @@ ms.lasthandoff: 04/20/2018
 
 ### <a name="node-properties"></a>ノードのプロパティ
 
-要素デザイナーで個々のノードを選択すると、Visual Studio の **プロパティ** ウィンドウに、そのノードのさまざまなプロパティが表示されます。 要素の特性のほとんどは、これらのプロパティによって制御されます。 たとえば、次の図は、FMCustomer テーブルの要素デザイナーを表示します。 最上位ノードが選択されていることを確認します。 
+要素デザイナーで個々のノードを選択すると、Visual Studio の**プロパティ** ウィンドウに、そのノードのさまざまなプロパティが表示されます。 要素の特性のほとんどは、これらのプロパティによって制御されます。 たとえば、次の図は、FMCustomer テーブルの要素デザイナーを表示します。 最上位ノードが選択されていることを確認します。 
 
 [![18\_DevoToolsConcept](./media/18_devotoolsconcept.png)](./media/18_devotoolsconcept.png)
 
@@ -64,7 +63,7 @@ ms.lasthandoff: 04/20/2018
 
 [![20\_DevoToolsConcept](./media/20_devotoolsconcept.png)](./media/20_devotoolsconcept.png) 
 
-ノードを削除するには、新しいノードを右クリックし、**削除** をクリックします。 ノードのために他のアクションを実行することもできます。 ノードの名前を変更したり、ノードを複製したり、ノードの一覧で、上下に移動させたりします。
+ノードを削除するには、そのノードをクリックしてから、**削除**をクリックします。 ノードのために他のアクションを実行することもできます。 ノードの名前を変更したり、ノードを複製したり、ノードの一覧で、上下に移動させたりします。
 
 ### <a name="searching-element-nodes"></a>要素のノードを検索中
 
@@ -84,7 +83,6 @@ ms.lasthandoff: 04/20/2018
 要素デザイナのノード値は、多くの場合、別の要素への参照です。 たとえば、テーブル要素内のフィールド ノードは、通常拡張データ型 (EDT) 要素に基づいています。 要素デザイナーでノードを右クリックするとき、**&lt;要素&gt;に移動** コマンドをクリックして、関連要素に移動します。 たとえば、FMVehicle テーブルのフィールドの一覧で **FuelType** ノードを右クリックするとき、**基本列挙 FMFuelType に移動する**をクリックして、フィールドを定義するために使用される基本列挙を表示します。 
 
 [![22\_DevoToolsConcept](./media/22_devotoolsconcept.png)](./media/22_devotoolsconcept.png)
-
 
 
 

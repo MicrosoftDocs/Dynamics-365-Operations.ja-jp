@@ -1,13 +1,13 @@
 ---
-title: "ワークフロー メッセージ処理バッチ ジョブの重要なものとしてのコンフィギュレーション"
-description: "ワークフロー メッセージ処理バッチ ジョブの重要なものとしてのコンフィギュレーション"
+title: ワークフロー メッセージ処理バッチ ジョブの重要なものとしてのコンフィギュレーション
+description: ワークフロー メッセージ処理バッチ ジョブの重要なものとしてのコンフィギュレーション
 author: aneesmsft
 manager: AnnBe
 ms.date: 05/11/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BatchJob
 audience: IT Pro
 ms.reviewer: sericks
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2017-05-19
 ms.dyn365.ops.version: Platform update 6
+ms.openlocfilehash: 98b89f4a11fc0c791358cbec8e617bb8417c11d3
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 9245fadaca31eb8312b69ff5b3cd2f30b0c648d0
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369038"
 ---
-
 # <a name="configure-the-workflow-message-processing-batch-job-as-critical"></a>ワークフロー メッセージ処理バッチ ジョブの重要なものとしてのコンフィギュレーション
 
 [!include [banner](../includes/banner.md)]
@@ -41,4 +40,3 @@ ms.lasthandoff: 04/20/2018
 4. アクション ウィンドウの**編集**をクリックします。
 5. **重要なジョブ** チェック ボックスをオンにします。
 6. アクション ウィンドウの**保存**をクリックします。
-

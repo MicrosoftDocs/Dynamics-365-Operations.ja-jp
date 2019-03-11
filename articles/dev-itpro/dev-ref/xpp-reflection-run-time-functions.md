@@ -1,13 +1,13 @@
 ---
-title: "X++ リフレクション ランタイム関数"
-description: "このトピックでは、リフレクション ランタイム関数について説明します。"
+title: X++ リフレクション ランタイム関数
+description: このトピックでは、リフレクション ランタイム関数について説明します。
 author: RobinARH
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
 ms.openlocfilehash: a247cfecb3fe56dc096cd437a8e96d8989b5ee0f
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/01/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369460"
 ---
-
 # <a name="x-reflection-runtime-functions"></a>X++ リフレクション ランタイム関数
 
 [!include [banner](../includes/banner.md)]
@@ -437,7 +436,6 @@ X++ 配列内で領域が割り当てられているインデックス要素の�
     {
             // More code.
     }
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "API、クラス、およびテーブルの参照"
-description: "このトピックでは、Visual Studio および Microsoft のドキュメント サイトで API ドキュメントを見つける場所について説明します。"
+title: API、クラス、およびテーブルの参照
+description: このトピックでは、Visual Studio および Microsoft のドキュメント サイトで API ドキュメントを見つける場所について説明します。
 author: RobinARH
 manager: AnnBe
 ms.date: 12/12/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: ec3d156aefd1c725381858cc9667273983238f1e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: d5693aa38c219743a5054c5782b7d2d9fe39205d
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369929"
 ---
-
 # <a name="api-class-and-table-reference"></a>API、クラス、およびテーブルの参照
 
 [!include [banner](../includes/banner.md)]
@@ -109,7 +108,6 @@ Microsoft docs サイトで使用可能なアプリケーション エクスプ�
 -   [V クラス](v-classes.md)
 -   [W クラス](w-classes.md)
 -   [X クラス](x-classes.md)
-
 
 
 

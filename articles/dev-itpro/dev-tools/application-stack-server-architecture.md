@@ -1,13 +1,13 @@
 ---
-title: "アプリケーション スタックおよびサーバーのアーキテクチャ"
-description: "アプリケーション スタックは、アプリケーション プラットフォーム、アプリケーション基準、およびアプリケーション スイートという、3 つの別個のモデルに分割されます。"
+title: アプリケーション スタックおよびサーバーのアーキテクチャ
+description: アプリケーション スタックは、アプリケーション プラットフォーム、アプリケーション基準、およびアプリケーション スイートという、3 つの別個のモデルに分割されます。
 author: kfend
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 7055a7ffc60b2fae50a610c2654ba62d93fcef41
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 0a08faea767c730e2a8a06371baef6b1e35cdb50
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368487"
 ---
-
 # <a name="application-stack-and-server-architecture"></a>アプリケーション スタックおよびサーバーのアーキテクチャ
 
 [!include [banner](../includes/banner.md)]
@@ -63,7 +62,7 @@ Microsoft Dynamics AX 2012 は、ユーザーに付与されるアクセス許�
 
 -   **Lifecycle Services (LCS)** – LCS は、広範なライフサイクル関連の機能を可能にするマルチ テナントの共有サービスです。 このリリースに固有の機能には、ソフトウェア開発、顧客プロビジョニング、サービス レベル アグリーメント (SLA) の監視、およびレポート機能が含まれます。
 -   **Finance and Operations** – VM インスタンスは、LCS によって Azure サブスクリプションに配置されます。 デモ、開発/テスト、高可用性の運用トポロジなど、さまざまなトポロジが利用できます。
--   **Microsoft サービスを共有** – Finance and Operations は様々な Microsoft のサービスを使用して Finance and Operations、Microsoft Office 365 および他のオンライン サービスと共に定期管理及び請求関係を顧客が一度のサインインで管理できる「One Microsoft」ソリューションを有効にします。
+-   **Microsoft サービスを共有** – Finance and Operations は様々な Microsoft のサービスを使用して Finance and Operations、Microsoft Office 365 および他のオンライン サービスと共に定期管理及び請求関係を、顧客が一度のサインインで管理できる「One Microsoft」ソリューションを有効にします。
 
 Microsoft Azure ストレージ、ネットワーク、監視、SQL Azure など、Azure プラットフォームの多くの機能はいくつかの名前に使用されます。  共有サービスが工程に移り、参加者の環境のアプリケーション ライフサイクルが調整されます。 Azure の機能と LCS があいまって、堅牢なクラウド サービスを提供します。
 
@@ -71,7 +70,6 @@ Microsoft Azure ストレージ、ネットワーク、監視、SQL Azure など
 開発環境のアーキテクチャは、クラウド インスタンスのアーキテクチャに似ています。 また、Visual Studio 開発ツールとその他のコンポーネントで構成されるソフトウェア開発キット (SDK) も含まれます。 Team Foundation Server または Visual Studio Online を介したソース管理により、複数開発者のシナリオが可能になります。このシナリオでは、各開発者が別個の開発環境を使用できます。 配置パッケージは、開発環境でコンパイルおよび生成し、LCS を使用してクラウド インスタンスに展開できます。 次の図は、主要なコンポーネントが開発環境でどのようにやり取りするかを示しています。
 
 [![CloudEnvironmentTechConcepts](./media/cloudenvironmenttechconcepts.png)](./media/cloudenvironmenttechconcepts.png)
-
 
 
 

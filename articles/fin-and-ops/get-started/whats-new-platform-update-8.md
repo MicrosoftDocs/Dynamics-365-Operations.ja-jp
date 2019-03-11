@@ -1,43 +1,42 @@
 ---
-title: "Dynamics 365 for Finance and Operations、Enterprise edition プラットフォーム更新プログラム 8 (2017 年6 月) の新機能および変更された機能"
-description: "このトピックでは、Dynamics 365 for Finance and Operations、Enterprise Edition プラットフォーム更新プログラム 8 における新機能または変更された機能について説明します。 このバージョンは 2017 年 6 月にリリースされました。"
+title: Dynamics 365 for Finance and Operations Enterprise Edition プラットフォーム更新プログラム 8 (2017 年 6 月) の新機能および変更された機能
+description: このトピックでは、Dynamics 365 for Finance and Operations Enterprise Edition プラットフォーム更新プログラム 8 の新機能または変更された機能について説明します。 このバージョンは 2017 年 6 月にリリースされました。
 author: tonyafehr
 manager: AnnBe
 ms.date: 06/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
-ms.custom: 
+ms.custom: ''
 ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 4dd697d86f4175c48a8b6460f1ad516bb06a14e5
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368789"
 ---
-
-# <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-enterprise-edition-platform-update-8-june-2017"></a>Dynamics 365 for Finance and Operations、Enterprise edition プラットフォーム更新プログラム 8 (2017 年6 月) の新機能および変更された機能
+# <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-enterprise-edition-platform-update-8-june-2017"></a>Dynamics 365 for Finance and Operations Enterprise Edition プラットフォーム更新プログラム 8 (2017 年 6 月) の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Dynamics 365 for Finance and Operations、Enterprise Edition プラットフォーム更新プログラム 8 における新機能または変更された機能について説明します。 このバージョンは 2017 年 6 月にリリースされ、ビルド番号は 7.0.4565.16212 です。
+このトピックでは、Dynamics 365 for Finance and Operations Enterprise Edition プラットフォーム更新プログラム 8 の新機能または変更された機能について説明します。 このバージョンは 2017 年 6 月にリリースされ、ビルド番号は 7.0.4565.16212 です。
 
 > [!NOTE]
-> 現在、Dynamics 365 for Operations (オンプレミス) の名前は変更されています。 通信およびライセンス ガイド全体で参照される Dynamics 365 for Operations (オンプレミス型) が表示されます。 製品を展開する際に表示される製品名は、Dynamics 365 for Finance and Operations、Enterprise エディションです。 これらの名前はどちらも同じ製品を指しています。
+> 現在、Dynamics 365 for Operations (オンプレミス) の名前は変更されています。 通信およびライセンス ガイド全体で参照される Dynamics 365 for Operations (オンプレミス) が表示されます。 製品を展開する際に表示される製品名は、Dynamics 365 for Finance and Operations Enterprise Edition です。 これらの名前はどちらも同じ製品を指しています。
 
 新機能についての補足情報の検索および開発中の新機能に関する詳細については、[Dynamics 365 ロードマップ](https://roadmap.dynamics.com/) を参照してください。 プラットフォーム更新プログラム 8 に含まれるバグ修正の詳細については、Lifecycle Services (LCS) にログインし、この [サポート技術情報記事](https://go.microsoft.com/fwlink/?linkid=852224) を参照してください。
 
-## <a name="introducing-dynamics-365-for-finance-and-operations-enterprise-edition"></a>Dynamics 365 for Finance and Operations, Enterprise edition の導入
+## <a name="introducing-dynamics-365-for-finance-and-operations-enterprise-edition"></a>Dynamics 365 for Finance and Operations Enterprise Edition を含みます
 
-ユーザーと開発者に対して、更新された製品名 (「Microsoft Dynamics 365 for Finance and Operations, Enterprise edition」) と製品アイコンが Web クライアントに表示されます。 Dynamics 365 for Finance and Operations、Dynamics 365 for Retail、Dynamics 365 for Talent により共有される一部のプラットフォーム コンポーネント (たとえば、開発者ツールおよびモバイル アプリケーション) は、"Dynamics 365 Unified Operations" と表示されるようになりました。
+ユーザーと開発者に対して、更新された製品名 ("Microsoft Dynamics 365 for Finance and Operations Enterprise Edition") と製品アイコンが Web クライアントに表示されます。 一部のプラットフォームのコンポーネント (たとえば、開発者ツールおよびモバイル アプリケーション) によって共有される Dynamics 365 for Finance and Operations、Dynamics 365 for Retail、および Dynamics 365 for Talent は、"Dynamics 365 Unified Operations." と表示されるようになりました。
 
 ## <a name="development-and-customization--changing-the-extended-data-type-edt-on-a-table-field-using-table-extensions"></a>開発およびカスタマイズ - テーブル拡張を使用してテーブル フィールドの拡張データ タイプ (EDT) を変更する
 
@@ -45,7 +44,7 @@ ms.lasthandoff: 12/18/2018
 
 ## <a name="improved-viewing-experience-for-application-reports"></a>アプリケーション レポートの表示エクスペリエンスの強化
 
-Dynamics 365 for Finance and Operations、Enterprise エディションの分析レポートおよび運用レポートとやり取りする際、顧客にとって改善された新しい表示エクスペリエンスがあります。 この変更により、PDF ファイルとしてレンダリングされるか、プリンタに直接送信されるときに生成されるドキュメントの簡素化されたツールバーとクリア プレビューが提供されます。 現在までに、顧客は SQL Server Reporting Services (SSRS) によって 110 万件以上のドキュメント レポートを作成しています。 さらに、Dynamics 365 for Finance and Operations, Enterprise edition (2017 年 7 月) には、Power BI Desktop を使用して作成された 20 以上の分析レポートが含まれています。 この機能は、ドキュメントと分析スタイルのアプリケーション レポートの両方と対話しながら、大幅に強化された表示エクスペリエンスを提供します。
+Dynamics 365 for Finance and Operations Enterprise Edition の分析レポートおよび運用レポートとやり取りする際、顧客にとって改善された新しい表示エクスペリエンスがあります。 この変更により、PDF ファイルとしてレンダリングされるか、プリンタに直接送信されるときに生成されるドキュメントの簡素化されたツールバーとクリア プレビューが提供されます。 現在までに、顧客は SQL Server Reporting Services (SSRS) によって 110 万件以上のドキュメント レポートを作成しています。 さらに、Dynamics 365 for Finance and Operations Enterprise Edition (2017 年 7 月) には、Power BI Desktop を使用して作成された 20 以上の分析レポートが含まれています。 この機能は、ドキュメントと分析スタイルのアプリケーション レポートの両方と対話しながら、大幅に強化された表示エクスペリエンスを提供します。
 顧客のメリット。
 
 - **信頼性** - 顧客には、ドキュメントがプリンターに直接送信されたときの出力と一致するビューが表示されるようになりました。 直接のフィードバックに基づいて、画面上でレポートを表示する最も一般的なユース ケースは他のユーザーと共有される出力をプレビューすることです。ほとんどの場合、電子メールが使用されます。 現在、税金は SSRS によって作成された文書により合致するスクリーン表記に依存して利用できます。
@@ -72,4 +71,3 @@ Dynamics 365 for Finance and Operations、Enterprise エディションの分析
 オンプレミス配置シナリオでは、アプリケーション サーバーおよび SQL データベースは顧客またはパートナーのデータ センター内で実行されます。 顧客とパートナーは、業務プロセスの設計、オンプレミス ノードに展開するためのソフトウェア イメージの作成と展開、システム ヘルス ダッシュボードのオンプレミス ノードの監視、およびメンテナンスを含むマイクロソフト クラウドの LCS を通じてアプリケーション ライフサイクルを管理します。 Microsoft のイノベーションです。
 
 詳細については、[ビジネスに適したクラウド オプション](https://community.dynamics.com/b/msftdynamicsblog/archive/2017/02/06/the-right-cloud-option-for-your-business) を参照してください。 このブログ記事は、「ローカル ビジネス データ」展開機能を参照しています。 これは、製品とドキュメントの「オンプレミス」と呼ばれる機能です。
-

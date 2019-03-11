@@ -1,13 +1,13 @@
 ---
-title: "コードの移行とホーム ページのアップグレード"
-description: "このトピックでは、コードの移行に関するトピックへのリンクを提供します。"
+title: コードの移行とホーム ページのアップグレード
+description: このトピックでは、コードの移行に関するトピックへのリンクを提供します。
 author: RobinARH
 manager: AnnBe
 ms.date: 10/31/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -16,22 +16,20 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 6f58086752c2b15f1000aa447174bb86a1cf1000
 ms.openlocfilehash: f8fd70d2e621339bc7963845c56b91417dd33ca9
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/24/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369672"
 ---
-
-
 # <a name="code-migration-and-upgrade-home-page"></a>コードの移行とホーム ページのアップグレード
 
 [!include [banner](../includes/banner.md)]
 
 ## <a name="migrate-your-code"></a>コードの移行
 
-Dynamics AX 2012 から Dynamics 365 for Finance and Operations または Dynamics 365 for Retail にコードを移行するには、Lifecycle Services で "ソリューションの移行と作成" の手法を使用します。
+Dynamics AX 2012 から Dynamics 365 for Finance and Operations または Dynamics 365 for Retail にコードを移行するには、Lifecycle Services で「ソリューションの移行と作成」方法を使用します。
 
 ## <a name="key-concepts"></a>重要な概念
 
@@ -54,6 +52,5 @@ Dynamics AX 2012 から Dynamics 365 for Finance and Operations または Dynami
 <!--- [Understand the migration task list (Office Mix)](https://mix.office.com/watch/kcek55rc5cau)-->
 - [アップグレードおよび移行](upgrade-home-page.md)
 - [ワークフロー サブシステムのアップデート](workflow-subsystem.md)
-- [アップグレードした Dynamics AX 2012 R3 販売キューブをエンティティの店舗へ移行する](migrate-upgraded-cube-entity-store.md)
-
+- [アップグレードした Dynamics AX 2012 R3 販売キューブをエンティティ格納へ移行する](migrate-upgraded-cube-entity-store.md)
 

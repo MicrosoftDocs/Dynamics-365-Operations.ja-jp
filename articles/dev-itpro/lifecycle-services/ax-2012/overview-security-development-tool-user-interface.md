@@ -1,13 +1,13 @@
 ---
-title: "セキュリティ開発ツール"
-description: "このトピックでは、セキュリティ開発ツールのユーザー インターフェイスについて説明します。"
+title: セキュリティ開発ツール
+description: このトピックでは、セキュリティ開発ツールのユーザー インターフェイスについて説明します。
 author: kfend
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012
-ms.service: 
-ms.technology: 
+ms.service: ''
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: AX 2012
@@ -15,16 +15,15 @@ ms.custom: 18571
 ms.assetid: bf4110a1-c23a-4fe9-8f56-ab9ff5766f76
 ms.search.region: Global
 ms.author: kfend
-ms.search.validFrom: 
+ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 006618c4e1073cbfa00aac6e9d51fa2b9608571f
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369421"
 ---
-
 # <a name="security-development-tool"></a>セキュリティ開発ツール
 
 [!include [banner](../../includes/banner.md)]
@@ -80,7 +79,7 @@ ms.lasthandoff: 08/09/2018
 
 -   **セキュリティ テスト ワークスペースを開く** – 選択したセキュリティ オブジェクトのアクセス許可を使用してセキュリティ テスト ワークスペースを開きます。
 -   **レコードの開始** – レコーダーを開始するときには、現在のワークスペースで業務プロセス フローを実行できます。 業務プロセス フローの完了時に、記録を停止して、記録されたすべてのエントリ ポイントを表示できます。 この関数は、リッチ クライアントのメニュー項目のみを記録します。
--   **トレース ファイルの読み込み** – エンタープライズ ポータルで追跡されたエントリ ポイントを読み込みます。 詳細については、[Microsoft Dynamics AX エンタープライズ ポータルでのエントリ ポイントの記録](record-entry-points-enterprise-portal.md) を参照してください。
+-   **トレース ファイルの読み込み** – エンタープライズ ポータルで追跡されたエントリ ポイントを読み込みます。 詳細については、「[Microsoft Dynamics AX エンタープライズ ポータルでのエントリ ポイントの記録](record-entry-points-enterprise-portal.md)」を参照してください。
 -   **レコードの保存** – 直前に .xml ファイルに記録したエントリ ポイントの一覧を保存します。
 -   **記録の読み込み** – .xml ファイルから記録されたエントリ ポイントの一覧を読み込みます。
 -   **追加のメタデータの読み込み** – すべてのエントリ ポイントの追加のメタデータを読み込みます。 このデータには、ラベル、レイヤー、モデル、およびライセンス情報が含まれます。
@@ -97,8 +96,7 @@ ms.lasthandoff: 08/09/2018
 
 [エントリ ポイントのアクセス許可の定義または編集](define-edit-entry-point-permissions.md)
 
-[Microsoft Dynamics AX エンタープライズ ポータルでのエントリ ポイントの記録](record-entry-points-enterprise-portal.md)
-
+[Microsoft Dynamics AX エンタープライズ ポータルのエントリ ポイントを記録](record-entry-points-enterprise-portal.md)
 
 
 

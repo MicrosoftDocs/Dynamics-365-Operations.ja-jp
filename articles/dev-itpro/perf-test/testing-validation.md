@@ -1,13 +1,13 @@
 ---
-title: "テストと検証"
-description: "このチュートリアルでは、テスト ケースを作成して実行する方法を説明します。"
+title: テストと検証
+description: このチュートリアルでは、テスト ケースを作成して実行する方法を説明します。
 author: RobinARH
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: shailesn
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 822f6f57cf0d12a1873ec4f1eb0e59bee47bab2c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 2018aeb6e701af462e3be9d86e731ce08983fbe8
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369177"
 ---
-
 # <a name="testing-and-validations"></a>テストと検証
 
 [!include [banner](../includes/banner.md)]
@@ -39,7 +38,7 @@ ms.lasthandoff: 04/20/2018
 ## <a name="key-concepts"></a>重要な概念
 -   SysTest フレームワークを使用して単位またはコンポーネントのテスト コードを作成します。
 -   テスト コードと FormAdaptors を管理するテスト モジュールの作成。
--   タスク レコーダーの記録を Visual Studio にインポートして、テスト コードを生成します。
+-   テスト コードを生成するために Visual Studio に記録しているタスク レコーダーをインポートします。
 -   ビルド マシンとテスト モジュールを統合します。
 
 [![テスト モジュールの統合](./media/54.png)](./media/54.png)  
@@ -47,7 +46,7 @@ ms.lasthandoff: 04/20/2018
 ## <a name="use-systest-framework-to-author-unitcomponent-test-code"></a>SysTest フレームワークを使用して単位またはコンポーネントのテスト コードを作成
 新しいテスト ケースを作成して、アプリケーションで機能をテストすることができます。
 
-1.  管理者として Visual Studio を開きます。
+1.  Visual Studio を管理者としてオープンします。
 1.  **ファイル**メニューで、**開く** &gt; **プロジェクト/ソリューション**をクリックし、デスクトップ フォルダーから **FleetManagement** **ソリューション**を選択します。 ソリューション ファイルがコンピュータにない場合は、作成手順が「[チュートリアル: AOT のフリート管理モデルからフリート管理ソリューションを作成する](https://community.dynamics.com/ax/b/newdynamicsax/archive/2016/05/19/tutorial-create-a-fleet-management-solution-file-out-of-the-fleet-management-models-in-the-aot)」に記載されています。
 1.  **ソリューション エクスプローラー**で、**フリート管理**ソリューションを右クリックして**追加**をポイントしてから**新規プロジェクト**をクリックします。
 1.  作成するプロジェクト タイプとして **Finance and Operations** を選択します。
@@ -132,7 +131,7 @@ ms.lasthandoff: 04/20/2018
 ## <a name="test-module-creation-to-manage-test-code-and-formadaptors"></a>テスト コードと FormAdaptors を管理するテスト モジュールの作成
 テスト コードをまとめて管理しやすくするためにテスト固有のモジュールを作成しています。
 
-1. **Visual Studio** を開き、**Finance and Operations** > **モデル管理** > **モデルの作成**に移動します。
+1. **Visual Studio** を開き、**Finance and Operations** > **モデル管理** > **モデルの作成** に移動します。
 
     [![モデルの作成](./media/60-1024x574.png)](./media/60.png)
 
@@ -146,7 +145,7 @@ ms.lasthandoff: 04/20/2018
 
 基本テスト モジュールを配置した後、タスク レコーダーの記録をインポートしてテスト コードを生成することができます。 タスク レコーダーの記録の XML をインポートするとき、FormAdaptors を使用してテスト コードが生成されます。 フォーム アダプターは、フォーム機能をテストするために使用される、強く定型化された API を提供するフォーム上のラッパー クラスです。 組み込みのフォームの各パッケージの事前に生成した FormAdapters を含めました。 テスト モジュールで、テスト コードを実行するヘルパー メソッドがある、パッケージおよび Test Essentials に対応するフォーム アダプタへの参照を追加します。
 
-## <a name="import-a-task-recorder-recording-into-visual-studio-to-generate-test-code"></a>タスク レコーダーの記録を Visual Studio にインポートしてテスト コードを生成する
+## <a name="import-a-task-recorder-recording-into-visual-studio-to-generate-test-code"></a>テスト コードを生成するために Visual Studio に記録しているタスク レコーダーをインポートします。
 タスク レコーダーの記録からテスト コードを生成して、ヘッドレス (非 UI) テストを実行することができます。
 
 1. タスク レコーダーを使用してシナリオを記録します。
@@ -183,7 +182,6 @@ ms.lasthandoff: 04/20/2018
 テスト モジュールがソース管理の一部である場合、ビルド プロセス テンプレートは、名前に**テスト**という単語を含むすべてのテスト モジュールを検出します。 次の図は、Visual Studio Online の一部としてのビルドとテストの実行を示しています。 
 
 [![ビルドおよびテストの実行](./media/69.png)](./media/69.png)
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "定期統合"
-description: "このトピックでは、定期的な統合について説明します。 データ移行のプロセスや、エンタープライズ システムの内外への移動は、どのプラットフォームでもサポートする必要がある重要な要素です。"
+title: 定期統合
+description: このトピックでは、定期的な統合について説明します。 データ移行のプロセスや、エンタープライズ システムの内外への移動は、どのプラットフォームでもサポートする必要がある重要な要素です。
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 92cd1ea0a6ab6039da7074e032e0f78dd7443cba
 ms.openlocfilehash: 7a5c8e4844b575732bf5be7753ef0535fe0822b2
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/24/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368476"
 ---
-
 # <a name="recurring-integrations"></a>定期統合
 
 [!include [banner](../includes/banner.md)]
 
-データ移行のプロセスや、エンタープライズ システムの内外への移動は、どのプラットフォームでもサポートする必要がある重要な要素です。 多くの労力と計画によって、Microsoft Dynamics 365 for Finance and Operations など企業の業種 (LOB) システムとさまざまなソース システムでのサード パーティ統合が構築されます。 Microsoft Dynamics AX 2012 では、アプリケーション統合フレームワーク (AIF) を通じてこのようなシナリオを可能にします。 Finance and Operations では、統合ソリューション ビルダーから顧客ユーザーに含まれるすべての関係者に対して、このプロセスの簡略化に努めました。
+データ移行のプロセスや、エンタープライズ システムの内外への移動は、どのプラットフォームでもサポートする必要がある重要な要素です。 多くの労力と計画によって、Microsoft Dynamics 365 for Finance and Operations など企業の業種 (LOB) システムとさまざまなソース システムでのサード パーティ統合が構築されます。 Microsoft Dynamics AX 2012 では、アプリケーション統合フレームワーク (AIF) を通じてこのようなシナリオを可能にします。 Finance and Operations では、統合ソリューション ビルダーから顧客ユーザーに含まれるすべての関係者に対して、このプロセスの簡略化に努めました。
 
 ## <a name="architecture"></a>アーキテクチャ
 統合では、次の操作が行われます。
@@ -44,7 +43,7 @@ ms.lasthandoff: 09/24/2018
 
     ![繰り返し実行される統合を設定](./media/set-up-recurring.png)
 
-## <a name="authorization-for-the-integration-rest-api"></a>統合 REST APIの承認
+## <a name="authorization-for-the-integration-rest-api"></a>統合 REST API の承認
 統合 REST API は、他のサービス エンドポイントと同じ OAuth 2.0 認証モデルを使用します。 統合クライアント アプリケーションがこのエンドポイントを使用する前に、Microsoft Azure Active Directory (Azure AD) にアプリケーション ID を作成し、Finance and Operations に適切なアクセス許可を付与する必要があります。 定期的なジョブを作成して有効にするとき、その定期的なジョブとやり取りする Azure AD アプリケーション ID を入力するように求められます。 したがって、アプリケーション ID をメモしておいてください。
 
 ## <a name="set-up-a-data-project-and-recurring-data-jobs"></a>データ プロジェクトと定期的なデータ ジョブを設定
@@ -92,7 +91,7 @@ ms.lasthandoff: 09/24/2018
 ## <a name="submitting-data-to-recurring-data-jobs"></a>定期的なデータ ジョブにデータを送信
 統合 REST エンドポイントを使用して、クライアントと統合、ドキュメントの送信 (インポート)、またはダウンロードに使用可能なドキュメントのポーリング (エクスポート) を実行することができます。 これらのエンドポイントは OAuth をサポートします。
 
-## <a name="integration-rest-apis"></a>統合 REST API
+## <a name="integration-rest-apis"></a>REST API 統合
 次の API セットは、統合クライアントと Finance and Operations の間でデータを交換するために使用されます。
 
 ### <a name="api-for-import-enqueue"></a>インポート (エンキュー) の API
@@ -198,7 +197,7 @@ Finance and Operations で定期的なエクスポートを使用するとき、
 実装に、ファイルまたはパッケージをアップロードした、定期的なジョブの実行が含まれている可能性があります。 ご使用の実装には、アップロードするものがないため、ファイルまたはパッケージがアップロードされなかった実行が含まれていることがあります。 アップロードする必要のあるファイルがアップロードされていない、またはアップロードする必要がないファイルがアップロードされていた場合は、定期的なエクスポート ジョブに対して**メッセージの管理**ページを使用して、デバッグ プロセスを支援することができます。
 
 > [!NOTE]
-> これらの機能は、Microsoft Dynamics 365 for Finance and Operations、Enterprise エディションのプラットフォーム更新プログラム 12 に追加されました。 プラットフォーム更新 12 にアップグレードする前に実行されたジョブは、次の列に値を持ちません。
+> これらの機能は、Microsoft Dynamics 365 for Finance and Operations、Enterprise edition のプラットフォーム更新プログラム 12 に追加されました。 プラットフォーム更新 12 にアップグレードする前に実行されたジョブは、次の列に値を持ちません。
 
 **エクスポートされたレコードの合計** 列には、エクスポートされたレコードの合計数が表示されます。 **0** (ゼロ) の値は、ファイルにエクスポートされたまたはパッケージに含まれていたレコードがないことを示します。
 
@@ -208,4 +207,3 @@ Finance and Operations で定期的なエクスポートを使用するとき、
 デキュー API は、HTTPS ではなく HTTP を返します。 この動作は、運用環境などのロード バランサーを使用する Finance and Operations 環境で確認できます。 (1 つのボックス環境で動作を表示ことはできません)。 Finance and Operations からキューから削除しようとするミドルウェア アプリケーションで、URI スキームを HTTPS に変更することをお勧めします。
 
 ![バッチ ジョブ ステータス](./media/show-batch-status.png)
-

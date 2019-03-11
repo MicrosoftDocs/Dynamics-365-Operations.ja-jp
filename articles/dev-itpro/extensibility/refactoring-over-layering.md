@@ -1,31 +1,30 @@
 ---
-title: "拡張機能にオーバーレイをリファクタリングするモデルの制限を緩和"
-description: "このトピックでは、オーバーレイを拡張機能にリファクタリングできるように、モデルの制限を緩和する方法について説明します。 Microsoft Dynamics 365 for Finance and Operations 8.0 ではモデルがシールされているため、制限の緩和が必要となります。"
+title: 拡張機能にオーバーレイをリファクタリングするモデルの制限を緩和
+description: このトピックでは、オーバーレイを拡張機能にリファクタリングできるように、モデルの制限を緩和する方法について説明します。 これは、モデルが Microsoft Dynamics 365 for Finance and Operations 8.0 にシールされているために、必要です。
 author: CGarty
 manager: AnnBe
 ms.date: 05/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
 ms.custom: 268724
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: CGarty
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Platform update 14
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: ab532f76f8c9287e25f0fcf7f8141e79a37f731f
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369991"
 ---
-
-# <a name="relax-model-restrictions-to-refactor-overlayering-into-extensions"></a>拡張機能にオーバーレイをリファクタリングするモデルの制限を緩和
+# <a name="relax-model-restrictions-to-refactor-overlayering-into-extensions"></a>オーバレイを拡張機能にリファクタリングするため、モデルの制限を緩和する
 
 [!include [banner](../includes/banner.md)]
 
@@ -36,7 +35,7 @@ Dynamics 365 for Finance and Operations 8.0 およびこれ以降のすべての
 ## <a name="detailed-process"></a>詳細なプロセス
 モデルの制限を緩和するには、以下の手順を実行します。 この手順は、クラウド環境で実行することも、ローカルの仮想マシン (VM) で実行することもできます。
 
-1. Dynamics 365 for Finance and Operations 8.0 の開発環境を展開します。 
+1. Dynamics 365 for Finance and Operations 8.0 開発環境を配置します。 
 2. Lifecycle Services (LCS) のコード アップグレード サービスを実行して、ソリューションをアップグレードします。
 3. コンパイルできるように、必要に応じて Microsoft のモデルでのオーバーレイを一時的に許可します。
     
@@ -56,7 +55,7 @@ Dynamics 365 for Finance and Operations 8.0 およびこれ以降のすべての
     
 4. オーバーレイをリファクタリングして拡張機能にし、テストします。 ​オーバーレイを削除できるように、拡張機能を利用します。 必要な場合には、拡張機能の要求を行います。
 5. Microsoft のモデルに対する一時的な変更を元に戻します。 オーバーレイを使用するモデルの展開はできなくなるため、記述子ファイルを更新することが重要です。
- 
+ 
 ## <a name="prototyping-extensibility-requests"></a>拡張機能の要求のプロトタイピング
 拡張機能を使用するようにソリューションを徐々に移行していく中で、ソリューションにおける課題を解消するために拡張機能の要求が必要になることがあります。 ソリューションの課題を解消し、拡張機能を使用するための移行プロセスをスムーズに進めるために何が必要なのかを十分に把握するために、拡張機能のプロトタイプを別のモデルとして作成することができます。
 
@@ -71,4 +70,3 @@ Dynamics 365 for Finance and Operations 8.0 およびこれ以降のすべての
 4. プロトタイプの拡張機能で問題がなければ、対応する要求を作成します。
 5. その拡張機能をプラットフォームやアプリケーションに実装する際には、プロトタイプの拡張機能および関連するオーバーレイはすべて、拡張機能プロトタイプ モデルから削除する必要があります。
 6. ソリューションのすべてのオーバーレイが拡張機能にリファクタリングされ、拡張機能プロトタイプ モデルが空になったら、ソリューションのリファクタリングは完了です。
-

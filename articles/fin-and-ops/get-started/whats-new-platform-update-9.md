@@ -1,34 +1,33 @@
 ---
-title: "Dynamics 365 for Finance and Operations、Enterprise edition プラットフォーム更新プログラム 9 (2017 年 7 月) の新機能および変更された機能"
-description: "このトピックでは、Dynamics 365 for Finance and Operations、Enterprise Edition プラットフォーム更新プログラム 9 における新機能または変更された機能について説明します。 このバージョンは 2017 年 7 月にリリースされました。"
+title: Dynamics 365 for Finance and Operations Enterprise Edition プラットフォーム更新プログラム 9 (2017 年 7 月) の新機能および変更された機能
+description: このトピックでは、Dynamics 365 for Finance and Operations Enterprise Edition プラットフォーム更新プログラム 9 の新機能または変更された機能について説明します。 このバージョンは 2017 年 7 月にリリースされました。
 author: tonyafehr
 manager: AnnBe
 ms.date: 07/27/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
-ms.custom: 
+ms.custom: ''
 ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 9
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 3d622aa0fed911b7dd05690300d633698bc4e08c
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369234"
 ---
-
-# <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-enterprise-edition-platform-update-9-july-2017"></a>Dynamics 365 for Finance and Operations、Enterprise edition プラットフォーム更新プログラム 9 (2017 年 7 月) の新機能および変更された機能
+# <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-enterprise-edition-platform-update-9-july-2017"></a>Dynamics 365 for Finance and Operations Enterprise Edition プラットフォーム更新プログラム 9 (2017 年 7 月) の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Dynamics 365 for Finance and Operations、Enterprise Edition プラットフォーム更新プログラム 9 における新機能または変更された機能について説明します。 このバージョンは 2017 年 7 月にリリースされ、ビルド番号は 7.0.4612.35162 です。
+このトピックでは、Dynamics 365 for Finance and Operations Enterprise Edition プラットフォーム更新プログラム 9 の新機能または変更された機能について説明します。 このバージョンは 2017 年 7 月にリリースされ、ビルド番号は 7.0.4612.35162 です。
 
 新機能についての補足情報の検索および開発中の新機能に関する詳細については、[Dynamics 365 ロードマップ](https://roadmap.dynamics.com/) を参照してください。 プラットフォーム更新プログラム 9 に含まれるバグ修正の詳細については、Lifecycle Services (LCS) にログインし、この [サポート技術情報記事](https://go.microsoft.com/fwlink/?linkid=853624) を参照してください。
 
@@ -107,4 +106,3 @@ Print c.method1(33);
 
 > [!NOTE]
 > この問題は、ビルド コンピューター (参加リストがあり、コードをコンパイルする VM) として使用される仮想マシンで発生することがあります。
-

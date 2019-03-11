@@ -1,13 +1,13 @@
 ---
-title: "表形式フィールドのサブパターン"
-description: "この記事では、表形式フィールドのサブパターンに関する情報を提供します。 このサブパターンは、情報を表形式で効率的に表示するために使用されます。"
+title: 表形式フィールドのサブパターン
+description: この記事では、表形式フィールドのサブパターンに関する情報を提供します。 このサブパターンは、情報を表形式で効率的に表示するために使用されます。
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 31c27bb4eac3c7bd5efec269bc4cc695481066b9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 69c380aa03ed24f84cc0408f532023315ab3c8e5
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368868"
 ---
-
 # <a name="tabular-fields-subpattern"></a>表形式フィールドのサブパターン
 
 [!include [banner](../includes/banner.md)]
@@ -104,4 +103,3 @@ Microsoft Dynamics AX の以前のリリースでは、このパターンをモ�
 ### <a name="open-issues"></a>未処理の問題
 
 -   None
-

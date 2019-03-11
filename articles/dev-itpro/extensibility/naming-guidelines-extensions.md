@@ -1,30 +1,29 @@
 ---
-title: "モデルの拡張機能の名前付けガイドライン"
-description: "このトピックでは、モデル拡張機能の名前付けガイドラインについて説明します。 モデル内の要素は、インストール時にすべてのモデルで一意の名前が必要です。"
+title: モデルの拡張機能の名前付けガイドライン
+description: このトピックでは、モデル拡張機能の名前付けガイドラインについて説明します。 モデル内の要素は、インストール時にすべてのモデルで一意の名前が必要です。
 author: LarsBlaaberg
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
 ms.custom: 89563
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
+ms.openlocfilehash: adaa578bea6f7c12c8b6446c9e4b83e12944e2c6
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 374a2b7f12b59806ee59abdadeec7c0a943e3cba
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369691"
 ---
-
 # <a name="naming-guidelines-for-model-extensions"></a>モデルの拡張機能の名前付けガイドライン
 
 [!include [banner](../includes/banner.md)]
@@ -64,4 +63,3 @@ ms.lasthandoff: 04/20/2018
 クラス レベルの変数および拡張クラスのメソッドは、拡張される型、および同じ型を拡張するその他の拡張クラスの両方で一意の名前を持つ必要があります。
 
 + メンバー名の先頭に接頭語、用語、または省略形を含めます。 たとえば、**WHS** がモデル内の他の要素で使用される接頭語の 1 つである場合、承認する作業者のクラス レベルの変数には、**WHSApprovingWorker** という名前が付けられます。 **approveWork** メソッドの名前を **WHSApproveWork** とつける場合 **WHS** はホスティング モデルでその他の要素によって使用される接頭語の 1 つです。
-

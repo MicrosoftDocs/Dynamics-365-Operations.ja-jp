@@ -1,30 +1,29 @@
 ---
-title: "モバイル プラットフォームのアーキテクチャと設計の考慮事項"
-description: "このトピックでは、モバイル アプリの設計に関する詳細な情報を示します。"
+title: モバイル プラットフォームのアーキテクチャと設計の考慮事項
+description: このトピックでは、モバイル アプリの設計に関する詳細な情報を示します。
 author: makhabaz
 manager: AnnBe
 ms.date: 07/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: robinr
 ms.search.scope: Operations
 ms.custom: 255544
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: makhabaz
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: a007b7e50436a6dd223633707d7e4f6fc420e510
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368513"
 ---
-
 # <a name="architecture-and-design-considerations-for-the-mobile-platform"></a>モバイル プラットフォームのアーキテクチャと設計の考慮事項
 
 [!include [banner](../../includes/banner.md)]
@@ -49,7 +48,7 @@ ms.lasthandoff: 08/09/2018
 
 ### <a name="notes"></a>摘要
 
-モバイル アプリでデータやメタデータを更新するために、いつでもモバイル アプリでプルして更新することができます。 既存のワークスペースを編集またはワークスペースを発行した後、モバイル アプリ、ワークスペースのリスト (ワークスペースまたはビジネス ロジックを追加した場合) またはページのリスト (アクションおよびページ修正された) で、プルリフレッシュしてください。 Finance and Operations に対して公開済みのワークスペースはすべてのユーザーに対して表示されます。 Microsoft Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 3 では、メニュー項目のセキュリティにより、ユーザーがアクセス権を持っていないページは自動的に非表示になります。 ワークスペースの任意のページへのへのアクセス権がユーザーにない場合、ワークスペース自体が非表示になります。
+モバイル アプリでデータやメタデータを更新するために、いつでもモバイル アプリでプルして更新することができます。 既存のワークスペースを編集またはワークスペースを発行した後、モバイル アプリ、ワークスペースのリスト (ワークスペースまたはビジネス ロジックを追加した場合) またはページのリスト (アクションおよびページ修正された) で、プルリフレッシュしてください。 Finance and Operations に対して公開済みのワークスペースはすべてのユーザーに対して表示されます。 Microsoft Dynamics 365 for Finance and Operationsプラットフォームの更新プログラム 3 では、メニュー項目のセキュリティにより、ユーザーにアクセス権がないページは自動的に非表示になります。 ワークスペースの任意のページへのへのアクセス権がユーザーにない場合、ワークスペース自体が非表示になります。
 
 ## <a name="using-the-mobile-app-designer"></a>モバイル アプリ デザイナーの使用
 モバイル アプリ デザイナーでは、モバイル アプリに表示されるフォームから特定のデータ フィールドを選択できます。 
@@ -86,4 +85,3 @@ ms.lasthandoff: 08/09/2018
 [アクション デザインのガイドライン](action-design-guidelines.md)
 
 [フォーム デザインの要件](form-design-requirements.md)
-

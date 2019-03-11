@@ -1,13 +1,13 @@
 ---
-title: "セルフサービス配置に関する既知の問題"
-description: "このトピックでは、セルフ サービス配置を使用する場合に発生する可能性がある既知の問題を一覧表示します。"
+title: セルフサービス配置に関する既知の問題
+description: このトピックでは、セルフ サービス配置を使用する場合に発生する可能性がある既知の問題を一覧表示します。
 author: sarvanisathish
 manager: AnnBe
 ms.date: 12/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -15,14 +15,13 @@ ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
-ms.translationtype: HT
-ms.sourcegitcommit: 61aee27fce705231c0ac89cc596bb19b95426608
 ms.openlocfilehash: 2afbf09176274777db9f63fcf6eaf9262c3faced
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368616"
 ---
-
 # <a name="known-issues-with-self-service-deployment"></a>セルフサービス配置に関する既知の問題
 
 [!include[banner](../includes/banner.md)]
@@ -86,4 +85,3 @@ ms.lasthandoff: 12/14/2018
     4.  レポートは、数分後に Web クライアントに読み込まれます。
 
 -   **PDF に出力は、代わりに XPS に出力されます** (印刷ドライバーへのアクセスの問題のため)。
-

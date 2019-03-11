@@ -1,13 +1,13 @@
 ---
-title: "コードの移行 - コンテキスト メニュー コード"
-description: "新しいプログラミング モデルには、コンテキスト メニュー (ショートカット メニュー) が必要です。 この記事では、Microsoft Dynamics AX 2012 から Microsoft Dynamics 365 for Finance and Operations へのコンテキスト メニュー コードのマイグレーション プロセスについて説明します。 また、コンテキスト メニューの UX ガイドラインも含まれます。"
+title: コードの移行 - コンテキスト メニュー コード
+description: 新しいプログラミング モデルには、コンテキスト メニュー (ショートカット メニュー) が必要です。 この記事では、Microsoft DynamicsAX 2012 から Microsoft Dynamics 365 for Finance and Operations へのコンテキスト メニュー コードの移行プロセスの概要を説明します。 また、コンテキスト メニューの UX ガイドラインも含まれます。
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,21 +17,20 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 52be3047cdd20ca7f17d9d980164c1a43bf0d2f8
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369313"
 ---
-
 # <a name="code-migration---context-menu-code"></a>コードの移行 - コンテキスト メニュー コード
 
 [!include [banner](../includes/banner.md)]
 
-新しいプログラミング モデルには、コンテキスト メニュー (ショートカット メニュー) が必要です。 この記事では、Microsoft Dynamics AX 2012 から Microsoft Dynamics 365 for Finance and Operations へのコンテキスト メニュー コードのマイグレーション プロセスについて説明します。 また、コンテキスト メニューの UX ガイドラインも含まれます。
+新しいプログラミング モデルには、コンテキスト メニュー (ショートカット メニュー) が必要です。 この記事では、Microsoft DynamicsAX 2012 から Microsoft Dynamics 365 for Finance and Operations へのコンテキスト メニュー コードの移行プロセスの概要を説明します。 また、コンテキスト メニューの UX ガイドラインも含まれます。
 
-Microsoft Dynamics AX 2012 以前のバージョンでは、開発者が **PopupMenu** クラスを使用して右クリックのコンテキスト メニュー (ショートカット メニュー) を変更していました。 このクラスは、Web 上で利用できない Microsoft Windows アプリケーション プログラミング インターフェイス (API) に依存していました。 Finance and Operations では、同様の機能を提供する代わりに **ContextMenu** API が作成されました。 以前は、**context()** メソッドと **showContextMenu()** メソッドのオーバーライドは、特定のコントロールのコンテキスト メニューを変更するためのエントリ ポイントでした。 これらの上書きには通常、コンテキスト メニューにオプションを追加したり、ユーザーの選択を処理するためのコードが含まれていました。 ユーザーの選択を処理するコードは、待機モデルを使用していました。 Finance and Operations では、これらのオーバーライドが削除され、待機モデルは消去されています。 代わりに、開発者はオプションにコンテキスト メニューを追加する **getContextMenuOptions()** およびユーザーの選択を処理する **selectedMenuOption()** の 2 つのオーバーライドを作成する必要があります。
+Microsoft Dynamics AX 2012 およびそれ以前のバージョンでは、開発者が **PopupMenu** クラスを使用して右クリック コンテキスト メニュー (ショートカット メニュー) を変更していました。 このクラスは、Web 上で利用できない Microsoft Windows アプリケーション プログラミング インターフェイス (API) に依存していました。 Finance and Operations では、同様の機能を提供する代わりに **ContextMenu** API が作成されました。 以前は、**context()** メソッドと **showContextMenu()** メソッドのオーバーライドは、特定のコントロールのコンテキスト メニューを変更するためのエントリ ポイントでした。 これらの上書きには通常、コンテキスト メニューにオプションを追加したり、ユーザーの選択を処理するためのコードが含まれていました。 ユーザーの選択を処理するコードは、待機モデルを使用していました。 Finance and Operations では、これらのオーバーライドが削除され、待機モデルは消去されています。 代わりに、開発者はオプションにコンテキスト メニューを追加する **getContextMenuOptions()** およびユーザーの選択を処理する **selectedMenuOption()** の 2 つのオーバーライドを作成する必要があります。
 
 ## <a name="migrate-context-menu-code-in-finance-and-operations"></a>Finance and Operations でのコンテキスト メニュー コードの移行
 **PopupMenu** API から **ContextMenu** API への移行は、3 つの主な段階に分けることができます。
@@ -69,7 +68,7 @@ Microsoft Dynamics AX 2012 以前のバージョンでは、開発者が **Popup
     -   List menuOptions = new List(Types::Class);
 
 3.  一覧にメニュー オプションを追加:
-    -   ContextMenuOption オプション = ContextMenuOption::Create(label,identifier);
+    -   ContextMenuOption option = ContextMenuOption::Create(label,identifier);
     -   menuOptions.addEnd(option);
 
 4.  メニューにオプションのリストを追加します。
@@ -145,7 +144,6 @@ Microsoft Dynamics AX 2012 以前のバージョンでは、開発者が **Popup
 -   右クリックはショートカットです。 したがって、コンテキスト メニューのコマンドは、**常に**ページの他の場所で利用できる必要があります。
 -   コンテキスト メニューのサブメニューを作成しないでください。 サブメニューは使いにくくタッチ対応ではありません。
 -   メニュー項目の数を 5 に制限します。
-
 
 
 

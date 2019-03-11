@@ -1,35 +1,34 @@
 ---
-title: "Finance and Operations, Enterprise Edition 7.3 の拡張機能の変更"
-description: "このトピックでは、Dynamics 365 for Finance and Operations、Enterprise エディション 7.3 でリリースされた拡張機能を一覧表示します。"
+title: Finance and Operations, Enterprise Edition 7.3 の拡張機能の変更
+description: このトピックは、Dynamics 365 for Finance and Operations、Enterprise edition 7.3 でリリースされた拡張機能を一覧表示します。
 author: FrankDahl
 manager: AnnBe
 ms.date: 04/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
 ms.custom: 268724
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2017-12-20
 ms.dyn365.ops.version: Platform update 4
+ms.openlocfilehash: a74e67b0db4044c87d625ac9f958ca0bb161e77c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 2a0f2f047cb093b13614a807dde49bfdff44b87a
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368996"
 ---
-
 # <a name="extensibility-changes-in-finance-and-operations-enterprise-edition-73"></a>Finance and Operations, Enterprise Edition 7.3 の拡張機能の変更
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Dynamics 365 for Finance and Operations、Enterprise エディション 7.3 でリリースされた拡張機能を一覧表示します。 拡張性をサポートする変更のスケジュールの詳細については、「[アプリケーション機能拡張計画](extensibility-roadmap.md)」を参照してください。
+このトピックは、Dynamics 365 for Finance and Operations、Enterprise edition 7.3 でリリースされた拡張機能を一覧表示します。 拡張性をサポートする変更のスケジュールの詳細については、「[アプリケーション機能拡張計画](extensibility-roadmap.md)」を参照してください。
 
 ## <a name="soft-sealed-application-models"></a>ソフト シールされたアプリケーション モデル
 
@@ -299,7 +298,7 @@ ms.lasthandoff: 08/09/2018
 |SalesLineType::interCompanyResetDeliverNow|
 |テーブル ForecastSales|
 
-## <a name="exposing-class-members"></a>クラス メンバーを公開
+## <a name="exposing-class-members"></a>クラス メンバーの公開
 
 アクセス修飾子と新しい parm メソッドの変更の結果、追加のプライベート メンバーをカスタマイズに使用できるようになりました。 コマンド プラットフォームのチェーン機能により、保護されたメソッドやメンバーへの拡張クラスのアクセスが可能になります。 コマンド チェーンの詳細については、「[拡張可能な X++: コマンド チェーン](https://blogs.msdn.microsoft.com/mfp/2017/07/04/extensible-x-chain-of-command/)」を参照してください。
 
@@ -596,11 +595,11 @@ ms.lasthandoff: 08/09/2018
 |InventQualityManagementCreate.createQualityOrder|
 |InventTransferParmLine::createShipLines|
 |InventTransferParmLine::initFromInventTransferParmTable|
-|InventTransferUpdShip::updateInventTransferLine|
+|InventTransferUpdShi::updateInventTransferLine|
 |InventUpd_Estimated::createEstimatedInventTrans|
 |InventUpd_Financial::newInventTransferLineReceive|
 |InventUpd_Financial::newInventTransferLineShip|
-|InventUpd_Financial::updateFinancialIssue|
+|InventUpd_Financia::updateFinancialIssue|
 |InventUpd_Financial::updateFinancialReceipt|
 |InventUpd_Physical::newInventMovement|
 |InventUpd_Reservation::updateReserveBuffer|
@@ -609,7 +608,7 @@ ms.lasthandoff: 08/09/2018
 |InventUpdate::whsUpdateWorkTransDimIssue|
 |LedgerJournalCheckPost.postJournal|
 |LedgerJournalEngine - メソッド preDelete|
-|LedgerJournalEngine::findSettledAmount|
+|LedgerJournalEngin::findSettledAmount|
 |LedgerJournalEngine_CustPayment.allowEditTrans|
 |LedgerJournalEngine_CustPayment.initDefaultDimension|
 |LedgerJournalEngine_CustPayment.write|
@@ -659,7 +658,7 @@ ms.lasthandoff: 08/09/2018
 |SalesFormletterParmDataPickingList.insertParmLine|
 |SalesInvoiceController::main|
 |SalesInvoiceDP.insertIntoSalesInvoiceTmp|
-|SalesInvoiceDP::insertIntoSalesInvoiceTmp|
+|SalesInvoiceD::PinsertIntoSalesInvoiceTmp|
 |SalesInvoiceDP::loadCustPackingSlipTrans|
 |SalesInvoiceDPBase::createData|
 |SalesInvoiceJournalCreate::initInvoiceLineFromSourceLine|
@@ -1160,7 +1159,7 @@ ms.lasthandoff: 08/09/2018
 |ProjValCheckTrans.setVariablesFromBuffer|
 |PsaCustomerRetention.createFeeTransaction|
 |PsaGenerateQuotationLines.createSalesQuotationLines|
-|PsaProjInvoiceDP::insertPSAProjInvoiceHeaderTmp|
+|PSAProjInvoiceDP::insertPSAProjInvoiceHeaderTmp|
 |PsaProjInvoiceDP::insertPSAProjInvoiceTmp|
 |PSARetentionRelease.insertLineRecords|
 |PurchAgreementGenerateReleaseOrder.check|
@@ -1569,5 +1568,4 @@ ms.lasthandoff: 08/09/2018
 |               CustCollectionLetterJour での誤った関係               |
 |            その他: CompanyHelper.testCreateParameter のバグ修正             |
 | テーブル CustCollectionLetterJour - クラス cancelCollectionLetterCodeCustTrans |
-
 

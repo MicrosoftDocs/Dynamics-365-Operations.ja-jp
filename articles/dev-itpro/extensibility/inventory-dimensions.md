@@ -1,30 +1,29 @@
 ---
-title: "拡張機能を通じた新しい在庫分析コードの追加"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations の拡張機能を使用して、新しい在庫分析コードを追加する方法について説明します。"
+title: 拡張機能を通じた新しい在庫分析コードの追加
+description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations の拡張機能を通じて新しい在庫分析コードを追加する方法について説明します。
 author: MichaelFruergaardPontoppidan
 manager: AnnBe
 ms.date: 02/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: AnnBe
 ms.search.scope: Operations
 ms.custom: 89563
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: c7351337f64fdf62c6206aed174f203df3bfef17
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369644"
 ---
-
 # <a name="add-new-inventory-dimensions-through-extension"></a>拡張機能を通じた新しい在庫分析コードの追加
 
 [!include [banner](../includes/banner.md)]
@@ -150,4 +149,3 @@ VAR の職務は、特定の顧客の InventDim の分析コード フィール�
 必要な場合は、問題を GitHub に直接記録し、追加の補充を提供するサンプル アプリケーションへ自由に投稿してください。
  
 ![InventDimensionFlavorScreenshot](media/InventDimensions5.jpg)
-

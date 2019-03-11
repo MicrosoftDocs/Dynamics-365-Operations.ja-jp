@@ -1,13 +1,13 @@
 ---
-title: "最新のプラットフォーム更新プログラムを環境へ適用"
-description: "ここでは、Microsoft Dynamics 365 for Finance and Operations Enterprise Edition 環境に最新のプラットフォーム リリースを適用する方法について説明します。"
+title: 最新のプラットフォーム更新プログラムを環境へ適用
+description: ここでは、Microsoft Dynamics 365 for Finance and Operations Enterprise Edition 環境に最新のプラットフォーム リリースを適用する方法について説明します。
 author: tariqbell
 manager: AnnBe
 ms.date: 07/09/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: margoc
 ms.search.scope: Operations
@@ -17,23 +17,22 @@ ms.search.region: Global
 ms.author: tabell
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.translationtype: HT
-ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
 ms.openlocfilehash: ecd0e4def7d053aea635a21b316805716eeb9a29
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/17/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369060"
 ---
-
 # <a name="apply-the-latest-platform-update-to-environments"></a>最新のプラットフォーム更新プログラムを環境へ適用
 
 [!include [banner](../includes/banner.md)]
 
-ここでは、Microsoft Dynamics 365 for Finance and Operations 環境に最新のプラットフォーム リリースを適用する方法について説明します。
+このトピックでは、最新のプラットフォーム リリースを Microsoft Dynamics 365 for Finance and Operations 環境に適用する方法について説明します。
 
 ## <a name="overview"></a>概要
 
-Microsoft Dynamics 365 for Finance and Operations プラットフォームは、次のコンポーネントで構成されます。
+Microsoft Dynamics 365 for Finance and Operations プラットフォーム は、次のコンポーネントで構成されています:
 
 -   Application Object Server (AOS)、データ管理フレームワーク、レポートおよびビジネス インテリジェンス (BI) フレームワーク、開発ツール、および分析サービスなどの Finance and Operations プラットフォーム バイナリ。
 -   次のアプリケーション オブジェクト ツリー (AOT) パッケージ。
@@ -79,7 +78,7 @@ LCS で、環境ページから最新のプラットフォーム更新パッケ�
 このセクションでは、プラットフォーム更新パッケージを*ローカル開発環境* (LCS に接続されていないもの) に適用する方法について説明します。
 
 ### <a name="how-to-get-the-platform-update-package"></a>プラットフォーム更新プログラム パッケージを取得する方法
-プラットフォーム更新プログラム パッケージは、Microsoft によってリリースされ、Microsoft Dynamics Lifecycle Services (LCS) の共有資産ライブラリからインポートすることができます。 パッケージ名の先頭に **Dynamics 365 Unified Operations Platform Update** が付きます。 プラットフォーム更新プログラムのパッケージをインポートするには、次の手順を使用します。
+プラットフォーム更新プログラム パッケージは、Microsoft によってリリースされ、Microsoft Dynamics Lifecycle Services (LCS) の共有アセット ライブラリからインポートすることができます。 パッケージ名の先頭に **Dynamics 365 Unified Operations プラットフォーム更新**が付きます。 プラットフォーム更新プログラムのパッケージをインポートするには、次の手順を使用します。
 
 1.  LCS プロジェクトの資産ライブラリに移動します。
 2.  **ソフトウェア配置可能パッケージ**タブで、**インポート**をクリックし、プラットフォーム更新プログラム パッケージへの参照を作成します。 [![ボタンのインポート](./media/importupgradepackage.png)](./media/importupgradepackage.png)
@@ -116,12 +115,12 @@ AXUpdateInstaller.exe generate -runbookid="OneBoxDev" -topologyfile="DefaultTopo
     AXUpdateInstaller.exe execute -runbookid=OneBoxDev
 ```
 
-### <a name="install-the-visual-studio-development-tools-platform-update-3-or-earlier"></a>Visual Studio 開発ツール (プラットフォーム更新プログラム 3 またはそれ以前) をインストールします
+### <a name="install-the-visual-studio-development-tools-platform-update-3-or-earlier"></a>Visual Studio 開発ツール (プラットフォーム更新プログラム 3 またはそれ以前) をインストールする
 
 > [!NOTE]
 > プラットフォーム更新プログラム 4 またはそれ以降を更新する場合はこのセクションをスキップすると、開発ツールは配置可能パッケージのインストールの一部として自動的にインストールされます。
 
-[Visual Studio 開発ツールの更新](../dev-tools/update-development-tools.md)の説明に従って、Visual Studio 開発ツールを更新します。
+[Visual Studio 開発ツールの更新](../dev-tools/update-development-tools.md) の説明に従って、Visual Studio 開発ツールを更新します。
 
 ### <a name="regenerate-form-adaptor-models"></a>フォーム アダプタ モデルの再生成
 
@@ -162,7 +161,7 @@ Microsoft SQL Server の統合サービスの早期リリースに接続して�
 > [!NOTE]
 > プラットフォーム更新プログラム 7 またはそれ以降を更新する場合はこのセクションをスキップします。 これは、ビルド環境のための前提条件ステップでした。
 
-ビルド マシンを 1 つ以上のビルドに使用している場合、メタデータのバックアップ フォルダーからメタデータのパッケージ フォルダーを復元してから、VM をより新しい Dynamics 365 for Finance and Operations プラットフォームにアップグレードする必要があります。 その後、メタデータのバックアップを削除してください。 これらの手順は、プラットフォームの更新がクリーンな環境に確実に適用されるようにします。 次のビルド プロセスはメタデータ バックアップが存在しないことを検出し、新しいメタデータ バックアップが自動的に作成されます。 この新しいメタデータ バックアップには、更新されたプラットフォームが含まれます。 完全なメタデータ バックアップが存在するかどうかを確認するには、I:\\DynamicsBackup\\Packages (またはダウンロード可能な仮想ハード ディスク \[VHD\] 上の C:\\DynamicsBackup\\Packages) で、BackupComplete.txt ファイルを探してください。 このファイルが存在する場合、メタデータ バックアップが存在し、ファイルにはその作成日時を示すタイムスタンプが含まれています。 展開のメタデータ パッケージ フォルダーをメタデータ バックアップから復元するには、上位の Windows PowerShell **コマンド プロンプト** ウィンドウを開き、以下のコマンドを実行します。 このコマンドは、ビルド プロセスの最初のステップで使用したのと同じスクリプトを実行します。
+1 つ以上のビルドに対してビルド マシンが使用されているときは、VM を新しい Dynamics 365 for Finance and Operations プラットフォームにアップグレードする前に、メタデータ バックアップ フォルダーからメタデータ パッケージ フォルダーを復元する必要があります。 その後、メタデータのバックアップを削除してください。 これらの手順は、プラットフォームの更新がクリーンな環境に確実に適用されるようにします。 次のビルド プロセスはメタデータ バックアップが存在しないことを検出し、新しいメタデータ バックアップが自動的に作成されます。 この新しいメタデータ バックアップには、更新されたプラットフォームが含まれます。 完全なメタデータ バックアップが存在するかどうかを確認するには、I:\\DynamicsBackup\\Packages (またはダウンロード可能な仮想ハード ディスク \[VHD\] 上の C:\\DynamicsBackup\\Packages) で、BackupComplete.txt ファイルを探してください。 このファイルが存在する場合、メタデータ バックアップが存在し、ファイルにはその作成日時を示すタイムスタンプが含まれています。 展開のメタデータ パッケージ フォルダーをメタデータ バックアップから復元するには、上位の Windows PowerShell **コマンド プロンプト** ウィンドウを開き、以下のコマンドを実行します。 このコマンドは、ビルド プロセスの最初のステップで使用したのと同じスクリプトを実行します。
 
     if (Test-Path -Path "I:\DynamicsBackup\Packages\BackupComplete.txt") { C:\DynamicsSDK\PrepareForBuild.ps1 }
 
@@ -210,11 +209,10 @@ Microsoft SQL Server の統合サービスの早期リリースに接続して�
 これらの修正プログラムは、Microsoft モデルでこれらのチェックイン履歴を参照することにより見つけることができます。 たとえば、ソース管理エクスプローラーを使用して、Trunk\\Main\\Metadata\\ApplicationFoundation\\ApplicationFoundation フォルダーのチェックイン履歴を参照し、チェックインされているすべての XML ファイルを削除します。
 ![履歴の表示](./media/checkinhistory.png)
 
-<a name="additional-resources"></a>その他のリソース
+<a name="additional-resources"></a>追加リソース
 --------
 
-[Microsoft Dynamics 365 for Finance and Operations の最新更新への移行の概要](upgrade-latest-update.md)
-
+[Microsoft Dynamics 365 for Finance and Operations の最新の更新プログラムへの移行の概要](upgrade-latest-update.md)
 
 
 

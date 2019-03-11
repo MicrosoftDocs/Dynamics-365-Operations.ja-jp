@@ -1,13 +1,13 @@
 ---
-title: "開発、デモ、またはサンドボックスの環境でのデータのアップグレード"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations のデータベースを最新の更新バージョンにアップグレードするプロセスについて説明します。"
+title: 開発環境、デモ環境、サンドボックス環境でのデータのアップグレード
+description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations のデータベースを最新の更新プログラムにアップグレードするプロセスについて説明します。
 author: tariqbell
 manager: AnnBe
 ms.date: 09/17/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: margoc
 ms.search.scope: Operations
@@ -17,27 +17,26 @@ ms.search.region: Global
 ms.author: tabell
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
+ms.openlocfilehash: f0031fea2190eac9d4b18e921696887df23fe247
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 0cdf6e0a15bb61f4529de19a76ea2a31e8a945f8
-ms.openlocfilehash: ca89dd5bb0aee58be56e0e7b2fcea974e82c4c06
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/28/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369307"
 ---
-
-# <a name="upgrade-data-in-development-demo-or-sandbox-environments"></a>開発、デモ、またはサンドボックスの環境でのデータのアップグレード
+# <a name="upgrade-data-in-development-demo-or-sandbox-environments"></a>開発環境、デモ環境、サンドボックス環境でのデータのアップグレード
 
 [!include [banner](../includes/banner.md)]
 
 このトピックでは、古いデータベースを最新の Finance and Operations のアプリケーション リリースにアップグレードする方法について説明します。
 
-トピックでは、Microsoft Dynamics 365 for Finance and Operations、レベル 1 環境のデータベースを最新の更新バージョンにアップグレードするプロセスについて説明します。 レベル 1 環境は、開発、1 ボックス、またはデモ環境とも呼ばれます。 
+トピックでは、Microsoft Dynamics 365 for Finance and Operations のレベル 1 環境のデータベースを最新の更新プログラムにアップグレードするプロセスについて説明します。 レベル 1 環境は、開発、1 ボックス、またはデモ環境とも呼ばれます。 
 
 運用環境を含むレベル 2 以上の環境では、[Finance and Operations の最新の更新プログラムに移動するためのプロセス](upgrade-latest-update.md)で説明されているセルフ サービスのアップグレード手順を実行します。
 
 > [!IMPORTANT]
-> - Finance and Operations の最新の **プラットフォーム** を更新している場合、データベースをアップグレードする必要は**ありません**。 プラットフォーム更新プログラムには、下位互換性のあります。 このトピックは、Microsoft Dynamics 365 for Operations version 1611 (November 2016) から Microsoft Dynamics 365 for Finance and Operations 8.0 へのアップグレードなど、Finance and Operations アプリケーションのリリース間でのアップグレードのプロセスに対してのみ適用されます。
-> - このプロセスは、Microsoft Azure blob ストレージに保存されているドキュメント添付ファイルのアップグレードには適用されません。
+> - Finance and Operations の最新の **プラットフォーム** を更新している場合、データベースをアップグレードする必要は**ありません**。 プラットフォーム更新プログラムには、下位互換性のあります。 このトピックは、Microsoft Dynamics 365 for Operations バージョン 1611 (2016 年 11 月) から Microsoft Dynamics 365 for Finance and Operations 8.0 へのアップグレードなど、Finance and Operations アプリケーションのリリース間でのアップグレードのプロセスに対してのみ適用されます。
+> - このプロセスは、Microsoft Azure BLOB ストレージに保存されているドキュメント添付ファイルのアップグレードには適用されません。
 > - アップグレードされたすべてのカスタム コードは、データ アップグレード プロセスを実行する前に環境に適用する必要があります。
 > - バージョン 8.0 以降のFinance and Operations を使用している場合、アプリケーションのバージョンの間でデータのアップグレードは行われなくなりました。
 
@@ -45,7 +44,7 @@ ms.lasthandoff: 12/28/2018
 
 1. 現在のデータベースをバックアップします。
 2. Finance and Operations の最新の更新プログラムが既に正常に実行されている機能環境が必要です。
-3. Microsoft Dynamics AX 7.0 (2016 年 2 月) を Microsoft Dynamics AX アプリケーション バージョン 7.0.1 (2016 年 5 月) にアップグレードする場合、次の修正プログラムを**移行先**の環境にインストールします。
+3. Microsoft Dynamics AX 7.0 (2016 年 2 月) を Microsoft Dynamics AX アプリケーション バージョン 7.0.1 (2016 年 5 月) にアップグレードする場合、次の修正プログラムを**移行先の環境**にインストールします。
 
    - KB 3170386、「アップグレード スクリプト エラー: ReleaseUpdateDB70\_DMF。 updateIntegrationActivityExecutionMessageIdPreSync."
    - KB 3180871、「無効になったコンフィギュレーション キーに関連するビューの同期時に、RTW から更新プログラム 1 にデータをアップグレードするとエラーが発生します。」
@@ -59,7 +58,7 @@ ms.lasthandoff: 12/28/2018
    - **(RTW または 7.0 とも呼ばれる)、2016 年 2 月リリースからアップグレードする場合 (ビルド 7.0.1265.3015):** KB 4023685、「最新のアプリケーションリリースにアップグレードすると、「ソース システムのバージョン情報が見つかりませんでした」というエラーが表示されます」。
    - **(1611 または 7.1 とも呼ばれる)、2016 年 11 月リリースからアップグレードする場合 (ビルド 7.1.1541.3036):** KB 4023686、「最新のアプリケーションリリースにアップグレードすると、「ソース システムのバージョン情報が見つかりませんでした」というエラーが表示されます」。
    - **2017 年 7 月リリース (7.2 とも呼ばれる) からアップグレードする場合 (ビルド 7.2.11792.56024):** このバージョンに修正プログラムは必要ありません。
-   - このステップで必要なアプリケーション修正プログラムをインストールした後は、完全なデータベース同期を実行します。 このステップは、ゴールデン データベース環境で特に重要です。 データベース全体の同期では、データベースをアップグレードするときに使用される SysSetupLog テーブルを設定します。 SysSetup インターフェイスは発生されないため、この手順で Microsoft Visual Studio からデータベース同期を実行しないでください。 SysSetup インターフェイスを起動するには、管理者の **コマンド プロンプト** ウィンドウで次のコマンドを実行します。
+   - このステップで必要なアプリケーション修正プログラムをインストールした後は、完全なデータベース同期を実行します。 このステップは、ゴールデン データベース環境で特に重要です。 データベース全体の同期では、データベースをアップグレードするときに使用される SysSetupLog テーブルを設定します。 SysSetup インターフェイスはトリガーされないため、この手順で Microsoft Visual Studio からデータベース同期を実行しないでください。 SysSetup インターフェイスを起動するには、管理者の **コマンド プロンプト** ウィンドウで次のコマンドを実行します。
 
      ```
      cd J:\AosService\WebRoot\bin>
@@ -71,11 +70,11 @@ ms.lasthandoff: 12/28/2018
 
     - KB 4036156 - Retail マイナー バージョン アップグレード - 'バリアント番号順序が設定されていません。'
     
-        この修正プログラム パッケージには、KB 4035399 および KB 4035751 も含まれています。 このパッケージを使用するには、少なくとも Microsoft Dynamics 365 for Finance and Operations エンタープライズ エディションのプラットフォーム更新プログラム 9 (2017年7月) が必要です。 確信が持てない場合は、最新のバイナリをインストールします。
+        この修正プログラム パッケージには、KB 4035399 および KB 4035751 も含まれています。 このパッケージを使用するには、少なくとも Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition およびプラットフォーム更新プログラム 9 (2017 年 7 月) が必要です。 確信が持てない場合は、最新のバイナリをインストールします。
 
     - KB 4045801 - 2016 年秋の更新プログラムから 2017 年 7 月の更新プログラムにアップグレードすると、「スケジューラ ジョブが失敗しました」のエラーが発生しました。
 
-6. Microsoft Dynamics AX 2012 からアップグレードする場合は、データ アップグレードを実行する前に、移行先の環境に次のアプリケーション X++ 修正プログラムをインストールします。
+6. Microsoft Dynamics AX 2012 からアップグレードする場合は、データ アップグレードを実行する前に、移行先の環境に次のアプリケーション X++ 修正プログラムをインストールします:
 
     - KB 4033183 - Dynamics AX 2012 R2 または Dynamics AX 2012 R3 Pre-CU8 non-retail アップグレードは、dbo.RETAILTILLLAYOUTZONE のオブジェクトが存在しないため失敗しました。
     - KB 4040692 - Microsoft Dynamics 365 for Operations 7.2 への Dynamics AX 2012 R3 のアップグレードは、SalesLineIdx に RetailSalesLine の重複インデックスが存在するため失敗しました。
@@ -91,7 +90,7 @@ ms.lasthandoff: 12/28/2018
 
 ## <a name="select-the-correct-data-upgrade-deployable-package"></a>適切なデータ アップグレード展開可能なパッケージを選択
 
-最新の Finance and Operations 更新プログラムを実行しているターゲット環境用に最新のデータ アップグレード展開可能パッケージを入手するには、Microsoft Dynamics Lifecycle Services (LCS) 共用資産ライブラリから最新のバイナリ更新プログラムをダウンロードします。
+最新の Finance and Operations 更新プログラムを実行しているターゲット環境用に最新のデータ アップグレード配置可能パッケージを入手するには、Microsoft Dynamics Lifecycle Services (LCS) 共有アセット ライブラリから最新のバイナリ更新プログラムをダウンロードします。
 1. http://lcs.dynamics.com/ にサインイン
 2. **共有資産ライブラリ** ライブライ タイルを選択
 3. 共有アセット ライブラリの**アセット タイプの選択**で、**ソフトウェア配置可能パッケージ**を選択します。
@@ -128,7 +127,7 @@ ms.lasthandoff: 12/28/2018
 2. アップグレード対象の最新の Finance and Operations の更新プログラムが既に実行されているデモ環境または開発環境に、ソース データベース (アップグレードするデータベース) のバックアップをインポートまたは復元します。 既存のデータベースをそのままにして、新しいデータベースに **imported\_new** という名前を付けます。
 
     > [!NOTE]
-    > 以前のリリースで実行されている生産データベースのデータのアップグレードを検査する場合: 実稼働環境からデモまたは開発環境にデータベースをコピーするには、「[Microsoft Dynamics 365 for Finance and Operations データベースを Azure SQL データベースから Microsoft SQL Server Environment にコピーする](../database/copy-database-from-azure-sql-to-sql-server.md)」の手順に従います。   
+    > 以前のリリースで実行されている生産データベースのデータのアップグレードを検査する場合: 実稼働環境からデモまたは開発環境にデータベースをコピーするには、[Microsoft Dynamics 365 for Finance and Operations データベースを Azure SQL データベースから Microsoft SQL Server 環境にコピーする](../database/copy-database-from-azure-sql-to-sql-server.md) の手順に従います。   
     > 
     > Azure 仮想マシン (VM) 間でアップロード/ダウンロードの速度を向上するには、AzCopy を使用することをお勧めします。 AzCopy をダウンロードする方法、およびそれを使用して Azure blob ストアにコピーまたは Azure blob ストアからコピーする方法については、[AzCopy Command-Line Utility でデータを転送する](https://azure.microsoft.com/en-us/documentation/articles/storage-use-azcopy/) を参照してください。
 
@@ -176,7 +175,7 @@ AXUpdateInstaller.exe execute -runbookid=upgrade -rerunstep=5.3
 
 ### <a name="view-more-details-about-a-script-error"></a>スクリプト エラーに関するより詳細を表示します。
 
-runbook インストーラが起動するバッチ プロセスを使用して、X++ でアップグレード スクリプトを実行します。 Visual Studio のアプリケーション エクスプローラーでは、表示できる一部のクラスの前に **ReleaseUpdate** が付いています。 runbook プロセス中にアップグレード スクリプトが失敗すると、Microsoft SQL Server Management Studio を開き、次のコードを実行し、ReleaseUpdateScriptsErrorLog を照会し、エラーの原因をさらに確認できます。
+runbook インストーラが起動するバッチ プロセスを使用して、X++ でアップグレード スクリプトを実行します。 Visual Studio のアプリケーション エクスプローラーでは、表示できる一部のクラスの前に **ReleaseUpdate** が付いています。 runbook プロセス中にアップグレード スクリプトが失敗した場合、Microsoft SQL Server Management Studio を開き、次のコードを実行して ReleaseUpdateScriptsErrorLog を照会することでエラーの原因をさらに確認できます。
 
 ```
 select \* from RELEASEUPDATESCRIPTSERRORLOG
@@ -346,7 +345,7 @@ UserInfom などのカーネル テーブルでデータベース ログを有�
 > 実行ステップ: 5.1  
 > データ アップグレードの必要条件  
 > データ アップグレードの必要条件  
-> 未処理の例外の詳細情報: インタプリター評価スタックは、カーネルメソッドxRecord::Delete (), height before call: 0, height after call: 3 の呼び出し中に増加しました。 未処理の例外の詳細情報: KernelInstance: カーネルが削除されたメモリにアクセスしています  
+> 未処理の例外の詳細情報: インタープリター評価スタックは、カーネル メソッド xRecord::Delete ()、height before call: 0、height after call: 3 の呼び出し中に増加しました。 未処理の例外の詳細情報: KernelInstance: カーネルが削除されたメモリにアクセスしています  
 > 失敗したステップ
 
 この問題を解決するには、**システム管理**&gt;**設定**&gt;**データベース ログ設定** でデータベース ログの設定を確認してください。 必要に応じてカーネル テーブルのレコードを削除します。
@@ -435,4 +434,3 @@ KB 番号 3170386 がインストールされていない場合、次のエラ�
 ## <a name="additional-resources"></a>追加リソース
 
 [最新の Finance and Operations 更新プログラムへの移行の処理](upgrade-latest-update.md)
-

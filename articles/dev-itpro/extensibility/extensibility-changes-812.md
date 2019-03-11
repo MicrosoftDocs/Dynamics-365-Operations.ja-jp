@@ -1,30 +1,29 @@
 ---
-title: "Dynamics 365 for Finance and Operations バージョン 8.1.2 の拡張機能の変更"
-description: "このトピックでは、Dynamics 365 for Finance and Operations バージョン 8.1.2 でリリースされた拡張機能を一覧表示します。"
+title: Dynamics 365 for Finance and Operations バージョン 8.1.2 の拡張機能の変更
+description: このトピックは、Dynamics 365 for Finance and Operations バージョン 8.1.2 で実装された拡張機能を一覧表示します。
 author: FrankDahl
 manager: AnnBe
 ms.date: 12/18/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: josaw
 ms.search.scope: Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: App 8.1.2
+ms.openlocfilehash: 0414ecec86aa2ec22b385394c87a142dc1432df9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: d6c7c2af4dc6088d03a214ae2b289aaaa7244100
-ms.openlocfilehash: 8f5bbf27fea600262a020a97f95b5b975a28393b
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/03/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368639"
 ---
-
 # <a name="extensibility-changes-in-dynamics-365-for-finance-and-operations-version-812"></a>Dynamics 365 for Finance and Operations バージョン 8.1.2 の拡張機能の変更
 
 [!include [banner](../includes/banner.md)]
@@ -368,6 +367,5 @@ ms.lasthandoff: 11/03/2018
 | -------------|
 - AppCommon に SysQueryUpdateRecordSet クラスを作成します。
 - CW 品目の割合管理を有効にします。
-
 
 

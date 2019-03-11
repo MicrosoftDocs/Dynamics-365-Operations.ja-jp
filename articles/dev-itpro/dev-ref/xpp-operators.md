@@ -1,13 +1,13 @@
 ---
-title: "X++ 演算子"
-description: "このトピックでは、X++ でサポートされている演算子について説明します。"
+title: X++ 演算子
+description: このトピックでは、X++ でサポートされている演算子について説明します。
 author: RobinARH
 manager: AnnBe
 ms.date: 09/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: c4428613441424c81f4fd7dd92bbf842c62ce860
 ms.openlocfilehash: 3a16408380d40248478636d88c9f172e4a3a62d0
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/22/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368355"
 ---
-
 # <a name="x-operators"></a>X++ 演算子
 
 [!include [banner](../includes/banner.md)]
@@ -319,4 +318,3 @@ ms.lasthandoff: 09/22/2018
 |                                        条件付                                         |                  ? :                   |
 
 同じ行の演算子には、同等な優先順位があります。 式にこれらの演算子のうち 1 つ以上が含まれる場合、代入演算子が使用されない限り、式は左から右に評価されます。 (代入演算子は、右から左に評価されます)。たとえば、**&&** (論理的**アンド**) および**||** (論理的**または**) には、同じ優先順位があり、左から右に評価されます。 したがって、**0&&0||1 == 1**、および **1||0&&0 == 0** です。
-

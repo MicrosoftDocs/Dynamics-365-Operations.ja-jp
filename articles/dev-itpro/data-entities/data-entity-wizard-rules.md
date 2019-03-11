@@ -1,13 +1,13 @@
 ---
-title: "データ エンティティ ウィザード ルール"
-description: "このトピックでは、代理外部キー フィールドのナチュラル キー拡張と子/親関係の拡張について説明します。"
+title: データ エンティティ ウィザード ルール
+description: このトピックでは、代理外部キー フィールドのナチュラル キー拡張と子/親関係の拡張について説明します。
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: margoc
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: d16ed5b22fcea4b2e43e3b9c38930c8776ba00e4
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368514"
 ---
-
 # <a name="data-entity-wizard-rules"></a>データ エンティティ ウィザード ルール
 
 [!include [banner](../includes/banner.md)]
@@ -51,7 +50,7 @@ ms.lasthandoff: 08/13/2018
 - 子と親 **基数**プロパティの間の関係は、**厳密に 1 つ**または **0 または 1** である必要があります。
 - 子と親 **関連テーブル基数**プロパティの間の関係は、**厳密に 1 つ**または **0 または 1** である必要があります。
 
-既定では、親/子関係は展開されません。 **データ ソースの追加** ボタンを使用して、それらを追加する必要があります。 Microsoft Visual Studio でプロジェクトの既定の動作を変更するには、**Expand parent/child** オプションを **true** に設定します。
+既定では、親/子関係は展開されません。 **データ ソースの追加** ボタンを使用して、それらを追加する必要があります。 Microsoft Visual Studio でプロジェクトの既定の動作を変更するには、**親/子の展開** オプションを **true** に設定します。
 
 ### <a name="using-label-text-as-field-names"></a>ラベル テキストをフィールド名として使用
 
@@ -69,4 +68,3 @@ ms.lasthandoff: 08/13/2018
 - フィールドの**必須**プロパティと関連するフィールドの**必須**プロパティが両方とも **false** である場合は、両方のフィールドが **false** に明示的に設定されます。
 
 フィールドの**必須**プロパティと関連するフィールドの**必須**プロパティの値が異なる場合は、両方のフィールドは変わりません。 この場合、**自動**の既定値が使用されます。
-

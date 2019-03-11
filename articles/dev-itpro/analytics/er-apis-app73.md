@@ -1,13 +1,13 @@
 ---
-title: "Application update 7.3 での ER フレームワーク API の変更"
-description: "このトピックでは、Dynamics 365 for Finance and Operations、Enterprise Edition のアプリケーション更新プログラム 7.3 での電子申告 (ER) フレームワークの API における変更について説明します。"
+title: Application update 7.3 での ER フレームワーク API の変更
+description: このトピックでは、Dynamics 365 for Finance and Operations、Enterprise Edition のアプリケーション更新プログラム 7.3 での電子申告 (ER) フレームワークの API における変更について説明します。
 author: NickSelin
 manager: AnnBe
 ms.date: 11/28/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -15,14 +15,13 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2017-11-28
 ms.dyn365.ops.version: Platform update 8
+ms.openlocfilehash: c7da36a60b695882f2585ca408410303ee85f777
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 94cd516cac64cb132abdc0d3a4f234bf6ef19573
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369375"
 ---
-
 # <a name="er-framework-api-changes-for-application-update-73"></a>Application update 7.3 での ER フレームワーク API の変更
 
 [!include [banner](../includes/banner.md)]
@@ -39,25 +38,25 @@ ER API には 2 つのタイプの変更があります。
 外部クラスにアクセスするには、ファイルの先頭に **using** ディレクティブを追加する必要があります。
 
 ```
-using Microsoft.Dynamics365.LocalizationFramework;
+using Microsoft.Dynamics365.LocalizationFramework;
 ```
 
 たとえば、追加の変更をせずに外部クラスにアクセスすることができます。
 
 ```
-var destination = new ERFileDestinationMemory();
+var destination = new ERFileDestinationMemory();
 ```
 
 名前空間のエイリアスを作成することもできます。
 
 ```
-using LF = Microsoft.Dynamics365.LocalizationFramework;
+using LF = Microsoft.Dynamics365.LocalizationFramework;
 ```
 
 作成した名前空間のエイリアスを使用して、外部のクラスを参照することができます。
 
 ```
-var destination = new LF.ERFileDestinationMemory();
+var destination = new LF.ERFileDestinationMemory();
 ```
 
 ## <a name="how-to-access-internal-x-objects-by-using-erobjectsfactory"></a>ERObjectsFactory を使用して内部 X++ オブジェクトにアクセスする方法
@@ -159,4 +158,3 @@ ERObjectsFactory::createFileDestinationAttachmentWithOtherDocuType(<record>);
 // sample code
 ERObjectsFactory::createFileDestinationAttachmentWithOtherDocuType(_cashRegisterFiscalTrans_W);
 ```
-

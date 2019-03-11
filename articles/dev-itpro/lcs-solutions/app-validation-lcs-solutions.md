@@ -1,13 +1,13 @@
 ---
-title: "Finance and Operations 用のアプリケーションを検証する"
-description: "このトピックでは、カスタムコードが Microsoft のガイドラインを満たしていること、およびソリューション パッケージが正常にバンドルされ、Microsoft Dynamics 365 for Finance and Operations 環境で配送できることを確認するために使用される要件に関する情報を提供します。"
+title: Finance and Operations 用のアプリケーションを検証する
+description: このトピックでは、カスタムコードが Microsoft のガイドラインを満たしていること、およびソリューション パッケージが正常にバンドルされ、Microsoft Dynamics 365 for Finance and Operations 環境で配送できることを確認するために使用される要件に関する情報を提供します。
 author: kfend
 manager: AnnBe
 ms.date: 04/13/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Lifecycle Services
@@ -15,14 +15,13 @@ ms.custom: 196913
 ms.assetid: 5f9729e3-ff67-4526-b2aa-d7f9f3062a41
 ms.search.region: Global
 ms.author: omarc
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 6f33dbcb90fc5b1cafdbfc48152ad9847df6c555
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368437"
 ---
-
 # <a name="validate-applications-for-finance-and-operations"></a>Finance and Operations 用のアプリケーションを検証する
 
 [!include [banner](../includes/banner.md)]
@@ -96,8 +95,7 @@ AppSource で発行されている生成されたソリューションを使用�
 | 1     | 1      | Finance and Operations の顧客コードを検証します。 | CAR ツールを使用してすべての顧客モデル ファイルを実行し、レポートを生成します。 | ローカライズ、アクセシビリティ、パフォーマンス、セキュリティ上の問題なく CAR を正常に作成します。 最新のメジャー リリースにアップグレードした後、CAR が強調表示するすべてのメジャーな問題に対処する必要があります。 CAR は、春および秋の各メジャーリリース後から 8 週間以内に Microsoft に送信する必要があります。 |
 
 
-<a name="additional-resources"></a>その他のリソース
+<a name="additional-resources"></a>追加リソース
 --------
 
 [AppSource の Dynamics 365 for Finance and Operations アプリを公開](lcs-solutions-app-source.md)
-

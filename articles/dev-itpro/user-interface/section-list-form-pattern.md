@@ -1,13 +1,13 @@
 ---
-title: "フォーム パート セクション リストのフォーム パターン"
-description: "この記事では、フォーム パート セクション リストのフォーム パターンについての情報を提供します。 これらのワークスペース固有のパターンは、ワークスペース内にフィルターされたリストを表示するために開発されました。"
+title: フォーム パート セクション リストのフォーム パターン
+description: この記事では、フォーム パート セクション リストのフォーム パターンについての情報を提供します。 これらのワークスペース固有のパターンは、ワークスペース内にフィルターされたリストを表示するために開発されました。
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 1488b4871bcd1d9e3c90eb85894bd80ef84fe064
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 8e0f56ee97e2fd9becbef578bbafe72a124567fd
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368425"
 ---
-
 # <a name="form-part-section-list-form-patterns"></a>フォーム パート セクション リストのフォーム パターン
 
 [!include [banner](../includes/banner.md)]
@@ -48,8 +47,8 @@ ms.lasthandoff: 04/20/2018
 
 [![formPartSectionListDoubleWireframe](./media/formpartsectionlistdoublewireframe.png)](./media/formpartsectionlistdoublewireframe.png)
 
-## <a name="pattern-changes-for-microsoft-dynamics-365-for-finance-and-operations"></a>Microsoft Dynamics 365 for Finance and Operations のパターン変更
-これらのパターンは、Microsoft Dynamics AX 2012 では存在しませんでした。
+## <a name="pattern-changes-for-microsoft-dynamics-365-for-finance-and-operations"></a>Microsoft Dynamics 365 for Finance and Operations 用のパターンの変更
+これらのパターンは、Microsoft DynamicsAX 2012 では存在しませんでした。
 
 ## <a name="model"></a>モデル
 ### <a name="form-part-section-list-high-level-structure"></a>フォーム パート セクション リスト: 高レベルの構造
@@ -127,4 +126,3 @@ ms.lasthandoff: 04/20/2018
 ### <a name="open-issues"></a>未処理の問題
 
 None
-

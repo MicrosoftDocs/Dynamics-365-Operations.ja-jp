@@ -1,14 +1,13 @@
 ---
-redirect_url: /dynamics365/unified-operations/dev-itpro/database/dbmovement-operations
-title: "Finance and Operations データベースを Azure SQL データベースから SQL Server 環境にコピーする"
-description: "このトピックでは、 Microsoft Dynamics 365 for Finance and Operations のデータベースを Azure ベースの環境から SQL Server ベースの環境に移動する方法について説明します。"
+title: Finance and Operations データベースを Azure SQL データベースから SQL Server 環境にコピーする
+description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations のデータベースを Azure ベースの環境から SQL Server ベースの環境に移動する方法について説明します。
 author: laneswenka
 manager: AnnBe
 ms.date: 01/07/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -18,19 +17,18 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
+ms.openlocfilehash: 89ec024006598ac27736b71c5f2316445ad590ab
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a388e0efe6c19a3aabe04e7fff039ce11ae023c4
-ms.openlocfilehash: 519cdb523e93225857c0d8bed5bb9b03b7277921
-ms.contentlocale: ja-jp
-ms.lasthandoff: 01/07/2019
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369534"
 ---
-
 # <a name="copy-finance-and-operations-databases-from-azure-sql-database-to-sql-server-environments"></a>Finance and Operations データベースを Azure SQL データベースから SQL Server 環境にコピーする
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Finance and Operations のデータベースを、Microsoft Azure に基づいた環境から Microsoft SQL Serverに基づく環境にエクスポートする方法について説明します。
+このトピックでは、Microsoft Dynamics 365 for Finance and Operations のデータベースを、Microsoft Azure に基づいた環境からエクスポートし、Microsoft SQL Server に基づいた環境にインポートする方法について説明します。
 
 ## <a name="overview"></a>概要
 
@@ -69,7 +67,7 @@ ms.lasthandoff: 01/07/2019
 | FiscalEstablishment\_BR.ConsumerEFDocCsc                 | **組織管理** &gt; **会計機関** &gt; **会計機関** の順に移動します。 |
 | FiscalEstablishmentStaging.CSC                           | このフィールドは、データ インポート/エクスポート フレームワーク (DIXF) によって使用されます。 |
 | HcmPersonIdentificationNumber.PersonIdentificationNumber | **人事管理** &gt; **作業者** &gt; **作業者** の順に選択します。 **ワーカー**タブの、**個人情報**グループで、**ID 番号**を選択します。 |
-| HcmWorkerActionHire.PersonIdentificationNumber           | このフィールドは、Microsoft Dynamics AX 7.0 以降 (2016 年 2 月) に廃止されました。 これは以前、**すべての作業者アクション** フォーム (**人事管理** &gt; **作業者** &gt; **アクション** &gt; **すべての作業者アクション**) でした。 |
+| HcmWorkerActionHire.PersonIdentificationNumber           | このフィールドは、Microsoft Dynamics AX 7.0 以降 (2016 年 2 月) は廃止されました。 これは以前、**すべての作業者アクション** フォーム (**人事管理** &gt; **作業者** &gt; **アクション** &gt; **すべての作業者アクション**) でした。 |
 | SysEmailSMTPPassword.Password                            | **システム管理** &gt; **電子メール** &gt; **電子メール パラメーター** の順に選択します。 |
 | SysOAuthUserTokens.EncryptedAccessToken                  | このフィールドは、AOS で内部的に使用されます。 これは無視できます。 |
 | SysOAuthUserTokens.EncryptedRefreshToken                 | このフィールドは、AOS で内部的に使用されます。 これは無視できます。 |
@@ -107,7 +105,7 @@ SqlPackage.exe /a:import /sf:D:\Exportedbacpac\my.bacpac /tsn:localhost /tdn:<ta
 - **sf(ソース ファイル)** – インポートするファイルのパスと名前。
 
 > [!NOTE]
-> インポート中に、ユーザー名およびパスワードは必要ありません。 既定では、SQL Server は現在サインインしているユーザーに対して Microsoft Windows 認証を使用します。
+> インポート中に、ユーザー名およびパスワードは必要ありません。 既定では、SQL Server は、現在サインインしているユーザーに対して Microsoft Windows 認証を使用します。
 
 ## <a name="update-the-database"></a>データベースの更新
 
@@ -192,7 +190,7 @@ ALTER DATABASE [your database name] SET CHANGE_TRACKING = ON (CHANGE_RETENTION =
 環境を切り替えて新しいデータベースを使用するには、最初に次のサービスを停止します。
 
 - World Wide Web 公開サービス
-- Microsoft Dynamics 365 Unified Operations: Batch Management Service
+- Microsoft Dynamics 365 Unified Operations: バッチ管理サービス
 - Management Reporter 2012 処理サービス
 
 サービスが停止した後、AxDB データベース **AxDB\_orig** の名前を変更し、新しくインポートしたデータベース **AxDB** の名前を変更し、そして 3 つのサービスを再起動します。
@@ -223,7 +221,7 @@ Finance and Operations クライアントでは、暗号化された環境固有
 | FiscalEstablishment\_BR.ConsumerEFDocCsc                 | **組織管理** &gt; **会計機関** &gt; **会計機関** の順に移動します。 |
 | FiscalEstablishmentStaging.CSC                           | このフィールドは DIXF で使用されます。 |
 | HcmPersonIdentificationNumber.PersonIdentificationNumber | **人事管理** &gt; **作業者** &gt; **作業者** の順に選択します。 **ワーカー**タブの、**個人情報**グループで、**ID 番号**を選択します。 |
-| HcmWorkerActionHire.PersonIdentificationNumber           | このフィールドは、AX 7.0 以降 (2016 年 2 月) に廃止されました。 これは以前、**すべての作業者アクション** フォーム (**人事管理** &gt; **作業者** &gt; **アクション** &gt; **すべての作業者アクション**) でした。 |
+| HcmWorkerActionHire.PersonIdentificationNumber           | このフィールドは、AX 7.0 以降 (2016 年 2 月) は廃止されました。 これは以前、**すべての作業者アクション** フォーム (**人事管理** &gt; **作業者** &gt; **アクション** &gt; **すべての作業者アクション**) でした。 |
 | SysEmailSMTPPassword.Password                            | **システム管理** &gt; **電子メール** &gt; **電子メール パラメーター** の順に選択します。 |
 | SysOAuthUserTokens.EncryptedAccessToken                  | このフィールドは、AOS で内部的に使用されます。 これは無視できます。 |
 | SysOAuthUserTokens.EncryptedRefreshToken                 | このフィールドは、AOS で内部的に使用されます。 これは無視できます。 |
@@ -274,4 +272,3 @@ WHERE PARM = 'SYSTABVERSION'
 - Azure でホストされている Finance and Operations 1 ボックス環境では、インポートするときに D ドライブに .bacpac ファイルを配置します。 (ワンボックス環境はレベル 1 環境とも呼ばれます。) Azure Vm 上でのテンポラリー ドライブに関する詳細については、[Windows Azure 仮想マシンのテンポラリー ドライブを理解する](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/) ブログ投稿を参照してください。
 - SQL Server Windows サービス [インスタンス ファイルの初期化](https://msdn.microsoft.com/en-us/library/ms175935.aspx) を実行するアカウントに権限を付与します。 この方法で、インポート処理の速度および \*.bak ファイルからの復元の速度を向上させることができます。 開発者環境では、axlocaladmin アカウントとして実行する SQL Server を設定することにより、SQL Server サービスを実行するアカウントがこれらの権限を持っていることを簡単に確認することができます。
 - 大きなデータベースのメモリ制限が存在する場合があるので、Azure SQLデータベースから、**Management Studio でデータ層アプリケーションのエクスポート**を選択しないでください。
-

@@ -1,35 +1,34 @@
 ---
-title: "Dynamics 365 for Operations プラットフォーム更新プログラム 7 (2017 年 5 月) の新機能および変更された機能"
-description: "このトピックでは、Dynamics 365 for Operations プラットフォーム更新プログラム 7 における新機能または変更された機能について説明します。 このバージョンは 2017 年 5 月にリリースされ、ビルド番号は 7.0.4542.16189 です。"
+title: Dynamics 365 for Operations プラットフォーム更新プログラム 7 (2017 年 5 月) の新機能および変更された機能
+description: このトピックでは、Dynamics 365 for Operations プラットフォーム更新プログラム 7 の新機能または変更された機能について説明します。 このバージョンは 2017 年 5 月にリリースされ、ビルド番号は 7.0.4542.16189 です。
 author: tonyafehr
 manager: AnnBe
 ms.date: 05/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
-ms.custom: 
+ms.custom: ''
 ms.assetid: 54cfeac5-e977-4c02-8e7a-4ddb4b336713
 ms.search.region: Global
 ms.author: tfehr
-ms.search.validFrom: 
+ms.search.validFrom: ''
 ms.dyn365.ops.version: Platform update 7
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: c9af66dcaac3ca8dd8830f09bcc95efff2e67805
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369891"
 ---
-
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-platform-update-7-may-2017"></a>Dynamics 365 for Operations プラットフォーム更新プログラム 7 (2017 年 5 月) の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Dynamics 365 for Operations プラットフォーム更新プログラム 7 における新機能または変更された機能について説明します。 このバージョンは 2017 年 5 月にリリースされ、ビルド番号は 7.0.4542.16189 です。
+このトピックでは、Dynamics 365 for Operations プラットフォーム更新プログラム 7 の新機能または変更された機能について説明します。 このバージョンは 2017 年 5 月にリリースされ、ビルド番号は 7.0.4542.16189 です。
 
 ## <a name="configuration-data-projects"></a>コンフィギュレーション データ プロジェクト
 
@@ -114,4 +113,3 @@ public class abFormEvent
         }
     }
 ```
-

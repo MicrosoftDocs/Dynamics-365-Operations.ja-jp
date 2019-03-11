@@ -1,28 +1,28 @@
 ---
-title: "Dynamics 365 for Finance and Operations バージョン 8.1.2 (2018 年 12 月) の新機能および変更された機能"
-description: "このトピックでは、Dynamics 365 for Finance and Operations バージョン 8.1.2 の新機能または変更された機能について説明します。 このバージョンは 2018 年 12 月にリリースされました。"
+title: Dynamics 365 for Finance and Operations バージョン 8.1.2 (2018 年 12 月) の新機能および変更された機能
+description: このトピックでは、Dynamics 365 for Finance and Operations バージョン 8.1.2 の新機能または変更された機能について説明します。 このバージョンは 2018 年 12 月にリリースされました。
 author: tonyafehr
 manager: AnnBe
 ms.date: 12/18/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: tfehr
 ms.search.scope: Operations
-ms.custom: 
+ms.custom: ''
 ms.assetid: b364a31d-52de-45c5-b698-64c5262c592a
 ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Release 8.1.2
+ms.openlocfilehash: e9b9957db66170f906195a3ba420ff9475e4b741
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 9290114388b210dfdfd980e293df2e21d0aa50ea
-ms.openlocfilehash: 2a16ab6d2d240205a02c0c5a34f144e1bdb76a04
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369199"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-version-812-december-2018"></a>Dynamics 365 for Finance and Operations バージョン 8.1.2 (2018 年 12 月) の新機能および変更された機能
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 12/20/2018
 
 このトピックでは、Microsoft Dynamics 365 for Finance and Operations バージョン 8.1.2 の新機能または変更された機能について説明します。 このバージョンは 2018 年 12 月にリリースされ、ビルド番号は 8.1.195 です。
 
-Microsoft Dynamics 365 for Retail の最新リリースの新機能と変更については、[Dynamics 365 for Retail の新機能と変更点](https://docs.microsoft.com/dynamics365/unified-operations/retail/get-started/whats-new)を参照してください。
+Microsoft Dynamics 365 for Retail の新機能と変更についての最新のリリースでについては、[Dynamics 365 for Retail の新機能と変更](https://docs.microsoft.com/dynamics365/unified-operations/retail/get-started/whats-new) を参照してください。
 
 ### <a name="dynamics-365-october-18-release-notes"></a>Dynamics 365 2018 年 10 月リリース ノート
 
@@ -45,15 +45,20 @@ Microsoft Dynamics 365 for Retail の最新リリースの新機能と変更に�
 
 ## <a name="platform-update-22"></a>プラットフォーム update 22
 
-プラットフォーム更新プログラム 22 を含む Microsoft Dynamics 365 for Finance and Operations バージョン 8.1.2。 プラットフォーム更新プログラム 21 に関する詳細については、[Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 21 (2018 年 11 月) の新機能および変更された機能](whats-new-platform-update-22.md) を参照してください。
+Microsoft Dynamics 365 for Finance and Operations バージョン 8.1.2 には、プラットフォーム更新プログラム 22 が含まれています。 プラットフォーム更新プログラム 22 については、[Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 22 (2018 年 11 月) の新機能と変更](whats-new-platform-update-22.md)を参照してください。
 
 ## <a name="extensibility-enhancements"></a>拡張性の強化
 
-Finance and Operations の今回のリリースでは、列挙、メタデータ、メソッドの強化など、拡張性をサポートするために、さまざまな拡張機能の強化が加えられています。 詳しくは、[Dynamics 365 for Finance and Operations バージョン 8.1.2 の拡張機能の変更](../../dev-itpro/extensibility/extensibility-changes-812.md)をご覧ください。
+Finance and Operations の今回のリリースでは、列挙、メタデータ、メソッドの強化など、拡張性をサポートするために、さまざまな拡張機能の強化が加えられています。 詳細については、[Dynamics 365 for Finance and Operations バージョン 8.1.2 で変更された拡張機能](../../dev-itpro/extensibility/extensibility-changes-812.md)を参照してください。
 
 ## <a name="derived-dimension-values"></a>派生分析コード値
 
 今回のリリースには、派生した分析コード値の変更を防止し、派生した分析コード値で既存の分析コード値を上書きできるようにする機能が含まれています。 詳細については、「[財務分析コード](../../financials/general-ledger/financial-dimensions.md)」を参照してください。
+
+## <a name="resume-master-planning"></a>マスター プランの再開
+このリリースには、メイン スレッドが予期せず停止した場合にマスター プランのバッチ ジョブが自動的に再開するための、強化された計画エンジン機能が含まれています。 これは、何らかの理由でマスター プランの実行中にバッチ サーバー接続が失われた場合に発生する可能性があります。 この機能が実装される前に、マスター プランの完全な再実行が必要でした。 これで、マスター プランのバッチ ジョブは自動的に再開され、中断された場所から続行されます。 マスター プラン履歴ログから、プランナーはメイン スレッドが予期せずに停止したこと、およびプロセスが再開されたことを確認できます。
+
+再開は 1 回だけ実行されます。 つまり、メイン スレッドが再開中に予期せずに再び停止した場合、ログに失敗としてマークされ、再開はしません。 また、再開は、少なくともマスター プラン計算の適用範囲に達した再生成およびジョブにのみ適用されます。 ヘルパー スレッドが突然停止した場合は、プランは残りのヘルパーで続行されます。
 
 ## <a name="intrastat-format-changes-for-belgium"></a>ベルギーのイントラスタット形式の変更
 今回のリリースには、2019 年の報告に適用されるベルギーの XML イントラスタット形式への変更が含まれています。 新しい形式を適用するには、LCS 共有資産ライブラリから ER コンフィギュレーションの次のバージョン (またはそれ以降のバージョン) をインポートする必要があります: Intrastat (BE).version.2.6.xml。 コンフィギュレーションをインポートする方法の詳細については、[Lifecycle Services からコンフィギュレーションをインポートする](../../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md)を参照してください。 
@@ -108,7 +113,7 @@ Finance and Operations の今回のリリースでは、列挙、メタデータ
  - 仕入帳形式.version.46.13
  - 売上帳簿形式.version.46.13
  - 購買帳簿追加シート形式.version.46.9
- - 売上帳簿追加シート形式.version.46.9
+ - 売上帳簿追加シート形式.version.46.13
  - Facture 仕訳帳format.version.46.4
  
 詳細については、[Lifecycle Services からのコンフィギュレーションのインポート](../../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md) を参照してください。 
@@ -116,5 +121,4 @@ Finance and Operations の今回のリリースでは、列挙、メタデータ
 これらのコンフィギュレーション バージョンは、パブリック プレビューとしてリリースされ、受け取ったフィードバックに基づいて更新されます。 これらを使用して、販売の電子形式、購買帳簿、他のシート、Facture の仕訳帳がどのように電子申告で構成されているかを参照してください。 実際の環境で派生したカスタム コンフィギュレーションの基本コンフィギュレーションとしてこれらのコンフィギュレーションを使用しないでください。
 
 詳細については、[売上帳簿、購買帳簿、および請求書 Facture 仕訳帳](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/rus-sales-books-purchase-books)を参照してください。
-
 

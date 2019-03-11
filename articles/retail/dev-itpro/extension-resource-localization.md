@@ -1,13 +1,13 @@
 ---
-title: "Retail 拡張リソースおよびラベル ファイルのローカライズ"
-description: "このトピックでは、POS UI ラベル、POS メッセージ、入庫ラベル、および Retail サーバーまたは CRT のエラー メッセージを変更する方法について説明します。 Retail サーバーまたは CRT のカスタム エラー メッセージを追加する方法についても説明します。"
+title: Retail 拡張リソースおよびラベル ファイルのローカライズ
+description: このトピックでは、POS UI ラベル、POS メッセージ、入庫ラベル、および Retail サーバーまたは CRT のエラー メッセージを変更する方法について説明します。 Retail サーバーまたは CRT のカスタム エラー メッセージを追加する方法についても説明します。
 author: mugunthanm
 manager: AnnBe
 ms.date: 07/09/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: margoc
 ms.search.scope: Retail, Operations
@@ -16,14 +16,13 @@ ms.search.industry: retail
 ms.author: mumani
 ms.search.validFrom: 2018-05-31
 ms.dyn365.ops.version: 8.0.1
+ms.openlocfilehash: 116cd847aa50eec7edbe13e7f51ed89cec290e72
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: f2e3a40f58b57785079e1940b2d24a3598a3ad1b
-ms.openlocfilehash: ec2806b70830ad3708e668ee6c1f192bec518b26
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368596"
 ---
-
 # <a name="localize-retail-extension-resources-and-label-files"></a>Retail 拡張リソースおよびラベル ファイルのローカライズ
 
 [!include[banner](../includes/banner.md)]
@@ -31,7 +30,7 @@ ms.lasthandoff: 08/09/2018
 
 このトピックでは、販売時点管理 (POS) ユーザー インターフェイス (UI)、POS メッセージ (エラー、警告、および情報)、入庫ラベル、および Retail サーバーまたは Commerce Runtime のサービス (CRT) のエラー メッセージの点にラベルを変更する方法について説明します。 Retail サーバーまたは CRT のカスタム エラー メッセージを、同じ方法で追加することもできます。 ただし、新しい POS 拡張ラベルの場合は、POS 拡張のローカライズ フレームワークを使用します。
 
-このトピックは、Microsoft Dynamics 365 for Finance and Operations 7.2 最新の更新プログラムと、Microsoft Dynamics 365 for Retail 7.2 最新の更新プログラム、およびそれ以降のバージョンに適用可能です。
+このトピックは、 最新の更新プログラムが適用された Microsoft Dynamics 365 for Finance and Operations 7.2、最新の更新プログラムが適用された Microsoft Dynamics 365 for Retail 7.2 とそれ以降のバージョンに適用されます。
 
 ## <a name="retail-pos-labels-and-messages-error-warning-and-information"></a>Retail POS ラベルおよびメッセージ (エラー、警告、および情報)
 
@@ -63,7 +62,7 @@ ms.lasthandoff: 08/09/2018
 
 POS 文字列のテキスト ID を取得するには、デバッグ モードで Retail ソフトウェア開発キット (SDK) を使用して、POS を実行する必要があります。 POS では、テキスト ID を文字列 ID と呼びます。
 
-1. 管理者モードで Microsoft Visual Studio 2015 を起動します。
+1. Microsoft Visual Studio 2015 を管理者モードで起動します。
 2. **ModernPOS** ソリューションを **…\\RetailSDK\\POS** から開きます。
 3. **ソリューション構成**プロパティを**デバッグ**に、**ソリューション プラットフォーム**プロパティを **x86** に、および**配置**プロパティを**ローカル コンピューター**に設定します。
 4. ソリューションをコンパイル、およびビルドしてから、**配置\>ローカル コンピューター**を選択します。
@@ -108,8 +107,8 @@ POS 文字列のテキスト ID を取得するには、デバッグ モード�
 1. **…\\RetailSDK\\ドキュメント\\リソース**に移動します。
 2. Visual Studio で、次のリソース ファイルのいずれかを開きます。
 
-    - **Retail サーバーまたは CRT エラー メッセージを変更する:** RuntimeExceptionMessages.resx
-    - **入庫文字列の変更:** RuntimeReceiptMessages.resx
+    - **Retail server または CRT エラー メッセージを変更する:** RuntimeExceptionMessages.resx
+    - **入力された文字列の変更:** RuntimeReceiptMessages.resx
 
     リソース ファイル内のすべてのメッセージについて、Visual Studio は名前と値を表示します。
 
@@ -138,8 +137,7 @@ POS 文字列のテキスト ID を取得するには、デバッグ モード�
 ```C#
 throw new CommerceException("Microsoft_Dynamics_Commerce_CustomId1", ExceptionSeverity.Warning, null, "Custom error")
                     {
-                        LocalizedMessage = "My new message in US English.",
-                        LocalizedMessageParameters = new object[] { }
-                    };
+                        LocalizedMessage = "My new message in US English.",
+                        LocalizedMessageParameters = new object[] { }
+                    };
 ```
-

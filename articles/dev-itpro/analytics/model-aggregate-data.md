@@ -1,13 +1,13 @@
 ---
-title: "データの集計モデル"
-description: "このチュートリアルでは、集計データをモデリングするプロセスについて説明します。"
+title: データの集計モデル
+description: このチュートリアルでは、集計データをモデリングするプロセスについて説明します。
 author: MilindaV2
 manager: AnnBe
 ms.date: 12/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 1a3f5fba3c3b1309834e9ee3a13651d9d6784753
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369829"
 ---
-
 # <a name="model-aggregate-data"></a>データの集計モデル
 
 [!include [banner](../includes/banner.md)]
@@ -33,7 +32,7 @@ ms.lasthandoff: 08/13/2018
 
 ## <a name="prerequisites"></a>前提条件
 
-このチュートリアルでは、リモート デスクトップを使用して環境にアクセスし、管理者としてプロビジョニングする必要があります。 詳細については、[Microsoft Dynamics 365 for Finance and Operations インスタンスにアクセス](../dev-tools/access-instances.md) というトピックを参照してください。
+このチュートリアルでは、リモート デスクトップを使用して環境にアクセスし、管理者としてプロビジョニングする必要があります。 詳細については、「[Microsoft Dynamics 365 for Finance and Operations インスタンスにアクセス](../dev-tools/access-instances.md)」というトピックを参照してください。
 
 ## <a name="key-concepts"></a>重要な概念
 - **集計の測定**は、以前のバージョンの**分析視点**および**キューブ**と同様に、集計データをモデル化して使用することができます。
@@ -289,4 +288,3 @@ ms.lasthandoff: 08/13/2018
     | 次の値を超えた場合に緑 | 110        |
 
 8. 変更を保存するには、左下の**保存**をクリックします。 KPI の状態の色が表示される KPI タイルで変更されたことに注意します。
-

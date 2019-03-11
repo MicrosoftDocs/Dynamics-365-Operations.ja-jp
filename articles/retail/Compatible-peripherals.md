@@ -1,15 +1,15 @@
 ---
-title: "Retail の周辺機器互換性"
-description: "このトピックでは、Microsoft Dynamics 365 for Retail との互換性がテストされた Retail 周辺機器を一覧表示します。"
+title: Retail の周辺機器互換性
+description: このトピックでは、Microsoft Dynamics 365 for Retail との互換性のテストが完了している Retail 周辺機器を示します。
 author: rubencdelgado
 manager: AnnBe
 ms.date: 10/08/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: IT Pro
-ms.search.scope: 
+ms.search.scope: ''
 ms.search.region:
 - Global for most topics. Set Country/Region name for localizations
 ms.author:
@@ -17,20 +17,19 @@ ms.author:
 ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
-ms.dyn365.ops.version: 
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.dyn365.ops.version: ''
 ms.openlocfilehash: 0195c30f7582f85a6e7cb52323e793df4e7a8324
-ms.contentlocale: ja-jp
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369919"
 ---
-
 # <a name="peripheral-compatibility-for-retail"></a>Retail の周辺機器互換性
 
 [!include[banner](../includes/banner.md)]
 
-このページに挙げられたデバイスは、[小売の周辺機器シミュレーター](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-peripheral-simulator)を使用して Microsoft Dynamics 365 for Retail との互換性がテストされています。 デバイスごとに、テストを実行し、Microsoft に成功結果を送信した関係者が、[テスト担当者] 列に表示されます。 "Microsoft Corp" によるテストとして表示されているデバイスについては、Microsoft にサポート要求を送信する必要があります。 Microsoft 以外の関係者によってテストされたデバイスに関する問題は、まずテストした関係者に報告する必要があります。
+このページに挙げられたデバイスは、[小売の周辺機器シミュレーター](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-peripheral-simulator)を使用して Microsoft Dynamics 365 for Retail との互換性のテストが完了しています。 デバイスごとに、テストを実行し、Microsoft に成功結果を送信した関係者が、[テスト担当者] 列に表示されます。 "Microsoft Corp" によるテストとして表示されているデバイスについては、Microsoft にサポート要求を送信する必要があります。 Microsoft 以外の関係者によってテストされたデバイスに関する問題は、まずテストした関係者に報告する必要があります。
 
 ## <a name="compatible-devices-by-type"></a>タイプ別の互換性のあるデバイス
 
@@ -77,7 +76,6 @@ ms.lasthandoff: 01/04/2019
 
 © 2018 Microsoft Corporation. All rights reserved
 
-このドキュメントに記載された内容は情報提供のみを目的としており、これらの情報についてマイクロソフトは明示、黙示、あるいは法律上のいかなる責任も負わないものとします。 結果は、指定した Microsoft Dynamics ソフトウェアが使用されていた制御されたテスト環境における特定のデバイスおよびコンフィギュレーションのテストに基づいています。 異なるシステム ハードウェア、ソフトウェア デザインまたはコンフィギュレーション、カスタマイズ、またはトランザクションの組み合わせによって、実際のパフォーマンスまたは結果に影響が及ぶ場合もあります。
+このドキュメントに記載された内容は情報提供のみを目的としており、これらの情報についてマイクロソフトは明示、黙示、あるいは法律上のいかなる責任も負わないものとします。 結果は、指定した Microsoft Dynamics ソフトウェアが使用された制御されているラボ環境での、特定のデバイスおよびコンフィギュレーションのテストに基づいています。 異なるシステム ハードウェア、ソフトウェア デザインまたはコンフィギュレーション、カスタマイズ、またはトランザクションの組み合わせによって、実際のパフォーマンスまたは結果に影響が及ぶ場合もあります。
 
 MICROSOFT は、明示的または暗黙的にかかわらず、この概要を保証を行いません。 このドキュメントは、"現状のまま" 提供されます。 URL およびその他のインターネット Web サイトの参照を含む、このドキュメントの情報および見解は、予告なしに変更することがあります。 このドキュメントの使用上のリスクは、すべてユーザーが負うものとします。 このドキュメントは、Microsoft の製品に含まれる知的財産に対する法律上の権利をお客様に付与するものではありません。 内部での参照を目的とする場合、このドキュメントをコピーして使用できます。
-

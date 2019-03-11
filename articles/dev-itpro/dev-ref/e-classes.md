@@ -1,13 +1,13 @@
 ---
-title: "E クラス"
-description: "文字 E で始まるシステム API クラス。"
+title: E クラス
+description: 文字 E で始まるシステム API クラス。
 author: RobinARH
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: b19092e6941bd8c7a4b9b3f2934fe405211270e9
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368544"
 ---
-
 # <a name="e-classes"></a>E クラス
 
 [!include [banner](../includes/banner.md)]
@@ -63,7 +62,7 @@ ms.lasthandoff: 08/09/2018
 | public int selectionEndLine()                                                   |                                                 |
 | public int selectionStartCol()                                                  |                                                 |
 | public int selectionStartLine()                                                 |                                                 |
-| ::public static Editor open(str documentPath)                                   |                                                 |
+| ::public static Editor open (str documentPath)                                   |                                                 |
 | public void gotoLine(int LineNo)                                                |                                                 |
 | public void closeApplicationObjectDialog()                                      |                                                 |
 | public void mark(int line, int col)                                             |                                                 |
@@ -468,7 +467,6 @@ CodeAccessPermission クラスからクラスを派生させる場合に、こ�
 ExecutePermission クラスの新しいインスタンスを初期化します。 終了。
 
     public void new()
-
 
 
 

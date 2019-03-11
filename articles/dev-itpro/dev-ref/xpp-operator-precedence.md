@@ -1,13 +1,13 @@
 ---
-title: "演算子の優先順位"
-description: "この記事では、Microsoft Dynamics 365 for Finance and Operations の演算子の優先順位について説明します。"
+title: 演算子の優先順位
+description: この記事では、Microsoft Dynamics 365 for Finance and Operations の演算子の優先順位について説明します。
 author: pvillads
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 228601e211844b3439fb5e7bef70c8b333b2d705
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 440a75aadf4f345f318f6e542059d45a47c49316
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369348"
 ---
-
 # <a name="operator-precedence"></a>演算子の優先順位
 
 [!include [banner](../includes/banner.md)]
@@ -54,7 +53,6 @@ ms.lasthandoff: 04/20/2018
 [算術演算子](http://msdn.microsoft.com/library/cffbc613-3875-4520-9dea-046dc99aab99(AX.60).aspx)
 
 [リレーショナル演算子](http://msdn.microsoft.com/library/702af366-4d46-445e-bd4b-722c9845199f(AX.60).aspx)
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "Hardware Station 拡張性"
-description: "このトピックでは、新規デバイスと既存デバイスの新規デバイス タイプのサポートを追加するために、Hardware Station を拡張する方法について説明します。"
+title: Hardware Station 拡張性
+description: このトピックでは、新規デバイスと既存デバイスの新規デバイス タイプのサポートを追加するために、Hardware Station を拡張する方法について説明します。
 author: RobinARH
 manager: AnnBe
 ms.date: 07/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations, Retail
@@ -17,27 +17,26 @@ ms.search.region: Global
 ms.author: sijoshi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: 5dfaea195248edb7b22b59ca9b85812d6e70d400
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 1bd5f6a8ee9d5a18d13c9caf2014a2e9345d404c
-ms.openlocfilehash: 05ea201f1860b3996e0661bec119d896c50c69e5
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369603"
 ---
-
 # <a name="hardware-station-extensibility"></a>Hardware Station 拡張性
 
 [!include [banner](../../includes/banner.md)]
 
 > [!NOTE]
-> このトピックは、Dynamics 365 for Finance and Operations の 7.1 およびそれ以降のバージョンに適用可能です。 バージョン 7.2 およびそれ以上の場合は、この実装はサポートされていません。 これらのバージョンでは、オーバーレイせずに拡張モデルに従います。
+> このトピックは、Dynamics 365 for Finance and Operations バージョン 7.1 およびそれ以前のバージョンに適用されます。 バージョン 7.2 およびそれ以上の場合は、この実装はサポートされていません。 これらのバージョンでは、オーバーレイせずに拡張モデルに従います。
 
 このトピックでは、新規デバイスと既存デバイスの新規デバイス タイプのサポートを追加するために、Hardware Station を拡張する方法について説明します。
 
 <a name="retail-hardware-station-overview"></a>Retail Hardware Station の概要
 --------------------------------
 
-Retail Hardware Station は、プリンター、キャッシュ ドロワー、スキャナー、および支払ターミナルなどの小売ハードウェア周辺機器に接続するために Retai Modern POS および Cloud POS で使用されます。 
+Retail Hardware Station は、プリンター、キャッシュ ドロワー、スキャナー、および支払ターミナルなどの小売ハードウェア周辺機器に接続するために Retail Modern POS および Cloud POS で使用されます。 
 
 [![HWS-Local-Traditional](./media/hws-local-300x236.png)](./media/hws-local.png)
 
@@ -130,7 +129,6 @@ Retail Hardware Station は、プリンター、キャッシュ ドロワー、�
 ローカルのハードウェア ステーションが拡張機能を使用する前に、拡張機能用のエントリが含まれるように Modern POS DllHost.exe.config ファイル (C:\\Program Files (x86)\\Microsoft Dynamics AX\\70\\Retail Modern POS\\ClientBroker) の**合成**セクションを更新する必要があります。 コンフィギュレーション ファイルの構成ターゲットの順序によって優先順位が決まります。
 
 [![ローカル ハードウェア ステーションのコンフィギュレーション](./media/hws-dll-host-local-config.png)
-
 
 
 

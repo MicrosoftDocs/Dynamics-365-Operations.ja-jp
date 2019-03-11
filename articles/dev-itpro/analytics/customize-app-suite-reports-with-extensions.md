@@ -1,13 +1,13 @@
 ---
-title: "拡張機能を使用してアプリ スイート レポートをカスタマイズする"
-description: "このトピックでは、App スイート レポートをカスタマイズするための一連のシナリオについて説明します。"
+title: 拡張機能を使用してアプリ スイート レポートをカスタマイズする
+description: このトピックでは、App スイート レポートをカスタマイズするための一連のシナリオについて説明します。
 author: TJVass
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 8dbe341e992b0ea210077ca08f4806ec8226defd
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368456"
 ---
-
 # <a name="customize-app-suite-reports-by-using-extensions"></a>拡張機能を使用してアプリ スイート レポートをカスタマイズする
 
 [!include [banner](../includes/banner.md)]
@@ -49,4 +48,3 @@ Microsoft Dynamics 365 for Finance and Operations は、カスタム ソリュ�
 
 - [レポート メニュー項目を拡張する](extend-report-menu-items.md)– アプリケーションのメニュー項目をカスタマイズして、カスタム レポート デザインへの参照をリダイレクトします。
 - [ビジネス ドキュメント用のカスタム デザイン](custom-designs-business-docs.md) – デリゲート ハンドラーを使用すると、既存の印刷管理ドキュメント インスタンスに対してカスタム レポート デザインを追加できます。
-

@@ -1,13 +1,13 @@
 ---
-title: "ページ上またはグリッド内の画像"
-description: "このトピックでは、画像をページまたはグリッドに表示する手順について説明します。 このトピックでは、イメージの使用方法のいくつかについての背景と、使用される API についても説明します。"
+title: ページ上またはグリッド内の画像
+description: このトピックでは、画像をページまたはグリッドに表示する手順について説明します。 このトピックでは、イメージの使用方法のいくつかについての背景と、使用される API についても説明します。
 author: RobinARH
 manager: AnnBe
 ms.date: 11/09/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 43257e6ed0c8a7ca74a7cddc685e6113352a1c03
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: cdb844cdfd40ea258563cd8277759b4754006ebd
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368308"
 ---
-
 # <a name="images-on-a-page-or-in-a-grid"></a>ページ上またはグリッド内の画像
 
 [!include [banner](../includes/banner.md)]
@@ -103,7 +102,7 @@ AOS リソースとして保存されるイメージは、ユーザー データ
 | URL イメージ (次のセクションを参照) を使用するプロに加えて、AOT リソースが開発ツールでモデル化および管理されます。 | 限られた数のフレームワーク定義の画像が使用できます。 |
 
 ### <a name="design-time"></a>デザイン時間
-| 新しいリソースを作成してからイメージをアプリケーション オブジェクト ツリー (AOT) リソースに保存するだけです。 ページ上でイメージ コントロールをモデル化するときは、イメージ名ではなく、リソース名を指定します。 この方法は、通常、シンボル フォントに同等のものがないレガシ イメージ (アイコン) に使用されます。 <strong>イメージの場所:</strong> AOTResource<strong>一般的な画像:</strong> &quot;ResourceMicrosoft Dynamics AX&quot; (.jpg をリソースに追加)
+| 新しいリソースを作成してからイメージをアプリケーション オブジェクト ツリー (AOT) リソースに保存するだけです。 ページ上でイメージ コントロールをモデル化するときは、イメージ名ではなく、リソース名を指定します。 この方法は、通常、シンボル フォントに同等のものがないレガシ イメージ (アイコン) に使用されます。 <strong>イメージの場所:</strong> AOTResource <strong>一般的な画像:</strong> &quot;ResourceMicrosoft Dynamics AX&quot; (.jpg をリソースに追加) |
 
 ### <a name="run-time"></a>実行時間
 
@@ -413,6 +412,5 @@ AX 2012 およびそれ以前のバージョンにおいて、イメージを表
     ttscommit;
 
 「表示メソッドを使用して URL 文字列から画像を表示」のセクションに記載されている表示メソッドと同様に、このコードを使用するとユーザーのブラウザーは指定した URL から画像をダウンロードします。 この方法はいくらかの間接費を伴いますが、バイナリ データ、URL、AOT リソースまたは記号から作成された画像を処理するために単一の API を使用することができます。 データの行間でイメージの種類を組み合わせることもできます。
-
 
 

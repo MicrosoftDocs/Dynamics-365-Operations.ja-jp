@@ -1,13 +1,13 @@
 ---
-title: "機能タイトルの規制認証情報"
-description: "ローカライズ &amp; 翻訳向け LCS ソリューションの要件の一部として、ローカライズ ISV ソリューション プロバイダーは意図したマーケットでの販売を、法律に準拠したものにするために。ソリューションが必要とする規制認証に関する詳細を含める必要があります。 この記事では、機能のタイトルに認証に関する情報をどのように使用しているかを示します。"
+title: 機能タイトルの規制認証情報
+description: ローカライズ &amp; 翻訳向け LCS ソリューションの要件の一部として、ローカライズ ISV ソリューション プロバイダーは意図したマーケットでの販売を、法律に準拠したものにするために。ソリューションが必要とする規制認証に関する詳細を含める必要があります。 この記事では、機能のタイトルに認証に関する情報をどのように使用しているかを示します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: IT Pro
 ms.reviewer: shylaw
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: global
 ms.author: janeaug
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 61657fff7be0377545a227c2238c17a21138af12
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 7229aac5256828f4ae2a9e296cc68850f4f7f853
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368306"
 ---
-
 # <a name="regulatory-certification-information-in-feature-titles"></a>機能タイトルの規制認証情報
 
 [!include [banner](../includes/banner.md)]
@@ -51,7 +50,6 @@ BPM の業務プロセス ライブラリでは、**APQC レベル 8.0 財務リ
     -   PT-REG-会計プリンターの証明
 
 BPM の詳細については、[BPM フローチャート](../lifecycle-services/flowcharts-business-process-modeler.md) を参照してください。
-
 
 
 

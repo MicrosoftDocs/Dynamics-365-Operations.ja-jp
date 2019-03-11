@@ -1,13 +1,13 @@
 ---
-title: "Azure での Retail Essentials 開発/テスト環境の配置"
-description: "このトピックでは、Microsoft Azure に小売エッセンシャル開発環境またはテスト環境を展開する方法について説明します。 環境を展開するには、Microsoft Dynamics Lifecycle Services でクラウド ホスト環境ツールを使用します。"
+title: Azure での Retail Essentials 開発/テスト環境の配置
+description: このトピックでは、Microsoft Azure に Retail essentials 開発環境またはテスト環境を配置する方法について説明します。 環境を配置するには、Microsoft Dynamics Lifecycle Services でクラウド ホスト環境ツールを使用します。
 author: aamirallaqaband
 manager: AnnBe
 ms.date: 01/05/2018
 ms.topic: article
 ms.prod: dynamics-ax-2012
-ms.service: 
-ms.technology: 
+ms.service: ''
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: AX 2012
@@ -15,33 +15,32 @@ ms.custom: 13261
 ms.assetid: 00e58780-7373-4c53-b3af-1e9d3d4eebff
 ms.search.region: Global
 ms.author: aamiral
-ms.search.validFrom: 
+ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: eea801a8ff3b750b87316abf165c9ed8eb7f44e5
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369761"
 ---
-
 # <a name="deploy-retail-essentials-devtest-environments-on-azure"></a>Azure での Retail Essentials 開発/テスト環境の配置
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、Microsoft Azure に小売エッセンシャル開発環境またはテスト環境を展開する方法について説明します。 環境を展開するには、Microsoft Dynamics Lifecycle Services でクラウド ホスト環境ツールを使用します。
+このトピックでは、Microsoft Azure に Retail essentials 開発環境またはテスト環境を配置する方法について説明します。 環境を配置するには、Microsoft Dynamics Lifecycle Services でクラウド ホスト環境ツールを使用します。
 
-<a name="prerequisites"></a>前提条件
+<a name="prerequisites"></a>必要条件
 -------------
 
 このトピックの手順を実行する前に、次の条件が満たされていることを確認します。
 
 | カテゴリ       | 前提条件                                                                                                                                                    |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 必要なタスク | [Azure での Microsoft Dynamics AX 2012 R3 配置の計画](plan-2012-r3-deployment-azure.md) |
+| 必要なタスク | [Azure 上での Microsoft Dynamics AX 2012 R3 の配置計画](plan-2012-r3-deployment-azure.md) |
 
 ## <a name="1-log-on-to-lifecycle-services"></a>1. ライフサイクル サービスにログオンする
-Microsoft Dynamics Lifecycle Services (LCS) は、顧客およびパートナーが Dynamics AX のプロジェクトの管理に使用できるクラウドベースの共同ワークスペースを提供します。 Azure に Dynamics AX を配置するには、この Web サイトを使用します。 Lifecycle Services は顧客やパートナーがサポート計画の一部として使用できます。 CustomerSource または PartnerSource の資格情報でアクセスすることができます。詳細については、[Lifecycle Services にログオン](https://lcs.dynamics.com/en/) を参照してください。
+Microsoft Dynamics Lifecycle Services (LCS) は、顧客およびパートナーが Dynamics AX のプロジェクトの管理に使用できるクラウドベースの共同ワークスペースです。 Azure に Dynamics AX を配置するには、この Web サイトを使用します。 Lifecycle Services は顧客やパートナーがサポート計画の一部として使用できます。 CustomerSource または PartnerSource の資格情報でアクセスすることができます。詳細については、[Lifecycle Services にログオン](https://lcs.dynamics.com/en/) を参照してください。
 
 ## <a name="2-create-a-project"></a>2. プロジェクトの作成
 LCS にログインした後、既存のプロジェクトを開くか、または新しいプロジェクトを作成します。 プロジェクトは、LCS でのエクスペリエンスの主な開催者です。 プロジェクトに関連する手法は、既定でプロジェクトに含まれるフェーズとタスクを決定します。
@@ -49,9 +48,9 @@ LCS にログインした後、既存のプロジェクトを開くか、また�
 ## <a name="3-connect-the-project-to-your-azure-subscription"></a>3. Azure サブスクリプションにプロジェクトを接続する
 Azure サブスクリプションに LCS プロジェクトを接続します。 これにより、LCS は Dynamics AX 環境をサブスクリプションに展開できます。 Azure サブスクリプションにプロジェクトを接続するには、次の手順を実行します。
 
-1. LCS プロジェクトで **環境**セクションに移動して、**Microsoft Azure 設定**をクリックしてから、**Azure コネクタ**領域で**追加**をクリックします。 
+1. LCS プロジェクトで**環境**セクションに移動して、**Microsoft Azure 設定**をクリックしてから、**Azure コネクタ領域**で**追加**をクリックします。 
    >[!Note]
-   > **Microsoft Azure 設定** オプションは、**クラウド ホスト環境** タイルをクリックしたときにも使用できます。
+   > **Microsoft Azure 設定**オプションは、**クラウド-ホスト環境タイル**をクリックしたときにも使用できます。
 2. Azure への接続を識別する名前を入力します。
 3. Azure サブスクリプション ID を入力します。 サブスクリプション ID を検索する必要がある場合は、次の手順を実行します。
    1.  ブラウザの別のインスタンスを開きます。
@@ -74,7 +73,7 @@ Azure サブスクリプションに LCS プロジェクトを接続します。
 >[!Note]
 > 証明書が期限切れになった場合は、新しいものを取得できます。 そのためには次の作業を行います。
 > 1. プロジェクトの設定の **Azure コネクタ** 領域で接続を選択し、**編集** をクリックします。
-> 2. **Microsoft Azure 設定** パネルが画面の横に表示されます。 **ダウンロード**をクリックして新しい証明書をダウンロードします。
+> 2. **Microsoft Azure 設定**パネルが画面の横に表示されます。 **ダウンロード**をクリックして新しい証明書をダウンロードします。
 > 3. 上の手順の手順 6 ～ 9 を繰り返します。
 
 ## <a name="4-deploy-a-retail-essentials-devtest-environment-on-azure"></a>4. Azure での Retail Essentials 開発/テスト環境の配置
@@ -117,9 +116,9 @@ Azure に Retail Essentials 開発/テスト環境を配置するには、以下
 
 7. ドメインで作成されるサービス アカウントをカスタマイズするには、**サービス アカウントをカスタマイズ** をクリックします。 展開の **詳細設定** オプションを通じてサービス アカウントやサービス アカウントのパスワードを指定することができます。 どちらもが指定されていない場合は、既定の勘定が使用され、ランダムなパスワードが選択されています。 次の機能は、企業のアカウントの命名規則とパスワードの規則を管理する場合に使用します。 アカウントとパスワードのルール:
    - 有効なサービス名は、特殊文字を含まない 20 文字未満である必要があります。
-   - 有効なパスワードは 8 文字以上で、大文字、小文字、数字、および次の文字のうち少なくとも 1 つが含まれます: \[「@」、「!」、「=」、「\*」\] 次のような一般的なパスワードは使用できません: pass@word1
+   - 有効なパスワードは 8 文字以上で、大文字、小文字、数字、および次の文字のうち少なくとも 1 つが含まれます: \['@', '!', '=', '\*'\] 次のような一般的なパスワードは使用できません: pass@word1
 
-8. 使用する AX 2012 R3 のバージョンを選択するには、**サポートされているバージョン** をクリックします。 既定では、この環境の AX 2012 R3 CU8 バージョンが配置されます。 CU8 バージョンを使用しない場合は、**Dynamics ERP 2012 R3 RTM** をリストから選択します。
+8. 使用を希望する AX 2012 R3 のバージョンを選択するには、**サポートされているバージョン**をクリックします。 既定では、この環境の AX 2012 R3 CU8 バージョンが配置されます。 CU8 バージョンを使用しない場合は、**Dynamics ERP 2012 R3 RTM** をリストから選択します。
 9. 仮想マシン名をカスタマイズするには、**仮想マシン名をカスタマイズ** をクリックします。 一般的な IT 名前付けガイドラインをサポートするために、仮想マシンに名前を付ける機能がほとんどの配置トポロジの**詳細設定**に用意されています。 名前を定義することに加えて、各仮想マシン タイプに開始インデックスを選択できます。 インデックスは、配置される仮想マシン タイプのインスタンスごとに増加します。 仮想マシン名は 13 文字またはそれ以下にする必要があります。 インデックスはマシン名とハイフン (-) で区切られ、その後に最大 2 桁のインデックスが続きます。 例: ACustomVMName-99。 最初の展開後に、仮想マシンのインスタンスが環境に追加されるとき、配置サービスは、中断した場所で、仮想マシンの名前の増分を開始します。 たとえば、2 で始まるインデックスを持つ 4 つの AOS 仮想マシンを展開する場合、最後の AOS インスタンス名は AOS-6 になります。 もう 2 つ AOS インスタンスを追加する場合は、AOS-7 と AOS 8 になります。 展開内の仮想マシン タイプの 1 つがカスタマイズされている場合は、すべての仮想マシン名をカスタマイズする必要があります。 これは、仮想マシン名が誤って紛失してしまったため、長期的な展開が発生しないようにするためです。
 10. 仮想ネットワークの設定をカスタマイズするには、<strong>仮想ネットワークをカスタマイズする</strong> をクリックします。 情報を入力するには、次の表を使用してください。
     <table>
@@ -162,7 +161,7 @@ Azure に Retail Essentials 開発/テスト環境を配置するには、以下
 
 11. **完了** をクリックします。 **環境** **の展開** パネルが再表示されます。
 12. 配置される仮想マシンの数とサイズが一覧表示されます。 必要に応じて、仮想マシンの数とサイズを変更します。
-    -   この環境で各仮想マシンにインストールされているソフトウェアの詳細については、[Azure での Microsoft Dynamics AX 2012 R3 配置の計画](plan-2012-r3-deployment-azure.md) を参照してください。
+    -   この環境で各仮想マシンにインストールされているソフトウェアの詳細については、「[Azure での Microsoft Dynamics AX 2012 R3 配置の計画](plan-2012-r3-deployment-azure.md)」を参照してください。
     -   仮想マシンに関するサイズおよび価格決定の詳細については、[仮想マシンの価格決定の詳細](http://azure.microsoft.com/en-us/pricing/details/virtual-machines/) を参照してください。
 
 13. ライセンスの条項を確認するには、**ソフトウェア ライセンス条項**をクリックします。 次に、チェック ボックスを選択して、条件に同意することを示します。
@@ -174,11 +173,11 @@ Retail Essentials 環境が Azure に配置されたので、これを設定し�
 
 ### <a name="log-on-to-the-retails-essentials-virtual-machine"></a>Retail Essentials 仮想マシンにログオンします。
 
-ESSEN-&lt;GUID&gt; 仮想マシンに &lt;DomainName&gt;DynamicsInstallUser アカウントを使用してログオンします。 手順については、「仮想マシンにどのようにログオンしますか?」を参照してください。 トピック [Azure での Microsoft Dynamics AX 2012 R3 配置の管理](manage-2012-r3-deployment-azure.md) のセクションを参照してください。
+ESSEN-&lt;GUID&gt; 仮想マシンに &lt;DomainName&gt;DynamicsInstallUser アカウントを使用してログオンします。 手順については、「仮想マシンにどのようにログオンしますか?」を参照してください。 トピック [Azure での Microsoft Dynamics AX 2012 R3 配置の管理](manage-2012-r3-deployment-azure.md) を参照してください。
 
 ### <a name="compile-dynamics-ax-2012-r3"></a>Dynamics AX 2012 R3 のコンパイル
 
-AxBuild.exe. を使用した Dynamics AX 2012 R3 のコンパイル 手順については、[X++ から P コードへの AOS の並列コンパイルに対する AxBuild.exe](https://technet.microsoft.com/en-us/library/dn528954.aspx) を参照してください。
+Ax Build.exe. を使用した Dynamics AX 2012 R3 のコンパイル 手順については、[X++ から P コードへの AOS の並列コンパイルに対する AxBuild.exe](https://technet.microsoft.com/en-us/library/dn528954.aspx) を参照してください。
 
 ### <a name="initialize-dynamics-ax-2012-r3"></a>Dynamics AX 2012 R3 の初期化
 
@@ -189,11 +188,11 @@ Dynamics AX 2012 R3 クライアントを開いて、初期化チェックリス
 サンプル データを環境にインストールする場合は、次の手順を実行します。
 
 1.  次の場所に移動します: F:TestTransferTool
-2.  テスト データ ツールをインストールします。 手順については、[Microsoft Dynamics AX 用のテスト データ転送ツール (ベータ版) をインストールする](install-test-data-transfer-tool-beta.md) を参照してください。
+2.  テスト データ ツールをインストールします。 手順については、[Microsoft Dynamics AX 用のテスト データ転送ツール (ベータ版) をインストールする](install-test-data-transfer-tool-beta.md)を参照してください。
 3.  コマンド プロンプトを開いて、次の場所に移動します: C:\Program Files (x86) \Microsoft Dynamics AX 2012 R3 Test Data Transfer Tool (Beta)
 4.  次のコマンドを実行します: dp.exe import F:DemoData MicrosoftDynamicsAx
 
-**注記:** サンプル データには、Dynamics AX の試用版のライセンス キーが含まれています。 サンプル データをインストールしないように選択する場合は、開発またはテスト用の [CustomerSource](https://mbs.microsoft.com/downloads/customer/AX/AXDemoTools/MicrosoftDynamicsAX2012R2v4DemoLicense.zip) または [MSDN](https://msdn.microsoft.com/en-us/subscriptions/securedownloads/hh442898#FileId=57028) の試用版のライセンス キーをダウンロードすることができます
+**注記:** サンプル データには、Dynamics AX の試用版のライセンス キーが含まれています。 サンプル データをインストールしないように選択する場合は、開発またはテスト用の試用版ライセンス キーを [CustomerSource](https://mbs.microsoft.com/downloads/customer/AX/AXDemoTools/MicrosoftDynamicsAX2012R2v4DemoLicense.zip) または [MSDN](https://msdn.microsoft.com/en-us/subscriptions/securedownloads/hh442898#FileId=57028) からダウンロードすることができます
 
 ### <a name="set-up-retail-essentials"></a>Retail Essentials の設定
 
@@ -214,7 +213,7 @@ Dynamics AX クライアントを開いて、次の手順を実行します。
     4.  フォームを閉じます。
 
 6.  **データ同期 &gt; 設定 &gt; チャネル統合 &gt; Real-time Service プロファイル**の順にクリックします。
-7.  **Commerce Data Exchange: Real-time Service プロファイル** フォームで、次の手順を完了します。
+7.  **Commerce Data Exchange: Real-time Service** プロファイル フォームで、次の手順を完了します。
     1.  **サーバー名**フィールドに、仮想マシンの名前を入力します。
     2.  **共通名**フィールドに、証明書の共通名を入力します。
     3.  フォームを閉じます。
@@ -254,10 +253,10 @@ Dynamics AX クライアントを開いて、次の手順を実行します。
 ユーザが Dynamics AX にアクセスできるようにするには、以下のタスクを実行します。
 
 -   CLI- &lt;GUID&gt; 仮想マシンのリモート デスクトップ ユーザー グループに各ユーザーのドメイン アカウントを追加します。
--   ユーザーに Dynamics AX へのアクセス許可を付与します。 手順については、[Microsoft Dynamics AX で新しいユーザーを作成する](https://technet.microsoft.com/en-us/library/aa548139.aspx) を参照してください。
+-   ユーザーに Dynamics AX へのアクセス許可を付与します。 手順については、[Microsoft Dynamics AXで新しいユーザーを作成する](https://technet.microsoft.com/en-us/library/aa548139.aspx)を参照してください。
 
 > [!NOTE]
-> VPN 接続とドメイン信頼を作成しない場合でも、ユーザーに Dynamics AX へのアクセス権を与えることができます。 これを行うには、ドメイン コントローラとして機能する仮想マシンにログオンし、各ユーザーのドメイン アカウントを作成する必要があります。 その後、上記の 2 つのタスクを完了する必要があります。
+> VPN 接続とドメイン信頼を作成しない場合でも、ユーザーに Dynamics AX へのアクセス権を付与することができます。 これを行うには、ドメイン コントローラとして機能する仮想マシンにログオンし、各ユーザーのドメイン アカウントを作成する必要があります。 その後、上記の 2 つのタスクを完了する必要があります。
 
 ## <a name="7-learn-more-about-the-service-accounts-for-this-environment"></a>7. この環境のサービス アカウントに関する詳細
 次のセクションでは、環境を配置したときに作成されたサービス アカウントについて説明します。
@@ -268,10 +267,10 @@ Dynamics AX クライアントを開いて、次の手順を実行します。
 
 | ドメイン アカウント                  | 説明                                                                                                           |
 |---------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| <DomainName>AOSServiceUser      | 次のサービスを実行するために使用されるアカウント: Microsoft Dynamics AX Object Server。                                   |
+| <DomainName>AOSServiceUser      | 次のサービスを実行するために使用されたアカウント: Microsoft Dynamics AX Object Server                                   |
 | <DomainName>SQLServiceUser      | 次のサービスを実行するために使用されるアカウント: SQL Server Analysis Services (MSSQLSERVER)。                            |
-| <DomainName>DynamicsInstallUser | Dynamics AX をインストールするために使用するアカウント。                                                                              |
-| <DomainName>RetailServiceUser   | 次のサービスを実行するために使用されるアカウント: Microsoft Dynamics AX for Retail Commerce Data Exchange Async Client。 |
+| <DomainName>DynamicsInstallUser | Dynamics AX をインストールするために使用したアカウント。                                                                              |
+| <DomainName>RetailServiceUser   | 次のサービスの実行に使用したアカウント: Microsoft Dynamics AX for Retail Commerce Data Exchange Async Client。 |
 | <DomainName>BCProxyUser         | ビジネス コネクタ プロキシとして使用されるアカウント。                                                                     |
 
 > [!NOTE]
@@ -280,7 +279,6 @@ Dynamics AX クライアントを開いて、次の手順を実行します。
 ### <a name="local-administrator-accounts"></a>ローカル管理者アカウント
 
 配置した各仮想マシンには、ローカル Administrator アカウントがあります。 このアカウントは builtinaxlocaladmin です。 ローカル管理者アカウントのパスワードは、[Lifecycle Services](https://lifecycleservices.dynamics.com/en/) の **クラウド ホスト 環境** ページに表示されます。
-
 
 
 

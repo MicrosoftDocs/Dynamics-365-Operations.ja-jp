@@ -1,36 +1,36 @@
 ---
-title: "Dynamics 365 for Finance and Operations バージョン 8.1.1 (2018 年 10 月) の新機能および変更された機能"
-description: "このトピックでは、Dynamics 365 for Finance and Operations バージョン 8.1.1 の新機能または変更された機能について説明します。 このバージョンは 2018 年 10 月にリリースされました。"
+title: Dynamics 365 for Finance and Operations バージョン 8.1.1 (2018 年 11 月) の新機能および変更された機能
+description: このトピックでは、Dynamics 365 for Finance and Operations version 8.1.1 の新機能または変更された機能について説明します。 このバージョンは 2018 年 11 月にリリースされました。
 author: tonyafehr
 manager: AnnBe
-ms.date: 11/26/2018
+ms.date: 01/09/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: tfehr
 ms.search.scope: Operations
-ms.custom: 
+ms.custom: ''
 ms.assetid: b364a31c-52d3-45c5-b698-64c5242c592a
 ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Release 8.1.1
+ms.openlocfilehash: 322d41d9495f8fbafbf184ccc7fd6d7ec32f9c96
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
-ms.openlocfilehash: f4133bec76c0c99d4df66b035cb3fe6d13558753
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/18/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368374"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-version-811-october-2018"></a>Dynamics 365 for Finance and Operations バージョン 8.1.1 (2018 年 10 月) の新機能および変更された機能
+# <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-version-811-november-2018"></a>Dynamics 365 for Finance and Operations バージョン 8.1.1 (2018 年 11 月) の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Finance and Operations バージョン 8.1.1 (2018 年 10 月) の新機能または変更された機能について説明します。 このバージョンは 2018 年 10 月にリリースされ、ビルド番号は 8.1.170 です。
+このトピックでは、Microsoft Dynamics 365 for Finance and Operations version 8.1.1 (2018 年 11 月) の新機能または変更された機能について説明します。 このバージョンは 2018 年 11 月にリリースされ、ビルド番号は 8.1.170 です。
 
-Microsoft Dynamics 365 for Retail の最新リリースの新機能と変更については、[Dynamics 365 for Retail の新機能と変更点](https://docs.microsoft.com/dynamics365/unified-operations/retail/get-started/whats-new)を参照してください。
+Microsoft Dynamics 365 for Retail の新機能と変更についての最新のリリースでについては、[Dynamics 365 for Retail の新機能と変更](https://docs.microsoft.com/dynamics365/unified-operations/retail/get-started/whats-new) を参照してください。
 
 ### <a name="announcing-the-dynamics-365-october-18-release-notes"></a>Dynamics 365 2018 年 10 月リリース ノートの発表
 
@@ -44,7 +44,7 @@ Finance and Operations 8.1.1 の一部である更新プログラムのそれぞ
 
 ## <a name="platform-update-21"></a>プラットフォーム update 21
 
-プラットフォーム更新プログラム 21 を含む Microsoft Dynamics 365 for Finance and Operations バージョン 8.1.1。 プラットフォーム更新プログラム 21 に関する詳細については、[Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 21 (2018 年 10 月) の新機能および変更された機能](whats-new-platform-update-21.md) を参照してください。
+Microsoft Dynamics 365 for Finance and Operations バージョン8.1.1には、プラットフォーム更新プログラム 21 が含まれています。 プラットフォーム更新プロフラム 21 については、[Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 21 (2018 年 10 月) の新機能と変更](whats-new-platform-update-21.md) をご覧ください。
 
 ## <a name="ledger-settlements"></a>元帳決済
 
@@ -56,9 +56,8 @@ Finance and Operations 8.1.1 の一部である更新プログラムのそれぞ
 
 ## <a name="extensibility-enhancements"></a>拡張性の強化
 
-Finance and Operations の今回のリリースでは、列挙、メタデータ、メソッドの強化など、拡張性をサポートするために、さまざまな拡張機能の強化が加えられています。 詳しくは、[Dynamics 365 for Finance and Operations バージョン 8.1.1 の拡張機能の変更](../../dev-itpro/extensibility/extensibility-changes-811.md)をご覧ください
+Finance and Operations の今回のリリースでは、列挙、メタデータ、メソッドの強化など、拡張性をサポートするために、さまざまな拡張機能の強化が加えられています。 詳細については、[Dynamics 365 for Finance and Operations バージョン 8.1.1 で変更された拡張機能](../../dev-itpro/extensibility/extensibility-changes-811.md) を参照してください。
 
 ## <a name="vat-declaration-for-russia"></a>ロシアの VAT申告
 
 今回のリリースでは、電子的な形式でロシアの VAT 申告を生成する ER コンフィギュレーションを確認できます。 詳細については、[電子形式の RUS/ロシア VAT 申告](https://support.microsoft.com/help/4477332/rusrussiavatdeclarationinelectronicformat)を参照してください。
-

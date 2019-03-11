@@ -1,13 +1,13 @@
 ---
-title: "ワークスペースの構築"
-description: "このチュートリアルでは、新しいタイルを作成し、ワークスペースの概要にそれを含め、ワークスペースの新しいリストを構築して、ワークスペースにリストのデータ キャッシュを作成します。"
+title: ワークスペースの構築
+description: このチュートリアルでは、新しいタイルを作成し、ワークスペースの概要にそれを含め、ワークスペースの新しいリストを構築して、ワークスペースにリストのデータ キャッシュを作成します。
 author: jasongre
 manager: AnnBe
 ms.date: 08/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,24 +17,23 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: fb0575ccabff214367c354908615233ffbb34b03
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 2ebea3cbddfa0a5ef0e0fd13d3693da6152bc288
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "369082"
 ---
-
 # <a name="build-workspaces"></a>ワークスペースの構築
 
 [!include [banner](../includes/banner.md)]
 
 このチュートリアルでは、新しいタイルを作成し、ワークスペースの概要にそれを含め、ワークスペースの新しいリストを構築して、ワークスペースにリストのデータ キャッシュを作成します。
 
-<a name="prerequisites"></a>前提条件
+<a name="prerequisites"></a>必要条件
 -------------
 
-このチュートリアルでは、リモート デスクトップを使用して Microsoft Dynamics AX 環境にアクセスし、Dynamics AX インスタンスの管理者としてプロビジョニングされる必要があります。 詳細については、[Microsoft Dynamics AX インスタンスへのアクセス](../dev-tools/access-instances.md) を参照してください。
+このチュートリアルでは、リモート デスクトップを使用して Microsoft Dynamics AX 環境にアクセスし、Dynamics AX インスタンスの管理者としてプロビジョニングされる必要があります。 詳細については、「[Microsoft Dynamics AX インスタンスにアクセス ](../dev-tools/access-instances.md)」を参照してください。
 
 ## <a name="key-concepts"></a>重要な概念
 -   ワークスペースに関連付けられているフォーム パターンについて学んで使用します。
@@ -45,11 +44,11 @@ ms.lasthandoff: 08/09/2018
 ## <a name="setup"></a>段取り
 ### <a name="import-the-tutorial-project-and-transactional-data"></a>チュートリアル プロジェクトおよびトランザクション データのインポート
 
-Microsoft Visual Studio を使用して、チュートリアル プロジェクトをインポートします。 チュートリアル プロジェクトには、このチュートリアルを完了するために使用する成果物が含まれています。 Visual Studio を使用して FMTutorial プロジェクトを開き、チュートリアル用のデータを読み込みます。 フリート管理チュートリアルのデータを読み込むために、**FMTDataHelper** クラスを使用します。 これが作業する最初のチュートリアルである場合は、[アクセス Microsoft Dynamics AX インスタンス](../dev-tools/access-instances.md)を確認し、ローカル 仮想マシン (VM) で作業している場合に、管理者ユーザーを提供するかどうかを確認します。
+Microsoft Visual Studio を使用してチュートリアル プロジェクトをインポートします。 チュートリアル プロジェクトには、このチュートリアルを完了するために使用する成果物が含まれています。 Visual Studio を使用して FMTutorial プロジェクトを開き、チュートリアル用のデータを読み込みます。 フリート管理チュートリアルのデータを読み込むために、**FMTDataHelper** クラスを使用します。 これが作業する最初のチュートリアルである場合は、[Microsoft Dynamics AX インスタンスへのアクセス](../dev-tools/access-instances.md)を確認して、ローカル仮想マシン (VM) で作業している場合に、管理者ユーザーをプロビジョニングするかどうかを確認します。
 
-1.  Microsoft Dynamics Lifecycle Services (LCS) 方法から **FMTutorialDataModel.axpp** ファイルをダウンロードし、VM の **Downloads** フォルダーにコピーします。
+1.  Microsoft Dynamics Lifecycle Services (LCS) の手法から **FMTutorialDataModel.axpp** ファイルをダウンロードして、VM の **Downloads** フォルダーにコピーします。
 2.  デスクトップで、Visual Studio ショートカットをダブルクリックして、開発環境を開きます。
-3.  **Dynamics AX** メニューで、**プロジェクトのインポート**をクリックします。
+3.  **Dynamics AX** メニューで、**プロジェクトのインポート** をクリックします。
 4.  **プロジェクトのインポート** ダイアログ ボックスで、**ファイル名**フィールドの隣にある、省略記号 (**...**) ボタンをクリックします。
 5.  **インポートするファイルの選択**ダイアログ ボックスで、**ダウンロード** フォルダーを参照して **FMTutorialDataModel.axpp** をクリックしてから**開く**をクリックします。
 6.  **要素の上書き** チェック ボックスをオンにし、**現在のソリューション** オプションをオンにします。 次の図は、完了した **インポート プロジェクト** ダイアログ ボックスを示しています。 
@@ -63,11 +62,11 @@ Microsoft Visual Studio を使用して、チュートリアル プロジェク�
 
 ### <a name="open-the-fmtutorial-project"></a>FMTutorial プロジェクトを開く
 
-Visual Studio を使用して、FMTutorial プロジェクトを開きます。 Visual Studio を開き、FMTutorial プロジェクトが既に読み込まれている場合は、次のセクションに続行することができます。
+Visual Studio を使用して FMTutorial プロジェクトを開きます。 Visual Studio を開き、FMTutorial プロジェクトが既に読み込まれている場合は、次のセクションに続行することができます。
 
 1.  デスクトップ環境がまだ開かれていない場合は、Visual Studio ショートカットをデスクトップ上でダブルクリックして、開発環境を開きます。
 2.  **ファイル**メニューで、**開く** &gt; **プロジェクト/ソリューション**をクリックします。
-3.  **プロジェクトを開く**ダイアログ ボックスで、**ドキュメント** &gt; **Visual Studio 15.0** &gt; **プロジェクト**を参照し、**FMTutorial** ソリューションを選択してから**開く**をクリックします。
+3.  **プロジェクトを開く** ダイアログ ボックスで、**ドキュメント** &gt; **Visual Studio 15.0** &gt; **プロジェクト** の順に参照して、**FMTutorial** ソリューションを選択してから、**開く** をクリックします。
 4.  FMTutorial プロジェクトがソリューション エクスプローラーに表示されます。
 
 ## <a name="exercise-1-understand-the-operational-workspace-pattern"></a>手順 1: 運用ワークスペースのパターンを理解
@@ -95,7 +94,7 @@ Visual Studio を使用して、FMTutorial プロジェクトを開きます。 
 ### <a name="view-the-workspace"></a>ワークスペースの表示
 
 1.  ソリューション エクスプローラーで、**FmtClerkWorkspace** フォームを右クリックしてから、**スタートアップ オブジェクトとして設定**をクリックします。
-2.  **Ctrl+F5** キーを押して、フォームをビルドおよび実行します。 Internet Explorerで、フォームを開きます。 
+2.  **Ctrl+F5** キーを押して、フォームをビルドおよび実行します。 Internet Explorer でフォームが開きます。 
 
     [![フォームを開く](./media/fmtworkspaceinitial-1024x650.png)](./media/fmtworkspaceinitial.png)
 
@@ -108,7 +107,7 @@ Visual Studio を使用して、FMTutorial プロジェクトを開きます。 
 すべてのタイルは、正しい情報を取得するバッキング クエリが必要です。
 
 1.  ソリューション エクスプローラーの **FMTutorial** プロジェクトで、**クエリ** フォルダーを右クリックし、**追加**をポイントしてから**新しい項目**をクリックします。
-2.  **Dynamics AX アーティファクト** &gt; **データ モデル** &gt; **クエリ**とクリックします。 **名前**プロパティについては、**FMTRental\_Current** を入力します。
+2.  **Dynamics AX アーティファクト** &gt; **データ モデル** &gt; **クエリ** の順にクリックします。 **名前**プロパティについては、**FMTRental\_Current** を入力します。
 3.  **追加** をクリックします。
 4.  新しい **FMTRental\_Current** クエリーがデザイナーで開かれていない場合、ソリューション エクスプローラーでダブルクリックします。
 5.  デザイナーで、**データ ソース**を右クリックしてから**新しいデータ ソース**をクリックします。
@@ -141,15 +140,15 @@ Visual Studio を使用して、FMTutorial プロジェクトを開きます。 
 ### <a name="add-the-corresponding-menu-item"></a>対応するメニュー項目の追加
 
 1. ソリューション エクスプローラーの **FMTutorial** プロジェクトで、**メニュー項目**フォルダーを右クリックし、**追加**をポイントしてから**新しい項目**をクリックします。
-2. **Dynamics AX アーティファクト** &gt; **ユーザー インターフェイス** &gt; **表示メニュー項目**とクリックします。 **Name** プロパティを **FMTRental\_Current** に置き換えます。
+2. **Dynamics AX アーティファクト** &gt; **ユーザー インターフェイス** &gt; **表示メニュー項目** の順にクリックします。 **Name** プロパティを **FMTRental\_Current** に置き換えます。
 3. **追加** をクリックします。
 4. 新しい **FMTRental\_Current** メニュー項目がデザイナーで開かれていない場合、ソリューション エクスプローラーでダブルクリックします。
 5. **プロパティ** ウィンドウで、次のプロパティを設定します。
 
 
-   | プロパティ |                                    先頭値                                    |
+   | プロパティ |                                    金額                                    |
    |----------|-----------------------------------------------------------------------------|
-   |  ラベル   | @FMT197<strong>注記:</strong> この値が「現在のレンタル」に対応します。 |
+   |  ラベル   | @FMT197 <strong>注記:</strong> この値が「現在のレンタル」に対応します。 |
    |  オブジェクト  |                                  FMTRental                                  |
    |  クエリ   |                             FMTRental\_Current                              |
 
@@ -159,7 +158,7 @@ Visual Studio を使用して、FMTutorial プロジェクトを開きます。 
 ### <a name="add-a-tile"></a>タイルの追加
 
 1.  ソリューション エクスプローラーの **FMTutorial** プロジェクトで、**タイル** フォルダーを右クリックし、**追加**をポイントしてから**新しい項目**をクリックします。
-2.  **Dynamics AX アーティファクト** &gt; **ユーザー インターフェイス** &gt; **タイル**とクリックします。 **Name** プロパティを **FMTCurrentRentalsTile** に置き換えます。
+2.  **Dynamics AX アーティファクト** &gt; **ユーザー インターフェイス** &gt; **タイル** の順にクリックします。 **Name** プロパティを **FMTCurrentRentalsTile** に置き換えます。
 3.  **追加** をクリックします。
 4.  新しい **FMTRental\_Current** タイルがデザイナーで開かれていない場合、ソリューション エクスプローラーでダブルクリックします。
 5.  **プロパティ** ウィンドウで、次のプロパティを設定します。
@@ -193,7 +192,7 @@ Visual Studio を使用して、FMTutorial プロジェクトを開きます。 
 Visual Studio を使用し、更新した **FmtClerkWorkspace** フォームをビルドして実行します。
 
 1.  ソリューション エクスプローラーで、**FmtClerkWorkspace** フォームを右クリックしてから、**スタートアップ オブジェクトとして設定**をクリックします。
-2.  **Ctrl+F5** キーを押して、フォームをビルドおよび実行します。 Internet Explorerで、フォームを開きます。 
+2.  **Ctrl+F5** キーを押して、フォームをビルドおよび実行します。 Internet Explorer でフォームが開きます。 
 
     [![レンタル タイル](./media/currentrentalstile.png)](./media/currentrentalstile.png)
 
@@ -232,7 +231,7 @@ Visual Studio を使用し、更新した **FmtClerkWorkspace** フォームを�
 3. **プロパティ** ウィンドウで、次のプロパティを設定します。
 
 
-   | プロパティ |                                     先頭値                                      |
+   | プロパティ |                                     金額                                      |
    |----------|--------------------------------------------------------------------------------|
    |   氏名   |                           AvailableVehiclesContainer                           |
    | キャプション  | @FMT199 <strong>注記:</strong> この値は「使用可能な車両」に対応します。 |
@@ -248,7 +247,7 @@ Visual Studio を使用し、更新した **FmtClerkWorkspace** フォームを�
 ### <a name="add-a-new-form-that-has-the-new-workspace-content"></a>新しいワークスペースの内容を持つ新しいフォームを追加します。
 
 1.  ソリューション エクスプローラーの **FMTutorial** プロジェクトで、**フォーム** フォルダーを右クリックし、**追加**をポイントしてから**新しい項目**をクリックします。
-2.  **Dynamics AX アーティファクト** &gt; **ユーザー インターフェイス** &gt; **フォーム**とクリックします。 **Name** プロパティを **FMTAvailableVehicles** に置き換えます。
+2.  **Dynamics AX アーティファクト** &gt; **ユーザー インターフェイス** &gt; **フォーム** の順にクリックします。 **Name** プロパティを **FMTAvailableVehicles** に置き換えます。
 3.  **追加** をクリックします。
 4.  新しい **FMTAvailableVehicles** フォームがデザイナーで開かれていない場合、ソリューション エクスプローラーでダブルクリックします。
 5.  フォームのデータ ソースとして **FmtVehicle** テーブルを追加します。
@@ -324,7 +323,7 @@ Visual Studio を使用し、更新した **FmtClerkWorkspace** フォームを�
 ### <a name="add-a-new-query-that-limits-the-data-to-available-vehicles"></a>データを使用可能な車両に限定する新しいクエリの追加
 
 1.  ソリューション エクスプローラーの **FMTutorial** プロジェクトで、**クエリ** フォルダーを右クリックし、**追加**をポイントしてから**新しい項目**をクリックします。
-2.  **Dynamics AX アーティファクト** &gt; **データ モデル** &gt; **クエリ**とクリックします。 **Name** プロパティを **FMTAvailableVehicles** に置き換えます。
+2.  **Dynamics AX アーティファクト** &gt; **データ モデル** &gt; **クエリ** の順にクリックします。 **Name** プロパティを **FMTAvailableVehicles** に置き換えます。
 3.  **追加** をクリックします。
 4.  新しい **FMTAvailableVehicles** クエリがデザイナーで開かれていない場合、ソリューション エクスプローラーでダブルクリックします。
 5.  デザイナーで、**データ ソース**を右クリックしてから**新しいデータ ソース**をクリックします。
@@ -348,7 +347,7 @@ Visual Studio を使用し、更新した **FmtClerkWorkspace** フォームを�
 ### <a name="add-a-new-menu-item-that-references-the-new-form"></a>新しいフォームを参照する新しいメニュー項目の追加
 
 1.  ソリューション エクスプローラーの **FMTutorial** プロジェクトで、**メニュー項目**フォルダーを右クリックし、**追加**をポイントしてから**新しい項目**をクリックします。
-2.  **Dynamics AX アーティファクト** &gt; **ユーザー インターフェイス** &gt; **表示メニュー項目**とクリックします。 **Name** プロパティを **FMTAvailableVehicles** に置き換えます。
+2.  **Dynamics AX アーティファクト** &gt; **ユーザー インターフェイス** &gt; **表示メニュー項目** の順にクリックします。 **Name** プロパティを **FMTAvailableVehicles** に置き換えます。
 3.  **追加** をクリックします。
 4.  新しい **FMTAvailableVehicles** メニュー項目がデザイナーで開かれていない場合、ソリューション エクスプローラーでダブルクリックします。
 5.  **プロパティ** ウィンドウで、次のプロパティを設定します。
@@ -371,7 +370,7 @@ Visual Studio を使用し、更新した **FmtClerkWorkspace** フォームを�
 Visual Studio を使用し、更新した **FmtClerkWorkspace** フォームをビルドして実行します。
 
 1.  ソリューション エクスプローラーで、**FmtClerkWorkspace** フォームを右クリックしてから、**スタートアップ オブジェクトとして設定**をクリックします。
-2.  **Ctrl+F5** キーを押して、フォームをビルドおよび実行します。 Internet Explorerで、フォームを開きます。 
+2.  **Ctrl+F5** キーを押して、フォームをビルドおよび実行します。 Internet Explorer でフォームが開きます。 
 
     [![使用可能なリスト](./media/availablelist.png)](./media/availablelist.png)
 
@@ -386,7 +385,7 @@ Visual Studio を使用し、更新した **FmtClerkWorkspace** フォームを�
 最初のステップでは、キャッシュ テーブルを作成するために使用されるクエリをビルドします。 このクエリには、キャッシュ データを取得するすべてのテーブルが含まれている必要があります。また、結果をキャッシュするレコード/列に限定する必要があります。
 
 1.  ソリューション エクスプローラーの **FMTutorial** プロジェクトで、**クエリ** フォルダーを右クリックし、**追加**をポイントしてから**新しい項目**をクリックします。
-2.  **Dynamics AX アーティファクト** &gt; **データ モデル** &gt; **クエリ**とクリックします。 **Name** プロパティを **FMTPickupAndReturnQuery** に置き換えます。
+2.  **Dynamics AX アーティファクト** &gt; **データ モデル** &gt; **クエリ** の順にクリックします。 **Name** プロパティを **FMTPickupAndReturnQuery** に置き換えます。
 3.  **追加** をクリックします。
 4.  新しい **FMTPickupAndReturnQuery** クエリがデザイナーで開かれていない場合、ソリューション エクスプローラーでダブルクリックします。
 5.  デザイナーで、**データ ソース**を右クリックしてから**新しいデータ ソース**をクリックします。
@@ -445,7 +444,7 @@ Visual Studio を使用し、更新した **FmtClerkWorkspace** フォームを�
 2 番目のステップでは、キャッシュ クエリから返されるフィールドを持つテーブルを定義します。 キャッシュ行をベース フレームワーク キャッシュ テーブルにマップするために使用される **SysDataCacheContextId** フィールドを追加することも必要です。 また、このテーブルと他のテーブルとの間に必要な関係を定義する必要もあり、関係するキャッシュされたフィールドを必要とするデータ メソッドも必要です。
 
 1.  ソリューション エクスプローラーの **FMTutorial** プロジェクトで、**テーブル** フォルダーを右クリックし、**追加**をポイントしてから**新しい項目**をクリックします。
-2.  **Dynamics AX アーティファクト** &gt; **データ モデル** &gt; **テーブル**とクリックします。 **Name** プロパティを **FMTPickupAndReturnTableCache** に置き換えます。
+2.  **Dynamics AX アーティファクト** &gt; **データ モデル** &gt; **テーブル** の順にクリックします。 **Name** プロパティを **FMTPickupAndReturnTableCache** に置き換えます。
 3.  **追加** をクリックします。
 4.  新しい **FMTPickupAndReturnTableCache** テーブルがデザイナーで開かれていない場合、ソリューション エクスプローラーでダブルクリックします。
 5.  デザイナーで、**フィールド**を右クリックしてから、次のフィールドを追加します。 各フィールドについては、次の表は、データ型および拡張データ型 (EDT) または列挙型を表示します。
@@ -523,7 +522,7 @@ Visual Studio を使用し、更新した **FmtClerkWorkspace** フォームを�
 3 番目のステップは、キャッシュ クエリとキャッシュ テーブルの間のリレーションシップを定義するクラスを作成することです。
 
 1.  ソリューション エクスプローラーの **FMTutorial** プロジェクトで、**クラス** フォルダーを右クリックし、**追加**をポイントしてから**新しい項目**をクリックします。
-2.  **Dynamics AX アーティファクト** &gt; **コード** &gt; **クラス**とクリックします。 **Name** プロパティを **FMTPickupAndReturnClass** に置き換えます。
+2.  **Dynamics AX アーティファクト** &gt; **コード** &gt; **クラス** の順にクリックします。 **Name** プロパティを **FMTPickupAndReturnClass** に置き換えます。
 3.  **追加** をクリックします。
 4.  新しい **FMTPickupAndReturnClass** クラスがデザイナーで開かれていない場合、ソリューション エクスプローラーでダブルクリックします。
 5.  クラスに次のコードを追加します。
@@ -641,7 +640,7 @@ Visual Studio を使用し、更新した **FmtClerkWorkspace** フォームを�
 Visual Studio を使用し、更新した **FmtClerkWorkspace** フォームをビルドして実行します。
 
 1.  ソリューション エクスプローラーで、**FmtClerkWorkspace** フォームを右クリックしてから、**スタートアップ オブジェクトとして設定**をクリックします。
-2.  **Ctrl+F5** キーを押して、フォームをビルドおよび実行します。 Internet Explorerで、フォームを開きます。
+2.  **Ctrl+F5** キーを押して、フォームをビルドおよび実行します。 Internet Explorer でフォームが開きます。
 3.  **今日を返す**垂直タブをクリックします。
 4.  リストの 2 番目のレコードに対する**完全レンタル**をクリックします。
 5.  **終了マイレージ** を **200** に設定し、**OK** をクリックします。 返却されたレンタルがまだ一覧に表示されていることを確認します。
@@ -671,7 +670,7 @@ Visual Studio を使用し、更新した **FmtClerkWorkspace** フォームを�
 Visual Studio を使用し、更新した **FmtClerkWorkspace** フォームをビルドして実行します。
 
 1.  ソリューション エクスプローラーで、**FmtClerkWorkspace** フォームを右クリックしてから、**スタートアップ オブジェクトとして設定**をクリックします。
-2.  **Ctrl+F5** キーを押して、フォームをビルドおよび実行します。 Internet Explorerで、フォームを開きます。
+2.  **Ctrl+F5** キーを押して、フォームをビルドおよび実行します。 Internet Explorer でフォームが開きます。
 3.  **今日を返す**垂直タブをクリックします。
 4.  リストの 2 番目のレコードに対する**完全レンタル**をクリックします。
 5.  **終了マイレージ** を **100** に設定し、**OK** をクリックします。 返却されたレンタルが一覧に表示されなくなったことを確認します。
@@ -679,7 +678,6 @@ Visual Studio を使用し、更新した **FmtClerkWorkspace** フォームを�
 ## <a name="related-tutorials"></a>関連するチュートリアル
 -   [顧客フォームの作成](build-customer-form.md) – フォーム パターンを公開する場合は、このチュートリアルを参照してください。 このチュートリアルでは、詳細マスター パターンをフォームに適用するプロセスについて説明します。
 -   [ナビゲーションの構築](build-navigation.md) – Dynamics AX のメニュー構造にワークスペースを追加する方法については、このチュートリアルを参照してください。
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "規制の監視と規制の更新の通知"
-description: "ローカライズ &amp; 翻訳向け LCS ソリューションの要件の一部として、ローカライズ ISV ソリューション プロバイダーは、Microsoft Dynamics Lifecycle Services (LCS) のローカライズ ツールを活用して規制の監視を実施する必要があります。"
+title: 規制の監視と規制の更新の通知
+description: ローカライズおよび翻訳向け LCS ソリューションの要件の一部として、ローカライズ ISV ソリューション プロバイダーは、Microsoft Dynamics Dynamics Lifecycle Services (LCS) のローカライズ ツールを活用して規制の監視を実施する必要があります。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: IT Pro
 ms.reviewer: shylaw
 ms.search.scope: Operations
@@ -17,19 +17,18 @@ ms.search.region: global
 ms.author: janeaug
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 7884c687247c5ae4cbc7d855b47719a0c411fd12
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: e2dc54516cf6ceebfb21e5f032f661be0b1c2a83
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368621"
 ---
-
 # <a name="regulatory-watch-and-communication-of-regulatory-updates"></a>規制の監視と規制の更新の通知
 
 [!include [banner](../includes/banner.md)]
 
-ローカライズ &amp; 翻訳向け LCS ソリューションの要件の一部として、ローカライズ ISV ソリューション プロバイダーは、Microsoft Dynamics Lifecycle Services (LCS) のローカライズ ツールを活用して規制の監視を実施する必要があります。
+ローカライズおよび翻訳向け LCS ソリューションの要件の一部として、ローカライズ ISV ソリューション プロバイダーは、Microsoft Dynamics Dynamics Lifecycle Services (LCS) のローカライズ ツールを活用して規制の監視を実施する必要があります。
 
 ## <a name="set-up-an-alerting-project-in-lcs"></a>LCS で警告のプロジェクトを設定
 
@@ -42,7 +41,7 @@ ms.lasthandoff: 08/09/2018
 1.  プラス記号 (**+**) をクリックして新しいプロジェクトを追加します。
 2.  次のプロジェクトにおける名前付け規則を使用する名前を入力します。**REG-Alerts-Country/region 名前**
 3.  プロジェクトの説明を入力します。
-4.  製品名については、Microsoft Dynamics 365 for Finance and Operations の最新バージョンを指定します。
+4.  製品名では、Microsoft Dynamics 365 for Finance and Operations の最新バージョンを指定します。
 5.  製品バージョンでは、最新バージョンを指定します。
 6.  業界を指定します。
     -   ソリューションがすべての業界に関連する場合は **その他** を選択します。
@@ -142,7 +141,6 @@ ms.lasthandoff: 08/09/2018
 > 警告は参照として LCS に保管できます。
 > 
 > 関連する機能の潜在的なエンジニア リングなどの更なるプロセスは、ISV ソリューション プロバイダーの既存のシステムで処理されます。
-
 
 
 

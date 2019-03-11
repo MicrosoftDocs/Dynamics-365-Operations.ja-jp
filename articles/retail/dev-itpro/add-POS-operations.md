@@ -1,13 +1,13 @@
 ---
-title: "ボタン グリッドのデザイナーを使用して、POS 操作を POS レイアウトに追加"
-description: "このトピックでは、新しい POS 工程を作成し、ボタン グリッド デザイナーを使用して POS レイアウトに追加する方法について説明します。"
+title: ボタン グリッドのデザイナーを使用して、POS 操作を POS レイアウトに追加
+description: このトピックでは、新しい POS 工程を作成し、ボタン グリッド デザイナーを使用して POS レイアウトに追加する方法について説明します。
 author: mugunthanm
 manager: AnnBe
 ms.date: 05/23/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: margoc
 ms.search.scope: Retail, Operations
@@ -15,14 +15,13 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Application update 4
-ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
 ms.openlocfilehash: ce88f17248434b50a0ce5f1460735da76ad34dd5
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369083"
 ---
-
 # <a name="add-pos-operations-to-pos-layouts-by-using-button-grid-designer"></a>ボタン グリッドのデザイナーを使用して、POS 操作を POS レイアウトに追加
 
 [!include[banner](../includes/banner.md)]
@@ -51,7 +50,7 @@ ms.lasthandoff: 08/09/2018
 > [!NOTE]
 > 新しい工程を作成して独自のカスタム ロジックを実行したり、カートにアイテムを追加したり、ライン割引を適用したりするなど、既存の POS オペレーションを呼び出すことも、現在のカートを取得する、拡張プロパティを設定するなどの既存の API を呼び出すこともできます。
 
-1. 管理者モードで Microsoft Visual Studio 2015 を起動します。
+1. Microsoft Visual Studio 2015 を管理者モードで起動します。
 2. **...\RetailSDK\POSOpen** から、**ModernPOS** ソリューションを開きます。
 3. **POS.Extensions** プロジェクトで、**EODSample** というフォルダーを作成します。
 4. **EODSample** フォルダーで、**Operations** というフォルダーを作成します。
@@ -461,4 +460,3 @@ ms.lasthandoff: 08/09/2018
 
 1. F5 キーを押し、POS を展開してカスタマイズをテストします。
 2. トランザクション画面で、新しい **EOD** 操作ボタンを選択し、手順を実行します。
-

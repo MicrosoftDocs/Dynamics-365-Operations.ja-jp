@@ -1,13 +1,13 @@
 ---
-title: "PowerApps ホスト コントロール"
-description: "PowerApps ホスト コントロールを使用することにより、作成した PowerApps アプリまたは共有 PowerApps アプリを埋め込むことができます。"
+title: PowerApps ホスト コントロール
+description: PowerApps ホスト コントロールを使用することにより、作成した PowerApps アプリまたは共有 PowerApps アプリを埋め込むことができます。
 author: TLeforMicrosoft
 manager: AnnBe
 ms.date: 04/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2017-04-26
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: fd9a799cf5b16eb585dbb49a48262d895ac349a3
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 327380e3e6d24ac1ea0c6b614fcf71b47d5965f4
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369771"
 ---
-
 # <a name="powerapps-host-control"></a>PowerApps ホスト コントロール
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft PowerApps では、作成したアプリや他のユーザーが作成および共有しているアプリを実行することで組織のデータを管理できます。 アプリは[電話などのモバイル デバイス](https://powerapps.microsoft.com/en-us/tutorials/run-app-client/)で実行するか、またはそれらを[ブラウザーで](https://powerapps.microsoft.com/en-us/tutorials/run-app-browser/) Microsoft Dynamics 365 for Finance and Operations を起動することによって実行します。 C\# 等のプログラミング言語を学習せずに、多くの種類のアプリを作成することができます。 Microsoft Visual Studio を使用する開発者が利用できる PowerApps ホスト コントロールを使用することにより、作成した PowerApps アプリまたは共有 PowerApps アプリを埋め込むことができます。 PowerApps の詳細については、[[https://powerapps.microsoft.com](https://powerapps.microsoft.com/)] を参照してください。
+Microsoft PowerApps では、作成したアプリや他のユーザーが作成および共有しているアプリを実行することで組織のデータを管理できます。 アプリは[電話などのモバイル デバイスで実行する](https://powerapps.microsoft.com/en-us/tutorials/run-app-client/)か、またはそれらを[ブラウザーで](https://powerapps.microsoft.com/en-us/tutorials/run-app-browser/) Microsoft Dynamics 365 for Finance and Operations を起動することによって実行します。 C\# 等のプログラミング言語を学習せずに、多くの種類のアプリを作成することができます。 Microsoft Visual Studio を使用する開発者が利用できる PowerApps ホスト コントロールを使用することにより、作成した PowerApps アプリまたは共有 PowerApps アプリを埋め込むことができます。 PowerApps の詳細については、[[https://powerapps.microsoft.com](https://powerapps.microsoft.com/)] を参照してください。
 
 ## <a name="host-a-powerapps-app-on-a-page"></a>ページの PowerApps アプリをホストする
 
@@ -46,4 +45,3 @@ Microsoft PowerApps では、作成したアプリや他のユーザーが作成
 5.  場合によっては、Microsoft によって提供される開発またはサンドボックス PowerApps 環境で PowerApps アプリをホストする場合があります。 この場合、**PowerApps 環境のオーバーライド** プロパティの値としてそのオーバーライド URL を指定する必要があります。
 
 サイズは、コントロールを配置したコンテナーによって決定されます。 使用可能なスペースが限られているフォーム パターンでコントロールを配置し、PowerApps アプリケーションが使用可能領域よりも大きく設計されている場合、PowerApps アプリケーションにスクロール バーが表示されるようになります。
-

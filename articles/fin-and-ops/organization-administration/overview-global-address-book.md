@@ -1,13 +1,13 @@
 ---
-title: "グローバル アドレス帳"
-description: "グローバル アドレス帳は、組織に関連付けられている人と組織の関係を理解するのに役立ちます。 たとえば、顧客がマーケティング キャンペーンの仕入先である場合や、組織の作業者が仕入先である場合があります。"
+title: グローバル アドレス帳
+description: グローバル アドレス帳は、組織に関連付けられている人と組織の関係を理解するのに役立ちます。 たとえば、顧客がマーケティング キャンペーンの仕入先である場合や、組織の作業者が仕入先である場合があります。
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 07/05/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DirPartyTable, DirPartyTableRoles
 audience: IT Pro
 ms.reviewer: kfend
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: f5da52b9a10be13ab208536c80a6307e4674f35b
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368339"
 ---
-
 # <a name="global-address-book"></a>グローバル アドレス帳
 
 [!include [banner](../includes/banner.md)]
@@ -72,4 +71,3 @@ ms.lasthandoff: 12/18/2018
 ### <a name="locations-and-transactions"></a>場所とトランザクション
 
 関係者が担うロールがトランザクションに含まれているとき、トランザクションの詳細が入力されると、その関係者の場所、住所、または連絡先情報にアクセスできます。
-

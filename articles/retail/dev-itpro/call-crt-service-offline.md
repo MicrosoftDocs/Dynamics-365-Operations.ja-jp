@@ -1,13 +1,13 @@
 ---
-title: "Commerce Runtime (CRT) サービスをオフライン モードで呼び出す"
-description: "このトピックでは、販売時点管理 (POS) のオフライン サポートを提供する方法について説明します。"
+title: Commerce Runtime (CRT) サービスをオフライン モードで呼び出す
+description: このトピックでは、販売時点管理 (POS) のオフライン サポートを提供する方法について説明します。
 author: mugunthanm
 manager: AnnBe
 ms.date: 07/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations, Retail
@@ -17,20 +17,19 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
 ms.openlocfilehash: 26644fa2c9f4b4ff29573a4d15d315d10b516746
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368976"
 ---
-
 # <a name="call-the-commerce-runtime-crt-service-in-offline-mode"></a>Commerce Runtime (CRT) サービスをオフライン モードで呼び出す
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> このトピックは、Dynamics 365 for Finance and Operations の 7.1 およびそれ以降のバージョンに適用可能です。 バージョン 7.2 およびそれ以上の場合は、この実装はサポートされていません。 これらのバージョンでは、オーバーレイせずに拡張モデルに従います。
+> このトピックは、Dynamics 365 for Finance and Operations バージョン 7.1 およびそれ以前のバージョンに適用されます。 バージョン 7.2 およびそれ以上の場合は、この実装はサポートされていません。 これらのバージョンでは、オーバーレイせずに拡張モデルに従います。
 
 このトピックでは、販売時点管理 (POS) のオフライン サポートを提供する方法について説明します。
 
@@ -41,7 +40,7 @@ ms.lasthandoff: 08/09/2018
 3.  Proxies.RetailProxy プロジェクトをコンパイルします。 コンパイル中に、アダプタ \\Interfaces.g.cs は、新しいエンティティおよびインターフェイスの情報で更新されます。 自動的に生成されたクラスを変更しないでください。
 4.  アダプタ フォルダーに新しいマネージャー クラスを追加し、そのマネージャーから CRT サービスを呼び出します。 **SalesOrderManager** や **PurchaseOrderManager** などの標準エンティティ マネージャー クラスは、[Adapters] フォルダーにあります。 **注記:** プロジェクトで使用されるすべてのライブラリは、移動可能で署名されている必要があります。 (参照されるカスタムの CRT サービスは、移動可能なライブラリである必要があります。)
 5.  コンパイル後に新しい公開キーが生成されるため、CRT 構成ファイルの公開キーを更新します。
-6.  Microsoft Dynamics AX\\70\\Retail Modern POS\\ClientBroker フォルダー内の新しいプロキシ DLL をビルドし置き換えます。 また、カスタム CRT 拡張子ライブラリを Microsoft Dynamics AX \\70\\ Retail Modern POS\\ ClientBroker フォルダーにドロップします。 (参照されるすべてのライブラリは、このフォルダにドロップする必要があります)。
+6.  Microsoft Dynamics AX\\70\\Retail Modern POS\\ClientBroker フォルダで、新しいプロキシ DLL をビルドして置き換えます。 また、カスタム CRT 拡張ライブラリを、Microsoft DynamicsAX\\70\\Retail Modern POS\\ClientBroker フォルダへドロップします。 (参照されるすべてのライブラリは、このフォルダにドロップする必要があります)。
 7.  DllHost.exe.config ファイルで、**RetailProxyAssemblyName** および **AdaptorCallerFullTypeName** を新しいプロキシ DLL およびアダプタ名に更新します。
 
         <add key="RetailProxyAssemblyName" value="Contoso.Commerce.RetailProxy" />
@@ -52,7 +51,6 @@ ms.lasthandoff: 08/09/2018
         <add source="assembly" value="Contoso.Commerce.Runtime.Services" />
 
 9.  dllhost.exe を再起動します。 (新しい構成ファイルを読むために MPOS の dllhost.exe を再起動する必要があります。構成ファイルの変更がある場合、アップグレードをする際に必要になります。)
-
 
 
 

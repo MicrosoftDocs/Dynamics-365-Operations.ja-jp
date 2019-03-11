@@ -1,37 +1,36 @@
 ---
-title: "ユーザー インターフェイス ファイルを翻訳します"
-description: "このトピックでは、Microsoft Dynamics 365 製品における UI 翻訳サービスの使用方法について説明します。"
+title: ユーザー インターフェイス ファイルを翻訳します
+description: このトピックでは、Microsoft Dynamics 365 製品における UI Translation service の使用方法について説明します。
 author: kfend
 manager: AnnBe
 ms.date: 03/29/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Operations
 ms.custom: 6154
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ejchoGIT
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: d4e5d20d7f632a074cffdbe57e6a31140adf17c5
 ms.openlocfilehash: 3bc76680edff97c07be6388e36c331ef2a4e104c
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/11/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368805"
 ---
-
-# <a name="translate-user-interface-files"></a>ユーザー インターフェイス ファイルを翻訳します
+# <a name="translate-user-interface-files"></a>ユーザー インタ フェース ファイルの翻訳
 
 [!include [banner](../includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 製品またはソリューションのユーザー インターフェイス (UI) ファイルを変換する方法について説明します。
 
-Microsoft Dynamics 365 翻訳サービスに関する詳細については、[Dynamics 365 - 翻訳サービスの概要](translation-service-overview.md) を参照してください。 ドキュメント ファイルを翻訳する方法については、[Dynamics 365 - 翻訳サービス ユーザー ガイド - ドキュメント ファイルの翻訳](use-translation-service-ua.md) を参照してください。
+Microsoft Dynamics 365 Translation Service (DTS) に関する詳細については、[Dynamics 365 - Translation Service の概要](translation-service-overview.md) を参照してください。 ドキュメント ファイルを翻訳する方法については、[Dynamics 365 - 翻訳サービス ユーザー ガイド - ドキュメント ファイルの翻訳](use-translation-service-ua.md) を参照してください。
 
 ## <a name="create-a-translation-request"></a>翻訳要求を作成する
 1. Microsoft Dynamics Lifecycle Services (LCS) で、DTS ダッシュボードの**追加**を選択して新しい翻訳要求を作成します。
@@ -48,7 +47,7 @@ Microsoft Dynamics 365 翻訳サービスに関する詳細については、[Dy
     | ファイル タイプ | **ユーザー インターフェイス** を選択します。 |
     | 製品名 | 製品名を選択します。 LCS プロジェクト内から DTS にアクセスする場合、このフィールドは自動的に入力され、読み取り専用です。 |
     | 製品バージョン | 製品バージョンを選択します。 LCS プロジェクト内から DTS にアクセスする場合、このフィールドではプロジェクトからの既定の製品バージョン情報を表示されます。 ただし、別のバージョンを選択できます。 |
-    | 翻訳元言語、翻訳先言語 | 翻訳対象のソース言語とターゲット言語のセットを選択します。 業務で同じソース言語から複数のターゲット言語に翻訳する必要がある場合、1 つの要求ですべてのターゲット言語を選択できます。 言語名の横にあるチェック ボックスを使用してターゲット言語を選択します。 これにより、時間が節約され、1 つの要求ですべてのターゲット言語翻訳のステータスを追跡できます。 このフィールドには、選択した製品名とバージョンでサポートされているすべての言語がサポートされています。 **太字**タイプで表示される言語名は、Microsoft Dynamics の製品の一般提供 (GA) 言語です。 つまり、Microsoft のトレーニングを受けた機械翻訳 (MT) システムをこれらの言語で使用でき、MT システムは Microsoft Dynamics の用語でトレーニングされます。 GA 言語以外の場合、MT システムは一般的なドメイン トレーニングを使用します。 |
+    | 翻訳元言語、翻訳先言語 | 翻訳対象のソース言語とターゲット言語のセットを選択します。 業務で同じソース言語から複数のターゲット言語に翻訳する必要がある場合、1 つの要求ですべてのターゲット言語を選択できます。 言語名の横にあるチェック ボックスを使用してターゲット言語を選択します。 これにより、時間が節約され、1 つの要求ですべてのターゲット言語翻訳のステータスを追跡できます。 このフィールドには、選択した製品名とバージョンでサポートされているすべての言語がサポートされています。 **太字**タイプで表示される言語名は、Microsoft Dynamics 製品の一般提供 (GA) 言語です。 つまり、Microsoft のトレーニングを受けた機械翻訳 (MT) システムをこれらの言語で使用でき、MT システムは Microsoft Dynamics の用語でトレーニングされます。 GA 言語以外の場合、MT システムは一般的なドメイン トレーニングを使用します。 |
 
 ![言語を選択する](./media/dts-target-lang.png "言語を選択する")
 
@@ -72,7 +71,7 @@ Microsoft Dynamics 365 翻訳サービスに関する詳細については、[Dy
 翻訳元のソース言語ですべての UI ファイルを含むひとつの ZIP ファイルを作成します。 ファイル タイプが製品でサポートされている場合、zip ファイルに異なるファイル タイプを含めることができます。 サポートされるファイル タイプの詳細については、[サポートされている製品](translation-service-overview.md#supported-products) を参照してください。 DTS はアップロードするソース ファイルを変更しないことに注意してください。 ソースファイルは、要求した対応するターゲット言語でファイルを作成するためにのみ使用されます。
 
 ### <a name="upload-xliff-translation-memory-files-optional"></a>XLIFF 翻訳メモリファイル (オプション) のアップロード
-以前の UI 翻訳要求の XLIFF TM ファイルがある場合、または[整列ツール](use-translation-service-tm.md)を使用し、XLIFF TM を作成した場合、それらをアップロードする前にすべての TM ファイルを含む zip ファイルを作成します。 その後、製品バージョン間の整合性を保証するために一致する文字列が再利用されます。 XLIFF TM の詳細については、[Microsoft Dynamics 365 翻訳サービス - 翻訳メモリ](use-translation-service-tm.md) を参照してください。
+以前の UI 翻訳要求の XLIFF TM ファイルがある場合、または[整列ツール](use-translation-service-tm.md)を使用し、XLIFF TM を作成した場合、それらをアップロードする前にすべての TM ファイルを含む zip ファイルを作成します。 その後、製品バージョン間の整合性を保証するために一致する文字列が再利用されます。 XLIFF TM の詳細については、[Microsoft Dynamics 365 Translation service - 翻訳メモリ](use-translation-service-tm.md) を参照してください。
 
 ![TM アップロード](./media/dts-tm-upload.png "TM アップロード")
 
@@ -124,4 +123,3 @@ XLIFF での翻訳ファイルのレビューと編集が完了したら、次�
 ![再生成された出力](./media/dts-regenerate-output.png "再生成された出力")
 
 必要に応じて何度でも再生成プロセスを繰り返すことができます。
-

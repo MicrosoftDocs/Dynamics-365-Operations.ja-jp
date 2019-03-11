@@ -1,13 +1,13 @@
 ---
-title: "エンタープライズ ポータル サーバーの 1 つのサーバー ファームへの結合"
-description: "この記事では、エンタープライズ ポータル サーバー (Microsoft Dynamics AX 2012 用) を単一のサーバー ファームに参加させる方法について説明します。"
+title: エンタープライズ ポータル サーバーの 1 つのサーバー ファームへの結合
+description: この記事では、エンタープライズ ポータル サーバー (Microsoft Dynamics AX 2012 用) を単一のサーバー ファームに参加させる方法について説明します。
 author: aneesmsft
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012
-ms.service: 
-ms.technology: 
+ms.service: ''
+ms.technology: ''
 audience: IT Pro
 ms.reviewer: robinr
 ms.search.scope: AX 2012
@@ -15,23 +15,22 @@ ms.custom: 27431
 ms.assetid: 05316e9d-818e-4f4b-901c-2e67fe8edfd1
 ms.search.region: Global
 ms.author: aneesa
-ms.search.validFrom: 
+ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 488afaea08cf10ead1768ec888e0bd8219073a1b
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368932"
 ---
-
 # <a name="join-enterprise-portal-servers-into-a-single-server-farm"></a>エンタープライズ ポータル サーバーの 1 つのサーバー ファームへの結合
 
 [!include [banner](../../includes/banner.md)]
 
 この記事では、エンタープライズ ポータル サーバー (Microsoft Dynamics AX 2012 用) を単一のサーバー ファームに参加させる方法について説明します。 
 
-Microsoft Dynamics Lifecycle Services (LCS) でエンタープライズ ポータル (EP) サーバーが配置されると、各サーバーは独自のサーバー ファームに配置されます。 この記事のステップでは、すべての EP サーバーを単一のサーバー ファームに参加させる方法を示します。 基本概念は、1 台の EP サーバー上にサーバー ファームを保持し、その他のすべての EP サーバーをそのファームに結合することです。 この記事の情報は、次の前提条件に基づいています。
+Microsoft Dynamics Lifecycle Services (LCS) でエンタープライズ ポータル (EP) サーバーが配置されると、各 EP サーバーは独自のサーバー ファームに配置されます。 この記事のステップでは、すべての EP サーバーを単一のサーバー ファームに参加させる方法を示します。 基本概念は、1 台の EP サーバー上にサーバー ファームを保持し、その他のすべての EP サーバーをそのファームに結合することです。 この記事の情報は、次の前提条件に基づいています。
 
 -   *N* EP サーバーは、LCS によってが配置され、これらのサーバーは、EP-01、EP 02、EP-03...EP 0*N*とラベル付けされています。
 -   ロード バランサを AzureILB01 と呼びます。
@@ -42,7 +41,7 @@ Microsoft Dynamics Lifecycle Services (LCS) でエンタープライズ ポー�
 
 ## <a name="put-ep-servers-into-a-single-server-farm"></a>1 台のサーバー ファームに EP サーバーを配置
 1.  Dynamics インストーラー ユーザー サービス アカウントを使用して EP-01 にログオンします。
-2.  Microsoft SharePoint 2013 サーバーの管理を起動します。
+2.  Microsoft SharePoint 2013 Central Administration を起動します。
 3.  **システム設定** &gt; **代替アクセス マッピングのコンフィギュレーション**に移動します。
 4.  **内部 URL を追加する**をクリックします。 次のスクリーン ショットは、EP サイトが作成されたポートである、ポート 81 に EP-02 のマッピングを追加する方法を示しています。 LCS によって展開されているすべての EP サーバーでこの手順を繰り返します。[![AddInternalURLs](./media/addinternalurls.png)](./media/addinternalurls.png)
 5.  **公開 URL の編集**をクリックし、適切な値を入力します。
@@ -61,14 +60,14 @@ Microsoft Dynamics Lifecycle Services (LCS) でエンタープライズ ポー�
 9.  LCS によって展開されているすべての EP サーバー上で手順 6 ～ 8 を繰り返します。
 10. Dynamics インストーラー ユーザー サービス アカウントを使用して EP-02 サーバーにログオンします。
 11. Dynamics インストーラが格納されているドライブに移動します (このドライブはたいていドライブ F です)。 **セットアップ** を右クリックし、**管理者として実行** をクリックして以下の手順に従います。
-    1.  **Microsoft Dynamics AX コンポーネントのインストール**をクリックします。
+    1.  **Install Microsoft Dynamics AX コンポーネントのインストール**をクリックします。
     2.  **ようこそ**ページで、**次へ**をクリックします。
     3.  **コンポーネントの追加または変更**をクリックし、次に**次へ**をクリックします。
     4.  **Webサーバー コンポーネント** で、**エンタープライズ ポータル** チェック ボックスをオンにします。 **OK** をクリックして EP をインストールすることを同意し、**次へ**をクリックします。
     5.  検証エラーがないことを確認し、**次へ**をクリックします。
     6.  BC プロキシ ユーザーのパスワードを入力し、**次**を入力します。
     7.  **エンタープライズ ポータル用の Web サイトの構成**ページで、Web アプリケーションを選択します。
-    8.  **Windows SharePoint Services を構成する** チェック ボックスをオンにします。
+    8.  **Windows SharePoint Services を構成する**チェック ボックスをオンにします。
     9.  **インストールの完了後に IIS を再起動** チェック ボックスをオンにし、**次へ** をクリックします。
 
     [![EP 用の Web サイトの構成](./media/configure-a-web-site-for-ep.png)](./media/configure-a-web-site-for-ep.png)
@@ -76,7 +75,7 @@ Microsoft Dynamics Lifecycle Services (LCS) でエンタープライズ ポー�
 13. サーバー EP-03 から EP-0*N* で手順 10 ～ 12 を繰り返します。 (ファームがコンフィギュレーションされている単一のサーバーを除くすべての EP サーバーに EP を再インストールする必要があります。 ここでは、このサーバーは EP-01 です。)
 14. 各 EP サーバー、EP-01 ～ EP-0*N* でこれらの手順に従います。
     1.  インターネット インフォメーション サービス (IIS) の管理コンソール (inetmgr) を開きます。
-    2.  **サイト** &gt; **SharePoint – 81** に移動します。
+    2.  **サイト** &gt; **SharePoint – 81**に移動します。
     3.  右クリックして **バインドの編集** をクリックします。
     4.  バインディングをダブルクリックして、**Edit Site Binding** ダイアログ ボックスを開きます。
     5.   **ホスト名**フィールドに、ロード バランサー名を入力します。
@@ -170,7 +169,6 @@ Microsoft Dynamics Lifecycle Services (LCS) でエンタープライズ ポー�
 2.  **アプリケーション管理** &gt; **サイト コレクションの表示**に移動します。
 3.  右上隅で、ポート 81 でホストされているサイトを選択します。 結果画面には、選択したサイトに使用されているデータベースが示されます。
 4.  サイト 81 が作成されたサーバーで使用されていない WSS \_コンテンツ\_\* データベースをすべて削除します。 この場合は、EP-01 によって使用される WSS\_Content\_\* データベースを保持し、WSS\_Content\_\* で始まる名前の他のデータベースをすべて削除します。
-
 
 
 

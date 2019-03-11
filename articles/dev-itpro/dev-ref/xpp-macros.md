@@ -1,13 +1,13 @@
 ---
-title: "X++ でのマクロ"
-description: "このトピックでは、X++ でマクロを作成および使用する方法について説明します。"
+title: X++ でのマクロ
+description: このトピックでは、X++ でマクロを作成および使用する方法について説明します。
 author: RobinARH
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 2f7c4b720be22c25f742e83173be2e674418e228
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 839dabd270c576a32a39875cd98e5f074ecc50be
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368871"
 ---
-
 # <a name="macros-in-x"></a>X++ でのマクロ
 
 [!include [banner](../includes/banner.md)]
@@ -293,7 +292,7 @@ ms.lasthandoff: 04/20/2018
     }
 
 ## <a name="macro-parameters"></a>マクロ パラメーター
-パラメータ シンボルを含めるようにマクロの値を定義することができます。 最初のパラメーター記号は %1で、2 番目のパラメーター記号は %2 などです。 展開のためにマクロ記号名を参照するときは、パラメーターの値を渡します。 マクロ パラメーターの値は、正式な型のない文字シーケンスで、コンマで区切られます。 パラメーター値の一部としてカンマで渡す方法はありません。 渡されるパラメーターの数は、マクロ値が受け取るように設計されているパラメーターの数よりも少なくても、大きくても等しくてもかまいません。 システムは、渡されたパラメーターの数の不一致を許容します。 マクロが期待するよりも少ないパラメーターが指定された場合、省略された各パラメーターは、長さが 0 の文字列として扱われます。 次のコード サンプルでは、**MyMacro** はパラメーターを含む値を持つよう定義されています。 マクロの代入記号は、かっこで囲まれたパラメーターの値で指定されます。
+パラメータ シンボルを含めるようにマクロの値を定義することができます。 最初のパラメーター記号は %1、2 番目のパラメーター記号は %2 で、以降は同様の形式です。 展開のためにマクロ記号名を参照するときは、パラメーターの値を渡します。 マクロ パラメーターの値は、正式な型のない文字シーケンスで、コンマで区切られます。 パラメーター値の一部としてカンマで渡す方法はありません。 渡されるパラメーターの数は、マクロ値が受け取るように設計されているパラメーターの数よりも少なくても、大きくても等しくてもかまいません。 システムは、渡されたパラメーターの数の不一致を許容します。 マクロが期待するよりも少ないパラメーターが指定された場合、省略された各パラメーターは、長さが 0 の文字列として扱われます。 次のコード サンプルでは、**MyMacro** はパラメーターを含む値を持つよう定義されています。 マクロの代入記号は、かっこで囲まれたパラメーターの値で指定されます。
 
     static void MacroParameterSubstitutionJob(Args _args)
     {
@@ -668,7 +667,6 @@ Finance and Operations には**イベント**と呼ばれるマクロ ライブ�
             ****************/
         }
     }
-
 
 
 

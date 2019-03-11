@@ -1,13 +1,13 @@
 ---
-title: "バージョン コントロール、メタデータ検索、およびナビゲーション"
-description: "このチュートリアルでは、Azure DevOps (以前の名称は Visual Studio Online) を設定して、モデルのソース管理を有効にします。 これは、\"仕事\" のタスクの作成および整理、メタデータおよびソース コードの検索、関連するモデル要素間の移動、モデルからのプロジェクトの作成を行う機能など、開発ツールでのその他の生産性機能について把握することにも役立ちます。"
+title: バージョン コントロール、メタデータ検索、およびナビゲーション
+description: このチュートリアルでは、Azure DevOps (以前の名称は Visual Studio Online) を設定して、モデルのソース管理を有効にします。 これは、"仕事" のタスクの作成および整理、メタデータおよびソース コードの検索、関連するモデル要素間の移動、モデルからのプロジェクトの作成を行う機能など、開発ツールでのその他の生産性機能について把握することにも役立ちます。
 author: RobinARH
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 1aae5797e37b846a38f957b02870e213da528a2d
 ms.openlocfilehash: bb5b6fd9aa42ef36ba21469eced3e9fbdf848281
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/20/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368850"
 ---
-
 # <a name="version-control-metadata-search-and-navigation"></a>バージョン コントロール、メタデータ検索、およびナビゲーション
 
 [!include [banner](../includes/banner.md)]
@@ -66,9 +65,9 @@ Lifecycle Services (LCS) 自動化コードのアップグレード ツールを
 
 [![VSOfolders](./media/vsofolders1.png)](./media/vsofolders1.png)
 
-**メタデータ** フォルダーには、パッケージとモデルによって整理されたソース XML ファイルがあり、**プロジェクト** フォルダーには Visual Studio プロジェクトが含まれています。 コードを移行せず、最初から開始している場合、開発を開始する前に、チーム プロジェクト内のサーバーに類似したフォルダ構造を作成します。
+**メタデータ**フォルダーには、パッケージとモデルによって整理されたソース XML ファイルがあり、**プロジェクト**フォルダーには Visual Studio プロジェクトが含まれています。 コードを移行せず、最初から開始している場合、開発を開始する前に、チーム プロジェクト内のサーバーに類似したフォルダ構造を作成します。
 
-### <a name="configure-visual-studio-to-connect-to-your-team-project"></a>チーム プロジェクトに接続するように Visual Studio をコンフィギュレーションする
+### <a name="configure-visual-studio-to-connect-to-your-team-project"></a>Visual Studio をコンフィギュレーションしてチーム プロジェクトに接続する
 
 1.  管理者として Visual Studio 2013 を起動します。
 2.  **プロジェクト &gt; オプション &gt; ソース管理 &gt; プラグインの選択**の順にクリックします。
@@ -262,14 +261,13 @@ Lifecycle Services (LCS) 自動化コードのアップグレード ツールを
 
     [![AppExplorerModelSearch](./media/appexplorermodelsearch.jpg)](./media/appexplorermodelsearch.jpg)
 
-3.  検索が完了したら、AOT ルート ノードを右クリックし、*[検索結果を新規プロジェクトに追加します] を選択します。
+3.  検索が完了したら、AOT ルート ノードを右クリックし、*検索結果を新規プロジェクトに追加しますを選択します。
 
     [![AddSearchResultsToNewProject](./media/addsearchresultstonewproject.jpg)](./media/addsearchresultstonewproject.jpg)*
 
 4.  新しいプロジェクト ダイアログ ボックスでプロジェクトのプロパティを指定し、**OK** をクリックしてプロジェクトを作成します。
 
 **ヒント:** 検索結果からプロジェクトを作成するには、すべての結果が同じモデル内にある限り、任意のタイプ、名前、またはその他のフィルタを検索に追加できます。 例: *モデル:「フリート管理」 タイプ:テーブル名:^FM* は、文字 FM で始まる名前を持つフリート管理モデルで、すべてのテーブルを返します。
-
 
 
 

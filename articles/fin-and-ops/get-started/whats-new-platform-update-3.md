@@ -1,13 +1,13 @@
 ---
-title: "Dynamics 365 for Operations プラットフォーム更新プログラム 3 (2016 年 11 月) の新機能および変更された機能"
-description: "このトピックでは、Dynamics 365 for Operations プラットフォーム更新プログラム 3 における新機能または変更された機能について説明します。 このバージョンは 2016 年 11 月にリリースされ、ビルド番号は 7.0.4307.16141 です。"
+title: Dynamics 365 for Operations プラットフォーム更新プログラム 3 (2016 年 11 月) の新機能および変更された機能
+description: このトピックでは、Dynamics 365 for Operations プラットフォーム更新プログラム 3 の新機能または変更された機能について説明します。 このバージョンは 2016 年 11 月にリリースされ、ビルド番号は 7.0.4307.16141 です。
 author: sericks007
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -17,26 +17,25 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: fb438857eee6d6064e303c35ba63b1527747ef61
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368553"
 ---
-
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-platform-update-3-november-2016"></a>Dynamics 365 for Operations プラットフォーム更新プログラム 3 (2016 年 11 月) の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Dynamics 365 for Operations プラットフォーム更新プログラム 3 における新機能または変更された機能について説明します。 このバージョンは 2016 年 11 月にリリースされ、ビルド番号は 7.0.4307.16141 です。
+このトピックでは、Dynamics 365 for Operations プラットフォーム更新プログラム 3 の新機能または変更された機能について説明します。 このバージョンは 2016 年 11 月にリリースされ、ビルド番号は 7.0.4307.16141 です。
 
 ## <a name="general"></a>一般
 
 | 実行可能事項 | これは、なぜ重要ですか |
 |-----------------|-----------------------|
-| Dynamics AX は、Dynamics 365 for Operations にブランド改称されています。 | Microsoft Dynamics AX は、新しい Microsoft Dynamics 365 の一部になりました。 この変更により、製品名と製品アイコンの両方のリブランディングが義務づけられました。 Dynamics AX の新しい名称は Dynamics 365 for Operations です。 |
-| Dynamics 365 for Operations の評価版を使用 | Dynamics 365 for Finance and Operations の 30 日間試用版は、簡単な電子メールでのサインアップを通してお試しいただけます。 Dynamics 365 for Operations の評価版には、実行中の特定のシナリオを表示することによりステップ バイ ステップのタスク ガイドが記載されている「はじめに」のタスク ガイドが含まれています。 この製品は、シナリオの探索や練習に使用できます。 製品の使用を簡単にするため、また経験がより意味あるものになるためにデモ データが含まれています。 トライアル版の有効期限が終了する 3 日前に、通知の電子メールが送信されます。 その時点で購入体験を開始して購入を完了することができます。 |
+| Dynamics AX は、Dynamics 365 for Operations にブランド改称されています。 | Microsoft Dynamics AX は、現在新しい Microsoft Dynamics 365 傘下の一部になりました。 この変更により、製品名と製品アイコンの両方のリブランディングが義務づけられました。 Dynamics AX の新しい名称は Dynamics 365 for Operations です。 |
+| Dynamics 365 for Operations 試用版を使用する | Dynamics 365 for Operations の 30 日間試用版は、簡単な電子メールでのサインアップでお試しいただけます。 Dynamics 365 for Operations の試用版には、ステップ バイ ステップのタスク ガイドが記載されている「はじめに」ガイドが含まれており、実行中の特定のシナリオを見ることができます。 この製品は、シナリオの探索や練習に使用できます。 製品の使用を簡単にするため、また経験がより意味あるものになるためにデモ データが含まれています。 トライアル版の有効期限が終了する 3 日前に、通知の電子メールが送信されます。 その時点で購入体験を開始して購入を完了することができます。 |
 
 ## <a name="development-and-customization"></a>開発とカスタマイズ
 
@@ -54,14 +53,14 @@ ms.lasthandoff: 12/18/2018
 </tr>
 <tr>
 <td>シームレスなサービスと継続的な更新を利用します。</td>
-<td>Dynamics 365 for Operations プラットフォームには、次のモデルが含まれています。
+<td>Dynamics 365 for Operations プラットフォームには次のようなモデルが含まれています。
 <ul>
 <li>アプリケーション プラットフォーム</li>
 <li>アプリケーション基準</li>
 <li>Test Essentials</li>
 <li>対応するフォーム アダプタ モデル</li>
 </ul>
-プラットフォームのロックにより、Dynamics 365 for Operations プラットフォームのシームレスなサービスと継続的な更新の道筋を作ります。 いずれかのプラットフォームをオーバーレイすると、このリリースにアップグレードすることはできません。 メタデータおよびコードの拡張機能を使用するには、コードをリファクターする必要があります。 カスタマイズの拡張機能を使用する方法に関するチュートリアルについては、<a href="../../dev-itpro/extensibility/customize-model-elements-extensions.md">拡張機能を使用してモデル要素をカスタマイズする</a> を参照してください。 また、<a href="../../dev-itpro/extensibility/customization-overlayering-extensions.md">カスタマイズ: オーバーレイと拡張機能</a> を参照することができます。これはカスタマイズの一般的なトピックです。
+プラットフォームのロックにより、 Dynamics 365 for Operations プラットフォームのシームレスなサービスと継続的な更新への道筋を作ります。 いずれかのプラットフォームをオーバーレイすると、このリリースにアップグレードすることはできません。 メタデータおよびコードの拡張機能を使用するには、コードをリファクターする必要があります。 カスタマイズの拡張機能を使用する方法に関するチュートリアルについては、<a href="../../dev-itpro/extensibility/customize-model-elements-extensions.md">拡張機能を使用してモデル要素をカスタマイズする</a> を参照してください。 また、<a href="../../dev-itpro/extensibility/customization-overlayering-extensions.md">カスタマイズ: オーバーレイと拡張機能</a> を参照することができます。これはカスタマイズの一般的なトピックです。
 <blockquote>[!NOTE] ディレクトリ モデルに関して、コードがディレクトリ モデル内の要素をオーバーレイする場合、最新の Dynamics 365 for Operations アプリケーションを実行している新しい環境を配置する必要があります。 ディレクトリ モデルのオーバーレイヤーは、プラットフォーム更新プログラム 3 の上にアプリケーションの 2016 年 2 月または 2016 年 5 月リリースを実行している環境ではサポートされていません。</blockquote>
 </td>
 </tr>
@@ -90,7 +89,7 @@ ms.lasthandoff: 12/18/2018
 <td>データ エンティティ上に固定フィールド関係を定義するときは、拡張可能列挙型を参照することができます。</td>
 </tr>
 <tr>
-<td>Visual Studioデバッガーで、拡張機能フィールドを表示します。</td>
+<td>Visual Studio デバッガーで、拡張機能フィールドを表示します。</td>
 <td>テーブルおよびその他の拡張可能要素をデバッグするときは、デバッガーで拡張フィールドを表示できます。</td>
 </tr>
 <tr>
@@ -108,7 +107,7 @@ ms.lasthandoff: 12/18/2018
 </tr>
 <tr>
 <td>拡張機能を使ってヘルプをカスタマイズする</td>
-<td>Dynamics 365 for Operations ヘルプ フォームにタブを追加して、すぐに使用可能なタスク ガイドおよびトピック ソースの隣に、サードパーティーのヘルプ コンテンツを表示することができます。 以前のバージョンでは、ヘルプの追加ソースで使用できるように、ユーザーの検索文字列にアクセスする唯一の方法は、フォームをオーバーレイにすることでした。 ヘルプ フォーム (SysHelpPane) にデリゲートが追加されました。ユーザーの検索語を傍受し、それらを使用してサードパーティ製システムのヘルプ コンテンツを検索できます。</td>
+<td>Dynamics 365 for Operations ヘルプ フォームにタブを追加して、すぐに使用可能なタスク ガイドおよびトピック ソースと共に、サードパーティーのヘルプ コンテンツを表示することができます。 以前のバージョンでは、ヘルプの追加ソースで使用できるように、ユーザーの検索文字列にアクセスする唯一の方法は、フォームをオーバーレイにすることでした。 ヘルプ フォーム (SysHelpPane) にデリゲートが追加されました。ユーザーの検索語を傍受し、それらを使用してサードパーティ製システムのヘルプ コンテンツを検索できます。</td>
 </tr>
 <tr>
 <td>コンフィギュレーション キーのプロパティのサポートされていない変更を禁止します。</td>
@@ -157,7 +156,7 @@ Lifecycle Services (LCS) は、毎月の新しい機能をリリースします�
 <td>列挙型フィールドを持つ Microsoft Power BI レポートを作成するとき、Power BI デスクトップに式を記述し、列挙値をその文字列値に拡張する必要がありました。 現在は、列挙されたフィールドがエンティティ格納に展開され、レポートで直接対応するラベル フィールドを使用できるようになりました。</td>
 </tr>
 <tr>
-<td>人事管理向け 5 つの新しい Power BI コンテンツ パックにアクセス</td>
+<td>人事管理向けの 5 つの新しい Power BI コンテンツ パックにアクセス</td>
 <td>新しいコンテンツ パックは、人事管理組織、人事管理マネージャーによって以下を分析することができます。
 <p>要員指標</p>
 <ul>
@@ -194,4 +193,3 @@ Lifecycle Services (LCS) は、毎月の新しい機能をリリースします�
 ## <a name="additional-resources"></a>追加リソース
 
 [新機能および変更された機能](whats-new-changed.md)
-

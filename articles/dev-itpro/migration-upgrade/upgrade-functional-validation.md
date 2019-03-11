@@ -1,13 +1,13 @@
 ---
-title: "AX 2012 からのアップグレード - 機能テスト合格"
-description: "このトピックでは、機能テスト パスを実行して、アップグレードされた Dynamics 365 for Finance and Operations 環境を検証する方法について説明します。"
+title: AX 2012 からのアップグレード - 機能テスト パス
+description: このトピックでは、機能テスト パスを実行して、アップグレードされた Dynamics 365 for Finance and Operations と環境を検証する方法について説明します。
 author: tariqbell
 manager: AnnBe
 ms.date: 01/31/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: margoc
 ms.search.scope: Operations
@@ -15,15 +15,14 @@ ms.search.region: Global
 ms.author: tabell
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 5e229f7275061ae8c4293d317f5561a0b224fe0a
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368700"
 ---
-
-# <a name="upgrade-from-ax-2012---functional-test-passes"></a>AX 2012 からのアップグレード - 機能テスト合格
+# <a name="upgrade-from-ax-2012---functional-test-passes"></a>AX 2012 からのアップグレード - 機能テスト パス
 
 [!include [banner](../includes/banner.md)]
 
@@ -51,5 +50,4 @@ ms.lasthandoff: 08/09/2018
 6. 仕入先支払 (発注書の支払) などが発生します。
 
 この生産テスト フローでは、新しいレコードまたは古いレコードのいずれかを入力として使用することで各ステージを実行することができます。 結果は、古いデータと新しいデータのすべての組み合わせをカバーする一連のテストです。 いくつかのプロセスでは、テスト マトリックスは過剰に思われますし、実際に過剰である可能性があります。 したがって、最も多く使用されると予測される特定の組み合わせに焦点を当てることができます。 ただし、何に対応していないかを把握することも役立ちます。 所持しているもの、テストで最も焦点を当てるもの、焦点を当てないものを把握する場合に、連続した意思決定を行います。
-
 

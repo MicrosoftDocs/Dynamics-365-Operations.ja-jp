@@ -1,13 +1,13 @@
 ---
-title: "Retail ソフトウェア開発キット (SDK)"
-description: "このトピックでは、Retail SDK に関する一般情報を提供します。 Retail SDK は、小売クライアントをカスタマイズするために使用できる、コード、コード サンプル、テンプレート、およびツールが含まれています。"
+title: Retail ソフトウェア開発キット (SDK)
+description: このトピックでは、Retail SDK に関する一般情報を提供します。 Retail SDK は、小売クライアントをカスタマイズするために使用できる、コード、コード サンプル、テンプレート、およびツールが含まれています。
 author: RobinARH
 manager: AnnBe
 ms.date: 10/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations, Retail
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: sijoshi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 61f737edea3af5281b6d2fd7c3c0899082782067
 ms.openlocfilehash: 69a481cab9e425674792247a0afca0deba4671e5
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369544"
 ---
-
 # <a name="retail-software-development-kit-sdk"></a>Retail ソフトウェア開発キット (SDK)
 
 [!include [banner](../../includes/banner.md)]
@@ -71,7 +70,7 @@ Retail SDK の更新が必要な場合、潜在的なコード結合が必要で
 
 -   カスタマイズの**コード**を書いたり**ビルド**するには、次のツールが必要です。
 
-    -   Typescript 1.5 付き Microsoft Visual Studio (LCS 開発者トポロジが許容可能)
+    -   Typescript 1.5 付き Microsoft Visual Studio 2015 (LCS 開発者トポロジが許容可能)
     -   ASP.NET MVC 4.0 (LCS 開発者トポロジ受入可能) (店舗でのみ必須)
     -   150 MB 以上の使用可能なディスク領域 (LCS 開発者トポロジを受入可能)
 
@@ -207,7 +206,7 @@ SDK の C\# ソース コードは、Contoso 名前空間を使用します。 �
 
 [![RetailSDK04](./media/retailsdk04.png)](./media/retailsdk04.png)
 
-このコマンドはすべてのプロジェクトをビルドします。 この方法は、実装やコードのバグがないことを確認する優れた方法も提供します。  バグがある場合は、ビルドが失敗し、コマンド プロンプト ウィンドウに失敗した内容が表示されます (この出力は Visual Studio に表示と似ています)。 
+このコマンドはすべてのプロジェクトをビルドします。 この方法は、実装やコードのバグがないことを確認する優れた方法も提供します。  バグがある場合は、ビルドが失敗し、コマンド プロンプト ウィンドウに失敗した内容が表示されます (この出力は Visual Studio の表示と似ています)。 
 
 [![RetailSDK05](./media/retailsdk05.png)](./media/retailsdk05.png) MSBuild の詳細については、以下を参照してください[https://msdn.microsoft.com/en-us/library/0k6kkbsd.aspx](https://msdn.microsoft.com/en-us/library/0k6kkbsd.aspx)。 
 
@@ -270,4 +269,3 @@ Retail SDK のディレクトリ ツリー全体は、MSBuild トラバーサル
 #### <a name="customization-branch"></a>カスタマイズ分岐
 
 配置を開発した後、新しい分岐を開始する必要があります (カスタマイズ分岐)。 初期分岐アウトの先頭において、この分岐は Retail SDK ミラー分岐の正確なコピーになります。 これは、チームの開発の分岐です。 カスタマイズ ブランチのバージョンは、少なくともテストのためにビルドが作成されるたびに増分する必要があります。また、毎日増分することもできます。 増分するファイル バージョンは、**CustomVersion** プロパティを使用して Customization.setting ファイルで定義されます。 それを更新し、すべてのバイナリ パッケージを再構築すると、マニフェスト ファイルはそれに応じて更新されます。 **CustomAssemblyVersion** プロパティは、更新プログラムに下位互換性がなく、主な新しいリリースに対して互換性がない場合のみ更新する必要があることに注意してください。 つまり、この更新プログラムはめったにありません。 たとえば、Microsoft のアセンブリ バージョンは、現在のバージョンの複数の CTP リリースに対して変わりませんでした。 同じ分岐には Microsoft の資産と独自の変更の両方が存在するため、分岐には基本的に 2 つのファイル バージョンがあります。 最初のバージョンは、現在の支店が基づいている Retail SDK の Microsoft バージョンで、2 番目のバージョンは、**CustomVersion** プロパティによって設定されたバージョンです。 前述の図では、カスタマイズ分岐の現在のファイル バージョンは、1.0.2\* です (Microsoft バージョン 7.0.2200.3 に基づく)。 展開された最初のリリースのファイル バージョンは 1.0.0.40 (7.0.2000.0 に基づく) でした。 テスト フェーズが完了し、最後のパッケージがそのバージョンで配置されるとき、バージョン番号を増分する (またはソース コントロールのラベルを作成する) ことが重要です。
-

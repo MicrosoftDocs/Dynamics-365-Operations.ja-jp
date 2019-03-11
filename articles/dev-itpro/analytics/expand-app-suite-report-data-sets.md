@@ -1,13 +1,13 @@
 ---
-title: "アプリケーション スイート レポート データ セットを展開する"
-description: "このトピックでは、レポート データ プロバイダー (RDP) クラスで X++ ビジネス ロジックを使用して作成された既存のレポート データ セットを拡張する方法について説明します。"
+title: アプリケーション スイート レポート データ セットを展開する
+description: このトピックでは、レポート データ プロバイダー (RDP) クラスで X++ ビジネス ロジックを使用して作成された既存のレポート データ セットを拡張する方法について説明します。
 author: TJVass
 manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 4180126083b55d8dd72e0bdd55dbb4df6d5d832b
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369089"
 ---
-
 # <a name="expand-application-suite-report-data-sets"></a>アプリケーション スイート レポート データ セットを展開する
 
 [!include [banner](../includes/banner.md)]
@@ -58,9 +57,9 @@ Microsoft Dynamics 365 for Finance and Operations は、カスタム ソリュ�
 [![カスタム ソリューション (カスタマイズ後)](./media/fleet-extension-rentals-list-after-1024x672.png)](./media/fleet-extension-rentals-list-after.png)
 
 1. **アプリケーション カスタマイズの新しいモデルを作成します。** 拡張モデルに関する詳細については、[カスタマイズ: オーバーレイおよび拡張機能](../extensibility/customization-overlayering-extensions.md) を参照してください。 この例では、**フリート管理拡張**モデルにカスタム レポートを追加します。
-2. **Microsoft Visual Studio で新しいプロジェクトを作成します。** プロジェクトが拡張モデルに関連付けられていることを確認します。 次の図はプロジェクト設定を示します。
+2. **Microsoft Visual Studio で、新しいプロジェクトを作成します。** プロジェクトが拡張モデルに関連付けられていることを確認します。 次の図はプロジェクト設定を示します。
 
-    [![Visual Studio のプロジェクト設定](./media/fleet-extension-vs-project-settings.png)](./media/fleet-extension-vs-project-settings.png)
+    [![Visual Studio でのプロジェクト設定](./media/fleet-extension-vs-project-settings.png)](./media/fleet-extension-vs-project-settings.png)
 
 3. **カスタム レポート データを格納するテーブル拡張機能を追加します。** RDP クラスによって設定される **TmpFMRentalsByCust** データ セットの一時的キャッシュを検索し、モデルで拡張を作成します。 レポート サーバーのデータの格納に使用するフィールドを定義し、**保存**をクリックして変更を保存します。 次の図は、この例で必要なテーブル拡張機能を示しています。
 
@@ -134,4 +133,3 @@ Microsoft Dynamics 365 for Finance and Operations は、カスタム ソリュ�
         ```
 
 これで、レポート データ セットの拡張が完了しました。 アプリケーションをコンパイルした後、拡張モデルで定義されているレポート クラス ハンドラーで定義したカスタム X++ ビジネス ロジックを使用して、新しいレポート デザインにユーザー ナビゲーションを再ルーティングし始めます。
-

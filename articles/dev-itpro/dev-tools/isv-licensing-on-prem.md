@@ -1,13 +1,13 @@
 ---
-title: "独立系ソフトウェア ベンダー (ISV) ライセンス (オンプレミス)"
-description: "このトピックでは、オンプレミス環境における独立系ソフトウェア ベンダー (ISV) のライセンス機能について説明します。"
+title: 独立系ソフトウェア ベンダー (ISV) ライセンス (オンプレミス)
+description: このトピックでは、オンプレミス環境における独立系ソフトウェア ベンダー (ISV) のライセンス機能について説明します。
 author: manalidongre
 manager: AnnBe
 ms.date: 03/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2018-03-07
 ms.dyn365.ops.version: AX 7.3.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: a78dbef13408bc4256138198add914cf7d3932e2
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369498"
 ---
-
 # <a name="independent-software-vendor-isv-licensing-on-premises"></a>独立系ソフトウェア ベンダー (ISV) ライセンス (オンプレミス)
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Finance and Operations のオンプレミス展開に独立系ソフトウェアベンダー (ISV) のライセンスをインポートする方法について説明します。
+このトピックでは、独立系ソフトウェア ベンダー (ISV) ライセンスを Microsoft Dynamics 365 for Finance and Operations のオンプレミス配置にインポートする方法について説明します。
 
 > [!IMPORTANT]
 > このトピックで説明するプロセスは、プラットフォーム更新プログラム 12 以降で展開されているオンプレミス環境のユーザーのみ利用できます。
@@ -40,7 +39,7 @@ ISV ライセンスの福利厚生についての一般情報、ソリューシ�
 オンプレミス環境に ISV ライセンス ファイルをインポートする前に、次の前提条件が満たされていることを確認します。
 
 - 最新のバージョンのローカル エージェントは、環境が配置されたときに使用されました。
-- 環境はプラットフォーム更新プログラム 12 で配置され、プラットフォーム更新プログラム 12 のすべての修正プログラムが適用されます。 Microsoft が ISV ライセンス シナリオの修正プログラムをリリースしたため、このステップは必須です。 最新の修正プログラムを入手するには、Microsoft Dynamics Lifecycle Services (LCS) の **環境の詳細** ページでタイルを使用します。
+- 環境はプラットフォーム更新プログラム 12 で配置され、プラットフォーム更新プログラム 12 のすべての修正プログラムが適用されます。 Microsoft が ISV ライセンス シナリオの修正プログラムをリリースしたため、このステップは必須です。 最新の修正プログラムを入手するには、Microsoft Dynamics Lifecycle Services (LCS) の **環境の詳細**ページでタイルを使用します。
 - ISV ライセンスをインポートする前に、環境を展開し、Application Object Server (AOS) サービスを実行している必要があります。
 - ISV ライセンスをインポートする前に、ISV ソリューションをオンプレミス環境に適用する必要があります。 ISV ソリューションは、配置フロー中に設置環境に適用できます。 または、LCS の**更新プログラムの適用**フローを使用して配置後のステップとして ISV ソリューションを適用することができます。 ライセンスをインポートする前に、ISV ソリューションが適用されていない場合、カスタマイズを使用できません。
 
@@ -88,4 +87,3 @@ ISV ライセンスの福利厚生についての一般情報、ソリューシ�
 5. スクリプトが正常に実行されたとき、コンフィギュレーション キーがインポートされて有効になっていることを検証します。 製品では、対応するコンフィギュレーション キーは、 **ライセンス コンフィギュレーション**  ページで使用可能になり、有効になります。 既定では、コンフィギュレーションが有効です。 たとえば、ISVConfigurationKey1 と呼ばれるコンフィギュレーション キーを追加した場合、コンフィギュレーション キーの一覧に表示されます。
 
 コンフィギュレーション キーが有効になると、ISV ソリューションの変更は製品に表示されます。
-

@@ -1,14 +1,13 @@
 ---
-redirect_url: /dynamics365/unified-operations/dev-itpro/database/dbmovement-operations
-title: "Finance and Operations データベースを SQL Server から Azure SQL データベース運用環境にコピーする"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations データベースを SQL Server をベースとした開発、ビルド、またはデモ環境 (第 1 層または ワンボックス) から Azure SQL データベースをベースしたサンドボックス UAT 環境 (第 2 層以上) に移動する方法について説明します。"
+title: Finance and Operations データベースを SQL Server から Azure SQL データベース運用環境にコピーする
+description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations データベースを SQL Server をベースとした開発、ビルド、またはデモ環境 (第 1 層または ワンボックス) から Azure SQL データベースをベースしたサンドボックス UAT 環境 (第 2 層以上) に移動する方法について説明します。
 author: laneswenka
 manager: AnnBe
 ms.date: 10/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: IT Pro
 ms.reviewer: margoc
 ms.search.scope: Operations
@@ -18,19 +17,18 @@ ms.search.region: Global
 ms.author: laneswenka
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: cde3fd4833847975b8d94f0396013a7f4b797106
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
-ms.openlocfilehash: 9b6ce447f417a869f6812ae49af4a02accb1d28b
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/01/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368508"
 ---
-
 # <a name="copy-finance-and-operations-databases-from-sql-server-to-production-azure-sql-database-environments"></a>Finance and Operations データベースを SQL Server から Azure SQL データベース運用環境にコピーする
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Finance and Operations データベースを、Microsoft SQL Serverをベースとする環境 (開発、ビルド、またはデモ環境、第 1 層またはワンボックス環境とも呼ばれます) から Microsoft Azure SQL データベースをベースとする環境 (サンドボックス ユーザー受け入れテストの \[UAT\] 環境、第 2 層以上) に移動する方法について説明します。
+このトピックでは、Microsoft Dynamics 365 for Finance and Operations データベースを、Microsoft SQL Server をベースとした環境 (開発、ビルド、またはデモ環境。第 1 層またはワンボックス環境とも呼ばれます) から Microsoft Azure SQL データベースをベースとした環境 (サンドボックス ユーザー受け入れテストの \[UAT\] 環境。第 2 層以上) に移動する方法について説明します。
 
 通常、このプロセスは稼動前に完了し、システム構成データのみを含むゴールデン (またはシード) データベースを実稼働環境に移行します。 このプロセスは、すべての状況に適しているわけではありません。 たとえば、既存の実際の展開に対して新しい法人のデータをインポートするためには、このプロセスを使用しないでください。 このタイプの場合、[プロセス データ パッケージ](../lcs-solutions/process-data-packages-lcs-solutions.md)または[データ エンティティ データ パッケージ](../data-entities/data-entities-data-packages.md)を使用することをお勧めします。
 
@@ -65,7 +63,7 @@ ms.lasthandoff: 11/01/2018
     - エクスポートされた \*.bacpac ファイルは、Management Studio のバージョン固有の機能に依存する可能性があります。
 
 > [!IMPORTANT]
-> 環境に、Microsoft Dynamics 365 for Retail コンポーネントが含まれている場合、開始する前にいくつかの環境固有の値を手動で保存する必要があります。 詳細については、「小売環境の追加手順」セクションを参照してください。
+> 環境に、Microsoft Dynamics 365 for Retail コンポーネントが含まれている場合、開始する前に、一部の環境固有の値を手動で保存する必要があります。 詳細については、「小売環境の追加手順」セクションを参照してください。
 
 ## <a name="before-you-begin"></a>準備
 
@@ -86,7 +84,7 @@ ms.lasthandoff: 11/01/2018
 | FiscalEstablishment\_BR.ConsumerEFDocCsc                 | **組織管理** &gt; **会計機関** &gt; **会計機関** の順に移動します。 |
 | FiscalEstablishmentStaging.CSC                           | このフィールドは、データ インポート/エクスポート フレームワーク (DIXF) によって使用されます。 |
 | HcmPersonIdentificationNumber.PersonIdentificationNumber | **人事管理** &gt; **作業者** &gt; **作業者** の順に選択します。 **ワーカー**タブの、**個人情報**グループで、**ID 番号**を選択します。 |
-| HcmWorkerActionHire.PersonIdentificationNumber           | このフィールドは、Microsoft Dynamics AX 7.0 以降 (2016 年 2 月) に廃止されました。 これは以前、**すべての作業者アクション** フォーム (**人事管理** &gt; **作業者** &gt; **アクション** &gt; **すべての作業者アクション**) に表示されていました。 |
+| HcmWorkerActionHire.PersonIdentificationNumber           | このフィールドは、Microsoft Dynamics AX 7.0 以降 (2016 年 2 月) は廃止されました。 これは以前、**すべての作業者アクション** フォーム (**人事管理** &gt; **作業者** &gt; **アクション** &gt; **すべての作業者アクション**) に表示されていました。 |
 | SysEmailSMPTPassword.Password                            | **システム管理** &gt; **電子メール** &gt; **電子メール パラメーター** の順に選択します。 |
 | SysOAuthUserTokens.EncryptedAccessToken                  | このフィールドは、AOS で内部的に使用されます。 これは無視できます。 |
 | SysOAuthUserTokens.EncryptedRefreshToken                 | このフィールドは、AOS で内部的に使用されます。 これは無視できます。 |
@@ -202,7 +200,7 @@ SqlPackage.exe /a:import /sf:D:\Exportedbacpac\my.bacpac /tsn:<Azure SQL databas
 
 次の警告メッセージを受け取ります。 これは無視してかまいません。
 
-> ターゲット プラットフォームとして SQL Server 2016 を指定するプロジェクトは、Microsoft Azure SQL データベース v12 で互換性の問題が発生する可能性があります。
+> ターゲット プラットフォームとして SQL Server 2016 を指定するプロジェクトでは、Microsoft Azure SQL データベース v12 で互換性の問題が発生する可能性があります。
 
 > [!WARNING] 
 > どの Finance and Operations 環境でも、長期間にわたってデータベースのコピーを保持することはできません。 Microsoft は、事前に通知することなく、7 日を超える古いデータベースのコピーを削除する権限を保有します。
@@ -299,7 +297,7 @@ DEALLOCATE retail_ftx;
 1. リモート デスクトップを使用して、ターゲット環境内のすべてのコンピュータに接続し、services.msc を使用して次の Microsoft Windows サービスを停止します。 これらのサービスでは、Finance and Operations のデータベースへの接続が提供されます。 サービスを停止した後に、既存の Finance and Operations データベースを新しくインポートされたデータベースに置き換えることができます。
 
     - ワールド ワイド ウェブ公開サービス (すべての AOS コンピュータ上)
-    - Microsoft Dynamics 365 for Finance and Operations バッチ管理サービス (非プライベート AOS コンピュータ上のみ)
+    - Microsoft Dynamics 365 for Finance and Operations バッチ管理サービス (非プライベート AOS コンピューター上のみ)
     - Management Reporter 2012 のプロセス サービス (ビジネス インテリジェンス \[BI\] コンピューターのみ)
 
 2. bacpac インポートが行われた AOS コンピューターで、Management Studio の次のスクリプトを実行します。 このスクリプトは、元のデータベースの名前を変更し、新しくインポートされたデータベースの名前を変更して元のデータベース名を使用するようにします。 この例では、元のデータベースは axdb\_123456789 という名前が付けられ、新しくインポートされたデータベースは importeddb という名前が付けられました。
@@ -323,7 +321,7 @@ DEALLOCATE retail_ftx;
 4. services.msc を使用して、以前に停止したサービスを再起動します。
 
     - ワールド ワイド ウェブ公開サービス (すべての AOS コンピュータ上)
-    - Microsoft Dynamics 365 for Finance and Operations バッチ管理サービス (非プライベート AOS コンピュータ上のみ)
+    - Microsoft Dynamics 365 for Finance and Operations バッチ管理サービス (非プライベート AOS コンピューター上のみ)
     - Management Reporter 2012 のプロセス サービス (BI コンピューターのみ)
 
 5. この時点で、Finance and Operations アプリケーション URL を開いてサイン インすることができます。 アプリケーションが予期したとおりに動作することを確認します。 次に、bacpac のインポートを行った AOS コンピューターの Management Studio で以下のスクリプトを実行して、元のデータベースを削除します。
@@ -387,7 +385,7 @@ Finance and Operations クライアントでは、暗号化された環境固有
 | FiscalEstablishment\_BR.ConsumerEFDocCsc                 | **組織管理** &gt; **会計機関** &gt; **会計機関** の順に移動します。 |
 | FiscalEstablishmentStaging.CSC                           | このフィールドは DIXF で使用されます。 |
 | HcmPersonIdentificationNumber.PersonIdentificationNumber | **人事管理** &gt; **作業者** &gt; **作業者** の順に選択します。 **ワーカー**タブの、**個人情報**グループで、**ID 番号**を選択します。 |
-| HcmWorkerActionHire.PersonIdentificationNumber           | このフィールドは、AX 7.0 以降 (2016 年 2 月) に廃止されました。 これは以前、**すべての作業者アクション** フォーム (**人事管理** &gt; **作業者** &gt; **アクション** &gt; **すべての作業者アクション**) に表示されていました。 |
+| HcmWorkerActionHire.PersonIdentificationNumber           | このフィールドは、AX 7.0 以降 (2016 年 2 月) は廃止されました。 これは以前、**すべての作業者アクション** フォーム (**人事管理** &gt; **作業者** &gt; **アクション** &gt; **すべての作業者アクション**) に表示されていました。 |
 | SysEmailSMPTPassword.Password                            | **システム管理** &gt; **電子メール** &gt; **電子メール パラメーター** の順に選択します。 |
 | SysOAuthUserTokens.EncryptedAccessToken                  | このフィールドは、AOS で内部的に使用されます。 これは無視できます。 |
 | SysOAuthUserTokens.EncryptedRefreshToken                 | このフィールドは、AOS で内部的に使用されます。 これは無視できます。 |
@@ -415,4 +413,3 @@ Management Studio インストーラーをダウンロードしようとする�
 - Azure でホストされている 1 ボックス環境では、エクスポートするときに D ドライブに .bacpac ファイルを配置します。 (ワンボックス環境はレベル 1 環境とも呼ばれます。) Azure コンピューター 上でのテンポラリー ドライブに関する詳細については、[Windows Azure 仮想マシンのテンポラリー ドライブを理解する](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/) Azure サポート チームのブログ投稿を参照してください。
 - SQL Server Windows サービス [インスタンス ファイルの初期化](https://msdn.microsoft.com/en-us/library/ms175935.aspx) を実行するアカウントに権限を付与します。 この方法で、インポート処理の速度および \*.bak ファイルからの復元の速度を向上させることができます。 開発者環境では、axlocaladmin アカウントとして実行する SQL Server を設定することにより、SQL Server サービスを実行するアカウントがこれらの権限を持っていることを簡単に確認することができます。
 - Management Studio の Azure SQL データベースからエクスポートおよびインポートするオプションを使用しないことをお勧めします。 (このオプションは、**データ層アプリケーションのエクスポート**とも呼ばれます。) 大規模なデータベースにはメモリーの制限があるため、このオプションは使用しないでください。
-

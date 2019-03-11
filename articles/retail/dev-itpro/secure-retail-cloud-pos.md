@@ -1,13 +1,13 @@
 ---
-title: "共有環境におけるクラウド POS のセキュリティ ベスト プラクティス"
-description: "Retail Cloud POS は、ブラウザーのコンテキストで動作する Web アプリケーションです。 このトピックでは、共有環境で Retail Cloud POS をセキュリティ保護するための推奨事項について説明します。"
+title: 共有環境におけるクラウド POS のセキュリティ ベスト プラクティス
+description: Retail Cloud POS は、ブラウザーのコンテキストで動作する Web アプリケーションです。 このトピックでは、共有環境で Retail Cloud POS をセキュリティ保護するための推奨事項について説明します。
 author: pdp1207
 manager: AnnBe
 ms.date: 11/14/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations, Retail
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: prabhup
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
 ms.openlocfilehash: ee7e400ea5878ceb1cc84b10c87d0baf3ae4ec90
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369868"
 ---
-
 # <a name="security-best-practices-for-cloud-pos-in-shared-environments"></a>共有環境におけるクラウド POS のセキュリティ ベスト プラクティス
 
 [!include [banner](../includes/banner.md)]
@@ -266,7 +265,7 @@ Retail Cloud POS ユーザーに次の制限を適用することをお勧めし
 | ネットワークの場所で近くにコンピューターがありません                                                                                                                                | 有効  | 無      | \\Windows コンポーネント\\ファイル エクスプローラー                                         |
 | ネットワークのインストールの資格情報を要求                                                                                                                            | 有効  | 無      | \\Windows コンポーネント\\ファイル エクスプローラー                                         |
 | ユーザーが、ユーザー ファイル フォルダーのルートにファイルを追加するを防ぎます。                                                                                                 | 有効  | 無      | \\Windows コンポーネント\\ファイル エクスプローラー                                         |
-| アクセラレータをオフにする                                                                                                                                                    | 有効  | 無      | \\Windows コンポーネント\\Internet Explorer\\アクセレレーター                       |
+| アクセラレータをオフにする                                                                                                                                                    | 有効  | 無      | \\Windows コンポーネント\\Internet Explorer\\アクセラレータ                       |
 | ファイル メニュー: ブラウザーおよびエクスプ ローラー ウィンドウを閉じるを無効にします                                                                                                              | 有効  | 無      | \\Windows コンポーネント\\Internet Explorer\\ブラウザー メニュー                      |
 | ファイル メニュー: ... メニュー オプションとして保存を無効にします                                                                                                                                | 有効  | 無      | \\Windows コンポーネント\\Internet Explorer\\ブラウザー メニュー                      |
 | ファイル メニュー: Web ページの完了として保存を無効にします                                                                                                                             | 有効  | 無      | \\Windows コンポーネント\\Internet Explorer\\ブラウザー メニュー                      |
@@ -342,7 +341,6 @@ Retail Cloud POS ユーザーに次の制限を適用することをお勧めし
 -   Bing Maps リソース
 -   メディア リソース
 -   クレジット カード支払引受ページ (オプション)
-
 
 
 

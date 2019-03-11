@@ -1,13 +1,13 @@
 ---
-title: "サンドボックス データベース更新の要求"
-description: "このトピックでは、サンドボックスのユーザー受け入れテスト (UAT) 環境で、Microsoft Dynamics 365 for Finance and Operations のデータベースの更新を要求する方法について説明します。"
+title: サンドボックス データベース更新の要求
+description: このトピックでは、サンドボックスのユーザー受け入れテスト (UAT) 環境で、Microsoft Dynamics 365 for Finance and Operations のデータベースの更新を要求する方法について説明します。
 author: LaneSwenka
 manager: AnnBe
 ms.date: 01/07/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: IT Pro, Developer
 ms.reviewer: margoc
 ms.search.scope: Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: laneswenka
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 459306dc47fa29d408ae2d50289b4971f3b357b1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a388e0efe6c19a3aabe04e7fff039ce11ae023c4
-ms.openlocfilehash: 0e663be5b12e16c325beacff3f702089a01005d5
-ms.contentlocale: ja-jp
-ms.lasthandoff: 01/07/2019
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368526"
 ---
-
 # <a name="request-sandbox-database-refreshes"></a>サンドボックス データベース更新の要求
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics Lifecycle Services (LCS) を使用して、サンドボックス ユーザー承認テスト (UAT) 環境に対して、Microsoft Dynamics 365 for Finance and Operations のデータベースのリフレッシュを要求することができます。 データベースの更新では、対象となるサンドボックス UAT 環境に、本番環境のトランザクション データベースをコピーできます。 このプロセスには、財務報告データベースのコピーが含まれます。 別のサンドボックス環境を使用する場合は、その環境から対象のサンドボックス UAT 環境にデータベースをコピーすることもできます。
+使用することができます Microsoft Dynamics のデータベースの更新を要求する Lifecycle Services (LCS) Microsoft Dynamics 365 for Finance and Operations サンド ボックス ユーザー受け入れが (UAT) 環境をテストします。 データベースの更新では、対象となるサンドボックス UAT 環境に、本番環境のトランザクション データベースをコピーできます。 このプロセスには、財務報告データベースのコピーが含まれます。 別のサンドボックス環境を使用する場合は、その環境から対象のサンドボックス UAT 環境にデータベースをコピーすることもできます。
 
 この機能により、生産データを使用して UAT 環境で予定されているコード変更をテストできます。 また、デバッグの目的で、生産データベースを UAT 環境にコピーすることもできます。
 
@@ -128,4 +127,3 @@ Microsoft サービス エンジニアリング チームは、環境をオフ�
 新しいアプリケーション バージョンにサンドボックス UAT 環境をアップグレードする場合 (たとえば、7.3 から 8.1)、必ずアップグレードを開始する前にデータベースの更新アクションを実行してください。 サンドボックスが新しいバージョンにアップグレードされると、サンドボックス UAT 環境に古い実稼働環境データベースを復元することはできません。  
 
 逆に、実稼働環境がターゲット サンドボックスよりも新しい場合、更新前にターゲット サンドボックスをアップグレードするか、更新の実行前にそのまま割り当て解除、削除、および再展開する必要があります。
-

@@ -1,13 +1,13 @@
 ---
-title: "P クラス"
-description: "文字 P で始まるシステム API クラス。"
+title: P クラス
+description: 文字 P で始まるシステム API クラス。
 author: RobinARH
 manager: AnnBe
 ms.date: 11/07/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 3370eebfd92dceee682a197d661869b9a4bbf4e1
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368528"
 ---
-
 # <a name="p-classes"></a>P クラス
 
 [!include [banner](../includes/banner.md)]
@@ -2854,7 +2853,7 @@ searchSubgroups
 
 #### <a name="return-value"></a>戻り値
 
-オブジェクトが見つからない場合は、条件を満たす最初のオブジェクト、または nullNothingnullptrunita null 参照 (Visual Basic にはなし) です。
+オブジェクトが見つからない場合は、条件を満たす最初のオブジェクト、または nullNothingnullptrunita null 参照 (Visual Basic にはなし)。
 
 #### <a name="remarks"></a>備考
 
@@ -3250,7 +3249,6 @@ propname
 selecttab  
 
 #### <a name="return-value"></a>戻り値
-
 
 
 

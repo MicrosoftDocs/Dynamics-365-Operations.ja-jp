@@ -1,31 +1,30 @@
 ---
-title: "拡張機能を使用してテーブルに関係を追加"
-description: "このトピックでは、テーブルにリレーションを追加する方法について説明します。"
+title: 拡張機能を使用してテーブルに関係を追加
+description: このトピックでは、テーブルにリレーションを追加する方法について説明します。
 author: ivanv-microsoft
 manager: AnnBe
 ms.date: 07/10/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
 ms.custom: 268724
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: ivanv
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 4
+ms.openlocfilehash: db426b2349414db4fb1adcaf6007c642dd668618
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: f0bf7d5e4fcdfb88e3308235e96e19f9f9324bfa
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369769"
 ---
-
 # <a name="add-relations-to-tables-through-extension"></a>拡張機能を使用してテーブルに関係を追加
 
 [!include [banner](../includes/banner.md)]
@@ -44,4 +43,3 @@ ms.lasthandoff: 08/09/2018
 次の図は、新しいリレーションを示しています。
 
 ![新しい関係](media/AddRelationToExistingTable.jpg)
-

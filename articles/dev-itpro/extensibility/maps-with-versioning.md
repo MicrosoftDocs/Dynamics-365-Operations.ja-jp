@@ -1,35 +1,34 @@
 ---
-title: "バージョン管理で使用されるテーブル マップの拡張"
-description: "このトピックでは、バージョン管理に使用できるテーブル マップを拡張する方法について説明します。"
+title: バージョン管理で使用されるテーブル マップの拡張
+description: このトピックでは、バージョン管理に使用できるテーブル マップを拡張する方法について説明します。
 author: LarsBlaaberg
 manager: AnnBe
 ms.date: 12/10/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
 ms.custom: 89563
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: lolsen
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 11
+ms.openlocfilehash: d44391c1d630c5aea686e65a016fc33137edeb26
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: df2794b3c690acd7a57801fede51c3792c343202
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368466"
 ---
-
 # <a name="extend-table-maps-that-are-used-for-versioning"></a>バージョン管理で使用されるテーブル マップの拡張
 
 [!include [banner](../includes/banner.md)]
 
-このトピックは、Dynamics 365 for Finance and Operations Enterprise edition 7.3 およびそれ以降に適用されます。
+このトピックは、Dynamics 365 for Finance and Operations, Enterprise edition 7.3 およびそれ以降に適用されます。
 
 ## <a name="purchlinemap-table-map-logic"></a>PurchLineMap テーブル マップ ロジック
 
@@ -61,5 +60,4 @@ ms.lasthandoff: 08/09/2018
 これらの手順で説明するクラス、インターフェイス、および拡張機能を次の図に示します。
 
 ![MapClassExtensions](media/TableMaps.png)
-
 

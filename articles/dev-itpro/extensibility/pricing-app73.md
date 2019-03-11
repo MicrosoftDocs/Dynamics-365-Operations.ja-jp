@@ -1,35 +1,34 @@
 ---
-title: "価格と割引の拡張性"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations で拡張価格機能を使用する方法について説明します。"
+title: 価格と割引の拡張性
+description: このトピックでは Microsoft Dynamics 365 for Finance and Operations の価格設定機能を展開する方法を説明します。
 author: smithanataraj
 manager: AnnBe
 ms.date: 12/21/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
 ms.custom: 89563
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: smnatara
 ms.search.validFrom: 2017-12-10
 ms.dyn365.ops.version: Platform update 11
+ms.openlocfilehash: d2f46e9f2bbcfbd5e566107405af202efcea104f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: e859b8ee0678f66a93038a68289c9a32202bbff1
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369883"
 ---
-
 # <a name="price-and-discount-extensibility"></a>価格と割引の拡張性
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 以降では、価格設定の領域は拡張可能です。 価格と割引のいくつかの一般的なカスタマイズは次のとおりです。
+Microsoft Dynamics 365 for Finance and Operations、Enterprise edition 7.3 以降では、価格設定の領域が拡張します。 価格と割引のいくつかの一般的なカスタマイズは次のとおりです。
 - 新しい価格タイプの検索メカニズムに加えて、新しい価格グループ タイプと対応する価格タイプ (**PriceType** と **PriceGroupType** の列挙値) を追加します。
 - 追加のパラメーターを **PriceDisc** クラスに渡すことを含め、価格と割引の検索を変更します。 
 
@@ -69,4 +68,3 @@ Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 以降
 - **PriceDiscParameters** クラスを拡張して価格割引検索の汎用パラメータを追加します。
 - **PriceDisc** クラスを拡張して新しい価格タイプの新しい価格割引検索メソッドを作成します。
 - **PriceDiscParameters** には、価格と割引の検索に関連するすべてのクラスからアクセスでき、これらは要件に基づいて拡張できます。 
-

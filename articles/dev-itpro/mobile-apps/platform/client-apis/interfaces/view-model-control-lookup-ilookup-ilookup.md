@@ -1,28 +1,27 @@
 ---
-title: "参照タイプ"
-description: "ルックアップ コントロールの種類。 ルックアップは、オプションの一覧からの入力を選択するために使用する入力コントロールです。"
+title: 参照タイプ
+description: ルックアップ コントロールの種類。 ルックアップは、オプションの一覧からの入力を選択するために使用する入力コントロールです。
 author: shadykdc
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
-ms.search.scope: 
+ms.search.scope: ''
 ms.search.region: Global
 ms.author: kashea
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.search.validFrom: ''
+ms.dyn365.ops.version: ''
 ms.openlocfilehash: d877c95ba7ca7337bb08fad69d06f97c77d1e1da
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368448"
 ---
-
 # <a name="lookup-type"></a>参照タイプ
 
 [!include [banner](../../../../includes/banner.md)]
@@ -169,7 +168,7 @@ getValue(): string &#124; number
 
 
 
-#### <a name="returns-string-124-number"></a>string &#124; number を返します
+#### <a name="returns-string-124-number"></a>Returns string &#124; number
 
 ### <a name="iseditable"></a>isEditable
 
@@ -237,7 +236,7 @@ setEntityRef(newValue: string &#124; number): Promise &lt;any&gt;
 
 #### <a name="parameters"></a>パラメーター
 
-| 氏名 | 種類 | 説明 |
+| 氏名 | 型 | 説明 |
 | ---- | ---- | ----------- |
 | newValue|string &#124; number||
 
@@ -252,6 +251,5 @@ onDataChanged: [EventHook](event-ievent-ieventhook.md) &lt;null&gt;
 入力コントロールのデータが変更されたときに発生するイベントです。
 
 > [InputControl](view-model-control-basecontrol-iinputcontrol-iinputcontrol.md).[onDataChanged](view-model-control-basecontrol-iinputcontrol-iinputcontrol.md#ondatachanged) から継承
-
 
 

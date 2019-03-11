@@ -1,13 +1,13 @@
 ---
-title: "[Excel で明細行を開く] メニューへのテンプレートの追加"
-description: "このトピックでは、仕訳帳のページで利用できる [Excel] メニューの [Open] 行にテンプレートを表示させる方法について説明します。"
+title: '[Excel で明細行を開く] メニューへのテンプレートの追加'
+description: このトピックでは、仕訳帳のページで利用できる [Excel] メニューの [Open] 行にテンプレートを表示させる方法について説明します。
 author: aprilolson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 74f401f427ada267c0aeaf2802cd9a5f3371d5c0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 6df72c58a6637190e83e5a4522f875d5b3dde464
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368969"
 ---
-
 # <a name="add-templates-to-the-open-lines-in-excel-menu"></a>[Excel で明細行を開く] メニューへのテンプレートの追加
 
 [!include [banner](../includes/banner.md)]
@@ -34,7 +33,7 @@ ms.lasthandoff: 04/20/2018
 頻繁に使用される一部のテンプレートは、仕訳帳テンプレートです。 これらの仕訳帳テンプレートの一部はプロモーションされたため、**Excel で明細行を開く** メニューに既定で表示されます。 しかし、システムに新しいテンプレートを追加するときに、既定では、**Office で開く** メニューで利用可能です。 テンプレートを **Excel で行を開く** メニューで利用できるようにするには、次の手順に従います。
 
 1.  Microsoft Excel テンプレートを作成し、ローカルに保存します。 詳細については、「Excel で開くエクスペリエンスの作成」の記事を参照してください。
-2.  Microsoft Visual Studio で、ApplicationSuite モデルへの参照を含むモデルに新しいプロジェクトを作成します。 [![Visual Studio で新規プロジェクトの作成](./media/110-1024x523.png)](./media/110.png)
+2.  Microsoft Visual Studio で、ApplicationSuite モデルへの参照を含むモデルに新しいプロジェクトを作成します。 [![Visual Studio で新しいプロジェクトを作成する](./media/110-1024x523.png)](./media/110.png)
 3.  新しいクラスを作成し、**LedgerIJournalExcelTemplate** インターフェイスを実装し、**DocuTemplateRegistrationBase** を拡張します。 実装 (仕訳帳タイプなどによってサポートされる) では、「Excel で開く」エクスペリエンスで、テンプレートをオプションとして使用できるコンテキストが定義されます。 この例では、LedgerJournalHeaderEntity と LedgerJournalLineEntity を使用していますが、これらのエンティティに限定されません。 エンティティが仕訳帳ヘッダー/明細行のエンティティ パターンに従うという条件で、自分自身のエンティティを定義することができます。 **LedgerDailyJournalExcelTemplate** クラスからの例を次に示します。
 
         using Microsoft.Dynamics.Platform.Integration.Office;  
@@ -185,7 +184,6 @@ ms.lasthandoff: 04/20/2018
 --------
 
 [[Excel で開く] エクスペリエンスの作成](../office-integration/office-integration-edit-excel.md)
-
 
 
 

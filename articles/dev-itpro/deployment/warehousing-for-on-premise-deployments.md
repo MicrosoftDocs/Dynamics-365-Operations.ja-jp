@@ -1,13 +1,13 @@
 ---
-title: "オンプレミス配置の倉庫管理アプリを構成"
-description: "このトピックでは、オンプレミス展開でのウェアハウス アプリの前提条件について説明します。"
+title: オンプレミス配置の倉庫管理アプリを構成
+description: このトピックでは、オンプレミス展開でのウェアハウス アプリの前提条件について説明します。
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 11/08/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
@@ -16,29 +16,29 @@ ms.assetid: 63e43066-76c7-400b-be7d-d14785e7985d
 ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2017-12-04
-ms.dyn365.ops.version: 7.3
-ms.translationtype: HT
-ms.sourcegitcommit: 5fea76237e60f786e53ab3127e177c8aa081b36a
+ms.dyn365.ops.version: 7.2999999999999998
 ms.openlocfilehash: 820a557dc77f259c9503f02c7eac9eadfa8f9512
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/07/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369023"
 ---
 # <a name="configure-the-warehousing-app-for-on-premises-deployments"></a>オンプレミス配置の倉庫管理アプリを構成
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Finance and Operations -Warehousing をオンプレミス展開向けに構成する方法について説明します。
+このトピックでは、オンプレミス配置の Microsoft Dynamics 365 for Finance and Operations - Warehousing の構成方法について説明します。
 
-## <a name="prerequisites"></a>前提条件
-倉庫保管アプリは、Android および Windows オペレーティング システムで使用できます。 オンプレミスの展開にこのアプリを使用するには、少なくともバージョン 1.1.1.0 である必要があります。 Finance and Operations の Microsoft Dynamics 365 for Operations が次のサポートされているバージョンの 1 つである必要もあります。 ハードウェアおよびソフトウェア環境で構成がサポートされているかどうかを評価するには、次の表の情報を使用します。
+## <a name="prerequisites"></a>必要条件
+倉庫管理アプリは Android および Windows オペレーティング システムで使用できます。 オンプレミスの展開にこのアプリを使用するには、少なくともバージョン 1.1.1.0 である必要があります。 Microsoft Dynamics 365 for Finance and Operations が次のサポートされているバージョンの 1 つである必要もあります。 ハードウェアおよびソフトウェア環境で構成がサポートされているかどうかを評価するには、次の表の情報を使用します。
 
 | プラットフォーム               | バージョン                                                                            |
 |------------------------|------------------------------------------------------------------------------------|
 | Android                | 4.4 以上                                                                         |
 | Windows (UWP)          | Windows 10 (すべてのバージョン)                                                          |
 | アプリのバージョン            | 1.1.1.0 以上                                                                  |
-| Microsoft Dynamics 365 | Dynamics 365 for Finance and Operations プラットフォーム 更新プログラム 11 (オンプレミス) |
+| Microsoft Dynamics 365 | Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 11 (オンプレミス) |
 
 アプリでオンプレミス リソースにアクセスできるようにするには、AOS および Active Directory フェデレーション サービス（AD FS）の DNS レコードを作成する必要があります。 ガイダンスについては、[DNS ゾーンの作成とレコードの追加](setup-deploy-on-premises-pu12.md#setup) を参照してください。
 
@@ -60,7 +60,7 @@ AD FS およびFinance and Operations 間で認証を正常に交換するため
 
 ## <a name="create-and-configure-a-user-account"></a>ユーザー アカウントの作成およびコンフィギュレーション
 
-Dynamics 365 for Finance and Operations で AD FS アプリケーションを使用できるようにするには、Warehousing アプリのユーザーと同じユーザー資格情報を使用して Microsoft Dynamics 365 でユーザー アカウントを作成する必要があります。
+Dynamics 365 for Finance and Operations で AD FS アプリケーションを使用できるようにするには、倉庫管理アプリのユーザーと同じユーザー資格情報を使用して Microsoft Dynamics 365 でユーザー アカウントを作成する必要があります:
 
 1.  Finance and Operations でユーザーを作成し、倉庫管理モバイル デバイス ユーザー ロールをユーザーに割り当てます。
 
@@ -74,7 +74,7 @@ Dynamics 365 for Finance and Operations で AD FS アプリケーションを使
 
 2.  AD FS アプリケーションと倉庫保管アプリ ユーザーを関連付けます。
 
-    a.  Finance and Operations で、**システム管理** \> **セットアップ** \> **Azure Active Directory アプリケーション**とクリックします。
+    a.  Finance and Operations で、**システム管理** \> **設定** \> **Azure Active Directory アプリケーション**をクリックします。
     
     b.  新しい行を作成します。
     
@@ -107,4 +107,3 @@ AD FS アプリケーションを使用して Finance and Operations サーバ�
 4.  アプリケーションの左上隅にある **戻る** ボタンを選択します。
 
     アプリケーションは Finance and Operations サーバーに接続し、倉庫ワーカーのログイン画面が表示されます。
-

@@ -1,13 +1,13 @@
 ---
-title: "F クラス (FormBuildReferenceControl から FormButtonSeparatorControl)"
-description: "FormButtonSeparatorControl から FormBuildReferenceControl までのクラスの API 参照。"
+title: F クラス (FormBuildReferenceControl から FormButtonSeparatorControl)
+description: FormButtonSeparatorControl から FormBuildReferenceControl までのクラスの API 参照。
 author: RobinARH
 manager: AnnBe
 ms.date: 11/07/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 2f733836e1b3ad1edacb55f451ba8e7db763afa8
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368568"
 ---
-
 # <a name="f-classes-formbuildreferencecontrol-to-formbuttonseparatorcontrol"></a>F クラス (FormBuildReferenceControl から FormButtonSeparatorControl)
 
 [!include [banner](../includes/banner.md)]
@@ -336,7 +335,7 @@ FormButtonSeparatorControl から FormBuildReferenceControl までのクラス�
 |--------|----------------|
 | 130    | JOHAB\_CHARSET |
 
-次のテーブルの値は、中東言語語版 Microsoft Windows の値です。
+次のテーブルの値は、中東言語版用 Microsoft Windows の値です。
 
 | 値です。 | 説明。    |
 |--------|-----------------|
@@ -1615,7 +1614,7 @@ overrideObject
 |--------|----------------|
 | 130    | JOHAB\_CHARSET |
 
-次のテーブルの値は、中東言語語版 Microsoft Windows の値です。
+次のテーブルの値は、中東言語版用 Microsoft Windows の値です。
 
 | 値です。 | 説明。    |
 |--------|-----------------|
@@ -4036,7 +4035,7 @@ FormBuildStaticTextControl クラスを使用すると、X++ コードとメタ�
 |--------|----------------|
 | 130    | JOHAB\_CHARSET |
 
-次のテーブルの値は、中東言語語版 Microsoft Windows の値です。
+次のテーブルの値は、中東言語版用 Microsoft Windows の値です。
 
 | 値です。 | 説明。    |
 |--------|-----------------|
@@ -5147,7 +5146,7 @@ FormBuildStringControl クラスを使用すると、X++ コードとメタデ�
 |--------|----------------|
 | 130    | JOHAB\_CHARSET |
 
-次のテーブルの値は、中東言語語版 Microsoft Windows の値です。
+次のテーブルの値は、中東言語版用 Microsoft Windows の値です。
 
 | 値です。 | 説明。    |
 |--------|-----------------|
@@ -9928,7 +9927,7 @@ FormBuildTimeControl クラスを使用すると、X++ コードとメタデー�
 |--------|----------------|
 | 130    | JOHAB\_CHARSET |
 
-次のテーブルの値は、中東言語語版 Microsoft Windows の値です。
+次のテーブルの値は、中東言語版用 Microsoft Windows の値です。
 
 | 値です。 | 説明。    |
 |--------|-----------------|
@@ -11366,7 +11365,7 @@ FormBuildTreeControl クラスを使用すると、X++ コードとメタデー�
 |--------|----------------|
 | 130    | JOHAB\_CHARSET |
 
-次のテーブルの値は、中東言語語版 Microsoft Windows の値です。
+次のテーブルの値は、中東言語版用 Microsoft Windows の値です。
 
 | 値です。 | 説明。    |
 |--------|-----------------|
@@ -13598,7 +13597,7 @@ chars
 |--------|----------------|
 | 130    | JOHAB\_CHARSET |
 
-次のテーブルの値は、中東言語語版 Microsoft Windows の値です。
+次のテーブルの値は、中東言語版用 Microsoft Windows の値です。
 
 | 値です。 | 説明。    |
 |--------|-----------------|
@@ -15884,7 +15883,7 @@ control
 |--------|----------------|
 | 130    | JOHAB\_CHARSET |
 
-次のテーブルの値は、中東言語語版 Microsoft Windows の値です。
+次のテーブルの値は、中東言語版用 Microsoft Windows の値です。
 
 | 値です。 | 説明。    |
 |--------|-----------------|
@@ -16140,7 +16139,7 @@ Finance and Operations、クライアント、エンタープライズ ポータ
 
 #### <a name="remarks"></a>備考
 
-Use the FormControl::dragLeave、FormControl::dragOver、および FormControl::dragOverEx メソッドを使用して、ビヘイビアーを指定します。
+FormControl::dragLeave、FormControl::dragOver、および FormControl::dragOverEx メソッドを使用して、ビヘイビアーを指定します。
 
 ### <a name="method-dragover"></a>メソッド dragOver
 
@@ -19276,7 +19275,6 @@ y
 
 searchStr  
 データのフィルタリングに使用する文字列値 (オプション)。
-
 
 
 

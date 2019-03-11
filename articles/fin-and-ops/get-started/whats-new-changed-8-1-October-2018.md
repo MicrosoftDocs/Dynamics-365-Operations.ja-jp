@@ -1,36 +1,36 @@
 ---
-title: "Dynamics 365 for Finance and Operations バージョン 8.1 (2018 年 10 月) の新機能および変更された機能"
-description: "このトピックでは、Dynamics 365 for Finance and Operations バージョン 8.1 の新機能または変更された機能について説明します。 このバージョンは 2018 年 10 月にリリースされました。"
+title: Dynamics 365 for Finance and Operations バージョン 8.1 (2018 年 10 月) の新機能および変更された機能
+description: このトピックでは、Dynamics 365 for Finance and Operations バージョン 8.1 の新機能または変更された機能について説明します。 このバージョンは 2018 年 10 月にリリースされました。
 author: tonyafehr
 manager: AnnBe
 ms.date: 11/06/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: tfehr
 ms.search.scope: Operations
-ms.custom: 
+ms.custom: ''
 ms.assetid: b264a51c-52d1-45c5-b698-64c5242c592a
 ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Release 8.1
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 03cc80c00fdd8ac66def6fafd4f5bdc80d24292b
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368600"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-version-81-october-2018"></a>Dynamics 365 for Finance and Operations バージョン 8.1 (2018 年 10 月) の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Finance and Operations バージョン 8.0 (2018 年 10 月) の新機能または変更された機能について説明します。 このバージョンは 2018 年 10 月にリリースされ、ビルド番号は 8.1.136 です。
+このトピックでは、Microsoft Dynamics 365 for Finance and Operations バージョン 8.1 (2018 年 10 月) の新機能または変更された機能について説明します。 このバージョンは 2018 年 10 月にリリースされ、ビルド番号は 8.1.136 です。
 
-Microsoft Dynamics 365 for Retail の最新リリースの新機能と変更については、[Dynamics 365 for Retail の新機能と変更点](https://docs.microsoft.com/dynamics365/unified-operations/retail/get-started/whats-new)を参照してください。
+Microsoft Dynamics 365 for Retail の新機能と変更についての最新のリリースでについては、[Dynamics 365 for Retail の新機能と変更](https://docs.microsoft.com/dynamics365/unified-operations/retail/get-started/whats-new) を参照してください。
 
 ### <a name="announcing-the-dynamics-365-october-18-release-notes"></a>Dynamics 365 2018 年 10 月リリース ノートの発表
 
@@ -86,7 +86,7 @@ Microsoft Dynamics 365 for Retail の最新リリースの新機能と変更に�
 
 ## <a name="extensibility-enhancements"></a>拡張性の強化
 
-Finance and Operations の今回のリリースでは、コマンド チェーン、委任、またはメンバーへのアクセスを提供することにより拡張性をサポートするために、さまざまな拡張機能の強化が加えられています。 さらに、列挙、メタデータ、および SQL 操作に拡張が加えられました。 詳しくは、[Dynamics 365 for Finance and Operations バージョン 8.1 の拡張機能の変更](../../dev-itpro/extensibility/extensibility-changes-81.md)をご覧ください
+Finance and Operations の今回のリリースでは、コマンド チェーン、委任、またはメンバーへのアクセスを提供することにより拡張性をサポートするために、さまざまな拡張機能の強化が加えられています。 さらに、列挙、メタデータ、および SQL 操作に拡張が加えられました。 詳細については、[Dynamics 365 for Finance and Operations バージョン 8.1 で変更された拡張機能](../../dev-itpro/extensibility/extensibility-changes-81.md)を参照してください。
 
 ## <a name="phantom-items"></a>ファントム品目
 
@@ -110,4 +110,3 @@ Finance and Operations の標準売上税機能は、アラブ首長国連邦の
 - アラブ首長国連邦の販売の請求書および貸方票は、ユーザー インターフェイスの新しい ar-AE アラビア語を含む 2 つの言語で印刷されるようになりました。
 - VAT 還付申告レポートは、e-TAX FTA ポータルへのアップロードに対応する電子ファイル形式で印刷されます。
 - 標準監査ファイル機能がアラブ首長国連邦のローカル機能と共有されました。 これは、bht 連邦税所轄官庁 FTA VAT 監査ファイル - (FAF) に必要であり、コンマ区切りファイル形式にエクスポートできます。
-

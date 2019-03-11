@@ -1,28 +1,27 @@
 ---
-title: "FileUploader タイプ"
-description: "ファイル アップローダーコントロール タイプ。 イメージなどのファイルをアップロードするためのコントロールです。"
+title: FileUploader タイプ
+description: ファイル アップローダーコントロール タイプ。 イメージなどのファイルをアップロードするためのコントロールです。
 author: shadykdc
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
-ms.search.scope: 
+ms.search.scope: ''
 ms.search.region: Global
 ms.author: kashea
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
-ms.translationtype: HT
-ms.sourcegitcommit: ed6cabcc8c76fba3d4414cd4b564b720c54169e0
+ms.search.validFrom: ''
+ms.dyn365.ops.version: ''
 ms.openlocfilehash: e6e057ca85c1f0c61b9bf7f8b2291b99665665fb
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368665"
 ---
-
 # <a name="fileuploader-type"></a>FileUploader タイプ
 
 [!include [banner](../../../../includes/banner.md)]
@@ -311,6 +310,5 @@ onDataChanged: [EventHook](event-ievent-ieventhook.md) &lt;null&gt;
 入力コントロールのデータが変更されたときに発生するイベントです。
 
 > [InputControl](view-model-control-basecontrol-iinputcontrol-iinputcontrol.md).[onDataChanged](view-model-control-basecontrol-iinputcontrol-iinputcontrol.md#ondatachanged) から継承
-
 
 

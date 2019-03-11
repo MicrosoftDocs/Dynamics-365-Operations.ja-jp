@@ -1,13 +1,13 @@
 ---
-title: "ワークスペース タイル用のアイコンの作成"
-description: "このトピックでは、アイコンを作成してカスタム ワークスペース タイルに割り当てるためのガイドラインと推奨事項について説明します。"
+title: ワークスペース タイル用のアイコンの作成
+description: このトピックでは、アイコンを作成してカスタム ワークスペース タイルに割り当てるためのガイドラインと推奨事項について説明します。
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
+ms.openlocfilehash: 3cd0c01303412c304db6cb8be9549f02f3b26df4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 6a2a6cb0a57dd6450337577c1de2b222fbcf0e7f
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368566"
 ---
-
 # <a name="create-icons-for-workspace-tiles"></a>ワークスペース タイル用のアイコンの作成
 
 [!include [banner](../includes/banner.md)]
@@ -75,7 +74,6 @@ ms.lasthandoff: 04/20/2018
 この画像をワークスペース タイルで使用すると、ダッシュ ボードには次の結果が得られます。 
 
 [![newWorkspaceIcon](./media/newworkspaceicon.png)](./media/newworkspaceicon.png)                
-
 
 
 

@@ -1,30 +1,29 @@
 ---
-title: "拡張可能なコードの書き込み"
-description: "このトピックでは、拡張可能コードを書き込む方法について説明します。"
+title: 拡張可能なコードの書き込み
+description: このトピックでは、拡張可能コードを書き込む方法について説明します。
 author: MichaelFruergaardPontoppidan
 manager: AnnBe
 ms.date: 09/18/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: kfend
 ms.search.scope: Operations
 ms.custom: 268724
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.translationtype: HT
-ms.sourcegitcommit: 1aae5797e37b846a38f957b02870e213da528a2d
 ms.openlocfilehash: d9c2e4772fce96ffcc302794df69bf556b4d6849
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/20/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369411"
 ---
-
 # <a name="write-extensible-code"></a>拡張可能なコードの書き込み
 
 [!include [banner](../includes/banner.md)]
@@ -34,7 +33,7 @@ X++ およびメタデータ モデルは、ビジネス ソリューション�
 拡張性は、別の技術的な問題です。 他のユーザーが安全かつ堅牢で管理可能な方法でソリューションを拡張できるようにします。 既定では、ソリューションの拡張性は高くなっています。 ただし、完全性を保証するために従う必要のある、いくつかのガイドラインがあります。
 
 ## <a name="responsibilities"></a>職責
-どの Microsoft Dynamics 365 for Finance and Operations 環境でも、さまざまなソースからコンポーネントを含むビジネス ソリューションが実行されています。 通常、各ソリューションにはマイクロソフト、独立系ソフトウェア ベンダー (ISV)、パートナーのコード、さらに内部開発のコードも含まれています。 各コントリビューターは、ソリューションへの自分の貢献と、自分の貢献が他のユーザーの貢献と関わる方法に責任を負っています。
+どの Microsoft Dynamics 365 for Finance and Operations 環境でも、さまざまなソースからのコンポーネントを含むビジネス ソリューションが実行されています。 通常、各ソリューションにはマイクロソフト、独立系ソフトウェア ベンダー (ISV)、パートナーのコード、さらに内部開発のコードも含まれています。 各コントリビューターは、ソリューションへの自分の貢献と、自分の貢献が他のユーザーの貢献と関わる方法に責任を負っています。
 
 拡張可能コードを作成するとき、ソリューションを操作するよう他のユーザーを招待します。 自分の責任は、他のユーザーを適切なゲストにすることです。 この責任を果たす方法を以下に示します。
 
@@ -96,7 +95,7 @@ X++ では、すべての保護されたパブリック メソッドが拡張ポ
 + [テーブル](extensible-tables.md)
 + [メソッドの拡張属性](extensibility-attributes.md)
 
-## <a name="breaking-changes"></a>変更の分割
+## <a name="breaking-changes"></a>重大な変更
 ソリューションを拡張可能にすると、後で拡張ポイントを壊さずに済むことにもなります。 詳細については、[重大な変更](breaking-changes.md)を参照してください。
 
 ## <a name="external-resources"></a>外部リソース
@@ -107,4 +106,3 @@ X++ では、すべての保護されたパブリック メソッドが拡張ポ
 + [クリーンなコード: アジャイル ソフトウェア作成者が守るべき事柄のハンドブック](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)
 + [Clean Coders](https://cleancoders.com/)
 + [DRY 原則](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
-

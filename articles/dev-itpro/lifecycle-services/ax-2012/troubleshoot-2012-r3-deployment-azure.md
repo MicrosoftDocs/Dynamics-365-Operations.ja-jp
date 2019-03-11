@@ -1,13 +1,13 @@
 ---
-title: "Azure 上での AX 2012 R3 配置のトラブルシューティング"
-description: "このトピックでは、一般的な問題を解決するための方法、および Azure で Microsoft Dynamics AX 2012 R3 環境の支援を受ける方法について説明します。"
+title: Azure 上での AX 2012 R3 配置のトラブルシューティング
+description: このトピックでは、一般的な問題を解決するための方法、および Azure で Microsoft Dynamics AX 2012 R3 環境の支援を受ける方法について説明します。
 author: kfend
 manager: AnnBe
 ms.date: 11/13/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012
-ms.service: 
-ms.technology: 
+ms.service: ''
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: AX 2012
@@ -15,16 +15,15 @@ ms.custom: 18691
 ms.assetid: cc7c6dd5-b715-4734-9918-c25df4187c6e
 ms.search.region: Global
 ms.author: kfend
-ms.search.validFrom: 
+ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 07c16619c050751a4fb8739456267ff61d708aa4
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369636"
 ---
-
 # <a name="troubleshoot-ax-2012-r3-deployments-on-azure"></a>Azure 上での AX 2012 R3 配置のトラブルシューティング
 
 [!include [banner](../../includes/banner.md)]
@@ -46,7 +45,7 @@ Windows のデモ環境で仮想マシンに試用版のライセンスを更新
 
 コマンド プロンプト ウィンドウが短く表示され、仮想マシンが再起動します。 ライセンスは現在 180 日間有効です。 この手順は 3 回完了することができます。
 
-## <a name="how-do-i-renew-the-microsoft-dynamics-ax-license-on-a-demo-virtual-machine"></a>デモ仮想マシンで Microsoft Dynamics AX のライセンスを更新するにはどうすればよいですか。
+## <a name="how-do-i-renew-the-microsoft-dynamics-ax-license-on-a-demo-virtual-machine"></a>デモ仮想マシンで Microsoft Dynamics AX ライセンスを更新するにはどうすればよいですか。
 Microsoft Dynamics AX のデモ環境で仮想マシンのライセンスを更新する必要がある場合、[CustomerSource](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/service-packs/AX2012DemoToolsMaterials#DemoVirtualMachineLicenses) または [MSDN](https://msdn.microsoft.com/en-us/subscriptions/securedownloads/hh442898) から試用版のライセンス ファイルをダウンロードします。 「[ライセンス情報の指定](https://technet.microsoft.com/en-us/library/aa496447.aspx)」に記載の手順に従います。
 
 ## <a name="how-do-i-activate-windows-on-the-virtual-machines-in-my-non-demo-environment"></a>非デモ環境で仮想マシンの Windows をアクティブにするにはどうしたらいいですか。
@@ -72,7 +71,7 @@ Dynamics AX クライアントは、再起動後または最初のログイン�
 カーネルは累積型であるため、最新のカーネルはこちらを参照してください。<https://blogs.msdn.microsoft.com/axsupport/2012/03/29/overview-of-microsoft-dynamics-ax-build-numbers/>
 
 ## <a name="how-do-i-monitor-for-storage-account-throttling"></a>ストレージ アカウントのスロットルを監視するにはどうすればよいですか。
-ストレージ アカウントのスロットルを監視するには、[[ストレージ アカウントのスロットルを監視する方法](https://blogs.msdn.microsoft.com/mast/2014/08/02/how-to-monitor-for-storage-account-throttling/)] を参照してください。 ストレージが制限されているときに通知するには、警告および通知を利用できます。 これが発生している場合、複数の Azure コネクタや LCS プロジェクトの活用に関する情報については、「[Azure で Microsoft Dynamics AX 2012 R3 の展開を計画](plan-2012-r3-deployment-azure.md)」というトピックを参照します。
+ストレージ アカウントのスロットルを監視するには、[[ストレージ アカウントのスロットルを監視する方法](https://blogs.msdn.microsoft.com/mast/2014/08/02/how-to-monitor-for-storage-account-throttling/)] を参照してください。 ストレージが制限されているときに通知するには、警告および通知を利用できます。 これが発生している場合、複数の Azure コネクタや LCS プロジェクトの活用に関する情報については、[Azure で Microsoft Dynamics AX 2012 R3 の展開を計画](plan-2012-r3-deployment-azure.md) というトピックを参照します。
 
 ## <a name="how-do-i-contact-support"></a>サポートに連絡するにはどうすればよいですか。
 ライセンスまたは技術的な質問で Microsoft に連絡する必要がある場合は、最初にどのサポート チームに連絡するかを決める必要があります。 以下の情報を参考にして、最良の担当サポート チームを見つけてください。
@@ -118,7 +117,7 @@ Azure のサポートを得るには、次の表に示すリソースを使用�
 
 ### 
 
-### <a name="microsoft-dynamics-ax-support"></a>Microsoft Dynamics AX サポート
+### <a name="microsoft-dynamics-ax-support"></a>Microsoft Dynamics AX のサポート
 
 Microsoft Dynamics AX のサポートを得るには、次の表に示すリソースを使用します。
 
@@ -130,10 +129,10 @@ Microsoft Dynamics AX のサポートを得るには、次の表に示すリソ�
 <tbody>
 <tr class="odd">
 <td><strong>タスク</strong></td>
-<td><strong>詳細情報</strong></td>
+<td><strong>詳細</strong></td>
 </tr>
 <tr class="even">
-<td>Microsoft Dynamics AX のライセンスに関する質問について援助を受けます</td>
+<td>Microsoft DynamicsAX のライセンスに関する質問について援助を受けます。</td>
 <td>次の PartnerSource のリンクをクリックして、Microsoft Dynamics Regional Operations Center にお問い合わせください。
 <ul>
 <li><a href="https://mbs.microsoft.com/partnersource/northamerica/pricing-ordering">価格決定と注文</a></li>
@@ -142,7 +141,7 @@ Microsoft Dynamics AX のサポートを得るには、次の表に示すリソ�
 </tr>
 <tr class="odd">
 <td>コミュニティに質問する</td>
-<td><a href="http://go.microsoft.com/fwlink/?LinkId=221068">Microsoft Dynamics AX フォーラム</a>ページに移動して、Microsoft Dynamics AX コミュニティから質問のヘルプを入手します。</td>
+<td><a href="http://go.microsoft.com/fwlink/?LinkId=221068">Microsoft Dynamics AX フォーラム</a>ページに移動し、Microsoft Dynamics AX コミュニティからの質問のヘルプを入手します。</td>
 </tr>
 <tr class="even">
 <td>クラウドを利用したサポート ツールの使用</td>
@@ -154,7 +153,7 @@ Microsoft Dynamics AX のサポートを得るには、次の表に示すリソ�
 </tr>
 <tr class="even">
 <td>Microsoft Dynamics AX サポート チームとのサポート チケットを入力します。</td>
-<td><a href="https://community.dynamics.com/ax/p/support.aspx">Microsoft Dynamics AX のサポート</a>ページに移動して、サポート チケットを開きます。 Microsoft Dynamics AX サポート チームは、関連する技術的な問題の解決をお手伝いします。
+<td><a href="https://community.dynamics.com/ax/p/support.aspx">Microsoft Dynamics AX のサポート</a>ページに移動して、サポート チケットを開きます。 Microsoft Dynamics AX サポート チームは、以下に関連する技術的な問題の解決をサポートします。
 <ul>
 <li>Lifecycle Services の使用時のエラー</li>
 <li>Microsoft Dynamics AX の使用時のエラー</li>
@@ -162,7 +161,6 @@ Microsoft Dynamics AX のサポートを得るには、次の表に示すリソ�
 </tr>
 </tbody>
 </table>
-
 
 
 

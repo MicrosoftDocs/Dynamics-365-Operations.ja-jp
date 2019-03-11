@@ -1,13 +1,13 @@
 ---
-title: "Dynamics AX プラットフォームの 2016 年 8 月リリースへのアップグレード"
-description: "このトピックでは、Microsoft Dynamics AX プラットフォームを Dynamics AX の 2016 年 8 月リリースにアップグレードする方法について説明します。"
+title: 2016 年 8 月リリースへの AX プラットフォームのアップグレード
+description: このトピックでは、Microsoft Dynamics AX プラットフォームを Dynamics AX の 2016 年 8 月リリースにアップグレードする方法について説明します。
 author: MargoC
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: margoc
 ms.search.scope: Operations
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: tabell
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.translationtype: HT
-ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
 ms.openlocfilehash: 5b313b07ee4751ccb0e710edf82792a9ec59071f
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/17/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368341"
 ---
-
-# <a name="upgrade-the-dynamics-ax-platform-to-the-august-2016-release"></a>Dynamics AX プラットフォームの 2016 年 8 月リリースへのアップグレード
+# <a name="upgrade-the-dynamics-ax-platform-to-the-august-2016-release"></a>2016 年 8 月リリースへの AX プラットフォームのアップグレード
 
 [!include [banner](../includes/banner.md)]
 
@@ -34,7 +33,7 @@ ms.lasthandoff: 09/17/2018
 <a name="overview"></a>概要
 --------
 
-**重要:** このトピックは、2016 年 8 月よりも前の、Microsoft Dynamics AX のリリースにのみ適用されます。 Microsoft Dynamics 365 for Finance and Operations 更新プログラムで、このトピックを参照してください: [Finance and Operations を最新のプラットフォーム更新プログラムに更新](../migration-upgrade/upgrade-latest-platform-update.md) Microsoft Dynamics AX プラットフォームは、次のコンポーネントで構成されます。
+**重要:** このトピックは、2016 年 8 月よりも前の、Microsoft Dynamics AX のリリースにのみ適用されます。 Microsoft Dynamics 365 for Finance and Operations 更新プログラムで、このトピック [Finance and Operations を最新のプラットフォーム更新プログラムに更新](../migration-upgrade/upgrade-latest-platform-update.md) を参照してください。 Microsoft Dynamics AX プラットフォーム は、次のコンポーネントで構成されています。
 
 -   Application Object Server (AOS)、データ管理フレームワーク、レポートおよびビジネス インテリジェンス (BI) フレームワーク、開発ツール、および分析サービスなどの Dynamics AX プラットフォーム バイナリ
 -   次のアプリケーション オブジェクト ツリー (AOT) パッケージ。
@@ -104,7 +103,7 @@ ms.lasthandoff: 09/17/2018
 
 ### <a name="install-the-visual-studio-development-tools"></a>Visual Studio 開発ツールのインストール
 
-[[Dynamics AXのVisual Studio 開発ツールの更新](../dev-tools/update-development-tools.md)] の説明に従って、Microsoft Visual Studio 開発ツールを更新します。
+[Dynamics AX Visual Studio 開発ツールの更新](../dev-tools/update-development-tools.md) の説明に従って、Microsoft Visual Studio 開発ツールを更新します。
 
 ### <a name="regenerate-form-adaptor-models"></a>フォーム アダプタ モデルの再生成
 
@@ -177,11 +176,10 @@ Microsoft SQL Server の統合サービスの早期リリースに接続して�
 7.  カスタマイズしたプラットフォーム パッケージからカスタム配置可能パッケージを作成します。 このパッケージは、検証のためにサンドボックス/実稼働前の環境に適用する必要があります。
 
 
-<a name="additional-resources"></a>その他のリソース
+<a name="additional-resources"></a>追加リソース
 --------
 
 [最新の Dynamics AX 更新プログラムにアップグレードするためのプロセス](../migration-upgrade/upgrade-latest-update.md)
-
 
 
 

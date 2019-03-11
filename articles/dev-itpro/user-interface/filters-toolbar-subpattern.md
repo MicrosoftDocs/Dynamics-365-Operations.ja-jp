@@ -1,13 +1,13 @@
 ---
-title: "フィルターおよびツールバーのサブパターン"
-description: "この記事では、フィルターおよびツールバーのサブパターンについて説明します。 これらのワークスペース固有のサブパターンは、リストやグラフをホストする、パノラマ セクション内のフィルターやアクションを表示するために開発されました。"
+title: フィルターおよびツールバーのサブパターン
+description: この記事では、フィルターおよびツールバーのサブパターンについて説明します。 これらのワークスペース固有のサブパターンは、リストやグラフをホストする、パノラマ セクション内のフィルターやアクションを表示するために開発されました。
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: edb31e619675fec82665b3cabdcc5ac35b918596
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 53014c3e1a81f2facab268288d4ec64c73830ce2
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369935"
 ---
-
 # <a name="filters-and-toolbar-subpatterns"></a>フィルターおよびツールバーのサブパターン
 
 [!include [banner](../includes/banner.md)]
@@ -57,8 +56,8 @@ ms.lasthandoff: 04/20/2018
 
 [![filterToolbarStackedWireframe](./media/filtertoolbarstackedwireframe.png)](./media/filtertoolbarstackedwireframe.png)
 
-## <a name="pattern-changes-for-microsoft-dynamics-365-for-finance-and-operations"></a>Microsoft Dynamics 365 for Finance and Operations のパターン変更
-これらのパターンは、Microsoft Dynamics AX 2012 では存在しませんでした。
+## <a name="pattern-changes-for-microsoft-dynamics-365-for-finance-and-operations"></a>Microsoft Dynamics 365 for Finance and Operations 用のパターンの変更
+これらのパターンは、Microsoft DynamicsAX 2012 では存在しませんでした。
 
 ## <a name="model"></a>モデル
 ### <a name="filters-and-toolbar---inline-high-level-structure"></a>フィルターおよびツールバー - インライン: 高度なレベル構造
@@ -133,4 +132,3 @@ ms.lasthandoff: 04/20/2018
 
 -   UX のガイドラインは、これらのセクションに最大 2 つのフィルターを指定しています (それらのフィルターの一つは QuickFilter となる場合があります)。 したがって、Stacked バリアントは、ガイドラインにより一層準拠しています。
 -   積み上げバリアントのフィールド数は、審美的な理由から制限されています。 このバリアントのフィルター フィールドは、それらの下に表示されるリスト/チャートの全幅を占めることを意図しているため、その幅は **SizeToAvailable** です。 このバリアントを限られたリストを超えて使用すると、その使用の目的にしたがって、2 つを超えるフィルター フィールドが使用された場合には、その設定によって非常に限られたフィルター フィールドが発生する可能性があります。 インライン バリアントは、幅広いグラフ/リストの上で使用するためのものです。 したがって、元のパターン定義では、任意の数のフィールドが許可されていました。 ただし、今後 2 つのバリエーション間で許可されているフィルター フィールドの数におけるこの不一致に対応する予定です。
-

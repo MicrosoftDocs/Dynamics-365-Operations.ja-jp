@@ -1,13 +1,13 @@
 ---
-title: "プロパティを販売注文に追加"
-description: "販売注文のプロパティをカスタマイズすることにより、オンライン ストアから追加データを送信して業務プロセスの要件を満たすことができます。 この記事では、販売注文にプロパティを追加する方法について説明します。"
+title: プロパティを販売注文に追加
+description: 販売注文のプロパティをカスタマイズすることにより、オンライン ストアから追加データを送信して業務プロセスの要件を満たすことができます。 この記事では、販売注文にプロパティを追加する方法について説明します。
 author: kfend
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: robinr
 ms.search.scope: Operations, Retail
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
 ms.openlocfilehash: 6cb99d6ce863b464c6ed8d7c3a96c5e6a2e8e04c
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369748"
 ---
-
 # <a name="add-properties-to-sales-orders"></a>プロパティを販売注文に追加
 
 [!include [banner](../includes/banner.md)]
@@ -93,7 +92,6 @@ Commerce Runtime で販売注文を作成した後は、新しい属性を表示
 3.  **小売** &gt; **小売 IT** &gt; **注文の同期**の順にクリックして販売注文を作成します。
 4.  **小売** &gt; **照会およびレポート** &gt; **販売注文** &gt; **すべての販売注文**の順番にクリックします。
 5.  **小売**タブで、**小売属性**をクリックします。 作成した属性を確認する必要があります。
-
 
 
 

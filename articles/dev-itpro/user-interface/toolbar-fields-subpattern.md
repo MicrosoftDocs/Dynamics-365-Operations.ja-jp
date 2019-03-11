@@ -1,13 +1,13 @@
 ---
-title: "ツールバーおよびフィールドのサブパターン"
-description: "この記事では、ツールバーおよびフィールドのサブパターンについて説明します。 このコンテナー パターンは、データ フィールドのサブパターンの上にアクションを表示するために使用されます。 ツールバーに含まれるアクションは 10 個未満にしてください。"
+title: ツールバーおよびフィールドのサブパターン
+description: この記事では、ツールバーおよびフィールドのサブパターンについて説明します。 このコンテナー パターンは、データ フィールドのサブパターンの上にアクションを表示するために使用されます。 ツールバーに含まれるアクションは 10 個未満にしてください。
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 5c7c1791d3f0b7c2042586a9a64488a822bb527b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: c8075c58ef95ee98ef826385bcd51cb699876be0
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369258"
 ---
-
 # <a name="toolbar-and-fields-subpattern"></a>ツールバーおよびフィールドのサブパターン
 
 [!include [banner](../includes/banner.md)]
@@ -100,9 +99,8 @@ ms.lasthandoff: 04/20/2018
 -   **ShowMoreLess グループは、パターンの一部にすべきですか、独自のサブパターンにする必要がありますか。**
     -   新しいパターンの追加を正当化するだけの十分な需要があるまで、**ShowMoreLess** グループをカスタム コンテナー パターンとして取り扱います。
 
-### <a name="microsoft-dynamics-ax-2012-content"></a>Microsoft Dynamics AX 2012 のコンテンツ
+### <a name="microsoft-dynamics-ax-2012-content"></a>Microsoft Dynamics AX 2012 コンテンツ
 
 **HcmPosition** 
 
 ![ToolbarFields(3)](./media/toolbarfields3.png)
-

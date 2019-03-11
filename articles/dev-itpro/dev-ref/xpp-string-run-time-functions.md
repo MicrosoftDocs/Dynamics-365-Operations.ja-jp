@@ -1,13 +1,13 @@
 ---
-title: "X++ 文字列ランタイム関数"
-description: "このトピックでは、文字列ランタイム関数について説明します。"
+title: X++ 文字列ランタイム関数
+description: このトピックでは、文字列ランタイム関数について説明します。
 author: RobinARH
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 134d6897b1c5aaaea04bea67e45531e66e32ec06
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369091"
 ---
-
 # <a name="x-string-runtime-functions"></a>X++ 文字列ランタイム関数
 
 [!include [banner](../includes/banner.md)]
@@ -136,8 +135,8 @@ ms.lasthandoff: 08/09/2018
 <td>SPACE は、空白文字 ( ) です。 空白、タブ、および Enter (改行文字) などの制御文字を入力するには、一致を設定します。 例
 <ul>
 <li><strong>照合 (&quot;ab: cd&quot;、&quot;ab cd&quot;);</strong> は、<strong>1</strong> を返します。</li>
-<li><strong>照合 (&quot;ab: cd&quot;、&quot;ab\ncd&quot;);</strong> は、<strong>1</strong> を返します。</li>
-<li><strong>照合 (&quot;ab: cd&quot;、&quot;ab\tcd&quot;);</strong> は、<strong>1</strong> を返します。</li>
+<li><strong>照合 (&quot;ab: cd&quot;,&quot;ab\ncd&quot;);</strong> は、<strong>1</strong> を返します。</li>
+<li><strong>照合 (&quot;ab: cd&quot;,&quot;ab\tcd&quot;);</strong> は、<strong>1</strong> を返します。</li>
 <li><strong>照合 (&quot;ab: cd&quot;、&quot;ab cd&quot;);</strong> は、<strong>0</strong> を返します。 最初のスペースのみ一致します。</li>
 </ul></td>
 </tr>
@@ -174,7 +173,7 @@ ms.lasthandoff: 08/09/2018
 <td>かっこで囲まれた任意の文字と 1 つの文字を照合します。 文字の範囲は、マイナス記号 (-) で区切られた 2 つの文字で指定することができます。 たとえば、<strong>[a-z]</strong>は a ～ z のすべての文字に一致し、<strong>[0-9]</strong> は数字と一致し、さらに <strong>[0-9a-f]</strong> は 16 進数に一致します。 例
 <ul>
 <li><strong>照合 (&quot;[abc]&quot;、&quot;apple&quot;);</strong> は、&quot;apple.&quot; の a が一致するので<strong>1</strong> を返します。</li>
-<li><strong>照合 (&quot;[abc]&quot;、&quot;kiwi&quot;);</strong> は、&quot;kiwi&quot; に a、b、c が含まれていないため、<strong>0</strong> を返します。</li>
+<li><strong>照合 (&quot;[abc]&quot;,&quot;kiwi&quot;);</strong> は、&quot;kiwi&quot; に a、b、c が含まれていないため、<strong>0</strong> を返します。</li>
 <li><strong>照合 (&quot;gr[ae]y&quot;、&quot;grey&quot;);</strong> は、1 を返します。 この式は、&quot;灰色&quot;と一致します。</li>
 <li><strong>照合 (&quot;gr[ae]y&quot;、&quot;graey&quot;);</strong> は、&quot;gr&quot; と &quot;y&quot; の間で、1 つの文字だけが一致したため、<strong>0</strong> を返します。</li>
 </ul></td>
@@ -775,7 +774,6 @@ Unicode 互換機能は、**DLL** および **DLLFunc** クラスを通じて Wi
     subStr("abcdef"),2,99) //Returns the string "cdef".
     subStr("abcdef",2,3) //Returns the string "bcd".
     subStr("abcdef",2,-3); //Returns the string "ab".
-
 
 
 

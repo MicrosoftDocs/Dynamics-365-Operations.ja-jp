@@ -1,13 +1,13 @@
 ---
-title: "拡張機能によるカスタム Commerce Data Exchange の同期の有効化"
-description: "このトピックでは、Retail 初期化クラスを拡張して、カスタムの Commerce Data Exchange (CDX) 同期をサポートする方法について説明します。"
+title: 拡張機能を介したカスタム Commerce Data Exchange 同期の有効化
+description: このトピックでは、Retail 初期化クラスを拡張して、カスタムの Commerce Data Exchange (CDX) 同期をサポートする方法について説明します。
 author: mugunthanm
 manager: AnnBe
 ms.date: 09/15/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations, Retail
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-09-15
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
+ms.openlocfilehash: 1a346c6831556f7f23fb92dbdc78a89c786af2e7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
-ms.openlocfilehash: 4516ff2d5d01765d87696af4b9cc9b631ba11f79
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/17/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368383"
 ---
-# <a name="enable-custom-commerce-data-exchange-synchronization-via-extension"></a>拡張機能によるカスタム Commerce Data Exchange の同期の有効化
+# <a name="enable-custom-commerce-data-exchange-synchronization-via-extension"></a>拡張機能を介したカスタム Commerce Data Exchange 同期の有効化
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、Retail 初期化クラスを拡張して、カスタムの Commerce Data Exchange (CDX) 同期をサポートする方法について説明します。 この拡張機能では、Microsoft Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 8 または Microsoft Dynamics 365 for Retail プラットフォーム更新プログラム 8 に追加された新しい拡張ポイントを使用します。
+このトピックでは、Retail 初期化クラスを拡張して、カスタムの Commerce Data Exchange (CDX) 同期をサポートする方法について説明します。 この拡張機能では、Microsoft Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 8 または Microsoft Dynamics 365 for Retail プラットフォーム更新プログラム 8 で追加された新しい拡張ポイントを使用します。
 
 CDX は、小売用バックオフィス (小売 HQ)、およびオンライン ストア、実際の店舗などの小売チャンネルの間でデータを転送するシステムです。 Retail HQ とチャネル データベース間のデータ転送は、スケジューラ ジョブによって制御されます。 各スケジューラ ジョブには、スケジューラ サブジョブの一覧が含まれています。 スケジューラ サブジョブには、ソース テーブルと出力先テーブルの名前と、それらのテーブルの転送フィールド マッピングが含まれています。 Retail HQ とチャネル データベース間のデータ同期を設定するには、2 つの方法があります。
 
@@ -225,12 +225,12 @@ Microsoft Dynamics 365 for Retail アプリケーション更新プログラム 
 
 ### <a name="setup-steps"></a>設定手順
 
-変更していない Retail ソフトウェア開発キット (SDK) にこれらの変更を実装することをお勧めします。 または、SDK を Microsoft Azure DevOps などのソース管理下で配置することにより任意のステップで、変更を簡単に戻すことができます。 まず、SDK にある .axpp パッケージをインポートします。 次に、チャンネル データベースで、SQL 更新スクリプトを実行します。
+変更していない Retail ソフトウェア開発キット (SDK) にこれらの変更を実装することをお勧めします。 または、SDK を Microsoft Azure DevOps などのソース管理下で配置することにより、どのステップでも変更を簡単に元に戻すことができます。 まず、SDK にある .axpp パッケージをインポートします。 次に、チャンネル データベースで、SQL 更新スクリプトを実行します。
 
 1. カスタマイズ コードを含む Finance and Operations 側にパッケージをインポートします。
 
     1. ExtensionTablesAndCDXCustomization.axpp ファイルをRetailSDK\Documents\SampleExtensionsInstructions\ExtensionTables フォルダーからコピーし、拡張プロジェクト フォルダーに貼り付けます。
-    2. Microsoft Visual Studio を開始します。
+    2. Microsoft Visual Studio を起動します。
     3. **Dynamics 365** > **インポート プロジェクト** を選択します。
     4. **プロジェクトのインポート** ダイアログ ボックスで、手順 1 でコピーした .axpp ファイルのパスを指定します。
     5. 必要に応じて、**現在のソリューション** または **新しいソリューション** を選択します。
@@ -244,7 +244,7 @@ Microsoft Dynamics 365 for Retail アプリケーション更新プログラム 
 2. SQL 更新スクリプトを実行します。
 
    1. Retail SDK フォルダーから **ContosoRetailExtensionTablesUpdate.sql** ファイルをコピーします。 同様の仕方で他のサンプル ファイルを実行することができます。
-   2. Microsoft SQL Server ブラウザーでスクリプトを開いて、チャンネル データベースに対してスクリプトを実行します。
+   2. Microsoft SQL Server ブラウザーでスクリプトを開いて、チャネル データベースに対してスクリプトを実行します。
 
       このステップでは、トランザクション テーブルをカスタマイズするために必要な拡張テーブルとビューを作成します。 スクリプトはその他のサンプル シナリオに使用されるその他のテーブルも作成することに注意してください。
 
@@ -366,7 +366,7 @@ OverrideTarget が "true" に設定されている場合、TargetTableName で�
 
 2. CDX ジョブがアップロードし、統合されたビューを使用してチャンネル側にある元のテーブルと拡張テーブルから取得するテスト:
 
-    1. Retail Modern POS (MPOS) で一部のトランザクションを作成します。
+    1. Retail Modern POS (MPOS) でいくつかのトランザクションを作成します。
     2. 拡張テーブルは Commerce Runtime (CRT) および MPOS では使用されないため、拡張テーブルに手動でデータを挿入する必要があります。 必要な値を変更した後、次のスクリプトを実行します。
 
         ```
@@ -400,4 +400,3 @@ OverrideTarget が "true" に設定されている場合、TargetTableName で�
 3. アップロード セッションが正常に適用されていると、**Retail** > **照会やレポート** > **小売店舗のトランザクション**の順に移動し、アップロードした新しいトランザクションを検索します。 トランザクション、シート番号、およびサーバー スタッフ ID の各カスタム列に期待された値が入っていることを確認します。
 
     また、チャネル側の [ext].ContosoRetailTransactionTable 拡張テーブルに対応するレコードを持たないトランザクションもアップロードされていることを確認します。 これらのトランザクションにシート番号とサーバー スタッフ ID の既定値が含まれていることを確認します。 シート番号は **0** (ゼロ) に設定し、サーバー スタッフ ID は **000160** に設定する必要があります。
-

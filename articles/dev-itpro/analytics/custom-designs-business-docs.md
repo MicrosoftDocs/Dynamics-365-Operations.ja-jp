@@ -1,13 +1,13 @@
 ---
-title: "ビジネス ドキュメントのカスタム デザインを作成する"
-description: "このトピックでは、純粋な拡張モデルを使用して、既存のアプリケーション ビジネス ドキュメントのカスタム レポート デザインを作成する方法について説明します。"
+title: ビジネス ドキュメントのカスタム デザインを作成する
+description: このトピックでは、純粋な拡張モデルを使用して、既存のアプリケーション ビジネス ドキュメントのカスタム レポート デザインを作成する方法について説明します。
 author: TJVass
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 113d699bf7c704a37f139465a1ef0473472ac5c5
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368684"
 ---
-
 # <a name="create-custom-designs-for-business-documents"></a>ビジネス ドキュメントのカスタム デザインを作成する
 
 [!include [banner](../includes/banner.md)]
@@ -46,9 +45,9 @@ Microsoft Dynamics 365 for Finance and Operations には、カスタム ソリ�
 次のチュートリアルでは、既存のアプリケーション ビジネス ドキュメントのカスタム レポート デザインを導入し、次に印刷管理を使用して新しいデザインを選択するプロセスを示します。 このソリューションには、Application Suite モデルの一部として標準アプリケーションで提供される**販売の確認**レポートのカスタム設計定義が含まれています。 アプリケーションのカスタマイズ内容は、拡張モデルで定義されます。
 
 1. **アプリケーション カスタマイズの新しいモデルを作成します。** 拡張モデルに関する詳細については、[カスタマイズ: オーバーレイおよび拡張機能](../extensibility/customization-overlayering-extensions.md) を参照してください。 この例では、**アプリケーション スイート拡張子**というモデルを追加し、それはアプリケーション スイート、アプリケーション プラットフォーム、およびアプリケーション基盤パッケージを参照します。
-2. **Microsoft Visual Studio で新しいプロジェクトを作成します。** プロジェクトが拡張モデルに関連付けられていることを確認します。 次の図はプロジェクト設定を示します。
+2. **Microsoft Visual Studio で、新しいプロジェクトを作成します。** プロジェクトが拡張モデルに関連付けられていることを確認します。 次の図はプロジェクト設定を示します。
 
-    [![Visual Studio のプロジェクト設定](./media/app-extension-vs-project-settings.png)](./media/app-extension-vs-project-settings.png)
+    [![Visual Studio でのプロジェクト設定](./media/app-extension-vs-project-settings.png)](./media/app-extension-vs-project-settings.png)
 
 3. **ビジネス ドキュメントのカスタム レポートのデザインを作成します。** カスタム ソリューションが正しいレポート データ コントラクトを消費することを確認する必要があります。 アプリケーション エクスプ ローラーで、既存のアプリケーション スイート レポートを検索します。 このレポートの名前は **SalesConfirm** です。 右クリックし、**プロジェクトで複製** をクリックしてカスタム ソリューションを作成します。
 4. **レポートの名前を変更して、わかりやすい名前にします。** この例では、カスタム レポートの **SalesConfirmExt** を名前付けし、標準のソリューションと区別します。 プロジェクトをコンパイルしてレポートを展開し、変更にエラーがないことを確認します。
@@ -104,4 +103,3 @@ Microsoft Dynamics 365 for Finance and Operations には、カスタム ソリ�
     [![コンパイル後の印刷管理設定](./media/app-extension-print-mgt-after-1024x608.png)](./media/app-extension-print-mgt-after.png)
 
 これで、ビジネス ドキュメントのカスタマイズが完了しました。 アプリケーションでトランザクションを処理するとき、ビジネス ドキュメントのカスタム レポート デザインがユーザーに提示されるようになります。
-

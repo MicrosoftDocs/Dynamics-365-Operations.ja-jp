@@ -1,13 +1,13 @@
 ---
-title: "データ エンティティの列と仮想フィールドを計算する"
-description: "この記事では、計算されたフィールドと仮想フィールドに関する情報を提供します。これは、データ エンティティが持つことができる 2 つのタイプのマッピングされていないフィールドです。"
+title: データ エンティティの列と仮想フィールドを計算する
+description: この記事では、計算されたフィールドと仮想フィールドに関する情報を提供します。これは、データ エンティティが持つことができる 2 つのタイプのマッピングされていないフィールドです。
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: margoc
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: e884cd388cd6f400bd404f62baaa751158ef1e4a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 667e747c401e2e9b063280d4c546f755b574b9bc
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369745"
 ---
-
 # <a name="computed-columns-and-virtual-fields-in-data-entities"></a>データ エンティティの列と仮想フィールドを計算する
 
 [!include [banner](../includes/banner.md)]
@@ -36,7 +35,7 @@ ms.lasthandoff: 08/09/2018
 データ エンティティは、データ ソースのフィールドに直接マップされているフィールド以外に*マップされていない*フィールドを追加で持つことができます。 マップされていないフィールドの値を生成するメカニズムは次のとおりです。
 
 - カスタム X++ コード
-- Microsoft SQL Server により実行される SQL
+- Microsoft SQL Server で実行される SQL
 
 マップされていない2種類のフィールドは、計算と仮想です。 マップされていないフィールドは常に読み取り操作をサポートしますが、機能仕様では、書き込み操作をサポートするための開発作業は必要とされない場合があります。
 
@@ -151,7 +150,7 @@ ms.lasthandoff: 08/09/2018
     ```
 
     > [!TIP]
-    > 計算列のためにデータ エンティティの同期にエラーが発生した場合、X++ で使用する前に、Microsoft SQL Server Management Studio (SSMS) で SQL 定義を作成する方が簡単です。
+    > 計算列のためにデータ エンティティの同期にエラーが発生した場合、X++ で使用する前に、Microsoft SQL Server Management Studio (SSMS) で SQL 定義を用意することは簡単です。
 
 8. プロジェクトをリビルドします。
 9. データベースを同期させます。 この手順を忘れないでください。 **Dynamics 365 &gt; データベースの同期 &gt; 同期**に移動することによりこれを実行することができます。
@@ -233,4 +232,3 @@ ms.lasthandoff: 08/09/2018
         ttsabort;
     }
     ```
-

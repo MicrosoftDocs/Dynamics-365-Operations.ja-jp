@@ -1,13 +1,13 @@
 ---
-title: "サーバー側の開発 (ワークスペース X++ API)"
-description: "Microsoft Dynamics 365 for Finance and Operations には、豊富なオフラインおよびモバイルの相互関係と、扱いやすいデザイナー体験を可能にする携帯電話アプリのサポートが含まれています。"
+title: サーバー側の開発 (ワークスペース X++ API)
+description: Microsoft Dynamics 365 for Finance and Operations には、豊富なオフラインおよびモバイルの相互関係と、扱いやすいデザイナー体験を可能にする携帯電話アプリのサポートが含まれています。
 author: RobinARH
 manager: AnnBe
 ms.date: 11/10/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shshabazz
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: f3a1f7893aa7835c04b331045911eb3b9c47212e
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369667"
 ---
 # <a name="server-side-development-workspace-x-apis"></a>サーバー側の開発 (ワークスペース X++ API)
 
@@ -96,7 +96,7 @@ SysAppActionAttribute クラスの新しいインスタンスを作成する
 ## <a name="class-sysappactionmetadata"></a>クラス SysAppActionMetadata 
 このクラスを使用すると、AX モバイル ワーク スペースのアクション メタデータにアクセスして更新できます。
 
-### <a name="methods"></a>メソッド
+### <a name="methods"></a>方法
 
 | メソッド名 | 返品 | 説明 |
 | -- | -- | -- |
@@ -871,7 +871,7 @@ SysAppPageAttribute クラスの新しいインスタンスを作成する
 ## <a name="class-sysapppagemetadata"></a>クラス SysAppPageMetadata 
 このクラスを使用すると、AX モバイル ワークスペースのページ メタデータにアクセスして更新できます。
 
-### <a name="methods"></a>メソッド
+### <a name="methods"></a>方法
 
 | メソッド名 | 返品 | 説明 |
 | -- | -- | -- |
@@ -1284,7 +1284,7 @@ SysAppSecurityAttribute クラスの新しいインスタンスを作成しま�
 ## <a name="class-sysappworkspace"></a>クラス SysAppWorkspace 
 これは、AX モバイル ワークスペースの基本クラスです。 AX モバイル ワークスペース クラスは、このクラスから拡張する必要があります。
 
-### <a name="methods"></a>メソッド
+### <a name="methods"></a>方法
 
 | メソッド名 | 返品 | 説明 |
 | -- | -- | -- |
@@ -1434,7 +1434,7 @@ SysAppWorkspaceAttribute クラスの新しいインスタンスを作成する
 ## <a name="class-sysappworkspacemetadata"></a>クラス SysAppWorkspaceMetadata 
 このクラスを使用すると、AX モバイル ワーク スペースのアクション メタデータにアクセスして更新できます。
 
-### <a name="methods"></a>メソッド
+### <a name="methods"></a>方法
 
 | メソッド名 | 返品 | 説明 |
 | -- | -- | -- |
@@ -1719,7 +1719,7 @@ SysAppActionAttribute クラスの新しいインスタンスを作成する
 ## <a name="class-sysappactionmetadata"></a>クラス SysAppActionMetadata 
 このクラスを使用すると、AX モバイル ワーク スペースのアクション メタデータにアクセスして更新できます。
 
-### <a name="methods"></a>メソッド
+### <a name="methods"></a>方法
 
 | メソッド名 | 返品 | 説明 |
 | -- | -- | -- |
@@ -2494,7 +2494,7 @@ SysAppPageAttribute クラスの新しいインスタンスを作成する
 ## <a name="class-sysapppagemetadata"></a>クラス SysAppPageMetadata 
 このクラスを使用すると、AX モバイル ワークスペースのページ メタデータにアクセスして更新できます。
 
-### <a name="methods"></a>メソッド
+### <a name="methods"></a>方法
 
 | メソッド名 | 返品 | 説明 |
 | -- | -- | -- |
@@ -2907,7 +2907,7 @@ SysAppSecurityAttribute クラスの新しいインスタンスを作成しま�
 ## <a name="class-sysappworkspace"></a>クラス SysAppWorkspace 
 これは、AX モバイル ワークスペースの基本クラスです。 AX モバイル ワークスペース クラスは、このクラスから拡張する必要があります。
 
-### <a name="methods"></a>メソッド
+### <a name="methods"></a>方法
 
 | メソッド名 | 返品 | 説明 |
 | -- | -- | -- |
@@ -3057,7 +3057,7 @@ SysAppWorkspaceAttribute クラスの新しいインスタンスを作成する
 ## <a name="class-sysappworkspacemetadata"></a>クラス SysAppWorkspaceMetadata 
 このクラスを使用すると、AX モバイル ワーク スペースのアクション メタデータにアクセスして更新できます。
 
-### <a name="methods"></a>メソッド
+### <a name="methods"></a>方法
 
 | メソッド名 | 返品 | 説明 |
 | -- | -- | -- |
@@ -3272,4 +3272,3 @@ SysAppWorkspaceAttribute クラスの新しいインスタンスを作成する
 
 #### <a name="return-value"></a>戻り値 
 ワークスペース セキュリティ属性のワークスペース メニュー項目タイプ
-

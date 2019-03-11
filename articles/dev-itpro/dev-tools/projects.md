@@ -1,13 +1,13 @@
 ---
-title: "Visual Studio の Finance and Operations プロジェクト タイプ"
-description: "Microsoft Dynamics 365 for Finance and Operations プロジェクト タイプは、開発ツールの一部です。"
+title: Visual Studio の Finance and Operations のプロジェクト タイプ
+description: Microsoft Dynamics 365 for Finance and Operations プロジェクト タイプは開発ツールの一部です。
 author: RobinARH
 manager: AnnBe
 ms.date: 09/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 7d4a049a44374276655dce696b5bbbe2e6f9fba9
 ms.openlocfilehash: 37fce13f0383491f25df29986d1fc2df92bf546b
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/12/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369065"
 ---
-
-# <a name="finance-and-operations-project-type-in-visual-studio"></a>Visual Studio の Finance and Operations プロジェクト タイプ
+# <a name="finance-and-operations-project-type-in-visual-studio"></a>Visual Studio の Finance and Operations のプロジェクト タイプ
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Finance and Operations プロジェクト タイプは、開発ツールの一部です。 このプロジェクト タイプは、Visual Studio の他のプロジェクトに似ています。 これにより、モデルに使用する要素を整理して管理することができます。 たとえば、プロジェクトには、要素をグループ化するのを助けるフォルダーがあります。 Visual Studioソリューションは、複数のプロジェクトを含めることができます。 プロジェクトには重要な制約が 1 つあります。これは、1 つのモデルからの要素のみを含むことができます。 異なるモデルの要素を処理する必要がある場合、Visual Studio ソリューションで複数のプロジェクトを使用する必要があります。
+Microsoft Dynamics 365 for Finance and Operations プロジェクト タイプは開発ツールの一部です。 このプロジェクト タイプは、Visual Studio の他のプロジェクトに似ています。 これにより、モデルに使用する要素を整理して管理することができます。 たとえば、プロジェクトには、要素をグループ化するのを助けるフォルダーがあります。 Visual Studio ソリューションは、複数のプロジェクトを含めることができます。 プロジェクトには重要な制約が 1 つあります。これは、1 つのモデルからの要素のみを含むことができます。 異なるモデルの要素を処理する必要がある場合、Visual Studio ソリューションで複数のプロジェクトを使用する必要があります。
 
 ## <a name="create-a-new-project"></a>新しいプロジェクトの作成
 新しい空のプロジェクトを作成するには、次の手順を実行します。
@@ -135,13 +134,12 @@ Microsoft Dynamics 365 for Finance and Operations プロジェクト タイプ�
 ## <a name="import-an-axpp-file"></a>.axpp ファイルのインポート
 プロジェクト パッケージ ファイルの内容を使用するには、.axpp ファイルをインストールにインポートする必要があります。 プロジェクト パッケージ ファイルの要素は、エクスポートされたものと同じモデルにインポートされます。 インストールにそのモデルが存在しない場合は、インポート処理中に作成されます。 プロジェクト パッケージ ファイルをインポートするには、次の手順を実行します。
 
-1.  **Dynamics 365** メニューで、**プロジェクトのインポート**をクリックします。
+1.  **Dynamics 365**  メニューで、**プロジェクトのインポート**をクリックします。
 2.  **プロジェクトのインポート** ダイアログ ボックスで、インポートするプロジェクト パッケージ (.axpp) ファイルの場所を指定します。
 3.  プロジェクト パッケージ ファイルの要素により、既存の要素が上書きされる場合は、**要素の上書き**を選択します。
 4.  プロジェクトを現在の選択で開くのか、新しいソリューションで開くのか、まったく開かないのかを指定します。
 5.  **詳細**フィールドで、インポートされる要素を確認します。 インポートしない任意の要素の横にあるチェック ボックスをクリアすることができます。 [![17\_DevoToolsConcept](./media/17_devotoolsconcept.png)](./media/17_devotoolsconcept.png)
 6.  **OK** をクリックしてインポート プロセスを完了します。
-
 
 
 

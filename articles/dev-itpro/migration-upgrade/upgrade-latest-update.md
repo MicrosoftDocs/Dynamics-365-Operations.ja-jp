@@ -1,13 +1,13 @@
 ---
-title: "最新の Finance and Operations 更新プログラムへの移行の処理"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations を最新の更新バージョンに移行するプロセスについて説明します。"
+title: 最新の Finance and Operations 更新プログラムへの移行の処理
+description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations の最新の更新バージョンに移行するプロセスについて説明します。
 author: laneswenka
 manager: AnnBe
 ms.date: 12/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: margoc
 ms.search.scope: Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: tabell
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
+ms.openlocfilehash: 697b91712158bc9acf8014de30fa654f1831ceab
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 0cdf6e0a15bb61f4529de19a76ea2a31e8a945f8
-ms.openlocfilehash: 9ae451d3897b360659ff78f3b7e5eb1b63312ad1
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/28/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368990"
 ---
-
 # <a name="process-for-moving-to-the-latest-update-of-finance-and-operations"></a>最新の Finance and Operations 更新プログラムへの移行の処理
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Finance and Operations を最新リリースに更新またはアップグレードするプロセスについて説明します。 プロセス全体とサポートされるシナリオを説明しますが、プロセスの各ステップに関する詳細な指示は提示しません。
+このトピックでは、Microsoft Dynamics 365 for Finance and Operations の最新のリリースに更新またはアップグレードするプロセスについて説明します。 プロセス全体とサポートされるシナリオを説明しますが、プロセスの各ステップに関する詳細な指示は提示しません。
 
 Finance and Operations の各リリースの内容については、[新機能と変更点](../../fin-and-ops/get-started/whats-new-changed.md)を参照してください。
 
@@ -65,9 +64,9 @@ Finance and Operations の各リリースの内容については、[新機能�
 
 アプリケーションの更新が不要な場合は、このシナリオを使用してプラットフォームの最新リリースに更新します。 プラットフォーム更新プログラムは常に累積的です。 プラットフォームの更新の例を次に示します。
 
-- Microsoft Dynamics AX プラットフォーム更新プログラム 2 (2016 年 8 月)
-- Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition プラットフォーム更新プログラム 9 (2017 年 7 月)
-- Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition プラットフォーム更新プログラム 11 (2017 年 10 月)
+- Microsoft Dynamics AX およびプラットフォーム更新プログラム 2 (2016 年 8 月)
+- Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition およびプラットフォーム更新プログラム 9 (2017 年 7 月)
+- Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition およびプラットフォーム更新プログラム 11 (2017 年 10 月)
 
 > [!IMPORTANT]
 > Microsoft Dynamics AX プラットフォーム更新プログラム 1 (2016 年 5 月) およびプラットフォーム更新プログラム 2 では、プラットフォーム レベル X++ コードのオーバーレイが可能でした。 以降のプラットフォーム更新プログラムでは、プラットフォーム レベルの X++ コードのオーバーレイがロックされます。 プラットフォーム更新プログラム 1 またはプラットフォーム更新プログラム 2 をアップグレードする場合、開発者は、アップグレード可能になる前に拡張機能としてオーバーレイをリファクターする必要があります。 Microsoft Dynamics 365 for Operations およびプラットフォーム更新プログラム 3 (2016 年 11 月) またはそれ以降のバージョンをそれ以降のプラットフォーム更新プログラムにアップグレードする場合、X++ コードをリファクターする必要はありません。
@@ -118,7 +117,7 @@ Finance and Operations の各リリースの内容については、[新機能�
 
 3. コードの移行手順に従います。
 
-    1. 開発 VM を Microsoft Azure DevOps に接続し、アップグレードされたコードを含む Azure DevOps ブランチにローカル メタデータ フォルダをマップします。
+    1. 開発 VM を Microsoft Azure DevOps に接続し、アップグレードされたコードを含む Azure DevOps ブランチにローカル メタデータ フォルダーをマップします。
     2. 同期して、競合を解決し、ビルドしてテストします。
     3. アップグレード後のコードを含む Azure DevOps ブランチを、主要な開発の分岐とマージします。 詳細については、[フォルダーおよびファイルをマージする](https://www.visualstudio.com/docs/tfvc/merge-folders-files) を参照してください。
     4. ビルドしテストします。
@@ -144,7 +143,7 @@ Finance and Operations の各リリースの内容については、[新機能�
 
 データ アップグレード プロセスを外部データベースのコピーで実行します。 環境が既に実稼働状態にある場合、ソース データベースは実稼働データベースのコピーです。 それ以外の場合、ソース データベースは最新のデータベースです。 アップグレード対象のリリースを実行している開発環境でこのプロセスを実行します。 このステップは、開発者によって行われる検証プロセスです。 これにより、開発者はこの環境でカスタマイズの特定のセットを使用することで、データのアップグレードを正常に完了できることの確認に役立ちます。
 
-実稼働のデータベースのコピーを作成するには、[[Microsoft Dynamics 365 for Finance and Operations データベースを Azure SQL データベースから SQL Server 環境にコピーする](../database/copy-database-from-azure-sql-to-sql-server.md)] の手順に従います。
+実稼働のデータベースのコピーを作成するには、[Microsoft Dynamics 365 for Finance and Operations データベースを Azure SQL データベースから SQL Server 環境にコピーする](../database/copy-database-from-azure-sql-to-sql-server.md) の手順に従います。
 
 データのアップグレード プロセスを実行するには、[[開発環境またはデモ環境のデータ アップグレード プロセス](upgrade-data-to-latest-update.md)] の手順に従います。
 
@@ -184,7 +183,7 @@ Finance and Operations の各リリースの内容については、[新機能�
 この間、元のサンドボックスは変更されず、この段階ではダウンタイムによる影響はありません。 
 
 > [!IMPORTANT]
-> 展開の失敗を示すエラーが発生した場合、Microsoft Dynamics サービス エンジニアリング (DSE) チームに通知が送信され、お客様の代わりに問題を事前に解決します。 この問題は、Azure に、お客様の地域で使用できる必要なリソースがない場合に発生する可能性があります。 Microsoft DSE は、より多くのリソースを割り当てるために Azure エンジニアと連携します。 ステージング展開が正常に完了したら、電子メールが送信されます。 
+> 配置の失敗を示すエラーが発生した場合、Microsoft Dynamics サービス エンジニアリング (DSE) チームに通知が送信され、お客様の代わりに問題を事前に解決します。 この問題は、Azure に、お客様の地域で使用できる必要なリソースがない場合に発生する可能性があります。 Microsoft DSE は、より多くのリソースを割り当てるために Azure エンジニアと連携します。 ステージング展開が正常に完了したら、電子メールが送信されます。 
 
 #### <a name="package-application"></a>パッケージ アプリケーション
 
@@ -268,7 +267,7 @@ Finance and Operations の各リリースの内容については、[新機能�
 
 **アプリケーション構成の同期に失敗しました。最初に TTSBEGIN を呼び出さずに TTSCOMMIT の呼び出してください。**
 
-この TTSCOMMIT エラーは断続的であり、データ アップグレード パッケージの **再開** ボタンを使用して解決できます。 **再開** を選択すると、この段階でプロセスが再開されます。 Microsoft では、この問題を確実に再現しようとしており、今後修正プログラムを作成する予定です。
+この TTSCOMMIT エラーは断続的であり、データ アップグレード パッケージの **再開** ボタンを使用して解決できます。 **再開** を選択すると、この段階でプロセスが再開されます。 (これは、プラットフォーム更新プログラム 21 で修正されます)。
 
 **アップグレードはコミットされますが、環境は " アップグレードのクリーンアップの進行中" 状態のままです。**
 
@@ -277,4 +276,3 @@ Finance and Operations の各リリースの内容については、[新機能�
 ## <a name="scenario-4-upgrade-to-the-most-current-platform-only"></a>シナリオ 4: 最新のプラットフォームのみにアップグレードする
 
 アプリケーション オブジェクト ツリー (AOT) モデル (Application Platform、Application Foundation、および Directory および Test Essentials) のカスタマイズが含まれていない環境を実行している場合は、新しい環境にアップグレードせずに、プラットフォームのインプレース更新を実行できます。 このプロセスの詳細については、[Finance and Operations を最新のプラットフォーム更新プログラムにアップグレード](upgrade-latest-platform-update.md) を参照してください。 ユーザーのプラットフォームのみをアップグレードする場合は、コードのアップグレード (このトピックではシナリオ 2)、またはデータ アップグレード スクリプトの実行は必要ありません。
-

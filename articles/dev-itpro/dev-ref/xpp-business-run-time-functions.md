@@ -1,13 +1,13 @@
 ---
-title: "X++ ビジネス ランタイム関数"
-description: "このトピックでは、ビジネス ランタイム関数について説明します。"
+title: X++ ビジネス ランタイム関数
+description: このトピックでは、ビジネス ランタイム関数について説明します。
 author: RobinARH
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 2bc531f565f326814b467e48ee8761f6825efbde
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369928"
 ---
-
 # <a name="x-business-runtime-functions"></a>X++ ビジネス ランタイム関数
 
 [!include [banner](../includes/banner.md)]
@@ -533,7 +532,6 @@ If (期間 n の簿価額) – ((期間 n の簿価額) × 2 ÷ ライフ) &lt; 
         print term(100,0.14,3000);  //returns the value '12.58'.
         pause;
     }
-
 
 
 

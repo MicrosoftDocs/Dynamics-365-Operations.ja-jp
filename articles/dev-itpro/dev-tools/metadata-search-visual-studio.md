@@ -1,13 +1,13 @@
 ---
-title: "Visual Studio でのメタデータの検索"
-description: "この記事では、メタデータ検索を使用して、任意のパターンやコンテンツのコードとメタデータを検索する方法について説明します。"
+title: Visual Studio でのメタデータの検索
+description: この記事では、メタデータ検索を使用して、任意のパターンやコンテンツのコードとメタデータを検索する方法について説明します。
 author: RobinARH
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 05e4f558cb72c3fca162ce0c0a6325e5905a3cc5
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 4b7a966e795d29342880fa98e1a75ead5b4a82cc
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368338"
 ---
-
 # <a name="metadata-search-in-visual-studio"></a>Visual Studio でのメタデータの検索
 
 [!include [banner](../includes/banner.md)]
@@ -43,7 +42,7 @@ ms.lasthandoff: 04/20/2018
 [![AddNewProject\_MetaSearch](./media/addnewproject_metasearch.png)](./media/addnewproject_metasearch.png)
 
 ## <a name="navigate-to-window"></a>ウィンドウへの移動
-**移動先** ウィンドウは、**Ctrl + ','** (コンマ区切り記号) ショートカット キーを使用して呼び出されます。 **Ctrl+","** キーを押すと、Visual Studio の主要なドキュメント ウィンドウの右上隅にクエリ エントリ ボックスが表示されます。 また、Visual Studio の **編集** メニューから **移動先** ウィンドウにアクセスすることができます。 クエリを検索し、入力時に結果が表示されることを確認します。 検索が完了したら、進行状況インジケーターが停止します。 結果とやりとりを開始するために、検索の完了を待機する必要はありません。 
+**移動先** ウィンドウは、**Ctrl + ','** (コンマ区切り記号) ショートカット キーを使用して呼び出されます。 **Ctrl+‘,’** キーを押すと、Visual Studio の主要なドキュメント ウィンドウの右上隅にクエリ エントリ ボックスが表示されます。 また、Visual Studio の **編集** メニューから **移動先** ウィンドウにアクセスすることができます。 クエリを検索し、入力時に結果が表示されることを確認します。 検索が完了したら、進行状況インジケーターが停止します。 結果とやりとりを開始するために、検索の完了を待機する必要はありません。 
 
 [![TypeForm\_MetaSearch](./media/typeform_metasearch.png)](./media/typeform_metasearch.png)
 
@@ -95,5 +94,4 @@ ms.lasthandoff: 04/20/2018
 |                               code:"insert" type:table,form                               |                             「挿入」を含むフォームまたはテーブルのいずれかのソース コード内で、すべての場所を検索します。                             |
 |                          code:"public display" type:form,method                           |                                        「公開表示」のコードを含む、すべてのフォーム メソッドを検索します。                                        |
 |                           type:formbuttoncontrol property:text=                           |                               <strong>空</strong>テキスト プロパティを持つ、すべてのフォームのボタン コントロールを検索します。                               |
-
 

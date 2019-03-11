@@ -1,30 +1,29 @@
 ---
-title: "オンプレミス環境の設定と配置ホーム ページ"
-description: "このトピックでは、オンプレミス環境の計画、設定、および展開方法に関するトピックへのリンクを提供します。"
+title: オンプレミス環境の設定と配置ホーム ページ
+description: このトピックでは、オンプレミス環境の計画、設定、および展開方法に関するトピックへのリンクを提供します。
 author: sarvanisathish
 manager: AnnBe
 ms.date: 11/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 8
-ms.translationtype: HT
-ms.sourcegitcommit: 003b7eac16c1be50bc982da0672df42a87a69722
 ms.openlocfilehash: 564993425826e4e57a3e5fd01a2e49f788e214d1
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/05/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368490"
 ---
-
 # <a name="set-up-and-deploy-on-premises-environments-home-page"></a>オンプレミス環境の設定と配置ホーム ページ
 
 [!include [banner](../includes/banner.md)]
@@ -39,4 +38,3 @@ ms.lasthandoff: 11/05/2018
 > [!NOTE]
 > [ローカル ビジネス データ Yammer グループ](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=13595809&view=all)が利用可能になりました。 オンプレミス展開に関する質問またはフィードバックをそこに投稿することができます。
 > 以下のコンテンツに関する質問またはフィードバックがある場合は、このページの下部にある**コメント** セクションに転記します。
-

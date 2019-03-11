@@ -1,13 +1,13 @@
 ---
-title: "分析コード エントリ コントロールの取得"
-description: "分析コード エントリ コントロールおよび関連するコントローラー クラスについて説明します。"
+title: 分析コード エントリ コントロールの取得
+description: 分析コード エントリ コントロールおよび関連するコントローラー クラスについて説明します。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: ghenriks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
 ms.openlocfilehash: 37c412a65a774b239cc23f91f3516712ddaa1b50
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369545"
 ---
-
 # <a name="uptake-of-dimension-entry-controls"></a>分析コード エントリ コントロールの取得
 
 [!include [banner](../includes/banner.md)]
@@ -38,8 +37,8 @@ ms.lasthandoff: 08/09/2018
 
 -   アップグレード スクリプトは、constructInGroupWithValues() メソッドおよび constructInTabWithValues() メソッドを使用して作成された分析コード エントリ コントロールのみを処理します。 他のコントロールは、手動でアップグレードする必要があります。
 -   アップグレード スクリプトは、ヘルパー メソッドのパラメーターとして送信された分析コード エントリ コントロールを処理しません。 このコードは、手動でアップグレードする必要があります。
--   Dynamics AX 2012 では、既定の分析コードのコントロールのコンテナーは、‘必要なアクセス許可’ = 手動に設定することでセキュリティ保護可能なコントロールとして定義できました。 コントロールへのアクセスは、セキュリティ モデルで付与されているため、アクセスを正しく表示および管理することができました。 既定の分析コードのコントロールは、デザイン時のエクスペリエンスになりました。 したがって、フォームでは、コントロールのコンテナーを保護可能なコントロールとして定義する必要がなくなりました。 ほとんどの場合、手動の設定を削除するためにメタデータを制御するフォームを更新して、セキュリティ モデルのコントロールへの参照を削除する必要があります。 Dimension Entry コントロールに対して細かいセキュリティ制御を維持するために使用される場合、この設定は [手動] のままにすることができます。
--   Dynamics AX 2012 では、parmAttributeSetDataSource および parmAttributeValueSetDataSource がデータ ソースと既定の分析コードのコントロールに関連付けられたデータ ソースのフィールドを設定するために使用されていました。  これらは通常、DimensionDefaultingController インスタンスを作成した直後にフォームの init メソッドで設定されていました。  すべての呼び出し parmAttributeSetDataSource および parmAttributeValueSetDataSource はアップグレード後に削除されます。  これらの呼び出しの値を使用して、アップグレードされたコントロールのメタデータを設定します。  アップグレード後、これらの呼び出しをすべて削除した後、フォームが正常に機能していることを確認するために、フォームをチェックする必要があります。
+-   Dynamics AX 2012 では、既定の分析コード コントロールのコンテナーは、「必要なアクセス許可」 = 手動に設定することでセキュリティ保護可能なコントロールとして定義できました。 コントロールへのアクセスは、セキュリティ モデルで付与されているため、アクセスを正しく表示および管理することができました。 既定の分析コードのコントロールは、デザイン時のエクスペリエンスになりました。 したがって、フォームでは、コントロールのコンテナーを保護可能なコントロールとして定義する必要がなくなりました。 ほとんどの場合、手動の設定を削除するためにメタデータを制御するフォームを更新して、セキュリティ モデルのコントロールへの参照を削除する必要があります。 Dimension Entry コントロールに対して細かいセキュリティ制御を維持するために使用される場合、この設定は [手動] のままにすることができます。
+-   Dynamics AX 2012 では、parmAttributeSetDataSource および parmAttributeValueSetDataSource がデータ ソースと既定の分析コード コントロールに関連付けられたデータ ソースのフィールドを設定するために使用されていました。  これらは通常、DimensionDefaultingController インスタンスを作成した直後にフォームの init メソッドで設定されていました。  すべての呼び出し parmAttributeSetDataSource および parmAttributeValueSetDataSource はアップグレード後に削除されます。  これらの呼び出しの値を使用して、アップグレードされたコントロールのメタデータを設定します。  アップグレード後、これらの呼び出しをすべて削除した後、フォームが正常に機能していることを確認するために、フォームをチェックする必要があります。
 -   ディメンション入力コントロールはフォーム デザインでモデル化されるようになりました。 分析コードの入力管理を検索するには、デザイン要素を展開するか、フォーム デザインで "DimensionEntry" を検索します。 デザイン時に新しいコントロールがどのようなものかを次に示します。
 
 [![1](./media/1.png)](./media/1.png)
@@ -284,6 +283,5 @@ parmDimensionEntryControlHeader(
 [分析コード エントリ コントロールのチュートリアル](dimension-entry-control-migration.md)
 
 [分析コード エントリ コントロール ダイアログのサポート](dimension-entry-control-dialog-support.md)
-
 
 

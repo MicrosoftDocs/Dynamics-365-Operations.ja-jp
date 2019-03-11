@@ -1,13 +1,13 @@
 ---
-title: "Dynamics Service Engineering チームへのサービス要求の送信"
-description: "このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用して、Dynamics サービス エンジニアリング チームにサービス要求を直接送信する方法について説明します。"
+title: Dynamics Service Engineering チームへのサービス要求の送信
+description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用して、Dynamics サービス エンジニアリング チームにサービス要求を直接送信する方法について説明します。
 author: manalidongre
 manager: AnnBe
 ms.date: 12/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: IT Pro
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.translationtype: HT
-ms.sourcegitcommit: 0cdf6e0a15bb61f4529de19a76ea2a31e8a945f8
 ms.openlocfilehash: 0861773c6b2af8be508cfdf90209f4ed228f42d2
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/28/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369742"
 ---
-
 # <a name="submit-service-requests-to-the-dynamics-service-engineering-team"></a>Dynamics Service Engineering チームへのサービス要求の送信
 
 [!include [banner](../includes/banner.md)]
@@ -97,7 +96,7 @@ Microsoft は、受信したすべてのサービス要求を頻繁に確認し�
 
       - 実稼動環境でのメンテナンス モードをオンにします。 詳細については、[メンテナンス モード](../sysadmin/maintenance-mode.md) を参照してください。
       - 実稼動環境で明示的なインターネット プロトコル (IP) ホワイト リスト ルールを定義します。
-      - "Power BI Embedded が有効になっていません" メッセージを受け取った場合に、サンドボックス環境、標準受け入れテスト環境、または実稼働環境で Microsoft Power BI Embedded をアクティブ化することを要求します。 システム管理者に問い合わせてください。
+      - "Power BI が有効になっていません" メッセージを受け取った場合に、サンドボックス環境、標準受け入れテスト環境、または実稼働環境で Microsoft Power BI Embedded をアクティブ化することを要求します。 システム管理者に問い合わせてください。
 
 
 ### <a name="commonly-denied-service-requests"></a>一般的に拒否されるサービス要求
@@ -107,7 +106,7 @@ Microsoft は、受信したすべてのサービス要求を頻繁に確認し�
 - 次のいずれかのアクションに対して **その他の要求** タイプの要求を送信しましたが、代わりにサポート チケットを送信する必要がありました。
 
     - 稼働開始後、または実稼働環境を要求したあと、新しいサブスクリプション見積を有効にする必要があります。
-    - Microsoft Dynamics 365 for Finance and Operations 財務諸表リリース 7.2.6.0 よりも以前のリリースの財務諸表データ マートをリセットする必要があります。
+    - Microsoft Dynamics 365 for Finance and Operations 財務諸表のリリース 7.2.6.0 よりも以前のリリースの財務諸表データ マートをリセットする必要があります。
     - go-live 後に、本番データベースを復元する必要があります。
     - DSE チームがアプリケーションのアップグレードを実行した後に、問題が発生しました。
 
@@ -125,7 +124,6 @@ Microsoft は、受信したすべてのサービス要求を頻繁に確認し�
 | サンドボックス環境から実稼働環境          | 第 2 層以上のサンドボックスから実稼働環境 | サンドボックス環境から実稼働環境 | 5 時間 | 4 時間 |
 | 外                          | 生産 | データベース ポイントインタイム復元 | 5 時間 | 2 時間 |
 |                                | 生産 | メンテナンス モード | 5 時間 | 顧客はサービス要求においていつ環境のメンテナンス モードを再度終了する必要があるかを示しているため、適用不可 |
-|                                | 実稼働 | IP ホワイトリスト ルール | 5 時間 | 2 時間 |
-|                                | 実稼働 | Power BI Embedded | 5 時間 | 2 時間 |
-
+|                                | 生産 | IP ホワイトリスト ルール | 5 時間 | 2 時間 |
+|                                | 生産 | Power BI Embedded | 5 時間 | 2 時間 |
 

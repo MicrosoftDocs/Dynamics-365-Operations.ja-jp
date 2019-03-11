@@ -1,13 +1,13 @@
 ---
-title: "Finance and Operations 実装プロジェクトの配送準備"
-description: "このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用して Finance and Operations のプロジェクト用に Microsoft Dynamics 365 を構成する方法について説明します。"
+title: Finance and Operations 実装プロジェクトの配送準備
+description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用して Microsoft Dynamics 365 for Finance and Operations プロジェクトをオンボードする方法を説明します。
 author: ClaudiaBetz-Haubold
 manager: AnnBe
 ms.date: 02/09/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: IT Pro
 ms.reviewer: margoc
 ms.search.scope: Operations
@@ -15,19 +15,18 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: c124599b72cde7451c04f23632515e6e7da4abae
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
-ms.openlocfilehash: 0c6c84ec183263d41d965407317a1e964f7b677e
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/17/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368363"
 ---
-
 # <a name="onboard-a-finance-and-operations-implementation-project"></a>Finance and Operations 実装プロジェクトの配送準備
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用して Finance and Operations のプロジェクト用に Microsoft Dynamics 365 を構成する方法について説明します。
+このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用して Microsoft Dynamics 365 for Finance and Operations プロジェクトをオンボードする方法を説明します。
 
 ## <a name="lcs-implementation-project-workspace"></a>LCS 実装プロジェクト ワークスペース
 
@@ -70,4 +69,3 @@ LCS プロジェクト内のマイルストーンの日付を最新の状態に�
 マイルストーンの日付は、LCS 実装方法に格納されます。 詳細については、「顧客向け LCS」トピックの [方法](../../dev-itpro/lifecycle-services/lcs-works-lcs.md#methodologies) セクションを参照してください。
 
 オンボーディング呼び出しはオプションのサービスです。 Finance and Operations の実装を理解しているパートナーは、FastTrack チームのサポートがなくても顧客と共にタスクを処理できます。 そのような場合、プロジェクト ユーザーおよびマイルストーン日付を最新にしておくことが特に重要です。
-

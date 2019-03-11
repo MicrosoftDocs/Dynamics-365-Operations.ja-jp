@@ -1,30 +1,29 @@
 ---
-title: "エンティティ格納を Data Lake として使用可能にする"
-description: "このトピックでは、エンティティ格納を Microsoft Azure Data Lake として使用可能にする方法について説明します。"
+title: エンティティ格納を Data Lake として使用可能にする
+description: このトピックでは、エンティティ格納を Microsoft Azure Data Lake として使用可能にする方法について説明します。
 author: MilindaV2
 manager: AnnBe
 ms.date: 12/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Operations
 ms.custom: 96283
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2018-12-03
 ms.dyn365.ops.version: Platform Update 23
+ms.openlocfilehash: 5bbb4da199391f148f8f6b363f98af43bf6178dc
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ddfb1897a7a8500cbd522313861adaf52cf92947
-ms.openlocfilehash: 100dc66142475074c5ac0266eae3cd43f009f701
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/27/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369133"
 ---
-
 # <a name="make-entity-store-available-as-a-data-lake"></a>エンティティ格納を Data Lake として使用可能にする
 
 [!include [banner](../includes/banner.md)]
@@ -41,7 +40,7 @@ ms.lasthandoff: 12/27/2018
 > - **PowerBI.comを 使用して分析ワークスペースを拡張:** 将来のプラットフォーム更新で使用可能
 
 ## <a name="automated-entity-store-refresh"></a>自動化エンティティ格納更新
-
+Date Lake 統合を有効にする前に、自動のエンティティ店舗更新を有効にする必要があります。 
 1. **システム管理** \> **セットアップ** \> **エンティティ格納** に移動します。
 
     **エンティティ店舗** ページで、メッセージに、**自動エンティティ格納更新** オプションに切り替えることができることが示されます。 このオプションは、システムによって管理されます。 管理者は、エンティティ格納更新をスケジュール設定または監視する必要はありません。
@@ -66,6 +65,10 @@ ms.lasthandoff: 12/27/2018
 
 加えて、**更新** ボタンを選択することにより、管理者が必要に応じて集計の測定を更新できます。 追加のオプションは、将来のプラットフォーム更新プログラムで追加されます。 これらのオプションには、リアルタイム更新のオプションが含められます。
 
+> [!IMPORTANT]
+> 自動化更新を有効にすると、システムは集計測定の更新を無効にすることがあります。 集計測定に戻って、適切な更新間隔がシステムに適用されていることを検証する必要があります。
+>
+
 ## <a name="entity-store-data-in-azure-data-lake-full-push"></a>Azure Data Lake 内のエンティティ格納データ (フル プッシュ)
 
 > [!IMPORTANT]
@@ -75,10 +78,10 @@ ms.lasthandoff: 12/27/2018
 
 開始する前に、Azure ポータルでこれらのタスクを実行する必要があります。
 
-1. **ストレージ アカウントを作成する。** Microsoft Dynamics 365 for Finance and Operations 環境がプロビジョニングされているのと同じデータ センターでストレージ アカウントをプロビジョニングします。 その後で指定する必要があるため、ストレージ アカウントの接続文字列をメモします。
+1. **ストレージ アカウントを作成する。** Microsoft Dynamics 365 for Finance and Operations 環境が準備されているのと同じデータ センター内のストレージ アカウントの準備。 その後で指定する必要があるため、ストレージ アカウントの接続文字列をメモします。
 2. **Key Vault およびシークレットを作成する。** 独自のサブスクリプションで Azure Key Vault をプロビジョニングします。 作成した Key Vault エントリのドメイン ネーム システム (DNS) 名が必要になります。 さらに、Key Vault にシークレットを追加します。 値として、前のタスクで書き留めた接続文字列を指定します。 その後で指定する必要があるため、シークレットの名前をメモします。
 3. **アプリを登録する。** Azure Active Directory (Azure AD) アプリケーションを作成し、Key Vault にアプリケーション プログラミング インターフェイス (API) アクセスを付与します。 後でを入力する必要があるため、アプリケーション IDとそのアプリケーション キー (シークレット) をメモします。
-4. **サービス プリンシパルを Key Vault に追加する。** Key Vault で、**アクセス ポリシー** オプションを使用して、Azure AD アプリケーションに **取得** および **リスト** アクセス許可を付与します。 この方法で、アプリケーションは、Key Vault 内のシークレットにアクセスできます。
+4. **サービス プリンシパルを Key Vault に追加する。** Key Vault で、**アクセス ポリシー** オプションを使用して、Azure AD アプリケーションに**取得**および**リスト**アクセス許可を付与します。 この方法で、アプリケーションは、Key Vault 内のシークレットにアクセスできます。
 
 次のセクションでは、それぞれのタスクについて詳細に説明します。
 
@@ -87,7 +90,7 @@ ms.lasthandoff: 12/27/2018
 1. Azure ポータルで、新しいストレージ アカウントを作成します。
 2. **ストレージ アカウントを作成** ダイアログ ボックスで、次のパラメーター フィールドの値を指定します。
 
-    - **場所:** Finance and Operations 環境があるデータ センターを選択します。 選択したデータ センターが異なる Azure リージョンにある場合、追加のデータ移動コストが発生します。 Microsoft Power BI やデータ ウェアハウスが別のリージョンにある場合、リージョン間で記憶域を移動するためにレプリケーションを使用することができます。
+    - **場所:** Finance and Operations 環境があるデータ センターを選択します。 選択したデータ センターが異なる Azure リージョンにある場合、追加のデータ移動コストが発生します。 Microsoft Power BI やデータ ウェアハウスが別の地域にある場合、地域間でストレージを移動するためにレプリケーションを使用することができます。
     - **パフォーマンス:** **標準**を選択することをお勧めします。
     - **アカウントの種類:** **StorageV2** を選択する必要があります。
 
@@ -115,7 +118,7 @@ ms.lasthandoff: 12/27/2018
 
 ### <a name="register-the-app"></a>アプリを登録する
 
-1. Azure ポータルで、**Azure Active Directory** を選択し、**アプリケーション登録** を選択します。
+1. Azure ポータルで、**Azure Active Directory** を選択し、**アプリケーション登録**を選択します。
 2. **新しいアプリケーションの登録** を選択し、以下の情報を入力します。
 
     - **名前:** アプリの名前を入力します。
@@ -149,8 +152,8 @@ ms.lasthandoff: 12/27/2018
 1. **システム管理** \> **設定** \> **システム パラメーター** の順に移動します。
 2. **データ接続** タブで、このトピックの前の部分でメモした次の情報を入力します。
 
-    - **アプリケーション ID** 前に登録した Azure AD アプリケーションのアプリケーション ID を入力します。
-    - **アプリケーション シークレット:** Azure AD アプリケーションのアプリケーション キー (シークレット) を入力します。
+    - **アプリケーション ID:** 前に登録した Azure AD アプリケーションのアプリケーション ID を入力します。
+    - **アプリケーション シークレット:** Azure AD アプリケーションのアプリケーション キー (秘密) を入力します。
     - **DNS 名:** Key Vault の DNS 名を入力します。
     - **シークレット名:** 接続文字列情報と共に Key Vault に追加したシークレットの名前を入力します。
 
@@ -162,4 +165,3 @@ ms.lasthandoff: 12/27/2018
 エンティティ格納データが、リレーショナル エンティティ格納データベースではなく、指定したストレージ場所に入力されるようになりました。
 
 集計の測定と、エンティティ格納 UI で選択した更新オプションが、Data Lake にコピーされたデータに適用されるようになりました。
-

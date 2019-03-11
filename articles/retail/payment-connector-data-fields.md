@@ -1,13 +1,13 @@
 ---
-title: "Dynamics 365 支払データの使用"
-description: "このトピックでは、Microsoft Dynamics 365 の支払コネクタによって管理されているデータの概要を示します。"
+title: Dynamics 365 支払データの使用
+description: このトピックでは、Microsoft Dynamics 365 の支払コネクタによって管理されているデータの概要を示します。
 author: rubendel
 manager: AnnBe
 ms.date: 12/03/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: IT Pro
 ms.reviewer: josaw
 ms.search.scope: Operations, Retail
@@ -18,21 +18,20 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2018-11-06
 ms.dyn365.ops.version: AX 8.1.2
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 62f620ee665ad152f861d03a0ebaf989e6e2c9be
-ms.contentlocale: ja-jp
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369436"
 ---
-
 # <a name="dynamics-365-payment-data-use"></a>Dynamics 365 支払データの使用
 
 このトピックでは、Microsoft Dynamics 365 の支払コネクタによって管理されているデータの概要を示します。
 
 ## <a name="key-terms"></a>重要な用語
 
-| 期間 | 説明 |
+| 相談 | 説明 |
 |---|---|
 | カードあり | *カードあり* という語は、販売時点管理 (POS) レジスターにおいてなど、物理的なカードが存在するトランザクションを処理するために支払コネクタを使用することを指します。 |
 | カードなし | *カードなし* という語は、コール センターや E コマースにおいてなど、物理的なカードが存在しないトランザクションを処理するために支払コネクタを使用することを指します。 |
@@ -333,4 +332,3 @@ ms.lasthandoff: 01/04/2019
 ## <a name="related-topics"></a>関連トピック
 
 - **[支払端末のエンド ツー エンド支払統合の作成](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/end-to-end-payment-extension)** – このトピックでは、カスタム支払コネクタを作成する方法について説明します。
-

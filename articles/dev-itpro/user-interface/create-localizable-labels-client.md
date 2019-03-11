@@ -1,13 +1,13 @@
 ---
-title: "ローカライズ可能なラベルの作成"
-description: "この記事では、クライアント コンポーネントと HTML/JavaScript コントロールのローカライズ可能なラベルを作成する方法について説明します。"
+title: ローカライズ可能なラベルの作成
+description: この記事では、クライアント コンポーネントと HTML/JavaScript コントロールのローカライズ可能なラベルを作成する方法について説明します。
 author: RobinARH
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: shshabazz
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 4bcd9580d5417780c409ef29d0214f8df9575764
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 0c86aa814d73294b703e943ab6e8bd999c517da8
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369123"
 ---
-
 # <a name="create-localizable-labels"></a>ローカライズ可能なラベルの作成
 
 [!include [banner](../includes/banner.md)]
@@ -96,10 +95,9 @@ HTML または JavaScript の変数を介してラベル ID を渡すことも�
 
 ブラウザーにファイルが見つからない場合は、ラベルの名前を誤って入力した、またはラベルを正しく展開しなかった可能性があります。 Web フォルダー/リソース/ラベルのラベルに物理的な .js ファイルはありません。 .js ファイルは、ラベル リソース コントローラーによって動的に生成されます。
 
-### <a name="microsoft-visual-studio-form-previewer"></a>Microsoft Visual Studio フォーム プレビューアー
+### <a name="microsoft-visual-studio-form-previewer"></a>Microsoft Visual Studioフォーム プレビューアー
 
 フォーム プレビューアーは、ラベル リソース コントローラー経由でラベルを読み込むようには現在設定されていません。 フォーム プレビューアーは、コード ビハインド (/Resources/Scripts にあります) の .js ファイルに直接定義されているラベルのみを読み込みます。 フォーム プレビューアを更新して、ラベル リソース コントローラから .js ファイルをロードできるようになるまでは、コントロールのコード ビハインドの .js ファイルにもラベルを定義するようにしてください。 これらのラベルへの依存関係は、将来の更新で削除されます。
-
 
 
 

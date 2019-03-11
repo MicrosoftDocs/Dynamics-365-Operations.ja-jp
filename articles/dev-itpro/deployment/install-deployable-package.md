@@ -1,13 +1,13 @@
 ---
-title: "コマンド ラインからの配置可能パッケージのインストール"
-description: "このトピックでは、開発環境またはビルド環境で作成されたバイナリ更新プログラムまたはアプリケーション (AOT) の展開可能パッケージのいずれかをコマンドラインを使用して適用する手順について説明します。"
+title: コマンド ラインからの配置可能パッケージのインストール
+description: このトピックでは、開発環境またはビルド環境で作成されたバイナリ更新プログラムまたはアプリケーション (AOT) の展開可能パッケージのいずれかをコマンドラインを使用して適用する手順について説明します。
 author: manalidongre
 manager: AnnBe
 ms.date: 10/30/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 773db05f4b98d30396f420525170d16cf90080aa
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369327"
 ---
-
 # <a name="install-deployable-packages-from-the-command-line"></a>コマンド ラインからの配置可能パッケージのインストール
 
 [!include [banner](../includes/banner.md)]
@@ -32,7 +31,7 @@ ms.lasthandoff: 08/09/2018
 このトピックでは、開発環境またはビルド環境で作成されたバイナリ更新プログラムまたはアプリケーション (AOT) の展開可能パッケージのいずれかをコマンドラインを使用して適用する手順について説明します。
 
 > [!IMPORTANT]
-> ほとんどのタイプの環境については、配置可能パッケージを Microsoft Dynamics Lifecycle Services (LCS) から直接環境に適用できます。 詳細については、[システムで配置可能パッケージの適用](apply-deployable-package-system.md) を参照してください。 したがって、このトピックは主に、LCS による更新の適用をサポートしていない環境タイプに適用されます。 例としては、Microsoft Azure のローカル開発環境 (ダウンロード可能な仮想ハード ディスク [VHD])、マルチボックス開発/テスト環境 (LCS パートナーおよび試用プロジェクト) およびビルド環境があります。 ただし、LCS ではなくコマンド ラインを使用して展開可能パッケージをインストールする場合は、いつでもこのトピックを使用することができます。
+> ほとんどのタイプの環境については、配置可能パッケージを Microsoft Dynamics  Lifecycle Services (LCS) から直接環境に適用できます。 詳細については、[システムで配置可能パッケージの適用](apply-deployable-package-system.md) を参照してください。 したがって、このトピックは主に、LCS による更新の適用をサポートしていない環境タイプに適用されます。 例としては、Microsoft Azure のローカル開発環境 (ダウンロード可能な仮想ハード ディスク [VHD])、マルチボックス開発/テスト環境 (LCS パートナーおよび試用プロジェクト) およびビルド環境があります。 ただし、LCS ではなくコマンド ラインを使用して展開可能パッケージをインストールする場合は、いつでもこのトピックを使用することができます。
 
 ## <a name="key-concepts"></a>重要な概念
 - **配置可能パッケージ** - 配置可能パッケージとは、任意の環境に適用できる配置の単位です。 Application Object Server (AOS)、更新されたアプリケーション パッケージ、または新しいアプリケーション パッケージのランタイム コンポーネントに対するバイナリの修正プログラムで構成できます。
@@ -55,7 +54,7 @@ AOT 配置可能パッケージはアプリケーションのカスタマイズ�
     AXUpdateInstaller.exe devinstall
     ```
 
-    **devinstall** オプションは、AOT の可能なパッケージを VM にインストールします。 Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition およびプラットフォーム更新プログラム 12 時点で **devinstall** オプションは、VM の管理者である必要はありません。
+    **devinstall** オプションは、AOT の可能なパッケージを VM にインストールします。 Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition のプラットフォーム更新プログラム 12 では、**devinstall** オプションを使用するには VM の管理者である必要はありません。
     
     > [!NOTE]
     > このコマンドは、データベース同期を実行しません。 配置可能なパッケージをインストールした後、Microsoft Visual Studio からデータベースの同期を実行する必要があります。
@@ -213,4 +212,3 @@ Runbook には、環境を更新するために実行する必要がある一連
     ```
 
 - データベースの同期を確認するには、<**aosservce\\scripts\\** フォルダー内の **dbsync.error.txt** ファイルを見つけて開き、エラーを探します。
-

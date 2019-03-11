@@ -1,13 +1,13 @@
 ---
-title: "ドキュメント管理のコンフィギュレーション"
-description: "このトピックでは、添付ファイルおよびレコードのメモを格納するように、ドキュメント管理 (ドキュメント処理) を構成する方法について説明します。"
+title: ドキュメント管理のコンフィギュレーション
+description: このトピックでは、添付ファイルおよびレコードのメモを格納するように、ドキュメント管理 (ドキュメント処理) を構成する方法について説明します。
 author: ChrisGarty
 manager: AnnBe
 ms.date: 05/23/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -15,21 +15,20 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 64c5c291d659776487c7fb1ff8b434fcaa4fe672
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369391"
 ---
-
 # <a name="configure-document-management"></a>ドキュメント管理のコンフィギュレーション
 
 [!include [banner](../includes/banner.md)]
 
 このトピックでは、添付ファイルおよびレコードのメモを格納するように、ドキュメント管理 (ドキュメント処理) を構成する方法について説明します。 これには、この機能に関連する概念および機能に関する情報が含まれています。
 
-ドキュメント管理に関する詳細については、短い [Dynamics 365 for Finance and Operations のドキュメント管理](https://www.youtube.com/watch?v=p4rl1CkiLN4&feature=youtu.be)ビデオを確認してください。
+ドキュメントの管理の詳細については、簡単なビデオ [Dynamics 365 for Finance and Operations でのドキュメント管理](https://www.youtube.com/watch?v=p4rl1CkiLN4&feature=youtu.be)をご視聴ください。
 
 ## <a name="configure-document-types"></a>ドキュメント タイプのコンフィギュレーション
 
@@ -41,7 +40,7 @@ ms.lasthandoff: 12/18/2018
 
 1. **ドキュメント タイプ**ページに移動します。
 2. **新規** をクリックします。
-3. **タイプ** フィールドに、**SharePoint** または **HR ドキュメント**などの新しいドキュメント タイプの短縮名を入力します。
+3. **タイプ** フィールドに、**SharePoint** または **HR** ドキュメントなどの新しいドキュメント タイプの短縮名を入力します。
 4. **名前**フィールドに、**SharePoint ファイル**または **HR ドキュメント**などの長い名前を入力します。
 5. **クラス** フィールドで、ドキュメント タイプの動作を定義するクラスを指定します。
 
@@ -50,31 +49,31 @@ ms.lasthandoff: 12/18/2018
     - **簡易メモ** – ユーザーは **メモ** フィールドに簡易メモを追加できます。
 
 6. **クラス** フィールドで**ファイルの添付**を指定した場合、**場所**フィールドで使用する記憶域メカニズムを指定します。
-7. **場所**フィールドで **SharePoint** を指定した場合、**SharePoint アドレス** フィールドで Microsoft SharePoint アドレスを指定します これを行うには、**編集** ボタン (鉛筆シンボル) をクリックし、**フォルダー選択** ダイアログ ボックスをオンにします。
+7. **場所** フィールドで **SharePoint** を指定した場合、**SharePoint アドレス** フィールドで Microsoft SharePoint アドレスを指定します。 これを行うには、**編集** ボタン (鉛筆シンボル) をクリックし、**フォルダー選択** ダイアログ ボックスをオンにします。
 
 ## <a name="configure-sharepoint-storage"></a>SharePoint 記憶域のコンフィギュレーション
 
 Microsoft SharePoint Online は、ネイティブでサポートされる保存場所の 1 つです。 現在、SharePoint Online だけがサポートされています。 オンプレミス SharePoint (ローカル SharePoint サーバー) のサポートは将来追加される可能性があります。
 
-SharePoint ストレージを使用するには、ドキュメント タイプの **場所** フィールドを **SharePoint** に設定します。 その後、**SharePoint アドレス** フィールドに、有効な SharePoint アドレスを入力します。
+SharePoint ストレージを使用するには、ドキュメント タイプの**場所**フィールドを **SharePoint** に設定します。 その後、**SharePoint アドレス** フィールドに、有効な SharePoint アドレスを入力します。
 
-SharePoint ストレージを構成するには、次の手順を実行します。
+SharePoint 記憶域を構成するには、次の手順を実行します。
 
 1. **ドキュメント管理パラメータ**ページに移動します。
-2. **SharePoint** タブの、**既定の SharePoint サーバー**フィールドに、contosoax7.sharepoint.com など、SharePoint サイトに対して自動的に検出されたホスト名を確認します。 通常、SharePoint ホスト名は tenantname.sharepoint.com の形式で、そのテナントのアカウントは  `user1@tenantname.onmicrosoft.com` の形式で示されます。
+2. **SharePoint** タブの**既定の SharePoint サーバー**フィールドで、contosoax7.sharepoint.com など、SharePoint サイトに対して自動的に検出されたホスト名を確認します。 通常、SharePoint ホスト名は tenantname.sharepoint.com の形式で、そのテナントのアカウントは `user1@tenantname.onmicrosoft.com` の形式で示されます。
 
-    既定の SharePoint サーバーが指定されていない場合は通常、テナントの SharePoint サイトが存在しないか、有効な Microsoft Office 365 ライセンスが現在のユーザー (管理者) に関連付けられていません。
+    既定の SharePoint サーバーが指定されていない場合は、通常、テナントの SharePoint サイトが存在しないか、有効な Microsoft Office 365 ライセンスが現在のユーザー (管理者) に関連付けられていません。
 
-4. オプション: **SharePoint 接続のテスト** をクリックし、指定された SharePoint ホストをテストします。
-5. オプション: **SharePoint を開く** をクリックし、指定された SharePoint ホストをブラウザーで開きます。
+4. オプション: **SharePoint 接続**のテスト をクリックし、指定された SharePoint ホスト名をテストします。
+5. オプション: **SharePoint を開く**をクリックし、指定された SharePoint ホスト名をブラウザーで開きます。
 
 ### <a name="troubleshooting-sharepoint-communication"></a>SharePoint 通信のトラブルシューティング
 
-SharePoint 通信は、次の条件が満たされた場合にのみ、現在のユーザーで機能します。
+SharePoint 通信は、次の条件が満たされた場合にのみ、現在のユーザーに対して機能します。
 
-- Office 365 ライセンスは、ユーザーのアカウントに関連付けられています。
+- Office 365 ライセンスが、ユーザーのアカウントに関連付けられています。
 - ユーザーは、外部ユーザーではなくテナントの一般的なユーザーです (別のテナントのユーザーなど)。
-- テナント用の SharePoint サイト (Contoso.SharePoint.com など) があります。
+- テナント用の SharePoint サイト (たとえば、Contoso.SharePoint.com など) が存在します。
 
 ## <a name="configure-file-types"></a>ファイルの種類のコンフィギュレーション
 
@@ -88,11 +87,11 @@ SharePoint 通信は、次の条件が満たされた場合にのみ、現在の
 
 ## <a name="configure-document-preview"></a>ドキュメント プレビューのコンフィギュレーション
 
-添付ファイルのプレビューは、Microsoft Office Online Server で提供される Web アプリ オープン プラットフォーム インターフェイス (WOPI) を使用します。 **ドキュメント管理パラメーター**ページの、**全般**タブの **Office Web Apps サーバー**フィールドで、添付ファイルのプレビューに使用する Office オンライン サーバー インスタンスを指定します。 既定値は [`https://onenote.officeapps.live.com`] です。 この値は、クラウド ベースの WOPI サーバーを指しています。
+添付ファイルのプレビューには、Microsoft Office Online Server で提供される Web アプリ オープン プラットフォーム インターフェイス (WOPI) を使用します。 **ドキュメント管理パラメーター** ページの**全般**タブの **Office Web Apps サーバー** フィールドで、添付ファイルのプレビューに使用する Office Online サーバー インスタンスを指定します。 既定値は [`https://onenote.officeapps.live.com`] です。 この値は、クラウド ベースの WOPI サーバーを指しています。
 
 ### <a name="for-an-on-premises-environment"></a>オンプレミス環境について
 
-環境がオンプレミス上にあるとき、既定のクラウド ベースの WOPI サーバーは添付ファイルを読み込んでプレビューを提供することはできません。 プレビューする必要がある場合は、まず[オンプレミス設置型オンライン サーバー インスタンスをインストール](https://technet.microsoft.com/library/jj219455.aspx)し、それを環境内で構成する必要あります。 **Office Web アプリケーション サーバー** フィールドを、インストールされている Office Online Server インスタンスのホスト名に設定し、**保存** をクリックします。
+環境がオンプレミス上にあるとき、既定のクラウド ベースの WOPI サーバーは添付ファイルを読み込んでプレビューを提供することはできません。 プレビューが必要な場合は、[オンプレミス Office Online サーバー インスタンスをインストールし](https://technet.microsoft.com/library/jj219455.aspx)、それを環境内で構成する必要あります。 **Office Web アプリケーション サーバー** フィールドを、インストールされている Office Online Server インスタンスのホスト名に設定し、**保存**をクリックします。
 
 プレビューが必要な場合は、**Office Web アプリケーション サーバー** フィールドを `https://localhost` に設定します。 プレビューは、その後は、エラー メッセージではなく、「プレビューを利用できません」というメッセージを表示します。
 
@@ -130,9 +129,8 @@ SharePoint 通信は、次の条件が満たされた場合にのみ、現在の
 
 ### <a name="does-document-management-integrate-with-office-365"></a>ドキュメント管理は Office 365 と統合されますか。
 
-はい。 SharePoint の記憶域は、ネイティブでサポートされ、ドキュメント タイプの保管場所として選択できます。 さらに、任意の URL アドレス指定可能なファイルを **URL** ドキュメント タイプ経由で添付できます。
+はい。 SharePoint 記憶域はネイティブでサポートされ、ドキュメント タイプの保管場所として選択できます。 さらに、任意の URL アドレス指定可能なファイルを **URL** ドキュメント タイプ経由で添付できます。
 
 ### <a name="how-does-the-default-storage-location-for-document-management-change-in-on-premises-environments"></a>オンプレミス環境では、ドキュメント管理の既定の保管場所はどのように変更されますか？
 
 オンプレミス環境の場合、添付ファイルの Azure Blob ストレージ プロバイダーはファイル フォルダー ストレージ プロバイダーに置き換えられ、添付ファイルはクラウドに格納される代わりにオンプレミスに保存されます。 したがって、添付ファイルの既定の保管場所はファイル フォルダです。
-

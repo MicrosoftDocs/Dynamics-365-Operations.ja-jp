@@ -1,13 +1,13 @@
 ---
-title: "レポート サーバーのアーキテクチャ"
-description: "この記事では、Retail サーバーのアーキテクチャについて説明します。 Retail サーバーは、Retail Modern 販売時点管理 (POS) および電子商取引クライアントのステートレス サービスとビジネス ロジックを提供します。"
+title: レポート サーバーのアーキテクチャ
+description: この記事では、Retail サーバーのアーキテクチャについて説明します。 Retail サーバーは、Retail Modern 販売時点管理 (POS) および電子商取引クライアントのステートレス サービスとビジネス ロジックを提供します。
 author: RobinARH
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: robinr
 ms.search.scope: Operations, Retail
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: 869fd15f586d48f39d2efd3826cd69bcfc9aa300
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 0cad7948852be36b5ad451e6cffb2d3bd4190aba
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368645"
 ---
-
 # <a name="retail-server-architecture"></a>レポート サーバーのアーキテクチャ
 
 [!include [banner](../includes/banner.md)]
@@ -88,7 +87,6 @@ Retail サーバーは、次の概念を使用します。
 </table>
 
 自分自身のエンティティ タイプまたは複合タイプを作成して、既存のコントローラーを拡張し、新しいコントローラーを追加し、メタデータをカスタマイズすることができます。 Commerce ランタイムをカスタマイズする場合は、Retail サーバーのさまざまなコンポーネントもカスタマイズし、これらの変更を Retail Modern POS クライアントに公開する必要があります。
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "X++ クラスおよびメソッド"
-description: "このトピックでは、X++ でクラスやインターフェイスを作成および使用する方法について説明します。"
+title: X++ クラスおよびメソッド
+description: このトピックでは、X++ でクラスやインターフェイスを作成および使用する方法について説明します。
 author: RobinARH
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8ee078c78dabcc5a0e0e36e9495b8bc9891bbc40
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: a7eb024384a8ac1b38063b3d09ef4af1e900444d
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368634"
 ---
-
 # <a name="x-classes-and-methods"></a>X++ クラスおよびメソッド
 
 [!include [banner](../includes/banner.md)]
@@ -37,9 +36,9 @@ ms.lasthandoff: 04/20/2018
 *クラス*は、そのクラスから後に構築されるオブジェクトのデータとメソッドを定義するソフトウェア構造です。 構築されるオブジェクトは、*インスタンス* または *オブジェクト* と呼ばれます。 (このトピックでは、2 つの用語を同じ意味で使用しています。) データはオブジェクトの状態を表し、メソッドはオブジェクトの動作を表します。 *変数*にはクラスのデータが含まれます。 クラス内の変数は、そのクラスから構成されるオブジェクトに固有です。 クラス宣言から構築されたすべてのオブジェクトには、独自の変数のコピーがあります。 これらの変数は*インスタンス変数*と呼ばれます。 メソッドはクラスの動作を定義します。 データに作用する一連のステートメントです。 通常、メソッドはクラスのインスタンス変数を操作するように宣言されます。 これらのメソッドは、*instance メソッド*または *object メソッド*と呼ばれます。 また、*静的メソッド* および *静的フィールド* を宣言することができます。
 
 ## <a name="declaration-of-classes"></a>クラスの宣言
-### <a name="create-a-class-in-visual-studio"></a>Visual Studio でクラスを作成します
+### <a name="create-a-class-in-visual-studio"></a>Visual Studio でのクラスの作成
 
-Microsoft Visual Studio でクラスを作成するには、これらの手順に従います。
+Microsoft Visual Studio でクラスを作成するには、次の手順に従います。
 
 1.  サーバー エクスプローラーで、プロジェクトを右クリックしてから**追加**をクリックします。
 2.  **新しい項目**ダイアログ ボックスで、**クラス**を選択してからクラスの名前を入力します。
@@ -231,7 +230,7 @@ Microsoft Visual Studio でクラスを作成するには、これらの手順�
 
 ### <a name="syntax"></a>構文
 
-メソッドの宣言 = *ヘッダー*  *本文*ヘッダー = **\[** *モディファイアー* **\]**  *ReturnType*  *MethodName*  **(**  *ParameterList*  **)** モディファイアー = **\[クライアント\] \[サーバー\] \[edit | display | public | protected | private\] \[static | abstract | final \]** ReturnType = *Datatype*  **| void | anytype** MethodName = *識別子* ParameterList = **\[** *パラメーター*  **{ ,**  *パラメーター*  **}\]** パラメーター = *Datatype*  *Variableidentifier*  **\[ =**  *式*  **\]** 本文 = **{ \[**  *VariableDeclarations*  **\] \[**  *EmbeddedFunctionDeclarations*  **\] \[**  *ステートメント*  **\] }** EmbeddedFunctionDeclaration = *ヘッダー*  **{\[**  *VariableDeclarations*  **\] \[**  *ステートメント*  **\]}** **anytype** の戻り値の型を使用した場合、メソッドはあらゆるデータ型を返すことができます。
+メソッドの宣言 = *ヘッダー*  *本文*ヘッダー = **\[** *モディファイアー* **\]**  *ReturnType*  *MethodName*  **(**  *ParameterList*  **)** モディファイアー = **\[クライアント\] \[サーバー\] \[edit | display | public | protected | private\] \[static | abstract | final \]** ReturnType = *Datatype*  **| void | anytype** MethodName = *識別子* ParameterList = **\[** *パラメーター*  **{ ,**  *パラメーター*  **}\]** パラメーター = *Datatype*  *Variableidentifier*  **\[ =**  *式*  **\]** 本文 = **{\[**  *VariableDeclarations*  **\] \[** *EmbeddedFunctionDeclarations*  **\] \[**  *ステートメント*  **\] }** EmbeddedFunctionDeclaration = *ヘッダー*  **{\[**  *VariableDeclarations*  **\] \[** *ステートメント*  **\]}** **anytype** の戻り値の型を使用した場合、メソッドはあらゆるデータ型を返すことができます。
 
 ### <a name="example-of-a-method-that-doesnt-have-a-return-type"></a>戻り値の型を設定していないメソッドの例
 
@@ -762,7 +761,7 @@ Microsoft Visual Studio でクラスを作成するには、これらの手順�
     }
 
 ## <a name="batch-processing-classes"></a>バッチ処理クラス
-クラスを実装するには、バッチ処理システムを使用し、**RunBase** および **RunBaseBatch** クラスを拡張します。 **バッチ処理** ダイアログ ボックスから **繰り返し** ボタンを削除するには、**Args::parmEnum** メソッドを使用します。 サーバー バインド バッチ メソッドとして実行するクラスを指定することをお勧めします。 サーバー バインド バッチ メソッドは、以下の理由のため、サーバー バインドでないバッチ メソッドより安全です。
+クラスを実装するには、バッチ処理システムを使用し、**RunBase** および **RunBaseBatch** クラスを拡張します。 **バッチ処理**ダイアログ ボックスから**繰り返し**ボタンを削除するには、**Args::parmEnum** メソッドを使用します。 サーバー バインド バッチ メソッドとして実行するクラスを指定することをお勧めします。 サーバー バインド バッチ メソッドは、以下の理由のため、サーバー バインドでないバッチ メソッドより安全です。
 
 -   このメソッドは、メソッドを送信したユーザーのアクセス許可を使用して実行されます。
 -   このメソッドは、特定の **情報** および **グローバル** クラス メソッドのみを使用して、それを処理しているクライアントと対話できます。 この制限により、クライアントとのやり取りが制限されます。
@@ -793,7 +792,7 @@ Microsoft Visual Studio でクラスを作成するには、これらの手順�
 
 ### <a name="removing-the-recurrence-button-from-the-batch-processing-dialog-box"></a>バッチ処理ダイアログ ボックスから定期的なアイテムを削除
 
-バッチ処理システムを使用してクラスを実装するときは、**Args.parmEnum** メソッドを呼び出し、**NoYes::Yes** システム列挙値を渡して、**再実行** ボタンを削除できます。 **NoYes** システム列挙は、**繰り返し** ボタンがダイアログ ボックスから削除されるかどうかを決定します。 既定値は **NoYes::No** です。 次の例では、**InventTransferMultiShip** クラスが実装されています。 **BatchDialog::main** メソッドは、**バッチ処理** ダイアログ ボックスを作成します。
+バッチ処理システムを使用してクラスを実装するときは、**Args.parmEnum** メソッドを呼び出し、**NoYes::Yes** システム列挙値を渡して、**再実行**ボタンを削除できます。 **NoYes** システム列挙は、**繰り返し** ボタンがダイアログ ボックスから削除されるかどうかを決定します。 既定値は **NoYes::No** です。 次の例では、**InventTransferMultiShip** クラスが実装されています。 **BatchDialog::main** メソッドは、**バッチ処理**ダイアログ ボックスを作成します。
 
     static void noRecurrenceButton(Args _args)
     {
@@ -847,7 +846,7 @@ Microsoft Visual Studio でクラスを作成するには、これらの手順�
 環境との統合は、通常、クラスによって実装されます。 このカテゴリ内のクラスの例を次に示します。
 
 -   **COM** - COM オブジェクトのメソッドの呼び出しです。
--   **DLL** - Microsoft Windows DLL 関数の呼び出し。
+-   **DLL** – Microsoft Windows DLL 関数の呼び出し。
 -   **IO** – 外部ファイルの読み取りと書き込みを行います。
 -   **ODBCConnection** – 外部データベースへの Open Database Connectivity (ODBC) インターフェイス。
 
@@ -871,7 +870,6 @@ Microsoft Visual Studio でクラスを作成するには、これらの手順�
 | eventHandler                            | myClassInstance.myDelegate += eventHandler(otherClass.myInstanceMethod); | **eventHandler** キーワードの構文は **eventHandler** X++ 関数であるという印象を与えますが、それは関数ではありません。 **eventHandler** キーワードは、メソッドがデリゲートにサブスクライブされることをコンパイラに伝えます。                                           |
 | デリゲートにメソッドをサブスクライブまたは追加 | myClassInstance.myDelegate += eventHandler(OtherClass::aStaticMethod);   | コードでは、静的メソッド **OtherClass::aStaticMethod** がデリゲートにサブスクライブされます。                                                                                                                                                                                        |
 | デリゲートの呼び出し                         | myClassInstance.myDelegate("Hello");                                     | デリゲートへのこの呼び出しは、デリゲートにサブスクライブしている各メソッドを呼び出すようにデリゲートに要求します。 サブスクライブされたメソッドは、デリゲートに追加されたのと同じ順序で呼び出されます。 1 つのサブスクライブされたメソッドは、そのデリゲードが次のメソッドを呼び出す前に完了される必要があります。 |
-
 
 
 

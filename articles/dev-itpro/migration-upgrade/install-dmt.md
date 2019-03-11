@@ -1,13 +1,13 @@
 ---
-title: "AX 2009 の移行 － データ移行ツールのインストール"
-description: "このトピックでは、Microsoft Dynamics AX 2009 から Microsoft Dynamics 365 for Finance and Operations にデータを移行できるように、データ移行ツール (DMT) を設定する方法について説明します。"
+title: AX 2009 の移行 － データ移行ツールのインストール
+description: このトピックでは、Microsoft Dynamics AX 2009 から Microsoft Dynamics 365 for Finance and Operations にデータを移行できるように、データ移行ツール (DMT) を設定する方法について説明します。
 author: kfend
 manager: AnnBe
 ms.date: 09/13/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,15 +15,14 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2018-06-21
 ms.dyn365.ops.version: Platform update 17
-ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
 ms.openlocfilehash: a301bafc023af117a38e6901e1e0d01232f6e79b
-ms.contentlocale: ja-jp
-ms.lasthandoff: 11/01/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368449"
 ---
-
-# <a name="ax-2009-migration--install-the-data-migration-tool"></a>AX 2009 の移行 - データ移行ツールのインストール
+# <a name="ax-2009-migration--install-the-data-migration-tool"></a>AX 2009 の移行 – データ移行ツールのインストール
 
 [!include [banner](../includes/banner.md)]
 
@@ -32,12 +31,12 @@ ms.lasthandoff: 11/01/2018
 > [!IMPORTANT]
 > 現時点で、DMT はプライベート プレビューです。 関心をお持ちの場合、[プレビュー プログラム](https://microsoft.qualtrics.com/jfe/form/SV_brOLCioQ7mmeykB)にサインアップすることができます。 DMT の公開リリース日は設定されていません。 
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必要条件
 
 - Microsoft SQL Server 2008/2012/2014/2016。
 - Microsoft .NET Framework バージョン 4.5 またはそれ以降。
 - Microsoft SQL 2012 Native Client がインストールされている Microsoft SQL Server コンピューター。
-- Microsoft SQL Server Integration Services (SSIS) サービスがインストールされ、DMT サービスがインストールされるコンピューターで実行されます。
+- Microsoft SQL Server Integration Services (SSIS) サービスがインストールされ、DMT サービスがインストールされるコンピューターで実行されています。
 - SQL Server 認証は、SQL 認証と Microsoft Windows 認証の両方をサポートする必要があります。
 - 次の表のバージョン ガイダンスに従っている Microsoft Access データベース エンジン。
 
@@ -71,9 +70,9 @@ DMT をインストールする方法は 2 つあります。 結合された XP
 ### <a name="combined-xpo-file"></a>結合された XPO ファイル
 1. 結合された XPO ファイルを **DMT_V1.0\CombinedXPO** から展開します。
 2. AX 2009 に結合された XPO ファイルをインポートします。
-3. **DMT_V1.0\Label ファイル**から **Program Files\\Microsoft Dynamics AX\\50\\Application\\Appl\\<NameOfYourDeployment\>** フォルダーにラベル ファイルをコピーします。
+3. **DMT_V1.0\Label file** ファイルから  **Program Files\\Microsoft Dynamics AX\\50\\Application\\Appl\\<NameOfYourDeployment\>** フォルダーにラベル ファイルをコピーします。
 4. Application Object Server (AOS) インスタンスを再起動します。
-5. AX 2009 で、**データ移行** \> **設定** \> **DMT アプリケーションのコンパイルと同期** を選択します。
+5. AX 2009 で、**データ移行** \> **設定** \> **DMT アプリケーションのコンパイルと同期**を選択します。
 
 ユーザーがログインしているレイヤーに結合された XPO ファイルがインポートされることに注意してください。
 
@@ -88,7 +87,7 @@ ZIP ファイルを展開した場所に移動し、**defaultvalue.xlsx** を検
 > [!NOTE]
 > ファイルは .xlsx 形式に保存されます。 拡張機能を変更しないでください。 このファイルを **既定のコンフィギュレーション** パラメーターの入力として入力したら、**すべてのファイル** を選択して .xlsx 形式を選択できるようにします。 この形式を選択しない場合、マッピングの生成を開始するとエラーが発生します。
 
-1. AX 2009 で、**データ移行**\>**設定**\>**既定のマップを構成する** を選択し、次のフィールドに適切な情報を入力します。
+1. AX 2009 で、**データ移行** \> **設定** \> **既定のマップを構成する** を選択し、次のフィールドに適切な情報を入力します。
 
     - **既定のコンフィギュレーション**: Microsoft Excel ファイルのパスを入力します。
     - **エクスポート ファイルのパス**: サービスがアクセスできるサーバーのパスを入力します。
@@ -154,4 +153,3 @@ ZIP ファイルを展開した場所に移動し、**defaultvalue.xlsx** を検
 5. 3 つのチェック ボックスをすべてオンにしてすべてのルールを適用し、**次へ** を選択します。
 6. ルールの名前を入力し、**完了** を選択します。
 7. 送信ルールでこれらの手順を繰り返します。
-

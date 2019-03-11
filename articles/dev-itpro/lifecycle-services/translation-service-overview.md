@@ -1,13 +1,13 @@
 ---
-title: "Microsoft Dynamics 365 翻訳サービス"
-description: "このトピックでは、Microsoft Dynamics 365 Translation Service (DTS) について説明します。 DTS はパートナーおよび ISV がソリューションの翻訳またはサポートされている Microsoft Dynamics 製品に新しい言語を追加するときにエクスペリエンスを向上するために設計されています。"
+title: Microsoft Dynamics 365 Translation Service
+description: このトピックでは、Microsoft Dynamics 365 Translation Service (DTS) について説明します。 DTS はパートナーおよび ISV がソリューションの翻訳またはサポートされている Microsoft Dynamics 製品に新しい言語を追加するときにエクスペリエンスを向上するために設計されています。
 author: ejcho
 manager: AnnBe
 ms.date: 09/13/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -17,21 +17,20 @@ ms.search.region: Global
 ms.author: ejchoGIT
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 8584119ed4be1e1ad21530b72d17d30150f10612
 ms.openlocfilehash: 264bac810fb20417874727157069b188c3edad01
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369119"
 ---
-
-# <a name="microsoft-dynamics-365-translation-service"></a>Microsoft Dynamics 365 翻訳サービス
+# <a name="microsoft-dynamics-365-translation-service"></a>Microsoft Dynamics 365 Translation Service
 
 [!include [banner](../includes/banner.md)]
 
 Microsoft Dynamics 365 Translation Service (DTS) は、Microsoft Dynamics Lifecycle Services (LCS) にホストされています。 パートナーおよび独立系ソフトウェア ベンダー (ISV) がソリューションの翻訳または[サポートされている Dynamics 製品](./translation-service-overview.md#supported-products)に新しい言語を追加するときにエクスペリエンスを向上するために設計されています。
 
-DTS は、翻訳出力の品質を最大限に高めるために [Microsoft 一般提供 (GA) 言語](./translation-service-overview.md#glossary) のカスタム トレーニングを受けた機械翻訳 (MT) システムを使用します。 DTS は、Microsoft Dynamics およびパートナー/ISVの言語資産からの翻訳リサイクルもサポートしています。 したがって、同一の文字列は一度変換され、一貫して再利用されます。
+DTS は、翻訳出力の品質を最大限に高めるために [Microsoft 一般提供 (GA) 言語](./translation-service-overview.md#glossary) のカスタム トレーニングを受けた機械翻訳 (MT) システムを使用します。 DTS は、Microsoft Dynamics およびパートナー/ISV の言語資産からの翻訳リサイクルもサポートしています。 したがって、同一の文字列は一度変換され、一貫して再利用されます。
 
 次の図は、サービスが、高レベルで、どのように機能するかを示しています。
 
@@ -88,18 +87,17 @@ LCS はさまざまな理由から一部のサービスや機能をプレビュ�
 
 DTS には 2 つのプレビュー機能があります。
 
-+ **Dynamics 365 翻訳サービス - ドキュメント翻訳サポート** - 製品またはソリューションのドキュメント (たとえば、Microsoft Word 文書など) を翻訳する場合は、この機能を有効にする必要があります。
++ **Dynamics 365 Translation Service - ドキュメント翻訳サポート** - 製品またはソリューションのドキュメント (たとえば、Microsoft Word 文書など) を翻訳する場合は、この機能を有効にする必要があります。
 + **NAV 製品使用可能性** – NAV 製品の LCS プロジェクトを作成し、プロジェクト内から DTS にアクセスするには、この機能を有効にする必要があります。
 
 ## <a name="glossary"></a>用語集
 
-| 期間 | 説明 |
+| 相談 | 説明 |
 |------|-------------|
 | XLIFF | XML ローカライズ交換ファイル形式。 XLIFF は XML ベース形式です。 これは、ローカライズ プロセス中にツール間でローカライズ可能なデータが渡される方法を標準化し、コンピューター支援翻訳 (CAT) ツールで使用されるファイルの一般的な形式として機能するために作成されました。 |
 | Microsoft GA 言語 | Microsoft が生成した言語の一般的な可用性。 一覧は、製品によって異なります。 |
 | TU | 単位の変換です。 TU には通常、ソース文字列、翻訳、状態、状態識別子、およびメモが含まれています。 |
 
 
-DTS の使用方法の詳細については、[Microsoft Dynamics 365 翻訳サービス - ユーザー インターフェイス ファイルの翻訳](use-translation-service.md) および [Microsoft Dynamics 365 翻訳サービス - ドキュメント ファイルの変換](use-translation-service-ua.md) を参照してください。
-
+DTS の使用方法の詳細については、[Microsoft Dynamics 365 Translation Service - ユーザー インターフェイス ファイルの翻訳](use-translation-service.md) および [Microsoft Dynamics 365 Translation Service - ドキュメント ファイルの変換](use-translation-service-ua.md) を参照してください。
 

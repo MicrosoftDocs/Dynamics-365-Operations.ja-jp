@@ -1,13 +1,13 @@
 ---
-title: "契約タイプ間でライセンスを移動する"
-description: "このトピックでは、契約タイプの間のライセンスを移動する方法について説明します。"
+title: 契約タイプ間でライセンスを移動する
+description: このトピックでは、契約タイプの間のライセンスを移動する方法について説明します。
 author: ClaudiaBetz-Haubold
 manager: AnnBe
 ms.date: 06/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: IT Pro
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,26 +15,25 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
+ms.openlocfilehash: 5399ec3afd19fbb48ca9a2d7bdd7b4cafa62265d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: dcbe39a5d9ca4a9fc109468772b6dd89b0dd971e
-ms.openlocfilehash: 40cf173ee2557939a0390bdc0e9a0c9a19411fa3
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369450"
 ---
-
 # <a name="move-licenses-between-agreement-types"></a>契約タイプ間でライセンスを移動する
 
 [!include [banner](../includes/banner.md)]
 
-場合によっては、もともと Microsoft クラウド サービス プロバイダー (CSP) 契約を通じて定期売買を購入した顧客は、Microsoft Dynamics Lifecycle Services (LCS) 実装プロジェクトが作成された後に、Microsoft との Microsoft ボリューム ライセンス契約に変更することを決定します。 顧客は、本番稼働でプロジェクトが稼動した後でもこの変更を実行できます。
+場合によっては、もともと Microsoft クラウド サービス プロバイダー (CSP) 契約を通じてサブスクリプションを購入した顧客は、Microsoft Dynamics Lifecycle Services (LCS) 実装プロジェクトが作成された後に、Microsoft との Microsoft ボリューム ライセンス契約に変更することを決定します。 顧客は、本番稼働でプロジェクトが稼動した後でもこの変更を実行できます。
 
 ごくまれに、もともと Microsoft とのボリューム ライセンス契約を通して定期売買を購入した顧客は CSP 契約への変更することを決めます。 この場合、ボリューム ライセンス契約の更新日に合わせて変更する必要があります。
 
 契約の 1 つのタイプから別のタイプへの定期売買契約の移動のプロセスは、主に商業プロセスです。 LCS 実装プロジェクトの技術的影響は最小限に抑えられています。
 
 > [!NOTE]
-> 契約タイプ間の定期売買の移動は、Azure Active Directory (Azure AD) テナントの移動と同じではありません。 契約の契約上の変更により、Azure AD テナントを移動する必要がある場合は、[LCS 実装プロジェクトを別の Azure Active Directory テナントに移動する](move-lcs-implementation-project-tenant.md)に記載されているプロセスにも従う必要があります。
+> 契約タイプ間のサブスクリプションの移動は、Azure Active Directory (Azure AD) テナントの移動と同じではありません。 契約の契約上の変更により、Azure AD テナントを移動する必要がある場合は、「[LCS 実装プロジェクトを別の Azure Active Directory テナントに移動する](move-lcs-implementation-project-tenant.md)」に記載されているプロセスにも従う必要があります。
 
 3 つの標準環境に付属している定期売買: 製造環境、レベル 2 スタンダード承認テスト環境、およびレベル 1 開発者環境。 これらの環境は、契約タイプ間のサブスクリプションの移動の影響を受けません。 アクションは、顧客が追加アドオン環境を持っている場合にのみ、LCS で必要な場合があります。 この場合、アドオン環境に関連付けられているアクションには、パートナーまたは顧客リソースの側で最小限の作業量が必要になります。 環境間でデータの移動を効率化するには、最適な順序を決定するために前もって計画を作成する必要があります。
 
@@ -45,10 +44,10 @@ ms.lasthandoff: 08/09/2018
 1. 顧客は、ボリューム ライセンスの再販業者または CSP との新しい契約の下で定期売買を注文します。
 
     > [!IMPORTANT]
-    > 元の契約で使用される同じ Azure AD テナントに対して定期売買が購入されることを確認します。
+    > 元の契約で使用される同じ Azure AD テナントに対してサブスクリプションが購入されることを確認します。
 
 2. 顧客によって定期売買が有効化されます。
-3. Microsoft Office 365 管理センターで、顧客は新規と定期売買の両方および既存の定期売買が有効であることを確認します。
+3. Microsoft Office 365 管理センターで、顧客は新規のサブスクリプションおよび既存のサブスクリプションの両方が有効であることを確認します。
 4. 新しいサブスクリプションが有効になると、顧客は、ボリューム ライセンスの再販業者または CSP が既存のサブスクリプションを中断することを要求します。 通常、継続性を保証し、サービスの中断を回避するために重複があります。
 
 ## <a name="the-customer-has-add-on-environments"></a>顧客にはアドオン環境があります
@@ -76,10 +75,10 @@ ms.lasthandoff: 08/09/2018
 1. 顧客は、ボリューム ライセンスの再販業者または CSP との新しい契約の下で定期売買を注文します。 これらのサブスクリプションには、アドオン環境のサブスクリプションが含まれます。
 
     > [!IMPORTANT]
-    > 既存の Azure AD テナントに対して定期売買が購入されることを確認します。
+    > 既存の Azure AD テナントに対してサブスクリプションが購入されることを確認します。
 
 2. 顧客によって定期売買が有効化されます。
-3. Office 365 管理センターで、顧客は新規の定期売買および既存の定期売買の両方が有効であることを確認します。
+3. Office 365 管理センターで、顧客は新規のサブスクリプションおよび既存のサブスクリプションの両方が有効であることを確認します。
 
 ### <a name="deploy-new-environments"></a>新しい環境の配置
 
@@ -106,4 +105,3 @@ ms.lasthandoff: 08/09/2018
 > [!NOTE]
 > - サンド ボックス環境では、Azure BLOB ストレージに格納されているファイルの移動はサポートされていません。
 > - 小売顧客は、移動後に小売コンポーネントが正常に機能するため追加の手順が必要であることに注意する必要があります。 詳細については、[データ管理](../../dev-itpro/data-entities/data-entities-data-packages.md)を参照してください。
-

@@ -1,13 +1,13 @@
 ---
-title: "スーパー タイプおよびサブ タイプ"
-description: "データ エンティティの継承パターンのサポートについて説明します。"
+title: スーパー タイプおよびサブ タイプ
+description: データ エンティティの継承パターンのサポートについて説明します。
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 448ab6deb50e63fd63c7501aea1c9b6991a94cd8
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369974"
 ---
-
 # <a name="super-types-and-sub-types"></a>スーパー タイプおよびサブ タイプ
 
 [!include [banner](../includes/banner.md)]
@@ -91,4 +90,3 @@ ms.lasthandoff: 08/13/2018
 この例では、**関係者**タイプは DirPartyTable の **InstanceRelationType** 列を使用して計算されます。 この方法は、データを読み取るために機能します。 ただし、**作成**または**更新**操作を行うには、タイプに基づいて、データ エンティティの **initializeEntityDataSource** メソッドを上書きするコードを記述する必要があり、およびデータ ソースの実行時コンテキスト バッファに対する派生型の正しいインスタンスを設定する必要があります。
 
 [![sub11](./media/sub11.png)](./media/sub11.png)
-

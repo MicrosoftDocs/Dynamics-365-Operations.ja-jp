@@ -1,13 +1,13 @@
 ---
-title: "コード エディター機能"
-description: "この記事では、Microsoft Dynamics 'AX 7' のコード エディター機能について説明します。"
+title: コード エディター機能
+description: この記事では、Microsoft Dynamics 'AX 7' のコード エディター機能について説明します。
 author: RobinARH
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 66572c26cf2313486d648a150bd863d5673e3f60
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369504"
 ---
-
 # <a name="code-editor-features"></a>コード エディター機能
 
 [!include [banner](../includes/banner.md)]
@@ -33,7 +32,7 @@ ms.lasthandoff: 08/09/2018
 
 ## <a name="code-editor"></a>コード エディター
 
-アプリケーションの X++ コードを記述するには、Microsoft Visual Studio のコード エディタを使用します。 X++ 言語は、Visual Studio 環境に完全に統合されています。 X++ コードを書き込むときは、Visual Studio コード エディターの使い慣れた機能が表示されます。 たとえば、コードを記述するよう IntelliSense が表示されます。 また、コード エディタ ウィンドウの上部にあるナビゲーション ドロップダウン メニューを使用して、コード エディター内のメソッドおよびクラスに移動することができます。 
+アプリケーションの X++ コードを記述するには、Microsoft Visual Studio のコード エディタを使用します。 X++ 言語は、Visual Studio 環境に完全に統合されています。 X++ コードを書くとき、Visual Studio コード エディターの使い慣れた機能が表示されます。 たとえば、コードを記述するよう IntelliSense が表示されます。 また、コード エディタ ウィンドウの上部にあるナビゲーション ドロップダウン メニューを使用して、コード エディター内のメソッドおよびクラスに移動することができます。 
 
 ![DevoToolsConcept](./media/31_devotoolsconcept.png) 
 
@@ -50,7 +49,6 @@ ms.lasthandoff: 08/09/2018
 [開発者ホーム ページ](developer-home-page.md)
 
 [開発ツールの概要](development-tools-overview.md)
-
 
 
 

@@ -1,30 +1,29 @@
 ---
-title: "拡張可能なメソッドの書き込み"
-description: "このトピックでは、拡張可能メソッドを書き込む方法について説明します。"
+title: 拡張可能なメソッドの書き込み
+description: このトピックでは、拡張可能メソッドを書き込む方法について説明します。
 author: smithanataraj
 manager: AnnBe
 ms.date: 09/09/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: kfend
 ms.search.scope: Operations
 ms.custom: 268724
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: smithanataraj
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.translationtype: HT
-ms.sourcegitcommit: 5ea198d50a34a89828277f924848a7f869e57555
 ms.openlocfilehash: 3b938a260fad7b9043c0e619538d4a2f03912b0a
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/06/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368664"
 ---
-
 # <a name="write-extensible-methods"></a>拡張可能なメソッドの書き込み
 
 [!include [banner](../includes/banner.md)]
@@ -112,4 +111,3 @@ ms.lasthandoff: 09/06/2018
     - **SysQueryInsertRecordSet** を使用して、insert_recordset をクエリに変換します。
     - select ステートメントではフィールド リストは避けてください。 この方法では、拡張することがなく、拡張担当者が追加のフィールドを取得できるようにすることができます。
     - クエリ範囲で **in** キーワードを使用し、拡張担当者が値をさらにクエリ範囲に追加できるようにします。 この方法は特に、列挙値を持つクエリ範囲にお勧めします。
-

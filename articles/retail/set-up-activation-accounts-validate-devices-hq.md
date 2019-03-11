@@ -1,13 +1,13 @@
 ---
-title: "Retail 有効化アカウントの管理とデバイスの検証"
-description: "このトピックでは、小売業者がModern POS デバイスまたはクラウド POS デバイスを有効にするために Retail アクティベーション アカウント を IT Pro で設定する方法について説明します。"
+title: Retail 有効化アカウントの管理とデバイスの検証
+description: このトピックでは、小売業者がModern POS デバイスまたはクラウド POS デバイスを有効にするために Retail アクティベーション アカウント を IT Pro で設定する方法について説明します。
 author: athinesh99
 manager: AnnBe
 ms.date: 11/14/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmWorker, RetailDeviceActivationValidation, RetailPositionPosPermission
 audience: IT Pro
 ms.reviewer: sericks
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: bef1fe05f26e808a603506e77a9da4fec2133e39
-ms.contentlocale: ja-jp
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368755"
 ---
-
 # <a name="manage-retail-activation-accounts-and-validate-devices"></a>Retail 有効化アカウントの管理とデバイスの検証
 
 [!include [banner](includes/banner.md)]
@@ -87,4 +86,3 @@ ms.lasthandoff: 01/04/2019
 9. レジスターおよび店舗に画面レイアウトがあることを確認します (検証でチェックされます)。
 10. 基本住所が法人に対して設定されていることを確認します。
 11. 電子決済 (EFT) のコンフィギュレーションの値があることを確認します。
-

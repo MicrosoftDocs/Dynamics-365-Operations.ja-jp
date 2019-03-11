@@ -1,13 +1,13 @@
 ---
-title: "データ エンティティの会社間動作"
-description: "このトピックでは、データ エンティティと企業間コンセプトとの関係について説明します。 データエンティティのこの側面を理解するには、テーブルとビューが企業間の概念をどのように適用するのかを理解する必要があります。 したがって、このトピックでは、テーブルとビューの概要を説明し、データ エンティティの関連性について説明します。"
+title: データ エンティティの会社間動作
+description: このトピックでは、データ エンティティと企業間コンセプトとの関係について説明します。 データエンティティのこの側面を理解するには、テーブルとビューが企業間の概念をどのように適用するのかを理解する必要があります。 したがって、このトピックでは、テーブルとビューの概要を説明し、データ エンティティの関連性について説明します。
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: margoc
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: c44fbb29c5c66abf59f1a6089ce1cef4d64a4e2c
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368627"
 ---
-
 # <a name="cross-company-behavior-of-data-entities"></a>データ エンティティの会社間動作
 
 [!include [banner](../includes/banner.md)]
@@ -40,7 +39,7 @@ ms.lasthandoff: 08/13/2018
 | プロパティ名          | SaveDataPerCompany | AllowCrossCompany |
 | 関連する CRUD モード     | CUD | R |
 | 効果のタイミング       | 実行時間、デザイン時 | ほとんどの場合は実行時。 デザイン時に、この設定によりビューは選択したフィールド リストに **dataAreaId** を持ちます。 ただし、特定の **dataAreaId** 値のフィルターが、後の実行時に追加されます。 |
-| 値の意味 = はい | デザイン時には、フィールドがアプリケーション オブジェクト ツリー (AOT) に表示されていなくても、システムはテーブルに **dataAreaId** フィールドを自動的に*追加*します。 テーブルのすべてのレコードには、それが所属する会社 (または法人) がタグ付けされています。 システムは自動的に SQL **Where** 句にフィルターを*追加*して、返された行セットを 1 つの **dataAreaId** 値に制限します。 | 実行時に、システムは基になる Microsoft SQL Server システムに送信する SQL **選択**ステートメントの **Where** 句に **dataAreaId** のフィルターを自動的に追加*できません*。 したがって、ビューからの SQL **Select** ステートメントは、*複数の*企業のレコードを含む一連のレコードを返すことができます。 |
+| 値の意味 = はい | デザイン時には、フィールドがアプリケーション オブジェクト ツリー (AOT) に表示されていなくても、システムはテーブルに **dataAreaId** フィールドを自動的に*追加*します。 テーブルのすべてのレコードには、それが所属する会社 (または法人) がタグ付けされています。 システムは自動的に SQL **Where** 句にフィルターを*追加*して、返された行セットを 1 つの **dataAreaId** 値に制限します。 | 実行時に、システムは、基になる Microsoft SQL Server システムに送信する SQL **Select** ステートメントの **Where** 句に **dataAreaId** のフィルターを自動的に追加*できません*。 したがって、ビューからの SQL **Select** ステートメントは、*複数の*企業のレコードを含む一連のレコードを返すことができます。 |
 | 値の意味 = いいえ  | システムは、テーブルに **dataAreaId** フィールドを追加*しません*。 テーブルは共有テーブルであると言われています。なぜならレコードには正式な会社固有のデータが含まれていないからです。 | システムは自動的に SQL **Where** 句にフィルターを*追加*して、返された行セットを 1 つの **dataAreaId** 値に制限します。 ただし、ビューの*ルート*データ ソースが共有テーブルである場合、**AllowCrossCompany** プロパティは無視されます。 |
 
 ## <a name="comparisons-within-allowcrosscompany--no"></a>AllowCrossCompany 内の比較 = いいえ
@@ -194,4 +193,3 @@ X++ コードのコンテキストでは、データ エンティティの会社
 - 新しいレコードが作成されたときに、1 つの特定の会社があるデータ エンティティにアクセスします。
 
 [![snip2](./media/snip2.png)](./media/snip2.png)
-

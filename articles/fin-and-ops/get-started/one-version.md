@@ -1,28 +1,27 @@
 ---
-title: "1 つのバージョンのサービス更新に関するよく寄せられる質問"
-description: "このトピックは、一貫性があり、予測可能でシームレスな方法で最新の状態に保つために使用できるサービスの更新、プロセス、ツールを明確にすることを目的としています。"
+title: 1 つのバージョンのサービス更新に関するよく寄せられる質問
+description: このトピックは、一貫性があり、予測可能でシームレスな方法で最新の状態に保つために使用できるサービスの更新、プロセス、ツールを明確にすることを目的としています。
 author: meeramahabala
 manager: AnnBe
 ms.date: 12/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2018-10-31
-ms.dyn365.ops.version: 8.1
+ms.dyn365.ops.version: 8.0999999999999996
+ms.openlocfilehash: 53142252ad8b573dda45597a84944aa620b036e0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
-ms.openlocfilehash: 53e7b9e6374ff90aad83bca7bd3848382bcbc5a7
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/18/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369804"
 ---
-
 # <a name="one-version-service-updates-faq"></a>1 つのバージョンのサービス更新に関するよく寄せられる質問
 
 [!include[banner](../includes/banner.md)]
@@ -57,7 +56,9 @@ ms.lasthandoff: 12/18/2018
 
 ### <a name="what-does-it-mean-when-an-update-is-backward-compatible"></a>更新プログラムに下位互換性がある場合、これは何を意味しますか?
 
-下位互換性では、バイナリと機能の互換性がカバーされます。 バイナリ互換性は、カスタマイズを再コンパイル、再設定、または再展開しなくても、あらゆるランタイム環境に更新プログラムを適用できることを意味します。 つまり、デザイン時の開発環境で、X++ パブリックおよび保護された API とメタデータが変更または削除されません。 Microsoft が古い形式の API を削除することによって互換性をなくす必要がある場合、廃止スケジュールが 12 か月前に発表されます。 デザイン時の互換性には、非 X++/メタデータ API は含まれていません。 機能互換性は、ユーザー エクスペリエンスについてです。 新しいエクスペリエンスはすべてオプトインになります。
+下位互換性では、バイナリと機能の互換性がカバーされます。 バイナリ互換性は、カスタマイズを再コンパイル、再設定、または再展開しなくても、あらゆるランタイム環境に更新プログラムを適用できることを意味します。 また、デザイン時の開発環境で、X++ パブリックおよび保護された API とメタデータが変更または削除されないことも意味します。 Microsoft が古い形式の API を削除することによって互換性をなくす必要がある場合、廃止スケジュールが 12 か月前に発表されます。 機能互換性は、ユーザー エクスペリエンスについてで、新しいエクスペリエンスはすべてオプトインになります。
+
+下位互換性には、非 X++/メタデータ API は含まれていません。 Microsoft は、事前に通知することなく、製品が使用する依存関係を更新し、依存関係を削除する権限を保有します。 Microsoftは、明記された場合を除いて、依存ソフトウェア ライブラリの下位互換性を維持することを約束しません。
 
 ### <a name="do-these-updates-apply-to-on-premises"></a>これらの更新プログラムはオンプレミスで適用されますか?
 
@@ -121,7 +122,7 @@ LCS コンフィギュレーションを介して最大 3 か月更新を延期�
 
 ### <a name="is-there-tooling-available-to-support-testing-the-latest-release"></a>最新のリリースのテストをサポートするために使用可能なツールはありますか?
 
-Finance and Operations 用の [Regression Suite Automation Tool](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests) は、[現在入手可能](https://www.microsoft.com/download/details.aspx?id=57357)です。 このツールは、ユーザー受け入れテストの費用と時間を大幅に減少します。 通常、ユーザー受け入れテストは Microsoft アプリケーションの更新プログラムを取得するか、カスタム コードとコンフィギュレーションを Dynamics 365 for Finance and Operations 実稼働環境に適用する前に必要です。 機能パワー ユーザーが Finance and Operations タスク レコーダーを使用してビジネス タスクを記録し、ソース コードを作成しなくても自動テストのスイートに変換できるようにします。 テスト ライブラリは、ビジネス プロセス モデラー (BPM) ライブラリを使用して Lifecycle Services に保存および配分され、テストの実行、報告、調査のために Azure DevOps と完全に統合されます。 テスト データ パラメーターは、テスト ステップから切り離され、Excel データ ファイルに保存されます。
+Finance and Operations 用の「[Regression Suite Automation Tool](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests)」は[現在利用可能](https://www.microsoft.com/download/details.aspx?id=57357)です。 このツールは、ユーザー受け入れテストの費用と時間を大幅に減少します。 通常、ユーザー受け入れテストは Microsoft アプリケーションの更新プログラムを取得するか、カスタム コードとコンフィギュレーションを Dynamics 365 for Finance and Operations 実稼働環境に適用する前に必要です。 機能パワー ユーザーが Finance and Operations タスク レコーダーを使用してビジネス タスクを記録し、ソース コードを作成しなくても自動テストのスイートに変換できるようにします。 テスト ライブラリは、ビジネス プロセス モデラー (BPM) ライブラリを使用して Lifecycle Services に保存および配分され、テストの実行、報告、調査のために Azure DevOps と完全に統合されます。 テスト データ パラメーターは、テスト ステップから切り離され、Excel データ ファイルに保存されます。
 
 ### <a name="how-can-i-test-and-validate-that-the-integrations-continue-to-work"></a>統合が機能し続けていることはどのようにテストおよび検証できますか?
 
@@ -164,7 +165,7 @@ Retail サーバーおよびクラウド POS などのすべてのクラウド �
 
 ### <a name="what-options-are-available-to-minimize-impact-to-my-retail-cloud-components"></a>Retail クラウド コンポーネントへの影響を最小限に抑えるためにどのオプションを使用できますか?
 
-Retail クラウド コンポーネントには、Dynamics 365 バックオフィスと同じダウンタイムが必要です。 今後のリリースでは、展開への更新を減らしてさらにスケジュールするために Retail クラウド スケール単位 (RCSU) が使用可能になります。 RCSU の詳細については、[ドキュメント](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-retail/planned-features)および[リリース ノート](https://docs.microsoft.com/business-applications-release-notes/#pivot=products&panel=products1) サイトにある発行済みのリリース情報を参照してください。
+Retail クラウド コンポーネントには、Dynamics 365 バックオフィスと同じダウンタイムが必要です。 今後のリリースでは、展開への更新を減らしてさらにスケジュールするために Retail Cloud Scale Unit (RCSU) が使用可能になります。 RCSU の詳細については、[ドキュメント](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-retail/planned-features)および[リリース ノート](https://docs.microsoft.com/business-applications-release-notes/#pivot=products&panel=products1) サイトにある発行済みのリリース情報を参照してください。
 
 ### <a name="will-there-be-options-to-take-individual-hotfixes-for-my-retail-solution-components"></a>Retail ソリューション コンポーネントの個別の修正プログラムを取得するオプションはありますか?
 
@@ -193,4 +194,3 @@ Microsoft では、店舗、デバイス、およびユーザー全体で機能�
 - **画面レイアウト デザイナー**: POS のほとんどのビジュアル要素は、顧客組織の管理ユーザーによって構成され、集中管理されます。 つまり、対応する画面レイアウトに含まれるように明示的に設定されていない限り、新しい POS の操作は POS に自動的に表示されません。 画面レイアウトは、画面レイアウト デザイナーを使用して構成され、店舗または POS デバイスに固有の場合があります。 詳細については、[販売時点管理 (POS) の画面レイアウト](../../retail/pos-screen-layouts.md)を参照してください。
 - **機能プロファイル、POS のアクセス許可、Retail パラメーター**: POS の機能の重要な要素は通常、ユーザーがコンフィギュレーション可能です。 これは、機能プロファイル、POS のアクセス許可、小売パラメーター、または該当するシナリオにおけるデバイス、レジスター、店舗、またはユーザー レベルの機能の管理を可能にするその他のコントロールを通じて設定できます。
 - **Modern POS および Retail Store Scale Unit**: Modern POS および Retail Store Scale Unit は小売業者によって自己ホストされるため、いずれかのコンポーネントを含むトポロジによっては、個別 (および低速) のリズムかつクラウド専用トポロジより細かい方法での更新の展開が可能になります。
-

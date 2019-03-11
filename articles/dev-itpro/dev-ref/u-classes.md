@@ -1,13 +1,13 @@
 ---
-title: "U クラス"
-description: "文字 U で始まるシステム API クラス。"
+title: U クラス
+description: 文字 U で始まるシステム API クラス。
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/14/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a65999588a5c3f9c5feec4acb66d481707a2ebcd
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 957c24baefc116e543c73749e0e36f21899345ed
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368821"
 ---
-
 # <a name="u-classes"></a>U クラス
 
 [!include [banner](../includes/banner.md)]
@@ -118,29 +117,38 @@ UserConnection クラスは、主要な接続と同じログオン プロパテ�
 
 SQL ステートメントが実行され、結果が UserConnection クラスのコンテキストで返されます。 UserConnection クラスを使用して、別個のトランザクション スコープを取得できます。
 
+注記: ユーザー接続リークを防ぐため、finally ブロックで Userconnection.finalize() を呼び出す必要があります。  オープン ユーザー接続の数がサーバー上で制限されており、制限に達すると、それ以上接続を開くことができなくなり、ビジネス ロジックのエラーになる可能性があります
+
 ### <a name="examples"></a>例
 
     static void example()  
     { 
-        UserConnection Con; 
-        Statement Stmt; 
-        Str sql; 
-        ResultSet R; 
-        SqlStatementExecutePermission perm; 
-        Con = new UserConnection(); 
-        sql = 'SELECT VALUE FROM SQLSYSTEMVARIABLES'; 
-        Stmt = Con.createStatement(); 
-        perm = new SqlStatementExecutePermission(sql); 
-        // Check for permission to use the statement. 
-        perm.assert(); 
-        R = Stmt.executeQuery(sql); 
-        while ( R.next() ) 
-        { 
-            print R.getString(1); 
-        } 
-    }
+        UserConnection Con;
+        try
+        {
+            Statement Stmt; 
+            Str sql; 
+            ResultSet R; 
+            SqlStatementExecutePermission perm; 
+            Con = new UserConnection(); 
+            sql = 'SELECT VALUE FROM SQLSYSTEMVARIABLES'; 
+            Stmt = Con.createStatement(); 
+            perm = new SqlStatementExecutePermission(sql); 
+            // Check for permission to use the statement. 
+            perm.assert(); 
+            R = Stmt.executeQuery(sql); 
+            while ( R.next() ) 
+            { 
+                print R.getString(1); 
+            } 
+        }
+        finally
+        {
+            con.finalize();
+        }
+     }
 
-### <a name="methods"></a>メソッド
+### <a name="methods"></a>方法
 
 | 方法                                                | 説明                                         |
 |-------------------------------------------------------|-----------------------------------------------------|
@@ -329,7 +337,6 @@ X++ コードとメタデータの作成、読み取り、更新、および削�
 ### <a name="method-flushcache"></a>メソッド flushCache
 
     public void flushCache()
-
 
 
 

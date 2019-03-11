@@ -1,13 +1,13 @@
 ---
-title: "情報へのアクセスとレポート"
-description: "このトピックでは、Finance and Operations プラットフォームの一部として利用可能なさまざまなレポート オプションについて説明します。"
+title: 情報へのアクセスとレポート
+description: このトピックでは、Finance and Operations プラットフォームの一部として利用可能なさまざまなレポート オプションについて説明します。
 author: TJVass
 manager: AnnBe
 ms.date: 08/14/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 192fc687c62311a1a8a27699106c9fdc82be96cd
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369237"
 ---
-
 # <a name="information-access-and-reporting"></a>情報へのアクセスとレポート
 
 [!include [banner](../includes/banner.md)]
@@ -49,7 +48,7 @@ ms.lasthandoff: 08/13/2018
 習熟した*レポート* *メーカー*になるためには、過去の阻害要因を取り除くことがしばしば役に立ちます。 次のセクションでは、報告に関する 3 つの共通の誤解を修正しようとしています。
 
 - **神話\#1: 業務レポートには「リアルタイム」データが必要です。** 対照的に*リアルタイム*の結果が必要なレポート シナリオは比較的少数です。 物事の壮大なスキームは、これらのソリューションが生産環境で発生する可能性の高い開発コストと重い負担を考えると、*リアルタイム* ビューで依頼する重要な立場を取得することが推奨されます。
-- **神話\# 2: 最適なツールは、開発者が最も使いやすいツールです。** 企業の資産を監視できるレポートに対する顧客の要求を考慮してください。 過去には、開発者は結果セットを十分に減らすためのフィルターを提供するために、完全にユーザーに依存した複雑な計算を伴う在庫品目の一覧を表示する静的レポートを構築していました。 このソリューションは、データ セットを減らした開発環境で完全に機能する場合があります。 ただし、この方法は、生産で利用される際に大量の計算リソースを不必要に使用する傾向があります。
+- **神話\# 2: 最適なツールは、開発者が最も使いやすいツールです。** 企業の資産を監視できるレポートに対する顧客の要求を考慮してください。 過去には、開発者は結果セットを十分に減らすためのフィルターを提供するために、完全にユーザーに依存した複雑な計算を伴う在庫品目の一覧を表示する静的レポートを構築していました。 このソリューションは、データ セットを減らした開発環境で完全に機能する場合があります。 ただし、この方法は、実稼動時に利用される際に大量の計算リソースを不必要に使用する傾向があります。
 - **神話\# 3: 開発者は、視覚効果に優れたデザインを作成するのが得意です。** 実際には、多くの場合、開発者は、顧客の美的な好みに訴えるようなエレガントなデザイン レイアウトを作成することに関して、最悪の違反者です。 分析レポートに関しては、データを直接調査し、個人用ビューを共有する権限をユーザーに与えた方がよいでしょう。
 
 ## <a name="understanding-report-requirements"></a>レポート要件を理解する
@@ -118,7 +117,7 @@ Finance and Operations アプリケーションでサポートされる情報へ
 - フォーム データ ソースは、ネイティブ コントロールを使用して分析ビューの集計クエリをサポートするようになりました。
 
 ## <a name="analytical-tools-and-visualizations"></a>分析ツールおよび視覚エフェクト
-分析データに基づく埋め込みビジュアルでは、ユーザーが集計ビュー間でそれらに影響を与えるトランザクションの詳細までナビゲートすることができます。 Finance and Operations の Power BI サービス統合は、データにアクセスするための組み込みサポートを備えたトップクラスの分析ツールを提供します。 これらのツールは、「市民開発者」が必要なレポートを作成し、そのレポートを組織内の他の人と共有できるようにします。 Lifecycle Services で使用可能な Power BI コンテンツ パックを使用して開始します。 [Power BI 統合](power-bi-integration.md)で Power BI 統合の詳細について確認します。 分析ツールと視覚エフェクトの申請例には、四半期ごとの顧客売上、地域別の総収入、在庫切り換えなどがあります。
+分析データに基づく埋め込みビジュアルでは、ユーザーが集計ビュー間でそれらに影響を与えるトランザクションの詳細までナビゲートすることができます。 Finance and Operations の Power BI サービス統合は、データにアクセスするための組み込みサポートを備えたトップクラスの分析ツールを提供します。 これらのツールは、「市民開発者」が必要なレポートを作成し、そのレポートを組織内の他の人と共有できるようにします。 Lifecycle Services で使用可能な Power BI コンテンツ パックを使用して開始します。 Power BI 統合の詳細については「[Power BI統合](power-bi-integration.md)」で確認してください。 分析ツールと視覚エフェクトの申請例には、四半期ごとの顧客売上、地域別の総収入、在庫切り換えなどがあります。
 
 [![supplier-quality-analysis-report](./media/supplier-quality-analysis-report.png)](./media/supplier-quality-analysis-report.png)
 
@@ -201,4 +200,3 @@ Finance and Operations では、既定の主勘定カテゴリを使用した標
 - ユーザー コントロールは、財務報告の特殊なニーズに合わせて調整されます。
 - 会社または事業単位間のデータを含むロール アップ レポートを作成します。
 - パフォーマンスの最適化のために財務データ マートを活用します。
-

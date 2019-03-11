@@ -1,40 +1,39 @@
 ---
-title: "拡張機能の要求"
-description: "このトピックでは、Dynamics 365 for Finance and Operations で追加の拡張ポイントを要求する方法について説明します。"
+title: 拡張機能の要求
+description: このトピックでは、Dynamics 365 for Finance and Operations で追加の拡張ポイントの要求を提出する方法について説明します。
 author: FrankDahl
 manager: AnnBe
 ms.date: 06/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
 ms.custom: 89563
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.translationtype: HT
-ms.sourcegitcommit: 599c474cf6a243ceb58848a8b14dfbc0a28fc081
 ms.openlocfilehash: 652485974ce7788d91bce0da78b44477e25c5c57
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368431"
 ---
-
-# <a name="extensibility-requests"></a>拡張機能の要求
+# <a name="extensibility-requests"></a>拡張性の要求
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Finance and Operations は拡張機能を排他的に使用して、製品をカスタマイズします。 この変更はパートナーのエコシステム全体に影響することを知っています。 [拡張性のホーム ページ](extensibility-home-page.md)に記載されているリソースを読むことをお勧めします。 これらのリソースは多くの質問に答え、拡張機能を使用してソリューションを構築するための準備を整えます。
+Microsoft Dynamics 365 for Finance and Operations は、専用の拡張機能を使用して、製品をカスタマイズします。 この変更はパートナーのエコシステム全体に影響することを知っています。 [拡張性のホーム ページ](extensibility-home-page.md)に記載されているリソースを読むことをお勧めします。 これらのリソースは多くの質問に答え、拡張機能を使用してソリューションを構築するための準備を整えます。
 
 拡張機能では、オーバーレイによって可能であったいくつかのカスタマイズが実行できないことが見つかります。 オーバーレイすることなく同じビジネス要件を可能にするために、多くの拡張機能を追加しており、今後さらに追加する予定です。 オーバーレイにより実行された一部のカスタマイズについては、ログ要求をして、顧客の必要に気付けるようにする必要があります。
 
 ## <a name="what-we-are-doing"></a>実行する内容
-しばらくの間、拡張ベースのカスタマイズ モデルに向けて取り組みます。 過去のいくつかのリリースにわたって、段階的にモデルが封印されてきました。 Dynamics 365 for Finance and Operations リリース 8.0 以降、これでシールが完了しました。 このリリースより後は、拡張ベースのカスタマイズのみが許可されます。 
+しばらくの間、拡張ベースのカスタマイズ モデルに向けて取り組みます。 過去のいくつかのリリースにわたって、段階的にモデルが封印されてきました。 現在の Dynamics 365 for Finance and Operations リリース 8.0 で、シールが完了します。 このリリースより後は、拡張ベースのカスタマイズのみが許可されます。 
 
 今後のリリースでは、より多くの拡張機能を追加して、独立系ソフトウェア ベンダー (ISV) と付加価値再販業者 (VAR) が包括的なビジネス ソリューションを提供できるようにします。 顧客ごとに公開の頻度に応じてこれらに優先順位を付けます。
 
@@ -66,7 +65,7 @@ Microsoft 追跡データベースに要求がコピーされる間に、ログ�
 - **拡張オプションの管理**
 - **拡張機能のサポート リクエストの作成**
 
-**拡張オプションの管理**をクリックすると、要求間で共有されるすべての情報を表示できます。 この情報には、**ISV** または **VAR** ソリューションのいずれかの要求、および要求が**顧客**実装プロジェクトに固有のものであるかどうかが含まれています。 ロールが **ISV** または **VAR** を選択した場合は、ソリューション名を指定する必要があります。 名前は、わかりやすく AppSource ソリューションと関連付けられる必要があります。 **要求された日付順**は、開発に対して要求が利用可能になる最後の日付を示します。 
+**拡張オプションの管理**をクリックすると、要求間で共有されるすべての情報を表示できます。 この情報には、**ISV** または **VAR** ソリューションのいずれかの要求、および要求が**顧客**実装プロジェクトに固有のものであるかどうかが含まれています。 ロールが **ISV** または **VAR** を選択した場合は、ソリューション名を指定する必要があります。 名前は、わかりやすく、AppSource ソリューションと関連付けられる必要があります。 **要求された日付順**は、開発に対して要求が利用可能になる最後の日付を示します。 
 
   > [!IMPORTANT]
   > Microsoft は指定された日付によりすべての要求が指定されるよう保証していないことに注意してください。 ただし、必要な日時は、Microsoft の要求を計画する際に考慮されるインジケータを提供します。
@@ -98,18 +97,17 @@ Microsoft に送信された要求は、Microsoft 追跡データベース内で
 任意の要求を記録する前に、プライバシーに関する声明を必ず読んでください。
 
 > [!NOTE]
-> 拡張性の要求を修正プログラムとしてリリースしません。  
+> 拡張性の要求を修正プログラムとしてリリースしません。  
 
-拡張性要求は、Dynamics 365 for Finance and Operations のみために排他的です。 Dynamics AX 2012 またはそれ以前のリリースの拡張機能の要求に対応する計画はありません。
+拡張機能の要求は独占的に Dynamics 365 for Finance and Operations のためのものです。 Dynamics AX 2012 またはそれ以前のリリースの拡張機能の要求に対応する計画はありません。
 
 ## <a name="when-will-my-extensibility-requests-be-enabled"></a>個人の拡張機能の要求はいつ有効になりますか。
 
 拡張性要求は、バックログに記録されます。 Microsoft エンジニアは、すべての要求に優先度付けを行ってから、優先順位で作業します。 Microsoft はすべての要求が処理されることを確証できないことに注意してください。 特に、本質的に煩雑な要求はシームレスなアップグレードを妨げるためサポートされません。
 
 ## <a name="how-will-extensibility-requests-be-made-available-to-deploy"></a>拡張機能の要求を展開するにはどうすればよいですか。
-Dynamics 365 for Finance and Operations リリース 8.0 の後、新しい機能拡張の要求で頻繁にアプリケーション更新をリリースする予定です。 これは、プラットフォームの更新プログラムと同じリリース ケイデンスに従います。 
+Dynamics 365 for Finance and Operations リリース 8.0 の後では、新しい機能拡張要求で頻繁にアプリケーションの更新プログラムをリリースする予定です。 これは、プラットフォームの更新プログラムと同じリリース ケイデンスに従います。 
 
 ## <a name="still-have-questions"></a>疑問が解決されない場合
 
 [拡張性についてよく寄せられる質問](app-sealing-faq.md)と[拡張機能のホーム ページ](extensibility-home-page.md)にリストされた他のリソースをご覧ください。
-

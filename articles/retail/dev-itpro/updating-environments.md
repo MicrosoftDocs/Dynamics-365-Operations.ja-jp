@@ -1,14 +1,14 @@
 ---
-title: "コードおよび小売プロジェクトの環境の更新"
-description: "このトピックでは、Microsoft Dynamics 365 for Retail の更新コード、および環境の推奨事項について説明します。"
+title: コードおよび小売プロジェクトの環境の更新
+description: このトピックでは、Microsoft Dynamics 365 for Retail の更新コード、および環境の推奨事項について説明します。
 author: Andreash1
 manager: AnnBe
 ms.date: 07/09/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: IT Pro
 ms.reviewer: kfend
 ms.search.scope: Operations, Retail
@@ -17,16 +17,14 @@ ms.search.industry: Retail
 ms.author: andreash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: Retail 7.3
-ms.translationtype: HT
-ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
 ms.openlocfilehash: 3dd56c17f92aed76c19e3e82dd32c651723d4c1c
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/17/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369624"
 ---
-
-
-# <a name="update-code-and-environments-for-retail-projects"></a>コードおよび小売プロジェクトの環境の更新
+# <a name="update-code-and-environments-for-retail-projects"></a>Retail プロジェクトのコードと環境の更新
 
 [!include [banner](../../includes/banner.md)]
 
@@ -72,7 +70,7 @@ ms.lasthandoff: 09/17/2018
 2. バッチ サービスが実行中であることを確認してください。
 3. 環境再プロビジョニング ツールを実行します。 (LCS のグローバル共有資産ライブラリで最新バージョンを見つけて、**Maintain** 関数を使用して展開します。)
 4. ツールが成功し、小売チャネル プロファイルが正しい URL で最新であり、既定のデータ グループのデータ同期ジョブが成功したことを確認します。
-5. Microsoft Dynamics 365 for Finance and Operations では、**小売用スケジューラの初期化**ジョブ (古いデータを削除するために選択) を実行してください。 この手順では、すべての Commerce Data Exchange (CDX) コンフィギュレーションの変更がリソース ファイルを使用して自動化されていることを前提としています。 CDX のコンフィギュレーションの変更が自動化されていない場合、およびテーブル、サブジョブ、およびジョブが手動で小売チャネルのスキーマで作成された場合、既存のコンフィギュレーションを削除するオプションを選択しないでください。 CDX のコンフィギュレーションの変更を自動化することをお勧めします。 
+5. Microsoft Dynamics 365 for Finance and Operations では、古いデータを削除するために **小売用スケジューラの初期化**ジョブ (古いデータを削除するために選択) を実行します。 この手順では、すべての Commerce Data Exchange (CDX) コンフィギュレーションの変更がリソース ファイルを使用して自動化されていることを前提としています。 CDX のコンフィギュレーションの変更が自動化されていない場合、およびテーブル、サブジョブ、およびジョブが手動で小売チャネルのスキーマで作成された場合、既存のコンフィギュレーションを削除するオプションを選択しないでください。 CDX のコンフィギュレーションの変更を自動化することをお勧めします。 
 
 ## <a name="taking-updates-frequently"></a>頻繁にプログラムを更新
 
@@ -196,4 +194,3 @@ Finance and Operations、および小売カスタマイズ パッケージは、
 [Retail プロジェクトの新しい環境、Azure DevOps、およびブランチの設定](./new-environments-visual-studio-teams-branch-retail-projects.md)
 
 [テストおよびパフォーマンス](./retail-implementation-testing-performance.md)
-

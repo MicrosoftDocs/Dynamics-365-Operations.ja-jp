@@ -1,28 +1,27 @@
 ---
-title: "MetadataService タイプ"
-description: "アプリケーション ワークスペースでさまざまなメタデータ要素にアクセスして構成する機能を提供します。"
+title: MetadataService タイプ
+description: アプリケーション ワークスペースでさまざまなメタデータ要素にアクセスして構成する機能を提供します。
 author: shadykdc
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
-ms.search.scope: 
+ms.search.scope: ''
 ms.search.region: Global
 ms.author: kashea
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
-ms.translationtype: HT
-ms.sourcegitcommit: ed6cabcc8c76fba3d4414cd4b564b720c54169e0
+ms.search.validFrom: ''
+ms.dyn365.ops.version: ''
 ms.openlocfilehash: abda342ecfec227b7349e4216ea82df3d652cf0c
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369978"
 ---
-
 # <a name="metadataservice-type"></a>MetadataService タイプ
 
 [!include [banner](../../../../includes/banner.md)]
@@ -381,5 +380,4 @@ metadataService.hideNavigation('Select-a-customer', 'Select-a-vehicle');
 | pageNamesToHide|string [ ]|ページ名|
 
 #### <a name="returns-any"></a>any を返します
-
 

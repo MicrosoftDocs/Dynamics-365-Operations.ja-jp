@@ -1,13 +1,13 @@
 ---
-title: "データ エンティティの動作プロパティ"
-description: "このトピックでは、そのエンティティのデータ ソースであるテーブルまたはビューのプロパティ値をオーバーライドさせるビヘイビア データ エンティティのプロパティについて説明します。"
+title: データ エンティティの動作プロパティ
+description: このトピックでは、そのエンティティのデータ ソースであるテーブルまたはビューのプロパティ値をオーバーライドさせるビヘイビア データ エンティティのプロパティについて説明します。
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: margoc
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: da3dc2cdc6f76709b93b6da714c30eb456f72a29
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368880"
 ---
-
 # <a name="behavioral-properties-on-data-entities"></a>データ エンティティの動作プロパティ
 
 [!include [banner](../includes/banner.md)]
@@ -70,7 +69,7 @@ ms.lasthandoff: 08/13/2018
 主にエクスポートに使用されるエンティティに対して、**IsReadOnly** を **はい** に設定します。
 
 ## <a name="data-source-level"></a>データ ソース レベル
-データ エンティティに 3 つのデータ ソースがある場合は、その中から 2 つではなく、1 つのデータ ソースのデータを変更するために、エンティティを使用するためのプロセスを許可する場合があります。 読み取り専用データ ソースは、参照目的で使用できます。 エンティティ デザイナーを使用すると、この非常に制度の高い制御を達成することができます。 エンティティの **メタデータ**&gt;**データ ソース** ノードで、エンティティ ノードを選択すると、その 1 つのデータソースの **IsReadOnly** プロパティの値を設定できます。 次のテーブルでは、データ ソース レベルの **IsReadOnly** 設定とエンティティ レベルの相互作用について説明します。
+データ エンティティに 3 つのデータ ソースがある場合は、その中から 2 つではなく、1 つのデータ ソースのデータを変更するために、エンティティを使用するためのプロセスを許可する場合があります。 読み取り専用データ ソースは参照目的で使用することができます。 エンティティ デザイナーを使用すると、この非常に制度の高い制御を達成することができます。 エンティティの **メタデータ**&gt;**データ ソース** ノードで、エンティティ ノードを選択すると、その 1 つのデータソースの **IsReadOnly** プロパティの値を設定できます。 次のテーブルでは、データ ソース レベルの **IsReadOnly** 設定とエンティティ レベルの相互作用について説明します。
 
 <table>
 <thead>
@@ -91,7 +90,7 @@ ms.lasthandoff: 08/13/2018
 <td>いいえ、はい</td>
 <td>無</td>
 <td><ul>
-<li><strong>いいえ:</strong> <strong>IsReadOnly</strong> がエンティティ レベルで<strong>はい</strong>に設定されて<em>いない限り</em>、データ変更操作 (CUD) <em>は</em>データ ソースで許可されます。</li>
+<li><strong>いいえ:</strong> エンティティ レベルで <strong>IsReadOnly</strong> が <strong>はい</strong>にセットされて<em>いない限り</em>、データ変更操作 (CUD) <em>は</em>データ ソースで許可されます。</li>
 <li><strong>はい:</strong> エンティティの <strong>IsReadOnly</strong> 設定に関係なく、操作のみが許可されます</li>
 </ul></td>
 </tr>
@@ -129,7 +128,7 @@ ms.lasthandoff: 08/13/2018
 <li><strong>いいえ:</strong> ユーザーは、このフィールドのデータを新しいレコードで変更することはできません。</li>
 <li><strong>はい:</strong> ユーザーは、このフィールドのデータを新しいレコードに対して変更することができます。</li>
 </ul>
-この動作は、すべてのコンシューマー (X++、OData など) に適用されます。
+この動作はすべてのコンシューマー (X++、OData など) に適用されます。
 <blockquote>[!IMPORTANT] <strong>いいえ</strong>および<strong>はい</strong>の値は、基になるテーブル内のフィールドの設定を上書き<em>しません</em>。</blockquote></td>
 </tr>
 <tr>
@@ -151,4 +150,3 @@ ms.lasthandoff: 08/13/2018
 </tr>
 </tbody>
 </table>
-

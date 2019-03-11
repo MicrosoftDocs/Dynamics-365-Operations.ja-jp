@@ -1,13 +1,13 @@
 ---
-title: "コンフィギュレーション データ テンプレート"
-description: "このトピックは、コンフィギュレーション データ テンプレートについて説明し、それらを作成する方法について説明します。"
+title: コンフィギュレーション データ テンプレート
+description: このトピックは、コンフィギュレーション データ テンプレートについて説明し、それらを作成する方法について説明します。
 author: mikefalkner
 manager: AnnBe
 ms.date: 09/29/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: margoc
 ms.search.scope: Operations
@@ -16,21 +16,21 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Platform update 7
+ms.openlocfilehash: 121757529cfc7bc0a44fd2c9d84db2a7297dbf4d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 48d6d05cd8c3da3447cea7e4a1ad095dad5a2a99
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369158"
 ---
 # <a name="configuration-data-templates"></a>コンフィギュレーション データ テンプレート
 
 [!include [banner](../includes/banner.md)]
 
-コンフィグレーション データ テンプレートは、データ プロジェクトで使用できる各モジュール領域のエンティティの事前定義リストです。 Microsoft Dynamics 365 for Finance and Operations の **データ管理** ワークスペース内の **テンプレート** ページを使用することにより、これらのテンプレートを作成、表示、および修正することができます。
+コンフィグレーション データ テンプレートは、データ プロジェクトで使用できる各モジュール領域のエンティティの事前定義リストです。 Microsoft Dynamics 365 for Finance and Operations の**データ管理**ワークスペース内の**テンプレート**ページを使用することにより、これらのテンプレートを作成、表示、および修正することができます。
 
 > [!IMPORTANT]
-> 既定の構成テンプレートは、Microsoft Dynamics 365 for Finance and Operations Enterprise Edition 2017 年 7 月の更新プログラムで提供されました。 コンフィギュレーション データ プロジェクト機能は、Microsoft Dynamics 365 for Operations プラットフォーム更新プログラム 7 で使用できます。 現在の製品リリースで、自分自身のテンプレートを作成および使用することができます。
+> 既定のコンフィギュレーション テンプレートは、Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition 2017 年 7 月更新プログラムで配信されました。 コンフィギュレーション データ プロジェクト機能は、Microsoft Dynamics 365 for Operations プラットフォーム更新プログラム 7 でが利用可能です。 現在の製品リリースで、自分自身のテンプレートを作成および使用することができます。
 
 ## <a name="create-a-new-configuration-data-template"></a>新しいコンフィギュレーション データ テンプレートを作成する
 **データ管理** ワークスペースの **テンプレート** ページには、エンティティのテンプレートを作成できるようにするためのツールが用意されています。 このページは設定ページに似ており、2 つの機能は同じように動作します。 新しい機能を活用するには、**拡張ビュー** を使用する必要があります。
@@ -47,7 +47,7 @@ ms.lasthandoff: 04/20/2018
 
 これで、テンプレートを 1 つのプロジェクトで使用できます。 ただし、エクスポート プロセスを制御するいくつかの追加機能を使用する可能性があります。
 
-- Microsoft Excel ブックでグリッドの内容を開くには、**Excel で開く** ボタンを使用します。 必要に応じてエンティティを変更してから、**公開**を選択して Finance and Operations に変更をアップロードします。
+- Microsoft Excel ブックでグリッドの内容を開くには、**Excel で開く**ボタンを使用します。 必要に応じてエンティティを変更してから、**公開**を選択して Finance and Operations に変更をアップロードします。
 - テンプレートをエクスポートした場合、そのテンプレートを Finance and Operations に戻すことを希望する場合、**テンプレートのインポート**を選択し、テンプレート ファイルを参照し、**テンプレートの作成**を選択し、読み込みます。
 - 開いているテンプレートの内容を置き換えるには、**テンプレートから置換** を選択し、インポートするエンティティがあるテンプレート ファイルを参照してから、**テンプレートを作成** を選択してテンプレート ファイルを読み込みます。 未処理のテンプレート内の値は上書きされます。
 - プロジェクトからテンプレートを作成するには、**新規** を選択してテンプレートを作成します。 テンプレートの ID と名前を入力し、次に**プロジェクトからテンプレートを置換**を選択します。 表示されるプロジェクトの一覧で、プロジェクトを選択し、**テンプレートの作成**を選択してそのプロジェクトから開いているテンプレートにプロジェクト エンティティを移動します。 未処理のテンプレート内の値は上書きされます。
@@ -151,4 +151,3 @@ ms.lasthandoff: 04/20/2018
 多くの既定のテンプレートには、顧客、仕入先、およびリリースされた製品などのマスター データのエンティティが含まれます。 これらのエンティティは、パラメーターと参照データをロードした後に必要となるエンティティの正しい順序を示すために含まれています。 マスター エンティティは、よく 100 以上の番号が付けられたモジュール バンド内で順序付けされます。 グリッドで、これらのエンティティのエンティティ カテゴリは**マスター**になります。
 
 マスター データを構成に含めない場合は、プロジェクトからこれらのエンティティを削除します。
-

@@ -1,30 +1,29 @@
 ---
-title: "拡張可能フォームの書き込み"
-description: "このトピックでは、拡張可能フォームを書き込む方法について説明します。"
+title: 拡張可能フォームの書き込み
+description: このトピックでは、拡張可能フォームを書き込む方法について説明します。
 author: smithanataraj
 manager: AnnBe
 ms.date: 09/09/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: kfend
 ms.search.scope: Operations
 ms.custom: 268724
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: smithanataraj
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.translationtype: HT
-ms.sourcegitcommit: 965826f5fddc2f53f33157434929eb265979376e
 ms.openlocfilehash: 6b439202a4afbca3f4517c3935590bf1509cc362
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/17/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369750"
 ---
-
 # <a name="write-extensible-forms"></a>拡張可能フォームの書き込み
 
 [!include [banner](../includes/banner.md)]
@@ -42,4 +41,3 @@ ms.lasthandoff: 09/17/2018
 
 ## <a name="form-controls"></a>フォーム コントロール
 コントロールが移動により拡張不可になった場合、フォーム コントロールでの移動により中断が発生する可能性があります。
-

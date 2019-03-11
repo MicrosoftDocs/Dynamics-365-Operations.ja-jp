@@ -1,13 +1,13 @@
 ---
-title: "Lifecycle Services (LCS) のライセンス数見積もりツール"
-description: "この記事では、Microsoft Dynamics Lifecycle Services (LCS) のライセンス数見積もりツールに関する情報を提供します。 ライセンス数見積もりツールは、組織の Microsoft Dynamics AX に必要なライセンスの数の予測に役立ちます。 また、データを入力してレポートを生成する方法についても説明します。これで、ツールの使用を開始できます。"
+title: Lifecycle Services (LCS) のライセンス数見積もりツール
+description: この記事では、Microsoft Dynamics Lifecycle Services (LCS) のライセンス数見積もりツールに関する情報を提供します。 ライセンス数見積もりツールは、組織の Microsoft Dynamics AX に必要なライセンスの数の予測に役立ちます。 また、データを入力してレポートを生成する方法についても説明します。これで、ツールの使用を開始できます。
 author: kfend
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012
-ms.service: 
-ms.technology: 
+ms.service: ''
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: AX 2012
@@ -15,31 +15,30 @@ ms.custom: 13381
 ms.assetid: 6f5723b9-a2f5-40e1-9a95-2fd5f6b9fd84
 ms.search.region: Global
 ms.author: kfend
-ms.search.validFrom: 
+ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: a3f006c2c7cb37c489a3268217b0e65a1f4d39e4
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369870"
 ---
-
 # <a name="license-sizing-estimator-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) のライセンス数見積もりツール
 
 [!include [banner](../../includes/banner.md)]
 
 この記事では、Microsoft Dynamics Lifecycle Services (LCS) のライセンス数見積もりツールに関する情報を提供します。 ライセンス数見積もりツールは、組織の Microsoft Dynamics AX に必要なライセンスの数の予測に役立ちます。 また、データを入力してレポートを生成する方法についても説明します。これで、ツールの使用を開始できます。
 
-Microsoft Dynamics Lifecycle Services (LCS) では、ライセンス数見積もりツールが組織の Microsoft Dynamics AX に必要なライセンスの数の予測に役立ちます。 これは、既定またはカスタマイズされたロールをモデル化して、必要なクライアント アクセス ライセンス (CAL) を自動的に計算するために使用できる共有ワークスペースを提供します。 ライセンス数見積もりツールは、次の状況で使用できる情報を提供します。
+Microsoft Dynamics Lifecycle Services (LCS) では、ライセンス数見積もりツールは、組織の Microsoft Dynamics AX に必要なライセンスの数の予測に役立ちます。 これは、既定またはカスタマイズされたロールをモデル化して、必要なクライアント アクセス ライセンス (CAL) を自動的に計算するために使用できる共有ワークスペースを提供します。 ライセンス数見積もりツールは、次の状況で使用できる情報を提供します。
 
--   顧客が Microsoft Dynamics AX を購入する前に
--   既存の Microsoft Dynamics AX の実装を展開する前に
+-   顧客が Microsoft DynamicsAX を購入する前に
+-   既存の Microsoft DynamicsAX の実装を展開する前に
 -   新しいバージョンの Microsoft Dynamics AX にアップグレードする前に
 
-いくつかの方法で、ロールおよびその関連する職務を定義することができます。 ライセンス数見積もりツールは、Microsoft Dynamics AX に含まれる既定のロールを提供します。 顧客の組織内のロールを適切に説明している場合、これらの定義済みロールのいずれかを使用することができます。 定義済みのロールが組織の要件を満たしていない場合は、職務を追加したり、職務を削除してカスタム ロールをモデル化することができます。 使用可能な職務の一覧から新しいロールをモデル化することもできます。 **重要:** ライセンス数見積もりツールで定義したロールは、Microsoft Dynamics AX にエクスポートできません。 Microsoft Dynamics AX でカスタム ロールを実装するには、[[Microsoft Dynamics AX でユーザー セキュリティを設定する](http://technet.microsoft.com/library/a9eea83b-60bf-4690-8442-a459de3c2001(AX.60).aspx)] を参照してください。 組織内のロールを定義した後は、入力した情報を要約したレポートを表示することができます。 このレポートは、組織が必要とするライセンスの数と種類を自動的に推定します。 見積は、各ロールに含まれる職務を実行するために必要な CAL レベル、および各ロールの人数に基づいています。 見積は、ユーザーが Microsoft Dynamics AX にアクセスする方法にも基づいています。 ユーザーは、ネームド ユーザーとして、またはライセンスされたデバイスを介して Microsoft Dynamics AX にアクセスできます。
+いくつかの方法で、ロールおよびその関連する職務を定義することができます。 ライセンス数見積もりツールは、Microsoft Dynamics AX に含まれる既定のロールを提供します。 顧客の組織内のロールを適切に説明している場合、これらの定義済みロールのいずれかを使用することができます。 定義済みのロールが組織の要件を満たしていない場合は、職務を追加したり、職務を削除してカスタム ロールをモデル化することができます。 使用可能な職務の一覧から新しいロールをモデル化することもできます。 **重要**: ライセンス数見積もりツールで定義したロールは、Microsoft Dynamics AX にエクスポートできません。 Microsoft Dynamics AX でカスタム ロールを実装するには、「[Microsoft Dynamics AX でユーザー セキュリティを設定する](http://technet.microsoft.com/library/a9eea83b-60bf-4690-8442-a459de3c2001(AX.60).aspx)」を参照してください。 組織内のロールを定義した後は、入力した情報を要約したレポートを表示することができます。 このレポートは、組織が必要とするライセンスの数と種類を自動的に推定します。 見積は、各ロールに含まれる職務を実行するために必要な CAL レベル、および各ロールの人数に基づいています。 見積は、ユーザーが Microsoft Dynamics AX にアクセスする方法にも基づいています。 ユーザーは、ネームド ユーザーとして、またはライセンスされたデバイスを介して Microsoft Dynamics AX にアクセスできます。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必要条件
 None
 
 ## <a name="getting-started"></a>はじめに
@@ -56,7 +55,6 @@ None
 ### <a name="generate-a-report"></a>レポートの生成
 
 **ライセンス数見積もりツール**ページで、**レポートの生成**をクリックします。 レポートでは、入力したデータが要約され、見積済ライセンス情報が表形式と円グラフ形式で表示されます。
-
 
 
 

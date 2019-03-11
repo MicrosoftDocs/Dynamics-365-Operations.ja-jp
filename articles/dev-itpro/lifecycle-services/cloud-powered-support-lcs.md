@@ -1,13 +1,13 @@
 ---
-title: "Finance and Operations サポート エクスペリエンスの管理"
-description: "このトピックでは、Microsoft Dynamics Lifecycle Services サービス のサポート ツールを使用して、サポート インシデントを管理する方法について説明します。"
+title: Finance and Operations サポート エクスペリエンスの管理
+description: このトピックでは、Microsoft Dynamics Lifecycle Services のサポート ツールを使用して、サポート インシデントを管理する方法について説明します。
 author: kfend
 manager: AnnBe
 ms.date: 02/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 92a3631af444745803a797d1c52b7c438e8e3c3f
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368762"
 ---
-
 # <a name="manage-finance-and-operations-support-experiences"></a>Finance and Operations サポート エクスペリエンスの管理
 
 [!include [banner](../includes/banner.md)]
@@ -112,12 +111,12 @@ ms.lasthandoff: 08/09/2018
 
 **アクセスおよび可用性**
 
-顧客の実装プロジェクトに追加されたすべてのユーザーはこの機能にアクセスを許可できます。 これには、プロジェクト オーナー、組織管理者、チームメンバー、および環境マネージャーが含まれます。 
+顧客の実装プロジェクトに追加されたすべてのユーザーはこの機能にアクセスを許可できます。 これには、プロジェクト オーナー、組織管理者、チームメンバー、および環境マネージャーが含まれます。 
 
 この機能は次で利用できます。
-- Dynamics 365 for Finance and Operation 
-- Microsoft が管理する環境 
-- LCS プロジェクトの実稼動環境 
+- Dynamics 365 for Finance and Operation 
+- Microsoft が管理する環境 
+- LCS プロジェクトの実稼動環境 
 - すべてのサポート計画
 
 ### <a name="report-a-production-outage"></a>稼働停止のレポート
@@ -141,7 +140,6 @@ ms.lasthandoff: 08/09/2018
 ![完了](media/outage6.jpg)
 
 > [!NOTE] 
-> 停止シナリオに状況が一覧表示されていない場合は、LCS を通じてサポート インシデントを入力します。 Microsoft のサポート エンジニアによる最初の調査中に、状況が現在の稼働停止シナリオのリストに合っていないことがわかった場合、サポート インシデントが現在のサポート計画に基づいて正しいサポート チームおよび SLA に転送されます。
-
+> 停止シナリオに状況が一覧表示されていない場合は、LCS を通じてサポート インシデントを入力します。Microsoft のサポート エンジニアによる最初の調査中に、状況が現在の稼働停止シナリオのリストに合っていないことがわかった場合、サポート インシデントが現在のサポート計画に基づいて正しいサポート チームおよび SLA に転送されます。
 
 

@@ -1,13 +1,13 @@
 ---
-title: "Excel テンプレートに財務分析コードの値の検索を追加"
-description: "このトピックでは、Microsoft Excel テンプレートで分析コード値を検索する機能を追加する方法について説明します。"
+title: Excel テンプレートに財務分析コードの値の検索を追加
+description: このトピックでは、Microsoft Excel テンプレートで分析コード値を検索する機能を追加する方法について説明します。
 author: aprilolson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Core, Operations
@@ -17,21 +17,20 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 571fa8b12ead1e59a06524aad9f36b201f81d43b
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368945"
 ---
-
 # <a name="add-lookup-values-for-financial-dimensions-to-excel-templates"></a>Excel テンプレートに財務分析コードの値の検索を追加
 
 [!include [banner](../includes/banner.md)]
 
 このトピックでは、Microsoft Excel テンプレートで分析コード値を検索する機能を追加する方法について説明します。
 
-インストール後に Microsoft Excel テンプレートに存在する唯一の値は MainAccount です。 これは、すべての顧客が持つ唯一の分析コード です。 Microsoft Excel テンプレートに分析コードを追加するには、[[Microsoft Excel テンプレートに分析コードを追加](dimensions-overview.md)] トピックの手順を完了する必要があります。 分析コードを追加した後、分析コード値の一覧を検索する機能が必要な場合このトピックの手順を完了します。 **注記:** この情報は、リリースごとに変更される可能性がありますので、定期的に最新の情報を確認してください。
+インストール後に Microsoft Excel テンプレートに存在する唯一の値は MainAccount です。 これは、すべての顧客が持つ唯一の分析コード です。 Microsoft Excel テンプレートに分析コードを追加するには、[Microsoft Excel テンプレートに分析コードを追加](dimensions-overview.md) トピックの手順を完了する必要があります。 分析コードを追加した後、分析コード値の一覧を検索する機能が必要な場合このトピックの手順を完了します。 **注記:** この情報は、リリースごとに変更される可能性がありますので、定期的に最新の情報を確認してください。
 
 1.  Visual Studio で、**DimensionCombinationEntity** または **DimensionSetEntity** を変更したプロジェクトを開きます。
 2.  **DimensionCombinationEntity** または **DimensionSetEntity** を右クリックします。 **開く** を選択します。
@@ -97,12 +96,11 @@ ms.lasthandoff: 08/09/2018
 9.  プロジェクトを構築してデータベースと同期します。
 
 
-## <a name="additional-resources"></a>その他のリソース
+## <a name="additional-resources"></a>追加リソース
 
-[Microsoft Excel テンプレートに分析コードを追加する](add-dimensions-excel-templates.md)
+[Microsoft Excel テンプレートへの分析コードの追加](add-dimensions-excel-templates.md)
 
 [拡張機能のホーム ページ](../extensibility/extensibility-home-page.md)
-
 
 
 

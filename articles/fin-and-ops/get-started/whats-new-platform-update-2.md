@@ -1,13 +1,13 @@
 ---
-title: "Dynamics AX platform 更新プログラム 2 (2016 年 8 月) の新機能および変更された機能"
-description: "このトピックでは、Microsoft Dynamics AX プラットフォーム更新プログラム 2 の新機能または変更された機能について説明します。 このバージョンは 2016 年 8 月にリリースされ、ビルド番号は 7.0.4230.16130 です。"
+title: Dynamics AX プラットフォーム更新プログラム 2 (2016 年 8 月) の新機能および変更された機能
+description: このトピックでは、Microsoft Dynamics AX プラットフォーム更新プログラム 2 の新機能または変更された機能について説明します。 このバージョンは 2016 年 8 月にリリースされ、ビルド番号は 7.0.4230.16130 です。
 author: sericks007
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: f2d217c5c1fac6fa5f4d425925d534cb6e77f275
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369947"
 ---
-
-# <a name="whats-new-or-changed-in-dynamics-ax-platform-update-2-august-2016"></a>Dynamics AX platform 更新プログラム 2 (2016 年 8 月) の新機能および変更された機能
+# <a name="whats-new-or-changed-in-dynamics-ax-platform-update-2-august-2016"></a>Dynamics AX プラットフォーム更新プログラム 2 (2016 年 8 月) の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
 
@@ -60,7 +59,7 @@ ms.lasthandoff: 12/18/2018
 <li>コードビハインド拡張子フォームを有効にします。 たとえば、イベント ハンドラーを記述し、メソッドを書き込み、さらにフォーム拡張子にグローバル状態を格納する、拡張フォームに関連付けられているランタイム クラスを定義します。</li>
 <li><strong>Lookup</strong>、<strong>LookupReference</strong>、<strong>ResolveReference</strong>、<strong>jumpRef</strong> メソッドのオーバーライドの代わりとなる拡張機能を提供します。</li>
 </ul>
-2016 年 8 月リリースの <strong>Application Platform</strong> および <strong>Test Essentials</strong> モデルは<em>カスタマイズすることはできない</em> (重ねて) ため、拡張性フィーチャーが Dynamics AX プラットフォームのキー フィーチャーです。 また、<strong>Application Foundation</strong> モデル内の要素をカスタマイズする場合、このモデルが次の Dynamics AX プラットフォーム更新でカスタマイズからロックされる予定のため警告が表示されます。</td>
+2016 年 8 月リリースの<strong>アプリケーション プラットフォーム</strong>および <strong>Test Essentials</strong> モデルは<em>カスタマイズすることはできない</em> (重ねて) ため、拡張機能が Dynamics AX の主な機能です。 また、<strong>アプリケーション基準</strong>モデル内の要素をカスタマイズする場合、このモデルが次の Dynamics AX プラットフォーム更新でカスタマイズからロックされる予定であるとの警告が表示されます。</td>
 </tr>
 </tbody>
 </table>
@@ -116,7 +115,7 @@ ms.lasthandoff: 12/18/2018
 
 | 何ができますか。 | これは、なぜ重要ですか。 |
 |------------------|------------------------|
-| 顧客が所有するデータ ウェアハウスにエンティティをエクスポートします。 | Dynamics AXで プ ロビジョニングされたエンティティ格納は、Microsoft Power BI および Microsoft Cortana Intelligence Suite との統合用に構成されています。 サードパーティのビジネス インテリジェンス (BI) ツールまたは既存のデータ ウェアハウスとの統合を要求する場合は、SQL データベースにデータ エンティティをエクスポートできるようになりました。 データはフル プッシュまたは増分プッシュとしてエクスポートすることができます。 したがって、この機能を頻繁に更新することができます。 |
+| 顧客が所有するデータ ウェアハウスにエンティティをエクスポートします。 | Dynamics AX でプロビジョニングされたエンティティ格納は、Microsoft Power BI および Microsoft Cortana Intelligence Suite との統合用に構成されています。 サードパーティのビジネス インテリジェンス (BI) ツールまたは既存のデータ ウェアハウスとの統合を要求する場合は、SQL データベースにデータ エンティティをエクスポートできるようになりました。 データはフル プッシュまたは増分プッシュとしてエクスポートすることができます。 したがって、この機能を頻繁に更新することができます。 |
 | ドキュメント回覧エージェントを Windows サービス アプリケーションとして実行します。 | ドキュメント回覧エージェントは、実行モードを選択するオプションを提供するようになりました。 Windows サービスとして実行中、コンピューターの起動時にアプリケーションは自動的に開始され、特定のユーザー アカウントのセキュリティ コンテキストで実行するよう構成されます。 この機能拡張は、ネットワーク プリント サーバーなどの共有リソース上でドキュメント ルート指定エージェントをホストしている顧客からの直接のフィードバックに基づいて追加されました。 |
 | エクスポートされたレポートは、ターゲット言語が日本語の場合、Yu ゴシック フォントを使用します。 | すぐに使えるレポート、つまり独立系ソフトウェア ベンダー (ISV) が Dynamics AX ツールを使用して作成するレポートは、ターゲット言語が日本語の場合に Yu Gothic フォントでエクスポート ドキュメントを生成します。 以前は、既定では、レポートが、すべての複数バイト言語のフル文字セットをサポートしていない Sego UI フォントを使用していました。 したがって、ターゲット言語が日本語の場合、エクスポートされたドキュメントが不正な形式で表示されました。 |
 | コントローラー拡張機能を使用して、エクスポートおよびアーカイブされたドキュメントの既定のファイル名を設定します。 | 開発者は、トランザクション属性 (顧客名や請求書番号など) とこれらのドキュメントを関連付けるために使用できるコンテキスト名を持つドキュメントを作成することができます。 コンテキスト名により、エクスポートおよびアーカイブされたドキュメントのフレンドリ名を作成できます。 |
@@ -126,7 +125,7 @@ ms.lasthandoff: 12/18/2018
 | 何ができますか。 | これは、なぜ重要ですか。 |
 |------------------|------------------------|
 | Azure AD 企業間サービスを使用して、企業間のシナリオを有効にします。 | 外部ユーザーは、外部から管理された ID を使用して Dynamics AX に招待することができます。 外部ユーザーは、もはや既存の Azure AD テナントの一部である必要はありません。 |
-| サービス間の認証を有効にします。 | 登録されたサービスは、ユーザーがログインしなくても Dynamics AX に接続できます。 |
+| サービス間の認証を有効にします。 | 登録されたサービスは、ユーザーがサインインしなくても Dynamics AX に接続できます。 |
 
 ## <a name="integrations"></a>統合
 
@@ -137,4 +136,3 @@ ms.lasthandoff: 12/18/2018
 ## <a name="additional-resources"></a>その他のリソース
 
 [新機能および変更された機能](whats-new-changed.md)
-

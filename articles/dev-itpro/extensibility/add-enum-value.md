@@ -1,30 +1,29 @@
 ---
-title: "拡張機能を使用して列挙体に値を追加"
-description: "このトピックでは、列挙型を拡張することによって列挙型に新しい値を追加する方法について説明します。"
+title: 拡張機能を使用して列挙体に値を追加
+description: このトピックでは、列挙型を拡張することによって列挙型に新しい値を追加する方法について説明します。
 author: smithanataraj
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
 ms.custom: 89563
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: smnatara
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: d59e20efdc6da946f71c131bcf40e9d9cdb61edd
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369489"
 ---
-
 # <a name="add-values-to-enums-through-extension"></a>拡張機能を使用して列挙体に値を追加
 
 [!include [banner](../includes/banner.md)]
@@ -61,4 +60,3 @@ ms.lasthandoff: 08/09/2018
     ![拡張列挙を作成する (方法2)](media/AddEnum03.png)
         
 選択されたモデルで列挙型拡張が作成されます。 新しい列挙値をこの拡張に追加することができます。
-

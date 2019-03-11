@@ -1,13 +1,13 @@
 ---
-title: "レンタル料金のタイプ フォームの構築"
-description: "このラボでは、簡易リストのフォームを作成します。 シンプル リスト フォームでは、参照データまたは 6 つ以下のフィールドが含まれるセカンダリ データを表示できます。 たとえば、作成するフォームは、レンタル料金のタイプについて一覧表示して説明します。"
+title: レンタル料金のタイプ フォームの構築
+description: このラボでは、簡易リストのフォームを作成します。 シンプル リスト フォームでは、参照データまたは 6 つ以下のフィールドが含まれるセカンダリ データを表示できます。 たとえば、作成するフォームは、レンタル料金のタイプについて一覧表示して説明します。
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 7c6aa02aec4ec1e74c75919849512a453276947a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 9216e0379535c0374619f61f7a9953c69a197dc2
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369701"
 ---
-
 # <a name="build-the-rental-charge-type-form"></a>レンタル料金のタイプ フォームの構築
 
 [!include [banner](../includes/banner.md)]
@@ -49,10 +48,10 @@ ms.lasthandoff: 04/20/2018
 -   フォームにコントロールを追加します。
 -   Visual Studio とブラウザーを使用してフォームを表示します。
 
-## <a name="setup"></a>段取り
+## <a name="setup"></a>セットアップ
 ### <a name="import-the-tutorial-project-and-transactional-data"></a>チュートリアル プロジェクトおよびトランザクション データのインポート
 
-Visual Studio を使用して、チュートリアル プロジェクトをインポートします。 チュートリアル プロジェクトには、このチュートリアルを完了するために使用する成果物が含まれています。 Visual Studio を使用して FMTutorial プロジェクトを開き、チュートリアル用のデータを読み込みます。 フリート管理チュートリアルのデータを読み込むために、FMTDataHelper クラスを使用します。 これが作業する最初のチュートリアルである場合は、[アクセス Microsoft インスタンス](../dev-tools/access-instances.md)を確認し、ローカル VM で作業している場合に、管理者ユーザーを提供するかどうかを確認します。
+Visual Studio を使用してチュートリアル プロジェクトをインポートします。 チュートリアル プロジェクトには、このチュートリアルを完了するために使用する成果物が含まれています。 Visual Studio を使用して FMTutorial プロジェクトを開き、チュートリアル用のデータを読み込みます。 フリート管理チュートリアルのデータを読み込むために、FMTDataHelper クラスを使用します。 これが作業する最初のチュートリアルである場合は、[アクセス Microsoft インスタンス](../dev-tools/access-instances.md)を確認し、ローカル VM で作業している場合に、管理者ユーザーを提供するかどうかを確認します。
 
 1.  フリート管理のサンプルを <https://github.com/Microsoft/FMLab> からダウンロードし、**C:\\** に保存してから解凍します。
 2.  デスクトップで、Visual Studio ショートカットをダブルクリックして、開発環境を開きます。
@@ -70,15 +69,15 @@ Visual Studio を使用して、チュートリアル プロジェクトをイ�
 11. ビルドが完了すると、**Ctrl + F5** を押してプロジェクトを実行します。 ブラウザーが開き、データをインポートするクラスが実行されます。
 
 ## <a name="open-the-fmtutorial-project"></a>FMTutorial プロジェクトを開く
-Visual Studio を使用して、FMTutorial プロジェクトを開きます。 Visual Studio を開き、FMTutorial プロジェクトが既に読み込まれている場合は、次のセクションに続行することができます。
+Visual Studio を使用して FMTutorial プロジェクトを開きます。 Visual Studio を開き、FMTutorial プロジェクトが既に読み込まれている場合は、次のセクションに続行することができます。
 
-1.  開発環境がまだ開いていない場合は、デスクトップで開発環境への Visual Studio ショートカットをダブルクリックします。
+1.  開発環境がまだ開いていない場合は、デスクトップで開発環境への Visual Studio ショートカットをダブルクリックして、開発環境を開きます。
 2.  **ファイル**メニューで、**開く** &gt; **プロジェクト/ソリューション**をクリックします。
 3.  **プロジェクトを開く**ダイアログ ボックスで、C:\FmLab\FMTutorial を参照し、**FMTutorial** ソリューションを選択してから**開く**をクリックします。
 4.  FMTutorial プロジェクトが**ソリューション エクスプローラー**に表示されます。
 
 ## <a name="use-a-template-to-create-the-form"></a>テンプレートを使用してフォームを作成
-Visual Studio を使用し、**FmtChargeType** フォームを作成します。 簡易リスト フォームを構築ためのテンプレートを使用します。 また、フォームにデータ ソースを追加し、データ グリッドにフィールドを追加します。
+Visual Studio を使用して **FmtChargeType** フォームを作成します。 簡易リスト フォームを構築ためのテンプレートを使用します。 また、フォームにデータ ソースを追加し、データ グリッドにフィールドを追加します。
 
 1.  **ソリューション エクスプローラー**で、**FMTutorial** プロジェクトを右クリックして**追加**をポイントしてから**既存の項目**をクリックします。
 2.  **既存の品目を追加**ウィンドウで、C:\FmLab を参照し、**AxForm\_FmtChargeType** をクリックしてから**追加**をクリックします。 **ソリューション エクスプローラー**の **FMTutorial** プロジェクトの下に **FmtChargeType** フォームが表示されます。
@@ -117,11 +116,11 @@ Visual Studio を使用し、**FmtChargeType** フォームを作成します。
 13. **ファイル** &gt; **保存** **FmtChargeType** とクリックします。
 
 ## <a name="view-the-form"></a>フォームの表示
-Visual Studio を使用し、**FmtChargeType** フォームをビルドして実行します。
+Visual Studio を使用して、**FmtChargeType** フォームをビルドして実行します。
 
 1.  **ソリューション エクスプローラー**で、**FmtChargeType** フォームを右クリックしてから、**スタートアップ オブジェクトとして設定**をクリックします。
 2.  Ctrl+F5 キーを押して、フォームをビルドおよび実行します。
-3.  Internet Explorerで、フォームを開きます。
+3.  Internet Explorer でフォームが開きます。
 4.  レンタル料金タイプを追加するには、フォームの上部にあるアクション ペインで **新規** をクリックします。 次の情報を追加します。
 
     | **レンタル料金のタイプ** | **説明** |
@@ -134,7 +133,6 @@ Visual Studio を使用し、**FmtChargeType** フォームをビルドして実
     [![rentalcharge5](./media/rentalcharge5.png)](./media/rentalcharge5.png)
 
 7.  表示モードでフォームを開きます。 アクション ウィンドウの**編集**をクリックして、フォームを編集モードに切り替えます。 表示モードに戻るには、**オプション** をクリックしてから **読み取りモード** をクリックします。
-
 
 
 

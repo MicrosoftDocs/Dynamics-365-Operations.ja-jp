@@ -1,13 +1,13 @@
 ---
-title: "1 ボックス環境で SQL Server Reporting Services (SSRS) への修正プログラムの適用"
-description: "SSRS 修正プログラムをワンボックス開発環境に適用します。"
+title: 1 ボックス環境で SQL Server Reporting Services (SSRS) への修正プログラムの適用
+description: SSRS 修正プログラムをワンボックス開発環境に適用します。
 author: RobinARH
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: shailesn
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 4620791a4056ee9a013e79340f5f750f29d6b427
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368988"
 ---
-
 # <a name="patch-sql-server-reporting-services-ssrs-in-one-box-environments"></a>1 ボックス環境で SQL Server Reporting Services (SSRS) への修正プログラムの適用
 
 [!include [banner](../includes/banner.md)]
@@ -56,7 +55,7 @@ SSRS が実行されているマシンの管理者グループのユーザーと
 
 ### <a name="manually-copy-binaries-to-the-sql-server-binary-folder"></a>SQL Server バイナリ フォルダーへの手動でのバイナリのコピー
 1.  SQL Server Reporting Services を停止します。 これは、**サービス管理コンソール**または **Reporting Services 構成マネージャー**から実行できます。 [![Configuration\_RSHotfix](./media/configuration_rshotfix.png)](./media/configuration_rshotfix.png)
-2.  SQL Server Reporting Services バイナリ フォルダーを検索します。 このフォルダーは、通常、C:\\ プログラム ファイル \\Microsoft SQL Server\\MSRS11.MSSQLSERVER\\Reporting Services\\ReportServer\\bin にあります。
+2.  SQL Server Reporting Services バイナリ フォルダーを検索します。 このフォルダーは、通常、C:\\Program Files\\Microsoft SQL Server\\MSRS11.MSSQLSERVER\\Reporting Services\\ReportServer\\bin にあります。
 3.  次のファイルのいずれかがパッチにある場合は、それらのファイルを SQL Server Reporting Services Bin フォルダーにコピーします。* *
 
 **注記:** パッチは、サービスによって使用されるすべてのファイルを含む完全なパッチ、または変更されたファイルのみを含む増分パッチのいずれかです。 差分の修正プログラムを使用する場合は、一部のファイルが含まれない可能性があります。 パッチに含まれていないファイルは、置き換える必要はありません。
@@ -99,7 +98,6 @@ SQL Server Reporting Services を再起動します。
 -   msshrtmi.dll
 
 SSRS サービス アカウントはローカル システムを使用して更新されます。 新しい SSRS カタログ データベースの DynamicsAxReportServer と、一時データベースの DynamicsAxReportServerTempDB データベースが作成され、SSRS は、これら 2 つのデータベースを使用するように構成されます。 既定のカタログ データベース ReportServer と ReportServerTempDBstill は存在しますが、レポート サービスでは使用されないように設定されています。 SSRS サービスは、Windows 認証を使用するために更新されます。 xml 構成ファイル ReportPVMConfiguration.xml はレポート実行時間の SSRS bin フォルダー内に作成されます。 **Dynamics** という名前のレポート ルート フォルダーと **DynamicsBrowser** という名前のセキュリティ ロールが作成されます。 このカスタム ロールには AOS Web アプリケーションの AppPool ID とバッチ サービス アカウントの両方が追加されます。 配置中、レポート フォルダーは削除されてから再作成されることに注意してください。 したがって、以前に展開されたレポートはすべて SSRS サーバーから削除されます。  レポート拡張機能を再インストールした後は、レポートを再配置する必要があります。  
-
 
 
 

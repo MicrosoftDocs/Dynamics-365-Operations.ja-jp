@@ -1,13 +1,13 @@
 ---
-title: "詳細マスター フォーム パターン"
-description: "このトピックでは、詳細マスター フォームのパターンについて説明します。 詳細フォームは、データ入力の基本方法です。"
+title: 詳細マスター フォーム パターン
+description: このトピックでは、詳細マスター フォームのパターンについて説明します。 詳細フォームは、データ入力の基本方法です。
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 2f8e6f7e678d0d53f5d468ac6f9de4aa7cbe8a37
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: d3ddaaacb27068737df5687f600965446aa67ccd
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369490"
 ---
-
 # <a name="details-master-form-pattern"></a>詳細マスター フォーム パターン
 
 [!include [banner](../includes/banner.md)]
@@ -175,7 +174,7 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 ## <a name="ux-guidelines"></a>UX ガイドライン
 検証チェックリストには、フォームが UX ガイドラインに準拠しているかどうかを手動で確認する手順が示されています。 このチェックリストには、開発環境を通じて自動的に実施されるガイドラインは含まれていません。 ブラウザーでフォームを開いて、これらの手順を確認します。 **標準フォーム ガイドライン:**
 
--   標準フォーム ガイドラインは、Microsoft Dynamics AX の[全般的なガイドライン](general-form-guidelines.md) ドキュメントに統合されました。
+-   標準フォーム ガイドラインは、Microsoft Dynamics AX [全般的なガイドライン](general-form-guidelines.md) ドキュメントに統合されました。
 
 **詳細マスターガイドライン**
 
@@ -245,23 +244,22 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 
 ### <a name="ax-2012-content"></a>AX 2012 コンテンツ
 
-#### <a name="ax-2012-links"></a>AX 2012 のリンク
--   [AX 2012 MSDN 詳細フォーム](http://msdn.microsoft.com/EN-US/library/hh397318.aspx)
+#### <a name="ax-2012-links"></a>AX 2012 リンク
+-   [AX 2012 MSDN 詳細のフォーム](http://msdn.microsoft.com/EN-US/library/hh397318.aspx)
 
 #### <a name="ax-2012-example"></a>AX 2012 の例
 
 ##### <a name="details-master-basic"></a>詳細マスター (基本)
 
-[![AX 2012 の例: 詳細マスター (基本)1](./media/detailsmaster11-1024x647.png)](./media/detailsmaster11.png) 
+[![AX 2012 の例: 詳細マスター (基本) 1](./media/detailsmaster11-1024x647.png)](./media/detailsmaster11.png) 
 
-[![AX 2012 の例: 詳細マスター (基本)2](./media/detailsmaster12-1024x647.png)](./media/detailsmaster12.png)
+[![AX 2012 の例: 詳細マスター (基本) 2](./media/detailsmaster12-1024x647.png)](./media/detailsmaster12.png)
 
 ##### <a name="details-master-wstandard-tabs"></a>詳細マスター / 標準タブ
 
-[![AX 2012 の例: 詳細マスター / 標準タブ 1](./media/detailsmaster13-1024x726.png)](./media/detailsmaster13.png) 
+[![AXAX 2012 の例: 詳細マスターと標準タブ 1](./media/detailsmaster13-1024x726.png)](./media/detailsmaster13.png) 
 
-[![AX 2012 の例: 詳細マスター / 標準タブ 2](./media/detailsmaster14-1024x620.png)](./media/detailsmaster14.png)
-
+[![AX 2012 の例: 詳細マスターと標準タブ 2](./media/detailsmaster14-1024x620.png)](./media/detailsmaster14.png)
 
 
 

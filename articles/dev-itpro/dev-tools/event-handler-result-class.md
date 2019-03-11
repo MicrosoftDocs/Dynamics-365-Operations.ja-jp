@@ -1,13 +1,13 @@
 ---
-title: "要求または応答シナリオの EventHandlerResult クラス"
-description: "このトピックでは、デリゲート メソッドで EventHandlerResult クラスを使用する方法について説明します。"
+title: 要求または応答シナリオの EventHandlerResult クラス
+description: このトピックでは、デリゲート メソッドで EventHandlerResult クラスを使用する方法について説明します。
 author: RobinARH
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: a55fbd715d3c17e138a8d945159154da7c8a0de6
 ms.openlocfilehash: 808601cf8736434d37306d48a389af1178238d4b
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369768"
 ---
-
 # <a name="eventhandlerresult-classes-in-request-or-response-scenarios"></a>要求または応答シナリオの EventHandlerResult クラス
 
 [!include [banner](../includes/banner.md)]
@@ -87,4 +86,3 @@ ms.lasthandoff: 08/09/2018
         ret = result.isAccepted();
     }
 ```
-

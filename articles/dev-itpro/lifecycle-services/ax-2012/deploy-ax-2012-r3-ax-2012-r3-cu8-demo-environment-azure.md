@@ -1,13 +1,13 @@
 ---
-title: "Azure に AX 2012 R3 または AX 2012 R3 CU8 デモ環境を配置する"
-description: "このトピックでは、Microsoft Azure での開発環境の展開方法について説明します。このトピックでは、Microsoft Azure に AX 2012 R3 または AX 2012 R3 CU8 のデモ環境を展開する方法について説明します。"
+title: Azure に AX 2012 R3 または AX 2012 R3 CU8 デモ環境を配置する
+description: このトピックでは、Microsoft Azure に AX 2012 R3 または AX 2012 R3 CU8 のデモ環境を展開する方法について説明します。
 author: kfend
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012
-ms.service: 
-ms.technology: 
+ms.service: ''
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: AX 2012
@@ -15,21 +15,20 @@ ms.custom: 15561
 ms.assetid: b7f2e7b9-2627-4e8f-beab-a3cea8d79dc4
 ms.search.region: Global
 ms.author: kfend
-ms.search.validFrom: 
+ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 398a1942d9e45dfb108bc7fceb6346e8c68e7ea4
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370007"
 ---
-
 # <a name="deploy-ax-2012-r3-or-ax-2012-r3-cu8-demo-environments-on-azure"></a>Azure に AX 2012 R3 または AX 2012 R3 CU8 デモ環境を配置する
 
 [!include [banner](../../includes/banner.md)]
 
-<a name="prerequisites"></a>前提条件
+<a name="prerequisites"></a>必要条件
 -------------
 
 この記事の手順を実行する前に、次の条件が満たされていることを確認します。
@@ -37,10 +36,10 @@ ms.lasthandoff: 08/09/2018
 |                |                                                                                                                                                                 |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **カテゴリ**   | **前提条件**                                                                                                                                                |
-| 必要なタスク | [Azure での Microsoft Dynamics AX 2012 R3 配置の計画](plan-2012-r3-deployment-azure.md) |
+| 必要なタスク | [Azure 上での Microsoft Dynamics AX 2012 R3 の配置計画](plan-2012-r3-deployment-azure.md) |
 
 ## <a name="1-log-on-to-lifecycle-services"></a>1. ライフサイクル サービスにログオンする
-Microsoft Dynamics Lifecycle Services は、顧客およびパートナーが Microsoft Dynamics AX のプロジェクトの管理に使用できるクラウドベースの共同ワークスペースを提供します。 Azure に AX 2012 R3 を配置するには、この Web サイトを使用します。 Lifecycle Services は顧客やパートナーがサポート計画の一部として使用できます。 CustomerSource または PartnerSource の資格情報でアクセスすることができます。 [Lifecycle Services にログオン](https://lcs.dynamics.com/en/)
+Microsoft Dynamics Lifecycle Services は、顧客およびパートナーが Microsoft Dynamics AX の管理に使用できるクラウドベースの共同ワークスペースです。 Azure に AX 2012 R3 を配置するには、この Web サイトを使用します。 Lifecycle Services は顧客やパートナーがサポート計画の一部として使用できます。 CustomerSource または PartnerSource の資格情報でアクセスすることができます。 [Lifecycle Services にログオン](https://lcs.dynamics.com/en/)
 
 ## <a name="2-create-a-project"></a>2. プロジェクトの作成
 Lifecycle Services にログインした後、既存のプロジェクトを開くか、または新しいプロジェクトを作成します。 プロジェクトは、Lifecycle Services でのエクスペリエンスの主な開催者です。 プロジェクトに関連する手法は、既定でプロジェクトに含まれるフェーズとタスクを決定します。
@@ -49,7 +48,7 @@ Lifecycle Services にログインした後、既存のプロジェクトを開�
 Azure サブスクリプションに Lifecycle Services プロジェクトを接続します。 これにより、Lifecycle Services は AX 2012 R3 環境をサブスクリプションに展開できます。 Azure サブスクリプションにプロジェクトを接続するには、次の手順を実行します。 プロジェクトは 1 つの Azure サブスクリプションにだけ接続できることに留意してください。 複数の Azure サブスクリプションがある場合、この手順を実行する前にどのサブスクリプションを使用するかを必ず識別します。
 
 1.  **クラウド ホスト環境**をクリックします。 **クラウド ホスト環境** ページが表示されます。
-2.  **Microsoft Azure 設定** パネルが画面の横に表示されます。 表示されない場合は、**Microsoft Azure 設定**をクリックします。
+2.  **Microsoft Azure 設定**パネルが画面の横に表示されます。 表示されない場合は、**Microsoft Azure 設定**をクリックします。
 3.  Azure サブスクリプション ID を入力します。 サブスクリプション ID を検索する必要がある場合は、次の手順を実行します。
     1.  ブラウザの別のインスタンスを開きます。
     2.  **Azure 管理ポータル**にログオンします。
@@ -89,7 +88,7 @@ Azure に AX 2012 R3 または AX 2012 R3 CU8 デモ環境を配置するには�
 9.  **次へ** をクリックします。
 10. **展開**をクリックして、環境を展開する準備が整ったことを確認します。 配置には数時間かかる場合があります。 配置が完了すると、**クラウド ホスト環境** ページの **配置ステータス** 列に **配置済み** が表示されます。 (これを表示するにはブラウザーを更新する必要があります。) 配置が失敗すると、すぐエラー メッセージが表示される場合があります。 配置プロセスでエラーが後に発生する場合に、エラーの詳細がページの右側の**詳細**ペインに表示されます。
 
-## <a name="5-open-the-ax-2012-r3-client"></a>5. AX 2012 R3 クライアントを開く
+## <a name="5-open-the-ax-2012-r3-client"></a>5. AX 2012 R3 クライアントを開きます。
 AX 2012 R3 クライアントがインストールされている仮想マシンに接続するには、以下の手順を完了してください。
 
 1.  **クラウド ホスト環境**ページで、設置したデモ環境を選択します。
@@ -98,7 +97,6 @@ AX 2012 R3 クライアントがインストールされている仮想マシン
 4.  ページの下部にある**開く**をクリックして、.rdp ファイルを開きます。
 5.  資格情報を求めるメッセージが表示されたら、 この環境の **クラウドによってホストされた環境** ページにある、適切なユーザー名とパスワードを入力します。
 6.  仮想マシンのデスクトップが表示されたとき、Microsoft Dynamics AX アイコンをクリックして、AX 2012 R3 クライアントを開きます。
-
 
 
 

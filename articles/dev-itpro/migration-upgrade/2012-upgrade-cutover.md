@@ -1,13 +1,13 @@
 ---
-title: "AX 2012 からのアップグレード - Go live (切替)"
-description: "このトピックでは、AX 2012 をオフにしてから、Microsoft Dynamics 365 for Finance and Operations でコードとデータベースのアップグレード バージョンの実行が完了するまでの最終的な切替えプロセスについて説明します。"
+title: AX 2012 からのアップグレード - Go live (切替)
+description: このトピックでは、AX 2012 をオフにしてから、Dynamics 365 for Finance and Operations でコードとデータベースのアップグレード バージョンの実行が完了するまでの最終的な切替えプロセスについて説明します。
 author: robadawy
 manager: AnnBe
 ms.date: 06/06/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: margoc
 ms.search.scope: Operations
@@ -15,14 +15,13 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2018-03-31
 ms.dyn365.ops.version: Platform update 12
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: bf662bd96bd26e342e696c6de6902d2fc15636aa
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368648"
 ---
-
 # <a name="upgrade-from-ax-2012---go-live-cutover"></a>AX 2012 からのアップグレード - Go live (切替)
 
 [!include [banner](../includes/banner.md)]
@@ -31,7 +30,7 @@ ms.lasthandoff: 08/09/2018
 
 標準またはプレミア承認テスト環境 (サンドボックス レベル 2 またはそれ以上) でアップグレード テストを正常に完了した場合、および正常にテスト切替を完了した後、実稼働環境をアップグレードして稼働するその時が来ました。
 
-*切替*という用語は、新しいシステムを稼働させる最後のプロセスに使用します。 この切替プロセスは、Microsoft Dynamics AX 2012 をオフにした後、Microsoft Dynamics 365 for Finance and Operations をオンにする前に実行されるタスクで構成されています。 最終的な切替を計画する前に、[切替テスト](./upgrade-cutover-testing.md)で説明されているように成功した切替モックを正常に完了する必要があります。
+*切替*という用語は、新しいシステムを稼働させる最後のプロセスに使用します。 この切替プロセスは、Microsoft Dynamics AX 2012 をオフにした後かつ Microsoft Dynamics 365 for Finance and Operations をオンにする前に発生するタスクで構成されます。 最終的な切替を計画する前に、[切替テスト](./upgrade-cutover-testing.md)で説明されているように成功した切替モックを正常に完了する必要があります。
 
 次の図は、実稼動環境で発生するような、切替中の全体的なプロセスを示しています。
 
@@ -60,10 +59,9 @@ ms.lasthandoff: 08/09/2018
     - LCS での手法のテスト フェーズ。 これは、プロダクション環境でテストを開始する準備ができているプロジェクトの段階にあることを確認するためです。
     - 実稼働環境を配置するために要求が Microsoft に送信された後、配置には、約 24 時間かかるので、そのために十分な時間を確保してください。
 -   すべての必要な更新プログラムおよびカスタマイズ (AOT 配置可能パッケージ) を実稼動環境に適用します。 切替モックでサイン オフした後は、コードを変更しないでください。
--   アップグレードをスケジュールするには、[AX 2012 からのアップグレード- 切替テスト (切替モック) ](./upgrade-cutover-testing.md) に説明されているように、LCS から「その他」のタイプのサービスリクエストを送信して、DSE チームにタイムスロットを要求します。 これは、優先タイム スロットが使用できるようにすることです。 週末の間などスロットの需要が大幅に高くなるため注意してください。できるだけ早くこれらを要求することにより優先スケジュールを達成できます。
+-   アップグレードをスケジュールするには、[AX 2012 からのアップグレード- 切替テスト (切替モック)](./upgrade-cutover-testing.md) に説明されているように、LCS から「その他」のタイプのサービスリクエストを送信して、DSE チームにタイムスロットを要求します。 これは、優先タイム スロットが使用できるようにすることです。 週末の間などスロットの需要が大幅に高くなるため注意してください。できるだけ早くこれらを要求することにより優先スケジュールを達成できます。
 
 ## <a name="related-articles"></a>関連記事
-- [研修](../../fin-and-ops/imp-lifecycle/onboard.md)
+- [Onboarding](../../fin-and-ops/imp-lifecycle/onboard.md)
 - [サービス要求を送信する](../lifecycle-services/submit-request-dynamics-service-engineering-team.md)
 - [AX 2012 からのアップグレード - 切替テスト](./upgrade-cutover-testing.md)
-

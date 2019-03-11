@@ -1,13 +1,13 @@
 ---
-title: "デモ データ"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations に使用できるデモ データの概要を示します。"
+title: デモ データ
+description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations で使用可能なデモ データの概要を示します。
 author: sericks007
 manager: AnnBe
 ms.date: 07/05/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: pmantha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: b7e27a07c456e22f29dd891211813c6ad0a2b2db
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: beecdd97d5e1d8afd4269b1f0f25d526b383eba1
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369361"
 ---
-
 # <a name="demo-data"></a>デモ データ
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Finance and Operations に使用できるデモ データの概要を示します。
+このトピックでは、Microsoft Dynamics 365 for Finance and Operations で使用可能なデモ データの概要を示します。
 
 デモ データは、導入サポートとデモの目的で、Finance and Operations と一緒にリリースされる基本データ セットです。 現在のデモ データセットは、次の業種をサポートしています。
 
@@ -80,7 +79,7 @@ ms.lasthandoff: 08/09/2018
 | USRT         | Contoso 小売 USA                   |
 | USSI         | Contoso コンサルティング USA               |
 
-現金の概要 Power BI コンテンツからのレポートが、**現金の概要** および **銀行管理** ワークスペースで表示されます。
+現金の概要 Power BI コンテンツからのレポートが、**現金の概要**および**銀行管理**ワークスペースで表示されます。
 
 データでキャッシュ フロー予測レポートを表示するには、まず、**現金および銀行管理領域** から **キャッシュ フロー予測の計算** 機能を使用して、予測計算プロセスを実行する必要があります。 これは、予測に含める会社ごとに完了する必要があります。 次に、**エンティティ格納** ページで、[LedgerCovLiquidityMeasurement] 集計メジャーを更新する必要があります。
 
@@ -127,4 +126,3 @@ USMF というデモ会社には、承認すべき INGA についての 2 つの
 [![原価会計パラメーター](./media/Cost-accounting-parameters.PNG)](./media/Cost-accounting-parameters.PNG)
 
 アクセス レベルのセキュリティが有効にした後、Alica を原価オブジェクト コントローラーのロールに割り当てます。 Alica としてログインして **原価管理** ワークスペースにアクセスすることができます。 アリシアはコスト センターのパフォーマンスを参照し、これらの計算がどのようにされたのか細部まで掘り下げて調べることができます。
-

@@ -1,13 +1,13 @@
 ---
-title: "タスク レコーダーのクイック リファレンス"
-description: "この記事では、タスク レコーダー メニュー内の各ボタンの動作を説明するクイック リファレンス シートを提供します。"
+title: タスク レコーダーのクイック リファレンス
+description: この記事では、タスク レコーダー メニュー内の各ボタンの動作を説明するクイック リファレンス シートを提供します。
 author: RobinARH
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: global
 ms.author: shshabazz
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 0999a102b7f0695da0832c625f1c5e50fa254365
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: a5c5fcc03854b89d31573064ae7d5f7643c4b7e8
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369649"
 ---
-
 # <a name="task-recorder-quick-reference"></a>タスク レコーダーのクイック リファレンス
 
 [!include [banner](../includes/banner.md)]
@@ -153,7 +152,6 @@ ms.lasthandoff: 04/20/2018
 </tr>
 </tbody>
 </table>
-
 
 
 

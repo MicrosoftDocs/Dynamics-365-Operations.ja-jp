@@ -1,36 +1,35 @@
 ---
-title: "Dynamics 365 for Finance and Operations, Enterprise edition 7.2 およびプラットフォーム更新プログラム 12 (2018 年 3 月) のオンプレミス配置での新機能および変更された機能"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition 7.2 プラットフォーム更新プログラム 12 のオンプレミス開発における新機能または変更された機能について説明します。 この展開オプションは、2018 年 3 月に使用できるようになりました。"
+title: プラットフォーム更新プログラム 12 による Dynamics 365 for Finance and Operations, Enterprise Edition 7.2 のオンプレミス配置 (2018 年 3 月)
+description: このトピックでは、プラットフォーム更新プログラム 12 による Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.2 の新機能または変更された機能について説明します。 この展開オプションは、2018 年 3 月に使用できるようになりました。
 author: sericks007
 manager: AnnBe
 ms.date: 03/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
-ms.custom: 
+ms.custom: ''
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 12
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: b8246b8cbbc60d881b7c23c9ceec43ea09b1c005
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368541"
 ---
-
-# <a name="whats-new-or-changed-in-on-premises-deployments-of-dynamics-365-for-finance-and-operations-enterprise-edition-72-with-platform-update-12-march-2018"></a>Dynamics 365 for Finance and Operations, Enterprise edition 7.2 およびプラットフォーム更新プログラム 12 (2018 年 3 月) のオンプレミス配置での新機能および変更された機能
+# <a name="whats-new-or-changed-in-on-premises-deployments-of-dynamics-365-for-finance-and-operations-enterprise-edition-72-with-platform-update-12-march-2018"></a>プラットフォーム更新プログラム 12 による Dynamics 365 for Finance and Operations, Enterprise Edition 7.2 のオンプレミス配置 (2018 年 3 月)
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition 7.2 プラットフォーム更新プログラム 12 のオンプレミス開発における新機能または変更された機能について説明します。 この展開オプションは、2018 年 3 月に使用できるようになりました。
+このトピックでは、プラットフォーム更新プログラム 12 による Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.2 の新機能または変更された機能について説明します。 この展開オプションは、2018 年 3 月に使用できるようになりました。
 
-プラットフォーム更新プログラム 12に関する詳細については、[Dynamics 365 for Finance and Operations、Enterprise edition プラットフォーム更新プログラム 12 の新機能および変更された機能](whats-new-platform-update-12.md) を参照してください。
+プラットフォーム更新プログラム 12 の詳細については、[Dynamics 365 for Finance and Operations, Enterprise Edition プラットフォーム更新プログラム 12 の新機能または変更された機能について](whats-new-platform-update-12.md)を参照してください。
 
 オンプレミス配置のリソースについては、[オンプレミス配置のホーム ページ](../../dev-itpro/deployment/on-premises-deployment-landing-page.md) を参照してください。
 
@@ -40,7 +39,7 @@ ms.lasthandoff: 12/18/2018
 
 ## <a name="servicing"></a>サービス
 
-オンプレミス環境が配置されると、Microsoft Dynamics Lifecycle Services (LCS) を使用して Microsoft からリリースされたプラットフォームおよびアプリケーションの更新を適用できます。 また、コードのカスタマイズを適用することもできます。 したがって、顧客は最新の修正プログラムを最新の状態に保ち、既存の環境を再構成したり、オンプレミス環境を再配置することなく、新しいカスタマイズを行うことができます。 また、パッケージが正常に適用されなかった場合に、コード変更をロール バックできるようになりました。 詳細については、[オンプレミス配置への更新プログラムの適用](../../dev-itpro/deployment/apply-updates-on-premises.md) を参照してください。
+オンプレミス環境が配置されると、Microsoft Dynamics Lifecycle Services (LCS) を使用して Microsoft からリリースされたプラットフォームおよびアプリケーションの更新プログラムを適用できます。 また、コードのカスタマイズを適用することもできます。 したがって、顧客は最新の修正プログラムを最新の状態に保ち、既存の環境を再構成したり、オンプレミス環境を再配置することなく、新しいカスタマイズを行うことができます。 また、パッケージが正常に適用されなかった場合に、コード変更をロール バックできるようになりました。 詳細については、[オンプレミス配置への更新プログラムの適用](../../dev-itpro/deployment/apply-updates-on-premises.md) を参照してください。
 
 [再構成機能](../../dev-itpro/lifecycle-services/reconfigure-environment.md)は、プラットフォーム更新プログラム 12 以前のバージョンで配置された環境でも使用可能であることに注意してください。
 
@@ -50,4 +49,3 @@ LCS からダウンロードできる修正プログラムは、プラットフ�
 
 - **[KB 4091763 - 管理者がクライアントの接続と Skype プレゼンスを切り替える](https://fix.lcs.dynamics.com/Issue/Details?kb=4091763&bugId=3934773&qc=fd949f8a204ceeedaa0a586ca8a1bfdbd6535b35225da98506d688e093d086f6):** この修正プログラムにより、管理者はクライアント マシンのインターネット接続に依存するエクスペリエンスを無効にできます。 詳細については、「[クライアント インターネット接続](../../dev-itpro/user-interface/client-disconnected.md)」を参照してください。
 - **[KB 4093454 - オンプレミスの ISV ライセンス サポート](https://fix.lcs.dynamics.com/Issue/Details?kb=4093454&bugId=3936799&qc=766427475435463a174e287b531401ab8cc8f1aeedf12bf2c2d4f8d1a1774592):** プラットフォーム更新プログラム 12 から開始するオンプレミス環境を配置する場合、テナント GUID は LCS からオンプレミス環境に自動的に入力されます。 ライセンス供与の検証では次の値を読み取り、正常にライセンスを検証できます。 詳細については、[ISV ライセンス (オンプレミス)](../../dev-itpro/dev-tools/isv-licensing-on-prem.md) を参照してください。
-

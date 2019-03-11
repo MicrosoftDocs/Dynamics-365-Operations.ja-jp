@@ -1,13 +1,13 @@
 ---
-title: "クラウド環境へ更新プログラムを適用"
-description: "このトピックでは、Lifecycle Services (LCS) を使用して、バイナリ更新プログラムまたはアプリケーション (AOT) 展開可能なパッケージをクラウド環境に適用する方法について説明します。"
+title: クラウド環境へ更新プログラムを適用
+description: このトピックでは、Lifecycle Services (LCS) を使用して、バイナリ更新プログラムまたはアプリケーション (AOT) 展開可能なパッケージをクラウド環境に適用する方法について説明します。
 author: manalidongre
 manager: AnnBe
 ms.date: 12/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Operations, Retail
@@ -16,19 +16,18 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.translationtype: HT
-ms.sourcegitcommit: b8002c547b4f5e7ca485778af90d5b5293496f79
 ms.openlocfilehash: b5f05d27c554de5e23d28332810122c4aa89c647
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/10/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368689"
 ---
-
-# <a name="apply-updates-to-cloud-environments"></a>クラウド環境へ更新プログラムを適用
+# <a name="apply-updates-to-cloud-environments"></a>クラウド環境への更新プログラムの適用
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用して、Microsoft Dynamics 365 for Finance and Operations 環境または Microsoft Dynamics 365 for Retail 環境に更新プログラムを自動的に適用する方法について説明します。 展開可能なパッケージを使用して更新が適用されます。
+このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用して、Microsoft Dynamics 365 for Finance and Operations 環境または Microsoft Dynamics 365 for Retail 環境のいずれかに更新を自動的に適用する方法を説明します。 展開可能なパッケージを使用して更新が適用されます。
 
 > [!IMPORTANT]
 > パッケージを適用するとシステムのダウンタイムが発生します。 すべて関連するサービスを停止、およびパッケージを適用中のときには環境を使用できなくなります。 それに応じた計画を立てる必要があります。
@@ -231,4 +230,3 @@ ms.lasthandoff: 12/10/2018
 ## <a name="additional-resources"></a>その他のリソース
 
 [配置可能なパッケージのコマンドラインからのインストール](install-deployable-package.md)
-

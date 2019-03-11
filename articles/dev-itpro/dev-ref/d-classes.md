@@ -1,13 +1,13 @@
 ---
-title: "D クラス"
-description: "文字 D で始まるシステム API クラス。"
+title: D クラス
+description: 文字 D で始まるシステム API クラス。
 author: RobinARH
 manager: AnnBe
 ms.date: 11/06/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 0cb7a4d7a5d6795a855fcc1af72df6dbd528ee92
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368727"
 ---
-
 # <a name="d-classes"></a>D クラス
 
 [!include [banner](../includes/banner.md)]
@@ -614,7 +613,7 @@ obj
 
 ### <a name="examples"></a>例
 
-### <a name="methods"></a>メソッド
+### <a name="methods"></a>方法
 
 | 方法                                                                                        | 説明                                                |
 |-----------------------------------------------------------------------------------------------|------------------------------------------------------------|
@@ -1654,7 +1653,7 @@ DateTimeUtil クラスは、utcdatetime および Timezone 値を変換または
 
 ### <a name="examples"></a>例
 
-### <a name="methods"></a>メソッド
+### <a name="methods"></a>方法
 
 | 方法                                                                                                                                                                            | 説明                                                                                                                                                    |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1867,7 +1866,7 @@ t
 
 #### <a name="remarks"></a>備考
 
-次の例の文字列は、この anyToDateTime メソッドが正しく変換できる日付/時刻文字列の形式を示しています ("2009-01-28T13：44：55")。 DateTimeUtil::utcNow メソッドの出力は、anyToDateTime メソッドへの有効な入力です。
+次の例の文字列は、この anyToDateTime メソッドが正しく変換できる日付/時刻文字列の形式を示しています ("2009-01-28T13：44：55")。 DateTimeUtil::utcNow メソッドの出力は anyToDateTime メソッドへの有効な入力です。
 
 ### <a name="method-applytimezoneoffset"></a>メソッド applyTimeZoneOffset
 
@@ -3061,7 +3060,7 @@ dataEntityName
 
 ### <a name="examples"></a>例
 
-### <a name="methods"></a>メソッド
+### <a name="methods"></a>方法
 
 | 方法                                                       | 説明 |
 |--------------------------------------------------------------|-------------|
@@ -3768,7 +3767,7 @@ AOT の列挙体の 0 から始まるインデックス。
 
 #### <a name="remarks"></a>備考
 
-Finance and Operations の以前のバージョンとの下位互換性については、DictEnum::value2Name での「名前」は、列挙項目のラベル プロパティを表します。 コードを読みやすくするには、DictEnum :: value2Name メソッドの代わりに DictEnum :: value2Label メソッドを使用します。 AOT に示すように、列挙型項目の name プロパティの値を取得するには、DictEnum :: value2Symbol メソッドを使用します。
+Finance and Operations の以前のバージョンとの下位互換性については、DictEnum::value2Name の「名前」は、列挙項目のラベル プロパティを参照します。 コードを読みやすくするには、DictEnum::value2Name メソッドの代わりに DictEnum::value2Label メソッドを使用します。 AOT に示すように、列挙型項目の name プロパティの値を取得するには、DictEnum::value2Symbol メソッドを使用します。
 
 #### <a name="examples"></a>例
 
@@ -3887,7 +3886,7 @@ AOT の列挙体の 0 から始まるインデックス。
 
 #### <a name="remarks"></a>備考
 
-Finance and Operations の以前のバージョンとの下位互換性については、名前はラベルを表します。 ラべルが無い列挙型の品目は、DictEnum::name2Value メソッドを使用して見つけることができません。
+Finance and Operations の以前のバージョンとの下位互換性については、名前はラベルを表します。 ラべルの無い列挙項目は、DictEnum::name2Value メソッドを使用して見つけることができません。
 
 ### <a name="method-showasradio"></a>メソッド showAsRadio
 
@@ -3956,7 +3955,7 @@ Finance and Operations の以前のバージョンとの下位互換性につい
 
 #### <a name="remarks"></a>備考
 
-列挙型の品目は、ラベルを挿入する必要がありません。 このメソッドを使用して、値が列挙に存在するかどうかを判断はできません。 列挙型に値が存在するかどうかを確認するには、DictEnum::value2Symbol メソッドを使用します。
+列挙型の品目は、ラベルを挿入する必要がありません。 このメソッドを使用して、値が列挙に存在するかどうかを判断はできません。 列挙に値が存在するかどうかを確認するには、DictEnum::value2Symbol メソッドを使用します。
 
 ### <a name="method-value2name"></a>メソッド value2Name
 
@@ -4731,7 +4730,7 @@ arrayIndex
 
 #### <a name="return-value"></a>戻り値
 
-フィールドの関係を表す DictRelation オブジェクト; null、Nothing、nullptr、unit、フィールドに関係が定義されていない場合、またはフィールドが拡張データ型に基づいていない場合は null 参照 (Visual Basic にはなし)。
+フィールドの関係を表す DictRelation オブジェクト。フィールドに関係が定義されていない場合、またはフィールドが拡張データ型に基づいていない場合は null、Nothing、nullptr、unit、null 参照 (Visual Basic では Nothing)。
 
 ### <a name="method-rights"></a>メソッド rights
 
@@ -5340,7 +5339,7 @@ saveInLoadedLayer
 #### <a name="parameters"></a>パラメーター
 
 db  
-返される名前のタイプを指定する DbBackend 値。 これは、インデックスのネイティブ名の場合は DbBackend :: Native、インデックスの SQL 名の場合は DbBackend :: Sql になります。 Db が指定されていない場合は、DbBackend::Native が使用されます。
+返される名前のタイプを指定する DbBackend 値。 これは、インデックスのネイティブ名の場合は DbBackend::Native、インデックスの SQL 名の場合は DbBackend::Sql になります。 db が指定されていない場合は、DbBackend::Native が使用されます。
 
 #### <a name="return-value"></a>戻り値
 
@@ -5527,7 +5526,7 @@ Finance and Operations のクラスの順序に基づいてクラスを指定す
 
 #### <a name="return-value"></a>戻り値
 
-クラス ID を示す classId システム データ型値; Dictionary::classCnt メソッドによって返されるクラスの数より大きな cnt 値を渡すと 0 (ゼロ)。
+クラス ID を示す classId システム データ型値。Dictionary::classCnt メソッドによって返されるクラスの数より大きな cnt 値を渡すと 0 (ゼロ)。
 
 ### <a name="method-classname"></a>メソッド className
 
@@ -5616,7 +5615,7 @@ Finance and Operations のコンフィギュレーション キーの順序に�
 
 #### <a name="return-value"></a>戻り値
 
-コンフィギュレーション キー ID を示す configurationKeyId システム データ型値; Dictionary::configurationKeyCnt メソッドから返されるコンフィギュレーション キーの数よりも大きい cnt 値を渡すと、0 (ゼロ) になります。
+コンフィギュレーション キー ID を示す configurationKeyId システム データ型値。Dictionary::configurationKeyCnt メソッドから返されるコンフィギュレーション キーの数よりも大きい cnt 値を渡すと、このデータ型値は 0 (ゼロ) になります。
 
 ### <a name="method-configurationkeyname"></a>メソッド configurationKeyName
 
@@ -5711,7 +5710,7 @@ Finance and Operations の列挙型の順序に基づいて列挙型を指定す
 
 #### <a name="return-value"></a>戻り値
 
-列挙型 ID を示す enumId システム データ型値です。Dictionary::enumCnt メソッドによって返されるクラスの数より大きな cnt 値を渡すと 0 (ゼロ) になります。
+列挙型 ID を示す enumId システム データ型値です。Dictionary::enumCnt メソッドによって返されるクラスの数より大きな cnt 値を渡すと、このデータ型値は 0 (ゼロ) になります。
 
 ### <a name="method-enumname"></a>メソッド enumName
 
@@ -5796,7 +5795,7 @@ Finance and Operations のライセンス コードの順序に基づいてラ�
 
 #### <a name="return-value"></a>戻り値
 
-ライセンス コード ID を示す licenseCodeId システムのデータ型の値、Dictionary::licenseCodeCnt メソッドによって返されるライセンス コードの数より大きな cnt 値を渡すと 0 (ゼロ)。
+ライセンス コード ID を示す licenseCodeId システム データ型値。Dictionary::licenseCodeCnt メソッドによって返されるライセンス コードの数より大きな cnt 値を渡すと、このデータ型値は 0 (ゼロ) になります。
 
 ### <a name="method-licensecodename"></a>メソッド licenseCodeName
 
@@ -5881,7 +5880,7 @@ cnt
 
 #### <a name="return-value"></a>戻り値
 
-テーブル ID を示す TableId システムのデータ型値、Dictionary::tableCnt メソッドによって返されるテーブル数より大きな cnt 値を渡すと 0 (ゼロ)。
+テーブル ID を示す TableId システムのデータ型値。Dictionary::tableCnt メソッドによって返されるテーブル数より大きな cnt 値を渡すと、このデータ型値は 0 (ゼロ)。
 
 ### <a name="method-tablename"></a>メソッド tableName
 
@@ -6042,7 +6041,7 @@ Finance and Operations の拡張データ型の順序に基づいて拡張デー
 
 #### <a name="return-value"></a>戻り値
 
-拡張データ型の ID を示す extendedTypeId システム データ型値です。Dictionary::typeCnt メソッドによって返される拡張データ型の数より大きな cnt 値を渡すと 0 (ゼロ) になります。
+拡張データ型の ID を示す extendedTypeId システム データ型値です。Dictionary::typeCnt メソッドによって返される拡張データ型の数より大きな cnt 値を渡すと、このデータ型値は 0 (ゼロ) になります。
 
 ### <a name="method-typename"></a>メソッド typeName
 
@@ -6523,7 +6522,7 @@ variableNumber
 
 #### <a name="remarks"></a>備考
 
-このメソッドは、DictMethod :: propertyMethod メソッドを呼び出して、メソッドがプロパティ メソッドかどうかを判定します。
+このメソッドは、DictMethod::propertyMethod メソッドを呼び出して、メソッドがプロパティ メソッドかどうかを判定します。
 
 ### <a name="method-propertymethod"></a>メソッド propertyMethod
 
@@ -7780,7 +7779,7 @@ tableAlias
 
 #### <a name="remarks"></a>備考
 
-Db が指定されていない場合は、DbBackend::Native オブジェクトが使用されます。
+db が指定されていない場合は、DbBackend::Native オブジェクトが使用されます。
 
 #### <a name="examples"></a>例
 
@@ -7889,7 +7888,7 @@ fieldId
 
 #### <a name="return-value"></a>戻り値
 
-fieldId パラメーターで指定されたフィールドの DictField オブジェクト; null、Nothing、nullptr、unit、オブジェクトを作成できない場合は null 参照 (Visual Basic にはなし)。
+fieldId パラメーターで指定されたフィールドの DictField オブジェクト。オブジェクトを作成できない場合は null、Nothing、nullptr、unit、null 参照 (Visual Basic では Nothing)。
 
 #### <a name="examples"></a>例
 
@@ -8195,7 +8194,7 @@ indexId
 
 #### <a name="return-value"></a>戻り値
 
-indexId パラメーターで指定されたインデックスの DictIndex オブジェクト; null、Nothing、nullptr、unit、オブジェクトを作成できない場合は null 参照 (Visual Basic にはなし)。
+indexId パラメーターで指定されたインデックスの DictIndex オブジェクト。オブジェクトを作成できない場合は null、Nothing、nullptr、unit、null 参照 (Visual Basic では Nothing)。
 
 #### <a name="examples"></a>例
 
@@ -8492,7 +8491,7 @@ searchBaseTables
 
 #### <a name="return-value"></a>戻り値
 
-レコードが正常に作成された場合の共通の値; null、Nothing、nullptr、unit、レコードを作成できなかった場合は null 参照 (Visual Basic にはなし)。
+レコードが正常に作成された場合の共通の値。レコードを作成できなかった場合は null、Nothing、nullptr、unit、null 参照 (Visual Basic では Nothing)。
 
 #### <a name="remarks"></a>備考
 
@@ -8628,7 +8627,7 @@ tableScope
 
 #### <a name="return-value"></a>戻り値
 
-methodNumber パラメーターで指定されているオブジェクト メソッドの MethodInfo クラスのインスタンス。インスタンスを作成できない場合は null、Nothing、nullptr、unit、null 参照 (Visual Basic にはなし) 。
+methodNumber パラメーターで指定されているオブジェクト メソッドの MethodInfo クラスのインスタンス。インスタンスを作成できない場合は null、Nothing、nullptr、unit、null 参照 (Visual Basic では Nothing)。
 
 #### <a name="examples"></a>例
 
@@ -8662,7 +8661,7 @@ methodNumber
 
 #### <a name="return-value"></a>戻り値
 
-\_cnt パラメーターで指定されたフィールドの DictTableMap オブジェクト; null、Nothing、nullptr、unit、オブジェクトを作成できない場合は null 参照 (Visual Basic にはなし)。
+\_cnt パラメーターで指定されたフィールドの DictTableMap オブジェクト。オブジェクトを作成できない場合は null、Nothing、nullptr、unit、null 参照 (Visual Basic では Nothing)。
 
 ### <a name="method-mapcnt"></a>メソッド mapCnt
 
@@ -8968,7 +8967,7 @@ methodNumber
 
 #### <a name="return-value"></a>戻り値
 
-methodNumber パラメーターで指定されている静的メソッドの MethodInfo クラスのインスタンス。null、Nothing、nullptr、unit、null 参照 (Visual Basic にはなし) 。
+methodNumber パラメーターで指定されている静的メソッドの MethodInfo クラスのインスタンス。インスタンスを作成できない場合は null、Nothing、nullptr、unit、null 参照 (Visual Basic では Nothing)。
 
 #### <a name="examples"></a>例
 
@@ -9206,7 +9205,7 @@ DictTable クラスのインスタンスを作成するために使用される�
 
 #### <a name="remarks"></a>備考
 
-SQL テーブルを再作成するメソッドを使用しないでください。代わりに、SqlDataDictionary::tableReindex メソッドを使用してください。 また、クライアントで実行時に DictTable::reindex メソッドはサポートされません。
+SQL テーブルのインデックスの再作成にこのメソッドを使用しないでください。代わりに、SqlDataDictionary::tableReindex メソッドを使用してください。 また、クライアントで実行時に DictTable::reindex メソッドはサポートされません。
 
 ## <a name="class-dicttablemap"></a>クラス DictTableMap
     class DictTableMap extends Object
@@ -9384,7 +9383,7 @@ SysDictType クラスは DictType を拡張します。
 
 #### <a name="remarks"></a>備考
 
-Global::Enum2Value メソッドを使用することにより、戻り値を文字列に変換することができます。
+Global::Enum2Value メソッドを使用して、戻り値を文字列に変換することができます。
 
 ### <a name="method-configurationkeyid"></a>メソッド configurationKeyId
 
@@ -10085,14 +10084,14 @@ tableId
 ## <a name="class-dll"></a>クラス DLL
     class DLL extends Object
 
-DLL クラスでは、Microsoft Windows 動的リンク ライブラリ (DLL) との通信を有効にします。
+DLL クラスでは、Microsoft Windows 動的リンク ライブラリ (DLL) との通信が有効になります。
 
 ### <a name="remarks"></a>備考
 
 Unicode DLL を使用している場合は、次の操作を行います。
 
--   ExtTypes :: String の代わりに ExtTypes :: WString を使用して、文字列型を指定します。
--   文字データがバイナリ構造に埋め込まれている場合は、Binary :: String ではなく Binary :: WString を使用します。
+-   ExtTypes::String の代わりに ExtTypes::WString を使用して、文字列型を指定します。
+-   文字データがバイナリ構造に埋め込まれている場合は、Binary::String ではなく Binary::WString を使用します。
 -   バイナリオ オブジェクトから文字列を読み取る必要がある場合は、Binary.string メソッドの代わりに Binary.wstring メソッドを使用します。
 
 ### <a name="examples"></a>例
@@ -10129,7 +10128,7 @@ Unicode DLL を使用している場合は、次の操作を行います。
         } 
     }
 
-### <a name="methods"></a>メソッド
+### <a name="methods"></a>方法
 
 | 方法                             | 説明                                                                               |
 |------------------------------------|-------------------------------------------------------------------------------------------|
@@ -10160,7 +10159,7 @@ DLL クラスのインスタンスを作成するために使用する DLL の�
 
 #### <a name="remarks"></a>備考
 
-DLL 関数にアクセスするには、DLLFunction :: new メソッドの呼び出しで作成された DLL クラスのインスタンスを使用します。 攻撃者が新しいメソッドへの入力を制御できる場合、セキュリティ上のリスクが存在します。 したがって、このメソッドは、コード アクセス セキュリティで実行されます。 サーバー上でこのメソッドを呼び出すには、InteropPermission クラスからのアクセス許可が必要です。 ユーザーがこのメソッドを呼び出すコントロールで、SysDevelopment へのセキュリティ キーを設定して開発権限を持っていることを確認します。
+DLL 関数にアクセスするには、DLLFunction::new メソッドの呼び出しで、その DLL クラスの作成されたインスタンスを使用します。 攻撃者が新しいメソッドへの入力を制御できる場合、セキュリティ上のリスクが存在します。 したがって、このメソッドは、コード アクセス セキュリティで実行されます。 サーバー上でこのメソッドを呼び出すには、InteropPermission クラスからのアクセス許可が必要です。 ユーザーがこのメソッドを呼び出すコントロールで、SysDevelopment へのセキュリティ キーを設定して開発権限を持っていることを確認します。
 
 #### <a name="examples"></a>例
 
@@ -10345,7 +10344,7 @@ DocNode クラスは、ドキュメント ノードの情報や機能を提供�
 
 #### <a name="return-value"></a>戻り値
 
-文字列としてのノードのソースコード。null、Nothing、nullptr、unit、ノードのソース コードがない場合は null 参照 (Visual Basic ではなし) です。
+文字列としてのノードのソースコード。ノードのソース コードがない場合は null、Nothing、nullptr、unit、null 参照 (Visual Basic では Nothing)。
 
 ### <a name="method-changedby"></a>メソッド changedBy
 
@@ -10509,11 +10508,11 @@ neededAccessLevel プロパティの現在の値。
 
 AccessType システム列挙値の使用可能な値は次のとおりです。
 
--   AccessType::NoAccess.
--   AccessType::View.
--   AccessType::Edit.
--   AccessType::Add.
--   AccessType::Delete.
+-   AccessType::NoAccess。
+-   AccessType::View。
+-   AccessType::Edit。
+-   AccessType::Add。
+-   AccessType::Delete。
 
 ### <a name="method-securitykey"></a>メソッド securityKey
 
@@ -10573,7 +10572,7 @@ ParentName
 
 #### <a name="return-value"></a>戻り値
 
-検出されるノードは otherwise、null、Nothing、nullptr、unit、null 参照 (Visual Basic では Nothing) です。
+検出されたノード。それ以外の場合は、null、Nothing、nullptr、unit、null 参照 (Visual Basic では Nothing)。
 
 ### <a name="method-findapplicationdocnode"></a>メソッド findApplicationDocNode
 
@@ -10603,7 +10602,7 @@ ParentName
 
 #### <a name="return-value"></a>戻り値
 
-検出されるノードは null、Nothing、nullptr、unit です。ノードが検出されなかった場合は null 参照 (Visual Basic では Nothing) です。
+検出されたノード。ノードが検出されなかった場合は null、Nothing、nullptr、unit、null 参照 (Visual Basic では Nothing)。
 
 ### <a name="method-findkerneldocnode"></a>メソッド findKernelDocNode
 
@@ -10633,7 +10632,7 @@ ParentName
 
 #### <a name="return-value"></a>戻り値
 
-検出されるノードは otherwise、null、Nothing、nullptr、unit、null 参照 (Visual Basic では Nothing) です。
+検出されたノード。それ以外の場合は、null、Nothing、nullptr、unit、null 参照 (Visual Basic では Nothing)。
 
 ### <a name="method-getnodedetached"></a>メソッド getNodeDetached
 
@@ -10901,7 +10900,6 @@ callbackObject
 <!-- -->
 
 setFocus  
-
 
 
 

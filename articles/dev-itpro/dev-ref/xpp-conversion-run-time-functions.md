@@ -1,13 +1,13 @@
 ---
-title: "X++ 変換ランタイム関数"
-description: "このトピックでは、変換ランタイム関数について説明します。"
+title: X++ 変換ランタイム関数
+description: このトピックでは、変換ランタイム関数について説明します。
 author: RobinARH
 manager: AnnBe
 ms.date: 06/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 9997740a69f1e6ea449ee2cceaab4c0bc8753652
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368542"
 ---
-
 # <a name="x-conversion-runtime-functions"></a>X++ 変換ランタイム関数
 
 [!include [banner](../includes/banner.md)]
@@ -593,18 +592,18 @@ MorphX は、指定された値が有効でない場合、書式設定パラメ�
 
 *小数点以下*パラメーターについては、最大値は **16** です。 より大きい数値が使用された場合、このメソッドは*小数点以下*のパラメーターの値をローカル コンピューターから取得します。 どちらの場合も、丸めが発生します。 *separator1* パラメータの使用可能な列挙値を次に示します。
 
--   **99** – 自動 (ユーザーの書式設定によって使用される小数点区切り記号を決定)、列挙値 DecimalSeparator:: 自動 
--   **1** – ドット (.)、列挙値 DecimalSeparator:: ドット
--   **2** – コンマ (,)、列挙値 DecimalSeparator:: コンマ
+-   **99** – 自動 (ユーザーの書式設定によって使用される小数点区切り記号を決定)、列挙値 DecimalSeparator::Auto 
+-   **1** – ドット (.)、列挙値 DecimalSeparator::Dot
+-   **2** – コンマ (,)、列挙値 DecimalSeparator::Comma
 
 *separator2* パラメータの使用可能な値を次に示します。
 
 -   **99** – 自動 (ユーザーの書式設定によって使用される 3 桁の区切り文字を決定)
--   **0** – なし (3 桁の区切り文字なし)、列挙値 ThousandSeparator:: なし
--   **1** – ドット (.)、列挙値 ThousandSeparator:: ドット
--   **2** – コンマ (,)、列挙値 ThousandSeparator:: コンマ
--   **3** – アポストロフィ (')、列挙値 ThousandSeparator:: アポストロフィ
--   **4** – スペース ( )、列挙値 ThousandSeparator:: スペース
+-   **0** – なし (3 桁の区切り文字なし)、列挙値 ThousandSeparator::None
+-   **1** – ドット (.)、列挙値 ThousandSeparator::Dot
+-   **2** – コンマ (,)、列挙値 ThousandSeparator::Comma
+-   **3** – アポストロフィ (')、列挙値 ThousandSeparator::Apostrophe
+-   **4** – スペース ( )、列挙値 ThousandSeparator::Space
 
 ### <a name="example"></a>例
 
@@ -724,7 +723,7 @@ MorphX は、指定された値が有効でない場合、書式設定パラメ�
 
 ### <a name="remarks"></a>備考
 
-関連関数 **enum2str** は列挙型の 1 要素から **Label** プロパティの値を返します。 **enum2str** 関数により返された値は、**str2enum** 関数の *\_type* パラメーターの入力となります。 *\_テキスト*パラメータは **enum2Str(BankAccountType::SavingsAccount)** の適切な値です。 各列挙型要素には、**名前**プロパティおよび**ラベル**プロパティがあります。 新規インストールでは、**名前**の値はほぼ必ず英語です。 英語版では、**ラベル**のプロパティ値がほとんどの場合、**名前**の値と同じです。 ただし、英語以外のエディションでは、**ラベル**値はローカライズされるため**名前**値とは一致しません。
+関連関数 **enum2str** は列挙型の 1 要素から **Label** プロパティの値を返します。 **enum2str** 関数により返された値は、**str2enum** 関数の *\_type* パラメーターの入力となります。 *\_テキスト* パラメータは、**enum2Str(BankAccountType::SavingsAccount)** の適切な値です。 各列挙型要素には、**名前**プロパティおよび**ラベル**プロパティがあります。 新規インストールでは、**名前**の値はほぼ必ず英語です。 英語版では、**ラベル**のプロパティ値がほとんどの場合、**名前**の値と同じです。 ただし、英語以外のエディションでは、**ラベル**値はローカライズされるため**名前**値とは一致しません。
 
 ### <a name="example"></a>例
 
@@ -963,7 +962,6 @@ MorphX は、指定された値が有効でない場合、書式設定パラメ�
 
     info(int2str(3123456789)); //returns -1171510507 as a string.
     info(uint2str(3123456789)); //returns 3123456789 as a string.
-
 
 
 

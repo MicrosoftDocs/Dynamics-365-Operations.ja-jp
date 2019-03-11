@@ -1,13 +1,13 @@
 ---
-title: "バッチ処理"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations のバッチ処理の概要について説明します。"
+title: バッチ処理
+description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations でのバッチ処理の概要を示します。
 author: hasaid
 manager: AnnBe
 ms.date: 10/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: IT Pro
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: hasaid
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: f3e3a22dbc343db1485190402371859861e46d1c
 ms.openlocfilehash: 6ed136b3aae92977f253b4bea3a1e99c1ef91c94
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/26/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369244"
 ---
-
 # <a name="batch-processing"></a>バッチ処理
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Finance and Operations のバッチ処理の概要について説明します。
+このトピックでは、Microsoft Dynamics 365 for Finance and Operations でのバッチ処理の概要を示します。
 
 Finance and Operations では、多くのタスクをバッチ ジョブの一部として実行できます。 たとえば、バッチ ジョブには、レポートの印刷、管理の実行、電子ドキュメントの送信などのタスクを含めることができます。 バッチ ジョブを使用すると、通常の就業時間内におけるコンピュータまたはサーバーの処理速度の低下を回避できます。 
 
@@ -56,4 +55,3 @@ Finance and Operations では、多くのタスクをバッチ ジョブの一�
 -  [バッチ マネージャー ロール](runby.md)
 -  [バッチ アクティブ期間](activeperiod.md)
 -  [バッチ ジョブのコピー](copy-batch-job.md)
-

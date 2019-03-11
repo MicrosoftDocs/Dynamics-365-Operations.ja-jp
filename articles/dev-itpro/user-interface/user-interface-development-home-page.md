@@ -1,13 +1,13 @@
 ---
-title: "ユーザー インターフェイス開発ホーム ページ"
-description: "このトピックには、ユーザー インターフェイス要素の開発に関するトピックへのリンクが含まれています。"
+title: ユーザー インターフェイス開発ホーム ページ
+description: このトピックには、ユーザー インターフェイス要素の開発に関するトピックへのリンクが含まれています。
 author: RobinARH
 manager: AnnBe
 ms.date: 12/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,21 +17,20 @@ ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
 ms.openlocfilehash: 54b5687d4cb1251627bc6c8b0fc0dc01ff16b292
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368447"
 ---
-
 # <a name="user-interface-development-home-page"></a>ユーザー インターフェイス開発ホーム ページ
 
 [!include [banner](../includes/banner.md)]
 
 このトピックには、ユーザー インターフェイス要素の開発に関するトピックへのリンクが含まれています。
 
-Microsoft Dynamics 365 for Finance and Operations のユーザー インターフェイスは、Microsoft Dynamics AX 2012 のインターフェイスと大きく異なります。 Dynamics AX 2012 のクライアントは、ActiveX、WinForm、または WPF コントロールを使用する拡張機能を備えた Microsoft Win32 アプリケーションです。 X++ アプリケーション ロジックが、フォーム メソッドおよびテーブル メソッドに対してクライアントで実行され、何らかのロジックがサーバー上で発生します。 コントロールについては、X++ ロジック アプリケーション プログラミング インターフェイス (API) および現物 Win32 コントロールの両方が、クライアントで密に接続されます。 クライアントは、すべての主要なブラウザーで動作する HTML Web クライアントです。 これらのブラウザーには、Microsoft Edge、Internet Explorer 11、Chrome、Safari が含まれています (「[システム要件](../../fin-and-ops/get-started/system-requirements.md)」を参照)。 Web クライアントへの移行により、クライアントのフォームとコントロールに以下の変更が加えられました。
+Microsoft Dynamics 365 for Finance and Operations のユーザー インターフェイスは、Microsoft Dynamics AX 2012 のユーザー インターフェイスと大きく異なります。 Dynamics AX 2012 のクライアントは、ActiveX、WinForm、または WPF コントロールを使用する拡張機能を備えた Microsoft Win32 アプリケーションです。 X++ アプリケーション ロジックが、フォーム メソッドおよびテーブル メソッドに対してクライアントで実行され、何らかのロジックがサーバー上で発生します。 コントロールについては、X++ ロジック アプリケーション プログラミング インターフェイス (API) および現物 Win32 コントロールの両方が、クライアントで密に接続されます。 クライアントは、すべての主要なブラウザーで動作する HTML Web クライアントです。 これらのブラウザーには、Microsoft Edge、Internet Explorer 11、Chrome、および Safari が含まれます ([システム要件](../../fin-and-ops/get-started/system-requirements.md) を参照)。 Web クライアントへの移行により、クライアントのフォームとコントロールに以下の変更が加えられました。
 
 -   フォームとコントロールの物理的な表現は、現在は、ブラウザー内の HTML、JavaScript、および CSS です。
 -   フォーム コントロールは、論理的および物理的な部分に分割されます。 X++ 論理 API および関連する状態は、サーバーで実行されます。
@@ -92,7 +91,6 @@ Microsoft Dynamics 365 for Finance and Operations のユーザー インター�
 -   [ローカライズ可能なラベルを拡張可能なコントロールに追加する](create-localizable-labels-client.md)
 -   [拡張可能なコントロール レイアウトのガイドライン](extensible-controls-layout.md)
 -   [コントロールに対してタスク レコーダーが生成するテキストの制御](task-recorder-control-text.md)
-
 
 
 

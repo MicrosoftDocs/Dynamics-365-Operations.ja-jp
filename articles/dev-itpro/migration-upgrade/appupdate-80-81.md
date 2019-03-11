@@ -1,33 +1,32 @@
 ---
-title: "バージョン 8.0 から 8.1.X への環境の更新"
-description: "このトピックでは、8.1 アプリケーション リリースに既存の Finance and Operations 8.0 環境を更新するために必要な手順について説明します。"
+title: バージョン 8.0 から 8.1.X への環境の更新
+description: このトピックでは、8.1 アプリケーション リリースに既存の Finance and Operations 8.0 環境を更新するために必要な手順について説明します。
 author: laneswenka
 manager: AnnBe
 ms.date: 12/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2018-10-31
-ms.dyn365.ops.version: 8.1
-ms.translationtype: HT
-ms.sourcegitcommit: 0cdf6e0a15bb61f4529de19a76ea2a31e8a945f8
+ms.dyn365.ops.version: 8.0999999999999996
 ms.openlocfilehash: 9c0535b8f6716dfe6775feea2cd961af7ce71f74
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/28/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368360"
 ---
-
 # <a name="update-environments-from-version-80-to-81x"></a>バージョン 8.0 から 8.1.X への環境の更新
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、8.1.X アプリケーション リリースに既存の Dynamics 365 for Finance and Operations 8.0 環境を更新するために必要な手順について説明します。
+このトピックでは、8.1 アプリケーション リリースに既存の Dynamics 365 for Finance and Operations 8.0 環境を更新するために必要な手順について説明します。
 
 ## <a name="background"></a>バックグラウンド
 
@@ -66,7 +65,7 @@ Lifecycle Services で、手順 1 で配置した**ビルド サーバー**に�
 
 [![VersionControl](./media/VersionControl.png)](./media/VersionControl.png)
 
-### <a name="prepare-using-visual-studio"></a>Visual Studio の使用準備
+### <a name="prepare-using-visual-studio"></a>Visual Studio を使用する準備
 その他の開発コンピューター (展開される新規コンピューター以外) で、Visual Studio を開き、ソース管理エクスプローラーに移動します。 8.1 更新用に分離される新しい分岐を作成します。
 
 [![BranchFor81](./media/BranchFor81.png)](./media/BranchFor81.png)
@@ -103,7 +102,7 @@ Lifecycle Services で、手順 1 で配置した**ビルド サーバー**に�
 当初は、パッケージが **すべてのバイナリ更新** タイルにあると伝えられました。 リリース 8.0 から最新のバイナリを取得するだけのユーザーがリリース 8.1 に誤って更新しないようにするため、バイナリ パッケージを共有資産ライブラリに移動しました。 このトピックは、この変更を反映するように更新されています。
 
 ### <a name="deployment-of-my-environment-fails-with-error-on-duplicate-objects"></a>重複するオブジェクトへの環境の配置がエラーで失敗する
-既定では、Visual Studio において、オブジェクトを拡張すると、Object.*Extension1* という名前で作成されます。 Microsoft により同じオブジェクトの新しい機能拡張が導入された場合、この名前は衝突する可能性があります。 この場合、展開は、次のようなエラーで失敗します。
+既定では、Visual Studio でオブジェクトを拡張すると、Object.*Extension1* という名前で作成されます。 Microsoft により同じオブジェクトの新しい機能拡張が導入された場合、この名前は衝突する可能性があります。 この場合、展開は、次のようなエラーで失敗します。
 ```
 Exception calling "CreateRuntimeProvider" with "1" argument(s): "Runtime metadata is invalid because the same metadata artifact has been defined in multiple assemblies. \nFirst 10 conflicting names: SystemAdministration.Extension1. \nSee metadata events for complete list."
 ```
@@ -111,6 +110,5 @@ Exception calling "CreateRuntimeProvider" with "1" argument(s): "Runtime metadat
 
 ### <a name="deployment-on-my-environment-fails-with-error-on-dvts-or-etws"></a>DVT または ETW で環境での配置がエラーにより失敗する
 DVT または ETWのステップが実行されると IIS/アプリケーション プールが完全に再開されない既知の問題があります。 DVT が環境の URL に接続しようとしているため、問題が発生します。 この問題を解決するには、LCS の展開で **再開** をクリックして、ステップを再試行します。  この問題を解決するため、タイマーと自動再試行が追加されます。
-
 
 

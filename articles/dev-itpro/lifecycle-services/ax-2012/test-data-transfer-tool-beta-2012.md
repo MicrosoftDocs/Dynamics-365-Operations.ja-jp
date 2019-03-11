@@ -1,13 +1,13 @@
 ---
-title: "テスト データ転送ツール (ベータ)"
-description: "Microsoft Dynamics AX 2012 Test Data Transfer Tool (ベータ) (DP.exe) は、生産環境または非生産環境の Microsoft Dynamics AX 2012 ビジネス データベースからデータをエクスポートするコマンド ライン ツールです。 このツールは、実稼働環境以外の環境でも Microsoft Dynamics AX 2012 ビジネス データベースにデータをインポートします。 非実稼働環境は、開発環境またはテスト環境のいずれかになります。"
+title: テスト データ転送ツール (ベータ)
+description: Microsoft Dynamics AX 2012 Test Data Transfer Tool (ベータ) (DP.exe) は、生産環境または非生産環境の Microsoft Dynamics AX 2012 ビジネス データベースからデータをエクスポートするコマンド ライン ツールです。 このツールは、実稼働環境以外の環境でも Microsoft Dynamics AX 2012 ビジネス データベースにデータをインポートします。 非実稼働環境は、開発環境またはテスト環境のいずれかになります。
 author: kfend
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012
-ms.service: 
-ms.technology: 
+ms.service: ''
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: AX 2012
@@ -15,16 +15,15 @@ ms.custom: 18651
 ms.assetid: de54d768-d7a3-45d4-93bf-e95356b797aa
 ms.search.region: Global
 ms.author: kfend
-ms.search.validFrom: 
+ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: d34603e22aabeb7c5925a286aab7e402c42cb0bd
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369242"
 ---
-
 # <a name="test-data-transfer-tool-beta"></a>テスト データ転送ツール (ベータ)
 
 [!include [banner](../../includes/banner.md)]
@@ -72,10 +71,9 @@ Microsoft Dynamics AX 2012 Test Data Transfer Tool (ベータ) は、ツール�
 
 [データのインポート、エクスポート、および移行の計画](http://technet.microsoft.com/library/a05289fb-0f8f-4563-be3c-7c840bfea7e1(AX.60).aspx)
 
-[Microsoft Dynamics AX 用のテスト データ転送ツール (ベータ版) をインストールする](install-test-data-transfer-tool-beta.md)
+[Microsoft Dynamics AX 用のテスト データ転送ツール (ベータ) のインストール](install-test-data-transfer-tool-beta.md)
 
-[Microsoft Dynamics AX 用のテスト データ転送ツール (ベータ版) を実行する](run-test-data-transfer-tool-beta.md)
-
+[Microsoft Dynamics AX 用のテスト データ転送ツール (ベータ) の実行](run-test-data-transfer-tool-beta.md)
 
 
 

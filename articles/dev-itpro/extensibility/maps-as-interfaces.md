@@ -1,30 +1,29 @@
 ---
-title: "インターフェイスとして使用されるテーブル マップの拡張"
-description: "このトピックでは、インターフェイスとして使用されるテーブル マップを拡張する方法について説明します。"
+title: インターフェイスとして使用されるテーブル マップの拡張
+description: このトピックでは、インターフェイスとして使用されるテーブル マップを拡張する方法について説明します。
 author: LarsBlaaberg
 manager: AnnBe
 ms.date: 12/10/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
 ms.custom: 89563
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: lolsen
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 11
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: c8b71fe1e49c5c1db148e9710a1c64730c5d3a7e
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369885"
 ---
-
 # <a name="extend-table-maps-that-are-used-as-interfaces"></a>インターフェイスとして使用されるテーブル マップの拡張
 
 [!include [banner](../includes/banner.md)]
@@ -58,4 +57,3 @@ ms.lasthandoff: 08/09/2018
 ![MapsAsInterfacesWalkThrough](media/MapsAsInterfaces2.png)
 
 この図には、**SalesPurchTable** を実装する **ISV1Header** テーブルを含み、独自の **SalesPurchTableInterface** 派生クラスを含む ISVModule1 モデルが含まれています。 このモデルは ISVModule2 から独立しているため、ISVModule2 のロジックが、**ISV2SalesPurchTableInterface** クラス階層からインスタンスを作成すると、**SalesPurchTable** レコードが **ISV1Header** タイプの場合に基本クラスのインスタンスが返されます。 基本クラスのメソッドが、未知のテーブルに対して適切な結果を返す場合、同じインストール内で 2 つの ISV モデルが共存します。
-

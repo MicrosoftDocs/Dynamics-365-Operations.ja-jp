@@ -1,13 +1,13 @@
 ---
-title: "組織の法律条項およびプライバシーに関する声明へのリンクの追加"
-description: "このトピックでは、管理者が Microsoft Dynamics 365 for Finance および Operations and Microsoft Dynamics 365 for Retail の <strong>バージョン情報</strong> ウィンドウで、組織の法的条項およびプライバシーに関する声明へのリンクを追加する方法について説明します。"
+title: 組織の法律条項およびプライバシーに関する声明へのリンクの追加
+description: このトピックでは、管理者が Microsoft Dynamics 365 for Finance and Operations および Microsoft Dynamics 365 for Retail の<strong>バージョン情報</strong>ウィンドウで、組織の法的条項およびプライバシーに関する声明へのリンクを追加する方法について説明します。
 author: aneesmsft
 manager: AnnBe
 ms.date: 10/02/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SystemParameters, SysAbout
 audience: IT Pro
 ms.reviewer: sericks
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Application update 4
+ms.openlocfilehash: d6be446626c1faf932c094fee61658730560685f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: f913963f807b768e6a554e20a46a5f119e46e6c8
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369036"
 ---
-
 # <a name="add-links-to-your-organizations-legal-terms-and-privacy-statement"></a>組織の法律条項およびプライバシーに関する声明へのリンクの追加
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、管理者が Microsoft Dynamics 365 for Finance および Operations and Microsoft Dynamics 365 for Retail の <strong>バージョン情報</strong> ウィンドウで、組織の法的条項およびプライバシーに関する声明へのリンクを追加する方法について説明します。
+このトピックでは、管理者が Microsoft Dynamics 365 for Finance and Operations および Microsoft Dynamics 365 for Retail の<strong>バージョン情報</strong>ウィンドウで、組織の法的条項およびプライバシーに関する声明へのリンクを追加する方法について説明します。
 
 組織は、多くの場合、法的およびコンプライアンス要件を満たすため、その法的な条件およびプライバシーに関する声明へのリンクをユーザーがすぐに入手して表示できるようにする必要があります。 組織の管理者は、以下の手順に従って、**バージョン情報**ウィンドウ (**設定** &gt; **バージョン情報**) で利用可能である法律条項とプライバシーに関する声明へのリンクを持つことができます。
 
@@ -69,4 +68,3 @@ ms.lasthandoff: 04/20/2018
 
 ### <a name="validate-the-links-in-modern-point-of-sale-mpos-and-cloud-point-of-sale-cpos"></a>Modern POS (MPOS) およびクラウド POS (CPOS) のリンクの検証
 リンクが追加されたことを検証するには、**設定** ページにアクセスします。 **情報**セクションで、適切なページが開くことを検証するためにリンクをクリックします。
-

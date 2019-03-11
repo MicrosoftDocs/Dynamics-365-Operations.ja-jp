@@ -1,13 +1,13 @@
 ---
-title: "入力コントロールとグリッド列のサイズ"
-description: "この記事では、コントロールとグリッドのサイズを制御することによってフォームの一貫した概観を作成する方法について説明します。"
+title: 入力コントロールとグリッド列のサイズ
+description: この記事では、コントロールとグリッドのサイズを制御することによってフォームの一貫した概観を作成する方法について説明します。
 author: RobinARH
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 2becb4ad5e048619a1a7328778540ae8506cbfc8
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: f758cefd9af66b3e017469bb1942feb1e79d6933
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369067"
 ---
-
 # <a name="input-controls-and-grid-column-sizes"></a>入力コントロールとグリッド列のサイズ
 
 [!include [banner](../includes/banner.md)]
@@ -51,7 +50,7 @@ Dynamics 365 for Finance and Operations が、グリッド コントロールの
 **注記:** 明示的なピクセル数は、ユーザー インターフェイスの発展に伴って、時間の経過と共に変化する可能性があります。 開発者は明示的なピクセル サイズに頼るべきではありません。
 
 ## <a name="forcing-a-desired-discrete-size"></a>必要な個別のサイズの強制
-前の表で示すように、グリッド ホスト コントロールの幅を 6 文字から 15 文字に変更すると、列の幅には影響しません。 レイアウト エンジンは、6 〜 15 文字の範囲内のすべてのコントロール幅に同じ幅を与えます。これは、この範囲のコントロールが小さい (S) とみなされるためです。 中規模な (M) サイズにコントロールを拡張する場合は、幅の値は 16 文字以上 31 文字未満の値に設定する必要があります。 入力コントロールの区分する方法の指針については、次の表を参照してください。 場合によっては、フォーム パターンの使用は開発者によって定義されたサイズ変更をオーバーライドまたは非表示にします。
+前の表で示すように、グリッド ホスト コントロールの幅を 6 文字から 15 文字に変更すると、列の幅には影響しません。 レイアウト エンジンは、6〜15 文字の範囲内のすべてのコントロール幅に同じ幅を与えます。これは、この範囲のコントロールが小さい (S) とみなされるためです。中規模な (M) サイズにコントロールを拡張する場合は、幅の値は 16 文字以上 31 文字未満の値に設定する必要があります。 入力コントロールの区分する方法の指針については、次の表を参照してください。場合によっては、フォーム パターンの使用は開発者によって定義されたサイズ変更をオーバーライドまたは非表示にします。
 
 | プロパティ          | 先頭値        | 説明                                                                                                                                            |
 |-------------------|--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -62,7 +61,6 @@ Dynamics 365 for Finance and Operations が、グリッド コントロールの
 | WidthMode         | 列の幅 | サイズ-親のビヘイビアーを使用します。                                                                                                                           |
 | DisplayLength     | 無            | 文字で指定されている、開発者が定義したコントロールの幅。 (値は、前の表にリストされているサイズ グループにマップされます。) |
 | 幅             | 無            | ピクセル単位で指定されている、開発者が定義したコントロールの幅。                                                                                     |
-
 
 
 

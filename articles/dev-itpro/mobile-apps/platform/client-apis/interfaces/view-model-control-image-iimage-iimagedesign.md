@@ -1,28 +1,27 @@
 ---
-title: "ImageDesign タイプ"
-description: "イメージ デザイン オブジェクトの種類。"
+title: ImageDesign タイプ
+description: イメージ デザイン オブジェクトの種類。
 author: shadykdc
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
-ms.search.scope: 
+ms.search.scope: ''
 ms.search.region: Global
 ms.author: kashea
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
-ms.translationtype: HT
-ms.sourcegitcommit: ed6cabcc8c76fba3d4414cd4b564b720c54169e0
+ms.search.validFrom: ''
+ms.dyn365.ops.version: ''
 ms.openlocfilehash: 56652c076a3f95c8cde9d41c6516af39ba3b1ab4
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368833"
 ---
-
 # <a name="imagedesign-type"></a>ImageDesign タイプ
 
 [!include [banner](../../../../includes/banner.md)]
@@ -88,7 +87,7 @@ bindings: any (optional)
 
 ### <a name="border"></a>border
 
-border: "none" &#124; "solid" &#124; "left" &#124; "right" &#124; "top" &#124; "bottom" (optional) 
+border: "none" &#124; "solid" &#124; "left" &#124; "right" &#124; "top" &#124; "bottom" (省略可) 
 
 コントロールの境界動作。 このプロパティは、子によって継承されません。
 
@@ -225,6 +224,5 @@ width: string (省略可)
 
 画像の相対水平方向。
 サイズは CSS 空白サイズとほぼ同じです。
-
 
 

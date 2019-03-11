@@ -1,13 +1,13 @@
 ---
-title: "Finance and Operations の倉庫モバイル デバイス ポータル (WMDP)"
-description: "この記事では、Microsoft Dynamics 365 for Finance and Operations の倉庫モバイル デバイスを有効にする方法について説明します。 また、環境を稼働させてアップグレードする方法についても説明します。"
+title: Finance and Operations の倉庫モバイル デバイス ポータル (WMDP)
+description: この記事では、Microsoft Dynamics 365 for Finance and Operations の倉庫モバイル デバイスを有効にする方法について説明します。 また、環境を稼働させてアップグレードする方法についても説明します。
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: e6af4626c2745dba2b89ced903991e75f019e80e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 42dd8c00a7f1c1a5f5e76246e482fd2531e884af
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369664"
 ---
-
 # <a name="warehouse-mobile-devices-portal-wmdp-for-finance-and-operations"></a>Finance and Operations の倉庫モバイル デバイス ポータル (WMDP)
 
 [!include [banner](../includes/banner.md)]
@@ -36,7 +35,7 @@ ms.lasthandoff: 04/20/2018
 ## <a name="download-the-installer-for-warehouse-mobile-devices-portal"></a>Warehouse Mobile Devices Portal のインストーラーをダウンロード
 WMDP は、スタンドアロンの Microsoft インストール パッケージによってインストールされます。 インストーラー ファイル、WarehouseMobileDevicesPortal.msi は、Finance and Operations から直接ダウンロードできます。 インストーラーを入手するためには、倉庫管理モジュールが有効になっている必要があります。 WMDP インストーラーをダウンロードするには、これらの手順に従います。
 
-1.  Dynamics 365 for Finance and Operations に情報技術マネージャーのロールを持つユーザーとしてログインします。
+1.  Dynamics 365 for Finance and Operations に情報技術マネージャのロールを持つユーザーとしてログインします。
 2.  **倉庫管理** &gt; **設定** &gt; **モバイル デバイス** &gt; **倉庫モバイル デバイス ポータルのダウンロード**の順に移動します。[![op-wmdp-01](./media/op-wmdp-01.png)](./media/op-wmdp-01.png)
 3.  Security Best Practices チェックリストを確認します。 レビューする各品目の **完了** チェック ボックスをオンにします。
 4.  法的情報セクションで、ソフトウェアのライセンス条項を読みます。
@@ -80,11 +79,11 @@ Warehouse モバイル デバイス ポータル のホスト・マシンで証�
 Warehouse モバイル デバイス ポータル アプリケーションを特定の Finance and Operations サーバーと相互作用させるには、インストール後に以下の構成手順を完了する必要があります。
 
 1.  Azure Active Directory で Operations テナント用のネイティブ アプリケーションを登録します。 このアプリケーションは、Microsoft Dynamics ERP へのアクセスが必要です。
-    1.  Finance and Operations カスタム サービス認証については、[Dynamics 365 for Finance and Operations Services の技術的な概念に関するガイド](../../dev-itpro/data-entities/services-home-page.md)をご覧ください。
+    1.  Finance and Operations カスタム サービス認証については、[Dynamics 365 for Finance and Operations Services の技術的な概念に関するガイド](../../dev-itpro/data-entities/services-home-page.md) をご覧ください。
     2.  「AAD でネイティブ アプリケーションを登録」するための手順に従います。
     3.  これでアプリケーション **クライアント ID** を取得しました。
 
-2.  Azure Active Directory で Operations テナント用の新しいユーザー アカウントを作成します。 このユーザー アカウントの目的は、Operations サーバーが公開する、WMDP 特有の顧客サービスにアクセスすることです。 この手順を完了した後、**WMDP 電子メール アドレス**と **WMDP パスワード**から構成される、**WMDP ユーザー資格情報**が作成されます。 Azure AD および Finance and Operations にユーザーを追加する基本的な方法については、次のチュートリアルを参照してください: [Finance and Operations サブスクリプションのサインアップ]((../../dev-itpro/sign-up-preview-subscription.md)。
+2.  Azure Active Directory で Operations テナント用の新しいユーザー アカウントを作成します。 このユーザー アカウントの目的は、Operations サーバーが公開する、WMDP 特有の顧客サービスにアクセスすることです。 この手順を完了した後、**WMDP 電子メール アドレス**と **WMDP パスワード**から構成される、**WMDP ユーザー資格情報**が作成されます。 Azure AD および Finance and Operations にユーザーを追加する基本的な方法については、次のチュートリアルを参照してください: [Finance and Operations サブスクリプションへのサインアップ]((../../dev-itpro/sign-up-preview-subscription.md)。
 3.  **WMDP ユーザー資格情報**に対応するオペレーション ユーザーを作成します。
     1.  Finance and Operations で、**システム管理** &gt; **共通** &gt; **ユーザー** に移動します。
     2.  新規ユーザーを作成します。
@@ -156,8 +155,7 @@ Warehouse モバイル デバイス ポータル アプリケーションを特�
     3.  UI またはコマンド ラインを使用して、**古い WMDP インスタンス**をアンインストールします。
 
 ## <a name="troubleshooting"></a>トラブルシューティング
-**問題:** この一般的なエラーが表示されます: 要求の処理中にエラーが発生しました。 要求を再試行するか、またはシステム管理者に問い合わせてください。 **ソリューション:** イベントビューアを開き、Application logs に移動すると、次の例に示すように、例外の詳細を含む ASP.NET が提供するログが見つかります。 [![イベント ビューア アプリケーション ログへの ASP.NET ログイン](./media/151.png)](./media/151.png)イベント ビューアのエラーに関する追加情報は、このブログを参照してください[Microsoft Dynamics AX の倉庫モバイル デバイス ポータル](http://community.dynamics.com/ax/b/dynamicsaxseven/archive/2016/03/17/warehouse-mobile-devices-portal-for-microsoft-dynamics-ax)。
-
+**問題:** この一般的なエラーが表示されます: 要求の処理中にエラーが発生しました。 要求を再試行するか、またはシステム管理者に問い合わせてください。 **ソリューション:** イベント ビューアーを開き、アプリケーション ログに移動すると、次の例に示すように、例外の詳細を含む ASP.NET が提供するログが見つかります。 [![イベント ビューアー アプリケーション ログへの ASP.NET ログイン](./media/151.png)](./media/151.png)イベント ビューアーのエラーに関する追加情報は、このブログを参照してください: [Microsoft Dynamics AX の倉庫モバイル デバイス ポータル](http://community.dynamics.com/ax/b/dynamicsaxseven/archive/2016/03/17/warehouse-mobile-devices-portal-for-microsoft-dynamics-ax)。
 
 
 

@@ -1,30 +1,29 @@
 ---
-title: "BPM ライブラリと Azure DevOps の同期"
-description: "このトピックでは、LCS の BPM ライブラリを Azure DevOps と同期させる方法について説明します。"
+title: BPM ライブラリと Azure DevOps の同期
+description: このトピックでは、LCS の BPM ライブラリを Azure DevOps と同期させる方法について説明します。
 author: kfend
 manager: AnnBe
 ms.date: 11/13/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: AX 2012, Operations
 ms.custom: 13301
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ntecklu
-ms.search.validFrom: 
+ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.translationtype: HT
-ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
 ms.openlocfilehash: 748df4712bfdbff14ee09f32aed6c415065675e9
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/17/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369025"
 ---
-
 # <a name="synchronize-bpm-libraries-with-azure-devops"></a>BPM ライブラリと Azure DevOps の同期
 
 [!include [banner](../includes/banner.md)]
@@ -127,4 +126,3 @@ Azure DevOps に接続されている業務プロセスを確認するとき、A
     Azure DevOps では、現在の業務プロセスに関連付けられている要求作業項目が作成されます。
 
 現在の業務プロセスに関連付けられている Azure DevOps 作業項目に移動するには、**要件** タブで適切なリンクを選択します。
-

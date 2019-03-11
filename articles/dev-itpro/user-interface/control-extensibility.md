@@ -1,13 +1,13 @@
 ---
-title: "コントロールの拡張機能"
-description: "この記事では、開発者がユーザー インターフェイスを拡張し、新しいユーザー インターフェイス パターンを定義できるようにするアーキテクチャについて説明します。"
+title: コントロールの拡張機能
+description: この記事では、開発者がユーザー インターフェイスを拡張し、新しいユーザー インターフェイス パターンを定義できるようにするアーキテクチャについて説明します。
 author: RobinARH
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: shshabazz
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: fd09487a027014423b4a0b1795deab81ca6414fd
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 21c0f4dd57b79d861d5d2054ca200663851850a0
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369878"
 ---
-
 # <a name="control-extensibility"></a>コントロールの拡張機能
 
 [!include [banner](../includes/banner.md)]
@@ -44,7 +43,6 @@ ms.lasthandoff: 04/20/2018
 
 ## <a name="control-extensibility-architecture-overview"></a>コントロールの拡張機能アーキテクチャの概要
 次の図は、関係するコンポーネントとそれらの相互関係を示しています。 [![拡張性アーキテクチャのコントロール](./media/extensibilitycontrolarchitecture.png)](./media/extensibilitycontrolarchitecture.png)
-
 
 
 

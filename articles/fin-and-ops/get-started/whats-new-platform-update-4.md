@@ -1,13 +1,13 @@
 ---
-title: "Dynamics 365 for Operations プラットフォーム更新プログラム 4 (2017 年 2 月) の新機能および変更された機能"
-description: "このトピックでは、Dynamics 365 for Operations プラットフォーム更新プログラム 4 における新機能または変更された機能について説明します。 このバージョンは 2017 年 2 月にリリースされ、ビルド番号は 7.0.4425.16161 です。"
+title: Dynamics 365 for Operations プラットフォーム更新プログラム 4 (2017 年 2 月) の新機能および変更された機能
+description: このトピックでは、Dynamics 365 for Operations プラットフォーム更新プログラム 4 の新機能または変更された機能について説明します。 このバージョンは 2017 年 2 月にリリースされ、ビルド番号は 7.0.4425.16161 です。
 author: sericks007
 manager: AnnBe
 ms.date: 04/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,19 +17,18 @@ ms.search.region: global
 ms.author: sericks
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
+ms.openlocfilehash: be12cebe8fa536f2bd8a4ddddeb3a52dbf124714
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 6652520f061a830ad0eaa87bc4f4b2f43190d3b3
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368595"
 ---
-
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-platform-update-4-february-2017"></a>Dynamics 365 for Operations プラットフォーム更新プログラム 4 (2017 年 2 月) の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Dynamics 365 for Operations プラットフォーム更新プログラム 4 における新機能または変更された機能について説明します。 このバージョンは 2017 年 2 月にリリースされ、ビルド番号は 7.0.4425.16161 です。
+このトピックでは、Dynamics 365 for Operations プラットフォーム更新プログラム 4 の新機能または変更された機能について説明します。 このバージョンは 2017 年 2 月にリリースされ、ビルド番号は 7.0.4425.16161 です。
 
 ## <a name="overview"></a>概要
 
@@ -54,7 +53,7 @@ Microsoft Dynamics クラウド プラットフォームの継続的な更新サ
 
 [![更新 4 を含むトポロジ](./media/2222222222.png)](./media/2222222222.png)
 
-[Dynamics 365 for Operations バージョン 1611](whats-new-platform-update-3.md) では、プラットフォーム モデルをオーバーレイできません。 したがって、このリリースからすべての更新がバイナリであるため、**プラットフォーム X++ 更新プログラム** タイルは不要になりました。 Dynamics 365 for Operations バージョン 1611 より前のバージョンを使用しているお客様は、引き続きプラットフォーム モデルに対するカスタマイズのために**プラットフォーム X++ 更新プログラム** タイルを表示します。 バイナリ更新プログラムは累積的であるため、常に最新の更新プログラムを適用することをお勧めします。 詳細については、[LCS ブログ](https://blogs.msdn.microsoft.com/lcs/2017/01/26/january-2017-release-notes/) を参照してください。 Microsoft Dynamics 365 for Operations プラットフォーム更新プログラム 4 でのその他の機能の概要を次に示します。
+[Dynamics 365 for Operations バージョン 1611](whats-new-platform-update-3.md)では、ラットフォーム モデルをオーバーレイできません。 したがって、このリリースからすべての更新がバイナリであるため、**プラットフォーム X++ 更新プログラム** タイルは不要になりました。 Dynamics 365 for Operations バージョン 1611 より前のバージョンを使用しているお客様は、引き続きプラットフォーム モデルに対するカスタマイズのために**プラットフォーム X++ 更新プログラム** タイルを表示します。 バイナリ更新プログラムは累積的であるため、常に最新の更新プログラムを適用することをお勧めします。 詳細については、[LCS ブログ](https://blogs.msdn.microsoft.com/lcs/2017/01/26/january-2017-release-notes/) を参照してください。 Microsoft Dynamics 365 for Operations プラットフォーム更新プログラム 4 でのその他の機能の概要を次に示します。
 
 ## <a name="embedded-power-bi-reports-are-licensed-for-all-users"></a>埋め込み Power BI レポートは、すべてのユーザーに許可されています
 
@@ -70,7 +69,7 @@ PowerBI.com サービス統合を通じて提供される既存の[タイルピ�
 
 ユーザーが power user またはビジネス アナリストである場合は、Power BI ツールを使用して、既製のレポートを調整したり、新しいレポートを作成することができます。 ユーザーが開発者であり、製品の豊富なナビゲーション エクスペリエンスを提供するためにユーザーがワークスペースとして作成したレポートを使用できます。 パートナーおよび独立系ソフトウェア ベンダー (ISV) コミュニティーの一員である場合は、Power BI エクスペリエンスを含む豊富なワークスペースを構築し、それらのワークスペースをソリューションの一部としてリリースすることができるようになりました。
 
-ユーザーが ISV またはシステム インテグレーターである場合は、Microsoft Dynamics Lifecycle Services (LCS) ソリューションの一部として、[Power BI の有効化されたワークスペースをパッケージ化](../../dev-itpro/analytics/power-bi-embedded-integration.md)(ナビゲーション エクスペリエンスと共に) できます。 顧客は同じ体験をしますが、PowerBI.com サブスクリプションは必要はありません。 このソリューションは Dynamics 365 for Operations でのみ動作します。
+ユーザーが ISV またはシステム インテグレーターである場合は、Microsoft Dynamics Lifecycle Services (LCS) ソリューションの一部として、(ナビゲーション エクスペリエンスと共に) [Power BI の有効化されたワークスペースをパッケージ化](../../dev-itpro/analytics/power-bi-embedded-integration.md) することができます。 顧客は同じ体験をしますが、PowerBI.com サブスクリプションは必要はありません。 このソリューションは、Dynamics 365 for Operations でのみ動作します。
 
 これらの機能およびその他の Power BI 機能に関する詳細については、[BI ブログ](https://blogs.msdn.microsoft.com/dynamicsaxbi/) を参照してください。
 
@@ -97,4 +96,3 @@ Dynamics 365 for Operations のモバイル フレームワークを大幅に向
 フィードバックを常に大切に扱います。 この更新処理の一環として、定期的に製品の推奨を評価するように要求されます。 お客様の経験の継続な向上に役立たせるために、このフィードバックのご提供をお願いいたします。 改善可能な領域の詳細情報を提供することも推奨します。
 
 [![フィードバックの確認](./media/6666666666-1024x453.png)](./media/6666666666.png)
-

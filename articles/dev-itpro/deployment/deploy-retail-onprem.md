@@ -1,13 +1,13 @@
 ---
-title: "オンプレミス環境での小売チャネルのコンポーネントのインストール手順"
-description: "このトピックでは、オンプレミス環境での小売チャネルのコンポーネントのインストール手順について説明します。"
+title: オンプレミス環境での小売チャネルのコンポーネントのインストール手順
+description: このトピックでは、オンプレミス環境での小売チャネルのコンポーネントのインストール手順について説明します。
 author: jashanno
 manager: AnnBe
 ms.date: 12/17/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.scope: Retail, Operations
@@ -15,14 +15,13 @@ ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1.1
-ms.translationtype: HT
-ms.sourcegitcommit: eeccbe753cd4adf86665a3c6a372fdbfca371799
 ms.openlocfilehash: 1be5c062f41677a9a5e22d8bed871bdf9219de2a
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/19/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368985"
 ---
-
 # <a name="installation-steps-for-retail-channel-components-in-an-on-premises-environment"></a>オンプレミス環境での小売チャネルのコンポーネントのインストール手順
 
 [!include[banner](../includes/banner.md)]
@@ -31,16 +30,16 @@ ms.lasthandoff: 12/19/2018
 
 ## <a name="overview"></a>概要
 
-オンプレミス環境では、小売チャネル機能は Retail Store Scale Unit の使用により排他的に有効になります。 Retail Store Scale Unit の概要については、[Retail Store Scale Unit](../../retail/dev-itpro/retail-store-system-begin.md) を参照してください。 
+オンプレミス環境では、小売チャネル機能は Retail Store Scale Unit による使用のみ有効です。 Retail Store Scale Unit の概要については、[Retail Store Scale Unit](../../retail/dev-itpro/retail-store-system-begin.md) をご覧ください。 
 
 クラウド展開とは異なり、オンプレミス環境では Lifecycle Services (LCS) 経由で小売チャネル コンポーネントのシームレスで可用性の高い展開は有効になりません。 Retail Store Scale Unit をインストールすることによってのみ、小売チャネル コンポーネントを使用できます。
 
-## <a name="prerequisites"></a>前提条件 
+## <a name="prerequisites"></a>必要条件 
 
 小売チャネル コンポーネントのインストールを開始する前に、まずオンプレミス環境のすべての事前インストール手順を完了してください。 この手順は、[オンプレミス環境の設定と配置 (Platform update 12 以降)](setup-deploy-on-premises-pu12.md)で説明されています。 さらに、Retail の全機能を使用するは、バージョン 8.1.1 をインストールする必要があります。 バージョン 8.1.2 に更新することをお勧めします。
 
 > [!Note]
-> パブリックにアクセスできないセキュリティで保護されたネットワークを使用して、Retail Store Scale Unit (RSSU) を小売用バック オフィスに接続することが重要です。 さらに、小売用バックオフィスへのネットワーク アクセスを、ネットワーク フィルタリングやその他の方法を介した既知の RSSU デバイスのみに許可されるように制限してください。 つまり、ファイアウォールが存在する必要があります。ホワイトリストへの追加を強くお勧めします。
+> 誰もが自由にアクセスできない、セキュリティで保護されたネットワークを使用して、Retail Store Scale Unit (RSSU) を小売用バック オフィスに接続することが絶対に必要です。 さらに、小売用バックオフィスへのネットワーク アクセスを、ネットワーク フィルタリングやその他の方法を介した既知の RSSU デバイスのみに許可されるように制限してください。 つまり、ファイアウォールが存在する必要があります。ホワイトリストへの追加を強くお勧めします。
 
 ## <a name="installation-steps"></a>インストール手順
 
@@ -75,7 +74,7 @@ ms.lasthandoff: 12/19/2018
   >
   > このシークレットを安全に保つことが重要です。 このシークレットは、1 回だけコピーしてください。システムに保存しないでください。  生成されたクライアント ID とシークレットは、Retail Store Scale Unit インストーラーの実行中に使用されるため、後で使用する必要があります。  シークレットはいつでも再度リセットできますが、前のシークレットを使用した Retail Store Scale Unit で更新する必要があります。
 
-9.  **Retail** &gt; **小売本社の設定** &gt; **小売用スケジューラ** &gt; **Connector for Microsoft Dynamics AX** に移動します。
+9.  **小売用**&gt;**バックオフィスの設定**&gt;**小売用スケジューラ**&gt;**Microsoft Dynamics AX のコネクタ**の順に移動します。
 10.  アクション ウィンドウで **編集** を選択します。
 11.  **プロファイル** フィールドに、**既定**値を入力します。  必要に応じて、**説明** フィールドに説明を入力します。
 
@@ -84,7 +83,7 @@ ms.lasthandoff: 12/19/2018
 
 12.   **Web アプリケーション名** フィールドに、**RetailCDXRealTimeService** と入力します。
 13.  **プロトコル** フィールドで、**https** を選択します。
-14.  **共通名** フィールドに、**AXServiceUser@contoso.com** と入力します。
+14.  **通称**フィールドに、**AXServiceUser@contoso.com** と入力します。
 15.  アクション ウィンドウで、**保存** を選択します。
 16.  小売用バックオフィスで、**Retail** &gt; **本社の設定** &gt; **パラメーター** &gt; **小売共有パラメーター**に移動します。
 17.  **セキュリティ** タブを選択します。
@@ -97,7 +96,6 @@ ms.lasthandoff: 12/19/2018
 24.  **全般** タブで、**初期化** リンクを選択し、Retail 機能のシード データを構成します。
 
   > [!NOTE]
-  > 初めてダウンロードが試みられるとき、インストーラーは関連するページからダウンロードされません。  これは、インストーラーはダウンロードの場所に配置されているだけであり、関連付けられているデータベースの値がまだ存在しないためです。  本社で、**ダウンロード**機能が試行されると (たとえば、Retail Store Scale Unit または Retail Modern POS)、エラーが表示され、2 回目にダウンロードが試みられたときにインストーラーをダウンロードできるようにする自動アップロード機能が開始されます。 (インストーラーのダウンロードがもう一度試みられるまで 1 分待ってください)。
+  > 初めてダウンロードが試みられるとき、インストーラーは関連するページからダウンロードされません。  これは、インストーラーはダウンロードの場所に配置されているだけであり、関連付けられているデータベースの値がまだ存在しないためです。  バックオフィスで、**ダウンロード**機能が試行されると (たとえば、Retail Store Scale Unit または Retail Modern POS)、エラーが表示され、2 回目にダウンロードが試みられたときにインストーラーをダウンロードできるようにする自動アップロード機能が開始されます。 (インストーラーのダウンロードがもう一度試みられるまで 1 分待ってください)。
 
-25. Retail Store Scale Unit をインストールするためのインストール手順に従います。 手順については、[Retail Store Scale Unit のコンフィギュレーションとインストール](../../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md)を参照してください。  このドキュメントの複数の場所に、オンプレミス配置の指示に対する変更を参照するメモがあります。 これらの変更を記録することが重要です。 
-
+25. Retail Store Scale Unit のインストールのためのインストール手順に従います。 手順については、[Retail Store Scale Unit のコンフィギュレーションとインストール](../../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md)を参照してください。  このドキュメントの複数の場所に、オンプレミス配置の指示に対する変更を参照するメモがあります。 これらの変更を記録することが重要です。 

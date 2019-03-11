@@ -1,13 +1,13 @@
 ---
-title: "アクション コントロール"
-description: "アクションは、エンタープライズ リソース プランニング (ERP) システムに不可欠なコンポーネントであり、マウスのクリック、キーボード、タッチによってトリガーされます。"
+title: アクション コントロール
+description: アクションは、エンタープライズ リソース プランニング (ERP) システムに不可欠なコンポーネントであり、マウスのクリック、キーボード、タッチによってトリガーされます。
 author: jasongre
 manager: AnnBe
 ms.date: 05/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: affba7c3d99df557d4f3bbb9878c45cdf8539cbd
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 2108b93e701c983d189793ccca6d33eff47855ea
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369713"
 ---
-
 # <a name="action-controls"></a>アクション コントロール
 
 [!include [banner](../includes/banner.md)]
@@ -73,7 +72,7 @@ ms.lasthandoff: 04/20/2018
 | イメージのみ            | 画像のみボタンに表示されます。                                                                                         |
 | 上の画像のあるテキスト | ボタンには画像とテキストの両方が表示されます。 テキストがイメージの上に表示されます。                                               |
 
-**背景イメージ**およびテキストと画像のその他の相対的な配置など、Microsoft Dynamics AX 2012 からの**ボタン表示**の他の値はサポートされなくなったことに注意してください。
+**背景イメージ** およびテキストと画像のその他の相対的な配置など、Microsoft Dynamics AX 2012 からの  **ボタン表示** の他の値はサポートされなくなったことに注意してください。
 
 ### <a name="button-images"></a>ボタン イメージ
 
@@ -115,7 +114,7 @@ ms.lasthandoff: 04/20/2018
 | [![attachButton](./media/attachbutton.png)](./media/attachbutton.png)   | 添付                   | ドキュメントを添付します。                                                     |
 | [![attachButton](./media/refreshbutton.png)](./media/refreshbutton.png) | 更新反映                  | ページ上のすべてのデータを更新                                       |
 | [![closeButton](./media/closebutton.png)](./media/closebutton.png)      | 終了                    | ページを閉じます (ブラウザーの**戻る**に相当するボタンをクリック)。 |
-| [![officeButton](./media/officebutton.png)](./media/officebutton.png)   | Microsoft Office で開く | Microsoft Excel で開くか、もしくはエクスポートします。 さらなる Office 統合が計画されています。 |
+| [![officeButton](./media/officebutton.png)](./media/officebutton.png)   | Microsoft Office で開く | 開くか Microsoft Excel にエクスポートします。 さらなる Office 統合が計画されています。 |
 | [![popoutButton](./media/popoutbutton.png)](./media/popoutbutton.png)   | ポップアウト                   | 新しい動的リンク ウィンドウに現在のフォームを表示します。                 |
 
 ### <a name="pinning-the-action-pane"></a>アクション ウィンドウの固定
@@ -166,7 +165,6 @@ Platform Update 6 以降では、ツール バーに、開発者が常にオー�
 
 ## <a name="action-search"></a>アクション検索
 Dynamics AX 2012 には、ユーザーが Alt キーを押してから一連の文字を押すことで、アクション ウィンドウ内の任意のコマンドを実行できるようにするキー ヒントの機能が含まれていました。 アクション検索機能は、以前のキー ヒント機能に代わるものとして実装されています。 アクション検索は、フォーム上部の標準アクション ウィンドウにある検索フィールドからアクセスできます。 現在、アクション ウィンドウには虫眼鏡アイコンが表示されています (ナビゲーション バーのナビゲーション検索機能とは異なります)。  アクション検索フィールドで、フィールドで実行するアクションの名前の冒頭 (通常は、2 ～ 4 文字のみ必要) を入力できます。 この検索メカニズムは、表示されたアクション ペイン内のすべてのボタンを、検索文字列と一致するフォームに検出します。 結果リスト内でボタンをクリックを使用して、コマンドを実行することができます。 生産性については、フォーカスは、ボタンがトリガーされた後にフォーム内の最後の位置を返します。 Ctrl+' または Alt+Q を押してアクションの検索を開始することもできます。 フォームの最後の位置にフォーカスを返すには、キーボード ショートカットを再度押します。
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "国/地域コンテキストの適用"
-description: "ローカライズ &amp; 翻訳向け LCS ソリューションの要件の一部として、ローカライズ ISV ソリューション プロバイダーは国/地域コンテキストによって制御できるように、すべての国固有または地域固有の機能を実装する必要があります。 この記事では、これらの要件を満たすために、国/地域コンテキストを適用する方法について説明します。 この記事では、国コンテキスト プロパティを使用する方法と、どのようなアプリケーション オブジェクトがユーザー インターフェイス要素を制御するのかに関する情報を確認できます。"
+title: 国/地域コンテキストの適用
+description: ローカライズ &amp; 翻訳向け LCS ソリューションの要件の一部として、ローカライズ ISV ソリューション プロバイダーは国/地域コンテキストによって制御できるように、すべての国固有または地域固有の機能を実装する必要があります。 この記事では、これらの要件を満たすために、国/地域コンテキストを適用する方法について説明します。 この記事では、国コンテキスト プロパティを使用する方法と、どのようなアプリケーション オブジェクトがユーザー インターフェイス要素を制御するのかに関する情報を確認できます。
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 62dc6a69f859963b69907cde175d94f2b852a656
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 69a380cbd08a2301dfd0c657b59a144fcb855dde
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368461"
 ---
-
 # <a name="apply-countryregion-context"></a>国/地域コンテキストの適用
 
 [!include [banner](../includes/banner.md)]
@@ -70,7 +69,7 @@ ms.lasthandoff: 04/20/2018
 </table>
 
 ## <a name="using-the-countryregioncodes-property"></a>CountryRegionCodes プロパティの使用
-制御されたエンティティで国/地域コンテキストを作成するには、**CountryRegionCodes** プロパティで ISO コード値の設定します。 ISO 国および地域コードの一覧は [ここ](http://www.iso.org/iso/country_codes/iso_3166_code_lists/country_names_and_code_elements.htm) で見つけることができます。 Microsoft Dynamics 365 for Finance and Operations は、**CountryRegionCodes** プロパティの値を、管理関係者の国/地域のコンテキストと比較します。 値が一致した場合は、要素が表示されます。 それ以外の場合、表示されません。 **ヒント:** **CountryRegionCodes** プロパティに複数の ISO 国および地域コードを追加するには、コンマ区切りのリストを使用します。
+制御されたエンティティで国/地域コンテキストを作成するには、**CountryRegionCodes** プロパティで ISO コード値の設定します。 ISO 国および地域コードの一覧は [ここ](http://www.iso.org/iso/country_codes/iso_3166_code_lists/country_names_and_code_elements.htm) で見つけることができます。 Microsoft Dynamics 365 for Finance and Operations は、**CountryRegionCodes** プロパティの値を管理関係者の国/地域コンテキストと比較します。 値が一致した場合は、要素が表示されます。 それ以外の場合、表示されません。 **ヒント:** **CountryRegionCodes** プロパティに複数の ISO 国および地域コードを追加するには、コンマ区切りのリストを使用します。
 
 ## <a name="using-the-legal-entity-as-the-controlling-party"></a>法人を管理関係者として使用
 法人のプライマリ住所の **国/地域** 値により、制御側関係者の国/地域コンテキストが決定されます。 **国/地域** フィールドの既定値は、Finance and Operations クライアントのロケールです。 次の図は、法人の基本住所を設定する方法を示しています。 [![LE\_Edit\_address](./media/le_edit_address-1024x570.jpg)](./media/le_edit_address.jpg)
@@ -85,7 +84,6 @@ ms.lasthandoff: 04/20/2018
 --------
 
 [ISO コード](http://www.iso.org/iso/country_codes/iso_3166_code_lists/country_names_and_code_elements.htm)
-
 
 
 

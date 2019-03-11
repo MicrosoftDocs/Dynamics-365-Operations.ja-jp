@@ -1,28 +1,27 @@
 ---
-title: "ページのタイプ"
-description: "ページ オブジェクト タイプ。"
+title: ページのタイプ
+description: ページ オブジェクト タイプ。
 author: shadykdc
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
-ms.search.scope: 
+ms.search.scope: ''
 ms.search.region: Global
 ms.author: kashea
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.search.validFrom: ''
+ms.dyn365.ops.version: ''
 ms.openlocfilehash: 48234ab61fef1a8ee9263eec78c3139487c828e5
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369037"
 ---
-
 # <a name="page-type"></a>ページのタイプ
 
 [!include [banner](../../../../includes/banner.md)]
@@ -391,6 +390,5 @@ onSubmit: [EventHook](event-ievent-ieventhook.md) &lt;[PageSubmitArgs](view-mode
 onSyncStatusChange: [EventHook](event-ievent-ieventhook.md) &lt;null&gt;
 
 ページの同期状態が変更するときに発生するイベント。
-
 
 

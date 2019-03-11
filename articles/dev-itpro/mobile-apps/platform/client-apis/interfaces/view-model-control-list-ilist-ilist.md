@@ -1,28 +1,27 @@
 ---
-title: "リスト タイプ"
-description: "リスト コントロール タイプ。"
+title: リスト タイプ
+description: リスト コントロール タイプ。
 author: shadykdc
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
-ms.search.scope: 
+ms.search.scope: ''
 ms.search.region: Global
 ms.author: kashea
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
-ms.translationtype: HT
-ms.sourcegitcommit: ed6cabcc8c76fba3d4414cd4b564b720c54169e0
+ms.search.validFrom: ''
+ms.dyn365.ops.version: ''
 ms.openlocfilehash: 20c705f4bc25e7b54fdd57b83888d06fc82bfbc2
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368675"
 ---
-
 # <a name="list-type"></a>リスト タイプ
 
 [!include [banner](../../../../includes/banner.md)]
@@ -396,9 +395,9 @@ getRowNavigation(row: [Row](view-model-control-list-ilist-irow.md)): Promise &lt
 
 #### <a name="parameters"></a>パラメーター
 
-| 氏名 | 種類 | 説明 |
+| 氏名 | 型 | 説明 |
 | ---- | ---- | ----------- |
-| 行|[Row](view-model-control-list-ilist-irow.md)||
+|  行 |[Row](view-model-control-list-ilist-irow.md)||
 
 #### <a name="returns-promise-ltanygt-124-any"></a>Promise &lt;any&gt; &#124; any を返します
 
@@ -600,7 +599,6 @@ onRowCreate: [EventHook](event-ievent-ieventhook.md) &lt;[Row](view-model-contro
 ### <a name="onrowselect"></a>onRowSelect
 
 onRowSelect: [EventHook](event-ievent-ieventhook.md) &lt;[Row](view-model-control-list-ilist-irow.md)&gt;
-
 
 
 

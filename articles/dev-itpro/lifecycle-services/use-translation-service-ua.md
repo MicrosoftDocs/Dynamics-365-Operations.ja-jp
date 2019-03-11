@@ -1,35 +1,34 @@
 ---
-title: "ドキュメント ファイルを翻訳します"
-description: "このトピックでは、Microsoft Dynamics 製品またはソリューションのドキュメント ファイルを翻訳する方法について説明します。"
+title: ドキュメント ファイルを翻訳します
+description: このトピックでは、Microsoft Dynamics 製品またはソリューションのドキュメント ファイルを翻訳する方法について説明します。
 author: kfend
 manager: AnnBe
 ms.date: 03/29/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Operations
 ms.custom: 6154
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ejchoGIT
 ms.search.validFrom: 2018-03-27
 ms.dyn365.ops.version: AX 7.3.0
-ms.translationtype: HT
-ms.sourcegitcommit: d4e5d20d7f632a074cffdbe57e6a31140adf17c5
 ms.openlocfilehash: a72a16c17c511d2bf2ccc1e8d05119d0d57c9b65
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/11/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368924"
 ---
-
-# <a name="translate-documentation-files"></a>ドキュメント ファイルを翻訳します
+# <a name="translate-documentation-files"></a>ドキュメント ファイルの翻訳
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 製品およびソリューションのドキュメント ファイルを翻訳する方法について説明します。
+このトピックでは、Microsoft Dynamics 製品またはソリューションのドキュメント ファイルを翻訳する方法について説明します。
 
 ## <a name="create-a-translation-request"></a>翻訳要求を作成する
 1. Microsoft Dynamics Lifecycle Services (LCS) で、DTS ダッシュボードの**追加**を選択して新しい翻訳要求を作成します。
@@ -46,7 +45,7 @@ ms.lasthandoff: 12/11/2018
     | ファイル タイプ | **ドキュメント** を選択します。 このオプションは、LCS の**Dynamics 365 翻訳サービス - ドキュメント翻訳サポート**プレビュー機能をオンにした場合にのみ使用できます。 詳細については、[LCS プレビュー機能へのアクセス](./translation-service-overview.md#accessing-lcs-preview-features) を参照してください。 |
     | 製品名 | 製品名を選択します。 LCS プロジェクト内から DTS にアクセスする場合、このフィールドは自動的に入力され、読み取り専用です。 |
     | 製品バージョン | 製品バージョンを選択します。 LCS プロジェクト内から DTS にアクセスする場合、このフィールドではプロジェクトからの既定の製品バージョン情報を表示されます。 ただし、別のバージョンを選択できます。 |
-    | 翻訳元言語、翻訳先言語 | 翻訳対象のソース言語とターゲット言語のセットを選択します。 業務で同じソース言語から複数のターゲット言語に翻訳する必要がある場合、1 つの要求ですべてのターゲット言語を選択できます。 言語名の横にあるチェック ボックスを使用してターゲット言語を実際に選択してください。 これにより、複数の翻訳要求を個別に送信する時間が節約され、1 つの要求ですべてのターゲット言語翻訳ステータスを追跡することもできます。 **太字**タイプで表示される言語名は、Microsoft Dynamics の製品の一般提供 (GA) 言語です。 したがって、Microsoft で訓練された機械翻訳 (MT) システムは、これらの言語で使用できます。 つまり、MT システムは Microsoft Dynamics の用語でトレーニングされます。 GA 言語以外の場合、MT システムは一般的なドメイン トレーニングを使用します。 |
+    | 翻訳元言語、翻訳先言語 | 翻訳対象のソース言語とターゲット言語のセットを選択します。 業務で同じソース言語から複数のターゲット言語に翻訳する必要がある場合、1 つの要求ですべてのターゲット言語を選択できます。 言語名の横にあるチェック ボックスを使用してターゲット言語を実際に選択してください。 これにより、複数の翻訳要求を個別に送信する時間が節約され、1 つの要求ですべてのターゲット言語翻訳ステータスを追跡することもできます。 **太字**タイプで表示される言語名は、Microsoft Dynamics 製品の一般提供 (GA) 言語です。 したがって、Microsoft で訓練された機械翻訳 (MT) システムは、これらの言語で使用できます。 つまり、MT システムは Microsoft Dynamics の用語でトレーニングされます。 GA 言語以外の場合、MT システムは一般的なドメイン トレーニングを使用します。 |
 
     ![言語を選択する](./media/dts-target-lang.png "言語を選択する")
 
@@ -121,5 +120,4 @@ DTS は .docx 形式の翻訳レビュー ファイルを提供します。 要�
 
 必要に応じて何度でも再生成プロセスを繰り返すことができます。
 
-Microsoft Dynamics 365 翻訳サービス (DTS) に関する詳細については、[Microsoft Dynamics 365 - 翻訳サービスの概要](./translation-service-overview.md) を参照してください。 ユーザー インターフェイス (UI) ファイルを翻訳する方法については、[Microsoft Dynamics 365 翻訳サービス ユーザー ガイド - ユーザー インターフェイス ファイルの翻訳](./use-translation-service.md) を参照してください。
-
+Microsoft Dynamics 365 Translation Service (DTS) に関する詳細については、[Microsoft Dynamics Dynamics 365 - Translation Service の概要](./translation-service-overview.md) を参照してください。 ユーザー インターフェイス (UI) ファイルを翻訳する方法については、[Microsoft Dynamics 365 Translation Service  - ユーザー インターフェイス ファイルの翻訳](./use-translation-service.md) を参照してください。

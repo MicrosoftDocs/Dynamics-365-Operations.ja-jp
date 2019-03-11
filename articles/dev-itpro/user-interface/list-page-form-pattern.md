@@ -1,13 +1,13 @@
 ---
-title: "リスト ページのフォーム パターン"
-description: "この記事では、リスト ページのフォーム パターンに関する情報を提供します。 リスト ページには、レコードを参照するために最適化された UI の一連のデータが表示されるため、特定のレコードを検索して連携できます。"
+title: リスト ページのフォーム パターン
+description: この記事では、リスト ページのフォーム パターンに関する情報を提供します。 リスト ページには、レコードを参照するために最適化された UI の一連のデータが表示されるため、特定のレコードを検索して連携できます。
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 0e51e8c312cf0ed2e341725eff9ab1b54f780b4e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 8f79398660058241323f51d431212bd6a6e95a3c
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369926"
 ---
-
 # <a name="list-page-form-pattern"></a>リスト ページのフォーム パターン
 
 [!include [banner](../includes/banner.md)]
@@ -103,7 +102,7 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 -   **グリッド**
     -   トランザクションのエンティティについては、**ID** フィールドが最初の列になり、次がマスタ エンティティ **ID** および **名前** フィールドになる必要があります。
     -   マスタ エンティティについては、**名前**フィールドが最初の列になり、次が **ID** フィールドになる必要があります。
--   **ActionPane** ガイドラインは、ActionPane ガイドライン セクションの Dynamics AX [フォームの全般的なガイドライン](general-form-guidelines.md) ドキュメントに統合されました。
+-   **ActionPane** ガイドラインは、ActionPane ガイドライン セクションの Dynamics AX 「[フォームの全般的なガイドライン](general-form-guidelines.md)」ドキュメントに統合されました。
 -   **情報ボックス**ガイドラインは、[情報ボックスのフォーム パターン](factbox-form-patterns.md) ドキュメントに統合されました。
 
 ## <a name="examples"></a>例
@@ -132,7 +131,7 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 
 ### <a name="ax-2012-content"></a>AX 2012 コンテンツ
 
-#### <a name="ax-2012-links"></a>AX 2012 のリンク
+#### <a name="ax-2012-links"></a>AX 2012 リンク
 
 -   [MSDN AX 2012 リスト ページのユーザー エクスペリエンスのガイドライン](http://msdn.microsoft.com/EN-US/library/gg853328.aspx)
 -   [MSDN AX 2012 リスト ページ フォーム](http://msdn.microsoft.com/en-us/library/cc635077.aspx)
@@ -140,4 +139,3 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 #### <a name="ax-2012-example"></a>AX 2012 の例
 
 [![AX 2012 の例](./media/listpage3-1024x671.png)](./media/listpage3.png)
-

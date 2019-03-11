@@ -1,13 +1,13 @@
 ---
-title: "システム診断のインストールと実行"
-description: "Microsoft Dynamics Lifecycle Services では、Microsoft Dynamics AX 環境を検出してデータを収集するサービスが使用できるようになる前にインストールする必要があるオンプレミス コンポーネントがシステム診断に含まれています。"
+title: システム診断のインストールと実行
+description: Microsoft Dynamics Lifecycle Services では、Microsoft Dynamics AX 環境を検出してデータを収集するサービスが使用できるようになる前にインストールする必要があるオンプレミス コンポーネントがシステム診断に含まれています。
 author: manalidongre
 manager: AnnBe
 ms.date: 10/10/2018
 ms.topic: article
 ms.prod: dynamics-ax-2012
-ms.service: 
-ms.technology: 
+ms.service: ''
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: AX 2012
@@ -15,16 +15,15 @@ ms.custom: 18861
 ms.assetid: 075b4e28-162f-47ae-8713-392d711bdaff
 ms.search.region: Global
 ms.author: manado
-ms.search.validFrom: 
+ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.translationtype: HT
-ms.sourcegitcommit: fc61ba6131ed6d93132701aa799243e78a289134
 ms.openlocfilehash: d51f75f9ebbf42d6ce0125124463dae35d3084bd
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/10/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368445"
 ---
-
 # <a name="install-and-run-system-diagnostics-ax-2012"></a>システム診断のインストールと実行 (AX 2012)
 
 [!include [banner](../../includes/banner.md)]
@@ -151,7 +150,7 @@ AOS インスタンスまたは Microsoft Dynamics AX SQL Server ビジネス �
 2.  ビジネス データベースのユーザーとしてアカウントを追加します。 このステップを実行する方法の詳細については、「[方法: データベース ユーザーの作成](http://msdn.microsoft.com/en-us/library/aa337545.aspx)」を参照してください。
 3.  ビジネス データベースの db\_datareader ロールにサービス アカウントを追加します。 このステップを実行する方法の詳細については、「[ロールに参加](http://msdn.microsoft.com/en-us/library/ff877886.aspx)」を参照してください。
 4.  サービス アカウントに SQL Server インスタンスの VIEW SERVER STATE 権限を付与します。
-    1.  SQL Server Management Studio で、**データベース**を展開し、**Microsoft Dynamics AX** データベースを右クリックしてから、**プロパティ**をクリックします。
+    1.  SQL Server Management Studio で、**データベース**を展開し、**Microsoft Dynamics AX** データベースを右クリックし、**プロパティ**をクリックします。
     2.  **アクセス許可**をクリックし、次に**サーバーのアクセス許可を表示**をクリックします。
     3.  **ログインまたはロール**一覧で、アクセス許可を付与するユーザーをクリックします。
     4.  **ユーザーの明示的なアクセス許可**リストで、**サーバー状態のアクセス許可を表示**の隣にある**付与**チェック ボックスをオンにします。
@@ -187,7 +186,7 @@ Business Connector サービスは、Lifecycle Services 診断サービスがイ
     4.  指定した場所に新しい証明書が作成されたことを確認します。
 
 8.  **システム診断** ページに戻り、証明書の場所を参照して **アップロード** をクリックします。
-9.  **Microsoft Dynamics Lifecycle Services 診断サービス セットアップ ウィザード**の **新しい証明書のアップロード** ページに戻り、**証明書ファイルがアップロードされました** を選択して **次へ** をクリックします。
+9.  **Microsoft Dynamics Lifecycle Services 診断サービス セットアップ ウィザード**の **新しい証明書のアップロード** ページに戻り、**証明書ファイルがアップロードされました**を選択して**次へ**をクリックします。
 10. **プライベート証明書の選択**ページで、証明書の名前が表示されます。 **次へ** をクリックします。
 11. **サービス アカウントの指定**ページで、サービス アカウントとパスワードを入力し、**次へ**をクリックします。
 12. **変更先フォルダ**ページで、システム診断によって収集されたログを保管する場所を入力し、**次**をクリックします。
@@ -196,7 +195,7 @@ Business Connector サービスは、Lifecycle Services 診断サービスがイ
 2 つの実行可能プログラム、LCSDiagFXDiscovery.exe と LCSDiagFXCollector.exe がインストールされています。
 
 ## <a name="discover-environments"></a>環境を検出
-1.  **開始**をクリックし、次に **Microsoft Dynamics AX Lifecycle Services 診断サービス検索**をクリックします。
+1.  **開始**、**Microsoft Dynamics AX Lifecycle Services 診断サービス検索**の順にクリックします。
 2.  **環境の検出**ウィンドウに、環境の名前と SQL Server のインスタンスとデータベースの完全修飾名を入力してから、**検出**をクリックします。
 3.  ウィンドウの一番下にある**テストアクセス許可**ボタンをクリックします。![システム診断用のテストアクセス許可ボタン](./media/testpermissions.jpg) ページの下部にあります。
 4.  **変更先フォルダ**ページで、システム診断によって収集されたログを保管する場所を入力し、**次**をクリックします。
@@ -225,7 +224,6 @@ Business Connector サービスは、Lifecycle Services 診断サービスがイ
 12. 次へ -&gt; をクリックし、次の画面で、**このキーをエクスポート可能としてマーク**が設定されていることを確認します。 次へをクリックして終了
 13. ここで、Lifecycle Services システム診断セットアップを実行している場合、新しい環境を選択して既存の証明書を使用します。
 14. 最初の手順で生成された証明書は、クライアント証明書のルックアップに含まれており、それを選択して通常どおりに続行する必要があります:
-
 
 
 

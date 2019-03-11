@@ -1,30 +1,29 @@
 ---
-title: "オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 8 および 11)"
-description: "このトピックでは、オンプレミス環境の計画、設定、および展開方法について説明します。"
+title: オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 8 および 11)
+description: このトピックでは、オンプレミス環境の計画、設定、および展開方法について説明します。
 author: sarvanisathish
 manager: AnnBe
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
-ms.translationtype: HT
-ms.sourcegitcommit: d20bc3519096f1035d26f89d42aa7e8f0fc368cd
 ms.openlocfilehash: 6464e670d8f0cdaa3d34d01b8734f9c3600e1cd1
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/29/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369916"
 ---
-
 # <a name="set-up-and-deploy-on-premises-environments-platform-updates-8-and-11"></a>オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 8 および 11)
 
 [!include [banner](../includes/banner.md)]
@@ -44,8 +43,8 @@ Finance and Operations アプリケーションは、次の 3 つの主要なコ
 
 これらのコンポーネントは、次のシステム ソフトウェアによって異なります。
 
-- Microsoft Windows Server 2016
-- 以下の特徴を有する Microsoft SQL Server 2016 SP1:
+- Microsoft Windows サーバー 2016
+- 以下の特徴を有する Microsoft SQL Server2016 SP1:
   - フルテキスト インデックス検索が有効にされている。
   - SQL Server Reporting Services (SSRS) - これは BI 仮想マシンに配置されます。
   - SQL Server Integration Services (SSIS) - これは AOS 仮想マシンに配置されます。
@@ -85,14 +84,14 @@ Finance and Operations の設定は、Service Fabric (SF) 内に一連のアプ�
 
 ## <a name="infrastructure"></a>インフラストラクチャ
 
-Finance and Operations は、Windows Servers に基づく Hyper-V 仮想化環境で作業するよう設計されています。
+Finance and Operations は、Windows Server に基づく Hyper-V 仮想化環境で作業するよう設計されています。
 
  > [!WARNING]
  > Azure を含む、任意のパブリック クラウド インフラストラクチャでサポートされていない、Microsoft Dynamics 365 for Finance and Operations のオンプレミス配置。
 
 ハードウェア構成には、次のコンポーネントが含まれます。
 
-- Windows Server 2016 仮想マシン (VM) に基づく Standalone Service Fabric クラスター
+- Windows Server 2016 仮想マシン (VM) に基づく Standalone Service Fabric Cluster
 - Microsoft SQL Server (Clustered SQL と Always-On の両方がサポートされています)
 - 認証のための AD FS
 - ストレージ用の Server Message Block (SMB) バージョン 3 のファイル共有
@@ -140,7 +139,7 @@ Finance and Operations は、Windows Servers に基づく Hyper-V 仮想化環�
 
 次の必須ソフトウェアは、LCS からダウンロードされたインフラストラクチャ セットアップ スクリプトによって VM にインストールされます。
 
-| ノード タイプ | コンポーネント | 細目 |
+| ノード タイプ | コンポーネント | 詳細情報 |
 |-----------|-----------|---------|
 | AOS       | SNAC – ODBC ドライバー | <https://www.microsoft.com/en-us/download/details.aspx?id=53339> |
 | AOS       | Microsoft .NET Framework version 2.0–3.5 (CLR 2.0) | **Windows の機能:** NET-Framework-Features、NET-Framework-Core、NET-HTTP-Activation、NET-Non-HTTP-Activ |
@@ -389,12 +388,12 @@ VM をドメインに参加させた後、ローカル管理者グループに A
     .\Export-Scripts.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
-2. 次の Microsoft Windows Installers (MSIs) を全ての VMs でアクセス可能なファイル共有にダウンロードします。
+2. 次の Microsoft Windows Installers (MSI) を全ての VM でアクセス可能なファイル共有にダウンロードします。
 
 | コンポーネント | リンクのダウンロード |
 |-----------|---------------|
 | SNAC – ODBC ドライバー | <https://www.microsoft.com/en-us/download/details.aspx?id=53339> |
-| Microsoft SQL Server Management Studio 17.2 | <https://go.microsoft.com/fwlink/?linkid=854085> |
+| Microsoft SQL ServerManagement Studio 17.2 | <https://go.microsoft.com/fwlink/?linkid=854085> |
 | Microsoft Visual Studio 2013 用 Microsoft Visual C++ 再頒布可能パッケージ | <https://support.microsoft.com/en-us/help/3179560> |
 | Microsoft Access データベース エンジン 2010 再頒布可能パッケージ | <https://www.microsoft.com/en-us/download/details.aspx?id=13255> |
 
@@ -430,7 +429,7 @@ VM をドメインに参加させた後、ローカル管理者グループに A
 
 2. ZIP ファイルを Service Fabric クラスター内のいずれかのノードにコピーし、解凍します。 **インフラストラクチャ**フォルダーが、このフォルダーにアクセスすることを確認します。
 
-3. **インフラストラクチャ** フォルダーに移動し、次のコマンドを実行して Service Fabric の ClusterConfig.json ファイルを生成します。
+3. **インフラストラクチャ** フォルダーに移動し、次のコマンドを実行して Service Fabric Cluster の ClusterConfig.json ファイルを生成します。
 
     ```powershell
    .\New-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -TemplateConfig <ServiceFabricStandaloneInstallerPath>\ClusterConfig.X509.MultiMachine.json
@@ -552,7 +551,7 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
     1. LocalMachine\\My に証明書をインポートします。Always-On を設定していない限り、証明書は既にノードに存在します。
     2. SQL サービスを実行するために使用されるサービス アカウントに証明書のアクセス許可を付与します。 Microsoft 管理コンソール (MMC) で証明書 (**certlm.msc**) を右クリックし、**タスク** \> **秘密キーの管理**を選択します。
     3. 証明書の拇印を HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Microsoft SQL Server\\*MSSQL.x*\\MSSQLServer\\SuperSocketNetLib\\Certificate に追加します。
-    4. Microsoft SQL Server 構成マネージャーで、**ForceEncryption** を **はい** に設定します。
+    4. Microsoft SQL Server 構成マネージャーで、**ForceEncryption** を**はい**に設定します。
 
 6. 証明書の公開鍵 (.cer ファイル) をエクスポートし、各 Service Fabric ノードの信頼できるルートにインストールします。
 
@@ -567,7 +566,7 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
 | リリース | デモ データ |
 |-------|------|
 | オンプレミスの一般提供 (GA) リリース | Dynamics 365 for Operations (オンプレミス) - デモ データ |
-| オンプレミスのプラットフォーム更新プログラム 2017 年 11 月 11 日リリース | Dynamics 365 for Operations、Enterprise Edition (オンプレミス) - 更新プログラム 11 デモ データ |
+| オンプレミスのプラットフォーム更新プログラム 2017 年 11 月 11 日リリース | Dynamics 365 for Operations, Enterprise edition (オンプレミス) - 更新プログラム 11 デモ データ |
 
 4. zip ファイルには空のデモデータ .bak ファイルが含まれています。 必要に応じて、.bak ファイルを選択します。 たとえば、デモ データが必要な場合は、AxBootstrapDB_Demodata.bak ファイルをダウンロードします。
 
@@ -733,7 +732,7 @@ Finance and Operations では、AD FS の既定で標準のコンフィギュレ
 
 AD FS が認証を交換するために Finance and Operations を信頼するためには、AD FS アプリケーション グループの下の AD FS にさまざまなアプリケーション エントリを登録する必要があります。 設定プロセスをスピードアップし、エラーを減らすために、次のスクリプトを使用して登録します。 Publish-ADFSApplicationGroup.ps1 スクリプトと D365FO-OP ディレクトリを、AD FS ロール サービスがインストールされているマシンにコピーします。 次に、AD FS を管理するための十分なアクセス許可を持つユーザー アカウントを使用してスクリプトを実行します。 (たとえば、管理者アカウントを使用します。)
 
-スクリプトの使用方法の詳細については、スクリプトに記載されているドキュメントを参照してください。 後の手順の LCS でこの情報が必要となるため、出力に指定されているクライアント ID を書き留めておいてください。 クライアント ID を紛失した場合、AD FS がインストールされているコンピューターにログインし、**サーバー マネージャー** \> **ツール** \> **AD FS の管理** \> **アプリケーション グループ** \> **Microsoft Dynamics 365 for Operations On-premises** を開き、ネイティブ アプリケーションでクライアント ID を見つけます。
+スクリプトの使用方法の詳細については、スクリプトに記載されているドキュメントを参照してください。 後の手順の LCS でこの情報が必要となるため、出力に指定されているクライアント ID を書き留めておいてください。 クライアント ID を紛失した場合、AD FS がインストールされているコンピューターにログインし、**サーバー マネージャー** \> **ツール** \> **AD FS の管理** \> **アプリケーション グループ** \> **Microsoft Dynamics 365 for Operations On-premises**を開き、ネイティブ アプリケーションでクライアント ID を見つけます。
 
 ```powershell
 # Host URL is your DNS record\host name for accessing the AOS
@@ -793,9 +792,8 @@ URL に正常にアクセスすると、AD FS コンフィギュレーション�
 
 ### <a name="connect"></a> 21. Finance and Operations (オンプレミス) 環境に接続する
 
-ブラウザーで、https://[yourD365FOdomain]/namespaces/AXSF に移動し、そこでは yourD365FOdomain がこのドキュメントの[ドメイン名と DNS ゾーンの計画](#plandomain)セクションで定義したドメイン名です。
+ブラウザーで、https://[yourD365FOdomain]/namespaces/AXSF に移動し、そこでは yourD365FOdomain がこのドキュメントの[ドメイン名と DNS ゾーンの計画](#plandomain) セクションで定義したドメイン名です。
 
 ## <a name="additional-resources"></a>その他のリソース
 - [オンプレミス配置への更新プログラムの適用](apply-updates-on-premises.md)
 - [オンプレミス配置の再配置](redeploy-on-prem.md)
-

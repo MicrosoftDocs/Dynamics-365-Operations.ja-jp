@@ -1,13 +1,13 @@
 ---
-title: "E コマース プラットフォーム ソフトウェア開発キット (SDK)"
-description: "このトピックでは、電子商取引プラットフォーム SDK について説明します。"
+title: E コマース プラットフォーム ソフトウェア開発キット (SDK)
+description: このトピックでは、電子商取引プラットフォーム SDK について説明します。
 author: kfend
 manager: AnnBe
 ms.date: 07/09/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations, Retail
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
 ms.openlocfilehash: c3d571b3c00abb9140dcb1c85ac576e2c8b5c1a6
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369586"
 ---
-
 #  <a name="e-commerce-platform-software-development-kit-sdk"></a>E コマース プラットフォーム ソフトウェア開発キット (SDK)
 
 [!include [banner](../includes/banner.md)]
@@ -49,7 +48,7 @@ Retail SDK は、開発環境と、Retail SDK フォルダーにある修正プ�
 Visual Studio Online などのソース管理システムに SDK を配置することをお勧めします。
 
 ### <a name="use-the-retail-sdk-to-create-the-sample-aspnet-website"></a>Retail SDK を使用して、サンプルの asp.net Web サイトを作成します
-1.  管理モードで Visual Studio 2015 を開きます。 これは、inetpub フォルダーにパブリッシュするために必要です。
+1.  管理者モードで Visual Studio を開きます。 これは、inetpub フォルダーにパブリッシュするために必要です。
 2.  C:\\Microsoft Dynamics AX70\\RetailSdkOnlineStoreOnlineStore.sln を開き、すべてのフレームワーク コンポーネントを含めます。
 3.  サンプルのオンライン ストアは C:\\Microsoft Dynamics AX70\\RetailSdkSampleExtensionsOnlineStore にあります。
 4.  Visual Studio 内から Web ストア フロントをコンパイルし、公開します。
@@ -99,5 +98,4 @@ E コマース プラットフォームは、認証のためのメカニズム�
 
 2.  [Retail 共有パラメーター] -&gt; [ID プロバイダーを開く] フォームは、追加プロバイダーを登録するために使用できます。
 3.  配送スケジュール 1110 を実行します。
-
 

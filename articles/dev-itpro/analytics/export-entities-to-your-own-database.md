@@ -1,13 +1,13 @@
 ---
-title: "自分のデータベースの持ち込み (BYOD)"
-description: "このトピックでは、エンティティを 独自の Azure SQL データベースにエクスポートする方法について説明します。"
+title: 自分のデータベースの持ち込み (BYOD)
+description: このトピックでは、エンティティを 独自の Azure SQL データベースにエクスポートする方法について説明します。
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 12/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: margoc
 ms.search.scope: Operations
@@ -15,19 +15,18 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.translationtype: HT
-ms.sourcegitcommit: 64204d438d46fc772005fc8077664818926cf58f
 ms.openlocfilehash: 31ae2cbeb5d6589d2ad7c16a6119812213cb40f1
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/10/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368777"
 ---
-
 # <a name="bring-your-own-database-byod"></a>自分のデータベースの持ち込み (BYOD)
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、管理者がデータ エンティティを Microsoft Dynamics 365 for Finance and Operations から 独自の Microsoft Azure SQL データベースにエクスポートする方法について説明します。 この機能は、*自分のデータベースの持ち込み* (BYOD) とも呼ばれます。 BYOD 機能は、Microsoft Dynamics AX でプラットフォーム更新プログラム 2 (2016 年 8 月) によってリリースされました。 マイナーな改良およびバグ修正は、後続のプラットフォーム更新プログラムに含まれています。
+このトピックでは、管理者がMicrosoft Dynamics 365 for Finance and Operations からのデータ エンティティを自分の Microsoft Azure SQL データベースにエクスポートする方法について説明します。 この機能は、*自分のデータベースの持ち込み* (BYOD) とも呼ばれます。 BYOD 機能は、Microsoft Dynamics AX でプラットフォーム更新プログラム 2 (2016 年 8 月) によってリリースされました。 マイナーな改良およびバグ修正は、後続のプラットフォーム更新プログラムに含まれています。
 
 BYOD 機能により、管理者は、独自のデータベースを構成し、Finance and Operations で使用できる 1 つまたは複数のデータ エンティティをそこにエクスポートできます。 (現時点では、1,700 以上のデータ エンティティが使用可能です。) 具体的には、この機能により次のタスクを実行できます。
 
@@ -38,7 +37,7 @@ BYOD 機能により、管理者は、独自のデータベースを構成し、
 
 ## <a name="entity-store-or-byod"></a>エンティティ格納または BYOD か
 
-「[Microsoft Power BI 統合についてのブログ投稿](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/)」のシリーズに従った場合、エンティティ格納に馴染み深くなります。 エンティティ格納は、Finance and Operations に含まれている運用データ ウェアハウスです。 エンティティ格納では、Power BI の実稼働レポートの組み込み統合を提供します。 Finance and Operations に組み込まれている既存のレポートと分析ワークスペースは、エンティティ格納を使用します。 Finance and Operations の環境のデータを使用して Power BI レポートを作成する場合は、エンティティ格納を使用する必要があります。
+[Microsoft Power BI 統合についてのブログ投稿](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/)のシリーズに従った場合、エンティティ格納に精通できます。 エンティティ格納は、Finance and Operations に含まれている運用データ ウェアハウスです。 エンティティ格納では、Power BI の実稼働レポートの組み込み統合を提供します。 Finance and Operations に組み込まれている既存のレポートと分析ワークスペースは、エンティティ格納を使用します。 Finance and Operations の環境のデータを使用して Power BI レポートを作成する場合は、エンティティ格納を使用する必要があります。
 
 ただし、次のシナリオでは BYOD 機能をお勧めします。
 
@@ -49,7 +48,7 @@ BYOD 機能により、管理者は、独自のデータベースを構成し、
 > [!NOTE]
 > Finance and Operations には、生産データベースへの T-SQL 接続を使用できません。 Finance and Operations の以前のバージョンをアップグレードする場合、データベースへの直接的な T-SQL アクセスを必要とする統合ソリューションがある場合は、BYOD は推奨するアップグレード パスになります。
 
-Finance and Operations の顧客は、エンティティ格納または BYOD のいずれかを使用することができます。 使用可能な既定の操作レポートは、埋め込み Power BI とエンティティ格納を利用します。 最初の選択として、既定の業務レポートを使用することをお勧めします。 また、要件に合わせて、既成のオペレーション レポートを拡張することができます。 BYOD を必要に応じて利用する補足的なオプションと見なす必要があります。
+Finance and Operations の顧客は、エンティティ格納または BYOD のいずれかを使用することができます。 使用可能な既定の業務レポートは、埋め込み Power BI とエンティティ格納を利用します。 最初の選択として、既定の業務レポートを使用することをお勧めします。 また、要件に合わせて、既成のオペレーション レポートを拡張することができます。 BYOD を必要に応じて利用する補足的なオプションと見なす必要があります。
 
 ## <a name="creating-a-sql-database"></a>SQL データベースを作成しています
 
@@ -184,4 +183,3 @@ BYOD は独自のデータベースであるため、Finance and Operations か�
 #### <a name="entities-that-dont-have-unique-keys-cant-be-exported-by-using-incremental-push"></a>固有キーを持たないエンティティは、増分プッシュを使用してエクスポートすることは不可能
 
 この制限は特に、数個の既製エンティティからレコードを段階的にエクスポートする場合に直面する可能性があります。 これらのエンティティは Finance and Operations にデータをインポートできるように設計されているため、固有のキーはありません。 ただし、変更追跡を、固有のキーがあるエンティティに対してのみ有効にすることができます。 したがって、増分プッシュには制限があります。 1 つの回避策は、必要なエンティティを拡張し、固有のキーを定義することです。
-

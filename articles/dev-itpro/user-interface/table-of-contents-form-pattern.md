@@ -1,13 +1,13 @@
 ---
-title: "目次のフォーム パターン"
-description: "この記事では、目次フォームのパターンに関する情報を提供します。 このパターンは、セットアップ構成に論理的に関連する 2 つ以上のフォームが必要な場合に使用します。"
+title: 目次のフォーム パターン
+description: この記事では、目次フォームのパターンに関する情報を提供します。 このパターンは、セットアップ構成に論理的に関連する 2 つ以上のフォームが必要な場合に使用します。
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 0bedd642cd6f1c81103d793620986a6e8194ad02
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 5225eaac78c1a7f863fccbc374d8115b8c086b4f
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369933"
 ---
-
 # <a name="table-of-contents-form-pattern"></a>目次のフォーム パターン
 
 [!include [banner](../includes/banner.md)]
@@ -88,7 +87,7 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 
 **標準フォーム ガイドライン:**
 
--   標準フォーム ガイドラインは、Microsoft Dynamics AX の[全般的なガイドライン](general-form-guidelines.md) ドキュメントに統合されました。
+-   標準フォーム ガイドラインは、Microsoft Dynamics AX [全般的なガイドライン](general-form-guidelines.md) ドキュメントに統合されました。
 
 **目次 ガイドライン:**
 
@@ -99,7 +98,7 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
     -   簡易リスト コンテンツは、サブパターン ガイドラインに従う必要があります。
     -   簡易リストと詳細のコンテンツは、[入れ子になった簡易リストと詳細](nested-simple-list-details-subpattern.md)サブパターン ガイドラインに従う必要があります。
     -   簡易明細コンテンツは、[ツール バーとフィールド](toolbar-fields-subpattern.md) サブパターン ガイドラインに従う必要があります。
-    -   FastTabs では、Dynamics AX の FastTabs ガイドラインに従ってください。[全般的なフォーム ガイドライン](general-form-guidelines.md) ドキュメント。
+    -   FastTabs は Dynamics AX [全般的なフォーム ガイドライン](general-form-guidelines.md) ドキュメントの FastTab ガイドラインに従う必要があります。
     -   タブ ページのツールバーに表示されるアクション。
 -   TOC フォームには、次の項目は**ありません**:
     -   標準の ActionPane に対するアプリケーション アクション。 (フレームワーク アクションのみを必要とします。)
@@ -123,11 +122,10 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 
 ### <a name="open-issues"></a>未処理の問題
 
--   None
+-   なし
 
 ### <a name="ax-2012-content"></a>AX 2012 コンテンツ
 
 [![TOC(3)](./media/toc3.png)](./media/toc3.png)
 
 [![TOC(4)](./media/toc4.png)](./media/toc4.png)
-

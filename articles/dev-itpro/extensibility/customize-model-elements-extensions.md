@@ -1,13 +1,13 @@
 ---
-title: "拡張機能によってモデル要素をカスタマイズする"
-description: "このチュートリアルでは、フリート管理拡張モデルを詳しく見ていきます。 Dynamics AX の拡張機能を示すために、このモデルにはフリート管理アプリケーションの機能を拡張する要素が含まれています。"
+title: 拡張機能によってモデル要素をカスタマイズする
+description: このチュートリアルでは、フリート管理拡張モデルを詳しく見ていきます。 Dynamics AX の拡張機能を示すために、このモデルにはフリート管理アプリケーションの機能を拡張する要素が含まれています。
 author: robadawy
 manager: AnnBe
 ms.date: 11/08/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 739033a750925d948039e3ed52eee33336d2e56e
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368307"
 ---
-
 # <a name="customize-model-elements-through-extension"></a>拡張機能によってモデル要素をカスタマイズする
 
 [!include [banner](../includes/banner.md)]
@@ -73,7 +72,7 @@ ms.lasthandoff: 08/09/2018
 **FMRental** という名前のフォームに組み込まれている Rental は、担当者が予約に割引を適用できるように拡張されています。 画面上の価格の概要は、予約に関連する車両およびアクセサリに適用可能な割引に関する貯蓄情報によってリアルタイムで更新されます。 次の手順では、フリート管理拡張モデルでのカスタマイズを調べて、自分でカスタマイズの一部を再実装します。
 
 ## <a name="setup"></a>段取り
-前のチュートリアルでフリート管理ソリューションを開いていない場合は、以下の手順を実行します。 フリート管理ソリューション ファイルは、Dynamics AX ダウンロード可能 VM で利用できます。
+前のチュートリアルでフリート管理ソリューションを開いていない場合は、以下の手順を実行します。 フリート管理ソリューション ファイルは、Dynamics AX のダウンロード可能な VM で利用できます。
 
 1.  **デスクトップ**で、**Visual Studio** ショートカットをダブルクリックして、開発環境を開きます。
 2.  **FleetManagement** ソリューションを開きます。 **ファイル**メニューで、**開く**をポイントし、**プロジェクト/ソリューション**をクリックします。
@@ -101,7 +100,7 @@ ms.lasthandoff: 08/09/2018
 9.  処理が完了するまで待機します。 進行中の処理は、一連の移動するドットによってページの上部に示されます。 インジケータが消えて、**前回処理時刻** フィールドが更新されると、処理が完了します。
 
 ## <a name="open-the-fmrental-form-on-the-one-box-environment"></a>1 ボックス環境で FMRental フォームを開く
-1.  VM で、Internet Explorer を開き、Dynamics AX アプリケーションのベース URL に移動します。 詳細については、[Microsoft Dynamics AX インスタンスへのアクセス](../dev-tools/access-instances.md) を参照してください。
+1.  VM で、Internet Explorer を開き、Dynamics AX アプリケーションのベース URL に移動します。 詳細については、「[Microsoft Dynamics AX インスタンスにアクセス ](../dev-tools/access-instances.md)」を参照してください。
 2.  求められた場合にログインします。
 3.  **予約管理**タイルを検索し、予約管理ワークスペースを開くためそれをクリックします。 
 
@@ -191,13 +190,13 @@ ms.lasthandoff: 08/09/2018
 
 [![FMRentalChargeCode](./media/fmrentalchargecode_customizemodel.png)](./media/fmrentalchargecode_customizemodel.png) 
 
-このクラスには、**FMRentalCharge** テーブルの**更新**および**挿入**イベントに登録するイベント ハンドラーの実装が含まれています。 Microsoft Dynamics AX は、テーブルおよびその他の型で発生するデータ イベントを導入しています。 基本 X++ コードをオーバーレイせずにビジネス ロジックを拡張するアプリケーションを有効にする、テーブルのデータ イベントを申し込むことができます。 このチュートリアルの後半で、簡単にテーブル イベントをサブスクライブする方法について説明します。 **注記:** このクラスが拡張クラス (\_拡張子の接尾辞によって示される) であることを確認します。 任意のクラスでイベント ハンドラーを作成することができます。このクラスは拡張クラスである必要はありません。 拡張子クラスは、拡張メソッドを作成するために必要です。 拡張メソッドの詳細については、[X++ デバッガーの機能](../dev-tools/new-x-debugger-features.md) 記事の「拡張メソッド」セクションを参照してください。
+このクラスには、**FMRentalCharge** テーブルの**更新**および**挿入**イベントに登録するイベント ハンドラーの実装が含まれています。 Microsoft Dynamics AX では、テーブルおよび他の種類で発生する可能性のあるデータ イベントが導入されます。 基本 X++ コードをオーバーレイせずにビジネス ロジックを拡張するアプリケーションを有効にする、テーブルのデータ イベントを申し込むことができます。 このチュートリアルの後半で、簡単にテーブル イベントをサブスクライブする方法について説明します。 **注記:** このクラスが拡張クラス (\_拡張子の接尾辞によって示される) であることを確認します。 任意のクラスでイベント ハンドラーを作成することができます。このクラスは拡張クラスである必要はありません。 拡張子クラスは、拡張メソッドを作成するために必要です。 拡張メソッドの詳細については、[X++ デバッガーの機能](../dev-tools/new-x-debugger-features.md) 記事の「拡張メソッド」セクションを参照してください。
 
 ### <a name="view-the-plug-in-classes"></a>プラグイン クラスの表示
 
-前のセクションに示された **FMRentalCharge\_Extension** クラスのイベント ハンドラー コードでは、両方のイベント ハンドラーが **FMTotalsEngineBase::GetInstance** を呼び出してフリート管理計算エンジンの現在のインスタンスを取得することに注意します。 計算エンジンは、プラグイン クラスを使用して実装されます。 クラス ファクトリは、コンフィギュレーションまたはビジネス データに基づくプラグイン クラスの適切なインスタンスを作成します。
+前のセクションに示された **FMRentalCharge\_Extension** クラスのイベント ハンドラー コードでは、両方のイベント ハンドラーが **FMTotalsEngineBase::GetInstance** を呼び出してフリート管理計算エンジンの現在のインスタンスを取得することを確認してください。 計算エンジンは、プラグイン クラスを使用して実装されます。 クラス ファクトリは、コンフィギュレーションまたはビジネス データに基づくプラグイン クラスの適切なインスタンスを作成します。
 
-1.  FMRentalCharge\_Extension.xpp を表示するコード エディター ウィンドウで、**GetInstance** を右クリックしてから**定義に移動**をクリックします。 これにより、抽象クラス **FMTotalsEngineBase** のコードが開きます。 この抽象クラスは**プラグインポイント**と呼ばれ、次の属性に関連付けられています: \[Microsoft.Dynamics.AX.Platform.Extensibility.ExportInterfaceAttribute()\] 
+1.  FMRentalCharge\_Extension.xpp を表示するコード エディター ウィンドウで、**GetInstance** を右クリックしてから**定義に移動**をクリックします。 これにより、抽象クラス **FMTotalsEngineBase** のコードが開きます。 この抽象クラスは**プラグインポイント**と呼ばれ、属性 \[Microsoft.Dynamics.AX.Platform.Extensibility.ExportInterfaceAttribute()\] に関連付けられています。 
 
     [![定義に移動](./media/godefinition_customizemodel.png)](./media/godefinition_customizemodel.png) 
 
@@ -209,14 +208,14 @@ ms.lasthandoff: 08/09/2018
 
     [![FEDiscountEngine](./media/code2_customizemodel.png)](./media/code2_customizemodel.png)
 
-2.  **GetInstance** メソッドを確認します。 プラグイン ファクトリ **SysPluginFactory::Instance** を使用して、現在のプラグイン メタデータに基づいて現在の計算エンジンのインスタンスを作成します。 プラグイン メタデータは、グローバル構成テーブルの **FMParameters** で指定されます。 
+2.  **GetInstance** メソッドを確認します。 このメソッドは、プラグイン ファクトリ **SysPluginFactory::Instance** を使用して、現在のプラグイン メタデータに基づいて現在の計算エンジンのインスタンスを作成します。 プラグイン メタデータは、グローバル構成テーブルの **FMParameters** で指定されます。 
 
     [![FMParameters](./media/code3_customizemodel.png)](./media/code3_customizemodel.png) 
 
-    Dynamics AX は、コンフィギュレーション可能なプラグイン クラスをサポートし、プラグイン メタデータは開発時に知られず、管理者がランタイム時にコンフィギュレーション可能なクラスに関連付けられます。 これは、このチュートリアルの対象ではありません。
+    Dynamics AX は、コンフィギュレーション可能なプラグイン クラスもサポートします。このクラスでは、クラスに関連付けられているプラグイン メタデータは開発時は未知であり、管理者がランタイム時にコンフィギュレーション可能です。 これは、このチュートリアルの対象ではありません。
 
 ## <a name="create-additional-fleet-management-extensions"></a>追加のフリート管理拡張子を作成する
-このセクションでは、Visual Studio tools を使用して拡張機能を作成して操作する方法を示します。
+このセクションでは、Visual Studio ツールを使用して拡張機能を作成して操作する方法を示します。
 
 ### <a name="extend-the-fmvehicle-table"></a>FMVehicle テーブルを拡張
 
@@ -297,7 +296,7 @@ ms.lasthandoff: 08/09/2018
 
 次に、**FleetManagement 割引**プロジェクトの **FMVehicle** フォーム拡張機能を追加します。 最初に、**ソリューション エクスプローラー**でこのプロジェクトを選択することを確認します。
 
-1.  **アプリケーション エクスプローラー**を使用して **FMVehicle** という名前のフォームを検索するには、**アプリケーション エクスプローラー**のフィルタ バーに [*FMVehicle タイプ:フォーム*] を入力します。
+1.  **アプリケーション エクスプローラー**を使用して **FMVehicle** という名前のフォームを検索するには、**アプリケーション エクスプローラー**のフィルタ バーに *FMVehicle タイプ:フォーム* を入力します。
 2.  フォームを右クリックし、**拡張子の作成** をクリックします。
 3.  下に示すように、**NumberOfCylinders** という名前の新しい整数コントロールを **Attributes2** グループ コントロールに追加します。 このコントロールは、**デザイン&gt; タブ &gt; TabPageDetails &gt; TabHeader &gt; DetailsDetails &gt; Attributes2** を展開すると見つけることができます。 
 
@@ -423,7 +422,7 @@ ms.lasthandoff: 08/09/2018
        }
     }
 
-フォームまたはフォームの拡張機能では、以下の画像に示すように、「データ ソース = FMVehicle」および「データ メソッド ="FMVehicle \_Extension::CupHoldersDisplay」を設定することによってこの表示メソッドにコントロールをバインドできます。
+フォームまたはフォームの拡張機能では、以下の画像に示すように、「Data Source = FMVehicle」および「Data method ="FMVehicle\_Extension::CupHoldersDisplay」を設定することによってこの表示メソッドにコントロールをバインドできます。
 
 ![拡張表示メソッド](./media/extensiondisplaymethod.jpg)
 
@@ -443,7 +442,6 @@ ms.lasthandoff: 08/09/2018
 --------
 
 [FMLab サンプル コードをダウンロードする](https://github.com/Microsoft/FMLab)
-
 
 
 

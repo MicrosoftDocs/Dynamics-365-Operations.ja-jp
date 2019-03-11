@@ -1,13 +1,13 @@
 ---
-title: "Finance and Operations のソリューションに方法を追加"
-description: "このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) の方法を作成および変更する方法について説明します。 また、方法の要件に関する情報も提供されます。"
+title: Finance and Operations のソリューションに方法を追加
+description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) の方法を作成および変更する方法について説明します。 また、方法の要件に関する情報も提供されます。
 author: kfend
 manager: AnnBe
 ms.date: 04/13/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Lifecycle Services
@@ -15,14 +15,13 @@ ms.custom: 197063
 ms.assetid: 368f2356-62a6-4d9f-9f80-0acf7a986085
 ms.search.region: Global
 ms.author: omarc
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 31485cd75abf65e717f75f4d6f3b1f622a2b11eb
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369358"
 ---
-
 # <a name="add-methodologies-to-finance-and-operations-solutions"></a>Finance and Operations のソリューションに方法を追加
 
 [!include[banner](../includes/banner.md)]
@@ -71,8 +70,7 @@ ms.lasthandoff: 08/09/2018
 4.  **確認**を選択します。
 
 
-<a name="additional-resources"></a>その他のリソース
+<a name="additional-resources"></a>追加リソース
 --------
 
 [AppSource の Dynamics 365 for Finance and Operations アプリを公開](lcs-solutions-app-source.md)
-

@@ -1,30 +1,29 @@
 ---
-title: "拡張可能列挙の書き込み"
-description: "このトピックでは、拡張可能列挙を書き込む方法について説明します。"
+title: 拡張可能列挙の書き込み
+description: このトピックでは、拡張可能列挙を書き込む方法について説明します。
 author: smithanataraj
 manager: AnnBe
 ms.date: 09/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: kfend
 ms.search.scope: Operations
 ms.custom: 268724
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: smithanataraj
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.translationtype: HT
-ms.sourcegitcommit: f526a4bf7cb7c0a48f3d7b1c4f53705f0cdb41b5
 ms.openlocfilehash: 04c1a7dd5430fbb0476ad0889dbf8d2a2e7a07e2
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/26/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369488"
 ---
-
 # <a name="write-extensible-enums"></a>拡張可能列挙の書き込み
 
 [!include [banner](../includes/banner.md)]
@@ -58,4 +57,3 @@ ms.lasthandoff: 09/26/2018
 いくつかの列挙では、要素が特定の順序または特定の値を持つ必要があり、拡張可能にすることはできません。 これは、ドラフト、承認済み、完了、またはアーカイブなど、値が論理的な連続する順序を表すステータス列挙の可能性があります。 別の列挙またはタブページ コントロールの番号など、別のコンポーネントと一致する固定整数値が値に必要な列挙の可能性もあります。   
 
 いくつかの列挙には、多くの要素があります。 列挙は、最大 250 の要素をサポートします。 列挙に多くの要素がある場合 (100 を超えるなど)、列挙を拡張可能にするのではなく、ソリューションを再設計することを検討します。 列挙が拡張可能である場合、後で要素を追加すると、追加が制限を超える可能性があるため、顧客の結合ソリューションが壊れる可能性があります。
-

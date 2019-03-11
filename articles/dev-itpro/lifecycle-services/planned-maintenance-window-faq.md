@@ -1,30 +1,29 @@
 ---
-title: "予定された保守ウィンドウのよく寄せられる質問"
-description: "このトピックでは、Microsoft の計画されたメンテナンス ウィンドウに関するよくある質問に対する回答を示します。"
+title: 予定された保守ウィンドウのよく寄せられる質問
+description: このトピックでは、Microsoft の計画されたメンテナンス ウィンドウに関するよくある質問に対する回答を示します。
 author: robadawy
 manager: AnnBe
 ms.date: 03/13/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Operations
 ms.custom: 6154
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 96a9075294c1f2a9cfde03be1aaaa26af90de4c2
 ms.openlocfilehash: b78e6bd5b1ef878b7f8403df2e216377bd4a1a6c
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369246"
 ---
-
 # <a name="planned-maintenance-window-faq"></a>予定された保守ウィンドウのよく寄せられる質問
 [!include [banner](../includes/banner.md)]
 
@@ -85,7 +84,7 @@ ms.lasthandoff: 09/04/2018
 ### <a name="what-validations-does-microsoft-do-for-changes-that-will-be-applied-during-the-update"></a>更新時に適用される変更に対する Microsoft の検証とは
 更新プログラムが適用される前に、Microsoft は Management reporter または Retail などのプラットフォーム外のコンポーネントに影響がないことを確認する検証を実行します。 また、Microsoft は変更に下位互換性および上位互換性があることを保証します。
 
-更新プログラムが適用されると、Microsoft は正常に完了した事、および環境が予期したとおりに動作している事を検証します。 この検証の一環として、Microsoft はトランザクションを完了するために使用できる Microsoft Dynamics 365 for Finance and Operations を確認するいくつかの基本的な検証テストを実行します。
+更新プログラムが適用されると、Microsoft は正常に完了した事、および環境が予期したとおりに動作している事を検証します。 この検証の一環として、Microsoft はトランザクションを完了するために使用できる Microsoft Dynamics 365 for Finance and Operations を確認する基本的な検証テストを実行します。
 
 ### <a name="can-i-reschedule-the-planned-maintenance"></a>計画的なメンテナンスを再スケジューリングできますか。
 計画的なメンテナンスを再スケジューリングするためのオプションは提供していません。 ただし、現在の月の保守サイクルから除外するように選択できます。 LCS を使用して更新のスケジュールを直接変更できるようにするために、LCS にこのオプションを追加する予定です。 
@@ -149,5 +148,4 @@ Tier-2 サンドボックスと実稼働環境のバージョンが 5 日間異�
 
 ### <a name="where-can-i-see-which-updates-are-included-in-the-package-that-is-being-applied"></a>適用されるパッケージに含まれている更新プログラムをどこで確認できるか
 グローバル アセット ライブラリの説明列は、パッケージの内容を示します。
-
 

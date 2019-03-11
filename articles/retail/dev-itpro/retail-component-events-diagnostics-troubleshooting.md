@@ -1,13 +1,13 @@
 ---
-title: "診断とトラブルシューティングの Retail コンポーネント イベント"
-description: "診断とトラブルシューティングを有効にするため、Retail Modern POS などのクライアントを含むすべての Retail コンポーネントと Retail Server などのサーバー コンポーネントは、イベントをイベント ビューアー (または Retail Cloud POS の場合はブラウザー開発ツール コンソール) にローカルで記録します。 この記事では、Retail 固有のコンポーネントからイベントを検索する場所について説明します。"
+title: 診断とトラブルシューティングの Retail コンポーネント イベント
+description: 診断とトラブルシューティングを有効にするため、Retail Modern POS などのクライアントを含むすべての Retail コンポーネントと Retail Server などのサーバー コンポーネントは、イベントをイベント ビューアー (または Retail Cloud POS の場合はブラウザー開発ツール コンソール) にローカルで記録します。 この記事では、Retail 固有のコンポーネントからイベントを検索する場所について説明します。
 author: aamirallaqaband
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: IT Pro
 ms.reviewer: robinr
 ms.search.scope: Operations, Retail
@@ -18,14 +18,13 @@ ms.search.industry: Retail
 ms.author: aamiral
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: bb977cd3962725dd219ae8c7b6dabecd32e4b821
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 402e8f02ac0c89afda816202e63ddca417b4c498
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369277"
 ---
-
 # <a name="retail-component-events-for-diagnostics-and-troubleshooting"></a>診断とトラブルシューティングの Retail コンポーネント イベント
 
 [!include [banner](../includes/banner.md)]
@@ -71,7 +70,7 @@ Retail Cloud POS はブラウザー ベースのコンポーネントなので�
 
 ### <a name="view-events-in-the-browser-developer-tools-console"></a>ブラウザー開発者ツール コンソールでのイベントの表示
 
-1.  Internet Explorer または Microsoft Edge を起動し、Retail Cloud POS に移動します。
+1.  Internet Explorer または Microsoft Edge を開始し、Retail クラウド POS に移動します。
 2.  F12 キーを押し、**コンソール** タブをクリックします。
 3.  Retail Cloud POS の操作を実行する際に、イベントはコンソールに記録されます。 イベント重要度でフィルター処理して、異なる重要度レベルのイベントを表示することができます。
 
@@ -102,14 +101,14 @@ Retail サーバー要求の一部として記録されるすべてのイベン�
 
 [![POS クライアントおよび Retail サーバー間のデータ フロー](./media/event-log-data-flow1-1018x1024.png)](./media/event-log-data-flow1.png)
 
-### <a name="finding-retail-modern-pos-events-in-event-viewer"></a>イベント ビューアーで、Retail Modern Pos イベントを検索
+### <a name="finding-retail-modern-pos-events-in-event-viewer"></a>イベント ビューアーでの Retail Modern POS イベントの検索
 
-Retail モダン POSによってが記録されたすべてのイベントには、次のデータ点が含まれています。
+Retail Modern POS によってが記録されたすべてのイベントには、次のデータ点が含まれています。
 
 -   **AppSessionID** - アプリケーションが最初に起動されたときに生成される一意の ID。 これは Retail Modern POS で記録されるすべてのイベントに含まれています。
 -   **UserSessionID** – ユーザーが Retail Modern POS にサインインするときに生成される固有の ID。 これはユーザーがサインインしている限り、Retail Modern POS で記録されるすべてのイベントに含まれています。 新しいユーザーがサインインするとき、新しい UserSessionID が作成されます。
 
-AppSessionID 値および UserSessionID 値は、Retail Modern POS がインストールされているマシン上のイベント ビューアーの **詳細** タブで見つけることができます。 
+AppSessionID 値および UserSessionID 値は、Retail Modern POS がインストールされているマシン上のイベント ビューアーの**詳細**タブで見つけることができます。 
 
 [![イベント ビューアーの詳細タブ](./media/correlation-1024x672.png)](./media/correlation.png)
 
@@ -135,7 +134,7 @@ LCS ログ検索に、次の Retail コンポーネントからのログは**含
 
 -   Retail レイアウト デザイナー
 -   小売受領書デザイナー
--   Retail Modern POS 用のセルフ サービス インストーラー
+-   Retail Modern POS のセルフ サービス インストーラー
 -   小売ハードウェア ステーション用のセルフ サービス インストーラー
 
 ### <a name="access-lcs-log-search"></a>LCS ログ検索にアクセス
@@ -149,8 +148,8 @@ LCS ログ検索にアクセスするには、次の手順を実行します。
 5.  **環境の詳細**ページで、**環境の監視**をクリックします。
 6.  **環境の監視**ページで、**未加工ログの表示**をクリックします。
 7.  **ログ検索**ページで、次のいずれかのクエリを選択します。
-    -   **小売エラー イベント**クエリには、Retail Modern POS、Retail Cloud POS、および Retail Hardware Station からのイベントが含まれています。
-    -   **すべてのログ**クエリには、Retail サーバー、Commerce Data Exchange、および Commerce Data Exchange: Real-time Service が含まれます。
+    -   **小売クライアント イベント** クエリには、Retail Modern POS、Retail Cloud POS、および Retail Hardware Station からのイベントが含まれています。
+    -   Retail Server、Commerce Data Exchange、Commerce Data Exchange: リアルタイム サービス のデータが含まれている**すべてのログ** クエリ
 
 以下の条件でフィルター処理してクエリを調整することができます。
 
@@ -162,7 +161,6 @@ LCS ログ検索にアクセスするには、次の手順を実行します。
 -   重大度
 
 [![環境監視ページの検索結果](./media/log-search-results.png)](./media/log-search-results.png)
-
 
 
 

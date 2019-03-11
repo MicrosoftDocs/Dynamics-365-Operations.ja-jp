@@ -1,13 +1,13 @@
 ---
-title: "セキュリティ開発ツールのユーザー ガイド"
-description: "このトピックでは、セキュリティ開発ツールを使用して、ロール、職務、権限などのセキュリティ アーティファクトを作成および管理する方法について説明します。"
+title: セキュリティ開発ツールのユーザー ガイド
+description: このトピックでは、セキュリティ開発ツールを使用して、ロール、職務、権限などのセキュリティ アーティファクトを作成および管理する方法について説明します。
 author: kfend
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012
-ms.service: 
-ms.technology: 
+ms.service: ''
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: AX 2012
@@ -15,16 +15,15 @@ ms.custom: 18451
 ms.assetid: fc61e23f-f20d-4149-800a-3614d13828a6
 ms.search.region: Global
 ms.author: kfend
-ms.search.validFrom: 
+ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: b86108616f3c7705dfdf637abcafc60517421bb7
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368297"
 ---
-
 # <a name="security-development-tool-user-guide"></a>セキュリティ開発ツールのユーザー ガイド
 
 [!include [banner](../../includes/banner.md)]
@@ -37,17 +36,16 @@ Microsoft Dynamics AX 2012 のセキュリティ開発ツールは、ロール�
 
 
 
-<a name="additional-resources"></a>その他のリソース
+<a name="additional-resources"></a>追加リソース
 --------
 
 [セキュリティ開発ツール ユーザー インターフェイス (AX 2012) の概要](overview-security-development-tool-user-interface.md)
 
 [セキュリティ開発ツール (AX 2012) をインストールする](install-security-development-tool.md)
 
-[エントリ ポイントのアクセス許可を定義または編集する (AX 2012)](define-edit-entry-point-permissions.md)
+[エントリ ポイントのアクセス許可 (AX 2012) の定義または編集](define-edit-entry-point-permissions.md)
 
-[Microsoft Dynamics AX エンタープライズ ポータルでのエントリ ポイントの記録](record-entry-points-enterprise-portal.md)
-
+[Microsoft Dynamics AX エンタープライズ ポータルのエントリ ポイントを記録](record-entry-points-enterprise-portal.md)
 
 
 

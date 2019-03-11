@@ -1,30 +1,29 @@
 ---
-title: "タスク ガイドおよび BPM を使用して、ユーザー承認テスト ライブラリを作成する"
-description: "このトピックでは、タスク ガイドと BPM を 使用して承認テスト スイートを作成および実行することに関する情報を提供します。"
+title: タスク ガイドおよび BPM を使用して、ユーザー承認テスト ライブラリを作成する
+description: このトピックでは、タスク ガイドと BPM を 使用して承認テスト スイートを作成および実行することに関する情報を提供します。
 author: kfend
 manager: AnnBe
 ms.date: 10/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Operations
 ms.custom: 13301
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ntecklu
-ms.search.validFrom: 
+ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
+ms.openlocfilehash: d6264382fd859034135f4f129c441d9fdc6c9893
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: d4e5d20d7f632a074cffdbe57e6a31140adf17c5
-ms.openlocfilehash: 55f077b32fac800d35eb308bcb957b0bf23a9ed0
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/11/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369855"
 ---
-
 # <a name="create-user-acceptance-test-libraries-by-using-task-recordings-and-bpm"></a>タスク記録および BPM を使用して、ユーザー承認テスト ライブラリを作成する
 
 [!include [banner](../includes/banner.md)]
@@ -73,7 +72,7 @@ BPMライブラリを作成した後は、タスク レコーダーを使用し�
 8. 記録を保存するライブラリを選択し、**保存** をクリックします。 それ以外の場合、**ディスクに保存** を選択し、次のセクション「BPM に AXTR ファイルをアップロードする」の手順に従います。
 
  >[!NOTE]
- > 自動化ツールを使用して、テストの有効な実行を有効にするには、タスク記録がすべて Dynamics 365 for Finance and Operations の主要なダッシュ ボードで開始することを確認します。
+ > 自動化ツールを使用して、テストの有効な実行を有効にするには、タスク記録がすべて Dynamics 365 for Finance and Operations の主要なダッシュボードで開始することを確認します。
  > 複数のユーザーによって実行されるエンド ツー エンド プロセスの場合、ユーザー固有のタスクにタスク記録を分割することをお勧めします。 これにより、テスト ケースの保守作業を簡素化され、セキュリティ ロールのコンテキストでテスト ケースを実行することができます。これはベスト プラクティスです。 
 
 #### <a name="upload-an-axtr-file-to-bpm"></a>BPM に AXTR ファイルをアップロード
@@ -169,12 +168,11 @@ Azure DevOps はテストだけでなく、結果の管理と軽減策のため�
 
 Dynamics 365 Unified Operations プラットフォームは、タスク記録に基づいてテスト ケースを作成し、Azure DevOps を使用してそれらのテスト ケースの自動実行を管理するためのツールを開発者を提供します。 
 
-開発者は、**ビルドおよびテスト**環境のビルドおよびテスト自動化機能を使用できます。 詳細については、[継続的な配信ホーム ページ](../dev-tools/continuous-delivery-home-page.md) および [開発 ALM ブログ](http://blogs.msdn.microsoft.com/axdevalm/) を参照してください。
+開発者は、**ビルドおよびテスト**環境のビルドおよびテスト自動化機能を使用できます。 詳細については、[継続的な配信ホーム ページ](../dev-tools/continuous-delivery-home-page.md) を参照してください。
 
 機能パワー ユーザーは、**Regression Suite Automation Tool** を使ってテスト ケースの実行を自動化できます。 ツールとユーザー マニュアルは、[ここで](https://www.microsoft.com/en-us/download/details.aspx?id=57357)ダウンロードします。
 
 #### <a name="investigate-test-runs"></a>テストの実行を調査します
 自動実行が完了したら、Azure DevOps ツール バーで**テスト > 実行** (または **テスト計画 > 実行**) を選択し、テストの実行を調査すします。 テスト ケース失敗およびエラーを調査するために必要なテスト実行を選択します。 Azure DevOps のテスト スイートにアクセスして、テスト ケースに関連する最新の結果を確認することもできます。
 Azure DevOps のテストおよびテスト管理の詳細については、[Azure DevOps ドキュメント](https://docs.microsoft.com/en-us/azure/devops)を参照してください。
-
 

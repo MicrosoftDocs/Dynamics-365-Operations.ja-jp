@@ -1,13 +1,13 @@
 ---
-title: "オンプレミス配置で実装されていない機能"
-description: "このトピックでは、オンプレミス展開で実装されていない機能を一覧表示します。"
+title: オンプレミス配置で実装されていない機能
+description: このトピックでは、オンプレミス展開で実装されていない機能を一覧表示します。
 author: sericks007
 manager: AnnBe
-ms.date: 11/02/2018
+ms.date: 01/23/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
+ms.openlocfilehash: 0ff6d4a9c2d144ef56ab8be79ee8e14e56cd5417
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
-ms.openlocfilehash: c24a9dcaa1d9e6ab262b0ca7534e784f95cc3d1e
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/18/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369279"
 ---
-
 # <a name="features-that-arent-implemented-in-on-premises-deployments"></a>オンプレミス配置で実装されていない機能
 
 [!include [banner](../includes/banner.md)]
@@ -42,15 +41,15 @@ ms.lasthandoff: 12/18/2018
 | タスク レコーダー                                                    | Lifecycle Services (LCS) のタスク レコーダー ライブラリはサポートされていません。 タスクの記録は、ローカル ファイル システムから読み込むか保存できます。 |
 | **サポート** ウィンドウ                                                 | **サポート** ウィンドウ (**ヘルプとサポート** \> **サポート**) はまだ使用できません。 |
 | PowerBI.com 統合                                          | PowerBI.com 統合は、まだオンプレミス展開では使用できません。 たとえば、タイルをピン留めする、またはワークスペースに PowerBI.com 定期売買からレポートする機能は使用できません。 |
-| Microsoft Office 統合                                     | SharePoint オンプレミス サポートは、まだ使用できません。 SharePoint オンラインもまだサポートされていません (認証の問題のため)。<p>Skype for Business オンプレミス サポートは、まだ使用できません。 Skype for Business オンラインがサポートされます。</p> |
-| 電子申告 (ER) と LCS の統合                   | LCS との ER 統合はサポートされません。 ER 構成は、LCS から Finance and Operations へ直接ダウンロードことはできません。 |
-| ER と SharePoint の統合                                   | SharePoint との統合はサポートされていません。 SharePoint サーバーを、ER を使用して生成された電子ドキュメントの出力先として構成することはできません。 |
-| OData を使用して Power BI レポートを作成する                              | Power BI desktop または Excel PowerQuery ツールを使用して OData で Power BI レポートを作成することはサポートされていません。 |
-| 購買要求: 外部カタログからのパンチアウト          | 外部カタログから購買要求にショッピング カートをチェックアウトすることはできません。 |
-| Trace Parser および PerfTimer                                       | これらのツールは動作していないか、このリリースで機能が制限されています。 これらの機能は、将来のリリースで実装される予定です。 |
-| SSRS スケール アウト                                                   | 現在の SQL Server Reporting Services (SSRS) はスケール アウトをサポートしていません。この機能は将来のリリースの際に追加されます。 |
-| テレメトリ                                                        | 現在、テレメトリはクラウドへ転送されません。 今後の更新プログラムで、テレメトリ データをクラウドに転送できるようになります。 |
-| データ タスクの自動化                                             | [データ タスクの自動化](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-task-automation)は現在実装されていません。 |
+| Microsoft Office 統合                                             | SharePoint オンプレミス サポートは、まだ使用できません。 SharePoint オンラインもまだサポートされていません (認証の問題のため)。<br><br>Skype for Business オンプレミスはサポートされていません。  |
+| 電子申告 (ER) と LCS の統合                   | LCS との ER 統合はサポートされません。 ER 構成は、LCS から Finance and Operations へ直接ダウンロードことはできません。                                   |
+| SharePoint との ER 統合            | SharePoint との統合はサポートされていません。 SharePoint サーバーを、ER を使用して生成された電子ドキュメントの出力先として構成することはできません。                           |
+| OData を使用して Power BI レポートを作成する                              | Power BI デスクトップまたは Excel PowerQuery ツールを使い、OData での Power BI レポートの作成はサポートされていません。                                                                                  |
+|購買要求: 外部カタログからのパンチアウト |外部カタログから購買要求にショッピング カートをチェックアウトすることはできません。 |
+|Trace Parser および PerfTimer |これらのツールは動作していないか、このリリースで機能が制限されています。 これらの機能は、将来のリリースで実装される予定です。 |
+|SSRS スケール アウト  |現在の SQL Server Reporting Services (SSRS) はスケール アウトをサポートしていません。この機能は将来のリリースの際に追加されます。 |
+|テレメトリ  |現在、テレメトリはクラウドへ転送されません。 今後の更新プログラムで、テレメトリ データをクラウドに転送できるようになります。 |
+|データ タスクの自動化  |[データ タスクの自動化](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/data-task-automation)は現在実装されていません。 |
 
 ## <a name="features-available-in-81"></a>8.1 で使用可能な機能
 
@@ -66,4 +65,3 @@ ms.lasthandoff: 12/18/2018
 |----------------------------|-------------|
 | SSRS レポート ビューアー コントロール | SQL Server Reporting Services (SSRS) では、オンプレミス Web クライアントと互換性のあるレポート ビューアー コントロールをサポートしていません。<p>レポートは、オンプレミス サービスによって PDF ドキュメントとしてレンダリングされます。 拡張機能を使用して、アプリケーション レポートに埋め込みドリルスルー リンクを有効にします。</p> |
 | ドキュメント回覧エージェント     | このコンポーネントは、オンプレミスの展開には必要ありません。 オンプレミス配置は、ドメインで認証されたサーバーでホストされます。 これにより、ネットワーク プリンター デバイスに安全かつ直接アクセスできます。 |
-

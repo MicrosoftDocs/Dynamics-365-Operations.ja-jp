@@ -1,28 +1,28 @@
 ---
-title: "オンプレミス環境の再配置"
-description: "このトピックでは、オンプレミス環境の再展開について説明します。"
+title: オンプレミス環境の再配置
+description: このトピックでは、オンプレミス環境の再展開について説明します。
 author: sarvanisathish
 manager: AnnBe
 ms.date: 11/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 12
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: aa187dc35edb11428052df8c917458956f4d1db2
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369976"
 ---
 # <a name="redeploy-on-premises-environments"></a>オンプレミス環境の再配置
 
@@ -56,7 +56,7 @@ ms.lasthandoff: 08/09/2018
 | **フィールド**                        | **コンフィギュレーション設定**                                                              |
 |------------------------------|------------------------------------------------------------------------------------|
 | SQL Server                   | components.(AOS).parameters.database.dbServer.value          |
-| AX DATABASE                  | components.(AOS).parameters.database.dbName.value            |
+| AX データベース                  | components.(AOS).parameters.database.dbName.value            |
 | FINANCIAL REPORTING DATABASE | components.(FinancialReporting).parameters.mrdb.dbName.value |
 
 **ファイル共有設定**
@@ -127,7 +127,6 @@ ms.lasthandoff: 08/09/2018
 6. 環境名を入力します。 同じ名前を使用したり、新しい名前を入力することができます。
 7. **詳細設定**をクリックします。
    環境を構成するために保存した .json ファイルから、関連する構成を使用することができるようになりました。
-
 
 
 

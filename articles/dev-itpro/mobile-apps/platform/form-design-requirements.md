@@ -1,30 +1,29 @@
 ---
-title: "フォーム デザインの要件"
-description: "このトピックでは、モバイル アプリの設計に関する詳細な情報を示します。"
+title: フォーム デザインの要件
+description: このトピックでは、モバイル アプリの設計に関する詳細な情報を示します。
 author: makhabaz
 manager: AnnBe
 ms.date: 08/14/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: robinr
 ms.search.scope: Operations
 ms.custom: 255544
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: makhabaz
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
+ms.openlocfilehash: 90ec551775477a92aa5b8535afe88288c1c29231
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 9ba2104a266b0f707886812fb0f7d78ebf067b16
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368903"
 ---
-
 # <a name="form-design-requirements"></a>フォーム デザインの要件
 
 [!include [banner](../../includes/banner.md)]
@@ -87,5 +86,4 @@ Finance and Operations サーバーに密に接続され、サーバー上にオ
 #### <a name="finance-and-operations-form-control-support"></a>Finance and Operations のフォーム コントロール サポート
 
 各種の基本データ型 (文字列、日付、および番号) とグリッドの Finance and Operations がサポートされます。 ただし、いくつかの一般的なコントロールのサポートは限定されます。 **参照グループ** 参照グループ コントロール内のフィールドは、ページをデザインするときに互換性があります。 ただし、アクションをデザインする際に互換性がありません。 いくつかの問題を経験せずにこれらのフィールドを選択することができるかもしれませんが、参照グループはモバイル フレームワークと基本的に互換性がありません。 参照グループを使用しないことをお勧めします。 代わりに、フォームに直接コントロールを追加してから、プロパティ シートを使用して代理外部キー (SFK) に直接コントロールをバインドします。
-
 

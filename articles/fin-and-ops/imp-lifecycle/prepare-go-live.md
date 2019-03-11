@@ -1,13 +1,13 @@
 ---
-title: "Go-Live の準備"
-description: "このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用して Finance and Operationsプロジェクト用に Microsoft Dynamics 365 の運用を準備する方法について説明します。"
+title: Go-Live の準備
+description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用して Microsoft Dynamics 365 for Finance and Operations プロジェクトにおける go live の準備方法を説明します。
 author: ClaudiaBetz-Haubold
 manager: AnnBe
 ms.date: 11/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: IT Pro
 ms.reviewer: margoc
 ms.search.scope: Operations
@@ -15,19 +15,18 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 1bff2f000e8927b9626ad2ebb8cf71ac9dd8b92b
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368860"
 ---
-
 # <a name="prepare-for-go-live"></a>Go-Live の準備
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用して Finance and Operationsプロジェクト用に Microsoft Dynamics 365 の運用を準備する方法について説明します。
+このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用して Microsoft Dynamics 365 for Finance and Operations プロジェクトにおける go live の準備方法を説明します。
 
 この図には、Go-Live プロセスのフェーズがリストされています。
 ![Go-live プロセス](./media/go-live-process.PNG)
@@ -93,7 +92,7 @@ Go-Live の約 8 週間前に、FastTrack チームが Go-Live チェックリ�
 - 20–149 席を使用する場合は、チェックリストは <go-live@microsoft.com> からユーザーに送信されます。
 
 
-[FastTrack go-live 前チェックリスト](https://mbs.microsoft.com/customersource/Global/365Enterprise/learning/documentation/installation-setup-guides/fasttrack-checklist-fin-and-ops)にある CustomerSource からチェックリストをダウンロードすることもできます。
+[FastTrack go-live 前チェックリスト](https://mbs.microsoft.com/customersource/Global/365Enterprise/learning/documentation/installation-setup-guides/fasttrack-checklist-fin-and-ops) の CustomerSource からチェックリストをダウンロードすることもできます。
 
 プロジェクト マネージャーまたはプロジェクトの主要メンバーは、プロジェクトの Go-Live 前の段階の間に Go-Live チェックリストを完了する必要があります。 チェックリストは通常、稼働予定日の 4 ~ 6 週間前に完了し、UAT が完了したか、ほぼ完了したときです。
 
@@ -127,4 +126,3 @@ go-live チェックリストを完了したら、次のいずれかのステッ
 実稼動環境の要求をサインオフした後、Microsoft は実稼動環境の配置を担当します。 実稼働環境を展開するための Microsoft サービス レベル契約 (SLA) は、48 時間です。 実働環境は、提出された使用状況プロファイルに追加情報が必要ない限り、要求を提出してから 48 時間以内であればいつでも展開できます。 LCS の展開の進行状況を表示することができます。 実稼働環境での要求状態は通常、**展開中**に変更されるまでに数時間**待機中**を維持します。
 
 配置要求を送信すると、Microsoft Dynamics サービス エンジニア リング (DSE) チームに対するサービス要求が自動的に作成されます。 LCS の **サービス要求** リストでは、このサービス要求を表示できます。 DSE チームが本番環境の展開を妨げるような質問をすると、サービス要求にコメントが追加されます。 たとえば、DSE チームは、定期売買の見積を更新するか、またはデータ センターの変更を依頼する可能性があります。 場合によっては、変更を加える生産配置要求からサインオフをクリアする必要があります。 実稼働環境要求の状態が **キューに設定** の間にのみサインオフをクリアすることができます。 サインオフをクリアするには、**Queued** ボタンをクリックします。 要求の状態は、**構成** に返されます。 その後、必要な変更を加えて再びサインオフすることができます。
-

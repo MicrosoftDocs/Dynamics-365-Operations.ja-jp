@@ -1,13 +1,13 @@
 ---
-title: "拡張機能の名前付けのガイドライン"
-description: "このトピックでは、拡張機能の名前付けガイドラインについて説明します。"
+title: 拡張機能の名前付けのガイドライン
+description: このトピックでは、拡張機能の名前付けガイドラインについて説明します。
 author: LarsBlaaberg
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: lolsen
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: acc8d70394c41cba51f8a7cebb75b8750ea72651
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369249"
 ---
-
 # <a name="naming-guidelines-for-extensions"></a>拡張機能の名前付けのガイドライン
 
 [!include [banner](../includes/banner.md)]
@@ -85,5 +84,4 @@ ApplicationSuite モデルの ContactPerson テーブル を増補する拡張�
 - **必ず**メンバー名の先頭に接頭辞、用語、または省略形を含めます。
 WHS がモデル内の他の要素で使用される接頭語の 1 つである場合、承認する作業者クラス レベルの変数に WHSApprovingWorker という名前を付けることができます。
 WHS がホスティング モデルの他の要素で使用される接頭語の 1 つである場合、approveWork メソッドは WHSApproveWork という名前を付けることができます。
-
 

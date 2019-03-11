@@ -1,13 +1,13 @@
 ---
-title: "Finance and Operations でのワークフロー サブシステムの更新"
-description: "この記事では、Microsoft Dynamics 365 for Finance and Operations のワークフロー システムについて説明します。 Microsoft Dynamics AX 2012 以降に実装された変更について説明し、ワークフロー システムに関する詳細へのリンクも示します。"
+title: Finance and Operations でのワークフロー サブシステムの更新
+description: この記事では、Microsoft Dynamics 365 for Finance and Operations のワークフロー システムについて説明します。 Microsoft Dynamics AX 2012 以降に実装された変更について説明し、ワークフロー システムに関する詳細へのリンクも示します。
 author: sericks007
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,21 +17,20 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 5a35c82fa3c7779b183c472572c9bd57272c3fc9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: ee633df3582f2466318eeee8f742f09f79fc921b
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369847"
 ---
-
 # <a name="workflow-subsystem-updates-in-finance-and-operations"></a>Finance and Operations でのワークフロー サブシステムの更新
 
 [!include [banner](../includes/banner.md)]
 
 この記事では、Microsoft Dynamics 365 for Finance and Operations のワークフロー システムについて説明します。 Microsoft Dynamics AX 2012 以降に実装された変更について説明し、ワークフロー システムに関する詳細へのリンクも示します。 
 
-Microsoft Dynamics AX 2012 を使用していれば、Finance and Operations のワークフロー システムは既におなじみのものです。 Microsoft Dynamics AX 2012 のワークフロー サブシステムの詳細については、次のトピックを参照してください。
+Microsoft Dynamics AX 2012 を使用していれば、Finance and Operations のワークフロー システムは既におなじみのものです。 Microsoft Dynamics AX 2012 のワークフロー サブシステムの詳細については、次のトピックを参照してください。
 
 | このテーマについて学ぶには | このトピックを参照                                             |
 |-----------------------------|------------------------------------------------------------|
@@ -52,11 +51,10 @@ Finance and Operations で実装された基本変更を次に示します。
 -   ワークフロー開発ウィザードは Microsoft Visual Studio にポート済みです。
 
 
-<a name="additional-resources"></a>その他のリソース
+<a name="additional-resources"></a>追加リソース
 --------
 
 [開発者向け技術概念ガイド](../dev-tools/developer-home-page.md)
-
 
 
 

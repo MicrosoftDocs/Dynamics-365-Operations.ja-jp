@@ -1,28 +1,27 @@
 ---
-title: "延期モジュール"
-description: "延期タイプ"
+title: 延期モジュール
+description: 延期タイプ
 author: shadykdc
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
-ms.search.scope: 
+ms.search.scope: ''
 ms.search.region: Global
 ms.author: kashea
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.search.validFrom: ''
+ms.dyn365.ops.version: ''
 ms.openlocfilehash: b1762e999010f87dbac3ac6186e79a19d445f44c
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368866"
 ---
-
 # <a name="defer-module"></a>延期モジュール
 
 [!include [banner](../../../../includes/banner.md)]
@@ -60,9 +59,9 @@ ms.lasthandoff: 08/09/2018
 | 氏名 | 署名 | 説明 |
 | ---- | --------- | ----------- |
 | [否認](../interfaces/defer-ideferred.md#reject) |reject(error?: any): void|  |
-| [解決](../interfaces/defer-ideferred.md#resolve) |resolve(value?: T &#124; PromiseLike &lt;T&gt;): void|  |
+| [解決](../interfaces/defer-ideferred.md#resolve) |resolve (value?: T &#124; PromiseLike &lt;T&gt;) : void|  |
 
-## <a name="functions"></a>関数
+## <a name="functions"></a>ファンクション
 
 
 ### <a name="all"></a>すべて
@@ -104,17 +103,16 @@ reject(error?: any): Promise &lt;any&gt;
 
 
 ### <a name="resolve"></a>解決
-resolve &lt;T&gt;(value?: T &#124; PromiseLike &lt;T&gt;): Promise &lt;T&gt;
+resolve &lt;T&gt; (value?: T &#124; PromiseLike &lt;T&gt;) : Promise &lt;T&gt;
 
 
 
 
 #### <a name="parameters"></a>パラメーター
 
-| 氏名 | 種類 | 説明 |
+| 氏名 | 型 | 説明 |
 | ---- | ---- | ----------- |
 | value?|T &#124; PromiseLike &lt;T&gt;||
 
 #### <a name="returns-promise-lttgt"></a>Promise &lt;T&gt; を返します
-
 

@@ -1,13 +1,13 @@
 ---
-title: "支払コネクタ用の Windows インストーラーの作成"
-description: "このトピックでは、支払コネクタの Windows インストーラーを作成する方法を説明します。"
+title: 支払コネクタ用の Windows インストーラーの作成
+description: このトピックでは、支払コネクタの Windows インストーラーを作成する方法を説明します。
 author: sericks007
 manager: AnnBe
 ms.date: 05/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations, Retail
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: yabinl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
 ms.openlocfilehash: 5e36c1085d708342490a09bdd4ad88379011e4f9
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369272"
 ---
-
 # <a name="create-windows-installers-for-payment-connectors"></a>支払コネクタ用の Windows インストーラーの作成
 
 [!include [banner](../includes/banner.md)]
@@ -34,7 +33,7 @@ ms.lasthandoff: 08/09/2018
 開発環境で支払いコネクタを実装してテストした後、生産の配置のため小売業者 IT プロフェッショナルに支払コネクタまたは付加価値再販業者 (VAR) を転送するインストーラーを作成する必要があります。 詳細については、[支払ターミナルと支払の統合](end-to-end-payment-extension.md)を参照してください。
 
 ## <a name="windows-installer"></a>Windows インストーラー
-Microsoft Windows インストーラー (MSI) は、Microsoft Windows のアプリケーションと構成サービスです。 支払コネクタを配置するために必要なすべてのファイルが含まれるインストーラーを作成する必要があります。 インストーラー自体は支払コネクタを配置しません。 指定したフォルダーにコネクタ ファイルを解凍してコピーするだけです。 このトピックの次のセクションでは、そのフォルダーの内容を定義します。 インストールを続行する前に顧客がユーザー契約の受け入れを要求するように、インストーラーを構成することができます。 また、インストーラーに対して優先する形式を選択することができます。 たとえば、.exe ファイルを持つことができます。
+Microsoft Windows インストーラー (MSI) は、Microsoft Windows 用のアプリケーションおよび構成サービスです。 支払コネクタを配置するために必要なすべてのファイルが含まれるインストーラーを作成する必要があります。 インストーラー自体は支払コネクタを配置しません。 指定したフォルダーにコネクタ ファイルを解凍してコピーするだけです。 このトピックの次のセクションでは、そのフォルダーの内容を定義します。 インストールを続行する前に顧客がユーザー契約の受け入れを要求するように、インストーラーを構成することができます。 また、インストーラーに対して優先する形式を選択することができます。 たとえば、.exe ファイルを持つことができます。
 
 ## <a name="installer-contents"></a>インストーラーの内容
 インストーラーは、次の構造で必要なファイルをインストールする必要があります。
@@ -53,7 +52,6 @@ Microsoft Windows インストーラー (MSI) は、Microsoft Windows のアプ�
 次の図は、TestConnector という名前のコネクタのファイル構造を示しています。 
 
 [![TestConnector のファイル構造](./media/paymentconnectorinstaller.png)](./media/paymentconnectorinstaller.png)
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "同じ Azure AD テナントでの複数の LCS プロジェクトと実稼動環境"
-description: "このトピックでは、複数の LCS プロジェクトと実稼動環境を同じ Azure Active Directory テナント上に実装する方法について説明します。"
+title: 1 つの Azure AD テナントにおける複数の LCS プロジェクトおよび実稼働環境
+description: このトピックでは、複数の LCS プロジェクトと実稼動環境を同じ Azure Active Directory テナント上に実装する方法について説明します。
 author: ClaudiaBetz-Haubold
 manager: AnnBe
 ms.date: 06/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: IT Pro
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,19 +15,18 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
+ms.openlocfilehash: b8c6dac74f481b33bf9579b3c88e9779766baa3f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
-ms.openlocfilehash: f15966617025a6ba6a96c7953fcee3aac0a0e9dd
-ms.contentlocale: ja-jp
-ms.lasthandoff: 09/17/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369514"
 ---
-
-# <a name="multiple-lcs-projects-and-production-environments-on-one-azure-ad-tenant"></a>同じ Azure AD テナントでの複数の LCS プロジェクトと実稼動環境
+# <a name="multiple-lcs-projects-and-production-environments-on-one-azure-ad-tenant"></a>1 つの Azure AD テナントにおける複数の LCS プロジェクトおよび実稼働環境
 
 [!include [banner](../includes/banner.md)]
 
-すべての新しい Microsoft Dynamics for Finance and Operations (クラウド) プロジェクトでは、1 つの Microsoft Dynamics Lifecycle Services (LCS) の実装プロジェクトは、1 つの実稼働インスタンスへのアクセスを可能にする Microsoft Azure Active Directory (Azure AD) テナントでインスタンス化されます。 まれに、特定の実装の要件を処理するため、並列実行している複数の生産インスタンスが必要になります。 同じ Azure AD テナントに対して複数の LCS プロジェクトを作成することで、複数の生産インスタンスを持つことができます。 複数の生産インスタンスが必要になる場合の最も一般的なシナリオを次に示します。
+すべての新しい Microsoft Dynamics for Finance and Operations (クラウド) プロジェクトでは、1 つの Microsoft Dynamics Lifecycle Services (LCS) の実装プロジェクトは、1 つの実稼働インスタンスへのアクセスを可能にする Microsoft Azure Active Directory (Azure AD) テナントでインスタンス化されます。 まれに、特定の実装の要件を処理するため、並列実行している複数の生産インスタンスが必要になります。 同じ Azure AD テナントに対して複数の LCS プロジェクトを作成することで、複数の実稼動インスタンスを持つことができます。 複数の生産インスタンスが必要になる場合の最も一般的なシナリオを次に示します。
 
 - 移住地や待機時間のデータまたはデータ量のグローバル実装の要件は、1 つのインスタンスでは満たされません。
 - 組織内の異なる部署は、Finance and Operations を独立したアプリケーションとして個別に実行しています。
@@ -38,7 +37,7 @@ Microsoft Dynamics サービス エンジニアリング (DSE) チームによ�
 
 同じ Azure AD テナント上で実行されるすべての LCS 実装プロジェクトでは、ライセンス契約の最小要件を満たす必要があります。 たとえば、同じ Azure AD テナントに 3 つの LCS 実装プロジェクトがある場合、顧客は最低限のサブスクリプション ライセンス数の 3 倍以上を購入する必要があります。 現在、ライセンスの最少要件は 20 のユーザー フルライセンスです。 したがって、同じ Azure AD テナントで 3 つの LCS 実装プロジェクトを実行するには、少なくとも 60 ライセンスを購入する必要があります。
 
-ライセンスは Azure AD テナントに関連付けられているため、付与された LCS プロジェクトは割り当てられた数量のライセンスしか使えませんが、すべての LCS プロジェクトの**利用可能な定期売買**ページでは、ライセンスの総数が表示されます。 この LCS プロジェクトへのライセンス配分は、システム外で文書化する必要があります。
+ライセンスは Azure AD テナントに関連付けられているため、付与された LCS プロジェクトは割り当てられた数量のライセンスしか使えませんが、すべての LCS プロジェクトの**利用可能なサブスクリプション**ページでは、ライセンスの総数が表示されます。 この LCS プロジェクトへのライセンス配分は、システム外で文書化する必要があります。
 
 同時に複数の環境にアクセスするユーザーは、環境ごとに個別にライセンスが必要です。 ライセンスの詳細については、[ライセンス ガイド](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409)をダウンロードしてください。
 
@@ -51,7 +50,7 @@ Microsoft Dynamics サービス エンジニアリング (DSE) チームによ�
 - 統合は各 LCS プロジェクトで構成される必要があります。
 - 各 LCS プロジェクトには、個別の自分のデータベースの持ち込み (BYOD) インスタンスが必要です。
 - コードが同じ場合でも、各インスタンスでユーザー受け入れテスト (UAT) を行う必要があります。 コード ベースを共有している場合でも、LCS のプロジェクト間で誤差が発生する可能性があるため、各インスタンスに UAT が必要です。 差異の 1 つのソースは LCS プロジェクトごとに個別に実行する必要がある統合設定および BYOD コンフィギュレーションであるため、各 LCS プロジェクトでテストする必要があります。 さらに、地域ごとに違うアプリケーション構成が機能に影響する可能性があったり、別のデータ センターが別の Azure サービスのセットをサポートしたりなど、様々なデータ バリエーションがあります。
-- Microsoft Azure DevOps は、各 LCS プロジェクトで構成される必要があります。 カスタマイズとコードを共有する場合、同じ Azure DevOps プロジェクトを使用することが理にかなっています。
+- Microsoft Azure DevOps は各 LCS プロジェクトで構成される必要があります。 カスタマイズとコードを共有する場合、同じ Azure DevOps プロジェクトを使用することが理にかなっています。
 
 ## <a name="advantages-of-multiple-lcs-projects"></a>複数の LCS プロジェクトの利点
 
@@ -72,4 +71,3 @@ Microsoft Dynamics サービス エンジニアリング (DSE) チームによ�
     - LCS プロジェクトごとのライセンスの詳細
 
 - 同じ Azure AD テナントにおける、複数の LCS プロジェクトの影響を、顧客が理解していることを確認します。
-

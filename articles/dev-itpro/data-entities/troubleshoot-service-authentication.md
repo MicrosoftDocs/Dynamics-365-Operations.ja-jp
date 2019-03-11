@@ -1,13 +1,13 @@
 ---
-title: "サービス認証問題のトラブルシューティング"
-description: "このトピックでは、サービス認証に関する問題を解決するためのヒントをいくつか示します。"
+title: サービス認証問題のトラブルシューティング
+description: このトピックでは、サービス認証に関する問題を解決するためのヒントをいくつか示します。
 author: nimakms
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: nimak
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 3482d88e0eba758dc030844b347129d782a4919c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 6c3cc8636b65f128991137020bec77c5b5b1c144
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369967"
 ---
-
 # <a name="troubleshoot-service-authentication-issues"></a>サービス認証問題のトラブルシューティング
 
 [!include [banner](../includes/banner.md)]
@@ -77,4 +76,3 @@ ms.lasthandoff: 08/09/2018
 
 - JWT の **"aud"** セグメントには、末尾にスラッシュを持つ URI が含まれている可能性があります。 スラッシュを削除する必要があります。
 - JWT の **"aud"** セグメントには、大文字と小文字の間違ったスタイルを使用する URI が含まれている可能性があります。 URI は、すべて小文字であることが必要です。
-

@@ -1,13 +1,13 @@
 ---
-title: "Lifecycle Services (LCS) ユーザー ガイド"
-description: "このトピックでは、Lifecycle Services (LCS) で使用できるツールと、LCS で作業段階を進めていく際に使用するツールについて説明します。"
+title: Lifecycle Services (LCS) ユーザー ガイド
+description: このトピックでは、Lifecycle Services (LCS) で使用できるツールと、LCS で作業段階を進めていく際に使用するツールについて説明します。
 author: kfend
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 94a95543300017a419ec328ac50e04925503a0cd
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369160"
 ---
-
 # <a name="lifecycle-services-lcs-user-guide"></a>Lifecycle Services (LCS) ユーザー ガイド
 
 [!include [banner](../includes/banner.md)]
@@ -39,7 +38,7 @@ Lifecycle Services (LCS) は、定期的に更新されるサービスを提供�
 | [プロジェクト](ax-2012/projects-lcs.md)                                 | プロジェクトは、LCS でのエクスペリエンスの主な開催者です。 プロジェクトでは、共同作業するパートナーを招待し、進捗状況を追跡することもできます。                                                                                                                                                                                                                                                                                                                                                   |
 | [方法](ax-2012/methodologies-lcs.md)                            | 方法では、さらなる反復可能で予測可能な実装プロジェクトを保証するために使用できるツールが提供されます。 いずれかの既成の方法を使用するか、自分の方法を作成することができます。 方法を使用することで、進捗状況を容易に追跡およびレポートすることができます。                                                                                                                                                                                                                                                                  |
 | [ビジネス プロセス モデラー](ax-2012/business-process-modeler-lcs.md)                 | ビジネス プロセス モデラーにより標準プロセス フローを作成、表示、および変更することができます。 ビジネス プロセス モデラーを使用することにより、次の目標を達成することができます。プロセス フローを標準化します。アメリカ生産性品質センター (APQC) によって説明されているように、業務プロセスを業界標準プロセスに合わせることができます。ユーザー要件と Microsoft Dynamics 製品が提供する既定の機能との間の適合性とギャップを識別します。                                                                 |
-| [クラウド ホスト環境](ax-2012/cloud-hosted-environments-lcs.md)                | クラウド ホスト環境は、Microsoft Dynamics 環境を Microsoft Azure に展開するために使用できるツールです。 クラウドでホストされた環境を使用するとき、デモ、開発者/テスト、または実稼動環境などの、配置する環境のタイプを選択する必要があります。 この選択に基づいて、クラウド ホスト環境ツールは Azure の仮想マシン (VM) の適切な番号を提供します。 これらの VM には、Microsoft Dynamics コンポーネント (およびすべての前提条件) がすでにインストールされています。 |
+| [クラウド ホスト環境](ax-2012/cloud-hosted-environments-lcs.md)                | クラウド ホスト環境は、Microsoft Azure 上に Microsoft Dynamics 環境を配置するツールです。 クラウドでホストされた環境を使用するとき、デモ、開発者/テスト、または実稼動環境などの、配置する環境のタイプを選択する必要があります。 この選択に基づいて、クラウド ホスト環境ツールは Azure の仮想マシン (VM) の適切な番号を提供します。 これらの VM には、Microsoft Dynamics コンポーネント (およびすべての前提条件) がすでにインストールされています。 |
 | [クラウドを利用したサポート](cloud-powered-support-lcs.md)                    | クラウドを利用したサポートでは、サポート インシデントを管理できます。 これにより、ローカル環境と同じ修正プログラムがインストールされた Azure に VM を作成できます。 VM 上でインシデントを再生成して記録し、インシデントをサポート チームに送信することができます。 サポートは調査し、可能な場合は VM 上で修正をテストし、検証のためにユーザーに修正プログラムを返送します。                                                                                                              |
 | [コンフィギュレーションとデータ マネージャー (プレビュー)](configuration-manager-lcs.md) | 設定およびデータマネージャ (プレビュー) を使用すると、コンフィギュレーションをあるインスタンスから別のインスタンスにコピーできます。 以下の条件を満たす環境から、および環境に対してコピーすることができます: LCS プロジェクトの一部として管理される。データのインポート/エクスポート フレームワークを実行する。                                                                                                                                                                                                                                               |
 | [カスタマイズ分析](ax-2012/customization-analysis-lcs.md)                   | カスタマイズ分析は、ベスト プラクティスに対してモデル ファイルを検証し、改善の可能性のある領域のレポートを提供します。                                                                                                                                                                                                                                                                                                                                                                                     |
@@ -58,7 +57,6 @@ LCS チームは、[Lifecycle Services エンジニアリング ブログ](https
 --------
 
 [Lifecycle Services](https://lcs.dynamics.com/)
-
 
 
 

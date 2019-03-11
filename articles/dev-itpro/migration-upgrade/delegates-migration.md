@@ -1,13 +1,13 @@
 ---
-title: "コードの移行中にデリゲートを使用してモデル間の依存関係の解決"
-description: "このトピックでは、デリゲート インスタンスとデリゲート ハンドラ間でコントラクトを定義する手段としてデリゲート メソッドがどのように機能するかについて説明します。"
+title: コードの移行中にデリゲートを使用してモデル間の依存関係の解決
+description: このトピックでは、デリゲート インスタンスとデリゲート ハンドラ間でコントラクトを定義する手段としてデリゲート メソッドがどのように機能するかについて説明します。
 author: maertenm
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: maertenm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 7a6329dcf8dbd0afd6f25f43b2390359569d56bf
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368300"
 ---
-
 # <a name="solve-dependencies-among-models-by-using-delegates-during-code-migration"></a>コードの移行中にデリゲートを使用してモデル間の依存関係の解決
 
 [!include [banner](../includes/banner.md)]
@@ -34,7 +33,7 @@ ms.lasthandoff: 08/09/2018
 <a name="overview"></a>概要
 --------
 
-Microsoft Dynamics 365 for Finance and Operations は、個別パッケージでの各モデルで複数のモデルに分割されます。 主要な 3 つのモデルは、アプリケーション プラットフォーム、アプリケーション基盤、およびアプリケーション スイートです (モデルとパッケージについては、[モデル](../dev-tools/models.md)を参照してください)。 モデル分割を使用して、階層が作成されました。ここで上位のモデルは依存関係を持つことができ、下位のモデル内の要素にアクセスできますが、上位のモデルにはアクセスできません。 この設定では、アプリケーション スイートはその要素、アプリケーション基準の要素およびアプリケーション プラットフォームの要素にフル アクセスできます。 アプリケーション基準は、独自の要素とアプリケーション プラットフォームの要素にアクセスできます。 最後に、アプリケーション プラットフォームは独自の要素にのみアクセスできます。 
+Microsoft Dynamics 365 for Finance and Operations は、各モデルが個別のパッケージにある、複数のモデルに分割されます。 主要な 3 つのモデルは、アプリケーション プラットフォーム、アプリケーション基盤、およびアプリケーション スイートです (モデルとパッケージについては、[モデル](../dev-tools/models.md)を参照してください)。 モデル分割を使用して、階層が作成されました。ここで上位のモデルは依存関係を持つことができ、下位のモデル内の要素にアクセスできますが、上位のモデルにはアクセスできません。 この設定では、アプリケーション スイートはその要素、アプリケーション基準の要素およびアプリケーション プラットフォームの要素にフル アクセスできます。 アプリケーション基準は、独自の要素とアプリケーション プラットフォームの要素にアクセスできます。 最後に、アプリケーション プラットフォームは独自の要素にのみアクセスできます。 
 
 [![Del1](./media/del1.jpg)](./media/del1.jpg) 
 
@@ -61,7 +60,7 @@ delegate void applyDiscountDelegate(real _receiptTotal, EventHandlerResult _resu
 
 ![static delegate ハンドラー](media/static-delegate-handler.png)
 
-デリゲートに戻り値がないため、EventHandlerResult がパラメーターとして渡され、デリゲートが返された後に必要な結果値にアクセスできるようになります。 このトピックでは、SubscribesTo を使用する静的委任ハンドラーについて説明します。 Dynamics AX 2012 からのデリゲート機能が保持されます。 [Dynamics AX 2012で X++ の委任を使用する方法](http://blogs.msdn.com/b/x/archive/2011/08/02/how-to-use-x-delegates-in-dynamics-ax-2012.aspx) は Dynamics AX 2012 の委任の概念について、 Microsoft の開発者 Marcos Calderon が MSDN に投稿した素晴らしいブログです。 これらの概念が引き続き適用されます。
+デリゲートに戻り値がないため、EventHandlerResult がパラメーターとして渡され、デリゲートが返された後に必要な結果値にアクセスできるようになります。 このトピックでは、SubscribesTo を使用する静的委任ハンドラーについて説明します。 Dynamics AX 2012 からのデリゲート機能が保持されます。 [Dynamics AX 2012 で X++ デリゲートを使用する方法](http://blogs.msdn.com/b/x/archive/2011/08/02/how-to-use-x-delegates-in-dynamics-ax-2012.aspx) は Dynamics AX 2012 のデリゲートの概念について、Microsoft の開発者 Marcos Calderon が MSDN に投稿した素晴らしいブログです。 これらの概念が引き続き適用されます。
 
 ## <a name="example-scenarios"></a>シナリオ例
 ### <a name="overlaying-an-existing-delegate"></a>既存の委任のオーバーレイ
@@ -86,7 +85,7 @@ delegate void applyDiscountDelegate(real _receiptTotal, EventHandlerResult _resu
 
 [![委任とハンドラーのコード サンプルの検索](./media/findingdelegatesandhandles.png)](./media/findingdelegatesandhandles.png) 
 
-委任ハンドラーで switch ステートメントに新しいテーブルを追加した後、コードは Dynamics AX 2012 の場合と同じように機能します。 
+デリゲート ハンドラーで switch ステートメントに新しいテーブルを追加した後、コードは Dynamics AX 2012 の場合と同じように機能します。 
 
 [![ShowSalesTax メソッド コード](./media/showsalestaxmethod.png)](./media/showsalestaxmethod.png)
 
@@ -136,7 +135,7 @@ SubscribesTo キーワードを使用して、applyDiscountDelegateHandler メ�
 -   クラス参照
 -   SubscribesTo 参照
 
-[Visual Studio でのメタデータ検索](../dev-tools/metadata-search-visual-studio.md) ページで説明されているメタデータ検索ツールは、デリゲート、またはそのハンドラーを検索するための優れた方法です。 Visual Studio で、<strong>Dynamics 365 **&gt;** メタデータ検索</strong>に移動してメタデータ検索ツールを開きます。 
+[メタデータ検索と Visual Studio](../dev-tools/metadata-search-visual-studio.md) ページで説明されているメタデータ検索ツールは、デリゲート、またはそのハンドラーを検索するための優れた方法です。 Visual Studio で、<strong>Dynamics 365 **&gt; **メタデータ検索</strong>に移動してメタデータ検索ツールを開きます。 
 
 [![Del15](./media/del15.png)](./media/del15.png) 
 
@@ -151,7 +150,6 @@ SubscribesTo キーワードを使用して、applyDiscountDelegateHandler メ�
 クラス参照の検索と同様、すべての参照の検索は、SubscribesTo キーワードで行うことができます。 結果リストには、すべての静的デリゲート ハンドラーが含まれます。 この一覧を手動で移動することで、静的デリゲート ハンドラーを検索できます。 これは、SubscribesTo キーワードを使用しない動的に宣言された代理ハンドラを返しません。 
 
 [![Del18](./media/del18-1024x328.png)](./media/del18.png)
-
 
 
 

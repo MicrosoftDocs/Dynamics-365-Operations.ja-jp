@@ -1,13 +1,13 @@
 ---
-title: "Retail Modern POS (MPOS) 画面レイアウトへのカスタム コントロールの追加"
-description: "このトピックでは、最新POS (MPOS) の画面レイアウトに新しいカスタム コントロールを追加する方法について説明します。"
+title: Retail Modern POS (MPOS) 画面レイアウトへのカスタム コントロールの追加
+description: このトピックでは、最新POS (MPOS) の画面レイアウトに新しいカスタム コントロールを追加する方法について説明します。
 author: mugunthanm
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: josaw
 ms.search.scope: Operations, Retail
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
 ms.openlocfilehash: 57dc1e2c085da5eac5d25030bd34ff0037e29ee1
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369889"
 ---
-
 # <a name="add-custom-controls-to-retail-modern-pos-mpos-screen-layouts"></a>Retail Modern POS (MPOS) 画面レイアウトへのカスタム コントロールの追加
 
 [!include [banner](../includes/banner.md)]
@@ -37,7 +36,7 @@ ms.lasthandoff: 08/09/2018
 販売に関する詳細な情報をレジ担当者およびマネージャに提供する必要があります。 たとえば、トランザクションで購入された合計数および無効明細行の数などの、トランザクション ぺージに情報を追加します。 カスタム コントロールを使用してこの情報を追加することができます。
 
 ## <a name="add-the-custom-control"></a>カスタム コントロールの追加
-1.  管理者として Microsoft Visual Studio を起動します。
+1.  Microsoft Visual Studio を管理者として起動します。
 2.  Modern POS(MPOS) ソリューションを開きます。 ソリューションのフォルダーの場所は、ソリューション トポロジによって異なります。
 3.  POS.App プロジェクトの Views\\Controls フォルダーで、新しい HTML ページを追加し、**CustomControl.html** と名前を付けます。
 4.  POS.App プロジェクトの Views\\Controls フォルダーで、新しい TypeScript ファイルを追加し、**CustomControl.ts** と名前を付けます。
@@ -127,14 +126,13 @@ ms.lasthandoff: 08/09/2018
 16. 変更の保存を求められたら、**はい** をクリックします。
 17. **小売** &gt; **小売 IT** &gt; **配送スケジュール** の順に移動します。
 18. **レジスター** (**1090**) ジョブを選択し、**今すぐ実行** をクリックします。
-19. ジョブの実行が終了した後は、Visual Studio から**配置**ボタンをクリックして MPOS を配置します。
+19. ジョブの実行が終了した後は、Visual Studio から **配置** ボタンをクリックして MPOS を配置します。
 
 ## <a name="validate-the-customization"></a>カスタマイズの検証
 1.  オペレーター ID に **000160**、パスワードに **123** を使用して MPOS にサインインします。
 2.  ようこそ画面で、**現在のトランザクション**ボタンをクリックします。
 3.  トランザクションに任意の品目を追加し、合計数量がカスタム コントロールに正しく表示されることを確認します。
 4.  トランザクション内で任意の明細行を無効化し、無効にされた行の数がカスタム コントロールに正しく表示されることを確認します。
-
 
 
 

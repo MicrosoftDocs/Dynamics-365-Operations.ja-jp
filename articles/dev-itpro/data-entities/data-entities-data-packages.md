@@ -1,13 +1,13 @@
 ---
-title: "データ管理"
-description: "このトピックでは、Microsoft Dynamics 365 for Finance and Operations のデータ管理に関する一般情報を提供します。"
+title: データ管理
+description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations のデータ管理について説明します。
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 12/18/2018
+ms.date: 01/18/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: margoc
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: b3515c3eaafd48d716396956cb2d9922d5eadd9e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 9cf60373f2c04bd610059c52e75a6c04955a30a8
-ms.openlocfilehash: b6d05e58856006bcca460c277ddc28c852b6aa12
-ms.contentlocale: ja-jp
-ms.lasthandoff: 12/19/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368351"
 ---
-
 # <a name="data-management"></a>データ管理
 
 [!include [banner](../includes/banner.md)]
@@ -47,7 +46,7 @@ ms.lasthandoff: 12/19/2018
 
 ## <a name="data-entities"></a>データ エンティティ
 
-データ エンティティは重要なデータの概念および機能を表すテーブル スキーマの抽象化およびカプセル化の概念を提供します。 Microsoft Dynamics AX 2012 では、顧客および仕入先のテーブルなどのほとんどのテーブルが非正規化され、複数のテーブルに分割されていました。 これはデータベース設計の観点からは有益でしたが、実装者や ISV が物理スキーマを十分に理解することなく使用することは困難でした。 データ エンティティは、ビジネス概念を使用して容易に理解できる抽象化のレイヤーとして使用されるデータ管理の一部として導入されました。 以前のバージョンの Microsoft Dynamics 365 for Finance and Operations では、Microsoft Excel アドイン、AIF、DIXF などのデータを管理するための複数の方法がありました。 データ エンティティの概念は、これらの異なる概念を 1 つにまとめたものです。 データ エンティティの作成後、Excel アドイン、インポート/エクスポート、または統合のためにそれらを再利用できるようになります。 次のテーブルは、コア データ管理シナリオを示しています。
+データ エンティティは重要なデータの概念および機能を表すテーブル スキーマの抽象化およびカプセル化の概念を提供します。 Microsoft Dynamics AX 2012 では、顧客テーブルおよび仕入先テーブルなどのほとんどのテーブルが正規化されてなく、複数のテーブルに分割されていました。 これはデータベース設計の観点からは有益でしたが、実装者や ISV が物理スキーマを十分に理解することなく使用することは困難でした。 データ エンティティは、ビジネス概念を使用して容易に理解できる抽象化のレイヤーとして使用されるデータ管理の一部として導入されました。 以前の Microsoft Dynamics 365 for Finance and Operations のバージョンでは、Microsoft Excel、アドイン、AIF、および DIXF など、データを管理する複数の方法がありました。 データ エンティティの概念は、これらの異なる概念を 1 つにまとめたものです。 データ エンティティの作成後、Excel アドイン、インポート/エクスポート、または統合のためにそれらを再利用できるようになります。 次のテーブルは、コア データ管理シナリオを示しています。
 
 <table>
 <tbody>
@@ -83,7 +82,7 @@ ms.lasthandoff: 12/19/2018
 - バッチを使用してデータのインポートを簡単にスケジュールすることができ、実行が必要なときに柔軟性を提供します。 たとえば、システムでいつでも顧客グループ、顧客、仕入先、およびその他のデータ エンティティを移行できます。
 
 ## <a name="set-up-and-copy-configuration"></a>セットアップとコピーのコンフィギュレーション
-データ管理フレームワークを使用すると、会社または環境間の構成をコピーして、Microsoft Dynamics Lifecycle Services (LCS) を使用するプロセスまたはモジュールを構成することができます。
+データ管理フレームワークを使用すると、会社間または環境間で構成をコピーし、Microsoft Dynamics Lifecycle Services (LCS) を使用してプロセスまたはモジュールを構成することができます。
 
 コンフィギュレーションのコピーは、入力が必要なデータの構造やデータの依存関係、または実装にデータを追加する順序をチームが深く理解していなくても、新しい実装の開始を容易にするためのものです。
 
@@ -277,11 +276,18 @@ ms.lasthandoff: 12/19/2018
 | ExportWhileDataEntityListIsBeingRefreshed     | 有効な場合、エンティティの更新の実行中にジョブがスケジューリングされると、マッピングで追加の検証が行われます。 この既定値はオフです。|
 | DMFDisableXSLTTransformationForCompositeEntity     | これは、複合エンティティで変換の適用を無効にできます。 |
 | DMFDisableInputFileCheckInPackageImport     | すべてのエンティティ ファイルがデータ パッケージから欠落している場合にエラー メッセージが表示されるように、追加の検証が行われます。 これは既定の動作です。 必要な場合、このフライトによりこれを OFF にできます。  |
+| FillEmptyXMLFileWhenExportingCompositeEntity     | プラットフォーム更新プログラム 15 よりも前は、エクスポートするレコードを持っていない複合エンティティをエクスポートするとき、生成された XML ファイルにはスキーマ要素は含まれませんでした。 この動作は変更されて、空のスキーマが出力されます。 ただし、必要な場合は、このフライトを有効にして、以前の動作に戻すことができます。  |
+| EnableNewNamingForPackageAPIExport     | エクスポートに対してパッケージ API を使用する実行 ID に一意の名前が使用されるように、修正が行われました。 これにより、実行 ID に対して新しい名前付け規約が使用されるようになりました。 前の名前付け規則に戻す必要がある場合、このフライトを有効にすることができます。 ただし、これを行うと、バグ 265164 で解決された問題が再発生します。 この問題は、名前付け規約で使用されるタイムスタンプは同じであるため、その結果、連続してすばやく呼び出しが行われるときにのみ発生します。 |
+| DMFDisableDoubleByteCharacterExport     | コード ページ 932 設定を使用するようにフォーマットがコンフィギュレーションされているときにデータをエクスポートできるように、修正が行われた。 2 バイト エクスポートに関連して問題が発生した場合、該当する場合は、このフライトを無効にしてブロック解除することによって、この修正を止めることができます。 |
+| DisablePendingRecordFromJobStatus     | インポート ジョブの最終ステータスの評価時に保留中のレコードを確実に考慮するように、修正が行われました。 実装がステータス評価ロジックに依存し、この変更が実装の重大な変更として見なされる場合、この新しいロジックをこのフライトを使用して無効にすることができます。  |
 
 
 次の手順では、非運用環境でフライトを有効にします。 次の SQL コマンドを実行します。
 
-INSERT INTO SYSFLIGHTING VALUES ('<Flight name>', 1, 12719367, Partition, RecID, 1)
+- INSERT INTO SYSFLIGHTING VALUES ('<Flight name>', 1, 12719367, Partition, RecID, 1)
+- この SQL ステートメントを実行した後、各 AOS 上の web.config ファイル内に、以下が設定されていることを確認します。
+        add key="DataAccess.FlightingServiceCatalogID" value="12719367"
+- 上記の変更を行った後、すべての AOS 上で IISRESET を実行します。
 
 パラメーターの説明は、次に示します。
  - <Flight name> は、有効または無効にする必要があるフライトの名前。
@@ -292,4 +298,3 @@ INSERT INTO SYSFLIGHTING VALUES ('<Flight name>', 1, 12719367, Partition, RecID,
 
 ## <a name="additional-resources"></a>追加リソース
 - [データ エンティティ](data-entities.md)
-

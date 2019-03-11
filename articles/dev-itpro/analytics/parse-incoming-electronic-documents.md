@@ -1,13 +1,13 @@
 ---
-title: "アプリケーションのデータを更新するために受信したドキュメントを解析する"
-description: "このトピックでは、受信したドキュメントを解析し、選択したコンテンツをアプリケーション データに適用して更新できるように電子報告 (ER) 形式を設定する方法について説明します。"
+title: アプリケーションのデータを更新するために受信したドキュメントを解析する
+description: このトピックでは、受信したドキュメントを解析し、選択したコンテンツをアプリケーション データに適用して更新できるように電子報告 (ER) 形式を設定する方法について説明します。
 author: nickselin
 manager: AnnBe
 ms.date: 11/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERSolutionTable, ERVendorTable, ERWorkspace
 audience: Developer
 ms.reviewer: kfend
@@ -17,13 +17,13 @@ ms.assetid: e3f7960d-2e01-46a7-9ac8-c355ac933cd6
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2017-11-10
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
+ms.openlocfilehash: 1b16f463b5f4b1c779105dea32dbd1e581f1f219
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 5d2d9e52833f345ca2c555a429429a62d1e7c315
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368503"
 ---
 # <a name="parse-incoming-documents-to-update-application-data"></a>アプリケーションのデータを更新するために受信したドキュメントを解析する
 [!include [banner](../includes/banner.md)]
@@ -50,4 +50,3 @@ ms.lasthandoff: 04/20/2018
 | Web サービス応答サンプル 2 | [Response2.xml](https://go.microsoft.com/fwlink/?linkid=862266)   |
 | Web サービス応答サンプル 3 | [Response3.xml](https://go.microsoft.com/fwlink/?linkid=862266)   |
 | Web サービス応答サンプル 4 | [Response4.xml](https://go.microsoft.com/fwlink/?linkid=862266)   |
-

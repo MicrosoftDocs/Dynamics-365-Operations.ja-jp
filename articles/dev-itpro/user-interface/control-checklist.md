@@ -1,13 +1,13 @@
 ---
-title: "コントロールのチェックリスト"
-description: "この記事では、コントロールのすべてのリリース条件を分類して説明しています。"
+title: コントロールのチェックリスト
+description: この記事では、コントロールのすべてのリリース条件を分類して説明しています。
 author: RobinARH
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: shshabazz
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f68ebc44741b91cdadb7efd71acde01aa7006048
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 879eb9f2a63a8514791f74965005ed3e22bc0de7
-ms.openlocfilehash: 01ad0eeadeffdbb9044554c0a3f050a161e2a296
-ms.contentlocale: ja-jp
-ms.lasthandoff: 04/20/2018
-
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369902"
 ---
-
 # <a name="control-checklist"></a>コントロールのチェックリスト
 
 [!include [banner](../includes/banner.md)]
@@ -73,7 +72,7 @@ ms.lasthandoff: 04/20/2018
 -   **ApplyBuild** メソッドは、デザイン時プロパティを解釈するため、コントロールに応じて実行時のプロパティにデザイン時のプロパティを適用するために使用されます。
 -   各 FormProperty に対して、プロパティ ゲッター / セッター メソッドが存在します。
 -   FormPropertyAttribute は、各 FormProperty のゲッター / セッター メソッドで提供されます。
--   **Anytype** は **FormPropertyKind::BindableValue** を持つ FormProperties の引数タイプとして使用されます。
+-   **Anytype** は、**FormPropertyKind::BindableValue** を持つ FormProperties の引数タイプとして使用されます。
 -   すべての FormProperties は FormPropertyAttribute の第 3 引数を経由して JS クラスに **ReadOnly** として指定されます。
     -   この引数は、X++ ではなく、JavaScript によって認識される読み取り/書き込み動作にのみ影響します。
     -   すべてプロパティ状態の変更を検証する必要があるため、プロパティに JavaScript で直接書き込むを許可することはお勧めしません。 この目的に、書き込み可能なプロパティではなく、FormCommands を使用することをお勧めします。
@@ -135,7 +134,7 @@ ms.lasthandoff: 04/20/2018
 -   コントロールは、サポートされているすべてのブラウザーで、意図したすべてのユーザー操作パターンを正しくレンダリングおよびサポートします。
     -   Microsoft Edge/Internet Explorer 11
     -   最新バージョンの Chrome
-    -   iPad/MacOS の最新バージョン
+    -   iPad/MacOS Safari の最新バージョン
 
 #### <a name="tab-sequence"></a>タブ順序
 
@@ -207,7 +206,7 @@ ms.lasthandoff: 04/20/2018
 -   **基本コントロールの継承** 各コントロールのコンストラクターは、基本の JavaScript コントロールクラスから「継承」する必要があります。 基本の JavaScript コントロール クラスには、各コントロールに必要な動作が含まれています。
 -   **既定値を適用する**各コントロールは、コントロールのプロパティに既定値を適用するために、指定されたフレームワーク関数を使用する必要があります。
 -   **クライアント側のプロパティ/機能を追加する**各コントロールは、コントロール コンストラクターに渡されるサーバー側の FormProperties および Commands に加えて、クライアント側専用のプロパティと関数を JavaScript クラスに追加できます。 クライアント側専用のプロパティ/機能を追加するためのパターンは、*この* オブジェクトのローカル コピーを維持するためであり、その関数/プロパティをローカルのコピーに追加します。 コントロール コンストラクターが完了すると、追加されたすべてのプロパティ、関数、FormProperties、コマンドは、既定のデータ コンテキストとして HTML で使用可能になります。
--   **監視可能な計算されたプロパティの追加**各コントロールは、クライアントの監視可能なパターンに関与するクライアント側専用のプロパティを追加できます。 監視可能なプロパティは $dyn.observable (\[initial value\]) 関数を使用して初期化されます。 計算されたプロパティは、$dyn.computed(\[function(){}\]) 機能を利用して初期化されます。 コントロールは監視可能/計算されたプロパティを慎重に使用する必要があります。これらのプロパティは、誤って使用されるとパフォーマンスに重大な影響を及ぼす可能性があるためです。
+-   **監視可能な計算されたプロパティの追加**各コントロールは、クライアントの監視可能なパターンに関与するクライアント側専用のプロパティを追加できます。 監視可能なプロパティは $dyn.observable (\[initial value\]) 関数を使用して初期化されます。 計算されたプロパティは、$dyn.computed(\[function(){}\]) 関数を使用して初期化されます。 コントロールは監視可能/計算されたプロパティを慎重に使用する必要があります。これらのプロパティは、誤って使用されるとパフォーマンスに重大な影響を及ぼす可能性があるためです。
 -   **コントロール JavaScript プロトタイプ**各コントロールは、基本コントロール プロトタイプを拡張する JavaScript プロトタイプを実装する必要があります。 プロトタイプには、コントロールによって使用される「静的な」JavaScript メソッド (ローカル変数への参照を必要としないメソッド) が含まれている必要があります。
 
 ### <a name="interactivity"></a>インタラクティビティ
@@ -224,8 +223,8 @@ ms.lasthandoff: 04/20/2018
 
 コントロールは、SysTaskRecorder X++ API を使用して、コントロールのどのアクションが「記録可能」であるかを示す必要があります。
 
--   プロパティを利用して設定する値を有効にするコントロールについては、X++ で値が設定されると **SysTaskRecorder::addPropertyUserAction** が呼び出される必要があります。 このメソッド呼び出しは、プロパティの設定を記録するようにタスク レコーダーに指示します。
--   コマンドの同様のメソッドが存在します (**SysTaskRecorder::addCommandUserAction**)。
+-   プロパティを使用して値の設定可能にするコントロールについては、X++ で値が設定されるときに **SysTaskRecorder::addPropertyUserAction** が呼び出される必要があります。 このメソッド呼び出しは、プロパティの設定を記録するようにタスク レコーダーに指示します。
+-   コマンドに対して同様のメソッドが存在します (**SysTaskRecorder::addCommandUserAction**)。
 
 詳細については、[コントロールに対してタスク レコーダーが生成するテキストの決定](task-recorder-control-text.md) を参照してください。
 
@@ -244,7 +243,6 @@ ms.lasthandoff: 04/20/2018
 #### <a name="task-recorder-copypastevalidate-support"></a>タスク レコーダーのコピー/貼り付け/検証サポート
 
 コピー、貼り付け、または検証 (主に詳細な X++ テスト目的用) のいずれかをサポートする必要のあるコントロールについては、SysTaskRecorder API は、値がコピーされ、貼り付けられ、または検証される時点でタスク レコーダーに通知するため、コントロールを有効にする静的メソッドを公開します。
-
 
 
 

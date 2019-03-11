@@ -1,13 +1,13 @@
 ---
-title: "オフライン モードの Retail Modern POS (MPOS)"
-description: "この記事では、Retail サーバーが利用できない場合に、オフライン モードで Retail Modern POS デバイスを使用する方法について説明します。"
+title: オフライン モードの Retail Modern POS (MPOS)
+description: この記事では、Retail サーバーが利用できない場合に、オフライン モードで Retail Modern POS デバイスを使用する方法について説明します。
 author: RobinARH
 manager: AnnBe
 ms.date: 08/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations, Retail
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: d20bc3519096f1035d26f89d42aa7e8f0fc368cd
 ms.openlocfilehash: 8e3b2fd2e6780570e3480c25df2e7bff42b4d4da
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/29/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369826"
 ---
-
 # <a name="retail-modern-pos-mpos-in-offline-mode"></a>オフライン モードの Retail Modern POS (MPOS)
 
 [!include [banner](../includes/banner.md)]
@@ -38,7 +37,7 @@ Retail Modern POS のステータス ヘッダーは、現在の接続状態を�
 
 [![接続](./media/connection.png)](./media/connection.png) 
 
-Retail Modern POS の **接続ステータス** ページには、オフライン データベースと同期する前回の試みのステータスが表示されます。 
+Retail Modern POS の**接続ステータス**ページには、オフライン データベースと同期する前回の試みのステータスが表示されます。 
 
 [![接続ステータス](./media/connection-status.png)](./media/connection-status.png)
 
@@ -123,7 +122,6 @@ Retail Modern POS にオンラインとオフライン モードを手動で切�
 | 1055         | シフトのクローズ       |
 | 1056         | X の印刷           |
 | 1057         | 再印刷 Z         |
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "コードの移行 - マウス ダブルクリック ロジック"
-description: "Microsoft Dynamics 365 for Finance and Operations では、mouseDblClick() のオーバーライドが推奨されず、新しいコントロールにこのロジックを移動する必要があります。"
+title: コードの移行 - マウス ダブルクリック ロジック
+description: Microsoft Dynamics 365 for Finance and Operations では、mouseDblClick() オーバーライドは廃止され、このロジックを新しいコントロールに移動する必要があります。
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,21 +17,20 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 1c325729e29df2c48bb28d0fe2d6201166ca4ea0
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369938"
 ---
-
 # <a name="code-migration---mouse-double-click-logic"></a>コードの移行 - マウス ダブルクリック ロジック
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Finance and Operations では、mouseDblClick() のオーバーライドが推奨されず、新しいコントロールにこのロジックを移動する必要があります。
+Microsoft Dynamics 365 for Finance and Operations では、mouseDblClick() オーバーライドは廃止され、このロジックを新しいコントロールに移動する必要があります。
 
-Microsoft Dynamics AX 2012 では、マウスをダブルクリックするイベントがさまざまな理由で使用されていました。 たとえば、より良いユーザー エクスペリエンスを提供するのを助け、特定のシナリオを実行する代替方法を提供しました。 共通の使用パターンの例を次に示します。
+Microsoft Dynamics AX 2012 では、さまざまな理由で、マウスをダブルクリックするイベントが使用されていました。 たとえば、より良いユーザー エクスペリエンスを提供するのを助け、特定のシナリオを実行する代替方法を提供しました。 共通の使用パターンの例を次に示します。
 
 -   2 つのリストまたはツリー コントロールの間での要素の移動
 -   選択したフィールドに関する詳細を取得するための新しいフォームを開いています
@@ -48,14 +47,14 @@ Finance and Operations では、**mouseDblClick()** のオーバーライドが�
 
 ### <a name="moving-items-between-two-lists-controls"></a>2 つのリスト コントロール間での項目の移動
 
-Dynamics AX 2012 では、2 つのリスト コントロールに並べて表示されている場合に、リスト パネル シナリオでマウスのダブルクリックがよく使用されていました。 ユーザーが 1 つのリスト コントロール内の品目をダブルクリックした場合、その品目が 2 つ目のリスト コントロールに移動されました。 Finance and Operations での **mouseDblClick()** シナリオの移行では、リスト パネルのパターンへの配置が関係します。 次のように、この使用パターンを移行するための 2 つのオプションがあります。
+Dynamics AX 2012 では、2 つのリスト コントロールに並べて表示されるリスト パネル シナリオで、マウスのダブルクリックがよく使用されていました。 ユーザーが 1 つのリスト コントロール内の品目をダブルクリックした場合、その品目が 2 つ目のリスト コントロールに移動されました。 Finance and Operations での **mouseDblClick()** シナリオの移行では、リスト パネルのパターンへの配置が関係します。 次のように、この使用パターンを移行するための 2 つのオプションがあります。
 
 -   **SysListPanel** クラス自体を使用します。これは、2 つのリスト コントロール間でアイテムを移動するためのロジックとボタンを提供します。
 -   **SysListPanel** クラス (リストが ListView ではないため、またはクラスが特定の状況に適していないため)、リスト パネルのサブパターンに従ってコントロールを手動でモデル化できます。 このパターンには、リスト間でアイテムを移動するためのボタンが含まれていますが、開発者はこれらのボタンを動作させるための正しいロジックを追加する必要があります。
 
 ### <a name="opening-a-new-form"></a>新しいフォームを開いています
 
-Dynamics AX 2012 の別の一般的な使用パターンでは、ユーザーがフィールドをダブルクリックすると、そのフィールドに関する詳細な情報を表示する新規フォームを開けました。 次のように、この使用パターンを移行するためのいくつかのオプションがあります。
+Dynamics AX 2012 の別の一般的な使用パターンでは、ユーザーがフィールドをダブルクリックすると、そのフィールドに関する詳細な情報を表示する新規フォームが開きました。 次のように、この使用パターンを移行するためのいくつかのオプションがあります。
 
 -   フィールドの詳細を表示するバッキング フォームを開くには、シングルクリックを使用します。 この機能は、テーブル関係に基づいている多くのフィールドで自動的に実装され、コントロールの **jumpRef()** メソッドをオーバーライドすることで手動で実装できます。 推奨される移行工順は、コードを **mouseDblClick()** から **jumpRef()** オーバーライドへ移動して、ナビゲーションがシステム内のその他のフィールドとつながるようにするためです。
 -   フォームで新しいボタンをモデル化して、**mouseDblClick()** メソッドからボタンの **clicked()** メソッドにロジックを移動します。 この方法は、**jumpRef()** のオーバーライドが存在しない、非入力フィールド コントロール (たとえば、ツリー コントロール) に対してのみ使用する必要があります。
@@ -75,7 +74,6 @@ Dynamics AX 2012 の一部のカスタム ルックアップでは、ユーザ�
 -   コントロール間で項目を移動するには、可能であれば **SysListPanel** クラスまたは ListPanel パターンを使用します。
 -   マウスのダブルクリック ロジックに置き換わるボタンを追加するとき、できるだけ (コンテキストに依存する方法で) コントロールの近くにボタンを配置します。
 -   場合によっては、フォームを再設計して **mouseDblClick()** メソッド内に存在していたロジックに対応する必要があります。
-
 
 
 

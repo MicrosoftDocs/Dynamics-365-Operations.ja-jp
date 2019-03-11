@@ -1,13 +1,13 @@
 ---
-title: "X++ データの選択と操作"
-description: "このトピックでは、X++ 言語でのデータの選択と操作のサポートについて説明します。"
+title: X++ データの選択と操作
+description: このトピックでは、X++ 言語でのデータの選択と操作のサポートについて説明します。
 author: RobinARH
 manager: AnnBe
 ms.date: 10/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: robinr
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.translationtype: HT
-ms.sourcegitcommit: fc61ba6131ed6d93132701aa799243e78a289134
 ms.openlocfilehash: 4033237ce255b6b862ccdc332a57446152dd1f94
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/10/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369203"
 ---
-
 # <a name="x-data-selection-and-manipulation"></a>X++ データの選択と操作
 
 [!include [banner](../includes/banner.md)]
@@ -73,7 +72,7 @@ ms.lasthandoff: 10/10/2018
 | firstOnly10       | このキーワードは **firstOnly** と同じですが、1 つではなく 10 行を返します。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | firstOnly100      | このキーワードは **firstOnly** と同じですが、1 つではなく 100 行を返します。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | firstOnly1000     | このキーワードは **firstOnly** と同じですが、1 つではなく 1,000 行を返します。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| forceLiterals     | このキーワードは、最適化時に Microsoft SQL Server データベースに対して **where** 句で使用される実際値を明らかにしないように、カーネルに指示します。 **forceLiterals** および **forcePlaceholders** キーワードは相互に排他的です。 **選択** 明細書に **forceLiterals** キーワードは使用しないでください。SQL インジェクションのセキュリティ脅威にさらされるためです。                                                                                                                                                                                                                                                                                                                                                              |
+| forceLiterals     | このキーワードは、最適化時に Microsoft SQL Server データベースに対して **where** 句で使用される実際値を明らかするように、カーネルに指示します。 **forceLiterals** および **forcePlaceholders** キーワードは相互に排他的です。 **選択** 明細書に **forceLiterals** キーワードは使用しないでください。SQL インジェクションのセキュリティ脅威にさらされるためです。                                                                                                                                                                                                                                                                                                                                                              |
 | forceNestedLoop   | このキーワードを使用すると、SQL Server データベースはネストループ アルゴリズムを使用して、結合アルゴリズムを含む特定の SQL ステートメントを処理します。 したがって、2 番目のテーブルのレコードがフェッチされる前に、1 番目のテーブルのレコードがフェッチされます。 通常、ハッシュ結合やマージ結合などの他の結合アルゴリズムが考慮されます。 このキーワードは、**forceSelectOrder** キーワードと組み合わされることがよくあります。                                                                                                                                                                                                                                                                                                                                           |
 | forcePlaceholders | このキーワードは、最適化時に SQL Server データベースに対して **where** 句で使用される実際値を明らかに*しない*ように、カーネルに指示します。 既定では、この動作は**結合**ステートメントではないすべてのステートメントで使用されます。 このキーワードを使用する利点は、他の検索値がある同様の明細書のアクセス計画をカーネルが再利用できることです。 欠点は、アクセス計画が計算されることですが、データの配布が不均一である可能性があることは考慮されません。 アクセス計画は、平均的なアクセス計画です。 **forcePlaceholders** および **forceLiterals** キーワードは相互に排他的です。                                                                                                            |
 | forceSelectOrder  | このキーワードを指定すると、SQL Server データベースは指定した順序で結合内のテーブルにアクセスします。 2 つのテーブルが結合している場合、明細書の最初のテーブルに最初にアクセスします。 このキーワードは、**forceNestedLoop** キーワードと組み合わされることがよくあります。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
@@ -664,7 +663,7 @@ SalesOrderLine テーブルには、**SalesOrderID** という名前の外部キ
 
 クエリの**インデックス ヒント**を使用する前に、サーバー上で使用できるヒントを指定する必要があります。
 
-1.  **スタート** &gt; **管理ツール** &gt; **Microsoft Dynamics AX Server Configuration** の順に移動します。
+1.  **スタート**&gt; **管理ツール** &gt; **Microsoft Dynamics AX サーバー コンフィギュレーション**に移動します。
 2.  **データベースのチューニング**タブで、**Allow INDEX hints in queries** を選択し、**OK** をクリックします。
 3.  Application Object Server (AOS) サービスの再起動を要求するメッセージ ボックスが表示されたら、**はい** をクリックします。 サービスが再起動されるまで、インデックス ヒントは有効化されません。
 
@@ -959,7 +958,7 @@ SalesOrderLine テーブルには、**SalesOrderID** という名前の外部キ
 
 ### <a name="insertrecordset-syntax"></a>insert\_recordset 構文
 
-*ListOfFields* 出力先テーブルは、ソース テーブル内のフィールドのリストと一致する必要があります。 データは、フィールドの一覧に表示されている順に転送されます。 フィールドの一覧に表示されていない出力先テーブルのフィールドは、他の領域と同じように、**0** (ゼロ) の値に割り当てられています。 **RecId** などのシステム フィールドは、出力先テーブルのカーネルによって透過的に割り当てられます。 **挿入\_レコードセット** *DestinationTable* **(** *ListOfFields* **)** の、\[*WhereClause* **にある****\]** *SourceTable* **から** *ListOfFields1* **を選択**し、\[\[*JoinedWhereClause* **にある****\]** *JoinedSourceTable* **から** *ListOfFields2*  **を統合する**\]
+*ListOfFields* 出力先テーブルは、ソース テーブル内のフィールドのリストと一致する必要があります。 データは、フィールドの一覧に表示されている順に転送されます。 フィールドの一覧に表示されていない出力先テーブルのフィールドは、他の領域と同じように、**0** (ゼロ) の値に割り当てられています。 **RecId** などのシステム フィールドは、出力先テーブルのカーネルによって透過的に割り当てられます。 **挿入\_レコードセット** *DestinationTable* **(** *ListOfFields* **)** の、\[*WhereClause* **にある** **\]** *SourceTable* **から** *ListOfFields1* **を選択**し、\[\[*JoinedWhereClause* **にある** **\]** *JoinedSourceTable* **から** *ListOfFields2*  **を統合する**\]
 
 ### <a name="example-inserting-data-from-another-table"></a>例: 別のテーブルからデータを挿入
 
@@ -1352,7 +1351,6 @@ SalesOrderLine テーブルには、**SalesOrderID** という名前の外部キ
         }
         insertList.insertDatabase();
     }
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "Lifecycle Services (LCS) 内のツールを使用した、パフォーマンスのトラブルシューティング"
-description: "このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) がサンドボックスと生産環境でのパフォーマンスの問題を診断して緩和できるようにするために提供するさまざまなツールについて説明します。"
+title: Lifecycle Services (LCS) 内のツールを使用した、パフォーマンスのトラブルシューティング
+description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) がサンドボックスと生産環境でのパフォーマンスの問題を診断して緩和できるようにするために提供するさまざまなツールについて説明します。
 author: manalidongre
 manager: AnnBe
 ms.date: 10/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: manado
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 657c19896b20a514dc5308bf7fb086085b482fec
 ms.openlocfilehash: e6817ffbf83347b0407aed412267bb0481f55a8c
-ms.contentlocale: ja-jp
-ms.lasthandoff: 10/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "369024"
 ---
-
 # <a name="performance-troubleshooting-using-tools-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) 内のツールを使用した、パフォーマンスのトラブルシューティング
 
 [!include [banner](../includes/banner.md)]
@@ -80,5 +79,4 @@ LCS のすべての SQL パフォーマンス ツールは、特定の環境の 
 6. **クエリ** タブに移動し、**現在ブロックしているクエリ** を実行して、ブロック ステートメントが終了したかどうかを確認します。
 7. **環境履歴** ページで、どのプロセスが終了したかの詳細を確認することもできます。
 8. 将来この問題を避けるため、インデックスまたはプラン ガイドを使用したり、ロック エスカレーションをオフにしたり、各種レコードでの操作中にプロセスが互いにブロックしている場合はページ ロックを使用してください。 プロセスが同じレコードで動作している場合、ブロックを回避するには、同時に同じレコード上で動作しないよう、プロセスをリファクタリングまたは再スケジューリングする必要があります。
-
 

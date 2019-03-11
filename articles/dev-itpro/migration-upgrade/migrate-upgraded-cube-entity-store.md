@@ -1,13 +1,13 @@
 ---
-title: "アップグレードした AX 2012 R3 販売キューブをエンティティ格納へ移行する"
-description: "このチュートリアルでは、アップグレードされた Microsoft Dynamics AX 2012 R3 キューブ スキーマを、Microsoft Dynamics 365 for Finance and Operations のエンティティ格納に移行します。 例として、Dynamics AX 2012 R3 に含まれていた販売キューブを使用します。"
+title: アップグレードした AX 2012 R3 販売キューブのエンティティ格納への移行
+description: このチュートリアルでは、アップグレードされた Microsoft Dynamics AX 2012 R3 キューブ スキーマを、Microsoft Dynamics 365 for Finance and Operations のエンティティ格納に移行します。 例として、Dynamics AX 2012 R3 に含まれていた販売キューブを使用します。
 author: MilindaV2
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: robinr
 ms.search.scope: Operations
@@ -17,21 +17,20 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: ba5e8e4b831d0933380349a4d7e8ea00f7fda38c
-ms.contentlocale: ja-jp
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368604"
 ---
-
-# <a name="migrate-upgraded-ax-2012-r3-sales-cubes-to-the-entity-store"></a>アップグレードした AX 2012 R3 販売キューブをエンティティ格納へ移行する
+# <a name="migrate-upgraded-ax-2012-r3-sales-cubes-to-the-entity-store"></a>アップグレードした AX 2012 R3 販売キューブのエンティティ格納への移行
 
 [!include [banner](../includes/banner.md)]
 
 このチュートリアルでは、アップグレードされた Microsoft Dynamics AX 2012 R3 キューブ スキーマを、Microsoft Dynamics 365 for Finance and Operations のエンティティ格納に移行します。 例として、Dynamics AX 2012 R3 に含まれていた販売キューブを使用します。
 
-エンティティ格納は、次の図に示すように、ほぼリアルタイムの Microsoft Power BI 統合シナリオをサポートします。 エンティティ格納と Power BI 統合の概要については、[エンティティ格納と Power BI の統合](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/) を参照してください。 [![Power BI アーキテクチャ ダイアグラム](./media/powerbiarchitecture.png)](./media/powerbiarchitecture.png)
+エンティティ格納は、次の図に示すように、ほぼリアルタイムの Microsoft Power BI 統合シナリオをサポートします。 エンティティ格納と Power BI 統合の概要については、「[エンティティ格納と Power BI の統合](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/)」を参照してください。 [![Power BI アークテクチャ ダイアグラム](./media/powerbiarchitecture.png)](./media/powerbiarchitecture.png)
 
 ## <a name="new-power-bi-features-included-in-the-may-2016-and-november-2016-updates"></a>2016 年 5 月および 2016 年 11 月の更新プログラムに含まれる Power BI の新機能
 このチュートリアルでは、Dynamics 365 for Operations の 2016 年 5 月以降の更新プログラムが必要です。 このチュートリアルでは、次の新しい機能を使用します。
@@ -61,29 +60,29 @@ ms.lasthandoff: 08/09/2018
     -   属性ノードに対応するフィールドを追加することで、不要な分析コードの参照を削除します。 たとえば、メジャー グループの**サイズ**フィールドが十分に説明され、サイズの分析コード参照は削除されます。 これにより、クエリのランタイム パフォーマンスとリフレッシュ時間が向上します。
 
 8.  集計測定デザイナーで **SalesCubeV2** ルート ノードを選択します。 右クリックし、**プロパティ** を選択します。
-9.  アップグレード中に、集計の測定はレガシ プロパティ フラグ **SSASCube** に設定されます。 サポートされる使用法の 2 つのタイプのいずれかに、このプロパティを変更する必要があります。 以前は、**InMemoryRealTime** は集計測定値の使用方法としてサポートされていました。 **StagedEntityStore** は新しい使用タイプとしてサポートされています。 **注記:** 埋め込み BI シナリオおよび Power BI 統合に集計の測定を使用する場合は、用途プロパティを InMemoryRealTime に変更します。 Power BI または Cortana Intelligence Suite との統合に対してのみ集計測定を使用している場合は、**StagedEntityStore** を選択します。
+9.  アップグレード中に、集計の測定はレガシ プロパティ フラグ **SSASCube** に設定されます。 サポートされる使用法の 2 つのタイプのいずれかに、このプロパティを変更する必要があります。 以前は、**InMemoryRealTime** は集計測定値の使用方法としてサポートされていました。 **StagedEntityStore** は新しい使用タイプとしてサポートされています。 **注記**: 埋め込み BI シナリオおよび Power BI 統合に集計の測定を使用する場合は、用途プロパティを InMemoryRealTime に変更します。 Power BI または Cortana Intelligence との統合に対してのみ集計測定を使用している場合は、**StagedEntityStore** を選択します。
 10. プロジェクトを保存します。 ソリューション エクスプローラーでプロジェクトを選択し、**リビルド** を選択します。
 11. 再構築操作を完了した後、プロジェクトを保存し、Visual Studio を閉じます。 これで開発作業は完了です。 レポート作成者またはパワー ユーザーとしてレポートを作成します。
 
 ## <a name="refresh-the-entity-store"></a>エンティティ格納を更新
 管理者は、クライアントを使用して集計測定の更新をコンフィギュレーションできます。
 
-1.  Dynamics AX クライアントを起動して、**システム管理** &gt; **設定**&gt; **エンティティ格納**に移動します。 **エンティティ格納** フォームには、エンティティ格納に配置するために使用できる集計測定の一覧が表示されます。
+1.  Dynamics AX クライアントを起動して、**システム管理** &gt; **設定** &gt; **エンティティ格納**に移動します。 **エンティティ格納** フォームには、エンティティ格納に配置するために使用できる集計測定の一覧が表示されます。
 2.  **売上キューブ** (Dynamics AX 2012 からアップグレードされた) がエンティティ格納への配置に使用できないことを確認します。 **SalesCubeV2**、前の手順で作成したものをエンティティ格納に展開できます。
 3.  リストから **SalesCubeV2** を選択し、**更新** ボタンをクリックします。 **更新** ダイアログ ボックスが表示されます。 **バックグラウンドで実行**タブを展開します。
 4.  **タスクの説明** フィールドにわかりやすい名前を入力します。 必要に応じて、**定期的なアイテム** タブを選択し、1 回限りの更新ではなく定期的なスケジュールを作成できます。 **OK** をクリックします。
 5.  エンティティ ストア内の集計測定値をリフレッシュするためのバッチ ジョブが作成されます。
 
 ## <a name="authoring-a-report-on-sales-by-state-with-power-bi-desktop"></a>Power BI desktop を使用して都道府県別売上レポートの作成
-このステップでは、[Microsoft Power BI Desktop](http://www.microsoft.com/en-us/download/details.aspx?id=45331)からダウンロードできる Power BI デスクトップ ツールをインストールする必要があります。
+このステップでは、「[Microsoft Power BI Desktop](http://www.microsoft.com/en-us/download/details.aspx?id=45331)」からダウンロードできる Power BI デスクトップ ツールをインストールする必要があります。
 
 1.  Power BI デスクトップを起動します。 更新を適用することが必要な場合があります。 ウェルカム ページが表示されます。 **データの取得**をクリックします。
-2.  または、Power BI デスクトップを起動すると、**ホーム**タブの**データの取得** &gt; **SQL Server** を選択します。
+2.  または、Power BI デスクトップが起動したとき、**ホーム**タブの**データの取得** &gt; **SQL Server** を選択します。
 3.  **SQL Server データベース** ダイアログ ボックスで、サーバー名とエンティティ ストア データベースの名前を入力します。 開発環境を配置する場合は、“.” を入力できます。 サーバー名として、および **AxDW** をデータベースとして。 テスト環境で作業している場合、システム管理者からこれらのパラメータを取得する必要があります。
 4.  **DirectQuery** オプションを選択します。 この練習では、エンティティ格納に直接実行される Power BI レポートを作成します。 **インポート** オプションを使用した場合、Power BI ではエンティティ格納のデータがキャッシュされるため、Power BI モデルを定期的に更新する必要があります。 **エンティティ格納を使用して書かれたレポートでは、インポート モードは現在サポートされていません**。 **OK** をクリックします。
 5.  次に、**ナビゲーター** ダイアログ ボックスが表示されます。 ナビゲーターで、レポートの対象となるテーブルとビューをエンティティ格納から選択できます。 検索ボックスで**販売**を入力します。 以前に作成された **SalesCubeV2** 集計測定に関連するエンティティがフィルタリングされます。 **注記:** エンティティ ストアは、作成された集計測定値をステージングします。 それぞれの集計測定内のエンティティには接頭語が付けられて別々のテーブルとして保管されますが、Power BI デスクトップを使用すると複数の集計測定からのデータを結合することができます。
 6.  都道府県別の売上を表示するレポートを作成します。 ナビゲーターから **SalesCubeV2\_Customer** および **SalesCubeV2\_CustomerInvoices** を選択し、**読み込み** をクリックします。
-7.  選択したエンティティ (右端) に **フィールド** が存在する Power BI デザイナーが、使用可能な視覚化とともに表示されます。
+7.  選択したエンティティ (右端) に**フィールド**が存在する Power BI デザイナーが、使用可能な視覚化とともに表示されます。
 
 ### <a name="create-a-surrogate-key-that-links-customers-and-invoices-applies-to-platform-versions-before-november-2016-update"></a>顧客と請求書をリンクする代理キーを作成する (2016 年 11 月アップデート以前のプラットフォームに適用)
 
@@ -166,7 +165,7 @@ Microsoft Dynamics Lifecycle Services (LCS) は、開発者から実稼働環境
 ### <a name="publish-power-bi-reports-to-a-production-environment"></a>Power BI レポートを実稼働環境に公開
 
 1.  クライアントから**システム管理**&gt;**設定**&gt;**PowerBI の配置**を開きます。 LCS にアップロードしたファイルが分かります。
-2.  **売上報告書** ファイルを選択し、メニュー バーで **Power BI ファイルの配置** オプションを選択します。 **注記:** PowerBI.com サービスへの公開に同意するよう求められる場合があります。 同意するには、リンクをクリックしてください。 同意が完了すると、元のブラウザー ウィンドウに戻り、**閉じる** ボタンをクリックする必要があります。
+2.  **売上報告書** ファイルを選択し、メニュー バーで **Power BI ファイルの配置**オプションを選択します。 **注記:** PowerBI.com サービスへの公開に同意するよう求められる場合があります。 同意するには、リンクをクリックしてください。 同意が完了すると、元のブラウザー ウィンドウに戻り、**閉じる** ボタンをクリックする必要があります。
 3.  ファイルを正常に公開した後、Power BI レポートは PowerBI.com サブスクリプションに表示されます。 レポートが実稼働環境にあるエンティティ格納を現在指さしていることがわかります。
 
 ## <a name="continuing-with-powerbicom"></a>PowerBI.com での継続
@@ -179,11 +178,10 @@ Microsoft Dynamics Lifecycle Services (LCS) は、開発者から実稼働環境
 -   Power BI タイルまたはレポートを追加することによって、自分のワークスペースをパーソナライズできます。
 
 
-<a name="additional-resources"></a>その他のリソース
+<a name="additional-resources"></a>追加リソース
 --------
 
 [集計データのモデリングと使用](../analytics/model-aggregate-data.md)
-
 
 
 
